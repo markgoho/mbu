@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <section class="merit-badges-list">
+    {{ $pages := .Pages }}
+    {{ if $pages }}
+      <ul class="badge-list">
+        {{ range $pages.ByTitle }}
+          <li class="badge-item">
+            <a href="{{ .Permalink }}">
+              <strong>{{ .Title }}</strong>
+              {{ if .Description }}
+                <span class="badge-description">{{ .Description }}</span>
+              {{ end }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <p>No merit badges available yet. Check back soon!</p>
+    {{ end }}
+  </section>
+{{ end }}

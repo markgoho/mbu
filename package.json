@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "cd hugo && hugo --minify"
+    "build": "cd hugo && hugo --minify",
+    "hugo:dev": "cd hugo && hugo server --disableFastRender -D"
   },
   "devDependencies": {
     "@types/bun": "latest",

@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <article class="merit-badge">
+    <header class="merit-badge-header">
+      <h1>{{ .Title }}</h1>
+      {{ if .Description }}
+        <p class="merit-badge-description">{{ .Description }}</p>
+      {{ end }}
+    </header>
+
+    <div class="merit-badge-content">
+      {{ .Content }}
+    </div>
+
+    <footer class="merit-badge-footer">
+      <a href="/merit-badges/" class="back-link">← Back to all Merit Badges</a>
+    </footer>
+  </article>
+{{ end }}
