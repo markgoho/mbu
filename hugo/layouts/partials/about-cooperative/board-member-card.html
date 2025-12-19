@@ -1,0 +1,14 @@
+<div class="board-member-card">
+  <div class="board-member-card__image">
+    <img
+      height="300"
+      width="300"
+      loading="lazy"
+      src="{{ .path }}"
+      alt="Headshot of {{ .name }}" />
+  </div>
+  <div class="board-member-card__info">
+    <p class="board-member-card__name">{{ .name }}</p>
+    <p class="board-member-card__role">{{ .role }}</p>
+  </div>
+</div>

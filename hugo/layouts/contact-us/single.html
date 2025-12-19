@@ -1,0 +1,83 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/contact-us.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "head-scripts" }}
+  <script
+    src="https://www.google.com/recaptcha/api.js?render={{ .Site.Params.recaptchaSiteKey }}"
+    async
+    defer></script>
+{{ end }}
+
+{{ define "main" }}
+  <h1 class="contact-us-page__title">{{ .Title }}</h1>
+
+  <div class="callout">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      class="callout__icon"
+      viewBox="0 0 64 64">
+      <path
+        fill="var(--teal-500)"
+        d="M32 6a26 26 0 1 0 26 26A26.027 26.027 0 0 0 32 6Zm0 48a22 22 0 1 1 22-22 22.025 22.025 0 0 1-22 22Zm-2-20V20a2 2 0 0 1 4 0v14a2 2 0 1 1-4 0Zm5 9a3 3 0 1 1-5.999 0A3 3 0 0 1 35 43Z" />
+    </svg>
+    <p class="callout__text">
+      Looking for information about Doula Support? Use our
+      <a href="/find-a-doula/">special request form</a>.
+    </p>
+  </div>
+
+  <section class="text-content">
+    <form
+      class="form"
+      novalidate
+      data-api-url="{{ if hugo.IsProduction }}
+        /api/forms/contact-us
+      {{ else }}
+        http://127.0.0.1:5001/doula-cooperative/us-central1/formsApi/contact-us
+      {{ end }}"
+      data-recaptcha-site-key="{{ .Site.Params.recaptchaSiteKey }}">
+      <div class="form-group full-width">
+        <label for="name" class="form__label">Name (first and last)</label>
+        <input type="text" id="name" class="form__input" required />
+        <span class="form__error-message" aria-live="polite"
+          >Please enter your name.</span
+        >
+      </div>
+
+      <div class="form-group full-width">
+        <label for="email" class="form__label">Email (required)</label>
+        <input type="email" id="email" class="form__input" required />
+        <span class="form__error-message" aria-live="polite"
+          >Please enter a valid email address.</span
+        >
+      </div>
+
+      <div class="form-group full-width">
+        <label for="message" class="form__label"
+          >What can we help you with?</label
+        >
+        <textarea
+          id="message"
+          class="form__input form__input--textarea"
+          required></textarea>
+        <span class="form__error-message" aria-live="polite"
+          >Please enter a message.</span
+        >
+      </div>
+
+      <div id="form-error" class="form__error-message" aria-live="polite"></div>
+      <button type="submit" id="submit-button" class="button">Submit</button>
+    </form>
+  </section>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ $opts := dict "targetPath" "contact-us-form.js" }}
+  {{ $built := resources.Get "ts/contact-us-form.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+{{ end }}

@@ -1,0 +1,33 @@
+{
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": false,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "endOfLine": "lf",
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "jsxSingleQuote": false,
+  "quoteProps": "as-needed",
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-go-template"
+  ],
+  "overrides": [
+    {
+      "files": "hugo/layouts/**/*.html",
+      "options": {
+        "parser": "go-template",
+        "goTemplateBracketSpacing": true,
+        "bracketSameLine": true
+      }
+    },
+    {
+      "files": "members/src/**/*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/doula-list.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+  <h1 style="view-transition-name: title-{{ .Title | md5 }}">
+    {{ .Title | title }}
+  </h1>
+  <section class="doula-list text-content">
+    <p>{{ .Content }}</p>
+
+    {{ range .Pages.ByTitle }}
+      {{ partial "profile-card.html" . }}
+    {{ end }}
+  </section>
+{{ end }}

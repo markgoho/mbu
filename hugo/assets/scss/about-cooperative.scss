@@ -1,0 +1,49 @@
+:root {
+  --board-member-card-width: 18.75rem;
+}
+
+.board-members {
+  margin-block-start: var(--space-xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: var(--space-l);
+}
+
+.board-member-card {
+  border-radius: var(--border-radius-md);
+  text-align: center;
+}
+
+.board-member-card__image {
+  margin-bottom: var(--space-s);
+
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: var(--board-member-card-width);
+    height: auto;
+    border: 5px solid var(--teal-500);
+    border-radius: var(--border-radius-md);
+  }
+}
+
+.board-member-card__name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--step-0);
+  margin: 0;
+}
+
+.board-member-card__role {
+  font-weight: var(--font-weight-light);
+  margin: 0;
+  font-variation-settings: "slnt" -12;
+}
+
+@container (max-width: 40rem) {
+  .board-members,
+  .board-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

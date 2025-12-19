@@ -1,5 +1,4 @@
-# Dockerfile for Doula Cooperative CI builds
-# Includes tools for Hugo, Angular, Firebase, and Playwright E2E testing
+# Dockerfile for MBU CI builds
 FROM ubuntu:22.04
 
 # Avoid prompts from apt
@@ -21,8 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 # Configure git to trust the workspace directory to avoid ownership errors in GitHub Actions
-RUN git config --global --add safe.directory /__w/doula-cooperative/doula-cooperative && \
-  git config --system --add safe.directory /__w/doula-cooperative/doula-cooperative && \
+RUN git config --global --add safe.directory /__w/mbu/mbu && \
+  git config --system --add safe.directory /__w/mbu/mbu && \
   git config --system --add core.quotepath false
 
 # Install Node.js 20.x (required by Firebase Functions)
@@ -45,19 +44,10 @@ RUN wget "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSIO
   && ln -s /usr/local/share/dart-sass/sass /usr/local/bin/sass \
   && rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
 
-# 5. Install Playwright with Chromium browser and dependencies
-# Use a fixed path for browsers to avoid HOME directory issues in GitHub Actions
-ENV PLAYWRIGHT_BROWSERS_PATH=/opt/playwright-browsers
-RUN bunx playwright@${PLAYWRIGHT_VERSION} install chromium --with-deps
-
-# 6. Verify installations
 RUN echo "Bun version: $(bun --version)"
 RUN echo "Hugo version: $(hugo version)"
 RUN echo "Sass version: $(sass --version)"
 RUN echo "Node.js version: $(node --version)"
-RUN echo "Java version:" && java -version
-RUN echo "JAVA_HOME: ${JAVA_HOME}"
-RUN bunx playwright@${PLAYWRIGHT_VERSION} --version
 
 # Set the working directory for when the container starts
 WORKDIR /workspace

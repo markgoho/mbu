@@ -1,0 +1,67 @@
+<div class="footer__main">
+  <div class="footer__brand">
+    <div class="footer__brand-title">Doula Cooperative</div>
+    <div class="footer__brand-location">Rochester, NY</div>
+    <p class="footer__inclusion">
+      The Doula Cooperative is committed to the inclusion of individuals and
+      families regardless of age, race, class, ethnicity, national origin,
+      gender expression &amp; identity, sexuality, relationship status, ability,
+      religion and birthing choices and location. All are welcome.
+    </p>
+  </div>
+  <nav class="footer__nav" aria-label="Footer navigation">
+    <div class="footer__col">
+      <h2 class="footer__col-title">Find a Doula</h2>
+      <ul class="footer__links">
+        <li><a href="/find-a-doula/search/">Search</a></li>
+        <li><a href="/find-a-doula/browse/">Browse</a></li>
+        <li><a href="/find-a-doula/match/">Match</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__col-title">Browse Members</h2>
+      <ul class="footer__links">
+        {{ range first 3 .Site.Taxonomies.tags.ByCount }}
+          <li>
+            <a href="{{ .Page.RelPermalink }}"
+              >{{ .Page.Title }} ({{ .Count }})</a
+            >
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h2 class="footer__col-title">Connect</h2>
+      <ul class="footer__links">
+        <li>
+          <a href="/about-the-doula-cooperative/">Our mission</a>
+        </li>
+        <li><a href="/contact-us/">Contact us</a></li>
+      </ul>
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com/DoulaCoop/"
+          target="_blank"
+          aria-label="Facebook"
+          class="footer__social-link footer__social-link--circled">
+          {{ partial "icons/facebook.html" . }}
+        </a>
+        <a href="#" aria-label="X" class="footer__social-link twitter">
+          {{ partial "icons/x.html" . }}
+        </a>
+        <a
+          href="https://www.instagram.com/thedoulacooperative/"
+          aria-label="Instagram"
+          class="footer__social-link">
+          {{ partial "icons/instagram.html" . }}
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="footer__bottom">
+  <div class="footer__copyright">
+    &copy; {{ now.Year }} Doula Cooperative, Rochester, NY
+  </div>
+  <a class="footer__login" href="#">Member Login</a>
+</div>

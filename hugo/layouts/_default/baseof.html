@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "head/site.html" . }}
+    {{ partial "head/critical-css.html" . }}
+
+    {{- block "head-styles" . -}}
+    {{- end -}}
+
+    {{ partial "head/non-critical-css.html" . }}
+    {{ partial "head/analytics.html" . }}
+
+    {{- block "head-scripts" . -}}
+    {{- end -}}
+
+    {{ partial "opengraph.html" . }}
+
+
+    <link rel="canonical" href="{{ .Permalink | absURL }}" />
+  </head>
+
+  <body>
+    {{ block "hero" . }}{{ end }}
+
+
+    <header class="header">
+      {{ block "header" . }}
+        {{ partial "header.html" . }}
+      {{ end }}
+    </header>
+
+    <main class="main container">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    <footer class="footer">
+      {{ block "footer" . }}
+        {{ partial "footer.html" . }}
+      {{ end }}
+    </footer>
+
+    {{ block "footer-scripts" . }}{{ end }}
+  </body>
+</html>

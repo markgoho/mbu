@@ -1,0 +1,19 @@
+{
+  "name": "mbu",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "cd hugo && hugo --minify"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "firebase-tools": "^15.1.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-organize-imports": "^4.3.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

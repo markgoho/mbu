@@ -1,0 +1,130 @@
+{{ define "head-styles" }}
+  {{ $pageCSS := "scss/landing-page.scss" }}
+  {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
+  <style>{{ $inlineCSS.Content | safeCSS }}</style>
+
+  <link
+    rel="preload"
+    as="image"
+    fetchpriority="high"
+    media="(min-width: 30rem) and (orientation: landscape)"
+    href="/assets/images/hero-section.avif"
+    type="image/avif" />
+
+  <link
+    rel="preload"
+    as="image"
+    fetchpriority="high"
+    media="(max-width: 29.99rem), (orientation: portrait)"
+    href="/assets/images/hero-section-small.avif"
+    type="image/avif" />
+{{ end }}
+
+{{ define "hero" }}
+  <section class="hero">
+    <div class="tagline">Doulas for every step of your birth journey</div>
+    <a href="/find-a-doula/" class="hero-cta button">Find a Doula</a>
+    <div class="org-container">
+      <span class="org-name">Doula Cooperative</span>
+      <span class="org-location">Rochester, NY</span>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "main" }}
+  <h1>Welcome to the Doula Cooperative of Rochester, NY</h1>
+  <section class="text-content">
+    <p class="text-content">
+      <span class="highlight">We are a collective</span> of experienced,
+      compassionate doulas serving families throughout Rochester and the
+      surrounding communities. Our cooperative model ensures you'll find the
+      right support for your unique needs and life transitions.
+    </p>
+    <p class="text-content">
+      <span class="highlight">We believe</span> birth support should be
+      accessible, personalized, and rooted in community. Each doula brings their
+      own expertise while sharing our commitment to evidence-based care and
+      honoring your choices.
+    </p>
+    <p class="text-content">
+      <span class="highlight">We offer comprehensive support</span> from
+      prenatal education to labor support, from postpartum care to specialized
+      services, helping you feel confident throughout your journey into
+      parenthood.
+    </p>
+  </section>
+
+  <section class="nav-cards-container">
+    <div class="nav-cards">
+      <div class="nav-card-container">
+        <a href="/learn-more-about-doulas/" class="nav-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            class="nav-card__icon"
+            viewBox="0 0 83 83">
+            <path
+              fill="var(--teal-500)"
+              d="M81.625 28.836 42.72 8.086a2.594 2.594 0 0 0-2.438 0L1.375 28.836a2.593 2.593 0 0 0 0 4.578l9 4.802v15.698a5.158 5.158 0 0 0 1.316 3.453c4.248 4.73 13.763 12.664 29.809 12.664 5.32.044 10.6-.92 15.563-2.84v10.622a2.594 2.594 0 0 0 5.187 0V64.685a37.486 37.486 0 0 0 9.059-7.318 5.158 5.158 0 0 0 1.316-3.453V38.216l9-4.802a2.593 2.593 0 0 0 0-4.578ZM41.5 64.844c-14.029 0-22.28-6.854-25.938-10.93V40.981l24.719 13.183a2.593 2.593 0 0 0 2.438 0l14.343-7.648V61.54c-4.085 1.906-9.233 3.304-15.562 3.304ZM67.438 53.9a31.716 31.716 0 0 1-5.188 4.62V43.748l5.188-2.766v12.92Zm-6.485-15.338-.071-.043-18.156-9.684a2.594 2.594 0 0 0-2.439 4.578L55.441 41.5 41.5 48.934 8.105 31.125 41.5 13.315l33.394 17.81-13.94 7.438Z" />
+          </svg>
+          <h2
+            class="nav-card__title"
+            style="view-transition-name: title-about-doulas">
+            Learn more about Doulas
+          </h2>
+          <p class="nav-card__description">
+            Explore our resources to understand the role and benefits of a
+            doula.
+          </p>
+        </a>
+      </div>
+
+      <div class="nav-card-container">
+        <a href="/find-a-doula/" class="nav-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            class="nav-card__icon"
+            viewBox="0 0 83 83">
+            <path
+              fill="var(--teal-500)"
+              d="m74.46 71.311-16.233-16.23a28.567 28.567 0 1 0-3.667 3.667l16.23 16.234a2.596 2.596 0 0 0 3.67-3.67ZM12.97 36.834a23.344 23.344 0 1 1 23.343 23.344A23.37 23.37 0 0 1 12.97 36.834Z" />
+          </svg>
+          <h2
+            class="nav-card__title"
+            style="view-transition-name: title-find-doula">
+            Find the right Doula for you
+          </h2>
+          <p class="nav-card__description">
+            Connect with the right doula for you using our powerful search
+            tools.
+          </p>
+        </a>
+      </div>
+
+      <div class="nav-card-container">
+        <a href="/join-the-doula-cooperative/" class="nav-card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            class="nav-card__icon"
+            viewBox="0 0 80 80">
+            <path
+              fill="var(--teal-500)"
+              d="M76.5 47a2.5 2.5 0 0 1-3.5-.5A16.126 16.126 0 0 0 60 40a2.5 2.5 0 0 1 0-5 7.5 7.5 0 1 0-7.263-9.375 2.5 2.5 0 0 1-4.843-1.25 12.5 12.5 0 1 1 20.544 12.347 21.23 21.23 0 0 1 8.571 6.775A2.5 2.5 0 0 1 76.5 47ZM59.663 66.25a2.499 2.499 0 1 1-4.325 2.5 17.813 17.813 0 0 0-30.675 0 2.5 2.5 0 1 1-4.326-2.5 22.519 22.519 0 0 1 10.544-9.35 15 15 0 1 1 18.238 0 22.52 22.52 0 0 1 10.544 9.35ZM40 55a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM22.5 37.5A2.5 2.5 0 0 0 20 35a7.5 7.5 0 1 1 7.262-9.375 2.501 2.501 0 1 0 4.844-1.25 12.5 12.5 0 1 0-20.544 12.347A21.23 21.23 0 0 0 3 43.497 2.5 2.5 0 1 0 7 46.5 16.125 16.125 0 0 1 20 40a2.5 2.5 0 0 0 2.5-2.5Z" />
+          </svg>
+          <h2
+            class="nav-card__title"
+            style="view-transition-name: title-join-coop">
+            Join the Doula cooperative
+          </h2>
+          <p class="nav-card__description">
+            Join our community of doulas and support each other in our shared
+            mission.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+{{ end }}
