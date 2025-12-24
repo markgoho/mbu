@@ -1,0 +1,138 @@
+{
+  "id": "farm-mechanics",
+  "title": "Farm Mechanics",
+  "slug": "farm-mechanics",
+  "url": "https://www.scouting.org/merit-badges/farm-mechanics/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Discuss with your counselor the safety equipment, tools, and clothing used while checking or repairing farm equipment. Use this equipment, tools, and/or clothing (when needed or called for) in meeting the requirements for this merit badge."
+            },
+            {
+              "req_id": "b",
+              "text": "Draw a plan showing a well-equipped farm shop. Point out the shop's mandatory safety devices and features."
+            },
+            {
+              "req_id": "c",
+              "text": "Find all the universal warning and safety symbols on a piece of equipment and explain what they mean."
+            },
+            {
+              "req_id": "d",
+              "text": "Describe what a safety data sheet (SDS) is and tell why it is used. Obtain the SDS for any engine coolant, oil, grease, fuel, hydraulic or transmission fluid, or other flammable or hazardous materials you use in meeting the requirements for this merit badge."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Explain how power is produced or transferred in a:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Diesel engine"
+            },
+            {
+              "req_id": "b",
+              "text": "Hydraulic system"
+            },
+            {
+              "req_id": "c",
+              "text": "Transmission or any other power system."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Do TWO of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Replace the handle of any tool found on the farm."
+            },
+            {
+              "req_id": "b",
+              "text": "Organize a tool rack or a storage system for nails, bolts, nuts, and washers."
+            },
+            {
+              "req_id": "c",
+              "text": "Using a hand file, properly dress the mushroomed head of a chisel or punch."
+            },
+            {
+              "req_id": "d",
+              "text": "Using a hand file, correctly dress a screwdriver tip."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Do ONE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "On an engine-powered machine: Grease all fittings, change the oil and oil filter, clean the air filter, clean the radiator fins, and replace the fuel filters."
+            },
+            {
+              "req_id": "b",
+              "text": "For any engine-powered machine, create a preoperational checklist; include checking the engine coolant, engine oil, hydraulic and/or transmission fluid, and battery voltage (using a voltmeter). Using your checklist, conduct a preoperational check of that machinery or equipment."
+            },
+            {
+              "req_id": "c",
+              "text": "Prepare any farm machine for winter storage."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Visit an implement dealer. Interview the dealer technician or service manager for hints on good preventive maintenance. Ask why it is important, the costs, and what causes wear or damage. Report what you learn."
+        },
+        {
+          "req_id": "6",
+          "text": "Explain each step in ONE of the following maintenance procedures:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Tightening hydraulic fittings."
+            },
+            {
+              "req_id": "b",
+              "text": "Checking the air filter."
+            },
+            {
+              "req_id": "c",
+              "text": "Cleaning a work piece with a wire-brush wheel."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        },
+        {
+          "req_id": "7",
+          "text": "Find out about three career opportunities in farm mechanics. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+        }
+      ]
+    }
+  ]
+}

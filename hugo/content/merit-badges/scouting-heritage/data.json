@@ -1,0 +1,265 @@
+{
+  "id": "scouting-heritage",
+  "title": "Scouting Heritage",
+  "slug": "scouting-heritage",
+  "url": "https://www.scouting.org/merit-badges/scouting-heritage/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Discuss with your counselor the life and times of Lord Baden-Powell of Gilwell. Explain why he felt a program like Scouting would be good for the young men of his day. Include in your discussion how Scouting was introduced in the United States, and the origins of Boy Scouting and Cub Scouting under Baden-Powell. Resource: Baden Powell - Father of Scouting, Origins of Scouting (video)",
+          "resources": [
+            {
+              "title": "Baden Powell - Father of Scouting, Origins of Scouting (video)",
+              "url": "https://www.youtube.com/watch?v=tn9S4qB-fdw&list=PLeqxtqwBBzS-Z290oRp20bqnDqXZkSb3j&index=1"
+            }
+          ]
+        },
+        {
+          "req_id": "2",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Give a short biographical summary of any TWO of the following, and tell of their roles in how Scouting developed and grew in the United States.",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "text": "Daniel Carter Beard Resource: Daniel Carter Beard - BSA Founder (video)",
+                  "resources": [
+                    {
+                      "title": "Daniel Carter Beard - BSA Founder (video)",
+                      "url": "https://www.youtube.com/watch?v=GIaIyxfuLCQ&list=PLeqxtqwBBzS-Z290oRp20bqnDqXZkSb3j&index=2"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "2",
+                  "text": "William D. Boyce Resource: William D. Boyce - BSA Founder (video)",
+                  "resources": [
+                    {
+                      "title": "William D. Boyce - BSA  Founder (video)",
+                      "url": "https://www.youtube.com/watch?v=Ulhu9fefMo4&list=PLeqxtqwBBzS-Z290oRp20bqnDqXZkSb3j&index=3"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "3",
+                  "text": "Waite Phillips Resource: Waite Phillips - BSA Benefactor and Donor of Philmont (video)",
+                  "resources": [
+                    {
+                      "title": "Waite Phillips - BSA Benefactor and Donor of Philmont (video)",
+                      "url": "https://youtu.be/QiKK97PQ7Us"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "4",
+                  "text": "Ernest Thompson Seton Resource: Ernest Thompson Seton - BSA Founder (video)",
+                  "resources": [
+                    {
+                      "title": "Ernest Thompson Seton - BSA Founder (video)",
+                      "url": "https://youtu.be/-azpLxf8wpA?si=tiMSbrOyFEHx0L9u"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "5",
+                  "text": "James E. West Resource: James E. West - BSA Founder (video)",
+                  "resources": [
+                    {
+                      "title": "James E. West - BSA Founder (video)",
+                      "url": "https://youtu.be/cpIpdHl4cug"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "6",
+                  "text": "Green Bar Bill Hillcourt. Resource: Green Bar Bill Hillcourt Biography (video)",
+                  "resources": [
+                    {
+                      "title": "Green Bar Bill Hillcourt Biography (video)",
+                      "url": "https://www.youtube.com/watch?v=ZJofraVDGuA"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Discuss the significance to Scouting of any TWO of the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "text": "Brownsea Island Resource: Artifact of the Week - Brownsea Island (video)",
+                  "resources": [
+                    {
+                      "title": "Artifact of the Week - Brownsea Island (video)",
+                      "url": "https://www.youtube.com/watch?v=HWPZkK5YL2k"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "2",
+                  "text": "The First World Scout Jamboree",
+                  "resources": [
+                    {
+                      "title": "Artifact of the Week - World Scout Jamborees Part 01 (video)",
+                      "url": "https://www.youtube.com/watch?v=8p-SalnhA4Q"
+                    },
+                    {
+                      "title": "Artifact of the Week - World Scout Jamborees Part 02 (video)",
+                      "url": "https://www.youtube.com/watch?v=JjdgmAKqUS4"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "3",
+                  "text": "Scouts BSA Handbook",
+                  "resources": [
+                    {
+                      "title": "NSM History of the Scout Handbook (video)",
+                      "url": "https://www.youtube.com/watch?v=X2njF0Sv5q8&t=2s"
+                    },
+                    {
+                      "title": "Artifact of the Week - First Scout Handbook (video)",
+                      "url": "https://www.youtube.com/watch?v=JaGjYXkcyLU&t=2s"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "4",
+                  "text": "Scout Life magazine (formerly Boys' Life).",
+                  "resources": [
+                    {
+                      "title": "Artifact of the Week - Boys' Life to Scout Life (video)",
+                      "url": "https://www.youtube.com/watch?v=R55NMMY21TM"
+                    },
+                    {
+                      "title": "The Story of Boys' Life / Scout Life (video)",
+                      "url": "https://www.youtube.com/watch?v=OIyZwBnlF5c"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Discuss with your counselor how Scouting's programs have developed over time and been adapted to fit different age groups and interests (Cub Scouting, Scouts BSA, Exploring, Venturing).",
+          "resources": [
+            {
+              "title": "Legacy Video Scouting History Timeline (video)",
+              "url": "https://youtu.be/p8DUnLSK3Zo?si=ImcKI8FOY2CrZYue"
+            },
+            {
+              "title": "Artifact of the Week - Development of Cub Scouting (video)",
+              "url": "https://youtu.be/p8DUnLSK3Zo?si=xIdh_FcI2SZ8JQ4a"
+            },
+            {
+              "title": "Artifact of the Week - Sea  Scouts (video)",
+              "url": "https://youtu.be/FxKOogN-oiU?si=dqO2hetBuV0FoTXg"
+            },
+            {
+              "title": "History of Exploring (website)",
+              "url": "https://www.scouting.org/commissioners/exploring-a-bit-of-a-background/"
+            },
+            {
+              "title": "20 Facts About Venturing (website)",
+              "url": "https://blog.scoutingmagazine.org/2018/02/09/20-facts-about-venturing-on-the-programs-20th-birthday/"
+            }
+          ]
+        },
+        {
+          "req_id": "4",
+          "text": "Do ONE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Attend either a Scouting America National Jamboree, OR World Scout Jamboree, OR a national Scouting America high-adventure base. While there, keep a journal documenting your day-to-day experiences. Upon your return, report to your counselor what you did, saw, and learned. You may include photos, brochures, and other documents in your report.",
+              "resources": [
+                {
+                  "title": "100 Years of the World Scout Jamboree (video)",
+                  "url": "https://youtu.be/cpbtEAtIlWc?si=T4QAeuUnWo_uy9PT"
+                },
+                {
+                  "title": "Scouting America High Adventure Overview (video)",
+                  "url": "https://youtu.be/EbC5b5dyBo0?si=0iu96JjlTcPaVrjq"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Write or visit the National Scouting Museum. Obtain information about this facility. Give a short report on what you think the role of this museum is in the Scouting program.",
+              "resources": [
+                {
+                  "title": "National Scouting Museum at Summit Bechtel Reserve Virtual Tour (video)",
+                  "url": "https://www.youtube.com/watch?v=QU8IcMvygmc&list=PLeqxtqwBBzS_SXfxztRYSvmUzirJSZ1SU&index=8"
+                },
+                {
+                  "title": "National Scouting Museum at Philmont Virtual Tour (website)",
+                  "url": "https://www.philmontscoutranch.org/museums/national-scouting-museum-virtual-tour/"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Visit an exhibit of Scouting memorabilia or a local museum with a Scouting history gallery, or (with your parent or guardian's permission and counselor's approval) visit with someone in your council who is recognized as a dedicated Scouting historian or memorabilia collector. Learn what you can about the history of Scouting America. Give a short report to your counselor on what you saw and learned."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Learn about the history of your unit or Scouting in your area. Interview at least two people (one from the past and one from the present) associated with your troop. These individuals could be adult unit leaders, Scouts, troop committee members, or representatives of your troop's chartered organization. Find out when your unit was originally chartered. Create a report of your findings on the history of your troop, and present it to your patrol or troop or at a court of honor, and then add it to the troop's library. This presentation could be in the form of an oral/written report, an exhibit, a scrapbook, or a computer presentation such as a slide show."
+        },
+        {
+          "req_id": "6",
+          "text": "Make a collection of some of your personal patches and other Scouting memorabilia. With their permission, you may include items borrowed from family members or friends who have been in Scouting in the past, or you may include photographs of these items. Show this collection to your counselor, and share what you have learned about items in the collection. Note: There is no requirement regarding how large or small this collection must be.",
+          "resources": [
+            {
+              "title": "Scouting Memorabilia Collection - Philmont License Plates (video)",
+              "url": "https://www.youtube.com/watch?v=njI2Wb4sAEw&t=1s"
+            },
+            {
+              "title": "Philmont Recognition Patches (video)",
+              "url": "https://www.youtube.com/watch?v=2u8drmz3T-s&t=7s"
+            }
+          ]
+        },
+        {
+          "req_id": "7",
+          "text": "Reproduce the equipment for an old-time Scouting game such as those played at Brownsea Island. You may find one on your own (with your counselor's approval) or pick one from the Scouting Heritage merit badge pamphlet. Teach and play the game with other Scouts.",
+          "resources": [
+            {
+              "title": "Troop Games - Large Area (website)",
+              "url": "https://troopleader.scouting.org/activities/troop-games/troop-games-large-area/"
+            },
+            {
+              "title": "Troop Games - Small Space (website)",
+              "url": "https://troopleader.scouting.org/activities/troop-games/troop-games-small-space/"
+            },
+            {
+              "title": "Troop Games - Pre-Meeting (website)",
+              "url": "https://troopleader.scouting.org/activities/troop-games/pre-opening-gathering-period-activities/"
+            }
+          ]
+        },
+        {
+          "req_id": "8",
+          "text": "Interview at least three people (different from those you interviewed for requirement 5) over the age of 40 who were Scouts. Find out about their Scouting experiences. Ask about the impact that Scouting has had on their lives. Share what you learned with your counselor."
+        }
+      ]
+    }
+  ]
+}

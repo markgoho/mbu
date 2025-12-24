@@ -1,0 +1,69 @@
+{
+  "id": "basketry",
+  "title": "Basketry",
+  "slug": "basketry",
+  "url": "https://www.scouting.org/merit-badges/basketry/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain to your counselor the hazards you are most likely to encounter while using basketry tools and materials, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+            },
+            {
+              "req_id": "b",
+              "text": "Discuss the prevention of and first-aid treatment for injuries, including cuts, scratches, and scrapes, that could occur while working with basketry tools and materials."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Show your counselor that you are able to identify the following types of baskets: plaited, coiled, ribbed, and wicker."
+            },
+            {
+              "req_id": "b",
+              "text": "Describe three different types of weaves to your counselor."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Plan and weave the following projects:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Square basket"
+            },
+            {
+              "req_id": "b",
+              "text": "Round basket"
+            },
+            {
+              "req_id": "c",
+              "text": "Campstool seat."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        }
+      ]
+    }
+  ]
+}

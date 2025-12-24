@@ -1,0 +1,206 @@
+{
+  "id": "personal-fitness",
+  "title": "Personal Fitness",
+  "slug": "personal-fitness",
+  "url": "https://www.scouting.org/merit-badges/personal-fitness/",
+  "eagle_required": true,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Before completing requirements 2 through 9, have your health-care practitioner give you a physical examination, using the Scout Health and Medical Record. Explain the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "text": "Why physical exams are important"
+                },
+                {
+                  "req_id": "2",
+                  "text": "Why preventive habits (such as exercising regularly) are important in maintaining good health, and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your personal fitness"
+                },
+                {
+                  "req_id": "3",
+                  "text": "Diseases that can be prevented and how"
+                },
+                {
+                  "req_id": "4",
+                  "text": "The seven warning signs of cancer"
+                },
+                {
+                  "req_id": "5",
+                  "text": "The youth risk factors that affect cardiovascular health in adulthood."
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Have a dental examination. Get a statement saying that your teeth have been checked and cared for. Tell how to care for your teeth."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Explain to your counselor verbally or in writing what personal fitness means to you, including",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Reasons for being mentally, physically, socially, and spiritually fit"
+            },
+            {
+              "req_id": "b",
+              "text": "Reasons for being fit in all components"
+            },
+            {
+              "req_id": "c",
+              "text": "What it means to be physically healthy"
+            },
+            {
+              "req_id": "d",
+              "text": "What it means to be socially healthy."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "With your counselor, answer and discuss the following questions:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Are you living in such a way that your risk of preventable diseases is minimized?"
+            },
+            {
+              "req_id": "b",
+              "text": "Are you immunized and vaccinated according to the advice of your health care provider and the direction of your parent(s)/guardian(s)?"
+            },
+            {
+              "req_id": "c",
+              "text": "Are you free from habits relating to poor nutrition and the use of alcohol, tobacco, drugs, and other practices that could be harmful to your health?"
+            },
+            {
+              "req_id": "d",
+              "text": "What are the advantages to getting a full night's sleep?"
+            },
+            {
+              "req_id": "e",
+              "text": "Define a nutritious, balanced diet and why it is important."
+            },
+            {
+              "req_id": "f",
+              "text": "Do you participate in a regular exercise program or recreational activities?"
+            },
+            {
+              "req_id": "g",
+              "text": "What are you doing to demonstrate your duty to God?"
+            },
+            {
+              "req_id": "h",
+              "text": "Do you spend quality time with your family and friends in social and recreational activities?"
+            },
+            {
+              "req_id": "i",
+              "text": "Do you support family activities and efforts to maintain a good home life?"
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Explain the following about physical fitness:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "The areas of physical fitness"
+            },
+            {
+              "req_id": "b",
+              "text": "Your weakest and strongest area of physical fitness"
+            },
+            {
+              "req_id": "c",
+              "text": "The need to have a balance in the four areas of physical fitness"
+            },
+            {
+              "req_id": "d",
+              "text": "How a program like the President's Council on Sports, Fitness & Nutrition can lead to lifelong healthful habits"
+            },
+            {
+              "req_id": "e",
+              "text": "How the areas of personal fitness relate to the Scout Law and Scout Oath."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Explain the following about nutrition:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "The importance of good nutrition"
+            },
+            {
+              "req_id": "b",
+              "text": "What good nutrition means to you"
+            },
+            {
+              "req_id": "c",
+              "text": "How good nutrition is related to the other components of personal fitness"
+            },
+            {
+              "req_id": "d",
+              "text": "How to maintain a healthy weight"
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "6",
+          "text": "Before doing requirements 7 and 8:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Complete the aerobic fitness, flexibility and muscular strength tests as described in the Personal Fitness merit badge pamphlet. Record your results and identify those areas where you feel you need to improve."
+            },
+            {
+              "req_id": "b",
+              "text": "Keep track of what you eat and drink for three days. Identify three healthy eating goals you want to work on."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "7",
+          "text": "Outline a comprehensive 12-week physical fitness program using the results of your fitness tests. Be sure your program incorporates the endurance, intensity, and warm-up guidelines discussed in the Personal Fitness merit badge pamphlet. Before beginning your exercises, have the program approved by your counselor and parent or guardian."
+        },
+        {
+          "req_id": "8",
+          "text": "Complete the physical fitness program you outlined in requirement 7. Keep a log of your fitness program activity (how long you exercised; how far you ran, swam, or biked; how many exercise repetitions you completed; your exercise heart rate; etc.). Keep a log of your weekly healthy eating goals. Repeat the aerobic fitness, muscular strength, and flexibility tests every four weeks and record your results. After the 12th week, repeat all of the required activities in each of the three test categories, record your results, and show improvement in each one. Discuss how well you met your healthy eating goals over these 12 weeks. Discuss the meaning and benefit of your experience, and describe your long-term plans regarding your personal fitness."
+        },
+        {
+          "req_id": "9",
+          "text": "Find out about three career opportunities in personal fitness. Pick one and find out the education, training, and experience required for this profession. Discuss what you learned with your counselor, and explain why this profession might interest you."
+        }
+      ]
+    }
+  ]
+}

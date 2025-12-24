@@ -1,0 +1,208 @@
+{
+  "id": "mammal-study",
+  "title": "Mammal Study",
+  "slug": "mammal-study",
+  "url": "https://www.scouting.org/merit-badges/mammal-study/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Explain the following terms: animal, invertebrate, vertebrate, and mammal. Name three characteristics that distinguish mammals from all other animals.",
+          "resources": [
+            {
+              "title": "Characteristics and Categories of Mammals (Video)",
+              "url": "https://www.youtube.com/watch?v=jscSDZG1nFo"
+            },
+            {
+              "title": "10 Traits of Mammals (Video)",
+              "url": "https://www.youtube.com/watch?v=JOqVQ3m-bDQ"
+            },
+            {
+              "title": "Mammals - Traits and Groups of Warm-Blooded Animals (Video)",
+              "url": "https://www.youtube.com/watch?v=n9ud5ZPu2Po"
+            },
+            {
+              "title": "Vertebrate Diversity in Mammals (General Characteristics) (video)",
+              "url": "https://www.youtube.com/watch?v=mXs71vqrvqI"
+            }
+          ]
+        },
+        {
+          "req_id": "2",
+          "text": "Explain how the animal kingdom is classified. Explain where mammals fit in the classification of animals. Classify three mammals from phylum through species.",
+          "resources": [
+            {
+              "title": "The 5 Kingdoms in Classification (video)",
+              "url": "https://youtu.be/oID1h-zL-uw?si=jHkAIYYgKaxKTZwG"
+            },
+            {
+              "title": "Animal Classification (video)",
+              "url": "https://youtu.be/L6anmd7DnYw?si=tVuoSQOwEYpKbYO7"
+            },
+            {
+              "title": "The Three Types of Mammals, Differences, and How to Tell (video)",
+              "url": "https://youtu.be/YAgjPwiSbvA?si=gwU-5Y3dVcmjt8Z7"
+            },
+            {
+              "title": "Mammal Species of the World Database (website)",
+              "url": "https://www.departments.bucknell.edu/biology/resources/msw3/browse.asp"
+            }
+          ]
+        },
+        {
+          "req_id": "3",
+          "text": "Do ONE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Spend three hours in two different kinds of natural habitats or at different elevations for a total of 6 hours. List the different mammal species and how many of each you identified by sight or sign. Tell why all mammals do not live in the same kind of habitat.",
+              "resources": [
+                {
+                  "title": "How to Find Mammal Signs (video)",
+                  "url": "https://www.youtube.com/watch?v=x8DfP0Nh7kA"
+                },
+                {
+                  "title": "Animal Tracks Identification Guide | Animal Footprint ID Charts (website)",
+                  "url": "https://www.greenbelly.co/pages/animal-tracks-identification-guide"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Spend three hours on five different days in at least a 25-acre area (about the size of 31/2 football fields) for a total of 15 hours. List the mammal species you identified by sight or sign."
+            },
+            {
+              "req_id": "c",
+              "text": "From study and reading, write a simple life history of one nongame mammal that lives in your area. Tell how this mammal lived before its habitat was affected in any way by humans. Tell how it reproduces, what it eats, and its natural habitat. Describe its dependency upon plants and other animals (including humans), and how they depend upon it. Describe how humans have benefited from the mammal you have chosen and whether the mammal has benefited from association with humankind."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Do ONE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Under the guidance of a nature center or natural history museum, make two study skins of rats or mice. Tell the uses of study skins and mounted specimens respectively.",
+              "resources": [
+                {
+                  "title": "Skinning Your Rat (video)",
+                  "url": "https://youtu.be/m93WO9praZE?si=DG3Wt7aD9EBE-Zma"
+                },
+                {
+                  "title": "Preparing Mammal Specimens (video)",
+                  "url": "https://www.youtube.com/watch?v=dBk9jwQBiuA"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Take good pictures of two kinds of mammals in the wild. Record the date(s), time of day, weather conditions, approximate distance from the animal, habitat conditions, and any other factors you feel may have influenced the animal's activity and behavior.",
+              "resources": [
+                {
+                  "title": "Top 10 Wildlife Photography Shortcuts (video)",
+                  "url": "https://www.youtube.com/watch?v=r5liiAoUJ1Q"
+                },
+                {
+                  "title": "The Most Important Wildlife Photography (video)",
+                  "url": "https://www.youtube.com/watch?v=wzuxDkmsZgM"
+                },
+                {
+                  "title": "The Ultimate Wildlife Photography Tutorial (website)",
+                  "url": "https://photographylife.com/wildlife-photography-tutorial"
+                },
+                {
+                  "title": "Wildlife Photography (website)",
+                  "url": "https://www.fs.usda.gov/visit/know-before-you-go/wildlife-photography"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Write a life history of a native game mammal that lives in your area, covering the points outlined in requirement 3(c). List sources for this information."
+            },
+            {
+              "req_id": "d",
+              "text": "Make and bait a tracking pit. Report what mammals and other animals came to the bait.",
+              "resources": [
+                {
+                  "title": "Build Animal Track Station (video)",
+                  "url": "https://www.youtube.com/watch?v=rjg7FUw_5fM"
+                },
+                {
+                  "title": "Creating a Backyard Animal Track Trap With Household Items (video)",
+                  "url": "https://www.youtube.com/watch?v=j_SPxHCvSYA"
+                },
+                {
+                  "title": "Animal Tracking Basics - Track Traps, Measurements, Following Sign (video)",
+                  "url": "https://www.youtube.com/watch?v=i2SFVKWhIzY"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Visit a natural history museum. Report on how specimens are prepared and cataloged. Explain the purposes of museums. Resource: What Is the Purpose of a Natural History Museum? (video)",
+              "resources": [
+                {
+                  "title": "What Is the Purpose of a Natural History Museum? (video)",
+                  "url": "https://youtu.be/sCm6JFBdWfM?si=abiHDMFT2hvlOGJS"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Write a report of 500 words on a book about a mammal species."
+            },
+            {
+              "req_id": "g",
+              "text": "Trace two possible food chains of carnivorous mammals from the soil through four stages to the mammal.",
+              "resources": [
+                {
+                  "title": "Animal of the Week: Food Chains (video)",
+                  "url": "https://www.youtube.com/watch?v=FpVXlk_Z-4E"
+                },
+                {
+                  "title": "Food Chains & Food Webs (video)",
+                  "url": "https://www.youtube.com/watch?v=JCl_yDf0Qok"
+                },
+                {
+                  "title": "Tundra Food Chain (website)",
+                  "url": "https://www.sciencefacts.net/tundra-food-chain.html"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Working with your counselor, select and carry out one project that will influence the numbers of one or more mammals.",
+          "resources": [
+            {
+              "title": "Brushpiles With Game Commission Biologist Dan Mummert (video)",
+              "url": "https://www.youtube.com/watch?v=pXTGUBPYwPo"
+            },
+            {
+              "title": "Create a Wildlife Habitat Garden (video)",
+              "url": "https://www.youtube.com/watch?v=IOYDnuz0hA8"
+            },
+            {
+              "title": "How to Make a WILDLIFE GARDEN! The FOUR Things You MUST INCLUDE! (video)",
+              "url": "https://www.youtube.com/watch?v=Vl0W8navRIg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

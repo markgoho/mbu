@@ -1,0 +1,110 @@
+{
+  "id": "pulp-and-paper",
+  "title": "Pulp and Paper",
+  "slug": "pulp-and-paper",
+  "url": "https://www.scouting.org/merit-badges/pulp-and-paper/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Tell the history of papermaking. Describe the part paper products play in our society and economy."
+        },
+        {
+          "req_id": "2",
+          "text": "Learn about the pulp and paper industry.",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Describe the ways the industry plants, grows, and harvests trees."
+            },
+            {
+              "req_id": "b",
+              "text": "Explain how the industry manages its forests so that the supply of trees keeps pace with the demand."
+            },
+            {
+              "req_id": "c",
+              "text": "Tell how the industry has incorporated the concepts of sustainable forest management (SFM)."
+            },
+            {
+              "req_id": "d",
+              "text": "Describe two ways the papermaking industry has addressed pollution."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Name at least four types of trees that are major sources of papermaking fibers. Then do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Discuss what other uses are made of the trees and the forestland owned by the pulp and paper industry."
+            },
+            {
+              "req_id": "b",
+              "text": "Describe two ways of getting fibers from wood, and explain the major differences between them."
+            },
+            {
+              "req_id": "c",
+              "text": "Tell why some pulps are bleached, and describe the process."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Describe how paper is made. Discuss how paper is recycled. Make a sheet of paper by hand."
+        },
+        {
+          "req_id": "5",
+          "text": "Explain what coated paper is and why it is coated. Describe the major uses for different kinds of coated papers. Describe one other way that paper is changed by chemical or mechanical means to make new uses possible."
+        },
+        {
+          "req_id": "6",
+          "text": "Make a list of 15 pulp or paper products found in your home. Share examples of 10 such products with your counselor."
+        },
+        {
+          "req_id": "7",
+          "text": "With your parent or guardian's and counselor's approval, do ONE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Visit a pulp mill. Describe how the mill converts wood to cellulose fibers."
+            },
+            {
+              "req_id": "b",
+              "text": "Visit a paper mill and get a sample of the paper made there. Describe the processes used for making this paper. Tell how it will be used."
+            },
+            {
+              "req_id": "c",
+              "text": "Visit a container plant or box plant. Describe how the plant's products are made."
+            },
+            {
+              "req_id": "d",
+              "text": "Visit a recycled paper collection or sorting facility. Describe the operations there."
+            },
+            {
+              "req_id": "e",
+              "text": "Using books, magazines, your local library, the internet (with your parent or guardian's permission), and any other suitable research tool, find out how paper products are developed. Find out what role research and development play in the papermaking industry. Share what you learn with your counselor."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        },
+        {
+          "req_id": "8",
+          "text": "Find out about three career opportunities in the papermaking industry that interest you. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+        }
+      ]
+    }
+  ]
+}

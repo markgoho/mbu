@@ -1,0 +1,106 @@
+{
+  "id": "veterinary-medicine",
+  "title": "Veterinary Medicine",
+  "slug": "veterinary-medicine",
+  "url": "https://www.scouting.org/merit-badges/veterinary-medicine/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Discuss with your counselor the roles a veterinarian plays in the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Companion or small animal medicine, and equine medicine"
+            },
+            {
+              "req_id": "b",
+              "text": "Food animal or large animal medicine"
+            },
+            {
+              "req_id": "c",
+              "text": "Exotic animal medicine"
+            },
+            {
+              "req_id": "d",
+              "text": "Marine animal medicine (mammal and fish)"
+            },
+            {
+              "req_id": "e",
+              "text": "Poultry medicine"
+            },
+            {
+              "req_id": "f",
+              "text": "Wildlife medicine and aquaculture medicine."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Discuss with your counselor the roles a veterinarian plays in the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Public health medicine and zoonotic disease surveillance and control"
+            },
+            {
+              "req_id": "b",
+              "text": "The military"
+            },
+            {
+              "req_id": "c",
+              "text": "Food safety and inspection"
+            },
+            {
+              "req_id": "d",
+              "text": "Laboratory animal medicine and research"
+            },
+            {
+              "req_id": "e",
+              "text": "Teaching and government."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Describe the training required to become a veterinarian. Where is the veterinary medical college nearest you? Describe the prerequisites for applying to veterinary school."
+        },
+        {
+          "req_id": "4",
+          "text": "Tell your counselor what a registered veterinary technician (R.T.V.) or animal health technician (A.H.T.) is. Describe the training required to become an R.V.T. or A.H.T. Where is the school or facility for R.V.T. or A.H.T training nearest you? Describe the role an R.V.T. or A.H.T. would play in assisting a veterinarian working in three of the practice types listed in requirement 1."
+        },
+        {
+          "req_id": "5",
+          "text": "Discuss with your counselor the role a veterinarian plays in the human-animal bond."
+        },
+        {
+          "req_id": "6",
+          "text": "Do ONE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Visit a veterinary clinic, hospital, or veterinary referral teaching hospital that does work in one of the practices listed in requirement 1. Spend as much time as you can observing the veterinarians and their staff. Write a report on what you observed and learned at the facility. Share your report with your counselor."
+            },
+            {
+              "req_id": "b",
+              "text": "Spend as much time as possible with a veterinarian who works in one of the fields listed in requirement 2. Learn what special training beyond veterinary medical school may have been required for that position. Learn about any special or unusual activities required of this position. Write a report on what you have learned about this field of veterinary medicine. Include in your report how this field serves the needs of the general public. Share your report with your counselor."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

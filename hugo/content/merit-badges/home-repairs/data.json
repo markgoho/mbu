@@ -1,0 +1,427 @@
+{
+  "id": "home-repairs",
+  "title": "Home Repairs",
+  "slug": "home-repairs",
+  "url": "https://www.scouting.org/merit-badges/home-repairs/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain to your counselor the most likely hazards you may encounter while working on home repairs and what you should do to anticipate, mitigate and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working on home repairs.",
+              "resources": [
+                {
+                  "title": "Avoid These 9 Worst DIY Injuries/Accidents From Common Tools! (video)",
+                  "url": "https://youtu.be/AjlWEb-xbhk?si=771ghgOjwxKPkH4K"
+                },
+                {
+                  "title": "DIY Home Maintenance | Ladder Safety (video)",
+                  "url": "https://youtu.be/JL0hj-VAeBg?si=k6vPGJ6xmjspfCrr"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Discuss general precautions related to home repairs. Name at least 10 safe practices that every home repairer should exercise. Resource: 10 Rules for Safety (video)",
+              "resources": [
+                {
+                  "title": "10 Rules for Safety (video)",
+                  "url": "https://www.youtube.com/shorts/BVCmz9KnwWk"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Under the supervision of your parent, guardian, or counselor, do FOUR of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Maintain or recondition a yard tool and show that you know how to clean up and properly store this equipment. Resource: How to Clean & Sharpen Your Garden Tools (video)",
+              "resources": [
+                {
+                  "title": "How to Clean & Sharpen Your Garden Tools (video)",
+                  "url": "https://www.youtube.com/watch?v=YzpKDkIOkJM"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Weather strip a window or door. Resource: How to Install Weatherstripping (video)",
+              "resources": [
+                {
+                  "title": "How to Install Weatherstripping (video)",
+                  "url": "https://www.youtube.com/watch?v=E3JK2zMR53c"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Caulk cracks or joints open to the weather. Resource: The Secrets to Great Exterior Caulking (Windows, Doors, Trims)! (video)",
+              "resources": [
+                {
+                  "title": "The Secrets to Great Exterior Caulking (Windows, Doors, Trims)! (video)",
+                  "url": "https://www.youtube.com/watch?v=lS0wiWLFzMw"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Waterproof a basement."
+            },
+            {
+              "req_id": "e",
+              "text": "Repair a break in a concrete or asphalt surface.",
+              "resources": [
+                {
+                  "title": "How to Fill Asphalt Gaps and Cracks (video)",
+                  "url": "https://youtu.be/aI3ayjrVJl0?si=UictxFsIutZfuokV"
+                },
+                {
+                  "title": "Repairing a Neglected Driveway Crack (video)",
+                  "url": "https://www.youtube.com/watch?v=xk2lT9D_0wY"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Repair the screen in a window or door. Resource: How to Repair a Window Screen (video)",
+              "resources": [
+                {
+                  "title": "How to Repair a Window Screen (video)",
+                  "url": "https://www.youtube.com/watch?v=t7emMleueHg"
+                }
+              ]
+            },
+            {
+              "req_id": "g",
+              "text": "Replace a pane of glass. Resource: How to Replace a Broken Window Pane (video)",
+              "resources": [
+                {
+                  "title": "How to Replace a Broken Window Pane (video)",
+                  "url": "https://www.youtube.com/watch?v=Dc67opK57sk"
+                }
+              ]
+            },
+            {
+              "req_id": "h",
+              "text": "Solder a broken wire or metal object."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 4
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Under the supervision of your parent, guardian, or counselor, do THREE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Install or build equipment for storing tools.",
+              "resources": [
+                {
+                  "title": "80 Tool Storarge Ideas (video)",
+                  "url": "https://www.youtube.com/watch?v=txhES7lKfCI"
+                },
+                {
+                  "title": "Easy Scrap Wood Yard Tool Organizer (video)",
+                  "url": "https://www.youtube.com/shorts/L0CgzmPzOeI"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Build a workbench. Resource: DIY Simple Workbench (video)",
+              "resources": [
+                {
+                  "title": "DIY Simple Workbench (video)",
+                  "url": "https://www.youtube.com/watch?v=TRp4FaT24BA"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Repair a piece of furniture.",
+              "resources": [
+                {
+                  "title": "Sofa Leg Frame Repair (video)",
+                  "url": "https://www.youtube.com/watch?v=X_3jmub6U0g"
+                },
+                {
+                  "title": "Fix Split Furniture with Wood Glue (video)",
+                  "url": "https://www.youtube.com/watch?v=66rQe_aB1v0"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Paint or varnish a piece of furniture, a door, or trim on a house.",
+              "resources": [
+                {
+                  "title": "Refurbishing a Table  (video)",
+                  "url": "https://youtube.com/shorts/bIis1JZHoKI?si=OxxplR648XUIuUcE"
+                },
+                {
+                  "title": "3 BIG Door Painting Mistakes DIYers Don't Know They're Making (video)",
+                  "url": "https://youtu.be/cKOgJmwtigA?si=boGzDnTPu5HUT2KE"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Repair a sagging door or gate. Resource: How to Fix a Sagging Door That's Rubbing or Won't Close!!! (video)",
+              "resources": [
+                {
+                  "title": "How to Fix a Sagging Door That's Rubbing or Won't Close!!! (video)",
+                  "url": "https://www.youtube.com/watch?v=ZcDj6g2UODw"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Repair a loose step or railing.",
+              "resources": [
+                {
+                  "title": "How to Repair a Broken Stair Tread (video)",
+                  "url": "https://www.youtube.com/watch?v=b4ixXEoCMRw"
+                },
+                {
+                  "title": "How to Repair a Loose Newel Post  (video)",
+                  "url": "https://youtu.be/u6_TNkcGL5I?si=IZ3WIUKz3Ldi2VXw"
+                }
+              ]
+            },
+            {
+              "req_id": "g",
+              "text": "Repair a fence. Resource: How to Repair a Fence (video)",
+              "resources": [
+                {
+                  "title": "How to Repair a Fence (video)",
+                  "url": "https://www.youtube.com/watch?v=y1ZIZhl-Cik"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 3
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Under the supervision of your parent, guardian, or counselor, do TWO of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Locate a main electrical switch box and know how to replace a fuse or reset a circuit breaker.",
+              "resources": [
+                {
+                  "title": "How to Replace Fuses and Reset Breakers (video)",
+                  "url": "https://www.youtube.com/watch?v=bHQMCovwwAo"
+                },
+                {
+                  "title": "How Fuses and Circuit Breakers Work (video)",
+                  "url": "https://youtu.be/gDBUqeqx5t4?si=mekwTqgiejSBx6OJ"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Replace an electrical cord or repair a plug or lamp socket. Resource: How to Replace a Lamp Cord (video)",
+              "resources": [
+                {
+                  "title": "How to Replace a Lamp Cord (video)",
+                  "url": "https://youtu.be/SsvPe1bo2Qs?si=I7LQZlgGuur8XkG3"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Install a single-pole light switch. Resource: How to Replace a Light Switch (video)",
+              "resources": [
+                {
+                  "title": "How to Replace a Light Switch (video)",
+                  "url": "https://www.youtube.com/watch?v=HreHB638a2g"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Replace an electrical wall outlet.",
+              "resources": [
+                {
+                  "title": "How to Replace Outlets, Light Switches and GFCI Plugs (video)",
+                  "url": "https://youtu.be/drsaKC6_gYw?si=xfZ534IbYV6IsYgI"
+                },
+                {
+                  "title": "How to Change an Outlet (video)",
+                  "url": "https://www.youtube.com/watch?v=OC-b-00d-R0"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Under the supervision of your parent, guardian, or counselor, do TWO of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Clear a clogged drain or trap. Resource: How to Unclog Any Drain (video)",
+              "resources": [
+                {
+                  "title": "How to Unclog Any Drain (video)",
+                  "url": "https://www.youtube.com/watch?v=LpDLynrXln8"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Repair a leaky water faucet. Resource: How to Repair a Leaking Faucet (video)",
+              "resources": [
+                {
+                  "title": "How to Repair a Leaking Faucet (video)",
+                  "url": "https://www.youtube.com/watch?v=zMH61Yabdj0"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Repair a flush toilet.",
+              "resources": [
+                {
+                  "title": "How to Fix a Running Toilet: The Two Most Common Causes (video)",
+                  "url": "https://www.youtube.com/watch?v=NQ2AXvqgfPM"
+                },
+                {
+                  "title": "Fix a Running Toilet...Fill Valve Replacement (video)",
+                  "url": "https://www.youtube.com/watch?v=7K6pcLYrJJs"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Repair a leaky hose or connector. Resource: How to Repair a Garden Hose (video)",
+              "resources": [
+                {
+                  "title": "How to Repair a Garden Hose (video)",
+                  "url": "https://www.youtube.com/watch?v=aOmnHQMBEW4"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Clean or replace a sprinkler head.",
+              "resources": [
+                {
+                  "title": "Replace a Sprinkler Head in 5 Minutes (video)",
+                  "url": "https://www.youtube.com/watch?v=Fu9rKGWbbMw"
+                },
+                {
+                  "title": "How to Clean a Sprinkler Head (video)",
+                  "url": "https://www.youtube.com/watch?v=K6qXBbpL8VE"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
+        },
+        {
+          "req_id": "6",
+          "text": "Under the supervision of your parent, guardian, or counselor, do THREE of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Paint a wall or ceiling. Resource: How to Paint a Wall (video)",
+              "resources": [
+                {
+                  "title": "How to Paint a Wall (video)",
+                  "url": "https://www.youtube.com/watch?v=ftDSnccAx_Q"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Repair or replace damaged tile, linoleum, or vinyl flooring. Resource: How to Patch a Sheet Vinyl Floor (video)",
+              "resources": [
+                {
+                  "title": "How to Patch a Sheet Vinyl Floor (video)",
+                  "url": "https://www.youtube.com/watch?v=hPh6XEDUHeE"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Install drapery or curtain rods and then hang drapes or curtains. Resource: How to Hang Curtain Rods (video)",
+              "resources": [
+                {
+                  "title": "How to Hang Curtain Rods (video)",
+                  "url": "https://www.youtube.com/watch?v=bJr6jPYs5_I"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Replace window blind cords."
+            },
+            {
+              "req_id": "e",
+              "text": "Repair or replace a window sash cord."
+            },
+            {
+              "req_id": "f",
+              "text": "Reinforce a picture frame.",
+              "resources": [
+                {
+                  "title": "How to Reinforce Wood Picture Frame Corners (video)",
+                  "url": "https://www.youtube.com/watch?v=c7s3EVrUx78"
+                },
+                {
+                  "title": "Reinforced Picture Frame (video)",
+                  "url": "https://www.youtube.com/watch?v=Q3e_kbg-EmM"
+                }
+              ]
+            },
+            {
+              "req_id": "g",
+              "text": "Mend an object made of china, glass, or pottery.",
+              "resources": [
+                {
+                  "title": "How To Fix Broken Ceramics (video)",
+                  "url": "https://www.youtube.com/watch?v=Rg4q0g8zXi8"
+                },
+                {
+                  "title": "The Best Trick for Fixing Broken Ceramics (video)",
+                  "url": "https://www.youtube.com/watch?v=M2vtfNxHVv0"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 3
+          }
+        }
+      ]
+    }
+  ]
+}

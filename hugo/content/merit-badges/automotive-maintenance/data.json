@@ -1,0 +1,714 @@
+{
+  "id": "automotive-maintenance",
+  "title": "Automotive Maintenance",
+  "slug": "automotive-maintenance",
+  "url": "https://www.scouting.org/merit-badges/automotive-maintenance/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Safety and Registration. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain to your counselor the hazards you are most likely to encounter during automotive maintenance activities, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards. Resource: Automotive Repair Safety Observations (video)",
+              "resources": [
+                {
+                  "title": "Automotive Repair Safety Observations (video)",
+                  "url": "https://youtu.be/g52rQbJd43w?si=5YRRnfneJqWspPMb"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Discuss with your counselor the safety equipment, tools, and clothing used while checking or repairing a motor vehicle. Use this equipment, tools, and/or clothing (when needed or called for) in meeting the requirements for this merit badge. Resource: Garage and Shop Safety Basics (video)",
+              "resources": [
+                {
+                  "title": "Garage and Shop Safety Basics (video)",
+                  "url": "https://youtu.be/lT_42grmnUk?si=9Ov1c-5CUwWuXg5m"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain the different types of motors you may encounter.",
+              "resources": [
+                {
+                  "title": "Difference Between Diesel and Gas Engines (video)",
+                  "url": "https://youtu.be/rlK7JIAz9WY?si=zlHbl7TXVzW_9W0K"
+                },
+                {
+                  "title": "Different Types of Motors in Electric Vehicles (video)",
+                  "url": "https://youtu.be/Bu3p2uf74r8?si=ibB5aVbgyz2uhjp5"
+                },
+                {
+                  "title": "Different Types of Hybrid Engines (video)",
+                  "url": "https://youtu.be/H1DvkVKegJY?si=WYSrupa06aH52qsD"
+                },
+                {
+                  "title": "How Do Hydrogen Cars Work (video)",
+                  "url": "https://youtu.be/wWOVzSmc72E?si=pqjF6dj1ADp72Hpf"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Explain the safety considerations when performing maintenance on a vehicle equipped with a high-voltage electrical system. Resource: Working on High Voltage Vehicles (video)",
+              "resources": [
+                {
+                  "title": "Working on High Voltage Vehicles (video)",
+                  "url": "https://youtu.be/t_jDdsC5UBc?si=X3i6HvfGoSnFMV05"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Review the maintenance chart in the vehicle owner's manual. Explain the requirements and time limits. Resource: Should I Follow the Manufacturer's Maintenance Schedule (video)",
+              "resources": [
+                {
+                  "title": "Should I Follow the Manufacturer's Maintenance Schedule (video)",
+                  "url": "https://youtu.be/vPHd0EHVU1U?si=gKlqtHGZvzRBwG0B"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Explain the purpose, importance, and limitations of safety belts and passive restraints.",
+              "resources": [
+                {
+                  "title": "Seatbelt | How Does it Work? (video)",
+                  "url": "https://youtu.be/uRaU1HMJyCo?si=35wRwtjnIBBaBQk3"
+                },
+                {
+                  "title": "Seatbelts (website)",
+                  "url": "https://www.nhtsa.gov/vehicle-safety/seat-belts"
+                },
+                {
+                  "title": "On Air Bags (website)",
+                  "url": "https://www.nhtsa.gov/vehicle-safety/air-bags"
+                }
+              ]
+            },
+            {
+              "req_id": "g",
+              "text": "Find out the requirements for your state's emissions and safety inspections (as applicable), including how often a vehicle needs to be inspected. Resource: Tips on How to Pass State Inspection (video)",
+              "resources": [
+                {
+                  "title": "Tips on How to Pass State Inspection (video)",
+                  "url": "https://youtu.be/Ek-WN2dgjLQ"
+                }
+              ]
+            },
+            {
+              "req_id": "h",
+              "text": "Explain the importance of registering a vehicle and find out the annual registration fee for renewing your family car's registration. Resource: Vehicle Registration Near Me (video)",
+              "resources": [
+                {
+                  "title": "Vehicle Registration Near Me (video)",
+                  "url": "https://youtu.be/QBC9o1imZO8?si=iT_DBHrKqiDjAMtL"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "General Maintenance. Do the following: Resource: Your Car's Fluids (video)",
+          "resources": [
+            {
+              "title": "Your Car's Fluids (video)",
+              "url": "https://youtu.be/RaxZUGP1Zr0?si=_Z1CMmzpR5nAPJkp"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Demonstrate how to check the following:",
+              "resources": [
+                {
+                  "title": "How to Care for Your Automotive Battery (video)",
+                  "url": "https://youtu.be/-dWtk08fMfw?si=AfrX0oKSRi6fCKoe&t=14"
+                },
+                {
+                  "title": "How to Check & Properly Fill Water Levels in a Car Batter (video)",
+                  "url": "https://youtu.be/ytg2TCC6IKw?si=XBSt8SXU0YENVL7J"
+                }
+              ],
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "text": "(1) Brake fluid"
+                },
+                {
+                  "req_id": "2",
+                  "text": "(2) Engine oil"
+                },
+                {
+                  "req_id": "3",
+                  "text": "(3) Coolant"
+                },
+                {
+                  "req_id": "4",
+                  "text": "(4) Power steering fluid"
+                },
+                {
+                  "req_id": "5",
+                  "text": "(5) Windshield washer fluid"
+                },
+                {
+                  "req_id": "6",
+                  "text": "(6) Transmission fluid"
+                },
+                {
+                  "req_id": "7",
+                  "text": "(7) Battery fluid (if possible) and condition of the battery terminals"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Locate the fuse boxes; determine the type and size of fuses. Demonstrate the proper replacement of burned-out fuses. Resource: How to Check Car Fuses (video)",
+              "resources": [
+                {
+                  "title": "How to Check Car Fuses (video)",
+                  "url": "https://youtu.be/PF5G4llnvQs?si=TTLfI1ev6g2UtMw-"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Demonstrate how to check the condition and tension of belts and hoses.",
+              "resources": [
+                {
+                  "title": "How to Inspect Belts (video)",
+                  "url": "https://youtu.be/XlUK0XDpCSY?si=mPiotbFHaGk0grht&t=20"
+                },
+                {
+                  "title": "How to Check Serpentine Belt (video)",
+                  "url": "https://youtu.be/Clv2ZlS3hB0?feature=shared"
+                },
+                {
+                  "title": "How to Inspect Hoses (video)",
+                  "url": "https://youtu.be/apoc2ZUU51k?feature=shared"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Check the vehicle for proper operation of its lights, including the interior overhead lights, instrument lights, warning lights, and exterior bulbs.",
+              "resources": [
+                {
+                  "title": "How to Check Car Lights (video)",
+                  "url": "https://youtu.be/WLDE5-QVEi8?si=xxbnuJv2QtXKRNuf"
+                },
+                {
+                  "title": "Basics of Automotive Lighting Systems (video)",
+                  "url": "https://youtu.be/k3ckC8FCwsU?si=qRWssPgqKCuAH055"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Locate and check the air filter(s). Resource: Check and Change Air Filter (video)",
+              "resources": [
+                {
+                  "title": "Check and Change Air Filter (video)",
+                  "url": "https://youtu.be/noid4J2TbpU?si=skrUm5VlKpkcKADO"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Dashboard/Driver Information Center. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain the function of the fuel gauge, speedometer, tachometer, oil pressure, and engine temperature gauge. Point each one out on the instrument cluster. Resource: Understanding the Car Gauges (video)",
+              "resources": [
+                {
+                  "title": "Understanding the Car Gauges (video)",
+                  "url": "https://youtu.be/EDZbQdvM-dI?feature=shared"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain the symbols that light up on the dashboard and the difference between the yellow and red symbols. Explain each of the indicators on the dashboard, using the owner's manual if necessary. Resource: Dashboard Warning Lights Explained (video)",
+              "resources": [
+                {
+                  "title": "Dashboard Warning Lights Explained (video)",
+                  "url": "https://youtu.be/DswOF-reMRo?si=N020Ga39csW2d_28"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain the messages and alerts that may be displayed on the dashboard/ driver information center including maintenance-related reminders."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Tires. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain the difference between tire manufacturer's and vehicle manufacturer's specifications and show where to find them. Resource: How to Read aTire (video)",
+              "resources": [
+                {
+                  "title": "How to Read aTire (video)",
+                  "url": "https://youtu.be/bW5XKi8RvR0?si=bUxYodfbQYrUuRzq"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Demonstrate how to check tire pressure and properly inflate a tire. Check the spare tire and make sure it is ready for use. Resource: How to Properly Check and Fill Tires (video)",
+              "resources": [
+                {
+                  "title": "How to Properly Check and Fill Tires (video)",
+                  "url": "https://youtu.be/0Q-Eb7aUyt4?si=aIug5NNg5ISPI_RW"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain why wheel alignment is important to the life of a tire. Explain caster, camber, and toe-in adjustments on wheel alignment. Resource: Understanding Wheel Alignment Process (video) (video)",
+              "resources": [
+                {
+                  "title": "Understanding Wheel Alignment Process (video) (video)",
+                  "url": "https://youtu.be/Zs2-mdUFnrs?si=k39aCmmH8CFBnW2f"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Explain the purpose of the lateral-wear bar indicator.",
+              "resources": [
+                {
+                  "title": "What is a TIre Wear Indicator Bar? (video)",
+                  "url": "https://youtu.be/juwEdAk8fQU?si=tKT9gEm5OWE_sR_V"
+                },
+                {
+                  "title": "Knowing When to Replace Your Tires (video)",
+                  "url": "https://youtu.be/eX1yNinA14k?si=qF8EliaSn4wuUnrN"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Explain how to dispose of old tires in accordance with local laws and regulations. Resource: Tires: How Do I Get Rid Of Them? (video)",
+              "resources": [
+                {
+                  "title": "Tires: How Do I Get Rid Of Them? (video)",
+                  "url": "https://youtu.be/eYbHXvVlPo4?si=RpKB3qZAjN3ZUXCG"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Engine. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain how an internal combustion engine operates. Tell the differences between gasoline and diesel engines. Explain how a gasoline-electric hybrid vehicle is powered.",
+              "resources": [
+                {
+                  "title": "Engines 101: Basics of How Engines Work (video)",
+                  "url": "https://youtu.be/gqK3dCpwzxE?si=UPmmasiMdCvH9Z18"
+                },
+                {
+                  "title": "Engines 101: How Does a Diesel Engine Work (video)",
+                  "url": "https://youtu.be/PFKppLZNVuU?si=IXxylkf44UZj8UOt"
+                },
+                {
+                  "title": "How Hybrid Cars Work (video)",
+                  "url": "https://youtu.be/hRYWqdiUlbA?feature=shared"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Discuss the purpose of engine oil. Explain the API service code, the SAE number, and the viscosity rating.",
+              "resources": [
+                {
+                  "title": "API Motor Oil Ratings Explained (video)",
+                  "url": "https://youtu.be/zOm_qlge9sE?si=Cmjw88X-dBXCAZC-"
+                },
+                {
+                  "title": "What Do SAE Grades Mean  (video)",
+                  "url": "https://youtu.be/I09djHVZbaw?si=iAYgnRyx2mwjtNF2"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain where to find the recommended oil type and the amount of oil to be used in the vehicle engine. Resource: Choosing the Correct Engine Oil (video)",
+              "resources": [
+                {
+                  "title": "Choosing the Correct Engine Oil (video)",
+                  "url": "https://youtu.be/UdzbRMy0sYU?si=K1C5G09GxYyQ3Q-m"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "6",
+          "text": "Cooling System. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain the need for coolant in the cooling system, and the importance of selecting the correct coolant type for a given vehicle. Resource: Role of Antifreeze/Coolant (video)",
+              "resources": [
+                {
+                  "title": "Role of Antifreeze/Coolant (video)",
+                  "url": "https://youtu.be/E6UieoMzvxM?si=5IYkQMMWHf8N-LIf"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain how to flush and change the engine coolant in the vehicle, and how to properly dispose of the used coolant. Resource: Flushing and Filling Your Coolant System (video)",
+              "resources": [
+                {
+                  "title": "Flushing and Filling Your Coolant System (video)",
+                  "url": "https://youtu.be/XdyZDw7jOP0?si=erJ4Yd2RGSk2-DGB"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "7",
+          "text": "Fuel System. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain how the air and fuel systems work together and why it is necessary to have an air filter and fuel filter.",
+              "resources": [
+                {
+                  "title": "How Air Filter Works (video)",
+                  "url": "https://www.youtube.com/shorts/3RRpjRclwwY"
+                },
+                {
+                  "title": "Animation Fuel Filter (video)",
+                  "url": "https://youtu.be/sZLtnnAgs60?si=JOyTzGI4rwRVabWI"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain how a how a fuel injection system works and how an onboard computer works with the fuel injection system. Resource: How a Car Fuel Injection System Works Explained Step-by-Step! (video)",
+              "resources": [
+                {
+                  "title": "How a Car Fuel Injection System Works Explained Step-by-Step! (video)",
+                  "url": "https://youtu.be/DI4Oci7U2lA?si=gXVRcMg3qzrhN7g9"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "8",
+          "text": "Ignition and Electrical Systems. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Diagram and explain the parts of one of the following electrical systems: Resource: Car Electrical System Explained (video)",
+              "resources": [
+                {
+                  "title": "Car Electrical System Explained (video)",
+                  "url": "https://youtu.be/XO-3nCYHeFQ?si=eNmJgO9ya1a2jzJP"
+                }
+              ],
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "text": "Starting/charging system Resource: Automotive Starting and Charging System (video)",
+                  "resources": [
+                    {
+                      "title": "Automotive Starting and Charging System (video)",
+                      "url": "https://youtu.be/IixqxkWpT5M?si=iTXN07OTcbwFCpzB"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "2",
+                  "text": "Hybrid or electric vehicle inverter Resource: The Role of Inverters for EV Propulsion Systems (video)",
+                  "resources": [
+                    {
+                      "title": "The Role of Inverters for EV Propulsion Systems (video)",
+                      "url": "https://youtu.be/wbfOoQgg7Tk?si=CK1dIlvuJJDSXKlC"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "3",
+                  "text": "Lighting system. Resource: Automotive Lighting Circuits (video)",
+                  "resources": [
+                    {
+                      "title": "Automotive Lighting Circuits (video)",
+                      "url": "https://youtu.be/ST5nz8M9Lcg?si=yIgLMjiU5VL_Gu1_"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain the engine's firing order. Resource: Explain Engine Firing Order | Automobile Engineering (video)",
+              "resources": [
+                {
+                  "title": "Explain Engine Firing Order | Automobile Engineering (video)",
+                  "url": "https://youtu.be/ss0GMKBYCks?si=jlPZT5HiIhDtQKQw"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain the purpose of the spark gap. Resource: What You Need to Know About Spark Plugs (video)",
+              "resources": [
+                {
+                  "title": "What You Need to Know About Spark Plugs (video)",
+                  "url": "https://youtu.be/iGiTXYWmSQs?si=ks9YTt40H9lwDuDR"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Demonstrate how to safely connect jumper cables to your car battery.",
+              "resources": [
+                {
+                  "title": "How to Properly Jump Start a Car (video)",
+                  "url": "https://youtu.be/iI1o2hNy2hE?si=t_Z0kfFFLqNt1lkQ"
+                },
+                {
+                  "title": "How to Jump Start a Dead Battery (website)",
+                  "url": "https://scoutlife.org/features/150888/how-to-jump-start-a-dead-battery/"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Discuss with your counselor what factors can affect range on an electrified vehicle. Explain the procedure for recharging an electric or plug-in hybrid vehicle. Resource: Factors Affecting Range (video)",
+              "resources": [
+                {
+                  "title": "Factors Affecting Range (video)",
+                  "url": "https://youtu.be/FlaskUlzdmU?si=CIjEtDAEGsjmaiP6"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Explain what other vehicle systems are dependent on a reliable electrical system. Resource: Fundamentals of Automotive Electrical Systems (video)",
+              "resources": [
+                {
+                  "title": "Fundamentals of Automotive Electrical Systems (video)",
+                  "url": "https://youtu.be/17DdpIJ6IsI?si=TsLAiKVhMLMmEeh_"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "9",
+          "text": "Drive Train. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Diagram the drive train and explain the different parts. Resource: Ultimate Drive Train Guide (video)",
+              "resources": [
+                {
+                  "title": "Ultimate Drive Train Guide (video)",
+                  "url": "https://youtu.be/-cTJqNWwmf0?si=qapozBPNfBih0PCY"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain the difference between automatic and standard transmissions. Resource: Manual vs Automatic (video)",
+              "resources": [
+                {
+                  "title": "Manual vs Automatic (video)",
+                  "url": "https://youtu.be/qAdJu3cwVME?si=iBSSp4Jwxk3jhgyr"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain the types of automatic transmission fluid. Resource: The Complexities of Today's Automatic Transmission Fluid (video)",
+              "resources": [
+                {
+                  "title": "The Complexities of Today's Automatic Transmission Fluid (video)",
+                  "url": "https://youtu.be/0jnewEGKAp0?si=coMA15wWraII-t2m"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Explain the types of lubricants used in a standard transmission, and in the differential and transfer case. Resource: Which Fluids to Use (video)",
+              "resources": [
+                {
+                  "title": "Which Fluids to Use (video)",
+                  "url": "https://youtu.be/3le9ZT5HUlk?si=WmA2BT2KcmgCqFqe"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Explain the difference between front-wheel, rear- wheel, and four-wheel drive. Resource: Ultimate Drive Train Guide (video)",
+              "resources": [
+                {
+                  "title": "Ultimate Drive Train Guide (video)",
+                  "url": "https://youtu.be/-cTJqNWwmf0?si=YscZbCqHqB_OzlKy"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "10",
+          "text": "Brake System. Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain the brake system (including antilock systems) and how it operates. Resource: Understanding ABS (video)",
+              "resources": [
+                {
+                  "title": "Understanding ABS (video)",
+                  "url": "https://youtu.be/98DXe3uKwfc?si=G4NpfHoDLA1k-_qu"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain the differences between disc and drum systems. Resource: Drum vs Disc Brakes - What Are the Differences? (Which Is the Better Choice?) (video)",
+              "resources": [
+                {
+                  "title": "Drum vs Disc Brakes - What Are the Differences? (Which Is the Better Choice?) (video)",
+                  "url": "https://youtu.be/RAQcvP07RHE?si=ppH7voCgequLWmeo"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Demonstrate how to check the condition of a vehicle's brake system. After checking, make recommendations for repairs (if necessary). Resource: How to Check Pads and Rotor (video)",
+              "resources": [
+                {
+                  "title": "How to Check Pads and Rotor (video)",
+                  "url": "https://youtu.be/WzXjTrMu3lg?si=WU6olZplgEwSJXrU"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "11",
+          "text": "Do TWO of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Determine the value of three different vehicles you are interested in purchasing. One must be new and one must be used; the third vehicle can be new or used. For each vehicle, find out the requirements and cost of automobile insurance to include basic liability and options for collision, comprehensive, towing, and rental car. Using the three vehicles you chose and with your counselor's assistance, complete the operation/maintenance chart provided in the Automotive Maintenance merit badge pamphlet. Use this information to determine the operating cost per mile for each vehicle, and discuss what you learn with your counselor. Resource: How to Negotiate and Buy a Used Car (video)",
+              "resources": [
+                {
+                  "title": "How to Negotiate and Buy a Used Car (video)",
+                  "url": "https://youtu.be/DW6CbYMz2uM?si=wHJGXS-PhtyOsCfK"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Choose a car cleaner and wax product for a vehicle you want to clean. Explain clear-coat paint and the precautions necessary for care. Clean the vehicle, both inside and out, and wax the exterior. Use a vinyl and rubber protectant (on vinyl tops, rubber door seals, sidewalls, etc.) and explain the importance of this protectant. Resource: How to Wax Your Car (video)",
+              "resources": [
+                {
+                  "title": "How to Wax Your Car (video)",
+                  "url": "https://youtu.be/9vYTXat5jZc?feature=shared"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Locate the manufacturer's jack. Use the jack to demonstrate how to engage the jack correctly on the vehicle, then change a tire correctly. Resource: How to Change a Flat Tire (video)",
+              "resources": [
+                {
+                  "title": "How to Change a Flat Tire (video)",
+                  "url": "https://youtu.be/owHHcbrytvU?si=NvpQkfFmzJBbYzT9"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Perform an oil filter and oil change on a vehicle. Explain how to properly dispose of the used oil and filter. Resource: How to Change Your Oil (website)",
+              "resources": [
+                {
+                  "title": "How to Change Your Oil (website)",
+                  "url": "https://www.edmunds.com/how-to/how-to-change-your-oil-the-real-down-and-dirty.html"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
+        },
+        {
+          "req_id": "12",
+          "text": "Find out about three career opportunities in the automotive industry. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
+          "resources": [
+            {
+              "title": "10 Exciting & Rewarding Jobs in the Automotive Industry (website)",
+              "url": "https://www.wyotech.edu/automotive/jobs-in-the-automotive-industry/"
+            },
+            {
+              "title": "Automotive Jobs: The Highest Paying Ones  (video)",
+              "url": "https://youtu.be/BgN-1cQzbRM?si=gYwIG5Ea6V3-bLRy"
+            },
+            {
+              "title": "Best Careers in the Automotive Industry (video)",
+              "url": "https://youtu.be/XUmrIRsa3AE?si=fsvj6-CXOovUkJ93"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

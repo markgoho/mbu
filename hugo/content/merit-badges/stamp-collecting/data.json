@@ -1,0 +1,492 @@
+{
+  "id": "stamp-collecting",
+  "title": "Stamp Collecting",
+  "slug": "stamp-collecting",
+  "url": "https://www.scouting.org/merit-badges/stamp-collecting/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following: Resource: Stamp Collecting (video)",
+          "resources": [
+            {
+              "title": "Stamp Collecting (video)",
+              "url": "https://youtu.be/Bu6vw5qlO3M?si=2ly00w2ou8AHx4LO"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Discuss how you can better understand people, places, institutions, history, and geography as a result of collecting stamps.",
+              "resources": [
+                {
+                  "title": "Stamp Collecting Is for Old People (Just Kidding) (video)",
+                  "url": "https://youtu.be/mp07V-_-lc0?si=qw61WgakvzvCy7sz"
+                },
+                {
+                  "title": "Stamps: A World of Fun (video)",
+                  "url": "https://youtu.be/FRMsUTbLK4U?si=vFyVadEM1Zd9Ww75"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Briefly describe some aspects of the history, growth, and development of the United States postal system. Tell how it is different from postal systems in other countries.",
+              "resources": [
+                {
+                  "title": "A Chaotic History of the US Postal Service | Illustrated U.S. History (video)",
+                  "url": "https://youtu.be/aZ9j5t25CaU?si=b2xn0FgNumDoiiNU"
+                },
+                {
+                  "title": "History of US Mail - From the Beginning (video)",
+                  "url": "https://youtu.be/U8ioOqupzmo?si=UlX_1ztm7NDn3yyL"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Define topical stamp collecting. Name and describe three other types of stamp collections.",
+          "resources": [
+            {
+              "title": "What to Collect? (website)",
+              "url": "https://stamps.org/learn/getting-started/what-to-collect"
+            },
+            {
+              "title": "Topical Stamp Collecting (website)",
+              "url": "https://www.linns.com/content/collector-resources/collecting-basics/topical-stamp-collecting "
+            }
+          ]
+        },
+        {
+          "req_id": "3",
+          "text": "Show at least ONE example of each of the following: Resource: Beginner's Guide to Stamp Collecting - Key Terms (video)",
+          "resources": [
+            {
+              "title": "Beginner's Guide to Stamp Collecting - Key Terms (video)",
+              "url": "https://youtu.be/Z4iqhT2yfN8?si=FuJGCx8crtaeEDeW"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Perforated and imperforate stamps",
+              "resources": [
+                {
+                  "title": "American Perforate and Imperforate Stamps (video)",
+                  "url": "https://youtu.be/H1xxRY_ysR8?si=sLQR28tpc50LtyTS"
+                },
+                {
+                  "title": "A Quick History of US Imperforate Stamps (video)",
+                  "url": "https://youtu.be/FFr1VyNHG6g?si=X1ERB1Hg0TjshndA"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Mint and used stamps Resource: The Characteristics of Used Stamps Can Affect How You Collect (website)",
+              "resources": [
+                {
+                  "title": "The Characteristics of Used Stamps Can Affect How You Collect (website)",
+                  "url": "https://www.linns.com/news/postal-updates-page/stamp-collecting-basics/2014/july/the-characteristics-of-used-stamps-can-affect-how-you-collect.html"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Sheet, booklet, and coil stamps Resource: America's First Airmail Coil Stamp (video)",
+              "resources": [
+                {
+                  "title": "America's First Airmail Coil Stamp (video)",
+                  "url": "https://youtu.be/W-ZrlWDJM_s?si=BL_EPOHtnbxHbzEl"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Numbers on plate block, booklet, coil, or marginal markings Resource: First US Commemorative Stamp Booklet (video)",
+              "resources": [
+                {
+                  "title": "First US Commemorative Stamp Booklet (video)",
+                  "url": "https://youtu.be/q16VF0GoEeM?si=Aqq-jz_Mw_EqLBt2"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Overprint and surcharge",
+              "resources": [
+                {
+                  "title": "Precancels, Overprints, and Occupations (video)",
+                  "url": "https://youtube.com/shorts/_aGpp0N9XaM?si=AQmz7Hwg5H9wwxka"
+                },
+                {
+                  "title": "Overprints on Stamps (video)",
+                  "url": "https://youtube.com/shorts/nKd9o-eGp20?si=h_FRvsJTYIFug4RO"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Metered mail",
+              "resources": [
+                {
+                  "title": "What is Metered Mail? (video)",
+                  "url": "https://youtu.be/epE2ugDNbGE"
+                },
+                {
+                  "title": "Postage Meter Stamp Basics (website)",
+                  "url": "https://www.meterstampsociety.com/basics/"
+                }
+              ]
+            },
+            {
+              "req_id": "g",
+              "text": "Definitive, commemorative, semipostal, and airmail stamps",
+              "resources": [
+                {
+                  "title": "A Crash Course on U.S. Stamp Categories (video)",
+                  "url": "https://youtu.be/qVZm1aZlcHI?si=dPrhFCKwEd8dRCrl"
+                },
+                {
+                  "title": "A Quick History of US Definitive Stamps (video)",
+                  "url": "https://youtu.be/_4Gu-yHkFuw?si=B-7AJXgbNPMkuSYr"
+                },
+                {
+                  "title": "A Quick History of US Commemorative Stamp (video)",
+                  "url": "https://youtu.be/Djn6erAUtfM?si=wyNHfk67Z09ktc8Z"
+                },
+                {
+                  "title": "A Quick History of US Airmail Stamps (video)",
+                  "url": "https://youtu.be/yrc5yk1sbOU?si=2wKly428qLgu8WK7"
+                }
+              ]
+            },
+            {
+              "req_id": "h",
+              "text": "Cancellation and postmark Resource: Postmarks and Cancels (video)",
+              "resources": [
+                {
+                  "title": "Postmarks and Cancels (video)",
+                  "url": "https://youtu.be/9i06SxrZ0tQ?si=l8SujsCw07O-5ymi"
+                }
+              ]
+            },
+            {
+              "req_id": "i",
+              "text": "First day cover Resource: Collecting Stamps On Cover (video)",
+              "resources": [
+                {
+                  "title": "Collecting Stamps On Cover (video)",
+                  "url": "https://youtu.be/7IHlZxJouGc?si=aC__tsUPMMKT9OOP"
+                }
+              ]
+            },
+            {
+              "req_id": "j",
+              "text": "Postal stationery (aerogramme, stamped envelope, and postal card). Resource: 4 Helpful Stamp Collecting Tips for Beginners (video)",
+              "resources": [
+                {
+                  "title": "4 Helpful Stamp Collecting Tips for Beginners (video)",
+                  "url": "https://youtube.com/shorts/vdXeCjAFtng?si=4lDNQZtcCqOoyfgr"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Demonstrate the use of ONE standard catalog for several different stamp issues. Explain why catalog value can vary from the corresponding purchase price.",
+              "resources": [
+                {
+                  "title": "What is Grading In Stamp Collecting? (video)",
+                  "url": "https://youtu.be/xlmqU1LOoAw?si=1uEac-awB-qJ8JjJ"
+                },
+                {
+                  "title": "Stamp Collecting Basics - The Scott Catalogue: More Than Just Stamp Values (Pt 1) (video)",
+                  "url": "https://youtu.be/fjnm2Val5UQ?si=C_AUKlkD-vV9Nir3"
+                },
+                {
+                  "title": "Stamp Collecting Basics - The Scott Catalogue: Reading Stamp Listings (Pt 2) (video)",
+                  "url": "https://youtu.be/_-m6ctmETJ8?si=6DamNPvgEw7dmThC"
+                },
+                {
+                  "title": "Scott Stamp catalog (website)",
+                  "url": "https://www.amosadvantage.com/stamp-guides/understanding-the-scott-catalogue-listings?srsltid=AfmBOoqte-RSdjk3HCWRZaloAtUI6Paw1_kCOXQeFaMd4VOzwe-axbCh"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Explain the meaning of the term condition as used to describe a stamp. Show examples that illustrate the different factors that affect a stamp's value. Resource: Stamp Collecting Basics - The Scott Catalogue (video)",
+              "resources": [
+                {
+                  "title": "Stamp Collecting Basics - The Scott Catalogue (video)",
+                  "url": "https://youtu.be/fjnm2Val5UQ?si=C_AUKlkD-vV9Nir3"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Demonstrate the use of at least THREE of the following stamp collector's tools:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Stamp tongs",
+              "resources": [
+                {
+                  "title": "Stamp Collecting Tools Ep3 - Top 3 Everyday Use Tools for the Philatelist (video)",
+                  "url": "https://www.youtube.com/watch?v=d-Id1hb4F3I."
+                },
+                {
+                  "title": "Stamp Collecting Tools - Talking Tongs - Best Practices & Features of Tongs for Philatelic Use (video)",
+                  "url": "https://youtu.be/NWD7JyRKXj0?si=mACiqtjaYKMdNC5C"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Water and tray Resource: How to Soak Postage Stamps off Paper (video)",
+              "resources": [
+                {
+                  "title": "How to Soak Postage Stamps off Paper (video)",
+                  "url": "https://youtu.be/xbdFwdo7gW8?si=GiMrdGKX3twCE_rl"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Magnifiers Resource: Stamp Collecting Tools Ep3 - Top 3 Everyday Use Tools for the Philatelist (video)",
+              "resources": [
+                {
+                  "title": "Stamp Collecting Tools Ep3 - Top 3 Everyday Use Tools for the Philatelist (video)",
+                  "url": "https://www.youtube.com/watch?v=d-Id1hb4F3I."
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Hinges and stamp mounts Resource: How to Trim Self-Adhesive Stamps for Mounts (video)",
+              "resources": [
+                {
+                  "title": "How to Trim Self-Adhesive Stamps for Mounts (video)",
+                  "url": "https://youtu.be/_HT-sU7NHdI?si=X14V2fIh0yn2ndZd"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Perforation gauge Resource: How to Use a Perforation Gauge (video)",
+              "resources": [
+                {
+                  "title": "How to Use a Perforation Gauge (video)",
+                  "url": "https://youtu.be/4hsQRQnEKqw?si=KuygYUWGMtP_szqj"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Glassine envelopes and cover sleeves Resource: Even Stamp Collectors Need the Right Tools (video)",
+              "resources": [
+                {
+                  "title": "Even Stamp Collectors Need the Right Tools (video)",
+                  "url": "https://www.linns.com/insights/even-stamp-collectors-need-the-right-tools-.html"
+                }
+              ]
+            },
+            {
+              "req_id": "g",
+              "text": "Watermark fluid. Resource: How to Find Watermarks on Stamps (video)",
+              "resources": [
+                {
+                  "title": "How to Find Watermarks on Stamps (video)",
+                  "url": "https://youtu.be/Ury0mawE7m4?si=ctCOkAPh6V_GB22X"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 3
+          }
+        },
+        {
+          "req_id": "6",
+          "text": "Do the following: Resource: How Do You Mount Your Stamps in an Album (video)",
+          "resources": [
+            {
+              "title": "How Do You Mount Your Stamps in an Album (video)",
+              "url": "https://www.youtube.com/watch?v=WvQGoi62i9U"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Show a stamp album and how to mount stamps with or without hinges. Show at least ONE page that displays several stamps. Resource: How to Trim Self-Adhesive Stamps for Mounts (video)",
+              "resources": [
+                {
+                  "title": "How to Trim Self-Adhesive Stamps for Mounts (video)",
+                  "url": "https://youtu.be/_HT-sU7NHdI?si=X14V2fIh0yn2ndZd"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Discuss at least THREE ways you can help to preserve stamps, covers, and albums in first-class condition. Resource: 3 Attractive Ways to Store and Display Your Stamp Collection (video)",
+              "resources": [
+                {
+                  "title": "3 Attractive Ways to Store and Display Your Stamp Collection (video)",
+                  "url": "https://youtu.be/i6sIwSc3jYs?si=UdDB47GrWSNvSdqa"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "7",
+          "text": "Do TWO of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Design a stamp, cancellation, or cachet.",
+              "resources": [
+                {
+                  "title": "Creativity in Cachets (video)",
+                  "url": "https://youtu.be/sz84x5n22wY?si=GpQuXf6hM3BWDrC8"
+                },
+                {
+                  "title": "Pictorial Postmarks (video)",
+                  "url": "https://youtu.be/GW5b6RJpLCg?si=QmKSTvjWRPRmJncK"
+                },
+                {
+                  "title": "What Makes a Good Stamp Design (PDF)",
+                  "url": "https://fws.gov/sites/default/files/documents/duck-stamp-what-makes-a-good-stamp-design.pdf"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Visit a post office, stamp club, or stamp show with an experienced collector. Explain what you saw and learned.",
+              "resources": [
+                {
+                  "title": "Visiting a Stamp Show (video)",
+                  "url": "https://youtu.be/5bImEro1G30?si=nz4q-uxDtxbHqgXZ"
+                },
+                {
+                  "title": "The Great American Stamp Show 2024 Wrap Up! (video)",
+                  "url": "https://youtu.be/Gtpcz8eCdSU?si=qkd88rX16c3iYwPv"
+                },
+                {
+                  "title": "The Great American Stamp Show 2025 (video)",
+                  "url": "https://youtu.be/867c5dwUzp0?si=F9Lz9rgw2RRY3Zv1"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Write a review of an interesting article from a stamp newspaper, magazine, book, or website (with your parent or guardian's permission). Resource: Linn's Stamp News (website)",
+              "resources": [
+                {
+                  "title": "Linn's Stamp News (website)",
+                  "url": "https://www.linns.com/"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Research and report on a famous stamp-related personality or the history behind a particular stamp. Resource: History through Cachets (video)",
+              "resources": [
+                {
+                  "title": "History through Cachets (video)",
+                  "url": "https://youtu.be/v-9uGTbE49w?si=lfIIkUTytsVgA5DT"
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "text": "Describe the steps taken to produce a stamp. Include the methods of printing, types of paper, perforation styles, and how they are gummed. Resource: Stamp Production (video)",
+              "resources": [
+                {
+                  "title": "Stamp Production (video)",
+                  "url": "https://youtu.be/G7iAscgzEp4?si=98JeDgk8avgA00Ih"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Prepare a two- to three-page display involving stamps. Using ingenuity, as well as clippings, drawings, etc., tell a story about the stamps , and how they relate to history, geography, or a favorite topic of yours. Resource: Have Lasting Fun: How to Create an Exhibit and Enter It Into a Show (website)",
+              "resources": [
+                {
+                  "title": "Have Lasting Fun: How to Create an Exhibit and Enter It Into a Show (website)",
+                  "url": "https://www.linns.com/insights/have-lasting-fun--how-to-create-an-exhibit-and-enter-it-into-a-s.html"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
+        },
+        {
+          "req_id": "8",
+          "text": "Mount and show, in a purchased or homemade album, ONE of the following: Resource: How to Make Your Own Stamp Album Pages! (video)",
+          "resources": [
+            {
+              "title": "How to Make Your Own Stamp Album Pages!  (video)",
+              "url": "https://youtu.be/5N18BN6HZ4I?si=9QwToD12oZ0KVS5S"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "A collection of 250 or more different stamps from at least 15 countries"
+            },
+            {
+              "req_id": "b",
+              "text": "A collection of a stamp from each of 50 different countries, mounted on maps to show the location of each"
+            },
+            {
+              "req_id": "c",
+              "text": "A collection of 100 or more different stamps from either one country or a group of closely related countries"
+            },
+            {
+              "req_id": "d",
+              "text": "A collection of 75 or more different stamps on a single topic. (Some interesting topics are Scouting, birds, insects, the Olympics, sports, flowers, animals, ships, holidays, trains, famous people, space, and medicine). Stamps may be from different countries."
+            },
+            {
+              "req_id": "e",
+              "text": "A collection of postal items discovered in your mail by monitoring it over a period of 30 days. Include at least five different types listed in requirement 3."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

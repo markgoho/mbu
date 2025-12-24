@@ -1,0 +1,181 @@
+// Merit Badges List Page
+.badge-count {
+  color: var(--color-text-muted, #666);
+  margin-block-start: 0.5rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-block-start: 2rem;
+}
+
+.badge-card {
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--color-surface, white);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  &.eagle {
+    border-left: 4px solid gold;
+    background: linear-gradient(to right, #fffbf0 0%, white 10%);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.eagle-badge {
+  font-size: 1.2em;
+}
+
+.req-count {
+  color: var(--color-text-muted, #666);
+  font-size: 0.9rem;
+  margin-block-start: 0.5rem;
+}
+
+// Merit Badge Single Page
+.merit-badge {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.badge-header {
+  margin-block-end: 2rem;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .eagle-badge {
+    font-size: 0.6em;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    padding: 0.25em 0.75em;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+}
+
+.badge-meta {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: var(--color-surface-secondary, #f5f5f5);
+  border-radius: 4px;
+  margin-block-start: 1rem;
+  flex-wrap: wrap;
+
+  a {
+    margin-inline-start: auto;
+  }
+}
+
+.requirements {
+  margin-block-start: 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
+  }
+}
+
+.requirements-list {
+  list-style: decimal;
+  padding-inline-start: 1.5rem;
+
+  > li {
+    margin-block-end: 2rem;
+    padding-inline-start: 0.5rem;
+  }
+}
+
+.req-text {
+  margin-block-end: 0.5rem;
+}
+
+.subrequirements {
+  margin-block-start: 0.75rem;
+  margin-inline-start: 1.5rem;
+  padding-inline-start: 1.5rem;
+
+  > li {
+    margin-block-end: 0.75rem;
+  }
+
+  // Alphabetic subrequirements (a, b, c)
+  &.alpha {
+    list-style: lower-alpha;
+  }
+
+  // Numeric subrequirements (1, 2, 3) or options
+  &.numeric {
+    list-style: decimal;
+  }
+}
+
+.subreq-text {
+  margin-block-end: 0.5rem;
+}
+
+.resources {
+  margin-block-start: 0.5rem;
+  margin-inline-start: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #555);
+
+  strong {
+    font-weight: 600;
+  }
+
+  ul {
+    margin-block-start: 0.25rem;
+    padding-inline-start: 1.25rem;
+    list-style: disc;
+
+    li {
+      margin-block-end: 0.25rem;
+    }
+  }
+
+  a {
+    color: var(--color-link, #0066cc);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.back-link {
+  display: inline-block;
+  margin-block-start: 2rem;
+  text-decoration: none;
+  color: var(--color-link, #0066cc);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

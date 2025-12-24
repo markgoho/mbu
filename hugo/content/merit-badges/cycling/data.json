@@ -1,0 +1,436 @@
+{
+  "id": "cycling",
+  "title": "Cycling",
+  "slug": "cycling",
+  "url": "https://www.scouting.org/merit-badges/cycling/",
+  "eagle_required": true,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following: Resource: Hazards, Prevention, and First Aid | Produced by Scouting America (video)",
+          "resources": [
+            {
+              "title": "Hazards, Prevention, and First Aid | Produced by Scouting America (video)",
+              "url": "https://vimeo.com/1125028263"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain to your counselor the most likely hazards you may encounter while participating in cycling activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready. Resource: Avoiding Road Hazards (video)",
+              "resources": [
+                {
+                  "title": "Avoiding Road Hazards (video)",
+                  "url": "https://www.youtube.com/watch?v=dcRpBP9WvKg%20"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Show that you know first aid for injuries or illnesses that could occur while cycling, including cuts, scratches, concussions, blisters, sunburn, heat exhaustion, heatstroke, hypothermia, frostbite, dehydration, insect stings, tick bites, and snakebite. Explain to your counselor why you should be able to identify the poisonous plants and poisonous animals that are found in your area. Resource: First Aid Guide for Mountain Bikers (video)",
+              "resources": [
+                {
+                  "title": "First Aid Guide for Mountain Bikers (video)",
+                  "url": "https://www.youtube.com/watch?v=oPCWzECMD_4%20"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Explain the importance of wearing the right clothing and gear while cycling, including a properly sized and fitted helmet. Know the Scouting America Bike Safety Guidelines.",
+              "resources": [
+                {
+                  "title": "Bike Tips: Gear to Make Your Ride More Comfortable (video)",
+                  "url": "https://www.youtube.com/watch?v=2TYe3APtKtc&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=5%20"
+                },
+                {
+                  "title": "How to Wear a Helmet (video)",
+                  "url": "https://www.youtube.com/watch?v=T3u51W0LN2U%20"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Describe your state and local laws concerning bicycles. Discuss what is the same and what is different from laws applying to motor vehicles. Explain where and how you should ride on roads and streets to include lane position, changing lanes, making left and right turns, and riding through intersections.",
+          "resources": [
+            {
+              "title": "Bicycle Laws and Safe Road Riding | Produced by Scouting America (video)",
+              "url": "https://vimeo.com/1125028107"
+            },
+            {
+              "title": "Rules of the Road (video)",
+              "url": "https://youtu.be/-Jp0SSAeCiY"
+            }
+          ]
+        },
+        {
+          "req_id": "3",
+          "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather. Know the Scouting America Bike Safety Guidelines. Resource: Fitting a Bike Helmet (video)",
+          "resources": [
+            {
+              "title": "Fitting a Bike Helmet (video)",
+              "url": "https://www.youtube.com/watch?v=hLlXswx0VvQ "
+            }
+          ]
+        },
+        {
+          "req_id": "4",
+          "text": "Using a bicycle safety checklist, clean and adjust a bicycle and present it to your counselor for inspection. Do the following: Resource: Checklist, Maintenance, and Inspection | Produced by Scouting America (video)",
+          "resources": [
+            {
+              "title": "Checklist, Maintenance, and Inspection | Produced by Scouting America (video)",
+              "url": "https://vimeo.com/1125028194"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Show points that should be checked regularly to make sure the bicycle is safe to ride. Resource: 5 Things to Check Before Every Bike Ride (website)",
+              "resources": [
+                {
+                  "title": "5 Things to Check Before Every Bike Ride (website)",
+                  "url": "https://scoutlife.org/features/169458/5-things-to-check-before-every-bike-ride/"
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "text": "Show how to adjust the saddle and handlebars for a proper fit.",
+              "resources": [
+                {
+                  "title": "Bike Tips: Finding and Fitting the Right Bike (video)",
+                  "url": "https://www.youtube.com/watch?v=dsM9brngVmc&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=6%20"
+                },
+                {
+                  "title": "How to Set Your Bicycle Seat Height (video)",
+                  "url": "https://www.youtube.com/watch?v=jh5Zv6Dcn6k%20"
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "text": "Show how to adjust brakes and gear shifting (derailleurs). Resource: Bike Tips: Proper Shifting Technique (video)",
+              "resources": [
+                {
+                  "title": "Bike Tips: Proper Shifting Technique (video)",
+                  "url": "https://www.youtube.com/watch?v=7kc-CHtlQyM&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=7%20"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "text": "Show all points that need regular lubrication."
+            },
+            {
+              "req_id": "e",
+              "text": "Show how to repair a flat by removing the tire, replacing or patching the tube, and remounting the tire.",
+              "resources": [
+                {
+                  "title": "Changing a Tire with Disc Brakes | Produced by Scouting America (video)",
+                  "url": "https://vimeo.com/1125028160"
+                },
+                {
+                  "title": "Changing a Tire with Caliper Brakes | Produced by Scouting America (video)",
+                  "url": "https://vimeo.com/1125028134"
+                }
+              ]
+            },
+            {
+              "req_id": "f",
+              "text": "Show that the bicycle meets local laws. Resource: Rules of the Road (video)",
+              "resources": [
+                {
+                  "title": "Rules of the Road (video)",
+                  "url": "https://www.youtube.com/watch?v=-Jp0SSAeCiY%20"
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "5",
+          "text": "Demonstrate basic bicycle handling skills to your counselor, to include how to properly mount your bicycle, starting and stopping (to include emergency stops), riding in a straight line, turning, shifting gears, scanning, and signaling.",
+          "resources": [
+            {
+              "title": "Mastering Handling Basic Bicycle Handling Skills | Produced by Scouting America (video)",
+              "url": "https://vimeo.com/1125028294"
+            },
+            {
+              "title": "Bicycle Safer Journey (video)",
+              "url": "https://youtu.be/XMj_95C5ihk"
+            },
+            {
+              "title": "Bike Riding Safety (video)",
+              "url": "https://youtu.be/nf5WQXFvrkk"
+            }
+          ]
+        },
+        {
+          "req_id": "6",
+          "text": "Using the Scouting America buddy system, complete all of the requirements for ONE of the following options: Road Biking OR Trail or Mixed Surface Biking. Resource: Barriers to Abuse (PDF)",
+          "resources": [
+            {
+              "title": "Barriers to Abuse (PDF)",
+              "url": "https://www.scouting.org/wp-content/uploads/2024/09/Youth-Safety-Infographic-Barriers-to-Abuse-1536x1363.png "
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "option1",
+              "text": "A Option A—Road Biking. Do the following: Resource: Advanced Techniques for Urban Riding | Produced by Scouting America (video)",
+              "resources": [
+                {
+                  "title": "Advanced Techniques for Urban Riding | Produced by Scouting America (video)",
+                  "url": "https://vimeo.com/1125028086"
+                }
+              ],
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "text": "Take a road safety test with your counselor and demonstrate the following:",
+                  "subrequirements": [
+                    {
+                      "req_id": "1",
+                      "text": "On an urban street with light traffic, properly execute a left turn from the center of the street; also demonstrate an alternate left-turn technique used during periods of heavy traffic.",
+                      "resources": [
+                        {
+                          "title": "Bike Safety | Hand Signals (video)",
+                          "url": "https://www.youtube.com/watch?v=v_hRsNHlq8M%20"
+                        },
+                        {
+                          "title": "Bike Hand Signals (PDF)",
+                          "url": "https://static.nhtsa.gov/nhtsa/downloads/NTI/Responsible_Walk-Bike_Activities/ComboLessons/L3Handouts/8009_HandSignals_122811_v1a.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Properly execute a right turn. Resource: Bike Safety | Hand Signals (video)",
+                      "resources": [
+                        {
+                          "title": "Bike Safety | Hand Signals (video)",
+                          "url": "https://www.youtube.com/watch?v=v_hRsNHlq8M"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Demonstrate appropriate actions at a right-turn-only lane when you are continuing straight. Resource: Bike Safety | Hand Signals (video)",
+                      "resources": [
+                        {
+                          "title": "Bike Safety | Hand Signals (video)",
+                          "url": "https://www.youtube.com/watch?v=v_hRsNHlq8M"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "Show proper curbside and road-edge riding. Show how to ride safely along a row of parked cars. Resource: Bike Safety | Hand Signals (video)",
+                      "resources": [
+                        {
+                          "title": "Bike Safety | Hand Signals (video)",
+                          "url": "https://www.youtube.com/watch?v=v_hRsNHlq8M"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "5",
+                      "text": "Cross railroad tracks properly. Resource: How to Cross Railroad Tracks (video)",
+                      "resources": [
+                        {
+                          "title": "How to Cross Railroad Tracks (video)",
+                          "url": "https://www.youtube.com/watch?v=62jc3-6Jgdw%20"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "req_id": "b",
+                  "text": "Avoiding main highways, take two rides of 10 miles each, two rides of 15 miles each, and two rides of 25 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen on the ride.",
+                  "resources": [
+                    {
+                      "title": "Bikeability Checklist (PDF)",
+                      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/bikabilitychecklist1.pdf"
+                    },
+                    {
+                      "title": "MapMyRide (website)",
+                      "url": "https://www.mapmyride.com/"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "c",
+                  "text": "After completing requirement b for the road biking option, do ONE of the following:",
+                  "subrequirements": [
+                    {
+                      "req_id": "1",
+                      "text": "Lay out on a road map a 50-mile trip. Stay away from main highways. Using your map, make this ride in eight hours or less. Resource: MapMyRide (website)",
+                      "resources": [
+                        {
+                          "title": "MapMyRide (website)",
+                          "url": "https://www.mapmyride.com/"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Participate in an organized bike tour of at least 50 miles. Make this ride in eight hours or less. Afterward, use the tour's cue sheet to make a map of the ride. Resource: Cue Sheets (website)",
+                      "resources": [
+                        {
+                          "title": "Cue Sheets (website)",
+                          "url": "https://lifeisabeautifuldetail.com/blog/cue-sheets"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "req_id": "option2",
+              "text": "B Option B—Trail or Mixed Surface Biking. Do the following: Note: These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "text": "Demonstrate the following mountain bike handling skills to your counselor:",
+                  "subrequirements": [
+                    {
+                      "req_id": "1",
+                      "text": "Neutral position, ready position, bike body separation (side to side, and forward and back), and body positioning for cornering",
+                      "resources": [
+                        {
+                          "title": "The Basics of Cornering: Berms and Flat Corners (video)",
+                          "url": "https://youtu.be/UCWu6zXDjXM?si=akxjbkFYRrChevnX"
+                        },
+                        {
+                          "title": "Advanced MTB Cornering Techniques: Body Position & Technical Terrain (video)",
+                          "url": "https://www.youtube.com/watch?v=Ammz64zxnhg%20"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Show shifting skills as applicable to climbs and obstacles. Resource: Bike Tips: Proper Shifting Technique (video)",
+                      "resources": [
+                        {
+                          "title": "Bike Tips: Proper Shifting Technique (video)",
+                          "url": "https://www.youtube.com/watch?v=7kc-CHtlQyM&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=7%20"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Show proper technique for riding up (seated, crouched, and standing) and down hills.",
+                      "resources": [
+                        {
+                          "title": "Make Climbing Easier With Proper Body Position (video)",
+                          "url": "https://youtu.be/aDwqM_ZVSUg?si=5RolaSMGLshbWZzS"
+                        },
+                        {
+                          "title": "Steep & Technical Climbs Made Easy With Proper Gearing & Choice of Line (video)",
+                          "url": "https://www.youtube.com/watch?v=Rd-wFxmXmsM%20"
+                        },
+                        {
+                          "title": "How to Climb Any Hill on Your Mountain Bike (video)",
+                          "url": "https://www.youtube.com/watch?v=4knf7exmrAQ%20"
+                        },
+                        {
+                          "title": "Don't Make These Common Climbing Mistakes (video)",
+                          "url": "https://www.youtube.com/watch?v=k6ewOO9rXXY%20"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "req_id": "b",
+                  "text": "Take a trail safety test with your counselor and demonstrate the following:",
+                  "subrequirements": [
+                    {
+                      "req_id": "1",
+                      "text": "Show proper trail etiquette to hikers and other cyclists, including when to yield the right-of-way."
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Demonstrate how to correctly cross an obstacle by either going over the obstacle on your bike or dismounting your bike and crossing over or around the obstacle Resource: How to Jump a Log on a Mountain Bike (video)",
+                      "resources": [
+                        {
+                          "title": "How to Jump a Log on a Mountain Bike (video)",
+                          "url": "https://www.youtube.com/watch?v=Hp_jDNN6XfQ"
+                        }
+                      ]
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Cross rocks, gravel, and roots properly Resource: How to Jump a Log on a Mountain Bike (video)",
+                      "resources": [
+                        {
+                          "title": "How to Jump a Log on a Mountain Bike (video)",
+                          "url": "https://www.youtube.com/watch?v=Hp_jDNN6XfQ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "req_id": "c",
+                  "text": "Describe the rules of trail riding, including how to know when a trail is unsuitable for riding.",
+                  "resources": [
+                    {
+                      "title": "Sharing Our Trails (website)",
+                      "url": "https://trailetiquette.org/"
+                    },
+                    {
+                      "title": "Trail Manners (website)",
+                      "url": "https://www.tfnu.org/trail-etiquette/"
+                    },
+                    {
+                      "title": "Tread Lightly (website)",
+                      "url": "https://treadlightly.org/learn/recreation-tips/sharing-our-trails/%20"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "d",
+                  "text": "On mountain biking or multi-use trails approved by your counselor, take two rides of 2 miles each, two rides of 5 miles each, and two rides of 8 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen. Resource: MapMyRide (website)",
+                  "resources": [
+                    {
+                      "title": "MapMyRide (website)",
+                      "url": "https://www.mapmyride.com/"
+                    }
+                  ]
+                },
+                {
+                  "req_id": "e",
+                  "text": "After fulfilling the previous requirement, lay out on a trail map a 22-mile trip. You may include multiple trail systems, if needed. Stay away from main highways. Using your map, complete this ride in one day. Resource: MapMyRide (website)",
+                  "resources": [
+                    {
+                      "title": "MapMyRide (website)",
+                      "url": "https://www.mapmyride.com/"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

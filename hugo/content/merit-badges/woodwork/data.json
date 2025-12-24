@@ -1,0 +1,111 @@
+{
+  "id": "woodwork",
+  "title": "Woodwork",
+  "slug": "woodwork",
+  "url": "https://www.scouting.org/merit-badges/woodwork/",
+  "eagle_required": false,
+  "sections": [
+    {
+      "title": "Requirements",
+      "requirements": [
+        {
+          "req_id": "1",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Explain to your counselor the most likely hazards you may encounter while participating in woodwork activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Explain what precautions you should take to safely use your tools."
+            },
+            {
+              "req_id": "b",
+              "text": "Show that you know first aid for injuries that could occur while woodworking, including splinters, scratches, cuts, severe bleeding, and shock. Tell what precautions must be taken to help prevent loss of eyesight or hearing, and explain why and when it is necessary to use a dust mask."
+            },
+            {
+              "req_id": "c",
+              "text": "Earn the Totin' Chip recognition."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "2",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Describe how timber is grown, harvested, and milled. Tell how lumber is cured, seasoned, graded, and sized."
+            },
+            {
+              "req_id": "b",
+              "text": "Collect and label blocks of six kinds of wood useful in woodworking. Describe the chief qualities of each. Give the best uses of each."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "3",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Show the proper care, use, and storage of all working tools and equipment that you own or use at home or school."
+            },
+            {
+              "req_id": "b",
+              "text": "Sharpen correctly the cutting edges of two different tools."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "4",
+          "text": "Using a saw, plane, hammer, brace, and bit, make something useful of wood. Cut parts from lumber that you have squared and measured from working drawings."
+        },
+        {
+          "req_id": "5",
+          "text": "Create your own woodworking project. Begin by making working drawings, list the materials you will need to complete your project, and then build your project. Keep track of the time you spend and the cost of the materials."
+        },
+        {
+          "req_id": "6",
+          "text": "Do TWO of the following:",
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "text": "Make working drawings of a project needing beveled or rounded edges and build it."
+            },
+            {
+              "req_id": "b",
+              "text": "Make working drawings of a project needing curved or incised cuttings and build it."
+            },
+            {
+              "req_id": "c",
+              "text": "Make working drawings of a project needing miter, dowel, or mortise and tenon joints and build it."
+            },
+            {
+              "req_id": "d",
+              "text": "Make a cabinet, box, or something else with a door or lid fastened with inset hinges."
+            },
+            {
+              "req_id": "e",
+              "text": "Help make wooden toys for underprivileged children; OR help carry out a woodworking service project approved by your counselor for a charitable organization."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
+        },
+        {
+          "req_id": "7",
+          "text": "Talk with a cabinetmaker or finish carpenter. Learn about training, apprenticeships, career opportunities, work conditions, work hours, pay rates, and union organization that woodworking experts have in your area."
+        }
+      ]
+    }
+  ]
+}
