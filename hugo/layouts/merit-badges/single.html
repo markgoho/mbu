@@ -20,6 +20,11 @@
         <a href="{{ $json.url }}" target="_blank" rel="noopener">
           View Official Page ↗
         </a>
+        {{ if $json.pamphlet_url }}
+          <a href="{{ $json.pamphlet_url }}" target="_blank" rel="noopener" class="pamphlet-link">
+            Download Free Pamphlet ↓
+          </a>
+        {{ end }}
       </div>
     </header>
 
