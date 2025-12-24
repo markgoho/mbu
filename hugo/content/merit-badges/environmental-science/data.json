@@ -3,7 +3,7 @@
   "title": "Environmental Science",
   "slug": "environmental-science",
   "url": "https://www.scouting.org/merit-badges/environmental-science/",
-  "eagle_required": true,
+  "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Environmental_Science.pdf",
   "sections": [
     {
