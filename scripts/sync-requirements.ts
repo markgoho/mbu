@@ -1,34 +1,19 @@
 import * as cheerio from "cheerio";
+import { mkdir } from "fs/promises";
 import { Impit } from "impit";
 import { join } from "path";
-import { mkdir } from "fs/promises";
-import slugify from "slugify";
+import { MERIT_BADGES, findBadgeBySlug, type MeritBadge } from "./merit-badges";
 
 // CONFIGURATION
-const BADGES_DATA_DIR = join(import.meta.dir, "../hugo/data/badges");
 const CONTENT_DIR = join(import.meta.dir, "../hugo/content/merit-badges");
-const INDEX_URL = "https://www.scouting.org/skills/merit-badges/all/";
 const randomDelay = () =>
   new Promise(res => setTimeout(res, 500 + Math.random() * 1000));
 
-// Test mode or single badge mode
-const SINGLE_BADGE = process.env.BADGE_NAME; // e.g., BADGE_NAME="american-business"
-const TEST_BADGES = process.env.TEST_MODE
-  ? [
-      {
-        title: "Archery",
-        url: "https://www.scouting.org/merit-badges/archery/",
-      },
-      {
-        title: "Camping",
-        url: "https://www.scouting.org/merit-badges/camping/",
-      },
-      {
-        title: "First Aid",
-        url: "https://www.scouting.org/merit-badges/first-aid/",
-      },
-    ]
-  : null;
+// Single badge mode: BADGE_NAME="camping" bun run scripts/sync-requirements.ts
+const SINGLE_BADGE = process.env.BADGE_NAME;
+// Test mode with a few badges: TEST_MODE=1 bun run scripts/sync-requirements.ts
+const TEST_MODE = process.env.TEST_MODE;
+const TEST_BADGE_SLUGS = ["archery", "camping", "first-aid"];
 
 // TYPES
 interface BadgeResource {
@@ -54,6 +39,7 @@ interface BadgeData {
   slug: string;
   url: string;
   eagle_required?: boolean;
+  pamphlet_url?: string;
   sections: {
     title: string;
     requirements: BadgeRequirement[];
@@ -61,6 +47,7 @@ interface BadgeData {
 }
 
 console.log("🚀 Starting Merit Badge Sync (Bun Edition)...");
+console.log(`📋 Using static badge list with ${MERIT_BADGES.length} badges`);
 
 // 1. Initialize Impit (TLS Fingerprint Mimicry)
 const client = new Impit({
@@ -71,136 +58,71 @@ const client = new Impit({
 // 2. Ensure content directory exists
 await Bun.write(join(CONTENT_DIR, ".gitkeep"), "");
 
-// 3. Helper to load existing badge
-async function loadExistingBadge(slug: string): Promise<BadgeData | null> {
-  const filePath = join(BADGES_DATA_DIR, `${slug}.json`);
-  const file = Bun.file(filePath);
-  if (await file.exists()) {
-    try {
-      return await file.json();
-    } catch (e) {
-      return null;
-    }
-  }
-  return null;
-}
-
 let successCount = 0;
 let errorCount = 0;
 
-// 4. Determine badge list
-let badgeList: { title: string; href: string; eagle_required: boolean }[] = [];
+// 3. Determine which badges to process from the static list
+let badgeList: MeritBadge[] = [];
 
 if (SINGLE_BADGE) {
   console.log(`🎯 Single badge mode: ${SINGLE_BADGE}`);
-  const badgeUrl = `https://www.scouting.org/merit-badges/${SINGLE_BADGE}/`;
-  const titleCase = SINGLE_BADGE.split("-")
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-  badgeList = [{ title: titleCase, href: badgeUrl, eagle_required: false }];
-} else if (TEST_BADGES) {
-  console.log(`🧪 Test mode: processing ${TEST_BADGES.length} badges`);
-  badgeList = TEST_BADGES.map(b => ({
-    title: b.title,
-    href: b.url,
-    eagle_required: false,
-  }));
-} else {
-  // 3a. Fetch Master Index
-  console.log(`📡 Fetching Master Index: ${INDEX_URL}`);
-  const indexRes = await client.fetch(INDEX_URL);
-
-  if (indexRes.status !== 200)
-    throw new Error(`Index Fetch Failed: ${indexRes.status}`);
-
-  const indexHtml = await indexRes.text();
-  const $ = cheerio.load(indexHtml);
-
-  // Find all merit badge title links (h2.mb-card-title a)
-  $("h2.mb-card-title a").each((_, el) => {
-    const $link = $(el);
-    const href = $link.attr("href");
-    const text = $link.text().trim();
-
-    // Match /merit-badges/badgename/ pattern (relative URLs)
-    if (href?.match(/^\/merit-badges\/[^\/]+\/$/) && text) {
-      // Check if this badge card has .mb-eagle (eagle required indicator)
-      const card = $link.closest('[class*="mb-card-bg"]');
-      const isEagleRequired = card.find(".mb-eagle").length > 0;
-
-      // Convert relative to absolute URL
-      const fullUrl = `https://www.scouting.org${href}`;
-      badgeList.push({
-        title: text,
-        href: fullUrl,
-        eagle_required: isEagleRequired,
-      });
+  const badge = findBadgeBySlug(SINGLE_BADGE);
+  if (!badge) {
+    throw new Error(`Badge not found in static list: ${SINGLE_BADGE}`);
+  }
+  badgeList = [badge];
+} else if (TEST_MODE) {
+  console.log(`🧪 Test mode: processing ${TEST_BADGE_SLUGS.length} badges`);
+  badgeList = TEST_BADGE_SLUGS.map(slug => {
+    const badge = findBadgeBySlug(slug);
+    if (!badge) {
+      throw new Error(`Badge not found in static list: ${slug}`);
     }
+    return badge;
   });
-
-  console.log(`🔎 Found ${badgeList.length} badges.`);
+} else {
+  // Process all badges from the static list (already sorted alphabetically)
+  badgeList = [...MERIT_BADGES];
+  console.log(`🔎 Processing all ${badgeList.length} badges.`);
 }
 
-// 5. Main Loop (sequential for stability)
-for (const { title, href, eagle_required } of badgeList) {
-  const slug = slugify(title, { lower: true, strict: true });
+// 4. Main Loop (sequential for stability)
+for (const badge of badgeList) {
+  const { title, slug, url, eagle_required } = badge;
   console.log(`Processing: ${title}...`);
 
   try {
-    // Scrape Page
-    const reqs = await scrapeBadgePage(client, href);
+    // Scrape Page for requirements and pamphlet URL
+    const { sections, pamphlet_url } = await scrapeBadgePage(client, url);
 
-    // Load existing data for this badge
-    const existing = await loadExistingBadge(slug);
-
-    const mergedBadge: BadgeData = {
-      ...existing, // Keeps heroImage, products, etc.
+    const badgeData: BadgeData = {
       id: slug,
       title: title,
       slug: slug,
-      url: href,
+      url: url,
       eagle_required: eagle_required,
-      sections: mergeSections(existing?.sections || [], reqs),
+      pamphlet_url: pamphlet_url,
+      sections: sections,
     };
 
     // Create page bundle directory
     const badgeDir = join(CONTENT_DIR, slug);
     await mkdir(badgeDir, { recursive: true });
 
-    // Check if data.json changed before writing
-    const dataPath = join(badgeDir, 'data.json');
-    const newDataJson = JSON.stringify(mergedBadge, null, 2);
-    const dataFile = Bun.file(dataPath);
-    const dataChanged = !(await dataFile.exists()) || (await dataFile.text()) !== newDataJson;
+    // Write data.json
+    const dataPath = join(badgeDir, "data.json");
+    await Bun.write(dataPath, JSON.stringify(badgeData, null, 2));
 
-    // Check if index.md changed before writing
-    const indexPath = join(badgeDir, 'index.md');
+    // Write index.md
+    const indexPath = join(badgeDir, "index.md");
     const markdown = `---
 title: "${title}"
 eagle_required: ${eagle_required}
 ---
 `;
-    const indexFile = Bun.file(indexPath);
-    const indexChanged = !(await indexFile.exists()) || (await indexFile.text()) !== markdown;
+    await Bun.write(indexPath, markdown);
 
-    // Write files if changed
-    if (dataChanged) {
-      await Bun.write(dataPath, newDataJson);
-    }
-    if (indexChanged) {
-      await Bun.write(indexPath, markdown);
-    }
-
-    // Log what happened
-    if (dataChanged || indexChanged) {
-      const parts = [];
-      if (dataChanged) parts.push('data.json');
-      if (indexChanged) parts.push('index.md');
-      console.log(`  ✏️  Updated ${parts.join(' & ')} for ${title}`);
-    } else {
-      console.log(`  ⏭️  Skipped ${title} (no changes)`);
-    }
-
+    console.log(`  ✅ Saved ${title}`);
     successCount++;
 
     await randomDelay();
@@ -225,19 +147,24 @@ function extractSubrequirements(
   $: cheerio.CheerioAPI,
   parentId: string,
 ): BadgeRequirement[] {
-  const subrequirements: BadgeRequirement[] = [];
+  const subrequirementsMap = new Map<string, BadgeRequirement>();
 
   $(`.mb-requirement-child.mb-parent-${parentId}`).each((childIdx, childEl) => {
     const $child = $(childEl);
     let childText = $child.text().trim();
     childText = childText.replace(/\s+/g, " ");
 
-    // Try to match standard format: (a) Some text
-    const match = childText.match(/^\(([a-z0-9]+)\)\s+([\s\S]*)/i);
+    // Try to match standard format: (a) Some text OR numbered format: 1. Some text
+    const letterMatch = childText.match(/^\(([a-z0-9]+)\)\s+([\s\S]*)/i);
+    const numberMatch = childText.match(/^(\d+)\.\s+([\s\S]*)/i);
+    const match = letterMatch || numberMatch;
 
     if (match && match[1] && match[2]) {
       // Standard format with letter/number ID
       const reqId = match[1];
+
+      // Skip if we've already seen this requirement ID
+      if (subrequirementsMap.has(reqId)) return;
 
       // Check for inline lists
       const hasInlineList = $child.find("ul, ol").length > 0;
@@ -249,7 +176,8 @@ function extractSubrequirements(
       $clone.find("br").replaceWith(" ");
       let textOnly = $clone.text().trim();
       textOnly = textOnly.replace(/\s+/g, " ");
-      textOnly = textOnly.replace(/^\([a-z0-9]+\)\s+/i, "");
+      textOnly = textOnly.replace(/^\([a-z0-9]+\)\s+/i, ""); // Remove (a), (b) prefix
+      textOnly = textOnly.replace(/^\d+\.\s+/i, ""); // Remove 1., 2. prefix
 
       // Split text and resources
       const resourcesMatch = textOnly.match(/Resources:([\s\S]*)/i);
@@ -270,7 +198,9 @@ function extractSubrequirements(
 
       // Get nested subrequirements (recursive!)
       let nested: BadgeRequirement[] = [];
-      const childReqIdMatch = $child.attr("class")?.match(/mb-requirement-id-(\d+)/);
+      const childReqIdMatch = $child
+        .attr("class")
+        ?.match(/mb-requirement-id-(\d+)/);
       const childReqId = childReqIdMatch ? childReqIdMatch[1] : null;
 
       if (childReqId) {
@@ -281,20 +211,22 @@ function extractSubrequirements(
       // If there are inline lists, extract them as additional subrequirements
       if (hasInlineList && nested.length === 0) {
         $child.find("ul, ol").each((_, listEl) => {
-          $(listEl).find("li").each((liIdx, liEl) => {
-            let liText = $(liEl).text().trim();
-            liText = liText.replace(/\s+/g, " ");
-            if (liText) {
-              nested.push({
-                req_id: `${liIdx + 1}`,
-                text: liText,
-              });
-            }
-          });
+          $(listEl)
+            .find("li")
+            .each((liIdx, liEl) => {
+              let liText = $(liEl).text().trim();
+              liText = liText.replace(/\s+/g, " ");
+              if (liText) {
+                nested.push({
+                  req_id: `${liIdx + 1}`,
+                  text: liText,
+                });
+              }
+            });
         });
       }
 
-      subrequirements.push({
+      subrequirementsMap.set(reqId, {
         req_id: reqId,
         text: cleanText,
         resources: resources.length > 0 ? resources : undefined,
@@ -327,7 +259,9 @@ function extractSubrequirements(
 
       // Get nested subrequirements (recursive!)
       let nested: BadgeRequirement[] = [];
-      const childReqIdMatch = $child.attr("class")?.match(/mb-requirement-id-(\d+)/);
+      const childReqIdMatch = $child
+        .attr("class")
+        ?.match(/mb-requirement-id-(\d+)/);
       const childReqId = childReqIdMatch ? childReqIdMatch[1] : null;
 
       if (childReqId) {
@@ -337,21 +271,29 @@ function extractSubrequirements(
       // If there are inline lists and no nested children, extract them
       if (hasInlineList && nested.length === 0) {
         $child.find("ul, ol").each((_, listEl) => {
-          $(listEl).find("li").each((liIdx, liEl) => {
-            let liText = $(liEl).text().trim();
-            liText = liText.replace(/\s+/g, " ");
-            if (liText) {
-              nested.push({
-                req_id: `${liIdx + 1}`,
-                text: liText,
-              });
-            }
-          });
+          $(listEl)
+            .find("li")
+            .each((liIdx, liEl) => {
+              let liText = $(liEl).text().trim();
+              liText = liText.replace(/\s+/g, " ");
+              if (liText) {
+                nested.push({
+                  req_id: `${liIdx + 1}`,
+                  text: liText,
+                });
+              }
+            });
         });
       }
 
-      subrequirements.push({
-        req_id: `option${childIdx + 1}`,
+      // Use text hash for deduplication to handle duplicate HTML from Scouting.org
+      const textKey = cleanText.substring(0, 50);
+      if (subrequirementsMap.has(textKey)) return; // Skip duplicate
+
+      // Generate a stable ID based on position in the deduplicated list
+      const optionId = `option${subrequirementsMap.size + 1}`;
+      subrequirementsMap.set(textKey, {
+        req_id: optionId,
         text: cleanText,
         resources: resources.length > 0 ? resources : undefined,
         subrequirements: nested.length > 0 ? nested : undefined,
@@ -359,7 +301,7 @@ function extractSubrequirements(
     }
   });
 
-  return subrequirements;
+  return Array.from(subrequirementsMap.values());
 }
 
 async function scrapeBadgePage(client: Impit, url: string) {
@@ -370,9 +312,25 @@ async function scrapeBadgePage(client: Impit, url: string) {
   const $ = cheerio.load(html);
 
   const sections: any[] = [];
-  const requirements: BadgeRequirement[] = [];
+
+  // Extract pamphlet link
+  let pamphletUrl: string | undefined = undefined;
+  $("a").each((_, linkEl) => {
+    const $link = $(linkEl);
+    const linkText = $link.text().trim().toLowerCase();
+    const href = $link.attr("href");
+
+    // Look for exact phrase "download the free pamphlet" and ensure href is a PDF
+    if (linkText === "download the free pamphlet" && href?.endsWith(".pdf")) {
+      pamphletUrl = href;
+      return false; // Break the loop
+    }
+  });
 
   // Process each parent requirement
+  // Use Map to deduplicate by req_id (Scouting.org HTML has duplicate parent requirements)
+  const requirementsMap = new Map<string, BadgeRequirement>();
+
   $(".mb-requirement-parent").each((_, parentEl) => {
     const $parent = $(parentEl);
     const numText = $parent.find(".mb-requirement-listnumber").text().trim();
@@ -381,6 +339,9 @@ async function scrapeBadgePage(client: Impit, url: string) {
     if (!numText || numText === "") return;
 
     const reqId = numText.replace(/\.$/, "");
+
+    // Skip if we've already processed this requirement number
+    if (requirementsMap.has(reqId)) return;
 
     // Extract parent requirement ID for finding children
     const parentIdMatch = $parent
@@ -470,7 +431,7 @@ async function scrapeBadgePage(client: Impit, url: string) {
       }
     }
 
-    requirements.push({
+    requirementsMap.set(reqId, {
       req_id: reqId,
       text: text,
       resources: resources.length > 0 ? resources : undefined,
@@ -479,50 +440,12 @@ async function scrapeBadgePage(client: Impit, url: string) {
     });
   });
 
-  if (requirements.length > 0) {
-    sections.push({ title: "Requirements", requirements });
+  // Convert Map to array
+  const uniqueRequirements = Array.from(requirementsMap.values());
+
+  if (uniqueRequirements.length > 0) {
+    sections.push({ title: "Requirements", requirements: uniqueRequirements });
   }
 
-  return sections;
-}
-
-function mergeSections(oldSections: any[], newSections: any[]) {
-  return newSections.map(newSec => ({
-    ...newSec,
-    requirements: newSec.requirements.map((newReq: any) => {
-      let existingNote: string | undefined = undefined;
-      let existingSubreqs: BadgeRequirement[] | undefined = undefined;
-
-      // Find existing requirement with same ID
-      oldSections.forEach(os => {
-        const found = os.requirements?.find(
-          (r: any) => r.req_id === newReq.req_id,
-        );
-        if (found) {
-          existingNote = found.counselor_note;
-          existingSubreqs = found.subrequirements;
-        }
-      });
-
-      // Merge subrequirements if they exist
-      let mergedSubreqs = newReq.subrequirements;
-      if (existingSubreqs && newReq.subrequirements) {
-        mergedSubreqs = newReq.subrequirements.map((newSub: any) => {
-          const foundSub = existingSubreqs!.find(
-            (s: any) => s.req_id === newSub.req_id,
-          );
-          return {
-            ...newSub,
-            counselor_note: foundSub?.counselor_note || newSub.counselor_note,
-          };
-        });
-      }
-
-      return {
-        ...newReq,
-        counselor_note: existingNote,
-        subrequirements: mergedSubreqs,
-      };
-    }),
-  }));
+  return { sections, pamphlet_url: pamphletUrl };
 }

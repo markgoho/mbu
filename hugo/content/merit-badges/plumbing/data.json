@@ -4,6 +4,7 @@
   "slug": "plumbing",
   "url": "https://www.scouting.org/merit-badges/plumbing/",
   "eagle_required": false,
+  "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Plumbing.pdf",
   "sections": [
     {
       "title": "Requirements",
@@ -97,28 +98,28 @@
               "text": "Visit the plumbing section of a hardware store or home center and identify:",
               "subrequirements": [
                 {
-                  "req_id": "option1",
-                  "text": "1. PVC pipe and fittings"
+                  "req_id": "1",
+                  "text": "PVC pipe and fittings"
                 },
                 {
-                  "req_id": "option2",
-                  "text": "2. CPVC pipe and fittings"
+                  "req_id": "2",
+                  "text": "CPVC pipe and fittings"
                 },
                 {
-                  "req_id": "option3",
-                  "text": "3. PEX pipe and fittings"
+                  "req_id": "3",
+                  "text": "PEX pipe and fittings"
                 },
                 {
-                  "req_id": "option4",
-                  "text": "4. Copper pipe and fittings"
+                  "req_id": "4",
+                  "text": "Copper pipe and fittings"
                 },
                 {
-                  "req_id": "option5",
-                  "text": "5. Steel pipe and fittings"
+                  "req_id": "5",
+                  "text": "Steel pipe and fittings"
                 },
                 {
-                  "req_id": "option6",
-                  "text": "6. Specialty plumbing tools."
+                  "req_id": "6",
+                  "text": "Specialty plumbing tools."
                 }
               ]
             },

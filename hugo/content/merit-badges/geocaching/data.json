@@ -4,6 +4,7 @@
   "slug": "geocaching",
   "url": "https://www.scouting.org/merit-badges/geocaching/",
   "eagle_required": false,
+  "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Geocaching.pdf",
   "sections": [
     {
       "title": "Requirements",

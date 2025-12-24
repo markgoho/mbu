@@ -59,12 +59,12 @@
               "text": "Using checklists provided in the First Aid merit badge pamphlet or ones approved by your counselor, do the following:",
               "subrequirements": [
                 {
-                  "req_id": "option1",
-                  "text": "1. Assemble a personal first-aid kit for hiking and backpacking. Demonstrate the proper use of each item in your first-aid kit to your counselor."
+                  "req_id": "1",
+                  "text": "Assemble a personal first-aid kit for hiking and backpacking. Demonstrate the proper use of each item in your first-aid kit to your counselor."
                 },
                 {
-                  "req_id": "option2",
-                  "text": "2. With your counselor, inspect a unit, home, vehicle, or camp first-aid kit and discuss your findings."
+                  "req_id": "2",
+                  "text": "With your counselor, inspect a unit, home, vehicle, or camp first-aid kit and discuss your findings."
                 }
               ]
             }
@@ -299,16 +299,16 @@
               "text": "Demonstrate bandages for these injuries:",
               "subrequirements": [
                 {
-                  "req_id": "option1",
-                  "text": "1. Arm slings for forearm or upper arm or collarbone fractures"
+                  "req_id": "1",
+                  "text": "Arm slings for forearm or upper arm or collarbone fractures"
                 },
                 {
-                  "req_id": "option2",
-                  "text": "2. Elastic wrap and cravat bandages for ankle sprain"
+                  "req_id": "2",
+                  "text": "Elastic wrap and cravat bandages for ankle sprain"
                 },
                 {
-                  "req_id": "option3",
-                  "text": "3. Elastic wrap and cravat bandages for wrist sprain or hand injury."
+                  "req_id": "3",
+                  "text": "Elastic wrap and cravat bandages for wrist sprain or hand injury."
                 }
               ]
             },
@@ -317,20 +317,20 @@
               "text": "Demonstrate the proper procedures for handling and splinting of suspected closed or open fractures or dislocations of the:",
               "subrequirements": [
                 {
-                  "req_id": "option1",
-                  "text": "1. Finger and toe"
+                  "req_id": "1",
+                  "text": "Finger and toe"
                 },
                 {
-                  "req_id": "option2",
-                  "text": "2. Forearm or wrist"
+                  "req_id": "2",
+                  "text": "Forearm or wrist"
                 },
                 {
-                  "req_id": "option3",
-                  "text": "3. Upper leg"
+                  "req_id": "3",
+                  "text": "Upper leg"
                 },
                 {
-                  "req_id": "option4",
-                  "text": "4. Lower leg or ankle."
+                  "req_id": "4",
+                  "text": "Lower leg or ankle."
                 }
               ]
             }

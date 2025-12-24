@@ -1,9 +1,10 @@
 {
   "id": "mining-in-society",
-  "title": "Mining in Society",
+  "title": "Mining In Society",
   "slug": "mining-in-society",
   "url": "https://www.scouting.org/merit-badges/mining-in-society/",
   "eagle_required": false,
+  "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Mining%20in%20Society.pdf",
   "sections": [
     {
       "title": "Requirements",
@@ -80,7 +81,7 @@
             },
             {
               "req_id": "e",
-              "text": "Discuss with your counselor two methods used to reduce rock in size, one of which uses a chemical process to extract a mineral. Explain the difference between smelting and refining."
+              "text": "Discuss with your counselor two methods used to reduce rock in size, one of which uses a chemical process to extract a mineral. Explain the difference between smelting and refiniv>"
             },
             {
               "req_id": "f",
