@@ -54,6 +54,7 @@ interface BadgeData {
   slug: string;
   url: string;
   eagle_required?: boolean;
+  pamphlet_url?: string;
   sections: {
     title: string;
     requirements: BadgeRequirement[];
@@ -114,9 +115,13 @@ if (SINGLE_BADGE) {
     throw new Error(`Index Fetch Failed: ${indexRes.status}`);
 
   const indexHtml = await indexRes.text();
+  console.log(`  HTML length: ${indexHtml.length} bytes`);
   const $ = cheerio.load(indexHtml);
 
   // Find all merit badge title links (h2.mb-card-title a)
+  const badgeMap = new Map<string, { title: string; href: string; eagle_required: boolean }>();
+  console.log(`  Found ${$("h2.mb-card-title a").length} h2.mb-card-title a elements`);
+
   $("h2.mb-card-title a").each((_, el) => {
     const $link = $(el);
     const href = $link.attr("href");
@@ -124,19 +129,32 @@ if (SINGLE_BADGE) {
 
     // Match /merit-badges/badgename/ pattern (relative URLs)
     if (href?.match(/^\/merit-badges\/[^\/]+\/$/) && text) {
+      // Convert relative to absolute URL
+      const fullUrl = `https://www.scouting.org${href}`;
+
       // Check if this badge card has .mb-eagle (eagle required indicator)
       const card = $link.closest('[class*="mb-card-bg"]');
       const isEagleRequired = card.find(".mb-eagle").length > 0;
 
-      // Convert relative to absolute URL
-      const fullUrl = `https://www.scouting.org${href}`;
-      badgeList.push({
-        title: text,
-        href: fullUrl,
-        eagle_required: isEagleRequired,
-      });
+      // If we've seen this badge before, update eagle_required if this occurrence has it
+      const existing = badgeMap.get(fullUrl);
+      if (existing) {
+        // Keep eagle_required as true if ANY occurrence has it
+        existing.eagle_required = existing.eagle_required || isEagleRequired;
+      } else {
+        // First time seeing this badge
+        badgeMap.set(fullUrl, {
+          title: text,
+          href: fullUrl,
+          eagle_required: isEagleRequired,
+        });
+      }
     }
   });
+
+  badgeList = Array.from(badgeMap.values()).sort((a, b) =>
+    a.title.localeCompare(b.title)
+  );
 
   console.log(`🔎 Found ${badgeList.length} badges.`);
 }
@@ -148,7 +166,7 @@ for (const { title, href, eagle_required } of badgeList) {
 
   try {
     // Scrape Page
-    const reqs = await scrapeBadgePage(client, href);
+    const { sections: reqs, pamphlet_url } = await scrapeBadgePage(client, href);
 
     // Load existing data for this badge
     const existing = await loadExistingBadge(slug);
@@ -160,6 +178,7 @@ for (const { title, href, eagle_required } of badgeList) {
       slug: slug,
       url: href,
       eagle_required: eagle_required,
+      pamphlet_url: pamphlet_url,
       sections: mergeSections(existing?.sections || [], reqs),
     };
 
@@ -167,40 +186,20 @@ for (const { title, href, eagle_required } of badgeList) {
     const badgeDir = join(CONTENT_DIR, slug);
     await mkdir(badgeDir, { recursive: true });
 
-    // Check if data.json changed before writing
+    // Write data.json
     const dataPath = join(badgeDir, 'data.json');
-    const newDataJson = JSON.stringify(mergedBadge, null, 2);
-    const dataFile = Bun.file(dataPath);
-    const dataChanged = !(await dataFile.exists()) || (await dataFile.text()) !== newDataJson;
+    await Bun.write(dataPath, JSON.stringify(mergedBadge, null, 2));
 
-    // Check if index.md changed before writing
+    // Write index.md
     const indexPath = join(badgeDir, 'index.md');
     const markdown = `---
 title: "${title}"
 eagle_required: ${eagle_required}
 ---
 `;
-    const indexFile = Bun.file(indexPath);
-    const indexChanged = !(await indexFile.exists()) || (await indexFile.text()) !== markdown;
+    await Bun.write(indexPath, markdown);
 
-    // Write files if changed
-    if (dataChanged) {
-      await Bun.write(dataPath, newDataJson);
-    }
-    if (indexChanged) {
-      await Bun.write(indexPath, markdown);
-    }
-
-    // Log what happened
-    if (dataChanged || indexChanged) {
-      const parts = [];
-      if (dataChanged) parts.push('data.json');
-      if (indexChanged) parts.push('index.md');
-      console.log(`  ✏️  Updated ${parts.join(' & ')} for ${title}`);
-    } else {
-      console.log(`  ⏭️  Skipped ${title} (no changes)`);
-    }
-
+    console.log(`  ✅ Saved ${title}`);
     successCount++;
 
     await randomDelay();
@@ -225,7 +224,7 @@ function extractSubrequirements(
   $: cheerio.CheerioAPI,
   parentId: string,
 ): BadgeRequirement[] {
-  const subrequirements: BadgeRequirement[] = [];
+  const subrequirementsMap = new Map<string, BadgeRequirement>();
 
   $(`.mb-requirement-child.mb-parent-${parentId}`).each((childIdx, childEl) => {
     const $child = $(childEl);
@@ -238,6 +237,9 @@ function extractSubrequirements(
     if (match && match[1] && match[2]) {
       // Standard format with letter/number ID
       const reqId = match[1];
+
+      // Skip if we've already seen this requirement ID
+      if (subrequirementsMap.has(reqId)) return;
 
       // Check for inline lists
       const hasInlineList = $child.find("ul, ol").length > 0;
@@ -294,7 +296,7 @@ function extractSubrequirements(
         });
       }
 
-      subrequirements.push({
+      subrequirementsMap.set(reqId, {
         req_id: reqId,
         text: cleanText,
         resources: resources.length > 0 ? resources : undefined,
@@ -350,8 +352,9 @@ function extractSubrequirements(
         });
       }
 
-      subrequirements.push({
-        req_id: `option${childIdx + 1}`,
+      const optionId = `option${childIdx + 1}`;
+      subrequirementsMap.set(optionId, {
+        req_id: optionId,
         text: cleanText,
         resources: resources.length > 0 ? resources : undefined,
         subrequirements: nested.length > 0 ? nested : undefined,
@@ -359,7 +362,7 @@ function extractSubrequirements(
     }
   });
 
-  return subrequirements;
+  return Array.from(subrequirementsMap.values());
 }
 
 async function scrapeBadgePage(client: Impit, url: string) {
@@ -372,7 +375,24 @@ async function scrapeBadgePage(client: Impit, url: string) {
   const sections: any[] = [];
   const requirements: BadgeRequirement[] = [];
 
+  // Extract pamphlet link
+  let pamphletUrl: string | undefined = undefined;
+  $("a").each((_, linkEl) => {
+    const $link = $(linkEl);
+    const linkText = $link.text().trim().toLowerCase();
+    const href = $link.attr("href");
+
+    // Look for exact phrase "download the free pamphlet" and ensure href is a PDF
+    if (linkText === "download the free pamphlet" && href?.endsWith(".pdf")) {
+      pamphletUrl = href;
+      return false; // Break the loop
+    }
+  });
+
   // Process each parent requirement
+  // Use Map to deduplicate by req_id (Scouting.org HTML has duplicate parent requirements)
+  const requirementsMap = new Map<string, BadgeRequirement>();
+
   $(".mb-requirement-parent").each((_, parentEl) => {
     const $parent = $(parentEl);
     const numText = $parent.find(".mb-requirement-listnumber").text().trim();
@@ -381,6 +401,9 @@ async function scrapeBadgePage(client: Impit, url: string) {
     if (!numText || numText === "") return;
 
     const reqId = numText.replace(/\.$/, "");
+
+    // Skip if we've already processed this requirement number
+    if (requirementsMap.has(reqId)) return;
 
     // Extract parent requirement ID for finding children
     const parentIdMatch = $parent
@@ -470,7 +493,7 @@ async function scrapeBadgePage(client: Impit, url: string) {
       }
     }
 
-    requirements.push({
+    requirementsMap.set(reqId, {
       req_id: reqId,
       text: text,
       resources: resources.length > 0 ? resources : undefined,
@@ -479,11 +502,14 @@ async function scrapeBadgePage(client: Impit, url: string) {
     });
   });
 
-  if (requirements.length > 0) {
-    sections.push({ title: "Requirements", requirements });
+  // Convert Map to array
+  const uniqueRequirements = Array.from(requirementsMap.values());
+
+  if (uniqueRequirements.length > 0) {
+    sections.push({ title: "Requirements", requirements: uniqueRequirements });
   }
 
-  return sections;
+  return { sections, pamphlet_url: pamphletUrl };
 }
 
 function mergeSections(oldSections: any[], newSections: any[]) {
