@@ -4,49 +4,11 @@
   "slug": "personal-fitness",
   "url": "https://www.scouting.org/merit-badges/personal-fitness/",
   "eagle_required": true,
+  "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Fitness.pdf",
   "sections": [
     {
       "title": "Requirements",
       "requirements": [
-        {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Before completing requirements 2 through 9, have your health-care practitioner give you a physical examination, using the Scout Health and Medical Record. Explain the following:",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Why physical exams are important"
-                },
-                {
-                  "req_id": "2",
-                  "text": "Why preventive habits (such as exercising regularly) are important in maintaining good health, and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your personal fitness"
-                },
-                {
-                  "req_id": "3",
-                  "text": "Diseases that can be prevented and how"
-                },
-                {
-                  "req_id": "4",
-                  "text": "The seven warning signs of cancer"
-                },
-                {
-                  "req_id": "5",
-                  "text": "The youth risk factors that affect cardiovascular health in adulthood."
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Have a dental examination. Get a statement saying that your teeth have been checked and cared for. Tell how to care for your teeth."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
         {
           "req_id": "2",
           "text": "Explain to your counselor verbally or in writing what personal fitness means to you, including",
@@ -199,6 +161,541 @@
         {
           "req_id": "9",
           "text": "Find out about three career opportunities in personal fitness. Pick one and find out the education, training, and experience required for this profession. Discuss what you learned with your counselor, and explain why this profession might interest you."
+        },
+        {
+          "req_id": "1",
+          "text": "Do the following:",
+          "subrequirements": [
+            {
+              "req_id": "b",
+              "text": "Have a dental examination. Get a statement saying that your teeth have been checked and cared for. Tell how to care for your teeth."
+            },
+            {
+              "req_id": "a",
+              "text": "Before completing requirements 2 through 9, have your health-care practitioner give you a physical examination, using the Scout Health and Medical Record. Explain the following:",
+              "subrequirements": [
+                {
+                  "req_id": "3",
+                  "text": "Diseases that can be prevented and how"
+                },
+                {
+                  "req_id": "4",
+                  "text": "The seven warning signs of cancer"
+                },
+                {
+                  "req_id": "5",
+                  "text": "The youth risk factors that affect cardiovascular health in adulthood."
+                },
+                {
+                  "req_id": "1",
+                  "text": "Why physical exams are important"
+                },
+                {
+                  "req_id": "2",
+                  "text": "Why preventive habits (such as exercising regularly) are important in maintaining good health, and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your personaparticle_enable=\"false\" data-particle-mobile-disabled=\"false\" class=\"elementor-section elementor-top-section elementor-element elementor-element-737b18b1 elementor-section-full_width elementor-hidden-desktop elementor-section-height-default elementor-section-height-default\" data-id=\"737b18b1\" data-element_type=\"section\" id=\"menu-mobile-container\" data-settings=\"{\"sticky\":\"top\",\"background_background\":\"classic\",\"sticky_on\":[\"tablet\",\"mobile\"],\"sticky_offset_tablet\":0,\"sticky_effects_offset_tablet\":0,\"sticky_offset\":0,\"sticky_effects_offset\":0,\"sticky_anchor_link_offset\":0}\"> My.scouting $(\"#search-nav\").on(\"click\", function(event ){ $(\"#search-nav\").addClass(\"btn-secondary\"); $(\".nav-search-input\").css(\"visibility\", \"visible\"); }); Awards Central",
+                  "resources": [
+                    {
+                      "title": "My.scouting",
+                      "url": "https://my.scouting.org/"
+                    },
+                    {
+                      "title": "Give",
+                      "url": "https://donations.scouting.org/#/council/NCFD/appeal/6539"
+                    },
+                    {
+                      "title": "Scoutshop",
+                      "url": "https://www.scoutshop.org/"
+                    },
+                    {
+                      "title": "Be a scout",
+                      "url": "https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing"
+                    },
+                    {
+                      "title": "Programs",
+                      "url": "https://www.scouting.org/programs/"
+                    },
+                    {
+                      "title": "Cub Scouts",
+                      "url": "https://www.scouting.org/programs/cub-scouts/"
+                    },
+                    {
+                      "title": "Scouts BSA",
+                      "url": "https://www.scouting.org/programs/scouts-bsa/"
+                    },
+                    {
+                      "title": "Venturing",
+                      "url": "https://www.scouting.org/programs/venturing/"
+                    },
+                    {
+                      "title": "Sea Scouts",
+                      "url": "https://seascout.org/"
+                    },
+                    {
+                      "title": "Exploring",
+                      "url": "https://www.exploring.org/"
+                    },
+                    {
+                      "title": "Scouting Safely",
+                      "url": "https://www.scouting.org/health-and-safety/"
+                    },
+                    {
+                      "title": "Scouts First Helpline (1-844-SCOUTS1)",
+                      "url": "https://www.scouting.org/training/youth-protection/#hotlink"
+                    },
+                    {
+                      "title": "Guide to Safe Scouting",
+                      "url": "https://www.scouting.org/health-and-safety/gss/"
+                    },
+                    {
+                      "title": "Youth Protection",
+                      "url": "https://www.scouting.org/health-and-safety/youth-protection/"
+                    },
+                    {
+                      "title": "Incident Reporting",
+                      "url": "https://www.scouting.org/health-and-safety/gss/gss14/"
+                    },
+                    {
+                      "title": "Safety Moments",
+                      "url": "https://www.scouting.org/health-and-safety/safety-moments/"
+                    },
+                    {
+                      "title": "Annual Health & Medical Record",
+                      "url": "https://www.scouting.org/health-and-safety/ahmr/"
+                    },
+                    {
+                      "title": "Awards",
+                      "url": "https://www.scouting.org/awards/"
+                    },
+                    {
+                      "title": "Awards Central",
+                      "url": "https://www.scouting.org/awards/awards-central/"
+                    },
+                    {
+                      "title": "Scholarships",
+                      "url": "https://www.scouting.org/awards/scholarships/"
+                    },
+                    {
+                      "title": "Outdoor Ethics Awards",
+                      "url": "https://www.scouting.org/awards/awards-central/awards/"
+                    },
+                    {
+                      "title": "Guide to Awards & Insignia",
+                      "url": "https://www.scouting.org/resources/insignia-guide/"
+                    },
+                    {
+                      "title": "About",
+                      "url": "https://www.scouting.org/about/"
+                    },
+                    {
+                      "title": "Careers",
+                      "url": "https://www.scouting.org/careers/"
+                    },
+                    {
+                      "title": "Find a Local Council",
+                      "url": "https://www.scouting.org/about/local-council-locator/"
+                    },
+                    {
+                      "title": "Scouting Newsroom",
+                      "url": "https://scoutingnewsroom.org/"
+                    },
+                    {
+                      "title": "BSA Restructuring",
+                      "url": "https://www.bsarestructuring.org/"
+                    },
+                    {
+                      "title": "Contact Us",
+                      "url": "https://www.scouting.org/about/contact-us/"
+                    },
+                    {
+                      "title": "Training",
+                      "url": "https://www.scouting.org/training/"
+                    },
+                    {
+                      "title": "Youth Training",
+                      "url": "https://www.scouting.org/training/youth/"
+                    },
+                    {
+                      "title": "Resources",
+                      "url": "https://www.scouting.org/resources/"
+                    },
+                    {
+                      "title": "Commissioners",
+                      "url": "https://www.scouting.org/commissioners/"
+                    },
+                    {
+                      "title": "Eagle Workbook",
+                      "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/"
+                    },
+                    {
+                      "title": "Special Needs & Disabilities",
+                      "url": "https://www.scouting.org/resources/disabilities-awareness/"
+                    },
+                    {
+                      "title": "International Scouting",
+                      "url": "https://www.scouting.org/international/"
+                    },
+                    {
+                      "title": "Council Support",
+                      "url": "https://www.scouting.org/council-support/"
+                    },
+                    {
+                      "title": "Scouting Wire",
+                      "url": "https://scoutingwire.org/"
+                    },
+                    {
+                      "title": "Recruitment",
+                      "url": "https://www.scouting.org/recruitment/"
+                    },
+                    {
+                      "title": "Outdoor Programs",
+                      "url": "https://www.scouting.org/outdoor-programs/"
+                    },
+                    {
+                      "title": "Skills",
+                      "url": "/skills"
+                    },
+                    {
+                      "title": "Merit Badges",
+                      "url": "https://www.scouting.org/skills/merit-badges/"
+                    },
+                    {
+                      "title": "High Adventure",
+                      "url": "https://www.scouting.org/national-high-adventure-bases/"
+                    },
+                    {
+                      "title": "High Adventure Treks",
+                      "url": "https://www.scouting.org/national-high-adventure-bases/adventure-treks/"
+                    },
+                    {
+                      "title": "High Adventure Base Jobs",
+                      "url": "https://www.scouting.org/national-high-adventure-bases/jobs/"
+                    },
+                    {
+                      "title": "Family Adventure Camp",
+                      "url": "https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/"
+                    },
+                    {
+                      "title": "Partners",
+                      "url": "https://www.scouting.org/partnerwithus/"
+                    }
+                  ],
+                  "subrequirements": [
+                    {
+                      "req_id": "1",
+                      "text": "Give"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Scoutshop"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Be a scout"
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "Programs Cub Scouts Scouts BSA Venturing Sea Scouts Exploring"
+                    },
+                    {
+                      "req_id": "5",
+                      "text": "Cub Scouts"
+                    },
+                    {
+                      "req_id": "6",
+                      "text": "Scouts BSA"
+                    },
+                    {
+                      "req_id": "7",
+                      "text": "Venturing"
+                    },
+                    {
+                      "req_id": "8",
+                      "text": "Sea Scouts"
+                    },
+                    {
+                      "req_id": "9",
+                      "text": "Exploring"
+                    },
+                    {
+                      "req_id": "10",
+                      "text": "Scouting Safely Scouts First Helpline (1-844-SCOUTS1) Guide to Safe Scouting Youth Protection Incident Reporting Safety Moments Annual Health & Medical Record"
+                    },
+                    {
+                      "req_id": "11",
+                      "text": "Scouts First Helpline (1-844-SCOUTS1)"
+                    },
+                    {
+                      "req_id": "12",
+                      "text": "Guide to Safe Scouting"
+                    },
+                    {
+                      "req_id": "13",
+                      "text": "Youth Protection"
+                    },
+                    {
+                      "req_id": "14",
+                      "text": "Incident Reporting"
+                    },
+                    {
+                      "req_id": "15",
+                      "text": "Safety Moments"
+                    },
+                    {
+                      "req_id": "16",
+                      "text": "Annual Health & Medical Record"
+                    },
+                    {
+                      "req_id": "17",
+                      "text": "Awards Awards Central Scholarships Outdoor Ethics Awards Guide to Awards & Insignia"
+                    },
+                    {
+                      "req_id": "18",
+                      "text": "Awards Central"
+                    },
+                    {
+                      "req_id": "19",
+                      "text": "Scholarships"
+                    },
+                    {
+                      "req_id": "20",
+                      "text": "Outdoor Ethics Awards"
+                    },
+                    {
+                      "req_id": "21",
+                      "text": "Guide to Awards & Insignia"
+                    },
+                    {
+                      "req_id": "22",
+                      "text": "About Careers Find a Local Council Scouting Newsroom BSA Restructuring Contact Us"
+                    },
+                    {
+                      "req_id": "23",
+                      "text": "Careers"
+                    },
+                    {
+                      "req_id": "24",
+                      "text": "Find a Local Council"
+                    },
+                    {
+                      "req_id": "25",
+                      "text": "Scouting Newsroom"
+                    },
+                    {
+                      "req_id": "26",
+                      "text": "BSA Restructuring"
+                    },
+                    {
+                      "req_id": "27",
+                      "text": "Contact Us"
+                    },
+                    {
+                      "req_id": "28",
+                      "text": "Training Youth Training"
+                    },
+                    {
+                      "req_id": "29",
+                      "text": "Youth Training"
+                    },
+                    {
+                      "req_id": "30",
+                      "text": "Resources Commissioners Eagle Workbook Special Needs & Disabilities International Scouting Council Support Scouting Wire Recruitment"
+                    },
+                    {
+                      "req_id": "31",
+                      "text": "Commissioners"
+                    },
+                    {
+                      "req_id": "32",
+                      "text": "Eagle Workbook"
+                    },
+                    {
+                      "req_id": "33",
+                      "text": "Special Needs & Disabilities"
+                    },
+                    {
+                      "req_id": "34",
+                      "text": "International Scouting"
+                    },
+                    {
+                      "req_id": "35",
+                      "text": "Council Support"
+                    },
+                    {
+                      "req_id": "36",
+                      "text": "Scouting Wire"
+                    },
+                    {
+                      "req_id": "37",
+                      "text": "Recruitment"
+                    },
+                    {
+                      "req_id": "38",
+                      "text": "Outdoor Programs"
+                    },
+                    {
+                      "req_id": "39",
+                      "text": "Skills Merit Badges"
+                    },
+                    {
+                      "req_id": "40",
+                      "text": "Merit Badges"
+                    },
+                    {
+                      "req_id": "41",
+                      "text": "High Adventure High Adventure Treks High Adventure Base Jobs Family Adventure Camp"
+                    },
+                    {
+                      "req_id": "42",
+                      "text": "High Adventure Treks"
+                    },
+                    {
+                      "req_id": "43",
+                      "text": "High Adventure Base Jobs"
+                    },
+                    {
+                      "req_id": "44",
+                      "text": "Family Adventure Camp"
+                    },
+                    {
+                      "req_id": "45",
+                      "text": "Partners"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Cub Scouts"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Scouts BSA"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Venturing"
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "Sea Scouts"
+                    },
+                    {
+                      "req_id": "5",
+                      "text": "Exploring"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Scouts First Helpline (1-844-SCOUTS1)"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Guide to Safe Scouting"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Youth Protection"
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "Incident Reporting"
+                    },
+                    {
+                      "req_id": "5",
+                      "text": "Safety Moments"
+                    },
+                    {
+                      "req_id": "6",
+                      "text": "Annual Health & Medical Record"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Awards Central"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Scholarships"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Outdoor Ethics Awards"
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "Guide to Awards & Insignia"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Careers"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Find a Local Council"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Scouting Newsroom"
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "BSA Restructuring"
+                    },
+                    {
+                      "req_id": "5",
+                      "text": "Contact Us"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Youth Training"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Commissioners"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "Eagle Workbook"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Special Needs & Disabilities"
+                    },
+                    {
+                      "req_id": "4",
+                      "text": "International Scouting"
+                    },
+                    {
+                      "req_id": "5",
+                      "text": "Council Support"
+                    },
+                    {
+                      "req_id": "6",
+                      "text": "Scouting Wire"
+                    },
+                    {
+                      "req_id": "7",
+                      "text": "Recruitment"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "Merit Badges"
+                    },
+                    {
+                      "req_id": "1",
+                      "text": "High Adventure Treks"
+                    },
+                    {
+                      "req_id": "2",
+                      "text": "High Adventure Base Jobs"
+                    },
+                    {
+                      "req_id": "3",
+                      "text": "Family Adventure Camp"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ]
     }

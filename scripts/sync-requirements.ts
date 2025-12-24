@@ -89,73 +89,75 @@ async function loadExistingBadge(slug: string): Promise<BadgeData | null> {
 let successCount = 0;
 let errorCount = 0;
 
-// 4. Determine badge list
+// 4. Fetch Master Index (always, to get eagle_required status)
+console.log(`📡 Fetching Master Index: ${INDEX_URL}`);
+const indexRes = await client.fetch(INDEX_URL);
+
+if (indexRes.status !== 200)
+  throw new Error(`Index Fetch Failed: ${indexRes.status}`);
+
+const indexHtml = await indexRes.text();
+console.log(`  HTML length: ${indexHtml.length} bytes`);
+const $ = cheerio.load(indexHtml);
+
+// Find all merit badge title links and build map with eagle_required status
+const badgeMap = new Map<string, { title: string; href: string; eagle_required: boolean }>();
+console.log(`  Found ${$("h2.mb-card-title a").length} h2.mb-card-title a elements`);
+
+$("h2.mb-card-title a").each((_, el) => {
+  const $link = $(el);
+  const href = $link.attr("href");
+  const text = $link.text().trim();
+
+  // Match /merit-badges/badgename/ pattern (relative URLs)
+  if (href?.match(/^\/merit-badges\/[^\/]+\/$/) && text) {
+    // Convert relative to absolute URL
+    const fullUrl = `https://www.scouting.org${href}`;
+
+    // Check if this badge card has .mb-eagle (eagle required indicator)
+    const card = $link.closest('[class*="mb-card-bg"]');
+    const isEagleRequired = card.find(".mb-eagle").length > 0;
+
+    // If we've seen this badge before, update eagle_required if this occurrence has it
+    const existing = badgeMap.get(fullUrl);
+    if (existing) {
+      // Keep eagle_required as true if ANY occurrence has it
+      existing.eagle_required = existing.eagle_required || isEagleRequired;
+    } else {
+      // First time seeing this badge
+      badgeMap.set(fullUrl, {
+        title: text,
+        href: fullUrl,
+        eagle_required: isEagleRequired,
+      });
+    }
+  }
+});
+
+// 5. Determine which badges to process
 let badgeList: { title: string; href: string; eagle_required: boolean }[] = [];
 
 if (SINGLE_BADGE) {
   console.log(`🎯 Single badge mode: ${SINGLE_BADGE}`);
   const badgeUrl = `https://www.scouting.org/merit-badges/${SINGLE_BADGE}/`;
-  const titleCase = SINGLE_BADGE.split("-")
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-  badgeList = [{ title: titleCase, href: badgeUrl, eagle_required: false }];
+  const badgeData = badgeMap.get(badgeUrl);
+  if (!badgeData) {
+    throw new Error(`Badge not found in index: ${SINGLE_BADGE}`);
+  }
+  badgeList = [badgeData];
 } else if (TEST_BADGES) {
   console.log(`🧪 Test mode: processing ${TEST_BADGES.length} badges`);
-  badgeList = TEST_BADGES.map(b => ({
-    title: b.title,
-    href: b.url,
-    eagle_required: false,
-  }));
-} else {
-  // 3a. Fetch Master Index
-  console.log(`📡 Fetching Master Index: ${INDEX_URL}`);
-  const indexRes = await client.fetch(INDEX_URL);
-
-  if (indexRes.status !== 200)
-    throw new Error(`Index Fetch Failed: ${indexRes.status}`);
-
-  const indexHtml = await indexRes.text();
-  console.log(`  HTML length: ${indexHtml.length} bytes`);
-  const $ = cheerio.load(indexHtml);
-
-  // Find all merit badge title links (h2.mb-card-title a)
-  const badgeMap = new Map<string, { title: string; href: string; eagle_required: boolean }>();
-  console.log(`  Found ${$("h2.mb-card-title a").length} h2.mb-card-title a elements`);
-
-  $("h2.mb-card-title a").each((_, el) => {
-    const $link = $(el);
-    const href = $link.attr("href");
-    const text = $link.text().trim();
-
-    // Match /merit-badges/badgename/ pattern (relative URLs)
-    if (href?.match(/^\/merit-badges\/[^\/]+\/$/) && text) {
-      // Convert relative to absolute URL
-      const fullUrl = `https://www.scouting.org${href}`;
-
-      // Check if this badge card has .mb-eagle (eagle required indicator)
-      const card = $link.closest('[class*="mb-card-bg"]');
-      const isEagleRequired = card.find(".mb-eagle").length > 0;
-
-      // If we've seen this badge before, update eagle_required if this occurrence has it
-      const existing = badgeMap.get(fullUrl);
-      if (existing) {
-        // Keep eagle_required as true if ANY occurrence has it
-        existing.eagle_required = existing.eagle_required || isEagleRequired;
-      } else {
-        // First time seeing this badge
-        badgeMap.set(fullUrl, {
-          title: text,
-          href: fullUrl,
-          eagle_required: isEagleRequired,
-        });
-      }
+  badgeList = TEST_BADGES.map(b => {
+    const badgeData = badgeMap.get(b.url);
+    if (!badgeData) {
+      throw new Error(`Badge not found in index: ${b.title}`);
     }
+    return badgeData;
   });
-
+} else {
   badgeList = Array.from(badgeMap.values()).sort((a, b) =>
     a.title.localeCompare(b.title)
   );
-
   console.log(`🔎 Found ${badgeList.length} badges.`);
 }
 
@@ -166,20 +168,16 @@ for (const { title, href, eagle_required } of badgeList) {
 
   try {
     // Scrape Page
-    const { sections: reqs, pamphlet_url } = await scrapeBadgePage(client, href);
+    const { sections, pamphlet_url } = await scrapeBadgePage(client, href);
 
-    // Load existing data for this badge
-    const existing = await loadExistingBadge(slug);
-
-    const mergedBadge: BadgeData = {
-      ...existing, // Keeps heroImage, products, etc.
+    const badgeData: BadgeData = {
       id: slug,
       title: title,
       slug: slug,
       url: href,
       eagle_required: eagle_required,
       pamphlet_url: pamphlet_url,
-      sections: mergeSections(existing?.sections || [], reqs),
+      sections: sections,
     };
 
     // Create page bundle directory
@@ -188,7 +186,7 @@ for (const { title, href, eagle_required } of badgeList) {
 
     // Write data.json
     const dataPath = join(badgeDir, 'data.json');
-    await Bun.write(dataPath, JSON.stringify(mergedBadge, null, 2));
+    await Bun.write(dataPath, JSON.stringify(badgeData, null, 2));
 
     // Write index.md
     const indexPath = join(badgeDir, 'index.md');
