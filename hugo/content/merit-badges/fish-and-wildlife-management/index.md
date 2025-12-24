@@ -1,4 +1,4 @@
 ---
-title: "Fish & Wildlife Management"
+title: "Fish and Wildlife Management"
 eagle_required: false
 ---

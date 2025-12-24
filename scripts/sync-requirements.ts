@@ -154,8 +154,10 @@ function extractSubrequirements(
     let childText = $child.text().trim();
     childText = childText.replace(/\s+/g, " ");
 
-    // Try to match standard format: (a) Some text
-    const match = childText.match(/^\(([a-z0-9]+)\)\s+([\s\S]*)/i);
+    // Try to match standard format: (a) Some text OR numbered format: 1. Some text
+    const letterMatch = childText.match(/^\(([a-z0-9]+)\)\s+([\s\S]*)/i);
+    const numberMatch = childText.match(/^(\d+)\.\s+([\s\S]*)/i);
+    const match = letterMatch || numberMatch;
 
     if (match && match[1] && match[2]) {
       // Standard format with letter/number ID
@@ -174,7 +176,8 @@ function extractSubrequirements(
       $clone.find("br").replaceWith(" ");
       let textOnly = $clone.text().trim();
       textOnly = textOnly.replace(/\s+/g, " ");
-      textOnly = textOnly.replace(/^\([a-z0-9]+\)\s+/i, "");
+      textOnly = textOnly.replace(/^\([a-z0-9]+\)\s+/i, ""); // Remove (a), (b) prefix
+      textOnly = textOnly.replace(/^\d+\.\s+/i, ""); // Remove 1., 2. prefix
 
       // Split text and resources
       const resourcesMatch = textOnly.match(/Resources:([\s\S]*)/i);
@@ -283,8 +286,13 @@ function extractSubrequirements(
         });
       }
 
-      const optionId = `option${childIdx + 1}`;
-      subrequirementsMap.set(optionId, {
+      // Use text hash for deduplication to handle duplicate HTML from Scouting.org
+      const textKey = cleanText.substring(0, 50);
+      if (subrequirementsMap.has(textKey)) return; // Skip duplicate
+
+      // Generate a stable ID based on position in the deduplicated list
+      const optionId = `option${subrequirementsMap.size + 1}`;
+      subrequirementsMap.set(textKey, {
         req_id: optionId,
         text: cleanText,
         resources: resources.length > 0 ? resources : undefined,

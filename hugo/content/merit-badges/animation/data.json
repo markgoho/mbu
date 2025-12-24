@@ -79,16 +79,16 @@
               ],
               "subrequirements": [
                 {
-                  "req_id": "option1",
-                  "text": "1. Plan your animation using thumbnail sketches and/or layout drawings either on paper or using an animation software program."
+                  "req_id": "1",
+                  "text": "Plan your animation using thumbnail sketches and/or layout drawings either on paper or using an animation software program."
                 },
                 {
-                  "req_id": "option2",
-                  "text": "2. Create the animation."
+                  "req_id": "2",
+                  "text": "Create the animation."
                 },
                 {
-                  "req_id": "option3",
-                  "text": "3. Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
+                  "req_id": "3",
+                  "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
                 }
               ]
             },
@@ -111,16 +111,16 @@
               ],
               "subrequirements": [
                 {
-                  "req_id": "option1",
-                  "text": "1. Plan your animation using thumbnail sketches and/or layout drawings."
+                  "req_id": "1",
+                  "text": "Plan your animation using thumbnail sketches and/or layout drawings."
                 },
                 {
-                  "req_id": "option2",
-                  "text": "2. Create the animation."
+                  "req_id": "2",
+                  "text": "Create the animation."
                 },
                 {
-                  "req_id": "option3",
-                  "text": "3. Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
+                  "req_id": "3",
+                  "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
                 }
               ]
             }
