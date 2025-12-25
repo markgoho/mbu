@@ -1,13 +1,10 @@
-{{ $img := print .Permalink "img/featured.png" }}
-{{ if not (fileExists (print
-  .RelPermalink "img/featured.png"))
-}}
-  {{ $img = .Site.Data.defaults.featured_img }}
-{{ end }}
-{{ if .Params.featured_img }}
-  {{ $img = print .Permalink
-    .Params.featured_img
-  }}
+{{/* Look for merit badge image: {slug}-merit-badge.avif */}}
+{{ $meritBadgeImg := .Resources.GetMatch "*-merit-badge.avif" }}
+{{ $img := "" }}
+{{ if $meritBadgeImg }}
+  {{ $img = $meritBadgeImg.Permalink }}
+{{ else }}
+  {{ $img = "/merit-badges/merit-badge-university.avif" | absURL }}
 {{ end }}
 {{ $description := .Description | default
   .Summary
@@ -22,8 +19,7 @@
 <meta property="og:image" content="{{ $img | absURL }}" />
 <meta property="og:description" content="{{ $description }}" />
 
-<!-- <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@angularfirebase">
-<meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ $description }}">
-<meta name="twitter:image" content="{{ $img | absURL }}"> -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+<meta name="twitter:image" content="{{ $img | absURL }}" />
