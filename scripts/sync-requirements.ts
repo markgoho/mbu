@@ -23,8 +23,9 @@ interface BadgeResource {
 
 interface BadgeRequirement {
   req_id: string;
+  path: string; // For deep linking (e.g., "8.a.1")
   text: string;
-  counselor_note?: string;
+  is_option?: boolean; // True for named options like "Beef Cattle Option"
   resources?: BadgeResource[];
   subrequirements?: BadgeRequirement[];
   subrequirement_mode?: {
@@ -34,16 +35,12 @@ interface BadgeRequirement {
 }
 
 interface BadgeData {
-  id: string;
   title: string;
   slug: string;
   url: string;
   eagle_required?: boolean;
   pamphlet_url?: string;
-  sections: {
-    title: string;
-    requirements: BadgeRequirement[];
-  }[];
+  requirements: BadgeRequirement[]; // Direct, no sections wrapper
 }
 
 console.log("🚀 Starting Merit Badge Sync (Bun Edition)...");
@@ -93,16 +90,15 @@ for (const badge of badgeList) {
 
   try {
     // Scrape Page for requirements and pamphlet URL
-    const { sections, pamphlet_url } = await scrapeBadgePage(client, url);
+    const { requirements, pamphlet_url } = await scrapeBadgePage(client, url);
 
     const badgeData: BadgeData = {
-      id: slug,
       title: title,
       slug: slug,
       url: url,
       eagle_required: eagle_required,
       pamphlet_url: pamphlet_url,
-      sections: sections,
+      requirements: requirements,
     };
 
     // Create page bundle directory
@@ -139,6 +135,32 @@ console.log(
 // --- HELPERS ---
 
 /**
+ * Compute the path for a requirement by joining parent path with current ID
+ * Uses dots as separator for URL-friendly anchors (no %2f encoding)
+ */
+function computePath(parentPath: string, reqId: string): string {
+  return parentPath ? `${parentPath}.${reqId}` : reqId;
+}
+
+/**
+ * Slugify an option name (e.g., "Beef Cattle Option" → "beef-cattle")
+ */
+function slugifyOption(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/\s+option$/i, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/**
+ * Check if text looks like a named option (contains "Option" in the text)
+ */
+function isNamedOption(text: string): boolean {
+  return /\boption\b/i.test(text);
+}
+
+/**
  * Recursively extract subrequirements from a parent element
  * Handles both standard (a), (b) format and named options
  * Also handles inline lists and nested children at any depth
@@ -146,6 +168,7 @@ console.log(
 function extractSubrequirements(
   $: cheerio.CheerioAPI,
   parentId: string,
+  parentPath: string,
 ): BadgeRequirement[] {
   const subrequirementsMap = new Map<string, BadgeRequirement>();
 
@@ -196,6 +219,9 @@ function extractSubrequirements(
         }
       });
 
+      // Compute path for this requirement
+      const reqPath = computePath(parentPath, reqId);
+
       // Get nested subrequirements (recursive!)
       let nested: BadgeRequirement[] = [];
       const childReqIdMatch = $child
@@ -204,21 +230,24 @@ function extractSubrequirements(
       const childReqId = childReqIdMatch ? childReqIdMatch[1] : null;
 
       if (childReqId) {
-        // Recursively extract children
-        nested = extractSubrequirements($, childReqId);
+        // Recursively extract children, passing current path
+        nested = extractSubrequirements($, childReqId, reqPath);
       }
 
       // If there are inline lists, extract them as additional subrequirements
+      // Use children() to only get direct child lists, not nested navigation
       if (hasInlineList && nested.length === 0) {
-        $child.find("ul, ol").each((_, listEl) => {
+        $child.children("ul, ol").each((_, listEl) => {
           $(listEl)
-            .find("li")
+            .children("li")
             .each((liIdx, liEl) => {
               let liText = $(liEl).text().trim();
               liText = liText.replace(/\s+/g, " ");
               if (liText) {
+                const inlineReqId = `${liIdx + 1}`;
                 nested.push({
-                  req_id: `${liIdx + 1}`,
+                  req_id: inlineReqId,
+                  path: computePath(reqPath, inlineReqId),
                   text: liText,
                 });
               }
@@ -228,6 +257,7 @@ function extractSubrequirements(
 
       subrequirementsMap.set(reqId, {
         req_id: reqId,
+        path: reqPath,
         text: cleanText,
         resources: resources.length > 0 ? resources : undefined,
         subrequirements: nested.length > 0 ? nested : undefined,
@@ -257,6 +287,17 @@ function extractSubrequirements(
         }
       });
 
+      // Use text hash for deduplication to handle duplicate HTML from Scouting.org
+      const textKey = cleanText.substring(0, 50);
+      if (subrequirementsMap.has(textKey)) return; // Skip duplicate
+
+      // Generate slugified ID for named options, or fallback to numbered option
+      const optionIsNamed = isNamedOption(cleanText);
+      const optionId = optionIsNamed
+        ? slugifyOption(cleanText)
+        : `option${subrequirementsMap.size + 1}`;
+      const reqPath = computePath(parentPath, optionId);
+
       // Get nested subrequirements (recursive!)
       let nested: BadgeRequirement[] = [];
       const childReqIdMatch = $child
@@ -265,20 +306,23 @@ function extractSubrequirements(
       const childReqId = childReqIdMatch ? childReqIdMatch[1] : null;
 
       if (childReqId) {
-        nested = extractSubrequirements($, childReqId);
+        nested = extractSubrequirements($, childReqId, reqPath);
       }
 
       // If there are inline lists and no nested children, extract them
+      // Use children() to only get direct child lists, not nested navigation
       if (hasInlineList && nested.length === 0) {
-        $child.find("ul, ol").each((_, listEl) => {
+        $child.children("ul, ol").each((_, listEl) => {
           $(listEl)
-            .find("li")
+            .children("li")
             .each((liIdx, liEl) => {
               let liText = $(liEl).text().trim();
               liText = liText.replace(/\s+/g, " ");
               if (liText) {
+                const inlineReqId = `${liIdx + 1}`;
                 nested.push({
-                  req_id: `${liIdx + 1}`,
+                  req_id: inlineReqId,
+                  path: computePath(reqPath, inlineReqId),
                   text: liText,
                 });
               }
@@ -286,15 +330,11 @@ function extractSubrequirements(
         });
       }
 
-      // Use text hash for deduplication to handle duplicate HTML from Scouting.org
-      const textKey = cleanText.substring(0, 50);
-      if (subrequirementsMap.has(textKey)) return; // Skip duplicate
-
-      // Generate a stable ID based on position in the deduplicated list
-      const optionId = `option${subrequirementsMap.size + 1}`;
       subrequirementsMap.set(textKey, {
         req_id: optionId,
+        path: reqPath,
         text: cleanText,
+        is_option: optionIsNamed ? true : undefined,
         resources: resources.length > 0 ? resources : undefined,
         subrequirements: nested.length > 0 ? nested : undefined,
       });
@@ -310,8 +350,6 @@ async function scrapeBadgePage(client: Impit, url: string) {
 
   const html = await res.text();
   const $ = cheerio.load(html);
-
-  const sections: any[] = [];
 
   // Extract pamphlet link
   let pamphletUrl: string | undefined = undefined;
@@ -333,7 +371,7 @@ async function scrapeBadgePage(client: Impit, url: string) {
 
   $(".mb-requirement-parent").each((_, parentEl) => {
     const $parent = $(parentEl);
-    const numText = $parent.find(".mb-requirement-listnumber").text().trim();
+    const numText = $parent.find(".mb-requirement-listnumber").first().text().trim();
 
     // Skip non-numbered items (like NOTE)
     if (!numText || numText === "") return;
@@ -385,20 +423,23 @@ async function scrapeBadgePage(client: Impit, url: string) {
 
     if (parentId) {
       // Use new recursive function to extract all nested children
-      subrequirements = extractSubrequirements($, parentId);
+      subrequirements = extractSubrequirements($, parentId, reqId);
     }
 
     // Fallback: Inline lists at parent level (if no children were found via recursion)
+    // Use children() to only get direct child lists, not nested navigation
     if (hasInlineList && subrequirements.length === 0) {
-      $parent.find("ul, ol").each((_, listEl) => {
+      $parent.children("ul, ol").each((_, listEl) => {
         $(listEl)
-          .find("li")
+          .children("li")
           .each((idx, liEl) => {
             let liText = $(liEl).text().trim();
             liText = liText.replace(/\s+/g, " "); // Clean whitespace
             if (liText) {
+              const inlineReqId = `option${idx + 1}`;
               subrequirements.push({
-                req_id: `option${idx + 1}`,
+                req_id: inlineReqId,
+                path: computePath(reqId, inlineReqId),
                 text: liText,
               });
             }
@@ -433,6 +474,7 @@ async function scrapeBadgePage(client: Impit, url: string) {
 
     requirementsMap.set(reqId, {
       req_id: reqId,
+      path: reqId, // Top-level requirements have path equal to their ID
       text: text,
       resources: resources.length > 0 ? resources : undefined,
       subrequirements: subrequirements.length > 0 ? subrequirements : undefined,
@@ -440,12 +482,8 @@ async function scrapeBadgePage(client: Impit, url: string) {
     });
   });
 
-  // Convert Map to array
-  const uniqueRequirements = Array.from(requirementsMap.values());
+  // Convert Map to array - return directly without sections wrapper
+  const requirements = Array.from(requirementsMap.values());
 
-  if (uniqueRequirements.length > 0) {
-    sections.push({ title: "Requirements", requirements: uniqueRequirements });
-  }
-
-  return { sections, pamphlet_url: pamphletUrl };
+  return { requirements, pamphlet_url: pamphletUrl };
 }
