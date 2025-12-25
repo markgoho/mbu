@@ -32,7 +32,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "List 10 items that are essential to be carried on any backpacking trek and explain why each item is necessary. Resource: What Are the 10 Essentials? (video)",
+          "text": "List 10 items that are essential to be carried on any backpacking trek and explain why each item is necessary.",
           "resources": [
             {
               "title": "What Are the 10 Essentials? (video)",
@@ -43,7 +43,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Describe 10 ways you can limit the weight and bulk to be carried in your pack without jeopardizing your health or safety. Resource: 10 FREE Ways to Reduce Base Weight Backpacking (video)",
+          "text": "Describe 10 ways you can limit the weight and bulk to be carried in your pack without jeopardizing your health or safety.",
           "resources": [
             {
               "title": "10 FREE Ways to Reduce Base Weight Backpacking (video)",
@@ -79,7 +79,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Describe how a trek crew should be organized. Resource: Crew Positions (website)",
+          "text": "Describe how a trek crew should be organized.",
           "resources": [
             {
               "title": "Crew Positions (website)",
@@ -95,7 +95,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "Explain the purpose of an emergency response plan. Resource: Backpacking Emergency Response Plan (video)",
+          "text": "Explain the purpose of an emergency response plan.",
           "resources": [
             {
               "title": "Backpacking Emergency Response Plan (video)",
@@ -116,7 +116,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Describe the importance of following the Leave No Trace Seven Principles and the Outdoor Code while backpacking, and at least five ways you can lessen the crew's impact on the environment. Resource: What is Leave No Trace? (video)",
+          "text": "Describe the importance of following the Leave No Trace Seven Principles and the Outdoor Code while backpacking, and at least five ways you can lessen the crew's impact on the environment.",
           "resources": [
             {
               "title": "What is Leave No Trace?  (video)",
@@ -127,7 +127,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Describe proper methods of handling human and other wastes while on a backpacking trek. Describe the importance of and means to assure personal cleanliness while on a backpacking trek. Resource: How to Poop in the Woods (video)",
+          "text": "Describe proper methods of handling human and other wastes while on a backpacking trek. Describe the importance of and means to assure personal cleanliness while on a backpacking trek.",
           "resources": [
             {
               "title": "How to Poop in the Woods (video)",
@@ -138,7 +138,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Tell what factors are important in choosing a campsite. Resource: How to Select a Campsite (video)",
+          "text": "Tell what factors are important in choosing a campsite.",
           "resources": [
             {
               "title": "How to Select a Campsite (video)",
@@ -159,7 +159,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Demonstrate two ways to treat water and tell why water treatment is essential. Resource: The Best Way to Filter Water While Backpacking (video)",
+          "text": "Demonstrate two ways to treat water and tell why water treatment is essential.",
           "resources": [
             {
               "title": "The Best Way to Filter Water While Backpacking (video)",
@@ -170,7 +170,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Explain to your counselor the importance of staying well-hydrated during a trek. Resource: Hydrate! (video)",
+          "text": "Explain to your counselor the importance of staying well-hydrated during a trek.",
           "resources": [
             {
               "title": "Hydrate! (video)",
@@ -191,7 +191,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Demonstrate that you can read topographic maps. Resource: How to Read a Topographic Map (video)",
+          "text": "Demonstrate that you can read topographic maps.",
           "resources": [
             {
               "title": "How to Read a Topographic Map (video)",
@@ -202,7 +202,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "While on a trek, use a map and compass to establish your position on the ground at three different locations, OR use a GPS receiver to establish your position on a topographic map and on the ground at three different locations. Resource: How to Use a Compass (video)",
+          "text": "While on a trek, use a map and compass to establish your position on the ground at three different locations, OR use a GPS receiver to establish your position on a topographic map and on the ground at three different locations.",
           "resources": [
             {
               "title": "How to Use a Compass (video)",
@@ -213,7 +213,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "Explain how to stay found, and what to do if you get lost. Resource: What to Do If You Get Lost (video)",
+          "text": "Explain how to stay found, and what to do if you get lost.",
           "resources": [
             {
               "title": "What to Do If You Get Lost (video)",
@@ -229,7 +229,7 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Tell how to properly prepare for and deal with inclement weather. Resource: Backpacking in Rain, Lightning, Hail, and Wind (video)",
+      "text": "Tell how to properly prepare for and deal with inclement weather.",
       "resources": [
         {
           "title": "Backpacking in Rain, Lightning, Hail, and Wind (video)",
@@ -245,7 +245,7 @@
         {
           "req_id": "a",
           "path": "8.a",
-          "text": "Explain the advantages and disadvantages of the different types of backpacking stoves using at least three different types of fuel. Resource: Trying Every Type of Backpacking Stove! (video)",
+          "text": "Explain the advantages and disadvantages of the different types of backpacking stoves using at least three different types of fuel.",
           "resources": [
             {
               "title": "Trying Every Type of Backpacking Stove! (video)",
@@ -266,7 +266,7 @@
         {
           "req_id": "d",
           "path": "8.d",
-          "text": "Demonstrate that you know how to keep cooking and eating gear clean and sanitary, and that you practice proper methods for food storage while on a backpacking trek. Resource: Clean-Up/Washing Dishes (video)",
+          "text": "Demonstrate that you know how to keep cooking and eating gear clean and sanitary, and that you practice proper methods for food storage while on a backpacking trek.",
           "resources": [
             {
               "title": "Clean-Up/Washing Dishes (video)",
@@ -287,7 +287,7 @@
         {
           "req_id": "a",
           "path": "9.a",
-          "text": "Write a plan that includes a schedule for a patrol/crew backpacking hike of at least 2 miles. Resource: How to Plan Your First Backpacking Trip (video)",
+          "text": "Write a plan that includes a schedule for a patrol/crew backpacking hike of at least 2 miles.",
           "resources": [
             {
               "title": "How to Plan Your First Backpacking Trip (video)",
@@ -313,7 +313,7 @@
         {
           "req_id": "c",
           "path": "9.c",
-          "text": "Show that you know how to properly pack your personal gear and your share of the crew's gear and food. Resource: How to Pack Your Backpack (video)",
+          "text": "Show that you know how to properly pack your personal gear and your share of the crew's gear and food.",
           "resources": [
             {
               "title": "How to Pack Your Backpack (video)",
@@ -324,7 +324,7 @@
         {
           "req_id": "d",
           "path": "9.d",
-          "text": "Show you can properly shoulder your pack and adjust it for proper wear. Resource: How to Fit a Backpack (video)",
+          "text": "Show you can properly shoulder your pack and adjust it for proper wear.",
           "resources": [
             {
               "title": "How to Fit a Backpack (video)",
