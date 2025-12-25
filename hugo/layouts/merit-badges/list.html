@@ -1,3 +1,4 @@
+
 {{ define "main" }}
   {{ $data := .Resources.GetMatch "data.json" }}
 
@@ -5,6 +6,7 @@
     {{/* Individual badge landing page */}}
     {{ $json := $data | unmarshal }}
     {{ $reqCount := len $json.requirements }}
+    {{ $badgeImage := .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
 
     <article class="merit-badge-landing">
       <header class="badge-header">
@@ -14,41 +16,55 @@
         {{ if $json.eagle_required }}
           <span class="eagle-badge">🦅 Eagle Required</span>
         {{ end }}
-
-
-        <div class="badge-meta">
-          <span>{{ $reqCount }} Requirements</span>
-          <a href="{{ $json.url }}" target="_blank" rel="noopener">
-            View Official Page ↗
-          </a>
-          {{ if $json.pamphlet_url }}
-            <a
-              href="{{ $json.pamphlet_url }}"
-              target="_blank"
-              rel="noopener"
-              class="pamphlet-link">
-              Download Free Pamphlet ↓
-            </a>
-          {{ end }}
-        </div>
       </header>
 
-      <div class="landing-content">
-        {{ .Content }}
+      {{ if $badgeImage }}
+        <div class="badge-featured-image">
+          <img
+            src="{{ $badgeImage.RelPermalink }}"
+            alt="{{ .Title }} Merit Badge"
+            loading="eager"
+          />
+        </div>
+      {{ end }}
 
-        <nav class="badge-sections">
-          <a href="requirements/" class="section-card">
-            <h2>Requirements</h2>
-            <p>View all {{ $reqCount }} requirements for this merit badge</p>
+      <div class="badge-quick-actions">
+        <a href="requirements/" class="badge-action-card badge-action-card--primary">
+          <span class="badge-action-card__icon">📋</span>
+          <div class="badge-action-card__content">
+            <h2 class="badge-action-card__title">View Requirements</h2>
+            <p class="badge-action-card__description">
+              {{ $reqCount }} main requirements
+            </p>
+          </div>
+        </a>
+
+        {{ if $json.pamphlet_url }}
+          <a href="{{ $json.pamphlet_url }}"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="badge-action-card">
+            <span class="badge-action-card__icon">📘</span>
+            <div class="badge-action-card__content">
+              <h2 class="badge-action-card__title">Merit Badge Pamphlet</h2>
+              <p class="badge-action-card__description">Official PDF resource</p>
+            </div>
           </a>
-          {{/* Future sections can be added here:
-          <a href="resources/" class="section-card">
-            <h2>Resources</h2>
-            <p>Helpful resources and guides</p>
-          </a>
-          */}}
-        </nav>
+        {{ end }}
+
+        <a href="{{ $json.url }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="badge-action-card">
+          <span class="badge-action-card__icon">🔗</span>
+          <div class="badge-action-card__content">
+            <h2 class="badge-action-card__title">Scouting.org Page</h2>
+            <p class="badge-action-card__description">Official badge information</p>
+          </div>
+        </a>
       </div>
+
+      {{ .Content }}
 
       <footer>
         <a href="/merit-badges/" class="back-link">← Back to All Badges</a>
@@ -68,16 +84,28 @@
         {{ if $data }}
           {{ $json := $data | unmarshal }}
           {{ $reqCount := len $json.requirements }}
+          {{ $badgeImage := .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
 
-          <article class="badge-card {{ if $json.eagle_required }}eagle{{ end }}">
+          <article class="badge-card {{ if $badgeImage }}badge-card--with-image{{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
             <a href="{{ .RelPermalink }}">
-              <h2>
-                {{ .Title }}
-                {{ if $json.eagle_required }}
-                  <span class="eagle-badge" title="Eagle Required">🦅</span>
-                {{ end }}
-              </h2>
-              <p class="req-count">{{ $reqCount }} requirements</p>
+              {{ if $badgeImage }}
+                <div class="badge-card__image">
+                  <img
+                    src="{{ $badgeImage.RelPermalink }}"
+                    alt="{{ .Title }} Merit Badge"
+                    loading="lazy"
+                  />
+                </div>
+              {{ end }}
+              <div class="badge-card__content">
+                <h2>
+                  {{ .Title }}
+                  {{ if $json.eagle_required }}
+                    <span class="eagle-badge" title="Eagle Required">🦅</span>
+                  {{ end }}
+                </h2>
+                <p class="req-count">{{ $reqCount }} requirements</p>
+              </div>
             </a>
           </article>
         {{ end }}
