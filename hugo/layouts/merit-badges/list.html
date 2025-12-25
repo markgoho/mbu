@@ -1,27 +1,87 @@
 {{ define "main" }}
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-    <p class="badge-count">{{ len .Pages }} merit badges available</p>
-  </header>
+  {{ $data := .Resources.GetMatch "data.json" }}
 
-  <section class="badges-grid">
-    {{ range .Pages.ByTitle }}
-      {{ $data := .Resources.GetMatch "data.json" }}
-      {{ $json := $data | unmarshal }}
-      {{ $reqCount := len $json.requirements }}
+  {{ if $data }}
+    {{/* Individual badge landing page */}}
+    {{ $json := $data | unmarshal }}
+    {{ $reqCount := len $json.requirements }}
 
-      <article class="badge-card {{ if $json.eagle_required }}eagle{{ end }}">
-        <a href="{{ .RelPermalink }}">
-          <h2>
-            {{ .Title }}
-            {{ if $json.eagle_required }}
-              <span class="eagle-badge" title="Eagle Required">🦅</span>
-            {{ end }}
-          </h2>
-          <p class="req-count">{{ $reqCount }} requirements</p>
-        </a>
-      </article>
-    {{ end }}
-  </section>
+    <article class="merit-badge-landing">
+      <header class="badge-header">
+        <h1>
+          {{ .Title }}
+        </h1>
+        {{ if $json.eagle_required }}
+          <span class="eagle-badge">🦅 Eagle Required</span>
+        {{ end }}
+
+
+        <div class="badge-meta">
+          <span>{{ $reqCount }} Requirements</span>
+          <a href="{{ $json.url }}" target="_blank" rel="noopener">
+            View Official Page ↗
+          </a>
+          {{ if $json.pamphlet_url }}
+            <a
+              href="{{ $json.pamphlet_url }}"
+              target="_blank"
+              rel="noopener"
+              class="pamphlet-link">
+              Download Free Pamphlet ↓
+            </a>
+          {{ end }}
+        </div>
+      </header>
+
+      <div class="landing-content">
+        {{ .Content }}
+
+        <nav class="badge-sections">
+          <a href="requirements/" class="section-card">
+            <h2>Requirements</h2>
+            <p>View all {{ $reqCount }} requirements for this merit badge</p>
+          </a>
+          {{/* Future sections can be added here:
+          <a href="resources/" class="section-card">
+            <h2>Resources</h2>
+            <p>Helpful resources and guides</p>
+          </a>
+          */}}
+        </nav>
+      </div>
+
+      <footer>
+        <a href="/merit-badges/" class="back-link">← Back to All Badges</a>
+      </footer>
+    </article>
+  {{ else }}
+    {{/* Main merit badges listing page */}}
+    <header>
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+      <p class="badge-count">{{ len .Pages }} merit badges available</p>
+    </header>
+
+    <section class="badges-grid">
+      {{ range .Pages.ByTitle }}
+        {{ $data := .Resources.GetMatch "data.json" }}
+        {{ if $data }}
+          {{ $json := $data | unmarshal }}
+          {{ $reqCount := len $json.requirements }}
+
+          <article class="badge-card {{ if $json.eagle_required }}eagle{{ end }}">
+            <a href="{{ .RelPermalink }}">
+              <h2>
+                {{ .Title }}
+                {{ if $json.eagle_required }}
+                  <span class="eagle-badge" title="Eagle Required">🦅</span>
+                {{ end }}
+              </h2>
+              <p class="req-count">{{ $reqCount }} requirements</p>
+            </a>
+          </article>
+        {{ end }}
+      {{ end }}
+    </section>
+  {{ end }}
 {{ end }}

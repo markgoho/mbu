@@ -1,13 +1,15 @@
 {{ define "main" }}
-  {{ $data := .Resources.GetMatch "data.json" }}
+  {{/* Access parent page to get data.json from badge root */}}
+  {{ $badge := .Parent }}
+  {{ $data := $badge.Resources.GetMatch "data.json" }}
   {{ $json := $data | unmarshal }}
   {{ $reqCount := len $json.requirements }}
 
 
-  <article class="merit-badge-landing">
+  <article class="merit-badge">
     <header class="badge-header">
       <h1>
-        {{ .Title }}
+        {{ $badge.Title }} Requirements
       </h1>
       {{ if $json.eagle_required }}
         <span class="eagle-badge">🦅 Eagle Required</span>
@@ -31,24 +33,19 @@
       </div>
     </header>
 
-    <div class="landing-content">
-      {{ .Content }}
+    <div class="requirements">
+      <h2>Requirements</h2>
 
-      <nav class="badge-sections">
-        <a href="requirements/" class="section-card">
-          <h2>Requirements</h2>
-          <p>View all {{ $reqCount }} requirements for this merit badge</p>
-        </a>
-        {{/* Future sections can be added here:
-        <a href="resources/" class="section-card">
-          <h2>Resources</h2>
-          <p>Helpful resources and guides</p>
-        </a>
-        */}}
-      </nav>
+      <ol class="requirements-list">
+        {{ range $json.requirements }}
+          {{/* Use recursive partial for infinite nesting */}}
+          {{ partial "requirement.html" . }}
+        {{ end }}
+      </ol>
     </div>
 
     <footer>
+      <a href="../" class="back-link">← Back to {{ $badge.Title }}</a>
       <a href="/merit-badges/" class="back-link">← Back to All Badges</a>
     </footer>
   </article>

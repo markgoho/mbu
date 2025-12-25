@@ -11,22 +11,6 @@
 
   <section class="merit-badges-list">
     <h2>Merit Badges</h2>
-    {{ $badges := where .Site.RegularPages "Section" "merit-badges" }}
-    {{ if $badges }}
-      <ul class="badge-list">
-        {{ range $badges.ByTitle }}
-          <li class="badge-item">
-            <a href="{{ .RelPermalink }}">
-              <strong>{{ .Title }}</strong>
-              {{ if .Description }}
-                <span class="badge-description">{{ .Description }}</span>
-              {{ end }}
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-    {{ else }}
-      <p>Merit badges coming soon! Check back later.</p>
-    {{ end }}
+    <p><a href="/merit-badges/">Browse all merit badges →</a></p>
   </section>
 {{ end }}
