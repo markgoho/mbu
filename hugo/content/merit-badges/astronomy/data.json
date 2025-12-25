@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the most likely hazards you may encounter while participating in astronomy activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Resource: Preparing for Stargazing (video)",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in astronomy activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.",
           "resources": [
             {
               "title": "Preparing for Stargazing (video)",
@@ -43,7 +43,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Describe the proper clothing and other precautions for safely making observations at night and in cold weather. Resource: WINTER! Astronomy..How to Keep Warm & Stay Out Longer (video)",
+          "text": "Describe the proper clothing and other precautions for safely making observations at night and in cold weather.",
           "resources": [
             {
               "title": "WINTER! Astronomy..How to Keep Warm & Stay Out Longer (video)",
@@ -54,7 +54,7 @@
         {
           "req_id": "d",
           "path": "1.d",
-          "text": "Explain how to safely observe the Sun, objects near the Sun and solar eclipses. Resource: How to View the Sun Safely-Eclipses, Sunspots (video)",
+          "text": "Explain how to safely observe the Sun, objects near the Sun and solar eclipses.",
           "resources": [
             {
               "title": "How to View the Sun Safely-Eclipses, Sunspots (video)",
@@ -585,7 +585,7 @@
         {
           "req_id": "e",
           "path": "8.e",
-          "text": "Personally take a series of photographs or digital images of the movement of the Moon, a planet, an asteroid, meteor, or a comet. In your visual display, label each image and include the date and time it was taken. Show all positions on a star chart or map. Show your display at school or at a troop meeting. Explain the changes you observed. Resource: Smartphone Astrophotography: A Beginner's Guide (website)",
+          "text": "Personally take a series of photographs or digital images of the movement of the Moon, a planet, an asteroid, meteor, or a comet. In your visual display, label each image and include the date and time it was taken. Show all positions on a star chart or map. Show your display at school or at a troop meeting. Explain the changes you observed.",
           "resources": [
             {
               "title": "Smartphone Astrophotography: A Beginner's Guide (website)",
@@ -596,7 +596,7 @@
         {
           "req_id": "f",
           "path": "8.f",
-          "text": "With your parent or guardian's and counselor's approval, use online observing opportunities such as SkyNet to observe planets, comets, galaxies, and/or the sun. Describe your experience to your counselor. Resource: The Skynet Robotic Telescope Network (website)",
+          "text": "With your parent or guardian's and counselor's approval, use online observing opportunities such as SkyNet to observe planets, comets, galaxies, and/or the sun. Describe your experience to your counselor.",
           "resources": [
             {
               "title": "The Skynet Robotic Telescope Network (website)",

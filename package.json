@@ -6,7 +6,7 @@
   "scripts": {
     "sync:badges": "bun scripts/sync-requirements.ts",
     "build": "cd hugo && hugo --minify",
-    "hugo:dev": "cd hugo && hugo server --disableFastRender -D"
+    "hugo:dev": "cd hugo && hugo server"
   },
   "devDependencies": {
     "@types/bun": "latest",

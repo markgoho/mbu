@@ -6,6 +6,135 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Animation.pdf",
   "requirements": [
     {
+      "req_id": "1",
+      "path": "1",
+      "text": "General Knowledge. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "1.a",
+          "text": "In your own words, describe to your counselor what animation is.",
+          "resources": [
+            {
+              "title": "What Is Animation? (video)",
+              "url": "https://youtu.be/frP_5YQ0GfY?si=W1Bd6rnb4ksWo5p7"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Discuss with your counselor a brief history of animation.",
+          "resources": [
+            {
+              "title": "A Brief History of Animation (video)",
+              "url": "https://youtu.be/5Y6eInX7H-s?si=elo9NM-TCqmqnQpb"
+            },
+            {
+              "title": "Discover Japan's First Anime: Hidden History! (video)",
+              "url": "https://youtu.be/mQlAHrQ2-h8?si=9YNDKARTlRJ5omrg"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Principles of Animation. Choose five of the following 12 principles of animation, and discuss how each one makes an animation appear more believable: squash and stretch, anticipation, staging, straight ahead action and pose to pose, follow through and overlapping action, slow in and slow out, arcs, secondary action, timing, exaggeration, solid drawing, appeal.",
+      "resources": [
+        {
+          "title": "The 12 Principles of Animation Explained - The Most Important Rules for Animating (video)",
+          "url": "https://youtu.be/tYc1yUt0IeA?si=6KmGm0SXDmXXOzeO"
+        },
+        {
+          "title": "12 Principles of Animation (video)",
+          "url": "https://youtu.be/uDqjIdI4bF4?si=Hw0CusAukKKkJ1oI"
+        }
+      ]
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Projects. With your counselor's approval, choose two animation techniques and do the following for each:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Technique 1",
+          "resources": [
+            {
+              "title": "Pencil2D | Learn 2D Animation Tutorial Overview (video)",
+              "url": "https://youtu.be/QPqap-onmv8?si=R7BiYvl5Ku2fcf6I"
+            },
+            {
+              "title": "OpenToonz (video)",
+              "url": "https://youtu.be/r9XieJu5s8Y?si=zsPzqgpeuMP5Yz5U"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "3.a.1",
+              "text": "Plan your animation using thumbnail sketches and/or layout drawings either on paper or using an animation software program."
+            },
+            {
+              "req_id": "2",
+              "path": "3.a.2",
+              "text": "Create the animation."
+            },
+            {
+              "req_id": "3",
+              "path": "3.a.3",
+              "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Technique 2",
+          "resources": [
+            {
+              "title": "How to Make a Flipbook (video)",
+              "url": "https://youtu.be/Un-BdBSOGKY?si=VYoP1vpGjMei_OY-"
+            },
+            {
+              "title": "How to Make Flipbook Animation Machine at Home (video)",
+              "url": "https://youtu.be/4WLU50bsNOY?si=CmQ60SH6rck6eDQj"
+            },
+            {
+              "title": "FlipAnim: How to Make Flipbook Animations Online (website)",
+              "url": "https://flipanim.com/"
+            }
+          ],
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "3.b.1",
+              "text": "Plan your animation using thumbnail sketches and/or layout drawings."
+            },
+            {
+              "req_id": "2",
+              "path": "3.b.2",
+              "text": "Create the animation."
+            },
+            {
+              "req_id": "3",
+              "path": "3.b.3",
+              "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
       "req_id": "4",
       "path": "4",
       "text": "Animation in our World. Do the following:",
@@ -56,146 +185,13 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Careers. Learn about three career opportunities in animation. Pick one and find out about the education, training, and experience required for this profession. Discuss your findings with your counselor. Explain why this profession might interest you. Resource: Animation as a Career Choice (video)",
+      "text": "Careers. Learn about three career opportunities in animation. Pick one and find out about the education, training, and experience required for this profession. Discuss your findings with your counselor. Explain why this profession might interest you.",
       "resources": [
         {
           "title": "Animation as a Career Choice (video)",
           "url": "https://youtu.be/t8zUTh1wYM4?si=-IUsEDT5mck_ttAd"
         }
       ]
-    },
-    {
-      "req_id": "1",
-      "path": "1",
-      "text": "General Knowledge. Do the following:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "1.a",
-          "text": "In your own words, describe to your counselor what animation is. Resource: What Is Animation? (video)",
-          "resources": [
-            {
-              "title": "What Is Animation? (video)",
-              "url": "https://youtu.be/frP_5YQ0GfY?si=W1Bd6rnb4ksWo5p7"
-            }
-          ]
-        },
-        {
-          "req_id": "b",
-          "path": "1.b",
-          "text": "Discuss with your counselor a brief history of animation.",
-          "resources": [
-            {
-              "title": "A Brief History of Animation (video)",
-              "url": "https://youtu.be/5Y6eInX7H-s?si=elo9NM-TCqmqnQpb"
-            },
-            {
-              "title": "Discover Japan's First Anime: Hidden History! (video)",
-              "url": "https://youtu.be/mQlAHrQ2-h8?si=9YNDKARTlRJ5omrg"
-            }
-          ]
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
-    },
-    {
-      "req_id": "2",
-      "path": "2",
-      "text": "Principles of Animation. Choose five of the following 12 principles of animation, and discuss how each one makes an animation appear more believable: squash and stretch, anticipation, staging, straight ahead action and pose to pose, follow through and overlapping action, slow in and slow out, arcs, secondary action, timing, exaggeration, solid drawing, appeal.",
-      "resources": [
-        {
-          "title": "The 12 Principles of Animation Explained - The Most Important Rules for Animating (video)",
-          "url": "https://youtu.be/tYc1yUt0IeA?si=6KmGm0SXDmXXOzeO"
-        },
-        {
-          "title": "12 Principles of Animation (video)",
-          "url": "https://youtu.be/uDqjIdI4bF4?si=Hw0CusAukKKkJ1oI"
-        }
-      ]
-    },
-    {
-      "req_id": "3",
-      "path": "3",
-      "text": "Projects. With your counselor's approval, choose two animation techniques and do the following for each:",
-      "subrequirements": [
-        {
-          "req_id": "b",
-          "path": "3.b",
-          "text": "Technique 2",
-          "resources": [
-            {
-              "title": "How to Make a Flipbook (video)",
-              "url": "https://youtu.be/Un-BdBSOGKY?si=VYoP1vpGjMei_OY-"
-            },
-            {
-              "title": "How to Make Flipbook Animation Machine at Home (video)",
-              "url": "https://youtu.be/4WLU50bsNOY?si=CmQ60SH6rck6eDQj"
-            },
-            {
-              "title": "FlipAnim: How to Make Flipbook Animations Online (website)",
-              "url": "https://flipanim.com/"
-            }
-          ],
-          "subrequirements": [
-            {
-              "req_id": "1",
-              "path": "3.b.1",
-              "text": "Plan your animation using thumbnail sketches and/or layout drawings."
-            },
-            {
-              "req_id": "2",
-              "path": "3.b.2",
-              "text": "Create the animation."
-            },
-            {
-              "req_id": "3",
-              "path": "3.b.3",
-              "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
-            }
-          ]
-        },
-        {
-          "req_id": "a",
-          "path": "3.a",
-          "text": "Technique 1",
-          "resources": [
-            {
-              "title": "Pencil2D | Learn 2D Animation Tutorial Overview (video)",
-              "url": "https://youtu.be/QPqap-onmv8?si=R7BiYvl5Ku2fcf6I"
-            },
-            {
-              "title": "OpenToonz (video)",
-              "url": "https://youtu.be/r9XieJu5s8Y?si=zsPzqgpeuMP5Yz5U"
-            },
-            {
-              "title": "StoryBoarder (video)",
-              "url": "https://youtu.be/gPurQv4rC1E?si=VvVgSOBGPVPSOZTF"
-            }
-          ],
-          "subrequirements": [
-            {
-              "req_id": "1",
-              "path": "3.a.1",
-              "text": "Plan your animation using thumbnail sketches and/or layout drawings either on paper or using an animation software program."
-            },
-            {
-              "req_id": "2",
-              "path": "3.a.2",
-              "text": "Create the animation."
-            },
-            {
-              "req_id": "3",
-              "path": "3.a.3",
-              "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
-            }
-          ]
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
     }
   ]
 }

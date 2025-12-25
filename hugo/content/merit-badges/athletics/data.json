@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the most likely hazards you may encounter during athletics activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Resource: Preventing Injuries in Youth Athletes (video)",
+          "text": "Explain to your counselor the most likely hazards you may encounter during athletics activities, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.",
           "resources": [
             {
               "title": "Preventing Injuries in Youth Athletes (video)",
@@ -53,7 +53,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Before completing requirements 3 and 5, have your health-care practitioner give you a physical examination, using the Scout Annual Health and Medical Record form. Resource: Annual Physical Exam (website)",
+          "text": "Before completing requirements 3 and 5, have your health-care practitioner give you a physical examination, using the Scout Annual Health and Medical Record form.",
           "resources": [
             {
               "title": "Annual Physical Exam (website)",
@@ -84,7 +84,7 @@
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Explain the importance of maintaining a healthy diet. Resource: What is MyPlate? (website)",
+          "text": "Explain the importance of maintaining a healthy diet.",
           "resources": [
             {
               "title": "What is MyPlate? (website)",
@@ -100,7 +100,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Select an athletic activity that interests you, then do the following: Resource: Which Sport Are You Made for? Take Our 60-Second Test (website)",
+      "text": "Select an athletic activity that interests you, then do the following:",
       "resources": [
         {
           "title": "Which Sport Are You Made for? Take Our 60-Second Test (website)",
@@ -111,7 +111,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "With guidance from your counselor, establish a personal training program suited to the activity you have chosen. Follow this training program for three months. Resource: Keys to Sport-Specific Training (video)",
+          "text": "With guidance from your counselor, establish a personal training program suited to the activity you have chosen. Follow this training program for three months.",
           "resources": [
             {
               "title": "Keys to Sport-Specific Training (video)",
@@ -122,7 +122,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Create a chart to monitor your progress during this time. Resource: 7 Powerful Journaling Ideas for Youth Sports Athletes (website)",
+          "text": "Create a chart to monitor your progress during this time.",
           "resources": [
             {
               "title": "7 Powerful Journaling Ideas for Youth Sports Athletes (website)",
@@ -133,7 +133,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Explain to your counselor the equipment necessary to participate in this activity and the appropriate clothing for the time of year. Resource: Equipment Needed to Play Various Sports (website)",
+          "text": "Explain to your counselor the equipment necessary to participate in this activity and the appropriate clothing for the time of year.",
           "resources": [
             {
               "title": "Equipment Needed to Play Various Sports (website)",
@@ -144,7 +144,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "At the end of three months, review the chart you created for requirement 3(b), and discuss with your counselor what progress you have made during training. Tell how your development has affected you mentally and physically. Resource: How Do You Measure Progress? (video)",
+          "text": "At the end of three months, review the chart you created for requirement 3(b), and discuss with your counselor what progress you have made during training. Tell how your development has affected you mentally and physically.",
           "resources": [
             {
               "title": "How Do You Measure Progress? (video)",
@@ -165,7 +165,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Give the rules for two athletic activities, one of which is the activity you chose for requirement 3. Resource: Rules of Sports (website)",
+          "text": "Give the rules for two athletic activities, one of which is the activity you chose for requirement 3.",
           "resources": [
             {
               "title": "Rules of Sports (website)",
@@ -176,7 +176,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Discuss the importance of warming up and cooling down. Resource: Stretching and Warming Up (video)",
+          "text": "Discuss the importance of warming up and cooling down.",
           "resources": [
             {
               "title": "Stretching and Warming Up (video)",
@@ -187,7 +187,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Explain to your counselor what an amateur athlete is and the differences between an amateur and a professional athlete. Resource: What Is an Amateur (PDF)",
+          "text": "Explain to your counselor what an amateur athlete is and the differences between an amateur and a professional athlete.",
           "resources": [
             {
               "title": "What Is an Amateur (PDF)",
@@ -225,9 +225,9 @@
       "text": "Complete the activities in FOUR of the following options and show improvement over a three-month period:",
       "subrequirements": [
         {
-          "req_id": "option-1-sprinting-resource-how-to-sprint-video",
-          "path": "5.option-1-sprinting-resource-how-to-sprint-video",
-          "text": "Option 1: Sprinting Resource: How to Sprint (video)",
+          "req_id": "option-1-sprinting",
+          "path": "5.option-1-sprinting",
+          "text": "Option 1: Sprinting",
           "is_option": true,
           "resources": [
             {
@@ -238,20 +238,20 @@
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "5.option-1-sprinting-resource-how-to-sprint-video.a",
+              "path": "5.option-1-sprinting.a",
               "text": "100-meter dash"
             },
             {
               "req_id": "b",
-              "path": "5.option-1-sprinting-resource-how-to-sprint-video.b",
+              "path": "5.option-1-sprinting.b",
               "text": "200-meter dash"
             }
           ]
         },
         {
-          "req_id": "option-2-long-distance-running-resource-improving-your-running-form-video",
-          "path": "5.option-2-long-distance-running-resource-improving-your-running-form-video",
-          "text": "Option 2: Long-Distance Running Resource: Improving Your Running Form (video)",
+          "req_id": "option-2-long-distance-running",
+          "path": "5.option-2-long-distance-running",
+          "text": "Option 2: Long-Distance Running",
           "is_option": true,
           "resources": [
             {
@@ -262,12 +262,12 @@
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "5.option-2-long-distance-running-resource-improving-your-running-form-video.a",
+              "path": "5.option-2-long-distance-running.a",
               "text": "3k run"
             },
             {
               "req_id": "b",
-              "path": "5.option-2-long-distance-running-resource-improving-your-running-form-video.b",
+              "path": "5.option-2-long-distance-running.b",
               "text": "5k run"
             }
           ]
@@ -319,7 +319,7 @@
             {
               "req_id": "a",
               "path": "5.option-4-swimming.a",
-              "text": "100-meter swim Resource: How to Swim Laps (video)",
+              "text": "100-meter swim",
               "resources": [
                 {
                   "title": "How to Swim Laps (video)",
@@ -330,7 +330,7 @@
             {
               "req_id": "b",
               "path": "5.option-4-swimming.b",
-              "text": "200-meter swim Resource: Best Way to Swim a 200m (video)",
+              "text": "200-meter swim",
               "resources": [
                 {
                   "title": "Best Way to Swim a 200m (video)",
@@ -349,7 +349,7 @@
             {
               "req_id": "a",
               "path": "5.option-5-pull-ups-and-push-ups.a",
-              "text": "Pull-ups in two minutes Resource: How to Do a Pull-Up (video)",
+              "text": "Pull-ups in two minutes",
               "resources": [
                 {
                   "title": "How to Do a Pull-Up (video)",
@@ -360,7 +360,7 @@
             {
               "req_id": "b",
               "path": "5.option-5-pull-ups-and-push-ups.b",
-              "text": "Push-ups in two minutes Resource: How to Do a Push-Up (video)",
+              "text": "Push-ups in two minutes",
               "resources": [
                 {
                   "title": "How to Do a Push-Up (video)",
@@ -371,9 +371,9 @@
           ]
         },
         {
-          "req_id": "option-6-baseball-throw-resource-how-to-throw-a-baseball-video",
-          "path": "5.option-6-baseball-throw-resource-how-to-throw-a-baseball-video",
-          "text": "Option 6: Baseball Throw Resource: How to Throw a Baseball (video)",
+          "req_id": "option-6-baseball-throw",
+          "path": "5.option-6-baseball-throw",
+          "text": "Option 6: Baseball Throw",
           "is_option": true,
           "resources": [
             {
@@ -384,12 +384,12 @@
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "5.option-6-baseball-throw-resource-how-to-throw-a-baseball-video.a",
+              "path": "5.option-6-baseball-throw.a",
               "text": "Baseball throw for accuracy, 10 throws at a target (distance to be determined by age): ages 11 to 12, 20 feet; ages 13 to 15, 30 feet; ages 16 to 17, 40 feet"
             },
             {
               "req_id": "b",
-              "path": "5.option-6-baseball-throw-resource-how-to-throw-a-baseball-video.b",
+              "path": "5.option-6-baseball-throw.b",
               "text": "Baseball throw for distance, five throws (total distance)"
             }
           ]
@@ -477,7 +477,7 @@
             {
               "req_id": "a",
               "path": "5.option-8-football-kick-or-soccer-kick.a",
-              "text": "Goals from the 10-yard line, eight kicks Resource: Shooting a Soccer Free Kick (video)",
+              "text": "Goals from the 10-yard line, eight kicks",
               "resources": [
                 {
                   "title": "Shooting a Soccer Free Kick (video)",
@@ -488,7 +488,7 @@
             {
               "req_id": "b",
               "path": "5.option-8-football-kick-or-soccer-kick.b",
-              "text": "Football kick or soccer kick for distance, five kicks (total distance) Resource: Kick a Football Field Goal (video)",
+              "text": "Football kick or soccer kick for distance, five kicks (total distance)",
               "resources": [
                 {
                   "title": "Kick a Football Field Goal (video)",
@@ -507,7 +507,7 @@
             {
               "req_id": "a",
               "path": "5.option-9-weight-training.a",
-              "text": "Chest/bench press, two sets of 15 repetitions each Resource: How to Bench Press (video)",
+              "text": "Chest/bench press, two sets of 15 repetitions each",
               "resources": [
                 {
                   "title": "How to Bench Press (video)",
@@ -518,7 +518,7 @@
             {
               "req_id": "b",
               "path": "5.option-9-weight-training.b",
-              "text": "Leg curls, two sets of 15 repetitions each Resource: How to Do Leg Curls (video)",
+              "text": "Leg curls, two sets of 15 repetitions each",
               "resources": [
                 {
                   "title": "How to Do Leg Curls (video)",
@@ -542,7 +542,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Prepare plans for conducting a sports meet or field day that includes 10 activities, at least five of which must come from the groups mentioned in requirement 5. Outline the duties of each official needed and list the equipment the meet will require. Resource: Planning a Field Day (video)",
+          "text": "Prepare plans for conducting a sports meet or field day that includes 10 activities, at least five of which must come from the groups mentioned in requirement 5. Outline the duties of each official needed and list the equipment the meet will require.",
           "resources": [
             {
               "title": "Planning a Field Day (video)",

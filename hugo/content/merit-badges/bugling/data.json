@@ -28,7 +28,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Explain and demonstrate how the bugle makes sound, and explain how the bugle is related to other brass wind instruments. Resource: The Physics of Music: Playing Fire, Ice and Jelly Trumpets (video)",
+          "text": "Explain and demonstrate how the bugle makes sound, and explain how the bugle is related to other brass wind instruments.",
           "resources": [
             {
               "title": "The Physics of Music: Playing Fire, Ice and Jelly Trumpets (video)",
@@ -116,7 +116,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Explain when each of the calls in requirement 3 is used. Resource: US Army Bugle Calls Daily Sequence: An Honorable Tradition (video)",
+      "text": "Explain when each of the calls in requirement 3 is used.",
       "resources": [
         {
           "title": "US Army Bugle Calls Daily Sequence: An Honorable Tradition (video)",
@@ -127,7 +127,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Explain how to care for, clean, and maintain a bugle. Resource: How to Clean a Bugle...and Dealing With Spit (video)",
+      "text": "Explain how to care for, clean, and maintain a bugle.",
       "resources": [
         {
           "title": "How to Clean a Bugle...and Dealing With Spit (video)",
