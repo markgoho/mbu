@@ -1,11 +1,11 @@
 .footer {
-  --icon-color: var(--teal-500);
+  --icon-color: var(--olive-500);
 
   padding: var(--space-m) var(--space-l);
-  background-color: var(--brown-800);
-  border-top: 5px solid var(--brown-500);
+  background-color: var(--tan-800);
+  border-top: 5px solid var(--tan-500);
   container: footer / inline-size;
-  color: var(--brown-450);
+  color: var(--tan-450);
 }
 
 .footer__main {
@@ -13,7 +13,7 @@
   grid-template-columns: 1fr;
   gap: var(--space-m);
   padding-block-end: var(--space-m);
-  border-bottom: 2px solid var(--brown-600);
+  border-bottom: 2px solid var(--tan-600);
 }
 
 .footer__nav {
@@ -36,7 +36,7 @@
   font-size: var(--step--2);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
-  color: var(--brown-450);
+  color: var(--tan-450);
 }
 
 .footer__links {
@@ -54,7 +54,7 @@
   }
 
   a:hover {
-    color: var(--brown-400);
+    color: var(--tan-400);
   }
 }
 
@@ -68,7 +68,7 @@
     place-content: center;
 
     &:hover .footer-icon {
-      color: var(--brown-400);
+      color: var(--tan-400);
     }
   }
   .twitter {
@@ -78,7 +78,7 @@
   .footer-icon {
     width: 44px;
     height: 44px;
-    color: var(--brown-500);
+    color: var(--tan-500);
   }
 }
 

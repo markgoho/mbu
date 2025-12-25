@@ -7,7 +7,7 @@
   grid-template-columns: min-content 1fr;
   grid-template-areas: "logo cta" "nav nav";
   align-items: center;
-  background: var(--brown-300);
+  background: var(--tan-300);
   padding: var(--space-xs);
   // column-gap: var(--space-l);
   row-gap: var(--space-xs);
@@ -50,7 +50,7 @@
 }
 
 .navbar__nav > .active {
-  border-bottom-color: var(--teal-500);
+  border-bottom-color: var(--olive-500);
 }
 
 @container header (min-width: 60rem) {

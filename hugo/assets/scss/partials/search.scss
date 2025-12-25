@@ -22,8 +22,8 @@
   font-family: var(--font-family-main);
   font-weight: var(--font-weight-boldest);
   font-size: var(--step-1);
-  color: var(--brown-100);
-  background: var(--teal-500);
+  color: var(--tan-100);
+  background: var(--olive-500);
   border-radius: var(--border-radius-md);
   padding: var(--space-xs) var(--space-s);
   text-decoration: none;
@@ -35,7 +35,7 @@
 
   &:hover,
   &:focus {
-    background: var(--teal-600);
+    background: var(--olive-600);
   }
 
   &-small {
@@ -49,15 +49,15 @@
 
 .pagefind-ui__search-input {
   grid-column: 1 / 2;
-  background-color: var(--brown-000);
-  border: 1px solid var(--brown-500);
+  background-color: var(--tan-000);
+  border: 1px solid var(--tan-500);
   border-radius: var(--border-radius-md);
   padding: var(--space-s);
   font-size: var(--step-2);
   width: 100%;
 
   &:focus-visible {
-    outline: 3px solid var(--brown-400);
+    outline: 3px solid var(--tan-400);
   }
 }
 
@@ -80,7 +80,7 @@
   position: relative;
   padding: var(--space-s);
   border-radius: var(--border-radius-md);
-  border: 5px solid var(--brown-300);
+  border: 5px solid var(--tan-300);
   align-items: center;
   text-decoration: none;
   color: var(--color-text-main);
@@ -103,7 +103,7 @@
 }
 
 .pagefind-ui__result-image {
-  border: 5px solid var(--teal-500);
+  border: 5px solid var(--olive-500);
   border-radius: var(--border-radius-md);
   aspect-ratio: 1 / 1;
   object-fit: cover;

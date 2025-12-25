@@ -21,14 +21,14 @@
   place-items: center;
   text-decoration: none;
   padding: var(--space-s);
-  border: 5px solid var(--brown-400);
+  border: 5px solid var(--tan-400);
   border-radius: var(--spacing-btn-radius);
-  background-color: var(--brown-000);
+  background-color: var(--tan-000);
   // width: max-content;
 
   &:hover {
-    border-color: var(--teal-500);
-    box-shadow: 0 0 10px var(--teal-100);
+    border-color: var(--olive-500);
+    box-shadow: 0 0 10px var(--olive-100);
   }
 
   .nav-card__icon {

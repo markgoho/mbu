@@ -32,7 +32,7 @@
 }
 
 fieldset {
-  border: 3px solid var(--brown-400);
+  border: 3px solid var(--tan-400);
   border-radius: var(--border-radius-md);
 
   legend {
@@ -41,8 +41,8 @@ fieldset {
 }
 
 .form__input {
-  background-color: var(--brown-000);
-  border: 1px solid var(--brown-500);
+  background-color: var(--tan-000);
+  border: 1px solid var(--tan-500);
   border-radius: var(--border-radius-md);
   padding: var(--space-xs);
   font-size: var(--step-2);
@@ -50,7 +50,7 @@ fieldset {
   line-height: 1.2;
 
   &:focus-visible {
-    outline: 3px solid var(--brown-400);
+    outline: 3px solid var(--tan-400);
   }
 }
 
@@ -58,9 +58,9 @@ fieldset {
 .form__input[type="radio"] {
   width: var(--space-l);
   height: var(--space-l);
-  accent-color: var(--brown-400); // Modern browsers, for color
+  accent-color: var(--tan-400); // Modern browsers, for color
   margin-inline-end: var(--space-2xs);
-  background-color: var(--brown-000);
+  background-color: var(--tan-000);
 }
 
 .input-grid {

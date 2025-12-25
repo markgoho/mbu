@@ -4,7 +4,7 @@
 .hero {
   position: relative;
   padding: var(--space-m);
-  color: var(--brown-300);
+  color: var(--tan-300);
   height: 100svh;
 
   display: grid;
@@ -51,7 +51,7 @@
     font-weight: var(--font-weight-boldest);
     line-height: 1.2;
     margin: 0;
-    color: var(--brown-200);
+    color: var(--tan-200);
     max-width: 18ch;
     text-wrap: pretty;
     margin-block-end: var(--space-xs);
@@ -60,7 +60,7 @@
   .org-container {
     display: none;
     flex-direction: column;
-    color: var(--brown-200);
+    color: var(--tan-200);
   }
 
   .org-name {

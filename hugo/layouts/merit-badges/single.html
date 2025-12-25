@@ -3,14 +3,16 @@
   {{ $json := $data | unmarshal }}
   {{ $reqCount := len $json.requirements }}
 
+
   <article class="merit-badge">
     <header class="badge-header">
       <h1>
         {{ .Title }}
-        {{ if $json.eagle_required }}
-          <span class="eagle-badge">🦅 Eagle Required</span>
-        {{ end }}
       </h1>
+      {{ if $json.eagle_required }}
+        <span class="eagle-badge">🦅 Eagle Required</span>
+      {{ end }}
+
 
       <div class="badge-meta">
         <span>{{ $reqCount }} Requirements</span>
@@ -18,7 +20,11 @@
           View Official Page ↗
         </a>
         {{ if $json.pamphlet_url }}
-          <a href="{{ $json.pamphlet_url }}" target="_blank" rel="noopener" class="pamphlet-link">
+          <a
+            href="{{ $json.pamphlet_url }}"
+            target="_blank"
+            rel="noopener"
+            class="pamphlet-link">
             Download Free Pamphlet ↓
           </a>
         {{ end }}

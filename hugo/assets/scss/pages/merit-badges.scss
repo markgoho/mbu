@@ -15,7 +15,9 @@
   border: 1px solid var(--color-border, #ddd);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   background: var(--color-surface, white);
 
   &:hover {
@@ -24,8 +26,8 @@
   }
 
   &.eagle {
-    border-left: 4px solid gold;
-    background: linear-gradient(to right, #fffbf0 0%, white 10%);
+    border-left: 4px solid var(--olive-400);
+    background: linear-gradient(to right, var(--olive-100) 0%, white 10%);
   }
 
   a {
@@ -43,7 +45,7 @@
 }
 
 .eagle-badge {
-  font-size: 1.2em;
+  font-size: 0.75em;
 }
 
 .req-count {
@@ -64,17 +66,19 @@
   h1 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
     flex-wrap: wrap;
   }
+}
 
-  .eagle-badge {
-    font-size: 0.6em;
-    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
-    padding: 0.25em 0.75em;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
+.badge-header .eagle-badge {
+  display: inline-block;
+  font-size: var(--step-1);
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  padding: var(--space-xs) var(--space-l);
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .badge-meta {
