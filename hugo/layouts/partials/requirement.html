@@ -1,12 +1,14 @@
 {{/* Recursive partial to render a requirement with any depth of nesting */}}
-<li>
+<li{{ if .path }} id="req-{{ .path }}"{{ end }} class="requirement-item">
   <div class="req-text">{{ .text }}</div>
 
   {{ if .subrequirements }}
-    {{/* Determine list type based on first req_id - numeric IDs = decimal, letter IDs = lower-alpha */}}
-    {{ $firstId := (index .subrequirements 0).req_id }}
-    {{ $isNumeric := or (eq $firstId "1") (eq $firstId "2") (eq $firstId "3") (strings.HasPrefix $firstId "option") }}
-    <ol class="subrequirements {{ if $isNumeric }}numeric{{ else }}alpha{{ end }}">
+    {{/* Determine list type based on first child */}}
+    {{ $first := index .subrequirements 0 }}
+    {{ $firstId := $first.req_id }}
+    {{ $isOption := $first.is_option }}
+    {{ $isNumeric := or (eq $firstId "1") (eq $firstId "2") (eq $firstId "3") }}
+    <ol class="subrequirements {{ if $isOption }}options{{ else if $isNumeric }}numeric{{ else }}alpha{{ end }}">
       {{ range .subrequirements }}
         {{/* Recursively render nested requirements */}}
         {{ partial "requirement.html" . }}

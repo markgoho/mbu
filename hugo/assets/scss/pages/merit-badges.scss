@@ -111,6 +111,10 @@
   }
 }
 
+.requirement-item {
+  scroll-margin-top: 1rem; // Offset for anchor links
+}
+
 .req-text {
   margin-block-end: 0.5rem;
 }
@@ -129,9 +133,25 @@
     list-style: lower-alpha;
   }
 
-  // Numeric subrequirements (1, 2, 3) or options
+  // Numeric subrequirements (1, 2, 3)
   &.numeric {
     list-style: decimal;
+  }
+
+  // Named options (Beef Cattle Option, Dairy Option, etc.)
+  &.options {
+    list-style: none;
+    padding-inline-start: 0;
+
+    > li {
+      margin-block-end: 1.5rem;
+
+      > .req-text {
+        font-weight: 600;
+        font-size: 1.1em;
+        color: var(--color-heading, #333);
+      }
+    }
   }
 }
 

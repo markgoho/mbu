@@ -9,10 +9,7 @@
     {{ range .Pages.ByTitle }}
       {{ $data := .Resources.GetMatch "data.json" }}
       {{ $json := $data | unmarshal }}
-      {{ $reqCount := 0 }}
-      {{ range $json.sections }}
-        {{ $reqCount = add $reqCount (len .requirements) }}
-      {{ end }}
+      {{ $reqCount := len $json.requirements }}
 
       <article class="badge-card {{ if $json.eagle_required }}eagle{{ end }}">
         <a href="{{ .Permalink }}">

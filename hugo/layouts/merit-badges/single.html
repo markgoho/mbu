@@ -1,10 +1,7 @@
 {{ define "main" }}
   {{ $data := .Resources.GetMatch "data.json" }}
   {{ $json := $data | unmarshal }}
-  {{ $reqCount := 0 }}
-  {{ range $json.sections }}
-    {{ $reqCount = add $reqCount (len .requirements) }}
-  {{ end }}
+  {{ $reqCount := len $json.requirements }}
 
   <article class="merit-badge">
     <header class="badge-header">
@@ -29,16 +26,14 @@
     </header>
 
     <div class="requirements">
-      {{ range $json.sections }}
-        <h2>{{ .title }}</h2>
+      <h2>Requirements</h2>
 
-        <ol class="requirements-list">
-          {{ range .requirements }}
-            {{/* Use recursive partial for infinite nesting */}}
-            {{ partial "requirement.html" . }}
-          {{ end }}
-        </ol>
-      {{ end }}
+      <ol class="requirements-list">
+        {{ range $json.requirements }}
+          {{/* Use recursive partial for infinite nesting */}}
+          {{ partial "requirement.html" . }}
+        {{ end }}
+      </ol>
     </div>
 
     <footer>
