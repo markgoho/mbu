@@ -1,434 +1,523 @@
 {
-  "id": "skating",
   "title": "Skating",
   "slug": "skating",
   "url": "https://www.scouting.org/merit-badges/skating/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Skating.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain to your counselor the most likely hazards associated with skating and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+        },
+        {
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Show that you know first aid for injuries or illnesses that could occur while skating, including hypothermia, frostbite, lacerations, abrasions, fractures, sprains and strains, concussions, blisters, heat-related reactions, and shock."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Working under the supervision of an experienced adult, do ONE of the following options.",
+      "subrequirements": [
+        {
+          "req_id": "option-a-ice-skating",
+          "path": "2.option-a-ice-skating",
+          "text": "Option A—Ice Skating",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "text": "Explain to your counselor the most likely hazards associated with skating and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+              "path": "2.option-a-ice-skating.a",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-a-ice-skating.a.1",
+                  "text": "Give general safety and courtesy rules for ice skating. Discuss preparations that must be taken when skating outdoors on natural ice. Explain how to make an ice rescue."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-a-ice-skating.a.2",
+                  "text": "Discuss the parts and functions of the different types of ice skates."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-a-ice-skating.a.3",
+                  "text": "Describe the proper way to carry ice skates."
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-a-ice-skating.a.4",
+                  "text": "Describe how to store ice skates for long periods of time, such as seasonal storage."
+                }
+              ]
             },
             {
               "req_id": "b",
-              "text": "Show that you know first aid for injuries or illnesses that could occur while skating, including hypothermia, frostbite, lacerations, abrasions, fractures, sprains and strains, concussions, blisters, heat-related reactions, and shock."
+              "path": "2.option-a-ice-skating.b",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-a-ice-skating.b.1",
+                  "text": "Skate forward at least 40 feet and come to a complete stop. Use either a two-foot snowplow stop or a one-foot snowplow stop."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-a-ice-skating.b.2",
+                  "text": "After skating forward, glide forward on two feet, then on one foot, first right and then left."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-a-ice-skating.b.3",
+                  "text": "Starting from a T position, stroke forward around the test area, avoiding the use of toe picks if wearing figure skates."
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "path": "2.option-a-ice-skating.c",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-a-ice-skating.c.1",
+                  "text": "Glide backward on two feet for at least two times the skater's height."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-a-ice-skating.c.2",
+                  "text": "Skate backward for at least 20 feet on two skates."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-a-ice-skating.c.3",
+                  "text": "After gaining forward speed, glide forward on two feet, making a turn of 180 degrees around a cone, first to the right and then to the left."
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "path": "2.option-a-ice-skating.d",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-a-ice-skating.d.1",
+                  "text": "Perform forward crossovers in a figure-eight pattern."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-a-ice-skating.d.2",
+                  "text": "Explain to your counselor the safety considerations for participating in an ice-skating race."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-a-ice-skating.d.3",
+                  "text": "Perform a hockey stop."
+                }
+              ]
             }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          ]
         },
         {
-          "req_id": "2",
-          "text": "Working under the supervision of an experienced adult, do ONE of the following options.",
+          "req_id": "option-b-roller-skating",
+          "path": "2.option-b-roller-skating",
+          "text": "Option B—Roller Skating",
+          "is_option": true,
           "subrequirements": [
             {
-              "req_id": "option1",
-              "text": "Option A—Ice Skating",
+              "req_id": "a",
+              "path": "2.option-b-roller-skating.a",
+              "text": "Do the following:",
               "subrequirements": [
                 {
-                  "req_id": "a",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Give general safety and courtesy rules for ice skating. Discuss preparations that must be taken when skating outdoors on natural ice. Explain how to make an ice rescue."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Discuss the parts and functions of the different types of ice skates."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Describe the proper way to carry ice skates."
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Describe how to store ice skates for long periods of time, such as seasonal storage."
-                    }
-                  ]
+                  "req_id": "1",
+                  "path": "2.option-b-roller-skating.a.1",
+                  "text": "Give general safety and etiquette rules for roller skating."
                 },
                 {
-                  "req_id": "b",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Skate forward at least 40 feet and come to a complete stop. Use either a two-foot snowplow stop or a one-foot snowplow stop."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "After skating forward, glide forward on two feet, then on one foot, first right and then left."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Starting from a T position, stroke forward around the test area, avoiding the use of toe picks if wearing figure skates."
-                    }
-                  ]
+                  "req_id": "2",
+                  "path": "2.option-b-roller-skating.a.2",
+                  "text": "Discuss the parts and functions of the roller skate."
                 },
                 {
-                  "req_id": "c",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Glide backward on two feet for at least two times the skater's height."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Skate backward for at least 20 feet on two skates."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "After gaining forward speed, glide forward on two feet, making a turn of 180 degrees around a cone, first to the right and then to the left."
-                    }
-                  ]
-                },
-                {
-                  "req_id": "d",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Perform forward crossovers in a figure-eight pattern."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Explain to your counselor the safety considerations for participating in an ice-skating race."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Perform a hockey stop."
-                    }
-                  ]
+                  "req_id": "3",
+                  "path": "2.option-b-roller-skating.a.3",
+                  "text": "Describe five essential steps to good skate care."
                 }
               ]
             },
             {
-              "req_id": "option2",
-              "text": "Option B—Roller Skating",
+              "req_id": "b",
+              "path": "2.option-b-roller-skating.b",
+              "text": "Do the following:",
               "subrequirements": [
                 {
-                  "req_id": "a",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Give general safety and etiquette rules for roller skating."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Discuss the parts and functions of the roller skate."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Describe five essential steps to good skate care."
-                    }
-                  ]
+                  "req_id": "1",
+                  "path": "2.option-b-roller-skating.b.1",
+                  "text": "Skate forward with smooth, linked strokes on two feet for at least 100 feet in both directions around the rink and demonstrate proper techniques for stopping."
                 },
                 {
-                  "req_id": "b",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Skate forward with smooth, linked strokes on two feet for at least 100 feet in both directions around the rink and demonstrate proper techniques for stopping."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
-                    }
-                  ]
-                },
-                {
-                  "req_id": "c",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Perform the forward crossover."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Skate backward for at least 40 feet on two skates, then for at least 15 feet on one skate."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Skate forward in a slalom pattern for at least 40 feet on two skates, then for at least 20 feet on one skate."
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Skate backward in a slalom pattern for at least 15 feet on two skates."
-                    }
-                  ]
-                },
-                {
-                  "req_id": "d",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Shuttle skate once around the rink, bending twice along the way without stopping."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Perform a series of two consecutive spins on skates, OR hop, skip, and jump on skates for at least 10 feet."
-                    }
-                  ]
-                },
-                {
-                  "req_id": "e",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Race on a speed track, demonstrating proper technique in starting, cornering, passing, and pacing."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Perform the limbo under a pole placed at least chest-high, OR shoot-the-duck under a waist-high pole and rise while still on one foot."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Perform the stepover."
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "While skating, dribble a basketball the length of the floor, then return to your starting position, OR push a hockey ball with a stick around the entire rink in both directions."
-                    }
-                  ]
+                  "req_id": "2",
+                  "path": "2.option-b-roller-skating.b.2",
+                  "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
                 }
               ]
             },
             {
-              "req_id": "option3",
-              "text": "Option C—In-Line Skating",
+              "req_id": "c",
+              "path": "2.option-b-roller-skating.c",
+              "text": "Do the following:",
               "subrequirements": [
                 {
-                  "req_id": "a",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Give general and in-line skating safety rules and etiquette."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Describe the parts and functions of the in-line skate."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Describe the required and recommended safety equipment."
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Describe four essential steps to good skate care."
-                    }
-                  ]
+                  "req_id": "1",
+                  "path": "2.option-b-roller-skating.c.1",
+                  "text": "Perform the forward crossover."
                 },
                 {
-                  "req_id": "b",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Skate forward with smooth, linked strokes on two feet for at least 100 feet."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Stop on command on flat pavement using the heel brake."
-                    }
-                  ]
+                  "req_id": "2",
+                  "path": "2.option-b-roller-skating.c.2",
+                  "text": "Skate backward for at least 40 feet on two skates, then for at least 15 feet on one skate."
                 },
                 {
-                  "req_id": "c",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Perform the forward crossover."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Perform a series of forward, linked swizzles for at least 40 feet."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Skate backward for at least 40 feet in a series of linked, backward swizzles."
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "From a strong pace, perform a lunge turn around an object predetermined by your counselor."
-                    },
-                    {
-                      "req_id": "5",
-                      "text": "Perform a mohawk."
-                    }
-                  ]
+                  "req_id": "3",
+                  "path": "2.option-b-roller-skating.c.3",
+                  "text": "Skate forward in a slalom pattern for at least 40 feet on two skates, then for at least 20 feet on one skate."
                 },
                 {
-                  "req_id": "d",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Perform a series of at least four one-footed downhill slaloms on pavement with a gentle slope."
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Describe how to pass a pedestrian or another skater from behind."
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Describe at least three ways to avoid an unforeseen obstacle while skating."
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Describe two ways to get on and off a curb, and demonstrate at least one of these methods."
-                    }
-                  ]
+                  "req_id": "4",
+                  "path": "2.option-b-roller-skating.c.4",
+                  "text": "Skate backward in a slalom pattern for at least 15 feet on two skates."
                 }
               ]
             },
             {
-              "req_id": "option4",
-              "text": "Option D—Skateboarding",
+              "req_id": "d",
+              "path": "2.option-b-roller-skating.d",
+              "text": "Do the following:",
               "subrequirements": [
                 {
-                  "req_id": "a",
-                  "text": "Explain the following to your counselor:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "History and evolution of skateboarding"
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Benefits of skateboarding (physical fitness, balance, coordination, perseverance, and creativity)"
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Purpose of skateboarding safety and protective gear (helmets, knee pads, elbow pads, wrist guards)."
-                    }
-                  ]
+                  "req_id": "1",
+                  "path": "2.option-b-roller-skating.d.1",
+                  "text": "Shuttle skate once around the rink, bending twice along the way without stopping."
                 },
                 {
-                  "req_id": "b",
-                  "text": "Explain the following to your counselor:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Rules and regulations of skateparks"
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Understanding skatepark zones (street, bowl, and ramp)"
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Right-of-way and respect for others"
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Communication signals and warnings."
-                    }
-                  ]
+                  "req_id": "2",
+                  "path": "2.option-b-roller-skating.d.2",
+                  "text": "Perform a series of two consecutive spins on skates, OR hop, skip, and jump on skates for at least 10 feet."
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "path": "2.option-b-roller-skating.e",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-b-roller-skating.e.1",
+                  "text": "Race on a speed track, demonstrating proper technique in starting, cornering, passing, and pacing."
                 },
                 {
-                  "req_id": "c",
-                  "text": "Do the following:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Explain skateboard anatomy (deck, trucks, wheels, bearings)"
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Build a board by assembling all pieces (deck, wheels, trucks, bearing, and grip tape) in the proper order"
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Explain skateboard maintenance (cleaning, tightening bolts, and replacing parts)"
-                    }
-                  ]
+                  "req_id": "2",
+                  "path": "2.option-b-roller-skating.e.2",
+                  "text": "Perform the limbo under a pole placed at least chest-high, OR shoot-the-duck under a waist-high pole and rise while still on one foot."
                 },
                 {
-                  "req_id": "d",
-                  "text": "Demonstrate the following skateboarding skills:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Stance and foot placement (regular and goofy)"
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Pushing and balance"
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Turning and carving"
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Braking and stopping techniques"
-                    },
-                    {
-                      "req_id": "5",
-                      "text": "Ollies (basic and variations)."
-                    }
-                  ]
+                  "req_id": "3",
+                  "path": "2.option-b-roller-skating.e.3",
+                  "text": "Perform the stepover."
                 },
                 {
-                  "req_id": "e",
-                  "text": "Demonstrate a total of three skateboarding tricks from the following types:",
-                  "subrequirements": [
-                    {
-                      "req_id": "1",
-                      "text": "Flatland tricks"
-                    },
-                    {
-                      "req_id": "2",
-                      "text": "Flip and shove-it tricks"
-                    },
-                    {
-                      "req_id": "3",
-                      "text": "Grind and slide tricks"
-                    },
-                    {
-                      "req_id": "4",
-                      "text": "Air, grab, bowl and ramp tricks"
-                    },
-                    {
-                      "req_id": "5",
-                      "text": "Footplant tricks"
-                    },
-                    {
-                      "req_id": "6",
-                      "text": "Balance tricks."
-                    }
-                  ]
+                  "req_id": "4",
+                  "path": "2.option-b-roller-skating.e.4",
+                  "text": "While skating, dribble a basketball the length of the floor, then return to your starting position, OR push a hockey ball with a stick around the entire rink in both directions."
                 }
               ]
             }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
+          ]
+        },
+        {
+          "req_id": "option-c-in-line-skating",
+          "path": "2.option-c-in-line-skating",
+          "text": "Option C—In-Line Skating",
+          "is_option": true,
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "path": "2.option-c-in-line-skating.a",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-c-in-line-skating.a.1",
+                  "text": "Give general and in-line skating safety rules and etiquette."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-c-in-line-skating.a.2",
+                  "text": "Describe the parts and functions of the in-line skate."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-c-in-line-skating.a.3",
+                  "text": "Describe the required and recommended safety equipment."
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-c-in-line-skating.a.4",
+                  "text": "Describe four essential steps to good skate care."
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "path": "2.option-c-in-line-skating.b",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-c-in-line-skating.b.1",
+                  "text": "Skate forward with smooth, linked strokes on two feet for at least 100 feet."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-c-in-line-skating.b.2",
+                  "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-c-in-line-skating.b.3",
+                  "text": "Stop on command on flat pavement using the heel brake."
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "path": "2.option-c-in-line-skating.c",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-c-in-line-skating.c.1",
+                  "text": "Perform the forward crossover."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-c-in-line-skating.c.2",
+                  "text": "Perform a series of forward, linked swizzles for at least 40 feet."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-c-in-line-skating.c.3",
+                  "text": "Skate backward for at least 40 feet in a series of linked, backward swizzles."
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-c-in-line-skating.c.4",
+                  "text": "From a strong pace, perform a lunge turn around an object predetermined by your counselor."
+                },
+                {
+                  "req_id": "5",
+                  "path": "2.option-c-in-line-skating.c.5",
+                  "text": "Perform a mohawk."
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "path": "2.option-c-in-line-skating.d",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-c-in-line-skating.d.1",
+                  "text": "Perform a series of at least four one-footed downhill slaloms on pavement with a gentle slope."
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-c-in-line-skating.d.2",
+                  "text": "Describe how to pass a pedestrian or another skater from behind."
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-c-in-line-skating.d.3",
+                  "text": "Describe at least three ways to avoid an unforeseen obstacle while skating."
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-c-in-line-skating.d.4",
+                  "text": "Describe two ways to get on and off a curb, and demonstrate at least one of these methods."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "req_id": "option-d-skateboarding",
+          "path": "2.option-d-skateboarding",
+          "text": "Option D—Skateboarding",
+          "is_option": true,
+          "subrequirements": [
+            {
+              "req_id": "a",
+              "path": "2.option-d-skateboarding.a",
+              "text": "Explain the following to your counselor:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-d-skateboarding.a.1",
+                  "text": "History and evolution of skateboarding"
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-d-skateboarding.a.2",
+                  "text": "Benefits of skateboarding (physical fitness, balance, coordination, perseverance, and creativity)"
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-d-skateboarding.a.3",
+                  "text": "Purpose of skateboarding safety and protective gear (helmets, knee pads, elbow pads, wrist guards)."
+                }
+              ]
+            },
+            {
+              "req_id": "b",
+              "path": "2.option-d-skateboarding.b",
+              "text": "Explain the following to your counselor:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-d-skateboarding.b.1",
+                  "text": "Rules and regulations of skateparks"
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-d-skateboarding.b.2",
+                  "text": "Understanding skatepark zones (street, bowl, and ramp)"
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-d-skateboarding.b.3",
+                  "text": "Right-of-way and respect for others"
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-d-skateboarding.b.4",
+                  "text": "Communication signals and warnings."
+                }
+              ]
+            },
+            {
+              "req_id": "c",
+              "path": "2.option-d-skateboarding.c",
+              "text": "Do the following:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-d-skateboarding.c.1",
+                  "text": "Explain skateboard anatomy (deck, trucks, wheels, bearings)"
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-d-skateboarding.c.2",
+                  "text": "Build a board by assembling all pieces (deck, wheels, trucks, bearing, and grip tape) in the proper order"
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-d-skateboarding.c.3",
+                  "text": "Explain skateboard maintenance (cleaning, tightening bolts, and replacing parts)"
+                }
+              ]
+            },
+            {
+              "req_id": "d",
+              "path": "2.option-d-skateboarding.d",
+              "text": "Demonstrate the following skateboarding skills:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-d-skateboarding.d.1",
+                  "text": "Stance and foot placement (regular and goofy)"
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-d-skateboarding.d.2",
+                  "text": "Pushing and balance"
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-d-skateboarding.d.3",
+                  "text": "Turning and carving"
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-d-skateboarding.d.4",
+                  "text": "Braking and stopping techniques"
+                },
+                {
+                  "req_id": "5",
+                  "path": "2.option-d-skateboarding.d.5",
+                  "text": "Ollies (basic and variations)."
+                }
+              ]
+            },
+            {
+              "req_id": "e",
+              "path": "2.option-d-skateboarding.e",
+              "text": "Demonstrate a total of three skateboarding tricks from the following types:",
+              "subrequirements": [
+                {
+                  "req_id": "1",
+                  "path": "2.option-d-skateboarding.e.1",
+                  "text": "Flatland tricks"
+                },
+                {
+                  "req_id": "2",
+                  "path": "2.option-d-skateboarding.e.2",
+                  "text": "Flip and shove-it tricks"
+                },
+                {
+                  "req_id": "3",
+                  "path": "2.option-d-skateboarding.e.3",
+                  "text": "Grind and slide tricks"
+                },
+                {
+                  "req_id": "4",
+                  "path": "2.option-d-skateboarding.e.4",
+                  "text": "Air, grab, bowl and ramp tricks"
+                },
+                {
+                  "req_id": "5",
+                  "path": "2.option-d-skateboarding.e.5",
+                  "text": "Footplant tricks"
+                },
+                {
+                  "req_id": "6",
+                  "path": "2.option-d-skateboarding.e.6",
+                  "text": "Balance tricks."
+                }
+              ]
+            }
+          ]
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

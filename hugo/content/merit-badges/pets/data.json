@@ -1,81 +1,82 @@
 {
-  "id": "pets",
   "title": "Pets",
   "slug": "pets",
   "url": "https://www.scouting.org/merit-badges/pets/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Pets.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Present evidence that you have cared for a pet for four months. Get approval before you start. Note: Work done for other merit badges cannot be used for this requirement. Resource: Create an Activity Log (video)",
+      "resources": [
         {
-          "req_id": "1",
-          "text": "Present evidence that you have cared for a pet for four months. Get approval before you start. Note: Work done for other merit badges cannot be used for this requirement. Resource: Create an Activity Log (video)",
-          "resources": [
-            {
-              "title": "Create an Activity Log (video)",
-              "url": "https://www.youtube.com/watch?v=uh8tDZj9I_A"
-            }
-          ]
-        },
-        {
-          "req_id": "2",
-          "text": "Write in 200 words or more about the care, feeding, and housing of your pet. Tell some interesting facts about it. Tell why you have this kind of pet. Give local laws, if any, relating to the pet you keep. Resource: Understanding Hamsters: Care, Feeding, Housing, and More (video)",
-          "resources": [
-            {
-              "title": "Understanding Hamsters: Care, Feeding, Housing, and More (video)",
-              "url": "https://www.youtube.com/watch?v=Pi_slxuGJUg"
-            }
-          ]
-        },
-        {
-          "req_id": "3",
-          "text": "Show that you have read a book or pamphlet, approved by your counselor, about your kind of pet. Discuss with your counselor what you have learned from what you read."
-        },
-        {
-          "req_id": "4",
-          "text": "Do ONE of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Show your pet in a pet show. Resource: Cat Agility Course at Cat Fanciers Cat Show (video)",
-              "resources": [
-                {
-                  "title": "Cat Agility Course at Cat Fanciers Cat Show (video)",
-                  "url": "https://www.youtube.com/watch?v=QABTG6FldFE"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Start a friend raising a pet like yours. Help your friend get a good start."
-            },
-            {
-              "req_id": "c",
-              "text": "Train a pet in three or more tricks or special abilities.",
-              "resources": [
-                {
-                  "title": "Easiest Way to Teach Your Dog to Roll Over (video)",
-                  "url": "https://www.youtube.com/watch?v=IsJ0VdeOJcg%20"
-                },
-                {
-                  "title": "Train Your Cat to Do Fun Tricks (video)",
-                  "url": "https://www.youtube.com/watch?v=oX7vgQTK9fo"
-                },
-                {
-                  "title": "How I Trained My Cat to Fetch (video)",
-                  "url": "https://www.youtube.com/watch?v=zrDskEObBs8"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
+          "title": "Create an Activity Log (video)",
+          "url": "https://www.youtube.com/watch?v=uh8tDZj9I_A"
         }
       ]
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Write in 200 words or more about the care, feeding, and housing of your pet. Tell some interesting facts about it. Tell why you have this kind of pet. Give local laws, if any, relating to the pet you keep. Resource: Understanding Hamsters: Care, Feeding, Housing, and More (video)",
+      "resources": [
+        {
+          "title": "Understanding Hamsters: Care, Feeding, Housing, and More (video)",
+          "url": "https://www.youtube.com/watch?v=Pi_slxuGJUg"
+        }
+      ]
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Show that you have read a book or pamphlet, approved by your counselor, about your kind of pet. Discuss with your counselor what you have learned from what you read."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Show your pet in a pet show. Resource: Cat Agility Course at Cat Fanciers Cat Show (video)",
+          "resources": [
+            {
+              "title": "Cat Agility Course at Cat Fanciers Cat Show (video)",
+              "url": "https://www.youtube.com/watch?v=QABTG6FldFE"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Start a friend raising a pet like yours. Help your friend get a good start."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Train a pet in three or more tricks or special abilities.",
+          "resources": [
+            {
+              "title": "Easiest Way to Teach Your Dog to Roll Over (video)",
+              "url": "https://www.youtube.com/watch?v=IsJ0VdeOJcg%20"
+            },
+            {
+              "title": "Train Your Cat to Do Fun Tricks (video)",
+              "url": "https://www.youtube.com/watch?v=oX7vgQTK9fo"
+            },
+            {
+              "title": "How I Trained My Cat to Fetch (video)",
+              "url": "https://www.youtube.com/watch?v=zrDskEObBs8"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

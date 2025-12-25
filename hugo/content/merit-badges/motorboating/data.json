@@ -1,160 +1,184 @@
 {
-  "id": "motorboating",
   "title": "Motorboating",
   "slug": "motorboating",
   "url": "https://www.scouting.org/merit-badges/motorboating/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Motorboating.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Discuss with your counselor the following hazards you might encounter while motorboating: flammable fuel; carbon monoxide; propellers; collisions; falls overboard; capsize; running aground. Explain what you should do to anticipate, prevent, mitigate and respond to these hazards."
-            },
-            {
-              "req_id": "b",
-              "text": "Explain first aid for injuries or illnesses that could occur while motorboating, including hypothermia, heat reactions, dehydration, motion sickness, bug bites, blisters."
-            },
-            {
-              "req_id": "c",
-              "text": "Identify the conditions that must exist before performing CPR on a person, and explain how such conditions are recognized. Demonstrate proper technique for performing CPR using a training device approved by your counselor."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Discuss with your counselor the following hazards you might encounter while motorboating: flammable fuel; carbon monoxide; propellers; collisions; falls overboard; capsize; running aground. Explain what you should do to anticipate, prevent, mitigate and respond to these hazards."
         },
         {
-          "req_id": "2",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Before doing requirement 5, successfully complete the Scouting America swimmer test."
-            },
-            {
-              "req_id": "b",
-              "text": "Name the different types of personal flotation devices (PFDs), and explain when each type should be used. Show how to choose and properly fit a PFD."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Explain first aid for injuries or illnesses that could occur while motorboating, including hypothermia, heat reactions, dehydration, motion sickness, bug bites, blisters."
         },
         {
-          "req_id": "3",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain inboard, outboard, and inboard/outboard motors, and the uses and advantages of each."
-            },
-            {
-              "req_id": "b",
-              "text": "Explain the safety procedures and precautions involving handling fuel and engine servicing, and equipment storage and placement."
-            },
-            {
-              "req_id": "c",
-              "text": "Explain how to winterize a boat motor and tell why this procedure is necessary."
-            },
-            {
-              "req_id": "d",
-              "text": "Explain the safety procedures and precautions involving swimmers and skiers in the water, passenger positions underway, and boat wakes."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "4",
-          "text": "Show you know safety guidelines for motorboating by doing the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Review how each item of the Scouting America Safety Afloat policy applies, including checking the weather prior to and during time on the water, confirming all required equipment is present and functional, and following a float plan."
-            },
-            {
-              "req_id": "b",
-              "text": "Explain the rules or laws that apply to recreational boating in your area or state. Have a permit to operate a motorboat, if required by the laws of your state. Discuss how you would find information regarding the boating laws in different states."
-            },
-            {
-              "req_id": "c",
-              "text": "Discuss how hazards of weather and heavy water conditions can affect safety and performance in motorboating."
-            },
-            {
-              "req_id": "d",
-              "text": "Promise that you will follow Scouting America Safety Afloat guidelines. Explain the meaning of each point."
-            },
-            {
-              "req_id": "e",
-              "text": "Explain and show the correct use of equipment required by both state and federal regulations to be carried aboard a motorboat."
-            },
-            {
-              "req_id": "f",
-              "text": "Explain federal and state rules for a ventilation system, and tell why these rules are required"
-            },
-            {
-              "req_id": "g",
-              "text": "Explain the use of lights (sight signals) and sound signals on motorboats."
-            },
-            {
-              "req_id": "h",
-              "text": "Discuss the common types of anchors used in motorboat-ing and under what conditions each would be preferred. Explain proper anchoring techniques."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "With your counselor or other adults on board, demonstrate proper boat-handling procedures and skills by doing the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Board and assist others in boarding. Confirm that all passengers on board are wearing properly fitted life jackets."
-            },
-            {
-              "req_id": "b",
-              "text": "Fuel the boat and complete a safety check."
-            },
-            {
-              "req_id": "c",
-              "text": "If equipped, attach the engine cut-off switch link and safely start the motor. Get underway from dockside or from a beach launch."
-            },
-            {
-              "req_id": "d",
-              "text": "Run a course for at least a mile, showing procedures for overtaking and passing slower vessels, yielding right-of-way, passing oncoming traffic, making turns, reversing direction, and using navigation aids."
-            },
-            {
-              "req_id": "e",
-              "text": "Stop and secure the boat in position on the open water using anchors. Raise and stow the anchor and get underway."
-            },
-            {
-              "req_id": "f",
-              "text": "Land or dock the boat, disembark, and assist others in doing the same."
-            },
-            {
-              "req_id": "g",
-              "text": "Moor, dock, or beach the boat and secure all gear."
-            },
-            {
-              "req_id": "h",
-              "text": "Demonstrate knots used in boating: cleating hitch, bowline, clove hitch, anchor bend, sheet bend."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "c",
+          "path": "1.c",
+          "text": "Identify the conditions that must exist before performing CPR on a person, and explain how such conditions are recognized. Demonstrate proper technique for performing CPR using a training device approved by your counselor."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Before doing requirement 5, successfully complete the Scouting America swimmer test."
+        },
+        {
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Name the different types of personal flotation devices (PFDs), and explain when each type should be used. Show how to choose and properly fit a PFD."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Explain inboard, outboard, and inboard/outboard motors, and the uses and advantages of each."
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Explain the safety procedures and precautions involving handling fuel and engine servicing, and equipment storage and placement."
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Explain how to winterize a boat motor and tell why this procedure is necessary."
+        },
+        {
+          "req_id": "d",
+          "path": "3.d",
+          "text": "Explain the safety procedures and precautions involving swimmers and skiers in the water, passenger positions underway, and boat wakes."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Show you know safety guidelines for motorboating by doing the follo�;��z\u0002\u001b\u0014",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Review how each item of the Scouting America Safety Afloat policy applies, including checking the weather prior to and during time on the water, confirming all required equipment is present and functional, and following a float plan."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Explain the rules or laws that apply to recreational boating in your area or state. Have a permit to operate a motorboat, if required by the laws of your state. Discuss how you would find information regarding the boating laws in different states."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Discuss how hazards of weather and heavy water conditions can affect safety and performance in motorboating."
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Promise that you will follow Scouting America Safety Afloat guidelines. Explain the meaning of each point."
+        },
+        {
+          "req_id": "e",
+          "path": "4.e",
+          "text": "Explain and show the correct use of equipment required by both state and federal regulations to be carried aboard a motorboat."
+        },
+        {
+          "req_id": "f",
+          "path": "4.f",
+          "text": "Explain federal and state rules for a ventilation system, and tell why these rules are required"
+        },
+        {
+          "req_id": "g",
+          "path": "4.g",
+          "text": "Explain the use of lights (sight signals) and sound signals on motorboats."
+        },
+        {
+          "req_id": "h",
+          "path": "4.h",
+          "text": "Discuss the common types of anchors used in motorboat-ing and under what conditions each would be preferred. Explain proper anchoring techniques."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "With your counselor or other adults on board, demonstrate proper boat-handling procedures and skills by doing the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Board and assist others in boarding. Confirm that all passengers on board are wearing properly fitted life jackets."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Fuel the boat and complete a safety check."
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "If equipped, attach the engine cut-off switch link and safely start the motor. Get underway from dockside or from a beach launch."
+        },
+        {
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Run a course for at least a mile, showing procedures for overtaking and passing slower vessels, yielding right-of-way, passing oncoming traffic, making turns, reversing direction, and using navigation aids."
+        },
+        {
+          "req_id": "e",
+          "path": "5.e",
+          "text": "Stop and secure the boat in position on the open water using anchors. Raise and stow the anchor and get underway."
+        },
+        {
+          "req_id": "f",
+          "path": "5.f",
+          "text": "Land or dock the boat, disembark, and assist others in doing the same."
+        },
+        {
+          "req_id": "g",
+          "path": "5.g",
+          "text": "Moor, dock, or beach the boat and secure all gear."
+        },
+        {
+          "req_id": "h",
+          "path": "5.h",
+          "text": "Demonstrate knots used in boating: cleating hitch, bowline, clove hitch, anchor bend, sheet bend."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
     }
   ]
 }

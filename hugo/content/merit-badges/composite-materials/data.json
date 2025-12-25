@@ -1,203 +1,216 @@
 {
-  "id": "composite-materials",
   "title": "Composite Materials",
   "slug": "composite-materials",
   "url": "https://www.scouting.org/merit-badges/composite-materials/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Composite%20Materials.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain to your counselor the most likely hazards you may encounter while working with composite materials and what you should do to anticipate, mitigate, and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working with composite materials.",
-              "resources": [
-                {
-                  "title": "Fibreglass Safety 101 (video)",
-                  "url": "https://youtu.be/tXmTLRSMZSM"
-                },
-                {
-                  "title": "How to Stay Clean and Safe Working With Fiberglass (video)",
-                  "url": "https://youtu.be/oVBSWJCSK4E"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Explain the precautions that must be taken when handling, storing, and disposing of resins, reinforcements, and other materials used in composites. Include in your discussion the importance of health, safety, and environmental responsibility and awareness.",
-              "resources": [
-                {
-                  "title": "How to Dispose of Epoxy Resin Leftovers and Used Materials (video)",
-                  "url": "https://youtu.be/tVwFisroxrg"
-                },
-                {
-                  "title": "Ultimate Guide to Resin Handling Safety (website)",
-                  "url": "https://allanchem.com/ultimate-guide-to-resin-handling-safety/"
-                }
-              ]
-            },
-            {
-              "req_id": "c",
-              "text": "Describe what a safety data sheet (SDS) is and tell why it is used. Resource: Safety Data Sheets Training (video)",
-              "resources": [
-                {
-                  "title": "Safety Data Sheets Training (video)",
-                  "url": "https://youtu.be/_yWF-w3CwmU"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "2",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain what composite materials are. Include a brief history of composites and how they have developed.",
-              "resources": [
-                {
-                  "title": "Intro to Composites (video)",
-                  "url": "https://youtu.be/WYqCnEvTRUQ?si=4MqVQJIT2aQ-1nsr"
-                },
-                {
-                  "title": "What is a Composite? (video)",
-                  "url": "https://youtu.be/8tEf_X9Rzts?si=El0NGrvMMuSvJ3w7"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Compare the similarities and differences between composites and wood, aluminum, copper, and steel. Describe the physical, electrical, mechanical, corrosive, flammability, cost, and other such properties. For each of these raw materials, give one example of how it can be shaped and used for a specific application. Resource: Properties of Materials (video)",
-              "resources": [
-                {
-                  "title": "Properties of Materials (video)",
-                  "url": "https://youtu.be/XbX4xY1sqQo"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "3",
-          "text": "Describe how composite materials are made. Then do the following: Resource: How Do Composites Work? (video)",
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while working with composite materials and what you should do to anticipate, mitigate, and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working with composite materials.",
           "resources": [
             {
-              "title": "How Do Composites Work? (video)",
-              "url": "https://youtu.be/gYTjC8GIwcU"
-            }
-          ],
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Discuss three different composite reinforcement materials, their positive and negative characteristics, and their uses. Obtain the SDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials. Resource: Introduction to Fibres (video)",
-              "resources": [
-                {
-                  "title": "Introduction to Fibres (video)",
-                  "url": "https://youtu.be/jsAJIMKEoZQ"
-                }
-              ]
+              "title": "Fibreglass Safety 101 (video)",
+              "url": "https://youtu.be/tXmTLRSMZSM"
             },
             {
-              "req_id": "b",
-              "text": "Discuss three different resins used in composites, their positive and negative characteristics, and their uses. Obtain the SDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials. Include thermoset resins and thermoplastic resins in your discussion. Resource: Introduction to Matrix Materials (video)",
-              "resources": [
-                {
-                  "title": "Introduction to Matrix Materials (video)",
-                  "url": "https://youtu.be/yQo4ucV3jfA"
-                }
-              ]
-            },
-            {
-              "req_id": "c",
-              "text": "For each of the three resins you chose for requirement 3(b), think of a new application that might be worth developing."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "4",
-          "text": "With your parent or guardian's permission and your counselor's approval do ONE of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Visit a company that manufactures or repairs products made with composites. Discuss what you learn with your counselor."
-            },
-            {
-              "req_id": "b",
-              "text": "Find three composites-related websites. Share and discuss what you learn with your counselor."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "Do the following:",
-          "resources": [
-            {
-              "title": "STEM Flix™ - Fun with Composite Materials with Science Bob (video)",
-              "url": "https://youtu.be/Ry7_Yuo-FYM?si=VwPF2eUQYD3FSvbz"
-            },
-            {
-              "title": "How to Dispose of Epoxy Resin Leftovers and Used Materials (video)",
-              "url": "https://youtu.be/vxKlbik4QjM?si=5lLZ-vLZFHDSm_As"
-            },
-            {
-              "title": "How to Hand Lay Up a Carbon Fibre Skateboard (video)",
-              "url": "https://youtu.be/scvXKij1hQ0"
-            }
-          ],
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Use composite materials to complete two projects, at least one of which must come from the Composite Materials merit badge pamphlet. The second project may come from the pamphlet OR may be one you select on your own that has been approved by your counselor in advance."
-            },
-            {
-              "req_id": "b",
-              "text": "With your counselor's assistance, find an appropriate site where the projects can be safely completed under your counselor's supervision and/or the supervision of an adult approved by your counselor who is knowledgeable about composites."
-            },
-            {
-              "req_id": "c",
-              "text": "With your counselor, determine how the finished projects will be evaluated. Using those guidelines, evaluate the completed projects with your counselor."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "6",
-          "text": "Find out about three career opportunities in composite materials. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
-          "resources": [
-            {
-              "title": "Materials Engineer - Careers in Science and Engineering (video)",
-              "url": "https://youtu.be/DtosXFgP7C4"
-            },
-            {
-              "title": "Materials Science - a Building Block for the Future of Aerospace Technologies (video)",
-              "url": "https://youtu.be/c0EXAuWkMqA"
-            },
-            {
-              "title": "My Job in F1: Rachel, Materials Science Engineer (video)",
-              "url": "https://youtu.be/j_xotv7npsQ"
+              "title": "How to Stay Clean and Safe Working With Fiberglass (video)",
+              "url": "https://youtu.be/oVBSWJCSK4E"
             }
           ]
+        },
+        {
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Explain the precautions that must be taken when handling, storing, and disposing of resins, reinforcements, and other materials used in composites. Include in your discussion the importance of health, safety, and environmental responsibility and awareness.",
+          "resources": [
+            {
+              "title": "How to Dispose of Epoxy Resin Leftovers and Used Materials (video)",
+              "url": "https://youtu.be/tVwFisroxrg"
+            },
+            {
+              "title": "Ultimate Guide to Resin Handling Safety (website)",
+              "url": "https://allanchem.com/ultimate-guide-to-resin-handling-safety/"
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "1.c",
+          "text": "Describe what a safety data sheet (SDS) is and tell why it is used. Resource: Safety Data Sheets Training (video)",
+          "resources": [
+            {
+              "title": "Safety Data Sheets Training (video)",
+              "url": "https://youtu.be/_yWF-w3CwmU"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Explain what composite materials are. Include a brief history of composites and how they have developed.",
+          "resources": [
+            {
+              "title": "Intro to Composites (video)",
+              "url": "https://youtu.be/WYqCnEvTRUQ?si=4MqVQJIT2aQ-1nsr"
+            },
+            {
+              "title": "What is a Composite? (video)",
+              "url": "https://youtu.be/8tEf_X9Rzts?si=El0NGrvMMuSvJ3w7"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Compare the similarities and differences between composites and wood, aluminum, copper, and steel. Describe the physical, electrical, mechanical, corrosive, flammability, cost, and other such properties. For each of these raw materials, give one example of how it can be shaped and used for a specific application. Resource: Properties of Materials (video)",
+          "resources": [
+            {
+              "title": "Properties of Materials (video)",
+              "url": "https://youtu.be/XbX4xY1sqQo"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Describe how composite materials are made. Then do the following: Resource: How Do Composites Work? (video)",
+      "resources": [
+        {
+          "title": "How Do Composites Work? (video)",
+          "url": "https://youtu.be/gYTjC8GIwcU"
+        }
+      ],
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Discuss three different composite reinforcement materials, their positive and negative characteristics, and their uses. Obtain the SDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials. Resource: Introduction to Fibres (video)",
+          "resources": [
+            {
+              "title": "Introduction to Fibres (video)",
+              "url": "https://youtu.be/jsAJIMKEoZQ"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Discuss three different resins used in composites, their positive and negative characteristics, and their uses. Obtain the SDS for each one and discuss the toxicity, disposal, and safe-handling sections for these materials. Include thermoset resins and thermoplastic resins in your discussion. Resource: Introduction to Matrix Materials (video)",
+          "resources": [
+            {
+              "title": "Introduction to Matrix Materials (video)",
+              "url": "https://youtu.be/yQo4ucV3jfA"
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "For each of the three resins you chose for requirement 3(b), think of a new application that might be worth developing."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "With your parent or guardian's permission and your counselor's approval do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Visit a company that manufactures or repairs products made with composites. Discuss what you learn with your counselor."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Find three composites-related websites. Share and discuss what you learn with your counselor."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Do the following:",
+      "resources": [
+        {
+          "title": "STEM Flix™ - Fun with Composite Materials with Science Bob (video)",
+          "url": "https://youtu.be/Ry7_Yuo-FYM?si=VwPF2eUQYD3FSvbz"
+        },
+        {
+          "title": "How to Dispose of Epoxy Resin Leftovers and Used Materials (video)",
+          "url": "https://youtu.be/vxKlbik4QjM?si=5lLZ-vLZFHDSm_As"
+        },
+        {
+          "title": "How to Hand Lay Up a Carbon Fibre Skateboard (video)",
+          "url": "https://youtu.be/scvXKij1hQ0"
+        }
+      ],
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Use composite materials to complete two projects, at least one of which must come from the Composite Materials merit badge pamphlet. The second project may come from the pamphlet OR may be one you select on your own that has been approved by your counselor in advance."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "With your counselor's assistance, find an appropriate site where the projects can be safely completed under your counselor's supervision and/or the supervision of an adult approved by your counselor who is knowledgeable about composites."
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "With your counselor, determine how the finished projects will be evaluated. Using those guidelines, evaluate the completed projects with your counselor."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Find out about three career opportunities in composite materials. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
+      "resources": [
+        {
+          "title": "Materials Engineer - Careers in Science and Engineering (video)",
+          "url": "https://youtu.be/DtosXFgP7C4"
+        },
+        {
+          "title": "Materials Science - a Building Block for the Future of Aerospace Technologies (video)",
+          "url": "https://youtu.be/c0EXAuWkMqA"
+        },
+        {
+          "title": "My Job in F1: Rachel, Materials Science Engineer (video)",
+          "url": "https://youtu.be/j_xotv7npsQ"
         }
       ]
     }

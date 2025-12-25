@@ -1,61 +1,65 @@
 {
-  "id": "american-cultures",
   "title": "American Cultures",
   "slug": "american-cultures",
   "url": "https://www.scouting.org/merit-badges/american-cultures/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Cultures.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do TWO of the following, choosing a different group for each:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do TWO of the following, choosing a different group for each:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Go to a festival, celebration, or other event identified with one of the groups. Report on what you see and learn."
-            },
-            {
-              "req_id": "b",
-              "text": "Go to a place of worship, school, or other institution identified with one of the groups. Report on what you see and learn."
-            },
-            {
-              "req_id": "c",
-              "text": "Talk with a person from one of the groups about the heritage and traditions of the group. Report on what you learn."
-            },
-            {
-              "req_id": "d",
-              "text": "Learn a song, dance, poem, or story that is traditional to one group, and teach it to a group of your friends."
-            },
-            {
-              "req_id": "e",
-              "text": "Go to a library or museum to see a program or exhibit featuring one group's traditions. Report on what you see and learn."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 2
-          }
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Go to a festival, celebration, or other event identified with one of the groups. Report on what you see and learn."
         },
         {
-          "req_id": "2",
-          "text": "Imagine that one of the groups had always lived alone in a city or country to which no other groups ever came. Tell what you think the city or country might be like today. Now tell what you think it might be like if the three groups you chose lived there at the same time."
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Go to a place of worship, school, or other institution identified with one of the groups. Report on what you see and learn."
         },
         {
-          "req_id": "3",
-          "text": "Tell about some differences between the religious and social customs of the three groups. Tell about some ideas or ways of doing things that are similar in the three groups."
+          "req_id": "c",
+          "path": "1.c",
+          "text": "Talk with a person from one of the groups about the heritage and traditions of the group. Report on what you learn."
         },
         {
-          "req_id": "4",
-          "text": "Tell about a contribution made to our country by three different people, each from a different racial, ethnic, or religious background."
+          "req_id": "d",
+          "path": "1.d",
+          "text": "Learn a song, dance, poem, or story that is traditional to one group, and teach it to a group of your friends."
         },
         {
-          "req_id": "5",
-          "text": "Give a talk to your Scout unit or class at school on how people from different groups have gotten along together. Lead a discussion on what can be done to help various groups understand one another better."
+          "req_id": "e",
+          "path": "1.e",
+          "text": "Go to a library or museum to see a program or exhibit featuring one group's traditions. Report on what you see and learn."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 2
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Imagine that one of the groups had always lived alone in a city or country to which no other groups ever came. Tell what you think the city or country might be like today. Now tell what you think it might be like if the three groups you chose lived there at the same time."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Tell about some differences between the religious and social customs of the three groups. Tell about some ideas or ways of doing things that are similar in the three groups."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Tell about a contribution made to our country by three different people, each from a different racial, ethnic, or religious background."
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Give a talk to your Scout unit or class at school on how people from different groups have gotten along together. Lead a discussion on what can be done to help various groups understand one another better."
     }
   ]
 }

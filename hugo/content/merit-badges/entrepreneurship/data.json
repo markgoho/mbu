@@ -1,138 +1,159 @@
 {
-  "id": "entrepreneurship",
   "title": "Entrepreneurship",
   "slug": "entrepreneurship",
   "url": "https://www.scouting.org/merit-badges/entrepreneurship/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Entrepreneurship.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "In your own words, define entrepreneurship. Explain to your counselor how entrepreneurs impact the U.S. economy."
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Explain to your counselor why having good skills in the following areas are important for an entrepreneur: communication, planning, organization, problem solving, decision making, basic math, adaptability, technical and social skills, teamwork, and leadership."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Identify and interview an individual who has started a business. Learn about this person's educational background, early work experiences, where the idea for the business came from, and what was involved in starting the business. Find out how the entrepreneur raised the capital (money) to start the business, examples of successes and challenges faced, and how the business is currently doing (if applicable). Discuss with your counselor what you have learned."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Think of as many ideas for a business as you can, and write them down. From your list, select three ideas you believe represent the best opportunities. Choose one of these and explain to your counselor why you selected it and why you feel it can be successful."
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Create a written business plan for your idea that includes all of the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "In your own words, define entrepreneurship. Explain to your counselor how entrepreneurs impact the U.S. economy."
-        },
-        {
-          "req_id": "2",
-          "text": "Explain to your counselor why having good skills in the following areas are important for an entrepreneur: communication, planning, organization, problem solving, decision making, basic math, adaptability, technical and social skills, teamwork, and leadership."
-        },
-        {
-          "req_id": "3",
-          "text": "Identify and interview an individual who has started a business. Learn about this person's educational background, early work experiences, where the idea for the business came from, and what was involved in starting the business. Find out how the entrepreneur raised the capital (money) to start the business, examples of successes and challenges faced, and how the business is currently doing (if applicable). Discuss with your counselor what you have learned."
-        },
-        {
-          "req_id": "4",
-          "text": "Think of as many ideas for a business as you can, and write them down. From your list, select three ideas you believe represent the best opportunities. Choose one of these and explain to your counselor why you selected it and why you feel it can be successful."
-        },
-        {
-          "req_id": "5",
-          "text": "Create a written business plan for your idea that includes all of the following:",
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Product or Service",
           "subrequirements": [
             {
-              "req_id": "a",
-              "text": "Product or Service",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Describe the product or service to be offered."
-                },
-                {
-                  "req_id": "2",
-                  "text": "Identify goals for your business."
-                },
-                {
-                  "req_id": "3",
-                  "text": "Explain how you can make enough of the product or perform the service to meet your goals."
-                },
-                {
-                  "req_id": "4",
-                  "text": "Identify and describe the potential liability risks for your product or service."
-                },
-                {
-                  "req_id": "5",
-                  "text": "Determine what type of license, if any, you might need in order to sell or make your product or service."
-                }
-              ]
+              "req_id": "1",
+              "path": "5.a.1",
+              "text": "Describe the product or service to be offered."
             },
             {
-              "req_id": "b",
-              "text": "Market Analysis",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Identify the types of people who would buy your product or service."
-                },
-                {
-                  "req_id": "2",
-                  "text": "Identify your business's competitors, and describe their strengths and weaknesses."
-                },
-                {
-                  "req_id": "3",
-                  "text": "Describe what makes your product or service unique."
-                }
-              ]
+              "req_id": "2",
+              "path": "5.a.2",
+              "text": "Identify goals for your business."
             },
             {
-              "req_id": "c",
-              "text": "Financial",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Determine how much money you will need to start your business, and identify how you will obtain the money."
-                },
-                {
-                  "req_id": "2",
-                  "text": "Determine the cost of offering your product or service and the price you will charge in order to make a profit."
-                },
-                {
-                  "req_id": "3",
-                  "text": "Describe what will happen with the money you make from the sales of your product or service."
-                }
-              ]
+              "req_id": "3",
+              "path": "5.a.3",
+              "text": "Explain how you can make enough of the product or perform the service to meet your goals."
             },
             {
-              "req_id": "d",
-              "text": "Personnel",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Determine what parts of the business you will handle yourself, and describe your qualifications."
-                },
-                {
-                  "req_id": "2",
-                  "text": "Determine whether you will need additional help to operate your business. If you will need help, describe the responsibilities and qualifications needed for the personnel who will fill each role."
-                }
-              ]
+              "req_id": "4",
+              "path": "5.a.4",
+              "text": "Identify and describe the potential liability risks for your product or service."
             },
             {
-              "req_id": "e",
-              "text": "Promotion and Marketing",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Describe the methods you will use to promote your business to potential customers."
-                },
-                {
-                  "req_id": "2",
-                  "text": "Explain how you will utilize the internet and social media to increase awareness of your product or service."
-                },
-                {
-                  "req_id": "3",
-                  "text": "Design a promotional flyer or poster for your product or service."
-                }
-              ]
+              "req_id": "5",
+              "path": "5.a.5",
+              "text": "Determine what type of license, if any, you might need in order to sell or make your product or service."
             }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          ]
         },
         {
-          "req_id": "6",
-          "text": "When you believe your business idea is feasible, imagine your business idea is now up and running. What successes and problems might you experience? How would you overcome any failures? Discuss with your counselor any ethical questions you might face and how you would deal with them."
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Market Analysis",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "5.b.1",
+              "text": "Identify the types of people who would buy your product or service."
+            },
+            {
+              "req_id": "2",
+              "path": "5.b.2",
+              "text": "Identify your business's competitors, and describe their strengths and weaknesses."
+            },
+            {
+              "req_id": "3",
+              "path": "5.b.3",
+              "text": "Describe what makes your product or service unique."
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Financial",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "5.c.1",
+              "text": "Determine how much money you will need to start your business, and identify how you will obtain the money."
+            },
+            {
+              "req_id": "2",
+              "path": "5.c.2",
+              "text": "Determine the cost of offering your product or service and the price you will charge in order to make a profit."
+            },
+            {
+              "req_id": "3",
+              "path": "5.c.3",
+              "text": "Describe what will happen with the money you make from the sales of your product or service."
+            }
+          ]
+        },
+        {
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Personnel",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "5.d.1",
+              "text": "Determine what parts of the business you will handle yourself, and describe your qualifications."
+            },
+            {
+              "req_id": "2",
+              "path": "5.d.2",
+              "text": "Determine whether you will need additional help to operate your business. If you will need help, describe the responsibilities and qualifications needed for the personnel who will fill each role."
+            }
+          ]
+        },
+        {
+          "req_id": "e",
+          "path": "5.e",
+          "text": "Promotion and Marketing",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "5.e.1",
+              "text": "Describe the methods you will use to promote your business to potential customers."
+            },
+            {
+              "req_id": "2",
+              "path": "5.e.2",
+              "text": "Explain how you will utilize the internet and social media to increase awareness of your product or service."
+            },
+            {
+              "req_id": "3",
+              "path": "5.e.3",
+              "text": "Design a promotional flyer or poster for your product or service."
+            }
+          ]
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "When you believe your business idea is feasible, imagine your business idea is now up and running. What successes and problems might you experience? How would you overcome any failures? Discuss with your counselor any ethical questions you might face and how you would deal with them."
     }
   ]
 }

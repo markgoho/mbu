@@ -1,187 +1,215 @@
 {
-  "id": "energy",
   "title": "Energy",
   "slug": "energy",
   "url": "https://www.scouting.org/merit-badges/energy/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Energy.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "With your parent or guardian's permission, use the internet to find a blog, podcast, website, or an article on the use or conservation of energy. Discuss with your counselor what details in the article were interesting to you, the questions it raises, and what ideas it addresses that you do not understand."
-            },
-            {
-              "req_id": "b",
-              "text": "After you have completed requirements 2 through 8, revisit your source for requirement 1(a). Explain to your counselor what you have learned in completing the requirements that helps you better understand the article."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "a",
+          "path": "1.a",
+          "text": "With your parent or guardian's permission, use the internet to find a blog, podcast, website, or an article on the use or conservation of energy. Discuss with your counselor what details in the article were interesting to you, the questions it raises, and what ideas it addresses that you do not understand."
         },
         {
-          "req_id": "2",
-          "text": "Show you understand energy forms and conversions by doing the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain how THREE of the following devices use energy, and explain their energy conversions: toaster, greenhouse, lightbulb, bow drill, cell phone, nuclear reactor, sauna, or electric vehicles."
-            },
-            {
-              "req_id": "b",
-              "text": "Construct a system that makes at least two energy conversions and explain this to your counselor."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "3",
-          "text": "Show you understand energy efficiency by explaining to your counselor a common example of a situation where energy moves through a system to produce a useful result. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Identify the parts of the system that are affected by the energy movement."
-            },
-            {
-              "req_id": "b",
-              "text": "Name the system's primary source of energy."
-            },
-            {
-              "req_id": "c",
-              "text": "Identify the useful outcomes of the system."
-            },
-            {
-              "req_id": "d",
-              "text": "Identify the energy losses of the system."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "4",
-          "text": "Conduct an energy audit of your home. Keep a 14 day log that records what you and your family did to reduce energy use. Include the following in your report and, after the 14-day period, discuss what you have learned with your counselor.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "List the types of energy used in your home such as electricity, wood, oil, liquid petroleum, and natural gas, and tell how each is delivered and measured, and the current cost; OR record the transportation fuel used, miles driven, miles per gallon, and trips using your family car or another vehicle."
-            },
-            {
-              "req_id": "b",
-              "text": "Describe ways you and your family can use energy resources more wisely. In preparing your discussion, consider the energy required for the things you do and use on a daily basis (cooking, showering, using lights, driving, watching TV, using the computer). Explain what is meant by sustainable energy sources. Explain how you can change your energy use through reuse and recycling."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "In a notebook, identify and describe five examples of energy waste in your school or community. Suggest in each case possible ways to reduce this waste. Describe the idea of trade-offs in energy use. In your response, do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain how the changes you suggest would lower costs, reduce pollution, or otherwise improve your community."
-            },
-            {
-              "req_id": "b",
-              "text": "Explain what changes to routines, habits, or convenience are necessary to reduce energy waste. Tell why people might resist the changes you suggest."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "6",
-          "text": "Prepare pie charts showing the following information, and explain to your counselor the important ideas each chart reveals. Tell where you got your information. Explain how cost affects the use of a nonrenewable energy resource and makes alternatives practical.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "The energy resources that supply the United States with most of its energy"
-            },
-            {
-              "req_id": "b",
-              "text": "The share of energy resources used by the United States that comes from other countries"
-            },
-            {
-              "req_id": "c",
-              "text": "The proportion of energy resources used by homes, businesses, industry, and transportation"
-            },
-            {
-              "req_id": "d",
-              "text": "The fuels used to generate America's electricity"
-            },
-            {
-              "req_id": "e",
-              "text": "The world's known and estimated primary energy resource reserves."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "7",
-          "text": "Tell what is being done to make FIVE of the following energy systems produce more usable energy. In your explanation, describe the technology, cost, environmental impacts, and safety concerns.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Biomass digesters or waste-to-energy plants"
-            },
-            {
-              "req_id": "b",
-              "text": "Cogeneration plants"
-            },
-            {
-              "req_id": "c",
-              "text": "Fossil fuel power plants"
-            },
-            {
-              "req_id": "d",
-              "text": "Fuel cells"
-            },
-            {
-              "req_id": "e",
-              "text": "Geothermal power plants"
-            },
-            {
-              "req_id": "f",
-              "text": "Nuclear power plants"
-            },
-            {
-              "req_id": "g",
-              "text": "Solar power systems"
-            },
-            {
-              "req_id": "h",
-              "text": "Tidal energy, wave energy, or ocean thermal energy conversion devices"
-            },
-            {
-              "req_id": "i",
-              "text": "Wind turbines."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 5
-          }
-        },
-        {
-          "req_id": "8",
-          "text": "Identify three career opportunities that would use skills and knowledge in energy. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+          "req_id": "b",
+          "path": "1.b",
+          "text": "After you have completed requirements 2 through 8, revisit your source for requirement 1(a). Explain to your counselor what you have learned in completing the requirements that helps you better understand the article."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Show you understand energy forms and conversions by doing the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Explain how THREE of the following devices use energy, and explain their energy conversions: toaster, greenhouse, lightbulb, bow drill, cell phone, nuclear reactor, sauna, or electric vehicles."
+        },
+        {
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Construct a system that makes at least two energy conversions and explain this to your counselor."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Show you understand energy efficiency by explaining to your counselor a common example of a situation where energy moves through a system to produce a useful result. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Identify the parts of the system that are affected by the energy movement."
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Name the system's primary source of energy."
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Identify the useful outcomes of the system."
+        },
+        {
+          "req_id": "d",
+          "path": "3.d",
+          "text": "Identify the energy losses of the system."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Conduct an energy audit of your home. Keep a 14 day log that records what you and your family did to reduce energy use. Include the following in your report and, after the 14-day period, discuss what you have learned with your counselor.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "List the types of energy used in your home such as electricity, wood, oil, liquid petroleum, and natural gas, and tell how each is delivered and measured, and the current cost; OR record the transportation fuel used, miles driven, miles per gallon, and trips using your family car or another vehicle."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Describe ways you and your family can use energy resources more wisely. In preparing your discussion, consider the energy required for the things you do and use on a daily basis (cooking, showering, using lights, driving, watching TV, using the computer). Explain what is meant by sustainable energy sources. Explain how you can change your energy use through reuse and recycling."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "In a notebook, identify and describe five examples of energy waste in your school or community. Suggest in each case possible ways to reduce this waste. Describe the idea of trade-offs in energy use. In your response, do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Explain how the changes you suggest would lower costs, reduce pollution, or otherwise improve your community."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Explain what changes to routines, habits, or convenience are necessary to reduce energy waste. Tell why people might resist the changes you suggest."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Prepare pie charts showing the following information, and explain to your counselor the important ideas each chart reveals. Tell where you got your information. Explain how cost affects the use of a nonrenewable energy resource and makes alternatives practical.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "6.a",
+          "text": "The energy resources that supply the United States with most of its energy"
+        },
+        {
+          "req_id": "b",
+          "path": "6.b",
+          "text": "The share of energy resources used by the United States that comes from other countries"
+        },
+        {
+          "req_id": "c",
+          "path": "6.c",
+          "text": "The proportion of energy resources used by homes, businesses, industry, and transportation"
+        },
+        {
+          "req_id": "d",
+          "path": "6.d",
+          "text": "The fuels used to generate America's electricity"
+        },
+        {
+          "req_id": "e",
+          "path": "6.e",
+          "text": "The world's known and estimated primary energy resource reserves."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Tell what is being done to make FIVE of the following energy systems produce more usable energy. In your explanation, describe the technology, cost, environmental impacts, and safety concerns.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Biomass digesters or waste-to-energy plants"
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Cogeneration plants"
+        },
+        {
+          "req_id": "c",
+          "path": "7.c",
+          "text": "Fossil fuel power plants"
+        },
+        {
+          "req_id": "d",
+          "path": "7.d",
+          "text": "Fuel cells"
+        },
+        {
+          "req_id": "e",
+          "path": "7.e",
+          "text": "Geothermal power plants"
+        },
+        {
+          "req_id": "f",
+          "path": "7.f",
+          "text": "Nuclear power plants"
+        },
+        {
+          "req_id": "g",
+          "path": "7.g",
+          "text": "Solar power systems"
+        },
+        {
+          "req_id": "h",
+          "path": "7.h",
+          "text": "Tidal energy, wave energy, or ocean thermal energy conversion devices"
+        },
+        {
+          "req_id": "i",
+          "path": "7.i",
+          "text": "Wind turbines."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 5
+      }
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Identify three career opportunities that would use skills and knowledge in energy. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
   ]
 }

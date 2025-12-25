@@ -1,150 +1,173 @@
 {
-  "id": "disabilities-awareness",
   "title": "Disabilities Awareness",
   "slug": "disabilities-awareness",
   "url": "https://www.scouting.org/merit-badges/disabilities-awareness/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Disabilities%20Awareness.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain and discuss with your counselor the following disabilities awareness terms: disability, accessibility, adaptation, accommodation, invisible disability, and person-first language."
+        },
+        {
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Explain why proper disability etiquette is important, and how it may differ depending on the specific disability. Give three examples."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Visit an agency that works with people with physical, mental, emotional, or educational disabilities. Collect and read information about the agency's activities. Learn about opportunities its members have for training, employment, and education. Discuss what you have learned with your counselor."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Do TWO of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Talk with a Scout who has a disability and learn about the Scout's experiences taking part in Scouting activities and earning different merit badges. Discuss what you have learned with your counselor."
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Talk with an individual who has a disability and learn about this person's experiences and the activities in which this person likes to participate. Discuss what you have learned with your counselor."
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Learn how people with disabilities take part in a particular adaptive sport or recreational activity. Discuss what you have learned with your counselor."
+        },
+        {
+          "req_id": "d",
+          "path": "3.d",
+          "text": "Learn about independent living aids such as service animals, canes, and augmentative communication devices such as captioned telephones and videophones. Discuss with your counselor how people use such aids."
+        },
+        {
+          "req_id": "e",
+          "path": "3.e",
+          "text": "Plan or participate in an activity that helps others understand what a person with a visible or invisible disability experiences. Discuss what you have learned with your counselor."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 2
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Do ONE of the following options:",
+      "subrequirements": [
+        {
+          "req_id": "option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor",
+          "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor",
+          "text": "Option A. Visit TWO of the following locations and take notes about the accessibility to people with disabilities. In your notes, give examples of five things that could be done to improve upon the site and five things about the site that make it friendly to people with disabilities. Discuss your observations with your counselor.",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "text": "Explain and discuss with your counselor the following disabilities awareness terms: disability, accessibility, adaptation, accommodation, invisible disability, and person-first language."
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.a",
+              "text": "Your school"
             },
             {
               "req_id": "b",
-              "text": "Explain why proper disability etiquette is important, and how it may differ depending on the specific disability. Give three examples."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "2",
-          "text": "Visit an agency that works with people with physical, mental, emotional, or educational disabilities. Collect and read information about the agency's activities. Learn about opportunities its members have for training, employment, and education. Discuss what you have learned with your counselor."
-        },
-        {
-          "req_id": "3",
-          "text": "Do TWO of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Talk with a Scout who has a disability and learn about the Scout's experiences taking part in Scouting activities and earning different merit badges. Discuss what you have learned with your counselor."
-            },
-            {
-              "req_id": "b",
-              "text": "Talk with an individual who has a disability and learn about this person's experiences and the activities in which this person likes to participate. Discuss what you have learned with your counselor."
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.b",
+              "text": "Your place of worship"
             },
             {
               "req_id": "c",
-              "text": "Learn how people with disabilities take part in a particular adaptive sport or recreational activity. Discuss what you have learned with your counselor."
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.c",
+              "text": "A Scouting event or campsite"
             },
             {
               "req_id": "d",
-              "text": "Learn about independent living aids such as service animals, canes, and augmentative communication devices such as captioned telephones and videophones. Discuss with your counselor how people use such aids."
-            },
-            {
-              "req_id": "e",
-              "text": "Plan or participate in an activity that helps others understand what a person with a visible or invisible disability experiences. Discuss what you have learned with your counselor."
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.d",
+              "text": "A public exhibit or attraction (such as a theater, museum, or park)."
             }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 2
-          }
+          ]
         },
         {
-          "req_id": "4",
-          "text": "Do ONE of the following options:",
-          "subrequirements": [
-            {
-              "req_id": "option1",
-              "text": "Option A. Visit TWO of the following locations and take notes about the accessibility to people with disabilities. In your notes, give examples of five things that could be done to improve upon the site and five things about the site that make it friendly to people with disabilities. Discuss your observations with your counselor.",
-              "subrequirements": [
-                {
-                  "req_id": "a",
-                  "text": "Your school"
-                },
-                {
-                  "req_id": "b",
-                  "text": "Your place of worship"
-                },
-                {
-                  "req_id": "c",
-                  "text": "A Scouting event or campsite"
-                },
-                {
-                  "req_id": "d",
-                  "text": "A public exhibit or attraction (such as a theater, museum, or park)."
-                }
-              ]
-            },
-            {
-              "req_id": "option2",
-              "text": "Option B. Visit TWO of the following locations and take notes while observing features and methods that are used to accommodate people with invisible disabilities. While there, ask staff members to explain any accommodation features that may not be obvious. Note anything you think could be done to better accommodate people who have invisible disabilities. Discuss your observations with your counselor.",
-              "subrequirements": [
-                {
-                  "req_id": "a",
-                  "text": "Your school"
-                },
-                {
-                  "req_id": "b",
-                  "text": "Your place of worship"
-                },
-                {
-                  "req_id": "c",
-                  "text": "A Scouting event or campsite"
-                },
-                {
-                  "req_id": "d",
-                  "text": "A public exhibit or attraction (such as a theater, museum, or park)."
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "Explain what advocacy is. Do ONE of the following:",
+          "req_id": "option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor",
+          "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor",
+          "text": "Option B. Visit TWO of the following locations and take notes while observing features and methods that are used to accommodate people with invisible disabilities. While there, ask staff members to explain any accommodation features that may not be obvious. Note anything you think could be done to better accommodate people who have invisible disabilities. Discuss your observations with your counselor.",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "text": "Present a counselor-approved disabilities awareness program to a Cub Scout pack or other group. During your presentation, explain and use person-first language."
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.a",
+              "text": "Your school"
             },
             {
               "req_id": "b",
-              "text": "Find out about disabilities awareness education programs in your school or school system, or contact a disability advocacy agency. Volunteer with a program or agency for eight hours"
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.b",
+              "text": "Your place of worship"
             },
             {
               "req_id": "c",
-              "text": "Using resources such as disability advocacy agencies, government agencies, the internet (with your parent or guardian's permission), and news magazines, learn about myths and misconceptions that influence the general public's understanding of people with disabilities. List 10 myths and misconceptions about people with disabilities and learn the facts about each myth. Share your list with your counselor, then use it to make a presentation to a Cub Scout pack or other group."
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.c",
+              "text": "A Scouting event or campsite"
+            },
+            {
+              "req_id": "d",
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.d",
+              "text": "A public exhibit or attraction (such as a theater, museum, or park)."
             }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
-        },
-        {
-          "req_id": "6",
-          "text": "Make a commitment to your counselor describing what you will do to show a positive attitude about and toward people with disabilities and to encourage positive attitudes among others. Discuss how your awareness has changed as a result of what you have learned."
-        },
-        {
-          "req_id": "7",
-          "text": "Name five professions that provide services to people with disabilities. Pick one that interests you and find out the education, training, and experience required for this profession. Discuss what you learn with your counselor, and tell why this profession interests you."
+          ]
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Explain what advocacy is. Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Present a counselor-approved disabilities awareness program to a Cub Scout pack or other group. During your presentation, explain and use person-first language."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Find out about disabilities awareness education programs in your school or school system, or contact a disability advocacy agency. Volunteer with a program or agency for eight hours"
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Using resources such as disability advocacy agencies, government agencies, the internet (with your parent or guardian's permission), and news magazines, learn about myths and misconceptions that influence the general public's understanding of people with disabilities. List 10 myths and misconceptions about people with disabilities and learn the facts about each myth. Share your list with your counselor, then use it to make a presentation to a Cub Scout pack or other group."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Make a commitment to your counselor describing what you will do to show a positive attitude about and toward people with disabilities and to encourage positive attitudes among others. Discuss how your awareness has changed as a result of what you have learned."
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Name five professions that provide services to people with disabilities. Pick one that interests you and find out the education, training, and experience required for this profession. Discuss what you learn with your counselor, and tell why this profession interests you."
     }
   ]
 }

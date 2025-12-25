@@ -1,131 +1,149 @@
 {
-  "id": "truck-transportation",
   "title": "Truck Transportation",
   "slug": "truck-transportation",
   "url": "https://www.scouting.org/merit-badges/truck-transportation/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Truck%20Transportation.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "List the major truck lines serving your town."
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "List the major truck lines serving your town."
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Describe the role of truck transportation within commerce (the movement of goods, funds, and information)."
         },
         {
-          "req_id": "2",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Describe the role of truck transportation within commerce (the movement of goods, funds, and information)."
-            },
-            {
-              "req_id": "b",
-              "text": "Describe how trucks fit into a company's supply chain. This could be a manufacturer, importer, wholesaler, or retailer."
-            },
-            {
-              "req_id": "c",
-              "text": "On paper, map out how goods that are manufactured overseas are transported to a retailer in this country."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Describe how trucks fit into a company's supply chain. This could be a manufacturer, importer, wholesaler, or retailer."
         },
         {
-          "req_id": "3",
-          "text": "Describe the difference between the gasoline engine and the diesel engine that power trucks. List the advantages of each."
-        },
-        {
-          "req_id": "4",
-          "text": "Visit a truck terminal and complete items 4(a) through 4(e). After your visit, share what you have learned with your counselor.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Find out what kind of maintenance program the company follows to help keep its fleet, drivers, and the roadway safe."
-            },
-            {
-              "req_id": "b",
-              "text": "Find out how dispatchers maintain communication with drivers on the road."
-            },
-            {
-              "req_id": "c",
-              "text": "Talk with a professional truck driver about safety. Learn about the truck driver's rules of the road for safe driving. List five safe-driving rules every professional truck driver must follow."
-            },
-            {
-              "req_id": "d",
-              "text": "Review the driver's log and find out what kind of information the log contains."
-            },
-            {
-              "req_id": "e",
-              "text": "Learn about important federal regulations that help ensure public safety."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Outline the general organization of a trucking company. Describe what each department does."
-            },
-            {
-              "req_id": "b",
-              "text": "List five positions with trucking companies and describe each one."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "6",
-          "text": "Name five government agencies that work closely with the trucking industry. Describe their role."
-        },
-        {
-          "req_id": "7",
-          "text": "List five different kinds of trucks. Tell the service each provides."
-        },
-        {
-          "req_id": "8",
-          "text": "Assume that you are going to ship by truck 500 pounds of goods (freight class 65) from your town to another town 500 miles away. Your shipment must arrive within three days. Explain in writing:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "How to prepare the shipment"
-            },
-            {
-              "req_id": "b",
-              "text": "How to compare at least three carriers for time in transit and rates"
-            },
-            {
-              "req_id": "c",
-              "text": "How to choose which carrier to use"
-            },
-            {
-              "req_id": "d",
-              "text": "How to insure the shipment for damages."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "9",
-          "text": "Explain the following terms: bill of lading, ETA, logbook, intermodal, containers, tariff, shippers, carrier, consignee, drayage, and cartage."
-        },
-        {
-          "req_id": "10",
-          "text": "Learn about opportunities in the field of truck transportation. Choose one career in which you are interested and discuss with your counselor the major responsibilities of that position and the qualifications, education, and training such a position requires."
+          "req_id": "c",
+          "path": "2.c",
+          "text": "On paper, map out how goods that are manufactured overseas are transported to a retailer in this country."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Describe the difference between the gasoline engine and the diesel engine that power trucks. List the advantages of each."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Visit a truck terminal and complete items 4(a) through 4(e). After your visit, share what you have learned with your counselor.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Find out what kind of maintenance program the company follows to help keep its fleet, drivers, and the roadway safe."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Find out how dispatchers maintain communication with drivers on the road."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Talk with a professional truck driver about safety. Learn about the truck driver's rules of the road for safe driving. List five safe-driving rules every professional truck driver must follow."
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Review the driver's log and find out what kind of information the log contains."
+        },
+        {
+          "req_id": "e",
+          "path": "4.e",
+          "text": "Learn about important federal regulations that help ensure public safety."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Outline the general organization of a trucking company. Describe what each department does."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "List five positions with trucking companies and describe each one."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Name five government agencies that work closely with the trucking industry. Describe their role."
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "List five different kinds of trucks. Tell the service each provides."
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Assume that you are going to ship by truck 500 pounds of goods (freight class 65) from your town to another town 500 miles away. Your shipment must arrive within three days. Explain in writing:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "8.a",
+          "text": "How to prepare the shipment"
+        },
+        {
+          "req_id": "b",
+          "path": "8.b",
+          "text": "How to compare at least three carriers for time in transit and rates"
+        },
+        {
+          "req_id": "c",
+          "path": "8.c",
+          "text": "How to choose which carrier to use"
+        },
+        {
+          "req_id": "d",
+          "path": "8.d",
+          "text": "How to insure the shipment for damages."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "9",
+      "path": "9",
+      "text": "Explain the following terms: bill of lading, ETA, logbook, intermodal, containers, tariff, shippers, carrier, consignee, drayage, and cartage."
+    },
+    {
+      "req_id": "10",
+      "path": "10",
+      "text": "Learn about opportunities in the field of truck transportation. Choose one career in which you are interested and discuss with your counselor the major responsibilities of that position and the qualifications, education, and training such a position requires."
     }
   ]
 }

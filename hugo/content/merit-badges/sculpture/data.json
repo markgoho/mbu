@@ -1,97 +1,97 @@
 {
-  "id": "sculpture",
   "title": "Sculpture",
   "slug": "sculpture",
   "url": "https://www.scouting.org/merit-badges/sculpture/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Sculpture.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Explain to your counselor the precautions that must be followed for the safe use and operation of a sculptor's tools, equipment, and other materials.",
+      "resources": [
         {
-          "req_id": "1",
-          "text": "Explain to your counselor the precautions that must be followed for the safe use and operation of a sculptor's tools, equipment, and other materials.",
+          "title": "Working Safely With Clay & DIY Modeling Tools (video)",
+          "url": "https://youtu.be/-fX0YeZnEME?si=suWmdxmEVZaWz3L2"
+        },
+        {
+          "title": "The Essential Rules of Clay Safety: What You Need to Know (website)",
+          "url": "https://artabys.com/the-essential-rules-of-clay-safety-what-you-need-to-know/"
+        }
+      ]
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do TWO of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Model in clay a life-size human head. Then sculpt in modeling clay, carve in wood or plaster, or use 3D modeling software to make a small-scale model of an animal or person. Explain to your counselor the method and tools you used to sculpt the figure.",
           "resources": [
             {
-              "title": "Working Safely With Clay & DIY Modeling Tools (video)",
-              "url": "https://youtu.be/-fX0YeZnEME?si=suWmdxmEVZaWz3L2"
+              "title": "Sculpting a Head in Clay (video)",
+              "url": "https://youtu.be/6dnyYu4Ff7U?si=j9qg_lNcXGVH7HnQ"
             },
             {
-              "title": "The Essential Rules of Clay Safety: What You Need to Know (website)",
-              "url": "https://artabys.com/the-essential-rules-of-clay-safety-what-you-need-to-know/"
+              "title": "Portrait Sculpting in Clay (video)",
+              "url": "https://youtu.be/G-Drvb5WTM0?si=PbFCpiwrwnoTyGOl"
+            },
+            {
+              "title": "Clay Sculpting Tools (video)",
+              "url": "https://youtu.be/IyBRSsVQOTY?si=w4VRR1chFY0pE7ns"
             }
           ]
         },
         {
-          "req_id": "2",
-          "text": "Do TWO of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Model in clay a life-size human head. Then sculpt in modeling clay, carve in wood or plaster, or use 3D modeling software to make a small-scale model of an animal or person. Explain to your counselor the method and tools you used to sculpt the figure.",
-              "resources": [
-                {
-                  "title": "Sculpting a Head in Clay (video)",
-                  "url": "https://youtu.be/6dnyYu4Ff7U?si=j9qg_lNcXGVH7HnQ"
-                },
-                {
-                  "title": "Portrait Sculpting in Clay (video)",
-                  "url": "https://youtu.be/G-Drvb5WTM0?si=PbFCpiwrwnoTyGOl"
-                },
-                {
-                  "title": "Clay Sculpting Tools (video)",
-                  "url": "https://youtu.be/IyBRSsVQOTY?si=w4VRR1chFY0pE7ns"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Make a plaster mold of a fruit or vegetable. In this mold, make a copy of the fruit or vegetable. Explain to your counselor the method and tools you used to make the copy.",
-              "resources": [
-                {
-                  "title": "Fruit and Vegetable Art - Silicone Moulds and Plaster Casts (website)",
-                  "url": "https://www.instructables.com/Fruit-and-Vegetable-Art-Silicone-Moulds-and-Plaste/"
-                },
-                {
-                  "title": "Plaster Fruit Cast (video)",
-                  "url": "https://youtu.be/FN7WLH5tNaY?si=mxbwZBRnf3lv6s6f"
-                }
-              ]
-            },
-            {
-              "req_id": "c",
-              "text": "With your parent or guardian's permission and your counselor's approval, visit a museum, art exhibit, art gallery, artists' co-op, or artist's studio. After your visit, share with your counselor what you have learned. Discuss the importance of visual arts and how it strengthens social tolerance and helps stimulate cultural, intellectual, and personal development. Resource: How to Visit an Art Museum (video)",
-              "resources": [
-                {
-                  "title": "How to Visit an Art Museum (video)",
-                  "url": "https://youtu.be/drrBd1bCiW0?si=K3DwDeSzVPwmYDyy"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 2
-          }
-        },
-        {
-          "req_id": "3",
-          "text": "Find out about career opportunities in sculpture. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Make a plaster mold of a fruit or vegetable. In this mold, make a copy of the fruit or vegetable. Explain to your counselor the method and tools you used to make the copy.",
           "resources": [
             {
-              "title": "12 Careers for Sculptors (website)",
-              "url": "https://www.indeed.com/career-advice/finding-a-job/careers-for-sculptors"
+              "title": "Fruit and Vegetable Art - Silicone Moulds and Plaster Casts (website)",
+              "url": "https://www.instructables.com/Fruit-and-Vegetable-Art-Silicone-Moulds-and-Plaste/"
             },
             {
-              "title": "How to Become an Artist/Sculptor (video)",
-              "url": "https://youtu.be/N6HeVopwRmQ?si=YJyPrJ4CvPLj9cx0"
-            },
-            {
-              "title": "Craft Artist Careers (video)",
-              "url": "https://youtu.be/T_X9ZdUq-2Q?si=p0lV3ApJiQH0OqXe"
+              "title": "Plaster Fruit Cast (video)",
+              "url": "https://youtu.be/FN7WLH5tNaY?si=mxbwZBRnf3lv6s6f"
             }
           ]
+        },
+        {
+          "req_id": "c",
+          "path": "2.c",
+          "text": "With your parent or guardian's permission and your counselor's approval, visit a museum, art exhibit, art gallery, artists' co-op, or artist's studio. After your visit, share with your counselor what you have learned. Discuss the importance of visual arts and how it strengthens social tolerance and helps stimulate cultural, intellectual, and personal development. Resource: How to Visit an Art Museum (video)",
+          "resources": [
+            {
+              "title": "How to Visit an Art Museum (video)",
+              "url": "https://youtu.be/drrBd1bCiW0?si=K3DwDeSzVPwmYDyy"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 2
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Find out about career opportunities in sculpture. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
+      "resources": [
+        {
+          "title": "12 Careers for Sculptors (website)",
+          "url": "https://www.indeed.com/career-advice/finding-a-job/careers-for-sculptors"
+        },
+        {
+          "title": "How to Become an Artist/Sculptor (video)",
+          "url": "https://youtu.be/N6HeVopwRmQ?si=YJyPrJ4CvPLj9cx0"
+        },
+        {
+          "title": "Craft Artist Careers (video)",
+          "url": "https://youtu.be/T_X9ZdUq-2Q?si=p0lV3ApJiQH0OqXe"
         }
       ]
     }

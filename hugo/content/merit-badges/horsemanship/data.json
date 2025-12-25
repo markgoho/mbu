@@ -1,280 +1,297 @@
 {
-  "id": "horsemanship",
   "title": "Horsemanship",
   "slug": "horsemanship",
   "url": "https://www.scouting.org/merit-badges/horsemanship/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Horsemanship.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Describe the safety precautions you should take when handling and caring for a horse. Resource: Safety Precautions When Handling Horses (video)",
-              "resources": [
-                {
-                  "title": "Safety Precautions When Handling Horses (video)",
-                  "url": "https://youtu.be/B5KeqtLZoUA?si=FD2BQR4jCnU4E6OS"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Describe the fire safety precautions you should take in a barn and around horses. Resource: Barn Fire Safety (video)",
-              "resources": [
-                {
-                  "title": "Barn Fire Safety (video)",
-                  "url": "https://youtu.be/w-05f23oJVA"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "2",
-          "text": "Name 15 parts of a horse and discuss the function of each with your counselor.",
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Describe the safety precautions you should take when handling and caring for a horse. Resource: Safety Precautions When Handling Horses (video)",
           "resources": [
             {
-              "title": "Parts of a Horse (video)",
-              "url": "https://youtu.be/y369q1jh8HQ"
-            },
-            {
-              "title": "Parts of a Horse (filled) (PDF)",
-              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse.jpg"
-            },
-            {
-              "title": "Parts of a Horse (blank) (PDF)",
-              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse%20-%20blank%20worksheet.pdf"
+              "title": "Safety Precautions When Handling Horses (video)",
+              "url": "https://youtu.be/B5KeqtLZoUA?si=FD2BQR4jCnU4E6OS"
             }
           ]
         },
         {
-          "req_id": "3",
-          "text": "Name four breeds of horses. Explain the special features for which each breed is known.",
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Describe the fire safety precautions you should take in a barn and around horses. Resource: Barn Fire Safety (video)",
           "resources": [
             {
-              "title": "Ten Popular Horse Breeds (video)",
-              "url": "https://youtu.be/FiBBNX8WszQ"
-            },
-            {
-              "title": "Six Popular Horse Breeds (video)",
-              "url": "https://youtu.be/jwZj65SHdcw?si=hK8GTTDsRlUT5kAZ"
+              "title": "Barn Fire Safety (video)",
+              "url": "https://youtu.be/w-05f23oJVA"
             }
           ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Name 15 parts of a horse and discuss the function of each with your counselor.",
+      "resources": [
+        {
+          "title": "Parts of a Horse (video)",
+          "url": "https://youtu.be/y369q1jh8HQ"
         },
         {
-          "req_id": "4",
-          "text": "Describe the symptoms of colic. Name and describe four other horse health problems. Resource: Health Problems in Horses (video)",
-          "resources": [
-            {
-              "title": "Health Problems in Horses (video)",
-              "url": "https://youtu.be/_ZeUDXMmSXE?si=mw4HfkBBedTRvh5a"
-            }
-          ]
+          "title": "Parts of a Horse (filled) (PDF)",
+          "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse.jpg"
         },
         {
-          "req_id": "5",
-          "text": "Explain what conformation is and why it is important. Explain the difference between lameness and unsoundness.",
-          "resources": [
-            {
-              "title": "Lameness vs. Unsoundness (video)",
-              "url": "https://www.youtube.com/shorts/Ica4d4jK2eo"
-            },
-            {
-              "title": "Signs of Lameness (video)",
-              "url": "https://youtu.be/c9Mn9RP39lE?si=T2D88HPDsxFjWU8v"
-            }
-          ]
-        },
-        {
-          "req_id": "6",
-          "text": "Explain the importance of hoof care and why a horse might need to wear shoes. Resource: How to Clean Horse Hooves (video)",
-          "resources": [
-            {
-              "title": "How to Clean Horse Hooves (video)",
-              "url": "https://youtu.be/whbZsicSv-k"
-            }
-          ]
-        },
-        {
-          "req_id": "7",
-          "text": "Demonstrate how to groom a horse, including picking hooves and caring for a horse after a ride.",
-          "resources": [
-            {
-              "title": "Caring for a Horse (video)",
-              "url": "https://youtu.be/fdGhd2phEHs"
-            },
-            {
-              "title": "How to Groom a Horse (video)",
-              "url": "https://youtu.be/9Leym8QeBM8"
-            }
-          ]
-        },
-        {
-          "req_id": "8",
-          "text": "Explain how to determine what and how much to feed a horse and why the amount and kind of feed are changed according to the activity level and the breed of horse. Resource: What Do Horses Eat? (video)",
-          "resources": [
-            {
-              "title": "What Do Horses Eat? (video)",
-              "url": "https://youtu.be/AcgfzGhaoes"
-            }
-          ]
-        },
-        {
-          "req_id": "9",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Name 10 parts of the saddle and bridle that you will use, and explain how to care for this equipment. Resource: Parts of a Saddle (video)",
-              "resources": [
-                {
-                  "title": "Parts of a Saddle (video)",
-                  "url": "https://www.youtube.com/watch?v=CXkV6LxGJF8"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Show how to properly saddle and bridle a horse.",
-              "resources": [
-                {
-                  "title": "How to Saddle a Horse (video)",
-                  "url": "https://youtu.be/MZHl9zBHD10"
-                },
-                {
-                  "title": "How to Bridle a Horse (video)",
-                  "url": "https://youtu.be/sI7A5aTFUnE"
-                }
-              ]
-            },
-            {
-              "req_id": "c",
-              "text": "Demonstrate how to safely mount and dismount a horse.",
-              "resources": [
-                {
-                  "title": "Using a Mounting Block and Adjusting Tack (video)",
-                  "url": "https://youtu.be/a40XR220wd8?si=yAKM4J6yhQAYZufm"
-                },
-                {
-                  "title": "Mounting and Dismounting a Horse (video)",
-                  "url": "https://youtu.be/p3T7tUwyNBg?si=Rnuup5QA8iw_DLlU"
-                },
-                {
-                  "title": "How to Mount a Horse (video)",
-                  "url": "https://youtu.be/CafSxVC-1I8"
-                },
-                {
-                  "title": "How to Ride a Horse   (video)",
-                  "url": "https://youtu.be/NC9Tr2hXfFk?si=-mIGi5Woskl7jBPn"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "10",
-          "text": "Explain and demonstrate how to approach and lead a horse safely from a stall, corral, or field and how to tie the horse securely. Resource: How to Lead a Horse (video)",
-          "resources": [
-            {
-              "title": "How to Lead a Horse (video)",
-              "url": "https://youtu.be/AsP38UPNHvI"
-            }
-          ]
-        },
-        {
-          "req_id": "11",
-          "text": "On level ground, continuously do the following movements after safely mounting the horse. Do them correctly, at ease, and in harmony with the horse.",
-          "resources": [
-            {
-              "title": "How to Steer Your Horse (video)",
-              "url": "https://youtu.be/uZ_5lxUyCdw"
-            },
-            {
-              "title": "How to Ride a Horse (video)",
-              "url": "https://youtu.be/fV7kuUrjutY"
-            },
-            {
-              "title": "Riding Despite Physical Challenges (video)",
-              "url": "https://youtu.be/oFy6FqQ_PXM?si=Qk7V2jJdKykcp9il"
-            }
-          ],
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Walk the horse in a straight line for 60 feet."
-            },
-            {
-              "req_id": "b",
-              "text": "Walk the horse in a half-circle of not more than 16 feet in radius."
-            },
-            {
-              "req_id": "c",
-              "text": "Trot or jog the horse in a straight line for 60 feet. Resource: How to Trot a Horse (video)",
-              "resources": [
-                {
-                  "title": "How to Trot a Horse (video)",
-                  "url": "https://youtu.be/-3CMZSbQRgg"
-                }
-              ]
-            },
-            {
-              "req_id": "d",
-              "text": "Trot or jog the horse in a half-circle of not more than 30 feet in radius. Resource: Tips for Trotting (video)",
-              "resources": [
-                {
-                  "title": "Tips for Trotting  (video)",
-                  "url": "https://youtu.be/KCSkmYEQxEg?si=ET5yK-3VM_Pjzae3"
-                }
-              ]
-            },
-            {
-              "req_id": "e",
-              "text": "Halt straight. Resource: How to Stop Your Horse (video)",
-              "resources": [
-                {
-                  "title": "How to Stop Your Horse (video)",
-                  "url": "https://youtu.be/GJ0Y_ZaCSmo"
-                }
-              ]
-            },
-            {
-              "req_id": "f",
-              "text": "Back up straight four paces. Resource: How to Back Up a Horse (video)",
-              "resources": [
-                {
-                  "title": "How to Back Up a Horse (video)",
-                  "url": "https://youtu.be/aolJGYfOZI0"
-                }
-              ]
-            },
-            {
-              "req_id": "g",
-              "text": "Halt and dismount. Resource: Mount and Dismount a Horse (video)",
-              "resources": [
-                {
-                  "title": "Mount and Dismount a Horse (video)",
-                  "url": "https://youtu.be/vBdXfiNXu7I?si=Cb12AYTlH2J_lbtg"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "title": "Parts of a Horse (blank) (PDF)",
+          "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse%20-%20blank%20worksheet.pdf"
         }
       ]
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Name four breeds of horses. Explain the special features for which each breed is known.",
+      "resources": [
+        {
+          "title": "Ten Popular Horse Breeds (video)",
+          "url": "https://youtu.be/FiBBNX8WszQ"
+        },
+        {
+          "title": "Six Popular Horse Breeds (video)",
+          "url": "https://youtu.be/jwZj65SHdcw?si=hK8GTTDsRlUT5kAZ"
+        }
+      ]
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Describe the symptoms of colic. Name and describe four other horse health problems. Resource: Health Problems in Horses (video)",
+      "resources": [
+        {
+          "title": "Health Problems in Horses (video)",
+          "url": "https://youtu.be/_ZeUDXMmSXE?si=mw4HfkBBedTRvh5a"
+        }
+      ]
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Explain what conformation is and why it is important. Explain the difference between lameness and unsoundness.",
+      "resources": [
+        {
+          "title": "Lameness vs. Unsoundness (video)",
+          "url": "https://www.youtube.com/shorts/Ica4d4jK2eo"
+        },
+        {
+          "title": "Signs of Lameness (video)",
+          "url": "https://youtu.be/c9Mn9RP39lE?si=T2D88HPDsxFjWU8v"
+        }
+      ]
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Explain the importance of hoof care and why a horse might need to wear shoes. Resource: How to Clean Horse Hooves (video)",
+      "resources": [
+        {
+          "title": "How to Clean Horse Hooves (video)",
+          "url": "https://youtu.be/whbZsicSv-k"
+        }
+      ]
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Demonstrate how to groom a horse, including picking hooves and caring for a horse after a ride.",
+      "resources": [
+        {
+          "title": "Caring for a Horse (video)",
+          "url": "https://youtu.be/fdGhd2phEHs"
+        },
+        {
+          "title": "How to Groom a Horse (video)",
+          "url": "https://youtu.be/9Leym8QeBM8"
+        }
+      ]
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Explain how to determine what and how much to feed a horse and why the amount and kind of feed are changed according to the activity level and the breed of horse. Resource: What Do Horses Eat? (video)",
+      "resources": [
+        {
+          "title": "What Do Horses Eat? (video)",
+          "url": "https://youtu.be/AcgfzGhaoes"
+        }
+      ]
+    },
+    {
+      "req_id": "9",
+      "path": "9",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "9.a",
+          "text": "Name 10 parts of the saddle and bridle that you will use, and explain how to care for this equipment. Resource: Parts of a Saddle (video)",
+          "resources": [
+            {
+              "title": "Parts of a Saddle (video)",
+              "url": "https://www.youtube.com/watch?v=CXkV6LxGJF8"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "9.b",
+          "text": "Show how to properly saddle and bridle a horse.",
+          "resources": [
+            {
+              "title": "How to Saddle a Horse (video)",
+              "url": "https://youtu.be/MZHl9zBHD10"
+            },
+            {
+              "title": "How to Bridle a Horse (video)",
+              "url": "https://youtu.be/sI7A5aTFUnE"
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "9.c",
+          "text": "Demonstrate how to safely mount and dismount a horse.",
+          "resources": [
+            {
+              "title": "Using a Mounting Block and Adjusting Tack (video)",
+              "url": "https://youtu.be/a40XR220wd8?si=yAKM4J6yhQAYZufm"
+            },
+            {
+              "title": "Mounting and Dismounting a Horse (video)",
+              "url": "https://youtu.be/p3T7tUwyNBg?si=Rnuup5QA8iw_DLlU"
+            },
+            {
+              "title": "How to Mount a Horse (video)",
+              "url": "https://youtu.be/CafSxVC-1I8"
+            },
+            {
+              "title": "How to Ride a Horse   (video)",
+              "url": "https://youtu.be/NC9Tr2hXfFk?si=-mIGi5Woskl7jBPn"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "10",
+      "path": "10",
+      "text": "Explain and demonstrate how to approach and lead a horse safely from a stall, corral, or field and how to tie the horse securely. Resource: How to Lead a Horse (video)",
+      "resources": [
+        {
+          "title": "How to Lead a Horse (video)",
+          "url": "https://youtu.be/AsP38UPNHvI"
+        }
+      ]
+    },
+    {
+      "req_id": "11",
+      "path": "11",
+      "text": "On level ground, continuously do the following movements after safely mounting the horse. Do them correctly, at ease, and in harmony with the horse.",
+      "resources": [
+        {
+          "title": "How to Steer Your Horse (video)",
+          "url": "https://youtu.be/uZ_5lxUyCdw"
+        },
+        {
+          "title": "How to Ride a Horse (video)",
+          "url": "https://youtu.be/fV7kuUrjutY"
+        },
+        {
+          "title": "Riding Despite Physical Challenges (video)",
+          "url": "https://youtu.be/oFy6FqQ_PXM?si=Qk7V2jJdKykcp9il"
+        }
+      ],
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "11.a",
+          "text": "Walk the horse in a straight line for 60 feet."
+        },
+        {
+          "req_id": "b",
+          "path": "11.b",
+          "text": "Walk the horse in a half-circle of not more than 16 feet in radius."
+        },
+        {
+          "req_id": "c",
+          "path": "11.c",
+          "text": "Trot or jog the horse in a straight line for 60 feet. Resource: How to Trot a Horse (video)",
+          "resources": [
+            {
+              "title": "How to Trot a Horse (video)",
+              "url": "https://youtu.be/-3CMZSbQRgg"
+            }
+          ]
+        },
+        {
+          "req_id": "d",
+          "path": "11.d",
+          "text": "Trot or jog the horse in a half-circle of not more than 30 feet in radius. Resource: Tips for Trotting (video)",
+          "resources": [
+            {
+              "title": "Tips for Trotting  (video)",
+              "url": "https://youtu.be/KCSkmYEQxEg?si=ET5yK-3VM_Pjzae3"
+            }
+          ]
+        },
+        {
+          "req_id": "e",
+          "path": "11.e",
+          "text": "Halt straight. Resource: How to Stop Your Horse (video)",
+          "resources": [
+            {
+              "title": "How to Stop Your Horse (video)",
+              "url": "https://youtu.be/GJ0Y_ZaCSmo"
+            }
+          ]
+        },
+        {
+          "req_id": "f",
+          "path": "11.f",
+          "text": "Back up straight four paces. Resource: How to Back Up a Horse (video)",
+          "resources": [
+            {
+              "title": "How to Back Up a Horse (video)",
+              "url": "https://youtu.be/aolJGYfOZI0"
+            }
+          ]
+        },
+        {
+          "req_id": "g",
+          "path": "11.g",
+          "text": "Halt and dismount. Resource: Mount and Dismount a Horse (video)",
+          "resources": [
+            {
+              "title": "Mount and Dismount a Horse (video)",
+              "url": "https://youtu.be/vBdXfiNXu7I?si=Cb12AYTlH2J_lbtg"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
     }
   ]
 }

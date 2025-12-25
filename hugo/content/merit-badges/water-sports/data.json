@@ -1,86 +1,94 @@
 {
-  "id": "water-sports",
   "title": "Water Sports",
   "slug": "water-sports",
   "url": "https://www.scouting.org/merit-badges/water-sports/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Water%20Sports.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain to your counselor the most likely hazards you may encounter while participating in water sports activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
-            },
-            {
-              "req_id": "b",
-              "text": "Review prevention, symptoms, and first-aid treatment for the following injuries or illnesses that could occur while participating in water sports: blisters, cold-water shock and hypothermia, dehydration, heat-related illnesses, sunburn, sprains, strains, minor cuts and bruises, spinal injury, and concussions and head trauma."
-            },
-            {
-              "req_id": "c",
-              "text": "Review the Scouting America Safety Afloat policy. Tell how it applies to water sports."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while participating in water sports activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
         },
         {
-          "req_id": "2",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Discuss with your counselor the characteristics of life jackets most appropriate for water sports, and tell why one must always be worn while waterskiing or wakeboarding. Then demonstrate how to select and fit a life jacket for water sports activities."
-            },
-            {
-              "req_id": "b",
-              "text": "Review and discuss the Water Sports Safety Code with your counselor. Promise that you will live up to it and follow it in all water work for this merit badge. Review the safety precautions that must be used by the boat operator in pulling waterskiers and wakeboarders."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Review prevention, symptoms, and first-aid treatment for the following injuries or illnesses that could occur while participating in water sports: blisters, cold-water shock and hypothermia, dehydration, heat-related illnesses, sunburn, sprains, strains, minor cuts and bruises, spinal injury, and concussions and head trauma."
         },
         {
-          "req_id": "3",
-          "text": "Before doing requirements 4 through 6, successfully complete the Scouting America swimmer test: Jump feetfirst into water over the head in depth. Level off and swim 75 yards in a strong manner using one or more of the following strokes: sidestroke, breaststroke, trudgen, or crawl; then swim 25 yards using an easy, resting backstroke. The 100 yards must be completed in one swim without stops and must include at least one sharp turn. After completing the swim, rest by floating."
-        },
-        {
-          "req_id": "4",
-          "text": "Show the following skier signals to the safety observer in the boat: skier safe, faster, slower, turns, back to dock, cut motor, skier in water."
-        },
-        {
-          "req_id": "5",
-          "text": "Showing reasonable control while using two skis, one ski, or a wakeboard, do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Show how to enter the water from a boat and make a deepwater start without help."
-            },
-            {
-              "req_id": "b",
-              "text": "Starting from outside the wakes, show you can cross both wakes four times and return to the center of the wake each time, without falling."
-            },
-            {
-              "req_id": "c",
-              "text": "Show you can fall properly to avoid an obstacle. Also show that you can drop handle and coast to a stop without losing your balance."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "6",
-          "text": "While on shore, show that you know how to properly adjust the bindings of your ski(s) or wakeboard to fit yourself. Then, in deep water, show you can adjust bindings to fit. Recover and put on your ski(s) or wakeboard that has come off during a fall."
+          "req_id": "c",
+          "path": "1.c",
+          "text": "Review the Scouting America Safety Afloat policy. Tell how it applies to water sports."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Discuss with your counselor the characteristics of life jackets most appropriate for water sports, and tell why one must always be worn while waterskiing or wakeboarding. Then demonstrate how to select and fit a life jacket for water sports activities."
+        },
+        {
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Review and discuss the Water Sports Safety Code with your counselor. Promise that you will live up to it and follow it in all water work for this merit badge. Review the safety precautions that must be used by the boat operator in pulling waterskiers and wakeboarders."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Before doing requirements 4 through 6, successfully complete the Scouting America swimmer test: Jump feetfirst into water over the head in depth. Level off and swim 75 yards in a strong manner using one or more of the following strokes: sidestroke, breaststroke, trudgen, or crawl; then swim 25 yards using an easy, resting backstroke. The 100 yards must be completed in one swim without stops and must include at least one sharp turn. After completing the swim, rest by floating."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Show the following skier signals to the safety observer in the boat: skier safe, faster, slower, turns, back to dock, cut motor, skier in water."
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Showing reasonable control while using two skis, one ski, or a wakeboard, do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Show how to enter the water from a boat and make a deepwater start without help."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Starting from outside the wakes, show you can cross both wakes four times and return to the center of the wake each time, without falling."
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Show you can fall properly to avoid an obstacle. Also show that you can drop handle and coast to a stop without losing your balance."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "While on shore, show that you know how to properly adjust the bindings of your ski(s) or wakeboard to fit yourself. Then, in deep water, show you can adjust bindings to fit. Recover and put on your ski(s) or wakeboard that has come off during a fall."
     }
   ]
 }

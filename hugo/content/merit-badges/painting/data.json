@@ -1,150 +1,156 @@
 {
-  "id": "painting",
   "title": "Painting",
   "slug": "painting",
   "url": "https://www.scouting.org/merit-badges/painting/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Painting.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Explain the proper safety procedures to follow when preparing surfaces and applying coatings. Resource: Interior Painting Safety (video)",
+      "resources": [
         {
-          "req_id": "1",
-          "text": "Explain the proper safety procedures to follow when preparing surfaces and applying coatings. Resource: Interior Painting Safety (video)",
+          "title": "Interior Painting Safety (video)",
+          "url": "https://www.youtube.com/watch?v=4vpr3e_erug"
+        }
+      ]
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Explain three ways that coatings can improve a surface. Resource: Epoxy Resin Coatings (video)",
           "resources": [
             {
-              "title": "Interior Painting Safety (video)",
-              "url": "https://www.youtube.com/watch?v=4vpr3e_erug"
+              "title": "Epoxy Resin Coatings (video)",
+              "url": "https://www.youtube.com/watch?v=A-ERekKoohI"
             }
           ]
         },
         {
-          "req_id": "2",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain three ways that coatings can improve a surface. Resource: Epoxy Resin Coatings (video)",
-              "resources": [
-                {
-                  "title": "Epoxy Resin Coatings (video)",
-                  "url": "https://www.youtube.com/watch?v=A-ERekKoohI"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Explain the differences between oil-based paints, acrylic-based paints, and water-based paints.",
-              "resources": [
-                {
-                  "title": "Paints - Oil, Water, Enamel, Acrylic (video)",
-                  "url": "https://www.youtube.com/watch?v=jEyTpUfbrYA"
-                },
-                {
-                  "title": "Water vs Oil Based Paints (video)",
-                  "url": "https://www.youtube.com/watch?v=T99OFHCLF4s"
-                }
-              ]
-            },
-            {
-              "req_id": "c",
-              "text": "Explain where you would apply enamel paint, flat paint, wood stain, and varnish, and explain the importance of sheen. Resource: Paint Sheen Differences Explained (video)",
-              "resources": [
-                {
-                  "title": "Paint Sheen Differences Explained (video)",
-                  "url": "https://www.youtube.com/watch?v=DyKh80Yt9k0"
-                }
-              ]
-            },
-            {
-              "req_id": "d",
-              "text": "Tell why each is best for these uses."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "3",
-          "text": "Prepare and paint two different surfaces using patching materials or caulking and the proper primers and topcoats. Suggested projects include an interior or exterior wall, a door, a piece of furniture, a concrete wall or floor, a porch rail, or a fence. Your counselor must preapprove the projects. Resource: How to Paint a Room (video)",
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Explain the differences between oil-based paints, acrylic-based paints, and water-based paints.",
           "resources": [
             {
-              "title": "How to Paint a Room (video)",
-              "url": "https://www.youtube.com/watch?v=CRXCB_3gLok"
+              "title": "Paints - Oil, Water, Enamel, Acrylic (video)",
+              "url": "https://www.youtube.com/watch?v=jEyTpUfbrYA"
+            },
+            {
+              "title": "Water vs Oil Based Paints (video)",
+              "url": "https://www.youtube.com/watch?v=T99OFHCLF4s"
             }
           ]
         },
         {
-          "req_id": "4",
-          "text": "Prepare and paint an item using harmonizing colors that you have selected using the color wheel in the Painting merit badge pamphlet.",
+          "req_id": "c",
+          "path": "2.c",
+          "text": "Explain where you would apply enamel paint, flat paint, wood stain, and varnish, and explain the importance of sheen. Resource: Paint Sheen Differences Explained (video)",
           "resources": [
             {
-              "title": "Choosing a Color Palette for Your Home (video)",
-              "url": "https://www.youtube.com/watch?v=K75ynD7aAeg"
-            },
-            {
-              "title": "Color Wheel from Painting Merit Badge Pamphlet (PDF)",
-              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Painting/Painting_Color%20Wheet%20from%202025%20MBP.pdf"
+              "title": "Paint Sheen Differences Explained (video)",
+              "url": "https://www.youtube.com/watch?v=DyKh80Yt9k0"
             }
           ]
         },
         {
-          "req_id": "5",
-          "text": "Show the right way to use, clean, maintain, and store painting equipment.",
-          "resources": [
-            {
-              "title": "Good Paint Hygiene (video)",
-              "url": "https://www.youtube.com/watch?v=C_bY5_mOTcY"
-            },
-            {
-              "title": "How to Clean and Store Paint Brushes (video)",
-              "url": "https://www.youtube.com/watch?v=u6_e5YXgviY"
-            }
-          ]
+          "req_id": "d",
+          "path": "2.d",
+          "text": "Tell why each is best for these uses."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Prepare and paint two different surfaces using patching materials or caulking and the proper primers and topcoats. Suggested projects include an interior or exterior wall, a door, a piece of furniture, a concrete wall or floor, a porch rail, or a fence. Your counselor must preapprove the projects. Resource: How to Paint a Room (video)",
+      "resources": [
+        {
+          "title": "How to Paint a Room (video)",
+          "url": "https://www.youtube.com/watch?v=CRXCB_3gLok"
+        }
+      ]
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Prepare and paint an item using harmonizing colors that you have selected using the color wheel in the Painting merit badge pamphlet.",
+      "resources": [
+        {
+          "title": "Choosing a Color Palette for Your Home (video)",
+          "url": "https://www.youtube.com/watch?v=K75ynD7aAeg"
         },
         {
-          "req_id": "6",
-          "text": "Explain the importance of ladder safety, personal hygiene, and the use of personal protective equipment when painting.",
-          "resources": [
-            {
-              "title": "Ladder Safety (video)",
-              "url": "https://www.youtube.com/watch?v=b7ArZilnnTE"
-            },
-            {
-              "title": "Personal Protective Equipment for Painting (PPE) (video)",
-              "url": "https://www.youtube.com/watch?v=67G06bhuxPA"
-            }
-          ]
+          "title": "Color Wheel from Painting Merit Badge Pamphlet (PDF)",
+          "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Painting/Painting_Color%20Wheet%20from%202025%20MBP.pdf"
+        }
+      ]
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Show the right way to use, clean, maintain, and store painting equipment.",
+      "resources": [
+        {
+          "title": "Good Paint Hygiene (video)",
+          "url": "https://www.youtube.com/watch?v=C_bY5_mOTcY"
         },
         {
-          "req_id": "7",
-          "text": "Explain some of the environmental and health issues concerning removing paint, applying paint, and discarding old paint.",
-          "resources": [
-            {
-              "title": "How to Dispose of Old Paint (video)",
-              "url": "https://www.youtube.com/watch?v=7YKuwlGgWpc"
-            },
-            {
-              "title": "Paint Removers (video)",
-              "url": "https://www.youtube.com/watch?v=8lG6dAZE52k"
-            }
-          ]
+          "title": "How to Clean and Store Paint Brushes (video)",
+          "url": "https://www.youtube.com/watch?v=u6_e5YXgviY"
+        }
+      ]
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Explain the importance of ladder safety, personal hygiene, and the use of personal protective equipment when painting.",
+      "resources": [
+        {
+          "title": "Ladder Safety (video)",
+          "url": "https://www.youtube.com/watch?v=b7ArZilnnTE"
         },
         {
-          "req_id": "8",
-          "text": "Find out about career opportunities in the painting craft. Discuss the training and experience required, and explain why this profession might interest you.",
-          "resources": [
-            {
-              "title": "Painters Career Overview (video)",
-              "url": "https://www.youtube.com/watch?v=5glRwgnb5gk"
-            },
-            {
-              "title": "Scenic Painter (video)",
-              "url": "https://www.youtube.com/watch?v=mWjbRoAId_4"
-            }
-          ]
+          "title": "Personal Protective Equipment for Painting (PPE) (video)",
+          "url": "https://www.youtube.com/watch?v=67G06bhuxPA"
+        }
+      ]
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Explain some of the environmental and health issues concerning removing paint, applying paint, and discarding old paint.",
+      "resources": [
+        {
+          "title": "How to Dispose of Old Paint (video)",
+          "url": "https://www.youtube.com/watch?v=7YKuwlGgWpc"
+        },
+        {
+          "title": "Paint Removers (video)",
+          "url": "https://www.youtube.com/watch?v=8lG6dAZE52k"
+        }
+      ]
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Find out about career opportunities in the painting craft. Discuss the training and experience required, and explain why this profession might interest you.",
+      "resources": [
+        {
+          "title": "Painters Career Overview (video)",
+          "url": "https://www.youtube.com/watch?v=5glRwgnb5gk"
+        },
+        {
+          "title": "Scenic Painter (video)",
+          "url": "https://www.youtube.com/watch?v=mWjbRoAId_4"
         }
       ]
     }

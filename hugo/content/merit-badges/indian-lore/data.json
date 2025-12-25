@@ -1,83 +1,90 @@
 {
-  "id": "indian-lore",
   "title": "Indian Lore",
   "slug": "indian-lore",
   "url": "https://www.scouting.org/merit-badges/indian-lore/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Indian_Lore.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Identify the different American Indian cultural areas. Explain what makes them each unique."
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Research an American Indian tribe, group, or nation. Tell your counselor about traditional dwellings, way of life, tribal government, religious beliefs, family and clan relationships, language, clothing styles, arts and crafts, food cultivation, foraging and preparation, means of getting around, games, customs in warfare, and where and how they live today."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Identify the different American Indian cultural areas. Explain what makes them each unique."
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Learn 10 common terms in an American Indian language and their meanings."
         },
         {
-          "req_id": "2",
-          "text": "Research an American Indian tribe, group, or nation. Tell your counselor about traditional dwellings, way of life, tribal government, religious beliefs, family and clan relationships, language, clothing styles, arts and crafts, food cultivation, foraging and preparation, means of getting around, games, customs in warfare, and where and how they live today."
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Identify the meaning of 10 place names of American Indian origin in the United States."
         },
         {
-          "req_id": "3",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Learn 10 common terms in an American Indian language and their meanings."
-            },
-            {
-              "req_id": "b",
-              "text": "Identify the meaning of 10 place names of American Indian origin in the United States."
-            },
-            {
-              "req_id": "c",
-              "text": "Name five well-known American Indian leaders, either from the past or people of today. Give their tribes or nations. Describe what they did or do now that makes them notable."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "4",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Describe how life might have been different for the European settlers if there had been no Native Americans to meet them when they came to this continent."
-            },
-            {
-              "req_id": "b",
-              "text": "Describe eight things adopted by others from American Indians."
-            },
-            {
-              "req_id": "c",
-              "text": "Learn a game played by a group or tribe. Teach and lead it with a Scout group."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "Do ONE of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Visit a museum either in-person or virtually to see American Indian exhibitions and collections. Discuss with your counselor what you observed or learned from two exhibitions and identify 10 artifacts by tribe or nation, their shape, size, and use."
-            },
-            {
-              "req_id": "b",
-              "text": "Attend a contemporary American Indian gathering. Discuss with your counselor proper etiquette for attending as well as what you learned and observed during your visit."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Name five well-known American Indian leaders, either from the past or people of today. Give their tribes or nations. Describe what they did or do now that makes them notable."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Describe how life might have been different for the European settlers if there had been no Native Americans to meet them when they came to this continent."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Describe eight things adopted by others from American Indians."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Learn a game played by a group or tribe. Teach and lead it with a Scout group."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Visit a museum either in-person or virtually to see American Indian exhibitions and collections. Discuss with your counselor what you observed or learned from two exhibitions and identify 10 artifacts by tribe or nation, their shape, size, and use."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Attend a contemporary American Indian gathering. Discuss with your counselor proper etiquette for attending as well as what you learned and observed during your visit."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

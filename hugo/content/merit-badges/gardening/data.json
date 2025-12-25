@@ -1,288 +1,306 @@
 {
-  "id": "gardening",
   "title": "Gardening",
   "slug": "gardening",
   "url": "https://www.scouting.org/merit-badges/gardening/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Gardening.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain to your counselor the most likely hazards associated with gardening and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Resource: How to Be Safe in the Garden (video)",
-              "resources": [
-                {
-                  "title": "How to Be Safe in the Garden (video)",
-                  "url": "https://youtu.be/XWNaWVOar3Q?si=5bJv6elbMcRZ92oX"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Discuss the prevention of and treatment for health concerns that could occur while gardening, including cuts, scratches, puncture wounds, insect bites, anaphylactic shock, heat reactions, and reactions from exposure to pesticides and fertilizers. Resource: Pesticide Safety (video)",
-              "resources": [
-                {
-                  "title": "Pesticide Safety (video)",
-                  "url": "https://youtu.be/fMidlx7VB0A?si=v5o_p4iwXa6Dxy8A"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "2",
-          "text": "Do the following, and discuss your observations throughout the process with your counselor:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Grow six vegetables, three from seeds and three from seedlings, through harvest. Resource: Seed Starting 101 (video)",
-              "resources": [
-                {
-                  "title": "Seed Starting 101 (video)",
-                  "url": "https://youtu.be/bRWac1OpxPY?si=h96A-L4r9Yb5Qcy3"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Grow six flowers, three from seeds and three from seedlings, through flowering. Resource: How to Start Seeds Indoors (video)",
-              "resources": [
-                {
-                  "title": "How to Start Seeds Indoors (video)",
-                  "url": "https://youtu.be/kcLMLyTAKmo?si=Suj-BOnu6B6-ELxu"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "3",
-          "text": "Give the nutritional value of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Three root or tuber crops",
-              "resources": [
-                {
-                  "title": "Taro (video)",
-                  "url": "https://youtu.be/0VjgXZBKfuQ?si=Uw0UYQkPgWfgqQfx"
-                },
-                {
-                  "title": "Sweet Potatoes (video)",
-                  "url": "https://youtu.be/o7ZwuSd8KRg?si=EEj5qNHCID4FDxYX"
-                },
-                {
-                  "title": "Potatoes (video)",
-                  "url": "https://youtu.be/3qCh8KZw_e0?si=f9aIa5z8f8LDDeLm"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Three vegetables that bear above the ground",
-              "resources": [
-                {
-                  "title": "Lettuce (video)",
-                  "url": "https://youtu.be/kzX-0rUbkOo?si=9hpUmjCR-dFy9sTi"
-                },
-                {
-                  "title": "Tomatoes (video)",
-                  "url": "https://youtu.be/niTBMlWtW5w?si=gksvt0kr-ZljJtEh"
-                },
-                {
-                  "title": "Cucumbers (video)",
-                  "url": "https://youtu.be/MVXr7HEMQMU?si=2fpKBoE4NAxMTNdx"
-                }
-              ]
-            },
-            {
-              "req_id": "c",
-              "text": "Three fruits.",
-              "resources": [
-                {
-                  "title": "Grapes (video)",
-                  "url": "https://youtu.be/NLS15CrmEYU?si=6Sl4-RSS8dd2d0BS"
-                },
-                {
-                  "title": "Apples (video)",
-                  "url": "https://youtu.be/0yEPKXlYQqQ?si=MLy5YBr_XZ34hQEN"
-                },
-                {
-                  "title": "Oranges (video)",
-                  "url": "https://youtu.be/DkxhGscNC18?si=iny8kROTvx7-PKkq&t=1"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "4",
-          "text": "Test 100 seeds for germination. Determine the percentage of seeds that germinate. Explain why you think some did not germinate. Resource: Seed Germination Test (video)",
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain to your counselor the most likely hazards associated with gardening and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Resource: How to Be Safe in the Garden (video)",
           "resources": [
             {
-              "title": "Seed Germination Test (video)",
-              "url": "https://youtu.be/E0jzPVGiKHs?si=6sRjzeuX1P0CgsSA"
+              "title": "How to Be Safe in the Garden (video)",
+              "url": "https://youtu.be/XWNaWVOar3Q?si=5bJv6elbMcRZ92oX"
             }
           ]
         },
         {
-          "req_id": "5",
-          "text": "Visit your county extension agent's office, local university, agricultural college, nursery, farm, or a botanical garden or arboretum. Report on what you learned. Resource: Eyes on Agriculture (video)",
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Discuss the prevention of and treatment for health concerns that could occur while gardening, including cuts, scratches, puncture wounds, insect bites, anaphylactic shock, heat reactions, and reactions from exposure to pesticides and fertilizers. Resource: Pesticide Safety (video)",
           "resources": [
             {
-              "title": "Eyes on Agriculture  (video)",
-              "url": "https://youtu.be/zMB6lTyXdnE?si=LtY7M54LNZpkafpn"
+              "title": "Pesticide Safety (video)",
+              "url": "https://youtu.be/fMidlx7VB0A?si=v5o_p4iwXa6Dxy8A"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Do the following, and discuss your observations throughout the process with your counselor:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Grow six vegetables, three from seeds and three from seedlings, through harvest. Resource: Seed Starting 101 (video)",
+          "resources": [
+            {
+              "title": "Seed Starting 101 (video)",
+              "url": "https://youtu.be/bRWac1OpxPY?si=h96A-L4r9Yb5Qcy3"
             }
           ]
         },
         {
-          "req_id": "6",
-          "text": "Explain to your counselor how and why honeybees are used in pollinating food crops and the problems that face the bee population today. Discuss what the impact to humanity would be if there were no pollinators.",
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Grow six flowers, three from seeds and three from seedlings, through flowering. Resource: How to Start Seeds Indoors (video)",
           "resources": [
             {
-              "title": "All About Bees (video)",
-              "url": "https://youtu.be/Kdm9daKTRsc?si=I5GPFtrnBBb3RwPu"
+              "title": "How to Start Seeds Indoors (video)",
+              "url": "https://youtu.be/kcLMLyTAKmo?si=Suj-BOnu6B6-ELxu"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Give the nutritional value of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Three root or tuber crops",
+          "resources": [
+            {
+              "title": "Taro (video)",
+              "url": "https://youtu.be/0VjgXZBKfuQ?si=Uw0UYQkPgWfgqQfx"
             },
             {
-              "title": "Why Bees Are Important (video)",
-              "url": "https://youtu.be/Jzp6H8BAJ7o?si=GSLeo8yCvfJUS-4e"
+              "title": "Sweet Potatoes (video)",
+              "url": "https://youtu.be/o7ZwuSd8KRg?si=EEj5qNHCID4FDxYX"
+            },
+            {
+              "title": "Potatoes (video)",
+              "url": "https://youtu.be/3qCh8KZw_e0?si=f9aIa5z8f8LDDeLm"
             }
           ]
         },
         {
-          "req_id": "7",
-          "text": "Identify five garden pests (insects, diseased plants). Recommend two solutions for each pest. At least one of the two solutions must be an organic method.",
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Three vegetables that bear above the ground",
           "resources": [
             {
-              "title": "5 Organic Methods to Control Pests in Your Garden, Finally a Way to Fight Back! (video)",
-              "url": "https://youtu.be/JXEtmKRnMZk?si=itMLTvAvBfDXA8w4"
+              "title": "Lettuce (video)",
+              "url": "https://youtu.be/kzX-0rUbkOo?si=9hpUmjCR-dFy9sTi"
             },
             {
-              "title": "7 Pests You Probably Have in Your Garden (and What to Do) (video)",
-              "url": "https://youtu.be/em5t8bScq9s?si=kj3Qye8wAYMEvWhA"
+              "title": "Tomatoes (video)",
+              "url": "https://youtu.be/niTBMlWtW5w?si=gksvt0kr-ZljJtEh"
+            },
+            {
+              "title": "Cucumbers (video)",
+              "url": "https://youtu.be/MVXr7HEMQMU?si=2fpKBoE4NAxMTNdx"
             }
           ]
         },
         {
-          "req_id": "8",
-          "text": "Do ONE of the following and record weekly observations. Discuss the results of your project with your counselor.",
-          "subrequirements": [
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Three fruits.",
+          "resources": [
             {
-              "req_id": "a",
-              "text": "Build a compost bin and maintain it for 90 days. Resource: 5 Minute Compost Bin (video)",
-              "resources": [
-                {
-                  "title": "5 Minute Compost Bin (video)",
-                  "url": "https://youtu.be/B43nL_xGs5Q?si=mLxGeUVlKRMG2T9n"
-                }
-              ]
+              "title": "Grapes (video)",
+              "url": "https://youtu.be/NLS15CrmEYU?si=6Sl4-RSS8dd2d0BS"
             },
             {
-              "req_id": "b",
-              "text": "Build a vermipost bin (worm compost bin) and maintain it for 90 days. Resource: How to Build a Worm Composter: A Simple DIY Vermicomposting Project (video)",
-              "resources": [
-                {
-                  "title": "How to Build a Worm Composter: A Simple DIY Vermicomposting Project (video)",
-                  "url": "https://youtu.be/C31jh3ohFwc?si=JaK1BOm1Zdj-9Cao"
-                }
-              ]
+              "title": "Apples (video)",
+              "url": "https://youtu.be/0yEPKXlYQqQ?si=MLy5YBr_XZ34hQEN"
             },
             {
-              "req_id": "c",
-              "text": "Build a hydroponic garden containing three vegetables or herbs, or three ornamental plants. Maintain this garden through harvest or flowering, or for 90 days.",
-              "resources": [
-                {
-                  "title": "Hydroponics Bucket Grower for UNDER $40! (video)",
-                  "url": "https://youtu.be/JZCNd4THUhs?si=9vDD-oMODBjJM8-z"
-                },
-                {
-                  "title": "How To Build Your Own Hydroponics System (video)",
-                  "url": "https://youtu.be/Z_3ccmK6NVM?si=e0HLkGdP-M1otv22"
-                }
-              ]
-            },
-            {
-              "req_id": "d",
-              "text": "Build one water garden, either in a container (at least 12 by 6 inches and 6 inches deep), or in the ground as a small, decorative pond no larger than 6 by 3 feet and 24 inches deep. Maintain the water garden for 90 days. Resource: How to Create a Water Garden in a Pot (video)",
-              "resources": [
-                {
-                  "title": "How to Create a Water Garden in a Pot (video)",
-                  "url": "https://youtu.be/Y2ZL-9hRtLc?si=wxK-wWUh_DNaTdsX"
-                }
-              ]
-            },
-            {
-              "req_id": "e",
-              "text": "Prepare a honey super for use on a hive or colony. Remove a filled honey super from the hive or colony and prepare the honey for sale. Resource: Setting Up Your Honey Super (video)",
-              "resources": [
-                {
-                  "title": "Setting Up Your Honey Super (video)",
-                  "url": "https://youtu.be/TGdH4vtR3JM?si=o8S51hqQASjVsbxc"
-                }
-              ]
-            },
-            {
-              "req_id": "f",
-              "text": "Grow a garden of your own using soil from seed or plantings to harvest or for 90 days, whichever is earlier. This can be an outdoor garden or indoors using appropriate containers, and should include at least three types of plants approved by your counselor. Resource: Start a Garden | Step-by-Step | Gardening Tips (video)",
-              "resources": [
-                {
-                  "title": "Start a Garden | Step-by-Step | Gardening Tips (video)",
-                  "url": "https://youtu.be/EPmV8iqZIps?si=OsN9RZoNPdfpWJxb"
-                }
-              ]
+              "title": "Oranges (video)",
+              "url": "https://youtu.be/DkxhGscNC18?si=iny8kROTvx7-PKkq&t=1"
             }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
-        },
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Test 100 seeds for germination. Determine the percentage of seeds that germinate. Explain why you think some did not germinate. Resource: Seed Germination Test (video)",
+      "resources": [
         {
-          "req_id": "9",
-          "text": "Do ONE of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Identify three career opportunities that would use skills and knowledge in gardening. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career. Resource: Gardener - Career Spotlight (video)",
-              "resources": [
-                {
-                  "title": "Gardener - Career Spotlight (video)",
-                  "url": "https://youtu.be/RVIvWuZ-TUk?si=Iyu26yzBvJHanASD"
-                }
-              ]
-            },
-            {
-              "req_id": "b",
-              "text": "Identify how you might use the skills and knowledge in gardening to pursue a personal hobby and/or healthy lifestyle. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this. Resource: Benefits of Gardening as a Hobby and Why You Should Be a Gardener (video)",
-              "resources": [
-                {
-                  "title": "Benefits of Gardening as a Hobby and Why You Should Be a Gardener (video)",
-                  "url": "https://youtu.be/iVecXN-JQ64?si=Oi7akvlN2S3UerRT"
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
+          "title": "Seed Germination Test (video)",
+          "url": "https://youtu.be/E0jzPVGiKHs?si=6sRjzeuX1P0CgsSA"
         }
       ]
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Visit your county extension agent's office, local university, agricultural college, nursery, farm, or a botanical garden or arboretum. Report on what you learned. Resource: Eyes on Agriculture (video)",
+      "resources": [
+        {
+          "title": "Eyes on Agriculture  (video)",
+          "url": "https://youtu.be/zMB6lTyXdnE?si=LtY7M54LNZpkafpn"
+        }
+      ]
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Explain to your counselor how and why honeybees are used in pollinating food crops and the problems that face the bee population today. Discuss what the impact to humanity would be if there were no pollinators.",
+      "resources": [
+        {
+          "title": "All About Bees (video)",
+          "url": "https://youtu.be/Kdm9daKTRsc?si=I5GPFtrnBBb3RwPu"
+        },
+        {
+          "title": "Why Bees Are Important (video)",
+          "url": "https://youtu.be/Jzp6H8BAJ7o?si=GSLeo8yCvfJUS-4e"
+        }
+      ]
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Identify five garden pests (insects, diseased plants). Recommend two solutions for each pest. At least one of the two solutions must be an organic method.",
+      "resources": [
+        {
+          "title": "5 Organic Methods to Control Pests in Your Garden, Finally a Way to Fight Back! (video)",
+          "url": "https://youtu.be/JXEtmKRnMZk?si=itMLTvAvBfDXA8w4"
+        },
+        {
+          "title": "7 Pests You Probably Have in Your Garden (and What to Do) (video)",
+          "url": "https://youtu.be/em5t8bScq9s?si=kj3Qye8wAYMEvWhA"
+        }
+      ]
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Do ONE of the following and record weekly observations. Discuss the results of your project with your counselor.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "8.a",
+          "text": "Build a compost bin and maintain it for 90 days. Resource: 5 Minute Compost Bin (video)",
+          "resources": [
+            {
+              "title": "5 Minute Compost Bin (video)",
+              "url": "https://youtu.be/B43nL_xGs5Q?si=mLxGeUVlKRMG2T9n"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "8.b",
+          "text": "Build a vermipost bin (worm compost bin) and maintain it for 90 days. Resource: How to Build a Worm Composter: A Simple DIY Vermicomposting Project (video)",
+          "resources": [
+            {
+              "title": "How to Build a Worm Composter: A Simple DIY Vermicomposting Project (video)",
+              "url": "https://youtu.be/C31jh3ohFwc?si=JaK1BOm1Zdj-9Cao"
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "8.c",
+          "text": "Build a hydroponic garden containing three vegetables or herbs, or three ornamental plants. Maintain this garden through harvest or flowering, or for 90 days.",
+          "resources": [
+            {
+              "title": "Hydroponics Bucket Grower for UNDER $40! (video)",
+              "url": "https://youtu.be/JZCNd4THUhs?si=9vDD-oMODBjJM8-z"
+            },
+            {
+              "title": "How To Build Your Own Hydroponics System (video)",
+              "url": "https://youtu.be/Z_3ccmK6NVM?si=e0HLkGdP-M1otv22"
+            }
+          ]
+        },
+        {
+          "req_id": "d",
+          "path": "8.d",
+          "text": "Build one water garden, either in a container (at least 12 by 6 inches and 6 inches deep), or in the ground as a small, decorative pond no larger than 6 by 3 feet and 24 inches deep. Maintain the water garden for 90 days. Resource: How to Create a Water Garden in a Pot (video)",
+          "resources": [
+            {
+              "title": "How to Create a Water Garden in a Pot (video)",
+              "url": "https://youtu.be/Y2ZL-9hRtLc?si=wxK-wWUh_DNaTdsX"
+            }
+          ]
+        },
+        {
+          "req_id": "e",
+          "path": "8.e",
+          "text": "Prepare a honey super for use on a hive or colony. Remove a filled honey super from the hive or colony and prepare the honey for sale. Resource: Setting Up Your Honey Super (video)",
+          "resources": [
+            {
+              "title": "Setting Up Your Honey Super (video)",
+              "url": "https://youtu.be/TGdH4vtR3JM?si=o8S51hqQASjVsbxc"
+            }
+          ]
+        },
+        {
+          "req_id": "f",
+          "path": "8.f",
+          "text": "Grow a garden of your own using soil from seed or plantings to harvest or for 90 days, whichever is earlier. This can be an outdoor garden or indoors using appropriate containers, and should include at least three types of plants approved by your counselor. Resource: Start a Garden | Step-by-Step | Gardening Tips (video)",
+          "resources": [
+            {
+              "title": "Start a Garden | Step-by-Step | Gardening Tips (video)",
+              "url": "https://youtu.be/EPmV8iqZIps?si=OsN9RZoNPdfpWJxb"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
+    },
+    {
+      "req_id": "9",
+      "path": "9",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "9.a",
+          "text": "Identify three career opportunities that would use skills and knowledge in gardening. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career. Resource: Gardener - Career Spotlight (video)",
+          "resources": [
+            {
+              "title": "Gardener - Career Spotlight (video)",
+              "url": "https://youtu.be/RVIvWuZ-TUk?si=Iyu26yzBvJHanASD"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "9.b",
+          "text": "Identify how you might use the skills and knowledge in gardening to pursue a personal hobby and/or healthy lifestyle. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this. Resource: Benefits of Gardening as a Hobby and Why You Should Be a Gardener (video)",
+          "resources": [
+            {
+              "title": "Benefits of Gardening as a Hobby and Why You Should Be a Gardener (video)",
+              "url": "https://youtu.be/iVecXN-JQ64?si=Oi7akvlN2S3UerRT"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

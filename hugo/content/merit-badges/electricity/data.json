@@ -1,194 +1,225 @@
 {
-  "id": "electricity",
   "title": "Electricity",
   "slug": "electricity",
   "url": "https://www.scouting.org/merit-badges/electricity/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Electricity.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Demonstrate that you know how to respond to electrical emergencies by doing the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Demonstrate that you know how to respond to electrical emergencies by doing the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain how to turn off power for a particular circuit and the whole house in the event of an emergency."
-            },
-            {
-              "req_id": "b",
-              "text": "Demonstrate how to rescue a person touching a live wire in the home."
-            },
-            {
-              "req_id": "c",
-              "text": "Describe how to safely get out of a car in an accident if you suspect a utility wire is on the car."
-            },
-            {
-              "req_id": "d",
-              "text": "Show how to render first aid to a person who is unconscious from an apparent electrical shock."
-            },
-            {
-              "req_id": "e",
-              "text": "Show how to treat an electrical burn."
-            },
-            {
-              "req_id": "f",
-              "text": "Explain what to do in the event of an electrical fire."
-            },
-            {
-              "req_id": "g",
-              "text": "Explain what to do if caught out in the open during an electrical storm."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain how to turn off power for a particular circuit and the whole house in the event of an emergency."
         },
         {
-          "req_id": "2",
-          "text": "Complete an electrical home safety inspection of your home, using the checklist found in the Electricity merit badge pamphlet or one approved by your counselor. Discuss what you find with your counselor."
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Demonstrate how to rescue a person touching a live wire in the home."
         },
         {
-          "req_id": "3",
-          "text": "Make a simple electromagnet and use it to show magnetic attraction and repulsion."
+          "req_id": "c",
+          "path": "1.c",
+          "text": "Describe how to safely get out of a car in an accident if you suspect a utility wire is on the car."
         },
         {
-          "req_id": "4",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain the difference between direct current and alternating current, the advantages and disadvantages of each, and give a practical example of the use of each type."
-            },
-            {
-              "req_id": "b",
-              "text": "Explain three ways that electricity is produced."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "d",
+          "path": "1.d",
+          "text": "Show how to render first aid to a person who is unconscious from an apparent electrical shock."
         },
         {
-          "req_id": "5",
-          "text": "Make a simple drawing to show how a battery and an electric bell work. Describe the purpose of each of the components."
+          "req_id": "e",
+          "path": "1.e",
+          "text": "Show how to treat an electrical burn."
         },
         {
-          "req_id": "6",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Define what overloading an electric circuit means. Tell what you have done to make sure your home circuits are not overloaded."
-            },
-            {
-              "req_id": "b",
-              "text": "Determine if there is an overload on a branch circuit by either getting the current draw from all the equipment plugged into the circuit or use the power equation to calculate the current draws."
-            },
-            {
-              "req_id": "c",
-              "text": "Explain why a fuse blows and a circuit breaker trips."
-            },
-            {
-              "req_id": "d",
-              "text": "Tell how to find a blown fuse and a tripped circuit breaker in your home. Show how to safely reset the circuit breaker."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "f",
+          "path": "1.f",
+          "text": "Explain what to do in the event of an electrical fire."
         },
         {
-          "req_id": "7",
-          "text": "Make a floor plan wiring diagram of the lights, switches, and outlets for a room in your home. Show which fuse or circuit breaker protects each one."
-        },
-        {
-          "req_id": "8",
-          "text": "Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Read a meter associated with an electric bill. Determine the total power used since the bill, and the cost of that power."
-            },
-            {
-              "req_id": "b",
-              "text": "Explain other charges on the bill that were taxes or fees."
-            },
-            {
-              "req_id": "c",
-              "text": "Discuss with your counselor five ways your family can conserve energy."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "9",
-          "text": "Explain the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Electrical terms - Current, energy, power, resistance, and voltage"
-            },
-            {
-              "req_id": "b",
-              "text": "Units of measure - Ampere (amps), ohms, volts, watts, and watt-hours"
-            },
-            {
-              "req_id": "c",
-              "text": "Electrical conditions - Generating source with example, ground, open circuit, overvoltage, potential difference, and short circuit"
-            },
-            {
-              "req_id": "d",
-              "text": "Equipment and their use - circuit, conductor, Ground Fault Circuit Interrupter (GFCI), insulator, inverter, rectifier, rheostat, substation, surge protection, solar panel, transformer, transmission and distribution systems, and wind turbine."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "10",
-          "text": "Do TWO of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Connect a buzzer, bell, or light with a battery. Have a key or switch in the line."
-            },
-            {
-              "req_id": "b",
-              "text": "Make and run a simple electric motor (from a kit is acceptable, if approved by your counselor ahead of time)."
-            },
-            {
-              "req_id": "c",
-              "text": "Build a simple rheostat. Show that it works."
-            },
-            {
-              "req_id": "d",
-              "text": "Build a single-pole, double-throw switch. Show that it works."
-            },
-            {
-              "req_id": "e",
-              "text": "Explain how 3-way switch wiring works in a lighting circuit."
-            },
-            {
-              "req_id": "f",
-              "text": "Connect two lights together in a series circuit along with a battery and a switch. Then connect the same circuit in parallel. Discuss the differences in the two circuits."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 2
-          }
-        },
-        {
-          "req_id": "11",
-          "text": "Identify three career opportunities that would use skills and knowledge in electricity. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+          "req_id": "g",
+          "path": "1.g",
+          "text": "Explain what to do if caught out in the open during an electrical storm."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Complete an electrical home safety inspection of your home, using the checklist found in the Electricity merit badge pamphlet or one approved by your counselor. Discuss what you find with your counselor."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Make a simple electromagnet and use it to show magnetic attraction and repulsion."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Explain the difference between direct current and alternating current, the advantages and disadvantages of each, and give a practical example of the use of each type."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Explain three ways that electricity is produced."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Make a simple drawing to show how a battery and an electric bell work. Describe the purpose of each of the components."
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "6.a",
+          "text": "Define what overloading an electric circuit means. Tell what you have done to make sure your home circuits are not overloaded."
+        },
+        {
+          "req_id": "b",
+          "path": "6.b",
+          "text": "Determine if there is an overload on a branch circuit by either getting the current draw from all the equipment plugged into the circuit or use the power equation to calculate the current draws."
+        },
+        {
+          "req_id": "c",
+          "path": "6.c",
+          "text": "Explain why a fuse blows and a circuit breaker trips."
+        },
+        {
+          "req_id": "d",
+          "path": "6.d",
+          "text": "Tell how to find a blown fuse and a tripped circuit breaker in your home. Show how to safely reset the circuit breaker."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Make a floor plan wiring diagram of the lights, switches, and outlets for a room in your home. Show which fuse or circuit breaker protects each one."
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "8.a",
+          "text": "Read a meter associated with an electric bill. Determine the total power used since the bill, and the cost of that power."
+        },
+        {
+          "req_id": "b",
+          "path": "8.b",
+          "text": "Explain other charges on the bill that were taxes or fees."
+        },
+        {
+          "req_id": "c",
+          "path": "8.c",
+          "text": "Discuss with your counselor five ways your family can conserve energy."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "9",
+      "path": "9",
+      "text": "Explain the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "9.a",
+          "text": "Electrical terms - Current, energy, power, resistance, and voltage"
+        },
+        {
+          "req_id": "b",
+          "path": "9.b",
+          "text": "Units of measure - Ampere (amps), ohms, volts, watts, and watt-hours"
+        },
+        {
+          "req_id": "c",
+          "path": "9.c",
+          "text": "Electrical conditions - Generating source with example, ground, open circuit, overvoltage, potential difference, and short circuit"
+        },
+        {
+          "req_id": "d",
+          "path": "9.d",
+          "text": "Equipment and their use - circuit, conductor, Ground Fault Circuit Interrupter (GFCI), insulator, inverter, rectifier, rheostat, substation, surge protection, solar panel, transformer, transmission and distribution systems, and wind turbine."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "10",
+      "path": "10",
+      "text": "Do TWO of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "10.a",
+          "text": "Connect a buzzer, bell, or light with a battery. Have a key or switch in the line."
+        },
+        {
+          "req_id": "b",
+          "path": "10.b",
+          "text": "Make and run a simple electric motor (from a kit is acceptable, if approved by your counselor ahead of time)."
+        },
+        {
+          "req_id": "c",
+          "path": "10.c",
+          "text": "Build a simple rheostat. Show that it works."
+        },
+        {
+          "req_id": "d",
+          "path": "10.d",
+          "text": "Build a single-pole, double-throw switch. Show that it works."
+        },
+        {
+          "req_id": "e",
+          "path": "10.e",
+          "text": "Explain how 3-way switch wiring works in a lighting circuit."
+        },
+        {
+          "req_id": "f",
+          "path": "10.f",
+          "text": "Connect two lights together in a series circuit along with a battery and a switch. Then connect the same circuit in parallel. Discuss the differences in the two circuits."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 2
+      }
+    },
+    {
+      "req_id": "11",
+      "path": "11",
+      "text": "Identify three career opportunities that would use skills and knowledge in electricity. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
   ]
 }

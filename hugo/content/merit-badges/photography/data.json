@@ -1,186 +1,213 @@
 {
-  "id": "photography",
   "title": "Photography",
   "slug": "photography",
   "url": "https://www.scouting.org/merit-badges/photography/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Photography.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Safety. Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Safety. Do the following:",
-          "subrequirements": [
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain to your counselor the most likely hazards you may encounter while working with photography and what you should do to anticipate, mitigate, prevent, and respond to these hazards. Explain how you would prepare for exposure to environmental situations such as weather, sun, and water."
+        },
+        {
+          "req_id": "b",
+          "path": "1.b",
+          "text": "View the Personal Safety Awareness \"Digital Safety\" video (with your parent or guardian's permission).",
+          "resources": [
             {
-              "req_id": "a",
-              "text": "Explain to your counselor the most likely hazards you may encounter while working with photography and what you should do to anticipate, mitigate, prevent, and respond to these hazards. Explain how you would prepare for exposure to environmental situations such as weather, sun, and water."
-            },
-            {
-              "req_id": "b",
-              "text": "View the Personal Safety Awareness \"Digital Safety\" video (with your parent or guardian's permission).",
-              "resources": [
-                {
-                  "title": "Personal Safety Awareness \"Digital Safety\" video",
-                  "url": "https://www.scouting.org/training/youth-protection/scouts-bsa/"
-                }
-              ]
+              "title": "Personal Safety Awareness \"Digital Safety\" video",
+              "url": "https://www.scouting.org/training/youth-protection/scouts-bsa/"
             }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "2",
-          "text": "Explain how the following elements and terms can affect the quality of a picture:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Light—natural light (ambient/existing), low light (such as at night), and artificial light (such as from a flash)"
-            },
-            {
-              "req_id": "b",
-              "text": "Exposure—aperture (f-stops), shutter speed, ISO"
-            },
-            {
-              "req_id": "c",
-              "text": "Depth of field"
-            },
-            {
-              "req_id": "d",
-              "text": "Composition—rule of thirds, leading lines, framing, depth"
-            },
-            {
-              "req_id": "e",
-              "text": "Angle of view"
-            },
-            {
-              "req_id": "f",
-              "text": "Stop action and blur motion"
-            },
-            {
-              "req_id": "g",
-              "text": "Decisive moment (action or expression captured by the photographer)."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "3",
-          "text": "Explain the basic parts and operation of a camera. Explain how an exposure is made when you take a picture."
-        },
-        {
-          "req_id": "4",
-          "text": "Do TWO of the following, then share your work with your counselor.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Photograph one subject from two different angles or perspectives."
-            },
-            {
-              "req_id": "b",
-              "text": "Photograph one subject from two different light sources - artificial and natural."
-            },
-            {
-              "req_id": "c",
-              "text": "Photograph one subject with two different depth of fields."
-            },
-            {
-              "req_id": "d",
-              "text": "Photograph one subject with two different compositional techniques."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 2
-          }
-        },
-        {
-          "req_id": "5",
-          "text": "Photograph THREE of the following, then share your work with your counselor.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Close-up of a person"
-            },
-            {
-              "req_id": "b",
-              "text": "Two to three people interacting"
-            },
-            {
-              "req_id": "c",
-              "text": "Action shot"
-            },
-            {
-              "req_id": "d",
-              "text": "Animal shot"
-            },
-            {
-              "req_id": "e",
-              "text": "Nature shot"
-            },
-            {
-              "req_id": "f",
-              "text": "Picture of a person - candid, posed, or camera aware."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 3
-          }
-        },
-        {
-          "req_id": "6",
-          "text": "Describe how software allows you to enhance your photograph after it is taken. Select a photo you have taken, then do ONE of the following, and share what you have done with your counselor.",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Crop your photograph"
-            },
-            {
-              "req_id": "b",
-              "text": "Adjust the exposure or make a color correction"
-            },
-            {
-              "req_id": "c",
-              "text": "Show another way you could improve your picture for impact."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
-        },
-        {
-          "req_id": "7",
-          "text": "Using images other than those created for requirements 4, 5, or 6, produce a visual story to document an event to photograph OR choose a topic that interests you to photograph. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Plan the images you need to photograph for your photo story."
-            },
-            {
-              "req_id": "b",
-              "text": "Share your plan with your counselor, and get your counselor's input and approval before you proceed."
-            },
-            {
-              "req_id": "c",
-              "text": "Select eight to 12 images that best tell your story. Arrange your images in order and mount the prints on a poster board, OR create an electronic presentation. Share your visual story with your counselor."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "8",
-          "text": "Identify three career opportunities in photography. Pick one and explain to your counselor how to prepare for such a career. Discuss what education and training are required, and why this profession might interest you."
+          ]
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Explain how the following elements and terms can affect the quality of a picture:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Light—natural light (ambient/existing), low light (such as at night), and artificial light (such as from a flash)"
+        },
+        {
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Exposure—aperture (f-stops), shutter speed, ISO"
+        },
+        {
+          "req_id": "c",
+          "path": "2.c",
+          "text": "Depth of field"
+        },
+        {
+          "req_id": "d",
+          "path": "2.d",
+          "text": "Composition—rule of thirds, leading lines, framing, depth"
+        },
+        {
+          "req_id": "e",
+          "path": "2.e",
+          "text": "Angle of view"
+        },
+        {
+          "req_id": "f",
+          "path": "2.f",
+          "text": "Stop action and blur motion"
+        },
+        {
+          "req_id": "g",
+          "path": "2.g",
+          "text": "Decisive moment (action or expression captured by the photographer)."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Explain the basic parts and operation of a camera. Explain how an exposure is made when you take a picture."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Do TWO of the following, then share your work with your counselor.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Photograph one subject from two different angles or perspectives."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Photograph one subject from two different light sources - artificial and natural."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Photograph one subject with two different depth of fields."
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Photograph one subject with two different compositional techniques."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 2
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Photograph THREE of the following, then share your work with your counselor.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Close-up of a person"
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Two to three people interacting"
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Action shot"
+        },
+        {
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Animal shot"
+        },
+        {
+          "req_id": "e",
+          "path": "5.e",
+          "text": "Nature shot"
+        },
+        {
+          "req_id": "f",
+          "path": "5.f",
+          "text": "Picture of a person - candid, posed, or camera aware."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 3
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Describe how software allows you to enhance your photograph after it is taken. Select a photo you have taken, then do ONE of the following, and share what you have done with your counselor.",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "6.a",
+          "text": "Crop your photograph"
+        },
+        {
+          "req_id": "b",
+          "path": "6.b",
+          "text": "Adjust the exposure or make a color correction"
+        },
+        {
+          "req_id": "c",
+          "path": "6.c",
+          "text": "Show another way you could improve your picture for impact."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Using images other than those created for requirements 4, 5, or 6, produce a visual story to document an event to photograph OR choose a topic that interests you to photograph. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Plan the images you need to photograph for your photo story."
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Share your plan with your counselor, and get your counselor's input and approval before you proceed."
+        },
+        {
+          "req_id": "c",
+          "path": "7.c",
+          "text": "Select eight to 12 images that best tell your story. Arrange your images in order and mount the prints on a poster board, OR create an electronic presentation. Share your visual story with your counselor."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Identify three career opportunities in photography. Pick one and explain to your counselor how to prepare for such a career. Discuss what education and training are required, and why this profession might interest you."
     }
   ]
 }

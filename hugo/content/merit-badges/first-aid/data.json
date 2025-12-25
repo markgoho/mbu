@@ -1,516 +1,616 @@
 {
-  "id": "first-aid",
   "title": "First Aid",
   "slug": "first-aid",
   "url": "https://www.scouting.org/merit-badges/first-aid/",
   "eagle_required": true,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/First%20Aid.pdf",
-  "sections": [
+  "requirements": [
     {
-      "title": "Requirements",
-      "requirements": [
+      "req_id": "1",
+      "path": "1",
+      "text": "Handling a First Aid Emergency. Do the following:",
+      "subrequirements": [
         {
-          "req_id": "1",
-          "text": "Handling a First Aid Emergency. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain the steps necessary to assess and handle a first aid emergency, including a safety evaluation of the scene."
-            },
-            {
-              "req_id": "b",
-              "text": "Tell how you would obtain emergency medical assistance from your home and from a remote location on a wilderness camping trip."
-            },
-            {
-              "req_id": "c",
-              "text": "Demonstrate the precautions you must take to reduce the risk of transmitting an infection between you and the victim while administering first aid, including the safe disposal of used first aid supplies."
-            },
-            {
-              "req_id": "d",
-              "text": "Demonstrate evaluation of and management of a patient's airway and breathing."
-            },
-            {
-              "req_id": "e",
-              "text": "Demonstrate a thorough examination of an accident victim."
-            },
-            {
-              "req_id": "f",
-              "text": "Discuss why shock is an emergency."
-            },
-            {
-              "req_id": "g",
-              "text": "Define the term triage and describe examples of triage situations that you may encounter."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain the steps necessary to assess and handle a first aid emergency, including a safety evaluation of the scene."
         },
         {
-          "req_id": "2",
-          "text": "Preparing for First Aid Emergencies. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Obtain a copy of the Scout Annual Health and Medical Record and discuss the importance of the form including information on immunizations, allergies, medications, health history, and medical examinations to providing first aid at Scouting events."
-            },
-            {
-              "req_id": "b",
-              "text": "Using checklists provided in the First Aid merit badge pamphlet or ones approved by your counselor, do the following:",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Assemble a personal first-aid kit for hiking and backpacking. Demonstrate the proper use of each item in your first-aid kit to your counselor."
-                },
-                {
-                  "req_id": "2",
-                  "text": "With your counselor, inspect a unit, home, vehicle, or camp first-aid kit and discuss your findings."
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Tell how you would obtain emergency medical assistance from your home and from a remote location on a wilderness camping trip."
         },
         {
-          "req_id": "3",
-          "text": "Wounds with No External Bleeding. Describe the symptoms and signs of, show first aid for, and explain prevention of these wounds:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Closed wounds, such as a bruise (contusion) or a hematoma"
-            },
-            {
-              "req_id": "b",
-              "text": "Superficial, partial thickness, and full thickness thermal (heat) burns or scalds"
-            },
-            {
-              "req_id": "c",
-              "text": "Chemical burns"
-            },
-            {
-              "req_id": "d",
-              "text": "Electrical burns"
-            },
-            {
-              "req_id": "e",
-              "text": "Sunburn"
-            },
-            {
-              "req_id": "f",
-              "text": "Snow blindness"
-            },
-            {
-              "req_id": "g",
-              "text": "Immersion foot, frostnip, frostbite, and ice burns"
-            },
-            {
-              "req_id": "h",
-              "text": "Abrasions, such as chafing and rope burns"
-            },
-            {
-              "req_id": "i",
-              "text": "Blisters on the hands, feet, buttocks, and shoulders"
-            },
-            {
-              "req_id": "j",
-              "text": "Puncture wounds from splinters, rope splinters, nails, and fish hooks"
-            },
-            {
-              "req_id": "k",
-              "text": "Rash from poisonous plants"
-            },
-            {
-              "req_id": "l",
-              "text": "Bug bites of chiggers, ticks, mosquitoes, and biting gnats"
-            },
-            {
-              "req_id": "m",
-              "text": "Bee stings"
-            },
-            {
-              "req_id": "n",
-              "text": "Bites of spiders"
-            },
-            {
-              "req_id": "o",
-              "text": "Sting of a scorpion"
-            },
-            {
-              "req_id": "p",
-              "text": "Bite of a pet or wild mammal or human"
-            },
-            {
-              "req_id": "q",
-              "text": "Bite of a venomous snake."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "c",
+          "path": "1.c",
+          "text": "Demonstrate the precautions you must take to reduce the risk of transmitting an infection between you and the victim while administering first aid, including the safe disposal of used first aid supplies."
         },
         {
-          "req_id": "4",
-          "text": "Bleeding Wounds. Describe the symptoms and signs of, show first aid for, and explain prevention of these wounds:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "A nosebleed."
-            },
-            {
-              "req_id": "b",
-              "text": "An open wound with mild or moderate bleeding, such as a scratch or a scrape (abrasions), or a shallow cut (laceration)."
-            },
-            {
-              "req_id": "c",
-              "text": "An open wound with severe bleeding such as a deep cut on an arm or leg."
-            },
-            {
-              "req_id": "d",
-              "text": "Explain when it is appropriate and is not appropriate to use one or more tourniquets. List some of the benefits and dangers of using a tourniquet. Demonstrate the application of a tourniquet without tightening it."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "d",
+          "path": "1.d",
+          "text": "Demonstrate evaluation of and management of a patient's airway and breathing."
         },
         {
-          "req_id": "5",
-          "text": "Breathing Emergencies. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions affecting breathing:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Choking"
-            },
-            {
-              "req_id": "b",
-              "text": "Asthmatic attack"
-            },
-            {
-              "req_id": "c",
-              "text": "Anaphylaxis from an insect bite or sting or from food or product allergy"
-            },
-            {
-              "req_id": "d",
-              "text": "Inhalation injuries"
-            },
-            {
-              "req_id": "e",
-              "text": "Altitude sickness."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "e",
+          "path": "1.e",
+          "text": "Demonstrate a thorough examination of an accident victim."
         },
         {
-          "req_id": "6",
-          "text": "Loss of Consciousness. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions causing loss of consciousness:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Fainting"
-            },
-            {
-              "req_id": "b",
-              "text": "Hypoglycemia"
-            },
-            {
-              "req_id": "c",
-              "text": "Seizure"
-            },
-            {
-              "req_id": "d",
-              "text": "Drug overdose and alcohol poisoning"
-            },
-            {
-              "req_id": "e",
-              "text": "Underwater hypoxic blackout"
-            },
-            {
-              "req_id": "f",
-              "text": "Cold water shock and drowning"
-            },
-            {
-              "req_id": "g",
-              "text": "Lightning strike and electric shock."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
+          "req_id": "f",
+          "path": "1.f",
+          "text": "Discuss why shock is an emergency."
         },
         {
-          "req_id": "7",
-          "text": "Heart Attack. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain what a heart attack is."
-            },
-            {
-              "req_id": "b",
-              "text": "Describe the symptoms and signs of a heart attack and first aid for this condition."
-            },
-            {
-              "req_id": "c",
-              "text": "Describe the conditions that must exist before performing CPR on a person."
-            },
-            {
-              "req_id": "d",
-              "text": "Demonstrate proper CPR technique using a training device approved by your counselor."
-            },
-            {
-              "req_id": "e",
-              "text": "Explain the use of an automated external defibrillator (AED)."
-            },
-            {
-              "req_id": "f",
-              "text": "Demonstrate or simulate the proper use of an AED, using an AED training device if available."
-            },
-            {
-              "req_id": "g",
-              "text": "Identify the typical location(s) of one or more AED(s) at public facilities in your community, such as, your school, place of worship, unit meeting place, sports facilities, and/or camp or by using a smart phone app. Discuss the reasons for choosing locations like these."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "8",
-          "text": "Muscle and Bone Injuries. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Explain the similarities and differences in a strain, a muscle tear, a tendon rupture, a sprain, a dislocation, a simple fracture, and a compound fracture."
-            },
-            {
-              "req_id": "b",
-              "text": "Describe the symptoms and signs of and first aid for a muscle strain, a muscle tear, and a tendon rupture."
-            },
-            {
-              "req_id": "c",
-              "text": "Describe the symptoms and signs of, and potential complications of, a sprain, a fracture, and a dislocation."
-            },
-            {
-              "req_id": "d",
-              "text": "Demonstrate bandages for these injuries:",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Arm slings for forearm or upper arm or collarbone fractures"
-                },
-                {
-                  "req_id": "2",
-                  "text": "Elastic wrap and cravat bandages for ankle sprain"
-                },
-                {
-                  "req_id": "3",
-                  "text": "Elastic wrap and cravat bandages for wrist sprain or hand injury."
-                }
-              ]
-            },
-            {
-              "req_id": "e",
-              "text": "Demonstrate the proper procedures for handling and splinting of suspected closed or open fractures or dislocations of the:",
-              "subrequirements": [
-                {
-                  "req_id": "1",
-                  "text": "Finger and toe"
-                },
-                {
-                  "req_id": "2",
-                  "text": "Forearm or wrist"
-                },
-                {
-                  "req_id": "3",
-                  "text": "Upper leg"
-                },
-                {
-                  "req_id": "4",
-                  "text": "Lower leg or ankle."
-                }
-              ]
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "9",
-          "text": "Head and Spine Injuries. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Describe the symptoms and signs of, relationships between, possible complications of, and prevention of head, neck, and back injuries."
-            },
-            {
-              "req_id": "b",
-              "text": "Describe the symptoms and signs of and first aid for a concussion."
-            },
-            {
-              "req_id": "c",
-              "text": "Demonstrate first aid for an open head wound with a triangular or other bandage."
-            },
-            {
-              "req_id": "d",
-              "text": "Demonstrate first aid for someone with a suspected neck or back injury."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "10",
-          "text": "Moving a Patient. Do the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Describe the conditions under which an injured person should and should not be moved."
-            },
-            {
-              "req_id": "b",
-              "text": "If a sick or an injured person must be moved, tell how you would decide the best method. Demonstrate these methods."
-            },
-            {
-              "req_id": "c",
-              "text": "By yourself and with a partner, demonstrate how to transport a person from a smoke-filled room."
-            },
-            {
-              "req_id": "d",
-              "text": "By yourself and with a partner, demonstrate how to transport a person with a sprained ankle for at least 25 yards."
-            },
-            {
-              "req_id": "e",
-              "text": "With helpers under your supervision, improvise a stretcher and move a presumably unconscious person for at least 25 yards."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "11",
-          "text": "Heat- and Cold-Related Conditions. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions associated with exertion and/or heat or cold exposure:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Dehydration and over-hydration"
-            },
-            {
-              "req_id": "b",
-              "text": "Heat cramps and muscle pain after exertion"
-            },
-            {
-              "req_id": "c",
-              "text": "Heat exhaustion"
-            },
-            {
-              "req_id": "d",
-              "text": "Heat stroke"
-            },
-            {
-              "req_id": "e",
-              "text": "Chest pains associated with cold exposure"
-            },
-            {
-              "req_id": "f",
-              "text": "Hypothermia."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "12",
-          "text": "Mental Health Conditions. Describe the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Reactions associated with at least three stressful situations, such as mountain backpacking, rappelling, a ropes course, speaking before an audience, making a phone call to an adult, taking a swim test, missing home, lighting a match, trying out for a sports team, meeting someone for the first time, or other stressful circumstances."
-            },
-            {
-              "req_id": "b",
-              "text": "The actions that you and others should take to prepare for and manage these situations."
-            },
-            {
-              "req_id": "c",
-              "text": "The indications that someone might be a danger to themselves or others."
-            },
-            {
-              "req_id": "d",
-              "text": "The actions that you should take if you suspect that someone might be a danger to themselves or others."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "13",
-          "text": "Miscellaneous Conditions. Describe the symptoms and signs of, show first aid for, and explain prevention of the following conditions:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Object in the eye"
-            },
-            {
-              "req_id": "b",
-              "text": "Broken, chipped, loosened, or knocked out tooth"
-            },
-            {
-              "req_id": "c",
-              "text": "Vomiting and diarrhea associated with food poisoning"
-            },
-            {
-              "req_id": "d",
-              "text": "Abdominal pain"
-            },
-            {
-              "req_id": "e",
-              "text": "Stroke."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          }
-        },
-        {
-          "req_id": "14",
-          "text": "With guidance from your counselor, develop a plan to teach a first-aid skill or topic using the EDGE method. Discuss your skill, topic, and plan with your counselor, and then teach your skill or topic to your family or to one or more Scouts."
-        },
-        {
-          "req_id": "15",
-          "text": "Do ONE of the following:",
-          "subrequirements": [
-            {
-              "req_id": "a",
-              "text": "Visit an emergency medical station house or training center in person. From the medical first responders that you meet during your visit, learn about how they serve their community and about their careers. Discuss with your counselor what you learned during your tour and interviews."
-            },
-            {
-              "req_id": "b",
-              "text": "Interview an emergency medical services professional about their work. Learn about how they chose this career and about their duties. Discuss what you learned with your counselor and whether you might be interested in this career."
-            },
-            {
-              "req_id": "c",
-              "text": "Identify three career opportunities that would use skills and knowledge in emergency medical services. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
-            },
-            {
-              "req_id": "d",
-              "text": "Identify how you might use the skills and knowledge in the field of emergency medical services to pursue a personal hobby and/or healthy lifestyle. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "select",
-            "count": 1
-          }
+          "req_id": "g",
+          "path": "1.g",
+          "text": "Define the term triage and describe examples of triage situations that you may encounter."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Preparing for First Aid Emergencies. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Obtain a copy of the Scout Annual Health and Medical Record and discuss the importance of the form including information on immunizations, allergies, medications, health history, and medical examinations to providing first aid at Scouting events."
+        },
+        {
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Using checklists provided in the First Aid merit badge pamphlet or ones approved by your counselor, do the following:",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "2.b.1",
+              "text": "Assemble a personal first-aid kit for hiking and backpacking. Demonstrate the proper use of each item in your first-aid kit to your counselor."
+            },
+            {
+              "req_id": "2",
+              "path": "2.b.2",
+              "text": "With your counselor, inspect a unit, home, vehicle, or camp first-aid kit and discuss your findings."
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Wounds with No External Bleeding. Describe the symptoms and signs of, show first aid for, and explain prevention of these wounds:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Closed wounds, such as a bruise (contusion) or a hematoma"
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Superficial, partial thickness, and full thickness thermal (heat) burns or scalds"
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Chemical burns"
+        },
+        {
+          "req_id": "d",
+          "path": "3.d",
+          "text": "Electrical burns"
+        },
+        {
+          "req_id": "e",
+          "path": "3.e",
+          "text": "Sunburn"
+        },
+        {
+          "req_id": "f",
+          "path": "3.f",
+          "text": "Snow blindness"
+        },
+        {
+          "req_id": "g",
+          "path": "3.g",
+          "text": "Immersion foot, frostnip, frostbite, and ice burns"
+        },
+        {
+          "req_id": "h",
+          "path": "3.h",
+          "text": "Abrasions, such as chafing and rope burns"
+        },
+        {
+          "req_id": "i",
+          "path": "3.i",
+          "text": "Blisters on the hands, feet, buttocks, and shoulders"
+        },
+        {
+          "req_id": "j",
+          "path": "3.j",
+          "text": "Puncture wounds from splinters, rope splinters, nails, and fish hooks"
+        },
+        {
+          "req_id": "k",
+          "path": "3.k",
+          "text": "Rash from poisonous plants"
+        },
+        {
+          "req_id": "l",
+          "path": "3.l",
+          "text": "Bug bites of chiggers, ticks, mosquitoes, and biting gnats"
+        },
+        {
+          "req_id": "m",
+          "path": "3.m",
+          "text": "Bee stings"
+        },
+        {
+          "req_id": "n",
+          "path": "3.n",
+          "text": "Bites of spiders"
+        },
+        {
+          "req_id": "o",
+          "path": "3.o",
+          "text": "Sting of a scorpion"
+        },
+        {
+          "req_id": "p",
+          "path": "3.p",
+          "text": "Bite of a pet or wild mammal or human"
+        },
+        {
+          "req_id": "q",
+          "path": "3.q",
+          "text": "Bite of a venomous snake."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Bleeding Wounds. Describe the symptoms and signs of, show first aid for, and explain prevention of these wounds:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "A nosebleed."
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "An open wound with mild or moderate bleeding, such as a scratch or a scrape (abrasions), or a shallow cut (laceration)."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "An open wound with severe bleeding such as a deep cut on an arm or leg."
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Explain when it is appropriate and is not appropriate to use one or more tourniquets. List some of the benefits and dangers of using a tourniquet. Demonstrate the application of a tourniquet without tightening it."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Breathing Emergencies. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions affecting breathing:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Choking"
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Asthmatic attack"
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Anaphylaxis from an insect bite or sting or from food or product allergy"
+        },
+        {
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Inhalation injuries"
+        },
+        {
+          "req_id": "e",
+          "path": "5.e",
+          "text": "Altitude sickness."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Loss of Consciousness. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions causing loss of consciousness:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "6.a",
+          "text": "Fainting"
+        },
+        {
+          "req_id": "b",
+          "path": "6.b",
+          "text": "Hypoglycemia"
+        },
+        {
+          "req_id": "c",
+          "path": "6.c",
+          "text": "Seizure"
+        },
+        {
+          "req_id": "d",
+          "path": "6.d",
+          "text": "Drug overdose and alcohol poisoning"
+        },
+        {
+          "req_id": "e",
+          "path": "6.e",
+          "text": "Underwater hypoxic blackout"
+        },
+        {
+          "req_id": "f",
+          "path": "6.f",
+          "text": "Cold water shock and drowning"
+        },
+        {
+          "req_id": "g",
+          "path": "6.g",
+          "text": "Lightning strike and electric shock."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Heart Attack. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Explain what a heart attack is."
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Describe the symptoms and signs of a heart attack and first aid for this condition."
+        },
+        {
+          "req_id": "c",
+          "path": "7.c",
+          "text": "Describe the conditions that must exist before performing CPR on a person."
+        },
+        {
+          "req_id": "d",
+          "path": "7.d",
+          "text": "Demonstrate proper CPR technique using a training device approved by your counselor."
+        },
+        {
+          "req_id": "e",
+          "path": "7.e",
+          "text": "Explain the use of an automated external defibrillator (AED)."
+        },
+        {
+          "req_id": "f",
+          "path": "7.f",
+          "text": "Demonstrate or simulate the proper use of an AED, using an AED training device if available."
+        },
+        {
+          "req_id": "g",
+          "path": "7.g",
+          "text": "Identify the typical location(s) of one or more AED(s) at public facilities in your community, such as, your school, place of worship, unit meeting place, sports facilities, and/or camp or by using a smart phone app. Discuss the reasons for choosing locations like these."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Muscle and Bone Injuries. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "8.a",
+          "text": "Explain the similarities and differences in a strain, a muscle tear, a tendon rupture, a sprain, a dislocation, a simple fracture, and a compound fracture."
+        },
+        {
+          "req_id": "b",
+          "path": "8.b",
+          "text": "Describe the symptoms and signs of and first aid for a muscle strain, a muscle tear, and a tendon rupture."
+        },
+        {
+          "req_id": "c",
+          "path": "8.c",
+          "text": "Describe the symptoms and signs of, and potential complications of, a sprain, a fracture, and a dislocation."
+        },
+        {
+          "req_id": "d",
+          "path": "8.d",
+          "text": "Demonstrate bandages for these injuries:",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "8.d.1",
+              "text": "Arm slings for forearm or upper arm or collarbone fractures"
+            },
+            {
+              "req_id": "2",
+              "path": "8.d.2",
+              "text": "Elastic wrap and cravat bandages for ankle sprain"
+            },
+            {
+              "req_id": "3",
+              "path": "8.d.3",
+              "text": "Elastic wrap and cravat bandages for wrist sprain or hand injury."
+            }
+          ]
+        },
+        {
+          "req_id": "e",
+          "path": "8.e",
+          "text": "Demonstrate the proper procedures for handling and splinting of suspected closed or open fractures or dislocations of the:",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "8.e.1",
+              "text": "Finger and toe"
+            },
+            {
+              "req_id": "2",
+              "path": "8.e.2",
+              "text": "Forearm or wrist"
+            },
+            {
+              "req_id": "3",
+              "path": "8.e.3",
+              "text": "Upper leg"
+            },
+            {
+              "req_id": "4",
+              "path": "8.e.4",
+              "text": "Lower leg or ankle."
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "9",
+      "path": "9",
+      "text": "Head and Spine Injuries. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "9.a",
+          "text": "Describe the symptoms and signs of, relationships between, possible complications of, and prevention of head, neck, and back injuries."
+        },
+        {
+          "req_id": "b",
+          "path": "9.b",
+          "text": "Describe the symptoms and signs of and first aid for a concussion."
+        },
+        {
+          "req_id": "c",
+          "path": "9.c",
+          "text": "Demonstrate first aid for an open head wound with a triangular or other bandage."
+        },
+        {
+          "req_id": "d",
+          "path": "9.d",
+          "text": "Demonstrate first aid for someone with a suspected neck or back injury."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "10",
+      "path": "10",
+      "text": "Moving a Patient. Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "10.a",
+          "text": "Describe the conditions under which an injured person should and should not be moved."
+        },
+        {
+          "req_id": "b",
+          "path": "10.b",
+          "text": "If a sick or an injured person must be moved, tell how you would decide the best method. Demonstrate these methods."
+        },
+        {
+          "req_id": "c",
+          "path": "10.c",
+          "text": "By yourself and with a partner, demonstrate how to transport a person from a smoke-filled room."
+        },
+        {
+          "req_id": "d",
+          "path": "10.d",
+          "text": "By yourself and with a partner, demonstrate how to transport a person with a sprained ankle for at least 25 yards."
+        },
+        {
+          "req_id": "e",
+          "path": "10.e",
+          "text": "With helpers under your supervision, improvise a stretcher and move a presumably unconscious person for at least 25 yards."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "11",
+      "path": "11",
+      "text": "Heat- and Cold-Related Conditions. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions associated with exertion and/or heat or cold exposure:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "11.a",
+          "text": "Dehydration and over-hydration"
+        },
+        {
+          "req_id": "b",
+          "path": "11.b",
+          "text": "Heat cramps and muscle pain after exertion"
+        },
+        {
+          "req_id": "c",
+          "path": "11.c",
+          "text": "Heat exhaustion"
+        },
+        {
+          "req_id": "d",
+          "path": "11.d",
+          "text": "Heat stroke"
+        },
+        {
+          "req_id": "e",
+          "path": "11.e",
+          "text": "Chest pains associated with cold exposure"
+        },
+        {
+          "req_id": "f",
+          "path": "11.f",
+          "text": "Hypothermia."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "12",
+      "path": "12",
+      "text": "Mental Health Conditions. Describe the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "12.a",
+          "text": "Reactions associated with at least three stressful situations, such as mountain backpacking, rappelling, a ropes course, speaking before an audience, making a phone call to an adult, taking a swim test, missing home, lighting a match, trying out for a sports team, meeting someone for the first time, or other stressful circumstances."
+        },
+        {
+          "req_id": "b",
+          "path": "12.b",
+          "text": "The actions that you and others should take to prepare for and manage these situations."
+        },
+        {
+          "req_id": "c",
+          "path": "12.c",
+          "text": "The indications that someone might be a danger to themselves or others."
+        },
+        {
+          "req_id": "d",
+          "path": "12.d",
+          "text": "The actions that you should take if you suspect that someone might be a danger to themselves or others."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "13",
+      "path": "13",
+      "text": "Miscellaneous Conditions. Describe the symptoms and signs of, show first aid for, and explain prevention of the following conditions:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "13.a",
+          "text": "Object in the eye"
+        },
+        {
+          "req_id": "b",
+          "path": "13.b",
+          "text": "Broken, chipped, loosened, or knocked out tooth"
+        },
+        {
+          "req_id": "c",
+          "path": "13.c",
+          "text": "Vomiting and diarrhea associated with food poisoning"
+        },
+        {
+          "req_id": "d",
+          "path": "13.d",
+          "text": "Abdominal pain"
+        },
+        {
+          "req_id": "e",
+          "path": "13.e",
+          "text": "Stroke."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "14",
+      "path": "14",
+      "text": "With guidance from your counselor, develop a plan to teach a first-aid skill or topic using the EDGE method. Discuss your skill, topic, and plan with your counselor, and then teach your skill or topic to your family or to one or more Scouts."
+    },
+    {
+      "req_id": "15",
+      "path": "15",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "15.a",
+          "text": "Visit an emergency medical station house or training center in person. From the medical first responders that you meet during your visit, learn about how they serve their community and about their careers. Discuss with your counselor what you learned during your tour and interviews."
+        },
+        {
+          "req_id": "b",
+          "path": "15.b",
+          "text": "Interview an emergency medical services professional about their work. Learn about how they chose this career and about their duties. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "req_id": "c",
+          "path": "15.c",
+          "text": "Identify three career opportunities that would use skills and knowledge in emergency medical services. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+        },
+        {
+          "req_id": "d",
+          "path": "15.d",
+          "text": "Identify how you might use the skills and knowledge in the field of emergency medical services to pursue a personal hobby and/or healthy lifestyle. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }
