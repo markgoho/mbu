@@ -6,7 +6,14 @@
     {{/* Individual badge landing page */}}
     {{ $json := $data | unmarshal }}
     {{ $reqCount := len $json.requirements }}
-    {{ $badgeImage := .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
+    {{/* Prefer larger merit-badge image for featured display, fallback to card */}}
+    {{ $badgeImage := .Resources.GetMatch "*-merit-badge.avif" }}
+    {{ if not $badgeImage }}
+      {{ $badgeImage = .Resources.GetMatch "*-merit-badge-card.avif" }}
+    {{ end }}
+    {{ if not $badgeImage }}
+      {{ $badgeImage = .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
+    {{ end }}
 
     <article class="merit-badge-landing">
       <header class="badge-header">
@@ -84,7 +91,11 @@
         {{ if $data }}
           {{ $json := $data | unmarshal }}
           {{ $reqCount := len $json.requirements }}
-          {{ $badgeImage := .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
+          {{/* Prefer card-optimized images for list, fallback to any image */}}
+          {{ $badgeImage := .Resources.GetMatch "*-merit-badge-card.avif" }}
+          {{ if not $badgeImage }}
+            {{ $badgeImage = .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
+          {{ end }}
 
           <article class="badge-card {{ if $badgeImage }}badge-card--with-image{{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
             <a href="{{ .RelPermalink }}">
@@ -93,6 +104,8 @@
                   <img
                     src="{{ $badgeImage.RelPermalink }}"
                     alt="{{ .Title }} Merit Badge"
+                    width="400"
+                    height="225"
                     loading="lazy"
                   />
                 </div>
