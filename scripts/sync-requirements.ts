@@ -1,5 +1,4 @@
 import * as cheerio from "cheerio";
-import { mkdir } from "fs/promises";
 import { Impit } from "impit";
 import { join } from "path";
 import { MERIT_BADGES, findBadgeBySlug, type MeritBadge } from "./merit-badges";
@@ -52,13 +51,10 @@ const client = new Impit({
   timeout: 30000,
 });
 
-// 2. Ensure content directory exists
-await Bun.write(join(CONTENT_DIR, ".gitkeep"), "");
-
 let successCount = 0;
 let errorCount = 0;
 
-// 3. Determine which badges to process from the static list
+// 2. Determine which badges to process from the static list
 let badgeList: MeritBadge[] = [];
 
 if (SINGLE_BADGE) {
@@ -83,7 +79,7 @@ if (SINGLE_BADGE) {
   console.log(`🔎 Processing all ${badgeList.length} badges.`);
 }
 
-// 4. Main Loop (sequential for stability)
+// 3. Main Loop (sequential for stability)
 for (const badge of badgeList) {
   const { title, slug, url, eagle_required } = badge;
   console.log(`Processing: ${title}...`);
@@ -101,24 +97,12 @@ for (const badge of badgeList) {
       requirements: requirements,
     };
 
-    // Create page bundle directory
+    // Write data.json (only update the requirements data)
     const badgeDir = join(CONTENT_DIR, slug);
-    await mkdir(badgeDir, { recursive: true });
-
-    // Write data.json
     const dataPath = join(badgeDir, "data.json");
     await Bun.write(dataPath, JSON.stringify(badgeData, null, 2));
 
-    // Write index.md
-    const indexPath = join(badgeDir, "index.md");
-    const markdown = `---
-title: "${title}"
-eagle_required: ${eagle_required}
----
-`;
-    await Bun.write(indexPath, markdown);
-
-    console.log(`  ✅ Saved ${title}`);
+    console.log(`  ✅ Updated ${title}`);
     successCount++;
 
     await randomDelay();
@@ -129,7 +113,7 @@ eagle_required: ${eagle_required}
 }
 
 console.log(
-  `\n✅ Sync complete. ${successCount} badges saved, ${errorCount} errors.`,
+  `\n✅ Sync complete. ${successCount} badges updated, ${errorCount} errors.`,
 );
 
 // --- HELPERS ---
