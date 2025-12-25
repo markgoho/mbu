@@ -33,6 +33,12 @@
       </div>
     </header>
 
+    {{ with .Description }}
+      <div class="badge-description">
+        <p>{{ . }}</p>
+      </div>
+    {{ end }}
+
     <div class="requirements">
       <h2>Requirements</h2>
 
