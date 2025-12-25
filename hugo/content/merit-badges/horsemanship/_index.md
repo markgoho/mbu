@@ -1,4 +1,4 @@
 ---
-title: "Horsemanship"
+title: "Horsemanship Merit Badge"
 eagle_required: false
 ---

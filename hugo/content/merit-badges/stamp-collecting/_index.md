@@ -1,4 +1,4 @@
 ---
-title: "Stamp Collecting"
+title: "Stamp Collecting Merit Badge"
 eagle_required: false
 ---

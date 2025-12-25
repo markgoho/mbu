@@ -1,4 +1,4 @@
 ---
-title: "Scouting Heritage"
+title: "Scouting Heritage Merit Badge"
 eagle_required: false
 ---

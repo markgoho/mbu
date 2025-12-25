@@ -1,4 +1,4 @@
 ---
-title: "Truck Transportation"
+title: "Truck Transportation Merit Badge"
 eagle_required: false
 ---

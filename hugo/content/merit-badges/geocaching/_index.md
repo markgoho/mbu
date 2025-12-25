@@ -1,4 +1,4 @@
 ---
-title: "Geocaching"
+title: "Geocaching Merit Badge"
 eagle_required: false
 ---

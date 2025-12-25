@@ -1,4 +1,4 @@
 ---
-title: "Law"
+title: "Law Merit Badge"
 eagle_required: false
 ---

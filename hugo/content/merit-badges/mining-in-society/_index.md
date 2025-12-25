@@ -1,4 +1,4 @@
 ---
-title: "Mining in Society"
+title: "Mining in Society Merit Badge"
 eagle_required: false
 ---

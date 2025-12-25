@@ -1,4 +1,4 @@
 ---
-title: "Art"
+title: "Art Merit Badge"
 eagle_required: false
 ---

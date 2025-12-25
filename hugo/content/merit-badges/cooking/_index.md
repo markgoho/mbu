@@ -1,4 +1,4 @@
 ---
-title: "Cooking"
+title: "Cooking Merit Badge"
 eagle_required: true
 ---

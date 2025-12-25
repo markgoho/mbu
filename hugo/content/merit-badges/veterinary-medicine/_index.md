@@ -1,4 +1,4 @@
 ---
-title: "Veterinary Medicine"
+title: "Veterinary Medicine Merit Badge"
 eagle_required: false
 ---

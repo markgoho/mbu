@@ -1,4 +1,4 @@
 ---
-title: "Forestry"
+title: "Forestry Merit Badge"
 eagle_required: false
 ---

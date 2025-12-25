@@ -1,4 +1,4 @@
 ---
-title: "Sports"
+title: "Sports Merit Badge"
 eagle_required: false
 ---

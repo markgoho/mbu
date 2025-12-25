@@ -1,4 +1,4 @@
 ---
-title: "Radio"
+title: "Radio Merit Badge"
 eagle_required: false
 ---

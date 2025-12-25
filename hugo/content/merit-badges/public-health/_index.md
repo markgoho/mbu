@@ -1,4 +1,4 @@
 ---
-title: "Public Health"
+title: "Public Health Merit Badge"
 eagle_required: false
 ---

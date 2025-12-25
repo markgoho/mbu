@@ -1,4 +1,4 @@
 ---
-title: "Fish and Wildlife Management"
+title: "Fish and Wildlife Management Merit Badge"
 eagle_required: false
 ---

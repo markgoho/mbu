@@ -1,4 +1,4 @@
 ---
-title: "Citizenship in the Nation"
+title: "Citizenship in the Nation Merit Badge"
 eagle_required: true
 ---

@@ -1,4 +1,4 @@
 ---
-title: "Camping"
+title: "Camping Merit Badge"
 eagle_required: true
 ---

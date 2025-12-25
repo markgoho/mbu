@@ -1,4 +1,4 @@
 ---
-title: "Crime Prevention"
+title: "Crime Prevention Merit Badge"
 eagle_required: false
 ---

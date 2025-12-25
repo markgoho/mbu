@@ -1,4 +1,4 @@
 ---
-title: "Bird Study"
+title: "Bird Study Merit Badge"
 eagle_required: false
 ---

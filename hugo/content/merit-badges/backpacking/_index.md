@@ -1,4 +1,4 @@
 ---
-title: "Backpacking"
+title: "Backpacking Merit Badge"
 eagle_required: false
 ---

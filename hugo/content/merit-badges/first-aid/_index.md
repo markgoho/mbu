@@ -1,4 +1,4 @@
 ---
-title: "First Aid"
+title: "First Aid Merit Badge"
 eagle_required: true
 ---

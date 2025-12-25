@@ -1,4 +1,4 @@
 ---
-title: "Composite Materials"
+title: "Composite Materials Merit Badge"
 eagle_required: false
 ---

@@ -1,4 +1,4 @@
 ---
-title: "Snow Sports"
+title: "Snow Sports Merit Badge"
 eagle_required: false
 ---

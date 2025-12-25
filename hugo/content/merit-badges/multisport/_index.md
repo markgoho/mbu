@@ -1,4 +1,4 @@
 ---
-title: "Multisport"
+title: "Multisport Merit Badge"
 eagle_required: false
 ---

@@ -1,4 +1,4 @@
 ---
-title: "Sustainability"
+title: "Sustainability Merit Badge"
 eagle_required: true
 ---
