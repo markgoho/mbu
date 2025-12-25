@@ -16,7 +16,7 @@
       <ul class="badge-list">
         {{ range $badges.ByTitle }}
           <li class="badge-item">
-            <a href="{{ .Permalink }}">
+            <a href="{{ .RelPermalink }}">
               <strong>{{ .Title }}</strong>
               {{ if .Description }}
                 <span class="badge-description">{{ .Description }}</span>

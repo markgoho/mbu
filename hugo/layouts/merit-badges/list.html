@@ -12,7 +12,7 @@
       {{ $reqCount := len $json.requirements }}
 
       <article class="badge-card {{ if $json.eagle_required }}eagle{{ end }}">
-        <a href="{{ .Permalink }}">
+        <a href="{{ .RelPermalink }}">
           <h2>
             {{ .Title }}
             {{ if $json.eagle_required }}
