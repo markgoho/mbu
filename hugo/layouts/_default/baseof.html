@@ -13,8 +13,7 @@
     {{- block "head-scripts" . -}}
     {{- end -}}
 
-    {{ partial "opengraph.html" . }}
-
+    {{ partial "head/meta.html" . }}
 
     <link rel="canonical" href="{{ .Permalink | absURL }}" />
   </head>
