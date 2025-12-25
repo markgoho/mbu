@@ -33,20 +33,32 @@
     "@type": "CourseInstance",
     "courseMode": "Blended"
   },
-  "numberOfItems": {{ $reqCount }},
   "assesses": "{{ $badge.Title }} skills and knowledge as defined by Scouting America requirements",
   "educationalCredentialAwarded": "Merit Badge",
   "isAccessibleForFree": true,{{- if $json.requirements }}
+  {{- /* Build list of meaningful requirements, skipping generic preambles */ -}}
+  {{- $meaningfulReqs := slice -}}
+  {{- range $req := $json.requirements -}}
+    {{- $reqText := $req.text | plainify | lower -}}
+    {{- /* Skip generic preambles and use subrequirements instead */ -}}
+    {{- if and (in $reqText "do the following") (gt (len $req.subrequirements) 0) -}}
+      {{- range $subreq := $req.subrequirements -}}
+        {{- $meaningfulReqs = $meaningfulReqs | append $subreq -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $meaningfulReqs = $meaningfulReqs | append $req -}}
+    {{- end -}}
+  {{- end }}
   "hasPart": [
-    {{- range $index, $req := first 5 $json.requirements -}}
+    {{- range $index, $req := first 5 $meaningfulReqs -}}
     {{- if gt $index 0 }},{{ end }}
     {
       "@type": "LearningResource",
       "position": {{ add $index 1 }},
-      "name": "Requirement {{ $req.req_id }}{{ if $req.text }}: {{ substr $req.text 0 50 | plainify }}{{ if gt (len $req.text) 50 }}...{{ end }}{{ end }}",
+      "name": "{{ $req.text | plainify | truncate 60 | safeJS }}",
       "learningResourceType": "Activity",
-      "educationalLevel": "Youth (ages 11-17)"{{ if $req.text }},
-      "teaches": "{{ substr ($req.text | plainify) 0 150 | safeJS }}{{ if gt (len $req.text) 150 }}...{{ end }}"{{ end }}
+      "educationalLevel": "Youth (ages 11-17)",
+      "teaches": "{{ $req.text | plainify | truncate 150 | safeJS }}"
     }
     {{- end }}
   ],{{ end }}
