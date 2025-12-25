@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Robotics Merit Badge Requirements"
 layout: "requirements"
 ---

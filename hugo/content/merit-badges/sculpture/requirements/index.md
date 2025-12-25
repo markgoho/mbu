@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Sculpture Merit Badge Requirements"
 layout: "requirements"
 ---

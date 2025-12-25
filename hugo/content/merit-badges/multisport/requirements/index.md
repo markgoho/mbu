@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Multisport Merit Badge Requirements"
 layout: "requirements"
 ---

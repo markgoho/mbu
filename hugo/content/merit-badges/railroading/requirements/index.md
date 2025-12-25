@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Railroading Merit Badge Requirements"
 layout: "requirements"
 ---

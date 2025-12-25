@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Basketry Merit Badge Requirements"
 layout: "requirements"
 ---

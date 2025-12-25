@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Fly Fishing Merit Badge Requirements"
 layout: "requirements"
 ---

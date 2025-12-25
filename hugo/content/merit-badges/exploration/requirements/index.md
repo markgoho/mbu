@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Exploration Merit Badge Requirements"
 layout: "requirements"
 ---

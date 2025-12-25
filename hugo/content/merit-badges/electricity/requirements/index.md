@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Electricity Merit Badge Requirements"
 layout: "requirements"
 ---

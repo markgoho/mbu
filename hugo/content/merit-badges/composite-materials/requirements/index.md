@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Composite Materials Merit Badge Requirements"
 layout: "requirements"
 ---

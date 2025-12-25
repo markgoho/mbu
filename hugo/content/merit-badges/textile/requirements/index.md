@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Textile Merit Badge Requirements"
 layout: "requirements"
 ---

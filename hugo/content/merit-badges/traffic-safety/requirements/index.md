@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Traffic Safety Merit Badge Requirements"
 layout: "requirements"
 ---

@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Skating Merit Badge Requirements"
 layout: "requirements"
 ---

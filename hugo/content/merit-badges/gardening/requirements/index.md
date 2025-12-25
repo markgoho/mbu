@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Gardening Merit Badge Requirements"
 layout: "requirements"
 ---

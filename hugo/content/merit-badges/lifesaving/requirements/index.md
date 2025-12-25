@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Lifesaving Merit Badge Requirements"
 layout: "requirements"
 ---

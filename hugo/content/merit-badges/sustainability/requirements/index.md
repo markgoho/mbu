@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Sustainability Merit Badge Requirements"
 layout: "requirements"
 ---

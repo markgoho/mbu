@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Photography Merit Badge Requirements"
 layout: "requirements"
 ---

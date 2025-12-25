@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Camping Merit Badge Requirements"
 layout: "requirements"
 ---

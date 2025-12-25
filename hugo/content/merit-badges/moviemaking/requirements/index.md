@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Moviemaking Merit Badge Requirements"
 layout: "requirements"
 ---

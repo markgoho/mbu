@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Backpacking Merit Badge Requirements"
 layout: "requirements"
 ---

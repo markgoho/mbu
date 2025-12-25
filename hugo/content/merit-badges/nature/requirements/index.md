@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Nature Merit Badge Requirements"
 layout: "requirements"
 ---

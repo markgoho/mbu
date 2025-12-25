@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Genealogy Merit Badge Requirements"
 layout: "requirements"
 ---

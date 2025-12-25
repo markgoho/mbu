@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Cycling Merit Badge Requirements"
 layout: "requirements"
 ---

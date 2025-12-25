@@ -1,4 +1,4 @@
 ---
-title: "Requirements"
+title: "Communication Merit Badge Requirements"
 layout: "requirements"
 ---
