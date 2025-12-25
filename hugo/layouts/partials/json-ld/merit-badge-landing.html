@@ -1,0 +1,71 @@
+{{- /* JSON-LD Course schema for merit badge landing pages */ -}}
+{{- $data := .Resources.GetMatch "data.json" -}}
+{{- $json := $data | unmarshal -}}
+{{- $reqCount := len $json.requirements -}}
+
+{{- /* Generate description from page content or fallback */ -}}
+{{- $description := "" -}}
+{{- if .Summary -}}
+  {{- $description = .Summary | plainify -}}
+{{- else if .Content -}}
+  {{- $description = .Content | plainify -}}
+{{- else -}}
+  {{- $description = printf "Learn about the %s merit badge through Scouting America's program. Complete %d requirements to earn this merit badge." .Title $reqCount -}}
+{{- end -}}
+
+{{- /* Truncate description to 250 characters */ -}}
+{{- if gt (len $description) 250 -}}
+  {{- $description = (substr $description 0 247) | printf "%s..." -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "{{ .Title }} Merit Badge",
+  "description": "{{ $description | safeJS }}",
+  "url": "{{ .Permalink | absURL }}",
+  "courseCode": "{{ $json.slug }}",
+  "educationalLevel": "Youth (ages 11-17)",
+  "inLanguage": "en-US",
+  "availableLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "Scouting America"
+  },
+  "educationalCredentialAwarded": "Merit Badge",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Blended"
+  },
+  "teaches": "{{ .Title }} skills and knowledge as defined by Scouting America merit badge requirements",
+  "about": {
+    "@type": "Thing",
+    "name": "{{ .Title }}"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "name": "{{ .Title }} Merit Badge Requirements",
+      "url": "{{ .Permalink | absURL }}requirements/"
+    }
+  ]{{ if $json.eagle_required }},
+  "isPartOf": {
+    "@type": "ItemList",
+    "name": "Eagle Required Merit Badges"
+  }{{ end }}{{ if $json.pamphlet_url }},
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "name": "{{ .Title }} Merit Badge Pamphlet",
+    "url": "{{ $json.pamphlet_url }}",
+    "encodingFormat": "application/pdf"
+  }{{ end }}
+}
+</script>

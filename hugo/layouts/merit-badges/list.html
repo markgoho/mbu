@@ -85,3 +85,11 @@
     </section>
   {{ end }}
 {{ end }}
+
+{{ define "footer-scripts" }}
+  {{ $data := .Resources.GetMatch "data.json" }}
+  {{ if $data }}
+    {{/* Individual badge landing page - include JSON-LD */}}
+    {{ partial "json-ld/merit-badge-landing.html" . }}
+  {{ end }}
+{{ end }}
