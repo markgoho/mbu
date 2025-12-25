@@ -176,3 +176,7 @@ The scraper in `scripts/sync-requirements.ts` uses:
 - Merit badge data is auto-generated - do not manually edit `data.json` files
 - The scraper is sequential (not parallel) to maintain stability and avoid rate limiting
 - Content is stored in Hugo page bundles (directory per badge with index.md + resources)
+
+## Merit Badges
+
+A complete list of merit badges can be found at `scripts/merit-badges.ts`. If for any reason you need to loop over these merit badges, please use this file as an input.
