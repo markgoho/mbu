@@ -110,7 +110,10 @@
               "path": "3.c.8",
               "text": "Briefing and debriefing."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
