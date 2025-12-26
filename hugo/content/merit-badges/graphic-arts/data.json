@@ -34,7 +34,7 @@
           "url": "https://youtu.be/6u-1HjVQliY?si=rrlPTChjb_f5ya8b"
         },
         {
-          "title": "What Is a Digital Image?  (video)",
+          "title": "What Is a Digital Image? (video)",
           "url": "https://www.youtube.com/watch?v=TVTn7mYKegY "
         }
       ]
@@ -57,7 +57,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Produce the design you created for requirement 3 using one of the following printing processes: Resource: Prepress Tips - How to Set Up Your Digital Print Files Correctly (video)",
+      "text": "Produce the design you created for requirement 3 using one of the following printing processes:",
       "resources": [
         {
           "title": "Prepress Tips - How to Set Up Your Digital Print Files Correctly (video)",
@@ -68,7 +68,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Offset lithography Make a layout, and produce a plate using a process approved by your counselor. Run the plate and print at least 50 copies. Resource: Offset Lithography Demonstration (video)",
+          "text": "Offset lithography Make a layout, and produce a plate using a process approved by your counselor. Run the plate and print at least 50 copies.",
           "resources": [
             {
               "title": "Offset Lithography Demonstration (video)",
@@ -79,7 +79,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Screen printing Make a hand-cut or photographic stencil and attach it to a screen that you have prepared. Mask the screen and print at least 20 copies. Resource: The Basics of Screen Printing | Screen Printing Tutorial (video)",
+          "text": "Screen printing Make a hand-cut or photographic stencil and attach it to a screen that you have prepared. Mask the screen and print at least 20 copies.",
           "resources": [
             {
               "title": "The Basics of Screen Printing | Screen Printing Tutorial (video)",
@@ -90,7 +90,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Electronic/digital printing Create a layout in electronic form, download it to the press or printer, and run 50 copies. If no electronic interface to the press or printer is available, you may print and scan a paper copy of the layout. Resource: What Is Digital Printing? (video)",
+          "text": "Electronic/digital printing Create a layout in electronic form, download it to the press or printer, and run 50 copies. If no electronic interface to the press or printer is available, you may print and scan a paper copy of the layout.",
           "resources": [
             {
               "title": "What Is Digital Printing? (video)",
@@ -101,7 +101,7 @@
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "Relief printing Prepare a layout or set the necessary type. Make a plate or lock up the form. Use this to print 50 copies. Resource: Relief Printmaking (video)",
+          "text": "Relief printing Prepare a layout or set the necessary type. Make a plate or lock up the form. Use this to print 50 copies.",
           "resources": [
             {
               "title": "Relief Printmaking (video)",
@@ -125,7 +125,7 @@
           "url": "https://www.48hrbooks.com/publishing-resources/blog/138/book-binding-options-what-type-of-book-binding-should-i-use?"
         },
         {
-          "title": "Book Binding Types: Wire Coil, Saddle Stitching, Burst, Perfect Binding etc  (video)",
+          "title": "Book Binding Types: Wire Coil, Saddle Stitching, Burst, Perfect Binding etc (video)",
           "url": "https://youtu.be/t7eJKNFptzU?si=DDD-T90I4LBkQnM6"
         }
       ],
@@ -133,7 +133,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Discuss the finishing operations of padding, drilling, cutting, and trimming. Resource: Finishing in Printing (website)",
+          "text": "Discuss the finishing operations of padding, drilling, cutting, and trimming.",
           "resources": [
             {
               "title": "Finishing in Printing (website)",

@@ -127,14 +127,52 @@ function computePath(parentPath: string, reqId: string): string {
 }
 
 /**
- * Slugify an option name (e.g., "Beef Cattle Option" → "beef-cattle")
+ * Sort requirements and their subrequirements recursively
+ * Letter IDs (a,b,c) stay in order, numeric IDs get sorted numerically
  */
-function slugifyOption(text: string): string {
-  return text
+function sortRequirements(requirements: BadgeRequirement[]): BadgeRequirement[] {
+  return requirements.map(req => {
+    // Recursively sort subrequirements if they exist
+    if (req.subrequirements && req.subrequirements.length > 0) {
+      req.subrequirements = sortRequirements(req.subrequirements);
+    }
+    return req;
+  }).sort((a, b) => {
+    // Try parsing as numbers first
+    const aNum = parseInt(a.req_id);
+    const bNum = parseInt(b.req_id);
+
+    if (!isNaN(aNum) && !isNaN(bNum)) {
+      return aNum - bNum;
+    }
+
+    // Otherwise sort alphabetically
+    return a.req_id.localeCompare(b.req_id);
+  });
+}
+
+/**
+ * Slugify an option name (e.g., "Beef Cattle Option" → "beef-cattle")
+ * Returns null if the result would be invalid/too long
+ */
+function slugifyOption(text: string): string | null {
+  if (!text) return null;
+
+  // Limit input text length to prevent massive slugs
+  const limitedText = text.substring(0, 200);
+
+  const slug = limitedText
     .toLowerCase()
     .replace(/\s+option$/i, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+
+  // Validate slug length (should be reasonable)
+  if (slug.length > 100 || slug.length === 0) {
+    return null;
+  }
+
+  return slug;
 }
 
 /**
@@ -187,20 +225,44 @@ function extractSubrequirements(
       textOnly = textOnly.replace(/^\d+\.\s+/i, ""); // Remove 1., 2. prefix
 
       // Split text and resources
-      const resourcesMatch = textOnly.match(/Resources:([\s\S]*)/i);
-      const cleanText = resourcesMatch
-        ? textOnly.substring(0, textOnly.indexOf("Resources:")).trim()
+      const resourcesMatch = textOnly.match(/Resources?:([\s\S]*)/i);
+      let cleanText = resourcesMatch
+        ? textOnly.substring(0, textOnly.search(/Resources?:/i)).trim()
         : textOnly;
+
+      // Sanitize and validate text AFTER extracting
+      const sanitized = sanitizeText(cleanText);
+      if (!sanitized) {
+        // Skip this polluted subrequirement
+        return;
+      }
+      cleanText = sanitized;
 
       // Extract resources
       const resources: BadgeResource[] = [];
       $child.find("a").each((_, linkEl) => {
         const $link = $(linkEl);
         const href = $link.attr("href");
-        const title = $link.text().trim();
-        if (href && title) {
-          resources.push({ title, url: href });
-        }
+        let title = $link.text().trim();
+
+        // Validate resource
+        if (!href || !title) return;
+
+        // Skip if title contains garbage patterns
+        if (title.length > 200) return; // Titles shouldn't be this long
+        if (/\n/.test(title)) return; // No newlines in titles
+        if (title.startsWith("(") && title.includes("Resources:")) return; // "(a) \nBeak Resources:"
+
+        // Skip common page navigation/footer links
+        if (/^(give|scoutshop|be a scout|programs|awards|about|training|resources|my\.scouting)$/i.test(title)) return;
+        if (/©.*Boy Scouts of America/i.test(title)) return; // Copyright footer
+        if (/All Rights Reserved/i.test(title)) return;
+        if (/Registered.*EIN:/i.test(title)) return;
+
+        // Clean title
+        title = title.replace(/\s+/g, " ").trim();
+
+        resources.push({ title, url: href });
       });
 
       // Compute path for this requirement
@@ -256,19 +318,43 @@ function extractSubrequirements(
       let textOnly = $clone.text().trim();
       textOnly = textOnly.replace(/\s+/g, " ");
 
-      const resourcesMatch = textOnly.match(/Resources:([\s\S]*)/i);
-      const cleanText = resourcesMatch
-        ? textOnly.substring(0, textOnly.indexOf("Resources:")).trim()
+      const resourcesMatch = textOnly.match(/Resources?:([\s\S]*)/i);
+      let cleanText = resourcesMatch
+        ? textOnly.substring(0, textOnly.search(/Resources?:/i)).trim()
         : textOnly;
+
+      // Sanitize and validate text AFTER extracting
+      const sanitized = sanitizeText(cleanText);
+      if (!sanitized) {
+        // Skip this polluted named option
+        return;
+      }
+      cleanText = sanitized;
 
       const resources: BadgeResource[] = [];
       $child.find("a").each((_, linkEl) => {
         const $link = $(linkEl);
         const href = $link.attr("href");
-        const title = $link.text().trim();
-        if (href && title) {
-          resources.push({ title, url: href });
-        }
+        let title = $link.text().trim();
+
+        // Validate resource
+        if (!href || !title) return;
+
+        // Skip if title contains garbage patterns
+        if (title.length > 200) return; // Titles shouldn't be this long
+        if (/\n/.test(title)) return; // No newlines in titles
+        if (title.startsWith("(") && title.includes("Resources:")) return; // "(a) \nBeak Resources:"
+
+        // Skip common page navigation/footer links
+        if (/^(give|scoutshop|be a scout|programs|awards|about|training|resources|my\.scouting)$/i.test(title)) return;
+        if (/©.*Boy Scouts of America/i.test(title)) return; // Copyright footer
+        if (/All Rights Reserved/i.test(title)) return;
+        if (/Registered.*EIN:/i.test(title)) return;
+
+        // Clean title
+        title = title.replace(/\s+/g, " ").trim();
+
+        resources.push({ title, url: href });
       });
 
       // Use text hash for deduplication to handle duplicate HTML from Scouting.org
@@ -277,9 +363,13 @@ function extractSubrequirements(
 
       // Generate slugified ID for named options, or fallback to numbered option
       const optionIsNamed = isNamedOption(cleanText);
-      const optionId = optionIsNamed
-        ? slugifyOption(cleanText)
-        : `option${subrequirementsMap.size + 1}`;
+      let optionId = optionIsNamed ? slugifyOption(cleanText) : null;
+
+      // If slugification failed or wasn't a named option, use numbered ID
+      if (!optionId) {
+        optionId = `option${subrequirementsMap.size + 1}`;
+      }
+
       const reqPath = computePath(parentPath, optionId);
 
       // Get nested subrequirements (recursive!)
@@ -328,12 +418,67 @@ function extractSubrequirements(
   return Array.from(subrequirementsMap.values());
 }
 
+/**
+ * Sanitize and validate extracted text
+ * Returns null if text contains page pollution, or cleaned text
+ */
+function sanitizeText(text: string): string | null {
+  if (!text) return null;
+
+  // Check text length FIRST (no single requirement should be > 2000 chars)
+  if (text.length > 2000) {
+    return null; // Definitely page pollution
+  }
+
+  // Try to clean common page pollution patterns first
+  let cleaned = text;
+
+  // Remove common page navigation phrases (more generic patterns)
+  cleaned = cleaned.replace(/\s*\w+\s+Merit Badge\s+Scouting America\s*/gi, " ");
+  cleaned = cleaned.replace(/\s*Scouting America Merit Badge Hub\s*/gi, " ");
+  cleaned = cleaned.replace(/\s*Merit Badge Hub\s*/gi, " ");
+
+  // Check for obvious navigation patterns that should be rejected entirely
+  // Be very specific to avoid false positives
+  if (/^My\.scouting\s+Scholarships/i.test(cleaned)) return null; // Exact page nav match
+  if (/^(Give|Scoutshop)\s*$/i.test(cleaned)) return null; // Exact single-word nav items
+
+  // Clean up extra whitespace
+  cleaned = cleaned.replace(/\s+/g, " ").trim();
+
+  // Now check if what remains is too polluted
+  const severePollutionPatterns = [
+    /\.elementor-nav-menu/i, // Elementor navigation CSS
+    /#adminmenu/i, // Admin menu
+    /url\(data:image\/png;base64/i, // Base64 images
+    /@keyframes/i, // CSS animations
+    /\.wpf-container/i, // WordPress plugin CSS
+    /function\s*\(\s*\)\s*{/i, // JavaScript functions (more specific)
+    /transform:\s*rotate/i, // CSS transforms
+    /background-color:\s*#[0-9a-f]{3,6}/i, // CSS colors
+    /font-family:\s*["']/i, // CSS fonts
+  ];
+
+  for (const pattern of severePollutionPatterns) {
+    if (pattern.test(cleaned)) {
+      // TEMPORARILY: log instead of filtering
+      console.log(`  ⚠️  Pollution detected: ${cleaned.substring(0, 100)}...`);
+      return null; // This is severe page pollution
+    }
+  }
+
+  return cleaned;
+}
+
 async function scrapeBadgePage(client: Impit, url: string) {
   const res = await client.fetch(url);
   if (res.status !== 200) throw new Error(`Status ${res.status}`);
 
   const html = await res.text();
   const $ = cheerio.load(html);
+
+  // Remove script and style tags to prevent pollution
+  $("script, style, nav, header, footer").remove();
 
   // Extract pamphlet link
   let pamphletUrl: string | undefined = undefined;
@@ -385,21 +530,46 @@ async function scrapeBadgePage(client: Impit, url: string) {
     // Clean up whitespace and newlines
     fullText = fullText.replace(/\s+/g, " ").trim();
 
-    // Split text and resources (Resources: appears after main text)
-    const resourcesMatch = fullText.match(/Resources:([\s\S]*)/i);
+    // Split text and resources FIRST (Resource(s): appears after main text)
+    const resourcesMatch = fullText.match(/Resources?:([\s\S]*)/i);
     let text = resourcesMatch
-      ? fullText.substring(0, fullText.indexOf("Resources:")).trim()
+      ? fullText.substring(0, fullText.search(/Resources?:/i)).trim()
       : fullText;
+
+    // Sanitize and validate text AFTER extracting
+    const sanitized = sanitizeText(text);
+    if (!sanitized) {
+      console.log(`  ⚠️  Skipping polluted parent requirement ${reqId}`);
+      return; // Skip this polluted requirement
+    }
+    text = sanitized;
 
     // Extract resources from links
     const resources: BadgeResource[] = [];
     $parent.find("a").each((_, linkEl) => {
       const $link = $(linkEl);
       const href = $link.attr("href");
-      const title = $link.text().trim();
-      if (href && title) {
-        resources.push({ title, url: href });
-      }
+      let title = $link.text().trim();
+
+      // Validate resource
+      if (!href || !title) return;
+
+      // Skip if title contains garbage patterns
+      if (title.length > 200) return; // Titles shouldn't be this long
+      if (/\n/.test(title)) return; // No newlines in titles
+      if (title.startsWith("(") && title.includes("Resources:")) return; // "(a) \nBeak Resources:"
+      if (/<img/i.test(title)) return; // Contains image tags
+
+      // Skip common page navigation/footer links
+      if (/^(give|scoutshop|be a scout|programs|awards|about|training|resources|my\.scouting)$/i.test(title)) return;
+      if (/©.*Boy Scouts of America/i.test(title)) return; // Copyright footer
+      if (/All Rights Reserved/i.test(title)) return;
+      if (/Registered.*EIN:/i.test(title)) return;
+
+      // Clean title
+      title = title.replace(/\s+/g, " ").trim();
+
+      resources.push({ title, url: href });
     });
 
     // Find child requirements using recursive extraction
@@ -466,8 +636,8 @@ async function scrapeBadgePage(client: Impit, url: string) {
     });
   });
 
-  // Convert Map to array - return directly without sections wrapper
-  const requirements = Array.from(requirementsMap.values());
+  // Convert Map to array and sort recursively
+  const requirements = sortRequirements(Array.from(requirementsMap.values()));
 
   return { requirements, pamphlet_url: pamphletUrl };
 }

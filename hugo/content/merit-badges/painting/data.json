@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Explain the proper safety procedures to follow when preparing surfaces and applying coatings. Resource: Interior Painting Safety (video)",
+      "text": "Explain the proper safety procedures to follow when preparing surfaces and applying coatings.",
       "resources": [
         {
           "title": "Interior Painting Safety (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Explain three ways that coatings can improve a surface. Resource: Epoxy Resin Coatings (video)",
+          "text": "Explain three ways that coatings can improve a surface.",
           "resources": [
             {
               "title": "Epoxy Resin Coatings (video)",
@@ -50,7 +50,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Explain where you would apply enamel paint, flat paint, wood stain, and varnish, and explain the importance of sheen. Resource: Paint Sheen Differences Explained (video)",
+          "text": "Explain where you would apply enamel paint, flat paint, wood stain, and varnish, and explain the importance of sheen.",
           "resources": [
             {
               "title": "Paint Sheen Differences Explained (video)",
@@ -71,7 +71,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Prepare and paint two different surfaces using patching materials or caulking and the proper primers and topcoats. Suggested projects include an interior or exterior wall, a door, a piece of furniture, a concrete wall or floor, a porch rail, or a fence. Your counselor must preapprove the projects. Resource: How to Paint a Room (video)",
+      "text": "Prepare and paint two different surfaces using patching materials or caulking and the proper primers and topcoats. Suggested projects include an interior or exterior wall, a door, a piece of furniture, a concrete wall or floor, a porch rail, or a fence. Your counselor must preapprove the projects.",
       "resources": [
         {
           "title": "How to Paint a Room (video)",
