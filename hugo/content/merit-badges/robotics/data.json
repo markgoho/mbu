@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the most likely hazards you may encounter while working with robots and what you should do to anticipate, mitigate and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working with robotics. Resource: Hazards and Robot Safety (video)",
+          "text": "Explain to your counselor the most likely hazards you may encounter while working with robots and what you should do to anticipate, mitigate and prevent, and respond to these hazards. Describe the appropriate safety gear and clothing that should be used when working with robotics.",
           "resources": [
             {
               "title": "Hazards and Robot Safety (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Discuss first aid and prevention for the types of injuries that could occur while participating in robotics activities and competitions, including cuts, eye injuries, and burns (chemical or heat). Resource: How to Treat Cuts and Scrapes (video)",
+          "text": "Discuss first aid and prevention for the types of injuries that could occur while participating in robotics activities and competitions, including cuts, eye injuries, and burns (chemical or heat).",
           "resources": [
             {
               "title": "How to Treat Cuts and Scrapes (video)",
@@ -45,7 +45,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "The kinds of things robots can do and how robots are best used today. Resource: TYPES OF ROBOTS | Robots Classification (video)",
+          "text": "The kinds of things robots can do and how robots are best used today.",
           "resources": [
             {
               "title": "TYPES OF ROBOTS | Robots Classification (video)",
@@ -71,7 +71,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Three different methods robots can use to move themselves other than wheels or tracks. Describe when it would be appropriate to use each method. Resource: The No Wheel, Circular Gear, or Sprocket Robot Race (video)",
+          "text": "Three different methods robots can use to move themselves other than wheels or tracks. Describe when it would be appropriate to use each method.",
           "resources": [
             {
               "title": "The No Wheel, Circular Gear, or Sprocket Robot Race (video)",
@@ -87,7 +87,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "General Knowledge. Discuss with your counselor three of the five major fields of robotics (human-robot interface, mobility, manipulation, programming, sensors) and their importance to robotics development. Discuss either the three fields as they relate to a single robot system OR talk about each field in general. Find pictures or at least one video to aid your discussion. Resource: 5 Sub-Disciplines of Robotics (video)",
+      "text": "General Knowledge. Discuss with your counselor three of the five major fields of robotics (human-robot interface, mobility, manipulation, programming, sensors) and their importance to robotics development. Discuss either the three fields as they relate to a single robot system OR talk about each field in general. Find pictures or at least one video to aid your discussion.",
       "resources": [
         {
           "title": "5 Sub-Disciplines of Robotics (video)",
@@ -137,7 +137,7 @@
             {
               "req_id": "1",
               "path": "4.d.1",
-              "text": "Program your robot to perform the task you chose for your robot in 4(a). Include a sample of your program's source code in your robot engineering notebook. Resource: VEXcode VR (website)",
+              "text": "Program your robot to perform the task you chose for your robot in 4(a). Include a sample of your program's source code in your robot engineering notebook.",
               "resources": [
                 {
                   "title": "VEXcode VR (website)",
@@ -160,7 +160,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         },
         {
           "req_id": "e",
