@@ -36,18 +36,18 @@
       }
     },
     {
-      "req_id": "4.                                �\u000b��z\u0002\u001b\n                                Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used. Explain the difference between semaphore flags and nautical flags. Then do the following:",
-      "path": "4.                                �\u000b��z\u0002\u001b\n                                Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used. Explain the difference between semaphore flags and nautical flags. Then do the following:",
-      "text": "",
+      "req_id": "4",
+      "path": "4",
+      "text": "Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used. Explain the difference between semaphore flags and nautical flags. Then do the following:",
       "subrequirements": [
         {
           "req_id": "a",
-          "path": "4.                                �\u000b��z\u0002\u001b\n                                Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used. Explain the difference between semaphore flags and nautical flags. Then do the following:.a",
+          "path": "4.a",
           "text": "Spell your first name using semaphore. Send or receive a message of six to 10 words using semaphore."
         },
         {
           "req_id": "b",
-          "path": "4.                                �\u000b��z\u0002\u001b\n                                Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used. Explain the difference between semaphore flags and nautical flags. Then do the following:.b",
+          "path": "4.b",
           "text": "Using illustrations or photographs, identify 10 examples of nautical flags and discuss their importance."
         }
       ],
@@ -103,7 +103,7 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "For THREE of the following activities, demonstrate five signals each. Tell what the signals mean and why they are used: �\u001b��z\u0002\u001b�\u0012",
+      "text": "For THREE of the following activities, demonstrate five signals each. Tell what the signals mean and why they are used:",
       "subrequirements": [
         {
           "req_id": "a",
