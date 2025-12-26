@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Describe the safety precautions you should take when handling and caring for a horse. Resource: Safety Precautions When Handling Horses (video)",
+          "text": "Describe the safety precautions you should take when handling and caring for a horse.",
           "resources": [
             {
               "title": "Safety Precautions When Handling Horses (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Describe the fire safety precautions you should take in a barn and around horses. Resource: Barn Fire Safety (video)",
+          "text": "Describe the fire safety precautions you should take in a barn and around horses.",
           "resources": [
             {
               "title": "Barn Fire Safety (video)",
@@ -74,7 +74,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Describe the symptoms of colic. Name and describe four other horse health problems. Resource: Health Problems in Horses (video)",
+      "text": "Describe the symptoms of colic. Name and describe four other horse health problems.",
       "resources": [
         {
           "title": "Health Problems in Horses (video)",
@@ -100,7 +100,7 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "Explain the importance of hoof care and why a horse might need to wear shoes. Resource: How to Clean Horse Hooves (video)",
+      "text": "Explain the importance of hoof care and why a horse might need to wear shoes.",
       "resources": [
         {
           "title": "How to Clean Horse Hooves (video)",
@@ -126,7 +126,7 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Explain how to determine what and how much to feed a horse and why the amount and kind of feed are changed according to the activity level and the breed of horse. Resource: What Do Horses Eat? (video)",
+      "text": "Explain how to determine what and how much to feed a horse and why the amount and kind of feed are changed according to the activity level and the breed of horse.",
       "resources": [
         {
           "title": "What Do Horses Eat? (video)",
@@ -142,7 +142,7 @@
         {
           "req_id": "a",
           "path": "9.a",
-          "text": "Name 10 parts of the saddle and bridle that you will use, and explain how to care for this equipment. Resource: Parts of a Saddle (video)",
+          "text": "Name 10 parts of the saddle and bridle that you will use, and explain how to care for this equipment.",
           "resources": [
             {
               "title": "Parts of a Saddle (video)",
@@ -183,7 +183,7 @@
               "url": "https://youtu.be/CafSxVC-1I8"
             },
             {
-              "title": "How to Ride a Horse   (video)",
+              "title": "How to Ride a Horse (video)",
               "url": "https://youtu.be/NC9Tr2hXfFk?si=-mIGi5Woskl7jBPn"
             }
           ]
@@ -196,7 +196,7 @@
     {
       "req_id": "10",
       "path": "10",
-      "text": "Explain and demonstrate how to approach and lead a horse safely from a stall, corral, or field and how to tie the horse securely. Resource: How to Lead a Horse (video)",
+      "text": "Explain and demonstrate how to approach and lead a horse safely from a stall, corral, or field and how to tie the horse securely.",
       "resources": [
         {
           "title": "How to Lead a Horse (video)",
@@ -236,7 +236,7 @@
         {
           "req_id": "c",
           "path": "11.c",
-          "text": "Trot or jog the horse in a straight line for 60 feet. Resource: How to Trot a Horse (video)",
+          "text": "Trot or jog the horse in a straight line for 60 feet.",
           "resources": [
             {
               "title": "How to Trot a Horse (video)",
@@ -247,10 +247,10 @@
         {
           "req_id": "d",
           "path": "11.d",
-          "text": "Trot or jog the horse in a half-circle of not more than 30 feet in radius. Resource: Tips for Trotting (video)",
+          "text": "Trot or jog the horse in a half-circle of not more than 30 feet in radius.",
           "resources": [
             {
-              "title": "Tips for Trotting  (video)",
+              "title": "Tips for Trotting (video)",
               "url": "https://youtu.be/KCSkmYEQxEg?si=ET5yK-3VM_Pjzae3"
             }
           ]
@@ -258,7 +258,7 @@
         {
           "req_id": "e",
           "path": "11.e",
-          "text": "Halt straight. Resource: How to Stop Your Horse (video)",
+          "text": "Halt straight.",
           "resources": [
             {
               "title": "How to Stop Your Horse (video)",
@@ -269,7 +269,7 @@
         {
           "req_id": "f",
           "path": "11.f",
-          "text": "Back up straight four paces. Resource: How to Back Up a Horse (video)",
+          "text": "Back up straight four paces.",
           "resources": [
             {
               "title": "How to Back Up a Horse (video)",
@@ -280,7 +280,7 @@
         {
           "req_id": "g",
           "path": "11.g",
-          "text": "Halt and dismount. Resource: Mount and Dismount a Horse (video)",
+          "text": "Halt and dismount.",
           "resources": [
             {
               "title": "Mount and Dismount a Horse (video)",
