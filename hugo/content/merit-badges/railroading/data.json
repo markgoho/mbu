@@ -242,7 +242,11 @@
               "path": "7.a.8",
               "text": "Explain the difference between powering and controlling a model railroad by using direct current, and powering and controlling a model railroad using digital command control."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
         },
         {
           "req_id": "b",
@@ -269,7 +273,11 @@
               "path": "7.b.4",
               "text": "Plan a trip by rail between two points. Obtain a schedule and explain when the train should arrive at two intermediate points. Purchase the tickets and make the trip. Explain to your counselor what you saw."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
         }
       ],
       "subrequirement_mode": {

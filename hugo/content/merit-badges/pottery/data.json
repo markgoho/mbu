@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Explain to your counselor the precautions that must be followed for the safe use and operation of a potter's tools, equipment, and other materials. Resource: 6 Steps to a Safe Pottery Studio (video)",
+      "text": "Explain to your counselor the precautions that must be followed for the safe use and operation of a potter's tools, equipment, and other materials.",
       "resources": [
         {
           "title": "6 Steps to a Safe Pottery Studio (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Explain the properties and ingredients of a good clay body for the following: Resource: Best Clay for Pottery: Hand-Building, Wheel Throwing & Sculpting Explained (video)",
+          "text": "Explain the properties and ingredients of a good clay body for the following:",
           "resources": [
             {
               "title": "Best Clay for Pottery: Hand-Building, Wheel Throwing & Sculpting Explained (video)",
@@ -42,7 +42,10 @@
               "path": "2.a.2",
               "text": "Throwing on the wheel"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -67,7 +70,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Make two drawings of pottery forms, each on an 8 1/2-by-11-inch sheet of paper. One must be a historical pottery style. The other must be of your own design. Resource: Ancient Greek Pottery Shapes: The Pure and Useful Forms of Greek Vases (website)",
+      "text": "Make two drawings of pottery forms, each on an 8 1/2-by-11-inch sheet of paper. One must be a historical pottery style. The other must be of your own design.",
       "resources": [
         {
           "title": "Ancient Greek Pottery Shapes: The Pure and Useful Forms of Greek Vases (website)",
@@ -175,7 +178,7 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "Explain the scope of the ceramic industry in the United States. Tell some things made other than craft pottery. Resource: What Are Ceramics? (website)",
+      "text": "Explain the scope of the ceramic industry in the United States. Tell some things made other than craft pottery.",
       "resources": [
         {
           "title": "What Are Ceramics? (website)",
@@ -191,7 +194,7 @@
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "Visit the kiln yard at a local college or other craft school. Learn how the different kinds of kilns work, including low fire electric, gas or propane high fire, wood or salt/soda, and raku. Resource: Types of Kilns (website)",
+          "text": "Visit the kiln yard at a local college or other craft school. Learn how the different kinds of kilns work, including low fire electric, gas or propane high fire, wood or salt/soda, and raku.",
           "resources": [
             {
               "title": "Types of Kilns (website)",
@@ -202,7 +205,7 @@
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Visit a museum, art exhibit, art gallery, artists' co-op, or artist's studio that features pottery. After your visit, share with your counselor what you have learned. Resource: Ceramics in the US (website)",
+          "text": "Visit a museum, art exhibit, art gallery, artists' co-op, or artist's studio that features pottery. After your visit, share with your counselor what you have learned.",
           "resources": [
             {
               "title": "Ceramics in the US (website)",

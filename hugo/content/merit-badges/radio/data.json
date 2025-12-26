@@ -185,7 +185,10 @@
               "path": "9.a.6",
               "text": "Using proper call signs, Q signals, and abbreviations, carry on a 10-minute real or simulated amateur radio contact using voice, Morse code, or digital mode. (Licensed amateur radio operators may substitute five QSL cards as evidence of contacts with five amateur radio operators. Properly log the real or simulated ham radio contact, and record the signal report.)"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -217,7 +220,10 @@
               "path": "9.b.5",
               "text": "Discuss with your counselor alternative radio platforms such as internet streaming, satellite radio, and podcasts."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -249,7 +255,10 @@
               "path": "9.c.5",
               "text": "Demonstrate listening to a radio broadcast using a smartphone/cell phone. Include international broadcasts in your demonstration."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -281,7 +290,10 @@
               "path": "9.d.5",
               "text": "Show, on a map, how you located the \"fox\" using your receiver."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

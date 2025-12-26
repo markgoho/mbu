@@ -70,7 +70,10 @@
               "path": "5.a.3",
               "text": "Describe how sewage and solid waste should be disposed of under wilderness camping conditions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -97,7 +100,10 @@
               "path": "5.b.4",
               "text": "Discuss your visit and what you learned with your counselor."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
@@ -150,7 +156,10 @@
               "path": "7.option1.b",
               "text": "Familiarize yourself with your city, county, state, or a federal health agency's website."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option2",
@@ -172,7 +181,10 @@
               "path": "7.option2.iii",
               "text": "Discuss the kinds of public assistance the agency is able to provide in case of disasters such as floods, storms, tornadoes, earthquakes, and other acts of destruction. Your discussion can include the cleanup necessary after the disaster."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
