@@ -146,7 +146,10 @@
               "path": "7.option-a-downhill-alpine-skiing.j",
               "text": "Name the major ski organizations in the United States and explain their functions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-b-cross-country-nordic-skiing",
@@ -204,7 +207,10 @@
               "path": "7.option-b-cross-country-nordic-skiing.j",
               "text": "Demonstrate several methods of dealing with steep hills or difficult conditions. Include traverses and kick turns going uphill and downhill, sidesteps, pole drag, and ski-pole \"glissade.\""
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-c-snowboarding",
@@ -257,7 +263,10 @@
                   "path": "7.option-c-snowboarding.g.2",
                   "text": "On slightly steeper terrain, show traversing."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "h",
@@ -279,7 +288,10 @@
               "path": "7.option-c-snowboarding.k",
               "text": "Name the major snowboarding organizations in the United States and explain their functions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-d-snowshoeing",
@@ -337,7 +349,10 @@
               "path": "7.option-d-snowshoeing.j",
               "text": "Demonstrate the proper use of a topographic map and compass."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

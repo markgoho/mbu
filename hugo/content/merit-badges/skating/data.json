@@ -61,7 +61,10 @@
                   "path": "2.option-a-ice-skating.a.4",
                   "text": "Describe how to store ice skates for long periods of time, such as seasonal storage."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "b",
@@ -83,7 +86,10 @@
                   "path": "2.option-a-ice-skating.b.3",
                   "text": "Starting from a T position, stroke forward around the test area, avoiding the use of toe picks if wearing figure skates."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "c",
@@ -105,7 +111,10 @@
                   "path": "2.option-a-ice-skating.c.3",
                   "text": "After gaining forward speed, glide forward on two feet, making a turn of 180 degrees around a cone, first to the right and then to the left."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "d",
@@ -127,9 +136,15 @@
                   "path": "2.option-a-ice-skating.d.3",
                   "text": "Perform a hockey stop."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-b-roller-skating",
@@ -157,7 +172,10 @@
                   "path": "2.option-b-roller-skating.a.3",
                   "text": "Describe five essential steps to good skate care."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "b",
@@ -174,7 +192,10 @@
                   "path": "2.option-b-roller-skating.b.2",
                   "text": "Skate forward and glide at least 15 feet on one skate, then on the other skate."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "c",
@@ -201,7 +222,10 @@
                   "path": "2.option-b-roller-skating.c.4",
                   "text": "Skate backward in a slalom pattern for at least 15 feet on two skates."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "d",
@@ -218,7 +242,10 @@
                   "path": "2.option-b-roller-skating.d.2",
                   "text": "Perform a series of two consecutive spins on skates, OR hop, skip, and jump on skates for at least 10 feet."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "e",
@@ -245,9 +272,15 @@
                   "path": "2.option-b-roller-skating.e.4",
                   "text": "While skating, dribble a basketball the length of the floor, then return to your starting position, OR push a hockey ball with a stick around the entire rink in both directions."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-c-in-line-skating",
@@ -280,7 +313,10 @@
                   "path": "2.option-c-in-line-skating.a.4",
                   "text": "Describe four essential steps to good skate care."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "b",
@@ -302,7 +338,10 @@
                   "path": "2.option-c-in-line-skating.b.3",
                   "text": "Stop on command on flat pavement using the heel brake."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "c",
@@ -334,7 +373,10 @@
                   "path": "2.option-c-in-line-skating.c.5",
                   "text": "Perform a mohawk."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "d",
@@ -361,9 +403,15 @@
                   "path": "2.option-c-in-line-skating.d.4",
                   "text": "Describe two ways to get on and off a curb, and demonstrate at least one of these methods."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-d-skateboarding",
@@ -391,7 +439,10 @@
                   "path": "2.option-d-skateboarding.a.3",
                   "text": "Purpose of skateboarding safety and protective gear (helmets, knee pads, elbow pads, wrist guards)."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "b",
@@ -418,7 +469,10 @@
                   "path": "2.option-d-skateboarding.b.4",
                   "text": "Communication signals and warnings."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "c",
@@ -440,7 +494,10 @@
                   "path": "2.option-d-skateboarding.c.3",
                   "text": "Explain skateboard maintenance (cleaning, tightening bolts, and replacing parts)"
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "d",
@@ -472,7 +529,10 @@
                   "path": "2.option-d-skateboarding.d.5",
                   "text": "Ollies (basic and variations)."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "e",
@@ -509,9 +569,15 @@
                   "path": "2.option-d-skateboarding.e.6",
                   "text": "Balance tricks."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

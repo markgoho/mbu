@@ -121,7 +121,10 @@
               "path": "6.a.4",
               "text": "Include your own questions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -148,7 +151,10 @@
               "path": "6.b.4",
               "text": "Include at least two of your own questions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

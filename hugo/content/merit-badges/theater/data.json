@@ -6,6 +6,77 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Theater.pdf",
   "requirements": [
     {
+      "req_id": "1",
+      "path": "1",
+      "text": "See or read three full-length plays. Write a review of each. Discuss with your counselor the plot or story. If you chose to watch the plays, comment on the acting and the staging. Note: Watching plays on television, video, or as a movie is not permitted."
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "Write a one-act play that will take at least 10 minutes to perform. The play must have a main character, conflict, and a climax."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Discuss with your counselor the safety precautions that should be practiced when working in a theater to protect the cast and crew. Then do THREE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Act a major part in a full-length play; or act a part in three one-act plays."
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Direct a play. Cast, rehearse, and stage it. The play must be at least 10 minutes long."
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Design the set for a play or a theatrical production. Make a model of it."
+        },
+        {
+          "req_id": "d",
+          "path": "3.d",
+          "text": "Design the costumes for five characters in a theatrical production set in a historical time."
+        },
+        {
+          "req_id": "e",
+          "path": "3.e",
+          "text": "Show skill in hair and makeup design. Make up yourself or a friend as a historical figure, a clown, an extraterrestrial, or a monster as directed."
+        },
+        {
+          "req_id": "f",
+          "path": "3.f",
+          "text": "With your counselor's approval, help with the building and painting of the scenery for a theatrical production."
+        },
+        {
+          "req_id": "g",
+          "path": "3.g",
+          "text": "With your counselor's approval, design the lighting for a play; or help install, focus, color, program, and operate the lighting for a theatrical production."
+        },
+        {
+          "req_id": "h",
+          "path": "3.h",
+          "text": "With your counselor's approval, help install, focus, equalize, program, and operate the sound for a theatrical production."
+        },
+        {
+          "req_id": "i",
+          "path": "3.i",
+          "text": "Serve as the stage manager for a theatrical production. Document all cues and stage setups in your calling script."
+        },
+        {
+          "req_id": "j",
+          "path": "3.j",
+          "text": "Serve as musical director for a musical theater production."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 3
+      }
+    },
+    {
       "req_id": "4",
       "path": "4",
       "text": "Mime or pantomime any ONE of the following, chosen by your counselor.",
@@ -50,77 +121,6 @@
       "req_id": "5",
       "path": "5",
       "text": "Explain the following: proscenium arch, central or arena staging, center stage, stage right, stage left, downstage, upstage, stage crew, flies, portal, cyclorama, stage brace, spotlight, floodlight, lighting control board, sound mixing desk, thrust staging, ground plans, and sightlines."
-    },
-    {
-      "req_id": "1",
-      "path": "1",
-      "text": "See or read three full-length plays. Write a review of each. Discuss with your counselor the plot or story. If you chose to watch the plays, comment on the acting and the staging. Note: Watching plays on television, video, or as a movie is not permitted."
-    },
-    {
-      "req_id": "2",
-      "path": "2",
-      "text": "Write a one-act play that will take at least 10 minutes to perform. The play must have a main character, conflict, and a climax."
-    },
-    {
-      "req_id": "3",
-      "path": "3",
-      "text": "Discuss with your counselor the safety precautions that should be practiced when working in a theater to protect the cast and crew. Then do THREE of the following:",
-      "subrequirements": [
-        {
-          "req_id": "i",
-          "path": "3.i",
-          "text": "Serve as the stage manager for a theatrical production. Document all cues and stage setups in your calling script."
-        },
-        {
-          "req_id": "j",
-          "path": "3.j",
-          "text": "Serve as musical director for a musical theater production."
-        },
-        {
-          "req_id": "a",
-          "path": "3.a",
-          "text": "Act a major part in a full-length play; or act a part in three one-act plays."
-        },
-        {
-          "req_id": "b",
-          "path": "3.b",
-          "text": "Direct a play. Cast, rehearse, and stage it. The play must be at least 10 minutes long."
-        },
-        {
-          "req_id": "c",
-          "path": "3.c",
-          "text": "Design the set for a play or a theatrical production. Make a model of it."
-        },
-        {
-          "req_id": "d",
-          "path": "3.d",
-          "text": "Design the costumes for five characters in a theatrical production set in a historical time."
-        },
-        {
-          "req_id": "e",
-          "path": "3.e",
-          "text": "Show skill in hair and makeup design. Make up yourself or a friend as a historical figure, a clown, an extraterrestrial, or a monster as directed."
-        },
-        {
-          "req_id": "f",
-          "path": "3.f",
-          "text": "With your counselor's approval, help with the building and painting of the scenery for a theatrical production."
-        },
-        {
-          "req_id": "g",
-          "path": "3.g",
-          "text": "With your counselor's approval, design the lighting for a play; or help install, focus, color, program, and operate the lighting for a theatrical production."
-        },
-        {
-          "req_id": "h",
-          "path": "3.h",
-          "text": "With your counselor's approval, help install, focus, equalize, program, and operate the sound for a theatrical production."
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "select",
-        "count": 3
-      }
     }
   ]
 }
