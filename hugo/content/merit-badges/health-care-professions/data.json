@@ -11,14 +11,14 @@
       "text": "Select three of the professions from Group 1 listed below which interest you, then complete the following:",
       "subrequirements": [
         {
-          "req_id": "option1",
-          "path": "1.option1",
-          "text": "a Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
         },
         {
-          "req_id": "option2",
-          "path": "1.option2",
-          "text": "b Describe to your counselor the educational and licensing requirements for the professionals you selected."
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
         }
       ],
       "subrequirement_mode": {
@@ -31,14 +31,14 @@
       "text": "Select three of the professions from Group 2 listed below which interest you, then complete the following:",
       "subrequirements": [
         {
-          "req_id": "option1",
-          "path": "2.option1",
-          "text": "a Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
         },
         {
-          "req_id": "option2",
-          "path": "2.option2",
-          "text": "b Describe to your counselor the educational and licensing requirements for the professionals you selected."
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
         }
       ],
       "subrequirement_mode": {
@@ -51,14 +51,14 @@
       "text": "Select three of the professions from Group 3 listed below which interest you, then complete the following:",
       "subrequirements": [
         {
-          "req_id": "option1",
-          "path": "3.option1",
-          "text": "a Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
         },
         {
-          "req_id": "option2",
-          "path": "3.option2",
-          "text": "b Describe to your counselor the educational and licensing requirements for the professionals you selected."
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
         }
       ],
       "subrequirement_mode": {
@@ -71,14 +71,14 @@
       "text": "Select three of the professions from Group 4 listed below which interest you, then complete the following:",
       "subrequirements": [
         {
-          "req_id": "option1",
-          "path": "4.option1",
-          "text": "a Briefly describe to your counselor the roles these professionals play in the delivery of health care."
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Briefly describe to your counselor the roles these professionals play in the delivery of health care."
         },
         {
-          "req_id": "option2",
-          "path": "4.option2",
-          "text": "b Describe to your counselor the educational and licensing requirements for the professionals you selected."
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Describe to your counselor the educational and licensing requirements for the professionals you selected."
         }
       ],
       "subrequirement_mode": {
@@ -88,7 +88,42 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at theirworkplace. Discuss with your counselor the following: a. Why did they choose their particular career? b. What do they most like about their job? c. What are their biggest challenges in doing their job? d. Identify the tools/instruments that may be used in their jobs. e. What has been the most surprising aspect of their career? f. What continuing education requirements are required to maintain certification?"
+      "text": "Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at theirworkplace. Discuss with your counselor the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Why did they choose their particular career?"
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "What do they most like about their job?"
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "What are their biggest challenges in doing their job?"
+        },
+        {
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Identify the tools/instruments that may be used in their jobs."
+        },
+        {
+          "req_id": "e",
+          "path": "5.e",
+          "text": "What has been the most surprising aspect of their career?"
+        },
+        {
+          "req_id": "f",
+          "path": "5.f",
+          "text": "What continuing education requirements are required to maintain certification?"
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
     },
     {
       "req_id": "6",

@@ -139,6 +139,7 @@ function slugifyOption(text: string): string | null {
   } else {
     // Pattern 2: "Option A—Recurve Bow or Longbow. Do the following:" -> extract "Recurve Bow or Longbow"
     // Also handles: "Option 1—Traditional Golf" -> extract "Traditional Golf"
+    // Triggered by: golf (has "Option 1—Traditional Golf", "Option 2—Disc Golf")
     const prefixOptionMatch = nameToSlugify.match(
       /^option\s+[a-z0-9][-—]\s*(.+?)(?:[\.\?]|$)/i,
     );
@@ -216,7 +217,8 @@ function extractSubrequirements(
         .replace(/\s+/g, " ")
         .replace(/^\([a-z0-9]+\)\s*/i, "") // Remove leading (a) etc.
         .replace(/^(\d+\.)\s*/, "") // Remove leading "1. ", "2. ", etc.
-        .replace(/^([A-Z]\.)\s*/i, ""); // Remove leading "A. ", "B. ", "C. " etc.
+        .replace(/^([A-Z]\.)\s*/i, "") // Remove leading "A. ", "B. ", "C. " etc.
+        .replace(/^[a-z]\s*(?=[A-Z])/, ""); // Remove "a", "a " before capital letter (health-care-professions)
 
       // Strip "Resources:" suffix and everything after
       const resourcesMatch = textOnly.match(/Resources?:/i);
@@ -312,6 +314,7 @@ function extractSubrequirements(
       let optionId = optionIsNamed ? slugifyOption(childText) : null;
       if (!optionId) {
         // Use letters (a, b, c, ...) instead of option1, option2, etc.
+        // Triggered by: golf (to match animal-science pattern: 6.beef-cattle.a not 6.beef-cattle.option1)
         optionId = String.fromCharCode(97 + subrequirementsMap.size); // 97 = 'a'
       }
 
@@ -344,7 +347,8 @@ function extractSubrequirements(
       // Clean option text - remove "Resource:" suffix and redundant letter prefix
       let optionLabel = childText
         .trim()
-        .replace(/^([A-Z]\.)\s*/i, ""); // Remove leading "A. ", "B. ", "C. " etc.
+        .replace(/^([A-Z]\.)\s*/i, "") // Remove leading "A. ", "B. ", "C. " etc.
+        .replace(/^[a-z]\s*(?=[A-Z])/, ""); // Remove "a ", "b " (health-care-professions)
       const resourcesIdx = optionLabel.search(/\s+Resources?:/i);
       if (resourcesIdx > 0) {
         optionLabel = optionLabel.substring(0, resourcesIdx).trim();
@@ -431,6 +435,7 @@ function parseStructureFromHtml(html: string): {
                 .replace(/\s+/g, " ");
               if (liText) {
                 // Use letters (a, b, c, ...) instead of option1, option2, etc.
+                // Triggered by: golf (consistency with animal-science pattern)
                 const inlineReqId = String.fromCharCode(97 + liIdx); // 97 = 'a'
                 subrequirements.push({
                   req_id: inlineReqId,
@@ -516,6 +521,63 @@ function parseStructureFromHtml(html: string): {
   });
 
   return { requirements, pamphlet_url: pamphletUrl };
+}
+
+// =============================================================================
+// EMBEDDED LIST SPLITTING
+// Handles cases where HTML has malformed list structure
+// Triggered by: health-care-professions (req 5 has "following:a. ...b. ...c. ...")
+// =============================================================================
+
+function splitEmbeddedLists(requirements: Requirement[]): void {
+  for (const req of requirements) {
+    // Check if text has embedded letter list (e.g., "following:a. ...b. ...c. ...")
+    if (req.text && !req.subrequirements) {
+      // Pattern: text contains "following:" followed by letter items "a. ", "b. ", etc.
+      // Note: May have NO space after "following:" (health-care-professions case)
+      const followingMatch = req.text.match(/^(.*?following:)\s*(.+)$/i);
+      if (followingMatch && followingMatch[1] && followingMatch[2]) {
+        const possibleIntro = followingMatch[1].trim();
+        const remainder = followingMatch[2];
+
+        // Check if remainder starts with letter pattern
+        if (/^[a-z]\.\s+/i.test(remainder)) {
+          const items: Requirement[] = [];
+
+          // Split on letter markers: "a. ", "b. ", "c. ", etc.
+          // Use positive lookahead to keep the letter markers
+          const parts = remainder.split(/(?=[a-z]\.\s+)/i);
+
+          for (const part of parts) {
+            const itemMatch = part.match(/^([a-z])\.\s+(.+?)$/is);
+            if (itemMatch && itemMatch[1] && itemMatch[2]) {
+              const letter = itemMatch[1].toLowerCase();
+              const itemText = itemMatch[2].trim();
+              if (itemText) {
+                items.push({
+                  req_id: letter,
+                  path: `${req.path}.${letter}`,
+                  text: itemText,
+                });
+              }
+            }
+          }
+
+          if (items.length > 0) {
+            req.text = possibleIntro;
+            req.subrequirements = items;
+            req.subrequirement_mode = { type: "all" };
+            console.log(`   Split requirement ${req.path} into ${items.length} items`);
+          }
+        }
+      }
+    }
+
+    // Recursively process subrequirements
+    if (req.subrequirements) {
+      splitEmbeddedLists(req.subrequirements);
+    }
+  }
 }
 
 // =============================================================================
@@ -646,6 +708,10 @@ try {
   // Step 5: Correct typos
   console.log("\n✏️  Step 5: Correcting typos...\n");
   correctTyposInRequirements(structure);
+
+  // Step 6: Split embedded lists
+  console.log("\n✂️  Step 6: Splitting embedded lists...\n");
+  splitEmbeddedLists(structure);
 
   // Build final data
   const badgeData: BadgeData = {
