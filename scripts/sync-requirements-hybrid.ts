@@ -118,9 +118,36 @@ function computePath(parentPath: string, reqId: string): string {
 function slugifyOption(text: string): string | null {
   if (!text) return null;
 
-  // Extract the name before "Option" (e.g., "Sheep or Goat Option ..." -> "Sheep or Goat")
-  const optionMatch = text.match(/^(.+?)\s*option\b/i);
-  const nameToSlugify = optionMatch ? optionMatch[1] : text.substring(0, 200);
+  let nameToSlugify = text;
+
+  // First, strip "Resource:" and everything after it
+  const resourceMatch = text.match(/^(.+?)\s+Resources?:/i);
+  if (resourceMatch && resourceMatch[1]) {
+    nameToSlugify = resourceMatch[1];
+  }
+
+  // Pattern 1: "Beef Cattle Option" -> extract "Beef Cattle"
+  const suffixOptionMatch = nameToSlugify.match(/^(.+?)\s*option\b/i);
+  if (suffixOptionMatch && suffixOptionMatch[1]) {
+    nameToSlugify = suffixOptionMatch[1];
+  } else {
+    // Pattern 2: "Option A—Recurve Bow or Longbow. Do the following:" -> extract "Recurve Bow or Longbow"
+    const prefixOptionMatch = nameToSlugify.match(
+      /^option\s+[a-z][-—]\s*(.+?)[\.\?]/i,
+    );
+    if (prefixOptionMatch && prefixOptionMatch[1]) {
+      nameToSlugify = prefixOptionMatch[1];
+    } else {
+      // Fallback: remove common trailing phrases
+      nameToSlugify = nameToSlugify
+        .replace(/\.\s*do\s+the\s+following.*/i, "")
+        .replace(/\s*\(.*?\)\s*/g, "")
+        .trim();
+    }
+  }
+
+  // Limit length before slugifying
+  nameToSlugify = nameToSlugify.substring(0, 100);
 
   const slug = nameToSlugify
     .toLowerCase()
@@ -195,6 +222,17 @@ function extractSubrequirements(
         nested = extractSubrequirements($, childReqId, reqPath);
       }
 
+      // Extract resources from this requirement (links in the HTML)
+      const reqResources: Resource[] = [];
+      $child.find("a").each((_, link) => {
+        const $link = $(link);
+        const href = $link.attr("href");
+        const title = $link.text().trim().replace(/\s+/g, " ");
+        if (href && title && !href.startsWith("#")) {
+          reqResources.push({ title, url: href });
+        }
+      });
+
       // If there are inline lists and no nested DOM children, extract list items
       if (hasInlineList && nested.length === 0) {
         $child.children("ul, ol").each((_, listEl) => {
@@ -247,6 +285,7 @@ function extractSubrequirements(
         req_id: reqId,
         path: reqPath,
         text: cleanText, // Store clean HTML text (without inline lists)
+        resources: reqResources.length > 0 ? reqResources : undefined,
         subrequirements: nested.length > 0 ? nested : undefined,
         subrequirement_mode: subrequirementMode,
       });
@@ -273,14 +312,30 @@ function extractSubrequirements(
         nested = extractSubrequirements($, childReqId, reqPath);
       }
 
-      // For named options, use the full text as the label
-      const optionLabel = childText.trim();
+      // Extract resources from the option heading itself (if any)
+      const optionResources: Resource[] = [];
+      $child.find("a").each((_, link) => {
+        const $link = $(link);
+        const href = $link.attr("href");
+        const title = $link.text().trim().replace(/\s+/g, " ");
+        if (href && title && !href.startsWith("#")) {
+          optionResources.push({ title, url: href });
+        }
+      });
+
+      // Clean option text - remove "Resource:" suffix
+      let optionLabel = childText.trim();
+      const resourcesIdx = optionLabel.search(/\s+Resources?:/i);
+      if (resourcesIdx > 0) {
+        optionLabel = optionLabel.substring(0, resourcesIdx).trim();
+      }
 
       subrequirementsMap.set(textKey, {
         req_id: optionId,
         path: reqPath,
-        text: optionLabel, // Use HTML text for option labels
+        text: optionLabel,
         is_option: optionIsNamed ? true : undefined,
+        resources: optionResources.length > 0 ? optionResources : undefined,
         subrequirements: nested.length > 0 ? nested : undefined,
         subrequirement_mode: nested.length > 0 ? { type: "all" } : undefined,
       });
@@ -331,10 +386,32 @@ function parseStructureFromHtml(html: string): {
       ?.match(/mb-requirement-id-(\d+)/);
     const parentId = parentIdMatch ? parentIdMatch[1] : null;
 
-    // Get subrequirements
+    // Get subrequirements from DOM children
     let subrequirements: Requirement[] = [];
     if (parentId) {
       subrequirements = extractSubrequirements($, parentId, reqId);
+    }
+
+    // If no DOM children found, check for inline lists at parent level
+    if (subrequirements.length === 0) {
+      const hasInlineList = $parent.find("ul, ol").length > 0;
+      if (hasInlineList) {
+        $parent.children("ul, ol").each((_, listEl) => {
+          $(listEl)
+            .children("li")
+            .each((liIdx, liEl) => {
+              let liText = $(liEl).text().trim().replace(/\s+/g, " ");
+              if (liText) {
+                const inlineReqId = `option${liIdx + 1}`;
+                subrequirements.push({
+                  req_id: inlineReqId,
+                  path: `${reqId}.${inlineReqId}`,
+                  text: liText,
+                });
+              }
+            });
+        });
+      }
     }
 
     // Get clean parent text
@@ -347,6 +424,17 @@ function parseStructureFromHtml(html: string): {
     const parentText = resourcesMatch
       ? parentTextRaw.substring(0, parentTextRaw.search(/Resources?:/i)).trim()
       : parentTextRaw;
+
+    // Extract resources from parent requirement (links in the HTML)
+    const parentResources: Resource[] = [];
+    $parent.find("a").each((_, link) => {
+      const $link = $(link);
+      const href = $link.attr("href");
+      const title = $link.text().trim().replace(/\s+/g, " ");
+      if (href && title && !href.startsWith("#")) {
+        parentResources.push({ title, url: href });
+      }
+    });
 
     let subrequirementMode:
       | { type: "all" | "select"; count?: number }
@@ -376,6 +464,7 @@ function parseStructureFromHtml(html: string): {
       req_id: reqId,
       path: reqId,
       text: parentText, // Store HTML text, will be enhanced by LLM
+      resources: parentResources.length > 0 ? parentResources : undefined,
       subrequirements: subrequirements.length > 0 ? subrequirements : undefined,
       subrequirement_mode: subrequirementMode,
     });
@@ -419,9 +508,8 @@ function mergeContent(
   for (const req of requirements) {
     const content = contentMap.get(req.path);
 
-    // ONLY merge resources from LLM - the LLM can't reliably map text to paths
-    // HTML text is preserved for all requirements
-    if (content?.resources) {
+    // Merge resources: prefer HTML resources (already extracted), only use LLM if HTML has none
+    if (content?.resources && !req.resources) {
       req.resources = content.resources;
     }
 

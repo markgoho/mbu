@@ -75,7 +75,11 @@
               "path": "2.d.2",
               "text": "To demonstrate arrow repair, inspect the shafts and prepare and replace at least three vanes, one point, and one nock. You may use as many arrows as necessary to accomplish this. The repairs can be done on wood, fiberglass, or aluminum arrows."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         },
         {
           "req_id": "e",
@@ -143,148 +147,170 @@
       "text": "Working under the supervision of a certified USA Archery Level 1 Instructor or a certified long-term camp staff member (i.e., a National Camping School [NCS] Range Activities Director; or a Rangemaster over age 18 who is trained by a NCS Range Activities Director or by a USA Archery Level 1 Instructor), do ONE of the following Options:",
       "subrequirements": [
         {
-          "req_id": "option-a-recurve-bow-or-longbow-do-the-following",
-          "path": "5.option-a-recurve-bow-or-longbow-do-the-following",
+          "req_id": "recurve-bow-or-longbow",
+          "path": "5.recurve-bow-or-longbow",
           "text": "Option A—Recurve Bow or Longbow. Do the following:",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "5.option-a-recurve-bow-or-longbow-do-the-following.a",
+              "path": "5.recurve-bow-or-longbow.a",
               "text": "Name and point to the parts of the recurve or longbow you are shooting."
             },
             {
               "req_id": "b",
-              "path": "5.option-a-recurve-bow-or-longbow-do-the-following.b",
+              "path": "5.recurve-bow-or-longbow.b",
               "text": "Explain how to properly care for and store recurve bows and longbows."
             },
             {
               "req_id": "c",
-              "path": "5.option-a-recurve-bow-or-longbow-do-the-following.c",
+              "path": "5.recurve-bow-or-longbow.c",
               "text": "Demonstrate and explain USA Archery's eleven \"Steps of Shooting\" for the bow you are shooting."
             },
             {
               "req_id": "d",
-              "path": "5.option-a-recurve-bow-or-longbow-do-the-following.d",
+              "path": "5.recurve-bow-or-longbow.d",
               "text": "Demonstrate the proper way to string a recurve bow or longbow."
             },
             {
               "req_id": "e",
-              "path": "5.option-a-recurve-bow-or-longbow-do-the-following.e",
+              "path": "5.recurve-bow-or-longbow.e",
               "text": "Using a bow square, locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using."
             },
             {
               "req_id": "f",
-              "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f",
+              "path": "5.recurve-bow-or-longbow.f",
               "text": "Do ONE of the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f.1",
+                  "path": "5.recurve-bow-or-longbow.f.1",
                   "text": "Using a recurve bow or longbow and arrows with a finger release, shoot a single round of ONE of the following:",
                   "subrequirements": [
                     {
                       "req_id": "a",
-                      "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f.1.a",
+                      "path": "5.recurve-bow-or-longbow.f.1.a",
                       "text": "An NFAA field round of 14 targets and make a score of 60 points"
                     },
                     {
                       "req_id": "b",
-                      "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f.1.b",
+                      "path": "5.recurve-bow-or-longbow.f.1.b",
                       "text": "A Scouting America field round of 14 targets and make a score of 80 points"
                     },
                     {
                       "req_id": "c",
-                      "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f.1.c",
+                      "path": "5.recurve-bow-or-longbow.f.1.c",
                       "text": "A World Archery/USA Archery indoor round and make a score of 80 points (indoor rounds may be shot outdoors if this is more convenient)"
                     },
                     {
                       "req_id": "d",
-                      "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f.1.d",
+                      "path": "5.recurve-bow-or-longbow.f.1.d",
                       "text": "An NFAA indoor round and make a score of 50 points (indoor rounds may be shot outdoors if this is more convenient)."
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "select",
+                    "count": 1
+                  }
                 },
                 {
                   "req_id": "2",
-                  "path": "5.option-a-recurve-bow-or-longbow-do-the-following.f.2",
+                  "path": "5.recurve-bow-or-longbow.f.2",
                   "text": "Shooting 30 arrows in five-arrow ends at an 80-centimeter (32-inch) five-color target at 10 yards and using the 10 scoring regions, make a score of 150 points."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
-          "req_id": "option-b-compound-bow-do-the-following",
-          "path": "5.option-b-compound-bow-do-the-following",
+          "req_id": "compound-bow",
+          "path": "5.compound-bow",
           "text": "Option B—Compound Bow. Do the following:",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "5.option-b-compound-bow-do-the-following.a",
+              "path": "5.compound-bow.a",
               "text": "Name and point to the parts of the compound bow you are shooting."
             },
             {
               "req_id": "b",
-              "path": "5.option-b-compound-bow-do-the-following.b",
+              "path": "5.compound-bow.b",
               "text": "Explain how to properly care for and store compound bows."
             },
             {
               "req_id": "c",
-              "path": "5.option-b-compound-bow-do-the-following.c",
+              "path": "5.compound-bow.c",
               "text": "Demonstrate and explain USA Archery's eleven \"Steps of Shooting\" for the bow you are shooting."
             },
             {
               "req_id": "d",
-              "path": "5.option-b-compound-bow-do-the-following.d",
+              "path": "5.compound-bow.d",
               "text": "Explain why it is necessary to have the string or cable on a compound bow replaced at an archery shop."
             },
             {
               "req_id": "e",
-              "path": "5.option-b-compound-bow-do-the-following.e",
+              "path": "5.compound-bow.e",
               "text": "Locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using."
             },
             {
               "req_id": "f",
-              "path": "5.option-b-compound-bow-do-the-following.f",
+              "path": "5.compound-bow.f",
               "text": "Do ONE of the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "5.option-b-compound-bow-do-the-following.f.1",
+                  "path": "5.compound-bow.f.1",
                   "text": "Using a compound bow and arrows with a finger release, shoot a single round of ONE of the following:",
                   "subrequirements": [
                     {
                       "req_id": "a",
-                      "path": "5.option-b-compound-bow-do-the-following.f.1.a",
+                      "path": "5.compound-bow.f.1.a",
                       "text": "An NFAA field round of 14 targets and make a score of 70 points"
                     },
                     {
                       "req_id": "b",
-                      "path": "5.option-b-compound-bow-do-the-following.f.1.b",
+                      "path": "5.compound-bow.f.1.b",
                       "text": "A Scouting America field round of 14 targets and make a score of 90 points"
                     },
                     {
                       "req_id": "c",
-                      "path": "5.option-b-compound-bow-do-the-following.f.1.c",
+                      "path": "5.compound-bow.f.1.c",
                       "text": "A World Archery/USA Archery indoor round and make a score of 90 points (indoor rounds may be shot outdoors if this is more convenient)"
                     },
                     {
                       "req_id": "d",
-                      "path": "5.option-b-compound-bow-do-the-following.f.1.d",
+                      "path": "5.compound-bow.f.1.d",
                       "text": "An NFAA indoor round and make a score of 60 points (indoor rounds may be shot outdoors if this is more convenient)"
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "select",
+                    "count": 1
+                  }
                 },
                 {
                   "req_id": "2",
-                  "path": "5.option-b-compound-bow-do-the-following.f.2",
+                  "path": "5.compound-bow.f.2",
                   "text": "Shooting at an 80-centimeter (32-inch) five-color target using the 10 scoring regions, make a minimum score of 160 points. Accomplish this in the following manner: Shoot 15 arrows in five-arrow ends, at a distance of 10 yards AND Shoot 15 arrows in five-arrow ends, at a distance of 15 yards."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

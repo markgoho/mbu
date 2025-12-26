@@ -116,7 +116,7 @@
           "text": "Describe the similarities and differences of several types of astronomical telescopes, including at least one that observes light beyond the visible part of the spectrum (i.e., radio, X-ray, ultraviolet, or infrared).",
           "resources": [
             {
-              "title": "Telescopes:  Crash Course in Astronomy (video)",
+              "title": "Telescopes: Crash Course in Astronomy (video)",
               "url": "https://youtu.be/mYhy7eaazIk"
             },
             {
@@ -506,16 +506,6 @@
           "req_id": "a",
           "path": "8.a",
           "text": "Visit a planetarium or astronomical observatory. Submit a written report, a scrapbook, OR a video presentation afterward to your counselor that includes the following information:",
-          "resources": [
-            {
-              "title": "The 10 Best Observatories in the U.S. to Visit This Year (website)",
-              "url": "https://spacetourismguide.com/best-observatories-united-states/"
-            },
-            {
-              "title": "U.S. Planetariums (website)",
-              "url": "https://www.go-astronomy.com/planetariums.htm"
-            }
-          ],
           "subrequirements": [
             {
               "req_id": "1",
@@ -536,6 +526,19 @@
               "req_id": "4",
               "path": "8.a.4",
               "text": "Celestial objects you observed"
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          },
+          "resources": [
+            {
+              "title": "The 10 Best Observatories in the U.S. to Visit This Year (website)",
+              "url": "https://spacetourismguide.com/best-observatories-united-states/"
+            },
+            {
+              "title": "U.S. Planetariums (website)",
+              "url": "https://www.go-astronomy.com/planetariums.htm"
             }
           ]
         },

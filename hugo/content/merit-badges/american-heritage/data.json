@@ -6,11 +6,6 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Heritage.pdf",
   "requirements": [
     {
-      "req_id": "6",
-      "path": "6",
-      "text": "Discuss with your counselor the career opportunities in American heritage. Pick one that interests you and explain how to prepare for this career. Discuss what education and training are required for this career."
-    },
-    {
       "req_id": "1",
       "path": "1",
       "text": "Read the Declaration of Independence. Pay close attention to the section that begins with \"We hold these truths to be self-evident\" and ends with \"to provide new Guards for their future security.\" Rewrite that section in your own words, making it as easy to understand as possible. Then, share your writing with your counselor and discuss the importance of the Declaration to all Americans."
@@ -47,23 +42,23 @@
       }
     },
     {
-      "req_id": "����z\u0002\u001bl\u00013",
-      "path": "����z\u0002\u001bl\u00013",
+      "req_id": "3",
+      "path": "3",
       "text": "Do the following:",
       "subrequirements": [
         {
           "req_id": "a",
-          "path": "����z\u0002\u001bl\u00013.a",
+          "path": "3.a",
           "text": "Select a topic related to the United States that is currently in the news. Describe to your counselor what is happening. Explain how today's events are related to or affected by the events and values of America's past."
         },
         {
           "req_id": "b",
-          "path": "����z\u0002\u001bl\u00013.b",
+          "path": "3.b",
           "text": "For the following, describe its adoption, tell about any changes since its adoption, and explain how each one continues to influence Americans today: the flag, the Pledge of Allegiance, the Great Seal of the United States, the motto, and the national anthem."
         },
         {
           "req_id": "c",
-          "path": "����z\u0002\u001bl\u00013.c",
+          "path": "3.c",
           "text": "Research your family's history. Find out how various events and situations in American history affected your family. If your family immigrated to America, tell the reasons why. Share what you find with your counselor."
         }
       ],
@@ -115,17 +110,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Watch two motion pictures (with the approval and permission of your counselor and parent or guardian) that are set in some period of American history. Describe to your counselor ho����z\u0002\u001bement.elementor-element-c1c13ad > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image: url(\"https://www.scouting.org/wp-content/uploads/2022/08/Citizenship-in-the-Community.png\");} <img loading=\"lazy\" src=\"/wp-content/uploads/2022/08/Eagle-Scout-Logo@3x.png\" alt=\"Eagle Scout insignia\" width=\"20\" height=\"25\"> Eagle Required Citizenship in the Community",
-          "resources": [
-            {
-              "title": "<img loading=\"lazy\" src=\"/wp-content/uploads/2022/08/Eagle-Scout-Logo@3x.png\" alt=\"Eagle Scout insignia\" width=\"20\" height=\"25\"> Eagle Required",
-              "url": "https://www.scouting.org/merit-badges/citizenship-in-the-community/"
-            },
-            {
-              "title": "Citizenship in the Community",
-              "url": "https://www.scouting.org/merit-badges/citizenship-in-the-community/"
-            }
-          ]
+          "text": "Watch two motion pictures (with the approval and permission of your counselor and parent or guardian) that are set in some period of American history. Describe to your counselor how accurate each film is with regard to the historical events depicted and also with regard to the way the characters are portrayed."
         },
         {
           "req_id": "b",
@@ -142,6 +127,11 @@
         "type": "select",
         "count": 1
       }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Discuss with your counselor the career opportunities in American heritage. Pick one that interests you and explain how to prepare for this career. Discuss what education and training are required for this career."
     }
   ]
 }

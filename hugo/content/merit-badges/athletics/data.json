@@ -246,7 +246,10 @@
               "path": "5.option-1-sprinting.b",
               "text": "200-meter dash"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-2-long-distance-running",
@@ -270,7 +273,10 @@
               "path": "5.option-2-long-distance-running.b",
               "text": "5k run"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-3-long-jump-or-high-jump",
@@ -308,7 +314,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-4-swimming",
@@ -338,7 +347,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-5-pull-ups-and-push-ups",
@@ -368,7 +380,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-6-baseball-throw",
@@ -392,7 +407,10 @@
               "path": "5.option-6-baseball-throw.b",
               "text": "Baseball throw for distance, five throws (total distance)"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-7-basketball-shooting",
@@ -464,9 +482,15 @@
                   "path": "5.option-7-basketball-shooting.b.8",
                   "text": "Anywhere along the three-point line"
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-8-football-kick-or-soccer-kick",
@@ -496,7 +520,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-9-weight-training",
@@ -526,7 +553,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
