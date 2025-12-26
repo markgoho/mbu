@@ -75,7 +75,10 @@
               "path": "4.a.5",
               "text": "Tie the following mooring knots—clove hitch, roundturn with two half-hitches, bowline, Wellman's knot, and mooring hitch."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
