@@ -184,7 +184,10 @@
               "path": "2.a.7",
               "text": "(7) Battery fluid (if possible) and condition of the battery terminals"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -525,7 +528,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         },
         {
           "req_id": "b",

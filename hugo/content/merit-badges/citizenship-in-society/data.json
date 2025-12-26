@@ -3,6 +3,7 @@
   "slug": "citizenship-in-society",
   "url": "https://www.scouting.org/merit-badges/citizenship-in-society/",
   "eagle_required": true,
+  "pamphlet_url": "https://www.scouting.org/merit-badges/citizenship-in-society/",
   "requirements": [
     {
       "req_id": "1",
@@ -49,7 +50,10 @@
               "path": "3.a.2",
               "text": "Share if you would do anything differently in the future and if so, what that would be."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -61,7 +65,10 @@
               "path": "3.b.1",
               "text": "Share how your actions represent alignment with the Scout Oath and Scout Law."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -174,7 +181,10 @@
                   "path": "6.b.i.6",
                   "text": "Would you do anything differently today?"
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "ii",
@@ -196,9 +206,16 @@
                   "path": "6.b.ii.3",
                   "text": "If that happened at your school, what would you do?"
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         },
         {
           "req_id": "option3",
@@ -300,7 +317,10 @@
               "path": "11.b.2",
               "text": "Help everyone benefit by considering different opinions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option3",

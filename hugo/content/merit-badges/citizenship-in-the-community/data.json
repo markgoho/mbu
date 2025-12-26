@@ -40,7 +40,10 @@
               "path": "2.a.4",
               "text": "Historical or other interesting points of interest."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",

@@ -6,67 +6,6 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Citizenship%20in%20the%20World.pdf",
   "requirements": [
     {
-      "req_id": "6",
-      "path": "6",
-      "text": "Do the following:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "6.a",
-          "text": "Explain how a government is represented abroad and how the United States government is accredited to international organizations."
-        },
-        {
-          "req_id": "b",
-          "path": "6.b",
-          "text": "Describe the roles of the following in the conduct of foreign relations: ambassador, consul, Bureau of International Information Programs (IIP), Agency for International Development, United States and Foreign Commercial Service"
-        },
-        {
-          "req_id": "c",
-          "path": "6.c",
-          "text": "Explain the purpose of a passport and visa for international travel."
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
-    },
-    {
-      "req_id": "7",
-      "path": "7",
-      "text": "Do TWO of the following (with your parent or guardian's permission) and share with your counselor what you have learned:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "7.a",
-          "text": "Visit the website of the U.S. State Department. Learn more about an issue you find interesting that is discussed on this website."
-        },
-        {
-          "req_id": "b",
-          "path": "7.b",
-          "text": "Visit the website of an international news organization or foreign government, OR examine a foreign newspaper available at your local library, bookstore, or newsstand. Find a news story about a human right realized in the United States that is not recognized in another country."
-        },
-        {
-          "req_id": "c",
-          "path": "7.c",
-          "text": "Visit with a student or Scout from another country and discuss the typical values, holidays, ethnic foods, and traditions practiced or enjoyed there."
-        },
-        {
-          "req_id": "d",
-          "path": "7.d",
-          "text": "Attend a world Scout jamboree."
-        },
-        {
-          "req_id": "e",
-          "path": "7.e",
-          "text": "Participate in or attend an international event in your area, such as an ethnic festival, concert, or play."
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "select",
-        "count": 2
-      }
-    },
-    {
       "req_id": "1",
       "path": "1",
       "text": "Explain what citizenship in the world means to you and what you think it takes to be a good world citizen."
@@ -161,7 +100,11 @@
               "path": "4.c.9",
               "text": "European Union"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
         }
       ],
       "subrequirement_mode": {
@@ -192,6 +135,67 @@
       ],
       "subrequirement_mode": {
         "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "6.a",
+          "text": "Explain how a government is represented abroad and how the United States government is accredited to international organizations."
+        },
+        {
+          "req_id": "b",
+          "path": "6.b",
+          "text": "Describe the roles of the following in the conduct of foreign relations: ambassador, consul, Bureau of International Information Programs (IIP), Agency for International Development, United States and Foreign Commercial Service"
+        },
+        {
+          "req_id": "c",
+          "path": "6.c",
+          "text": "Explain the purpose of a passport and visa for international travel."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Do TWO of the following (with your parent or guardian's permission) and share with your counselor what you have learned:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Visit the website of the U.S. State Department. Learn more about an issue you find interesting that is discussed on this website."
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Visit the website of an international news organization or foreign government, OR examine a foreign newspaper available at your local library, bookstore, or newsstand. Find a news story about a human right realized in the United States that is not recognized in another country."
+        },
+        {
+          "req_id": "c",
+          "path": "7.c",
+          "text": "Visit with a student or Scout from another country and discuss the typical values, holidays, ethnic foods, and traditions practiced or enjoyed there."
+        },
+        {
+          "req_id": "d",
+          "path": "7.d",
+          "text": "Attend a world Scout jamboree."
+        },
+        {
+          "req_id": "e",
+          "path": "7.e",
+          "text": "Participate in or attend an international event in your area, such as an ethnic festival, concert, or play."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 2
       }
     }
   ]

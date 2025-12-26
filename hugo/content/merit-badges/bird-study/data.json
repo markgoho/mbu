@@ -281,7 +281,7 @@
         },
         {
           "title": "Two Types of Communication Between Birds: Understanding Bird Language Songs and Calls (video)",
-          "url": "https://www.youtube.com/watch?v=4_1zIwEENt8 "
+          "url": "https://www.youtube.com/watch?v=4_1zIwEENt8"
         }
       ]
     },
@@ -310,7 +310,10 @@
               "path": "8.a.3",
               "text": "Tell your counselor what makes the area you visited good for finding birds."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -342,7 +345,10 @@
               "path": "8.b.3",
               "text": "Tell your counselor which species are uncommon, and explain why these were present in small numbers. If the number of birds of these species is decreasing, explain why, and what, if anything, could be done to reverse their decline."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -375,7 +381,10 @@
               "path": "8.c.4",
               "text": "Tell how the birds were captured, the number of bird species recorded during your visit, and your role in the program."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

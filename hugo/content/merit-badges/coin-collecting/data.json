@@ -115,7 +115,11 @@
               "path": "7.d.4",
               "text": "Tour a virtual exhibit (with your parent or guardian's permission) approved by your counselor."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         }
       ],
       "subrequirement_mode": {

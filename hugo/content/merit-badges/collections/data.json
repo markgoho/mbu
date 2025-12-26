@@ -40,7 +40,10 @@
               "path": "3.a.3",
               "text": "Storage."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",

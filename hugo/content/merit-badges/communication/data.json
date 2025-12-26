@@ -40,7 +40,10 @@
               "path": "1.b.4",
               "text": "Understand someone's feelings."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",

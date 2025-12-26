@@ -360,9 +360,13 @@ function parseStructureFromHtml(html: string): {
     const $link = $(linkEl);
     const linkText = $link.text().trim().toLowerCase();
     const href = $link.attr("href");
-    if (linkText === "download the free pamphlet" && href?.endsWith(".pdf")) {
-      pamphletUrl = href;
-      return false;
+    // Must have valid href and end with .pdf
+    if (href && href.length > 0 && href.endsWith(".pdf")) {
+      const context = $link.parent().text().toLowerCase();
+      if (context.includes("pamphlet") || context.includes("download")) {
+        pamphletUrl = href;
+        return false;
+      }
     }
   });
 
@@ -482,6 +486,38 @@ function parseStructureFromHtml(html: string): {
 }
 
 // =============================================================================
+// TYPO CORRECTIONS
+// =============================================================================
+
+const TYPO_CORRECTIONS: Record<string, string> = {
+  "Rapel": "Rappel",
+  "rapel": "rappel",
+};
+
+function correctTypos(text: string): string {
+  let corrected = text;
+  for (const [typo, correction] of Object.entries(TYPO_CORRECTIONS)) {
+    corrected = corrected.replace(new RegExp(`\\b${typo}\\b`, "g"), correction);
+  }
+  return corrected;
+}
+
+function correctTyposInRequirements(requirements: Requirement[]): void {
+  for (const req of requirements) {
+    req.text = correctTypos(req.text);
+    if (req.resources) {
+      req.resources = req.resources.map(r => ({
+        ...r,
+        title: correctTypos(r.title),
+      }));
+    }
+    if (req.subrequirements) {
+      correctTyposInRequirements(req.subrequirements);
+    }
+  }
+}
+
+// =============================================================================
 // MERGE LOGIC
 // =============================================================================
 
@@ -574,6 +610,10 @@ try {
     const contentMap = buildContentMap(llmContent);
     mergeContent(structure, contentMap);
   }
+
+  // Step 5: Correct typos
+  console.log("\n✏️  Step 5: Correcting typos...\n");
+  correctTyposInRequirements(structure);
 
   // Build final data
   const badgeData: BadgeData = {

@@ -91,6 +91,16 @@
       "req_id": "3",
       "path": "3",
       "text": "Make a written plan for an overnight trek and show how to get to your camping spot by using a topographical map and one of the following:",
+      "resources": [
+        {
+          "title": "How to Read a Topographic Map (video)",
+          "url": "https://www.youtube.com/watch?v=CoVcRxza8nI&t=45s"
+        },
+        {
+          "title": "Scouting America Planning Worksheet (PDF)",
+          "url": "https://filestore.scouting.org/filestore/boyscouts/pdf/512-505-2016-Scout-Planning-Worksheet.pdf?_gl=1*1jwbf2y*_gcl_au*MjA1Nzc0ODA2My4xNzUxOTczMjY5*_ga*NjM2Nzg0MDM0LjE3NTM2NDM4MDI.*_ga_20G0JHESG4*czE3NTQ0MjQyNzckbzI5JGcxJHQxNzU0NDI4Njk0JGoxNSRsMCRoMA..&_ga=2.84744985.1230580687.1754312921-636784034.1753643802"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -129,17 +139,7 @@
       "subrequirement_mode": {
         "type": "select",
         "count": 1
-      },
-      "resources": [
-        {
-          "title": "How to Read a Topographic Map (video)",
-          "url": "https://www.youtube.com/watch?v=CoVcRxza8nI&t=45s"
-        },
-        {
-          "title": "Scouting America Planning Worksheet (PDF)",
-          "url": "https://filestore.scouting.org/filestore/boyscouts/pdf/512-505-2016-Scout-Planning-Worksheet.pdf?_gl=1*1jwbf2y*_gcl_au*MjA1Nzc0ODA2My4xNzUxOTczMjY5*_ga*NjM2Nzg0MDM0LjE3NTM2NDM4MDI.*_ga_20G0JHESG4*czE3NTQ0MjQyNzckbzI5JGcxJHQxNzU0NDI4Njk0JGoxNSRsMCRoMA..&_ga=2.84744985.1230580687.1754312921-636784034.1753643802"
-        }
-      ]
+      }
     },
     {
       "req_id": "4",
@@ -356,12 +356,24 @@
             {
               "req_id": "1",
               "path": "8.a.1",
-              "text": "Using a propane or butane/propane stove"
+              "text": "Using a propane or butane/propane stove",
+              "resources": [
+                {
+                  "title": "How to Use a Propane Stove (video)",
+                  "url": "https://youtu.be/6il0aDjwSGI?si=IMrR6Ycu03lWzTtU"
+                }
+              ]
             },
             {
               "req_id": "2",
               "path": "8.a.2",
-              "text": "Using a liquid fuel stove"
+              "text": "Using a liquid fuel stove",
+              "resources": [
+                {
+                  "title": "How to Use a Liquid Fuel Stove (video)",
+                  "url": "https://youtu.be/2XRqdVIqimY?si=Wj7JsttaHkIADW9a"
+                }
+              ]
             },
             {
               "req_id": "3",
