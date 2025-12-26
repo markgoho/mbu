@@ -81,7 +81,10 @@
                   "path": "6.beef-cattle.a.3",
                   "text": "Producing purebred cattle for sale as breeding stock to others"
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "b",
@@ -98,7 +101,10 @@
               "path": "6.beef-cattle.d",
               "text": "Define the following terms: bull, steer, bullock, cow, heifer, freemartin, heiferette, and calf."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "dairy",
@@ -136,7 +142,10 @@
               "path": "6.dairy.f",
               "text": "Visit a dairy farm or a milk processing plant. Describe what you saw and explain what you learned. If you cannot visit a dairy farm or processing plant, view a video from a breed or dairy association, or research the internet (with your parent or guardian's permission) for information on dairying. Tell about your findings."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "horse",
@@ -169,52 +178,62 @@
               "path": "6.horse.e",
               "text": "Outline the proper feeding of a horse doing light work. Explain why the amount and kind of feed will change according to the kind of horse and the work it does. Describe what colic is, what can cause it, and its symptoms."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
-          "req_id": "sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice",
-          "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice",
+          "req_id": "sheep-or-goat",
+          "path": "6.sheep-or-goat",
           "text": "Sheep or Goat Option (choose one and complete the following based upon the choice)",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.a",
+              "path": "6.sheep-or-goat.a",
               "text": "Make a sketch of a live lamb or goat. Show the location of the various wholesale and retail cuts."
             },
             {
               "req_id": "b",
-              "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.b",
+              "path": "6.sheep-or-goat.b",
               "text": "Discuss how wools are sorted and graded."
             },
             {
               "req_id": "c",
-              "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.c",
+              "path": "6.sheep-or-goat.c",
               "text": "List products that can be made from the milk."
             },
             {
               "req_id": "d",
-              "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.d",
+              "path": "6.sheep-or-goat.d",
               "text": "Based on your choice, do ONE of the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.d.1",
+                  "path": "6.sheep-or-goat.d.1",
                   "text": "Raise a lamb or goat from weaning to market weight. Keep records of feed intake, weight gains, medication, vaccination, and mortality. Present your records to your counselor for review."
                 },
                 {
                   "req_id": "2",
-                  "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.d.2",
+                  "path": "6.sheep-or-goat.d.2",
                   "text": "Visit a farm or ranch where sheep or goats are raised. Describe what you saw and explain what you learned. If you cannot visit a sheep or goat farm or ranch, view a video from a breed association, or research the internet (with your parent or guardian's permission) for information on sheep or goats. Tell about your findings."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             },
             {
               "req_id": "e",
-              "path": "6.sheep-or-goat-option-choose-one-and-complete-the-following-based-upon-the-choice.e",
+              "path": "6.sheep-or-goat.e",
               "text": "Define the following terms for a sheep (wether, ewe, ram, and lamb) OR a goat (doe, nanny, kid, buck, and billy)."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "hog",
@@ -247,14 +266,21 @@
                   "path": "6.hog.c.2",
                   "text": "Visit a farm where hogs are produced, or visit a packing plant handling hogs. Describe what you saw and explain what you learned. If you cannot visit a hog production unit or packing plant, view a video from a packer or processor, or research the internet (with your parent or guardian's permission) for information on hogs. Tell about your findings."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             },
             {
               "req_id": "d",
               "path": "6.hog.d",
               "text": "Define the following terms: gilt, sow, barrow, and boar."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "avian",
@@ -297,14 +323,21 @@
                   "path": "6.avian.d.3",
                   "text": "Visit a commercial avian production facility. Describe what you saw and explain what you learned. If you cannot visit a commercial facility, view a video from a poultry association, or research the internet (with your parent or guardian's permission) for information on poultry production. Tell about your findings."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             },
             {
               "req_id": "e",
               "path": "6.avian.e",
               "text": "Define the following terms: chick, pullet, hen, cockerel, cock, and capon."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
