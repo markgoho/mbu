@@ -90,7 +90,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -127,7 +130,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -179,7 +185,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -216,7 +225,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "e",
@@ -245,7 +257,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "f",
@@ -282,7 +297,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "g",
@@ -335,9 +353,16 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "h",
@@ -370,7 +395,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
@@ -388,7 +416,7 @@
           "url": "https://www.youtube.com/watch?v=XoOSgw6sOPA"
         },
         {
-          "title": "What is Leave No Trace?  (video)",
+          "title": "What is Leave No Trace? (video)",
           "url": "https://www.youtube.com/watch?v=Rpq01rO9ZR0"
         },
         {
@@ -408,7 +436,7 @@
           "text": "Explain what succession is to your counselor.",
           "resources": [
             {
-              "title": "Ecological Succession  (video)",
+              "title": "Ecological Succession (video)",
               "url": "https://www.youtube.com/watch?v=IrIvMt6HWlA"
             },
             {

@@ -242,7 +242,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "2",
@@ -280,7 +283,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "3",
@@ -318,7 +324,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "4",
@@ -370,7 +379,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "5",
@@ -410,11 +422,20 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-2-horticulture",
@@ -509,7 +530,10 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option4",
@@ -522,7 +546,7 @@
                   "text": "Explain the importance of good landscape design and selection of plants that are suitable for particular sites and conditions.",
                   "resources": [
                     {
-                      "title": "How to Pick the Right Plants for  Stunning Landscaping - A Botanical Bliss Guide (video)",
+                      "title": "How to Pick the Right Plants for Stunning Landscaping - A Botanical Bliss Guide (video)",
                       "url": "https://youtu.be/fpI_A_F7U50?si=r0VZS0UHwFOQ8ZiY"
                     }
                   ]
@@ -549,7 +573,10 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option5",
@@ -603,7 +630,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "2",
@@ -652,7 +682,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "3",
@@ -714,7 +747,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "4",
@@ -781,11 +817,20 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-3-field-botany",
@@ -809,7 +854,7 @@
                   "text": "Using information from maps, textbooks, or the internet, describe the environmental factors that may influence the presence of plants on your site, including latitude, climate, air and soil temperature, soil type and pH, geology, hydrology, and topography.",
                   "resources": [
                     {
-                      "title": "Environmental Factors Affecting Plant Growth  (website)",
+                      "title": "Environmental Factors Affecting Plant Growth (website)",
                       "url": "https://extension.oregonstate.edu/gardening/techniques/environmental-factors-affecting-plant-growth"
                     }
                   ]
@@ -819,7 +864,10 @@
                   "path": "8.option-3-field-botany.option1.3",
                   "text": "Record any differences in the types of plants you see at the edge of a forest, near water, in burned areas, or near a road or railroad."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option2",
@@ -909,7 +957,10 @@
                       "path": "8.option-3-field-botany.option6.1.d",
                       "text": "Show two or more people how to use a leaf or twig key to identify at least five species of trees or shrubs."
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "2",
@@ -947,9 +998,15 @@
                           "path": "8.option-3-field-botany.option6.2.c.2",
                           "text": "Measure the diameter of each tree at 4 feet above the ground, and map and list each tree."
                         }
-                      ]
+                      ],
+                      "subrequirement_mode": {
+                        "type": "all"
+                      }
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "3",
@@ -992,9 +1049,15 @@
                           "path": "8.option-3-field-botany.option6.3.c.3",
                           "text": "Identify and count all broad-leaved plants (trees, shrubs, vines, and herbaceous plants) all plants (wildflowers, ferns, grasses, mosses, etc.) of a 4-by-4-foot plot within the 10-by-10-foot plot."
                         }
-                      ]
+                      ],
+                      "subrequirement_mode": {
+                        "type": "all"
+                      }
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "4",
@@ -1039,7 +1102,10 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 },
                 {
                   "req_id": "5",
@@ -1061,11 +1127,20 @@
                       "path": "8.option-3-field-botany.option6.5.c",
                       "text": "If possible, visit a nature preserve managed by the organization. Tell about land management activities such as controlled burning, or measures to eradicate invasive (nonnative) plants or other threats to the plants that are native to the area."
                     }
-                  ]
+                  ],
+                  "subrequirement_mode": {
+                    "type": "all"
+                  }
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

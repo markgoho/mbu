@@ -35,7 +35,10 @@
               "path": "1.b.3",
               "text": "Discuss how other family needs must be considered in this plan."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -52,27 +55,10 @@
               "path": "1.c.2",
               "text": "Comparison shop for the item. Find out where you can buy the item for the best price. (Provide prices from at least two different price sources.) Call around; study ads. Look for a sale or discount coupon. Consider alternatives. Can you buy the item used? Should you wait for a sale?"
             }
-          ]
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
-    },
-    {
-      "req_id": "10",
-      "path": "10",
-      "text": "Do the following:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "10.a",
-          "text": "Choose a career you might want to enter after high school or college graduation. Discuss with your counselor the needed qualifications, education, skills, and experience."
-        },
-        {
-          "req_id": "b",
-          "path": "10.b",
-          "text": "Explain to your counselor what the associated costs might be to pursue this career, such as tuition, school or training supplies, and room and board. Explain how you could prepare for these costs and how you might make up for any shortfall."
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
@@ -104,7 +90,10 @@
               "path": "2.b.2",
               "text": "If income exceeds budget expenses, state how you would use the excess money (new goal, savings)."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -371,6 +360,26 @@
           "req_id": "e",
           "path": "9.e",
           "text": "Develop a budget for your project."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "10",
+      "path": "10",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "10.a",
+          "text": "Choose a career you might want to enter after high school or college graduation. Discuss with your counselor the needed qualifications, education, skills, and experience."
+        },
+        {
+          "req_id": "b",
+          "path": "10.b",
+          "text": "Explain to your counselor what the associated costs might be to pursue this career, such as tuition, school or training supplies, and room and board. Explain how you could prepare for these costs and how you might make up for any shortfall."
         }
       ],
       "subrequirement_mode": {

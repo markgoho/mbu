@@ -60,7 +60,10 @@
               "path": "2.c.6",
               "text": "Handheld shooting."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -82,7 +85,11 @@
               "path": "2.d.3",
               "text": "Shoot a vignette that could be used to train a new Scout in a Scouting skill."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         }
       ],
       "subrequirement_mode": {

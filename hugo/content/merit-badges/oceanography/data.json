@@ -121,7 +121,11 @@
               "path": "8.b.2",
               "text": "Oceanographic institute, marine laboratory, or marine aquarium."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         },
         {
           "req_id": "c",

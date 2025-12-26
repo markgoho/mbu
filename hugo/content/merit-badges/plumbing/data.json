@@ -48,7 +48,7 @@
       "text": "Do the following:",
       "resources": [
         {
-          "title": "How Your Home Plumbing Works (From Start to Finish)  (video)",
+          "title": "How Your Home Plumbing Works (From Start to Finish) (video)",
           "url": "https://youtu.be/8jxRn-T_LCs?si=pwjNJvf0MCXM5gdY"
         }
       ],
@@ -135,7 +135,10 @@
               "path": "6.a.6",
               "text": "Specialty plumbing tools."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -165,7 +168,7 @@
           "text": "Solder a copper connection using a gas torch.",
           "resources": [
             {
-              "title": "Copper Pipe Soldering-How to Solder for Beginners Video   (video)",
+              "title": "Copper Pipe Soldering-How to Solder for Beginners Video (video)",
               "url": "https://youtu.be/TOtOpixWTXE?si=Jl_jeHOlvComjB_k"
             }
           ]
@@ -187,7 +190,7 @@
           "text": "Remove, clean or replace, and reinstall a sink or lavatory drain trap.",
           "resources": [
             {
-              "title": "How To Install P-Trap And Bathroom Sink Drain Piping | Easy Installation For Beginners!   (video)",
+              "title": "How To Install P-Trap And Bathroom Sink Drain Piping | Easy Installation For Beginners! (video)",
               "url": "https://youtu.be/OFui97xhln0?si=0j-wNeNigMTLVJHt"
             }
           ]
