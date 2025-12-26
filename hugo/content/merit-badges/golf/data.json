@@ -16,29 +16,29 @@
       "text": "Complete ONE of the following options:",
       "subrequirements": [
         {
-          "req_id": "option-1-traditional-golf",
-          "path": "2.option-1-traditional-golf",
+          "req_id": "traditional-golf",
+          "path": "2.traditional-golf",
           "text": "Option 1—Traditional Golf",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "option1",
-              "path": "2.option-1-traditional-golf.option1",
+              "req_id": "a",
+              "path": "2.traditional-golf.a",
               "text": "Study the USGA \"Rules of Golf\" now in use.",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-1-traditional-golf.option1.1",
+                  "path": "2.traditional-golf.a.1",
                   "text": "Tell about the three categories of golf etiquette."
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-1-traditional-golf.option1.2",
+                  "path": "2.traditional-golf.a.2",
                   "text": "Demonstrate that you understand the definitions of golf terms."
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-1-traditional-golf.option1.3",
+                  "path": "2.traditional-golf.a.3",
                   "text": "Show that you understand the \"Rules of Amateur Status.\""
                 }
               ],
@@ -47,28 +47,28 @@
               }
             },
             {
-              "req_id": "option2",
-              "path": "2.option-1-traditional-golf.option2",
+              "req_id": "b",
+              "path": "2.traditional-golf.b",
               "text": "Tell about your understanding of the World Handicap System."
             },
             {
-              "req_id": "option3",
-              "path": "2.option-1-traditional-golf.option3",
+              "req_id": "c",
+              "path": "2.traditional-golf.c",
               "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-1-traditional-golf.option3.1",
+                  "path": "2.traditional-golf.c.1",
                   "text": "Tell about the early history of golf."
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-1-traditional-golf.option3.2",
+                  "path": "2.traditional-golf.c.2",
                   "text": "Describe golf's early years in the United States."
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-1-traditional-golf.option3.3",
+                  "path": "2.traditional-golf.c.3",
                   "text": "Tell about the accomplishments of a top golfer of your choice."
                 }
               ],
@@ -77,18 +77,18 @@
               }
             },
             {
-              "req_id": "option4",
-              "path": "2.option-1-traditional-golf.option4",
+              "req_id": "d",
+              "path": "2.traditional-golf.d",
               "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-1-traditional-golf.option4.1",
+                  "path": "2.traditional-golf.d.1",
                   "text": "Tell how golf can contribute to a healthy lifestyle, mentally and physically."
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-1-traditional-golf.option4.2",
+                  "path": "2.traditional-golf.d.2",
                   "text": "Tell how a golf exercise plan can help you play better. Show two exercises that would help improve your game."
                 }
               ],
@@ -97,48 +97,48 @@
               }
             },
             {
-              "req_id": "option5",
-              "path": "2.option-1-traditional-golf.option5",
+              "req_id": "e",
+              "path": "2.traditional-golf.e",
               "text": "Show the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-1-traditional-golf.option5.1",
+                  "path": "2.traditional-golf.e.1",
                   "text": "The proper grip, stance, posture, and key fundamentals of a good swing"
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-1-traditional-golf.option5.2",
+                  "path": "2.traditional-golf.e.2",
                   "text": "Driver played from a tee"
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-1-traditional-golf.option5.3",
+                  "path": "2.traditional-golf.e.3",
                   "text": "The fairway wood shot"
                 },
                 {
                   "req_id": "4",
-                  "path": "2.option-1-traditional-golf.option5.4",
+                  "path": "2.traditional-golf.e.4",
                   "text": "The long iron shot"
                 },
                 {
                   "req_id": "5",
-                  "path": "2.option-1-traditional-golf.option5.5",
+                  "path": "2.traditional-golf.e.5",
                   "text": "The short iron shot"
                 },
                 {
                   "req_id": "6",
-                  "path": "2.option-1-traditional-golf.option5.6",
+                  "path": "2.traditional-golf.e.6",
                   "text": "The approach, chip-and-run, and pitch shots"
                 },
                 {
                   "req_id": "7",
-                  "path": "2.option-1-traditional-golf.option5.7",
+                  "path": "2.traditional-golf.e.7",
                   "text": "A recovery shot from a bunker or heavy rough"
                 },
                 {
                   "req_id": "8",
-                  "path": "2.option-1-traditional-golf.option5.8",
+                  "path": "2.traditional-golf.e.8",
                   "text": "A sound putting stroke."
                 }
               ],
@@ -147,23 +147,23 @@
               }
             },
             {
-              "req_id": "option6",
-              "path": "2.option-1-traditional-golf.option6",
+              "req_id": "f",
+              "path": "2.traditional-golf.f",
               "text": "Play a minimum of two nine-hole rounds or one 18-hole round of golf with another golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-1-traditional-golf.option6.1",
+                  "path": "2.traditional-golf.f.1",
                   "text": "Follow the \"Rules of Golf.\""
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-1-traditional-golf.option6.2",
+                  "path": "2.traditional-golf.f.2",
                   "text": "Practice good golf etiquette."
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-1-traditional-golf.option6.3",
+                  "path": "2.traditional-golf.f.3",
                   "text": "Show respect to fellow golfers, committee, sponsor, and gallery."
                 }
               ],
@@ -172,8 +172,8 @@
               }
             },
             {
-              "req_id": "option7",
-              "path": "2.option-1-traditional-golf.option7",
+              "req_id": "g",
+              "path": "2.traditional-golf.g",
               "text": "Find out about three careers related to traditional golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
             }
           ],
@@ -182,24 +182,24 @@
           }
         },
         {
-          "req_id": "option-2-disc-golf",
-          "path": "2.option-2-disc-golf",
+          "req_id": "disc-golf",
+          "path": "2.disc-golf",
           "text": "Option 2—Disc Golf",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "option1",
-              "path": "2.option-2-disc-golf.option1",
+              "req_id": "a",
+              "path": "2.disc-golf.a",
               "text": "Study the \"PDGA Official Rules of Disc Golf\" now in use.",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-2-disc-golf.option1.1",
+                  "path": "2.disc-golf.a.1",
                   "text": "Tell about the six areas of Courtesy (812)."
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-2-disc-golf.option1.2",
+                  "path": "2.disc-golf.a.2",
                   "text": "Describe the seven areas of Scoring (808)."
                 }
               ],
@@ -208,33 +208,33 @@
               }
             },
             {
-              "req_id": "option2",
-              "path": "2.option-2-disc-golf.option2",
+              "req_id": "b",
+              "path": "2.disc-golf.b",
               "text": "Tell about your understanding of the \"PDGA Disc Golfer's Code.\""
             },
             {
-              "req_id": "option3",
-              "path": "2.option-2-disc-golf.option3",
+              "req_id": "c",
+              "path": "2.disc-golf.c",
               "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-2-disc-golf.option3.1",
+                  "path": "2.disc-golf.c.1",
                   "text": "Tell about the history of disc golf and why it is an inclusive game."
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-2-disc-golf.option3.2",
+                  "path": "2.disc-golf.c.2",
                   "text": "Discuss with your counselor the contributions Ed Headrick made to the sport of disc golf."
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-2-disc-golf.option3.3",
+                  "path": "2.disc-golf.c.3",
                   "text": "Describe the evolution of disc design."
                 },
                 {
                   "req_id": "4",
-                  "path": "2.option-2-disc-golf.option3.4",
+                  "path": "2.disc-golf.c.4",
                   "text": "Tell about the accomplishments of a top disc golfer of your choice."
                 }
               ],
@@ -243,18 +243,18 @@
               }
             },
             {
-              "req_id": "option4",
-              "path": "2.option-2-disc-golf.option4",
+              "req_id": "d",
+              "path": "2.disc-golf.d",
               "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-2-disc-golf.option4.1",
+                  "path": "2.disc-golf.d.1",
                   "text": "Tell how disc golf can contribute to a healthy lifestyle, mentally and physically."
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-2-disc-golf.option4.2",
+                  "path": "2.disc-golf.d.2",
                   "text": "Tell how a disc golf exercise plan can help you play better. Show two exercises that would help improve your game."
                 }
               ],
@@ -263,63 +263,63 @@
               }
             },
             {
-              "req_id": "option5",
-              "path": "2.option-2-disc-golf.option5",
+              "req_id": "e",
+              "path": "2.disc-golf.e",
               "text": "Show the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-2-disc-golf.option5.1",
+                  "path": "2.disc-golf.e.1",
                   "text": "A good throwing grip"
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-2-disc-golf.option5.2",
+                  "path": "2.disc-golf.e.2",
                   "text": "A good runup (X-step) when throwing a disc"
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-2-disc-golf.option5.3",
+                  "path": "2.disc-golf.e.3",
                   "text": "Backhand shot"
                 },
                 {
                   "req_id": "4",
-                  "path": "2.option-2-disc-golf.option5.4",
+                  "path": "2.disc-golf.e.4",
                   "text": "Forehand shot"
                 },
                 {
                   "req_id": "5",
-                  "path": "2.option-2-disc-golf.option5.5",
+                  "path": "2.disc-golf.e.5",
                   "text": "Overhand shot"
                 },
                 {
                   "req_id": "6",
-                  "path": "2.option-2-disc-golf.option5.6",
+                  "path": "2.disc-golf.e.6",
                   "text": "Rolling shot"
                 },
                 {
                   "req_id": "7",
-                  "path": "2.option-2-disc-golf.option5.7",
+                  "path": "2.disc-golf.e.7",
                   "text": "A good (in-line) putting stance"
                 },
                 {
                   "req_id": "8",
-                  "path": "2.option-2-disc-golf.option5.8",
+                  "path": "2.disc-golf.e.8",
                   "text": "A good straddle putting stance"
                 },
                 {
                   "req_id": "9",
-                  "path": "2.option-2-disc-golf.option5.9",
+                  "path": "2.disc-golf.e.9",
                   "text": "A good putting grip"
                 },
                 {
                   "req_id": "10",
-                  "path": "2.option-2-disc-golf.option5.10",
+                  "path": "2.disc-golf.e.10",
                   "text": "A good putting motion & follow through"
                 },
                 {
                   "req_id": "11",
-                  "path": "2.option-2-disc-golf.option5.11",
+                  "path": "2.disc-golf.e.11",
                   "text": "The proper use of a mini-marking disc."
                 }
               ],
@@ -328,23 +328,23 @@
               }
             },
             {
-              "req_id": "option6",
-              "path": "2.option-2-disc-golf.option6",
+              "req_id": "f",
+              "path": "2.disc-golf.f",
               "text": "Play a minimum of 18-holes of disc golf with another disc golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
-                  "path": "2.option-2-disc-golf.option6.1",
+                  "path": "2.disc-golf.f.1",
                   "text": "Follow the \"PDGA Official Rules of Disc Golf.\""
                 },
                 {
                   "req_id": "2",
-                  "path": "2.option-2-disc-golf.option6.2",
+                  "path": "2.disc-golf.f.2",
                   "text": "Practice good disc golf etiquette."
                 },
                 {
                   "req_id": "3",
-                  "path": "2.option-2-disc-golf.option6.3",
+                  "path": "2.disc-golf.f.3",
                   "text": "Show respect to fellow disc golfers and other people in the park along with any wildlife, trees, and plants on the property."
                 }
               ],
@@ -353,8 +353,8 @@
               }
             },
             {
-              "req_id": "option7",
-              "path": "2.option-2-disc-golf.option7",
+              "req_id": "g",
+              "path": "2.disc-golf.g",
               "text": "Find out about three careers related to disc golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
             }
           ],
