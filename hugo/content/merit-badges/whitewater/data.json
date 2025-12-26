@@ -60,7 +60,10 @@
               "path": "2.c.2",
               "text": "When ferrying in downstream and upstream directions."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -118,7 +121,10 @@
               "path": "4.a.3",
               "text": "Demonstrate a high brace, low brace, and righting pry."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -135,7 +141,10 @@
               "path": "4.b.2",
               "text": "Demonstrate a high brace, low brace, and righting pry."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -152,7 +161,10 @@
               "path": "4.c.2",
               "text": "Demonstrate a high brace and low brace."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
