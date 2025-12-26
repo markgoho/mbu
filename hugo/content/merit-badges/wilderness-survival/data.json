@@ -6,6 +6,71 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Wilderness%20Survival.pdf",
   "requirements": [
     {
+      "req_id": "1",
+      "path": "1",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "1.a",
+          "text": "Explain to your counselor the hazards you are most likely to encounter while participating in wilderness survival activities, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards."
+        },
+        {
+          "req_id": "b",
+          "path": "1.b",
+          "text": "Show that you know first aid for and how to prevent injuries or illnesses likely to occur in backcountry settings, including hypothermia, heat reactions, frostbite, dehydration, blisters, insect stings, tick bites, and snakebites."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "2",
+      "path": "2",
+      "text": "From memory list the seven priorities for survival in a backcountry or wilderness location. Explain the importance of each one with your counselor."
+    },
+    {
+      "req_id": "3",
+      "path": "3",
+      "text": "Describe ways to avoid panic and maintain a high level of morale when lost, and explain why this is important."
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Describe the steps you would take to survive in the following exposure conditions:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Cold and snowy"
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Wet"
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Hot and dry"
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Windy"
+        },
+        {
+          "req_id": "e",
+          "path": "4.e",
+          "text": "At or on the water."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
       "req_id": "5",
       "path": "5",
       "text": "Put together a personal survival kit and be able to explain how each item in it could be useful."
@@ -54,71 +119,6 @@
       "req_id": "10",
       "path": "10",
       "text": "Demonstrate three ways to treat water found in the outdoors to prepare it for drinking."
-    },
-    {
-      "req_id": "1",
-      "path": "1",
-      "text": "Do the following:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "1.a",
-          "text": "Explain to your counselor the hazards you are most likely to encounter while participating in wilderness survival activities, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards."
-        },
-        {
-          "req_id": "b",
-          "path": "1.b",
-          "text": "Show that you know first aid for and how to prevent injuries or illnesses likely to occur in backcountry settings, including hypothermia, heat reactions, frostbite, dehydration, blisters, insect stings, tick bites, and snakebites."
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
-    },
-    {
-      "req_id": "2",
-      "path": "2",
-      "text": "From memory list the seven priorities for survival in a backcountry or wilderness location. Explain the importance of each one with your counselor."
-    },
-    {
-      "req_id": "3",
-      "path": "3",
-      "text": "Describe ways to avoid panic and maintain a high level of morale when lost, and explain why this is important."
-    },
-    {
-      "req_id": "4",
-      "path": "4",
-      "text": "Describe the steps you would take to survive in the following exposure conditions:",
-      "subrequirements": [
-        {
-          "req_id": "c",
-          "path": "4.c",
-          "text": "Hot and dry"
-        },
-        {
-          "req_id": "d",
-          "path": "4.d",
-          "text": "Windy"
-        },
-        {
-          "req_id": "e",
-          "path": "4.e",
-          "text": "At or on the water."
-        },
-        {
-          "req_id": "a",
-          "path": "4.a",
-          "text": "Cold and snowy"
-        },
-        {
-          "req_id": "b",
-          "path": "4.b",
-          "text": "Wet"
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
     },
     {
       "req_id": "11",
