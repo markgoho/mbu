@@ -126,6 +126,12 @@ function slugifyOption(text: string): string | null {
     nameToSlugify = resourceMatch[1];
   }
 
+  // Special case: "Option A", "Option B" (with optional "A. " prefix) → just use the letter
+  const simpleOptionMatch = nameToSlugify.match(/^(?:[A-Z]\.\s*)?Option\s+([A-Z])\b/i);
+  if (simpleOptionMatch && simpleOptionMatch[1]) {
+    return simpleOptionMatch[1].toLowerCase();
+  }
+
   // Pattern 1: "Beef Cattle Option" -> extract "Beef Cattle"
   const suffixOptionMatch = nameToSlugify.match(/^(.+?)\s*option\b/i);
   if (suffixOptionMatch && suffixOptionMatch[1]) {
@@ -141,9 +147,12 @@ function slugifyOption(text: string): string | null {
       // Fallback: remove common trailing phrases
       nameToSlugify = nameToSlugify
         .replace(/\.\s*do\s+the\s+following.*/i, "")
-        .replace(/\s*\(.*?\)\s*/g, "")
         .trim();
     }
+
+    // Convert parentheses to spaces (preserve content, remove parens)
+    // "Downhill (Alpine) Skiing" → "Downhill Alpine Skiing"
+    nameToSlugify = nameToSlugify.replace(/[()]/g, " ").replace(/\s+/g, " ").trim();
   }
 
   // Limit length before slugifying
@@ -202,8 +211,11 @@ function extractSubrequirements(
       let textOnly = $textClone
         .text()
         .trim()
+        .replace(/([.!?])([A-Z])/g, "$1 $2") // Ensure space after sentence end
         .replace(/\s+/g, " ")
-        .replace(/^\([a-z0-9]+\)\s*/i, ""); // Remove leading (a) etc.
+        .replace(/^\([a-z0-9]+\)\s*/i, "") // Remove leading (a) etc.
+        .replace(/^(\d+\.)\s*/, "") // Remove leading "1. ", "2. ", etc.
+        .replace(/^([A-Z]\.)\s*/i, ""); // Remove leading "A. ", "B. ", "C. " etc.
 
       // Strip "Resources:" suffix and everything after
       const resourcesMatch = textOnly.match(/Resources?:/i);
@@ -239,7 +251,11 @@ function extractSubrequirements(
           $(listEl)
             .children("li")
             .each((liIdx, liEl) => {
-              let liText = $(liEl).text().trim().replace(/\s+/g, " ");
+              let liText = $(liEl)
+                .text()
+                .trim()
+                .replace(/^(\d+\.)\s*/, "") // Remove leading "1. ", "2. ", etc.
+                .replace(/\s+/g, " ");
               if (liText) {
                 const inlineReqId = `${liIdx + 1}`;
                 nested.push({
@@ -323,8 +339,10 @@ function extractSubrequirements(
         }
       });
 
-      // Clean option text - remove "Resource:" suffix
-      let optionLabel = childText.trim();
+      // Clean option text - remove "Resource:" suffix and redundant letter prefix
+      let optionLabel = childText
+        .trim()
+        .replace(/^([A-Z]\.)\s*/i, ""); // Remove leading "A. ", "B. ", "C. " etc.
       const resourcesIdx = optionLabel.search(/\s+Resources?:/i);
       if (resourcesIdx > 0) {
         optionLabel = optionLabel.substring(0, resourcesIdx).trim();
@@ -404,7 +422,11 @@ function parseStructureFromHtml(html: string): {
           $(listEl)
             .children("li")
             .each((liIdx, liEl) => {
-              let liText = $(liEl).text().trim().replace(/\s+/g, " ");
+              let liText = $(liEl)
+                .text()
+                .trim()
+                .replace(/^(\d+\.)\s*/, "") // Remove leading "1. ", "2. ", etc.
+                .replace(/\s+/g, " ");
               if (liText) {
                 const inlineReqId = `option${liIdx + 1}`;
                 subrequirements.push({
@@ -421,7 +443,11 @@ function parseStructureFromHtml(html: string): {
     // Get clean parent text
     const $clone = $parent.clone();
     $clone.find(".mb-requirement-listnumber, ul, ol").remove();
-    let parentTextRaw = $clone.text().trim().replace(/\s+/g, " ");
+    let parentTextRaw = $clone
+      .text()
+      .trim()
+      .replace(/([.!?])([A-Z])/g, "$1 $2") // Ensure space after sentence end
+      .replace(/\s+/g, " ");
 
     // Strip "Resources:" suffix and everything after
     const resourcesMatch = parentTextRaw.match(/Resources?:/i);
@@ -430,8 +456,12 @@ function parseStructureFromHtml(html: string): {
       : parentTextRaw;
 
     // Extract resources from parent requirement (links in the HTML)
+    // ONLY get links that are direct children of parent, NOT nested in .mb-requirement-child
     const parentResources: Resource[] = [];
-    $parent.find("a").each((_, link) => {
+    const $parentClone = $parent.clone();
+    // Remove all child requirements to avoid capturing their resources
+    $parentClone.find(".mb-requirement-child").remove();
+    $parentClone.find("a").each((_, link) => {
       const $link = $(link);
       const href = $link.attr("href");
       const title = $link.text().trim().replace(/\s+/g, " ");
@@ -544,10 +574,9 @@ function mergeContent(
   for (const req of requirements) {
     const content = contentMap.get(req.path);
 
-    // Merge resources: prefer HTML resources (already extracted), only use LLM if HTML has none
-    if (content?.resources && !req.resources) {
-      req.resources = content.resources;
-    }
+    // Don't merge LLM resources - HTML extraction is comprehensive and reliable
+    // The LLM sometimes hallucinates resources or assigns them to wrong levels
+    // HTML extraction with Cheerio is the source of truth for resources
 
     // Recursively merge subrequirements
     if (req.subrequirements) {
