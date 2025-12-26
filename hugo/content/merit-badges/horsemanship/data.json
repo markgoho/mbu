@@ -226,7 +226,13 @@
         {
           "req_id": "a",
           "path": "11.a",
-          "text": "Walk the horse in a straight line for 60 feet."
+          "text": "Walk the horse in a straight line for 60 feet.",
+          "resources": [
+            {
+              "title": "How to Steer Your Horse (video)",
+              "url": "https://youtu.be/uZ_5lxUyCdw"
+            }
+          ]
         },
         {
           "req_id": "b",

@@ -209,8 +209,8 @@
               "url": "https://www.youtube.com/watch?v=6QwiYfqX1sg"
             },
             {
-              "title": "Safety Moments",
-              "url": "https://www.youtube.com/watch?v=1<a href="
+              "title": "Why Are Insects Important? (website)",
+              "url": "https://www.youtube.com/watch?v=19iEWe-qH5o"
             }
           ]
         }
@@ -247,7 +247,7 @@
             {
               "req_id": "1",
               "path": "5.b.1",
-              "text": "Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony.",
+              "text": "1. Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony.",
               "resources": [
                 {
                   "title": "Inside the Ant Colony ( video)",
@@ -258,7 +258,7 @@
             {
               "req_id": "2",
               "path": "5.b.2",
-              "text": "Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option 1 above.)",
+              "text": "2. Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option 1 above.)",
               "resources": [
                 {
                   "title": "Beekeeping 101 ( video)",
@@ -266,7 +266,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         }
       ],
       "subrequirement_mode": {

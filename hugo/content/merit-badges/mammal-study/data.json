@@ -6,133 +6,6 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Mammal%20Study.pdf",
   "requirements": [
     {
-      "req_id": "4",
-      "path": "4",
-      "text": "Do ONE of the following:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "4.a",
-          "text": "Under the guidance of a nature center or natural history museum, make two study skins of rats or mice. Tell the uses of study skins and mounted specimens respectively.",
-          "resources": [
-            {
-              "title": "Skinning Your Rat (video)",
-              "url": "https://youtu.be/m93WO9praZE?si=DG3Wt7aD9EBE-Zma"
-            },
-            {
-              "title": "Preparing Mammal Specimens (video)",
-              "url": "https://www.youtube.com/watch?v=dBk9jwQBiuA"
-            }
-          ]
-        },
-        {
-          "req_id": "b",
-          "path": "4.b",
-          "text": "Take good pictures of two kinds of mammals in the wild. Record the date(s), time of day, weather conditions, approximate distance from the animal, habitat conditions, and any other factors you feel may have influenced the animal's activity and behavior.",
-          "resources": [
-            {
-              "title": "Top 10 Wildlife Photography Shortcuts (video)",
-              "url": "https://www.youtube.com/watch?v=r5liiAoUJ1Q"
-            },
-            {
-              "title": "The Most Important Wildlife Photography (video)",
-              "url": "https://www.youtube.com/watch?v=wzuxDkmsZgM"
-            },
-            {
-              "title": "The Ultimate Wildlife Photography Tutorial (website)",
-              "url": "https://photographylife.com/wildlife-photography-tutorial"
-            },
-            {
-              "title": "Wildlife Photography (website)",
-              "url": "https://www.fs.usda.gov/visit/know-before-you-go/wildlife-photography"
-            }
-          ]
-        },
-        {
-          "req_id": "c",
-          "path": "4.c",
-          "text": "Write a life history of a native game mammal that lives in your area, covering the points outlined in requirement 3(c). List sources for this information."
-        },
-        {
-          "req_id": "d",
-          "path": "4.d",
-          "text": "Make and bait a tracking pit. Report what mammals and other animals came to the bait.",
-          "resources": [
-            {
-              "title": "Build Animal Track Station (video)",
-              "url": "https://www.youtube.com/watch?v=rjg7FUw_5fM"
-            },
-            {
-              "title": "Creating a Backyard Animal Track Trap With Household Items (video)",
-              "url": "https://www.youtube.com/watch?v=j_SPxHCvSYA"
-            },
-            {
-              "title": "Animal Tracking Basics - Track Traps, Measurements, Following Sign (video)",
-              "url": "https://www.youtube.com/watch?v=i2SFVKWhIzY"
-            }
-          ]
-        },
-        {
-          "req_id": "e",
-          "path": "4.e",
-          "text": "Visit a natural history museum. Report on how specimens are prepared and cataloged. Explain the purposes of museums. Resource: What Is the Purpose of a Natural History Museum? (video)",
-          "resources": [
-            {
-              "title": "What Is the Purpose of a Natural History Museum? (video)",
-              "url": "https://youtu.be/sCm6JFBdWfM?si=abiHDMFT2hvlOGJS"
-            }
-          ]
-        },
-        {
-          "req_id": "f",
-          "path": "4.f",
-          "text": "Write a report of 500 words on a book about a mammal species."
-        },
-        {
-          "req_id": "g",
-          "path": "4.g",
-          "text": "Trace two possible food chains of carnivorous mammals from the soil through four stages to the mammal.",
-          "resources": [
-            {
-              "title": "Animal of the Week: Food Chains (video)",
-              "url": "https://www.youtube.com/watch?v=FpVXlk_Z-4E"
-            },
-            {
-              "title": "Food Chains & Food Webs (video)",
-              "url": "https://www.youtube.com/watch?v=JCl_yDf0Qok"
-            },
-            {
-              "title": "Tundra Food Chain (website)",
-              "url": "https://www.sciencefacts.net/tundra-food-chain.html"
-            }
-          ]
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "select",
-        "count": 1
-      }
-    },
-    {
-      "req_id": "5",
-      "path": "5",
-      "text": "Working with your counselor, select and carry out one project that will influence the numbers of one or more mammals.",
-      "resources": [
-        {
-          "title": "Brushpiles With Game Commission Biologist Dan Mummert (video)",
-          "url": "https://www.youtube.com/watch?v=pXTGUBPYwPo"
-        },
-        {
-          "title": "Create a Wildlife Habitat Garden (video)",
-          "url": "https://www.youtube.com/watch?v=IOYDnuz0hA8"
-        },
-        {
-          "title": "How to Make a WILDLIFE GARDEN! The FOUR Things You MUST INCLUDE! (video)",
-          "url": "https://www.youtube.com/watch?v=Vl0W8navRIg"
-        }
-      ]
-    },
-    {
       "req_id": "1",
       "path": "1",
       "text": "Explain the following terms: animal, invertebrate, vertebrate, and mammal. Name three characteristics that distinguish mammals from all other animals.",
@@ -182,7 +55,32 @@
       "req_id": "3",
       "path": "3",
       "text": "Do ONE of the following:",
+      "resources": [
+        {
+          "title": "How to Find Mammal Signs (video)",
+          "url": "https://www.youtube.com/watch?v=x8DfP0Nh7kA"
+        },
+        {
+          "title": "Animal Tracks Identification Guide | Animal Footprint ID Charts (website)",
+          "url": "https://www.greenbelly.co/pages/animal-tracks-identification-guide"
+        }
+      ],
       "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Spend three hours in two different kinds of natural habitats or at different elevations for a total of 6 hours. List the different mammal species and how many of each you identified by sight or sign. Tell why all mammals do not live in the same kind of habitat.",
+          "resources": [
+            {
+              "title": "How to Find Mammal Signs (video)",
+              "url": "https://www.youtube.com/watch?v=x8DfP0Nh7kA"
+            },
+            {
+              "title": "Animal Tracks Identification Guide | Animal Footprint ID Charts (website)",
+              "url": "https://www.greenbelly.co/pages/animal-tracks-identification-guide"
+            }
+          ]
+        },
         {
           "req_id": "b",
           "path": "3.b",
@@ -192,199 +90,150 @@
           "req_id": "c",
           "path": "3.c",
           "text": "From study and reading, write a simple life history of one nongame mammal that lives in your area. Tell how this mammal lived before its habitat was affected in any way by humans. Tell how it reproduces, what it eats, and its natural habitat. Describe its dependency upon plants and other animals (including humans), and how they depend upon it. Describe how humans have benefited from the mammal you have chosen and whether the mammal has benefited from association with humankind."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
+    },
+    {
+      "req_id": "4",
+      "path": "4",
+      "text": "Do ONE of the following:",
+      "resources": [
+        {
+          "title": "Skinning Your Rat (video)",
+          "url": "https://youtu.be/m93WO9praZE?si=DG3Wt7aD9EBE-Zma"
         },
         {
+          "title": "Preparing Mammal Specimens (video)",
+          "url": "https://www.youtube.com/watch?v=dBk9jwQBiuA"
+        }
+      ],
+      "subrequirements": [
+        {
           "req_id": "a",
-          "path": "3.a",
-          "text": "Spend three hours in two different kinds of natural habitats or at different elevations for a total of 6 hours. List the different mammal species and how many of each you identified by sight or sign. Tell why all mammals do not live in the same kind of habitat.",
+          "path": "4.a",
+          "text": "Under the guidance of a nature center or natural history museum, make two study skins of rats or mice. Tell the uses of study skins and mounted specimens respectively.",
           "resources": [
             {
-              "title": "My.scouting",
-              "url": "https://my.scouting.org/"
+              "title": "Skinning Your Rat (video)",
+              "url": "https://youtu.be/m93WO9praZE?si=DG3Wt7aD9EBE-Zma"
             },
             {
-              "title": "Give",
-              "url": "https://donations.scouting.org/#/council/NCFD/appeal/6539"
+              "title": "Preparing Mammal Specimens (video)",
+              "url": "https://www.youtube.com/watch?v=dBk9jwQBiuA"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Take good pictures of two kinds of mammals in the wild. Record the date(s), time of day, weather conditions, approximate distance from the animal, habitat conditions, and any other factors you feel may have influenced the animal's activity and behavior.",
+          "resources": [
+            {
+              "title": "Top 10 Wildlife Photography Shortcuts (video)",
+              "url": "https://www.youtube.com/watch?v=r5liiAoUJ1Q"
             },
             {
-              "title": "Scoutshop",
-              "url": "https://www.scoutshop.org/"
+              "title": "The Most Important Wildlife Photography (video)",
+              "url": "https://www.youtube.com/watch?v=wzuxDkmsZgM"
             },
             {
-              "title": "Be a scout",
-              "url": "https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing"
+              "title": "The Ultimate Wildlife Photography Tutorial (website)",
+              "url": "https://photographylife.com/wildlife-photography-tutorial"
             },
             {
-              "title": "Programs",
-              "url": "https://www.scouting.org/programs/"
+              "title": "Wildlife Photography (website)",
+              "url": "https://www.fs.usda.gov/visit/know-before-you-go/wildlife-photography"
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Write a life history of a native game mammal that lives in your area, covering the points outlined in requirement 3(c). List sources for this information.",
+          "resources": [
+            {
+              "title": "Build Animal Track Station (video)",
+              "url": "https://www.youtube.com/watch?v=rjg7FUw_5fM"
             },
             {
-              "title": "Cub Scouts",
-              "url": "https://www.scouting.org/programs/cub-scouts/"
+              "title": "Creating a Backyard Animal Track Trap With Household Items (video)",
+              "url": "https://www.youtube.com/watch?v=j_SPxHCvSYA"
             },
             {
-              "title": "Scouts BSA",
-              "url": "https://www.scouting.org/programs/scouts-bsa/"
+              "title": "Animal Tracking Basics - Track Traps, Measurements, Following Sign (video)",
+              "url": "https://www.youtube.com/watch?v=i2SFVKWhIzY"
+            }
+          ]
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Make and bait a tracking pit. Report what mammals and other animals came to the bait.",
+          "resources": [
+            {
+              "title": "Build Animal Track Station (video)",
+              "url": "https://www.youtube.com/watch?v=rjg7FUw_5fM"
             },
             {
-              "title": "Venturing",
-              "url": "https://www.scouting.org/programs/venturing/"
+              "title": "Creating a Backyard Animal Track Trap With Household Items (video)",
+              "url": "https://www.youtube.com/watch?v=j_SPxHCvSYA"
             },
             {
-              "title": "Sea Scouts",
-              "url": "https://seascout.org/"
+              "title": "Animal Tracking Basics - Track Traps, Measurements, Following Sign (video)",
+              "url": "https://www.youtube.com/watch?v=i2SFVKWhIzY"
+            }
+          ]
+        },
+        {
+          "req_id": "e",
+          "path": "4.e",
+          "text": "Visit a natural history museum. Report on how specimens are prepared and cataloged. Explain the purposes of museums.",
+          "resources": [
+            {
+              "title": "What Is the Purpose of a Natural History Museum? (video)",
+              "url": "https://youtu.be/sCm6JFBdWfM?si=abiHDMFT2hvlOGJS"
+            }
+          ]
+        },
+        {
+          "req_id": "f",
+          "path": "4.f",
+          "text": "Write a report of 500 words on a book about a mammal species.",
+          "resources": [
+            {
+              "title": "Animal of the Week: Food Chains (video)",
+              "url": "https://www.youtube.com/watch?v=FpVXlk_Z-4E"
             },
             {
-              "title": "Exploring",
-              "url": "https://www.exploring.org/"
+              "title": "Food Chains & Food Webs (video)",
+              "url": "https://www.youtube.com/watch?v=JCl_yDf0Qok"
             },
             {
-              "title": "Scouting Safely",
-              "url": "https://www.scouting.org/health-and-safety/"
+              "title": "Tundra Food Chain (website)",
+              "url": "https://www.sciencefacts.net/tundra-food-chain.html"
+            }
+          ]
+        },
+        {
+          "req_id": "g",
+          "path": "4.g",
+          "text": "Trace two possible food chains of carnivorous mammals from the soil through four stages to the mammal.",
+          "resources": [
+            {
+              "title": "Animal of the Week: Food Chains (video)",
+              "url": "https://www.youtube.com/watch?v=FpVXlk_Z-4E"
             },
             {
-              "title": "Scouts First Helpline (1-844-SCOUTS1)",
-              "url": "https://www.scouting.org/training/youth-protection/#hotlink"
+              "title": "Food Chains & Food Webs (video)",
+              "url": "https://www.youtube.com/watch?v=JCl_yDf0Qok"
             },
             {
-              "title": "Guide to Safe Scouting",
-              "url": "https://www.scouting.org/health-and-safety/gss/"
-            },
-            {
-              "title": "Youth Protection",
-              "url": "https://www.scouting.org/health-and-safety/youth-protection/"
-            },
-            {
-              "title": "Incident Reporting",
-              "url": "https://www.scouting.org/health-and-safety/gss/gss14/"
-            },
-            {
-              "title": "Safety Moments",
-              "url": "https://www.scouting.org/health-and-safety/safety-moments/"
-            },
-            {
-              "title": "Annual Health & Medical Record",
-              "url": "https://www.scouting.org/health-and-safety/ahmr/"
-            },
-            {
-              "title": "Awards",
-              "url": "https://www.scouting.org/awards/"
-            },
-            {
-              "title": "Awards Central",
-              "url": "https://www.scouting.org/awards/awards-central/"
-            },
-            {
-              "title": "Scholarships",
-              "url": "https://www.scouting.org/awards/scholarships/"
-            },
-            {
-              "title": "Outdoor Ethics Awards",
-              "url": "https://www.scouting.org/awards/awards-central/awards/"
-            },
-            {
-              "title": "Guide to Awards & Insignia",
-              "url": "https://www.scouting.org/resources/insignia-guide/"
-            },
-            {
-              "title": "About",
-              "url": "https://www.scouting.org/about/"
-            },
-            {
-              "title": "Careers",
-              "url": "https://www.scouting.org/careers/"
-            },
-            {
-              "title": "Find a Local Council",
-              "url": "https://www.scouting.org/about/local-council-locator/"
-            },
-            {
-              "title": "Scouting Newsroom",
-              "url": "https://scoutingnewsroom.org/"
-            },
-            {
-              "title": "BSA Restructuring",
-              "url": "https://www.bsarestructuring.org/"
-            },
-            {
-              "title": "Contact Us",
-              "url": "https://www.scouting.org/about/contact-us/"
-            },
-            {
-              "title": "Training",
-              "url": "https://www.scouting.org/training/"
-            },
-            {
-              "title": "Youth Training",
-              "url": "https://www.scouting.org/training/youth/"
-            },
-            {
-              "title": "Resources",
-              "url": "https://www.scouting.org/resources/"
-            },
-            {
-              "title": "Commissioners",
-              "url": "https://www.scouting.org/commissioners/"
-            },
-            {
-              "title": "Eagle Workbook",
-              "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/"
-            },
-            {
-              "title": "Special Needs & Disabilities",
-              "url": "https://www.scouting.org/resources/disabilities-awareness/"
-            },
-            {
-              "title": "International Scouting",
-              "url": "https://www.scouting.org/international/"
-            },
-            {
-              "title": "Council Support",
-              "url": "https://www.scouting.org/council-support/"
-            },
-            {
-              "title": "Scouting Wire",
-              "url": "https://scoutingwire.org/"
-            },
-            {
-              "title": "Recruitment",
-              "url": "https://www.scouting.org/recruitment/"
-            },
-            {
-              "title": "Outdoor Programs",
-              "url": "https://www.scouting.org/outdoor-programs/"
-            },
-            {
-              "title": "Skills",
-              "url": "/skills"
-            },
-            {
-              "title": "Merit Badges",
-              "url": "https://www.scouting.org/skills/merit-badges/"
-            },
-            {
-              "title": "High Adventure",
-              "url": "https://www.scouting.org/national-high-adventure-bases/"
-            },
-            {
-              "title": "High Adventure Treks",
-              "url": "https://www.scouting.org/national-high-adventure-bases/adventure-treks/"
-            },
-            {
-              "title": "High Adventure Base Jobs",
-              "url": "https://www.scouting.org/national-high-adventure-bases/jobs/"
-            },
-            {
-              "title": "Family Adventure Camp",
-              "url": "https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/"
-            },
-            {
-              "title": "Partners",
-              "url": "https://www.scouting.org/partnerwithus/"
-            },
-            {
-              "title": "Scholarships",
-              "url": "https://www.scouting.org/awards/scholarships/"
+              "title": "Tundra Food Chain (website)",
+              "url": "https://www.sciencefacts.net/tundra-food-chain.html"
             }
           ]
         }
@@ -393,6 +242,25 @@
         "type": "select",
         "count": 1
       }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Working with your counselor, select and carry out one project that will influence the numbers of one or more mammals.",
+      "resources": [
+        {
+          "title": "Brushpiles With Game Commission Biologist Dan Mummert (video)",
+          "url": "https://www.youtube.com/watch?v=pXTGUBPYwPo"
+        },
+        {
+          "title": "Create a Wildlife Habitat Garden (video)",
+          "url": "https://www.youtube.com/watch?v=IOYDnuz0hA8"
+        },
+        {
+          "title": "How to Make a WILDLIFE GARDEN! The FOUR Things You MUST INCLUDE! (video)",
+          "url": "https://www.youtube.com/watch?v=Vl0W8navRIg"
+        }
+      ]
     }
   ]
 }

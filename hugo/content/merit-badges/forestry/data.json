@@ -106,7 +106,10 @@
               "path": "3.a.8",
               "text": "Threatened and endangered species of plants and animals"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -203,7 +206,10 @@
               "path": "5.b.7",
               "text": "How waste materials from the logging operation or manufacturing plant are disposed of or utilized."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",

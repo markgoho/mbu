@@ -60,7 +60,10 @@
               "path": "5.a.5",
               "text": "Determine what type of license, if any, you might need in order to sell or make your product or service."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -82,7 +85,10 @@
               "path": "5.b.3",
               "text": "Describe what makes your product or service unique."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -104,7 +110,10 @@
               "path": "5.c.3",
               "text": "Describe what will happen with the money you make from the sales of your product or service."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -121,7 +130,10 @@
               "path": "5.d.2",
               "text": "Determine whether you will need additional help to operate your business. If you will need help, describe the responsibilities and qualifications needed for the personnel who will fill each role."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "e",
@@ -143,7 +155,10 @@
               "path": "5.e.3",
               "text": "Design a promotional flyer or poster for your product or service."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

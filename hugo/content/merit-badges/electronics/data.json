@@ -6,41 +6,6 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Electronics.pdf",
   "requirements": [
     {
-      "req_id": "5",
-      "path": "5",
-      "text": "Do the following:",
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "5.a",
-          "text": "Show how to solve a simple problem involving current, voltage, and resistance using Ohm's law."
-        },
-        {
-          "req_id": "b",
-          "path": "5.b",
-          "text": "Tell about the need for and the use of test equipment in electronics. Name three types of test equipment. Tell how they operate."
-        },
-        {
-          "req_id": "c",
-          "path": "5.c",
-          "text": "Demonstrate to your counselor how to read the colored bands of a resistor to determine its resistance value."
-        },
-        {
-          "req_id": "d",
-          "path": "5.d",
-          "text": "Explain the differences between Through Hole and Surface Mount assembly technologies and give three advantages of each."
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
-    },
-    {
-      "req_id": "6",
-      "path": "6",
-      "text": "Identify three career opportunities that would use skills and knowledge in Electronics. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
-    },
-    {
       "req_id": "1",
       "path": "1",
       "text": "Describe the safety precautions you must exercise when using, building, altering, or repairing electronic devices."
@@ -115,7 +80,10 @@
               "path": "4.a.3",
               "text": "How to use electronics for three different analog applications."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -140,196 +108,53 @@
             {
               "req_id": "3",
               "path": "4.c.3",
-              "text": "_type\":\"default\",\"toggle\":\"icon\",\"toggle_icon_type\":\"hamburger\",\"show_responsive_submenu_on\":\"icon\"}\" data-widget_type=\"pp-advanced-menu.default\">",
-              "resources": [
-                {
-                  "title": "Give",
-                  "url": "https://donations.scouting.org/#/council/NCFD/appeal/6539"
-                },
-                {
-                  "title": "Scoutshop",
-                  "url": "https://www.scoutshop.org/"
-                },
-                {
-                  "title": "Be a scout",
-                  "url": "https://beascout.scouting.org/?utm_source=scouting&utm_medium=join_header&utm_campaign=ongoing"
-                },
-                {
-                  "title": "Programs",
-                  "url": "https://www.scouting.org/programs/"
-                },
-                {
-                  "title": "Cub Scouts",
-                  "url": "https://www.scouting.org/programs/cub-scouts/"
-                },
-                {
-                  "title": "Scouts BSA",
-                  "url": "https://www.scouting.org/programs/scouts-bsa/"
-                },
-                {
-                  "title": "Venturing",
-                  "url": "https://www.scouting.org/programs/venturing/"
-                },
-                {
-                  "title": "Sea Scouts",
-                  "url": "https://seascout.org/"
-                },
-                {
-                  "title": "Exploring",
-                  "url": "https://www.exploring.org/"
-                },
-                {
-                  "title": "Scouting Safely",
-                  "url": "https://www.scouting.org/health-and-safety/"
-                },
-                {
-                  "title": "Scouts First Helpline (1-844-SCOUTS1)",
-                  "url": "https://www.scouting.org/training/youth-protection/#hotlink"
-                },
-                {
-                  "title": "Guide to Safe Scouting",
-                  "url": "https://www.scouting.org/health-and-safety/gss/"
-                },
-                {
-                  "title": "Youth Protection",
-                  "url": "https://www.scouting.org/health-and-safety/youth-protection/"
-                },
-                {
-                  "title": "Incident Reporting",
-                  "url": "https://www.scouting.org/health-and-safety/gss/gss14/"
-                },
-                {
-                  "title": "Safety Moments",
-                  "url": "https://www.scouting.org/health-and-safety/safety-moments/"
-                },
-                {
-                  "title": "Annual Health & Medical Record",
-                  "url": "https://www.scouting.org/health-and-safety/ahmr/"
-                },
-                {
-                  "title": "Awards",
-                  "url": "https://www.scouting.org/awards/"
-                },
-                {
-                  "title": "Awards Central",
-                  "url": "https://www.scouting.org/awards/awards-central/"
-                },
-                {
-                  "title": "Scholarships",
-                  "url": "https://www.scouting.org/awards/scholarships/"
-                },
-                {
-                  "title": "Outdoor Ethics Awards",
-                  "url": "https://www.scouting.org/awards/awards-central/awards/"
-                },
-                {
-                  "title": "Guide to Awards & Insignia",
-                  "url": "https://www.scouting.org/resources/insignia-guide/"
-                },
-                {
-                  "title": "About",
-                  "url": "https://www.scouting.org/about/"
-                },
-                {
-                  "title": "Careers",
-                  "url": "https://www.scouting.org/careers/"
-                },
-                {
-                  "title": "Find a Local Council",
-                  "url": "https://www.scouting.org/about/local-council-locator/"
-                },
-                {
-                  "title": "Scouting Newsroom",
-                  "url": "https://scoutingnewsroom.org/"
-                },
-                {
-                  "title": "BSA Restructuring",
-                  "url": "https://www.bsarestructuring.org/"
-                },
-                {
-                  "title": "Contact Us",
-                  "url": "https://www.scouting.org/about/contact-us/"
-                },
-                {
-                  "title": "Training",
-                  "url": "https://www.scouting.org/training/"
-                },
-                {
-                  "title": "Youth Training",
-                  "url": "https://www.scouting.org/training/youth/"
-                },
-                {
-                  "title": "Resources",
-                  "url": "https://www.scouting.org/resources/"
-                },
-                {
-                  "title": "Commissioners",
-                  "url": "https://www.scouting.org/commissioners/"
-                },
-                {
-                  "title": "Eagle Workbook",
-                  "url": "https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/eagle-scout-workbook/"
-                },
-                {
-                  "title": "Special Needs & Disabilities",
-                  "url": "https://www.scouting.org/resources/disabilities-awareness/"
-                },
-                {
-                  "title": "International Scouting",
-                  "url": "https://www.scouting.org/international/"
-                },
-                {
-                  "title": "Council Support",
-                  "url": "https://www.scouting.org/council-support/"
-                },
-                {
-                  "title": "Scouting Wire",
-                  "url": "https://scoutingwire.org/"
-                },
-                {
-                  "title": "Recruitment",
-                  "url": "https://www.scouting.org/recruitment/"
-                },
-                {
-                  "title": "Outdoor Programs",
-                  "url": "https://www.scouting.org/outdoor-programs/"
-                },
-                {
-                  "title": "Skills",
-                  "url": "/skills"
-                },
-                {
-                  "title": "Merit Badges",
-                  "url": "https://www.scouting.org/skills/merit-badges/"
-                },
-                {
-                  "title": "High Adventure",
-                  "url": "https://www.scouting.org/national-high-adventure-bases/"
-                },
-                {
-                  "title": "High Adventure Treks",
-                  "url": "https://www.scouting.org/national-high-adventure-bases/adventure-treks/"
-                },
-                {
-                  "title": "High Adventure Base Jobs",
-                  "url": "https://www.scouting.org/national-high-adventure-bases/jobs/"
-                },
-                {
-                  "title": "Family Adventure Camp",
-                  "url": "https://www.scouting.org/national-high-adventure-bases/family-adventure-camp/"
-                },
-                {
-                  "title": "Partners",
-                  "url": "https://www.scouting.org/partnerwithus/"
-                }
-              ]
+              "text": "An analog circuit."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         }
       ],
       "subrequirement_mode": {
         "type": "all"
       }
+    },
+    {
+      "req_id": "5",
+      "path": "5",
+      "text": "Do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Show how to solve a simple problem involving current, voltage, and resistance using Ohm's law."
+        },
+        {
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Tell about the need for and the use of test equipment in electronics. Name three types of test equipment. Tell how they operate."
+        },
+        {
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Demonstrate to your counselor how to read the colored bands of a resistor to determine its resistance value."
+        },
+        {
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Explain the differences between Through Hole and Surface Mount assembly technologies and give three advantages of each."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "6",
+      "path": "6",
+      "text": "Identify three career opportunities that would use skills and knowledge in Electronics. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
   ]
 }

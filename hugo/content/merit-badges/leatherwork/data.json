@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Do the following: Resource: Be Prepared (video)",
+      "text": "Do the following:",
       "resources": [
         {
           "title": "Be Prepared (video)",
@@ -19,7 +19,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the hazards you are most likely to encounter while using leatherwork tools and materials, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards. Resource: Safety in Leatherwork | Dangers and Health and Safety Tips (video)",
+          "text": "Explain to your counselor the hazards you are most likely to encounter while using leatherwork tools and materials, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards.",
           "resources": [
             {
               "title": "Safety in Leatherwork | Dangers and Health and Safety Tips (video)",
@@ -59,10 +59,10 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Where leather comes from Resource: How is Leather Made? (video)",
+          "text": "Where leather comes from",
           "resources": [
             {
-              "title": "How is Leather Made?  (video)",
+              "title": "How is Leather Made? (video)",
               "url": "https://youtu.be/oNTWz7bwolc?si=MTkSYtqnDxvJIgC8"
             }
           ]
@@ -85,7 +85,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Five types of leather Resource: Leather Is Made From Which Animal (video)",
+          "text": "Five types of leather",
           "resources": [
             {
               "title": "Leather Is Made From Which Animal (video)",
@@ -99,7 +99,7 @@
           "text": "Best uses for each type of leather.",
           "resources": [
             {
-              "title": "What Leather Should I Use for Tooling?  (video)",
+              "title": "What Leather Should I Use for Tooling? (video)",
               "url": "https://youtu.be/NNppGlzskQU?si=a3Kf5tP4MR28dcjf"
             },
             {
@@ -136,7 +136,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Cutting leather Resource: Best Practices for Cutting Leather (video)",
+          "text": "Cutting leather",
           "resources": [
             {
               "title": "Best Practices for Cutting Leather (video)",
@@ -177,7 +177,7 @@
         {
           "req_id": "e",
           "path": "3.e",
-          "text": "Applying dye or stain and finish to the project Resource: Basics of Hand Dyeing Leather (video)",
+          "text": "Applying dye or stain and finish to the project",
           "resources": [
             {
               "title": "Basics of Hand Dyeing Leather (video)",
@@ -230,7 +230,7 @@
         {
           "req_id": "h",
           "path": "3.h",
-          "text": "Dressing edges. Resource: Edge Finishing Techniques (video)",
+          "text": "Dressing edges.",
           "resources": [
             {
               "title": "Edge Finishing Techniques (video)",
@@ -267,7 +267,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Learn about the commercial tanning process. Report about it to your counselor. Resource: How is Leather Made? (video)",
+          "text": "Learn about the commercial tanning process. Report about it to your counselor.",
           "resources": [
             {
               "title": "How is Leather Made? (video)",
@@ -278,7 +278,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Tan the skin of a small animal. Describe the safety precautions you will take and the tanning method that you used. Resource: How to Tan Animal Hides (Never Destroy Animals for This Purpose) (video)",
+          "text": "Tan the skin of a small animal. Describe the safety precautions you will take and the tanning method that you used.",
           "resources": [
             {
               "title": "How to Tan Animal Hides (Never Destroy Animals for This Purpose) (video)",
@@ -312,7 +312,7 @@
         {
           "req_id": "d",
           "path": "5.d",
-          "text": "Visit a leather-related business. This could be a leathercraft supply company, a tannery, a leather goods or shoe factory, or a saddle shop. Report on your visit to your counselor. Resource: A Random Walk Through Horween Leather (video)",
+          "text": "Visit a leather-related business. This could be a leathercraft supply company, a tannery, a leather goods or shoe factory, or a saddle shop. Report on your visit to your counselor.",
           "resources": [
             {
               "title": "A Random Walk Through Horween Leather (video)",

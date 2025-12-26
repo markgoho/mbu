@@ -104,6 +104,12 @@
       "req_id": "6",
       "path": "6",
       "text": "Do the following: Note: Some of the issues surrounding requirement 6 for the family meeting could be considered of a personal nature. Use discretion when reviewing this requirement with the Scout. Discussion of each of these subjects will very likely carry over to more than one family meeting.",
+      "resources": [
+        {
+          "title": "Conflict Resolution (video)",
+          "url": "https://vimeo.com/1114227738"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -218,7 +224,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

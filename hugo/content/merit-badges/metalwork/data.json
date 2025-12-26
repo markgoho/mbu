@@ -121,9 +121,15 @@
                   "path": "5.a.3.b",
                   "text": "If you do not make your objects from zinc-plated sheet steel or tin-plated sheet steel, preserve your work from oxidation."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -160,9 +166,15 @@
                   "path": "5.b.3.c",
                   "text": "Clean and polish your objects."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -194,9 +206,15 @@
                   "path": "5.c.3.b",
                   "text": "Using lead-free pewter, make a casting using the mold that you have made."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -238,7 +256,10 @@
                   "path": "5.d.3.d",
                   "text": "Use the edge of the anvil to bend metal by forging an L-shaped bend."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "4",
@@ -260,9 +281,15 @@
                   "path": "5.d.4.c",
                   "text": "Preserve your work from oxidation."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

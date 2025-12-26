@@ -76,7 +76,10 @@
               "path": "5.a.5",
               "text": "Visit a nearby stream. Find clues that show the direction of water flow, even if the water is missing. Record your observations in a notebook, and sketch those clues you observe. Discuss your observations with your counselor."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -118,9 +121,16 @@
                   "path": "5.b.5.b",
                   "text": "With your parent or guardian's and counselor's permission and assistance, arrange for a visit to an operating drilling rig. While there, talk with a geologist and ask to see what the geologist does onsite. Ask to see cutting samples taken at the site."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -152,7 +162,11 @@
                   "path": "5.c.3.b",
                   "text": "With your counselor's assistance, identify 15 different rocks and minerals. List the name of each specimen, tell whether it is a rock or mineral, and give the name of its class (if it is a rock) or list its identifying physical properties (if it is a mineral)."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             },
             {
               "req_id": "4",
@@ -179,9 +193,16 @@
                   "path": "5.c.5.c",
                   "text": "With your parent or guardian's and counselor's approval, visit the office of a civil engineer and learn how geology is used in construction. Discuss what you learned with your counselor."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "d",
@@ -238,9 +259,16 @@
                   "path": "5.d.6.d",
                   "text": "Prepare a display or presentation on your state fossil. Include an image of the fossil, the age of the fossil, and its classification. You may use maps, books, articles from periodicals, and research found on the internet (with your parent or guardian's permission). Share the display with your counselor or a small group (such as your class at school). If your state does not have a state fossil, you may select a state fossil from a neighboring state."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "select",
+                "count": 1
+              }
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

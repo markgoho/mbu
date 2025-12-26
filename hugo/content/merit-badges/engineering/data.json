@@ -96,6 +96,12 @@
       "req_id": "6",
       "path": "6",
       "text": "Do TWO of the following:",
+      "resources": [
+        {
+          "title": "Transforming Motion - Rube Goldberg Machines (video)",
+          "url": "https://youtu.be/9_6TUgWmP6I?si=p3-RxRPDUsmow5VY"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",

@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the most likely hazards you may encounter while hiking, and what you should do to anticipate, help prevent, mitigate and respond to these hazards. Resource: Surviving the Wild - Essential Hiking Safety Tips (video)",
+          "text": "Explain to your counselor the most likely hazards you may encounter while hiking, and what you should do to anticipate, help prevent, mitigate and respond to these hazards.",
           "resources": [
             {
               "title": "Surviving the Wild - Essential Hiking Safety Tips (video)",
@@ -49,7 +49,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Explain and, where possible, show the points of good hiking practices including proper outdoor ethics, hiking safety in the daytime and at night, courtesy to others, choice of footwear, and proper care of feet and footwear. Resource: The ONE Tip You Need to Choose Between Hiking Boots, Shoes, and Trail Runners (video)",
+          "text": "Explain and, where possible, show the points of good hiking practices including proper outdoor ethics, hiking safety in the daytime and at night, courtesy to others, choice of footwear, and proper care of feet and footwear.",
           "resources": [
             {
               "title": "The ONE Tip You Need to Choose Between Hiking Boots, Shoes, and Trail Runners (video)",
@@ -75,7 +75,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Read aloud or recite the Outdoor Code, and give examples of how to follow it on a hike. Resource: The Outdoor Code (website)",
+          "text": "Read aloud or recite the Outdoor Code, and give examples of how to follow it on a hike.",
           "resources": [
             {
               "title": "The Outdoor Code (website)",
@@ -106,7 +106,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Take four 10-mile hikes and one 20-mile hike, each on a different day, and each of continuous miles. Prepare a written hike plan before each hike and share it with your counselor or a designee for approval before starting the hike. Include map routes, a clothing and equipment list, and a list of items for a trail lunch. You may stop for as many short rest periods as needed, as well as one meal, during each hike, but not for an extended period such as overnight. Resource: Maps and Ideas for Hikes (website)",
+      "text": "Take four 10-mile hikes and one 20-mile hike, each on a different day, and each of continuous miles. Prepare a written hike plan before each hike and share it with your counselor or a designee for approval before starting the hike. Include map routes, a clothing and equipment list, and a list of items for a trail lunch. You may stop for as many short rest periods as needed, as well as one meal, during each hike, but not for an extended period such as overnight.",
       "resources": [
         {
           "title": "Maps and Ideas for Hikes (website)",

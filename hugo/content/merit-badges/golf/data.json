@@ -41,7 +41,10 @@
                   "path": "2.option-1-traditional-golf.option1.3",
                   "text": "Show that you understand the \"Rules of Amateur Status.\""
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option2",
@@ -68,7 +71,10 @@
                   "path": "2.option-1-traditional-golf.option3.3",
                   "text": "Tell about the accomplishments of a top golfer of your choice."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option4",
@@ -85,7 +91,10 @@
                   "path": "2.option-1-traditional-golf.option4.2",
                   "text": "Tell how a golf exercise plan can help you play better. Show two exercises that would help improve your game."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option5",
@@ -132,7 +141,10 @@
                   "path": "2.option-1-traditional-golf.option5.8",
                   "text": "A sound putting stroke."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option6",
@@ -154,14 +166,20 @@
                   "path": "2.option-1-traditional-golf.option6.3",
                   "text": "Show respect to fellow golfers, committee, sponsor, and gallery."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option7",
               "path": "2.option-1-traditional-golf.option7",
               "text": "G. Find out about three careers related to traditional golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "option-2-disc-golf",
@@ -184,7 +202,10 @@
                   "path": "2.option-2-disc-golf.option1.2",
                   "text": "Describe the seven areas of Scoring (808)."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option2",
@@ -216,7 +237,10 @@
                   "path": "2.option-2-disc-golf.option3.4",
                   "text": "Tell about the accomplishments of a top disc golfer of your choice."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option4",
@@ -233,7 +257,10 @@
                   "path": "2.option-2-disc-golf.option4.2",
                   "text": "Tell how a disc golf exercise plan can help you play better. Show two exercises that would help improve your game."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option5",
@@ -295,7 +322,10 @@
                   "path": "2.option-2-disc-golf.option5.11",
                   "text": "The proper use of a mini-marking disc."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option6",
@@ -317,14 +347,20 @@
                   "path": "2.option-2-disc-golf.option6.3",
                   "text": "Show respect to fellow disc golfers and other people in the park along with any wildlife, trees, and plants on the property."
                 }
-              ]
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
             },
             {
               "req_id": "option7",
               "path": "2.option-2-disc-golf.option7",
               "text": "G. Find out about three careers related to disc golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

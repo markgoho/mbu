@@ -72,60 +72,66 @@
       "text": "Do ONE of the following options:",
       "subrequirements": [
         {
-          "req_id": "option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor",
-          "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor",
+          "req_id": "option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with",
+          "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with",
           "text": "Option A. Visit TWO of the following locations and take notes about the accessibility to people with disabilities. In your notes, give examples of five things that could be done to improve upon the site and five things about the site that make it friendly to people with disabilities. Discuss your observations with your counselor.",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.a",
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.a",
               "text": "Your school"
             },
             {
               "req_id": "b",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.b",
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.b",
               "text": "Your place of worship"
             },
             {
               "req_id": "c",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.c",
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.c",
               "text": "A Scouting event or campsite"
             },
             {
               "req_id": "d",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with-disabilities-in-your-notes-give-examples-of-five-things-that-could-be-done-to-improve-upon-the-site-and-five-things-about-the-site-that-make-it-friendly-to-people-with-disabilities-discuss-your-observations-with-your-counselor.d",
+              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.d",
               "text": "A public exhibit or attraction (such as a theater, museum, or park)."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
-          "req_id": "option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor",
-          "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor",
+          "req_id": "option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t",
+          "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t",
           "text": "Option B. Visit TWO of the following locations and take notes while observing features and methods that are used to accommodate people with invisible disabilities. While there, ask staff members to explain any accommodation features that may not be obvious. Note anything you think could be done to better accommodate people who have invisible disabilities. Discuss your observations with your counselor.",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.a",
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.a",
               "text": "Your school"
             },
             {
               "req_id": "b",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.b",
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.b",
               "text": "Your place of worship"
             },
             {
               "req_id": "c",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.c",
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.c",
               "text": "A Scouting event or campsite"
             },
             {
               "req_id": "d",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-that-are-used-to-accommodate-people-with-invisible-disabilities-while-there-ask-staff-members-to-explain-any-accommodation-features-that-may-not-be-obvious-note-anything-you-think-could-be-done-to-better-accommodate-people-who-have-invisible-disabilities-discuss-your-observations-with-your-counselor.d",
+              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.d",
               "text": "A public exhibit or attraction (such as a theater, museum, or park)."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {

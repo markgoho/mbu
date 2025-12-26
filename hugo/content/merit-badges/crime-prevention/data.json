@@ -125,7 +125,10 @@
               "path": "4.a.2",
               "text": "How designs of houses, neighborhoods, public buildings, stores, streets, and parks prevent crime."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",

@@ -45,7 +45,10 @@
               "path": "2.a.5",
               "text": "Recovery"
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
@@ -157,7 +160,10 @@
               "path": "2.b.21",
               "text": "Lightning storm."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
@@ -169,17 +175,6 @@
       "path": "3",
       "text": "Planning for Family Emergencies. Do the following:",
       "subrequirements": [
-        {
-          "req_id": "option1",
-          "path": "3.option1",
-          "text": "<img src=\"https://www.scouting.org/wp-content/uploads/2025/11/Scouting-WebPage-Banner.png\" alt=\"\" />",
-          "resources": [
-            {
-              "title": "<img src=\"https://www.scouting.org/wp-content/uploads/2025/11/Scouting-WebPage-Banner.png\" alt=\"\" />",
-              "url": "https://preparedhero.com/products/emergency-fire-blanket-scouting-america"
-            }
-          ]
-        },
         {
           "req_id": "a",
           "path": "3.a",
@@ -336,7 +331,10 @@
               "path": "9.a.4",
               "text": "Group feeding, shelter, and sanitation."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
