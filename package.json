@@ -9,6 +9,7 @@
     "hugo:dev": "cd hugo && hugo server"
   },
   "devDependencies": {
+    "@google/genai": "^1.34.0",
     "@mendable/firecrawl-js": "^4.9.3",
     "@types/bun": "latest",
     "firebase-tools": "^15.1.0",
