@@ -163,7 +163,7 @@
             {
               "req_id": "option2",
               "path": "8.option-1-agronomy.option2",
-              "text": "B. Make and use a seed germination tester to test 50 seeds of four of the following plants: corn, cotton, alfalfa, soybeans, clover, wheat, rice, rye, barley. Determine the percentage of live seeds. Resource: How to Do Seed Germination Test (video)",
+              "text": "B. Make and use a seed germination tester to test 50 seeds of four of the following plants: corn, cotton, alfalfa, soybeans, clover, wheat, rice, rye, barley. Determine the percentage of live seeds.",
               "resources": [
                 {
                   "title": "How to Do Seed Germination Test (video)",
@@ -218,7 +218,7 @@
                     {
                       "req_id": "a",
                       "path": "8.option-1-agronomy.option5.1.a",
-                      "text": "Grow a plot of corn and have your plot inspected by your counselor. Record seed variety or experimental code number. Resource: The Incredible Logistics Behind Corn Farming (video)",
+                      "text": "Grow a plot of corn and have your plot inspected by your counselor. Record seed variety or experimental code number.",
                       "resources": [
                         {
                           "title": "The Incredible Logistics Behind Corn Farming (video)",
@@ -234,7 +234,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-1-agronomy.option5.1.c",
-                      "text": "Tell about an insect that can damage corn, and explain how it affects corn production and how it is controlled. Resource: Different Types of Diseases in Corn (video)",
+                      "text": "Tell about an insect that can damage corn, and explain how it affects corn production and how it is controlled.",
                       "resources": [
                         {
                           "title": "Different Types of Diseases in Corn (video)",
@@ -257,7 +257,7 @@
                     {
                       "req_id": "b",
                       "path": "8.option-1-agronomy.option5.2.b",
-                      "text": "Tell about modern methods of commercial cotton farming, and about the uses of cotton fiber and seed and the economic value of this crop. Resource: How American Farmers Produce 14.68 Million Bales Of Cotton - American Farming (video)",
+                      "text": "Tell about modern methods of commercial cotton farming, and about the uses of cotton fiber and seed and the economic value of this crop.",
                       "resources": [
                         {
                           "title": "How American Farmers Produce 14.68 Million Bales Of Cotton - American Farming (video)",
@@ -310,7 +310,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-1-agronomy.option5.3.c",
-                      "text": "Name five poisonous plants that are dangerous to livestock, and tell the different ways of using forage crops as feed for livestock. Resource: Local Veterinarian Explains What Plants Are Toxic to Large Animals (video)",
+                      "text": "Name five poisonous plants that are dangerous to livestock, and tell the different ways of using forage crops as feed for livestock.",
                       "resources": [
                         {
                           "title": "Local Veterinarian Explains What Plants Are Toxic to Large Animals (video)",
@@ -328,7 +328,7 @@
                     {
                       "req_id": "a",
                       "path": "8.option-1-agronomy.option5.4.a",
-                      "text": "Give production figures for small grain crops listed in the U.S. Statistical Report or Agricultural Statistics Handbook for the latest year available. Resource: USDA - National Agricultural Statistics Service - Charts and Maps - Field Crops (website)",
+                      "text": "Give production figures for small grain crops listed in the U.S. Statistical Report or Agricultural Statistics Handbook for the latest year available.",
                       "resources": [
                         {
                           "title": "USDA - National Agricultural Statistics Service - Charts and Maps - Field Crops (website)",
@@ -380,7 +380,7 @@
                     {
                       "req_id": "a",
                       "path": "8.option-1-agronomy.option5.5.a",
-                      "text": "Grow a plot of soybeans and have your plot inspected by your counselor. Resource: How to Produce Millions Of Tons Of Soybeans | Modern Agricultural Technology | Soy milk Processing (video)",
+                      "text": "Grow a plot of soybeans and have your plot inspected by your counselor.",
                       "resources": [
                         {
                           "title": "How to Produce Millions Of Tons Of Soybeans | Modern Agricultural Technology | Soy milk Processing (video)",
@@ -391,7 +391,7 @@
                     {
                       "req_id": "b",
                       "path": "8.option-1-agronomy.option5.5.b",
-                      "text": "Tell about modern methods of growing soybeans on a commercial scale, and discuss the contributions soybeans make to our food supply. Resource: Soybeans and Oil Crops - Oil Crops Sector at a Glance | Economic Research Service (website)",
+                      "text": "Tell about modern methods of growing soybeans on a commercial scale, and discuss the contributions soybeans make to our food supply.",
                       "resources": [
                         {
                           "title": "Soybeans and Oil Crops - Oil Crops Sector at a Glance | Economic Research Service (website)",
@@ -402,7 +402,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-1-agronomy.option5.5.c",
-                      "text": "Explain why a hard frost can be dangerous to soybeans just after emergence. Resource: Soybean School: Assessing the Impact of Frost (video)",
+                      "text": "Explain why a hard frost can be dangerous to soybeans just after emergence.",
                       "resources": [
                         {
                           "title": "Soybean School: Assessing the Impact of Frost (video)",
@@ -425,7 +425,7 @@
             {
               "req_id": "option1",
               "path": "8.option-2-horticulture.option1",
-              "text": "A. Visit one of the following places and tell what you learned about horticulture there: public garden, arboretum, retail nursery, wholesale nursery, production greenhouse, or conservatory greenhouse. Resource: Horticulture Center Tour (video)",
+              "text": "A. Visit one of the following places and tell what you learned about horticulture there: public garden, arboretum, retail nursery, wholesale nursery, production greenhouse, or conservatory greenhouse.",
               "resources": [
                 {
                   "title": "Horticulture Center Tour (video)",
@@ -479,7 +479,7 @@
                 {
                   "req_id": "2",
                   "path": "8.option-2-horticulture.option3.2",
-                  "text": "Transplant 12 seedlings or rooted cuttings to larger containers and grow them for at least one month. Resource: How to Transplant Seedlings to Bigger Pots (video)",
+                  "text": "Transplant 12 seedlings or rooted cuttings to larger containers and grow them for at least one month.",
                   "resources": [
                     {
                       "title": "How to Transplant Seedlings to Bigger Pots (video)",
@@ -490,7 +490,7 @@
                 {
                   "req_id": "3",
                   "path": "8.option-2-horticulture.option3.3",
-                  "text": "Demonstrate good pruning techniques and tell why pruning is important. Resource: Everything You Need to Know to Start Pruning | Gardening 101 (video)",
+                  "text": "Demonstrate good pruning techniques and tell why pruning is important.",
                   "resources": [
                     {
                       "title": "Everything You Need to Know to Start Pruning | Gardening 101 (video)",
@@ -501,7 +501,7 @@
                 {
                   "req_id": "4",
                   "path": "8.option-2-horticulture.option3.4",
-                  "text": "After obtaining permission, plant a tree or shrub properly in an appropriate site. Resource: How to Properly Plant a Tree (video)",
+                  "text": "After obtaining permission, plant a tree or shrub properly in an appropriate site.",
                   "resources": [
                     {
                       "title": "How to Properly Plant a Tree (video)",
@@ -519,7 +519,7 @@
                 {
                   "req_id": "1",
                   "path": "8.option-2-horticulture.option4.1",
-                  "text": "Explain the importance of good landscape design and selection of plants that are suitable for particular sites and conditions. Resource: How to Pick the Right Plants for Stunning Landscaping - A Botanical Bliss Guide (video)",
+                  "text": "Explain the importance of good landscape design and selection of plants that are suitable for particular sites and conditions.",
                   "resources": [
                     {
                       "title": "How to Pick the Right Plants for  Stunning Landscaping - A Botanical Bliss Guide (video)",
@@ -530,7 +530,7 @@
                 {
                   "req_id": "2",
                   "path": "8.option-2-horticulture.option4.2",
-                  "text": "Tell why it is important to know how big a plant will grow. Resource: How to Know the Height, Width & Size a Plant or Tree Will Grow to at Maturity (website)",
+                  "text": "Tell why it is important to know how big a plant will grow.",
                   "resources": [
                     {
                       "title": "How to Know the Height, Width & Size a Plant or Tree Will Grow to at Maturity (website)",
@@ -541,7 +541,7 @@
                 {
                   "req_id": "3",
                   "path": "8.option-2-horticulture.option4.3",
-                  "text": "Tell why slower-growing landscape plants are sometimes a better choice than faster-growing varieties. Resource: Choosing Slow-Growing Plants for Greater Longevity (website)",
+                  "text": "Tell why slower-growing landscape plants are sometimes a better choice than faster-growing varieties.",
                   "resources": [
                     {
                       "title": "Choosing Slow-Growing Plants for Greater Longevity (website)",
@@ -569,7 +569,7 @@
                     {
                       "req_id": "b",
                       "path": "8.option-2-horticulture.option5.1.b",
-                      "text": "Transplant plants to a bed in the landscape and maintain the bed until the end of the growing season. Record your activities, observations, materials used, and costs. Resource: Transplanting Ferns & Other Plants: A Guide to Success (video)",
+                      "text": "Transplant plants to a bed in the landscape and maintain the bed until the end of the growing season. Record your activities, observations, materials used, and costs.",
                       "resources": [
                         {
                           "title": "Transplanting Ferns & Other Plants: A Guide to Success (video)",
@@ -580,7 +580,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-2-horticulture.option5.1.c",
-                      "text": "Demonstrate mulching, fertilizing, watering, weeding, and deadheading, and tell how each practice helps your plants. Resource: The Big Five - Weeding, Pruning, Fertilizing, Mulching, Watering (video)",
+                      "text": "Demonstrate mulching, fertilizing, watering, weeding, and deadheading, and tell how each practice helps your plants.",
                       "resources": [
                         {
                           "title": "The Big Five - Weeding, Pruning, Fertilizing, Mulching, Watering (video)",
@@ -618,7 +618,7 @@
                     {
                       "req_id": "b",
                       "path": "8.option-2-horticulture.option5.2.b",
-                      "text": "Prune a tree, vine, or shrub properly. Explain why pruning is necessary. Resource: Why You Should Prune Your Shrubs and Trees (video)",
+                      "text": "Prune a tree, vine, or shrub properly. Explain why pruning is necessary.",
                       "resources": [
                         {
                           "title": "Why You Should Prune Your Shrubs and Trees (video)",
@@ -629,7 +629,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-2-horticulture.option5.2.c",
-                      "text": "Demonstrate one type of graft and tell why this method is useful. Resource: How Plant Grafting Actually Works and Why It's So Cool (video)",
+                      "text": "Demonstrate one type of graft and tell why this method is useful.",
                       "resources": [
                         {
                           "title": "How Plant Grafting Actually Works and Why It's So Cool (video)",
@@ -686,7 +686,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-2-horticulture.option5.3.c",
-                      "text": "List 10 trees (in addition to those listed in general requirement 6 above) and tell your counselor how each is used in the landscape. Give the common and scientific names. Resource: 10 Most Popular Ornamental Trees for Your Garden (video)",
+                      "text": "List 10 trees (in addition to those listed in general requirement 6 above) and tell your counselor how each is used in the landscape. Give the common and scientific names.",
                       "resources": [
                         {
                           "title": "10 Most Popular Ornamental Trees for Your Garden (video)",
@@ -739,7 +739,7 @@
                     {
                       "req_id": "b",
                       "path": "8.option-2-horticulture.option5.4.b",
-                      "text": "Plant 10 or more different types of plants in your garden. Tell why you selected particular varieties of vegetables and flowers. Take care of the plants in your garden for one season. Resource: Caring for a Vegetable Garden | HowStuffWorks (website)",
+                      "text": "Plant 10 or more different types of plants in your garden. Tell why you selected particular varieties of vegetables and flowers. Take care of the plants in your garden for one season.",
                       "resources": [
                         {
                           "title": "Caring for a Vegetable Garden | HowStuffWorks (website)",
@@ -806,7 +806,7 @@
                 {
                   "req_id": "2",
                   "path": "8.option-3-field-botany.option1.2",
-                  "text": "Using information from maps, textbooks, or the internet, describe the environmental factors that may influence the presence of plants on your site, including latitude, climate, air and soil temperature, soil type and pH, geology, hydrology, and topography. Resource: Environmental Factors Affecting Plant Growth (website)",
+                  "text": "Using information from maps, textbooks, or the internet, describe the environmental factors that may influence the presence of plants on your site, including latitude, climate, air and soil temperature, soil type and pH, geology, hydrology, and topography.",
                   "resources": [
                     {
                       "title": "Environmental Factors Affecting Plant Growth  (website)",
@@ -824,7 +824,7 @@
             {
               "req_id": "option2",
               "path": "8.option-3-field-botany.option2",
-              "text": "B. Select a study site that is at least 100 by 100 feet. Make a list of 10 woody plants (trees and shrubs) and 10 non-woody plants in the study site. Find out which of these are native plants and which are exotic (or nonnative). Resource: Native Plants vs Exotic Plants | Which Are More Beneficial to the Ecosystem (video)",
+              "text": "B. Select a study site that is at least 100 by 100 feet. Make a list of 10 woody plants (trees and shrubs) and 10 non-woody plants in the study site. Find out which of these are native plants and which are exotic (or nonnative).",
               "resources": [
                 {
                   "title": "Native Plants vs Exotic Plants | Which Are More Beneficial to the Ecosystem (video)",
@@ -850,7 +850,7 @@
             {
               "req_id": "option4",
               "path": "8.option-3-field-botany.option4",
-              "text": "D. After gaining permission, collect, identify, press, mount, and label 10 different plants that are common in your area. Tell why voucher specimens are important for documentation of a field botanist's discoveries. Resource: Pressing Plants for Herbarium Study (video)",
+              "text": "D. After gaining permission, collect, identify, press, mount, and label 10 different plants that are common in your area. Tell why voucher specimens are important for documentation of a field botanist's discoveries.",
               "resources": [
                 {
                   "title": "Pressing Plants for Herbarium Study (video)",
@@ -886,7 +886,7 @@
                     {
                       "req_id": "a",
                       "path": "8.option-3-field-botany.option6.1.a",
-                      "text": "Identify the trees of your neighborhood, a park, a section of your town, or a Scout camp. Resource: How to Use Twigs to Identify Trees (video)",
+                      "text": "Identify the trees of your neighborhood, a park, a section of your town, or a Scout camp.",
                       "resources": [
                         {
                           "title": "How to Use Twigs to Identify Trees (video)",
@@ -924,7 +924,7 @@
                     {
                       "req_id": "b",
                       "path": "8.option-3-field-botany.option6.2.b",
-                      "text": "Use the transect method to study the two different kinds of plant communities. The transects should be at least 500 feet long. Resource: Weekly Science Challenge #5: Create a Transect (video)",
+                      "text": "Use the transect method to study the two different kinds of plant communities. The transects should be at least 500 feet long.",
                       "resources": [
                         {
                           "title": "Weekly Science Challenge #5: Create a Transect (video)",
@@ -979,7 +979,7 @@
                         {
                           "req_id": "2",
                           "path": "8.option-3-field-botany.option6.3.c.2",
-                          "text": "Identify and count all trees and shrubs in a 10-by-10-foot plot within each of the larger areas. Resource: Tree Identification | Ask the Arborist (video)",
+                          "text": "Identify and count all trees and shrubs in a 10-by-10-foot plot within each of the larger areas.",
                           "resources": [
                             {
                               "title": "Tree Identification | Ask the Arborist (video)",
@@ -1004,7 +1004,7 @@
                     {
                       "req_id": "a",
                       "path": "8.option-3-field-botany.option6.4.a",
-                      "text": "Write ahead and arrange to visit an herbarium at a university, park, or botanical garden; OR, visit an herbarium website (with your parent or guardian's permission). Resource: What Is a Herbarium? The Scientific and Historical Treasures of the Cambridge University Herbarium (video)",
+                      "text": "Write ahead and arrange to visit an herbarium at a university, park, or botanical garden; OR, visit an herbarium website (with your parent or guardian's permission).",
                       "resources": [
                         {
                           "title": "What Is a Herbarium? The Scientific and Historical Treasures of the Cambridge University Herbarium (video)",
@@ -1020,7 +1020,7 @@
                     {
                       "req_id": "c",
                       "path": "8.option-3-field-botany.option6.4.c",
-                      "text": "Tell how a voucher specimen is mounted and prepared for permanent storage. Tell how specimens should be handled so that they will not be damaged. Resource: Pressing Plants for Herbarium Study (video)",
+                      "text": "Tell how a voucher specimen is mounted and prepared for permanent storage. Tell how specimens should be handled so that they will not be damaged.",
                       "resources": [
                         {
                           "title": "Pressing Plants for Herbarium Study (video)",
@@ -1031,7 +1031,7 @@
                     {
                       "req_id": "d",
                       "path": "8.option-3-field-botany.option6.4.d",
-                      "text": "Tell about the tools and references used by botanists in an herbarium. Resource: How Herbarium Specimens Are Prepared at the Cambridge University Herbarium (video)",
+                      "text": "Tell about the tools and references used by botanists in an herbarium.",
                       "resources": [
                         {
                           "title": "How Herbarium Specimens Are Prepared at the Cambridge University Herbarium (video)",

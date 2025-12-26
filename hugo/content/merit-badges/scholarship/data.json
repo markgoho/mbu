@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Show that you have had an average grade of B or higher (80 percent or higher) for one term or semester. Resource: How to Do Better in School (video)",
+          "text": "Show that you have had an average grade of B or higher (80 percent or higher) for one term or semester.",
           "resources": [
             {
               "title": "How to Do Better in School (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Show that for one term or semester you have improved your school grades over the previous period. Resource: How to Study (video)",
+          "text": "Show that for one term or semester you have improved your school grades over the previous period.",
           "resources": [
             {
               "title": "How to Study (video)",
@@ -46,7 +46,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Make a list of educational places located where you live (other than schools). Visit one, and report on how you used the place for self-education. Resource: Why Do We Have Museums (video)",
+          "text": "Make a list of educational places located where you live (other than schools). Visit one, and report on how you used the place for self-education.",
           "resources": [
             {
               "title": "Why Do We Have Museums (video)",
@@ -57,7 +57,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "With your counselor's and your parent or guardian's approval, interview two professionals (other than teachers or other professionals at your school) with established careers. Find out where they were educated, what training they received, and how their education and training have helped prepare them for the career they have chosen. Find out how they continue to educate themselves. Discuss what you find out with your counselor. Resource: How to Have a Great Coffee Chat (video)",
+          "text": "With your counselor's and your parent or guardian's approval, interview two professionals (other than teachers or other professionals at your school) with established careers. Find out where they were educated, what training they received, and how their education and training have helped prepare them for the career they have chosen. Find out how they continue to educate themselves. Discuss what you find out with your counselor.",
           "resources": [
             {
               "title": "How to Have a Great Coffee Chat (video)",
@@ -114,7 +114,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Show that you have taken part in an extracurricular school activity, and discuss with your counselor the benefits of participation and what you learned about the importance of teamwork. Resource: What Extracurriculars Should You Do? (video)",
+          "text": "Show that you have taken part in an extracurricular school activity, and discuss with your counselor the benefits of participation and what you learned about the importance of teamwork.",
           "resources": [
             {
               "title": "What Extracurriculars Should You Do? (video)",
@@ -151,7 +151,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Write a report of 250 to 300 words about how the education you receive in school will be of value to you in the future and how you will continue to educate yourself in the future. Resource: Personal Narrative (video)",
+          "text": "Write a report of 250 to 300 words about how the education you receive in school will be of value to you in the future and how you will continue to educate yourself in the future.",
           "resources": [
             {
               "title": "Personal Narrative (video)",
@@ -162,7 +162,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Write a report of 250 to 300 words about two careers that interest you and how specific classes and good scholarship in general will help you achieve your career goals. Resource: Informative Writing (video)",
+          "text": "Write a report of 250 to 300 words about two careers that interest you and how specific classes and good scholarship in general will help you achieve your career goals.",
           "resources": [
             {
               "title": "Informative Writing (video)",

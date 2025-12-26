@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the hazards you are most likely to encounter during automotive maintenance activities, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards. Resource: Automotive Repair Safety Observations (video)",
+          "text": "Explain to your counselor the hazards you are most likely to encounter during automotive maintenance activities, and what you should do to anticipate, help prevent, mitigate, or lessen these hazards.",
           "resources": [
             {
               "title": "Automotive Repair Safety Observations (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Discuss with your counselor the safety equipment, tools, and clothing used while checking or repairing a motor vehicle. Use this equipment, tools, and/or clothing (when needed or called for) in meeting the requirements for this merit badge. Resource: Garage and Shop Safety Basics (video)",
+          "text": "Discuss with your counselor the safety equipment, tools, and clothing used while checking or repairing a motor vehicle. Use this equipment, tools, and/or clothing (when needed or called for) in meeting the requirements for this merit badge.",
           "resources": [
             {
               "title": "Garage and Shop Safety Basics (video)",
@@ -58,7 +58,7 @@
         {
           "req_id": "d",
           "path": "1.d",
-          "text": "Explain the safety considerations when performing maintenance on a vehicle equipped with a high-voltage electrical system. Resource: Working on High Voltage Vehicles (video)",
+          "text": "Explain the safety considerations when performing maintenance on a vehicle equipped with a high-voltage electrical system.",
           "resources": [
             {
               "title": "Working on High Voltage Vehicles (video)",
@@ -69,7 +69,7 @@
         {
           "req_id": "e",
           "path": "1.e",
-          "text": "Review the maintenance chart in the vehicle owner's manual. Explain the requirements and time limits. Resource: Should I Follow the Manufacturer's Maintenance Schedule (video)",
+          "text": "Review the maintenance chart in the vehicle owner's manual. Explain the requirements and time limits.",
           "resources": [
             {
               "title": "Should I Follow the Manufacturer's Maintenance Schedule (video)",
@@ -99,7 +99,7 @@
         {
           "req_id": "g",
           "path": "1.g",
-          "text": "Find out the requirements for your state's emissions and safety inspections (as applicable), including how often a vehicle needs to be inspected. Resource: Tips on How to Pass State Inspection (video)",
+          "text": "Find out the requirements for your state's emissions and safety inspections (as applicable), including how often a vehicle needs to be inspected.",
           "resources": [
             {
               "title": "Tips on How to Pass State Inspection (video)",
@@ -110,7 +110,7 @@
         {
           "req_id": "h",
           "path": "1.h",
-          "text": "Explain the importance of registering a vehicle and find out the annual registration fee for renewing your family car's registration. Resource: Vehicle Registration Near Me (video)",
+          "text": "Explain the importance of registering a vehicle and find out the annual registration fee for renewing your family car's registration.",
           "resources": [
             {
               "title": "Vehicle Registration Near Me (video)",
@@ -126,7 +126,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "General Maintenance. Do the following: Resource: Your Car's Fluids (video)",
+      "text": "General Maintenance. Do the following:",
       "resources": [
         {
           "title": "Your Car's Fluids (video)",
@@ -189,7 +189,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Locate the fuse boxes; determine the type and size of fuses. Demonstrate the proper replacement of burned-out fuses. Resource: How to Check Car Fuses (video)",
+          "text": "Locate the fuse boxes; determine the type and size of fuses. Demonstrate the proper replacement of burned-out fuses.",
           "resources": [
             {
               "title": "How to Check Car Fuses (video)",
@@ -234,7 +234,7 @@
         {
           "req_id": "e",
           "path": "2.e",
-          "text": "Locate and check the air filter(s). Resource: Check and Change Air Filter (video)",
+          "text": "Locate and check the air filter(s).",
           "resources": [
             {
               "title": "Check and Change Air Filter (video)",
@@ -255,7 +255,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Explain the function of the fuel gauge, speedometer, tachometer, oil pressure, and engine temperature gauge. Point each one out on the instrument cluster. Resource: Understanding the Car Gauges (video)",
+          "text": "Explain the function of the fuel gauge, speedometer, tachometer, oil pressure, and engine temperature gauge. Point each one out on the instrument cluster.",
           "resources": [
             {
               "title": "Understanding the Car Gauges (video)",
@@ -266,7 +266,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Explain the symbols that light up on the dashboard and the difference between the yellow and red symbols. Explain each of the indicators on the dashboard, using the owner's manual if necessary. Resource: Dashboard Warning Lights Explained (video)",
+          "text": "Explain the symbols that light up on the dashboard and the difference between the yellow and red symbols. Explain each of the indicators on the dashboard, using the owner's manual if necessary.",
           "resources": [
             {
               "title": "Dashboard Warning Lights Explained (video)",
@@ -292,7 +292,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Explain the difference between tire manufacturer's and vehicle manufacturer's specifications and show where to find them. Resource: How to Read aTire (video)",
+          "text": "Explain the difference between tire manufacturer's and vehicle manufacturer's specifications and show where to find them.",
           "resources": [
             {
               "title": "How to Read aTire (video)",
@@ -303,7 +303,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Demonstrate how to check tire pressure and properly inflate a tire. Check the spare tire and make sure it is ready for use. Resource: How to Properly Check and Fill Tires (video)",
+          "text": "Demonstrate how to check tire pressure and properly inflate a tire. Check the spare tire and make sure it is ready for use.",
           "resources": [
             {
               "title": "How to Properly Check and Fill Tires (video)",
@@ -314,7 +314,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Explain why wheel alignment is important to the life of a tire. Explain caster, camber, and toe-in adjustments on wheel alignment. Resource: Understanding Wheel Alignment Process (video) (video)",
+          "text": "Explain why wheel alignment is important to the life of a tire. Explain caster, camber, and toe-in adjustments on wheel alignment.",
           "resources": [
             {
               "title": "Understanding Wheel Alignment Process (video) (video)",
@@ -340,7 +340,7 @@
         {
           "req_id": "e",
           "path": "4.e",
-          "text": "Explain how to dispose of old tires in accordance with local laws and regulations. Resource: Tires: How Do I Get Rid Of Them? (video)",
+          "text": "Explain how to dispose of old tires in accordance with local laws and regulations.",
           "resources": [
             {
               "title": "Tires: How Do I Get Rid Of Them? (video)",
@@ -395,7 +395,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "Explain where to find the recommended oil type and the amount of oil to be used in the vehicle engine. Resource: Choosing the Correct Engine Oil (video)",
+          "text": "Explain where to find the recommended oil type and the amount of oil to be used in the vehicle engine.",
           "resources": [
             {
               "title": "Choosing the Correct Engine Oil (video)",
@@ -416,7 +416,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Explain the need for coolant in the cooling system, and the importance of selecting the correct coolant type for a given vehicle. Resource: Role of Antifreeze/Coolant (video)",
+          "text": "Explain the need for coolant in the cooling system, and the importance of selecting the correct coolant type for a given vehicle.",
           "resources": [
             {
               "title": "Role of Antifreeze/Coolant (video)",
@@ -427,7 +427,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Explain how to flush and change the engine coolant in the vehicle, and how to properly dispose of the used coolant. Resource: Flushing and Filling Your Coolant System (video)",
+          "text": "Explain how to flush and change the engine coolant in the vehicle, and how to properly dispose of the used coolant.",
           "resources": [
             {
               "title": "Flushing and Filling Your Coolant System (video)",
@@ -463,7 +463,7 @@
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Explain how a how a fuel injection system works and how an onboard computer works with the fuel injection system. Resource: How a Car Fuel Injection System Works Explained Step-by-Step! (video)",
+          "text": "Explain how a how a fuel injection system works and how an onboard computer works with the fuel injection system.",
           "resources": [
             {
               "title": "How a Car Fuel Injection System Works Explained Step-by-Step! (video)",
@@ -484,7 +484,7 @@
         {
           "req_id": "a",
           "path": "8.a",
-          "text": "Diagram and explain the parts of one of the following electrical systems: Resource: Car Electrical System Explained (video)",
+          "text": "Diagram and explain the parts of one of the following electrical systems:",
           "resources": [
             {
               "title": "Car Electrical System Explained (video)",
@@ -495,7 +495,7 @@
             {
               "req_id": "1",
               "path": "8.a.1",
-              "text": "Starting/charging system Resource: Automotive Starting and Charging System (video)",
+              "text": "Starting/charging system",
               "resources": [
                 {
                   "title": "Automotive Starting and Charging System (video)",
@@ -506,7 +506,7 @@
             {
               "req_id": "2",
               "path": "8.a.2",
-              "text": "Hybrid or electric vehicle inverter Resource: The Role of Inverters for EV Propulsion Systems (video)",
+              "text": "Hybrid or electric vehicle inverter",
               "resources": [
                 {
                   "title": "The Role of Inverters for EV Propulsion Systems (video)",
@@ -517,7 +517,7 @@
             {
               "req_id": "3",
               "path": "8.a.3",
-              "text": "Lighting system. Resource: Automotive Lighting Circuits (video)",
+              "text": "Lighting system.",
               "resources": [
                 {
                   "title": "Automotive Lighting Circuits (video)",
@@ -530,7 +530,7 @@
         {
           "req_id": "b",
           "path": "8.b",
-          "text": "Explain the engine's firing order. Resource: Explain Engine Firing Order | Automobile Engineering (video)",
+          "text": "Explain the engine's firing order.",
           "resources": [
             {
               "title": "Explain Engine Firing Order | Automobile Engineering (video)",
@@ -541,7 +541,7 @@
         {
           "req_id": "c",
           "path": "8.c",
-          "text": "Explain the purpose of the spark gap. Resource: What You Need to Know About Spark Plugs (video)",
+          "text": "Explain the purpose of the spark gap.",
           "resources": [
             {
               "title": "What You Need to Know About Spark Plugs (video)",
@@ -567,7 +567,7 @@
         {
           "req_id": "e",
           "path": "8.e",
-          "text": "Discuss with your counselor what factors can affect range on an electrified vehicle. Explain the procedure for recharging an electric or plug-in hybrid vehicle. Resource: Factors Affecting Range (video)",
+          "text": "Discuss with your counselor what factors can affect range on an electrified vehicle. Explain the procedure for recharging an electric or plug-in hybrid vehicle.",
           "resources": [
             {
               "title": "Factors Affecting Range (video)",
@@ -578,7 +578,7 @@
         {
           "req_id": "f",
           "path": "8.f",
-          "text": "Explain what other vehicle systems are dependent on a reliable electrical system. Resource: Fundamentals of Automotive Electrical Systems (video)",
+          "text": "Explain what other vehicle systems are dependent on a reliable electrical system.",
           "resources": [
             {
               "title": "Fundamentals of Automotive Electrical Systems (video)",
@@ -599,7 +599,7 @@
         {
           "req_id": "a",
           "path": "9.a",
-          "text": "Diagram the drive train and explain the different parts. Resource: Ultimate Drive Train Guide (video)",
+          "text": "Diagram the drive train and explain the different parts.",
           "resources": [
             {
               "title": "Ultimate Drive Train Guide (video)",
@@ -610,7 +610,7 @@
         {
           "req_id": "b",
           "path": "9.b",
-          "text": "Explain the difference between automatic and standard transmissions. Resource: Manual vs Automatic (video)",
+          "text": "Explain the difference between automatic and standard transmissions.",
           "resources": [
             {
               "title": "Manual vs Automatic (video)",
@@ -621,7 +621,7 @@
         {
           "req_id": "c",
           "path": "9.c",
-          "text": "Explain the types of automatic transmission fluid. Resource: The Complexities of Today's Automatic Transmission Fluid (video)",
+          "text": "Explain the types of automatic transmission fluid.",
           "resources": [
             {
               "title": "The Complexities of Today's Automatic Transmission Fluid (video)",
@@ -632,7 +632,7 @@
         {
           "req_id": "d",
           "path": "9.d",
-          "text": "Explain the types of lubricants used in a standard transmission, and in the differential and transfer case. Resource: Which Fluids to Use (video)",
+          "text": "Explain the types of lubricants used in a standard transmission, and in the differential and transfer case.",
           "resources": [
             {
               "title": "Which Fluids to Use (video)",
@@ -643,7 +643,7 @@
         {
           "req_id": "e",
           "path": "9.e",
-          "text": "Explain the difference between front-wheel, rear- wheel, and four-wheel drive. Resource: Ultimate Drive Train Guide (video)",
+          "text": "Explain the difference between front-wheel, rear- wheel, and four-wheel drive.",
           "resources": [
             {
               "title": "Ultimate Drive Train Guide (video)",
@@ -664,7 +664,7 @@
         {
           "req_id": "a",
           "path": "10.a",
-          "text": "Explain the brake system (including antilock systems) and how it operates. Resource: Understanding ABS (video)",
+          "text": "Explain the brake system (including antilock systems) and how it operates.",
           "resources": [
             {
               "title": "Understanding ABS (video)",
@@ -675,7 +675,7 @@
         {
           "req_id": "b",
           "path": "10.b",
-          "text": "Explain the differences between disc and drum systems. Resource: Drum vs Disc Brakes - What Are the Differences? (Which Is the Better Choice?) (video)",
+          "text": "Explain the differences between disc and drum systems.",
           "resources": [
             {
               "title": "Drum vs Disc Brakes - What Are the Differences? (Which Is the Better Choice?) (video)",
@@ -686,7 +686,7 @@
         {
           "req_id": "c",
           "path": "10.c",
-          "text": "Demonstrate how to check the condition of a vehicle's brake system. After checking, make recommendations for repairs (if necessary). Resource: How to Check Pads and Rotor (video)",
+          "text": "Demonstrate how to check the condition of a vehicle's brake system. After checking, make recommendations for repairs (if necessary).",
           "resources": [
             {
               "title": "How to Check Pads and Rotor (video)",
@@ -707,7 +707,7 @@
         {
           "req_id": "a",
           "path": "11.a",
-          "text": "Determine the value of three different vehicles you are interested in purchasing. One must be new and one must be used; the third vehicle can be new or used. For each vehicle, find out the requirements and cost of automobile insurance to include basic liability and options for collision, comprehensive, towing, and rental car. Using the three vehicles you chose and with your counselor's assistance, complete the operation/maintenance chart provided in the Automotive Maintenance merit badge pamphlet. Use this information to determine the operating cost per mile for each vehicle, and discuss what you learn with your counselor. Resource: How to Negotiate and Buy a Used Car (video)",
+          "text": "Determine the value of three different vehicles you are interested in purchasing. One must be new and one must be used; the third vehicle can be new or used. For each vehicle, find out the requirements and cost of automobile insurance to include basic liability and options for collision, comprehensive, towing, and rental car. Using the three vehicles you chose and with your counselor's assistance, complete the operation/maintenance chart provided in the Automotive Maintenance merit badge pamphlet. Use this information to determine the operating cost per mile for each vehicle, and discuss what you learn with your counselor.",
           "resources": [
             {
               "title": "How to Negotiate and Buy a Used Car (video)",
@@ -718,7 +718,7 @@
         {
           "req_id": "b",
           "path": "11.b",
-          "text": "Choose a car cleaner and wax product for a vehicle you want to clean. Explain clear-coat paint and the precautions necessary for care. Clean the vehicle, both inside and out, and wax the exterior. Use a vinyl and rubber protectant (on vinyl tops, rubber door seals, sidewalls, etc.) and explain the importance of this protectant. Resource: How to Wax Your Car (video)",
+          "text": "Choose a car cleaner and wax product for a vehicle you want to clean. Explain clear-coat paint and the precautions necessary for care. Clean the vehicle, both inside and out, and wax the exterior. Use a vinyl and rubber protectant (on vinyl tops, rubber door seals, sidewalls, etc.) and explain the importance of this protectant.",
           "resources": [
             {
               "title": "How to Wax Your Car (video)",
@@ -729,7 +729,7 @@
         {
           "req_id": "c",
           "path": "11.c",
-          "text": "Locate the manufacturer's jack. Use the jack to demonstrate how to engage the jack correctly on the vehicle, then change a tire correctly. Resource: How to Change a Flat Tire (video)",
+          "text": "Locate the manufacturer's jack. Use the jack to demonstrate how to engage the jack correctly on the vehicle, then change a tire correctly.",
           "resources": [
             {
               "title": "How to Change a Flat Tire (video)",
@@ -740,7 +740,7 @@
         {
           "req_id": "d",
           "path": "11.d",
-          "text": "Perform an oil filter and oil change on a vehicle. Explain how to properly dispose of the used oil and filter. Resource: How to Change Your Oil (website)",
+          "text": "Perform an oil filter and oil change on a vehicle. Explain how to properly dispose of the used oil and filter.",
           "resources": [
             {
               "title": "How to Change Your Oil (website)",

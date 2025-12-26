@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the most likely hazards you might encounter while participating in pioneering activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards. Resource: Safe Pioneering (video)",
+          "text": "Explain to your counselor the most likely hazards you might encounter while participating in pioneering activities and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.",
           "resources": [
             {
               "title": "Safe Pioneering (video)",
@@ -140,7 +140,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Using square and tripod lashings from requirement 2(c), build a Tripod Wash Station (or with your counselor's permission, another camp gadget of your own design). Resource: Tripod Hand Wash Station: The Ideal First Class Camp Gadget! (video)",
+          "text": "Using square and tripod lashings from requirement 2(c), build a Tripod Wash Station (or with your counselor's permission, another camp gadget of your own design).",
           "resources": [
             {
               "title": "Tripod Hand Wash Station: The Ideal First Class Camp Gadget! (video)",
@@ -151,7 +151,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Using rolling hitches or roundturns with two half hitches, and round lashings from requirements 2(b) and 2(c), build a 15-foot Scout Stave Flagpole (or with your counselor's permission, another camp gadget of your own design). Resource: Patrol Challenge - 15 Foot Scout Stave Flagpole (video)",
+          "text": "Using rolling hitches or roundturns with two half hitches, and round lashings from requirements 2(b) and 2(c), build a 15-foot Scout Stave Flagpole (or with your counselor's permission, another camp gadget of your own design).",
           "resources": [
             {
               "title": "Patrol Challenge - 15 Foot Scout Stave Flagpole (video)",
@@ -162,7 +162,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Using shear, square, and floor lashings, clove hitches on a bight, and rope tackles from requirements 2(b) and 2(c), build a Simple Camp Table (or with your counselor's permission, another camp gadget of your own design). Resource: Simple Camp Table (video)",
+          "text": "Using shear, square, and floor lashings, clove hitches on a bight, and rope tackles from requirements 2(b) and 2(c), build a Simple Camp Table (or with your counselor's permission, another camp gadget of your own design).",
           "resources": [
             {
               "title": "Simple Camp Table (video)",
@@ -178,7 +178,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Explain the differences between synthetic ropes and natural-fiber ropes. Discuss which types of rope are suitable for pioneering work and why. Include the following in your discussion: breaking strength, safe working loads, and the care and storage of rope. Resource: How to Prepare and Preserve Lashing Ropes and Pioneering Spars (video)",
+      "text": "Explain the differences between synthetic ropes and natural-fiber ropes. Discuss which types of rope are suitable for pioneering work and why. Include the following in your discussion: breaking strength, safe working loads, and the care and storage of rope.",
       "resources": [
         {
           "title": "How to Prepare and Preserve Lashing Ropes and Pioneering Spars (video)",
@@ -208,7 +208,7 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "Using a rope-making device or machine, make a rope at least 6 feet long consisting of three strands, each having three yarns. Whip the ends. Resource: Making a Rope from Twine (video)",
+      "text": "Using a rope-making device or machine, make a rope at least 6 feet long consisting of three strands, each having three yarns. Whip the ends.",
       "resources": [
         {
           "title": "Making a Rope from Twine (video)",
@@ -219,7 +219,7 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Explain the importance of effectively anchoring a pioneering project. Describe to your counselor the 3-2-1 anchoring system and the log-and-stake anchoring system. Resource: Anchoring Pioneering Projects (video)",
+      "text": "Explain the importance of effectively anchoring a pioneering project. Describe to your counselor the 3-2-1 anchoring system and the log-and-stake anchoring system.",
       "resources": [
         {
           "title": "Anchoring Pioneering Projects (video)",
@@ -230,7 +230,7 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Describe the lashings that are used when building a trestle, how the poles are positioned, and how X braces contribute to the overall structural integrity of a pioneering project. Resource: Making a Trestle (video)",
+      "text": "Describe the lashings that are used when building a trestle, how the poles are positioned, and how X braces contribute to the overall structural integrity of a pioneering project.",
       "resources": [
         {
           "title": "Making a Trestle (video)",

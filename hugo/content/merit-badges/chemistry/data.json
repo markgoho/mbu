@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Obtain safety data sheets (SDS) for sucrose (sugar), isopropyl alcohol (rubbing alcohol), and a waterproofing spray. Compare their properties and potential hazard(s), including handling and disposal guidelines and toxicity information. Resource: Safety Data Sheets Training (video)",
+          "text": "Obtain safety data sheets (SDS) for sucrose (sugar), isopropyl alcohol (rubbing alcohol), and a waterproofing spray. Compare their properties and potential hazard(s), including handling and disposal guidelines and toxicity information.",
           "resources": [
             {
               "title": "Safety Data Sheets Training (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "What types of personal protective equipment (PPE) are recommended for each, and why? How does the recommended PPE change with toxicity and route of exposure? Resource: How to Dress in the Lab and the Use of PPE (video)",
+          "text": "What types of personal protective equipment (PPE) are recommended for each, and why? How does the recommended PPE change with toxicity and route of exposure?",
           "resources": [
             {
               "title": "How to Dress in the Lab and the Use of PPE (video)",
@@ -35,7 +35,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Review the pictograms in Section 2 of each SDS. What do they mean, and how do you see them used in your community? Resource: Safety Pictograms in SDS (video)",
+          "text": "Review the pictograms in Section 2 of each SDS. What do they mean, and how do you see them used in your community?",
           "resources": [
             {
               "title": "Safety Pictograms in SDS (video)",
@@ -71,7 +71,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Discuss with your counselor why you think soap and alcohol are used to clean cuts and scrapes. Discuss how you could test your hypotheses with your counselor. Resource: Soap and Hand Sanitizers vs Viruses and Bacteria (video)",
+          "text": "Discuss with your counselor why you think soap and alcohol are used to clean cuts and scrapes. Discuss how you could test your hypotheses with your counselor.",
           "resources": [
             {
               "title": "Soap and Hand Sanitizers vs Viruses and Bacteria (video)",
@@ -82,7 +82,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Coat your hands with a mixture of cooking oil and a nontoxic powder, such as sand or cocoa. Wash your hands with water and observe what happens. Coat your hands again, then wash with soap and water. Discuss the differences with your counselor. Resource: How Does Soap Work? (video)",
+          "text": "Coat your hands with a mixture of cooking oil and a nontoxic powder, such as sand or cocoa. Wash your hands with water and observe what happens. Coat your hands again, then wash with soap and water. Discuss the differences with your counselor.",
           "resources": [
             {
               "title": "How Does Soap Work? (video)",
@@ -93,7 +93,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Perform an experiment to demonstrate how rubbing alcohol affects microbial growth using baker's yeast. Discuss the results with your counselor. Resource: Watching How Alcohol Kills Viruses and Bacteria Under a Microscope (video)",
+          "text": "Perform an experiment to demonstrate how rubbing alcohol affects microbial growth using baker's yeast. Discuss the results with your counselor.",
           "resources": [
             {
               "title": "Watching How Alcohol Kills Viruses and Bacteria Under a Microscope (video)",
@@ -196,7 +196,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Under your counselor's supervision and/or the supervision of a knowledgeable adult approved in advance by your counselor, conduct flame tests of at least five elements using a kitchen or propane torch. Resource: Metal Flame Test (video)",
+          "text": "Under your counselor's supervision and/or the supervision of a knowledgeable adult approved in advance by your counselor, conduct flame tests of at least five elements using a kitchen or propane torch.",
           "resources": [
             {
               "title": "Metal Flame Test (video)",
@@ -207,11 +207,15 @@
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "Under your counselor's supervision and/or the supervision of a knowledgeable adult approved in advance by your counselor, synthesize nylon (may be from a kit). Resource: Making Nylon (video)",
+          "text": "Under your counselor's supervision and/or the supervision of a knowledgeable adult approved in advance by your counselor, synthesize nylon (may be from a kit).",
           "resources": [
             {
               "title": "Making Nylon (video)",
               "url": "https://www.youtube.com/watch?v=NQpTQFGKRN8"
+            },
+            {
+              "title": "Incident Reporting",
+              "url": "https://www.scouting.org/health-and-safety/gss/gss14/"
             }
           ]
         }
@@ -243,7 +247,7 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "Identify five fields of chemistry. Briefly describe each, tell how each applies to your life and how they interact. Resource: Areas of Chemistry - American Chemical Society (website)",
+      "text": "Identify five fields of chemistry. Briefly describe each, tell how each applies to your life and how they interact.",
       "resources": [
         {
           "title": "Areas of Chemistry - American Chemical Society (website)",

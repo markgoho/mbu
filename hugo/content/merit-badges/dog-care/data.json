@@ -43,7 +43,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Tell some specific characteristics of seven breeds of dogs (one from each major group), OR give a short history of one breed. Resource: 7 Groups of Dog Breeds! (video)",
+          "text": "Tell some specific characteristics of seven breeds of dogs (one from each major group), OR give a short history of one breed.",
           "resources": [
             {
               "title": "7 Groups of Dog Breeds! (video)",
@@ -59,7 +59,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Point out on a dog or a sketch at least 10 body parts. Give the correct name of each one. Resource: Basic Dog Anatomy (video)",
+      "text": "Point out on a dog or a sketch at least 10 body parts. Give the correct name of each one.",
       "resources": [
         {
           "title": "Basic Dog Anatomy (video)",
@@ -75,7 +75,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Explain the importance of house-training, obedience training, and socialization training for your dog. Resource: How Important is Dog Training and Socialization? (video)",
+          "text": "Explain the importance of house-training, obedience training, and socialization training for your dog.",
           "resources": [
             {
               "title": "How Important is Dog Training and Socialization? (video)",
@@ -86,7 +86,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Explain what \"responsible pet ownership\" means. Resource: Pet Protector - Responsible Pet Ownership (video)",
+          "text": "Explain what \"responsible pet ownership\" means.",
           "resources": [
             {
               "title": "Pet Protector - Responsible Pet Ownership (video)",
@@ -117,7 +117,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "For two months, keep and care for your dog. Maintain a log of your activities during this period that includes these items: feeding schedule, types of food used, amount fed, exercise periods, training schedule, a weekly body weight record, grooming and bathing schedules, veterinary care, if necessary, and costs. Also include a brief description of the type of housing/shelter arrangements you have for your dog. Resource: How to Keep Track of Pet Care (video)",
+      "text": "For two months, keep and care for your dog. Maintain a log of your activities during this period that includes these items: feeding schedule, types of food used, amount fed, exercise periods, training schedule, a weekly body weight record, grooming and bathing schedules, veterinary care, if necessary, and costs. Also include a brief description of the type of housing/shelter arrangements you have for your dog.",
       "resources": [
         {
           "title": "How to Keep Track of Pet Care (video)",
@@ -148,7 +148,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Discuss the proper vaccination schedule for a dog in your area from puppyhood through adulthood. Resource: Puppy Vaccinations 101: What, When, and Why (video)",
+          "text": "Discuss the proper vaccination schedule for a dog in your area from puppyhood through adulthood.",
           "resources": [
             {
               "title": "Puppy Vaccinations 101: What, When, and Why (video)",
@@ -159,7 +159,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Discuss the control methods for preventing fleas, ticks, heartworms, and intestinal parasites (worms) for a dog in your area from puppyhood through adulthood. Resource: How to Treat Fleas, Ticks & Worms in Dogs (video)",
+          "text": "Discuss the control methods for preventing fleas, ticks, heartworms, and intestinal parasites (worms) for a dog in your area from puppyhood through adulthood.",
           "resources": [
             {
               "title": "How to Treat Fleas, Ticks & Worms in Dogs (video)",
@@ -170,7 +170,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "Explain the importance of dental care and tooth brushing to your pet's health. Resource: Dental Health Important for Your Pet Dogs (video)",
+          "text": "Explain the importance of dental care and tooth brushing to your pet's health.",
           "resources": [
             {
               "title": "Dental Health Important for Your Pet Dogs (video)",
@@ -181,7 +181,7 @@
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "Discuss the benefits of grooming your dog's coat and nails on a regular basis. Resource: Everything You Need to Know About Dog Grooming (video)",
+          "text": "Discuss the benefits of grooming your dog's coat and nails on a regular basis.",
           "resources": [
             {
               "title": "Everything You Need to Know About Dog Grooming (video)",
@@ -232,7 +232,7 @@
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "Explain precautions to take in handling a hurt dog. Resource: How to Be Safe When Handling a Sick or Injured Dog (video)",
+          "text": "Explain precautions to take in handling a hurt dog.",
           "resources": [
             {
               "title": "How to Be Safe When Handling a Sick or Injured Dog (video)",
@@ -243,7 +243,7 @@
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Show how to put on an emergency muzzle. Resource: How Do I Safely Muzzle a Pet in an Emergency? (video)",
+          "text": "Show how to put on an emergency muzzle.",
           "resources": [
             {
               "title": "How Do I Safely Muzzle a Pet in an Emergency? (video)",
@@ -254,7 +254,7 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Explain how to treat wounds. Explain first aid for a dog bite. Resource: First Aid for Dog Bites (video)",
+          "text": "Explain how to treat wounds. Explain first aid for a dog bite.",
           "resources": [
             {
               "title": "First Aid for Dog Bites (video)",
@@ -265,7 +265,7 @@
         {
           "req_id": "d",
           "path": "7.d",
-          "text": "Show how to put on a simple dressing and bandage the foot, body, or head of your dog. Resource: Pet First Aid: How to Bandage Your Pet's Paw in Case of Emergency (video)",
+          "text": "Show how to put on a simple dressing and bandage the foot, body, or head of your dog.",
           "resources": [
             {
               "title": "Pet First Aid: How to Bandage Your Pet's Paw in Case of Emergency (video)",
@@ -276,7 +276,7 @@
         {
           "req_id": "e",
           "path": "7.e",
-          "text": "Explain what to do if a dog is hit by a car. Resource: What to Do to Help a Dog Hit by a Car (video)",
+          "text": "Explain what to do if a dog is hit by a car.",
           "resources": [
             {
               "title": "What to Do to Help a Dog Hit by a Car (video)",
@@ -356,7 +356,7 @@
     {
       "req_id": "9",
       "path": "9",
-      "text": "Know the laws and ordinances involving dogs that are in force in your community. Resource: Michigan's Animal Control Laws (video)",
+      "text": "Know the laws and ordinances involving dogs that are in force in your community.",
       "resources": [
         {
           "title": "Michigan's Animal Control Laws (video)",

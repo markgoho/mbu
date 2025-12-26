@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Present evidence that you have cared for a pet for four months. Get approval before you start. Note: Work done for other merit badges cannot be used for this requirement. Resource: Create an Activity Log (video)",
+      "text": "Present evidence that you have cared for a pet for four months. Get approval before you start. Note: Work done for other merit badges cannot be used for this requirement.",
       "resources": [
         {
           "title": "Create an Activity Log (video)",
@@ -19,7 +19,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Write in 200 words or more about the care, feeding, and housing of your pet. Tell some interesting facts about it. Tell why you have this kind of pet. Give local laws, if any, relating to the pet you keep. Resource: Understanding Hamsters: Care, Feeding, Housing, and More (video)",
+      "text": "Write in 200 words or more about the care, feeding, and housing of your pet. Tell some interesting facts about it. Tell why you have this kind of pet. Give local laws, if any, relating to the pet you keep.",
       "resources": [
         {
           "title": "Understanding Hamsters: Care, Feeding, Housing, and More (video)",
@@ -40,7 +40,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Show your pet in a pet show. Resource: Cat Agility Course at Cat Fanciers Cat Show (video)",
+          "text": "Show your pet in a pet show.",
           "resources": [
             {
               "title": "Cat Agility Course at Cat Fanciers Cat Show (video)",

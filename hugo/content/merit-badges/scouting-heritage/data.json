@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Discuss with your counselor the life and times of Lord Baden-Powell of Gilwell. Explain why he felt a program like Scouting would be good for the young men of his day. Include in your discussion how Scouting was introduced in the United States, and the origins of Boy Scouting and Cub Scouting under Baden-Powell. Resource: Baden Powell - Father of Scouting, Origins of Scouting (video)",
+      "text": "Discuss with your counselor the life and times of Lord Baden-Powell of Gilwell. Explain why he felt a program like Scouting would be good for the young men of his day. Include in your discussion how Scouting was introduced in the United States, and the origins of Boy Scouting and Cub Scouting under Baden-Powell.",
       "resources": [
         {
           "title": "Baden Powell - Father of Scouting, Origins of Scouting (video)",
@@ -29,7 +29,7 @@
             {
               "req_id": "1",
               "path": "2.a.1",
-              "text": "Daniel Carter Beard Resource: Daniel Carter Beard - BSA Founder (video)",
+              "text": "Daniel Carter Beard",
               "resources": [
                 {
                   "title": "Daniel Carter Beard - BSA Founder (video)",
@@ -40,7 +40,7 @@
             {
               "req_id": "2",
               "path": "2.a.2",
-              "text": "William D. Boyce Resource: William D. Boyce - BSA Founder (video)",
+              "text": "William D. Boyce",
               "resources": [
                 {
                   "title": "William D. Boyce - BSA  Founder (video)",
@@ -51,7 +51,7 @@
             {
               "req_id": "3",
               "path": "2.a.3",
-              "text": "Waite Phillips Resource: Waite Phillips - BSA Benefactor and Donor of Philmont (video)",
+              "text": "Waite Phillips",
               "resources": [
                 {
                   "title": "Waite Phillips - BSA Benefactor and Donor of Philmont (video)",
@@ -62,7 +62,7 @@
             {
               "req_id": "4",
               "path": "2.a.4",
-              "text": "Ernest Thompson Seton Resource: Ernest Thompson Seton - BSA Founder (video)",
+              "text": "Ernest Thompson Seton",
               "resources": [
                 {
                   "title": "Ernest Thompson Seton - BSA Founder (video)",
@@ -73,7 +73,7 @@
             {
               "req_id": "5",
               "path": "2.a.5",
-              "text": "James E. West Resource: James E. West - BSA Founder (video)",
+              "text": "James E. West",
               "resources": [
                 {
                   "title": "James E. West - BSA Founder (video)",
@@ -84,7 +84,7 @@
             {
               "req_id": "6",
               "path": "2.a.6",
-              "text": "Green Bar Bill Hillcourt. Resource: Green Bar Bill Hillcourt Biography (video)",
+              "text": "Green Bar Bill Hillcourt.",
               "resources": [
                 {
                   "title": "Green Bar Bill Hillcourt Biography (video)",
@@ -102,7 +102,7 @@
             {
               "req_id": "1",
               "path": "2.b.1",
-              "text": "Brownsea Island Resource: Artifact of the Week - Brownsea Island (video)",
+              "text": "Brownsea Island",
               "resources": [
                 {
                   "title": "Artifact of the Week - Brownsea Island (video)",

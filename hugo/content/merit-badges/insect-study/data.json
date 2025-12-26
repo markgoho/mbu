@@ -72,7 +72,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Show how insects are different from millipedes and spiders. Resource: Insects vs Arachnids ( video)",
+          "text": "Show how insects are different from millipedes and spiders.",
           "resources": [
             {
               "title": "Insects vs Arachnids ( video)",
@@ -83,7 +83,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Point out and name the main parts of an insect. Resource: Basic Insect Anatomy: Head, Thorax, and Abdomen (video)",
+          "text": "Point out and name the main parts of an insect.",
           "resources": [
             {
               "title": "Basic Insect Anatomy: Head, Thorax, and Abdomen (video)",
@@ -94,7 +94,7 @@
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Describe the characteristics that distinguish the major orders of insects. Resource: Top 5 Insect Orders and How to Identify Them (video)",
+          "text": "Describe the characteristics that distinguish the major orders of insects.",
           "resources": [
             {
               "title": "Top 5 Insect Orders and How to Identify Them (video)",
@@ -209,8 +209,8 @@
               "url": "https://www.youtube.com/watch?v=6QwiYfqX1sg"
             },
             {
-              "title": "Why Are Insects Important? (website)",
-              "url": "https://www.youtube.com/watch?v=19iEWe-qH5o"
+              "title": "Safety Moments",
+              "url": "https://www.youtube.com/watch?v=1<a href="
             }
           ]
         }
@@ -247,7 +247,7 @@
             {
               "req_id": "1",
               "path": "5.b.1",
-              "text": "Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony. Resource: Inside the Ant Colony ( video)",
+              "text": "Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony.",
               "resources": [
                 {
                   "title": "Inside the Ant Colony ( video)",
@@ -258,7 +258,7 @@
             {
               "req_id": "2",
               "path": "5.b.2",
-              "text": "Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option 1 above.) Resource: Beekeeping 101 ( video)",
+              "text": "Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option 1 above.)",
               "resources": [
                 {
                   "title": "Beekeeping 101 ( video)",
@@ -281,7 +281,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Tell how insects fit in the food web of other insects, fish, birds, and mammals. Resource: Ants and Their Role in Food Webs ( video)",
+          "text": "Tell how insects fit in the food web of other insects, fish, birds, and mammals.",
           "resources": [
             {
               "title": "Ants and Their Role in Food Webs ( video)",
@@ -292,7 +292,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Explain the role insects serve as pollinators for plants. Resource: The Power of Pollinators ( video)",
+          "text": "Explain the role insects serve as pollinators for plants.",
           "resources": [
             {
               "title": "The Power of Pollinators ( video)",
@@ -357,7 +357,7 @@
         {
           "req_id": "a",
           "path": "8.a",
-          "text": "Tell the migration route of an insect (e.g., monarch butterfly). Discuss the challenges they face and how Scouts can contribute to their success. Resource: Monarch Migration (website)",
+          "text": "Tell the migration route of an insect (e.g., monarch butterfly). Discuss the challenges they face and how Scouts can contribute to their success.",
           "resources": [
             {
               "title": "Monarch Migration (website)",
@@ -368,7 +368,7 @@
         {
           "req_id": "b",
           "path": "8.b",
-          "text": "Find out about an insect that is a threatened or endangered species. Discuss the challenges they face and how Scouts can contribute to their success. Resource: Endangered Species Conservation (website)",
+          "text": "Find out about an insect that is a threatened or endangered species. Discuss the challenges they face and how Scouts can contribute to their success.",
           "resources": [
             {
               "title": "Endangered Species Conservation (website)",
@@ -404,7 +404,7 @@
         {
           "req_id": "b",
           "path": "9.b",
-          "text": "Identify how you might use the skills and knowledge in Insect Study to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this. Resource: Beekeeping 101 - Quick Guide for Beginners (video)",
+          "text": "Identify how you might use the skills and knowledge in Insect Study to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this.",
           "resources": [
             {
               "title": "Beekeeping 101 - Quick Guide for Beginners (video)",

@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Describe the meaning of environmental science in your own words. Explain how you think we can use science to understand, conserve, and improve our environment. Resource: What Is Environmental Science? (video)",
+      "text": "Describe the meaning of environmental science in your own words. Explain how you think we can use science to understand, conserve, and improve our environment.",
       "resources": [
         {
           "title": "What Is Environmental Science? (video)",
@@ -67,7 +67,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Air Pollution. Do ONE of the following and discuss with your counselor: Resource: Air Pollution (video)",
+      "text": "Air Pollution. Do ONE of the following and discuss with your counselor:",
       "resources": [
         {
           "title": "Air Pollution (video)",
@@ -78,7 +78,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Learn what Particulate Matter (PM) is, how PM gets into the air, what the harmful effects of PM are, and what is being done to reduce PM in the air. Then, perform an experiment to test for particulates that contribute to air pollution. Resource: Particulate Matter (video)",
+          "text": "Learn what Particulate Matter (PM) is, how PM gets into the air, what the harmful effects of PM are, and what is being done to reduce PM in the air. Then, perform an experiment to test for particulates that contribute to air pollution.",
           "resources": [
             {
               "title": "Particulate Matter (video)",
@@ -104,7 +104,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Learn about the Clean Air Act. Make notes on when it was passed, its environmental goals, what progress has been made and what remains to be done to achieve the law's goals. Describe the impact, benefits, and costs of the law as well as what is required to implement and enforce the law. Resource: Clean Air Act (video)",
+          "text": "Learn about the Clean Air Act. Make notes on when it was passed, its environmental goals, what progress has been made and what remains to be done to achieve the law's goals. Describe the impact, benefits, and costs of the law as well as what is required to implement and enforce the law.",
           "resources": [
             {
               "title": "Clean Air Act (video)",
@@ -121,7 +121,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Water Pollution. Do ONE of the following and discuss with your counselor: Resource: Hydrologic Cycle (video)",
+      "text": "Water Pollution. Do ONE of the following and discuss with your counselor:",
       "resources": [
         {
           "title": "Hydrologic Cycle (video)",
@@ -230,7 +230,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "Learn about a land pollution incident that led to a site being listed on Environmental Protection Agency's Superfund National Priority List. Identify what caused the incident, what the effects were on the environment, what remediation has been done, and the current condition of the site. Resource: Introduction to Superfund (video)",
+          "text": "Learn about a land pollution incident that led to a site being listed on Environmental Protection Agency's Superfund National Priority List. Identify what caused the incident, what the effects were on the environment, what remediation has been done, and the current condition of the site.",
           "resources": [
             {
               "title": "Introduction to Superfund (video)",
@@ -362,7 +362,7 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Identify five items in your household that will become hazardous waste. Explain how they should be properly stored, what special care is needed for disposal, and proper disposal options available in your area. Resource: Household Hazardous Waste Disposal (video)",
+          "text": "Identify five items in your household that will become hazardous waste. Explain how they should be properly stored, what special care is needed for disposal, and proper disposal options available in your area.",
           "resources": [
             {
               "title": "Household Hazardous Waste Disposal  (video)",

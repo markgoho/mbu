@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Discuss with your counselor the importance of textiles. Explain the terms fiber, fabric, and textile. Give examples of textiles you use every day. Resource: Textiles: What Are They? Where Do They Come From? (video)",
+      "text": "Discuss with your counselor the importance of textiles. Explain the terms fiber, fabric, and textile. Give examples of textiles you use every day.",
       "resources": [
         {
           "title": "Textiles: What Are They? Where Do They Come From? (video)",
@@ -29,7 +29,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Give the origin, major characteristics, and general content of each type of fiber obtained for 2(a). Explain the difference between a cellulosic manufactured fiber and a synthetic manufactured fiber. Resource: Natural vs Synthetic Fibers (Which to Choose and Why) (video)",
+          "text": "Give the origin, major characteristics, and general content of each type of fiber obtained for 2(a). Explain the difference between a cellulosic manufactured fiber and a synthetic manufactured fiber.",
           "resources": [
             {
               "title": "Natural vs Synthetic Fibers (Which to Choose and Why) (video)",
@@ -83,7 +83,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Weave a belt, headband, place mat or wall hanging. Use a simple loom that you have made yourself. Resource: How to Make a Cardboard Loom (website)",
+          "text": "Weave a belt, headband, place mat or wall hanging. Use a simple loom that you have made yourself.",
           "resources": [
             {
               "title": "How to Make a Cardboard Loom (website)",
@@ -94,7 +94,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "With a magnifying glass, examine a woven fabric, a nonwoven fabric, and a knitted fabric. Sketch what you see. Explain how the three constructions are different. Resource: Woven vs. Knit vs. Non-Woven Fabrics | Textile Talk w/ A Thrifty Notion (video)",
+          "text": "With a magnifying glass, examine a woven fabric, a nonwoven fabric, and a knitted fabric. Sketch what you see. Explain how the three constructions are different.",
           "resources": [
             {
               "title": "Woven vs. Knit vs. Non-Woven Fabrics | Textile Talk w/ A Thrifty Notion (video)",
@@ -105,7 +105,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "Make a piece of felt. Resource: Wet Felting Tutorial for Beginners (video)",
+          "text": "Make a piece of felt.",
           "resources": [
             {
               "title": "Wet Felting Tutorial for Beginners (video)",
@@ -150,7 +150,7 @@
         {
           "req_id": "g",
           "path": "3.g",
-          "text": "Demonstrate how to identify fibers, using microscope identification or the breaking test. Resource: Identification of Basic Textile Fibers by Polarized Light Microscopy (video)",
+          "text": "Demonstrate how to identify fibers, using microscope identification or the breaking test.",
           "resources": [
             {
               "title": "Identification of Basic Textile Fibers by Polarized Light Microscopy (video)",
@@ -167,7 +167,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Explain the meaning of 10 of the following terms: warp, harness, heddle, shed, aramid, spandex, sliver, yarn, spindle, distaff, loom, cellulose, sericulture, extrusion, carbon fibers, spinneret, staple, worsted, nonwoven, greige goods. Resource: Loom and Weaving Terminology (video)",
+      "text": "Explain the meaning of 10 of the following terms: warp, harness, heddle, shed, aramid, spandex, sliver, yarn, spindle, distaff, loom, cellulose, sericulture, extrusion, carbon fibers, spinneret, staple, worsted, nonwoven, greige goods.",
       "resources": [
         {
           "title": "Loom and Weaving Terminology (video)",
@@ -178,7 +178,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "List the advantages and disadvantages of natural plant fibers, natural animal fibers, cellulosic manufactured fibers, and synthetic manufactured fibers. Identify and discuss at least four ecological concerns regarding the production and care of textiles. Resource: The Ultimate Fabric Guide - The Differences Between Natural vs Synthetic vs Semi-Synthetic Fibers (video)",
+      "text": "List the advantages and disadvantages of natural plant fibers, natural animal fibers, cellulosic manufactured fibers, and synthetic manufactured fibers. Identify and discuss at least four ecological concerns regarding the production and care of textiles.",
       "resources": [
         {
           "title": "The Ultimate Fabric Guide - The Differences Between Natural vs Synthetic vs Semi-Synthetic Fibers (video)",

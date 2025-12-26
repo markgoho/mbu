@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor what the words genealogy, ancestor, and descendant mean. Resource: What Is Genealogy? Terminology (video)",
+          "text": "Explain to your counselor what the words genealogy, ancestor, and descendant mean.",
           "resources": [
             {
               "title": "What Is Genealogy? Terminology (video)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain what a family tree is and what information would be kept there. Resource: The Family Tree (video)",
+          "text": "Explain what a family tree is and what information would be kept there.",
           "resources": [
             {
               "title": "The Family Tree (video)",
@@ -35,7 +35,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Explain what a family group record is and what information would be kept there. Resource: What Are Family Group Sheets and Pedigree Charts? (video)",
+          "text": "Explain what a family group record is and what information would be kept there.",
           "resources": [
             {
               "title": "What Are Family Group Sheets and Pedigree Charts? (video)",
@@ -56,7 +56,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Create a time line for yourself or for a relative. Then write a short biography based on that time line. Resource: All About Timelines (video)",
+          "text": "Create a time line for yourself or for a relative. Then write a short biography based on that time line.",
           "resources": [
             {
               "title": "All About Timelines (video)",
@@ -67,7 +67,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Keep a journal for six weeks. You must write in it at least once a week. Resource: How to Journal (video)",
+          "text": "Keep a journal for six weeks. You must write in it at least once a week.",
           "resources": [
             {
               "title": "How to Journal (video)",
@@ -84,7 +84,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "With your parent or guardian's help, choose a relative or a family acquaintance you can interview in person, by telephone, or by email or letter. Record the information you collect so you do not forget it. Resource: How to Master the Art of Interviewing With 5 Easy Journalist Techniques (video)",
+      "text": "With your parent or guardian's help, choose a relative or a family acquaintance you can interview in person, by telephone, or by email or letter. Record the information you collect so you do not forget it.",
       "resources": [
         {
           "title": "How to Master the Art of Interviewing With 5 Easy Journalist Techniques (video)",
@@ -100,7 +100,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Name three types of physical genealogical resources and where you can find them, and explain how these resources can help you chart your family tree. Resource: 8 Places to Look for an Ancestor's Birth Record (video)",
+          "text": "Name three types of physical genealogical resources and where you can find them, and explain how these resources can help you chart your family tree.",
           "resources": [
             {
               "title": "8 Places to Look for an Ancestor's Birth Record (video)",
@@ -111,7 +111,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Name three types of digital genealogical resources and where you can find them, and explain how these resources can help you chart your family tree. Resource: 7 Free Genealogy Websites (video)",
+          "text": "Name three types of digital genealogical resources and where you can find them, and explain how these resources can help you chart your family tree.",
           "resources": [
             {
               "title": "7 Free Genealogy Websites (video)",
@@ -132,7 +132,7 @@
         {
           "req_id": "e",
           "path": "4.e",
-          "text": "Tell a likely place to find these type of genealogical records: marriage record, census record, birth record, and burial information. Resource: Vital Records (video)",
+          "text": "Tell a likely place to find these type of genealogical records: marriage record, census record, birth record, and burial information.",
           "resources": [
             {
               "title": "Vital Records (video)",
@@ -153,7 +153,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "A genealogical or lineage society Resource: Why Join a Genealogical Society (video)",
+          "text": "A genealogical or lineage society",
           "resources": [
             {
               "title": "Why Join a Genealogical Society (video)",
@@ -164,7 +164,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "A professional genealogist (someone who gets paid for doing genealogical research) Resource: How to Hire a Professional Genealogist (video)",
+          "text": "A professional genealogist (someone who gets paid for doing genealogical research)",
           "resources": [
             {
               "title": "How to Hire a Professional Genealogist (video)",
@@ -175,7 +175,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "A surname organization, such as your family's organization Resource: Facebook Surname Groups (video)",
+          "text": "A surname organization, such as your family's organization",
           "resources": [
             {
               "title": "Facebook Surname Groups (video)",
@@ -186,7 +186,7 @@
         {
           "req_id": "d",
           "path": "5.d",
-          "text": "A genealogical educational facility or institution. Resource: Getting Started With the Genealogy Center (video)",
+          "text": "A genealogical educational facility or institution.",
           "resources": [
             {
               "title": "Getting Started With the Genealogy Center (video)",
@@ -197,7 +197,7 @@
         {
           "req_id": "e",
           "path": "5.e",
-          "text": "A genealogical record repository of any type (courthouse, genealogical library, state or national archive, state library, etc.). Resource: Where to Find Records for Family History Research (video)",
+          "text": "A genealogical record repository of any type (courthouse, genealogical library, state or national archive, state library, etc.).",
           "resources": [
             {
               "title": "Where to Find Records for Family History Research (video)",
@@ -214,7 +214,7 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "Begin your family tree by listing yourself and include at least two additional generations. You may complete this requirement by using the chart provided in the Genealogy merit badge pamphlet or the genealogy software program of your choice. Resource: How to Make a Family Tree (on Paper, Not Online To Avoid Putting Private Information Online) (video)",
+      "text": "Begin your family tree by listing yourself and include at least two additional generations. You may complete this requirement by using the chart provided in the Genealogy merit badge pamphlet or the genealogy software program of your choice.",
       "resources": [
         {
           "title": "How to Make a Family Tree (on Paper, Not Online To Avoid Putting Private Information Online) (video)",
@@ -225,7 +225,7 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Complete a family group record form, listing yourself and your brothers and sisters as the children. On another family group record form, show one of your parents and his or her brothers and sisters as the children. This requirement may be completed using the chart provided or the genealogy software program of your choice. Resource: How to Use Family Group Sheets (video)",
+      "text": "Complete a family group record form, listing yourself and your brothers and sisters as the children. On another family group record form, show one of your parents and his or her brothers and sisters as the children. This requirement may be completed using the chart provided or the genealogy software program of your choice.",
       "resources": [
         {
           "title": "How to Use Family Group Sheets (video)",
@@ -241,7 +241,7 @@
         {
           "req_id": "a",
           "path": "8.a",
-          "text": "Explain the effect computers and the internet are having on the world of genealogy. Resource: How to Use Internet Archive for Genealogy (video)",
+          "text": "Explain the effect computers and the internet are having on the world of genealogy.",
           "resources": [
             {
               "title": "How to Use Internet Archive for Genealogy (video)",

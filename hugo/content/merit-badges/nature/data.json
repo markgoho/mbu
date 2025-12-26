@@ -23,7 +23,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Name three ways in which animals are important to plants. Name an animal that is protected in your state or region, and explain why it is at risk. Resource: How Do Animals Help Plants? (4 Symbiotic Interactions) (website)",
+      "text": "Name three ways in which animals are important to plants. Name an animal that is protected in your state or region, and explain why it is at risk.",
       "resources": [
         {
           "title": "How Do Animals Help Plants? (4 Symbiotic Interactions) (website)",
@@ -189,7 +189,7 @@
             {
               "req_id": "1",
               "path": "4.d.1",
-              "text": "Collect and identify either in the field or through photographs 10 species of insects or spiders. Photos may be taken with your own equipment or gathered from other sources. Resource: How to Start a Bug Collection (video)",
+              "text": "Collect and identify either in the field or through photographs 10 species of insects or spiders. Photos may be taken with your own equipment or gathered from other sources.",
               "resources": [
                 {
                   "title": "How to Start a Bug Collection (video)",
@@ -226,7 +226,7 @@
             {
               "req_id": "1",
               "path": "4.e.1",
-              "text": "Identify two species of fish native to your area. Resource: Game Fish Identification Reference Guides (website)",
+              "text": "Identify two species of fish native to your area.",
               "resources": [
                 {
                   "title": "Game Fish Identification Reference Guides (website)",
@@ -237,7 +237,7 @@
             {
               "req_id": "2",
               "path": "4.e.2",
-              "text": "Collect four kinds of animal food eaten by fish in the wild. Resource: What Do Fish Eat? (video)",
+              "text": "Collect four kinds of animal food eaten by fish in the wild.",
               "resources": [
                 {
                   "title": "What Do Fish Eat? (video)",
@@ -292,7 +292,7 @@
             {
               "req_id": "1",
               "path": "4.g.1",
-              "text": "In the field, identify 15 species of wild plants. Resource: How to Identify Wild Plants - A Guide To Botanical Terms (video)",
+              "text": "In the field, identify 15 species of wild plants.",
               "resources": [
                 {
                   "title": "How to Identify Wild Plants - A Guide To Botanical Terms (video)",
@@ -347,7 +347,7 @@
             {
               "req_id": "1",
               "path": "4.h.1",
-              "text": "Collect and identify three different types of soil that represent soils high in sand, clay and humus. Resource: Layers of Soil | Soil Profile Formation (video)",
+              "text": "Collect and identify three different types of soil that represent soils high in sand, clay and humus.",
               "resources": [
                 {
                   "title": "Layers of Soil | Soil Profile Formation (video)",
@@ -420,7 +420,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Visit a natural area (forest, grassland, meadow, water feature) and explain what stage of succession (both plant and animal) the area is in. Talk about what community/succession stages may have been there before and what community/succession stages may replace what you see now. Discuss what disturbances or changes have taken place in the past to create this landscape and what changes may occur in the future to change the landscape further. Resource: Ecological Succession-Primary and Secondary (video)",
+          "text": "Visit a natural area (forest, grassland, meadow, water feature) and explain what stage of succession (both plant and animal) the area is in. Talk about what community/succession stages may have been there before and what community/succession stages may replace what you see now. Discuss what disturbances or changes have taken place in the past to create this landscape and what changes may occur in the future to change the landscape further.",
           "resources": [
             {
               "title": "Ecological Succession-Primary and Secondary (video)",

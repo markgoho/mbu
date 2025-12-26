@@ -31,7 +31,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Explain what orienteering is. Resource: Start Orienteering || A Newcomer's Guide (video)",
+      "text": "Explain what orienteering is.",
       "resources": [
         {
           "title": "Start Orienteering || A Newcomer's Guide (video)",
@@ -47,7 +47,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Explain how a compass works. Describe the features of an orienteering compass. Resource: Basic Orienteering (video)",
+          "text": "Explain how a compass works. Describe the features of an orienteering compass.",
           "resources": [
             {
               "title": "Basic Orienteering (video)",
@@ -58,7 +58,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "In the field, show how to take a compass bearing and follow it. Resource: How to Use a Compass (video)",
+          "text": "In the field, show how to take a compass bearing and follow it.",
           "resources": [
             {
               "title": "How to Use a Compass (video)",
@@ -74,7 +74,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Do the following: Resource: Topographic Maps (video)",
+      "text": "Do the following:",
       "resources": [
         {
           "title": "Topographic Maps (video)",
@@ -95,7 +95,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Explain the meaning of declination. Tell why you must consider declination when using map and compass together. Resource: Magnetic Declination (video)",
+          "text": "Explain the meaning of declination. Tell why you must consider declination when using map and compass together.",
           "resources": [
             {
               "title": "Magnetic Declination (video)",
@@ -126,7 +126,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Set up a 100-meter pace course. Determine your walking and running pace for 100 meters. Tell why it is important to pace-count. Resource: Establishing a Pace Count (video)",
+      "text": "Set up a 100-meter pace course. Determine your walking and running pace for 100 meters. Tell why it is important to pace-count.",
       "resources": [
         {
           "title": "Establishing a Pace Count (video)",
@@ -142,7 +142,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Identify 20 international control description symbols. Tell the meaning of each symbol. Resource: International Orienteering Symbols (PDF)",
+          "text": "Identify 20 international control description symbols. Tell the meaning of each symbol.",
           "resources": [
             {
               "title": "International Orienteering Symbols (PDF)",
@@ -153,7 +153,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Show a control description sheet and explain the information provided. Resource: Key Terms (website)",
+          "text": "Show a control description sheet and explain the information provided.",
           "resources": [
             {
               "title": "Key Terms (website)",
@@ -164,7 +164,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "Explain the following terms and tell when you would use them: attack point, collecting feature, catching feature, aiming off, contouring, reading ahead, handrail, relocation, and rough versus fine orienteering. Resource: Setting Up an Orienteering Course (website)",
+          "text": "Explain the following terms and tell when you would use them: attack point, collecting feature, catching feature, aiming off, contouring, reading ahead, handrail, relocation, and rough versus fine orienteering.",
           "resources": [
             {
               "title": "Setting Up an Orienteering Course (website)",
@@ -221,7 +221,7 @@
     {
       "req_id": "9",
       "path": "9",
-      "text": "Act as an official during an orienteering event. This may be during the running of the course you set up for requirement 8. Resource: How to Setup a Compass Course (video)",
+      "text": "Act as an official during an orienteering event. This may be during the running of the course you set up for requirement 8.",
       "resources": [
         {
           "title": "How to Setup a Compass Course (video)",

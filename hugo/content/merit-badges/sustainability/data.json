@@ -6,25 +6,6 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Sustainability.pdf",
   "requirements": [
     {
-      "req_id": "9",
-      "path": "9",
-      "text": "Learn about career opportunities in the sustainability field. Pick one and find out the education, training, and experience required. Discuss what you have learned with your counselor and explain why this career might interest you.",
-      "resources": [
-        {
-          "title": "Career Paths in Sustainability (video)",
-          "url": "https://www.youtube.com/watch?v=u1uQk7UVuvA"
-        },
-        {
-          "title": "Green Jobs- Building for the Future (video)",
-          "url": "https://www.youtube.com/watch?v=EDA_oLZKITo"
-        },
-        {
-          "title": "Sustainability Careers (video)",
-          "url": "https://www.youtube.com/watch?v=mdVG6glfYi8"
-        }
-      ]
-    },
-    {
       "req_id": "1",
       "path": "1",
       "text": "Describe the meaning of sustainability in your own words. Explain the importance of sustainability to society and how you can contribute to fulfilling the needs of current generations without compromising the needs of future generations.",
@@ -57,7 +38,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Evaluate your household water usage. If available, review water bills from the past year and evaluate the seasonal changes in water use. Identify three ways to help reduce water consumption. Resource: How We Use Water (video)",
+          "text": "Evaluate your household water usage. If available, review water bills from the past year and evaluate the seasonal changes in water use. Identify three ways to help reduce water consumption.",
           "resources": [
             {
               "title": "How We Use Water (video)",
@@ -223,7 +204,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Identify five sustainability factors in housing and rate your own home's sustainability against these factors. Resource:Environmental Footprint Calculator (website)",
+          "text": "Identify five sustainability factors in housing and rate your own home's sustainability against these factors.",
           "resources": [
             {
               "title": "Environmental Footprint Calculator (website)",
@@ -240,7 +221,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Energy. Do ONE of the following and discuss with your counselor: Resource:Energy Resources (video)",
+      "text": "Energy. Do ONE of the following and discuss with your counselor:",
       "resources": [
         {
           "title": "Energy Resources (video)",
@@ -266,7 +247,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "List eight ways your family consumes energy, such as gas appliances, electricity, heating systems or cooling systems, and transportation. For one home- and one transportation-related energy use, list three ways to help reduce consumption, reduce your carbon footprint, and be a better steward of this resource. Resource: Your Carbon Footprint (video)",
+          "text": "List eight ways your family consumes energy, such as gas appliances, electricity, heating systems or cooling systems, and transportation. For one home- and one transportation-related energy use, list three ways to help reduce consumption, reduce your carbon footprint, and be a better steward of this resource.",
           "resources": [
             {
               "title": "Your Carbon Footprint (video)",
@@ -277,7 +258,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "List five ways you and your family could reduce energy consumption in your home, such as adjusting your thermostat, window shades, opening windows, reducing hot-water temperature, and minimizing water consumption. Identify the benefits and risks of each idea and implement if possible. Resource: Save Energy (video)",
+          "text": "List five ways you and your family could reduce energy consumption in your home, such as adjusting your thermostat, window shades, opening windows, reducing hot-water temperature, and minimizing water consumption. Identify the benefits and risks of each idea and implement if possible.",
           "resources": [
             {
               "title": "Save Energy (video)",
@@ -520,6 +501,25 @@
       "subrequirement_mode": {
         "type": "all"
       }
+    },
+    {
+      "req_id": "9",
+      "path": "9",
+      "text": "Learn about career opportunities in the sustainability field. Pick one and find out the education, training, and experience required. Discuss what you have learned with your counselor and explain why this career might interest you.",
+      "resources": [
+        {
+          "title": "Career Paths in Sustainability (video)",
+          "url": "https://www.youtube.com/watch?v=u1uQk7UVuvA"
+        },
+        {
+          "title": "Green Jobs- Building for the Future (video)",
+          "url": "https://www.youtube.com/watch?v=EDA_oLZKITo"
+        },
+        {
+          "title": "Sustainability Careers (video)",
+          "url": "https://www.youtube.com/watch?v=mdVG6glfYi8"
+        }
+      ]
     }
   ]
 }

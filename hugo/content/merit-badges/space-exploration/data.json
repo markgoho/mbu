@@ -6,89 +6,6 @@
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Space%20Exploration.pdf",
   "requirements": [
     {
-      "req_id": "7",
-      "path": "7",
-      "text": "Design an inhabited base located within our solar system, such as Titan, asteroids, or other locations that humans might want to explore in person. Make drawings or a model of your base. In your design, consider and plan for the following: Resource: How NASA Will Build a City on the Moon (video)",
-      "resources": [
-        {
-          "title": "How NASA Will Build a City on the Moon (video)",
-          "url": "https://youtu.be/ATgwz_hS3Qg"
-        }
-      ],
-      "subrequirements": [
-        {
-          "req_id": "a",
-          "path": "7.a",
-          "text": "Source of energy Resource: You Can't Take It All With You (PDF)",
-          "resources": [
-            {
-              "title": "You Can't Take It All With You (PDF)",
-              "url": "https://www.nasa.gov/wp-content/uploads/2023/05/you-cant-take-it-all-with-you-grades-6-12-students-tagged.pdf"
-            }
-          ]
-        },
-        {
-          "req_id": "b",
-          "path": "7.b",
-          "text": "How it will be constructed Resource: How NASA Plans to Build the First Moon Base (video)",
-          "resources": [
-            {
-              "title": "How NASA Plans to Build the First Moon Base (video)",
-              "url": "https://youtu.be/ajP0AlYxhug?si=lKaqYRoM8V4LiXSg"
-            }
-          ]
-        },
-        {
-          "req_id": "c",
-          "path": "7.c",
-          "text": "Life-support system Resource: Robots Building a Mars Base (video)",
-          "resources": [
-            {
-              "title": "Robots Building a Mars Base (video)",
-              "url": "https://youtu.be/2tr6rJrv8hs?si=dm1LYgNqLCH7smpr"
-            }
-          ]
-        },
-        {
-          "req_id": "d",
-          "path": "7.d",
-          "text": "Purpose and function. Resource: How Robots Will Build on Mars (video)",
-          "resources": [
-            {
-              "title": "How Robots Will Build on Mars (video)",
-              "url": "https://youtu.be/ZbOg_cC1_Eo"
-            }
-          ]
-        }
-      ],
-      "subrequirement_mode": {
-        "type": "all"
-      }
-    },
-    {
-      "req_id": "8",
-      "path": "8",
-      "text": "Discuss with your counselor two possible careers in space exploration that interest you. Find out the qualifications, education, and preparation required and discuss the major responsibilities of those positions.",
-      "resources": [
-        {
-          "title": "Astronaut Requirements (website)",
-          "url": "https://www.nasa.gov/humans-in-space/astronauts/astronaut-requirements/"
-        },
-        {
-          "title": "So You Want to Be an Aerospace Engineer (video)",
-          "url": "https://www.youtube.com/watch?v=uTreDAUe7w4"
-        },
-        {
-          "title": "Should I become an Aerospace Engineer? (video)",
-          "url": "https://www.youtube.com/watch?app=desktop&v=2Y2fNtYnsFQ"
-        },
-        {
-          "title": "Becoming an Astrobiologist (website)",
-          "url": "https://astrobiology.nasa.gov/resources/graphic-histories/"
-        }
-      ]
-    },
-    {
       "req_id": "1",
       "path": "1",
       "text": "Tell the purpose of space exploration and include the following:",
@@ -139,7 +56,7 @@
         {
           "req_id": "d",
           "path": "1.d",
-          "text": "International relations and cooperation. Resource: What Role Does International Cooperation Play in Space Exploration? (video)",
+          "text": "International relations and cooperation.",
           "resources": [
             {
               "title": "What Role Does International Cooperation Play in Space Exploration? (video)",
@@ -235,7 +152,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Discuss and demonstrate each of the following: Resource: NASA \"Basics of Space Flight\" (website)",
+      "text": "Discuss and demonstrate each of the following:",
       "resources": [
         {
           "title": "NASA \"Basics of Space Flight\" (website)",
@@ -246,7 +163,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "The law of action-reaction Resource: Newton's Law of Motion (website)",
+          "text": "The law of action-reaction",
           "resources": [
             {
               "title": "Newton's Law of Motion (website)",
@@ -390,6 +307,89 @@
         "type": "select",
         "count": 1
       }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Design an inhabited base located within our solar system, such as Titan, asteroids, or other locations that humans might want to explore in person. Make drawings or a model of your base. In your design, consider and plan for the following:",
+      "resources": [
+        {
+          "title": "How NASA Will Build a City on the Moon (video)",
+          "url": "https://youtu.be/ATgwz_hS3Qg"
+        }
+      ],
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Source of energy",
+          "resources": [
+            {
+              "title": "You Can't Take It All With You (PDF)",
+              "url": "https://www.nasa.gov/wp-content/uploads/2023/05/you-cant-take-it-all-with-you-grades-6-12-students-tagged.pdf"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "How it will be constructed",
+          "resources": [
+            {
+              "title": "How NASA Plans to Build the First Moon Base (video)",
+              "url": "https://youtu.be/ajP0AlYxhug?si=lKaqYRoM8V4LiXSg"
+            }
+          ]
+        },
+        {
+          "req_id": "c",
+          "path": "7.c",
+          "text": "Life-support system",
+          "resources": [
+            {
+              "title": "Robots Building a Mars Base (video)",
+              "url": "https://youtu.be/2tr6rJrv8hs?si=dm1LYgNqLCH7smpr"
+            }
+          ]
+        },
+        {
+          "req_id": "d",
+          "path": "7.d",
+          "text": "Purpose and function.",
+          "resources": [
+            {
+              "title": "How Robots Will Build on Mars (video)",
+              "url": "https://youtu.be/ZbOg_cC1_Eo"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
+    },
+    {
+      "req_id": "8",
+      "path": "8",
+      "text": "Discuss with your counselor two possible careers in space exploration that interest you. Find out the qualifications, education, and preparation required and discuss the major responsibilities of those positions.",
+      "resources": [
+        {
+          "title": "Astronaut Requirements (website)",
+          "url": "https://www.nasa.gov/humans-in-space/astronauts/astronaut-requirements/"
+        },
+        {
+          "title": "So You Want to Be an Aerospace Engineer (video)",
+          "url": "https://www.youtube.com/watch?v=uTreDAUe7w4"
+        },
+        {
+          "title": "Should I become an Aerospace Engineer? (video)",
+          "url": "https://www.youtube.com/watch?app=desktop&v=2Y2fNtYnsFQ"
+        },
+        {
+          "title": "Becoming an Astrobiologist (website)",
+          "url": "https://astrobiology.nasa.gov/resources/graphic-histories/"
+        }
+      ]
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Select a manufactured item in your home (such as a toy or an appliance) and, under adult supervision and with the approval of your counselor, investigate how and why it works as it does. Find out what sort of engineering activities were needed to create it. Discuss with your counselor what you learned and how you got the information. Resource: How to Fix Small Appliances (video)",
+      "text": "Select a manufactured item in your home (such as a toy or an appliance) and, under adult supervision and with the approval of your counselor, investigate how and why it works as it does. Find out what sort of engineering activities were needed to create it. Discuss with your counselor what you learned and how you got the information.",
       "resources": [
         {
           "title": "How to Fix Small Appliances (video)",
@@ -84,7 +84,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Use the systems engineering approach to design an original piece of patrol equipment, a toy or a useful device for the home, office or garage. Resource: The Engineering Process (video)",
+      "text": "Use the systems engineering approach to design an original piece of patrol equipment, a toy or a useful device for the home, office or garage.",
       "resources": [
         {
           "title": "The Engineering Process (video)",
@@ -100,7 +100,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Transforming motion. Using common materials or a construction set, make a simple model that will demonstrate motion. Explain how the model uses basic mechanical elements like levers and inclined planes to demonstrate motion. Describe an example where this mechanism is used in a real product. Resource: Transforming Motion - Rube Goldberg Machines (video)",
+          "text": "Transforming motion. Using common materials or a construction set, make a simple model that will demonstrate motion. Explain how the model uses basic mechanical elements like levers and inclined planes to demonstrate motion. Describe an example where this mechanism is used in a real product.",
           "resources": [
             {
               "title": "Transforming Motion - Rube Goldberg Machines (video)",
@@ -126,7 +126,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "Understanding electronics. Using an electronic device such as a smartphone or tablet computer, find out how sound, video, text or images travel from one location to another. Explain how the device was designed for ease of use, function, and durability. Resource: How Does Your Mobile Phone Work? (video)",
+          "text": "Understanding electronics. Using an electronic device such as a smartphone or tablet computer, find out how sound, video, text or images travel from one location to another. Explain how the device was designed for ease of use, function, and durability.",
           "resources": [
             {
               "title": "How Does Your Mobile Phone Work? (video)",
@@ -137,7 +137,7 @@
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "Using materials. Do experiments to show the differences in strength and heat conductivity in wood, metal, and plastic. Discuss with your counselor what you have learned. Resource: Engineering Material Properties (video)",
+          "text": "Using materials. Do experiments to show the differences in strength and heat conductivity in wood, metal, and plastic. Discuss with your counselor what you have learned.",
           "resources": [
             {
               "title": "Engineering Material Properties (video)",
@@ -197,7 +197,7 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Explain what it means to be a registered Professional Engineer (P.E.). Name the types of engineering work for which registration is most important. Resource: How to Become an Engineer & Types of Engineering Careers (video)",
+      "text": "Explain what it means to be a registered Professional Engineer (P.E.). Name the types of engineering work for which registration is most important.",
       "resources": [
         {
           "title": "How to Become an Engineer & Types of Engineering Careers (video)",
@@ -227,7 +227,7 @@
     {
       "req_id": "9",
       "path": "9",
-      "text": "Find out about three career opportunities in engineering. Pick one and research the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you. Resource: How to Become an Engineer (video)",
+      "text": "Find out about three career opportunities in engineering. Pick one and research the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
       "resources": [
         {
           "title": "How to Become an Engineer (video)",

@@ -28,7 +28,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain the ALARA principle and the measures required by law to minimize these risks. Describe what safety requirements you will need to consider while performing the requirements in this merit badge. Resource: The ALARA Principle (website)",
+          "text": "Explain the ALARA principle and the measures required by law to minimize these risks. Describe what safety requirements you will need to consider while performing the requirements in this merit badge.",
           "resources": [
             {
               "title": "The ALARA Principle (website)",
@@ -161,7 +161,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "List three particle accelerators and describe several experiments that each accelerator performs, including basic science and practical applications. Resource: Particle Accelerators: What Are They, How Do They Work, and Why Are They Important to Us? (video)",
+          "text": "List three particle accelerators and describe several experiments that each accelerator performs, including basic science and practical applications.",
           "resources": [
             {
               "title": "Particle Accelerators: What Are They, How Do They Work, and Why Are They Important to Us? (video)",
@@ -178,7 +178,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Do TWO of the following; then discuss with your counselor: Resource: Detecting and Measuring Ionizing Radiation - A Short History (PDF)",
+      "text": "Do TWO of the following; then discuss with your counselor:",
       "resources": [
         {
           "title": "Detecting and Measuring Ionizing Radiation - A Short History (PDF)",
@@ -189,7 +189,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Build an electroscope. Show how it works. Place a radiation source inside and explain the effect it causes. Resource: DIY Electroscope (video)",
+          "text": "Build an electroscope. Show how it works. Place a radiation source inside and explain the effect it causes.",
           "resources": [
             {
               "title": "DIY Electroscope (video)",
@@ -283,7 +283,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "Visit a place where X-rays are used. Draw a floor plan of this room. Show where the unit, the unit operator, and the patient would be when the X-ray unit is operated. Explain the precautions taken and the importance of those precautions. Resource: X-Ray Room Tour || Ask the Rad Tech (video)",
+          "text": "Visit a place where X-rays are used. Draw a floor plan of this room. Show where the unit, the unit operator, and the patient would be when the X-ray unit is operated. Explain the precautions taken and the importance of those precautions.",
           "resources": [
             {
               "title": "X-Ray Room Tour || Ask the Rad Tech (video)",
@@ -300,7 +300,7 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "Do ONE of the following; then discuss with your counselor how nuclear energy is used to produce electricity: Resource: Nuclear Energy (website)",
+      "text": "Do ONE of the following; then discuss with your counselor how nuclear energy is used to produce electricity:",
       "resources": [
         {
           "title": "Nuclear Energy (website)",

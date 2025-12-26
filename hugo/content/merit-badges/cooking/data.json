@@ -47,7 +47,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Describe how meat, fish, chicken, eggs, dairy products, and fresh vegetables should be stored, transported, and properly prepared for cooking. Explain how to prevent cross-contamination. Resource: Basic Food Safety: Avoiding Cross Contamination (video)",
+          "text": "Describe how meat, fish, chicken, eggs, dairy products, and fresh vegetables should be stored, transported, and properly prepared for cooking. Explain how to prevent cross-contamination.",
           "resources": [
             {
               "title": "Basic Food Safety: Avoiding Cross Contamination (video)",
@@ -73,7 +73,7 @@
         {
           "req_id": "e",
           "path": "1.e",
-          "text": "Discuss with your counselor why reading food labels is important. Explain how to identify common allergens such as peanuts, tree nuts, milk, eggs, wheat, soy, and shellfish. Resource: 10 Rules for Reading a Food Label (video)",
+          "text": "Discuss with your counselor why reading food labels is important. Explain how to identify common allergens such as peanuts, tree nuts, milk, eggs, wheat, soy, and shellfish.",
           "resources": [
             {
               "title": "10 Rules for Reading a Food Label (video)",
@@ -94,7 +94,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Using the MyPlate food guide or the current USDA nutrition model, give five examples for EACH of the following food groups, the recommended number of daily servings, and the recommended serving size: (1) Fruits (2) Vegetables (3) Grains (4) Proteins (5) Dairy. Resource: MyPlate Food Groups (website)",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, give five examples for EACH of the following food groups, the recommended number of daily servings, and the recommended serving size: (1) Fruits (2) Vegetables (3) Grains (4) Proteins (5) Dairy.",
           "resources": [
             {
               "title": "MyPlate Food Groups (website)",
@@ -105,7 +105,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Explain why you should limit your intake of oils and sugars. Resource: Tips for Limiting Sugar in Your Diet (video)",
+          "text": "Explain why you should limit your intake of oils and sugars.",
           "resources": [
             {
               "title": "Tips for Limiting Sugar in Your Diet (video)",
@@ -116,7 +116,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Track your daily level of activity and your daily caloric need based on your activity for five days. Then, based on the MyPlate food guide, discuss with your counselor an appropriate meal plan for yourself for one day. Resource: MyPlate Food Plan (website)",
+          "text": "Track your daily level of activity and your daily caloric need based on your activity for five days. Then, based on the MyPlate food guide, discuss with your counselor an appropriate meal plan for yourself for one day.",
           "resources": [
             {
               "title": "MyPlate Food Plan (website)",
@@ -127,7 +127,7 @@
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Discuss your current eating habits with your counselor and what you can do to eat healthier, based on the MyPlate food guide. Resource: Healthy Eating Tip Sheets (website)",
+          "text": "Discuss your current eating habits with your counselor and what you can do to eat healthier, based on the MyPlate food guide.",
           "resources": [
             {
               "title": "Healthy Eating Tip Sheets (website)",
@@ -138,7 +138,7 @@
         {
           "req_id": "e",
           "path": "2.e",
-          "text": "Discuss the following food label terms: calorie, fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, dietary fiber, sugar, and protein. Explain how to calculate total carbohydrates and nutritional values for two servings, based on the serving size specified on the label. Resource: How to Read Food Labels (video)",
+          "text": "Discuss the following food label terms: calorie, fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, dietary fiber, sugar, and protein. Explain how to calculate total carbohydrates and nutritional values for two servings, based on the serving size specified on the label.",
           "resources": [
             {
               "title": "How to Read Food Labels (video)",
@@ -178,7 +178,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Discuss the benefits of using a camp stove on an outing vs. a charcoal or wood fire. Resource: Camp Stove vs Campfires (website)",
+          "text": "Discuss the benefits of using a camp stove on an outing vs. a charcoal or wood fire.",
           "resources": [
             {
               "title": "Camp Stove vs Campfires (website)",
@@ -189,7 +189,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Describe for your counselor how to manage your time when preparing a meal so components for each course are ready to serve at the correct time. Resource: Timing Your Meals (video)",
+          "text": "Describe for your counselor how to manage your time when preparing a meal so components for each course are ready to serve at the correct time.",
           "resources": [
             {
               "title": "Timing Your Meals (video)",
@@ -200,7 +200,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "Explain and give examples of how taste, texture, and smell impact what we eat. Resource: How Your Sense of Smell Helps You Savor Flavor (video)",
+          "text": "Explain and give examples of how taste, texture, and smell impact what we eat.",
           "resources": [
             {
               "title": "How Your Sense of Smell Helps You Savor Flavor (video)",
@@ -216,7 +216,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Cooking at Home. Do the following: Note: The meals for requirement 4 may be prepared on different days, and they need not be prepared consecutively. The requirement calls for Scouts to plan, prepare, and serve one breakfast, one lunch, and one dinner to at least one adult; those served need not be the same for all meals. Resource: The Five Tastes (video)",
+      "text": "Cooking at Home. Do the following: Note: The meals for requirement 4 may be prepared on different days, and they need not be prepared consecutively. The requirement calls for Scouts to plan, prepare, and serve one breakfast, one lunch, and one dinner to at least one adult; those served need not be the same for all meals.",
       "resources": [
         {
           "title": "The Five Tastes (video)",
@@ -227,7 +227,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan menus for three full days of meals (three breakfasts, three lunches, and three dinners) plus one dessert. Your menus should include enough to feed yourself and at least one adult, keeping in mind any special needs (such as food allergies) and how you keep your foods safe and free from cross-contamination. List the equipment and utensils needed to prepare and serve these meals. Resource: MyPlate Kitchen (website)",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan menus for three full days of meals (three breakfasts, three lunches, and three dinners) plus one dessert. Your menus should include enough to feed yourself and at least one adult, keeping in mind any special needs (such as food allergies) and how you keep your foods safe and free from cross-contamination. List the equipment and utensils needed to prepare and serve these meals.",
           "resources": [
             {
               "title": "MyPlate Kitchen (website)",
@@ -238,7 +238,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Find recipes for each meal. Create a shopping list for your meals showing the amount of food needed to prepare for the number of people you will serve. Determine the cost for each meal. Resource: MyPlate Kitchen (website)",
+          "text": "Find recipes for each meal. Create a shopping list for your meals showing the amount of food needed to prepare for the number of people you will serve. Determine the cost for each meal.",
           "resources": [
             {
               "title": "MyPlate Kitchen (website)",
@@ -249,7 +249,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Share and discuss your meal plan and shopping list with your counselor. Resource: MyPlate Kitchen (website)",
+          "text": "Share and discuss your meal plan and shopping list with your counselor.",
           "resources": [
             {
               "title": "MyPlate Kitchen (website)",
@@ -265,7 +265,7 @@
         {
           "req_id": "e",
           "path": "4.e",
-          "text": "Time your cooking to have each meal ready to serve at the proper time. Have an adult verify the preparation of the meal to your counselor. Resource: Timing Your Meals (video)",
+          "text": "Time your cooking to have each meal ready to serve at the proper time. Have an adult verify the preparation of the meal to your counselor.",
           "resources": [
             {
               "title": "Timing Your Meals (video)",
@@ -291,7 +291,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan a menu that includes four meals, one snack, and one dessert for your patrol (or a similar size group of up to eight youth, including you) on a camping trip. These four meals must include two breakfasts, one lunch, and one dinner. Additionally, you must plan one snack and one dessert. Your menus should include enough food for each person, keeping in mind any special needs (such as food allergies) and how you keep your foods safe and free from cross-contamination. List the equipment and utensils needed to prepare and serve these meals. Resource: MyPlate Tools (website)",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan a menu that includes four meals, one snack, and one dessert for your patrol (or a similar size group of up to eight youth, including you) on a camping trip. These four meals must include two breakfasts, one lunch, and one dinner. Additionally, you must plan one snack and one dessert. Your menus should include enough food for each person, keeping in mind any special needs (such as food allergies) and how you keep your foods safe and free from cross-contamination. List the equipment and utensils needed to prepare and serve these meals.",
           "resources": [
             {
               "title": "MyPlate Tools (website)",
@@ -302,7 +302,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Find or create recipes for the four meals, the snack, and the dessert you have planned. Adjust menu items in the recipes for the number to be served. Create a shopping list and budget to determine the per-person cost. Resource: MyPlate Tools (website)",
+          "text": "Find or create recipes for the four meals, the snack, and the dessert you have planned. Adjust menu items in the recipes for the number to be served. Create a shopping list and budget to determine the per-person cost.",
           "resources": [
             {
               "title": "MyPlate Tools (website)",
@@ -381,7 +381,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan a day of meals for trail hiking or backpacking that includes one breakfast, one lunch, one dinner, and one snack. These meals must consider weight, not require refrigeration and are to be consumed by three to five people (including you). List the equipment and utensils needed to prepare and serve these meals. Resource: MyPlate Kitchen (website)",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, plan a day of meals for trail hiking or backpacking that includes one breakfast, one lunch, one dinner, and one snack. These meals must consider weight, not require refrigeration and are to be consumed by three to five people (including you). List the equipment and utensils needed to prepare and serve these meals.",
           "resources": [
             {
               "title": "MyPlate Kitchen (website)",
@@ -397,7 +397,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "Share and discuss your menu and shopping list with your counselor. Your plan must include how to repackage foods for your hike or backpacking trip to eliminate as much bulk, weight, and garbage as possible. Resource: Repackaging Food for Backpacking (video)",
+          "text": "Share and discuss your menu and shopping list with your counselor. Your plan must include how to repackage foods for your hike or backpacking trip to eliminate as much bulk, weight, and garbage as possible.",
           "resources": [
             {
               "title": "Repackaging Food for Backpacking (video)",
@@ -408,7 +408,7 @@
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "While on a trail hike or backpacking trip, prepare and serve two meals and a snack from the menu planned for this requirement. At least one of those meals must be cooked over a fire, or an approved trail stove (with proper supervision). Resource: Lighting a Liquid Fuel Stove (video)",
+          "text": "While on a trail hike or backpacking trip, prepare and serve two meals and a snack from the menu planned for this requirement. At least one of those meals must be cooked over a fire, or an approved trail stove (with proper supervision).",
           "resources": [
             {
               "title": "Lighting a Liquid Fuel Stove (video)",
@@ -424,7 +424,7 @@
         {
           "req_id": "f",
           "path": "6.f",
-          "text": "Explain to your counselor how you should divide the food and cooking supplies among the patrol in order to share the load. Discuss how to properly clean the cooking area and store your food to protect it from animals. Resource: Cleaning Up & Washing Dishes (video)",
+          "text": "Explain to your counselor how you should divide the food and cooking supplies among the patrol in order to share the load. Discuss how to properly clean the cooking area and store your food to protect it from animals.",
           "resources": [
             {
               "title": "Cleaning Up & Washing Dishes  (video)",

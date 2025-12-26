@@ -27,7 +27,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "List several reasons why you are important to your family and discuss this with your parent or guardian and with your counselor. Resource: Families and Family Relationships (video)",
+      "text": "List several reasons why you are important to your family and discuss this with your parent or guardian and with your counselor.",
       "resources": [
         {
           "title": "Families and Family Relationships (video)",
@@ -72,7 +72,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Plan and carry out a project that involves the participation of your family. After completing the project, discuss the following with your counselor: Resource: Time Management (video)",
+      "text": "Plan and carry out a project that involves the participation of your family. After completing the project, discuss the following with your counselor:",
       "resources": [
         {
           "title": "Time Management (video)",
@@ -108,7 +108,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Discuss with your counselor how to plan and carry out a family meeting. Resource: Conflict Resolution (video)",
+          "text": "Discuss with your counselor how to plan and carry out a family meeting.",
           "resources": [
             {
               "title": "Conflict Resolution (video)",
@@ -119,7 +119,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Prepare a meeting agenda that includes the following topics, review it with your parent or guardian, and then carry out one or more family meetings: Resource: Family Meeting (video)",
+          "text": "Prepare a meeting agenda that includes the following topics, review it with your parent or guardian, and then carry out one or more family meetings:",
           "resources": [
             {
               "title": "Family Meeting (video)",
@@ -130,7 +130,7 @@
             {
               "req_id": "1",
               "path": "6.b.1",
-              "text": "How living the principles of the Scout Oath and Scout Law contributes to your family life Resource: Scout Oath and Law (website)",
+              "text": "How living the principles of the Scout Oath and Scout Law contributes to your family life",
               "resources": [
                 {
                   "title": "Scout Oath and Law (website)",
@@ -188,7 +188,7 @@
             {
               "req_id": "5",
               "path": "6.b.5",
-              "text": "A crisis situation within your family and whom you can turn to for support during these situations. Resource: Family Bonding (video)",
+              "text": "A crisis situation within your family and whom you can turn to for support during these situations.",
               "resources": [
                 {
                   "title": "Family Bonding (video)",
@@ -199,7 +199,7 @@
             {
               "req_id": "6",
               "path": "6.b.6",
-              "text": "The effect of technology on your family Resource: Evolving Technology: Will Family Life Ever Be the Same Again? (video)",
+              "text": "The effect of technology on your family",
               "resources": [
                 {
                   "title": "Evolving Technology: Will Family Life Ever Be the Same Again? (video)",
@@ -210,7 +210,7 @@
             {
               "req_id": "7",
               "path": "6.b.7",
-              "text": "Good etiquette and manners. Resource: Etiquette (video)",
+              "text": "Good etiquette and manners.",
               "resources": [
                 {
                   "title": "Etiquette (video)",
