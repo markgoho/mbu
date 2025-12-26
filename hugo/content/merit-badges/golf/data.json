@@ -24,7 +24,7 @@
             {
               "req_id": "option1",
               "path": "2.option-1-traditional-golf.option1",
-              "text": "A. Study the USGA \"Rules of Golf\" now in use.",
+              "text": "Study the USGA \"Rules of Golf\" now in use.",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -49,12 +49,12 @@
             {
               "req_id": "option2",
               "path": "2.option-1-traditional-golf.option2",
-              "text": "B. Tell about your understanding of the World Handicap System."
+              "text": "Tell about your understanding of the World Handicap System."
             },
             {
               "req_id": "option3",
               "path": "2.option-1-traditional-golf.option3",
-              "text": "C. Do the following:",
+              "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -79,7 +79,7 @@
             {
               "req_id": "option4",
               "path": "2.option-1-traditional-golf.option4",
-              "text": "D. Do the following:",
+              "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -99,7 +99,7 @@
             {
               "req_id": "option5",
               "path": "2.option-1-traditional-golf.option5",
-              "text": "E. Show the following:",
+              "text": "Show the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -149,7 +149,7 @@
             {
               "req_id": "option6",
               "path": "2.option-1-traditional-golf.option6",
-              "text": "F. Play a minimum of two nine-hole rounds or one 18-hole round of golf with another golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:",
+              "text": "Play a minimum of two nine-hole rounds or one 18-hole round of golf with another golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -174,7 +174,7 @@
             {
               "req_id": "option7",
               "path": "2.option-1-traditional-golf.option7",
-              "text": "G. Find out about three careers related to traditional golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
+              "text": "Find out about three careers related to traditional golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
             }
           ],
           "subrequirement_mode": {
@@ -190,7 +190,7 @@
             {
               "req_id": "option1",
               "path": "2.option-2-disc-golf.option1",
-              "text": "A. Study the \"PDGA Official Rules of Disc Golf\" now in use.",
+              "text": "Study the \"PDGA Official Rules of Disc Golf\" now in use.",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -210,12 +210,12 @@
             {
               "req_id": "option2",
               "path": "2.option-2-disc-golf.option2",
-              "text": "B. Tell about your understanding of the \"PDGA Disc Golfer's Code.\""
+              "text": "Tell about your understanding of the \"PDGA Disc Golfer's Code.\""
             },
             {
               "req_id": "option3",
               "path": "2.option-2-disc-golf.option3",
-              "text": "C. Do the following:",
+              "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -245,7 +245,7 @@
             {
               "req_id": "option4",
               "path": "2.option-2-disc-golf.option4",
-              "text": "D. Do the following:",
+              "text": "Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -265,7 +265,7 @@
             {
               "req_id": "option5",
               "path": "2.option-2-disc-golf.option5",
-              "text": "E. Show the following:",
+              "text": "Show the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -330,7 +330,7 @@
             {
               "req_id": "option6",
               "path": "2.option-2-disc-golf.option6",
-              "text": "F. Play a minimum of 18-holes of disc golf with another disc golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:",
+              "text": "Play a minimum of 18-holes of disc golf with another disc golfer about your age and with your counselor, or an adult approved by your counselor. Do the following:",
               "subrequirements": [
                 {
                   "req_id": "1",
@@ -355,7 +355,7 @@
             {
               "req_id": "option7",
               "path": "2.option-2-disc-golf.option7",
-              "text": "G. Find out about three careers related to disc golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
+              "text": "Find out about three careers related to disc golf. Pick one and identify the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this interests you."
             }
           ],
           "subrequirement_mode": {
