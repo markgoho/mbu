@@ -138,8 +138,9 @@ function slugifyOption(text: string): string | null {
     nameToSlugify = suffixOptionMatch[1];
   } else {
     // Pattern 2: "Option A—Recurve Bow or Longbow. Do the following:" -> extract "Recurve Bow or Longbow"
+    // Also handles: "Option 1—Traditional Golf" -> extract "Traditional Golf"
     const prefixOptionMatch = nameToSlugify.match(
-      /^option\s+[a-z][-—]\s*(.+?)[\.\?]/i,
+      /^option\s+[a-z0-9][-—]\s*(.+?)(?:[\.\?]|$)/i,
     );
     if (prefixOptionMatch && prefixOptionMatch[1]) {
       nameToSlugify = prefixOptionMatch[1];
@@ -310,7 +311,8 @@ function extractSubrequirements(
       const optionIsNamed = isNamedOption(childText);
       let optionId = optionIsNamed ? slugifyOption(childText) : null;
       if (!optionId) {
-        optionId = `option${subrequirementsMap.size + 1}`;
+        // Use letters (a, b, c, ...) instead of option1, option2, etc.
+        optionId = String.fromCharCode(97 + subrequirementsMap.size); // 97 = 'a'
       }
 
       const textKey = childText.substring(0, 50);
@@ -428,7 +430,8 @@ function parseStructureFromHtml(html: string): {
                 .replace(/^(\d+\.)\s*/, "") // Remove leading "1. ", "2. ", etc.
                 .replace(/\s+/g, " ");
               if (liText) {
-                const inlineReqId = `option${liIdx + 1}`;
+                // Use letters (a, b, c, ...) instead of option1, option2, etc.
+                const inlineReqId = String.fromCharCode(97 + liIdx); // 97 = 'a'
                 subrequirements.push({
                   req_id: inlineReqId,
                   path: `${reqId}.${inlineReqId}`,
