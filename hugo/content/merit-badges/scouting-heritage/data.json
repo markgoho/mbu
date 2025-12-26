@@ -43,7 +43,7 @@
               "text": "William D. Boyce",
               "resources": [
                 {
-                  "title": "William D. Boyce - BSA  Founder (video)",
+                  "title": "William D. Boyce - BSA Founder (video)",
                   "url": "https://www.youtube.com/watch?v=Ulhu9fefMo4&list=PLeqxtqwBBzS-Z290oRp20bqnDqXZkSb3j&index=3"
                 }
               ]
@@ -92,7 +92,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
         },
         {
           "req_id": "b",
@@ -155,7 +159,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 2
+          }
         }
       ],
       "subrequirement_mode": {
@@ -176,7 +184,7 @@
           "url": "https://youtu.be/p8DUnLSK3Zo?si=xIdh_FcI2SZ8JQ4a"
         },
         {
-          "title": "Artifact of the Week - Sea  Scouts (video)",
+          "title": "Artifact of the Week - Sea Scouts (video)",
           "url": "https://youtu.be/FxKOogN-oiU?si=dqO2hetBuV0FoTXg"
         },
         {
