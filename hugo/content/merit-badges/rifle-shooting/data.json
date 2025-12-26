@@ -55,7 +55,10 @@
               "path": "1.g.2",
               "text": "List the kinds of wildlife that can be legally hunted in your state."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "h",
@@ -83,203 +86,212 @@
       "text": "Working under the supervision of a certified National Rifle Association (NRA) Rifle instructor and a certified range safety officer, at a nationally authorized camp property or at a commercial firearm range (as defined in the Scouting America National Range and Target Activities Manual), do ONE of the following options:",
       "subrequirements": [
         {
-          "req_id": "a-option-a-rifle-shooting-modern-cartridge-type-do-the-following",
-          "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following",
-          "text": "A. Option A—Rifle Shooting (Modern Cartridge Type). Do the following:",
+          "req_id": "a",
+          "path": "2.a",
+          "text": "Option A—Rifle Shooting (Modern Cartridge Type). Do the following:",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.a",
+              "path": "2.a.a",
               "text": "Identify the three main parts of a rifle, and tell how they function."
             },
             {
               "req_id": "b",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.b",
+              "path": "2.a.b",
               "text": "Identify and demonstrate the rules for safely storing and handling a rifle."
             },
             {
               "req_id": "c",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.c",
+              "path": "2.a.c",
               "text": "Identify the two types of cartridges, their parts, and how they function."
             },
             {
               "req_id": "d",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.d",
+              "path": "2.a.d",
               "text": "Explain to your counselor what a misfire, hangfire, and squib fire are, and explain the procedures to follow in response to each."
             },
             {
               "req_id": "e",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.e",
+              "path": "2.a.e",
               "text": "Explain and demonstrate the five fundamentals of shooting a rifle: aiming, breath control, hold control, trigger control, and follow-through."
             },
             {
               "req_id": "f",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.f",
+              "path": "2.a.f",
               "text": "Demonstrate the knowledge, skills, and attitude necessary to safely shoot a rifle on a range, including understanding and following range procedures and commands."
             },
             {
               "req_id": "g",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.g",
+              "path": "2.a.g",
               "text": "Explain the basic safety rules for cleaning a rifle, and identify the materials needed."
             },
             {
               "req_id": "h",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.h",
+              "path": "2.a.h",
               "text": "Demonstrate how to clean a rifle properly and safely."
             },
             {
               "req_id": "i",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.i",
+              "path": "2.a.i",
               "text": "Discuss what points you would consider in selecting a rifle."
             },
             {
               "req_id": "j",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.j",
+              "path": "2.a.j",
               "text": "Using a bolt-action .22 caliber rimfire rifle, and shooting from a benchrest or supported prone position at 50 feet, fire five groups (three shots per group) that can be touched by a quarter. Using these targets, explain how to adjust sights to zero a rifle."
             },
             {
               "req_id": "k",
-              "path": "2.a-option-a-rifle-shooting-modern-cartridge-type-do-the-following.k",
+              "path": "2.a.k",
               "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: A-32 targets: 9; A-17 or TQ-1 targets: 7; A-36 targets: 5."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
-          "req_id": "b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following",
-          "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following",
-          "text": "B. Option B—Air Rifle Shooting (BB or Pellet). Do the following:",
+          "req_id": "b",
+          "path": "2.b",
+          "text": "Option B—Air Rifle Shooting (BB or Pellet). Do the following:",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.a",
+              "path": "2.b.a",
               "text": "Identify the three main parts of an air rifle, and explain how they function."
             },
             {
               "req_id": "b",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.b",
+              "path": "2.b.b",
               "text": "Identify and demonstrate the rules for safely storing and handling an air rifle."
             },
             {
               "req_id": "c",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.c",
+              "path": "2.b.c",
               "text": "Identify the two most common types of air rifle ammunition."
             },
             {
               "req_id": "d",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.d",
+              "path": "2.b.d",
               "text": "Explain and demonstrate the five fundamentals of shooting an air rifle: aiming, breath control, hold control, trigger control, and follow-through."
             },
             {
               "req_id": "e",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.e",
+              "path": "2.b.e",
               "text": "Demonstrate the knowledge, skills, and attitude necessary to safely shoot on a range, including understanding and following range procedures and commands."
             },
             {
               "req_id": "f",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.f",
+              "path": "2.b.f",
               "text": "Explain the basic safety rules for cleaning an air rifle, and identify the materials needed."
             },
             {
               "req_id": "g",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.g",
+              "path": "2.b.g",
               "text": "Demonstrate how to clean an air rifle properly and safely."
             },
             {
               "req_id": "h",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.h",
+              "path": "2.b.h",
               "text": "Discuss what points you would consider in selecting an air rifle."
             },
             {
               "req_id": "i",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.i",
+              "path": "2.b.i",
               "text": "Using a BB gun or pellet rifle and shooting from a benchrest or supported prone position at 15 feet for BB guns or 33 feet for pellet rifles, fire five groups (three shots per group) that can be touched by a quarter."
             },
             {
               "req_id": "j",
-              "path": "2.b-option-b-air-rifle-shooting-bb-or-pellet-do-the-following.j",
+              "path": "2.b.j",
               "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed air rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: BB rifle at 15 feet (or 5 meters) using TQ-5 targets: 8; Pellet rifle at 25 feet using TQ-5 targets: 8; Pellet rifle at 33 feet (or 10 meters) using AR-1 targets: 6."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
-          "req_id": "c-option-c-muzzleloading-rifle-shooting-do-the-following",
-          "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following",
-          "text": "C. Option C—Muzzleloading Rifle Shooting. Do the following:",
+          "req_id": "c",
+          "path": "2.c",
+          "text": "Option C—Muzzleloading Rifle Shooting. Do the following:",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.a",
+              "path": "2.c.a",
               "text": "Discuss with your counselor a brief history of the development of muzzleloading rifles."
             },
             {
               "req_id": "b",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.b",
+              "path": "2.c.b",
               "text": "Identify principal parts of muzzleloading rifles and discuss how they function."
             },
             {
               "req_id": "c",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.c",
+              "path": "2.c.c",
               "text": "Identify and demonstrate the rules for safely storing and handling a muzzleloading rifle."
             },
             {
               "req_id": "d",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.d",
+              "path": "2.c.d",
               "text": "Identify the various grades of black powder and explain their proper and safe use."
             },
             {
               "req_id": "e",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.e",
+              "path": "2.c.e",
               "text": "Discuss proper safety procedures pertaining to black powder storage."
             },
             {
               "req_id": "f",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.f",
+              "path": "2.c.f",
               "text": "Discuss proper components of a load."
             },
             {
               "req_id": "g",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.g",
+              "path": "2.c.g",
               "text": "Identify proper procedures and accessories used for safely loading a muzzleloading rifle."
             },
             {
               "req_id": "h",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.h",
+              "path": "2.c.h",
               "text": "Identify the causes of a muzzleloading rifle's failure to fire, and explain what a misfire, hangfire, and squib fire are. Explain and demonstrate proper preventive measures, and the procedures to follow in response to each."
             },
             {
               "req_id": "i",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.i",
+              "path": "2.c.i",
               "text": "Demonstrate the knowledge, skills, and attitude necessary to safely shoot a muzzleloading rifle on a range, including understanding and following range procedures and commands."
             },
             {
               "req_id": "j",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.j",
+              "path": "2.c.j",
               "text": "Explain the basic safety rules for cleaning a muzzleloading rifle, and identify the materials needed."
             },
             {
               "req_id": "k",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.k",
+              "path": "2.c.k",
               "text": "Demonstrate how to clean a muzzleloading rifle properly and safely."
             },
             {
               "req_id": "l",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.l",
+              "path": "2.c.l",
               "text": "Discuss what points you would consider in selecting a muzzleloading rifle."
             },
             {
               "req_id": "m",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.m",
+              "path": "2.c.m",
               "text": "Using a muzzleloading rifle of .45 or .50 caliber and shooting from a benchrest or supported prone position, fire three groups (three shots per group) at 50 feet that can be covered by the base of a standard-size soft drink can."
             },
             {
               "req_id": "n",
-              "path": "2.c-option-c-muzzleloading-rifle-shooting-do-the-following.n",
+              "path": "2.c.n",
               "text": "Adjust the sights to center the group on the target and fire three groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed muzzleloading rifle—you may explain (rather than doing) how to adjust the sights, and then fire three groups (five shots per group) in which all shots can be covered by the base of a standard-size soft drink can. According to the target used, each shot in the group must meet the following minimum score: at 25 yards using NRA A-23 or NMLRA 50-yard targets: 7; at 50 yards using NRA A-25 or NMLRA 100-yard targets: 7."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
