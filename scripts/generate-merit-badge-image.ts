@@ -145,14 +145,16 @@ COMPOSITION REQUIREMENTS:
 - INDOOR/OUTDOOR: If the background describes an outdoor location, the table MUST BE PHYSICALLY OUTSIDE at that location - NO windows, NO window frames, NO indoor walls visible. The table is literally sitting outdoors.
 - LIGHTING: Warm, natural lighting with soft shadows, slight vintage tone
 - CAMERA ANGLE: Slightly elevated angle looking down at the desk surface
-- TABLE ORIENTATION: The table edge should be nearly parallel to the bottom of the frame - maximum 15 degrees of rotation. Do NOT angle the table steeply diagonal across the frame.
+- TABLE ORIENTATION: CRITICAL - The front edge of the table MUST be nearly horizontal/parallel to the bottom of the image frame. The table should face the camera straight-on, NOT rotated diagonally. Think of it like sitting at a table looking straight at it.
 - STYLE: High-quality photography, realistic textures, cozy study atmosphere
 
 THEME: ${visuals.theme}
 
 Match the reference image's style: appropriate table/desk surface for the activity, centerpiece focal point, related objects scattered naturally. The scene can be indoors or outdoors - whichever fits the badge best.
 
-IMPORTANT: Do NOT include any Scout uniforms, merit badges, badge sashes, neckerchiefs, or BSA/Scouting logos. These are protected trademarks. Show only general hobby and skill items.`;
+IMPORTANT:
+- Do NOT include any people or human figures in the image - only objects on the table
+- Do NOT include any Scout uniforms, merit badges, badge sashes, neckerchiefs, or BSA/Scouting logos. These are protected trademarks. Show only general hobby and skill items.`;
 }
 
 /**
