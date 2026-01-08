@@ -4,6 +4,11 @@
   {{ $data := $badge.Resources.GetMatch "data.json" }}
   {{ $json := $data | unmarshal }}
   {{ $reqCount := len $json.requirements }}
+  {{/* Get badge image for Pagefind search results */}}
+  {{ $badgeImage := $badge.Resources.GetMatch "*-merit-badge.avif" }}
+  {{ if not $badgeImage }}
+    {{ $badgeImage = $badge.Resources.GetMatch "*-merit-badge-card.avif" }}
+  {{ end }}
 
 
   <article class="merit-badge">
@@ -39,13 +44,22 @@
       </div>
     {{ end }}
 
-    <div class="requirements">
+    <div class="requirements" data-pagefind-body>
+      {{/* Hidden image for Pagefind search results */}}
+      {{ with $badgeImage }}
+        <img
+          src="{{ .RelPermalink }}"
+          alt=""
+          data-pagefind-meta="image[src]"
+          hidden
+        />
+      {{ end }}
       <h2>Requirements</h2>
 
       <ol class="requirements-list">
         {{ range $json.requirements }}
           {{/* Use recursive partial for infinite nesting */}}
-          {{ partial "requirement.html" . }}
+          {{ partial "requirement.html" (dict "req" . "badge_name" $json.title) }}
         {{ end }}
       </ol>
     </div>

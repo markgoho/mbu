@@ -1,0 +1,244 @@
+// Search page styles
+// Design: "Scout Field Guide" - clean cards with badge imagery
+
+.search-page {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.search-header {
+  text-align: center;
+  margin-block-end: var(--space-l);
+
+  h1 {
+    margin-block-end: var(--space-2xs);
+  }
+}
+
+.search-description {
+  color: var(--gray-500);
+  font-size: var(--step-0);
+  font-weight: var(--font-weight-regular);
+}
+
+// Pagefind UI overrides
+.pagefind-ui {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--olive-500);
+  --pagefind-ui-text: var(--color-text-main);
+  --pagefind-ui-background: var(--tan-000);
+  --pagefind-ui-border: var(--tan-400);
+  --pagefind-ui-tag: var(--tan-200);
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 0.75rem;
+  --pagefind-ui-image-border-radius: 50%;
+  --pagefind-ui-image-box-ratio: 1;
+  --pagefind-ui-font: inherit;
+}
+
+// Form layout - input and clear button on same line
+.pagefind-ui__form,
+.pagefind-ui__form form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// Search input with refined styling
+.pagefind-ui__search-input {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--step-0);
+  padding: var(--space-s) var(--space-m);
+  border: 2px solid var(--tan-400);
+  border-radius: 0.75rem;
+  background: var(--tan-000);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+
+  margin-inline-end: var(--space-2xs);
+
+  &:focus {
+    outline: none;
+    border-color: var(--olive-500);
+    box-shadow: 0 0 0 4px var(--olive-200);
+  }
+}
+
+.pagefind-ui__form .pagefind-ui__search-clear {
+  font-family: var(--font-family-main);
+  font-weight: var(--font-weight-boldest);
+  font-size: var(--step-1);
+  color: var(--tan-600);
+  background: var(--tan-200);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-xs) var(--space-s);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+
+  &:hover,
+  &:focus {
+    background: var(--tan-300);
+  }
+}
+
+// Hide Pagefind's default filter UI
+.pagefind-ui__filter-panel {
+  display: none;
+}
+
+// Results count message
+.pagefind-ui__message {
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-500);
+  padding: var(--space-s) 0;
+  font-size: var(--step--1);
+}
+
+// Results container
+.pagefind-ui__results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  padding: 0;
+
+  .pagefind-ui__result {
+    display: flex;
+    background: var(--tan-000);
+    border-radius: 1rem;
+    padding: 0;
+    border: 2px solid var(--tan-200);
+    gap: 0;
+    overflow: hidden;
+  }
+}
+
+// Full-bleed image - fixed width, stretches full height
+.pagefind-ui__result-thumb {
+  flex: 0 0 20%;
+  outline: 1px solid pink;
+}
+
+.pagefind-ui__result-image {
+  object-fit: cover;
+  height: 100%;
+}
+
+// Result content area
+.pagefind-ui__result-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-2xs);
+  padding: var(--space-m);
+  min-width: 0; // Prevent overflow
+}
+
+.pagefind-ui__result-title {
+  margin: 0;
+}
+
+.pagefind-ui__result-link {
+  color: var(--olive-500);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--step-1);
+  line-height: var(--line-height-tight);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--olive-600);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+}
+
+// Excerpt with line-clamp for cleaner display
+.pagefind-ui__result-excerpt {
+  color: var(--gray-600);
+  font-size: var(--step--1);
+  line-height: 1.65;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  // Refined highlighted search matches
+  mark {
+    background: linear-gradient(
+      135deg,
+      var(--brown-100) 0%,
+      var(--brown-200) 100%
+    );
+    color: var(--brown-500);
+    padding: 0.05em 0.3em;
+    border-radius: 0.2rem;
+    font-weight: var(--font-weight-semibold);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    border-bottom: 2px solid var(--brown-300);
+  }
+}
+
+// Sub-results (nested matches within same page)
+.pagefind-ui__result-nested {
+  margin-block-start: var(--space-xs);
+  padding-inline-start: var(--space-s);
+  border-inline-start: 3px solid var(--olive-300);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+
+  .pagefind-ui__result-link {
+    font-size: var(--step--1);
+    font-weight: var(--font-weight-semibold);
+    color: var(--olive-500);
+  }
+
+  .pagefind-ui__result-excerpt {
+    font-size: var(--step--2);
+    line-clamp: 2;
+  }
+}
+
+// Loading state
+.pagefind-ui__loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-l);
+}
+
+// Load more button
+.pagefind-ui__button {
+  display: block;
+  width: 100%;
+  padding: var(--space-s) var(--space-m);
+  margin-block-start: var(--space-s);
+  background: white;
+  border: 2px solid var(--tan-300);
+  border-radius: 0.75rem;
+  color: var(--olive-500);
+  font-family: inherit;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--tan-100);
+    border-color: var(--olive-400);
+    color: var(--olive-600);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

@@ -4,12 +4,12 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-template-areas: "logo cta" "nav nav";
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-areas: "logo search cta" "nav nav nav";
   align-items: center;
   background: var(--tan-300);
   padding: var(--space-xs);
-  // column-gap: var(--space-l);
+  column-gap: var(--space-xs);
   row-gap: var(--space-xs);
 }
 
@@ -31,6 +31,26 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.navbar__search {
+  grid-area: search;
+  display: grid;
+  place-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--color-text-main);
+  transition: color 0.2s;
+  justify-self: end;
+
+  &:hover {
+    color: var(--olive-600);
+  }
+
+  .search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .navbar__cta {
@@ -55,8 +75,8 @@
 
 @container header (min-width: 60rem) {
   .navbar {
-    grid-template-columns: max-content 1fr max-content;
-    grid-template-areas: "logo nav cta";
+    grid-template-columns: max-content 1fr max-content max-content;
+    grid-template-areas: "logo nav search cta";
     grid-template-rows: auto;
     padding: var(--space-s) var(--space-m);
     column-gap: var(--space-l);
@@ -64,5 +84,9 @@
 
   .navbar__nav {
     justify-self: end;
+  }
+
+  .navbar__search {
+    justify-self: center;
   }
 }

@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "sync:badges": "bun scripts/sync-requirements-hybrid.ts",
-    "build": "cd hugo && hugo --minify",
-    "hugo:dev": "cd hugo && hugo server"
+    "build:local": "rm -rf hugo/public && cd hugo && hugo && bun run index",
+    "build": "cd hugo && hugo --minify && bun run index",
+    "hugo:dev": "cd hugo && hugo server",
+    "index": "bunx pagefind --site hugo/public"
   },
   "devDependencies": {
     "@google/genai": "^1.34.0",
@@ -14,6 +16,7 @@
     "@types/bun": "latest",
     "firebase-tools": "^15.1.0",
     "js-yaml": "^4.1.1",
+    "pagefind": "^1.4.0",
     "prettier": "^3.7.4",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-organize-imports": "^4.3.0",
