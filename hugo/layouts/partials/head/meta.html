@@ -1,10 +1,10 @@
-{{/* Look for merit badge image: {slug}-merit-badge.avif */}}
-{{ $meritBadgeImg := .Resources.GetMatch "*-merit-badge.avif" }}
+{{/* Look for merit badge image for OG tags: use PNG for social compatibility */}}
+{{ $meritBadgeImg := .Resources.GetMatch "*-merit-badge.png" }}
 {{ $img := "" }}
 {{ if $meritBadgeImg }}
   {{ $img = $meritBadgeImg.Permalink }}
 {{ else }}
-  {{ $img = "/merit-badges/merit-badge-university.avif" | absURL }}
+  {{ $img = "/merit-badges/merit-badge-university.jpg" | absURL }}
 {{ end }}
 {{ $description := .Description | default
   .Summary
