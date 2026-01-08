@@ -11,7 +11,7 @@
     data-anchor="{{ $req.path }}"
     data-badge-name="{{ $badgeName }}"
   {{ end }}>
-  <div class="req-text">{{ $req.text }}</div>
+  <div class="req-text">{{ $req.text | markdownify }}</div>
 
   {{ if $req.subrequirements }}
     {{/* Determine list type based on first child */}}

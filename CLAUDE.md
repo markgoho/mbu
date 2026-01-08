@@ -36,6 +36,22 @@ BADGE_NAME="camping" bun run sync:badges
 TEST_MODE=1 bun run sync:badges
 ```
 
+### Related Badge Link Detection
+```bash
+# Detect and inject markdown links to related badges in requirement text
+bun run detect:links
+# Runs: bun scripts/detect-related-badges.ts
+
+# Process specific badges only (for testing)
+BADGE_SLUGS="camping,hiking,swimming" bun run detect:links
+```
+
+This script analyzes requirement text for references to other badges (e.g., "Earn the Swimming merit badge") and injects markdown links. It:
+- Matches "{Badge Title} merit badge" patterns (case-insensitive)
+- Excludes self-references and false positives (pamphlet, kit, counselor contexts)
+- Preserves existing markdown links (idempotent)
+- Generates a report at `reports/badge-relationships.md`
+
 ### Building
 ```bash
 # Build the Hugo site (output: hugo/public/)
@@ -80,6 +96,7 @@ hugo/
 scripts/
 ├── merit-badges.ts              # Static list of all 143 merit badges
 ├── sync-requirements.ts         # Main scraper script
+├── detect-related-badges.ts     # Auto-detect and link related badge references
 ├── debug-req6.ts               # Debug helpers
 └── debug-beef-cattle.ts        # Debug helpers
 ```

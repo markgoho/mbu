@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "sync:badges": "bun scripts/sync-requirements-hybrid.ts",
+    "detect:links": "bun scripts/detect-related-badges.ts",
     "build:local": "rm -rf hugo/public && cd hugo && hugo && bun run index",
     "build": "cd hugo && hugo --minify && bun run index",
     "hugo:dev": "cd hugo && hugo server",

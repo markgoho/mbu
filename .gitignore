@@ -36,3 +36,6 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 hugo/public
 hugo/resources
 .playwright-mcp
+
+# Badge relationship reports (ephemeral, regenerated on each run)
+reports/
