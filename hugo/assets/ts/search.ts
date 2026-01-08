@@ -9,7 +9,69 @@ new PagefindUI({
   showSubResults: true,
   showImages: true,
   resetStyles: false,
-  excerptLength: 80,
+  excerptLength: 500,
+  processResult: function (result: any) {
+    // Optimize excerpts to prioritize showing highlighted matches
+    if (result.excerpt) {
+      const excerpt = result.excerpt;
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = excerpt;
+
+      const firstMark = tempDiv.querySelector("mark");
+      if (firstMark) {
+        const fullText = tempDiv.textContent || "";
+        const firstMarkText = firstMark.textContent || "";
+        const markPosition = fullText.indexOf(firstMarkText);
+
+        // If the first highlight is far into the excerpt (>100 chars),
+        // truncate the beginning to prioritize showing the match
+        if (markPosition > 100) {
+          // Find a good breaking point (word boundary) ~60-80 chars before the mark
+          const targetStart = Math.max(0, markPosition - 80);
+          const spaceIndex = fullText.indexOf(" ", targetStart);
+          const cutPoint = spaceIndex > 0 ? spaceIndex + 1 : targetStart;
+
+          // Walk through nodes and remove text before cutPoint
+          let charCount = 0;
+          const nodesToRemove: Node[] = [];
+          const walker = document.createTreeWalker(
+            tempDiv,
+            NodeFilter.SHOW_TEXT,
+            null,
+          );
+
+          let node: Node | null;
+          while ((node = walker.nextNode())) {
+            const textLength = node.textContent?.length || 0;
+            if (charCount + textLength <= cutPoint) {
+              nodesToRemove.push(node);
+              charCount += textLength;
+            } else if (charCount < cutPoint) {
+              const charsToRemove = cutPoint - charCount;
+              node.textContent =
+                node.textContent?.substring(charsToRemove) || "";
+              charCount = cutPoint;
+              break;
+            } else {
+              break;
+            }
+          }
+
+          nodesToRemove.forEach((n) => n.parentNode?.removeChild(n));
+
+          // Add ellipsis at the beginning
+          const firstChild = tempDiv.firstChild;
+          if (firstChild) {
+            const ellipsis = document.createTextNode("...");
+            tempDiv.insertBefore(ellipsis, firstChild);
+          }
+
+          result.excerpt = tempDiv.innerHTML;
+        }
+      }
+    }
+    return result;
+  },
   translations: {
     placeholder: "Search requirements...",
     zero_results: "No requirements found",
