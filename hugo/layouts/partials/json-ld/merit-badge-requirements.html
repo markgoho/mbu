@@ -50,7 +50,7 @@
     {{- end -}}
   {{- end }}
   "hasPart": [
-    {{- range $index, $req := first 5 $meaningfulReqs -}}
+    {{- range $index, $req := $json.requirements -}}
     {{- if gt $index 0 }},{{ end }}
     {
       "@type": "LearningResource",

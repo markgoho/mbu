@@ -1,0 +1,34 @@
+{{- /* BreadcrumbList schema for requirements pages */ -}}
+{{- $badge := .Parent -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Merit Badges",
+      "item": "{{ .Site.BaseURL }}merit-badges/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ $badge.Title }}",
+      "item": "{{ $badge.Permalink | absURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Requirements",
+      "item": "{{ .Permalink | absURL }}"
+    }
+  ]
+}
+</script>

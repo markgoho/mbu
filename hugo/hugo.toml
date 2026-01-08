@@ -1,3 +1,11 @@
 baseURL = 'https://merit-badge.university/'
 languageCode = 'en-us'
 title = 'Merit Badge University'
+
+# Enable Git info for lastmod dates in sitemap
+enableGitInfo = true
+
+[sitemap]
+  changefreq = ""  # Omit - Google ignores this
+  priority = -1    # Omit priority tags - Google ignores this
+  filename = "sitemap.xml"

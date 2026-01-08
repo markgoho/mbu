@@ -1,0 +1,11 @@
+# Merit Badge University robots.txt
+
+User-agent: *
+Allow: /
+
+# Block specific paths (if any exist)
+# Disallow: /drafts/
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://merit-badge.university/sitemap.xml

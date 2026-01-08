@@ -16,6 +16,7 @@
     {{ partial "head/meta.html" . }}
 
     <link rel="canonical" href="{{ .Permalink | absURL }}" />
+    <link rel="alternate" hreflang="en-US" href="{{ .Permalink | absURL }}" />
     <link rel="prefetch" href="/pagefind/pagefind-ui.js" as="script" />
   </head>
 

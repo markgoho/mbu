@@ -1,0 +1,20 @@
+{{- /* Organization schema for homepage */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Merit Badge University",
+  "alternateName": "MBU",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ "/merit-badges/merit-badge-university.avif" | absURL }}",
+    "width": 512,
+    "height": 512
+  },
+  "description": "Comprehensive resource for Scouting America merit badge requirements. Search and track all 143 merit badges.",
+  "sameAs": [
+    "https://github.com/markgoho/mbu"
+  ]
+}
+</script>

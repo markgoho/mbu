@@ -14,3 +14,7 @@
     <p><a href="/merit-badges/">Browse all merit badges →</a></p>
   </section>
 {{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/organization.html" . }}
+{{ end }}
