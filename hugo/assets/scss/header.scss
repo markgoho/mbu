@@ -42,6 +42,7 @@
   color: var(--color-text-main);
   transition: color 0.2s;
   justify-self: end;
+  padding: 0;
 
   &:hover {
     color: var(--olive-600);
@@ -51,6 +52,15 @@
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+
+.navbar__search-text {
+  display: none;
+}
+
+.navbar__search-icon {
+  display: grid;
+  place-content: center;
 }
 
 .navbar__cta {
@@ -88,5 +98,19 @@
 
   .navbar__search {
     justify-self: center;
+    width: auto;
+    height: auto;
+    padding: var(--space-xs) var(--space-s);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+  }
+
+  .navbar__search-text {
+    display: inline;
+  }
+
+  .navbar__search-icon {
+    display: none;
   }
 }

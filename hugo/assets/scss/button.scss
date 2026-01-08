@@ -26,4 +26,16 @@
   &-small {
     font-size: var(--step-0);
   }
+
+  &-secondary {
+    background: transparent;
+    color: var(--color-text-main);
+    border: 2px solid var(--olive-500);
+
+    &:hover,
+    &:focus {
+      background: var(--tan-400);
+      color: var(--olive-600);
+    }
+  }
 }

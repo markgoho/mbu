@@ -9,8 +9,14 @@
       </li>
     {{ end }}
   </ul>
-  <a href="/search" class="navbar__search" aria-label="Search requirements">
-    {{ partial "icons/search.html" . }}
+  <a
+    href="/search/"
+    class="navbar__search button button-secondary"
+    aria-label="Search requirements">
+    <span class="navbar__search-icon">
+      {{ partial "icons/search.html" . }}
+    </span>
+    <span class="navbar__search-text">Search</span>
   </a>
   <a href="/merit-badges/" class="navbar__cta button navbar__button"
     >Browse Badges</a
