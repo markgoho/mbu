@@ -11,6 +11,16 @@
     data-anchor="{{ $req.path }}"
     data-badge-name="{{ $badgeName }}"
   {{ end }}>
+  {{ if $req.path }}
+  <a
+    class="copy-link-btn"
+    href="#{{ $req.path }}"
+    aria-label="Copy link to requirement {{ $req.path }}"
+  >
+    <span aria-hidden="true">#</span>
+    <span class="visually-hidden">Copy link to requirement {{ $req.path }}</span>
+  </a>
+  {{ end }}
   <div class="req-text">{{ $req.text | markdownify }}</div>
 
   {{ if $req.subrequirements }}

@@ -74,4 +74,6 @@
 {{ define "footer-scripts" }}
   {{ partial "json-ld/merit-badge-requirements.html" . }}
   {{ partial "json-ld/breadcrumb.html" . }}
+  {{ $deepLinkTS := resources.Get "ts/deep-link.ts" | js.Build (dict "minify" true) }}
+  <script>{{ $deepLinkTS.Content | safeJS }}</script>
 {{ end }}

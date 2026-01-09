@@ -199,7 +199,11 @@
   }
 
   &--primary {
-    background: linear-gradient(135deg, var(--olive-500) 0%, var(--teal-600) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--olive-500) 0%,
+      var(--teal-600) 100%
+    );
     border-color: var(--olive-600);
     color: white;
 
@@ -209,7 +213,11 @@
     }
 
     &::before {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        transparent 50%
+      );
     }
 
     &:hover {
@@ -307,8 +315,98 @@
   }
 }
 
+// Deep linking custom properties
+:root {
+  --deep-link-highlight-color: hsla(41, 80%, 60%, 0.2); // Brand gold at 20%
+  --deep-link-border-color: var(--tan-400);
+  --copy-btn-transition-duration: 200ms;
+}
+
 .requirement-item {
-  scroll-margin-top: 1rem; // Offset for anchor links
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+// Target highlighting - uses box-shadow to avoid layout shift
+.requirement-item:target {
+  background-color: var(--deep-link-highlight-color);
+  border-radius: 4px;
+}
+
+// Visually hidden utility for screen readers
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Copy link button - hidden by default, positioned to the left
+.copy-link-btn {
+  opacity: 0;
+  transition: opacity var(--copy-btn-transition-duration) ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--tan-600);
+  font-size: 0.875em;
+  font-weight: 600;
+  position: absolute;
+  left: -2.75rem;
+  top: 0;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--olive-500);
+  }
+
+  // Adjust position for options list (no ::marker)
+  .options > .requirement-item > & {
+    left: -1.3rem;
+  }
+}
+
+// Show only the direct child button when hovering its own content (not nested ones)
+// Uses :has() to detect hover on the req-text, button, or the item itself (when no nested item is hovered)
+.requirement-item:has(> .req-text:hover) > .copy-link-btn,
+.requirement-item:has(> .copy-link-btn:hover) > .copy-link-btn,
+.requirement-item:hover:not(:has(.requirement-item:hover)) > .copy-link-btn,
+.copy-link-btn:focus {
+  opacity: 1;
+}
+
+// Tooltip using ::after
+.copy-link-btn {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.25rem 0.5rem;
+    background: var(--olive-600);
+    color: white;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+    margin-bottom: 4px;
+  }
+
+  &.copied::after {
+    content: "Copied!";
+    opacity: 1;
+  }
 }
 
 .req-text {
