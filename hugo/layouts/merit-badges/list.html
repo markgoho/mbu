@@ -101,8 +101,8 @@
             <a href="{{ $page.RelPermalink }}">
               {{ if $badgeImage }}
                 <div class="badge-card__image">
-                  {{/* First 6 images are above the fold - prioritize LCP, skip lazy loading */}}
-                  {{ if eq $index 0 }}
+                  {{/* First 3 images get fetchpriority=high for desktop LCP optimization */}}
+                  {{ if lt $index 3 }}
                     <img
                       src="{{ $badgeImage.RelPermalink }}"
                       alt="{{ $page.Title }} Merit Badge"
@@ -110,6 +110,7 @@
                       height="225"
                       fetchpriority="high"
                     />
+                  {{/* Next 3 images (3-5) load eagerly without lazy loading */}}
                   {{ else if lt $index 6 }}
                     <img
                       src="{{ $badgeImage.RelPermalink }}"
@@ -117,6 +118,7 @@
                       width="400"
                       height="225"
                     />
+                  {{/* Remaining images use lazy loading */}}
                   {{ else }}
                     <img
                       src="{{ $badgeImage.RelPermalink }}"
