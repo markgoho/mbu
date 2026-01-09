@@ -86,33 +86,51 @@
     </header>
 
     <section class="badges-grid">
-      {{ range .Pages.ByTitle }}
-        {{ $data := .Resources.GetMatch "data.json" }}
+      {{ range $index, $page := .Pages.ByTitle }}
+        {{ $data := $page.Resources.GetMatch "data.json" }}
         {{ if $data }}
           {{ $json := $data | unmarshal }}
           {{ $reqCount := len $json.requirements }}
           {{/* Prefer card-optimized images for list, fallback to any image */}}
-          {{ $badgeImage := .Resources.GetMatch "*-merit-badge-card.avif" }}
+          {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
           {{ if not $badgeImage }}
-            {{ $badgeImage = .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
+            {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
           {{ end }}
 
           <article class="badge-card {{ if $badgeImage }}badge-card--with-image{{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
-            <a href="{{ .RelPermalink }}">
+            <a href="{{ $page.RelPermalink }}">
               {{ if $badgeImage }}
                 <div class="badge-card__image">
-                  <img
-                    src="{{ $badgeImage.RelPermalink }}"
-                    alt="{{ .Title }} Merit Badge"
-                    width="400"
-                    height="225"
-                    loading="lazy"
-                  />
+                  {{/* First 6 images are above the fold - prioritize LCP, skip lazy loading */}}
+                  {{ if eq $index 0 }}
+                    <img
+                      src="{{ $badgeImage.RelPermalink }}"
+                      alt="{{ $page.Title }} Merit Badge"
+                      width="400"
+                      height="225"
+                      fetchpriority="high"
+                    />
+                  {{ else if lt $index 6 }}
+                    <img
+                      src="{{ $badgeImage.RelPermalink }}"
+                      alt="{{ $page.Title }} Merit Badge"
+                      width="400"
+                      height="225"
+                    />
+                  {{ else }}
+                    <img
+                      src="{{ $badgeImage.RelPermalink }}"
+                      alt="{{ $page.Title }} Merit Badge"
+                      width="400"
+                      height="225"
+                      loading="lazy"
+                    />
+                  {{ end }}
                 </div>
               {{ end }}
               <div class="badge-card__content">
                 <h2>
-                  {{ .Title }}
+                  {{ $page.Title }}
                   {{ if $json.eagle_required }}
                     <span class="eagle-badge" title="Eagle Required">🦅</span>
                   {{ end }}
