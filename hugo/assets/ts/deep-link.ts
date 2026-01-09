@@ -12,21 +12,7 @@ document.addEventListener("click", (event: MouseEvent) => {
   const path = href.replace("#", "");
   const url = `${window.location.origin}${window.location.pathname}#${path}`;
 
-  navigator.clipboard
-    .writeText(url)
-    .then(() => {
-      // Remove copied class from any other links first
-      document.querySelectorAll(".copy-link-btn.copied").forEach((el) => {
-        el.classList.remove("copied");
-      });
-
-      link.classList.add("copied");
-
-      setTimeout(() => {
-        link.classList.remove("copied");
-      }, 2000);
-    })
-    .catch((err) => {
-      console.error("Failed to copy link:", err);
-    });
+  navigator.clipboard.writeText(url).catch((err) => {
+    console.error("Failed to copy link:", err);
+  });
 });

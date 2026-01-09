@@ -365,6 +365,13 @@
   &:hover,
   &:focus {
     color: var(--olive-500);
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--olive-400);
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 
   // Adjust position for options list (no ::marker)
@@ -380,33 +387,6 @@
 .requirement-item:hover:not(:has(.requirement-item:hover)) > .copy-link-btn,
 .copy-link-btn:focus {
   opacity: 1;
-}
-
-// Tooltip using ::after
-.copy-link-btn {
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.25rem 0.5rem;
-    background: var(--olive-600);
-    color: white;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 400;
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 200ms ease;
-    margin-bottom: 4px;
-  }
-
-  &.copied::after {
-    content: "Copied!";
-    opacity: 1;
-  }
 }
 
 .req-text {
