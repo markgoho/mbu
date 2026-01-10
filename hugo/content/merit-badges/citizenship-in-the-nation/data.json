@@ -33,7 +33,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "How each branch \"checks\" and \"balances\" the others"
+          "text": "How each branch checks and balances the others"
         },
         {
           "req_id": "d",
@@ -128,7 +128,7 @@
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Tour your state capitol building or the U.S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history."
+          "text": "Tour your state capitol building or the U. S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history."
         },
         {
           "req_id": "c",
@@ -149,7 +149,7 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Name your representatives in the United States Congress. Write a letter to your representative in Congress explaining your views on a national issue. Show your letter, along with any response you receive, to your counselor."
+      "text": "Name your representatives in the United States Congress. Write to your representative in Congress explaining your views on a national issue. Show your correspondence, along with any response you receive, to your counselor."
     }
   ]
 }

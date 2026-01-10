@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Define exploration and explain how it differs from adventure travel, trekking or hiking, tour-group trips, or recreational outdoor adventure trips. Resource: What's the Difference Between Adventure and Exploration? (website)",
+          "text": "Define exploration and explain how it differs from adventure travel, trekking or hiking, tour-group trips, or recreational outdoor adventure trips.",
           "resources": [
             {
               "title": "What's the Difference Between Adventure and Exploration? (website)",
@@ -24,7 +24,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain how approaches to exploration may differ if it occurs in the ocean, in space, in a jungle, or in a science lab in a city. Resource: What Is Exploration (video)",
+          "text": "Explain how approaches to exploration may differ if it occurs in the ocean, in space, in a jungle, or in a science lab in a city.",
           "resources": [
             {
               "title": "What Is Exploration (video)",
@@ -68,7 +68,7 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Why it is important for exploration to have a scientific basis Resource: What It Takes to Be an Adventurer (video)",
+          "text": "Why it is important for exploration to have a scientific basis",
           "resources": [
             {
               "title": "What It Takes to Be an Adventurer (video)",
@@ -79,7 +79,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "How explorers have aided in our understanding of our world Resource: Why We Explore (video)",
+          "text": "How explorers have aided in our understanding of our world",
           "resources": [
             {
               "title": "Why We Explore (video)",
@@ -90,7 +90,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "What you think it takes to be an explorer. Resource: Why Great Scientists Ask Great Questions? w/ Neil deGrasse Tyson (video)",
+          "text": "What you think it takes to be an explorer.",
           "resources": [
             {
               "title": "Why Great Scientists Ask Great Questions? w/ Neil deGrasse Tyson (video)",
@@ -218,7 +218,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Identify the objectives (establish goals). Resource: EXPEDITIONS | How to Get Started! (video)",
+          "text": "Identify the objectives (establish goals).",
           "resources": [
             {
               "title": "EXPEDITIONS | How to Get Started! (video)",
@@ -248,7 +248,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "Budget and plan for adequate financial resources. Estimate costs for travel, equipment, accommodations, meals, permits or licenses, and other expedition expenses. Resource: How to Plan for Permits and Reservations (video)",
+          "text": "Budget and plan for adequate financial resources. Estimate costs for travel, equipment, accommodations, meals, permits or licenses, and other expedition expenses.",
           "resources": [
             {
               "title": "How to Plan for Permits and Reservations (video)",
@@ -269,7 +269,7 @@
         {
           "req_id": "f",
           "path": "6.f",
-          "text": "Establish safety and first aid procedures (including planning for medical evacuation). Identify the hazards that explorers could encounter on the expedition, and establish procedures to prevent or avoid those hazards. Resource: Wilderness Primary Care Kit Walkthrough | Essential Expedition Essentials Medical Kit Guide (video)",
+          "text": "Establish safety and first aid procedures (including planning for medical evacuation). Identify the hazards that explorers could encounter on the expedition, and establish procedures to prevent or avoid those hazards.",
           "resources": [
             {
               "title": "Wilderness Primary Care Kit Walkthrough | Essential Expedition Essentials Medical Kit Guide (video)",
@@ -280,7 +280,7 @@
         {
           "req_id": "g",
           "path": "6.g",
-          "text": "Determine team selection. Identify who is essential for the expedition to be successful and what skills are required by the expedition leader. Resource: Flight of the Osprey Media Team Selection (video)",
+          "text": "Determine team selection. Identify who is essential for the expedition to be successful and what skills are required by the expedition leader.",
           "resources": [
             {
               "title": "Flight of the Osprey Media Team Selection (video)",
@@ -291,7 +291,7 @@
         {
           "req_id": "h",
           "path": "6.h",
-          "text": "Establish detailed recordkeeping (documentation) procedures. Plan the interpretation and sharing of information at the conclusion of the expedition. Resource: The 7 Fundamentals of Documenting Your Travels (website)",
+          "text": "Establish detailed recordkeeping (documentation) procedures. Plan the interpretation and sharing of information at the conclusion of the expedition.",
           "resources": [
             {
               "title": "The 7 Fundamentals of Documenting Your Travels (website)",
@@ -322,7 +322,13 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Conduct a pre-expedition check, covering the steps in requirement 6, and share the results with your counselor. With your counselor, walk through the Scouting America SAFE Checklist for your expedition. Ensure that all foreseeable hazards for your expedition are adequately addressed."
+          "text": "Conduct a pre-expedition check, covering the steps in requirement 6, and share the results with your counselor. With your counselor, walk through the Scouting America SAFE Checklist for your expedition. Ensure that all foreseeable hazards for your expedition are adequately addressed.",
+          "resources": [
+            {
+              "title": "Scouting America SAFE Checklist (PDF)",
+              "url": "https://www.scouting.org/wp-content/uploads/2021/06/680-11421_SAFE.pdf"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -342,7 +348,7 @@
         {
           "req_id": "b",
           "path": "8.b",
-          "text": "Discuss with your counselor what is outdoor ethics and its role in exploration and enjoying the outdoors responsibly.",
+          "text": "Discuss with your counselor about the vital role of outdoor ethics in exploration, explaining how they promote responsible and mindful adventuring. Explain how you applied the outdoor code, Leave No Trace and Tread Lightly! principles during your expedition.",
           "resources": [
             {
               "title": "Leave No Trace Basics (video)",
@@ -350,7 +356,7 @@
             },
             {
               "title": "Leave No Trace Outdoor Ethics (video)",
-              "url": "https://www.youtube.com/watch?v=jXO1uY0MvmQ"
+              "url": "https://youtu.be/jXO1uY0MvmQ?si=_UhIOYBkw69c87ug"
             }
           ]
         },
@@ -367,21 +373,51 @@
     {
       "req_id": "9",
       "path": "9",
-      "text": "Career Opportunities. Identify three career opportunities in exploration. Pick one and explain to your counselor how to prepare for such a career. Discuss what education and training are required, and why this profession might interest you.",
-      "resources": [
+      "text": "Career Opportunities: Do ONE of the following:",
+      "subrequirements": [
         {
-          "title": "Ocean Exploration Careers (website)",
-          "url": "https://oceanexplorer.noaa.gov/careers/opportunities/"
+          "req_id": "a",
+          "path": "9.a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.",
+          "resources": [
+            {
+              "title": "Ocean Exploration Careers (website)",
+              "url": "https://oceanexplorer.noaa.gov/careers/"
+            },
+            {
+              "title": "Unlocking Space Careers: Beyond Astronauts and Rocket (video)",
+              "url": "https://youtu.be/ljlpqd1Mjjs?si=V3Yaz18BvlIVnDpQ"
+            },
+            {
+              "title": "How I Became a Researcher (video)",
+              "url": "https://youtu.be/vOhyZ8FYCmw?si=9XLnEqu1IJIin0CH"
+            }
+          ]
         },
         {
-          "title": "Unlocking Space Careers: Beyond Astronauts and Rocket (video)",
-          "url": "https://youtu.be/ljlpqd1Mjjs?si=V3Yaz18BvlIVnDpQ"
-        },
-        {
-          "title": "How I Became a Researcher (video)",
-          "url": "https://youtu.be/vOhyZ8FYCmw?si=9XLnEqu1IJIin0CH"
+          "req_id": "b",
+          "path": "9.b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.",
+          "resources": [
+            {
+              "title": "Ready to Dive Into the Adventure of a Lifetime? Become a PADI Scuba Diver (video)",
+              "url": "https://youtu.be/XTeCkxJkUuE?si=VmbO1gpifOVW0QBF"
+            },
+            {
+              "title": "Astronomy for Beginners (video)",
+              "url": "https://youtu.be/XLgPe_f-QCc?si=d_gbZFB7Spvr-vog"
+            },
+            {
+              "title": "Permanent Orienteering Course (video)",
+              "url": "https://youtu.be/y4yfyUwkUxw?si=zGblxCqx7N5R4_W9"
+            }
+          ]
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

@@ -18,7 +18,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Discuss the prevention of and treatment for the following health concerns that could occur while fly-fishing: cuts and scratches, puncture wounds, insect bites, hypothermia, dehydration, heat exhaustion, heatstroke, sunburn."
+          "text": "Discuss the prevention of and treatment for the following health concerns that could occur while fly-fishing: cuts and scratches, puncture wounds, insect bites, hypothermia, dehydration, heat exhaustion, heatstroke, and sunburn."
         },
         {
           "req_id": "c",
@@ -118,7 +118,7 @@
     {
       "req_id": "10",
       "path": "10",
-      "text": "Catch one fish and identify it."
+      "text": "Catch one fish on a fly and identify it."
     },
     {
       "req_id": "11",

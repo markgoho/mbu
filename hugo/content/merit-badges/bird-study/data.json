@@ -117,14 +117,14 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Demonstrate that you know how to use a bird field guide. Show your counselor that you are able to understand a range map by locating in the book and pointing out:",
+      "text": "Demonstrate that you know how to use a bird field guide. Show your counselor that you are able to understand a range map by locating in the book and pointing out the wintering range, the breeding range, and/or the year-round range of one species of each of the following types of birds:",
       "resources": [
         {
           "title": "How to Use a Field Guide (video)",
-          "url": "https://www.youtube.com/watch?v=dAkcHqfkWfg"
+          "url": "https://youtu.be/dAkcHqfkWfg"
         },
         {
-          "title": "Merlin Bird ID (website)",
+          "title": "Merlin Bird ID (video)",
           "url": "https://merlin.allaboutbirds.org/"
         }
       ],
@@ -395,7 +395,7 @@
     {
       "req_id": "9",
       "path": "9",
-      "text": "Do ONE of the following. For the option you choose, describe what birds you hope to attract, and why.",
+      "text": "Do ONE of the following. For the item you choose, describe what birds you hope to attract, and why. Describe the necessary maintenance required with the item that you choose.",
       "subrequirements": [
         {
           "req_id": "a",
@@ -460,6 +460,17 @@
               "url": "https://www.youtube.com/watch?v=j0werPvrrPI"
             }
           ]
+        },
+        {
+          "req_id": "e",
+          "path": "9.e",
+          "text": "Describe the elements of a backyard bird habitat for a given area and draw a plan for one, including lists of birds you hope to attract, appropriate plantings for food, cover, and nesting.",
+          "resources": [
+            {
+              "title": "How to Create a Backyard Bird Habitat | Tractor Supply Co. (video)",
+              "url": "https://youtu.be/wHyIzulXYlA"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -493,6 +504,17 @@
               "url": "https://www.youtube.com/watch?v=0FgTOe3bxY8"
             }
           ]
+        },
+        {
+          "req_id": "c",
+          "path": "10.c",
+          "text": "Explain how we can address birds that are in decline before they get to an endangered or threatened list. List how we can protect habitat. Identify threats that migratory birds face and how to protect food supply for birds.",
+          "resources": [
+            {
+              "title": "Why Are Migratory Birds In Trouble? (And How Can I Help?) (video)",
+              "url": "https://youtu.be/DiSb2RZCTOk?si=vEBondZy0avLSTR3"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -517,21 +539,58 @@
     {
       "req_id": "12",
       "path": "12",
-      "text": "Identify three career opportunities connected to the study of birds. Pick one and find out the education, training, and experience required for this profession. Discuss with your counselor if this profession might interest you.",
+      "text": "Discuss the importance of the Leave No Trace Seven Principles and the Outdoor Code as they relate to bird study. Explain how you have followed the Leave No Trace Seven Principles and the Outdoor Code while in natural areas during field observation, specimen collection, and identification.",
       "resources": [
         {
-          "title": "Careers With Birds: Interview With Kim Bostwick (video)",
-          "url": "https://www.youtube.com/watch?v=yFErFjzQ-RU"
+          "title": "Leave No Trace Basics (video)",
+          "url": "https://vimeo.com/1115216743/63b20c0b33?share=copy"
         },
         {
-          "title": "Ornithologist (Bird Scientist) | Career Exploration (video)",
-          "url": "https://www.youtube.com/watch?v=nClZ64FaSIQ"
-        },
-        {
-          "title": "10+ Wildlife Biology Careers You Should Know About (& Salaries) (video)",
-          "url": "https://www.youtube.com/watch?v=AK2Onqx-ctM&t=60s"
+          "title": "Leave No Trace Outdoor Ethics (video)",
+          "url": "https://www.youtube.com/watch?v=jXO1uY0MvmQ"
         }
       ]
+    },
+    {
+      "req_id": "13",
+      "path": "13",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "13.a",
+          "text": "Identify three career opportunities that would use skills and knowledge in Bird Study. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.",
+          "resources": [
+            {
+              "title": "Careers With Birds: Interview With Kim Bostwick (video)",
+              "url": "https://www.youtube.com/watch?v=yFErFjzQ-RU"
+            },
+            {
+              "title": "Ornithologist (Bird Scientist) | Career Exploration (video)",
+              "url": "https://www.youtube.com/watch?v=nClZ64FaSIQ"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "13.b",
+          "text": "Identify how you might use the skills and knowledge in Bird Study to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this.",
+          "resources": [
+            {
+              "title": "5 Reasons Why Birding is an Awesome Hobby! (video)",
+              "url": "https://youtu.be/jVK994DbKNs"
+            },
+            {
+              "title": "Birding: a Hobby for Everyone (video)",
+              "url": "https://youtu.be/PAD9t4gtNvM?si=KKnAcmHUY7le2Sdg"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

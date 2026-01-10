@@ -35,7 +35,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Explain the different types of motors you may encounter.",
+          "text": "Explain the different ways motor vehicles are powered.",
           "resources": [
             {
               "title": "Difference Between Diesel and Gas Engines (video)",
@@ -140,49 +140,55 @@
           "text": "Demonstrate how to check the following:",
           "resources": [
             {
-              "title": "How to Care for Your Automotive Battery (video)",
-              "url": "https://youtu.be/-dWtk08fMfw?si=AfrX0oKSRi6fCKoe&t=14"
-            },
-            {
-              "title": "How to Check & Properly Fill Water Levels in a Car Batter (video)",
-              "url": "https://youtu.be/ytg2TCC6IKw?si=XBSt8SXU0YENVL7J"
+              "title": "Your Car's Fluids (video)",
+              "url": "https://youtu.be/RaxZUGP1Zr0?si=_Z1CMmzpR5nAPJkp"
             }
           ],
           "subrequirements": [
             {
               "req_id": "1",
               "path": "2.a.1",
-              "text": "(1) Brake fluid"
+              "text": "Brake fluid"
             },
             {
               "req_id": "2",
               "path": "2.a.2",
-              "text": "(2) Engine oil"
+              "text": "Engine oil"
             },
             {
               "req_id": "3",
               "path": "2.a.3",
-              "text": "(3) Coolant"
+              "text": "Coolant"
             },
             {
               "req_id": "4",
               "path": "2.a.4",
-              "text": "(4) Power steering fluid"
+              "text": "Power steering fluid"
             },
             {
               "req_id": "5",
               "path": "2.a.5",
-              "text": "(5) Windshield washer fluid"
+              "text": "Windshield washer fluid"
             },
             {
               "req_id": "6",
               "path": "2.a.6",
-              "text": "(6) Transmission fluid"
+              "text": "Transmission fluid"
             },
             {
               "req_id": "7",
               "path": "2.a.7",
-              "text": "(7) Battery fluid (if possible) and condition of the battery terminals"
+              "text": "Battery fluid (if possible) and condition of the battery terminals.",
+              "resources": [
+                {
+                  "title": "How to Care for Your Automotive Battery (video)",
+                  "url": "https://youtu.be/-dWtk08fMfw?si=AfrX0oKSRi6fCKoe&t=14"
+                },
+                {
+                  "title": "How to Check & Properly Fill Water Levels in a Car Battery (video)",
+                  "url": "https://youtu.be/ytg2TCC6IKw?si=XBSt8SXU0YENVL7J"
+                }
+              ]
             }
           ],
           "subrequirement_mode": {
@@ -682,7 +688,7 @@
         {
           "req_id": "b",
           "path": "10.b",
-          "text": "Explain the differences between disc and drum systems.",
+          "text": "Explain the differences between disc and drum brake systems.",
           "resources": [
             {
               "title": "Drum vs Disc Brakes - What Are the Differences? (Which Is the Better Choice?) (video)",

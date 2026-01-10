@@ -37,21 +37,6 @@
               "url": "https://www.youtube.com/watch?v=oPCWzECMD_4%20"
             }
           ]
-        },
-        {
-          "req_id": "c",
-          "path": "1.c",
-          "text": "Explain the importance of wearing the right clothing and gear while cycling, including a properly sized and fitted helmet. Know the Scouting America Bike Safety Guidelines.",
-          "resources": [
-            {
-              "title": "Bike Tips: Gear to Make Your Ride More Comfortable (video)",
-              "url": "https://www.youtube.com/watch?v=2TYe3APtKtc&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=5%20"
-            },
-            {
-              "title": "How to Wear a Helmet (video)",
-              "url": "https://www.youtube.com/watch?v=T3u51W0LN2U%20"
-            }
-          ]
         }
       ],
       "subrequirement_mode": {
@@ -76,7 +61,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather. Know the Scouting America Bike Safety Guidelines.",
+      "text": "Explain the importance of wearing the right clothing and gear while cycling, including a properly sized and fitted helmet. Know the Scouting America Bike Safety Guidelines.",
       "resources": [
         {
           "title": "Fitting a Bike Helmet (video)",
@@ -89,6 +74,14 @@
       "path": "4",
       "text": "Using a bicycle safety checklist, clean and adjust a bicycle and present it to your counselor for inspection. Do the following:",
       "resources": [
+        {
+          "title": "Bicycle Safety Checklist (PDF)",
+          "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Cycling/Bicycle%20Safety%20Checklist.pdf"
+        },
+        {
+          "title": "Bicycle Safety Checklist (fillable) (PDF)",
+          "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Cycling/Bicycle%20Safety%20Checklist%20%28fillable%29.pdf"
+        },
         {
           "title": "Checklist, Maintenance, and Inspection | Produced by Scouting America (video)",
           "url": "https://vimeo.com/1125028194"
@@ -201,7 +194,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "A Option A—Road Biking. Do the following:",
+          "text": "A Option A—Road Biking. Do ALL of the following:",
           "is_option": true,
           "resources": [
             {
@@ -211,13 +204,13 @@
           ],
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "6.a.a",
+              "req_id": "1",
+              "path": "6.a.1",
               "text": "Take a road safety test with your counselor and demonstrate the following:",
               "subrequirements": [
                 {
-                  "req_id": "1",
-                  "path": "6.a.a.1",
+                  "req_id": "a",
+                  "path": "6.a.1.a",
                   "text": "On an urban street with light traffic, properly execute a left turn from the center of the street; also demonstrate an alternate left-turn technique used during periods of heavy traffic.",
                   "resources": [
                     {
@@ -231,8 +224,8 @@
                   ]
                 },
                 {
-                  "req_id": "2",
-                  "path": "6.a.a.2",
+                  "req_id": "b",
+                  "path": "6.a.1.b",
                   "text": "Properly execute a right turn.",
                   "resources": [
                     {
@@ -242,8 +235,8 @@
                   ]
                 },
                 {
-                  "req_id": "3",
-                  "path": "6.a.a.3",
+                  "req_id": "c",
+                  "path": "6.a.1.c",
                   "text": "Demonstrate appropriate actions at a right-turn-only lane when you are continuing straight.",
                   "resources": [
                     {
@@ -253,8 +246,8 @@
                   ]
                 },
                 {
-                  "req_id": "4",
-                  "path": "6.a.a.4",
+                  "req_id": "d",
+                  "path": "6.a.1.d",
                   "text": "Show proper curbside and road-edge riding. Show how to ride safely along a row of parked cars.",
                   "resources": [
                     {
@@ -264,8 +257,8 @@
                   ]
                 },
                 {
-                  "req_id": "5",
-                  "path": "6.a.a.5",
+                  "req_id": "e",
+                  "path": "6.a.1.e",
                   "text": "Cross railroad tracks properly.",
                   "resources": [
                     {
@@ -280,8 +273,8 @@
               }
             },
             {
-              "req_id": "b",
-              "path": "6.a.b",
+              "req_id": "2",
+              "path": "6.a.2",
               "text": "Avoiding main highways, take two rides of 10 miles each, two rides of 15 miles each, and two rides of 25 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen on the ride.",
               "resources": [
                 {
@@ -295,13 +288,13 @@
               ]
             },
             {
-              "req_id": "c",
-              "path": "6.a.c",
-              "text": "After completing requirement b for the road biking option, do ONE of the following:",
+              "req_id": "3",
+              "path": "6.a.3",
+              "text": "After completing requirement (2) for the road biking option, do ONE of the following:",
               "subrequirements": [
                 {
-                  "req_id": "1",
-                  "path": "6.a.c.1",
+                  "req_id": "a",
+                  "path": "6.a.3.a",
                   "text": "Lay out on a road map a 50-mile trip. Stay away from main highways. Using your map, make this ride in eight hours or less.",
                   "resources": [
                     {
@@ -311,8 +304,8 @@
                   ]
                 },
                 {
-                  "req_id": "2",
-                  "path": "6.a.c.2",
+                  "req_id": "b",
+                  "path": "6.a.3.b",
                   "text": "Participate in an organized bike tour of at least 50 miles. Make this ride in eight hours or less. Afterward, use the tour's cue sheet to make a map of the ride.",
                   "resources": [
                     {
@@ -335,17 +328,17 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "B Option B—Trail or Mixed Surface Biking. Do the following: Note: These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.",
+          "text": "B Option B—Trail or Mixed Surface Biking Do ALL of the following: Note: These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "6.b.a",
+              "req_id": "1",
+              "path": "6.b.1",
               "text": "Demonstrate the following mountain bike handling skills to your counselor:",
               "subrequirements": [
                 {
-                  "req_id": "1",
-                  "path": "6.b.a.1",
+                  "req_id": "a",
+                  "path": "6.b.1.a",
                   "text": "Neutral position, ready position, bike body separation (side to side, and forward and back), and body positioning for cornering",
                   "resources": [
                     {
@@ -359,20 +352,20 @@
                   ]
                 },
                 {
-                  "req_id": "2",
-                  "path": "6.b.a.2",
+                  "req_id": "b",
+                  "path": "6.b.1.b",
                   "text": "Show shifting skills as applicable to climbs and obstacles.",
                   "resources": [
                     {
-                      "title": "Bike Tips: Proper Shifting Technique (video)",
-                      "url": "https://www.youtube.com/watch?v=7kc-CHtlQyM&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=7%20"
+                      "title": "Shifting Skills for Mountain Biking (video)",
+                      "url": "https://youtu.be/IxxoU-s-Lws"
                     }
                   ]
                 },
                 {
-                  "req_id": "3",
-                  "path": "6.b.a.3",
-                  "text": "Show proper technique for riding up (seated, crouched, and standing) and down hills.",
+                  "req_id": "c",
+                  "path": "6.b.1.c",
+                  "text": "Show proper technique for riding up and down hills, including when you would ride seated, crouched, or standing.",
                   "resources": [
                     {
                       "title": "Make Climbing Easier With Proper Body Position (video)",
@@ -380,15 +373,15 @@
                     },
                     {
                       "title": "Steep & Technical Climbs Made Easy With Proper Gearing & Choice of Line (video)",
-                      "url": "https://www.youtube.com/watch?v=Rd-wFxmXmsM%20"
+                      "url": "https://youtu.be/Rd-wFxmXmsM"
                     },
                     {
                       "title": "How to Climb Any Hill on Your Mountain Bike (video)",
-                      "url": "https://www.youtube.com/watch?v=4knf7exmrAQ%20"
+                      "url": "https://youtu.be/4knf7exmrAQ?si=SAiTb_g_6TGj9JbW"
                     },
                     {
                       "title": "Don't Make These Common Climbing Mistakes (video)",
-                      "url": "https://www.youtube.com/watch?v=k6ewOO9rXXY%20"
+                      "url": "https://youtu.be/k6ewOO9rXXY"
                     }
                   ]
                 }
@@ -398,18 +391,24 @@
               }
             },
             {
-              "req_id": "b",
-              "path": "6.b.b",
+              "req_id": "2",
+              "path": "6.b.2",
               "text": "Take a trail safety test with your counselor and demonstrate the following:",
               "subrequirements": [
                 {
-                  "req_id": "1",
-                  "path": "6.b.b.1",
-                  "text": "Show proper trail etiquette to hikers and other cyclists, including when to yield the right-of-way."
+                  "req_id": "a",
+                  "path": "6.b.2.a",
+                  "text": "Show proper trail etiquette to hikers and other cyclists, including when to yield the right-of-way.",
+                  "resources": [
+                    {
+                      "title": "Bike Trail Etiquette (video)",
+                      "url": "https://youtu.be/gwYBL2zPYXQ"
+                    }
+                  ]
                 },
                 {
-                  "req_id": "2",
-                  "path": "6.b.b.2",
+                  "req_id": "b",
+                  "path": "6.b.2.b",
                   "text": "Demonstrate how to correctly cross an obstacle by either going over the obstacle on your bike or dismounting your bike and crossing over or around the obstacle",
                   "resources": [
                     {
@@ -419,13 +418,21 @@
                   ]
                 },
                 {
-                  "req_id": "3",
-                  "path": "6.b.b.3",
+                  "req_id": "c",
+                  "path": "6.b.2.c",
                   "text": "Cross rocks, gravel, and roots properly",
                   "resources": [
                     {
-                      "title": "How to Jump a Log on a Mountain Bike (video)",
-                      "url": "https://www.youtube.com/watch?v=Hp_jDNN6XfQ"
+                      "title": "How to Navigate Rock Gardens (video)",
+                      "url": "https://youtu.be/arh94o3Qm4Y"
+                    },
+                    {
+                      "title": "How to Ride Roots (video)",
+                      "url": "https://youtu.be/0CQesh_kN6k?si=74wVP05bl6ylKk8Y"
+                    },
+                    {
+                      "title": "How to Ride Loose Gravel (video)",
+                      "url": "https://youtu.be/tpLCJLLPTEU?si=JbHCyrG-Md-Q4VIU"
                     }
                   ]
                 }
@@ -435,8 +442,8 @@
               }
             },
             {
-              "req_id": "c",
-              "path": "6.b.c",
+              "req_id": "3",
+              "path": "6.b.3",
               "text": "Describe the rules of trail riding, including how to know when a trail is unsuitable for riding.",
               "resources": [
                 {
@@ -454,8 +461,8 @@
               ]
             },
             {
-              "req_id": "d",
-              "path": "6.b.d",
+              "req_id": "4",
+              "path": "6.b.4",
               "text": "On mountain biking or multi-use trails approved by your counselor, take two rides of 2 miles each, two rides of 5 miles each, and two rides of 8 miles each. You must make a report of the rides taken. List dates for the routes traveled, and interesting things seen.",
               "resources": [
                 {
@@ -465,8 +472,8 @@
               ]
             },
             {
-              "req_id": "e",
-              "path": "6.b.e",
+              "req_id": "5",
+              "path": "6.b.5",
               "text": "After fulfilling the previous requirement, lay out on a trail map a 22-mile trip. You may include multiple trail systems, if needed. Stay away from main highways. Using your map, complete this ride in one day.",
               "resources": [
                 {

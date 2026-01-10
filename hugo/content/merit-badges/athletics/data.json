@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Do the following:",
+      "text": "Do the following with your counselor:",
       "subrequirements": [
         {
           "req_id": "a",
@@ -27,7 +27,7 @@
           "text": "Show that you know first aid for injuries or illnesses that could occur while participating in athletics events, including sprains, strains, contusions, abrasions, blisters, dehydration, heat reactions, and concussions.",
           "resources": [
             {
-              "title": "Using the Rice Method for Injuries - Rest, Ice, Compress, Elevate (video)",
+              "title": "Using the RICE Method for Injuries - Rest, Ice, Compress, Elevate (video)",
               "url": "https://youtu.be/TZqDBgiEfL8?si=RV6nOMJpa0Rc2LbT"
             },
             {
@@ -48,12 +48,12 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Do the following:",
+      "text": "Do the following with your counselor:",
       "subrequirements": [
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Before completing requirements 3 and 5, have your health-care practitioner give you a physical examination, using the Scout Annual Health and Medical Record form.",
+          "text": "Discuss the importance of having a physical examination each year. Discuss why overall health, immunizations, medications, allergies, and medical history are covered during an examination. Tell your counselor when you last underwent a physical examination.",
           "resources": [
             {
               "title": "Annual Physical Exam (website)",
@@ -64,12 +64,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Explain the importance of a physical exam."
-        },
-        {
-          "req_id": "c",
-          "path": "2.c",
-          "text": "Explain the importance of maintaining good health habits, especially during training—and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your health and your performance in athletic activities.",
+          "text": "Explain how you maintain good health habits, especially during training, and how the use of tobacco products, alcohol, and other harmful substances can negatively affect your health and your performance in athletic activities.",
           "resources": [
             {
               "title": "Nutrition Tips for High School Athletes (video)",
@@ -82,9 +77,9 @@
           ]
         },
         {
-          "req_id": "d",
-          "path": "2.d",
-          "text": "Explain the importance of maintaining a healthy diet.",
+          "req_id": "c",
+          "path": "2.c",
+          "text": "Describe the elements of a nutritious, balanced diet, and explain what you do to maintain a healthy diet.",
           "resources": [
             {
               "title": "What is MyPlate? (website)",
@@ -122,7 +117,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Create a chart to monitor your progress during this time.",
+          "text": "Use a chart or other tracking method to monitor your progress during this time.",
           "resources": [
             {
               "title": "7 Powerful Journaling Ideas for Youth Sports Athletes (website)",
@@ -133,7 +128,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Explain to your counselor the equipment necessary to participate in this activity and the appropriate clothing for the time of year.",
+          "text": "Explain to your counselor the equipment necessary to participate in this activity and the appropriate clothing for the activity and the time of year.",
           "resources": [
             {
               "title": "Equipment Needed to Play Various Sports (website)",
@@ -144,7 +139,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "At the end of three months, review the chart you created for requirement 3(b), and discuss with your counselor what progress you have made during training. Tell how your development has affected you mentally and physically.",
+          "text": "At the end of three months, review your records from requirement 3(b), and discuss with your counselor what progress you have made during training. Tell how your development has affected you mentally and physically.",
           "resources": [
             {
               "title": "How Do You Measure Progress? (video)",
@@ -165,7 +160,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Give the rules for two athletic activities, one of which is the activity you chose for requirement 3.",
+          "text": "Explain the rules for two athletic activities, one of which is the activity you chose for requirement 3.",
           "resources": [
             {
               "title": "Rules of Sports (website)",
@@ -176,7 +171,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Discuss the importance of warming up and cooling down.",
+          "text": "Discuss the importance of warming up and cooling down before and after each training session or event.",
           "resources": [
             {
               "title": "Stretching and Warming Up (video)",
@@ -225,9 +220,9 @@
       "text": "Complete the activities in FOUR of the following options and show improvement over a three-month period:",
       "subrequirements": [
         {
-          "req_id": "option-1-sprinting",
-          "path": "5.option-1-sprinting",
-          "text": "Option 1: Sprinting",
+          "req_id": "a",
+          "path": "5.a",
+          "text": "Option A—Sprinting. Do ALL of the following:",
           "is_option": true,
           "resources": [
             {
@@ -237,13 +232,13 @@
           ],
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-1-sprinting.a",
+              "req_id": "1",
+              "path": "5.a.1",
               "text": "100-meter dash"
             },
             {
-              "req_id": "b",
-              "path": "5.option-1-sprinting.b",
+              "req_id": "2",
+              "path": "5.a.2",
               "text": "200-meter dash"
             }
           ],
@@ -252,9 +247,9 @@
           }
         },
         {
-          "req_id": "option-2-long-distance-running",
-          "path": "5.option-2-long-distance-running",
-          "text": "Option 2: Long-Distance Running",
+          "req_id": "b",
+          "path": "5.b",
+          "text": "Option B—Long-Distance Running. Do ALL of the following:",
           "is_option": true,
           "resources": [
             {
@@ -264,13 +259,13 @@
           ],
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-2-long-distance-running.a",
+              "req_id": "1",
+              "path": "5.b.1",
               "text": "3k run"
             },
             {
-              "req_id": "b",
-              "path": "5.option-2-long-distance-running.b",
+              "req_id": "2",
+              "path": "5.b.2",
               "text": "5k run"
             }
           ],
@@ -279,14 +274,14 @@
           }
         },
         {
-          "req_id": "option-3-long-jump-or-high-jump",
-          "path": "5.option-3-long-jump-or-high-jump",
-          "text": "Option 3: Long Jump OR High Jump",
+          "req_id": "c",
+          "path": "5.c",
+          "text": "Option C—Long Jump OR High Jump. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-3-long-jump-or-high-jump.a",
+              "req_id": "1",
+              "path": "5.c.1",
               "text": "Running long jump OR running high jump (best of three tries)",
               "resources": [
                 {
@@ -300,8 +295,8 @@
               ]
             },
             {
-              "req_id": "b",
-              "path": "5.option-3-long-jump-or-high-jump.b",
+              "req_id": "2",
+              "path": "5.c.2",
               "text": "Standing long jump OR standing high jump (best of three tries)",
               "resources": [
                 {
@@ -320,14 +315,14 @@
           }
         },
         {
-          "req_id": "option-4-swimming",
-          "path": "5.option-4-swimming",
-          "text": "Option 4: Swimming",
+          "req_id": "d",
+          "path": "5.d",
+          "text": "Option D—Swimming. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-4-swimming.a",
+              "req_id": "1",
+              "path": "5.d.1",
               "text": "100-meter swim",
               "resources": [
                 {
@@ -337,8 +332,8 @@
               ]
             },
             {
-              "req_id": "b",
-              "path": "5.option-4-swimming.b",
+              "req_id": "2",
+              "path": "5.d.2",
               "text": "200-meter swim",
               "resources": [
                 {
@@ -353,14 +348,14 @@
           }
         },
         {
-          "req_id": "option-5-pull-ups-and-push-ups",
-          "path": "5.option-5-pull-ups-and-push-ups",
-          "text": "Option 5: Pull-Ups AND Push-Ups",
+          "req_id": "e",
+          "path": "5.e",
+          "text": "Option E—Pull-Ups AND Push-Ups. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-5-pull-ups-and-push-ups.a",
+              "req_id": "1",
+              "path": "5.e.1",
               "text": "Pull-ups in two minutes",
               "resources": [
                 {
@@ -370,8 +365,8 @@
               ]
             },
             {
-              "req_id": "b",
-              "path": "5.option-5-pull-ups-and-push-ups.b",
+              "req_id": "2",
+              "path": "5.e.2",
               "text": "Push-ups in two minutes",
               "resources": [
                 {
@@ -386,9 +381,9 @@
           }
         },
         {
-          "req_id": "option-6-baseball-throw",
-          "path": "5.option-6-baseball-throw",
-          "text": "Option 6: Baseball Throw",
+          "req_id": "f",
+          "path": "5.f",
+          "text": "Option F—Baseball Throw. Do ALL of the following:",
           "is_option": true,
           "resources": [
             {
@@ -398,13 +393,13 @@
           ],
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-6-baseball-throw.a",
+              "req_id": "1",
+              "path": "5.f.1",
               "text": "Baseball throw for accuracy, 10 throws at a target (distance to be determined by age): ages 11 to 12, 20 feet; ages 13 to 15, 30 feet; ages 16 to 17, 40 feet"
             },
             {
-              "req_id": "b",
-              "path": "5.option-6-baseball-throw.b",
+              "req_id": "2",
+              "path": "5.f.2",
               "text": "Baseball throw for distance, five throws (total distance)"
             }
           ],
@@ -413,9 +408,9 @@
           }
         },
         {
-          "req_id": "option-7-basketball-shooting",
-          "path": "5.option-7-basketball-shooting",
-          "text": "Option 7: Basketball Shooting",
+          "req_id": "g",
+          "path": "5.g",
+          "text": "Option G—Basketball Shooting. Do ALL the following:",
           "is_option": true,
           "resources": [
             {
@@ -433,54 +428,54 @@
           ],
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-7-basketball-shooting.a",
+              "req_id": "1",
+              "path": "5.g.1",
               "text": "Basketball shot for accuracy, 10 free-throw shots"
             },
             {
-              "req_id": "b",
-              "path": "5.option-7-basketball-shooting.b",
-              "text": "Basketball throw for skill and agility, the following shots as shown on the diagram:",
+              "req_id": "2",
+              "path": "5.g.2",
+              "text": "Basketball throw for skill and agility, the following shots:",
               "subrequirements": [
                 {
-                  "req_id": "1",
-                  "path": "5.option-7-basketball-shooting.b.1",
+                  "req_id": "a",
+                  "path": "5.g.2.a",
                   "text": "Left-side layup"
                 },
                 {
-                  "req_id": "2",
-                  "path": "5.option-7-basketball-shooting.b.2",
+                  "req_id": "b",
+                  "path": "5.g.2.b",
                   "text": "Right-side layup"
                 },
                 {
-                  "req_id": "3",
-                  "path": "5.option-7-basketball-shooting.b.3",
+                  "req_id": "c",
+                  "path": "5.g.2.c",
                   "text": "Left side of hoop, along the key line"
                 },
                 {
-                  "req_id": "4",
-                  "path": "5.option-7-basketball-shooting.b.4",
+                  "req_id": "d",
+                  "path": "5.g.2.d",
                   "text": "Right side of hoop, along the key line"
                 },
                 {
-                  "req_id": "5",
-                  "path": "5.option-7-basketball-shooting.b.5",
+                  "req_id": "e",
+                  "path": "5.g.2.e",
                   "text": "Where key line and free-throw line meet, left side"
                 },
                 {
-                  "req_id": "6",
-                  "path": "5.option-7-basketball-shooting.b.6",
-                  "text": "Where key line and free-throw line meet, right side"
+                  "req_id": "f",
+                  "path": "5.g.2.f",
+                  "text": "Where key line and free-throw line meet, left side"
                 },
                 {
-                  "req_id": "7",
-                  "path": "5.option-7-basketball-shooting.b.7",
+                  "req_id": "g",
+                  "path": "5.g.2.g",
                   "text": "Top of the key"
                 },
                 {
-                  "req_id": "8",
-                  "path": "5.option-7-basketball-shooting.b.8",
-                  "text": "Anywhere along the three-point line"
+                  "req_id": "h",
+                  "path": "5.g.2.h",
+                  "text": "Another spot along the three-point line"
                 }
               ],
               "subrequirement_mode": {
@@ -493,14 +488,14 @@
           }
         },
         {
-          "req_id": "option-8-football-kick-or-soccer-kick",
-          "path": "5.option-8-football-kick-or-soccer-kick",
-          "text": "Option 8: Football Kick OR Soccer Kick",
+          "req_id": "h",
+          "path": "5.h",
+          "text": "Option H—Football Kick OR Soccer Kick. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-8-football-kick-or-soccer-kick.a",
+              "req_id": "1",
+              "path": "5.h.1",
               "text": "Goals from the 10-yard line, eight kicks",
               "resources": [
                 {
@@ -510,8 +505,8 @@
               ]
             },
             {
-              "req_id": "b",
-              "path": "5.option-8-football-kick-or-soccer-kick.b",
+              "req_id": "2",
+              "path": "5.h.2",
               "text": "Football kick or soccer kick for distance, five kicks (total distance)",
               "resources": [
                 {
@@ -526,14 +521,14 @@
           }
         },
         {
-          "req_id": "option-9-weight-training",
-          "path": "5.option-9-weight-training",
-          "text": "Option 9: Weight Training",
+          "req_id": "i",
+          "path": "5.i",
+          "text": "Option I—Weight Training. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
-              "req_id": "a",
-              "path": "5.option-9-weight-training.a",
+              "req_id": "1",
+              "path": "5.i.1",
               "text": "Chest/bench press, two sets of 15 repetitions each",
               "resources": [
                 {
@@ -543,8 +538,8 @@
               ]
             },
             {
-              "req_id": "b",
-              "path": "5.option-9-weight-training.b",
+              "req_id": "2",
+              "path": "5.i.2",
               "text": "Leg curls, two sets of 15 repetitions each",
               "resources": [
                 {
@@ -598,6 +593,39 @@
       ],
       "subrequirement_mode": {
         "type": "all"
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Explore three careers related to athletics. Research one career area by interviewing an expert in the field, visiting a site, or using other resources. Learn about training, education, expenses, job outlook, salary, and advancement. Discuss your findings and career interest with your counselor.",
+          "resources": [
+            {
+              "title": "A Career as an Athletic Trainer (video)",
+              "url": "https://youtu.be/ONALKNxTtwI?si=JKi4baFP93-osufW"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Explore how an area of athletics could contribute to a hobby or healthy lifestyle. Research education, costs, and organizations related to this activity. Discuss your findings and goals with your counselor.",
+          "resources": [
+            {
+              "title": "Making Athletics a Habit (video)",
+              "url": "https://youtu.be/QnfVwg4HWzg?si=8Sgu-6MwAh0kFjrQ"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
       }
     }
   ]

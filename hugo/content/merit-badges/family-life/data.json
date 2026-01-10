@@ -17,10 +17,6 @@
         {
           "title": "Introduction to Family Life (video)",
           "url": "https://vimeo.com/1114227663"
-        },
-        {
-          "title": "What Is a Family (video)",
-          "url": "https://vimeo.com/1114227555"
         }
       ]
     },
@@ -51,6 +47,14 @@
         {
           "title": "Create a Household Chore Checklist in Word - Quick and Easy (video)",
           "url": "https://www.youtube.com/watch?v=XmA6tCO_3MM"
+        },
+        {
+          "title": "Family Chores App (website)",
+          "url": "https://familytoolsapp.com/solutions/chores"
+        },
+        {
+          "title": "Chore and Allowance App (website)",
+          "url": "https://greenlight.com/chores-and-allowance-app-for-kids"
         }
       ]
     },
@@ -104,12 +108,6 @@
       "req_id": "6",
       "path": "6",
       "text": "Do the following: Note: Some of the issues surrounding requirement 6 for the family meeting could be considered of a personal nature. Use discretion when reviewing this requirement with the Scout. Discussion of each of these subjects will very likely carry over to more than one family meeting.",
-      "resources": [
-        {
-          "title": "Conflict Resolution (video)",
-          "url": "https://vimeo.com/1114227738"
-        }
-      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -117,8 +115,12 @@
           "text": "Discuss with your counselor how to plan and carry out a family meeting.",
           "resources": [
             {
-              "title": "Conflict Resolution (video)",
-              "url": "https://vimeo.com/1114227738"
+              "title": "Family Meeting (video)",
+              "url": "https://vimeo.com/1114227645"
+            },
+            {
+              "title": "How to Hold a Family Meeting (video)",
+              "url": "https://youtu.be/PsIHViDoi80?si=S_ul6VtJsaydr5si"
             }
           ]
         },
@@ -126,12 +128,6 @@
           "req_id": "b",
           "path": "6.b",
           "text": "Prepare a meeting agenda that includes the following topics, review it with your parent or guardian, and then carry out one or more family meetings:",
-          "resources": [
-            {
-              "title": "Family Meeting (video)",
-              "url": "https://vimeo.com/1114227645"
-            }
-          ],
           "subrequirements": [
             {
               "req_id": "1",
@@ -168,6 +164,14 @@
                 {
                   "title": "How Do I Start a Conversation About Mental Health? (podcast)",
                   "url": "https://youtu.be/cGH95B7c-eM?si=KIWkpoWQIauoa-Eu"
+                },
+                {
+                  "title": "Digital Safety and Online Scouting Activities (website)",
+                  "url": "https://www.scouting.org/health-and-safety/safety-moments/digital-safety-and-online-scouting-activities/"
+                },
+                {
+                  "title": "Bullying Awareness (website)",
+                  "url": "https://www.scouting.org/training/youth/bullying/"
                 }
               ]
             },

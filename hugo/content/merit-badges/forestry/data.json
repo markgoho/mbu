@@ -169,42 +169,42 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "With a knowledgeable individual, visit a logging operation or wood-using manufacturing plant. Write a brief report describing the following:",
+          "text": "With a knowledgeable individual, visit a current or past logging operation or wood-using manufacturing plant. Write a brief report describing the following:",
           "subrequirements": [
             {
               "req_id": "1",
               "path": "5.b.1",
-              "text": "The species and size of trees being harvested or used and the location of the harvest area or manufacturer"
+              "text": "The species and size of trees harvested or used."
             },
             {
               "req_id": "2",
               "path": "5.b.2",
-              "text": "The origin of the forest or stands of trees being utilized (e.g., planted or natural)"
+              "text": "The origin of the forest or stands of trees utilized (e.g., planted or natural)"
             },
             {
               "req_id": "3",
               "path": "5.b.3",
-              "text": "The forest's successional stage. What is its future?"
+              "text": "The forest's successional stage. What is its future? If it is a past logging operation, note the regeneration that is occurring either planted or natural."
             },
             {
               "req_id": "4",
               "path": "5.b.4",
-              "text": "Where the trees are coming from (land ownership) or where they are going (type of mill or processing plant)"
+              "text": "Where the trees are coming from (land ownership) or where they are going (type of mill or processing plant)."
             },
             {
               "req_id": "5",
               "path": "5.b.5",
-              "text": "The products that are made from the trees"
+              "text": "The products that are made from the trees."
             },
             {
               "req_id": "6",
               "path": "5.b.6",
-              "text": "How the products are made and used"
+              "text": "How the products are made and used."
             },
             {
               "req_id": "7",
               "path": "5.b.7",
-              "text": "How waste materials from the logging operation or manufacturing plant are disposed of or utilized."
+              "text": "How waste materials from the logging operation or manufacturing plant are or were disposed of or utilized."
             }
           ],
           "subrequirement_mode": {
@@ -225,7 +225,23 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "In your camp, local recreation area (park or equivalent), or neighborhood, inventory the trees that may be a hazard to structures or people. Make a list by area (campsite, road, trail, street, etc.). Note the species and hazardous condition, and suggest a remedy (removal or trimming). Make your list available to the proper authority or agency."
+      "text": "In your camp, local recreation area (park or equivalent), or neighborhood, do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "6.a",
+          "text": "Inventory the trees within a specific area above (campsite, road, trail, street, etc.) that may be a hazard to structures or people. Note the species and hazardous condition, and suggest a remedy (removal or trimming). Make your list available to the proper authority or agency."
+        },
+        {
+          "req_id": "b",
+          "path": "6.b",
+          "text": "Review a hazardous tree report done by a professional for this area and visit those trees and the results of the prescription to prune or remove them."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     },
     {
       "req_id": "7",
