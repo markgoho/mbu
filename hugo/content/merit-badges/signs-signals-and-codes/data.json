@@ -38,17 +38,37 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used. Explain the difference between semaphore flags and nautical flags. Then do the following:",
+      "text": "Do the following:",
       "subrequirements": [
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Spell your first name using semaphore. Send or receive a message of six to 10 words using semaphore."
+          "text": "Give your counselor a brief explanation about semaphore, why it is used, how it is used, and where it is used."
         },
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Using illustrations or photographs, identify 10 examples of nautical flags and discuss their importance."
+          "text": "Explain to your counselor the difference between semaphore flags and nautical flags."
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "After 4(a) and 4(b) have been completed, do the following:",
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "4.c.1",
+              "text": "Spell your first name using semaphore. Send or receive a message of six to 10 words using semaphore."
+            },
+            {
+              "req_id": "2",
+              "path": "4.c.2",
+              "text": "Using illustrations or photographs, identify 10 examples of nautical flags and discuss their importance."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
@@ -88,7 +108,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Demonstrate to your counselor six different silent Scout signals. Use these Scout signals to direct the movements and actions to direct the movements and actions of your patrol or troop."
+          "text": "Demonstrate to your counselor six different silent Scout signals. Use these Scout signals to direct the movements and actions of your patrol or troop."
         }
       ],
       "subrequirement_mode": {

@@ -13,12 +13,37 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Explain the following terms: salinity, temperature, and density. Describe how these important properties of seawater are measured by oceanographer. Discuss the circulation and currents of the ocean. Describe the effects of the oceans on weather and climate."
+      "text": "Explain the following terms: salinity, temperature, and density. Describe how these important properties of seawater are measured by an oceanographer. Discuss the circulation and currents of the ocean. Describe the effects of the oceans on weather and climate."
     },
     {
       "req_id": "3",
       "path": "3",
-      "text": "Describe the characteristics of ocean waves. Point out the differences among the storm surge, tsunami, tidal wave, and tidal bore. Explain the difference between sea, swell, and surf. Explain how breakers are formed."
+      "text": "Describe the characteristics of ocean waves and do the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Point out the differences among the storm surge, tsunami, tidal wave, and tidal bore."
+        },
+        {
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Explain the difference between sea, swell, and surf."
+        },
+        {
+          "req_id": "c",
+          "path": "3.c",
+          "text": "Explain how breakers are formed."
+        },
+        {
+          "req_id": "d",
+          "path": "3.d",
+          "text": "Explain what a rip current is, how to avoid them, and what to do if you are caught in one."
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
     },
     {
       "req_id": "4",
@@ -130,7 +155,7 @@
         {
           "req_id": "c",
           "path": "8.c",
-          "text": "Explain to your troop in a five-minute prepared speech \"Why Oceanography Is Important\" or describe \"Career Opportunities in Oceanography.\" (Before making your speech, show your speech outline to your counselor for approval.)"
+          "text": "Explain to your troop, in a five-minute prepared speech \"Why Oceanography Is Important,\" or describe \"Career Opportunities in Oceanography.\" (Before making your speech, show your speech outline to your counselor for approval.)"
         }
       ],
       "subrequirement_mode": {

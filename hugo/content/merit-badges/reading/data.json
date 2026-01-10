@@ -28,7 +28,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Learn how to search a library's card catalog or computerized catalog by author, title, and subject.",
+          "text": "Learn how to search for material using a library's card catalog or computerized catalog by author, title, and subject.",
           "resources": [
             {
               "title": "How to Use a Card Catalog (video)",
@@ -146,7 +146,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Give a \"book talk\" to your class, troop, or patrol.",
+          "text": "Give a book talk to your class, troop, or patrol.",
           "resources": [
             {
               "title": "How to Do a Book Talk (video)",
@@ -247,6 +247,11 @@
         "type": "select",
         "count": 1
       }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Identify three career opportunities that would use skills and knowledge in reading. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
   ]
 }

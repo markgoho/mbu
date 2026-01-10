@@ -79,21 +79,43 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Find out about career opportunities in sculpture. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
-      "resources": [
+      "text": "Do ONE of the following:",
+      "subrequirements": [
         {
-          "title": "12 Careers for Sculptors (website)",
-          "url": "https://www.indeed.com/career-advice/finding-a-job/careers-for-sculptors"
+          "req_id": "a",
+          "path": "3.a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.",
+          "resources": [
+            {
+              "title": "12 Careers for Sculptors (website)",
+              "url": "https://www.indeed.com/career-advice/finding-a-job/careers-for-sculptors"
+            },
+            {
+              "title": "How To Become an Artist/Sculptor (video)",
+              "url": "https://youtu.be/N6HeVopwRmQ?si=YJyPrJ4CvPLj9cx0"
+            },
+            {
+              "title": "Craft Artist Careers (video)",
+              "url": "https://youtu.be/T_X9ZdUq-2Q?si=p0lV3ApJiQH0OqXe"
+            }
+          ]
         },
         {
-          "title": "How to Become an Artist/Sculptor (video)",
-          "url": "https://youtu.be/N6HeVopwRmQ?si=YJyPrJ4CvPLj9cx0"
-        },
-        {
-          "title": "Craft Artist Careers (video)",
-          "url": "https://youtu.be/T_X9ZdUq-2Q?si=p0lV3ApJiQH0OqXe"
+          "req_id": "b",
+          "path": "3.b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.",
+          "resources": [
+            {
+              "title": "Exploring the Benefits of Sculpting as a Hobby (website)",
+              "url": "https://metamuu.com/archives/21536"
+            }
+          ]
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor how Scouting's Safe Swim Defense plan anticipates, helps prevent and mitigate, and provides responses to likely hazards you may encounter during swimming activities."
+          "text": "Review with your counselor how Scouting America's Safe Swim Defense guidelines anticipates and deals with common drowning situations such as unfenced residential pools, nonswimmers entering deep water, risky behaviors, medical impairment in the water, drop-offs, cold water, murky water, river currents, rip currents, and surf."
         },
         {
           "req_id": "b",
@@ -28,7 +28,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Before doing the following requirements, successfully complete the Scouting America swimmer test: Jump feetfirst into water over the head in depth. Level off and swim 75 yards in a strong manner using one or more of the following strokes: sidestroke, breaststroke, trudgen, or crawl; then swim 25 yards using an easy, resting backstroke. The 100 yards must be completed in one swim without stops and must include at least one sharp turn. After completing the swim, rest by floating."
+      "text": "Before doing the following requirements, successfully complete the Scouting America swimmer test, found in the Swimming merit badge pamphlet."
     },
     {
       "req_id": "3",
@@ -108,7 +108,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "While wearing a properly fitted U.S. Coast Guard-approved life jacket, demonstrate the HELP and huddle positions. Explain their purposes."
+          "text": "While wearing a properly fitted U. S. Coast Guard-approved life jacket, demonstrate the HELP and huddle positions. Explain their purposes."
         },
         {
           "req_id": "d",
@@ -148,7 +148,7 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Following the guidelines set in the Scouting America Safe Swim Defense, in water at least 7 feet deep, show a standing headfirst dive from a dock or pool deck. Show a long shallow dive, also from the dock or pool deck. Note: If your state, city, or local community requires a water depth greater than 7 feet, it is important to abide by that mandate."
+      "text": "Following the guidelines set in the Scouting America Safe Swim Defense guidelines, in water at least 7 feet deep, show a standing headfirst dive from a dock or pool deck. Show a long shallow dive, also from the dock or pool deck. Note: If your state, city, or local community requires a water depth greater than 7 feet, it is important to abide by that mandate."
     },
     {
       "req_id": "9",

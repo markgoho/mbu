@@ -230,17 +230,33 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Careers. Name three career opportunities in robotics. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
-      "resources": [
+      "text": "Do ONE of the following:",
+      "subrequirements": [
         {
-          "title": "Learn about the careers of robotics technicians (video)",
-          "url": "https://youtu.be/0dwkGhRPQW4"
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Identify three career opportunities that would use skills and knowledge in Robotics. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.",
+          "resources": [
+            {
+              "title": "Learn About the Careers of Robotics Technicians (video)",
+              "url": "https://youtu.be/0dwkGhRPQW4"
+            },
+            {
+              "title": "Careers in Robotics (video)",
+              "url": "https://youtu.be/5YTYFrrSdV4?list=PLHGEvyG5wuthXQZzTc-mLwFrP5F6_1Lce"
+            }
+          ]
         },
         {
-          "title": "Careers in Robotics (video)",
-          "url": "https://youtu.be/5YTYFrrSdV4?list=PLHGEvyG5wuthXQZzTc-mLwFrP5F6_1Lce"
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Identify how you might use the skills and knowledge in Robotics to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
         }
-      ]
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
+      }
     }
   ]
 }

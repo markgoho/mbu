@@ -78,17 +78,17 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Before doing requirements 4 through 12, earn the [Canoeing merit badge](/merit-badges/canoeing/) if you will be using a canoe to earn this merit badge. If you will be using a kayak, earn the [Kayaking merit badge](/merit-badges/kayaking/). Then do ONE of the following:",
+      "text": "Before doing requirements 4 through 12, earn the Canoeing merit badge if you will be using a canoe to earn this merit badge. If you will be using a kayak, earn the Kayaking merit badge. Then do ONE of the following:",
       "subrequirements": [
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "If you will be using a canoe to earn this merit badge, demonstrate strokes and maneuvers from the [Canoeing merit badge](/merit-badges/canoeing/) to the satisfaction of your counselor."
+          "text": "If you will be using a canoe to earn this merit badge, demonstrate strokes and maneuvers from the Canoeing merit badge to the satisfaction of your counselor."
         },
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "If you will be using a kayak to earn this merit badge, demonstrate strokes and maneuvers from the [Kayaking merit badge](/merit-badges/kayaking/) to the satisfaction of your counselor."
+          "text": "If you will be using a kayak to earn this merit badge, demonstrate strokes and maneuvers from the Kayaking merit badge to the satisfaction of your counselor."
         }
       ],
       "subrequirement_mode": {
@@ -104,7 +104,8 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Option A—Tandem Canoest. (perform the following on calm water):",
+          "text": "Option A—Tandem Canoest. Do ALL of the following strokes and techniques on calm water:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
@@ -129,7 +130,8 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Option B—Solo Canoest. (perform the following on calm water):",
+          "text": "Option B—Solo Canoest. Do ALL of the following strokes and techniques on calm water:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
@@ -149,7 +151,8 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Option C—Solo Kayaker. (perform the following on calm water):",
+          "text": "Option C—Solo Kayaker. Do ALL of the following strokes and techniques on calm water:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
