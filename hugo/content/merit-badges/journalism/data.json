@@ -18,7 +18,8 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Newspaper, magazine, and online journalism (with your parent or guardian's permission).",
+          "text": "Option A—Newspaper, Magazine, and Online Journalism. (Ask your parent or guardian's permission for online option). Do ALL of the following:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
@@ -28,7 +29,13 @@
             {
               "req_id": "2",
               "path": "2.a.2",
-              "text": "Visit the office of a newspaper, magazine, or internet news site. Ask for a tour of the various divisions (editorial, business, and printing). During your tour, talk to an executive from the business side about management's relations with reporters, editors, and photographers and what makes a \"good\" newspaper, magazine, or internet news site."
+              "text": "Visit the office of a newspaper, magazine, or internet news site. Ask for a tour of the various divisions (editorial, business, and printing). During your tour, talk to an executive from the business side about management's relations with reporters, editors, and photographers and what makes a \"good\" newspaper, magazine, or internet news site. Note: If there are no opportunities for in-person visits in your community, a virtual visit is acceptable with the news site of your choice, provided your counselor approves this option in advance. (You can request a virtual visit with Scout Life magazine)",
+              "resources": [
+                {
+                  "title": "Scout Life magazine",
+                  "url": "https://scoutlife.org/contact-us/journalismvisit/"
+                }
+              ]
             }
           ],
           "subrequirement_mode": {
@@ -38,7 +45,8 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Radio and television journalism",
+          "text": "Option B—Radio and Television Journalism. Do ALL of the following:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
@@ -64,12 +72,12 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Discuss the differences between a hard news story and a feature story. Explain what is the \"five W's and H.\" Then do ONE of the following:",
+      "text": "Discuss the differences between a hard news story and a feature story. Explain what the five W's and H are. Then do ONE of the following:",
       "subrequirements": [
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Choose a current or an unusual event of interest to you, and write either a hard news article OR a feature article about the event. Gear the article for print OR audio OR video journalism. Share your article with your counselor."
+          "text": "Choose a current or an unusual event of interest to you, and write either a hard news article OR a feature article about the event. Gear the article for print OR online OR audio OR video journalism. Share your article with your counselor."
         },
         {
           "req_id": "b",
@@ -121,7 +129,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Find out about three career opportunities in journalism. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+      "text": "Identify three career opportunities that would use skills and knowledge in journalism. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
   ]
 }

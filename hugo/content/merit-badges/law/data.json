@@ -8,7 +8,7 @@
     {
       "req_id": "1",
       "path": "1",
-      "text": "Define \"law.\" Tell some of its sources. Describe the functions it serves."
+      "text": "Define law. Tell some of its sources. Describe the functions it serves."
     },
     {
       "req_id": "2",
@@ -44,7 +44,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Ask five people (not more than one from your immediate family) about the role of law enforcement officers in our society. Discuss their answers with them. Go to a law enforcement officer in your neighborhood and ask about his or her responsibilities and duties. Report your findings to your counselor."
+      "text": "Ask five people (not more than one from your immediate family) about the role of law enforcement officers in our society. Discuss their answers with them. Report your findings to your counselor."
     },
     {
       "req_id": "5",
@@ -64,7 +64,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Plan and conduct a mock trial with your troop or school class. After the trial is over, discuss it with the group."
+          "text": "Plan and conduct a mock trial with your troop or school class or other group. After the trial is over, discuss it with the group."
         }
       ],
       "subrequirement_mode": {

@@ -33,7 +33,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Identify and interview with a buddy (and with your parent or guardian's permission and counselor's approval) an individual in your community who has invented a useful item. Report what you learned to your counselor."
+          "text": "With your parent or guardian's permission and counselor's approval, interview an adult who has invented a useful item or process. Report what you learned to your counselor."
         },
         {
           "req_id": "b",
@@ -114,7 +114,7 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Build a working prototype of the item you invented for requirement 6. Test and evaluate the invention. Among the aspects to consider in your evaluation are cost, usefulness, marketability, appearance, and function. Describe how your original vision and expectations for your invention are similar or dissimilar to the prototype you built. Have your counselor evaluate and critique your prototype.Note: Before you begin building the prototype, you must have your counselor's approval, based on the design and building plans you have already shared."
+      "text": "Build a working prototype of the item you invented for requirement 6. Test and evaluate the invention. Among the aspects to consider in your evaluation are cost, usefulness, marketability, appearance, and function. Describe how your original vision and expectations for your invention are similar or dissimilar to the prototype you built. Have your counselor evaluate and critique your prototype. Note: Before you begin building the prototype, you must have your counselor's approval, based on the design and building plans you have already shared."
     },
     {
       "req_id": "8",

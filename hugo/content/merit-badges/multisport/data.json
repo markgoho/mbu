@@ -33,7 +33,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Explain the importance of a physical exam and have your health care practitioner give you a physical examination using the Scouting America Annual Health and Medical Record."
+          "text": "Discuss the importance of having a physical examination each year. Discuss why overall health, immunizations, medications, allergies, and medical history are covered during an examination. Tell your counselor when you last underwent a physical examination."
         },
         {
           "req_id": "b",
@@ -73,29 +73,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "Based on your interests, experience, and discussion with your counselor, select ONE of the following multisport formats to concentrate on for the remaining requirements:",
-          "subrequirements": [
-            {
-              "req_id": "1",
-              "path": "3.d.1",
-              "text": "Triathlon: swimming, biking, and running"
-            },
-            {
-              "req_id": "2",
-              "path": "3.d.2",
-              "text": "Duathlon: biking and running"
-            },
-            {
-              "req_id": "3",
-              "path": "3.d.3",
-              "text": "Aquathlon: swimming and running"
-            },
-            {
-              "req_id": "4",
-              "path": "3.d.4",
-              "text": "Aquabike: swimming and biking"
-            }
-          ]
+          "text": "Based on your interests, experience, and discussion with your counselor, select ONE of the following multisport formats to concentrate on for the remaining requirements: triathlon (swimming, biking, and running), duathlon (biking and running), aquathlon (swimming and running), or aquabike (swimming and biking)."
         }
       ],
       "subrequirement_mode": {
@@ -105,7 +83,281 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Complete ALL of the activities that apply to the multisport format you selected in requirement 3(d) (Triathlon, Duathlon, Aquathlon, or Aquabike):"
+      "text": "Complete ALL of the following for the multisport format option you selected in requirement 3(d):",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "4.a",
+          "text": "Option A—Triathlon.",
+          "is_option": true,
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "4.a.1",
+              "text": "Swimming",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.a.1.a",
+                  "text": "Before doing requirements 5 through 8, earn the Swimming merit badge."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.a.1.b",
+                  "text": "Explain the components of the Scouting America Safe Swim Defense program and how you will ensure they are in place when you swim."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.a.1.c",
+                  "text": "Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is appropriate to wear a wet suit."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            },
+            {
+              "req_id": "2",
+              "path": "4.a.2",
+              "text": "Biking",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.a.2.a",
+                  "text": "Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.a.2.b",
+                  "text": "Discuss what should be checked regularly to make sure the bicycle is safe to ride."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.a.2.c",
+                  "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            },
+            {
+              "req_id": "3",
+              "path": "4.a.3",
+              "text": "Running",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.a.3.a",
+                  "text": "Demonstrate a proper run warmup and cool-down. Explain to your counselor the importance of maintaining healthy habits, including hydration, nutrition, injury prevention, and rest."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.a.3.b",
+                  "text": "Learn and state the basic rules of the road for runners."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.a.3.c",
+                  "text": "Demonstrate important running drills, including high knees, butt kicks, lunges, inchworms, and soldier kicks."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "b",
+          "path": "4.b",
+          "text": "Option B—Duathlon.",
+          "is_option": true,
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "4.b.1",
+              "text": "Biking",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.b.1.a",
+                  "text": "Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.b.1.b",
+                  "text": "Discuss what should be checked regularly to make sure the bicycle is safe to ride."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.b.1.c",
+                  "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            },
+            {
+              "req_id": "2",
+              "path": "4.b.2",
+              "text": "Running",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.b.2.a",
+                  "text": "Demonstrate a proper run warmup and cool-down. Explain to your counselor the importance of maintaining healthy habits, including hydration, nutrition, injury prevention, and rest."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.b.2.b",
+                  "text": "Learn and state the basic rules of the road for runners."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.b.2.c",
+                  "text": "Demonstrate important running drills, including high knees, butt kicks, lunges, inchworms, and soldier kicks."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "c",
+          "path": "4.c",
+          "text": "Option C—Aquathlon.",
+          "is_option": true,
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "4.c.1",
+              "text": "Swimming",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.c.1.a",
+                  "text": "Before doing requirements 5 through 8, earn the Swimming merit badge."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.c.1.b",
+                  "text": "Explain the components of the Scouting America Safe Swim Defense guidelines and how you will ensure they are in place when you swim."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.c.1.c",
+                  "text": "Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is safe to swim, and when it is appropriate to wear a wet suit."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            },
+            {
+              "req_id": "2",
+              "path": "4.c.2",
+              "text": "Running",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.c.2.a",
+                  "text": "Demonstrate a proper run warmup and cool-down. Explain to your counselor the importance of maintaining healthy habits, including hydration, nutrition, injury prevention, and rest."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.c.2.b",
+                  "text": "Learn and state the basic rules of the road for runners."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.c.2.c",
+                  "text": "Demonstrate important running drills, including high knees, butt kicks, lunges, inchworms, and soldier kicks."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        },
+        {
+          "req_id": "d",
+          "path": "4.d",
+          "text": "Option D—Aquabike.",
+          "is_option": true,
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "4.d.1",
+              "text": "Swimming",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.d.1.a",
+                  "text": "Before doing requirements 5 through 8, earn the Swimming merit badge."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.d.1.b",
+                  "text": "Explain the components of the Scouting America Safe Swim Defense guidelines and how you will ensure they are in place when you swim."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.d.1.c",
+                  "text": "Explain to your counselor the difference between a pool swim and an open water swim, including at what water temperature it is appropriate to wear a wet suit."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            },
+            {
+              "req_id": "2",
+              "path": "4.d.2",
+              "text": "Biking",
+              "subrequirements": [
+                {
+                  "req_id": "a",
+                  "path": "4.d.2.a",
+                  "text": "Explain to your counselor how to ride predictably, be conspicuous, think ahead, and ride ready."
+                },
+                {
+                  "req_id": "b",
+                  "path": "4.d.2.b",
+                  "text": "Discuss what should be checked regularly to make sure the bicycle is safe to ride."
+                },
+                {
+                  "req_id": "c",
+                  "path": "4.d.2.c",
+                  "text": "Explain the importance of wearing a properly sized and fitted helmet while cycling and of wearing the right clothing for the weather."
+                }
+              ],
+              "subrequirement_mode": {
+                "type": "all"
+              }
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "all"
+      }
     },
     {
       "req_id": "5",
@@ -145,31 +397,32 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "After completing requirements 1-6, complete all of the activities (on the same day and consecutively) for the multisport focus area that you selected in requirement 3(d), including demonstrating a smooth and safe transition between each: Note: When referring to race distances, \"m\" stands for meter (about 3.28 feet) and \"km\" or simply \"k\" stands for kilometer (about 0.62 mile).",
+      "text": "After completing requirements 1-6, do ONE of the following (complete all of the activities on the same day and consecutively) for the multisport focus area you selected in requirement 3(d), including demonstrating a smooth and safe transition between each:",
       "subrequirements": [
         {
-          "req_id": "option1",
-          "path": "7.option1",
-          "text": "Triathlon: swim (100 m), bike (3 km), and run (1 km)"
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Triathlon (swim 100 m, bike 3 km, and run 1 km)"
         },
         {
-          "req_id": "option2",
-          "path": "7.option2",
-          "text": "Duathlon: run (1.5 km), bike (3 km), and run (.75 km)"
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Duathlon (run 1.5 km, bike 3 km, and run 0.75 km)"
         },
         {
-          "req_id": "option3",
-          "path": "7.option3",
-          "text": "Aquathlon: swim (100 m) and run (1 km)"
+          "req_id": "c",
+          "path": "7.c",
+          "text": "Aquathlon (swim 100 m and run 1 km)"
         },
         {
-          "req_id": "option4",
-          "path": "7.option4",
-          "text": "Aquabike: swim (100 m) and bike (3 km)"
+          "req_id": "d",
+          "path": "7.d",
+          "text": "Aquabike (swim 100 m and bike 3 km)."
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 1
       }
     },
     {

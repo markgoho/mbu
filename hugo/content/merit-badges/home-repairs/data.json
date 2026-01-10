@@ -44,7 +44,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Under the supervision of your parent, guardian, or counselor, do FOUR of the following:",
+      "text": "Under the supervision of your parent, guardian, or counselor, do THREE of the following:",
       "subrequirements": [
         {
           "req_id": "a",
@@ -82,11 +82,6 @@
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Waterproof a basement."
-        },
-        {
-          "req_id": "e",
-          "path": "2.e",
           "text": "Repair a break in a concrete or asphalt surface.",
           "resources": [
             {
@@ -95,41 +90,36 @@
             },
             {
               "title": "Repairing a Neglected Driveway Crack (video)",
-              "url": "https://www.youtube.com/watch?v=xk2lT9D_0wY"
+              "url": "https://youtu.be/xk2lT9D_0wY?si=iclrw2XUIzZ0b5Di"
+            }
+          ]
+        },
+        {
+          "req_id": "e",
+          "path": "2.e",
+          "text": "Repair or replace the screen in a window or door.",
+          "resources": [
+            {
+              "title": "How to Repair a Window Screen (video)",
+              "url": "https://youtu.be/t7emMleueHg"
             }
           ]
         },
         {
           "req_id": "f",
           "path": "2.f",
-          "text": "Repair the screen in a window or door.",
-          "resources": [
-            {
-              "title": "How to Repair a Window Screen (video)",
-              "url": "https://www.youtube.com/watch?v=t7emMleueHg"
-            }
-          ]
-        },
-        {
-          "req_id": "g",
-          "path": "2.g",
           "text": "Replace a pane of glass.",
           "resources": [
             {
               "title": "How to Replace a Broken Window Pane (video)",
-              "url": "https://www.youtube.com/watch?v=Dc67opK57sk"
+              "url": "https://youtu.be/Dc67opK57sk?si=xnMQ0ueGHn6NUdtN"
             }
           ]
-        },
-        {
-          "req_id": "h",
-          "path": "2.h",
-          "text": "Solder a broken wire or metal object."
         }
       ],
       "subrequirement_mode": {
         "type": "select",
-        "count": 4
+        "count": 3
       }
     },
     {
@@ -302,7 +292,21 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Under the supervision of your parent, guardian, or counselor, do TWO of the following:",
+      "text": "Under the supervision of your parent, guardian, or counselor, locate and know how to turn off the main water source, including well pumps, and do TWO of the following:",
+      "resources": [
+        {
+          "title": "Two Methods to Turn Off Your Homes Water Supply (video)",
+          "url": "https://youtu.be/aDkaq8RKFAc?si=pLStQ8VDEfPAyLUX"
+        },
+        {
+          "title": "Main Water Shutoff Valve for Private Pumps and Wells (video)",
+          "url": "https://youtu.be/QKUWWgr2kcQ"
+        },
+        {
+          "title": "How to Shut Off the Water Main to Your Home (video)",
+          "url": "https://youtu.be/4RhYOAygA7I?si=FQPSokR-DPv43nQz"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -414,12 +418,24 @@
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "Replace window blind cords."
+          "text": "Repair a hole in drywall.",
+          "resources": [
+            {
+              "title": "How to Patch a Drywall Hole (video)",
+              "url": "https://youtu.be/PLGmTzEGSIY"
+            }
+          ]
         },
         {
           "req_id": "e",
           "path": "6.e",
-          "text": "Repair or replace a window sash cord."
+          "text": "Secure a picture, plant hanger, or other object approved by your parent or guardian to drywall using anchors.",
+          "resources": [
+            {
+              "title": "How to Use Drywall Anchors for Hanging Pictures and More (video)",
+              "url": "https://youtu.be/WL7ha82XrxI"
+            }
+          ]
         },
         {
           "req_id": "f",
@@ -450,11 +466,59 @@
               "url": "https://www.youtube.com/watch?v=M2vtfNxHVv0"
             }
           ]
+        },
+        {
+          "req_id": "h",
+          "path": "6.h",
+          "text": "Fix a drawer slide or fix/replace cabinet pulls.",
+          "resources": [
+            {
+              "title": "How to Repair and Replace Broken Plastic Drawer Guides (video)",
+              "url": "https://youtu.be/52B3gGZ_AtE?si=h9gz40ON9llrkClY"
+            },
+            {
+              "title": "How to Repair a Drawer Slide (video)",
+              "url": "https://youtu.be/7Mp60UHj0Yw?si=gsV2wsY2K5NHg-G5"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
         "type": "select",
         "count": 3
+      }
+    },
+    {
+      "req_id": "7",
+      "path": "7",
+      "text": "Do ONE of the following:",
+      "subrequirements": [
+        {
+          "req_id": "a",
+          "path": "7.a",
+          "text": "Explore careers related to this merit badge. Research one career to learn about the training and education needed, costs, job prospects, salary, job duties, and career advancement. Your research methods may include—with your parent or guardian's permission—an internet or library search, an interview with a professional in the field, or a visit to a location where people in this career work. Discuss with your counselor both your findings and what about this profession might make it an interesting career.",
+          "resources": [
+            {
+              "title": "Maintenaince and Repair Workers Careers (video)",
+              "url": "https://youtu.be/I_mhZjRcH5s"
+            }
+          ]
+        },
+        {
+          "req_id": "b",
+          "path": "7.b",
+          "text": "Explore how you could use knowledge and skills from this merit badge to pursue a hobby or healthy lifestyle. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.",
+          "resources": [
+            {
+              "title": "Mastering DIY Home Repairs (video)",
+              "url": "https://www.youtube.com/shorts/Nj_S3xl2GYg"
+            }
+          ]
+        }
+      ],
+      "subrequirement_mode": {
+        "type": "select",
+        "count": 1
       }
     }
   ]

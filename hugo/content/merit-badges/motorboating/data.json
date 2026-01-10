@@ -13,7 +13,7 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Discuss with your counselor the following hazards you might encounter while motorboating: flammable fuel; carbon monoxide; propellers; collisions; falls overboard; capsize; running aground. Explain what you should do to anticipate, prevent, mitigate and respond to these hazards."
+          "text": "Discuss with your counselor the following hazards you might encounter while motorboating: flammable fuel; carbon monoxide; propellers; collisions; falls overboard; capsize; or running aground. Explain what you should do to anticipate, prevent, mitigate and respond to these hazards."
         },
         {
           "req_id": "b",
@@ -23,7 +23,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Identify the conditions that must exist before performing CPR on a person, and explain how such conditions are recognized. Demonstrate proper technique for performing CPR using a training device approved by your counselor."
+          "text": "Discuss the Scouting America Safety Afloat policy. Tell how it applies to motorboating activities."
         }
       ],
       "subrequirement_mode": {
@@ -38,7 +38,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Before doing requirement 5, successfully complete the Scouting America swimmer test."
+          "text": "Before doing requirement 5, successfully complete the Scouting America swimmer test. Note: See the Swimming merit badge pamphlet for details about the Scouting America swimmer test."
         },
         {
           "req_id": "b",
@@ -123,7 +123,7 @@
         {
           "req_id": "h",
           "path": "4.h",
-          "text": "Discuss the common types of anchors used in motorboat-ing and under what conditions each would be preferred. Explain proper anchoring techniques."
+          "text": "Discuss the common types of anchors used in motorboating and under what conditions each would be preferred. Explain proper anchoring techniques."
         }
       ],
       "subrequirement_mode": {
