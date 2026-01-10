@@ -23,6 +23,11 @@
 
       <div class="badge-meta">
         <span>{{ $reqCount }} Requirements</span>
+        {{ with $badge.Lastmod }}
+          <span class="requirements-updated">
+            Updated {{ .Format "January 2, 2006" }}
+          </span>
+        {{ end }}
         <a href="{{ $json.url }}" target="_blank" rel="noopener">
           View Official Page ↗
         </a>
