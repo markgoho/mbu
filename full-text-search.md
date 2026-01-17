@@ -11,16 +11,19 @@ A dedicated `/search` page that allows users to search through all 143 merit bad
 ## Core Requirements
 
 ### Search Scope
+
 - **Index requirements only** using `data-pagefind-body` attribute
 - Exclude navigation, footer, and non-requirement metadata from indexing
 - **Badge names prioritized**: Badge name matches appear before individual requirement matches
 
 ### Deep Linking
+
 - Search results link directly to specific requirement anchors (e.g., `/merit-badges/camping/requirements/#1.a.2`)
 - Use `data-pagefind-index-attrs` to capture anchor IDs on requirement elements
 - Append anchor fragment to result URLs in custom result template
 
 ### Filtering
+
 - **Eagle-required checkbox**: Single `☐ Eagle Required only` checkbox below search box
 - Uses Pagefind filters with `data-pagefind-filter="eagle_required"` attribute
 
@@ -29,11 +32,13 @@ A dedicated `/search` page that allows users to search through all 143 merit bad
 ## User Interface
 
 ### Search Page Location
+
 - Dedicated page at `/search`
 - Accessed via header search icon (Phosphor icons magnifying glass)
 - Mobile: Icon navigates to /search (not inline expansion)
 
 ### Page Content
+
 ```
 Heading: "Search Requirements"
 Description: "Find specific requirements across all 143 merit badges"
@@ -46,6 +51,7 @@ Description: "Find specific requirements across all 143 merit badges"
 ```
 
 ### Result Display
+
 - **Hierarchical breadcrumb**: `Badge Name > 1 > 1.a > [matched text excerpt]`
 - Text arrow separators (`>`)
 - Badge name is clickable link to badge overview page
@@ -56,13 +62,16 @@ Description: "Find specific requirements across all 143 merit badges"
 - **Badge images**: Show badge image only when badge name matches, not for individual requirement matches
 
 ### Empty State
+
 - Before search: Empty with placeholder text only
 - No results: "No requirements found for '[query]'. Browse all merit badges instead." with link to badge listing
 
 ### Error State
+
 - Display: "Search unavailable, please try again" with retry button
 
 ### Interactions
+
 - **Debounced search**: 300ms delay before executing search
 - **Keyboard navigation**: Basic tab navigation through results
 - **Result links**: Open in same tab
@@ -73,11 +82,13 @@ Description: "Find specific requirements across all 143 merit badges"
 ## URL State
 
 ### Shareable URLs
+
 - URL updates as user types: `/search?q=first+aid`
 - Supports sharing and bookmarking
 - Back button works correctly
 
 ### Pre-populated Search
+
 - When arriving at `/search?q=camping`, automatically execute search and show results
 
 ---
@@ -85,6 +96,7 @@ Description: "Find specific requirements across all 143 merit badges"
 ## Technical Implementation
 
 ### Build Commands
+
 ```bash
 # Development
 bun run hugo:dev
@@ -105,19 +117,22 @@ new PagefindUI({
   element: "#search",
   showSubResults: true,
   showImages: true,
-  resetStyles: false,  // Use custom SCSS
+  resetStyles: false, // Use custom SCSS
   excerptLength: 150,
 });
 ```
 
 ### Index Prefetching
+
 - Add `<link rel="prefetch">` for Pagefind index on all pages
 - Ensures instant search when user navigates to /search
 
 ### Hugo Template Requirements
 
 #### Requirements Template Changes
+
 Each requirement element needs data attributes:
+
 ```html
 <div
   data-pagefind-body
@@ -133,6 +148,7 @@ Each requirement element needs data attributes:
 ```
 
 #### Path Data Source
+
 Hugo templates compute breadcrumb path from existing data structure (data.json already contains path info). No sync script changes needed.
 
 ### New Files Required
@@ -150,7 +166,9 @@ hugo/
 ```
 
 ### Header Changes
+
 Add search icon to site header that links to `/search`:
+
 ```html
 <a href="/search" aria-label="Search requirements">
   <!-- Phosphor magnifying glass SVG -->
@@ -162,11 +180,13 @@ Add search icon to site header that links to `/search`:
 ## Styling
 
 ### Approach
+
 - Custom SCSS matching existing site design system
 - Override Pagefind default styles as needed
 - Import in main stylesheet: `@import "search";`
 
 ### Key Selectors to Style
+
 - `.pagefind-ui__search-input` - Search input field
 - `.pagefind-ui__message` - Result count display
 - `.pagefind-ui__result` - Individual result cards
@@ -181,6 +201,7 @@ Add search icon to site header that links to `/search`:
 ## Analytics
 
 ### Pirsch Integration
+
 - Event name: `merit-badge-search`
 - Track: search query, result count
 - Based on doula-cooperative reference implementation
@@ -208,7 +229,9 @@ if (window.pirsch) {
 ## CI/CD
 
 ### Automatic Index Build
+
 Add to existing GitHub Actions workflows:
+
 ```yaml
 - name: Build Hugo site
   run: bun run build
@@ -218,6 +241,7 @@ Add to existing GitHub Actions workflows:
 ```
 
 ### Manual Workflow
+
 Create `.github/workflows/rebuild-search-index.yml` for on-demand index rebuilding without full site deploy.
 
 ---
@@ -244,6 +268,7 @@ Create `.github/workflows/rebuild-search-index.yml` for on-demand index rebuildi
 Based on patterns from: https://github.com/markgoho/doula-cooperative/blob/trunk/hugo/layouts/find-a-doula/list.html
 
 Key adaptations:
+
 - Custom result template for hierarchical breadcrumbs
 - Eagle-required filtering
 - Deep anchor linking

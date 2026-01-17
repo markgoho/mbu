@@ -57,7 +57,7 @@ new PagefindUI({
             }
           }
 
-          nodesToRemove.forEach((n) => n.parentNode?.removeChild(n));
+          nodesToRemove.forEach(n => n.parentNode?.removeChild(n));
 
           // Add ellipsis at the beginning
           const firstChild = tempDiv.firstChild;

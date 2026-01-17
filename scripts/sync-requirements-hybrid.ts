@@ -127,7 +127,9 @@ function slugifyOption(text: string): string | null {
   }
 
   // Special case: "Option A", "Option B" (with optional "A. " prefix) → just use the letter
-  const simpleOptionMatch = nameToSlugify.match(/^(?:[A-Z]\.\s*)?Option\s+([A-Z])\b/i);
+  const simpleOptionMatch = nameToSlugify.match(
+    /^(?:[A-Z]\.\s*)?Option\s+([A-Z])\b/i,
+  );
   if (simpleOptionMatch && simpleOptionMatch[1]) {
     return simpleOptionMatch[1].toLowerCase();
   }
@@ -154,7 +156,10 @@ function slugifyOption(text: string): string | null {
 
     // Convert parentheses to spaces (preserve content, remove parens)
     // "Downhill (Alpine) Skiing" → "Downhill Alpine Skiing"
-    nameToSlugify = nameToSlugify.replace(/[()]/g, " ").replace(/\s+/g, " ").trim();
+    nameToSlugify = nameToSlugify
+      .replace(/[()]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
   }
 
   // Limit length before slugifying
@@ -567,7 +572,9 @@ function splitEmbeddedLists(requirements: Requirement[]): void {
             req.text = possibleIntro;
             req.subrequirements = items;
             req.subrequirement_mode = { type: "all" };
-            console.log(`   Split requirement ${req.path} into ${items.length} items`);
+            console.log(
+              `   Split requirement ${req.path} into ${items.length} items`,
+            );
           }
         }
       }
@@ -585,8 +592,8 @@ function splitEmbeddedLists(requirements: Requirement[]): void {
 // =============================================================================
 
 const TYPO_CORRECTIONS: Record<string, string> = {
-  "Rapel": "Rappel",
-  "rapel": "rappel",
+  Rapel: "Rappel",
+  rapel: "rappel",
 };
 
 function correctTypos(text: string): string {

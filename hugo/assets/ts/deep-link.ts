@@ -12,7 +12,7 @@ document.addEventListener("click", (event: MouseEvent) => {
   const path = href.replace("#", "");
   const url = `${window.location.origin}${window.location.pathname}#${path}`;
 
-  navigator.clipboard.writeText(url).catch((err) => {
+  navigator.clipboard.writeText(url).catch(err => {
     console.error("Failed to copy link:", err);
   });
 });

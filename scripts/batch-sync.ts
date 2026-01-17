@@ -86,7 +86,7 @@ for (const badge of badges) {
     successCount++;
 
     // Add delay to avoid rate limiting
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
   } catch (err) {
     console.error(`  ❌ Failed: ${badge}`);
     errorCount++;

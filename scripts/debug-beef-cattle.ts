@@ -2,7 +2,9 @@ import * as cheerio from "cheerio";
 import { Impit } from "impit";
 
 const client = new Impit({ browser: "chrome", timeout: 30000 });
-const res = await client.fetch("https://www.scouting.org/merit-badges/animal-science/");
+const res = await client.fetch(
+  "https://www.scouting.org/merit-badges/animal-science/",
+);
 const html = await res.text();
 const $ = cheerio.load(html);
 
@@ -33,9 +35,11 @@ beefCattleChildren.each((i, child) => {
       console.log(`\nList ${j}:`);
       console.log("Type:", list.tagName);
       console.log("Items:");
-      $(list).find("li").each((k, li) => {
-        console.log(`  ${k + 1}. ${$(li).text().trim().substring(0, 80)}`);
-      });
+      $(list)
+        .find("li")
+        .each((k, li) => {
+          console.log(`  ${k + 1}. ${$(li).text().trim().substring(0, 80)}`);
+        });
     });
 
     // Check if there are nested requirement-child elements

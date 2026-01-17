@@ -5,7 +5,7 @@
  * Validates all SEO improvements from seo.md implementation checklist
  */
 
-import { readFileSync, readdirSync, existsSync, statSync } from "fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "fs";
 import { join } from "path";
 
 interface ValidationResult {
@@ -47,12 +47,12 @@ const checks: ValidationCheck[] = [
     name: "BreadcrumbList schema partial exists",
     check: () => {
       const exists = existsSync(
-        "hugo/layouts/partials/json-ld/breadcrumb.html"
+        "hugo/layouts/partials/json-ld/breadcrumb.html",
       );
       if (exists) {
         const content = readFileSync(
           "hugo/layouts/partials/json-ld/breadcrumb.html",
-          "utf-8"
+          "utf-8",
         );
         const hasBreadcrumb = content.includes('"@type": "BreadcrumbList"');
         if (hasBreadcrumb) {
@@ -76,7 +76,7 @@ const checks: ValidationCheck[] = [
     check: () => {
       const layout = readFileSync(
         "hugo/layouts/merit-badges/requirements.html",
-        "utf-8"
+        "utf-8",
       );
       const includes = layout.includes('partial "json-ld/breadcrumb.html"');
       if (includes) {
@@ -98,7 +98,7 @@ const checks: ValidationCheck[] = [
     check: () => {
       const schema = readFileSync(
         "hugo/layouts/partials/json-ld/merit-badge-requirements.html",
-        "utf-8"
+        "utf-8",
       );
       const hasFirst5 = schema.includes("first 5");
       const hasJsonRequirements = schema.includes("$json.requirements");
@@ -106,7 +106,8 @@ const checks: ValidationCheck[] = [
       if (!hasFirst5 && hasJsonRequirements) {
         return {
           passed: true,
-          message: "✅ Course schema includes all requirements (not limited to 5)",
+          message:
+            "✅ Course schema includes all requirements (not limited to 5)",
         };
       }
       return {
@@ -122,12 +123,12 @@ const checks: ValidationCheck[] = [
     name: "Organization schema partial exists",
     check: () => {
       const exists = existsSync(
-        "hugo/layouts/partials/json-ld/organization.html"
+        "hugo/layouts/partials/json-ld/organization.html",
       );
       if (exists) {
         const content = readFileSync(
           "hugo/layouts/partials/json-ld/organization.html",
-          "utf-8"
+          "utf-8",
         );
         const hasOrganization = content.includes('"@type": "Organization"');
         const hasName = content.includes('"name": "Merit Badge University"');
@@ -173,13 +174,14 @@ const checks: ValidationCheck[] = [
       if (exists) {
         const content = readFileSync("hugo/static/robots.txt", "utf-8");
         const hasSitemap = content.includes(
-          "Sitemap: https://merit-badge.university/sitemap.xml"
+          "Sitemap: https://merit-badge.university/sitemap.xml",
         );
         const allowsAll = content.includes("Allow: /");
         if (hasSitemap && allowsAll) {
           return {
             passed: true,
-            message: "✅ robots.txt exists with sitemap location and allows crawling",
+            message:
+              "✅ robots.txt exists with sitemap location and allows crawling",
           };
         }
       }
@@ -221,13 +223,13 @@ const checks: ValidationCheck[] = [
     check: () => {
       const sitePartial = readFileSync(
         "hugo/layouts/partials/head/site.html",
-        "utf-8"
+        "utf-8",
       );
       const hasPreconnect = sitePartial.includes(
-        'rel="preconnect" href="https://www.scouting.org"'
+        'rel="preconnect" href="https://www.scouting.org"',
       );
       const hasDnsPrefetch = sitePartial.includes(
-        'rel="dns-prefetch" href="https://filestore.scouting.org"'
+        'rel="dns-prefetch" href="https://filestore.scouting.org"',
       );
 
       if (hasPreconnect && hasDnsPrefetch) {
@@ -248,10 +250,7 @@ const checks: ValidationCheck[] = [
   {
     name: 'hreflang="en-US" tag',
     check: () => {
-      const baseof = readFileSync(
-        "hugo/layouts/_default/baseof.html",
-        "utf-8"
-      );
+      const baseof = readFileSync("hugo/layouts/_default/baseof.html", "utf-8");
       const hasHreflang = baseof.includes('hreflang="en-US"');
 
       if (hasHreflang) {
@@ -273,10 +272,10 @@ const checks: ValidationCheck[] = [
     check: () => {
       const sitePartial = readFileSync(
         "hugo/layouts/partials/head/site.html",
-        "utf-8"
+        "utf-8",
       );
       const hasContentLanguage = sitePartial.includes(
-        'content-language" content="en-US"'
+        'content-language" content="en-US"',
       );
 
       if (hasContentLanguage) {
@@ -296,12 +295,9 @@ const checks: ValidationCheck[] = [
   {
     name: "Canonical tags with trailing slashes",
     check: () => {
-      const baseof = readFileSync(
-        "hugo/layouts/_default/baseof.html",
-        "utf-8"
-      );
+      const baseof = readFileSync("hugo/layouts/_default/baseof.html", "utf-8");
       const hasCanonical = baseof.includes(
-        '<link rel="canonical" href="{{ .Permalink | absURL }}" />'
+        '<link rel="canonical" href="{{ .Permalink | absURL }}" />',
       );
 
       if (hasCanonical) {
@@ -323,7 +319,7 @@ const checks: ValidationCheck[] = [
     name: "Meta descriptions for all badges",
     check: () => {
       const badgesPath = "hugo/content/merit-badges";
-      const badges = readdirSync(badgesPath).filter((name) => {
+      const badges = readdirSync(badgesPath).filter(name => {
         const path = join(badgesPath, name);
         return statSync(path).isDirectory();
       });
@@ -332,12 +328,7 @@ const checks: ValidationCheck[] = [
       let total = 0;
 
       for (const badge of badges) {
-        const reqPath = join(
-          badgesPath,
-          badge,
-          "requirements",
-          "index.md"
-        );
+        const reqPath = join(badgesPath, badge, "requirements", "index.md");
         if (existsSync(reqPath)) {
           total++;
           const content = readFileSync(reqPath, "utf-8");
@@ -363,7 +354,7 @@ const checks: ValidationCheck[] = [
 
 // Run all checks
 console.log("🔍 Validating SEO Implementation\n");
-console.log("=" .repeat(70));
+console.log("=".repeat(70));
 console.log();
 
 let passedCount = 0;
@@ -381,7 +372,7 @@ for (const check of checks) {
 }
 
 console.log();
-console.log("=" .repeat(70));
+console.log("=".repeat(70));
 console.log();
 console.log(`📊 Results: ${passedCount} passed, ${failedCount} failed`);
 console.log();

@@ -76,7 +76,7 @@ function buildBadgePattern(badge: MeritBadge): RegExp {
     `(?<!\\[)` + // Negative lookbehind: not already inside a markdown link
       `(${escapedTitle} [Mm]erit [Bb]adge)` + // Capture the match
       `(?! pamphlet| kit| counselor)`, // Negative lookahead for exclusions
-    "gi"
+    "gi",
   );
 
   return pattern;
@@ -84,7 +84,7 @@ function buildBadgePattern(badge: MeritBadge): RegExp {
 
 // Build patterns for all badges except the current one
 function buildPatternsForBadge(
-  currentBadgeSlug: string
+  currentBadgeSlug: string,
 ): Map<string, BadgePattern> {
   const patterns = new Map<string, BadgePattern>();
 
@@ -127,7 +127,7 @@ function injectLinks(
   currentBadgeSlug: string,
   currentPath: string,
   stats: Stats,
-  sourceBadge: string
+  sourceBadge: string,
 ): string {
   let modifiedText = text;
   const processedMatches: Array<{
@@ -171,7 +171,10 @@ function injectLinks(
 
     // Double-check this exact position hasn't been modified
     if (modifiedText.substring(start, end) === originalMatch) {
-      modifiedText = modifiedText.substring(0, start) + replacement + modifiedText.substring(end);
+      modifiedText =
+        modifiedText.substring(0, start) +
+        replacement +
+        modifiedText.substring(end);
 
       // Track statistics
       stats.totalLinksDetected++;
@@ -198,7 +201,7 @@ function processRequirement(
   patterns: Map<string, BadgePattern>,
   currentBadgeSlug: string,
   stats: Stats,
-  sourceBadge: string
+  sourceBadge: string,
 ): boolean {
   let modified = false;
 
@@ -210,7 +213,7 @@ function processRequirement(
       currentBadgeSlug,
       req.path,
       stats,
-      sourceBadge
+      sourceBadge,
     );
     if (newText !== req.text) {
       req.text = newText;
@@ -221,7 +224,15 @@ function processRequirement(
   // Recursively process subrequirements
   if (req.subrequirements) {
     for (const subreq of req.subrequirements) {
-      if (processRequirement(subreq, patterns, currentBadgeSlug, stats, sourceBadge)) {
+      if (
+        processRequirement(
+          subreq,
+          patterns,
+          currentBadgeSlug,
+          stats,
+          sourceBadge,
+        )
+      ) {
         modified = true;
       }
     }
@@ -236,7 +247,9 @@ function processBadge(badge: MeritBadge, stats: Stats): boolean {
 
   // Check if data file exists
   if (!existsSync(dataPath)) {
-    console.warn(`Warning: data.json not found for ${badge.title} (${badge.slug})`);
+    console.warn(
+      `Warning: data.json not found for ${badge.title} (${badge.slug})`,
+    );
     return false;
   }
 
@@ -337,8 +350,8 @@ async function main() {
 
   const badgeSlugsEnv = process.env.BADGE_SLUGS;
   if (badgeSlugsEnv) {
-    const slugs = badgeSlugsEnv.split(",").map((s) => s.trim());
-    badgesToProcess = MERIT_BADGES.filter((b) => slugs.includes(b.slug));
+    const slugs = badgeSlugsEnv.split(",").map(s => s.trim());
+    badgesToProcess = MERIT_BADGES.filter(b => slugs.includes(b.slug));
     console.log(`Processing ${badgesToProcess.length} specified badges...\n`);
   } else {
     badgesToProcess = MERIT_BADGES;
@@ -368,8 +381,12 @@ async function main() {
   console.log(`  Badges processed: ${stats.totalBadgesProcessed}`);
   console.log(`  Badges modified: ${modifiedCount}`);
   console.log(`  Total links detected: ${stats.totalLinksDetected}`);
-  console.log(`  Badges with outgoing links: ${stats.badgesWithOutgoingLinks.size}`);
-  console.log(`  Badges with incoming links: ${stats.badgesWithIncomingLinks.size}`);
+  console.log(
+    `  Badges with outgoing links: ${stats.badgesWithOutgoingLinks.size}`,
+  );
+  console.log(
+    `  Badges with incoming links: ${stats.badgesWithIncomingLinks.size}`,
+  );
   console.log(`\nReport written to: ${reportPath}`);
 }
 

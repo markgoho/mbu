@@ -3,23 +3,24 @@
 {{ $req := .req | default . }}
 {{ $badgeName := .badge_name | default "" }}
 
+
 <li
   {{ if $req.path }}id="{{ $req.path }}"{{ end }}
   class="requirement-item"
   {{ if $req.path }}
     data-pagefind-index-attrs="data-anchor,data-badge-name"
-    data-anchor="{{ $req.path }}"
-    data-badge-name="{{ $badgeName }}"
+    data-anchor="{{ $req.path }}" data-badge-name="{{ $badgeName }}"
   {{ end }}>
   {{ if $req.path }}
-  <a
-    class="copy-link-btn"
-    href="#{{ $req.path }}"
-    aria-label="Copy link to requirement {{ $req.path }}"
-  >
-    <span aria-hidden="true">#</span>
-    <span class="visually-hidden">Copy link to requirement {{ $req.path }}</span>
-  </a>
+    <a
+      class="copy-link-btn"
+      href="#{{ $req.path }}"
+      aria-label="Copy link to requirement {{ $req.path }}">
+      <span aria-hidden="true">#</span>
+      <span class="visually-hidden"
+        >Copy link to requirement {{ $req.path }}</span
+      >
+    </a>
   {{ end }}
   <div class="req-text">{{ $req.text | markdownify }}</div>
 
@@ -29,7 +30,14 @@
     {{ $firstId := $first.req_id }}
     {{ $isOption := $first.is_option }}
     {{ $isNumeric := or (eq $firstId "1") (eq $firstId "2") (eq $firstId "3") }}
-    <ol class="subrequirements {{ if $isOption }}options{{ else if $isNumeric }}numeric{{ else }}alpha{{ end }}">
+    <ol
+      class="subrequirements {{ if $isOption }}
+        options
+      {{ else if $isNumeric }}
+        numeric
+      {{ else }}
+        alpha
+      {{ end }}">
       {{ range $req.subrequirements }}
         {{/* Recursively render nested requirements, passing badge_name through */}}
         {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName) }}

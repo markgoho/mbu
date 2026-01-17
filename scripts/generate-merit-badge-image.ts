@@ -271,8 +271,12 @@ async function generateBadgeImage(badgeSlug: string): Promise<void> {
 const badgeSlug = process.argv[2];
 
 if (!badgeSlug) {
-  console.error("Usage: bun run scripts/generate-merit-badge-image.ts <badge-slug>");
-  console.error("Example: bun run scripts/generate-merit-badge-image.ts indian-lore");
+  console.error(
+    "Usage: bun run scripts/generate-merit-badge-image.ts <badge-slug>",
+  );
+  console.error(
+    "Example: bun run scripts/generate-merit-badge-image.ts indian-lore",
+  );
   process.exit(1);
 }
 

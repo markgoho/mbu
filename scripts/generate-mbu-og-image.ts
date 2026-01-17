@@ -130,7 +130,7 @@ IMPORTANT:
 }
 
 // Run
-generateMBUImage().catch((error) => {
+generateMBUImage().catch(error => {
   console.error("Error generating MBU image:", error);
   process.exit(1);
 });

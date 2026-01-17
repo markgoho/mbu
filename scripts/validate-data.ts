@@ -1,5 +1,5 @@
-import { join } from "path";
 import { Glob } from "bun";
+import { join } from "path";
 
 const CONTENT_DIR = join(import.meta.dir, "../hugo/content/merit-badges");
 
@@ -84,7 +84,10 @@ function validateRequirement(badgeSlug: string, req: any, path: string[]) {
   }
 
   // Check for HTML/CSS/JS in req_id
-  if (req.req_id && /<[^>]+>|{|}|\bfunction\b|\bvar\b|\.css|\.js/.test(req.req_id)) {
+  if (
+    req.req_id &&
+    /<[^>]+>|{|}|\bfunction\b|\bvar\b|\.css|\.js/.test(req.req_id)
+  ) {
     issues.push({
       badge: badgeSlug,
       type: "polluted_req_id",
@@ -137,11 +140,14 @@ console.log(`Checked ${files.length} badges`);
 console.log(`Found ${issues.length} issues\n`);
 
 // Group issues by type
-const issuesByType = issues.reduce((acc, issue) => {
-  if (!acc[issue.type]) acc[issue.type] = [];
-  acc[issue.type].push(issue);
-  return acc;
-}, {} as Record<string, ValidationIssue[]>);
+const issuesByType = issues.reduce(
+  (acc, issue) => {
+    if (!acc[issue.type]) acc[issue.type] = [];
+    acc[issue.type].push(issue);
+    return acc;
+  },
+  {} as Record<string, ValidationIssue[]>,
+);
 
 // Print issues by type
 for (const [type, typeIssues] of Object.entries(issuesByType)) {

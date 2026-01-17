@@ -25,7 +25,8 @@
         <span>{{ $reqCount }} Requirements</span>
         {{ with $badge.Lastmod }}
           <span class="requirements-updated">
-            Updated {{ .Format "January 2, 2006" }}
+            Updated
+            {{ .Format "January 2, 2006" }}
           </span>
         {{ end }}
         <a href="{{ $json.url }}" target="_blank" rel="noopener">
@@ -49,6 +50,7 @@
       </div>
     {{ end }}
 
+
     <div class="requirements" data-pagefind-body>
       {{/* Hidden image for Pagefind search results */}}
       {{ with $badgeImage }}
@@ -56,8 +58,7 @@
           src="{{ .RelPermalink }}"
           alt=""
           data-pagefind-meta="image[src]"
-          hidden
-        />
+          hidden />
       {{ end }}
       <h2>Requirements</h2>
 

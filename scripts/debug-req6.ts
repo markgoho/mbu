@@ -2,7 +2,9 @@ import * as cheerio from "cheerio";
 import { Impit } from "impit";
 
 const client = new Impit({ browser: "chrome", timeout: 30000 });
-const res = await client.fetch("https://www.scouting.org/merit-badges/animal-science/");
+const res = await client.fetch(
+  "https://www.scouting.org/merit-badges/animal-science/",
+);
 const html = await res.text();
 const $ = cheerio.load(html);
 
@@ -30,21 +32,31 @@ $(".mb-requirement-parent").each((idx, el) => {
 
     if (parentId) {
       const children = $(`.mb-requirement-child.mb-parent-${parentId}`);
-      console.log("Found children with .mb-parent-" + parentId + ":", children.length);
+      console.log(
+        "Found children with .mb-parent-" + parentId + ":",
+        children.length,
+      );
 
       children.each((i, child) => {
         console.log("\n=== Child " + i + " (Top-level option) ===");
         const $child = $(child);
         console.log("Classes:", $child.attr("class"));
-        console.log("Text (first 100 chars):", $child.text().trim().substring(0, 100));
+        console.log(
+          "Text (first 100 chars):",
+          $child.text().trim().substring(0, 100),
+        );
 
         // Check if THIS child has an ID we can use to find its children
-        const childId = $child.attr("class")?.match(/mb-requirement-id-(\d+)/)?.[1];
+        const childId = $child
+          .attr("class")
+          ?.match(/mb-requirement-id-(\d+)/)?.[1];
         console.log("Child ID:", childId);
 
         if (childId) {
           // Look for nested children of this option
-          const nestedChildren = $(`.mb-requirement-child.mb-parent-${childId}`);
+          const nestedChildren = $(
+            `.mb-requirement-child.mb-parent-${childId}`,
+          );
           console.log("Found nested children:", nestedChildren.length);
 
           nestedChildren.each((j, nested) => {
@@ -60,9 +72,14 @@ $(".mb-requirement-parent").each((idx, el) => {
     console.log("Found lists:", lists.length);
     lists.each((i, list) => {
       console.log("\nList " + i + ":");
-      $(list).find("li").each((j, li) => {
-        console.log("  Item " + j + ":", $(li).text().trim().substring(0, 100));
-      });
+      $(list)
+        .find("li")
+        .each((j, li) => {
+          console.log(
+            "  Item " + j + ":",
+            $(li).text().trim().substring(0, 100),
+          );
+        });
     });
 
     found = true;

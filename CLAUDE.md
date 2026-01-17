@@ -17,6 +17,7 @@ Merit Badge University (MBU) is a Hugo-based static site that provides comprehen
 ## Essential Commands
 
 ### Development
+
 ```bash
 # Start Hugo development server with live reload
 bun run hugo:dev
@@ -24,6 +25,7 @@ bun run hugo:dev
 ```
 
 ### Content Syncing
+
 ```bash
 # Sync all merit badge requirements from scouting.org
 bun run sync:badges
@@ -37,6 +39,7 @@ TEST_MODE=1 bun run sync:badges
 ```
 
 ### Related Badge Link Detection
+
 ```bash
 # Detect and inject markdown links to related badges in requirement text
 bun run detect:links
@@ -47,12 +50,14 @@ BADGE_SLUGS="camping,hiking,swimming" bun run detect:links
 ```
 
 This script analyzes requirement text for references to other badges (e.g., "Earn the Swimming merit badge") and injects markdown links. It:
+
 - Matches "{Badge Title} merit badge" patterns (case-insensitive)
 - Excludes self-references and false positives (pamphlet, kit, counselor contexts)
 - Preserves existing markdown links (idempotent)
 - Generates a report at `reports/badge-relationships.md`
 
 ### Building
+
 ```bash
 # Build the Hugo site (output: hugo/public/)
 bun run build
@@ -60,6 +65,7 @@ bun run build
 ```
 
 ### Code Quality
+
 ```bash
 # Format code with Prettier
 bunx prettier --write .
@@ -104,12 +110,14 @@ scripts/
 ### Key Template Features
 
 **Base Template** (`layouts/_default/baseof.html`):
+
 - Defines extensibility via blocks: `hero`, `header`, `main`, `footer`, `head-styles`, `head-scripts`, `footer-scripts`
 - Inlines critical CSS in `<head>` for performance
 - Loads non-critical CSS separately
 - Includes OpenGraph meta tags via `partial "opengraph.html"`
 
 **SCSS Processing**:
+
 ```go
 {{ $options := (dict "transpiler" "dartsass" "outputStyle" "compressed") }}
 {{ $inlineCSS := resources.Get $pageCSS | css.Sass $options }}
@@ -118,6 +126,7 @@ scripts/
 ### Data Structure
 
 Each merit badge has a `data.json` file with the following structure:
+
 ```json
 {
   "title": "Archery",
@@ -144,6 +153,7 @@ Each merit badge has a `data.json` file with the following structure:
 ```
 
 **Requirement Path System**:
+
 - Paths use dots as separators for URL-friendly anchors (e.g., "1.a.2")
 - Top-level requirements have path equal to their ID (e.g., "1")
 - Nested requirements append to parent path: "1" → "1.a" → "1.a.2"
