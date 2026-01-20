@@ -39,3 +39,5 @@ hugo/resources
 
 # Badge relationship reports (ephemeral, regenerated on each run)
 reports/
+
+firebase-*.log
