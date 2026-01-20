@@ -60,7 +60,7 @@ workflow_status:
     workflows:
       - id: "prd"
         name: "Product Requirements Document"
-        status: "required"
+        status: "_bmad-output/planning-artifacts/prd.md"
         agent: "pm"
         command: "/bmad:bmm:workflows:prd"
         note: "Complete PRD with functional and non-functional requirements"
