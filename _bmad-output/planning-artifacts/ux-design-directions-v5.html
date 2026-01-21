@@ -1,0 +1,2777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merit Badge University - Design Directions v5 (25-36)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* BSA Colors with oklch fallbacks */
+      --brown-900: hsl(34, 70%, 16%);
+      --brown-500: hsl(34, 60%, 40%);
+      --tan-50: hsl(41, 23%, 97%);
+      --tan-100: hsl(41, 23%, 94%);
+      --olive-900: hsl(138, 27%, 10%);
+      --olive-700: hsl(138, 27%, 25%);
+      --olive-500: hsl(138, 27%, 40%);
+      --olive-300: hsl(138, 27%, 70%);
+      --olive-100: hsl(138, 27%, 94%);
+      --teal-500: hsl(192, 51%, 33%);
+      --teal-600: hsl(192, 51%, 28%);
+    }
+
+    @supports (color: oklch(0% 0 0)) {
+      :root {
+        --brown-900: oklch(25% 0.06 55);
+        --brown-500: oklch(50% 0.08 55);
+        --tan-50: oklch(97% 0.01 90);
+        --tan-100: oklch(94% 0.02 90);
+        --olive-900: oklch(20% 0.04 150);
+        --olive-700: oklch(35% 0.05 150);
+        --olive-500: oklch(50% 0.06 150);
+        --olive-300: oklch(75% 0.04 150);
+        --olive-100: oklch(94% 0.02 150);
+        --teal-500: oklch(45% 0.08 200);
+        --teal-600: oklch(40% 0.09 200);
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--tan-50);
+      color: var(--brown-900);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background: var(--brown-900);
+      color: var(--tan-50);
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 2rem 0;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .nav-btn {
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--olive-500);
+      background: white;
+      color: var(--olive-700);
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--olive-100);
+      transform: translateY(-2px);
+    }
+
+    .nav-btn.active {
+      background: var(--olive-700);
+      color: white;
+    }
+
+    .mockup {
+      display: none;
+      min-height: 800px;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+
+    .mockup.active {
+      display: block;
+    }
+
+    .mockup-header {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--olive-100);
+    }
+
+    .mockup-title {
+      font-size: 1.75rem;
+      color: var(--brown-900);
+      margin-bottom: 0.5rem;
+    }
+
+    .mockup-description {
+      color: var(--olive-700);
+      font-size: 1rem;
+    }
+
+    /* MOCKUP 25: Periodic Table */
+    .periodic-table {
+      display: grid;
+      grid-template-columns: repeat(18, 1fr);
+      gap: 4px;
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+
+    .element {
+      aspect-ratio: 1;
+      background: white;
+      border: 2px solid var(--olive-300);
+      border-radius: 4px;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      position: relative;
+    }
+
+    .element:hover {
+      transform: scale(1.05);
+      border-color: var(--teal-500);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 10;
+    }
+
+    .element.eagle {
+      background: var(--brown-500);
+      color: white;
+      border-color: var(--brown-900);
+    }
+
+    .element-symbol {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .element-number {
+      font-size: 0.65rem;
+      opacity: 0.7;
+    }
+
+    .element-name {
+      font-size: 0.6rem;
+      text-align: center;
+      margin-top: 0.25rem;
+      line-height: 1.2;
+    }
+
+    .category-outdoors { background: var(--olive-100); }
+    .category-stem { background: var(--tan-100); }
+    .category-citizenship { background: #e3f2fd; }
+    .category-arts { background: #fce4ec; }
+
+    /* MOCKUP 26: Subway Map */
+    .subway-map {
+      background: var(--tan-50);
+      padding: 2rem;
+      position: relative;
+      overflow-x: auto;
+      min-height: 700px;
+    }
+
+    .subway-line {
+      position: relative;
+      margin: 3rem 0;
+    }
+
+    .line-track {
+      height: 8px;
+      background: var(--olive-500);
+      position: relative;
+      border-radius: 4px;
+    }
+
+    .line-track.outdoor { background: var(--olive-700); }
+    .line-track.stem { background: var(--teal-500); }
+    .line-track.citizenship { background: #1976d2; }
+    .line-track.arts { background: #c2185b; }
+
+    .station {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: white;
+      border: 4px solid var(--olive-500);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .station::after {
+      content: attr(data-name);
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: 2px solid var(--olive-300);
+      font-size: 0.85rem;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .station:hover::after {
+      opacity: 1;
+    }
+
+    .station:hover {
+      transform: translateY(-50%) scale(1.5);
+      border-width: 5px;
+      z-index: 10;
+    }
+
+    .station.eagle {
+      background: var(--brown-500);
+      border-color: var(--brown-900);
+    }
+
+    .line-label {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      background: white;
+      border-radius: 6px;
+      border: 2px solid currentColor;
+    }
+
+    .line-label.outdoor { color: var(--olive-700); }
+    .line-label.stem { color: var(--teal-500); }
+    .line-label.citizenship { color: #1976d2; }
+    .line-label.arts { color: #c2185b; }
+
+    /* MOCKUP 27: Spotlight Search */
+    .spotlight-container {
+      background: linear-gradient(135deg, var(--brown-900) 0%, var(--olive-900) 100%);
+      min-height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      padding: 3rem;
+    }
+
+    .spotlight-search {
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 2rem;
+    }
+
+    .spotlight-input {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      font-size: 2.5rem;
+      border: none;
+      border-radius: 12px;
+      background: white;
+      color: var(--brown-900);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      outline: none;
+    }
+
+    .spotlight-input::placeholder {
+      color: var(--olive-300);
+    }
+
+    .spotlight-results {
+      width: 100%;
+      max-width: 800px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      max-height: 500px;
+      overflow-y: auto;
+    }
+
+    .spotlight-item {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--olive-100);
+      cursor: pointer;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .spotlight-item:hover {
+      background: var(--olive-100);
+    }
+
+    .spotlight-item.selected {
+      background: var(--teal-500);
+      color: white;
+    }
+
+    .spotlight-icon {
+      font-size: 2rem;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--tan-100);
+      border-radius: 12px;
+    }
+
+    .spotlight-item.selected .spotlight-icon {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .spotlight-info {
+      flex: 1;
+    }
+
+    .spotlight-badge-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    .spotlight-meta {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .spotlight-keyboard {
+      padding: 0.25rem 0.5rem;
+      background: var(--olive-100);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid var(--olive-300);
+    }
+
+    /* MOCKUP 28: Comparison Matrix */
+    .comparison-matrix {
+      overflow-x: auto;
+    }
+
+    .matrix-controls {
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .matrix-btn {
+      padding: 0.5rem 1rem;
+      border: 2px solid var(--olive-500);
+      background: white;
+      color: var(--olive-700);
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .matrix-btn:hover {
+      background: var(--olive-100);
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .comparison-table th {
+      background: var(--olive-700);
+      color: white;
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .comparison-table th:hover {
+      background: var(--olive-900);
+    }
+
+    .comparison-table th::after {
+      content: ' ⇅';
+      opacity: 0.5;
+      font-size: 0.8rem;
+    }
+
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--olive-100);
+    }
+
+    .comparison-table tr:hover {
+      background: var(--tan-100);
+    }
+
+    .comparison-table .badge-name {
+      font-weight: 600;
+      color: var(--teal-500);
+    }
+
+    .comparison-table .eagle-badge {
+      display: inline-block;
+      background: var(--brown-500);
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+    }
+
+    .difficulty-bar {
+      display: flex;
+      gap: 2px;
+    }
+
+    .difficulty-bar span {
+      width: 20px;
+      height: 8px;
+      background: var(--olive-200);
+      border-radius: 2px;
+    }
+
+    .difficulty-bar span.filled {
+      background: var(--olive-700);
+    }
+
+    /* MOCKUP 29: Radial Wheel */
+    .radial-wheel {
+      position: relative;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wheel-center {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: var(--brown-900);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+
+    .wheel-subtitle {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      font-weight: normal;
+    }
+
+    .orbit {
+      position: absolute;
+      border: 2px dashed var(--olive-300);
+      border-radius: 50%;
+      animation: rotate 60s linear infinite;
+    }
+
+    .orbit-1 { width: 300px; height: 300px; }
+    .orbit-2 { width: 450px; height: 450px; animation-duration: 80s; }
+    .orbit-3 { width: 600px; height: 600px; animation-duration: 100s; }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .orbit-badge {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: white;
+      border: 3px solid var(--olive-500);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      animation: counter-rotate 60s linear infinite reverse;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .orbit-2 .orbit-badge { animation-duration: 80s; }
+    .orbit-3 .orbit-badge { animation-duration: 100s; }
+
+    @keyframes counter-rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .orbit-badge:hover {
+      transform: scale(1.3);
+      z-index: 20;
+      border-color: var(--teal-500);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .orbit-badge.eagle {
+      background: var(--brown-500);
+      color: white;
+      border-color: var(--brown-900);
+    }
+
+    .orbit-icon {
+      font-size: 1.5rem;
+    }
+
+    .orbit-name {
+      font-size: 0.6rem;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 0.25rem;
+    }
+
+    /* MOCKUP 30: File System Tree */
+    .file-tree {
+      font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+      background: var(--olive-900);
+      color: #a9b7c6;
+      padding: 2rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    .tree-item {
+      padding: 0.25rem 0;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tree-item:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    .tree-icon {
+      width: 16px;
+      text-align: center;
+    }
+
+    .tree-folder {
+      font-weight: bold;
+      color: #ffc66d;
+    }
+
+    .tree-file {
+      color: #a9b7c6;
+    }
+
+    .tree-file.eagle {
+      color: var(--brown-500);
+      font-weight: bold;
+    }
+
+    .tree-children {
+      margin-left: 1.5rem;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      padding-left: 1rem;
+    }
+
+    .tree-meta {
+      margin-left: auto;
+      opacity: 0.5;
+      font-size: 0.8rem;
+    }
+
+    .tree-toggle {
+      cursor: pointer;
+      margin-right: 0.25rem;
+    }
+
+    .tree-item.collapsed > .tree-children {
+      display: none;
+    }
+
+    /* MOCKUP 31: Library Bookshelf */
+    .bookshelf {
+      background: linear-gradient(180deg, var(--tan-100) 0%, var(--tan-50) 100%);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .shelf {
+      position: relative;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 8px solid var(--brown-900);
+      min-height: 300px;
+    }
+
+    .book {
+      width: 60px;
+      height: 250px;
+      background: var(--olive-500);
+      border: 2px solid var(--olive-700);
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      transition: all 0.3s;
+      position: relative;
+      box-shadow: 2px 0 4px rgba(0,0,0,0.2);
+    }
+
+    .book:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+    }
+
+    .book.eagle {
+      background: var(--brown-500);
+      border-color: var(--brown-900);
+    }
+
+    .book.tall { height: 280px; }
+    .book.short { height: 220px; }
+
+    .book-spine {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      width: 240px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.85rem;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .book-icon {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%) rotate(-90deg);
+      font-size: 1.5rem;
+    }
+
+    .shelf-label {
+      position: absolute;
+      left: -150px;
+      top: 50%;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: var(--brown-900);
+      background: var(--tan-100);
+      padding: 1rem;
+      border-radius: 6px;
+    }
+
+    /* MOCKUP 32: Corkboard Pins */
+    .corkboard {
+      background: #ddb892;
+      background-image:
+        radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 20px 20px;
+      padding: 3rem;
+      border-radius: 8px;
+      min-height: 700px;
+      position: relative;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .pinned-card {
+      position: absolute;
+      width: 200px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .pinned-card::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: radial-gradient(circle, #c41e3a 40%, #8b0000 100%);
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .pinned-card:hover {
+      transform: scale(1.05) rotate(0deg) !important;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    .pinned-card.eagle {
+      border: 3px solid var(--brown-500);
+    }
+
+    .pin-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pin-title {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--brown-900);
+    }
+
+    .pin-meta {
+      font-size: 0.8rem;
+      color: var(--olive-700);
+      line-height: 1.4;
+    }
+
+    .pin-tags {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .pin-tag {
+      background: var(--olive-100);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+    }
+
+    /* MOCKUP 33: Carousel Slides */
+    .carousel-container {
+      position: relative;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-slide {
+      position: absolute;
+      width: 700px;
+      background: white;
+      border-radius: 16px;
+      padding: 3rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.5s;
+      pointer-events: none;
+    }
+
+    .carousel-slide.active {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+      z-index: 10;
+    }
+
+    .slide-icon {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .slide-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: var(--brown-900);
+      margin-bottom: 1rem;
+    }
+
+    .slide-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .slide-description {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--olive-700);
+      margin-bottom: 2rem;
+    }
+
+    .slide-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .slide-tag {
+      background: var(--olive-100);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .carousel-nav {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1rem;
+      z-index: 20;
+    }
+
+    .carousel-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--brown-900);
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .carousel-btn:hover {
+      background: var(--olive-700);
+      transform: scale(1.1);
+    }
+
+    .carousel-dots {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .carousel-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--olive-300);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .carousel-dot.active {
+      background: var(--brown-900);
+      transform: scale(1.3);
+    }
+
+    /* MOCKUP 34: Geographic Pin Map */
+    .pin-map {
+      background: linear-gradient(135deg, var(--tan-100) 0%, var(--olive-100) 100%);
+      border-radius: 8px;
+      padding: 2rem;
+      min-height: 700px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.3;
+    }
+
+    .map-pin {
+      position: absolute;
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 1;
+    }
+
+    .map-pin:hover {
+      transform: scale(1.2);
+      z-index: 20;
+    }
+
+    .pin-marker {
+      width: 40px;
+      height: 60px;
+      position: relative;
+    }
+
+    .pin-marker::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      background: var(--teal-500);
+      border-radius: 50% 50% 50% 0;
+      transform: translateX(-50%) rotate(-45deg);
+      border: 3px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .pin-marker.eagle::before {
+      background: var(--brown-500);
+    }
+
+    .pin-icon-inner {
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.2rem;
+      z-index: 2;
+    }
+
+    .pin-label {
+      position: absolute;
+      top: 65px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: 2px solid var(--olive-300);
+      white-space: nowrap;
+      font-size: 0.85rem;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .map-pin:hover .pin-label {
+      opacity: 1;
+    }
+
+    /* MOCKUP 35: Social Feed */
+    .social-feed {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .feed-item {
+      background: white;
+      border: 1px solid var(--olive-200);
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+
+    .feed-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border-bottom: 1px solid var(--olive-100);
+    }
+
+    .feed-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--olive-500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .feed-avatar.eagle {
+      background: var(--brown-500);
+    }
+
+    .feed-user-info {
+      flex: 1;
+    }
+
+    .feed-username {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--brown-900);
+    }
+
+    .feed-timestamp {
+      font-size: 0.85rem;
+      color: var(--olive-500);
+    }
+
+    .feed-content {
+      padding: 1rem;
+    }
+
+    .feed-image {
+      width: 100%;
+      height: 300px;
+      background: var(--olive-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      border-top: 1px solid var(--olive-200);
+      border-bottom: 1px solid var(--olive-200);
+    }
+
+    .feed-text {
+      margin-top: 1rem;
+      line-height: 1.6;
+      color: var(--olive-900);
+    }
+
+    .feed-tags {
+      margin-top: 0.5rem;
+      color: var(--teal-500);
+      font-weight: 600;
+    }
+
+    .feed-actions {
+      display: flex;
+      gap: 2rem;
+      padding: 1rem;
+      border-top: 1px solid var(--olive-100);
+    }
+
+    .feed-action {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--olive-700);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .feed-action:hover {
+      color: var(--teal-500);
+    }
+
+    .feed-action.liked {
+      color: #c41e3a;
+    }
+
+    /* MOCKUP 36: Notion Database */
+    .notion-container {
+      background: white;
+      border-radius: 8px;
+    }
+
+    .notion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--olive-100);
+    }
+
+    .notion-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--brown-900);
+    }
+
+    .notion-tabs {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0 1.5rem;
+      border-bottom: 2px solid var(--olive-100);
+    }
+
+    .notion-tab {
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: all 0.2s;
+      color: var(--olive-700);
+      font-weight: 600;
+    }
+
+    .notion-tab:hover {
+      background: var(--tan-100);
+    }
+
+    .notion-tab.active {
+      border-bottom-color: var(--teal-500);
+      color: var(--teal-500);
+    }
+
+    .notion-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .notion-table th {
+      background: var(--tan-100);
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--olive-700);
+      border-bottom: 1px solid var(--olive-100);
+    }
+
+    .notion-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--olive-100);
+    }
+
+    .notion-table tr:hover {
+      background: var(--tan-50);
+    }
+
+    .notion-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--olive-300);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .notion-badge-cell {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .notion-badge-icon {
+      font-size: 1.5rem;
+    }
+
+    .notion-badge-name {
+      font-weight: 600;
+      color: var(--brown-900);
+    }
+
+    .notion-eagle-tag {
+      background: var(--brown-500);
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    .notion-status {
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .notion-status.not-started {
+      background: var(--olive-100);
+      color: var(--olive-700);
+    }
+
+    .notion-status.in-progress {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .notion-status.completed {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .notion-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .notion-tag {
+      background: var(--olive-100);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      color: var(--olive-700);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Merit Badge University - Design Directions v5</h1>
+      <p>Mockups 25-36: Unique Layout Concepts</p>
+    </header>
+
+    <div class="nav-buttons">
+      <button class="nav-btn active" onclick="showMockup(25)">25 - Periodic Table</button>
+      <button class="nav-btn" onclick="showMockup(26)">26 - Subway Map</button>
+      <button class="nav-btn" onclick="showMockup(27)">27 - Spotlight Search</button>
+      <button class="nav-btn" onclick="showMockup(28)">28 - Comparison Matrix</button>
+      <button class="nav-btn" onclick="showMockup(29)">29 - Radial Wheel</button>
+      <button class="nav-btn" onclick="showMockup(30)">30 - File System Tree</button>
+      <button class="nav-btn" onclick="showMockup(31)">31 - Library Bookshelf</button>
+      <button class="nav-btn" onclick="showMockup(32)">32 - Corkboard Pins</button>
+      <button class="nav-btn" onclick="showMockup(33)">33 - Carousel Slides</button>
+      <button class="nav-btn" onclick="showMockup(34)">34 - Geographic Map</button>
+      <button class="nav-btn" onclick="showMockup(35)">35 - Social Feed</button>
+      <button class="nav-btn" onclick="showMockup(36)">36 - Notion Database</button>
+    </div>
+
+    <!-- MOCKUP 25: Periodic Table -->
+    <div id="mockup-25" class="mockup active">
+      <div class="mockup-header">
+        <h2 class="mockup-title">25. Periodic Table Layout</h2>
+        <p class="mockup-description">Chemical element grid with 2-letter symbols, grouped by categories</p>
+      </div>
+      <div class="periodic-table">
+        <div class="element eagle category-citizenship" style="grid-column: 1; grid-row: 1;">
+          <div class="element-number">1</div>
+          <div class="element-symbol">Ci</div>
+          <div class="element-name">Citizenship in Nation</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 2; grid-row: 1;">
+          <div class="element-number">2</div>
+          <div class="element-symbol">Ca</div>
+          <div class="element-name">Camping</div>
+        </div>
+        <div class="element eagle category-citizenship" style="grid-column: 13; grid-row: 1;">
+          <div class="element-number">3</div>
+          <div class="element-symbol">Cw</div>
+          <div class="element-name">Citizenship in World</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 14; grid-row: 1;">
+          <div class="element-number">4</div>
+          <div class="element-symbol">Hi</div>
+          <div class="element-name">Hiking</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 15; grid-row: 1;">
+          <div class="element-number">5</div>
+          <div class="element-symbol">Cs</div>
+          <div class="element-name">Computer Science</div>
+        </div>
+        <div class="element category-arts" style="grid-column: 16; grid-row: 1;">
+          <div class="element-number">6</div>
+          <div class="element-symbol">Mu</div>
+          <div class="element-name">Music</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 17; grid-row: 1;">
+          <div class="element-number">7</div>
+          <div class="element-symbol">Sw</div>
+          <div class="element-name">Swimming</div>
+        </div>
+        <div class="element eagle category-stem" style="grid-column: 18; grid-row: 1;">
+          <div class="element-number">8</div>
+          <div class="element-symbol">Ev</div>
+          <div class="element-name">Environmental Science</div>
+        </div>
+
+        <div class="element eagle category-citizenship" style="grid-column: 1; grid-row: 2;">
+          <div class="element-number">9</div>
+          <div class="element-symbol">Cc</div>
+          <div class="element-name">Citizenship in Community</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 2; grid-row: 2;">
+          <div class="element-number">10</div>
+          <div class="element-symbol">Ck</div>
+          <div class="element-name">Cooking</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 13; grid-row: 2;">
+          <div class="element-number">11</div>
+          <div class="element-symbol">Ro</div>
+          <div class="element-name">Robotics</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 14; grid-row: 2;">
+          <div class="element-number">12</div>
+          <div class="element-symbol">Fi</div>
+          <div class="element-name">Fishing</div>
+        </div>
+        <div class="element category-arts" style="grid-column: 15; grid-row: 2;">
+          <div class="element-number">13</div>
+          <div class="element-symbol">Ph</div>
+          <div class="element-name">Photography</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 16; grid-row: 2;">
+          <div class="element-number">14</div>
+          <div class="element-symbol">En</div>
+          <div class="element-name">Engineering</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 17; grid-row: 2;">
+          <div class="element-number">15</div>
+          <div class="element-symbol">Ww</div>
+          <div class="element-name">Whitewater</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 18; grid-row: 2;">
+          <div class="element-number">16</div>
+          <div class="element-symbol">Sp</div>
+          <div class="element-name">Space Exploration</div>
+        </div>
+
+        <div class="element eagle category-outdoors" style="grid-column: 1; grid-row: 3;">
+          <div class="element-number">17</div>
+          <div class="element-symbol">Em</div>
+          <div class="element-name">Emergency Preparedness</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 2; grid-row: 3;">
+          <div class="element-number">18</div>
+          <div class="element-symbol">Cy</div>
+          <div class="element-name">Cycling</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 3; grid-row: 3;">
+          <div class="element-number">19</div>
+          <div class="element-symbol">Ba</div>
+          <div class="element-name">Backpacking</div>
+        </div>
+        <div class="element category-arts" style="grid-column: 4; grid-row: 3;">
+          <div class="element-number">20</div>
+          <div class="element-symbol">Ar</div>
+          <div class="element-name">Art</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 5; grid-row: 3;">
+          <div class="element-number">21</div>
+          <div class="element-symbol">Ch</div>
+          <div class="element-name">Chemistry</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 6; grid-row: 3;">
+          <div class="element-number">22</div>
+          <div class="element-symbol">Ge</div>
+          <div class="element-name">Geocaching</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 7; grid-row: 3;">
+          <div class="element-number">23</div>
+          <div class="element-symbol">El</div>
+          <div class="element-name">Electronics</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 8; grid-row: 3;">
+          <div class="element-number">24</div>
+          <div class="element-symbol">Ka</div>
+          <div class="element-name">Kayaking</div>
+        </div>
+        <div class="element category-arts" style="grid-column: 9; grid-row: 3;">
+          <div class="element-number">25</div>
+          <div class="element-symbol">Th</div>
+          <div class="element-name">Theater</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 10; grid-row: 3;">
+          <div class="element-number">26</div>
+          <div class="element-symbol">Av</div>
+          <div class="element-name">Aviation</div>
+        </div>
+        <div class="element category-outdoors" style="grid-column: 11; grid-row: 3;">
+          <div class="element-number">27</div>
+          <div class="element-symbol">Mo</div>
+          <div class="element-name">Motorboating</div>
+        </div>
+        <div class="element category-stem" style="grid-column: 12; grid-row: 3;">
+          <div class="element-number">28</div>
+          <div class="element-symbol">Dn</div>
+          <div class="element-name">Dentistry</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 26: Subway Map -->
+    <div id="mockup-26" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">26. Subway Map</h2>
+        <p class="mockup-description">Transit map with lines and stations, badges as stops on skill category lines</p>
+      </div>
+      <div class="subway-map">
+        <div class="subway-line">
+          <div class="line-label outdoor">Outdoor Skills Line</div>
+          <div class="line-track outdoor">
+            <div class="station eagle" data-name="Camping" style="left: 10%;"></div>
+            <div class="station" data-name="Hiking" style="left: 25%;"></div>
+            <div class="station" data-name="Backpacking" style="left: 40%;"></div>
+            <div class="station" data-name="Wilderness Survival" style="left: 55%;"></div>
+            <div class="station" data-name="Swimming" style="left: 70%;"></div>
+            <div class="station eagle" data-name="Emergency Prep" style="left: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="subway-line">
+          <div class="line-label stem">STEM Express Line</div>
+          <div class="line-track stem">
+            <div class="station" data-name="Computer Science" style="left: 8%;"></div>
+            <div class="station" data-name="Robotics" style="left: 22%;"></div>
+            <div class="station" data-name="Electronics" style="left: 36%;"></div>
+            <div class="station" data-name="Engineering" style="left: 50%;"></div>
+            <div class="station" data-name="Chemistry" style="left: 64%;"></div>
+            <div class="station" data-name="Space Exploration" style="left: 78%;"></div>
+            <div class="station eagle" data-name="Environmental Science" style="left: 92%;"></div>
+          </div>
+        </div>
+
+        <div class="subway-line">
+          <div class="line-label citizenship">Citizenship Route</div>
+          <div class="line-track citizenship">
+            <div class="station eagle" data-name="Citizenship in Community" style="left: 15%;"></div>
+            <div class="station eagle" data-name="Citizenship in Nation" style="left: 42%;"></div>
+            <div class="station eagle" data-name="Citizenship in World" style="left: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="subway-line">
+          <div class="line-label arts">Arts & Culture Line</div>
+          <div class="line-track arts">
+            <div class="station" data-name="Art" style="left: 12%;"></div>
+            <div class="station" data-name="Music" style="left: 28%;"></div>
+            <div class="station" data-name="Photography" style="left: 44%;"></div>
+            <div class="station" data-name="Theater" style="left: 60%;"></div>
+            <div class="station" data-name="Digital Arts" style="left: 76%;"></div>
+            <div class="station" data-name="Animation" style="left: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 27: Spotlight Search -->
+    <div id="mockup-27" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">27. Spotlight Search</h2>
+        <p class="mockup-description">macOS Spotlight-style command palette, keyboard-driven results</p>
+      </div>
+      <div class="spotlight-container">
+        <div class="spotlight-search">
+          <input type="text" class="spotlight-input" placeholder="Search merit badges..."
+                 oninput="filterSpotlight(this.value)">
+        </div>
+        <div class="spotlight-results" id="spotlight-results">
+          <div class="spotlight-item selected">
+            <div class="spotlight-icon">🏕️</div>
+            <div class="spotlight-info">
+              <div class="spotlight-badge-title">Camping 🦅</div>
+              <div class="spotlight-meta">
+                <span>⭐⭐⭐⭐⭐ Difficult</span>
+                <span>20-30 hrs</span>
+                <span>🏕️ Overnight</span>
+              </div>
+            </div>
+            <div class="spotlight-keyboard">⏎</div>
+          </div>
+          <div class="spotlight-item">
+            <div class="spotlight-icon">💻</div>
+            <div class="spotlight-info">
+              <div class="spotlight-badge-title">Computer Science</div>
+              <div class="spotlight-meta">
+                <span>⭐⭐⭐ Moderate</span>
+                <span>8-10 hrs</span>
+                <span>🏠 At Home</span>
+              </div>
+            </div>
+            <div class="spotlight-keyboard">↓</div>
+          </div>
+          <div class="spotlight-item">
+            <div class="spotlight-icon">🥾</div>
+            <div class="spotlight-info">
+              <div class="spotlight-badge-title">Hiking</div>
+              <div class="spotlight-meta">
+                <span>⭐⭐⭐⭐ Hard</span>
+                <span>15-20 hrs</span>
+                <span>↔️ Both</span>
+              </div>
+            </div>
+            <div class="spotlight-keyboard">↓</div>
+          </div>
+          <div class="spotlight-item">
+            <div class="spotlight-icon">🏊</div>
+            <div class="spotlight-info">
+              <div class="spotlight-badge-title">Swimming</div>
+              <div class="spotlight-meta">
+                <span>⭐⭐⭐⭐ Hard</span>
+                <span>12-16 hrs</span>
+                <span>🏕️ Requires Pool</span>
+              </div>
+            </div>
+            <div class="spotlight-keyboard">↓</div>
+          </div>
+          <div class="spotlight-item">
+            <div class="spotlight-icon">🤖</div>
+            <div class="spotlight-info">
+              <div class="spotlight-badge-title">Robotics</div>
+              <div class="spotlight-meta">
+                <span>⭐⭐⭐⭐ Hard</span>
+                <span>10-12 hrs</span>
+                <span>🏠 At Home</span>
+              </div>
+            </div>
+            <div class="spotlight-keyboard">↓</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 28: Comparison Matrix -->
+    <div id="mockup-28" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">28. Comparison Matrix</h2>
+        <p class="mockup-description">Spreadsheet table view, sortable columns, side-by-side comparison</p>
+      </div>
+      <div class="comparison-matrix">
+        <div class="matrix-controls">
+          <button class="matrix-btn">Filter: All</button>
+          <button class="matrix-btn">Filter: Eagle Required</button>
+          <button class="matrix-btn">Filter: Outdoor</button>
+          <button class="matrix-btn">Export CSV</button>
+        </div>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Merit Badge</th>
+              <th>Category</th>
+              <th>Difficulty</th>
+              <th>Time (hrs)</th>
+              <th>Location</th>
+              <th>Requirements</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="badge-name">Camping<span class="eagle-badge">🦅 EAGLE</span></td>
+              <td>Outdoor Skills</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                </div>
+              </td>
+              <td>20-30</td>
+              <td>🏕️ Overnight</td>
+              <td>9 requirements</td>
+              <td>Tent setup, cooking, planning</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Computer Science</td>
+              <td>STEM</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>8-10</td>
+              <td>🏠 At Home</td>
+              <td>5 requirements</td>
+              <td>Programming, algorithms, cybersecurity</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Citizenship in Nation<span class="eagle-badge">🦅 EAGLE</span></td>
+              <td>Citizenship</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>4-6</td>
+              <td>↔️ Both</td>
+              <td>8 requirements</td>
+              <td>Government, rights, history</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Hiking</td>
+              <td>Outdoor Skills</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>15-20</td>
+              <td>↔️ Both</td>
+              <td>7 requirements</td>
+              <td>Navigation, safety, endurance</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Robotics</td>
+              <td>STEM</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>10-12</td>
+              <td>🏠 At Home</td>
+              <td>6 requirements</td>
+              <td>Engineering, programming, design</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Swimming</td>
+              <td>Aquatics</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>12-16</td>
+              <td>🏕️ Pool Required</td>
+              <td>8 requirements</td>
+              <td>Strokes, safety, rescue</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Photography</td>
+              <td>Arts</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>6-8</td>
+              <td>↔️ Both</td>
+              <td>6 requirements</td>
+              <td>Composition, lighting, editing</td>
+            </tr>
+            <tr>
+              <td class="badge-name">Environmental Science<span class="eagle-badge">🦅 EAGLE</span></td>
+              <td>STEM</td>
+              <td>
+                <div class="difficulty-bar">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span></span>
+                </div>
+              </td>
+              <td>15-20</td>
+              <td>↔️ Both</td>
+              <td>5 requirements</td>
+              <td>Ecology, conservation, research</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- MOCKUP 29: Radial Wheel -->
+    <div id="mockup-29" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">29. Radial Wheel</h2>
+        <p class="mockup-description">Circular orbit menu, badges orbit around central skill hub</p>
+      </div>
+      <div class="radial-wheel">
+        <div class="wheel-center">
+          Merit Badges
+          <span class="wheel-subtitle">143 Total</span>
+        </div>
+
+        <div class="orbit orbit-1">
+          <div class="orbit-badge eagle" style="top: 0; left: 50%; margin-left: -40px;">
+            <div class="orbit-icon">🏕️</div>
+            <div class="orbit-name">Camping</div>
+          </div>
+          <div class="orbit-badge" style="bottom: 0; left: 50%; margin-left: -40px;">
+            <div class="orbit-icon">💻</div>
+            <div class="orbit-name">Computer</div>
+          </div>
+          <div class="orbit-badge eagle" style="top: 50%; left: 0; margin-top: -40px;">
+            <div class="orbit-icon">🌍</div>
+            <div class="orbit-name">Citizenship</div>
+          </div>
+          <div class="orbit-badge" style="top: 50%; right: 0; margin-top: -40px;">
+            <div class="orbit-icon">🥾</div>
+            <div class="orbit-name">Hiking</div>
+          </div>
+        </div>
+
+        <div class="orbit orbit-2">
+          <div class="orbit-badge" style="top: 0; left: 50%; margin-left: -40px;">
+            <div class="orbit-icon">🤖</div>
+            <div class="orbit-name">Robotics</div>
+          </div>
+          <div class="orbit-badge" style="bottom: 0; left: 50%; margin-left: -40px;">
+            <div class="orbit-icon">🏊</div>
+            <div class="orbit-name">Swimming</div>
+          </div>
+          <div class="orbit-badge eagle" style="top: 50%; left: 0; margin-top: -40px;">
+            <div class="orbit-icon">🌲</div>
+            <div class="orbit-name">Env Sci</div>
+          </div>
+          <div class="orbit-badge" style="top: 50%; right: 0; margin-top: -40px;">
+            <div class="orbit-icon">📸</div>
+            <div class="orbit-name">Photo</div>
+          </div>
+          <div class="orbit-badge" style="top: 15%; left: 15%;">
+            <div class="orbit-icon">🎨</div>
+            <div class="orbit-name">Art</div>
+          </div>
+          <div class="orbit-badge" style="top: 15%; right: 15%;">
+            <div class="orbit-icon">🎵</div>
+            <div class="orbit-name">Music</div>
+          </div>
+        </div>
+
+        <div class="orbit orbit-3">
+          <div class="orbit-badge" style="top: 0; left: 50%; margin-left: -40px;">
+            <div class="orbit-icon">🚴</div>
+            <div class="orbit-name">Cycling</div>
+          </div>
+          <div class="orbit-badge" style="bottom: 0; left: 50%; margin-left: -40px;">
+            <div class="orbit-icon">🎭</div>
+            <div class="orbit-name">Theater</div>
+          </div>
+          <div class="orbit-badge" style="top: 50%; left: 0; margin-top: -40px;">
+            <div class="orbit-icon">⚡</div>
+            <div class="orbit-name">Electronics</div>
+          </div>
+          <div class="orbit-badge" style="top: 50%; right: 0; margin-top: -40px;">
+            <div class="orbit-icon">🧪</div>
+            <div class="orbit-name">Chemistry</div>
+          </div>
+          <div class="orbit-badge" style="top: 20%; left: 20%;">
+            <div class="orbit-icon">🛠️</div>
+            <div class="orbit-name">Engineering</div>
+          </div>
+          <div class="orbit-badge" style="top: 20%; right: 20%;">
+            <div class="orbit-icon">🚀</div>
+            <div class="orbit-name">Space</div>
+          </div>
+          <div class="orbit-badge" style="bottom: 20%; left: 20%;">
+            <div class="orbit-icon">🛶</div>
+            <div class="orbit-name">Kayaking</div>
+          </div>
+          <div class="orbit-badge eagle" style="bottom: 20%; right: 20%;">
+            <div class="orbit-icon">🚨</div>
+            <div class="orbit-name">Emergency</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 30: File System Tree -->
+    <div id="mockup-30" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">30. File System Tree</h2>
+        <p class="mockup-description">Developer file tree, monospace font, expandable folders</p>
+      </div>
+      <div class="file-tree">
+        <div class="tree-item" onclick="toggleFolder(this)">
+          <span class="tree-toggle">▼</span>
+          <span class="tree-icon">📁</span>
+          <span class="tree-folder">merit-badges/</span>
+          <span class="tree-meta">143 items</span>
+        </div>
+        <div class="tree-children">
+          <div class="tree-item" onclick="toggleFolder(this)">
+            <span class="tree-toggle">▼</span>
+            <span class="tree-icon">📁</span>
+            <span class="tree-folder">outdoor-skills/</span>
+            <span class="tree-meta">28 items</span>
+          </div>
+          <div class="tree-children">
+            <div class="tree-item">
+              <span class="tree-icon">🏕️</span>
+              <span class="tree-file eagle">camping.badge</span>
+              <span class="tree-meta">EAGLE • 20-30 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🥾</span>
+              <span class="tree-file">hiking.badge</span>
+              <span class="tree-meta">15-20 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🎒</span>
+              <span class="tree-file">backpacking.badge</span>
+              <span class="tree-meta">18-25 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🏊</span>
+              <span class="tree-file">swimming.badge</span>
+              <span class="tree-meta">12-16 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🚨</span>
+              <span class="tree-file eagle">emergency-preparedness.badge</span>
+              <span class="tree-meta">EAGLE • 10-12 hrs</span>
+            </div>
+          </div>
+
+          <div class="tree-item" onclick="toggleFolder(this)">
+            <span class="tree-toggle">▼</span>
+            <span class="tree-icon">📁</span>
+            <span class="tree-folder">stem/</span>
+            <span class="tree-meta">35 items</span>
+          </div>
+          <div class="tree-children">
+            <div class="tree-item">
+              <span class="tree-icon">💻</span>
+              <span class="tree-file">computer-science.badge</span>
+              <span class="tree-meta">8-10 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🤖</span>
+              <span class="tree-file">robotics.badge</span>
+              <span class="tree-meta">10-12 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">⚡</span>
+              <span class="tree-file">electronics.badge</span>
+              <span class="tree-meta">8-10 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🛠️</span>
+              <span class="tree-file">engineering.badge</span>
+              <span class="tree-meta">10-12 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🌲</span>
+              <span class="tree-file eagle">environmental-science.badge</span>
+              <span class="tree-meta">EAGLE • 15-20 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🚀</span>
+              <span class="tree-file">space-exploration.badge</span>
+              <span class="tree-meta">8-10 hrs</span>
+            </div>
+          </div>
+
+          <div class="tree-item" onclick="toggleFolder(this)">
+            <span class="tree-toggle">▼</span>
+            <span class="tree-icon">📁</span>
+            <span class="tree-folder">citizenship/</span>
+            <span class="tree-meta">5 items</span>
+          </div>
+          <div class="tree-children">
+            <div class="tree-item">
+              <span class="tree-icon">🏘️</span>
+              <span class="tree-file eagle">citizenship-in-community.badge</span>
+              <span class="tree-meta">EAGLE • 4-6 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🇺🇸</span>
+              <span class="tree-file eagle">citizenship-in-nation.badge</span>
+              <span class="tree-meta">EAGLE • 4-6 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🌍</span>
+              <span class="tree-file eagle">citizenship-in-world.badge</span>
+              <span class="tree-meta">EAGLE • 4-6 hrs</span>
+            </div>
+          </div>
+
+          <div class="tree-item" onclick="toggleFolder(this)">
+            <span class="tree-toggle">▼</span>
+            <span class="tree-icon">📁</span>
+            <span class="tree-folder">arts/</span>
+            <span class="tree-meta">18 items</span>
+          </div>
+          <div class="tree-children">
+            <div class="tree-item">
+              <span class="tree-icon">🎨</span>
+              <span class="tree-file">art.badge</span>
+              <span class="tree-meta">6-8 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🎵</span>
+              <span class="tree-file">music.badge</span>
+              <span class="tree-meta">6-8 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">📸</span>
+              <span class="tree-file">photography.badge</span>
+              <span class="tree-meta">6-8 hrs</span>
+            </div>
+            <div class="tree-item">
+              <span class="tree-icon">🎭</span>
+              <span class="tree-file">theater.badge</span>
+              <span class="tree-meta">6-8 hrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 31: Library Bookshelf -->
+    <div id="mockup-31" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">31. Library Bookshelf</h2>
+        <p class="mockup-description">Physical books on shelves, spine titles, vertical text</p>
+      </div>
+      <div class="bookshelf">
+        <div class="shelf">
+          <span class="shelf-label">Outdoor Skills</span>
+          <div class="book eagle tall">
+            <div class="book-icon">🏕️</div>
+            <div class="book-spine">Camping</div>
+          </div>
+          <div class="book" style="background: var(--olive-700);">
+            <div class="book-icon">🥾</div>
+            <div class="book-spine">Hiking</div>
+          </div>
+          <div class="book short" style="background: var(--teal-500);">
+            <div class="book-icon">🎒</div>
+            <div class="book-spine">Backpacking</div>
+          </div>
+          <div class="book tall" style="background: var(--olive-500);">
+            <div class="book-icon">🏊</div>
+            <div class="book-spine">Swimming</div>
+          </div>
+          <div class="book" style="background: var(--olive-700);">
+            <div class="book-icon">🚴</div>
+            <div class="book-spine">Cycling</div>
+          </div>
+          <div class="book eagle short">
+            <div class="book-icon">🚨</div>
+            <div class="book-spine">Emergency Preparedness</div>
+          </div>
+          <div class="book tall" style="background: var(--teal-600);">
+            <div class="book-icon">🛶</div>
+            <div class="book-spine">Kayaking</div>
+          </div>
+          <div class="book" style="background: var(--olive-500);">
+            <div class="book-icon">🎣</div>
+            <div class="book-spine">Fishing</div>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <span class="shelf-label">STEM</span>
+          <div class="book tall" style="background: var(--teal-500);">
+            <div class="book-icon">💻</div>
+            <div class="book-spine">Computer Science</div>
+          </div>
+          <div class="book short" style="background: var(--teal-600);">
+            <div class="book-icon">🤖</div>
+            <div class="book-spine">Robotics</div>
+          </div>
+          <div class="book" style="background: var(--olive-500);">
+            <div class="book-icon">⚡</div>
+            <div class="book-spine">Electronics</div>
+          </div>
+          <div class="book tall" style="background: var(--teal-500);">
+            <div class="book-icon">🛠️</div>
+            <div class="book-spine">Engineering</div>
+          </div>
+          <div class="book eagle short">
+            <div class="book-icon">🌲</div>
+            <div class="book-spine">Environmental Science</div>
+          </div>
+          <div class="book" style="background: var(--teal-600);">
+            <div class="book-icon">🚀</div>
+            <div class="book-spine">Space Exploration</div>
+          </div>
+          <div class="book tall" style="background: var(--olive-500);">
+            <div class="book-icon">🧪</div>
+            <div class="book-spine">Chemistry</div>
+          </div>
+          <div class="book short" style="background: var(--teal-500);">
+            <div class="book-icon">✈️</div>
+            <div class="book-spine">Aviation</div>
+          </div>
+        </div>
+
+        <div class="shelf">
+          <span class="shelf-label">Arts & Citizenship</span>
+          <div class="book" style="background: #c2185b;">
+            <div class="book-icon">🎨</div>
+            <div class="book-spine">Art</div>
+          </div>
+          <div class="book tall" style="background: #ad1457;">
+            <div class="book-icon">🎵</div>
+            <div class="book-spine">Music</div>
+          </div>
+          <div class="book short" style="background: #c2185b;">
+            <div class="book-icon">📸</div>
+            <div class="book-spine">Photography</div>
+          </div>
+          <div class="book" style="background: #ad1457;">
+            <div class="book-icon">🎭</div>
+            <div class="book-spine">Theater</div>
+          </div>
+          <div class="book eagle tall">
+            <div class="book-icon">🏘️</div>
+            <div class="book-spine">Citizenship in Community</div>
+          </div>
+          <div class="book eagle short">
+            <div class="book-icon">🇺🇸</div>
+            <div class="book-spine">Citizenship in Nation</div>
+          </div>
+          <div class="book eagle">
+            <div class="book-icon">🌍</div>
+            <div class="book-spine">Citizenship in World</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 32: Corkboard Pins -->
+    <div id="mockup-32" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">32. Corkboard Pins</h2>
+        <p class="mockup-description">Pinned cards with pushpins, rotated placement, detective board aesthetic</p>
+      </div>
+      <div class="corkboard">
+        <div class="pinned-card eagle" style="top: 50px; left: 50px; transform: rotate(-3deg);">
+          <div class="pin-icon">🏕️</div>
+          <div class="pin-title">Camping</div>
+          <div class="pin-meta">
+            ⭐⭐⭐⭐⭐ Difficult<br>
+            20-30 hrs • 🏕️ Overnight
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Planning</span>
+            <span class="pin-tag">Cooking</span>
+            <span class="pin-tag">Safety</span>
+          </div>
+        </div>
+
+        <div class="pinned-card" style="top: 50px; left: 320px; transform: rotate(2deg);">
+          <div class="pin-icon">💻</div>
+          <div class="pin-title">Computer Science</div>
+          <div class="pin-meta">
+            ⭐⭐⭐ Moderate<br>
+            8-10 hrs • 🏠 At Home
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Programming</span>
+            <span class="pin-tag">Algorithms</span>
+          </div>
+        </div>
+
+        <div class="pinned-card" style="top: 50px; left: 590px; transform: rotate(-2deg);">
+          <div class="pin-icon">🥾</div>
+          <div class="pin-title">Hiking</div>
+          <div class="pin-meta">
+            ⭐⭐⭐⭐ Hard<br>
+            15-20 hrs • ↔️ Both
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Navigation</span>
+            <span class="pin-tag">Endurance</span>
+          </div>
+        </div>
+
+        <div class="pinned-card eagle" style="top: 50px; left: 860px; transform: rotate(3deg);">
+          <div class="pin-icon">🌍</div>
+          <div class="pin-title">Citizenship in World</div>
+          <div class="pin-meta">
+            ⭐⭐ Easy<br>
+            4-6 hrs • 🏠 At Home
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Government</span>
+            <span class="pin-tag">Rights</span>
+          </div>
+        </div>
+
+        <div class="pinned-card" style="top: 320px; left: 50px; transform: rotate(1deg);">
+          <div class="pin-icon">🤖</div>
+          <div class="pin-title">Robotics</div>
+          <div class="pin-meta">
+            ⭐⭐⭐⭐ Hard<br>
+            10-12 hrs • 🏠 At Home
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Engineering</span>
+            <span class="pin-tag">Design</span>
+          </div>
+        </div>
+
+        <div class="pinned-card" style="top: 320px; left: 320px; transform: rotate(-4deg);">
+          <div class="pin-icon">🏊</div>
+          <div class="pin-title">Swimming</div>
+          <div class="pin-meta">
+            ⭐⭐⭐⭐ Hard<br>
+            12-16 hrs • 🏕️ Pool Required
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Safety</span>
+            <span class="pin-tag">Strokes</span>
+          </div>
+        </div>
+
+        <div class="pinned-card" style="top: 320px; left: 590px; transform: rotate(2deg);">
+          <div class="pin-icon">📸</div>
+          <div class="pin-title">Photography</div>
+          <div class="pin-meta">
+            ⭐⭐ Easy<br>
+            6-8 hrs • ↔️ Both
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Composition</span>
+            <span class="pin-tag">Editing</span>
+          </div>
+        </div>
+
+        <div class="pinned-card eagle" style="top: 320px; left: 860px; transform: rotate(-1deg);">
+          <div class="pin-icon">🌲</div>
+          <div class="pin-title">Environmental Science</div>
+          <div class="pin-meta">
+            ⭐⭐⭐⭐ Hard<br>
+            15-20 hrs • ↔️ Both
+          </div>
+          <div class="pin-tags">
+            <span class="pin-tag">Ecology</span>
+            <span class="pin-tag">Research</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 33: Carousel Slides -->
+    <div id="mockup-33" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">33. Carousel Slides</h2>
+        <p class="mockup-description">One large card at a time, prev/next buttons, slideshow presentation</p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <div class="slide-icon">🏕️</div>
+          <div class="slide-title">Camping</div>
+          <div class="slide-meta">
+            <span>⭐⭐⭐⭐⭐</span>
+            <span>20-30 hrs</span>
+            <span>🏕️ Overnight</span>
+            <span>🦅 Eagle Required</span>
+          </div>
+          <div class="slide-description">
+            Learn essential camping skills including tent setup, outdoor cooking, leave no trace principles,
+            and wilderness safety. Complete multiple overnight camping experiences with increasing responsibility
+            and independence. Plan and execute camping trips as a patrol leader.
+          </div>
+          <div class="slide-tags">
+            <span class="slide-tag">Planning</span>
+            <span class="slide-tag">Cooking</span>
+            <span class="slide-tag">Safety</span>
+            <span class="slide-tag">Leadership</span>
+            <span class="slide-tag">Leave No Trace</span>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-icon">💻</div>
+          <div class="slide-title">Computer Science</div>
+          <div class="slide-meta">
+            <span>⭐⭐⭐</span>
+            <span>8-10 hrs</span>
+            <span>🏠 At Home</span>
+          </div>
+          <div class="slide-description">
+            Explore the fundamentals of computer science including programming, algorithms, data structures,
+            and cybersecurity. Create working programs, analyze computational problems, and learn about
+            the ethical implications of technology in society.
+          </div>
+          <div class="slide-tags">
+            <span class="slide-tag">Programming</span>
+            <span class="slide-tag">Algorithms</span>
+            <span class="slide-tag">Cybersecurity</span>
+            <span class="slide-tag">Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-icon">🤖</div>
+          <div class="slide-title">Robotics</div>
+          <div class="slide-meta">
+            <span>⭐⭐⭐⭐</span>
+            <span>10-12 hrs</span>
+            <span>🏠 At Home</span>
+          </div>
+          <div class="slide-description">
+            Design, build, and program robots to accomplish specific tasks. Learn about sensors, actuators,
+            control systems, and the engineering design process. Explore careers in robotics and automation.
+          </div>
+          <div class="slide-tags">
+            <span class="slide-tag">Engineering</span>
+            <span class="slide-tag">Programming</span>
+            <span class="slide-tag">Design</span>
+            <span class="slide-tag">Automation</span>
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-btn" onclick="prevSlide()">←</button>
+          <div class="carousel-dots">
+            <div class="carousel-dot active" onclick="goToSlide(0)"></div>
+            <div class="carousel-dot" onclick="goToSlide(1)"></div>
+            <div class="carousel-dot" onclick="goToSlide(2)"></div>
+          </div>
+          <button class="carousel-btn" onclick="nextSlide()">→</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 34: Geographic Pin Map -->
+    <div id="mockup-34" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">34. Geographic Pin Map</h2>
+        <p class="mockup-description">Map pins (teardrop shape), hover for labels, spatial placement</p>
+      </div>
+      <div class="pin-map">
+        <div class="map-grid"></div>
+
+        <div class="map-pin" style="top: 10%; left: 15%;">
+          <div class="pin-marker eagle">
+            <div class="pin-icon-inner">🏕️</div>
+          </div>
+          <div class="pin-label">Camping • 20-30 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 15%; left: 35%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">💻</div>
+          </div>
+          <div class="pin-label">Computer Science • 8-10 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 20%; left: 55%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🥾</div>
+          </div>
+          <div class="pin-label">Hiking • 15-20 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 12%; left: 75%;">
+          <div class="pin-marker eagle">
+            <div class="pin-icon-inner">🌍</div>
+          </div>
+          <div class="pin-label">Citizenship in World • 4-6 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 35%; left: 20%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🤖</div>
+          </div>
+          <div class="pin-label">Robotics • 10-12 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 40%; left: 40%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🏊</div>
+          </div>
+          <div class="pin-label">Swimming • 12-16 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 38%; left: 60%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">📸</div>
+          </div>
+          <div class="pin-label">Photography • 6-8 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 45%; left: 80%;">
+          <div class="pin-marker eagle">
+            <div class="pin-icon-inner">🌲</div>
+          </div>
+          <div class="pin-label">Environmental Science • 15-20 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 60%; left: 15%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">⚡</div>
+          </div>
+          <div class="pin-label">Electronics • 8-10 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 65%; left: 35%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🎨</div>
+          </div>
+          <div class="pin-label">Art • 6-8 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 62%; left: 55%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🎵</div>
+          </div>
+          <div class="pin-label">Music • 6-8 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 68%; left: 75%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🚀</div>
+          </div>
+          <div class="pin-label">Space Exploration • 8-10 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 85%; left: 25%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🎭</div>
+          </div>
+          <div class="pin-label">Theater • 6-8 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 82%; left: 50%;">
+          <div class="pin-marker">
+            <div class="pin-icon-inner">🧪</div>
+          </div>
+          <div class="pin-label">Chemistry • 8-10 hrs</div>
+        </div>
+
+        <div class="map-pin" style="top: 88%; left: 70%;">
+          <div class="pin-marker eagle">
+            <div class="pin-icon-inner">🚨</div>
+          </div>
+          <div class="pin-label">Emergency Preparedness • 10-12 hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 35: Social Feed -->
+    <div id="mockup-35" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">35. Social Feed</h2>
+        <p class="mockup-description">Instagram-style feed with avatar, post content, like/comment actions</p>
+      </div>
+      <div class="social-feed">
+        <div class="feed-item">
+          <div class="feed-header">
+            <div class="feed-avatar eagle">🏕️</div>
+            <div class="feed-user-info">
+              <div class="feed-username">Camping Merit Badge</div>
+              <div class="feed-timestamp">Eagle Required • Outdoor Skills</div>
+            </div>
+          </div>
+          <div class="feed-image">🏕️</div>
+          <div class="feed-content">
+            <div class="feed-text">
+              Master essential camping skills through hands-on outdoor experiences. Learn tent setup, outdoor cooking,
+              leave no trace principles, and wilderness safety. Complete multiple overnight camping trips with
+              increasing responsibility.
+            </div>
+            <div class="feed-tags">#camping #outdoor #eagle #leadership</div>
+          </div>
+          <div class="feed-actions">
+            <div class="feed-action liked">
+              ❤️ <strong>1,247</strong>
+            </div>
+            <div class="feed-action">
+              💬 <strong>89</strong>
+            </div>
+            <div class="feed-action">
+              📤 Share
+            </div>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="feed-header">
+            <div class="feed-avatar">💻</div>
+            <div class="feed-user-info">
+              <div class="feed-username">Computer Science Merit Badge</div>
+              <div class="feed-timestamp">STEM</div>
+            </div>
+          </div>
+          <div class="feed-image">💻</div>
+          <div class="feed-content">
+            <div class="feed-text">
+              Dive into the world of programming, algorithms, and cybersecurity. Create working programs,
+              solve computational problems, and explore the ethical implications of technology. Perfect for
+              beginners and aspiring developers!
+            </div>
+            <div class="feed-tags">#programming #stem #technology #coding</div>
+          </div>
+          <div class="feed-actions">
+            <div class="feed-action">
+              ❤️ <strong>892</strong>
+            </div>
+            <div class="feed-action">
+              💬 <strong>64</strong>
+            </div>
+            <div class="feed-action">
+              📤 Share
+            </div>
+          </div>
+        </div>
+
+        <div class="feed-item">
+          <div class="feed-header">
+            <div class="feed-avatar">🤖</div>
+            <div class="feed-user-info">
+              <div class="feed-username">Robotics Merit Badge</div>
+              <div class="feed-timestamp">STEM</div>
+            </div>
+          </div>
+          <div class="feed-image">🤖</div>
+          <div class="feed-content">
+            <div class="feed-text">
+              Design, build, and program robots to accomplish specific tasks. Learn about sensors, actuators,
+              control systems, and the engineering design process. Explore exciting careers in robotics and automation.
+            </div>
+            <div class="feed-tags">#robotics #engineering #stem #automation</div>
+          </div>
+          <div class="feed-actions">
+            <div class="feed-action">
+              ❤️ <strong>743</strong>
+            </div>
+            <div class="feed-action">
+              💬 <strong>52</strong>
+            </div>
+            <div class="feed-action">
+              📤 Share
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOCKUP 36: Notion Database -->
+    <div id="mockup-36" class="mockup">
+      <div class="mockup-header">
+        <h2 class="mockup-title">36. Notion Database</h2>
+        <p class="mockup-description">Table view with tabs (Table/Gallery/Calendar/Board), productivity tool aesthetic</p>
+      </div>
+      <div class="notion-container">
+        <div class="notion-header">
+          <div class="notion-title">Merit Badges Database</div>
+        </div>
+        <div class="notion-tabs">
+          <div class="notion-tab active">📊 Table</div>
+          <div class="notion-tab">🖼️ Gallery</div>
+          <div class="notion-tab">📅 Calendar</div>
+          <div class="notion-tab">📋 Board</div>
+        </div>
+        <table class="notion-table">
+          <thead>
+            <tr>
+              <th style="width: 40px;">✓</th>
+              <th>Merit Badge</th>
+              <th>Status</th>
+              <th>Category</th>
+              <th>Difficulty</th>
+              <th>Time</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">🏕️</div>
+                  <div>
+                    <div class="notion-badge-name">
+                      Camping
+                      <span class="notion-eagle-tag">🦅 EAGLE</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td><span class="notion-status in-progress">In Progress</span></td>
+              <td>Outdoor Skills</td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>20-30 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Planning</span>
+                  <span class="notion-tag">Cooking</span>
+                  <span class="notion-tag">Safety</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">💻</div>
+                  <div class="notion-badge-name">Computer Science</div>
+                </div>
+              </td>
+              <td><span class="notion-status completed">Completed</span></td>
+              <td>STEM</td>
+              <td>⭐⭐⭐</td>
+              <td>8-10 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Programming</span>
+                  <span class="notion-tag">Algorithms</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">🥾</div>
+                  <div class="notion-badge-name">Hiking</div>
+                </div>
+              </td>
+              <td><span class="notion-status not-started">Not Started</span></td>
+              <td>Outdoor Skills</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>15-20 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Navigation</span>
+                  <span class="notion-tag">Endurance</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">🌍</div>
+                  <div>
+                    <div class="notion-badge-name">
+                      Citizenship in World
+                      <span class="notion-eagle-tag">🦅 EAGLE</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td><span class="notion-status not-started">Not Started</span></td>
+              <td>Citizenship</td>
+              <td>⭐⭐</td>
+              <td>4-6 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Government</span>
+                  <span class="notion-tag">Rights</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">🤖</div>
+                  <div class="notion-badge-name">Robotics</div>
+                </div>
+              </td>
+              <td><span class="notion-status in-progress">In Progress</span></td>
+              <td>STEM</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>10-12 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Engineering</span>
+                  <span class="notion-tag">Programming</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">🏊</div>
+                  <div class="notion-badge-name">Swimming</div>
+                </div>
+              </td>
+              <td><span class="notion-status not-started">Not Started</span></td>
+              <td>Aquatics</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>12-16 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Safety</span>
+                  <span class="notion-tag">Strokes</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">📸</div>
+                  <div class="notion-badge-name">Photography</div>
+                </div>
+              </td>
+              <td><span class="notion-status completed">Completed</span></td>
+              <td>Arts</td>
+              <td>⭐⭐</td>
+              <td>6-8 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Composition</span>
+                  <span class="notion-tag">Editing</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><div class="notion-checkbox"></div></td>
+              <td>
+                <div class="notion-badge-cell">
+                  <div class="notion-badge-icon">🌲</div>
+                  <div>
+                    <div class="notion-badge-name">
+                      Environmental Science
+                      <span class="notion-eagle-tag">🦅 EAGLE</span>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td><span class="notion-status not-started">Not Started</span></td>
+              <td>STEM</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>15-20 hrs</td>
+              <td>
+                <div class="notion-tag-list">
+                  <span class="notion-tag">Ecology</span>
+                  <span class="notion-tag">Research</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Navigation between mockups
+    function showMockup(number) {
+      // Hide all mockups
+      document.querySelectorAll('.mockup').forEach(m => m.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+      // Show selected mockup
+      document.getElementById(`mockup-${number}`).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // File tree toggle
+    function toggleFolder(element) {
+      element.classList.toggle('collapsed');
+    }
+
+    // Spotlight search filter
+    function filterSpotlight(query) {
+      // Simple demonstration - would be more sophisticated in production
+      const items = document.querySelectorAll('.spotlight-item');
+      items.forEach((item, index) => {
+        if (index === 0) {
+          item.classList.add('selected');
+        } else {
+          item.classList.remove('selected');
+        }
+      });
+    }
+
+    // Carousel functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    function updateCarousel() {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentSlide);
+      });
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    // Keyboard navigation for spotlight
+    document.addEventListener('keydown', (e) => {
+      if (document.getElementById('mockup-27').classList.contains('active')) {
+        const items = document.querySelectorAll('.spotlight-item');
+        let selectedIndex = Array.from(items).findIndex(item => item.classList.contains('selected'));
+
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          items[selectedIndex]?.classList.remove('selected');
+          selectedIndex = (selectedIndex + 1) % items.length;
+          items[selectedIndex]?.classList.add('selected');
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          items[selectedIndex]?.classList.remove('selected');
+          selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+          items[selectedIndex]?.classList.add('selected');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

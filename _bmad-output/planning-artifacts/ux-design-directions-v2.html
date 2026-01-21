@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBU Design Directions - Contemporary</title>
+  <style>
+    /* Design Tokens - BSA Scout Uniform Colors */
+    :root {
+      --brown-000: hsl(35, 69%, 94%);
+      --brown-500: hsl(34, 70%, 16%);
+      --brown-600: hsl(33, 35%, 12%);
+
+      --tan-000: hsl(41, 23%, 97%);
+      --tan-100: hsl(41, 23%, 94%);
+      --tan-200: hsl(41, 23%, 88%);
+      --tan-300: hsl(41, 23%, 79%);
+      --tan-400: hsl(41, 23%, 69%);
+      --tan-600: hsl(41, 23%, 45%);
+      --tan-700: hsl(41, 23%, 28%);
+      --tan-800: hsl(41, 23%, 10%);
+
+      --olive-100: hsl(138, 27%, 94%);
+      --olive-200: hsl(138, 27%, 88%);
+      --olive-300: hsl(138, 27%, 79%);
+      --olive-400: hsl(138, 27%, 58%);
+      --olive-500: hsl(138, 27%, 19%);
+      --olive-600: hsl(138, 27%, 15%);
+      --olive-700: hsl(138, 27%, 10%);
+
+      --teal-300: hsl(192, 49%, 53%);
+      --teal-400: hsl(192, 51%, 33%);
+      --teal-500: hsl(192, 58%, 25%);
+
+      /* Typography */
+      --font-family: "Geologica", system-ui, -apple-system, sans-serif;
+
+      /* Spacing */
+      --space-2xs: clamp(0.56rem, 0.53rem + 0.19vi, 0.75rem);
+      --space-xs: clamp(0.88rem, 0.83rem + 0.25vi, 1.13rem);
+      --space-s: clamp(1.13rem, 1.05rem + 0.38vi, 1.5rem);
+      --space-m: clamp(1.69rem, 1.58rem + 0.56vi, 2.25rem);
+      --space-l: clamp(2.25rem, 2.1rem + 0.75vi, 3rem);
+      --space-xl: clamp(3.38rem, 3.15rem + 1.13vi, 4.5rem);
+      --space-2xl: clamp(4.5rem, 4.2rem + 1.5vi, 6rem);
+    }
+
+    @supports (color: oklch(0.9 0.01 76)) {
+      :root {
+        --brown-500: oklch(0.32 0.058 69.76);
+        --tan-000: oklch(0.98 0.003 86.03);
+        --tan-100: oklch(0.96 0.007 86.03);
+        --tan-200: oklch(0.92 0.014 86.06);
+        --tan-400: oklch(0.78 0.037 86.05);
+        --olive-300: oklch(0.86 0.042 154.91);
+        --olive-400: oklch(0.71 0.085 153.31);
+        --olive-500: oklch(0.34 0.045 153.21);
+        --olive-600: oklch(0.29 0.038 153.05);
+        --olive-700: oklch(0.23 0.027 153.38);
+        --teal-400: oklch(0.50 0.073 217.3);
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-family);
+      line-height: 1.5;
+      color: var(--olive-600);
+      background: var(--tan-100);
+      font-weight: 300;
+    }
+
+    .mockup-nav {
+      position: sticky;
+      top: 0;
+      background: var(--olive-700);
+      color: var(--tan-000);
+      padding: 1.25rem 2rem;
+      z-index: 1000;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      backdrop-filter: blur(10px);
+    }
+
+    .mockup-nav h1 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0;
+      flex: 1;
+      min-width: 200px;
+      letter-spacing: -0.01em;
+    }
+
+    .mockup-nav button {
+      background: transparent;
+      color: var(--tan-200);
+      border: 1px solid var(--olive-500);
+      padding: 0.5rem 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      letter-spacing: -0.01em;
+    }
+
+    .mockup-nav button:hover {
+      background: var(--olive-600);
+      border-color: var(--olive-400);
+      color: var(--tan-000);
+    }
+
+    .mockup-nav button.active {
+      background: var(--tan-600);
+      color: var(--tan-000);
+      border-color: var(--tan-600);
+      font-weight: 600;
+    }
+
+    .mockup-container { padding: 0; }
+
+    .mockup {
+      display: none;
+      min-height: 100vh;
+    }
+
+    .mockup.active { display: block; }
+
+    .mockup-header {
+      background: linear-gradient(135deg, var(--olive-600) 0%, var(--olive-700) 100%);
+      color: var(--tan-000);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .mockup-header h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .mockup-header p {
+      font-size: 1.05rem;
+      opacity: 0.85;
+      font-weight: 400;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 3rem clamp(1rem, 4vw, 3rem);
+    }
+
+    /* Direction 1: Brutalist Hierarchy */
+    .direction-1 {
+      background: var(--tan-000);
+    }
+
+    .direction-1 .section-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      color: var(--olive-700);
+      margin-bottom: 2.5rem;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .direction-1 .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+      gap: 1.5rem;
+    }
+
+    .direction-1 .badge-card {
+      background: white;
+      border: 2px solid var(--olive-700);
+      padding: 0;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .direction-1 .badge-card:hover {
+      border-color: var(--brown-500);
+      transform: translate(-2px, -2px);
+      box-shadow: 4px 4px 0 var(--olive-700);
+    }
+
+    .direction-1 .badge-image {
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--olive-400) 0%, var(--teal-400) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      border-bottom: 2px solid var(--olive-700);
+      position: relative;
+    }
+
+    .direction-1 .eagle-indicator {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    .direction-1 .badge-content {
+      padding: 1.5rem;
+    }
+
+    .direction-1 .badge-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--olive-700);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .direction-1 .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--tan-300);
+    }
+
+    .direction-1 .meta-item {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--olive-600);
+    }
+
+    .direction-1 .badge-skills {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-1 .skill-tag {
+      background: var(--olive-700);
+      color: var(--tan-000);
+      padding: 0.4rem 0.9rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Direction 2: Asymmetric Masonry */
+    .direction-2 {
+      background: var(--tan-100);
+    }
+
+    .direction-2 .section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: var(--olive-700);
+      margin-bottom: 2rem;
+      letter-spacing: -0.025em;
+    }
+
+    .direction-2 .badge-masonry {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 1.25rem;
+      grid-auto-flow: dense;
+    }
+
+    .direction-2 .badge-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease-out;
+      position: relative;
+    }
+
+    .direction-2 .badge-card.featured {
+      grid-column: span 2;
+    }
+
+    .direction-2 .badge-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    .direction-2 .badge-image-wrap {
+      position: relative;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--tan-400) 0%, var(--olive-400) 50%, var(--teal-400) 100%);
+      overflow: hidden;
+    }
+
+    .direction-2 .badge-image {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+    }
+
+    .direction-2 .eagle-float {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .direction-2 .badge-content {
+      padding: 1.5rem;
+    }
+
+    .direction-2 .badge-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--olive-700);
+      margin-bottom: 1rem;
+      letter-spacing: -0.015em;
+    }
+
+    .direction-2 .meta-row {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-2 .meta-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--olive-600);
+    }
+
+    .direction-2 .badge-skills {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-2 .skill-pill {
+      background: linear-gradient(135deg, var(--olive-500) 0%, var(--olive-600) 100%);
+      color: var(--tan-000);
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* Direction 3: Bento Grid */
+    .direction-3 {
+      background: linear-gradient(180deg, var(--tan-000) 0%, var(--tan-200) 100%);
+    }
+
+    .direction-3 .section-title {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 900;
+      color: var(--olive-700);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .direction-3 .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      grid-auto-rows: 240px;
+    }
+
+    .direction-3 .bento-item {
+      background: white;
+      border-radius: 24px;
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .direction-3 .bento-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 24px 48px rgba(0,0,0,0.08);
+    }
+
+    .direction-3 .bento-large {
+      grid-column: span 2;
+      grid-row: span 2;
+      background: linear-gradient(135deg, var(--olive-600) 0%, var(--olive-700) 100%);
+      color: var(--tan-000);
+    }
+
+    .direction-3 .bento-wide {
+      grid-column: span 2;
+    }
+
+    .direction-3 .bento-tall {
+      grid-row: span 2;
+    }
+
+    .direction-3 .badge-icon-large {
+      font-size: 6rem;
+      position: absolute;
+      right: -1rem;
+      bottom: -1rem;
+      opacity: 0.15;
+    }
+
+    .direction-3 .badge-icon-small {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .direction-3 .eagle-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .direction-3 .badge-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.015em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .direction-3 .bento-large .badge-title {
+      font-size: 2.2rem;
+      font-weight: 900;
+    }
+
+    .direction-3 .meta-compact {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+    }
+
+    .direction-3 .bento-large .meta-compact {
+      font-size: 1.1rem;
+    }
+
+    /* Direction 4: Split Screen */
+    .direction-4 {
+      background: var(--olive-700);
+    }
+
+    .direction-4 .split-layout {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      min-height: 100vh;
+      gap: 0;
+    }
+
+    .direction-4 .sidebar {
+      background: var(--olive-700);
+      color: var(--tan-000);
+      padding: 3rem 2rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .direction-4 .sidebar-title {
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .direction-4 .filter-group {
+      margin-bottom: 2rem;
+    }
+
+    .direction-4 .filter-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.7;
+      margin-bottom: 0.75rem;
+    }
+
+    .direction-4 .filter-item {
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 400;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .direction-4 .filter-item:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .direction-4 .filter-item.active {
+      background: var(--tan-600);
+      font-weight: 600;
+    }
+
+    .direction-4 .main-content {
+      background: var(--tan-000);
+      padding: 3rem 2rem;
+    }
+
+    .direction-4 .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .direction-4 .badge-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid var(--tan-300);
+      transition: all 0.25s;
+      position: relative;
+    }
+
+    .direction-4 .badge-card:hover {
+      border-color: var(--olive-500);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    .direction-4 .badge-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .direction-4 .badge-icon {
+      font-size: 3rem;
+    }
+
+    .direction-4 .eagle-badge-small {
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .direction-4 .badge-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--olive-700);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .direction-4 .meta-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .direction-4 .meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .direction-4 .meta-label {
+      color: var(--olive-400);
+      font-weight: 500;
+    }
+
+    .direction-4 .meta-value {
+      color: var(--olive-600);
+      font-weight: 600;
+    }
+
+    .direction-4 .badge-skills {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-4 .skill-tag {
+      background: var(--olive-100);
+      color: var(--olive-700);
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1px solid var(--olive-200);
+    }
+
+    /* Direction 5: Magazine Layout */
+    .direction-5 {
+      background: white;
+    }
+
+    .direction-5 .magazine-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .direction-5 .featured-badge {
+      background: var(--olive-700);
+      color: var(--tan-000);
+      padding: 3rem;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .direction-5 .featured-icon {
+      position: absolute;
+      font-size: 20rem;
+      right: -3rem;
+      bottom: -4rem;
+      opacity: 0.08;
+    }
+
+    .direction-5 .eagle-ribbon {
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.5rem 1.5rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+    }
+
+    .direction-5 .featured-title {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .direction-5 .featured-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .direction-5 .meta-block {
+      border-top: 2px solid rgba(255,255,255,0.3);
+      padding-top: 0.75rem;
+    }
+
+    .direction-5 .meta-label-large {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .direction-5 .meta-value-large {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 0.25rem;
+    }
+
+    .direction-5 .sidebar-badges {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .direction-5 .mini-card {
+      background: var(--tan-100);
+      padding: 1.25rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--olive-500);
+      transition: all 0.2s;
+    }
+
+    .direction-5 .mini-card:hover {
+      border-left-width: 8px;
+      border-left-color: var(--brown-500);
+    }
+
+    .direction-5 .mini-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--olive-700);
+      margin-bottom: 0.5rem;
+    }
+
+    .direction-5 .mini-meta {
+      font-size: 0.85rem;
+      color: var(--olive-500);
+      display: flex;
+      gap: 1rem;
+    }
+
+    .direction-5 .eagle-inline {
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+    }
+
+    /* Direction 6: Data Table Hybrid */
+    .direction-6 {
+      background: var(--tan-000);
+    }
+
+    .direction-6 .section-title {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 700;
+      color: var(--olive-700);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .direction-6 .table-header {
+      display: grid;
+      grid-template-columns: 2fr 0.8fr 1fr 1fr 0.6fr;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      background: var(--olive-600);
+      color: var(--tan-000);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .direction-6 .badge-table-row {
+      display: grid;
+      grid-template-columns: 2fr 0.8fr 1fr 1fr 0.6fr;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: white;
+      border-bottom: 1px solid var(--tan-200);
+      align-items: center;
+      transition: all 0.2s;
+    }
+
+    .direction-6 .badge-table-row:hover {
+      background: var(--tan-100);
+      border-left: 4px solid var(--olive-500);
+      padding-left: calc(1.5rem - 4px);
+    }
+
+    .direction-6 .badge-name-cell {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .direction-6 .table-icon {
+      font-size: 2.5rem;
+    }
+
+    .direction-6 .table-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--olive-700);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .direction-6 .eagle-micro {
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+    }
+
+    .direction-6 .table-cell {
+      font-size: 0.95rem;
+      color: var(--olive-600);
+    }
+
+    .direction-6 .difficulty-cell {
+      font-size: 1.2rem;
+    }
+
+    /* Direction 7: Cards with Texture */
+    .direction-7 {
+      background: var(--tan-200);
+    }
+
+    .direction-7 .section-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: var(--olive-700);
+      margin-bottom: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .direction-7 .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .direction-7 .badge-card {
+      background: linear-gradient(135deg, white 0%, var(--tan-000) 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow:
+        0 1px 2px rgba(0,0,0,0.04),
+        0 4px 8px rgba(0,0,0,0.03),
+        0 8px 16px rgba(0,0,0,0.02);
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      border: 1px solid var(--tan-300);
+    }
+
+    .direction-7 .badge-card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 8px 16px rgba(0,0,0,0.06),
+        0 16px 32px rgba(0,0,0,0.04),
+        0 24px 48px rgba(0,0,0,0.03);
+      border-color: var(--olive-400);
+    }
+
+    .direction-7 .badge-visual {
+      height: 200px;
+      background: linear-gradient(135deg, var(--olive-500) 0%, var(--teal-500) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      position: relative;
+      border-bottom: 3px solid var(--olive-600);
+    }
+
+    .direction-7 .eagle-stamp {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      transform: rotate(-5deg);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      letter-spacing: 0.05em;
+    }
+
+    .direction-7 .badge-body {
+      padding: 1.75rem;
+    }
+
+    .direction-7 .badge-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--olive-700);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .direction-7 .meta-pills {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-7 .meta-pill {
+      background: var(--tan-100);
+      border: 1px solid var(--tan-400);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--olive-600);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .direction-7 .badge-skills {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-7 .skill-tag {
+      background: var(--olive-600);
+      color: var(--tan-000);
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* Direction 8: Minimalist Spacious */
+    .direction-8 {
+      background: var(--tan-000);
+    }
+
+    .direction-8 .section-title {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 900;
+      color: var(--olive-700);
+      margin-bottom: 3rem;
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+
+    .direction-8 .badge-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 900px;
+    }
+
+    .direction-8 .badge-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 20px;
+      border: 1px solid var(--tan-200);
+      transition: all 0.3s ease-out;
+      position: relative;
+    }
+
+    .direction-8 .badge-card:hover {
+      border-color: var(--olive-300);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      transform: translateX(8px);
+    }
+
+    .direction-8 .badge-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .direction-8 .title-group {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .direction-8 .badge-icon-inline {
+      font-size: 2.5rem;
+    }
+
+    .direction-8 .badge-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--olive-700);
+      letter-spacing: -0.025em;
+    }
+
+    .direction-8 .eagle-badge-inline {
+      background: var(--brown-500);
+      color: var(--tan-000);
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .direction-8 .meta-row-spaced {
+      display: flex;
+      gap: 3rem;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .direction-8 .meta-spaced {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--olive-600);
+      font-weight: 500;
+    }
+
+    .direction-8 .badge-skills-row {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .direction-8 .skill-tag-large {
+      background: linear-gradient(135deg, var(--olive-500) 0%, var(--olive-600) 100%);
+      color: var(--tan-000);
+      padding: 0.6rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .direction-3 .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .direction-4 .split-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .direction-4 .sidebar {
+        position: static;
+        height: auto;
+      }
+
+      .direction-5 .magazine-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .direction-6 .table-header,
+      .direction-6 .badge-table-row {
+        grid-template-columns: 2fr 1fr 1fr 0.6fr;
+      }
+
+      .direction-6 .table-header > :nth-child(3),
+      .direction-6 .badge-table-row > :nth-child(3) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mockup-nav {
+        padding: 1rem;
+      }
+
+      .direction-3 .bento-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+      }
+
+      .direction-3 .bento-large,
+      .direction-3 .bento-wide,
+      .direction-3 .bento-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .direction-5 .featured-badge {
+        padding: 2rem;
+      }
+
+      .direction-5 .featured-title {
+        font-size: 2rem;
+      }
+
+      .direction-5 .featured-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .direction-6 .table-header {
+        display: none;
+      }
+
+      .direction-6 .badge-table-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .direction-8 .title-group {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .direction-8 .meta-row-spaced {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="mockup-nav">
+    <h1>MBU Design Directions — Contemporary</h1>
+    <button onclick="showMockup(1)" class="active">1. Brutalist</button>
+    <button onclick="showMockup(2)">2. Asymmetric</button>
+    <button onclick="showMockup(3)">3. Bento Grid</button>
+    <button onclick="showMockup(4)">4. Split Screen</button>
+    <button onclick="showMockup(5)">5. Magazine</button>
+    <button onclick="showMockup(6)">6. Table Hybrid</button>
+    <button onclick="showMockup(7)">7. Textured</button>
+    <button onclick="showMockup(8)">8. Spacious</button>
+  </nav>
+
+  <div class="mockup-container">
+
+    <!-- Direction 1: Brutalist Hierarchy -->
+    <div id="mockup-1" class="mockup active direction-1">
+      <div class="mockup-header">
+        <h2>Direction 1: Brutalist Hierarchy</h2>
+        <p>Bold borders, stark contrasts, heavy typography. Brutalist confidence meets Scouting.</p>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Eagle-Required Merit Badges</h2>
+        <div class="badge-grid">
+          <div class="badge-card">
+            <div class="badge-image">
+              🏕️
+              <div class="eagle-indicator">🦅 EAGLE</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">Camping</div>
+              <div class="meta-grid">
+                <div class="meta-item">⭐⭐⭐</div>
+                <div class="meta-item">8-10 hrs</div>
+                <div class="meta-item">🏕️ Outdoor</div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Outdoor</span>
+                <span class="skill-tag">Leadership</span>
+                <span class="skill-tag">Safety</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-image">
+              👨‍⚕️
+              <div class="eagle-indicator">🦅 EAGLE</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">First Aid</div>
+              <div class="meta-grid">
+                <div class="meta-item">⭐⭐</div>
+                <div class="meta-item">6-8 hrs</div>
+                <div class="meta-item">↔️ Flexible</div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">First Aid</span>
+                <span class="skill-tag">Safety</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-image">
+              🏊
+              <div class="eagle-indicator">🦅 EAGLE</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">Swimming</div>
+              <div class="meta-grid">
+                <div class="meta-item">⭐⭐</div>
+                <div class="meta-item">5-7 hrs</div>
+                <div class="meta-item">🏊 Pool</div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Swimming</span>
+                <span class="skill-tag">Fitness</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-image">🎯</div>
+            <div class="badge-content">
+              <div class="badge-title">Communications</div>
+              <div class="meta-grid">
+                <div class="meta-item">⭐⭐⭐</div>
+                <div class="meta-item">8-10 hrs</div>
+                <div class="meta-item">↔️ Flexible</div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 2: Asymmetric Masonry -->
+    <div id="mockup-2" class="mockup direction-2">
+      <div class="mockup-header">
+        <h2>Direction 2: Asymmetric Masonry</h2>
+        <p>Varied card sizes, featured content, organic layout. Pinterest-inspired discovery.</p>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Popular Outdoor Badges</h2>
+        <div class="badge-masonry">
+          <div class="badge-card featured">
+            <div class="badge-image-wrap">
+              <div class="badge-image">
+              <img src="../../../hugo/content/merit-badges/camping/camping-merit-badge.png" alt="Camping" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
+              <div class="eagle-float">🦅 Eagle Required</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">Camping</div>
+              <div class="meta-row">
+                <span class="meta-chip">⭐⭐⭐ Moderate</span>
+                <span class="meta-chip">⏱️ 8-10 hours</span>
+                <span class="meta-chip">🏕️ Outdoor Required</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-pill">Outdoor Skills</span>
+                <span class="skill-pill">Leadership</span>
+                <span class="skill-pill">Safety</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-image-wrap">
+              <div class="badge-image">🥾</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">Hiking</div>
+              <div class="meta-row">
+                <span class="meta-chip">⭐⭐ Easy</span>
+                <span class="meta-chip">⏱️ 12-15 hrs</span>
+                <span class="meta-chip">🏕️ Outdoor</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-pill">Outdoor</span>
+                <span class="skill-pill">Navigation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-image-wrap">
+              <div class="badge-image">🎣</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">Fishing</div>
+              <div class="meta-row">
+                <span class="meta-chip">⭐⭐ Easy</span>
+                <span class="meta-chip">⏱️ 6-8 hrs</span>
+                <span class="meta-chip">🏕️ Outdoor</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-pill">Outdoor</span>
+                <span class="skill-pill">Nature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-image-wrap">
+              <div class="badge-image">🧭</div>
+            </div>
+            <div class="badge-content">
+              <div class="badge-title">Orienteering</div>
+              <div class="meta-row">
+                <span class="meta-chip">⭐⭐⭐ Moderate</span>
+                <span class="meta-chip">⏱️ 10-12 hrs</span>
+                <span class="meta-chip">🏕️ Outdoor</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-pill">Navigation</span>
+                <span class="skill-pill">STEM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 3: Bento Grid -->
+    <div id="mockup-3" class="mockup direction-3">
+      <div class="mockup-header">
+        <h2>Direction 3: Bento Grid</h2>
+        <p>Variable sized tiles, spatial hierarchy, app-like. iOS/modern app aesthetic.</p>
+      </div>
+      <div class="container" style="max-width: 1400px;">
+        <h2 class="section-title">Browse Badges</h2>
+        <div class="bento-grid">
+          <div class="bento-item bento-large">
+            <div class="eagle-tag">🦅 Eagle</div>
+            <div>
+              <div class="badge-icon-large">🏕️</div>
+              <div class="badge-title">Camping</div>
+            </div>
+            <div class="meta-compact">
+              <span>⭐⭐⭐</span>
+              <span>8-10 hrs</span>
+              <span>Outdoor</span>
+            </div>
+          </div>
+
+          <div class="bento-item">
+            <div class="eagle-tag">🦅 Eagle</div>
+            <div class="badge-icon-small">👨‍⚕️</div>
+            <div class="badge-title">First Aid</div>
+            <div class="meta-compact">
+              <span>⭐⭐</span>
+              <span>6-8 hrs</span>
+            </div>
+          </div>
+
+          <div class="bento-item">
+            <div class="eagle-tag">🦅 Eagle</div>
+            <div class="badge-icon-small">🏊</div>
+            <div class="badge-title">Swimming</div>
+            <div class="meta-compact">
+              <span>⭐⭐</span>
+              <span>5-7 hrs</span>
+            </div>
+          </div>
+
+          <div class="bento-item bento-wide">
+            <div class="badge-icon-small">🥾</div>
+            <div class="badge-title">Hiking</div>
+            <div class="meta-compact">
+              <span>⭐⭐</span>
+              <span>12-15 hrs</span>
+              <span>Outdoor Required</span>
+            </div>
+          </div>
+
+          <div class="bento-item bento-tall">
+            <div class="badge-icon-small">🎣</div>
+            <div class="badge-title">Fishing</div>
+            <div class="meta-compact">
+              <span>⭐⭐</span>
+              <span>6-8 hrs</span>
+              <span>Outdoor</span>
+            </div>
+          </div>
+
+          <div class="bento-item">
+            <div class="badge-icon-small">🧭</div>
+            <div class="badge-title">Orienteering</div>
+            <div class="meta-compact">
+              <span>⭐⭐⭐</span>
+              <span>10-12 hrs</span>
+            </div>
+          </div>
+
+          <div class="bento-item">
+            <div class="badge-icon-small">🏹</div>
+            <div class="badge-title">Archery</div>
+            <div class="meta-compact">
+              <span>⭐⭐</span>
+              <span>4-6 hrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 4: Split Screen Filter -->
+    <div id="mockup-4" class="mockup direction-4">
+      <div class="split-layout">
+        <aside class="sidebar">
+          <h2 class="sidebar-title">Find Your Badge</h2>
+
+          <div class="filter-group">
+            <div class="filter-label">Eagle Status</div>
+            <div class="filter-item active">🦅 Eagle Required (17)</div>
+            <div class="filter-item">All Badges (143)</div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-label">Difficulty</div>
+            <div class="filter-item">⭐ Easy</div>
+            <div class="filter-item active">⭐⭐ Moderate</div>
+            <div class="filter-item">⭐⭐⭐ Challenging</div>
+            <div class="filter-item">⭐⭐⭐⭐ Difficult</div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-label">Location</div>
+            <div class="filter-item">🏠 Indoor</div>
+            <div class="filter-item active">🏕️ Outdoor</div>
+            <div class="filter-item">↔️ Flexible</div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-label">Time Commitment</div>
+            <div class="filter-item">Quick (&lt;5 hrs)</div>
+            <div class="filter-item active">Weekend (5-10 hrs)</div>
+            <div class="filter-item">Long-term (10+ hrs)</div>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <h2 style="font-size: 2rem; font-weight: 700; color: var(--olive-700); margin-bottom: 2rem;">12 badges match</h2>
+          <div class="badge-grid">
+            <div class="badge-card">
+              <div class="badge-header">
+                <div class="badge-icon">🏕️</div>
+                <div class="eagle-badge-small">🦅 Eagle</div>
+              </div>
+              <div class="badge-title">Camping</div>
+              <div class="meta-stack">
+                <div class="meta-line">
+                  <span class="meta-label">Difficulty</span>
+                  <span class="meta-value">⭐⭐⭐ Moderate</span>
+                </div>
+                <div class="meta-line">
+                  <span class="meta-label">Time</span>
+                  <span class="meta-value">8-10 hours</span>
+                </div>
+                <div class="meta-line">
+                  <span class="meta-label">Location</span>
+                  <span class="meta-value">🏕️ Outdoor</span>
+                </div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Outdoor</span>
+                <span class="skill-tag">Leadership</span>
+              </div>
+            </div>
+
+            <div class="badge-card">
+              <div class="badge-header">
+                <div class="badge-icon">👨‍⚕️</div>
+                <div class="eagle-badge-small">🦅 Eagle</div>
+              </div>
+              <div class="badge-title">First Aid</div>
+              <div class="meta-stack">
+                <div class="meta-line">
+                  <span class="meta-label">Difficulty</span>
+                  <span class="meta-value">⭐⭐ Easy</span>
+                </div>
+                <div class="meta-line">
+                  <span class="meta-label">Time</span>
+                  <span class="meta-value">6-8 hours</span>
+                </div>
+                <div class="meta-line">
+                  <span class="meta-label">Location</span>
+                  <span class="meta-value">↔️ Flexible</span>
+                </div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">First Aid</span>
+                <span class="skill-tag">Safety</span>
+              </div>
+            </div>
+
+            <div class="badge-card">
+              <div class="badge-header">
+                <div class="badge-icon">🎣</div>
+              </div>
+              <div class="badge-title">Fishing</div>
+              <div class="meta-stack">
+                <div class="meta-line">
+                  <span class="meta-label">Difficulty</span>
+                  <span class="meta-value">⭐⭐ Easy</span>
+                </div>
+                <div class="meta-line">
+                  <span class="meta-label">Time</span>
+                  <span class="meta-value">6-8 hours</span>
+                </div>
+                <div class="meta-line">
+                  <span class="meta-label">Location</span>
+                  <span class="meta-value">🏕️ Outdoor</span>
+                </div>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Outdoor</span>
+                <span class="skill-tag">Nature</span>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Direction 5: Magazine Editorial -->
+    <div id="mockup-5" class="mockup direction-5">
+      <div class="mockup-header">
+        <h2>Direction 5: Magazine Editorial</h2>
+        <p>Hero-driven, editorial polish, content-forward. Premium publication aesthetic.</p>
+      </div>
+      <div class="container">
+        <div class="magazine-layout">
+          <div class="featured-badge">
+            <div class="featured-icon">🏕️</div>
+            <div class="eagle-ribbon">🦅 Eagle Required</div>
+            <div class="featured-title">Camping Merit Badge</div>
+            <div class="featured-meta">
+              <div class="meta-block">
+                <div class="meta-label-large">Difficulty</div>
+                <div class="meta-value-large">⭐⭐⭐ Moderate</div>
+              </div>
+              <div class="meta-block">
+                <div class="meta-label-large">Time Estimate</div>
+                <div class="meta-value-large">8-10 hours</div>
+              </div>
+              <div class="meta-block">
+                <div class="meta-label-large">Location</div>
+                <div class="meta-value-large">Outdoor Only</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sidebar-badges">
+            <div class="mini-card">
+              <div class="mini-title">First Aid <span class="eagle-inline">🦅</span></div>
+              <div class="mini-meta">
+                <span>⭐⭐</span>
+                <span>6-8 hrs</span>
+                <span>Flexible</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <div class="mini-title">Swimming <span class="eagle-inline">🦅</span></div>
+              <div class="mini-meta">
+                <span>⭐⭐</span>
+                <span>5-7 hrs</span>
+                <span>Pool</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <div class="mini-title">Communications <span class="eagle-inline">🦅</span></div>
+              <div class="mini-meta">
+                <span>⭐⭐⭐</span>
+                <span>8-10 hrs</span>
+                <span>Flexible</span>
+              </div>
+            </div>
+
+            <div class="mini-card">
+              <div class="mini-title">Hiking</div>
+              <div class="mini-meta">
+                <span>⭐⭐</span>
+                <span>12-15 hrs</span>
+                <span>Outdoor</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 6: Data Table Hybrid -->
+    <div id="mockup-6" class="mockup direction-6">
+      <div class="mockup-header">
+        <h2>Direction 6: Data Table Hybrid</h2>
+        <p>Scannable rows, comparison-optimized. Desktop power-user interface.</p>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Eagle-Required Badges (17 total)</h2>
+
+        <div class="table-header">
+          <div>Badge Name</div>
+          <div>Difficulty</div>
+          <div>Skills</div>
+          <div>Time</div>
+          <div>Location</div>
+        </div>
+
+        <div class="badge-table-row">
+          <div class="badge-name-cell">
+            <div class="table-icon">🏕️</div>
+            <div class="table-title">Camping <span class="eagle-micro">🦅 Eagle</span></div>
+          </div>
+          <div class="table-cell difficulty-cell">⭐⭐⭐</div>
+          <div class="table-cell">Outdoor • Leadership</div>
+          <div class="table-cell">8-10 hrs</div>
+          <div class="table-cell">🏕️</div>
+        </div>
+
+        <div class="badge-table-row">
+          <div class="badge-name-cell">
+            <div class="table-icon">👨‍⚕️</div>
+            <div class="table-title">First Aid <span class="eagle-micro">🦅 Eagle</span></div>
+          </div>
+          <div class="table-cell difficulty-cell">⭐⭐</div>
+          <div class="table-cell">First Aid • Safety</div>
+          <div class="table-cell">6-8 hrs</div>
+          <div class="table-cell">↔️</div>
+        </div>
+
+        <div class="badge-table-row">
+          <div class="badge-name-cell">
+            <div class="table-icon">🏊</div>
+            <div class="table-title">Swimming <span class="eagle-micro">🦅 Eagle</span></div>
+          </div>
+          <div class="table-cell difficulty-cell">⭐⭐</div>
+          <div class="table-cell">Swimming • Fitness</div>
+          <div class="table-cell">5-7 hrs</div>
+          <div class="table-cell">🏊</div>
+        </div>
+
+        <div class="badge-table-row">
+          <div class="badge-name-cell">
+            <div class="table-icon">🎯</div>
+            <div class="table-title">Communications <span class="eagle-micro">🦅 Eagle</span></div>
+          </div>
+          <div class="table-cell difficulty-cell">⭐⭐⭐</div>
+          <div class="table-cell">Communication • Leadership</div>
+          <div class="table-cell">8-10 hrs</div>
+          <div class="table-cell">↔️</div>
+        </div>
+
+        <div class="badge-table-row">
+          <div class="badge-name-cell">
+            <div class="table-icon">🧬</div>
+            <div class="table-title">Personal Fitness <span class="eagle-micro">🦅 Eagle</span></div>
+          </div>
+          <div class="table-cell difficulty-cell">⭐⭐⭐⭐</div>
+          <div class="table-cell">Fitness • Health</div>
+          <div class="table-cell">20-24 hrs</div>
+          <div class="table-cell">↔️</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 7: Cards with Depth -->
+    <div id="mockup-7" class="mockup direction-7">
+      <div class="mockup-header">
+        <h2>Direction 7: Layered Depth</h2>
+        <p>Sophisticated shadows, gradient accents, premium feel. Contemporary polish.</p>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Outdoor Adventure Badges</h2>
+        <div class="badge-grid">
+          <div class="badge-card">
+            <div class="badge-visual">
+              🏕️
+              <div class="eagle-stamp">🦅 EAGLE</div>
+            </div>
+            <div class="badge-body">
+              <div class="badge-title">Camping</div>
+              <div class="meta-pills">
+                <span class="meta-pill">⭐ ⭐⭐⭐</span>
+                <span class="meta-pill">⏱️ 8-10 hrs</span>
+                <span class="meta-pill">🏕️ Outdoor</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Outdoor Skills</span>
+                <span class="skill-tag">Leadership</span>
+                <span class="skill-tag">Safety</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-visual">
+              🥾
+            </div>
+            <div class="badge-body">
+              <div class="badge-title">Hiking</div>
+              <div class="meta-pills">
+                <span class="meta-pill">⭐⭐</span>
+                <span class="meta-pill">⏱️ 12-15 hrs</span>
+                <span class="meta-pill">🏕️ Outdoor</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Outdoor Skills</span>
+                <span class="skill-tag">Navigation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-visual">
+              🎣
+            </div>
+            <div class="badge-body">
+              <div class="badge-title">Fishing</div>
+              <div class="meta-pills">
+                <span class="meta-pill">⭐⭐</span>
+                <span class="meta-pill">⏱️ 6-8 hrs</span>
+                <span class="meta-pill">🏕️ Outdoor</span>
+              </div>
+              <div class="badge-skills">
+                <span class="skill-tag">Outdoor</span>
+                <span class="skill-tag">Nature</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direction 8: Minimalist Spacious -->
+    <div id="mockup-8" class="mockup direction-8">
+      <div class="mockup-header">
+        <h2>Direction 8: Minimalist Spacious</h2>
+        <p>Generous white space, clean lines, breathing room. Sophisticated simplicity.</p>
+      </div>
+      <div class="container">
+        <h2 class="section-title">Eagle Scout Essentials</h2>
+        <div class="badge-stack">
+          <div class="badge-card">
+            <div class="badge-header-row">
+              <div class="title-group">
+                <span class="badge-icon-inline">🏕️</span>
+                <h3 class="badge-title">Camping</h3>
+              </div>
+              <div class="eagle-badge-inline">🦅 Eagle</div>
+            </div>
+            <div class="meta-row-spaced">
+              <span class="meta-spaced">⭐⭐⭐ Moderate</span>
+              <span class="meta-spaced">⏱️ 8-10 hours typical</span>
+              <span class="meta-spaced">🏕️ Outdoor Required</span>
+            </div>
+            <div class="badge-skills-row">
+              <span class="skill-tag-large">Outdoor Skills</span>
+              <span class="skill-tag-large">Leadership</span>
+              <span class="skill-tag-large">Safety</span>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-header-row">
+              <div class="title-group">
+                <span class="badge-icon-inline">👨‍⚕️</span>
+                <h3 class="badge-title">First Aid</h3>
+              </div>
+              <div class="eagle-badge-inline">🦅 Eagle</div>
+            </div>
+            <div class="meta-row-spaced">
+              <span class="meta-spaced">⭐⭐ Easy</span>
+              <span class="meta-spaced">⏱️ 6-8 hours typical</span>
+              <span class="meta-spaced">↔️ Flexible Location</span>
+            </div>
+            <div class="badge-skills-row">
+              <span class="skill-tag-large">First Aid</span>
+              <span class="skill-tag-large">Safety</span>
+              <span class="skill-tag-large">Life Skills</span>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <div class="badge-header-row">
+              <div class="title-group">
+                <span class="badge-icon-inline">🏊</span>
+                <h3 class="badge-title">Swimming</h3>
+              </div>
+              <div class="eagle-badge-inline">🦅 Eagle</div>
+            </div>
+            <div class="meta-row-spaced">
+              <span class="meta-spaced">⭐⭐ Easy</span>
+              <span class="meta-spaced">⏱️ 5-7 hours typical</span>
+              <span class="meta-spaced">🏊 Pool Required</span>
+            </div>
+            <div class="badge-skills-row">
+              <span class="skill-tag-large">Swimming</span>
+              <span class="skill-tag-large">Safety</span>
+              <span class="skill-tag-large">Physical Fitness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showMockup(num) {
+      document.querySelectorAll('.mockup').forEach(m => m.classList.remove('active'));
+      document.getElementById('mockup-' + num).classList.add('active');
+      document.querySelectorAll('.mockup-nav button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
