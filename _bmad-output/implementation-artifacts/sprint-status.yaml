@@ -1,0 +1,78 @@
+# generated: 2026-01-21
+# project: mbu
+# project_key: mbu
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-01-21
+project: mbu
+project_key: mbu
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  epic-1: in-progress
+  1-1-generate-and-display-difficulty-ratings-for-all-143-badges: ready-for-dev
+  1-2-generate-and-display-skills-tags-for-all-143-badges: ready-for-dev
+  1-3-generate-and-display-location-requirements-for-all-143-badges: backlog
+  1-4-create-comprehensive-metadata-validation-script: backlog
+  epic-1-retrospective: optional
+
+  epic-2: backlog
+  2-1-configure-hugo-taxonomy-system-and-generate-base-landing-pages: backlog
+  2-2-create-skills-taxonomy-landing-pages-with-badge-listings: backlog
+  2-3-create-difficulty-taxonomy-landing-pages-with-badge-listings: backlog
+  2-4-create-location-taxonomy-landing-pages-with-badge-listings: backlog
+  2-5-create-taxonomy-browser-hub-page-for-discovery: backlog
+  epic-2-retrospective: optional
+
+  epic-3: backlog
+  3-1-create-core-design-system-foundation-colors-typography-spacing: backlog
+  3-2-enhance-badge-list-pages-with-metadata-display: backlog
+  3-3-enhance-badge-detail-pages-with-full-metadata-display: backlog
+  3-4-add-clickable-navigation-between-badges-and-taxonomy-pages: backlog
+  3-5-implement-accessibility-features-and-keyboard-navigation: backlog
+  epic-3-retrospective: optional
+
+  epic-4: backlog
+  4-1-generate-changelog-data-and-display-update-indicators-on-badge-pages: backlog
+  4-2-create-per-badge-changelog-pages-with-before-after-comparison: backlog
+  4-3-create-global-changelog-page-listing-all-recent-changes: backlog
+  4-4-add-email-notification-signup-for-counselors-optional: backlog
+  epic-4-retrospective: optional
+
+  epic-5: backlog
+  5-1-implement-schema-org-structured-data-for-all-pages: backlog
+  5-2-enhance-opengraph-and-social-sharing-metadata: backlog
+  5-3-integrate-pirsch-analytics-for-privacy-friendly-tracking: backlog
+  5-4-implement-browser-localstorage-bookmarks-for-scout-discovery: backlog
+  epic-5-retrospective: optional
