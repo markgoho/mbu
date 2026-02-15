@@ -4,7 +4,7 @@ layout: guide
 group_title: "Fitness & Conditioning"
 req_number: "3"
 prev: "/merit-badges/hiking/guide/req2c/"
-prev_title: "Requirement 2C — Outdoor Code"
+prev_title: "Requirement 2c — Outdoor Code"
 next: "/merit-badges/hiking/guide/req4/"
 next_title: "Requirement 4 — Your Hikes"
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Req 1A — Anticipate Hazards"
+title: "Req 1a — Anticipate Hazards"
 layout: guide
 group_title: "Hazards While Hiking"
 req_number: "1a"
 prev: "/merit-badges/hiking/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/hiking/guide/req1b/"
-next_title: "Requirement 1B — First Aid"
+next_title: "Requirement 1b — First Aid"
 ---
 
 {{< drg/requirement number="1a" >}}
@@ -160,4 +160,4 @@ Watch this video to see some of these safety tips in action and learn more about
 
 {{< drg/video title="Hiking Safety Tips" url="https://youtu.be/YGQG0C0HBGw?si=aOL6J4mdZXt51LDC" >}}
 
-{{< drg/next-page text="Now that you know how to stay safe and avoid hazards, it's time to learn what to do if an injury does happen." teaser="Requirement 1B — First Aid" url="/merit-badges/hiking/guide/req1b/" >}}
+{{< drg/next-page text="Now that you know how to stay safe and avoid hazards, it's time to learn what to do if an injury does happen." teaser="Requirement 1b — First Aid" url="/merit-badges/hiking/guide/req1b/" >}}

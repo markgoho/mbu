@@ -1,10 +1,10 @@
 ---
-title: "Req 2C — Outdoor Code"
+title: "Req 2c — Outdoor Code"
 layout: guide
 group_title: "Hiking Ethics & Safety"
 req_number: "2c"
 prev: "/merit-badges/hiking/guide/req2b/"
-prev_title: "Requirement 2B — Leave No Trace"
+prev_title: "Requirement 2b — Leave No Trace"
 next: "/merit-badges/hiking/guide/req3/"
 next_title: "Requirement 3 — Aerobic Activity"
 ---
@@ -15,7 +15,7 @@ Read aloud or recite the Outdoor Code, and give examples of how to follow it on 
 
 When you step onto a trail, you aren't just a visitor; you are a guest in a massive, living home shared by thousands of species of plants and animals. Being a Scout means taking on the responsibility of stewardship—the idea that we must protect and care for the land so that others can enjoy it long after we are gone.
 
-While the Leave No Trace principles you studied in [Requirement 2B](/merit-badges/hiking/guide/req2b/) give us a detailed "how-to" manual for the trail, the Outdoor Code is our pledge of citizenship. It is a short, powerful promise that summarizes the heart of outdoor ethics.
+While the Leave No Trace principles you studied in [Requirement 2b](/merit-badges/hiking/guide/req2b/) give us a detailed "how-to" manual for the trail, the Outdoor Code is our pledge of citizenship. It is a short, powerful promise that summarizes the heart of outdoor ethics.
 
 {{< drg/image src="images/scenic-overlook-stewardship.png" alt="A Scout standing at a scenic overlook looking out at a pristine wilderness valley" >}}
 

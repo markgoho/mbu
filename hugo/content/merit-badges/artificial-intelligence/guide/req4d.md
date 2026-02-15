@@ -1,10 +1,10 @@
 ---
-title: "Req 4D — The Turing Test"
+title: "Req 4d — The Turing Test"
 layout: guide
 group_title: "Ethics in AI"
 req_number: "4d"
 prev: "/merit-badges/artificial-intelligence/guide/req4c/"
-prev_title: "Req 4C — Your Ethical Guidelines"
+prev_title: "Req 4c — Your Ethical Guidelines"
 next: "/merit-badges/artificial-intelligence/guide/req5/"
 next_title: "Req 5 — Deepfakes"
 ---

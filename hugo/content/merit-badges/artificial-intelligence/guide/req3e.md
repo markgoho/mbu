@@ -1,12 +1,12 @@
 ---
-title: "Req 3E — Automation Timeline"
+title: "Req 3e — Automation Timeline"
 layout: guide
 group_title: "Automation Basics"
 req_number: "3e"
 prev: "/merit-badges/artificial-intelligence/guide/req3d/"
-prev_title: "Req 3D — How Automation Works"
+prev_title: "Req 3d — How Automation Works"
 next: "/merit-badges/artificial-intelligence/guide/req4a/"
-next_title: "Req 4A — Bias, Privacy & Decisions"
+next_title: "Req 4a — Bias, Privacy & Decisions"
 ---
 
 {{< drg/requirement number="3e" >}}
@@ -15,7 +15,7 @@ Create a timeline with five significant milestones in automation development.
 
 Automation did not start with computers. Humans have been building machines to do repetitive work for thousands of years. Your timeline for this requirement tells the story of how we went from water wheels to warehouse robots.
 
-Just like with the AI timeline in [Requirement 2E](/merit-badges/artificial-intelligence/guide/req2e/), pick the five milestones that interest you most and present them with a brief explanation of why each one mattered.
+Just like with the AI timeline in [Requirement 2e](/merit-badges/artificial-intelligence/guide/req2e/), pick the five milestones that interest you most and present them with a brief explanation of why each one mattered.
 
 {{< drg/image src="images/automation-timeline-poster.png" alt="A completed timeline poster on a classroom wall showing milestones in automation history, with printed images and neat labels. A Scout standing back to admire the finished work." >}}
 

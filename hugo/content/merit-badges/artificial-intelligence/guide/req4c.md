@@ -1,12 +1,12 @@
 ---
-title: "Req 4C — Your Ethical Guidelines"
+title: "Req 4c — Your Ethical Guidelines"
 layout: guide
 group_title: "Ethics in AI"
 req_number: "4c"
 prev: "/merit-badges/artificial-intelligence/guide/req4b/"
-prev_title: "Req 4B — What Would You Do?"
+prev_title: "Req 4b — What Would You Do?"
 next: "/merit-badges/artificial-intelligence/guide/req4d/"
-next_title: "Req 4D — The Turing Test"
+next_title: "Req 4d — The Turing Test"
 ---
 
 {{< drg/requirement number="4c" >}}

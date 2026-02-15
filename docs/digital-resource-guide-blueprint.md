@@ -18,7 +18,8 @@
 6. [Content Guidelines & Constraints](#content-guidelines--constraints)
 7. [Step-by-Step Production Workflow](#step-by-step-production-workflow)
 8. [Quality Review Checklist](#quality-review-checklist)
-9. [Reference: Hiking Guide Structural Map](#reference-hiking-guide-structural-map)
+9. [Final QA — Smoke Testing the Live Guide](#final-qa--smoke-testing-the-live-guide)
+10. [Reference: Hiking Guide Structural Map](#reference-hiking-guide-structural-map)
 
 ---
 
@@ -112,10 +113,10 @@ Every guide page must have a **unique, descriptive `<h1>`** that matches its sid
 
 | Element               | Source                                | Example                                             |
 | --------------------- | ------------------------------------- | --------------------------------------------------- |
-| **H1**                | `title` front matter field            | "Req 1A — Anticipate Hazards"                       |
+| **H1**                | `title` front matter field            | "Req 1a — Anticipate Hazards"                       |
 | **Kicker** (above H1) | `group_title` front matter field      | "HAZARDS WHILE HIKING"                              |
-| **`<title>` tag**     | `{title} \| {badge_name} Merit Badge` | "Req 1A — Anticipate Hazards \| Hiking Merit Badge" |
-| **Nav link text**     | `guide_nav[].items[].title`           | "Req 1A — Anticipate Hazards"                       |
+| **`<title>` tag**     | `{title} \| {badge_name} Merit Badge` | "Req 1a — Anticipate Hazards \| Hiking Merit Badge" |
+| **Nav link text**     | `guide_nav[].items[].title`           | "Req 1a — Anticipate Hazards"                       |
 
 **Badge image** appears only on the Introduction & Overview page (the guide section's `_index.md`).
 
@@ -219,7 +220,7 @@ Each requirement page follows a consistent template:
 #### A. Requirement Header
 
 - **Kicker** — The descriptive group title (e.g., "Hazards While Hiking") displayed as small, uppercase text above the H1.
-- **H1 (page title)** — The requirement label and short descriptor, matching the sidebar nav link exactly (e.g., "Req 1A — Anticipate Hazards"). This is the page's `title` in front matter.
+- **H1 (page title)** — The requirement label and short descriptor, matching the sidebar nav link exactly (e.g., "Req 1a — Anticipate Hazards"). This is the page's `title` in front matter.
 - **Badge image** — NOT shown on requirement pages (only on the Introduction & Overview page).
 
 **Heading hierarchy and SEO rules:**
@@ -227,20 +228,21 @@ Each requirement page follows a consistent template:
 - Every page's `title` front matter must match its sidebar nav link text **exactly**.
 - The `<h1>` on each page is rendered from the `title` field. No two pages should share the same `<h1>`.
 - The `group_title` front matter field is displayed as a kicker above the `<h1>`, providing context without competing for heading weight.
-- The `<title>` tag follows the format: `{Page Title} | {Badge Name} Merit Badge` (e.g., "Req 1A — Anticipate Hazards | Hiking Merit Badge"). The `badge_name` field is set on the guide section's `_index.md` and inherited by child pages.
+- The `<title>` tag follows the format: `{Page Title} | {Badge Name} Merit Badge` (e.g., "Req 1a — Anticipate Hazards | Hiking Merit Badge"). The `badge_name` field is set on the guide section's `_index.md` and inherited by child pages.
+- **Capitalization convention:** Sub-requirement letters in titles, nav links, and `prev_title`/`next_title` must match the capitalization from `data.json` (which uses lowercase: `"req_id": "a"`, `"path": "1.a"`). Use `"Req 1a"`, not `"Req 1A"`.
 
 **Front matter example (requirement page):**
 
 ```yaml
 ---
-title: "Req 1A — Anticipate Hazards"
+title: "Req 1a — Anticipate Hazards"
 layout: guide
 group_title: "Hazards While Hiking"
 req_number: "1a"
 prev: "/merit-badges/hiking/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/hiking/guide/req1b/"
-next_title: "Requirement 1B — First Aid"
+next_title: "Requirement 1b — First Aid"
 ---
 ```
 
@@ -261,7 +263,7 @@ guide_nav:
         url: "/merit-badges/hiking/guide/"
   - group_title: "Hazards While Hiking"
     items:
-      - title: "Req 1A — Anticipate Hazards"
+      - title: "Req 1a — Anticipate Hazards"
         url: "/merit-badges/hiking/guide/req1a/"
         is_sub: true
   # ...
@@ -270,7 +272,7 @@ guide_nav:
 
 #### B. Sub-requirement Tabs (if applicable)
 
-- When a requirement has parts (A, B, C), show tabs at the top: `Requirement 1 (A)` | `Requirement 1 (B)` etc.
+- When a requirement has parts (a, b, c), show tabs at the top: `Requirement 1 (a)` | `Requirement 1 (b)` etc.
 - Active tab is visually distinct. Each tab links to its page (or scrolls to its section if single-page).
 
 #### C. Requirement Text Block
@@ -298,8 +300,8 @@ This is the heart of the guide. The content here must **teach the Scout what the
 
 #### E. Cross-references
 
-- When content on one requirement page relates to another requirement, link back. (Example: Hiking Req 4 links back to the "Five W's" from Req 1A.)
-- Use natural language links: "Remember the Five W's from [Requirement 1A](/req1a/)?"
+- When content on one requirement page relates to another requirement, link back. (Example: Hiking Req 4 links back to the "Five W's" from Req 1a.)
+- Use natural language links: "Remember the Five W's from [Requirement 1a](/req1a/)?"
 
 #### F. Transition CTA
 
@@ -735,6 +737,55 @@ Run through this checklist before considering any page complete:
 
 ---
 
+## Final QA — Smoke Testing the Live Guide
+
+The Quality Review Checklist above catches content and structural issues at the source level. This section catches issues that only appear when the guide is actually rendered. **Run this after all content is written and the Hugo build passes.**
+
+### Build Verification
+
+1. **`hugo --minify` exits with zero errors.** If there are YAML parsing errors, template failures, or missing files, fix them before proceeding.
+2. **Page count is correct.** The build summary should show the expected number of pages. A missing page means a file isn't being processed (wrong directory, bad front matter, missing `layout: guide`).
+
+### Live Walkthrough (dev server)
+
+Start the dev server (`bun run hugo:dev`) and click through **every page** in the guide. For each page, verify:
+
+- [ ] **Page loads without error** — no 404, no 500, no blank page
+- [ ] **Page title (H1) renders correctly** — matches `title` front matter, uses lowercase sub-requirement letters per `data.json`
+- [ ] **Kicker (group title) appears** above the H1
+- [ ] **Sidebar navigation renders** — all links present, correct titles, no broken indentation
+- [ ] **Active sidebar link is highlighted** — the current page's link should be visually distinct
+- [ ] **Sidebar scrolls to active link** — on pages deep in the nav, the sidebar should auto-scroll to bring the active link into view
+- [ ] **Previous/Next links work** — click both, verify they go to the correct pages
+- [ ] **Previous/Next titles match** — the `prev_title` and `next_title` text should match the target page's actual title
+- [ ] **Requirement text displays** — the `{{</* drg/requirement */>}}` shortcode renders with the correct number badge
+- [ ] **Images load** — all `{{</* drg/image */>}}` shortcodes render visible images (no broken image icons)
+- [ ] **Shortcode callouts render** — Safety First, Did You Know, Tips, Be Prepared blocks all display correctly
+- [ ] **External links open** — spot-check 2–3 per page, verify they open in a new tab and the destination is live
+- [ ] **Cross-reference links work** — any inline links to other guide pages resolve correctly
+
+### Consistency Checks
+
+- [ ] **Capitalization matches `data.json`** — grep all guide `.md` files for `Req [0-9]+[A-Z]` and `Requirement [0-9]+[A-Z]` patterns. Zero matches means you are clean.
+  ```bash
+  grep -rn 'Req [0-9]\+[A-E]' hugo/content/merit-badges/{badge-slug}/guide/*.md
+  grep -rn 'Requirement [0-9]\+[A-E]' hugo/content/merit-badges/{badge-slug}/guide/*.md
+  ```
+- [ ] **YAML indentation is consistent** — all `guide_nav` entries in `_index.md` use the same indent width (2 spaces). Mixed indentation causes YAML parse errors or silent data corruption.
+- [ ] **No orphan image placeholders** — grep for `<!-- IMAGE:` to ensure all placeholders were converted to live shortcodes.
+  ```bash
+  grep -rn '<!-- IMAGE:' hugo/content/merit-badges/{badge-slug}/guide/*.md
+  ```
+- [ ] **`guide_nav` titles match page titles exactly** — for every entry in `guide_nav`, the `title` value should be identical to the corresponding page's `title` front matter.
+
+### Mobile & Print Spot Check
+
+- [ ] **Mobile sidebar toggle works** — on a narrow viewport, the hamburger menu opens/closes the sidebar
+- [ ] **Content is readable on mobile** — no horizontal scrolling, images scale down
+- [ ] **Print view is clean** — `Ctrl+P` / `Cmd+P` produces a reasonable print layout (if print styles are enabled)
+
+---
+
 ## Reference: Hiking Guide Structural Map
 
 This is the exact structure of the published Hiking Digital Resource Guide, provided as a concrete example of how the blueprint works in practice.
@@ -755,10 +806,10 @@ Getting Started
 │   │   ├── Cross-Country Hiking
 │   │   ├── Night Hiking
 │   │   └── Trail Hiking
-│   └── Transition CTA → Req 1A
+│   └── Transition CTA → Req 1a
 │
 Hazards While Hiking (group_title / kicker)
-├── Req 1A — Anticipate Hazards             title: "Req 1A — Anticipate Hazards"
+├── Req 1a — Anticipate Hazards             title: "Req 1a — Anticipate Hazards"
 │   ├── Requirement text
 │   ├── "What's Your Plan?" — Five W's of a Trip Plan
 │   ├── Did You Know (wilderness group size limits)
@@ -772,17 +823,17 @@ Hazards While Hiking (group_title / kicker)
 │   ├── Be Prepared: "Got Lost?" (STOP method)
 │   ├── Be Prepared: "Encounter Wild Animals?"
 │   ├── External links (wilderness.net, Leave No Trace, Respect Wildlife)
-│   └── Transition CTA → Req 1B
+│   └── Transition CTA → Req 1b
 │
-├── Req 1B — First Aid                      title: "Req 1B — First Aid"
+├── Req 1b — First Aid                      title: "Req 1b — First Aid"
 │   ├── Requirement text
 │   ├── First aid content for each condition listed in requirement
-│   └── Transition CTA → Req 2A
+│   └── Transition CTA → Req 2a
 │
 Hiking Ethics & Safety (group_title / kicker)
-├── Req 2A — Hiking Practices               title: "Req 2A — Hiking Practices"
-├── Req 2B — Leave No Trace                 title: "Req 2B — Leave No Trace"
-├── Req 2C — Outdoor Code                   title: "Req 2C — Outdoor Code"
+├── Req 2a — Hiking Practices               title: "Req 2a — Hiking Practices"
+├── Req 2b — Leave No Trace                 title: "Req 2b — Leave No Trace"
+├── Req 2c — Outdoor Code                   title: "Req 2c — Outdoor Code"
 │
 Fitness & Conditioning (group_title / kicker)
 ├── Req 3 — Aerobic Activity                title: "Req 3 — Aerobic Activity"
@@ -790,7 +841,7 @@ Fitness & Conditioning (group_title / kicker)
 Hit the Trail (group_title / kicker)
 ├── Req 4 — Your Hikes                      title: "Req 4 — Your Hikes"
 │   ├── 10-mile hike guidance
-│   ├── Cross-reference to Five W's from Req 1A
+│   ├── Cross-reference to Five W's from Req 1a
 │   ├── Download: Pre-Hike Plan template (PDF)
 │   ├── 20-mile hike guidance
 │   ├── Tip: Reporting Your Hike

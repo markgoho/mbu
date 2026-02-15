@@ -23,7 +23,7 @@ A 10-mile hike is a significant undertaking, taking most hikers between four and
 
 You can’t just lace up your boots and walk out the door for a 10-mile trek. For this requirement, every single hike must have a **written hike plan** that is approved by your counselor or an adult leader before you start.
 
-Think back to [Requirement 1A](/merit-badges/hiking/guide/req1a/) where we discussed the **Five W’s of a Trip Plan**:
+Think back to [Requirement 1a](/merit-badges/hiking/guide/req1a/) where we discussed the **Five W’s of a Trip Plan**:
 
 1. **Who:** Who is going with you? (Remember: Never hike alone!)
 2. **What:** What are you doing? (A 10-mile hike on a specific trail.)
@@ -47,7 +47,7 @@ Don't just name the trail. You should have a physical or digital map that shows 
 
 ### 2. Clothing and Equipment List
 
-This is your chance to double-check your **Scout Essentials**. Your list should change based on the weather. If there is a 30% chance of rain, your plan better include rain gear! If it's going to be 90 degrees, you'll need extra water and sun protection. Refer back to the gear we discussed in Requirement 1A to make sure you aren't forgetting anything like a first aid kit, whistle, or extra socks.
+This is your chance to double-check your **Scout Essentials**. Your list should change based on the weather. If there is a 30% chance of rain, your plan better include rain gear! If it's going to be 90 degrees, you'll need extra water and sun protection. Refer back to the gear we discussed in Requirement 1a to make sure you aren't forgetting anything like a first aid kit, whistle, or extra socks.
 
 ### 3. Trail Lunch Items
 

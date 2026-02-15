@@ -17,38 +17,38 @@ guide_nav:
         is_sub: false
   - group_title: "AI Basics"
     items:
-      - title: "Req 2A–C — AI All Around You"
+      - title: "Req 2a–c — AI All Around You"
         url: "/merit-badges/artificial-intelligence/guide/req2abc/"
         is_sub: true
-      - title: "Req 2D — AI or Not?"
+      - title: "Req 2d — AI or Not?"
         url: "/merit-badges/artificial-intelligence/guide/req2d/"
         is_sub: true
-      - title: "Req 2E — AI Timeline"
+      - title: "Req 2e — AI Timeline"
         url: "/merit-badges/artificial-intelligence/guide/req2e/"
         is_sub: true
   - group_title: "Automation Basics"
     items:
-      - title: "Req 3A–C — Automation All Around You"
+      - title: "Req 3a–c — Automation All Around You"
         url: "/merit-badges/artificial-intelligence/guide/req3abc/"
         is_sub: true
-      - title: "Req 3D — How Automation Works"
+      - title: "Req 3d — How Automation Works"
         url: "/merit-badges/artificial-intelligence/guide/req3d/"
         is_sub: true
-      - title: "Req 3E — Automation Timeline"
+      - title: "Req 3e — Automation Timeline"
         url: "/merit-badges/artificial-intelligence/guide/req3e/"
         is_sub: true
   - group_title: "Ethics in AI"
     items:
-      - title: "Req 4A — Bias, Privacy & Decisions"
+      - title: "Req 4a — Bias, Privacy & Decisions"
         url: "/merit-badges/artificial-intelligence/guide/req4a/"
         is_sub: true
-      - title: "Req 4B — What Would You Do?"
+      - title: "Req 4b — What Would You Do?"
         url: "/merit-badges/artificial-intelligence/guide/req4b/"
         is_sub: true
-      - title: "Req 4C — Your Ethical Guidelines"
+      - title: "Req 4c — Your Ethical Guidelines"
         url: "/merit-badges/artificial-intelligence/guide/req4c/"
         is_sub: true
-      - title: "Req 4D — The Turing Test"
+      - title: "Req 4d — The Turing Test"
         url: "/merit-badges/artificial-intelligence/guide/req4d/"
         is_sub: true
   - group_title: "Deepfakes"
@@ -58,16 +58,16 @@ guide_nav:
         is_sub: false
   - group_title: "Developing AI Skills"
     items:
-      - title: "Req 6A — How AI Learns"
+      - title: "Req 6a — How AI Learns"
         url: "/merit-badges/artificial-intelligence/guide/req6a/"
         is_sub: true
-      - title: "Req 6B — Communicating with AI"
+      - title: "Req 6b — Communicating with AI"
         url: "/merit-badges/artificial-intelligence/guide/req6b/"
         is_sub: true
-      - title: "Req 6C — Prompt Engineering"
+      - title: "Req 6c — Prompt Engineering"
         url: "/merit-badges/artificial-intelligence/guide/req6c/"
         is_sub: true
-      - title: "Req 6D — Writing Clear Instructions"
+      - title: "Req 6d — Writing Clear Instructions"
         url: "/merit-badges/artificial-intelligence/guide/req6d/"
         is_sub: true
   - group_title: "Putting It All Together"

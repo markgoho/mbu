@@ -1,12 +1,12 @@
 ---
-title: "Req 6A — How AI Learns"
+title: "Req 6a — How AI Learns"
 layout: guide
 group_title: "Developing AI Skills"
 req_number: "6a"
 prev: "/merit-badges/artificial-intelligence/guide/req5/"
 prev_title: "Req 5 — Deepfakes"
 next: "/merit-badges/artificial-intelligence/guide/req6b/"
-next_title: "Req 6B — Communicating with AI"
+next_title: "Req 6b — Communicating with AI"
 ---
 
 {{< drg/requirement number="6a" >}}

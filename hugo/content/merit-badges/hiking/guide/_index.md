@@ -4,7 +4,7 @@ layout: guide
 badge_name: "Hiking"
 group_title: "Getting Started"
 next: "/merit-badges/hiking/guide/req1a/"
-next_title: "Requirement 1A — Hazards"
+next_title: "Requirement 1a — Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
@@ -12,21 +12,21 @@ guide_nav:
         url: "/merit-badges/hiking/guide/"
   - group_title: "Hazards While Hiking"
     items:
-      - title: "Req 1A — Anticipate Hazards"
+      - title: "Req 1a — Anticipate Hazards"
         url: "/merit-badges/hiking/guide/req1a/"
         is_sub: true
-      - title: "Req 1B — First Aid"
+      - title: "Req 1b — First Aid"
         url: "/merit-badges/hiking/guide/req1b/"
         is_sub: true
   - group_title: "Hiking Ethics & Safety"
     items:
-      - title: "Req 2A — Hiking Practices"
+      - title: "Req 2a — Hiking Practices"
         url: "/merit-badges/hiking/guide/req2a/"
         is_sub: true
-      - title: "Req 2B — Leave No Trace"
+      - title: "Req 2b — Leave No Trace"
         url: "/merit-badges/hiking/guide/req2b/"
         is_sub: true
-      - title: "Req 2C — Outdoor Code"
+      - title: "Req 2c — Outdoor Code"
         url: "/merit-badges/hiking/guide/req2c/"
         is_sub: true
   - group_title: "Fitness & Conditioning"

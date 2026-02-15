@@ -12,7 +12,7 @@ Congratulations — you have completed the requirements for the Artificial Intel
 
 ### B. Deep Dive: How Neural Networks Actually Work
 
-You learned in Requirement 6A that neural networks are inspired by the human brain. But how do they actually work? Let's go a level deeper.
+You learned in Requirement 6a that neural networks are inspired by the human brain. But how do they actually work? Let's go a level deeper.
 
 A neural network is made up of layers of **nodes** (also called neurons). Each node takes in numbers, does a simple calculation, and passes the result to the next layer. A typical neural network has three types of layers:
 

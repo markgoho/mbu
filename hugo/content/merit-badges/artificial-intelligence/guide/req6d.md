@@ -1,10 +1,10 @@
 ---
-title: "Req 6D — Writing Clear Instructions"
+title: "Req 6d — Writing Clear Instructions"
 layout: guide
 group_title: "Developing AI Skills"
 req_number: "6d"
 prev: "/merit-badges/artificial-intelligence/guide/req6c/"
-prev_title: "Req 6C — Prompt Engineering"
+prev_title: "Req 6c — Prompt Engineering"
 next: "/merit-badges/artificial-intelligence/guide/req7/"
 next_title: "Req 7 — Build Your AI Project"
 ---
@@ -143,7 +143,7 @@ When demonstrating for your counselor:
 
 1. **Show the process, not just the result.** Start with your prompt, show the AI's response, then explain what you would adjust if the response was not quite right (iteration).
 2. **Use a real AI tool.** Run your prompts in a tool like ChatGPT, Google Gemini, or Microsoft Copilot so you can show live results.
-3. **Explain your choices.** Tell your counselor why you structured the prompt the way you did — which principles from Requirement 6C you applied.
+3. **Explain your choices.** Tell your counselor why you structured the prompt the way you did — which principles from Requirement 6c you applied.
 4. **Be honest about limitations.** If the AI gives an incorrect or unhelpful response, point that out. Identifying weaknesses shows critical thinking.
    {{< /drg/be-prepared >}}
 

@@ -1,12 +1,12 @@
 ---
-title: "Req 2B — Leave No Trace"
+title: "Req 2b — Leave No Trace"
 layout: guide
 group_title: "Hiking Ethics & Safety"
 req_number: "2b"
 prev: "/merit-badges/hiking/guide/req2a/"
-prev_title: "Requirement 2A — Hiking Practices"
+prev_title: "Requirement 2a — Hiking Practices"
 next: "/merit-badges/hiking/guide/req2c/"
-next_title: "Requirement 2C — Outdoor Code"
+next_title: "Requirement 2c — Outdoor Code"
 ---
 
 {{< drg/requirement number="2b" >}}
@@ -117,4 +117,4 @@ To master the Leave No Trace principles, check out this video and the resources 
 
 ---
 
-{{< drg/next-page text="Now that you understand the ethics of the trail, let's look at the pledge every Scout takes to protect our environment." teaser="Requirement 2C — Outdoor Code" url="/merit-badges/hiking/guide/req2c/" >}}
+{{< drg/next-page text="Now that you understand the ethics of the trail, let's look at the pledge every Scout takes to protect our environment." teaser="Requirement 2c — Outdoor Code" url="/merit-badges/hiking/guide/req2c/" >}}

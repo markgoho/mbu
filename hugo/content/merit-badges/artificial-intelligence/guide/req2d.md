@@ -1,12 +1,12 @@
 ---
-title: "Req 2D — AI or Not?"
+title: "Req 2d — AI or Not?"
 layout: guide
 group_title: "AI Basics"
 req_number: "2d"
 prev: "/merit-badges/artificial-intelligence/guide/req2abc/"
-prev_title: "Req 2A–C — AI All Around You"
+prev_title: "Req 2a–c — AI All Around You"
 next: "/merit-badges/artificial-intelligence/guide/req2e/"
-next_title: "Req 2E — AI Timeline"
+next_title: "Req 2e — AI Timeline"
 ---
 
 {{< drg/requirement number="2d" >}}

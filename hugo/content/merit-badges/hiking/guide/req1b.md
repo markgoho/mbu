@@ -1,12 +1,12 @@
 ---
-title: "Req 1B — First Aid"
+title: "Req 1b — First Aid"
 layout: guide
 group_title: "Hazards While Hiking"
 req_number: "1b"
 prev: "/merit-badges/hiking/guide/req1a/"
-prev_title: "Requirement 1A — Hazards"
+prev_title: "Requirement 1a — Hazards"
 next: "/merit-badges/hiking/guide/req2a/"
-next_title: "Requirement 2A — Hiking Practices"
+next_title: "Requirement 2a — Hiking Practices"
 ---
 
 {{< drg/requirement number="1b" >}}
@@ -21,7 +21,7 @@ First aid knowledge is one of the most important skills a hiker can possess. How
 
 When you are miles away from the nearest trailhead, you are the first responder. Whether it is a small blister or a serious heat-related illness, knowing how to recognize symptoms and provide immediate care can make the difference between a successful hike and a dangerous emergency.
 
-In the previous section (Requirement 1A), we discussed the environmental hazards you might face and the essential items for your first-aid kit. Now, let’s look at how to use those supplies and your knowledge to treat 13 common trail conditions.
+In the previous section (Requirement 1a), we discussed the environmental hazards you might face and the essential items for your first-aid kit. Now, let’s look at how to use those supplies and your knowledge to treat 13 common trail conditions.
 
 ## Cold-Related Conditions
 
@@ -166,4 +166,4 @@ Most snakes are harmless, but some are venomous. In North America, you should wa
 
 By knowing these 13 conditions and their treatments, you are much better prepared for whatever the trail throws at you. Remember to check your first-aid kit before every hike to make sure your supplies haven't expired and that you have everything you need to treat these injuries.
 
-{{< drg/next-page text="Now that you know how to handle emergencies, let’s talk about how to prevent them from happening in the first place." teaser="Requirement 2A — Hiking Practices" url="/merit-badges/hiking/guide/req2a/" >}}
+{{< drg/next-page text="Now that you know how to handle emergencies, let’s talk about how to prevent them from happening in the first place." teaser="Requirement 2a — Hiking Practices" url="/merit-badges/hiking/guide/req2a/" >}}

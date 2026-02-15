@@ -4,7 +4,7 @@ layout: guide
 group_title: "Putting It All Together"
 req_number: "7"
 prev: "/merit-badges/artificial-intelligence/guide/req6d/"
-prev_title: "Req 6D — Writing Clear Instructions"
+prev_title: "Req 6d — Writing Clear Instructions"
 next: "/merit-badges/artificial-intelligence/guide/req8/"
 next_title: "Req 8 — AI Careers"
 ---
@@ -128,7 +128,7 @@ The interactive demo is the highlight of your lesson. Here are ideas that work w
 
 - **Live chatbot Q&A:** Open ChatGPT or Google Gemini and let the Scouts suggest questions. Show how different prompts lead to different answers.
 - **Teachable Machine group activity:** Train an image classifier together using the webcam — have each Scout contribute training images.
-- **"AI or Not?" game:** Run the same game from Requirement 2D with your group. Show scenarios and have them vote.
+- **"AI or Not?" game:** Run the same game from Requirement 2d with your group. Show scenarios and have them vote.
 - **Prompt engineering challenge:** Give everyone the same task ("write a camping packing list") and see who can write the best prompt. Compare results.
 - **AI art creation:** Use a free image generator to create merit badge-themed artwork based on audience suggestions.
 

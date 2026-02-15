@@ -1,3 +1,11 @@
-<div class="drg-requirement">
-  {{ .Inner | markdownify }}
+{{ $number := .Get "number" }}
+{{ $isSub := findRE `[a-zA-Z]` $number }}
+{{ $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" }}
+<div class="{{ $class }}">
+  {{ with $number }}
+    <span class="drg-requirement__number">{{ . }}.</span>
+  {{ end }}
+  <div class="drg-requirement__text">
+    {{ $.Inner | markdownify }}
+  </div>
 </div>

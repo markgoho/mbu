@@ -1,12 +1,12 @@
 ---
-title: "Req 2A — Hiking Practices"
+title: "Req 2a — Hiking Practices"
 layout: guide
 group_title: "Hiking Ethics & Safety"
 req_number: "2a"
 prev: "/merit-badges/hiking/guide/req1b/"
-prev_title: "Requirement 1B — First Aid"
+prev_title: "Requirement 1b — First Aid"
 next: "/merit-badges/hiking/guide/req2b/"
-next_title: "Requirement 2B — Leave No Trace"
+next_title: "Requirement 2b — Leave No Trace"
 ---
 
 {{< drg/requirement number="2a" >}}
@@ -21,7 +21,7 @@ Hiking is one of the best ways to explore the great outdoors, but it isn’t jus
 
 Before you even lace up your boots, you need to understand the "rules of the road" for the wilderness. Outdoor ethics are essentially the moral compass of a hiker. They help us ensure that the beautiful places we visit stay beautiful for the next person.
 
-The two main pillars of outdoor ethics are the **Outdoor Code** and the **Leave No Trace (LNT)** principles. While we will dive deep into these in [Requirement 2B](/merit-badges/hiking/guide/req2b/) and [Requirement 2C](/merit-badges/hiking/guide/req2c/), the core idea is simple: be a guest in nature. You wouldn't go to a friend's house and leave trash on their floor or carve your name into their dining table; you shouldn't do it in the forest either.
+The two main pillars of outdoor ethics are the **Outdoor Code** and the **Leave No Trace (LNT)** principles. While we will dive deep into these in [Requirement 2b](/merit-badges/hiking/guide/req2b/) and [Requirement 2c](/merit-badges/hiking/guide/req2c/), the core idea is simple: be a guest in nature. You wouldn't go to a friend's house and leave trash on their floor or carve your name into their dining table; you shouldn't do it in the forest either.
 
 Good ethics also mean respecting wildlife. Observe animals from a distance and never feed them. Human food can make wild animals sick and teach them to associate humans with food, which often leads to dangerous encounters.
 
@@ -98,4 +98,4 @@ Even the best boots won't help if you don't take care of your feet. Foot care is
 
 By mastering these practices, you aren't just checking off a requirement—you are becoming a more competent outdoorsman. When you take care of the trail and your gear, you set yourself up for a lifetime of adventure.
 
-{{< drg/next-page text="Now that you know how to take care of yourself and the trail, let's look at the specific rules for protecting the environment." teaser="Requirement 2B — Leave No Trace" url="/merit-badges/hiking/guide/req2b/" >}}
+{{< drg/next-page text="Now that you know how to take care of yourself and the trail, let's look at the specific rules for protecting the environment." teaser="Requirement 2b — Leave No Trace" url="/merit-badges/hiking/guide/req2b/" >}}
