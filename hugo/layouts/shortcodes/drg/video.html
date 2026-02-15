@@ -1,0 +1,46 @@
+{{ $url := .Get "url" }}
+{{ $isYoutube := or (in $url "youtube.com") (in $url "youtu.be") }}
+{{ $videoId := "" }}
+
+{{ if $isYoutube }}
+  {{ $vParam := findRE "v=([^&]+)" $url 1 }}
+  {{ if $vParam }}
+    {{ $videoId = index $vParam 0 | replaceRE "v=" "" }}
+  {{ else }}
+    {{ $beParam := findRE "youtu.be/([^?]+)" $url 1 }}
+    {{ if $beParam }}
+      {{ $videoId = index $beParam 0 | replaceRE "youtu.be/" "" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+<figure class="drg-video">
+  {{ if and $isYoutube $videoId }}
+    <iframe
+      class="drg-video__iframe"
+      src="https://www.youtube.com/embed/{{ $videoId }}"
+      title="{{ .Get "title" }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  {{ else }}
+    <a
+      href="{{ $url }}"
+      class="drg-video__link"
+      target="_blank"
+      rel="noopener noreferrer">
+      <svg
+        class="drg-video__play-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        width="48"
+        height="48">
+        <path d="M8 5v14l11-7z" />
+      </svg>
+      <span class="drg-video__title">{{ .Get "title" }}</span>
+    </a>
+  {{ end }}
+  <figcaption class="drg-video__caption">{{ .Get "title" }}</figcaption>
+</figure>

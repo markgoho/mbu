@@ -31,7 +31,7 @@
       {{ end }}
     </header>
 
-    <main class="main container">
+    <main class="main container {{ block "main-class" . }}{{ end }}">
       {{ block "main" . }}
       {{ end }}
     </main>

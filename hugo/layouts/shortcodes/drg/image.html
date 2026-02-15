@@ -1,0 +1,23 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+{{- $image := .Page.Resources.GetMatch $src -}}
+{{- if not $image -}}
+  {{- with .Page.Parent -}}
+    {{- $image = .Resources.GetMatch $src -}}
+  {{- end -}}
+{{- end -}}
+{{- with $image -}}
+  <figure class="drg-illustration">
+    <img
+      src="{{ .RelPermalink }}"
+      alt="{{ $alt }}"
+      loading="lazy"
+      decoding="async" />
+    {{- with $caption }}
+      <figcaption>{{ . }}</figcaption>
+    {{- end }}
+  </figure>
+{{- else -}}
+  {{- errorf "DRG image not found: %s (page: %s)" $src $.Page.RelPermalink -}}
+{{- end -}}

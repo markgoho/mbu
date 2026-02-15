@@ -225,6 +225,34 @@
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
     }
   }
+
+  &--guide {
+    background: linear-gradient(
+      135deg,
+      var(--brown-450) 0%,
+      var(--brown-500) 100%
+    );
+    border-color: var(--brown-500);
+    color: white;
+
+    .badge-action-card__title,
+    .badge-action-card__description {
+      color: white;
+    }
+
+    &::before {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        transparent 50%
+      );
+    }
+
+    &:hover {
+      border-color: var(--brown-400);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
 .badge-action-card__icon {

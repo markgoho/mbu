@@ -1,0 +1,146 @@
+{
+  "badge": "hiking",
+  "style_context": "Hiking",
+  "images": [
+    {
+      "id": "scout-mountain-trail",
+      "file": "_index.md",
+      "description": "Illustration of a Scout with a backpack looking out at a mountain trail, excited to start hiking"
+    },
+    {
+      "id": "historical-explorers",
+      "file": "_index.md",
+      "description": "Historical illustration or painting of early American explorers walking through rugged wilderness with heavy packs — contrast with the modern hiking scene"
+    },
+    {
+      "id": "desert-trail-sunrise",
+      "file": "_index.md",
+      "description": "Scouts hiking along a desert trail at sunrise with red rock mesas in the background, wide-brimmed hats and hydration packs visible"
+    },
+    {
+      "id": "trip-plan-clipboard",
+      "file": "req1a.md",
+      "description": "A Scout's handwritten trip plan on a clipboard, with a map and pencil beside it on a picnic table"
+    },
+    {
+      "id": "layering-system",
+      "file": "req1a.md",
+      "description": "A layering system demonstration showing base layer, mid layer, and outer shell laid out on a flat surface"
+    },
+    {
+      "id": "trail-map-compass",
+      "file": "req1a.md",
+      "description": "A Scout pausing on a trail to read a map and compass, with forest in the background"
+    },
+    {
+      "id": "first-aid-kit-trail",
+      "file": "req1b.md",
+      "description": "An open first-aid kit on a rock with bandages, moleskin, and antiseptic wipes visible — trail setting"
+    },
+    {
+      "id": "emergency-blanket-buddy",
+      "file": "req1b.md",
+      "description": "A Scout wrapped in an emergency blanket being helped by a buddy on a cold, misty trail"
+    },
+    {
+      "id": "ankle-wrap-rice",
+      "file": "req1b.md",
+      "description": "Close-up of a properly wrapped ankle with an elastic bandage, demonstrating the compression step of RICE"
+    },
+    {
+      "id": "single-file-trail",
+      "file": "req2a.md",
+      "description": "A group of Scouts hiking single-file on a well-maintained forest trail, demonstrating proper trail etiquette"
+    },
+    {
+      "id": "headlamp-dusk-hike",
+      "file": "req2a.md",
+      "description": "A Scout hiking at dusk with a headlamp illuminating the trail ahead, red light setting visible"
+    },
+    {
+      "id": "hiking-footwear-comparison",
+      "file": "req2a.md",
+      "description": "Three types of hiking footwear side by side on a log — hiking boots, trail runners, and approach shoes"
+    },
+    {
+      "id": "leave-no-trace-sign",
+      "file": "req2b.md",
+      "description": "A trail sign at a wilderness boundary showing Leave No Trace principles posted on a wooden kiosk"
+    },
+    {
+      "id": "trail-litter-pickup",
+      "file": "req2b.md",
+      "description": "A Scout picking up a piece of trail litter and placing it in a small trash bag attached to their pack"
+    },
+    {
+      "id": "wildlife-observation",
+      "file": "req2b.md",
+      "description": "A Scout observing a deer through binoculars from a safe distance on a mountain meadow trail"
+    },
+    {
+      "id": "scenic-overlook-stewardship",
+      "file": "req2c.md",
+      "description": "A Scout standing at a scenic overlook, looking out at a pristine wilderness valley — embodying stewardship"
+    },
+    {
+      "id": "backpacking-stove",
+      "file": "req2c.md",
+      "description": "A compact backpacking stove heating water on a flat rock, with no fire ring or scorched ground visible"
+    },
+    {
+      "id": "trail-jogging",
+      "file": "req3.md",
+      "description": "A Scout jogging on a trail with a daypack, mid-stride, demonstrating aerobic activity in a natural setting"
+    },
+    {
+      "id": "training-calendar",
+      "file": "req3.md",
+      "description": "A weekly training calendar pinned to a bulletin board with hiking distances and cross-training activities written in"
+    },
+    {
+      "id": "trail-lunch-spread",
+      "file": "req3.md",
+      "description": "A trail lunch spread on a bandana — trail mix, jerky, an energy bar, a water bottle, and an orange — on a flat rock"
+    },
+    {
+      "id": "topo-map-route",
+      "file": "req4.md",
+      "description": "A topographic map spread on a table with a highlighted 10-mile route, compass, and pencil beside it"
+    },
+    {
+      "id": "packed-trail-lunch",
+      "file": "req4.md",
+      "description": "A well-packed trail lunch in a zip-lock bag — wraps, trail mix, jerky, and an energy bar visible"
+    },
+    {
+      "id": "scouts-high-five-milestone",
+      "file": "req4.md",
+      "description": "Two Scouts high-fiving at a trail marker showing 'Mile 20' with a mountain vista in the background"
+    },
+    {
+      "id": "scout-writing-notebook",
+      "file": "req5.md",
+      "description": "A Scout sitting on a log writing in a small notebook, backpack beside them, forest trail in the background"
+    },
+    {
+      "id": "hand-drawn-trail-map",
+      "file": "req5.md",
+      "description": "A close-up of a hand-drawn trail map in a notebook with colored pencil annotations marking wildlife sightings and scenic spots"
+    },
+    {
+      "id": "scrapbook-hike-report",
+      "file": "req5.md",
+      "description": "An open scrapbook-style hike report with photos, pressed leaves, and handwritten notes on a desk"
+    },
+    {
+      "id": "footwear-lineup",
+      "file": "extended-learning.md",
+      "description": "Four types of hiking footwear arranged in a row — trail runners, hiking shoes, hiking boots, and mountaineering boots — on a wooden deck"
+    },
+    {
+      "id": "appalachian-trail-panorama",
+      "file": "extended-learning.md",
+      "description": "A panoramic view of the Appalachian Trail winding through misty green mountains in the Blue Ridge"
+    }
+  ]
+}

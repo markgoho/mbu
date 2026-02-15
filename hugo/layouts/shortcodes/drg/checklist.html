@@ -1,0 +1,12 @@
+<details class="drg-checklist">
+  <summary class="drg-checklist__summary">
+    <h3 class="drg-checklist__title">{{ .Get "title" }}</h3>
+    {{ with .Get "subtitle" }}
+      <span class="drg-checklist__subtitle">{{ . }}</span>
+    {{ end }}
+    <span class="drg-checklist__arrow"></span>
+  </summary>
+  <div class="drg-checklist__content">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

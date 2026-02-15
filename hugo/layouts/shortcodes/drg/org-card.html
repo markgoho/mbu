@@ -1,0 +1,12 @@
+<div class="drg-org-card">
+  <a
+    href="{{ .Get "url" }}"
+    class="drg-org-card__name"
+    target="_blank"
+    rel="noopener noreferrer"
+    >{{ .Get "name" }}</a
+  >
+  <p class="drg-org-card__description">
+    {{ .Get "description" | markdownify }}
+  </p>
+</div>

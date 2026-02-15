@@ -5,22 +5,22 @@
     "": {
       "name": "mbu",
       "dependencies": {
-        "cheerio": "^1.1.2",
+        "cheerio": "^1.2.0",
         "impit": "^0.7.6",
         "slugify": "^1.6.6",
       },
       "devDependencies": {
-        "@google/genai": "^1.37.0",
-        "@mendable/firecrawl-js": "^4.11.1",
+        "@google/genai": "^1.41.0",
+        "@mendable/firecrawl-js": "^4.12.1",
         "@types/bun": "latest",
-        "firebase-tools": "^15.3.1",
+        "firebase-tools": "^15.6.0",
         "js-yaml": "^4.1.1",
         "pagefind": "^1.4.0",
-        "prettier": "^3.8.0",
+        "prettier": "^3.8.1",
         "prettier-plugin-go-template": "^0.0.15",
         "prettier-plugin-organize-imports": "^4.3.0",
         "sharp": "^0.34.5",
-        "zod": "^4.3.5",
+        "zod": "^4.3.6",
       },
       "peerDependencies": {
         "typescript": "^5.9.3",

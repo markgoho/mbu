@@ -10,16 +10,22 @@
   .Summary
 }}
 
+{{ $badgeName := .Params.badge_name | default .CurrentSection.Params.badge_name }}
+{{ $fullTitle := .Title }}
+{{ if $badgeName }}
+  {{ $fullTitle = printf "%s | %s Merit Badge" .Title $badgeName }}
+{{ end }}
+
 
 <meta name="description" content="{{ $description }}" />
 
-<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:title" content="{{ $fullTitle }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink | absURL }}" />
 <meta property="og:image" content="{{ $img | absURL }}" />
 <meta property="og:description" content="{{ $description }}" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:title" content="{{ $fullTitle }}" />
 <meta name="twitter:description" content="{{ $description }}" />
 <meta name="twitter:image" content="{{ $img | absURL }}" />

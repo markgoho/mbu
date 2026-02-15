@@ -9,3 +9,8 @@ enableGitInfo = true
   changefreq = ""  # Omit - Google ignores this
   priority = -1    # Omit priority tags - Google ignores this
   filename = "sitemap.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

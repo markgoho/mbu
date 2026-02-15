@@ -48,6 +48,21 @@
           </div>
         </a>
 
+        {{ $guide := .GetPage "guide" }}
+        {{ if $guide }}
+          <a
+            href="{{ $guide.RelPermalink }}"
+            class="badge-action-card badge-action-card--guide">
+            <span class="badge-action-card__icon">📖</span>
+            <div class="badge-action-card__content">
+              <h2 class="badge-action-card__title">Digital Resource Guide</h2>
+              <p class="badge-action-card__description">
+                Interactive study guide
+              </p>
+            </div>
+          </a>
+        {{ end }}
+
         {{ if $json.pamphlet_url }}
           <a
             href="{{ $json.pamphlet_url }}"
@@ -81,6 +96,7 @@
       </div>
 
       {{ .Content }}
+
 
       <footer>
         <a href="/merit-badges/" class="back-link">← Back to All Badges</a>

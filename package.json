@@ -9,7 +9,8 @@
     "build:local": "rm -rf hugo/public && cd hugo && hugo && bun run index",
     "build": "cd hugo && hugo --minify && bun run index",
     "hugo:dev": "cd hugo && hugo server",
-    "index": "bunx pagefind --site hugo/public"
+    "index": "bunx pagefind --site hugo/public",
+    "generate:drg-images": "bun scripts/generate-drg-images.ts --badge"
   },
   "devDependencies": {
     "@google/genai": "^1.41.0",

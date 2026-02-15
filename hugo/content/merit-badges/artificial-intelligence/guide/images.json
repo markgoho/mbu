@@ -1,0 +1,151 @@
+{
+  "badge": "artificial-intelligence",
+  "style_context": "Artificial Intelligence, technology, and computing",
+  "images": [
+    {
+      "id": "scouts-ai-workshop",
+      "file": "_index.md",
+      "description": "A diverse group of Scouts gathered around a table with laptops and tablets, working on an AI project together in a bright, modern classroom or maker space. Expressions of curiosity and excitement."
+    },
+    {
+      "id": "early-computer-room",
+      "file": "_index.md",
+      "description": "A historical photograph-style scene of a 1950s or 1960s university computer room with large mainframe computers, reel-to-reel tape drives, and a researcher in a white shirt and tie examining printouts."
+    },
+    {
+      "id": "scout-voice-assistant",
+      "file": "_index.md",
+      "description": "A Scout in their bedroom talking to a smart speaker (voice assistant) on their desk, with homework spread out and a backpack nearby. Natural afternoon light from a window."
+    },
+    {
+      "id": "ai-vocabulary-notebook",
+      "file": "req1.md",
+      "description": "Close-up of a Scout's notebook open on a table with handwritten AI vocabulary terms and definitions, colorful highlighters and pens beside it. Clean, studious setting."
+    },
+    {
+      "id": "smartphone-ai-apps",
+      "file": "req2abc.md",
+      "description": "A Scout's hands holding a smartphone showing a navigation map app, with other everyday AI-powered devices visible in the background — a smart speaker, a laptop with a recommendation screen."
+    },
+    {
+      "id": "ai-classroom-learning",
+      "file": "req2abc.md",
+      "description": "A Scout at a school desk using a tablet that shows an AI tutoring interface, with a teacher visible in the background. Bright, modern classroom setting."
+    },
+    {
+      "id": "scouts-ai-game",
+      "file": "req2d.md",
+      "description": "Two Scouts and a counselor sitting at a table playing a card-based game, with scenario cards spread out. They are laughing and discussing — friendly, engaging atmosphere."
+    },
+    {
+      "id": "ai-timeline-poster",
+      "file": "req2e.md",
+      "description": "A Scout working on a large poster board timeline laid out on a table, with printed photos and handwritten dates being glued on. Markers, scissors, and reference materials nearby."
+    },
+    {
+      "id": "factory-robot-arm",
+      "file": "req3abc.md",
+      "description": "A modern factory floor with robotic arms assembling products on a conveyor belt, well-lit and clean industrial setting. No people required — focus on the automation equipment."
+    },
+    {
+      "id": "thermostat-automation",
+      "file": "req3abc.md",
+      "description": "Close-up of a modern smart thermostat on a wall showing temperature settings and a schedule, with a comfortable living room blurred in the background."
+    },
+    {
+      "id": "automation-flowchart",
+      "file": "req3d.md",
+      "description": "A Scout drawing a flowchart on a whiteboard showing triggers, conditions, and actions — the basic structure of an automated workflow. Marker in hand, concentrating."
+    },
+    {
+      "id": "automation-timeline-poster",
+      "file": "req3e.md",
+      "description": "A completed timeline poster on a classroom wall showing milestones in automation history, with printed images and neat labels. A Scout standing back to admire the finished work."
+    },
+    {
+      "id": "scales-of-justice-ai",
+      "file": "req4a.md",
+      "description": "A thoughtful Scout sitting at a desk with a laptop open, chin resting on hand, looking contemplative. On the screen is a news article about AI. Warm study lamp lighting."
+    },
+    {
+      "id": "ethical-dilemma-discussion",
+      "file": "req4b.md",
+      "description": "A small group of Scouts sitting in a circle having an animated discussion, with scenario cards visible on the floor between them. A counselor listens attentively. Indoor meeting room setting."
+    },
+    {
+      "id": "scout-writing-guidelines",
+      "file": "req4c.md",
+      "description": "A Scout writing in a journal at a desk, focused and deliberate. A printed list or poster about AI ethics is visible on the wall behind them."
+    },
+    {
+      "id": "turing-test-concept",
+      "file": "req4d.md",
+      "description": "A split-scene setup: on one side of a desk, a Scout types on a keyboard looking at a screen. On the other side (separated by a divider), another person sits at a computer — representing the Turing Test concept of hidden communication."
+    },
+    {
+      "id": "deepfake-detection",
+      "file": "req5.md",
+      "description": "A Scout looking critically at a laptop screen, leaning in with a skeptical expression, as if analyzing whether a video is real or fake. Study room setting with good lighting."
+    },
+    {
+      "id": "scout-reporting-phone",
+      "file": "req5.md",
+      "description": "A Scout showing their phone screen to a trusted adult (parent or counselor), both looking serious but calm. The adult has a reassuring posture. Living room or office setting."
+    },
+    {
+      "id": "teachable-machine-training",
+      "file": "req6a.md",
+      "description": "A Scout sitting at a computer using a webcam, holding up hand gestures to train an image recognition model. The screen shows a training interface with progress bars. Bright, casual setting."
+    },
+    {
+      "id": "neural-network-concept",
+      "file": "req6a.md",
+      "description": "A Scout looking at a poster or screen showing a simplified neural network diagram — interconnected nodes in layers with data flowing through. The Scout is pointing at it, explaining to a buddy."
+    },
+    {
+      "id": "voice-assistant-interaction",
+      "file": "req6b.md",
+      "description": "A Scout speaking to a voice assistant device on a kitchen counter while preparing food. Natural, everyday scene showing voice-based AI communication."
+    },
+    {
+      "id": "prompt-engineering-screen",
+      "file": "req6c.md",
+      "description": "Over-the-shoulder view of a Scout typing a detailed prompt into a chatbot interface on a computer. The screen shows a well-structured prompt with clear formatting. Home desk setting."
+    },
+    {
+      "id": "school-task-demo",
+      "file": "req6d.md",
+      "description": "A Scout at a school desk with a laptop open, demonstrating an AI interaction to a counselor sitting beside them. Both are looking at the screen, the counselor nodding approvingly."
+    },
+    {
+      "id": "ai-project-planning",
+      "file": "req7.md",
+      "description": "A Scout spread out at a table with a project plan on paper, a laptop open to an AI tool, colored sticky notes, and a pencil. Planning phase of a hands-on AI project."
+    },
+    {
+      "id": "scout-teaching-patrol",
+      "file": "req7.md",
+      "description": "A Scout standing at the front of a group of younger Scouts, gesturing toward a screen or poster showing AI concepts. The audience is engaged, some raising hands. Indoor meeting space."
+    },
+    {
+      "id": "professional-interview",
+      "file": "req8.md",
+      "description": "A Scout in uniform sitting across from a professional in a modern office or video call setup, notebook open, taking notes during an interview about AI careers."
+    },
+    {
+      "id": "ai-career-research",
+      "file": "req8.md",
+      "description": "A Scout at a library or study space with books and a laptop, researching AI careers. The laptop screen shows a career website. Focused, studious atmosphere."
+    },
+    {
+      "id": "quick-draw-game",
+      "file": "extended-learning.md",
+      "description": "A Scout drawing quickly on a tablet or touchscreen, laughing, while a friend watches — playing an AI drawing game. Casual, fun atmosphere."
+    },
+    {
+      "id": "scouts-coding-together",
+      "file": "extended-learning.md",
+      "description": "Two Scouts working together on a coding project at a computer, one pointing at the screen while the other types. A visual programming interface (like Scratch or similar) is visible."
+    }
+  ]
+}
