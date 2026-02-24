@@ -332,6 +332,8 @@ For each page:
 
 ### Phase 5: Image Manifest
 
+**You MUST complete this phase — do not stop after writing content.**
+
 20. Create `images.json` in the guide directory with 2–3 images per page.
 
 ```json
@@ -348,13 +350,15 @@ For each page:
 }
 ```
 
-21. Run generation: `bun run generate:drg-images {slug}`
-22. Convert `<!-- IMAGE: -->` placeholders to `{{</* drg/image src="images/{id}.png" alt="..." */>}}` shortcodes.
+21. **Run generation immediately** (do not ask the user or wait for approval): `bun run generate:drg-images {slug}` — This command may take several minutes for large guides. Let it run to completion.
+22. **Convert all `<!-- IMAGE: -->` placeholders** to `{{</* drg/image src="images/{id}.png" alt="..." */>}}` shortcodes. Match each placeholder's filename-id to the corresponding entry in `images.json`. Every placeholder must be converted — zero should remain.
 
 ### Phase 6: Verification
 
+**You MUST complete this phase — do not stop after image generation.**
+
 23. Verify Hugo build passes: `bun run build`
-24. Check no orphan image placeholders remain.
+24. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
 25. Verify all nav links and cross-references.
 26. Run through the quality checklist.
 
