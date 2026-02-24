@@ -1,0 +1,106 @@
+{
+  "badge": "cycling",
+  "style_context": "Cycling and bicycle riding",
+  "images": [
+    {
+      "id": "scout-bike-trailhead",
+      "file": "_index.md",
+      "description": "Illustration of a Scout standing with a bicycle at a trailhead, wearing a properly fitted helmet, backpack, and bright jersey, looking excited to start a ride with a trail stretching into the distance"
+    },
+    {
+      "id": "mountain-bike-singletrack",
+      "file": "_index.md",
+      "description": "A Scout riding a mountain bike on a forest singletrack trail with trees overhead creating dappled sunlight, wearing helmet and gloves, leaning into a gentle turn"
+    },
+    {
+      "id": "bike-types-lineup",
+      "file": "_index.md",
+      "description": "Several types of bicycles lined up side by side on a clean surface: a road bike, mountain bike, gravel bike, BMX bike, and a commuter bike with fenders and a basket, showing the variety of cycling"
+    },
+    {
+      "id": "cyclist-scanning-road",
+      "file": "req1a.md",
+      "description": "A Scout on a bicycle scanning the road ahead while riding, hands positioned near the brake levers, wearing a bright yellow jersey and helmet, on a suburban street"
+    },
+    {
+      "id": "intersection-awareness",
+      "file": "req1a.md",
+      "description": "Bird's-eye view illustration of a cyclist approaching an intersection, showing sight lines and potential hazard zones with turning cars, crosswalks, and proper lane positioning"
+    },
+    {
+      "id": "cycling-first-aid-kit",
+      "file": "req1b.md",
+      "description": "An open compact first-aid kit sitting on a park bench next to a bicycle wheel, showing bandages, nitrile gloves, antiseptic wipes, moleskin, and gauze pads neatly organized"
+    },
+    {
+      "id": "trail-hazard-plants",
+      "file": "req1b.md",
+      "description": "An illustrated field guide showing poison ivy, poison oak, and poison sumac leaves side by side with labels, set against a natural forest background"
+    },
+    {
+      "id": "cyclist-lane-position",
+      "file": "req2.md",
+      "description": "Diagram showing a cyclist riding in the correct lane position on a two-lane road, with arrows indicating traffic flow and a safe 4-foot gap from parked cars on the right"
+    },
+    {
+      "id": "hand-signals-diagram",
+      "file": "req2.md",
+      "description": "Clear illustration showing the three standard bicycle hand signals side by side: left turn (left arm straight out), right turn (right arm straight out), and stop (left arm down with palm back)"
+    },
+    {
+      "id": "helmet-fit-check",
+      "file": "req3.md",
+      "description": "Close-up of a Scout demonstrating the 2-V-1 helmet fitting method, showing the helmet sitting two fingers above the eyebrow, straps forming a V below the ear, and chin strap snug"
+    },
+    {
+      "id": "cyclist-gear-layout",
+      "file": "req3.md",
+      "description": "Flat-lay photograph of essential cycling gear arranged neatly on a wooden surface: helmet, padded gloves, water bottle, bike multi-tool, spare tube, mini pump, and a reflective vest"
+    },
+    {
+      "id": "abc-quick-check",
+      "file": "req4.md",
+      "description": "A Scout crouched next to a bicycle performing a pre-ride safety check, squeezing the front tire to check air pressure, with the bike on a kickstand in a driveway"
+    },
+    {
+      "id": "bike-chain-lube",
+      "file": "req4.md",
+      "description": "Close-up of a Scout applying chain lubricant to a bicycle chain while slowly turning the pedals backward, with the bike mounted on a simple repair stand"
+    },
+    {
+      "id": "emergency-stop-technique",
+      "file": "req5.md",
+      "description": "Side view of a Scout demonstrating an emergency stop on a bicycle in a parking lot, weight shifted far back behind the saddle, both brake levers firmly engaged"
+    },
+    {
+      "id": "scout-hand-signal-turn",
+      "file": "req5.md",
+      "description": "A Scout riding a bicycle on a quiet residential street extending their left arm straight out to signal a left turn, wearing a helmet and bright clothing"
+    },
+    {
+      "id": "road-safety-skills",
+      "file": "req6a.md",
+      "description": "A Scout cycling on a suburban street demonstrating proper lane position, riding past a row of parked cars with a safe 4-foot clearance, wearing helmet and reflective vest"
+    },
+    {
+      "id": "road-cycling-scenic",
+      "file": "req6a.md",
+      "description": "Two Scouts riding road bikes side by side along a scenic rural road with rolling green hills and a clear blue sky, wearing helmets and bright jerseys"
+    },
+    {
+      "id": "mtb-ready-position",
+      "file": "req6b.md",
+      "description": "A Scout on a mountain bike demonstrating the ready (attack) position on a wide dirt trail, knees bent, elbows out, eyes looking forward, wearing helmet and protective gear"
+    },
+    {
+      "id": "trail-obstacle-technique",
+      "file": "req6b.md",
+      "description": "A Scout on a mountain bike crossing a section of trail with exposed tree roots, lifting the front wheel slightly, demonstrating proper body position with weight back"
+    },
+    {
+      "id": "trail-biking-group",
+      "file": "req6b.md",
+      "description": "Two Scouts mountain biking together on a scenic trail through an open meadow with mountains visible in the background, both wearing helmets and smiling"
+    }
+  ]
+}
