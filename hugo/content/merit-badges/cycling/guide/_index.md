@@ -46,6 +46,9 @@ guide_nav:
       - title: "Req 6b — Trail Biking Option"
         url: "/merit-badges/cycling/guide/req6b/"
         is_sub: true
+      - title: "Ride Log"
+        url: "/merit-badges/cycling/guide/ride-log/"
+        is_sub: true
   - group_title: "Beyond the Badge"
     items:
       - title: "Extended Learning"

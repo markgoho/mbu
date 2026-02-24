@@ -86,6 +86,9 @@ guide_nav:
       - title: "Req 8c — Menu Planning"
         url: "/merit-badges/camping/guide/req8c/"
         is_sub: true
+      - title: "Menu Planning Worksheet"
+        url: "/merit-badges/camping/guide/menu-plan/"
+        is_sub: true
       - title: "Req 8d — Cook Your Meals"
         url: "/merit-badges/camping/guide/req8d/"
         is_sub: true

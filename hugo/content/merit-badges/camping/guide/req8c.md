@@ -15,6 +15,11 @@ Prepare a camp menu. Explain how the menu would differ from a menu for a backpac
 
 Meal planning is a skill that separates a well-run patrol from a chaotic one. Good camp food keeps your energy up, your spirits high, and your waste to a minimum. This requirement asks you to think through every aspect of feeding your patrol in the outdoors.
 
+{{< drg/download
+    title="Menu Planning Worksheet"
+    url="/merit-badges/camping/guide/menu-plan/"
+    type="printable" >}}
+
 ### Car Camping vs. Backpacking vs. Float Trip Menus
 
 The type of trip determines what you can cook. The key difference is **weight and storage**.

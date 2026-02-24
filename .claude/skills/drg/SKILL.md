@@ -199,6 +199,15 @@ prev_title: "{Last Requirement Title}"
 2. **Real-world experiences** — Places, projects, or events to seek out. Card-based layout.
 3. **Organizations** — 3–6 relevant organizations with name, mission, and link.
 
+**Structural convention:**
+
+Extended Learning sections should follow a consistent lettered structure:
+
+- **Section A:** Brief congratulatory intro (2–3 sentences acknowledging the Scout's achievement and teasing what lies ahead).
+- **Sections B–D:** Deep dives. Each should be substantive — at least 8–10 sentences with practical detail that teaches something new, not just a surface skim.
+- **Section E:** Real-world experiences (3–5 experience cards).
+- **Section F:** Organizations (3–6 org cards).
+
 ## Shortcode Catalog
 
 Use these Hugo shortcodes throughout the guide:
@@ -235,7 +244,11 @@ Steps to handle this scenario.
 - **Step one**: Do this.
 - **Step two**: Then this.
 {{</* /drg/be-prepared */>}}
+```
 
+Use `drg/be-prepared` for **scenario-based problem-solving** — situations the Scout might encounter and step-by-step responses. Good for safety scenarios, "what if" situations, and motivational hurdles. Aim for at least 1–2 per guide beyond just the intro pages.
+
+```markdown
 {{</* drg/next-page
     text="Now that you know about X"
     teaser="Find out how to Y."
@@ -245,7 +258,16 @@ Steps to handle this scenario.
     title="Template Name"
     url="/downloads/template.pdf" */>}}
 
-{{</* drg/video
+{{</* drg/download
+    title="Pre-Hike Planning Worksheet"
+    url="/merit-badges/{slug}/guide/{worksheet-slug}/"
+    type="printable" */>}}
+```
+
+- Use `type="printable"` when linking to an internal printable worksheet page.
+- Use default (no type) when linking to an external downloadable PDF.
+
+```markdown
     title="Video Title"
     url="https://www.youtube.com/watch?v=..." */>}}
 ```
@@ -272,6 +294,42 @@ The `data.json` `subrequirement_mode` field determines how sub-requirements rela
 | `"type": "select", "count": 1` | Pick one | Present all options, make clear they pick ONE |
 | `"type": "select", "count": N` | Pick N | Present all options, note they choose N |
 
+## Worksheets & Printable Tools
+
+### When to Create a Worksheet
+
+Use this test: **"Would a Scout actually print this out, fill it in by hand, and bring it to their counselor or use it in the field?"** If yes, create a printable worksheet. If it is just a reference list, an inline `drg/checklist` is fine.
+
+**Common worksheet triggers:**
+
+- Requirements that say "keep a log" or "make a plan"
+- Requirements that say "create a list" or "prepare a checklist" for field use
+- Requirements with tables or forms the Scout fills in over time
+- Requirements where the Scout needs counselor sign-off on a planning artifact
+
+### Worksheet File Convention
+
+Place worksheets in a subdirectory of the guide: `guide/{worksheet-slug}/index.md` with `layout: printable`.
+
+### Required Elements
+
+Every worksheet must include:
+
+1. **Back link** to the parent requirement page
+2. **Print button** (`window.print()`)
+3. **Title** (`<h2 class="drg-worksheet__title">`)
+4. **Subtitle** linking to the badge and requirement
+5. **Form fields** using `drg-worksheet__*` CSS classes (fields, lines, tables, check items, writing areas, draw areas, signature blocks)
+
+### Navigation
+
+- Add worksheets to `guide_nav` in `_index.md` under their parent requirement's group.
+- Link to worksheets from the requirement page using the `drg/download` shortcode with `type="printable"`.
+
+### Canonical Example
+
+See `hugo/content/merit-badges/hiking/guide/hike-plan-worksheet/index.md` for the reference implementation of a printable worksheet.
+
 ## Content Rules
 
 ### DO
@@ -293,6 +351,7 @@ The `data.json` `subrequirement_mode` field determines how sub-requirements rela
 - Link to commercial products or unreliable sources
 - Be preachy or lecture
 - Overload a page beyond ~1500 words of educational content
+- Use "Did You Know" for information that is merely topical — it must be **genuinely surprising, counterintuitive, or memorable**. If the fact would not make a Scout say "wait, really?" it belongs in the body text, not a callout.
 
 ## Production Workflow
 

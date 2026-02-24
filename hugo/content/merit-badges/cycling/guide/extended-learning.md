@@ -48,7 +48,24 @@ If you love riding trails, consider giving back by helping build and maintain th
 - **Why it matters:** Well-maintained trails are safer, more fun, and more sustainable. Erosion from neglected trails can damage ecosystems and lead to trail closures.
 - **How to get involved:** Contact your local IMBA chapter, mountain bike club, or land management agency (USFS, BLM, state parks) to find volunteer trail work days.
 
-### E. Cycling Experiences
+### E. Deep Dive: Cycling Safety Technology
+
+Whether you ride roads or trails, modern safety technology can make every ride safer and more enjoyable. Understanding what is available — and what is actually worth using — helps you ride with confidence.
+
+**Lights and visibility.** Front and rear lights are not just for night riding. Daytime running lights make you dramatically more visible to drivers. A solid white front light and a flashing red rear light are the minimum. Look for lights rated at least 200 lumens for the front (much more for night riding) and 50 lumens for the rear. Many modern lights are USB-rechargeable, which saves money on batteries and is better for the environment.
+
+**Reflective gear and clothing.** Reflective tape, vests, and ankle bands catch headlights from hundreds of feet away. Your ankles are especially effective locations for reflective material because the up-and-down pedaling motion catches a driver's eye faster than a stationary reflector. Reflective sidewall tires and spoke reflectors add visibility without any effort on your part once installed.
+
+**Helmet standards.** Not all helmets are created equal. In the United States, bicycle helmets must meet the Consumer Product Safety Commission (CPSC) standard. Look for the CPSC sticker inside the helmet. For mountain biking, helmets with extended rear coverage (sometimes called "enduro" style) protect the back of the head during falls. MIPS (Multi-directional Impact Protection System) is an additional technology that reduces rotational forces during angled impacts — many safety experts recommend it.
+
+**Bike computers and GPS.** A basic bike computer tracks speed, distance, and ride time — the exact data you need for your ride reports. GPS-enabled units and smartphone apps like Strava, Komoot, and Ride with GPS let you plan routes, follow turn-by-turn directions, and share your location with family. Some GPS units send automatic crash-detection alerts to your emergency contacts if they detect a sudden stop.
+
+{{< drg/tip >}}
+You do not need expensive gear to ride safely. A good set of rechargeable lights, reflective ankle bands, and a CPSC-certified helmet cover the essentials. Add a basic bike computer or phone mount and you have everything you need to ride smart.
+{{< /drg/tip >}}
+
+### F. Cycling Experiences
+
 
 Ready to take your riding to the next level? These experiences will challenge you and create memories that last a lifetime.
 
@@ -60,7 +77,7 @@ Ready to take your riding to the next level? These experiences will challenge yo
 
 {{< drg/experience-card title="Your Local Bike Park" details="Location: Check IMBA's trail finder | Highlights: Many communities have built dedicated bike parks with skills courses, pump tracks, and flow trails — perfect for building skills close to home" >}}
 
-### F. Organizations
+### G. Organizations
 
 Getting connected with a cycling organization is a great way to find rides, learn new skills, and advocate for better cycling infrastructure in your community.
 

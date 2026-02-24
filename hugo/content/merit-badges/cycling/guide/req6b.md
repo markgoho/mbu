@@ -213,6 +213,11 @@ On mountain biking or multi-use trails approved by your counselor, take two ride
 
 Six rides totaling 30 miles of trail riding will build your off-road skills and confidence. Trail miles are harder than road miles — a 5-mile trail ride can be more demanding than a 15-mile road ride.
 
+{{< drg/download
+    title="Ride Log"
+    url="/merit-badges/cycling/guide/ride-log/"
+    type="printable" >}}
+
 | Ride Distance | What to Focus On |
 |---------------|-----------------|
 | 2 miles (x2) | Get comfortable on the trail. Practice body position and basic skills. |

@@ -17,6 +17,11 @@ Before you can improve, you need to know where you stand. This requirement asks 
 
 Think of these assessments as your fitness "scorecard." They give you hard numbers that tell the truth about your current condition, and they will show you exactly how much you have improved when you are done.
 
+{{< drg/download
+    title="Fitness Assessment Record"
+    url="/merit-badges/personal-fitness/guide/fitness-assessment-record/"
+    type="printable" >}}
+
 ### 4a — Cardiorespiratory (Aerobic) Fitness
 
 {{< drg/requirement number="4a" >}}

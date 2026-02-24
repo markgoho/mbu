@@ -28,6 +28,11 @@ Your log is the proof of your commitment. Every workout, every meal, every rest 
 - **How you felt:** Energy level, mood, any soreness or discomfort
 - **Nutrition notes:** How well you followed your nutrition goals that day
 
+{{< drg/download
+    title="Weekly Fitness Log"
+    url="/merit-badges/personal-fitness/guide/fitness-log/"
+    type="printable" >}}
+
 {{< drg/tip >}}
 Keep your log in one consistent place — a notebook, a binder, or a simple app. If you have to hunt for your log every time, you will stop using it. Put it somewhere you see it daily, like next to your bed or in your backpack.
 {{< /drg/tip >}}

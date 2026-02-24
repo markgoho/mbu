@@ -15,6 +15,11 @@ At a family meeting, discuss the situations on the chart you created for require
 
 Now it is time to take what you learned in Requirements 1a and 1b and bring it home — literally. This requirement asks you to sit down with your family and talk through real emergency plans. This is one of the most practical things you will do in Scouting, and your family will benefit from it for years to come.
 
+{{< drg/download
+    title="Family Emergency Plan"
+    url="/merit-badges/emergency-preparedness/guide/family-emergency-plan/"
+    type="printable" >}}
+
 ---
 
 ### Why a Family Meeting Matters

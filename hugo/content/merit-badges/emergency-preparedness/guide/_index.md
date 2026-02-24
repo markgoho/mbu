@@ -24,6 +24,9 @@ guide_nav:
       - title: "Req 2a — Family Emergency Plans"
         url: "/merit-badges/emergency-preparedness/guide/req2a/"
         is_sub: true
+      - title: "Family Emergency Plan"
+        url: "/merit-badges/emergency-preparedness/guide/family-emergency-plan/"
+        is_sub: true
       - title: "Req 2b — Home Fire Escape Plan"
         url: "/merit-badges/emergency-preparedness/guide/req2b/"
         is_sub: true

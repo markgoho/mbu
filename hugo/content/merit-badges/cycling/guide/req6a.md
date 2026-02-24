@@ -116,6 +116,11 @@ Avoiding main highways, take two rides of 10 miles each, two rides of 15 miles e
 
 This is where the real adventure begins. Six rides totaling 100 miles will build your endurance, confidence, and love of cycling. The rides get progressively longer, giving your body time to adapt.
 
+{{< drg/download
+    title="Ride Log"
+    url="/merit-badges/cycling/guide/ride-log/"
+    type="printable" >}}
+
 #### Planning Your Rides
 
 {{< drg/checklist title="Ride Planning" subtitle="Set yourself up for success" >}}
