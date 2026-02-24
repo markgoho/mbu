@@ -1,0 +1,116 @@
+{
+  "badge": "personal-fitness",
+  "style_context": "Personal Fitness merit badge — topics include exercise, nutrition, health checkups, fitness testing, strength training, flexibility, and wellness for Scouts BSA ages 11-17",
+  "images": [
+    {
+      "id": "scout-stretching-sunrise",
+      "file": "_index.md",
+      "description": "A Scout (age 14, wearing a Scouts BSA uniform t-shirt) stretching outdoors at sunrise in a park, preparing for a morning workout. The Scout is doing a standing quad stretch on a paved trail with trees and soft golden light in the background. The mood is energetic and optimistic."
+    },
+    {
+      "id": "four-fitness-components",
+      "file": "_index.md",
+      "description": "An illustrated educational diagram showing the four components of physical fitness arranged in a square layout: a red heart icon labeled 'Cardiorespiratory' at top-left, a flexed bicep icon labeled 'Muscular Strength & Endurance' at top-right, a person in a stretching pose labeled 'Flexibility' at bottom-left, and a balanced scale icon labeled 'Body Composition' at bottom-right. Clean, modern, infographic style with bold colors on a white background."
+    },
+    {
+      "id": "scout-running-trail",
+      "file": "req1a.md",
+      "description": "A Scout (age 13, diverse appearance) running along a wooded trail with good running form — upright posture, arms pumping, looking energetic and focused. Dappled sunlight filters through the trees. The Scout wears athletic clothes and running shoes. The scene feels dynamic and healthy."
+    },
+    {
+      "id": "scout-journaling-campfire",
+      "file": "req1b.md",
+      "description": "A Scout sitting on a log near a low campfire in the evening, writing thoughtfully in a journal. The Scout looks calm and reflective, with warm firelight illuminating the scene. A backpack leans against the log nearby. The mood is peaceful and introspective."
+    },
+    {
+      "id": "scout-reflecting-nature",
+      "file": "req1c.md",
+      "description": "A Scout sitting quietly on a large flat rock beside a calm mountain lake at dawn. The Scout is looking out over the still water with mountains reflected in it. The sky has soft pink and orange sunrise colors. The mood is serene, contemplative, and spiritually peaceful."
+    },
+    {
+      "id": "fitness-wheel-diagram",
+      "file": "req1d.md",
+      "description": "An illustrated wheel diagram showing four interconnected dimensions of personal fitness. Four colored segments arranged in a circle: Physical (blue, with a running figure), Mental (green, with a brain icon), Emotional/Social (orange, with connected people icons), and Spiritual (purple, with a sunrise/compass icon). Arrows connect all segments to show they support each other. Clean infographic style."
+    },
+    {
+      "id": "scout-oath-fitness-connection",
+      "file": "req1e.md",
+      "description": "A Scout standing at attention outdoors giving the Scout sign (three-finger salute) with a determined expression. Subtle illustrated icons radiate outward from the Scout: a heart (physically strong), a lightbulb (mentally awake), and a compass (morally straight). The Scout wears a full Class A uniform. Background is a bright outdoor field."
+    },
+    {
+      "id": "doctor-checkup-teen",
+      "file": "req2a.md",
+      "description": "A friendly healthcare provider (wearing a white coat with a stethoscope) checking the blood pressure of a teenage patient in a bright, modern clinic examination room. Both are smiling. The room has a height chart on the wall and medical equipment visible. The mood is professional but approachable."
+    },
+    {
+      "id": "dental-checkup-tools",
+      "file": "req2b.md",
+      "description": "A close-up view of clean dental tools (mirror, explorer, scaler) arranged neatly on a blue dental tray. In the soft-focus background, a friendly dentist in scrubs gives a thumbs-up to a teenage patient sitting in a dental chair. The scene is bright, clean, and reassuring."
+    },
+    {
+      "id": "scout-exercise-variety",
+      "file": "req3a.md",
+      "description": "A four-panel collage illustration showing the same Scout doing four different activities: running on a track (top-left), doing push-ups on grass (top-right), stretching in a hamstring stretch on a mat (bottom-left), and eating a colorful healthy meal at a table (bottom-right). Each panel has a matching color border. Clean, energetic illustration style."
+    },
+    {
+      "id": "healthy-choices-infographic",
+      "file": "req3b.md",
+      "description": "A split-panel illustrated infographic. Left side shows positive choices with green background: a Scout drinking water, eating an apple, and jogging. Right side shows avoided substances with red background and X marks: a cigarette, a vape pen, an alcohol bottle, and a pill bottle. The divide is clear and the message is visual and direct. Clean infographic style."
+    },
+    {
+      "id": "vaccine-shield-diagram",
+      "file": "req3c.md",
+      "description": "An illustrated shield (like a Scout emblem) with small icons inside representing diseases vaccines protect against: a syringe, a microscope, virus particles, and a checkmark. A Scout stands confidently behind the shield with arms crossed. The background is light blue with subtle medical cross patterns. The mood is empowering and protective."
+    },
+    {
+      "id": "myplate-scout-meal",
+      "file": "req3d.md",
+      "description": "A top-down photograph-style illustration of a Scout's meal plate arranged in the MyPlate format: half the plate filled with colorful vegetables and fruits (broccoli, carrots, apple slices, berries), a quarter with whole grain brown rice, and a quarter with grilled chicken. A glass of milk sits beside the plate. The plate is on a wooden camp dining table. Bright, appetizing colors."
+    },
+    {
+      "id": "growth-chart-example",
+      "file": "req3e.md",
+      "description": "A simplified, friendly illustration of a BMI-for-age growth chart on a clipboard. The chart shows colored zones (green for healthy range, yellow for edges) with a highlighted point in the green zone. A pencil and ruler sit beside the clipboard. The style is clean and educational, not clinical. No real patient data shown."
+    },
+    {
+      "id": "sleep-cycle-diagram",
+      "file": "req3f.md",
+      "description": "An illustrated circular diagram showing the stages of sleep in a clock-like format. Icons at different stages show: a muscle icon for physical repair (deep sleep), a brain icon for memory consolidation (REM sleep), and a growth arrow for hormone release. The center shows a peacefully sleeping teen. Soft purple and blue color palette with stars."
+    },
+    {
+      "id": "family-outdoor-activity",
+      "file": "req3g.md",
+      "description": "A diverse family of four (two adults, two teens) playing frisbee together in a sunny park. Everyone is laughing and active. Trees and green grass surround them. A picnic blanket with snacks is visible in the background. The mood is joyful, connected, and active."
+    },
+    {
+      "id": "fitness-test-exercises",
+      "file": "req4.md",
+      "description": "Four illustrated panels showing proper exercise form with clean lines: (1) a figure doing a sit-up with knees bent, (2) a figure holding a perfect plank with straight body line, (3) a figure at the bottom of a push-up with elbows at 45 degrees, (4) a figure doing a pull-up with chin above the bar. Light guide arrows show correct body alignment. Sports anatomy illustration style."
+    },
+    {
+      "id": "scout-recording-results",
+      "file": "req5.md",
+      "description": "A Scout sitting at an outdoor picnic table writing results in a fitness log notebook. A water bottle, stopwatch, and towel are on the table. The Scout has a thoughtful expression and is wearing athletic clothes. A track or field is visible in the background. Late afternoon light."
+    },
+    {
+      "id": "strength-exercises-grid",
+      "file": "req6.md",
+      "description": "A six-panel grid illustration showing proper form for key strength exercises: push-ups, bodyweight squats, forward lunges, front plank, bent-over rows with a loaded backpack, and farmer's carries with water jugs. Each panel has the exercise name below it. Clean, instructional illustration style with a Scout-age figure demonstrating each move."
+    },
+    {
+      "id": "scout-workout-log",
+      "file": "req7.md",
+      "description": "A Scout at a desk in their room writing in a fitness log journal after a workout. A water bottle, towel, and pair of running shoes are nearby. The Scout looks satisfied and focused. A wall calendar with workout days marked is visible in the background. Warm interior lighting."
+    },
+    {
+      "id": "fitness-careers-collage",
+      "file": "req8.md",
+      "description": "A three-panel collage showing fitness professionals at work: (1) a personal trainer coaching a client through a squat in a gym, (2) a physical therapist helping a young patient with a leg exercise in a clinic, (3) a dietitian reviewing a colorful meal plan chart with a teenager. All professionals are diverse and approachable. Bright, professional settings."
+    },
+    {
+      "id": "year-round-fitness-calendar",
+      "file": "extended-learning.md",
+      "description": "An illustrated four-quadrant seasonal calendar showing different fitness activities: Summer (top-left, yellow) shows a Scout swimming in a lake; Fall (top-right, orange) shows a Scout hiking through autumn leaves; Winter (bottom-left, blue) shows a Scout doing indoor exercises in a gym; Spring (bottom-right, green) shows a Scout running on a trail with blooming flowers. Each quadrant has its season labeled."
+    }
+  ]
+}
