@@ -55,6 +55,7 @@ interface BadgeData {
   slug: string;
   url: string;
   eagle_required?: boolean;
+  eagle_group?: string;
   pamphlet_url?: string;
   requirements: Requirement[];
 }
@@ -726,6 +727,7 @@ try {
     slug: badge.slug,
     url: badge.url,
     eagle_required: badge.eagle_required,
+    ...(badge.eagle_group !== undefined && { eagle_group: badge.eagle_group }),
     pamphlet_url: llmContent?.pamphlet_url || htmlPamphletUrl,
     requirements: structure,
   };

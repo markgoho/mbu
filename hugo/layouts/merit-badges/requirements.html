@@ -60,6 +60,11 @@
           data-pagefind-meta="image[src]"
           hidden />
       {{ end }}
+      {{ if $json.eagle_required }}
+        <span data-pagefind-meta="eagle_required:true" hidden>
+          Eagle Required Merit Badge
+        </span>
+      {{ end }}
       <h2>Requirements</h2>
 
       <ol class="requirements-list">

@@ -14,6 +14,7 @@ export interface MeritBadge {
   slug: string;
   url: string;
   eagle_required: boolean;
+  eagle_group?: string;
 }
 
 export const MERIT_BADGES: MeritBadge[] = [
@@ -268,6 +269,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "cycling",
     url: "https://www.scouting.org/merit-badges/cycling/",
     eagle_required: true,
+    eagle_group: "fitness",
   },
   {
     id: 37,
@@ -324,6 +326,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "emergency-preparedness",
     url: "https://www.scouting.org/merit-badges/emergency-preparedness/",
     eagle_required: true,
+    eagle_group: "emergency",
   },
   {
     id: 45,
@@ -352,6 +355,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "environmental-science",
     url: "https://www.scouting.org/merit-badges/environmental-science/",
     eagle_required: true,
+    eagle_group: "environment",
   },
   {
     id: 49,
@@ -485,6 +489,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "hiking",
     url: "https://www.scouting.org/merit-badges/hiking/",
     eagle_required: true,
+    eagle_group: "fitness",
   },
   {
     id: 68,
@@ -562,6 +567,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "lifesaving",
     url: "https://www.scouting.org/merit-badges/lifesaving/",
     eagle_required: true,
+    eagle_group: "emergency",
   },
   {
     id: 79,
@@ -912,6 +918,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "sustainability",
     url: "https://www.scouting.org/merit-badges/sustainability/",
     eagle_required: true,
+    eagle_group: "environment",
   },
   {
     id: 129,
@@ -919,6 +926,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "swimming",
     url: "https://www.scouting.org/merit-badges/swimming/",
     eagle_required: true,
+    eagle_group: "fitness",
   },
   {
     id: 130,

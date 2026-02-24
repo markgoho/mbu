@@ -501,3 +501,38 @@
     text-decoration: underline;
   }
 }
+
+// Eagle Required "Choose One" Groups
+.eagle-group {
+  margin-block-start: 2rem;
+
+  &__heading {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    margin-block-end: 1rem;
+    color: var(--color-heading, #333);
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .badge-card {
+    flex: 1 1 280px;
+    max-width: 400px;
+  }
+
+  &__separator {
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-bold);
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #666);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-inline: 0.25rem;
+  }
+}

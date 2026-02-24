@@ -76,6 +76,22 @@
   margin-block-start: var(--space-l);
 }
 
+.eagle-cta {
+  margin-block-start: var(--space-l);
+  padding: var(--space-m);
+  background: linear-gradient(135deg, var(--olive-100) 0%, var(--tan-100) 100%);
+  border-radius: var(--border-radius-lg);
+  border-left: var(--border-width-md) solid var(--olive-400);
+
+  h2 {
+    margin-block-end: var(--space-3xs);
+  }
+
+  p {
+    margin-block-start: 0;
+  }
+}
+
 @media screen and (max-width: 30rem) and (orientation: portrait) {
   .hero {
     height: 50svh;
