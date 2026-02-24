@@ -531,6 +531,7 @@
   &__iframe {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: var(--border-radius-md);
