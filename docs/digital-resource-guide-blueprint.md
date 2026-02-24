@@ -562,12 +562,13 @@ Images are generated separately from content writing using a two-step process: (
 
 #### During Content Writing
 
-- **Use HTML comment placeholders** in content files instead of the `{{</* drg/image */>}}` shortcode. This keeps the Hugo build green before images exist:
+- **Use HTML comment placeholders** in content files instead of the `{{</* drg/image */>}}` shortcode. This keeps the Hugo build green before images exist. Format: `<!-- IMAGE: filename.png | alt-text description -->`:
   ```markdown
-  <!-- IMAGE: id="scout-mountain-trail" src="images/scout-mountain-trail.png" alt="A Scout with a backpack looking out at a mountain trail" -->
+  <!-- IMAGE: scout-mountain-trail.png | A Scout with a backpack looking out at a mountain trail -->
   ```
+  **Important:** Do NOT wrap shortcode syntax inside HTML comments (e.g., `<!-- {{</* drg/image */>}} -->`). Hugo still processes shortcodes inside comments, causing build errors when the image file does not exist yet.
 - **Aim for 2–3 images per page.** Place them at natural visual break points — after introductory paragraphs, between major sections, or after key concept explanations.
-- **Accessibility:** Every placeholder must include descriptive alt-text.
+- **Accessibility:** Every placeholder must include descriptive alt-text (the part after the `|`).
 
 #### The Image Manifest (`images.json`)
 
@@ -624,18 +625,21 @@ bun run generate:drg-images <badge-slug> --skip-existing
 
 #### Converting Placeholders to Shortcodes
 
-After images are generated, convert the HTML comment placeholders to live shortcodes:
+After images are generated, convert the HTML comment placeholders to live shortcodes. The placeholder filename corresponds to the image `id` in `images.json`:
 
 ```markdown
 <!-- Before (placeholder) -->
-<!-- IMAGE: id="scout-mountain-trail" src="images/scout-mountain-trail.png" alt="A Scout with a backpack looking out at a mountain trail" -->
+<!-- IMAGE: scout-mountain-trail.png | A Scout with a backpack looking out at a mountain trail -->
 
 <!-- After (live shortcode) -->
-
 {{</* drg/image src="images/scout-mountain-trail.png" alt="A Scout with a backpack looking out at a mountain trail" */>}}
 ```
 
-This can be done with a find-and-replace across the guide's `.md` files, or manually page by page during a final review pass.
+This can be done with a find-and-replace across the guide's `.md` files, or manually page by page during a final review pass. After conversion, verify no orphan placeholders remain:
+
+```bash
+grep -rn '<!-- IMAGE:' hugo/content/merit-badges/{badge-slug}/guide/*.md
+```
 
 #### Image Style
 
@@ -688,15 +692,31 @@ For each requirement page:
 ### Phase 5: Image Generation
 
 23. **Create the `images.json` manifest.** Define 2–3 images per content page with unique IDs, file assignments, and detailed scene descriptions (see [Image & Media Guidance](#image--media-guidance)).
-24. **Run the generation script:** `bun run generate:drg-images <badge-slug>`. Review each generated image for quality. Regenerate individual images as needed with `--id` or `--index`.
-25. **Convert placeholders to shortcodes.** Replace all `<!-- IMAGE: ... -->` HTML comments with `{{</* drg/image src="images/{id}.png" alt="..." */>}}` shortcodes.
-26. **Verify the Hugo build** passes with all images in place.
+24. **Set `GEMINI_API_KEY`** in a `.env` file in the project root (Bun auto-loads it), or export it in your shell.
+25. **Run the generation script:**
+    ```bash
+    bun run generate:drg-images <badge-slug>
+    ```
+    The script reads `images.json` from the guide directory, generates each image via the Gemini API, and saves `.png` files to `hugo/content/merit-badges/{slug}/guide/images/`.
+26. **Review each generated image** for quality, accuracy, and appropriate content. Regenerate individual images as needed:
+    ```bash
+    # Regenerate a specific image by its ID
+    bun run generate:drg-images <badge-slug> --id scout-mountain-trail
+
+    # Regenerate a specific image by index (1-based)
+    bun run generate:drg-images <badge-slug> --index 3
+
+    # Generate only images that don't already have a .png file
+    bun run generate:drg-images <badge-slug> --skip-existing
+    ```
+27. **Convert placeholders to shortcodes.** Replace all `<!-- IMAGE: ... -->` HTML comments with `{{</* drg/image src="images/{id}.png" alt="..." */>}}` shortcodes (see [Converting Placeholders to Shortcodes](#converting-placeholders-to-shortcodes)).
+28. **Verify the Hugo build** passes with all images in place: `bun run build`.
 
 ### Phase 6: Table of Contents & Final Assembly
 
-27. **Build the Table of Contents page** from the finalized page list.
-28. **Verify all cross-references and navigation links.**
-29. **Run the Quality Review Checklist.**
+29. **Build the Table of Contents page** from the finalized page list.
+30. **Verify all cross-references and navigation links.**
+31. **Run the Quality Review Checklist.**
 
 ---
 
