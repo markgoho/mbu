@@ -56,10 +56,9 @@ If the `guide/` directory already exists, check what files are present and resum
 
 ## Information Architecture
 
-Every guide has exactly **four page types**, always in this order:
+Every guide has exactly **three page types**, always in this order:
 
 ```
-Table of Contents        → contents.md  (not yet implemented in hiking — skip for now)
 Introduction & Overview  → _index.md
 Requirement Pages        → req{N}.md or req{N}{letter}.md
 Extended Learning        → extended-learning.md
@@ -78,6 +77,13 @@ Extended Learning        → extended-learning.md
 ### Page Grouping
 
 Requirements are grouped by top-level number and given a descriptive group title that captures the theme (not just "Requirement 1"). This title appears in the sidebar nav and as a kicker above the H1.
+
+### Sub-requirement Splitting
+
+Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **combined on one page**. Use this heuristic:
+
+- If sub-requirements are thematically similar and short → **one page** (e.g., `req2.md` covering 2a–2c)
+- If sub-requirements are thematically distinct or lengthy → **separate pages** (e.g., `req1a.md`, `req1b.md`)
 
 ### Heading & SEO Rules
 
@@ -138,7 +144,7 @@ guide_nav:
 title: "Req {N}{letter} — {Short Descriptive Title}"
 layout: guide
 group_title: "{Descriptive Group Title}"
-req_number: "{N}{letter}"
+req_number: "1a"
 prev: "/merit-badges/{slug}/guide/{prev-page}/"
 prev_title: "{Previous Page Title}"
 next: "/merit-badges/{slug}/guide/{next-page}/"
@@ -381,3 +387,27 @@ For each page:
 - [ ] `badge_name` set in `_index.md`
 - [ ] Eagle Required displayed correctly based on `data.json`
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
+
+## Smoke Testing (after build passes)
+
+Start the dev server (`bun run hugo:dev`) or build (`bun run build`) and verify:
+
+### Every Page
+
+- [ ] Page loads without error (no 404, no blank page)
+- [ ] H1 renders correctly with lowercase sub-requirement letters
+- [ ] Kicker (group title) appears above the H1
+- [ ] Sidebar navigation renders with all links and correct titles
+- [ ] Active sidebar link is highlighted
+- [ ] Previous/Next links go to the correct pages with matching titles
+- [ ] Requirement shortcode renders with correct number badge
+- [ ] All shortcode callouts (Safety First, Did You Know, Tips, etc.) display correctly
+- [ ] External links open and destinations are live (spot-check 2–3 per page)
+- [ ] Cross-reference links between guide pages resolve correctly
+
+### Consistency
+
+- [ ] No uppercase sub-requirement letters — grep for `Req [0-9]+[A-Z]` patterns (zero matches = clean)
+- [ ] No orphan image placeholders — grep for `<!-- IMAGE:` (zero matches = all converted)
+- [ ] `guide_nav` titles in `_index.md` match each page's `title` front matter exactly
+- [ ] YAML indentation in `guide_nav` is consistent (2 spaces)
