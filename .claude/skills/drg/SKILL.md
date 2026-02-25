@@ -282,6 +282,8 @@ During content writing, use HTML comment placeholders instead of image shortcode
 
 Aim for 2–3 images per page at natural visual break points.
 
+**Uniform rule:** Scout uniforms must always appear clean and presentable in image descriptions — no paint, mud, stains, or visible wear. If the scene involves messy activities (painting, gardening, cooking), describe Scouts in work clothes or describe the uniforms as clean and unaffected. Never depict the uniform as dirty or damaged.
+
 **Do NOT** wrap shortcode syntax inside HTML comments — Hugo still processes shortcodes inside comments, causing build errors.
 
 ## Handling Requirement Modes

@@ -50,6 +50,11 @@ STYLE REQUIREMENTS:
 - NO logos or brand names visible on clothing or gear
 - Warm color palette: earthy greens, browns, golden-hour warmth, natural sky colors
 
+UNIFORM APPEARANCE:
+- Scout uniforms must ALWAYS appear clean, neat, and presentable — no stains, paint, mud, tears, or visible wear.
+- If the scene involves messy activities (painting, gardening, cooking), Scouts should be wearing generic work clothes or aprons OVER their uniforms, OR the uniforms should remain visibly clean and unaffected.
+- The Scout uniform represents the organization and must never look damaged, dirty, or disrespected in any image.
+
 SAFETY-CRITICAL ACCURACY:
 - Any image depicting a safety practice, rule, or technique MUST be correct in every visible detail. A wrong detail in a safety image actively teaches dangerous behavior.
 - Equipment must be shown used correctly: helmets level on the head with straps buckled, PFDs properly fitted, harnesses snug, eye protection worn.
