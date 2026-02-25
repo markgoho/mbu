@@ -50,6 +50,14 @@ STYLE REQUIREMENTS:
 - NO logos or brand names visible on clothing or gear
 - Warm color palette: earthy greens, browns, golden-hour warmth, natural sky colors
 
+SAFETY-CRITICAL ACCURACY:
+- Any image depicting a safety practice, rule, or technique MUST be correct in every visible detail. A wrong detail in a safety image actively teaches dangerous behavior.
+- Equipment must be shown used correctly: helmets level on the head with straps buckled, PFDs properly fitted, harnesses snug, eye protection worn.
+- Containers, tools, and gear must look like what they are. A water container must NOT resemble a fuel or chemical container. A cooking flame must NOT appear near flammable liquids or inappropriate materials.
+- Body positioning and technique must be accurate: proper lifting form, correct hand placement on tools, safe distances from hazards.
+- If the scene involves fire, stoves, or heat sources, ensure all nearby objects are plausible and safe — no red gas cans, aerosol cans, or plastic containers near open flame.
+- When in doubt, depict the SAFEST version of the scene. Err on the side of caution.
+
 SCENE: `;
 }
 
