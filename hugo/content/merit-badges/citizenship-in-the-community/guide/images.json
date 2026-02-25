@@ -1,0 +1,111 @@
+{
+  "badge": "citizenship-in-the-community",
+  "style_context": "Citizenship and civic engagement in a community setting",
+  "images": [
+    {
+      "id": "scout-community-overview",
+      "file": "_index.md",
+      "description": "A Scout standing in a vibrant town square looking at a community bulletin board covered in flyers and announcements, with a city hall building and a public library visible in the background on a clear day"
+    },
+    {
+      "id": "scouts-civic-engagement",
+      "file": "_index.md",
+      "description": "Scouts of diverse backgrounds participating in a community town hall meeting, several seated in the audience and one standing at a microphone to speak, with council members visible at a raised dais in the background"
+    },
+    {
+      "id": "community-volunteering",
+      "file": "_index.md",
+      "description": "Scouts in clean uniforms working alongside community members of various ages to plant young trees in a neighborhood park on a sunny day, with shovels and saplings visible"
+    },
+    {
+      "id": "rights-duties-obligations",
+      "file": "req1.md",
+      "description": "A Scout studying a large poster-sized diagram on a classroom wall showing the three pillars of citizenship labeled Rights, Duties, and Obligations, with bullet points under each pillar"
+    },
+    {
+      "id": "scout-good-citizen",
+      "file": "req1.md",
+      "description": "A Scout in a clean uniform helping an elderly neighbor carry grocery bags up a front porch walkway on a residential sidewalk, both smiling warmly"
+    },
+    {
+      "id": "scout-mapping-community",
+      "file": "req2a.md",
+      "description": "A Scout sitting at a desk using a laptop showing a digital map application, with a printed community map spread out beside the laptop and an open notebook with handwritten notes"
+    },
+    {
+      "id": "community-landmarks",
+      "file": "req2a.md",
+      "description": "An illustrated bird's-eye view of a small American town showing labeled community landmarks including a city hall with a flag, a fire station with a red truck, a green park with playground equipment, a library building, and a hospital with a cross symbol"
+    },
+    {
+      "id": "government-org-chart",
+      "file": "req2b.md",
+      "description": "A clean, colorful organizational chart on a whiteboard showing the structure of a typical city government with the Mayor at the top, City Council beside them, and department heads like Police Chief, Fire Chief, and Public Works Director connected by lines below"
+    },
+    {
+      "id": "scout-researching-government",
+      "file": "req2b.md",
+      "description": "A Scout at a library computer researching their local government website displayed on the monitor, with handwritten notes and a hand-drawn organizational chart on paper beside the keyboard"
+    },
+    {
+      "id": "council-meeting-scene",
+      "file": "req3.md",
+      "description": "A Scout sitting attentively in the audience of a city council meeting chamber, taking notes in a small notebook, with council members seated at a raised curved dais in the background and an American flag on display"
+    },
+    {
+      "id": "scout-taking-notes",
+      "file": "req3.md",
+      "description": "A Scout sitting in the gallery of a meeting hall with wooden benches, writing observations in a notebook with a focused and engaged expression, with other audience members visible nearby"
+    },
+    {
+      "id": "scout-researching-issue",
+      "file": "req4.md",
+      "description": "A Scout reviewing a local newspaper spread out on a table and taking notes about a community issue in a notebook, with a window showing a city hall building in the background"
+    },
+    {
+      "id": "scout-interview",
+      "file": "req4.md",
+      "description": "A Scout in a clean uniform sitting across a desk from a friendly government official in a municipal office, the Scout holding a pen and notebook while the official gestures as they explain something, both appearing engaged in conversation"
+    },
+    {
+      "id": "scout-watching-movie",
+      "file": "req5.md",
+      "description": "A Scout watching a movie on a television screen in a living room setting with a parent sitting nearby, a notebook and pen resting on the coffee table ready for note-taking, warm lamp lighting in the room"
+    },
+    {
+      "id": "film-community-impact",
+      "file": "req5.md",
+      "description": "A large movie screen displaying a scene of diverse community members gathered together in a town square with buildings in the background, viewed from the perspective of someone in the audience with the edge of a theater seat visible"
+    },
+    {
+      "id": "community-services-collage",
+      "file": "req6.md",
+      "description": "A four-panel split-scene illustration showing taxpayer-funded services in action: a fire truck with lights on responding to a call, a librarian helping a young patron find a book, a public bus at a stop with passengers boarding, and a park ranger maintaining a nature trail with tools"
+    },
+    {
+      "id": "scout-exploring-services",
+      "file": "req6.md",
+      "description": "A Scout walking along a sidewalk through their town on a sunny day, passing a public library with its doors open, a fire station with a truck visible inside, and a public park with green trees, the Scout carrying a notebook and looking around with curiosity"
+    },
+    {
+      "id": "scout-volunteering-food-bank",
+      "file": "req7.md",
+      "description": "A Scout in a clean uniform sorting canned goods and boxed food items at a community food bank alongside other volunteers of different ages, with organized shelves of donated food visible in the background"
+    },
+    {
+      "id": "scout-community-service",
+      "file": "req7.md",
+      "description": "A group of Scouts wearing work clothes with clean uniforms visible underneath working alongside adult volunteers to paint a colorful mural on the exterior wall of a community center building on a bright day"
+    },
+    {
+      "id": "scout-presenting",
+      "file": "req8.md",
+      "description": "A Scout standing confidently at the front of a room next to a large screen displaying a colorful slide presentation about their community, with a small audience of fellow Scouts and adults seated and watching attentively"
+    },
+    {
+      "id": "community-presentation-collage",
+      "file": "req8.md",
+      "description": "A four-panel montage showing elements that might appear in a community presentation: a sepia-toned historic photograph of a main street, a vibrant cultural festival with decorations and food stalls, a beautiful public park with a lake and walking path, and a Scout speaking confidently to a seated audience"
+    }
+  ]
+}
