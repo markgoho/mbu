@@ -23,7 +23,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": "{{ .Title }} Merit Badge",
+  "name": "{{ .Title }}",
   "description": "{{ $description | safeJS }}",
   "url": "{{ .Permalink | absURL }}",
   "courseCode": "{{ $json.slug }}",
@@ -48,7 +48,7 @@
   "hasPart": [
     {
       "@type": "WebPage",
-      "name": "{{ .Title }} Merit Badge Requirements",
+      "name": "{{ .Title }} Requirements",
       "url": "{{ .Permalink | absURL }}requirements/"
     }{{ with $guideSection }},
     {
@@ -64,7 +64,7 @@
   }{{ end }}{{ if $json.pamphlet_url }},
   "associatedMedia": {
     "@type": "MediaObject",
-    "name": "{{ .Title }} Merit Badge Pamphlet",
+    "name": "{{ .Title }} Pamphlet",
     "url": "{{ $json.pamphlet_url }}",
     "encodingFormat": "application/pdf"
   }{{ end }}
