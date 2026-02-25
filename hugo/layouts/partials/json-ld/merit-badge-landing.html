@@ -2,6 +2,7 @@
 {{- $data := .Resources.GetMatch "data.json" -}}
 {{- $json := $data | unmarshal -}}
 {{- $reqCount := len $json.requirements -}}
+{{- $guideSection := .GetPage "guide" -}}
 
 {{- /* Generate description from page content or fallback */ -}}
 {{- $description := "" -}}
@@ -49,7 +50,13 @@
       "@type": "WebPage",
       "name": "{{ .Title }} Merit Badge Requirements",
       "url": "{{ .Permalink | absURL }}requirements/"
-    }
+    }{{ with $guideSection }},
+    {
+      "@type": "LearningResource",
+      "name": "{{ $.Title }} — Digital Resource Guide",
+      "url": "{{ .Permalink | absURL }}",
+      "learningResourceType": "Study Guide"
+    }{{ end }}
   ]{{ if $json.eagle_required }},
   "isPartOf": {
     "@type": "ItemList",

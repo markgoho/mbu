@@ -151,4 +151,12 @@
       }
     });
   </script>
+
+  {{/* JSON-LD structured data */}}
+  {{ if .IsSection }}
+    {{ partial "json-ld/drg-index.html" . }}
+  {{ else }}
+    {{ partial "json-ld/drg-requirement.html" . }}
+  {{ end }}
+  {{ partial "json-ld/drg-breadcrumb.html" . }}
 {{ end }}

@@ -452,6 +452,7 @@ For each page:
 - [ ] `badge_name` set in `_index.md`
 - [ ] Eagle Required displayed correctly based on `data.json`
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
+- [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
 
 ## Smoke Testing (after build passes)
 
@@ -469,6 +470,7 @@ Start the dev server (`bun run hugo:dev`) or build (`bun run build`) and verify:
 - [ ] All shortcode callouts (Safety First, Did You Know, Tips, etc.) display correctly
 - [ ] External links open and destinations are live (spot-check 2–3 per page)
 - [ ] Cross-reference links between guide pages resolve correctly
+- [ ] JSON-LD `application/ld+json` block is present in page source
 
 ### Consistency
 
