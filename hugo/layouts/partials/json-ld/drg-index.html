@@ -32,7 +32,12 @@
   "isPartOf": {
     "@type": "Course",
     "name": "{{ $badgeName }} Merit Badge",
-    "url": "{{ $badgePage.Permalink | absURL }}"
+    "description": "Learn about the {{ $badgeName }} merit badge through Scouting America's program.",
+    "url": "{{ $badgePage.Permalink | absURL }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "Scouting America"
+    }
   },
   "about": {
     "@type": "Thing",
