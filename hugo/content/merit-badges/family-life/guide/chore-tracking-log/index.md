@@ -131,15 +131,15 @@ group_title: "Printable Worksheet"
 <div class="drg-worksheet__section">
   <h3 class="drg-worksheet__section-title">End-of-Month Reflection</h3>
 
-  <div class="drg-worksheet__writing-area" style="min-height: 4rem">
+  <div class="drg-worksheet__writing-area">
     Which chores did you do most consistently? Why?
   </div>
 
-  <div class="drg-worksheet__writing-area" style="min-height: 4rem">
+  <div class="drg-worksheet__writing-area">
     Which chores were hardest to keep up with? What got in the way?
   </div>
 
-  <div class="drg-worksheet__writing-area" style="min-height: 4rem">
+  <div class="drg-worksheet__writing-area">
     How did your chores affect your family this month?
   </div>
 </div>
