@@ -111,7 +111,7 @@ If you are trained in full CPR, the cycle is **30 compressions : 2 rescue breath
 
 **For two-rescuer CPR:** One person does compressions while the other gives breaths. Switch roles every 2 minutes to prevent fatigue — compression quality degrades quickly when you are tired.
 
-<!-- IMAGE: cpr-technique.png | A Scout performing CPR chest compressions on a training mannequin, showing correct hand position on the center of the chest with arms straight and shoulders directly over the hands -->
+{{< drg/image src="images/cpr-technique.avif" alt="A Scout performing CPR chest compressions on a training mannequin, showing correct hand position on the center of the chest with arms straight and shoulders directly over the hands" >}}
 
 ### CPR for Children and Infants
 

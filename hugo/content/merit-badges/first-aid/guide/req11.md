@@ -111,7 +111,7 @@ A more serious condition caused by the body's inability to cool itself adequatel
 The key difference between heat exhaustion and heat stroke: in heat exhaustion, the person is still sweating and the skin is cool and clammy. In heat stroke, the skin is hot and dry (or hot and sweaty in exertional heat stroke), and the person is confused or unconscious. Heat stroke kills — cool them immediately and call 911.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: heat-illness-spectrum.png | An infographic showing the progression from heat cramps to heat exhaustion to heat stroke, with key signs and first aid actions for each stage -->
+{{< drg/image src="images/heat-illness-spectrum.avif" alt="An infographic showing the progression from heat cramps to heat exhaustion to heat stroke, with key signs and first aid actions for each stage" >}}
 
 ---
 
@@ -163,7 +163,7 @@ During a spring campout, it starts raining and the temperature drops to 45°F. A
 - **Monitor closely.** If shivering stops but they are not warming up, the situation is worsening — call for help.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: hypothermia-treatment.png | Scouts in a tent helping a fellow Scout who is wrapped in a sleeping bag, with warm water bottles placed at key warming points, during a rainy outdoor scene -->
+{{< drg/image src="images/hypothermia-treatment.avif" alt="Scouts in a tent helping a fellow Scout who is wrapped in a sleeping bag, with warm water bottles placed at key warming points, during a rainy outdoor scene" >}}
 
 {{< drg/video
     title="Heat Stroke vs Heat Exhaustion — Differences and Treatment"

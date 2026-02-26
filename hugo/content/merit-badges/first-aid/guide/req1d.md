@@ -64,7 +64,7 @@ If a person is breathing on their own but is unconscious, place them in the **re
 The recovery position is one of the most useful skills in first aid. It works for people who are unconscious but breathing — such as someone who has fainted, had a seizure, or been found unresponsive. Practice it until the steps feel natural.
 {{< /drg/tip >}}
 
-<!-- IMAGE: recovery-position.png | A Scout carefully placing an unconscious person into the recovery position on a grassy field, demonstrating correct hand and knee placement -->
+{{< drg/image src="images/recovery-position.avif" alt="A Scout carefully placing an unconscious person into the recovery position on a grassy field, demonstrating correct hand and knee placement" >}}
 
 ## Signs of Breathing Problems
 
@@ -96,7 +96,7 @@ If a person has a pulse but is not breathing, provide **rescue breathing**:
 
 If there is **no pulse**, switch to full CPR — you will learn that process in [Requirement 7a](/merit-badges/first-aid/guide/req7a/).
 
-<!-- IMAGE: head-tilt-chin-lift.png | Close-up illustration showing the head-tilt chin-lift technique on a training mannequin, with hands correctly positioned on forehead and chin -->
+{{< drg/image src="images/head-tilt-chin-lift.avif" alt="Close-up illustration showing the head-tilt chin-lift technique on a training mannequin, with hands correctly positioned on forehead and chin" >}}
 
 {{< drg/video
     title="Head-Tilt Chin-Lift Technique"

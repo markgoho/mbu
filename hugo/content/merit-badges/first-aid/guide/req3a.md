@@ -82,7 +82,7 @@ Destroys all layers of skin and may damage muscle, fat, or bone beneath. The ski
 Never apply butter, toothpaste, or home remedies to a burn. These trap heat in the tissue and increase the risk of infection. Cool water and a sterile covering are all you need.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: burn-degrees.png | An educational illustration showing the three degrees of burns side by side, with labeled skin layers (epidermis, dermis, subcutaneous) and visual indicators of each burn depth -->
+{{< drg/image src="images/burn-degrees.avif" alt="An educational illustration showing the three degrees of burns side by side, with labeled skin layers (epidermis, dermis, subcutaneous) and visual indicators of each burn depth" >}}
 
 **Prevention:** Use oven mitts and pot holders when cooking. Keep hot liquids away from the edges of tables and counters. Never leave a campfire unattended. Wear shoes around campfires.
 
@@ -151,7 +151,7 @@ Sunburn is a radiation burn caused by overexposure to ultraviolet (UV) rays from
 You can get sunburned on cloudy days. Up to 80% of UV rays pass through clouds. You can also get sunburned from reflected light off water, snow, and sand — even while sitting in the shade.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: sunscreen-application.png | Scouts applying sunscreen to their arms and faces before a sunny outdoor activity, with hats and sunglasses visible -->
+{{< drg/image src="images/sunscreen-application.avif" alt="Scouts applying sunscreen to their arms and faces before a sunny outdoor activity, with hats and sunglasses visible" >}}
 
 {{< drg/external-link
     title="American Burn Association — Burn Prevention"

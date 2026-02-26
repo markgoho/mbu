@@ -137,7 +137,7 @@ First aid skills enhance many personal interests and activities. Here are some i
 NOLS (National Outdoor Leadership School) offers Wilderness First Aid and Wilderness First Responder courses that are widely recognized in the outdoor industry. A WFR certification is often required for jobs as wilderness guides, camp counselors, and outdoor educators — and some courses accept students as young as 16.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: ems-career-exploration.png | A collage showing different EMS career paths: an EMT with an ambulance, a flight paramedic near a helicopter, an emergency physician in scrubs, and a wilderness first responder on a mountain trail -->
+{{< drg/image src="images/ems-career-exploration.avif" alt="A collage showing different EMS career paths: an EMT with an ambulance, a flight paramedic near a helicopter, an emergency physician in scrubs, and a wilderness first responder on a mountain trail" >}}
 
 {{< drg/external-link
     title="National Registry of Emergency Medical Technicians (NREMT)"
@@ -149,7 +149,7 @@ NOLS (National Outdoor Leadership School) offers Wilderness First Aid and Wilder
     url="https://www.nols.edu/en/coursefinder/wilderness-medicine/"
     description="Wilderness First Aid and Wilderness First Responder courses recognized throughout the outdoor industry." >}}
 
-<!-- IMAGE: volunteer-ems.png | A teen volunteer EMT in uniform standing proudly in front of a community ambulance, representing the option of beginning EMS volunteering at a young age -->
+{{< drg/image src="images/volunteer-ems.avif" alt="A teen volunteer EMT in uniform standing proudly in front of a community ambulance, representing the option of beginning EMS volunteering at a young age" >}}
 
 {{< drg/next-page
     text="You have explored emergency medical services — through visits, interviews, research, or personal goals."

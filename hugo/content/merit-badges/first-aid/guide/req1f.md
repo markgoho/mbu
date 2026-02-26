@@ -63,7 +63,7 @@ Shock can develop minutes to hours after an injury. Any person with a significan
 One of the best things you can do for a person in shock is simply keep them calm and still. Anxiety increases heart rate and makes shock worse. Your steady, confident presence matters more than you might think.
 {{< /drg/tip >}}
 
-<!-- IMAGE: treating-shock.png | A Scout helping an injured person lie on their back with legs elevated on a backpack, covered with a blanket, in an outdoor setting -->
+{{< drg/image src="images/treating-shock.avif" alt="A Scout helping an injured person lie on their back with legs elevated on a backpack, covered with a blanket, in an outdoor setting" >}}
 
 ---
 
@@ -117,7 +117,7 @@ Three Scouts are hurt during a camp cooking activity. One has a small cut on the
 - **Cut finger (Green):** Minor — can apply their own bandage or wait for help.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: triage-scenario.png | An overhead view of a Scout camp scene with multiple injured people and a Scout leader directing other Scouts to help, showing organized emergency response -->
+{{< drg/image src="images/triage-scenario.avif" alt="An overhead view of a Scout camp scene with multiple injured people and a Scout leader directing other Scouts to help, showing organized emergency response" >}}
 
 {{< drg/external-link
     title="FEMA Community Emergency Response Team (CERT) Triage Training"

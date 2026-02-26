@@ -59,7 +59,7 @@ AEDs are intentionally designed for untrained bystanders. Once you turn the devi
 When an AED is available, use it as soon as possible. For every minute that passes without defibrillation, the chance of survival drops by about 10%. CPR alone keeps blood flowing, but the AED is what actually fixes the heart rhythm.
 {{< /drg/tip >}}
 
-<!-- IMAGE: aed-pad-placement.png | An illustration showing correct AED pad placement on a person's bare chest — one pad on the upper right below the collarbone, one on the lower left below the armpit, with the AED device visible nearby -->
+{{< drg/image src="images/aed-pad-placement.avif" alt="An illustration showing correct AED pad placement on a person's bare chest — one pad on the upper right below the collarbone, one on the lower left below the armpit, with the AED device visible nearby" >}}
 
 ## CPR + AED Together
 
@@ -108,7 +108,7 @@ Several apps and websites map AED locations:
     title="How to Use an AED — American Red Cross"
     url="https://www.youtube.com/watch?v=UFvL7wTFzl0" >}}
 
-<!-- IMAGE: aed-wall-mount.png | An AED in its bright green wall-mounted cabinet in a school hallway, with the universal heart/lightning bolt AED sign clearly visible above it -->
+{{< drg/image src="images/aed-wall-mount.avif" alt="An AED in its bright green wall-mounted cabinet in a school hallway, with the universal heart/lightning bolt AED sign clearly visible above it" >}}
 
 {{< drg/next-page
     text="You now understand how AEDs work, how to use one, and where to find them in your community."

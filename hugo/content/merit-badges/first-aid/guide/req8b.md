@@ -81,7 +81,7 @@ For a wrist sprain or hand injury:
 6. Finish at the wrist and secure.
 7. Check finger circulation — color, warmth, and sensation.
 
-<!-- IMAGE: arm-sling-technique.png | A Scout carefully tying a triangular bandage arm sling on a fellow Scout, showing the correct position with the hand slightly elevated above the elbow -->
+{{< drg/image src="images/arm-sling-technique.avif" alt="A Scout carefully tying a triangular bandage arm sling on a fellow Scout, showing the correct position with the hand slightly elevated above the elbow" >}}
 
 ---
 
@@ -152,7 +152,7 @@ In the field, you may not have a SAM splint. You can improvise with:
 
 Padding can come from socks, shirts, towels, or anything soft. Ties can be strips of cloth, bandannas, belts, or duct tape.
 
-<!-- IMAGE: splinting-forearm.png | A Scout applying a padded SAM splint to another Scout's forearm, wrapping it securely with an elastic bandage, outdoors at a campsite -->
+{{< drg/image src="images/splinting-forearm.avif" alt="A Scout applying a padded SAM splint to another Scout's forearm, wrapping it securely with an elastic bandage, outdoors at a campsite" >}}
 
 {{< drg/video
     title="How to Apply an Arm Sling — St John Ambulance"

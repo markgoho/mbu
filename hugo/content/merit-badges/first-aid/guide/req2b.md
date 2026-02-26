@@ -67,7 +67,7 @@ For your counselor demonstration, you need to explain **what each item does** an
 Never give medications (including ibuprofen, acetaminophen, or antihistamines) to another person without the guidance of a parent, guardian, or medical professional. You can carry these items for your own use, but administering them to someone else without proper authorization is beyond the scope of first aid.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: personal-first-aid-kit.png | A neatly organized personal hiking first-aid kit laid out on a flat surface, with all items visible and labeled, next to a small red carrying pouch -->
+{{< drg/image src="images/personal-first-aid-kit.avif" alt="A neatly organized personal hiking first-aid kit laid out on a flat surface, with all items visible and labeled, next to a small red carrying pouch" >}}
 
 ## Inspecting a Larger Kit
 
@@ -100,7 +100,7 @@ The second part of this requirement asks you to inspect a unit, home, vehicle, o
 The American Red Cross recommends checking and restocking your first-aid kit at least twice a year. A good way to remember: check it when you change your smoke detector batteries — typically when daylight saving time begins and ends.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: kit-inspection.png | A Scout and an adult leader inspecting the contents of a large troop first-aid kit laid out on a camp table, checking expiration dates on supplies -->
+{{< drg/image src="images/kit-inspection.avif" alt="A Scout and an adult leader inspecting the contents of a large troop first-aid kit laid out on a camp table, checking expiration dates on supplies" >}}
 
 ## Keeping Your Kit Ready
 

@@ -71,7 +71,7 @@ The physical exam from a doctor confirms that a participant is healthy enough fo
 Scouting America requires the AHMR to be updated annually. This means the information is always current — far more useful than a form filled out years ago. It is one of the most thorough health documentation systems of any youth organization in the country.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: ahmr-form-review.png | A Scout leader and a Scout reviewing an Annual Health and Medical Record form together at a table, with camping gear visible in the background -->
+{{< drg/image src="images/ahmr-form-review.avif" alt="A Scout leader and a Scout reviewing an Annual Health and Medical Record form together at a table, with camping gear visible in the background" >}}
 
 ## How the AHMR Helps You as a First Aider
 
@@ -95,7 +95,7 @@ To complete this requirement, obtain a copy of the current AHMR form. You can do
     url="https://www.scouting.org/health-and-safety/ahmr/"
     description="Download the current AHMR form and read Scouting America's guidelines for health and medical documentation at events." >}}
 
-<!-- IMAGE: medical-alert-bracelet.png | Close-up of a medical alert bracelet on a Scout's wrist, showing the medical symbol and engraved health information -->
+{{< drg/image src="images/medical-alert-bracelet.avif" alt="Close-up of a medical alert bracelet on a Scout's wrist, showing the medical symbol and engraved health information" >}}
 
 {{< drg/next-page
     text="You now understand the AHMR and why medical information is essential for providing first aid at Scouting events."

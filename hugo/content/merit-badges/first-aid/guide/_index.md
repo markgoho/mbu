@@ -145,7 +145,7 @@ Modern first aid is faster, smarter, and more accessible than ever — but the m
 
 **Get Ready!** You are about to learn skills that could genuinely save a life — maybe even the life of someone you love. That is not an exaggeration. Let's get started.
 
-<!-- IMAGE: scout-first-aid-ready.png | A Scout wearing a clean uniform with a first-aid kit on their belt, standing confidently and ready to help -->
+{{< drg/image src="images/scout-first-aid-ready.avif" alt="A Scout wearing a clean uniform with a first-aid kit on their belt, standing confidently and ready to help" >}}
 
 ---
 
@@ -181,7 +181,7 @@ Natural disasters, severe weather, and large-scale accidents can injure many peo
 In a mass casualty situation, your own safety comes first. You cannot help anyone if you become a victim yourself. Always evaluate the scene for hazards before rushing in.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: kinds-of-first-aid-collage.png | A four-panel illustration showing different first aid settings: a Scout treating a blister on a hiking trail, a teen helping someone who fell at home, a sports sideline with an ice pack on a knee, and first responders at a disaster scene -->
+{{< drg/image src="images/kinds-of-first-aid-collage.avif" alt="A four-panel illustration showing different first aid settings: a Scout treating a blister on a hiking trail, a teen helping someone who fell at home, a sports sideline with an ice pack on a knee, and first responders at a disaster scene" >}}
 
 ---
 

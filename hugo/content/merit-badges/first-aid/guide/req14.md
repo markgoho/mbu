@@ -100,7 +100,7 @@ Before you teach, plan your lesson. Here is a framework:
 Studies in medical education show that "see one, do one, teach one" is one of the most effective learning sequences. By the time you teach a skill to someone else, your own retention and understanding increase dramatically. Teaching makes you better at the skill, not just the person learning.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: teaching-first-aid.png | A Scout standing in front of a small group of younger Scouts, demonstrating how to apply an arm sling, with the learners watching attentively -->
+{{< drg/image src="images/teaching-first-aid.avif" alt="A Scout standing in front of a small group of younger Scouts, demonstrating how to apply an arm sling, with the learners watching attentively" >}}
 
 ## After You Teach
 
@@ -112,7 +112,7 @@ Discuss the experience with your counselor:
 - What would you do differently next time?
 - Did your learners achieve the objective?
 
-<!-- IMAGE: edge-method-practice.png | Two Scouts practicing a first aid skill together — one guiding the other through bandaging technique, representing the "Guide" phase of EDGE -->
+{{< drg/image src="images/edge-method-practice.avif" alt="Two Scouts practicing a first aid skill together, one guiding the other through bandaging technique, representing the Guide phase of EDGE" >}}
 
 {{< drg/external-link
     title="Scouting America — EDGE Method Overview"

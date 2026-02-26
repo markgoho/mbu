@@ -45,7 +45,7 @@ When any of these structures is stretched, torn, or broken, you have a musculosk
 | **Simple fracture** | Bone (cracked or broken, skin intact) | Moderate to severe | Also called a "closed fracture" — skin is not broken |
 | **Compound fracture** | Bone (broken, bone pierces through skin) | Severe — emergency | Also called an "open fracture" — bone is exposed, high infection risk |
 
-<!-- IMAGE: injury-comparison.png | An educational diagram showing simplified illustrations of each injury type (strain, tear, rupture, sprain, dislocation, simple fracture, compound fracture) with labeled anatomical structures -->
+{{< drg/image src="images/injury-comparison.avif" alt="An educational diagram showing simplified illustrations of each injury type (strain, tear, rupture, sprain, dislocation, simple fracture, compound fracture) with labeled anatomical structures" >}}
 
 ## Muscle Strains, Tears, and Tendon Ruptures
 

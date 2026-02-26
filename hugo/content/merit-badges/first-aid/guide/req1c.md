@@ -56,7 +56,7 @@ Putting on gloves is easy — taking them off safely is the part most people get
 Practice the glove removal technique before an emergency. The goal is to never touch the contaminated outside surface with your bare skin. It takes a few tries to get the motion smooth.
 {{< /drg/tip >}}
 
-<!-- IMAGE: glove-removal.png | Step-by-step illustration showing the correct pinch-and-peel technique for removing disposable gloves safely -->
+{{< drg/image src="images/glove-removal.avif" alt="Step-by-step illustration showing the correct pinch-and-peel technique for removing disposable gloves safely" >}}
 
 ## Safe Disposal of Used Supplies
 
@@ -82,7 +82,7 @@ Even after careful BSI, you should always:
 - **Report the exposure** to a parent, Scout leader, or medical professional if you had direct contact with blood or body fluids — especially if your gloves tore or you had open wounds on your hands.
 - **Restock your kit.** Replace any supplies you used so you are ready next time.
 
-<!-- IMAGE: handwashing-after-first-aid.png | A Scout thoroughly washing their hands with soap and water at a campsite wash station after providing first aid -->
+{{< drg/image src="images/handwashing-after-first-aid.avif" alt="A Scout thoroughly washing their hands with soap and water at a campsite wash station after providing first aid" >}}
 
 {{< drg/video
     title="How to Remove Gloves Safely — Red Cross"

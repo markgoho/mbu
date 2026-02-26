@@ -100,7 +100,7 @@ Anaphylaxis can return hours after the initial reaction (called a biphasic react
 
 **Prevention:** People with known severe allergies should carry two epinephrine auto-injectors at all times. Wear a medical alert bracelet. Read food labels carefully. Inform Scout leaders, counselors, and friends about your allergies.
 
-<!-- IMAGE: epipen-demonstration.png | A Scout demonstrating proper epinephrine auto-injector technique on a training device, pressing firmly against the outer thigh -->
+{{< drg/image src="images/epipen-demonstration.avif" alt="A Scout demonstrating proper epinephrine auto-injector technique on a training device, pressing firmly against the outer thigh" >}}
 
 ---
 
@@ -156,7 +156,7 @@ On day two of a Philmont trek, a crew member complains of a pounding headache, n
 - **Descend if it gets worse.** Confusion, loss of coordination, or severe breathing difficulty means HACE or HAPE — get to lower elevation immediately and contact rangers.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: altitude-sickness-awareness.png | Scouts resting at a high-altitude campsite with mountain views, one Scout drinking water while another checks on a teammate who is sitting down and resting -->
+{{< drg/image src="images/altitude-sickness-awareness.avif" alt="Scouts resting at a high-altitude campsite with mountain views, one Scout drinking water while another checks on a teammate who is sitting down and resting" >}}
 
 {{< drg/video
     title="How to Perform the Heimlich Maneuver — Red Cross"

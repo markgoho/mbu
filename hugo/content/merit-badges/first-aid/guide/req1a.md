@@ -70,7 +70,7 @@ Medical professionals use the **ABCDE** framework to quickly evaluate a patient.
 Good Samaritan laws in all 50 states protect people who provide reasonable first aid in an emergency. As long as you act in good faith and within your training, you are legally protected.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: scene-assessment.png | A Scout pausing at the edge of an outdoor scene, carefully looking around before approaching an injured person on the ground, demonstrating scene safety evaluation -->
+{{< drg/image src="images/scene-assessment.avif" alt="A Scout pausing at the edge of an outdoor scene, carefully looking around before approaching an injured person on the ground, demonstrating scene safety evaluation" >}}
 
 ## Putting It All Together
 
@@ -90,7 +90,7 @@ You are hiking when you see a cyclist lying on the ground next to their bike.
     url="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html"
     description="Learn more about assembling first aid supplies and responding to common emergencies." >}}
 
-<!-- IMAGE: check-call-care.png | An infographic-style illustration showing the three steps: Check (Scout looking around a scene), Call (Scout on phone with 911), Care (Scout kneeling beside a patient providing first aid) -->
+{{< drg/image src="images/check-call-care.avif" alt="An infographic-style illustration showing the three steps: Check (Scout looking around a scene), Call (Scout on phone with 911), Care (Scout kneeling beside a patient providing first aid)" >}}
 
 {{< drg/next-page
     text="You now know how to assess and handle a first aid emergency step by step."

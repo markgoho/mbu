@@ -103,7 +103,7 @@ In a fire, smoke and toxic gases rise. Breathable air is near the floor.
 Practice these moves ahead of time with a volunteer "victim." In a real smoke-filled room, visibility is near zero and you will be acting on muscle memory. The techniques should be automatic.
 {{< /drg/tip >}}
 
-<!-- IMAGE: smoke-room-rescue.png | Two Scouts practicing a low-crawl rescue in a training exercise, one dragging another by the clothing while staying close to the ground -->
+{{< drg/image src="images/smoke-room-rescue.avif" alt="Two Scouts practicing a low-crawl rescue in a training exercise, one dragging another by the clothing while staying close to the ground" >}}
 
 ---
 
@@ -162,7 +162,7 @@ For an unconscious person or someone who cannot bear any weight, an improvised s
 The four-bearer stretcher carry has been used since the Civil War. During World War I, stretcher bearers on the Western Front sometimes carried wounded soldiers more than a mile through trenches and across shell-cratered fields to reach aid stations.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: improvised-stretcher.png | Scouts constructing an improvised stretcher from two poles and a blanket at a campsite, with one Scout directing the process -->
+{{< drg/image src="images/improvised-stretcher.avif" alt="Scouts constructing an improvised stretcher from two poles and a blanket at a campsite, with one Scout directing the process" >}}
 
 {{< drg/video
     title="How to Improvise a Stretcher — Wilderness First Aid"

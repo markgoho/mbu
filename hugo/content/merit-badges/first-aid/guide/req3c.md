@@ -127,7 +127,7 @@ Tiny flying insects whose bites cause red, itchy welts disproportionate to their
 
 **Prevention:** Fine-mesh head nets and screens. Insect repellent. Avoid dawn and dusk near water.
 
-<!-- IMAGE: tick-removal.png | A close-up illustration showing the correct technique for removing a tick with fine-tipped tweezers, grasping close to the skin and pulling straight up -->
+{{< drg/image src="images/tick-removal.avif" alt="A close-up illustration showing the correct technique for removing a tick with fine-tipped tweezers, grasping close to the skin and pulling straight up" >}}
 
 ---
 
@@ -211,7 +211,7 @@ Do NOT cut the wound, try to suck out venom, apply a tourniquet, apply ice, or g
 
 **Prevention:** Watch where you step and reach. Wear boots and long pants in snake country. Use a flashlight on trails at night. Never reach under rocks, logs, or into holes blindly.
 
-<!-- IMAGE: snake-safety.png | A Scout hiking on a trail wearing proper boots and long pants, looking carefully at the trail ahead, with a warning sign about snakes visible nearby -->
+{{< drg/image src="images/snake-safety.avif" alt="A Scout hiking on a trail wearing proper boots and long pants, looking carefully at the trail ahead, with a warning sign about snakes visible nearby" >}}
 
 {{< drg/video
     title="Tick Removal: The Right Way — CDC"

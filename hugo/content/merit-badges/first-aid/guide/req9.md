@@ -121,7 +121,7 @@ An open head wound bleeds heavily because the scalp has an excellent blood suppl
 6. Tie the bandage at the side of the head (not over the wound).
 7. Ensure the bandage is snug enough to hold the dressing in place but not so tight it increases intracranial pressure.
 
-<!-- IMAGE: head-bandage.png | A Scout applying a triangular bandage around a fellow Scout's head, demonstrating the proper wrapping technique for an open head wound with the knot tied at the side -->
+{{< drg/image src="images/head-bandage.avif" alt="A Scout applying a triangular bandage around a fellow Scout's head, demonstrating the proper wrapping technique for an open head wound with the knot tied at the side" >}}
 
 ---
 

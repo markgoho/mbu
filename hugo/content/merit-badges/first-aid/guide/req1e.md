@@ -49,7 +49,7 @@ With gloved hands, systematically examine the victim from head to toe. You are l
 Talk to the victim throughout the exam. Tell them what you are about to do before you do it: "I'm going to gently check your ribs now." This builds trust and helps you gauge their pain responses.
 {{< /drg/tip >}}
 
-<!-- IMAGE: head-to-toe-check.png | A Scout performing a secondary assessment on a fellow Scout lying on the ground, carefully checking their arm for injuries while wearing gloves -->
+{{< drg/image src="images/head-to-toe-check.avif" alt="A Scout performing a secondary assessment on a fellow Scout lying on the ground, carefully checking their arm for injuries while wearing gloves" >}}
 
 ## Gathering a Medical History: SAMPLE
 
@@ -82,7 +82,7 @@ Write down or remember everything you observe. When paramedics arrive, give them
 Respect the victim's privacy and dignity during the examination. Explain what you are doing and why. If you need to check under clothing, ask permission when possible, and shield the person from bystanders. Only expose what is necessary to assess and treat injuries.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: sample-history.png | A Scout taking notes on a small notepad while talking to a conscious patient who is sitting up, showing the information-gathering process -->
+{{< drg/image src="images/sample-history.avif" alt="A Scout taking notes on a small notepad while talking to a conscious patient who is sitting up, showing the information-gathering process" >}}
 
 {{< drg/external-link
     title="Wilderness Medical Society — Patient Assessment"

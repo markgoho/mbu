@@ -73,7 +73,7 @@ The brain uses about 20% of the body's total glucose supply even though it makes
 
 **Prevention:** People with diabetes should monitor blood sugar regularly, carry fast-acting sugar at all times, and eat balanced meals. For all Scouts — eat regular meals and snacks during activities, especially in hot weather or during strenuous exercise.
 
-<!-- IMAGE: hypoglycemia-response.png | A Scout offering a juice box to a fellow Scout who looks pale and shaky, sitting on a bench at a campsite -->
+{{< drg/image src="images/hypoglycemia-response.avif" alt="A Scout offering a juice box to a fellow Scout who looks pale and shaky, sitting on a bench at a campsite" >}}
 
 ---
 
@@ -119,7 +119,7 @@ A Scout suddenly falls to the ground and begins shaking uncontrollably during a 
 - **If this is a known seizure condition** and the Scout recovers normally, monitor them. If it is their first seizure or lasts more than 5 minutes, call 911.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: seizure-first-aid.png | A Scout protecting the head of a person having a seizure by placing a folded jacket under their head, while keeping the area clear of obstacles -->
+{{< drg/image src="images/seizure-first-aid.avif" alt="A Scout protecting the head of a person having a seizure by placing a folded jacket under their head, while keeping the area clear of obstacles" >}}
 
 {{< drg/video
     title="Seizure First Aid — Epilepsy Foundation"

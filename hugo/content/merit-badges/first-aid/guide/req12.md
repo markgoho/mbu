@@ -83,7 +83,7 @@ Feeling nervous before a challenge is completely normal — even experienced adu
 The breathing technique described above — called "box breathing" — is used by Navy SEALs, surgeons, and first responders to stay calm under extreme pressure. It works because it directly activates the parasympathetic nervous system, which counters the fight-or-flight response.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: managing-stress.png | A Scout standing at the top of a rappelling tower, taking a deep breath with eyes closed, a belayer and supportive friends visible below -->
+{{< drg/image src="images/managing-stress.avif" alt="A Scout standing at the top of a rappelling tower, taking a deep breath with eyes closed, a belayer and supportive friends visible below" >}}
 
 ---
 
@@ -159,7 +159,7 @@ During a late-night conversation at camp, a friend says, "Sometimes I think ever
     url="https://www.crisistextline.org/"
     description="Text HOME to 741741 to connect with a trained crisis counselor. Available 24/7 via text — a format many teens find more comfortable than a phone call." >}}
 
-<!-- IMAGE: peer-support.png | Two Scouts sitting together on a log at dusk, one listening attentively to the other who is speaking, showing a supportive and caring interaction -->
+{{< drg/image src="images/peer-support.avif" alt="Two Scouts sitting together on a log at dusk, one listening attentively to the other who is speaking, showing a supportive and caring interaction" >}}
 
 {{< drg/next-page
     text="You have learned about managing stress and recognizing when someone may need mental health support."

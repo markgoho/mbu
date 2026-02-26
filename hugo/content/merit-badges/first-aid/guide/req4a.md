@@ -90,7 +90,7 @@ While whittling at camp, a Scout cuts their finger with a pocketknife. The cut i
 - **If it is deep or gaping,** keep pressure on it and arrange for a trip to the doctor for stitches.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: wound-cleaning.png | A Scout wearing nitrile gloves carefully cleaning a small cut on another Scout's forearm under running water from a campsite water bottle -->
+{{< drg/image src="images/wound-cleaning.avif" alt="A Scout wearing nitrile gloves carefully cleaning a small cut on another Scout's forearm under running water from a campsite water bottle" >}}
 
 {{< drg/video
     title="How to Treat a Nosebleed — Mayo Clinic"
@@ -101,7 +101,7 @@ While whittling at camp, a Scout cuts their finger with a pocketknife. The cut i
     url="https://www.mayoclinic.org/first-aid/first-aid-cuts/basics/art-20056711"
     description="Step-by-step guidance on treating cuts and scrapes, including when to see a doctor." >}}
 
-<!-- IMAGE: bandaging-wound.png | A Scout carefully applying an adhesive bandage to a cleaned scrape on a friend's knee, with a first-aid kit open nearby -->
+{{< drg/image src="images/bandaging-wound.avif" alt="A Scout carefully applying an adhesive bandage to a cleaned scrape on a friend's knee, with a first-aid kit open nearby" >}}
 
 {{< drg/next-page
     text="You now know how to handle nosebleeds and mild to moderate bleeding."

@@ -63,7 +63,7 @@ If the victim shows signs of shock, lay them flat with legs elevated about 12 in
 The single most effective treatment for severe bleeding is direct, firm, sustained pressure. Do not give up on direct pressure too quickly. Many wounds that seem unstoppable will slow or stop with 10–15 minutes of committed pressure.
 {{< /drg/tip >}}
 
-<!-- IMAGE: direct-pressure-bleeding.png | A Scout wearing gloves applying firm two-handed pressure to a simulated wound on another person's forearm, with gauze and a first-aid kit visible -->
+{{< drg/image src="images/direct-pressure-bleeding.avif" alt="A Scout wearing gloves applying firm two-handed pressure to a simulated wound on another person's forearm, with gauze and a first-aid kit visible" >}}
 
 ---
 
@@ -127,7 +127,7 @@ Once a tourniquet is applied, **do not remove it.** Only trained medical profess
 
 If you do not have a commercial tourniquet, you can improvise one from a wide strip of cloth (bandanna, belt, shirt sleeve) and a stick or pen as a windlass. However, improvised tourniquets are less reliable and harder to apply effectively. If your troop or patrol does not carry a commercial tourniquet, consider adding one to your first-aid kit.
 
-<!-- IMAGE: tourniquet-application.png | A Scout demonstrating proper tourniquet placement on a training arm or leg, showing the high-and-tight position with the windlass visible -->
+{{< drg/image src="images/tourniquet-application.avif" alt="A Scout demonstrating proper tourniquet placement on a training arm or leg, showing the high-and-tight position with the windlass visible" >}}
 
 {{< drg/video
     title="Stop the Bleed — Tourniquet Application"

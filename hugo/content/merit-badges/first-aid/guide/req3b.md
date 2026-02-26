@@ -97,7 +97,7 @@ An ice burn happens when ice, frozen metal, or chemical cold packs are held dire
 
 **Prevention (all cold injuries):** Dress in moisture-wicking layers. Keep spare dry socks in a zip-lock bag. Avoid tight-fitting boots that restrict circulation. Stay hydrated. Know the signs and check each other frequently in cold weather.
 
-<!-- IMAGE: cold-weather-layers.png | A Scout dressed in proper cold-weather layering system, with labels pointing to the base layer, insulation layer, and outer shell -->
+{{< drg/image src="images/cold-weather-layers.avif" alt="A Scout dressed in proper cold-weather layering system, with labels pointing to the base layer, insulation layer, and outer shell" >}}
 
 ---
 
@@ -157,7 +157,7 @@ Two miles into a hike, you notice a warm, tender spot on your heel.
 - **Retie your boot** — it may be too loose, allowing your foot to slide.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: blister-treatment.png | A Scout sitting on a trail rock, carefully applying moleskin to a hot spot on their heel, with hiking boots and socks beside them -->
+{{< drg/image src="images/blister-treatment.avif" alt="A Scout sitting on a trail rock, carefully applying moleskin to a hot spot on their heel, with hiking boots and socks beside them" >}}
 
 {{< drg/external-link
     title="Cleveland Clinic — Frostbite: Signs, Stages, and Treatment"

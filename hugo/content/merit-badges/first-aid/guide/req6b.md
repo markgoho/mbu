@@ -97,7 +97,7 @@ Never enter cold water to rescue someone unless you are wearing a personal flota
 
 **Prevention:** Always wear a PFD when boating or paddling. Never swim alone. Follow BSA Safe Swim Defense and Safety Afloat policies. Learn to swim well. Know the water temperature before entering.
 
-<!-- IMAGE: water-rescue-throw.png | A Scout on a dock throwing a ring buoy to a person in the water, demonstrating the "throw" step of reach-throw-row-go rescue -->
+{{< drg/image src="images/water-rescue-throw.avif" alt="A Scout on a dock throwing a ring buoy to a person in the water, demonstrating the throw step of reach-throw-row-go rescue" >}}
 
 ---
 
@@ -132,7 +132,7 @@ During a sudden thunderstorm at camp, a Scout is struck by lightning and falls t
 - **Check for burns and other injuries** once the victim is stabilized.
 {{< /drg/be-prepared >}}
 
-<!-- IMAGE: lightning-safety.png | Scouts quickly moving toward a sturdy building as dark storm clouds and lightning appear in the distance, with one Scout gesturing urgently to the group -->
+{{< drg/image src="images/lightning-safety.avif" alt="Scouts quickly moving toward a sturdy building as dark storm clouds and lightning appear in the distance, with one Scout gesturing urgently to the group" >}}
 
 {{< drg/video
     title="Drowning Prevention and Rescue — American Red Cross"

@@ -159,7 +159,7 @@ Use the **BE FAST** acronym to recognize stroke symptoms:
 Every minute counts during a stroke. For every minute without treatment, approximately 1.9 million brain cells die. The phrase "time is brain" — similar to "time is muscle" for heart attacks — is the guiding principle. If you see BE FAST signs, call 911 immediately.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: be-fast-stroke.png | An educational illustration showing the BE FAST stroke recognition steps with a simple visual for each letter: Balance, Eyes, Face drooping, Arm weakness, Speech difficulty, Time to call 911 -->
+{{< drg/image src="images/be-fast-stroke.avif" alt="An educational illustration showing the BE FAST stroke recognition steps with a simple visual for each letter: Balance, Eyes, Face drooping, Arm weakness, Speech difficulty, Time to call 911" >}}
 
 {{< drg/video
     title="Spot a Stroke FAST — American Stroke Association"

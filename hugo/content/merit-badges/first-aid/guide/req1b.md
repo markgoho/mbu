@@ -43,7 +43,7 @@ Do not hang up until the dispatcher tells you to. They may give you life-saving 
 Cell phones can call 911 even without an active service plan. Any charged phone will connect to emergency services. Keep an old phone charged at home as a backup.
 {{< /drg/did-you-know >}}
 
-<!-- IMAGE: calling-911.png | A Scout calmly making a phone call while kneeling near an injured person at a park, with a friend providing first aid in the background -->
+{{< drg/image src="images/calling-911.avif" alt="A Scout calmly making a phone call while kneeling near an injured person at a park, with a friend providing first aid in the background" >}}
 
 ## Getting Help in the Wilderness
 
@@ -85,7 +85,7 @@ If an emergency happens and you cannot call for help from your location:
 Never send a single person for help alone in the wilderness. If you must split up, always send at least two people together. The team heading for help faces its own risks — exhaustion, getting lost, or injury.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: wilderness-emergency-signal.png | Two Scouts on a high ridge, one holding up a cell phone trying to get a signal while the other studies a map, with mountains and forest in the background -->
+{{< drg/image src="images/wilderness-emergency-signal.avif" alt="Two Scouts on a high ridge, one holding up a cell phone trying to get a signal while the other studies a map, with mountains and forest in the background" >}}
 
 {{< drg/be-prepared title="No Cell Signal at Camp" >}}
 A Scout at your campsite is showing signs of a severe allergic reaction. You are three miles from the trailhead and there is no cell signal.

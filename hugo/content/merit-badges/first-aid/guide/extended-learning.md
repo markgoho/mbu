@@ -50,7 +50,7 @@ The training covers three key skills: applying direct pressure, packing a wound,
 
 You can take a free Stop the Bleed class in your community, often hosted by hospitals, fire departments, and trauma centers. Better yet, once you are trained, you can help teach others — bringing the skills back to your troop, school, or faith community. Many Scouts have used Stop the Bleed as the foundation for Eagle Scout service projects, installing bleeding control kits in public buildings and training community members to use them.
 
-<!-- IMAGE: extended-learning-certifications.png | A Scout studying a Wilderness First Aid manual at an outdoor training course, with practice mannequins and medical supplies visible in the background -->
+{{< drg/image src="images/extended-learning-certifications.avif" alt="A Scout studying a Wilderness First Aid manual at an outdoor training course, with practice mannequins and medical supplies visible in the background" >}}
 
 ## E. Real-World Experiences
 
