@@ -1,0 +1,121 @@
+{
+  "badge": "citizenship-in-the-nation",
+  "style_context": "American civics, government buildings, founding documents, Scouting America youth learning about U.S. history and government",
+  "images": [
+    {
+      "id": "scout-capitol-overview",
+      "file": "_index.md",
+      "description": "A Scout standing on the National Mall in Washington D.C. looking toward the U.S. Capitol building on a clear day, with the Washington Monument visible in the distance. The Scout is wearing a clean Scouts BSA uniform with a sash. Warm afternoon light. Wide-angle perspective emphasizing the grandeur of the Mall."
+    },
+    {
+      "id": "founding-documents-display",
+      "file": "_index.md",
+      "description": "The Declaration of Independence, Constitution, and Bill of Rights displayed under glass at the National Archives in Washington D.C. Dramatic museum lighting illuminates the aged parchment documents. The rotunda setting conveys reverence and historical importance."
+    },
+    {
+      "id": "diverse-scouts-flag-ceremony",
+      "file": "_index.md",
+      "description": "A diverse group of Scouts in clean Scouts BSA uniforms conducting a flag ceremony outdoors. The American flag is being raised on a flagpole at a Scout camp. The Scouts are standing at attention in a semicircle. Green trees and blue sky in the background. Morning light."
+    },
+    {
+      "id": "constitution-parchment",
+      "file": "req1.md",
+      "description": "A close-up view of the opening lines of the U.S. Constitution with the words 'We the People' prominently visible in elegant handwritten calligraphy. The parchment is aged and displayed under protective glass with soft museum lighting."
+    },
+    {
+      "id": "independence-hall-exterior",
+      "file": "req1.md",
+      "description": "The exterior of Independence Hall in Philadelphia on a sunny day. The iconic red brick building with its white clock tower and steeple stands against a blue sky. Green trees frame the building. Pedestrians walk along the brick sidewalk in front."
+    },
+    {
+      "id": "preamble-calligraphy",
+      "file": "req2.md",
+      "description": "A beautifully rendered calligraphy version of the Preamble to the U.S. Constitution on aged parchment paper. The text is written in an elegant 18th-century hand with decorative flourishes. Warm candlelight illumination gives the scene a historical atmosphere."
+    },
+    {
+      "id": "scout-reading-constitution",
+      "file": "req2.md",
+      "description": "A Scout sitting at a library table with a copy of the Constitution open in front of them, taking notes in a notebook with a pencil. Bookshelves are visible in the background. The Scout is wearing a clean Scouts BSA uniform shirt. Natural light from a nearby window."
+    },
+    {
+      "id": "three-branches-overview",
+      "file": "req3.md",
+      "description": "An illustrated educational diagram showing the three branches of government. The U.S. Capitol building represents the Legislative branch, the White House represents the Executive branch, and the Supreme Court building represents the Judicial branch. Arrows connect the three buildings showing checks and balances. Clean, colorful, infographic style."
+    },
+    {
+      "id": "capitol-building-steps",
+      "file": "req3.md",
+      "description": "The U.S. Capitol building viewed from the front steps, with visitors walking up the wide marble staircase on a bright sunny day. The iconic white dome dominates the frame against a blue sky. American flags are visible on the building."
+    },
+    {
+      "id": "declaration-signing-scene",
+      "file": "req4a.md",
+      "description": "A historical painting-style illustration of delegates in colonial attire gathered in Independence Hall in 1776 to sign the Declaration of Independence. Thomas Jefferson stands presenting the document to the assembled Congress. The room features tall windows and wooden furniture. Warm golden light fills the chamber."
+    },
+    {
+      "id": "bill-of-rights-document",
+      "file": "req4b.md",
+      "description": "The Bill of Rights document displayed in a museum case with dramatic lighting, showing the handwritten text of the first ten amendments. The aged parchment is carefully preserved under glass. The display case has a dark background that makes the document stand out."
+    },
+    {
+      "id": "supreme-court-facade",
+      "file": "req4b.md",
+      "description": "The front facade of the United States Supreme Court building with its iconic Corinthian columns and the inscription 'Equal Justice Under Law' carved above the entrance. The white marble building gleams in bright daylight against a blue sky."
+    },
+    {
+      "id": "great-seal-close-up",
+      "file": "req4c.md",
+      "description": "A detailed close-up of the Great Seal of the United States showing the bald eagle holding a ribbon with the motto E Pluribus Unum in its beak. The eagle holds an olive branch in one talon and a bundle of arrows in the other. A shield with red, white, and blue stripes covers the eagle's chest. Gold and rich colors."
+    },
+    {
+      "id": "currency-motto-collage",
+      "file": "req4c.md",
+      "description": "A collection of U.S. coins and a dollar bill arranged on a dark surface to show the E Pluribus Unum motto visible on each piece of currency. Quarters, dimes, and half-dollars are spread out alongside a crisp one-dollar bill. Macro photography style with sharp detail."
+    },
+    {
+      "id": "scout-reading-news",
+      "file": "req5.md",
+      "description": "A Scout sitting at a desk with a tablet showing a news website, taking notes in a spiral notebook with a pencil. The Scout is wearing a clean Scouts BSA uniform shirt. The setting is a home study area with warm lighting. A glass of water sits on the desk."
+    },
+    {
+      "id": "news-sources-collage",
+      "file": "req5.md",
+      "description": "A collage showing different ways to consume news — a newspaper, a TV screen showing a news broadcast, and a smartphone displaying a news app — arranged on a coffee table in a living room. Morning light streams through a window. The scene feels modern and accessible."
+    },
+    {
+      "id": "historic-speech-podium",
+      "file": "req6.md",
+      "description": "A podium with an American flag and the presidential seal in a grand government setting, evoking the gravitas of a nationally important speech. The podium stands in a formal room with dark wood paneling and dramatic lighting. No specific person is at the podium."
+    },
+    {
+      "id": "scout-listening-speech",
+      "file": "req6.md",
+      "description": "A Scout wearing headphones at a computer desk, listening to a historic speech recording. A notebook is open beside the keyboard with handwritten notes. The Scout is wearing a clean Scouts BSA uniform shirt. The computer screen shows an audio player interface. Warm desk lamp lighting."
+    },
+    {
+      "id": "state-capitol-tour",
+      "file": "req7.md",
+      "description": "A group of Scouts in clean Scouts BSA uniforms walking through the rotunda of a state capitol building. They are looking up at the ornate dome ceiling with expressions of wonder. A tour guide gestures toward the architecture and murals. Marble floors and columns surround them. Natural light from the dome above."
+    },
+    {
+      "id": "national-monuments-collage",
+      "file": "req7.md",
+      "description": "A scenic collage featuring three iconic national monuments: the Lincoln Memorial with its columned facade, the Statue of Liberty standing tall against a blue sky, and Mount Rushmore with the four presidential faces carved in granite. Blue sky background unifies the images."
+    },
+    {
+      "id": "scout-writing-letter",
+      "file": "req8.md",
+      "description": "A Scout sitting at a kitchen table writing a letter by hand on lined paper. An envelope addressed to a member of Congress sits nearby along with a printed page showing the representative's contact information. The Scout is wearing a clean Scouts BSA uniform shirt. Warm kitchen lighting with a window in the background."
+    },
+    {
+      "id": "congress-mail-room",
+      "file": "req8.md",
+      "description": "An overhead view of a large wooden desk in a congressional office with neatly stacked letters and correspondence. An American flag pin sits on the desk near a pen. A framed photograph of the U.S. Capitol building hangs on the wall behind the desk. Professional office lighting."
+    },
+    {
+      "id": "voting-booth-american-flag",
+      "file": "extended-learning.md",
+      "description": "A voting booth with a privacy curtain in a community center gymnasium. An American flag is displayed on the wall behind the booth. Vote signs are posted on the walls. The scene is well-lit with fluorescent lighting typical of a polling place. Red, white, and blue decorations add a patriotic atmosphere."
+    }
+  ]
+}
