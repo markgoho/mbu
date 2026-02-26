@@ -37,7 +37,7 @@ A helmet only works if it fits correctly. An improperly fitted helmet can shift 
 Replace your helmet after any crash — even if it looks fine. The foam liner may have cracked internally and will no longer protect you in a second impact. Also replace helmets that are more than five years old, as the materials break down over time.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/helmet-fit-check.png" alt="Close-up of a Scout demonstrating the 2-V-1 helmet fitting method, showing proper strap positioning" >}}
+{{< drg/image src="images/helmet-fit-check.avif" alt="Close-up of a Scout demonstrating the 2-V-1 helmet fitting method, showing proper strap positioning" >}}
 
 ### Cycling Clothing
 
@@ -105,7 +105,7 @@ Scouting America has specific safety guidelines for all cycling activities. Your
 The CPSC (Consumer Product Safety Commission) sticker inside your helmet means it has passed federal safety testing. Every helmet sold in the United States is required to meet CPSC standards. If your helmet doesn't have this sticker, it may not protect you properly.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/cyclist-gear-layout.png" alt="Flat-lay photo of essential cycling gear: helmet, gloves, water bottle, multi-tool, spare tube, pump, and reflective vest arranged neatly" >}}
+{{< drg/image src="images/cyclist-gear-layout.avif" alt="Flat-lay photo of essential cycling gear: helmet, gloves, water bottle, multi-tool, spare tube, pump, and reflective vest arranged neatly" >}}
 
 ### Weather-Specific Gear
 

@@ -15,7 +15,7 @@ Develop your own ethical guidelines for the use of AI.
 
 You have studied AI bias, privacy, and decision-making. You have wrestled with tough "What Would You Do?" scenarios. Now comes the creative part: writing your own set of rules for how AI should — and should not — be used. Think of this as your personal "AI Code of Ethics."
 
-{{< drg/image src="images/scout-writing-guidelines.png" alt="A Scout writing in a journal at a desk, focused and deliberate. A printed list or poster about AI ethics is visible on the wall behind them." >}}
+{{< drg/image src="images/scout-writing-guidelines.avif" alt="A Scout writing in a journal at a desk, focused and deliberate. A printed list or poster about AI ethics is visible on the wall behind them." >}}
 
 ---
 

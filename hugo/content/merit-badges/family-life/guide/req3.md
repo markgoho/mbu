@@ -63,7 +63,7 @@ The requirement says "at least five." Choose chores that are real, regular tasks
 Pick chores from different categories so your 90-day experience is well-rounded. If all five chores are kitchen tasks, you'll miss the chance to show you can contribute in multiple ways. Talk to your parent or guardian about which chores would be most helpful.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-doing-chores.png" alt="A Scout vacuuming a living room floor with a cheerful expression, with a checklist on the wall in the background" >}}
+{{< drg/image src="images/scout-doing-chores.avif" alt="A Scout vacuuming a living room floor with a cheerful expression, with a checklist on the wall in the background" >}}
 
 ### Tracking Your Chores for 90 Days
 
@@ -120,7 +120,7 @@ Life happens. Sports seasons, school exams, family trips — there will be times
 
 {{< drg/external-link title="Create a Household Chore Checklist in Word (video)" url="https://www.youtube.com/watch?v=XmA6tCO_3MM" description="A tutorial for creating your own digital chore tracking checklist." >}}
 
-{{< drg/image src="images/chore-tracking-calendar.png" alt="A close-up of a colorful wall calendar with checkmarks and stickers tracking completed chores over several weeks" >}}
+{{< drg/image src="images/chore-tracking-calendar.avif" alt="A close-up of a colorful wall calendar with checkmarks and stickers tracking completed chores over several weeks" >}}
 
 {{< drg/next-page
     text="With your chore routine underway"

@@ -65,7 +65,7 @@ For each meal, write down:
 - Which cooking method(s) you will use
 - Any food safety considerations (especially for raw meats, eggs, and dairy)
 
-{{< drg/image src="images/menu-planning-table.png" alt="A Scout sitting at a kitchen table with a notebook, the MyPlate guide open on a tablet, and a pencil, planning a three-day menu" >}}
+{{< drg/image src="images/menu-planning-table.avif" alt="A Scout sitting at a kitchen table with a notebook, the MyPlate guide open on a tablet, and a pencil, planning a three-day menu" >}}
 
 ### Equipment and Utensils List
 

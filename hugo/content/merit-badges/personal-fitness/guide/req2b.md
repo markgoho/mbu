@@ -37,7 +37,7 @@ Prevention is always better (and cheaper) than repair. Your dentist has several 
 - **Custom mouthguards:** If you play sports, your dentist can create a custom-fitted mouthguard that protects your teeth far better than a store-bought one. A knocked-out tooth is a dental emergency that is entirely preventable.
 - **Orthodontic referrals:** If your teeth are crowded or misaligned, your dentist may refer you to an orthodontist for braces or other treatments.
 
-{{< drg/image src="images/dental-checkup-tools.png" alt="A close-up of dental tools arranged on a clean tray next to a dental chair, with a friendly dentist visible in the background" >}}
+{{< drg/image src="images/dental-checkup-tools.avif" alt="A close-up of dental tools arranged on a clean tray next to a dental chair, with a friendly dentist visible in the background" >}}
 
 ### Corrective Treatments
 

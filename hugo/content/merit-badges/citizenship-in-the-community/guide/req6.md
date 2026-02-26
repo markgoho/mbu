@@ -69,7 +69,7 @@ These are the systems that keep your community physically functioning.
 - **Animal Control** — Stray animal management and public safety
 - **Social Services** — Programs that assist residents in need
 
-{{< drg/image src="images/community-services-collage.png" alt="A split-scene illustration showing four taxpayer-funded services in action: a fire truck responding, a librarian helping a young patron, a bus at a stop, and a park ranger maintaining a trail" >}}
+{{< drg/image src="images/community-services-collage.avif" alt="A split-scene illustration showing four taxpayer-funded services in action: a fire truck responding, a librarian helping a young patron, a bus at a stop, and a park ranger maintaining a trail" >}}
 
 ## Where Does the Money Come From?
 
@@ -121,7 +121,7 @@ Imagine your community had to eliminate one major service due to budget cuts. Th
     url="https://www.usa.gov/state-local-government"
     description="Learn about the services state and local governments provide, how they are funded, and how to get involved." >}}
 
-{{< drg/image src="images/scout-exploring-services.png" alt="A Scout walking through their town past a library, fire station, and public park, looking around with curiosity and a notebook in hand" >}}
+{{< drg/image src="images/scout-exploring-services.avif" alt="A Scout walking through their town past a library, fire station, and public park, looking around with curiosity and a notebook in hand" >}}
 
 ---
 

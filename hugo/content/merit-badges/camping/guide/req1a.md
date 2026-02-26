@@ -68,7 +68,7 @@ Even experienced campers can lose their way, especially in dense forest, fog, or
 - **P**lan your next move. If unsure, stay put and signal for help with a whistle (three blasts is the universal distress signal).
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/campsite-safety-overview.png" alt="A well-organized campsite showing proper food storage hung from a tree, a contained campfire with water bucket nearby, and tents on level ground" >}}
+{{< drg/image src="images/campsite-safety-overview.avif" alt="A well-organized campsite showing proper food storage hung from a tree, a contained campfire with water bucket nearby, and tents on level ground" >}}
 
 #### Waterborne Hazards
 
@@ -104,7 +104,7 @@ Before every campout, sit down with your patrol or family and create a simple sa
 
 {{< drg/external-link title="What to Do in a Bear Encounter" url="https://youtu.be/SHZ-prhA7E0?si=UqjZF_MLMMOLPlRo" description="A helpful video explaining bear behavior and the correct way to respond to different types of bear encounters." >}}
 
-{{< drg/image src="images/scout-checking-map-safety.png" alt="A Scout reviewing a topographic map with a first-aid kit and safety gear spread out on a camp table" >}}
+{{< drg/image src="images/scout-checking-map-safety.avif" alt="A Scout reviewing a topographic map with a first-aid kit and safety gear spread out on a camp table" >}}
 
 {{< drg/next-page
     text="Now that you understand the major hazards of camping"

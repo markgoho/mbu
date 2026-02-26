@@ -36,7 +36,7 @@ BMI was invented in the 1830s by a Belgian mathematician. It was designed as a p
 
 Your healthcare provider uses BMI along with other factors — your medical history, physical exam, diet, activity level, and family history — to determine if your weight is healthy for you.
 
-{{< drg/image src="images/growth-chart-example.png" alt="A simplified, friendly illustration of a BMI-for-age growth chart with a highlighted healthy range zone" >}}
+{{< drg/image src="images/growth-chart-example.avif" alt="A simplified, friendly illustration of a BMI-for-age growth chart with a highlighted healthy range zone" >}}
 
 ### Maintaining a Healthy Weight
 

@@ -48,7 +48,7 @@ If you genuinely feel that no one in your community fits this description, you m
 Ask your parents, teachers, or Scoutmaster for suggestions. Adults in your life often know people in the community whose work you might not be aware of. You might be surprised by who they recommend.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-interviewing-leader.png" alt="A Scout sitting across from a community leader, notebook in hand, conducting an interview in a community center or office" >}}
+{{< drg/image src="images/scout-interviewing-leader.avif" alt="A Scout sitting across from a community leader, notebook in hand, conducting an interview in a community center or office" >}}
 
 ### Preparing for the Interview
 

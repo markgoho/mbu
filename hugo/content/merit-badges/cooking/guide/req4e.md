@@ -49,7 +49,7 @@ An adult who is present during your cooking needs to verify your work to your co
 
 Ask the adult to sign or write a brief note confirming what they observed. Your counselor will appreciate this documentation.
 
-{{< drg/image src="images/timing-in-action.png" alt="A Scout checking a kitchen timer while simultaneously stirring a pot on the stove, with a written timing plan posted on the refrigerator door behind them" >}}
+{{< drg/image src="images/timing-in-action.avif" alt="A Scout checking a kitchen timer while simultaneously stirring a pot on the stove, with a written timing plan posted on the refrigerator door behind them" >}}
 
 ### Reflecting on Your Timing
 

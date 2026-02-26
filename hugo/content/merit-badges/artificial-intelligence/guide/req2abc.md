@@ -25,7 +25,7 @@ AI is not something that exists only in research labs or science fiction movies.
 
 The goal here is not to hand you a list to memorize. It is to help you develop "AI awareness" — the ability to recognize when technology is using artificial intelligence behind the scenes. Once you start looking, you will find AI everywhere.
 
-{{< drg/image src="images/smartphone-ai-apps.png" alt="A Scout's hands holding a smartphone showing a navigation map app, with other everyday AI-powered devices visible in the background — a smart speaker, a laptop with a recommendation screen." >}}
+{{< drg/image src="images/smartphone-ai-apps.avif" alt="A Scout's hands holding a smartphone showing a navigation map app, with other everyday AI-powered devices visible in the background — a smart speaker, a laptop with a recommendation screen." >}}
 
 ---
 
@@ -111,7 +111,7 @@ Farmers use AI-equipped drones to survey crops, detect diseases, and determine e
 AI-powered fraud detection systems analyze billions of credit card transactions every day. They can spot suspicious activity in milliseconds — far faster than any human team could manage.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/ai-classroom-learning.png" alt="A Scout at a school desk using a tablet that shows an AI tutoring interface, with a teacher visible in the background. Bright, modern classroom setting." >}}
+{{< drg/image src="images/ai-classroom-learning.avif" alt="A Scout at a school desk using a tablet that shows an AI tutoring interface, with a teacher visible in the background. Bright, modern classroom setting." >}}
 
 ---
 

@@ -71,7 +71,7 @@ Norway's long coastline gives it access to rich fishing grounds and offshore oil
 Pick a country you would actually like to visit or learn more about. If you already know someone from another country — a friend, a neighbor, an exchange student — consider researching their home nation. It will make your counselor discussion more personal and engaging.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/geography-economy-map.png" alt="An illustrated map showing a country's key geographic features with labels showing how each feature connects to the economy" >}}
+{{< drg/image src="images/geography-economy-map.avif" alt="An illustrated map showing a country's key geographic features with labels showing how each feature connects to the economy" >}}
 
 {{< drg/external-link
     title="CIA World Factbook — Country Profiles"
@@ -83,7 +83,7 @@ Pick a country you would actually like to visit or learn more about. If you alre
     url="https://www.nationalgeographic.com/geography/countries/"
     description="Engaging country profiles with maps, photos, and cultural information that bring geography to life." >}}
 
-{{< drg/image src="images/scout-researching-country.png" alt="A Scout at a library table with an atlas open to a world map, surrounded by books and a laptop showing country data" >}}
+{{< drg/image src="images/scout-researching-country.avif" alt="A Scout at a library table with an atlas open to a world map, surrounded by books and a laptop showing country data" >}}
 
 ---
 

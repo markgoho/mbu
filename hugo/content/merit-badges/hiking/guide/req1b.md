@@ -17,7 +17,7 @@ Show that you know first aid for injuries or illnesses that could occur while hi
 First aid knowledge is one of the most important skills a hiker can possess. However, reading this guide is not a substitute for hands-on training. To truly "Be Prepared," you should take a formal first aid course through the Red Cross, Scouts America, or a similar organization. Always hike with a buddy and ensure someone knows your itinerary before you head out.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/first-aid-kit-trail.png" alt="An open first-aid kit on a rock with bandages, moleskin, and antiseptic wipes visible" >}}
+{{< drg/image src="images/first-aid-kit-trail.avif" alt="An open first-aid kit on a rock with bandages, moleskin, and antiseptic wipes visible" >}}
 
 When you are miles away from the nearest trailhead, you are the first responder. Whether it is a small blister or a serious heat-related illness, knowing how to recognize symptoms and provide immediate care can make the difference between a successful hike and a dangerous emergency.
 
@@ -41,7 +41,7 @@ Frostbite is the actual freezing of body tissue, usually affecting fingers, toes
 - **Signs and Symptoms:** The skin may look waxy, white, or grayish-yellow. It will feel very cold and numb. In severe cases, the skin may feel hard to the touch.
 - **First Aid:** Move the person to a warm area. Do **not** rub the affected area, as this can damage the frozen tissue. Gently warm the area using skin-to-skin contact (like putting cold fingers in an armpit). If there is a risk of the area refreezing, do not attempt to thaw it until you reach medical help.
 
-{{< drg/image src="images/emergency-blanket-buddy.png" alt="A Scout wrapped in an emergency blanket being helped by a buddy on a cold misty trail" >}}
+{{< drg/image src="images/emergency-blanket-buddy.avif" alt="A Scout wrapped in an emergency blanket being helped by a buddy on a cold misty trail" >}}
 
 {{< drg/did-you-know >}}
 You can get hypothermia even when the temperature is 50°F (10°C) if you are wet and the wind is blowing. Water conducts heat away from the body 25 times faster than air!
@@ -120,7 +120,7 @@ A sprain is an injury to the ligaments (the tissues that connect bones) caused b
   - **C**ompression: Wrap the ankle firmly with an elastic bandage.
   - **E**levation: Keep the ankle raised above the level of the heart.
 
-{{< drg/image src="images/ankle-wrap-rice.png" alt="Close-up of a properly wrapped ankle with an elastic bandage demonstrating the compression step of RICE" >}}
+{{< drg/image src="images/ankle-wrap-rice.avif" alt="Close-up of a properly wrapped ankle with an elastic bandage demonstrating the compression step of RICE" >}}
 
 ### Blisters
 

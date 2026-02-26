@@ -77,7 +77,7 @@ Once you have chosen your issue, figure out which part of your local government 
 
 If you are not sure, call your city hall or visit your community's website. Most government websites have a directory of departments and their responsibilities.
 
-{{< drg/image src="images/scout-researching-issue.png" alt="A Scout reviewing a local newspaper and taking notes about a community issue, with a city hall visible through a window in the background" >}}
+{{< drg/image src="images/scout-researching-issue.avif" alt="A Scout reviewing a local newspaper and taking notes about a community issue, with a city hall visible through a window in the background" >}}
 
 ## Conducting Your Interview (Req 4b)
 
@@ -144,7 +144,7 @@ When you meet with your counselor, be prepared to share:
     url="https://www.icivics.org/"
     description="Free games and resources that teach young people how civic engagement works at the local, state, and national level." >}}
 
-{{< drg/image src="images/scout-interview.png" alt="A Scout in clean uniform sitting across a desk from a friendly government official in an office, with the Scout taking notes and both smiling" >}}
+{{< drg/image src="images/scout-interview.avif" alt="A Scout in clean uniform sitting across a desk from a friendly government official in an office, with the Scout taking notes and both smiling" >}}
 
 ---
 

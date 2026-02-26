@@ -73,7 +73,7 @@ Microwaving uses electromagnetic waves to vibrate water molecules inside food, g
 - **Temperature control:** Adjust power level (most microwaves have settings from 1–10) and cooking time. Stirring or rotating food halfway through helps ensure even heating.
 - **Example foods:** Popcorn, steamed vegetables, reheated leftovers, baked potatoes, scrambled eggs
 
-{{< drg/image src="images/cooking-methods-grid.png" alt="A grid showing six different cooking methods in action: a pot of boiling pasta, a skillet with pan-fried eggs, an oven with baking bread, a grill with vegetables, a Dutch oven over coals, and foil packets on a campfire grate" >}}
+{{< drg/image src="images/cooking-methods-grid.avif" alt="A grid showing six different cooking methods in action: a pot of boiling pasta, a skillet with pan-fried eggs, an oven with baking bread, a grill with vegetables, a Dutch oven over coals, and foil packets on a campfire grate" >}}
 
 #### 7. Air Frying
 

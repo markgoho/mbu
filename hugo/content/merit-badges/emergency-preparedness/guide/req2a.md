@@ -28,7 +28,7 @@ Everyone in your household needs to be part of the plan. A plan that only one pe
 
 **Who should be there:** Everyone who lives in your home — parents, siblings, grandparents, and anyone else. Even young children can learn simple actions like "go to the safe spot" or "stay with an adult."
 
-{{< drg/image src="images/family-meeting.png" alt="A family gathered around a kitchen table discussing emergency plans with papers and a map spread out" >}}
+{{< drg/image src="images/family-meeting.avif" alt="A family gathered around a kitchen table discussing emergency plans with papers and a map spread out" >}}
 
 ---
 
@@ -96,6 +96,6 @@ When you meet with your counselor, be ready to explain:
 - How your family decided which emergencies to prioritize
 - What challenges or surprises came up during the discussion
 
-{{< drg/image src="images/evacuation-route-map.png" alt="A hand-drawn neighborhood map showing two evacuation routes and a meeting point marked with a star" >}}
+{{< drg/image src="images/evacuation-route-map.avif" alt="A hand-drawn neighborhood map showing two evacuation routes and a meeting point marked with a star" >}}
 
 {{< drg/next-page text="You have created emergency plans with your family for sheltering in place and evacuation." teaser="Now design a home fire escape plan with floor plan, escape routes, and a safe meeting place." url="/merit-badges/emergency-preparedness/guide/req2b/" >}}

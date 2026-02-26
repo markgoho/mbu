@@ -15,7 +15,7 @@ Research ethical concerns and responsible use in AI, including bias, privacy, an
 
 Up to this point, we have explored what AI is, where it shows up, and how it works. Now comes arguably the most important topic of the entire merit badge: **ethics**. Technology is a tool, and like any tool, it can be used well or used poorly. Understanding the ethical challenges of AI is what separates someone who just uses technology from someone who uses it responsibly.
 
-{{< drg/image src="images/scales-of-justice-ai.png" alt="A thoughtful Scout sitting at a desk with a laptop open, chin resting on hand, looking contemplative. On the screen is a news article about AI. Warm study lamp lighting." >}}
+{{< drg/image src="images/scales-of-justice-ai.avif" alt="A thoughtful Scout sitting at a desk with a laptop open, chin resting on hand, looking contemplative. On the screen is a news article about AI. Warm study lamp lighting." >}}
 
 ---
 

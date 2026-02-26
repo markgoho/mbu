@@ -71,7 +71,7 @@ Liquid fuel stoves burn white gas (naphtha), unleaded gasoline, kerosene, or oth
 
 {{< drg/video title="How to Use a Liquid Fuel Stove" url="https://youtu.be/2XRqdVIqimY?si=Wj7JsttaHkIADW9a" >}}
 
-{{< drg/image src="images/camp-stove-safety-setup.png" alt="A camp stove set up on bare ground with a clear area around it, a pot of water heating on top, and the tent visible at a safe distance in the background" >}}
+{{< drg/image src="images/camp-stove-safety-setup.avif" alt="A camp stove set up on bare ground with a clear area around it, a pot of water heating on top, and the tent visible at a safe distance in the background" >}}
 
 ### Proper Storage of Extra Fuel
 
@@ -93,7 +93,7 @@ Fuel should be stored away from heat sources, direct sunlight, and sleeping area
 Label your fuel bottles clearly. White gas looks a lot like water, and you do not want anyone drinking from the wrong bottle. Use brightly colored tape and a permanent marker to label fuel containers. Keep them separate from your water supply.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/fuel-storage-labeled.png" alt="A labeled fuel bottle and a propane canister stored upright in a shaded area at camp, clearly separated from food and water supplies" >}}
+{{< drg/image src="images/fuel-storage-labeled.avif" alt="A labeled fuel bottle and a propane canister stored upright in a shaded area at camp, clearly separated from food and water supplies" >}}
 
 {{< drg/next-page
     text="You know the safety rules for camp stoves and fuel storage."

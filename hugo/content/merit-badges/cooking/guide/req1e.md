@@ -68,7 +68,7 @@ Allergens do not always go by their common names. Here are some tricky ones to w
 "May contain" warnings (like "manufactured in a facility that also processes peanuts") are voluntary — companies are not legally required to include them. If you are cooking for someone with a severe allergy, contact the manufacturer directly if you are unsure about cross-contact risk.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/reading-food-label.png" alt="A Scout holding a food package and examining the Nutrition Facts label and ingredients list closely, with a magnifying glass highlighting the \"Contains\" allergen statement" >}}
+{{< drg/image src="images/reading-food-label.avif" alt="A Scout holding a food package and examining the Nutrition Facts label and ingredients list closely, with a magnifying glass highlighting the \"Contains\" allergen statement" >}}
 
 ### Putting Label Reading Into Practice
 
@@ -99,7 +99,7 @@ At camp, label reading becomes even more important because you are cooking for a
     title="10 Rules for Reading a Food Label"
     url="https://youtu.be/R-o-83k8dP0?si=67Y3d8V1j407TPAn" >}}
 
-{{< drg/image src="images/camp-label-check.png" alt="Scouts at a camp kitchen table checking food packages and marking allergens with a permanent marker, with a posted allergy list visible on a clipboard" >}}
+{{< drg/image src="images/camp-label-check.avif" alt="Scouts at a camp kitchen table checking food packages and marking allergens with a permanent marker, with a posted allergy list visible on a clipboard" >}}
 
 {{< drg/next-page
     text="You can now read food labels and identify hidden allergens."

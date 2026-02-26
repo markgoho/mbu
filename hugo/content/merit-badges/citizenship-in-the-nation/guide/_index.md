@@ -82,7 +82,7 @@ Today, the Constitution is not a dusty museum piece. It is a working document th
 
 **Get Ready!** You are about to explore the ideas and documents that hold an entire nation together. Along the way, you will discover that citizenship is not something you just have — it is something you do.
 
-{{< drg/image src="images/scout-capitol-overview.png" alt="A Scout standing on the National Mall in Washington D.C. looking toward the U.S. Capitol building on a clear day, with the Washington Monument visible in the distance" >}}
+{{< drg/image src="images/scout-capitol-overview.avif" alt="A Scout standing on the National Mall in Washington D.C. looking toward the U.S. Capitol building on a clear day, with the Washington Monument visible in the distance" >}}
 
 ---
 
@@ -114,7 +114,7 @@ You do not have to wait until you are 18 to be an active citizen. Writing a lett
 
 Constitutional citizens understand and defend the principles that the nation was built on. They know their rights, they respect the rights of others, and they stand up when those rights are threatened. This kind of citizenship requires knowledge — which is exactly what this merit badge will give you.
 
-{{< drg/image src="images/founding-documents-display.png" alt="The Declaration of Independence, Constitution, and Bill of Rights displayed under glass at the National Archives in Washington D.C." >}}
+{{< drg/image src="images/founding-documents-display.avif" alt="The Declaration of Independence, Constitution, and Bill of Rights displayed under glass at the National Archives in Washington D.C." >}}
 
 ### Cultural Citizenship
 
@@ -124,7 +124,7 @@ Cultural citizens take pride in the shared symbols, traditions, and stories that
 When discussing national issues, remember that people you respect may hold very different opinions. A good citizen listens carefully, thinks critically, and treats others with respect — even during disagreements. Civil discourse is a skill, and it takes practice.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/diverse-scouts-flag-ceremony.png" alt="A diverse group of Scouts in clean uniforms conducting a flag ceremony outdoors, with the American flag being raised on a flagpole at a Scout camp" >}}
+{{< drg/image src="images/diverse-scouts-flag-ceremony.avif" alt="A diverse group of Scouts in clean uniforms conducting a flag ceremony outdoors, with the American flag being raised on a flagpole at a Scout camp" >}}
 
 ---
 

@@ -46,7 +46,7 @@ AI is not just for tech companies — it is accelerating scientific discovery in
 
 The best way to deepen your understanding of AI is to experiment with it. These free tools let you explore different aspects of AI hands-on:
 
-{{< drg/image src="images/quick-draw-game.png" alt="A Scout drawing quickly on a tablet or touchscreen, laughing, while a friend watches — playing an AI drawing game. Casual, fun atmosphere." >}}
+{{< drg/image src="images/quick-draw-game.avif" alt="A Scout drawing quickly on a tablet or touchscreen, laughing, while a friend watches — playing an AI drawing game. Casual, fun atmosphere." >}}
 
 {{< drg/experience-card title="Google Teachable Machine" details="Platform: Browser | Cost: Free | Train image, sound, or pose recognition models using your webcam — no coding required" >}}
 
@@ -70,7 +70,7 @@ The best way to deepen your understanding of AI is to experiment with it. These 
 
 Ready to test your skills against other students? These competitions are designed for middle and high school students:
 
-{{< drg/image src="images/scouts-coding-together.png" alt="Two Scouts working together on a coding project at a computer, one pointing at the screen while the other types. A visual programming interface (like Scratch or similar) is visible." >}}
+{{< drg/image src="images/scouts-coding-together.avif" alt="Two Scouts working together on a coding project at a computer, one pointing at the screen while the other types. A visual programming interface (like Scratch or similar) is visible." >}}
 
 {{< drg/experience-card title="Technovation Girls" details="Ages: 10-18 | A global technology entrepreneurship competition where girls and non-binary students identify a problem in their community and build a mobile app (often using AI) to solve it" >}}
 

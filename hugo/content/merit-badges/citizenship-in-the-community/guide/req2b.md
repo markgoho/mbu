@@ -71,7 +71,7 @@ If you choose to chart your state government instead, the structure generally mi
 - **State Supreme Court Justices** — Elected or appointed, varies by state.
 - **Lower court judges** — Elected or appointed, varies by state.
 
-{{< drg/image src="images/government-org-chart.png" alt="A clean, colorful organizational chart showing the structure of a typical city government with the mayor at the top, city council beside them, and department heads below" >}}
+{{< drg/image src="images/government-org-chart.avif" alt="A clean, colorful organizational chart showing the structure of a typical city government with the mayor at the top, city council beside them, and department heads below" >}}
 
 ## How to Create Your Chart
 
@@ -104,7 +104,7 @@ Use a simple organizational chart (org chart) format. Put the top leader at the 
     url="https://www.nlc.org/resource/forms-of-municipal-government/"
     description="Learn about the different ways cities and towns organize their governments across the United States." >}}
 
-{{< drg/image src="images/scout-researching-government.png" alt="A Scout at a library computer researching their local government website, with notes and a hand-drawn org chart on the desk beside them" >}}
+{{< drg/image src="images/scout-researching-government.avif" alt="A Scout at a library computer researching their local government website, with notes and a hand-drawn org chart on the desk beside them" >}}
 
 ---
 

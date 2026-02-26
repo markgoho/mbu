@@ -243,7 +243,7 @@ The word "etiquette" comes from the French word for "ticket." At the court of Ki
 
 {{< drg/external-link title="Evolving Technology: Will Family Life Ever Be the Same Again? (video)" url="https://www.youtube.com/watch?v=sFc_q9-KD8c" description="A thought-provoking look at how technology is changing family dynamics." >}}
 
-{{< drg/image src="images/family-meeting-discussion.png" alt="A family sitting in a living room with notebooks, engaged in a serious but comfortable discussion, with devices set aside on a nearby table" >}}
+{{< drg/image src="images/family-meeting-discussion.avif" alt="A family sitting in a living room with notebooks, engaged in a serious but comfortable discussion, with devices set aside on a nearby table" >}}
 
 {{< drg/next-page
     text="You've explored important family topics through structured meetings."

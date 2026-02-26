@@ -17,7 +17,7 @@ This is one of the most fun parts of the merit badge — and also one of the mos
 
 This distinction matters because the term "AI" gets thrown around a lot in marketing. Companies love to slap "AI-powered" on their products, but not everything labeled AI actually uses machine learning or intelligent decision-making. Developing a keen eye for what is and is not AI is a critical thinking skill that will serve you well.
 
-{{< drg/image src="images/scouts-ai-game.png" alt="Two Scouts and a counselor sitting at a table playing a card-based game, with scenario cards spread out. They are laughing and discussing — friendly, engaging atmosphere." >}}
+{{< drg/image src="images/scouts-ai-game.avif" alt="Two Scouts and a counselor sitting at a table playing a card-based game, with scenario cards spread out. They are laughing and discussing — friendly, engaging atmosphere." >}}
 
 ---
 

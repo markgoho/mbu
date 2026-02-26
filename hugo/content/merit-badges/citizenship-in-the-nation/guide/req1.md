@@ -44,7 +44,7 @@ The Constitution reflects several core principles that the founders believed wer
 
 **Federalism** — Power is shared between the national government and the state governments. Some things — like national defense and foreign policy — are handled by the federal government. Others — like education and local law enforcement — are primarily managed by the states.
 
-{{< drg/image src="images/constitution-parchment.png" alt="A close-up view of the opening lines of the U.S. Constitution with We the People prominently visible, displayed under protective glass" >}}
+{{< drg/image src="images/constitution-parchment.avif" alt="A close-up view of the opening lines of the U.S. Constitution with We the People prominently visible, displayed under protective glass" >}}
 
 {{< drg/tip >}}
 A great way to remember the principles of the Constitution is to think of the acronym **PLSCF**: Popular sovereignty, Limited government, Separation of powers, Checks and balances, Federalism. Try making up your own mnemonic to remember them!
@@ -77,7 +77,7 @@ You might hear people argue that a document written over 230 years ago cannot po
     url="https://www.archives.gov/founding-docs/constitution"
     description="See the original document, learn its history, and explore the stories behind its creation." >}}
 
-{{< drg/image src="images/independence-hall-exterior.png" alt="The exterior of Independence Hall in Philadelphia on a sunny day, where the Constitution was written and signed in 1787" >}}
+{{< drg/image src="images/independence-hall-exterior.avif" alt="The exterior of Independence Hall in Philadelphia on a sunny day, where the Constitution was written and signed in 1787" >}}
 
 {{< drg/next-page
     text="Now that you understand what the Constitution is and why it matters"

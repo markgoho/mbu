@@ -68,7 +68,7 @@ A pan of oil catches fire while you are frying. What do you do?
 - **Step 5:** If the fire spreads beyond the pan, evacuate everyone and call 911.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/kitchen-safety-scan.png" alt="A Scout doing a safety check in a kitchen, pointing to a fire extinguisher on the wall, with a first-aid kit on the counter" >}}
+{{< drg/image src="images/kitchen-safety-scan.avif" alt="A Scout doing a safety check in a kitchen, pointing to a fire extinguisher on the wall, with a first-aid kit on the counter" >}}
 
 **Slips and Falls**
 
@@ -101,7 +101,7 @@ When you move from the kitchen to the campsite, you add a new set of hazards: un
     url="https://www.fda.gov/food/buy-store-serve-safe-food/safe-food-handling"
     description="The FDA's guide to safe food handling at home, covering everything from purchasing to storage to preparation." >}}
 
-{{< drg/image src="images/outdoor-cooking-hazards.png" alt="A campsite cooking area with a camp stove on a stable surface, fire extinguisher nearby, and a Scout washing hands at a portable hand-washing station" >}}
+{{< drg/image src="images/outdoor-cooking-hazards.avif" alt="A campsite cooking area with a camp stove on a stable surface, fire extinguisher nearby, and a Scout washing hands at a portable hand-washing station" >}}
 
 ### Putting It All Together
 

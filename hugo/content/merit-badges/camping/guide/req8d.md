@@ -50,7 +50,7 @@ Great trail meal options:
 Trail meals should follow the "boil water, add food" model. The less cooking you have to do on the trail, the faster you eat and get moving again. Pre-package ingredients at home so you can just boil water and add the mix.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/trail-meal-stove.png" alt="A Scout cooking a simple trail meal on a lightweight canister stove at a trail rest stop, with a small pot of boiling water and a food packet nearby" >}}
+{{< drg/image src="images/trail-meal-stove.avif" alt="A Scout cooking a simple trail meal on a lightweight canister stove at a trail rest stop, with a small pot of boiling water and a food packet nearby" >}}
 
 ### Cleanup
 
@@ -79,7 +79,7 @@ Some of the best camp meals are the simplest. Experienced backpackers often say 
 
 {{< drg/external-link title="Scout Recipes — Scouting America" url="https://www.scouting.org/outdoor-programs/camping/" description="The official Scouting America camping page with resources and recipe ideas for troop campouts." >}}
 
-{{< drg/image src="images/patrol-eating-together.png" alt="A patrol of Scouts sitting together at a campsite eating a meal they cooked, with camp stove and cooking gear visible in the background" >}}
+{{< drg/image src="images/patrol-eating-together.avif" alt="A patrol of Scouts sitting together at a campsite eating a meal they cooked, with camp stove and cooking gear visible in the background" >}}
 
 {{< drg/next-page
     text="You have cooked meals for your patrol in the outdoors."

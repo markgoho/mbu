@@ -19,7 +19,7 @@ You have just finished five incredible hikes. You’ve climbed ridges, navigated
 
 Writing a hike report is your way of "freezing" those moments in time. It isn't just a piece of homework to hand to your counselor; it is a personal journal of your growth as a Scout and an outdoorsman. When you look back at these reports in a few years, you won't just see a list of miles—you'll see the story of how you became a stronger, more confident hiker. These reports help you reflect on your experiences, track your physical progress, and celebrate the small victories you achieved on the trail.
 
-{{< drg/image src="images/scout-writing-notebook.png" alt="A Scout sitting on a log writing in a small notebook with a forest trail in the background" >}}
+{{< drg/image src="images/scout-writing-notebook.avif" alt="A Scout sitting on a log writing in a small notebook with a forest trail in the background" >}}
 
 ## What to Include in Your Reports
 
@@ -37,7 +37,7 @@ Weather plays a huge role in how a hike feels. Was it sunny and clear, providing
 
 This is the "color" of your report. Think about the wildlife you encountered, the types of trees or wildflowers you identified, or a particularly beautiful vista. Did you see any historic landmarks, interesting rock formations, or unique trail signs? These details make each hike stand out from the others.
 
-{{< drg/image src="images/hand-drawn-trail-map.png" alt="A close-up of a hand-drawn trail map in a notebook with colored pencil annotations" >}}
+{{< drg/image src="images/hand-drawn-trail-map.avif" alt="A close-up of a hand-drawn trail map in a notebook with colored pencil annotations" >}}
 
 ### 4. Challenges and Solutions
 
@@ -67,7 +67,7 @@ Try to write your final report within 24 to 48 hours of returning home. Your mus
 
 There is no single "right" way to format your report. Some Scouts prefer to write a narrative story, like a chapter in a book. Others prefer a structured approach using bullet points for each requirement. You could even create a "scrapbook" style report by combining your writing with photos you took or sketches of things you saw.
 
-{{< drg/image src="images/scrapbook-hike-report.png" alt="An open scrapbook-style hike report with photos, pressed leaves, and handwritten notes on a desk" >}}
+{{< drg/image src="images/scrapbook-hike-report.avif" alt="An open scrapbook-style hike report with photos, pressed leaves, and handwritten notes on a desk" >}}
 
 As long as you cover the required information—the date, route, weather, sights, challenges, and reflections—you can let your personality shine through. Remember, you need to produce a report for **each** of the hikes you completed. If you did a continuous trek, you can write your reports as daily entries in a trek journal.
 

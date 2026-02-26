@@ -15,7 +15,7 @@ Explain and, where possible, show the points of good hiking practices including 
 
 Hiking is one of the best ways to explore the great outdoors, but it isn’t just "walking in the woods." To have a successful trek, you need to master the art of being a prepared, responsible, and safe hiker. Whether you are heading out for a two-mile stroll or a twenty-mile expedition, the way you treat the trail, the people you meet, and—most importantly—your own feet will determine how much fun you have.
 
-{{< drg/image src="images/single-file-trail.png" alt="A group of Scouts hiking single-file on a forest trail demonstrating proper trail etiquette" >}}
+{{< drg/image src="images/single-file-trail.avif" alt="A group of Scouts hiking single-file on a forest trail demonstrating proper trail etiquette" >}}
 
 ## The Foundation: Outdoor Ethics
 
@@ -47,7 +47,7 @@ Night hiking can be an incredible experience—the forest sounds different, the 
 3.  **Stay on the Trail:** It is much easier to lose the trail at night. If the path becomes faint, stop immediately and verify your location. Look for reflective trail markers if they are present.
 4.  **Slow Down:** Depth perception changes in the dark. Step carefully over logs and rocks, as shadows can make objects look deeper or taller than they actually are.
 
-{{< drg/image src="images/headlamp-dusk-hike.png" alt="A Scout hiking at dusk with a headlamp illuminating the trail ahead" >}}
+{{< drg/image src="images/headlamp-dusk-hike.avif" alt="A Scout hiking at dusk with a headlamp illuminating the trail ahead" >}}
 
 ## Trail Courtesy: Sharing the Path
 
@@ -74,7 +74,7 @@ When buying shoes, look for **Fit** above all else. Your toes should have room t
 
 {{< drg/video title="Choosing Hiking Footwear" url="https://youtu.be/liJtac-GvZw?si=ToQQv90HyVEIqwe_" >}}
 
-{{< drg/image src="images/hiking-footwear-comparison.png" alt="Three types of hiking footwear side by side: hiking boots, trail runners, and approach shoes" >}}
+{{< drg/image src="images/hiking-footwear-comparison.avif" alt="Three types of hiking footwear side by side: hiking boots, trail runners, and approach shoes" >}}
 
 ## Foot Care and Maintenance
 

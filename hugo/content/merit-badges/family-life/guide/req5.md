@@ -63,7 +63,7 @@ Choose something that fits your family's interests, abilities, and schedule. The
 The best family projects are ones where everyone is genuinely interested. Before you decide, hold a quick brainstorm with your family. Write down everyone's ideas, then vote on the one that excites the most people. Getting buy-in from the start makes everything easier.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/family-garden-project.png" alt="A family of four working together in a backyard garden — one person digging, one planting seedlings, one watering, and a younger child carrying a small pot of flowers" >}}
+{{< drg/image src="images/family-garden-project.avif" alt="A family of four working together in a backyard garden — one person digging, one planting seedlings, one watering, and a younger child carrying a small pot of flowers" >}}
 
 ### Planning the Project
 
@@ -127,7 +127,7 @@ Not everyone in your family may be excited about the project. Here's how to hand
 
 {{< drg/external-link title="VolunteerMatch — Find Volunteer Opportunities" url="https://www.volunteermatch.org/" description="Search for volunteer opportunities in your area that your whole family can participate in." >}}
 
-{{< drg/image src="images/family-volunteering-together.png" alt="A family wearing matching volunteer T-shirts sorting canned food at a community food bank, working as a team with smiles" >}}
+{{< drg/image src="images/family-volunteering-together.avif" alt="A family wearing matching volunteer T-shirts sorting canned food at a community food bank, working as a team with smiles" >}}
 
 {{< drg/next-page
     text="Your family has accomplished something great together."

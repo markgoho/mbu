@@ -61,7 +61,7 @@ Every sleeping bag has a temperature rating that tells you the lowest temperatur
 Temperature ratings are based on standardized tests, but your personal experience may vary. Factors like your metabolism, what you ate for dinner, and whether you are wearing a hat and socks inside the bag all affect how warm you feel. If you tend to sleep cold, choose a bag rated 10–15 degrees lower than the temperatures you expect.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/sleeping-bag-types.png" alt="Three sleeping bags laid out side by side on a tent floor: a mummy bag, a rectangular bag, and a semi-rectangular bag, each partially unzipped to show their shapes" >}}
+{{< drg/image src="images/sleeping-bag-types.avif" alt="Three sleeping bags laid out side by side on a tent floor: a mummy bag, a rectangular bag, and a semi-rectangular bag, each partially unzipped to show their shapes" >}}
 
 ### Keeping Your Sleeping Bag Dry
 
@@ -113,7 +113,7 @@ A sleeping pad is not optional — it is essential. Even in summer, the ground p
 Sleep with a hat on in cold weather. You lose significant heat through your head, and a warm hat inside your sleeping bag makes a noticeable difference on cold nights. Cinch your mummy bag hood around your face, leaving just your nose and mouth exposed.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/ground-bed-layers.png" alt="A cutaway illustration showing the layers of a comfortable ground bed: ground cloth at the bottom, tent floor, sleeping pad, and sleeping bag on top" >}}
+{{< drg/image src="images/ground-bed-layers.avif" alt="A cutaway illustration showing the layers of a comfortable ground bed: ground cloth at the bottom, tent floor, sleeping pad, and sleeping bag on top" >}}
 
 {{< drg/next-page
     text="You understand sleeping bags and how to build a comfortable ground bed."

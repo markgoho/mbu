@@ -65,7 +65,7 @@ Map out the entire event from beginning to end. Here is a typical structure for 
 - Reflection or meditation
 - Closing prayer and benediction
 
-{{< drg/image src="images/scout-mc-campfire.png" alt="A Scout standing confidently near a campfire at dusk, addressing a group of Scouts seated in a semicircle, holding script notes" >}}
+{{< drg/image src="images/scout-mc-campfire.avif" alt="A Scout standing confidently near a campfire at dusk, addressing a group of Scouts seated in a semicircle, holding script notes" >}}
 
 ### Step 3: Get PLC Approval
 
@@ -133,7 +133,7 @@ The tradition of the Scouting campfire program goes back to the very first Scout
 
 {{< drg/external-link title="Scouting — Ceremonies and Campfire Programs" url="https://www.scouting.org/resources/guide-to-awards-and-insignia/" description="Official Scouting resources for planning ceremonies, courts of honor, and campfire programs." >}}
 
-{{< drg/image src="images/court-of-honor-ceremony.png" alt="A Scout in uniform standing at a podium during a court of honor ceremony, with award recipients lined up and families watching from chairs" >}}
+{{< drg/image src="images/court-of-honor-ceremony.avif" alt="A Scout in uniform standing at a podium during a court of honor ceremony, with award recipients lined up and families watching from chairs" >}}
 
 {{< drg/next-page
     text="You have planned, scripted, and led a ceremony from start to finish"

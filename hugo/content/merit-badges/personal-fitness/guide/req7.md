@@ -49,7 +49,7 @@ Around weeks 3–5, many Scouts hit a motivation slump. The excitement of starti
 - **Talk to your counselor.** They have seen this before and can help you adjust your plan if needed.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/scout-workout-log.png" alt="A Scout at a desk writing in a fitness log after a workout, with a water bottle and towel nearby, looking satisfied" >}}
+{{< drg/image src="images/scout-workout-log.avif" alt="A Scout at a desk writing in a fitness log after a workout, with a water bottle and towel nearby, looking satisfied" >}}
 
 ### 7b — Mid-Program and Final Assessments
 

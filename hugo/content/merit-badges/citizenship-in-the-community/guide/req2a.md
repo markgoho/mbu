@@ -84,7 +84,7 @@ This is the most open-ended category. Look for:
 - Sites of significant events in your community's history
 - Landmarks that define your community's identity
 
-{{< drg/image src="images/scout-mapping-community.png" alt="A Scout sitting at a desk using a laptop to explore a digital map, with a printed community map and notebook beside them" >}}
+{{< drg/image src="images/scout-mapping-community.avif" alt="A Scout sitting at a desk using a laptop to explore a digital map, with a printed community map and notebook beside them" >}}
 
 ## Recording Your Findings
 
@@ -105,7 +105,7 @@ For each location, record:
 Organize your findings by category (government buildings, emergency services, parks, points of interest). When you present this to your counselor, a well-organized list is much more impressive than a jumbled one.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/community-landmarks.png" alt="An illustrated bird's-eye view of a small town showing labeled landmarks including a city hall, fire station, park, library, and hospital" >}}
+{{< drg/image src="images/community-landmarks.avif" alt="An illustrated bird's-eye view of a small town showing labeled landmarks including a city hall, fire station, park, library, and hospital" >}}
 
 {{< drg/external-link
     title="Google Maps — Measure Distance Tool"

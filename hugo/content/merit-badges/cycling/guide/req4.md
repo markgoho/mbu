@@ -31,7 +31,7 @@ Before every ride, you should do a quick inspection to make sure your bike is re
 The ABC Quick Check takes less than 60 seconds once you get the hang of it. Make it a habit — like putting on your helmet — and you will catch problems before they strand you on the side of the road.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/abc-quick-check.png" alt="A Scout crouched next to a bicycle checking tire pressure, with the ABC Quick Check steps overlaid as labels" >}}
+{{< drg/image src="images/abc-quick-check.avif" alt="A Scout crouched next to a bicycle checking tire pressure, with the ABC Quick Check steps overlaid as labels" >}}
 
 ### Requirement 4a — Safety Inspection Points
 
@@ -129,7 +129,7 @@ A properly lubricated bike runs quieter, shifts better, and lasts longer. Here a
 Never get lubricant on your brake pads, brake rotors, or wheel rims. Oil on braking surfaces eliminates your stopping power and can be extremely dangerous. If you accidentally contaminate a braking surface, clean it immediately with rubbing alcohol.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/bike-chain-lube.png" alt="Close-up of a Scout applying chain lubricant to a bicycle chain, with the bike on a repair stand" >}}
+{{< drg/image src="images/bike-chain-lube.avif" alt="Close-up of a Scout applying chain lubricant to a bicycle chain, with the bike on a repair stand" >}}
 
 ### Requirement 4e — Fixing a Flat Tire
 

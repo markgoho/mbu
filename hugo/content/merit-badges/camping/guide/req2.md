@@ -68,7 +68,7 @@ Let's break it down:
 
 {{< drg/external-link title="The Outdoor Code — Scouting America" url="https://www.scouting.org/outdoor-programs/outdoor-ethics/outdoor-code/" description="The official Scouting America page for the Outdoor Code, including teaching resources and activities." >}}
 
-{{< drg/image src="images/leave-no-trace-campsite.png" alt="A pristine campsite in a forest clearing — no trash, no fire scars, no trampled vegetation — showing what a well-managed camp looks like" >}}
+{{< drg/image src="images/leave-no-trace-campsite.avif" alt="A pristine campsite in a forest clearing — no trash, no fire scars, no trampled vegetation — showing what a well-managed camp looks like" >}}
 
 ### Writing Your Plan
 
@@ -104,7 +104,7 @@ The Leave No Trace Center for Outdoor Ethics trains over 30,000 educators and vo
 
 {{< drg/external-link title="Leave No Trace / Outdoor Code Planning Handout" url="https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Camping/Leave_No_Trace_Outdoor_Code_Handout_Spaced.pdf" description="A printable worksheet from Scouting America to help you create your personal and group Leave No Trace plan." >}}
 
-{{< drg/image src="images/scout-picking-up-trash.png" alt="A Scout bending down to pick up a small piece of litter from a trail, with a clean forest trail stretching behind them" >}}
+{{< drg/image src="images/scout-picking-up-trash.avif" alt="A Scout bending down to pick up a small piece of litter from a trail, with a clean forest trail stretching behind them" >}}
 
 {{< drg/next-page
     text="You now understand the principles of Leave No Trace and the Outdoor Code."

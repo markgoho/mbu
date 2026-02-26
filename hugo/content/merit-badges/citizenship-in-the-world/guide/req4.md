@@ -161,9 +161,9 @@ For each of your two chosen organizations:
 - **Step four**: Explain why this organization matters to the world — what would be different without it?
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/global-organizations.png" alt="An illustrated collage showing symbols of international organizations arranged around a world map" >}}
+{{< drg/image src="images/global-organizations.avif" alt="An illustrated collage showing symbols of international organizations arranged around a world map" >}}
 
-{{< drg/image src="images/trade-routes-illustration.png" alt="An illustrated cargo ship on the ocean with containers labeled with different country flags, showing global trade in action" >}}
+{{< drg/image src="images/trade-routes-illustration.avif" alt="An illustrated cargo ship on the ocean with containers labeled with different country flags, showing global trade in action" >}}
 
 ---
 

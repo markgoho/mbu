@@ -58,7 +58,7 @@ The requirement gives you a wide range of options for who to research: a histori
 - Scouting leaders: A Scoutmaster who modeled the Scout Law in a difficult moment.
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/leader-ethical-decision.png" alt="A person standing at a crossroads with two paths, one easy and one challenging but leading upward, symbolizing an ethical choice" >}}
+{{< drg/image src="images/leader-ethical-decision.avif" alt="A person standing at a crossroads with two paths, one easy and one challenging but leading upward, symbolizing an ethical choice" >}}
 
 ### How to Research and Present Your Leader
 

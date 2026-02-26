@@ -50,7 +50,7 @@ Each point of the Scout Law connects to one or more aspects of personal fitness.
 - Reverent: Spiritual fitness — duty to God, respect for others' beliefs, and a sense of gratitude — is the foundation of reverence.
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/scout-oath-fitness-connection.png" alt="A Scout standing at attention with hand raised in the Scout sign, with subtle visual connections to fitness icons radiating outward" >}}
+{{< drg/image src="images/scout-oath-fitness-connection.avif" alt="A Scout standing at attention with hand raised in the Scout sign, with subtle visual connections to fitness icons radiating outward" >}}
 
 ### Putting It All Together
 

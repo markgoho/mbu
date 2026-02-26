@@ -59,7 +59,7 @@ Before you start, agree on a few basic rules:
 - What is said in the meeting stays in the family.
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/family-meeting-table.png" alt="A family sitting around a kitchen table with a handwritten agenda visible, everyone attentive and engaged in conversation" >}}
+{{< drg/image src="images/family-meeting-table.avif" alt="A family sitting around a kitchen table with a handwritten agenda visible, everyone attentive and engaged in conversation" >}}
 
 ### Running the Meeting
 
@@ -95,7 +95,7 @@ Your counselor will want to hear about your plan for the family meeting — not 
 
 {{< drg/external-link title="How to Hold a Family Meeting (video)" url="https://youtu.be/PsIHViDoi80?si=S_ul6VtJsaydr5si" description="Practical tips for families who are new to holding structured meetings." >}}
 
-{{< drg/image src="images/meeting-agenda-notepad.png" alt="A close-up of a notepad with a neatly written family meeting agenda, a pen beside it, and a cup of hot cocoa in the background" >}}
+{{< drg/image src="images/meeting-agenda-notepad.avif" alt="A close-up of a notepad with a neatly written family meeting agenda, a pen beside it, and a cup of hot cocoa in the background" >}}
 
 {{< drg/next-page
     text="Now that you know how to plan and run a family meeting"

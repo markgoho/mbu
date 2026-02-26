@@ -62,7 +62,7 @@ ICS was developed in the 1970s after devastating wildfires in Southern Californi
 
 {{< drg/video title="ICS" url="https://youtu.be/phcKeMWaN3o?si=UJEgaKfVdkod4Yd2" >}}
 
-{{< drg/image src="images/ics-chart.png" alt="An organizational chart showing the ICS structure: Incident Commander at the top with Operations, Planning, Logistics, and Finance sections below" >}}
+{{< drg/image src="images/ics-chart.avif" alt="An organizational chart showing the ICS structure: Incident Commander at the top with Operations, Planning, Logistics, and Finance sections below" >}}
 
 ---
 

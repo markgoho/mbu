@@ -83,7 +83,7 @@ An autoimmune disease (not an allergy or intolerance) where eating gluten causes
 
 While not caused by a single food, diabetes affects how the body processes sugar. People with diabetes need to carefully monitor their carbohydrate and sugar intake. As a cook, knowing that a guest has diabetes means you should be able to describe the ingredients in your dishes and offer options that are lower in sugar and refined carbohydrates.
 
-{{< drg/image src="images/food-safety-awareness.png" alt="A Scout writing a list of guest food allergies and dietary needs on a whiteboard in a camp kitchen, with common allergen icons displayed" >}}
+{{< drg/image src="images/food-safety-awareness.avif" alt="A Scout writing a list of guest food allergies and dietary needs on a whiteboard in a camp kitchen, with common allergen icons displayed" >}}
 
 ### Why This Matters for You as a Cook
 

@@ -60,7 +60,7 @@ You planned to serve dinner at 6:00 PM, but the chicken is taking longer than ex
 - **Step 4:** Communicate — tell the people you are serving that dinner will be a few minutes late. It is always better to serve a great meal a little late than a mediocre meal on time.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/meal-timing-plan.png" alt="A Scout writing a timing plan on a whiteboard in a kitchen, with a clock on the wall and ingredients prepped in bowls on the counter (mise en place style)" >}}
+{{< drg/image src="images/meal-timing-plan.avif" alt="A Scout writing a timing plan on a whiteboard in a kitchen, with a clock on the wall and ingredients prepped in bowls on the counter (mise en place style)" >}}
 
 ### Timing at Camp
 

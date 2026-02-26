@@ -35,7 +35,7 @@ CERT is one of the best programs available for young people who want to go beyon
 CERT was created in 1985 by the Los Angeles City Fire Department after they realized that civilians would inevitably help each other after a major earthquake — and that trained civilians would be far more effective and safe than untrained ones.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/cert-training.png" alt="Teens in CERT gear practicing search and rescue techniques during a training exercise" >}}
+{{< drg/image src="images/cert-training.avif" alt="Teens in CERT gear practicing search and rescue techniques during a training exercise" >}}
 
 ---
 

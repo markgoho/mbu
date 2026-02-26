@@ -70,7 +70,7 @@ You may not be old enough to vote yet, but you can still participate. Many state
 Check whether your state allows voter pre-registration for people under 18. Being registered and ready to vote the moment you turn 18 is one of the simplest and most powerful acts of citizenship.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/voting-booth-american-flag.png" alt="A voting booth with an American flag draped behind it in a community center, with Vote signs visible on the walls" >}}
+{{< drg/image src="images/voting-booth-american-flag.avif" alt="A voting booth with an American flag draped behind it in a community center, with Vote signs visible on the walls" >}}
 
 ### E. Real-World Experiences
 

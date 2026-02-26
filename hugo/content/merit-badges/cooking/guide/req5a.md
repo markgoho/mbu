@@ -70,7 +70,7 @@ Remember — [Req 5d](/merit-badges/cooking/guide/req5d/) requires specific cook
 
 Build your menu around these requirements. Map each meal to its required cooking method before finalizing your plan.
 
-{{< drg/image src="images/camp-kitchen-setup.png" alt="A well-organized camp kitchen with a camp stove on a table, a Dutch oven near a fire ring, coolers underneath, and a hand-washing station, with Scouts in clean uniforms preparing to cook" >}}
+{{< drg/image src="images/camp-kitchen-setup.avif" alt="A well-organized camp kitchen with a camp stove on a table, a Dutch oven near a fire ring, coolers underneath, and a hand-washing station, with Scouts in clean uniforms preparing to cook" >}}
 
 ### Food Safety at Camp
 

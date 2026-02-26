@@ -59,7 +59,7 @@ Built to handle the worst conditions — heavy snow, high winds, and extreme col
 Most camping tents are "three-season" tents designed for spring, summer, and fall. They balance weight, ventilation, and weather protection for the conditions most campers encounter. Four-season tents sacrifice ventilation and weight savings for the ability to withstand winter storms.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/tent-types-comparison.png" alt="Four tents set up side by side in a grassy field: an A-frame, a dome, a tunnel tent, and a four-season tent, each clearly showing its distinctive shape" >}}
+{{< drg/image src="images/tent-types-comparison.avif" alt="Four tents set up side by side in a grassy field: an A-frame, a dome, a tunnel tent, and a four-season tent, each clearly showing its distinctive shape" >}}
 
 ### Tent Anatomy
 
@@ -107,7 +107,7 @@ Never cook inside or near the vestibule of a tent. Camp stoves produce carbon mo
 
 {{< drg/external-link title="How to Pick Your Perfect Tent" url="https://blog.scoutingmagazine.org/2020/10/15/how-to-pick-your-perfect-tent/" description="A guide from Scouting Magazine to help you choose the right tent for your camping style." >}}
 
-{{< drg/image src="images/scouts-pitching-dome-tent.png" alt="Two Scouts working together to pitch a dome tent in a forest clearing, one holding a pole while the other clips the tent body to it" >}}
+{{< drg/image src="images/scouts-pitching-dome-tent.avif" alt="Two Scouts working together to pitch a dome tent in a forest clearing, one holding a pole while the other clips the tent body to it" >}}
 
 {{< drg/next-page
     text="You know the four tent types and how to pitch and care for a tent."

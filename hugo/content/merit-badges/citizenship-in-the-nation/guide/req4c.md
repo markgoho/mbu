@@ -45,7 +45,7 @@ The motto appears on many national symbols and places:
 - **Government buildings** — carved into stone on federal buildings across Washington, D.C.
 - **Military insignia** — on the seals of many branches and agencies
 
-{{< drg/image src="images/great-seal-close-up.png" alt="A detailed close-up of the Great Seal of the United States showing the bald eagle holding a ribbon with the motto E Pluribus Unum in its beak, with an olive branch in one talon and arrows in the other" >}}
+{{< drg/image src="images/great-seal-close-up.avif" alt="A detailed close-up of the Great Seal of the United States showing the bald eagle holding a ribbon with the motto E Pluribus Unum in its beak, with an olive branch in one talon and arrows in the other" >}}
 
 ### Why It Matters Today
 
@@ -73,7 +73,7 @@ For your counselor discussion, be prepared to explain E Pluribus Unum in your ow
     url="https://www.state.gov/the-great-seal/"
     description="Learn about the history and symbolism of the Great Seal, including the motto E Pluribus Unum and every element of the design." >}}
 
-{{< drg/image src="images/currency-motto-collage.png" alt="A collection of U.S. coins and a dollar bill arranged to show the E Pluribus Unum motto visible on each piece of currency" >}}
+{{< drg/image src="images/currency-motto-collage.avif" alt="A collection of U.S. coins and a dollar bill arranged to show the E Pluribus Unum motto visible on each piece of currency" >}}
 
 {{< drg/next-page
     text="Now that you understand America's traditional motto"

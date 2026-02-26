@@ -69,7 +69,7 @@ The **U.S. and Foreign Commercial Service** is part of the Department of Commerc
 To remember the difference: ambassadors and consuls represent the country's government and its people. The Bureau of Global Public Affairs represents its message. The Commercial Service represents its businesses.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/embassy-diplomacy.png" alt="An illustrated embassy building with the U.S. flag flying outside, showing diplomats greeting visitors at the entrance" >}}
+{{< drg/image src="images/embassy-diplomacy.avif" alt="An illustrated embassy building with the U.S. flag flying outside, showing diplomats greeting visitors at the entrance" >}}
 
 ## Passports and Visas
 
@@ -116,7 +116,7 @@ If you do not have a passport yet, here is what to know:
     url="https://www.state.gov/about-us-bureau-of-global-public-affairs/"
     description="Learn about the State Department office responsible for communicating U.S. foreign policy to the world." >}}
 
-{{< drg/image src="images/passport-visa-illustration.png" alt="An illustrated open passport with visa stamps from various countries, alongside a boarding pass and a small world map" >}}
+{{< drg/image src="images/passport-visa-illustration.avif" alt="An illustrated open passport with visa stamps from various countries, alongside a boarding pass and a small world map" >}}
 
 ---
 

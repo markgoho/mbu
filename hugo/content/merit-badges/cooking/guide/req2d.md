@@ -46,7 +46,7 @@ Here are patterns that many teens (and adults) recognize in themselves:
 
 **Not enough variety.** Eating the same foods every day means you miss out on nutrients found in other foods. Challenge yourself to try one new fruit, vegetable, or whole grain each week.
 
-{{< drg/image src="images/healthy-vs-typical-plate.png" alt="Side-by-side comparison of two plates: one with a typical teen meal (burger, fries, soda) and one following MyPlate guidelines (grilled chicken, vegetables, brown rice, fruit, water)" >}}
+{{< drg/image src="images/healthy-vs-typical-plate.avif" alt="Side-by-side comparison of two plates: one with a typical teen meal (burger, fries, soda) and one following MyPlate guidelines (grilled chicken, vegetables, brown rice, fruit, water)" >}}
 
 ### Setting Realistic Goals
 

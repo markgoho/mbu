@@ -85,7 +85,7 @@ Today, you can send a message to someone on the other side of the planet in less
 
 **Get Ready!** You already communicate every single day — now it is time to get better at it. This badge will challenge you to listen more carefully, speak more clearly, write more persuasively, and lead more confidently. Let's get started!
 
-{{< drg/image src="images/scout-speaking-group.png" alt="A Scout standing confidently in front of a small group of fellow Scouts, gesturing while explaining an idea, with an outdoor pavilion setting" >}}
+{{< drg/image src="images/scout-speaking-group.avif" alt="A Scout standing confidently in front of a small group of fellow Scouts, gesturing while explaining an idea, with an outdoor pavilion setting" >}}
 
 ---
 
@@ -93,7 +93,7 @@ Today, you can send a message to someone on the other side of the planet in less
 
 Communication takes many forms. Understanding the different types will help you choose the right method for the right moment.
 
-{{< drg/image src="images/communication-methods-collage.png" alt="A collage showing different forms of communication: a person speaking at a podium, someone writing a letter, a group video call on a laptop, and a Scout reading a book" >}}
+{{< drg/image src="images/communication-methods-collage.avif" alt="A collage showing different forms of communication: a person speaking at a podium, someone writing a letter, a group video call on a laptop, and a Scout reading a book" >}}
 
 ### Verbal Communication
 

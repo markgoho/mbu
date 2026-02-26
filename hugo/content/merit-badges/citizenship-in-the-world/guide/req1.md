@@ -64,7 +64,7 @@ Before you meet with your counselor, take some time to jot down your thoughts. T
 
 The Scout Oath says a Scout has a duty "to other people." That does not stop at the border. The Scout Law — trustworthy, loyal, helpful, friendly, courteous, kind — applies to how you treat everyone, everywhere. Scouting itself is a worldwide movement with over 57 million members in more than 170 countries. When you wear your Scout uniform, you are part of a global community.
 
-{{< drg/image src="images/scout-reflecting-world.png" alt="A Scout sitting under a tree writing in a journal, with a thought bubble showing diverse scenes from around the world" >}}
+{{< drg/image src="images/scout-reflecting-world.avif" alt="A Scout sitting under a tree writing in a journal, with a thought bubble showing diverse scenes from around the world" >}}
 
 {{< drg/be-prepared title="Preparing for Your Counselor Discussion" >}}
 Your counselor will ask you to explain your own view of world citizenship. Here is how to prepare:
@@ -79,7 +79,7 @@ Your counselor will ask you to explain your own view of world citizenship. Here 
     url="https://www.scout.org/"
     description="Learn about Scouting's global presence across 170+ countries and how Scouts worldwide work together." >}}
 
-{{< drg/image src="images/scouting-worldwide.png" alt="A colorful illustrated world map with Scout emblems pinned to different continents, showing the global reach of the Scouting movement" >}}
+{{< drg/image src="images/scouting-worldwide.avif" alt="A colorful illustrated world map with Scout emblems pinned to different continents, showing the global reach of the Scouting movement" >}}
 
 ---
 

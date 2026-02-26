@@ -65,7 +65,7 @@ This is why food tastes bland when you have a stuffy nose. Your taste buds still
 - **Smell warns you of problems.** Spoiled food, burned food, and rancid oil all have distinct smells that tell you something is wrong. Your nose is your first food safety tool.
 - **Spices and herbs are mostly about smell.** When you add basil, cinnamon, garlic, or rosemary to a dish, you are adding aroma compounds that your nose detects while you eat. That is why fresh herbs and freshly ground spices taste "stronger" than dried or pre-ground ones — they release more aromatic compounds.
 
-{{< drg/image src="images/sensory-experience-cooking.png" alt="A Scout at a camp cooking station lifting the lid off a pot, with visible steam rising, while smiling at the aroma. Patrol members in the background look eager" >}}
+{{< drg/image src="images/sensory-experience-cooking.avif" alt="A Scout at a camp cooking station lifting the lid off a pot, with visible steam rising, while smiling at the aroma. Patrol members in the background look eager" >}}
 
 ### How Cooks Use All Three
 

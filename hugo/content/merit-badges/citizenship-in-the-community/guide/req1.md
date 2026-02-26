@@ -58,7 +58,7 @@ Obligations are things that are not required by law but are expected of good cit
 - **Respect others** — Treat people fairly, even when you disagree.
 - **Speak up** — When you see something wrong, say something.
 
-{{< drg/image src="images/rights-duties-obligations.png" alt="A Scout studying a poster-sized diagram showing the three pillars of citizenship: rights, duties, and obligations, in a classroom setting" >}}
+{{< drg/image src="images/rights-duties-obligations.avif" alt="A Scout studying a poster-sized diagram showing the three pillars of citizenship: rights, duties, and obligations, in a classroom setting" >}}
 
 ## Demonstrating Good Citizenship
 
@@ -121,7 +121,7 @@ This requirement is a discussion, not a test. Your counselor wants to see that y
     url="https://www.usa.gov/voter-registration"
     description="Learn about civic participation, voter registration, and how the U.S. government works." >}}
 
-{{< drg/image src="images/scout-good-citizen.png" alt="A Scout in a clean uniform shaking hands with an elderly neighbor while helping carry groceries on a residential sidewalk" >}}
+{{< drg/image src="images/scout-good-citizen.avif" alt="A Scout in a clean uniform shaking hands with an elderly neighbor while helping carry groceries on a residential sidewalk" >}}
 
 ---
 

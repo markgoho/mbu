@@ -17,7 +17,7 @@ The history of artificial intelligence is a story of big dreams, long winters, a
 
 For this requirement, you need to pick **five** milestones and present them as a timeline. Below, you will find many more than five so you have plenty to choose from. Pick the ones that interest you the most or that you think tell the best story of how AI evolved.
 
-{{< drg/image src="images/ai-timeline-poster.png" alt="A Scout working on a large poster board timeline laid out on a table, with printed photos and handwritten dates being glued on. Markers, scissors, and reference materials nearby." >}}
+{{< drg/image src="images/ai-timeline-poster.avif" alt="A Scout working on a large poster board timeline laid out on a table, with printed photos and handwritten dates being glued on. Markers, scissors, and reference materials nearby." >}}
 
 ---
 

@@ -76,7 +76,7 @@ The Bill of Rights and subsequent amendments guarantee many freedoms, including:
 - Respect the rights and opinions of others
 - Defend the country if needed
 
-{{< drg/image src="images/citizenship-ceremony.png" alt="A diverse group of people raising their right hands and taking the Oath of Allegiance at a naturalization ceremony, with an American flag in the background" >}}
+{{< drg/image src="images/citizenship-ceremony.avif" alt="A diverse group of people raising their right hands and taking the Oath of Allegiance at a naturalization ceremony, with an American flag in the background" >}}
 
 ## Comparing Citizenship Around the World
 
@@ -120,7 +120,7 @@ Pick two countries that genuinely interest you. Maybe you have family ties to an
     url="https://www.cia.gov/the-world-factbook/"
     description="Detailed profiles of every country in the world, including government type, legal system, and citizenship laws." >}}
 
-{{< drg/image src="images/world-citizenship-comparison.png" alt="An illustrated side-by-side comparison showing three different passports with icons representing rights like voting, speech, and travel around them" >}}
+{{< drg/image src="images/world-citizenship-comparison.avif" alt="An illustrated side-by-side comparison showing three different passports with icons representing rights like voting, speech, and travel around them" >}}
 
 ---
 

@@ -64,7 +64,7 @@ Look up and look down before you pitch.
 Walk your campsite before you set up. Do a slow lap around the area, looking up at the tree canopy for dead branches, scanning the ground for animal sign and insect activity, and feeling the terrain for level ground. Two minutes of scouting can save you hours of misery.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/ideal-campsite-labeled.png" alt="An illustrated birds-eye view of an ideal campsite showing the tent on level ground, 200 feet from a stream, behind a natural tree windbreak, with the cooking area downwind and a bear bag hung away from the sleeping area" >}}
+{{< drg/image src="images/ideal-campsite-labeled.avif" alt="An illustrated birds-eye view of an ideal campsite showing the tent on level ground, 200 feet from a stream, behind a natural tree windbreak, with the cooking area downwind and a bear bag hung away from the sleeping area" >}}
 
 ### Sun and Shade
 
@@ -89,7 +89,7 @@ In popular camping areas, always use established campsites rather than creating 
 
 {{< drg/video title="How to Choose a GREAT Campsite" url="https://youtu.be/WmtgLjC_9yw?si=3u34a985FeL3qqBQ" >}}
 
-{{< drg/image src="images/scout-surveying-campsite.png" alt="A Scout standing at the edge of a forest clearing, looking around and evaluating the area as a potential campsite, with a stream visible in the middle distance" >}}
+{{< drg/image src="images/scout-surveying-campsite.avif" alt="A Scout standing at the edge of a forest clearing, looking around and evaluating the area as a potential campsite, with a stream visible in the middle distance" >}}
 
 {{< drg/next-page
     text="You know how to choose the ideal campsite."

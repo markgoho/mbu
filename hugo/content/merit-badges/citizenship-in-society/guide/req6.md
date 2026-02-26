@@ -68,7 +68,7 @@ Listen carefully. Ask follow-up questions. The point is not to compare or debate
 
 You and your partner will choose **one** of the two options below to discuss together.
 
-{{< drg/image src="images/two-scouts-conversation.png" alt="Two Scouts of different backgrounds sitting on a bench outdoors, having a friendly, open conversation" >}}
+{{< drg/image src="images/two-scouts-conversation.avif" alt="Two Scouts of different backgrounds sitting on a bench outdoors, having a friendly, open conversation" >}}
 
 #### Option 1: A Time You Felt Excluded
 

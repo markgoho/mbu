@@ -45,7 +45,7 @@ Your counselor will look at your camp plan with a sharper eye than your home pla
 Be prepared to explain your meal sequence — which meals happen first, which happen last, and why you ordered them that way. Your counselor wants to see that you have thought about the progression from perishable to shelf-stable foods.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/camp-plan-counselor.png" alt="A Scout showing a camp menu plan to a counselor outdoors, with the plan displayed on a clipboard and the counselor pointing to a specific meal" >}}
+{{< drg/image src="images/camp-plan-counselor.avif" alt="A Scout showing a camp menu plan to a counselor outdoors, with the plan displayed on a clipboard and the counselor pointing to a specific meal" >}}
 
 ### Adjusting Based on Feedback
 

@@ -80,7 +80,7 @@ Today, you can video-call a Scout in Kenya, read a newspaper from Japan, and tra
 
 **Get Ready!** You are about to explore how the world works at a level most adults never do. By the time you finish this badge, you will understand how nations govern, cooperate, and sometimes disagree — and you will have a clearer picture of your own place in this interconnected world.
 
-{{< drg/image src="images/scout-globe-overview.png" alt="A Scout studying a large globe with international flags in the background, looking curious and engaged" >}}
+{{< drg/image src="images/scout-globe-overview.avif" alt="A Scout studying a large globe with international flags in the background, looking curious and engaged" >}}
 
 ---
 
@@ -104,7 +104,7 @@ Cultural citizenship is about understanding and respecting the traditions, langu
 
 Every time you buy a product, you participate in the global economy. Your shoes might be designed in the United States, manufactured in Vietnam, and shipped through the Panama Canal. Economic citizenship means understanding how trade, investment, and financial systems connect countries and affect people's lives.
 
-{{< drg/image src="images/scouts-world-flags.png" alt="Scouts of diverse backgrounds standing together holding small flags from different countries, smiling and talking to each other" >}}
+{{< drg/image src="images/scouts-world-flags.avif" alt="Scouts of diverse backgrounds standing together holding small flags from different countries, smiling and talking to each other" >}}
 
 ### Environmental Citizenship
 
@@ -118,7 +118,7 @@ Climate change, pollution, and habitat loss are global challenges that affect ev
 
 The internet connects billions of people across every border. Digital citizenship means being responsible and respectful online, understanding that your words and actions on the internet can reach people in other countries. It also means being aware of issues like online privacy, misinformation, and the digital divide — the gap between people who have access to technology and those who do not.
 
-{{< drg/image src="images/global-connections-map.png" alt="An illustrated world map showing colorful lines connecting different continents, representing trade routes, communication networks, and international partnerships" >}}
+{{< drg/image src="images/global-connections-map.avif" alt="An illustrated world map showing colorful lines connecting different continents, representing trade routes, communication networks, and international partnerships" >}}
 
 ---
 

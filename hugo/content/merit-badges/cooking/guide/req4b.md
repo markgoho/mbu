@@ -76,7 +76,7 @@ For each meal, add up the cost of the ingredients. This teaches you to think abo
 3. Add up all ingredient costs for each meal.
 4. Divide by the number of people served to get a per-person cost.
 
-{{< drg/image src="images/shopping-list-budget.png" alt="A Scout at a grocery store with a shopping list on a clipboard, comparing prices on two brands of pasta sauce while standing in the aisle" >}}
+{{< drg/image src="images/shopping-list-budget.avif" alt="A Scout at a grocery store with a shopping list on a clipboard, comparing prices on two brands of pasta sauce while standing in the aisle" >}}
 
 {{< drg/did-you-know >}}
 The average American family spends about $270 per week on food. Learning to plan meals and shop with a list can save 20–30% compared to buying food without a plan. Meal planning reduces waste because you buy only what you need.

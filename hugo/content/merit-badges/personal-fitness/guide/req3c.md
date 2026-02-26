@@ -40,7 +40,7 @@ Here are some of the diseases that vaccines protect you against:
 - **HPV (Human Papillomavirus)** — the most common sexually transmitted infection, which can cause several types of cancer. The vaccine is recommended for preteens.
 - **Influenza (flu)** — a viral infection that causes fever, body aches, and respiratory symptoms. The flu vaccine is updated annually.
 
-{{< drg/image src="images/vaccine-shield-diagram.png" alt="An illustrated shield with icons representing different diseases that vaccines protect against, with a Scout standing behind the shield looking confident" >}}
+{{< drg/image src="images/vaccine-shield-diagram.avif" alt="An illustrated shield with icons representing different diseases that vaccines protect against, with a Scout standing behind the shield looking confident" >}}
 
 ### Your Vaccination Schedule
 

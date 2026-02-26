@@ -35,7 +35,7 @@ E-cigarettes and vapes are not a safe alternative to smoking. A single vape pod 
 
 **Performance-enhancing substances.** Anabolic steroids and other performance-enhancing drugs can seem tempting if you want to get stronger faster. But the risks are severe: liver damage, heart problems, hormonal disruption, stunted growth, and mood disorders ("roid rage"). There are no shortcuts to fitness that do not come with a heavy price.
 
-{{< drg/image src="images/healthy-choices-infographic.png" alt="An illustrated split image: on one side, a Scout choosing water, fruit, and exercise; on the other side, crossed-out icons of cigarettes, vape pens, alcohol, and pills" >}}
+{{< drg/image src="images/healthy-choices-infographic.avif" alt="An illustrated split image: on one side, a Scout choosing water, fruit, and exercise; on the other side, crossed-out icons of cigarettes, vape pens, alcohol, and pills" >}}
 
 ### How Avoiding Substances Affects Your Risk Factors
 

@@ -67,7 +67,7 @@ After dishes are done and food is stored, clean the entire cooking area:
 - Ground around the cooking area checked for dropped food
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/three-basin-wash.png" alt="Scouts at a camp wash station using the three-basin system — one Scout scrubbing a pot in soapy water, another rinsing, and a third dipping utensils in a sanitize basin" >}}
+{{< drg/image src="images/three-basin-wash.avif" alt="Scouts at a camp wash station using the three-basin system — one Scout scrubbing a pot in soapy water, another rinsing, and a third dipping utensils in a sanitize basin" >}}
 
 ### Leading the Cleanup
 

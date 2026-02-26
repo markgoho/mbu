@@ -58,7 +58,7 @@ In an emergency stop, apply both brakes firmly and simultaneously. Shift your we
 - Practice in both dry and wet conditions — wet braking distances are much longer.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/emergency-stop-technique.png" alt="Side view of a Scout demonstrating an emergency stop on a bicycle, weight shifted back, both brakes engaged" >}}
+{{< drg/image src="images/emergency-stop-technique.avif" alt="Side view of a Scout demonstrating an emergency stop on a bicycle, weight shifted back, both brakes engaged" >}}
 
 ### Riding in a Straight Line
 
@@ -127,7 +127,7 @@ Hand signals communicate your intentions to drivers and other cyclists. You lear
 
 The key is timing: signal early enough for others to react (at least 100 feet before your turn), then return your hand to the handlebar before you make the maneuver. You need both hands on the handlebars to control the bike during a turn or stop.
 
-{{< drg/image src="images/scout-hand-signal-turn.png" alt="A Scout on a bicycle extending their left arm to signal a left turn, riding on a quiet residential street" >}}
+{{< drg/image src="images/scout-hand-signal-turn.avif" alt="A Scout on a bicycle extending their left arm to signal a left turn, riding on a quiet residential street" >}}
 
 ### Putting It All Together
 

@@ -54,7 +54,7 @@ Here are some areas to think about:
 - Shut down teasing immediately — even when it seems like "just joking."
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/scout-welcoming-new-member.png" alt="An experienced Scout shaking hands with a new Scout at a troop meeting, other Scouts smiling in the background" >}}
+{{< drg/image src="images/scout-welcoming-new-member.avif" alt="An experienced Scout shaking hands with a new Scout at a troop meeting, other Scouts smiling in the background" >}}
 
 ### Part B: A Time You Included Someone
 

@@ -82,7 +82,7 @@ While deepfakes are getting harder to detect, there are still telltale signs to 
 The single best defense against deepfakes is **critical thinking**. Before you believe or share a shocking video, ask: Who posted this? Why? Is this reported anywhere else? Can I find the original source? If a video seems designed to make you angry or scared, that is an extra reason to slow down and verify.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/deepfake-detection.png" alt="A Scout looking critically at a laptop screen, leaning in with a skeptical expression, as if analyzing whether a video is real or fake. Study room setting with good lighting." >}}
+{{< drg/image src="images/deepfake-detection.avif" alt="A Scout looking critically at a laptop screen, leaning in with a skeptical expression, as if analyzing whether a video is real or fake. Study room setting with good lighting." >}}
 
 ---
 
@@ -90,7 +90,7 @@ The single best defense against deepfakes is **critical thinking**. Before you b
 
 If you or someone you know becomes the target of a deepfake, here are the steps to take:
 
-{{< drg/image src="images/scout-reporting-phone.png" alt="A Scout showing their phone screen to a trusted adult (parent or counselor), both looking serious but calm. The adult has a reassuring posture. Living room or office setting." >}}
+{{< drg/image src="images/scout-reporting-phone.avif" alt="A Scout showing their phone screen to a trusted adult (parent or counselor), both looking serious but calm. The adult has a reassuring posture. Living room or office setting." >}}
 
 ### Step 1: Do Not Engage or Share
 

@@ -39,7 +39,7 @@ Your family shapes who you are in ways you might not even notice. Consider what 
 - **Life skills** — From cooking and cleaning to managing money and resolving conflicts, your family is where you practice the skills you'll need as an adult.
 - **Emotional support** — When things get tough at school, in Scouting, or with friends, your family is often the first place you turn. That support network is irreplaceable.
 
-{{< drg/image src="images/family-dinner-conversation.png" alt="A diverse family sitting around a dinner table engaged in conversation, with warm lighting and a comfortable home setting" >}}
+{{< drg/image src="images/family-dinner-conversation.avif" alt="A diverse family sitting around a dinner table engaged in conversation, with warm lighting and a comfortable home setting" >}}
 
 ### Why Families Matter to Society
 
@@ -87,7 +87,7 @@ Everyone has bad days. The key is not letting your frustration spill onto the pe
 
 {{< drg/external-link title="Child Welfare Information Gateway — What Is a Family?" url="https://www.childwelfare.gov/topics/famcentered/" description="Resources from the U.S. Department of Health & Human Services about family-centered practices and what makes families work." >}}
 
-{{< drg/image src="images/ripple-effect-family.png" alt="An illustration showing a Scout's positive action (helping with dishes) radiating outward like ripples in water, with family members smiling in response" >}}
+{{< drg/image src="images/ripple-effect-family.avif" alt="An illustration showing a Scout's positive action (helping with dishes) radiating outward like ripples in water, with family members smiling in response" >}}
 
 {{< drg/next-page
     text="Now that you've explored what family means and why it matters"

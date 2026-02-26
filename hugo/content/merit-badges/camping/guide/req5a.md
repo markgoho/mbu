@@ -48,7 +48,7 @@ The outer layer (or shell) protects you from wind and rain. It does not need to 
 The layering system was developed by mountaineers and military forces who needed to perform in extreme conditions. Modern layering fabrics are so advanced that a three-layer system weighing just a few pounds can keep you comfortable from 70°F down to well below freezing.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/layering-system-display.png" alt="Three clothing layers laid out side by side on a sleeping bag: a thin base layer shirt, a fleece mid layer, and a rain shell outer layer" >}}
+{{< drg/image src="images/layering-system-display.avif" alt="Three clothing layers laid out side by side on a sleeping bag: a thin base layer shirt, a fleece mid layer, and a rain shell outer layer" >}}
 
 ### Warm Weather Clothing List
 
@@ -95,7 +95,7 @@ The one exception? Cotton can be acceptable in hot, dry desert environments wher
 
 {{< drg/external-link title="Warm Weather Gear Checklist" url="https://scoutlife.org/outdoors/outdoorarticles/6992/checklist-for-a-basic-warm-weather-outing/" description="A warm-weather gear list from Scout Life magazine." >}}
 
-{{< drg/image src="images/scout-packing-clothing.png" alt="A Scout organizing clothing into a waterproof stuff sack, with warm and cold weather items laid out on a bedroom floor" >}}
+{{< drg/image src="images/scout-packing-clothing.avif" alt="A Scout organizing clothing into a waterproof stuff sack, with warm and cold weather items laid out on a bedroom floor" >}}
 
 {{< drg/next-page
     text="You have your clothing list ready for any weather."

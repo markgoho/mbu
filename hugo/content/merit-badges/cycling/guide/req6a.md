@@ -104,7 +104,7 @@ Cross railroad tracks properly.
 Railroad tracks are one of the most common causes of cycling crashes. A tire that enters a rail groove at a shallow angle can get trapped, causing an instant loss of control. The perpendicular approach eliminates this risk.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/road-safety-skills.png" alt="A Scout cycling on a suburban street demonstrating proper lane position, passing a row of parked cars with safe clearance" >}}
+{{< drg/image src="images/road-safety-skills.avif" alt="A Scout cycling on a suburban street demonstrating proper lane position, passing a row of parked cars with safe clearance" >}}
 
 ---
 
@@ -192,7 +192,7 @@ Organized rides provide rest stops, route markings, and safety support, making t
 A "cue sheet" is a turn-by-turn direction list used in organized cycling events. It lists every turn, the distance to each turn, and landmarks to watch for. Learning to follow a cue sheet is a classic cycling skill.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/road-cycling-scenic.png" alt="Two Scouts riding road bikes along a scenic rural road with rolling hills and a clear sky" >}}
+{{< drg/image src="images/road-cycling-scenic.avif" alt="Two Scouts riding road bikes along a scenic rural road with rolling hills and a clear sky" >}}
 
 ### Explore More Resources
 

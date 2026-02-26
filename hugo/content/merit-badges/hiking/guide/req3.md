@@ -19,7 +19,7 @@ When you think about getting in shape, you might imagine running laps around a t
 
 Requirement 3 focuses on the science of hiking fitness and the importance of preparation. Before you set out to conquer your 10-mile and 20-mile hikes, you need to understand how your body handles the effort and how you can train it to go the distance.
 
-{{< drg/image src="images/trail-jogging.png" alt="A Scout jogging on a trail with a daypack demonstrating aerobic activity in a natural setting" >}}
+{{< drg/image src="images/trail-jogging.avif" alt="A Scout jogging on a trail with a daypack demonstrating aerobic activity in a natural setting" >}}
 
 ### What is Aerobic Activity?
 
@@ -94,7 +94,7 @@ This is just an example. Your actual plan should be written down in your noteboo
 - **Saturday:** Training Hike day! Start with a distance that is challenging but doable, like 3 or 4 miles.
 - **Sunday:** Light 15-minute recovery walk.
 
-{{< drg/image src="images/training-calendar.png" alt="A weekly training calendar pinned to a bulletin board with hiking distances and cross-training activities" >}}
+{{< drg/image src="images/training-calendar.avif" alt="A weekly training calendar pinned to a bulletin board with hiking distances and cross-training activities" >}}
 
 ### Increasing Fitness for Longer Hikes
 
@@ -116,7 +116,7 @@ Your body is an engine, and an engine needs high-quality fuel. On a long hike, y
 - **On-Trail Snacking:** Don't wait until you're starving to eat. Have small snacks every hour. A mix of nuts, dried fruit, and energy bars provides a good balance of quick energy and long-term fuel.
 - **Consistent Hydration:** Take small sips of water throughout the day. If it’s hot or you’re working hard, you’ll lose a lot of water through sweat. For very long hikes, consider an electrolyte drink to replace the salts your body loses.
 
-{{< drg/image src="images/trail-lunch-spread.png" alt="A trail lunch spread on a bandana with trail mix, jerky, an energy bar, a water bottle, and an orange on a flat rock" >}}
+{{< drg/image src="images/trail-lunch-spread.avif" alt="A trail lunch spread on a bandana with trail mix, jerky, an energy bar, a water bottle, and an orange on a flat rock" >}}
 
 {{< drg/safety-first >}}
 **Don't Overdo It!** Conditioning is about getting stronger, not hurting yourself. If you feel sharp pain—not just the normal "burn" of tired muscles—you should stop and rest. Watch for signs of "overtraining," such as feeling constantly tired, having trouble sleeping, or finding that your muscles stay sore for many days. Your body grows stronger during your rest days, not while you're working out, so don't skip them!

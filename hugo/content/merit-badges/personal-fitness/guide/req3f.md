@@ -35,7 +35,7 @@ During deep sleep, your body releases growth hormone — the same hormone respon
 
 **Body composition.** Lack of sleep disrupts the hormones that control hunger. It increases ghrelin (the hormone that makes you feel hungry) and decreases leptin (the hormone that makes you feel full). The result: you eat more, crave junkier foods, and store more fat.
 
-{{< drg/image src="images/sleep-cycle-diagram.png" alt="A friendly illustrated diagram showing the stages of sleep with icons for muscle repair, memory consolidation, and hormone release" >}}
+{{< drg/image src="images/sleep-cycle-diagram.avif" alt="A friendly illustrated diagram showing the stages of sleep with icons for muscle repair, memory consolidation, and hormone release" >}}
 
 ### Building Better Sleep Habits
 

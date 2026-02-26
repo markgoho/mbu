@@ -19,7 +19,7 @@ Nutrition is the foundation of everything you cook. If you are going to prepare 
 
 MyPlate replaced the old Food Pyramid in 2011. Instead of stacking food groups on top of each other, MyPlate shows a simple dinner plate divided into four sections — Fruits, Vegetables, Grains, and Proteins — with a small circle on the side for Dairy. The visual message is clear: fill half your plate with fruits and vegetables, and split the other half between grains and protein.
 
-{{< drg/image src="images/myplate-diagram.png" alt="A colorful plate divided into the five MyPlate food group sections (Fruits, Vegetables, Grains, Protein, Dairy) with example foods arranged on each section" >}}
+{{< drg/image src="images/myplate-diagram.avif" alt="A colorful plate divided into the five MyPlate food group sections (Fruits, Vegetables, Grains, Protein, Dairy) with example foods arranged on each section" >}}
 
 ### The Five Food Groups
 

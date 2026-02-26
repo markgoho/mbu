@@ -73,7 +73,7 @@ When a natural disaster or conflict creates a refugee crisis, countries must dec
 Choose an event you have actually heard about or followed in the news. It is much easier to discuss something you are genuinely curious about than something you picked just because it seemed "important enough." Check major news sources like BBC World News, NPR, or the Associated Press for current stories.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-reading-news.png" alt="A Scout sitting at a table with a tablet showing a world news website, with a notebook and pen nearby for taking notes" >}}
+{{< drg/image src="images/scout-reading-news.avif" alt="A Scout sitting at a table with a tablet showing a world news website, with a notebook and pen nearby for taking notes" >}}
 
 {{< drg/external-link
     title="BBC World News"
@@ -85,7 +85,7 @@ Choose an event you have actually heard about or followed in the news. It is muc
     url="https://world101.cfr.org/"
     description="Free educational resource that explains global issues in a clear, approachable way — perfect for understanding the background behind current events." >}}
 
-{{< drg/image src="images/national-interests-diagram.png" alt="An illustrated diagram showing four interconnected circles labeled Security, Economy, Values, and Health, with arrows between them" >}}
+{{< drg/image src="images/national-interests-diagram.avif" alt="An illustrated diagram showing four interconnected circles labeled Security, Economy, Values, and Health, with arrows between them" >}}
 
 ---
 

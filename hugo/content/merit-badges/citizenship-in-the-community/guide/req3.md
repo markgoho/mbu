@@ -64,7 +64,7 @@ Government meetings follow a formal structure called **parliamentary procedure**
 7. **Reports** — Updates from staff, committees, or departments.
 8. **Adjournment** — The meeting ends.
 
-{{< drg/image src="images/council-meeting-scene.png" alt="A Scout sitting in the audience of a city council meeting, taking notes in a notebook, with council members seated at a raised dais in the background" >}}
+{{< drg/image src="images/council-meeting-scene.avif" alt="A Scout sitting in the audience of a city council meeting, taking notes in a notebook, with council members seated at a raised dais in the background" >}}
 
 ## Taking Notes
 
@@ -112,7 +112,7 @@ When explaining your position to your counselor, start by summarizing both sides
     url="https://www.c-span.org/classroom/"
     description="Free educational resources about government, including videos of real legislative sessions and lesson plans." >}}
 
-{{< drg/image src="images/scout-taking-notes.png" alt="A Scout sitting in the gallery of a courtroom or meeting hall, attentively writing notes with a focused expression" >}}
+{{< drg/image src="images/scout-taking-notes.avif" alt="A Scout sitting in the gallery of a courtroom or meeting hall, attentively writing notes with a focused expression" >}}
 
 ---
 

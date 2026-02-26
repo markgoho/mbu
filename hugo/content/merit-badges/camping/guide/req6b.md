@@ -48,7 +48,7 @@ After washing, let dishes air dry on a clean surface or dry them with a clean to
 
 {{< drg/video title="How to Wash Dishes at Camp" url="https://youtu.be/4tNLdcjBlQc?si=stW_EkBO7EoTrniD" >}}
 
-{{< drg/image src="images/three-bucket-wash-station.png" alt="A camp dishwashing station showing three labeled buckets (Wash, Rinse, Sanitize) set up on a camp table with a mesh strainer and biodegradable soap nearby" >}}
+{{< drg/image src="images/three-bucket-wash-station.avif" alt="A camp dishwashing station showing three labeled buckets (Wash, Rinse, Sanitize) set up on a camp table with a mesh strainer and biodegradable soap nearby" >}}
 
 ### Why Water Treatment Is Essential
 
@@ -107,7 +107,7 @@ Carry a backup water treatment method. If your filter breaks or your batteries d
 
 {{< drg/external-link title="CDC — Making Water Safe in the Outdoors" url="https://www.cdc.gov/drinking-water/about/making-water-safe-outdoors.html" description="The Centers for Disease Control guide to water treatment methods for outdoor recreation." >}}
 
-{{< drg/image src="images/water-treatment-methods.png" alt="A camp table showing four water treatment methods side by side: a pot of boiling water on a stove, a pump filter, chemical tablets, and a UV light pen" >}}
+{{< drg/image src="images/water-treatment-methods.avif" alt="A camp table showing four water treatment methods side by side: a pot of boiling water on a stove, a pump filter, chemical tablets, and a UV light pen" >}}
 
 {{< drg/next-page
     text="You know how to keep camp clean and treat water safely."

@@ -69,7 +69,7 @@ Many middle schools and high schools have Model UN clubs. If yours does not, you
 Model UN experience looks great on college applications — but more importantly, it is genuinely fun. If you enjoyed the research and discussion parts of this merit badge, you will love Model UN.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/model-un-conference.png" alt="Students in business attire seated at desks with country nameplates, participating in a Model United Nations conference" >}}
+{{< drg/image src="images/model-un-conference.avif" alt="Students in business attire seated at desks with country nameplates, participating in a Model United Nations conference" >}}
 
 ### E. Real-World Experiences
 

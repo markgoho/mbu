@@ -162,9 +162,9 @@ To get the most out of your experience:
 - **Step five**: Reflect on what you learned. How did this event change or deepen your understanding of another culture?
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/scout-cultural-festival.png" alt="A Scout at a vibrant international cultural festival, looking at colorful displays from different countries" >}}
+{{< drg/image src="images/scout-cultural-festival.avif" alt="A Scout at a vibrant international cultural festival, looking at colorful displays from different countries" >}}
 
-{{< drg/image src="images/jota-joti-scouts.png" alt="A Scout wearing headphones and speaking into a ham radio microphone with a world map on the wall behind them" >}}
+{{< drg/image src="images/jota-joti-scouts.avif" alt="A Scout wearing headphones and speaking into a ham radio microphone with a world map on the wall behind them" >}}
 
 ---
 

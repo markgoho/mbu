@@ -118,7 +118,7 @@ Rappelling is an inherently risky activity that requires professional supervisio
 
 {{< drg/video title="How to Rappel" url="https://youtu.be/7U6tdEevJgs?si=Iq942pMfrehB7dIX" >}}
 
-{{< drg/image src="images/adventure-activities-collage.png" alt="A four-panel collage showing Scouts engaged in different activities: hiking up a mountain trail, canoeing on a calm lake, rappelling down a cliff face, and snowshoeing through a snowy forest" >}}
+{{< drg/image src="images/adventure-activities-collage.avif" alt="A four-panel collage showing Scouts engaged in different activities: hiking up a mountain trail, canoeing on a calm lake, rappelling down a cliff face, and snowshoeing through a snowy forest" >}}
 
 ### Choosing Your Two Activities
 

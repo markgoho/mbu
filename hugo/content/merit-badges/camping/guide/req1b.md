@@ -52,7 +52,7 @@ Once you are in the field, you will not always have access to a weather app. Lea
 The saying "Red sky at night, sailor's delight; red sky in morning, sailor's warning" is actually based on science. A red sunset means dry air is moving in from the west. A red sunrise means that dry air has already passed and moisture may follow.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/cloud-types-sky.png" alt="A sky scene showing different cloud types — cirrus wisps at the top, cumulus puffs in the middle, and a dark cumulonimbus building on the horizon" >}}
+{{< drg/image src="images/cloud-types-sky.avif" alt="A sky scene showing different cloud types — cirrus wisps at the top, cumulus puffs in the middle, and a dark cumulonimbus building on the horizon" >}}
 
 ### Preparing for Bad Weather
 
@@ -108,7 +108,7 @@ Cold weather brings the risk of hypothermia and frostbite. These conditions can 
 
 {{< drg/video title="Cold Weather Camping Tips" url="https://youtu.be/Ftc3t93thDw?si=I9UE43d5wRYCQi6k" >}}
 
-{{< drg/image src="images/scout-rain-tarp-setup.png" alt="A Scout adjusting a rain tarp over a cooking area at camp as rain clouds roll in overhead" >}}
+{{< drg/image src="images/scout-rain-tarp-setup.avif" alt="A Scout adjusting a rain tarp over a cooking area at camp as rain clouds roll in overhead" >}}
 
 {{< drg/next-page
     text="You now know how to read the weather and prepare for changing conditions."

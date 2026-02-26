@@ -66,7 +66,7 @@ Active listening means giving someone your full attention when they speak — no
 Most people listen to respond, not to understand. Research shows that the average person remembers only about 25% of what they hear. Active listening is a skill that takes practice, but it dramatically improves your relationships and your ability to lead.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/active-listening-pair.png" alt="Two young people sitting face-to-face, one speaking and the other listening attentively with engaged body language" >}}
+{{< drg/image src="images/active-listening-pair.avif" alt="Two young people sitting face-to-face, one speaking and the other listening attentively with engaged body language" >}}
 
 #### Creating a Comfortable Environment for Sharing
 

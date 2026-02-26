@@ -61,7 +61,7 @@ Despite the convenience of stoves, cooking over a fire has its own benefits:
 **Atmosphere**
 - Let's be honest — a campfire is part of the camping experience. Gathering around the fire to cook, eat, and tell stories is a tradition that camp stoves cannot replace.
 
-{{< drg/image src="images/stove-vs-fire-comparison.png" alt="A split image showing a camp stove setup on a picnic table on the left with a pot of boiling water, and a campfire cooking setup on the right with a Dutch oven on coals" >}}
+{{< drg/image src="images/stove-vs-fire-comparison.avif" alt="A split image showing a camp stove setup on a picnic table on the left with a pot of boiling water, and a campfire cooking setup on the right with a Dutch oven on coals" >}}
 
 ### When to Use Which
 

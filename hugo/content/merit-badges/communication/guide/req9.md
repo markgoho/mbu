@@ -67,7 +67,7 @@ Teachers, corporate trainers, and instructional designers all use communication 
 - **Key skills:** Public speaking, patience, organization, adaptability
 - **Education:** Bachelor's degree (often a master's) in education, instructional design, or a specific subject area
 
-{{< drg/image src="images/communication-careers-montage.png" alt="A four-panel illustration showing different communication careers: a journalist with a microphone, a web designer at a computer, a public speaker at a conference podium, and a video producer behind a camera" >}}
+{{< drg/image src="images/communication-careers-montage.avif" alt="A four-panel illustration showing different communication careers: a journalist with a microphone, a web designer at a computer, a public speaker at a conference podium, and a video producer behind a camera" >}}
 
 ## Researching Your Chosen Career
 

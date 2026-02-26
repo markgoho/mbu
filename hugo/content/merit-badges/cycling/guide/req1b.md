@@ -63,7 +63,7 @@ You can get sunburned on a bike faster than you might think. Cyclists are expose
 Apply broad-spectrum sunscreen (SPF 30 or higher) at least 15 minutes before your ride. Reapply every two hours — or more often if you are sweating heavily. Don't forget the back of your neck, your ears, and the tops of your hands.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/cycling-first-aid-kit.png" alt="An open compact first-aid kit on a park bench next to a bicycle, showing bandages, gloves, antiseptic wipes, and moleskin" >}}
+{{< drg/image src="images/cycling-first-aid-kit.avif" alt="An open compact first-aid kit on a park bench next to a bicycle, showing bandages, gloves, antiseptic wipes, and moleskin" >}}
 
 ### Heat-Related Illness
 
@@ -115,7 +115,7 @@ Your counselor wants you to know why identifying local hazards matters. Trail cy
 Learn the phrase "Leaves of three, let it be" to identify poison ivy and poison oak. Before riding in a new area, research what poisonous plants and animals are common there. Wearing long sleeves and pants on trails provides an extra layer of protection.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/trail-hazard-plants.png" alt="An illustrated guide showing poison ivy, poison oak, and poison sumac leaves side by side for identification" >}}
+{{< drg/image src="images/trail-hazard-plants.avif" alt="An illustrated guide showing poison ivy, poison oak, and poison sumac leaves side by side for identification" >}}
 
 ### Your Cycling First-Aid Kit
 

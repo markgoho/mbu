@@ -17,7 +17,7 @@ When you step onto a trail, you aren't just a visitor; you are a guest in a mass
 
 While the Leave No Trace principles you studied in [Requirement 2b](/merit-badges/hiking/guide/req2b/) give us a detailed "how-to" manual for the trail, the Outdoor Code is our pledge of citizenship. It is a short, powerful promise that summarizes the heart of outdoor ethics.
 
-{{< drg/image src="images/scenic-overlook-stewardship.png" alt="A Scout standing at a scenic overlook looking out at a pristine wilderness valley" >}}
+{{< drg/image src="images/scenic-overlook-stewardship.avif" alt="A Scout standing at a scenic overlook looking out at a pristine wilderness valley" >}}
 
 ### The Outdoor Code
 
@@ -55,7 +55,7 @@ Wildfires can start from the smallest spark. If you see a fire that hasn't been 
 
 ---
 
-{{< drg/image src="images/backpacking-stove.png" alt="A compact backpacking stove heating water on a flat rock with no fire ring or scorched ground" >}}
+{{< drg/image src="images/backpacking-stove.avif" alt="A compact backpacking stove heating water on a flat rock with no fire ring or scorched ground" >}}
 
 ### 3. Be Considerate in the Outdoors
 

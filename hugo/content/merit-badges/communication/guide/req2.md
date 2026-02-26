@@ -47,7 +47,7 @@ Creating the visual aid is only half the job. You also need to present it. Here 
 - **Be genuine** — Your counselor is not looking for perfection. They want to see the real you.
 - **Make eye contact** — Look at your counselor, not at your visual aid.
 
-{{< drg/image src="images/scout-creative-presentation.png" alt="A Scout showing a colorful collage on a poster board to a merit badge counselor seated at a table, both smiling" >}}
+{{< drg/image src="images/scout-creative-presentation.avif" alt="A Scout showing a colorful collage on a poster board to a merit badge counselor seated at a table, both smiling" >}}
 
 ---
 

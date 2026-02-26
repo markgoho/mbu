@@ -48,7 +48,7 @@ Common lessons that Scouts discover during camp cooking:
 - **"I did not make enough food."** Active Scouts eat more than you expect. It is better to have leftovers than hungry patrol members.
 - **"Cleanup took way longer than I thought."** Start heating wash water before the meal is done.
 
-{{< drg/image src="images/camp-feedback-circle.png" alt="A patrol of Scouts sitting in a circle at camp after a meal, with one Scout taking notes while others share their feedback about the meal" >}}
+{{< drg/image src="images/camp-feedback-circle.avif" alt="A patrol of Scouts sitting in a circle at camp after a meal, with one Scout taking notes while others share their feedback about the meal" >}}
 
 ### How Planning Ensures Outdoor Success
 

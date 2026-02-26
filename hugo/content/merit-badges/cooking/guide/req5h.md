@@ -57,7 +57,7 @@ Aluminum foil does not burn in a campfire. It might look like it has disappeared
 - You managed smoke and noise from your cooking activities.
 - You left shared cooking facilities (pavilions, grills) cleaner than you found them.
 
-{{< drg/image src="images/leave-no-trace-cooking.png" alt="A campsite cooking area shown in a before-and-after split: the left shows Scouts cooking, the right shows the same area after cleanup — spotless, with no trace of cooking activity" >}}
+{{< drg/image src="images/leave-no-trace-cooking.avif" alt="A campsite cooking area shown in a before-and-after split: the left shows Scouts cooking, the right shows the same area after cleanup — spotless, with no trace of cooking activity" >}}
 
 ### The Outdoor Code
 

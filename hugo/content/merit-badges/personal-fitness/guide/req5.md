@@ -51,7 +51,7 @@ Ask yourself:
 
 Your target area does not have to be your absolute weakest area — it should be the area where improvement will make the biggest difference for you. If you are already a strong runner but cannot touch your toes, flexibility might be your best target. If you struggle with endurance activities, cardio might be the focus.
 
-{{< drg/image src="images/scout-recording-results.png" alt="A Scout sitting at a table writing results in a fitness log notebook, with a water bottle and stopwatch nearby" >}}
+{{< drg/image src="images/scout-recording-results.avif" alt="A Scout sitting at a table writing results in a fitness log notebook, with a water bottle and stopwatch nearby" >}}
 
 ### 5c — Three-Day Food Log
 

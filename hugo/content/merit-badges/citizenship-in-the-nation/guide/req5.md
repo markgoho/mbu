@@ -52,7 +52,7 @@ As you follow the news each day, pay attention to stories that involve the feder
     url="/merit-badges/citizenship-in-the-nation/guide/news-tracking-log/"
     type="printable" >}}
 
-{{< drg/image src="images/scout-reading-news.png" alt="A Scout sitting at a desk with a tablet showing a news website, taking notes in a spiral notebook with a pencil" >}}
+{{< drg/image src="images/scout-reading-news.avif" alt="A Scout sitting at a desk with a tablet showing a news website, taking notes in a spiral notebook with a pencil" >}}
 
 ### Choosing Your Issue
 
@@ -89,7 +89,7 @@ Here are some questions to ask yourself as you consume the news:
 - **Are multiple sides presented?** Good journalism shows different perspectives on an issue.
 - **Can I find this story from other sources?** If only one outlet is reporting it, proceed with caution.
 
-{{< drg/image src="images/news-sources-collage.png" alt="A collage showing different ways to consume news — a newspaper, a TV screen showing a news broadcast, and a smartphone displaying a news app — arranged on a coffee table" >}}
+{{< drg/image src="images/news-sources-collage.avif" alt="A collage showing different ways to consume news — a newspaper, a TV screen showing a news broadcast, and a smartphone displaying a news app — arranged on a coffee table" >}}
 
 ### Explore More
 

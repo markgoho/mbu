@@ -94,7 +94,7 @@ Here is a quick activity:
 
 Pay attention to what happens when you change the lighting, angle, or background. This will show you firsthand how sensitive AI training is to the quality and variety of its data.
 
-{{< drg/image src="images/teachable-machine-training.png" alt="A Scout sitting at a computer using a webcam, holding up hand gestures to train an image recognition model. The screen shows a training interface with progress bars. Bright, casual setting." >}}
+{{< drg/image src="images/teachable-machine-training.avif" alt="A Scout sitting at a computer using a webcam, holding up hand gestures to train an image recognition model. The screen shows a training interface with progress bars. Bright, casual setting." >}}
 
 {{< drg/external-link title="Google Teachable Machine" url="https://teachablemachine.withgoogle.com/" description="Train your own AI model in your browser — no coding required. Recognize images, sounds, or body poses." >}}
 
@@ -124,7 +124,7 @@ One of the most dangerous limitations is that AI systems can produce incorrect a
 
 Humans have an enormous amount of common-sense knowledge that we take for granted. You know that ice is cold, that you cannot walk through walls, and that a baby cannot drive a car. AI systems do not have this kind of broad understanding. They can be tripped up by questions that any five-year-old could answer.
 
-{{< drg/image src="images/neural-network-concept.png" alt="A Scout looking at a poster or screen showing a simplified neural network diagram — interconnected nodes in layers with data flowing through. The Scout is pointing at it, explaining to a buddy." >}}
+{{< drg/image src="images/neural-network-concept.avif" alt="A Scout looking at a poster or screen showing a simplified neural network diagram — interconnected nodes in layers with data flowing through. The Scout is pointing at it, explaining to a buddy." >}}
 
 ### AI Requires Enormous Resources
 

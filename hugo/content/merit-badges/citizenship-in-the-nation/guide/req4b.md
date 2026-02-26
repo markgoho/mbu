@@ -43,7 +43,7 @@ The answer was the Bill of Rights: the first ten amendments to the Constitution,
 James Madison originally proposed twelve amendments, not ten. The two that were not ratified at the time dealt with congressional pay and the size of congressional districts. The pay amendment was eventually ratified in 1992 — over 200 years later — becoming the 27th Amendment.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/bill-of-rights-document.png" alt="The Bill of Rights document displayed in a museum case with dramatic lighting, showing the handwritten text of the first ten amendments" >}}
+{{< drg/image src="images/bill-of-rights-document.avif" alt="The Bill of Rights document displayed in a museum case with dramatic lighting, showing the handwritten text of the first ten amendments" >}}
 
 ### The First Amendment in Your Daily Life
 
@@ -77,7 +77,7 @@ When discussing the Bill of Rights and 14th Amendment with your counselor, pick 
 
 The Bill of Rights and the 14th Amendment work together to protect you from government overreach — at both the federal and state level. Without them, the Constitution would create a powerful government but offer no shield against that power. With them, every citizen has a set of rights that no law, no President, and no court can take away.
 
-{{< drg/image src="images/supreme-court-facade.png" alt="The front facade of the United States Supreme Court building with its iconic columns and the inscription Equal Justice Under Law carved above the entrance" >}}
+{{< drg/image src="images/supreme-court-facade.avif" alt="The front facade of the United States Supreme Court building with its iconic columns and the inscription Equal Justice Under Law carved above the entrance" >}}
 
 ### Explore More
 

@@ -15,7 +15,7 @@ Demonstrate 3 examples of writing clear instructions for a school-related task.
 
 You have learned the principles of prompt engineering. Now it is time to put those skills to work. For this requirement, you will write three sets of clear instructions for school-related tasks and demonstrate them using an AI tool. This is your chance to show your counselor that you can communicate effectively with AI to get genuinely useful results.
 
-{{< drg/image src="images/school-task-demo.png" alt="A Scout at a school desk with a laptop open, demonstrating an AI interaction to a counselor sitting beside them. Both are looking at the screen, the counselor nodding approvingly." >}}
+{{< drg/image src="images/school-task-demo.avif" alt="A Scout at a school desk with a laptop open, demonstrating an AI interaction to a counselor sitting beside them. Both are looking at the screen, the counselor nodding approvingly." >}}
 
 ---
 

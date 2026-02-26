@@ -15,7 +15,7 @@ Meet with your counselor, play, and discuss 5 rounds of the "What Would You Do?"
 
 This requirement puts you in the hot seat. Your counselor will present you with five scenarios where AI creates an ethical dilemma, and you need to decide: What is the right thing to do? There is often no single "correct" answer — what matters is how you reason through the problem.
 
-{{< drg/image src="images/ethical-dilemma-discussion.png" alt="A small group of Scouts sitting in a circle having an animated discussion, with scenario cards visible on the floor between them. A counselor listens attentively. Indoor meeting room setting." >}}
+{{< drg/image src="images/ethical-dilemma-discussion.avif" alt="A small group of Scouts sitting in a circle having an animated discussion, with scenario cards visible on the floor between them. A counselor listens attentively. Indoor meeting room setting." >}}
 
 ---
 

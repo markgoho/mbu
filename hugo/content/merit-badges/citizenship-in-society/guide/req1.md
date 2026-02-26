@@ -88,7 +88,7 @@ You notice a Scout being left out of a group activity. No one is being mean on p
 - **Step four**: Keep an eye out. Inclusion is not a one-time act — it is a habit.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/scouts-discussing-terms.png" alt="Two Scouts sitting at a table with notebooks, discussing ideas and writing, with a Scout handbook visible" >}}
+{{< drg/image src="images/scouts-discussing-terms.avif" alt="Two Scouts sitting at a table with notebooks, discussing ideas and writing, with a Scout handbook visible" >}}
 
 ### Connecting the Terms to the Scout Oath and Scout Law
 

@@ -39,7 +39,7 @@ The fitness and health industry is one of the fastest-growing sectors in the eco
 
 **Recreation and fitness facility manager.** These professionals manage gyms, community centers, parks, and sports facilities. They oversee staff, programming, and budgets. A degree in recreation management, sports management, or business is typical.
 
-{{< drg/image src="images/fitness-careers-collage.png" alt="A collage illustration showing diverse fitness professionals at work: a personal trainer coaching a client, a physical therapist working with a patient, and a dietitian reviewing a meal plan" >}}
+{{< drg/image src="images/fitness-careers-collage.avif" alt="A collage illustration showing diverse fitness professionals at work: a personal trainer coaching a client, a physical therapist working with a patient, and a dietitian reviewing a meal plan" >}}
 
 {{< drg/tip >}}
 When researching a career, try to interview someone who actually does the job. Ask them what a typical day looks like, what they love about it, and what they would change. Real conversations give you insights that websites cannot.

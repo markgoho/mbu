@@ -66,7 +66,7 @@ This is where outdoor cooking gets exciting. Cooking over campfire coals gives y
 A well-seasoned cast-iron Dutch oven can last for generations. Some families pass theirs down like heirlooms. The "seasoning" is a layer of polymerized oil that builds up over time, creating a naturally nonstick surface that improves with every use.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/dutch-oven-coals.png" alt="A Dutch oven sitting on a bed of charcoal briquettes with additional briquettes on the lid, in a camp setting with a Scout using a lid lifter to check inside" >}}
+{{< drg/image src="images/dutch-oven-coals.avif" alt="A Dutch oven sitting on a bed of charcoal briquettes with additional briquettes on the lid, in a camp setting with a Scout using a lid lifter to check inside" >}}
 
 ### Foil Pack or Skewer Cooking
 

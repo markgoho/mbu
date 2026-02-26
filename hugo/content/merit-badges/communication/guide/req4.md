@@ -63,7 +63,7 @@ Active listening is the most important skill you will use during the interview. 
 - **Taking notes** — Write down key phrases, interesting stories, and details you want to remember.
 - **Asking follow-up questions** — Go deeper. "You mentioned that you traveled to Japan for work. What was that experience like?"
 
-{{< drg/image src="images/scout-interviewing-leader.png" alt="A Scout sitting across a table from a community leader, taking notes in a notebook during an interview, with both people engaged in conversation" >}}
+{{< drg/image src="images/scout-interviewing-leader.avif" alt="A Scout sitting across a table from a community leader, taking notes in a notebook during an interview, with both people engaged in conversation" >}}
 
 ## Crafting the Introduction
 
@@ -108,7 +108,7 @@ Practice the phone call with a family member before you perform it for your coun
 
 {{< drg/external-link title="NPR — How to Interview Someone" url="https://training.npr.org/2018/05/22/lets-learn-how-to-interview-anyone/" description="Tips from professional journalists on how to prepare for and conduct a great interview." >}}
 
-{{< drg/image src="images/scout-phone-invitation.png" alt="A Scout holding a phone and looking at a notepad with event details written on it, preparing to make a professional invitation call" >}}
+{{< drg/image src="images/scout-phone-invitation.avif" alt="A Scout holding a phone and looking at a notepad with event details written on it, preparing to make a professional invitation call" >}}
 
 {{< drg/next-page
     text="You have learned how to interview, listen actively, and introduce a speaker"

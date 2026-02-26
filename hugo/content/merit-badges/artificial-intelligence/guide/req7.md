@@ -23,7 +23,7 @@ With your counselor's approval, design a short lesson plan on AI and teach it to
 
 This is the capstone of your merit badge experience — the place where you take everything you have learned and create something real. You will choose **one** of two options: build an AI project (7A) or teach a lesson about AI (7B). Both are equally valid, and both require planning, execution, and reflection. Pick the one that excites you most.
 
-{{< drg/image src="images/ai-project-planning.png" alt="A Scout spread out at a table with a project plan on paper, a laptop open to an AI tool, colored sticky notes, and a pencil. Planning phase of a hands-on AI project." >}}
+{{< drg/image src="images/ai-project-planning.avif" alt="A Scout spread out at a table with a project plan on paper, a laptop open to an AI tool, colored sticky notes, and a pencil. Planning phase of a hands-on AI project." >}}
 
 ---
 
@@ -97,7 +97,7 @@ When presenting to your counselor, show the working project and walk through the
 
 Teaching is one of the most powerful ways to prove you understand something. If you can explain AI clearly enough that a group of Scouts understands it, you truly know the material. This option also builds leadership skills that will serve you well beyond this merit badge.
 
-{{< drg/image src="images/scout-teaching-patrol.png" alt="A Scout standing at the front of a group of younger Scouts, gesturing toward a screen or poster showing AI concepts. The audience is engaged, some raising hands. Indoor meeting space." >}}
+{{< drg/image src="images/scout-teaching-patrol.avif" alt="A Scout standing at the front of a group of younger Scouts, gesturing toward a screen or poster showing AI concepts. The audience is engaged, some raising hands. Indoor meeting space." >}}
 
 ### Lesson Plan Requirements
 

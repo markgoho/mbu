@@ -27,7 +27,7 @@ You do not need a coach to use periodization. Simply alternate between harder an
 The biggest threat to a long-term fitness routine is boredom. Change your activities with the seasons — swim in summer, hike in fall, ski or do indoor workouts in winter, and run in spring. Variety keeps your body guessing and your mind engaged.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/year-round-fitness-calendar.png" alt="An illustrated four-season calendar showing different fitness activities for each season: swimming in summer, hiking in fall, indoor training in winter, and running in spring" >}}
+{{< drg/image src="images/year-round-fitness-calendar.avif" alt="An illustrated four-season calendar showing different fitness activities for each season: swimming in summer, hiking in fall, indoor training in winter, and running in spring" >}}
 
 ### C. Deep Dive: Nutrition for Performance
 

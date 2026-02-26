@@ -78,7 +78,7 @@ Today, families come in many shapes and sizes. Some have two parents, some have 
 - **Roles:** More flexible. Everyone is encouraged to contribute, and roles are often shared rather than assigned by tradition.
 - **Communication:** Happens in person, by text, on video calls, and through shared calendars. The tools have changed, but the need to talk and listen has not.
 
-{{< drg/image src="images/family-through-history.png" alt="A split illustration showing a historical family working together on a farm on the left and a diverse modern family gathered around a dinner table on the right" >}}
+{{< drg/image src="images/family-through-history.avif" alt="A split illustration showing a historical family working together on a farm on the left and a diverse modern family gathered around a dinner table on the right" >}}
 
 ---
 
@@ -122,7 +122,7 @@ Military families face unique challenges: frequent moves, deployments, and long 
 According to the U.S. Census Bureau, about 4 million children in the United States are raised primarily by their grandparents. Multigenerational households are one of the fastest-growing family types in the country.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/diverse-family-types.png" alt="A warm collage-style illustration showing different types of families — a large multigenerational family, a single parent with children, a blended family, and a military family — all depicted with warmth and joy" >}}
+{{< drg/image src="images/diverse-family-types.avif" alt="A warm collage-style illustration showing different types of families — a large multigenerational family, a single parent with children, a blended family, and a military family — all depicted with warmth and joy" >}}
 
 ---
 

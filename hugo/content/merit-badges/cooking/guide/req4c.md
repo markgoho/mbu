@@ -51,7 +51,7 @@ Your counselor may suggest changes — a different cooking method, a food safety
 
 Remember: this requirement is about **planning**, not perfection. Your counselor knows you are learning, and they want to help you succeed. The more preparation you do now, the smoother your cooking will go in [Req 4d](/merit-badges/cooking/guide/req4d/).
 
-{{< drg/image src="images/counselor-review-plan.png" alt="A Scout sitting across from a merit badge counselor at a table, showing a meal plan notebook while the counselor reviews it and points to a section" >}}
+{{< drg/image src="images/counselor-review-plan.avif" alt="A Scout sitting across from a merit badge counselor at a table, showing a meal plan notebook while the counselor reviews it and points to a section" >}}
 
 {{< drg/external-link
     title="MyPlate Kitchen"

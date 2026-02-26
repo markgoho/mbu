@@ -60,7 +60,7 @@ The requirement specifically asks you to prepare teaching aids. These are tools 
 - **Handouts** — A step-by-step reference card the learner can keep
 - **Videos** — A short clip that shows the skill in action (use this as a supplement, not a replacement for your teaching)
 
-{{< drg/image src="images/scout-teaching-knots.png" alt="A Scout demonstrating how to tie a knot to a younger Scout, with a poster showing knot diagrams propped up behind them on an easel" >}}
+{{< drg/image src="images/scout-teaching-knots.avif" alt="A Scout demonstrating how to tie a knot to a younger Scout, with a poster showing knot diagrams propped up behind them on an easel" >}}
 
 ### 5. Assessment
 

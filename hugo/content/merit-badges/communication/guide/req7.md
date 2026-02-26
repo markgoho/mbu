@@ -78,7 +78,7 @@ Your site must include:
 - At least **one photograph or illustration** — Use your own photos or images you have permission to use.
 - At least **one link** to another helpful website or blog.
 
-{{< drg/image src="images/scout-building-website.png" alt="A Scout working on a laptop, designing a website with a troop page visible on the screen, with notes and photos spread on the desk" >}}
+{{< drg/image src="images/scout-building-website.avif" alt="A Scout working on a laptop, designing a website with a troop page visible on the screen, with notes and photos spread on the desk" >}}
 
 {{< drg/safety-first >}}
 If you plan to publish your site online, show it to your parent or guardian and your counselor first. Never post personal information like your home address, phone number, or school name. Use first names only and avoid sharing photos that reveal your location.

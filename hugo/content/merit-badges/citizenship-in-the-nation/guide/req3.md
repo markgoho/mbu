@@ -67,7 +67,7 @@ A bill must pass both the House and the Senate in identical form before it can b
 - Settle disputes between states
 - Interpret what the Constitution means in specific situations
 
-{{< drg/image src="images/three-branches-overview.png" alt="An illustrated diagram showing the three branches of government — the Capitol building for Legislative, the White House for Executive, and the Supreme Court building for Judicial — connected by arrows representing checks and balances" >}}
+{{< drg/image src="images/three-branches-overview.avif" alt="An illustrated diagram showing the three branches of government — the Capitol building for Legislative, the White House for Executive, and the Supreme Court building for Judicial — connected by arrows representing checks and balances" >}}
 
 ### Why Divide Power?
 
@@ -122,7 +122,7 @@ You do not have to hold office to participate in government. Citizens can be inv
 - File lawsuits to protect your rights
 - Attend court proceedings (most federal courts are open to the public)
 
-{{< drg/image src="images/capitol-building-steps.png" alt="The U.S. Capitol building viewed from the front steps, with visitors walking up the wide staircase on a bright day" >}}
+{{< drg/image src="images/capitol-building-steps.avif" alt="The U.S. Capitol building viewed from the front steps, with visitors walking up the wide staircase on a bright day" >}}
 
 ### Explore More
 

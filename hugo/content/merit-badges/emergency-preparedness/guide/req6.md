@@ -62,7 +62,7 @@ You will not always have a commercial stretcher in the backcountry. These two me
 
 **Why it works:** The jacket sleeves act as loops that hold the poles in place. Multiple jackets distribute the weight across the length of the stretcher. This method is fast to assemble with materials almost always available on a camping trip.
 
-{{< drg/image src="images/improvised-stretcher.png" alt="Two Scouts carrying an improvised blanket-and-poles stretcher through a wooded trail" >}}
+{{< drg/image src="images/improvised-stretcher.avif" alt="Two Scouts carrying an improvised blanket-and-poles stretcher through a wooded trail" >}}
 
 ---
 
@@ -100,6 +100,6 @@ While transporting, your priority is the patient's well-being:
 
 {{< drg/video title="Improvised Stretchers" url="https://youtu.be/EYfgxODBlwY" >}}
 
-{{< drg/image src="images/stretcher-carry-trail.png" alt="Four Scouts carefully carrying a stretcher along a narrow woodland trail, working as a team" >}}
+{{< drg/image src="images/stretcher-carry-trail.avif" alt="Four Scouts carefully carrying a stretcher along a narrow woodland trail, working as a team" >}}
 
 {{< drg/next-page text="You have learned two methods for building improvised stretchers and how to safely transport an injured person." teaser="Learn about the National Incident Management System (NIMS), the Incident Command System (ICS), and how your Scout troop fits into emergency response." url="/merit-badges/emergency-preparedness/guide/req7/" >}}

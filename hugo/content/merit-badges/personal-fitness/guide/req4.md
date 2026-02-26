@@ -58,7 +58,7 @@ You need **two** tests here — one for your core and one for your upper body.
 - **Push-ups in 60 seconds:** Start in a plank position with hands shoulder-width apart. Lower your chest to the floor and push back up. Count how many you complete with good form in one minute.
 - **Pull-ups in 60 seconds:** Hang from a bar with palms facing away from you, arms fully extended. Pull yourself up until your chin is above the bar. Count how many you complete in one minute.
 
-{{< drg/image src="images/fitness-test-exercises.png" alt="Four illustrated panels showing proper form for sit-ups, plank hold, push-ups, and pull-ups, with arrows indicating correct body alignment" >}}
+{{< drg/image src="images/fitness-test-exercises.avif" alt="Four illustrated panels showing proper form for sit-ups, plank hold, push-ups, and pull-ups, with arrows indicating correct body alignment" >}}
 
 {{< drg/safety-first >}}
 Proper form matters more than high numbers. A sit-up done with poor form can strain your back. A push-up with sagging hips does not count. Have your counselor or a partner watch your form and only count repetitions that are done correctly.

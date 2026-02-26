@@ -60,7 +60,7 @@ Your closing is what the audience will remember most. Summarize your key message
 - Issue a call to action
 - Leave the audience with a memorable quote or image
 
-{{< drg/image src="images/scout-delivering-speech.png" alt="A Scout standing at the front of a meeting room delivering a speech to an attentive group of Scouts and leaders, using confident hand gestures" >}}
+{{< drg/image src="images/scout-delivering-speech.avif" alt="A Scout standing at the front of a meeting room delivering a speech to an attentive group of Scouts and leaders, using confident hand gestures" >}}
 
 ## Writing Tips
 
@@ -122,7 +122,7 @@ Dr. Martin Luther King Jr.'s famous "I Have a Dream" speech lasted about 17 minu
 
 {{< drg/external-link title="TED Talks — How to Speak So People Listen" url="https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen" description="A short, powerful talk on what makes people pay attention when you speak." >}}
 
-{{< drg/image src="images/speech-structure-diagram.png" alt="A simple visual diagram showing the three parts of a speech (Opening, Body, Closing) with brief descriptions for each section" >}}
+{{< drg/image src="images/speech-structure-diagram.avif" alt="A simple visual diagram showing the three parts of a speech (Opening, Body, Closing) with brief descriptions for each section" >}}
 
 {{< drg/next-page
     text="You have written and delivered a speech to a group"

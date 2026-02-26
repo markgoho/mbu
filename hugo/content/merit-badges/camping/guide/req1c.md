@@ -69,7 +69,7 @@ Check the color of your urine — it is the easiest way to monitor hydration. Pa
 
 **First aid:** The best treatment is descent. Move to a lower elevation. Rest, drink fluids, and take over-the-counter pain relievers for headache. If symptoms are severe (confusion, difficulty walking, persistent vomiting), descend immediately and seek emergency medical care.
 
-{{< drg/image src="images/first-aid-kit-camping.png" alt="An open first-aid kit laid out on a camp table showing organized supplies including bandages, antiseptic, moleskin, and tweezers" >}}
+{{< drg/image src="images/first-aid-kit-camping.avif" alt="An open first-aid kit laid out on a camp table showing organized supplies including bandages, antiseptic, moleskin, and tweezers" >}}
 
 ### Insect Stings
 
@@ -125,7 +125,7 @@ Carry moleskin and a small pair of scissors in your personal first-aid kit. Trea
 
 {{< drg/external-link title="American Red Cross First Aid Training" url="https://www.redcross.org/take-a-class/first-aid" description="Find a first aid course near you. Hands-on training is the best way to build confidence in your first aid skills." >}}
 
-{{< drg/image src="images/tick-removal-technique.png" alt="A close-up illustration showing the correct technique for removing a tick with fine-tipped tweezers, pulling straight out from the skin" >}}
+{{< drg/image src="images/tick-removal-technique.avif" alt="A close-up illustration showing the correct technique for removing a tick with fine-tipped tweezers, pulling straight out from the skin" >}}
 
 {{< drg/next-page
     text="You now know how to prevent and treat the most common camping injuries and illnesses."

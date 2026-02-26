@@ -40,7 +40,7 @@ The Declaration also states that if a government fails to protect these rights, 
 The original Declaration of Independence is on display at the National Archives in Washington, D.C. It is kept in a specially designed case filled with argon gas to prevent deterioration. The ink has faded significantly over the centuries, but the words are still readable.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/declaration-signing-scene.png" alt="A historical painting-style illustration of delegates in colonial attire gathered in Independence Hall to sign the Declaration of Independence, with Thomas Jefferson presenting the document" >}}
+{{< drg/image src="images/declaration-signing-scene.avif" alt="A historical painting-style illustration of delegates in colonial attire gathered in Independence Hall to sign the Declaration of Independence, with Thomas Jefferson presenting the document" >}}
 
 ### Why It Still Matters
 

@@ -76,7 +76,7 @@ Your sleeping bag is one of the most important — and most delicate — pieces 
 Never store a sleeping bag compressed in its stuff sack. Long-term compression crushes the insulation (whether down or synthetic) and reduces its ability to trap warm air. Instead, store your sleeping bag loosely in a large cotton or mesh storage sack, or hang it in a closet.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/sleeping-bag-storage-sack.png" alt="A sleeping bag loosely stored in a large mesh storage sack next to a small stuff sack, showing the size difference between storage and travel compression" >}}
+{{< drg/image src="images/sleeping-bag-storage-sack.avif" alt="A sleeping bag loosely stored in a large mesh storage sack next to a small stuff sack, showing the size difference between storage and travel compression" >}}
 
 ### Tent Care
 
@@ -99,7 +99,7 @@ Good gear care comes down to three principles:
 
 Follow these three rules and your gear will last for years of adventures.
 
-{{< drg/image src="images/gear-drying-clothesline.png" alt="Camping gear drying on a clothesline in a backyard: a sleeping bag draped over, socks and shirts hanging, boots sitting upside down on the ground below" >}}
+{{< drg/image src="images/gear-drying-clothesline.avif" alt="Camping gear drying on a clothesline in a backyard: a sleeping bag draped over, socks and shirts hanging, boots sitting upside down on the ground below" >}}
 
 {{< drg/next-page
     text="You know how to keep your gear in top condition."

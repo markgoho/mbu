@@ -29,7 +29,7 @@ Start with a simple sketch of your home. It does not need to be to scale or arch
 
 Label each room so anyone looking at the plan can quickly understand the layout.
 
-{{< drg/image src="images/floor-plan-sketch.png" alt="A simple hand-drawn floor plan of a home showing rooms, doors, windows, and marked escape routes" >}}
+{{< drg/image src="images/floor-plan-sketch.avif" alt="A simple hand-drawn floor plan of a home showing rooms, doors, windows, and marked escape routes" >}}
 
 ---
 
@@ -103,6 +103,6 @@ Your escape plan depends on early warning. Make sure your home has working smoke
 
 Test smoke detectors monthly and replace batteries at least once a year (or when the alarm chirps). Replace the entire unit every 10 years.
 
-{{< drg/image src="images/smoke-detector-test.png" alt="A Scout reaching up to press the test button on a smoke detector mounted on a ceiling" >}}
+{{< drg/image src="images/smoke-detector-test.avif" alt="A Scout reaching up to press the test button on a smoke detector mounted on a ceiling" >}}
 
 {{< drg/next-page text="You have created and practiced a home fire escape plan with your family." teaser="Now prepare a family disaster kit for both sheltering in place and evacuation." url="/merit-badges/emergency-preparedness/guide/req2c/" >}}

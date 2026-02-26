@@ -103,7 +103,7 @@ Today, emergency preparedness is a science. Governments, communities, and famili
 
 **Get Ready!** The skills you learn in this badge could save a life — maybe even your own. All it takes is the willingness to learn, plan, and practice. Let's get started.
 
-{{< drg/image src="images/scout-emergency-ready.png" alt="A Scout standing confidently with an emergency kit, ready to respond" >}}
+{{< drg/image src="images/scout-emergency-ready.avif" alt="A Scout standing confidently with an emergency kit, ready to respond" >}}
 
 ---
 
@@ -143,7 +143,7 @@ Not every emergency makes the news. Food poisoning, a kitchen fire, a family mem
 Every family should have an emergency plan and a disaster kit. You will build both during this merit badge. These are not just requirements — they are tools your family will keep and use long after you earn the badge.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/kinds-of-emergencies.png" alt="Four panels showing different types of emergencies: a tornado, a house fire, a power outage, and a first aid situation" >}}
+{{< drg/image src="images/kinds-of-emergencies.avif" alt="Four panels showing different types of emergencies: a tornado, a house fire, a power outage, and a first aid situation" >}}
 
 {{< drg/did-you-know >}}
 According to FEMA, nearly 60% of American adults have not practiced what to do in a disaster. By earning this merit badge, you will be better prepared than most adults in the country.

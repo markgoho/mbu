@@ -110,6 +110,6 @@ Emergency preparedness is not just a career — it can be a fulfilling personal 
 
 {{< drg/video title="Teen CERT Team Training" url="https://youtu.be/UidlepnW93k" >}}
 
-{{< drg/image src="images/emergency-career-paths.png" alt="A career path infographic showing different emergency services careers branching from a central 'Emergency Preparedness' label" >}}
+{{< drg/image src="images/emergency-career-paths.avif" alt="A career path infographic showing different emergency services careers branching from a central 'Emergency Preparedness' label" >}}
 
 {{< drg/next-page text="You have explored careers and personal opportunities in emergency preparedness." teaser="Go beyond the badge — discover advanced training, volunteer opportunities, and organizations that keep communities safe." url="/merit-badges/emergency-preparedness/guide/extended-learning/" >}}

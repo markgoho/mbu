@@ -26,7 +26,7 @@ The requirement mentions four key ideas: ride predictably, be conspicuous, think
 - Ride ready: Keep your hands near the brakes, stay balanced and relaxed, and be prepared to stop or swerve at any moment. A ready rider can react in a fraction of a second.
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/cyclist-scanning-road.png" alt="A Scout on a bicycle scanning the road ahead, hands near the brakes, wearing a bright jersey and helmet" >}}
+{{< drg/image src="images/cyclist-scanning-road.avif" alt="A Scout on a bicycle scanning the road ahead, hands near the brakes, wearing a bright jersey and helmet" >}}
 
 ### Common Cycling Hazards
 
@@ -89,7 +89,7 @@ Your counselor wants you to think about hazards using four steps. Here is how th
 Studies show that wearing a properly fitted bicycle helmet reduces the risk of serious head injury by up to 70%. That one piece of gear is the single most effective thing you can do to protect yourself while riding.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/intersection-awareness.png" alt="Bird's-eye view illustration of a cyclist approaching an intersection, showing sight lines and potential hazard zones with turning cars" >}}
+{{< drg/image src="images/intersection-awareness.avif" alt="Bird's-eye view illustration of a cyclist approaching an intersection, showing sight lines and potential hazard zones with turning cars" >}}
 
 ### Explore More Resources
 

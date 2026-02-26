@@ -17,7 +17,7 @@ When you step onto a trail, you are more than just a visitor; you are a steward 
 
 ---
 
-{{< drg/image src="images/leave-no-trace-sign.png" alt="A trail sign at a wilderness boundary showing Leave No Trace principles on a wooden kiosk" >}}
+{{< drg/image src="images/leave-no-trace-sign.avif" alt="A trail sign at a wilderness boundary showing Leave No Trace principles on a wooden kiosk" >}}
 
 ### 1. Plan Ahead and Prepare
 
@@ -63,7 +63,7 @@ Never dispose of waste or "gray water" near a water source. Contaminating a stre
 
 ---
 
-{{< drg/image src="images/trail-litter-pickup.png" alt="A Scout picking up trail litter and placing it in a small trash bag attached to their pack" >}}
+{{< drg/image src="images/trail-litter-pickup.avif" alt="A Scout picking up trail litter and placing it in a small trash bag attached to their pack" >}}
 
 ### 4. Leave What You Find
 
@@ -95,7 +95,7 @@ We are the guests in the homes of animals. Respecting wildlife means giving them
 
 ---
 
-{{< drg/image src="images/wildlife-observation.png" alt="A Scout observing a deer through binoculars from a safe distance on a mountain meadow trail" >}}
+{{< drg/image src="images/wildlife-observation.avif" alt="A Scout observing a deer through binoculars from a safe distance on a mountain meadow trail" >}}
 
 ### 7. Be Considerate of Other Visitors
 

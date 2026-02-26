@@ -63,7 +63,7 @@ The universal distress signal is any signal repeated three times — three fires
 
 {{< drg/video title="Ground to Air Signals" url="https://youtu.be/JgNVuxOMOF8" >}}
 
-{{< drg/image src="images/ground-to-air-signals.png" alt="Overhead view of large ground-to-air signal symbols made from rocks on a sandy clearing" >}}
+{{< drg/image src="images/ground-to-air-signals.avif" alt="Overhead view of large ground-to-air signal symbols made from rocks on a sandy clearing" >}}
 
 ---
 

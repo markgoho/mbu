@@ -55,7 +55,7 @@ Your second meal (likely lunch) should not require a stove. Serve it quickly so 
 
 Distribute snacks from the pre-portioned bags. Trail snacks are best served during a rest break — a chance to refuel, hydrate, and check on your group's energy levels.
 
-{{< drg/image src="images/trail-stove-cooking.png" alt="A Scout operating a small canister backpacking stove on a flat rock, boiling water in a lightweight pot, with a group of hikers resting with their packs nearby in a mountain meadow" >}}
+{{< drg/image src="images/trail-stove-cooking.avif" alt="A Scout operating a small canister backpacking stove on a flat rock, boiling water in a lightweight pot, with a group of hikers resting with their packs nearby in a mountain meadow" >}}
 
 ### Trail Cooking Tips
 

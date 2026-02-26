@@ -53,7 +53,7 @@ Here are some categories to help you brainstorm. This is not an exhaustive list 
 - Jackie Robinson breaking the color barrier in Major League Baseball (1947)
 - The publication of books, films, or art that changed how people understood a marginalized group
 
-{{< drg/image src="images/historical-turning-point.png" alt="A historical scene depicting a moment of positive social change, people celebrating and marching peacefully together" >}}
+{{< drg/image src="images/historical-turning-point.avif" alt="A historical scene depicting a moment of positive social change, people celebrating and marching peacefully together" >}}
 
 ### How to Research Your Event
 

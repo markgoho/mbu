@@ -140,7 +140,7 @@ Today, camping is something you choose to do. Modern gear — lightweight tents,
 
 **Get Ready!** With 20 nights of camping ahead of you, this badge is a real adventure. You will learn everything from first aid to fire safety, from packing a backpack to planning a menu. Let's get started.
 
-{{< drg/image src="images/scout-campsite-sunset.png" alt="A Scout standing near a tent at a campsite during golden hour, looking out at a forested landscape" >}}
+{{< drg/image src="images/scout-campsite-sunset.avif" alt="A Scout standing near a tent at a campsite during golden hour, looking out at a forested landscape" >}}
 
 ---
 
@@ -178,7 +178,7 @@ Camping in cold weather and snow is a serious challenge — and one of the most 
 Cold temperatures can be dangerous. Dress in moisture-wicking layers, stay dry at all costs, and eat high-calorie foods to fuel your body's heat production. Never go winter camping without experienced adult supervision.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/winter-camping-scene.png" alt="Two Scouts setting up a four-season tent in a snowy forest clearing with snow-covered pine trees around them" >}}
+{{< drg/image src="images/winter-camping-scene.avif" alt="Two Scouts setting up a four-season tent in a snowy forest clearing with snow-covered pine trees around them" >}}
 
 ### Hammock Camping
 
@@ -192,7 +192,7 @@ Hammock camping has been used by militaries for centuries. Sailors in the Spanis
 
 This is the kind of camping you do most often as a Scout — organized campouts with your patrol and troop. Group camping emphasizes the patrol method: everyone has a role, from cooking to cleanup, and you work together to run a smooth camp. Scout camping builds leadership, teamwork, and responsibility in ways that solo camping simply cannot.
 
-{{< drg/image src="images/patrol-cooking-campfire.png" alt="A patrol of Scouts cooking together at a campsite with tents visible in the background and a camp stove on a picnic table" >}}
+{{< drg/image src="images/patrol-cooking-campfire.avif" alt="A patrol of Scouts cooking together at a campsite with tents visible in the background and a camp stove on a picnic table" >}}
 
 ---
 

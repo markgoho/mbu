@@ -25,7 +25,7 @@ There are four primary categories of hiking footwear to consider:
 Always get your boots fitted properly by a professional. Visit an outdoor gear store in the late afternoon when your feet are slightly swollen from the day's activity—this mimics how they will feel on the trail. Be sure to wear the same hiking socks you plan to use on your trips to ensure the perfect fit.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/footwear-lineup.png" alt="Four types of hiking footwear arranged in a row on a wooden deck" >}}
+{{< drg/image src="images/footwear-lineup.avif" alt="Four types of hiking footwear arranged in a row on a wooden deck" >}}
 
 ### C. Multi-Day Hiking Experiences
 
@@ -43,7 +43,7 @@ Ready to spend more than one night under the stars? These legendary trails offer
 The Appalachian Trail was completed in 1937 and is maintained by thousands of volunteers each year, making it one of the largest collaborative conservation efforts in the world.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/appalachian-trail-panorama.png" alt="A panoramic view of the Appalachian Trail winding through misty green mountains in the Blue Ridge" >}}
+{{< drg/image src="images/appalachian-trail-panorama.avif" alt="A panoramic view of the Appalachian Trail winding through misty green mountains in the Blue Ridge" >}}
 
 ### D. Same-Day Hiking Experiences
 

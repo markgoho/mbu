@@ -17,7 +17,7 @@ Before you can prepare for an emergency, you need a framework — a way of think
 
 These five aspects are not random — they follow the logical order of a crisis. Some happen before the emergency, some during, and some after. Together, they create a complete picture of what it means to be truly prepared.
 
-{{< drg/image src="images/five-aspects-diagram.png" alt="A diagram showing the five aspects of emergency preparedness in a cycle: Prevention, Protection, Mitigation, Response, Recovery" >}}
+{{< drg/image src="images/five-aspects-diagram.avif" alt="A diagram showing the five aspects of emergency preparedness in a cycle: Prevention, Protection, Mitigation, Response, Recovery" >}}
 
 ---
 
@@ -132,7 +132,7 @@ Recovery is everything that happens after the immediate danger has passed. It is
 - Conducting an after-action review to learn what went right and wrong is recovery.
 - Providing emotional support to those affected by a traumatic event is recovery.
 
-{{< drg/image src="images/community-recovery.png" alt="Volunteers helping clean up a neighborhood after a storm, working together to stack debris and help neighbors" >}}
+{{< drg/image src="images/community-recovery.avif" alt="Volunteers helping clean up a neighborhood after a storm, working together to stack debris and help neighbors" >}}
 
 ---
 

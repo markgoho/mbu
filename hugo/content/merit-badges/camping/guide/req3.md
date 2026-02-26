@@ -40,7 +40,7 @@ A topographic map (often called a "topo map") is different from a regular road m
 Before your trip, spend time studying the topo map at home. Identify key landmarks — ridgelines, creek crossings, trail junctions — that you will use as checkpoints along your route. Mark your planned campsites and water sources on the map.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/topo-map-compass-table.png" alt="A topographic map spread out on a camp table with a compass, pencil, and highlighter, showing a marked route to a campsite" >}}
+{{< drg/image src="images/topo-map-compass-table.avif" alt="A topographic map spread out on a camp table with a compass, pencil, and highlighter, showing a marked route to a campsite" >}}
 
 ### Option A: Compass Navigation
 
@@ -112,7 +112,7 @@ This requirement asks you to create a written plan for an overnight trek. Here i
 
 {{< drg/external-link title="Scouting America Planning Worksheet" url="https://filestore.scouting.org/filestore/boyscouts/pdf/512-505-2016-Scout-Planning-Worksheet.pdf" description="An official planning worksheet to help you organize your overnight trek details." >}}
 
-{{< drg/image src="images/scout-using-compass-trail.png" alt="A Scout standing on a trail holding a compass flat in their palm, looking ahead at a mountain ridge with a topo map visible in their other hand" >}}
+{{< drg/image src="images/scout-using-compass-trail.avif" alt="A Scout standing on a trail holding a compass flat in their palm, looking ahead at a mountain ridge with a topo map visible in their other hand" >}}
 
 {{< drg/next-page
     text="You have learned how to plan a trek and navigate to your campsite."

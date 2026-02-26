@@ -45,7 +45,7 @@ Signs of emotional fitness include:
 One simple way to build emotional fitness is to practice "naming it to tame it." When you feel a strong emotion, pause and say to yourself (or out loud), "I am feeling ___." Research shows that simply identifying an emotion reduces its intensity and helps you respond more thoughtfully.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-journaling-campfire.png" alt="A Scout sitting near a campfire writing in a journal, looking thoughtful and calm" >}}
+{{< drg/image src="images/scout-journaling-campfire.avif" alt="A Scout sitting near a campfire writing in a journal, looking thoughtful and calm" >}}
 
 ### Social Fitness
 

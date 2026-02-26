@@ -78,11 +78,11 @@ The Camping merit badge is one of the most time-intensive Eagle-required badges 
 - **High adventure bases** — Philmont, Northern Tier, Sea Base, and the Summit. These are unforgettable experiences that also count toward your camping nights.
 - **Patrol campouts** — Smaller, more independent trips planned and run by your patrol.
 
-{{< drg/image src="images/camping-log-journal.png" alt="A Scout's camping log notebook open to a page showing entries with dates, locations, and shelter types, with a pen lying across the page" >}}
+{{< drg/image src="images/camping-log-journal.avif" alt="A Scout's camping log notebook open to a page showing entries with dates, locations, and shelter types, with a pen lying across the page" >}}
 
 {{< drg/external-link title="Scouting America Camping Programs" url="https://www.scouting.org/outdoor-programs/camping/" description="Find camping events, programs, and resources for your troop through the official Scouting America camping page." >}}
 
-{{< drg/image src="images/variety-of-camp-shelters.png" alt="A collage showing four different shelter types: a pitched tent in a forest, a hammock strung between trees, a lean-to shelter, and a Scout sleeping under the open sky with a sleeping pad and bag" >}}
+{{< drg/image src="images/variety-of-camp-shelters.avif" alt="A collage showing four different shelter types: a pitched tent in a forest, a hammock strung between trees, a lean-to shelter, and a Scout sleeping under the open sky with a sleeping pad and bag" >}}
 
 {{< drg/next-page
     text="You are building your camping experience one night at a time."

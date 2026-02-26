@@ -51,7 +51,7 @@ After your day is done, review your log and look for patterns:
 The average American teenager spends over seven hours per day on screens — not counting time spent on schoolwork. That is more time than most people spend sleeping!
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/scout-communication-log.png" alt="A Scout sitting at a desk writing in a notebook, with a phone, headphones, and an open book nearby, tracking communication activities" >}}
+{{< drg/image src="images/scout-communication-log.avif" alt="A Scout sitting at a desk writing in a notebook, with a phone, headphones, and an open book nearby, tracking communication activities" >}}
 
 ---
 
@@ -160,7 +160,7 @@ The method you choose is part of the message itself.
 
 {{< drg/external-link title="MediaSmarts — Digital Literacy Resources" url="https://mediasmarts.ca/digital-media-literacy" description="Explore resources about digital media literacy, including how to evaluate online information and communicate responsibly in digital spaces." >}}
 
-{{< drg/image src="images/communication-methods-brainstorm.png" alt="A whiteboard covered with sticky notes listing different communication methods, organized by category, with a Scout's hand adding a new note" >}}
+{{< drg/image src="images/communication-methods-brainstorm.avif" alt="A whiteboard covered with sticky notes listing different communication methods, organized by category, with a Scout's hand adding a new note" >}}
 
 ---
 

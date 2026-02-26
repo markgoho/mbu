@@ -51,7 +51,7 @@ A well-organized pack shows your Scoutmaster that you think ahead. Here is a gen
 Do a test pack at home the day before your trip. Lay everything out on the floor, check it against your list, and then pack it. This is when you discover that you forgot to buy batteries or that your rain jacket has a broken zipper. Finding these problems at home is much better than finding them on the trail.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-pack-inspection.png" alt="A Scout standing with a loaded backpack in front of a Scoutmaster who is reviewing the contents, with gear items visible including a sleeping bag, mess kit, and water bottle" >}}
+{{< drg/image src="images/scout-pack-inspection.avif" alt="A Scout standing with a loaded backpack in front of a Scoutmaster who is reviewing the contents, with gear items visible including a sleeping bag, mess kit, and water bottle" >}}
 
 ### Common Mistakes
 
@@ -71,7 +71,7 @@ Experienced backpackers aim for a base pack weight (everything except food, wate
 
 This inspection is not a test — it is a teaching moment. Your Scoutmaster is not trying to catch you making mistakes. They are making sure you are prepared to be safe and comfortable in the field. If they spot something missing or suggest a change, take it as helpful advice. The goal is for you to head into the outdoors ready for anything.
 
-{{< drg/image src="images/pack-contents-laid-out.png" alt="All the contents of a well-packed camping backpack laid out in organized groups on a tarp: clothing, food, cooking gear, sleeping gear, essentials kit" >}}
+{{< drg/image src="images/pack-contents-laid-out.avif" alt="All the contents of a well-packed camping backpack laid out in organized groups on a tarp: clothing, food, cooking gear, sleeping gear, essentials kit" >}}
 
 {{< drg/next-page
     text="Your pack is ready and you have passed inspection."

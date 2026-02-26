@@ -65,7 +65,7 @@ Never wash raw chicken. The USDA and food safety experts agree that rinsing poul
 - **Transport:** Keep separate from raw meats. Leafy greens are especially vulnerable to contamination.
 - **Prepare:** Wash all vegetables under running water before cutting or cooking — even if you plan to peel them. Bacteria on the skin can transfer to the flesh when you cut through it.
 
-{{< drg/image src="images/fridge-organization.png" alt="A well-organized refrigerator showing proper food placement: raw meats on the bottom shelf in sealed containers, dairy on a middle shelf, vegetables in the crisper, and eggs in their carton" >}}
+{{< drg/image src="images/fridge-organization.avif" alt="A well-organized refrigerator showing proper food placement: raw meats on the bottom shelf in sealed containers, dairy on a middle shelf, vegetables in the crisper, and eggs in their carton" >}}
 
 ### Cross-Contamination: The Invisible Threat
 
@@ -90,7 +90,7 @@ Cross-contamination is the transfer of harmful bacteria from one food, surface, 
 A simple rule of thumb: if a utensil, cutting board, or plate touched raw meat, treat it as contaminated until it has been washed with hot soapy water. Keep a bowl of hot soapy water ready while you cook so you can clean tools on the go.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/cross-contamination-prevention.png" alt="A Scout at a camp cooking station using a red cutting board for raw meat and a green cutting board for vegetables, with a hand-washing station nearby" >}}
+{{< drg/image src="images/cross-contamination-prevention.avif" alt="A Scout at a camp cooking station using a red cutting board for raw meat and a green cutting board for vegetables, with a hand-washing station nearby" >}}
 
 ### Cooking Temperatures: Your Final Safety Net
 

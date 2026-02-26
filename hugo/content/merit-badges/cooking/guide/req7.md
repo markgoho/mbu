@@ -58,7 +58,7 @@ When researching a career, look at the Bureau of Labor Statistics (BLS) Occupati
 - Advancement path — where can you go from the entry-level position?
 - Expenses to get started (tuition, equipment, licensing fees)
 
-{{< drg/image src="images/culinary-careers.png" alt="A split image showing three culinary career paths: a chef plating a dish in a professional kitchen, a food scientist in a lab coat examining samples, and a person photographing food for content creation" >}}
+{{< drg/image src="images/culinary-careers.avif" alt="A split image showing three culinary career paths: a chef plating a dish in a professional kitchen, a food scientist in a lab coat examining samples, and a person photographing food for content creation" >}}
 
 {{< drg/external-link
     title="13 Careers in the Food Industry"

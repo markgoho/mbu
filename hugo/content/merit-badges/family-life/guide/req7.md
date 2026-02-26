@@ -50,7 +50,7 @@ What works for a five-year-old doesn't work for a fifteen-year-old. Effective pa
 Developmental psychologist Diana Baumrind identified four parenting styles in the 1960s: authoritative, authoritarian, permissive, and uninvolved. Decades of research have consistently shown that "authoritative" parenting — high warmth combined with clear expectations — produces the best outcomes for children's well-being and success.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/parent-teaching-moment.png" alt="A parent and Scout sitting on a porch step together, having a calm conversation with body language showing mutual respect and attentiveness" >}}
+{{< drg/image src="images/parent-teaching-moment.avif" alt="A parent and Scout sitting on a porch step together, having a calm conversation with body language showing mutual respect and attentiveness" >}}
 
 ### Roles and Responsibilities of a Parent or Guardian
 
@@ -103,7 +103,7 @@ Not every Scout has a traditional home life. Some may have parents who are absen
 
 {{< drg/external-link title="Being a Parent (video)" url="https://vimeo.com/1114227774" description="A video exploring the joys and challenges of the parenting journey." >}}
 
-{{< drg/image src="images/family-walking-together.png" alt="A multigenerational family walking together through a park on a sunny day, grandparent, parent, and Scout side by side" >}}
+{{< drg/image src="images/family-walking-together.avif" alt="A multigenerational family walking together through a park on a sunny day, grandparent, parent, and Scout side by side" >}}
 
 {{< drg/next-page
     text="You've explored what it means to be part of a family from every angle."

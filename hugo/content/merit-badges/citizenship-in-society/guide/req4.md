@@ -41,7 +41,7 @@ For each scenario you choose, think through this framework:
 4. **What would you do, and why?** Pick the action that best aligns with the Scout Oath and Scout Law.
 5. **What might happen next?** Think about the possible outcomes of your action.
 
-{{< drg/image src="images/scouts-scenario-discussion.png" alt="A small group of Scouts having an earnest discussion around a campfire, with thoughtful expressions" >}}
+{{< drg/image src="images/scouts-scenario-discussion.avif" alt="A small group of Scouts having an earnest discussion around a campfire, with thoughtful expressions" >}}
 
 ### Scenario 1: Offensive Language at Camp
 

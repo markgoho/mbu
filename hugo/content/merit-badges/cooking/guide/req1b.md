@@ -66,7 +66,7 @@ If you cut yourself while preparing food, stop cooking immediately. Wash your ha
 - Keep knives sharp — a dull blade requires more force and is more likely to slip.
 - Never try to catch a falling knife. Step back and let it drop.
 
-{{< drg/image src="images/first-aid-burns-cuts.png" alt="A first-aid kit open on a kitchen counter showing bandages, gauze, antiseptic, and gloves, with a Scout demonstrating cooling a minor burn under running water" >}}
+{{< drg/image src="images/first-aid-burns-cuts.avif" alt="A first-aid kit open on a kitchen counter showing bandages, gauze, antiseptic, and gloves, with a Scout demonstrating cooling a minor burn under running water" >}}
 
 ### Choking
 
@@ -133,7 +133,7 @@ Food allergies are a serious and potentially life-threatening concern. An allerg
 As a cook, you are responsible for knowing about the food allergies of everyone you are serving. The "Big Nine" allergens — milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, soy, and sesame — account for most serious food allergy reactions. Always ask before you cook.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/allergy-awareness-cooking.png" alt="A Scout checking ingredient labels while another Scout points to a written list of allergies posted on a clipboard near the cooking area" >}}
+{{< drg/image src="images/allergy-awareness-cooking.avif" alt="A Scout checking ingredient labels while another Scout points to a written list of allergies posted on a clipboard near the cooking area" >}}
 
 **Prevention:**
 

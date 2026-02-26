@@ -44,7 +44,7 @@ Examples of quality time include:
 - Working on a project together — building something, cleaning up the yard, or volunteering
 - Attending a sibling's game, recital, or event to show support
 
-{{< drg/image src="images/family-outdoor-activity.png" alt="A family of diverse ages playing frisbee together in a park, laughing and enjoying each other's company" >}}
+{{< drg/image src="images/family-outdoor-activity.avif" alt="A family of diverse ages playing frisbee together in a park, laughing and enjoying each other's company" >}}
 
 {{< drg/tip >}}
 Think about the last week. How many hours did you spend on social media or gaming? How many hours did you spend doing something fun, face-to-face, with a family member or friend? If the screen time number is much bigger, that is a signal to rebalance.

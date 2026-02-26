@@ -52,7 +52,7 @@ The **% Daily Value (%DV)** column on the right side of the label tells you how 
 
 For nutrients you want more of (fiber, vitamins, minerals), look for higher %DV. For nutrients you want to limit (saturated fat, sodium, added sugars), look for lower %DV.
 
-{{< drg/image src="images/nutrition-label-annotated.png" alt="A large Nutrition Facts label with arrows pointing to each key term (calories, fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, fiber, sugar, protein) with brief explanations" >}}
+{{< drg/image src="images/nutrition-label-annotated.avif" alt="A large Nutrition Facts label with arrows pointing to each key term (calories, fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, fiber, sugar, protein) with brief explanations" >}}
 
 ### Calculating for Multiple Servings
 

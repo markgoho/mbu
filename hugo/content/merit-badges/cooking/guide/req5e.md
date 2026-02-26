@@ -53,7 +53,7 @@ Dessert at camp is a tradition. Here are options that work well outdoors:
 - Pancake "crepes" with Nutella and fruit
 - Campfire cones — sugar cones filled with marshmallows, chocolate, and fruit, wrapped in foil and heated
 
-{{< drg/image src="images/camp-dessert-prep.png" alt="Scouts preparing banana boats at a camp kitchen — splitting bananas, adding chocolate chips and marshmallows, with foil wrapping supplies on the table" >}}
+{{< drg/image src="images/camp-dessert-prep.avif" alt="Scouts preparing banana boats at a camp kitchen — splitting bananas, adding chocolate chips and marshmallows, with foil wrapping supplies on the table" >}}
 
 ### Serving Your Patrol
 

@@ -41,7 +41,7 @@ The USDA's **MyPlate** model is a simple, visual guide to balanced eating. It di
 - **Protein** — Vary your sources: lean meats, poultry, fish, beans, peas, nuts, seeds, and eggs.
 - **Dairy** — Milk, yogurt, and cheese provide calcium for strong bones. Choose low-fat options when possible.
 
-{{< drg/image src="images/myplate-scout-meal.png" alt="A Scout's plate at a camp dining hall arranged in the MyPlate format, with colorful portions of vegetables, grains, protein, fruit, and a glass of milk" >}}
+{{< drg/image src="images/myplate-scout-meal.avif" alt="A Scout's plate at a camp dining hall arranged in the MyPlate format, with colorful portions of vegetables, grains, protein, fruit, and a glass of milk" >}}
 
 {{< drg/tip >}}
 You do not need to count every calorie or measure every portion. A good rule of thumb: fill half your plate with fruits and vegetables, a quarter with whole grains, and a quarter with protein. Add a serving of dairy on the side. If most of your meals look roughly like this, you are on the right track.

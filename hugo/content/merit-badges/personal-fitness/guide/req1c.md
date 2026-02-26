@@ -29,7 +29,7 @@ A spiritually fit person has a strong inner compass. They know the difference be
 The word "spirit" comes from the Latin word *spiritus*, meaning "breath." Just as breathing is essential to physical life, spiritual fitness is about the life force that drives your character, your choices, and your sense of meaning.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/scout-reflecting-nature.png" alt="A Scout sitting quietly on a rock beside a calm mountain lake at dawn, looking reflective and peaceful" >}}
+{{< drg/image src="images/scout-reflecting-nature.avif" alt="A Scout sitting quietly on a rock beside a calm mountain lake at dawn, looking reflective and peaceful" >}}
 
 ### Paths to Spiritual Fitness
 

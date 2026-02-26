@@ -42,7 +42,7 @@ Many Scouts find that their current routine is strong in one or two areas but we
 
 There is no judgment here — the point is to know where you are so you can build a plan to get where you want to be.
 
-{{< drg/image src="images/scout-exercise-variety.png" alt="A collage-style illustration showing a Scout doing four different activities: running, doing push-ups, stretching, and eating a healthy meal" >}}
+{{< drg/image src="images/scout-exercise-variety.avif" alt="A collage-style illustration showing a Scout doing four different activities: running, doing push-ups, stretching, and eating a healthy meal" >}}
 
 ### Exercise and Cardiovascular Disease
 

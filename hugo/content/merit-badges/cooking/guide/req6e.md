@@ -42,7 +42,7 @@ Trail food gets a "taste bonus" — when you are tired and hungry after miles of
 - **"The trail mix was boring by the afternoon."** Vary your snack flavors. Alternate between salty, sweet, and savory options throughout the day.
 - **"Cleanup was difficult without much water."** Minimize dishes by eating from the pot or bag. Use a small amount of water and a scraper to clean, then do a full wash when you reach a water source.
 
-{{< drg/image src="images/trail-meal-evaluation.png" alt="A group of hikers sitting on rocks at a scenic overlook, eating from lightweight bowls while one Scout takes notes in a small notebook" >}}
+{{< drg/image src="images/trail-meal-evaluation.avif" alt="A group of hikers sitting on rocks at a scenic overlook, eating from lightweight bowls while one Scout takes notes in a small notebook" >}}
 
 ### Planning and Preparation on the Trail
 

@@ -15,7 +15,7 @@ Explain the importance of prompt engineering when using AI to create better outp
 
 You have learned five methods of communicating with AI. Now it is time to learn how to communicate **well**. This is called **prompt engineering** — the skill of crafting your input to an AI system so that you get the best possible output. It is one of the most practical skills you will learn in this merit badge, and you will use it every time you interact with an AI chatbot or generative AI tool.
 
-{{< drg/image src="images/prompt-engineering-screen.png" alt="Over-the-shoulder view of a Scout typing a detailed prompt into a chatbot interface on a computer. The screen shows a well-structured prompt with clear formatting. Home desk setting." >}}
+{{< drg/image src="images/prompt-engineering-screen.avif" alt="Over-the-shoulder view of a Scout typing a detailed prompt into a chatbot interface on a computer. The screen shows a well-structured prompt with clear formatting. Home desk setting." >}}
 
 ---
 

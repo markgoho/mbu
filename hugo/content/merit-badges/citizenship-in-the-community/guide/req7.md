@@ -96,7 +96,7 @@ Choose the organization that interests you most and dig in. The requirement spec
 - How it brings the community together
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/scout-volunteering-food-bank.png" alt="A Scout in a clean uniform sorting canned goods at a community food bank alongside other volunteers of different ages" >}}
+{{< drg/image src="images/scout-volunteering-food-bank.avif" alt="A Scout in a clean uniform sorting canned goods at a community food bank alongside other volunteers of different ages" >}}
 
 ## Step 3: Volunteer Eight Hours (Req 7c)
 
@@ -148,7 +148,7 @@ Research shows that people who volunteer as teenagers are twice as likely to con
     url="https://www.volunteermatch.org/"
     description="Search for volunteer opportunities near you by cause, skill, or location. Many listings are open to youth volunteers." >}}
 
-{{< drg/image src="images/scout-community-service.png" alt="A group of Scouts in clean uniforms working alongside adult volunteers to paint a mural on the side of a community center building, wearing work clothes over their uniforms" >}}
+{{< drg/image src="images/scout-community-service.avif" alt="A group of Scouts in clean uniforms working alongside adult volunteers to paint a mural on the side of a community center building, wearing work clothes over their uniforms" >}}
 
 ---
 

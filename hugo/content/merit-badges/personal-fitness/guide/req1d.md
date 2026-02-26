@@ -31,7 +31,7 @@ Your body, mind, emotions, and spirit are not separate systems that operate inde
 Research shows that people who exercise regularly are 25% less likely to develop depression or anxiety over the next five years. Physical fitness is one of the most effective and accessible tools for protecting your mental health.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/fitness-wheel-diagram.png" alt="An illustrated wheel diagram showing the four dimensions of fitness connected by arrows, demonstrating how they support each other" >}}
+{{< drg/image src="images/fitness-wheel-diagram.avif" alt="An illustrated wheel diagram showing the four dimensions of fitness connected by arrows, demonstrating how they support each other" >}}
 
 ### What Happens When One Area Falls Behind
 

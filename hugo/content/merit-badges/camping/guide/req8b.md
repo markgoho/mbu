@@ -130,7 +130,7 @@ Small stoves designed to burn twigs, pinecones, and other natural fuel found at 
 - Not allowed in many wilderness areas during fire bans
 - Slower and less predictable than gas stoves
 
-{{< drg/image src="images/stove-types-lineup.png" alt="Five different camp stoves arranged on a flat rock: a canister stove, liquid fuel stove, alcohol stove, solid fuel tablet stove, and a small wood-burning stove, each with its fuel source visible beside it" >}}
+{{< drg/image src="images/stove-types-lineup.avif" alt="Five different camp stoves arranged on a flat rock: a canister stove, liquid fuel stove, alcohol stove, solid fuel tablet stove, and a small wood-burning stove, each with its fuel source visible beside it" >}}
 
 ### Which Stove Is Right for Your Trip?
 
@@ -150,7 +150,7 @@ The best stove is the one you know how to use safely. Whatever stove your patrol
 The first portable camp stove was patented in 1849. It weighed over 25 pounds. Today, ultralight canister stoves weigh as little as 3 ounces — less than a baseball.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/scout-cooking-canister-stove.png" alt="A Scout cooking pasta on a canister stove at a campsite, with a pot gripper in hand and a water bottle nearby" >}}
+{{< drg/image src="images/scout-cooking-canister-stove.avif" alt="A Scout cooking pasta on a canister stove at a campsite, with a pot gripper in hand and a water bottle nearby" >}}
 
 {{< drg/next-page
     text="You know the strengths and weaknesses of each stove type."

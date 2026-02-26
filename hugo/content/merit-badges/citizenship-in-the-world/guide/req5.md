@@ -123,9 +123,9 @@ For Requirement 5c, you need to show countries using each of your five governmen
     url="https://www.cia.gov/the-world-factbook/field/government-type/"
     description="A complete list of every country's government type — the definitive reference for your map project." >}}
 
-{{< drg/image src="images/world-governments-map.png" alt="An illustrated world map with different regions color-coded by government type, including a legend" >}}
+{{< drg/image src="images/world-governments-map.avif" alt="An illustrated world map with different regions color-coded by government type, including a legend" >}}
 
-{{< drg/image src="images/scout-map-activity.png" alt="A Scout working on a world map poster at a table, coloring in countries with different markers and creating a legend" >}}
+{{< drg/image src="images/scout-map-activity.avif" alt="A Scout working on a world map poster at a table, coloring in countries with different markers and creating a legend" >}}
 
 ---
 

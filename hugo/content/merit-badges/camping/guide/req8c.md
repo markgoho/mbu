@@ -106,7 +106,7 @@ Here is a sample menu for a patrol of six. Adjust quantities based on your group
 Create a detailed food list from your menu. For each recipe, list every ingredient and the quantity needed for your group size. Then combine like items. This prevents buying duplicates and makes your shopping trip efficient.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/camp-menu-planning-table.png" alt="A patrol gathered around a kitchen table at home, planning their camp menu with a whiteboard showing meal slots and a grocery list being written" >}}
+{{< drg/image src="images/camp-menu-planning-table.avif" alt="A patrol gathered around a kitchen table at home, planning their camp menu with a whiteboard showing meal slots and a grocery list being written" >}}
 
 ### Protecting Your Food
 
@@ -140,7 +140,7 @@ Animals are attracted to food by smell — not just food itself, but anything wi
 
 {{< drg/external-link title="USDA Food Safety for Camping" url="https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/camping-food-safety" description="Government guidelines for keeping food safe during outdoor cooking and camping." >}}
 
-{{< drg/image src="images/bear-bag-hanging.png" alt="A properly hung bear bag suspended between two trees, with a rope over a high branch, showing the bag at least 12 feet high and 6 feet from the trunk" >}}
+{{< drg/image src="images/bear-bag-hanging.avif" alt="A properly hung bear bag suspended between two trees, with a rope over a high branch, showing the bag at least 12 feet high and 6 feet from the trunk" >}}
 
 {{< drg/next-page
     text="Your menu is planned and you know how to protect your food."

@@ -47,7 +47,7 @@ There are some rules that apply specifically to cyclists:
 Before your counselor meeting, look up your specific state and local bicycle laws. A great starting point is your state's Department of Transportation website or the League of American Bicyclists' state law database. Your counselor will want you to discuss the laws where *you* ride, not just general rules.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/cyclist-lane-position.png" alt="Diagram showing a cyclist riding in the correct lane position on a two-lane road, with arrows indicating traffic flow and safe distance from parked cars" >}}
+{{< drg/image src="images/cyclist-lane-position.avif" alt="Diagram showing a cyclist riding in the correct lane position on a two-lane road, with arrows indicating traffic flow and safe distance from parked cars" >}}
 
 ### Lane Position
 
@@ -96,7 +96,7 @@ Intersections are where most car-bicycle collisions happen. Approach every inter
 - If you are in a bike lane that goes through an intersection, watch for right-turning vehicles crossing your path (the "right hook").
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/hand-signals-diagram.png" alt="Illustration showing the three standard bicycle hand signals: left turn, right turn, and stop" >}}
+{{< drg/image src="images/hand-signals-diagram.avif" alt="Illustration showing the three standard bicycle hand signals: left turn, right turn, and stop" >}}
 
 ### Hand Signals
 

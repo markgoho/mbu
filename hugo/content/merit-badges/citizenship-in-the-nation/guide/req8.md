@@ -92,7 +92,7 @@ You have several options for getting your letter to your representative:
 - **U.S. mail:** Address your letter to their Washington, D.C. office or their local district office. Mail may take longer to receive a response.
 - **Phone call:** If you prefer, you can also call their office. A staff member will note your position. (This does not replace the written correspondence required for the merit badge, but it is a good supplement.)
 
-{{< drg/image src="images/scout-writing-letter.png" alt="A Scout sitting at a kitchen table writing a letter by hand, with an envelope addressed to a member of Congress and a printed copy of the representative's contact information nearby" >}}
+{{< drg/image src="images/scout-writing-letter.avif" alt="A Scout sitting at a kitchen table writing a letter by hand, with an envelope addressed to a member of Congress and a printed copy of the representative's contact information nearby" >}}
 
 ### What to Expect
 
@@ -110,7 +110,7 @@ Sometimes responses take a long time, and occasionally they do not come at all. 
 - **Show your counselor your sent letter** (or a copy of the email you submitted). The requirement is to write and send the letter and to show any response you receive. If no response arrives in time, your sent correspondence is sufficient.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/congress-mail-room.png" alt="An overhead view of a large desk in a congressional office with neatly stacked letters, an American flag pin on the desk, and a framed photo of the U.S. Capitol on the wall" >}}
+{{< drg/image src="images/congress-mail-room.avif" alt="An overhead view of a large desk in a congressional office with neatly stacked letters, an American flag pin on the desk, and a framed photo of the U.S. Capitol on the wall" >}}
 
 ### Explore More
 

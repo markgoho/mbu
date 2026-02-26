@@ -38,7 +38,7 @@ Before you walk in the door, take a few minutes to prepare:
 - **Bring a notebook and pen** — You will be taking detailed notes.
 - **Arrive early** — Give yourself time to find a seat and settle in before the meeting starts.
 
-{{< drg/image src="images/scout-public-meeting.png" alt="A Scout sitting in the audience of a city council meeting, taking notes in a notebook, with council members seated at a raised desk in the background" >}}
+{{< drg/image src="images/scout-public-meeting.avif" alt="A Scout sitting in the audience of a city council meeting, taking notes in a notebook, with council members seated at a raised desk in the background" >}}
 
 ## Active Listening at the Meeting
 
@@ -92,7 +92,7 @@ The First Amendment to the U.S. Constitution protects the right of citizens to p
 
 {{< drg/external-link title="National Civic League" url="https://www.nationalcivicleague.org/" description="Resources about civic engagement and how communities work together to solve problems." >}}
 
-{{< drg/image src="images/scout-writing-report.png" alt="A Scout sitting at a desk reviewing their notes and writing a report, with a printed meeting agenda visible beside the notebook" >}}
+{{< drg/image src="images/scout-writing-report.avif" alt="A Scout sitting at a desk reviewing their notes and writing a report, with a printed meeting agenda visible beside the notebook" >}}
 
 {{< drg/next-page
     text="You have practiced listening to multiple perspectives and reporting on them objectively"

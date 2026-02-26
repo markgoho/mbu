@@ -72,7 +72,7 @@ Today, hiking is something you choose to do for fun, fitness, and connection wit
 
 **Get Ready!** The adventure of hiking awaits you. All you need is a good pair of shoes, a sense of curiosity, and the willingness to explore. Let's go!
 
-{{< drg/image src="images/scout-mountain-trail.png" alt="A Scout with a backpack looking out at a mountain trail, excited to start hiking" >}}
+{{< drg/image src="images/scout-mountain-trail.avif" alt="A Scout with a backpack looking out at a mountain trail, excited to start hiking" >}}
 
 ---
 
@@ -80,7 +80,7 @@ Today, hiking is something you choose to do for fun, fitness, and connection wit
 
 There are many ways to hike. Before you hit the trail, take a look at the variety of hiking styles you can explore.
 
-{{< drg/image src="images/historical-explorers.png" alt="Early American explorers walking through rugged wilderness with heavy packs" >}}
+{{< drg/image src="images/historical-explorers.avif" alt="Early American explorers walking through rugged wilderness with heavy packs" >}}
 
 ### Urban Hiking
 
@@ -122,7 +122,7 @@ Desert hiking offers stunning landscapes — canyons, mesas, and wide-open skies
 Carry more water than you think you need — at least one liter per hour in hot conditions. Protect yourself from the sun with a hat, sunscreen, and lightweight long sleeves. Never hike alone in the desert.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/desert-trail-sunrise.png" alt="Scouts hiking along a desert trail at sunrise with red rock mesas in the background" >}}
+{{< drg/image src="images/desert-trail-sunrise.avif" alt="Scouts hiking along a desert trail at sunrise with red rock mesas in the background" >}}
 
 ### Cross-Country Hiking
 

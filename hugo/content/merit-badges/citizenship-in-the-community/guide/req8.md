@@ -85,7 +85,7 @@ No community is perfect. Being honest about challenges shows that you are a thou
 
 Connect this to your work in Requirement 4 — the community issue you investigated is a natural fit here.
 
-{{< drg/image src="images/scout-presenting.png" alt="A Scout standing confidently in front of a screen showing a slide presentation about their community, with a small audience of fellow Scouts watching attentively" >}}
+{{< drg/image src="images/scout-presenting.avif" alt="A Scout standing confidently in front of a screen showing a slide presentation about their community, with a small audience of fellow Scouts watching attentively" >}}
 
 ## Building Your Presentation
 
@@ -149,7 +149,7 @@ Public speaking is consistently ranked as one of the top fears in America — so
     url="https://www.canva.com/presentations/"
     description="Free, easy-to-use presentation templates that can help you create a professional-looking slide show. No design experience needed." >}}
 
-{{< drg/image src="images/community-presentation-collage.png" alt="A montage showing elements of a community presentation: a historic photo, a cultural festival scene, a beautiful park, and a Scout speaking to an audience" >}}
+{{< drg/image src="images/community-presentation-collage.avif" alt="A montage showing elements of a community presentation: a historic photo, a cultural festival scene, a beautiful park, and a Scout speaking to an audience" >}}
 
 ---
 

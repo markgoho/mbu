@@ -81,7 +81,7 @@ Once you have chosen a speech, work through each part of the requirement. Here i
 - Your connection: A specific passage that is meaningful to you and why.
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/historic-speech-podium.png" alt="A podium with an American flag and the presidential seal in a grand setting, evoking the gravitas of a nationally important speech" >}}
+{{< drg/image src="images/historic-speech-podium.avif" alt="A podium with an American flag and the presidential seal in a grand setting, evoking the gravitas of a nationally important speech" >}}
 
 {{< drg/did-you-know >}}
 Lincoln's Gettysburg Address lasted only about two minutes. The featured speaker that day, Edward Everett, spoke for two hours before Lincoln. Afterward, Everett wrote to Lincoln: "I should be glad if I could flatter myself that I came as near to the central idea of the occasion in two hours as you did in two minutes."
@@ -117,7 +117,7 @@ If you are stuck choosing, try this approach:
     url="https://www.archives.gov/milestone-documents"
     description="Explore 100 milestone documents in American history, including many famous speeches and their historical context." >}}
 
-{{< drg/image src="images/scout-listening-speech.png" alt="A Scout wearing headphones at a computer, listening to a historic speech recording with a notebook open for notes" >}}
+{{< drg/image src="images/scout-listening-speech.avif" alt="A Scout wearing headphones at a computer, listening to a historic speech recording with a notebook open for notes" >}}
 
 {{< drg/next-page
     text="Now that you have explored the power of words in American history"

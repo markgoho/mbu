@@ -69,7 +69,7 @@ External-frame packs dominated the backpacking world for decades. In the 1960s a
 No matter which type you choose, make sure it fits your body properly. A well-fitted pack transfers weight to your hips, not your shoulders. Visit an outfitter where staff can measure your torso length and help you adjust the pack to your frame. A poorly fitted pack — no matter how expensive — will be uncomfortable after the first mile.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/internal-vs-external-frame.png" alt="Two backpacks standing side by side outdoors: an external-frame pack with visible aluminum frame on the left, and a modern internal-frame pack on the right, both loaded for a camping trip" >}}
+{{< drg/image src="images/internal-vs-external-frame.avif" alt="Two backpacks standing side by side outdoors: an external-frame pack with visible aluminum frame on the left, and a modern internal-frame pack on the right, both loaded for a camping trip" >}}
 
 ### Pack Fit Basics
 
@@ -80,7 +80,7 @@ No matter which type you choose, make sure it fits your body properly. A well-fi
 
 {{< drg/video title="How to Choose a Backpack" url="https://youtu.be/LI1va-97f4w?si=Yt51x6hhjMUuf7uV" >}}
 
-{{< drg/image src="images/pack-fitting-diagram.png" alt="A Scout wearing a properly fitted internal-frame backpack from the side, with labels pointing to the hip belt, shoulder straps, load lifters, and sternum strap" >}}
+{{< drg/image src="images/pack-fitting-diagram.avif" alt="A Scout wearing a properly fitted internal-frame backpack from the side, with labels pointing to the hip belt, shoulder straps, load lifters, and sternum strap" >}}
 
 {{< drg/next-page
     text="You understand the differences between internal and external frame packs."

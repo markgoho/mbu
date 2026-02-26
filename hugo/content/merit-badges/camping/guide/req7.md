@@ -87,7 +87,7 @@ Think of your pack as having four zones:
 - Headlamp, sunscreen, sunglasses (top lid)
 - Snacks, compass, lip balm (hip belt pockets)
 
-{{< drg/image src="images/backpack-packing-zones.png" alt="A cutaway diagram of a backpack showing four labeled packing zones: bottom (sleeping bag), core/middle (heavy items close to back), top (rain gear and snacks), and accessory pockets (water bottles and quick-access items)" >}}
+{{< drg/image src="images/backpack-packing-zones.avif" alt="A cutaway diagram of a backpack showing four labeled packing zones: bottom (sleeping bag), core/middle (heavy items close to back), top (rain gear and snacks), and accessory pockets (water bottles and quick-access items)" >}}
 
 #### Packing Principles
 
@@ -127,7 +127,7 @@ When demonstrating your pack to your counselor or Scoutmaster, be ready to expla
 
 {{< drg/video title="How to Pack a Backpack" url="https://youtu.be/HB7ZOjnnFS8?si=OiOXPGCBLGNYt_b0" >}}
 
-{{< drg/image src="images/scouts-dividing-patrol-gear.png" alt="A patrol of Scouts gathered around a tarp with patrol gear spread out, dividing items among their individual backpacks" >}}
+{{< drg/image src="images/scouts-dividing-patrol-gear.avif" alt="A patrol of Scouts gathered around a tarp with patrol gear spread out, dividing items among their individual backpacks" >}}
 
 {{< drg/next-page
     text="Your pack is organized and ready for the trail."

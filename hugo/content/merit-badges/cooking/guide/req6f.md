@@ -54,7 +54,7 @@ Trail kitchen cleanup follows the same Leave No Trace principles from [Req 5h](/
 - Leave the area looking as if no one was ever there
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/bear-bag-hang.png" alt="A Scout demonstrating the PCT method of hanging a bear bag from a tree branch, with a rope and carabiner system, at a campsite in the woods" >}}
+{{< drg/image src="images/bear-bag-hang.avif" alt="A Scout demonstrating the PCT method of hanging a bear bag from a tree branch, with a rope and carabiner system, at a campsite in the woods" >}}
 
 ### Storing Food from Animals
 

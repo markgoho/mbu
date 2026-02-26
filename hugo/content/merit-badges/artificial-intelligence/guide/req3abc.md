@@ -30,7 +30,7 @@ Here is the simplest way to think about it:
 
 All AI involves automation, but not all automation involves AI. A dishwasher is automated — it follows a fixed cycle every time you press "Start." But it is not AI because it does not learn anything or adapt to your dishes.
 
-{{< drg/image src="images/factory-robot-arm.png" alt="A modern factory floor with robotic arms assembling products on a conveyor belt, well-lit and clean industrial setting. No people required — focus on the automation equipment." >}}
+{{< drg/image src="images/factory-robot-arm.avif" alt="A modern factory floor with robotic arms assembling products on a conveyor belt, well-lit and clean industrial setting. No people required — focus on the automation equipment." >}}
 
 ---
 
@@ -92,7 +92,7 @@ Robotic arms weld car bodies, paint surfaces, and package products. These robots
 
 Warehouses use automated conveyor belts, sorting systems, and barcode scanners to move packages from storage to shipping trucks. Amazon's fulfillment centers use a mix of automation (conveyor systems) and AI (robot navigation) to process millions of orders daily.
 
-{{< drg/image src="images/thermostat-automation.png" alt="Close-up of a modern smart thermostat on a wall showing temperature settings and a schedule, with a comfortable living room blurred in the background." >}}
+{{< drg/image src="images/thermostat-automation.avif" alt="Close-up of a modern smart thermostat on a wall showing temperature settings and a schedule, with a comfortable living room blurred in the background." >}}
 
 ### Accounting and Payroll
 

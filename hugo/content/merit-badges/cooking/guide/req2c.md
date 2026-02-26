@@ -68,7 +68,7 @@ After you have tracked your activity for five days, use the MyPlate Plan tool to
 - Meals that are realistic — foods you would actually eat and could actually prepare
 - A balance of nutrients throughout the day (do not save all your vegetables for dinner)
 
-{{< drg/image src="images/activity-tracker-notebook.png" alt="A Scout writing in a small notebook at a park bench, logging physical activities for the day, with a water bottle and a bicycle nearby" >}}
+{{< drg/image src="images/activity-tracker-notebook.avif" alt="A Scout writing in a small notebook at a park bench, logging physical activities for the day, with a water bottle and a bicycle nearby" >}}
 
 ### Preparing for Your Counselor Discussion
 

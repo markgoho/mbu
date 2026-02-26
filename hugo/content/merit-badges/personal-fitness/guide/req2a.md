@@ -39,7 +39,7 @@ A typical physical examination for a young person covers several key areas:
 
 **Medical history update.** Your provider reviews your family medical history (conditions that run in your family, like heart disease or diabetes) and your personal medical history (past surgeries, injuries, chronic conditions). This helps them understand your risk factors and tailor their advice to you.
 
-{{< drg/image src="images/doctor-checkup-teen.png" alt="A friendly healthcare provider checking a teenager's blood pressure in a bright, modern clinic examination room" >}}
+{{< drg/image src="images/doctor-checkup-teen.avif" alt="A friendly healthcare provider checking a teenager's blood pressure in a bright, modern clinic examination room" >}}
 
 {{< drg/tip >}}
 Before your physical exam, write down any questions or concerns you have about your health. Are you having trouble sleeping? Does your knee hurt when you run? Do you feel anxious a lot? Your provider wants to help, but they can only address things you tell them about.

@@ -76,7 +76,7 @@ Your evacuation kit — often called a "go bag" — is a portable kit you can gr
 
 {{< drg/external-link title="Checklist for Evacuation (PDF)" url="https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Emergency%20Preparedness/E%20Prep%20Checklist%20for%20Evacuation.pdf" description="Official BSA checklist for building your evacuation go bag." >}}
 
-{{< drg/image src="images/disaster-kit-spread.png" alt="A family disaster kit laid out on a table showing water, food, flashlights, first aid kit, radio, and documents" >}}
+{{< drg/image src="images/disaster-kit-spread.avif" alt="A family disaster kit laid out on a table showing water, food, flashlights, first aid kit, radio, and documents" >}}
 
 ---
 

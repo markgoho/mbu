@@ -71,7 +71,7 @@ Your state capitol or the U.S. Capitol in Washington, D.C. is where elected repr
 The U.S. Capitol dome weighs approximately 4,500 tons and is made of cast iron. The Statue of Freedom on top of the dome stands 19.5 feet tall and weighs about 15,000 pounds. She was placed there in 1863 — during the Civil War — as a symbol that the nation would endure.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/state-capitol-tour.png" alt="A group of Scouts in clean uniforms walking through the rotunda of a state capitol building, looking up at the dome with a tour guide gesturing toward the architecture" >}}
+{{< drg/image src="images/state-capitol-tour.avif" alt="A group of Scouts in clean uniforms walking through the rotunda of a state capitol building, looking up at the dome with a tour guide gesturing toward the architecture" >}}
 
 ### Option C: Tour a Federal Facility
 
@@ -123,7 +123,7 @@ If visiting a physical site is not possible, this option lets you research a Uni
 President Theodore Roosevelt — an Eagle Scout supporter and outdoorsman — used the Antiquities Act of 1906 to establish 18 national monuments during his presidency, including the Grand Canyon. Roosevelt believed that America's natural and historical wonders belonged to all citizens and should be preserved for future generations.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/national-monuments-collage.png" alt="A scenic collage featuring the Lincoln Memorial, the Statue of Liberty, and Mount Rushmore against a blue sky background" >}}
+{{< drg/image src="images/national-monuments-collage.avif" alt="A scenic collage featuring the Lincoln Memorial, the Statue of Liberty, and Mount Rushmore against a blue sky background" >}}
 
 ### Explore More
 

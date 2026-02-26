@@ -61,7 +61,7 @@ Added sugar is not just in candy and soda. It hides in foods you might not expec
 
 Remember the label-reading skills from [Req 1e](/merit-badges/cooking/guide/req1e/) — check the ingredients list for sugar's many names (high fructose corn syrup, dextrose, sucrose, maltose, honey, agave, and more).
 
-{{< drg/image src="images/sugar-in-foods.png" alt="A table showing common foods with their sugar content measured in sugar cubes stacked beside each item: a soda, flavored yogurt, granola bar, and ketchup bottle" >}}
+{{< drg/image src="images/sugar-in-foods.avif" alt="A table showing common foods with their sugar content measured in sugar cubes stacked beside each item: a soda, flavored yogurt, granola bar, and ketchup bottle" >}}
 
 ### The Balance
 

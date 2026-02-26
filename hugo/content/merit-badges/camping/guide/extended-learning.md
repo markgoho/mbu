@@ -57,7 +57,7 @@ Ready to take your camping to the next level? These destinations and programs of
 
 {{< drg/experience-card title="State Parks and National Forests" details="Locations: Every state | Highlights: Often less crowded and less expensive than national parks, with excellent camping, hiking, and fishing opportunities" >}}
 
-{{< drg/image src="images/philmont-tooth-of-time.png" alt="A group of Scouts hiking on a trail at Philmont Scout Ranch with the Tooth of Time rock formation visible in the background against a blue sky" >}}
+{{< drg/image src="images/philmont-tooth-of-time.avif" alt="A group of Scouts hiking on a trail at Philmont Scout Ranch with the Tooth of Time rock formation visible in the background against a blue sky" >}}
 
 ### F. Organizations
 
@@ -75,4 +75,4 @@ These organizations support outdoor recreation, conservation, and education. Con
 
 {{< drg/org-card name="REI Co-op" description="An outdoor recreation cooperative that offers classes, events, and expert advice on camping, hiking, and outdoor skills. Many locations offer free or low-cost workshops." url="https://www.rei.com/" >}}
 
-{{< drg/image src="images/scouts-stargazing-camp.png" alt="A group of Scouts lying on sleeping pads outside their tents, looking up at a star-filled night sky in a remote camping area" >}}
+{{< drg/image src="images/scouts-stargazing-camp.avif" alt="A group of Scouts lying on sleeping pads outside their tents, looking up at a star-filled night sky in a remote camping area" >}}

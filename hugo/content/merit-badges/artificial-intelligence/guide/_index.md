@@ -88,7 +88,7 @@ You are living in the age of artificial intelligence — and whether you realize
 
 AI is not science fiction. It is a set of tools built by people — people who started out just as curious as you are right now. This merit badge will help you understand the basics, think critically about the ethics, and even build something of your own.
 
-{{< drg/image src="images/scouts-ai-workshop.png" alt="A diverse group of Scouts gathered around a table with laptops and tablets, working on an AI project together in a bright, modern classroom or maker space. Expressions of curiosity and excitement." >}}
+{{< drg/image src="images/scouts-ai-workshop.avif" alt="A diverse group of Scouts gathered around a table with laptops and tablets, working on an AI project together in a bright, modern classroom or maker space. Expressions of curiosity and excitement." >}}
 
 ## Then and Now
 
@@ -101,7 +101,7 @@ The idea of machines that can "think" is older than you might expect. In 1950, B
 
 Six years later, in 1956, a group of researchers gathered at Dartmouth College and officially coined the term "artificial intelligence." They believed that every aspect of learning could, in principle, be described so precisely that a machine could be made to simulate it. The field of AI was born — but progress would prove much harder and slower than those early pioneers expected.
 
-{{< drg/image src="images/early-computer-room.png" alt="A historical photograph-style scene of a 1950s or 1960s university computer room with large mainframe computers, reel-to-reel tape drives, and a researcher in a white shirt and tie examining printouts." >}}
+{{< drg/image src="images/early-computer-room.avif" alt="A historical photograph-style scene of a 1950s or 1960s university computer room with large mainframe computers, reel-to-reel tape drives, and a researcher in a white shirt and tie examining printouts." >}}
 
 ### Now — AI Everywhere
 
@@ -110,7 +110,7 @@ Today, AI is not locked in a research lab. It is in your pocket, on your kitchen
 - **Purpose:** Solve real-world problems at scale — from healthcare to entertainment to environmental science
 - **Mindset:** AI is a tool for everyone, not just computer scientists. The question is no longer "Can machines think?" but "How should we use these powerful tools wisely?"
 
-{{< drg/image src="images/scout-voice-assistant.png" alt="A Scout in their bedroom talking to a smart speaker (voice assistant) on their desk, with homework spread out and a backpack nearby. Natural afternoon light from a window." >}}
+{{< drg/image src="images/scout-voice-assistant.avif" alt="A Scout in their bedroom talking to a smart speaker (voice assistant) on their desk, with homework spread out and a backpack nearby. Natural afternoon light from a window." >}}
 
 ---
 

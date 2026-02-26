@@ -121,6 +121,6 @@ Drowning is one of the leading causes of accidental death. A drowning person is 
 
 {{< drg/video title="A Patrol Performs an Ice Rescue" url="https://youtu.be/plTSz7in_Xk" >}}
 
-{{< drg/image src="images/reach-throw-row.png" alt="Three panels showing the Reach, Throw, Row rescue methods for a drowning person near a dock" >}}
+{{< drg/image src="images/reach-throw-row.avif" alt="Three panels showing the Reach, Throw, Row rescue methods for a drowning person near a dock" >}}
 
 {{< drg/next-page text="You have learned how to rescue someone from four dangerous situations while keeping yourself safe." teaser="Learn how to signal for help using air, ground, and water rescue techniques." url="/merit-badges/emergency-preparedness/guide/req5/" >}}

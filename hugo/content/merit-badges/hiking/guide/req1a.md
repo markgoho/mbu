@@ -33,7 +33,7 @@ We call these the **Five W's of a Trip Plan**:
 
 By answering these five questions, you’ve already started preventing emergencies. You’ve checked if the hike is too hard for your group and you’ve given yourself a deadline.
 
-{{< drg/image src="images/trip-plan-clipboard.png" alt="A handwritten trip plan on a clipboard with a map and pencil beside it on a picnic table" >}}
+{{< drg/image src="images/trip-plan-clipboard.avif" alt="A handwritten trip plan on a clipboard with a map and pencil beside it on a picnic table" >}}
 
 ### The Gear That Keeps You Safe
 
@@ -100,7 +100,7 @@ The "prevent" part of hiking safety often comes down to what you're wearing. The
 - Camera: To capture the memories without disturbing the wildlife!
   {{< /drg/checklist >}}
 
-{{< drg/image src="images/layering-system.png" alt="A layering system showing base layer, mid layer, and outer shell laid out on a flat surface" >}}
+{{< drg/image src="images/layering-system.avif" alt="A layering system showing base layer, mid layer, and outer shell laid out on a flat surface" >}}
 
 {{< drg/did-you-know >}}
 Did you know that cotton is often called "death cloth" by experienced hikers? When cotton gets wet from rain or sweat, it stops keeping you warm and actually pulls heat away from your body. Always look for synthetic materials like polyester or natural fibers like wool!
@@ -138,7 +138,7 @@ Most animals want to avoid you as much as you want to avoid them. To prevent an 
 - Make yourself look big by raising your arms.
   {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/trail-map-compass.png" alt="A Scout pausing on a trail to read a map and compass with forest in the background" >}}
+{{< drg/image src="images/trail-map-compass.avif" alt="A Scout pausing on a trail to read a map and compass with forest in the background" >}}
 
 {{< drg/tip >}}
 When you encounter a hazard on the trail, like a fallen tree or a washed-out path, take a moment to discuss it with your group. Deciding together on the safest way to bypass the hazard is great leadership in action!

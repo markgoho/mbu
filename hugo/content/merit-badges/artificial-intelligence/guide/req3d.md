@@ -50,7 +50,7 @@ The **action** is the output — the thing that actually happens. A door opens. 
 The concept of "If This, Then That" is so central to automation that there is a popular app literally called IFTTT (ifttt.com) that lets you connect apps and devices with simple trigger-action rules — no coding required.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/automation-flowchart.png" alt="A Scout drawing a flowchart on a whiteboard showing triggers, conditions, and actions — the basic structure of an automated workflow. Marker in hand, concentrating." >}}
+{{< drg/image src="images/automation-flowchart.avif" alt="A Scout drawing a flowchart on a whiteboard showing triggers, conditions, and actions — the basic structure of an automated workflow. Marker in hand, concentrating." >}}
 
 ---
 

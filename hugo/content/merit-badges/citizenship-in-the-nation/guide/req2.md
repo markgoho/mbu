@@ -63,7 +63,7 @@ Liberty means freedom. The founders wanted to make sure that the freedoms they f
 The phrase "We the People" was a radical idea in 1787. At the time, most governments were run by kings or small groups of elites. Starting the Constitution with "We the People" declared that the power of government comes from ordinary citizens — not from a monarch or ruling class.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/preamble-calligraphy.png" alt="A beautifully rendered calligraphy version of the Preamble to the U.S. Constitution on aged parchment paper" >}}
+{{< drg/image src="images/preamble-calligraphy.avif" alt="A beautifully rendered calligraphy version of the Preamble to the U.S. Constitution on aged parchment paper" >}}
 
 ### Making It Personal
 
@@ -89,7 +89,7 @@ Try reading the Preamble out loud before your counselor meeting. It is one sente
     url="https://constitutioncenter.org/the-constitution/preamble"
     description="An in-depth look at the Preamble with expert analysis of each phrase and its historical context." >}}
 
-{{< drg/image src="images/scout-reading-constitution.png" alt="A Scout sitting at a library table with a copy of the Constitution open, taking notes in a notebook" >}}
+{{< drg/image src="images/scout-reading-constitution.avif" alt="A Scout sitting at a library table with a copy of the Constitution open, taking notes in a notebook" >}}
 
 {{< drg/next-page
     text="Now that you know the six purposes behind the Constitution"

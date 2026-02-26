@@ -45,7 +45,7 @@ A physically fit person does not have to look a certain way. Fitness shows up in
 When you describe a physically fit person to your counselor, think about someone you actually know — a family member, a coach, a fellow Scout. Use real examples of what they can do, not just what they look like. Fitness is about function, not appearance.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-running-trail.png" alt="A Scout running along a wooded trail with good form, looking energetic and focused" >}}
+{{< drg/image src="images/scout-running-trail.avif" alt="A Scout running along a wooded trail with good form, looking energetic and focused" >}}
 
 ### Body Composition — The Fifth Factor
 

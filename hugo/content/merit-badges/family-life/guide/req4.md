@@ -55,7 +55,7 @@ Every home is different, so your project should address a genuine need in your h
 Before you commit to a project, walk through your home with your parent or guardian and ask: "What bothers you about this space?" or "What have you been meaning to get done?" The best projects come from listening to your family's real needs, not from a list on the internet.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-organizing-garage.png" alt="A Scout organizing a garage with labeled storage bins, tools hung neatly on a pegboard, and a clear workspace" >}}
+{{< drg/image src="images/scout-organizing-garage.avif" alt="A Scout organizing a garage with labeled storage bins, tools hung neatly on a pegboard, and a clear workspace" >}}
 
 ### Planning Your Project
 
@@ -107,7 +107,7 @@ Maybe the paint color looked different on the wall than it did on the chip. Mayb
 
 {{< drg/external-link title="Handy Teen Finishes House (video)" url="https://www.youtube.com/watch?v=q9mhk1wPefA" description="An inspiring video about a teen who tackled a major home improvement project." >}}
 
-{{< drg/image src="images/before-after-project.png" alt="A split image showing a cluttered, disorganized closet on the left labeled Before and the same closet neatly organized with bins and labels on the right labeled After" >}}
+{{< drg/image src="images/before-after-project.avif" alt="A split image showing a cluttered, disorganized closet on the left labeled Before and the same closet neatly organized with bins and labels on the right labeled After" >}}
 
 {{< drg/next-page
     text="You've completed a project on your own — great work!"

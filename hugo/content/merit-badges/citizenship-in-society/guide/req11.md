@@ -49,7 +49,7 @@ For each setting, consider:
 - Online: Share content that celebrates diverse voices and accomplishments.
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/scout-action-plan.png" alt="A Scout writing out an action plan on a whiteboard, with categories like School, Community, and Scouting visible" >}}
+{{< drg/image src="images/scout-action-plan.avif" alt="A Scout writing out an action plan on a whiteboard, with categories like School, Community, and Scouting visible" >}}
 
 ### Part B: Why Diverse Perspectives Make Things Better
 

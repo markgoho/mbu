@@ -81,7 +81,7 @@ Choose three careers from the lists above (or find others that interest you). Fo
 
 Pick the career that interests you most and research the following:
 
-{{< drg/image src="images/professional-interview.png" alt="A Scout in uniform sitting across from a professional in a modern office or video call setup, notebook open, taking notes during an interview about AI careers." >}}
+{{< drg/image src="images/professional-interview.avif" alt="A Scout in uniform sitting across from a professional in a modern office or video call setup, notebook open, taking notes during an interview about AI careers." >}}
 
 {{< drg/checklist title="Career Research Checklist" subtitle="Gather information on each of these:" >}}
 
@@ -98,7 +98,7 @@ Pick the career that interests you most and research the following:
 
 ### Where to Research
 
-{{< drg/image src="images/ai-career-research.png" alt="A Scout at a library or study space with books and a laptop, researching AI careers. The laptop screen shows a career website. Focused, studious atmosphere." >}}
+{{< drg/image src="images/ai-career-research.avif" alt="A Scout at a library or study space with books and a laptop, researching AI careers. The laptop screen shows a career website. Focused, studious atmosphere." >}}
 
 {{< drg/external-link title="U.S. Bureau of Labor Statistics — Computer and IT Occupations" url="https://www.bls.gov/ooh/computer-and-information-technology/home.htm" description="Official government data on job outlook, salaries, education requirements, and more for technology careers." >}}
 

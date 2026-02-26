@@ -75,7 +75,7 @@ Walk through each area of the home with an adult. Look at the space with fresh e
 
 {{< drg/external-link title="Home Safety Checklists (PDF)" url="https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Emergency%20Preparedness/E%20Prep%20Checklists%20Home%20Safety%20%231%20%23%202.docx.pdf" description="Official BSA home safety checklists for the Emergency Preparedness merit badge." >}}
 
-{{< drg/image src="images/home-safety-inspection.png" alt="A Scout and an adult walking through a home with a clipboard, checking a fire extinguisher" >}}
+{{< drg/image src="images/home-safety-inspection.avif" alt="A Scout and an adult walking through a home with a clipboard, checking a fire extinguisher" >}}
 
 ---
 

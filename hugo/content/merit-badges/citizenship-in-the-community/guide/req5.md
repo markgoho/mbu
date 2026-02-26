@@ -64,7 +64,7 @@ As you watch the movie, think about these questions. You do not need to write fo
 - What qualities does the main character show that make them a good citizen?
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/scout-watching-movie.png" alt="A Scout watching a movie at home with a parent, with a notebook and pen on the coffee table ready for note-taking" >}}
+{{< drg/image src="images/scout-watching-movie.avif" alt="A Scout watching a movie at home with a parent, with a notebook and pen on the coffee table ready for note-taking" >}}
 
 ## Discussing the Movie with Your Counselor
 
@@ -94,7 +94,7 @@ Sometimes counselors push Scouts to think deeper. If you are asked something you
     url="https://www.commonsensemedia.org/"
     description="Age-appropriate movie reviews and recommendations. Search for films about community, citizenship, and social justice." >}}
 
-{{< drg/image src="images/film-community-impact.png" alt="A movie screen showing a scene of diverse community members gathered together in a town square, viewed from the perspective of an audience member" >}}
+{{< drg/image src="images/film-community-impact.avif" alt="A movie screen showing a scene of diverse community members gathered together in a town square, viewed from the perspective of an audience member" >}}
 
 ---
 

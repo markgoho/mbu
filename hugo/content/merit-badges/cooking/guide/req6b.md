@@ -60,7 +60,7 @@ Dehydrated backpacking meals from outdoor retailers can cost $8–15 each. Makin
 - **Compare fresh vs. dried.** Dried and dehydrated options are lighter but can be more expensive per serving. Balance weight savings against budget.
 - **Don't forget fuel.** Add the cost of stove fuel (a small canister is usually $5–8) and any water purification supplies to your total.
 
-{{< drg/image src="images/trail-shopping-scale.png" alt="A Scout at a kitchen counter weighing trail food on a kitchen scale and recording the weight on a shopping list, with bags of dried food and energy bars spread out" >}}
+{{< drg/image src="images/trail-shopping-scale.avif" alt="A Scout at a kitchen counter weighing trail food on a kitchen scale and recording the weight on a shopping list, with bags of dried food and energy bars spread out" >}}
 
 {{< drg/next-page
     text="Your trail shopping list and budget are complete."

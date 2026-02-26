@@ -121,7 +121,7 @@ Today, most people do not get enough physical activity from daily life alone. We
 
 **Get Ready!** This badge is a 12-week commitment that will change how you think about your body and your health. You will test yourself, build a plan, follow through, and see real results. Let's get started!
 
-{{< drg/image src="images/scout-stretching-sunrise.png" alt="A Scout stretching outdoors at sunrise, preparing for a morning workout with a park trail in the background" >}}
+{{< drg/image src="images/scout-stretching-sunrise.avif" alt="A Scout stretching outdoors at sunrise, preparing for a morning workout with a park trail in the background" >}}
 
 ---
 
@@ -153,7 +153,7 @@ Never stretch a cold muscle. Always warm up with light movement — like walking
 
 Body composition refers to the ratio of muscle, bone, water, and fat in your body. It is not about what the scale says — two people can weigh the same but have very different levels of fitness. Regular exercise and good nutrition work together to build a healthy body composition over time.
 
-{{< drg/image src="images/four-fitness-components.png" alt="An illustrated diagram showing the four components of physical fitness: a heart for cardio, a flexed arm for strength, a person stretching for flexibility, and a balanced scale for body composition" >}}
+{{< drg/image src="images/four-fitness-components.avif" alt="An illustrated diagram showing the four components of physical fitness: a heart for cardio, a flexed arm for strength, a person stretching for flexibility, and a balanced scale for body composition" >}}
 
 ### Mental and Emotional Fitness
 

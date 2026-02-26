@@ -74,7 +74,7 @@ If a conversation starts to get heated, try the **pause and redirect** technique
 - **Agree to disagree** — Sometimes the best outcome is mutual respect, not total agreement.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/scouts-conflict-resolution.png" alt="Two Scouts sitting face-to-face in a calm discussion, with a patrol leader mediating between them, in an outdoor campsite setting" >}}
+{{< drg/image src="images/scouts-conflict-resolution.avif" alt="Two Scouts sitting face-to-face in a calm discussion, with a patrol leader mediating between them, in an outdoor campsite setting" >}}
 
 ### E. Real-World Experiences
 

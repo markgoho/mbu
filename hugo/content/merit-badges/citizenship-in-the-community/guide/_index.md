@@ -83,7 +83,7 @@ Today, communities are larger and more complex, but the core idea is the same: c
 
 **Get Ready!** Your community needs people who care enough to show up, speak up, and pitch in. This merit badge will show you how — and you might be surprised by how much power you already have to shape the place you live.
 
-{{< drg/image src="images/scout-community-overview.png" alt="A Scout standing in a vibrant town square looking at a community bulletin board, with a city hall and library visible in the background" >}}
+{{< drg/image src="images/scout-community-overview.avif" alt="A Scout standing in a vibrant town square looking at a community bulletin board, with a city hall and library visible in the background" >}}
 
 ---
 
@@ -107,7 +107,7 @@ Civic participation is the act of engaging with your government. It includes att
 
 Advocacy means speaking up for a cause you believe in. Maybe you want your town to build more bike lanes, or you think the local library should have longer hours. Advocates research the issue, gather support from others, and present their case to decision-makers. You do not need to be an adult to be an effective advocate.
 
-{{< drg/image src="images/scouts-civic-engagement.png" alt="Scouts of diverse backgrounds participating in a community town hall meeting, some seated in the audience and one standing at a microphone" >}}
+{{< drg/image src="images/scouts-civic-engagement.avif" alt="Scouts of diverse backgrounds participating in a community town hall meeting, some seated in the audience and one standing at a microphone" >}}
 
 ### Community Organizing
 
@@ -125,7 +125,7 @@ Today, much of community life happens online. Digital citizenship means being re
 Be thoughtful about what you share online. Never post personal information like your home address, school name, or phone number on public platforms. If you encounter cyberbullying or harmful content, tell a trusted adult.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/community-volunteering.png" alt="Scouts in clean uniforms working alongside community members to plant trees in a neighborhood park on a sunny day" >}}
+{{< drg/image src="images/community-volunteering.avif" alt="Scouts in clean uniforms working alongside community members to plant trees in a neighborhood park on a sunny day" >}}
 
 ---
 

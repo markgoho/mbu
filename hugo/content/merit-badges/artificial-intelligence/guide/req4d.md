@@ -15,7 +15,7 @@ What is the Turing test?
 
 The Turing Test is one of the most famous ideas in the history of artificial intelligence. It was proposed in 1950 — before AI even had a name — and it is still debated today. Understanding it gives you insight into the deepest question in the field: Can machines truly think?
 
-{{< drg/image src="images/turing-test-concept.png" alt="A split-scene setup: on one side of a desk, a Scout types on a keyboard looking at a screen. On the other side (separated by a divider), another person sits at a computer — representing the Turing Test concept of hidden communication." >}}
+{{< drg/image src="images/turing-test-concept.avif" alt="A split-scene setup: on one side of a desk, a Scout types on a keyboard looking at a screen. On the other side (separated by a divider), another person sits at a computer — representing the Turing Test concept of hidden communication." >}}
 
 ---
 

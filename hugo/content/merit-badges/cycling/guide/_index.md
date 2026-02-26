@@ -85,7 +85,7 @@ Modern bikes are engineering marvels. Carbon fiber frames weigh less than a gall
 
 **Get Ready!** Whether you ride a hand-me-down cruiser or a brand-new mountain bike, the Cycling merit badge will help you ride with confidence, skill, and safety. Let's roll!
 
-{{< drg/image src="images/scout-bike-trailhead.png" alt="A Scout standing with a bicycle at a trailhead, helmet on, looking excited to start a ride" >}}
+{{< drg/image src="images/scout-bike-trailhead.avif" alt="A Scout standing with a bicycle at a trailhead, helmet on, looking excited to start a ride" >}}
 
 ---
 
@@ -109,7 +109,7 @@ Mountain biking takes you off-road — onto dirt trails, rocky paths, and forest
 Mountain biking terrain is unpredictable. Always wear a properly fitted helmet, ride within your skill level, and scout unfamiliar trails on foot before riding them. Carry a repair kit — help may be far away.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/mountain-bike-singletrack.png" alt="A Scout riding a mountain bike on a forest singletrack trail with trees and dappled sunlight" >}}
+{{< drg/image src="images/mountain-bike-singletrack.avif" alt="A Scout riding a mountain bike on a forest singletrack trail with trees and dappled sunlight" >}}
 
 ### Gravel and Adventure Cycling
 
@@ -139,7 +139,7 @@ Touring cyclists carry everything they need — tent, sleeping bag, cooking gear
 The longest bicycle trip ever recorded covered over 402,000 miles. British cyclist Tommy Godwin set a record in the 1930s by riding an average of 205 miles per day for an entire year — and he did it on steel roads bikes with no modern gear!
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/bike-types-lineup.png" alt="Several types of bicycles side by side: road bike, mountain bike, gravel bike, BMX, and commuter bike" >}}
+{{< drg/image src="images/bike-types-lineup.avif" alt="Several types of bicycles side by side: road bike, mountain bike, gravel bike, BMX, and commuter bike" >}}
 
 ---
 

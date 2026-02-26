@@ -17,7 +17,7 @@ Automation did not start with computers. Humans have been building machines to d
 
 Just like with the AI timeline in [Requirement 2e](/merit-badges/artificial-intelligence/guide/req2e/), pick the five milestones that interest you most and present them with a brief explanation of why each one mattered.
 
-{{< drg/image src="images/automation-timeline-poster.png" alt="A completed timeline poster on a classroom wall showing milestones in automation history, with printed images and neat labels. A Scout standing back to admire the finished work." >}}
+{{< drg/image src="images/automation-timeline-poster.avif" alt="A completed timeline poster on a classroom wall showing milestones in automation history, with printed images and neat labels. A Scout standing back to admire the finished work." >}}
 
 ---
 

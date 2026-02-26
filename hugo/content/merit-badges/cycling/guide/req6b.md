@@ -65,7 +65,7 @@ Neutral position, ready position, bike body separation (side to side, and forwar
 Practice bike-body separation in a flat, open area. Set up cones and practice weaving through them while keeping your upper body as still as possible. This single skill will dramatically improve your trail riding.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/mtb-ready-position.png" alt="A Scout on a mountain bike demonstrating the ready (attack) position on a dirt trail, knees bent, elbows out, eyes forward" >}}
+{{< drg/image src="images/mtb-ready-position.avif" alt="A Scout on a mountain bike demonstrating the ready (attack) position on a dirt trail, knees bent, elbows out, eyes forward" >}}
 
 #### 6b.1.b — Shifting on Climbs and Obstacles
 
@@ -171,7 +171,7 @@ Cross rocks, gravel, and roots properly.
 
 **Roots:** Cross roots as close to perpendicular as possible, just like railroad tracks. Wet roots are extremely slippery — reduce speed and avoid braking or turning while on them. Unweight your front wheel as you cross.
 
-{{< drg/image src="images/trail-obstacle-technique.png" alt="A Scout on a mountain bike crossing a section of trail with exposed tree roots, demonstrating proper body position" >}}
+{{< drg/image src="images/trail-obstacle-technique.avif" alt="A Scout on a mountain bike crossing a section of trail with exposed tree roots, demonstrating proper body position" >}}
 
 ---
 
@@ -251,7 +251,7 @@ A 22-mile trail ride is a serious achievement. You may combine multiple trail sy
 - Call your emergency contact if you need help. There is no shame in asking for a ride home.
 {{< /drg/be-prepared >}}
 
-{{< drg/image src="images/trail-biking-group.png" alt="Two Scouts mountain biking together on a scenic trail through open meadow with mountains in the background" >}}
+{{< drg/image src="images/trail-biking-group.avif" alt="Two Scouts mountain biking together on a scenic trail through open meadow with mountains in the background" >}}
 
 ### Explore More Resources
 

@@ -48,7 +48,7 @@ Here are adjustments that many Scouts discover through this process:
 - **"I ran out of a key ingredient."** Double-check your shopping list against your recipes before you start cooking.
 - **"The kitchen was a mess."** Clean as you go. Wash dishes, wipe surfaces, and put away ingredients between steps.
 
-{{< drg/image src="images/evaluation-notebook.png" alt="A Scout sitting at a dining table with an empty plate, writing in a notebook labeled \"Meal Evaluation\" while an adult family member smiles and offers feedback" >}}
+{{< drg/image src="images/evaluation-notebook.avif" alt="A Scout sitting at a dining table with an empty plate, writing in a notebook labeled \"Meal Evaluation\" while an adult family member smiles and offers feedback" >}}
 
 ### The Role of Planning and Preparation
 

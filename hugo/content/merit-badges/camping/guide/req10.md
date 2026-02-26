@@ -70,7 +70,7 @@ Camping teaches citizenship in surprising ways. Working with your patrol, follow
 - Being considerate of other campers and the environment
 - Giving back through service
 
-{{< drg/image src="images/scout-campfire-reflection.png" alt="A Scout sitting by a small campfire at dusk, journal in hand, reflecting on their camping experiences with a tent and starry sky in the background" >}}
+{{< drg/image src="images/scout-campfire-reflection.avif" alt="A Scout sitting by a small campfire at dusk, journal in hand, reflecting on their camping experiences with a tent and starry sky in the background" >}}
 
 ### Scout Spirit, the Scout Oath, and the Scout Law
 
@@ -107,7 +107,7 @@ But this is not the end — it is the beginning. The skills and values you built
 The Camping merit badge has been part of the Eagle Scout requirements since 1972. Before that, camping skills were tested through other requirements, but the importance of outdoor experience has been central to Scouting since its founding in 1910.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/eagle-scout-trail-sunset.png" alt="A Scout standing on a mountain overlook at sunset, looking out over a vast landscape, symbolizing the journey and achievement of completing the Camping merit badge" >}}
+{{< drg/image src="images/eagle-scout-trail-sunset.avif" alt="A Scout standing on a mountain overlook at sunset, looking out over a vast landscape, symbolizing the journey and achievement of completing the Camping merit badge" >}}
 
 {{< drg/next-page
     text="You have reflected on your camping journey and what it means."

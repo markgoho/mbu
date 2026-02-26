@@ -66,7 +66,7 @@ When you present your trail plan, your counselor will want to see:
 - A designated "trash bag" packed for trail waste
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/repackaging-station.png" alt="A Scout at a kitchen table repackaging trail food: transferring oatmeal into zip-lock bags, labeling with a marker, with a kitchen scale, permanent marker, and bags spread out" >}}
+{{< drg/image src="images/repackaging-station.avif" alt="A Scout at a kitchen table repackaging trail food: transferring oatmeal into zip-lock bags, labeling with a marker, with a kitchen scale, permanent marker, and bags spread out" >}}
 
 {{< drg/did-you-know >}}
 Experienced long-distance hikers (thru-hikers) sometimes cut the handles off their toothbrushes and remove clothing tags to save weight. While you do not need to go that far, the principle is the same — every ounce you can eliminate makes your hike more enjoyable.

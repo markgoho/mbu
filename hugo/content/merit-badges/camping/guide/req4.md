@@ -54,7 +54,7 @@ A good duty roster is simple and clear. Here is an example format for a two-day,
 The patrol method has been part of Scouting since the very beginning. Baden-Powell designed it so that a small group of 6–8 Scouts would operate as a team, with an elected patrol leader managing the group. It is still the core unit of Scout camping today.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/patrol-duty-roster-board.png" alt="A handwritten duty roster on a whiteboard or poster at a campsite, showing patrol member names and their assigned tasks across meals" >}}
+{{< drg/image src="images/patrol-duty-roster-board.avif" alt="A handwritten duty roster on a whiteboard or poster at a campsite, showing patrol member names and their assigned tasks across meals" >}}
 
 ### Helping Others Prepare
 
@@ -88,7 +88,7 @@ You will dive much deeper into menu planning in [Requirement 8c — Menu Plannin
 
 {{< drg/external-link title="Scouting America Planning Worksheet" url="https://filestore.scouting.org/filestore/boyscouts/pdf/512-505-2016-Scout-Planning-Worksheet.pdf" description="An official worksheet to help organize your patrol's campout planning, including duty roster and menu sections." >}}
 
-{{< drg/image src="images/scouts-teaching-tent-setup.png" alt="An older Scout demonstrating tent pitching to a small group of younger Scouts, with one Scout holding a tent pole and another spreading the ground cloth" >}}
+{{< drg/image src="images/scouts-teaching-tent-setup.avif" alt="An older Scout demonstrating tent pitching to a small group of younger Scouts, with one Scout holding a tent pole and another spreading the ground cloth" >}}
 
 {{< drg/next-page
     text="You know how to organize your patrol and plan a campout."

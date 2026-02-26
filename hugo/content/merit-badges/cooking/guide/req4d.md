@@ -67,7 +67,7 @@ Keep a simple log as you cook. For each meal, write down: (1) what you cooked, (
 
 **Clean as you go.** Wash a pot as soon as you are done with it. Wipe down cutting boards between uses. This keeps your workspace manageable and is a critical food safety practice.
 
-{{< drg/image src="images/scout-cooking-home.png" alt="A Scout at a home kitchen stove, pan-frying eggs in a skillet while a pot of oatmeal simmers on the back burner, with a clean and organized workspace" >}}
+{{< drg/image src="images/scout-cooking-home.avif" alt="A Scout at a home kitchen stove, pan-frying eggs in a skillet while a pot of oatmeal simmers on the back burner, with a clean and organized workspace" >}}
 
 ### Serving the Meal
 

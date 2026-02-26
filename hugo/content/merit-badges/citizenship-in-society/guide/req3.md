@@ -67,7 +67,7 @@ Once you have your moment, walk through these questions:
 Honesty matters more than perfection here. If you made a choice you are not proud of, say so. Your counselor will respect your honesty far more than a polished story where you are the hero every time.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scout-reflecting-journal.png" alt="A Scout sitting under a tree writing in a journal, looking thoughtful, with a natural outdoor setting" >}}
+{{< drg/image src="images/scout-reflecting-journal.avif" alt="A Scout sitting under a tree writing in a journal, looking thoughtful, with a natural outdoor setting" >}}
 
 ### Part B: Future Ethical Decisions
 

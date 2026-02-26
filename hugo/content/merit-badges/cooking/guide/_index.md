@@ -159,7 +159,7 @@ Today, cooking has evolved into something far bigger than survival. Professional
 
 **Get Ready!** You are about to learn skills that will feed you for the rest of your life — literally. From your first scrambled egg to a full trail dinner for your patrol, every meal you cook builds confidence. Let's fire it up!
 
-{{< drg/image src="images/scout-kitchen-ready.png" alt="A Scout standing in a clean kitchen wearing an apron, holding a wooden spoon, with fresh ingredients spread on the counter" >}}
+{{< drg/image src="images/scout-kitchen-ready.avif" alt="A Scout standing in a clean kitchen wearing an apron, holding a wooden spoon, with fresh ingredients spread on the counter" >}}
 
 ---
 
@@ -183,7 +183,7 @@ Camp cooking strips away the convenience of a kitchen and challenges you to prep
 Outdoor cooking requires extra caution with fire. Always have water or a fire extinguisher nearby. Never use a camp stove inside a tent. Keep your cooking area clear of dry leaves and brush.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/camp-cooking-scene.png" alt="Scouts cooking over a camp stove at a campsite with a picnic table and trees in the background, wearing clean uniforms" >}}
+{{< drg/image src="images/camp-cooking-scene.avif" alt="Scouts cooking over a camp stove at a campsite with a picnic table and trees in the background, wearing clean uniforms" >}}
 
 ### Trail & Backpacking Cooking
 
@@ -213,7 +213,7 @@ Never use lighter fluid on an already-lit fire. When grilling, keep a safe zone 
 
 Every culture on Earth has its own cooking traditions, ingredients, and techniques. Learning about global cuisine opens your eyes to new flavors and new ways of thinking about food. You might discover that the spices used in Indian curries, the fermentation behind Korean kimchi, or the simplicity of Italian pasta inspire your own cooking adventures.
 
-{{< drg/image src="images/global-cuisine-spread.png" alt="A colorful spread of dishes from different world cuisines arranged on a table, including pasta, stir-fry, tacos, and curry" >}}
+{{< drg/image src="images/global-cuisine-spread.avif" alt="A colorful spread of dishes from different world cuisines arranged on a table, including pasta, stir-fry, tacos, and curry" >}}
 
 ---
 

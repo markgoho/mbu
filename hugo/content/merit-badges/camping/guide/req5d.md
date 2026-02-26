@@ -50,7 +50,7 @@ The Scout outdoor essentials are based on the "Ten Essentials" system developed 
 Pre-pack your essentials in a small ditty bag or stuff sack that stays in your backpack. That way, you never forget them — they are always ready to go. Restock anything you used after every trip.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/outdoor-essentials-layout.png" alt="All ten Scout outdoor essentials laid out neatly on a flat rock or camp table: pocketknife, first-aid kit, extra socks and fleece, rain jacket, water bottle, headlamp, trail mix, waterproof matches, sunscreen and sunglasses, map and compass" >}}
+{{< drg/image src="images/outdoor-essentials-layout.avif" alt="All ten Scout outdoor essentials laid out neatly on a flat rock or camp table: pocketknife, first-aid kit, extra socks and fleece, rain jacket, water bottle, headlamp, trail mix, waterproof matches, sunscreen and sunglasses, map and compass" >}}
 
 ### Beyond the Basics
 
@@ -66,7 +66,7 @@ Depending on the trip, you may want to add a few more items:
 
 {{< drg/external-link title="10 Essentials for Scout Camping" url="https://scoutingmagazine.org/2013/02/the-10-essentials/" description="A detailed breakdown of each essential and why it belongs in every Scout's pack." >}}
 
-{{< drg/image src="images/ditty-bag-essentials.png" alt="A Scout's ditty bag open on a camp table, showing the organized essentials packed inside with some items partially visible" >}}
+{{< drg/image src="images/ditty-bag-essentials.avif" alt="A Scout's ditty bag open on a camp table, showing the organized essentials packed inside with some items partially visible" >}}
 
 {{< drg/next-page
     text="You know what the outdoor essentials are and why each one matters."

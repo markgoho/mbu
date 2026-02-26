@@ -147,7 +147,7 @@ Your personal emergency service pack is what you grab when the call comes in. It
 
 {{< drg/external-link title="Family and Personal Emergency Kits" url="https://scoutlife.org/outdoors/outdoorarticles/16727/create-an-emergency-pack-or-kit/" description="Scout Life magazine guide to creating personal and family emergency kits." >}}
 
-{{< drg/image src="images/go-bag-contents.png" alt="A personal emergency service pack laid out on a table showing all contents organized and labeled" >}}
+{{< drg/image src="images/go-bag-contents.avif" alt="A personal emergency service pack laid out on a table showing all contents organized and labeled" >}}
 
 ---
 

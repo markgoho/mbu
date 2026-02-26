@@ -68,7 +68,7 @@ Muscular strength and endurance element: repetitive exercises that target differ
 
 Strength training does not require a gym membership or expensive equipment. Many effective exercises use just your body weight.
 
-{{< drg/image src="images/strength-exercises-grid.png" alt="A grid of six illustrated exercises showing proper form: push-ups, squats, lunges, planks, rows with a backpack, and farmer's carries" >}}
+{{< drg/image src="images/strength-exercises-grid.avif" alt="A grid of six illustrated exercises showing proper form: push-ups, squats, lunges, planks, rows with a backpack, and farmer's carries" >}}
 
 **Upper body exercises:**
 - Push-ups (regular, wide, narrow, incline)

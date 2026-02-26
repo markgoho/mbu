@@ -245,7 +245,7 @@ Active violence situations are terrifying but survivable. The "Run, Hide, Fight"
 
 ---
 
-{{< drg/image src="images/emergency-chart-example.png" alt="A Scout filling in a chart with emergency scenarios and the five aspects of emergency preparedness" >}}
+{{< drg/image src="images/emergency-chart-example.avif" alt="A Scout filling in a chart with emergency scenarios and the five aspects of emergency preparedness" >}}
 
 {{< drg/did-you-know >}}
 The Federal Emergency Management Agency (FEMA) uses the same five-aspect framework you are learning here. Professional emergency managers across the country think about emergencies the exact same way you are being taught in this merit badge.

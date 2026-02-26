@@ -17,7 +17,7 @@ This requirement is your vocabulary boot camp. Before you can build, discuss, or
 
 Do not just memorize definitions. Try to think of a real-world example for each term. When you meet with your counselor, connecting a definition to something concrete shows that you truly understand it.
 
-{{< drg/image src="images/ai-vocabulary-notebook.png" alt="Close-up of a Scout's notebook open on a table with handwritten AI vocabulary terms and definitions, colorful highlighters and pens beside it. Clean, studious setting." >}}
+{{< drg/image src="images/ai-vocabulary-notebook.avif" alt="Close-up of a Scout's notebook open on a table with handwritten AI vocabulary terms and definitions, colorful highlighters and pens beside it. Clean, studious setting." >}}
 
 ---
 

@@ -83,7 +83,7 @@ The average backpacker takes about 2,000 steps per mile. On a 10-mile hiking day
 
 {{< drg/video title="Choosing Between Hiking Boots, Shoes, and Trail Runners" url="https://youtu.be/liJtac-GvZw?si=ToQQv90HyVEIqwe_" >}}
 
-{{< drg/image src="images/hiking-footwear-lineup.png" alt="A lineup of different hiking footwear types on a wooden porch: trail runners, hiking shoes, mid-cut hiking boots, and insulated winter boots" >}}
+{{< drg/image src="images/hiking-footwear-lineup.avif" alt="A lineup of different hiking footwear types on a wooden porch: trail runners, hiking shoes, mid-cut hiking boots, and insulated winter boots" >}}
 
 {{< drg/next-page
     text="You know how to choose the right footwear for any condition."

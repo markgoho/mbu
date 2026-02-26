@@ -51,7 +51,7 @@ Here is how:
 Rangers and land managers love working with Scouts. They have more work than they can handle, and enthusiastic young volunteers are always welcome. Do not be shy about reaching out — you will almost certainly get a positive response.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/scouts-trail-maintenance.png" alt="A group of Scouts performing trail maintenance in a forest, using hand tools to clear brush and repair a water bar on a hiking trail" >}}
+{{< drg/image src="images/scouts-trail-maintenance.avif" alt="A group of Scouts performing trail maintenance in a forest, using hand tools to clear brush and repair a water bar on a hiking trail" >}}
 
 ### Planning Your Project
 
@@ -82,7 +82,7 @@ Scouts collectively contribute millions of hours of conservation service every y
 
 {{< drg/external-link title="Conservation Project Planning Checklist" url="https://www.scouting.org/wp-content/uploads/2019/01/Conservation-Project-Planning-Checklist.pdf" description="An official Scouting America checklist to help you plan and document your conservation project." >}}
 
-{{< drg/image src="images/before-after-cleanup.png" alt="A before-and-after comparison of a campsite or trail section: the left side showing litter and overgrown brush, the right side showing the same area cleaned up and restored" >}}
+{{< drg/image src="images/before-after-cleanup.avif" alt="A before-and-after comparison of a campsite or trail section: the left side showing litter and overgrown brush, the right side showing the same area cleaned up and restored" >}}
 
 {{< drg/next-page
     text="You have given back to the land through a conservation project."

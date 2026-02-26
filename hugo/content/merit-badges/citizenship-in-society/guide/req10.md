@@ -43,7 +43,7 @@ This chain can be subtle. You might not even realize you are doing it. That is w
 Researchers have found that children as young as three years old can absorb stereotypes from the world around them — from media, from adults, and from the way society is structured. The good news? Awareness and intentional exposure to diverse perspectives can counteract these biases at any age.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/breaking-stereotypes.png" alt="A diverse group of young people each doing something that defies common stereotypes" >}}
+{{< drg/image src="images/breaking-stereotypes.avif" alt="A diverse group of young people each doing something that defies common stereotypes" >}}
 
 ### Why Stereotypes Are Harmful
 

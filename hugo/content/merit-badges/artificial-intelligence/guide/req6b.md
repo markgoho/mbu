@@ -15,7 +15,7 @@ Identify 5 methods of how to effectively communicate with AI.
 
 You already know how to communicate with other people — you speak, write, gesture, and use facial expressions. But how do you communicate with an AI? It turns out there are several distinct methods, and each one is suited to different situations. For this requirement, you need to identify five methods and share them with your counselor.
 
-{{< drg/image src="images/voice-assistant-interaction.png" alt="A Scout speaking to a voice assistant device on a kitchen counter while preparing food. Natural, everyday scene showing voice-based AI communication." >}}
+{{< drg/image src="images/voice-assistant-interaction.avif" alt="A Scout speaking to a voice assistant device on a kitchen counter while preparing food. Natural, everyday scene showing voice-based AI communication." >}}
 
 ---
 

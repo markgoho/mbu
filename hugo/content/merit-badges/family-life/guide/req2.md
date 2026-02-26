@@ -31,7 +31,7 @@ Here are some ways you might be important to your family — and you may not hav
 Studies show that teenagers who feel valued by their families are significantly more likely to develop strong self-esteem, perform better in school, and avoid risky behaviors. Feeling important at home is not just nice — it's protective.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/scout-helping-family.png" alt="A Scout helping a younger sibling with homework at a kitchen table while a parent prepares dinner in the background" >}}
+{{< drg/image src="images/scout-helping-family.avif" alt="A Scout helping a younger sibling with homework at a kitchen table while a parent prepares dinner in the background" >}}
 
 ### How to Approach the Conversation
 
@@ -81,7 +81,7 @@ Some Scouts might struggle with this requirement because they don't feel valued 
 
 {{< drg/external-link title="KidsHealth — Talking to Your Parents" url="https://kidshealth.org/en/teens/talk-to-parents.html" description="Practical tips for having meaningful conversations with your parents or guardians — even about tough topics." >}}
 
-{{< drg/image src="images/family-appreciation-circle.png" alt="A family of four sitting in a living room circle, each holding a piece of paper and sharing what they appreciate about each other" >}}
+{{< drg/image src="images/family-appreciation-circle.avif" alt="A family of four sitting in a living room circle, each holding a piece of paper and sharing what they appreciate about each other" >}}
 
 {{< drg/next-page
     text="Now that you understand your role and value in the family"

@@ -17,7 +17,7 @@ This is it—the heart of the Hiking merit badge! After all your conditioning in
 
 A 10-mile hike is a significant undertaking, taking most hikers between four and six hours to complete. A 20-mile hike is a true "capstone" experience that will test your endurance and your gear. But don't worry—if you’ve followed your conditioning plan and you prepare a solid hike plan, you’ll find that these miles are some of the most rewarding moments in Scouting.
 
-{{< drg/image src="images/topo-map-route.png" alt="A topographic map spread on a table with a highlighted 10-mile route, compass, and pencil beside it" >}}
+{{< drg/image src="images/topo-map-route.avif" alt="A topographic map spread on a table with a highlighted 10-mile route, compass, and pencil beside it" >}}
 
 ## Planning Your 10-Mile Hikes
 
@@ -82,7 +82,7 @@ Good trail food should be:
 - **Electrolyte Powder:** Adding this to one of your water bottles helps replace the salt you lose through sweat.
   {{< /drg/checklist >}}
 
-{{< drg/image src="images/packed-trail-lunch.png" alt="A well-packed trail lunch in a zip-lock bag with wraps, trail mix, jerky, and an energy bar" >}}
+{{< drg/image src="images/packed-trail-lunch.avif" alt="A well-packed trail lunch in a zip-lock bag with wraps, trail mix, jerky, and an energy bar" >}}
 
 {{< drg/did-you-know >}}
 "GORP" stands for "Good Old Raisins and Peanuts." It has been a staple for hikers for decades because it hits the perfect balance of fats, proteins, and sugars needed for long-distance walking.
@@ -122,7 +122,7 @@ The 20-mile hike is the "final boss" of the Hiking merit badge. It is a long day
 3.  **Foot Care:** This is the hike where blisters are most likely. Change your socks halfway through. It feels amazing and helps keep your feet dry.
 4.  **Hydration:** You will likely need 3–4 liters of water. If there isn't a water source on the trail, you may need to "cache" water (hide it) along the route beforehand or carry it all.
 
-{{< drg/image src="images/scouts-high-five-milestone.png" alt="Two Scouts high-fiving at a trail marker with a mountain vista in the background" >}}
+{{< drg/image src="images/scouts-high-five-milestone.avif" alt="Two Scouts high-fiving at a trail marker with a mountain vista in the background" >}}
 
 ## Find Hiking Trails Near You
 

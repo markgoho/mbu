@@ -58,7 +58,7 @@ Family traditions are the glue that holds generations together. They create a se
 Start small. You don't need to launch an elaborate annual event. Try suggesting one simple tradition this month — a weekly family walk, a "what went well this week" conversation at dinner, or a movie night with a theme. Traditions grow naturally when people enjoy them.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/family-tradition-collage.png" alt="A warm collage-style illustration showing family traditions: a family cooking together, playing a board game, and decorating a holiday tree" >}}
+{{< drg/image src="images/family-tradition-collage.avif" alt="A warm collage-style illustration showing family traditions: a family cooking together, playing a board game, and decorating a holiday tree" >}}
 
 ### E. Real-World Experiences
 

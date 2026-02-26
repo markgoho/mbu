@@ -97,7 +97,7 @@ Today, laws guarantee equal rights, but citizenship in society goes further. It 
 
 **Get Ready!** This badge will ask you to think deeply, listen carefully, and have honest conversations. That takes courage — and courage is something Scouts know a lot about.
 
-{{< drg/image src="images/diverse-scouts-circle.png" alt="A diverse group of Scouts sitting in a circle outdoors, having an engaged conversation" >}}
+{{< drg/image src="images/diverse-scouts-circle.avif" alt="A diverse group of Scouts sitting in a circle outdoors, having an engaged conversation" >}}
 
 ---
 
@@ -109,7 +109,7 @@ Citizenship in society is not a single skill you learn once. It is something you
 
 Your family is often where you first learn about respect, fairness, and empathy. Every family is different — different traditions, different beliefs, different ways of showing love. Understanding and appreciating those differences within your own home is the starting point for understanding them in the wider world.
 
-{{< drg/image src="images/family-dinner-conversation.png" alt="A family of different ages sharing a meal together around a table, engaged in conversation" >}}
+{{< drg/image src="images/family-dinner-conversation.avif" alt="A family of different ages sharing a meal together around a table, engaged in conversation" >}}
 
 ### At School
 
@@ -139,7 +139,7 @@ The internet is a community too — and it is one where words can spread faster 
 If you see cyberbullying or harassment online, do not engage with the bully. Instead, take a screenshot, report the behavior to the platform, and tell a trusted adult. Supporting the person being targeted — even with a private message saying "I saw that, and it's not okay" — can make a real difference.
 {{< /drg/safety-first >}}
 
-{{< drg/image src="images/scouts-community-service.png" alt="Scouts of diverse backgrounds working together on a community service project, painting a community mural" >}}
+{{< drg/image src="images/scouts-community-service.avif" alt="Scouts of diverse backgrounds working together on a community service project, painting a community mural" >}}
 
 ---
 

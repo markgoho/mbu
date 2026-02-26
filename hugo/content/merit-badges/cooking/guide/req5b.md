@@ -76,7 +76,7 @@ Planning meals and cooking as a patrol is almost always cheaper than eating out 
 - **Avoid waste** by planning recipes that share ingredients (if you buy a head of lettuce for sandwiches, use it in the dinner salad too).
 - **Check the patrol box** — your troop may provide basics like oil, condiments, and spices.
 
-{{< drg/image src="images/camp-budget-planning.png" alt="Scouts sitting around a picnic table with grocery receipts, a calculator, and a notebook, working out the per-person cost for their camp cooking trip" >}}
+{{< drg/image src="images/camp-budget-planning.avif" alt="Scouts sitting around a picnic table with grocery receipts, a calculator, and a notebook, working out the per-person cost for their camp cooking trip" >}}
 
 {{< drg/external-link
     title="MyPlate Tools"

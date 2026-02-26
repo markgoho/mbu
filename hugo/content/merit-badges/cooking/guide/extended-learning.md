@@ -42,7 +42,7 @@ The **Maillard reaction** is what happens when proteins and sugars in food are e
 The Maillard reaction was first described by French chemist Louis-Camille Maillard in 1912, but scientists are still discovering new flavor compounds it produces. Over 1,000 distinct flavor molecules have been identified from Maillard browning — which is why seared, toasted, and roasted foods taste so complex.
 {{< /drg/did-you-know >}}
 
-{{< drg/image src="images/heat-transfer-diagram.png" alt="An educational diagram showing the three types of heat transfer in cooking: conduction (steak on a skillet), convection (hot air circulating in an oven), and radiation (heat waves from a broiler element to food)" >}}
+{{< drg/image src="images/heat-transfer-diagram.avif" alt="An educational diagram showing the three types of heat transfer in cooking: conduction (steak on a skillet), convection (hot air circulating in an oven), and radiation (heat waves from a broiler element to food)" >}}
 
 ### D. Deep Dive: Building Flavor Like a Chef
 

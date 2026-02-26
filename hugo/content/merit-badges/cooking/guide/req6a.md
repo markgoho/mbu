@@ -72,7 +72,7 @@ Even though trail food is different from home food, you should still aim for nut
 
 It is harder to get adequate fruits and vegetables on the trail, but dried fruit, dehydrated vegetables (added to soups and dinners), and vitamin-rich snacks help fill the gap.
 
-{{< drg/image src="images/trail-food-spread.png" alt="An array of trail-appropriate foods laid out on a flat rock: instant oatmeal packets, tortillas, peanut butter, trail mix, jerky, dehydrated meal pouches, instant rice, and energy bars" >}}
+{{< drg/image src="images/trail-food-spread.avif" alt="An array of trail-appropriate foods laid out on a flat rock: instant oatmeal packets, tortillas, peanut butter, trail mix, jerky, dehydrated meal pouches, instant rice, and energy bars" >}}
 
 ### Equipment for Trail Cooking
 
