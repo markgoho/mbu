@@ -764,7 +764,7 @@ try {
   console.log(`   Pamphlet URL: ${badgeData.pamphlet_url || "Not found"}`);
 
   // Write output
-  const outputPath = `hugo/content/merit-badges/${badge.slug}/data.json`;
+  const outputPath = `hugo/data/merit-badges/${badge.slug}.json`;
   await Bun.write(outputPath, JSON.stringify(badgeData, null, 2));
   console.log(`\n📝 Written to: ${outputPath}`);
 } catch (err) {

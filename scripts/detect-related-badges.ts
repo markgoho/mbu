@@ -62,7 +62,7 @@ interface Stats {
 }
 
 // Constants
-const CONTENT_DIR = join(import.meta.dir, "../hugo/content/merit-badges");
+const DATA_DIR = join(import.meta.dir, "../hugo/data/merit-badges");
 const REPORTS_DIR = join(import.meta.dir, "../reports");
 
 // Build regex pattern for a badge
@@ -243,12 +243,12 @@ function processRequirement(
 
 // Process a single badge
 function processBadge(badge: MeritBadge, stats: Stats): boolean {
-  const dataPath = join(CONTENT_DIR, badge.slug, "data.json");
+  const dataPath = join(DATA_DIR, `${badge.slug}.json`);
 
   // Check if data file exists
   if (!existsSync(dataPath)) {
     console.warn(
-      `Warning: data.json not found for ${badge.title} (${badge.slug})`,
+      `Warning: data file not found for ${badge.title} (${badge.slug})`,
     );
     return false;
   }

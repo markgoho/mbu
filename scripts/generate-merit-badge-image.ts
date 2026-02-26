@@ -184,7 +184,7 @@ async function loadReferenceImage(): Promise<{
  */
 async function generateBadgeImage(badgeSlug: string): Promise<void> {
   const badgeDir = `hugo/content/merit-badges/${badgeSlug}`;
-  const dataJsonPath = path.resolve(`${badgeDir}/data.json`);
+  const dataJsonPath = path.resolve(`hugo/data/merit-badges/${badgeSlug}.json`);
   const outputPath = path.resolve(`${badgeDir}/${badgeSlug}-merit-badge.png`);
 
   // 0. Delete existing image files (png and avif)

@@ -4,6 +4,7 @@ import { join } from "path";
 import { MERIT_BADGES, findBadgeBySlug, type MeritBadge } from "./merit-badges";
 
 // CONFIGURATION
+const DATA_DIR = join(import.meta.dir, "../hugo/data/merit-badges");
 const CONTENT_DIR = join(import.meta.dir, "../hugo/content/merit-badges");
 const randomDelay = () =>
   new Promise(res => setTimeout(res, 1000 + Math.random() * 1000));
@@ -64,7 +65,7 @@ if (SINGLE_BADGE) {
 
 // Helper function to load badge data
 function loadBadgeData(slug: string): BadgeData | null {
-  const dataPath = join(CONTENT_DIR, slug, "data.json");
+  const dataPath = join(DATA_DIR, `${slug}.json`);
 
   if (!existsSync(dataPath)) {
     console.warn(`⚠️  data.json not found for ${slug}`);

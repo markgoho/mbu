@@ -1,6 +1,5 @@
 {{- /* JSON-LD Course schema for merit badge landing pages */ -}}
-{{- $data := .Resources.GetMatch "data.json" -}}
-{{- $json := $data | unmarshal -}}
+{{- $json := index .Site.Data "merit-badges" .File.ContentBaseName -}}
 {{- $reqCount := len $json.requirements -}}
 {{- $guideSection := .GetPage "guide" -}}
 

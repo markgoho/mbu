@@ -9,7 +9,7 @@ import { MERIT_BADGES } from "./merit-badges";
 const eagleBadges = MERIT_BADGES.filter((badge) => badge.eagle_required);
 
 for (const badge of eagleBadges) {
-  const dataPath = `hugo/content/merit-badges/${badge.slug}/data.json`;
+  const dataPath = `hugo/data/merit-badges/${badge.slug}.json`;
   const file = Bun.file(dataPath);
 
   if (!(await file.exists())) {

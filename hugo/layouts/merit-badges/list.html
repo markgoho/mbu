@@ -1,9 +1,7 @@
 {{ define "main" }}
-  {{ $data := .Resources.GetMatch "data.json" }}
+  {{ $json := index $.Site.Data "merit-badges" .File.ContentBaseName }}
 
-  {{ if $data }}
-    {{/* Individual badge landing page */}}
-    {{ $json := $data | unmarshal }}
+  {{ if $json }}
     {{ $reqCount := len $json.requirements }}
     {{/* Prefer larger merit-badge image for featured display, fallback to card */}}
     {{ $badgeImage := .Resources.GetMatch "*-merit-badge.avif" }}
@@ -113,9 +111,8 @@
 
     <section class="badges-grid">
       {{ range $index, $page := .Pages.ByTitle }}
-        {{ $data := $page.Resources.GetMatch "data.json" }}
-        {{ if $data }}
-          {{ $json := $data | unmarshal }}
+        {{ $json := index $.Site.Data "merit-badges" $page.File.ContentBaseName }}
+        {{ if $json }}
           {{ $reqCount := len $json.requirements }}
           {{/* Prefer card-optimized images for list, fallback to any image */}}
           {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
@@ -175,8 +172,8 @@
 {{ end }}
 
 {{ define "footer-scripts" }}
-  {{ $data := .Resources.GetMatch "data.json" }}
-  {{ if $data }}
+  {{ $json := index $.Site.Data "merit-badges" .File.ContentBaseName }}
+  {{ if $json }}
     {{/* Individual badge landing page - include JSON-LD */}}
     {{ partial "json-ld/merit-badge-landing.html" . }}
   {{ end }}

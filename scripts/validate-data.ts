@@ -1,7 +1,7 @@
 import { Glob } from "bun";
 import { join } from "path";
 
-const CONTENT_DIR = join(import.meta.dir, "../hugo/content/merit-badges");
+const CONTENT_DIR = join(import.meta.dir, "../hugo/data/merit-badges");
 
 interface ValidationIssue {
   badge: string;
@@ -12,12 +12,12 @@ interface ValidationIssue {
 
 const issues: ValidationIssue[] = [];
 
-// Find all data.json files
-const glob = new Glob("**/data.json");
+// Find all badge JSON files
+const glob = new Glob("*.json");
 const files = Array.from(glob.scanSync(CONTENT_DIR));
 
 for (const file of files) {
-  const badgeSlug = file.split("/")[0];
+  const badgeSlug = file.replace(/\.json$/, "");
   const filePath = join(CONTENT_DIR, file);
 
   try {
