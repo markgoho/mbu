@@ -1,8 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import * as fs from "node:fs";
 import * as path from "node:path";
-// TODO: Re-enable sharp AVIF conversion once all DRG images are finalized
-// import sharp = require("sharp");
 
 interface DrgImage {
   id: string;
@@ -145,18 +143,6 @@ async function generateImage(
   }
   return null;
 }
-
-// TODO: Re-enable sharp AVIF conversion once all DRG images are finalized
-// async function convertAndSave(pngBuffer: Buffer, outputPath: string): Promise<boolean> {
-//   try {
-//     await sharp(pngBuffer).avif({ quality: AVIF_QUALITY }).toFile(outputPath);
-//     return true;
-//   } catch (error: unknown) {
-//     const err = error as { message?: string };
-//     console.error(`  ✗ Sharp conversion failed:`, err.message || error);
-//     return false;
-//   }
-// }
 
 function savePng(pngBuffer: Buffer, outputPath: string): boolean {
   try {

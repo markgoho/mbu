@@ -412,16 +412,17 @@ For each page:
 ```
 
 21. **Run generation immediately** (do not ask the user or wait for approval): `bun run generate:drg-images {slug}` — This command may take several minutes for large guides. Let it run to completion.
-22. **Convert all `<!-- IMAGE: -->` placeholders** to `{{</* drg/image src="images/{id}.png" alt="..." */>}}` shortcodes. Match each placeholder's filename-id to the corresponding entry in `images.json`. Every placeholder must be converted — zero should remain.
+22. **Convert images to AVIF**: Run `bun run convert:drg-images -- --badge {slug}` to convert all generated PNGs to AVIF format (1200px wide, quality 80). Then delete the source PNGs: `rm hugo/content/merit-badges/{slug}/guide/images/*.png`
+23. **Convert all `<!-- IMAGE: -->` placeholders** to `{{</* drg/image src="images/{id}.avif" alt="..." */>}}` shortcodes. Match each placeholder's filename-id to the corresponding entry in `images.json`. Every placeholder must be converted — zero should remain.
 
 ### Phase 6: Verification
 
 **You MUST complete this phase — do not stop after image generation.**
 
-23. Verify Hugo build passes: `bun run build`
-24. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
-25. Verify all nav links and cross-references.
-26. Run through the quality checklist.
+24. Verify Hugo build passes: `bun run build`
+25. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
+26. Verify all nav links and cross-references.
+27. Run through the quality checklist.
 
 ## Quality Checklist
 

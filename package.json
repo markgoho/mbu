@@ -10,7 +10,8 @@
     "build": "cd hugo && hugo --minify && bun run index",
     "hugo:dev": "cd hugo && hugo server",
     "index": "bunx pagefind --site hugo/public",
-    "generate:drg-images": "bun scripts/generate-drg-images.ts --badge"
+    "generate:drg-images": "bun scripts/generate-drg-images.ts --badge",
+    "convert:drg-images": "bun scripts/convert-drg-images-to-avif.ts"
   },
   "devDependencies": {
     "@google/genai": "^1.41.0",
