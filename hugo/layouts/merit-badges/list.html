@@ -95,10 +95,6 @@
 
       {{ .Content }}
 
-
-      <footer>
-        <a href="/merit-badges/" class="back-link">← Back to All Badges</a>
-      </footer>
     </article>
   {{ else }}
     {{/* Main merit badges listing page */}}
@@ -177,4 +173,5 @@
     {{/* Individual badge landing page - include JSON-LD */}}
     {{ partial "json-ld/merit-badge-landing.html" . }}
   {{ end }}
+  {{ partial "json-ld/breadcrumb-auto.html" . }}
 {{ end }}

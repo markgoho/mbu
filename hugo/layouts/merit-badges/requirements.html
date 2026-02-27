@@ -73,17 +73,12 @@
         {{ end }}
       </ol>
     </div>
-
-    <footer>
-      <a href="../" class="back-link">← Back to {{ $badge.Title }}</a>
-      <a href="/merit-badges/" class="back-link">← Back to All Badges</a>
-    </footer>
   </article>
 {{ end }}
 
 {{ define "footer-scripts" }}
   {{ partial "json-ld/merit-badge-requirements.html" . }}
-  {{ partial "json-ld/breadcrumb.html" . }}
+  {{ partial "json-ld/breadcrumb-auto.html" . }}
   {{ $deepLinkTS := resources.Get "ts/deep-link.ts" | js.Build (dict "minify" true) }}
   <script>{{ $deepLinkTS.Content | safeJS }}</script>
 {{ end }}

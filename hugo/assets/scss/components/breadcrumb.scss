@@ -1,0 +1,64 @@
+.breadcrumb {
+  background: var(--tan-100);
+  border-block-end: 1px solid var(--tan-300);
+  padding-block: var(--space-3xs);
+  padding-inline: var(--container-padding-inline);
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  font-size: var(--step--2);
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  color: var(--tan-600);
+}
+
+.breadcrumb__item--current {
+  color: var(--olive-500);
+  font-weight: var(--font-weight-semibold);
+}
+
+.breadcrumb__link {
+  color: var(--brown-450);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--olive-500);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+.breadcrumb__separator {
+  width: 0.75em;
+  height: 0.75em;
+  color: var(--tan-400);
+  flex-shrink: 0;
+}
+
+// Mobile: hide middle items when path is deep (>3 levels)
+@container (max-width: 30rem) {
+  .breadcrumb__list:has(:nth-child(4)) {
+    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 2)) {
+      display: none;
+    }
+
+    .breadcrumb__item:first-child::after {
+      content: "...";
+      color: var(--tan-400);
+      margin-inline-start: var(--space-3xs);
+    }
+  }
+}

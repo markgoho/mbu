@@ -31,10 +31,14 @@
       {{ end }}
     </header>
 
+    {{ partial "breadcrumb.html" . }}
+
     <main class="main container {{ block "main-class" . }}{{ end }}">
       {{ block "main" . }}
       {{ end }}
     </main>
+
+    {{ partial "breadcrumb.html" . }}
 
     <footer class="footer">
       {{ block "footer" . }}
