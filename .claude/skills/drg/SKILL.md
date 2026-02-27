@@ -22,7 +22,7 @@ Produce a Scouting America Digital Resource Guide for any merit badge. The user 
 
 The badge slug is passed as `$ARGUMENTS`. Use it to locate:
 
-- **Requirements data:** `hugo/content/merit-badges/$ARGUMENTS/data.json`
+- **Requirements data:** `hugo/data/merit-badges/$ARGUMENTS.json`
 - **Output directory:** `hugo/content/merit-badges/$ARGUMENTS/guide/`
 - **Reference guide:** `hugo/content/merit-badges/hiking/guide/` (the published Hiking guide — use as a structural example)
 
