@@ -366,7 +366,7 @@ Work through these phases in order. Check in with the user after each phase.
 3. Map the full page structure (every page, URL slug, group title).
 4. Identify the subject's breadth (types/varieties for the Introduction page).
 5. Identify the history angle (Then vs. Now).
-6. List external resources for each requirement.
+6. List external resources for each requirement. Note: `data.json` may include a `resources` array on individual requirements (e.g., official Scouting videos or worksheets scraped from scouting.org). Consider incorporating these if they are valuable compared to other resources you plan to use.
 7. **Present the analysis to the user for approval before writing content.**
 
 ### Phase 2: Write _index.md (Introduction & Overview)
