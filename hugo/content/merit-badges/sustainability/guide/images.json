@@ -1,0 +1,156 @@
+{
+  "badge": "sustainability",
+  "style_context": "Sustainability, environmental science, conservation, and green living. Scenes should feel hopeful and action-oriented, showing Scouts actively engaged in sustainable practices.",
+  "images": [
+    {
+      "id": "scouts-sustainability-intro",
+      "file": "_index.md",
+      "description": "A diverse group of Scouts BSA members working together in a vibrant community garden. Some are planting seedlings in raised beds while others add food scraps to a compost bin. A city skyline is visible in the background under a clear blue sky. The garden has a mix of vegetables, flowers, and a small fruit tree. Scouts wear clean Scout uniforms with rolled sleeves. Warm afternoon sunlight. Hopeful, collaborative atmosphere."
+    },
+    {
+      "id": "sustainability-pillars",
+      "file": "_index.md",
+      "description": "An illustrated educational diagram showing the three pillars of sustainability. Three columns labeled Environment, Economy, and Society support a balanced platform with a healthy Earth globe on top. The Environment column features trees, water, and wildlife. The Economy column shows buildings, gears, and solar panels. The Society column depicts diverse people, schools, and homes. Clean, modern infographic style with green, blue, and warm tones."
+    },
+    {
+      "id": "scout-examining-solar-panel",
+      "file": "_index.md",
+      "description": "A Scout BSA member examining a small portable solar panel setup at a campsite. The Scout wears a clean uniform and kneels beside the panel, which is angled toward the sun. A tent and trees are in the background. The scene conveys curiosity about renewable energy in an outdoor setting. Natural lighting, green forest backdrop."
+    },
+    {
+      "id": "scout-nature-observation",
+      "file": "req1.md",
+      "description": "A Scout BSA member kneeling beside a clear stream in a forest, writing observations in a field notebook. Sunlight filters through tall trees, casting dappled light on the water and mossy rocks. The Scout wears a clean uniform and has a small backpack. The scene is peaceful and focused, emphasizing observation and connection with nature."
+    },
+    {
+      "id": "scout-checking-faucet",
+      "file": "req2a.md",
+      "description": "A Scout BSA member and a parent in a kitchen inspecting a faucet together. A water bill and a notebook with a pen sit on the counter beside them. The kitchen is clean and well-lit. The Scout wears a clean uniform and points at the faucet while the parent listens. The scene conveys a household water audit in progress."
+    },
+    {
+      "id": "water-cycle-diagram",
+      "file": "req2b.md",
+      "description": "An illustrated cross-section diagram showing the journey of water from source to home and back. On the left, a river flows into a water treatment plant with tanks and filters. Pipes lead to a neighborhood of houses. From the houses, drain pipes lead to a wastewater treatment facility, which then returns clean water to the river. Labels mark each stage. Clean, educational infographic style with blue water tones."
+    },
+    {
+      "id": "drought-vs-flood",
+      "file": "req2c.md",
+      "description": "A split-view illustration. The left half shows a dried, cracked lakebed under a hot sun with parched brown earth and a withered tree. The right half shows a flooded suburban street with water reaching partway up houses and a street sign partially submerged. The dividing line runs down the center. The contrast illustrates the extremes of too little and too much water."
+    },
+    {
+      "id": "food-journey-map",
+      "file": "req3a.md",
+      "description": "An illustrated stylized map showing the journey of different foods from their sources to a grocery store. A banana travels by ship from a tropical farm, a tomato comes by truck from a nearby farm, fish arrives from an ocean fishing vessel, and wheat arrives by train from a grain field. Dotted lines trace each route converging on a grocery store in the center. Colorful, educational map style."
+    },
+    {
+      "id": "community-garden-scouts",
+      "file": "req3b.md",
+      "description": "Scouts BSA members of different ages working in a community garden. Some plant seedlings in raised wooden beds, others harvest ripe vegetables into baskets. A tool shed and a hand-painted sign reading Community Garden are visible. The garden is lush with tomatoes, lettuce, squash, and sunflowers. Scouts wear clean uniforms. Bright, warm sunlight. Active, joyful atmosphere."
+    },
+    {
+      "id": "food-waste-tracking",
+      "file": "req3c.md",
+      "description": "A Scout BSA member sitting at a kitchen table logging food waste in a notebook. On the table are a small countertop compost bin with a lid, some vegetable scraps on a cutting board, and a printed tracking sheet. Behind the Scout, a well-organized refrigerator with clear storage containers is visible. Clean, well-lit kitchen. The Scout wears a clean uniform and looks focused."
+    },
+    {
+      "id": "sustainable-community-sketch",
+      "file": "req4a.md",
+      "description": "A bird's-eye view illustration of a sustainable community. Mixed housing types include apartments, townhomes, and single-family homes with solar panels on rooftops. A walkable town center has shops and a farmers market. Bike lanes with green paint run along the main road. A bus line passes through. Parks and community gardens provide green space. A wind turbine is visible on a nearby hill. Clean, architectural illustration style."
+    },
+    {
+      "id": "scout-community-meeting",
+      "file": "req4b.md",
+      "description": "A Scout BSA member standing at the front of a community meeting room, presenting a poster about a sustainability improvement plan. The poster has charts and diagrams. Several community members of diverse ages and backgrounds sit in chairs facing the Scout, listening attentively. The room has folding chairs and a podium. The Scout wears a clean uniform and speaks confidently."
+    },
+    {
+      "id": "home-energy-audit",
+      "file": "req4c.md",
+      "description": "A Scout BSA member with a parent examining insulation in a home attic. The Scout holds a flashlight and a clipboard, peering at fiberglass insulation between rafters. The parent points at a section of insulation. Both are dressed in casual work clothes appropriate for attic access. The scene conveys a hands-on home energy audit. Warm, slightly dim attic lighting."
+    },
+    {
+      "id": "energy-sources-comparison",
+      "file": "req5a.md",
+      "description": "An illustrated landscape showing different energy sources side by side. From left to right: a coal power plant with smokestacks and a slight haze, modern wind turbines on green hills, a solar panel array in a sunny field, and a hydroelectric dam with a river flowing through. The sky transitions from hazy gray on the coal plant side to clear blue on the renewable side. Educational comparison style."
+    },
+    {
+      "id": "family-energy-use",
+      "file": "req5b.md",
+      "description": "A cutaway illustration of a two-story house showing different energy uses in each room. The kitchen has an oven, refrigerator, and microwave with small energy icons. A living room has a TV and gaming console. Bedrooms show phone chargers and desk lamps. The basement shows a water heater and HVAC system. A car sits in the driveway. Warm, infographic style with energy flow indicators."
+    },
+    {
+      "id": "energy-saving-home",
+      "file": "req5c.md",
+      "description": "A Scout BSA member adjusting a programmable smart thermostat on a wall. Above, an LED bulb glows warmly in a ceiling fixture. A window with open curtains lets natural sunlight stream in. The Scout wears a clean uniform and looks at the thermostat display with interest. The room is bright and well-maintained. Clean, modern home interior."
+    },
+    {
+      "id": "scout-sorting-belongings",
+      "file": "req6a.md",
+      "description": "A Scout BSA member in a tidy bedroom sorting personal items into three labeled cardboard boxes: Donate, Recycle, and Keep. The Scout holds a pair of old sneakers, deciding which box to put them in. A bookshelf, closet, and desk are visible in the background. The Scout wears a clean uniform. The scene conveys thoughtful decluttering and decision-making."
+    },
+    {
+      "id": "stuff-impact-infographic",
+      "file": "req6b.md",
+      "description": "An illustrated infographic showing the lifecycle of consumer goods in a horizontal flow. From left: resource extraction with a mine and forest, then a factory with conveyor belts, then a cargo ship and delivery truck, then a home with products in use, and finally a landfill with piled waste. Arrows connect each stage. Small icons show water use, energy use, and emissions at each stage. Clean infographic style."
+    },
+    {
+      "id": "plastic-recycling-numbers",
+      "file": "req6c.md",
+      "description": "A clean educational illustration showing the seven plastic recycling symbols in a grid. Each cell shows the recycling triangle with the number (1-7), the plastic abbreviation (PET, HDPE, PVC, LDPE, PP, PS, Other), and a small icon of a common product made from that plastic (water bottle, milk jug, pipe, bag, yogurt cup, foam cup, mixed container). Clear labels and a green color scheme."
+    },
+    {
+      "id": "un-sdg-goals-display",
+      "file": "req7a.md",
+      "description": "A Scout BSA member at a library table studying a colorful display of the United Nations 17 Sustainable Development Goals. The goals are displayed as a poster with the iconic colored squares and symbols. The Scout has a notebook open and is taking notes. Books about sustainability are stacked on the table. Library bookshelves are visible in the background. Clean uniform, focused expression."
+    },
+    {
+      "id": "planetary-systems-web",
+      "file": "req7b.md",
+      "description": "An illustrated web diagram showing Earth's eight life-support systems connected by arrows. Earth sits at the center, surrounded by labeled nodes: Soil, Climate, Freshwater, Atmospheric, Nutrient Cycles, Oceanic, Ecosystems, and Species. Lines and arrows connect the nodes to show interactions. Each node has a small icon (tree for ecosystems, waves for oceanic, sun for climate, etc.). Clean, educational diagram style with blue and green tones."
+    },
+    {
+      "id": "product-lifecycle-circle",
+      "file": "req7c.md",
+      "description": "A circular diagram showing the five stages of a product life cycle arranged in a ring. Clockwise from the top: Design (pencil and blueprint icon), Sourcing (mine and forest icon), Production (factory icon), Use (person using product icon), and Disposal/Reuse (recycling arrows and landfill icon). Arrows connect each stage in a continuous loop. A dashed arrow from Disposal back to Sourcing represents the circular economy. Clean infographic style."
+    },
+    {
+      "id": "population-growth-timeline",
+      "file": "req7d.md",
+      "description": "An illustrated timeline showing world population growth from 1800 to projected 2100. The timeline runs left to right with milestone markers: 1 billion (1800), 3 billion (1960), 8 billion (2023), projected peak near 10.4 billion (2080s). Below the timeline, small icons represent growing resource consumption: water drops, energy bolts, and food items increasing in size. Clean, data-visualization style."
+    },
+    {
+      "id": "wildlife-conservation",
+      "file": "req7e.md",
+      "description": "A diverse group of Scouts BSA members observing wildlife at a nature reserve. They use binoculars and field guides while standing on a wooden observation platform overlooking a wetland. A great blue heron stands in the water, and a white-tailed deer is visible at the forest edge. The scene is peaceful and vibrant with autumn colors. Scouts wear clean uniforms."
+    },
+    {
+      "id": "temperature-change-globe",
+      "file": "req7f.md",
+      "description": "A stylized globe showing global temperature change patterns. The globe uses a color gradient from cool blue (areas with less warming) to deep red-orange (areas with significant warming). The Arctic region shows the most intense red coloring. A legend bar at the bottom shows the temperature scale from -0.5 to +3 degrees Celsius. Clean, scientific visualization style against a dark background."
+    },
+    {
+      "id": "scouts-campsite-observation",
+      "file": "req8a.md",
+      "description": "A Scout BSA member writing notes in a field notebook while observing a well-organized campsite. The campsite has a proper fire ring with no fire burning, a bear box for food storage, a neatly pitched tent on an established pad, and a trail leading into a pine forest. The Scout wears a clean uniform and sits on a log bench. Morning light filters through the trees."
+    },
+    {
+      "id": "scout-oath-outdoors",
+      "file": "req8b.md",
+      "description": "A group of Scouts BSA members standing together at a trailhead, right hands raised, reciting the Scout Oath before a hike. A wooden Leave No Trace principles sign is visible beside the trail. Trees arch overhead, and the trail winds into a green forest behind them. Scouts wear clean uniforms with daypacks. The scene conveys commitment, teamwork, and respect for the outdoors."
+    },
+    {
+      "id": "family-sustainability-chart",
+      "file": "req8c.md",
+      "description": "A Scout BSA member and family gathered around a kitchen table. A colorful sustainability tracking chart is posted on the refrigerator showing weekly goals for water, energy, and waste reduction with checkmarks. Reusable grocery bags hang on hooks, and a small compost bin sits on the counter. The family looks engaged and positive. Warm kitchen lighting, clean Scout uniform on the Scout."
+    },
+    {
+      "id": "sustainability-career-collage",
+      "file": "req9.md",
+      "description": "A four-panel collage showing sustainability careers. Top-left: a scientist in a lab coat testing water samples at a river. Top-right: a technician in a hard hat and safety harness working on a wind turbine high above green fields. Bottom-left: an urban planner reviewing a city sustainability map at a desk with a laptop. Bottom-right: a farmer examining healthy crops in a sustainable agricultural field with cover crops between rows. Each panel is clearly separated."
+    },
+    {
+      "id": "extended-learning-exploration",
+      "file": "extended-learning.md",
+      "description": "Scouts BSA members participating in a citizen science activity in a wildflower meadow. Some photograph plants and insects with smartphones, while others record observations in field notebooks. One Scout examines a flower with a hand magnifying glass. Butterflies and bees are visible among the wildflowers. The scene is bright, colorful, and joyful, with a blue sky and distant green hills. Clean uniforms."
+    }
+  ]
+}
