@@ -1,0 +1,76 @@
+{
+  "badge": "public-speaking",
+  "style_context": "Public speaking, communication skills, speech delivery, meetings, and presentation environments. Scouts are ages 11-17 in clean, presentable Scout uniforms (tan shirts, green pants/shorts). Settings include troop meeting rooms, classrooms, podiums, and outdoor gathering spaces.",
+  "images": [
+    {
+      "id": "scout-at-podium",
+      "file": "_index.md",
+      "description": "A Scout (age 14, clean tan BSA uniform shirt, green pants) standing confidently at a wooden podium in a community center or school auditorium. The Scout is smiling and gesturing with one hand while speaking to an audience of about 15 diverse peers seated in rows. Warm, well-lit room with neutral walls. The Scout looks engaged and enthusiastic. Medium shot from a slight angle showing both the speaker and part of the audience."
+    },
+    {
+      "id": "types-of-speaking-collage",
+      "file": "_index.md",
+      "description": "A four-panel collage showing different types of public speaking: (top-left) a Scout presenting a science poster on an easel to classmates; (top-right) a young person at a debate lectern with notes; (bottom-left) a person giving a toast at a family celebration, standing and raising a glass; (bottom-right) a student in a classroom raising their hand to answer a question. Each panel is distinct but unified by warm, bright lighting and diverse young people."
+    },
+    {
+      "id": "scout-introduction-speech",
+      "file": "req1.md",
+      "description": "A Scout (age 13, clean tan BSA uniform) standing at the front of a troop meeting room, making eye contact and smiling warmly while giving a short speech. About 8-10 fellow Scouts in uniform sit in a semicircle of folding chairs, looking attentive and supportive. A troop flag is visible in the background. The room has neutral walls and fluorescent lighting. The speaker stands naturally with relaxed posture and open hand gesture."
+    },
+    {
+      "id": "practice-mirror",
+      "file": "req1.md",
+      "description": "A Scout (age 12) standing in a bedroom practicing a speech in front of a full-length mirror on a closet door. The Scout holds a small notecard in one hand and gestures naturally with the other. The reflection shows the Scout's face with a focused but relaxed expression. The bedroom is tidy with a desk, bookshelf, and a backpack visible. Natural light comes through a window. Warm, encouraging atmosphere."
+    },
+    {
+      "id": "body-language-examples",
+      "file": "req2.md",
+      "description": "A Scout (age 15, clean tan BSA uniform) demonstrating confident body language while speaking to a small group. The Scout stands tall with shoulders back, feet shoulder-width apart, making direct eye contact with the audience. One hand is extended in an open-palm gesture toward a colorful poster on an easel showing a simple diagram. The audience of 6 diverse young people watches attentively. Well-lit indoor classroom setting with a whiteboard in the background."
+    },
+    {
+      "id": "visual-aid-poster",
+      "file": "req2.md",
+      "description": "Close-up of a Scout (age 14) pointing at a hand-drawn poster on an easel. The poster shows a colorful, neatly organized diagram with large text, arrows, and simple illustrations about wildlife habitats. The Scout's hand points clearly at one section. In the blurred background, 4-5 attentive peers are visible. The poster demonstrates good visual aid design: bold colors, minimal text, clear layout. Bright, well-lit classroom."
+    },
+    {
+      "id": "scout-impromptu-speaking",
+      "file": "req3.md",
+      "description": "A Scout (age 13, clean tan BSA uniform) standing and speaking confidently in a circle of about 8 Scouts seated on folding chairs at a troop meeting. The standing Scout has no notes or visual aids — just speaking naturally with a relaxed hand gesture. The seated Scouts look interested and engaged. An American flag and troop banner hang on the wall behind them. Warm indoor lighting, community center feel."
+    },
+    {
+      "id": "prep-method-diagram",
+      "file": "req3.md",
+      "description": "A Scout (age 13) standing at a classroom whiteboard, pointing at a hand-drawn diagram with four colorful circles connected by arrows in a flow. The circles are labeled with large letters P, R, E, P in blue, green, orange, and blue marker. The Scout holds a dry-erase marker and looks over their shoulder at the viewer with a friendly expression. The whiteboard also has a few simple doodles and arrows. Bright classroom lighting, desks visible in the foreground."
+    },
+    {
+      "id": "scout-researching-speech",
+      "file": "req4.md",
+      "description": "A Scout (age 14, wearing a casual shirt) sitting at a tidy desk in a bedroom or library, preparing a speech. An open laptop shows a web page, and a spiral notebook with a handwritten outline is visible next to it. A pen rests on the notebook. A few printed articles and a library book are spread nearby. The Scout looks focused and thoughtful, chin resting on one hand. Natural light from a nearby window. Studious, productive atmosphere."
+    },
+    {
+      "id": "scout-delivering-speech",
+      "file": "req4.md",
+      "description": "A Scout (age 15, clean tan BSA uniform) standing at the front of a room delivering a speech to an audience of about 20 people — a mix of Scouts, parents, and adult leaders. The speaker uses natural hand gestures and makes eye contact with the audience. A small notecard is held loosely in one hand. The audience is attentive with several people smiling. A simple podium or music stand is nearby but the speaker stands beside it, not behind it. Well-lit community hall."
+    },
+    {
+      "id": "scout-leading-meeting",
+      "file": "req5.md",
+      "description": "A Scout (age 15, clean tan BSA uniform) standing at the head of a rectangular folding table, leading a patrol leaders' council meeting. Six other Scouts in uniform sit around the table with notebooks and pencils. Two Scouts have their hands raised to speak. An agenda written on a whiteboard is visible behind the standing Scout. The room has a professional but friendly feel — fluorescent lights, neutral walls, a troop flag in the corner."
+    },
+    {
+      "id": "voting-at-meeting",
+      "file": "req5.md",
+      "description": "A group of about 10 Scouts seated around a table at a meeting, with most raising their right hands to vote on a motion. The Scout chairing the meeting stands and counts the raised hands with a focused expression. The scene feels orderly and democratic. Some Scouts have notebooks in front of them. An American flag is visible in the background. Indoor community center setting with warm lighting."
+    },
+    {
+      "id": "campfire-storytelling",
+      "file": "extended-learning.md",
+      "description": "A group of Scouts sitting on logs around a campfire at dusk. One Scout stands and tells a story with animated, expressive gestures — arms wide, face lit by the warm firelight. The other Scouts are captivated, leaning in with wide eyes and smiles. Pine trees silhouette against a deep blue twilight sky. The campfire casts a warm golden glow on everyone's faces. All Scouts wear clean outdoor clothing (not uniforms). Magical, memorable atmosphere."
+    },
+    {
+      "id": "digital-speaking-setup",
+      "file": "extended-learning.md",
+      "description": "A Scout (age 14) sitting at a clean desk with a laptop, a small ring light clipped to the monitor, and a desk microphone. The Scout is recording a video presentation, looking directly at the camera lens with a confident smile. Behind them is a tidy bookshelf and a neutral-colored wall. The laptop screen shows a video recording interface. The setup is simple and achievable — the kind of workspace a real teenager would have. Bright, well-lit room."
+    }
+  ]
+}
