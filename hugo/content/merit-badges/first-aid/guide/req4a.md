@@ -93,8 +93,8 @@ While whittling at camp, a Scout cuts their finger with a pocketknife. The cut i
 {{< drg/image src="images/wound-cleaning.avif" alt="A Scout wearing nitrile gloves carefully cleaning a small cut on another Scout's forearm under running water from a campsite water bottle" >}}
 
 {{< drg/video
-    title="How to Treat a Nosebleed — Mayo Clinic"
-    url="https://www.youtube.com/watch?v=JbmNIzl-TaE" >}}
+    title="How to Treat Nosebleeds — St John Ambulance"
+    url="https://www.youtube.com/watch?v=PmmhxW0vVXA" >}}
 
 {{< drg/external-link
     title="Mayo Clinic — Cuts and Scrapes First Aid"

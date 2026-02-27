@@ -155,12 +155,12 @@ Padding can come from socks, shirts, towels, or anything soft. Ties can be strip
 {{< drg/image src="images/splinting-forearm.avif" alt="A Scout applying a padded SAM splint to another Scout's forearm, wrapping it securely with an elastic bandage, outdoors at a campsite" >}}
 
 {{< drg/video
-    title="How to Apply an Arm Sling — St John Ambulance"
-    url="https://www.youtube.com/watch?v=9hIq9b9gOCM" >}}
+    title="How to Make a Sling — St John Ambulance"
+    url="https://www.youtube.com/watch?v=PwfBGkBXkFA" >}}
 
 {{< drg/video
-    title="How to Splint a Broken Bone — Wilderness Medicine"
-    url="https://www.youtube.com/watch?v=sWYJPsHnvlQ" >}}
+    title="Splinting a Broken Bone — Global Health Media"
+    url="https://www.youtube.com/watch?v=0McDQWgZcpo" >}}
 
 {{< drg/external-link
     title="Wilderness Medical Society — Splinting Guidelines"

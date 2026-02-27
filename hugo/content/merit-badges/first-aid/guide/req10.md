@@ -165,8 +165,8 @@ The four-bearer stretcher carry has been used since the Civil War. During World 
 {{< drg/image src="images/improvised-stretcher.avif" alt="Scouts constructing an improvised stretcher from two poles and a blanket at a campsite, with one Scout directing the process" >}}
 
 {{< drg/video
-    title="How to Improvise a Stretcher — Wilderness First Aid"
-    url="https://www.youtube.com/watch?v=2tFCwT-lmyA" >}}
+    title="Making a Stretcher — Global Health Media"
+    url="https://www.youtube.com/watch?v=1leCd-FVKXo" >}}
 
 {{< drg/external-link
     title="NAEMSP — Emergency Patient Movement Guidelines"

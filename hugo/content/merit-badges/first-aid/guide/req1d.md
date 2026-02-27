@@ -99,8 +99,8 @@ If there is **no pulse**, switch to full CPR — you will learn that process in 
 {{< drg/image src="images/head-tilt-chin-lift.avif" alt="Close-up illustration showing the head-tilt chin-lift technique on a training mannequin, with hands correctly positioned on forehead and chin" >}}
 
 {{< drg/video
-    title="Head-Tilt Chin-Lift Technique"
-    url="https://www.youtube.com/watch?v=7VOzW2rz1tk" >}}
+    title="Head-Tilt Chin-Lift and Jaw Thrust Maneuvers — Merck Manual"
+    url="https://www.youtube.com/watch?v=Ydp-cJyDOHY" >}}
 
 {{< drg/next-page
     text="You have learned how to evaluate and manage a patient's airway and breathing."

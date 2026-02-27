@@ -214,8 +214,8 @@ Do NOT cut the wound, try to suck out venom, apply a tourniquet, apply ice, or g
 {{< drg/image src="images/snake-safety.avif" alt="A Scout hiking on a trail wearing proper boots and long pants, looking carefully at the trail ahead, with a warning sign about snakes visible nearby" >}}
 
 {{< drg/video
-    title="Tick Removal: The Right Way — CDC"
-    url="https://www.youtube.com/watch?v=jE5FLNOyVbU" >}}
+    title="How to Remove a Tick — CDC"
+    url="https://www.youtube.com/watch?v=S4Ny5YJh6Ws" >}}
 
 {{< drg/external-link
     title="CDC — Venomous Snakes"

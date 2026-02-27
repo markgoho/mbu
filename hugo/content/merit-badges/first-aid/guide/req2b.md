@@ -107,8 +107,8 @@ The American Red Cross recommends checking and restocking your first-aid kit at 
 A first-aid kit is not something you assemble once and forget. After every use, restock what you used. Check expiration dates every few months. Adjust the contents for the activity — a winter campout might need more cold-weather supplies, while a summer canoe trip needs waterproof containers.
 
 {{< drg/video
-    title="How to Build a First Aid Kit — REI"
-    url="https://www.youtube.com/watch?v=sTds5AjSjTk" >}}
+    title="How to Build a Proper First Aid Kit — Outside"
+    url="https://www.youtube.com/watch?v=sJzmYLOlRKo" >}}
 
 {{< drg/external-link
     title="American Red Cross — Anatomy of a First Aid Kit"

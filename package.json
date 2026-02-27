@@ -11,7 +11,8 @@
     "hugo:dev": "cd hugo && hugo server",
     "index": "bunx pagefind --site hugo/public",
     "generate:drg-images": "bun scripts/generate-drg-images.ts --badge",
-    "convert:drg-images": "bun scripts/convert-drg-images-to-avif.ts"
+    "convert:drg-images": "bun scripts/convert-drg-images-to-avif.ts",
+    "verify:youtube-links": "bun scripts/verify-youtube-links.ts"
   },
   "devDependencies": {
     "@google/genai": "^1.41.0",

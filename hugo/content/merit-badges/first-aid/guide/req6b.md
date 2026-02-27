@@ -135,8 +135,8 @@ During a sudden thunderstorm at camp, a Scout is struck by lightning and falls t
 {{< drg/image src="images/lightning-safety.avif" alt="Scouts quickly moving toward a sturdy building as dark storm clouds and lightning appear in the distance, with one Scout gesturing urgently to the group" >}}
 
 {{< drg/video
-    title="Drowning Prevention and Rescue — American Red Cross"
-    url="https://www.youtube.com/watch?v=vbxDFPVwNHo" >}}
+    title="Water Rescue Methods: Reach or Throw, Don't Go — American Red Cross"
+    url="https://www.youtube.com/watch?v=exhsd2YhO58" >}}
 
 {{< drg/external-link
     title="National Weather Service — Lightning Safety"

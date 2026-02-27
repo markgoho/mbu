@@ -167,7 +167,7 @@ Getting trapped in a blizzard can happen suddenly. Visibility drops to zero, roa
 
 **Think about:** Why should you crack a window if running the engine for heat? What supplies should you carry in your car during winter? How do you signal for help in a whiteout?
 
-{{< drg/video title="How to Survive a Car Stranding in Winter" url="https://youtu.be/QU-VXl7eqcg" >}}
+{{< drg/video title="What to Do If Stranded in a Snowstorm" url="https://www.youtube.com/watch?v=_elbVNM4Rvg" >}}
 
 ---
 

@@ -152,8 +152,8 @@ A Scout falls from a climbing wall and lands on their back. They are conscious b
 {{< /drg/be-prepared >}}
 
 {{< drg/video
-    title="Concussion Recognition and Response"
-    url="https://www.youtube.com/watch?v=Tyv06iVL5is" >}}
+    title="How to Recognize and Treat a Concussion — First Aid Training"
+    url="https://www.youtube.com/watch?v=Mp7jCQkQ4nI" >}}
 
 {{< drg/external-link
     title="CDC HEADS UP — Concussion Information"

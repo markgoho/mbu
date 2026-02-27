@@ -166,8 +166,8 @@ During a spring campout, it starts raining and the temperature drops to 45°F. A
 {{< drg/image src="images/hypothermia-treatment.avif" alt="Scouts in a tent helping a fellow Scout who is wrapped in a sleeping bag, with warm water bottles placed at key warming points, during a rainy outdoor scene" >}}
 
 {{< drg/video
-    title="Heat Stroke vs Heat Exhaustion — Differences and Treatment"
-    url="https://www.youtube.com/watch?v=Opk6ZvSbIWM" >}}
+    title="Heat Exhaustion and Heatstroke — Mayo Clinic Minute"
+    url="https://www.youtube.com/watch?v=0xubzGiAjEU" >}}
 
 {{< drg/external-link
     title="CDC — Extreme Heat and Your Health"

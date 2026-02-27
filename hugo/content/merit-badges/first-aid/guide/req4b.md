@@ -130,8 +130,8 @@ If you do not have a commercial tourniquet, you can improvise one from a wide st
 {{< drg/image src="images/tourniquet-application.avif" alt="A Scout demonstrating proper tourniquet placement on a training arm or leg, showing the high-and-tight position with the windlass visible" >}}
 
 {{< drg/video
-    title="Stop the Bleed — Tourniquet Application"
-    url="https://www.youtube.com/watch?v=RiVx1YPg2xU" >}}
+    title="Stop the Bleed: Tourniquet Application"
+    url="https://www.youtube.com/watch?v=wWVne7cUrm8" >}}
 
 {{< drg/external-link
     title="Stop the Bleed — Free Training"

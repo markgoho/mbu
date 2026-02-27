@@ -272,6 +272,22 @@ Use `drg/be-prepared` for **scenario-based problem-solving** — situations the 
     url="https://www.youtube.com/watch?v=..." */>}}
 ```
 
+### Video Verification Protocol
+
+AI models hallucinate plausible-looking YouTube video IDs that don't correspond to real videos. **Every video ID must be verified before inclusion.**
+
+1. **Never invent YouTube video IDs.** Do not guess or fabricate IDs. Every `drg/video` shortcode must reference a verified, existing video.
+
+2. **Verification method:** Before adding any `drg/video` shortcode, verify the video ID using noembed:
+   ```
+   https://noembed.com/embed?url=https://www.youtube.com/watch?v={VIDEO_ID}
+   ```
+   If the JSON response contains `"error"`, the video does not exist — do not use it.
+
+3. **Finding real videos:** Use web search to find pages that embed relevant videos (e.g., search for "Red Cross CPR training video"), then extract video IDs from those pages. Prefer videos from reputable sources: American Red Cross, American Heart Association, CDC, Mayo Clinic, St John Ambulance, NOLS, REI, etc.
+
+4. **Fallback:** If no verified video can be found for a topic, use a `drg/external-link` to a reputable organization's video page instead of embedding a specific video. A guide page without a video is better than one with a broken embed.
+
 ### Image Placeholders
 
 During content writing, use HTML comment placeholders instead of image shortcodes (keeps Hugo build green before images exist):
@@ -421,8 +437,9 @@ For each page:
 
 24. Verify Hugo build passes: `bun run build`
 25. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
-26. Verify all nav links and cross-references.
-27. Run through the quality checklist.
+26. Verify all YouTube video embeds: `bun run verify:youtube-links` (expect zero broken links).
+27. Verify all nav links and cross-references.
+28. Run through the quality checklist.
 
 ## Quality Checklist
 
@@ -454,6 +471,7 @@ For each page:
 - [ ] Eagle Required displayed correctly based on `data.json`
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
+- [ ] All YouTube video embeds verified via noembed (zero broken links)
 
 ## Smoke Testing (after build passes)
 

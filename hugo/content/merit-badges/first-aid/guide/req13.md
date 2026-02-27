@@ -162,8 +162,8 @@ Every minute counts during a stroke. For every minute without treatment, approxi
 {{< drg/image src="images/be-fast-stroke.avif" alt="An educational illustration showing the BE FAST stroke recognition steps with a simple visual for each letter: Balance, Eyes, Face drooping, Arm weakness, Speech difficulty, Time to call 911" >}}
 
 {{< drg/video
-    title="Spot a Stroke FAST — American Stroke Association"
-    url="https://www.youtube.com/watch?v=mkpS3kmmjMQ" >}}
+    title="Spot a Stroke F.A.S.T — American Heart Association"
+    url="https://www.youtube.com/watch?v=z6N3fHJch20" >}}
 
 {{< drg/external-link
     title="American Stroke Association — Warning Signs"

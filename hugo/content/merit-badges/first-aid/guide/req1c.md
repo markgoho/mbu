@@ -85,8 +85,8 @@ Even after careful BSI, you should always:
 {{< drg/image src="images/handwashing-after-first-aid.avif" alt="A Scout thoroughly washing their hands with soap and water at a campsite wash station after providing first aid" >}}
 
 {{< drg/video
-    title="How to Remove Gloves Safely — Red Cross"
-    url="https://www.youtube.com/watch?v=ZSfAHlb9dVQ" >}}
+    title="How to Safely Remove Protective Gloves — Red Cross"
+    url="https://www.youtube.com/watch?v=2IGWz3IpVto" >}}
 
 {{< drg/next-page
     text="You now understand how to protect yourself and others from infection during first aid."
