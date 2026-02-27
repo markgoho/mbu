@@ -1,0 +1,96 @@
+{
+  "badge": "american-business",
+  "style_context": "American business, entrepreneurship, economics, and commerce — featuring diverse groups of Scouts, business professionals, and community settings. Modern, realistic scenes with warm lighting.",
+  "images": [
+    {
+      "id": "scout-business-district",
+      "file": "_index.md",
+      "description": "A Scout in a clean BSA uniform walking through a vibrant small-town American business district on a sunny day. The street has diverse storefronts — a bakery, a hardware store, a coffee shop — with people entering and exiting. The Scout is observing the businesses with curiosity and interest. Warm afternoon light."
+    },
+    {
+      "id": "types-of-business-street",
+      "file": "_index.md",
+      "description": "A busy American street showing different types of businesses side by side — a small family-owned flower shop with an awning, a modern glass-front corporate office building, and a recognizable franchise-style restaurant. Pedestrians and vehicles are present, giving a sense of a thriving economy. Daytime, clear sky."
+    },
+    {
+      "id": "free-enterprise-market",
+      "file": "req1a.md",
+      "description": "A vibrant outdoor farmers market scene with multiple vendors competing for customers under colorful canopies. Diverse shoppers are making choices between different stalls selling produce, baked goods, and crafts. A sense of bustling commerce and free exchange. Bright, inviting natural light."
+    },
+    {
+      "id": "industrial-revolution-factory",
+      "file": "req1b.md",
+      "description": "A historical scene depicting an early American textile factory from the 1800s. Large water-powered spinning machines fill a brick building with tall windows. Workers in period clothing operate the machines. Shafts of light stream through the windows, illuminating the busy interior. Warm sepia-toned palette."
+    },
+    {
+      "id": "five-areas-business-team",
+      "file": "req1c.md",
+      "description": "A diverse group of young professionals collaborating around a large conference table in a modern, well-lit office. The table has financial charts, a laptop showing marketing analytics, and a whiteboard in the background with management goals written on it. The team is engaged and energetic. Clean, professional setting."
+    },
+    {
+      "id": "workers-negotiating-table",
+      "file": "req1d.md",
+      "description": "Union representatives and business managers sitting across a polished conference table engaged in collaborative negotiation. Documents, charts, and coffee cups are between them. Both sides appear professional and respectful. A large window in the background shows a city skyline. Natural lighting."
+    },
+    {
+      "id": "business-economic-impact",
+      "file": "req1e.md",
+      "description": "A conceptual illustration showing concentric circles of economic impact. At the center is a small local shop with its doors open. Surrounding it are icons of a town (houses, a school), then a nation (a capitol building, highways), and then the globe with trade routes. Arrows connect each layer showing the flow of economic activity. Clean, infographic-style illustration with warm colors."
+    },
+    {
+      "id": "financial-statements-desk",
+      "file": "req2a.md",
+      "description": "A business professional reviewing printed financial statements spread out on a neat wooden desk. A calculator, a cup of coffee, reading glasses, and a laptop showing bar charts and graphs are also on the desk. The person is holding a pen and studying the numbers. Warm office lighting with bookshelves in the background."
+    },
+    {
+      "id": "economic-levers-diagram",
+      "file": "req2b.md",
+      "description": "A clear infographic-style illustration showing three large levers or dials labeled Interest Rates, Taxes, and Government Spending. Each lever is connected by flowing arrows to icons representing businesses (a factory), consumers (a family), and the government (a capitol dome). The design is clean, colorful, and easy to understand, like a textbook diagram."
+    },
+    {
+      "id": "raising-capital-paths",
+      "file": "req2c.md",
+      "description": "A visual diagram showing different paths for raising business capital. On the left, a sole proprietor at a small desk with personal savings. In the middle, two partners shaking hands and pooling resources. On the right, a corporate building with stock certificates, bond documents, and a bank. Each path is connected by arrows showing the flow of capital. Clean infographic style."
+    },
+    {
+      "id": "business-insurance-shield",
+      "file": "req2d.md",
+      "description": "A confident small business owner standing outside the front door of a tidy neighborhood shop. A translucent protective shield graphic overlays the scene, symbolizing insurance protection. The shop looks well-maintained with a clean storefront and an open sign. Bright daylight, welcoming atmosphere."
+    },
+    {
+      "id": "profit-reinvestment-cycle",
+      "file": "req3a.md",
+      "description": "A circular infographic diagram showing the profit cycle: a business earns revenue (cash register icon), pays expenses (bills and payroll icons), and the remaining profit flows into reinvestment (new equipment, hiring, expansion icons), which loops back to create more value and revenue. Clean design with arrows connecting each stage. Warm business colors."
+    },
+    {
+      "id": "sustainable-business-practices",
+      "file": "req3b.md",
+      "description": "A modern business warehouse with solar panels on the roof and a white electric delivery van being loaded at a dock. Inside the open warehouse door, workers are sorting recyclable packaging materials into organized bins. Green plants and trees surround the building. Blue sky with a few clouds. Clean, optimistic scene."
+    },
+    {
+      "id": "ethics-decision-crossroads",
+      "file": "req3c.md",
+      "description": "A young business professional standing at a literal crossroads in a clean, modern setting. One path is lined with dollar signs and shortcuts, the other path is lined with handshake symbols and trust icons. The person is looking thoughtfully at both options. Warm, even lighting. The scene suggests careful decision-making."
+    },
+    {
+      "id": "brick-mortar-vs-online",
+      "file": "req3d.md",
+      "description": "A side-by-side split image. On the left, a welcoming small-town bookstore with warm interior lighting, bookshelves, and customers browsing inside. On the right, a person comfortably shopping on a laptop at a home desk, with shipping boxes and a delivered package nearby. Both scenes are bright and positive. A clear visual contrast between in-person and online shopping."
+    },
+    {
+      "id": "worker-protections-collage",
+      "file": "req4.md",
+      "description": "A four-panel collage of workplace scenes: top-left shows a teenager checking a pay stub with satisfaction; top-right shows a construction worker wearing proper safety equipment (hard hat, vest, goggles); bottom-left shows a parent in casual clothes holding a newborn at home, representing family leave; bottom-right shows a smiling retiree reviewing financial documents. Each panel is warm and positive."
+    },
+    {
+      "id": "scout-researching-business",
+      "file": "req5.md",
+      "description": "A Scout in a clean BSA uniform sitting at a desk with a notebook and laptop, actively researching a business. The notebook is open with notes organized under five labeled sections. The laptop shows a company website. A few reference books are stacked nearby. Good desk lighting, focused and studious atmosphere."
+    },
+    {
+      "id": "scout-interviewing-leader",
+      "file": "req6.md",
+      "description": "A Scout in a clean BSA uniform sitting across from a business professional in a bright, modern office. The Scout is holding a notebook and pen, taking notes. The business leader is speaking and gesturing, looking engaged and friendly. A desk, some framed photos, and a window with natural light are in the background."
+    }
+  ]
+}
