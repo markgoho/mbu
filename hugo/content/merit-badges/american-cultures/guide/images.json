@@ -1,0 +1,46 @@
+{
+  "badge": "american-cultures",
+  "style_context": "American cultural diversity — festivals, heritage celebrations, community institutions, diverse communities working together. Warm, inclusive, and respectful scenes showing Scouts engaging with different cultural traditions across America.",
+  "images": [
+    {
+      "id": "cultural-mosaic-overview",
+      "file": "_index.md",
+      "description": "A diverse group of Boy Scouts of America Scouts in clean Class A uniforms standing together in front of a large, colorful mosaic mural on an outdoor wall. The mural depicts cultural symbols from around the world — a dragon, a dreamcatcher, musical instruments, traditional patterns, and flags. The Scouts are looking at the mural with interest and curiosity. Bright daylight, urban park setting."
+    },
+    {
+      "id": "cultural-heritage-celebration",
+      "file": "_index.md",
+      "description": "An outdoor cultural heritage festival in a city park with colorful booth canopies. Booths display traditional crafts, textiles, and food from different cultures. A diverse crowd of families and young people walks between the booths. Banners with cultural artwork hang from poles. Warm afternoon sunlight, festive and welcoming atmosphere."
+    },
+    {
+      "id": "visiting-cultural-institution",
+      "file": "req1.md",
+      "description": "A Scout in a clean Class A uniform standing inside a grand cultural institution — perhaps a museum or community center — looking up at a large piece of traditional artwork on the wall. The Scout holds a small notebook and pencil, taking notes. The space has high ceilings with warm lighting and architectural details reflecting cultural heritage. Respectful, quiet atmosphere."
+    },
+    {
+      "id": "single-culture-city",
+      "file": "req2.md",
+      "description": "A Scout sitting at a wooden desk in a bedroom, chin resting on hand, looking thoughtfully at a blank sheet of paper. Above the Scout's head, two thought bubbles float — one showing a simplified city skyline with uniform architecture, the other showing a vibrant diverse city with varied building styles, market stalls, and colorful banners. Warm bedroom lighting, evening study session."
+    },
+    {
+      "id": "comparing-customs-chart",
+      "file": "req3.md",
+      "description": "A Scout in a clean Class A uniform working on a large three-column comparison chart spread out on a table. The chart has colorful headers and handwritten notes comparing traditions of three different cultural groups. Colored markers and reference books are scattered on the table. Bright classroom or dining room lighting, focused and engaged expression."
+    },
+    {
+      "id": "contributions-research",
+      "file": "req4.md",
+      "description": "A Scout sitting at a library table surrounded by open books and a laptop computer. The Scout is writing in a notebook with sticky notes marking pages in the books. The books show photographs of notable Americans from different backgrounds. Library bookshelves visible in the background with warm overhead lighting. Studious, focused atmosphere."
+    },
+    {
+      "id": "scout-giving-talk",
+      "file": "req5.md",
+      "description": "A Scout in a clean Class A uniform standing confidently at the front of a troop meeting room, gesturing while giving a presentation. Behind the Scout is a simple poster on an easel with colorful images and text about cultural understanding. A small group of fellow Scouts sits in folding chairs, listening attentively. Indoor meeting room with Scout decorations on the walls."
+    },
+    {
+      "id": "cultural-ally-action",
+      "file": "extended-learning.md",
+      "description": "A diverse group of Scouts in casual work clothes (not uniforms) working together on a community mural project outdoors. They are painting a large wall mural that features cultural symbols, flags, and the word 'Together' in several languages. Paint buckets and brushes are nearby. Bright daylight, neighborhood setting with trees and houses visible. Collaborative, joyful energy."
+    }
+  ]
+}
