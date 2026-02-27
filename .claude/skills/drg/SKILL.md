@@ -85,6 +85,17 @@ Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **co
 - If sub-requirements are thematically similar and short → **one page** (e.g., `req2.md` covering 2a–2c)
 - If sub-requirements are thematically distinct or lengthy → **separate pages** (e.g., `req1a.md`, `req1b.md`)
 
+### "Choose One" Option Requirements
+
+Some badges have a requirement that says "Complete ONE of the following options" with several large, self-contained options (e.g., Beef Cattle Option, Dairy Option, Horse Option). When each option has its own set of sub-requirements (a–f), prefer **separate pages per option** rather than combining all options onto a single page. This is better for both SEO and UX — a Scout working on the Beef Cattle option shouldn't have to scroll past five other animals.
+
+Structure these as:
+
+- `req6.md` — Brief overview page explaining the Scout picks ONE option, with summaries and links to each
+- `req6-{option-slug}.md` — Full-detail page for each option (e.g., `req6-beef-cattle.md`, `req6-dairy.md`)
+
+Use the `is_option` and option slug from `data.json` to derive filenames.
+
 ### Heading & SEO Rules
 
 - Every page has a unique, descriptive `<h1>` matching its sidebar nav link text exactly.

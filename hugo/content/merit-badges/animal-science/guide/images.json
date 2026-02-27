@@ -1,0 +1,96 @@
+{
+  "badge": "animal-science",
+  "style_context": "Animal agriculture, livestock, farm and ranch settings. Clean, well-maintained agricultural environments with healthy animals. Educational and approachable style suitable for Scouts ages 11-17.",
+  "images": [
+    {
+      "id": "scout-livestock-barn",
+      "file": "_index.md",
+      "description": "A Scout in a clean BSA uniform walking through a well-kept livestock barn, observing cattle and sheep in their pens. The barn is clean with good lighting, hay bales visible, and the Scout looks curious and engaged. Warm, inviting atmosphere."
+    },
+    {
+      "id": "livestock-montage",
+      "file": "_index.md",
+      "description": "A collage of six livestock types in beautiful natural settings: Angus beef cattle grazing in a green pasture, a Holstein dairy cow in a clean barn, a chestnut horse in a white-fenced paddock, a flock of white sheep on a grassy hillside, a pink pig in a clean outdoor pen, and white chickens in a well-ventilated coop with clean litter."
+    },
+    {
+      "id": "breed-comparison-chart",
+      "file": "req1.md",
+      "description": "An educational illustration showing representative animals from each of the seven livestock categories standing side by side for scale comparison: a tall draft horse, a black-and-white Holstein dairy cow, a muscular red Angus beef steer, a white woolly sheep, a brown-and-white Boer goat, a pink Yorkshire pig, and a white Leghorn chicken. Clean white background, labeled clearly."
+    },
+    {
+      "id": "veterinarian-examining-livestock",
+      "file": "req2.md",
+      "description": "A veterinarian in clean work clothes and rubber boots examining a brown calf in a clean barn setting. A Scout in a clean BSA uniform stands nearby observing and taking notes on a clipboard. The barn is well-lit with straw bedding and a wooden gate visible."
+    },
+    {
+      "id": "digestive-tract-comparison",
+      "file": "req3.md",
+      "description": "A side-by-side educational diagram showing simplified outlines of four digestive systems in a textbook illustration style: a ruminant (cow) with four labeled stomach compartments (rumen, reticulum, omasum, abomasum), a horse with its large cecum highlighted, a pig with its simple single-compartment stomach, and a chicken with its crop and gizzard labeled. Arrows show direction of food flow. Clean, colorful, educational poster style."
+    },
+    {
+      "id": "scout-managing-livestock",
+      "file": "req4.md",
+      "description": "A Scout in clean work clothes standing at a farm gate holding a clipboard, observing a small group of mixed-breed cattle in a well-maintained green pasture. A clean red barn and white fencing are visible in the background. Blue sky with a few white clouds. The Scout appears thoughtful and engaged."
+    },
+    {
+      "id": "breeding-selection-process",
+      "file": "req5a.md",
+      "description": "A Scout and a mentor standing in front of a bulletin board in a farm office. The bulletin board displays cattle performance records, EPD charts, and pedigree information pinned up. The mentor is pointing at a chart while the Scout looks on with interest. Clean, professional agricultural office setting."
+    },
+    {
+      "id": "pure-vs-crossbreed-diagram",
+      "file": "req5b.md",
+      "description": "An educational diagram showing two breeding paths side by side. Left path: a black Angus bull plus a black Angus cow equals a black Angus calf, labeled 'Pure Breeding.' Right path: a black Angus bull plus a red-and-white Hereford cow equals a black calf with a white face (black baldy), labeled 'Cross Breeding.' Clean illustration style with arrows showing the breeding combinations."
+    },
+    {
+      "id": "modern-dairy-technology",
+      "file": "req5c.md",
+      "description": "Interior of a modern dairy barn showing a robotic milking system. A Holstein cow is voluntarily entering the milking stall from a free-stall barn. A digital display screen on the robotic milker shows production data. The barn is clean, well-lit, with concrete floors and metal stanchions. High-tech but practical agricultural setting."
+    },
+    {
+      "id": "six-specialty-options",
+      "file": "req6.md",
+      "description": "Six equal-sized panels arranged in a 2x3 grid, each showing a different livestock specialty: a Hereford beef steer standing in a feedlot with grain bunks visible, a Holstein cow being milked in a parlor, a bay horse in a green paddock with white fencing, white sheep on a hillside with a shepherd, pink pigs in a clean indoor pen with straw, and white chickens in a bright, well-ventilated coop."
+    },
+    {
+      "id": "beef-cattle-feedlot",
+      "file": "req6-beef-cattle.md",
+      "description": "An aerial view of a well-organized beef cattle feedlot showing several pens of black Angus cattle, feed bunks along the fence lines, tall cylindrical grain storage bins, and a curved loading chute. The facility is clean and well-maintained with gravel roads between pens. Flat prairie landscape in the background."
+    },
+    {
+      "id": "dairy-milking-parlor",
+      "file": "req6-dairy.md",
+      "description": "Interior of a modern herringbone dairy milking parlor. Several black-and-white Holstein cows stand in angled stalls being milked by automatic milking units. A dairy worker in clean white coveralls monitors the process. Stainless steel pipes and equipment gleam under fluorescent lights. The facility is spotlessly clean."
+    },
+    {
+      "id": "horse-barn-paddock",
+      "file": "req6-horse.md",
+      "description": "A well-designed horse barn with an attached paddock. The barn has a center-aisle design with open stall doors visible. A wooden board fence encloses a green grass paddock where two horses (one bay, one chestnut) graze peacefully. A run-in shed provides shade in the corner of the paddock. Blue sky, white clouds, and mature oak trees frame the scene."
+    },
+    {
+      "id": "sheep-goat-pasture",
+      "file": "req6-sheep-or-goat.md",
+      "description": "A mixed pastoral scene showing a small flock of white woolly sheep and a few brown-and-white goats grazing together on a green hillside pasture. A simple three-sided wooden shelter and board fencing are visible in the background. Rolling green hills and a blue sky complete the scene."
+    },
+    {
+      "id": "hog-barn-interior",
+      "file": "req6-hog.md",
+      "description": "Interior of a clean, modern hog finishing barn. Pink-and-white crossbred pigs stand in pens with concrete slatted flooring. Automated tube feeders hang from the ceiling, and nipple waterers are visible along the pen walls. The barn has good lighting from skylights and is well-ventilated with large exhaust fans visible at the far end."
+    },
+    {
+      "id": "poultry-house-interior",
+      "file": "req6-avian.md",
+      "description": "Interior of a well-designed layer house for chickens. White Leghorn hens perch on wooden roosts, with nest boxes lined along the wall filled with clean straw. Tube feeders hang from the ceiling at hen height, and nipple waterers are visible. The floor has clean wood-shaving litter. Natural light comes through windows, supplemented by warm artificial lighting."
+    },
+    {
+      "id": "animal-science-careers",
+      "file": "req7.md",
+      "description": "A three-panel collage showing animal science careers: Left panel shows a veterinarian in scrubs using a stethoscope to examine a horse in a clean barn. Center panel shows a nutritionist in a lab coat analyzing feed samples at a lab bench with test tubes and a microscope. Right panel shows a ranch manager in jeans and a cowboy hat checking cattle in a green pasture with a tablet computer."
+    },
+    {
+      "id": "scout-farm-experience",
+      "file": "extended-learning.md",
+      "description": "A Scout in a clean BSA uniform standing at a county fair livestock exhibition, looking at a row of groomed cattle with blue award ribbons on their halters. Other fairgoers walk between exhibit barns in the background. Colorful banners and a Ferris wheel are visible in the distance. Bright, sunny, festive atmosphere."
+    }
+  ]
+}
