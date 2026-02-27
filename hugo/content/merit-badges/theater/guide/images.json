@@ -1,0 +1,171 @@
+{
+  "badge": "theater",
+  "style_context": "Theater arts, performing arts, stage productions, and backstage technical work in school and community theater settings",
+  "images": [
+    {
+      "id": "theater-stage-spotlight",
+      "file": "_index.md",
+      "description": "A brightly lit theater stage with rich red velvet curtains drawn back to reveal the performance area. A single warm spotlight shines on center stage, creating a circle of golden light on the wooden stage floor. The view is from the audience perspective, showing several rows of empty red seats in the foreground. The proscenium arch frames the stage elegantly."
+    },
+    {
+      "id": "community-theater-rehearsal",
+      "file": "_index.md",
+      "description": "A diverse group of six teenagers on a community theater stage during a rehearsal. Some hold scripts and gesture while reading lines, while others listen attentively. A director sits in the front row of the audience, gesturing with one hand and holding a notebook in the other. The stage has minimal set pieces — a table and a few chairs. Stage lights illuminate the scene from above."
+    },
+    {
+      "id": "audience-watching-play",
+      "file": "req1.md",
+      "description": "Several teenagers sitting in theater seats watching a live play with engaged, fascinated expressions. They lean forward slightly, eyes focused on the stage. In the background, the stage is softly visible with warm amber lighting and the silhouettes of actors performing. The theater has traditional red upholstered seats and a dark, atmospheric ambiance."
+    },
+    {
+      "id": "scout-writing-review",
+      "file": "req1.md",
+      "description": "A Scout sitting at a library table with an open play script and a spiral notebook, writing a review with a pencil. Bookshelves filled with books are visible in the background. The Scout looks thoughtful and focused, with natural light coming from a nearby window. A few other books are stacked on the table."
+    },
+    {
+      "id": "playwright-notebook",
+      "file": "req2.md",
+      "description": "A notebook open on a wooden desk showing a hand-drawn story arc diagram. The diagram shows a rising line from 'Setup' through 'Rising Action' to a peak labeled 'Climax' then dropping to 'Resolution.' A pencil rests across the page and a coffee mug sits nearby. The desk also has a few crumpled paper balls suggesting creative brainstorming."
+    },
+    {
+      "id": "scouts-reading-script",
+      "file": "req2.md",
+      "description": "Two Scouts sitting cross-legged on a bare theater stage, facing each other and reading from script pages. They are laughing and one is gesturing dramatically with one hand while holding the script with the other. Dim stage lights are visible above in the rigging. The atmosphere is casual and creative."
+    },
+    {
+      "id": "backstage-safety",
+      "file": "req3.md",
+      "description": "A well-organized backstage area in a theater. Glow tape marks the edges of steps in bright green strips. A clearly marked emergency exit sign glows red above a door. A first-aid kit is mounted on the wall in a red case. Cables are neatly coiled and hung on hooks. The area is dimly lit with a blue work light, showing a clean, safety-conscious environment."
+    },
+    {
+      "id": "theater-crew-teamwork",
+      "file": "req3.md",
+      "description": "A team of five teenage crew members working together backstage. They all wear black crew T-shirts. One holds a clipboard with a checklist, another is adjusting a light on a stand, a third is organizing props on a table, and two others are carrying a flat piece of scenery. The mood is collaborative and focused."
+    },
+    {
+      "id": "actor-rehearsal-stage",
+      "file": "req3a.md",
+      "description": "A teenage actor standing center stage during a rehearsal, holding a script in one hand and gesturing expressively with the other. The actor's face shows deep emotion — mid-monologue. A director sits in the front row of the audience, watching intently and taking notes. The stage is bare except for a few rehearsal chairs. Work lights illuminate the scene from above."
+    },
+    {
+      "id": "curtain-call-bowing",
+      "file": "req3a.md",
+      "description": "A group of seven teenage actors standing in a line at the front of a stage, smiling broadly and taking a bow together during a curtain call. Bright stage lights shine from above, creating dramatic shadows. The actors wear various costumes suggesting a period play. The audience area is dark but hands clapping are suggested in the foreground."
+    },
+    {
+      "id": "director-giving-notes",
+      "file": "req3b.md",
+      "description": "A teenage director sitting in the front row of an auditorium, turned partially toward the stage. They hold a notebook and pencil, gesturing with purpose as they give notes. On stage, three actors stand listening attentively, scripts in hand. The auditorium lights are on, creating a bright rehearsal atmosphere."
+    },
+    {
+      "id": "blocking-diagram",
+      "file": "req3b.md",
+      "description": "A hand-drawn blocking diagram on graph paper. The diagram shows a rectangular stage layout from above with labeled furniture pieces (a couch, a table, a chair). Arrows in different colors indicate actor movements, with character initials (M, J, S) marking positions. Stage directions are noted: SR, SL, US, DS. The drawing is neat and detailed with pencil."
+    },
+    {
+      "id": "set-design-sketch",
+      "file": "req3c.md",
+      "description": "A hand-drawn set design sketch in colored pencil showing a living room stage layout from a three-quarter perspective view. The sketch includes labeled furniture — a sofa, armchair, bookshelf, and coffee table — with doors stage left and stage right, and a large window on the back wall. Color notes and dimension markings are written in the margins."
+    },
+    {
+      "id": "set-model-closeup",
+      "file": "req3c.md",
+      "description": "A detailed foam board scale model of a theater set sitting on a table. The model shows a living room with miniature furniture — a tiny sofa, a small table, chairs, and a bookshelf — all made from cardboard and foam. The walls are painted with wallpaper texture, and tiny picture frames hang on the walls. A ruler sits beside the model for scale reference."
+    },
+    {
+      "id": "costume-sketches",
+      "file": "req3d.md",
+      "description": "Five costume design sketches pinned to a cork board. Each sketch shows a full-body figure wearing clothing from a historical period (Victorian era), representing different social classes — a wealthy lady in an elaborate gown, a gentleman in a top hat and coat, a servant in a plain dress, a soldier in uniform, and a street vendor in working clothes. Small fabric swatches and handwritten color notes are pinned next to each sketch."
+    },
+    {
+      "id": "historical-costume-research",
+      "file": "req3d.md",
+      "description": "A Scout sitting at a library table surrounded by open books showing historical clothing illustrations from different eras. Colored pencils are spread across the table, and a sketchpad shows a partially completed costume sketch. The Scout looks between a reference book and their drawing, concentrating carefully."
+    },
+    {
+      "id": "makeup-application",
+      "file": "req3e.md",
+      "description": "A teenager carefully applying stage makeup to a friend's face at a makeup table. A lighted mirror with round bulbs frames the scene. The table holds an array of makeup brushes in a cup, an open makeup palette with various colors, sponges, and pencils. The person being made up sits patiently in a chair draped with a cape. The lighting is warm and focused."
+    },
+    {
+      "id": "character-makeup-comparison",
+      "file": "req3e.md",
+      "description": "A side-by-side comparison showing a teenager before and after stage makeup application as a historical figure. The left side shows the natural face with no makeup. The right side shows the same person transformed with stage makeup — aged features using highlight and shadow techniques, styled hair, and period-appropriate details. The transformation is dramatic and impressive."
+    },
+    {
+      "id": "scene-shop-building",
+      "file": "req3f.md",
+      "description": "Three teenagers working in a scene shop building a flat. One holds a piece of lumber steady while another drives screws with a cordless drill. A third measures a board with a tape measure and pencil. They all wear safety glasses. Partially completed scenery pieces lean against the walls in the background, and sawdust lightly covers the floor. The shop is well-lit with fluorescent lights."
+    },
+    {
+      "id": "scenic-painting",
+      "file": "req3f.md",
+      "description": "A teenager kneeling on the floor painting a large scenic flat laid horizontally. They use a long-handled brush to create a realistic brick wall texture using dry brush technique. Several open paint cans in shades of red, brown, and gray sit nearby, along with various brushes and rags. The flat is partially painted, showing the progression from base coat to finished texture."
+    },
+    {
+      "id": "lighting-instruments",
+      "file": "req3g.md",
+      "description": "Various stage lighting instruments hanging from a metal lighting pipe above a stage. Visible instruments include an ellipsoidal spotlight with barn doors, a Fresnel lens fixture, and modern LED panels. Colored gel frames in blue, amber, and red are clipped to several instruments. Safety cables loop from each instrument to the pipe. The view is looking up from the stage."
+    },
+    {
+      "id": "lighting-board-operator",
+      "file": "req3g.md",
+      "description": "A teenager sitting at a computerized lighting control board in a darkened theater booth. The board glows with rows of faders, buttons, and a monitor showing lighting channel levels. Through a window in front of the operator, the stage is visible with colorful lighting — blues, ambers, and purples — illuminating the set. The operator's face is lit by the board's glow, focused and attentive."
+    },
+    {
+      "id": "sound-mixing-desk",
+      "file": "req3h.md",
+      "description": "A sound mixing desk in a theater control position with dozens of channel faders, rotary knobs, and LED level meters. A pair of professional headphones rests on the console. Through the booth window behind the desk, a theater stage is visible with actors performing under stage lights. The console has labels on strips of tape identifying channels like 'Lead 1,' 'Chorus L,' and 'SFX.'"
+    },
+    {
+      "id": "mic-check-backstage",
+      "file": "req3h.md",
+      "description": "A sound technician backstage helping an actor secure a wireless microphone. The technician is threading the mic cable along the actor's collar while the actor holds still. A small wireless transmitter pack is being clipped to the actor's belt. Both people look focused and professional. A rack of additional wireless microphone equipment is visible in the background."
+    },
+    {
+      "id": "stage-manager-calling",
+      "file": "req3i.md",
+      "description": "A stage manager wearing a headset with a boom microphone, sitting at a desk backstage. An open calling script with handwritten cue notations in colored ink is illuminated by a small gooseneck desk lamp. Two monitors nearby show different camera angles of the stage. The stage manager's hand hovers over the script, ready to call the next cue. The environment is dimly lit except for the desk lamp."
+    },
+    {
+      "id": "prompt-book-closeup",
+      "file": "req3i.md",
+      "description": "A closeup photograph of an open prompt book in a three-ring binder. The left page shows a typed script with handwritten cue notations in the margins — 'WARN LX 14' and 'SND 5 GO' written in pencil with colored highlighting. The right page shows a blocking diagram with character positions marked. Colored sticky tabs mark important pages along the edge of the binder."
+    },
+    {
+      "id": "musical-director-piano",
+      "file": "req3j.md",
+      "description": "A teenager sitting at an upright piano on a theater stage, playing and looking up at a small group of four cast members standing in a semicircle nearby. The cast members hold vocal score books and are singing together. Sheet music is spread across the piano top. The atmosphere is collaborative, with the musical director smiling encouragingly at the singers."
+    },
+    {
+      "id": "pit-orchestra-rehearsal",
+      "file": "req3j.md",
+      "description": "A small pit orchestra of six teenagers with various instruments — violin, flute, trumpet, clarinet, keyboard, and drums — rehearsing in the orchestra pit area in front of a stage. A young conductor stands on a small podium with a baton raised, looking at a conductor's score on a music stand. The stage behind them shows a partially assembled set."
+    },
+    {
+      "id": "mime-performance",
+      "file": "req4.md",
+      "description": "A teenager performing mime on a simple stage with a black background. The performer is creating the illusion of pulling a heavy rope, leaning back with arms extended and hands gripping an invisible rope. Their facial expression shows intense effort and concentration. They wear simple dark clothing — black pants and a black long-sleeved shirt. A single spotlight illuminates them."
+    },
+    {
+      "id": "mime-techniques-practice",
+      "file": "req4.md",
+      "description": "A Scout standing in front of a large mirror in a rehearsal room, practicing the fixed point mime technique. Both hands are pressed flat against an invisible wall at chest height, with fingers spread. The mirror reflection shows the same pose from the front. The rehearsal room has a wooden floor and bare walls. The Scout wears casual dark clothing."
+    },
+    {
+      "id": "stage-types-diagram",
+      "file": "req5.md",
+      "description": "A clean, educational diagram showing three stage types side by side. Left: a proscenium stage with the audience on one side and a frame around the stage opening. Center: a thrust stage extending into the audience with seating on three sides. Right: an arena stage with the audience surrounding all four sides. Each diagram is labeled clearly and the audience areas are shaded in a contrasting color. Simple, architectural illustration style."
+    },
+    {
+      "id": "fly-system-diagram",
+      "file": "req5.md",
+      "description": "A cutaway side-view technical diagram of a theater showing the fly system above the stage. The diagram labels key components: battens (horizontal pipes), lift lines (cables running to pulleys), counterweights on a weight rail at the side, the locking rail, and the fly gallery where the operator stands. Below the fly system, the stage floor is visible with a flat piece of scenery hanging from one batten. The audience seating area is shown in cross-section to the left."
+    },
+    {
+      "id": "labeled-theater-diagram",
+      "file": "req5.md",
+      "description": "A detailed cross-section diagram of a proscenium theater with key areas labeled. Labels include: proscenium arch (the frame around the stage), fly loft (space above the stage), cyclorama (curved backdrop at the rear), wings (sides of the stage hidden from audience), apron (stage area in front of the proscenium), orchestra pit, and audience seating. The diagram uses clean lines and contrasting colors to distinguish different areas."
+    }
+  ]
+}
