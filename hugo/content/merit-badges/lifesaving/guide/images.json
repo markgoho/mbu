@@ -1,0 +1,126 @@
+{
+  "badge": "lifesaving",
+  "style_context": "Water rescue and aquatic safety training for Scouts BSA members. Settings include pools, lakes, beaches, and open water. Subjects wear clean swimsuits or clean Scout uniforms when on land. Scenes should convey urgency, professionalism, and safety.",
+  "images": [
+    {
+      "id": "lifesaving-pool-training",
+      "file": "_index.md",
+      "description": "A group of diverse teenage Scouts in clean swimsuits practicing water rescue techniques at an outdoor swimming pool. A lifeguard instructor in a red swimsuit stands at the pool edge watching. Clear blue water, lane lines visible, rescue equipment (tubes, ring buoys) lined up on the pool deck. Bright sunny day. Encouraging, active atmosphere."
+    },
+    {
+      "id": "ocean-surf-rescue",
+      "file": "_index.md",
+      "description": "A lifeguard in a red swimsuit running into ocean surf carrying an orange rescue buoy, waves breaking around their knees. Sandy beach in the foreground, blue-green ocean water, white foam. Dramatic action shot conveying urgency and athleticism. Clear sky with a few clouds."
+    },
+    {
+      "id": "lake-lifeguard-stand",
+      "file": "_index.md",
+      "description": "A wooden lifeguard stand at a freshwater lake beach. A red rescue tube hangs on the side of the chair. In the background, swimmers enjoy the designated swimming area marked by buoy lines. Pine trees line the far shore. Late afternoon golden light. Peaceful but vigilant atmosphere."
+    },
+    {
+      "id": "safe-swim-defense-pool",
+      "file": "req1.md",
+      "description": "A supervised swimming area at a Scout summer camp. Clearly marked swimming lanes with rope and buoy dividers separating shallow and deep areas. A buddy board is visible near the entrance. A lifeguard sits on an elevated wooden chair scanning the water. Several Scouts swim in the background. Clean, organized, safe environment."
+    },
+    {
+      "id": "four-strokes-diagram",
+      "file": "req2.md",
+      "description": "A four-panel educational illustration showing the body position and arm movement for four swimming strokes: front crawl (freestyle) in the upper left, sidestroke in the upper right, breaststroke in the lower left, and elementary backstroke in the lower right. Each panel shows a swimmer from the side in clear blue water with labeled arrows indicating arm and leg movements. Clean, instructional style."
+    },
+    {
+      "id": "rip-current-diagram",
+      "file": "req3a.md",
+      "description": "An aerial view diagram of an ocean beach showing a rip current. The beach is at the bottom with waves coming in. Arrows show water flowing along the shore and then out through a narrow gap in the sandbars as a rip current. A dotted line shows the escape route: swimming parallel to shore to exit the rip current, then angling back to shore. Clear labels and simple, educational style."
+    },
+    {
+      "id": "distress-vs-drowning",
+      "file": "req3b.md",
+      "description": "A side-by-side comparison illustration showing two people in water. On the left, a distressed swimmer who can still wave one arm, has their head above water, and is calling for help. On the right, a person experiencing active drowning: mouth barely at water level, arms pressing down to the sides, body vertical with no kick visible, eyes wide with panic. Labeled 'Distressed Swimmer' and 'Active Drowning' respectively. Educational, clear style with blue water background."
+    },
+    {
+      "id": "reach-throw-row-go",
+      "file": "req3c.md",
+      "description": "A four-panel illustration showing the rescue order. Panel 1 (Reach): A Scout lying flat on a dock, extending a long pole toward a person in the water. Panel 2 (Throw): A Scout on shore throwing a ring buoy with rope attached toward a swimmer. Panel 3 (Row): A rescuer in a canoe approaching a person in the water, extending a paddle. Panel 4 (Go): A rescuer swimming with a rescue tube toward a person in the water. Each panel labeled with its method name. Clear, educational illustration style."
+    },
+    {
+      "id": "rescue-settings-comparison",
+      "file": "req3d.md",
+      "description": "A four-panel illustration comparing rescue approaches in different settings. Top left: a pool with a lifeguard using a reaching pole. Top right: a lake shore with a person throwing a rescue bag. Bottom left: a river bank with a person throwing a rope downstream. Bottom right: an ocean beach with a lifeguard carrying a rescue board into the surf. Each panel labeled with the setting name. Clear, educational style."
+    },
+    {
+      "id": "shore-based-rescue",
+      "file": "req3e.md",
+      "description": "Two teenage Scouts at a dock. One is on a cell phone calling for help while pointing toward the water with the other hand. The second Scout is kneeling at the edge of the dock, extending a long branch toward the water. Both Scouts look focused and determined. Lake setting with trees in the background. The scene conveys smart decision-making rather than rushing in."
+    },
+    {
+      "id": "reaching-rescue-dock",
+      "file": "req4.md",
+      "description": "A Scout lying flat on a wooden dock with their legs braced against a dock post for stability. They are extending a long aluminum shepherd's crook pole toward a person in the water who is reaching for it with one hand. The rescuer's body is low and stable. Clear pool or lake water. The image conveys proper body positioning for a safe reaching rescue."
+    },
+    {
+      "id": "throwing-rescue-sequence",
+      "file": "req5.md",
+      "description": "A three-panel sequence showing a throwing rescue. Panel 1: A Scout standing on shore, coiling a throw bag rope in one hand while holding the bag in the other, feet planted in a wide stance. Panel 2: The Scout mid-throw with an underhand swing, the throw bag arcing through the air with rope trailing behind it. Panel 3: A person in the water grabbing the throw bag while the Scout on shore pulls the rope. Lake or pool setting. Action-oriented, educational style."
+    },
+    {
+      "id": "canoe-rowing-rescue",
+      "file": "req6.md",
+      "description": "A rescuer in a canoe on a calm lake, approaching a person in the water from a controlled angle. The canoe paddler extends a paddle toward the person in the water. The person in the water is reaching for the paddle blade. The rescuer maintains a stable position in the canoe. Green trees line the far shore. Calm, clear water. The scene shows proper boat-based rescue technique."
+    },
+    {
+      "id": "buoyant-aids-lineup",
+      "file": "req7.md",
+      "description": "A collection of water rescue aids arranged neatly on a concrete pool deck. From left to right: a red rescue tube with strap, an orange torpedo buoy with handles, a white ring buoy with rope, a blue kickboard, an orange life jacket (PFD), and a sealed clear plastic gallon jug. Bright daylight. Clean, organized display showing the variety of rescue equipment available."
+    },
+    {
+      "id": "buoyant-aid-approach",
+      "file": "req8.md",
+      "description": "A Scout swimming toward a person in the water using a head-up front crawl stroke. The Scout has a red rescue tube clipped across their chest with the strap over their shoulder. Their head is up and eyes are focused forward on the person ahead. Deep blue pool water. The image conveys speed, focus, and purpose in the approach stroke."
+    },
+    {
+      "id": "clothing-removal-sequence",
+      "file": "req9.md",
+      "description": "A three-panel sequence showing rapid clothing removal for water rescue. Panel 1: A Scout kicking off sneakers, one foot stepping on the heel of the other shoe. Panel 2: The Scout pulling a T-shirt over their head in one motion. Panel 3: The Scout stepping out of pants, already wearing swim shorts underneath. A digital stopwatch display in the corner shows '18 seconds'. Poolside or dock setting. Quick, efficient action."
+    },
+    {
+      "id": "lead-and-wait",
+      "file": "req10.md",
+      "description": "An overhead bird's-eye view of a rescue scenario in a pool or lake. A rescuer is positioned between a victim (shown struggling at the surface) and the shore/pool wall. The rescuer is about 10 feet from the victim, holding a rescue tube extended toward them. Dotted lines show the safe distance. The shore or pool edge is visible at the bottom of the image. Clear, diagrammatic style showing proper positioning."
+    },
+    {
+      "id": "cross-chest-carry",
+      "file": "req11.md",
+      "description": "A rescuer performing a cross-chest carry in clear blue water. The rescuer is on their side, swimming with a sidestroke kick. Their right arm reaches across the victim's chest diagonally, securing the victim against their hip. The victim is on their back with face above water, eyes closed, appearing exhausted. Both figures shown from a three-quarter angle in waist-deep to deep water. Instructional, clear positioning."
+    },
+    {
+      "id": "escape-techniques",
+      "file": "req12.md",
+      "description": "A three-panel illustration showing a front head hold escape sequence. Panel 1: A victim has both arms wrapped around the rescuer's head and shoulders from the front, both in deep water. Panel 2: The rescuer tucks chin, submerges, and pushes on the victim's hips, pushing them apart. Panel 3: The rescuer swims away underwater behind the victim, shown with motion lines. Blue water, clear educational style with arrows showing movement direction."
+    },
+    {
+      "id": "front-approach-wrist-tow",
+      "file": "req13.md",
+      "description": "A rescuer swimming sidestroke while towing an unconscious victim by the wrist. The victim is floating faceup with their arm extended above their head, held by the rescuer's hand. The victim appears limp and unresponsive. The rescuer is on their side, kicking with a scissors kick, eyes forward toward shore. Clear blue pool water. The image shows proper wrist tow technique for an unconscious victim."
+    },
+    {
+      "id": "surface-dives-comparison",
+      "file": "req14.md",
+      "description": "A side-by-side illustration showing two types of surface dives. On the left, a feetfirst surface dive: a swimmer pushes arms down, rises up, then sinks straight down feetfirst with arms at sides, then tucks to swim along the bottom. On the right, a headfirst pike dive: a swimmer bends at the waist, lifts legs above the surface, and drives down headfirst in a streamlined position. Both sequences shown with multiple body positions in a progression. Blue water, clear educational style."
+    },
+    {
+      "id": "spinal-stabilization-faceup",
+      "file": "req15.md",
+      "description": "A rescuer standing in waist-deep pool water behind a faceup victim, performing in-line spinal stabilization. The rescuer's hands cradle both sides of the victim's head, with forearms braced against the victim's upper arms and shoulders. The victim floats at the surface in a perfectly straight line — head, neck, and body aligned. Calm, clear water. The rescuer's expression is focused and careful. Instructional angle showing proper hand placement."
+    },
+    {
+      "id": "cpr-assessment-steps",
+      "file": "req16.md",
+      "description": "A four-panel educational illustration showing CPR assessment steps on a pool deck. Panel 1: A rescuer kneeling beside a victim, tapping their shoulders and calling out. Panel 2: A bystander calling 911 on a cell phone. Panel 3: The rescuer performing a head-tilt chin-lift to open the airway. Panel 4: The rescuer with ear near the victim's mouth performing look-listen-feel breathing check. Clean pool deck setting, clear instructional style. Each panel labeled with the step name."
+    },
+    {
+      "id": "hypothermia-prevention",
+      "file": "req17.md",
+      "description": "Two diverse teenage Scouts near a lake after swimming. One is wrapping up in a large dry towel, hair wet, looking relieved. The other sits on a log drinking from a thermos with steam rising from it. Both are smiling. A stack of dry clothes sits on a nearby bench. Pine trees and a calm lake in the background. Late afternoon light. The scene conveys warmth, preparation, and smart cold-water safety practices."
+    }
+  ]
+}
