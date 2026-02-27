@@ -1,0 +1,66 @@
+{
+  "badge": "american-heritage",
+  "style_context": "American history, civic heritage, national symbols, and community engagement scenes. Warm, patriotic tones with a mix of historical and modern settings. Diverse Scouts in clean uniforms when depicted.",
+  "images": [
+    {
+      "id": "declaration-quill-pen",
+      "file": "_index.md",
+      "description": "A close-up of a quill pen resting on aged parchment with elegant handwritten calligraphy text visible, evoking the signing of the Declaration of Independence. Warm candlelight illuminates the scene. No specific readable text, just the suggestion of historic handwriting on yellowed parchment."
+    },
+    {
+      "id": "american-symbols-collage",
+      "file": "_index.md",
+      "description": "A tasteful composition of American heritage symbols: a waving American flag in the foreground, the Great Seal of the United States visible on a document, and a bald eagle perched majestically. Set against a bright blue sky with soft clouds. Patriotic but not over-the-top."
+    },
+    {
+      "id": "family-history-album",
+      "file": "_index.md",
+      "description": "A Scout in a clean uniform sitting at a kitchen table with a grandparent, looking through an old family photo album together. The table has a few old black-and-white photographs spread out. Warm, cozy lighting. Both people are engaged and smiling. Diverse representation."
+    },
+    {
+      "id": "declaration-closeup",
+      "file": "req1.md",
+      "description": "A Scout sitting at a desk reading a printed copy of the Declaration of Independence. A notebook and pencil are nearby. The Scout is focused and engaged, perhaps with a furrowed brow of concentration. Clean uniform, well-lit study environment. The printed document is clearly visible on the desk."
+    },
+    {
+      "id": "scout-interviewing-veteran",
+      "file": "req2.md",
+      "description": "A Scout in a clean uniform sitting across from a veteran in a comfortable living room setting. The Scout is holding a notebook and listening attentively. The veteran is an older adult in casual clothing, gesturing while telling a story. Warm natural lighting from a window. Respectful, engaged atmosphere."
+    },
+    {
+      "id": "scout-reading-news",
+      "file": "req3a.md",
+      "description": "A Scout sitting in a library reading area, with a newspaper spread on the table and a laptop open nearby. Historical reference books are stacked to one side. The Scout is focused, taking notes in a spiral notebook. Bright library lighting with bookshelves visible in the background."
+    },
+    {
+      "id": "great-seal-eagle",
+      "file": "req3b.md",
+      "description": "A detailed, artistic illustration of the front (obverse) of the Great Seal of the United States, showing the bald eagle with wings spread, holding an olive branch in one talon and arrows in the other. The shield with red and white stripes covers the eagle's chest. The banner reading E Pluribus Unum is in its beak. Rich gold and deep blue tones on a clean background."
+    },
+    {
+      "id": "family-tree-research",
+      "file": "req3c.md",
+      "description": "A Scout working on a large family tree poster spread across a table. Old black-and-white photographs, handwritten letters, and printed documents are scattered around the workspace. The Scout is carefully placing a photo on the poster. Warm, focused atmosphere with good task lighting."
+    },
+    {
+      "id": "historic-trail-marker",
+      "file": "req4.md",
+      "description": "A Scout in a clean uniform standing next to a bronze or metal historic trail marker or historical plaque mounted on a stone base. The Scout is reading the marker's text while holding a small notepad. The setting is outdoors with green trees and a walking path visible. Bright, clear day."
+    },
+    {
+      "id": "scout-listening-music",
+      "file": "req5.md",
+      "description": "A Scout wearing over-ear headphones in a library setting, surrounded by books about American history and music. A laptop is open in front of them showing a music player interface. The Scout has a notebook and is writing notes while listening. Engaged, studious atmosphere."
+    },
+    {
+      "id": "park-ranger-speaking",
+      "file": "req6.md",
+      "description": "A National Park Service ranger in the iconic flat hat and gray-and-green uniform giving an animated presentation to a small group of diverse visitors at a historic site. A historic brick building or monument is visible in the background. The ranger is gesturing enthusiastically while the visitors listen with interest. Bright outdoor setting."
+    },
+    {
+      "id": "historic-building-preservation",
+      "file": "extended-learning.md",
+      "description": "A diverse group of volunteers working together to restore the exterior of a historic red brick building. Some volunteers are on scaffolding doing brick repair, others are on the ground with tools and supplies. Everyone is wearing work clothes and safety gear. The building shows architectural details like arched windows. Bright day, community spirit atmosphere."
+    }
+  ]
+}
