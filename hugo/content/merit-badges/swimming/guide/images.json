@@ -1,0 +1,76 @@
+{
+  "badge": "swimming",
+  "style_context": "Aquatic and water safety scenes featuring Scouts in pools, lakes, and open water. Bright, clean water environments with clear visibility. Scouts should appear confident, active, and safety-conscious.",
+  "images": [
+    {
+      "id": "scout-swimming-pool",
+      "file": "_index.md",
+      "description": "A Scout in swim trunks and goggles swimming the front crawl in an outdoor pool with bright blue water. The Scout is mid-stroke with one arm extended forward and the other pulling through the water. Lane lines are visible. Sunlight sparkles on the water surface. The Scout looks focused and confident."
+    },
+    {
+      "id": "open-water-swimming",
+      "file": "_index.md",
+      "description": "A swimmer wearing a bright orange swim cap swimming parallel to a scenic shoreline in calm open water. Gentle waves lap nearby. A green tree-lined shore is visible in the background. The swimmer uses a front crawl stroke with good form."
+    },
+    {
+      "id": "safe-swim-defense",
+      "file": "req1a.md",
+      "description": "A waterfront scene at a Scout camp lake with a lookout standing on a raised wooden platform scanning the swimming area. Bright orange buoy markers divide the water into swim zones. Several Scouts swim in the designated area. A buddy board is visible on shore. The scene conveys organized, supervised swimming."
+    },
+    {
+      "id": "swimmer-health-safety",
+      "file": "req1b.md",
+      "description": "A Scout standing near a lake shoreline applying sunscreen to their arm before swimming. A water bottle and a compact first aid kit sit on a towel beside them. The Scout wears swim trunks and looks prepared and responsible. A sunny day with trees in the background."
+    },
+    {
+      "id": "swimmer-test",
+      "file": "req2.md",
+      "description": "A Scout jumping feetfirst into a swimming pool from the pool deck. The Scout's body is vertical with arms close to their sides. A merit badge counselor stands on the deck watching and holding a clipboard. Pool lanes and blue water are visible."
+    },
+    {
+      "id": "swimming-strokes-demo",
+      "file": "req3.md",
+      "description": "A Scout swimming the front crawl in a pool lane, viewed from slightly above and to the side. The Scout demonstrates proper arm extension with one arm reaching forward, body rotated slightly for breathing, and a steady flutter kick. A lane line is visible beside them."
+    },
+    {
+      "id": "endurance-swim",
+      "file": "req4.md",
+      "description": "A Scout swimming the breaststroke in a pool, shown from the front. The Scout's arms are extended forward during the glide phase, head just above water, with a focused expression. Lane lines are visible on both sides. The pool water is clear blue."
+    },
+    {
+      "id": "reaching-rescue",
+      "file": "req5a.md",
+      "description": "A Scout lying flat on a wooden dock extending a long shepherd's crook rescue pole toward another Scout in the water. The Scout on the dock is bracing themselves with their other arm. The person in the water reaches for the pole. Orange rescue buoys hang on the dock railing."
+    },
+    {
+      "id": "line-rescue",
+      "file": "req5b.md",
+      "description": "Two Scouts on a dock performing a line rescue. One Scout throws a coiled yellow rope toward a practice victim in the water approximately 30 feet away. The second Scout stands behind the thrower in a bracing stance, ready to help pull. The victim in the water has their arm raised."
+    },
+    {
+      "id": "help-position",
+      "file": "req6.md",
+      "description": "A Scout wearing a bright red U.S. Coast Guard-approved life jacket floating in calm water demonstrating the HELP position. Their knees are drawn up to their chest, arms crossed tightly over their chest, and head tilted back above water. The water is calm and blue-green."
+    },
+    {
+      "id": "surface-dive",
+      "file": "req7.md",
+      "description": "A Scout performing a pike surface dive in a swimming pool. The Scout is bent at the waist with their upper body pointed straight down into the water and legs pointing straight up above the surface. The pool water is clear enough to see the pool bottom below."
+    },
+    {
+      "id": "standing-dive",
+      "file": "req8.md",
+      "description": "A Scout standing on a pool deck in diving position, about to perform a standing headfirst dive. Arms are extended overhead with hands together, knees slightly bent, toes curled over the pool edge. The pool stretches out in front of them with clear blue water at least 7 feet deep."
+    },
+    {
+      "id": "swimming-fitness",
+      "file": "req9.md",
+      "description": "A Scout swimming butterfly stroke in a pool lane, captured mid-stroke with arms spread wide above the water and body rising for a breath. The image conveys the full-body workout nature of swimming. Splash and motion create energy in the scene."
+    },
+    {
+      "id": "extended-learning-diving",
+      "file": "extended-learning.md",
+      "description": "A Scout snorkeling in clear tropical-style water, looking down at colorful fish swimming near a coral formation. The Scout wears a snorkel mask and fins. Shafts of sunlight penetrate the water. The scene is vibrant, adventurous, and inviting."
+    }
+  ]
+}
