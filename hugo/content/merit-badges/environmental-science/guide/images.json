@@ -1,0 +1,106 @@
+{
+  "badge": "environmental-science",
+  "style_context": "Environmental science education for Scouts BSA members. Scenes involve outdoor ecosystems, pollution topics, wildlife conservation, and scientific observation. Diverse Scouts in clean uniforms or appropriate fieldwork clothing.",
+  "images": [
+    {
+      "id": "scout-ecosystem-observation",
+      "file": "_index.md",
+      "description": "A Scout BSA member (around 14 years old, wearing a clean tan Scout uniform shirt) kneeling beside a clear stream in a lush temperate forest ecosystem. They are writing in a small field notebook. The scene shows a healthy ecosystem with green ferns, moss-covered rocks, wildflowers along the stream bank, and a songbird perched on a nearby branch. Warm afternoon sunlight filters through the tree canopy. The Scout looks engaged and curious."
+    },
+    {
+      "id": "soil-layers-cross-section",
+      "file": "_index.md",
+      "description": "A detailed educational cross-section illustration of soil layers. The top shows green grass and small plants with visible root systems extending downward. Below the surface, layers are clearly visible: dark topsoil with earthworms and organic matter, lighter subsoil with embedded rocks and fewer roots, a layer of broken bedrock fragments, and solid bedrock at the bottom. A few mushrooms grow on the surface near a small fallen log. Clean, colorful scientific illustration style."
+    },
+    {
+      "id": "environmental-science-branches",
+      "file": "_index.md",
+      "description": "A clean, colorful educational infographic-style illustration showing six branches of environmental science arranged in a circle or hexagonal pattern, connected by arrows. Each branch has a simple icon: Ecology (a tree with connected animals), Atmospheric Science (clouds and air particles), Hydrology (water droplets and waves), Soil Science (layers of earth), Conservation Biology (a shield with a paw print), and Environmental Engineering (a gear with a leaf). The center shows planet Earth. Bright, engaging colors on a clean background."
+    },
+    {
+      "id": "scout-nature-observation",
+      "file": "req1.md",
+      "description": "A Scout BSA member (around 13 years old, wearing a clean tan uniform shirt) sitting on a mossy fallen log in a sunny forest clearing, writing in a field notebook. A small babbling stream runs nearby. The scene includes diverse plant life — ferns, wildflowers, and tall deciduous trees. A blue jay is visible on a low branch. The Scout is focused and engaged, pencil in hand, surrounded by the natural beauty of a healthy forest ecosystem."
+    },
+    {
+      "id": "scout-field-notebook",
+      "file": "req2a.md",
+      "description": "A Scout BSA member (around 12 years old, wearing a clean tan uniform shirt) sitting cross-legged in a wildflower meadow with binoculars hanging from their neck. They are writing detailed observations in a spiral-bound field notebook. The meadow has diverse wildflowers in purple, yellow, and white. A butterfly rests on a nearby flower. Mature trees form a backdrop. Clear blue sky with a few white clouds. The Scout's expression shows careful concentration."
+    },
+    {
+      "id": "ecosystem-food-web",
+      "file": "req2b.md",
+      "description": "An illustrated educational food web diagram set in a meadow ecosystem. The sun is at the top sending energy arrows to green plants (grass, flowers, shrubs). Arrows show energy flow from plants to a grasshopper, a rabbit, and a mouse. From those, arrows lead to a frog, a songbird, and a fox. At the top of the web, a red-tailed hawk. At the bottom, mushrooms and bacteria break down dead organisms with arrows returning nutrients to the soil. Clean lines, labeled organisms, colorful scientific illustration style."
+    },
+    {
+      "id": "scout-examining-log",
+      "file": "req2b.md",
+      "description": "A Scout BSA member (around 13 years old, wearing a clean tan uniform shirt) crouching and using a magnifying glass to examine insects and fungi on a large decomposing log in a forest. Orange and white shelf mushrooms grow on the bark. Small beetles are visible on the log surface. The Scout is focused and excited. Leaf litter covers the forest floor. Dappled sunlight creates a warm atmosphere. The scene illustrates decomposition and formerly living components of an ecosystem."
+    },
+    {
+      "id": "air-quality-monitoring",
+      "file": "req3.md",
+      "description": "A Scout BSA member (around 14 years old, wearing a clean tan uniform shirt) holding two index cards side by side to compare them outdoors. One card is clean and white, the other has visible dark particles stuck to its surface (a petroleum jelly particulate matter test). In the background, a suburban road with a few cars and trees lines one side. The Scout is examining the cards with a magnifying glass, looking fascinated by what they have collected."
+    },
+    {
+      "id": "water-treatment-facility",
+      "file": "req4.md",
+      "description": "An aerial-perspective illustration of a modern water treatment facility with large circular settling ponds and rectangular filter beds. The facility is surrounded by green trees and grass. A river flows alongside the facility. Clean water exits through an outflow pipe back toward the river. Blue sky with white clouds above. The illustration is clear and educational, showing the basic layout of how water is processed. Small labels or numbered markers indicate treatment stages."
+    },
+    {
+      "id": "erosion-prevention",
+      "file": "req5.md",
+      "description": "A hillside landscape showing several erosion control techniques in action. One section shows terraced farming with stone retaining walls and planted crops on each level. Another area shows newly planted ground cover vegetation holding soil on a slope. At the bottom of the hill, a riparian buffer of trees and shrubs lines a small stream. The contrast between a bare, eroding section of hill and the protected sections is visible. Bright, educational illustration style."
+    },
+    {
+      "id": "scout-soil-sample",
+      "file": "req5.md",
+      "description": "A Scout BSA member (around 13 years old, wearing work clothes — a t-shirt and jeans, not a Scout uniform since they are doing fieldwork) kneeling on a riverbank and carefully collecting a soil sample in a small clear container. The riverbank shows visible erosion — exposed roots, undercut soil layers, and sediment in the water. The Scout has a small field kit bag beside them. The scene shows a natural stream with trees along the opposite bank."
+    },
+    {
+      "id": "bald-eagle-recovery",
+      "file": "req6.md",
+      "description": "A majestic bald eagle soaring with outstretched wings over a forested river valley. The eagle is in sharp focus against a deep blue sky with scattered white clouds. Below, a healthy forest of mixed deciduous and conifer trees covers rolling hills, and a wide river winds through the valley. The scene conveys the triumph of species recovery — a once-endangered bird thriving in a healthy ecosystem. Golden sunlight illuminates the eagle's white head and tail feathers."
+    },
+    {
+      "id": "scout-habitat-restoration",
+      "file": "req6.md",
+      "description": "Three Scouts BSA members (ages 12-15, wearing work clothes since they are doing manual labor) planting native seedlings along a stream bank at a habitat restoration site. A natural resource professional in a green vest and wide-brimmed hat guides them. One Scout digs a hole, another holds a young tree, and a third waters a recently planted seedling. The stream bank shows signs of restoration — erosion control fabric, young plantings, and healthy soil. A sign reading 'Habitat Restoration Area' is visible."
+    },
+    {
+      "id": "reduce-reuse-recycle",
+      "file": "req7.md",
+      "description": "A Scout BSA member (around 13 years old, wearing a clean tan uniform shirt) standing next to a table with items organized into three groups. One group shows reduce items (reusable water bottle, cloth bag). Another shows reuse items (glass jar with craft supplies, repurposed cardboard box). The third shows recycle items (aluminum cans, paper, plastic bottles). Small handwritten labels identify each group. The Scout is gesturing toward the items, explaining the concept. Bright, indoor setting like a Scout meeting room."
+    },
+    {
+      "id": "pollinator-garden",
+      "file": "req8.md",
+      "description": "A vibrant pollinator garden in full bloom showing diverse native flowering plants. A large bumblebee is pollinating a purple coneflower (Echinacea) in the foreground. A monarch butterfly rests on orange milkweed nearby. A ruby-throated hummingbird hovers at a red trumpet vine in the background. Yellow black-eyed Susans, lavender bee balm, and white asters fill the middle ground. A small wooden bee hotel is visible at the edge of the garden. Warm summer sunlight bathes the scene."
+    },
+    {
+      "id": "scout-pollinator-observation",
+      "file": "req8.md",
+      "description": "A Scout BSA member (around 12 years old, wearing a clean tan uniform shirt) sitting very still on a low stool near a flower bed in a garden, watching a large honeybee visiting a bright yellow sunflower. The Scout has a notebook and pencil in hand, recording observations. Several types of pollinators are visible — a small butterfly on a nearby flower, a fly on another bloom. The Scout's expression is one of patient, careful observation. Late morning light creates warm tones."
+    },
+    {
+      "id": "invasive-species-examples",
+      "file": "req9.md",
+      "description": "A split-scene educational illustration. On the left, thick kudzu vines completely covering and smothering several trees, the trees barely visible beneath the green blanket of leaves. On the right, a cluster of spotted lanternflies with their distinctive gray forewings and red-and-black hindwings gathered on the trunk of a tree of heaven. A small informational label identifies each species. Clean illustration style with slightly dramatic lighting to convey the threat these species pose."
+    },
+    {
+      "id": "scout-camp-site-assessment",
+      "file": "req10.md",
+      "description": "A Scout BSA member (around 15 years old, wearing a clean tan uniform shirt) standing at the edge of a wooded clearing in a Scout camp. They hold a clipboard with paper and are surveying the terrain thoughtfully. The clearing has a mix of grass, a few mature trees, and a gentle slope. In the background, existing camp structures (a cabin, a flagpole) are visible through the trees. Stakes with orange flagging tape mark the corners of a potential building site. The Scout is imagining what a new building would mean for this spot."
+    },
+    {
+      "id": "environmental-careers-montage",
+      "file": "req11.md",
+      "description": "A four-panel illustration showing different environmental science careers. Top left: an environmental scientist in waders collecting water samples from a stream with test tubes and a field kit. Top right: an environmental engineer in a hard hat reviewing blueprints at a water treatment facility. Bottom left: a wildlife biologist using binoculars in a grassland with a bird banding station in the background. Bottom right: a park ranger in a green uniform talking to hikers on a scenic trail overlook. Each professional is diverse and engaged in their work."
+    },
+    {
+      "id": "citizen-science-collage",
+      "file": "extended-learning.md",
+      "description": "A Scout BSA member (around 14 years old, wearing a clean tan uniform shirt) crouching in a meadow and using a smartphone to photograph a purple wildflower for a citizen science app. The phone screen shows the iNaturalist-style identification interface. In the background, a bluebird is perched on a wooden fence post and a simple rain gauge is mounted nearby. The scene shows how technology and nature intersect in citizen science. Bright, optimistic lighting with a green meadow and blue sky."
+    }
+  ]
+}
