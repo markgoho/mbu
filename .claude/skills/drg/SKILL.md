@@ -473,6 +473,37 @@ For each page:
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
 - [ ] All YouTube video embeds verified via noembed (zero broken links)
 
+## Pull Request Workflow
+
+At the **start** of the workflow, check the current git branch:
+
+```bash
+git branch --show-current
+```
+
+If the branch is **not `trunk`** (e.g., working in a worktree or feature branch), assume the user wants a pull request opened at the end. After Phase 6 (Verification) passes:
+
+1. **Stage and commit** all guide files:
+   ```bash
+   git add hugo/content/merit-badges/{slug}/guide/
+   ```
+   Commit with message: `Add {Badge Title} Digital Resource Guide`
+
+2. **Push the branch** to the remote:
+   ```bash
+   git push -u origin HEAD
+   ```
+
+3. **Open a PR** against `trunk`:
+   ```bash
+   gh pr create --title "Add {Badge Title} Digital Resource Guide" --body "..."
+   ```
+   Use the standard PR body format with a summary of pages created, and include the `Generated with Claude Code` footer.
+
+4. **Share the PR URL** with the user.
+
+If the branch **is `trunk`**, do **not** commit or open a PR automatically — just notify the user that the guide is ready and ask if they'd like to commit.
+
 ## Smoke Testing (after build passes)
 
 Start the dev server (`bun run hugo:dev`) or build (`bun run build`) and verify:
