@@ -14,7 +14,7 @@ interface DrgManifest {
   images: DrgImage[];
 }
 
-const IMAGE_MODEL = "gemini-3-pro-image-preview";
+const IMAGE_MODEL = "gemini-3.1-flash-image-preview";
 const DELAY_MS = 1500;
 const MAX_RETRIES = 3;
 

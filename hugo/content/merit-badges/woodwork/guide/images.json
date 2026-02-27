@@ -1,0 +1,136 @@
+{
+  "badge": "woodwork",
+  "style_context": "woodworking, hand tools, workshop scenes, and carpentry projects",
+  "images": [
+    {
+      "id": "woodwork-workshop-overview",
+      "file": "_index.md",
+      "description": "A well-organized woodworking workshop with hand tools hanging on a pegboard wall — saws, chisels, mallets, and squares in neat rows. A sturdy hardwood workbench in the center has fresh wood shavings scattered across its surface. Natural light streams through large windows. The space is clean and inviting with warm wood tones throughout."
+    },
+    {
+      "id": "woodwork-joinery-closeup",
+      "file": "_index.md",
+      "description": "An extreme close-up photograph of beautifully crafted dovetail joints in light-colored maple hardwood, showing the precise interlocking fan-shaped tails and pins of the joint. The wood surfaces are smooth and the fit is tight with no visible gaps. Shot on a clean workbench with shallow depth of field."
+    },
+    {
+      "id": "scout-safety-glasses-workshop",
+      "file": "req1a.md",
+      "description": "Maya (14-year-old Black girl, tall, athletic, natural hair in two puffs) wearing clear ANSI-rated safety glasses and an N95 dust mask while standing at a sturdy wooden workbench in a woodworking workshop. She is wearing a clean tan Scout uniform shirt. Hand tools are neatly organized on a pegboard behind her. She looks focused and confident."
+    },
+    {
+      "id": "organized-tool-wall",
+      "file": "req1a.md",
+      "description": "A neatly organized pegboard wall in a woodworking workshop with hand saws, bench chisels with wooden handles, wooden mallets, hand planes, combination squares, and marking gauges hanging in labeled positions. Each tool has a painted outline showing where it belongs. The wall is well-lit with warm natural light from a nearby window."
+    },
+    {
+      "id": "workshop-first-aid-kit",
+      "file": "req1b.md",
+      "description": "A wall-mounted first aid kit cabinet in a woodworking workshop, with the white cabinet door open showing neatly organized supplies: adhesive bandages, sterile gauze pads, antiseptic wipes, fine-point tweezers, medical tape, an eye wash bottle, and disposable gloves. A workbench with hand tools is visible in the background. Clean, well-lit setting."
+    },
+    {
+      "id": "scout-dust-mask-sanding",
+      "file": "req1b.md",
+      "description": "James (13-year-old East Asian boy, average height, glasses, curious expression) wearing an N95 dust mask and safety glasses while hand-sanding a small wooden box project at a workbench. He is wearing a clean tan Scout uniform shirt. Fine dust particles are visible in a beam of warm sunlight streaming through a workshop window. A sheet of sandpaper is in his hands."
+    },
+    {
+      "id": "totin-chip-tool-safety",
+      "file": "req1c.md",
+      "description": "Three woods tools laid out neatly on a rustic wooden picnic table outdoors in a forest clearing: a folding pocketknife (closed, showing the handle), a bow saw with an orange frame, and a small hatchet with a leather blade sheath. Pine trees and dappled sunlight in the soft-focus background. Natural, earthy tones."
+    },
+    {
+      "id": "logging-truck-forest",
+      "file": "req2a.md",
+      "description": "A large logging truck loaded with freshly cut timber logs driving along a dirt forest road. Tall evergreen trees (Douglas fir or pine) line both sides of the road. Morning mist hangs in the air between the trees. The logs are stacked neatly and secured with chains. Overcast sky with soft, diffused light. Pacific Northwest forest atmosphere."
+    },
+    {
+      "id": "lumber-sticker-stacking",
+      "file": "req2a.md",
+      "description": "Freshly sawn hardwood lumber boards stacked in neat horizontal rows with thin wooden spacer sticks (stickers) between each layer for air drying. The stack is under a covered outdoor shelter at a lumber yard. Dappled sunlight falls across the end grain of the boards, showing different wood tones. The boards are clean and freshly cut."
+    },
+    {
+      "id": "wood-species-blocks",
+      "file": "req2b.md",
+      "description": "Six labeled blocks of different wood species arranged in a neat row on a clean workbench, showing distinct colors and grain patterns. From left to right: pale white pine, creamy maple, reddish cedar, golden oak, greenish poplar, and rich dark walnut. Each block has a small handwritten paper label card in front of it identifying the species. Natural workshop lighting."
+    },
+    {
+      "id": "lumberyard-hardwood-racks",
+      "file": "req2b.md",
+      "description": "Interior of a hardwood lumber dealer warehouse with tall vertical racks holding various species of hardwood boards organized by type. Handwritten species labels on the rack dividers read names like Oak, Maple, Cherry, and Walnut. The boards show different colors and widths. Warm overhead lighting illuminates the space. A few customers browse in the background."
+    },
+    {
+      "id": "hand-plane-shavings",
+      "file": "req3a.md",
+      "description": "A beautiful brass and rosewood hand plane (a No. 4 smoothing plane style) sitting on a hardwood workbench surrounded by thin, tightly curled wood shavings. The shavings are translucent and golden. A partially planed board of light-colored wood is visible beside the plane, showing the smooth surface left by the blade. Warm, directional workshop lighting."
+    },
+    {
+      "id": "tool-chest-organized",
+      "file": "req3a.md",
+      "description": "A traditional handmade wooden tool chest with the hinged lid open, revealing neatly organized hand tools inside. Chisels stand in a fitted rack, hand saws rest in thin dividers, hand planes sit on a lower shelf, and small tools like marking gauges and squares fill compartments. The chest is made of dark walnut or mahogany with dovetailed corners. Warm ambient workshop lighting."
+    },
+    {
+      "id": "chisel-sharpening-stone",
+      "file": "req3b.md",
+      "description": "Close-up of hands holding a woodworking bench chisel flat against a combination water stone (one side coarse, one side fine) mounted in a stone holder on a workbench. The chisel is held at a consistent 25-degree bevel angle. Water glistens on the stone surface. A small puddle of grey slurry is visible. The hands are steady and positioned correctly for sharpening."
+    },
+    {
+      "id": "sharpening-supplies-layout",
+      "file": "req3b.md",
+      "description": "A flat lay arrangement of sharpening supplies on a clean wooden workbench: a combination water stone in a rubber-base holder, a leather strop with green honing compound, a brass honing guide with a chisel clamped in it at an angle, a small bottle of honing oil, a flat diamond stone, and a folded shop towel. Everything arranged neatly with even spacing. Overhead view."
+    },
+    {
+      "id": "squaring-lumber-plane",
+      "file": "req4.md",
+      "description": "Ethan (12-year-old white boy, red hair, freckles, shorter and wiry, eager expression) using a jack plane on a board clamped in a woodworking front vise on a sturdy workbench. Thin wood shavings are curling away from the plane as he pushes it forward. He is wearing a clean tan Scout uniform shirt and safety glasses. Natural workshop lighting from a window. His posture shows proper planing technique."
+    },
+    {
+      "id": "scout-assembling-project",
+      "file": "req4.md",
+      "description": "Sofia (15-year-old Latina girl, medium build, long dark hair in a braid, calm and focused demeanor) carefully assembling a small wooden shelf project on a workbench. She is using a combination square to check that the corner joint is at exactly 90 degrees. A bottle of wood glue, a small claw hammer, and two bar clamps are nearby. She wears a clean tan Scout uniform shirt and safety glasses. Warm workshop lighting."
+    },
+    {
+      "id": "working-drawings-desk",
+      "file": "req5.md",
+      "description": "A neat set of hand-drawn woodworking project plans on graph paper spread out on a desk. The drawings show front and side views of a small bookshelf with labeled dimensions in inches. A metal ruler, a sharp pencil, an eraser, and a combination square are arranged beside the drawings. The plans look detailed and carefully drafted. Natural desk lamp lighting."
+    },
+    {
+      "id": "finished-wooden-shelf",
+      "file": "req5.md",
+      "description": "A completed handmade wooden bookshelf made of pine, sanded smooth with a clear satin polyurethane finish. The shelf has two sides, a top, a bottom, and two interior shelves. It sits against a white wall with a few colorful books placed on the shelves. Natural light from a nearby window highlights the warm golden wood grain. Simple, clean design."
+    },
+    {
+      "id": "coping-saw-curved-cut",
+      "file": "req6.md",
+      "description": "Close-up of Kai's hands (16-year-old Pacific Islander/mixed-race boy, broad-shouldered) using a coping saw to cut a curved decorative line in a piece of light-colored wood clamped in a bench vise. The thin saw blade follows a pencil line along a gentle S-curve. Small wood shavings and dust fall below the cut. He wears safety glasses. Warm workshop lighting."
+    },
+    {
+      "id": "mortise-tenon-joint",
+      "file": "req6.md",
+      "description": "A beautifully fitted mortise and tenon joint in light-colored white oak, partially assembled to show the rectangular tenon projecting from one piece and the matching rectangular mortise hole in the other piece. The joint is ready to be pushed together. The surfaces are clean and precise with sharp edges. Shot on a clean workbench with shallow depth of field and warm lighting."
+    },
+    {
+      "id": "wooden-toy-cars",
+      "file": "req6.md",
+      "description": "A collection of eight handmade wooden toy cars and trucks in various shapes — a sedan, a pickup truck, a fire engine, a race car, a school bus — all sanded perfectly smooth with rounded edges and finished with non-toxic paint in bright primary colors (red, blue, yellow, green). The toys are arranged in a casual group on a workbench. Simple, child-safe designs with no small parts."
+    },
+    {
+      "id": "cabinetmaker-workshop",
+      "file": "req7.md",
+      "description": "A professional cabinetmaker (adult man, 40s, wearing a canvas shop apron over a flannel shirt) in a well-equipped woodworking workshop examining a custom raised-panel cabinet door he is holding up. Large stationary power tools (table saw, jointer, drill press) are visible in the background along with organized lumber racks and several finished cabinet components. Professional, well-lit workshop setting."
+    },
+    {
+      "id": "finish-carpenter-installing-trim",
+      "file": "req7.md",
+      "description": "A finish carpenter (adult woman, 30s, wearing work clothes and knee pads) carefully installing white painted crown molding in a residential room with high ceilings. A portable compound miter saw on a folding stand is nearby. Precise trim work — baseboards, window casing, and door trim — is already completed along the walls. The room is bright with natural light."
+    },
+    {
+      "id": "wood-finishing-supplies",
+      "file": "extended-learning.md",
+      "description": "An assortment of wood finishing supplies arranged on a workbench: a tin of Danish oil with the lid off, a can of satin polyurethane, two natural bristle brushes of different widths, a folded tack cloth, sheets of fine-grit sandpaper (220 and 320), a pair of nitrile gloves, and a half-finished small wooden jewelry box showing the dramatic contrast between the finished side (warm golden tone) and the unfinished raw wood side."
+    },
+    {
+      "id": "cnc-router-cutting-wood",
+      "file": "extended-learning.md",
+      "description": "A CNC router machine in a modern workshop cutting an intricate decorative geometric pattern into a large flat piece of light-colored maple wood. The router head is in motion with a visible cutting bit. Wood chips and fine dust are collecting around the workpiece. The machine has a metal frame and gantry system. LED task lighting illuminates the cutting area. Modern, clean workshop environment."
+    }
+  ]
+}
