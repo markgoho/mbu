@@ -146,6 +146,7 @@ function injectLinks(
     while ((match = pattern.exec(text)) !== null) {
       const matchIndex = match.index;
       const matchText = match[1]; // The captured group
+      if (matchText === undefined) continue;
 
       // Skip if already inside a markdown link
       if (isInsideMarkdownLink(text, matchIndex)) {

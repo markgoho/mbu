@@ -142,8 +142,12 @@ console.log(`Found ${issues.length} issues\n`);
 // Group issues by type
 const issuesByType = issues.reduce(
   (acc, issue) => {
-    if (!acc[issue.type]) acc[issue.type] = [];
-    acc[issue.type].push(issue);
+    const existing = acc[issue.type];
+    if (existing === undefined) {
+      acc[issue.type] = [issue];
+    } else {
+      existing.push(issue);
+    }
     return acc;
   },
   {} as Record<string, ValidationIssue[]>,

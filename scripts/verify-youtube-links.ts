@@ -36,19 +36,19 @@ interface VerificationResult extends VideoEntry {
 function extractVideoId(url: string): string | null {
   // youtube.com/watch?v=ID
   const vMatch = url.match(/[?&]v=([^&\s"]+)/);
-  if (vMatch) return vMatch[1];
+  if (vMatch?.[1] !== undefined) return vMatch[1];
 
   // youtu.be/ID
   const shortMatch = url.match(/youtu\.be\/([^?\s"]+)/);
-  if (shortMatch) return shortMatch[1];
+  if (shortMatch?.[1] !== undefined) return shortMatch[1];
 
   // youtube.com/shorts/ID
   const shortsMatch = url.match(/youtube\.com\/shorts\/([^?\s"]+)/);
-  if (shortsMatch) return shortsMatch[1];
+  if (shortsMatch?.[1] !== undefined) return shortsMatch[1];
 
   // youtube.com/embed/ID
   const embedMatch = url.match(/youtube\.com\/embed\/([^?\s"]+)/);
-  if (embedMatch) return embedMatch[1];
+  if (embedMatch?.[1] !== undefined) return embedMatch[1];
 
   return null;
 }
@@ -99,13 +99,13 @@ async function scanFiles(globPattern: string): Promise<VideoEntry[]> {
     const lines = content.split("\n");
 
     for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
+      const line = lines[i]!;
       let match: RegExpExecArray | null;
 
       // Reset lastIndex for the global regex
       urlRegex.lastIndex = 0;
       while ((match = urlRegex.exec(line)) !== null) {
-        const url = match[1];
+        const url = match[1]!;
         const videoId = extractVideoId(url);
         if (!videoId) continue;
 
@@ -120,7 +120,7 @@ async function scanFiles(globPattern: string): Promise<VideoEntry[]> {
           line: i + 1,
           videoId,
           url,
-          shortcodeTitle: titleMatch ? titleMatch[1] : "(no title found)",
+          shortcodeTitle: titleMatch?.[1] ?? "(no title found)",
         });
       }
     }
@@ -233,7 +233,7 @@ async function main() {
     const byBadge = new Map<string, VerificationResult[]>();
     for (const r of broken) {
       const badgeMatch = r.file.match(/merit-badges\/([^/]+)\//);
-      const badge = badgeMatch ? badgeMatch[1] : "unknown";
+      const badge = badgeMatch?.[1] ?? "unknown";
       if (!byBadge.has(badge)) byBadge.set(badge, []);
       byBadge.get(badge)!.push(r);
     }

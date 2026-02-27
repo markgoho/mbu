@@ -1,6 +1,9 @@
 import { GoogleGenAI } from "@google/genai";
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { loadEnvFromRepoRoot } from "./lib/load-env-from-repo-root.ts";
+
+await loadEnvFromRepoRoot();
 
 // Constants
 const REFERENCE_IMAGE_PATH =
