@@ -13,6 +13,13 @@ next_title: "Req 5 — Shooting Options Overview"
 Explain the following:
 {{< /drg/requirement >}}
 
+This requirement covers four topics that every archer needs to understand:
+
+- **Ends and rounds** — how shooting is organized
+- **Field, target, and 3-D archery** — the three main formats
+- **World Archery five-color target scoring** — the Olympic-style target
+- **NFAA target scoring** — the field and indoor targets used in national competition
+
 ## Req 4a — Ends and Rounds
 
 {{< drg/requirement number="4a" >}}
