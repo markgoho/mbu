@@ -85,6 +85,24 @@ Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **co
 - If sub-requirements are thematically similar and short → **one page** (e.g., `req2.md` covering 2a–2c)
 - If sub-requirements are thematically distinct or lengthy → **separate pages** (e.g., `req1a.md`, `req1b.md`)
 
+### Umbrella Requirement Text
+
+Many top-level requirements have vague umbrella text like "Do the following:" or "Explain the following:" that only makes sense when accompanied by the list of sub-requirements. When a page displays such an umbrella requirement via the `drg/requirement` shortcode, **always add a brief intro paragraph immediately after the shortcode** that lists what topics the page covers (as a bulleted list or short narrative). This orients the reader and prevents the page from opening with a confusing standalone phrase. Example:
+
+```markdown
+{{</* drg/requirement number="4" */>}}
+Explain the following:
+{{</* /drg/requirement */>}}
+
+This requirement covers four topics that every archer needs to understand:
+
+- **Ends and rounds** — how shooting is organized
+- **Field, target, and 3-D archery** — the three main formats
+- ...
+```
+
+This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
+
 ### "Choose One" Option Requirements
 
 Some badges have a requirement that says "Complete ONE of the following options" with several large, self-contained options (e.g., Beef Cattle Option, Dairy Option, Horse Option). When each option has its own set of sub-requirements (a–f), prefer **separate pages per option** rather than combining all options onto a single page. This is better for both SEO and UX — a Scout working on the Beef Cattle option shouldn't have to scroll past five other animals.
@@ -476,6 +494,7 @@ For each page:
 - [ ] Page title is unique and matches sidebar nav link text
 - [ ] Group title (kicker) is set
 - [ ] Requirement text is exact (verbatim from `data.json`)
+- [ ] Umbrella requirements ("Do the following:", "Explain the following:") have an intro paragraph listing the sub-topics
 - [ ] Educational content teaches, doesn't give answers
 - [ ] Voice is age-appropriate (6th–8th grade)
 - [ ] 2–3 content element types used
