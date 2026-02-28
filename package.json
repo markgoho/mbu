@@ -15,10 +15,10 @@
     "verify:youtube-links": "bun scripts/verify-youtube-links.ts"
   },
   "devDependencies": {
-    "@google/genai": "^1.41.0",
-    "@mendable/firecrawl-js": "^4.12.1",
-    "@types/bun": "latest",
-    "firebase-tools": "^15.6.0",
+    "@google/genai": "^1.43.0",
+    "@mendable/firecrawl-js": "^4.15.0",
+    "@types/bun": "^1.3.9",
+    "firebase-tools": "^15.8.0",
     "js-yaml": "^4.1.1",
     "pagefind": "^1.4.0",
     "prettier": "^3.8.1",
