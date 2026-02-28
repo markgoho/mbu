@@ -1,0 +1,86 @@
+{
+  "badge": "aviation",
+  "style_context": "Aviation and flight — airplanes, helicopters, drones, cockpits, airports, and aerospace technology. Clear skies, technical diagrams, and the excitement of flight.",
+  "images": [
+    {
+      "id": "scout-watching-airplane",
+      "file": "_index.md",
+      "description": "A Scout in a clean BSA uniform standing in an open grassy field, shielding their eyes with one hand and looking up with excitement at a small single-engine Cessna airplane flying overhead against a bright blue sky with a few white clouds. The Scout is smiling. The scene is bright and inviting."
+    },
+    {
+      "id": "types-of-aircraft-lineup",
+      "file": "_index.md",
+      "description": "A panoramic illustration showing four types of aircraft side by side in separate panels against a blue sky: a white and blue commercial jetliner (Boeing 737), a small red and white single-engine Cessna, a military green helicopter (Black Hawk style), and a modern white quadcopter drone with a camera gimbal underneath. Each aircraft is in flight."
+    },
+    {
+      "id": "aircraft-types-comparison",
+      "file": "req1a.md",
+      "description": "Three panels showing different aircraft types: Left panel shows a white Cessna 172 in flight over green farmland. Center panel shows a red search-and-rescue helicopter hovering above a forest clearing with its rotor blades spinning. Right panel shows a modern DJI-style quadcopter drone with a camera, hovering at eye level against a clear sky."
+    },
+    {
+      "id": "wright-brothers-flight",
+      "file": "req1b.md",
+      "description": "An illustration in a warm, historical style showing the Wright Flyer biplane just after takeoff at Kitty Hawk, North Carolina. The wooden and fabric airplane is a few feet off the sandy ground with Orville Wright lying prone at the controls. Sand dunes and a gray winter sky are in the background. The scene evokes the momentous first powered flight of 1903."
+    },
+    {
+      "id": "fixed-vs-rotary-comparison",
+      "file": "req1c.md",
+      "description": "A side-by-side educational comparison. On the left, a Cessna 172 in level flight with blue arrows showing airflow streaming horizontally over the fixed wings from front to back. On the right, a helicopter hovering in place with blue arrows showing air being pushed downward through the spinning rotor blades. Both aircraft are shown against a light blue sky with simple, clear arrow annotations."
+    },
+    {
+      "id": "piston-engine-diagram",
+      "file": "req1d.md",
+      "description": "A simplified, colorful cutaway diagram of a four-cylinder horizontally opposed aircraft piston engine. The four cylinders are shown with pistons visible inside. The crankshaft runs through the center connecting to a two-blade propeller at the front. Key components are labeled with clean lines: cylinders, pistons, crankshaft, propeller, spark plugs. The style is educational and easy to read, like a textbook illustration."
+    },
+    {
+      "id": "four-forces-diagram",
+      "file": "req1e.md",
+      "description": "A clean educational diagram of a small single-engine airplane in level flight viewed from the side. Four large, color-coded arrows show the forces: a green arrow labeled LIFT pointing straight up from the wings, a red arrow labeled WEIGHT pointing straight down from the center of the aircraft, a blue arrow labeled THRUST pointing forward from the propeller, and an orange arrow labeled DRAG pointing backward from the tail. The background is a simple light blue sky."
+    },
+    {
+      "id": "airfoil-cross-section",
+      "file": "req1f.md",
+      "description": "A clean cross-section diagram of an airplane wing airfoil shape. The airfoil has a rounded leading edge on the left and a thin, pointed trailing edge on the right. The upper surface is noticeably more curved than the flatter lower surface. Thin blue streamlines show airflow passing over and under the airfoil, with the lines above being more closely spaced (indicating faster flow and lower pressure). Labels point out: leading edge, trailing edge, chord line (dashed), and indicate high pressure below and low pressure above."
+    },
+    {
+      "id": "control-surfaces-labeled",
+      "file": "req1g.md",
+      "description": "A three-quarter overhead view of a single-engine Cessna-style airplane showing all control surfaces clearly labeled with arrows. The ailerons are highlighted on the outer trailing edge of each wing. The elevator is highlighted on the horizontal tail. The rudder is highlighted on the vertical tail fin. Small red arrows show the direction each surface deflects. Flaps are also labeled on the inboard trailing edge of the wings. The style is clean and educational."
+    },
+    {
+      "id": "cockpit-instrument-panel",
+      "file": "req1h.md",
+      "description": "A front-facing view of a single-engine airplane instrument panel showing the classic six-pack arrangement of flight instruments. Top row from left: airspeed indicator, attitude indicator (artificial horizon showing blue sky and brown ground), altimeter. Bottom row from left: turn coordinator, heading indicator, vertical speed indicator. A magnetic compass is visible at the top of the windshield. Engine gauges are on the right side. The instruments have classic round faces with white markings on black backgrounds. The panel is well-lit and easy to read."
+    },
+    {
+      "id": "balsa-wood-airplane-build",
+      "file": "req2.md",
+      "description": "A Scout in clean casual clothes (not uniform) sitting at a well-lit workbench building a balsa wood rubber-band powered airplane. The partially assembled fuselage and wing are on the table. A rubber band, small propeller, glue bottle, craft knife, and sandpaper are arranged neatly nearby. The Scout is carefully attaching a wing to the fuselage. The scene is bright and focused, showing the craft and detail of model building."
+    },
+    {
+      "id": "discovery-flight-cockpit",
+      "file": "req3.md",
+      "description": "Interior view of a Cessna 172 cockpit during flight. A young Scout wearing a headset is seated in the left (pilot) seat with hands on the control yoke, looking out through the windshield at a runway and green landscape ahead. A flight instructor wearing a headset sits in the right seat, pointing at an instrument on the panel. Both are smiling. The instrument panel is visible with classic round gauges. The scene conveys the excitement of a first discovery flight."
+    },
+    {
+      "id": "airport-runway-aerial",
+      "file": "req4.md",
+      "description": "An aerial view of a small general aviation airport on a sunny day. Two intersecting runways are clearly visible with large white runway numbers painted on the pavement (18/36 and 09/27). Yellow taxiway lines connect the runways to a ramp area where several small aircraft are parked. A few hangars and a small control tower are visible. Green grass surrounds the runways. The perspective is from above at an angle, making the layout clear and educational."
+    },
+    {
+      "id": "cap-cadet-orientation-flight",
+      "file": "req5d.md",
+      "description": "Inside the cockpit of a Cessna, a Civil Air Patrol cadet in a blue CAP uniform and headset sits in the right seat, looking at the instruments with interest. A CAP senior member pilot in a blue flight suit and headset sits in the left seat, pointing out features on the instrument panel. The view through the windshield shows a clear sky above green terrain. The scene is professional and inspiring."
+    },
+    {
+      "id": "pilot-career-ladder",
+      "file": "req5c.md",
+      "description": "A visual infographic showing the pilot certification pathway as an ascending staircase or ladder. Five steps rise from bottom to top: Student Pilot (age 16), Private Pilot + Instrument Rating (age 17), Commercial Pilot (age 18), CFI — Certified Flight Instructor (age 18), and ATP — Airline Transport Pilot (age 23). Each step has a small icon: a student book, a small plane, a dollar sign, a teaching cap, and an airliner. The design is clean, modern, and easy to read."
+    },
+    {
+      "id": "aviation-careers-collage",
+      "file": "req5e.md",
+      "description": "A four-panel collage showing aviation professionals at work. Top left: an airline pilot in uniform sitting in the cockpit of a large commercial jet. Top right: an air traffic controller wearing a headset and looking at a green radar screen in a control tower. Bottom left: an aircraft mechanic in coveralls inspecting a turbine engine with tools in hand. Bottom right: an aerospace engineer in a lab coat reviewing technical blueprints of an aircraft wing design. Each panel is well-lit and professional."
+    }
+  ]
+}
