@@ -1,0 +1,81 @@
+{
+  "badge": "archery",
+  "style_context": "Archery — a precision sport involving bows and arrows, practiced on outdoor and indoor ranges. Scouts shooting recurve bows, compound bows, and longbows at targets. Equipment includes arrows, quivers, arm guards, and finger tabs.",
+  "images": [
+    {
+      "id": "scout-archery-range",
+      "file": "_index.md",
+      "description": "A Scout standing at an outdoor archery range with a recurve bow, targets visible downrange. Sunny day with trees in the background. The Scout wears a clean Scout uniform and is in a ready stance facing the targets."
+    },
+    {
+      "id": "3d-archery-course",
+      "file": "_index.md",
+      "description": "A foam deer target on a wooded 3-D archery course, surrounded by trees and natural terrain. Dappled sunlight filters through the canopy. The target is positioned in a natural clearing with a trail leading toward it."
+    },
+    {
+      "id": "archery-range-overview",
+      "file": "req1a.md",
+      "description": "An overhead view of a well-organized outdoor archery range showing the shooting line marked on the ground, target line with straw bale backstops, and open safety buffer zones. Green grass with clearly defined lanes."
+    },
+    {
+      "id": "archery-shooting-line",
+      "file": "req1b.md",
+      "description": "Several Scouts standing at the shooting line on an archery range, each aiming recurve bows at colorful round targets downrange. A range officer stands behind them observing. Clean Scout uniforms, outdoor setting."
+    },
+    {
+      "id": "range-officer-whistle",
+      "file": "req1c.md",
+      "description": "A range officer standing behind the shooting line holding a whistle, wearing a safety vest. Archers are visible at the shooting line in the background with targets downrange. Outdoor archery range setting."
+    },
+    {
+      "id": "arrow-retrieval-technique",
+      "file": "req1d.md",
+      "description": "Close-up of a Scout pulling an arrow from a round target using proper technique. One hand braces flat against the target face near the arrow, the other hand grips the arrow shaft close to the target. The Scout wears a clean uniform."
+    },
+    {
+      "id": "scout-researching-laws",
+      "file": "req1e.md",
+      "description": "A Scout sitting at a desk with a laptop open, researching archery laws. The Scout wears a clean uniform and has a notebook with handwritten notes beside the laptop. A printed regulation document is visible on the desk."
+    },
+    {
+      "id": "arrow-parts-diagram",
+      "file": "req2.md",
+      "description": "A detailed side view of a complete arrow laid on a clean wooden surface. The arrow shows all major parts clearly visible: the metal field point at the front, the aluminum shaft in the middle, three colorful plastic vanes near the back, and the plastic nock at the end."
+    },
+    {
+      "id": "archery-accessories",
+      "file": "req3.md",
+      "description": "A neat arrangement of archery accessories laid out on a wooden table for inspection: a leather finger tab, a black arm guard with straps, a three-finger shooting glove, and a hip quiver with several arrows. Clean, well-lit setting."
+    },
+    {
+      "id": "archery-formats-comparison",
+      "file": "req4.md",
+      "description": "A split scene showing three types of archery side by side: on the left, a colorful five-ring target on a flat open range for target archery; in the center, a paper target mounted on a foam bale in a wooded field course; on the right, a 3-D foam deer target on a wooded trail."
+    },
+    {
+      "id": "bow-type-comparison",
+      "file": "req5.md",
+      "description": "Three bow types displayed side by side vertically on a wooden rack: a traditional longbow on the left, a recurve bow in the center, and a modern compound bow with cams and cables on the right. Clean indoor setting with neutral background."
+    },
+    {
+      "id": "recurve-archer-full-draw",
+      "file": "req5-recurve-bow-or-longbow.md",
+      "description": "A Scout at full draw with a recurve bow on an outdoor archery range. The Scout demonstrates proper anchor point with fingers at the corner of the mouth, bow arm fully extended toward the target. Clean Scout uniform, focused expression."
+    },
+    {
+      "id": "compound-bow-closeup",
+      "file": "req5-compound-bow.md",
+      "description": "Close-up of a compound bow's upper cam system showing the cam pulley, cables, and bowstring. The limb and riser are visible. The bow is mounted on a stand against a neutral background, highlighting the mechanical components."
+    },
+    {
+      "id": "archer-mental-focus",
+      "file": "extended-learning.md",
+      "description": "A Scout at full draw on a calm, quiet archery range with eyes focused intently on the target. The scene conveys concentration and stillness. Late afternoon golden light, outdoor range with trees in the background, clean Scout uniform."
+    },
+    {
+      "id": "3d-archery-foam-target",
+      "file": "extended-learning.md",
+      "description": "A Scout on a wooded 3-D archery course, aiming a recurve bow at a foam elk target partially concealed by trees. Dappled sunlight filters through the forest canopy. The Scout wears a clean uniform and stands on a natural trail."
+    }
+  ]
+}
