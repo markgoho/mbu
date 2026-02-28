@@ -1,4 +1,5 @@
 {{ $number := .Get "number" }}
+{{ $option := .Get "option" }}
 {{ $isSub := findRE `[a-zA-Z]` $number }}
 {{ $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" }}
 <div class="{{ $class }}">
@@ -7,5 +8,6 @@
   {{ end }}
   <div class="drg-requirement__text">
     {{ $.Inner | markdownify }}
+    {{ with $option }}<strong>{{ . }}</strong>{{ end }}
   </div>
 </div>

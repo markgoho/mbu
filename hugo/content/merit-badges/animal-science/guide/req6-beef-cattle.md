@@ -9,11 +9,11 @@ next: "/merit-badges/animal-science/guide/req6-dairy/"
 next_title: "Req 6 — Dairy Option"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Beef Cattle Option" >}}
 Complete ONE of the following options:
 {{< /drg/requirement >}}
 
-**You have chosen the Beef Cattle Option.** This option covers beef production systems, facility design, meat cuts and grading, and industry terminology. Complete all four sub-requirements (a–d) below.
+This option covers beef production systems, facility design, meat cuts and grading, and industry terminology. Complete all four sub-requirements (a–d) below.
 
 ## Requirement 6a — Visit or Research a Beef Operation
 

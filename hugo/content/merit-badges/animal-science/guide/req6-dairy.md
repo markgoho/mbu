@@ -9,11 +9,11 @@ next: "/merit-badges/animal-science/guide/req6-horse/"
 next_title: "Req 6 — Horse Option"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Dairy Option" >}}
 Complete ONE of the following options:
 {{< /drg/requirement >}}
 
-**You have chosen the Dairy Option.** This option covers milk production biology, milk components, Grade A standards, dairy equipment, terminology, and visiting a dairy operation. Complete all six sub-requirements (a–f) below.
+This option covers milk production biology, milk components, Grade A standards, dairy equipment, terminology, and visiting a dairy operation. Complete all six sub-requirements (a–f) below.
 
 ## Requirement 6a — How Cows Convert Feed to Milk
 

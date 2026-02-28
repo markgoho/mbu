@@ -9,11 +9,11 @@ next: "/merit-badges/animal-science/guide/req6-hog/"
 next_title: "Req 6 — Hog Option"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Sheep or Goat Option" >}}
 Complete ONE of the following options:
 {{< /drg/requirement >}}
 
-**You have chosen the Sheep or Goat Option.** First, choose whether you want to focus on sheep or goats — then complete all five sub-requirements (a–e) below using your chosen animal.
+First, choose whether you want to focus on sheep or goats — then complete all five sub-requirements (a–e) below using your chosen animal.
 
 ## Requirement 6a — Wholesale and Retail Cuts
 

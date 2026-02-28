@@ -9,11 +9,11 @@ next: "/merit-badges/cycling/guide/req6b/"
 next_title: "Req 6b — Trail Biking Option"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Road Biking Option" >}}
 Using the Scouting America buddy system, complete all of the requirements for ONE of the following options: Road Biking OR Trail or Mixed Surface Biking.
 {{< /drg/requirement >}}
 
-**This page covers Option A — Road Biking.** If you prefer trail or mixed-surface riding, see [Req 6b — Trail Biking Option](/merit-badges/cycling/guide/req6b/). You only need to complete **one** of the two options.
+If you prefer trail or mixed-surface riding, see [Req 6b — Trail Biking Option](/merit-badges/cycling/guide/req6b/). You only need to complete **one** of the two options.
 
 {{< drg/safety-first >}}
 All rides for Requirement 6 must be done using the Scouting America buddy system. Never ride alone. Plan your routes in advance and share them with a responsible adult.

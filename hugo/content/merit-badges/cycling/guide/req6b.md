@@ -9,11 +9,11 @@ next: "/merit-badges/cycling/guide/extended-learning/"
 next_title: "Extended Learning"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Trail Biking Option" >}}
 Using the Scouting America buddy system, complete all of the requirements for ONE of the following options: Road Biking OR Trail or Mixed Surface Biking.
 {{< /drg/requirement >}}
 
-**This page covers Option B — Trail or Mixed Surface Biking.** If you prefer road riding, see [Req 6a — Road Biking Option](/merit-badges/cycling/guide/req6a/). You only need to complete **one** of the two options.
+If you prefer road riding, see [Req 6a — Road Biking Option](/merit-badges/cycling/guide/req6a/). You only need to complete **one** of the two options.
 
 {{< drg/did-you-know >}}
 This option can be completed using a mountain bike, gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If using a tandem, the Scout must actively power the cycle in concert with the other rider.

@@ -9,11 +9,11 @@ next: "/merit-badges/animal-science/guide/req6-avian/"
 next_title: "Req 6 — Avian Option"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Hog Option" >}}
 Complete ONE of the following options:
 {{< /drg/requirement >}}
 
-**You have chosen the Hog Option.** This option covers pork cuts and USDA grading, feeding programs, hands-on experience, and swine terminology. Complete all four sub-requirements (a–d) below.
+This option covers pork cuts and USDA grading, feeding programs, hands-on experience, and swine terminology. Complete all four sub-requirements (a–d) below.
 
 ## Requirement 6a — Pork Cuts and USDA Grading
 

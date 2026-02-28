@@ -9,11 +9,11 @@ next: "/merit-badges/animal-science/guide/req6-sheep-or-goat/"
 next_title: "Req 6 — Sheep or Goat Option"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Horse Option" >}}
 Complete ONE of the following options:
 {{< /drg/requirement >}}
 
-**You have chosen the Horse Option.** This option covers barn design, equine history, horse terminology and color patterns, visiting a horse farm, and equine nutrition. Complete all five sub-requirements (a–e) below.
+This option covers barn design, equine history, horse terminology and color patterns, visiting a horse farm, and equine nutrition. Complete all five sub-requirements (a–e) below.
 
 ## Requirement 6a — Horse Barn Design
 

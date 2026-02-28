@@ -9,11 +9,11 @@ next: "/merit-badges/animal-science/guide/req7/"
 next_title: "Req 7 — Careers in Animal Science"
 ---
 
-{{< drg/requirement number="6" >}}
+{{< drg/requirement number="6" option="Avian Option" >}}
 Complete ONE of the following options:
 {{< /drg/requirement >}}
 
-**You have chosen the Avian Option.** This option covers poultry housing design, overcrowding dangers, egg grading, chicken meat classes, hands-on flock experience, and poultry terminology. Complete all five sub-requirements (a–e) below.
+This option covers poultry housing design, overcrowding dangers, egg grading, chicken meat classes, hands-on flock experience, and poultry terminology. Complete all five sub-requirements (a–e) below.
 
 ## Requirement 6a — Poultry House Design
 

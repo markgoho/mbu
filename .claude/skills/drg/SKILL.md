@@ -94,6 +94,16 @@ Structure these as:
 - `req6.md` — Brief overview page explaining the Scout picks ONE option, with summaries and links to each
 - `req6-{option-slug}.md` — Full-detail page for each option (e.g., `req6-beef-cattle.md`, `req6-dairy.md`)
 
+On each option sub-page, use the `option` parameter on the `drg/requirement` shortcode to identify which option that page covers:
+
+```markdown
+{{</* drg/requirement number="6" option="Dairy Option" */>}}
+Complete ONE of the following options:
+{{</* /drg/requirement */>}}
+```
+
+This renders as "6. Complete ONE of the following options: **Dairy Option**" so the reader immediately knows which option they are viewing. The overview page (`req6.md`) should NOT use the `option` parameter.
+
 Use the `is_option` and option slug from `data.json` to derive filenames.
 
 ### Heading & SEO Rules
@@ -226,6 +236,10 @@ Use these Hugo shortcodes throughout the guide:
 ```markdown
 {{</* drg/requirement number="1a" */>}}
 Exact requirement text here.
+{{</* /drg/requirement */>}}
+
+{{</* drg/requirement number="6" option="Dairy Option" */>}}
+Complete ONE of the following options:
 {{</* /drg/requirement */>}}
 
 {{</* drg/safety-first */>}}
