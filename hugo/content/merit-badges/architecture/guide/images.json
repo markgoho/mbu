@@ -1,0 +1,71 @@
+{
+  "badge": "architecture",
+  "style_context": "Architecture merit badge — buildings, design, construction, sustainability, and architectural careers. Scenes should feature diverse Scouts (ages 11-17) in clean Scouting uniforms when Scouts appear. Use warm, inviting lighting and realistic settings. Educational and inspiring tone.",
+  "images": [
+    {
+      "id": "scout-examining-building",
+      "file": "_index.md",
+      "description": "A Scout (age 14, diverse appearance) standing on a sidewalk looking up at an interesting building facade with ornate architectural details. The Scout is wearing a clean Scout uniform and holds a sketchbook and pencil. Warm afternoon sunlight illuminates the building's stone columns and arched windows. The scene conveys curiosity and discovery."
+    },
+    {
+      "id": "institutional-buildings",
+      "file": "_index.md",
+      "description": "A panoramic view of a row of notable institutional buildings on a tree-lined street: a neoclassical library with tall columns, a modern school with large glass windows and clean geometric lines, and a hospital with a welcoming entrance. Blue sky with light clouds overhead. The buildings demonstrate different architectural styles coexisting in a community."
+    },
+    {
+      "id": "architecture-styles-collage",
+      "file": "_index.md",
+      "description": "A visual comparison showing four different architectural styles arranged in a grid: a Greek Revival building with white columns and a triangular pediment (top left), a modern glass skyscraper reflecting the sky (top right), a Gothic cathedral with pointed arches and flying buttresses (bottom left), and a Frank Lloyd Wright prairie-style home with horizontal lines and wide overhanging eaves (bottom right). Each building is photographed in warm natural light."
+    },
+    {
+      "id": "architectural-styles-guide",
+      "file": "req1a.md",
+      "description": "An educational illustration showing six different American architectural styles side by side as small building facades: a symmetrical Colonial home with centered door, an ornate colorful Victorian with turret, a low Craftsman bungalow with wide porch, an Art Deco building with geometric zigzag patterns, a Mid-Century Modern house with flat roof and large windows, and a Contemporary building with angular glass walls. Each is labeled with its style name. Clean, clear illustration style suitable for a study guide."
+    },
+    {
+      "id": "scout-sketching-building",
+      "file": "req1a.md",
+      "description": "A Scout (age 13, diverse appearance) sitting on a park bench with a sketchbook open on their lap, carefully drawing a historic brick building visible in the background. The Scout wears a clean Scout uniform and concentrates on capturing the building's arched windows and decorative cornice. A pencil case sits on the bench beside them. Warm natural lighting, peaceful neighborhood setting."
+    },
+    {
+      "id": "historical-achievements-montage",
+      "file": "req1b.md",
+      "description": "A montage of four famous architectural achievements arranged in a grid: the Roman Colosseum with its tiered arches (top left), a Gothic cathedral with soaring flying buttresses and stained glass windows (top right), the Eiffel Tower against a blue sky (bottom left), and the Sydney Opera House with its distinctive white shell-shaped roofs on the harbor (bottom right). Each image is vivid and dramatic, showcasing the grandeur of these structures."
+    },
+    {
+      "id": "green-building-features",
+      "file": "req2.md",
+      "description": "A cutaway diagram illustration of a modern green building showing labeled sustainable features: solar panels on the roof, a section of green roof with growing plants, a rainwater collection barrel connected to downspouts, large south-facing windows for natural lighting, thick insulation visible in a cross-section of the wall, and a ground-source heat pump system underground. The illustration uses a clean, educational style with clear labels and arrows pointing to each feature. Light blue sky background."
+    },
+    {
+      "id": "adaptive-reuse-example",
+      "file": "req2.md",
+      "description": "A split-image before-and-after comparison of adaptive reuse: on the left, an old red brick industrial warehouse with boarded-up windows and a faded painted sign, looking abandoned but structurally sound. On the right, the same building transformed into a vibrant community space with new large windows, outdoor café seating under string lights, potted plants and greenery along the entrance, and people walking in and out. The brick exterior is preserved but cleaned and restored. Warm evening lighting on the 'after' side."
+    },
+    {
+      "id": "construction-site-overview",
+      "file": "req3.md",
+      "description": "An active construction site showing a partially completed commercial building with exposed steel framing and concrete floors. In the foreground, a professional architect wearing a hard hat and safety vest stands at a portable table with rolled construction drawings spread out, pointing at details on the blueprints while explaining something. Construction equipment and building materials are visible in the background. Workers in hard hats can be seen working on upper levels. Clear day, professional atmosphere, emphasis on safety gear."
+    },
+    {
+      "id": "scout-measuring-room",
+      "file": "req4.md",
+      "description": "A Scout (age 15, diverse appearance) in a clean Scout uniform kneeling in a well-lit bedroom, using a long tape measure to measure the width of a wall from corner to corner. A notepad with measurements written on it and a pencil sit on the hardwood floor nearby. The room has a window, a door, and a small closet — typical features a Scout would need to include in a floor plan. Natural light comes through the window. The Scout is focused and careful."
+    },
+    {
+      "id": "floor-plan-example",
+      "file": "req4.md",
+      "description": "A clean, neatly hand-drawn floor plan on graph paper viewed from above on a desk. The floor plan shows a rectangular bedroom with double-line walls, a door with a quarter-circle swing arc, two windows shown as three parallel lines in the wall, a closet with a sliding door, and a built-in bookshelf along one wall. Dimension lines with measurements are marked along the walls. A title block in the bottom-right corner shows a name, date, room name (Bedroom), and scale (1/4 inch = 1 foot). A mechanical pencil and ruler lie beside the graph paper."
+    },
+    {
+      "id": "architecture-careers",
+      "file": "req5.md",
+      "description": "A four-panel illustration showing different architecture career professionals at work: an architect leaning over a desk reviewing detailed building blueprints with a computer showing 3D models behind them (top left), a landscape architect outdoors sketching a park design on a clipboard with trees and paths in the background (top right), an interior designer holding fabric and material samples while standing in a modern room (bottom left), and an urban planner presenting a large city zoning map on a wall to colleagues (bottom right). Each professional is depicted as diverse and engaged in their work. Clean, professional illustration style."
+    },
+    {
+      "id": "architect-tools-evolution",
+      "file": "extended-learning.md",
+      "description": "A visual timeline showing the evolution of architecture tools arranged left to right on a long wooden desk: on the far left, traditional hand drafting tools including a T-square, triangular scale ruler, compass, French curves, and fine-point mechanical pencils on a tilted drafting table. In the middle, a 1990s-era CAD workstation with a bulky CRT monitor showing wireframe drawings and a digitizing tablet. On the far right, a modern setup with a large curved monitor displaying colorful BIM software with a 3D building model, and a small white 3D-printed architectural model sitting on the desk beside it. Warm studio lighting, clean organized workspace."
+    }
+  ]
+}
