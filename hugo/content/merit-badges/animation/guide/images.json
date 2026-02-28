@@ -1,0 +1,51 @@
+{
+  "badge": "animation",
+  "style_context": "Animation and digital art, featuring Scouts engaged in creative activities with drawing tools, computers, and animation equipment. Bright, colorful, and inspiring.",
+  "images": [
+    {
+      "id": "scout-animation-desk",
+      "file": "_index.md",
+      "description": "A Scout (age 13-14, wearing a clean Scout uniform shirt) sitting at a desk with a drawing tablet and laptop, enthusiastically sketching an animated character on the screen. The desk has colored pencils and a small stack of paper. The room is well-lit and creative-looking with art posters on the wall."
+    },
+    {
+      "id": "kinds-of-animation-collage",
+      "file": "_index.md",
+      "description": "A split-panel collage showing five animation styles side by side: a hand-drawn pencil sketch of a cartoon character on paper, a clay stop-motion figure of a small animal on a miniature set, a colorful 2D digital character displayed on a tablet screen, a 3D CGI robot model with visible wireframe overlay, and a motion graphics title card with animated geometric text. Each panel is cleanly separated."
+    },
+    {
+      "id": "persistence-of-vision-frames",
+      "file": "req1a.md",
+      "description": "An educational diagram showing six simple drawings of a bouncing ball in slightly different positions arranged in a horizontal sequence. Arrows between each frame show progression. The ball is squashed at the bottom position and stretched at the top, with faint dotted arc lines showing the path of motion. Clean white background with clear labels."
+    },
+    {
+      "id": "animation-timeline",
+      "file": "req1b.md",
+      "description": "An illustrated horizontal timeline spanning from the 1830s to the present day, showing key milestones in animation history. Includes small illustrations at each milestone: a zoetrope device in the 1830s, a hand-drawn film frame from the early 1900s, Mickey Mouse in the 1930s, a computer-animated 3D character in the 1990s, and a modern digital tablet with animation software today. Clean infographic style with dates clearly labeled."
+    },
+    {
+      "id": "squash-stretch-bounce",
+      "file": "req2.md",
+      "description": "A clear educational diagram showing the squash and stretch animation principle using a bouncing ball. The ball is shown in five positions along a bouncing arc: normal shape at the top, stretched vertically as it falls, squashed flat at the moment of ground impact, stretched again as it bounces up, and normal at the peak. Faint guide lines show the arc path. Clean white background."
+    },
+    {
+      "id": "animation-techniques-tools",
+      "file": "req3.md",
+      "description": "A creative workspace layout showing tools for different animation techniques side by side: a small flipbook pad with a pencil and visible sequential drawings on the pages, a smartphone mounted on a small tripod aimed at colorful LEGO figures arranged in a scene, a drawing tablet displaying 2D animation software with a character sketch, and paper cutout shapes of animals and trees arranged on a flat surface. Warm natural lighting."
+    },
+    {
+      "id": "animation-studio-workspace",
+      "file": "req4a.md",
+      "description": "A professional animation studio workspace with a large monitor displaying a colorful 3D character model in progress. A drawing tablet sits beside the monitor. A corkboard on the wall behind is covered with reference photos and concept art sketches. A shelf nearby holds small character figurines, art books, and a desk lamp. The workspace feels creative and organized."
+    },
+    {
+      "id": "future-animation-applications",
+      "file": "req4b.md",
+      "description": "A futuristic four-panel collage showing animation in different fields: a doctor examining an animated 3D holographic organ model floating above a table, a student interacting with a life-sized animated dinosaur through an augmented reality tablet, a person wearing a VR headset immersed in a vividly animated colorful virtual world, and an architect walking through a translucent animated building model. Modern and optimistic color palette."
+    },
+    {
+      "id": "animation-career-roles",
+      "file": "req5.md",
+      "description": "Three side-by-side panels showing different animation careers: a character animator working at a drawing tablet with a digital character on screen showing expressive poses, a storyboard artist sketching sequential comic-like panels on a large drawing board with colored markers nearby, and a 3D modeler sculpting a detailed virtual character on a dual-monitor setup with a 3D software interface visible. Each person appears focused and professional."
+    }
+  ]
+}
