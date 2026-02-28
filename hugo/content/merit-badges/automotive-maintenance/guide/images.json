@@ -1,0 +1,226 @@
+{
+  "badge": "automotive-maintenance",
+  "style_context": "Automotive maintenance, vehicle repair, garage and shop environments. Clean, educational illustrations showing Scouts learning about cars, engines, and vehicle systems. Technical diagrams should be clear and well-labeled.",
+  "images": [
+    {
+      "id": "scout-under-hood",
+      "file": "_index.md",
+      "description": "A Scout in clean work clothes (not a Scout uniform) looking under the open hood of a modern sedan in a well-lit, organized home garage. An adult mentor stands nearby, pointing at the engine and explaining something. The garage is clean with tools organized on a pegboard wall. Natural lighting comes from the open garage door. The Scout looks engaged and curious."
+    },
+    {
+      "id": "maintenance-types-garage",
+      "file": "_index.md",
+      "description": "A clean, well-organized home garage set up for vehicle maintenance. A car is safely raised on heavy-duty jack stands on a flat concrete floor. A red rolling tool chest sits against one wall. On a workbench, maintenance supplies are neatly arranged: oil bottles, filters, a drain pan, and a funnel. A fire extinguisher hangs on the wall. Bright overhead LED shop lights illuminate the space."
+    },
+    {
+      "id": "obd-scanner",
+      "file": "_index.md",
+      "description": "Close-up of hands holding a handheld OBD-II diagnostic scanner with a small LCD screen displaying a trouble code. The scanner is plugged into the vehicle's OBD-II port located under the dashboard near the steering column. The dashboard and steering wheel are partially visible in the background. The screen shows a code like P0301 with a brief description."
+    },
+    {
+      "id": "shop-safety-overview",
+      "file": "req1a.md",
+      "description": "A well-organized garage workspace focused on safety equipment. Visible elements include: a red fire extinguisher mounted on the wall near the exit, heavy-duty jack stands supporting a car, safety glasses and nitrile gloves laid out on a clean workbench, a clearly marked first-aid kit with a red cross on the wall, and a bright drop light illuminating the work area. The floor is clean concrete with no oil stains."
+    },
+    {
+      "id": "ppe-lineup",
+      "file": "req1b.md",
+      "description": "Personal protective equipment for automotive work laid out neatly on a clean wooden workbench. Items displayed in a row: clear safety glasses with side shields, a pair of blue nitrile disposable gloves, a pair of heavier black mechanic's gloves, orange foam ear plugs, and a pair of brown steel-toe work boots. Each item is clearly visible and identifiable. Clean, well-lit photo-style composition."
+    },
+    {
+      "id": "jack-stands-safety",
+      "file": "req1b.md",
+      "description": "A sedan properly supported on two heavy-duty red jack stands on a flat concrete garage floor. Yellow wheel chocks are visible behind the rear tires. A hydraulic floor jack is set to the side, lowered and out of the way. The setup demonstrates the correct and safe way to support a vehicle for work underneath. The garage is well-lit with clean surroundings."
+    },
+    {
+      "id": "vehicle-power-types",
+      "file": "req1c.md",
+      "description": "An educational illustration showing five different vehicle power types side by side: a gasoline sedan, a diesel pickup truck, a hybrid SUV with a visible hybrid badge, a battery electric car plugged into a charging station, and a hydrogen fuel cell vehicle with a visible hydrogen emblem. Each vehicle has a small label beneath identifying its power type. Clean dealership-lot style background."
+    },
+    {
+      "id": "high-voltage-warning",
+      "file": "req1c.md",
+      "description": "Close-up under the hood of a hybrid vehicle showing bright orange high-voltage cables and a connector. A yellow high-voltage warning triangle sticker is clearly visible on a component near the cables. The orange color stands out against the darker engine bay components. The image conveys the message: do not touch these orange components."
+    },
+    {
+      "id": "owners-manual-schedule",
+      "file": "req1e.md",
+      "description": "An open vehicle owner's manual lying flat on a kitchen table, showing a maintenance schedule chart page. The chart has rows for different services and columns for mileage intervals with checkmarks. A young person's hand points at a specific service interval on the chart. A pen and a pair of reading glasses sit beside the manual. Warm indoor lighting."
+    },
+    {
+      "id": "seatbelt-airbag-diagram",
+      "file": "req1e.md",
+      "description": "A clear educational diagram showing a vehicle's interior safety restraint systems. A three-point seat belt is shown properly positioned across the chest and lap of a seated figure. Frontal airbag deployment zones are highlighted in the steering wheel and dashboard area. Side curtain airbag zones are shown along the ceiling edge. Labels point to each safety component. Clean, technical illustration style."
+    },
+    {
+      "id": "inspection-sticker",
+      "file": "req1g.md",
+      "description": "A mechanic in a blue work uniform applying a vehicle inspection sticker to the lower corner of a car's windshield at a service station. An inspection report is visible on a clipboard resting on the dashboard. The service bay is clean and well-lit with automotive tools and equipment visible in the background."
+    },
+    {
+      "id": "under-hood-fluids",
+      "file": "req2a.md",
+      "description": "A labeled educational illustration of a typical car engine bay viewed from above with the hood open. Clear callout labels point to the locations of: the engine oil dipstick (yellow handle), coolant reservoir (translucent tank), brake fluid reservoir (small container near the firewall), power steering reservoir, windshield washer fluid reservoir (large container with windshield icon), and the battery. Each label is connected by a line to its component. Clean, diagram-style illustration."
+    },
+    {
+      "id": "checking-oil-dipstick",
+      "file": "req2a.md",
+      "description": "Close-up of a Scout's gloved hands (wearing blue nitrile gloves) pulling out an engine oil dipstick from the engine bay. The dipstick has a bright yellow handle. Oil is visible on the flat end of the dipstick between the minimum and maximum marks. A clean rag is held in the other hand. The engine bay is visible but blurred in the background."
+    },
+    {
+      "id": "fuse-box-inspection",
+      "file": "req2b.md",
+      "description": "A Scout using a small plastic fuse puller tool to carefully remove a blade-type fuse from a vehicle's interior fuse box located under the dashboard. The fuse box cover panel is open, and a fuse diagram is printed on the inside of the cover showing the location and amperage of each fuse. Colorful fuses (red, blue, yellow) are visible in their slots. Interior car lighting illuminates the scene."
+    },
+    {
+      "id": "belt-hose-inspection",
+      "file": "req2b.md",
+      "description": "A gloved hand gently squeezing a radiator hose in the engine bay to check its condition. The hose appears firm and flexible. In the background, the serpentine belt is visible wrapped around multiple pulleys including the alternator and water pump. The engine bay is clean and well-lit. The focus is on the hose being squeezed with the belt system visible behind."
+    },
+    {
+      "id": "light-check-helper",
+      "file": "req2d.md",
+      "description": "Two Scouts checking vehicle lights together as a team. One Scout sits in the driver's seat operating the headlight controls on the dashboard. The other Scout stands behind the vehicle, clearly visible through the rear window, giving a thumbs-up as both red brake lights illuminate brightly. The scene takes place in a driveway during the daytime."
+    },
+    {
+      "id": "air-filter-inspection",
+      "file": "req2d.md",
+      "description": "A Scout holding up a used engine air filter toward a bright light source to check its condition. The filter shows some gray discoloration from use. On the car's fender beside the Scout, a brand new clean white air filter sits in its packaging for comparison. The air filter housing is open on the engine behind them. Garage setting with good lighting."
+    },
+    {
+      "id": "instrument-cluster-labeled",
+      "file": "req3.md",
+      "description": "A modern vehicle instrument cluster with a clear educational overlay. Labeled callout arrows point to each gauge: fuel gauge (with F and E markings), speedometer (showing MPH), tachometer (showing RPM x1000), oil pressure indicator, and engine temperature gauge (with C and H markings). The dashboard is illuminated with a blue-white backlight. Clean, diagram-style presentation."
+    },
+    {
+      "id": "driver-info-center",
+      "file": "req3.md",
+      "description": "A close-up of a modern vehicle's driver information center — a small digital screen in the center of the instrument cluster. The screen displays a maintenance reminder message that reads 'Oil Life: 15% — Service Soon' along with trip computer data showing miles to empty and average MPG. The surrounding gauges (speedometer and tachometer) are partially visible around the screen. Dashboard is illuminated."
+    },
+    {
+      "id": "tire-sidewall-reading",
+      "file": "req4a.md",
+      "description": "Close-up of a tire sidewall with an educational overlay. Callout arrows point to and label each part of the tire size code: P (passenger), 215 (width in mm), 65 (aspect ratio), R (radial), 16 (rim diameter), 98 (load index), and T (speed rating). The DOT date code is also highlighted. The tire is clean and the markings are clearly legible. White arrows and labels on a clean background."
+    },
+    {
+      "id": "checking-tire-pressure",
+      "file": "req4a.md",
+      "description": "A Scout kneeling beside a vehicle tire on a driveway, pressing a tire pressure gauge firmly onto the tire's valve stem. The gauge dial shows a pressure reading. In the background, slightly out of focus, the driver's door is open showing the door jamb tire information sticker. The Scout wears casual clothes and looks focused on getting an accurate reading."
+    },
+    {
+      "id": "alignment-angles-diagram",
+      "file": "req4c.md",
+      "description": "A clear three-panel educational diagram showing the three wheel alignment angles. Left panel: Camber — front view of a tire showing it tilting inward (negative) and outward (positive) from vertical, with labeled arrows. Center panel: Caster — side view showing the steering axis tilting forward (negative) and backward (positive), with labeled arrows. Right panel: Toe — top-down bird's-eye view showing tire fronts pointing inward (toe-in) and outward (toe-out), with labeled arrows. Clean technical illustration style with minimal colors."
+    },
+    {
+      "id": "four-stroke-cycle",
+      "file": "req5a.md",
+      "description": "A four-panel educational diagram showing the four strokes of an internal combustion engine. Panel 1 (Intake): piston moving down with intake valve open and air-fuel mixture entering, labeled 'Intake'. Panel 2 (Compression): piston moving up with both valves closed, mixture being compressed, labeled 'Compression'. Panel 3 (Power): spark plug firing, explosion pushing piston down, labeled 'Power'. Panel 4 (Exhaust): piston moving up with exhaust valve open, gases exiting, labeled 'Exhaust'. Clean, colorful technical illustration."
+    },
+    {
+      "id": "hybrid-powertrain-diagram",
+      "file": "req5a.md",
+      "description": "A simplified top-down diagram of a hybrid vehicle showing the key powertrain components: a gasoline engine in the front, an electric motor connected between the engine and transmission, a battery pack under the rear seats or floor, and the wheels. Colored arrows indicate energy flow: red arrows for engine power, blue arrows for electric power, and green arrows for regenerative braking energy returning to the battery. Each component is clearly labeled."
+    },
+    {
+      "id": "oil-bottle-labels",
+      "file": "req5b.md",
+      "description": "Close-up of a bottle of engine oil (like a quart bottle of 5W-30 synthetic oil) with educational callout arrows pointing to key label elements. One arrow points to the API donut certification mark showing the API service category in the top half, SAE viscosity grade in the center, and Resource Conserving designation in the bottom. Another arrow points to the SAE 5W-30 viscosity designation on the front label. Clean, informational composition."
+    },
+    {
+      "id": "coolant-types",
+      "file": "req6.md",
+      "description": "Three different bottles of antifreeze/coolant sitting on a clean workbench: one with bright green liquid (IAT type), one with orange liquid (OAT type), and one with yellow liquid (HOAT type). Behind the bottles, a vehicle with its hood open shows the translucent coolant overflow reservoir. The bottles are clearly different colors to illustrate the different coolant formulations. Clean, well-lit garage setting."
+    },
+    {
+      "id": "coolant-flush-drain",
+      "file": "req6.md",
+      "description": "A black drain pan positioned under a radiator, catching old greenish coolant flowing from the open radiator petcock (drain valve). A gloved hand operates the small valve. The underside of the front of the vehicle is visible above the drain pan. The scene takes place on a clean concrete garage floor with good lighting. The flowing coolant is clearly visible against the black pan."
+    },
+    {
+      "id": "air-fuel-system-diagram",
+      "file": "req7.md",
+      "description": "A simplified educational diagram showing how air and fuel travel to the engine. The air path is shown in light blue: outdoor air enters the air intake opening, passes through the air filter (shown as a rectangular element), flows through the intake manifold, and into the cylinder. The fuel path is shown in orange: fuel from the tank travels through the fuel pump, through the fuel filter, and to the fuel injectors at the cylinder. Both paths converge at the combustion chamber. Clean, labeled technical illustration."
+    },
+    {
+      "id": "ecu-sensor-network",
+      "file": "req7.md",
+      "description": "A diagram showing the Engine Control Unit (ECU) as a central box with labeled connection lines radiating outward to various sensors positioned around a simplified engine outline. Sensors shown include: Mass Airflow Sensor (MAF), Throttle Position Sensor (TPS), Oxygen Sensors (O2) in the exhaust, Coolant Temperature Sensor, Crankshaft Position Sensor, and Fuel Injectors. Each sensor and the ECU are clearly labeled. Clean technical illustration with a light background."
+    },
+    {
+      "id": "starting-charging-diagram",
+      "file": "req8a.md",
+      "description": "A clean, labeled educational diagram of a vehicle's starting and charging system. Components shown and labeled: battery (rectangular with + and - terminals), starter motor with solenoid attached (near the bottom of the engine), alternator (on the front of the engine with belt), ignition switch (at the dashboard), and voltage regulator. Red wires show positive connections, black wires show ground connections. Arrows indicate the direction of electrical current flow. Clean technical illustration on a light background."
+    },
+    {
+      "id": "lighting-system-diagram",
+      "file": "req8a.md",
+      "description": "A labeled educational diagram of a vehicle's lighting system. Components shown: battery, fuse box with individual fuses, headlight switch on the dashboard, headlight relay, dimmer switch (on steering column stalk), and headlight assemblies (left and right). Wires connect the components in a circuit. Power flow arrows show current from battery through fuse to switch to relay to headlights and back to ground. Clean, simple technical illustration."
+    },
+    {
+      "id": "spark-plug-gap",
+      "file": "req8b.md",
+      "description": "Close-up of a single spark plug against a clean background. Labeled callout arrows point to three key parts: the center electrode (the thin rod in the middle), the ground electrode (the curved metal arm), and the gap between them (the small space where the spark jumps). A round wire-type gap gauge tool is positioned next to the spark plug, showing the correct gap measurement. Clean, educational product-photo style."
+    },
+    {
+      "id": "jumper-cable-connection",
+      "file": "req8d.md",
+      "description": "A clear educational diagram showing two cars facing each other with jumper cables connected in the correct order. The dead battery car is on the left, the good battery car on the right. Red cables connect positive terminal to positive terminal. The black cable connects from the good battery's negative terminal to a metal bracket on the dead car's engine block (NOT to the battery). Numbered labels (1, 2, 3, 4) show the connection order. Battery terminals are marked + and -. Clean, overhead-angle technical illustration."
+    },
+    {
+      "id": "jump-start-action",
+      "file": "req8d.md",
+      "description": "Two Scouts and an adult mentor in a parking lot jump-starting a car. One Scout is connecting the black jumper cable clamp to a metal bracket on the engine block of the car with the dead battery. The other Scout stands near the good car, monitoring the connection. The adult watches from a safe distance, supervising. Both car hoods are open. Red and black jumper cables stretch between the vehicles. Daytime, outdoor parking lot setting."
+    },
+    {
+      "id": "ev-charging-levels",
+      "file": "req8e.md",
+      "description": "A three-panel illustration showing the three levels of electric vehicle charging. Left panel (Level 1): a car in a home garage plugged into a standard household wall outlet with a portable charging cord. Center panel (Level 2): a car in a driveway connected to a wall-mounted home charging station (EVSE) with a dedicated 240V outlet visible. Right panel (Level 3/DC Fast): a car at a commercial fast-charging station with a large pedestal charger. Each panel is labeled with the level number and approximate charging speed."
+    },
+    {
+      "id": "drive-train-diagram",
+      "file": "req9a.md",
+      "description": "A top-down transparent diagram of a rear-wheel-drive vehicle showing the complete drivetrain power flow. Labeled components include: engine (front), transmission (behind engine), drive shaft (running lengthwise down the center), universal joints (at each end of the drive shaft), differential (at the rear axle), and axle shafts going to each rear wheel. Arrows show the direction of power flow from front to rear. The front wheels are shown without power connection. Clean technical illustration on a light background."
+    },
+    {
+      "id": "transmission-types",
+      "file": "req9a.md",
+      "description": "A side-by-side comparison illustration showing two transmission types. On the left: a cutaway of a manual transmission with visible gear sets, shift fork, and clutch disc, labeled 'Manual Transmission.' On the right: a cutaway of an automatic transmission with the torque converter, planetary gear set, and clutch packs visible, labeled 'Automatic Transmission.' Both are rendered in a clean, educational technical illustration style with key internal parts labeled."
+    },
+    {
+      "id": "drive-configurations",
+      "file": "req9c.md",
+      "description": "A three-panel top-down diagram showing different drive configurations. Left panel (FWD): front wheels shaded in blue with power arrows pointing to them, rear wheels unshaded, engine and transaxle at front, labeled 'Front-Wheel Drive.' Center panel (RWD): rear wheels shaded in blue, drive shaft visible running to rear differential, labeled 'Rear-Wheel Drive.' Right panel (4WD/AWD): all four wheels shaded in blue, transfer case visible in center with power going to both axles, labeled 'Four-Wheel Drive.' Clean technical illustration."
+    },
+    {
+      "id": "disc-vs-drum-brakes",
+      "file": "req10.md",
+      "description": "A side-by-side educational comparison. Left side: cutaway of a disc brake system showing the rotor (flat metal disc), caliper straddling the rotor, brake pad pressed against the rotor surface, and hydraulic piston, labeled 'Disc Brake.' Right side: cutaway of a drum brake system showing the hollow drum, two curved brake shoes inside pressing outward against the drum's inner surface, wheel cylinder, and return springs, labeled 'Drum Brake.' Clean, labeled technical illustration with a light background."
+    },
+    {
+      "id": "brake-pad-inspection",
+      "file": "req10.md",
+      "description": "A gloved hand pointing through the spokes of an alloy wheel at a brake pad visible against the brake rotor. A small ruler or caliper is being held up to measure the brake pad thickness. The brake rotor surface is also visible, showing a smooth, even surface. The wheel and brake components are clean enough to see the pad clearly. Close-up, educational photography style."
+    },
+    {
+      "id": "changing-tire",
+      "file": "req11.md",
+      "description": "A Scout kneeling beside a vehicle in a flat driveway, using a lug wrench to remove a wheel. The vehicle is safely raised on a jack with wheel chocks visible behind the rear tires. An adult mentor stands nearby watching and offering guidance. The spare tire and jack tools are laid out on the ground next to the Scout. The Scout wears casual clothes and work gloves. Daytime, residential driveway setting."
+    },
+    {
+      "id": "oil-change-process",
+      "file": "req11.md",
+      "description": "A Scout in work clothes positioned beside a vehicle raised on jack stands, with a drain pan positioned under the oil pan to catch used dark motor oil. On a nearby workbench, a new oil filter still in its box and several bottles of fresh golden-colored motor oil are visible alongside a funnel and an oil filter wrench. The Scout wears nitrile gloves and safety glasses. Clean, well-lit garage setting."
+    },
+    {
+      "id": "automotive-careers",
+      "file": "req12.md",
+      "description": "A three-panel collage showing different automotive career paths. Left panel: a technician in a blue uniform using a diagnostic scanner tablet connected to a car in a professional service bay. Center panel: an automotive engineer reviewing 3D vehicle designs on a large computer monitor in a bright office. Right panel: a service advisor in business casual attire talking with a customer across a service desk at a car dealership, with a clean service bay visible through a window behind them."
+    },
+    {
+      "id": "home-maintenance-station",
+      "file": "extended-learning.md",
+      "description": "A clean, well-organized corner of a home garage set up as a vehicle maintenance station. A red rolling tool chest with labeled drawers sits against one wall. A bright LED work light on a stand illuminates the area. A vehicle is safely raised on jack stands nearby. A small metal shelf holds neatly arranged supplies: motor oil, coolant, brake fluid, funnels, and a drain pan. A pegboard on the wall holds hand tools. The floor is clean concrete. Warm, inviting lighting suggests a well-maintained hobby space."
+    }
+  ]
+}
