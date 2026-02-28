@@ -1,0 +1,86 @@
+{
+  "badge": "archaeology",
+  "style_context": "Archaeological fieldwork, ancient sites, museum settings, historical artifacts. Warm earth tones. Scouts should appear in clean, presentable uniforms when depicted.",
+  "images": [
+    {
+      "id": "scout-archaeology-site",
+      "file": "_index.md",
+      "description": "A Scout kneeling at an archaeological dig site, carefully brushing dirt from an artifact with a small brush. A grid system of string and stakes is visible over the excavation unit. Measurement tools, a clipboard, and artifact bags sit nearby. The setting is an outdoor dig in warm sunlight with dry soil. The Scout wears a clean Scout uniform shirt with rolled sleeves."
+    },
+    {
+      "id": "underwater-archaeology",
+      "file": "_index.md",
+      "description": "A scuba diver in full diving gear carefully documenting artifacts on a wooden shipwreck site on the ocean floor. Underwater measuring tools, a slate for notes, and an underwater camera are visible. Soft blue-green lighting with shafts of sunlight filtering through the water above. Coral and marine life partially cover the old timbers."
+    },
+    {
+      "id": "archaeology-branches-collage",
+      "file": "_index.md",
+      "description": "A four-panel collage showing different branches of archaeology: top-left shows prehistoric cave paintings of animals on a rock wall; top-right shows a classical Greek temple ruin with Doric columns against a blue sky; bottom-left shows a brick industrial-era factory building with a smokestack; bottom-right shows a researcher in a lab coat examining pottery fragments under a magnifying lamp."
+    },
+    {
+      "id": "archaeology-vs-collecting",
+      "file": "req1.md",
+      "description": "A split-scene illustration. Left side: an archaeologist in a wide-brimmed hat carefully documenting an artifact's position in a gridded excavation unit, using cameras, measuring tools, and a field notebook. Right side: a person with a metal detector pulling an object from a hole in the ground with no documentation, grid, or recording tools visible. Visual contrast between systematic science and casual collecting."
+    },
+    {
+      "id": "excavation-grid",
+      "file": "req2.md",
+      "description": "An overhead bird's-eye view of an archaeological excavation showing a grid system of one-meter squares marked with string and stakes. Several archaeologists work in different units using trowels and brushes. Some squares are excavated deeper than others, showing different soil layers. Artifact flags, buckets of screened soil, and clipboards are scattered around the site. Bright outdoor lighting."
+    },
+    {
+      "id": "lab-analysis",
+      "file": "req2.md",
+      "description": "An archaeologist in a laboratory examining pottery fragments under a magnifying lamp. The workbench has labeled artifact bags, a laptop displaying a database, calipers, a scale, and reference books. Shelves of artifact boxes are visible in the background. Clean, well-lit indoor laboratory setting with fluorescent lights."
+    },
+    {
+      "id": "stratigraphy-diagram",
+      "file": "req3.md",
+      "description": "A cross-section diagram of an archaeological excavation wall showing five clearly labeled soil layers (strata) in different earth-tone colors, from dark topsoil at the top to lighter clay at the bottom. Small artifacts are visible at different depths: a coin near the surface, pottery sherds in the middle layers, and a stone tool deep in the profile. Arrows and labels indicate older layers at the bottom and newer layers at the top."
+    },
+    {
+      "id": "world-map-sites",
+      "file": "req4a.md",
+      "description": "A stylized illustrated world map on aged parchment paper with five archaeological sites marked with red pins and labels: Mesa Verde (Colorado, USA), Cahokia Mounds (Illinois, USA), Pompeii (Italy), Great Zimbabwe (Southern Africa), and Lascaux Cave (France). Dotted lines connect the pins. Each pin has a small icon representing the site — cliff dwellings, a mound, a volcano, stone walls, and a cave painting."
+    },
+    {
+      "id": "scout-presenting",
+      "file": "req4b.md",
+      "description": "A Scout standing confidently in front of a small audience of younger Cub Scouts seated on the floor. The presenting Scout points at a colorful poster board with images and a map of an archaeological site. The setting is a well-lit meeting room. The presenting Scout wears a clean Scout uniform. The Cub Scouts look engaged and curious."
+    },
+    {
+      "id": "protected-site-sign",
+      "file": "req5.md",
+      "description": "A brown National Park Service-style informational sign at the entrance to an archaeological site reading 'Protected Archaeological Area' with official legal notices. Behind the sign, ancient stone ruins are visible in an arid desert landscape with mesas in the background. A hiking trail leads past the sign toward the ruins. Blue sky with scattered white clouds."
+    },
+    {
+      "id": "scout-leaving-artifact",
+      "file": "req6.md",
+      "description": "A Scout on a hiking trail in a national forest has stopped and is crouching to photograph a partially exposed artifact in the soil using a smartphone. The Scout is careful not to touch the object. A hiking backpack sits nearby on the trail. The forest is sunlit with dappled light through the trees. The Scout wears a clean Scout uniform."
+    },
+    {
+      "id": "museum-exhibit",
+      "file": "req7.md",
+      "description": "A Scout standing in a museum gallery carefully examining a display case of ancient pottery and stone tools. Glass cases with labeled artifacts and illuminated informational panels line the walls. The lighting is soft and focused on the displays. Other visitors are visible in the background. The Scout wears a clean Scout uniform and leans forward with interest."
+    },
+    {
+      "id": "local-history-research",
+      "file": "req8.md",
+      "description": "A Scout sitting at a wooden library table surrounded by open local history books, old rolled maps, and black-and-white historical photographs. The Scout is taking notes in a notebook with a pencil. A laptop is open nearby showing a historical map. Library bookshelves fill the background. Warm, quiet indoor lighting."
+    },
+    {
+      "id": "archaeologist-at-work",
+      "file": "req9.md",
+      "description": "A professional archaeologist working in the field with modern technology. They use a rugged tablet displaying GIS mapping software while standing near an open excavation unit. A total station survey instrument is set up on a tripod nearby. The setting is a grassy field with a partially excavated site. The archaeologist wears field clothing — hiking boots, a hat, and a vest with pockets."
+    },
+    {
+      "id": "simulated-dig",
+      "file": "req10.md",
+      "description": "Three Scouts working at a simulated archaeological dig site set up in a large sandbox-style area outdoors. They use trowels, brushes, and measuring tapes within a string grid system to carefully uncover planted artifacts. An adult instructor in an archaeology vest observes and guides them. Clipboards, artifact bags, and graph paper are visible. The Scouts wear clean Scout uniforms."
+    },
+    {
+      "id": "experimental-archaeology",
+      "file": "req11.md",
+      "description": "A Scout under the guidance of an instructor carefully shaping a clay pot using the coil-building method at an outdoor worktable. Several finished examples of ancient-style pottery in various sizes sit on the table for reference. The Scout's hands are covered in clay. The setting is outdoors with a natural background. The Scout wears a work apron over a clean Scout uniform shirt."
+    }
+  ]
+}
