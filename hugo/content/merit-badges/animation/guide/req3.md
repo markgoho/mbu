@@ -127,20 +127,14 @@ At professional studios like Pixar, animators present their work to the entire t
 
 ## Free Tools to Get Started
 
-{{< drg/external-link
-    title="Pencil2D — Free 2D Animation Software"
-    url="https://youtu.be/QPqap-onmv8?si=R7BiYvl5Ku2fcf6I"
-    description="A tutorial overview for Pencil2D, a free and open-source program for traditional 2D animation." >}}
+{{< drg/video title="Pencil2D — Free 2D Animation Software" url="https://youtu.be/QPqap-onmv8?si=R7BiYvl5Ku2fcf6I" >}}
 
 {{< drg/external-link
     title="FlipAnim — Make Flipbook Animations Online"
     url="https://flipanim.com/"
     description="A free browser-based tool for creating simple flipbook-style animations. No download required." >}}
 
-{{< drg/external-link
-    title="How to Make a Flipbook"
-    url="https://youtu.be/Un-BdBSOGKY?si=VYoP1vpGjMei_OY-"
-    description="Step-by-step video showing how to create a hand-drawn flipbook animation." >}}
+{{< drg/video title="How to Make a Flipbook" url="https://youtu.be/Un-BdBSOGKY?si=VYoP1vpGjMei_OY-" >}}
 
 ---
 

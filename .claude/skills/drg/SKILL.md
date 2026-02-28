@@ -293,9 +293,12 @@ Use `drg/be-prepared` for **scenario-based problem-solving** — situations the 
 - Use default (no type) when linking to an external downloadable PDF.
 
 ```markdown
+{{</* drg/video
     title="Video Title"
     url="https://www.youtube.com/watch?v=..." */>}}
 ```
+
+**IMPORTANT:** YouTube videos must ALWAYS use the `drg/video` shortcode, which embeds the video player directly on the page. Do NOT use `drg/external-link` for YouTube URLs — that renders as a plain link instead of an embed. Reserve `drg/external-link` for non-video resources (websites, articles, tools, organizations).
 
 ### Video Verification Protocol
 

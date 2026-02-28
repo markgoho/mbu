@@ -70,15 +70,9 @@ Animation technology continues to evolve rapidly:
 When discussing animation history with your counselor, try to cover at least three major eras: the early optical devices, the golden age of hand-drawn film, and the computer revolution. Mentioning a specific film or inventor from each era shows depth.
 {{< /drg/tip >}}
 
-{{< drg/external-link
-    title="A Brief History of Animation — Scouting Resource Video"
-    url="https://youtu.be/5Y6eInX7H-s?si=elo9NM-TCqmqnQpb"
-    description="A video overview of animation's history from early experiments to modern CGI." >}}
+{{< drg/video title="A Brief History of Animation" url="https://youtu.be/5Y6eInX7H-s?si=elo9NM-TCqmqnQpb" >}}
 
-{{< drg/external-link
-    title="Discover Japan's First Anime: Hidden History!"
-    url="https://youtu.be/mQlAHrQ2-h8?si=9YNDKARTlRJ5omrg"
-    description="Explore the origins of Japanese animation and how anime became a global phenomenon." >}}
+{{< drg/video title="Discover Japan's First Anime: Hidden History!" url="https://youtu.be/mQlAHrQ2-h8?si=9YNDKARTlRJ5omrg" >}}
 
 ---
 

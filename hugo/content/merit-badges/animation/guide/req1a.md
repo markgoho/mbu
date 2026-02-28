@@ -48,10 +48,7 @@ Your counselor wants to hear your own words, not a memorized definition. Here is
 
 {{< drg/image src="images/persistence-of-vision-frames.avif" alt="A sequence of six simple drawings showing a ball in slightly different positions, with arrows between each frame indicating the progression, demonstrating how individual still frames create the illusion of movement" >}}
 
-{{< drg/external-link
-    title="What Is Animation? — Scouting Resource Video"
-    url="https://youtu.be/frP_5YQ0GfY?si=W1Bd6rnb4ksWo5p7"
-    description="A video introduction to the concept of animation, provided as a resource for this merit badge." >}}
+{{< drg/video title="What Is Animation? — Scouting Resource Video" url="https://youtu.be/frP_5YQ0GfY?si=W1Bd6rnb4ksWo5p7" >}}
 
 ---
 

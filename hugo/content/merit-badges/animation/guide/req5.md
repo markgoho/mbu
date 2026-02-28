@@ -89,10 +89,7 @@ Game animators create the movement for characters and objects in video games. Un
 When discussing your chosen career with your counselor, connect it to your own interests and experiences. If you loved creating your [flipbook or stop-motion animation](/merit-badges/animation/guide/req3/), explain how that experience relates to the career path you picked.
 {{< /drg/tip >}}
 
-{{< drg/external-link
-    title="Animation as a Career Choice"
-    url="https://youtu.be/t8zUTh1wYM4?si=-IUsEDT5mck_ttAd"
-    description="A video exploring what it takes to build a career in animation, including education and industry insights." >}}
+{{< drg/video title="Animation as a Career Choice" url="https://youtu.be/t8zUTh1wYM4?si=-IUsEDT5mck_ttAd" >}}
 
 {{< drg/external-link
     title="U.S. Bureau of Labor Statistics — Special Effects Artists and Animators"

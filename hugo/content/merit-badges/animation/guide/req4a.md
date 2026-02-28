@@ -62,25 +62,13 @@ Pay attention to the physical (or virtual) workspace. You might notice:
 
 If you cannot visit a studio in person, these video tours will give you an inside look:
 
-{{< drg/external-link
-    title="What It's Like Working at Disney Animation & Studio Tour"
-    url="https://youtu.be/1KUAO2hfdBE?si=x4yxTOYqlnh4KVS_"
-    description="A walkthrough of Walt Disney Animation Studios, showing workspaces, the animation process, and what daily life looks like for Disney animators." >}}
+{{< drg/video title="What It's Like Working at Disney Animation & Studio Tour" url="https://youtu.be/1KUAO2hfdBE?si=x4yxTOYqlnh4KVS_" >}}
 
-{{< drg/external-link
-    title="CGI DreamWorks Animation Studio Pipeline"
-    url="https://youtu.be/ru0tQRJ4qKs?si=_s5HH3nCS7hflRoB"
-    description="A look at DreamWorks' animation pipeline, from storyboarding to final rendering." >}}
+{{< drg/video title="CGI DreamWorks Animation Studio Pipeline" url="https://youtu.be/ru0tQRJ4qKs?si=_s5HH3nCS7hflRoB" >}}
 
-{{< drg/external-link
-    title="What It's Like to Work at Pixar Animation Studios"
-    url="https://youtu.be/C3IdS20YzHg?si=EBYH71frOfara-ns"
-    description="Tour Pixar's campus and learn about their creative culture and animation process." >}}
+{{< drg/video title="What It's Like to Work at Pixar Animation Studios" url="https://youtu.be/C3IdS20YzHg?si=EBYH71frOfara-ns" >}}
 
-{{< drg/external-link
-    title="Inside Out 2 — Exclusive Pixar Studio Tour"
-    url="https://youtu.be/3NaZsIdXtC4?si=B3HEHhLVRuIMgMrs"
-    description="A behind-the-scenes look at how Pixar created Inside Out 2, including concept art and animation techniques." >}}
+{{< drg/video title="Inside Out 2 — Exclusive Pixar Studio Tour" url="https://youtu.be/3NaZsIdXtC4?si=B3HEHhLVRuIMgMrs" >}}
 
 ## Beyond Film Studios
 

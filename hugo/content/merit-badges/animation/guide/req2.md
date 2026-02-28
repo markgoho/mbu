@@ -119,15 +119,9 @@ Animation does not have to match reality perfectly. In fact, it usually should n
 - Practice explaining: Say your explanations out loud. If you can explain a principle to a friend and they understand it, you are ready.
 {{< /drg/checklist >}}
 
-{{< drg/external-link
-    title="The 12 Principles of Animation Explained"
-    url="https://youtu.be/tYc1yUt0IeA?si=6KmGm0SXDmXXOzeO"
-    description="A detailed video walkthrough of all 12 principles with visual examples." >}}
+{{< drg/video title="The 12 Principles of Animation Explained" url="https://youtu.be/tYc1yUt0IeA?si=6KmGm0SXDmXXOzeO" >}}
 
-{{< drg/external-link
-    title="12 Principles of Animation"
-    url="https://youtu.be/uDqjIdI4bF4?si=Hw0CusAukKKkJ1oI"
-    description="Another take on the 12 principles with animated demonstrations." >}}
+{{< drg/video title="12 Principles of Animation" url="https://youtu.be/uDqjIdI4bF4?si=Hw0CusAukKKkJ1oI" >}}
 
 ---
 
