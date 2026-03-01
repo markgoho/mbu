@@ -35,6 +35,7 @@
     {
       "id": "vehicle-power-types",
       "file": "req1c.md",
+      "style": "infographic",
       "description": "An educational illustration showing five different vehicle power types side by side: a gasoline sedan, a diesel pickup truck, a hybrid SUV with a visible hybrid badge, a battery electric car plugged into a charging station, and a hydrogen fuel cell vehicle with a visible hydrogen emblem. Each vehicle has a small label beneath identifying its power type. Clean dealership-lot style background."
     },
     {
@@ -50,6 +51,7 @@
     {
       "id": "seatbelt-airbag-diagram",
       "file": "req1e.md",
+      "style": "diagram",
       "description": "A clear educational diagram showing a vehicle's interior safety restraint systems. A three-point seat belt is shown properly positioned across the chest and lap of a seated figure. Frontal airbag deployment zones are highlighted in the steering wheel and dashboard area. Side curtain airbag zones are shown along the ceiling edge. Labels point to each safety component. Clean, technical illustration style."
     },
     {
@@ -60,6 +62,7 @@
     {
       "id": "under-hood-fluids",
       "file": "req2a.md",
+      "style": "diagram",
       "description": "A labeled educational illustration of a typical car engine bay viewed from above with the hood open. Clear callout labels point to the locations of: the engine oil dipstick (yellow handle), coolant reservoir (translucent tank), brake fluid reservoir (small container near the firewall), power steering reservoir, windshield washer fluid reservoir (large container with windshield icon), and the battery. Each label is connected by a line to its component. Clean, diagram-style illustration."
     },
     {
@@ -90,6 +93,7 @@
     {
       "id": "instrument-cluster-labeled",
       "file": "req3.md",
+      "style": "annotated-photo",
       "description": "A modern vehicle instrument cluster with a clear educational overlay. Labeled callout arrows point to each gauge: fuel gauge (with F and E markings), speedometer (showing MPH), tachometer (showing RPM x1000), oil pressure indicator, and engine temperature gauge (with C and H markings). The dashboard is illuminated with a blue-white backlight. Clean, diagram-style presentation."
     },
     {
@@ -100,6 +104,7 @@
     {
       "id": "tire-sidewall-reading",
       "file": "req4a.md",
+      "style": "annotated-photo",
       "description": "Close-up of a tire sidewall with an educational overlay. Callout arrows point to and label each part of the tire size code: P (passenger), 215 (width in mm), 65 (aspect ratio), R (radial), 16 (rim diameter), 98 (load index), and T (speed rating). The DOT date code is also highlighted. The tire is clean and the markings are clearly legible. White arrows and labels on a clean background."
     },
     {
@@ -110,21 +115,25 @@
     {
       "id": "alignment-angles-diagram",
       "file": "req4c.md",
+      "style": "diagram",
       "description": "A clear three-panel educational diagram showing the three wheel alignment angles. Left panel: Camber — front view of a tire showing it tilting inward (negative) and outward (positive) from vertical, with labeled arrows. Center panel: Caster — side view showing the steering axis tilting forward (negative) and backward (positive), with labeled arrows. Right panel: Toe — top-down bird's-eye view showing tire fronts pointing inward (toe-in) and outward (toe-out), with labeled arrows. Clean technical illustration style with minimal colors."
     },
     {
       "id": "four-stroke-cycle",
       "file": "req5a.md",
+      "style": "diagram",
       "description": "A four-panel educational diagram showing the four strokes of an internal combustion engine. Panel 1 (Intake): piston moving down with intake valve open and air-fuel mixture entering, labeled 'Intake'. Panel 2 (Compression): piston moving up with both valves closed, mixture being compressed, labeled 'Compression'. Panel 3 (Power): spark plug firing, explosion pushing piston down, labeled 'Power'. Panel 4 (Exhaust): piston moving up with exhaust valve open, gases exiting, labeled 'Exhaust'. Clean, colorful technical illustration."
     },
     {
       "id": "hybrid-powertrain-diagram",
       "file": "req5a.md",
+      "style": "diagram",
       "description": "A simplified top-down diagram of a hybrid vehicle showing the key powertrain components: a gasoline engine in the front, an electric motor connected between the engine and transmission, a battery pack under the rear seats or floor, and the wheels. Colored arrows indicate energy flow: red arrows for engine power, blue arrows for electric power, and green arrows for regenerative braking energy returning to the battery. Each component is clearly labeled."
     },
     {
       "id": "oil-bottle-labels",
       "file": "req5b.md",
+      "style": "annotated-photo",
       "description": "Close-up of a bottle of engine oil (like a quart bottle of 5W-30 synthetic oil) with educational callout arrows pointing to key label elements. One arrow points to the API donut certification mark showing the API service category in the top half, SAE viscosity grade in the center, and Resource Conserving designation in the bottom. Another arrow points to the SAE 5W-30 viscosity designation on the front label. Clean, informational composition."
     },
     {
@@ -140,31 +149,37 @@
     {
       "id": "air-fuel-system-diagram",
       "file": "req7.md",
+      "style": "diagram",
       "description": "A simplified educational diagram showing how air and fuel travel to the engine. The air path is shown in light blue: outdoor air enters the air intake opening, passes through the air filter (shown as a rectangular element), flows through the intake manifold, and into the cylinder. The fuel path is shown in orange: fuel from the tank travels through the fuel pump, through the fuel filter, and to the fuel injectors at the cylinder. Both paths converge at the combustion chamber. Clean, labeled technical illustration."
     },
     {
       "id": "ecu-sensor-network",
       "file": "req7.md",
+      "style": "diagram",
       "description": "A diagram showing the Engine Control Unit (ECU) as a central box with labeled connection lines radiating outward to various sensors positioned around a simplified engine outline. Sensors shown include: Mass Airflow Sensor (MAF), Throttle Position Sensor (TPS), Oxygen Sensors (O2) in the exhaust, Coolant Temperature Sensor, Crankshaft Position Sensor, and Fuel Injectors. Each sensor and the ECU are clearly labeled. Clean technical illustration with a light background."
     },
     {
       "id": "starting-charging-diagram",
       "file": "req8a.md",
+      "style": "diagram",
       "description": "A clean, labeled educational diagram of a vehicle's starting and charging system. Components shown and labeled: battery (rectangular with + and - terminals), starter motor with solenoid attached (near the bottom of the engine), alternator (on the front of the engine with belt), ignition switch (at the dashboard), and voltage regulator. Red wires show positive connections, black wires show ground connections. Arrows indicate the direction of electrical current flow. Clean technical illustration on a light background."
     },
     {
       "id": "lighting-system-diagram",
       "file": "req8a.md",
+      "style": "diagram",
       "description": "A labeled educational diagram of a vehicle's lighting system. Components shown: battery, fuse box with individual fuses, headlight switch on the dashboard, headlight relay, dimmer switch (on steering column stalk), and headlight assemblies (left and right). Wires connect the components in a circuit. Power flow arrows show current from battery through fuse to switch to relay to headlights and back to ground. Clean, simple technical illustration."
     },
     {
       "id": "spark-plug-gap",
       "file": "req8b.md",
+      "style": "annotated-photo",
       "description": "Close-up of a single spark plug against a clean background. Labeled callout arrows point to three key parts: the center electrode (the thin rod in the middle), the ground electrode (the curved metal arm), and the gap between them (the small space where the spark jumps). A round wire-type gap gauge tool is positioned next to the spark plug, showing the correct gap measurement. Clean, educational product-photo style."
     },
     {
       "id": "jumper-cable-connection",
       "file": "req8d.md",
+      "style": "diagram",
       "description": "A clear educational diagram showing two cars facing each other with jumper cables connected in the correct order. The dead battery car is on the left, the good battery car on the right. Red cables connect positive terminal to positive terminal. The black cable connects from the good battery's negative terminal to a metal bracket on the dead car's engine block (NOT to the battery). Numbered labels (1, 2, 3, 4) show the connection order. Battery terminals are marked + and -. Clean, overhead-angle technical illustration."
     },
     {
@@ -175,26 +190,31 @@
     {
       "id": "ev-charging-levels",
       "file": "req8e.md",
+      "style": "infographic",
       "description": "A three-panel illustration showing the three levels of electric vehicle charging. Left panel (Level 1): a car in a home garage plugged into a standard household wall outlet with a portable charging cord. Center panel (Level 2): a car in a driveway connected to a wall-mounted home charging station (EVSE) with a dedicated 240V outlet visible. Right panel (Level 3/DC Fast): a car at a commercial fast-charging station with a large pedestal charger. Each panel is labeled with the level number and approximate charging speed."
     },
     {
       "id": "drive-train-diagram",
       "file": "req9a.md",
+      "style": "diagram",
       "description": "A top-down transparent diagram of a rear-wheel-drive vehicle showing the complete drivetrain power flow. Labeled components include: engine (front), transmission (behind engine), drive shaft (running lengthwise down the center), universal joints (at each end of the drive shaft), differential (at the rear axle), and axle shafts going to each rear wheel. Arrows show the direction of power flow from front to rear. The front wheels are shown without power connection. Clean technical illustration on a light background."
     },
     {
       "id": "transmission-types",
       "file": "req9a.md",
+      "style": "comparison",
       "description": "A side-by-side comparison illustration showing two transmission types. On the left: a cutaway of a manual transmission with visible gear sets, shift fork, and clutch disc, labeled 'Manual Transmission.' On the right: a cutaway of an automatic transmission with the torque converter, planetary gear set, and clutch packs visible, labeled 'Automatic Transmission.' Both are rendered in a clean, educational technical illustration style with key internal parts labeled."
     },
     {
       "id": "drive-configurations",
       "file": "req9c.md",
+      "style": "diagram",
       "description": "A three-panel top-down diagram showing different drive configurations. Left panel (FWD): front wheels shaded in blue with power arrows pointing to them, rear wheels unshaded, engine and transaxle at front, labeled 'Front-Wheel Drive.' Center panel (RWD): rear wheels shaded in blue, drive shaft visible running to rear differential, labeled 'Rear-Wheel Drive.' Right panel (4WD/AWD): all four wheels shaded in blue, transfer case visible in center with power going to both axles, labeled 'Four-Wheel Drive.' Clean technical illustration."
     },
     {
       "id": "disc-vs-drum-brakes",
       "file": "req10.md",
+      "style": "comparison",
       "description": "A side-by-side educational comparison. Left side: cutaway of a disc brake system showing the rotor (flat metal disc), caliper straddling the rotor, brake pad pressed against the rotor surface, and hydraulic piston, labeled 'Disc Brake.' Right side: cutaway of a drum brake system showing the hollow drum, two curved brake shoes inside pressing outward against the drum's inner surface, wheel cylinder, and return springs, labeled 'Drum Brake.' Clean, labeled technical illustration with a light background."
     },
     {
@@ -215,6 +235,7 @@
     {
       "id": "automotive-careers",
       "file": "req12.md",
+      "style": "infographic",
       "description": "A three-panel collage showing different automotive career paths. Left panel: a technician in a blue uniform using a diagnostic scanner tablet connected to a car in a professional service bay. Center panel: an automotive engineer reviewing 3D vehicle designs on a large computer monitor in a bright office. Right panel: a service advisor in business casual attire talking with a customer across a service desk at a car dealership, with a clean service bay visible through a window behind them."
     },
     {
