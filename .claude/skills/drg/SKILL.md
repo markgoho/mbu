@@ -444,6 +444,7 @@ Two exemplar worksheets demonstrate different approaches:
 - Teach the knowledge, not the answer
 - Include safety content wherever warranted
 - Link to authoritative external sources (at least one per requirement page)
+- When referencing other merit badges, always link to our own site (`/merit-badges/{slug}/`) — never to scouting.org merit badge pages
 - Cross-reference between requirements
 - Provide practical tools (checklists, templates, frameworks)
 - Use real examples and real places
@@ -456,6 +457,7 @@ Two exemplar worksheets demonstrate different approaches:
 - Alter requirement text
 - Use jargon without defining it
 - Link to commercial products or unreliable sources
+- Link to scouting.org for merit badge requirements — always use our internal `/merit-badges/{slug}/` URLs instead
 - Be preachy or lecture
 - Overload a page beyond ~1500 words of educational content
 - Use "Did You Know" for information that is merely topical — it must be **genuinely surprising, counterintuitive, or memorable**. If the fact would not make a Scout say "wait, really?" it belongs in the body text, not a callout.
