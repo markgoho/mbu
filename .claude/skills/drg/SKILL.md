@@ -24,7 +24,25 @@ The badge slug is passed as `$ARGUMENTS`. Use it to locate:
 
 - **Requirements data:** `hugo/data/merit-badges/$ARGUMENTS.json`
 - **Output directory:** `hugo/content/merit-badges/$ARGUMENTS/guide/`
-- **Reference guide:** `hugo/content/merit-badges/hiking/guide/` (the published Hiking guide — use as a structural example)
+- **Reference examples:** See "Reference Examples" section below for guides that demonstrate specific techniques. Do not clone any single guide wholesale — study the technique, adapt the approach.
+
+### Reference Examples
+
+Use this table to find guides that demonstrate specific techniques. During Phase 1 (Analysis), browse the relevant exemplar files to absorb the range of approaches — but do not replicate any single guide verbatim.
+
+| Technique | Exemplar | What to Study |
+|---|---|---|
+| Printable worksheets | `bird-study/guide/field-notebook-worksheet/` | Form fields, check grids, draw areas, back-link + print button |
+| Markdown tables for comparisons | `bird-study/guide/req5.md`, `req6.md` | Feeding habitat table, beak/foot adaptation tables |
+| Rich `images.json` with style variety | `bird-study/guide/images.json` | Mix of photo, diagram, illustrated, comparison, infographic |
+| Granular requirement splitting | `cooking/guide/` | 37 pages; distinct sub-parts each get their own page |
+| Cross-references between requirements | `cooking/guide/req2e.md` | Natural inline links ("In Req 1e, you learned...") |
+| Scenario-driven hooks | `first-aid/guide/req1a.md` | Concrete "what would you do" opener |
+| Strong subject-specific intro | `first-aid/guide/_index.md` | Opens with a campsite injury scenario, not a generic greeting |
+| History section with depth | `bird-study/guide/_index.md` | Audubon-era collecting vs. modern citizen science |
+| Shortcode variety (4–6 types/page) | `astronomy/guide/` | Mixes safety-first, checklist, be-prepared, tip, external-link, image |
+
+All paths are relative to `hugo/content/merit-badges/`.
 
 If the `guide/` directory already exists, check what files are present and resume from where things left off rather than starting over.
 
@@ -412,9 +430,12 @@ Every worksheet must include:
 - Add worksheets to `guide_nav` in `_index.md` under their parent requirement's group.
 - Link to worksheets from the requirement page using the `drg/download` shortcode with `type="printable"`.
 
-### Canonical Example
+### Canonical Examples
 
-See `hugo/content/merit-badges/hiking/guide/hike-plan-worksheet/index.md` for the reference implementation of a printable worksheet.
+Two exemplar worksheets demonstrate different approaches:
+
+- `hugo/content/merit-badges/hiking/guide/hike-plan-worksheet/index.md` — fields, tables, draw areas, signature blocks
+- `hugo/content/merit-badges/bird-study/guide/field-notebook-worksheet/index.md` — check grids, writing areas, repeated-use design
 
 ## Content Rules
 
@@ -438,6 +459,44 @@ See `hugo/content/merit-badges/hiking/guide/hike-plan-worksheet/index.md` for th
 - Be preachy or lecture
 - Overload a page beyond ~1500 words of educational content
 - Use "Did You Know" for information that is merely topical — it must be **genuinely surprising, counterintuitive, or memorable**. If the fact would not make a Scout say "wait, really?" it belongs in the body text, not a callout.
+
+## Writing Craft
+
+These principles capture what separates the best published guides from formulaic ones. Internalize them — they are not a checklist to satisfy mechanically.
+
+### Opening Hooks
+
+The first paragraph after the `drg/requirement` shortcode must be **specific to the subject matter**, not a generic warm-up. Self-test: could this paragraph work for three unrelated badges by swapping one noun? If yes, rewrite.
+
+**Weak:** "This is an important skill that every Scout should learn. Let's dive in and explore what you need to know!"
+
+**Strong:** "A blister the size of a quarter can end a 20-mile hike at mile three. Knowing how to prevent — and treat — foot injuries is the difference between finishing the trail and calling for a ride home."
+
+The strong version is impossible to confuse with any other badge. It drops the reader into the subject immediately.
+
+### Did You Know — The Surprise Test
+
+The existing DO NOT rule says these must be genuinely surprising. Here is what "genuinely surprising" looks like in practice:
+
+- **Bird Study:** "A chickadee can remember thousands of hiding spots where it cached seeds — and recall them months later."
+- **First Aid:** "Good Samaritan laws in most states protect you from liability when you help someone in an emergency — but only if you don't exceed your training."
+- **Cooking:** "The 'danger zone' for bacterial growth (40°F–140°F) means a pot of chili left on the counter for two hours has already become unsafe to eat."
+
+Each of these makes a reader pause. If your fact wouldn't survive a "so what?" challenge from a skeptical 13-year-old, move it to body text.
+
+### Shortcode Variety
+
+Aim for **4–6 different shortcode types per page** across the guide. If `safety-first` appears mechanically at the bottom of every section regardless of whether there is a genuine safety concern, something is wrong. Likewise, if every page follows the exact same pattern (requirement → two paragraphs → tip → checklist → safety-first → next-page), the guide reads like a template, not a teaching tool.
+
+Look at how the Astronomy guide mixes `safety-first`, `checklist`, `be-prepared`, `tip`, `external-link`, and `image` shortcodes within individual pages — varying the order and density based on what the content actually needs.
+
+### Cross-References
+
+When a later requirement builds on an earlier one, link back with natural language: "In Req 1e, you learned about safe food temperatures — those same principles apply here." Don't force cross-references where the connection is tenuous. A genuine cross-reference helps the Scout see how the badge fits together; a forced one is noise.
+
+### Extended Learning Depth
+
+Each deep-dive section in Extended Learning should teach something **genuinely new** — a skill, concept, or perspective that the requirement pages didn't cover. "Here are more things you can do" is not a deep dive. "Here is how competitive archers train their breathing to hold steady at full draw" is.
 
 ## Production Workflow
 
