@@ -34,7 +34,7 @@
       "id": "swimmer-test-diagram",
       "file": "req2.md",
       "style": "diagram",
-      "description": "Top-down diagram of a 25-yard swimming pool showing the BSA swimmer test layout. The pool is divided into lanes. A blue arrow traces the 75-yard swim path (3 lengths) labeled '75 yards — sidestroke, breaststroke, or crawl'. A green arrow traces the 25-yard return (1 length) labeled '25 yards — resting backstroke'. At the finish end, a circular zone is marked '1 minute treading water'. Total distance labeled as '100 yards continuous swim'. Clean lines, clear labels, pool lane markings visible."
+      "description": "A simple educational infographic with three rows on a clean white background. Row 1: an icon of a swimmer doing a forward stroke, labeled '75 yards' with the text 'Sidestroke, Breaststroke, or Crawl' beside it. Row 2: an icon of a swimmer doing a backstroke, labeled '25 yards' with the text 'Resting Backstroke' beside it. Row 3: an icon of a person treading water, labeled '1 minute' with the text 'Treading Water' beside it. A bold total at the bottom reads '100 yards continuous swim'. Blue and white color scheme, clean sans-serif text, minimal design."
     },
     {
       "id": "canoe-parts-labeled",
