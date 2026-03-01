@@ -47,6 +47,10 @@ When people appear in the scene, draw from this specific group of Scouts. They a
 Not every kid needs to appear in every photo — use whichever 2-5 of them make sense for the scene. But they must be RECOGNIZABLY the same individuals across images: same hair, same face, same build, same glasses (James), same freckles (Ethan), etc.`;
 
 const UNIFORM_SECTION = `
+ABSOLUTELY FORBIDDEN — ORGANIZATIONAL TEXT IN IMAGES:
+- NEVER render the words "Scouting America", "Boy Scouts of America", or "BSA" as visible text anywhere in the image. Not on clothing, signs, banners, patches, buildings, backgrounds, or any surface. This is a strict trademark restriction — these words must NEVER appear in any generated image.
+- Do NOT render any organizational logos, emblems, or insignia.
+
 UNIFORM & CLOTHING:
 - Youth should frequently be wearing a Scouting America field uniform: a tan/khaki button-up shirt with olive green pants/shorts. This is the standard Scout uniform look. No visible patches, logos, or specific BSA branding — just the tan-shirt-olive-pants combination.
 - When NOT in uniform, youth wear generic outdoor clothing in earth tones (greens, browns, khaki, navy).
@@ -85,6 +89,7 @@ STYLE REQUIREMENTS:
 - Educational tone — like a well-produced textbook or National Geographic photograph
 - Clean composition suitable for all ages (youth 11-17)
 - NO text overlays, watermarks, or captions in the image
+- NO organizational names, logos, or branding visible anywhere — see ABSOLUTELY FORBIDDEN section above
 - Warm color palette: earthy greens, browns, golden-hour warmth, natural sky colors
 ${UNIFORM_SECTION}
 ${SAFETY_SECTION}
@@ -113,7 +118,7 @@ ANNOTATION REQUIREMENTS:
 PHOTOGRAPHY BASE:
 - Warm, natural lighting
 - Clean composition suitable for youth ages 11-17
-- No logos or brand names visible
+- No logos, brand names, or organizational text visible — see ABSOLUTELY FORBIDDEN section above
 ${UNIFORM_SECTION}
 ${SAFETY_SECTION}
 

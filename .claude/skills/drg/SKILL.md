@@ -349,6 +349,8 @@ Aim for 2-3 images per page at natural visual break points.
 
 **Uniform rule:** Scout uniforms must always appear clean and presentable in image descriptions — no paint, mud, stains, or visible wear. If the scene involves messy activities (painting, gardening, cooking), describe Scouts in work clothes or describe the uniforms as clean and unaffected. Never depict the uniform as dirty or damaged.
 
+**Trademark rule:** The words "Scouting America," "Boy Scouts of America," or "BSA" must NEVER appear as visible rendered text in any generated image. The image generator may pick up these terms from descriptions and render them on clothing, signs, or backgrounds. Using "BSA uniform" or "Scout" in image descriptions is fine for conveying context — the restriction is specifically about the generated image containing those words as readable text.
+
 **Do NOT** wrap shortcode syntax inside HTML comments — Hugo still processes shortcodes inside comments, causing build errors.
 
 ### Image Style Selection

@@ -1,0 +1,53 @@
+{
+  "badge": "bugling",
+  "style_context": "Scouting America merit badge about bugling — military and Scout camp brass instrument tradition, bugle calls, and ceremonial music",
+  "images": [
+    {
+      "id": "scout-bugle-sunrise",
+      "file": "_index.md",
+      "description": "A Scout in a clean BSA uniform standing outdoors at a Scout camp at sunrise, playing a brass bugle. Morning light illuminates the scene with golden tones. Tents and pine trees are visible in the soft-focus background. The Scout stands tall with good posture, bugle raised to their lips."
+    },
+    {
+      "id": "drum-bugle-corps-performance",
+      "file": "_index.md",
+      "description": "A drum and bugle corps performing on a football field at night under bright stadium lights. Members wear matching uniforms and march in formation, brass instruments gleaming under the lights. The scene is dynamic and colorful with a sense of energy and precision."
+    },
+    {
+      "id": "bugle-evolution-timeline",
+      "file": "req1.md",
+      "style": "illustrated",
+      "description": "An educational timeline illustration showing the evolution of the bugle through history. Four instruments arranged left to right: an ancient animal horn (ram's horn/shofar), a Roman cornu (large curved bronze horn), a medieval European hunting horn, and a modern military brass bugle. Each instrument is labeled with its name and approximate era. Clean linework with educational coloring on a neutral background."
+    },
+    {
+      "id": "brass-family-comparison",
+      "file": "req2a.md",
+      "style": "illustrated",
+      "description": "An illustrated educational comparison of six brass instruments arranged from smallest to largest: bugle, trumpet, flugelhorn, French horn, trombone, and tuba. Each instrument is drawn with precise linework and labeled with its name. The bugle is highlighted or circled to show it as the starting point of the family. Clean educational illustration style with consistent coloring."
+    },
+    {
+      "id": "bugle-practice-outdoors",
+      "file": "req3.md",
+      "description": "A Scout standing in an open grassy field practicing the bugle on a clear day. The Scout wears a clean BSA uniform and stands with good posture, bugle raised. A portable folding music stand with sheet music is set up in front of them. Trees and blue sky in the background. Natural outdoor lighting."
+    },
+    {
+      "id": "retreat-ceremony-flag",
+      "file": "req4.md",
+      "description": "A group of Scouts standing at attention in clean uniforms, facing an American flag being lowered during a sunset retreat ceremony at a Scout camp. One Scout stands apart playing the bugle. The sky shows warm sunset colors of orange and pink. The scene is dignified and solemn."
+    },
+    {
+      "id": "bugle-cleaning-supplies",
+      "file": "req5.md",
+      "description": "A flat-lay photograph of bugle cleaning supplies arranged neatly on a wooden table. Items include: a brass bugle, a flexible snake brush, a small mouthpiece brush, a soft lint-free cloth, a bottle of mild dish soap, and a basin of clear water. Everything is well-organized and clearly visible. Clean, well-lit tabletop photography style."
+    },
+    {
+      "id": "scout-bugler-campout",
+      "file": "req6.md",
+      "description": "A Scout in clean BSA uniform playing the bugle at a campout during golden hour evening light. Other Scouts are gathered near a campfire in the soft-focus background, some sitting on logs, some standing. The scene conveys warmth, community, and the tradition of camp bugling. Pine trees frame the scene."
+    },
+    {
+      "id": "taps-memorial-ceremony",
+      "file": "extended-learning.md",
+      "description": "A lone bugler in a clean Scout uniform playing Taps at a veterans memorial or cemetery. Small American flags are placed at gravesites or near the memorial in the background. The atmosphere is solemn and respectful. Soft, diffused lighting creates a contemplative mood. The bugler stands at attention with the instrument raised."
+    }
+  ]
+}
