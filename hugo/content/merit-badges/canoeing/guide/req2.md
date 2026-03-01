@@ -51,8 +51,8 @@ If you are not a strong swimmer yet, here are some ways to build up:
 {{< drg/image src="images/swimmer-test-diagram.avif" alt="A diagram of a pool showing the 75-yard swim portion in one color and the 25-yard backstroke return in another, with a treading water zone marked at the end" >}}
 
 {{< drg/external-link
-    title="Swimming Merit Badge Requirements"
-    url="https://www.scouting.org/merit-badges/swimming/"
+    title="Swimming Merit Badge"
+    url="/merit-badges/swimming/"
     description="Full details on the Swimming merit badge, including the swimmer test requirements." >}}
 
 Once you have passed the swimmer test, you are cleared to get into a canoe. Let's start by learning about the boat itself.
