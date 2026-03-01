@@ -71,7 +71,7 @@ SAFETY-CRITICAL ACCURACY:
 function buildStyleGuide(context: string, style: ImageStyle): string {
   switch (style) {
     case "photo":
-      return `You are generating a PHOTOGRAPH for a Scouting America merit badge study guide about ${context}.
+      return `You are generating a PHOTOGRAPH for a Merit Badge University study guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A PHOTOGRAPH:
 - The output MUST look like a real photograph taken with a camera
@@ -92,7 +92,7 @@ ${SAFETY_SECTION}
 SCENE: `;
 
     case "annotated-photo":
-      return `You are generating a PHOTOGRAPH WITH EDUCATIONAL ANNOTATIONS for a Scouting America merit badge study guide about ${context}.
+      return `You are generating a PHOTOGRAPH WITH EDUCATIONAL ANNOTATIONS for a Merit Badge University study guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE AN ANNOTATED PHOTOGRAPH:
 - Base image must be photorealistic (like a DSLR photo)
@@ -120,7 +120,7 @@ ${SAFETY_SECTION}
 SCENE: `;
 
     case "diagram":
-      return `You are generating a CLEAN EDUCATIONAL DIAGRAM for a Scouting America merit badge study guide about ${context}.
+      return `You are generating a CLEAN EDUCATIONAL DIAGRAM for a Merit Badge University study guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A DIAGRAM:
 - Output must be a clear, labeled diagram — NOT a photograph
@@ -141,7 +141,7 @@ TYPOGRAPHY REQUIREMENTS:
 SCENE: `;
 
     case "infographic":
-      return `You are generating an EDUCATIONAL INFOGRAPHIC for a Scouting America merit badge study guide about ${context}.
+      return `You are generating an EDUCATIONAL INFOGRAPHIC for a Merit Badge University study guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE AN INFOGRAPHIC:
 - Clean, modern infographic design — NOT a photograph
@@ -167,7 +167,7 @@ TYPOGRAPHY:
 SCENE: `;
 
     case "illustrated":
-      return `You are generating a DETAILED TECHNICAL ILLUSTRATION for a Scouting America merit badge study guide about ${context}.
+      return `You are generating a DETAILED TECHNICAL ILLUSTRATION for a Merit Badge University study guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A TECHNICAL ILLUSTRATION:
 - Detailed technical illustration style — NOT a photograph
@@ -188,7 +188,7 @@ ILLUSTRATION REQUIREMENTS:
 SCENE: `;
 
     case "comparison":
-      return `You are generating a COMPARISON IMAGE for a Scouting America merit badge study guide about ${context}.
+      return `You are generating a COMPARISON IMAGE for a Merit Badge University study guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A SIDE-BY-SIDE OR SPLIT-FRAME COMPARISON:
 - Show two versions of the same subject for clear comparison
