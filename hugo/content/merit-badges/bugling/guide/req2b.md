@@ -61,8 +61,6 @@ Repeat a short musical phrase to make your call memorable. Most bugle calls use 
 
 Rhythm matters as much as the notes. A call with all equal-length notes sounds flat and boring. Mix long and short notes. Try starting with a strong, held note to grab attention, then use quicker notes for the body of the call.
 
-{{< drg/image src="images/bugle-call-composition-example.avif" alt="A simple hand-written musical staff showing an example 12-note bugle call with rhythm markings, labeled Patrol Assembly Call" >}}
-
 {{< drg/be-prepared title="What If I Can't Read Music?" >}}
 You do not need to read standard musical notation to compose a bugle call. Try these approaches:
 

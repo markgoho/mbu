@@ -19,22 +19,10 @@
       "description": "An educational timeline illustration showing the evolution of the bugle through history. Four instruments arranged left to right: an ancient animal horn (ram's horn/shofar), a Roman cornu (large curved bronze horn), a medieval European hunting horn, and a modern military brass bugle. Each instrument is labeled with its name and approximate era. Clean linework with educational coloring on a neutral background."
     },
     {
-      "id": "bugle-harmonic-series",
-      "file": "req2a.md",
-      "style": "diagram",
-      "description": "A clean educational diagram showing the five notes of the bugle harmonic series on a treble clef musical staff. Notes labeled from left to right: low B-flat (fundamental), mid B-flat, F, high B-flat, and high D. Below each note, a small arrow or indicator shows relative lip tension increasing from loose (low notes) to tight (high notes). Clean, minimal design with clear labels on a white background."
-    },
-    {
       "id": "brass-family-comparison",
       "file": "req2a.md",
       "style": "illustrated",
       "description": "An illustrated educational comparison of six brass instruments arranged from smallest to largest: bugle, trumpet, flugelhorn, French horn, trombone, and tuba. Each instrument is drawn with precise linework and labeled with its name. The bugle is highlighted or circled to show it as the starting point of the family. Clean educational illustration style with consistent coloring."
-    },
-    {
-      "id": "bugle-call-composition-example",
-      "file": "req2b.md",
-      "style": "diagram",
-      "description": "A clean diagram showing a simple hand-written style musical staff with a short 12-note bugle call composition. The notes use only the harmonic series (B-flat, F, high B-flat, D). Rhythm markings show a mix of quarter notes and half notes. The title 'Patrol Assembly Call' is written above the staff in a neat hand-lettered style. Simple, approachable design that looks like something a Scout might compose."
     },
     {
       "id": "bugle-practice-outdoors",

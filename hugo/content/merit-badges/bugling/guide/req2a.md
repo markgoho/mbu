@@ -45,8 +45,6 @@ A standard bugle in the key of B-flat can produce five distinct notes, called th
 
 These five notes are all you need to play every standard bugle call. "Taps," for example, uses just four of them.
 
-{{< drg/image src="images/bugle-harmonic-series.avif" alt="Diagram showing the five notes of the bugle harmonic series on a musical staff, with arrows indicating lip tension increasing from low to high" >}}
-
 ### The Bell and the Bore
 
 The flared opening at the end of the bugle is called the **bell**. It projects the sound outward and gives the bugle its characteristic bright, carrying tone. The **bore** — the internal diameter of the tubing — affects the tone quality. A wider bore produces a warmer, mellower sound. A narrower bore creates a brighter, more focused tone.
