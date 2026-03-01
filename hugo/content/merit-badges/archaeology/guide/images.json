@@ -20,6 +20,7 @@
     {
       "id": "archaeology-vs-collecting",
       "file": "req1.md",
+      "style": "comparison",
       "description": "A split-scene illustration. Left side: an archaeologist in a wide-brimmed hat carefully documenting an artifact's position in a gridded excavation unit, using cameras, measuring tools, and a field notebook. Right side: a person with a metal detector pulling an object from a hole in the ground with no documentation, grid, or recording tools visible. Visual contrast between systematic science and casual collecting."
     },
     {
@@ -35,11 +36,13 @@
     {
       "id": "stratigraphy-diagram",
       "file": "req3.md",
+      "style": "diagram",
       "description": "A cross-section diagram of an archaeological excavation wall showing five clearly labeled soil layers (strata) in different earth-tone colors, from dark topsoil at the top to lighter clay at the bottom. Small artifacts are visible at different depths: a coin near the surface, pottery sherds in the middle layers, and a stone tool deep in the profile. Arrows and labels indicate older layers at the bottom and newer layers at the top."
     },
     {
       "id": "world-map-sites",
       "file": "req4a.md",
+      "style": "illustrated",
       "description": "A stylized illustrated world map on aged parchment paper with five archaeological sites marked with red pins and labels: Mesa Verde (Colorado, USA), Cahokia Mounds (Illinois, USA), Pompeii (Italy), Great Zimbabwe (Southern Africa), and Lascaux Cave (France). Dotted lines connect the pins. Each pin has a small icon representing the site — cliff dwellings, a mound, a volcano, stone walls, and a cave painting."
     },
     {

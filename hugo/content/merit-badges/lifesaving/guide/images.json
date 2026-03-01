@@ -25,26 +25,31 @@
     {
       "id": "four-strokes-diagram",
       "file": "req2.md",
+      "style": "diagram",
       "description": "A four-panel educational illustration showing the body position and arm movement for four swimming strokes: front crawl (freestyle) in the upper left, sidestroke in the upper right, breaststroke in the lower left, and elementary backstroke in the lower right. Each panel shows a swimmer from the side in clear blue water with labeled arrows indicating arm and leg movements. Clean, instructional style."
     },
     {
       "id": "rip-current-diagram",
       "file": "req3a.md",
+      "style": "diagram",
       "description": "An aerial view diagram of an ocean beach showing a rip current. The beach is at the bottom with waves coming in. Arrows show water flowing along the shore and then out through a narrow gap in the sandbars as a rip current. A dotted line shows the escape route: swimming parallel to shore to exit the rip current, then angling back to shore. Clear labels and simple, educational style."
     },
     {
       "id": "distress-vs-drowning",
       "file": "req3b.md",
+      "style": "comparison",
       "description": "A side-by-side comparison illustration showing two people in water. On the left, a distressed swimmer who can still wave one arm, has their head above water, and is calling for help. On the right, a person experiencing active drowning: mouth barely at water level, arms pressing down to the sides, body vertical with no kick visible, eyes wide with panic. Labeled 'Distressed Swimmer' and 'Active Drowning' respectively. Educational, clear style with blue water background."
     },
     {
       "id": "reach-throw-row-go",
       "file": "req3c.md",
+      "style": "diagram",
       "description": "A four-panel illustration showing the rescue order. Panel 1 (Reach): A Scout lying flat on a dock, extending a long pole toward a person in the water. Panel 2 (Throw): A Scout on shore throwing a ring buoy with rope attached toward a swimmer. Panel 3 (Row): A rescuer in a canoe approaching a person in the water, extending a paddle. Panel 4 (Go): A rescuer swimming with a rescue tube toward a person in the water. Each panel labeled with its method name. Clear, educational illustration style."
     },
     {
       "id": "rescue-settings-comparison",
       "file": "req3d.md",
+      "style": "diagram",
       "description": "A four-panel illustration comparing rescue approaches in different settings. Top left: a pool with a lifeguard using a reaching pole. Top right: a lake shore with a person throwing a rescue bag. Bottom left: a river bank with a person throwing a rope downstream. Bottom right: an ocean beach with a lifeguard carrying a rescue board into the surf. Each panel labeled with the setting name. Clear, educational style."
     },
     {
@@ -60,6 +65,7 @@
     {
       "id": "throwing-rescue-sequence",
       "file": "req5.md",
+      "style": "illustrated",
       "description": "A three-panel sequence showing a throwing rescue. Panel 1: A Scout standing on shore, coiling a throw bag rope in one hand while holding the bag in the other, feet planted in a wide stance. Panel 2: The Scout mid-throw with an underhand swing, the throw bag arcing through the air with rope trailing behind it. Panel 3: A person in the water grabbing the throw bag while the Scout on shore pulls the rope. Lake or pool setting. Action-oriented, educational style."
     },
     {
@@ -85,6 +91,7 @@
     {
       "id": "lead-and-wait",
       "file": "req10.md",
+      "style": "diagram",
       "description": "An overhead bird's-eye view of a rescue scenario in a pool or lake. A rescuer is positioned between a victim (shown struggling at the surface) and the shore/pool wall. The rescuer is about 10 feet from the victim, holding a rescue tube extended toward them. Dotted lines show the safe distance. The shore or pool edge is visible at the bottom of the image. Clear, diagrammatic style showing proper positioning."
     },
     {
@@ -95,6 +102,7 @@
     {
       "id": "escape-techniques",
       "file": "req12.md",
+      "style": "diagram",
       "description": "A three-panel illustration showing a front head hold escape sequence. Panel 1: A victim has both arms wrapped around the rescuer's head and shoulders from the front, both in deep water. Panel 2: The rescuer tucks chin, submerges, and pushes on the victim's hips, pushing them apart. Panel 3: The rescuer swims away underwater behind the victim, shown with motion lines. Blue water, clear educational style with arrows showing movement direction."
     },
     {
@@ -105,6 +113,7 @@
     {
       "id": "surface-dives-comparison",
       "file": "req14.md",
+      "style": "comparison",
       "description": "A side-by-side illustration showing two types of surface dives. On the left, a feetfirst surface dive: a swimmer pushes arms down, rises up, then sinks straight down feetfirst with arms at sides, then tucks to swim along the bottom. On the right, a headfirst pike dive: a swimmer bends at the waist, lifts legs above the surface, and drives down headfirst in a streamlined position. Both sequences shown with multiple body positions in a progression. Blue water, clear educational style."
     },
     {
@@ -115,6 +124,7 @@
     {
       "id": "cpr-assessment-steps",
       "file": "req16.md",
+      "style": "diagram",
       "description": "A four-panel educational illustration showing CPR assessment steps on a pool deck. Panel 1: A rescuer kneeling beside a victim, tapping their shoulders and calling out. Panel 2: A bystander calling 911 on a cell phone. Panel 3: The rescuer performing a head-tilt chin-lift to open the airway. Panel 4: The rescuer with ear near the victim's mouth performing look-listen-feel breathing check. Clean pool deck setting, clear instructional style. Each panel labeled with the step name."
     },
     {

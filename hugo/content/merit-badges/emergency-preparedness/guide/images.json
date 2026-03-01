@@ -15,6 +15,7 @@
     {
       "id": "five-aspects-diagram",
       "file": "req1a.md",
+      "style": "diagram",
       "description": "A circular diagram showing the five aspects of emergency preparedness in a cycle: Prevention, Protection, Mitigation, Response, Recovery — with icons for each"
     },
     {
@@ -35,11 +36,13 @@
     {
       "id": "evacuation-route-map",
       "file": "req2a.md",
+      "style": "diagram",
       "description": "A hand-drawn neighborhood map showing two different evacuation routes marked with arrows and a meeting point marked with a star"
     },
     {
       "id": "floor-plan-sketch",
       "file": "req2b.md",
+      "style": "diagram",
       "description": "A simple hand-drawn floor plan of a home showing rooms labeled, doors and windows marked, and two different escape routes drawn with colored arrows"
     },
     {
@@ -60,6 +63,7 @@
     {
       "id": "reach-throw-row",
       "file": "req4.md",
+      "style": "illustrated",
       "description": "Three panels showing nonswimming water rescue methods: reaching with a pole from a dock, throwing a ring buoy, and rowing a small boat toward a person in the water"
     },
     {
@@ -80,6 +84,7 @@
     {
       "id": "ics-chart",
       "file": "req7.md",
+      "style": "diagram",
       "description": "An organizational chart showing the Incident Command System structure: Incident Commander at the top with Operations, Planning, Logistics, and Finance/Administration sections below, each with relevant icons"
     },
     {
@@ -90,6 +95,7 @@
     {
       "id": "emergency-career-paths",
       "file": "req10.md",
+      "style": "infographic",
       "description": "A career path infographic showing different emergency services careers (firefighter, EMT, emergency manager, dispatcher, HAZMAT technician) branching from a central Emergency Preparedness label"
     },
     {

@@ -15,6 +15,7 @@
     {
       "id": "global-connections-map",
       "file": "_index.md",
+      "style": "infographic",
       "description": "An illustrated world map showing colorful lines connecting different continents, representing trade routes, communication networks, and international partnerships. The style is clean and educational, like an infographic."
     },
     {
@@ -25,6 +26,7 @@
     {
       "id": "scouting-worldwide",
       "file": "req1.md",
+      "style": "illustrated",
       "description": "A colorful illustrated world map with Scout fleur-de-lis emblems pinned to different continents, showing the global reach of the Scouting movement. The map has a warm, inviting color palette."
     },
     {
@@ -35,6 +37,7 @@
     {
       "id": "world-citizenship-comparison",
       "file": "req2.md",
+      "style": "comparison",
       "description": "An illustrated side-by-side comparison showing three different passports from different countries with icons representing rights like voting, free speech, and travel arranged around them. Clean, educational infographic style."
     },
     {
@@ -45,11 +48,13 @@
     {
       "id": "national-interests-diagram",
       "file": "req3a.md",
+      "style": "diagram",
       "description": "An illustrated diagram showing four interconnected circles labeled Security, Economy, Values, and Health, with arrows between them showing how they influence each other. Clean educational infographic style with distinct colors for each circle."
     },
     {
       "id": "geography-economy-map",
       "file": "req3b.md",
+      "style": "illustrated",
       "description": "An illustrated map showing a country's key geographic features — mountains, rivers, coastline, farmland, and mineral deposits — with labels showing how each feature connects to the economy. Educational illustration style."
     },
     {
@@ -60,6 +65,7 @@
     {
       "id": "global-organizations",
       "file": "req4.md",
+      "style": "illustrated",
       "description": "An illustrated collage showing symbols of international organizations — the UN building, a Red Cross emblem, a globe with a stethoscope representing WHO, and a Scout fleur-de-lis — arranged around a world map. Clean, colorful educational style."
     },
     {
@@ -70,6 +76,7 @@
     {
       "id": "world-governments-map",
       "file": "req5.md",
+      "style": "infographic",
       "description": "An illustrated world map with different regions color-coded by government type, including a clear legend showing democracy, constitutional monarchy, authoritarian, communist state, and theocracy. Educational map style with distinct colors."
     },
     {

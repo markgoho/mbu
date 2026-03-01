@@ -55,6 +55,7 @@
     {
       "id": "automation-flowchart",
       "file": "req3d.md",
+      "style": "infographic",
       "description": "A Scout drawing a flowchart on a whiteboard showing triggers, conditions, and actions — the basic structure of an automated workflow. Marker in hand, concentrating."
     },
     {
@@ -100,6 +101,7 @@
     {
       "id": "neural-network-concept",
       "file": "req6a.md",
+      "style": "diagram",
       "description": "A Scout looking at a poster or screen showing a simplified neural network diagram — interconnected nodes in layers with data flowing through. The Scout is pointing at it, explaining to a buddy."
     },
     {

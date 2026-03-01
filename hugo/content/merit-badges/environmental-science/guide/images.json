@@ -10,11 +10,13 @@
     {
       "id": "soil-layers-cross-section",
       "file": "_index.md",
+      "style": "diagram",
       "description": "A detailed educational cross-section illustration of soil layers. The top shows green grass and small plants with visible root systems extending downward. Below the surface, layers are clearly visible: dark topsoil with earthworms and organic matter, lighter subsoil with embedded rocks and fewer roots, a layer of broken bedrock fragments, and solid bedrock at the bottom. A few mushrooms grow on the surface near a small fallen log. Clean, colorful scientific illustration style."
     },
     {
       "id": "environmental-science-branches",
       "file": "_index.md",
+      "style": "infographic",
       "description": "A clean, colorful educational infographic-style illustration showing six branches of environmental science arranged in a circle or hexagonal pattern, connected by arrows. Each branch has a simple icon: Ecology (a tree with connected animals), Atmospheric Science (clouds and air particles), Hydrology (water droplets and waves), Soil Science (layers of earth), Conservation Biology (a shield with a paw print), and Environmental Engineering (a gear with a leaf). The center shows planet Earth. Bright, engaging colors on a clean background."
     },
     {
@@ -30,6 +32,7 @@
     {
       "id": "ecosystem-food-web",
       "file": "req2b.md",
+      "style": "diagram",
       "description": "An illustrated educational food web diagram set in a meadow ecosystem. The sun is at the top sending energy arrows to green plants (grass, flowers, shrubs). Arrows show energy flow from plants to a grasshopper, a rabbit, and a mouse. From those, arrows lead to a frog, a songbird, and a fox. At the top of the web, a red-tailed hawk. At the bottom, mushrooms and bacteria break down dead organisms with arrows returning nutrients to the soil. Clean lines, labeled organisms, colorful scientific illustration style."
     },
     {
@@ -45,11 +48,13 @@
     {
       "id": "water-treatment-facility",
       "file": "req4.md",
+      "style": "diagram",
       "description": "An aerial-perspective illustration of a modern water treatment facility with large circular settling ponds and rectangular filter beds. The facility is surrounded by green trees and grass. A river flows alongside the facility. Clean water exits through an outflow pipe back toward the river. Blue sky with white clouds above. The illustration is clear and educational, showing the basic layout of how water is processed. Small labels or numbered markers indicate treatment stages."
     },
     {
       "id": "erosion-prevention",
       "file": "req5.md",
+      "style": "illustrated",
       "description": "A hillside landscape showing several erosion control techniques in action. One section shows terraced farming with stone retaining walls and planted crops on each level. Another area shows newly planted ground cover vegetation holding soil on a slope. At the bottom of the hill, a riparian buffer of trees and shrubs lines a small stream. The contrast between a bare, eroding section of hill and the protected sections is visible. Bright, educational illustration style."
     },
     {
@@ -85,6 +90,7 @@
     {
       "id": "invasive-species-examples",
       "file": "req9.md",
+      "style": "comparison",
       "description": "A split-scene educational illustration. On the left, thick kudzu vines completely covering and smothering several trees, the trees barely visible beneath the green blanket of leaves. On the right, a cluster of spotted lanternflies with their distinctive gray forewings and red-and-black hindwings gathered on the trunk of a tree of heaven. A small informational label identifies each species. Clean illustration style with slightly dramatic lighting to convey the threat these species pose."
     },
     {

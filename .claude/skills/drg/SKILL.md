@@ -340,13 +340,33 @@ During content writing, use HTML comment placeholders instead of image shortcode
 
 ```markdown
 <!-- IMAGE: filename-id.png | Alt text description -->
+<!-- IMAGE: compass-parts-labeled.png | Baseplate compass with all parts labeled | style:diagram -->
 ```
 
-Aim for 2–3 images per page at natural visual break points.
+The optional `style:` hint indicates which image generation style to use (see Image Style Selection below). If omitted, the image defaults to `photo` style.
+
+Aim for 2-3 images per page at natural visual break points.
 
 **Uniform rule:** Scout uniforms must always appear clean and presentable in image descriptions — no paint, mud, stains, or visible wear. If the scene involves messy activities (painting, gardening, cooking), describe Scouts in work clothes or describe the uniforms as clean and unaffected. Never depict the uniform as dirty or damaged.
 
 **Do NOT** wrap shortcode syntax inside HTML comments — Hugo still processes shortcodes inside comments, causing build errors.
+
+### Image Style Selection
+
+The image generation pipeline supports six styles. Choose the style that best serves the educational content — not every image needs to be a photo.
+
+| Content type | Style | When to use |
+|---|---|---|
+| Scouts doing an activity, scene-setting, mood | `photo` | Where photorealistic shots genuinely add value — action, environment, teamwork |
+| Equipment parts, labeled anatomy, component breakdown | `diagram` | Clean labels, precise detail, no distracting scenery |
+| Safety technique with labeled checkpoints | `annotated-photo` | Realistic base + overlaid callouts at key positions |
+| Correct vs incorrect, before/after, do vs don't | `comparison` | Split-frame makes contrast unmistakable |
+| Data, rules, principles, lists, steps | `infographic` | Icons + text hierarchy, scannable at a glance |
+| Field guide subject, equipment illustration | `illustrated` | Precise linework, labeled features, educational colors |
+
+**Quick decision rule:** If the image's primary job is to **label parts** or **show data**, use `diagram`/`infographic`/`illustrated`. If it's to **show people doing things**, use `photo` or `annotated-photo`. If it's to **contrast two things**, use `comparison`.
+
+**Style values for `images.json`:** `"photo"` (default — omit field), `"diagram"`, `"infographic"`, `"illustrated"`, `"annotated-photo"`, `"comparison"`
 
 ## Handling Requirement Modes
 
@@ -468,10 +488,18 @@ For each page:
       "id": "descriptive-kebab-id",
       "file": "_index.md",
       "description": "Detailed scene description for AI image generator"
+    },
+    {
+      "id": "compass-parts-labeled",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "Baseplate compass with all major parts labeled..."
     }
   ]
 }
 ```
+
+The `style` field is optional — omit it for standard photo images. Use it when a non-photo style (diagram, infographic, illustrated, annotated-photo, comparison) better serves the content. See Image Style Selection above for guidance.
 
 21. **Run generation immediately** (do not ask the user or wait for approval): `bun run generate:drg-images {slug}` — This command may take several minutes for large guides. Let it run to completion.
 22. **Convert images to AVIF**: Run `bun run convert:drg-images -- --badge {slug}` to convert all generated PNGs to AVIF format (1200px wide, quality 80). Then delete the source PNGs: `rm hugo/content/merit-badges/{slug}/guide/images/*.png`

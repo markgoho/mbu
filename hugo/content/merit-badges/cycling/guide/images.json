@@ -25,6 +25,7 @@
     {
       "id": "intersection-awareness",
       "file": "req1a.md",
+      "style": "diagram",
       "description": "Bird's-eye view illustration of a cyclist approaching an intersection, showing sight lines and potential hazard zones with turning cars, crosswalks, and proper lane positioning"
     },
     {
@@ -35,16 +36,19 @@
     {
       "id": "trail-hazard-plants",
       "file": "req1b.md",
+      "style": "illustrated",
       "description": "An illustrated field guide showing poison ivy, poison oak, and poison sumac leaves side by side with labels, set against a natural forest background"
     },
     {
       "id": "cyclist-lane-position",
       "file": "req2.md",
+      "style": "diagram",
       "description": "Diagram showing a cyclist riding in the correct lane position on a two-lane road, with arrows indicating traffic flow and a safe 4-foot gap from parked cars on the right"
     },
     {
       "id": "hand-signals-diagram",
       "file": "req2.md",
+      "style": "illustrated",
       "description": "Clear illustration showing the three standard bicycle hand signals side by side: left turn (left arm straight out), right turn (right arm straight out), and stop (left arm down with palm back)"
     },
     {

@@ -5,9 +5,18 @@ import { loadEnvFromRepoRoot } from "./lib/load-env-from-repo-root.ts";
 
 await loadEnvFromRepoRoot();
 
+type ImageStyle =
+  | "photo"
+  | "diagram"
+  | "infographic"
+  | "illustrated"
+  | "annotated-photo"
+  | "comparison";
+
 interface DrgImage {
   id: string;
   file: string;
+  style?: ImageStyle;
   description: string;
 }
 
@@ -21,15 +30,11 @@ const IMAGE_MODEL = "gemini-3.1-flash-image-preview";
 const DELAY_MS = 1500;
 const MAX_RETRIES = 3;
 
-function buildStyleGuide(context: string): string {
-  return `You are generating a PHOTOGRAPH for a Scouting America merit badge study guide about ${context}.
+// ---------------------------------------------------------------------------
+// Shared preamble sections (reused across styles that depict people or safety)
+// ---------------------------------------------------------------------------
 
-CRITICAL — OUTPUT MUST BE A PHOTOGRAPH:
-- The output MUST look like a real photograph taken with a camera
-- Do NOT generate illustrations, drawings, paintings, watercolors, sketches, cartoons, digital art, or any non-photographic style
-- Even if the description mentions "illustration" or "painting", IGNORE that and produce a photorealistic photograph instead
-- Think: National Geographic photo, DSLR camera, real-world scene captured on film
-
+const RECURRING_CAST = `
 RECURRING CAST — USE THESE SAME KIDS IN EVERY PHOTO:
 When people appear in the scene, draw from this specific group of Scouts. They are the SAME kids across every image — treat this like a photo series following one Scout patrol:
 
@@ -39,32 +44,174 @@ When people appear in the scene, draw from this specific group of Scouts. They a
 4. JAMES — 13-year-old boy, East Asian, average height, glasses, curious expression, often examining things closely
 5. KAI — 16-year-old boy, Pacific Islander/mixed-race, broad-shouldered and tallest of the group, relaxed and easygoing presence
 
-Not every kid needs to appear in every photo — use whichever 2-5 of them make sense for the scene. But they must be RECOGNIZABLY the same individuals across images: same hair, same face, same build, same glasses (James), same freckles (Ethan), etc.
+Not every kid needs to appear in every photo — use whichever 2-5 of them make sense for the scene. But they must be RECOGNIZABLY the same individuals across images: same hair, same face, same build, same glasses (James), same freckles (Ethan), etc.`;
 
-STYLE REQUIREMENTS:
-- Photorealistic photography style with warm, natural lighting
-- Educational tone — like a well-produced textbook or National Geographic photograph
-- Clean composition suitable for all ages (youth 11-17)
+const UNIFORM_SECTION = `
+UNIFORM & CLOTHING:
 - Youth should frequently be wearing a Scouting America field uniform: a tan/khaki button-up shirt with olive green pants/shorts. This is the standard Scout uniform look. No visible patches, logos, or specific BSA branding — just the tan-shirt-olive-pants combination.
 - When NOT in uniform, youth wear generic outdoor clothing in earth tones (greens, browns, khaki, navy).
-- NO text overlays, watermarks, or captions in the image
-- NO logos or brand names visible on clothing or gear
-- Warm color palette: earthy greens, browns, golden-hour warmth, natural sky colors
-
-UNIFORM APPEARANCE:
+- NO logos or brand names visible on clothing or gear.
 - Scout uniforms must ALWAYS appear clean, neat, and presentable — no stains, paint, mud, tears, or visible wear.
 - If the scene involves messy activities (painting, gardening, cooking), Scouts should be wearing generic work clothes or aprons OVER their uniforms, OR the uniforms should remain visibly clean and unaffected.
-- The Scout uniform represents the organization and must never look damaged, dirty, or disrespected in any image.
+- The Scout uniform represents the organization and must never look damaged, dirty, or disrespected in any image.`;
 
+const SAFETY_SECTION = `
 SAFETY-CRITICAL ACCURACY:
 - Any image depicting a safety practice, rule, or technique MUST be correct in every visible detail. A wrong detail in a safety image actively teaches dangerous behavior.
 - Equipment must be shown used correctly: helmets level on the head with straps buckled, PFDs properly fitted, harnesses snug, eye protection worn.
 - Containers, tools, and gear must look like what they are. A water container must NOT resemble a fuel or chemical container. A cooking flame must NOT appear near flammable liquids or inappropriate materials.
 - Body positioning and technique must be accurate: proper lifting form, correct hand placement on tools, safe distances from hazards.
 - If the scene involves fire, stoves, or heat sources, ensure all nearby objects are plausible and safe — no red gas cans, aerosol cans, or plastic containers near open flame.
-- When in doubt, depict the SAFEST version of the scene. Err on the side of caution.
+- When in doubt, depict the SAFEST version of the scene. Err on the side of caution.`;
+
+// ---------------------------------------------------------------------------
+// buildStyleGuide — selects the correct preamble based on style
+// ---------------------------------------------------------------------------
+
+function buildStyleGuide(context: string, style: ImageStyle): string {
+  switch (style) {
+    case "photo":
+      return `You are generating a PHOTOGRAPH for a Scouting America merit badge study guide about ${context}.
+
+CRITICAL — OUTPUT MUST BE A PHOTOGRAPH:
+- The output MUST look like a real photograph taken with a camera
+- Do NOT generate illustrations, drawings, paintings, watercolors, sketches, cartoons, digital art, or any non-photographic style
+- Even if the description mentions "illustration" or "painting", IGNORE that and produce a photorealistic photograph instead
+- Think: National Geographic photo, DSLR camera, real-world scene captured on film
+${RECURRING_CAST}
+
+STYLE REQUIREMENTS:
+- Photorealistic photography style with warm, natural lighting
+- Educational tone — like a well-produced textbook or National Geographic photograph
+- Clean composition suitable for all ages (youth 11-17)
+- NO text overlays, watermarks, or captions in the image
+- Warm color palette: earthy greens, browns, golden-hour warmth, natural sky colors
+${UNIFORM_SECTION}
+${SAFETY_SECTION}
 
 SCENE: `;
+
+    case "annotated-photo":
+      return `You are generating a PHOTOGRAPH WITH EDUCATIONAL ANNOTATIONS for a Scouting America merit badge study guide about ${context}.
+
+CRITICAL — OUTPUT MUST BE AN ANNOTATED PHOTOGRAPH:
+- Base image must be photorealistic (like a DSLR photo)
+- OVERLAY clear text labels, arrows, and callout boxes on the photo
+- Labels should have semi-transparent backgrounds for readability
+- Arrows should be clean and clearly point to their subjects
+- Think: annotated textbook photo, museum exhibit label, instructional manual
+${RECURRING_CAST}
+
+ANNOTATION REQUIREMENTS:
+- Labels must be LEGIBLE at web resolution
+- Use a consistent label style throughout (same font, same background treatment)
+- Arrows or leader lines should be clean and clearly connect labels to subjects
+- Semi-transparent label backgrounds (white or light color at ~80% opacity)
+- Dark text on light labels for maximum readability
+- Place labels to minimize overlap with important visual content
+
+PHOTOGRAPHY BASE:
+- Warm, natural lighting
+- Clean composition suitable for youth ages 11-17
+- No logos or brand names visible
+${UNIFORM_SECTION}
+${SAFETY_SECTION}
+
+SCENE: `;
+
+    case "diagram":
+      return `You are generating a CLEAN EDUCATIONAL DIAGRAM for a Scouting America merit badge study guide about ${context}.
+
+CRITICAL — OUTPUT MUST BE A DIAGRAM:
+- Output must be a clear, labeled diagram — NOT a photograph
+- Use clean lines, clear typography, and educational colors
+- All text labels must be LEGIBLE and ACCURATE
+- Use arrows, callouts, and annotations freely
+- Style: modern textbook diagram, clean vector-like appearance
+- Color palette: professional blues, greens, warm accents on a light background
+- No decorative elements — every visual element should teach something
+- Think: modern science textbook diagram, educational poster, museum exhibit graphic
+
+TYPOGRAPHY REQUIREMENTS:
+- All text must be large enough to read at web resolution (minimum ~14pt equivalent)
+- Use a clean sans-serif font style
+- Labels should have high contrast against their background
+- Use leader lines or arrows to connect labels to their subjects
+
+SCENE: `;
+
+    case "infographic":
+      return `You are generating an EDUCATIONAL INFOGRAPHIC for a Scouting America merit badge study guide about ${context}.
+
+CRITICAL — OUTPUT MUST BE AN INFOGRAPHIC:
+- Clean, modern infographic design — NOT a photograph
+- Mix of icons, short text blocks, and visual elements
+- Clear visual hierarchy — most important information is largest
+- All text must be LEGIBLE at web resolution
+- Professional color scheme, consistent throughout
+- Think: National Geographic sidebar, educational poster, well-designed factsheet
+
+LAYOUT REQUIREMENTS:
+- Organized sections with clear visual separation
+- Use icons, pictograms, or simple illustrations alongside text
+- Numbers, statistics, and key facts should be prominently displayed
+- Use color coding to group related information
+- Include a clear title or heading at the top
+
+TYPOGRAPHY:
+- Title/heading: large, bold
+- Section headers: medium, distinct from body text
+- Body text: clean, readable sans-serif
+- Key numbers/facts: large and highlighted
+
+SCENE: `;
+
+    case "illustrated":
+      return `You are generating a DETAILED TECHNICAL ILLUSTRATION for a Scouting America merit badge study guide about ${context}.
+
+CRITICAL — OUTPUT MUST BE A TECHNICAL ILLUSTRATION:
+- Detailed technical illustration style — NOT a photograph
+- Think: field guide illustration, technical manual drawing, equipment catalog diagram
+- Use precise linework with clear detail
+- Label all important parts and features
+- Style: somewhere between a botanical illustration and an engineering diagram
+- Professional, educational, authoritative feel
+
+ILLUSTRATION REQUIREMENTS:
+- Clean white or light neutral background
+- Precise, detailed rendering of the subject
+- Labels with leader lines pointing to key features
+- Consistent line weight and rendering style
+- Cross-hatching or subtle shading for depth (not photorealistic shading)
+- Color should be accurate and educational, not decorative
+
+SCENE: `;
+
+    case "comparison":
+      return `You are generating a COMPARISON IMAGE for a Scouting America merit badge study guide about ${context}.
+
+CRITICAL — OUTPUT MUST BE A SIDE-BY-SIDE OR SPLIT-FRAME COMPARISON:
+- Show two versions of the same subject for clear comparison
+- Use a split-frame, side-by-side, or before/after layout
+- Clearly label each side (e.g., "CORRECT" vs "INCORRECT", "DO" vs "DON'T", "BEFORE" vs "AFTER")
+- The comparison should be immediately obvious and educational
+
+COMPARISON REQUIREMENTS:
+- Both sides should show the SAME subject or scenario
+- Differences must be clearly visible and meaningful
+- Labels must be large and legible at web resolution
+- Use color coding: green tones for correct/good, red tones for incorrect/bad
+- A dividing line or visual separator between the two sides
+- Can be photorealistic or illustrated — whichever communicates the comparison more clearly
+
+EDUCATIONAL FOCUS:
+- The viewer should instantly understand what is right and what is wrong
+- Key differences should be emphasized (circles, arrows, highlights)
+- Suitable for youth ages 11-17
+${SAFETY_SECTION}
+
+SCENE: `;
+  }
 }
 
 function loadManifest(badge: string): DrgManifest {
@@ -95,8 +242,10 @@ function sleep(ms: number): Promise<void> {
 
 async function generateImage(
   image: DrgImage,
-  styleGuide: string,
+  context: string,
 ): Promise<Buffer | null> {
+  const style: ImageStyle = image.style ?? "photo";
+  const styleGuide = buildStyleGuide(context, style);
   const prompt = styleGuide + image.description;
 
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
@@ -215,6 +364,11 @@ Examples:
 async function main() {
   const args = parseArgs();
 
+  if (process.argv.includes("--help")) {
+    printUsage();
+    return;
+  }
+
   if (!args.badge) {
     console.error("Error: --badge <slug> is required.\n");
     printUsage();
@@ -222,7 +376,6 @@ async function main() {
   }
 
   const manifest = loadManifest(args.badge);
-  const styleGuide = buildStyleGuide(manifest.style_context);
   const outputDir = path.resolve(
     `hugo/content/merit-badges/${args.badge}/guide/images`,
   );
@@ -289,9 +442,9 @@ async function main() {
     const pngPath = path.join(outputDir, `${image.id}.png`);
     const progress = `[${i + 1}/${imagesToGenerate.length}]`;
 
-    console.log(`${progress} Generating: ${image.id}...`);
+    console.log(`${progress} Generating: ${image.id} (${image.style ?? "photo"})...`);
 
-    const pngBuffer = await generateImage(image, styleGuide);
+    const pngBuffer = await generateImage(image, manifest.style_context);
     if (!pngBuffer) {
       console.error(`${progress} ✗ Failed: ${image.id}`);
       results.push({ id: image.id, success: false });

@@ -30,6 +30,7 @@
     {
       "id": "rice-method-diagram",
       "file": "req1b.md",
+      "style": "infographic",
       "description": "An illustrated infographic showing the four steps of the RICE method for treating athletic injuries. Four panels in a row: REST (a person sitting down), ICE (an ice pack on an ankle), COMPRESSION (an elastic bandage being wrapped around a knee), ELEVATION (a leg propped up on a pillow). Clean, simple graphic style with bold labels."
     },
     {
@@ -45,6 +46,7 @@
     {
       "id": "healthy-habits-montage",
       "file": "req2b.md",
+      "style": "comparison",
       "description": "A split-screen image. Left side: a Scout sleeping peacefully in a dark bedroom with a clock showing 9 PM on the nightstand. Right side: the same Scout outdoors on a sunny athletic field, taking a drink from a water bottle during a training break. Clean athletic clothing on the right side, pajamas on the left. Contrast between rest and activity."
     },
     {
@@ -75,6 +77,7 @@
     {
       "id": "amateur-pro-contrast",
       "file": "req4c.md",
+      "style": "comparison",
       "description": "A split-screen comparison. Left side: a Scout in clean athletic clothing running on a simple school track with a few classmates, looking happy and determined. Right side: a professional athlete in a team uniform running in a large stadium filled with spectators and bright lights. Both runners shown in mid-stride. Contrast between grassroots and professional athletics."
     },
     {
@@ -85,6 +88,7 @@
     {
       "id": "nine-options-overview",
       "file": "req5.md",
+      "style": "infographic",
       "description": "A wide panoramic illustration showing nine athletic activities in small circular vignettes arranged in a 3x3 grid: a sprinter on a track, a distance runner on a trail, a long jumper over a sand pit, a swimmer in a pool, someone doing pull-ups on a bar, a baseball thrower, a basketball shooter at a hoop, a soccer player kicking, and a weight lifter on a bench. Each vignette has a clean background. Colorful, energetic style."
     },
     {
@@ -120,6 +124,7 @@
     {
       "id": "basketball-court-positions",
       "file": "req5-basketball-shooting.md",
+      "style": "diagram",
       "description": "A bird's-eye view diagram of a basketball court showing the key, free-throw line, three-point arc, and basket. Eight numbered dots mark the shooting positions: two layup spots (left and right), two spots along the key line, two at the elbow (where key meets free-throw line), top of the key, and one on the three-point line. Clean, labeled diagram style with clear markings."
     },
     {

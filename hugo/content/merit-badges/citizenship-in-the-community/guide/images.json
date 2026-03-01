@@ -20,6 +20,7 @@
     {
       "id": "rights-duties-obligations",
       "file": "req1.md",
+      "style": "diagram",
       "description": "A Scout studying a large poster-sized diagram on a classroom wall showing the three pillars of citizenship labeled Rights, Duties, and Obligations, with bullet points under each pillar"
     },
     {
@@ -35,11 +36,13 @@
     {
       "id": "community-landmarks",
       "file": "req2a.md",
+      "style": "illustrated",
       "description": "An illustrated bird's-eye view of a small American town showing labeled community landmarks including a city hall with a flag, a fire station with a red truck, a green park with playground equipment, a library building, and a hospital with a cross symbol"
     },
     {
       "id": "government-org-chart",
       "file": "req2b.md",
+      "style": "diagram",
       "description": "A clean, colorful organizational chart on a whiteboard showing the structure of a typical city government with the Mayor at the top, City Council beside them, and department heads like Police Chief, Fire Chief, and Public Works Director connected by lines below"
     },
     {
@@ -80,6 +83,7 @@
     {
       "id": "community-services-collage",
       "file": "req6.md",
+      "style": "infographic",
       "description": "A four-panel split-scene illustration showing taxpayer-funded services in action: a fire truck with lights on responding to a call, a librarian helping a young patron find a book, a public bus at a stop with passengers boarding, and a park ranger maintaining a nature trail with tools"
     },
     {

@@ -5,6 +5,7 @@
     {
       "id": "family-through-history",
       "file": "_index.md",
+      "style": "comparison",
       "description": "A split illustration showing two scenes side by side. On the left, a historical family from the 1800s working together on a small farm — adults tending crops while children carry baskets and an elder sits nearby. On the right, a diverse modern family gathered around a dinner table in a warm kitchen, laughing and passing dishes. Both scenes convey teamwork and togetherness across eras."
     },
     {
@@ -50,6 +51,7 @@
     {
       "id": "before-after-project",
       "file": "req4.md",
+      "style": "comparison",
       "description": "A split-view image showing a home project transformation. The left side labeled 'Before' shows a cluttered, disorganized hall closet with shoes piled up, coats falling off hooks, and items spilling out. The right side labeled 'After' shows the same closet neatly organized with a shoe rack, properly hung coats, labeled bins on the shelf, and a small basket for accessories. Clean, well-lit photography style."
     },
     {

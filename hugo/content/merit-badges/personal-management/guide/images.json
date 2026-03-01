@@ -55,16 +55,19 @@
     {
       "id": "saving-vs-investing",
       "file": "req4.md",
+      "style": "comparison",
       "description": "A split illustration showing two paths from a starting point. On the left, a safe and steady path leads to a piggy bank labeled Saving, with a small upward arrow showing slow growth. On the right, a path with hills and valleys leads to a growing stock chart labeled Investing, with a larger upward arrow. Clean, educational infographic style."
     },
     {
       "id": "investment-types-overview",
       "file": "req5.md",
+      "style": "infographic",
       "description": "Six illustrated icons arranged in a grid representing different investment types. A stock certificate for stocks, a basket filled with mixed items for mutual funds, a protective umbrella for life insurance, a locked vault for CDs, a classic piggy bank for savings accounts, and an eagle perched on a bond for U.S. savings bonds. Clean, colorful educational illustration style."
     },
     {
       "id": "insurance-protection-shield",
       "file": "req6.md",
+      "style": "infographic",
       "description": "A large illustrated shield divided into four quadrants. Each quadrant contains a clear icon: a car for automobile insurance, a medical cross for health insurance, a house for homeowner's insurance, and a family silhouette for life insurance. The shield has a protective, sturdy appearance. Clean educational illustration style with bold colors."
     },
     {
@@ -75,11 +78,13 @@
     {
       "id": "types-of-borrowing",
       "file": "req7b.md",
+      "style": "infographic",
       "description": "An illustrated chart showing six types of borrowing arranged vertically from lowest to highest interest rate. Each type is represented by a simple icon: a house for mortgage, a car for auto loan, a graduation cap for student loan, a handshake for personal loan, a credit card for credit cards, and a warning triangle for payday loans. Color gradient from green (low rate) to red (high rate). Clean educational infographic."
     },
     {
       "id": "three-cards-comparison",
       "file": "req7c.md",
+      "style": "comparison",
       "description": "Three payment cards displayed side by side on a clean surface. Each card has a distinct color and a label underneath: a blue debit card labeled Spends Your Money, a silver credit card labeled Borrows Money, and a gold charge card labeled Must Pay in Full. Clean, modern illustration with clear typography."
     },
     {
@@ -90,6 +95,7 @@
     {
       "id": "debt-payoff-strategies",
       "file": "req7e.md",
+      "style": "comparison",
       "description": "A side-by-side illustration comparing two debt payoff methods. On the left, the Debt Avalanche shows debt bars arranged by interest rate from highest to lowest with an arrow pointing down. On the right, the Debt Snowball shows debt bars arranged by balance from smallest to largest with a growing snowball rolling downhill. Clean educational infographic with clear labels."
     },
     {
@@ -110,6 +116,7 @@
     {
       "id": "compound-interest-growth",
       "file": "extended-learning.md",
+      "style": "infographic",
       "description": "A clean line chart showing two growth curves over time from age 15 to age 65. The blue line starts at age 15 and curves steeply upward. The orange line starts at age 25 and follows a similar curve but ends much lower. Both lines are labeled with starting ages. The area between the curves is lightly shaded to emphasize the difference. X-axis shows age, Y-axis shows dollar amounts. Educational infographic style."
     },
     {

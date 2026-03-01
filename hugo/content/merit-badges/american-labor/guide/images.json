@@ -40,16 +40,19 @@
     {
       "id": "adversarial-vs-cooperative",
       "file": "req4.md",
+      "style": "comparison",
       "description": "A split illustration divided down the middle. On the left (adversarial): two groups sit across from each other at a table with arms crossed and tense postures, a clear dividing line between them. On the right (cooperative): both groups sit together on the same side of a curved table, leaning in and collaborating over shared documents, with smiles and open body language. Clean, contrasting illustration."
     },
     {
       "id": "labor-history-timeline",
       "file": "req5.md",
+      "style": "infographic",
       "description": "An illustrated horizontal timeline stretching across the image, showing key labor milestones from the 1770s to the present. Small icons mark each era: colonial craftsmen, factory smokestacks, picket signs, a gavel for labor laws, and modern workers at computers. The timeline flows left to right with dates marked below. Educational, infographic style with warm colors."
     },
     {
       "id": "global-supply-chain",
       "file": "req6.md",
+      "style": "infographic",
       "description": "An illustrated world map showing global trade and supply chain connections. Dotted lines and arrows connect continents, with small icons along the routes: factories in Asia, cargo ships on the ocean, trucks in North America, and retail stores. Workers of different nationalities are shown at various points along the chain. Clean, colorful infographic illustration style."
     },
     {
@@ -60,11 +63,13 @@
     {
       "id": "stakeholder-web",
       "file": "req8.md",
+      "style": "infographic",
       "description": "An illustrated diagram showing a business building at the center with lines radiating outward to different stakeholder groups arranged in a circle: business owners in suits, stockholders with charts, customers shopping, employees at work, a union representative, community members, and a public official at a desk. Each group is depicted with a small icon and label. Clean, infographic-style illustration."
     },
     {
       "id": "career-paths-labor",
       "file": "req9.md",
+      "style": "infographic",
       "description": "An illustrated career map showing different labor relations career paths branching out from a central crossroads. Each branch leads to a different career with a small icon: a mediator at a table, an HR manager at a desk, a union organizer speaking to a crowd, a lawyer with a briefcase, and a government official. The paths are drawn like a road map with clear labels. Warm, inviting illustration style."
     },
     {

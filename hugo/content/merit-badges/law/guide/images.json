@@ -10,11 +10,13 @@
     {
       "id": "scales-of-justice-cityscape",
       "file": "_index.md",
+      "style": "illustrated",
       "description": "A stylized illustration of the golden scales of justice in the foreground, perfectly balanced, with a modern city skyline behind it. The scene symbolizes law's role in an organized society. Clear sky, warm lighting, clean graphic style."
     },
     {
       "id": "law-sources-diagram",
       "file": "req1.md",
+      "style": "diagram",
       "description": "An illustrated educational diagram showing five sources of law branching out from a central wooden gavel icon. The five branches are labeled Constitution, Statutes, Case Law, Regulations, and Treaties, each with a small representative icon (scroll, capitol building, judge's bench, document, handshake). Clean, colorful infographic style suitable for teens."
     },
     {
@@ -30,6 +32,7 @@
     {
       "id": "courtroom-split-view",
       "file": "req3.md",
+      "style": "illustrated",
       "description": "An illustrated courtroom scene viewed from above, with the room visually divided into two halves. On the left side, a prosecutor stands at a podium facing a judge, representing a criminal case. On the right side, two opposing parties face each other with their attorneys, representing a civil case. The judge sits at the center bench. Clean, educational illustration style with clear visual contrast between the two sides."
     },
     {
@@ -60,6 +63,7 @@
     {
       "id": "law-career-collage",
       "file": "req9.md",
+      "style": "infographic",
       "description": "A four-panel collage showing diverse law-related professionals at work. Top left: a forensic scientist in a lab coat examining evidence under a microscope. Top right: a court reporter typing on a stenograph machine. Bottom left: a police officer on community patrol talking to a citizen. Bottom right: a paralegal reviewing legal documents at a desk surrounded by files. Each panel is distinct but connected, professional atmosphere."
     },
     {
@@ -70,6 +74,7 @@
     {
       "id": "areas-of-law-icons",
       "file": "req11.md",
+      "style": "infographic",
       "description": "A grid of six simple, colorful illustrated icons representing different areas of law on a clean white background. Icons include: a computer chip for Information Technology law, a globe for International law, a green leaf for Environmental law, a family silhouette for Family law, a glowing lightbulb for Intellectual Property law, and a padlock for Privacy law. Clean flat design style, vibrant colors, educational infographic aesthetic."
     },
     {

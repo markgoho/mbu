@@ -10,11 +10,13 @@
     {
       "id": "types-of-aircraft-lineup",
       "file": "_index.md",
+      "style": "infographic",
       "description": "A panoramic illustration showing four types of aircraft side by side in separate panels against a blue sky: a white and blue commercial jetliner (Boeing 737), a small red and white single-engine Cessna, a military green helicopter (Black Hawk style), and a modern white quadcopter drone with a camera gimbal underneath. Each aircraft is in flight."
     },
     {
       "id": "aircraft-types-comparison",
       "file": "req1a.md",
+      "style": "infographic",
       "description": "Three panels showing different aircraft types: Left panel shows a white Cessna 172 in flight over green farmland. Center panel shows a red search-and-rescue helicopter hovering above a forest clearing with its rotor blades spinning. Right panel shows a modern DJI-style quadcopter drone with a camera, hovering at eye level against a clear sky."
     },
     {
@@ -25,26 +27,31 @@
     {
       "id": "fixed-vs-rotary-comparison",
       "file": "req1c.md",
+      "style": "comparison",
       "description": "A side-by-side educational comparison. On the left, a Cessna 172 in level flight with blue arrows showing airflow streaming horizontally over the fixed wings from front to back. On the right, a helicopter hovering in place with blue arrows showing air being pushed downward through the spinning rotor blades. Both aircraft are shown against a light blue sky with simple, clear arrow annotations."
     },
     {
       "id": "piston-engine-diagram",
       "file": "req1d.md",
+      "style": "diagram",
       "description": "A simplified, colorful cutaway diagram of a four-cylinder horizontally opposed aircraft piston engine. The four cylinders are shown with pistons visible inside. The crankshaft runs through the center connecting to a two-blade propeller at the front. Key components are labeled with clean lines: cylinders, pistons, crankshaft, propeller, spark plugs. The style is educational and easy to read, like a textbook illustration."
     },
     {
       "id": "four-forces-diagram",
       "file": "req1e.md",
+      "style": "diagram",
       "description": "A clean educational diagram of a small single-engine airplane in level flight viewed from the side. Four large, color-coded arrows show the forces: a green arrow labeled LIFT pointing straight up from the wings, a red arrow labeled WEIGHT pointing straight down from the center of the aircraft, a blue arrow labeled THRUST pointing forward from the propeller, and an orange arrow labeled DRAG pointing backward from the tail. The background is a simple light blue sky."
     },
     {
       "id": "airfoil-cross-section",
       "file": "req1f.md",
+      "style": "diagram",
       "description": "A clean cross-section diagram of an airplane wing airfoil shape. The airfoil has a rounded leading edge on the left and a thin, pointed trailing edge on the right. The upper surface is noticeably more curved than the flatter lower surface. Thin blue streamlines show airflow passing over and under the airfoil, with the lines above being more closely spaced (indicating faster flow and lower pressure). Labels point out: leading edge, trailing edge, chord line (dashed), and indicate high pressure below and low pressure above."
     },
     {
       "id": "control-surfaces-labeled",
       "file": "req1g.md",
+      "style": "diagram",
       "description": "A three-quarter overhead view of a single-engine Cessna-style airplane showing all control surfaces clearly labeled with arrows. The ailerons are highlighted on the outer trailing edge of each wing. The elevator is highlighted on the horizontal tail. The rudder is highlighted on the vertical tail fin. Small red arrows show the direction each surface deflects. Flaps are also labeled on the inboard trailing edge of the wings. The style is clean and educational."
     },
     {
@@ -75,6 +82,7 @@
     {
       "id": "pilot-career-ladder",
       "file": "req5c.md",
+      "style": "infographic",
       "description": "A visual infographic showing the pilot certification pathway as an ascending staircase or ladder. Five steps rise from bottom to top: Student Pilot (age 16), Private Pilot + Instrument Rating (age 17), Commercial Pilot (age 18), CFI — Certified Flight Instructor (age 18), and ATP — Airline Transport Pilot (age 23). Each step has a small icon: a student book, a small plane, a dollar sign, a teaching cap, and an airliner. The design is clean, modern, and easy to read."
     },
     {

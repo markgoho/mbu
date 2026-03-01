@@ -45,6 +45,7 @@
     {
       "id": "tick-removal-technique",
       "file": "req1c.md",
+      "style": "illustrated",
       "description": "A close-up instructional illustration showing the correct technique for removing a tick. Fine-tipped tweezers grasp the tick as close to the skin surface as possible. An arrow indicates pulling straight upward with steady pressure. Clean, clear medical-illustration style against a simple background."
     },
     {
@@ -145,6 +146,7 @@
     {
       "id": "ideal-campsite-labeled",
       "file": "req6c.md",
+      "style": "diagram",
       "description": "A bird's-eye illustrated view of an ideal campsite layout. A tent is positioned on level ground behind a cluster of trees that serve as a windbreak. A cooking area with a camp stove is set up downwind, about 200 feet from the tent. A bear bag hangs from a tree further away. A stream runs through the scene at a safe distance from all camp elements. Clean, informative diagram style."
     },
     {
@@ -160,6 +162,7 @@
     {
       "id": "pack-fitting-diagram",
       "file": "req6d.md",
+      "style": "annotated-photo",
       "description": "A Scout wearing a properly fitted internal-frame backpack shown from the side profile. Visual labels point to key fit areas: the hip belt sitting on the hip bones, shoulder straps wrapping over the shoulders, load lifter straps angling at 45 degrees from shoulder to pack top, and the sternum strap across the chest. Clean instructional style."
     },
     {
@@ -170,11 +173,13 @@
     {
       "id": "ground-bed-layers",
       "file": "req6e.md",
+      "style": "diagram",
       "description": "A cutaway cross-section illustration showing the layers of a comfortable camping ground bed from bottom to top: a waterproof ground cloth, the tent floor, a sleeping pad (inflatable style), and a sleeping bag laid on top. Each layer is labeled. Clean educational illustration style."
     },
     {
       "id": "backpack-packing-zones",
       "file": "req7.md",
+      "style": "diagram",
       "description": "A cutaway diagram of a backpack showing four labeled packing zones. The bottom compartment contains a sleeping bag. The middle core zone (close to the back) holds heavy items like food and a stove. The top zone contains rain gear and snacks. Side pockets hold water bottles, and the lid pocket shows a first-aid kit and headlamp. Color-coded zones."
     },
     {
@@ -245,6 +250,7 @@
     {
       "id": "before-after-cleanup",
       "file": "req9c.md",
+      "style": "comparison",
       "description": "A split-screen before-and-after comparison of a campsite area. The left half shows the area cluttered with scattered litter, an unauthorized fire ring, and trampled vegetation. The right half shows the exact same area cleaned up — no trash, the fire ring removed, and the ground raked smooth. Clear visual transformation."
     },
     {

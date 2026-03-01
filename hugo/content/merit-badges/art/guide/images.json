@@ -20,16 +20,19 @@
     {
       "id": "elements-of-art-overview",
       "file": "req2.md",
+      "style": "infographic",
       "description": "A clean, educational infographic-style illustration divided into seven sections, each labeled and demonstrating one element of art: LINE (various types of lines — straight, curved, zigzag, thick, thin), VALUE (a gradient strip from white to black), SHAPE (geometric and organic shapes — circles, triangles, leaves, clouds), FORM (a shaded sphere showing 3D depth), SPACE (a simple one-point perspective drawing of a road), COLOR (a color wheel with primary, secondary, and tertiary colors), TEXTURE (close-up patches showing rough, smooth, bumpy, and woven surfaces). The overall design is colorful and well-organized on a light background."
     },
     {
       "id": "positive-negative-space",
       "file": "req2.md",
+      "style": "comparison",
       "description": "A split-panel educational illustration demonstrating positive and negative space. On the left, a solid black vase or chalice shape centered on a white background, with 'Positive Space' labeled. On the right, the same image but with the white background highlighted to show that the negative space between the vase edges creates the silhouette of two face profiles looking at each other, with 'Negative Space' labeled. Clean, high-contrast design on a neutral background."
     },
     {
       "id": "principles-of-design-grid",
       "file": "req3.md",
+      "style": "infographic",
       "description": "A six-panel grid illustration, each panel demonstrating one principle of design with a simple, clear visual example and a label beneath. RHYTHM: repeating colorful arches in a row. BALANCE: a symmetrical butterfly with matching wing patterns. PROPORTION: a large oak tree beside a small house showing size relationships. VARIETY: a collection of autumn leaves in different shapes, sizes, and colors. EMPHASIS: one bright red circle standing out among several gray circles. UNITY: a harmonious landscape scene where all elements (sky, mountains, trees, river) share a cohesive color palette. Clean, modern illustration style."
     },
     {

@@ -10,6 +10,7 @@
     {
       "id": "sustainability-pillars",
       "file": "_index.md",
+      "style": "illustrated",
       "description": "An illustrated educational diagram showing the three pillars of sustainability. Three columns labeled Environment, Economy, and Society support a balanced platform with a healthy Earth globe on top. The Environment column features trees, water, and wildlife. The Economy column shows buildings, gears, and solar panels. The Society column depicts diverse people, schools, and homes. Clean, modern infographic style with green, blue, and warm tones."
     },
     {
@@ -30,16 +31,19 @@
     {
       "id": "water-cycle-diagram",
       "file": "req2b.md",
+      "style": "diagram",
       "description": "An illustrated cross-section diagram showing the journey of water from source to home and back. On the left, a river flows into a water treatment plant with tanks and filters. Pipes lead to a neighborhood of houses. From the houses, drain pipes lead to a wastewater treatment facility, which then returns clean water to the river. Labels mark each stage. Clean, educational infographic style with blue water tones."
     },
     {
       "id": "drought-vs-flood",
       "file": "req2c.md",
+      "style": "comparison",
       "description": "A split-view illustration. The left half shows a dried, cracked lakebed under a hot sun with parched brown earth and a withered tree. The right half shows a flooded suburban street with water reaching partway up houses and a street sign partially submerged. The dividing line runs down the center. The contrast illustrates the extremes of too little and too much water."
     },
     {
       "id": "food-journey-map",
       "file": "req3a.md",
+      "style": "illustrated",
       "description": "An illustrated stylized map showing the journey of different foods from their sources to a grocery store. A banana travels by ship from a tropical farm, a tomato comes by truck from a nearby farm, fish arrives from an ocean fishing vessel, and wheat arrives by train from a grain field. Dotted lines trace each route converging on a grocery store in the center. Colorful, educational map style."
     },
     {
@@ -55,6 +59,7 @@
     {
       "id": "sustainable-community-sketch",
       "file": "req4a.md",
+      "style": "illustrated",
       "description": "A bird's-eye view illustration of a sustainable community. Mixed housing types include apartments, townhomes, and single-family homes with solar panels on rooftops. A walkable town center has shops and a farmers market. Bike lanes with green paint run along the main road. A bus line passes through. Parks and community gardens provide green space. A wind turbine is visible on a nearby hill. Clean, architectural illustration style."
     },
     {
@@ -70,11 +75,13 @@
     {
       "id": "energy-sources-comparison",
       "file": "req5a.md",
+      "style": "comparison",
       "description": "An illustrated landscape showing different energy sources side by side. From left to right: a coal power plant with smokestacks and a slight haze, modern wind turbines on green hills, a solar panel array in a sunny field, and a hydroelectric dam with a river flowing through. The sky transitions from hazy gray on the coal plant side to clear blue on the renewable side. Educational comparison style."
     },
     {
       "id": "family-energy-use",
       "file": "req5b.md",
+      "style": "illustrated",
       "description": "A cutaway illustration of a two-story house showing different energy uses in each room. The kitchen has an oven, refrigerator, and microwave with small energy icons. A living room has a TV and gaming console. Bedrooms show phone chargers and desk lamps. The basement shows a water heater and HVAC system. A car sits in the driveway. Warm, infographic style with energy flow indicators."
     },
     {
@@ -90,11 +97,13 @@
     {
       "id": "stuff-impact-infographic",
       "file": "req6b.md",
+      "style": "infographic",
       "description": "An illustrated infographic showing the lifecycle of consumer goods in a horizontal flow. From left: resource extraction with a mine and forest, then a factory with conveyor belts, then a cargo ship and delivery truck, then a home with products in use, and finally a landfill with piled waste. Arrows connect each stage. Small icons show water use, energy use, and emissions at each stage. Clean infographic style."
     },
     {
       "id": "plastic-recycling-numbers",
       "file": "req6c.md",
+      "style": "infographic",
       "description": "A clean educational illustration showing the seven plastic recycling symbols in a grid. Each cell shows the recycling triangle with the number (1-7), the plastic abbreviation (PET, HDPE, PVC, LDPE, PP, PS, Other), and a small icon of a common product made from that plastic (water bottle, milk jug, pipe, bag, yogurt cup, foam cup, mixed container). Clear labels and a green color scheme."
     },
     {
@@ -105,16 +114,19 @@
     {
       "id": "planetary-systems-web",
       "file": "req7b.md",
+      "style": "diagram",
       "description": "An illustrated web diagram showing Earth's eight life-support systems connected by arrows. Earth sits at the center, surrounded by labeled nodes: Soil, Climate, Freshwater, Atmospheric, Nutrient Cycles, Oceanic, Ecosystems, and Species. Lines and arrows connect the nodes to show interactions. Each node has a small icon (tree for ecosystems, waves for oceanic, sun for climate, etc.). Clean, educational diagram style with blue and green tones."
     },
     {
       "id": "product-lifecycle-circle",
       "file": "req7c.md",
+      "style": "infographic",
       "description": "A circular diagram showing the five stages of a product life cycle arranged in a ring. Clockwise from the top: Design (pencil and blueprint icon), Sourcing (mine and forest icon), Production (factory icon), Use (person using product icon), and Disposal/Reuse (recycling arrows and landfill icon). Arrows connect each stage in a continuous loop. A dashed arrow from Disposal back to Sourcing represents the circular economy. Clean infographic style."
     },
     {
       "id": "population-growth-timeline",
       "file": "req7d.md",
+      "style": "infographic",
       "description": "An illustrated timeline showing world population growth from 1800 to projected 2100. The timeline runs left to right with milestone markers: 1 billion (1800), 3 billion (1960), 8 billion (2023), projected peak near 10.4 billion (2080s). Below the timeline, small icons represent growing resource consumption: water drops, energy bolts, and food items increasing in size. Clean, data-visualization style."
     },
     {
@@ -125,6 +137,7 @@
     {
       "id": "temperature-change-globe",
       "file": "req7f.md",
+      "style": "infographic",
       "description": "A stylized globe showing global temperature change patterns. The globe uses a color gradient from cool blue (areas with less warming) to deep red-orange (areas with significant warming). The Arctic region shows the most intense red coloring. A legend bar at the bottom shows the temperature scale from -0.5 to +3 degrees Celsius. Clean, scientific visualization style against a dark background."
     },
     {

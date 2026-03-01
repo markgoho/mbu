@@ -15,6 +15,7 @@
     {
       "id": "breed-comparison-chart",
       "file": "req1.md",
+      "style": "illustrated",
       "description": "An educational illustration showing representative animals from each of the seven livestock categories standing side by side for scale comparison: a tall draft horse, a black-and-white Holstein dairy cow, a muscular red Angus beef steer, a white woolly sheep, a brown-and-white Boer goat, a pink Yorkshire pig, and a white Leghorn chicken. Clean white background, labeled clearly."
     },
     {
@@ -25,6 +26,7 @@
     {
       "id": "digestive-tract-comparison",
       "file": "req3.md",
+      "style": "diagram",
       "description": "A side-by-side educational diagram showing simplified outlines of four digestive systems in a textbook illustration style: a ruminant (cow) with four labeled stomach compartments (rumen, reticulum, omasum, abomasum), a horse with its large cecum highlighted, a pig with its simple single-compartment stomach, and a chicken with its crop and gizzard labeled. Arrows show direction of food flow. Clean, colorful, educational poster style."
     },
     {
@@ -40,6 +42,7 @@
     {
       "id": "pure-vs-crossbreed-diagram",
       "file": "req5b.md",
+      "style": "diagram",
       "description": "An educational diagram showing two breeding paths side by side. Left path: a black Angus bull plus a black Angus cow equals a black Angus calf, labeled 'Pure Breeding.' Right path: a black Angus bull plus a red-and-white Hereford cow equals a black calf with a white face (black baldy), labeled 'Cross Breeding.' Clean illustration style with arrows showing the breeding combinations."
     },
     {
@@ -50,6 +53,7 @@
     {
       "id": "six-specialty-options",
       "file": "req6.md",
+      "style": "infographic",
       "description": "Six equal-sized panels arranged in a 2x3 grid, each showing a different livestock specialty: a Hereford beef steer standing in a feedlot with grain bunks visible, a Holstein cow being milked in a parlor, a bay horse in a green paddock with white fencing, white sheep on a hillside with a shepherd, pink pigs in a clean indoor pen with straw, and white chickens in a bright, well-ventilated coop."
     },
     {

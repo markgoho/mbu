@@ -15,11 +15,13 @@
     {
       "id": "architecture-styles-collage",
       "file": "_index.md",
+      "style": "infographic",
       "description": "A visual comparison showing four different architectural styles arranged in a grid: a Greek Revival building with white columns and a triangular pediment (top left), a modern glass skyscraper reflecting the sky (top right), a Gothic cathedral with pointed arches and flying buttresses (bottom left), and a Frank Lloyd Wright prairie-style home with horizontal lines and wide overhanging eaves (bottom right). Each building is photographed in warm natural light."
     },
     {
       "id": "architectural-styles-guide",
       "file": "req1a.md",
+      "style": "illustrated",
       "description": "An educational illustration showing six different American architectural styles side by side as small building facades: a symmetrical Colonial home with centered door, an ornate colorful Victorian with turret, a low Craftsman bungalow with wide porch, an Art Deco building with geometric zigzag patterns, a Mid-Century Modern house with flat roof and large windows, and a Contemporary building with angular glass walls. Each is labeled with its style name. Clean, clear illustration style suitable for a study guide."
     },
     {
@@ -35,11 +37,13 @@
     {
       "id": "green-building-features",
       "file": "req2.md",
+      "style": "diagram",
       "description": "A cutaway diagram illustration of a modern green building showing labeled sustainable features: solar panels on the roof, a section of green roof with growing plants, a rainwater collection barrel connected to downspouts, large south-facing windows for natural lighting, thick insulation visible in a cross-section of the wall, and a ground-source heat pump system underground. The illustration uses a clean, educational style with clear labels and arrows pointing to each feature. Light blue sky background."
     },
     {
       "id": "adaptive-reuse-example",
       "file": "req2.md",
+      "style": "comparison",
       "description": "A split-image before-and-after comparison of adaptive reuse: on the left, an old red brick industrial warehouse with boarded-up windows and a faded painted sign, looking abandoned but structurally sound. On the right, the same building transformed into a vibrant community space with new large windows, outdoor café seating under string lights, potted plants and greenery along the entrance, and people walking in and out. The brick exterior is preserved but cleaned and restored. Warm evening lighting on the 'after' side."
     },
     {
@@ -55,6 +59,7 @@
     {
       "id": "floor-plan-example",
       "file": "req4.md",
+      "style": "diagram",
       "description": "A clean, neatly hand-drawn floor plan on graph paper viewed from above on a desk. The floor plan shows a rectangular bedroom with double-line walls, a door with a quarter-circle swing arc, two windows shown as three parallel lines in the wall, a closet with a sliding door, and a built-in bookshelf along one wall. Dimension lines with measurements are marked along the walls. A title block in the bottom-right corner shows a name, date, room name (Bedroom), and scale (1/4 inch = 1 foot). A mechanical pencil and ruler lie beside the graph paper."
     },
     {
@@ -65,6 +70,7 @@
     {
       "id": "architect-tools-evolution",
       "file": "extended-learning.md",
+      "style": "infographic",
       "description": "A visual timeline showing the evolution of architecture tools arranged left to right on a long wooden desk: on the far left, traditional hand drafting tools including a T-square, triangular scale ruler, compass, French curves, and fine-point mechanical pencils on a tilted drafting table. In the middle, a 1990s-era CAD workstation with a bulky CRT monitor showing wireframe drawings and a digitizing tablet. On the far right, a modern setup with a large curved monitor displaying colorful BIM software with a 3D building model, and a small white 3D-printed architectural model sitting on the desk beside it. Warm studio lighting, clean organized workspace."
     }
   ]

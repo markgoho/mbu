@@ -40,6 +40,7 @@
     {
       "id": "fridge-organization",
       "file": "req1c.md",
+      "style": "annotated-photo",
       "description": "A well-organized open refrigerator viewed from the front. Raw meats are on the bottom shelf in sealed containers, dairy products on a middle shelf, vegetables in the crisper drawers, and eggs in their carton on a shelf. Labels or arrows point to each section showing proper placement. Clean, bright interior."
     },
     {
@@ -70,6 +71,7 @@
     {
       "id": "sugar-in-foods",
       "file": "req2b.md",
+      "style": "infographic",
       "description": "A clean tabletop showing four common foods lined up in a row (a soda can, a container of flavored yogurt, a granola bar, and a bottle of ketchup). Next to each item, stacks of sugar cubes represent the sugar content — tallest stack by the soda, decreasing to the smallest by the ketchup. Educational and visual, clean white background."
     },
     {
@@ -80,21 +82,25 @@
     {
       "id": "healthy-vs-typical-plate",
       "file": "req2d.md",
+      "style": "comparison",
       "description": "Side-by-side comparison of two dinner plates on a table. Left plate: a typical teen meal of a burger, fries, and a glass of soda. Right plate: a MyPlate-balanced meal of grilled chicken breast, steamed broccoli, brown rice, a side of fruit, and a glass of water. Both plates are well-presented. Clean table background."
     },
     {
       "id": "nutrition-label-annotated",
       "file": "req2e.md",
+      "style": "annotated-photo",
       "description": "A large, clearly readable Nutrition Facts label on a white background. Small arrows and labels point to each key line item: Calories, Total Fat, Saturated Fat, Trans Fat, Cholesterol, Sodium, Total Carbohydrate, Dietary Fiber, Total Sugars, Added Sugars, and Protein. Educational diagram style, clean and easy to read."
     },
     {
       "id": "cooking-methods-grid",
       "file": "req3a.md",
+      "style": "infographic",
       "description": "A 2x3 grid of cooking method scenes: (1) a pot of boiling pasta on a stove, (2) a skillet with sunny-side-up eggs, (3) an oven with golden biscuits baking inside, (4) vegetables on a charcoal grill, (5) a Dutch oven sitting on charcoal briquettes, (6) foil packets on a campfire grate. Each scene is bright and appetizing."
     },
     {
       "id": "stove-vs-fire-comparison",
       "file": "req3b.md",
+      "style": "comparison",
       "description": "A split-image composition. Left side: a camp stove on a picnic table with a pot of water coming to a boil, clean and controlled. Right side: a campfire cooking setup with a Dutch oven nestled in hot coals and a grate over the fire ring. Both scenes are at a campsite during daytime."
     },
     {
@@ -175,6 +181,7 @@
     {
       "id": "leave-no-trace-cooking",
       "file": "req5h.md",
+      "style": "comparison",
       "description": "A before-and-after split image of a campsite cooking area. Left side shows Scouts actively cooking at a fire ring with equipment spread around. Right side shows the exact same spot after cleanup — completely clean, no trace of cooking activity, natural ground visible. The contrast is dramatic and clear."
     },
     {
@@ -215,6 +222,7 @@
     {
       "id": "heat-transfer-diagram",
       "file": "extended-learning.md",
+      "style": "diagram",
       "description": "An educational diagram showing three types of heat transfer in cooking, arranged side by side. Left: conduction — a steak sizzling on a hot cast-iron skillet with heat arrows showing contact transfer. Center: convection — hot air circulating around food inside an oven with curved arrows. Right: radiation — wavy heat lines going from a glowing broiler element down to food on a pan below. Clean, educational illustration style."
     }
   ]

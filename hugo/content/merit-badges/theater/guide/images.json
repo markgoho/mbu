@@ -60,6 +60,7 @@
     {
       "id": "blocking-diagram",
       "file": "req3b.md",
+      "style": "diagram",
       "description": "A hand-drawn blocking diagram on graph paper. The diagram shows a rectangular stage layout from above with labeled furniture pieces (a couch, a table, a chair). Arrows in different colors indicate actor movements, with character initials (M, J, S) marking positions. Stage directions are noted: SR, SL, US, DS. The drawing is neat and detailed with pencil."
     },
     {
@@ -90,6 +91,7 @@
     {
       "id": "character-makeup-comparison",
       "file": "req3e.md",
+      "style": "comparison",
       "description": "A side-by-side comparison showing a teenager before and after stage makeup application as a historical figure. The left side shows the natural face with no makeup. The right side shows the same person transformed with stage makeup — aged features using highlight and shadow techniques, styled hair, and period-appropriate details. The transformation is dramatic and impressive."
     },
     {
@@ -155,16 +157,19 @@
     {
       "id": "stage-types-diagram",
       "file": "req5.md",
+      "style": "diagram",
       "description": "A clean, educational diagram showing three stage types side by side. Left: a proscenium stage with the audience on one side and a frame around the stage opening. Center: a thrust stage extending into the audience with seating on three sides. Right: an arena stage with the audience surrounding all four sides. Each diagram is labeled clearly and the audience areas are shaded in a contrasting color. Simple, architectural illustration style."
     },
     {
       "id": "fly-system-diagram",
       "file": "req5.md",
+      "style": "diagram",
       "description": "A cutaway side-view technical diagram of a theater showing the fly system above the stage. The diagram labels key components: battens (horizontal pipes), lift lines (cables running to pulleys), counterweights on a weight rail at the side, the locking rail, and the fly gallery where the operator stands. Below the fly system, the stage floor is visible with a flat piece of scenery hanging from one batten. The audience seating area is shown in cross-section to the left."
     },
     {
       "id": "labeled-theater-diagram",
       "file": "req5.md",
+      "style": "diagram",
       "description": "A detailed cross-section diagram of a proscenium theater with key areas labeled. Labels include: proscenium arch (the frame around the stage), fly loft (space above the stage), cyclorama (curved backdrop at the rear), wings (sides of the stage hidden from audience), apron (stage area in front of the proscenium), orchestra pit, and audience seating. The diagram uses clean lines and contrasting colors to distinguish different areas."
     }
   ]

@@ -10,21 +10,25 @@
     {
       "id": "kinds-of-animation-collage",
       "file": "_index.md",
+      "style": "infographic",
       "description": "A split-panel collage showing five animation styles side by side: a hand-drawn pencil sketch of a cartoon character on paper, a clay stop-motion figure of a small animal on a miniature set, a colorful 2D digital character displayed on a tablet screen, a 3D CGI robot model with visible wireframe overlay, and a motion graphics title card with animated geometric text. Each panel is cleanly separated."
     },
     {
       "id": "persistence-of-vision-frames",
       "file": "req1a.md",
+      "style": "diagram",
       "description": "An educational diagram showing six simple drawings of a bouncing ball in slightly different positions arranged in a horizontal sequence. Arrows between each frame show progression. The ball is squashed at the bottom position and stretched at the top, with faint dotted arc lines showing the path of motion. Clean white background with clear labels."
     },
     {
       "id": "animation-timeline",
       "file": "req1b.md",
+      "style": "infographic",
       "description": "An illustrated horizontal timeline spanning from the 1830s to the present day, showing key milestones in animation history. Includes small illustrations at each milestone: a zoetrope device in the 1830s, a hand-drawn film frame from the early 1900s, Mickey Mouse in the 1930s, a computer-animated 3D character in the 1990s, and a modern digital tablet with animation software today. Clean infographic style with dates clearly labeled."
     },
     {
       "id": "squash-stretch-bounce",
       "file": "req2.md",
+      "style": "diagram",
       "description": "A clear educational diagram showing the squash and stretch animation principle using a bouncing ball. The ball is shown in five positions along a bouncing arc: normal shape at the top, stretched vertically as it falls, squashed flat at the moment of ground impact, stretched again as it bounces up, and normal at the peak. Faint guide lines show the arc path. Clean white background."
     },
     {

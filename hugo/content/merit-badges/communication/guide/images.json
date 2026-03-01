@@ -35,6 +35,7 @@
     {
       "id": "speech-structure-diagram",
       "file": "req3.md",
+      "style": "diagram",
       "description": "A simple visual diagram showing the three parts of a speech — Opening, Body, and Closing — with brief labels and an arrow flowing from top to bottom"
     },
     {
@@ -80,6 +81,7 @@
     {
       "id": "communication-careers-montage",
       "file": "req9.md",
+      "style": "infographic",
       "description": "A four-panel illustration showing different communication careers: a journalist with a microphone, a web designer at a computer, a public speaker at a conference podium, and a video producer behind a camera"
     },
     {

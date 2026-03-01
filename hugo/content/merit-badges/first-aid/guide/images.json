@@ -20,6 +20,7 @@
     {
       "id": "check-call-care",
       "file": "req1a.md",
+      "style": "infographic",
       "description": "An infographic-style three-panel illustration showing the Check-Call-Care sequence: first panel shows a Scout looking around a park scene assessing for safety, second panel shows a Scout calmly speaking into a cell phone, third panel shows a Scout kneeling beside a seated person providing first aid with gloves on"
     },
     {
@@ -35,6 +36,7 @@
     {
       "id": "glove-removal",
       "file": "req1c.md",
+      "style": "illustrated",
       "description": "Step-by-step illustration showing the correct pinch-and-peel technique for removing disposable nitrile gloves safely, with four sequential hand positions showing pinching the wrist, peeling off the first glove inside-out, tucking a finger under the second glove, and the final inside-out bundle ready for disposal"
     },
     {
@@ -50,6 +52,7 @@
     {
       "id": "head-tilt-chin-lift",
       "file": "req1d.md",
+      "style": "illustrated",
       "description": "Close-up illustration showing the head-tilt chin-lift airway technique being performed on a CPR training mannequin, with one hand on the forehead tilting back and two fingers under the chin lifting upward, viewed from the side"
     },
     {
@@ -95,6 +98,7 @@
     {
       "id": "burn-degrees",
       "file": "req3a.md",
+      "style": "diagram",
       "description": "An educational illustration showing the three degrees of thermal burns side by side, with simplified cross-section diagrams of skin layers (epidermis, dermis, subcutaneous tissue) and visual indicators of superficial redness, partial-thickness blistering, and full-thickness damage"
     },
     {
@@ -105,6 +109,7 @@
     {
       "id": "cold-weather-layers",
       "file": "req3b.md",
+      "style": "annotated-photo",
       "description": "A Scout dressed in proper cold-weather layering system standing on a snowy trail, with labeled callout indicators pointing to the moisture-wicking base layer, insulating mid layer, and waterproof outer shell jacket"
     },
     {
@@ -115,6 +120,7 @@
     {
       "id": "tick-removal",
       "file": "req3c.md",
+      "style": "illustrated",
       "description": "A close-up instructional illustration showing fine-tipped tweezers grasping a tick as close to the skin surface as possible, with an arrow indicating steady upward pulling motion, on a forearm with a small red mark around the tick"
     },
     {
@@ -180,6 +186,7 @@
     {
       "id": "aed-pad-placement",
       "file": "req7b.md",
+      "style": "illustrated",
       "description": "An instructional illustration showing correct AED pad placement on an adult training mannequin chest, one pad on the upper right below the collarbone and one on the lower left side below the armpit, with a portable AED device visible beside the mannequin"
     },
     {
@@ -190,6 +197,7 @@
     {
       "id": "injury-comparison",
       "file": "req8a.md",
+      "style": "diagram",
       "description": "An educational diagram showing simplified side-by-side illustrations of musculoskeletal injuries: a strained muscle, a torn muscle, a ruptured tendon, a sprained ligament, a dislocated joint, a simple closed fracture, and a compound open fracture, each with labeled anatomical structures"
     },
     {
@@ -220,6 +228,7 @@
     {
       "id": "heat-illness-spectrum",
       "file": "req11.md",
+      "style": "infographic",
       "description": "An educational infographic showing the progression of heat illness from left to right: heat cramps with a person holding their calf muscle, heat exhaustion with a person sitting in shade looking pale and sweaty, and heat stroke with a person on the ground with someone calling for help, each stage labeled with key warning signs"
     },
     {
@@ -240,6 +249,7 @@
     {
       "id": "be-fast-stroke",
       "file": "req13.md",
+      "style": "infographic",
       "description": "An educational poster-style illustration showing the BE FAST stroke recognition steps: B for Balance showing a person losing balance, E for Eyes with blurred vision, F for Face with one side drooping, A for Arms with one arm drifting down, S for Speech with jumbled text, T for Time with a clock and phone showing 911"
     },
     {

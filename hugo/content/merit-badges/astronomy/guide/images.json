@@ -35,11 +35,13 @@
     {
       "id": "solar-observation-methods",
       "file": "req1d.md",
+      "style": "infographic",
       "description": "A split illustration showing three safe solar observation methods side by side: (1) A person wearing eclipse glasses looking up at the Sun, (2) A telescope with a white solar filter cap on the front, (3) A pinhole projection setup with cardboard projecting a small image of the Sun onto white paper. Each method is clearly separated and labeled."
     },
     {
       "id": "bortle-scale-comparison",
       "file": "req2.md",
+      "style": "comparison",
       "description": "A dramatic side-by-side comparison of the night sky from two locations. The left half shows a dark rural sky (Bortle 2) with thousands of stars and a vivid Milky Way. The right half shows a city sky (Bortle 8) with only a handful of bright stars visible against an orange-gray sky glow. A horizon line connects both halves."
     },
     {
@@ -50,11 +52,13 @@
     {
       "id": "three-telescope-types",
       "file": "req3b.md",
+      "style": "diagram",
       "description": "A clean educational diagram showing three telescope designs side by side with light paths traced: a refractor (lens at front, eyepiece at back), a Newtonian reflector (mirror at bottom, eyepiece on side), and a compound/Schmidt-Cassegrain (corrector plate at front, mirror at back, eyepiece at back). Light rays are shown entering each telescope and being focused. Labeled clearly."
     },
     {
       "id": "spectrograph-rainbow",
       "file": "req3c.md",
+      "style": "diagram",
       "description": "A prism or diffraction grating splitting a beam of white starlight into a colorful rainbow spectrum. Dark absorption lines are visible at specific wavelengths across the spectrum. The spectrum transitions smoothly from red on one end through orange, yellow, green, blue, to violet on the other end. Labels indicate key absorption lines."
     },
     {
@@ -65,11 +69,13 @@
     {
       "id": "constellation-chart-zodiac",
       "file": "req4a.md",
+      "style": "diagram",
       "description": "A stylized star chart showing several zodiac constellations against a deep blue-black background. Leo, Scorpius, Taurus, and Gemini are shown with their star patterns connected by thin lines and labeled with constellation names and key star names (Regulus, Antares, Aldebaran, Castor, Pollux). Stars are shown as bright dots of varying sizes."
     },
     {
       "id": "star-hopping-patterns",
       "file": "req4b.md",
+      "style": "diagram",
       "description": "A star chart showing three major star-hopping patterns: the Winter Triangle (Sirius, Betelgeuse, Procyon connected by dashed lines), the Summer Triangle (Vega, Deneb, Altair connected by dashed lines), and an arrow curving from the Big Dipper's handle through Arcturus and on to Spica. Stars are labeled and shown at varying brightness. Background is deep blue-black."
     },
     {
@@ -85,16 +91,19 @@
     {
       "id": "five-planets-lineup",
       "file": "req5a.md",
+      "style": "illustrated",
       "description": "An illustrated lineup of the five naked-eye planets in order from the Sun: Mercury (small, gray), Venus (bright, yellowish-white), Mars (reddish-orange), Jupiter (large, banded), and Saturn (golden with prominent rings). Each planet is labeled with its name. They are shown at roughly proportional sizes with artistic styling."
     },
     {
       "id": "planet-visibility-timeline",
       "file": "req5b.md",
+      "style": "infographic",
       "description": "A colorful horizontal timeline chart showing 12 months across the top. Five rows represent Mercury, Venus, Mars, Jupiter, and Saturn. Colored bars indicate periods when each planet is visible in the evening sky. Each planet has a different color. The chart is clean and easy to read with month labels and planet names."
     },
     {
       "id": "retrograde-motion-diagram",
       "file": "req5c.md",
+      "style": "diagram",
       "description": "A diagram showing Earth and Mars orbiting the Sun, with numbered positions showing Earth passing Mars. Above, against a backdrop of stars, the apparent positions of Mars are shown connected by a line that forms a loop — demonstrating retrograde motion. Arrows show the direction of orbital motion. The retrograde loop is highlighted."
     },
     {
@@ -105,6 +114,7 @@
     {
       "id": "labeled-moon-map",
       "file": "req6a.md",
+      "style": "annotated-photo",
       "description": "A detailed photograph or illustration of the full Moon with labels pointing to five dark maria (Mare Tranquillitatis, Mare Serenitatis, Mare Imbrium, Mare Crisium, Oceanus Procellarum) and five craters (Tycho, Copernicus, Kepler, Plato, Aristarchus). Thin lines connect each label to its feature. The image is clear and educational."
     },
     {
@@ -115,16 +125,19 @@
     {
       "id": "moon-orbit-forces",
       "file": "req6c.md",
+      "style": "diagram",
       "description": "A diagram showing the Moon in orbit around Earth. A large arrow points from the Moon toward Earth (labeled Gravity). A second arrow points tangent to the orbit in the direction of motion (labeled Velocity). The curved orbital path is shown as a dashed ellipse. Earth is at the center. The diagram is clean and educational."
     },
     {
       "id": "moon-phases-diagram",
       "file": "req6d.md",
+      "style": "diagram",
       "description": "A circular diagram showing the Moon at eight positions around Earth. Parallel arrows from the left represent sunlight. At each position, the Moon is shown half-lit by the Sun, and a small image shows what the Moon looks like from Earth at that phase. Phases labeled: New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, Waning Crescent."
     },
     {
       "id": "sun-cross-section",
       "file": "req7a.md",
+      "style": "diagram",
       "description": "A cross-section diagram of the Sun showing its internal layers. The core is at the center (labeled Core), surrounded by the Radiative Zone, then the Convective Zone (shown with circular convection cells), then the Photosphere (visible surface), the thin Chromosphere, and the extended Corona. Each layer is labeled with its name and approximate temperature."
     },
     {
@@ -135,6 +148,7 @@
     {
       "id": "star-colors-temperature",
       "file": "req7c.md",
+      "style": "infographic",
       "description": "An illustrated temperature scale showing stars ranging from cool to hot. On the left, a large red star (labeled Betelgeuse, 3,500°C). In the center, a medium yellow star (labeled Capella, 5,000°C). On the right, a bright blue-white star (labeled Rigel, 12,000°C). A temperature gradient bar runs along the bottom from red to blue. Each star is shown at its approximate relative color."
     },
     {
@@ -150,6 +164,7 @@
     {
       "id": "space-telescopes-comparison",
       "file": "extended-learning.md",
+      "style": "comparison",
       "description": "A side-by-side comparison of the Hubble Space Telescope and the James Webb Space Telescope floating in space. Hubble is shown as a silver cylinder with solar panels. Webb is shown with its distinctive gold hexagonal mirror array and diamond-shaped sunshield. The Earth is visible in the background. Labels identify each telescope."
     }
   ]
