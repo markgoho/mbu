@@ -43,6 +43,8 @@
       </div>
     </header>
 
+    {{ partial "discontinued-notice.html" $json }}
+
     {{ with .Description }}
       <div class="badge-description">
         <p>{{ . }}</p>

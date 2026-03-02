@@ -23,6 +23,8 @@
         {{ end }}
       </header>
 
+      {{ partial "discontinued-notice.html" $json }}
+
       {{ if $badgeImage }}
         <div class="badge-featured-image">
           <img

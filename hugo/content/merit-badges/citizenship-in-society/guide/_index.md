@@ -73,7 +73,9 @@ guide_nav:
 
 Being a good citizen is about more than following rules or paying taxes. It is about how you treat the people around you every single day — in your school hallways, on your sports teams, in your Scout troop, and in your community. The Citizenship in Society merit badge challenges you to look at the world through other people's eyes and to become the kind of leader who makes everyone feel like they belong.
 
-This is one of the Eagle-required merit badges, and there is a good reason for that. Scouting believes that true leadership means understanding and respecting the people you lead — all of them, including those whose backgrounds, experiences, and identities are different from your own.
+> **Note:** The Citizenship in Society merit badge was discontinued effective February 27, 2026. Scouts who began working on this badge before that date have until December 31, 2026 to complete it. This guide remains available as a resource for those Scouts.
+
+This badge was introduced as one of the Eagle-required merit badges because Scouting believes that true leadership means understanding and respecting the people you lead — all of them, including those whose backgrounds, experiences, and identities are different from your own.
 
 ## Then and Now
 

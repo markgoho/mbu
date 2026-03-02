@@ -15,6 +15,8 @@ export interface MeritBadge {
   url: string;
   eagle_required: boolean;
   eagle_group?: string;
+  discontinued?: boolean;
+  discontinued_date?: string;
 }
 
 export const MERIT_BADGES: MeritBadge[] = [
@@ -184,7 +186,9 @@ export const MERIT_BADGES: MeritBadge[] = [
     title: "Citizenship in Society",
     slug: "citizenship-in-society",
     url: "https://www.scouting.org/merit-badges/citizenship-in-society/",
-    eagle_required: true,
+    eagle_required: false,
+    discontinued: true,
+    discontinued_date: "2026-02-27",
   },
   {
     id: 25,

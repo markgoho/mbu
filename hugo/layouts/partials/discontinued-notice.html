@@ -1,0 +1,12 @@
+{{ $json := . }}
+{{ if $json.discontinued }}
+  <aside class="discontinued-notice" role="note">
+    <strong>This merit badge has been discontinued</strong>
+    {{ with $json.discontinued_date }}
+      {{ $date := time . }}
+      effective {{ $date.Format "January 2, 2006" }}.
+    {{ end }}
+    Scouts who began working on this badge before the discontinuation date have until December 31, 2026 to complete it.
+    <a href="https://www.scouting.org/program-updates/citizenship-in-society-merit-badge-discontinuance/">Learn more</a>
+  </aside>
+{{ end }}

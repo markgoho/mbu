@@ -56,6 +56,8 @@ interface BadgeData {
   url: string;
   eagle_required?: boolean;
   eagle_group?: string;
+  discontinued?: boolean;
+  discontinued_date?: string;
   pamphlet_url?: string;
   requirements: Requirement[];
 }
@@ -728,6 +730,10 @@ try {
     url: badge.url,
     eagle_required: badge.eagle_required,
     ...(badge.eagle_group !== undefined && { eagle_group: badge.eagle_group }),
+    ...(badge.discontinued === true && { discontinued: badge.discontinued }),
+    ...(badge.discontinued_date !== undefined && {
+      discontinued_date: badge.discontinued_date,
+    }),
     pamphlet_url: llmContent?.pamphlet_url || htmlPamphletUrl,
     requirements: structure,
   };
