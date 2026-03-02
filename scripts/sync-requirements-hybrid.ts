@@ -59,6 +59,7 @@ interface BadgeData {
   discontinued?: boolean;
   discontinued_date?: string;
   pamphlet_url?: string;
+  last_updated?: string;
   requirements: Requirement[];
 }
 
@@ -723,6 +724,29 @@ try {
   console.log("\n✂️  Step 6: Splitting embedded lists...\n");
   splitEmbeddedLists(structure);
 
+  // Determine last_updated by comparing requirements against existing data
+  const outputPath = `hugo/data/merit-badges/${badge.slug}.json`;
+  let lastUpdated: string;
+  const today = new Date().toISOString().split("T")[0] as string;
+
+  const existingFile = Bun.file(outputPath);
+  if (await existingFile.exists()) {
+    const existingData = (await existingFile.json()) as BadgeData;
+    const existingRequirements = JSON.stringify(existingData.requirements);
+    const newRequirements = JSON.stringify(structure);
+
+    if (existingRequirements === newRequirements) {
+      lastUpdated = existingData.last_updated ?? today;
+      console.log(`\n📅 Requirements unchanged — preserving last_updated: ${lastUpdated}`);
+    } else {
+      lastUpdated = today;
+      console.log(`\n📅 Requirements changed — setting last_updated: ${lastUpdated}`);
+    }
+  } else {
+    lastUpdated = today;
+    console.log(`\n📅 New badge — setting last_updated: ${lastUpdated}`);
+  }
+
   // Build final data
   const badgeData: BadgeData = {
     title: badge.title,
@@ -735,6 +759,7 @@ try {
       discontinued_date: badge.discontinued_date,
     }),
     pamphlet_url: llmContent?.pamphlet_url || htmlPamphletUrl,
+    last_updated: lastUpdated,
     requirements: structure,
   };
 
@@ -770,7 +795,6 @@ try {
   console.log(`   Pamphlet URL: ${badgeData.pamphlet_url || "Not found"}`);
 
   // Write output
-  const outputPath = `hugo/data/merit-badges/${badge.slug}.json`;
   await Bun.write(outputPath, JSON.stringify(badgeData, null, 2));
   console.log(`\n📝 Written to: ${outputPath}`);
 } catch (err) {

@@ -22,10 +22,10 @@
 
       <div class="badge-meta">
         <span>{{ $reqCount }} Requirements</span>
-        {{ with $badge.Lastmod }}
+        {{ with $json.last_updated }}
           <span class="requirements-updated">
             Updated
-            {{ .Format "January 2, 2006" }}
+            {{ time . | dateFormat "January 2, 2006" }}
           </span>
         {{ end }}
         <a href="{{ $json.url }}" target="_blank" rel="noopener">
