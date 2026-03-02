@@ -4,6 +4,7 @@
   "url": "https://www.scouting.org/merit-badges/american-heritage/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Heritage.pdf",
+  "last_updated": "2025-12-25",
   "requirements": [
     {
       "req_id": "1",
