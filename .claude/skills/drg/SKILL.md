@@ -369,6 +369,8 @@ Aim for 2-3 images per page at natural visual break points.
 
 **Trademark rule:** The words "Scouting America," "Boy Scouts of America," or "BSA" must NEVER appear as visible rendered text in any generated image. The image generator may pick up these terms from descriptions and render them on clothing, signs, or backgrounds. Using "BSA uniform" or "Scout" in image descriptions is fine for conveying context — the restriction is specifically about the generated image containing those words as readable text.
 
+**People-label rule:** Demographic terms (age, gender, race, ethnicity, nationality) may appear in image description prompts to guide the scene, but must NEVER appear as visible rendered text, labels, or annotations in the generated image itself. For example, an annotated-photo description can say "a teenager climbing a wall" to set the scene, but no label or callout in the image should read "teenager" or "diverse" or any demographic term. Visible text in the image should only describe actions, equipment, techniques, or concepts.
+
 **Do NOT** wrap shortcode syntax inside HTML comments — Hugo still processes shortcodes inside comments, causing build errors.
 
 ### Image Style Selection
