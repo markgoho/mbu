@@ -1,0 +1,127 @@
+{
+  "badge": "climbing",
+  "style_context": "Rock climbing, rappelling, belaying, and bouldering in both outdoor crag settings and indoor climbing gym environments. Equipment includes dynamic ropes, harnesses, helmets, carabiners, belay devices, and climbing shoes. Subjects are diverse teenagers ages 11-17 in clean, appropriate climbing attire.",
+  "images": [
+    {
+      "id": "top-rope-climbing-overview",
+      "file": "_index.md",
+      "style": "annotated-photo",
+      "description": "Two diverse teenagers on an outdoor granite rock face, one climbing on top-rope about 20 feet up with a clean harness and helmet, the other belaying at the base with an ATC device. A dynamic rope runs from the belayer up through an anchor at the top and back down to the climber. Annotated labels point to: 'anchor at top', 'rope always above climber', 'belayer managing rope'. Bright daylight, blue sky, natural rock setting. Both wearing clean athletic clothing, helmets, and climbing shoes."
+    },
+    {
+      "id": "indoor-climbing-gym",
+      "file": "_index.md",
+      "description": "Interior of a modern indoor climbing gym with tall walls covered in colorful plastic holds of various shapes and sizes. Several diverse teenagers are visible: two climbing on different colored routes, one belaying at the base, and one chalking hands near a bouldering wall with thick crash pads on the floor. Bright LED lighting, clean facility, high ceilings. Climbers wearing clean athletic clothing and climbing shoes."
+    },
+    {
+      "id": "climbing-hazard-awareness",
+      "file": "req1a.md",
+      "style": "annotated-photo",
+      "description": "An outdoor rock climbing scene at a natural crag with safety awareness annotations. A climber wearing a helmet ascends a moderate route while a belayer watches from below. Annotated labels highlight hazard zones: 'rockfall zone' above with an arrow pointing to loose rock on a ledge, 'weather' with darkening clouds in the distance, 'loose ground' at the base with scattered small rocks, 'helmet protection' pointing to the climber's head. Natural forest setting, afternoon light."
+    },
+    {
+      "id": "climbing-first-aid-kit",
+      "file": "req1b.md",
+      "description": "A compact climbing-specific first aid kit laid open on a flat rock surface at the base of a crag. Contents clearly visible and arranged: elastic bandage, moleskin sheets, antiseptic wipes, sterile gauze pads, athletic tape roll, a compact SAM splint, a silver emergency blanket still folded, and electrolyte packets. The kit bag is red with a white cross. Natural outdoor lighting, rocky ground visible in background."
+    },
+    {
+      "id": "cpr-check-sequence",
+      "file": "req1c.md",
+      "style": "diagram",
+      "description": "A three-panel instructional diagram on a clean white background showing the CPR assessment sequence. Panel 1 labeled 'CHECK RESPONSIVENESS': a figure tapping another person's shoulders and calling out, with a speech bubble saying 'Are you okay?'. Panel 2 labeled 'CHECK BREATHING': same figures, responder looking at the chest of the patient, with directional arrows showing 'Look, Listen, Feel' and a timer showing '10 seconds max'. Panel 3 labeled 'CHECK PULSE': responder placing two fingers on the side of the patient's neck at the carotid artery, with a timer showing '10 seconds max'. Clean line art style, instructional arrows, clear labels."
+    },
+    {
+      "id": "lnt-climbing-area",
+      "file": "req2.md",
+      "description": "A pristine outdoor climbing area with a well-maintained trail leading to a sandstone rock face. A group of five diverse teenagers walk along the established path carrying climbing gear in packs and rope bags. The area is clean with no litter, established ground at the base of the cliff, green vegetation along the trail. Late morning light filtering through trees. Everyone wearing clean hiking clothes and carrying gear responsibly."
+    },
+    {
+      "id": "climbing-attire-checklist",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "A full-body diagram of a properly dressed young climber (teenager, front-facing) with labeled callout lines pointing to each piece of gear and clothing. Labels include: 'Helmet: level, chin strap buckled' at head, 'Fitted moisture-wicking shirt: no loose fabric' at torso, 'Harness: waist belt above hip bones' at waist, 'Chalk bag: secured to harness' at side, 'Stretchy pants: full range of motion' at legs, 'Climbing shoes: snug fit, sticky rubber soles' at feet. Additional callout: 'Hair tied back, no jewelry, drawstrings tucked'. Clean white background, clear leader lines, organized layout."
+    },
+    {
+      "id": "yds-difficulty-comparison",
+      "file": "req4a.md",
+      "style": "infographic",
+      "description": "A vertical infographic showing the Yosemite Decimal System from Class 1 through 5.12. Each level is represented by a horizontal band with a simple silhouette illustration showing the type of terrain and body position. Class 1: person walking upright on flat trail. Class 2: person scrambling over boulders with hands touching rock. Class 3: person on steep rocky ridge with exposure. Class 4: person on steep rock using a rope. Class 5.0-5.4: climber on vertical wall with large holds. Class 5.5-5.8: climber on steeper wall with smaller holds. Class 5.9-5.10: climber on overhanging wall with tiny holds. Class 5.11-5.12: climber in athletic position on severely overhanging terrain. Color gradient from green (easy) through yellow to red (expert). Clean modern design with clear labels."
+    },
+    {
+      "id": "three-climbing-styles",
+      "file": "req4b.md",
+      "style": "comparison",
+      "description": "Three-panel comparison diagram showing the three main climbing styles side by side. LEFT panel labeled 'TOP-ROPE': A climber ascending a wall with the rope running through an anchor at the top and down to a belayer. Arrow showing 'rope always above climber'. CENTER panel labeled 'LEAD CLIMBING': A climber with rope trailing below, clipping a quickdraw on a bolt partway up. Arrow showing 'climber clips protection as they go'. RIGHT panel labeled 'BOULDERING': A climber on a short wall (under 15 feet) with no rope, a thick crash pad below, and a spotter standing with arms raised. Each panel has a small info box showing: height, fall distance, and protection type. Clean diagram style with consistent proportions."
+    },
+    {
+      "id": "site-safety-evaluation",
+      "file": "req4c.md",
+      "style": "annotated-photo",
+      "description": "A wide-angle outdoor climbing area photograph with safety evaluation annotations overlaid. The scene shows a moderate cliff face with a trail approaching from the left. Annotated callouts highlight: 'WEATHER: Check forecast, watch for building clouds' with an arrow to the sky, 'ROCK QUALITY: Test for loose holds, check for wet sections' pointing to the cliff face, 'GROUND HAZARDS: Clear fall zone of loose rocks and gear' at the base, 'APPROACH: Evaluate trail conditions' along the path, 'OVERHEAD: Watch for rockfall zones and loose debris' at the top of the cliff. Natural lighting, realistic outdoor crag setting."
+    },
+    {
+      "id": "emergency-plan-crag",
+      "file": "req4d.md",
+      "style": "annotated-photo",
+      "description": "An overhead perspective illustration of a climbing area showing emergency planning elements. The scene includes a cliff face, a trail leading to a parking lot, and forest surroundings. Annotated labels show: 'GPS PIN: Drop location marker at the crag' with a phone icon at the base, 'CELL SIGNAL: Find nearest spot with reception' with signal bars icon partway up the trail, 'EVACUATION ROUTE: Trail to parking' with arrows along the path, 'FIRST AID KIT: Keep accessible at base' with a medical cross icon, 'PARKING / TRAILHEAD: Guide point for rescuers' at the lot. Bird's-eye perspective with clear landmarks and pathways."
+    },
+    {
+      "id": "climbing-verbal-signals",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "A vertical diagram showing a climber on a wall and a belayer at the base, connected by a rope. Between them, a numbered sequence of speech bubbles shows the standard call-and-response signals: 1. Climber: 'On belay?' (arrow down), 2. Belayer: 'Belay on!' (arrow up), 3. Climber: 'Climbing!' (arrow down), 4. Belayer: 'Climb on!' (arrow up). To the side, additional signal boxes list: 'Slack!', 'Take!', 'Falling!', 'Lower!', 'Off belay', 'ROCK!' (highlighted in red). Clean white background, clear directional arrows, easy to read at a glance."
+    },
+    {
+      "id": "rope-inspection-guide",
+      "file": "req6.md",
+      "style": "comparison",
+      "description": "A four-panel comparison diagram showing climbing rope conditions. TOP LEFT labeled 'HEALTHY ROPE': Close-up of clean, smooth kernmantle rope sheath with uniform diameter and even weave pattern. TOP RIGHT labeled 'SHEATH WEAR': Same style rope showing fuzzy, worn sheath fibers and slight discoloration from use. BOTTOM LEFT labeled 'CORE DAMAGE': Rope section showing a visible lump where core fibers are bunched, with a callout arrow. BOTTOM RIGHT labeled 'RETIRE IMMEDIATELY': Rope showing exposed white core fibers visible through a torn sheath. Each panel has a green checkmark or red X indicator. Clean photographic style, good lighting, clear detail."
+    },
+    {
+      "id": "five-climbing-knots",
+      "file": "req7.md",
+      "style": "diagram",
+      "description": "A five-panel instructional diagram showing completed climbing knots on a clean white background. Each panel shows a neatly tied knot in orange rope with labeled parts. Panel 1: 'FIGURE EIGHT ON A BIGHT' — loop visible, characteristic 8 shape. Panel 2: 'FIGURE EIGHT FOLLOW-THROUGH' — rope threaded through two harness tie-in points with parallel strands. Panel 3: 'WATER KNOT' — flat yellow webbing joined end-to-end with tails visible. Panel 4: 'DOUBLE FISHERMAN'S' — two rope ends joined with visible X patterns on each side. Panel 5: 'PRUSIK HITCH' — thin cord wrapped three times around a thicker rope. Each knot has a brief label of its primary use."
+    },
+    {
+      "id": "climbing-ppe-fitting",
+      "file": "req8.md",
+      "style": "diagram",
+      "description": "A three-panel instructional diagram showing proper fitting of climbing PPE. LEFT panel 'HARNESS': Front view of a climbing harness on a figure with labeled adjustment points — 'waist belt above hip bones', 'buckle doubled back', 'leg loops snug', 'belay loop centered'. CENTER panel 'HELMET': Side view of a properly fitted climbing helmet on a head with labels — 'one finger above eyebrows', 'level position (not tilted back)', 'chin strap snug (one finger gap)', 'adjustment dial at back'. RIGHT panel 'GLOVES': Hands wearing rappelling gloves with labels — 'reinforced leather palms', 'close fit for dexterity', 'Velcro closure secure'. Clean white background, precise labeling."
+    },
+    {
+      "id": "check-system-diagram",
+      "file": "req9.md",
+      "style": "infographic",
+      "description": "An infographic showing the five elements of the CHECK system arranged vertically. Each letter gets a row with a bold letter, the word it stands for, a small circular icon, and a brief description. C — CARABINERS: icon of a locked carabiner, 'Gates locked, spine-loaded, properly oriented'. H — HARNESS: icon of a harness buckle, 'Above hips, buckles secure, leg loops snug'. E — ENVIRONMENT: icon of a sun/cloud, 'Ground clear, weather stable, no overhead hazards'. C — CONNECTIONS: icon of a rope through a device, 'Knot correct, device loaded, anchor solid'. K — KNOTS: icon of a figure-eight knot, 'Dressed neatly, tail adequate, stopper knot if needed'. Color scheme uses climbing-themed colors. Clean, scannable layout."
+    },
+    {
+      "id": "belay-technique-sequence",
+      "file": "req10.md",
+      "style": "diagram",
+      "description": "A four-step instructional diagram showing the top-rope belay cycle with a tubular device (ATC). Each step shows a simplified view of two hands, the rope, and the belay device attached to a harness belay loop. Step 1 'PULL': Guide hand pulls rope up through the device while brake hand holds below. Step 2 'SLIDE': Brake hand slides up toward the device (rope stays in hand). Step 3 'GRIP': Both hands near the device, brake hand re-grips below. Step 4 'FEED': Guide hand reaches back up the rope, ready to pull again. A prominent red note states: 'BRAKE HAND NEVER LEAVES THE ROPE'. Arrows show the continuous cycle. Clean white background, clear hand positions."
+    },
+    {
+      "id": "climbing-technique-fundamentals",
+      "file": "req11.md",
+      "style": "annotated-photo",
+      "description": "A teenager climbing an indoor wall demonstrating proper climbing technique, about 15 feet up. Annotated callouts highlight good form: 'Eyes scanning next holds' at head level, 'Arms straight when resting — saves energy' pointing to extended arms, 'Hips close to wall — weight on feet' pointing to body position, 'Precise foot placement on holds' pointing to climbing shoes on small footholds, 'Three points of contact' with a general body indicator. The climber is wearing a clean fitted shirt, stretchy pants, harness, and climbing shoes. Rope visible running to belayer below. Bright gym lighting, colorful holds on the wall."
+    },
+    {
+      "id": "rappelling-body-position",
+      "file": "req12.md",
+      "style": "annotated-photo",
+      "description": "A teenager rappelling down an outdoor rock face demonstrating proper rappelling form, about 20 feet above the ground. Annotated callouts highlight technique: 'Guide hand — light grip above device for balance only' at the upper hand, 'Rappel device clipped to belay loop' at the harness, 'Brake hand — controls speed, below and behind hip' at the lower hand, 'Feet flat on wall, shoulder-width apart' at the feet, 'Body perpendicular to rock face — sit into harness' indicating overall body angle. The rappeller wears a helmet, clean clothing, harness, and gloves. Rope runs from an anchor above through the device. Natural rock, daylight."
+    },
+    {
+      "id": "gear-storage-organized",
+      "file": "req13.md",
+      "description": "A well-organized gear storage area in a clean closet or mudroom. A climbing rope sits neatly in an open rope bag on a middle shelf. Several carabiners and quickdraws hang organized on a gear sling on a hook. A climbing harness hangs from a wide wooden peg. A climbing helmet sits upright on a shelf. Climbing shoes sit on a lower shelf with their openings facing outward to air dry. Everything is clean, dry, and neatly arranged. Warm indoor lighting, wooden shelving, tidy organization."
+    },
+    {
+      "id": "extended-learning-outdoor-climbing",
+      "file": "extended-learning.md",
+      "description": "A group of four diverse teenagers at a beautiful outdoor granite crag on a sunny day. One climber is partway up a moderate route on a top-rope belay, showing good technique with hips close to the wall. At the base, one Scout belays attentively while two others watch and prepare gear. Nearby, crash pads are laid out at the base of a short boulder problem. Pine trees frame the scene, blue sky above, natural rock features visible. Everyone wearing clean athletic clothing, helmets, and climbing shoes. Backpacks and rope bags organized neatly at the base."
+    }
+  ]
+}
