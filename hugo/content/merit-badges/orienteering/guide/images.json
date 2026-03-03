@@ -21,8 +21,7 @@
     {
       "id": "orienteering-event-overview",
       "file": "req2.md",
-      "style": "diagram",
-      "description": "A clean overhead diagram of a typical orienteering course layout on simplified terrain. Shows a start triangle in the lower left, five numbered control circles connected by dashed lines indicating the course sequence, contour lines showing hills and a valley, a winding stream in blue, patches of open meadow in yellow-green, forested areas in light green, a trail crossing the map, and a finish double-circle in the upper right. Styled like a simplified orienteering map with clear labels for start, controls (1-5), and finish."
+      "description": "A close-up photograph of a real orienteering map spread flat on a table or the ground, showing the distinctive colorful printing of an orienteering map: brown contour lines, green vegetation areas of varying density, white open forest, yellow clearings, blue water features, and a printed course with a start triangle, numbered control circles connected by straight lines, and a finish double circle. The map is detailed and realistic, showing the level of detail found on a 1:10,000 or 1:15,000 scale orienteering map. A baseplate compass rests on one corner of the map. Natural lighting, sharp focus on the map details."
     },
     {
       "id": "orienteering-compass-parts",

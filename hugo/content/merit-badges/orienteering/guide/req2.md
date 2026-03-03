@@ -49,7 +49,7 @@ The skills you learn for this badge are the same ones used by:
 
 Even in everyday life, orienteering builds spatial reasoning, decision-making under pressure, and the ability to stay calm when you are temporarily "lost" — a skill that translates far beyond the woods.
 
-{{< drg/image src="images/orienteering-event-overview.avif" alt="Overhead diagram of a typical orienteering course layout showing a start triangle, numbered control circles connected by dashed lines, contour lines, a stream, open meadows, and a finish symbol" >}}
+{{< drg/image src="images/orienteering-event-overview.avif" alt="Close-up of a real orienteering map showing colorful terrain details, a printed course with start triangle, numbered control circles, and a finish symbol, with a compass resting on the corner" >}}
 
 {{< drg/video
     title="Start Orienteering — A Newcomer's Guide"
