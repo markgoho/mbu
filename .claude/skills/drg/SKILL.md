@@ -386,6 +386,8 @@ The image generation pipeline supports six styles. Choose the style that best se
 
 **Quick decision rule:** If the image's primary job is to **label parts** or **show data**, use `diagram`/`infographic`/`illustrated`. If it's to **show people doing things**, use `photo` or `annotated-photo`. If it's to **contrast two things**, use `comparison`.
 
+**Arrow and label accuracy warning:** The image generator handles photorealistic scenes and self-structuring diagrams well (e.g., compass parts, where the layout is inherent), but it cannot reliably place arrows or labels that must point to *specific* features in a complex scene. If a diagram requires multiple arrows each targeting a distinct spatial element (e.g., "this arrow points to the stream, that arrow points to the trail"), the arrows will frequently land on the wrong features. For these cases, prefer `photo` style showing the real subject (e.g., a photo of an actual orienteering map instead of a generated diagram of one) or use `diagram` only when the structure is simple enough that labels are unambiguous (e.g., a single object with parts radiating outward).
+
 **Style values for `images.json`:** `"photo"` (default — omit field), `"diagram"`, `"infographic"`, `"illustrated"`, `"annotated-photo"`, `"comparison"`
 
 ## Handling Requirement Modes
