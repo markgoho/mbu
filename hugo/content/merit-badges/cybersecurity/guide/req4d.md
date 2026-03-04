@@ -78,7 +78,7 @@ If you accidentally click a phishing link and enter your credentials, change you
     url="https://beinternetawesome.withgoogle.com/"
     description="Interactive resources from Google for recognizing phishing, scams, and other online deceptions." >}}
 
-{{< drg/image src="images/phishing-email-anatomy.avif" alt="Educational diagram showing the anatomy of a suspicious email with numbered callouts for warning signs" >}}
+{{< drg/phishing-email >}}
 
 {{< drg/next-page
     text="You can now spot phishing and spoofing attacks"

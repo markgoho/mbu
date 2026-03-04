@@ -1,18 +1,18 @@
 {
   "badge": "cybersecurity",
-  "style_context": "Cybersecurity and digital safety education for Scouts ages 11-17. Modern technology environments, diverse young people in casual and Scout settings, digital interfaces, network diagrams, and security concepts.",
+  "style_context": "Cybersecurity and digital safety concepts. Modern technology, devices, networks, and security topics.",
   "images": [
     {
       "id": "cybersecurity-digital-shield",
       "file": "_index.md",
-      "style": "infographic",
-      "description": "A glowing translucent digital shield icon centered in the composition, surrounded by a network of connected consumer devices: a laptop computer, smartphone, smart home hub with a small antenna, and a gaming console with controller. Thin luminous connection lines link all devices to the shield. Streams of binary code (ones and zeros) flow subtly in the dark blue background. Clean, modern infographic style with a technology color palette of deep navy blue, electric cyan, and white accents. No text labels, no words, no logos."
+      "style": "illustrated",
+      "description": "A glowing translucent digital shield icon centered in the composition, surrounded by a network of connected consumer devices: a laptop computer, smartphone, smart home hub with a small antenna, and a gaming console with controller. Thin luminous connection lines link all devices to the shield. Streams of binary code (ones and zeros) flow subtly in the dark blue background. Technology color palette of deep navy blue, electric cyan, and white accents. ABSOLUTELY NO text, words, labels, titles, headers, branding, or logos anywhere in the image."
     },
     {
       "id": "cybersecurity-domains-overview",
       "file": "_index.md",
-      "style": "infographic",
-      "description": "Five domains of cybersecurity arranged in a circular layout on a dark blue background. Each domain is represented by a distinct icon inside a colored circle: Network Security (a shield with interconnected nodes, cyan), Application Security (a smartphone with a checkmark, green), Information Security (a locked document with a padlock, gold), Operational Security (a person silhouette with a gear, orange), and Personal Security (a house with a lock on the door, purple). Thin connecting lines link all five circles. Each circle has a short descriptive tagline in clean sans-serif font beneath it. Professional infographic style, no photographs."
+      "style": "illustrated",
+      "description": "Five icons arranged in a circle on a dark blue background, each inside a colored circle and connected by thin lines. The five icons represent: a shield with network nodes (cyan), a smartphone with a checkmark (green), a locked document (gold), a person silhouette with a gear (orange), and a house with a lock (purple). Only one word beneath each icon as a label. Simple flat design, no photographs. ABSOLUTELY NO headers, titles, branding, borders, or decorative text."
     },
     {
       "id": "scout-watching-safety-video",
@@ -22,8 +22,8 @@
     {
       "id": "digital-footprint-trail",
       "file": "req1b.md",
-      "style": "infographic",
-      "description": "A trail of stylized footprint shapes arranged in a curved path from bottom-left to top-right on a light background. Each footprint contains a different icon representing online activity: a thumbs-up social media like button, a red location pin, a search magnifying glass, a shopping cart, a game controller, and a camera. The footprints graduate from dark at the bottom to lighter at the top, suggesting a fading trail. Clean flat design, vibrant colors, no text, no words."
+      "style": "illustrated",
+      "description": "A curved trail of stylized footprint shapes going from bottom-left to top-right on a light background. Each footprint contains a small icon: a thumbs-up button, a location pin, a magnifying glass, a shopping cart, a game controller, and a camera. The footprints fade from dark to light along the path. Simple flat illustration, vibrant colors. ABSOLUTELY NO text, words, labels, titles, headers, branding, or logos anywhere in the image."
     },
     {
       "id": "ergonomic-desk-setup",
@@ -34,8 +34,8 @@
     {
       "id": "scout-law-digital-icons",
       "file": "req2a.md",
-      "style": "infographic",
-      "description": "Six points of the Scout Law represented as icon-and-label pairs arranged in a 2x3 grid on a clean white background. Each pair has a colored circular icon above a text label: Trustworthy (teal padlock with handshake), Loyal (blue shield protecting a person), Brave (red megaphone with speech lines), Kind (pink heart inside a chat bubble), Courteous (yellow speech bubble with a polite wave hand), Helpful (green lightbulb above an open book). Each icon is simple, flat design, and distinct. No photographs, clean modern infographic."
+      "style": "illustrated",
+      "description": "Six simple flat-design icons arranged in a 2x3 grid on a clean white background. Each icon is inside a colored circle with ONE word beneath it. Top row: a teal padlock (Trustworthy), a blue shield (Loyal), a red megaphone (Brave). Bottom row: a pink heart in a chat bubble (Kind), a yellow speech bubble (Courteous), a green lightbulb (Helpful). Each icon is minimal and distinct. ABSOLUTELY NO headers, titles, banners, branding, borders, paragraphs, or decorative text. Only the six one-word labels."
     },
     {
       "id": "ethics-decision-flowchart",
@@ -46,8 +46,8 @@
     {
       "id": "systems-to-protect-layers",
       "file": "req3a.md",
-      "style": "infographic",
-      "description": "Three concentric rings on a dark background representing layers of computer systems. The innermost ring is cyan and labeled 'Personal Devices' with small icons of a phone, laptop, and game controller. The middle ring is green and labeled 'Business Systems' with icons of a server rack, shopping cart, and database cylinder. The outermost ring is red-orange and labeled 'Critical Infrastructure' with icons of a hospital building with a cross, an electrical transmission tower, and a water tower. Each ring increases in size outward. Clean, layered concentric design."
+      "style": "illustrated",
+      "description": "Three concentric rings on a dark background. The innermost ring is cyan with small icons of a phone, laptop, and game controller. The middle ring is green with icons of a server rack, shopping cart, and database cylinder. The outermost ring is red-orange with icons of a hospital building, electrical tower, and water tower. Each ring has only a short two-word label. Simple flat illustration with bold colors. ABSOLUTELY NO headers, titles, banners, branding, borders, paragraphs, or decorative text beyond the three ring labels."
     },
     {
       "id": "cia-triad-diagram",
@@ -74,12 +74,6 @@
       "description": "A split-screen comparison showing safe vs unsafe public Wi-Fi usage. Left side (green tint, labeled 'Safe') shows a laptop connected through a glowing encrypted tunnel tube to a Wi-Fi router with a padlock on the tunnel, representing VPN protection. Right side (red tint, labeled 'Unsafe') shows a laptop connected to a Wi-Fi router with a dark hooded figure silhouette positioned between the laptop and router, intercepting the data flow shown as visible document and key icons floating between them. Clean, diagrammatic style, clear visual contrast."
     },
     {
-      "id": "phishing-email-anatomy",
-      "file": "req4d.md",
-      "style": "diagram",
-      "description": "An educational diagram showing the anatomy of a suspicious email message. A simplified email layout is shown with six numbered callout labels pointing to common warning signs: 1. 'Check sender address' pointing to the From field, 2. 'Generic greeting' pointing to the salutation, 3. 'Urgent tone' pointing to body text, 4. 'Grammar errors' pointing to a line of text, 5. 'Suspicious link' pointing to a button, 6. 'Pressure to act' pointing to a deadline mention. Clean educational diagram style on a white background with blue accent lines and red warning indicators at each callout. No real email content, no real company names or logos."
-    },
-    {
       "id": "scout-reading-cyber-news",
       "file": "req4e.md",
       "description": "A teenager in casual clothes sitting comfortably on a couch reading a tablet device. The tablet screen shows a news article layout with a headline and article text visible. A small notepad with a pencil sits beside them on the couch cushion, suggesting they are taking notes on what they read. Natural daylight comes through a window. Relaxed, focused study atmosphere."
@@ -87,8 +81,8 @@
     {
       "id": "attack-surface-map",
       "file": "req4f.md",
-      "style": "infographic",
-      "description": "A central figure of a teenager silhouette standing in the middle of the composition. Radiating outward from the figure are connection lines to nodes representing their digital attack surface: a smartphone, a laptop, a gaming console with controller, a Wi-Fi router, and cloud shapes representing online accounts (social media icons, email envelope, school notebook, streaming play button). Each node has a small number badge showing a count. The background is a subtle radial gradient from light center to dark edges. Clean infographic style, flat design icons."
+      "style": "illustrated",
+      "description": "A person silhouette standing in the center with radiating connection lines going outward to device icons arranged in a circle: a smartphone, a laptop, a gaming console, a Wi-Fi router, and cloud shapes. Each device icon is simple and flat-design. The background is a subtle radial gradient from light center to dark edges. ABSOLUTELY NO text, words, labels, titles, headers, branding, numbers, or logos anywhere in the image. Icons only."
     },
     {
       "id": "defense-technologies-layers",
@@ -112,13 +106,13 @@
       "id": "encryption-key-lock",
       "file": "req6a.md",
       "style": "diagram",
-      "description": "A side-by-side comparison diagram of symmetric versus asymmetric encryption. Left side labeled 'Symmetric Encryption': two person silhouettes on opposite sides of a locked box, each holding an identical gold key, with bidirectional arrows showing both can lock and unlock. Right side labeled 'Asymmetric Encryption': one person holds a green key labeled 'Public' and another person holds a red key labeled 'Private', with arrows showing the public key encrypts (arrow going to the locked box) and the private key decrypts (arrow coming from the locked box). Clean diagram style on white background."
+      "description": "A side-by-side comparison diagram of symmetric versus asymmetric encryption on a white background. Left side: two person silhouettes on opposite sides of a locked box, each holding an identical gold key, with bidirectional arrows. Label: 'Symmetric'. Right side: one person holds a green key and another holds a red key, with directional arrows showing encrypt and decrypt flow through a locked box. Label: 'Asymmetric'. Clean diagram style. ABSOLUTELY NO headers, banners, branding, borders, or decorative text beyond the two labels."
     },
     {
       "id": "browser-padlock-detail",
       "file": "req6b.md",
       "style": "illustrated",
-      "description": "A close-up illustration of a web browser address bar showing a padlock icon next to an https URL. Below the address bar, an expanded dropdown panel shows certificate information in a clean UI: 'Connection is secure', the certificate issuer name, the domain name, validity dates, and encryption type (TLS 1.3, AES-256). The illustration uses a modern browser chrome design with rounded corners. Clean, flat illustration style with a light gray background and blue accent colors for security elements."
+      "description": "A close-up illustration of a web browser address bar showing a padlock icon next to the URL 'https://merit-badge.university'. Below the address bar, an expanded dropdown panel shows certificate information in a clean UI: 'Connection is secure', the certificate issuer name, validity dates, and encryption type (TLS 1.3, AES-256). The illustration uses a modern browser chrome design with rounded corners. Clean, flat illustration style with a light gray background and blue accent colors for security elements."
     },
     {
       "id": "cipher-wheel-activity",
@@ -140,14 +134,8 @@
     {
       "id": "cybersecurity-career-paths",
       "file": "req9.md",
-      "style": "infographic",
-      "description": "A career progression tree infographic on a dark blue background. At the bottom, a starting point labeled 'Entry Level' branches upward into five distinct career paths, each represented by a colored branch line leading to a role title in a rounded badge: Security Analyst (blue), Penetration Tester (red), Forensics Investigator (green), Security Engineer (orange), and CISO (gold) at the highest point. Along each branch, small certification badge icons and education hat icons mark milestones. The overall shape suggests growth and upward mobility. Clean professional infographic."
-    },
-    {
-      "id": "cybersecurity-future-horizon",
-      "file": "extended-learning.md",
       "style": "illustrated",
-      "description": "A teenager viewed from behind, standing at the edge of a stylized digital landscape and looking toward a bright horizon. The landscape transitions from solid ground at the teen's feet to a glowing digital terrain of circuit-board patterns and network lines. Floating in the sky ahead are translucent icons representing cybersecurity domains: a shield, a magnifying glass, a padlock, streams of binary code, and glowing network nodes. The horizon glows with warm golden and cyan light suggesting dawn and opportunity. Inspiring, forward-looking composition with clean illustrated style."
+      "description": "A stylized tree growing upward from a single trunk at the bottom, branching into five distinct paths. Each branch ends in a small icon: a magnifying glass (analyst), a lock pick (tester), a fingerprint (forensics), a gear (engineer), and a star (executive). The tree is rendered in a flat illustration style with bold colors: blue, red, green, orange, and gold branches. Clean white background. ABSOLUTELY NO text, words, labels, titles, headers, branding, or logos anywhere in the image. Icons and tree shape only."
     }
   ]
 }

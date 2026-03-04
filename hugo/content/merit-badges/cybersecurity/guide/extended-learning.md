@@ -117,5 +117,3 @@ You do not need to be an expert to start. Many bug bounty platforms have beginne
     title="ISC² (International Information System Security Certification Consortium)"
     url="https://www.isc2.org/"
     description="The organization behind the CISSP certification. Offers free introductory cybersecurity courses and career resources through their 'Certified in Cybersecurity' entry-level program." >}}
-
-{{< drg/image src="images/cybersecurity-future-horizon.avif" alt="A teenager looking toward a bright digital horizon with floating cybersecurity icons representing opportunity and exploration" >}}
