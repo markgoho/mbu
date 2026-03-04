@@ -1,0 +1,153 @@
+{
+  "badge": "cybersecurity",
+  "style_context": "Cybersecurity and digital safety education for Scouts ages 11-17. Modern technology environments, diverse young people in casual and Scout settings, digital interfaces, network diagrams, and security concepts.",
+  "images": [
+    {
+      "id": "cybersecurity-digital-shield",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "A glowing translucent digital shield icon centered in the composition, surrounded by a network of connected consumer devices: a laptop computer, smartphone, smart home hub with a small antenna, and a gaming console with controller. Thin luminous connection lines link all devices to the shield. Streams of binary code (ones and zeros) flow subtly in the dark blue background. Clean, modern infographic style with a technology color palette of deep navy blue, electric cyan, and white accents. No text labels, no words, no logos."
+    },
+    {
+      "id": "cybersecurity-domains-overview",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Five domains of cybersecurity arranged in a circular layout on a dark blue background. Each domain is represented by a distinct icon inside a colored circle: Network Security (a shield with interconnected nodes, cyan), Application Security (a smartphone with a checkmark, green), Information Security (a locked document with a padlock, gold), Operational Security (a person silhouette with a gear, orange), and Personal Security (a house with a lock on the door, purple). Thin connecting lines link all five circles. Each circle has a short descriptive tagline in clean sans-serif font beneath it. Professional infographic style, no photographs."
+    },
+    {
+      "id": "scout-watching-safety-video",
+      "file": "req1a.md",
+      "description": "A teenager and an adult sitting together at a desk looking at a laptop screen in a bright, warmly lit living room. The teen wears a casual shirt, and both have engaged, attentive expressions suggesting a meaningful conversation. The laptop screen glows with soft light. A notepad and pen sit on the desk nearby. Natural window light fills the room. Warm, authentic scene."
+    },
+    {
+      "id": "digital-footprint-trail",
+      "file": "req1b.md",
+      "style": "infographic",
+      "description": "A trail of stylized footprint shapes arranged in a curved path from bottom-left to top-right on a light background. Each footprint contains a different icon representing online activity: a thumbs-up social media like button, a red location pin, a search magnifying glass, a shopping cart, a game controller, and a camera. The footprints graduate from dark at the bottom to lighter at the top, suggesting a fading trail. Clean flat design, vibrant colors, no text, no words."
+    },
+    {
+      "id": "ergonomic-desk-setup",
+      "file": "req1c.md",
+      "style": "diagram",
+      "description": "A clean side-view technical diagram of a teenager sitting at a properly configured computer workstation. The figure is shown in a neutral seated posture. Labeled arrows point to key ergonomic elements: 'Screen at eye level' pointing to the monitor top, 'Back supported' pointing to the chair lumbar area, 'Elbows at 90 degrees' pointing to the arm position, 'Wrists neutral' pointing to the keyboard hand position, and 'Feet flat on floor' pointing to the feet. Simple line-art style with a white background, using blue for the figure and green for the label arrows and text. Educational diagram format."
+    },
+    {
+      "id": "scout-law-digital-icons",
+      "file": "req2a.md",
+      "style": "infographic",
+      "description": "Six points of the Scout Law represented as icon-and-label pairs arranged in a 2x3 grid on a clean white background. Each pair has a colored circular icon above a text label: Trustworthy (teal padlock with handshake), Loyal (blue shield protecting a person), Brave (red megaphone with speech lines), Kind (pink heart inside a chat bubble), Courteous (yellow speech bubble with a polite wave hand), Helpful (green lightbulb above an open book). Each icon is simple, flat design, and distinct. No photographs, clean modern infographic."
+    },
+    {
+      "id": "ethics-decision-flowchart",
+      "file": "req2b.md",
+      "style": "diagram",
+      "description": "A simple decision flowchart with three diamond-shaped decision nodes connected by arrows on a white background. First diamond reads 'Do I have permission?' with 'Yes' going right and 'No' going down to a red stop sign labeled 'Stop'. Second diamond reads 'Could this harm someone?' with 'No' going right and 'Yes' going down to a yellow caution sign labeled 'Report it'. Third diamond reads 'Would I do this if watched?' with 'Yes' going to a green checkmark labeled 'Proceed carefully' and 'No' going to a red octagon labeled 'Stop and reconsider'. Clean flowchart lines, simple shapes, readable labels."
+    },
+    {
+      "id": "systems-to-protect-layers",
+      "file": "req3a.md",
+      "style": "infographic",
+      "description": "Three concentric rings on a dark background representing layers of computer systems. The innermost ring is cyan and labeled 'Personal Devices' with small icons of a phone, laptop, and game controller. The middle ring is green and labeled 'Business Systems' with icons of a server rack, shopping cart, and database cylinder. The outermost ring is red-orange and labeled 'Critical Infrastructure' with icons of a hospital building with a cross, an electrical transmission tower, and a water tower. Each ring increases in size outward. Clean, layered concentric design."
+    },
+    {
+      "id": "cia-triad-diagram",
+      "file": "req3b.md",
+      "style": "diagram",
+      "description": "An equilateral triangle diagram centered on a white background. The three vertices are labeled with the CIA Triad components. Top vertex: 'Confidentiality' with a closed padlock icon. Bottom-left vertex: 'Integrity' with a checkmark inside a shield icon. Bottom-right vertex: 'Availability' with an upward arrow inside a circle icon. The sides of the triangle are drawn with clean solid lines in dark blue. Inside the triangle center, the text 'CIA Triad' appears. Each vertex has a one-line description beneath the term. Simple, educational, clean diagram."
+    },
+    {
+      "id": "vulnerability-threat-exploit-chain",
+      "file": "req4a.md",
+      "style": "diagram",
+      "description": "A three-step horizontal sequence diagram on a white background. Step 1 on the left shows a brick wall with a visible crack, labeled 'Vulnerability'. A bold arrow points right to Step 2, showing a dark hooded figure silhouette noticing the crack, labeled 'Threat'. Another bold arrow points right to Step 3, showing the figure's hand reaching through the crack in the wall, labeled 'Exploit'. Each step is inside a rounded rectangle with the label beneath. The arrows between steps are thick and directional. Simple, clean educational illustration."
+    },
+    {
+      "id": "malware-types-comparison",
+      "file": "req4b.md",
+      "style": "comparison",
+      "description": "A six-column comparison chart showing different malware types side by side. Each column has a distinctive colored icon at the top: Virus (red bug icon), Worm (green segmented worm), Trojan (brown wooden horse), Backdoor (dark purple open door with keyhole), Spyware (gray eye with magnifying glass), Ransomware (orange padlock with dollar sign). Below each icon are three short descriptive bullet points about how it spreads, what it does, and a real-world example. Clean grid layout on white background, each column has a subtle colored header bar matching its icon."
+    },
+    {
+      "id": "public-wifi-risks",
+      "file": "req4c.md",
+      "style": "comparison",
+      "description": "A split-screen comparison showing safe vs unsafe public Wi-Fi usage. Left side (green tint, labeled 'Safe') shows a laptop connected through a glowing encrypted tunnel tube to a Wi-Fi router with a padlock on the tunnel, representing VPN protection. Right side (red tint, labeled 'Unsafe') shows a laptop connected to a Wi-Fi router with a dark hooded figure silhouette positioned between the laptop and router, intercepting the data flow shown as visible document and key icons floating between them. Clean, diagrammatic style, clear visual contrast."
+    },
+    {
+      "id": "phishing-email-anatomy",
+      "file": "req4d.md",
+      "style": "diagram",
+      "description": "An educational diagram showing the anatomy of a suspicious email message. A simplified email layout is shown with six numbered callout labels pointing to common warning signs: 1. 'Check sender address' pointing to the From field, 2. 'Generic greeting' pointing to the salutation, 3. 'Urgent tone' pointing to body text, 4. 'Grammar errors' pointing to a line of text, 5. 'Suspicious link' pointing to a button, 6. 'Pressure to act' pointing to a deadline mention. Clean educational diagram style on a white background with blue accent lines and red warning indicators at each callout. No real email content, no real company names or logos."
+    },
+    {
+      "id": "scout-reading-cyber-news",
+      "file": "req4e.md",
+      "description": "A teenager in casual clothes sitting comfortably on a couch reading a tablet device. The tablet screen shows a news article layout with a headline and article text visible. A small notepad with a pencil sits beside them on the couch cushion, suggesting they are taking notes on what they read. Natural daylight comes through a window. Relaxed, focused study atmosphere."
+    },
+    {
+      "id": "attack-surface-map",
+      "file": "req4f.md",
+      "style": "infographic",
+      "description": "A central figure of a teenager silhouette standing in the middle of the composition. Radiating outward from the figure are connection lines to nodes representing their digital attack surface: a smartphone, a laptop, a gaming console with controller, a Wi-Fi router, and cloud shapes representing online accounts (social media icons, email envelope, school notebook, streaming play button). Each node has a small number badge showing a count. The background is a subtle radial gradient from light center to dark edges. Clean infographic style, flat design icons."
+    },
+    {
+      "id": "defense-technologies-layers",
+      "file": "req5a.md",
+      "style": "diagram",
+      "description": "A layered defense diagram showing cybersecurity protection technologies from outermost to innermost. Arranged as nested rounded rectangles or concentric barriers. Outermost layer: 'Firewall' represented as a solid wall with a gate. Next layer: 'IDS/IPS' shown as surveillance cameras on the wall. Next layer: 'VPN' depicted as an encrypted tunnel. Next layer: 'Antivirus' shown as a shield scanning documents. Innermost layer: 'Access Controls' depicted as a locked door with a key card reader. Each layer is labeled clearly. Clean educational diagram on white background with blue tones."
+    },
+    {
+      "id": "update-notification-screen",
+      "file": "req5b.md",
+      "style": "illustrated",
+      "description": "A smartphone screen showing a software update notification interface. The screen displays an update progress bar at about 60 percent, an 'Install Now' button below it, and a brief description mentioning security improvements. To the right of the phone, three floating icons represent the three types of updates: a blue shield for security patches, a gray wrench for bug fixes, and a yellow sparkle star for new features. Clean illustrated style with soft shadows and modern UI elements."
+    },
+    {
+      "id": "system-security-hands-on",
+      "file": "req5c.md",
+      "style": "illustrated",
+      "description": "A teenager sitting at a computer desk viewed from a three-quarter angle. Three floating translucent panels surround them: one shows a password manager interface with a list of saved accounts and a generate password button, another shows a smartphone with an authenticator app displaying a six-digit code, and the third shows a terminal window with green text displaying running system processes. The teen looks engaged and confident. Soft ambient lighting, modern desk setup with monitor and keyboard. Illustrated style with clean lines."
+    },
+    {
+      "id": "encryption-key-lock",
+      "file": "req6a.md",
+      "style": "diagram",
+      "description": "A side-by-side comparison diagram of symmetric versus asymmetric encryption. Left side labeled 'Symmetric Encryption': two person silhouettes on opposite sides of a locked box, each holding an identical gold key, with bidirectional arrows showing both can lock and unlock. Right side labeled 'Asymmetric Encryption': one person holds a green key labeled 'Public' and another person holds a red key labeled 'Private', with arrows showing the public key encrypts (arrow going to the locked box) and the private key decrypts (arrow coming from the locked box). Clean diagram style on white background."
+    },
+    {
+      "id": "browser-padlock-detail",
+      "file": "req6b.md",
+      "style": "illustrated",
+      "description": "A close-up illustration of a web browser address bar showing a padlock icon next to an https URL. Below the address bar, an expanded dropdown panel shows certificate information in a clean UI: 'Connection is secure', the certificate issuer name, the domain name, validity dates, and encryption type (TLS 1.3, AES-256). The illustration uses a modern browser chrome design with rounded corners. Clean, flat illustration style with a light gray background and blue accent colors for security elements."
+    },
+    {
+      "id": "cipher-wheel-activity",
+      "file": "req6c.md",
+      "style": "illustrated",
+      "description": "A colorful cipher wheel illustration showing two concentric circular rings. The outer ring displays the standard alphabet A through Z in evenly spaced positions. The inner ring displays the same alphabet but rotated by several positions, showing the substitution mapping. Small arrows indicate the rotation direction. A decorative compass-rose style center holds the two rings together. The color scheme uses a golden outer ring and a blue inner ring with white letters. Clean educational illustration suitable for a hands-on cryptography activity."
+    },
+    {
+      "id": "iot-smart-home-network",
+      "file": "req7.md",
+      "style": "illustrated",
+      "description": "A cutaway cross-section view of a two-story house showing IoT devices in different rooms. Living room: a smart speaker on a shelf. Hallway: a smart thermostat on the wall. Front door: a smart video doorbell camera. Upstairs bedroom: a gaming console connected to a TV. Nightstand: a fitness tracker charging. All devices have thin dotted connection lines leading to a central Wi-Fi router positioned in the middle of the house. The house has a clean, modern interior. Illustrated cross-section style with clear room divisions and labeled devices."
+    },
+    {
+      "id": "scouts-cyber-competition",
+      "file": "req8.md",
+      "description": "Four teenagers gathered around a table with laptop computers, intensely focused on their screens in what appears to be a competition setting. The laptops show terminal windows and puzzle interfaces. A large display screen or whiteboard in the background shows a scoreboard with team names and point totals. The teens wear casual clothes and show expressions of concentration and excitement. Good overhead lighting in a classroom or meeting room setting. Dynamic, engaging atmosphere."
+    },
+    {
+      "id": "cybersecurity-career-paths",
+      "file": "req9.md",
+      "style": "infographic",
+      "description": "A career progression tree infographic on a dark blue background. At the bottom, a starting point labeled 'Entry Level' branches upward into five distinct career paths, each represented by a colored branch line leading to a role title in a rounded badge: Security Analyst (blue), Penetration Tester (red), Forensics Investigator (green), Security Engineer (orange), and CISO (gold) at the highest point. Along each branch, small certification badge icons and education hat icons mark milestones. The overall shape suggests growth and upward mobility. Clean professional infographic."
+    },
+    {
+      "id": "cybersecurity-future-horizon",
+      "file": "extended-learning.md",
+      "style": "illustrated",
+      "description": "A teenager viewed from behind, standing at the edge of a stylized digital landscape and looking toward a bright horizon. The landscape transitions from solid ground at the teen's feet to a glowing digital terrain of circuit-board patterns and network lines. Floating in the sky ahead are translucent icons representing cybersecurity domains: a shield, a magnifying glass, a padlock, streams of binary code, and glowing network nodes. The horizon glows with warm golden and cyan light suggesting dawn and opportunity. Inspiring, forward-looking composition with clean illustrated style."
+    }
+  ]
+}
