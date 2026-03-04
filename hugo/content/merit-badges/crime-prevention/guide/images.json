@@ -1,0 +1,88 @@
+{
+  "badge": "crime-prevention",
+  "style_context": "Crime prevention concepts including community safety, law enforcement, cybersecurity, home security, and youth leadership",
+  "images": [
+    {
+      "id": "community-crime-prevention-overview",
+      "file": "_index.md",
+      "description": "A diverse group of neighbors gathered on a residential sidewalk on a sunny afternoon, talking with a community police officer in uniform. Well-maintained homes with trimmed landscaping and bright porch lights visible in the background. Adults and teenagers in casual clothes engaged in friendly conversation. Warm, welcoming neighborhood atmosphere."
+    },
+    {
+      "id": "types-of-crime-infographic",
+      "file": "req1.md",
+      "style": "infographic",
+      "description": "Clean infographic showing four categories of crime arranged in a two-by-two grid. Top left: Property Crimes with icons of a house, car, and flame. Top right: Crimes Against People with icons of a shield and warning symbol. Bottom left: White Collar Crime with icons of a briefcase, document, and dollar sign. Bottom right: Environmental Crime with icons of a factory, tree, and water droplet. Each quadrant uses a distinct color and includes 3-4 example crime names in small text. Title at top reads Types of Crime."
+    },
+    {
+      "id": "crime-prevention-partners",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A circular diagram showing seven groups that contribute to crime prevention. Seven labeled circles arranged in a ring: Citizens at top, then clockwise Schools, Community Groups, Private Security, Law Enforcement, Courts, and Corrections. Each circle has a simple icon inside (people, school building, handshake, shield, badge, gavel, building). Lines connect each circle to its neighbors and to a central circle labeled Crime Prevention. Clean white background with blue and teal color scheme."
+    },
+    {
+      "id": "crime-research-workspace",
+      "file": "req3a.md",
+      "description": "A teenager's study desk viewed from slightly above. An open laptop showing a news website with text and charts visible on screen. A spiral notebook with handwritten notes next to the laptop. A few printed pages with bar charts showing crime statistics. A highlighter and pen resting on the notebook. Natural daylight from a nearby window. Clean, organized workspace feel."
+    },
+    {
+      "id": "crime-triangle-diagram",
+      "file": "req3b.md",
+      "style": "diagram",
+      "description": "A clean infographic with three large rectangular boxes arranged in a row. Left box has a person silhouette icon above the bold label Motivated Offender. Center box has a target bullseye icon above the bold label Suitable Target. Right box has an empty shield icon above the bold label Absence of Guardian. A large bold heading at the top reads The Crime Triangle. Below the three boxes, a single line of text reads Remove any one element to prevent the crime. Simple flat design, dark blue and white color scheme, no diagonal or angled text."
+    },
+    {
+      "id": "cpted-neighborhood-comparison",
+      "file": "req4a.md",
+      "style": "comparison",
+      "description": "Split-frame comparison of the same residential street. LEFT side labeled Poor Design: overgrown bushes blocking windows, a burned-out streetlight, peeling paint on a fence, an alley with no lighting, and no people visible. Dull, gray tones. RIGHT side labeled Good Design: the same street with neatly trimmed low bushes, bright working streetlights, fresh paint, a front porch with chairs, and a neighbor walking a dog on the sidewalk. Warm, bright tones. Clear visual contrast between neglected and well-maintained environments."
+    },
+    {
+      "id": "security-survey-in-action",
+      "file": "req4b.md",
+      "description": "A teenager in a clean Scout uniform holding a clipboard with a printed checklist, walking alongside an adult along the exterior of a single-family home. They are looking up at an exterior light fixture mounted near the garage. The home has a mix of good and improvable security features visible: a deadbolt on the front door, but bushes partially blocking a window. Daytime, clear weather."
+    },
+    {
+      "id": "edge-method-teaching",
+      "file": "req4c.md",
+      "description": "A teenager standing at the front of a small meeting room, gesturing toward a simple poster on a whiteboard showing a basic home security diagram with labeled points. Four younger Scouts sitting in chairs facing the presenter, paying attention. The presenter looks confident and engaged. Bright indoor lighting, a Scout-appropriate meeting space."
+    },
+    {
+      "id": "retail-loss-prevention-techniques",
+      "file": "req5.md",
+      "style": "annotated-photo",
+      "description": "Interior of a brightly lit retail store aisle. Visible security features annotated with labeled callout arrows: a convex security mirror mounted in the upper corner reflecting the aisle below, a dome security camera on the ceiling, an electronic article surveillance tag attached to a piece of clothing on a rack, and a store employee visible at the end of the aisle greeting a customer. Clean, well-organized store environment. Labels point to: Security Mirror, CCTV Camera, EAS Tag, Attentive Staff."
+    },
+    {
+      "id": "reporting-crime-safely",
+      "file": "req6.md",
+      "description": "A teenager standing in a well-lit public area near a park pavilion, holding a smartphone to their ear with a calm but alert expression. Other people visible in the background going about normal activities. Good lighting from overhead park lights. The scene conveys that the teenager has moved to a safe, populated location before making a phone call."
+    },
+    {
+      "id": "positive-peer-group",
+      "file": "req7.md",
+      "description": "A group of five teenagers working together on a community service project in a park. Two are painting a park bench with fresh paint, one is picking up litter with a grabber tool, and two are planting flowers along a pathway. They are wearing work gloves and casual work clothes. Smiling and talking to each other while working. Bright sunny day with green grass and trees in the background."
+    },
+    {
+      "id": "substance-prevention-community",
+      "file": "req8.md",
+      "description": "A school auditorium with rows of teenagers in clean Scout uniforms sitting attentively, all facing forward toward a stage. A speaker in business casual attire stands at a podium on the stage. A large banner behind the speaker reads Drug Free Communities. Bright overhead auditorium lighting. The scene is orderly and engaged, with the audience clearly paying attention to the presentation."
+    },
+    {
+      "id": "online-safety-practices",
+      "file": "req9.md",
+      "style": "infographic",
+      "description": "Clean infographic showing six online security best practices arranged in a two-column grid. Each practice has an icon and short label: 1. Strong Passwords icon of a lock with stars, 2. Two-Factor Authentication icon of a phone with a checkmark, 3. Software Updates icon of a refresh arrow on a shield, 4. Privacy Settings icon of an eye with a slash through it, 5. Verify Before Clicking icon of a magnifying glass over a link, 6. Report Suspicious Activity icon of a flag. Title at top reads Stay Safe Online. Blue and green color scheme on white background."
+    },
+    {
+      "id": "scout-interviewing-officer",
+      "file": "req10.md",
+      "description": "A teenager in a clean Scout uniform sitting in a chair across a desk from a police officer in a police station office. The teenager has a notebook open and is writing while listening. The officer is leaning forward slightly, engaged in conversation. A few items on the desk: a nameplate, a coffee mug, a framed certificate on the wall behind the officer. Professional but friendly atmosphere."
+    },
+    {
+      "id": "crime-prevention-careers-montage",
+      "file": "req11.md",
+      "style": "infographic",
+      "description": "A four-panel infographic showing different crime prevention careers. Panel 1 labeled Forensic Scientist: a person in a lab coat examining evidence under a microscope in a laboratory. Panel 2 labeled Cybersecurity Analyst: a person at a desk with multiple computer monitors showing code and network diagrams. Panel 3 labeled Community Officer: a police officer in uniform talking with residents at a neighborhood event. Panel 4 labeled Urban Planner: a person reviewing architectural blueprints and neighborhood maps at a desk. Each panel is a clean illustrated style with career title below. Title at top reads Careers in Crime Prevention."
+    }
+  ]
+}
