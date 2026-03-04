@@ -49,6 +49,7 @@ Not every kid needs to appear in every photo — use whichever 2-5 of them make 
 const UNIFORM_SECTION = `
 ABSOLUTELY FORBIDDEN — ORGANIZATIONAL TEXT IN IMAGES:
 - NEVER render the words "Scouting America", "Boy Scouts of America", or "BSA" as visible text anywhere in the image. Not on clothing, signs, banners, patches, buildings, backgrounds, or any surface. This is a strict trademark restriction — these words must NEVER appear in any generated image.
+- NEVER render "Merit Badge University", "Study Guide", "Digital Resource Guide", or any project branding as visible text in the image. No titles, headers, watermarks, or branding of any kind.
 - Do NOT render any organizational logos, emblems, or insignia.
 
 UNIFORM & CLOTHING:
@@ -68,6 +69,20 @@ SAFETY-CRITICAL ACCURACY:
 - If the scene involves fire, stoves, or heat sources, ensure all nearby objects are plausible and safe — no red gas cans, aerosol cans, or plastic containers near open flame.
 - When in doubt, depict the SAFEST version of the scene. Err on the side of caution.`;
 
+const NO_BRANDING_SECTION = `
+ABSOLUTELY FORBIDDEN — BRANDING AND ORGANIZATIONAL TEXT:
+- NEVER render the words "Scouting America", "Boy Scouts of America", "BSA", "Merit Badge University", "Study Guide", or "Digital Resource Guide" as visible text anywhere in the image.
+- Do NOT render any organizational logos, emblems, insignia, titles, headers, watermarks, or branding.
+- The image should contain ONLY educational content — no project or organizational identity.`;
+
+const TEXT_DENSITY_SECTION = `
+TEXT DENSITY — KEEP TEXT MINIMAL:
+- The image should be VISUAL-FIRST. Text should occupy no more than ~20% of the image area.
+- Use short single-word or brief-phrase labels only. No sentences, paragraphs, or dense text blocks.
+- If the concept requires a lot of text to explain, that text belongs on the web page, not in the image.
+- The image generator produces illegible text at small sizes — fewer labels at larger size is always better than many labels at small size.
+- Prefer icons, visual symbols, and spatial layout to communicate meaning instead of text.`;
+
 // ---------------------------------------------------------------------------
 // buildStyleGuide — selects the correct preamble based on style
 // ---------------------------------------------------------------------------
@@ -75,7 +90,7 @@ SAFETY-CRITICAL ACCURACY:
 function buildStyleGuide(context: string, style: ImageStyle): string {
   switch (style) {
     case "photo":
-      return `You are generating a PHOTOGRAPH for a Merit Badge University study guide about ${context}.
+      return `You are generating a PHOTOGRAPH for an educational youth guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A PHOTOGRAPH:
 - The output MUST look like a real photograph taken with a camera
@@ -97,7 +112,7 @@ ${SAFETY_SECTION}
 SCENE: `;
 
     case "annotated-photo":
-      return `You are generating a PHOTOGRAPH WITH EDUCATIONAL ANNOTATIONS for a Merit Badge University study guide about ${context}.
+      return `You are generating a PHOTOGRAPH WITH EDUCATIONAL ANNOTATIONS for an educational youth guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE AN ANNOTATED PHOTOGRAPH:
 - Base image must be photorealistic (like a DSLR photo)
@@ -125,7 +140,7 @@ ${SAFETY_SECTION}
 SCENE: `;
 
     case "diagram":
-      return `You are generating a CLEAN EDUCATIONAL DIAGRAM for a Merit Badge University study guide about ${context}.
+      return `You are generating a CLEAN EDUCATIONAL DIAGRAM for an educational youth guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A DIAGRAM:
 - Output must be a clear, labeled diagram — NOT a photograph
@@ -136,6 +151,8 @@ CRITICAL — OUTPUT MUST BE A DIAGRAM:
 - Color palette: professional blues, greens, warm accents on a light background
 - No decorative elements — every visual element should teach something
 - Think: modern science textbook diagram, educational poster, museum exhibit graphic
+${NO_BRANDING_SECTION}
+${TEXT_DENSITY_SECTION}
 
 TYPOGRAPHY REQUIREMENTS:
 - All text must be large enough to read at web resolution (minimum ~14pt equivalent)
@@ -146,7 +163,7 @@ TYPOGRAPHY REQUIREMENTS:
 SCENE: `;
 
     case "infographic":
-      return `You are generating an EDUCATIONAL INFOGRAPHIC for a Merit Badge University study guide about ${context}.
+      return `You are generating an EDUCATIONAL INFOGRAPHIC for an educational youth guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE AN INFOGRAPHIC:
 - Clean, modern infographic design — NOT a photograph
@@ -155,6 +172,8 @@ CRITICAL — OUTPUT MUST BE AN INFOGRAPHIC:
 - All text must be LEGIBLE at web resolution
 - Professional color scheme, consistent throughout
 - Think: National Geographic sidebar, educational poster, well-designed factsheet
+${NO_BRANDING_SECTION}
+${TEXT_DENSITY_SECTION}
 
 LAYOUT REQUIREMENTS:
 - Organized sections with clear visual separation
@@ -172,7 +191,7 @@ TYPOGRAPHY:
 SCENE: `;
 
     case "illustrated":
-      return `You are generating a DETAILED TECHNICAL ILLUSTRATION for a Merit Badge University study guide about ${context}.
+      return `You are generating a DETAILED TECHNICAL ILLUSTRATION for an educational youth guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A TECHNICAL ILLUSTRATION:
 - Detailed technical illustration style — NOT a photograph
@@ -181,6 +200,8 @@ CRITICAL — OUTPUT MUST BE A TECHNICAL ILLUSTRATION:
 - Label all important parts and features
 - Style: somewhere between a botanical illustration and an engineering diagram
 - Professional, educational, authoritative feel
+${NO_BRANDING_SECTION}
+${TEXT_DENSITY_SECTION}
 
 ILLUSTRATION REQUIREMENTS:
 - Clean white or light neutral background
@@ -193,7 +214,7 @@ ILLUSTRATION REQUIREMENTS:
 SCENE: `;
 
     case "comparison":
-      return `You are generating a COMPARISON IMAGE for a Merit Badge University study guide about ${context}.
+      return `You are generating a COMPARISON IMAGE for an educational youth guide about ${context}.
 
 CRITICAL — OUTPUT MUST BE A SIDE-BY-SIDE OR SPLIT-FRAME COMPARISON:
 - Show two versions of the same subject for clear comparison
@@ -208,6 +229,7 @@ COMPARISON REQUIREMENTS:
 - Use color coding: green tones for correct/good, red tones for incorrect/bad
 - A dividing line or visual separator between the two sides
 - Can be photorealistic or illustrated — whichever communicates the comparison more clearly
+${NO_BRANDING_SECTION}
 
 EDUCATIONAL FOCUS:
 - The viewer should instantly understand what is right and what is wrong

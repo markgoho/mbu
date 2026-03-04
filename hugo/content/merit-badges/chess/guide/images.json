@@ -1,0 +1,121 @@
+{
+  "badge": "chess",
+  "style_context": "Chess merit badge — board games, strategy, competition, pieces, tournaments",
+  "images": [
+    {
+      "id": "chess-overview-scene",
+      "file": "_index.md",
+      "description": "A classic wooden Staunton chess set arranged on an outdoor picnic table at a campsite clearing, warm afternoon golden-hour sunlight casting long shadows of the pieces across the board, pine trees and a campfire ring visible in the soft-focus background, inviting atmosphere"
+    },
+    {
+      "id": "chess-get-ready",
+      "file": "_index.md",
+      "description": "Two teenagers sitting across from each other at a chess board in a brightly lit community center or library, one reaching to move a piece with focused concentration, a dual chess clock visible beside the board, bookshelves in the background"
+    },
+    {
+      "id": "chess-history-timeline",
+      "file": "req1a.md",
+      "style": "infographic",
+      "description": "A horizontal timeline infographic showing key chess history milestones: an ancient Indian Chaturanga piece (600 CE), a medieval European knight playing chess (1000 CE), a crowned chess queen piece (1475), a formal tournament scene (1851), a computer screen (1997), and a modern smartphone with chess app (2020s), each milestone connected by an elegant timeline line with dates below"
+    },
+    {
+      "id": "chess-famous-players",
+      "file": "req1b.md",
+      "style": "illustrated",
+      "description": "Six illustrated portrait vignettes arranged in two rows of three, each showing a different person in thoughtful pose at a chess board in a different era and setting: one at an ornate 19th-century desk, one in a tropical garden pavilion, one in a stark 1970s hotel room, one gesturing energetically at a modern analysis screen, one at a formal tournament table, and one studying on a laptop in a cozy room"
+    },
+    {
+      "id": "chess-benefits-thinking",
+      "file": "req2.md",
+      "style": "infographic",
+      "description": "Four circular icons arranged in a diamond pattern around a central white chess knight piece on a clean background: a brain icon at top, a target icon at right, a branching path icon at bottom, and a clock icon at left, with thin connecting lines between them, minimal clean design with no text labels"
+    },
+    {
+      "id": "chess-piece-lineup",
+      "file": "req3a.md",
+      "style": "diagram",
+      "description": "Six classic white Staunton chess pieces arranged in a single row from left to right on a clean neutral background: King (tallest, with cross on top), Queen (slightly shorter, with coronet), Rook (castle-shaped top), Bishop (pointed mitre top), Knight (horse head), Pawn (smallest, rounded top), each piece clearly distinct in silhouette"
+    },
+    {
+      "id": "chess-board-setup",
+      "file": "req3b.md",
+      "style": "diagram",
+      "description": "An overhead view of a correctly set up chessboard showing all 32 pieces in their starting positions, with file letters (a through h) along the bottom and rank numbers (1 through 8) along the left side, the bottom-right square clearly shown as a light-colored square, clean flat design with high contrast between light and dark squares"
+    },
+    {
+      "id": "chess-checkmate-example",
+      "file": "req3c.md",
+      "style": "diagram",
+      "description": "A chess board diagram showing a simple back-rank checkmate position: a White rook on the 8th rank delivering checkmate to the Black king trapped on the 8th rank by its own pawns on the 7th rank, with small red X marks on the king's blocked escape squares and a green arrow showing the rook's attacking line"
+    },
+    {
+      "id": "chess-stalemate-position",
+      "file": "req3d.md",
+      "style": "diagram",
+      "description": "A clean chess board diagram viewed from above showing three pieces: a white king piece, a white queen piece, and a black king piece trapped in the corner of the board with no available moves, labeled Stalemate at the top in bold text"
+    },
+    {
+      "id": "chess-score-sheet",
+      "file": "req4a.md",
+      "description": "A close-up photograph of a chess tournament score sheet on a wooden table, partially filled in with neat algebraic notation in blue pen, showing about 20 moves for both White and Black columns, a chess clock slightly out of focus in the background, warm indoor lighting"
+    },
+    {
+      "id": "chess-middlegame-position",
+      "file": "req4b.md",
+      "style": "diagram",
+      "description": "An overhead chess board diagram showing a complex middle game position with pieces actively deployed: White pieces controlling the center with pawns on d4 and e4, both sides castled, knights and bishops actively placed, rooks on semi-open files, showing the dynamic tension of a typical middle game with no obvious advantage for either side"
+    },
+    {
+      "id": "chess-four-openings",
+      "file": "req4c.md",
+      "style": "diagram",
+      "description": "Four chess boards in a two-by-two grid layout, each showing a different famous opening position with chess pieces arranged on the board, each board labeled with its opening name: Ruy Lopez, French Defense, Queens Gambit, and Sicilian Defense"
+    },
+    {
+      "id": "chess-scholars-mate",
+      "file": "req4d.md",
+      "style": "diagram",
+      "description": "A chess board diagram showing a quick checkmate: a white queen piece near the enemy king on the edge of the board, supported by a white bishop piece on a diagonal, with the black king piece trapped and unable to escape, labeled Scholars Mate"
+    },
+    {
+      "id": "chess-strategy-elements",
+      "file": "req5a.md",
+      "style": "infographic",
+      "description": "Seven hexagonal tiles arranged in a honeycomb pattern, each containing a small icon and label for one strategic chess element: Weaknesses (cracked shield icon), Force (chess pieces icon), King Safety (crown with shield), Pawn Structure (three pawns in formation), Space (expanding arrows), Tempo (clock with arrow), Clock Management (chess clock), using a cohesive color scheme with each hexagon a slightly different shade"
+    },
+    {
+      "id": "chess-tactics-fork-pin",
+      "file": "req5b.md",
+      "style": "comparison",
+      "description": "Split-frame comparison showing two chess tactics side by side: LEFT shows a knight fork with a white knight in the center attacking both a black king and black rook simultaneously with red arrows pointing to both targets, labeled Fork; RIGHT shows a pin with a white bishop on a diagonal pinning a black knight to the black king behind it with a red line through all three pieces, labeled Pin"
+    },
+    {
+      "id": "chess-rook-checkmate",
+      "file": "req5c.md",
+      "style": "diagram",
+      "description": "A chess board diagram showing the final position of a king and rook checkmate: White king on f6 and White rook on a8 delivering checkmate, Black king on e8 trapped on the back rank, with the rook's attack line highlighted along the 8th rank and the White king controlling e7, f7 escape squares"
+    },
+    {
+      "id": "chess-king-pawn-opposition",
+      "file": "req5d.md",
+      "style": "diagram",
+      "description": "A chess board diagram showing the opposition position from Req 5d: White king on d4, White pawn on e3, Black king on e6, with a dotted line between the two kings indicating the opposition relationship, and a text label reading Opposition between e5 and e4 squares, clean minimal design"
+    },
+    {
+      "id": "chess-mate-patterns",
+      "file": "req5e.md",
+      "style": "diagram",
+      "description": "Four small chess board diagrams in a 2x2 grid showing common checkmate patterns: top-left shows a back-rank mate with rook on the 8th rank labeled Back Rank Mate, top-right shows a smothered mate with knight delivering check to a king surrounded by its own pieces labeled Smothered Mate, bottom-left shows an Arabian mate with rook and knight cooperating labeled Arabian Mate, bottom-right shows a queen checkmate supported by a bishop labeled Queen and Bishop Mate"
+    },
+    {
+      "id": "chess-tournament-scene",
+      "file": "req6.md",
+      "description": "A wide-angle photograph of a youth chess tournament in a school gymnasium or community hall, rows of tables with chess boards and dual clocks set up, teenagers concentrating on their games, a tournament director walking between tables observing, a large round number sign visible at one table, natural overhead lighting"
+    },
+    {
+      "id": "chess-club-tournament",
+      "file": "req7.md",
+      "description": "A small casual chess tournament scene in a community room or scout meeting space, five teenagers at tables with chess boards, a hand-drawn tournament bracket on a whiteboard in the background showing player names and round pairings, relaxed but focused atmosphere, scout-like setting with folding chairs and tables"
+    }
+  ]
+}
