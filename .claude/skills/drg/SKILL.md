@@ -369,6 +369,8 @@ Aim for 2-3 images per page at natural visual break points.
 
 **Trademark rule:** The words "Scouting America," "Boy Scouts of America," or "BSA" must NEVER appear as visible rendered text in any generated image. The image generator may pick up these terms from descriptions and render them on clothing, signs, or backgrounds. Using "BSA uniform" or "Scout" in image descriptions is fine for conveying context — the restriction is specifically about the generated image containing those words as readable text.
 
+**Branding rule:** Image descriptions must NEVER include "Merit Badge University," "Study Guide," "Digital Resource Guide," or any project branding. The image generator will render these as visible text on the image. Generated images should be content-only — no titles, headers, watermarks, or branding of any kind.
+
 **People-label rule:** Demographic terms (age, gender, race, ethnicity, nationality) may appear in image description prompts to guide the scene, but must NEVER appear as visible rendered text, labels, or annotations in the generated image itself. For example, an annotated-photo description can say "a teenager climbing a wall" to set the scene, but no label or callout in the image should read "teenager" or "diverse" or any demographic term. Visible text in the image should only describe actions, equipment, techniques, or concepts.
 
 **Do NOT** wrap shortcode syntax inside HTML comments — Hugo still processes shortcodes inside comments, causing build errors.
@@ -389,6 +391,8 @@ The image generation pipeline supports six styles. Choose the style that best se
 **Quick decision rule:** If the image's primary job is to **label parts** or **show data**, use `diagram`/`infographic`/`illustrated`. If it's to **show people doing things**, use `photo` or `annotated-photo`. If it's to **contrast two things**, use `comparison`.
 
 **Arrow and label accuracy warning:** The image generator handles photorealistic scenes and self-structuring diagrams well (e.g., compass parts, where the layout is inherent), but it cannot reliably place arrows or labels that must point to *specific* features in a complex scene. If a diagram requires multiple arrows each targeting a distinct spatial element (e.g., "this arrow points to the stream, that arrow points to the trail"), the arrows will frequently land on the wrong features. For these cases, prefer `photo` style showing the real subject (e.g., a photo of an actual orienteering map instead of a generated diagram of one) or use `diagram` only when the structure is simple enough that labels are unambiguous (e.g., a single object with parts radiating outward).
+
+**Diagram text density rule:** Diagrams and infographics should be **visual-first, text-light**. If more than ~30% of the image area would be occupied by text, the content is better served by HTML/CSS on the page (tables, styled lists, callout boxes) with the image focusing on the visual element only. The image generator produces illegible text at small sizes, so keep labels to short single words or very brief phrases. If you find yourself writing a description with multiple sentences of text that should appear *in* the image, rethink the approach — use the image for the visual component and put the text in the page content instead.
 
 **Style values for `images.json`:** `"photo"` (default — omit field), `"diagram"`, `"infographic"`, `"illustrated"`, `"annotated-photo"`, `"comparison"`
 

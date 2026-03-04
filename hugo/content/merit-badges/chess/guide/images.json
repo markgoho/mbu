@@ -22,19 +22,19 @@
       "id": "chess-famous-players",
       "file": "req1b.md",
       "style": "illustrated",
-      "description": "Six portrait-style illustrated vignettes arranged in two rows of three, each showing a person in thoughtful pose at a chess board: a 19th-century gentleman with mutton chops, a young Cuban man in early 1900s attire, an intense American teenager from the 1970s, a dynamic figure gesturing while analyzing a position, a confident woman at a tournament board, and a young Norwegian studying a position on a laptop, each with a small nameplate space below"
+      "description": "Six illustrated portrait vignettes arranged in two rows of three, each showing a different person in thoughtful pose at a chess board in a different era and setting: one at an ornate 19th-century desk, one in a tropical garden pavilion, one in a stark 1970s hotel room, one gesturing energetically at a modern analysis screen, one at a formal tournament table, and one studying on a laptop in a cozy room"
     },
     {
       "id": "chess-benefits-thinking",
       "file": "req2.md",
       "style": "infographic",
-      "description": "An infographic with four connected circular icons arranged around a central white chess knight piece: top-left circle shows a brain with gears for Critical Thinking, top-right shows a magnifying glass with target for Concentration, bottom-left shows a forking path for Decision Making, bottom-right shows a clock with a calm face for Patience, clean modern design with subtle connecting lines between elements"
+      "description": "Four circular icons arranged in a diamond pattern around a central white chess knight piece on a clean background: a brain icon at top, a target icon at right, a branching path icon at bottom, and a clock icon at left, with thin connecting lines between them, minimal clean design with no text labels"
     },
     {
       "id": "chess-piece-lineup",
       "file": "req3a.md",
       "style": "diagram",
-      "description": "Six classic white Staunton chess pieces arranged in a single row from left to right on a clean neutral background: King (tallest, with cross), Queen (crown), Rook (castle battlement top), Bishop (mitre/pointed top), Knight (horse head), Pawn (smallest, rounded top), each piece labeled with its name below in clean sans-serif text, with point values in small text (King: priceless, Q: 9, R: 5, B: 3, N: 3, P: 1)"
+      "description": "Six classic white Staunton chess pieces arranged in a single row from left to right on a clean neutral background: King (tallest, with cross on top), Queen (slightly shorter, with coronet), Rook (castle-shaped top), Bishop (pointed mitre top), Knight (horse head), Pawn (smallest, rounded top), each piece clearly distinct in silhouette"
     },
     {
       "id": "chess-board-setup",

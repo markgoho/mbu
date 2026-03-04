@@ -19,19 +19,19 @@ For this requirement, you need to know each piece by name — and then teach tho
 
 Every chess set contains six different types of pieces. Each player starts with 16 pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns.
 
-### King ♔ ♚
+### King
 
 The **king** is the most important piece on the board — the entire game revolves around it. If your king is checkmated, you lose. The king can move one square in any direction: horizontally, vertically, or diagonally. Despite being the most important piece, the king is one of the least powerful in terms of movement.
 
 **Notation symbol**: K
 
-### Queen ♕ ♛
+### Queen
 
 The **queen** is the most powerful piece. She can move any number of squares in any direction — horizontally, vertically, or diagonally — as long as no piece blocks her path. The queen combines the powers of the rook and the bishop, making her a devastating attacking piece.
 
 **Notation symbol**: Q
 
-### Rook ♖ ♜
+### Rook
 
 The **rook** (sometimes mistakenly called a "castle") moves any number of squares horizontally or vertically. Rooks are strongest on open files (columns with no pawns blocking them) and are critical in the endgame. Each player starts with two rooks.
 
@@ -41,13 +41,13 @@ The **rook** (sometimes mistakenly called a "castle") moves any number of square
 A common beginner mistake is calling the rook a "castle." The rook is the piece; "castling" is a special move involving the king and a rook. Knowing the correct terminology shows your counselor you understand the game.
 {{< /drg/tip >}}
 
-### Bishop ♗ ♝
+### Bishop
 
 The **bishop** moves any number of squares diagonally. Because it stays on diagonal lines, a bishop that starts on a light square can never reach a dark square, and vice versa. That is why having both bishops (called a "bishop pair") is considered an advantage — together they can cover the entire board.
 
 **Notation symbol**: B
 
-### Knight ♘ ♞
+### Knight
 
 The **knight** is the trickiest piece to learn. It moves in an "L" shape: two squares in one direction (horizontally or vertically) and then one square perpendicular to that — or one square first and then two perpendicular. The knight is the only piece that can **jump over** other pieces, making it especially dangerous in crowded positions.
 
@@ -57,7 +57,7 @@ The **knight** is the trickiest piece to learn. It moves in an "L" shape: two sq
 The knight is the only chess piece that can make a move at the very start of the game without a pawn moving first. It is also the only piece that can attack a queen without the queen being able to attack it back from the same distance.
 {{< /drg/did-you-know >}}
 
-### Pawn ♙ ♟
+### Pawn
 
 The **pawn** is the most numerous piece — each side starts with eight. Pawns move forward one square at a time (or optionally two squares on their very first move). Unlike other pieces, pawns capture differently from how they move: they capture one square diagonally forward. Pawns cannot move backward.
 
@@ -69,14 +69,14 @@ Despite being the weakest individual piece, pawns form the structure of your pos
 
 While the king is priceless (losing it means losing the game), the other pieces have approximate point values that help you evaluate trades:
 
-| Piece | Symbol | Approximate Value |
-|-------|--------|-------------------|
-| Pawn | ♙ | 1 point |
-| Knight | ♘ | 3 points |
-| Bishop | ♗ | 3 points |
-| Rook | ♖ | 5 points |
-| Queen | ♕ | 9 points |
-| King | ♔ | Infinite (game over if lost) |
+| Piece | Notation | Approximate Value |
+|-------|----------|-------------------|
+| Pawn | *(none)* | 1 point |
+| Knight | N | 3 points |
+| Bishop | B | 3 points |
+| Rook | R | 5 points |
+| Queen | Q | 9 points |
+| King | K | Infinite (game over if lost) |
 
 These values are guidelines, not absolute rules. A well-placed knight can be worth more than a passive rook. Context matters — but knowing the basic values helps you decide whether a trade is favorable.
 
