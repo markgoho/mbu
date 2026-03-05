@@ -1,0 +1,136 @@
+{
+  "badge": "farm-mechanics",
+  "style_context": "Farm mechanics — tractors, diesel engines, hydraulic systems, tool maintenance, farm shop safety, agricultural equipment",
+  "images": [
+    {
+      "id": "scout-farm-shop",
+      "file": "_index.md",
+      "description": "A teenager in clean work clothes (jeans, close-fitting long-sleeve shirt, leather work boots) standing in a well-organized farm shop. Behind them is a sturdy wooden workbench with a bench vise, a pegboard with neatly hung wrenches and screwdrivers, and a green farm tractor visible through the open bay door. Warm overhead lighting. The teenager looks confident and ready to work."
+    },
+    {
+      "id": "farm-tools-organized",
+      "file": "_index.md",
+      "description": "A large pegboard tool rack in a farm shop with wrenches arranged by size, screwdrivers in a row, pliers hanging from hooks, a ball-peen hammer, and several hand files. Each tool position has a painted outline showing where it belongs. The pegboard is mounted above a clean wooden workbench with a red bench vise bolted to the corner. Bright shop lighting."
+    },
+    {
+      "id": "tractor-field-golden-hour",
+      "file": "_index.md",
+      "description": "A large modern farm tractor pulling a hay baler across a golden wheat field during late afternoon. Warm golden hour sunlight illuminates dust trailing behind the baler. Bales of hay are visible in the freshly cut field. Wide landscape view with blue sky and a few scattered clouds."
+    },
+    {
+      "id": "ppe-farm-mechanic",
+      "file": "req1a.md",
+      "description": "A teenager in a farm shop wearing complete personal protective equipment for mechanical work: clear safety glasses with side shields, leather work gloves, steel-toed brown work boots, close-fitting long-sleeve denim shirt tucked in, and long blue jeans. They stand beside a workbench that has a set of open-end wrenches, a grease gun, and a drain pan on it. Clean, well-lit shop environment."
+    },
+    {
+      "id": "fire-extinguisher-shop",
+      "file": "req1a.md",
+      "description": "A bright red ABC fire extinguisher mounted in a wall bracket next to an open shop door with a green EXIT sign above it. On the adjacent wall, a white first aid kit box with a red cross is clearly visible. The concrete floor and metal wall panels of a typical farm shop surround the scene. Clean, well-maintained appearance."
+    },
+    {
+      "id": "farm-shop-floor-plan",
+      "file": "req1b.md",
+      "style": "diagram",
+      "description": "A clean bird's-eye-view floor plan diagram of a rectangular farm shop building. The center is labeled 'Vehicle Bay'. Along the left wall: 'Workbench' with 'Bench Vise', and 'Tool Storage' on pegboards. Along the back wall: 'Welding Area' with a curtain partition, and 'Parts Storage' with bins. Along the right wall: 'Fluid Storage' on a spill pallet and 'Air Compressor'. Two doors are marked 'EXIT' on opposite walls. Red circles labeled 'FE' mark fire extinguisher locations near each exit. A blue cross marks the first aid kit. A blue circle marks the eye wash station. Ceiling-mounted boxes labeled 'Vent Fan' appear on two walls. Clean white background with black lines and colored labels."
+    },
+    {
+      "id": "farm-shop-interior",
+      "file": "req1b.md",
+      "description": "Interior of a working farm shop with a poured concrete floor, bright overhead LED shop lights, and a large farm tractor partially pulled inside through an open roll-up bay door. Along one wall, a heavy wooden workbench with a mounted bench vise, and above it a pegboard of organized tools. A red fire extinguisher is visible near the door. The shop is clean and well-organized."
+    },
+    {
+      "id": "safety-symbols-grid",
+      "file": "req1c.md",
+      "style": "diagram",
+      "description": "A two-by-four grid of eight common farm equipment safety symbols, each inside its own bordered box. Row 1: Pinch Point (two curved arrows pointing inward between two surfaces), Entanglement (hand being pulled into gears), Crush Hazard (hand between two heavy blocks pressing together), Shear Point (scissors-like blades closing). Row 2: Hot Surface (hand pulling away from wavy heat lines), Electrical Hazard (yellow triangle with lightning bolt), Read Manual (open book icon), No Open Flame (flame inside red prohibition circle). Each box has a short label centered below the symbol. Clean white background, standard ISO safety colors."
+    },
+    {
+      "id": "tractor-warning-decals",
+      "file": "req1c.md",
+      "description": "A close-up view of the side panel of a farm tractor near the engine compartment, showing multiple yellow and orange triangular warning decals applied to the painted metal body. The decals show various safety symbols including pinch point, entanglement hazard, and hot surface warnings. Hydraulic quick-connect couplings are visible nearby. Natural daylight."
+    },
+    {
+      "id": "sds-document-closeup",
+      "file": "req1d.md",
+      "description": "A printed Safety Data Sheet document lying on a wooden workbench surface. The top of the first page is visible, showing 'SAFETY DATA SHEET' as the header, with Section 1 (Identification) and Section 2 (Hazard Identification) partially visible. Red-bordered diamond-shaped GHS hazard pictograms are printed on the page, including the flame symbol and the exclamation mark symbol. A pen rests on the document."
+    },
+    {
+      "id": "chemical-storage-labeled",
+      "file": "req1d.md",
+      "description": "A metal storage shelf in a farm shop holding several large containers: a yellow jug of engine oil, a green bottle of antifreeze coolant, a red container of hydraulic fluid, and tubes of grease. Each container has a product label and hazard warning visible. A white three-ring binder with a handwritten spine label sits on the shelf beside the containers. Clean and organized."
+    },
+    {
+      "id": "diesel-four-stroke",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A four-panel horizontal diagram showing the four strokes of a diesel engine cycle. Each panel shows a simplified cross-section of a cylinder with piston, valves, and connecting rod. Panel 1 labeled 'INTAKE': piston at bottom, intake valve open, blue arrows showing air entering. Panel 2 labeled 'COMPRESSION': both valves closed, piston at top, compressed air shown in orange. Panel 3 labeled 'POWER': fuel injector spraying, explosion depicted with red and yellow, piston driven down. Panel 4 labeled 'EXHAUST': exhaust valve open, gray arrows showing gases leaving, piston moving up. Clean white background with bold labels below each panel."
+    },
+    {
+      "id": "hydraulic-system-diagram",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A simplified hydraulic circuit diagram showing five components connected by lines representing hoses. Starting from the left: a rectangular 'Reservoir' tank, then a circle labeled 'Pump' with a small gear icon, then a rectangle labeled 'Control Valve' with a lever on top, then a cylinder shape labeled 'Hydraulic Cylinder' with a rod extending from one end. Blue arrows along the lines show fluid flow direction from reservoir through pump to valve to cylinder, and red arrows show return flow from cylinder back to reservoir. Clean white background with clear labels."
+    },
+    {
+      "id": "tractor-pto-connection",
+      "file": "req2.md",
+      "description": "The rear view of a farm tractor showing the PTO shaft connection area. A yellow protective PTO safety shield covers the splined shaft. The three-point hitch arms extend downward with lower link pins visible. Two hydraulic quick-connect couplings with dust caps are visible on either side. The tractor is parked on gravel in daylight. Clean, well-maintained equipment."
+    },
+    {
+      "id": "organized-hardware-bins",
+      "file": "req3.md",
+      "description": "Rows of small clear-front plastic storage bins mounted on a workshop wall, each containing different sizes of bolts, nuts, and washers sorted by size. Handwritten labels on each bin show sizes. The bins are arranged in neat horizontal rows. Below the bins, a section of pegboard with hanging wrenches is partially visible. Clean, well-lit shop environment."
+    },
+    {
+      "id": "filing-chisel-head",
+      "file": "req3.md",
+      "description": "A close-up view of two hands wearing brown leather work gloves using a flat mill hand file on a cold chisel clamped vertically in a gray bench vise. The mushroomed, deformed edge of the chisel head is visible at the top, and small metal filings are being removed by the file stroke. The person wears clear safety glasses. Workbench surface visible beneath."
+    },
+    {
+      "id": "oil-change-tractor",
+      "file": "req4.md",
+      "description": "A teenager in work clothes and blue nitrile gloves kneeling beside a farm tractor, positioning a large black drain pan under the engine to catch draining oil. Dark used engine oil streams from the open drain plug into the pan. On the ground nearby, a new white oil filter in its box and two gallon jugs of fresh engine oil are visible. The scene is in a farm shop with a concrete floor."
+    },
+    {
+      "id": "tractor-winter-storage",
+      "file": "req4.md",
+      "description": "A clean farm tractor parked inside a dry equipment shed on a concrete floor. A small black battery maintainer device is connected to the battery with red and black clips visible on the battery terminals. A bottle of fuel stabilizer sits on the fender near the fuel cap. The tractor is clean — no mud or crop residue — indicating it has been prepared for storage. Dim natural light from the shed opening."
+    },
+    {
+      "id": "dealer-service-shop",
+      "file": "req5.md",
+      "description": "The interior of a modern farm implement dealership service bay. A large green tractor is raised on a hydraulic service lift with a technician in a clean dark uniform standing beside it consulting a laptop computer on a rolling diagnostic cart. Professional tool chests line the walls. Bright fluorescent overhead lighting illuminates the clean concrete floor. The atmosphere is professional and organized."
+    },
+    {
+      "id": "worn-vs-new-filter",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "A side-by-side comparison on a clean workbench surface. Left side: a heavily clogged cylindrical air filter element that is dark brown and gray with embedded dirt and debris, visibly deformed. Right side: a brand new air filter element of the same size that is bright white and clean with crisp paper pleats. Both filters are the same model, making the contrast between used and new striking."
+    },
+    {
+      "id": "air-filter-inspection",
+      "file": "req6.md",
+      "description": "Two hands holding a large cylindrical paper air filter element up toward a bright light source. Sunlight passes through some pleats of the filter showing it is partially clogged but still serviceable. In the background, slightly out of focus, the open air filter housing canister on a tractor engine is visible. The scene is outdoors in bright daylight."
+    },
+    {
+      "id": "wire-brush-wheel-use",
+      "file": "req6.md",
+      "description": "A person wearing clear safety goggles, a clear face shield over them, and brown leather work gloves holding a small metal bracket against a spinning wire-brush wheel mounted on a bench grinder. Small sparks and wire fragments are visible flying from the contact point. The grinder is bolted to a sturdy workbench. An adjustable tool rest is visible close to the wire wheel. The person wears a long-sleeve shirt with sleeves buttoned at the wrist."
+    },
+    {
+      "id": "ag-technician-diagnostics",
+      "file": "req7.md",
+      "description": "A young person in a clean dark blue work uniform standing beside a large modern farm tractor in a bright dealership service bay. They hold a laptop computer that is connected via a cable to a diagnostic port on the tractor's instrument panel area. The laptop screen shows colorful diagnostic data charts. Professional tool cabinets and bright overhead lights fill the background."
+    },
+    {
+      "id": "career-paths-farming",
+      "file": "req7.md",
+      "description": "A wide panoramic view of a modern farming operation at golden hour. In the foreground, a large tractor with a visible GPS antenna on the cab roof drives through a green crop field creating straight parallel rows. To the right, a white service pickup truck with a toolbox bed is parked at the field edge. In the sky above the field, a small quadcopter drone hovers surveying the crop. Golden light bathes the entire scene. Wide landscape composition."
+    },
+    {
+      "id": "precision-ag-technology",
+      "file": "extended-learning.md",
+      "description": "The interior of a modern tractor cab viewed from the passenger side. A large color touchscreen display mounted on the right pillar shows a GPS field map with colored zones. The steering wheel has auto-steer controls. Through the large windshield, perfectly straight crop rows extend toward the horizon in a green field under blue sky. The cab interior is clean and modern with an air-conditioned feel."
+    }
+  ]
+}
