@@ -1,0 +1,132 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness survival skills for Scouts — outdoor environments, survival gear, shelter building, fire starting, signaling, and backcountry emergency medicine",
+  "images": [
+    {
+      "id": "wilderness-survival-intro-scene",
+      "file": "_index.md",
+      "description": "A Scout in a clean tan uniform studying a topographic map while standing beside a forest trail. Rolling wooded hills visible in the background under a partly cloudy sky. The Scout holds the map open with both hands at chest height, looking at it attentively."
+    },
+    {
+      "id": "wilderness-environments-comparison",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Four panels arranged in a 2x2 grid, each showing a wilderness environment type. Top-left: a dense green forest with tall conifers. Top-right: an open sandy desert with red rock formations. Bottom-left: snow-covered mountain peaks with alpine terrain. Bottom-right: a calm blue lake or river shoreline with forest. Each panel has a single short label beneath it. Clean white borders between panels. No additional text or annotations."
+    },
+    {
+      "id": "backcountry-first-aid-scene",
+      "file": "req1a.md",
+      "description": "A Scout in a clean tan uniform kneeling on a forest trail, carefully applying a white bandage wrap to a companion's lower leg. The companion is seated on a log. Both appear calm and focused. Dappled sunlight filters through trees in the background."
+    },
+    {
+      "id": "biting-insects-grid",
+      "file": "req1a.md",
+      "style": "illustrated",
+      "description": "Four close-up scientific illustrations arranged in a 2x2 grid, each depicting a common biting insect from a side or top view: a chigger mite, an Ixodes tick, a mosquito, and a biting gnat. Each illustration uses clean linework with a white background. Each has a single short horizontal label beneath it identifying the insect. Only four labels total — one per panel. No additional text or callouts."
+    },
+    {
+      "id": "scout-essentials-laid-out",
+      "file": "req1b.md",
+      "description": "Ten Scout Essentials arranged neatly on a flat wooden surface, photographed from directly above. Items visible: a folding pocketknife, a small first aid kit pouch, a stainless steel water bottle, a flashlight, wrapped trail food bars, a folded rain jacket, a tube of sunscreen, a box of waterproof matches, a folded topographic map, and a baseplate compass. Items are spread out in a loose grid with space between them. Natural wood surface, good lighting, no text or labels visible."
+    },
+    {
+      "id": "trip-plan-on-table",
+      "file": "req1c.md",
+      "description": "A topographic map spread open on a wooden table, with a handwritten trip plan sheet of paper beside it. A baseplate compass rests on the map near the sheet. A pencil lies across the paper. Natural overhead lighting. No visible text on the paper beyond lines indicating it is being filled in. Clean, simple composition."
+    },
+    {
+      "id": "seven-priorities-infographic",
+      "file": "req2.md",
+      "style": "infographic",
+      "description": "A vertical numbered list of seven survival priorities, styled as a clean infographic. Each row has a number (1 through 7), a simple icon, and a short label. Icons from top to bottom: a pause or stop symbol, a first aid cross, a triangular shelter shape, a flame, a water droplet, an apple or food icon, and a signal mirror reflecting light. Seven rows total, evenly spaced, on a white or light background. Only seven labels — one per row. No additional annotations."
+    },
+    {
+      "id": "scout-sitting-calmly-in-forest",
+      "file": "req3.md",
+      "description": "A Scout in a clean tan uniform sitting calmly with their back against a large tree trunk in a forest. Eyes are gently closed, hands resting on knees, posture relaxed. Afternoon light filters through the forest canopy. The forest floor has fallen leaves. The mood is calm and meditative, not distressed."
+    },
+    {
+      "id": "survival-kit-and-first-aid-kit-open",
+      "file": "req4.md",
+      "description": "Two small kits opened and displayed side by side on a neutral surface. On the left: a compact first aid kit pouch with contents including bandages, gauze, tape, and small tubes arranged neatly inside and around it. On the right: a small metal tin or waterproof container with survival items — a folded space blanket, a whistle, a ferro rod, a small compass, water purification tablets, and paracord. Both kits photographed from slightly above. No text labels visible."
+    },
+    {
+      "id": "five-exposure-environments",
+      "file": "req5a.md",
+      "style": "illustrated",
+      "description": "Five small illustrated scenes arranged in a horizontal row or a 3-2 grid. Each scene depicts a different survival environment: (1) a snowy forest with snow on the ground and bare trees, (2) a rainy forest trail with water droplets on leaves, (3) a dry desert canyon with red rock walls and bright sun, (4) an open ridgeline with wind-swept grass under dark clouds, (5) a lake or river with an overturned canoe floating near shore. Each scene uses clean illustration style with distinct colors. Short label below each. Only five labels total."
+    },
+    {
+      "id": "layering-system-diagram",
+      "file": "req5b.md",
+      "style": "diagram",
+      "description": "Three clothing items displayed in a clean horizontal row against a white background. From left to right: a fitted moisture-wicking base layer shirt in gray, an insulating mid-layer fleece jacket in blue, and a waterproof shell jacket in orange. Each item is shown flat or on a simple hanger. Three horizontal labels below each item identifying its layer function. Only three labels total — one per garment. No additional text."
+    },
+    {
+      "id": "bear-canister-and-hung-food-bag",
+      "file": "req5c.md",
+      "description": "Forest campsite scene showing two food storage methods side by side. On the left: a cylindrical hard-sided bear canister sitting on a flat rock, lid off. On the right: a yellow stuff sack hanging in mid-air from a rope strung between two trees, positioned at least 10 feet off the ground. Sunlight filters through the forest canopy. No people visible. Green forest background."
+    },
+    {
+      "id": "debris-hut-shelter-forest",
+      "file": "req5d.md",
+      "description": "A completed debris hut survival shelter in a temperate forest setting. The shelter is low to the ground, shaped like a long mound, covered with a thick layer of dry leaves and dead sticks. A narrow opening at one end. Pine and deciduous trees in the background. Natural lighting, no people visible, showing the finished structure from a slight angle so its shape and thickness are apparent."
+    },
+    {
+      "id": "snow-trench-cross-section",
+      "file": "req5d.md",
+      "style": "diagram",
+      "description": "A clean cross-section diagram of a snow trench survival shelter. The diagram shows a vertical cut through the trench, revealing: a person lying inside with a sleeping bag, the snow walls on either side, a covering layer of branches and sticks supporting a snow roof layer above. Two dimension labels indicate the approximate depth of the trench and the thickness of the roof layer. White and light-blue colors for snow, brown for wooden covers. Only two labels total. No additional text."
+    },
+    {
+      "id": "scout-building-debris-hut",
+      "file": "req5e.md",
+      "description": "A Scout in work clothes carrying a large armful of dry autumn leaves through a forest, moving toward a partially built debris hut frame visible in the background. The frame is made of sticks leaning against a low ridgepole. The Scout looks focused and purposeful. Afternoon light in a mixed forest setting."
+    },
+    {
+      "id": "fire-triangle-diagram",
+      "file": "req6.md",
+      "style": "diagram",
+      "description": "A simple equilateral triangle diagram on a white background. Each of the three sides is labeled with one fire requirement: the bottom side is labeled with a fuel-related word, the upper-left side with a heat-related word, and the upper-right side with an oxygen-related word. A small stylized flame icon sits in the center of the triangle. Clean black lines, minimal design. Three labels total — one per side. No additional text."
+    },
+    {
+      "id": "ferro-rod-sparking-tinder",
+      "file": "req6.md",
+      "description": "Close-up photograph of two hands over a small tinder bundle. One hand holds a ferro rod at a slight downward angle toward the tinder. The other hand holds a striker in contact with the rod. Bright orange and yellow sparks are captured mid-flight traveling from the rod toward the dark tinder bundle below. Dark background to make sparks visible. Focus on hands and sparks."
+    },
+    {
+      "id": "signal-fire-smoke-column",
+      "file": "req7a.md",
+      "description": "A medium-sized campfire in an open grassy meadow producing a thick column of dark smoke rising straight up against a clear blue sky. The fire is built with green vegetation creating the dark smoke. The surrounding meadow is flat and open, with treeline visible in the far distance. The smoke column is the dominant visual element, clearly visible against the sky."
+    },
+    {
+      "id": "signal-mirror-technique",
+      "file": "req7b.md",
+      "style": "annotated-photo",
+      "description": "A person's hands demonstrating the signal mirror aiming technique outdoors. One arm is extended forward with two fingers forming a V-shape pointing at a distant target (treeline). The other hand holds a small rectangular signal mirror near the face. A bright reflected light spot is visible on the outstretched hand, positioned between the two fingers. Three callout labels: one identifying the mirror, one pointing to the V-hand, one indicating the light spot. Only three callout labels total."
+    },
+    {
+      "id": "ground-to-air-signals-table",
+      "file": "req7c.md",
+      "style": "infographic",
+      "description": "A clean grid showing five ground-to-air signal symbols arranged in two rows. Each cell contains one large black symbol drawn on a white or light background with a short label below it. Symbols: a large X, a large V, a right-pointing arrow, a capital F, and two parallel L-shapes (LL). Each symbol is drawn large enough to fill most of its cell. Five labels total — one per symbol. No additional text or annotations."
+    },
+    {
+      "id": "water-purification-methods",
+      "file": "req8.md",
+      "description": "Three scenes arranged side by side showing different water purification methods. Left: a small metal camp pot sitting over a campfire with water coming to a boil, steam rising. Center: a person's hands using a pump water filter, with the intake hose in a stream and output hose into a water bottle. Right: a water bottle with a purification tablet mid-drop into clear water. All three scenes photographed in an outdoor setting. No text labels."
+    },
+    {
+      "id": "wild-plant-danger-illustration",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "Two botanical illustrations side by side showing two plants that closely resemble each other. Left plant: a safe edible wild plant (such as wild carrot) with its distinctive leaf and flower structure. Right plant: a toxic lookalike (such as water hemlock) with similar but subtly different characteristics. Each plant is drawn in detailed botanical illustration style. Short labels identify each plant by name. Only two labels — one per plant. No additional text or callouts."
+    },
+    {
+      "id": "wilderness-career-collage",
+      "file": "req10.md",
+      "style": "illustrated",
+      "description": "Four illustrated portraits arranged in a 2x2 grid, each showing a wilderness-related professional. Top-left: a park ranger in a green uniform and campaign hat in an outdoor setting. Top-right: a wilderness medicine professional in outdoor clothing with a medical bag. Bottom-left: a person in military survival instructor gear in a forest. Bottom-right: a search and rescue volunteer in orange SAR vest and helmet with rope gear. Clean illustration style, consistent art style across all four. Short title label under each. Only four labels total."
+    }
+  ]
+}
