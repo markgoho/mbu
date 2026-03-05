@@ -1,0 +1,144 @@
+{
+  "badge": "dentistry",
+  "style_context": "Dental health, oral anatomy, dental office environment, tooth structure, dental instruments, oral hygiene",
+  "images": [
+    {
+      "id": "scout-dental-office-tour",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform receiving a tour of a modern dental office. The Scout looks interested as a dentist in a white coat gestures toward a dental chair and overhead light. Bright, clean clinical environment with teal and white color scheme. The Scout is standing beside the dental chair, not sitting in it."
+    },
+    {
+      "id": "dental-history-comparison",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Split image. Left panel: a dim medieval barber-surgeon workshop with a wooden chair, iron pliers and simple hand tools on a rough table, candlelight illumination. Right panel: a bright modern dental office with a digital screen showing an X-ray, an adjustable hydraulic chair, LED overhead light, and sleek instruments on a stainless steel tray. Strong visual contrast between the two eras."
+    },
+    {
+      "id": "dental-specialties-overview",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Six dental specialties shown as a two-row, three-column grid. Each cell has a simple icon and a short label beneath. Row 1: a tooth with a dental mirror icon labeled General, a row of teeth with braces icon labeled Orthodontics, a scalpel icon labeled Oral Surgery. Row 2: a smiling child face icon labeled Pediatric, a tooth with visible roots and gum line icon labeled Periodontics, a sparkling tooth icon labeled Cosmetic. Clean white background with teal accent color. Only six icons total. No additional text or annotations."
+    },
+    {
+      "id": "molar-anatomy-labeled",
+      "file": "req1.md",
+      "style": "diagram",
+      "description": "Clean cross-section diagram of a lower molar tooth in its socket. The crown sits above a dashed gumline. Two roots extend below into bone. Internal layers clearly visible: thin white enamel outer shell on the crown, yellow dentin filling the interior, a hollow pulp chamber in the center, narrow root canals running through each root, thin cementum covering root surfaces, and tiny openings at each root tip. Surrounding structures include pink gingiva, a thin periodontal ligament gap, and alveolar bone. Nine horizontal labels with thin lines pointing to each structure. White background."
+    },
+    {
+      "id": "plaque-zones-molar",
+      "file": "req1.md",
+      "style": "diagram",
+      "description": "A lower molar tooth shown from the front in its socket with three highlighted zones where bacterial plaque collects. Zone 1 in yellow along the gumline where tooth meets gum. Zone 2 in orange in the pits and grooves on the flat chewing surface. Zone 3 in red on the side contact areas where adjacent teeth touch. Three horizontal labels identify each zone. Simple clean diagram on white background."
+    },
+    {
+      "id": "dental-xray-annotated",
+      "file": "req1.md",
+      "style": "diagram",
+      "description": "An educational diagram showing how dental radiographs reveal tooth structure. Four simplified tooth cross-sections in a row, each highlighting a different feature that appears on a dental image. Tooth 1 highlights the bright white enamel layer. Tooth 2 highlights the gray dentin layer beneath enamel. Tooth 3 highlights the dark pulp chamber space in the center. Tooth 4 shows a small dark spot between two teeth representing a cavity. Each tooth has a short horizontal label beneath identifying the feature. Clean white background with simple educational illustration style."
+    },
+    {
+      "id": "decay-cycle-diagram",
+      "file": "req2a.md",
+      "style": "infographic",
+      "description": "A circular four-step diagram showing the tooth decay cycle. Four icons arranged in a circle connected by curved arrows. Step 1: a candy icon representing sugar entering the mouth. Step 2: bacteria cluster icon representing plaque consuming sugar. Step 3: a droplet icon representing acid production. Step 4: a shield icon representing saliva repairing enamel. Each step has a short horizontal label beneath its icon. Clean white background with teal and coral accent colors."
+    },
+    {
+      "id": "healthy-vs-gingivitis-gums",
+      "file": "req2a.md",
+      "style": "comparison",
+      "description": "Split image comparing gum health. Left panel: healthy gums that are pink, firm, and fit snugly around white teeth with the label Healthy. Right panel: gums with gingivitis that are red, swollen, and slightly pulled away from the teeth with visible inflammation at the gumline with the label Gingivitis. Clinical close-up view of teeth and gums only, no face visible."
+    },
+    {
+      "id": "three-mouth-guard-types",
+      "file": "req2b.md",
+      "style": "comparison",
+      "description": "Three mouth guards displayed side by side on a clean white surface. Left: a generic bulky stock mouth guard in bright blue. Center: a boil-and-bite mouth guard in clear material showing teeth impression marks. Right: a professionally made custom-fitted mouth guard in a protective case. Three horizontal labels beneath each: Stock, Boil-and-Bite, and Custom. Clean product photography style."
+    },
+    {
+      "id": "scout-sports-mouth-guard",
+      "file": "req2b.md",
+      "description": "A teenager in a clean Scout uniform inserting a mouth guard before a flag football game on a grassy field. Other teenagers visible in the background preparing to play. Bright outdoor afternoon lighting. The Scout looks confident and prepared."
+    },
+    {
+      "id": "tooth-first-aid-steps",
+      "file": "req2c.md",
+      "style": "infographic",
+      "description": "Four-panel horizontal infographic showing knocked-out tooth first aid steps. Panel 1: a hand holding a tooth by the crown with a red X over the root area. Panel 2: a tooth under a gentle stream of water. Panel 3: a tooth being placed back into a socket opening. Panel 4: a tooth submerged in a glass of milk. Each panel has a short label beneath: Hold by Crown, Rinse Gently, Reimplant, or Store in Milk. Clean white background with four panels in a row."
+    },
+    {
+      "id": "tooth-storage-options",
+      "file": "req2c.md",
+      "style": "comparison",
+      "description": "Three tooth storage options arranged left to right from best to acceptable. Left: a small commercial tooth preservation kit container with green checkmark. Center: a glass of cold white milk with yellow checkmark. Right: a person touching their cheek indicating storing the tooth in the mouth with orange checkmark. Three horizontal labels beneath: Preservation Kit (Best), Cold Milk (Good), and Saliva (Acceptable). Clean white background."
+    },
+    {
+      "id": "tobacco-oral-effects",
+      "file": "req2d.md",
+      "style": "infographic",
+      "description": "Five oral health effects of tobacco use shown as a horizontal row of icons. Icon 1: a yellow-brown stained tooth. Icon 2: red receding gums pulling away from a tooth. Icon 3: a white lesion patch shape. Icon 4: a gap between teeth indicating tooth loss. Icon 5: wavy lines near a mouth indicating bad breath. Each icon has a short horizontal label beneath: Stained Teeth, Gum Disease, Oral Lesions, Tooth Loss, Bad Breath. Clean white background with five icons total."
+    },
+    {
+      "id": "healthy-vs-tobacco-mouth",
+      "file": "req2d.md",
+      "style": "comparison",
+      "description": "Split image comparing oral health. Left panel: a healthy mouth with pink gums, clean white teeth, and a label reading Healthy. Right panel: a tobacco user's mouth with yellow-brown stained teeth, red receding gums, and a visible white patch on the inner cheek with a label reading Tobacco User. Clinical close-up views showing teeth and gums, no full faces visible."
+    },
+    {
+      "id": "scout-dental-visit-prep",
+      "file": "req3.md",
+      "description": "A teenager in a clean Scout uniform sitting in a dental office waiting room, looking down at a small notebook where they have written questions. A friendly reception desk is visible in the background. Clean modern waiting room with comfortable chairs and soft lighting. The Scout appears focused and well-prepared."
+    },
+    {
+      "id": "dental-exam-steps",
+      "file": "req3.md",
+      "style": "infographic",
+      "description": "Six steps of a dental checkup shown as a horizontal flow of icons. Icon 1: a clipboard for medical history. Icon 2: a mouth mirror for visual exam. Icon 3: a periodontal probe for gum assessment. Icon 4: an X-ray image icon. Icon 5: a polishing cup for professional cleaning. Icon 6: two people talking for findings discussion. Each has a short horizontal label beneath. Six icons in a single row on a clean white background with teal accent color."
+    },
+    {
+      "id": "dental-instruments-labeled",
+      "file": "req4.md",
+      "style": "diagram",
+      "description": "Six common dental instruments arranged neatly in a row on a stainless steel sterilization tray. From left to right: a small round mouth mirror, a thin curved explorer probe, a periodontal probe with markings, a hook-shaped scaler, a spoon-shaped excavator, and locking cotton forceps. Each instrument has a short horizontal label beneath it. Clean clinical background. Six labels total."
+    },
+    {
+      "id": "dental-stone-cast-process",
+      "file": "req4.md",
+      "description": "A clean dental lab workspace showing materials for making a dental stone cast. Items arranged left to right in workflow order: a bag of white dental stone powder, a rubber mixing bowl with a metal spatula, a small water measuring cup, an alginate impression tray with a completed impression showing teeth indentations, and a small dental vibrator machine. Bright clinical lighting on a white countertop."
+    },
+    {
+      "id": "decay-progression-stages",
+      "file": "req6.md",
+      "style": "illustrated",
+      "description": "Four cross-section illustrations of the same molar tooth showing progressive stages of dental decay. Image 1: a healthy tooth with intact white enamel and yellow dentin, labeled Healthy. Image 2: a small brown spot penetrating the enamel surface, labeled Enamel Decay. Image 3: a larger brown area extending through enamel into dentin approaching the pulp, labeled Dentin Decay. Image 4: brown decay reaching the red pulp chamber with a dark circle at the root tip indicating an abscess, labeled Pulp Infection. Four teeth in a row with labels beneath each. Clean white background with educational line-art style."
+    },
+    {
+      "id": "fluoride-delivery-methods",
+      "file": "req5.md",
+      "style": "infographic",
+      "description": "Five ways fluoride reaches teeth shown as a horizontal row of icons. Icon 1: a water faucet with a water drop. Icon 2: a toothpaste tube. Icon 3: a mouthwash bottle. Icon 4: a dental professional applying varnish with a small brush. Icon 5: a supplement tablet. Each has a short horizontal label beneath: Water, Toothpaste, Rinse, Professional Treatment, Supplements. Five icons in a single row on a clean white background."
+    },
+    {
+      "id": "mouth-body-connections",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "A central illustration of an open mouth with five lines radiating outward to five icons representing mouth-body connections. Top-left: a stomach icon labeled Digestion. Top-right: a water droplet icon labeled Saliva. Center-left: a molecular structure icon labeled Enzymes. Center-right: a plate of food icon labeled Nutrition. Bottom: a speech bubble icon labeled Speech. Clean layout with the mouth in the center and five labeled icons arranged around it. White background."
+    },
+    {
+      "id": "dental-careers-spectrum",
+      "file": "req7.md",
+      "style": "infographic",
+      "description": "Six dental career paths arranged vertically from shortest to longest education path. Each row has a small icon, career name, and education duration. Row 1: Dental Assistant, 1 year. Row 2: Dental Hygienist, 2-4 years. Row 3: Lab Technician, 2 years. Row 4: General Dentist, 8 years. Row 5: Orthodontist, 10-11 years. Row 6: Oral Surgeon, 12-14 years. A vertical progress bar on the left side shows increasing education. Clean layout on white background with teal accent color."
+    },
+    {
+      "id": "dental-professional-at-work",
+      "file": "req7.md",
+      "description": "A dental professional in blue scrubs and a white coat standing in a modern dental office, viewing a large wall-mounted digital screen displaying a 3D tooth scan. Sleek equipment visible in the background. Bright, high-tech clinical environment with teal and white color scheme. The professional appears focused and competent."
+    },
+    {
+      "id": "dental-technology-future",
+      "file": "extended-learning.md",
+      "description": "A modern high-tech dental office showing cutting-edge technology. A wall-mounted screen displays a rotating 3D scan of teeth. A small CAD/CAM milling unit sits on a countertop. A dental professional in scrubs reviews results on a tablet computer. Bright LED lighting, clean white and teal surfaces, futuristic but realistic clinical environment."
+    }
+  ]
+}
