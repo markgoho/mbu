@@ -1,0 +1,102 @@
+{
+  "badge": "electronics",
+  "style_context": "Scouting America merit badge about electronic circuits, components, soldering, and digital logic",
+  "images": [
+    {
+      "id": "scout-electronics-workbench",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform seated at a well-organized electronics workbench, examining a green circuit board closely. On the bench: a soldering iron in its stand, a digital multimeter, spools of solder wire, small bins of resistors and capacitors, and a breadboard with colorful jumper wires. Warm workshop lighting. No text, logos, or branding visible anywhere."
+    },
+    {
+      "id": "electronics-branches-overview",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Four-panel grid with equal-sized squares. Top-left: an audio amplifier board with a sine wave overlay representing analog electronics. Top-right: a logic gate IC chip on a circuit board representing digital electronics. Bottom-left: a laptop charger opened to show internal power conversion circuitry representing power electronics. Bottom-right: an Arduino microcontroller board with connected sensors representing embedded systems. Each panel has a single short horizontal label below it. Clean white background between panels. No text except the four labels."
+    },
+    {
+      "id": "electronics-safety-gear",
+      "file": "req1.md",
+      "description": "A neatly organized electronics workbench ready for safe work. Visible items arranged clearly: safety glasses with clear lenses, a soldering iron resting in its wire stand, a small desk fan positioned as a fume extractor, an anti-static wrist strap with its grounding cord, a silicone soldering mat, and a small first-aid kit. Bright overhead lighting. Clean, uncluttered workspace. No people. No text or branding."
+    },
+    {
+      "id": "esd-wrist-strap-use",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "description": "Close-up of two hands wearing a blue anti-static wrist strap on the left wrist, with the strap's alligator clip attached to a metal grounding point on the workbench edge. The hands are carefully holding a small circuit board by its edges, avoiding touching any components. Only two labels total: one pointing to the wrist strap, one pointing to the grounding clip. No additional text or annotations."
+    },
+    {
+      "id": "schematic-symbols-reference",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A clean reference chart on white background showing ten standard electronic schematic symbols arranged in two rows of five. Row one: resistor (zigzag), capacitor (two parallel lines), polarized capacitor (one straight one curved line), NPN transistor (circle with three leads), battery (long and short parallel lines). Row two: ground (three decreasing horizontal lines), LED (diode triangle with arrows), diode (triangle with bar), switch (open gap with contact), integrated circuit (rectangle with numbered pins). Each symbol has its name printed horizontally below it. No arrows or connecting wires between symbols."
+    },
+    {
+      "id": "simple-schematic-example",
+      "file": "req2.md",
+      "style": "illustrated",
+      "description": "A hand-drawn style schematic diagram on white paper showing a simple electronic circuit. A battery symbol on the left connects through a resistor labeled R1 to an LED, then to the collector of an NPN transistor labeled Q1. A capacitor labeled C1 connects between the battery positive rail and ground. A small rectangular IC labeled U1 connects to the base of the transistor through another resistor labeled R2. All component labels and values are written in neat handwriting. Clean, educational illustration style with blue ink lines."
+    },
+    {
+      "id": "soldering-technique-steps",
+      "file": "req3.md",
+      "style": "annotated-photo",
+      "description": "Close-up photograph of a soldering iron tip touching both a component lead and a copper pad on a green circuit board simultaneously. A thin solder wire approaches the heated joint from the opposite side. The solder is beginning to flow and wet the pad. Only two labels: one identifying the iron tip contact point, one identifying where the solder wire feeds in. No additional annotations or text."
+    },
+    {
+      "id": "pcb-anatomy-labeled",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "A top-down view of a green printed circuit board on white background with six horizontal labels on the right side, each connected by a thin line to the corresponding feature on the board. Features labeled: copper trace, through-hole, solder pad, via, silkscreen text, component mounting area. The board shows a realistic PCB layout with visible traces, pads, and white silkscreen markings. Clean diagram style, no unnecessary decoration. Only six labels total."
+    },
+    {
+      "id": "logic-gates-symbols",
+      "file": "req4a.md",
+      "style": "diagram",
+      "description": "Six standard logic gate symbols arranged in a clean two-row, three-column grid on white background. Top row: AND gate, OR gate, NOT gate. Bottom row: NAND gate, NOR gate, XOR gate. Each gate symbol is drawn in the standard IEEE format with its name printed horizontally below it. No truth tables, no connecting wires, no input/output labels. Simple, clean reference chart."
+    },
+    {
+      "id": "binary-conversion-cheatsheet",
+      "file": "req4b.md",
+      "style": "infographic",
+      "description": "A visual reference card with a horizontal row of eight boxes across the top, each containing a power of 2 from 128 down to 1 (128, 64, 32, 16, 8, 4, 2, 1). Below the row, two worked examples in clean boxes: one showing decimal 42 converted to binary 101010 with checkmarks under the matching powers, and one showing binary 110101 converted to decimal 53 by adding the checked powers. Clean horizontal layout, no diagonal or curved text. Light blue and white color scheme."
+    },
+    {
+      "id": "circuit-project-breadboard",
+      "file": "req4c.md",
+      "description": "A white breadboard on a wooden table with a neatly wired circuit project. A 555 timer IC chip is centered on the breadboard with red, blue, yellow, and green jumper wires connecting it to resistors, a small capacitor, and a glowing red LED. A 9V battery with a snap connector provides power. The wiring is tidy and organized. No hands visible. No text or branding."
+    },
+    {
+      "id": "ohms-law-triangle",
+      "file": "req5a.md",
+      "style": "diagram",
+      "description": "Three large boxes arranged in a horizontal row on white background. Left box contains a bold V, center box contains a bold I, right box contains a bold R. Below the row, three formula lines displayed horizontally: V = I times R, I = V divided by R, R = V divided by I. Clean, simple design with bold text. No triangles, circles, or diagonal elements. Blue boxes with white text."
+    },
+    {
+      "id": "multimeter-measurement-modes",
+      "file": "req5b.md",
+      "description": "A yellow digital multimeter with its display screen showing a voltage reading, positioned on a workbench. The red and black test probes extend from the meter. One probe touches a point on a small circuit board. The rotary dial is visible showing measurement mode selections. Clean, well-lit workspace. No text overlays or branding."
+    },
+    {
+      "id": "resistor-color-bands-example",
+      "file": "req5c.md",
+      "style": "illustrated",
+      "description": "Three through-hole resistors drawn in educational illustration style, arranged horizontally on a white background with space between them. Each resistor shows four colored bands clearly visible on its cylindrical body with wire leads extending from both ends. First resistor has brown, black, red, gold bands. Second has yellow, violet, orange, gold bands. Third has red, red, brown, silver bands. Below each resistor, its resistance value is printed horizontally. Clean linework, no additional annotations."
+    },
+    {
+      "id": "through-hole-vs-smt-comparison",
+      "file": "req5d.md",
+      "style": "comparison",
+      "description": "Split-frame comparison image. Left half labeled THROUGH HOLE: a large through-hole resistor with visible wire leads inserted into a green PCB, shown from the side to illustrate leads passing through the board. Right half labeled SURFACE MOUNT: a tiny SMT resistor sitting flat on the surface of a green PCB, with tweezers holding it for scale. The dramatic size difference between the two components is the focal point. Clean dividing line between halves."
+    },
+    {
+      "id": "electronics-career-paths",
+      "file": "req6.md",
+      "description": "A teenager in a clean Scout uniform having a friendly conversation with a professional engineer at an electronics workstation. The engineer is pointing at something on a computer screen showing a colorful circuit board layout. On the desk: a PCB, a digital oscilloscope displaying a waveform, and neatly arranged test probes. Modern office lab environment with bright lighting. No text, logos, or branding visible."
+    },
+    {
+      "id": "pcb-design-to-board",
+      "file": "extended-learning.md",
+      "description": "A laptop computer screen showing PCB design software with a colorful circuit board layout in progress. Next to the laptop on the desk sits a small finished manufactured green PCB with neatly soldered surface mount and through-hole components. The screen design and the physical board are clearly related, showing the journey from digital design to real product. Clean desk, good lighting. No visible text, branding, or logos on screen."
+    }
+  ]
+}
