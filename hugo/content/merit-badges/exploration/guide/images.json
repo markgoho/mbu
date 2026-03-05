@@ -1,0 +1,197 @@
+{
+  "badge": "exploration",
+  "style_context": "Exploration — geographic, ocean, space, and scientific exploration; expedition planning, field research, outdoor expeditions, documentation",
+  "images": [
+    {
+      "id": "scout-expedition-trailhead",
+      "file": "_index.md",
+      "description": "A Scout (age 14, wearing a clean Scout uniform) standing at a trailhead holding a notebook and compass, gazing out at a vast landscape of forested mountains stretching into the distance under a blue sky with scattered clouds. A trail marker post is visible beside them. Warm morning light. Wide, inspiring landscape."
+    },
+    {
+      "id": "exploration-types-collage",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Four-panel comparison image. Top-left: a hiker standing at the edge of a vast desert canyon looking out. Top-right: a small submersible vehicle with bright lights illuminating a dark underwater reef scene. Bottom-left: an astronaut in a spacesuit floating near a spacecraft with Earth in the background. Bottom-right: a scientist in a white lab coat examining specimens through a microscope in a modern laboratory. Each panel is distinct and clearly separated."
+    },
+    {
+      "id": "exploration-vs-adventure",
+      "file": "req1a.md",
+      "style": "comparison",
+      "description": "Split comparison image. Left side: a group of tourists with cameras and daypacks walking along a well-marked nature trail with wooden railings and interpretive signs, casual atmosphere. Right side: a researcher in field gear kneeling beside a stream, carefully collecting water samples in vials and recording data in a waterproof notebook, focused and methodical. Clear contrast between casual tourism and scientific exploration."
+    },
+    {
+      "id": "explorer-field-notes",
+      "file": "req1a.md",
+      "description": "Close-up of hands writing detailed field observations in a waterproof notebook with a pencil. Beside the notebook on a flat rock surface: a compass, a small GPS device, and clear specimen collection bags with labels. Natural outdoor lighting with soft shadows. Focus on the writing and instruments."
+    },
+    {
+      "id": "four-environments-exploration",
+      "file": "req1b.md",
+      "style": "comparison",
+      "description": "Four-panel comparison showing exploration in different environments. Panel 1: a deep-sea submersible with powerful lights illuminating the dark ocean floor with strange tubeworms near a hydrothermal vent. Panel 2: an astronaut on a spacewalk with a curved Earth horizon behind them. Panel 3: two researchers in field gear hiking through dense green tropical rainforest with large ferns and vines. Panel 4: a scientist at a lab bench looking into a microscope with glowing computer screens showing data visualizations. Each panel clearly represents a distinct exploration environment."
+    },
+    {
+      "id": "expedition-planning-notebook",
+      "file": "req1b.md",
+      "style": "illustrated",
+      "description": "An open notebook page showing hand-drawn sketches comparing four exploration approaches. Small labeled diagrams arranged in quadrants: a submersible labeled 'Ocean,' a telescope labeled 'Space,' tropical trees labeled 'Jungle,' and laboratory flasks labeled 'Lab.' Arrows from each diagram connect to a central list of shared steps: 'Define question, Plan approach, Collect data, Analyze, Share.' Clean illustration style with blue and green ink on cream paper."
+    },
+    {
+      "id": "exploration-history-timeline",
+      "file": "req2.md",
+      "style": "infographic",
+      "description": "Horizontal timeline infographic showing six major exploration milestones from left to right. Each milestone has a small icon above the timeline: a Polynesian double-hulled canoe (1000 AD), a European sailing ship with full sails (1492), a Victorian-era research vessel (1872), a sled team with dogs in snow (1911), a rocket launching (1969), and a deep-sea ROV vehicle (2012). The timeline ribbon flows left to right with dates below each icon. Clean modern design with a blue and gold color palette."
+    },
+    {
+      "id": "darwin-beagle-modern-research",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "Split comparison. Left side: a vintage-style naturalist illustration showing a person in 19th century clothing sketching animals in a leather-bound notebook on a rocky shore, with seabirds nearby, aged sepia tones. Right side: a modern researcher in field gear using a ruggedized tablet to catalog specimens, with a drone sitting on the ground nearby and GPS equipment in a backpack, bright modern colors. The contrast between historical and modern exploration methods."
+    },
+    {
+      "id": "explorer-qualities-collage",
+      "file": "req3.md",
+      "description": "A group of four Scouts (ages 13-15) in clean Scout uniforms working together outdoors on a sunny day. One Scout is examining something through a magnifying glass, another is writing observations in a notebook, a third is looking through binoculars toward a distant hillside, and a fourth is pointing toward the horizon while holding an unfolded topographic map. Grassy meadow with trees in background. Bright, warm lighting."
+    },
+    {
+      "id": "curiosity-drives-discovery",
+      "file": "req3.md",
+      "description": "A teenager crouching at the edge of a rocky tide pool at golden hour, reaching toward the water with a look of wonder and fascination. Colorful sea anemones, small starfish, and green algae are visible in the clear shallow water. Ocean waves in the soft background. Warm sunset light reflecting off the water surface."
+    },
+    {
+      "id": "explorer-research-presentation",
+      "file": "req4.md",
+      "description": "A Scout (age 14, wearing a clean Scout uniform) standing confidently in front of a tri-fold display board giving a presentation. The display board shows pinned photos of an exploration expedition, a hand-drawn timeline, and printed text. Three other Scouts and one adult counselor sit in chairs facing the presenter, attentive. Indoor meeting room with good lighting."
+    },
+    {
+      "id": "lab-explorer-microscope",
+      "file": "req4.md",
+      "description": "A young researcher (age 20s) wearing a white lab coat and clear safety goggles, looking intently into a professional microscope in a modern laboratory. Colorful specimen slides are arranged nearby. Two digital screens in the background display data graphs and microscopy images. Clean, bright laboratory lighting with blue and white tones."
+    },
+    {
+      "id": "virtual-museum-tour",
+      "file": "req5.md",
+      "description": "A Scout (age 13) sitting at a desk looking at a large computer monitor showing a virtual tour of a natural history museum with a dinosaur skeleton exhibit visible on screen. The Scout has a notebook open beside the keyboard and is writing notes. The room is well-lit with a desk lamp. A few exploration-related books are stacked nearby."
+    },
+    {
+      "id": "observatory-night-sky",
+      "file": "req5.md",
+      "description": "A large astronomical observatory dome silhouetted against a dark sky filled with thousands of visible stars and a faint Milky Way band. The dome slit is open, revealing the telescope structure inside. A warm amber glow comes from the control room window at the base of the dome. Desert landscape with low scrub brush in the foreground."
+    },
+    {
+      "id": "objective-planning-whiteboard",
+      "file": "req6a.md",
+      "style": "illustrated",
+      "description": "A large notepad or whiteboard showing handwritten expedition planning notes. At the top: 'PRIMARY OBJECTIVE' underlined, with a clear goal written below. Bullet points list secondary objectives. A small hand-drawn map sketch shows waypoints. Arrows connect objectives to required resources listed on the right side. Blue and black ink on white background, clean and readable handwriting style."
+    },
+    {
+      "id": "scout-compass-map-planning",
+      "file": "req6a.md",
+      "description": "A Scout (age 15, wearing a clean Scout uniform) crouching on the ground studying a colorful topographic map spread out on a flat rock surface. The Scout holds a compass in one hand and a pencil in the other, marking a route. Trees and a dirt trail are visible in the background. Dappled sunlight through leaves."
+    },
+    {
+      "id": "expedition-schedule-notebook",
+      "file": "req6b.md",
+      "style": "illustrated",
+      "description": "An open spiral-bound notebook showing two pages. Left page: a neatly handwritten expedition schedule with times and activities listed in a table format. Right page: a simple hand-drawn map with three numbered waypoints connected by a dotted trail line, compass rose in the corner. A blue pen lies across the pages. Clean illustration style on cream-colored paper."
+    },
+    {
+      "id": "scout-reviewing-map-with-adult",
+      "file": "req6b.md",
+      "description": "A Scout (age 14, clean Scout uniform) and an adult leader sitting across from each other at an outdoor wooden picnic table, reviewing a large topographic map together. Printed schedule papers and a notepad with handwritten notes are beside the map. Both are pointing at locations on the map. Sunny outdoor setting with trees in the background."
+    },
+    {
+      "id": "budget-planning-spreadsheet",
+      "file": "req6c.md",
+      "style": "illustrated",
+      "description": "A neatly organized budget table on graph paper with three columns labeled 'Category,' 'Item,' and 'Cost.' Several rows are filled in with handwriting showing items like 'Travel - Gas $15,' 'Equipment - Test Kit $25,' 'Meals - Lunch $15.' A subtotal and total are at the bottom. A small calculator and a few dollar bills sit beside the paper. Clean illustration style."
+    },
+    {
+      "id": "scout-counting-supplies",
+      "file": "req6c.md",
+      "description": "A Scout (age 13) sitting at a kitchen table with expedition supplies spread out in front of them: a water quality test kit box, a field guide book, trail snacks in bags, batteries in a package, a notebook, and a pencil. The Scout is checking items against a handwritten list on a clipboard. Bright kitchen lighting."
+    },
+    {
+      "id": "expedition-gear-laid-out",
+      "file": "req6d.md",
+      "description": "A flat-lay overhead photo of expedition equipment neatly organized on a green tarp on the ground. Items arranged in a grid: a backpack, field notebook, baseplate compass, binoculars, two water bottles, a small test kit, a digital camera, a compact first-aid kit, trail mix bags, a folded topographic map, pencils, a headlamp, and a rain jacket. Clean, bright natural lighting from above."
+    },
+    {
+      "id": "scout-packing-backpack",
+      "file": "req6d.md",
+      "description": "A Scout (age 14, wearing a clean Scout uniform) standing at a table carefully packing a hiking backpack. Field guides, a notebook, a compass, and labeled sample bags are laid out on the table beside the open pack. The Scout is placing a first-aid kit into the pack. Indoor setting with good lighting."
+    },
+    {
+      "id": "communication-gear-spread",
+      "file": "req6e.md",
+      "description": "A flat-lay arrangement of communication devices on top of a folded topographic map: a smartphone showing a trail map app, a pair of yellow two-way radios, an orange safety whistle on a lanyard, and a small orange satellite communicator device. A handwritten emergency contact card on an index card sits beside the devices. Clean, bright lighting from above."
+    },
+    {
+      "id": "scout-team-radio-check",
+      "file": "req6e.md",
+      "description": "Two Scouts (ages 13 and 15, wearing clean Scout uniforms) standing about 50 yards apart in a grassy meadow, each holding a two-way radio to their ear and giving a thumbs-up toward the camera. A wooded hillside rises behind them. Bright afternoon sunlight with blue sky."
+    },
+    {
+      "id": "first-aid-kit-expedition",
+      "file": "req6f.md",
+      "description": "An open soft-sided expedition first-aid kit displayed on a flat rock outdoors. Visible inside: rolled bandages, antiseptic wipes in packets, medical tape, small scissors, tweezers, disposable gloves, and an emergency whistle. A forest trail with ferns is blurred in the background. Natural outdoor lighting."
+    },
+    {
+      "id": "hazard-assessment-trail",
+      "file": "req6f.md",
+      "description": "A Scout (age 15, wearing a clean Scout uniform) pausing on a hiking trail to carefully assess the terrain ahead. The trail ahead shows a stream crossing with wet rocks, a fallen log across the path, and a steep muddy bank. The Scout is standing at a safe distance, looking thoughtfully at the obstacles. Overcast sky with diffused lighting."
+    },
+    {
+      "id": "team-planning-meeting",
+      "file": "req6g.md",
+      "description": "A small group of four Scouts (ages 13-16, wearing clean Scout uniforms) gathered around a folding table with an adult leader. Maps, notebooks, and printed planning documents cover the table. The adult leader is pointing at a location on the map while the Scouts lean in attentively. One Scout is writing notes. Indoor meeting room with a whiteboard partially visible in the background."
+    },
+    {
+      "id": "expedition-team-trailhead",
+      "file": "req6g.md",
+      "description": "A small expedition team of four people — three Scouts (ages 13-16, clean Scout uniforms) and one adult — standing together at a wooden trailhead sign with backpacks on, looking confidently down the trail ahead. Morning sunlight illuminates the scene with long shadows. Pine trees line both sides of the dirt trail."
+    },
+    {
+      "id": "field-notebook-closeup",
+      "file": "req6h.md",
+      "description": "Close-up of a hand writing detailed observations with a pencil in a waterproof field notebook (tan or green cover, ring-bound). On the rock surface beside the notebook: a small compass, a handheld GPS device showing coordinates on its screen, and a small ruler. Natural outdoor lighting with soft shadows. Focus on the handwriting and tools."
+    },
+    {
+      "id": "data-sheet-clipboard",
+      "file": "req6h.md",
+      "style": "illustrated",
+      "description": "A pre-printed data collection sheet on a brown clipboard, partially filled in with neat pencil handwriting. The sheet shows labeled columns for Time, Location (GPS), Species/Item, Count, and Notes. Several rows are completed with realistic sample entries. A sharpened pencil is clipped to the top of the clipboard. Clean illustration style on a simple background."
+    },
+    {
+      "id": "pre-expedition-gear-check",
+      "file": "req7.md",
+      "description": "Two Scouts (ages 14-15, clean Scout uniforms) and an adult leader gathered around a folding table covered with expedition gear. They are checking items off a printed list that one Scout holds. Visible on the table: a first-aid kit, binoculars, a folded map, data sheets, pencils, water bottles, and a backpack. Outdoor setting under a pavilion roof."
+    },
+    {
+      "id": "safe-checklist-review",
+      "file": "req7.md",
+      "description": "A Scout (age 14, clean Scout uniform) and their merit badge counselor (adult in casual clothing) sitting next to each other at a table, reviewing a printed document together. The counselor is pointing at a section of the form while the Scout holds a pencil and looks attentive. A notebook and pen are on the table. Well-lit indoor setting with natural window light."
+    },
+    {
+      "id": "scout-writing-report",
+      "file": "req8.md",
+      "description": "A Scout (age 15) sitting at a desk writing in a notebook, with their post-expedition materials spread around them: a closed field notebook, several printed photographs showing outdoor scenes, and a laptop displaying a spreadsheet with data. The Scout is concentrating on their writing. Desk lamp provides warm light. Home study environment."
+    },
+    {
+      "id": "expedition-photo-collage",
+      "file": "req8.md",
+      "description": "Four photographs arranged on a corkboard, pinned with thumbtacks. Top-left: a stream sampling site with someone crouching by the water. Top-right: a close-up of a rock specimen held in a gloved hand. Bottom-left: a team photo of Scouts at a trailhead with backpacks, smiling at the camera. Bottom-right: a filled-in data collection sheet with neat handwriting. Natural, documentary style."
+    },
+    {
+      "id": "exploration-careers-montage",
+      "file": "req9.md",
+      "style": "comparison",
+      "description": "Four-panel comparison showing different exploration careers. Panel 1: a marine scientist in a control room monitoring ROV video feeds showing the ocean floor. Panel 2: a wildlife biologist in field clothing using binoculars in a golden grassland savanna. Panel 3: a geologist in a hard hat examining colorful rock layers in a canyon wall with a hand lens. Panel 4: an archaeologist carefully brushing soil from an artifact at an excavation site with string grids visible."
+    },
+    {
+      "id": "citizen-science-smartphone",
+      "file": "req9.md",
+      "description": "A teenager kneeling in a sunny wildflower meadow, holding a smartphone close to a purple wildflower to photograph it. The phone screen shows a nature identification app interface. Green grass and colorful wildflowers surround the scene. Bright natural sunlight."
+    }
+  ]
+}
