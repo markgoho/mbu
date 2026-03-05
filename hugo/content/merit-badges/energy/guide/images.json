@@ -1,0 +1,81 @@
+{
+  "badge": "energy",
+  "style_context": "Energy merit badge — covers energy forms, conversions, efficiency, home audits, energy waste, national energy data, power systems, and careers",
+  "images": [
+    {
+      "id": "energy-timeline-overview",
+      "file": "_index.md",
+      "style": "illustrated",
+      "description": "A horizontal illustrated timeline showing the evolution of human energy use across five eras. Far left: a prehistoric campfire with stacked logs. Second: a wooden waterwheel turning in a stream. Center: a Victorian-era steam engine with a large flywheel and coal furnace. Fourth: an oil derrick next to a 1950s-style electrical transmission tower. Far right: a modern wind turbine and rooftop solar panels on a house. Each era is separated by a subtle vertical divider. The background transitions from warm earth tones on the left to cool blue-green on the right. No text labels. Clean linework with an educational illustration style."
+    },
+    {
+      "id": "energy-forms-diagram",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "A clean infographic showing six major forms of energy arranged in a two-by-three grid on a white background. Each cell contains a single icon and one or two words below it. Top row: a moving ball for Kinetic, a boulder on a hilltop for Potential, a flame for Chemical. Bottom row: wavy red lines for Thermal, a lightning bolt for Electrical, an atom symbol for Nuclear. Each icon uses a distinct color. No arrows, no connecting lines, no additional text or annotations. Simple, bold, scannable."
+    },
+    {
+      "id": "bow-drill-energy-conversion",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A clear educational diagram of a bow drill fire-starting setup shown from the side. The components are labeled with short horizontal labels: Bow, String, Spindle, Handhold, Fireboard, Notch, Ember Tray. Below the diagram, three horizontal boxes in a row show the energy conversion chain: box one reads Muscle Energy, box two reads Kinetic Energy, box three reads Heat Energy, connected by small right-pointing arrows between them. White background, clean lines, no additional decorations."
+    },
+    {
+      "id": "energy-conversion-projects",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "A three-panel comparison image showing three simple student energy conversion projects. Left panel: a rubber band car made from a cardboard box with pencil axles and a wound rubber band visible, sitting on a table. Center panel: a small solar panel connected by wires to a hobby motor with a propeller blade spinning, sitting in sunlight. Right panel: a hand-crank flashlight being squeezed by a hand with the LED glowing. Each panel is evenly sized with a thin border between them. Warm natural lighting, craft-project aesthetic. No text labels or annotations in the image."
+    },
+    {
+      "id": "car-energy-flow-diagram",
+      "file": "req3.md",
+      "style": "infographic",
+      "description": "A simplified energy flow infographic for a gasoline car. On the left, a single tall bar labeled 100% represents total fuel energy. From it, five horizontal bars extend to the right at different heights, each a different color and width proportional to its percentage: Exhaust Heat is the widest at roughly 30%, Coolant Heat at roughly 25%, Friction and Drag at roughly 20%, Accessories at roughly 5%, and Useful Motion at roughly 20%. Each bar has its label and approximate percentage written in horizontal text to its right. White background, bold flat colors, no car illustration needed — just the data bars."
+    },
+    {
+      "id": "home-energy-sources-labeled",
+      "file": "req4a.md",
+      "style": "diagram",
+      "description": "A clean cross-section diagram of a two-story house showing how different energy sources enter the home. Power lines connect from a utility pole at the upper right to the house roofline. A gas meter is mounted on the right exterior wall with an underground pipe leading to it. An oil tank sits in the basement with a fill pipe going through the foundation wall. A propane tank sits in the yard to the left. Each energy delivery path is drawn in a distinct color with a short horizontal label: Electricity, Natural Gas, Heating Oil, Propane. Interior rooms are minimal outlines only. White background, architectural diagram style."
+    },
+    {
+      "id": "home-energy-saving-tips",
+      "file": "req4b.md",
+      "style": "comparison",
+      "description": "A two-panel side-by-side comparison of the same living room. Left panel labeled Before: overhead lights blazing in an empty room, a TV screen glowing with no one watching, phone chargers plugged into the wall with no phones attached, thermostat display showing a high setting, curtains wide open at night. Right panel labeled After: overhead lights off with only a reading lamp on near an occupied chair, TV off, power strip switched off, thermostat showing a lower setting, curtains drawn for insulation. Same room, same furniture, dramatically different energy use. Warm residential lighting."
+    },
+    {
+      "id": "school-energy-waste-examples",
+      "file": "req5.md",
+      "style": "annotated-photo",
+      "description": "An exterior and interior composite view of a school building. The image shows five energy waste scenarios visible in one scene: fluorescent lights burning brightly in a classroom with no students visible through the window, an exterior side door propped open with a wedge while an HVAC unit runs on the roof, a line of yellow school buses with exhaust visible from idling engines in the parking lot, a row of desktop computers with glowing monitors in a dark computer lab, and parking lot lights on during a sunny daytime sky. Five callout labels point to each waste example. Realistic school setting."
+    },
+    {
+      "id": "sample-pie-chart-setup",
+      "file": "req6.md",
+      "style": "illustrated",
+      "description": "A hand-drawn pie chart on white paper shown from above, as if on a student's desk. The chart has five colored slices of varying sizes drawn with colored pencils. A protractor and colored pencils are visible beside the paper. The chart has a neatly written title at the top. A small legend box in the corner shows five colored squares next to category lines. A citation line at the bottom references a data source. The style looks like a careful student's work — neat but clearly hand-made. Warm desk lighting. No readable specific text in the image."
+    },
+    {
+      "id": "energy-systems-overview",
+      "file": "req7.md",
+      "style": "illustrated",
+      "description": "A grid of six square panels arranged two rows by three columns, each showing a different energy system in clean educational illustration style. Top row left: three white wind turbines on green rolling hills. Top row center: blue solar panels arranged in rows on a flat field under a sunny sky. Top row right: a cross-section showing a geothermal well going deep underground into red-hot rock with steam rising. Bottom row left: a nuclear power plant with two cooling towers and a containment dome. Bottom row center: a simplified fuel cell diagram showing hydrogen in and electricity out. Bottom row right: a cylindrical biogas digester tank with pipes. Each panel has a thin border. No labels or text in the image."
+    },
+    {
+      "id": "energy-careers-collage",
+      "file": "req8.md",
+      "description": "Four equal panels showing energy careers in action. Top left: a wind turbine technician in safety harness and hard hat standing inside a turbine nacelle hundreds of feet in the air with landscape visible far below. Top right: an engineer in a hard hat and safety vest inspecting a row of solar panels on a commercial rooftop. Bottom left: an energy auditor pointing a handheld thermal imaging camera at the exterior of a suburban house, with a tablet in the other hand. Bottom right: a scientist in a lab coat and safety glasses examining rows of cylindrical battery cells on a laboratory bench with testing equipment nearby. Diverse group of professionals. Realistic photography style."
+    },
+    {
+      "id": "energy-extended-experiences",
+      "file": "extended-learning.md",
+      "description": "A teenager in a clean Scout uniform shaking hands with an engineer wearing a white hard hat and high-visibility vest. They are standing on a gravel path at a wind farm, with three large wind turbines visible behind them against a blue sky. A solar panel array is partially visible in the background to the right. The scene conveys mentorship and hands-on learning in the field. Bright natural daylight, professional but welcoming atmosphere."
+    },
+    {
+      "id": "scout-researching-energy",
+      "file": "req1a.md",
+      "description": "A teenager in a clean Scout uniform sitting at a wooden desk in a well-lit room, with a laptop open in front of them showing a webpage with charts and graphs. The Scout is writing notes by hand in a spiral notebook beside the laptop. A few printed articles and a highlighter pen are visible on the desk. Natural window light from the left side. The scene conveys focused research and active note-taking. No readable text on the laptop screen."
+    }
+  ]
+}
