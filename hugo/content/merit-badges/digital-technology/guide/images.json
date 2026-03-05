@@ -1,0 +1,157 @@
+{
+  "badge": "digital-technology",
+  "style_context": "Digital technology, computing devices, networking, software, cybersecurity, and electronic waste recycling in Scouting contexts",
+  "images": [
+    {
+      "id": "digital-tech-overview",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform sitting at a modern desk working on a laptop, with a smartphone and tablet arranged nearby showing colorful screens. The room is bright with natural light from a window. The desk is organized with a few tech accessories. No text, logos, or branding visible on any device screens."
+    },
+    {
+      "id": "digital-tech-get-ready",
+      "file": "_index.md",
+      "description": "Three teenagers in clean Scout uniforms gathered around a laptop at a table in a meeting room. One Scout points at the laptop screen while the others lean in with engaged expressions. A whiteboard with hand-drawn diagrams is visible behind them. Warm overhead lighting. No text or branding on uniforms or screens."
+    },
+    {
+      "id": "digital-safety-awareness",
+      "file": "req1.md",
+      "description": "A teenager in a clean Scout uniform sitting at a desk with a parent beside them, both looking at a laptop screen together. The setting is a well-lit home office with bookshelves in the background. Both have attentive, focused expressions. No visible text on the laptop screen."
+    },
+    {
+      "id": "computing-timeline",
+      "file": "req2a.md",
+      "style": "infographic",
+      "description": "A horizontal timeline showing five eras of computing with a simple icon and decade label for each. From left to right: a large room-sized machine with vacuum tubes labeled 1940s, a desktop terminal with green screen labeled 1970s, a beige desktop computer with CRT monitor labeled 1990s, a smartphone labeled 2000s, and a smart home scene with connected devices labeled 2020s. Clean flat design with a connecting line between eras. Minimal text, just decade labels."
+    },
+    {
+      "id": "generational-tech-comparison",
+      "file": "req2a.md",
+      "style": "comparison",
+      "description": "Three side-by-side panels comparing technology across generations. Left panel: a 1980s teenager using a bulky desktop computer with a green monochrome screen in a wood-paneled room. Center panel: a 2000s teenager using a silver laptop at a desk in a modern bedroom. Right panel: a present-day teenager using a thin tablet while sitting cross-legged on a couch. Each scene is in an age-appropriate room setting. No text labels."
+    },
+    {
+      "id": "future-technology-concept",
+      "file": "req2b.md",
+      "style": "illustrated",
+      "description": "An illustrated scene showing future technology concepts in a clean line-art style. A teenager wearing sleek transparent AR glasses with holographic data floating in front of their eyes. Nearby, a small autonomous delivery drone hovers at waist height. In the background, a building surface displays a flexible transparent screen. Clean futuristic cityscape with trees and blue sky. Soft pastel color palette. No text or labels."
+    },
+    {
+      "id": "sound-digitization",
+      "file": "req3a.md",
+      "style": "diagram",
+      "description": "A clean educational diagram showing a smooth curved sine wave on the left side transitioning to a stepped staircase-like digital representation on the right side. Vertical dashed lines are evenly spaced along the wave showing sampling points. Two simple labels: Sample Rate with an arrow pointing to the spacing between vertical lines, and Bit Depth with an arrow pointing to the height of a single step. White background, blue wave line, gray dashed lines. Minimal text."
+    },
+    {
+      "id": "pixel-zoom-example",
+      "file": "req3a.md",
+      "style": "diagram",
+      "description": "A diagram showing a small photograph of a green forest scene on the left side. On the right side, a magnified section reveals the individual colored pixel grid as small colored squares. One pixel is highlighted with a border and a small label showing three numbers representing RGB values. A curved arrow or zoom indicator connects the small photo to the magnified pixel view. Clean white background. Minimal labels."
+    },
+    {
+      "id": "lossy-vs-lossless",
+      "file": "req3b.md",
+      "style": "comparison",
+      "description": "Two panels side by side. Left panel shows a crisp, detailed photograph of a snow-capped mountain landscape with sharp edges and smooth sky gradients. Right panel shows the same mountain photo but with visible compression artifacts: blocky patches in the sky, slight color banding, and softened edges around the mountain ridgeline. Below each panel a simple file size indicator: left shows a larger file icon, right shows a smaller file icon. No text labels on the images themselves."
+    },
+    {
+      "id": "smartwatch-programming",
+      "file": "req3c.md",
+      "style": "diagram",
+      "description": "A clean diagram of a smartwatch face divided into four quadrants. Top-left quadrant shows a step count with a walking figure icon. Top-right shows a heart rate pulse line. Bottom-left shows a simple map route line. Bottom-right shows a notification bell icon. In the center of the watch face, a small CPU chip icon connects to all four quadrants with thin lines. The watch has a simple round bezel. White background. Minimal labels, just small icons."
+    },
+    {
+      "id": "device-comparison",
+      "file": "req3d.md",
+      "style": "comparison",
+      "description": "Three panels arranged side by side at comparable visual weight. Left panel: a modern desktop computer setup with a wide monitor, keyboard, and mouse on a desk. Center panel: a smartphone displayed vertically showing a colorful home screen. Right panel: a gaming console sitting horizontally with a wireless controller in front of it. Each device is rendered in a clean, realistic style against a neutral light gray background. No text, labels, or brand logos visible."
+    },
+    {
+      "id": "lan-vs-wan-diagram",
+      "file": "req3e.md",
+      "style": "diagram",
+      "description": "A network diagram with a house on the left containing icons for a laptop, smartphone, printer, and smart TV, all connected by short lines to a central Wi-Fi router inside the house. A bracket or label identifies this group as LAN. A line extends from the router to a cloud shape in the center representing the internet. A bracket or label identifies the cloud as WAN. On the right side, another house with similar device icons connected to its own router, also connected to the cloud. Clean lines, simple icons, white background."
+    },
+    {
+      "id": "cpu-fetch-decode-execute",
+      "file": "req4a.md",
+      "style": "diagram",
+      "description": "A circular flow diagram showing three stages arranged clockwise around a central CPU chip icon. Three labeled boxes connected by curved arrows in a loop: Fetch with a small arrow-from-memory icon, Decode with a small gear icon, and Execute with a small checkmark icon. The arrows flow clockwise from Fetch to Decode to Execute and back to Fetch. Clean flat design, white background, blue and gray color scheme. Only three labels."
+    },
+    {
+      "id": "apps-in-daily-life",
+      "file": "req4b.md",
+      "style": "illustrated",
+      "description": "An illustrated smartphone shown at a slight angle displaying a grid of colorful generic app icons on its screen. The icons are organized in four rows of three, representing different categories: messaging bubble icons in the top row, document and spreadsheet icons in the second row, map pin and compass icons in the third row, and music note and film reel icons in the bottom row. Clean flat illustration style with rounded icon shapes. No real brand logos or text."
+    },
+    {
+      "id": "malware-types-overview",
+      "file": "req4c.md",
+      "style": "infographic",
+      "description": "Six icons arranged in a two-by-three grid, each representing a type of malware. Top row: a bug icon for Virus, a worm-shaped arrow for Worm, a wooden horse icon for Trojan. Bottom row: a padlock with a dollar sign for Ransomware, an eye icon for Spyware, and a megaphone or pop-up window icon for Adware. Each icon sits in a colored circle with a one-word label below it. Clean flat design, dark background with bright icon colors. Only six single-word labels."
+    },
+    {
+      "id": "barcode-vs-qr-code",
+      "file": "req4d.md",
+      "style": "diagram",
+      "description": "A side-by-side comparison diagram. On the left, a standard UPC barcode with its vertical black and white lines and a row of digits beneath it. A simple callout points to the lines indicating they encode data in one dimension. On the right, a QR code with its characteristic square pixel pattern and three position markers in the corners. A simple callout indicates it encodes data in two dimensions. Both are shown at similar scale on a white background. Minimal labels."
+    },
+    {
+      "id": "data-transfer-methods",
+      "file": "req5a.md",
+      "style": "diagram",
+      "description": "Three sections arranged horizontally showing different data transfer methods. Left section: a cross-section of a fiber-optic cable with light rays bouncing inside the glass core, shown as zigzag lines within a cylinder. Center section: a cell tower emitting concentric radio wave arcs toward a smartphone below. Right section: a satellite in orbit beaming signal lines down to a ground dish antenna. Each section has a simple one-word label below it: Fiber, Cellular, Satellite. White background."
+    },
+    {
+      "id": "search-engine-strategies",
+      "file": "req5b.md",
+      "style": "infographic",
+      "description": "Four search tips stacked vertically in a clean card layout. Each card has a small icon on the left and a brief example on the right. Card one: magnifying glass icon with example showing specific keywords. Card two: quotation mark icon with example showing quoted phrase. Card three: minus sign icon with example showing excluded term. Card four: page stack icon suggesting checking multiple pages. Clean flat design with alternating light background colors for each card. Minimal text, just short keyword examples."
+    },
+    {
+      "id": "https-browser-indicators",
+      "file": "req5c.md",
+      "style": "annotated-photo",
+      "description": "A close-up view of a web browser address bar showing a secure connection. Three callout bubbles point to key elements: one points to the padlock icon on the left of the URL, one points to the https prefix in the URL text, and one points to a dropdown panel showing certificate details like issuer name and expiration date. The browser chrome is shown in a modern minimal style. Only three callout labels total."
+    },
+    {
+      "id": "digital-projects-collage",
+      "file": "req6.md",
+      "style": "illustrated",
+      "description": "Eight small illustrated scenes arranged in a four-by-two grid, each representing a digital project option. Top row from left: a spreadsheet with colored cells and numbers, a formatted letter document, a graphic design canvas with shapes and text, a presentation slide with a chart. Bottom row from left: a camera with a photo, a microphone with a sound waveform, a blog layout with text blocks and images, a webpage with navigation and content. Clean line art style with soft colors. No text labels."
+    },
+    {
+      "id": "ip-types-overview",
+      "file": "req7a.md",
+      "style": "infographic",
+      "description": "Four quadrants arranged in a two-by-two grid, each representing a type of intellectual property. Top-left: a book and musical note icon for Copyright. Top-right: a lightbulb with gear icon for Patent. Bottom-left: a shield with a star badge for Trademark. Bottom-right: a lock with a key icon for Trade Secret. Each quadrant has a distinct background color and a single-word label at the top. Clean flat design, no additional text beyond the four type names."
+    },
+    {
+      "id": "software-license-types",
+      "file": "req7b.md",
+      "style": "infographic",
+      "description": "Four columns arranged horizontally, each representing a software license type. From left to right: Proprietary with a padlock icon and a red X symbol, Freeware with a gift box icon and a green checkmark, Open Source with three connected people icons and a green checkmark, Shareware with a clock icon and a yellow triangle caution symbol. Each column has a distinct background color strip. Clean flat design with a single-word label above each icon. Only four labels."
+    },
+    {
+      "id": "ip-dispute-courtroom",
+      "file": "req7c.md",
+      "description": "A teenager in a clean Scout uniform sitting at a library table with a laptop open in front of them. They are reading intently, with a notepad and pencil beside the laptop showing handwritten notes. Tall bookshelves filled with books are visible in the background. Warm library lighting creates a studious atmosphere. No visible text on the laptop screen or notepad."
+    },
+    {
+      "id": "ewaste-recycling-process",
+      "file": "req8.md",
+      "style": "illustrated",
+      "description": "Four stages of e-waste recycling shown left to right in a clean illustrated style. Stage one: a collection bin with old phones, laptops, and cables going in. Stage two: workers in protective gear and gloves sorting devices on a table. Stage three: a machine with a conveyor belt shredding circuit boards into small pieces. Stage four: separated piles of recovered materials in bins showing copper wire, circuit board fragments, and plastic pieces. Connected by simple arrows between stages. Soft color palette. No text labels."
+    },
+    {
+      "id": "tech-careers-hobbies",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "A split scene showing technology careers and hobbies. Left side: a professional workspace with a monitor displaying lines of code, a second monitor showing network diagrams, and a desk with organized cables and equipment. Right side: a creative hobby workspace with a small robot on a desk, a 3D printer producing a small object, and a camera next to a laptop showing edited photographs. The two sides share a common desk surface that connects them. Clean line art illustration with warm colors. No text or labels."
+    },
+    {
+      "id": "extended-learning-tech-exploration",
+      "file": "extended-learning.md",
+      "description": "A teenager in a clean Scout uniform standing at a workbench in a maker space. On the bench, a partially assembled desktop computer shows the motherboard with CPU, RAM sticks, and cables visible. Behind them, a 3D printer is running with a small object taking shape on the print bed. A laptop on the side of the bench displays colorful code. Tools and components are organized neatly around the workspace. Bright overhead workshop lighting."
+    }
+  ]
+}
