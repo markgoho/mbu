@@ -512,7 +512,7 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
 
 ## Production Workflow
 
-Work through these phases in order. Check in with the user after each phase.
+Work through these phases in order without pausing for approval between phases. Proceed automatically from one phase to the next.
 
 ### Phase 1: Analysis
 
@@ -522,7 +522,7 @@ Work through these phases in order. Check in with the user after each phase.
 4. Identify the subject's breadth (types/varieties for the Introduction page).
 5. Identify the history angle (Then vs. Now).
 6. List external resources for each requirement. Note: `data.json` may include a `resources` array on individual requirements (e.g., official Scouting videos or worksheets scraped from scouting.org). Consider incorporating these if they are valuable compared to other resources you plan to use.
-7. **Present the analysis to the user for approval before writing content.**
+7. Proceed directly to writing content — do not pause for approval.
 
 ### Phase 2: Write _index.md (Introduction & Overview)
 
