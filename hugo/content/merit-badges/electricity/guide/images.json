@@ -1,0 +1,169 @@
+{
+  "badge": "electricity",
+  "style_context": "Electricity merit badge — covers electrical safety, circuits, home wiring, electromagnets, power generation, and energy conservation",
+  "images": [
+    {
+      "id": "scout-electrical-workbench",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform sitting at a well-lit workshop workbench examining electrical components. On the workbench are insulated copper wires, D-cell batteries, a small light bulb, a multimeter, and wire strippers. The workshop has pegboard on the wall with tools hanging neatly. Natural light comes from a window to the side. The Scout looks engaged and curious, holding a wire and examining a simple circuit."
+    },
+    {
+      "id": "types-of-electricity-infographic",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Three horizontal panels showing types of electricity. Left panel: static electricity, a finger approaching a metal doorknob with a visible spark arc between them. Center panel: current electricity, a cross-section of a copper wire with small arrows flowing through it toward a glowing light bulb. Right panel: electromagnetism, a coiled wire wrapped around an iron nail core with curved magnetic field lines radiating outward. Each panel has a single-word label at the top in bold sans-serif text. Clean white background, flat design style with bold colors."
+    },
+    {
+      "id": "electrical-panel-labeled",
+      "file": "req1a.md",
+      "style": "diagram",
+      "description": "A residential electrical breaker panel with the door open, viewed straight-on. Inside are two vertical rows of circuit breakers, each shown as a small rectangular switch. At the top center is a larger main breaker switch. A circuit directory card is visible on the inside of the open panel door. Five labels point to key features: main breaker at the top, individual breakers in the rows, the circuit directory on the door, the panel box itself, and a ground bus bar visible at the bottom. Clean lines, minimal background."
+    },
+    {
+      "id": "rescue-non-conducting-object",
+      "file": "req1b.md",
+      "style": "annotated-photo",
+      "description": "Indoor residential kitchen scene. One person is standing frozen with their hand gripping an appliance cord near a counter. A second person stands a safe distance away, holding a dry wooden broom handle horizontally, using it to push the first person's forearm away from the cord without making skin contact. Three labels identify key elements: the non-conducting wooden handle, the safe distance maintained, and the direction of the push away from the electrical source."
+    },
+    {
+      "id": "downed-wire-vehicle-exit",
+      "file": "req1c.md",
+      "style": "infographic",
+      "description": "Three sequential panels showing the safe exit procedure from a car with a downed power line, arranged left to right. Panel one: a person sitting inside a car with a power line draped across the hood, hands in lap, door closed, labeled with a stay-inside icon. Panel two: the car door open and the person mid-jump with both feet together leaving the car frame, no body part touching the car and ground simultaneously. Panel three: the person outside the car hopping away with feet together in small bunny hops, a dashed arc showing a 35-foot safe zone radius from the car. Simple flat illustration style with bold outlines."
+    },
+    {
+      "id": "cpr-shock-victim",
+      "file": "req1d.md",
+      "description": "A teenager in a clean Scout uniform kneeling on grass beside a person lying flat on their back on the ground. The Scout has both hands stacked and placed on the center of the person's chest, arms straight, demonstrating proper CPR compression positioning. The setting is an outdoor park with trees in the background. The Scout's expression is focused and serious. Natural daylight lighting."
+    },
+    {
+      "id": "electrical-burn-first-aid",
+      "file": "req1e.md",
+      "style": "comparison",
+      "description": "Two-panel comparison of electrical burn treatment. Left panel labeled correct: a forearm with a small burn wound loosely covered by a white sterile gauze bandage, the arm elevated on a pillow, clean and simple. Right panel labeled incorrect: three items shown with red X marks over them — an ice pack, a jar of ointment, and a stream of water from a faucet. Clean medical illustration style, flat colors, white background."
+    },
+    {
+      "id": "fire-extinguisher-pass",
+      "file": "req1f.md",
+      "style": "infographic",
+      "description": "Four sequential icon panels showing the PASS technique for fire extinguisher use, arranged in a horizontal row. Panel one: a hand pulling a pin from a fire extinguisher, labeled P for Pull. Panel two: a person aiming the extinguisher nozzle downward at the base of a small fire, labeled A for Aim. Panel three: a hand squeezing the handle of the extinguisher, labeled S for Squeeze. Panel four: a person sweeping the extinguisher nozzle side to side at the base of the fire shown with motion arrows, labeled S for Sweep. Bold flat-style icons, clean white background."
+    },
+    {
+      "id": "lightning-safety-outdoors",
+      "file": "req1g.md",
+      "style": "comparison",
+      "description": "Two-panel comparison of lightning safety positions. Left panel labeled safe: a person in the correct lightning crouch, squatting low with feet close together, head tucked down, hands over ears, on low ground. Right panel labeled dangerous: two crossed-out scenarios — a person standing upright under a tall isolated tree, and a person lying flat on the ground. Clean illustration style with green checkmark on the safe side and red X marks on the dangerous side."
+    },
+    {
+      "id": "home-inspection-checklist",
+      "file": "req2.md",
+      "description": "A teenager in a clean Scout uniform crouching beside a wall in a residential living room, using a small flashlight to inspect a wall electrical outlet. In the other hand they hold a clipboard with a printed checklist. The room has normal residential furniture in the background. The Scout is focused on the outlet, examining the cover plate closely. Warm interior lighting."
+    },
+    {
+      "id": "electromagnet-build-steps",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "A single clear diagram showing a completed simple electromagnet. A large iron nail has insulated copper wire wrapped tightly around its middle section in many neat coils. Both ends of the wire lead down to a D-cell battery, one wire touching the positive terminal and one touching the negative terminal. Several small paper clips cling to the tip of the nail, attracted by the magnetic field. Five labels identify: the iron nail core, the copper wire coil, the battery terminals, the paper clips, and the direction of current flow shown with a small arrow on the wire."
+    },
+    {
+      "id": "ac-vs-dc-waveform",
+      "file": "req4a.md",
+      "style": "diagram",
+      "description": "Two side-by-side waveform graphs on a white background. Left graph labeled DC shows a flat horizontal line at a constant positive voltage level, with a horizontal time axis and a vertical voltage axis. Right graph labeled AC shows a smooth sine wave oscillating above and below the zero line, with one complete cycle clearly visible and the frequency marked. Both graphs share the same scale and axis labels. Clean, minimal educational style with blue lines on white."
+    },
+    {
+      "id": "three-generation-methods",
+      "file": "req4b.md",
+      "style": "infographic",
+      "description": "Three vertical panels showing methods of generating electricity. Left panel: electromagnetic induction, showing a simplified cross-section of a generator with a magnet spinning inside coils of wire, with wavy lines indicating AC output. Center panel: photovoltaic effect, showing sunlight rays hitting a blue solar panel with an arrow pointing to a wire carrying current to a light bulb. Right panel: chemical reaction in a battery, showing a cutaway of a battery cell with two electrodes in electrolyte solution and electrons flowing through an external wire. Each panel has a single bold label at the top. Clean flat illustration style."
+    },
+    {
+      "id": "battery-cutaway",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "A cross-section cutaway diagram of a standard cylindrical alkaline battery. The outer zinc casing is shown on the left side, the central manganese dioxide cathode rod in the middle, the potassium hydroxide electrolyte paste filling the space between them, and a thin separator membrane dividing the anode and cathode. The positive terminal bump is at the top and the flat negative terminal is at the bottom. Six labels point to each component. Clean technical illustration style with muted colors."
+    },
+    {
+      "id": "electric-bell-diagram",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "A labeled diagram of an electric bell circuit. A battery on the left connects through a push-button switch to an electromagnet coil wrapped around an iron core. A flexible iron armature strip extends from near the electromagnet toward a metal bell gong on the right, with a small hammer ball at the end of the armature. A contact screw touches the armature in its resting position, completing the circuit. Small arrows show the direction of current flow. Six labels identify: battery, push button, electromagnet, armature with hammer, contact screw, and bell gong. Clean technical style."
+    },
+    {
+      "id": "overloaded-outlet-danger",
+      "file": "req6a.md",
+      "style": "comparison",
+      "description": "Two-panel comparison of outlet loading. Left panel labeled safe: a single wall outlet with one appliance cord plugged in neatly, clean and tidy. Right panel labeled dangerous: a wall outlet with a multi-outlet adapter plugged in, which has a power strip plugged into it, which has multiple cords plugged in and tangled together, with cords running in all directions and visible heat-stress coloring near the outlet. Clean illustration style with green checkmark and red warning symbol."
+    },
+    {
+      "id": "power-equation-calculation",
+      "file": "req6b.md",
+      "style": "diagram",
+      "description": "An educational diagram showing the power equation triangle. A large triangle divided into three sections: P at the top for power in watts, V at the bottom left for voltage in volts, and I at the bottom right for current in amps. Below the triangle, three rearranged equations are shown: P equals V times I, V equals P divided by I, I equals P divided by V. To the right, a worked example shows 1500W divided by 120V equals 12.5A. Clean sans-serif text, white background, bold outlines."
+    },
+    {
+      "id": "fuse-vs-breaker-internals",
+      "file": "req6c.md",
+      "style": "diagram",
+      "description": "A side-by-side diagram showing two protective devices. Left side: a cross-section of a screw-in glass fuse showing its thin metal fusible link strip inside, with labels pointing to the glass window, the metal strip, and the screw base. Right side: a cutaway of a circuit breaker showing the internal bimetallic strip and an electromagnetic coil, with labels pointing to the bimetallic strip, the electromagnetic trip coil, the toggle mechanism, and the terminal connections. Clean technical illustration, white background."
+    },
+    {
+      "id": "breaker-positions-labeled",
+      "file": "req6d.md",
+      "style": "diagram",
+      "description": "A close-up view of three circuit breakers mounted vertically in a panel. The top breaker toggle is firmly pushed to the ON position. The middle breaker toggle sits in a halfway position between ON and OFF, representing the TRIPPED state, with a small orange indicator visible. The bottom breaker toggle is firmly pushed to the OFF position. Three labels clearly identify each state: ON, TRIPPED, and OFF. Clean, simple diagram on a neutral gray panel background."
+    },
+    {
+      "id": "floor-plan-wiring-example",
+      "file": "req7.md",
+      "style": "diagram",
+      "description": "A clean floor plan wiring diagram of a simple rectangular bedroom. The room outline shows walls drawn as thick lines, a door opening on one wall, and a window on the opposite wall. Standard electrical symbols mark four duplex outlet symbols on different walls, one ceiling light symbol in the center, and one switch symbol next to the door. Colored lines connect the outlets and light to show the circuit path, with a legend in the bottom corner showing the breaker number and color code. Graph-paper-style grid background."
+    },
+    {
+      "id": "electric-meter-reading",
+      "file": "req8.md",
+      "description": "A teenager in a clean Scout uniform standing outside a residential home next to a digital electric meter mounted on the exterior wall. The Scout holds a small clipboard and is writing down the meter reading. The meter display shows a digital number readout. The home has typical residential siding and the scene has natural daylight. The Scout looks attentive and purposeful."
+    },
+    {
+      "id": "energy-conservation-tips",
+      "file": "req8.md",
+      "style": "infographic",
+      "description": "Five icon panels in a horizontal row showing energy conservation strategies. Panel one: an LED light bulb icon glowing. Panel two: a smart thermostat display showing 68 degrees. Panel three: a power strip with a visible on-off switch in the off position. Panel four: a full washing machine drum viewed from the front. Panel five: a window frame with weatherstripping being applied along the edge. Each panel has a short two-word label below it. Clean flat icon style, white background, consistent color palette."
+    },
+    {
+      "id": "ohms-law-triangle",
+      "file": "req9a.md",
+      "style": "diagram",
+      "description": "Two educational triangles side by side on a white background. Left triangle: Ohm's Law with V at the top, I at the bottom left, R at the bottom right, with the equations V equals I times R below it. Right triangle: Power equation with P at the top, V at the bottom left, I at the bottom right, with the equation P equals V times I below it. Clean bold outlines, large readable letters, sans-serif font."
+    },
+    {
+      "id": "units-of-measure-water-analogy",
+      "file": "req9b.md",
+      "style": "illustrated",
+      "description": "A cross-section illustration showing the water analogy for electrical units. A water tower on the left side labeled Voltage provides pressure. Water flows through a horizontal pipe toward the right, with arrows in the pipe labeled Current showing the direction of flow. A narrow constriction in the middle of the pipe is labeled Resistance. On the right end, the water turns a small water wheel that is labeled Power. The illustration uses blue for water, gray for pipes, and warm colors for the water wheel. Clean educational linework style with soft colors."
+    },
+    {
+      "id": "circuit-conditions-diagram",
+      "file": "req9c.md",
+      "style": "diagram",
+      "description": "Four simple circuit diagrams in a horizontal row on a white background. First: a closed circuit with a battery, wire, and lit light bulb, labeled Normal. Second: an open circuit with the same components but a gap in the wire and the bulb dark, labeled Open Circuit. Third: a short circuit with a wire bypassing the bulb creating a direct connection and small spark symbols at the bypass point, labeled Short Circuit. Fourth: a circuit with a wire leading from the circuit down to a grounding symbol, labeled Ground. Clean minimal style with consistent component symbols."
+    },
+    {
+      "id": "power-grid-journey",
+      "file": "req9d.md",
+      "style": "illustrated",
+      "description": "A horizontal panoramic illustration showing the journey of electricity from generation to consumption, reading left to right. Starting with a power plant building with cooling towers, then tall lattice transmission towers carrying high-voltage lines, then a step-down substation with transformers, then shorter wooden distribution poles carrying lower-voltage lines through a neighborhood, then a cylindrical pole-mounted transformer, and finally a residential home with lights glowing in the windows. Voltage levels are noted at each stage. Warm sunset-tinted educational illustration style with clean linework."
+    },
+    {
+      "id": "series-vs-parallel-circuit",
+      "file": "req10.md",
+      "style": "comparison",
+      "description": "Two-panel comparison of circuit types. Left panel labeled Series: a simple circuit diagram showing a battery and switch connected to two light bulbs in a single loop, the bulbs drawn with dim glow to indicate reduced brightness. Right panel labeled Parallel: the same battery and switch connected to two light bulbs each in their own separate branch, the bulbs drawn with bright glow to indicate full brightness. Below each diagram, a short note about what happens when one bulb burns out. Clean educational diagram style."
+    },
+    {
+      "id": "electrical-careers-collage",
+      "file": "req11.md",
+      "description": "Three separate scenes arranged as a triptych. Left: a residential electrician in work clothes installing a circuit breaker panel in a home, with tools on a belt. Center: a wind turbine technician in safety gear and a hard hat standing on the nacelle platform of a large wind turbine at height, with wind turbines visible in the background. Right: an electrical engineer sitting at a desk reviewing circuit design schematics on a large computer monitor, with engineering reference books on a shelf behind them. Professional and aspirational tone."
+    }
+  ]
+}
