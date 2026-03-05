@@ -1,0 +1,158 @@
+{
+  "badge": "dog-care",
+  "style_context": "Dog care, training, health, and canine first aid for Scouts working on the Dog Care merit badge",
+  "images": [
+    {
+      "id": "scout-with-dog-outdoors",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform kneeling beside a medium-sized mixed-breed dog in a grassy park on a sunny day. Both are looking at each other with warmth. The dog has a wagging tail and relaxed posture. Background shows green trees and open space. No text, logos, or branding in the image."
+    },
+    {
+      "id": "seven-dog-group-collage",
+      "file": "_index.md",
+      "description": "Seven different dog breeds standing in a row on green grass in a park, each representing one AKC group: a yellow Labrador Retriever, a tricolor Beagle, a fawn Boxer, a white-and-tan Jack Russell Terrier, an orange Pomeranian, a black-and-white Border Collie, and a white-with-spots Dalmatian. Natural outdoor lighting, each dog clearly distinct."
+    },
+    {
+      "id": "wolf-to-dog-evolution",
+      "file": "req1a.md",
+      "style": "illustrated",
+      "description": "A horizontal progression showing the physical transformation from a gray wolf on the far left to a modern domestic dog (a friendly medium-sized breed like a Labrador) on the far right, with three intermediate stages showing gradual changes in skull shape, body size, ear position, and tail carriage. Clean white background, naturalistic illustration style, no text labels."
+    },
+    {
+      "id": "breed-profiles-collage",
+      "file": "req1c.md",
+      "description": "Seven dogs sitting together on a grassy hill in a park: a chocolate Labrador Retriever, a Beagle, a Siberian Husky with blue eyes, an Airedale Terrier with wiry tan coat, a Cavalier King Charles Spaniel in Blenheim coloring, a black-and-tan German Shepherd, and a white Standard Poodle in a sporting clip. Natural lighting, each breed clearly distinguishable."
+    },
+    {
+      "id": "dog-anatomy-labeled",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A clean side-view diagram of a medium-sized short-haired dog standing in profile on a white background. Twelve labeled body parts with thin lines pointing to each location: withers, muzzle, stop, occiput, shoulder, pastern, hock, stifle, dewclaw, croup, flank, and loin. Simple, clean line art with minimal color. Labels in small horizontal text."
+    },
+    {
+      "id": "scout-training-dog-park",
+      "file": "req3a.md",
+      "description": "A teenager in a clean Scout uniform practicing a sit command with a medium-sized golden-colored dog in a fenced park. The Scout is holding a small treat above the dog's head while the dog sits attentively looking up. Green grass, wooden fence in background. Warm, encouraging scene."
+    },
+    {
+      "id": "responsible-owner-daily-routine",
+      "file": "req3b.md",
+      "style": "infographic",
+      "description": "Six small square panels arranged in two rows of three, showing a daily dog care routine. Each panel has a simple clock icon showing the time and an illustration: morning walk with leash, feeding at a bowl, brushing the coat, a short training session, outdoor playtime, and evening rest on a dog bed. Warm color palette, simple clean illustrations, no text beyond time indicators."
+    },
+    {
+      "id": "family-choosing-dog",
+      "file": "req3c.md",
+      "description": "A family including a teenager visiting a clean, well-lit breeder facility. They are kneeling near a litter of golden retriever puppies while an adult breeder in casual clothes gestures and explains. An adult golden retriever sits calmly beside the breeder. Bright, welcoming atmosphere."
+    },
+    {
+      "id": "daily-dog-care-routine",
+      "file": "req4.md",
+      "description": "A teenager in a clean Scout uniform measuring dry dog food with a metal measuring cup over a stainless steel dog bowl. A medium-sized dog sits patiently nearby on a kitchen floor. A small spiral notebook and pen are visible on the counter, suggesting record-keeping. Clean, well-lit kitchen setting."
+    },
+    {
+      "id": "training-commands-sequence",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "Three side-by-side panels showing dog training commands. Left panel: a teenager luring a dog into a sit position by holding a treat above the dog's head. Center panel: the same teenager luring the dog into a down position with a treat moving toward the ground. Right panel: the teenager with palm extended toward the dog in a stay command. Each panel has a clean background."
+    },
+    {
+      "id": "puppy-vaccination-timeline",
+      "file": "req6a.md",
+      "style": "infographic",
+      "description": "A horizontal timeline spanning from left to right showing the puppy vaccination schedule. Five age markers along the timeline: 6-8 weeks, 10-12 weeks, 14-16 weeks, 12 months, and then every 3 years. Each marker has a simple syringe icon and abbreviated vaccine name below. Clean design with a blue color scheme on white background. Minimal text, only age numbers and short abbreviations."
+    },
+    {
+      "id": "parasite-prevention-calendar",
+      "file": "req6b.md",
+      "style": "infographic",
+      "description": "A twelve-month calendar grid showing year-round parasite prevention for dogs. Each month cell contains small icons: a flea icon for flea-tick prevention and a heart icon for heartworm prevention. Two months are highlighted with a checkmark icon for annual vet checkup and fecal test. Clean grid layout, warm color palette, minimal text showing only month abbreviations."
+    },
+    {
+      "id": "dog-tooth-brushing",
+      "file": "req6c.md",
+      "description": "Close-up photograph of gentle hands brushing a dog's teeth with a soft-bristled dog toothbrush. The dog's lip is lifted to reveal teeth and gumline. A tube of dog toothpaste sits nearby on a clean counter. The dog appears calm and cooperative. Warm indoor lighting."
+    },
+    {
+      "id": "grooming-tools-layout",
+      "file": "req6d.md",
+      "description": "A neatly arranged flat lay of dog grooming tools on a light wooden surface: a slicker brush, a bristle brush, stainless steel nail clippers, a small container of styptic powder, a bottle of dog shampoo, a metal grooming comb, and an undercoat rake. Each tool is clearly visible and identifiable. Clean, organized, well-lit."
+    },
+    {
+      "id": "seasonal-dog-care",
+      "file": "req6e.md",
+      "style": "comparison",
+      "description": "A split-frame comparison image. Left side shows a summer scene: a teenager offering a bowl of fresh water to a panting dog under the shade of a large tree, bright sunlight in the background. Right side shows a winter scene: the same teenager wiping a dog's paws with a towel after a snowy walk, the dog wearing a warm vest, snow visible outside a doorway."
+    },
+    {
+      "id": "vet-surgical-prep",
+      "file": "req6f.md",
+      "description": "A veterinarian wearing blue surgical scrubs gently examining a calm medium-sized dog on a stainless steel exam table in a clean, modern veterinary clinic. The vet is using a stethoscope. The clinic appears bright, professional, and welcoming. No visible distress from the dog."
+    },
+    {
+      "id": "injured-dog-approach",
+      "file": "req7a.md",
+      "description": "A teenager cautiously approaching a small injured dog lying on grass from the side, body lowered, one hand extended palm-down toward the dog. The dog is lying on its side looking wary but not aggressive. A safe distance separates them. Outdoor setting with soft natural lighting."
+    },
+    {
+      "id": "emergency-muzzle-steps",
+      "file": "req7b.md",
+      "style": "diagram",
+      "description": "A four-panel instructional diagram on a clean white background showing how to apply an emergency muzzle using rolled gauze on a dog. Panel 1: a loop of gauze formed with an overhand knot. Panel 2: the loop placed over a dog's muzzle. Panel 3: the gauze tails crossed under the chin. Panel 4: the gauze tails tied in a bow behind the dog's ears. Simple line art with numbered panels."
+    },
+    {
+      "id": "wound-care-supplies",
+      "file": "req7c.md",
+      "description": "A neatly arranged set of wound care supplies on a clean white surface: sterile gauze pads, a roll of gauze, a bottle of saline solution, a tube of antibiotic ointment, two clean white towels, blunt-tipped scissors, and non-stick wound pads. Everything clearly visible and organized."
+    },
+    {
+      "id": "paw-bandaging-technique",
+      "file": "req7d.md",
+      "style": "annotated-photo",
+      "description": "Close-up of two hands wrapping a dog's front paw with white gauze bandage. The technique shows overlapping layers spiraling from the toes upward past the ankle. A non-stick pad is visible beneath the gauze layers at the paw pad. Three labels total: one identifying the non-stick pad layer, one pointing to the overlapping wrap technique, and one showing the extension above the ankle. No additional text or annotations."
+    },
+    {
+      "id": "dog-car-safety-prevention",
+      "file": "req7e.md",
+      "description": "A teenager walking a medium-sized dog on a leash along a sidewalk at dusk. The dog is wearing a reflective safety vest that catches the fading light. The sidewalk runs parallel to a residential street. Street lights are beginning to turn on. Safe, responsible walking scene."
+    },
+    {
+      "id": "canine-first-aid-kit",
+      "file": "req7f.md",
+      "style": "annotated-photo",
+      "description": "A fully stocked pet first-aid kit laid open on a table showing neatly organized supplies including rolled gauze, non-stick pads, self-adhesive wrap, scissors, tweezers, a digital thermometer, antibiotic ointment, and rubber gloves. Four labels total: one identifying gauze and bandaging supplies, one pointing to the thermometer, one identifying the scissors and tweezers, and one for the antibiotic ointment. No additional text or annotations."
+    },
+    {
+      "id": "vet-examining-dog",
+      "file": "req7g.md",
+      "description": "A veterinarian in a white coat using a stethoscope to examine a calm medium-sized mixed-breed dog on an exam table. The dog's owner stands nearby watching attentively. A clean, bright, modern veterinary clinic with medical equipment visible on the wall."
+    },
+    {
+      "id": "disease-prevention-shield",
+      "file": "req7h.md",
+      "style": "infographic",
+      "description": "A shield shape divided into four equal quadrants on a clean white background. Each quadrant contains a simple icon representing a disease: a virus particle for rabies, a paw print with dots for parvovirus, lungs for distemper, and a heart with a worm for heartworm. The shield conveys protection. Minimal color palette of blue, red, green, and orange. No text in the image."
+    },
+    {
+      "id": "scout-vet-visit",
+      "file": "req8.md",
+      "description": "A teenager in a clean Scout uniform standing in a veterinary clinic reception area, talking with a veterinarian in a white coat. A friendly golden retriever on a leash stands between them. The clinic reception area is clean and professional with a front desk visible in the background."
+    },
+    {
+      "id": "dog-license-tag",
+      "file": "req9.md",
+      "description": "Close-up photograph of a dog's collar showing a shiny metal license tag and a rabies vaccination tag hanging from the collar ring. The tags catch the light and are clearly visible. The dog has medium-length brown fur. Shallow depth of field with a soft, blurred background."
+    },
+    {
+      "id": "dog-agility-course",
+      "file": "req10.md",
+      "description": "A medium-sized Border Collie mid-jump over a colorful striped agility hurdle on an outdoor agility course. Weave poles and a blue tunnel are visible in the background. A handler runs alongside. Green grass, bright sunny day. Action shot capturing the dog in the air."
+    },
+    {
+      "id": "working-dogs-montage",
+      "file": "extended-learning.md",
+      "style": "comparison",
+      "description": "Three side-by-side panels showing working dogs in action. Left panel: a yellow Labrador guide dog in a harness leading a person across a crosswalk. Center panel: a German Shepherd search-and-rescue dog wearing an orange vest climbing over rocky terrain. Right panel: a Beagle detection dog sniffing a row of suitcases at a luggage checkpoint. Each panel has a clean, distinct scene."
+    }
+  ]
+}
