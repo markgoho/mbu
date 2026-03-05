@@ -1,0 +1,79 @@
+{
+  "badge": "entrepreneurship",
+  "style_context": "Entrepreneurship and business skills for young people — brainstorming, planning, marketing, interviewing, and running a small business",
+  "images": [
+    {
+      "id": "teen-entrepreneur-lemonade-stand",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform running a well-organized outdoor stand selling handmade crafts at a community event. A small chalkboard sign on the table shows pricing. A cash box and neatly arranged products are on display. Warm afternoon sunlight. No text on the uniform other than patches. No branding text visible."
+    },
+    {
+      "id": "types-of-entrepreneurship",
+      "file": "_index.md",
+      "style": "illustrated",
+      "description": "Three-panel illustration showing different types of entrepreneurship. Left panel: a craft table with handmade jewelry and candles arranged for sale. Center panel: a teenager walking three dogs on leashes in a park. Right panel: a laptop screen showing a simple online storefront with product thumbnails. Each panel is separated by a thin line. Clean, colorful linework with a white background. No text labels."
+    },
+    {
+      "id": "entrepreneur-economic-impact",
+      "file": "req1.md",
+      "style": "infographic",
+      "description": "Four large icons arranged in a two-by-two grid on a clean white background representing the economic impact of entrepreneurs. Top-left: a group of five people silhouettes representing job creation. Top-right: a glowing lightbulb representing innovation. Bottom-left: a classical government building representing tax revenue. Bottom-right: a row of small storefronts representing community development. Each icon uses a distinct bold color. No text labels in the image."
+    },
+    {
+      "id": "entrepreneur-problem-solving",
+      "file": "req2.md",
+      "description": "A teenager in a clean Scout uniform standing at a whiteboard in a bright room. The whiteboard has colorful sticky notes arranged in clusters with arrows drawn between them, representing a brainstorming or problem-solving session. The teenager is pointing at one of the notes with a marker in hand. Natural window light. No readable text on the sticky notes."
+    },
+    {
+      "id": "entrepreneur-skills-wheel",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A circular diagram with a central circle and ten evenly spaced segments radiating outward like a wheel. Each segment contains a simple icon: speech bubble, calendar, folder, puzzle piece, compass, calculator, curved arrows, gear, two people, and a flag. The segments use alternating soft colors. Clean lines on a white background. No text labels anywhere in the image."
+    },
+    {
+      "id": "scout-interviewing-entrepreneur",
+      "file": "req3.md",
+      "description": "A teenager in a clean Scout uniform sitting across a desk from a middle-aged small business owner inside a cozy bakery or small shop. The teenager has a notebook open and is writing notes with a pen. The business owner is speaking and gesturing with hands. Warm natural lighting from a window. Shelves with products visible in the background. No text or signage readable in the image."
+    },
+    {
+      "id": "brainstorming-ideas-board",
+      "file": "req4.md",
+      "description": "A corkboard covered with colorful sticky notes and index cards pinned in a scattered arrangement, representing a brainstorming session. Three of the notes are circled with a red marker, indicating top picks. A hand holding a red marker is visible at the edge of the frame. Warm indoor lighting. No readable text on the notes."
+    },
+    {
+      "id": "business-capacity-planning",
+      "file": "req5a.md",
+      "description": "A teenager sitting at a kitchen table surrounded by baking ingredients, mixing bowls, and measuring cups. In the background, a whiteboard calendar on the wall shows a weekly schedule with colored blocks representing production days. A notebook with a pencil sits open on the table. Bright kitchen lighting. No readable text on the calendar or notebook."
+    },
+    {
+      "id": "competitor-analysis-notebook",
+      "file": "req5b.md",
+      "style": "illustrated",
+      "description": "An open spiral notebook showing a hand-drawn competitor analysis grid. Three columns represent different businesses, with rows showing simple bar chart comparisons. Colored pencil marks in different hues differentiate the columns. The notebook sits on a wooden desk with a pencil beside it. Clean illustrative style with visible grid lines. No readable text on the page."
+    },
+    {
+      "id": "pricing-profit-example",
+      "file": "req5c.md",
+      "style": "infographic",
+      "description": "Three large rounded rectangles in a horizontal row connected by minus and equals signs. The first rectangle is blue and shows a dollar sign representing Price. The second rectangle is red and shows a dollar sign representing Cost. The third rectangle is green and shows a dollar sign representing Profit. The minus sign and equals sign are large and bold between the rectangles. Clean white background with no other text or labels."
+    },
+    {
+      "id": "personnel-org-chart",
+      "file": "req5d.md",
+      "style": "diagram",
+      "description": "A simple organizational chart with three boxes connected by lines. The top box is solid with a person icon. Two boxes below are drawn with dashed outlines, each containing a person icon, representing potential future roles. Connecting lines run from the top box down to each lower box. Clean minimal design on a white background. No text labels in the image."
+    },
+    {
+      "id": "marketing-channels-overview",
+      "file": "req5e.md",
+      "style": "illustrated",
+      "description": "Six icons arranged in two rows of three, each representing a different marketing channel. Top row: a speech bubble with sound waves, a smartphone with notification dots, a bulletin board with a pinned flyer. Bottom row: a market booth with a small banner, a gift card with a ribbon, two hands in a handshake. Each icon uses a distinct bright color. Clean linework on a white background. No text labels."
+    },
+    {
+      "id": "problem-solving-flowchart",
+      "file": "req6.md",
+      "style": "diagram",
+      "description": "A simple vertical flowchart with three rounded rectangles connected by downward arrows. The top rectangle contains a magnifying glass icon. The middle rectangle contains a balance scale icon with three small branches below it. The bottom rectangle contains a checkmark icon. A curved arrow loops from the bottom back up to the top along the right side. Clean design with soft blue and green colors on a white background. No text labels."
+    }
+  ]
+}
