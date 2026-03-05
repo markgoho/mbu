@@ -1,0 +1,125 @@
+{
+  "badge": "engineering",
+  "style_context": "Engineering merit badge — covering mechanical, civil, electrical, chemical, aerospace, and biomedical engineering. Scouts investigate manufactured items, study engineering achievements, meet engineers, design projects, and explore engineering careers.",
+  "images": [
+    {
+      "id": "engineering-overview-collage",
+      "file": "_index.md",
+      "description": "A teenager in a clean Scout uniform examining the internal components of a disassembled toaster on a well-lit workbench. Engineering tools surround the toaster including calipers, a multimeter with probes, and a spiral-bound notebook with sketches. The background is a tidy garage workshop with pegboard holding wrenches and screwdrivers. Natural light from a window. The scene conveys curiosity and careful investigation."
+    },
+    {
+      "id": "engineering-get-ready",
+      "file": "_index.md",
+      "description": "Three teenagers in clean Scout uniforms collaborating at a large table. One sketches a mechanical design on paper, another examines a small prototype made of cardboard and wooden dowels, and the third points at a laptop screen showing a simple 3D CAD model. The table has scattered colored pencils, a ruler, masking tape, and craft supplies. Bright indoor lighting with an engaged, collaborative atmosphere."
+    },
+    {
+      "id": "disassembled-appliance-investigation",
+      "file": "req1.md",
+      "description": "A teenager in a clean Scout uniform at a workbench carefully examining the disassembled internal components of a small electric fan. Parts are laid out in organized groups on a white cloth — a small motor, fan blades, screws, wires, and the plastic housing. A notebook with hand-drawn sketches of the components sits beside the parts. Basic tools — a Phillips screwdriver, pliers, and a flashlight — are nearby. Safety glasses rest on the table."
+    },
+    {
+      "id": "great-engineering-achievements-montage",
+      "file": "req2.md",
+      "style": "illustrated",
+      "description": "A panoramic illustrated scene showing three iconic engineering achievements in a single landscape composition. On the left, a large red suspension bridge spans a river valley. In the center background, a rocket stands on a launch pad with support structures. On the right, a massive concrete dam holds back a reservoir of blue water. The sky transitions from dawn on the left to midday on the right, emphasizing the scale and ambition of human engineering. Clean linework with educational coloring."
+    },
+    {
+      "id": "engineer-research-process",
+      "file": "req2.md",
+      "description": "A teenager in a clean Scout uniform at a library table actively researching an engineering topic. Open reference books surround the teenager, and a laptop screen displays a diagram of a bridge with labeled structural components. A notebook contains handwritten notes with bullet points and small sketches. The library setting has bookshelves in the background and warm overhead lighting."
+    },
+    {
+      "id": "engineering-disciplines-diagram",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "A clean hexagonal arrangement of six engineering fields. Each hexagon contains a simple icon: a gear for Mechanical, a bridge for Civil, a lightning bolt for Electrical, a flask for Chemical, a rocket for Aerospace, and a heart with a pulse line for Biomedical. The hexagons are connected by thin lines showing relationships between adjacent fields. Each hexagon has its field name in bold text below the icon. White background with professional blue and gray color scheme."
+    },
+    {
+      "id": "scout-visiting-engineer-office",
+      "file": "req4.md",
+      "description": "A teenager in a clean Scout uniform sitting in a chair across a desk from a professional engineer in business casual clothing. The engineer points at a large computer monitor displaying a CAD drawing of a mechanical assembly. Rolled engineering blueprints stand in a holder on the desk. A small 3D-printed prototype sits on the desk between them. The office has a window with daylight and a bookshelf with technical reference books."
+    },
+    {
+      "id": "engineering-tools-workspace",
+      "file": "req4.md",
+      "description": "A well-organized engineering workspace on a professional desk. Items visible include a laptop displaying 3D CAD software with a colorful model, metal calipers, a white 3D-printed prototype component, a rolled engineering drawing partially unrolled showing a floor plan, a scientific calculator, and a coffee mug. The desk surface is clean light wood. Natural light from a nearby window. No people visible."
+    },
+    {
+      "id": "systems-engineering-process",
+      "file": "req5.md",
+      "style": "infographic",
+      "description": "A horizontal flow diagram showing eight stages of the systems engineering process. Each stage is a rounded rectangle with an icon: lightbulb for Define Problem, checklist for Identify Requirements, magnifying glass for Research, pencil for Generate Concepts, checkmark for Select Design, wrench for Build Prototype, clipboard for Test, and circular arrows for Refine. Arrows connect each stage left to right, with a large curved arrow from Refine back to Test showing the iterative cycle. Clean sans-serif labels. Blue and white color scheme."
+    },
+    {
+      "id": "prototype-building-workbench",
+      "file": "req5.md",
+      "description": "A teenager in a clean Scout uniform at a workbench building a prototype camp cooking utensil organizer from thin plywood and canvas. Sketches on paper are pinned to a small corkboard behind the workbench. Basic hand tools are visible — a small saw, wood glue, sandpaper, and a pencil. The prototype is partially assembled, showing the internal divider structure. Good workshop lighting."
+    },
+    {
+      "id": "engineering-activities-overview",
+      "file": "req6.md",
+      "style": "comparison",
+      "description": "A side-by-side split image. LEFT SIDE: A teenager in a clean Scout uniform building a mechanical lever-and-pulley model from craft sticks and string at a workbench, with a gear set visible nearby. RIGHT SIDE: A teenager in a clean Scout uniform conducting a materials experiment, pressing down on thin strips of wood, metal, and plastic bridged between two supports to test their flexibility, with a notebook recording data. Both scenes are well-lit indoor settings."
+    },
+    {
+      "id": "simple-machines-diagram",
+      "file": "req6a.md",
+      "style": "diagram",
+      "description": "A six-panel educational diagram showing the six simple machines. Each panel contains a clean illustration with labeled arrows showing force direction. Top row: Lever with fulcrum labeled, Inclined Plane with effort and load labeled, Wheel and Axle with rotation arrows. Bottom row: Pulley with rope and load, Screw with rotation arrow and linear motion arrow, Wedge with input force and splitting force arrows. White background, consistent blue and gray color scheme, bold labels."
+    },
+    {
+      "id": "home-electricity-audit",
+      "file": "req6b.md",
+      "description": "A teenager in a clean Scout uniform in a kitchen, crouching to read the label on the back of a microwave oven sitting on a countertop. The teenager holds a spiral notebook and pen, recording wattage information. The kitchen is modern and clean with other visible appliances — a refrigerator, toaster, and ceiling light fixture. Natural light from a kitchen window."
+    },
+    {
+      "id": "smartphone-data-journey",
+      "file": "req6c.md",
+      "style": "diagram",
+      "description": "A horizontal diagram showing the path of data from a smartphone. From left to right: a smartphone icon sends radio waves (shown as curved lines) to a cell tower. The cell tower connects via a line labeled 'fiber optic cable' to a rectangular building labeled 'Data Center'. The Data Center connects via another fiber optic line to a second cell tower, which sends radio waves to a second smartphone on the right. Each stage has a small label underneath. Clean minimal design with blue accents on white background."
+    },
+    {
+      "id": "materials-strength-test",
+      "file": "req6d.md",
+      "description": "A teenager in a clean Scout uniform conducting a materials strength experiment at a table. Three thin strips — one wood, one metal, one plastic — bridge a gap between two stacks of thick books. A small cup with coins hangs from a string attached to the center of the metal strip, which shows slight bending. A notebook with a data table and pencil sits beside the setup. The scene is well-lit with clean indoor lighting."
+    },
+    {
+      "id": "energy-conversion-experiment",
+      "file": "req6e.md",
+      "description": "A teenager in a clean Scout uniform at a table with a homemade rubber-band-powered car built from a cardboard tube, wooden skewers as axles, and bottle caps as wheels. The car sits on a smooth tabletop next to a measuring tape stretched along the surface. A notebook with recorded distances and a pen sit nearby. The scene is a well-lit classroom or kitchen table setting."
+    },
+    {
+      "id": "traffic-flow-observation",
+      "file": "req6f.md",
+      "description": "A teenager in a clean Scout uniform standing safely on a wide sidewalk, looking toward a nearby road intersection. The teenager holds a clipboard with a tally chart and a stopwatch in the other hand. A few cars are visible on the road at the intersection, with a traffic light showing green. Trees line the sidewalk and the scene is set during a clear afternoon with good visibility."
+    },
+    {
+      "id": "engineering-fair-display",
+      "file": "req6g.md",
+      "description": "A teenager in a clean Scout uniform standing beside a tri-fold science fair display board in a gymnasium. The display board shows a bridge-building project with the title area, photos of the construction process, and a data chart. A small bridge model made of balsa wood sits on the table in front of the board. Two adult visitors lean in to examine the bridge model. Gymnasium lighting with other display boards visible in the background."
+    },
+    {
+      "id": "pe-stamp-and-documents",
+      "file": "req7.md",
+      "style": "illustrated",
+      "description": "A close-up illustrated view of engineering documents on a desk. A circular Professional Engineer seal stamp with 'REGISTERED PROFESSIONAL ENGINEER' text around the border sits prominently on top of a partially visible blueprint showing a structural floor plan. Next to the stamp are a mechanical pencil and a pair of reading glasses. The illustration uses clean lines and a blue-ink color palette on white paper background. No specific names or state information on the seal."
+    },
+    {
+      "id": "ethics-comparison-chart",
+      "file": "req8.md",
+      "style": "infographic",
+      "description": "A two-column comparison infographic. The left column is headed 'Scout Law' and lists six points — Trustworthy, Loyal, Helpful, Obedient, Brave, Clean — each with a small icon. The right column is headed 'Engineering Code of Ethics' and lists matching canons — Public Safety, Faithful Agents, Serve the Public, Lawful Conduct, Speak Up for Safety, Avoid Deception. Horizontal connecting lines link each Scout Law point to its engineering parallel. Professional blue and gold color scheme on white background."
+    },
+    {
+      "id": "engineering-career-paths",
+      "file": "req9.md",
+      "style": "infographic",
+      "description": "Three vertical career path columns side by side. Each column represents an engineering discipline — Mechanical, Civil, Electrical — with a small icon at the top (gear, bridge, lightning bolt). Each column shows four career stages as stacked rounded rectangles from bottom to top: High School, College, Early Career, Senior Engineer. Each stage has a one-line description. Salary range indicators appear beside the career stages. Clean professional design with blue, green, and orange color coding for the three columns."
+    },
+    {
+      "id": "extended-learning-engineering-future",
+      "file": "extended-learning.md",
+      "description": "A teenager in a clean Scout uniform at a maker space workbench. A desktop 3D printer is actively printing a small mechanical part, with the print head visible and a partially completed white object on the print bed. The teenager examines a previously printed prototype part while glancing at a laptop screen showing a 3D CAD model of the same part. Several completed prototype parts in different colors sit on the workbench. The maker space has tools and equipment visible in the background."
+    }
+  ]
+}
