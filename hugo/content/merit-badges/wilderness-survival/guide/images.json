@@ -1,0 +1,90 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness survival skills, outdoor emergencies, and backcountry techniques for Scouts ages 11-17",
+  "images": [
+    {
+      "id": "scout-wilderness-overview",
+      "file": "_index.md",
+      "style": "photo",
+      "description": "A Scout in a clean Scout uniform standing at a mountain overlook, looking out at a vast wilderness landscape with forests, valleys, and distant peaks. The Scout holds a map and compass confidently. Bright natural lighting, clear weather, expansive view of wild terrain. Only one Scout visible, focused and prepared."
+    },
+    {
+      "id": "wilderness-hazards-summary",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Four environmental challenges of wilderness illustrated as equal-weight icons/panels: a thermometer representing cold, a sun representing heat, a raindrop representing wet conditions, and a wind symbol representing wind. Each panel shows the primary hazard visually. Clean layout, minimal text, educational color scheme."
+    },
+    {
+      "id": "hypothermia-prevention",
+      "file": "req1a.md",
+      "style": "annotated-photo",
+      "description": "A Scout in winter conditions wearing appropriate layered clothing: synthetic base layer visible at neck, fleece mid-layer visible at torso, waterproof outer jacket, winter hat covering ears, insulated gloves. A subtle callout labels each clothing layer and its function. Clear, realistic winter setting with snow on ground. Only labels for clothing layers, no body text annotations."
+    },
+    {
+      "id": "scout-essentials-checklist",
+      "file": "req1b.md",
+      "style": "infographic",
+      "description": "Ten items laid out in a grid arrangement representing the Scout Essentials: first-aid kit (small red bag), water bottle, backpack, map and compass, headlamp, multi-tool, rope/paracord, tent/emergency shelter, sunscreen bottle, and hat. Each item clearly visible and recognizable, no text labels visible in image, clean white background."
+    },
+    {
+      "id": "trip-plan-preparation",
+      "file": "req1c.md",
+      "style": "photo",
+      "description": "A Scout at home reviewing a detailed trail map on a table, with a backpack, compass, and water bottle beside the map. The Scout appears focused and prepared, checking the route. Natural indoor lighting, map clearly visible but not readable text. Shows the preparation phase before departure."
+    },
+    {
+      "id": "mental-resilience-practice",
+      "file": "req3.md",
+      "style": "photo",
+      "description": "A Scout sitting calmly in a forest environment, eyes closed, practicing breathing exercises. Their posture is upright and centered. Peaceful natural setting with trees and dappled sunlight. Shows mental composure and the practice of staying calm."
+    },
+    {
+      "id": "first-aid-kit-contents",
+      "file": "req4.md",
+      "style": "diagram",
+      "description": "First-aid kit contents arranged in a flat-lay organized display: bandages of different sizes, gauze pads, medical tape, elastic bandage, tweezers, scissors, antibiotic ointment, pain reliever, antihistamine, hydrocortisone cream, blister pads, small flashlight. All items clearly visible and distinguishable. White or neutral background. No text labels visible as image content."
+    },
+    {
+      "id": "survival-shelter-construction",
+      "file": "req5d.md",
+      "style": "photo",
+      "description": "A lean-to shelter built in a forest using branches and natural materials. The shelter shows good technique: ridgepole supported between trees, angled branches framework, covered with leaves and branches for insulation. A clear entrance opening visible. Demonstrates effective natural shelter building. Daytime lighting showing clear construction details."
+    },
+    {
+      "id": "fire-building-tinder-to-flame",
+      "file": "req6.md",
+      "style": "comparison",
+      "description": "Two-panel comparison: Left panel shows organized fire materials (tinder bundle of dry bark and leaves, small kindling twigs, larger fuel branches) arranged in progression by size. Right panel shows the same materials arranged in a working fire with visible flames, demonstrating the progression from smallest to largest materials. Clear daylight, both setups shown clearly."
+    },
+    {
+      "id": "signal-mirror-technique",
+      "file": "req7b.md",
+      "style": "annotated-photo",
+      "description": "A person holding a signal mirror at chest level, with sunlight creating a bright reflection on their body. The angle of the mirror, sun position, and reflection path are subtly indicated with callouts showing proper technique. Clear daylight with strong sun. Shows mirror at correct distance and angle for effective signaling."
+    },
+    {
+      "id": "ground-air-signals",
+      "file": "req7c.md",
+      "style": "diagram",
+      "description": "Five ground-to-air signal patterns shown as geometric shapes made from rocks or logs on open ground, viewed from above: X pattern (distress), V pattern (assistance), triangle (safe to land), arrow (direction), and SOS pattern (three symbols in line). Each pattern clearly distinct, labeled below with meaning. Aerial perspective, clear ground colors with dark rocks creating contrast."
+    },
+    {
+      "id": "water-treatment-methods",
+      "file": "req8.md",
+      "style": "infographic",
+      "description": "Three water treatment methods shown as sequential steps: Panel 1 shows water boiling over fire in a pot with steam rising. Panel 2 shows water purification tablets dissolving in a cup of water. Panel 3 shows water being filtered through a portable filter device. Each method shows the action clearly, no text visible within image, arranged horizontally."
+    },
+    {
+      "id": "wilderness-career-exploration",
+      "file": "req10.md",
+      "style": "photo",
+      "description": "A park ranger in uniform standing in front of a scenic wilderness vista, or a wilderness guide leading a small group of Scouts on a trail in a scenic mountain setting. Shows a real outdoor professional in their environment. Clear daylight, professional but not staged appearance, emphasizing career possibilities in the wilderness."
+    },
+    {
+      "id": "extended-learning-mountaineering",
+      "file": "extended-learning.md",
+      "style": "photo",
+      "description": "A climber ascending a snow-covered peak, roped and geared for mountaineering. The climber is in a Scout uniform (where visible under climbing gear) demonstrating advanced wilderness skills. Dramatic alpine setting with peaks visible in background. Clear weather showing the goal of summit climbing as an advanced skill pursuit."
+    }
+  ]
+}
