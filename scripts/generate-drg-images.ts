@@ -178,15 +178,14 @@ ${TEXT_DENSITY_SECTION}
 LAYOUT REQUIREMENTS:
 - Organized sections with clear visual separation
 - Use icons, pictograms, or simple illustrations alongside text
-- Numbers, statistics, and key facts should be prominently displayed
 - Use color coding to group related information
-- Include a clear title or heading at the top
+- Do NOT include a title, heading, or banner at the top — the web page provides its own heading
+- Keep text to short labels and key numbers only — no sentences or paragraphs
 
 TYPOGRAPHY:
-- Title/heading: large, bold
-- Section headers: medium, distinct from body text
-- Body text: clean, readable sans-serif
+- Labels: large, bold, legible at web resolution
 - Key numbers/facts: large and highlighted
+- No body text or paragraphs — if it needs that much text, it belongs on the web page, not in the image
 
 SCENE: `;
 
@@ -197,7 +196,6 @@ CRITICAL — OUTPUT MUST BE A TECHNICAL ILLUSTRATION:
 - Detailed technical illustration style — NOT a photograph
 - Think: field guide illustration, technical manual drawing, equipment catalog diagram
 - Use precise linework with clear detail
-- Label all important parts and features
 - Style: somewhere between a botanical illustration and an engineering diagram
 - Professional, educational, authoritative feel
 ${NO_BRANDING_SECTION}
@@ -206,7 +204,7 @@ ${TEXT_DENSITY_SECTION}
 ILLUSTRATION REQUIREMENTS:
 - Clean white or light neutral background
 - Precise, detailed rendering of the subject
-- Labels with leader lines pointing to key features
+- Only add labels if the description explicitly asks for them — otherwise let the visual speak for itself
 - Consistent line weight and rendering style
 - Cross-hatching or subtle shading for depth (not photorealistic shading)
 - Color should be accurate and educational, not decorative
@@ -230,6 +228,7 @@ COMPARISON REQUIREMENTS:
 - A dividing line or visual separator between the two sides
 - Can be photorealistic or illustrated — whichever communicates the comparison more clearly
 ${NO_BRANDING_SECTION}
+${TEXT_DENSITY_SECTION}
 
 EDUCATIONAL FOCUS:
 - The viewer should instantly understand what is right and what is wrong

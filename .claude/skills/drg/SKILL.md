@@ -388,7 +388,9 @@ The image generation pipeline supports six styles. Choose the style that best se
 | Data, rules, principles, lists, steps | `infographic` | Icons + text hierarchy, scannable at a glance |
 | Field guide subject, equipment illustration | `illustrated` | Precise linework, labeled features, educational colors |
 
-**Quick decision rule:** If the image's primary job is to **label parts** or **show data**, use `diagram`/`infographic`/`illustrated`. If it's to **show people doing things**, use `photo` or `annotated-photo`. If it's to **contrast two things**, use `comparison`.
+**Quick decision rule:** If the image's primary job is to **label parts** or **show data**, use `diagram`/`illustrated`. If it's to **show people doing things**, use `photo` or `annotated-photo`. If it's to **contrast two things**, use `comparison`.
+
+**Infographic caution:** The `infographic` style tends to produce text-heavy images with illegible small text. AI image generators cannot reliably render readable text at web resolution, so infographics with sentences, paragraphs, or dense labels consistently fail. Prefer `illustrated` or `diagram` styles instead — they produce cleaner visuals with minimal text. Only use `infographic` when the content is genuinely data-driven (a few large numbers with icons) and the description explicitly limits text density.
 
 **Arrow and label accuracy warning:** The image generator handles photorealistic scenes and self-structuring diagrams well (e.g., compass parts, where the layout is inherent), but it cannot reliably place arrows or labels that must point to *specific* features in a complex scene. If a diagram requires multiple arrows each targeting a distinct spatial element (e.g., "this arrow points to the stream, that arrow points to the trail"), the arrows will frequently land on the wrong features. For these cases, prefer `photo` style showing the real subject (e.g., a photo of an actual orienteering map instead of a generated diagram of one) or use `diagram` only when the structure is simple enough that labels are unambiguous (e.g., a single object with parts radiating outward).
 
@@ -573,6 +575,13 @@ For each page:
 ```
 
 The `style` field is optional — omit it for standard photo images. Use it when a non-photo style (diagram, infographic, illustrated, annotated-photo, comparison) better serves the content. See Image Style Selection above for guidance.
+
+**`style_context` rules:** The `style_context` value is prepended to every image generation prompt. To prevent the AI image generator from injecting branding, logos, or organizational text into images:
+- Keep `style_context` purely descriptive of the **subject matter** (e.g., "Outdoor cooking, campfire safety, and food preparation techniques")
+- NEVER include organizational names: "Scouting America", "BSA", "Boy Scouts", "Merit Badge University"
+- NEVER include age ranges: "ages 11-17", "youth", "Scouts BSA members"
+- NEVER include project framing: "study guide", "educational resource", "merit badge guide"
+- The generation script already handles educational framing — `style_context` should only describe the visual domain
 
 21. **Run generation immediately** (do not ask the user or wait for approval): `bun run generate:drg-images {slug}` — This command may take several minutes for large guides. Let it run to completion.
 22. **Convert images to AVIF**: Run `bun run convert:drg-images -- --badge {slug}` to convert all generated PNGs to AVIF format (1200px wide, quality 80). Then delete the source PNGs: `rm hugo/content/merit-badges/{slug}/guide/images/*.png`
