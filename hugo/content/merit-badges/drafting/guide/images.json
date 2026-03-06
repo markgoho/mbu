@@ -1,0 +1,121 @@
+{
+  "badge": "drafting",
+  "style_context": "Technical drafting, engineering drawing, CAD design, architectural plans, mechanical drawings, electrical schematics, drafting tools and instruments",
+  "images": [
+    {
+      "id": "scout-drafting-table",
+      "file": "_index.md",
+      "description": "A teenager wearing a clean Scout uniform sitting at a large tilted drafting table, carefully drawing a technical plan with a T-square and triangle. A desk lamp illuminates the drawing surface. Mechanical pencils, an architect's scale, and an eraser sit nearby. Bright, well-lit studio setting."
+    },
+    {
+      "id": "drafting-types-trio",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Three-panel comparison image. Left panel: a clean architectural floor plan showing rooms, walls, doors, and dimension lines on white paper. Center panel: a mechanical orthographic drawing showing front, top, and side views of a simple bracket with dimensions. Right panel: an electrical schematic diagram with standard component symbols including resistors, capacitors, and a battery. Each panel is clearly distinct with professional drafting quality."
+    },
+    {
+      "id": "cad-3d-model-screen",
+      "file": "_index.md",
+      "description": "A large computer monitor displaying a 3D CAD model of a mechanical assembly with multiple parts in different colors, dimension callouts visible, and a toolbar along one side. The screen sits on a modern desk in an office environment with natural light from a window."
+    },
+    {
+      "id": "rough-sketch-example",
+      "file": "req1a.md",
+      "style": "illustrated",
+      "description": "A hand-drawn rough sketch on graph paper showing a simple rectangular room floor plan layout. Freehand lines indicate walls, a door opening, and a window. Handwritten annotations show room dimensions (12 ft by 15 ft), a note reading 'Scale 1/4 inch = 1 foot,' and a dashed rectangle in the lower right labeled 'Title Block.' Arrows indicate border margins. Loose, casual sketch style on light blue grid paper."
+    },
+    {
+      "id": "paper-sizes-comparison",
+      "file": "req1a.md",
+      "style": "diagram",
+      "description": "Clean diagram showing five standard ANSI drawing paper sizes nested inside each other from smallest to largest. The smallest rectangle is labeled 'A' with dimensions '8.5 x 11,' the next is labeled 'B' with '11 x 17,' then 'C' with '17 x 22,' then 'D' with '22 x 34,' and the largest 'E' with '34 x 44.' Each rectangle is a slightly different pastel color. White background, clean labels."
+    },
+    {
+      "id": "title-block-layout",
+      "file": "req1b.md",
+      "style": "diagram",
+      "description": "Clean engineering diagram of a standard title block rectangle subdivided into labeled cells. Cells are labeled in horizontal text: DRAWING TITLE (largest cell, top), SCALE, DATE, DRAWN BY, CHECKED BY, SHEET NUMBER, and DRAWING NUMBER. The block is positioned in the lower right corner of a drawing border. Thin black lines on white background, with each cell label clearly readable."
+    },
+    {
+      "id": "gothic-lettering-sample",
+      "file": "req1b.md",
+      "style": "diagram",
+      "description": "Sample of single-stroke vertical Gothic lettering showing the uppercase alphabet A through Z in one row, and numerals 0 through 9 in a row below. Light blue horizontal guidelines are visible above and below the letters showing the cap height and baseline. The letters are drawn in dark pencil on white paper, uniform in height, with clean single-stroke construction. Professional technical lettering style."
+    },
+    {
+      "id": "architects-scale-reading",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A triangular architect's scale ruler shown from above with one edge facing the viewer. The visible scale edge is labeled '1/4' with graduated markings. A short dimension line below the scale shows a 3-inch span labeled '12 feet at 1/4 inch = 1 foot scale.' Clean white background, precise line art, educational reference style."
+    },
+    {
+      "id": "orthographic-projection-views",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Third-angle orthographic projection diagram showing three views of a simple L-shaped bracket. Top view centered above, front view in the center, and right side view to the right. Thin projection lines connect corresponding features between views. Each view is labeled in horizontal text: TOP VIEW, FRONT VIEW, RIGHT SIDE VIEW. Clean black lines on white background."
+    },
+    {
+      "id": "cad-software-workspace",
+      "file": "req3.md",
+      "description": "A computer screen showing a 2D CAD software workspace with a mechanical part drawing visible in the center of the canvas. Dimension lines with measurements extend from the part features. A vertical toolbar with drawing tool icons is visible on the left edge, and a layer panel is docked on the right. The interface has a dark background with white drawing lines, typical of professional CAD software."
+    },
+    {
+      "id": "cad-vs-manual-tools",
+      "file": "req3.md",
+      "style": "comparison",
+      "description": "Split comparison. Left side: traditional manual drafting tools arranged neatly on a drawing board — T-square, triangle, compass, mechanical pencil, architect's scale, eraser, and a partially completed hand drawing. Right side: a modern computer workstation with dual monitors showing CAD software, a mouse, keyboard, and the same drawing displayed digitally with crisp lines and automatic dimensions. Equal lighting on both sides."
+    },
+    {
+      "id": "redlined-drawing-example",
+      "file": "req4.md",
+      "style": "annotated-photo",
+      "description": "A printed engineering drawing with red pen markups visible. Three revision clouds circle areas of the drawing. One cloud has a red note reading 'Change to 2.5' next to a dimension. Another has a red arrow pointing to a feature with the note 'Add fillet.' A red X marks a feature to be deleted. The drawing shows a simple mechanical part with dimensions. The red markups contrast clearly against the black-and-white drawing."
+    },
+    {
+      "id": "revision-block-detail",
+      "file": "req4.md",
+      "style": "diagram",
+      "description": "A clean diagram of a revision block table with four columns labeled REV, DESCRIPTION, DATE, and BY. Two rows of sample data are filled in: Row 1 shows 'A' in REV, 'Added fillet per redline' in DESCRIPTION, a date, and initials. Row 2 shows 'B' in REV, 'Changed dimension to 2.5' in DESCRIPTION, a later date, and initials. The table has clean thin borders on a white background with readable horizontal text."
+    },
+    {
+      "id": "manual-vs-cad-comparison",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "Split comparison of the same simple mechanical bracket drawing. Left side: a hand-drawn pencil version on white drafting paper with visible construction lines, hand-written dimensions, and slight imperfections characteristic of manual drafting. Right side: the same bracket drawn in CAD with perfectly straight lines, precise automated dimensions, and crosshatch fill in the section view. Both drawings show the same object but demonstrate the visual difference between manual and digital methods."
+    },
+    {
+      "id": "cad-revision-ease",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "Split comparison showing a revision being made. Left side labeled 'Manual Revision': a drawing with eraser smudges, partially erased lines, and a hand-redrawn feature showing the messy reality of erasing and correcting a pencil drawing. Right side labeled 'CAD Revision': the same drawing with a clean, crisp modification — the changed feature is perfect with no trace of the original, and the dimension has updated automatically."
+    },
+    {
+      "id": "scout-lettering-project",
+      "file": "req6.md",
+      "description": "A teenager at a desk carefully hand-lettering Gothic text on a formatted drawing sheet with visible border and title block. Light blue guidelines are drawn across the sheet. The teenager holds a mechanical pencil at a slight angle, concentrating on forming uniform letters. A soft eraser and a ruler sit beside the sheet. Natural light from a window, focused composition."
+    },
+    {
+      "id": "professional-drafting-office",
+      "file": "req7.md",
+      "description": "A modern engineering office with two large widescreen monitors on a desk showing CAD drawings of architectural floor plans. A large-format plotter printer against the wall is printing a full-size engineering drawing. Two engineers in business casual clothing stand nearby discussing a printed drawing spread on a table. The office has bright fluorescent lighting and technical reference materials on shelves."
+    },
+    {
+      "id": "drafting-tools-evolution",
+      "file": "req7.md",
+      "style": "comparison",
+      "description": "Split comparison showing drafting tool evolution. Left side: a vintage drafting setup with a wooden drawing board, T-square, ink ruling pen, compass, French curves, and a roll of vellum paper, all arranged in warm sepia-toned lighting suggesting the past. Right side: a modern CAD workstation with a high-resolution monitor showing a 3D model, a graphics tablet with stylus, and a 3D printer producing a prototype in the background. Bright, modern lighting."
+    },
+    {
+      "id": "drafting-career-paths",
+      "file": "req8.md",
+      "style": "infographic",
+      "description": "Infographic showing three career paths branching from a central hub labeled 'Drafting Skills.' Left branch leads through 'Architectural Drafter' to 'Architect' with icons of buildings. Center branch leads through 'Mechanical Drafter' to 'Mechanical Engineer' with icons of gears. Right branch leads through 'Electrical Drafter' to 'Electronics Engineer' with icons of circuits. Each branch has small milestone markers showing education levels: 'Associate Degree,' 'Bachelor's Degree,' 'Professional License.' Clean, modern design with blue and gray color palette."
+    },
+    {
+      "id": "drafting-salary-outlook",
+      "file": "req8.md",
+      "style": "infographic",
+      "description": "Simple infographic showing drafting career facts. Three horizontal rows with icons. Row 1: a graduation cap icon with text 'Entry: Associate Degree (2 years).' Row 2: a dollar sign icon with text 'Median Salary: $60,000/year.' Row 3: an upward arrow icon with text 'Growth: Stable demand across industries.' Clean white background, blue accent colors, modern sans-serif typography, minimal design."
+    }
+  ]
+}
