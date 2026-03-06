@@ -98,10 +98,24 @@ Requirements are grouped by top-level number and given a descriptive group title
 
 ### Sub-requirement Splitting
 
-Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **combined on one page**. Use this heuristic:
+Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **combined on one page**. Apply these rules in order:
 
-- If sub-requirements are thematically similar and short → **one page** (e.g., `req2.md` covering 2a–2c)
-- If sub-requirements are thematically distinct or lengthy → **separate pages** (e.g., `req1a.md`, `req1b.md`)
+1. **If any sub-requirement has its own `resources` array in `data.json`** → default to **separate pages**. Resources signal that the item has enough substance to stand alone.
+2. **If sub-requirements are thematically distinct or lengthy** (each would need 500+ words) → **separate pages** (e.g., `req1a.md`, `req1b.md`).
+3. **If sub-requirements are thematically similar AND short** (each would need fewer than ~300 words) AND none has its own `resources` → **one page** (e.g., `req2.md` covering 2a–2c).
+
+When in doubt, err toward separate pages — a short focused page is better than a long combined one.
+
+### Discrete Item Handling
+
+Some sub-requirements in `data.json` contain a list of **discrete numbered items** as a third nesting level (e.g., `1.a.1` through `1.a.13`). These are items that the requirement explicitly enumerates — for example, "Show or explain first aid for ... including: (1) Dehydration, (2) Heatstroke, (3) Hypothermia ..." where each item has its own `req_id`, `path`, and potentially its own `resources` array.
+
+**Rule: Every discrete item listed in `data.json` must get its own dedicated heading on the page.** Do not merge multiple items under a single thematic heading (e.g., don't combine "Dehydration" and "Heatstroke" under a shared "Heat-Related Emergencies" heading that loses the individual items). Each item should be clearly identifiable as a separate section so the Scout can find, study, and discuss each one independently with their counselor.
+
+Specifically:
+- If a sub-requirement has N discrete items in its `subrequirements` array, the page must have **at least N headings** — one per item, using the item's text as the heading (or a close paraphrase).
+- You may add grouping headings *above* the individual item headings for organization (e.g., an `## Insect Bites & Stings` section heading, followed by separate `### Chiggers`, `### Ticks`, `### Mosquitoes`, `### Biting Gnats` headings), but the individual items must still each have their own heading.
+- This rule applies regardless of how short or thematically similar the items appear. The `data.json` structure is authoritative — if the data lists them separately, the guide must present them separately.
 
 ### Umbrella Requirement Text
 
@@ -217,6 +231,16 @@ next_title: "{Next Page Title}"
    {exact requirement text}
    {{</* /drg/requirement */>}}
    ```
+
+   **Compositing rule for nested sub-items:** When a requirement in `data.json` has its text split across a parent `text` field and child `subrequirements`, compose the shortcode content by concatenating the parent text with a comma-separated list of each child's `text` field. Use the text exactly as it appears in `data.json` — do not add numbers like `(1)`, `(2)`, do not change capitalization, and do not rephrase. Example for a requirement with parent text "Show first aid for:" and children ["Dehydration", "Heatstroke", "Hypothermia"]:
+
+   ```markdown
+   {{</* drg/requirement number="1a" */>}}
+   Show first aid for: Dehydration, Heatstroke, Hypothermia.
+   {{</* /drg/requirement */>}}
+   ```
+
+   For **select-one** requirements (`subrequirement_mode.type: "select"`), include only the parent/umbrella text inside the shortcode. Present the options in the page body, not inside the shortcode.
 
 2. **Educational content** — 500–1500 words teaching what the Scout needs to know. Content strategy depends on requirement type:
 
@@ -521,7 +545,10 @@ Work through these phases in order without pausing for approval between phases. 
 3. Map the full page structure (every page, URL slug, group title).
 4. Identify the subject's breadth (types/varieties for the Introduction page).
 5. Identify the history angle (Then vs. Now).
-6. List external resources for each requirement. Note: `data.json` may include a `resources` array on individual requirements (e.g., official Scouting videos or worksheets scraped from scouting.org). Consider incorporating these if they are valuable compared to other resources you plan to use.
+6. **Incorporate `data.json` resources.** Requirements in `data.json` may include a `resources` array with curated links (videos, websites, PDFs) scraped from scouting.org. These are **verified, working URLs** — use them:
+   - YouTube video resources **must** be embedded via the `drg/video` shortcode on the corresponding requirement page. These are pre-verified and do not need noembed checking.
+   - Non-video resources (websites, PDFs) should be included via `drg/external-link` where they add value.
+   - You may supplement data.json resources with additional resources you find, but do not skip the ones already provided — they represent the official Scouting resources for that requirement.
 7. Proceed directly to writing content — do not pause for approval.
 
 ### Phase 2: Write _index.md (Introduction & Overview)
@@ -602,6 +629,7 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] Safety addressed where warranted
 - [ ] At least one external link
 - [ ] Image placeholders have descriptive alt-text
+- [ ] Every page has at least 1 image; aim for 2–3 per page (no page should have zero)
 - [ ] Transition CTA bridges to next page
 - [ ] Previous/Next navigation is correct
 - [ ] Content is 500–1500 words
@@ -620,6 +648,8 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
 - [ ] All YouTube video embeds verified via noembed (zero broken links)
+- [ ] All `data.json` YouTube video resources are embedded via `drg/video` on their corresponding requirement pages
+- [ ] Discrete sub-items in `data.json` each have their own heading on the page
 
 ## Pull Request Workflow
 
