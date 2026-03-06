@@ -1,0 +1,122 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness survival skills including shelter building, fire starting, water treatment, navigation, signaling, and backcountry first aid in forest, snow, desert, and water environments",
+  "images": [
+    {
+      "id": "scouts-wilderness-campsite",
+      "file": "_index.md",
+      "description": "Two teenagers in clean Scout uniforms setting up an improvised camp near a rocky stream in a forested mountain setting, one arranging branches for a lean-to shelter while the other organizes gear from a backpack, late afternoon golden light filtering through tall trees, natural forest floor with fallen leaves"
+    },
+    {
+      "id": "wilderness-environments-variety",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Four-panel comparison of wilderness environments. Top-left: snowy mountain forest with deep snow and frost-covered evergreens. Top-right: arid desert canyon with red rock walls and sparse vegetation under harsh sun. Bottom-left: dense temperate forest during heavy rain with water running down trails. Bottom-right: a calm mountain lake surrounded by rocky shoreline with overcast sky. Each panel shows the distinct character of the environment without people."
+    },
+    {
+      "id": "hypothermia-warning-signs",
+      "file": "req1a.md",
+      "style": "infographic",
+      "description": "Progressive stages of hypothermia infographic with three horizontal sections. Top section labeled Mild shows icons for shivering and goosebumps with a thermometer reading 95 to 90 degrees. Middle section labeled Moderate shows icons for confusion, slurred speech, and drowsiness with thermometer at 90 to 82 degrees. Bottom section labeled Severe shows icons for loss of shivering, unconsciousness, and weak pulse with thermometer below 82 degrees. Clean medical illustration style with blue-to-dark-blue color gradient."
+    },
+    {
+      "id": "venomous-creatures-id",
+      "file": "req1a.md",
+      "style": "illustrated",
+      "description": "Four-panel educational identification guide on a cream background. Top-left: a black widow spider shown from above with the distinctive red hourglass marking on the underside of the abdomen clearly visible. Top-right: a brown recluse spider shown from above with the dark violin-shaped marking on its back. Bottom-left: a coiled timber rattlesnake with segmented rattle clearly visible at the tail tip, diamond pattern on scales. Bottom-right: a bark scorpion with its curved stinger tail raised, translucent yellowish body. Each creature shown in accurate proportions with clean linework."
+    },
+    {
+      "id": "scout-essentials-layout",
+      "file": "req1b.md",
+      "description": "Overhead flat-lay photograph of the ten Scout Essentials arranged neatly on a natural wood picnic table surface. Items clearly separated: folding pocketknife, small red first aid pouch, folded blue rain jacket, extra wool socks and fleece layer, black headlamp with extra batteries beside it, trail mix bag and two granola bars, blue water bottle, sunscreen tube and sunglasses, folded topographic map with a baseplate compass on top, waterproof match case with fire starter cubes. Clean natural lighting, organized layout."
+    },
+    {
+      "id": "trip-plan-preparation",
+      "file": "req1c.md",
+      "description": "A teenager in a clean Scout uniform sitting at a wooden camp table studying a topographic map spread open. A pencil is in their hand, marking a route on the map. Beside the map are a printed trip plan form with handwritten entries, a baseplate compass, and a smartphone showing a weather forecast screen. Warm indoor lighting suggesting preparation the evening before a trip."
+    },
+    {
+      "id": "survival-priorities-order",
+      "file": "req2.md",
+      "style": "infographic",
+      "description": "Vertical infographic showing seven survival priorities in descending order of urgency. Each priority displayed as a horizontal row with a simple icon on the left and a brief description on the right. From top to bottom: brain icon for STOP, medical cross for First Aid, simple shelter shape for Shelter, flame icon for Fire, water droplet for Water, exclamation mark for Signaling, fork and knife for Food. Each row uses a slightly different shade progressing from red at top to blue at bottom, indicating decreasing urgency. Clean minimal design with sans-serif text."
+    },
+    {
+      "id": "scout-calm-forest",
+      "file": "req3.md",
+      "description": "A teenager in a clean Scout uniform sitting calmly on a moss-covered fallen log in a dense forest, hands resting on knees with palms up, eyes closed in a focused breathing exercise. Their backpack is set neatly on the ground beside them. Late afternoon light filters through the tree canopy creating dappled patterns on the forest floor. The scene conveys calm and composure, not distress."
+    },
+    {
+      "id": "box-breathing-technique",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "Clean diagram of the box breathing technique displayed as four equal sides of a square. Top horizontal side labeled Inhale 4 seconds with an upward arrow. Right vertical side labeled Hold 4 seconds with a rightward arrow. Bottom horizontal side labeled Exhale 4 seconds with a downward arrow. Left vertical side labeled Hold 4 seconds with a leftward arrow. A simple lung silhouette icon centered inside the square. Light blue background with dark text. No additional annotations or decorative elements."
+    },
+    {
+      "id": "survival-kit-compact",
+      "file": "req4.md",
+      "description": "Overhead photograph of a personal survival kit with contents laid out beside a small aluminum tin. Items arranged in a clean grid pattern: silver emergency space blanket in its packet, bright orange pealess whistle, ferro rod with steel striker, a short coil of bright green paracord, small signal mirror, strip of water purification tablets in foil packaging, mini LED flashlight, duct tape wrapped tightly around a short pencil, a folded clear plastic bag, a small button compass, and a coil of monofilament fishing line. Natural outdoor light, all items fitting the scale of the small tin."
+    },
+    {
+      "id": "desert-shade-shelter",
+      "file": "req5a.md",
+      "description": "A teenager in a clean Scout uniform resting in the shade under an improvised shelter in a desert canyon setting. The shelter is made from a reflective emergency blanket draped over two hiking poles wedged between reddish sandstone rocks. The teenager sits on their backpack beneath the shelter, water bottle in hand. Bright midday sun illuminates the canyon walls outside the shade. The contrast between harsh sun and cool shade is clearly visible."
+    },
+    {
+      "id": "cold-weather-layering",
+      "file": "req5b.md",
+      "style": "infographic",
+      "description": "Educational infographic showing the three-layer cold weather clothing system. Three horizontal rows, each showing a clothing layer. Top row shows a base layer with moisture-wicking synthetic shirt and pants. Middle row shows an insulating mid layer with a fleece jacket. Bottom row shows an outer shell layer with a waterproof jacket and rain pants. Each row has a brief label on the right describing the layer purpose. Clean flat illustration style with simple clothing icons."
+    },
+    {
+      "id": "bear-bag-hanging-method",
+      "file": "req5c.md",
+      "style": "diagram",
+      "description": "Clean instructional diagram of the PCT bear hang method viewed from the side. A tall tree with a horizontal branch extends to the right. A rope runs over the branch with a stuff sack hanging from one end. Horizontal measurement lines show the bag is 10 feet above the ground and 4 feet from the tree trunk. The rope is tied to a separate smaller tree on the left. A simple human silhouette stands below for scale reference. Minimal clean style with measurements clearly labeled. No cluttered annotations."
+    },
+    {
+      "id": "debris-lean-to-construction",
+      "file": "req5d.md",
+      "style": "illustrated",
+      "description": "Four-panel step-by-step illustration of debris lean-to construction in a forest setting. Panel one: a long ridgepole propped at waist height on a tree fork at one end with the other end resting on the ground. Panel two: shorter rib branches leaned against the ridgepole at an angle forming a wall. Panel three: smaller branches and leaves being layered across the ribs from bottom to top like shingles. Panel four: the completed shelter with thick debris covering and a visible ground bed of dry leaves inside. Each panel numbered in sequence. Clean illustrated style with earth tones."
+    },
+    {
+      "id": "completed-debris-shelter-night",
+      "file": "req5e.md",
+      "description": "A completed debris lean-to shelter at twilight in a forest clearing. A small campfire burns in front of the shelter opening, casting warm orange light into the interior where a thick pile of dry leaves is visible as ground insulation. The shelter is made of branches layered with leaves and forest debris. A backpack leans against a nearby tree. The sky through the trees shows deep blue dusk with the first stars appearing. The scene conveys rustic warmth and security."
+    },
+    {
+      "id": "fire-fuel-stages",
+      "file": "req6.md",
+      "description": "Three distinct piles of fire fuel arranged left to right on a forest floor clearing. On the left: a fluffy bird-nest-shaped bundle of fine dry grass, bark shavings, and cotton-like tinder material. In the center: a neat bundle of pencil-thin to finger-thin dry sticks and twigs standing together. On the right: an armload of wrist-thick to forearm-thick dry fuel logs stacked together. Clear visual progression from finest to largest. Natural forest floor background with filtered daylight."
+    },
+    {
+      "id": "ferro-rod-fire-starting",
+      "file": "req6.md",
+      "description": "Close-up action photograph of two hands using a ferro rod and steel striker over a prepared tinder nest on a forest floor. The right hand holds the ferro rod steady near the tinder while the left hand draws the striker along the rod. Bright orange-white sparks cascade downward onto the fluffy tinder bundle. Shallow depth of field with the sparks and tinder in sharp focus and the forest background softly blurred. Natural daylight."
+    },
+    {
+      "id": "signal-mirror-technique",
+      "file": "req7.md",
+      "style": "annotated-photo",
+      "description": "A teenager in a clean Scout uniform demonstrating the signal mirror aiming technique outdoors. They hold a small signal mirror close to their face near one eye with one hand. Their other arm extends straight out toward a distant point with fingers spread to use as a sight. A visible beam of reflected sunlight streams from the mirror in the direction they are aiming. Three callout labels total: one pointing to the mirror near the eye, one pointing to the extended sighting hand, one pointing to the reflected beam. Bright outdoor setting with open sky."
+    },
+    {
+      "id": "water-treatment-methods",
+      "file": "req8.md",
+      "style": "comparison",
+      "description": "Three-panel side-by-side comparison of water treatment methods. Left panel: a metal pot of water at a rolling boil over a small campfire, visible large bubbles and steam rising. Center panel: a hand dropping a small white purification tablet into a clear water bottle, the tablet visible mid-fall. Right panel: two hands squeezing a soft water bag through a portable Sawyer-style squeeze filter, clean water flowing into a second container below. Each panel clearly labeled at the bottom with the method name."
+    },
+    {
+      "id": "toxic-plant-lookalikes",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "Two rows of botanical comparison illustrations on a cream background. Top row shows Queen Anne's lace on the left with its flat white flower cluster and hairy stem, next to water hemlock on the right with its slightly different flower cluster and smooth purplish stem, key differences highlighted with small indicator marks. Bottom row shows a common edible button mushroom on the left with its solid white cap and pink gills, next to a death cap mushroom on the right with its greenish-yellow cap, white gills, and distinctive cup-shaped volva at the base. Clean botanical illustration linework with accurate proportions."
+    },
+    {
+      "id": "wilderness-career-ranger",
+      "file": "req10.md",
+      "description": "A park ranger in a flat-brimmed ranger hat and uniform standing at a scenic mountain overlook. Forested mountains extend into the distance behind them under a partly cloudy sky. They have binoculars hanging around their neck and a radio clipped to their belt. Morning fog drifts through the valley below. Their expression is professional and welcoming. The scene conveys the appeal of a career protecting wild places."
+    }
+  ]
+}
