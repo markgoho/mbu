@@ -1,0 +1,126 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness survival skills including shelter building, fire starting, first aid, water treatment, signaling for rescue, and outdoor emergency preparedness",
+  "images": [
+    {
+      "id": "scout-in-wilderness-shelter",
+      "file": "_index.md",
+      "style": "photo",
+      "description": "Scout sitting inside a completed natural shelter made from branches and leaves, looking prepared and calm"
+    },
+    {
+      "id": "wilderness-survival-priorities-chart",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Visual ranking of the five priorities of wilderness survival with icons showing the order and brief description of each"
+    },
+    {
+      "id": "backcountry-injuries-identification",
+      "file": "req1a.md",
+      "style": "illustrated",
+      "description": "Grid showing 8 different wilderness injuries side-by-side (dehydration signs, hypothermia stages, blister formation, snake bite, spider bite, etc.) with clear identifying features labeled"
+    },
+    {
+      "id": "scout-essentials-10-items",
+      "file": "req1b.md",
+      "style": "photo",
+      "description": "All 10 Scout Essentials laid out on a backpack, each item clearly visible and organized in order"
+    },
+    {
+      "id": "trip-planning-checklist",
+      "file": "req1c.md",
+      "style": "infographic",
+      "description": "Completed trip plan form showing route on map, participant list, timeline, emergency contacts, and weather forecast"
+    },
+    {
+      "id": "seven-priorities-visual-hierarchy",
+      "file": "req2.md",
+      "style": "infographic",
+      "description": "Pyramid diagram with the seven survival priorities stacked from bottom to top, each level showing priority number, name, and survival timeframe"
+    },
+    {
+      "id": "panic-vs-calm-decision-making",
+      "file": "req3.md",
+      "style": "comparison",
+      "description": "Left side showing a panicked Scout making poor decisions with arrows pointing to negative outcomes, right side showing calm Scout making good decisions with positive outcomes"
+    },
+    {
+      "id": "first-aid-kit-organized",
+      "file": "req4.md",
+      "style": "photo",
+      "description": "Well-organized first aid kit in waterproof pouch with compartments showing bandages, medications, tools, and items clearly visible"
+    },
+    {
+      "id": "exposure-conditions-shelter-types",
+      "file": "req5a.md",
+      "style": "comparison",
+      "description": "Five different shelter setups arranged side-by-side, each labeled with condition (cold and snowy, wet, hot and dry, windy, at water) showing appropriate shelter design for each"
+    },
+    {
+      "id": "clothing-layers-hot-cold-wet",
+      "file": "req5b.md",
+      "style": "comparison",
+      "description": "Three columns showing clothing layers for cold weather, hot weather, and wet weather conditions, each column displaying layered outfit from base to shell"
+    },
+    {
+      "id": "bear-camp-setup-diagram",
+      "file": "req5c.md",
+      "style": "diagram",
+      "description": "Top-down view of properly organized campsite showing sleeping area, cooking area, food storage location with distances marked, and bear/raccoon protection measures"
+    },
+    {
+      "id": "forest-shelter-types-comparison",
+      "file": "req5d.md",
+      "style": "comparison",
+      "description": "Three forest shelter types displayed side-by-side: lean-to shelter, debris shelter (A-frame), and natural shelter with rock overhang, each labeled with construction details"
+    },
+    {
+      "id": "shelter-building-in-progress",
+      "file": "req5e.md",
+      "style": "photo",
+      "description": "Scout actively building a debris shelter, showing the framework of branches leaning against a ridgepole and bundles of leaves/insulation nearby"
+    },
+    {
+      "id": "ferro-rod-striking-technique",
+      "file": "req6.md",
+      "style": "photo",
+      "description": "Scout demonstrating proper ferro rod striking technique over a prepared tinder bundle, showing the correct striking angle and spark generation"
+    },
+    {
+      "id": "ground-to-air-signals",
+      "file": "req7a.md",
+      "style": "diagram",
+      "description": "Aerial view showing five large ground-to-air signals (X, V, arrow, F, checkmark) each properly arranged and labeled, visible from above as they would appear to aircraft"
+    },
+    {
+      "id": "signal-mirror-aiming-diagram",
+      "file": "req7b.md",
+      "style": "diagram",
+      "description": "Top-down view showing sun position, mirror angle, and target alignment for proper signal mirror technique with angles and light path clearly marked"
+    },
+    {
+      "id": "water-treatment-comparison",
+      "file": "req8.md",
+      "style": "comparison",
+      "description": "Three water treatment methods displayed side-by-side: boiling with pot and fire, purification tablets in water, and filter pump with labeled steps for each method"
+    },
+    {
+      "id": "edible-plant-identification-grid",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "Grid showing five common edible plants with detailed illustrations of leaves, flowers, roots, and growth patterns, each plant clearly labeled with name and edible parts highlighted"
+    },
+    {
+      "id": "signaling-tools-comparison",
+      "file": "req10.md",
+      "style": "photo",
+      "description": "Five signaling tools arranged together: cell phone, personal locator beacon, whistle, signal mirror, and flashlight, each clearly visible and labeled"
+    },
+    {
+      "id": "rescue-coordination-center",
+      "file": "extended-learning.md",
+      "style": "photo",
+      "description": "Modern search and rescue coordination center with personnel working at desks with maps, radios, and technology coordinating rescue operations"
+    }
+  ]
+}
