@@ -1,0 +1,118 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness Survival: outdoor skills including shelter building, fire-building, first aid, signaling for rescue, water treatment, and wilderness hazards",
+  "images": [
+    {
+      "id": "overview-scout-wilderness",
+      "file": "_index.md",
+      "description": "A Scout in clean uniform standing confidently in a wilderness setting with forest and mountains in background, smiling and ready for adventure"
+    },
+    {
+      "id": "hypothermia-prevention",
+      "file": "req1a.md",
+      "style": "diagram",
+      "description": "Diagram showing layers of clothing for cold weather protection: base layer (thermal), insulation layer (fleece), shell layer (waterproof jacket), with labeled arrows pointing to each layer"
+    },
+    {
+      "id": "first-aid-kit-contents",
+      "file": "req4.md",
+      "style": "diagram",
+      "description": "Top-down view of organized first aid kit contents laid out neatly: bandages, gauze, pain reliever packets, antibiotic ointment, elastic wrap, tweezers, antihistamine, arranged in organized groups by type"
+    },
+    {
+      "id": "survival-shelter-construction",
+      "file": "req5d.md",
+      "style": "illustrated",
+      "description": "Step-by-step illustration showing lean-to shelter construction: first panel shows two anchor trees with ridge pole; second panel shows branches leaned against pole; third panel shows completed shelter with layered insulation and fire in front"
+    },
+    {
+      "id": "fire-building-tinder-to-flame",
+      "file": "req6.md",
+      "style": "photo",
+      "description": "Sequence of fire building: Scout arranging tinder nest (cotton with vaseline), striking ferro rod to create sparks, kindling catching flame, progressively larger wood being added until full fire established"
+    },
+    {
+      "id": "signal-mirror-technique",
+      "file": "req7b.md",
+      "style": "annotated-photo",
+      "description": "Scout using signal mirror in daylight, holding mirror at chest level with sight hole aligned, sunlight reflecting toward a distant target (labeled: 'Mirror at angle', 'Reflected sunlight beam', 'Target location')"
+    },
+    {
+      "id": "ground-air-signals",
+      "file": "req7c.md",
+      "style": "diagram",
+      "description": "Five ground-to-air signals shown from above (aerial view): X shape labeled 'Need Assistance', SOS in large letters labeled 'Distress', vertical I line labeled 'Unable to Proceed', arrow labeled 'Go This Direction', V shape labeled 'Medical Assistance', each made of rocks or logs on terrain"
+    },
+    {
+      "id": "water-treatment-methods",
+      "file": "req8.md",
+      "style": "infographic",
+      "description": "Three water treatment methods shown side-by-side: Left panel shows boiling (water in pot over fire, steam visible), center shows purification tablet (tablet being dropped in water, 'wait 30 mins' notation), right shows filter (water pouring through sand and gravel layers)"
+    },
+    {
+      "id": "scout-essentials-checklist",
+      "file": "req1b.md",
+      "style": "diagram",
+      "description": "All 10 Scout Essentials displayed as icons with brief labels arranged in two rows: clothing, first aid kit, flashlight, map, compass, whistle, fire starter, lunch/snacks, water, knife"
+    },
+    {
+      "id": "trip-plan-preparation",
+      "file": "req1c.md",
+      "style": "infographic",
+      "description": "Trip plan document template shown with sections: Route and Destination (map snippet), Dates and Times (calendar), Group Information (silhouettes of people), Communication Plan (phone icon), Safety Precautions (warning icon)"
+    },
+    {
+      "id": "survival-priorities-pyramid",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Pyramid diagram showing 7 survival priorities stacked from bottom to top: Shelter (base), Signal, First Aid, Water, Fire, Food, Morale (top), with brief description beside each level"
+    },
+    {
+      "id": "mental-resilience-practice",
+      "file": "req3.md",
+      "style": "photo",
+      "description": "Scout sitting calmly in outdoor setting demonstrating controlled breathing (hand on chest), with serene forest backdrop showing calm mindset"
+    },
+    {
+      "id": "box-breathing-technique",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "Box breathing diagram showing square with four labeled sides: 'Inhale 4 counts' (top), 'Hold 4 counts' (right), 'Exhale 4 counts' (bottom), 'Hold 4 counts' (left), with central text 'Repeat 10 times'"
+    },
+    {
+      "id": "clothing-layering-system",
+      "file": "req5b.md",
+      "style": "illustrated",
+      "description": "Cross-section diagram showing three layers of clothing on a person: base layer (synthetic/wool) next to skin labeled 'wicks moisture', insulation layer (fleece) labeled 'traps warm air', outer shell (waterproof) labeled 'blocks wind and rain'"
+    },
+    {
+      "id": "bear-food-storage-hanging",
+      "file": "req5c.md",
+      "style": "diagram",
+      "description": "Diagram showing proper food storage hanging technique: two trees 10 feet apart, food bag suspended 12 feet high from rope between them, labeled measurements and technique notes"
+    },
+    {
+      "id": "snow-cave-shelter",
+      "file": "req5d.md",
+      "style": "illustrated",
+      "description": "Cross-section of snow cave showing entrance tunnel (lower than sleeping chamber), sleeping platform elevated above entrance, vent hole in ceiling, insulation on floor, person sleeping inside"
+    },
+    {
+      "id": "ferro-rod-fire-starting",
+      "file": "req6.md",
+      "style": "photo",
+      "description": "Close-up sequence of ferro rod fire-starting: hand holding ferro rod and striker, sparks flying into tinder nest, tinder beginning to glow, flames appearing in kindling"
+    },
+    {
+      "id": "wilderness-career-exploration",
+      "file": "req10.md",
+      "style": "infographic",
+      "description": "Four wilderness career options displayed as cards: Park Ranger (uniform and landscape), Search & Rescue responder (with equipment), Outdoor Education instructor (with Scouts), Wilderness Guide (with group hiking), each with brief description"
+    },
+    {
+      "id": "extended-learning-mountaineering",
+      "file": "extended-learning.md",
+      "description": "Scout mountaineer ascending a snowy peak, crampons on feet, rope visible, climbing helmet worn, triumphant expression, mountain landscape in background"
+    }
+  ]
+}
