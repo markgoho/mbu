@@ -1,0 +1,130 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness survival skills for Scouts: backcountry emergencies, shelter construction, fire building, signaling, and survival psychology",
+  "images": [
+    {
+      "id": "wilderness-survival-intro-scene",
+      "file": "_index.md",
+      "description": "A teenager in a tan Scout shirt and olive green pants sitting calmly with their back against a large pine tree in a dense forest, afternoon light filtering through the canopy, a small olive daypack beside them. Peaceful, competent demeanor. Soft forest floor with pine needles."
+    },
+    {
+      "id": "seven-priorities-diagram",
+      "file": "_index.md",
+      "style": "infographic",
+      "description": "Seven numbered horizontal rows stacked vertically, each row a dark navy rectangle with a single simple white icon on the left and a single short label on the right. Row 1: brain icon, label Attitude. Row 2: cross icon, label First Aid. Row 3: house icon, label Shelter. Row 4: flame icon, label Fire. Row 5: radio wave icon, label Signals. Row 6: water drop icon, label Water. Row 7: apple icon, label Food. Clean white icons on dark navy background. No extra text, borders only between rows."
+    },
+    {
+      "id": "backcountry-first-aid-scene",
+      "file": "req1a.md",
+      "description": "A teenager in a tan Scout shirt kneeling on a dirt trail, applying a beige elastic bandage wrap to another teenager's ankle who is seated on a log. A red nylon first aid pouch is open on the ground beside them showing bandages and antiseptic wipes. Dappled forest light."
+    },
+    {
+      "id": "biting-insects-grid",
+      "file": "req1a.md",
+      "style": "illustrated",
+      "description": "Four insects rendered as clean scientific illustrations arranged side by side in a horizontal row on a white background. Left to right: a magnified chigger mite (reddish-orange, eight legs), a black-legged deer tick (dark brown, oval body), a mosquito (slender gray body with white leg bands), and a biting gnat (tiny dark fly). Each insect drawn with clear linework, natural coloring, at consistent scale. Each labeled with its common name directly below. No other text."
+    },
+    {
+      "id": "scout-essentials-laid-out",
+      "file": "req1b.md",
+      "description": "Overhead flat-lay photograph of ten items arranged neatly on a wooden picnic table: a folding pocketknife, a small red first aid kit pouch, a blue water bottle, a yellow rain poncho folded small, a headlamp, trail mix in a bag, a tube of sunscreen, a folded topographic map with a baseplate compass on top, a small orange waterproof matchcase, and a silver whistle. Clean natural light."
+    },
+    {
+      "id": "trip-plan-on-table",
+      "file": "req1c.md",
+      "description": "A handwritten trip plan form on a clipboard resting on a wooden table, next to a folded topographic map, a green water bottle, and a baseplate compass. A hand holding a pencil reaches into frame to fill out a destination line on the form. Warm indoor light. The form shows lines for destination, return date, and contact information but no specific filled-in text is readable."
+    },
+    {
+      "id": "seven-priorities-infographic",
+      "file": "req2.md",
+      "style": "infographic",
+      "description": "Seven numbered horizontal rows stacked vertically like a ranked list. Each row is a dark green rectangle containing a number badge on the left and a simple white icon representing each priority. Row 1: thought bubble icon. Row 2: medical cross icon. Row 3: shelter triangle icon. Row 4: flame icon. Row 5: signal wave icon. Row 6: water drop icon. Row 7: apple icon. Dark green rows on charcoal background, clean and minimal. No text labels other than numbers."
+    },
+    {
+      "id": "scout-sitting-calmly-in-forest",
+      "file": "req3.md",
+      "description": "A teenager in khaki outdoor pants and a dark green long-sleeve shirt sitting on the forest floor with their back against a large pine tree, knees drawn up, one hand resting on a tan daypack beside them. Expression calm and focused, looking slightly off camera. Late afternoon light filtering through forest. No panic, no distress — deliberate calm."
+    },
+    {
+      "id": "survival-kit-and-first-aid-kit-open",
+      "file": "req4.md",
+      "description": "Two small pouches photographed open side by side on a wooden table. Left: a red nylon first aid pouch with adhesive bandages, moleskin sheet, antiseptic wipes, and elastic bandage visible. Right: an orange stuff sack with a silver whistle, orange ferro rod, folded silver emergency mylar blanket, and orange water purification tablet bottle visible. Natural window light from the side."
+    },
+    {
+      "id": "five-exposure-environments",
+      "file": "req5a.md",
+      "style": "comparison",
+      "description": "A grid of five equal rectangular photographs arranged two across then three across in two rows. Top row left: a snowy pine forest in winter, blue-gray light. Top row right: a steep wet mountain trail in rain with low clouds. Middle row left: a red sandstone desert canyon in bright sun. Middle row right: a treeless open ridge with visible wind-bent grasses. Bottom row center: a calm lake shoreline at dusk with mist. Each photograph is a distinct environment with no people, no text."
+    },
+    {
+      "id": "layering-system-diagram",
+      "file": "req5b.md",
+      "style": "diagram",
+      "description": "A clean side-view diagram of a standing human silhouette wearing three visible clothing layers. The innermost layer is labeled Base Layer with a short description below: manages moisture. The middle layer is labeled Mid Layer with a short description below: traps warmth. The outer layer is labeled Shell with a short description below: blocks wind and rain. Each layer is shown with a slightly different shade and a small bracket pointing to it with its label. Simple dark figure on white background, minimal linework."
+    },
+    {
+      "id": "bear-canister-and-hung-food-bag",
+      "file": "req5c.md",
+      "description": "A hard-sided cylindrical black bear canister sitting on a flat granite boulder in a forest camp setting, with pine trees in the background. The canister lid is visible. No people in frame. Clean daylight."
+    },
+    {
+      "id": "debris-hut-shelter-forest",
+      "file": "req5d.md",
+      "description": "A well-built debris hut in a forest: a wooden ridgepole propped at one end on a low forked stump with the other end on the ground, branch ribbing leaning against both sides forming a triangular tunnel, covered in a thick layer of dry brown leaves two to three feet deep. A person-sized dark opening at the near end. Morning light filtering through deciduous trees. No people, no gear, just the natural shelter structure."
+    },
+    {
+      "id": "snow-trench-cross-section",
+      "file": "req5d.md",
+      "style": "diagram",
+      "description": "A cutaway cross-section diagram of a snow trench shelter. A simple horizontal line represents the snow surface. Below it is a rectangular trench slightly wider and longer than a human figure lying down. The human figure is shown inside the trench as a simple outline. Above the trench, flat branches and a layer of snow form the roof. A small upward arrow at one end indicates the entrance. A small dot marks a vent hole at the top. Labels: Snow Surface, Sleeping Trench, Branch Roof, Entrance, Vent. Clean diagram on white background."
+    },
+    {
+      "id": "scout-building-debris-hut",
+      "file": "req5e.md",
+      "description": "A teenager in khaki work pants and a dark long-sleeve shirt carrying a large armload of dry brown leaves and dropping them onto the side of a half-built debris hut frame in a forest clearing. The debris hut ridgepole and branch ribbing structure are clearly visible beneath the partial leaf covering. Late afternoon golden light through the trees. Active, purposeful posture."
+    },
+    {
+      "id": "ferro-rod-sparking-tinder",
+      "file": "req6.md",
+      "description": "Close-up photograph of two hands against a dark background. The right hand holds a gray ferro rod at a low angle over a small bird's-nest-shaped tinder bundle of dry grass and shredded bark. The left hand holds the scraper. Bright orange sparks are shown flying from the rod toward the tinder nest in a short arc. Sharp focus on the sparks, tinder nest slightly soft focus."
+    },
+    {
+      "id": "signal-fire-smoke-column",
+      "file": "req7a.md",
+      "description": "A tall column of white-gray smoke rising from a forest clearing, visible above the dark green tree canopy against a bright blue sky with a few white clouds. The smoke column rises vertically then drifts slightly in the upper portion. No people visible. The scene communicates isolation and visibility — a signal fire in a remote landscape."
+    },
+    {
+      "id": "signal-mirror-technique",
+      "file": "req7b.md",
+      "description": "Close-up photograph of two hands holding a small rectangular signal mirror at eye level in an outdoor setting. The mirror's reflective surface faces outward with bright daylight reflecting off it. Forest background slightly out of focus. The aiming hole is visible as a small circle in the center of the mirror. One hand stabilizes the mirror edge, the other hand positions it for aiming. Natural daylight."
+    },
+    {
+      "id": "ground-to-air-signals-table",
+      "file": "req7c.md",
+      "style": "illustrated",
+      "description": "Six ground-to-air emergency signal symbols arranged in two rows of three on a clean white background. Each symbol is a large dark charcoal mark. Row 1: the letter V, the letter X, the letter N. Row 2: the letter Y, a simple right-pointing arrow, three short vertical parallel lines (representing need food and water). Below each symbol, a short label in small black type. Symbols are large and bold, occupying most of each cell. Clean, reference-chart style."
+    },
+    {
+      "id": "water-purification-methods",
+      "file": "req8.md",
+      "style": "comparison",
+      "description": "Three water purification methods photographed side by side on a flat rock surface near a stream. Left panel: a compact blue water filter pump. Center panel: a small amber glass bottle of iodine purification tablets beside a full water bottle. Right panel: a lightweight aluminum pot with steam rising from boiling water, a small camp stove visible beneath. Each panel occupies one third of the image. Natural outdoor daylight."
+    },
+    {
+      "id": "wild-plant-danger-illustration",
+      "file": "req9.md",
+      "style": "comparison",
+      "description": "A split-frame illustrated comparison. Left half: a cluster of blueberries on green leafy stems with a large green circle outline and no additional text. Right half: a cluster of dark purple pokeweed berries on a thick stem with similar leaves, with a large red circle-and-slash outline and no additional text. Both clusters rendered in the same detailed botanical illustration style at the same scale. No text labels in the image."
+    },
+    {
+      "id": "wilderness-career-collage",
+      "file": "req10.md",
+      "description": "A four-panel collage of photographs each showing a different wilderness career. Top left: a search and rescue volunteer in an orange jacket navigating a rocky mountain trail with a pack. Top right: a park ranger in a tan uniform at a trailhead information board. Bottom left: an outdoor instructor in outdoor gear demonstrating a first aid technique on a gravel campsite. Bottom right: a group of teenagers in Scout uniforms on a forest trail following an adult guide. Each panel is clear and unambiguous about the career it depicts."
+    },
+    {
+      "id": "wilderness-environments-comparison",
+      "file": "extended-learning.md",
+      "description": "A four-panel photograph collage of contrasting wilderness environments, each occupying one quarter of the image. Top left: old-growth forest with deep leaf litter and massive tree trunks. Top right: open alpine tundra above the treeline, rocky ground, low blue sky. Bottom left: red sandstone desert canyon with sheer walls and sparse vegetation. Bottom right: a calm lake shoreline at dusk with mist rising from the water. Each environment is photographed in natural conditions with no people."
+    }
+  ]
+}
