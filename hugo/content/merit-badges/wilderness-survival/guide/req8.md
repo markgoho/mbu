@@ -339,11 +339,11 @@ Giardia infections are called "Beaver Fever" because beavers are notorious for s
 Never drink untreated water from the wilderness, even if it looks clean. Always treat water using one of these three methods. Waterborne illnesses are serious and can linger for weeks even after diagnosis and treatment.
 {{< /drg/safety-first >}}
 
+{{< drg/image src="images/water-treatment-comparison.avif" alt="Three water treatment methods" >}}
+
+{{< drg/image src="images/water-treatment-comparison.avif" alt="Water before and after filtering" >}}
+
 {{< drg/next-page
     text="Water is essential, but food is also important for surviving extended situations"
     teaser="Learn how to identify edible plants safely in the wilderness."
     url="/merit-badges/wilderness-survival/guide/req9/" >}}
-
-{{< drg/image src="images/water-treatment-comparison.avif" alt="Three water treatment methods" >}}
-
-{{< drg/image src="images/water-treatment-comparison.avif" alt="Water before and after filtering" >}}

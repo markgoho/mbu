@@ -229,11 +229,11 @@ A raccoon's sense of touch is so sensitive that it can feel the difference betwe
     url="https://www.nps.gov/articles/living-with-bears.htm"
     description="National Park Service guide to understanding and preventing bear conflicts." >}}
 
+{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Top-down view of properly organized campsite" >}}
+
+{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Comparison of bear canister vs hanging food storage" >}}
+
 {{< drg/next-page
     text="With wildlife protection understood, you're ready to learn how to build shelters that protect you from the elements"
     teaser="Different environments require different shelter-building approaches."
     url="/merit-badges/wilderness-survival/guide/req5d/" >}}
-
-{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Top-down view of properly organized campsite" >}}
-
-{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Comparison of bear canister vs hanging food storage" >}}

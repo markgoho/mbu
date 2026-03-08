@@ -263,11 +263,11 @@ Never leave a fire unattended. Always have water or a way to extinguish nearby. 
 The ability to make fire from friction alone is what separates humans who can survive indefinitely in the wilderness from those who become desperate. Historically, the loss of fire-making ability was so critical that early human groups protected their fire like treasure—some groups never let a fire completely die out, instead carrying embers from place to place.
 {{< /drg/did-you-know >}}
 
+{{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Proper ferro rod striking technique" >}}
+
+{{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Three stages of fire building" >}}
+
 {{< drg/next-page
     text="Now that you can build fires, you're ready to learn how to signal rescuers using those fires and other methods"
     teaser="Ground-to-air signals are critical when rescue is needed."
     url="/merit-badges/wilderness-survival/guide/req7a/" >}}
-
-{{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Proper ferro rod striking technique" >}}
-
-{{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Three stages of fire building" >}}

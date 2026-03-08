@@ -158,9 +158,9 @@ The common thread across all exposure conditions: shelter is priority one. The s
 The most dangerous part of being lost isn't usually the first day—it's the first night. If you can survive the first night safely sheltered, you're far more likely to survive overall.
 {{< /drg/did-you-know >}}
 
+{{< drg/image src="images/exposure-conditions-shelter-types.avif" alt="Different shelter types for various weather" >}}
+
 {{< drg/next-page
     text="Now that you understand shelter needs for different conditions, learn the clothing strategies that work in each"
     teaser="Proper outdoor clothing means the difference between comfort and crisis."
     url="/merit-badges/wilderness-survival/guide/req5b/" >}}
-
-{{< drg/image src="images/exposure-conditions-shelter-types.avif" alt="Different shelter types for various weather" >}}

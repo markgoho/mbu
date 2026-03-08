@@ -190,7 +190,7 @@ guide_nav:
 2. **History: "Then and Now"** — "Then" block (historical) and "Now" block (modern). For modern subjects, reframe as "Origins" / "Where We Are Today."
 3. **"Get Ready!" motivational callout** — 1–3 encouraging sentences.
 4. **"Kinds of {Subject}"** — Catalog varieties/types/domains within the subject. Each gets a heading, 1–2 paragraph description, and Safety First callout if warranted.
-5. **Transition CTA** — Bridge sentence + `{{</* drg/next-page */>}}` shortcode linking to first requirement.
+5. **Transition CTA** — Bridge sentence + `{{</* drg/next-page */>}}` shortcode linking to first requirement. **This must always be the very last element on the page.**
 
 ### Requirement Pages
 
@@ -226,15 +226,17 @@ next_title: "{Next Page Title}"
    | Demonstrate / Show | Step-by-step descriptions, checklists, video references |
    | Identify / List | Representative examples with context, encourage finding their own |
    | Research / Discuss | Frame key questions, multiple perspectives, authoritative links |
-   | Create / Plan / Build | Planning frameworks, templates, example completed plans |
-   | Do / Perform | Preparation guidance, safety info, practical tips, planning templates |
+   | Create / Plan / Build | Planning frameworks, printable worksheets (see Worksheets section below) |
+   | Do / Perform | Preparation guidance, safety info, practical tips, printable worksheets |
    | Choose one of several | Present all options, help Scout choose, guidance for each path |
 
 3. **Content elements** — At least 2–3 different types per page (see shortcode catalog below).
 
 4. **Cross-references** — Link to related requirement pages with natural language.
 
-5. **Transition CTA** — Bridge sentence connecting to the next requirement.
+5. **Images** — 2–3 `drg/image` shortcodes per page, placed at natural visual break points within the educational content. Images must appear **before** the transition CTA, never after it.
+
+6. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no images, no shortcodes, no text).
 
 ### extended-learning.md — Extended Learning
 
@@ -334,7 +336,7 @@ Use `drg/be-prepared` for **scenario-based problem-solving** — situations the 
     url="https://www.youtube.com/watch?v=..." */>}}
 ```
 
-**IMPORTANT:** YouTube videos must ALWAYS use the `drg/video` shortcode, which embeds the video player directly on the page. Do NOT use `drg/external-link` for YouTube URLs — that renders as a plain link instead of an embed. Reserve `drg/external-link` for non-video resources (websites, articles, tools, organizations).
+**IMPORTANT:** YouTube videos should use the `drg/video` shortcode, which embeds the video player directly on the page. However, if a video has embedding disabled by its uploader (shows "Video unavailable" when embedded), use `drg/external-link` instead so users can still click through to watch it on YouTube. Reserve `drg/external-link` for non-video resources (websites, articles, tools, organizations) and for YouTube videos with embedding disabled.
 
 ### Video Verification Protocol
 
@@ -342,11 +344,13 @@ AI models hallucinate plausible-looking YouTube video IDs that don't correspond 
 
 1. **Never invent YouTube video IDs.** Do not guess or fabricate IDs. Every `drg/video` shortcode must reference a verified, existing video.
 
-2. **Verification method:** Before adding any `drg/video` shortcode, verify the video ID using noembed:
+2. **Verification method:** Before adding any `drg/video` shortcode, verify the video ID exists and is embeddable using YouTube's official oEmbed endpoint:
    ```
-   https://noembed.com/embed?url=https://www.youtube.com/watch?v={VIDEO_ID}
+   https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={VIDEO_ID}&format=json
    ```
-   If the JSON response contains `"error"`, the video does not exist — do not use it.
+   - **200 OK** with JSON → video exists and is embeddable, safe to use `drg/video`
+   - **401 Unauthorized** → video exists but embedding is disabled by the uploader. Use `drg/external-link` instead of `drg/video` so users can click through to YouTube.
+   - **404 Not Found** → video does not exist, is private, or was removed. Do not use it.
 
 3. **Finding real videos:** Use web search to find pages that embed relevant videos (e.g., search for "Red Cross CPR training video"), then extract video IDs from those pages. Prefer videos from reputable sources: American Red Cross, American Heart Association, CDC, Mayo Clinic, St John Ambulance, NOLS, REI, etc.
 
@@ -422,6 +426,9 @@ Use this test: **"Would a Scout actually print this out, fill it in by hand, and
 - Requirements that say "create a list" or "prepare a checklist" for field use
 - Requirements with tables or forms the Scout fills in over time
 - Requirements where the Scout needs counselor sign-off on a planning artifact
+- Any content where you find yourself writing a fillable template, form, or blank-field layout
+
+**Anti-pattern:** Never put fillable templates, blank forms, or plan worksheets inline in a requirement page as code blocks, markdown tables with blank cells, or plain text with underscores. If a Scout would fill it out, it must be a printable worksheet page linked via `drg/download`. Inline code blocks with `___` blanks are a sign that a worksheet is needed.
 
 ### Worksheet File Convention
 
@@ -593,7 +600,7 @@ The `style` field is optional — omit it for standard photo images. Use it when
 
 24. Verify Hugo build passes: `bun run build`
 25. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
-26. Verify all YouTube video embeds: `bun run verify:youtube-links` (expect zero broken links).
+26. Verify all YouTube video embeds: `BADGE_SLUGS="{slug}" bun run verify:youtube-links` (expect zero broken links). If any videos are flagged as "embed disabled," switch those from `drg/video` to `drg/external-link`.
 27. Verify all nav links and cross-references.
 28. Run through the quality checklist.
 
@@ -628,7 +635,7 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] Eagle Required displayed correctly based on `data.json`
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
-- [ ] All YouTube video embeds verified via noembed (zero broken links)
+- [ ] All YouTube video embeds verified via `verify:youtube-links` (zero broken links, embed-disabled videos switched to `drg/external-link`)
 
 ## Pull Request Workflow
 

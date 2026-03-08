@@ -333,11 +333,11 @@ Modern rescue relies on GPS and technology, but wilderness rescue teams still us
 - Climb to high point if possible
 {{< /drg/be-prepared >}}
 
+{{< drg/image src="images/signaling-tools-comparison.avif" alt="Signaling tools compared" >}}
+
+{{< drg/image src="images/signaling-tools-comparison.avif" alt="Signal method effectiveness chart" >}}
+
 {{< drg/next-page
     text="You've now learned all ten merit badge requirements. This final section provides additional resources and deeper dives into wilderness survival topics"
     teaser="Continue your education with specialized topics and real-world survival knowledge."
     url="/merit-badges/wilderness-survival/guide/extended-learning/" >}}
-
-{{< drg/image src="images/signaling-tools-comparison.avif" alt="Signaling tools compared" >}}
-
-{{< drg/image src="images/signaling-tools-comparison.avif" alt="Signal method effectiveness chart" >}}

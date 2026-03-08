@@ -238,11 +238,11 @@ You hear a plane and realize rescuers might be searching.
 - **Note the time and direction:** Tell your rescue team which aircraft and when you signaled.
 {{< /drg/be-prepared >}}
 
+{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Signal mirror aiming technique" >}}
+
+{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Commercial vs improvised signal mirrors" >}}
+
 {{< drg/next-page
     text="Signal mirrors and ground-level signals are combined with knowledge of actual aviation signals"
     teaser="Pilots recognize specific ground patterns that communicate your status."
     url="/merit-badges/wilderness-survival/guide/req7c/" >}}
-
-{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Signal mirror aiming technique" >}}
-
-{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Commercial vs improvised signal mirrors" >}}

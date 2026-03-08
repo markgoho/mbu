@@ -239,9 +239,9 @@ You took a wrong turn on a trail and realize you're lost. Panic is setting in.
 Memorize the seven priorities. In a real emergency, you won't have time to think—you'll act on what you've internalized. The priorities are ranked by what kills fastest, not by what matters most psychologically.
 {{< /drg/tip >}}
 
+{{< drg/image src="images/seven-priorities-visual-hierarchy.avif" alt="Seven priorities ranked by survival timeframe" >}}
+
 {{< drg/next-page
     text="Knowing the priorities is one thing; avoiding panic when they're needed is another"
     teaser="Learn how to stay calm and maintain morale in a crisis."
     url="/merit-badges/wilderness-survival/guide/req3/" >}}
-
-{{< drg/image src="images/seven-priorities-visual-hierarchy.avif" alt="Seven priorities ranked by survival timeframe" >}}

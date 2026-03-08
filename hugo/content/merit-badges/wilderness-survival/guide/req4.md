@@ -149,9 +149,9 @@ The items in a good first aid and survival kit rarely get used on any single tri
 Store your kits in locations where you'll actually have them—one in your backpack, one in your car, one at home. If they're not with you, they can't help you.
 {{< /drg/tip >}}
 
+{{< drg/image src="images/first-aid-kit-organized.avif" alt="Well-organized first aid kit" >}}
+
 {{< drg/next-page
     text="With kits assembled and their uses understood, you're ready to tackle the most visible challenge of survival"
     teaser="Learn how to protect yourself from exposure and build shelter."
     url="/merit-badges/wilderness-survival/guide/req5a/" >}}
-
-{{< drg/image src="images/first-aid-kit-organized.avif" alt="Well-organized first aid kit" >}}

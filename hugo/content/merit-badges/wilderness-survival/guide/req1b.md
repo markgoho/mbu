@@ -157,9 +157,9 @@ You're hiking and accidentally leave your pack at camp, or it falls into a strea
 Don't wait until you're in the wilderness to figure out your survival kit. Build it at home, test it, and make sure you know how to use every item. Familiarity breeds confidence and competence.
 {{< /drg/tip >}}
 
+{{< drg/image src="images/scout-essentials-10-items.avif" alt="Scout Essentials laid out and labeled" >}}
+
 {{< drg/next-page
     text="With your kit assembled, the next step is planning your trip so you never need it"
     teaser="Learn how a trip plan prevents wilderness survival situations."
     url="/merit-badges/wilderness-survival/guide/req1c/" >}}
-
-{{< drg/image src="images/scout-essentials-10-items.avif" alt="Scout Essentials laid out and labeled" >}}

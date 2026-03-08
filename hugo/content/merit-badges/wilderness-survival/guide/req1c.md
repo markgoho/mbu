@@ -77,53 +77,14 @@ A good trip plan identifies bailout points—places where you can turn back if t
 
 ## Creating Your Trip Plan
 
-Your trip plan doesn't need to be fancy. A simple form works fine. Here's what to include:
+Your trip plan doesn't need to be fancy. A simple form works fine — use the printable worksheet below to get started. The key is covering all the bases: who's going, where, when, what you're bringing, and what to do if things go wrong.
 
-**Trip Plan Template:**
+{{< drg/download
+    title="Trip Plan Worksheet"
+    url="/merit-badges/wilderness-survival/guide/trip-plan/"
+    type="printable" >}}
 
-```
-TRIP PLAN
-
-Trip Name: ___________________
-Dates: ___________________
-
-PARTICIPANTS:
-Name: __________________ Age: ___ Emergency Contact: __________________
-Name: __________________ Age: ___ Emergency Contact: __________________
-(repeat for each person)
-
-ROUTE:
-Starting Point: __________________
-Destination: __________________
-Route Description: __________________
-Distance: _____ miles | Estimated Time: _____ hours
-
-TIMELINE:
-Departure Time: _____ | Expected Return: _____
-Checkpoint 1: ______________ | Estimated Time: _____
-Checkpoint 2: ______________ | Estimated Time: _____
-
-VEHICLE:
-License Plate: _____ | Parking Location: __________________
-
-COMMUNICATION:
-Contact Person: __________________ | Phone: __________________
-Cell Service: Yes / No / Unknown
-Devices: __________________
-
-WEATHER:
-Forecast: __________________
-Bailout Plan if Weather Deteriorates: __________________
-
-GEAR CHECKLIST:
-☐ Shelter ☐ Water/Treatment ☐ Food ☐ First Aid ☐ Navigation
-☐ Clothing ☐ Fire-Starting ☐ Light ☐ Repair Kit ☐ Communication
-
-SPECIAL NOTES:
-__________________
-```
-
-Leave this form with a responsible adult who will contact rescuers if you don't return by your planned time. Give them a specific time after which they should alert authorities (e.g., "If we're not back by 6 PM, call the ranger station").
+Leave the completed form with a responsible adult who will contact rescuers if you don't return by your planned time. Give them a specific time after which they should alert authorities (e.g., "If we're not back by 6 PM, call the ranger station").
 
 {{< drg/video
     title="How to Plan an Adventure | Plan a Camping Trip"
@@ -170,9 +131,9 @@ A detailed trip plan has saved countless lives. Rescue teams can focus on a spec
 Make trip planning a habit for every outing, no matter how short or how familiar the area. A day hike that goes wrong is just as much an emergency as a multi-day backpacking trip. The best time to prevent an emergency is before you leave.
 {{< /drg/tip >}}
 
+{{< drg/image src="images/trip-planning-checklist.avif" alt="Trip plan checklist review" >}}
+
 {{< drg/next-page
     text="With hazards understood, kits assembled, and trips planned, you're ready to learn the foundation of all survival decisions"
     teaser="the seven priorities of survival."
     url="/merit-badges/wilderness-survival/guide/req2/" >}}
-
-{{< drg/image src="images/trip-planning-checklist.avif" alt="Trip plan checklist review" >}}

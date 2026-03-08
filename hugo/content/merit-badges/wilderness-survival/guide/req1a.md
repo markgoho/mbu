@@ -116,9 +116,10 @@ A foreign object in your eye, a scratch to the cornea, or exposure to harmful su
 
 **First Aid:** For a foreign object, rinse the eye gently with clean water or saline solution. Blink repeatedly to help flush it out. Don't rub. If the object won't come out, cover the eye loosely and evacuate. For chemical exposure, flush with water for at least 15 minutes. For a scratched cornea, cover the eye and seek medical help.
 
-{{< drg/video
+{{< drg/external-link
     title="5 Ways To Safely Remove Something Stuck In Your Eye"
-    url="https://www.youtube.com/watch?v=uJFZPFsHcCE" >}}
+    url="https://www.youtube.com/watch?v=uJFZPFsHcCE"
+    description="Video demonstrating safe techniques for removing foreign objects from your eye." >}}
 
 ## Ankle and Knee Sprains
 
@@ -273,9 +274,9 @@ Only a handful of venomous snakes live in North America (rattlesnakes, cottonmou
 Prevention is always better than treatment. Most backcountry injuries are avoidable through awareness, proper gear, and good judgment. The best first aid kit in the world won't help if you make reckless decisions.
 {{< /drg/tip >}}
 
+{{< drg/image src="images/first-aid-kit-organized.avif" alt="A well-organized first aid kit" >}}
+
 {{< drg/next-page
     text="Now that you understand the hazards, learn how the Scout Essentials form the foundation of your survival kit"
     teaser="and how they address each of these dangers."
     url="/merit-badges/wilderness-survival/guide/req1b/" >}}
-
-{{< drg/image src="images/first-aid-kit-organized.avif" alt="A well-organized first aid kit" >}}

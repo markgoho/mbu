@@ -289,11 +289,11 @@ These ground-to-air signals have saved countless lives. During disasters, strand
 - [ ] Combination: Use symbols + bright cloth + mirror for maximum visibility
 {{< /drg/checklist >}}
 
+{{< drg/image src="images/ground-to-air-signals.avif" alt="Aerial view of ground-to-air signals" >}}
+
+{{< drg/image src="images/ground-to-air-signals.avif" alt="Ground signal size visibility comparison" >}}
+
 {{< drg/next-page
     text="With signaling mastered, you're ready for the next survival priority: finding and treating water"
     teaser="Water is life in the wilderness, and purification is critical."
     url="/merit-badges/wilderness-survival/guide/req8/" >}}
-
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Aerial view of ground-to-air signals" >}}
-
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Ground signal size visibility comparison" >}}

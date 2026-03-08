@@ -228,11 +228,11 @@ You're 4 miles from the trailhead and a sudden downpour soaks you.
 - **Once sheltered, change:** Remove wet layers and put on anything dry—an emergency jacket, dry socks, extra shirt.
 {{< /drg/be-prepared >}}
 
+{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Clothing layers for different weather conditions" >}}
+
+{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Hiking boots for different conditions" >}}
+
 {{< drg/next-page
     text="Now that you know the clothing systems for different weather, learn how to protect your shelter and camp from wildlife"
     teaser="Bears and raccoons require specific food and camp management strategies."
     url="/merit-badges/wilderness-survival/guide/req5c/" >}}
-
-{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Clothing layers for different weather conditions" >}}
-
-{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Hiking boots for different conditions" >}}

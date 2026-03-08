@@ -235,11 +235,11 @@ Bring a journal or notebook. During the night (use a headlamp if you wake up), w
 Many Scouts find that their first shelter-building attempt is uncomfortable or has problems—and that's exactly the point. The requirement asks you to improvise and learn through experience. A Scout who builds a flawed shelter, discovers the flaw, and learns from it has fulfilled the requirement better than one who copies a perfect design from a book.
 {{< /drg/did-you-know >}}
 
+{{< drg/image src="images/shelter-building-in-progress.avif" alt="Scout building a debris shelter from branches and leaves" >}}
+
+{{< drg/image src="images/shelter-building-in-progress.avif" alt="Interior of a completed shelter with bedding arrangement" >}}
+
 {{< drg/next-page
     text="With shelter mastered, you're ready to move on to the next survival priority after protection from the elements"
     teaser="Fire building is the next critical skill, using methods beyond matches."
     url="/merit-badges/wilderness-survival/guide/req6/" >}}
-
-{{< drg/image src="images/shelter-building-in-progress.avif" alt="Scout building a debris shelter from branches and leaves" >}}
-
-{{< drg/image src="images/shelter-building-in-progress.avif" alt="Interior of a completed shelter with bedding arrangement" >}}

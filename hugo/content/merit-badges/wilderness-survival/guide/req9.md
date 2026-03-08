@@ -299,11 +299,11 @@ Native Americans cultivated and managed wild plant communities for thousands of 
 Never eat a wild plant unless you are 100% certain of its identification. Poison is not always obvious. Some deadly plants taste fine until symptoms appear (sometimes hours later). When in doubt, go without eating rather than risking poisoning.
 {{< /drg/safety-first >}}
 
+{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Grid of edible plants with identification details" >}}
+
+{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Dandelion and cattail plants comparison" >}}
+
 {{< drg/next-page
     text="Now that you know how to find and prepare food from plants, you're ready for the final part of signaling"
     teaser="Learning additional rescue communication methods completes your survival knowledge."
     url="/merit-badges/wilderness-survival/guide/req10/" >}}
-
-{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Grid of edible plants with identification details" >}}
-
-{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Dandelion and cattail plants comparison" >}}

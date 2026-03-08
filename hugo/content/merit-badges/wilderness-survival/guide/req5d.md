@@ -222,11 +222,11 @@ Snow is so good at insulation that people have survived outdoor temperatures of 
     url="https://youtu.be/wTQqrECMkPE"
     description="Comprehensive video on building debris shelters and other forest survival structures." >}}
 
+{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Three forest shelter types side-by-side" >}}
+
+{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Snow cave cross-section" >}}
+
 {{< drg/next-page
     text="Now that you know how to describe shelter-building, you're ready to actually build one and spend a night testing it"
     teaser="Building a shelter from scratch and sleeping in it is the final shelter requirement."
     url="/merit-badges/wilderness-survival/guide/req5e/" >}}
-
-{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Three forest shelter types side-by-side" >}}
-
-{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Snow cave cross-section" >}}

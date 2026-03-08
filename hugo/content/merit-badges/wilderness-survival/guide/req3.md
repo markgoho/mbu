@@ -187,9 +187,9 @@ Practice staying calm before you need to. Meditating, box breathing, or delibera
     url="https://www.youtube.com/watch?v=_mt0BtDDImU"
     description="Practical guidance on staying calm when lost." >}}
 
+{{< drg/image src="images/panic-vs-calm-decision-making.avif" alt="Scout in sheltered position appearing calm" >}}
+
 {{< drg/next-page
     text="With panic managed and morale maintained, you're ready to prepare the tools that keep you alive"
     teaser="Build and organize your first aid kit and survival kit."
     url="/merit-badges/wilderness-survival/guide/req4/" >}}
-
-{{< drg/image src="images/panic-vs-calm-decision-making.avif" alt="Scout in sheltered position appearing calm" >}}

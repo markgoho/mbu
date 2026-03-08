@@ -250,11 +250,11 @@ Rescue teams assume a lost person will stay near their last known position. Your
 - [ ] Never leave fire unattended
 {{< /drg/checklist >}}
 
+{{< drg/image src="images/ground-to-air-signals.avif" alt="Ground-to-air signals diagram" >}}
+
+{{< drg/image src="images/ground-to-air-signals.avif" alt="Scout with whistle and ground signals" >}}
+
 {{< drg/next-page
     text="Ground signals are important, but a signal mirror can communicate to rescuers miles away"
     teaser="Learn how to use and improvise a signal mirror."
     url="/merit-badges/wilderness-survival/guide/req7b/" >}}
-
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Ground-to-air signals diagram" >}}
-
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Scout with whistle and ground signals" >}}
