@@ -335,7 +335,7 @@ Modern rescue relies on GPS and technology, but wilderness rescue teams still us
 
 {{< drg/image src="images/signaling-tools-comparison.avif" alt="Signaling tools compared" >}}
 
-{{< drg/image src="images/signaling-tools-comparison.avif" alt="Signal method effectiveness chart" >}}
+{{< drg/image src="images/signal-effectiveness-range.avif" alt="Bar chart showing effective range of different signaling methods" >}}
 
 {{< drg/next-page
     text="You've now learned all ten merit badge requirements. This final section provides additional resources and deeper dives into wilderness survival topics"

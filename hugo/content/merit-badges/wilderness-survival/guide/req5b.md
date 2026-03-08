@@ -230,7 +230,7 @@ You're 4 miles from the trailhead and a sudden downpour soaks you.
 
 {{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Clothing layers for different weather conditions" >}}
 
-{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Hiking boots for different conditions" >}}
+{{< drg/image src="images/footwear-terrain-selection.avif" alt="Four types of hiking footwear for different terrain and conditions" >}}
 
 {{< drg/next-page
     text="Now that you know the clothing systems for different weather, learn how to protect your shelter and camp from wildlife"

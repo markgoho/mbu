@@ -224,7 +224,7 @@ Snow is so good at insulation that people have survived outdoor temperatures of 
 
 {{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Three forest shelter types side-by-side" >}}
 
-{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Snow cave cross-section" >}}
+{{< drg/image src="images/snow-cave-cross-section.avif" alt="Cross-section diagram of a snow cave showing entrance tunnel, sleeping platform, and ventilation" >}}
 
 {{< drg/next-page
     text="Now that you know how to describe shelter-building, you're ready to actually build one and spend a night testing it"

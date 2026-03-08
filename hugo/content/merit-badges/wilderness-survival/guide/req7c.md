@@ -289,9 +289,9 @@ These ground-to-air signals have saved countless lives. During disasters, strand
 - [ ] Combination: Use symbols + bright cloth + mirror for maximum visibility
 {{< /drg/checklist >}}
 
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Aerial view of ground-to-air signals" >}}
+{{< drg/image src="images/signal-fire-smoke-column.avif" alt="Signal fire on a hilltop producing a tall column of white smoke" >}}
 
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Ground signal size visibility comparison" >}}
+{{< drg/image src="images/ground-signal-size-visibility.avif" alt="Bird's-eye view of a large X signal with size measurements for air visibility" >}}
 
 {{< drg/next-page
     text="With signaling mastered, you're ready for the next survival priority: finding and treating water"

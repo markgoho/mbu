@@ -5,7 +5,6 @@
     {
       "id": "scout-in-wilderness-shelter",
       "file": "_index.md",
-      "style": "photo",
       "description": "Scout sitting inside a completed natural shelter made from branches and leaves, looking prepared and calm"
     },
     {
@@ -15,15 +14,14 @@
       "description": "Visual ranking of the five priorities of wilderness survival with icons showing the order and brief description of each"
     },
     {
-      "id": "backcountry-injuries-identification",
+      "id": "backcountry-hazards-overview",
       "file": "req1a.md",
       "style": "illustrated",
-      "description": "Grid showing 8 different wilderness injuries side-by-side (dehydration signs, hypothermia stages, blister formation, snake bite, spider bite, etc.) with clear identifying features labeled"
+      "description": "Grid showing common backcountry hazards: a thunderstorm over mountains, a coiled rattlesnake, a swollen river crossing, a steep rocky trail with loose scree, and a dense fog-covered forest, each scene clearly labeled"
     },
     {
       "id": "scout-essentials-10-items",
       "file": "req1b.md",
-      "style": "photo",
       "description": "All 10 Scout Essentials laid out on a backpack, each item clearly visible and organized in order"
     },
     {
@@ -47,7 +45,6 @@
     {
       "id": "first-aid-kit-organized",
       "file": "req4.md",
-      "style": "photo",
       "description": "Well-organized first aid kit in waterproof pouch with compartments showing bandages, medications, tools, and items clearly visible"
     },
     {
@@ -63,10 +60,22 @@
       "description": "Three columns showing clothing layers for cold weather, hot weather, and wet weather conditions, each column displaying layered outfit from base to shell"
     },
     {
+      "id": "footwear-terrain-selection",
+      "file": "req5b.md",
+      "style": "comparison",
+      "description": "Four types of hiking footwear side-by-side: lightweight trail runners for dry trails, waterproof hiking boots for wet terrain, insulated winter boots for snow, and sandals crossed out with an X for wilderness survival"
+    },
+    {
       "id": "bear-camp-setup-diagram",
       "file": "req5c.md",
       "style": "diagram",
       "description": "Top-down view of properly organized campsite showing sleeping area, cooking area, food storage location with distances marked, and bear/raccoon protection measures"
+    },
+    {
+      "id": "food-storage-methods-comparison",
+      "file": "req5c.md",
+      "style": "comparison",
+      "description": "Two food storage methods side-by-side: a bear canister sitting on the ground next to a tree, and a bear hang with a stuff sack suspended from a rope over a high tree branch, each labeled with pros and cons"
     },
     {
       "id": "forest-shelter-types-comparison",
@@ -75,16 +84,31 @@
       "description": "Three forest shelter types displayed side-by-side: lean-to shelter, debris shelter (A-frame), and natural shelter with rock overhang, each labeled with construction details"
     },
     {
+      "id": "snow-cave-cross-section",
+      "file": "req5d.md",
+      "style": "diagram",
+      "description": "Cross-section cutaway diagram of a snow cave showing the entrance tunnel angled downward, the raised sleeping platform above the entrance level, a ventilation hole in the ceiling, and smooth domed interior walls"
+    },
+    {
       "id": "shelter-building-in-progress",
       "file": "req5e.md",
-      "style": "photo",
-      "description": "Scout actively building a debris shelter, showing the framework of branches leaning against a ridgepole and bundles of leaves/insulation nearby"
+      "description": "Scout actively building a debris shelter, showing the framework of branches leaning against a ridgepole and bundles of leaves and insulation nearby"
+    },
+    {
+      "id": "completed-shelter-interior",
+      "file": "req5e.md",
+      "description": "Interior view looking into a completed debris shelter showing a thick layer of dry leaves and pine needles as bedding on the ground, with daylight filtering through gaps in the branch walls"
     },
     {
       "id": "ferro-rod-striking-technique",
       "file": "req6.md",
-      "style": "photo",
       "description": "Scout demonstrating proper ferro rod striking technique over a prepared tinder bundle, showing the correct striking angle and spark generation"
+    },
+    {
+      "id": "fire-building-stages",
+      "file": "req6.md",
+      "style": "diagram",
+      "description": "Three stages of building a fire shown left to right: first a small tinder bundle with glowing ember, then thin kindling sticks arranged in a teepee shape over flames, then a mature campfire with larger fuel logs burning steadily"
     },
     {
       "id": "ground-to-air-signals",
@@ -93,10 +117,32 @@
       "description": "Aerial view showing five large ground-to-air signals (X, V, arrow, F, checkmark) each properly arranged and labeled, visible from above as they would appear to aircraft"
     },
     {
+      "id": "whistle-signal-patterns",
+      "file": "req7a.md",
+      "style": "diagram",
+      "description": "Simple diagram showing three whistle signal patterns: one blast means stop, two blasts means come to me, three blasts means emergency help needed, each pattern shown as sound wave icons with a label"
+    },
+    {
       "id": "signal-mirror-aiming-diagram",
       "file": "req7b.md",
       "style": "diagram",
       "description": "Top-down view showing sun position, mirror angle, and target alignment for proper signal mirror technique with angles and light path clearly marked"
+    },
+    {
+      "id": "improvised-signal-devices",
+      "file": "req7b.md",
+      "description": "Several improvised signaling devices arranged on a rock: a polished aluminum can bottom reflecting sunlight, a CD disc catching light, a glass lens, and a piece of shiny metal, all glistening in bright daylight"
+    },
+    {
+      "id": "signal-fire-smoke-column",
+      "file": "req7c.md",
+      "description": "A signal fire on a hilltop clearing producing a tall thick column of white smoke rising high into a clear blue sky, with green pine branches piled next to the fire for smoke generation"
+    },
+    {
+      "id": "ground-signal-size-visibility",
+      "file": "req7c.md",
+      "style": "diagram",
+      "description": "Bird's-eye view showing a large X signal on open ground made from dark logs, with measurement markers showing the signal is at least 10 feet across, surrounded by contrasting lighter terrain for maximum visibility from the air"
     },
     {
       "id": "water-treatment-comparison",
@@ -105,21 +151,36 @@
       "description": "Three water treatment methods displayed side-by-side: boiling with pot and fire, purification tablets in water, and filter pump with labeled steps for each method"
     },
     {
+      "id": "water-filtration-before-after",
+      "file": "req8.md",
+      "description": "Two clear water bottles held side-by-side in bright sunlight: left bottle contains cloudy brownish water scooped from a stream, right bottle contains crystal clear filtered water, dramatic visual contrast"
+    },
+    {
       "id": "edible-plant-identification-grid",
       "file": "req9.md",
       "style": "illustrated",
       "description": "Grid showing five common edible plants with detailed illustrations of leaves, flowers, roots, and growth patterns, each plant clearly labeled with name and edible parts highlighted"
     },
     {
+      "id": "dandelion-cattail-detail",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "Detailed botanical illustration showing two plants side-by-side: a dandelion with bright yellow flower, jagged leaves, and long taproot, and a cattail with tall brown seedhead, long flat leaves, and thick rhizome, edible parts highlighted in green"
+    },
+    {
       "id": "signaling-tools-comparison",
       "file": "req10.md",
-      "style": "photo",
       "description": "Five signaling tools arranged together: cell phone, personal locator beacon, whistle, signal mirror, and flashlight, each clearly visible and labeled"
+    },
+    {
+      "id": "signal-effectiveness-range",
+      "file": "req10.md",
+      "style": "diagram",
+      "description": "Simple horizontal bar chart showing effective range of different signaling methods: personal locator beacon reaches worldwide, signal mirror visible up to 10 miles, signal fire visible up to 5 miles, whistle audible up to 1 mile, voice carries a few hundred yards"
     },
     {
       "id": "rescue-coordination-center",
       "file": "extended-learning.md",
-      "style": "photo",
       "description": "Modern search and rescue coordination center with personnel working at desks with maps, radios, and technology coordinating rescue operations"
     }
   ]

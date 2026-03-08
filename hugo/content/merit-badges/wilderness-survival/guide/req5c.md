@@ -231,7 +231,7 @@ A raccoon's sense of touch is so sensitive that it can feel the difference betwe
 
 {{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Top-down view of properly organized campsite" >}}
 
-{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Comparison of bear canister vs hanging food storage" >}}
+{{< drg/image src="images/food-storage-methods-comparison.avif" alt="Bear canister vs bear hang food storage methods compared" >}}
 
 {{< drg/next-page
     text="With wildlife protection understood, you're ready to learn how to build shelters that protect you from the elements"

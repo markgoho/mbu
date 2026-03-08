@@ -301,7 +301,7 @@ Never eat a wild plant unless you are 100% certain of its identification. Poison
 
 {{< drg/image src="images/edible-plant-identification-grid.avif" alt="Grid of edible plants with identification details" >}}
 
-{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Dandelion and cattail plants comparison" >}}
+{{< drg/image src="images/dandelion-cattail-detail.avif" alt="Detailed botanical illustration of dandelion and cattail with edible parts highlighted" >}}
 
 {{< drg/next-page
     text="Now that you know how to find and prepare food from plants, you're ready for the final part of signaling"

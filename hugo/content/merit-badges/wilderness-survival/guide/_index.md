@@ -122,6 +122,8 @@ You're ready to dive into the skills. Start with understanding the hazards of ba
 
 {{< drg/image src="images/scout-in-wilderness-shelter.avif" alt="Scout sitting in a completed natural shelter made from branches and leaves" >}}
 
+{{< drg/image src="images/wilderness-survival-priorities-chart.avif" alt="Visual ranking of the five priorities of wilderness survival" >}}
+
 {{< drg/next-page
     text="Begin by learning the injuries and conditions that most commonly threaten backcountry travelers"
     teaser="and how to prevent and treat them."

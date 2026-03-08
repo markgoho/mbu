@@ -341,7 +341,7 @@ Never drink untreated water from the wilderness, even if it looks clean. Always 
 
 {{< drg/image src="images/water-treatment-comparison.avif" alt="Three water treatment methods" >}}
 
-{{< drg/image src="images/water-treatment-comparison.avif" alt="Water before and after filtering" >}}
+{{< drg/image src="images/water-filtration-before-after.avif" alt="Water before and after filtering showing dramatic clarity difference" >}}
 
 {{< drg/next-page
     text="Water is essential, but food is also important for surviving extended situations"

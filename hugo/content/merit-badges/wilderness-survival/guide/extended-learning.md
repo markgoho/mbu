@@ -174,3 +174,5 @@ When you build a shelter, you impact the land. Camp responsibly. Dismantle your 
 ---
 
 Wilderness Survival is foundational. You now have tools to keep yourself alive in emergencies. The next chapter is doing this repeatedly, in different conditions, and helping others develop these skills. The wilderness will teach you humility, resilience, and respect for nature. Pay attention. The learning never stops.
+
+{{< drg/image src="images/rescue-coordination-center.avif" alt="Modern search and rescue coordination center with personnel coordinating operations" >}}

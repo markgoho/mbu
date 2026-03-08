@@ -240,7 +240,7 @@ You hear a plane and realize rescuers might be searching.
 
 {{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Signal mirror aiming technique" >}}
 
-{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Commercial vs improvised signal mirrors" >}}
+{{< drg/image src="images/improvised-signal-devices.avif" alt="Improvised signal devices: polished can bottom, CD, glass lens, and shiny metal" >}}
 
 {{< drg/next-page
     text="Signal mirrors and ground-level signals are combined with knowledge of actual aviation signals"

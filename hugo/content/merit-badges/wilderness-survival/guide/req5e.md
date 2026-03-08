@@ -237,7 +237,7 @@ Many Scouts find that their first shelter-building attempt is uncomfortable or h
 
 {{< drg/image src="images/shelter-building-in-progress.avif" alt="Scout building a debris shelter from branches and leaves" >}}
 
-{{< drg/image src="images/shelter-building-in-progress.avif" alt="Interior of a completed shelter with bedding arrangement" >}}
+{{< drg/image src="images/completed-shelter-interior.avif" alt="Interior of a completed debris shelter with leaf and pine needle bedding" >}}
 
 {{< drg/next-page
     text="With shelter mastered, you're ready to move on to the next survival priority after protection from the elements"

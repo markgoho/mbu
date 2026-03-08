@@ -265,7 +265,7 @@ The ability to make fire from friction alone is what separates humans who can su
 
 {{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Proper ferro rod striking technique" >}}
 
-{{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Three stages of fire building" >}}
+{{< drg/image src="images/fire-building-stages.avif" alt="Three stages of fire building from tinder to kindling to fuel" >}}
 
 {{< drg/next-page
     text="Now that you can build fires, you're ready to learn how to signal rescuers using those fires and other methods"

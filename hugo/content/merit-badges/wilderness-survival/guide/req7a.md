@@ -252,7 +252,7 @@ Rescue teams assume a lost person will stay near their last known position. Your
 
 {{< drg/image src="images/ground-to-air-signals.avif" alt="Ground-to-air signals diagram" >}}
 
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Scout with whistle and ground signals" >}}
+{{< drg/image src="images/whistle-signal-patterns.avif" alt="Whistle signal patterns: one blast stop, two blasts come here, three blasts emergency" >}}
 
 {{< drg/next-page
     text="Ground signals are important, but a signal mirror can communicate to rescuers miles away"

@@ -274,7 +274,7 @@ Only a handful of venomous snakes live in North America (rattlesnakes, cottonmou
 Prevention is always better than treatment. Most backcountry injuries are avoidable through awareness, proper gear, and good judgment. The best first aid kit in the world won't help if you make reckless decisions.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/first-aid-kit-organized.avif" alt="A well-organized first aid kit" >}}
+{{< drg/image src="images/backcountry-hazards-overview.avif" alt="Common backcountry hazards including storms, wildlife, river crossings, and rugged terrain" >}}
 
 {{< drg/next-page
     text="Now that you understand the hazards, learn how the Scout Essentials form the foundation of your survival kit"
