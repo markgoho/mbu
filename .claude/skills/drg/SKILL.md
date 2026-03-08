@@ -234,7 +234,7 @@ next_title: "{Next Page Title}"
 
 4. **Cross-references** — Link to related requirement pages with natural language.
 
-5. **Images** — 2–3 `drg/image` shortcodes per page, placed at natural visual break points within the educational content. Images must appear **before** the transition CTA, never after it.
+5. **Images** — 1–2 `drg/image` shortcodes per page, placed at natural visual break points within the educational content. Images must appear **before** the transition CTA, never after it. **Every shortcode must reference a unique image** — never use the same `src` value in more than one shortcode across the entire guide.
 
 6. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no images, no shortcodes, no text).
 
@@ -367,7 +367,9 @@ During content writing, use HTML comment placeholders instead of image shortcode
 
 The optional `style:` hint indicates which image generation style to use (see Image Style Selection below). If omitted, the image defaults to `photo` style.
 
-Aim for 2-3 images per page at natural visual break points.
+Aim for 1-2 images per page at natural visual break points. Target **20–35 unique images** for a full guide. Every image must depict a **distinct subject** with a **distinct educational purpose** — never reuse the same image file in multiple shortcodes.
+
+**Anti-pattern:** Placing two `drg/image` shortcodes with the same `src` on a page (or anywhere in the guide). If a page has two image shortcodes, they must reference two different image files from the manifest.
 
 **Uniform rule:** When an image depicts Scouts or teenagers in a Scouting context (meetings, service projects, badge activities, interviews with professionals), **default to describing them in a clean Scout uniform** unless the activity would genuinely damage a uniform. For messy activities (painting, gardening, cooking over a fire), describe Scouts in work clothes instead. Scout uniforms must always appear clean and presentable — no paint, mud, stains, or visible wear. Never depict the uniform as dirty or damaged.
 
@@ -559,7 +561,7 @@ For each page:
 
 **You MUST complete this phase — do not stop after writing content.**
 
-20. Create `images.json` in the guide directory with 2–3 images per page.
+20. Create `images.json` in the guide directory. Target 20–35 unique images total (roughly 1–2 per requirement page, 2–3 for the introduction). **Every entry in `images.json` must have a unique `id`, and every `<!-- IMAGE: -->` placeholder in the content must correspond to exactly one manifest entry.** The total number of manifest entries must equal the total number of image placeholders across all pages — no duplicates, no orphans.
 
 ```json
 {
@@ -600,9 +602,11 @@ The `style` field is optional — omit it for standard photo images. Use it when
 
 24. Verify Hugo build passes: `bun run build`
 25. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
-26. Verify all YouTube video embeds: `BADGE_SLUGS="{slug}" bun run verify:youtube-links` (expect zero broken links). If any videos are flagged as "embed disabled," switch those from `drg/video` to `drg/external-link`.
-27. Verify all nav links and cross-references.
-28. Run through the quality checklist.
+26. **Verify no duplicate image sources:** grep all `drg/image` shortcodes and confirm every `src` value is unique across the entire guide. If any `src` appears more than once, it means a manifest entry was reused — create a new unique image for each duplicate.
+27. **Verify image count parity:** the number of `drg/image` shortcodes across all `.md` files must equal the number of entries in `images.json`. If they differ, reconcile before proceeding.
+28. Verify all YouTube video embeds: `BADGE_SLUGS="{slug}" bun run verify:youtube-links` (expect zero broken links). If any videos are flagged as "embed disabled," switch those from `drg/video` to `drg/external-link`.
+29. Verify all nav links and cross-references.
+30. Run through the quality checklist.
 
 ## Quality Checklist
 
@@ -618,6 +622,7 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] Safety addressed where warranted
 - [ ] At least one external link
 - [ ] Image placeholders have descriptive alt-text
+- [ ] Each `drg/image` shortcode references a unique `src` (no duplicate image files on a page or across the guide)
 - [ ] Transition CTA bridges to next page
 - [ ] Previous/Next navigation is correct
 - [ ] Content is 500–1500 words
@@ -636,6 +641,7 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
 - [ ] All YouTube video embeds verified via `verify:youtube-links` (zero broken links, embed-disabled videos switched to `drg/external-link`)
+- [ ] Total `drg/image` shortcodes equals total `images.json` entries (1:1 parity, no duplicate src values)
 
 ## Pull Request Workflow
 
