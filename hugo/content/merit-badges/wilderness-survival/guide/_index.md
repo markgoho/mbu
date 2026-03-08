@@ -120,9 +120,9 @@ Camping on or near water brings hazards like capsizing, hypothermia, and drownin
 
 You're ready to dive into the skills. Start with understanding the hazards of backcountry travel and how to prevent them—then move through the priorities of survival, building shelters, signaling for rescue, and treating water. Each skill builds on what you learned before, and together they form a complete picture of wilderness readiness.
 
+{{< drg/image src="images/scout-in-wilderness-shelter.avif" alt="Scout sitting in a completed natural shelter made from branches and leaves" >}}
+
 {{< drg/next-page
     text="Begin by learning the injuries and conditions that most commonly threaten backcountry travelers"
     teaser="and how to prevent and treat them."
     url="/merit-badges/wilderness-survival/guide/req1a/" >}}
-
-{{< drg/image src="images/scout-in-wilderness-shelter.avif" alt="Scout sitting in a completed natural shelter made from branches and leaves" >}}
