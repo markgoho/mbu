@@ -19,6 +19,10 @@ Do TWO of the following:
 
 This requirement is about hands-on tool maintenance. You will complete TWO of the four options listed. Choose tasks that match your skills and the equipment you have access to.
 
+{{< drg/video
+    title="How to Care for and Sharpen Gardening Tools — GrowVeg"
+    url="https://www.youtube.com/watch?v=M1KSqC1yEeU" >}}
+
 ## Understanding Your Options
 
 ### Option A: Replace a Tool Handle

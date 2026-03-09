@@ -15,6 +15,10 @@ Describe what a safety data sheet (SDS) is and tell why it is used. Obtain the S
 
 A Safety Data Sheet (SDS) is your chemical instruction manual. Every hazardous material in your shop — from engine oil to hydraulic fluid to diesel fuel — comes with an SDS that tells you exactly what the chemical is, what hazards it poses, and how to use it safely. If you get a splash, if you spill it, or if someone breathes fumes, the SDS tells you what to do.
 
+{{< drg/video
+    title="A Crash Course on Chemical Safety Data Sheets (SDS) — Safelyio"
+    url="https://www.youtube.com/watch?v=-1qFlEXqI30" >}}
+
 ## What Is a Safety Data Sheet?
 
 An SDS is a standardized document created by the manufacturer of a chemical product. In the United States, the Occupational Safety and Health Administration (OSHA) requires that every hazardous chemical have an SDS. Internationally, these documents follow the Globally Harmonized System (GHS) standard, which means they have a consistent format no matter what product you are looking at or what country you are in.

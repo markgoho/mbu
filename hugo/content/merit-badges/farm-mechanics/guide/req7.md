@@ -15,6 +15,10 @@ Find out about three career opportunities in farm mechanics. Pick one and find o
 
 Farm mechanics is not just a skill — it is the foundation for real careers with good pay, job security, and advancement opportunities. This requirement asks you to explore three different paths and then dive deep into one that excites you.
 
+{{< drg/video
+    title="Introduction to Ag Careers: Agricultural Engineer — Farmamerica"
+    url="https://www.youtube.com/watch?v=etOu2zu3i2I" >}}
+
 ## Three Major Career Paths in Farm Mechanics
 
 ### Path 1: Equipment Service Technician (Dealership)

@@ -15,6 +15,10 @@ Explain how power is produced or transferred in a transmission or any other powe
 
 A transmission is the connection between the engine and the wheels. It takes the rotational power produced by the engine and transfers it to the ground, while allowing the operator to adjust speed and torque. Without a transmission, a tractor would either crawl at a snail's pace or stall when trying to pull a heavy load.
 
+{{< drg/video
+    title="Which Transmission Should I Choose? — Kubota of Lynchburg"
+    url="https://www.youtube.com/watch?v=MODEmA5q0TU" >}}
+
 ## The Core Problem: Engine Power & Speed
 
 A diesel engine operates most efficiently within a narrow range of speeds — typically 1,200–2,200 RPM (revolutions per minute). Outside this range, the engine either stalls (too slow) or wastes fuel and overheats (too fast).

@@ -15,6 +15,10 @@ Discuss with your counselor the safety equipment, tools, and clothing used while
 
 Before you touch a wrench or step near a running engine, you need the right protective gear. Farms are unforgiving environments — heavy equipment, sharp edges, rotating parts, and hazardous chemicals demand respect. Personal protective equipment (PPE) is not optional; it is the difference between a safe day and a trip to the emergency room.
 
+{{< drg/video
+    title="Personal Protective Equipment in the Farm (PPE) — Learn from Ern"
+    url="https://www.youtube.com/watch?v=Yjl1rqqjosU" >}}
+
 ## Personal Protective Equipment (PPE)
 
 Think of PPE as your armor. Different tasks require different protection, and part of becoming a competent farm mechanic is knowing which gear to wear for which job.

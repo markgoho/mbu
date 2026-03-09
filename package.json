@@ -13,6 +13,7 @@
     "generate:drg-images": "bun scripts/generate-drg-images.ts --badge",
     "convert:drg-images": "bun scripts/convert-drg-images-to-avif.ts",
     "verify:youtube-links": "bun scripts/verify-youtube-links.ts",
+    "search:youtube-videos": "bun scripts/search-youtube-videos.ts",
     "verify:drg-resources": "bun scripts/verify-drg-resources.ts"
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
   "dependencies": {
     "cheerio": "^1.2.0",
     "impit": "^0.7.6",
-    "slugify": "^1.6.6"
+    "slugify": "^1.6.6",
+    "youtube-sr": "^4.3.12"
   }
 }

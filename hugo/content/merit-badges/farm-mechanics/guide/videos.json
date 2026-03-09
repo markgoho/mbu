@@ -1,0 +1,137 @@
+{
+  "badge": "farm-mechanics",
+  "searched_at": "2026-03-09T21:05:45.444Z",
+  "reviewed_at": "2026-03-09T22:45:00.000Z",
+  "videos": [
+    {
+      "file": "req1a.md",
+      "requirement_path": "1.a",
+      "video_id": "Yjl1rqqjosU",
+      "title": "Personal Protective Equipment in the Farm (PPE) || TLE 7 & 8",
+      "channel": "Learn from Ern",
+      "url": "https://www.youtube.com/watch?v=Yjl1rqqjosU",
+      "status": "working",
+      "relevance": "Designed for grades 7-8 students, covers farm PPE (gloves, boots, goggles) in an educational tone — perfect age and topic match for Req 1a."
+    },
+    {
+      "file": "req1b.md",
+      "requirement_path": "1.b",
+      "video_id": "PmYwlEnnh9Y",
+      "title": "Managing Farm Safety and Health Video Series - Workshop Safety",
+      "channel": "Teagasc",
+      "url": "https://www.youtube.com/watch?v=PmYwlEnnh9Y",
+      "status": "working",
+      "relevance": "Short (2 min) farm workshop safety video from an agricultural extension service — covers ventilation, fire safety, and layout principles directly relevant to Req 1b."
+    },
+    {
+      "file": "req1c.md",
+      "requirement_path": "1.c",
+      "video_id": "VBY1lI9SUOw",
+      "title": "ANSI Standards: Safety Signs and Labels",
+      "channel": "Clarion Safety Systems",
+      "url": "https://www.youtube.com/watch?v=VBY1lI9SUOw",
+      "status": "working",
+      "relevance": "Covers DANGER/WARNING/CAUTION signal words and ANSI label formats — directly addresses the safety symbol identification required in Req 1c."
+    },
+    {
+      "file": "req1c.md",
+      "requirement_path": "1.c",
+      "video_id": "izeWHwDCUes",
+      "title": "ISO Symbols for Safety Signs and Labels",
+      "channel": "Clarion Safety Systems",
+      "url": "https://www.youtube.com/watch?v=izeWHwDCUes",
+      "status": "working",
+      "relevance": "Covers ISO safety pictogram system — complements the ANSI video by showing universal warning symbols Scouts need to identify on equipment for Req 1c."
+    },
+    {
+      "file": "req1d.md",
+      "requirement_path": "1.d",
+      "video_id": "-1qFlEXqI30",
+      "title": "Safety Data Sheet Training: A Crash Course On Chemical Safety Data Sheets (SDS)",
+      "channel": "Safelyio",
+      "url": "https://www.youtube.com/watch?v=-1qFlEXqI30",
+      "status": "working",
+      "relevance": "Under 3 minutes, crash-course format explaining what an SDS is and why it matters — concise and youth-appropriate for Req 1d."
+    },
+    {
+      "file": "req2a.md",
+      "requirement_path": "2.a",
+      "video_id": "8ruuieWiXT4",
+      "title": "How Diesel Engine Actually Works? (Animation)",
+      "channel": "AutoExpose Global",
+      "url": "https://www.youtube.com/watch?v=8ruuieWiXT4",
+      "status": "working",
+      "relevance": "Animated explainer showing the diesel four-stroke cycle — compression ignition, fuel injection, power stroke — exactly what Req 2a asks Scouts to explain."
+    },
+    {
+      "file": "req2b.md",
+      "requirement_path": "2.b",
+      "video_id": "rGg6eUt_tcM",
+      "title": "What is Hydraulics and how does it work? | Hydraulics in Physics",
+      "channel": "STEM KIDS",
+      "url": "https://www.youtube.com/watch?v=rGg6eUt_tcM",
+      "status": "working",
+      "relevance": "From a channel designed for youth (STEM KIDS), covers Pascal's law and hydraulic principles in under 3 minutes — ideal age and topic match for Req 2b."
+    },
+    {
+      "file": "req2c.md",
+      "requirement_path": "2.c",
+      "video_id": "MODEmA5q0TU",
+      "title": "Which transmission should I choose?",
+      "channel": "Kubota of Lynchburg",
+      "url": "https://www.youtube.com/watch?v=MODEmA5q0TU",
+      "status": "working",
+      "relevance": "Short comparison of hydro vs power reverser vs gear shift tractor transmissions from a Kubota dealer — directly covers the transmission types discussed in Req 2c."
+    },
+    {
+      "file": "req3.md",
+      "requirement_path": "3",
+      "video_id": "M1KSqC1yEeU",
+      "title": "How to Care for and Sharpen Gardening Tools",
+      "channel": "GrowVeg",
+      "url": "https://www.youtube.com/watch?v=M1KSqC1yEeU",
+      "status": "working",
+      "relevance": "Demonstrates sharpening with a file, cleaning, and oiling hand tools in 3 minutes — covers the core skills (filing, sharpening) required in Req 3."
+    },
+    {
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "yPJt7L9SaAw",
+      "title": "Routine Tractor Service",
+      "channel": "Tractor Mike",
+      "url": "https://www.youtube.com/watch?v=yPJt7L9SaAw",
+      "status": "working",
+      "relevance": "Short (3.5 min) routine tractor service walkthrough — oil, filters, grease — from a trusted tractor educator. Covers the maintenance tasks in Req 4."
+    },
+    {
+      "file": "req5.md",
+      "requirement_path": "5",
+      "video_id": "yXuKZZpXtWc",
+      "title": "Career Profiles: Agriculture Equipment Technician Lee Bryan",
+      "channel": "Agriculture for Life",
+      "url": "https://www.youtube.com/watch?v=yXuKZZpXtWc",
+      "status": "working",
+      "relevance": "From a youth-focused agricultural education org (2 min), shows a real ag equipment tech at a dealership — prepares Scouts for their dealer visit in Req 5."
+    },
+    {
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "yJzpgqVPSrY",
+      "title": "Tractor Tip Tuesday: Connecting Quick Couplers",
+      "channel": "Good Works Tractors",
+      "url": "https://www.youtube.com/watch?v=yJzpgqVPSrY",
+      "status": "working",
+      "relevance": "Beginner-friendly demonstration of hydraulic coupler connection on a tractor — directly relevant to Req 6 Option A (tightening hydraulic fittings)."
+    },
+    {
+      "file": "req7.md",
+      "requirement_path": "7",
+      "video_id": "etOu2zu3i2I",
+      "title": "Introduction to Ag Careers: Agricultural Engineer",
+      "channel": "Farmamerica - MN Ag Interpretive Center",
+      "url": "https://www.youtube.com/watch?v=etOu2zu3i2I",
+      "status": "working",
+      "relevance": "From Farmamerica/Junior Achievement youth career exploration program — covers agricultural engineering career path, designed for the Scout age group."
+    }
+  ]
+}

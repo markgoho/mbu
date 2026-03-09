@@ -1,225 +1,144 @@
 ---
-title: "Req 1d — Safety Data Sheets"
+title: "Req 2a — Diesel Engines"
 layout: guide
-group_title: "Farm Shop Safety"
-req_number: "1d"
-prev: "/merit-badges/farm-mechanics/guide/req1c/"
-prev_title: "Req 1c — Safety Symbols & Warnings"
-next: "/merit-badges/farm-mechanics/guide/req2a/"
-next_title: "Req 2a — Diesel Engines"
+group_title: "Understanding Farm Power Systems"
+req_number: "2a"
+prev: "/merit-badges/farm-mechanics/guide/req1d/"
+prev_title: "Req 1d — Safety Data Sheets"
+next: "/merit-badges/farm-mechanics/guide/req2b/"
+next_title: "Req 2b — Hydraulic Systems"
 ---
 
-{{< drg/requirement number="1d" >}}
-Describe what a safety data sheet (SDS) is and tell why it is used. Obtain the SDS for any engine coolant, oil, grease, fuel, hydraulic or transmission fluid, or other flammable or hazardous materials you use in meeting the requirements for this merit badge.
+{{< drg/requirement number="2a" >}}
+Explain how power is produced or transferred in a diesel engine.
 {{< /drg/requirement >}}
 
-A Safety Data Sheet (SDS) is your chemical instruction manual. Every hazardous material in your shop — from engine oil to hydraulic fluid to diesel fuel — comes with an SDS that tells you exactly what the chemical is, what hazards it poses, and how to use it safely. If you get a splash, if you spill it, or if someone breathes fumes, the SDS tells you what to do.
+The diesel engine is the workhorse of agriculture. Nearly every tractor, combine, grain auger, and skid steer on a modern farm runs on diesel fuel. Understanding how a diesel engine produces power gives you a foundation for everything else in farm mechanics — maintenance, troubleshooting, and safe operation.
 
-## What Is a Safety Data Sheet?
+{{< drg/video
+    title="How Diesel Engine Actually Works? (Animation) — AutoExpose Global"
+    url="https://www.youtube.com/watch?v=8ruuieWiXT4" >}}
 
-An SDS is a standardized document created by the manufacturer of a chemical product. In the United States, the Occupational Safety and Health Administration (OSHA) requires that every hazardous chemical have an SDS. Internationally, these documents follow the Globally Harmonized System (GHS) standard, which means they have a consistent format no matter what product you are looking at or what country you are in.
+## How a Diesel Engine Differs from a Gasoline Engine
 
-The SDS is not a marketing brochure — it is a technical safety document written by the manufacturer (or by a toxicologist hired by the manufacturer) based on scientific testing and knowledge of the chemical.
+Both diesel and gasoline engines are internal combustion engines — they burn fuel inside cylinders to produce power. But they ignite that fuel in very different ways:
 
-## Why Safety Data Sheets Matter
+- **Gasoline engine:** A spark plug creates a spark that ignites a mixture of fuel and air. The engine needs an electrical ignition system.
+- **Diesel engine:** There is no spark plug. Instead, air is compressed so tightly inside the cylinder that it becomes extremely hot — hot enough to ignite diesel fuel the instant it is injected. This is called **compression ignition**.
 
-Imagine you are working on a tractor and you accidentally splash hydraulic fluid in your eyes. What do you do? Do you flush with water? Do you go to the hospital? What if you swallowed some? The SDS tells you the answer.
+Compression ignition is what makes diesel engines special. Because they compress air to much higher pressures than gasoline engines, they extract more energy from each unit of fuel, making them more efficient and more powerful for heavy work.
 
-Or imagine a co-worker faints while working in a poorly ventilated shop where engine coolant is being mixed. What are the symptoms of coolant exposure? What is the emergency treatment? Again, the SDS has that information.
+## The Four-Stroke Cycle
 
-SDSs exist because chemicals can be dangerous in ways that are not obvious. Some are flammable. Some are toxic if you breathe the vapors. Some can burn your skin. Some can damage your lungs or kidneys over time. The SDS communicates all of this.
+A diesel engine produces power through a repeating four-stroke cycle. Each stroke is one movement of the piston — either up or down — inside the cylinder. A complete cycle takes two full rotations of the crankshaft.
 
-## The Standard SDS Format (16 Sections)
+### Stroke 1: Intake
 
-Every SDS follows the same 16-section format. Learning what each section contains helps you find the information you need in an emergency.
+- The piston moves **down** inside the cylinder.
+- The intake valve opens, allowing fresh air (not a fuel mixture — just air) to flow into the cylinder.
+- The intake valve closes at the bottom of the stroke, sealing the cylinder.
 
-### Section 1: Product Identification
+**Key point:** Unlike a gasoline engine, a diesel engine only draws in air during the intake stroke — no fuel is added yet.
 
-- **Product name:** The chemical name and any common names
-- **Manufacturer:** Who makes it
-- **Recommended use:** What it is designed for (e.g., "engine lubricant")
-- **Hazards:** A quick summary of the main dangers
+### Stroke 2: Compression
 
-### Section 2: Hazard Identification
+- The piston moves **up**, compressing the air trapped in the cylinder.
+- Diesel engines compress air to a ratio of about 15:1 to 25:1 — meaning the air is squeezed into a space 15 to 25 times smaller than it started.
+- This extreme compression heats the air to about 900°F–1,000°F (480°C–540°C).
+- At the top of the compression stroke, the air is incredibly hot and under tremendous pressure.
 
-- **Hazard classification:** What types of hazards this chemical poses:
-  - **Flammable** (catches fire easily)
-  - **Acute toxicity** (poisonous in small doses)
-  - **Chronic toxicity** (harmful with repeated exposure)
-  - **Skin irritant or sensitizer** (causes rashes or allergic reactions)
-  - **Eye irritant** (causes burning or inflammation)
-  - **Respiratory sensitizer** (causes breathing problems)
-  - **Environmental hazard** (harms fish or aquatic life)
-- **Signal word:** Either "Danger" (more serious) or "Warning" (less serious)
-- **Hazard statements:** Specific warnings (e.g., "Combustible liquid and vapor," "Causes skin irritation," "Harmful if swallowed")
-- **Precautionary statements:** Actions you should take to prevent problems
+**Key point:** This is the step that makes a diesel engine a diesel engine. The compression ratio is much higher than in a gasoline engine (which compresses at about 8:1 to 12:1), and it is the heat from compression — not a spark — that ignites the fuel.
 
-### Section 3: Composition / Information on Ingredients
+### Stroke 3: Power (Combustion)
 
-- What is actually in the product
-- The chemical name and percentage of each ingredient
-- For mixtures, which ingredients are hazardous
+- At the top of the compression stroke, a fuel injector sprays a precise amount of diesel fuel into the superheated, compressed air.
+- The fuel ignites instantly on contact with the hot air — **compression ignition**.
+- The burning fuel expands rapidly, pushing the piston **down** with tremendous force.
+- This downward force turns the crankshaft, which is the rotating output shaft of the engine.
 
-**Why this matters:** Some products contain chemicals you might not expect. An engine oil might contain a trace of a heavy metal. A cutting fluid might contain a biocide that can cause allergic reactions. This section tells you what you are actually handling.
+**Key point:** The power stroke is where the engine does its work. The force of the expanding gases pushes the piston down, and the crankshaft converts that linear (straight-line) motion into rotational motion — spinning the flywheel, which drives the transmission, hydraulic pump, and PTO.
 
-### Section 4: First-Aid Measures
+### Stroke 4: Exhaust
 
-**This is critical if someone is injured:**
+- The piston moves **up** again.
+- The exhaust valve opens.
+- The piston pushes the burned gases (exhaust) out of the cylinder through the exhaust valve.
+- The exhaust valve closes at the top of the stroke.
 
-- **If inhaled:** Symptoms of breathing the vapor, and what to do
-- **If skin contact:** What happens, how to treat it (usually "wash with soap and water," but sometimes seek medical help)
-- **If eye contact:** What to do immediately (usually "flush with water for 15 minutes," then get medical help)
-- **If swallowed:** Never induce vomiting — some chemicals are more dangerous coming back up. The SDS tells you whether to call poison control or get emergency care
+The cycle then repeats: intake, compression, power, exhaust — over and over, hundreds of times per minute.
 
-### Section 5: Fire-Fighting Measures
+## Key Engine Components
 
-- Is this chemical flammable?
-- What type of fire extinguisher should you use? (Class A, B, C, or D)
-- What type of fire extinguisher should you NOT use?
-- What hazardous byproducts are created if the chemical burns?
+### Cylinders and Pistons
 
-**For farm shops:** Most oils, hydraulic fluids, and diesel are Class B flammables. The SDS tells you to use a Class B extinguisher (foam, CO2, or dry powder) — not water.
+Most farm diesel engines have 3, 4, or 6 cylinders. Each cylinder contains a piston that moves up and down. The cylinders fire in a specific sequence (called the firing order) so that the engine produces smooth, continuous power rather than a series of jerky pulses.
 
-### Section 6: Accidental Release Measures
+### Crankshaft
 
-- What to do if you spill it
-- How to clean it up (absorbent material? Solvents?)
-- Ventilation needed
-- Protective equipment for cleanup
-- Disposal instructions
+The crankshaft is a heavy steel shaft at the bottom of the engine. Connecting rods link each piston to the crankshaft. As the pistons push down during the power stroke, they rotate the crankshaft. The crankshaft spins at the engine's operating speed — typically 1,500–2,200 RPM (revolutions per minute) on a farm tractor.
 
-### Section 7: Handling and Storage
+### Fuel Injectors
 
-- How to store the chemical safely
-- Temperature range
-- Keep away from incompatible materials (e.g., keep oxidizers away from flammables)
-- How to handle the container
-- Static electricity precautions (some solvents are flammable and can ignite from a spark)
+Each cylinder has a fuel injector that sprays diesel fuel at extremely high pressure — often 20,000–30,000 PSI (pounds per square inch) on modern engines. The injector controls the exact timing and amount of fuel delivered. Proper injector function is critical — a clogged or leaking injector wastes fuel and reduces power.
 
-### Section 8: Exposure Controls / Personal Protective Equipment
+### Turbocharger
 
-- Recommended PPE when handling: gloves, eye protection, respirator?
-- Exposure limits: How much vapor or dust is safe to breathe?
-- Ventilation: Should you work outdoors or in a ventilated area?
+Many farm diesel engines have a turbocharger — a device that uses exhaust gases to spin a turbine, which forces more air into the cylinders. More air means more fuel can be burned, which means more power. A turbocharged engine can produce significantly more horsepower than a naturally aspirated (non-turbo) engine of the same size.
 
-### Section 9: Physical and Chemical Properties
+### Cooling System
 
-- What does it look like? (color, odor, appearance)
-- Is it a liquid or solid?
-- Viscosity (thickness)
-- Boiling point and melting point
-- Flash point (the temperature at which it ignites if exposed to a spark or flame)
+Diesel engines generate enormous heat. The cooling system circulates coolant (a mixture of water and antifreeze) through passages in the engine block and cylinder head, carrying heat away to the radiator. The radiator dissipates heat into the air. Without the cooling system, the engine would overheat and destroy itself within minutes.
 
-**Flash point matters:** Engine oil has a flash point around 400°F. Gasoline has a flash point around -40°F. The lower the flash point, the more flammable the product.
+### Lubrication System
 
-### Section 10: Stability and Reactivity
+Engine oil is pumped through the engine to lubricate moving parts — pistons, bearings, crankshaft, camshaft. The oil also helps cool internal components and carries away metal particles from normal wear. Regular oil changes are one of the most important maintenance tasks on a diesel engine.
 
-- Is the chemical stable under normal storage and use conditions?
-- What conditions should you avoid (heat, light, pressure)?
-- What other chemicals should you NOT mix it with?
-- What hazardous decomposition products might form if it is burned?
+## How Power Is Transferred
 
-### Section 11: Toxicological Information
+Once the diesel engine produces rotational power at the crankshaft, that power needs to get to the wheels, hydraulic pump, and implements:
 
-- What happens if you are exposed to the chemical?
-- Short-term (acute) effects: nausea, dizziness, burns?
-- Long-term (chronic) effects: organ damage, cancer risk?
-- Lethal dose (if known) — how much would kill someone
-- LD50 (the dose that kills 50% of test animals) — a scientific measure of toxicity
+1. **Crankshaft → Flywheel:** The crankshaft connects to a heavy flywheel that stores rotational energy and smooths out the power pulses from individual cylinder firings.
 
-### Section 12: Ecological Information
+2. **Flywheel → Clutch → Transmission:** The clutch connects the flywheel to the transmission, allowing the operator to engage or disengage power. The transmission adjusts the gear ratio to match the task (low gear for heavy pulling, high gear for road travel).
 
-- How does this chemical affect the environment?
-- Is it toxic to fish or aquatic organisms?
-- Does it persist in soil?
+3. **Transmission → Driveshaft → Wheels:** The transmission output drives the wheels through a driveshaft, differential, and axles.
 
-**Matters for farm shops:** If you spill hydraulic fluid into a stream or groundwater, you have an environmental problem. The SDS tells you how serious it is.
+4. **Engine → Hydraulic Pump:** A gear on the engine drives the hydraulic pump, which pressurizes hydraulic fluid to power cylinders and motors (loader buckets, boom arms, etc.).
 
-### Section 13: Disposal Considerations
+5. **Engine → PTO:** The power takeoff shaft connects to the engine and runs at a standardized speed (540 or 1,000 RPM) to power implements like balers, mowers, and grain augers.
 
-- How to dispose of the chemical safely
-- Whether it can go in the trash or if it requires special hazardous waste disposal
-- Contact information for waste disposal companies (if necessary)
+## Why Diesel Engines Dominate Agriculture
 
-**Never pour hazardous chemicals down the drain.** Oil, hydraulic fluid, solvents, and other materials must be disposed of properly. The SDS tells you how.
+Diesel engines are the standard for farm equipment because of several advantages:
 
-### Section 14: Transport Information
+- **Fuel efficiency:** Diesel engines extract more energy per gallon of fuel than gasoline engines. On a farm where equipment runs for hours every day, this saves significant money.
+- **Torque:** Diesel engines produce high torque (turning force) at low RPM, which is exactly what you need for pulling plows, driving through heavy soil, and powering hydraulic systems.
+- **Durability:** Diesel engines are built heavier and stronger to handle the high compression pressures. A well-maintained farm diesel engine can run for 10,000–20,000 hours — decades of service.
+- **Fuel safety:** Diesel fuel is less volatile than gasoline. It does not explode as easily, making it safer to store and handle on a farm.
 
-- How to ship the product safely
-- UN hazard classification for transportation
-- Shipping name and class
+{{< drg/did-you-know >}}
+Rudolf Diesel invented the diesel engine in 1893. His original goal was to create an engine that was more efficient than the steam engines of his time. He succeeded — modern diesel engines convert about 40–45% of fuel energy into useful work, compared to about 25–30% for gasoline engines. That efficiency difference adds up to thousands of dollars in fuel savings over the life of a tractor.
+{{< /drg/did-you-know >}}
 
-**Relevant if you order bulk quantities.**
+## Diesel Engine Maintenance Basics
 
-### Section 15: Regulatory Information
+Keeping a diesel engine running reliably requires consistent maintenance:
 
-- Which government agencies have jurisdiction (EPA, DOT, OSHA, etc.)
-- Relevant regulations and laws
-
-### Section 16: Other Information
-
-- SDS preparation date
-- Contact information for the manufacturer
-- Any additional information the manufacturer wants to include
-
-## How to Obtain SDSs
-
-You are required to have access to SDSs for every hazardous material in your shop. Here is how to get them:
-
-### From the Supplier
-
-- **When you buy a product:** Request the SDS at the point of sale. Many retailers (farm supply stores, auto parts stores) have a binder or file of SDSs.
-- **Digital copies:** Ask the supplier if they can email you the SDS. Keep PDFs on your phone or computer.
-- **Print and file:** Print the SDS and keep it in a binder in your shop, in a location where everyone knows to find it.
-
-### Online
-
-If you cannot get an SDS from the supplier, you can find one online:
-
-- **Manufacturer's website:** Search "[Product Name] + SDS" on Google. Most manufacturers post their SDSs online.
-- **Safety data sheet repositories:** Websites like SafetyData.com and ChemicalBook.com index SDSs for thousands of products.
-
-### OSHA Requirements
-
-OSHA requires that:
-
-1. Your employer (or you, if you run your own shop) must have an SDS for every hazardous chemical in the workplace.
-2. The SDS must be in a format that employees can easily access (printed or digital).
-3. Employees must be trained on how to find and read the SDS.
-4. The SDS must be in a language that employees understand.
-
-## Reading an SDS in an Emergency
-
-In a crisis, you do not have time to read all 16 sections. Focus on these:
-
-1. **Section 2 (Hazard Identification):** Quickly see what the main hazards are.
-2. **Section 4 (First-Aid Measures):** Get the emergency treatment instructions.
-3. **Section 5 (Fire-Fighting):** If there is a fire, see what type of extinguisher to use.
-4. **Section 8 (PPE):** See what protection you should have worn.
-
-Keep SDSs organized and easy to find. If someone is injured and you need medical information, seconds matter. A well-organized SDS file means you can answer the paramedic's question: "What chemical did they get exposed to, and what are the health effects?"
-
-## Creating Your SDS Collection
-
-For this requirement, you need to collect SDSs for materials you will actually use while completing this merit badge. You will likely need:
-
-- **Engine oil:** If you change oil on an engine-powered machine (Req 4a)
-- **Oil filter:** Some filters have hazard information
-- **Hydraulic fluid:** If you work with hydraulic systems (Req 2b, 4b, 6a)
-- **Diesel fuel:** If you work with diesel equipment
-- **Grease:** If you grease fittings or joints
-- **Air filter:** Some filters have cardboard or plastic components with adhesives
-- **Any solvents or cleaners:** If you use degreaser or parts cleaner
+- **Oil changes:** Follow the manufacturer's schedule (usually every 100–250 hours of operation). Dirty oil loses its ability to protect engine internals.
+- **Fuel filters:** Change regularly to prevent dirt and water from reaching the injectors. Water in diesel fuel causes corrosion and injector damage.
+- **Air filter:** A clean air filter ensures the engine gets enough air for efficient combustion. A clogged filter reduces power and increases fuel consumption.
+- **Coolant:** Check the level and condition regularly. Old coolant loses its corrosion-protection properties and can damage the engine.
+- **Fuel quality:** Use clean, fresh diesel fuel. Store fuel in clean containers and keep water out of the fuel tank.
 
 {{< drg/tip >}}
-Start collecting SDSs early. Many suppliers can email them to you instantly. If you wait until you need one in an emergency, you have waited too long. Building your SDS library as you go makes your shop safer and more professional.
+If a diesel engine is hard to start, produces black or white exhaust smoke, or has lost power, the most common causes are a clogged fuel filter, a dirty air filter, or old fuel. These are simple, inexpensive fixes — check them first before assuming a major problem.
 {{< /drg/tip >}}
 
 ## Summary
 
-The Safety Data Sheet is a powerful document. It represents the manufacturer's knowledge of how their chemical behaves, what dangers it poses, and what to do if something goes wrong. Respecting the SDS — reading it, understanding it, and using its guidance — is a sign of a professional, safety-conscious mechanic. Make it a habit to check the SDS for every hazardous material you use. Your future self (and your coworkers) will thank you.
+A diesel engine produces power through compression ignition — compressing air until it is hot enough to ignite fuel without a spark. The four-stroke cycle (intake, compression, power, exhaust) repeats continuously, turning the crankshaft and producing the rotational force that powers everything on a farm machine. Understanding this process helps you maintain the engine, diagnose problems, and appreciate why diesel power has been the backbone of agriculture for over a century.
 
 {{< drg/next-page
-    text="You now understand what makes a farm shop safe — equipment, warnings, and safety data."
-    teaser="Now let's shift gears and learn how farm equipment actually works — starting with diesel engines."
-    url="/merit-badges/farm-mechanics/guide/req2a/" >}}
+    text="You now understand how a diesel engine produces power — the heart of every farm machine."
+    teaser="Learn how hydraulic systems transfer and control that power — lifting, pushing, and moving with precision."
+    url="/merit-badges/farm-mechanics/guide/req2b/" >}}

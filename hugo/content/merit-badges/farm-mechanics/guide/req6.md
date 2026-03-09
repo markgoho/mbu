@@ -18,6 +18,10 @@ Explain each step in ONE of the following maintenance procedures:
 
 This requirement asks you to master ONE specific maintenance procedure. Pick the task that matches your equipment access and your interests. You will perform the task, then explain each step to your counselor.
 
+{{< drg/video
+    title="Tractor Tip Tuesday: Connecting Quick Couplers — Good Works Tractors"
+    url="https://www.youtube.com/watch?v=yJzpgqVPSrY" >}}
+
 ## Option A: Tightening Hydraulic Fittings
 
 Hydraulic hoses connect cylinders, motors, and valves to the main pump. Over time, vibration and thermal expansion can loosen fittings. A loose fitting can lead to a slow leak (wasting fluid) or a catastrophic rupture (dangerous pressurized fluid injection).

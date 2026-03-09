@@ -18,6 +18,10 @@ Do ONE of the following:
 
 This requirement asks you to perform ONE of three maintenance tasks on an engine-powered machine. Choose the task that matches your access to equipment and your comfort level.
 
+{{< drg/video
+    title="Routine Tractor Service — Tractor Mike"
+    url="https://www.youtube.com/watch?v=yPJt7L9SaAw" >}}
+
 ## Option A: Full Maintenance Service
 
 Perform a complete maintenance routine on a single piece of equipment. This is the most comprehensive option and teaches you the full scope of seasonal or regular maintenance.

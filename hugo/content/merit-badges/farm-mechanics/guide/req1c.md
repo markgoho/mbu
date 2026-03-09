@@ -15,6 +15,14 @@ Find all the universal warning and safety symbols on a piece of equipment and ex
 
 Equipment manufacturers put warning symbols on machines for one reason: to keep you alive. A tractor, a combine, a baler, a grain auger — each one has a collection of stickers and labels that communicate hazards in a language that works even if you do not speak English. Learning to read these symbols is one of your most important skills.
 
+{{< drg/video
+    title="ANSI Standards: Safety Signs and Labels — Clarion Safety Systems"
+    url="https://www.youtube.com/watch?v=VBY1lI9SUOw" >}}
+
+{{< drg/video
+    title="ISO Symbols for Safety Signs and Labels — Clarion Safety Systems"
+    url="https://www.youtube.com/watch?v=izeWHwDCUes" >}}
+
 ## Why Warning Symbols Matter
 
 Manufacturers are legally required to warn users about hazards. But beyond the legal requirement, they genuinely want users to be safe. A machine that injures or kills someone creates lawsuits, bad publicity, and financial liability. So they label hazards clearly. Your job is to take those warnings seriously, not dismiss them as boilerplate safety talk.

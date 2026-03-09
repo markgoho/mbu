@@ -15,6 +15,10 @@ Draw a plan showing a well-equipped farm shop. Point out the shop's mandatory sa
 
 A well-designed farm shop is not just about having tools — it is about creating an environment where people work safely, efficiently, and confidently. Your plan does not need to be an architectural drawing; it just needs to show that you understand the safety principles that make a farm shop functional and compliant.
 
+{{< drg/video
+    title="Managing Farm Safety and Health: Workshop Safety — Teagasc"
+    url="https://www.youtube.com/watch?v=PmYwlEnnh9Y" >}}
+
 ## Essential Farm Shop Layout Principles
 
 Think about the flow of work. People should be able to move around without tripping over tools or walking in front of rotating machinery. Materials should be stored so they are easy to access but do not block exits. Hazardous materials should be locked away from curious hands (especially important if children visit the farm).

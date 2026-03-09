@@ -15,6 +15,10 @@ Explain how power is produced or transferred in a hydraulic system.
 
 Hydraulic systems are the muscle of farm equipment. While the diesel engine provides the raw power, hydraulic systems transfer and control that power — lifting a loader bucket, raising a grain auger, extending a spray boom. Understanding hydraulics is understanding how modern farm equipment works.
 
+{{< drg/video
+    title="What Is Hydraulics and How Does It Work? — STEM KIDS"
+    url="https://www.youtube.com/watch?v=rGg6eUt_tcM" >}}
+
 ## The Basic Principle
 
 Hydraulics relies on a simple fact: fluids are incompressible. If you have a closed container filled with oil, and you push on one end with a piston, the oil has nowhere to go except to push back with equal force on another piston. This principle — discovered and formalized by French scientist Blaise Pascal — allows you to multiply and control forces with remarkable precision.

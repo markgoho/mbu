@@ -16,6 +16,7 @@
  */
 
 import { Glob } from "bun";
+import { verifyYoutubeVideo } from "./lib/verify-youtube-video.ts";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -59,45 +60,6 @@ function extractVideoId(url: string): string | null {
   if (embedMatch?.[1] !== undefined) return embedMatch[1];
 
   return null;
-}
-
-// ---------------------------------------------------------------------------
-// YouTube oEmbed verification
-// ---------------------------------------------------------------------------
-
-/**
- * Check a YouTube video ID using YouTube's official oEmbed endpoint.
- *
- * Returns:
- *   - "working"        → 200 OK with embed HTML (video is embeddable)
- *   - "embed_disabled" → 401 Unauthorized (video exists but embedding disabled)
- *   - "broken"         → 404 Not Found or other error (video doesn't exist)
- */
-async function checkYoutubeVideo(
-  videoId: string,
-): Promise<{ status: VideoStatus; title?: string }> {
-  const oembedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
-
-  try {
-    const res = await fetch(oembedUrl);
-
-    if (res.ok) {
-      const data = (await res.json()) as Record<string, unknown>;
-      return {
-        status: "working",
-        title: data.title as string | undefined,
-      };
-    }
-
-    if (res.status === 401) {
-      return { status: "embed_disabled" };
-    }
-
-    // 404 or any other error → broken
-    return { status: "broken" };
-  } catch {
-    return { status: "broken" };
-  }
 }
 
 // ---------------------------------------------------------------------------
@@ -186,7 +148,7 @@ async function main() {
 
   let verified = 0;
   for (const videoId of uniqueIds) {
-    const result = await checkYoutubeVideo(videoId);
+    const result = await verifyYoutubeVideo({ videoId });
     verificationCache.set(videoId, result);
     verified++;
 

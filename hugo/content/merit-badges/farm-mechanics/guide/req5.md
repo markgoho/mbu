@@ -15,6 +15,10 @@ Visit an implement dealer. Interview the dealer technician or service manager fo
 
 Implement dealers are goldmines of knowledge. They see dozens of pieces of equipment every year in all states of repair — from brand-new machines to ones that have been abused, neglected, or maintained religiously. A service manager or technician can tell you exactly what happens when maintenance is skipped and how much it costs to fix.
 
+{{< drg/video
+    title="Career Profiles: Agriculture Equipment Technician — Agriculture for Life"
+    url="https://www.youtube.com/watch?v=yXuKZZpXtWc" >}}
+
 ## Planning Your Dealer Visit
 
 ### Finding a Dealer
