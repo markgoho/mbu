@@ -84,8 +84,6 @@ Yet the core experience remains unchanged: standing at water's edge, reading the
 
 **Get Ready!** Fishing is one of the most accessible outdoor adventures you can pursue. Whether you are near a lake, river, ocean, or even a quiet pond, fish are waiting. This badge will give you the knowledge and confidence to find them, understand their world, and handle them safely and ethically.
 
-{{< drg/image src="images/scout-fishing-ready.avif" alt="A Scout standing at the edge of a peaceful lake at sunrise, fishing rod in hand, with a smile of anticipation on their face" >}}
-
 ---
 
 ## Kinds of Fishing
@@ -119,8 +117,6 @@ Not all fishing requires a boat. Shoreline and bank fishing — from docks, jett
 ### Lure Fishing & Artificial Baits
 
 Lure fishing uses artificial imitations of baitfish, insects, frogs, or crawdads. Lures work by triggering a fish's instinct to chase or strike at something that looks alive. Successful lure fishing demands more technique than bait fishing — you have to make the lure move in a way that convinces the fish to bite.
-
-{{< drg/image src="images/kinds-of-fishing-collage.avif" alt="A four-panel collage showing different fishing scenarios: a Scout fly casting in a mountain stream, a child fishing off a dock with a simple rod, an angler with a large saltwater fish, and someone lure fishing from a rocky shore" >}}
 
 ---
 

@@ -35,7 +35,6 @@ Fishing knots are the critical connection between you and the fish. A weak or po
 - The finished knot should be snug against the hook eye with no slack
 - Test the knot by pulling hard on the main line
 
-{{< drg/image src="images/improved-clinch-knot.avif" alt="Step-by-step illustration showing how to tie an improved clinch knot, with the line wrapped around itself and threaded through the loops" >}}
 
 ## 2. Palomar Knot
 
@@ -57,7 +56,6 @@ Fishing knots are the critical connection between you and the fish. A weak or po
 - Fewer opportunities for error compared to other knots
 - Works with both monofilament and braided line
 
-{{< drg/image src="images/palomar-knot.avif" alt="Step-by-step illustration of the Palomar knot, showing the doubled line, loop through hook eye, and final knot" >}}
 
 ## 3. Uni Knot (Duncan Loop)
 
@@ -80,7 +78,6 @@ Fishing knots are the critical connection between you and the fish. A weak or po
 - Can be adjusted before final tightening
 - The loop at the base of the hook allows the lure to move more freely
 
-{{< drg/image src="images/uni-knot.avif" alt="Step-by-step illustration of the uni knot, showing the loop, wrapping, and final tightening" >}}
 
 ## 4. Uni to Uni Knot
 
@@ -103,7 +100,6 @@ Fishing knots are the critical connection between you and the fish. A weak or po
 - Can be used to attach a leader (heavier line) to your main line
 - The dual-knot design is very strong and reliable
 
-{{< drg/image src="images/uni-to-uni-knot.avif" alt="Step-by-step illustration of the uni to uni knot, showing two uni knots tied on separate lines and slid together" >}}
 
 ## 5. Arbor Knot
 
@@ -125,7 +121,6 @@ Fishing knots are the critical connection between you and the fish. A weak or po
 - Should hold the line securely under heavy load
 - Test by pulling hard on the line after tying
 
-{{< drg/image src="images/arbor-knot.avif" alt="Step-by-step illustration of the arbor knot, showing wrapping around the spool and tying overhand knots" >}}
 
 ## Knot Practice Routine
 

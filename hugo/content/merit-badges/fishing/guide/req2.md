@@ -49,7 +49,6 @@ A fishing "outfit" consists of a rod and reel matched together. The combination 
 - **Roller** — A small wheel that the line passes through as it comes off the bail
 - **Anti-reverse lever** — Prevents the reel from turning backward
 
-{{< drg/image src="images/spinning-reel-parts.avif" alt="A labeled diagram of a spinning reel showing the spool, bail, handle, drag adjustment, reel seat, roller, and anti-reverse lever" >}}
 
 ### 2. Baitcasting Outfit (Conventional Reel)
 
@@ -84,7 +83,6 @@ A fishing "outfit" consists of a rod and reel matched together. The combination 
 - **Reel seat** — Where the reel attaches to the rod
 - **Spool tension knob** — Adjusts how freely the spool rotates
 
-{{< drg/image src="images/baitcasting-reel-parts.avif" alt="A labeled diagram of a baitcasting reel showing the spool, level-wind guide, handle, drag adjustment, brakes, and reel seat" >}}
 
 ### 3. Fly Fishing Outfit
 

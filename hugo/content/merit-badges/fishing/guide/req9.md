@@ -121,7 +121,6 @@ All fish have similar structures, but proportions and colors vary between specie
 - **Scales** — Large, small, shiny, dull?
 - **Distinctive features** — Barbels (whiskers), adipose fin, spots, stripes?
 
-{{< drg/image src="images/fish-anatomy.avif" alt="A labeled diagram of a fish showing dorsal fin, adipose fin, caudal fin (tail), anal fin, pelvic fin, pectoral fin, gill cover, and mouth" >}}
 
 ### Common Freshwater Fish of North America
 
