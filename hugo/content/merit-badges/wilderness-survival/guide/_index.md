@@ -116,8 +116,6 @@ No wilderness survival situation is worth getting yourself hurt or killed. If yo
 
 Camping on or near water brings hazards like capsizing, hypothermia, and drowning. Survival here includes water rescue skills, staying afloat, and knowing how to signal from water. If stranded on an island or shore, you need shelter from wind and sun, access to fresh water, and a way to attract rescuers.
 
-{{< drg/image src="images/wilderness-survival-priorities-chart.avif" alt="Visual ranking of the five priorities of wilderness survival" >}}
-
 ## Transition to Requirements
 
 You're ready to dive into the skills. Start with understanding the hazards of backcountry travel and how to prevent them—then move through the priorities of survival, building shelters, signaling for rescue, and treating water. Each skill builds on what you learned before, and together they form a complete picture of wilderness readiness.

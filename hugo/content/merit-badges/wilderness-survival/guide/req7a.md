@@ -66,8 +66,6 @@ A whistle is your primary ground-level signal. It travels farther than your voic
 - Don't blow continuously—rescuers listen for the pattern
 - In calm conditions, reduce to every 10-15 minutes to conserve energy
 
-{{< drg/image src="images/whistle-signal-patterns.avif" alt="Whistle signal patterns diagram: one blast means stop/listen, two blasts means come here, three blasts means emergency/distress, with timing intervals labeled" >}}
-
 **Where to position yourself:**
 - Open areas where sound travels (ridgetops, clearings, water)
 - Avoid dense forest where sound gets absorbed

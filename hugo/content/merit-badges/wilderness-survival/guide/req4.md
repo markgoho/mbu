@@ -44,8 +44,6 @@ Your first aid kit should be small enough to fit in a pocket or backpack pouch, 
 - Any prescription medications you take
 - EpiPen (if you have severe allergies)
 
-{{< drg/image src="images/first-aid-kit-organized.avif" alt="First aid kit contents organized by category with clear labels" >}}
-
 ### Organization Tips
 
 - Keep everything in a waterproof pouch or bag

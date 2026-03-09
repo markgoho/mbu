@@ -252,8 +252,6 @@ Flashlight + whistle:
 | Mirror | 10+ miles | Day only | Low (with practice) | Very high | Seconds |
 | Flashlight | 1-5 miles | Night | Low | Battery-dependent | Seconds |
 
-{{< drg/image src="images/signal-effectiveness-range.avif" alt="Bar chart comparing effective signaling range of five methods (cell phone, PLB, whistle, mirror, flashlight) across day and night conditions, with range in miles on x-axis" >}}
-
 ## Integrated Signaling Strategy
 
 **Best practice uses all available methods:**

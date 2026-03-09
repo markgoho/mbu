@@ -17,8 +17,6 @@ The Scout Essentials are 10 pieces of gear that every Scout should carry on ever
 
 ## The 10 Scout Essentials
 
-{{< drg/image src="images/scout-essentials-10-items.avif" alt="Ten Scout Essentials laid out and labeled in a grid" >}}
-
 ### 1. Appropriate Clothing
 
 Cold kills faster than hunger or thirst. Hypothermia can strike even in mild weather if you're wet and exposed. Appropriate clothing means layers you can adjust, moisture-wicking fabrics (wool or synthetic, not cotton), and a rain jacket to stay dry.
