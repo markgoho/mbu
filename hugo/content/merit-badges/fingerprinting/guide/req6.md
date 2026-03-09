@@ -181,7 +181,7 @@ Here's a structured way to research your chosen career:
 
 {{< drg/external-link
     title="Ten Types of Jobs Using Fingerprinting"
-    url="https://www.ziprecruiter.com/t/Most-Popular-Types-Of-Jobs-Using-Fingerprinting"
+    url="https://www.ziprecruiter.com/t/Most-Popular-Types-Of-Fingerprint-Identification-Jobs"
     description="A summary of career options in fingerprinting and biometrics, with salary ranges." >}}
 
 {{< drg/external-link

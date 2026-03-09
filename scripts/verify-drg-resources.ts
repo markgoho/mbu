@@ -55,6 +55,13 @@ interface FoundResource {
   foundInFile: string;
 }
 
+interface WrongShortcode {
+  file: string;
+  line: number;
+  url: string;
+  title: string;
+}
+
 // ---------------------------------------------------------------------------
 // Path → filename mapping
 // ---------------------------------------------------------------------------
@@ -215,6 +222,55 @@ function extractResources(req: Requirement, parentPath?: string): ResourceMappin
 }
 
 // ---------------------------------------------------------------------------
+// YouTube shortcode misuse detection
+// ---------------------------------------------------------------------------
+
+/** Check if a URL points to YouTube. */
+function isYoutubeUrl(url: string): boolean {
+  return /(?:youtube\.com|youtu\.be)/.test(url);
+}
+
+/**
+ * Scan guide files for YouTube URLs inside drg/external-link shortcodes.
+ * These should be using drg/video instead.
+ */
+function findWrongShortcodes(fileCache: Map<string, string>): WrongShortcode[] {
+  const issues: WrongShortcode[] = [];
+
+  // Match drg/external-link shortcodes that span multiple lines
+  // We look for the opening tag and then extract title + url from nearby lines
+  for (const [filePath, content] of fileCache) {
+    const lines = content.split("\n");
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i]!;
+
+      // Detect opening of a drg/external-link shortcode
+      if (!line.includes("drg/external-link")) continue;
+
+      // Gather the shortcode block (typically 3-5 lines)
+      const blockLines = lines.slice(i, Math.min(lines.length, i + 6));
+      const block = blockLines.join("\n");
+
+      // Extract URL
+      const urlMatch = block.match(/url="([^"]+)"/);
+      if (!urlMatch?.[1]) continue;
+
+      const url = urlMatch[1];
+      if (!isYoutubeUrl(url)) continue;
+
+      // Extract title
+      const titleMatch = block.match(/title="([^"]+)"/);
+      const title = titleMatch?.[1] ?? "(no title)";
+
+      issues.push({ file: filePath, line: i + 1, url, title });
+    }
+  }
+
+  return issues;
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
@@ -241,6 +297,7 @@ async function main() {
 
   const allMissing: MissingResource[] = [];
   const allFound: FoundResource[] = [];
+  const allWrongShortcodes: WrongShortcode[] = [];
   let totalResources = 0;
 
   for (const slug of slugsToCheck) {
@@ -333,10 +390,16 @@ async function main() {
       }
     }
 
-    const status = badgeMissing === 0 ? "✅" : "❌";
-    console.log(
-      `  ${status} ${slug}: ${badgeFound}/${badgeFound + badgeMissing} resources present`,
-    );
+    // Check for YouTube URLs in wrong shortcode (drg/external-link)
+    const wrongShortcodes = findWrongShortcodes(fileCache);
+    allWrongShortcodes.push(...wrongShortcodes);
+
+    const status = badgeMissing === 0 && wrongShortcodes.length === 0 ? "✅" : "❌";
+    let statusParts = [`${badgeFound}/${badgeFound + badgeMissing} resources present`];
+    if (wrongShortcodes.length > 0) {
+      statusParts.push(`${wrongShortcodes.length} YouTube video(s) using wrong shortcode`);
+    }
+    console.log(`  ${status} ${slug}: ${statusParts.join(", ")}`);
   }
 
   // Report
@@ -365,6 +428,25 @@ async function main() {
     }
   }
 
+  if (allWrongShortcodes.length > 0) {
+    console.log(
+      `\n⚠️  WRONG SHORTCODE (${allWrongShortcodes.length} YouTube video(s) using drg/external-link instead of drg/video):\n`,
+    );
+    console.log(
+      `    YouTube videos should use {{< drg/video >}} to embed the player directly.`,
+    );
+    console.log(
+      `    Only use {{< drg/external-link >}} for YouTube videos with embedding disabled.\n`,
+    );
+    for (const ws of allWrongShortcodes) {
+      const relPath = ws.file.replace(process.cwd() + "/", "");
+      console.log(`  ${relPath}:${ws.line}`);
+      console.log(`    Title: ${ws.title}`);
+      console.log(`    URL:   ${ws.url}`);
+      console.log();
+    }
+  }
+
   if (allFound.length > 0) {
     console.log(`\n✅ FOUND (${allFound.length} resources present in guide pages)\n`);
   }
@@ -375,6 +457,7 @@ async function main() {
   console.log(`  Total resources in data.json: ${totalResources}`);
   console.log(`  Present in guide pages:       ${allFound.length}`);
   console.log(`  Missing from guide pages:     ${allMissing.length}`);
+  console.log(`  Wrong shortcode (YouTube):    ${allWrongShortcodes.length}`);
 
   if (allMissing.length > 0) {
     console.log(
@@ -383,14 +466,25 @@ async function main() {
     console.log(
       `     Add them using {{< drg/video >}} for YouTube or {{< drg/external-link >}} for other URLs.`,
     );
-  } else if (totalResources > 0) {
+  }
+
+  if (allWrongShortcodes.length > 0) {
+    console.log(
+      `\n  ⚠️  ${allWrongShortcodes.length} YouTube video(s) are using {{< drg/external-link >}} instead of {{< drg/video >}}.`,
+    );
+    console.log(
+      `     Switch them to {{< drg/video >}} for proper embedding.`,
+    );
+  }
+
+  if (allMissing.length === 0 && allWrongShortcodes.length === 0 && totalResources > 0) {
     console.log(`\n  🎉 All data.json resources are present in the guide pages!`);
   }
 
   console.log();
 
-  // Exit with error if missing resources
-  if (allMissing.length > 0) {
+  // Exit with error if missing resources or wrong shortcodes
+  if (allMissing.length > 0 || allWrongShortcodes.length > 0) {
     process.exit(1);
   }
 }

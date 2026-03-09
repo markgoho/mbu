@@ -135,10 +135,9 @@ Most people have a mix of patterns. A typical person might have:
 
 This is just an average. Your pattern distribution is unique to you. Some people have all loops. Some people have a mix. The important thing is that the specific pattern on each finger is unique.
 
-{{< drg/external-link
+{{< drg/video
     title="Fingerprint Patterns: Arch, Loop, and Whorl"
-    url="https://www.youtube.com/watch?v=FM8NE4VVYGk"
-    description="A detailed video showing examples of all three basic patterns and their subcategories." >}}
+    url="https://www.youtube.com/watch?v=FM8NE4VVYGk" >}}
 
 ## Using Pattern Classification in Forensics
 
