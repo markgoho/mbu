@@ -88,6 +88,8 @@ If you don't have a mirror, improvise:
 
 3. **When the flash appears in the sighting hole,** the reflection is pointing directly at your target. You've achieved aim.
 
+{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Step-by-step signal mirror aiming technique showing sun position, mirror angle, sighting hole alignment, and reflected beam path to aircraft target" >}}
+
 4. **Flash the signal:** Hold steady for a few seconds, let them see the bright reflection.
 
 5. **Release and re-aim:** Drop the mirror briefly, then re-aim and repeat. Intermittent flashing is more noticeable than a continuous beam.
@@ -237,10 +239,6 @@ You hear a plane and realize rescuers might be searching.
 - **Continue even if it seems hopeless:** The plane might not see you, but multiple signal attempts make it more likely.
 - **Note the time and direction:** Tell your rescue team which aircraft and when you signaled.
 {{< /drg/be-prepared >}}
-
-{{< drg/image src="images/signal-mirror-aiming-diagram.avif" alt="Signal mirror aiming technique" >}}
-
-{{< drg/image src="images/improvised-signal-devices.avif" alt="Improvised signal devices: polished can bottom, CD, glass lens, and shiny metal" >}}
 
 {{< drg/next-page
     text="Signal mirrors and ground-level signals are combined with knowledge of actual aviation signals"

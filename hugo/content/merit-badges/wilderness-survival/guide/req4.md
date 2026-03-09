@@ -44,6 +44,8 @@ Your first aid kit should be small enough to fit in a pocket or backpack pouch, 
 - Any prescription medications you take
 - EpiPen (if you have severe allergies)
 
+{{< drg/image src="images/first-aid-kit-organized.avif" alt="First aid kit contents organized by category with clear labels" >}}
+
 ### Organization Tips
 
 - Keep everything in a waterproof pouch or bag
@@ -148,8 +150,6 @@ The items in a good first aid and survival kit rarely get used on any single tri
 {{< drg/tip >}}
 Store your kits in locations where you'll actually have them—one in your backpack, one in your car, one at home. If they're not with you, they can't help you.
 {{< /drg/tip >}}
-
-{{< drg/image src="images/first-aid-kit-organized.avif" alt="Well-organized first aid kit" >}}
 
 {{< drg/next-page
     text="With kits assembled and their uses understood, you're ready to tackle the most visible challenge of survival"

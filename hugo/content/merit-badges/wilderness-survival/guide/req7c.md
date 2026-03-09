@@ -200,6 +200,8 @@ Pilots and aerial rescue teams are trained to recognize specific ground signals.
 
 **Rule of thumb:** Make signals at least 30 feet across. Bigger signals are visible from farther away.
 
+{{< drg/image src="images/ground-signal-size-visibility.avif" alt="Bird's-eye view of a large X signal on open ground with measurement annotations showing 30-40 foot arms, contrast against terrain, and altitude visibility ranges for helicopters and fixed-wing aircraft" >}}
+
 ## Multiple Signals Strategy
 
 **Best practice:** Create multiple signals simultaneously:
@@ -288,10 +290,6 @@ These ground-to-air signals have saved countless lives. During disasters, strand
 - [ ] Multiple angles: Visible from any aircraft direction
 - [ ] Combination: Use symbols + bright cloth + mirror for maximum visibility
 {{< /drg/checklist >}}
-
-{{< drg/image src="images/signal-fire-smoke-column.avif" alt="Signal fire on a hilltop producing a tall column of white smoke" >}}
-
-{{< drg/image src="images/ground-signal-size-visibility.avif" alt="Bird's-eye view of a large X signal with size measurements for air visibility" >}}
 
 {{< drg/next-page
     text="With signaling mastered, you're ready for the next survival priority: finding and treating water"

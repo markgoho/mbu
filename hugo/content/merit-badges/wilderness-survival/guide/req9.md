@@ -45,6 +45,8 @@ Plant identification requires noting:
 
 **Note:** These examples are common in North America. Your region will have different plants. Research YOUR area's plants specifically.
 
+{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Grid of five common edible plants (dandelion, wild onion, wood sorrel, cattail, pine) with labeled identification features: leaf shape, flower type, growth habitat, and edible parts highlighted" >}}
+
 ### Plant 1: Dandelion (Taraxacum officinale)
 
 **Identification:**
@@ -138,6 +140,8 @@ Plant identification requires noting:
 **Safety note:** Ensure no pesticides have been used on the water source.
 
 **Season:** Spring (shoots), summer (flower heads), fall/winter (rhizomes)
+
+{{< drg/image src="images/dandelion-cattail-detail.avif" alt="Detailed botanical illustration of dandelion and cattail side by side, with edible parts labeled and color-coded: leaves, flowers, roots/rhizomes, and shoots with preparation notes for each" >}}
 
 ---
 
@@ -298,10 +302,6 @@ Native Americans cultivated and managed wild plant communities for thousands of 
 {{< drg/safety-first >}}
 Never eat a wild plant unless you are 100% certain of its identification. Poison is not always obvious. Some deadly plants taste fine until symptoms appear (sometimes hours later). When in doubt, go without eating rather than risking poisoning.
 {{< /drg/safety-first >}}
-
-{{< drg/image src="images/edible-plant-identification-grid.avif" alt="Grid of edible plants with identification details" >}}
-
-{{< drg/image src="images/dandelion-cattail-detail.avif" alt="Detailed botanical illustration of dandelion and cattail with edible parts highlighted" >}}
 
 {{< drg/next-page
     text="Now that you know how to find and prepare food from plants, you're ready for the final part of signaling"

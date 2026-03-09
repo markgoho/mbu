@@ -164,6 +164,8 @@ Ticks attach to skin and feed on blood. Some carry Lyme disease or other infecti
 
 **First Aid:** Grasp the tick with tweezers as close to the skin as possible and pull straight out steadily. Don't twist or jerk. Don't use fire, petroleum jelly, or nail polish—these can make the tick regurgitate infected material into the wound. Save the tick in a plastic bag for identification if the person develops symptoms later.
 
+{{< drg/image src="images/tick-removal-technique.avif" alt="Correct tick removal technique showing fine-tipped tweezers gripping tick near skin and pulling straight up" >}}
+
 {{< drg/external-link
     title="Preventing and Treating Tick Bites"
     url="https://www.aad.org/public/everyday-care/injured-skin/bites/remove-a-tick"
@@ -273,8 +275,6 @@ Only a handful of venomous snakes live in North America (rattlesnakes, cottonmou
 {{< drg/tip >}}
 Prevention is always better than treatment. Most backcountry injuries are avoidable through awareness, proper gear, and good judgment. The best first aid kit in the world won't help if you make reckless decisions.
 {{< /drg/tip >}}
-
-{{< drg/image src="images/backcountry-hazards-overview.avif" alt="Common backcountry hazards including storms, wildlife, river crossings, and rugged terrain" >}}
 
 {{< drg/next-page
     text="Now that you understand the hazards, learn how the Scout Essentials form the foundation of your survival kit"

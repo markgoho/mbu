@@ -255,6 +255,8 @@ When showing filtration:
 3. Show the difference between untreated and filtered water (color, clarity)
 4. Explain how the filter works and what it removes
 
+{{< drg/image src="images/water-filtration-before-after.avif" alt="Before and after water filtration comparison: murky brown water on left, clear filtered water on right, with filter device shown between them and labeled particle removal stages" >}}
+
 ## Combining Methods for Maximum Safety
 
 One method is good. Two methods are better. Some Scouts combine methods:
@@ -264,6 +266,8 @@ One method is good. Two methods are better. Some Scouts combine methods:
 **Filter + Tablets:** Filter removes sediment, tablets kill any pathogens the filter missed (good backup)
 
 **Boiling + Tablets:** Redundancy—boiling should have killed everything, but tablets ensure any survivors are eliminated
+
+{{< drg/image src="images/water-treatment-comparison.avif" alt="Side-by-side comparison of three water treatment methods (boiling, chemical tablets, filtration) with effectiveness ratings against bacteria, viruses, and parasites, plus weight, cost, and speed metrics" >}}
 
 In a real survival situation with questionable water, combining methods isn't overkill—it's smart.
 
@@ -338,10 +342,6 @@ Giardia infections are called "Beaver Fever" because beavers are notorious for s
 {{< drg/safety-first >}}
 Never drink untreated water from the wilderness, even if it looks clean. Always treat water using one of these three methods. Waterborne illnesses are serious and can linger for weeks even after diagnosis and treatment.
 {{< /drg/safety-first >}}
-
-{{< drg/image src="images/water-treatment-comparison.avif" alt="Three water treatment methods" >}}
-
-{{< drg/image src="images/water-filtration-before-after.avif" alt="Water before and after filtering showing dramatic clarity difference" >}}
 
 {{< drg/next-page
     text="Water is essential, but food is also important for surviving extended situations"

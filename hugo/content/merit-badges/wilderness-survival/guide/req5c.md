@@ -62,6 +62,8 @@ Every Bear Country regulation starts with the same rule: store food so bears can
 
 **Distance matters:** The bag should be at least 100 feet from your sleeping area. If a bear finds it, you want distance between yourself and the problem.
 
+{{< drg/image src="images/food-storage-methods-comparison.avif" alt="Bear canister vs bear hang food storage methods with height and distance measurements labeled" >}}
+
 {{< drg/safety-first >}}
 Never keep food in your tent. Not a little bit. Not "just for breakfast." Tent fabric provides zero protection. A bear will tear through a tent to reach food. Sleeping near food is one of the most dangerous camping mistakes possible.
 {{< /drg/safety-first >}}
@@ -83,6 +85,8 @@ Never keep food in your tent. Not a little bit. Not "just for breakfast." Tent f
 - Pack out all trash. If you can't carry it out, hang it.
 - Burn only wood in fires, not trash with food residue.
 - Never bury garbage—bears will dig it up.
+
+{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Bird's-eye campsite layout with cooking, sleeping, and food storage zones 200 feet apart" >}}
 
 ### While Hiking
 
@@ -228,10 +232,6 @@ A raccoon's sense of touch is so sensitive that it can feel the difference betwe
     title="Living with Black Bears"
     url="https://www.nps.gov/articles/living-with-bears.htm"
     description="National Park Service guide to understanding and preventing bear conflicts." >}}
-
-{{< drg/image src="images/bear-camp-setup-diagram.avif" alt="Top-down view of properly organized campsite" >}}
-
-{{< drg/image src="images/food-storage-methods-comparison.avif" alt="Bear canister vs bear hang food storage methods compared" >}}
 
 {{< drg/next-page
     text="With wildlife protection understood, you're ready to learn how to build shelters that protect you from the elements"

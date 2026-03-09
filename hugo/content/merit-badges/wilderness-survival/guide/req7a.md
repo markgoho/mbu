@@ -66,6 +66,8 @@ A whistle is your primary ground-level signal. It travels farther than your voic
 - Don't blow continuously—rescuers listen for the pattern
 - In calm conditions, reduce to every 10-15 minutes to conserve energy
 
+{{< drg/image src="images/whistle-signal-patterns.avif" alt="Whistle signal patterns diagram: one blast means stop/listen, two blasts means come here, three blasts means emergency/distress, with timing intervals labeled" >}}
+
 **Where to position yourself:**
 - Open areas where sound travels (ridgetops, clearings, water)
 - Avoid dense forest where sound gets absorbed
@@ -125,6 +127,8 @@ These are large, visible signals you create on the ground that pilots can see fr
 - Use contrasting colors: white cloth on dark ground, dark rocks on light sand
 - Make it BIG—pilots are looking from hundreds of feet up
 - Keep it visible from multiple angles (don't hide it in a forest clearing)
+
+{{< drg/image src="images/ground-to-air-signals.avif" alt="Five standard ground-to-air signal symbols (X, V, arrow, F, checkmark) with their meanings labeled, shown at scale against a clearing background" >}}
 
 **Where to place signals:**
 - Open areas: meadows, clearings, beaches, bald ridgetops
@@ -249,10 +253,6 @@ Rescue teams assume a lost person will stay near their last known position. Your
 - [ ] Keep fire controlled and safe
 - [ ] Never leave fire unattended
 {{< /drg/checklist >}}
-
-{{< drg/image src="images/ground-to-air-signals.avif" alt="Ground-to-air signals diagram" >}}
-
-{{< drg/image src="images/whistle-signal-patterns.avif" alt="Whistle signal patterns: one blast stop, two blasts come here, three blasts emergency" >}}
 
 {{< drg/next-page
     text="Ground signals are important, but a signal mirror can communicate to rescuers miles away"

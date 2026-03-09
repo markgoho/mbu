@@ -43,6 +43,8 @@ Before you build a fire, understand what it requires:
 
 **The process:** Tinder catches a spark or flame → ignites kindling → kindling heats fuel → fuel catches and sustains the fire.
 
+{{< drg/image src="images/fire-building-stages.avif" alt="Three stages of fire building shown left to right: tinder bundle catching spark, kindling teepee with small flames, and established fuel fire with labeled materials at each stage" >}}
+
 ## Method 1: Ferro Rod (Flint and Steel)
 
 A ferro rod is a small metal stick that produces sparks when scraped with steel. It works when wet and is incredibly reliable.
@@ -93,6 +95,8 @@ The rod contains ferrocerium, a rare-earth metal alloy that sparks at 3,000°F w
 - Once the fire is established, you can stop nursing it
 
 **Pro tip:** Practice with a ferro rod at home before relying on it in the wilderness. The feeling of good sparks and the timing of ignition are learned skills.
+
+{{< drg/image src="images/ferro-rod-technique-annotated.avif" alt="Annotated photo of ferro rod striking technique showing 45-degree rod angle, scraper direction, spark shower onto tinder bundle, and hand positions" >}}
 
 {{< drg/video
     title="4 Emergency Fire Starters"
@@ -262,10 +266,6 @@ Never leave a fire unattended. Always have water or a way to extinguish nearby. 
 {{< drg/did-you-know >}}
 The ability to make fire from friction alone is what separates humans who can survive indefinitely in the wilderness from those who become desperate. Historically, the loss of fire-making ability was so critical that early human groups protected their fire like treasure—some groups never let a fire completely die out, instead carrying embers from place to place.
 {{< /drg/did-you-know >}}
-
-{{< drg/image src="images/ferro-rod-striking-technique.avif" alt="Proper ferro rod striking technique" >}}
-
-{{< drg/image src="images/fire-building-stages.avif" alt="Three stages of fire building from tinder to kindling to fuel" >}}
 
 {{< drg/next-page
     text="Now that you can build fires, you're ready to learn how to signal rescuers using those fires and other methods"

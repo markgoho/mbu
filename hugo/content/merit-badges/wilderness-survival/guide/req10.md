@@ -252,6 +252,8 @@ Flashlight + whistle:
 | Mirror | 10+ miles | Day only | Low (with practice) | Very high | Seconds |
 | Flashlight | 1-5 miles | Night | Low | Battery-dependent | Seconds |
 
+{{< drg/image src="images/signal-effectiveness-range.avif" alt="Bar chart comparing effective signaling range of five methods (cell phone, PLB, whistle, mirror, flashlight) across day and night conditions, with range in miles on x-axis" >}}
+
 ## Integrated Signaling Strategy
 
 **Best practice uses all available methods:**
@@ -332,10 +334,6 @@ Modern rescue relies on GPS and technology, but wilderness rescue teams still us
 - Don't rely on mirrors (trees block signal)
 - Climb to high point if possible
 {{< /drg/be-prepared >}}
-
-{{< drg/image src="images/signaling-tools-comparison.avif" alt="Signaling tools compared" >}}
-
-{{< drg/image src="images/signal-effectiveness-range.avif" alt="Bar chart showing effective range of different signaling methods" >}}
 
 {{< drg/next-page
     text="You've now learned all ten merit badge requirements. This final section provides additional resources and deeper dives into wilderness survival topics"

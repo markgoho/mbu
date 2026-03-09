@@ -19,6 +19,8 @@ The seven priorities of survival are a framework for decision-making when everyt
 
 Before diving into the seven priorities, understand the Rule of Threes: you can survive approximately three weeks without food, three days without water, but only three hours without shelter in harsh conditions—and only three *minutes* without a good decision. What kills people fastest in wilderness emergencies isn't starvation or thirst. It's panic, bad decisions, and exposure.
 
+{{< drg/image src="images/seven-priorities-visual-hierarchy.avif" alt="Seven priorities of survival ranked from most to least urgent" >}}
+
 ## Priority 1: Shelter & Protection from Elements
 
 **Survival time without it: 3 hours (in harsh conditions)**
@@ -238,8 +240,6 @@ You took a wrong turn on a trail and realize you're lost. Panic is setting in.
 {{< drg/tip >}}
 Memorize the seven priorities. In a real emergency, you won't have time to think—you'll act on what you've internalized. The priorities are ranked by what kills fastest, not by what matters most psychologically.
 {{< /drg/tip >}}
-
-{{< drg/image src="images/seven-priorities-visual-hierarchy.avif" alt="Seven priorities ranked by survival timeframe" >}}
 
 {{< drg/next-page
     text="Knowing the priorities is one thing; avoiding panic when they're needed is another"

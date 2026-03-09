@@ -131,8 +131,6 @@ A detailed trip plan has saved countless lives. Rescue teams can focus on a spec
 Make trip planning a habit for every outing, no matter how short or how familiar the area. A day hike that goes wrong is just as much an emergency as a multi-day backpacking trip. The best time to prevent an emergency is before you leave.
 {{< /drg/tip >}}
 
-{{< drg/image src="images/trip-planning-checklist.avif" alt="Trip plan checklist review" >}}
-
 {{< drg/next-page
     text="With hazards understood, kits assembled, and trips planned, you're ready to learn the foundation of all survival decisions"
     teaser="the seven priorities of survival."

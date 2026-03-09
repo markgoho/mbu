@@ -67,6 +67,8 @@ The shell is your armor against wind and rain. A good shell is breathable so swe
 The shell layer is the easiest to add or remove. If you're warming up during a hike, unzip it before you sweat. If clouds roll in, put it on before you get wet. This responsiveness prevents overheating and the wet clothes that cause problems.
 {{< /drg/tip >}}
 
+{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Three layering systems compared: cold weather, hot weather, and wet weather" >}}
+
 ## Clothing for Extremely Cold Weather
 
 When temperatures drop below 30°F, proper clothing is the difference between a fun hike and a life-threatening situation.
@@ -183,6 +185,8 @@ Your feet are your foundation. Bad footwear ruins hikes and creates survival sit
 - **Quick-drying:** Avoid leather if possible—it stays wet. Synthetic dries faster.
 - **Good drainage:** Holes or mesh that lets water escape. Boots filled with water are nearly unusable.
 
+{{< drg/image src="images/footwear-terrain-selection.avif" alt="Four types of hiking footwear matched to terrain type" >}}
+
 {{< drg/did-you-know >}}
 Cotton clothing kills Scouts. Hypothermia frequently happens in temperatures above freezing, not only in extreme cold. A Scout in cotton clothes soaked by rain at 45°F is in serious danger. Synthetic or wool base layers aren't luxury—they're survival equipment.
 {{< /drg/did-you-know >}}
@@ -227,10 +231,6 @@ You're 4 miles from the trailhead and a sudden downpour soaks you.
 - **Find shelter if possible:** A dense tree grove or rock outcropping breaks wind and reduces rain exposure.
 - **Once sheltered, change:** Remove wet layers and put on anything dry—an emergency jacket, dry socks, extra shirt.
 {{< /drg/be-prepared >}}
-
-{{< drg/image src="images/clothing-layers-hot-cold-wet.avif" alt="Clothing layers for different weather conditions" >}}
-
-{{< drg/image src="images/footwear-terrain-selection.avif" alt="Four types of hiking footwear for different terrain and conditions" >}}
 
 {{< drg/next-page
     text="Now that you know the clothing systems for different weather, learn how to protect your shelter and camp from wildlife"

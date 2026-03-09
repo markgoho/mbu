@@ -82,6 +82,8 @@ Nature often provides partial shelters:
 
 **Dense evergreen trees:** Branches form a natural shelter. Clear space beneath, add leaves for insulation, and you have a quick shelter.
 
+{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Three forest shelter types in cross-section: lean-to, A-frame debris shelter, and rock overhang with labeled construction details" >}}
+
 ### Building Materials and Methods
 
 **Ridgepole (main branch):** Must be strong enough to support weight. Test it before committing branches to it. Thicker is better than thin.
@@ -133,6 +135,8 @@ The easiest and most effective snow shelter.
 **Time to build:** 1-3 hours depending on snow conditions
 
 **Protection:** Excellent insulation. The snow blocks wind completely. Interior temperature stays around 32°F even in extreme cold outside.
+
+{{< drg/image src="images/snow-cave-cross-section.avif" alt="Cross-section of a snow cave showing entrance tunnel, raised sleeping platform, ventilation hole, and cold air sump" >}}
 
 {{< drg/video
     title="Tree Well Shelter"
@@ -221,10 +225,6 @@ Snow is so good at insulation that people have survived outdoor temperatures of 
     title="How to Build a Survival Shelter"
     url="https://youtu.be/wTQqrECMkPE"
     description="Comprehensive video on building debris shelters and other forest survival structures." >}}
-
-{{< drg/image src="images/forest-shelter-types-comparison.avif" alt="Three forest shelter types side-by-side" >}}
-
-{{< drg/image src="images/snow-cave-cross-section.avif" alt="Cross-section diagram of a snow cave showing entrance tunnel, sleeping platform, and ventilation" >}}
 
 {{< drg/next-page
     text="Now that you know how to describe shelter-building, you're ready to actually build one and spend a night testing it"

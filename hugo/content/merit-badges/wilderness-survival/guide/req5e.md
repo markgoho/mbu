@@ -110,6 +110,8 @@ Describing how to build a shelter is one thing. Actually building one from scrat
 - Add more insulation to weak spots
 - Make sure it's cozy, not spacious
 
+{{< drg/image src="images/shelter-interior-annotated.avif" alt="Annotated interior of a completed debris shelter showing labeled survival features: thick leaf bedding, insulation layers, ridgepole, and entrance orientation" >}}
+
 ### Environmental Responsibility
 
 **Leave no trace:**
@@ -234,10 +236,6 @@ Bring a journal or notebook. During the night (use a headlamp if you wake up), w
 {{< drg/did-you-know >}}
 Many Scouts find that their first shelter-building attempt is uncomfortable or has problems—and that's exactly the point. The requirement asks you to improvise and learn through experience. A Scout who builds a flawed shelter, discovers the flaw, and learns from it has fulfilled the requirement better than one who copies a perfect design from a book.
 {{< /drg/did-you-know >}}
-
-{{< drg/image src="images/shelter-building-in-progress.avif" alt="Scout building a debris shelter from branches and leaves" >}}
-
-{{< drg/image src="images/completed-shelter-interior.avif" alt="Interior of a completed debris shelter with leaf and pine needle bedding" >}}
 
 {{< drg/next-page
     text="With shelter mastered, you're ready to move on to the next survival priority after protection from the elements"
