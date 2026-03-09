@@ -67,10 +67,9 @@ During fetal development, friction ridges form in specific patterns at these loc
 
 Forensic examiners and crime scene investigators understand that friction ridges can appear on any volar surface. A burglar who broke a window with a bare hand might leave a palm print on the glass. A suspect who walked barefoot through a crime scene might leave footprints. An examiners looks for ridge patterns anywhere on the volar surface—not just on the ten fingers.
 
-{{< drg/external-link
+{{< drg/video
     title="Fingerprint Ridge Patterns"
-    url="https://www.youtube.com/watch?v=FPHOJ-0ljV8"
-    description="A video explaining the anatomy of fingerprint ridges and where they're found on the body." >}}
+    url="https://www.youtube.com/watch?v=FPHOJ-0ljV8" >}}
 
 {{< drg/checklist title="Friction Ridge Locations Checklist" subtitle="Can you name all the body surfaces where friction ridges are found?" >}}
 - [ ] Ten fingertips (volar surface of fingers)

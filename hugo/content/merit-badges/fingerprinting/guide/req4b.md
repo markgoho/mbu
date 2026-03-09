@@ -111,10 +111,9 @@ Both show your ridge patterns. Both are valid. But they look different because o
 If you're experimenting with developing latent fingerprints (which some Scouts do for fun after earning this badge), remember: some fingerprint development methods use toxic chemicals like fuming with cyanoacrylate (super glue fumes). The tape-and-pencil method is safe and doesn't require chemicals, but more advanced techniques should only be done with professional supervision and proper safety equipment.
 {{< /drg/safety-first >}}
 
-{{< drg/external-link
+{{< drg/video
     title="Developing Latent Fingerprints With Black Powder"
-    url="https://www.youtube.com/watch?v=tqFzVfPRd5s"
-    description="A video showing how forensic examiners use powder to develop latent fingerprints, similar in principle to the pencil-graphite method." >}}
+    url="https://www.youtube.com/watch?v=tqFzVfPRd5s" >}}
 
 {{< drg/be-prepared title="Comparing Your Fingerprints to a Classmate's" >}}
 If you want to explore fingerprinting further, try this activity:

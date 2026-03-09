@@ -115,25 +115,21 @@ Companies like Apple, Google, and Microsoft are pushing "passkeys"—a modern ap
 Never share your passwords, PINs, biometric data, or tokens with anyone except trusted family members. Be cautious about biometric systems that aren't from reputable companies—your fingerprints and facial data are permanent and sensitive. If a company's biometric system is hacked, you can't change your fingerprints like you can change a password.
 {{< /drg/safety-first >}}
 
-{{< drg/external-link
+{{< drg/video
     title="What Is Multifactor Authentication"
-    url="https://youtu.be/L3alw3iXaio?si=JYHojryXMcsBnHmz"
-    description="A clear explanation of how multifactor authentication combines multiple security methods." >}}
+    url="https://youtu.be/L3alw3iXaio?si=JYHojryXMcsBnHmz" >}}
 
-{{< drg/external-link
+{{< drg/video
     title="Token Authentication"
-    url="https://www.youtube.com/watch?v=UBUNrFtufWo"
-    description="An explanation of how tokens (physical objects) are used for authentication." >}}
+    url="https://www.youtube.com/watch?v=UBUNrFtufWo" >}}
 
-{{< drg/external-link
+{{< drg/video
     title="Biometric Authentication Technology"
-    url="https://youtu.be/uRwh0t7RabA?si=mm9nKjMZX-eSkGtc"
-    description="How biometric systems like fingerprints work for authentication." >}}
+    url="https://youtu.be/uRwh0t7RabA?si=mm9nKjMZX-eSkGtc" >}}
 
-{{< drg/external-link
+{{< drg/video
     title="Science of Innovation -- Biometrics"
-    url="https://www.youtube.com/watch?v=IlThIvXn2Hk"
-    description="An in-depth look at biometric technology and its applications." >}}
+    url="https://www.youtube.com/watch?v=IlThIvXn2Hk" >}}
 
 {{< drg/checklist title="Authentication in Your Daily Life" subtitle="Where do you encounter tokens, passwords, and biometrics?" >}}
 - [ ] Phone unlock (password, biometric, or both?)

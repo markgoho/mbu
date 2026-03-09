@@ -83,15 +83,13 @@ Scientists have found a few rare conditions where fingerprints can be slightly a
 
 These exceptions are so rare that they actually strengthen the rule: for virtually all people, your fingerprints are unique to you and unchanged throughout your life.
 
-{{< drg/external-link
+{{< drg/video
     title="Principles of Fingerprint Science"
-    url="https://www.youtube.com/watch?v=qX6hFXHDmk4"
-    description="A detailed video explaining the scientific principles that make fingerprint identification work." >}}
+    url="https://www.youtube.com/watch?v=qX6hFXHDmk4" >}}
 
-{{< drg/external-link
+{{< drg/video
     title="Why Are Your Fingerprints Unique?"
-    url="https://www.youtube.com/watch?v=iCRy8voU5dE"
-    description="An exploration of how random fetal development creates unique fingerprints." >}}
+    url="https://www.youtube.com/watch?v=iCRy8voU5dE" >}}
 
 {{< drg/checklist title="The Two Principles" subtitle="Can you explain each one?" >}}
 - [ ] **Uniqueness (Individuality)**: Every fingerprint is different; no two people have identical prints

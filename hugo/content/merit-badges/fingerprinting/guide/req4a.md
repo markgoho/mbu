@@ -153,10 +153,9 @@ If you complete this merit badge and want to show your fingerprints to law enfor
 Most officers enjoy talking to Scouts about their work.
 {{< /drg/be-prepared >}}
 
-{{< drg/external-link
+{{< drg/video
     title="How to Roll Fingerprints"
-    url="https://www.youtube.com/watch?v=d7N-4UNAzsw"
-    description="A detailed video demonstrating the proper technique for taking rolled fingerprints." >}}
+    url="https://www.youtube.com/watch?v=d7N-4UNAzsw" >}}
 
 {{< drg/tip >}}
 If your first attempt doesn't look perfect, don't worry. Real law enforcement fingerprinting sometimes requires multiple attempts. The goal is to get clear, complete impressions that show your ridge patterns. Even partial or less-than-perfect cards are valuable learning experiences.

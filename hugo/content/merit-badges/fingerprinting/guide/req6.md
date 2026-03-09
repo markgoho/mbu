@@ -189,10 +189,9 @@ Here's a structured way to research your chosen career:
     url="https://www.facebook.com/share/v/1EAoePRyer/"
     description="A video interview with a fingerprint technician discussing their career." >}}
 
-{{< drg/external-link
+{{< drg/video
     title="Latent Fingerprinting Examiner"
-    url="https://youtu.be/aJaNnqnje-4?si=gpxvbC4fTZDtEFhg"
-    description="A detailed look at what latent fingerprinting examiners do and how they work." >}}
+    url="https://youtu.be/aJaNnqnje-4?si=gpxvbC4fTZDtEFhg" >}}
 
 Additional research strategies:
 

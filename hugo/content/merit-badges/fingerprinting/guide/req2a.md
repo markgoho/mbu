@@ -79,10 +79,9 @@ AFIS and biometric systems serve different missions. AFIS solves crimes by compa
 
 Think of it this way: AFIS asks, "Who is this person?" Biometric systems ask, "Are you who you say you are?" The questions are different, so the systems are different.
 
-{{< drg/external-link
+{{< drg/video
     title="AFIS - Automated Fingerprint Identification System"
-    url="https://www.youtube.com/watch?v=VRdGtGYQ7WE"
-    description="A detailed explanation of how law enforcement uses AFIS to solve crimes." >}}
+    url="https://www.youtube.com/watch?v=VRdGtGYQ7WE" >}}
 
 {{< drg/tip >}}
 The next time you unlock your phone with your fingerprint or scan your finger at an airport, remember: you're experiencing two different applications of the same biometric principle—uniqueness of fingerprints. AFIS uses that uniqueness to solve crimes. Biometric systems use it for convenience and security.

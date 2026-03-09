@@ -69,20 +69,17 @@ When you're fingerprinted by law enforcement or government agencies, make sure t
 | **Access** | Police and law enforcement only | Government agencies and authorized employers |
 | **Kept indefinitely?** | Yes, typically permanent | Varies by agency and reason for fingerprinting |
 
-{{< drg/external-link
+{{< drg/video
     title="The Origins of Fingerprinting and How They Became a Staple in Modern Forensic Science"
-    url="https://www.youtube.com/watch?v=fMLGROOcvWQ"
-    description="A short video explaining how fingerprinting was discovered and adopted by law enforcement." >}}
+    url="https://www.youtube.com/watch?v=fMLGROOcvWQ" >}}
 
-{{< drg/external-link
+{{< drg/video
     title="How Did Detectives Solve the Case of the Bloody Fingerprints?"
-    url="https://youtu.be/__nlupHISg0?si=YZ6NXUgVMs4VwfFJ"
-    description="A real crime case solved using fingerprint evidence." >}}
+    url="https://youtu.be/__nlupHISg0?si=YZ6NXUgVMs4VwfFJ" >}}
 
-{{< drg/external-link
+{{< drg/video
     title="History of Fingerprinting"
-    url="https://www.youtube.com/watch?v=wg-lgiPV4rw"
-    description="A comprehensive overview of how fingerprinting became central to law enforcement." >}}
+    url="https://www.youtube.com/watch?v=wg-lgiPV4rw" >}}
 
 {{< drg/tip >}}
 When you complete this merit badge, you'll understand both sides of fingerprinting—the forensic science that catches criminals and the everyday identification systems that verify who you are. Keep that distinction in mind as you move through the other requirements.
