@@ -184,6 +184,16 @@ Here's a structured way to research your chosen career:
     url="https://www.ziprecruiter.com/t/Most-Popular-Types-Of-Jobs-Using-Fingerprinting"
     description="A summary of career options in fingerprinting and biometrics, with salary ranges." >}}
 
+{{< drg/external-link
+    title="Fingerprint Technician"
+    url="https://www.facebook.com/share/v/1EAoePRyer/"
+    description="A video interview with a fingerprint technician discussing their career." >}}
+
+{{< drg/external-link
+    title="Latent Fingerprinting Examiner"
+    url="https://youtu.be/aJaNnqnje-4?si=gpxvbC4fTZDtEFhg"
+    description="A detailed look at what latent fingerprinting examiners do and how they work." >}}
+
 Additional research strategies:
 
 - **Bureau of Labor Statistics** (bls.gov): Search for "forensic science technician" or "information security analyst" for official job descriptions, salary data, and job outlook.

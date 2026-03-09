@@ -120,6 +120,21 @@ Never share your passwords, PINs, biometric data, or tokens with anyone except t
     url="https://youtu.be/L3alw3iXaio?si=JYHojryXMcsBnHmz"
     description="A clear explanation of how multifactor authentication combines multiple security methods." >}}
 
+{{< drg/external-link
+    title="Token Authentication"
+    url="https://www.youtube.com/watch?v=UBUNrFtufWo"
+    description="An explanation of how tokens (physical objects) are used for authentication." >}}
+
+{{< drg/external-link
+    title="Biometric Authentication Technology"
+    url="https://youtu.be/uRwh0t7RabA?si=mm9nKjMZX-eSkGtc"
+    description="How biometric systems like fingerprints work for authentication." >}}
+
+{{< drg/external-link
+    title="Science of Innovation -- Biometrics"
+    url="https://www.youtube.com/watch?v=IlThIvXn2Hk"
+    description="An in-depth look at biometric technology and its applications." >}}
+
 {{< drg/checklist title="Authentication in Your Daily Life" subtitle="Where do you encounter tokens, passwords, and biometrics?" >}}
 - [ ] Phone unlock (password, biometric, or both?)
 - [ ] Email login (password? two-factor authentication?)

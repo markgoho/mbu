@@ -136,6 +136,11 @@ Fingerprints can be damaged or degraded by environmental factors (heat, moisture
     url="https://youtu.be/fd8reN4uoBM?si=0GxHgY5rv0kw9XEA"
     description="A balanced examination of fingerprint reliability, including discussions of both strengths and limitations." >}}
 
+{{< drg/external-link
+    title="Fingerprint Evidence"
+    url="https://youtu.be/t3ppAEvI2kI?si=vSffPDpu6oJrYJZa"
+    description="How fingerprint evidence is collected, analyzed, and used in criminal investigations." >}}
+
 {{< drg/tip >}}
 The next time you read about a crime being solved by fingerprint evidence, remember the process: a forensic examiner found a latent print, compared it using the ACE-V method, reached a conclusion, got a second examiner to verify it, and then presented that evidence in court. It's not instantaneous like TV shows suggest—it's a careful, methodical process.
 {{< /drg/tip >}}
