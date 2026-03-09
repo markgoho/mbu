@@ -94,10 +94,6 @@ When temperatures drop below 30°F, proper clothing is the difference between a 
 
 **Don't wear jeans.** Denim absorbs water, dries slowly, and loses insulation when wet. Wear synthetic or wool pants.
 
-{{< drg/video
-    title="How to Layer in Cold Weather"
-    url="https://youtu.be/UEb3w3H4dDM" >}}
-
 ## Clothing for Hot and Dry Weather
 
 In extreme heat, your enemy is sun exposure and dehydration. Clothing serves to protect you from the sun, not to warm you.
@@ -156,10 +152,6 @@ Wet weather requires waterproof protection without trapping moisture that leads 
 **Don't ignore damp conditions.** Rain plus cool temperatures equals hypothermia risk. Dress for wet weather even if it's just "maybe" raining.
 
 **Don't go barefoot or in sandals.** Wet feet in cold weather is dangerous. Proper footwear is non-negotiable.
-
-{{< drg/video
-    title="Staying Warm and Dry in Wind and Rain"
-    url="https://youtu.be/t9NLAIxlWgE" >}}
 
 ## Footwear for Outdoor Conditions
 
