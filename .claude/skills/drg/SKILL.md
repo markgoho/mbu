@@ -234,7 +234,7 @@ next_title: "{Next Page Title}"
 
 4. **Cross-references** — Link to related requirement pages with natural language.
 
-5. **Images** — 1–2 `drg/image` shortcodes per page, placed at natural visual break points within the educational content. Images must appear **before** the transition CTA, never after it. **Every shortcode must reference a unique image** — never use the same `src` value in more than one shortcode across the entire guide.
+5. **Images** — 0–2 `drg/image` shortcodes per page. A page with zero images and great content is better than one with a generic photo. See "Image Value Test" below for when to include an image. When included, images must be **embedded at the point in the content where they're relevant** — immediately after the paragraph or section they illustrate, not clustered at the bottom of the page. Images must appear **before** the transition CTA, never after it. **Every shortcode must reference a unique image** — never use the same `src` value in more than one shortcode across the entire guide.
 
 6. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no images, no shortcodes, no text).
 
@@ -356,6 +356,38 @@ AI models hallucinate plausible-looking YouTube video IDs that don't correspond 
 
 4. **Fallback:** If no verified video can be found for a topic, use a `drg/external-link` to a reputable organization's video page instead of embedding a specific video. A guide page without a video is better than one with a broken embed.
 
+### Image Value Test
+
+Not every page needs an image. Before adding an image placeholder, apply this test:
+
+> **"Does this image teach something that text alone cannot?"**
+
+If the answer is no — if the image is just a mood shot, a generic photo of someone doing the activity, or scene-setting decoration — skip it. Pages that already have an embedded YouTube video often don't need an additional image. A guide with 12 high-value images is better than one with 30 generic ones.
+
+**High-value images** (include these):
+
+| Type | Example | Why it works |
+|---|---|---|
+| Labeled diagram | Compass with 15+ parts labeled | Reader learns part names by studying the image |
+| Identification grid | 6 bird beaks side-by-side with habitat labels | Reader can identify unknown specimens |
+| Correct vs incorrect | Proper vs improper knife grip, side-by-side | Reader immediately sees what to do and what to avoid |
+| Step-by-step sequence | 4 panels showing how to remove medical gloves | Reader can follow the procedure |
+| Before/after | Cloudy stream water vs crystal-clear filtered water | Dramatic contrast teaches effectiveness |
+| Annotated technique | Ferro rod angle with arrow showing strike direction | Reader learns the physical motion |
+
+**Low-value images** (skip these):
+
+| Type | Example | Why it fails |
+|---|---|---|
+| Generic activity photo | "Scout sitting in a shelter" | Shows result, teaches nothing about how to build it |
+| Mood/scene-setting | "Beautiful wilderness landscape" | Decorative, adds no educational content |
+| Redundant to text | Photo of a first-aid kit after you've listed every item | Reader already has the information |
+| Vague staging | "Tools arranged on a rock" | No labels, no context, no technique shown |
+
+**Placement rule:** Every image must appear **immediately after the paragraph or section it illustrates** — embedded mid-content at the moment the reader needs it. Never cluster images at the bottom of the page before the transition CTA. The reader should encounter the image while the relevant concept is fresh, not after they've already moved on mentally.
+
+**Anti-pattern:** Placing all images at the bottom of a page, right before `drg/next-page`. This makes images feel disconnected and decorative rather than educational.
+
 ### Image Placeholders
 
 During content writing, use HTML comment placeholders instead of image shortcodes (keeps Hugo build green before images exist):
@@ -367,7 +399,7 @@ During content writing, use HTML comment placeholders instead of image shortcode
 
 The optional `style:` hint indicates which image generation style to use (see Image Style Selection below). If omitted, the image defaults to `photo` style.
 
-Aim for 1-2 images per page at natural visual break points. Target **20–35 unique images** for a full guide. Every image must depict a **distinct subject** with a **distinct educational purpose** — never reuse the same image file in multiple shortcodes.
+Place each placeholder **inline with the content it supports** — directly after the paragraph that describes what the image shows. Do not group placeholders at the end of the page.
 
 **Anti-pattern:** Placing two `drg/image` shortcodes with the same `src` on a page (or anywhere in the guide). If a page has two image shortcodes, they must reference two different image files from the manifest.
 
@@ -387,7 +419,7 @@ The image generation pipeline supports six styles. Choose the style that best se
 
 | Content type | Style | When to use |
 |---|---|---|
-| Scouts doing an activity, scene-setting, mood | `photo` | Where photorealistic shots genuinely add value — action, environment, teamwork |
+| Scouts demonstrating a technique, real equipment in use | `photo` | Where photorealism adds value — action shots showing *how* to do something, real gear details |
 | Equipment parts, labeled anatomy, component breakdown | `diagram` | Clean labels, precise detail, no distracting scenery |
 | Safety technique with labeled checkpoints | `annotated-photo` | Realistic base + overlaid callouts at key positions |
 | Correct vs incorrect, before/after, do vs don't | `comparison` | Split-frame makes contrast unmistakable |
@@ -549,7 +581,7 @@ For each page:
 13. Draft 500–1500 words of educational content.
 14. Add 2–3 content element types.
 15. Add cross-references and transition CTA.
-16. Add image placeholders.
+16. Add image placeholders **inline with the content they support** — only where an image passes the Image Value Test. Some pages may have zero images; that is fine.
 
 ### Phase 4: Write extended-learning.md
 
@@ -561,7 +593,7 @@ For each page:
 
 **You MUST complete this phase — do not stop after writing content.**
 
-20. Create `images.json` in the guide directory. Target 20–35 unique images total (roughly 1–2 per requirement page, 2–3 for the introduction). **Every entry in `images.json` must have a unique `id`, and every `<!-- IMAGE: -->` placeholder in the content must correspond to exactly one manifest entry.** The total number of manifest entries must equal the total number of image placeholders across all pages — no duplicates, no orphans.
+20. Create `images.json` in the guide directory. **Only include images that passed the Image Value Test during content writing.** The total count will vary by badge — a badge with many visual techniques may have 20+ images while a discussion-heavy badge may have 8–12. Do not pad the count with generic photos. **Every entry in `images.json` must have a unique `id`, and every `<!-- IMAGE: -->` placeholder in the content must correspond to exactly one manifest entry.** The total number of manifest entries must equal the total number of image placeholders across all pages — no duplicates, no orphans.
 
 ```json
 {
@@ -621,6 +653,8 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] 2–3 content element types used
 - [ ] Safety addressed where warranted
 - [ ] At least one external link
+- [ ] Every image passes the Image Value Test (teaches something text alone cannot)
+- [ ] Images are placed inline with the content they illustrate (not clustered at bottom)
 - [ ] Image placeholders have descriptive alt-text
 - [ ] Each `drg/image` shortcode references a unique `src` (no duplicate image files on a page or across the guide)
 - [ ] Transition CTA bridges to next page
@@ -642,6 +676,8 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
 - [ ] All YouTube video embeds verified via `verify:youtube-links` (zero broken links, embed-disabled videos switched to `drg/external-link`)
 - [ ] Total `drg/image` shortcodes equals total `images.json` entries (1:1 parity, no duplicate src values)
+- [ ] No images clustered at page bottoms — every image appears inline with related content
+- [ ] Zero generic/decorative images — every image passes the Image Value Test
 
 ## Pull Request Workflow
 
