@@ -1,0 +1,132 @@
+{
+  "badge": "wilderness-survival",
+  "style_context": "Wilderness survival skills including shelter building, fire starting, first aid, water treatment, signaling for rescue, and outdoor emergency preparedness",
+  "images": [
+    {
+      "id": "tick-removal-technique",
+      "file": "req1a.md",
+      "style": "annotated-photo",
+      "description": "Close-up of correct tick removal technique: fine-tipped tweezers gripping a tick as close to the skin surface as possible, pulling straight upward with steady pressure. Annotated arrows show the correct grip position near the skin and the straight-up pull direction. A small inset in the corner shows the wrong methods crossed out: no matches, no petroleum jelly, no twisting",
+      "value": "Shows correct grip angle near skin, straight-up pull direction, and crossed-out wrong methods — hand positioning that text cannot convey"
+    },
+    {
+      "id": "exposure-conditions-shelter-types",
+      "file": "req5a.md",
+      "style": "comparison",
+      "description": "Five shelter types arranged in a row, each paired with its matching weather condition shown as an icon above it: snow cave under a snowflake icon, shade shelter under a sun icon, lean-to with tarp under a rain icon, rock windbreak under a wind icon, and elevated platform under a water/flood icon. Each shelter drawn in clean cross-section style showing key structural features",
+      "value": "Five shelter cross-sections paired with weather conditions — shows structural differences text describes abstractly"
+    },
+    {
+      "id": "clothing-layers-hot-cold-wet",
+      "file": "req5b.md",
+      "style": "comparison",
+      "description": "Three side-by-side columns showing complete clothing layering systems. Cold weather column: wool base layer, insulating fleece mid-layer, waterproof shell outer layer. Hot weather column: lightweight wicking shirt, wide-brim hat, loose long pants. Wet weather column: wicking base, waterproof breathable shell, rain pants. Each column shows a figure wearing the layers with layer names labeled",
+      "value": "Three layering systems as dressed figures side-by-side — visual comparison of layer thickness and coverage across climates"
+    },
+    {
+      "id": "footwear-terrain-selection",
+      "file": "req5b.md",
+      "style": "comparison",
+      "description": "Four types of hiking footwear shown side-by-side with terrain type labeled beneath each: sturdy hiking boots labeled 'rocky/mountain terrain', waterproof boots labeled 'wet/muddy trails', lightweight trail shoes labeled 'dry established trails', insulated winter boots labeled 'snow/cold weather'. Each boot shown in profile view with key features like ankle support, tread pattern, and waterproofing visible",
+      "value": "Four boot types in profile with visible structural differences (ankle height, tread, insulation) that text describes abstractly"
+    },
+    {
+      "id": "bear-camp-setup-diagram",
+      "file": "req5c.md",
+      "style": "diagram",
+      "description": "Bird's-eye view diagram of a properly organized backcountry campsite. Three distinct zones clearly labeled with distance measurements between them: sleeping area with tent at top, cooking and eating area 200 feet away at bottom-left, food storage area 200 feet away at bottom-right showing a bear hang rope system from a tall tree. Dotted lines with distance labels connect each zone. Prevailing wind arrow shows cooking downwind from sleeping",
+      "value": "Bird's-eye spatial layout of three camp zones with 200-foot distances and wind direction — spatial relationships impossible in text"
+    },
+    {
+      "id": "food-storage-methods-comparison",
+      "file": "req5c.md",
+      "style": "comparison",
+      "description": "Two food storage methods shown side-by-side with labeled components. Left panel: bear canister method — hard-sided canister on the ground 200 feet from camp, labeled 'bear canister.' Right panel: bear hang method — a rope over a high tree branch (at least 12 feet up and 6 feet from trunk) with a stuff sack hanging from it, measurements labeled with arrows showing the 12-foot height and 6-foot distance from trunk",
+      "value": "Bear hang measurements (12ft high, 6ft from trunk) as proportional diagram relative to a tree — makes abstract numbers spatially concrete"
+    },
+    {
+      "id": "forest-shelter-types-comparison",
+      "file": "req5d.md",
+      "style": "comparison",
+      "description": "Three forest shelter types shown side-by-side in cross-section view. Left: lean-to shelter with angled roof of branches against a ridgepole, open front, labeled parts (ridgepole, support posts, layered branches). Center: A-frame debris shelter with peaked roof, narrow entrance, labeled parts (ridgepole, ribbing branches, leaf insulation layer). Right: natural rock overhang with added branch wall across opening, labeled parts (rock ceiling, branch windbreak, ground insulation)",
+      "value": "Three shelter cross-sections showing roofline angles, ribbing, insulation layering — essential for understanding shelter geometry"
+    },
+    {
+      "id": "snow-cave-cross-section",
+      "file": "req5d.md",
+      "style": "diagram",
+      "description": "Cross-section cutaway diagram of a snow cave showing the internal structure. Key features labeled with arrows: entrance tunnel angled downward, raised sleeping platform positioned higher than the entrance to trap warm air, ventilation hole in the ceiling with a stick marking it from outside, smooth domed interior walls to prevent dripping, and cold air sump at the lowest point near the entrance",
+      "value": "Warm air stratification, raised sleeping platform, cold air sump, ventilation hole — teaches the physics of WHY the design works"
+    },
+    {
+      "id": "shelter-interior-annotated",
+      "file": "req5e.md",
+      "style": "annotated-photo",
+      "description": "Interior view of a completed debris shelter with annotated labels pointing to key survival features: thick leaf and pine needle bedding layer labeled '12+ inches ground insulation', dense branch and leaf roof overhead labeled '6+ inches roof insulation', small cramped interior space labeled 'small space retains body heat', entrance at one end labeled 'entrance faces away from wind'",
+      "value": "Visual scale reference for what 12+ inches of ground insulation and 6+ inches of roof insulation actually look like"
+    },
+    {
+      "id": "ferro-rod-technique-annotated",
+      "file": "req6.md",
+      "style": "annotated-photo",
+      "description": "Close-up of proper ferro rod fire-starting technique with annotated labels. Hands holding a ferro rod and striker over a prepared tinder bundle of dry grass and shredded bark. Arrows and labels show: '45-degree angle between rod and striker', 'push striker forward while holding rod steady', 'tinder bundle positioned to catch sparks', 'dry fine tinder like shredded cedar bark'. Bright sparks visible flying into the tinder",
+      "value": "Hand positions, 45-degree striker angle, spark trajectory, tinder placement — technique that cannot be taught in text"
+    },
+    {
+      "id": "fire-building-stages",
+      "file": "req6.md",
+      "style": "diagram",
+      "description": "Three stages of building a fire shown left to right in sequence with arrows between them. Stage 1: small tinder bundle with a glowing ember, labeled 'tinder — pencil-lead thin, dry and fluffy.' Stage 2: thin kindling sticks arranged in a teepee shape over small flames, labeled 'kindling — pencil-thick sticks.' Stage 3: a well-established campfire with larger fuel logs burning steadily, labeled 'fuel — wrist-thick logs.' Size comparison reference beside each stage",
+      "value": "Size progression from tinder → kindling → fuel with material thickness comparisons — makes 'pencil-thin' vs 'wrist-thick' concrete"
+    },
+    {
+      "id": "ground-to-air-signals",
+      "file": "req7a.md",
+      "style": "diagram",
+      "description": "Five standard ground-to-air signals shown from an aerial perspective, each in its own panel with a clear label: large X labeled 'unable to proceed / need help', large V labeled 'need assistance', arrow shape labeled 'traveling this direction', large F labeled 'need food and water', single straight line labeled 'all is well.' All signals shown at minimum 10-foot scale with a human figure for size reference",
+      "value": "The actual X, V, arrow, F, line symbols at scale with human figure — you must SEE these shapes to reproduce them"
+    },
+    {
+      "id": "signal-mirror-aiming-diagram",
+      "file": "req7b.md",
+      "style": "diagram",
+      "description": "Overhead diagram showing the geometry of signal mirror aiming. A person holding a mirror with sun behind them, reflected beam of light shown as a bright line traveling toward a distant aircraft. Key angles labeled: sun position, mirror angle, reflected beam path to target. A second small inset shows the hand technique: two fingers in a V forming a sight, with the bright reflection spot aligned between the fingers toward the target",
+      "value": "Sun → mirror → sighting hole → target geometry including V-finger aiming technique — light path angles essential for the technique"
+    },
+    {
+      "id": "ground-signal-size-visibility",
+      "file": "req7c.md",
+      "style": "diagram",
+      "description": "Bird's-eye view showing a large X signal on open ground made from dark logs and branches contrasting against lighter terrain. Measurement labels show the signal is at least 10 feet across in each direction. A small human figure stands next to the X for scale. Dotted line extending upward represents the line of sight from a search aircraft, emphasizing that bigger signals with higher contrast are more visible",
+      "value": "Ground signal from above with measurements and human scale figure — teaches what '30 feet' looks like from altitude"
+    },
+    {
+      "id": "water-treatment-comparison",
+      "file": "req8.md",
+      "style": "comparison",
+      "description": "Three water treatment methods shown side-by-side with labeled steps. Left panel: boiling method showing pot of water over campfire with label 'bring to rolling boil for 1 minute (3 minutes above 6500 ft).' Center panel: chemical treatment showing purification tablets dropping into a water bottle with label 'add tablets, wait 30 minutes.' Right panel: pump filter showing a portable filter pump drawing water from a stream into a clean bottle with label 'pump through 0.2 micron filter'",
+      "value": "Three methods side-by-side with visual step sequences — comparison of equipment and process at a glance"
+    },
+    {
+      "id": "water-filtration-before-after",
+      "file": "req8.md",
+      "style": "comparison",
+      "description": "Dramatic before-and-after comparison. Left side: a clear container of murky brown-green stream water with visible sediment, labeled 'untreated stream water.' Right side: a clear container of crystal-clear water with no visible particles, labeled 'after filtering.' Both containers shown in bright natural light to emphasize the dramatic contrast in clarity",
+      "value": "Dramatic visual contrast between turbid and clear water — motivates treatment through visual impact"
+    },
+    {
+      "id": "edible-plant-identification-grid",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "Grid showing five common edible wild plants, each in its own panel with detailed botanical illustration. Each panel shows the whole plant with key identifying features highlighted: (1) Dandelion with jagged leaves and yellow flower, (2) Wild onion with grass-like leaves and bulb, (3) Wood sorrel with heart-shaped clover-like leaves, (4) Cattail with long leaves and brown seedhead, (5) Pine with needles and cone. Each plant labeled with name and edible parts circled in green",
+      "value": "Five plants with identifying features highlighted — plant ID is inherently visual; leaf shapes must be seen"
+    },
+    {
+      "id": "dandelion-cattail-detail",
+      "file": "req9.md",
+      "style": "illustrated",
+      "description": "Detailed side-by-side botanical illustration of two plants. Left: complete dandelion showing bright yellow flower, deeply lobed jagged leaves, long taproot, with edible parts highlighted in green (young leaves, flower, root). Right: complete cattail showing tall brown fuzzy seedhead, long flat blade leaves, thick rhizome underground, with edible parts highlighted in green (young shoots, immature flower head, rhizome). Clean white background with clear labels",
+      "value": "Botanical illustration with edible parts color-coded — root systems, flowers, leaves with green highlights"
+    }
+  ]
+}

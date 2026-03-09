@@ -34,13 +34,12 @@ Use this table to find guides that demonstrate specific techniques. During Phase
 |---|---|---|
 | Printable worksheets | `bird-study/guide/field-notebook-worksheet/` | Form fields, check grids, draw areas, back-link + print button |
 | Markdown tables for comparisons | `bird-study/guide/req5.md`, `req6.md` | Feeding habitat table, beak/foot adaptation tables |
-| Rich `images.json` with style variety | `bird-study/guide/images.json` | Mix of photo, diagram, illustrated, comparison, infographic |
 | Granular requirement splitting | `cooking/guide/` | 37 pages; distinct sub-parts each get their own page |
 | Cross-references between requirements | `cooking/guide/req2e.md` | Natural inline links ("In Req 1e, you learned...") |
 | Scenario-driven hooks | `first-aid/guide/req1a.md` | Concrete "what would you do" opener |
 | Strong subject-specific intro | `first-aid/guide/_index.md` | Opens with a campsite injury scenario, not a generic greeting |
 | History section with depth | `bird-study/guide/_index.md` | Audubon-era collecting vs. modern citizen science |
-| Shortcode variety (4–6 types/page) | `astronomy/guide/` | Mixes safety-first, checklist, be-prepared, tip, external-link, image |
+| Shortcode variety (4–6 types/page) | `astronomy/guide/` | Mixes safety-first, checklist, be-prepared, tip, external-link shortcodes |
 
 All paths are relative to `hugo/content/merit-badges/`.
 
@@ -190,7 +189,7 @@ guide_nav:
 2. **History: "Then and Now"** — "Then" block (historical) and "Now" block (modern). For modern subjects, reframe as "Origins" / "Where We Are Today."
 3. **"Get Ready!" motivational callout** — 1–3 encouraging sentences.
 4. **"Kinds of {Subject}"** — Catalog varieties/types/domains within the subject. Each gets a heading, 1–2 paragraph description, and Safety First callout if warranted.
-5. **Transition CTA** — Bridge sentence + `{{</* drg/next-page */>}}` shortcode linking to first requirement.
+5. **Transition CTA** — Bridge sentence + `{{</* drg/next-page */>}}` shortcode linking to first requirement. **This must always be the very last element on the page.**
 
 ### Requirement Pages
 
@@ -226,15 +225,15 @@ next_title: "{Next Page Title}"
    | Demonstrate / Show | Step-by-step descriptions, checklists, video references |
    | Identify / List | Representative examples with context, encourage finding their own |
    | Research / Discuss | Frame key questions, multiple perspectives, authoritative links |
-   | Create / Plan / Build | Planning frameworks, templates, example completed plans |
-   | Do / Perform | Preparation guidance, safety info, practical tips, planning templates |
+   | Create / Plan / Build | Planning frameworks, printable worksheets (see Worksheets section below) |
+   | Do / Perform | Preparation guidance, safety info, practical tips, printable worksheets |
    | Choose one of several | Present all options, help Scout choose, guidance for each path |
 
 3. **Content elements** — At least 2–3 different types per page (see shortcode catalog below).
 
 4. **Cross-references** — Link to related requirement pages with natural language.
 
-5. **Transition CTA** — Bridge sentence connecting to the next requirement.
+5. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no shortcodes, no text).
 
 ### extended-learning.md — Extended Learning
 
@@ -334,7 +333,7 @@ Use `drg/be-prepared` for **scenario-based problem-solving** — situations the 
     url="https://www.youtube.com/watch?v=..." */>}}
 ```
 
-**IMPORTANT:** YouTube videos must ALWAYS use the `drg/video` shortcode, which embeds the video player directly on the page. Do NOT use `drg/external-link` for YouTube URLs — that renders as a plain link instead of an embed. Reserve `drg/external-link` for non-video resources (websites, articles, tools, organizations).
+**IMPORTANT:** YouTube videos should use the `drg/video` shortcode, which embeds the video player directly on the page. However, if a video has embedding disabled by its uploader (shows "Video unavailable" when embedded), use `drg/external-link` instead so users can still click through to watch it on YouTube. Reserve `drg/external-link` for non-video resources (websites, articles, tools, organizations) and for YouTube videos with embedding disabled.
 
 ### Video Verification Protocol
 
@@ -342,63 +341,17 @@ AI models hallucinate plausible-looking YouTube video IDs that don't correspond 
 
 1. **Never invent YouTube video IDs.** Do not guess or fabricate IDs. Every `drg/video` shortcode must reference a verified, existing video.
 
-2. **Verification method:** Before adding any `drg/video` shortcode, verify the video ID using noembed:
+2. **Verification method:** Before adding any `drg/video` shortcode, verify the video ID exists and is embeddable using YouTube's official oEmbed endpoint:
    ```
-   https://noembed.com/embed?url=https://www.youtube.com/watch?v={VIDEO_ID}
+   https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={VIDEO_ID}&format=json
    ```
-   If the JSON response contains `"error"`, the video does not exist — do not use it.
+   - **200 OK** with JSON → video exists and is embeddable, safe to use `drg/video`
+   - **401 Unauthorized** → video exists but embedding is disabled by the uploader. Use `drg/external-link` instead of `drg/video` so users can click through to YouTube.
+   - **404 Not Found** → video does not exist, is private, or was removed. Do not use it.
 
 3. **Finding real videos:** Use web search to find pages that embed relevant videos (e.g., search for "Red Cross CPR training video"), then extract video IDs from those pages. Prefer videos from reputable sources: American Red Cross, American Heart Association, CDC, Mayo Clinic, St John Ambulance, NOLS, REI, etc.
 
 4. **Fallback:** If no verified video can be found for a topic, use a `drg/external-link` to a reputable organization's video page instead of embedding a specific video. A guide page without a video is better than one with a broken embed.
-
-### Image Placeholders
-
-During content writing, use HTML comment placeholders instead of image shortcodes (keeps Hugo build green before images exist):
-
-```markdown
-<!-- IMAGE: filename-id.png | Alt text description -->
-<!-- IMAGE: compass-parts-labeled.png | Baseplate compass with all parts labeled | style:diagram -->
-```
-
-The optional `style:` hint indicates which image generation style to use (see Image Style Selection below). If omitted, the image defaults to `photo` style.
-
-Aim for 2-3 images per page at natural visual break points.
-
-**Uniform rule:** When an image depicts Scouts or teenagers in a Scouting context (meetings, service projects, badge activities, interviews with professionals), **default to describing them in a clean Scout uniform** unless the activity would genuinely damage a uniform. For messy activities (painting, gardening, cooking over a fire), describe Scouts in work clothes instead. Scout uniforms must always appear clean and presentable — no paint, mud, stains, or visible wear. Never depict the uniform as dirty or damaged.
-
-**Trademark rule:** The words "Scouting America," "Boy Scouts of America," or "BSA" must NEVER appear as visible rendered text in any generated image. The image generator may pick up these terms from descriptions and render them on clothing, signs, or backgrounds. Using "BSA uniform" or "Scout" in image descriptions is fine for conveying context — the restriction is specifically about the generated image containing those words as readable text.
-
-**Branding rule:** Image descriptions must NEVER include "Merit Badge University," "Study Guide," "Digital Resource Guide," or any project branding. The image generator will render these as visible text on the image. Generated images should be content-only — no titles, headers, watermarks, or branding of any kind.
-
-**People-label rule:** Demographic terms (age, gender, race, ethnicity, nationality) may appear in image description prompts to guide the scene, but must NEVER appear as visible rendered text, labels, or annotations in the generated image itself. For example, an annotated-photo description can say "a teenager climbing a wall" to set the scene, but no label or callout in the image should read "teenager" or "diverse" or any demographic term. Visible text in the image should only describe actions, equipment, techniques, or concepts.
-
-**Do NOT** wrap shortcode syntax inside HTML comments — Hugo still processes shortcodes inside comments, causing build errors.
-
-### Image Style Selection
-
-The image generation pipeline supports six styles. Choose the style that best serves the educational content — not every image needs to be a photo.
-
-| Content type | Style | When to use |
-|---|---|---|
-| Scouts doing an activity, scene-setting, mood | `photo` | Where photorealistic shots genuinely add value — action, environment, teamwork |
-| Equipment parts, labeled anatomy, component breakdown | `diagram` | Clean labels, precise detail, no distracting scenery |
-| Safety technique with labeled checkpoints | `annotated-photo` | Realistic base + overlaid callouts at key positions |
-| Correct vs incorrect, before/after, do vs don't | `comparison` | Split-frame makes contrast unmistakable |
-| Data, rules, principles, lists, steps | `infographic` | Icons + text hierarchy, scannable at a glance |
-| Field guide subject, equipment illustration | `illustrated` | Precise linework, labeled features, educational colors |
-
-**Quick decision rule:** If the image's primary job is to **label parts** or **show data**, use `diagram`/`illustrated`. If it's to **show people doing things**, use `photo` or `annotated-photo`. If it's to **contrast two things**, use `comparison`.
-
-**Infographic caution:** The `infographic` style tends to produce text-heavy images with illegible small text. AI image generators cannot reliably render readable text at web resolution, so infographics with sentences, paragraphs, or dense labels consistently fail. Prefer `illustrated` or `diagram` styles instead — they produce cleaner visuals with minimal text. Only use `infographic` when the content is genuinely data-driven (a few large numbers with icons) and the description explicitly limits text density.
-
-**Arrow and label accuracy warning:** The image generator handles photorealistic scenes and self-structuring diagrams well (e.g., compass parts, where the layout is inherent), but it cannot reliably place arrows or labels that must point to *specific* features in a complex scene. If a diagram requires multiple arrows each targeting a distinct spatial element (e.g., "this arrow points to the stream, that arrow points to the trail"), the arrows will frequently land on the wrong features. For these cases, prefer `photo` style showing the real subject (e.g., a photo of an actual orienteering map instead of a generated diagram of one) or use `diagram` only when the structure is simple enough that labels are unambiguous (e.g., a single object with parts radiating outward).
-
-**Diagram text density rule:** Diagrams and infographics should be **visual-first, text-light**. If more than ~30% of the image area would be occupied by text, the content is better served by HTML/CSS on the page (tables, styled lists, callout boxes) with the image focusing on the visual element only. The image generator produces illegible text at small sizes, so keep labels to short single words or very brief phrases. If you find yourself writing a description with multiple sentences of text that should appear *in* the image, rethink the approach — use the image for the visual component and put the text in the page content instead.
-
-**Angled and curved text warning:** The image generator cannot reliably render readable text along diagonal lines, curved paths, or triangle edges. Text placed along the sides of a triangle, around a circle, or on any non-horizontal surface will frequently appear malformed, overlapping, or illegible. When a diagram concept calls for text along angled elements (e.g., labels on triangle sides, text around a wheel), **redesign the layout to use horizontal text** — for example, replace a labeled triangle with three labeled boxes in a row, or use a grid/table layout instead of a circular arrangement.
-
-**Style values for `images.json`:** `"photo"` (default — omit field), `"diagram"`, `"infographic"`, `"illustrated"`, `"annotated-photo"`, `"comparison"`
 
 ## Handling Requirement Modes
 
@@ -422,6 +375,9 @@ Use this test: **"Would a Scout actually print this out, fill it in by hand, and
 - Requirements that say "create a list" or "prepare a checklist" for field use
 - Requirements with tables or forms the Scout fills in over time
 - Requirements where the Scout needs counselor sign-off on a planning artifact
+- Any content where you find yourself writing a fillable template, form, or blank-field layout
+
+**Anti-pattern:** Never put fillable templates, blank forms, or plan worksheets inline in a requirement page as code blocks, markdown tables with blank cells, or plain text with underscores. If a Scout would fill it out, it must be a printable worksheet page linked via `drg/download`. Inline code blocks with `___` blanks are a sign that a worksheet is needed.
 
 ### Worksheet File Convention
 
@@ -502,7 +458,7 @@ Each of these makes a reader pause. If your fact wouldn't survive a "so what?" c
 
 Aim for **4–6 different shortcode types per page** across the guide. If `safety-first` appears mechanically at the bottom of every section regardless of whether there is a genuine safety concern, something is wrong. Likewise, if every page follows the exact same pattern (requirement → two paragraphs → tip → checklist → safety-first → next-page), the guide reads like a template, not a teaching tool.
 
-Look at how the Astronomy guide mixes `safety-first`, `checklist`, `be-prepared`, `tip`, `external-link`, and `image` shortcodes within individual pages — varying the order and density based on what the content actually needs.
+Look at how the Astronomy guide mixes `safety-first`, `checklist`, `be-prepared`, `tip`, and `external-link` shortcodes within individual pages — varying the order and density based on what the content actually needs.
 
 ### Cross-References
 
@@ -530,7 +486,6 @@ Work through these phases in order without pausing for approval between phases. 
 
 8. Write front matter with complete `guide_nav`.
 9. Write Overview, History, Get Ready, Kinds of {Subject}, and Transition CTA.
-10. Add image placeholders.
 
 ### Phase 3: Write Requirement Pages (in order)
 
@@ -540,62 +495,21 @@ For each page:
 13. Draft 500–1500 words of educational content.
 14. Add 2–3 content element types.
 15. Add cross-references and transition CTA.
-16. Add image placeholders.
 
 ### Phase 4: Write extended-learning.md
 
-17. Write 2–4 deep-dive topics.
-18. Curate real-world experiences.
-19. List 3–6 relevant organizations.
+16. Write 2–4 deep-dive topics.
+17. Curate real-world experiences.
+18. List 3–6 relevant organizations.
 
-### Phase 5: Image Manifest
+### Phase 5: Verification
 
 **You MUST complete this phase — do not stop after writing content.**
 
-20. Create `images.json` in the guide directory with 2–3 images per page.
-
-```json
-{
-  "badge": "{slug}",
-  "style_context": "{Subject description}",
-  "images": [
-    {
-      "id": "descriptive-kebab-id",
-      "file": "_index.md",
-      "description": "Detailed scene description for AI image generator"
-    },
-    {
-      "id": "compass-parts-labeled",
-      "file": "req3.md",
-      "style": "diagram",
-      "description": "Baseplate compass with all major parts labeled..."
-    }
-  ]
-}
-```
-
-The `style` field is optional — omit it for standard photo images. Use it when a non-photo style (diagram, infographic, illustrated, annotated-photo, comparison) better serves the content. See Image Style Selection above for guidance.
-
-**`style_context` rules:** The `style_context` value is prepended to every image generation prompt. To prevent the AI image generator from injecting branding, logos, or organizational text into images:
-- Keep `style_context` purely descriptive of the **subject matter** (e.g., "Outdoor cooking, campfire safety, and food preparation techniques")
-- NEVER include organizational names: "Scouting America", "BSA", "Boy Scouts", "Merit Badge University"
-- NEVER include age ranges: "ages 11-17", "youth", "Scouts BSA members"
-- NEVER include project framing: "study guide", "educational resource", "merit badge guide"
-- The generation script already handles educational framing — `style_context` should only describe the visual domain
-
-21. **Run generation immediately** (do not ask the user or wait for approval): `bun run generate:drg-images {slug}` — This command may take several minutes for large guides. Let it run to completion.
-22. **Convert images to AVIF**: Run `bun run convert:drg-images -- --badge {slug}` to convert all generated PNGs to AVIF format (1200px wide, quality 80). Then delete the source PNGs: `rm hugo/content/merit-badges/{slug}/guide/images/*.png`
-23. **Convert all `<!-- IMAGE: -->` placeholders** to `{{</* drg/image src="images/{id}.avif" alt="..." */>}}` shortcodes. Match each placeholder's filename-id to the corresponding entry in `images.json`. Every placeholder must be converted — zero should remain.
-
-### Phase 6: Verification
-
-**You MUST complete this phase — do not stop after image generation.**
-
-24. Verify Hugo build passes: `bun run build`
-25. Check no orphan image placeholders remain (grep for `<!-- IMAGE:` — expect zero matches).
-26. Verify all YouTube video embeds: `bun run verify:youtube-links` (expect zero broken links).
-27. Verify all nav links and cross-references.
-28. Run through the quality checklist.
+19. Verify Hugo build passes: `bun run build`
+20. Verify all YouTube video embeds: `BADGE_SLUGS="{slug}" bun run verify:youtube-links` (expect zero broken links). If any videos are flagged as "embed disabled," switch those from `drg/video` to `drg/external-link`.
+21. Verify all nav links and cross-references.
+22. Run through the quality checklist.
 
 ## Quality Checklist
 
@@ -610,7 +524,6 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] 2–3 content element types used
 - [ ] Safety addressed where warranted
 - [ ] At least one external link
-- [ ] Image placeholders have descriptive alt-text
 - [ ] Transition CTA bridges to next page
 - [ ] Previous/Next navigation is correct
 - [ ] Content is 500–1500 words
@@ -628,7 +541,8 @@ The `style` field is optional — omit it for standard photo images. Use it when
 - [ ] Eagle Required displayed correctly based on `data.json`
 - [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
 - [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
-- [ ] All YouTube video embeds verified via noembed (zero broken links)
+- [ ] All YouTube video embeds verified via `verify:youtube-links` (zero broken links, embed-disabled videos switched to `drg/external-link`)
+- [ ] Consistent tone throughout
 
 ## Pull Request Workflow
 
@@ -638,7 +552,7 @@ At the **start** of the workflow, check the current git branch:
 git branch --show-current
 ```
 
-If the branch is **not `trunk`** (e.g., working in a worktree or feature branch), assume the user wants a pull request opened at the end. After Phase 6 (Verification) passes:
+If the branch is **not `trunk`** (e.g., working in a worktree or feature branch), assume the user wants a pull request opened at the end. After Phase 5 (Verification) passes:
 
 1. **Stage and commit** all guide files:
    ```bash
@@ -682,6 +596,5 @@ Start the dev server (`bun run hugo:dev`) or build (`bun run build`) and verify:
 ### Consistency
 
 - [ ] No uppercase sub-requirement letters — grep for `Req [0-9]+[A-Z]` patterns (zero matches = clean)
-- [ ] No orphan image placeholders — grep for `<!-- IMAGE:` (zero matches = all converted)
 - [ ] `guide_nav` titles in `_index.md` match each page's `title` front matter exactly
 - [ ] YAML indentation in `guide_nav` is consistent (2 spaces)

@@ -1,8 +1,14 @@
 /**
  * Verify all YouTube video links in DRG guide files.
  *
- * Uses the noembed API to check whether each YouTube video ID
- * actually resolves to a real video.
+ * Uses YouTube's official oEmbed API to check whether each YouTube video ID
+ * actually resolves to a real, embeddable video.
+ *
+ * Detects three states:
+ *   - ✅ Working: video exists and is embeddable
+ *   - ⚠️ Embed disabled: video exists but embedding is disabled (shows
+ *     "Video unavailable" when embedded, but watchable on YouTube directly)
+ *   - ❌ Broken: video does not exist, is private, or has been removed
  *
  * Usage:
  *   bun scripts/verify-youtube-links.ts
@@ -23,9 +29,11 @@ interface VideoEntry {
   shortcodeTitle: string;
 }
 
+type VideoStatus = "working" | "embed_disabled" | "broken";
+
 interface VerificationResult extends VideoEntry {
-  valid: boolean;
-  noembedTitle?: string;
+  status: VideoStatus;
+  oembedTitle?: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -54,27 +62,42 @@ function extractVideoId(url: string): string | null {
 }
 
 // ---------------------------------------------------------------------------
-// Noembed verification
+// YouTube oEmbed verification
 // ---------------------------------------------------------------------------
 
-/** Deterministic check: is the given YouTube video ID valid? */
-async function isYoutubeVideoValid(
+/**
+ * Check a YouTube video ID using YouTube's official oEmbed endpoint.
+ *
+ * Returns:
+ *   - "working"        → 200 OK with embed HTML (video is embeddable)
+ *   - "embed_disabled" → 401 Unauthorized (video exists but embedding disabled)
+ *   - "broken"         → 404 Not Found or other error (video doesn't exist)
+ */
+async function checkYoutubeVideo(
   videoId: string,
-): Promise<{ valid: boolean; title?: string }> {
-  const noembedUrl = `https://noembed.com/embed?url=https://www.youtube.com/watch?v=${videoId}`;
+): Promise<{ status: VideoStatus; title?: string }> {
+  const oembedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
 
-  const res = await fetch(noembedUrl);
-  if (!res.ok) {
-    return { valid: false };
+  try {
+    const res = await fetch(oembedUrl);
+
+    if (res.ok) {
+      const data = (await res.json()) as Record<string, unknown>;
+      return {
+        status: "working",
+        title: data.title as string | undefined,
+      };
+    }
+
+    if (res.status === 401) {
+      return { status: "embed_disabled" };
+    }
+
+    // 404 or any other error → broken
+    return { status: "broken" };
+  } catch {
+    return { status: "broken" };
   }
-
-  const data = (await res.json()) as Record<string, unknown>;
-
-  if (data.error) {
-    return { valid: false };
-  }
-
-  return { valid: true, title: data.title as string | undefined };
 }
 
 // ---------------------------------------------------------------------------
@@ -158,12 +181,12 @@ async function main() {
   // Verify each unique ID
   const verificationCache = new Map<
     string,
-    { valid: boolean; title?: string }
+    { status: VideoStatus; title?: string }
   >();
 
   let verified = 0;
   for (const videoId of uniqueIds) {
-    const result = await isYoutubeVideoValid(videoId);
+    const result = await checkYoutubeVideo(videoId);
     verificationCache.set(videoId, result);
     verified++;
 
@@ -174,7 +197,7 @@ async function main() {
       );
     }
 
-    // Small delay to avoid hammering noembed
+    // Small delay to avoid hammering YouTube's oEmbed endpoint
     await Bun.sleep(200);
   }
   console.log(`  Verified ${verified}/${uniqueIds.length} unique IDs.   \n`);
@@ -184,14 +207,15 @@ async function main() {
     const cached = verificationCache.get(entry.videoId)!;
     return {
       ...entry,
-      valid: cached.valid,
-      noembedTitle: cached.title,
+      status: cached.status,
+      oembedTitle: cached.title,
     };
   });
 
   // Report
-  const broken = results.filter((r) => !r.valid);
-  const working = results.filter((r) => r.valid);
+  const broken = results.filter((r) => r.status === "broken");
+  const embedDisabled = results.filter((r) => r.status === "embed_disabled");
+  const working = results.filter((r) => r.status === "working");
 
   console.log("=".repeat(80));
   console.log("RESULTS");
@@ -209,12 +233,36 @@ async function main() {
     }
   }
 
+  if (embedDisabled.length > 0) {
+    console.log(
+      `\n⚠️  EMBED DISABLED (${embedDisabled.length} references):\n`,
+    );
+    console.log(
+      `    These videos exist and are watchable on YouTube, but embedding`,
+    );
+    console.log(
+      `    is disabled by the uploader. They show "Video unavailable" when`,
+    );
+    console.log(
+      `    embedded. Consider switching from {{< drg/video >}} to`,
+    );
+    console.log(`    {{< drg/external-link >}} for these.\n`);
+    for (const r of embedDisabled) {
+      const relPath = r.file.replace(process.cwd() + "/", "");
+      console.log(`  ${relPath}:${r.line}`);
+      console.log(`    Video ID: ${r.videoId}`);
+      console.log(`    Title:    ${r.shortcodeTitle}`);
+      console.log(`    URL:      ${r.url}`);
+      console.log();
+    }
+  }
+
   if (working.length > 0) {
     console.log(`\n✅ WORKING (${working.length} references):\n`);
     for (const r of working) {
       const relPath = r.file.replace(process.cwd() + "/", "");
       const titleMatch =
-        r.noembedTitle === r.shortcodeTitle ? "✓" : `≠ "${r.noembedTitle}"`;
+        r.oembedTitle === r.shortcodeTitle ? "✓" : `≠ "${r.oembedTitle}"`;
       console.log(`  ${relPath}:${r.line}`);
       console.log(`    Video ID: ${r.videoId}  |  Title: ${titleMatch}`);
     }
@@ -226,26 +274,34 @@ async function main() {
   console.log(`  Total references: ${results.length}`);
   console.log(`  Unique video IDs: ${uniqueIds.length}`);
   console.log(`  Working:          ${working.length}`);
+  console.log(`  Embed disabled:   ${embedDisabled.length}`);
   console.log(`  Broken:           ${broken.length}`);
 
-  // Group broken by badge
-  if (broken.length > 0) {
-    const byBadge = new Map<string, VerificationResult[]>();
-    for (const r of broken) {
+  // Group broken + embed-disabled by badge
+  const problematic = [...broken, ...embedDisabled];
+  if (problematic.length > 0) {
+    const byBadge = new Map<string, { broken: number; embedDisabled: number }>();
+    for (const r of problematic) {
       const badgeMatch = r.file.match(/merit-badges\/([^/]+)\//);
       const badge = badgeMatch?.[1] ?? "unknown";
-      if (!byBadge.has(badge)) byBadge.set(badge, []);
-      byBadge.get(badge)!.push(r);
+      if (!byBadge.has(badge)) byBadge.set(badge, { broken: 0, embedDisabled: 0 });
+      const counts = byBadge.get(badge)!;
+      if (r.status === "broken") counts.broken++;
+      else counts.embedDisabled++;
     }
-    console.log("\n  Broken by badge:");
-    for (const [badge, items] of byBadge) {
-      console.log(`    ${badge}: ${items.length}`);
+    console.log("\n  Issues by badge:");
+    for (const [badge, counts] of byBadge) {
+      const parts: string[] = [];
+      if (counts.broken > 0) parts.push(`${counts.broken} broken`);
+      if (counts.embedDisabled > 0)
+        parts.push(`${counts.embedDisabled} embed disabled`);
+      console.log(`    ${badge}: ${parts.join(", ")}`);
     }
   }
 
   console.log();
 
-  // Exit with error code if broken links found
+  // Exit with error code if broken links found (embed-disabled is a warning, not a failure)
   if (broken.length > 0) {
     process.exit(1);
   }
