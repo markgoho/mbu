@@ -1,0 +1,104 @@
+{
+  "badge": "fly-fishing",
+  "style_context": "Fly-fishing techniques, tackle rigging, stream observation, and fish handling",
+  "images": [
+    {
+      "id": "fly-line-types-comparison",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Side-by-side educational comparison of four fly-line setups in clean horizontal panels: floating line riding on the water surface, sink-tip line with only the front section dropping below the surface, full-sinking line descending through the whole water column, and intermediate line riding just under the surface. Each panel shows the line shape in relation to the surface and a simple fly presentation depth. Use short horizontal labels only, no extra text, no branding.",
+      "value": "Shows where floating, sink-tip, full-sinking, and intermediate fly lines actually ride in the water column — a depth relationship text alone cannot convey"
+    },
+    {
+      "id": "casting-safety-bubble-comparison",
+      "file": "req1a.md",
+      "style": "comparison",
+      "description": "Split-frame comparison of safe versus unsafe fly-casting space. Left panel shows a Scout in a clean Scout uniform wearing sunglasses and hat with a clear open back-cast lane and no one nearby. Right panel shows an unsafe crowded situation with another person standing in the back-cast zone and brush snagging the line. Emphasize spacing, hook path, and eye protection. Only two or three short labels total, no branding.",
+      "value": "Contrasts safe casting spacing and eye protection with a dangerous crowded back-cast lane — immediate visual risk recognition that text cannot match"
+    },
+    {
+      "id": "tick-removal-technique",
+      "file": "req1b.md",
+      "style": "annotated-photo",
+      "description": "Close-up realistic educational photo of fine-tipped tweezers gripping a tick as close to the skin surface as possible on a human arm, pulling straight upward. Include a small crossed-out inset showing wrong methods such as twisting, squeezing the tick body, or using fingers. Keep labels very short and horizontal. No demographic labels, no branding, no extra text.",
+      "value": "Shows correct tweezer placement at skin level, straight-up pull direction, and crossed-out wrong removal methods — hand positioning that text cannot convey"
+    },
+    {
+      "id": "balanced-fly-tackle-system",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Clean labeled diagram of a complete fly-fishing setup laid out from left to right: reel, rod, fly line, tapered leader, tippet, and fly. Show the connections in order and make the taper of the leader visually obvious. Use short horizontal labels only, simple neutral background, precise educational layout, no branding.",
+      "value": "Shows the full reel-to-fly system in one connected visual with the leader taper and component order — structural relationships difficult to hold in text alone"
+    },
+    {
+      "id": "arbor-knot-tying-sequence",
+      "file": "req3a.md",
+      "style": "diagram",
+      "description": "Four-panel step-by-step diagram of an arbor knot on a fly reel spool. Panel 1 shows backing wrapped once around the reel arbor. Panel 2 shows an overhand knot tied around the standing line. Panel 3 shows a stopper knot in the tag end. Panel 4 shows the finished knot seated against the arbor. Use only one short label per panel, horizontal text, clean educational layout.",
+      "value": "Shows the exact sequence and finished seating of the arbor knot around the reel spool — the knot path is far easier to learn visually than from prose"
+    },
+    {
+      "id": "nail-knot-backing-to-fly-line",
+      "file": "req3b.md",
+      "style": "diagram",
+      "description": "Step-by-step knot diagram of a nail knot connecting backing to a fly line using a small tube. Show wrap direction around the fly line and tube, the tag end path through the tube channel, and the final slim tightened connection. Keep wraps neat and clearly separated. Short horizontal labels only, no extra text.",
+      "value": "Shows wrap direction, tag path, and the slim finished profile of a nail knot on fly line — exact knot structure that text alone is hard to picture"
+    },
+    {
+      "id": "leader-to-fly-line-loop-connection",
+      "file": "req3c.md",
+      "style": "diagram",
+      "description": "Clean instructional diagram of a loop-to-loop leader connection. Show a welded loop at the end of the fly line and a loop in the butt of the leader. Sequence shows leader loop passing through the fly-line loop, then the leader threaded through its own loop to create the handshake-style connection. Use short horizontal labels and simple arrows only where absolutely necessary.",
+      "value": "Shows the handshake-style loop-to-loop connection sequence and final orientation of both loops — a rigging relationship much clearer visually than in text"
+    },
+    {
+      "id": "surgeons-knot-tippet-connection",
+      "file": "req3d.md",
+      "style": "diagram",
+      "description": "Step-by-step diagram of a surgeon's knot joining leader and tippet. Show the two line ends overlapped, both tag ends passing together through a shared loop twice, and the finished knot seated with trimmed tags. Keep the line diameters slightly different to suggest leader and tippet. Minimal horizontal labels only, clean white background.",
+      "value": "Shows the overlap, double pass, and final seated shape of a surgeon's knot between leader and tippet — exact line path that is difficult to understand from text only"
+    },
+    {
+      "id": "improved-clinch-knot-sequence",
+      "file": "req3e.md",
+      "style": "diagram",
+      "description": "Instructional knot diagram of an improved clinch knot tied to a fly hook. Show the tag through the hook eye, five to seven wraps around the standing line, the tag through the first small loop, back through the larger loop, and the finished knot seated at the hook eye. Use brief horizontal labels and a clean educational layout.",
+      "value": "Shows the wrap order and two-loop path that make the improved clinch knot different from a basic clinch knot — precise knot routing text alone cannot show clearly"
+    },
+    {
+      "id": "fly-categories-identification-grid",
+      "file": "req4.md",
+      "style": "illustrated",
+      "description": "Field-guide style comparison grid with seven fly categories arranged in clean rows or columns: dry fly, wet fly, nymph, streamer, bass bug, popper, and saltwater fly. Each category shows a representative fly silhouette and a small companion silhouette of the prey it imitates, such as adult insect, nymph, baitfish, frog, or shrimp. Keep labels short and horizontal, colorful but educational, no branding.",
+      "value": "Shows the distinct shapes of seven fly categories alongside the prey types they imitate — side-by-side visual comparison that is much faster to grasp than a text list"
+    },
+    {
+      "id": "overhead-vs-roll-cast-comparison",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "Split educational diagram comparing overhead cast and roll cast. Left panel shows the overhead cast with aerial back cast and forward loop requiring open space behind the angler. Right panel shows the roll cast with line anchored on the water and a clear D-loop behind the rod. Use simple clean arrows and very short horizontal labels only. No clutter, no branding.",
+      "value": "Shows the different line paths, space needs, and D-loop shape for overhead versus roll casts — casting mechanics that are hard to visualize from text alone"
+    },
+    {
+      "id": "matching-the-hatch-observation-scene",
+      "file": "req6.md",
+      "style": "comparison",
+      "description": "Educational above-and-below-water comparison scene at a trout stream. Upper portion shows drifting adult insects, a few rising trout rings, and an angler observing before casting. Lower portion shows submerged nymphs under a turned stream rock and small prey moving in the current. Make the split clear and easy to read with minimal short labels only. No branding.",
+      "value": "Shows the simultaneous surface and subsurface food sources anglers must observe when matching the hatch — a combined view impossible to experience from text alone"
+    },
+    {
+      "id": "safe-fish-release-technique",
+      "file": "req7b.md",
+      "style": "annotated-photo",
+      "description": "Realistic educational photo of a fish being released in shallow water by a Scout wearing appropriate streamside wading clothes rather than a Scout uniform, with gentle wet hands supporting the fish upright in the water and forceps removing the fly. Show the correct handling clearly through the pose itself. Include only tiny crossed-out mistake symbols for dry hands, squeezing the fish, and fingers in the gills, with no words, no labels, no annotations, and no visible text anywhere in the image. Natural stream setting, no branding.",
+      "value": "Shows correct in-water support, wet-hand handling, and major release mistakes to avoid — fish-handling posture and pressure that text cannot demonstrate well"
+    },
+    {
+      "id": "freshwater-fish-identification-features",
+      "file": "req10.md",
+      "style": "illustrated",
+      "description": "Field-guide style illustration of a common freshwater sport fish with key identification features labeled: body profile, mouth shape, dorsal fin, tail shape, and lateral markings. Labels should be short single phrases, horizontal, and placed cleanly around the fish. Focus on anatomy useful for identification rather than species branding or decorative scenery.",
+      "value": "Shows the body shape, fin placement, mouth position, and markings anglers use to identify a fish — feature relationships that are much easier to compare visually than by description"
+    }
+  ]
+}
