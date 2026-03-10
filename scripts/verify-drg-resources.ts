@@ -4,8 +4,8 @@
  *
  * Walks the `resources` arrays in each badge's data.json, determines which
  * guide page should contain each resource, and checks that the resource URL
- * actually appears in that file (inside a drg/video or drg/external-link
- * shortcode).
+ * actually appears in that file. For combined requirement pages, it also checks
+ * that the resource appears under the correct `## Requirement ...` subsection.
  *
  * Usage:
  *   bun scripts/verify-drg-resources.ts
@@ -13,10 +13,6 @@
  */
 
 import { Glob } from "bun";
-
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
 
 interface Resource {
   title: string;
@@ -55,6 +51,14 @@ interface FoundResource {
   foundInFile: string;
 }
 
+interface MisplacedResource {
+  badge: string;
+  reqPath: string;
+  resource: Resource;
+  file: string;
+  sectionHeading: string;
+}
+
 interface WrongShortcode {
   file: string;
   line: number;
@@ -62,234 +66,339 @@ interface WrongShortcode {
   title: string;
 }
 
-// ---------------------------------------------------------------------------
-// Path → filename mapping
-// ---------------------------------------------------------------------------
-
-/**
- * Given a requirement path from data.json (e.g., "1", "2.a", "3.b",
- * "6.beef-cattle"), determine the expected guide markdown filename(s).
- *
- * Returns an array because a resource could appear on either a combined
- * page (req2.md covering 2a-2c) or a split page (req2a.md).
- */
-function reqPathToPossibleFiles(
-  slug: string,
-  path: string,
-): string[] {
-  const guideDir = `hugo/content/merit-badges/${slug}/guide`;
-  const parts = path.split(".");
-
-  if (parts.length === 1) {
-    // Top-level requirement: "1" → req1.md
-    return [`${guideDir}/req${parts[0]}.md`];
-  }
-
-  if (parts.length === 2) {
-    const parent = parts[0]!;
-    const child = parts[1]!;
-
-    // Check if this is a named option (e.g., "6.beef-cattle")
-    const isOption = /[a-z].*-/.test(child) || child.length > 1;
-
-    if (isOption) {
-      // Named option: "6.beef-cattle" → req6-beef-cattle.md or req6.md
-      return [
-        `${guideDir}/req${parent}-${child}.md`,
-        `${guideDir}/req${parent}.md`,
-      ];
-    }
-
-    // Standard sub-requirement: "2.a" → req2a.md or req2.md (combined page)
-    return [
-      `${guideDir}/req${parent}${child}.md`,
-      `${guideDir}/req${parent}.md`,
-    ];
-  }
-
-  if (parts.length === 3) {
-    // Deeply nested: "6.beef-cattle.a" → req6-beef-cattle.md
-    const parent = parts[0]!;
-    const option = parts[1]!;
-    const child = parts[2]!;
-
-    return [
-      `${guideDir}/req${parent}-${option}.md`,
-      `${guideDir}/req${parent}${child}.md`,
-      `${guideDir}/req${parent}.md`,
-    ];
-  }
-
-  // Fallback: try the most specific match
-  return [`${guideDir}/req${parts.join("")}.md`];
-}
-
-/**
- * Normalize a URL for comparison. Strips tracking parameters (si=...),
- * trailing slashes, and normalizes youtube short URLs to full form.
- */
-function normalizeUrl(url: string): string {
-  try {
-    const parsed = new URL(url);
-
-    // Remove common tracking params
-    parsed.searchParams.delete("si");
-    parsed.searchParams.delete("feature");
-
-    // Normalize youtu.be to youtube.com/watch
-    if (parsed.hostname === "youtu.be") {
-      const videoId = parsed.pathname.slice(1); // Remove leading /
-      return `youtube.com/watch?v=${videoId}`;
-    }
-
-    // Strip www. and protocol for comparison
-    let normalized = parsed.hostname.replace(/^www\./, "") + parsed.pathname;
-    const searchStr = parsed.searchParams.toString();
-    if (searchStr) normalized += "?" + searchStr;
-
-    // Remove trailing slash
-    return normalized.replace(/\/$/, "");
-  } catch {
-    return url;
-  }
-}
-
-/**
- * Check if a URL appears anywhere in the given file content.
- * Uses normalized comparison to handle youtu.be vs youtube.com differences
- * and tracking parameter variations.
- */
-function urlAppearsInContent(url: string, content: string): boolean {
-  // Direct substring check first (fastest path)
-  if (content.includes(url)) return true;
-
-  // Try normalized comparison
-  const normalizedTarget = normalizeUrl(url);
-
-  // Extract all URLs from the content and normalize each
-  const urlPattern = /https?:\/\/[^\s"'<>]+/g;
-  let match;
-  while ((match = urlPattern.exec(content)) !== null) {
-    if (normalizeUrl(match[0]) === normalizedTarget) return true;
-  }
-
-  // Also check for just the video ID in case the URL form differs
-  const videoIdMatch = url.match(
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^?&\s"]+)/,
-  );
-  if (videoIdMatch?.[1]) {
-    return content.includes(videoIdMatch[1]);
-  }
-
-  return false;
-}
-
-// ---------------------------------------------------------------------------
-// Recursive resource extraction
-// ---------------------------------------------------------------------------
-
 interface ResourceMapping {
   reqPath: string;
   reqText: string;
   resource: Resource;
 }
 
-/**
- * Recursively extract all resources from a requirement tree, preserving
- * which requirement path each resource belongs to.
- */
-function extractResources(req: Requirement, parentPath?: string): ResourceMapping[] {
-  const mappings: ResourceMapping[] = [];
-  const path = parentPath ? `${parentPath}.${req.req_id}` : req.path;
+function reqPathToPossibleFiles(slug: string, path: string): string[] {
+  const guideDirectory = `hugo/content/merit-badges/${slug}/guide`;
+  const pathParts = path.split(".");
 
-  if (req.resources) {
-    for (const resource of req.resources) {
+  if (pathParts.length === 1) {
+    return [`${guideDirectory}/req${pathParts[0]}.md`];
+  }
+
+  if (pathParts.length === 2) {
+    const parentPart = pathParts[0];
+    const childPart = pathParts[1];
+
+    if (parentPart === undefined || childPart === undefined) {
+      return [];
+    }
+
+    const isNamedOption = /[a-z].*-/.test(childPart) || childPart.length > 1;
+
+    if (isNamedOption) {
+      return [
+        `${guideDirectory}/req${parentPart}-${childPart}.md`,
+        `${guideDirectory}/req${parentPart}.md`,
+      ];
+    }
+
+    return [
+      `${guideDirectory}/req${parentPart}${childPart}.md`,
+      `${guideDirectory}/req${parentPart}.md`,
+    ];
+  }
+
+  if (pathParts.length === 3) {
+    const parentPart = pathParts[0];
+    const optionPart = pathParts[1];
+    const childPart = pathParts[2];
+
+    if (
+      parentPart === undefined ||
+      optionPart === undefined ||
+      childPart === undefined
+    ) {
+      return [];
+    }
+
+    return [
+      `${guideDirectory}/req${parentPart}-${optionPart}.md`,
+      `${guideDirectory}/req${parentPart}${childPart}.md`,
+      `${guideDirectory}/req${parentPart}.md`,
+    ];
+  }
+
+  return [`${guideDirectory}/req${pathParts.join("")}.md`];
+}
+
+function normalizeUrl(url: string): string {
+  try {
+    const parsedUrl = new URL(url);
+
+    parsedUrl.searchParams.delete("si");
+    parsedUrl.searchParams.delete("feature");
+
+    if (parsedUrl.hostname === "youtu.be") {
+      const videoId = parsedUrl.pathname.slice(1);
+      return `youtube.com/watch?v=${videoId}`;
+    }
+
+    let normalizedUrl =
+      parsedUrl.hostname.replace(/^www\./, "") + parsedUrl.pathname;
+    const searchString = parsedUrl.searchParams.toString();
+    if (searchString !== "") {
+      normalizedUrl += `?${searchString}`;
+    }
+
+    return normalizedUrl.replace(/\/$/, "");
+  } catch {
+    return url;
+  }
+}
+
+function urlAppearsInContent(url: string, content: string): boolean {
+  if (content.includes(url)) {
+    return true;
+  }
+
+  const normalizedTargetUrl = normalizeUrl(url);
+  const urlPattern = /https?:\/\/[^\s"'<>]+/g;
+
+  let urlMatch: RegExpExecArray | null = urlPattern.exec(content);
+  while (urlMatch !== null) {
+    const matchedUrl = urlMatch[0];
+    if (matchedUrl !== undefined && normalizeUrl(matchedUrl) === normalizedTargetUrl) {
+      return true;
+    }
+    urlMatch = urlPattern.exec(content);
+  }
+
+  const videoIdMatch = url.match(
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^?&\s"]+)/,
+  );
+  const videoId = videoIdMatch?.[1];
+  if (videoId !== undefined) {
+    return content.includes(videoId);
+  }
+
+  return false;
+}
+
+function requirementPathToHeading(reqPath: string): string | undefined {
+  const pathParts = reqPath.split(".");
+  if (pathParts.length !== 2) {
+    return undefined;
+  }
+
+  const parentPart = pathParts[0];
+  const childPart = pathParts[1];
+  if (parentPart === undefined || childPart === undefined) {
+    return undefined;
+  }
+
+  return `## Requirement ${parentPart}${childPart}:`;
+}
+
+function findSectionBounds({
+  content,
+  headingMatches,
+  headingIndex,
+}: {
+  content: string;
+  headingMatches: RegExpExecArray[];
+  headingIndex: number;
+}): { start: number; end: number } | undefined {
+  const currentHeadingMatch = headingMatches[headingIndex];
+  const sectionStart = currentHeadingMatch?.index;
+  if (sectionStart === undefined) {
+    return undefined;
+  }
+
+  const nextHeadingMatch = headingMatches[headingIndex + 1];
+  const sectionEnd = nextHeadingMatch?.index ?? content.length;
+
+  return { start: sectionStart, end: sectionEnd };
+}
+
+function findMisplacedResourceInCombinedPage({
+  badge,
+  reqPath,
+  resource,
+  filePath,
+  content,
+}: {
+  badge: string;
+  reqPath: string;
+  resource: Resource;
+  filePath: string;
+  content: string;
+}): MisplacedResource | undefined {
+  const expectedHeading = requirementPathToHeading(reqPath);
+  if (expectedHeading === undefined) {
+    return undefined;
+  }
+
+  if (!urlAppearsInContent(resource.url, content)) {
+    return undefined;
+  }
+
+  const headingMatches = Array.from(
+    content.matchAll(/^## Requirement ([^\n:]+):/gm),
+  );
+  if (headingMatches.length < 2) {
+    return undefined;
+  }
+
+  const expectedHeadingIndex = headingMatches.findIndex((headingMatch) => {
+    return headingMatch[0] === expectedHeading;
+  });
+
+  if (expectedHeadingIndex === -1) {
+    return undefined;
+  }
+
+  const expectedSectionBounds = findSectionBounds({
+    content,
+    headingMatches,
+    headingIndex: expectedHeadingIndex,
+  });
+  if (expectedSectionBounds === undefined) {
+    return undefined;
+  }
+
+  const expectedSection = content.slice(
+    expectedSectionBounds.start,
+    expectedSectionBounds.end,
+  );
+  if (urlAppearsInContent(resource.url, expectedSection)) {
+    return undefined;
+  }
+
+  for (let headingIndex = 0; headingIndex < headingMatches.length; headingIndex += 1) {
+    const headingMatch = headingMatches[headingIndex];
+    if (headingMatch === undefined) {
+      continue;
+    }
+
+    const sectionBounds = findSectionBounds({
+      content,
+      headingMatches,
+      headingIndex,
+    });
+    if (sectionBounds === undefined) {
+      continue;
+    }
+
+    const sectionContent = content.slice(sectionBounds.start, sectionBounds.end);
+    if (!urlAppearsInContent(resource.url, sectionContent)) {
+      continue;
+    }
+
+    const sectionHeading = headingMatch[0];
+    if (sectionHeading === undefined) {
+      continue;
+    }
+
+    return {
+      badge,
+      reqPath,
+      resource,
+      file: filePath,
+      sectionHeading,
+    };
+  }
+
+  return undefined;
+}
+
+function extractResources(
+  requirement: Requirement,
+  parentPath?: string,
+): ResourceMapping[] {
+  const mappings: ResourceMapping[] = [];
+  const currentPath = parentPath ? `${parentPath}.${requirement.req_id}` : requirement.path;
+
+  if (requirement.resources !== undefined) {
+    for (const resource of requirement.resources) {
       mappings.push({
-        reqPath: path,
-        reqText: req.text.slice(0, 80) + (req.text.length > 80 ? "..." : ""),
+        reqPath: currentPath,
+        reqText:
+          requirement.text.slice(0, 80) +
+          (requirement.text.length > 80 ? "..." : ""),
         resource,
       });
     }
   }
 
-  if (req.subrequirements) {
-    for (const sub of req.subrequirements) {
-      mappings.push(...extractResources(sub, path));
+  if (requirement.subrequirements !== undefined) {
+    for (const subrequirement of requirement.subrequirements) {
+      mappings.push(...extractResources(subrequirement, currentPath));
     }
   }
 
   return mappings;
 }
 
-// ---------------------------------------------------------------------------
-// YouTube shortcode misuse detection
-// ---------------------------------------------------------------------------
-
-/** Check if a URL points to YouTube. */
 function isYoutubeUrl(url: string): boolean {
   return /(?:youtube\.com|youtu\.be)/.test(url);
 }
 
-/**
- * Scan guide files for YouTube URLs inside drg/external-link shortcodes.
- * These should be using drg/video instead.
- */
-function findWrongShortcodes(fileCache: Map<string, string>): WrongShortcode[] {
+function findWrongShortcodes(
+  fileCache: Map<string, string>,
+): WrongShortcode[] {
   const issues: WrongShortcode[] = [];
 
-  // Match drg/external-link shortcodes that span multiple lines
-  // We look for the opening tag and then extract title + url from nearby lines
-  for (const [filePath, content] of fileCache) {
-    const lines = content.split("\n");
+  for (const [filePath, content] of fileCache.entries()) {
+    const contentLines = content.split("\n");
 
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i]!;
+    for (const [lineIndex, line] of contentLines.entries()) {
+      if (!line.includes("drg/external-link")) {
+        continue;
+      }
 
-      // Detect opening of a drg/external-link shortcode
-      if (!line.includes("drg/external-link")) continue;
+      const blockLines = contentLines.slice(
+        lineIndex,
+        Math.min(contentLines.length, lineIndex + 6),
+      );
+      const shortcodeBlock = blockLines.join("\n");
 
-      // Gather the shortcode block (typically 3-5 lines)
-      const blockLines = lines.slice(i, Math.min(lines.length, i + 6));
-      const block = blockLines.join("\n");
+      const urlMatch = shortcodeBlock.match(/url="([^"]+)"/);
+      const matchedUrl = urlMatch?.[1];
+      if (matchedUrl === undefined || !isYoutubeUrl(matchedUrl)) {
+        continue;
+      }
 
-      // Extract URL
-      const urlMatch = block.match(/url="([^"]+)"/);
-      if (!urlMatch?.[1]) continue;
+      const titleMatch = shortcodeBlock.match(/title="([^"]+)"/);
+      const matchedTitle = titleMatch?.[1] ?? "(no title)";
 
-      const url = urlMatch[1];
-      if (!isYoutubeUrl(url)) continue;
-
-      // Extract title
-      const titleMatch = block.match(/title="([^"]+)"/);
-      const title = titleMatch?.[1] ?? "(no title)";
-
-      issues.push({ file: filePath, line: i + 1, url, title });
+      issues.push({
+        file: filePath,
+        line: lineIndex + 1,
+        url: matchedUrl,
+        title: matchedTitle,
+      });
     }
   }
 
   return issues;
 }
 
-// ---------------------------------------------------------------------------
-// Main
-// ---------------------------------------------------------------------------
+async function main(): Promise<void> {
+  const configuredBadgeSlugs = process.env.BADGE_SLUGS?.split(",").map((slug) => {
+    return slug.trim();
+  });
 
-async function main() {
-  const badgeSlugs = process.env.BADGE_SLUGS?.split(",").map((s) => s.trim());
-
-  // Find all badges that have guide directories
   let slugsToCheck: string[];
 
-  if (badgeSlugs && badgeSlugs.length > 0) {
-    slugsToCheck = badgeSlugs;
+  if (configuredBadgeSlugs !== undefined && configuredBadgeSlugs.length > 0) {
+    slugsToCheck = configuredBadgeSlugs;
   } else {
-    // Find all badges with guide directories
     slugsToCheck = [];
-    const glob = new Glob("hugo/content/merit-badges/*/guide/_index.md");
-    for await (const path of glob.scan({ cwd: ".", absolute: false })) {
-      const match = path.match(/merit-badges\/([^/]+)\/guide/);
-      if (match?.[1]) slugsToCheck.push(match[1]);
+    const guideIndexGlob = new Glob("hugo/content/merit-badges/*/guide/_index.md");
+
+    for await (const path of guideIndexGlob.scan({ cwd: ".", absolute: false })) {
+      const badgeMatch = path.match(/merit-badges\/([^/]+)\/guide/);
+      const badgeSlug = badgeMatch?.[1];
+      if (badgeSlug !== undefined) {
+        slugsToCheck.push(badgeSlug);
+      }
     }
+
     slugsToCheck.sort();
   }
 
@@ -297,11 +406,11 @@ async function main() {
 
   const allMissing: MissingResource[] = [];
   const allFound: FoundResource[] = [];
+  const allMisplaced: MisplacedResource[] = [];
   const allWrongShortcodes: WrongShortcode[] = [];
   let totalResources = 0;
 
   for (const slug of slugsToCheck) {
-    // Load data.json
     const dataPath = `hugo/data/merit-badges/${slug}.json`;
     const dataFile = Bun.file(dataPath);
 
@@ -310,12 +419,11 @@ async function main() {
       continue;
     }
 
-    const data = (await dataFile.json()) as BadgeData;
-
-    // Extract all resources with their requirement paths
+    const badgeData = (await dataFile.json()) as BadgeData;
     const resourceMappings: ResourceMapping[] = [];
-    for (const req of data.requirements) {
-      resourceMappings.push(...extractResources(req));
+
+    for (const requirement of badgeData.requirements) {
+      resourceMappings.push(...extractResources(requirement));
     }
 
     if (resourceMappings.length === 0) {
@@ -325,106 +433,156 @@ async function main() {
 
     totalResources += resourceMappings.length;
 
-    // Load all guide files into a cache
     const fileCache = new Map<string, string>();
-    const guideGlob = new Glob(`hugo/content/merit-badges/${slug}/guide/**/*.md`);
-    for await (const path of guideGlob.scan({ cwd: ".", absolute: false })) {
-      const content = await Bun.file(path).text();
-      fileCache.set(path, content);
+    const guideFileGlob = new Glob(`hugo/content/merit-badges/${slug}/guide/**/*.md`);
+    for await (const guidePath of guideFileGlob.scan({ cwd: ".", absolute: false })) {
+      const guideContent = await Bun.file(guidePath).text();
+      fileCache.set(guidePath, guideContent);
     }
 
-    // Check each resource
-    let badgeMissing = 0;
-    let badgeFound = 0;
+    let badgeMissingCount = 0;
+    let badgeFoundCount = 0;
+    const badgeMisplaced: MisplacedResource[] = [];
 
-    for (const mapping of resourceMappings) {
-      const possibleFiles = reqPathToPossibleFiles(slug, mapping.reqPath);
+    for (const resourceMapping of resourceMappings) {
+      const possibleFiles = reqPathToPossibleFiles(slug, resourceMapping.reqPath);
       let found = false;
       const checkedFiles: string[] = [];
 
-      // Check the expected files first
       for (const expectedFile of possibleFiles) {
         const content = fileCache.get(expectedFile);
-        if (content && urlAppearsInContent(mapping.resource.url, content)) {
+        if (content === undefined) {
+          continue;
+        }
+
+        checkedFiles.push(expectedFile);
+
+        if (!urlAppearsInContent(resourceMapping.resource.url, content)) {
+          continue;
+        }
+
+        found = true;
+        allFound.push({
+          badge: slug,
+          reqPath: resourceMapping.reqPath,
+          resource: resourceMapping.resource,
+          foundInFile: expectedFile,
+        });
+
+        const misplacedResource = findMisplacedResourceInCombinedPage({
+          badge: slug,
+          reqPath: resourceMapping.reqPath,
+          resource: resourceMapping.resource,
+          filePath: expectedFile,
+          content,
+        });
+        if (misplacedResource !== undefined) {
+          badgeMisplaced.push(misplacedResource);
+          allMisplaced.push(misplacedResource);
+        }
+
+        break;
+      }
+
+      if (!found) {
+        for (const [filePath, content] of fileCache) {
+          if (possibleFiles.includes(filePath)) {
+            continue;
+          }
+
+          if (!urlAppearsInContent(resourceMapping.resource.url, content)) {
+            continue;
+          }
+
           found = true;
           allFound.push({
             badge: slug,
-            reqPath: mapping.reqPath,
-            resource: mapping.resource,
-            foundInFile: expectedFile,
+            reqPath: resourceMapping.reqPath,
+            resource: resourceMapping.resource,
+            foundInFile: filePath,
           });
           break;
-        }
-        if (content) checkedFiles.push(expectedFile);
-      }
-
-      // If not found in expected files, check ALL guide files as a fallback
-      if (!found) {
-        for (const [filePath, content] of fileCache) {
-          if (possibleFiles.includes(filePath)) continue; // Already checked
-          if (urlAppearsInContent(mapping.resource.url, content)) {
-            found = true;
-            allFound.push({
-              badge: slug,
-              reqPath: mapping.reqPath,
-              resource: mapping.resource,
-              foundInFile: filePath,
-            });
-            break;
-          }
         }
       }
 
       if (found) {
-        badgeFound++;
+        badgeFoundCount++;
       } else {
-        badgeMissing++;
+        badgeMissingCount++;
         allMissing.push({
           badge: slug,
-          reqPath: mapping.reqPath,
-          reqText: mapping.reqText,
-          resource: mapping.resource,
+          reqPath: resourceMapping.reqPath,
+          reqText: resourceMapping.reqText,
+          resource: resourceMapping.resource,
           expectedFile: possibleFiles[0] ?? "unknown",
           checkedFiles,
         });
       }
     }
 
-    // Check for YouTube URLs in wrong shortcode (drg/external-link)
     const wrongShortcodes = findWrongShortcodes(fileCache);
     allWrongShortcodes.push(...wrongShortcodes);
 
-    const status = badgeMissing === 0 && wrongShortcodes.length === 0 ? "✅" : "❌";
-    let statusParts = [`${badgeFound}/${badgeFound + badgeMissing} resources present`];
+    const badgeStatus =
+      badgeMissingCount === 0 &&
+      badgeMisplaced.length === 0 &&
+      wrongShortcodes.length === 0
+        ? "✅"
+        : "❌";
+
+    const statusParts = [
+      `${badgeFoundCount}/${badgeFoundCount + badgeMissingCount} resources present`,
+    ];
+    if (badgeMisplaced.length > 0) {
+      statusParts.push(`${badgeMisplaced.length} misplaced resource(s)`);
+    }
     if (wrongShortcodes.length > 0) {
       statusParts.push(`${wrongShortcodes.length} YouTube video(s) using wrong shortcode`);
     }
-    console.log(`  ${status} ${slug}: ${statusParts.join(", ")}`);
+
+    console.log(`  ${badgeStatus} ${slug}: ${statusParts.join(", ")}`);
   }
 
-  // Report
-  console.log("\n" + "=".repeat(80));
+  console.log(`\n${"=".repeat(80)}`);
   console.log("RESULTS");
   console.log("=".repeat(80));
 
   if (allMissing.length > 0) {
     console.log(`\n❌ MISSING RESOURCES (${allMissing.length}):\n`);
 
-    // Group by badge
-    const byBadge = new Map<string, MissingResource[]>();
-    for (const m of allMissing) {
-      if (!byBadge.has(m.badge)) byBadge.set(m.badge, []);
-      byBadge.get(m.badge)!.push(m);
+    const resourcesByBadge = new Map<string, MissingResource[]>();
+    for (const missingResource of allMissing) {
+      const existingResources = resourcesByBadge.get(missingResource.badge) ?? [];
+      existingResources.push(missingResource);
+      resourcesByBadge.set(missingResource.badge, existingResources);
     }
 
-    for (const [badge, missing] of byBadge) {
+    for (const [badge, missingResources] of resourcesByBadge.entries()) {
       console.log(`  ${badge}:`);
-      for (const m of missing) {
-        console.log(`    Req ${m.reqPath}: ${m.resource.title}`);
-        console.log(`      URL: ${m.resource.url}`);
-        console.log(`      Expected in: ${m.expectedFile}`);
+      for (const missingResource of missingResources) {
+        console.log(
+          `    Req ${missingResource.reqPath}: ${missingResource.resource.title}`,
+        );
+        console.log(`      URL: ${missingResource.resource.url}`);
+        console.log(`      Expected in: ${missingResource.expectedFile}`);
         console.log();
       }
+    }
+  }
+
+  if (allMisplaced.length > 0) {
+    console.log(`\n❌ MISPLACED RESOURCES (${allMisplaced.length}):\n`);
+    console.log(
+      "    These resources appear on the correct combined page but under the wrong requirement subsection.\n",
+    );
+
+    for (const misplacedResource of allMisplaced) {
+      console.log(`  ${misplacedResource.file}`);
+      console.log(`    Expected subsection: Req ${misplacedResource.reqPath}`);
+      console.log(`    Found under: ${misplacedResource.sectionHeading}`);
+      console.log(`    Title: ${misplacedResource.resource.title}`);
+      console.log(`    URL:   ${misplacedResource.resource.url}`);
+      console.log();
     }
   }
 
@@ -433,16 +591,16 @@ async function main() {
       `\n⚠️  WRONG SHORTCODE (${allWrongShortcodes.length} YouTube video(s) using drg/external-link instead of drg/video):\n`,
     );
     console.log(
-      `    YouTube videos should use {{< drg/video >}} to embed the player directly.`,
+      "    YouTube videos should use {{< drg/video >}} to embed the player directly.",
     );
     console.log(
-      `    Only use {{< drg/external-link >}} for YouTube videos with embedding disabled.\n`,
+      "    Only use {{< drg/external-link >}} for YouTube videos with embedding disabled.\n",
     );
-    for (const ws of allWrongShortcodes) {
-      const relPath = ws.file.replace(process.cwd() + "/", "");
-      console.log(`  ${relPath}:${ws.line}`);
-      console.log(`    Title: ${ws.title}`);
-      console.log(`    URL:   ${ws.url}`);
+
+    for (const wrongShortcode of allWrongShortcodes) {
+      console.log(`  ${wrongShortcode.file}:${wrongShortcode.line}`);
+      console.log(`    Title: ${wrongShortcode.title}`);
+      console.log(`    URL:   ${wrongShortcode.url}`);
       console.log();
     }
   }
@@ -451,42 +609,32 @@ async function main() {
     console.log(`\n✅ FOUND (${allFound.length} resources present in guide pages)\n`);
   }
 
-  console.log("\n" + "=".repeat(80));
+  console.log("=".repeat(80));
   console.log("SUMMARY");
   console.log("=".repeat(80));
   console.log(`  Total resources in data.json: ${totalResources}`);
   console.log(`  Present in guide pages:       ${allFound.length}`);
   console.log(`  Missing from guide pages:     ${allMissing.length}`);
+  console.log(`  Misplaced in combined pages:  ${allMisplaced.length}`);
   console.log(`  Wrong shortcode (YouTube):    ${allWrongShortcodes.length}`);
 
-  if (allMissing.length > 0) {
+  if (
+    allFound.length > 0 &&
+    allMissing.length === 0 &&
+    allMisplaced.length === 0 &&
+    allWrongShortcodes.length === 0
+  ) {
     console.log(
-      `\n  ⚠️  ${allMissing.length} resource(s) from data.json are not present in the guide.`,
-    );
-    console.log(
-      `     Add them using {{< drg/video >}} for YouTube or {{< drg/external-link >}} for other URLs.`,
-    );
-  }
-
-  if (allWrongShortcodes.length > 0) {
-    console.log(
-      `\n  ⚠️  ${allWrongShortcodes.length} YouTube video(s) are using {{< drg/external-link >}} instead of {{< drg/video >}}.`,
-    );
-    console.log(
-      `     Switch them to {{< drg/video >}} for proper embedding.`,
+      "\n  ✅ All resources are present and correctly placed, including within combined requirement pages.",
     );
   }
 
-  if (allMissing.length === 0 && allWrongShortcodes.length === 0 && totalResources > 0) {
-    console.log(`\n  🎉 All data.json resources are present in the guide pages!`);
-  }
-
-  console.log();
-
-  // Exit with error if missing resources or wrong shortcodes
-  if (allMissing.length > 0 || allWrongShortcodes.length > 0) {
-    process.exit(1);
+  if (allMissing.length > 0 || allMisplaced.length > 0 || allWrongShortcodes.length > 0) {
+    process.exitCode = 1;
   }
 }
 
-main();
+main().catch((error: unknown) => {
+  console.error(error);
+  process.exitCode = 1;
+});
