@@ -81,14 +81,18 @@ Requirement Pages        → req{N}.md or req{N}{letter}.md
 Extended Learning        → extended-learning.md
 ```
 
+**IMPORTANT — Flat files, not page bundles:** Requirement pages and extended-learning are **flat markdown files** in the `guide/` directory (e.g., `guide/req1a.md`, `guide/extended-learning.md`). Do **NOT** create subdirectories with `index.md` files (e.g., ~~`guide/req1a/index.md`~~). The only files that use the `directory/index.md` page-bundle pattern are **worksheets** (see Worksheet File Convention below) and the section index `_index.md`.
+
+**Do NOT create `videos.json` or `images.json`.** Those files are managed by separate skills (`drg-videos` and `drg-images`). This skill creates only `.md` files.
+
 ### URL Slug Convention
 
 ```
 /merit-badges/{slug}/guide/              (Introduction & Overview — _index.md)
-/merit-badges/{slug}/guide/req1a/        (Requirement 1, sub-part a)
-/merit-badges/{slug}/guide/req1b/        (Requirement 1, sub-part b)
-/merit-badges/{slug}/guide/req2/         (Requirement 2, no sub-parts)
-/merit-badges/{slug}/guide/extended-learning/
+/merit-badges/{slug}/guide/req1a/        (Requirement 1, sub-part a — file: req1a.md)
+/merit-badges/{slug}/guide/req1b/        (Requirement 1, sub-part b — file: req1b.md)
+/merit-badges/{slug}/guide/req2/         (Requirement 2, no sub-parts — file: req2.md)
+/merit-badges/{slug}/guide/extended-learning/  (file: extended-learning.md)
 ```
 
 ### Page Grouping
@@ -101,6 +105,8 @@ Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **co
 
 - If sub-requirements are thematically similar and short → **one page** (e.g., `req2.md` covering 2a–2c)
 - If sub-requirements are thematically distinct or lengthy → **separate pages** (e.g., `req1a.md`, `req1b.md`)
+
+**Combined page naming:** When combining adjacent sub-requirements on one page, concatenate the letters in the filename (e.g., `req5ef.md` for 5e and 5f combined). Use an en dash range in the title: `"Req 5e–5f — Descriptive Title"`. Set `req_number` in front matter to the first sub-requirement (e.g., `"5e"`).
 
 ### Umbrella Requirement Text
 
@@ -150,6 +156,7 @@ Use the `is_option` and option slug from `data.json` to derive filenames.
 - **Badge image** appears only on the Introduction & Overview page (`_index.md`).
 - **`badge_name`** is set once in `_index.md` and inherited by child pages.
 - **Capitalization:** Sub-requirement letters are always lowercase per `data.json` (use `Req 1a`, not `Req 1A`).
+- **Title prefix:** Always use the abbreviated `Req` prefix in page titles (e.g., `"Req 1a — Fire Science"`), not the full word `Requirement`.
 
 ## Page Specifications
 
@@ -164,7 +171,7 @@ layout: guide
 badge_name: "{Badge Title}"
 group_title: "Getting Started"
 next: "/merit-badges/{slug}/guide/req1a/"
-next_title: "Requirement 1a — {Short Title}"
+next_title: "Req 1a — {Short Title}"
 guide_nav:
   - group_title: "Getting Started"
     items:
