@@ -44,9 +44,6 @@ guide_nav:
     items:
       - title: "Req 5 — Field Notebook"
         url: "/merit-badges/bird-study/guide/req5/"
-      - title: "Field Notebook Worksheet"
-        url: "/merit-badges/bird-study/guide/field-notebook-worksheet/"
-        is_sub: true
   - group_title: "Bird Adaptations"
     items:
       - title: "Req 6 — Habitat Adaptations"

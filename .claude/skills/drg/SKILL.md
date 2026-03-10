@@ -126,16 +126,23 @@ This requirement covers four topics that every archer needs to understand:
 
 This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
 
-### "Choose One" Option Requirements
+### "Choose One" Requirements
 
-Some badges have a requirement that says "Complete ONE of the following options" with several large, self-contained options (e.g., Beef Cattle Option, Dairy Option, Horse Option). When each option has its own set of sub-requirements (a–f), prefer **separate pages per option** rather than combining all options onto a single page. This is better for both SEO and UX — a Scout working on the Beef Cattle option shouldn't have to scroll past five other animals.
+Any requirement whose `subrequirement_mode` has `"type": "select"` in `data.json` always gets a dedicated **overview page** (`req{N}.md`) in addition to individual pages for each option. The overview page is what a Scout reads *before* choosing — it is not a table of contents stub, it is genuine decision-support content.
 
-Structure these as:
+There are two structural variants, determined entirely by the `data.json` structure:
 
-- `req6.md` — Brief overview page explaining the Scout picks ONE option, with summaries and links to each
+#### Variant A: `is_option: true` (named options with nested sub-requirements)
+
+**Data signal:** The subrequirements have `"is_option": true` and a slug `req_id` (e.g., `"beef-cattle"`), and each option has *its own* subrequirements (`a`, `b`, `c`…). This is a two-level structure: option → sub-requirements.
+
+Each option gets its own full-detail page using the option slug in the filename.
+
+Structure:
+- `req6.md` — Overview page (see "Overview Page Content" below)
 - `req6-{option-slug}.md` — Full-detail page for each option (e.g., `req6-beef-cattle.md`, `req6-dairy.md`)
 
-On each option sub-page, use the `option` parameter on the `drg/requirement` shortcode to identify which option that page covers:
+On each option sub-page, use the `option` parameter on the `drg/requirement` shortcode:
 
 ```markdown
 {{</* drg/requirement number="6" option="Dairy Option" */>}}
@@ -145,7 +152,41 @@ Complete ONE of the following options:
 
 This renders as "6. Complete ONE of the following options: **Dairy Option**" so the reader immediately knows which option they are viewing. The overview page (`req6.md`) should NOT use the `option` parameter.
 
-Use the `is_option` and option slug from `data.json` to derive filenames.
+#### Variant B: no `is_option` (flat lettered choices)
+
+**Data signal:** The subrequirements have standard lettered `req_id` values (`"a"`, `"b"`, `"c"`) with no `is_option` flag and no nested sub-requirements. This is a one-level structure: the lettered sub-requirements are the leaves.
+
+Each lettered sub-requirement gets its own full page using standard lettered naming.
+
+Structure:
+- `req6.md` — Overview page (see "Overview Page Content" below)
+- `req6a.md`, `req6b.md`, etc. — Full pages for each option
+
+#### Overview Page Content
+
+Regardless of variant, every `select`-mode overview page must include genuine decision-support content — not just a list of links. The Scout reads this page to decide which path to take.
+
+**Required elements:**
+
+1. **Requirement shortcode** — display the parent requirement text (e.g., "Do ONE of the following:")
+2. **Intro sentence** — one sentence making it explicit that the Scout picks exactly ONE (or N, if `count > 1`)
+3. **Option summaries** — for each option: name, what the Scout will *do*, and a link to the option page. One or two sentences per option. Integrate the links naturally (e.g., `**[Req 6a — Observe 25 Species](...)**: Get outside and record 25 different species...`)
+4. **"How to Choose" section** — structured comparison to help the Scout decide. Use a `drg/checklist` comparing practical factors (time required, equipment needed, location, skill level) OR a markdown table if a grid comparison is more readable. Include at least one sentence per option on **what the Scout will gain** (the skill, knowledge, or experience) — not just what they'll do.
+5. **`drg/tip`** — a concrete recommendation: which option suits which kind of Scout, or what prior requirements might give them a head start on a particular option.
+6. **Transition CTA** — `drg/next-page` pointing to the first option (conventionally option `a`).
+
+Example "How to Choose" checklist for Variant B:
+
+```markdown
+{{</* drg/checklist title="Choosing Your Option" subtitle="Consider these factors before deciding" */>}}
+- **Time available**: Option A takes multiple outings over weeks; Option B can be done in a few hours.
+- **Equipment needed**: Option C requires dissection tools; Option B requires only a clipboard.
+- **Where you'll work**: Option A is field-based; Options B and C work at home or a library.
+- **What you'll gain**: Option A builds field identification skills; Option B teaches wildlife law and classification; Option C builds a lasting reference collection.
+{{</* /drg/checklist */>}}
+```
+
+The overview page should **not** contain full educational content for any individual option — that belongs on the option pages. Its job is exclusively to help the Scout choose confidently and navigate to the right page.
 
 ### Heading & SEO Rules
 
@@ -373,9 +414,11 @@ The `data.json` `subrequirement_mode` field determines how sub-requirements rela
 
 | Mode | Meaning | Approach |
 |------|---------|----------|
-| `"type": "all"` | Complete all | Full content for each |
-| `"type": "select", "count": 1` | Pick one | Present all options, make clear they pick ONE |
-| `"type": "select", "count": N` | Pick N | Present all options, note they choose N |
+| `"type": "all"` | Complete all | Full content for each sub-requirement page |
+| `"type": "select", "count": 1` | Scout picks ONE | **Always generate an overview page** (`req{N}.md`) plus individual pages per option. See "Choose One Requirements" in the Information Architecture section. |
+| `"type": "select", "count": N` | Scout picks N | Same structure as `count: 1` — overview page plus individual pages. The overview page must state clearly that the Scout picks exactly N options. |
+
+When you encounter `"type": "select"` during Phase 1 analysis, flag the requirement immediately and plan the overview page as a distinct page in your page structure map before writing any content.
 
 ## Worksheets & Printable Tools
 
@@ -409,8 +452,8 @@ Every worksheet must include:
 
 ### Navigation
 
-- Add worksheets to `guide_nav` in `_index.md` under their parent requirement's group.
-- Link to worksheets from the requirement page using the `drg/download` shortcode with `type="printable"`.
+- **Do NOT add worksheets to `guide_nav`.** Worksheets are not requirement pages and must not appear in the sidebar navigation. They are utility pages accessed via a link on the requirement page, not navigation destinations.
+- Link to worksheets from the requirement page using the `drg/download` shortcode with `type="printable"`. This is the only entry point — the `drg/download` shortcode on the requirement page is sufficient for discovery.
 
 ### Canonical Examples
 

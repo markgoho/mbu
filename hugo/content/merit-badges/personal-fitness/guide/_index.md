@@ -63,9 +63,6 @@ guide_nav:
       - title: "Req 4 — Fitness Assessments"
         url: "/merit-badges/personal-fitness/guide/req4/"
         is_sub: false
-      - title: "Fitness Assessment Record"
-        url: "/merit-badges/personal-fitness/guide/fitness-assessment-record/"
-        is_sub: true
   - group_title: "Your Pre-Assessment"
     items:
       - title: "Req 5 — Baseline Testing"
@@ -81,9 +78,6 @@ guide_nav:
       - title: "Req 7 — Execute & Track"
         url: "/merit-badges/personal-fitness/guide/req7/"
         is_sub: false
-      - title: "Weekly Fitness Log"
-        url: "/merit-badges/personal-fitness/guide/fitness-log/"
-        is_sub: true
   - group_title: "Fitness Careers & Lifestyle"
     items:
       - title: "Req 8 — Future Career or Lifestyle"
