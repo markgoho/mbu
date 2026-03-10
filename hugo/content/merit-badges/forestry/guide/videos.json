@@ -1,0 +1,81 @@
+{
+  "badge": "forestry",
+  "searched_at": "2026-03-10T17:40:36.317Z",
+  "videos": [
+    {
+      "id": "what-can-tree-rings-tell-us---ecosystem-essentials",
+      "file": "req2b.md",
+      "requirement_path": "2.b",
+      "video_id": "G4FHVIL3Fh0",
+      "title": "What Can Tree Rings Tell Us? - Ecosystem Essentials",
+      "channel": "Ecosystem Essentials",
+      "duration_seconds": 205000,
+      "views": 13,
+      "url": "https://youtu.be/G4FHVIL3Fh0",
+      "status": "working",
+      "relevance": "This short video directly supports the page's focus on interpreting annual growth rings as clues about a tree's history and changing growing conditions. It helps Scouts connect visible ring patterns to real environmental stories before doing their own stump or log observations.",
+      "query": "Forestry What Ring Width Tells You",
+      "trust_score": 0
+    },
+    {
+      "id": "firewise-ohio-odnr-forestry-and-ohio-fire-departments---cooperative-efforts-for-community-safety",
+      "file": "req5c.md",
+      "requirement_path": "5.c",
+      "video_id": "IdQvjwq1BAo",
+      "title": "Firewise Ohio: ODNR Forestry and Ohio Fire Departments - Cooperative Efforts for Community Safety",
+      "channel": "OhioDNR",
+      "duration_seconds": 390000,
+      "views": 1086,
+      "url": "https://youtu.be/IdQvjwq1BAo",
+      "status": "working",
+      "relevance": "This video fits the wildfire prevention campaign option because it shows an official cooperative effort between forestry and fire agencies to improve community safety. It gives Scouts a concrete example of what a real prevention campaign looks like and why public education matters.",
+      "query": "Forestry take part forest-fire prevention campaign cooperati",
+      "trust_score": 0
+    },
+    {
+      "id": "forestry-101-what-is-silviculture",
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "j72u9i8IAjY",
+      "title": "Forestry 101: What is Silviculture?",
+      "channel": "Forestry and Natural Resources Extension",
+      "duration_seconds": 564000,
+      "views": 40440,
+      "url": "https://youtu.be/j72u9i8IAjY",
+      "status": "working",
+      "relevance": "This extension video supports the forest management page by explaining how foresters actively guide stand development to meet long-term goals. It complements the text on management systems, intermediate cuttings, and sustainable decision-making without drifting into entertainment or unrelated industry content.",
+      "query": "Forestry forest management means including tutorial",
+      "trust_score": 0
+    },
+    {
+      "id": "tree-risk-assessment-explained-isa-traq-module-1-tree-riskassessmentisatraqtraqreviewarborist",
+      "file": "req6b.md",
+      "requirement_path": "6.b",
+      "video_id": "ByoF3U0ZEEg",
+      "title": "Tree Risk Assessment Explained (ISA TRAQ Module 1) #TreeRiskAssessment#ISATRAQ#TRAQReview#Arborist",
+      "channel": "Arborist-podcast",
+      "duration_seconds": 382000,
+      "views": 56,
+      "url": "https://youtu.be/ByoF3U0ZEEg",
+      "status": "working",
+      "relevance": "This video is closely aligned with reviewing a professional hazard tree report because it explains the assessment process professionals use to identify defects, targets, and treatment decisions. It helps Scouts understand the logic behind recommendations they may see in an actual report.",
+      "query": "Forestry review hazardous tree report done professional tuto",
+      "trust_score": 3
+    },
+    {
+      "id": "what-is-a-forester",
+      "file": "req8.md",
+      "requirement_path": "8",
+      "video_id": "ZEmBFp95VL0",
+      "title": "What is a Forester?",
+      "channel": "TreeStand Forestry",
+      "duration_seconds": 144000,
+      "views": 489,
+      "url": "https://youtu.be/ZEmBFp95VL0",
+      "status": "working",
+      "relevance": "This concise career-focused video matches the page's goal of helping Scouts understand what foresters do and what the profession involves. It reinforces the discussion of duties, career paths, and real-world forestry work without requiring a long time commitment.",
+      "query": "Forestry What Foresters Actually Do",
+      "trust_score": 0
+    }
+  ]
+}

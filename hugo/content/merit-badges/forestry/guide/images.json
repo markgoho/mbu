@@ -1,0 +1,62 @@
+{
+  "badge": "forestry",
+  "style_context": "Forest ecology, tree identification, watershed protection, forest management, hazard trees, wildfire, and forestry careers",
+  "images": [
+    {
+      "id": "tree-identification-clues-comparison",
+      "file": "req1.md",
+      "style": "illustrated",
+      "description": "Educational field-guide illustration comparing key tree identification clues. Show a broadleaf twig with opposite leaves and buds, a lobed oak leaf with an acorn, a pine twig with bundled needles and a cone, and several bark texture samples from smooth to deeply furrowed. Clean white background, natural colors, visual-first layout, only a few short horizontal labels for clue types.",
+      "value": "Side-by-side visual comparison of leaves, buds, cones, and bark textures — readers must see these identification differences to recognize species in the field"
+    },
+    {
+      "id": "tree-ring-patterns-comparison",
+      "file": "req2b.md",
+      "style": "diagram",
+      "description": "Three circular wood cross-sections side by side on a clean neutral background. First cross-section shows consistently narrow rings from crowding. Second shows narrow inner rings and much wider outer rings after canopy release. Third shows uneven stressed growth with a visible scar zone and distorted rings. Crisp educational wood anatomy style with a few short labels only.",
+      "value": "Contrasting ring-width patterns and scar evidence across multiple wood cross-sections — growth-history clues are impossible to understand fully from text alone"
+    },
+    {
+      "id": "tree-damage-types-grid",
+      "file": "req2c.md",
+      "style": "comparison",
+      "description": "Four-panel educational comparison showing distinct tree damage evidence. Panel 1: deer rub bark scraped from a young sapling trunk. Panel 2: insect galleries beneath loose bark with frass. Panel 3: fungal conks growing from a trunk base. Panel 4: spotted wilted leaves on a diseased branch. Clear realistic detail, no decorative background, minimal text.",
+      "value": "Distinct visual evidence patterns for animal, insect, and disease damage — readers need to see these differences to identify causes in the field"
+    },
+    {
+      "id": "forested-watershed-benefits-diagram",
+      "file": "req3ab.md",
+      "style": "diagram",
+      "description": "Cross-section diagram of a forested hillside draining into a clear stream. Show rain intercepted by canopy, leaf litter slowing runoff, roots holding soil, water soaking into the ground, and a cool shaded stream with fish habitat and stable banks. Use a simple educational cutaway with a few short horizontal labels and arrows only where unambiguous.",
+      "value": "Cross-section view of rainfall, infiltration, roots, soil stability, and shaded stream habitat working together — these watershed relationships are spatial and hard to convey in text alone"
+    },
+    {
+      "id": "forest-management-stand-structures",
+      "file": "req4.md",
+      "style": "diagram",
+      "description": "Side-by-side forest stand diagrams on one page. Left: even-aged stand with trees of similar height and age. Center: uneven-aged stand with seedlings, saplings, midstory, and mature trees in layers. Right: thinned stand with wider spacing between selected remaining trees and stumps from removed trees. Simple educational forest management illustration with minimal short labels.",
+      "value": "Visual comparison of stand age structure and spacing after thinning — readers need to see these different forest patterns, not just read definitions"
+    },
+    {
+      "id": "hazard-tree-warning-signs",
+      "file": "req6a.md",
+      "style": "annotated-photo",
+      "description": "Realistic educational scene of a tree beside a campsite with a tent pad and picnic table nearby. Show several clearly visible hazard features: a dead hanging limb, a major trunk crack, fungal decay at the base, a lean toward the target area, and soil heaving around roots. Use only a few precise callouts pointing to the defects. No branding or extra text.",
+      "value": "Shows multiple hazard defects in one realistic target setting — tree-risk assessment depends on seeing defect location and target relationship, which text alone cannot teach"
+    },
+    {
+      "id": "forest-threats-comparison",
+      "file": "req7.md",
+      "style": "comparison",
+      "description": "Six-panel educational comparison of major forest threats. Panel 1 severe wildfire with scorched trees. Panel 2 insect-killed stand with dead red-brown crowns. Panel 3 tree disease canker and dieback. Panel 4 heavy deer browse suppressing seedlings. Panel 5 erosion and exposed soil after improper harvest near a stream. Panel 6 fragmented forest cut by roads and development. Clear distinct scenes, overview style.",
+      "value": "Six contrasting threat patterns across wildfire, insects, disease, browse pressure, erosion, and fragmentation — the visual differences are essential for understanding how threats appear on the land"
+    },
+    {
+      "id": "forestry-career-paths-grid",
+      "file": "req8.md",
+      "style": "illustrated",
+      "description": "Illustrated six-panel career overview in a forestry theme. Show a forester measuring trees in the field, an urban arborist inspecting a street tree, a wildfire fuels specialist planning with a map and forest backdrop, a researcher studying wood or leaf samples, a consulting forester talking with a landowner outdoors, and a wood-products specialist grading lumber in a mill setting. Clean educational composition with little to no text.",
+      "value": "Shows the wide range of forestry work settings and roles at a glance — the diversity of careers is much clearer visually than through a text list alone"
+    }
+  ]
+}
