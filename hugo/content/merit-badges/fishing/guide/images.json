@@ -1,0 +1,76 @@
+{
+  "badge": "fishing",
+  "style_context": "Freshwater and saltwater fishing techniques, safety, tackle, fish handling, and angling skills",
+  "images": [
+    {
+      "id": "fishing-types-comparison",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Side-by-side educational comparison of two fishing settings. Left side: a calm freshwater pond bank with a cleanly dressed Scout in a neat Scout uniform using a simple spinning outfit near reeds and a fallen log. Right side: a coastal pier at sunset with a cleanly dressed Scout in a neat Scout uniform using heavier saltwater tackle over open water. Emphasize the different environments, access points, and gear scale. No branding, no logos, no visible organizational text.",
+      "value": "Side-by-side contrast of freshwater shore fishing and saltwater pier fishing with visibly different settings and tackle scale — a real-world comparison text alone cannot show as quickly"
+    },
+    {
+      "id": "hazard-scan-fishing-scene",
+      "file": "req1a.md",
+      "style": "annotated-photo",
+      "description": "A realistic shoreline fishing scene with one Scout on a muddy bank near open water, shown with only five simple callouts total identifying major hazards: loose hook near tackle, dark storm clouds approaching, slippery muddy edge, direct hot sun overhead, and brushy shoreline where insects or plants could cause problems. The Scout wears a clean Scout uniform. Keep labels short and horizontal. No extra text, no logos, no branding.",
+      "value": "Single scene showing several fishing hazards in their actual spatial context — the reader can visually scan what to notice before fishing in a way a list cannot convey"
+    },
+    {
+      "id": "heat-exhaustion-vs-heatstroke",
+      "file": "req1b.md",
+      "style": "comparison",
+      "description": "Split-frame medical safety comparison for anglers on a sunny dock. Left panel shows a Scout sitting in shade, sweating heavily, pale and weak, being cooled with water and wet cloths to represent heat exhaustion. Right panel shows a more severe emergency with another Scout appearing confused and overheated while an adult urgently cools them and signals for emergency help to represent heatstroke. Keep both panels realistic and uncluttered. No visible branding or organization names.",
+      "value": "Visual contrast between heat exhaustion and heatstroke symptoms and response urgency — severity differences are much easier to recognize visually than through text descriptions alone"
+    },
+    {
+      "id": "barbed-hook-advance-and-cut-sequence",
+      "file": "req1c.md",
+      "style": "diagram",
+      "description": "Clean four-panel medical technique diagram showing the advance-and-cut method for a single barbed fishhook lodged shallowly in the fleshy part of an arm. Panel 1 shows hook entry and barb position. Panel 2 shows the hook point advanced through skin. Panel 3 shows cutting pliers removing the barb tip. Panel 4 shows the remaining shaft backing out through the original entry path. Use minimal labels, horizontal only, and one crossed-out small inset for dangerous locations like eye or face. No logos or branding.",
+      "value": "Step-by-step sequence of hook position, barb removal, and safe extraction path — tissue direction and tool sequence are hard to understand from words alone"
+    },
+    {
+      "id": "spinning-vs-baitcasting-outfit-parts",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Educational side-by-side tackle diagram comparing a spinning outfit and a baitcasting outfit. Show full rod and reel for each with short horizontal labels identifying rod tip, guides, blank, handle, reel seat, butt, spool, handle, drag control, and the spinning reel bail versus the baitcaster thumb bar and tension controls. Clear white or neutral background, precise equipment shapes, no extra scenery, no branding, no logos.",
+      "value": "Direct side-by-side labeled anatomy of two common fishing outfits — parts, reel placement, and control differences are spatial relationships text cannot teach as clearly"
+    },
+    {
+      "id": "spinning-vs-baitcaster-casting-hand-position",
+      "file": "req3.md",
+      "style": "comparison",
+      "description": "Split instructional comparison of proper casting setup. Left panel shows correct hand position for a spinning outfit: finger holding line, bail open, reel below rod. Right panel shows correct hand position for a baitcaster: thumb controlling spool, reel on top of rod, thumb bar pressed. Use realistic gear and hands, neutral background, and only a few short labels pointing to finger or thumb placement. No branding, no logos, no organizational text.",
+      "value": "Shows the distinct hand positions and reel control points for two casting systems — finger and thumb placement are physical techniques text cannot demonstrate clearly"
+    },
+    {
+      "id": "fishing-knots-reference-board",
+      "file": "req4.md",
+      "style": "illustrated",
+      "description": "Clean educational reference board with five finished fishing knots displayed separately on line segments against a simple background: improved clinch, Palomar, uni, uni to uni, and arbor knot. Each knot appears large enough to study, with a hook, swivel, joining lines, or reel spool where appropriate, and a short label beneath each. Keep the layout simple in a grid with horizontal text only. No branding or logos.",
+      "value": "Lets the reader visually compare the final shapes and applications of all five required knots at once — finished knot forms are much easier to memorize by sight than by description"
+    },
+    {
+      "id": "five-lures-and-five-baits-grid",
+      "file": "req5.md",
+      "style": "illustrated",
+      "description": "Educational identification grid with ten realistic fishing items arranged neatly in two rows. Top row: spinner, spoon, jig, crankbait, and soft plastic worm. Bottom row: worm, minnow, cricket or grasshopper, cut bait chunk, and dough bait on hook. Each item has a very short horizontal label underneath. Neutral background, clear shapes and colors, no clutter, no branding or logos.",
+      "value": "Identification grid of ten common lures and baits side by side — recognition by shape and appearance is a visual learning task text cannot replace"
+    },
+    {
+      "id": "catch-and-release-handling-sequence",
+      "file": "req6b.md",
+      "style": "diagram",
+      "description": "Four-panel fish handling sequence showing safe catch-and-release technique. Panel 1: fish kept partly in the water beside shore or boat. Panel 2: wet hands supporting the fish gently. Panel 3: pliers removing hook quickly. Panel 4: fish upright in water reviving and swimming away. Include one small crossed-out inset showing an incorrect rough throw-back. Minimal short horizontal labels only. No branding, no logos.",
+      "value": "Shows the proper order and body support needed for low-stress release — timing, hand placement, and revival posture are practical motions best learned visually"
+    },
+    {
+      "id": "cleaning-fish-fillet-sequence",
+      "file": "req10.md",
+      "style": "diagram",
+      "description": "Clean four-panel fish-cleaning sequence on a stable camp or outdoor prep surface. Show a legal-sized fish, safe knife angle, initial cut behind gill plate, fillet lifted along backbone, and final boneless fillet separated cleanly. Emphasize hand placement away from blade path and orderly workspace. Minimal short labels, no blood-heavy imagery, no branding, no logos.",
+      "value": "Step-by-step fillet sequence and knife path show exactly how the cuts progress — blade angle and cut direction are difficult to explain clearly with text alone"
+    }
+  ]
+}

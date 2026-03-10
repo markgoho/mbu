@@ -1,0 +1,81 @@
+{
+  "badge": "fishing",
+  "searched_at": "2026-03-10T16:01:30.407Z",
+  "videos": [
+    {
+      "id": "3-types-of-fishing-reels-and-how-to-use-them-for-b",
+      "file": "req2.md",
+      "requirement_path": "2",
+      "video_id": "C7CWIywYmxk",
+      "title": "3 Types of Fishing Reels and How to Use Them for Beginners - Spinning vs. Spincast vs. Baitcasting",
+      "channel": "Fishing with Nat",
+      "duration_seconds": 300000,
+      "views": 781916,
+      "url": "https://youtu.be/C7CWIywYmxk",
+      "status": "working",
+      "relevance": "This directly supports the page's comparison of common fishing outfits by showing major reel types, how they differ, and when beginners use each one.",
+      "query": "Fishing differences between two types fishing outfits tutori",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-remove-a-fish-hook-quick-and-easy",
+      "file": "req1c.md",
+      "requirement_path": "1.c",
+      "video_id": "dL53j3MViWk",
+      "title": "How To Remove A Fish Hook Quick and Easy!",
+      "channel": "Richard Gene The Fishing Machine",
+      "duration_seconds": 155000,
+      "views": 709642,
+      "url": "https://youtu.be/dL53j3MViWk",
+      "status": "working",
+      "relevance": "This is a short, focused demonstration of fishhook removal that fits the requirement's discussion of barbed-hook injuries and gives Scouts a visual reference for the topic.",
+      "query": "Fishing remove barbed hook lodged someone arm tutorial",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-tie-the-improved-clinch-knot-fishermans-kno",
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "2YO7JWNdVC0",
+      "title": "How to Tie the Improved Clinch Knot (Fishermans Knot)",
+      "channel": "Fishing with Nat",
+      "duration_seconds": 79000,
+      "views": 612749,
+      "url": "https://youtu.be/2YO7JWNdVC0",
+      "status": "working",
+      "relevance": "This gives a clear step-by-step demo of one of the required knots and reinforces the page's emphasis on practicing the sequence before demonstrating it to a counselor.",
+      "query": "Fishing tie knots improved clinch knot palomar tutorial",
+      "trust_score": 8
+    },
+    {
+      "id": "5-best-freshwater-fishing-lures-for-beginners",
+      "file": "req5.md",
+      "requirement_path": "5",
+      "video_id": "nhCl88xGfF0",
+      "title": "5 Best Freshwater Fishing Lures for Beginners",
+      "channel": "Take Me Fishing",
+      "duration_seconds": 196000,
+      "views": 21581,
+      "url": "https://youtu.be/nhCl88xGfF0",
+      "status": "working",
+      "relevance": "This beginner-focused overview helps Scouts identify common lure categories and understand how anglers choose basic artificial lures in practical situations.",
+      "query": "Fishing five basic artificial lures five natural tutorial",
+      "trust_score": 3
+    },
+    {
+      "id": "leave-what-you-find-while-kayaking",
+      "file": "req6a.md",
+      "requirement_path": "6.a",
+      "video_id": "39hmFb2q8gE",
+      "title": "Leave What You Find While Kayaking",
+      "channel": "Leave No Trace",
+      "duration_seconds": 46000,
+      "views": 302,
+      "url": "https://youtu.be/39hmFb2q8gE",
+      "status": "working",
+      "relevance": "This comes from Leave No Trace and reinforces the page's stewardship message about protecting outdoor places instead of altering habitat for convenience.",
+      "query": "Fishing importance practicing leave trace seven principles t",
+      "trust_score": 10
+    }
+  ]
+}
