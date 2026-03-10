@@ -108,6 +108,8 @@ Requirements with multiple sub-parts (a, b, c) can be **separate pages** or **co
 
 **Combined page naming:** When combining adjacent sub-requirements on one page, concatenate the letters in the filename (e.g., `req5ef.md` for 5e and 5f combined). Use an en dash range in the title: `"Req 5e–5f — Descriptive Title"`. Set `req_number` in front matter to the first sub-requirement (e.g., `"5e"`).
 
+**Combined page internal structure:** A combined page must still preserve clear section boundaries for each covered sub-requirement. After the intro, add an explicit section heading for each sub-requirement in order (for example, `## Requirement 1a: Garden Hazards and Prevention`, then `## Requirement 1b: Preventing and Treating Common Garden Health Problems`). Within each sub-requirement section, use deeper headings (`###`) for subtopics. Do not create sibling `##` headings that blur the boundary between grouped sub-requirements. The goal is that a Scout can instantly see where one sub-requirement ends and the next begins.
+
 ### Umbrella Requirement Text
 
 Many top-level requirements have vague umbrella text like "Do the following:" or "Explain the following:" that only makes sense when accompanied by the list of sub-requirements. When a page displays such an umbrella requirement via the `drg/requirement` shortcode, **always add a brief intro paragraph immediately after the shortcode** that lists what topics the page covers (as a bulleted list or short narrative). This orients the reader and prevents the page from opening with a confusing standalone phrase. Example:
@@ -282,6 +284,7 @@ next_title: "{Next Page Title}"
    - **YouTube videos** (URL contains `youtube.com` or `youtu.be`): Use `drg/video` shortcode. Verify each video via the Video Verification Protocol before including it. If verification shows the video is embed-disabled (401), use `drg/external-link` instead. If the video is gone (404), use `drg/external-link` with the URL so the Scout can check if it's been re-uploaded.
    - **Non-video resources** (websites, PDFs, articles): Use `drg/external-link` shortcode with the title and URL from `data.json`.
    - **Placement**: Integrate these resources naturally within the educational content where they are most relevant — do not dump them all at the bottom. A video about AFIS should appear in the section discussing AFIS, not after the conclusion.
+   - **Grouped pages**: If one page covers multiple requirements or sub-requirements (for example, `req1ab.md`), each resource must stay attached to the specific requirement it came from in `data.json`. A resource for `1.a` belongs in the `1a` subsection, not pooled with `1.b` resources elsewhere on the page.
    - **Supplemental resources**: You may add additional resources beyond those in `data.json`, but the `data.json` resources are the baseline that must always be present.
 
 4. **Content elements** — At least 2–3 different types per page (see shortcode catalog below).
@@ -536,7 +539,7 @@ Work through these phases in order without pausing for approval between phases. 
 3. Map the full page structure (every page, URL slug, group title).
 4. Identify the subject's breadth (types/varieties for the Introduction page).
 5. Identify the history angle (Then vs. Now).
-6. **Map all `data.json` resources to requirement pages.** For each requirement and sub-requirement that has a `resources` array, record which resources must appear on which page. Every resource in `data.json` must be included — this is not discretionary. Note which are YouTube videos (use `drg/video`) vs. non-video links (use `drg/external-link`).
+6. **Map all `data.json` resources to requirement pages.** For each requirement and sub-requirement that has a `resources` array, record which resources must appear on which page. Every resource in `data.json` must be included — this is not discretionary. Note which are YouTube videos (use `drg/video`) vs. non-video links (use `drg/external-link`). For grouped pages, also record which subsection on that page each resource belongs to so `1.a` resources stay with `1a` content, `1.b` resources stay with `1b` content, and so on.
 7. Proceed directly to writing content — do not pause for approval.
 
 ### Phase 2: Write _index.md (Introduction & Overview)
@@ -575,6 +578,7 @@ For each page:
 
 - [ ] Page title is unique and matches sidebar nav link text
 - [ ] Group title (kicker) is set
+- [ ] On combined pages, each grouped sub-requirement has a clear section heading and the page structure makes the boundaries obvious
 - [ ] Requirement text is exact (verbatim from `data.json`)
 - [ ] Umbrella requirements ("Do the following:", "Explain the following:") have an intro paragraph listing the sub-topics
 - [ ] Educational content teaches, doesn't give answers
@@ -582,6 +586,7 @@ For each page:
 - [ ] 2–3 content element types used
 - [ ] Safety addressed where warranted
 - [ ] All `data.json` resources for this requirement appear on the page (YouTube → `drg/video`, others → `drg/external-link`)
+- [ ] On grouped pages, each resource appears in the correct requirement or subrequirement subsection, not just somewhere on the page
 - [ ] At least one external link
 - [ ] Transition CTA bridges to next page
 - [ ] Previous/Next navigation is correct
