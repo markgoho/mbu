@@ -59,7 +59,9 @@ After scaffolding, continue by reading the generated files and filling in placeh
 
 Use the scaffolded file structure as the source of truth for page order and navigation. Replace placeholder titles like `[TITLE]` and `[GROUP: Requirement 1]` with strong editorial titles during writing, but keep the scaffolded file paths and overall page structure unless there is a deliberate reason to change them.
 
-For v1 scaffolds, keep grouping conservative: create one page per leaf requirement plus required select overview pages, instead of trying to predict combined pages like `req5ef.md` during the initial structure pass.
+For v1 scaffolds, keep grouping conservative: create deterministic overview pages where the data structure calls for them (such as `select` parents, `is_option` branches, and nested all-of parents with child pages) plus one page per true leaf requirement, instead of trying to predict combined pages like `req5ef.md` during the initial structure pass.
+
+Follow the scaffolded hierarchy as the default writing structure. If the scaffold gives you an overview page and child pages, write into that tree rather than collapsing it back into one giant page unless there is a deliberate editorial reason and you also update navigation consistently.
 
 After scaffolding, you may still make editorial consolidation decisions during writing. If several standalone scaffolded pages clearly work better as one combined teaching page, you may merge them.
 
@@ -184,16 +186,17 @@ There are two structural variants, determined entirely by the `data.json` struct
 
 #### Variant A: `is_option: true` (named options with nested sub-requirements)
 
-**Data signal:** The subrequirements have `"is_option": true` and a slug `req_id` (e.g., `"beef-cattle"`), and each option has _its own_ subrequirements (`a`, `b`, `c`…). This is a two-level structure: option → sub-requirements.
+**Data signal:** The subrequirements have `"is_option": true` and a slug `req_id` (e.g., `"beef-cattle"`), and each option has _its own_ subrequirements (`a`, `b`, `c`…). This is a two-level or deeper structure: option → child requirements → possible deeper leaves.
 
-Each option gets its own full-detail page using the option slug in the filename.
+Each option gets its own overview page using the option slug or compact option path in the filename. If that option contains child requirements, the scaffold may also create additional child pages beneath it.
 
 Structure:
 
 - `req6.md` — Overview page (see "Overview Page Content" below)
-- `req6-{option-slug}.md` — Full-detail page for each option (e.g., `req6-beef-cattle.md`, `req6-dairy.md`)
+- `req6-{option-slug}.md` or `req6a.md` — Option overview page
+- additional child pages when the option contains nested requirements (for example `req2a1.md`, `req2a1a.md`)
 
-On each option sub-page, use the `option` parameter on the `drg/requirement` shortcode:
+On each option overview page, use the `option` parameter on the `drg/requirement` shortcode:
 
 ```markdown
 {{</* drg/requirement number="6" option="Dairy Option" */>}}
@@ -202,6 +205,17 @@ Complete ONE of the following options:
 ```
 
 This renders as "6. Complete ONE of the following options: **Dairy Option**" so the reader immediately knows which option they are viewing. The overview page (`req6.md`) should NOT use the `option` parameter.
+
+When one option contains many numbered child requirements and deeper nested letters, prefer the scaffolded overview-plus-children structure:
+
+- keep the option overview page as navigation and orientation for that branch
+- preserve the exact requirement shortcode block on the option overview page
+- keep numbered child requirements on their own child pages when the scaffold created them (`2.a.1`, `2.a.2`, etc.)
+- keep deeper leaves on their own pages when scaffolded (`2.a.1.a`, `2.a.1.b`, etc.)
+- keep each official resource on the page for the exact requirement that owns it in `data.json`
+- follow the scaffolded file order and page tree unless you have a deliberate editorial reason to restructure it
+
+Do not assume Golf-style nested option branches should stay on one giant option page. The scaffolded hierarchy is the default source of truth.
 
 #### Variant B: no `is_option` (flat lettered choices)
 

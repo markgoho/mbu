@@ -1,5 +1,5 @@
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { $ } from "bun";
 
 type Resource = {
   title: string;
@@ -55,11 +55,13 @@ type GuideNavItem = {
   isSub: boolean;
 };
 
-type SelectOverviewTarget = {
+type OverviewTarget = {
   pageSlug: string;
   reqNumber: string;
   title: string;
 };
+
+type OverviewPageKind = "select" | "option" | "intermediate";
 
 type GuideNavGroup = {
   groupTitle: string;
@@ -88,48 +90,52 @@ const guideDirectory = join(
   "guide",
 );
 
-const badgeData = await loadBadgeData({ badgeDataPath });
-const requirementPages = buildRequirementPages({ badgeData });
-const guidePages: GuidePage[] = [
-  buildIndexPage({
-    badgeData,
-    requirementPages,
-  }),
-  ...requirementPages,
-  buildExtendedLearningPage(),
-];
+void scaffoldDrg();
 
-await mkdir(guideDirectory, { recursive: true });
+async function scaffoldDrg(): Promise<void> {
+  const badgeData = await loadBadgeData({ badgeDataPath });
+  const requirementPages = buildRequirementPages({ badgeData });
+  const guidePages: GuidePage[] = [
+    buildIndexPage({
+      badgeData,
+      requirementPages,
+    }),
+    ...requirementPages,
+    buildExtendedLearningPage(),
+  ];
 
-let createdFileCount = 0;
-let skippedFileCount = 0;
+  await $`mkdir -p ${guideDirectory}`;
 
-for (const guidePage of guidePages) {
-  const pagePath = join(guideDirectory, guidePage.fileName);
-  const pageContent = renderPage({ guidePage, guidePages, badgeData });
-  const fileExists = await pathExists({ path: pagePath });
+  let createdFileCount = 0;
+  let skippedFileCount = 0;
 
-  if (fileExists) {
-    skippedFileCount += 1;
-    console.log(`Skipping existing file: ${pagePath}`);
-    continue;
+  for (const guidePage of guidePages) {
+    const pagePath = join(guideDirectory, guidePage.fileName);
+    const pageContent = renderPage({ guidePage, guidePages, badgeData });
+    const fileExists = await pathExists({ path: pagePath });
+
+    if (fileExists) {
+      skippedFileCount += 1;
+      console.log(`Skipping existing file: ${pagePath}`);
+      continue;
+    }
+
+    await Bun.write(pagePath, pageContent);
+    createdFileCount += 1;
+    console.log(`Created ${pagePath}`);
   }
 
-  await writeFile(pagePath, pageContent);
-  createdFileCount += 1;
-  console.log(`Created ${pagePath}`);
+  console.log(
+    `Scaffold complete for ${badgeData.slug}: created ${createdFileCount} file(s), skipped ${skippedFileCount} existing file(s).`,
+  );
 }
-
-console.log(
-  `Scaffold complete for ${badgeData.slug}: created ${createdFileCount} file(s), skipped ${skippedFileCount} existing file(s).`,
-);
 
 async function loadBadgeData({
   badgeDataPath,
 }: {
   badgeDataPath: string;
 }): Promise<BadgeData> {
-  const badgeDataContent = await readFile(badgeDataPath, "utf8");
+  const badgeDataContent = await Bun.file(badgeDataPath).text();
   return JSON.parse(badgeDataContent) as BadgeData;
 }
 
@@ -141,10 +147,8 @@ function buildRequirementPages({
   const pages: RequirementPage[] = [];
 
   for (const topLevelRequirement of badgeData.requirements) {
-    const groupTitle = `[GROUP: Requirement ${topLevelRequirement.req_id}]`;
     collectRequirementPages({
       requirement: topLevelRequirement,
-      groupTitle,
       pages,
     });
   }
@@ -154,16 +158,15 @@ function buildRequirementPages({
 
 function collectRequirementPages({
   requirement,
-  groupTitle,
   pages,
 }: {
   requirement: Requirement;
-  groupTitle: string;
   pages: RequirementPage[];
 }): void {
   const hasSubrequirements =
     requirement.subrequirements !== undefined &&
     requirement.subrequirements.length > 0;
+  const groupTitle = groupTitleForRequirement({ requirement });
 
   if (!hasSubrequirements) {
     pages.push(createLeafPage({ requirement, groupTitle }));
@@ -177,7 +180,6 @@ function collectRequirementPages({
     for (const subrequirement of subrequirements) {
       collectRequirementPages({
         requirement: subrequirement,
-        groupTitle,
         pages,
       });
     }
@@ -186,18 +188,133 @@ function collectRequirementPages({
   }
 
   if (requirement.is_option === true) {
-    pages.push(createLeafPage({ requirement, groupTitle }));
+    pages.push(createOptionOverviewPage({ requirement, groupTitle }));
+
+    const subrequirements = requirement.subrequirements ?? [];
+    for (const subrequirement of subrequirements) {
+      collectRequirementPages({
+        requirement: subrequirement,
+        pages,
+      });
+    }
+
     return;
+  }
+
+  if (shouldGroupChildLeavesIntoParentPage({ requirement })) {
+    pages.push(createGroupedLeafPage({ requirement, groupTitle }));
+    return;
+  }
+
+  if (shouldCreateIntermediateOverviewPage({ requirement })) {
+    pages.push(createIntermediateOverviewPage({ requirement, groupTitle }));
   }
 
   const subrequirements = requirement.subrequirements ?? [];
   for (const subrequirement of subrequirements) {
     collectRequirementPages({
       requirement: subrequirement,
-      groupTitle,
       pages,
     });
   }
+}
+
+function shouldGroupChildLeavesIntoParentPage({
+  requirement,
+}: {
+  requirement: Requirement;
+}): boolean {
+  const subrequirements = requirement.subrequirements ?? [];
+  if (subrequirements.length === 0) {
+    return false;
+  }
+
+  return subrequirements.every(
+    subrequirement => (subrequirement.subrequirements?.length ?? 0) === 0,
+  );
+}
+
+function createGroupedLeafPage({
+  requirement,
+  groupTitle,
+}: {
+  requirement: Requirement;
+  groupTitle: string;
+}): RequirementPage {
+  const pageSlug = requirementPathToPageSlug({ path: requirement.path });
+  return {
+    kind: "requirement",
+    fileName: `${pageSlug}.md`,
+    pageSlug,
+    title: requirementTitle({ path: requirement.path }),
+    groupTitle,
+    reqNumber: compactRequirementNumber({ path: requirement.path }),
+    isSub: isRequirementSubPage({ path: requirement.path }),
+    body: buildGroupedLeafPageBody({ requirement }),
+  };
+}
+
+function buildGroupedLeafPageBody({
+  requirement,
+}: {
+  requirement: Requirement;
+}): string {
+  const requirementBlock = buildRequirementShortcodeBlock({ requirement });
+  const subrequirements = requirement.subrequirements ?? [];
+  const subrequirementSections = subrequirements.map(subrequirement =>
+    buildGroupedSubrequirementSection({ subrequirement }),
+  );
+
+  return [
+    requirementBlock,
+    "",
+    "[PLACEHOLDER: Add a brief intro that explains how these child requirements fit together and what the Scout should focus on first.]",
+    "",
+    ...subrequirementSections.flatMap(section => [section, ""]),
+    buildResourceBlock({ requirement }),
+    "",
+    "[PLACEHOLDER: Add any helpful examples, steps, comparisons, preparation advice, or counselor-facing context that ties these child requirements together.]",
+  ].join("\n");
+}
+
+function buildGroupedSubrequirementSection({
+  subrequirement,
+}: {
+  subrequirement: Requirement;
+}): string {
+  return [
+    `## Requirement ${compactRequirementNumber({ path: subrequirement.path })}`,
+    "",
+    buildRequirementShortcodeBlock({ requirement: subrequirement }),
+    "",
+    "[PLACEHOLDER: Write the instructional body for this subrequirement.]",
+    "",
+    buildResourceBlock({ requirement: subrequirement }),
+    "",
+    "[PLACEHOLDER: Add examples, steps, or practical guidance specific to this subrequirement.]",
+  ].join("\n");
+}
+
+function buildLeafLikePage({
+  requirement,
+  groupTitle,
+  body,
+}: {
+  requirement: Requirement;
+  groupTitle: string;
+  body: string;
+}): RequirementPage {
+  const pageSlug = requirementPathToPageSlug({ path: requirement.path });
+  return {
+    kind: "requirement",
+    fileName: `${pageSlug}.md`,
+    pageSlug,
+    title: requirementTitle({ path: requirement.path }),
+    groupTitle,
+    reqNumber: compactRequirementNumber({ path: requirement.path }),
+    isSub: isRequirementSubPage({ path: requirement.path }),
+    body,
+  };
 }
 
 function createLeafPage({
@@ -207,17 +324,26 @@ function createLeafPage({
   requirement: Requirement;
   groupTitle: string;
 }): RequirementPage {
-  const pageSlug = requirementPathToPageSlug({ path: requirement.path });
-  return {
-    kind: "requirement",
-    fileName: `${pageSlug}.md`,
-    pageSlug,
-    title: `Req ${compactRequirementPath({ path: requirement.path })} — [TITLE]`,
+  return buildLeafLikePage({
+    requirement,
     groupTitle,
-    reqNumber: compactRequirementPath({ path: requirement.path }),
-    isSub: isRequirementSubPage({ path: requirement.path }),
     body: buildRequirementPageBody({ requirement }),
-  };
+  });
+}
+
+function createIntermediateOverviewPage({
+  requirement,
+  groupTitle,
+}: {
+  requirement: Requirement;
+  groupTitle: string;
+}): RequirementPage {
+  return createOverviewPage({
+    requirement,
+    groupTitle,
+    kind: "intermediate",
+    isSub: true,
+  });
 }
 
 function createSelectOverviewPage({
@@ -227,18 +353,168 @@ function createSelectOverviewPage({
   requirement: Requirement;
   groupTitle: string;
 }): RequirementPage {
+  return createOverviewPage({
+    requirement,
+    groupTitle,
+    kind: "select",
+    isSub: false,
+  });
+}
+
+function shouldCreateIntermediateOverviewPage({
+  requirement,
+}: {
+  requirement: Requirement;
+}): boolean {
+  const hasSubrequirements = (requirement.subrequirements?.length ?? 0) > 0;
+  if (!hasSubrequirements) {
+    return false;
+  }
+
+  return requirement.path.split(".").length >= 3;
+}
+
+function groupTitleForRequirement({ requirement }: { requirement: Requirement }): string {
+  const pathParts = requirement.path.split(".");
+  const topLevelPart = pathParts[0];
+  const secondPart = pathParts[1];
+
+  if (topLevelPart === undefined) {
+    throw new Error(`Invalid requirement path: ${requirement.path}`);
+  }
+
+  if (requirement.is_option === true || pathParts.length === 1) {
+    return `[GROUP: Requirement ${compactRequirementPath({ path: requirement.path })}]`;
+  }
+
+  if (secondPart !== undefined && isCompactPathSegment({ value: secondPart })) {
+    return `[GROUP: Requirement ${topLevelPart}${secondPart}]`;
+  }
+
+  return `[GROUP: Requirement ${topLevelPart}]`;
+}
+
+function isCompactPathSegment({ value }: { value: string }): boolean {
+  return /^[a-z0-9]$/.test(value);
+}
+
+function compactRequirementNumber({ path }: { path: string }): string {
+  return compactRequirementPath({ path });
+}
+
+function requirementTitle({ path }: { path: string }): string {
+  return `Req ${compactRequirementNumber({ path })} — [TITLE]`;
+}
+
+function buildOverviewTargets({
+  requirement,
+}: {
+  requirement: Requirement;
+}): OverviewTarget[] {
+  const subrequirements = requirement.subrequirements ?? [];
+
+  return subrequirements.map(subrequirement => ({
+    pageSlug: requirementPathToPageSlug({ path: subrequirement.path }),
+    reqNumber: compactRequirementNumber({ path: subrequirement.path }),
+    title: requirementTitle({ path: subrequirement.path }),
+  }));
+}
+
+function buildOverviewPageBody({
+  requirement,
+  kind,
+}: {
+  requirement: Requirement;
+  kind: OverviewPageKind;
+}): string {
+  const requirementBlock = buildRequirementShortcodeBlock({ requirement });
+  const overviewTargets = buildOverviewTargets({ requirement });
+  const sectionTitle = kind === "select" ? "Your Options" : "What You'll Complete";
+  const intro =
+    kind === "select"
+      ? buildSelectionGuidance({
+          selectionCount: requirement.subrequirement_mode?.count,
+        })
+      : "Work through each child requirement below in order. Use this page as your roadmap before you open the first detailed child page.";
+  const targetSummaries = overviewTargets
+    .map(overviewTarget => {
+      const url = pageUrl({
+        slug: badgeSlug(),
+        pageSlug: overviewTarget.pageSlug,
+      });
+      return `- **[${overviewTarget.title}](${url})**: [PLACEHOLDER: Summarize what the Scout will do and gain on this child page.]`;
+    })
+    .join("\n");
+  const placeholder =
+    kind === "select"
+      ? "[PLACEHOLDER: Add comparison notes, decision help, or transition guidance in whatever structure best fits these options.]"
+      : "[PLACEHOLDER: Add orienting context, sequencing advice, or quick preparation notes for this branch.]";
+
+  return [
+    requirementBlock,
+    "",
+    intro,
+    "",
+    `## ${sectionTitle}`,
+    "",
+    targetSummaries === ""
+      ? "[PLACEHOLDER: List the child pages and summarize what the Scout will do in each one.]"
+      : targetSummaries,
+    "",
+    placeholder,
+    "",
+    buildResourceBlock({ requirement }),
+    "",
+    buildNextPageShortcode({
+      targetPageSlug: overviewTargets[0]?.pageSlug,
+      text: "[PLACEHOLDER: Transition text]",
+      teaser:
+        kind === "select"
+          ? "[PLACEHOLDER: Preview the first option page]"
+          : "[PLACEHOLDER: Preview the first child requirement page]",
+    }),
+  ].join("\n");
+}
+
+function createOverviewPage({
+  requirement,
+  groupTitle,
+  kind,
+  isSub,
+}: {
+  requirement: Requirement;
+  groupTitle: string;
+  kind: OverviewPageKind;
+  isSub: boolean;
+}): RequirementPage {
   const pageSlug = requirementPathToPageSlug({ path: requirement.path });
   return {
     kind: "requirement",
     fileName: `${pageSlug}.md`,
     pageSlug,
-    title: `Req ${compactRequirementPath({ path: requirement.path })} — [TITLE]`,
+    title: requirementTitle({ path: requirement.path }),
     groupTitle,
-    reqNumber: compactRequirementPath({ path: requirement.path }),
-    isSub: false,
-    body: buildSelectOverviewPageBody({ requirement }),
+    reqNumber: compactRequirementNumber({ path: requirement.path }),
+    isSub,
+    body: buildOverviewPageBody({ requirement, kind }),
   };
 }
+
+function createOptionOverviewPage({
+  requirement,
+  groupTitle,
+}: {
+  requirement: Requirement;
+  groupTitle: string;
+}): RequirementPage {
+  return createOverviewPage({
+    requirement,
+    groupTitle,
+    kind: "option",
+    isSub: false,
+  });
+}
+
 
 function buildIndexPage({
   badgeData,
@@ -339,61 +615,6 @@ function buildRequirementPageBody({
   ].join("\n");
 }
 
-function buildSelectOverviewPageBody({
-  requirement,
-}: {
-  requirement: Requirement;
-}): string {
-  const requirementBlock = buildRequirementShortcodeBlock({ requirement });
-  const selectionCount = requirement.subrequirement_mode?.count;
-  const selectionGuidance = buildSelectionGuidance({ selectionCount });
-  const overviewTargets = buildSelectOverviewTargets({ requirement });
-  const optionSummaries = overviewTargets
-    .map(overviewTarget => {
-      const url = pageUrl({
-        slug: BADGE_SLUG,
-        pageSlug: overviewTarget.pageSlug,
-      });
-      return `- **[${overviewTarget.title}](${url})**: [PLACEHOLDER: Summarize what the Scout will do and gain in this option.]`;
-    })
-    .join("\n");
-
-  return [
-    requirementBlock,
-    "",
-    selectionGuidance,
-    "",
-    "## Your Options",
-    "",
-    optionSummaries === ""
-      ? "[PLACEHOLDER: List the available options and summarize what the Scout will do in each one.]"
-      : optionSummaries,
-    "",
-    "[PLACEHOLDER: Add comparison notes, decision help, or transition guidance in whatever structure best fits these options.]",
-    "",
-    buildResourceBlock({ requirement }),
-    "",
-    buildNextPageShortcode({
-      targetPageSlug: overviewTargets[0]?.pageSlug,
-      text: "[PLACEHOLDER: Transition text]",
-      teaser: "[PLACEHOLDER: Preview the first option page]",
-    }),
-  ].join("\n");
-}
-
-function buildSelectOverviewTargets({
-  requirement,
-}: {
-  requirement: Requirement;
-}): SelectOverviewTarget[] {
-  const subrequirements = requirement.subrequirements ?? [];
-
-  return subrequirements.map(subrequirement => ({
-    pageSlug: requirementPathToPageSlug({ path: subrequirement.path }),
-    reqNumber: compactRequirementPath({ path: subrequirement.path }),
-    title: `Req ${compactRequirementPath({ path: subrequirement.path })} — [TITLE]`,
-  }));
-}
 
 function buildRequirementShortcodeBlock({
   requirement,
@@ -484,8 +705,16 @@ function buildNextPageShortcode({
     "{{< drg/next-page",
     `    text="${escapeAttribute({ value: text })}"`,
     `    teaser="${escapeAttribute({ value: teaser })}"`,
-    `    url="${pageUrl({ slug: BADGE_SLUG, pageSlug: targetPageSlug })}" >}}`,
+    `    url="${pageUrl({ slug: badgeSlug(), pageSlug: targetPageSlug })}" >}}`,
   ].join("\n");
+}
+
+function badgeSlug(): string {
+  if (BADGE_SLUG === undefined || BADGE_SLUG === "") {
+    throw new Error("BADGE_SLUG is required");
+  }
+
+  return BADGE_SLUG;
 }
 
 function buildSelectionGuidance({
@@ -521,60 +750,49 @@ function requirementPathToDisplayNumber({
 }
 
 function extractOptionLabel({ text }: { text: string }): string {
-  const optionMatch = /^(.*?Option)\.?/u.exec(text);
+  const trimmedText = text.trim();
+  const namedOptionMatch = /^Option\s+[A-Z0-9]+\s*[—-]\s*([^.:]+?)(?:[.:]|$)/.exec(
+    trimmedText,
+  );
+
+  if (namedOptionMatch?.[1] !== undefined) {
+    return namedOptionMatch[1].trim();
+  }
+
+  const optionMatch = /^(.*?Option)\.?/.exec(trimmedText);
   if (optionMatch?.[1] !== undefined) {
     return optionMatch[1]
-      .replaceAll(/^[^A-Za-z0-9]+|[^A-Za-z0-9]+$/gu, "")
+      .replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9]+$/g, "")
       .trim();
   }
 
-  return text;
+  return trimmedText;
 }
 
 function requirementPathToPageSlug({ path }: { path: string }): string {
   const pathParts = path.split(".");
+  const topLevelPart = pathParts[0];
 
-  if (pathParts.length === 1) {
-    const topLevelPart = pathParts[0];
-    if (topLevelPart === undefined) {
-      throw new Error(`Invalid requirement path: ${path}`);
-    }
-    return `req${topLevelPart}`;
+  if (topLevelPart === undefined) {
+    throw new Error(`Invalid requirement path: ${path}`);
   }
 
-  if (pathParts.length === 2) {
-    const parentPart = pathParts[0];
-    const childPart = pathParts[1];
+  let pageSlug = `req${topLevelPart}`;
 
-    if (parentPart === undefined || childPart === undefined) {
-      throw new Error(`Invalid requirement path: ${path}`);
+  for (const pathPart of pathParts.slice(1)) {
+    if (isCompactPathSegment({ value: pathPart })) {
+      pageSlug += pathPart;
+      continue;
     }
 
-    const isNamedOption = /[a-z].*-/u.test(childPart) || childPart.length > 1;
-    if (isNamedOption) {
-      return `req${parentPart}-${childPart}`;
-    }
-
-    return `req${parentPart}${childPart}`;
+    pageSlug += `-${pathPart}`;
   }
 
-  if (pathParts.length === 3) {
-    const parentPart = pathParts[0];
-    const optionPart = pathParts[1];
-
-    if (parentPart === undefined || optionPart === undefined) {
-      throw new Error(`Invalid requirement path: ${path}`);
-    }
-
-    return `req${parentPart}-${optionPart}`;
-  }
-
-  const compactPath = pathParts.join("");
-  return `req${compactPath}`;
+  return pageSlug;
 }
 
 function compactRequirementPath({ path }: { path: string }): string {
-  return path.replaceAll(".", "");
+  return path.split(".").join("");
 }
 
 function isRequirementSubPage({ path }: { path: string }): boolean {
@@ -609,7 +827,7 @@ function buildGuideNav({
     existingGroup.items.push(guideNavItem);
   }
 
-  return [...groups.values()];
+  return Array.from(groups.values());
 }
 
 function renderPage({
@@ -702,14 +920,9 @@ function isYouTubeUrl({ url }: { url: string }): boolean {
 }
 
 function escapeAttribute({ value }: { value: string }): string {
-  return value.replaceAll('"', '\\"');
+  return value.split('"').join('\\"');
 }
 
 async function pathExists({ path }: { path: string }): Promise<boolean> {
-  try {
-    await stat(path);
-    return true;
-  } catch {
-    return false;
-  }
+  return (await Bun.file(path).exists()) === true;
 }

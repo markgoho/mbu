@@ -1,0 +1,55 @@
+{
+  "badge": "golf",
+  "style_context": "Traditional golf and disc golf techniques, course safety, shared-course etiquette, and beginner skill instruction",
+  "images": [
+    {
+      "id": "lightning-safety-shelter-decision",
+      "file": "req1.md",
+      "style": "photo",
+      "description": "Photorealistic split-scene safety photograph on a real golf course as a thunderstorm approaches. Show the same fairway and same group of golfers in one continuous realistic scene with a clear educational contrast: the safe action is golfers moving quickly toward a substantial clubhouse and a fully enclosed vehicle in the parking area, while two unsafe shelter choices are visibly present and unmistakably wrong — one person lingering under an isolated tree and one person near an open golf cart. The unsafe choices should be visually de-emphasized and clearly read as bad decisions without relying on illustration style. Real camera look, realistic people, realistic grass, realistic clouds, realistic clubhouse and vehicle. No painted, drawn, cartoon, poster, infographic, or illustrated look. No branding or visible text in the scene.",
+      "value": "Shows safe versus unsafe lightning shelter choices on an exposed course — a visual decision that text alone cannot teach as quickly"
+    },
+    {
+      "id": "golf-course-terms-map",
+      "file": "req2a1.md",
+      "style": "diagram",
+      "description": "Clean labeled diagram of a single golf hole viewed from above, with the main areas placed in realistic spatial relationship: tee box at the start, fairway down the middle, rough on both sides, bunker near the green, green around the hole, and a penalty area along one side. Use short horizontal labels only. Visual-first layout with minimal text and no decorative elements.",
+      "value": "Labeled spatial layout of the main parts of a golf hole — readers learn where golf terms belong relative to one another in a way text cannot show"
+    },
+    {
+      "id": "golf-setup-checkpoints",
+      "file": "req2a5.md",
+      "style": "annotated-photo",
+      "description": "Annotated instructional photo of a teenage golfer in a clean Scout uniform at address position on a practice tee with a club grounded behind the ball. Add only five short callouts total identifying grip, shoulder-width stance, slight knee flex, hinge from the hips, and balanced posture. Keep labels horizontal and minimal. No logos, branding, or extra text.",
+      "value": "Shows the body positions of a correct golf setup at the same moment — posture and alignment details that are hard to understand from prose alone"
+    },
+    {
+      "id": "chip-vs-pitch-comparison",
+      "file": "req2a5.md",
+      "style": "comparison",
+      "description": "Split-frame comparison on a golf practice green approach area. Left panel shows a low chip-and-run with the ball landing early and rolling a long distance toward the hole. Right panel shows a higher pitch shot rising steeply and landing softly with short rollout. Same distance to the green in both panels for clear comparison. Educational, realistic, and uncluttered.",
+      "value": "Contrasts the flight and rollout patterns of chip-and-run versus pitch shots — motion and result differences best learned visually"
+    },
+    {
+      "id": "disc-golf-courtesy-shared-park",
+      "file": "req2b1.md",
+      "style": "comparison",
+      "description": "Side-by-side comparison on a public park disc golf hole. Left panel shows a disc golfer waiting calmly on the tee while walkers and a dog finish crossing a shared path. Right panel shows an unsafe throw released toward people on the same path, clearly marked as wrong with a bold crossed-out symbol. Trees, basket, and walking path visible. No park signage text.",
+      "value": "Shows the real shared-space judgment of disc golf courtesy — waiting versus throwing into pedestrians, a safety choice text cannot make as immediate"
+    },
+    {
+      "id": "disc-golf-disc-types-grid",
+      "file": "req2b3.md",
+      "style": "illustrated",
+      "description": "Educational illustration grid comparing three disc golf disc types: driver, midrange, and putter. Show each disc from both top view and side profile in separate cells, with short horizontal labels only. Make rim-width differences visually obvious, especially the wider driver rim and deeper putter shape. Clean neutral background, no brand marks, no extra text.",
+      "value": "Shows how driver, midrange, and putter shapes differ in profile and rim width — equipment distinctions that are much easier to grasp visually"
+    },
+    {
+      "id": "mini-marker-lie-placement",
+      "file": "req2b5.md",
+      "style": "diagram",
+      "description": "Simple rules diagram on a disc golf fairway showing a thrown disc at rest and a mini marker placed correctly immediately in front of it on the line of play. Beside it, show a second incorrect example with the mini off to the side and clearly crossed out. Use minimal horizontal labels such as correct and wrong only. Clean top-down or slight angled view for clarity.",
+      "value": "Shows exact mini-marker placement relative to the thrown disc, including a wrong example — a position-based rule that readers need to see"
+    }
+  ]
+}
