@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Health Care Professions",
   "slug": "health-care-professions",
   "url": "https://www.scouting.org/merit-badges/health-care-professions/",

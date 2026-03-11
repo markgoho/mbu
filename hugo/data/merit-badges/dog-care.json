@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Dog Care",
   "slug": "dog-care",
   "url": "https://www.scouting.org/merit-badges/dog-care/",

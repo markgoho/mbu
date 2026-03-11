@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Dentistry",
   "slug": "dentistry",
   "url": "https://www.scouting.org/merit-badges/dentistry/",

@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Small-Boat Sailing",
   "slug": "small-boat-sailing",
   "url": "https://www.scouting.org/merit-badges/small-boat-sailing/",

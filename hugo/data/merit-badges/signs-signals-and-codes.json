@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Signs, Signals, and Codes",
   "slug": "signs-signals-and-codes",
   "url": "https://www.scouting.org/merit-badges/signs-signals-and-codes/",

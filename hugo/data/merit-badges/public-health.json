@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Public Health",
   "slug": "public-health",
   "url": "https://www.scouting.org/merit-badges/public-health/",

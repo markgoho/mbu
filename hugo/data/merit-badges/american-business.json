@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "American Business",
   "slug": "american-business",
   "url": "https://www.scouting.org/merit-badges/american-business/",

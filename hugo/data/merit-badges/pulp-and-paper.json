@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Pulp and Paper",
   "slug": "pulp-and-paper",
   "url": "https://www.scouting.org/merit-badges/pulp-and-paper/",

@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Rifle Shooting",
   "slug": "rifle-shooting",
   "url": "https://www.scouting.org/merit-badges/rifle-shooting/",

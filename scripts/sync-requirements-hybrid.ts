@@ -50,7 +50,10 @@ interface Requirement {
   subrequirement_mode?: { type: "all" | "select"; count?: number };
 }
 
+const SCHEMA_URL = "../../static/schemas/merit-badge.schema.json";
+
 interface BadgeData {
+  $schema: string;
   title: string;
   slug: string;
   url: string;
@@ -749,6 +752,7 @@ try {
 
   // Build final data
   const badgeData: BadgeData = {
+    $schema: SCHEMA_URL,
     title: badge.title,
     slug: badge.slug,
     url: badge.url,

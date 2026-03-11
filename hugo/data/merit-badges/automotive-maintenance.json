@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Automotive Maintenance",
   "slug": "automotive-maintenance",
   "url": "https://www.scouting.org/merit-badges/automotive-maintenance/",

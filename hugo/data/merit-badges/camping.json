@@ -1,10 +1,11 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Camping",
   "slug": "camping",
   "url": "https://www.scouting.org/merit-badges/camping/",
   "eagle_required": true,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Camping.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-11",
   "requirements": [
     {
       "req_id": "1",
@@ -44,7 +45,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Show that you know first aid for and how to prevent injuries or illnesses that could occur while camping, including hypothermia, frostbite, heat reactions, dehydration, altitude sickness, insect stings, tick bites, snakebite, blisters, hyperventilation.",
+          "text": "Show that you know first aid for and how to prevent injuries or illnesses that could occur while camping, including hypothermia, frostbite, heat reactions, dehydration, altitude sickness, insect stings, tick bites, snakebite, blisters, and hyperventilation.",
           "resources": [
             {
               "title": "Backpacking First Aid (What to Carry + Foot Care, Snakes, Poison Plants, Hypothermia, etc) (video)",
@@ -128,7 +129,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Smartphone with a GPS app.",
+          "text": "Smartphone with a GPS app",
           "resources": [
             {
               "title": "How to Use a Smartphone as a GPS (website)",
@@ -207,7 +208,7 @@
         {
           "req_id": "d",
           "path": "5.d",
-          "text": "List the outdoor essentials necessary for any campout, and explain why each item is needed.",
+          "text": "List the Scout Basic Essentials necessary for any campout, and explain why each item is needed.",
           "resources": [
             {
               "title": "10 Essentials for Scout Camping (website)",
@@ -379,7 +380,7 @@
             {
               "req_id": "3",
               "path": "8.a.3",
-              "text": "Proper storage of extra fuel."
+              "text": "Proper storage of extra fuel"
             }
           ],
           "subrequirement_mode": {

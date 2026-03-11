@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Disabilities Awareness",
   "slug": "disabilities-awareness",
   "url": "https://www.scouting.org/merit-badges/disabilities-awareness/",

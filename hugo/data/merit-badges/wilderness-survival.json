@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Wilderness Survival",
   "slug": "wilderness-survival",
   "url": "https://www.scouting.org/merit-badges/wilderness-survival/",

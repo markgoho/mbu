@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Fly Fishing",
   "slug": "fly-fishing",
   "url": "https://www.scouting.org/merit-badges/fly-fishing/",

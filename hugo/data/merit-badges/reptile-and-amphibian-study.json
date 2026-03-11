@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Reptile and Amphibian Study",
   "slug": "reptile-and-amphibian-study",
   "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/",

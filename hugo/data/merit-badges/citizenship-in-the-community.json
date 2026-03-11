@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Citizenship in the Community",
   "slug": "citizenship-in-the-community",
   "url": "https://www.scouting.org/merit-badges/citizenship-in-the-community/",

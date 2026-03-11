@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "Uses draft-07 for ajv-cli compatibility in local validation workflows.",
+  "$id": "https://merit-badge.university/schemas/merit-badge.schema.json",
+  "title": "Merit Badge",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "title",
+    "slug",
+    "url",
+    "eagle_required",
+    "requirements"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "../../static/schemas/merit-badge.schema.json"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "eagle_required": {
+      "type": "boolean"
+    },
+    "eagle_group": {
+      "type": "string",
+      "minLength": 1
+    },
+    "discontinued": {
+      "type": "boolean"
+    },
+    "discontinued_date": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "pamphlet_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "last_updated": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/requirement"
+      }
+    }
+  },
+  "$defs": {
+    "resource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "subrequirementMode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": ["all", "select"]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "select"
+              }
+            },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["count"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "all"
+              }
+            },
+            "required": ["type"]
+          },
+          "then": {
+            "not": {
+              "required": ["count"]
+            }
+          }
+        }
+      ]
+    },
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["req_id", "path", "text"],
+      "properties": {
+        "req_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string"
+        },
+        "is_option": {
+          "type": "boolean"
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resource"
+          }
+        },
+        "subrequirements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement"
+          }
+        },
+        "subrequirement_mode": {
+          "$ref": "#/$defs/subrequirementMode"
+        }
+      }
+    }
+  }
+}

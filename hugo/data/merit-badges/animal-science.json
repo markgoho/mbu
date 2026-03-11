@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Animal Science",
   "slug": "animal-science",
   "url": "https://www.scouting.org/merit-badges/animal-science/",

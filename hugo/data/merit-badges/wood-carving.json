@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Wood Carving",
   "slug": "wood-carving",
   "url": "https://www.scouting.org/merit-badges/wood-carving/",

@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Farm Mechanics",
   "slug": "farm-mechanics",
   "url": "https://www.scouting.org/merit-badges/farm-mechanics/",

@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Mining in Society",
   "slug": "mining-in-society",
   "url": "https://www.scouting.org/merit-badges/mining-in-society/",

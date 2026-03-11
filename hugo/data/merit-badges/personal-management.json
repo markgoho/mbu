@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Personal Management",
   "slug": "personal-management",
   "url": "https://www.scouting.org/merit-badges/personal-management/",

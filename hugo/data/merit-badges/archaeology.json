@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Archaeology",
   "slug": "archaeology",
   "url": "https://www.scouting.org/merit-badges/archaeology/",

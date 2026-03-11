@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Whitewater",
   "slug": "whitewater",
   "url": "https://www.scouting.org/merit-badges/whitewater/",

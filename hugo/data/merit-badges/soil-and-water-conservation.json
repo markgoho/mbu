@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Soil and Water Conservation",
   "slug": "soil-and-water-conservation",
   "url": "https://www.scouting.org/merit-badges/soil-and-water-conservation/",

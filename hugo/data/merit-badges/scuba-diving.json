@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Scuba Diving",
   "slug": "scuba-diving",
   "url": "https://www.scouting.org/merit-badges/scuba-diving/",

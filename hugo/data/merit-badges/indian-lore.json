@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Indian Lore",
   "slug": "indian-lore",
   "url": "https://www.scouting.org/merit-badges/indian-lore/",

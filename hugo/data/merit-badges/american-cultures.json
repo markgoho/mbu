@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "American Cultures",
   "slug": "american-cultures",
   "url": "https://www.scouting.org/merit-badges/american-cultures/",

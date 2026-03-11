@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Graphic Arts",
   "slug": "graphic-arts",
   "url": "https://www.scouting.org/merit-badges/graphic-arts/",

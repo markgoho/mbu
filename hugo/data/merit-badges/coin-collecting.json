@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Coin Collecting",
   "slug": "coin-collecting",
   "url": "https://www.scouting.org/merit-badges/coin-collecting/",

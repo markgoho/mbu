@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Environmental Science",
   "slug": "environmental-science",
   "url": "https://www.scouting.org/merit-badges/environmental-science/",

@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Veterinary Medicine",
   "slug": "veterinary-medicine",
   "url": "https://www.scouting.org/merit-badges/veterinary-medicine/",

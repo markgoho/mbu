@@ -1,4 +1,5 @@
 {
+  "$schema": "../../static/schemas/merit-badge.schema.json",
   "title": "Artificial Intelligence",
   "slug": "artificial-intelligence",
   "url": "https://www.scouting.org/merit-badges/artificial-intelligence/",
