@@ -30,20 +30,68 @@ The badge slug is passed as `$ARGUMENTS`. Use it to locate:
 
 Use this table to find guides that demonstrate specific techniques. During Phase 1 (Analysis), browse the relevant exemplar files to absorb the range of approaches — but do not replicate any single guide verbatim.
 
-| Technique | Exemplar | What to Study |
-|---|---|---|
-| Printable worksheets | `bird-study/guide/field-notebook-worksheet/` | Form fields, check grids, draw areas, back-link + print button |
-| Markdown tables for comparisons | `bird-study/guide/req5.md`, `req6.md` | Feeding habitat table, beak/foot adaptation tables |
-| Granular requirement splitting | `cooking/guide/` | 37 pages; distinct sub-parts each get their own page |
-| Cross-references between requirements | `cooking/guide/req2e.md` | Natural inline links ("In Req 1e, you learned...") |
-| Scenario-driven hooks | `first-aid/guide/req1a.md` | Concrete "what would you do" opener |
-| Strong subject-specific intro | `first-aid/guide/_index.md` | Opens with a campsite injury scenario, not a generic greeting |
-| History section with depth | `bird-study/guide/_index.md` | Audubon-era collecting vs. modern citizen science |
-| Shortcode variety (4–6 types/page) | `astronomy/guide/` | Mixes safety-first, checklist, be-prepared, tip, external-link shortcodes |
+| Technique                             | Exemplar                                     | What to Study                                                             |
+| ------------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------- |
+| Printable worksheets                  | `bird-study/guide/field-notebook-worksheet/` | Form fields, check grids, draw areas, back-link + print button            |
+| Markdown tables for comparisons       | `bird-study/guide/req5.md`, `req6.md`        | Feeding habitat table, beak/foot adaptation tables                        |
+| Granular requirement splitting        | `cooking/guide/`                             | 37 pages; distinct sub-parts each get their own page                      |
+| Cross-references between requirements | `cooking/guide/req2e.md`                     | Natural inline links ("In Req 1e, you learned...")                        |
+| Scenario-driven hooks                 | `first-aid/guide/req1a.md`                   | Concrete "what would you do" opener                                       |
+| Strong subject-specific intro         | `first-aid/guide/_index.md`                  | Opens with a campsite injury scenario, not a generic greeting             |
+| History section with depth            | `bird-study/guide/_index.md`                 | Audubon-era collecting vs. modern citizen science                         |
+| Shortcode variety (4–6 types/page)    | `astronomy/guide/`                           | Mixes safety-first, checklist, be-prepared, tip, external-link shortcodes |
 
 All paths are relative to `hugo/content/merit-badges/`.
 
-If the `guide/` directory already exists, check what files are present and resume from where things left off rather than starting over.
+If `guide/_index.md` already exists, read the existing guide files and resume from their current state. If `guide/_index.md` does not exist yet, first run `BADGE_SLUG=$ARGUMENTS bun run scaffold:drg` to create the deterministic guide scaffold, then read the generated files and replace placeholders with real content.
+
+The scaffold creates only deterministic structure: `_index.md`, requirement pages, `extended-learning.md`, front matter, `guide_nav`, prev/next links, exact requirement shortcode blocks, placeholder sections, and official resource stubs. It does **not** write final educational copy or polished titles.
+
+Do not overwrite existing guide files during scaffolding. The scaffold script is idempotent and should only create missing files.
+
+```bash
+if [ ! -f "hugo/content/merit-badges/$ARGUMENTS/guide/_index.md" ]; then
+  BADGE_SLUG=$ARGUMENTS bun run scaffold:drg
+fi
+```
+
+After scaffolding, continue by reading the generated files and filling in placeholders in place.
+
+Use the scaffolded file structure as the source of truth for page order and navigation. Replace placeholder titles like `[TITLE]` and `[GROUP: Requirement 1]` with strong editorial titles during writing, but keep the scaffolded file paths and overall page structure unless there is a deliberate reason to change them.
+
+For v1 scaffolds, keep grouping conservative: create one page per leaf requirement plus required select overview pages, instead of trying to predict combined pages like `req5ef.md` during the initial structure pass.
+
+After scaffolding, you may still make editorial consolidation decisions during writing. If several standalone scaffolded pages clearly work better as one combined teaching page, you may merge them.
+
+When merging scaffolded pages:
+
+- preserve full requirement coverage
+- preserve every official resource URL on the correct resulting page
+- update `guide_nav` and all `prev`/`next` links consistently
+- remove superseded standalone files cleanly once their content has been merged
+
+When resuming an existing guide, do **not** re-scaffold unless the user explicitly wants missing files created.
+
+Keep resource stubs in the dedicated placeholder resource blocks created by the scaffold unless you intentionally move them while preserving every official URL on the correct page.
+
+Use the scaffolded official resource shortcodes as the baseline for requirement pages so `verify:drg-resources` passes as soon as the guide content is complete.
+
+Always preserve the existing Hugo guide architecture: flat markdown files in `guide/`, not page-bundle subdirectories for requirement pages.
+
+Do not create `videos.json` or `images.json` as part of scaffolding or writing.
+
+Always keep file-path expectations aligned with `scripts/verify-drg-resources.ts`.
+
+After writing, run the same verification flow as before:
+
+```bash
+BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources
+bun run build
+```
+
+If the scaffold created placeholder content, replace placeholders rather than layering duplicate sections on top.
+
+The rest of this skill describes how to turn that scaffolded structure into a high-quality finished guide.
 
 ## Audience & Voice
 
@@ -55,15 +103,15 @@ If the `guide/` directory already exists, check what files are present and resum
 
 ### Voice Rules
 
-| Attribute | Guideline |
-|-----------|-----------|
-| **Reading level** | 6th–8th grade. Short sentences. Define technical terms on first use. |
-| **Tone** | Encouraging, conversational, informative. "Experienced camp counselor explaining something cool." |
-| **Person** | Address the reader as "you." |
-| **Voice** | Active over passive. "Pack your first-aid kit" not "A first-aid kit should be packed." |
-| **Enthusiasm** | Genuine excitement without being cloying. One exclamation point per section max. |
-| **Inclusivity** | Gender-neutral language. Assume diverse backgrounds. |
-| **Safety** | When discussing safety, shift to direct, serious-but-not-scary tone. Authoritative, not casual. |
+| Attribute         | Guideline                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------- |
+| **Reading level** | 6th–8th grade. Short sentences. Define technical terms on first use.                              |
+| **Tone**          | Encouraging, conversational, informative. "Experienced camp counselor explaining something cool." |
+| **Person**        | Address the reader as "you."                                                                      |
+| **Voice**         | Active over passive. "Pack your first-aid kit" not "A first-aid kit should be packed."            |
+| **Enthusiasm**    | Genuine excitement without being cloying. One exclamation point per section max.                  |
+| **Inclusivity**   | Gender-neutral language. Assume diverse backgrounds.                                              |
+| **Safety**        | When discussing safety, shift to direct, serious-but-not-scary tone. Authoritative, not casual.   |
 
 ### What the guide is NOT
 
@@ -130,17 +178,18 @@ This applies to both combined pages (where all sub-requirements appear on one pa
 
 ### "Choose One" Requirements
 
-Any requirement whose `subrequirement_mode` has `"type": "select"` in `data.json` always gets a dedicated **overview page** (`req{N}.md`) in addition to individual pages for each option. The overview page is what a Scout reads *before* choosing — it is not a table of contents stub, it is genuine decision-support content.
+Any requirement whose `subrequirement_mode` has `"type": "select"` in `data.json` always gets a dedicated **overview page** (`req{N}.md`) in addition to individual pages for each option. The overview page is what a Scout reads _before_ choosing — it is not a table of contents stub, it is genuine decision-support content.
 
 There are two structural variants, determined entirely by the `data.json` structure:
 
 #### Variant A: `is_option: true` (named options with nested sub-requirements)
 
-**Data signal:** The subrequirements have `"is_option": true` and a slug `req_id` (e.g., `"beef-cattle"`), and each option has *its own* subrequirements (`a`, `b`, `c`…). This is a two-level structure: option → sub-requirements.
+**Data signal:** The subrequirements have `"is_option": true` and a slug `req_id` (e.g., `"beef-cattle"`), and each option has _its own_ subrequirements (`a`, `b`, `c`…). This is a two-level structure: option → sub-requirements.
 
 Each option gets its own full-detail page using the option slug in the filename.
 
 Structure:
+
 - `req6.md` — Overview page (see "Overview Page Content" below)
 - `req6-{option-slug}.md` — Full-detail page for each option (e.g., `req6-beef-cattle.md`, `req6-dairy.md`)
 
@@ -161,6 +210,7 @@ This renders as "6. Complete ONE of the following options: **Dairy Option**" so 
 Each lettered sub-requirement gets its own full page using standard lettered naming.
 
 Structure:
+
 - `req6.md` — Overview page (see "Overview Page Content" below)
 - `req6a.md`, `req6b.md`, etc. — Full pages for each option
 
@@ -172,7 +222,7 @@ Regardless of variant, every `select`-mode overview page must include genuine de
 
 1. **Requirement shortcode** — display the parent requirement text (e.g., "Do ONE of the following:")
 2. **Intro sentence** — one sentence making it explicit that the Scout picks exactly ONE (or N, if `count > 1`)
-3. **Option summaries** — for each option: name, what the Scout will *do*, and a link to the option page. One or two sentences per option. Integrate the links naturally (e.g., `**[Req 6a — Observe 25 Species](...)**: Get outside and record 25 different species...`)
+3. **Option summaries** — for each option: name, what the Scout will _do_, and a link to the option page. One or two sentences per option. Integrate the links naturally (e.g., `**[Req 6a — Observe 25 Species](...)**: Get outside and record 25 different species...`)
 4. **"How to Choose" section** — structured comparison to help the Scout decide. Use a `drg/checklist` comparing practical factors (time required, equipment needed, location, skill level) OR a markdown table if a grid comparison is more readable. Include at least one sentence per option on **what the Scout will gain** (the skill, knowledge, or experience) — not just what they'll do.
 5. **`drg/tip`** — a concrete recommendation: which option suits which kind of Scout, or what prior requirements might give them a head start on a particular option.
 6. **Transition CTA** — `drg/next-page` pointing to the first option (conventionally option `a`).
@@ -181,11 +231,12 @@ Example "How to Choose" checklist for Variant B:
 
 ```markdown
 {{</* drg/checklist title="Choosing Your Option" subtitle="Consider these factors before deciding" */>}}
+
 - **Time available**: Option A takes multiple outings over weeks; Option B can be done in a few hours.
 - **Equipment needed**: Option C requires dissection tools; Option B requires only a clipboard.
 - **Where you'll work**: Option A is field-based; Options B and C work at home or a library.
 - **What you'll gain**: Option A builds field identification skills; Option B teaches wildlife law and classification; Option C builds a lasting reference collection.
-{{</* /drg/checklist */>}}
+  {{</* /drg/checklist */>}}
 ```
 
 The overview page should **not** contain full educational content for any individual option — that belongs on the option pages. Its job is exclusively to help the Scout choose confidently and navigate to the right page.
@@ -203,7 +254,7 @@ The overview page should **not** contain full educational content for any indivi
 
 ## Page Specifications
 
-### _index.md — Introduction & Overview
+### \_index.md — Introduction & Overview
 
 **Front matter:**
 
@@ -261,6 +312,7 @@ next_title: "{Next Page Title}"
 **Content structure:**
 
 1. **Requirement text** — Exact text from `data.json`, displayed via shortcode:
+
    ```markdown
    {{</* drg/requirement number="{N}{letter}" */>}}
    {exact requirement text}
@@ -269,18 +321,17 @@ next_title: "{Next Page Title}"
 
 2. **Educational content** — 500–1500 words teaching what the Scout needs to know. Content strategy depends on requirement type:
 
-   | Requirement asks Scout to... | Strategy |
-   |------------------------------|----------|
-   | Explain / Define | Clear explanations, definitions, "Did You Know" callouts |
-   | Demonstrate / Show | Step-by-step descriptions, checklists, video references |
-   | Identify / List | Representative examples with context, encourage finding their own |
-   | Research / Discuss | Frame key questions, multiple perspectives, authoritative links |
-   | Create / Plan / Build | Planning frameworks, printable worksheets (see Worksheets section below) |
-   | Do / Perform | Preparation guidance, safety info, practical tips, printable worksheets |
-   | Choose one of several | Present all options, help Scout choose, guidance for each path |
+   | Requirement asks Scout to... | Strategy                                                                 |
+   | ---------------------------- | ------------------------------------------------------------------------ |
+   | Explain / Define             | Clear explanations, definitions, "Did You Know" callouts                 |
+   | Demonstrate / Show           | Step-by-step descriptions, checklists, video references                  |
+   | Identify / List              | Representative examples with context, encourage finding their own        |
+   | Research / Discuss           | Frame key questions, multiple perspectives, authoritative links          |
+   | Create / Plan / Build        | Planning frameworks, printable worksheets (see Worksheets section below) |
+   | Do / Perform                 | Preparation guidance, safety info, practical tips, printable worksheets  |
+   | Choose one of several        | Present all options, help Scout choose, guidance for each path           |
 
 3. **data.json resources (MANDATORY)** — Every resource listed in the `resources` array for this requirement in `data.json` **must** appear on the page. This is not optional — these are official Scouting resources scraped from scouting.org.
-
    - **YouTube videos** (URL contains `youtube.com` or `youtu.be`): Use `drg/video` shortcode. Verify each video via the Video Verification Protocol before including it. If verification shows the video is embed-disabled (401), use `drg/external-link` instead. If the video is gone (404), use `drg/external-link` with the URL so the Scout can check if it's been re-uploaded.
    - **Non-video resources** (websites, PDFs, articles): Use `drg/external-link` shortcode with the title and URL from `data.json`.
    - **Placement**: Integrate these resources naturally within the educational content where they are most relevant — do not dump them all at the bottom. A video about AFIS should appear in the section discussing AFIS, not after the conclusion.
@@ -348,9 +399,10 @@ Practical, actionable advice. 1–4 sentences.
 {{</* /drg/tip */>}}
 
 {{</* drg/checklist title="Title" subtitle="Subtitle" */>}}
+
 - Item one: Description of item one.
 - Item two: Description of item two.
-{{</* /drg/checklist */>}}
+  {{</* /drg/checklist */>}}
 
 {{</* drg/external-link
     title="Resource Title"
@@ -359,9 +411,10 @@ Practical, actionable advice. 1–4 sentences.
 
 {{</* drg/be-prepared title="Scenario Title" */>}}
 Steps to handle this scenario.
+
 - **Step one**: Do this.
 - **Step two**: Then this.
-{{</* /drg/be-prepared */>}}
+  {{</* /drg/be-prepared */>}}
 ```
 
 Use `drg/be-prepared` for **scenario-based problem-solving** — situations the Scout might encounter and step-by-step responses. Good for safety scenarios, "what if" situations, and motivational hurdles. Aim for at least 1–2 per guide beyond just the intro pages.
@@ -400,9 +453,11 @@ AI models hallucinate plausible-looking YouTube video IDs that don't correspond 
 1. **Never invent YouTube video IDs.** Do not guess or fabricate IDs. Every `drg/video` shortcode must reference a verified, existing video.
 
 2. **Verification method:** Before adding any `drg/video` shortcode, verify the video ID exists and is embeddable using YouTube's official oEmbed endpoint:
+
    ```
    https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={VIDEO_ID}&format=json
    ```
+
    - **200 OK** with JSON → video exists and is embeddable, safe to use `drg/video`
    - **401 Unauthorized** → video exists but embedding is disabled by the uploader. Use `drg/external-link` instead of `drg/video` so users can click through to YouTube.
    - **404 Not Found** → video does not exist, is private, or was removed. Do not use it.
@@ -415,11 +470,11 @@ AI models hallucinate plausible-looking YouTube video IDs that don't correspond 
 
 The `data.json` `subrequirement_mode` field determines how sub-requirements relate:
 
-| Mode | Meaning | Approach |
-|------|---------|----------|
-| `"type": "all"` | Complete all | Full content for each sub-requirement page |
+| Mode                           | Meaning         | Approach                                                                                                                                                    |
+| ------------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `"type": "all"`                | Complete all    | Full content for each sub-requirement page                                                                                                                  |
 | `"type": "select", "count": 1` | Scout picks ONE | **Always generate an overview page** (`req{N}.md`) plus individual pages per option. See "Choose One Requirements" in the Information Architecture section. |
-| `"type": "select", "count": N` | Scout picks N | Same structure as `count: 1` — overview page plus individual pages. The overview page must state clearly that the Scout picks exactly N options. |
+| `"type": "select", "count": N` | Scout picks N   | Same structure as `count: 1` — overview page plus individual pages. The overview page must state clearly that the Scout picks exactly N options.            |
 
 When you encounter `"type": "select"` during Phase 1 analysis, flag the requirement immediately and plan the overview page as a distinct page in your page structure map before writing any content.
 
@@ -532,134 +587,44 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
 
 Work through these phases in order without pausing for approval between phases. Proceed automatically from one phase to the next.
 
-### Phase 1: Analysis
+## Workflow
 
-1. Read `data.json` for the badge.
-2. Identify requirement groupings and assign descriptive group titles.
-3. Map the full page structure (every page, URL slug, group title).
-4. Identify the subject's breadth (types/varieties for the Introduction page).
-5. Identify the history angle (Then vs. Now).
-6. **Map all `data.json` resources to requirement pages.** For each requirement and sub-requirement that has a `resources` array, record which resources must appear on which page. Every resource in `data.json` must be included — this is not discretionary. Note which are YouTube videos (use `drg/video`) vs. non-video links (use `drg/external-link`). For grouped pages, also record which subsection on that page each resource belongs to so `1.a` resources stay with `1a` content, `1.b` resources stay with `1b` content, and so on.
-7. Proceed directly to writing content — do not pause for approval.
+### Phase 1A: Scaffold Check
 
-### Phase 2: Write _index.md (Introduction & Overview)
+1. Check whether `hugo/content/merit-badges/$ARGUMENTS/guide/_index.md` exists.
+2. If it does not exist, run `BADGE_SLUG=$ARGUMENTS bun run scaffold:drg`.
+3. If it does exist, do not scaffold again. Read the existing guide files and continue from their current state.
 
-8. Write front matter with complete `guide_nav`.
-9. Write Overview, History, Get Ready, Kinds of {Subject}, and Transition CTA.
+### Phase 1B: Analysis
 
-### Phase 3: Write Requirement Pages (in order)
+1. Read `hugo/data/merit-badges/$ARGUMENTS.json`.
+2. Read the existing or scaffolded guide files under `hugo/content/merit-badges/$ARGUMENTS/guide/`.
+3. Study relevant exemplar guides from the reference table for structure, tone, and section patterns.
+4. Preserve the scaffolded file structure, page ordering, and navigation. Replace placeholders with real content instead of inventing a new layout.
 
-For each page:
-11. Write front matter with correct prev/next links.
-12. Display exact requirement text via shortcode.
-13. Draft 500–1500 words of educational content.
-14. Add 2–3 content element types.
-15. Add cross-references and transition CTA.
+### Phase 2: Write the Guide
 
-### Phase 4: Write extended-learning.md
+Work page-by-page and turn scaffold placeholders into complete Scout-friendly content. Keep the deterministic scaffold structure intact unless the user explicitly asks for a structural change.
 
-16. Write 2–4 deep-dive topics.
-17. Curate real-world experiences.
-18. List 3–6 relevant organizations.
+Requirements for writing:
 
-### Phase 5: Verification
+- Keep all prose specific to the badge.
+- Use exact requirement wording inside `drg/requirement` shortcodes.
+- Keep official resources relevant to the requirement they belong to.
+- Preserve valid front matter, `guide_nav`, and prev/next links.
+- Replace placeholder titles like `[TITLE]` and group labels like `[GROUP: Requirement 3]` with polished final text when completing the guide.
 
-**You MUST complete this phase — do not stop after writing content.**
+### Phase 3: Resources and Verification
 
-19. Verify Hugo build passes: `bun run build`
-20. Verify all YouTube video embeds: `BADGE_SLUGS="{slug}" bun run verify:youtube-links` (expect zero broken links). If any videos are flagged as "embed disabled," switch those from `drg/video` to `drg/external-link`.
-21. **Verify `data.json` resource coverage:** `BADGE_SLUGS="{slug}" bun run verify:drg-resources` (expect zero missing). This script reads every resource from `data.json` and confirms each URL appears in the corresponding guide page. Missing resources are a blocker — add them before proceeding.
-22. Verify all nav links and cross-references.
-23. Run through the quality checklist.
+1. Keep or add official resource shortcodes:
+   - `drg/video` for YouTube
+   - `drg/external-link` for other official URLs
+2. Before adding a YouTube video, verify it with the project's video verification workflow.
+3. After making guide changes, run relevant checks when appropriate, such as:
+   - `BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources`
+   - `bun run build`
 
-## Quality Checklist
+### Phase 4: Resume Behavior
 
-### Per-Page
+If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
 
-- [ ] Page title is unique and matches sidebar nav link text
-- [ ] Group title (kicker) is set
-- [ ] On combined pages, each grouped sub-requirement has a clear section heading and the page structure makes the boundaries obvious
-- [ ] Requirement text is exact (verbatim from `data.json`)
-- [ ] Umbrella requirements ("Do the following:", "Explain the following:") have an intro paragraph listing the sub-topics
-- [ ] Educational content teaches, doesn't give answers
-- [ ] Voice is age-appropriate (6th–8th grade)
-- [ ] 2–3 content element types used
-- [ ] Safety addressed where warranted
-- [ ] All `data.json` resources for this requirement appear on the page (YouTube → `drg/video`, others → `drg/external-link`)
-- [ ] On grouped pages, each resource appears in the correct requirement or subrequirement subsection, not just somewhere on the page
-- [ ] At least one external link
-- [ ] Transition CTA bridges to next page
-- [ ] Previous/Next navigation is correct
-- [ ] Content is 500–1500 words
-
-### Full Guide
-
-- [ ] All requirements covered
-- [ ] Descriptive group titles assigned
-- [ ] Introduction has all sections (Overview, History, Get Ready, Kinds, CTA)
-- [ ] Extended Learning has deep dives, experiences, organizations
-- [ ] Cross-references work between pages
-- [ ] Select-mode requirements clearly indicate choice
-- [ ] Consistent tone throughout
-- [ ] `badge_name` set in `_index.md`
-- [ ] Eagle Required displayed correctly based on `data.json`
-- [ ] Capitalization matches `data.json` (lowercase sub-requirement letters)
-- [ ] JSON-LD structured data renders on all guide pages (view page source for `ld+json`)
-- [ ] All YouTube video embeds verified via `verify:youtube-links` (zero broken links, embed-disabled videos switched to `drg/external-link`)
-- [ ] Every resource from `data.json` appears on its corresponding requirement page
-- [ ] Consistent tone throughout
-
-## Pull Request Workflow
-
-At the **start** of the workflow, check the current git branch:
-
-```bash
-git branch --show-current
-```
-
-If the branch is **not `trunk`** (e.g., working in a worktree or feature branch), assume the user wants a pull request opened at the end. After Phase 5 (Verification) passes:
-
-1. **Stage and commit** all guide files:
-   ```bash
-   git add hugo/content/merit-badges/{slug}/guide/
-   ```
-   Commit with message: `Add {Badge Title} Digital Resource Guide`
-
-2. **Push the branch** to the remote:
-   ```bash
-   git push -u origin HEAD
-   ```
-
-3. **Open a PR** against `trunk`:
-   ```bash
-   gh pr create --title "Add {Badge Title} Digital Resource Guide" --body "..."
-   ```
-   Use the standard PR body format with a summary of pages created, and include the `Generated with Claude Code` footer.
-
-4. **Share the PR URL** with the user.
-
-If the branch **is `trunk`**, do **not** commit or open a PR automatically — just notify the user that the guide is ready and ask if they'd like to commit.
-
-## Smoke Testing (after build passes)
-
-Start the dev server (`bun run hugo:dev`) or build (`bun run build`) and verify:
-
-### Every Page
-
-- [ ] Page loads without error (no 404, no blank page)
-- [ ] H1 renders correctly with lowercase sub-requirement letters
-- [ ] Kicker (group title) appears above the H1
-- [ ] Sidebar navigation renders with all links and correct titles
-- [ ] Active sidebar link is highlighted
-- [ ] Previous/Next links go to the correct pages with matching titles
-- [ ] Requirement shortcode renders with correct number badge
-- [ ] All shortcode callouts (Safety First, Did You Know, Tips, etc.) display correctly
-- [ ] External links open and destinations are live (spot-check 2–3 per page)
-- [ ] Cross-reference links between guide pages resolve correctly
-- [ ] JSON-LD `application/ld+json` block is present in page source
-
-### Consistency
-
-- [ ] No uppercase sub-requirement letters — grep for `Req [0-9]+[A-Z]` patterns (zero matches = clean)
-- [ ] `guide_nav` titles in `_index.md` match each page's `title` front matter exactly
-- [ ] YAML indentation in `guide_nav` is consistent (2 spaces)

@@ -1,0 +1,69 @@
+{
+  "badge": "dog-care",
+  "style_context": "Dog care, canine health, training, and first-aid techniques",
+  "images": [
+    {
+      "id": "dog-groups-overview",
+      "file": "req1b.md",
+      "style": "diagram",
+      "description": "A clean seven-panel educational diagram showing one representative dog silhouette or simple breed illustration for each major dog group in a tidy grid: sporting, hound, working, terrier, toy, non-sporting, and herding. Each panel includes only the group name as a short horizontal label. Each dog is posed to suggest its typical build and purpose, such as an athletic retriever-type sporting dog, a long-bodied scent hound, a powerful working dog, a compact terrier, a tiny toy dog, a varied companion-type non-sporting dog, and an alert herding dog. Light background, consistent illustration style, no extra text, no decorative scenery.",
+      "value": "Seven dog groups shown side by side with visibly different body types and working builds — readers can compare group patterns at a glance in a way descriptive paragraphs cannot provide"
+    },
+    {
+      "id": "dog-anatomy-labeled",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A side-view educational dog anatomy diagram with at least twelve clearly labeled external body parts. Include short horizontal labels for nose, muzzle, stop, ears, neck, chest, brisket, withers, back, abdomen, tail, elbow, pastern, stifle, hock, and paw. Use a simple realistic dog outline on a plain light background. Labels should be clean, readable, and arranged neatly outside the body with short connector lines. Keep the diagram visual-first and uncluttered.",
+      "value": "Labeled external anatomy map of a dog with parts in their exact positions — the spatial relationship of terms like withers, brisket, stifle, and hock cannot be learned as effectively from a text list alone"
+    },
+    {
+      "id": "dog-selection-comparison",
+      "file": "req3c.md",
+      "style": "comparison",
+      "description": "Two-panel split image. Left panel shows a high-energy herding or working-type dog running hard in an open field with an alert focused posture and clear motion. Right panel shows a calm lower-energy companion-type dog resting comfortably indoors on a couch in a relaxed pose. No text in the image. Clean, simple backgrounds. The contrast should clearly show two different energy and lifestyle fits rather than specific famous breeds.",
+      "value": "Side-by-side contrast of a high-drive dog versus a low-energy companion dog in their natural settings — the lifestyle mismatch risk becomes visually obvious in a way a list of traits cannot show"
+    },
+    {
+      "id": "puppy-vaccine-timeline",
+      "file": "req6a.md",
+      "style": "diagram",
+      "description": "A clean horizontal timeline diagram for dog vaccination stages. Show short markers at 6 to 8 weeks, 10 to 12 weeks, and 14 to 16 weeks for the puppy series, followed by a gap leading to an adult booster stage. Use only short horizontal labels such as age ranges, puppy series, rabies, and boosters. Light background, single-row layout, no paragraphs, no branching paths, no crowded text.",
+      "value": "Timeline of puppy vaccine series progressing into adult boosters — the staged timing and spacing between doses is a temporal pattern that text alone does not show clearly"
+    },
+    {
+      "id": "parasite-transmission-routes",
+      "file": "req6b.md",
+      "style": "diagram",
+      "description": "A four-panel educational diagram showing how major dog parasites reach a dog. Panel 1: flea on dog fur. Panel 2: tick attached to skin. Panel 3: mosquito near a dog representing heartworm transmission. Panel 4: contaminated soil near dog paws representing intestinal worms. Use simple illustrated or diagram style with one short label per panel naming the parasite only. No arrows, no body text, no extra decoration. Clean light background and consistent panel layout.",
+      "value": "Four parasite transmission routes shown side by side — readers can see that fleas, ticks, mosquitoes, and contaminated ground expose dogs in different ways, which text alone does not make as immediate"
+    },
+    {
+      "id": "nail-quick-anatomy",
+      "file": "req6d.md",
+      "style": "diagram",
+      "description": "A close-up cross-section educational diagram of a single dog nail. Show the outer nail shell and the inner quick in a contrasting color, with a clearly marked safe trim line that stops before the quick. Use only three short horizontal labels: nail, quick, and safe cut zone. Plain white or light background, no extra body parts visible, no clutter.",
+      "value": "Cross-section of a dog nail showing the hidden quick and safe trim zone — the internal structure that makes over-trimming dangerous cannot be understood nearly as well from warning text alone"
+    },
+    {
+      "id": "emergency-muzzle-steps",
+      "file": "req7b.md",
+      "style": "annotated-photo",
+      "description": "A four-panel realistic step-by-step sequence showing how to place an improvised emergency muzzle on a calm medium-sized dog using gauze or cloth. Panel 1 shows a loop placed over the muzzle. Panel 2 shows the ends crossed under the jaw. Panel 3 shows the ends brought up behind the ears. Panel 4 shows the ends tied behind the neck. A Scout handler wears a clean Scout uniform. Use only small number labels 1, 2, 3, and 4. Neutral background. No additional text or annotations.",
+      "value": "Four-step muzzle application sequence with exact loop, cross, and tie positions — the hand placement and wrap direction are procedural details that text descriptions cannot convey clearly"
+    },
+    {
+      "id": "paw-bandage-technique",
+      "file": "req7d.md",
+      "style": "annotated-photo",
+      "description": "An annotated realistic photo of a dog's paw being bandaged by a Scout in a clean Scout uniform. Show a dressing pad on the paw, gauze wrapped snugly around the paw and lower leg, and the toes left visible for a circulation check. Use only three short horizontal callout labels: dressing pad, wrap, and toes visible. Neutral background, good lighting, no extra annotations.",
+      "value": "Annotated paw bandage showing layer order, wrap placement, and visible toes for circulation check — the spatial technique of correct bandaging is much easier to learn visually than from bullet points alone"
+    },
+    {
+      "id": "disease-spread-comparison",
+      "file": "req7h.md",
+      "style": "diagram",
+      "description": "A clean four-row comparison diagram showing four major dog diseases with a simple icon and short label for how each spreads. Row 1 rabies with a bite icon. Row 2 parvovirus with contaminated feces or surface icon. Row 3 distemper with droplet contact icon. Row 4 heartworms with mosquito icon. Use only the disease names and very short spread labels. Light background, simple educational icons, no paragraphs, no arrows.",
+      "value": "Four diseases paired with distinct transmission icons in one side-by-side comparison — readers can visually separate bite, contaminated surface, droplet, and mosquito spread more quickly than from separate text sections alone"
+    }
+  ]
+}
