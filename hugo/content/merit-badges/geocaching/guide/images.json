@@ -1,0 +1,104 @@
+{
+  "badge": "geocaching",
+  "style_context": "Geocaching navigation, GPS use, outdoor stewardship, cache searching, and youth geohunt activities",
+  "images": [
+    {
+      "id": "geocaching-then-vs-now-comparison",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Side-by-side comparison. Left panel: pre-GPS navigation scene with a Scout in a clean Scout uniform using a paper topographic map and baseplate compass on a wooded trail, studying landmarks and route choices. Right panel: modern geocaching scene with a Scout in a clean Scout uniform using a handheld GPS receiver near a park bench geocache hide. Same outdoor setting and similar body posture in both panels so the visual contrast focuses on the tools. No logos or branded text. No extra labels beyond simple panel identifiers.",
+      "value": "Shows the visual difference between traditional navigation tools and modern GPS-based geocaching while preserving the same goal of route finding — a contrast text alone cannot show as clearly"
+    },
+    {
+      "id": "geocache-types-overview",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Four-panel comparison layout with minimal text. Panel 1 shows a traditional cache hidden under natural cover beside a trail. Panel 2 shows a puzzle cache with a printed clue sheet and coordinates puzzle on a clipboard. Panel 3 shows an urban cache search in a public park with nearby bystanders and a discreet seeker. Panel 4 shows a small trackable item with a tag being moved between two cache containers. Clean educational composition, easy-to-distinguish scenes, no branding or logos, no dense text.",
+      "value": "Four distinct geocaching formats shown side by side so readers can immediately recognize how traditional, puzzle, urban, and trackable-based experiences differ — category distinctions easier to grasp visually than through prose alone"
+    },
+    {
+      "id": "geocaching-hazard-scan",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "description": "Photorealistic geocaching scene on the edge of a wooded trail. A Scout in a clean Scout uniform is pausing before searching near a trail-side hiding area. Visible hazards include exposed roots, loose rocks, a steep drop-off edge, and a patch of poison ivy nearby. Use only five callouts total with short horizontal labels pointing to: roots, loose rocks, poison ivy, drop-off, and safe standing zone. Labels must be brief and clearly placed. No extra text, no branding.",
+      "value": "Shows multiple real trail hazards and a safe position in one glance, teaching the quick site scan a geocacher should perform before searching — hazard recognition depends on seeing the scene"
+    },
+    {
+      "id": "buried-vs-hidden-cache-comparison",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "Side-by-side educational comparison. Left panel shows a properly hidden cache container tucked under loose natural cover such as bark or leaf litter that can be gently replaced without damage. Right panel shows an improper buried container with disturbed soil, exposed roots, and a small digging tool nearby. Make the environmental damage obvious in the buried panel and the low-impact concealment obvious in the proper panel. No branding, no long text, only simple panel labels.",
+      "value": "Contrasts low-impact concealment with destructive burial so readers can instantly see why buried caches damage roots and soil — environmental impact is far clearer visually than in text"
+    },
+    {
+      "id": "difficulty-vs-terrain-grid",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "Clean two-axis diagram with horizontal axis labeled difficulty from easy to hard and vertical axis labeled terrain from easy to hard. Place four simple illustrated cache examples in the quadrants: easy walk/easy hide, easy walk/hard hide, hard hike/easy hide, hard hike/hard hide. Keep labels short and horizontal. White or light background, simple educational icons, no dense text.",
+      "value": "Maps difficulty and terrain as separate axes with example cache types, making the difference between mental challenge and physical challenge immediately understandable in a way definitions alone cannot"
+    },
+    {
+      "id": "gps-trilateration-diagram",
+      "file": "req4.md",
+      "style": "diagram",
+      "description": "Clean educational diagram showing four GPS satellites above Earth and one handheld GPS receiver on the ground. Each satellite sends a signal represented by distance arcs or circles intersecting at the receiver's location. Show the receiver position where the ranges overlap. Minimal labels only: satellite, signal range, receiver, position. Horizontal text only. No branding or decorative elements.",
+      "value": "Shows how multiple satellite ranges intersect to calculate one position, making trilateration spatially understandable — the geometry is much easier to learn from a picture than from verbal explanation alone"
+    },
+    {
+      "id": "gps-vs-map-compass-comparison",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "Side-by-side navigation comparison in the same outdoor setting. Left panel: Scout in clean Scout uniform looking at a handheld GPS receiver with a direct arrow toward a nearby waypoint. Right panel: Scout in clean Scout uniform orienting a paper map with a baseplate compass and viewing a broader route around obstacles like a creek and hill. Show the GPS panel as focused and precise, and the map panel as wide-view route planning. Minimal text, no logos.",
+      "value": "Shows the difference between direct point-to-point guidance and wide-area route awareness, helping readers see why GPS and map-and-compass solve different navigation problems"
+    },
+    {
+      "id": "four-steps-of-finding-a-cache",
+      "file": "req6.md",
+      "style": "comparison",
+      "description": "Four-panel step-by-step sequence with simple panel numbers only. Panel 1: Scout reading a cache listing on a phone or printed sheet and packing gear. Panel 2: Scout hiking toward the coordinates using GPS. Panel 3: Scout searching carefully near ground zero under a log or bench without disturbing the area. Panel 4: Scout signing a small logbook and replacing the cache exactly. Consistent character, clean Scout uniform where appropriate, realistic park or trail setting, no branding.",
+      "value": "Shows the full sequence of preparation, navigation, careful searching, and proper replacement as one visual workflow — procedural flow is easier to retain when seen step by step"
+    },
+    {
+      "id": "comparing-three-cache-listings",
+      "file": "req7.md",
+      "style": "diagram",
+      "description": "Clean comparison diagram with three simplified cache listing cards arranged side by side. Each card shows short, readable fields for difficulty, terrain, size, attributes, and recent activity using icons and very brief labels. Use visual emphasis such as highlights or check marks to show why one listing is the best beginner choice. Keep text sparse and large. No branding, no website names.",
+      "value": "Puts three candidate cache listings side by side so readers can visually compare the exact factors that make one a better beginner choice — comparison is much faster and clearer in a structured visual layout"
+    },
+    {
+      "id": "travel-bug-mission-flow",
+      "file": "req8b.md",
+      "style": "diagram",
+      "description": "Simple flow diagram with four stages laid out left to right. Stage 1: trackable tag attached to a small durable item. Stage 2: item placed into a cache container. Stage 3: different geocacher moves it to another cache. Stage 4: online log entries track the journey over time. Use arrows between stages and very short labels only. Keep the design visual-first and easy to understand.",
+      "value": "Shows the lifecycle of a Travel Bug from creation to release to movement to online logging, making the ongoing mission concept easier to understand than text alone"
+    },
+    {
+      "id": "cache-maintenance-cycle",
+      "file": "req8c.md",
+      "style": "diagram",
+      "description": "Circular workflow diagram with five stages around a center icon of a cache container: publish cache, review logs, inspect site, replace wet or damaged supplies, archive when no longer maintainable. Use arrows showing the cycle and keep each label very short. Clean educational style, horizontal text only, no branding.",
+      "value": "Shows cache ownership as a repeating responsibility cycle rather than a one-time action, helping readers grasp the long-term stewardship pattern visually"
+    },
+    {
+      "id": "cito-before-and-after-cleanup",
+      "file": "req8d.md",
+      "style": "comparison",
+      "description": "Before-and-after comparison of the same public cache area. Left panel shows scattered litter near a trailhead and around a cache approach. Right panel shows the area cleaned, with collected trash bags, clearer walking space, and volunteers finishing the cleanup. Volunteers should wear appropriate cleanup clothing, not uniforms if the work would soil them. Strong visual contrast, minimal text.",
+      "value": "Before-and-after cleanup contrast makes the impact of CITO immediately visible, showing why the service matters in a way a written description cannot match"
+    },
+    {
+      "id": "geohunt-course-layout",
+      "file": "req9.md",
+      "style": "diagram",
+      "description": "Bird's-eye course diagram for a youth geohunt in a park or camp setting. Show a clearly marked start area, four waypoints in a loop, leader supervision positions, and a safe walking route that avoids hazards. Include simple icons for trees, trail, open field, and gathering area. Labels must be very short and horizontal. No branding or dense text.",
+      "value": "Bird's-eye spatial layout shows waypoint sequence, supervision coverage, and safe routing all at once — relationships that are difficult to communicate clearly in paragraph form"
+    },
+    {
+      "id": "advanced-cache-types-overview",
+      "file": "extended-learning.md",
+      "style": "diagram",
+      "description": "Identification grid with six panels showing distinct cache types: traditional cache container, puzzle cache with puzzle clue, multi-cache stage marker, EarthCache at a geologic feature with no container, letterbox hybrid with stamp and notebook, and an event cache with a group gathering. Each panel should use a simple visual example and a very short label. Clean educational style, no logos, no dense text.",
+      "value": "Shows the defining visual differences among six advanced cache types so readers can quickly recognize each format — side-by-side identification is much more effective than a list of names"
+    }
+  ]
+}
