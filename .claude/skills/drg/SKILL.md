@@ -599,7 +599,7 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
 
 ## Production Workflow
 
-Work through these phases in order without pausing for approval between phases. Proceed automatically from one phase to the next.
+**CRITICAL — Run to completion without stopping.** Work through all phases autonomously from start to finish. Do NOT pause between phases, do NOT ask for confirmation, do NOT summarize progress and offer to continue, do NOT stop mid-guide for any reason short of a hard error that genuinely requires user input. Writing one or two pages and then asking "Should I continue?" is a failure. The guide is not done until every scaffolded page has been written, verified, and the build passes. Silence from the user means keep going.
 
 ## Workflow
 
@@ -619,6 +619,8 @@ Work through these phases in order without pausing for approval between phases. 
 ### Phase 2: Write the Guide
 
 Work page-by-page and turn scaffold placeholders into complete Scout-friendly content. Keep the deterministic scaffold structure intact unless the user explicitly asks for a structural change.
+
+**Write every page before moving to Phase 3.** Do not stop after a subset of pages, do not offer progress summaries mid-guide, do not ask whether to continue. Move directly from one page to the next until all pages are complete.
 
 Requirements for writing:
 
@@ -641,4 +643,6 @@ Requirements for writing:
 ### Phase 4: Resume Behavior
 
 If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
+
+**Resume means finish, not restart.** When resuming a partially-written guide, complete all remaining pages without stopping. Do not summarize what has been done and ask whether to proceed — just continue writing from where the guide left off.
 
