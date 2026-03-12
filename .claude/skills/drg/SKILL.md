@@ -26,6 +26,9 @@ The badge slug is passed as `$ARGUMENTS`. Use it to locate:
 - **Output directory:** `hugo/content/merit-badges/$ARGUMENTS/guide/`
 - **Reference examples:** See "Reference Examples" section below for guides that demonstrate specific techniques. Do not clone any single guide wholesale — study the technique, adapt the approach.
 
+The badge data is centralized under `hugo/data/merit-badges/`. Do **not** look for or describe a per-badge `data.json` inside `hugo/content/merit-badges/$ARGUMENTS/`.
+
+
 ### Reference Examples
 
 Use this table to find guides that demonstrate specific techniques. During Phase 1 (Analysis), browse the relevant exemplar files to absorb the range of approaches — but do not replicate any single guide verbatim.
@@ -345,18 +348,40 @@ next_title: "{Next Page Title}"
    | Do / Perform                 | Preparation guidance, safety info, practical tips, printable worksheets  |
    | Choose one of several        | Present all options, help Scout choose, guidance for each path           |
 
-3. **data.json resources (MANDATORY)** — Every resource listed in the `resources` array for this requirement in `data.json` **must** appear on the page. This is not optional — these are official Scouting resources scraped from scouting.org.
+3. **Official resources (MANDATORY)** — Every official resource listed for this requirement in the badge data **must** appear on the page. This is not optional — these are official Scouting resources scraped from scouting.org.
    - **YouTube videos** (URL contains `youtube.com` or `youtu.be`): Use `drg/video` shortcode. Verify each video via the Video Verification Protocol before including it. If verification shows the video is embed-disabled (401), use `drg/external-link` instead. If the video is gone (404), use `drg/external-link` with the URL so the Scout can check if it's been re-uploaded.
-   - **Non-video resources** (websites, PDFs, articles): Use `drg/external-link` shortcode with the title and URL from `data.json`.
+   - **Non-video resources** (websites, PDFs, articles): Use `drg/external-link` shortcode with the official title and URL.
    - **Placement**: Integrate these resources naturally within the educational content where they are most relevant — do not dump them all at the bottom. A video about AFIS should appear in the section discussing AFIS, not after the conclusion.
-   - **Grouped pages**: If one page covers multiple requirements or sub-requirements (for example, `req1ab.md`), each resource must stay attached to the specific requirement it came from in `data.json`. A resource for `1.a` belongs in the `1a` subsection, not pooled with `1.b` resources elsewhere on the page.
-   - **Supplemental resources**: You may add additional resources beyond those in `data.json`, but the `data.json` resources are the baseline that must always be present.
+   - **Grouped pages**: If one page covers multiple requirements or sub-requirements (for example, `req1ab.md`), each resource must stay attached to the specific requirement it came from in the badge data. A resource for `1.a` belongs in the `1a` subsection, not pooled with `1.b` resources elsewhere on the page.
+   - **Supplemental resources**: You may add additional resources beyond the official requirement-level resources, but the official resources are the baseline that must always be present.
+   - **No user-facing implementation details**: Never mention `data.json`, JSON, scaffolding, placeholders, scripts, or internal repository details in published guide prose.
+   - **When no official resource link exists**: Do not invent a fake "Official Resources" section. Either omit that section entirely or replace it with a natural guidance section such as "What to Bring," "What to Record," or "Your Best Evidence," written for Scouts and counselors. If you need a brief note, say only that there is no official resource link for this page — never explain why in terms of internal files or data structures.
+   - **Placeholder cleanup**: Before finishing a guide, remove or rewrite any scaffolded placeholder copy that exposes implementation details.
 
-4. **Content elements** — At least 2–3 different types per page (see shortcode catalog below).
+4. **Scaffolded Official Resources placeholder handling** — Treat scaffold-generated resource stubs as drafting aids, not publishable copy.
+   - Replace placeholder text with real `drg/video` or `drg/external-link` shortcodes when official links exist.
+   - If no official links exist for that requirement, delete the placeholder block or rewrite it into reader-facing guidance that helps the Scout complete the requirement.
+   - Never leave a published section that explains the absence of links by referencing internal files, scraped fields, or repository mechanics.
 
-5. **Cross-references** — Link to related requirement pages with natural language.
+5. **Content elements** — At least 2–3 different types per page (see shortcode catalog below).
 
-6. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no shortcodes, no text).
+6. **Cross-references** — Link to related requirement pages with natural language.
+
+7. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no shortcodes, no text).
+
+### Reader-Facing Copy Safety Check
+
+Before considering a guide page done, scan for internal-only language that should never reach readers. Published prose must not mention:
+
+- `data.json`
+- JSON
+- scaffold or scaffolding
+- placeholder or stub
+- script names
+- verification scripts
+- repository or repo internals
+
+If the sentence would sound strange to a Scout or counselor reading the guide on the public site, rewrite it.
 
 ### extended-learning.md — Extended Learning
 
@@ -645,4 +670,5 @@ Requirements for writing:
 If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
 
 **Resume means finish, not restart.** When resuming a partially-written guide, complete all remaining pages without stopping. Do not summarize what has been done and ask whether to proceed — just continue writing from where the guide left off.
+
 

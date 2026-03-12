@@ -71,7 +71,7 @@
       <ol class="requirements-list">
         {{ range $json.requirements }}
           {{/* Use recursive partial for infinite nesting */}}
-          {{ partial "requirement.html" (dict "req" . "badge_name" $json.title) }}
+          {{ partial "requirement.html" (dict "req" . "badge_name" $json.title "hide_resources" true) }}
         {{ end }}
       </ol>
     </div>

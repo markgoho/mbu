@@ -2,6 +2,7 @@
 {{/* Accepts either a dict with "req" and "badge_name" keys, or a raw requirement object */}}
 {{ $req := .req | default . }}
 {{ $badgeName := .badge_name | default "" }}
+{{ $hideResources := .hide_resources | default false }}
 
 
 <li
@@ -40,12 +41,12 @@
       {{ end }}">
       {{ range $req.subrequirements }}
         {{/* Recursively render nested requirements, passing badge_name through */}}
-        {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName) }}
+        {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName "hide_resources" $hideResources) }}
       {{ end }}
     </ol>
   {{ end }}
 
-  {{ if $req.resources }}
+  {{ if and $req.resources (not $hideResources) }}
     <div class="resources">
       <strong>Resources:</strong>
       <ul>

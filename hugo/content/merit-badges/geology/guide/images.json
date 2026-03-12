@@ -1,0 +1,160 @@
+{
+  "badge": "geology",
+  "style_context": "Geology concepts, rock and mineral identification, stream processes, geologic mapping, fossils, and Earth history",
+  "images": [
+    {
+      "id": "geology-branches-overview",
+      "file": "_index.md",
+      "style": "illustrated",
+      "description": "Four-panel educational illustration showing the major branches of geology side by side in one horizontal layout: panel 1 physical geology with layered canyon walls and an active stream cutting sediment, panel 2 historical geology with fossil-bearing rock layers and a geologic time column, panel 3 economic geology with a quarry face, drill core, and extracted mineral resources, panel 4 environmental and engineering geology with a slope stability study and building foundation on layered ground. Clean visual composition, minimal background clutter, no branding, no visible organizational text.",
+      "value": "Side-by-side visual comparison of four geology branches and their distinct subjects — relationships and contrasts that are clearer at a glance than in text"
+    },
+    {
+      "id": "evidence-in-rock-layers-roadcut",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "description": "Realistic roadside rock exposure with several distinct horizontal and tilted layers visible in a highway roadcut. Add a small number of simple callouts identifying volcanic ash layer, rounded gravel channel fill, fossil-bearing muddy layer, and cross-cutting crack or fault. No logos, no road signs with readable text, no extra labels beyond the essential geology features.",
+      "value": "Shows multiple geologic clues in one outcrop and where to look for them — spatial evidence patterns that text descriptions cannot fully convey"
+    },
+    {
+      "id": "resource-to-product-flow",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "Four clean side-by-side panels comparing Earth resources and their processed products: limestone quarry to cement and concrete, copper ore to wire coil, sand and gravel pit to road aggregate, crude oil production to refined fuel and plastic products. Each panel should emphasize the raw material beside the finished everyday use object. Minimal labels or none, educational composition, realistic materials, no branding.",
+      "value": "Direct visual pairing of raw Earth materials with finished products — helps readers see the discovery-to-processing connection more concretely than prose alone"
+    },
+    {
+      "id": "geologic-map-legend-and-patterns",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "Clean educational diagram of a simplified geologic map with colored map units, a compact legend showing rock name, age, and rock class, plus examples of fold pattern, fault offset, and an intrusive body cutting across surrounding units. Include strike-and-dip symbols in a few places. Use short labels only, horizontal text only, uncluttered layout.",
+      "value": "Combines map colors, legend, symbols, and structural patterns in one view — map-reading relationships that are difficult to understand from text alone"
+    },
+    {
+      "id": "choose-your-geology-path-grid",
+      "file": "req4.md",
+      "style": "illustrated",
+      "description": "Four-quadrant educational illustration representing the four geology option paths: streams and sediment with meandering creek and gravel bar, energy resources with subsurface trap and drilling data, mineral resources with labeled hand specimens and quarry stone, Earth history with fossils and layered time sequence. Distinct color palette per quadrant, clean icons and visuals, no dense text, no branding.",
+      "value": "Visual overview of the four option pathways and their different focus areas — a comparison grid that helps readers choose faster than text alone"
+    },
+    {
+      "id": "sediment-settling-jar-sequence",
+      "file": "req4a1.md",
+      "style": "comparison",
+      "description": "Three-panel sequence of a clear jar sediment experiment: panel 1 muddy shaken mixture with all grains suspended, panel 2 early settling with gravel and sand dropping first, panel 3 final sorted layers with coarse grains at bottom, finer sediment above, cloudy clay-rich water near top. Consistent jar position, simple neutral background, high educational clarity.",
+      "value": "Step-by-step settling sequence and resulting layer order — time-based sorting changes that are much easier to grasp visually than in paragraph form"
+    },
+    {
+      "id": "stream-gradient-patterns",
+      "file": "req4a2.md",
+      "style": "diagram",
+      "description": "Educational diagram with four small topographic-map-style panels labeled by pattern only once each: straight, meandering, dendritic, trellis. Each panel shows contour lines, stream path, start and end elevation points, and measured stream distance path for gradient comparison. Use minimal horizontal labels, clean cartographic style, no clutter.",
+      "value": "Shows how different drainage patterns and contour spacing affect gradient measurement — map geometry that cannot be communicated as efficiently with words alone"
+    },
+    {
+      "id": "stream-features-labeled",
+      "file": "req4a3.md",
+      "style": "diagram",
+      "description": "Plan-view meandering stream diagram with clearly labeled cut bank, fill bank, point bar, medial channel bar, and lake delta. Show flow direction with one simple arrow and use color or texture differences to suggest coarser versus finer sediment zones. Keep labels short and horizontal.",
+      "value": "Places all required stream features in their correct positions on one channel system — spatial arrangement and sediment patterning that text cannot show clearly"
+    },
+    {
+      "id": "fine-sediment-magnifier-comparison",
+      "file": "req4a4.md",
+      "style": "comparison",
+      "description": "Split-frame comparison of the same dried sediment sample viewed with unaided eye on the left and through a hand lens on the right. Left side shows nearly smooth fine muddy coating, right side reveals tiny mixed grains and texture details. Realistic magnifier view, neutral educational setup, no extra text.",
+      "value": "Reveals how much fine sediment detail is invisible without magnification — a visual difference that the reader must see rather than imagine"
+    },
+    {
+      "id": "dry-streambed-flow-clues",
+      "file": "req4a5.md",
+      "style": "annotated-photo",
+      "description": "Realistic dry streambed scene with visible clues to former flow direction: imbricated flat pebbles, ripple marks, point bar on inside bend, debris caught behind obstacle, and deeper channel thread. Add only a few clear callouts to those clues and one downstream arrow. Natural outdoor setting, no people needed.",
+      "value": "Shows multiple field clues for inferring flow direction in one real streambed scene — observational evidence that is far easier to learn visually"
+    },
+    {
+      "id": "petroleum-system-cross-section",
+      "file": "req4b2.md",
+      "style": "diagram",
+      "description": "Clean geologic cross-section of a petroleum system showing source rock, porous reservoir rock, sealing layer, migrating hydrocarbons, and an anticline trap where oil and gas accumulate. Distinguish oil, gas, and water zones with simple color coding. Short labels only, horizontal text only.",
+      "value": "Shows how source, migration, reservoir, seal, and trap fit together vertically and spatially — an underground relationship that text alone is hard to picture accurately"
+    },
+    {
+      "id": "subsurface-exploration-tools-overview",
+      "file": "req4b3.md",
+      "style": "illustrated",
+      "description": "Six-panel educational tools overview: reflection seismic survey truck and subsurface wave reflections, electric well log graph beside borehole, stratigraphic correlation between wells, surface geologic map, subsurface structure contour map, and core plus drill cuttings tray. Arrange in a tidy grid with very short titles only if necessary.",
+      "value": "Lets readers compare what each exploration tool looks like and what kind of information it contributes — tool distinctions that are much clearer visually"
+    },
+    {
+      "id": "structure-map-from-well-points",
+      "file": "req4b4.md",
+      "style": "comparison",
+      "description": "Two-panel comparison: left panel scattered well data points with numeric depth or elevation values, right panel completed subsurface structure contour map showing a structural high and closed contours. Clean educational cartography, same area in both panels, minimal text.",
+      "value": "Demonstrates how scattered well values become an interpreted structure map — a transformation process that is difficult to explain fully with text alone"
+    },
+    {
+      "id": "rock-classes-comparison",
+      "file": "req4c1.md",
+      "style": "comparison",
+      "description": "Three-column comparison of representative hand specimens: igneous with interlocking crystals, sedimentary with layers and fossil fragments, metamorphic with foliation or banding. Neutral background, specimen scale consistent, arrows or tiny callouts highlighting defining textures only.",
+      "value": "Shows the defining textures of the three rock classes side by side — visible differences in layering, crystals, and foliation that text descriptions cannot replace"
+    },
+    {
+      "id": "mineral-properties-identification-grid",
+      "file": "req4c2.md",
+      "style": "diagram",
+      "description": "Clean educational mineral identification diagram arranged as a five-part grid. Show one specimen example for hardness scratch test, one streak plate with colored powder, one mineral with obvious cleavage planes, one specimen with metallic versus glassy luster comparison, and one crystal form example such as cube and prism. Very short labels only, horizontal text only, plain background, no branding.",
+      "value": "Shows the main mineral identification properties with concrete visual examples side by side — test cues and appearance differences that readers need to see, not just read about"
+    },
+    {
+      "id": "road-material-layers-cross-section",
+      "file": "req4c4.md",
+      "style": "diagram",
+      "description": "Simple cutaway cross-section of a road showing asphalt surface, aggregate mix, crushed-stone base course, drainage layer, and compacted subgrade. Include representative rock fragments beside each layer or as small insets. Short horizontal labels only.",
+      "value": "Shows where different geologic materials sit within a road structure and how their roles differ — layered construction relationships that text alone cannot depict well"
+    },
+    {
+      "id": "geologic-timescale-and-local-rocks",
+      "file": "req4d1.md",
+      "style": "diagram",
+      "description": "Vertical geologic timescale with Precambrian, Paleozoic, Mesozoic, and Cenozoic eras and major periods, plus a side panel showing a simplified regional rock column aligned to the matching time intervals. Keep text minimal and large, use horizontal labels only, clear educational colors.",
+      "value": "Aligns eras, periods, and local rock ages on one shared timeline — chronological relationships that are much easier to understand visually than in prose"
+    },
+    {
+      "id": "plate-boundaries-and-hazards",
+      "file": "req4d2.md",
+      "style": "diagram",
+      "description": "Three-panel tectonics diagram showing divergent boundary with spreading ridge, convergent boundary with subduction and volcanoes, and transform boundary with lateral slip and earthquakes. Each panel should include simplified crustal motion arrows and the main hazard or landform result. Minimal horizontal labels only.",
+      "value": "Shows how different plate boundary motions produce different hazards and landforms — dynamic spatial processes that text cannot illustrate as clearly"
+    },
+    {
+      "id": "fossilization-pathways-grid",
+      "file": "req4d3.md",
+      "style": "illustrated",
+      "description": "Five-panel fossilization grid showing permineralization in bone or wood, replacement shell, mold and cast sequence, carbon film leaf impression, and trace fossil footprints or burrow. Clean museum-style educational illustration, short labels only, no clutter.",
+      "value": "Compares the major fossilization pathways in one view — preservation differences that are easier to distinguish visually than through text descriptions alone"
+    },
+    {
+      "id": "ancient-habitat-fossil-environments",
+      "file": "req4d4.md",
+      "style": "illustrated",
+      "description": "Nine small habitat panels arranged in a neat grid representing benthonic, pelagic, littoral, lacustrine, open marine, brackish, fluvial, eolian, and protected reef environments. Each panel should show characteristic setting and one or two typical organisms obtaining food in that habitat. Very short labels only, consistent art style.",
+      "value": "Shows the visual differences among nine habitat terms and how organisms feed in each — environmental distinctions too numerous and spatial to absorb easily from text alone"
+    },
+    {
+      "id": "fossils-in-building-stone-example",
+      "file": "req4d6b.md",
+      "style": "annotated-photo",
+      "description": "Close realistic view of polished fossiliferous limestone floor or wall slab in a public building, with visible shell fragments, crinoid stem sections, and coral-like fossil patterns. Add a few subtle callouts to the fossil evidence only. No signage, no branding, no people needed.",
+      "value": "Shows what fossil evidence actually looks like in polished building stone — a recognition skill that depends on seeing real visual patterns"
+    },
+    {
+      "id": "geology-hobby-paths-collage",
+      "file": "req6b.md",
+      "style": "comparison",
+      "description": "Four-panel collage of geology as a hobby: careful rockhounding with notebook and hand lens, museum fossil visit, labeled specimen collection box, and geology-focused hike examining an outcrop. Scouts or teens should wear clean Scout uniforms only in settings where that makes sense such as museum visit; use appropriate outdoor clothing for active field exploration. No logos or readable text.",
+      "value": "Shows several realistic ways geology can become an ongoing hobby or lifestyle — concrete activity examples that are more motivating and memorable than text alone"
+    }
+  ]
+}
