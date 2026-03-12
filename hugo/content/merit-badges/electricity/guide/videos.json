@@ -1,0 +1,51 @@
+{
+  "badge": "electricity",
+  "searched_at": "2026-03-11T17:50:58.514Z",
+  "videos": [
+    {
+      "id": "how-to-make-a-simple-electric-circuit-working-mode",
+      "file": "req10a.md",
+      "requirement_path": "10.a",
+      "video_id": "oDUAvaXsK1g",
+      "title": "How To Make a Simple Electric Circuit | Working Model School Science Project",
+      "channel": "School Science Project Ideas",
+      "duration_seconds": 165000,
+      "views": 3191074,
+      "url": "https://youtu.be/oDUAvaXsK1g",
+      "status": "working",
+      "relevance": "This directly matches requirement 10a by showing a very simple battery-powered circuit with a switch and a load, which helps Scouts visualize the complete current path they need to build and explain.",
+      "query": "Electricity connect buzzer bell light battery key tutorial",
+      "trust_score": 8
+    },
+    {
+      "id": "spdt-switch-home-made-robots-electrical-engineerin",
+      "file": "req10d.md",
+      "requirement_path": "10.d",
+      "video_id": "1_OieLuWGyw",
+      "title": "SPDT switch | Home-made robots | Electrical engineering | Khan Academy",
+      "channel": "Khan Academy - Projects",
+      "duration_seconds": 168000,
+      "views": 88089,
+      "url": "https://youtu.be/1_OieLuWGyw",
+      "status": "working",
+      "relevance": "This is a focused, beginner-friendly explanation of an SPDT switch, which is exactly the switching concept Scouts need for requirement 10d before they build and demonstrate one themselves.",
+      "query": "Electricity build single-pole double-throw switch works tuto",
+      "trust_score": 0
+    },
+    {
+      "id": "how-a-rheostat-works---step-by-step-its-different-",
+      "file": "req10c.md",
+      "requirement_path": "10.c",
+      "video_id": "isA5I9JFjA4",
+      "title": "How a Rheostat works - Step by Step & its different applications",
+      "channel": "DERF Electronics",
+      "duration_seconds": 275000,
+      "views": 54941,
+      "url": "https://youtu.be/isA5I9JFjA4",
+      "status": "working",
+      "relevance": "This video stays on topic by explaining what a rheostat does and how changing resistance affects circuit behavior, which supports the requirement to build one and show that it works.",
+      "query": "Electricity build simple rheostat works tutorial",
+      "trust_score": 3
+    }
+  ]
+}

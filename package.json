@@ -16,7 +16,8 @@
     "verify:youtube-links": "bun scripts/verify-youtube-links.ts",
     "search:youtube-videos": "bun scripts/search-youtube-videos.ts",
     "verify:drg-resources": "bun scripts/verify-drg-resources.ts",
-    "scaffold:drg": "bun scripts/scaffold-drg.ts"
+    "scaffold:drg": "bun scripts/scaffold-drg.ts",
+    "drg:coverage": "bun scripts/drg-coverage.ts"
   },
   "devDependencies": {
     "@google/genai": "^1.44.0",
