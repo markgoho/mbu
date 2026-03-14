@@ -1,0 +1,51 @@
+{
+  "badge": "health-care-professions",
+  "searched_at": "2026-03-14T12:15:21.376Z",
+  "videos": [
+    {
+      "id": "high-tech-hospital-uses-artificial-intelligence-in",
+      "file": "req8.md",
+      "requirement_path": "8",
+      "video_id": "qetKUFDDF4A",
+      "title": "High-tech hospital uses artificial intelligence in patient care",
+      "channel": "NBC News",
+      "duration_seconds": 156000,
+      "views": 282278,
+      "url": "https://youtu.be/qetKUFDDF4A",
+      "status": "working",
+      "relevance": "This short news segment is directly relevant to the page's example of AI-supported diagnosis and patient care. It gives Scouts a concrete, current example of how AI tools are being used in hospitals without drifting into overly technical detail.",
+      "query": "Health Care Professions Example Breakthrough: AI-Supported D",
+      "trust_score": 5
+    },
+    {
+      "id": "the-hippocratic-oath",
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "iMiJDSbxLWE",
+      "title": "The Hippocratic Oath",
+      "channel": "CBS Sunday Morning",
+      "duration_seconds": 129000,
+      "views": 77712,
+      "url": "https://youtu.be/iMiJDSbxLWE",
+      "status": "working",
+      "relevance": "This is a short, reputable overview of the Hippocratic Oath that matches the page's focus on what the Physician's Oath means today. It should help Scouts connect the oath's history to modern medical ethics and trust.",
+      "query": "Health Care Professions understanding meaning physician oath",
+      "trust_score": 0
+    },
+    {
+      "id": "5-scenarios-of-maintaining-patient-confidentiality",
+      "file": "req7.md",
+      "requirement_path": "7",
+      "video_id": "8kNlqc7H8pY",
+      "title": "5 Scenarios of Maintaining Patient Confidentiality",
+      "channel": "Etactics",
+      "duration_seconds": 221000,
+      "views": 16857,
+      "url": "https://youtu.be/8kNlqc7H8pY",
+      "status": "working",
+      "relevance": "This video is directly aligned with the requirement because it explains patient confidentiality through practical scenarios rather than abstract definitions. Those examples support the page's emphasis on privacy, trust, and everyday HIPAA-related decisions.",
+      "query": "Health Care Professions role confidentiality between patient",
+      "trust_score": 0
+    }
+  ]
+}

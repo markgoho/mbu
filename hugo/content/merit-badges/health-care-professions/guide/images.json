@@ -1,0 +1,76 @@
+{
+  "badge": "health-care-professions",
+  "style_context": "Health care careers, clinical teamwork, medical technology, patient privacy, rehabilitation, and community health service",
+  "images": [
+    {
+      "id": "health-care-team-map",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Four-panel comparison showing different health care roles in action: a family doctor listening to a patient in an exam room, an optometrist using an eye exam device, an audiologist performing a hearing test in a quiet clinic room, and a physical therapist helping a patient walk with parallel bars. Clean professional environments, realistic medical equipment, no branding, no visible organizational text.",
+      "value": "Shows how different specialists work in distinct care settings with different tools and patient interactions — role differences that text alone cannot visualize"
+    },
+    {
+      "id": "group-1-training-paths",
+      "file": "req1.md",
+      "style": "illustrated",
+      "description": "Horizontal comparison chart with seven rows for MD/DO, DPM, DC, NP, Psychologist, OD, and AudD. Each row uses simple icons and short labels to show degree level, approximate years of education, supervised clinical training, and licensure. Clean visual hierarchy, large readable labels only, text-light layout, medical education pathway infographic style.",
+      "value": "Side-by-side visual comparison of seven training pathways with degree, time, clinical training, and licensure steps — comparative complexity that is hard to grasp from prose alone"
+    },
+    {
+      "id": "group-2-care-settings",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "Three-panel comparison of Group 2 careers in their real work settings: a registered nurse checking a hospital patient's monitor and medications, a pharmacist counseling a patient at a pharmacy counter with prescription bins behind them, and a paramedic providing care beside an ambulance with emergency equipment visible. Professional clinical realism, no logos, no branding.",
+      "value": "Shows how bedside, pharmacy, and emergency roles differ in pace, setting, and equipment — workplace contrasts that text cannot convey as quickly"
+    },
+    {
+      "id": "rehab-goals-comparison",
+      "file": "req3.md",
+      "style": "comparison",
+      "description": "Four-panel comparison of rehabilitation careers helping patients with different goals: a physical therapist guiding stair practice, an occupational therapist helping a patient use adaptive kitchen tools, a respiratory therapist coaching a breathing treatment with mask and tubing, and a speech-language pathologist leading speech or swallowing exercises at a table. Clear differences in equipment and patient tasks, realistic clinic settings.",
+      "value": "Shows distinct recovery goals, equipment, and patient activities across rehabilitation professions — functional differences that become clear only when seen"
+    },
+    {
+      "id": "imaging-vs-ultrasound-comparison",
+      "file": "req4.md",
+      "style": "comparison",
+      "description": "Side-by-side comparison of two imaging environments: on the left, a radiology technologist positioning a patient for an X-ray with shielding and imaging equipment visible; on the right, a sonographer using an ultrasound probe and monitor in a softer exam-room setup. Realistic equipment, clear difference between radiation imaging and sound-wave imaging environments, no text overlays beyond very short labels if needed.",
+      "value": "Shows the different equipment setup, patient positioning, and room environment for X-ray versus ultrasound — operational differences that are easier to understand visually"
+    },
+    {
+      "id": "health-care-workplace-observation-grid",
+      "file": "req5.md",
+      "style": "illustrated",
+      "description": "Six-panel observation grid for a workplace visit, showing a clinic exam room, pharmacy counter, ambulance equipment area, lab bench with samples, electronic health record screen viewed over a shoulder without readable private data, and a front desk check-in station. Each panel is visually distinct and designed to help a teenager notice work setting, tools, and workflow. Minimal text, no branding.",
+      "value": "Shows the main work zones, tools, and observation targets a Scout should notice during a visit — visual scanning cues that a checklist alone cannot teach"
+    },
+    {
+      "id": "confidentiality-do-dont-comparison",
+      "file": "req7.md",
+      "style": "comparison",
+      "description": "Split comparison image. Left side shows correct privacy habits: a clinician speaking quietly behind a privacy curtain, a locked computer screen, and paperwork handed to a verified person at a desk. Right side shows incorrect habits with clear visual warning cues: gossiping in a hallway, an unattended open chart on a screen, and records visible to bystanders. No patient-identifying details, no branding.",
+      "value": "Shows correct versus incorrect privacy behaviors in concrete scenes — do-and-don't contrasts that are much faster to learn visually than through abstract explanation"
+    },
+    {
+      "id": "ai-diagnosis-workflow",
+      "file": "req8.md",
+      "style": "diagram",
+      "description": "Five-step medical workflow diagram with simple horizontal flow: patient scan enters a computer system, AI highlights a suspicious area on the image, a clinician reviews the flagged finding, a specialist consults, and treatment starts sooner. Use clear arrows between panels, large simple icons, very short horizontal labels only, no dense text, no branding.",
+      "value": "Shows the step-by-step flow from scan to AI review to clinician decision and treatment — process relationships that are difficult to communicate with text alone"
+    },
+    {
+      "id": "community-health-event-flow",
+      "file": "req9.md",
+      "style": "diagram",
+      "description": "Bird's-eye diagram of a community health fair or blood drive layout with simple labeled zones for check-in, waiting area, screening tables, privacy area, volunteer help desk, and exit. Include arrows showing visitor flow and volunteers guiding people between stations. Clean organized layout, horizontal labels only, no organization names, no branding.",
+      "value": "Shows spatial layout and visitor flow at a health event, including how volunteers and privacy areas fit into the setup — spatial relationships that prose cannot show clearly"
+    },
+    {
+      "id": "team-based-care-coordination",
+      "file": "extended-learning.md",
+      "style": "diagram",
+      "description": "Central patient in a simple care-coordination diagram surrounded by connected professionals: primary care clinician, pharmacist, dietitian, audiologist, psychologist, and medical records specialist. Use clean arrows showing information and care-plan coordination between team members. Minimal text, horizontal labels only, modern educational medical diagram style, no branding.",
+      "value": "Shows how multiple professionals connect around one patient and share information as a coordinated team — networked care relationships that are hard to picture from text alone"
+    }
+  ]
+}
