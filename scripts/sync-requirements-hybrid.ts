@@ -542,12 +542,12 @@ function parseStructureFromHtml(html: string): {
 // =============================================================================
 
 function splitEmbeddedLists(requirements: Requirement[]): void {
-  for (const req of requirements) {
+  for (const requirement of requirements) {
     // Check if text has embedded letter list (e.g., "following:a. ...b. ...c. ...")
-    if (req.text && !req.subrequirements) {
+    if (!requirement.subrequirements) {
       // Pattern: text contains "following:" followed by letter items "a. ", "b. ", etc.
       // Note: May have NO space after "following:" (health-care-professions case)
-      const followingMatch = req.text.match(/^(.*?following:)\s*(.+)$/i);
+      const followingMatch = requirement.text.match(/^(.*?following:)\s*(.+)$/i);
       if (followingMatch && followingMatch[1] && followingMatch[2]) {
         const possibleIntro = followingMatch[1].trim();
         const remainder = followingMatch[2];
@@ -568,7 +568,7 @@ function splitEmbeddedLists(requirements: Requirement[]): void {
               if (itemText) {
                 items.push({
                   req_id: letter,
-                  path: `${req.path}.${letter}`,
+                  path: computePath(requirement.path, letter),
                   text: itemText,
                 });
               }
@@ -576,11 +576,11 @@ function splitEmbeddedLists(requirements: Requirement[]): void {
           }
 
           if (items.length > 0) {
-            req.text = possibleIntro;
-            req.subrequirements = items;
-            req.subrequirement_mode = { type: "all" };
+            requirement.text = possibleIntro;
+            requirement.subrequirements = items;
+            requirement.subrequirement_mode = { type: "all" };
             console.log(
-              `   Split requirement ${req.path} into ${items.length} items`,
+              `   Split requirement ${requirement.path} into ${items.length} items`,
             );
           }
         }
@@ -588,8 +588,104 @@ function splitEmbeddedLists(requirements: Requirement[]): void {
     }
 
     // Recursively process subrequirements
-    if (req.subrequirements) {
-      splitEmbeddedLists(req.subrequirements);
+    if (requirement.subrequirements) {
+      splitEmbeddedLists(requirement.subrequirements);
+    }
+  }
+}
+
+function splitEmbeddedParenthesizedLists(requirements: Requirement[]): void {
+  const wordToCount: Record<string, number> = {
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+    five: 5,
+    six: 6,
+    seven: 7,
+    eight: 8,
+    nine: 9,
+    ten: 10,
+  };
+
+  for (const requirement of requirements) {
+    const markerPattern = /\((\d+)\)/g;
+    const markerMatches = Array.from(requirement.text.matchAll(markerPattern));
+
+    if (markerMatches.length >= 3) {
+      const numbers = markerMatches.map(match => Number.parseInt(match[1] ?? "", 10));
+      const hasSequentialMarkers = numbers.every(
+        (number, index) => number === index + 1,
+      );
+
+      if (hasSequentialMarkers) {
+        const firstMarker = markerMatches[0];
+        if (firstMarker && firstMarker.index !== undefined && firstMarker.index > 0) {
+          const intro = requirement.text.slice(0, firstMarker.index).trim();
+          const remainder = requirement.text.slice(firstMarker.index).trim();
+
+          if (intro.endsWith(":")) {
+            const normalizedIntro = intro.replace(/:(\S)/g, ": $1");
+            const normalizedRemainder = remainder.replace(/:(\S)/g, ": $1");
+            const groupMatch = normalizedIntro.match(/^(.*?following:)\s*(.+)$/i);
+            const leadInText = groupMatch?.[1]?.trim() ?? normalizedIntro;
+            const groupLabel = groupMatch?.[2]?.trim();
+            const selectMatch = leadInText.match(/\bselect\s+(one|two|three|four|five|six|seven|eight|nine|ten|\d+)\b/i);
+            const selectValue = selectMatch?.[1]?.toLowerCase();
+            const selectCount =
+              selectValue === undefined
+                ? undefined
+                : /^\d+$/.test(selectValue)
+                  ? Number.parseInt(selectValue, 10)
+                  : wordToCount[selectValue];
+            const generatedMode =
+              selectCount === undefined
+                ? { type: "all" as const }
+                : { type: "select" as const, count: selectCount };
+            const parts = normalizedRemainder.split(/(?=\(\d+\))/);
+            const items: Requirement[] = [];
+
+            for (const part of parts) {
+              const itemMatch = part.match(/^\((\d+)\)\s*(.+?)$/s);
+              if (itemMatch && itemMatch[1] && itemMatch[2]) {
+                const identifier = itemMatch[1];
+                const itemText = itemMatch[2].trim();
+                if (itemText) {
+                  items.push({
+                    req_id: identifier,
+                    path: computePath(requirement.path, identifier),
+                    text: itemText,
+                  });
+                }
+              }
+            }
+
+            if (items.length >= 3) {
+              const markdownList = items
+                .map(item => `1. ${item.text}`)
+                .join("\n");
+
+              if (requirement.subrequirements) {
+                const groupHeading = groupLabel === undefined ? "" : `\n\n${groupLabel}`;
+                requirement.text = `${leadInText}${groupHeading}\n\n${markdownList}`;
+                requirement.subrequirement_mode = { type: "all" };
+              } else {
+                requirement.text = leadInText;
+                requirement.subrequirements = items;
+                requirement.subrequirement_mode = generatedMode;
+              }
+
+              console.log(
+                `   Split requirement ${requirement.path} into ${items.length} parenthesized items`,
+              );
+            }
+          }
+        }
+      }
+    }
+
+    if (requirement.subrequirements) {
+      splitEmbeddedParenthesizedLists(requirement.subrequirements);
     }
   }
 }
@@ -726,6 +822,7 @@ try {
   // Step 6: Split embedded lists
   console.log("\n✂️  Step 6: Splitting embedded lists...\n");
   splitEmbeddedLists(structure);
+  splitEmbeddedParenthesizedLists(structure);
 
   // Determine last_updated by comparing requirements against existing data
   const outputPath = `hugo/data/merit-badges/${badge.slug}.json`;

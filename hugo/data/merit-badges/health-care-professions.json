@@ -5,12 +5,12 @@
   "url": "https://www.scouting.org/merit-badges/health-care-professions/",
   "eagle_required": false,
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Health%20Care%20Professions.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-14",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
-      "text": "Select three of the professions from Group 1 listed below which interest you, then complete the following:",
+      "text": "Select three of the professions from Group 1 listed below which interest you, then complete the following:\n\nGroup 1:\n\n1. Allopathic physician (MD)—all specialties\n1. Osteopathic physician (DO)—all specialties\n1. Podiatrist (DPM)\n1. Chiropractor (DC)\n1. Nurse Practitioner (NP)\n1. Psychologist (PhD or PsyD)\n1. Optometrist (OD)\n1. Audiologist (AudD)",
       "subrequirements": [
         {
           "req_id": "a",
@@ -30,7 +30,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Select three of the professions from Group 2 listed below which interest you, then complete the following:",
+      "text": "Select three of the professions from Group 2 listed below which interest you, then complete the following:\n\nGroup 2:\n\n1. Physician Assistant (PA)\n1. Registered Nurse (RN)\n1. Certified Nurse Midwife (CNM)\n1. Certified Nurse Assistant (CNA)\n1. Licensed Practical Nurse (LPN/LVN)\n1. Nurse Anesthetist (CRNA)\n1. Pharmacist (PharmD)\n1. Pharmacy Technician\n1. Emergency Medical Technician (EMT)/Paramedic",
       "subrequirements": [
         {
           "req_id": "a",
@@ -50,7 +50,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Select three of the professions from Group 3 listed below which interest you, then complete the following:",
+      "text": "Select three of the professions from Group 3 listed below which interest you, then complete the following:\n\nGroup 3:\n\n1. Physical Therapist (DPT)\n1. Occupational Therapist (OT)\n1. Orthotist/Prosthetist\n1. Medical Appliance Technician\n1. Respiratory Therapist (RT)\n1. Medical Assistant\n1. Dietitian (RD)\n1. Speech-Language Pathologist (Speech Therapist) (SLP)",
       "subrequirements": [
         {
           "req_id": "a",
@@ -70,7 +70,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Select three of the professions from Group 4 listed below which interest you, then complete the following:",
+      "text": "Select three of the professions from Group 4 listed below which interest you, then complete the following:\n\nGroup 4:\n\n1. Biomedical Engineer (BME)\n1. Medical Technologist\n1. Phlebotomist\n1. Radiology Technologist\n1. Sonographer\n1. Medical Records Specialist\n1. Cytopathologist\n1. Histotechnologist",
       "subrequirements": [
         {
           "req_id": "a",
@@ -90,7 +90,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at theirworkplace. Discuss with your counselor the following:",
+      "text": "Select one career from any of the lists in Requirements 1, 2, 3, or 4 and arrange to visit that professional at their workplace. Discuss with your counselor the following:",
       "subrequirements": [
         {
           "req_id": "a",
