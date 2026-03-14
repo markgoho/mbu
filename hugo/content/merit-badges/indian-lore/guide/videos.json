@@ -1,0 +1,66 @@
+{
+  "badge": "indian-lore",
+  "searched_at": "2026-03-14T18:18:56.661Z",
+  "videos": [
+    {
+      "id": "adapting-to-the-environment---how-geography-shaped",
+      "file": "req1.md",
+      "requirement_path": "1",
+      "video_id": "AMjKWONNmgA",
+      "title": "Adapting to the Environment - How Geography Shaped Native American Cultures",
+      "channel": "Miacademy & MiaPrep Learning Channel",
+      "duration_seconds": 582000,
+      "views": 7569,
+      "url": "https://youtu.be/AMjKWONNmgA",
+      "status": "working",
+      "relevance": "This video appears tightly matched to Requirement 1 because it focuses on how geography and environment shaped Native American cultural regions. It should reinforce the guide's core idea that cultural areas are best understood through climate, resources, housing, food, and travel.",
+      "query": "Indian Lore different american indian cultural areas makes t",
+      "trust_score": 0
+    },
+    {
+      "id": "how-to-get-the-indian-lore-merit-badge",
+      "file": "req5.md",
+      "requirement_path": "5",
+      "video_id": "WxUIM84_Qnc",
+      "title": "How To Get The Indian Lore Merit Badge",
+      "channel": "Eagle Scout Mac Guzman",
+      "duration_seconds": 874000,
+      "views": 3044,
+      "url": "https://youtu.be/WxUIM84_Qnc",
+      "status": "working",
+      "relevance": "This looks like a badge-specific overview that can help Scouts understand the overall Indian Lore merit badge and the final choice between Requirement 5a and 5b. It fits best on the option-selection page as a practical orientation before choosing a path.",
+      "query": "Indian Lore Your Options",
+      "trust_score": 3
+    },
+    {
+      "id": "the-witness-blanket-weaving-together-healing-and-h",
+      "file": "req5a.md",
+      "requirement_path": "5.a",
+      "video_id": "67sP4EvEhyU",
+      "title": "The Witness Blanket: Weaving Together Healing and History",
+      "channel": "Spotlight Features",
+      "duration_seconds": 185000,
+      "views": 2343,
+      "url": "https://youtu.be/67sP4EvEhyU",
+      "status": "working",
+      "relevance": "This museum-centered video appears relevant for Requirement 5a because it models how an exhibit can use objects to tell Indigenous stories and history. It supports the page's emphasis on observing exhibits carefully and learning from collections rather than just glancing at artifacts.",
+      "query": "Indian Lore visit museum either in-person virtually see tuto",
+      "trust_score": 0
+    },
+    {
+      "id": "celebration-of-powwow-the-living-history-of-native",
+      "file": "req5b.md",
+      "requirement_path": "5.b",
+      "video_id": "N2CmYbpjIz8",
+      "title": "Celebration of Powwow | The Living History of Native American Gatherings",
+      "channel": "NBC News",
+      "duration_seconds": 523000,
+      "views": 136760,
+      "url": "https://youtu.be/N2CmYbpjIz8",
+      "status": "working",
+      "relevance": "This video is strongly aligned to Requirement 5b because it focuses on a contemporary Native gathering and helps show what visitors may see, hear, and learn at a powwow. It reinforces the guide's message that Native cultures are living cultures and gives useful context for respectful observation.",
+      "query": "Indian Lore attend contemporary american indian gathering pr",
+      "trust_score": 5
+    }
+  ]
+}
