@@ -1,0 +1,111 @@
+{
+  "badge": "horsemanship",
+  "style_context": "Horse care, riding technique, tack, barn safety, and equestrian handling skills",
+  "images": [
+    {
+      "id": "horse-blind-spots-safety-diagram",
+      "file": "req1.md",
+      "style": "diagram",
+      "description": "Side-view educational diagram of a standing horse with the safe approach zone highlighted at the left shoulder, two shaded blind-spot zones directly in front of the forehead and directly behind the tail, and a simple handler figure approaching calmly at the shoulder. Minimal labels only: shoulder, safe approach, front blind spot, rear blind spot. Clean white background, clear horizontal labels, no logos or branding.",
+      "value": "Shows the horse's safe approach zone and front and rear blind spots in one spatial view — positioning that text alone cannot convey"
+    },
+    {
+      "id": "barn-fire-hazards-vs-safe-barn-comparison",
+      "file": "req1.md",
+      "style": "comparison",
+      "description": "Split-frame comparison of two horse barn aisles. Left panel shows unsafe conditions: loose hay near an outlet, frayed extension cord, cluttered aisle, portable heater near bedding, blocked exit. Right panel shows the same aisle safely arranged: clear walkway, protected light fixture, extinguisher mounted visibly, hay stored properly, exits open, no heater near bedding. No people. Very few large labels only: unsafe and safe. No other text.",
+      "value": "Contrasts fire hazards with a properly arranged barn aisle so readers can instantly recognize dangerous vs safe setups — a visual comparison text cannot match"
+    },
+    {
+      "id": "horse-parts-labeled-diagram",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Clean side-profile diagram of a horse with at least 15 major external parts labeled using short horizontal callouts: ears, eye, muzzle, nostrils, poll, neck, withers, shoulder, back, barrel, flank, croup, hip, stifle, hock, cannon bone, fetlock, pastern, hoof. White background, educational poster style, anatomically accurate proportions, no decorative scenery, no branding.",
+      "value": "Maps 15+ horse body parts onto their exact locations at once — spatial anatomy relationships that text alone cannot teach efficiently"
+    },
+    {
+      "id": "horse-breed-comparison-grid",
+      "file": "req3.md",
+      "style": "illustrated",
+      "description": "Four-panel educational comparison showing full-body side views of an American Quarter Horse, Arabian, Thoroughbred, and Clydesdale. Each horse is shown in similar pose and scale-adjusted proportion so body differences are easy to compare. Very short labels only under each horse with breed name. Visual emphasis on muscular hindquarters of the Quarter Horse, refined head and compact frame of the Arabian, tall athletic build of the Thoroughbred, and heavy draft size with leg feathering of the Clydesdale. Plain neutral background, no riders, no logos.",
+      "value": "Places four contrasting horse breeds side by side so readers can SEE differences in build, proportion, and type — comparison detail that paragraphs alone cannot deliver"
+    },
+    {
+      "id": "colic-warning-signs-comparison",
+      "file": "req4.md",
+      "style": "comparison",
+      "description": "Three-panel comparison of the same horse showing common colic warning behaviors: pawing at the ground, looking back at its side, and attempting to roll restlessly in bedding, with a small fourth reference panel of the same horse standing calm and normal. Clean stable setting, no people, realistic horse body language. Minimal labels only naming each behavior. No extra text.",
+      "value": "Shows the body postures and behavior changes that signal possible colic — motion-related warning signs that are much clearer visually than in words alone"
+    },
+    {
+      "id": "conformation-vs-lameness-visual-guide",
+      "file": "req5.md",
+      "style": "comparison",
+      "description": "Educational split-frame image. Left side shows a balanced horse standing square in clean side profile with subtle guide lines indicating topline balance, shoulder angle, leg alignment, and hoof-pastern angle. Right side shows a horse trotting with visible head bob and shortened stride on one front leg, illustrating lameness in motion. Minimal labels only: standing conformation and moving lame. Plain arena background, no rider, no logos.",
+      "value": "Separates standing structural evaluation from moving lameness signs in one image — the contrast between build and gait that text alone is hard to visualize"
+    },
+    {
+      "id": "hoof-anatomy-and-picking-sequence",
+      "file": "req6.md",
+      "style": "diagram",
+      "description": "Two-part educational diagram. Left panel: underside of a horse hoof labeled with wall, sole, frog, heel, and toe. Right panel: simple step-by-step hoof-pick motion from heel toward toe with debris being cleared while the frog is visibly avoided. Clear horizontal labels only, white background, no branding, no extra text.",
+      "value": "Shows both hoof structures and the correct heel-to-toe cleaning path while avoiding the frog — technique and anatomy that are difficult to understand from text alone"
+    },
+    {
+      "id": "horse-grooming-tool-sequence",
+      "file": "req7.md",
+      "style": "illustrated",
+      "description": "Four-panel step-by-step grooming sequence on the same calm horse tied safely in cross-ties: curry comb on fleshy body area in circular motion, stiff brush flicking dirt away, soft brush on face and lower leg, and gentle mane combing from the ends. Clean Scout-age handler in a neat Scout uniform with appropriate boots, realistic barn aisle, no visible branding, only four short panel labels naming the tool used.",
+      "value": "Demonstrates the order, tool placement, and motion of a basic grooming routine — physical technique sequencing that plain text cannot show as clearly"
+    },
+    {
+      "id": "horse-body-condition-feeding-comparison",
+      "file": "req8.md",
+      "style": "comparison",
+      "description": "Three-horse side-by-side body condition comparison for feeding discussion: an underweight horse with ribs too visible, a horse in healthy moderate condition, and an overweight easy-keeper pony with cresty neck and fat pads. All shown in matching side profiles against a plain background with extremely short labels only: underweight, healthy, overweight. No people, no logos.",
+      "value": "Lets readers compare body condition visually when thinking about feed amount and breed tendencies — shape differences that are much easier to judge by sight than description alone"
+    },
+    {
+      "id": "saddle-and-bridle-parts-diagram",
+      "file": "req9.md",
+      "style": "diagram",
+      "description": "Clean educational equipment diagram showing a saddled and bridled horse from the left side with at least ten tack parts labeled clearly: seat, pommel, cantle, stirrup, girth or cinch, saddle pad, headstall, bit, reins, throatlatch. Simple white or very light background, short horizontal labels, no decorative elements, no branding.",
+      "value": "Identifies major saddle and bridle parts in their actual working positions on the horse — equipment relationships and locations that text alone cannot show well"
+    },
+    {
+      "id": "mounting-block-safe-mount-sequence",
+      "file": "req9.md",
+      "style": "comparison",
+      "description": "Three-panel safe mounting sequence beside a calm horse at a mounting block: rider gathers reins and checks saddle, rider places left foot in stirrup from the block, rider swings leg over smoothly and settles quietly. Scout-age rider in clean Scout uniform with helmet and riding boots, supervised lesson setting, no logos, only short panel labels such as prepare, step up, mount softly.",
+      "value": "Shows the body positions and sequence of a balanced mount from a mounting block — movement and spacing that text descriptions cannot communicate as clearly"
+    },
+    {
+      "id": "quick-release-knot-tying-sequence",
+      "file": "req10.md",
+      "style": "diagram",
+      "description": "Simple three-step rope diagram showing a horse lead rope tied to a solid ring with a correct quick-release knot. Each panel shows one stage of the knot progression with clear rope path and final pull loop. Minimal horizontal labels only: step 1, step 2, finished quick-release. White background, no horse needed except perhaps a cropped tie ring context, no branding.",
+      "value": "Shows the rope path and finished shape of a quick-release knot step by step — a tying motion that text alone is difficult to reproduce correctly"
+    },
+    {
+      "id": "straight-line-vs-half-circle-riding-patterns",
+      "file": "req11.md",
+      "style": "diagram",
+      "description": "Simple top-down arena training diagram with four separate path examples shown as bold colored lines: a straight 60-foot walk line, a 16-foot-radius half-circle at walk, a straight 60-foot trot or jog line, and a 30-foot-radius half-circle at trot or jog. Use plain cones or marker dots at start and finish points, simple directional arrows, and only very short horizontal labels. No horse illustration required. White background, minimal text, no branding.",
+      "value": "Translates the riding test measurements into visible arena patterns and turn sizes — spatial geometry that is much easier to grasp visually than from written dimensions alone"
+    },
+    {
+      "id": "horse-career-pathways-grid",
+      "file": "req12a.md",
+      "style": "illustrated",
+      "description": "Four-panel career overview grid showing an equine veterinarian examining a horse, a farrier shoeing a hoof, a riding instructor teaching in an arena, and a barn manager organizing feed and stable work. Each panel has only a short profession label. Realistic work settings, no logos, no branding, educational rather than decorative.",
+      "value": "Shows the distinct daily environments and tasks of several horse-related careers side by side — real work contexts that text summaries alone cannot make as immediate"
+    },
+    {
+      "id": "horsemanship-lifestyle-pathways-grid",
+      "file": "req12b.md",
+      "style": "illustrated",
+      "description": "Four-panel lifestyle pathway grid showing a youth taking a riding lesson, volunteering while leading a horse at a therapeutic riding center, participating in a youth horse club meeting, and trail riding outdoors with supervision. Clean Scout-age youth in appropriate riding clothes or neat Scout uniform where suitable, no logos, no branding, very short labels only for each activity.",
+      "value": "Shows several realistic ways horsemanship can remain part of a young person's life beyond the badge — lifestyle options that become clearer when seen side by side"
+    }
+  ]
+}
