@@ -1,0 +1,36 @@
+{
+  "badge": "kayaking",
+  "searched_at": "2026-03-15T16:11:37.428Z",
+  "videos": [
+    {
+      "id": "kayaking-how-to-self-rescue-rei",
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "IUHYtQR79Z4",
+      "title": "Kayaking | How to Self-Rescue || REI",
+      "channel": "REI",
+      "duration_seconds": 129000,
+      "views": 319903,
+      "url": "https://youtu.be/IUHYtQR79Z4",
+      "status": "working",
+      "relevance": "This REI rescue lesson directly supports the capsize, reentry, and self-recovery skills covered on this page. It is short, reputable, and focused on the exact on-water recovery techniques Scouts need to recognize before practice.",
+      "query": "Kayaking using properly equipped kayak open cockpit tutorial",
+      "trust_score": 18
+    },
+    {
+      "id": "proper-technique-for-paddling-a-kayak",
+      "file": "req8.md",
+      "requirement_path": "8",
+      "video_id": "v0-efrwppWQ",
+      "title": "Proper Technique for Paddling a Kayak",
+      "channel": "PaddleTV",
+      "duration_seconds": 257000,
+      "views": 297896,
+      "url": "https://youtu.be/v0-efrwppWQ",
+      "status": "embed_disabled",
+      "relevance": "This video focuses on efficient paddle technique and boat control, which matches the maneuvering and stroke-combination goals of Requirement 8. It is concise and useful for Scouts practicing straight tracking, turning, and controlled movement.",
+      "query": "Kayaking solo paddler use properly equipped kayak tutorial",
+      "trust_score": 8
+    }
+  ]
+}
