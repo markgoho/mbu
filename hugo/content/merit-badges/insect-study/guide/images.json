@@ -1,0 +1,83 @@
+{
+  "badge": "insect-study",
+  "style_context": "Insect anatomy, field observation, pollination, colony structure, and conservation concepts",
+  "images": [
+    {
+      "id": "ant-bee-hazard-scan-comparison",
+      "file": "req1.md",
+      "style": "comparison",
+      "description": "Split comparison scene for field safety around ants and bees. Left side shows unsafe behavior: a Scout in a clean field outfit kneeling directly into an ant mound and standing in front of a hive flight path, with agitated ants and bees. Right side shows safe behavior: the same Scout scanning the ground before kneeling, observing from the side of a hive, wearing appropriate protective gear, and keeping clear of entrances. Realistic outdoor setting, clean educational composition, no branding or organizational text.",
+      "value": "Shows safe versus unsafe body position around ant mounds and hive flight paths — hazard-recognition cues and spacing that text alone cannot convey"
+    },
+    {
+      "id": "insect-spider-millipede-comparison-grid",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "Educational side-by-side comparison of three arthropods on a clean neutral background: a typical insect, a spider, and a millipede. Emphasize visible leg count, body sections, antennae presence or absence, and segmented body pattern. Clear visual separation, simple short labels only for major traits, visual-first composition, no extra text blocks.",
+      "value": "Side-by-side body plans with leg counts, antennae, and segment patterns — a visual distinction beginners need to see rather than only read about"
+    },
+    {
+      "id": "butterfly-vs-grasshopper-life-cycle-comparison",
+      "file": "req3.md",
+      "style": "comparison",
+      "description": "Comparison diagram of two insect life cycles. One side shows butterfly development in four stages: egg, caterpillar, chrysalis, adult butterfly, with dramatic body changes between stages. Other side shows grasshopper development in three stages: egg, small wingless nymph, larger nymph, adult grasshopper, showing gradual growth. Clean educational layout with horizontal stage flow and minimal short labels only.",
+      "value": "Shows complete versus incomplete metamorphosis as two different visual sequences — stage-to-stage body changes that are much clearer seen than described"
+    },
+    {
+      "id": "insect-microhabitat-search-grid",
+      "file": "req4.md",
+      "style": "illustrated",
+      "description": "Illustrated field-guide grid showing five insect-search microhabitats side by side: flower patch, grassy edge, pond margin, rotting log with leaf litter, and porch light at night. Each microhabitat includes representative insects commonly found there, such as bees and butterflies on flowers, grasshoppers in grass, dragonflies near water, ants and beetles in wood, and moths at the light. Clean educational art, no branding, minimal labels only naming each habitat.",
+      "value": "Shows where different insect groups are most likely to be found across distinct microhabitats — habitat-search patterns easier to learn visually than from a list"
+    },
+    {
+      "id": "social-vs-solitary-insect-comparison",
+      "file": "req5a.md",
+      "style": "comparison",
+      "description": "Split educational comparison. Left side shows a social insect colony scene with ants or honey bees working together: brood care, foraging, nest maintenance, and multiple individuals cooperating. Right side shows a solitary insect alone building a nest, foraging, and operating without helpers. Clear contrast in group behavior versus independent behavior, realistic but uncluttered composition, no branding.",
+      "value": "Contrasts cooperative colony behavior with one-insect independence — division of labor and shared brood care that are easier to understand visually"
+    },
+    {
+      "id": "ant-colony-chambers-formicarium-diagram",
+      "file": "req5b1.md",
+      "style": "diagram",
+      "description": "Clean cutaway diagram of an ant formicarium with labeled brood chamber, food storage area, queen chamber, connecting tunnels, and waste area. Show the queen in the deeper chamber and worker ants moving brood and food through tunnels. Neutral background, simple horizontal labels only, precise educational layout, no extra text.",
+      "value": "Cutaway nest layout with chamber functions and ant movement paths — internal colony organization impossible to understand fully from text alone"
+    },
+    {
+      "id": "bee-hive-frame-reading-diagram",
+      "file": "req5b2.md",
+      "style": "diagram",
+      "description": "Educational diagram of a single bee hive frame viewed straight on. Clearly show the queen, brood area with capped cells, several queen cells, and sections of capped honey. Worker bees present but not overcrowding the view. Clean beekeeping instructional style with short labels only for queen, brood, queen cells, and honey. No branding or long text.",
+      "value": "Shows how brood, queen cells, honey stores, and the queen appear together on one frame — hive-reading patterns that are much easier to grasp visually"
+    },
+    {
+      "id": "insect-food-web-and-pollination-flow",
+      "file": "req6.md",
+      "style": "illustrated",
+      "description": "Two-part educational illustration. Left half shows a simple food web with insects as prey and predators connected to fish, birds, bats, and other insects. Right half shows pollination sequence: insect visiting one flower, carrying pollen on the body, visiting the next flower, and fruit or seed development. Clear arrows, simple uncluttered layout, minimal short labels only.",
+      "value": "Combines feeding relationships and pollen transfer in one visual system — ecosystem connections and process flow that text alone makes harder to picture"
+    },
+    {
+      "id": "healthy-hive-vs-colony-collapse-comparison",
+      "file": "req7.md",
+      "style": "comparison",
+      "description": "Comparison of two open bee hives. Left side shows a healthy colony with many worker bees, active brood, and food stores. Right side shows colony collapse condition with queen, brood, and food stores still present but most worker bees missing. Around the failing hive, include simple visual icons or cues for Varroa mites, pesticide exposure, poor floral diversity, and habitat stress without text-heavy callouts. Educational and realistic style.",
+      "value": "Contrasts the visible signs of a healthy hive with CCD-style worker loss while brood and stores remain — a pattern that is difficult to understand from description alone"
+    },
+    {
+      "id": "monarch-migration-route-and-stopover-habitat",
+      "file": "req8.md",
+      "style": "illustrated",
+      "description": "Map-style educational illustration of North America showing monarch migration routes from northern breeding regions toward central Mexico and the California coast. Include visual stopover habitat examples along the route such as milkweed patches, flowering nectar gardens, and open meadow habitat. Use clean route lines and simple map shapes with minimal labels only for major destinations.",
+      "value": "Maps the long-distance migration path together with the habitat patches monarchs need along the way — geographic scale and route continuity that text cannot show as clearly"
+    },
+    {
+      "id": "insect-study-hobby-paths-grid",
+      "file": "req9b.md",
+      "style": "illustrated",
+      "description": "Illustrated comparison grid of six insect-study hobby paths: macro photography, pollinator gardening, moth observation at a sheet light, beekeeping, caterpillar rearing, and field journaling. Each panel shows a person using the hobby setup with the key gear or environment visible. Clean educational style, no branding, short panel labels only.",
+      "value": "Shows what different hobby paths actually look like in practice, including gear and setting — concrete visual differences that help readers compare realistic next steps"
+    }
+  ]
+}
