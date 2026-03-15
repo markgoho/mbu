@@ -1,0 +1,90 @@
+{
+  "badge": "journalism",
+  "style_context": "News reporting, media ethics, newsroom workflows, interviewing, broadcast production, event coverage, and journalism careers",
+  "images": [
+    {
+      "id": "fact-vs-opinion-comparison",
+      "file": "req1.md",
+      "style": "comparison",
+      "description": "Side-by-side educational comparison. Left panel shows a clean notebook page headed with a brief fact example about a city council vote, supported by a document icon, date, vote tally, and a direct quote attribution. Right panel shows a notebook page headed with an opinion example about the same event, supported by expressive reaction words and a commentary icon. Minimal text, large readable headings only, neutral newsroom visual style, no branding.",
+      "value": "Side-by-side contrast between verifiable statements and judgment language — the visual distinction between evidence-based facts and opinions is clearer than text alone"
+    },
+    {
+      "id": "media-platforms-overview",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Four-part visual grid comparing journalism platforms: print newspaper front page, magazine article spread, online news page on a laptop, and broadcast studio monitor. Each panel shows the same story adapted to that platform with clear visual differences in layout, pacing, and media format. Short single-word labels only, clean educational diagram, no logos or brand names.",
+      "value": "Shows the same story reshaped across print, magazine, web, and broadcast formats — the platform-driven differences in layout and presentation are easier to grasp visually"
+    },
+    {
+      "id": "story-comparison-notes-grid",
+      "file": "req2a1.md",
+      "style": "diagram",
+      "description": "Simple four-column comparison board on a clean desk, each column represented by a distinct card for local news, national news, magazine, and social feed. Use icons, color coding, short horizontal labels, and visual markers for story length, source count, context depth, and tone. Avoid dense worksheet text. Clean top-down educational diagram with a notebook, pen, and highlighter nearby, minimal text only.",
+      "value": "A side-by-side comparison grid reveals how multiple outlets emphasize different angles, sources, and context for the same event — a relationship that is hard to hold in plain text"
+    },
+    {
+      "id": "newsroom-departments-flow",
+      "file": "req2a2.md",
+      "style": "diagram",
+      "description": "Simple newsroom workflow diagram with three major sections arranged horizontally: editorial, business, and production. Each section contains a few representative people and tools: reporters and editors with notebooks and laptops, business staff with budget sheets and subscription graphs, production staff with layout screens and publishing tools. Arrows show coordination between sections without clutter. Horizontal labels only, clean professional style.",
+      "value": "Shows how editorial, business, and production roles connect inside one news organization — the organizational relationships are much easier to understand spatially"
+    },
+    {
+      "id": "broadcast-rundown-timeline",
+      "file": "req2b1.md",
+      "style": "diagram",
+      "description": "A broadcast rundown board presented as a horizontal timeline with color-coded story blocks of different lengths. Blocks are labeled with short terms like lead, weather, package, live, feature, and sports. Small icons indicate anchor intro, sound bite, graphic, and live shot. The layout looks like a real control-room planning screen but simplified for education. Minimal text only.",
+      "value": "Shows how airtime is divided among broadcast story types and elements — the timed sequence is inherently visual and difficult to convey through description alone"
+    },
+    {
+      "id": "broadcast-station-roles-map",
+      "file": "req2b2.md",
+      "style": "diagram",
+      "description": "Top-down station map linking assignment desk, producers and writers, studio, control room, and field crew. Each area has one or two people and the key equipment used there, such as headsets, cameras, teleprompter, switcher, and editing station. Clean arrows show how information and footage move from field to air. Horizontal labels only, no brand text.",
+      "value": "Maps how multiple departments coordinate to get a story from assignment to broadcast — the role-and-flow relationships are clearer as a spatial diagram"
+    },
+    {
+      "id": "hard-news-vs-feature-structure",
+      "file": "req3.md",
+      "style": "comparison",
+      "description": "Split-panel writing structure comparison. Left panel shows a hard news article layout with a bold lead, stacked key facts, quotes, and brief background arranged in descending importance. Right panel shows a feature story layout beginning with a scene, character detail, rising narrative flow, and reflective ending. Clean page mockups with arrows indicating reading flow, minimal headings only.",
+      "value": "Contrasts two story structures at a glance — the difference between immediate information hierarchy and narrative pacing is far easier to see visually"
+    },
+    {
+      "id": "five-ws-and-h-reporting-wheel",
+      "file": "req3.md",
+      "style": "illustrated",
+      "description": "Educational illustrated reporting wheel built from six large labeled segments arranged around a reporter's notebook and microphone. Segments represent who, what, when, where, why, and how using icons like person, event burst, calendar, map pin, question mark, and process arrows. Use large simple labels with lots of space, bright but professional colors, clean flat illustration.",
+      "value": "Shows the six core reporting questions as a complete information-gathering framework — the visual grouping makes the checklist easier to remember than prose alone"
+    },
+    {
+      "id": "interview-question-funnel",
+      "file": "req3b.md",
+      "style": "diagram",
+      "description": "A visual interview planning board shaped like a funnel. At the top are broad open-ended starter questions on note cards, in the middle are follow-up prompts like why and how, and at the bottom are deeper story-revealing answers highlighted in a notebook. Includes a seated interview setup with two chairs, notebook, and recorder in the background. Minimal text, organized educational style.",
+      "value": "Shows how broad interview questions narrow into deeper follow-ups and stronger quotes — the progression of good interviewing technique is more intuitive visually"
+    },
+    {
+      "id": "inverted-pyramid-vs-chronological",
+      "file": "req4a.md",
+      "style": "comparison",
+      "description": "Comparison of two article structures. Left panel is a large inverted pyramid with biggest facts at the top and progressively smaller supporting details below. Right panel is a horizontal timeline with beginning, middle, and end moments from an event in time order. Clean newsroom training graphic, bold simple shapes, only a few large horizontal labels.",
+      "value": "Directly compares information hierarchy against time-order storytelling — the structural difference between the two writing methods is best understood as shapes"
+    },
+    {
+      "id": "shot-types-photojournalism-grid",
+      "file": "req4c.md",
+      "style": "diagram",
+      "description": "Five-panel photojournalism teaching grid showing a wide shot, medium shot, close-up, clear news moment, and feature moment from the same community event. Each panel uses a different framing distance and emotional purpose, with simple short labels beneath each image. Clean educational layout, realistic event setting, no branding.",
+      "value": "Shows how different shot types contribute distinct storytelling roles in event coverage — the framing differences must be seen to be understood"
+    },
+    {
+      "id": "journalism-careers-pathways",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "Career pathways diagram centered on journalism skills, branching to reporter or correspondent, photojournalist or video journalist, and editor or producer. Each branch includes simple icons for tools, workplace setting, and advancement directions. Clean professional educational design with minimal text and horizontal labels only.",
+      "value": "Shows how one core skill set leads into multiple journalism careers and advancement paths — the branching relationships are easier to understand visually than in a list"
+    }
+  ]
+}
