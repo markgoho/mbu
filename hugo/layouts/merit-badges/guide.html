@@ -1,6 +1,9 @@
 {{ define "main-class" }}drg-page{{ end }}
 
 {{ define "main" }}
+  {{ $badgePage := .CurrentSection.Parent | default .Parent }}
+  {{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
+
   <aside class="drg-sidebar">
     {{ $currentUrl := .RelPermalink }}
     {{ $guideNav := .Params.guide_nav | default .CurrentSection.Params.guide_nav | default .Parent.Params.guide_nav }}
@@ -24,6 +27,12 @@
             </li>
           {{ end }}
         {{ end }}
+        <li class="drg-nav__group-title">Reference</li>
+        <li class="drg-nav__item">
+          <a href="{{ $reqUrl }}" class="drg-nav__link drg-nav__link--reference">
+            📋 View Requirements
+          </a>
+        </li>
       </ul>
     {{ end }}
   </aside>
@@ -65,6 +74,12 @@
                 </li>
               {{ end }}
             {{ end }}
+            <li class="drg-mobile-nav__group">Reference</li>
+            <li>
+              <a href="{{ $reqUrl }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
+                📋 View Requirements
+              </a>
+            </li>
           </ul>
         </details>
       </nav>

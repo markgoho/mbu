@@ -45,6 +45,20 @@
 
     {{ partial "discontinued-notice.html" $json }}
 
+    {{ $guide := $badge.GetPage "guide" }}
+    {{ if $guide }}
+      <div class="guide-banner">
+        <a href="{{ $guide.RelPermalink }}" class="guide-banner__link">
+          <span class="guide-banner__icon" aria-hidden="true">📖</span>
+          <div class="guide-banner__content">
+            <strong class="guide-banner__title">Digital Resource Guide Available</strong>
+            <p class="guide-banner__description">Study tips, videos, images, and interactive content for every requirement.</p>
+          </div>
+          <span class="guide-banner__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    {{ end }}
+
     {{ with .Description }}
       <div class="badge-description">
         <p>{{ . }}</p>
@@ -71,7 +85,7 @@
       <ol class="requirements-list">
         {{ range $json.requirements }}
           {{/* Use recursive partial for infinite nesting */}}
-          {{ partial "requirement.html" (dict "req" . "badge_name" $json.title "hide_resources" true) }}
+          {{ partial "requirement.html" (dict "req" . "badge_name" $json.title "hide_resources" true "guide" $guide) }}
         {{ end }}
       </ol>
     </div>

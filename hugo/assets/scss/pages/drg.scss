@@ -115,6 +115,18 @@
       color: var(--olive-600);
       font-weight: var(--font-weight-bold);
     }
+
+    &--reference {
+      color: var(--brown-450);
+      border-top: 1px solid var(--tan-300);
+      margin-top: var(--space-xs);
+      padding-top: var(--space-s);
+
+      &:hover {
+        color: var(--brown-500);
+        background-color: var(--brown-100);
+      }
+    }
   }
 }
 
@@ -210,6 +222,22 @@
   margin-bottom: var(--space-2xs);
   padding-left: var(--space-xs);
   font-weight: var(--font-weight-bold);
+
+  // Separator for the "Reference" group at bottom of sidebar
+  &:last-of-type {
+    margin-top: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--tan-300);
+  }
+}
+
+.drg-nav__link--reference {
+  color: var(--brown-450);
+
+  &:hover {
+    color: var(--brown-500);
+    background-color: var(--brown-100);
+  }
 }
 
 // --- Illustrations ---

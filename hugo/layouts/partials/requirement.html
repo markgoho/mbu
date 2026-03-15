@@ -3,6 +3,7 @@
 {{ $req := .req | default . }}
 {{ $badgeName := .badge_name | default "" }}
 {{ $hideResources := .hide_resources | default false }}
+{{ $guide := .guide }}
 
 
 <li
@@ -22,6 +23,16 @@
         >Copy link to requirement {{ $req.path }}</span
       >
     </a>
+    {{ if $guide }}
+      {{ $guideSlug := printf "req%s" (replace $req.path "." "") }}
+      {{ $guidePage := $guide.GetPage $guideSlug }}
+      {{ if $guidePage }}
+        <a class="guide-link-btn" href="{{ $guidePage.RelPermalink }}" title="Study guide for this requirement">
+          <span aria-hidden="true">📖</span>
+          <span class="visually-hidden">Open study guide for requirement {{ $req.path }}</span>
+        </a>
+      {{ end }}
+    {{ end }}
   {{ end }}
   <div class="req-text">{{ $req.text | markdownify }}</div>
 
@@ -41,7 +52,7 @@
       {{ end }}">
       {{ range $req.subrequirements }}
         {{/* Recursively render nested requirements, passing badge_name through */}}
-        {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName "hide_resources" $hideResources) }}
+        {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
       {{ end }}
     </ol>
   {{ end }}

@@ -296,6 +296,119 @@
   margin-inline: auto;
 }
 
+// DRG Guide Banner on Requirements Page
+.guide-banner {
+  margin-block: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 0 0 1px var(--brown-400);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.15),
+      0 0 0 1px var(--brown-400);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(135deg, var(--brown-450) 0%, var(--brown-500) 100%);
+    color: white;
+    text-decoration: none;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  &__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  &__description {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.4;
+  }
+
+  &__arrow {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    opacity: 0.7;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover &__arrow {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+}
+
+// Per-requirement guide link button
+.guide-link-btn {
+  opacity: 0;
+  transition: opacity var(--copy-btn-transition-duration) ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--brown-450);
+  font-size: 0.8em;
+  position: absolute;
+  left: -4.5rem;
+  top: 0;
+  text-decoration: none;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    color: var(--brown-500);
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--brown-400);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  // Adjust position for options list (no ::marker)
+  .options > .requirement-item > & {
+    left: -3rem;
+  }
+}
+
+// Show guide link button on hover (same pattern as copy-link-btn)
+.requirement-item:has(> .req-text:hover) > .guide-link-btn,
+.requirement-item:has(> .guide-link-btn:hover) > .guide-link-btn,
+.requirement-item:hover:not(:has(.requirement-item:hover)) > .guide-link-btn,
+.guide-link-btn:focus {
+  opacity: 1;
+}
+
+// Badge grid guide indicator
+.guide-indicator {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--brown-450);
+  margin-block-start: 0.25rem;
+}
+
 // Discontinued Badge Notice
 .discontinued-notice {
   background: var(--brown-100);

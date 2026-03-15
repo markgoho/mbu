@@ -112,6 +112,7 @@
         {{ $json := index $.Site.Data "merit-badges" $page.File.ContentBaseName }}
         {{ if $json }}
           {{ $reqCount := len $json.requirements }}
+          {{ $hasGuide := $page.GetPage "guide" }}
           {{/* Prefer card-optimized images for list, fallback to any image */}}
           {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
           {{ if not $badgeImage }}
@@ -160,6 +161,9 @@
                   {{ end }}
                 </h2>
                 <p class="req-count">{{ $reqCount }} requirements</p>
+                {{ if $hasGuide }}
+                  <span class="guide-indicator">📖 Study Guide</span>
+                {{ end }}
               </div>
             </a>
           </article>
