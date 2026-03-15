@@ -1,0 +1,36 @@
+{
+  "badge": "inventing",
+  "searched_at": "2026-03-15T02:37:26.950Z",
+  "videos": [
+    {
+      "id": "little-inventors-how-to-think-up-invention-ideas",
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "ERFgorcRCJY",
+      "title": "Little Inventors: How to think up invention ideas!",
+      "channel": "Little Inventors",
+      "duration_seconds": 145000,
+      "views": 41468,
+      "url": "https://youtu.be/ERFgorcRCJY",
+      "status": "working",
+      "relevance": "This is a focused, age-appropriate video about generating invention ideas, which fits Req 6's emphasis on identifying a problem and developing an invention concept before building. It supports brainstorming and creative problem solving without drifting into unrelated business or entertainment content.",
+      "query": "Inventing think item like invent solve problem tutorial",
+      "trust_score": 3
+    },
+    {
+      "id": "what-to-do-first-with-your-invention-idea",
+      "file": "req9.md",
+      "requirement_path": "9",
+      "video_id": "9F-GXB-XAIs",
+      "title": "What to do FIRST With Your Invention Idea",
+      "channel": "Patents Demystified",
+      "duration_seconds": 1184000,
+      "views": 86537,
+      "url": "https://youtu.be/9F-GXB-XAIs",
+      "status": "working",
+      "relevance": "This video is directly about the next steps after having an invention idea, which maps well to Req 9's discussion of skills, preparation, and real-world paths connected to inventing. It reinforces that inventing requires process knowledge, persistence, and practical preparation.",
+      "query": "Inventing Skills inventors use",
+      "trust_score": 0
+    }
+  ]
+}
