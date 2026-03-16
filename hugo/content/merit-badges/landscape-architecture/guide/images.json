@@ -1,0 +1,48 @@
+{
+  "badge": "landscape-architecture",
+  "style_context": "Landscape site planning, planting design, drainage, accessibility, and outdoor public-space analysis",
+  "images": [
+    {
+      "id": "site-observation-checkpoints",
+      "file": "req1.md",
+      "style": "illustrated",
+      "description": "A clean educational field-sketch style illustration of a small civic plaza and building entry viewed from slightly above eye level, with five simple visual callouts identifying what a visitor should observe: arrival point, path system, seating area, planting zone, and drainage direction. Minimal short labels only, horizontal text, no branding, no logos, no extra annotations. The scene includes a walkway, bench, shade tree, planting bed, and a visible drain inlet.",
+      "value": "Shows the same small site with the five observation targets highlighted in one view — visual relationships between arrival, paths, planting, seating, and drainage are easier to grasp than from text alone"
+    },
+    {
+      "id": "site-organization-example",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "A simple top-down diagram of a school courtyard organized into three outdoor rooms connected by clear paths: an entry plaza, a shaded seating area under trees, and a small open gathering lawn. Use short horizontal labels only for the three spaces and main entry path. Clean shapes, readable paving edges, trees as canopy symbols, and no decorative background.",
+      "value": "Top-down spatial layout of separate outdoor rooms, entry, and connecting paths — teaches site organization in a way prose cannot visualize quickly"
+    },
+    {
+      "id": "plant-form-comparison-grid",
+      "file": "req3.md",
+      "style": "illustrated",
+      "description": "An educational comparison grid showing seven common plant growth forms side by side on a plain background: columnar tree, rounded tree, spreading shade tree, vase-shaped tree, mounded shrub, upright shrub, and low-spreading ground cover. Each form has one short horizontal label beneath it. Clear silhouettes, distinct textures, and consistent scale references to emphasize shape differences. No extra text.",
+      "value": "Side-by-side comparison of contrasting plant shapes and textures — readers can instantly see form differences that are difficult to internalize from verbal descriptions alone"
+    },
+    {
+      "id": "entry-redesign-before-after",
+      "file": "req4.md",
+      "style": "comparison",
+      "description": "A split-panel before-and-after educational site plan comparison of a public building entry area. Left panel shows problems: narrow walk, no shelter, runoff crossing the path, parking dominating the view. Right panel shows redesign improvements: wider direct walkway, covered waiting area with bench, entry trees, and a planted bioswale capturing runoff. Use only a few large horizontal labels such as BEFORE, AFTER, BIOSWALE, SHELTER, and WALK. Clean top-down site-plan style, not photorealistic.",
+      "value": "Before-and-after redesign comparison makes comfort, circulation, and drainage improvements visible at a glance — spatial changes are much clearer than a text list"
+    },
+    {
+      "id": "career-pathway-overview",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "A simple educational pathway diagram with three parallel columns representing related landscape architecture career directions: design office work, planning/public-sector work, and plant-and-field work. Each column uses a large icon-style scene and three or four short horizontal labels for typical activities, such as drawing plans, site meetings, planting, inspection, or public review. Minimal text, clean white background, no branding.",
+      "value": "Shows three career directions side by side with their different work settings and task types — a visual comparison helps readers distinguish overlapping careers more clearly than paragraphs alone"
+    },
+    {
+      "id": "stormwater-features-comparison",
+      "file": "extended-learning.md",
+      "style": "illustrated",
+      "description": "A four-panel educational illustration comparing visible green infrastructure features in the same style: rain garden, bioswale, permeable pavement section, and planted detention area. Each panel uses one short horizontal label and clearly shows how water is captured, slowed, or filtered. Keep text minimal, emphasize cutaway or cross-section views where useful, and avoid arrows pointing to complex scenes.",
+      "value": "Shows four different stormwater-management features side by side with their visible forms and functions — readers can compare systems visually in a way text descriptions cannot match"
+    }
+  ]
+}
