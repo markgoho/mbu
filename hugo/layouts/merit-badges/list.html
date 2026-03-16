@@ -61,6 +61,19 @@
               </p>
             </div>
           </a>
+
+          {{ $guidePrint := .GetPage "guide/print" }}
+          {{ if $guidePrint }}
+            <a href="{{ $guidePrint.RelPermalink }}" class="badge-action-card">
+              <span class="badge-action-card__icon">🖨️</span>
+              <div class="badge-action-card__content">
+                <h2 class="badge-action-card__title">Print Complete Guide</h2>
+                <p class="badge-action-card__description">
+                  Single-page version for printing
+                </p>
+              </div>
+            </a>
+          {{ end }}
         {{ end }}
 
         {{ if $json.pamphlet_url }}

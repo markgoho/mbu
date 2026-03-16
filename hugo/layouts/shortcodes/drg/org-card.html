@@ -1,6 +1,7 @@
+{{ $url := .Get "url" }}
 <div class="drg-org-card">
   <a
-    href="{{ .Get "url" }}"
+    href="{{ $url }}"
     class="drg-org-card__name"
     target="_blank"
     rel="noopener noreferrer"
@@ -9,4 +10,5 @@
   <p class="drg-org-card__description">
     {{ .Get "description" | markdownify }}
   </p>
+  <p class="drg-org-card__print-link">Organization: {{ .Get "name" }} — {{ $url }}</p>
 </div>

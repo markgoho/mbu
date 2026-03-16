@@ -45,5 +45,6 @@
       <span class="drg-video__title">{{ .Get "title" }}</span>
     </a>
   {{ end }}
+  <p class="drg-video__print-link">🎬 Video: {{ .Get "title" }} — {{ $url }}</p>
   <figcaption class="drg-video__caption">{{ .Get "title" }}</figcaption>
 </figure>

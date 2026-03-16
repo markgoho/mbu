@@ -48,9 +48,9 @@ All paths are relative to `hugo/content/merit-badges/`.
 
 If `guide/_index.md` already exists, read the existing guide files and resume from their current state. If `guide/_index.md` does not exist yet, first run `BADGE_SLUG=$ARGUMENTS bun run scaffold:drg` to create the deterministic guide scaffold, then read the generated files and replace placeholders with real content.
 
-The scaffold creates only deterministic structure: `_index.md`, requirement pages, `extended-learning.md`, front matter, `guide_nav`, prev/next links, exact requirement shortcode blocks, placeholder sections, and official resource stubs. It does **not** write final educational copy or polished titles.
+The scaffold creates only deterministic structure: `_index.md`, requirement pages, `extended-learning.md`, `print/index.md`, front matter, `guide_nav`, prev/next links, exact requirement shortcode blocks, placeholder sections, and official resource stubs. It does **not** write final educational copy or polished titles.
 
-Do not overwrite existing guide files during scaffolding. The scaffold script is idempotent and should only create missing files.
+Do not overwrite existing guide files during scaffolding. The scaffold script is idempotent and should only create missing files. Always keep or create `guide/print/index.md` for a printable single-page version of the full guide.
 
 ```bash
 if [ ! -f "hugo/content/merit-badges/$ARGUMENTS/guide/_index.md" ]; then
@@ -126,15 +126,16 @@ The rest of this skill describes how to turn that scaffolded structure into a hi
 
 ## Information Architecture
 
-Every guide has exactly **three page types**, always in this order:
+Every guide has exactly **four page types**, in this order for the primary guide flow plus a printable companion:
 
 ```
 Introduction & Overview  → _index.md
 Requirement Pages        → req{N}.md or req{N}{letter}.md
 Extended Learning        → extended-learning.md
+Printable Companion      → print/index.md
 ```
 
-**IMPORTANT — Flat files, not page bundles:** Requirement pages and extended-learning are **flat markdown files** in the `guide/` directory (e.g., `guide/req1a.md`, `guide/extended-learning.md`). Do **NOT** create subdirectories with `index.md` files (e.g., ~~`guide/req1a/index.md`~~). The only files that use the `directory/index.md` page-bundle pattern are **worksheets** (see Worksheet File Convention below) and the section index `_index.md`.
+**IMPORTANT — Flat files, not page bundles:** Requirement pages and extended-learning are **flat markdown files** in the `guide/` directory (e.g., `guide/req1a.md`, `guide/extended-learning.md`). Do **NOT** create subdirectories with `index.md` files (e.g., ~~`guide/req1a/index.md`~~). The only files that use the `directory/index.md` page-bundle pattern are **worksheets**, the printable companion at `guide/print/index.md`, and the section index `_index.md`.
 
 **Do NOT create `videos.json` or `images.json`.** Those files are managed by separate skills (`drg-videos` and `drg-images`). This skill creates only `.md` files.
 

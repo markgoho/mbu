@@ -1,0 +1,69 @@
+{{ define "head-scripts" }}
+  <meta name="robots" content="noindex, follow" />
+{{ end }}
+
+{{ define "main-class" }}drg-page{{ end }}
+
+{{ define "main" }}
+  {{ $badgePage := .CurrentSection.Parent | default .Parent.Parent }}
+  {{ $guidePage := .Parent }}
+  {{ $guideNav := $guidePage.Params.guide_nav }}
+  {{ $image := "" }}
+  {{ with $badgePage.Resources.GetMatch "*badge*.png" }}
+    {{ $image = . }}
+  {{ else }}
+    {{ with $badgePage.Resources.GetMatch "*badge*.jpg" }}
+      {{ $image = . }}
+    {{ else }}
+      {{ with $badgePage.Resources.GetMatch "*badge*.avif" }}
+        {{ $image = . }}
+      {{ else }}
+        {{ with $badgePage.Resources.GetMatch "*badge*.webp" }}
+          {{ $image = . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <article class="drg-content">
+    <header class="drg-print-header">
+      {{ if $image }}
+        <img
+          src="{{ $image.RelPermalink }}"
+          alt="{{ $badgePage.Title }} Merit Badge"
+          class="drg-print-header__badge-img" />
+      {{ end }}
+      <div>
+        <div class="drg-print-header__kicker">Printable Guide</div>
+        <h1 class="drg-print-header__title">{{ $badgePage.Title }} — Complete Digital Resource Guide</h1>
+        <p class="drg-print-header__url">{{ $guidePage.Permalink }}</p>
+      </div>
+    </header>
+
+    <button class="drg-print-btn" type="button" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+    {{ range $guideNav }}
+      {{ if .group_title }}
+        <div class="drg-print-divider">{{ .group_title }}</div>
+      {{ end }}
+
+      {{ range .items }}
+        {{ $page := $.Site.GetPage .url }}
+        {{ if $page }}
+          <section class="drg-print-section">
+            <h2>{{ $page.Title }}</h2>
+            {{ $content := $page.Content }}
+            {{ $content = replaceRE `<details class="drg-checklist">` `<div class="drg-checklist drg-checklist--print">` $content }}
+            {{ $content = replaceRE `</details>` `</div>` $content }}
+            {{ $content = replaceRE `<summary class="drg-checklist__summary">([\s\S]*?)</summary>` `<div class="drg-checklist__summary">$1</div>` $content }}
+            {{ $content | safeHTML }}
+          </section>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </article>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/breadcrumb-auto.html" . }}
+{{ end }}

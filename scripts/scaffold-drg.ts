@@ -39,7 +39,7 @@ type RequirementPage = {
 };
 
 type SpecialPage = {
-  kind: "index" | "extended-learning";
+  kind: "index" | "extended-learning" | "print";
   fileName: string;
   pageSlug: string;
   title: string;
@@ -102,6 +102,7 @@ async function scaffoldDrg(): Promise<void> {
     }),
     ...requirementPages,
     buildExtendedLearningPage(),
+    buildPrintPage(),
   ];
 
   await $`mkdir -p ${guideDirectory}`;
@@ -597,6 +598,17 @@ function buildExtendedLearningPage(): SpecialPage {
   };
 }
 
+function buildPrintPage(): SpecialPage {
+  return {
+    kind: "print",
+    fileName: join("print", "index.md"),
+    pageSlug: "print",
+    title: "Complete Digital Resource Guide",
+    groupTitle: "Printable Guide",
+    body: "",
+  };
+}
+
 function buildRequirementPageBody({
   requirement,
 }: {
@@ -847,27 +859,38 @@ function renderPage({
   const frontMatterLines = [
     "---",
     `title: \"${guidePage.title}\"`,
-    "layout: guide",
+    `layout: \"${guidePage.kind === "print" ? "guide-print" : "guide"}\"`,
   ];
 
-  if (guidePage.kind === "index") {
+  if (guidePage.kind === "index" || guidePage.kind === "print") {
     frontMatterLines.push(`badge_name: \"${badgeData.title}\"`);
   }
 
-  frontMatterLines.push(`group_title: \"${guidePage.groupTitle}\"`);
+  if (guidePage.kind !== "print") {
+    frontMatterLines.push(`group_title: \"${guidePage.groupTitle}\"`);
+  }
 
   if (guidePage.kind === "requirement") {
     frontMatterLines.push(`req_number: \"${guidePage.reqNumber}\"`);
   }
 
-  if (previousPage !== undefined) {
+  if (guidePage.kind === "print") {
+    frontMatterLines.push("noindex: true");
+    frontMatterLines.push(
+      `canonical_override: \"/merit-badges/${badgeData.slug}/guide/\"`,
+    );
+    frontMatterLines.push("build:");
+    frontMatterLines.push("  list: never");
+  }
+
+  if (guidePage.kind !== "print" && previousPage !== undefined) {
     frontMatterLines.push(
       `prev: \"${pageUrl({ slug: badgeData.slug, pageSlug: previousPage.pageSlug })}\"`,
     );
     frontMatterLines.push(`prev_title: \"${previousPage.title}\"`);
   }
 
-  if (nextPage !== undefined) {
+  if (guidePage.kind !== "print" && nextPage !== undefined) {
     frontMatterLines.push(
       `next: \"${pageUrl({ slug: badgeData.slug, pageSlug: nextPage.pageSlug })}\"`,
     );
@@ -888,6 +911,11 @@ function renderPage({
         );
       }
     }
+  }
+
+  if (guidePage.kind === "print") {
+    frontMatterLines.push("---", "");
+    return frontMatterLines.join("\n");
   }
 
   frontMatterLines.push("---", "", guidePage.body, "");

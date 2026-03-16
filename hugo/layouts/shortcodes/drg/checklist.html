@@ -1,4 +1,5 @@
-<details class="drg-checklist">
+{{ $isPrintPage := or (hasSuffix .Page.RelPermalink "/guide/print/") (hasSuffix .Page.Permalink "/guide/print/") (in .Page.Permalink "/guide/print/") }}
+<details class="drg-checklist"{{ if $isPrintPage }} open{{ end }}>
   <summary class="drg-checklist__summary">
     <h3 class="drg-checklist__title">{{ .Get "title" }}</h3>
     {{ with .Get "subtitle" }}

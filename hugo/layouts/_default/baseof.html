@@ -16,7 +16,8 @@
     {{ partial "head/meta.html" . }}
 
 
-    <link rel="canonical" href="{{ .Permalink | absURL }}" />
+    {{ $canonical := .Scratch.Get "canonical_override" | default .Params.canonical_override | default (.Permalink | absURL) }}
+    <link rel="canonical" href="{{ $canonical | absURL }}" />
     <link rel="alternate" hreflang="en-US" href="{{ .Permalink | absURL }}" />
     <link rel="prefetch" href="/pagefind/pagefind-ui.js" as="script" />
   </head>
