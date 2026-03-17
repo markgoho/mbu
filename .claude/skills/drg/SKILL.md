@@ -39,10 +39,13 @@ Use this table to find guides that demonstrate specific techniques. During Phase
 | Markdown tables for comparisons       | `bird-study/guide/req5.md`, `req6.md`        | Feeding habitat table, beak/foot adaptation tables                        |
 | Granular requirement splitting        | `cooking/guide/`                             | 37 pages; distinct sub-parts each get their own page                      |
 | Cross-references between requirements | `cooking/guide/req2e.md`                     | Natural inline links ("In Req 1e, you learned...")                        |
-| Scenario-driven hooks                 | `first-aid/guide/req1a.md`                   | Concrete "what would you do" opener                                       |
+| Scenario-driven hooks                 | `astronomy/guide/req1a.md`                   | Concrete scenario used to teach safety, priorities, and what matters first |
 | Strong subject-specific intro         | `first-aid/guide/_index.md`                  | Opens with a campsite injury scenario, not a generic greeting             |
 | History section with depth            | `bird-study/guide/_index.md`                 | Audubon-era collecting vs. modern citizen science                         |
 | Shortcode variety (4–6 types/page)    | `astronomy/guide/`                           | Mixes safety-first, checklist, be-prepared, tip, external-link shortcodes |
+| Step-by-step procedural teaching      | `cooking/guide/req5d.md`                     | Numbered procedures, scenario framing, and practical action guidance      |
+| Layered explanatory depth             | `bird-study/guide/req10a.md`                 | Dense explanation that teaches the topic instead of briefly naming it     |
+| Comparison-table decision support     | `first-aid/guide/req8a.md`                   | Table structure that helps Scouts tell similar conditions and responses apart |
 
 All paths are relative to `hugo/content/merit-badges/`.
 
@@ -337,7 +340,7 @@ next_title: "{Next Page Title}"
    {{</* /drg/requirement */>}}
    ```
 
-2. **Educational content** — 500–1500 words teaching what the Scout needs to know. Content strategy depends on requirement type:
+2. **Educational content** — usually 500–1500 words of real teaching, not padded filler and not a loose word-count suggestion. A requirement page is a teaching page. It must help the Scout understand the topic well enough to arrive at the counselor conversation with real background knowledge instead of seeing the concepts for the first time. Teach how to think about the requirement, not just what it is about. When a page covers several related conditions, tools, procedures, or concepts, explain why the distinctions matter and how the Scout can tell them apart. Short summary paragraphs alone are usually insufficient for pages covering multiple sub-requirements, emergency response, tools, procedures, or decision-making. Content strategy depends on requirement type:
 
    | Requirement asks Scout to... | Strategy                                                                 |
    | ---------------------------- | ------------------------------------------------------------------------ |
@@ -348,6 +351,31 @@ next_title: "{Next Page Title}"
    | Create / Plan / Build        | Planning frameworks, printable worksheets (see Worksheets section below) |
    | Do / Perform                 | Preparation guidance, safety info, practical tips, printable worksheets  |
    | Choose one of several        | Present all options, help Scout choose, guidance for each path           |
+
+   **Verb-first writing:** Before drafting, identify the main action verbs in the requirement text and make sure the page prepares the Scout to perform those verbs.
+
+   - **Explain** → define the concept in simple terms, break it into parts, say why it matters, and include a concrete example the Scout could retell.
+   - **Describe** → give the Scout the observable details, signs, sequence, or characteristics they would need to talk through accurately.
+   - **Discuss** → provide multiple angles, useful questions, and the kinds of points a counselor would expect the Scout to notice.
+   - **Demonstrate** → provide a simple ordered procedure, needed materials or setup, common mistakes, and what correct performance looks like.
+   - **Show** → give visible or practical ways to present the skill or concept clearly, often with a short sequence or checklist.
+   - **Identify** → teach distinguishing features, comparisons, and "how to tell" cues rather than just examples.
+   - **List / Name** → give categories, representative examples, and memory structure without simply handing over a final answer set when that would undercut the requirement.
+   - **Compare / Contrast** → use side-by-side structure or a table and explain why the differences matter.
+   - **Plan / Prepare / Create** → provide a framework, decision guide, worksheet trigger, or checklist that helps the Scout produce something real.
+   - **Teach** → help the Scout organize what to say, what to show first, and how to know the learner understood.
+
+   For mixed-verb requirements, support each verb explicitly. If a requirement says something like "describe the symptoms and signs of, show first aid for, and explain prevention," the page should contain distinct content that prepares the Scout to do each part instead of collapsing everything into one generic paragraph.
+
+   **Requirement-type depth rules:**
+
+   - **Explain / Define** pages should include why the concept matters, a concrete example, and at least one useful distinction or misconception.
+   - **Demonstrate / Show** pages should usually include a numbered or clearly ordered procedure, common mistakes, and what success looks like before the counselor demonstration.
+   - **Identify / List** pages should include representative examples plus comparison language that teaches how to tell similar things apart.
+   - **Research / Discuss** pages should frame what to pay attention to, not just suggest that the Scout "look it up."
+   - **Create / Plan / Build** pages should provide a framework, decision guide, or worksheet trigger.
+   - **Do / Perform** pages should emphasize preparation, sequencing, safety, and what evidence or output the Scout should bring to the counselor.
+   - **Choose one of several** pages should provide decision support and explain what each path teaches.
 
 3. **Official resources (MANDATORY)** — Every official resource listed for this requirement in the badge data **must** appear on the page. This is not optional — these are official Scouting resources scraped from scouting.org.
    - **YouTube videos** (URL contains `youtube.com` or `youtu.be`): Use `drg/video` shortcode. Verify each video via the Video Verification Protocol before including it. If verification shows the video is embed-disabled (401), use `drg/external-link` instead. If the video is gone (404), use `drg/external-link` with the URL so the Scout can check if it's been re-uploaded.
@@ -615,6 +643,36 @@ Aim for **4–6 different shortcode types per page** across the guide. If `safet
 
 Look at how the Astronomy guide mixes `safety-first`, `checklist`, `be-prepared`, `tip`, and `external-link` shortcodes within individual pages — varying the order and density based on what the content actually needs.
 
+**Use the best teaching structure for the content, not just any valid structure:**
+
+- **Use a markdown table** when the page compares similar options, conditions, injuries, tools, causes, or severity levels.
+- **Use `drg/be-prepared`** when a Scout may realistically face the situation under stress or need to decide what to do next.
+- **Use numbered or tightly ordered steps** when the requirement involves demonstrating, handling, assembling, treating, responding, or teaching.
+
+A page can be structurally valid and still be weak if it avoids the format that would teach the topic best.
+
+### Instructional Depth
+
+A strong DRG requirement page should feel like a skilled instructor helping a Scout get ready to do the requirement, not like a glossary, a checklist dump, or a compressed study note.
+
+Prefer:
+
+- concrete examples over generic statements
+- named scenarios over abstract advice
+- distinctions and comparisons over flat lists
+- step-by-step teaching for demonstration requirements
+- practical cues a Scout can notice in the field
+
+When a requirement involves similar concepts, conditions, tools, injuries, roles, or procedures, teach the differences that matter. Tell the Scout what to look for, what changes their response, and why a counselor cares about the distinction. If a page would leave a first-time reader saying "I still don't really know how to tell these apart" or "I know the words but not what to do," it needs more depth.
+
+### Verb-First Writing
+
+Read the action verbs in every requirement before writing. Those verbs should drive the shape of the page.
+
+A page for **explain** should not read like a page for **demonstrate**. A page for **identify** should not read like a page for **discuss**. Use the verbs to decide whether the Scout needs distinctions, examples, ordered actions, comparison language, teaching structure, or decision support.
+
+When a requirement contains several verbs, support each one. Do not let a mixed-verb requirement flatten into one broad paragraph that technically mentions the topic without preparing the Scout to do the actual actions.
+
 ### Cross-References
 
 When a later requirement builds on an earlier one, link back with natural language: "In Req 1e, you learned about safe food temperatures — those same principles apply here." Don't force cross-references where the connection is tenuous. A genuine cross-reference helps the Scout see how the badge fits together; a forced one is noise.
@@ -655,20 +713,47 @@ Requirements for writing:
 - Keep official resources relevant to the requirement they belong to.
 - Preserve valid front matter, `guide_nav`, and prev/next links.
 - Replace placeholder titles like `[TITLE]` and group labels like `[GROUP: Requirement 3]` with polished final text when completing the guide.
+- Identify the major verbs in each requirement before drafting and make sure the finished page prepares the Scout for each one.
+- Keep expanding thin pages before moving on. If a page is structurally complete but still reads like a short summary, add the missing explanation, distinctions, examples, scenarios, comparison support, or ordered guidance.
+- Treat broad, high-stakes, or multi-part requirements as needing real instructional substance, not one brief paragraph per sub-part.
+
+### Thin Page Self-Check
+
+Before considering any requirement page complete, ask:
+
+- What are the main verbs in this requirement, and does the page help the Scout do each one?
+- Would this page still make sense to a Scout who has never encountered this topic before?
+- Does it contain at least one concrete example, scenario, or field-use case?
+- If the page covers multiple similar things, did it explain how to tell them apart?
+- If the page covers a demonstration, did it prepare the Scout with an ordered process rather than vague prose?
+- If I removed the badge name, would this opening paragraph still feel badge-specific?
+
+If any answer is no, keep writing before treating the page as done.
 
 ### Phase 3: Resources and Verification
 
-1. Keep or add official resource shortcodes:
+1. Before running verification, do a content-quality gate:
+   - scan for pages that are structurally complete but visibly short or underexplained
+   - expand any page that only gives one brief paragraph per sub-requirement when the subject is broad or high-stakes
+   - make sure each major requirement page has enough instructional substance to stand on its own
+   - confirm that the page content actually prepares the Scout for the verbs in the requirement text
+2. Keep or add official resource shortcodes:
    - `drg/video` for YouTube
    - `drg/external-link` for other official URLs
-2. Before adding a YouTube video, verify it with the project's video verification workflow.
-3. After making guide changes, run relevant checks when appropriate, such as:
+3. Before adding a YouTube video, verify it with the project's video verification workflow.
+4. After making guide changes, run relevant checks when appropriate, such as:
    - `BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources`
    - `bun run build`
 
 ### Phase 4: Resume Behavior
 
 If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
+
+When resuming:
+
+- preserve user-added content and richer expansions
+- preserve existing image comments or placeholders and integrate around them
+- deepen thin sections without flattening stronger existing pages back into a uniform template
 
 **Resume means finish, not restart.** When resuming a partially-written guide, complete all remaining pages without stopping. Do not summarize what has been done and ask whether to proceed — just continue writing from where the guide left off.
 
