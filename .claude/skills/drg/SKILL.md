@@ -185,6 +185,65 @@ This requirement covers four topics that every archer needs to understand:
 
 This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
 
+### Parent-to-Child Requirement Decomposition
+
+Many requirements follow a pattern where a **parent requirement contains verb phrases** and the **children are bare topics**. When this pattern occurs, the parent language creates a structural template that every child page must follow.
+
+#### Recognizing the Pattern
+
+Look at the parent requirement and its children together:
+
+- **Verb-template parent + bare-topic children:** The parent contains action verbs applied to the children's topics. Example: *"Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions:"* followed by children like *"(a) Choking"*, *"(b) Heat exhaustion"*. The parent's verbs are the structural mandate for every child.
+- **Generic umbrella parent:** The parent says something like *"Do the following:"* or *"Explain the following:"* without specific multi-verb instructions. In this case, the children are self-contained — each child carries its own complete instruction. No decomposition is needed; treat each child independently.
+- **Children with their own complete instructions:** Even under a verb-template parent, if a child has its own full verb+subject sentence (e.g., *"(a) Demonstrate how to tie a bowline"*), that child's own language takes priority over the parent template.
+
+#### When Decomposition Applies
+
+If the parent is a verb-template parent and the children are bare topics, **decompose the parent into discrete action phrases** and map each phrase to an H3 heading under every child page.
+
+**Multi-verb parents → multiple H3 sections per child page:**
+
+Parse the parent requirement into its distinct verb phrases. Each verb phrase becomes its own H3 section on every child's page. The sections must be parallel across all sibling pages.
+
+Example decomposition for *"Describe the symptoms and signs of, show first aid for, and explain prevention of:"*
+
+| Parent verb phrase | H3 heading template | Content type |
+| --- | --- | --- |
+| "Describe the symptoms and signs of" | **Symptoms and Signs of {Condition}** | Observable details, what to look and listen for |
+| "Show first aid for" | **First Aid for {Condition}** | Numbered physical procedure, hands-on steps |
+| "Explain prevention of" | **Prevention of {Condition}** | Reasoning about causes, practical habits to avoid the condition |
+
+For child `(a) Choking`, the page gets three H3 sections:
+- `### Symptoms and Signs of Choking`
+- `### First Aid for Choking`
+- `### Prevention of Choking`
+
+For child `(b) Heat exhaustion`, the same three H3 sections appear with "Heat Exhaustion" substituted.
+
+**Single-verb parents → one content focus per child, no forced H3 split:**
+
+If the parent has only one verb (e.g., *"Explain each of the following:"*), each child still gets its own H2 heading/page with content calibrated for that verb, but there is no need to create multiple H3 subsections within each child. The single verb shapes the content approach (explain → definitions, reasoning, examples) without requiring structural subdivision.
+
+#### H3 Heading Naming Rules
+
+- Derive H3 headings from the parent's exact verb phrases, substituting the specific child topic
+- Keep heading phrasing parallel across all sibling pages (e.g., always "Symptoms and Signs of X", never sometimes "Signs of X" and other times "How to Recognize X")
+- Use sentence case for H3 headings
+- If the parent's verb phrase is long or awkward as a heading, shorten it while preserving the verb and intent (e.g., "Describe the symptoms and signs of" → "Symptoms and Signs of")
+
+#### Depth Calibration
+
+Not every H3 section under a multi-verb parent needs equal length. A "Prevention" section for one condition might be two sentences if there is genuinely little to say, while "First Aid" for the same condition might need a detailed numbered procedure. But **never omit a section** that the parent language calls for — even a brief section signals to the Scout that this verb applies and gives them something to prepare.
+
+When one verb phrase maps to content that is inherently longer (e.g., a multi-step first aid procedure vs. a short prevention tip), that is fine. Depth should match the topic's complexity for that verb, not be artificially equalized.
+
+#### What Decomposition Does NOT Mean
+
+- It does not mean copying the parent requirement text into every child page as an H3 heading verbatim — derive concise section headings from the verb phrases
+- It does not apply to generic umbrellas ("Do the following:") — those children stand alone
+- It does not override a child's own complete instructions — if the child says "Demonstrate X," that child's language governs its structure
+- It does not require equal word counts per section — match depth to the verb and topic
+
 ### "Choose One" Requirements
 
 Any requirement whose `subrequirement_mode` has `"type": "select"` in `data.json` always gets a dedicated **overview page** (`req{N}.md`) in addition to individual pages for each option. The overview page is what a Scout reads _before_ choosing — it is not a table of contents stub, it is genuine decision-support content.
@@ -352,20 +411,32 @@ next_title: "{Next Page Title}"
    | Do / Perform                 | Preparation guidance, safety info, practical tips, printable worksheets  |
    | Choose one of several        | Present all options, help Scout choose, guidance for each path           |
 
-   **Verb-first writing:** Before drafting, identify the main action verbs in the requirement text and make sure the page prepares the Scout to perform those verbs.
+   **Verb-first writing — structural rule:** Before drafting, identify the main action verbs in the requirement text. Those verbs determine the page's section structure, not just its tone. **Multi-verb requirements produce multi-section pages.** Each verb phrase gets its own H3 heading and content block. Do not collapse multiple verbs into unified flowing paragraphs.
 
-   - **Explain** → define the concept in simple terms, break it into parts, say why it matters, and include a concrete example the Scout could retell.
-   - **Describe** → give the Scout the observable details, signs, sequence, or characteristics they would need to talk through accurately.
-   - **Discuss** → provide multiple angles, useful questions, and the kinds of points a counselor would expect the Scout to notice.
-   - **Demonstrate** → provide a simple ordered procedure, needed materials or setup, common mistakes, and what correct performance looks like.
-   - **Show** → give visible or practical ways to present the skill or concept clearly, often with a short sequence or checklist.
-   - **Identify** → teach distinguishing features, comparisons, and "how to tell" cues rather than just examples.
-   - **List / Name** → give categories, representative examples, and memory structure without simply handing over a final answer set when that would undercut the requirement.
-   - **Compare / Contrast** → use side-by-side structure or a table and explain why the differences matter.
-   - **Plan / Prepare / Create** → provide a framework, decision guide, worksheet trigger, or checklist that helps the Scout produce something real.
-   - **Teach** → help the Scout organize what to say, what to show first, and how to know the learner understood.
+   Each verb has a structural output specification and a litmus test:
 
-   For mixed-verb requirements, support each verb explicitly. If a requirement says something like "describe the symptoms and signs of, show first aid for, and explain prevention," the page should contain distinct content that prepares the Scout to do each part instead of collapsing everything into one generic paragraph.
+   - **Explain** → Define the concept, break it into parts, say why it matters, include a concrete example the Scout could retell. *Litmus test: could the Scout articulate why this matters and give an example to a counselor?*
+   - **Describe** → Give observable details, signs, sequences, or characteristics the Scout would need to talk through accurately. Content reads like sensory/observable information. *Litmus test: could the Scout recognize or point out what's described without having memorized a definition?*
+   - **Discuss** → Provide multiple angles, useful questions, and the kinds of points a counselor would expect the Scout to notice. Content reads like a two-sided conversation. *Litmus test: could the Scout sustain a back-and-forth conversation about this topic?*
+   - **Demonstrate / Show** → Provide a numbered ordered procedure, needed materials or setup, common mistakes, and what correct performance looks like. Content reads like step-by-step physical instructions. *Litmus test: could the Scout follow these steps hands-on and perform the skill?*
+   - **Identify** → Teach distinguishing features, comparisons, and "how to tell" cues rather than just examples. *Litmus test: given two similar items, could the Scout tell them apart using what's on this page?*
+   - **List / Name** → Give categories, representative examples, and memory structure without simply handing over a final answer set when that would undercut the requirement. *Litmus test: could the Scout generate their own list from the categories and patterns taught?*
+   - **Compare / Contrast** → Use side-by-side structure or a table and explain why the differences matter. *Litmus test: could the Scout articulate at least two meaningful differences?*
+   - **Plan / Prepare / Create** → Provide a framework, decision guide, worksheet trigger, or checklist that helps the Scout produce something real. *Litmus test: could the Scout actually start building/planning with what's on this page?*
+   - **Teach** → Help the Scout organize what to say, what to show first, and how to know the learner understood. *Litmus test: could the Scout teach someone else this skill using this page as preparation?*
+
+   **Qualitative differentiation is mandatory.** A "show" section must read like step-by-step physical instructions — not like an "explain" section with the word "show" swapped in. A "describe" section must read like observable details — not like a definition paragraph. If two sections under different verbs read the same way, one of them is wrong.
+
+   **Subsection depth is mandatory too.** A structurally correct H3 section is still incomplete if it only gives a compressed one-sentence summary that restates the heading. Each inherited or verb-driven subsection must teach the Scout something they could actually say, notice, or do. Even for smaller topics, a subsection should usually contain at least **two of these four**: (1) concrete cues or examples, (2) ordered actions, (3) common mistakes / what not to do, (4) practical reasoning about why the action or prevention works.
+
+   For mixed-verb requirements, each verb produces its own structurally separate content section. If a requirement says something like "describe the symptoms and signs of, show first aid for, and explain prevention," the page must have three distinct H3 sections per topic — one for each verb phrase — with qualitatively different content in each. See the "Parent-to-Child Requirement Decomposition" section above for the full decomposition rules.
+
+   **Subsection-level depth expectations:**
+
+   - **Describe** subsections should usually include observable cues plus at least one distinction, example, or comparison that helps the Scout recognize the condition in real life.
+   - **Demonstrate / Show** subsections should usually include ordered steps, not a compressed sentence list. For simple topics, a short numbered procedure is enough; for more serious topics, include setup, sequence, and at least one mistake to avoid.
+   - **Explain** subsections should usually include cause-and-effect reasoning — why the prevention, rule, or concept matters — not just a flat list of tips.
+   - **Identify / Compare** subsections should usually include "how to tell" language, not just names.
 
    **Requirement-type depth rules:**
 
@@ -673,6 +744,125 @@ A page for **explain** should not read like a page for **demonstrate**. A page f
 
 When a requirement contains several verbs, support each one. Do not let a mixed-verb requirement flatten into one broad paragraph that technically mentions the topic without preparing the Scout to do the actual actions.
 
+#### Verb Decomposition: Before and After
+
+This example shows the exact transformation expected for a multi-verb parent requirement. The parent is First Aid Req 5: *"Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions: (a) Choking..."*
+
+**BAD — collapsed verbs, generic prose:**
+
+```markdown
+## Choking
+
+Choking occurs when a foreign object blocks the airway. Signs include
+the universal choking sign (hands clutching the throat), inability to
+speak or cough, and bluish skin color. If someone is choking, you should
+use the steps you have been taught to clear the airway. Back blows and
+abdominal thrusts are common techniques. To prevent choking, cut food
+into small pieces, chew thoroughly, and avoid talking with food in your
+mouth.
+```
+
+Problems with this output:
+- All three verbs are blurred into one paragraph
+- "Show first aid for" is answered with *"use the steps you have been taught"* — this is a non-answer that does not prepare the Scout to demonstrate anything
+- "Describe symptoms" is a single sentence mixed into narrative prose
+- No structural signal tells the Scout (or counselor) where one verb ends and the next begins
+- A counselor testing each verb separately would find the Scout unprepared
+
+**GOOD — requirement-derived H3 structure, qualitatively different content:**
+
+```markdown
+## Choking
+
+### Symptoms and Signs of Choking
+
+Look for these observable cues:
+
+- **Universal choking sign** — both hands clutching the throat
+- **Inability to speak, cry, or cough forcefully** — the person may
+  mouth words but produce no sound
+- **High-pitched wheezing or squeaking** when trying to inhale
+- **Bluish tint to lips or fingernails** (cyanosis) — indicates
+  oxygen deprivation
+- **Loss of consciousness** if the blockage is not cleared
+
+A partial blockage may allow weak coughing — encourage the person to
+keep coughing. A complete blockage produces silence and requires
+immediate intervention.
+
+### First Aid for Choking
+
+For a conscious adult or child (over 1 year):
+
+1. Confirm the blockage — ask "Are you choking?" If they cannot speak
+   or cough, act immediately.
+2. Stand behind the person and wrap your arms around their waist.
+3. Make a fist with one hand and place the thumb side against the
+   abdomen, just above the navel and below the breastbone.
+4. Grasp your fist with your other hand.
+5. Deliver quick, inward-and-upward thrusts — each thrust should be a
+   distinct, forceful motion.
+6. Repeat until the object is expelled or the person becomes
+   unconscious.
+
+If the person becomes unconscious, lower them to the ground, call 911,
+and begin CPR. Check the mouth for the object before giving breaths.
+
+### Prevention of Choking
+
+Most choking incidents are preventable:
+
+- **Cut food into small pieces** and chew thoroughly before swallowing
+- **Avoid talking, laughing, or moving vigorously while eating** — these
+  actions can cause food to enter the airway
+- **Keep small objects away from young children** — balloons, coins,
+  and small toy parts are leading choking hazards for children under 4
+- **Supervise mealtimes for young children and elderly adults** — both
+  groups are at higher risk due to developing or declining swallowing
+  coordination
+```
+
+**Why this works:** Each section reads qualitatively differently. "Symptoms and Signs" teaches observable cues a Scout can watch for. "First Aid" is a numbered physical procedure a Scout could follow hands-on. "Prevention" explains root causes and practical habits. A counselor can test each verb independently and find the Scout prepared for all three.
+
+#### Depth Calibration: Compact but Not Thin
+
+Structure alone is not enough. A page can have the right H3 headings and still fail if each subsection is only one sentence long. The goal is not maximal length; the goal is **instructional completeness**. A short subsection is fine when it still gives the Scout enough substance to say, recognize, or do something real.
+
+**BAD — technically structured, but too thin to teach:**
+
+```markdown
+### First Aid for Sunburn
+
+Move to shade, cool the skin, hydrate, and protect the area from more sun.
+```
+
+Problems with this output:
+- It compresses the whole response into one sentence the Scout is unlikely to remember under pressure
+- It gives no sequence, so it does not really help with a "show" verb
+- It gives no limits or cautions, so the Scout does not learn what to avoid or when the situation is more serious
+- It sounds like a summary note, not preparation for a counselor conversation or demonstration
+
+**BETTER — still compact, but instructionally complete:**
+
+```markdown
+### First Aid for Sunburn
+
+1. Move the person out of direct sun right away so the burn does not keep worsening.
+2. Cool the skin with cool water or cool wet cloths. Do not put ice directly on the burn.
+3. Encourage fluids, because sunburn often comes with dehydration.
+4. Protect the area with loose clothing or shade and avoid more sun until the skin settles down.
+5. Get medical help if the burn is severe, badly blistered, covers a large area, or comes with dizziness, vomiting, or confusion.
+```
+
+**Why this works:** It is still brief, but it now has sequence, a caution, and a "get help" threshold. The Scout could actually walk a counselor through what to do instead of repeating a one-line summary.
+
+**Use this balance rule:**
+- **Simple topic** → one short intro sentence plus 3–5 bullets or steps may be enough
+- **Moderate topic** → compact paragraph plus bullets/steps
+- **Complex or high-stakes topic** → fuller subsection with distinctions, cautions, and examples
+
+Do not make every subsection long. Make every subsection complete enough that it teaches the assigned verb.
+
 ### Cross-References
 
 When a later requirement builds on an earlier one, link back with natural language: "In Req 1e, you learned about safe food temperatures — those same principles apply here." Don't force cross-references where the connection is tenuous. A genuine cross-reference helps the Scout see how the badge fits together; a forced one is noise.
@@ -699,6 +889,11 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
 2. Read the existing or scaffolded guide files under `hugo/content/merit-badges/$ARGUMENTS/guide/`.
 3. Study relevant exemplar guides from the reference table for structure, tone, and section patterns.
 4. Preserve the scaffolded file structure, page ordering, and navigation. Replace placeholders with real content instead of inventing a new layout.
+5. **Requirement Language Analysis:** For every parent requirement that has sub-requirements, determine whether the parent creates a structural template:
+   - If the parent contains specific verb phrases and the children are bare topics (e.g., *"Describe X, show Y, and explain Z:"* with children *"(a) Choking"*), decompose the parent into its discrete action phrases. Each phrase becomes an H3 heading template applied to every child page.
+   - If the parent is a generic umbrella (e.g., *"Do the following:"*), no decomposition is needed — treat each child as self-contained.
+   - If a child has its own complete verb+subject instruction, that child's language takes priority over any parent template.
+   - Record the decomposition results before writing begins so that every child page follows the same structural pattern.
 
 ### Phase 2: Write the Guide
 
@@ -727,9 +922,14 @@ Before considering any requirement page complete, ask:
 - If the page covers multiple similar things, did it explain how to tell them apart?
 - If the page covers a demonstration, did it prepare the Scout with an ordered process rather than vague prose?
 - If I removed the badge name, would this opening paragraph still feel badge-specific?
+- If this sub-requirement inherits verb phrases from a parent, does the page have a separate H3 section for each inherited phrase?
+- Does each section under a multi-verb requirement contain qualitatively different content? A "show" section should read like step-by-step instructions, not like an "explain" section.
+- If I isolated any one H3 subsection from the rest of the page, would it still teach the assigned verb instead of reading like a compressed note?
+- Does each subsection give the Scout enough substance to actually say, notice, compare, or do something — not just repeat a one-line summary?
 
 If any answer is no, keep writing before treating the page as done.
 
+A quick warning sign: if an H3 subsection is only one short sentence, it is usually too thin unless the topic is genuinely tiny and the sentence still includes concrete action or comparison.
 ### Phase 3: Resources and Verification
 
 1. Before running verification, do a content-quality gate:
@@ -737,6 +937,10 @@ If any answer is no, keep writing before treating the page as done.
    - expand any page that only gives one brief paragraph per sub-requirement when the subject is broad or high-stakes
    - make sure each major requirement page has enough instructional substance to stand on its own
    - confirm that the page content actually prepares the Scout for the verbs in the requirement text
+   - scan for H3 subsections that are only one short paragraph or one sentence long; these are often signs of structurally correct but instructionally weak content
+   - expand any "show" subsection that lacks ordered steps
+   - expand any "describe" subsection that lacks observable cues, examples, or distinctions
+   - expand any "explain prevention" subsection that only lists tips without saying why they matter or how they prevent the problem
 2. Keep or add official resource shortcodes:
    - `drg/video` for YouTube
    - `drg/external-link` for other official URLs
