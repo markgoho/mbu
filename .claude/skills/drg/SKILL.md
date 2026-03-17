@@ -12,6 +12,8 @@ allowed-tools:
   - AskUserQuestion
   - Task
   - EnterPlanMode
+  - Agent
+  - TaskOutput
 ---
 
 # Digital Resource Guide — Production Skill
@@ -101,32 +103,6 @@ If the scaffold created placeholder content, replace placeholders rather than la
 
 The rest of this skill describes how to turn that scaffolded structure into a high-quality finished guide.
 
-## Audience & Voice
-
-### Who is the reader?
-
-- **Primary**: Scouts BSA members, ages 11–17
-- **Secondary**: Merit badge counselors using the guide as a teaching companion
-- **Tertiary**: Parents/guardians helping Scouts prepare
-
-### Voice Rules
-
-| Attribute         | Guideline                                                                                         |
-| ----------------- | ------------------------------------------------------------------------------------------------- |
-| **Reading level** | 6th–8th grade. Short sentences. Define technical terms on first use.                              |
-| **Tone**          | Encouraging, conversational, informative. "Experienced camp counselor explaining something cool." |
-| **Person**        | Address the reader as "you."                                                                      |
-| **Voice**         | Active over passive. "Pack your first-aid kit" not "A first-aid kit should be packed."            |
-| **Enthusiasm**    | Genuine excitement without being cloying. One exclamation point per section max.                  |
-| **Inclusivity**   | Gender-neutral language. Assume diverse backgrounds.                                              |
-| **Safety**        | When discussing safety, shift to direct, serious-but-not-scary tone. Authoritative, not casual.   |
-
-### What the guide is NOT
-
-- **Not a workbook.** It teaches the knowledge to fulfill requirements — no fill-in-the-blank answers.
-- **Not a pamphlet replacement.** It supplements and enriches.
-- **Not a merit badge counselor.** It prepares the Scout for the conversation with their counselor.
-
 ## Information Architecture
 
 Every guide has exactly **four page types**, in this order for the primary guide flow plus a printable companion:
@@ -184,65 +160,6 @@ This requirement covers four topics that every archer needs to understand:
 ```
 
 This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
-
-### Parent-to-Child Requirement Decomposition
-
-Many requirements follow a pattern where a **parent requirement contains verb phrases** and the **children are bare topics**. When this pattern occurs, the parent language creates a structural template that every child page must follow.
-
-#### Recognizing the Pattern
-
-Look at the parent requirement and its children together:
-
-- **Verb-template parent + bare-topic children:** The parent contains action verbs applied to the children's topics. Example: *"Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions:"* followed by children like *"(a) Choking"*, *"(b) Heat exhaustion"*. The parent's verbs are the structural mandate for every child.
-- **Generic umbrella parent:** The parent says something like *"Do the following:"* or *"Explain the following:"* without specific multi-verb instructions. In this case, the children are self-contained — each child carries its own complete instruction. No decomposition is needed; treat each child independently.
-- **Children with their own complete instructions:** Even under a verb-template parent, if a child has its own full verb+subject sentence (e.g., *"(a) Demonstrate how to tie a bowline"*), that child's own language takes priority over the parent template.
-
-#### When Decomposition Applies
-
-If the parent is a verb-template parent and the children are bare topics, **decompose the parent into discrete action phrases** and map each phrase to an H3 heading under every child page.
-
-**Multi-verb parents → multiple H3 sections per child page:**
-
-Parse the parent requirement into its distinct verb phrases. Each verb phrase becomes its own H3 section on every child's page. The sections must be parallel across all sibling pages.
-
-Example decomposition for *"Describe the symptoms and signs of, show first aid for, and explain prevention of:"*
-
-| Parent verb phrase | H3 heading template | Content type |
-| --- | --- | --- |
-| "Describe the symptoms and signs of" | **Symptoms and Signs of {Condition}** | Observable details, what to look and listen for |
-| "Show first aid for" | **First Aid for {Condition}** | Numbered physical procedure, hands-on steps |
-| "Explain prevention of" | **Prevention of {Condition}** | Reasoning about causes, practical habits to avoid the condition |
-
-For child `(a) Choking`, the page gets three H3 sections:
-- `### Symptoms and Signs of Choking`
-- `### First Aid for Choking`
-- `### Prevention of Choking`
-
-For child `(b) Heat exhaustion`, the same three H3 sections appear with "Heat Exhaustion" substituted.
-
-**Single-verb parents → one content focus per child, no forced H3 split:**
-
-If the parent has only one verb (e.g., *"Explain each of the following:"*), each child still gets its own H2 heading/page with content calibrated for that verb, but there is no need to create multiple H3 subsections within each child. The single verb shapes the content approach (explain → definitions, reasoning, examples) without requiring structural subdivision.
-
-#### H3 Heading Naming Rules
-
-- Derive H3 headings from the parent's exact verb phrases, substituting the specific child topic
-- Keep heading phrasing parallel across all sibling pages (e.g., always "Symptoms and Signs of X", never sometimes "Signs of X" and other times "How to Recognize X")
-- Use sentence case for H3 headings
-- If the parent's verb phrase is long or awkward as a heading, shorten it while preserving the verb and intent (e.g., "Describe the symptoms and signs of" → "Symptoms and Signs of")
-
-#### Depth Calibration
-
-Not every H3 section under a multi-verb parent needs equal length. A "Prevention" section for one condition might be two sentences if there is genuinely little to say, while "First Aid" for the same condition might need a detailed numbered procedure. But **never omit a section** that the parent language calls for — even a brief section signals to the Scout that this verb applies and gives them something to prepare.
-
-When one verb phrase maps to content that is inherently longer (e.g., a multi-step first aid procedure vs. a short prevention tip), that is fine. Depth should match the topic's complexity for that verb, not be artificially equalized.
-
-#### What Decomposition Does NOT Mean
-
-- It does not mean copying the parent requirement text into every child page as an H3 heading verbatim — derive concise section headings from the verb phrases
-- It does not apply to generic umbrellas ("Do the following:") — those children stand alone
-- It does not override a child's own complete instructions — if the child says "Demonstrate X," that child's language governs its structure
-- It does not require equal word counts per section — match depth to the verb and topic
 
 ### "Choose One" Requirements
 
@@ -399,59 +316,21 @@ next_title: "{Next Page Title}"
    {{</* /drg/requirement */>}}
    ```
 
-2. **Educational content** — usually 500–1500 words of real teaching, not padded filler and not a loose word-count suggestion. A requirement page is a teaching page. It must help the Scout understand the topic well enough to arrive at the counselor conversation with real background knowledge instead of seeing the concepts for the first time. Teach how to think about the requirement, not just what it is about. When a page covers several related conditions, tools, procedures, or concepts, explain why the distinctions matter and how the Scout can tell them apart. Short summary paragraphs alone are usually insufficient for pages covering multiple sub-requirements, emergency response, tools, procedures, or decision-making. Content strategy depends on requirement type:
+2. **Educational content** — requirement pages are now written by the `drg-page-writer` subagent. The orchestrator is responsible for assembling the right structured context for each page and making sure requirement-specific resources, navigation, and decomposition data are passed through correctly.
 
-   | Requirement asks Scout to... | Strategy                                                                 |
-   | ---------------------------- | ------------------------------------------------------------------------ |
-   | Explain / Define             | Clear explanations, definitions, "Did You Know" callouts                 |
-   | Demonstrate / Show           | Step-by-step descriptions, checklists, video references                  |
-   | Identify / List              | Representative examples with context, encourage finding their own        |
-   | Research / Discuss           | Frame key questions, multiple perspectives, authoritative links          |
-   | Create / Plan / Build        | Planning frameworks, printable worksheets (see Worksheets section below) |
-   | Do / Perform                 | Preparation guidance, safety info, practical tips, printable worksheets  |
-   | Choose one of several        | Present all options, help Scout choose, guidance for each path           |
+   **Verb Decomposition Output:** For every parent requirement with sub-requirements, produce decomposition in this format before invoking the page writer:
 
-   **Verb-first writing — structural rule:** Before drafting, identify the main action verbs in the requirement text. Those verbs determine the page's section structure, not just its tone. **Multi-verb requirements produce multi-section pages.** Each verb phrase gets its own H3 heading and content block. Do not collapse multiple verbs into unified flowing paragraphs.
+   - **Multi-verb parent** → `type: "multi-verb"`, `verb_phrases: [{ verb, heading_template, content_type }]`
+   - **Single-verb parent** → `type: "single-verb"`, `verb_phrases: [{ verb, content_type }]`
+   - **Self-contained child** → `type: "self-contained"`
+   - **Generic umbrella** → `type: "none"`
 
-   Each verb has a structural output specification and a litmus test:
-
-   - **Explain** → Define the concept, break it into parts, say why it matters, include a concrete example the Scout could retell. *Litmus test: could the Scout articulate why this matters and give an example to a counselor?*
-   - **Describe** → Give observable details, signs, sequences, or characteristics the Scout would need to talk through accurately. Content reads like sensory/observable information. *Litmus test: could the Scout recognize or point out what's described without having memorized a definition?*
-   - **Discuss** → Provide multiple angles, useful questions, and the kinds of points a counselor would expect the Scout to notice. Content reads like a two-sided conversation. *Litmus test: could the Scout sustain a back-and-forth conversation about this topic?*
-   - **Demonstrate / Show** → Provide a numbered ordered procedure, needed materials or setup, common mistakes, and what correct performance looks like. Content reads like step-by-step physical instructions. *Litmus test: could the Scout follow these steps hands-on and perform the skill?*
-   - **Identify** → Teach distinguishing features, comparisons, and "how to tell" cues rather than just examples. *Litmus test: given two similar items, could the Scout tell them apart using what's on this page?*
-   - **List / Name** → Give categories, representative examples, and memory structure without simply handing over a final answer set when that would undercut the requirement. *Litmus test: could the Scout generate their own list from the categories and patterns taught?*
-   - **Compare / Contrast** → Use side-by-side structure or a table and explain why the differences matter. *Litmus test: could the Scout articulate at least two meaningful differences?*
-   - **Plan / Prepare / Create** → Provide a framework, decision guide, worksheet trigger, or checklist that helps the Scout produce something real. *Litmus test: could the Scout actually start building/planning with what's on this page?*
-   - **Teach** → Help the Scout organize what to say, what to show first, and how to know the learner understood. *Litmus test: could the Scout teach someone else this skill using this page as preparation?*
-
-   **Qualitative differentiation is mandatory.** A "show" section must read like step-by-step physical instructions — not like an "explain" section with the word "show" swapped in. A "describe" section must read like observable details — not like a definition paragraph. If two sections under different verbs read the same way, one of them is wrong.
-
-   **Subsection depth is mandatory too.** A structurally correct H3 section is still incomplete if it only gives a compressed one-sentence summary that restates the heading. Each inherited or verb-driven subsection must teach the Scout something they could actually say, notice, or do. Even for smaller topics, a subsection should usually contain at least **two of these four**: (1) concrete cues or examples, (2) ordered actions, (3) common mistakes / what not to do, (4) practical reasoning about why the action or prevention works.
-
-   For mixed-verb requirements, each verb produces its own structurally separate content section. If a requirement says something like "describe the symptoms and signs of, show first aid for, and explain prevention," the page must have three distinct H3 sections per topic — one for each verb phrase — with qualitatively different content in each. See the "Parent-to-Child Requirement Decomposition" section above for the full decomposition rules.
-
-   **Subsection-level depth expectations:**
-
-   - **Describe** subsections should usually include observable cues plus at least one distinction, example, or comparison that helps the Scout recognize the condition in real life.
-   - **Demonstrate / Show** subsections should usually include ordered steps, not a compressed sentence list. For simple topics, a short numbered procedure is enough; for more serious topics, include setup, sequence, and at least one mistake to avoid.
-   - **Explain** subsections should usually include cause-and-effect reasoning — why the prevention, rule, or concept matters — not just a flat list of tips.
-   - **Identify / Compare** subsections should usually include "how to tell" language, not just names.
-
-   **Requirement-type depth rules:**
-
-   - **Explain / Define** pages should include why the concept matters, a concrete example, and at least one useful distinction or misconception.
-   - **Demonstrate / Show** pages should usually include a numbered or clearly ordered procedure, common mistakes, and what success looks like before the counselor demonstration.
-   - **Identify / List** pages should include representative examples plus comparison language that teaches how to tell similar things apart.
-   - **Research / Discuss** pages should frame what to pay attention to, not just suggest that the Scout "look it up."
-   - **Create / Plan / Build** pages should provide a framework, decision guide, or worksheet trigger.
-   - **Do / Perform** pages should emphasize preparation, sequencing, safety, and what evidence or output the Scout should bring to the counselor.
-   - **Choose one of several** pages should provide decision support and explain what each path teaches.
+   This decomposition is a required handoff artifact. The page writer relies on it to produce correct H3 structure on child pages.
 
 3. **Official resources (MANDATORY)** — Every official resource listed for this requirement in the badge data **must** appear on the page. This is not optional — these are official Scouting resources scraped from scouting.org.
    - **YouTube videos** (URL contains `youtube.com` or `youtu.be`): Use `drg/video` shortcode. Verify each video via the Video Verification Protocol before including it. If verification shows the video is embed-disabled (401), use `drg/external-link` instead. If the video is gone (404), use `drg/external-link` with the URL so the Scout can check if it's been re-uploaded.
    - **Non-video resources** (websites, PDFs, articles): Use `drg/external-link` shortcode with the official title and URL.
-   - **Placement**: Integrate these resources naturally within the educational content where they are most relevant — do not dump them all at the bottom. A video about AFIS should appear in the section discussing AFIS, not after the conclusion.
+   - **Placement**: Integrate these resources naturally within the educational content where they are most relevant — do not dump them all at the bottom.
    - **Grouped pages**: If one page covers multiple requirements or sub-requirements (for example, `req1ab.md`), each resource must stay attached to the specific requirement it came from in the badge data. A resource for `1.a` belongs in the `1a` subsection, not pooled with `1.b` resources elsewhere on the page.
    - **Supplemental resources**: You may add additional resources beyond the official requirement-level resources, but the official resources are the baseline that must always be present.
    - **No user-facing implementation details**: Never mention `data.json`, JSON, scaffolding, placeholders, scripts, or internal repository details in published guide prose.
@@ -463,25 +342,11 @@ next_title: "{Next Page Title}"
    - If no official links exist for that requirement, delete the placeholder block or rewrite it into reader-facing guidance that helps the Scout complete the requirement.
    - Never leave a published section that explains the absence of links by referencing internal files, scraped fields, or repository mechanics.
 
-5. **Content elements** — At least 2–3 different types per page (see shortcode catalog below).
+5. **Content elements** — requirement page element variety is handled by the page writer, but the orchestrator must still preserve shortcode syntax and pass requirement-specific context cleanly.
 
-6. **Cross-references** — Link to related requirement pages with natural language.
+6. **Cross-references** — keep the guide graph coherent and ensure related requirement pages exist so the page writer can refer to them naturally.
 
-7. **Transition CTA** — Bridge sentence connecting to the next requirement, followed by the `drg/next-page` shortcode. **This must always be the very last element on the page** — nothing should appear after it (no shortcodes, no text).
-
-### Reader-Facing Copy Safety Check
-
-Before considering a guide page done, scan for internal-only language that should never reach readers. Published prose must not mention:
-
-- `data.json`
-- JSON
-- scaffold or scaffolding
-- placeholder or stub
-- script names
-- verification scripts
-- repository or repo internals
-
-If the sentence would sound strange to a Scout or counselor reading the guide on the public site, rewrite it.
+7. **Transition CTA** — every requirement page still ends with a bridge sentence and the `drg/next-page` shortcode. The page writer is responsible for writing it, but the orchestrator must provide accurate next-page metadata.
 
 ### extended-learning.md — Extended Learning
 
@@ -556,7 +421,7 @@ Steps to handle this scenario.
   {{</* /drg/be-prepared */>}}
 ```
 
-Use `drg/be-prepared` for **scenario-based problem-solving** — situations the Scout might encounter and step-by-step responses. Good for safety scenarios, "what if" situations, and motivational hurdles. Aim for at least 1–2 per guide beyond just the intro pages.
+Use `drg/be-prepared` for **scenario-based problem-solving** — situations the Scout might encounter and step-by-step responses. Aim for at least 1–2 per guide beyond just the intro pages.
 
 ```markdown
 {{</* drg/next-page
@@ -659,221 +524,9 @@ Two exemplar worksheets demonstrate different approaches:
 - `hugo/content/merit-badges/hiking/guide/hike-plan-worksheet/index.md` — fields, tables, draw areas, signature blocks
 - `hugo/content/merit-badges/bird-study/guide/field-notebook-worksheet/index.md` — check grids, writing areas, repeated-use design
 
-## Content Rules
-
-### DO
-
-- Teach the knowledge, not the answer
-- Include safety content wherever warranted
-- Link to authoritative external sources (at least one per requirement page)
-- When referencing other merit badges, always link to our own site (`/merit-badges/{slug}/`) — never to scouting.org merit badge pages
-- Cross-reference between requirements
-- Provide practical tools (checklists, templates, frameworks)
-- Use real examples and real places
-- Mix 2–3 content element types per page
-
-### DO NOT
-
-- Give away the answer (if requirement says "Identify 10 examples," don't list exactly 10)
-- Copy or paraphrase the merit badge pamphlet
-- Alter requirement text
-- Use jargon without defining it
-- Link to commercial products or unreliable sources
-- Link to scouting.org for merit badge requirements — always use our internal `/merit-badges/{slug}/` URLs instead
-- Be preachy or lecture
-- Overload a page beyond ~1500 words of educational content
-- Use "Did You Know" for information that is merely topical — it must be **genuinely surprising, counterintuitive, or memorable**. If the fact would not make a Scout say "wait, really?" it belongs in the body text, not a callout.
-
-## Writing Craft
-
-These principles capture what separates the best published guides from formulaic ones. Internalize them — they are not a checklist to satisfy mechanically.
-
-### Opening Hooks
-
-The first paragraph after the `drg/requirement` shortcode must be **specific to the subject matter**, not a generic warm-up. Self-test: could this paragraph work for three unrelated badges by swapping one noun? If yes, rewrite.
-
-**Weak:** "This is an important skill that every Scout should learn. Let's dive in and explore what you need to know!"
-
-**Strong:** "A blister the size of a quarter can end a 20-mile hike at mile three. Knowing how to prevent — and treat — foot injuries is the difference between finishing the trail and calling for a ride home."
-
-The strong version is impossible to confuse with any other badge. It drops the reader into the subject immediately.
-
-### Did You Know — The Surprise Test
-
-The existing DO NOT rule says these must be genuinely surprising. Here is what "genuinely surprising" looks like in practice:
-
-- **Bird Study:** "A chickadee can remember thousands of hiding spots where it cached seeds — and recall them months later."
-- **First Aid:** "Good Samaritan laws in most states protect you from liability when you help someone in an emergency — but only if you don't exceed your training."
-- **Cooking:** "The 'danger zone' for bacterial growth (40°F–140°F) means a pot of chili left on the counter for two hours has already become unsafe to eat."
-
-Each of these makes a reader pause. If your fact wouldn't survive a "so what?" challenge from a skeptical 13-year-old, move it to body text.
-
-### Shortcode Variety
-
-Aim for **4–6 different shortcode types per page** across the guide. If `safety-first` appears mechanically at the bottom of every section regardless of whether there is a genuine safety concern, something is wrong. Likewise, if every page follows the exact same pattern (requirement → two paragraphs → tip → checklist → safety-first → next-page), the guide reads like a template, not a teaching tool.
-
-Look at how the Astronomy guide mixes `safety-first`, `checklist`, `be-prepared`, `tip`, and `external-link` shortcodes within individual pages — varying the order and density based on what the content actually needs.
-
-**Use the best teaching structure for the content, not just any valid structure:**
-
-- **Use a markdown table** when the page compares similar options, conditions, injuries, tools, causes, or severity levels.
-- **Use `drg/be-prepared`** when a Scout may realistically face the situation under stress or need to decide what to do next.
-- **Use numbered or tightly ordered steps** when the requirement involves demonstrating, handling, assembling, treating, responding, or teaching.
-
-A page can be structurally valid and still be weak if it avoids the format that would teach the topic best.
-
-### Instructional Depth
-
-A strong DRG requirement page should feel like a skilled instructor helping a Scout get ready to do the requirement, not like a glossary, a checklist dump, or a compressed study note.
-
-Prefer:
-
-- concrete examples over generic statements
-- named scenarios over abstract advice
-- distinctions and comparisons over flat lists
-- step-by-step teaching for demonstration requirements
-- practical cues a Scout can notice in the field
-
-When a requirement involves similar concepts, conditions, tools, injuries, roles, or procedures, teach the differences that matter. Tell the Scout what to look for, what changes their response, and why a counselor cares about the distinction. If a page would leave a first-time reader saying "I still don't really know how to tell these apart" or "I know the words but not what to do," it needs more depth.
-
-### Verb-First Writing
-
-Read the action verbs in every requirement before writing. Those verbs should drive the shape of the page.
-
-A page for **explain** should not read like a page for **demonstrate**. A page for **identify** should not read like a page for **discuss**. Use the verbs to decide whether the Scout needs distinctions, examples, ordered actions, comparison language, teaching structure, or decision support.
-
-When a requirement contains several verbs, support each one. Do not let a mixed-verb requirement flatten into one broad paragraph that technically mentions the topic without preparing the Scout to do the actual actions.
-
-#### Verb Decomposition: Before and After
-
-This example shows the exact transformation expected for a multi-verb parent requirement. The parent is First Aid Req 5: *"Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions: (a) Choking..."*
-
-**BAD — collapsed verbs, generic prose:**
-
-```markdown
-## Choking
-
-Choking occurs when a foreign object blocks the airway. Signs include
-the universal choking sign (hands clutching the throat), inability to
-speak or cough, and bluish skin color. If someone is choking, you should
-use the steps you have been taught to clear the airway. Back blows and
-abdominal thrusts are common techniques. To prevent choking, cut food
-into small pieces, chew thoroughly, and avoid talking with food in your
-mouth.
-```
-
-Problems with this output:
-- All three verbs are blurred into one paragraph
-- "Show first aid for" is answered with *"use the steps you have been taught"* — this is a non-answer that does not prepare the Scout to demonstrate anything
-- "Describe symptoms" is a single sentence mixed into narrative prose
-- No structural signal tells the Scout (or counselor) where one verb ends and the next begins
-- A counselor testing each verb separately would find the Scout unprepared
-
-**GOOD — requirement-derived H3 structure, qualitatively different content:**
-
-```markdown
-## Choking
-
-### Symptoms and Signs of Choking
-
-Look for these observable cues:
-
-- **Universal choking sign** — both hands clutching the throat
-- **Inability to speak, cry, or cough forcefully** — the person may
-  mouth words but produce no sound
-- **High-pitched wheezing or squeaking** when trying to inhale
-- **Bluish tint to lips or fingernails** (cyanosis) — indicates
-  oxygen deprivation
-- **Loss of consciousness** if the blockage is not cleared
-
-A partial blockage may allow weak coughing — encourage the person to
-keep coughing. A complete blockage produces silence and requires
-immediate intervention.
-
-### First Aid for Choking
-
-For a conscious adult or child (over 1 year):
-
-1. Confirm the blockage — ask "Are you choking?" If they cannot speak
-   or cough, act immediately.
-2. Stand behind the person and wrap your arms around their waist.
-3. Make a fist with one hand and place the thumb side against the
-   abdomen, just above the navel and below the breastbone.
-4. Grasp your fist with your other hand.
-5. Deliver quick, inward-and-upward thrusts — each thrust should be a
-   distinct, forceful motion.
-6. Repeat until the object is expelled or the person becomes
-   unconscious.
-
-If the person becomes unconscious, lower them to the ground, call 911,
-and begin CPR. Check the mouth for the object before giving breaths.
-
-### Prevention of Choking
-
-Most choking incidents are preventable:
-
-- **Cut food into small pieces** and chew thoroughly before swallowing
-- **Avoid talking, laughing, or moving vigorously while eating** — these
-  actions can cause food to enter the airway
-- **Keep small objects away from young children** — balloons, coins,
-  and small toy parts are leading choking hazards for children under 4
-- **Supervise mealtimes for young children and elderly adults** — both
-  groups are at higher risk due to developing or declining swallowing
-  coordination
-```
-
-**Why this works:** Each section reads qualitatively differently. "Symptoms and Signs" teaches observable cues a Scout can watch for. "First Aid" is a numbered physical procedure a Scout could follow hands-on. "Prevention" explains root causes and practical habits. A counselor can test each verb independently and find the Scout prepared for all three.
-
-#### Depth Calibration: Compact but Not Thin
-
-Structure alone is not enough. A page can have the right H3 headings and still fail if each subsection is only one sentence long. The goal is not maximal length; the goal is **instructional completeness**. A short subsection is fine when it still gives the Scout enough substance to say, recognize, or do something real.
-
-**BAD — technically structured, but too thin to teach:**
-
-```markdown
-### First Aid for Sunburn
-
-Move to shade, cool the skin, hydrate, and protect the area from more sun.
-```
-
-Problems with this output:
-- It compresses the whole response into one sentence the Scout is unlikely to remember under pressure
-- It gives no sequence, so it does not really help with a "show" verb
-- It gives no limits or cautions, so the Scout does not learn what to avoid or when the situation is more serious
-- It sounds like a summary note, not preparation for a counselor conversation or demonstration
-
-**BETTER — still compact, but instructionally complete:**
-
-```markdown
-### First Aid for Sunburn
-
-1. Move the person out of direct sun right away so the burn does not keep worsening.
-2. Cool the skin with cool water or cool wet cloths. Do not put ice directly on the burn.
-3. Encourage fluids, because sunburn often comes with dehydration.
-4. Protect the area with loose clothing or shade and avoid more sun until the skin settles down.
-5. Get medical help if the burn is severe, badly blistered, covers a large area, or comes with dizziness, vomiting, or confusion.
-```
-
-**Why this works:** It is still brief, but it now has sequence, a caution, and a "get help" threshold. The Scout could actually walk a counselor through what to do instead of repeating a one-line summary.
-
-**Use this balance rule:**
-- **Simple topic** → one short intro sentence plus 3–5 bullets or steps may be enough
-- **Moderate topic** → compact paragraph plus bullets/steps
-- **Complex or high-stakes topic** → fuller subsection with distinctions, cautions, and examples
-
-Do not make every subsection long. Make every subsection complete enough that it teaches the assigned verb.
-
-### Cross-References
-
-When a later requirement builds on an earlier one, link back with natural language: "In Req 1e, you learned about safe food temperatures — those same principles apply here." Don't force cross-references where the connection is tenuous. A genuine cross-reference helps the Scout see how the badge fits together; a forced one is noise.
-
-### Extended Learning Depth
-
-Each deep-dive section in Extended Learning should teach something **genuinely new** — a skill, concept, or perspective that the requirement pages didn't cover. "Here are more things you can do" is not a deep dive. "Here is how competitive archers train their breathing to hold steady at full draw" is.
-
 ## Production Workflow
 
-**CRITICAL — Run to completion without stopping.** Work through all phases autonomously from start to finish. Do NOT pause between phases, do NOT ask for confirmation, do NOT summarize progress and offer to continue, do NOT stop mid-guide for any reason short of a hard error that genuinely requires user input. Writing one or two pages and then asking "Should I continue?" is a failure. The guide is not done until every scaffolded page has been written, verified, and the build passes. Silence from the user means keep going.
+**CRITICAL — Run to completion without stopping.** Work through all phases autonomously from start to finish. Do NOT pause between phases, do NOT ask for confirmation, do NOT summarize progress and offer to continue, do NOT stop mid-guide for any reason short of a hard error that genuinely requires user input. The guide is not done until every scaffolded page has been written, verified, and the build passes.
 
 ## Workflow
 
@@ -890,60 +543,51 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
 3. Study relevant exemplar guides from the reference table for structure, tone, and section patterns.
 4. Preserve the scaffolded file structure, page ordering, and navigation. Replace placeholders with real content instead of inventing a new layout.
 5. **Requirement Language Analysis:** For every parent requirement that has sub-requirements, determine whether the parent creates a structural template:
-   - If the parent contains specific verb phrases and the children are bare topics (e.g., *"Describe X, show Y, and explain Z:"* with children *"(a) Choking"*), decompose the parent into its discrete action phrases. Each phrase becomes an H3 heading template applied to every child page.
-   - If the parent is a generic umbrella (e.g., *"Do the following:"*), no decomposition is needed — treat each child as self-contained.
-   - If a child has its own complete verb+subject instruction, that child's language takes priority over any parent template.
+   - If the parent contains specific verb phrases and the children are bare topics, decompose the parent into its discrete action phrases.
+   - If the parent is a generic umbrella, no decomposition is needed.
+   - If a child has its own complete verb+subject instruction, that child's language takes priority.
    - Record the decomposition results before writing begins so that every child page follows the same structural pattern.
+6. **Verb Decomposition Output:** For every parent requirement with sub-requirements, produce decomposition in this format to pass to the page writer:
+   - Multi-verb parent → `type: "multi-verb"`, `verb_phrases: [{verb, heading_template, content_type}]`
+   - Single-verb parent → `type: "single-verb"`, `verb_phrases: [{verb, content_type}]`
+   - Self-contained child → `type: "self-contained"`
+   - Generic umbrella → `type: "none"`
 
-### Phase 2: Write the Guide
+### Phase 2: Write Requirement Pages via Subagent
 
-Work page-by-page and turn scaffold placeholders into complete Scout-friendly content. Keep the deterministic scaffold structure intact unless the user explicitly asks for a structural change.
+1. Write `_index.md` directly in the orchestrator.
+2. Write any requirement overview pages that are not standard requirement content pages directly in the orchestrator when they function as chooser/navigation pages.
+3. For each standard requirement page in `guide_nav` order, invoke `drg-page-writer` with the Agent tool.
+4. Pass structured context for each invocation:
+   - badge metadata
+   - file path
+   - front matter
+   - requirement text
+   - parent requirement text when relevant
+   - verb decomposition output
+   - requirement-specific resources
+   - sibling topics
+   - prev/next navigation
+   - existing content when resuming
+5. **Parallel by default:** sibling pages under the same parent should run concurrently up to 4 at a time using background Agent calls. Wait for the sibling group to finish before moving to the next group.
+6. Capture subagent return flags after each page completes:
+   - worksheet trigger
+   - video concern
+   - resource gap
+   - resume/improved-existing-content note
+7. Non-requirement pages remain in the orchestrator:
+   - `_index.md`
+   - chooser/overview pages for select-mode requirements
+   - `extended-learning.md`
+   - printable worksheet pages when needed
+8. Do not stop after a subset of pages. Complete the full guide before moving to verification.
 
-**Write every page before moving to Phase 3.** Do not stop after a subset of pages, do not offer progress summaries mid-guide, do not ask whether to continue. Move directly from one page to the next until all pages are complete.
-
-Requirements for writing:
-
-- Keep all prose specific to the badge.
-- Use exact requirement wording inside `drg/requirement` shortcodes.
-- Keep official resources relevant to the requirement they belong to.
-- Preserve valid front matter, `guide_nav`, and prev/next links.
-- Replace placeholder titles like `[TITLE]` and group labels like `[GROUP: Requirement 3]` with polished final text when completing the guide.
-- Identify the major verbs in each requirement before drafting and make sure the finished page prepares the Scout for each one.
-- Keep expanding thin pages before moving on. If a page is structurally complete but still reads like a short summary, add the missing explanation, distinctions, examples, scenarios, comparison support, or ordered guidance.
-- Treat broad, high-stakes, or multi-part requirements as needing real instructional substance, not one brief paragraph per sub-part.
-
-### Thin Page Self-Check
-
-Before considering any requirement page complete, ask:
-
-- What are the main verbs in this requirement, and does the page help the Scout do each one?
-- Would this page still make sense to a Scout who has never encountered this topic before?
-- Does it contain at least one concrete example, scenario, or field-use case?
-- If the page covers multiple similar things, did it explain how to tell them apart?
-- If the page covers a demonstration, did it prepare the Scout with an ordered process rather than vague prose?
-- If I removed the badge name, would this opening paragraph still feel badge-specific?
-- If this sub-requirement inherits verb phrases from a parent, does the page have a separate H3 section for each inherited phrase?
-- Does each section under a multi-verb requirement contain qualitatively different content? A "show" section should read like step-by-step instructions, not like an "explain" section.
-- If I isolated any one H3 subsection from the rest of the page, would it still teach the assigned verb instead of reading like a compressed note?
-- Does each subsection give the Scout enough substance to actually say, notice, compare, or do something — not just repeat a one-line summary?
-
-If any answer is no, keep writing before treating the page as done.
-
-A quick warning sign: if an H3 subsection is only one short sentence, it is usually too thin unless the topic is genuinely tiny and the sentence still includes concrete action or comparison.
 ### Phase 3: Resources and Verification
 
-1. Before running verification, do a content-quality gate:
-   - scan for pages that are structurally complete but visibly short or underexplained
-   - expand any page that only gives one brief paragraph per sub-requirement when the subject is broad or high-stakes
-   - make sure each major requirement page has enough instructional substance to stand on its own
-   - confirm that the page content actually prepares the Scout for the verbs in the requirement text
-   - scan for H3 subsections that are only one short paragraph or one sentence long; these are often signs of structurally correct but instructionally weak content
-   - expand any "show" subsection that lacks ordered steps
-   - expand any "describe" subsection that lacks observable cues, examples, or distinctions
-   - expand any "explain prevention" subsection that only lists tips without saying why they matter or how they prevent the problem
-2. Keep or add official resource shortcodes:
-   - `drg/video` for YouTube
-   - `drg/external-link` for other official URLs
+1. Keep or add official resource shortcodes:
+   - `drg/video` for verified embeddable YouTube links
+   - `drg/external-link` for other official URLs or embed-disabled videos
+2. Use flags returned by the page-writer subagent to handle worksheet triggers, video concerns, and resource gaps.
 3. Before adding a YouTube video, verify it with the project's video verification workflow.
 4. After making guide changes, run relevant checks when appropriate, such as:
    - `BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources`
@@ -957,8 +601,8 @@ When resuming:
 
 - preserve user-added content and richer expansions
 - preserve existing image comments or placeholders and integrate around them
+- pass `existing_content` to the page writer so it improves content rather than flattening or rewriting it
 - deepen thin sections without flattening stronger existing pages back into a uniform template
 
-**Resume means finish, not restart.** When resuming a partially-written guide, complete all remaining pages without stopping. Do not summarize what has been done and ask whether to proceed — just continue writing from where the guide left off.
-
+**Resume means finish, not restart.** When resuming a partially written guide, complete all remaining pages without stopping.
 
