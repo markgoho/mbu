@@ -318,7 +318,11 @@
     align-items: center;
     gap: 1rem;
     padding: 1.25rem 1.5rem;
-    background: linear-gradient(135deg, var(--brown-450) 0%, var(--brown-500) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--brown-450) 0%,
+      var(--brown-500) 100%
+    );
     color: white;
     text-decoration: none;
   }
@@ -358,47 +362,6 @@
     transform: translateX(4px);
     opacity: 1;
   }
-}
-
-// Per-requirement guide link button
-.guide-link-btn {
-  opacity: 0;
-  transition: opacity var(--copy-btn-transition-duration) ease;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--brown-450);
-  font-size: 0.8em;
-  position: absolute;
-  left: -4.5rem;
-  top: 0;
-  text-decoration: none;
-  line-height: 1;
-
-  &:hover,
-  &:focus {
-    color: var(--brown-500);
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--brown-400);
-    outline-offset: 2px;
-    border-radius: 2px;
-  }
-
-  // Adjust position for options list (no ::marker)
-  .options > .requirement-item > & {
-    left: -3rem;
-  }
-}
-
-// Show guide link button on hover (same pattern as copy-link-btn)
-.requirement-item:has(> .req-text:hover) > .guide-link-btn,
-.requirement-item:has(> .guide-link-btn:hover) > .guide-link-btn,
-.requirement-item:hover:not(:has(.requirement-item:hover)) > .guide-link-btn,
-.guide-link-btn:focus {
-  opacity: 1;
 }
 
 // Badge grid guide indicator
@@ -469,19 +432,21 @@
 }
 
 .requirements-list {
-  list-style: decimal;
-  padding-inline-start: 1.5rem;
+  list-style: none;
+  padding-inline-start: 0;
 
   > li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-m);
     margin-block-end: 2rem;
-    padding-inline-start: 0.5rem;
   }
 }
 
 // Deep linking custom properties
 :root {
-  --deep-link-highlight-color: hsla(41, 80%, 60%, 0.2); // Brand gold at 20%
-  --deep-link-border-color: var(--tan-400);
+  --deep-link-highlight-color: var(--olive-500-alpha-20);
+  --deep-link-border-color: var(--olive-200);
   --copy-btn-transition-duration: 200ms;
 }
 
@@ -491,78 +456,118 @@
   transition: background-color 0.2s ease;
 }
 
-// Target highlighting - uses box-shadow to avoid layout shift
 .requirement-item:target {
   background-color: var(--deep-link-highlight-color);
-  border-radius: 4px;
 }
 
-// Visually hidden utility for screen readers
-.visually-hidden {
+.req-number {
+  font-size: var(--step-4);
+  font-weight: var(--font-weight-boldest);
+  color: var(--olive-500);
+  opacity: 0.4;
+  line-height: 1;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+.req-body {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.req-actions {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-// Copy link button - hidden by default, positioned to the left
-.copy-link-btn {
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: var(--space-3xs);
   opacity: 0;
   transition: opacity var(--copy-btn-transition-duration) ease;
-  background: none;
-  border: none;
+}
+
+.requirement-item:hover:not(:has(.requirement-item:hover))
+  > .req-body
+  > .req-actions,
+.requirement-item > .req-body > .req-actions:hover,
+.requirement-item > .req-body > .req-actions:focus-within {
+  opacity: 1;
+}
+
+.copy-link-btn,
+.guide-link-btn {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  color: var(--tan-600);
-  font-size: 0.875em;
-  font-weight: 600;
-  position: absolute;
-  left: -2.75rem;
-  top: 0;
   text-decoration: none;
+  line-height: 1;
+  padding: var(--space-3xs);
+  border-radius: var(--border-radius-pill);
 
   &:hover,
   &:focus {
-    color: var(--olive-500);
     outline: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--olive-400);
-    outline-offset: 2px;
-    border-radius: 2px;
-  }
-
-  // Adjust position for options list (no ::marker)
-  .options > .requirement-item > & {
-    left: -1.3rem;
+    background: var(--olive-500-alpha-20);
   }
 }
 
-// Show only the direct child button when hovering its own content (not nested ones)
-// Uses :has() to detect hover on the req-text, button, or the item itself (when no nested item is hovered)
-.requirement-item:has(> .req-text:hover) > .copy-link-btn,
-.requirement-item:has(> .copy-link-btn:hover) > .copy-link-btn,
-.requirement-item:hover:not(:has(.requirement-item:hover)) > .copy-link-btn,
-.copy-link-btn:focus {
-  opacity: 1;
+.copy-link-btn span[aria-hidden="true"],
+.guide-link-btn span[aria-hidden="true"] {
+  display: block;
+}
+
+.copy-link-btn span[aria-hidden="true"],
+.guide-link-btn span[aria-hidden="true"] {
+  font-size: 0.95rem;
+}
+
+.requirement-item > .req-body > :not(.req-actions) {
+  padding-inline-end: 4.5rem;
+}
+
+.options > .requirement-item > .req-body > :not(.req-actions) {
+  padding-inline-end: 3rem;
+}
+
+.subrequirements .requirement-item > .req-body > :not(.req-actions) {
+  padding-inline-end: 4.5rem;
+}
+
+.subrequirements.options .requirement-item > .req-body > :not(.req-actions) {
+  padding-inline-end: 3rem;
+}
+
+.subrequirements .req-number {
+  display: none;
+}
+
+.subrequirements .req-text {
+  color: var(--tan-700);
+}
+
+.options > .requirement-item > .req-body > .req-text {
+  color: var(--color-heading, #333);
+}
+
+.subrequirements.options > .requirement-item > .req-body > .req-text {
+  color: var(--color-heading, #333);
 }
 
 .req-text {
   margin-block-end: 0.5rem;
+  line-height: var(--line-height-relaxed);
 }
 
 .subrequirements {
-  margin-block-start: 0.75rem;
+  margin-block-start: var(--space-s);
   margin-inline-start: 1.5rem;
   padding-inline-start: 1.5rem;
 
   > li {
-    margin-block-end: 0.75rem;
+    margin-block-end: var(--space-xs);
   }
 
   // Alphabetic subrequirements (a, b, c)
@@ -583,7 +588,7 @@
     > li {
       margin-block-end: 1.5rem;
 
-      > .req-text {
+      > .req-body > .req-text {
         font-weight: 600;
         font-size: 1.1em;
         color: var(--color-heading, #333);
@@ -591,6 +596,109 @@
     }
   }
 }
+
+.resources {
+  margin-block-start: 0.5rem;
+  margin-inline-start: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #555);
+
+  strong {
+    font-weight: 600;
+  }
+
+  ul {
+    margin-block-start: 0.25rem;
+    padding-inline-start: 1.25rem;
+    list-style: disc;
+
+    li {
+      margin-block-end: 0.25rem;
+    }
+  }
+
+  a {
+    color: var(--color-link, #0066cc);
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.copy-link-btn {
+  color: var(--olive-500);
+  font-size: 0.875em;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    color: var(--olive-600);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--olive-400);
+    outline-offset: 2px;
+  }
+}
+
+.copy-link-btn svg {
+  width: 1rem;
+  height: 1rem;
+  stroke: currentColor;
+  fill: none;
+  overflow: visible;
+}
+
+.guide-link-btn {
+  color: var(--brown-450);
+  font-size: 0.8em;
+
+  &:hover,
+  &:focus {
+    color: var(--brown-500);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--brown-400);
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 40rem) {
+  .requirements-list > li {
+    gap: var(--space-s);
+  }
+
+  .req-number {
+    font-size: var(--step-3);
+  }
+}
+
+@media (max-width: 30rem) {
+  .requirements-list > li {
+    gap: var(--space-xs);
+  }
+
+  .req-number {
+    font-size: var(--step-2);
+  }
+}
+
+// Visually hidden utility for screen readers
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 .subreq-text {
   margin-block-end: 0.5rem;

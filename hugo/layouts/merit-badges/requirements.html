@@ -83,9 +83,9 @@
       <h2>Requirements</h2>
 
       <ol class="requirements-list">
-        {{ range $json.requirements }}
+        {{ range $i, $req := $json.requirements }}
           {{/* Use recursive partial for infinite nesting */}}
-          {{ partial "requirement.html" (dict "req" . "badge_name" $json.title "hide_resources" true "guide" $guide) }}
+          {{ partial "requirement.html" (dict "req" $req "index" (add $i 1) "badge_name" $json.title "hide_resources" true "guide" $guide) }}
         {{ end }}
       </ol>
     </div>

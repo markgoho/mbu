@@ -1,6 +1,7 @@
 {{/* Recursive partial to render a requirement with any depth of nesting */}}
 {{/* Accepts either a dict with "req" and "badge_name" keys, or a raw requirement object */}}
 {{ $req := .req | default . }}
+{{ $index := .index | default 0 }}
 {{ $badgeName := .badge_name | default "" }}
 {{ $hideResources := .hide_resources | default false }}
 {{ $guide := .guide }}
@@ -13,58 +14,66 @@
     data-pagefind-index-attrs="data-anchor,data-badge-name"
     data-anchor="{{ $req.path }}" data-badge-name="{{ $badgeName }}"
   {{ end }}>
-  {{ if $req.path }}
-    <a
-      class="copy-link-btn"
-      href="#{{ $req.path }}"
-      aria-label="Copy link to requirement {{ $req.path }}">
-      <span aria-hidden="true">#</span>
-      <span class="visually-hidden"
-        >Copy link to requirement {{ $req.path }}</span
-      >
-    </a>
-    {{ if $guide }}
-      {{ $guideSlug := printf "req%s" (replace $req.path "." "") }}
-      {{ $guidePage := $guide.GetPage $guideSlug }}
-      {{ if $guidePage }}
-        <a class="guide-link-btn" href="{{ $guidePage.RelPermalink }}" title="Study guide for this requirement">
-          <span aria-hidden="true">📖</span>
-          <span class="visually-hidden">Open study guide for requirement {{ $req.path }}</span>
+  {{ if $index }}
+    <span class="req-number" aria-hidden="true">{{ printf "%02d" $index }}</span>
+  {{ end }}
+  <div class="req-body">
+    {{ if $req.path }}
+      <div class="req-actions">
+        <a
+          class="copy-link-btn"
+          href="#{{ $req.path }}"
+          aria-label="Copy link to requirement {{ $req.path }}"
+          title="Copy link to requirement {{ $req.path }}">
+          <span aria-hidden="true">🔗</span>
+          <span class="visually-hidden"
+            >Copy link to requirement {{ $req.path }}</span
+          >
         </a>
-      {{ end }}
-    {{ end }}
-  {{ end }}
-  <div class="req-text">{{ $req.text | markdownify }}</div>
-
-  {{ if $req.subrequirements }}
-    {{/* Determine list type based on first child */}}
-    {{ $first := index $req.subrequirements 0 }}
-    {{ $firstId := $first.req_id }}
-    {{ $isOption := $first.is_option }}
-    {{ $isNumeric := or (eq $firstId "1") (eq $firstId "2") (eq $firstId "3") }}
-    <ol
-      class="subrequirements {{ if $isOption }}
-        options
-      {{ else if $isNumeric }}
-        numeric
-      {{ else }}
-        alpha
-      {{ end }}">
-      {{ range $req.subrequirements }}
-        {{/* Recursively render nested requirements, passing badge_name through */}}
-        {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
-      {{ end }}
-    </ol>
-  {{ end }}
-
-  {{ if and $req.resources (not $hideResources) }}
-    <div class="resources">
-      <strong>Resources:</strong>
-      <ul>
-        {{ range $req.resources }}
-          <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+        {{ if $guide }}
+          {{ $guideSlug := printf "req%s" (replace $req.path "." "") }}
+          {{ $guidePage := $guide.GetPage $guideSlug }}
+          {{ if $guidePage }}
+            <a class="guide-link-btn" href="{{ $guidePage.RelPermalink }}" title="Study guide for this requirement">
+              <span aria-hidden="true">📖</span>
+              <span class="visually-hidden">Open study guide for requirement {{ $req.path }}</span>
+            </a>
+          {{ end }}
         {{ end }}
-      </ul>
-    </div>
-  {{ end }}
+      </div>
+    {{ end }}
+    <div class="req-text">{{ $req.text | markdownify }}</div>
+
+    {{ if $req.subrequirements }}
+      {{/* Determine list type based on first child */}}
+      {{ $first := index $req.subrequirements 0 }}
+      {{ $firstId := $first.req_id }}
+      {{ $isOption := $first.is_option }}
+      {{ $isNumeric := or (eq $firstId "1") (eq $firstId "2") (eq $firstId "3") }}
+      <ol
+        class="subrequirements {{ if $isOption }}
+          options
+        {{ else if $isNumeric }}
+          numeric
+        {{ else }}
+          alpha
+        {{ end }}">
+        {{ range $req.subrequirements }}
+          {{/* Recursively render nested requirements, passing badge_name through */}}
+          {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
+        {{ end }}
+      </ol>
+    {{ end }}
+
+    {{ if and $req.resources (not $hideResources) }}
+      <div class="resources">
+        <strong>Resources:</strong>
+        <ul>
+          {{ range $req.resources }}
+            <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
 </li>
