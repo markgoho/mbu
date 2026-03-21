@@ -32,6 +32,10 @@
     "eagle_required": {
       "type": "boolean"
     },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
     "eagle_group": {
       "type": "string",
       "minLength": 1

@@ -14,6 +14,7 @@ export interface MeritBadge {
   slug: string;
   url: string;
   eagle_required: boolean;
+  category: string;
   eagle_group?: string;
   discontinued?: boolean;
   discontinued_date?: string;
@@ -26,6 +27,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "american-business",
     url: "https://www.scouting.org/merit-badges/american-business/",
     eagle_required: false,
+    category: "Business and Industry",
   },
   {
     id: 2,
@@ -33,6 +35,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "american-cultures",
     url: "https://www.scouting.org/merit-badges/american-cultures/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 3,
@@ -40,6 +43,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "american-heritage",
     url: "https://www.scouting.org/merit-badges/american-heritage/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 4,
@@ -47,6 +51,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "american-labor",
     url: "https://www.scouting.org/merit-badges/american-labor/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 5,
@@ -54,6 +59,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "animal-science",
     url: "https://www.scouting.org/merit-badges/animal-science/",
     eagle_required: false,
+    category: "Agribusiness",
   },
   {
     id: 6,
@@ -61,6 +67,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "animation",
     url: "https://www.scouting.org/merit-badges/animation/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 7,
@@ -68,6 +75,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "archaeology",
     url: "https://www.scouting.org/merit-badges/archaeology/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 8,
@@ -75,6 +83,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "archery",
     url: "https://www.scouting.org/merit-badges/archery/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 9,
@@ -82,6 +91,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "architecture",
     url: "https://www.scouting.org/merit-badges/architecture/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 10,
@@ -89,6 +99,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "art",
     url: "https://www.scouting.org/merit-badges/art/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 11,
@@ -96,6 +107,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "artificial-intelligence",
     url: "https://www.scouting.org/merit-badges/artificial-intelligence/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 12,
@@ -103,6 +115,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "astronomy",
     url: "https://www.scouting.org/merit-badges/astronomy/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 13,
@@ -110,6 +123,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "athletics",
     url: "https://www.scouting.org/merit-badges/athletics/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 14,
@@ -117,6 +131,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "automotive-maintenance",
     url: "https://www.scouting.org/merit-badges/automotive-maintenance/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 15,
@@ -124,6 +139,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "aviation",
     url: "https://www.scouting.org/merit-badges/aviation/",
     eagle_required: false,
+    category: "Transportation",
   },
   {
     id: 16,
@@ -131,6 +147,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "backpacking",
     url: "https://www.scouting.org/merit-badges/backpacking/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 17,
@@ -138,6 +155,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "basketry",
     url: "https://www.scouting.org/merit-badges/basketry/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 18,
@@ -145,6 +163,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "bird-study",
     url: "https://www.scouting.org/merit-badges/bird-study/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 19,
@@ -152,6 +171,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "bugling",
     url: "https://www.scouting.org/merit-badges/bugling/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 20,
@@ -159,6 +179,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "camping",
     url: "https://www.scouting.org/merit-badges/camping/",
     eagle_required: true,
+    category: "Hobbies",
   },
   {
     id: 21,
@@ -166,6 +187,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "canoeing",
     url: "https://www.scouting.org/merit-badges/canoeing/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 22,
@@ -173,6 +195,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "chemistry",
     url: "https://www.scouting.org/merit-badges/chemistry/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 23,
@@ -180,6 +203,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "chess",
     url: "https://www.scouting.org/merit-badges/chess/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 24,
@@ -187,6 +211,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "citizenship-in-society",
     url: "https://www.scouting.org/merit-badges/citizenship-in-society/",
     eagle_required: false,
+    category: "Personal Development",
     discontinued: true,
     discontinued_date: "2026-02-27",
   },
@@ -196,6 +221,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "citizenship-in-the-community",
     url: "https://www.scouting.org/merit-badges/citizenship-in-the-community/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 26,
@@ -203,6 +229,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "citizenship-in-the-nation",
     url: "https://www.scouting.org/merit-badges/citizenship-in-the-nation/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 27,
@@ -210,6 +237,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "citizenship-in-the-world",
     url: "https://www.scouting.org/merit-badges/citizenship-in-the-world/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 28,
@@ -217,6 +245,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "climbing",
     url: "https://www.scouting.org/merit-badges/climbing/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 29,
@@ -224,6 +253,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "coin-collecting",
     url: "https://www.scouting.org/merit-badges/coin-collecting/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 30,
@@ -231,6 +261,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "collections",
     url: "https://www.scouting.org/merit-badges/collections/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 31,
@@ -238,6 +269,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "communication",
     url: "https://www.scouting.org/merit-badges/communication/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 32,
@@ -245,6 +277,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "composite-materials",
     url: "https://www.scouting.org/merit-badges/composite-materials/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 33,
@@ -252,6 +285,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "cooking",
     url: "https://www.scouting.org/merit-badges/cooking/",
     eagle_required: true,
+    category: "Hobbies",
   },
   {
     id: 34,
@@ -259,6 +293,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "crime-prevention",
     url: "https://www.scouting.org/merit-badges/crime-prevention/",
     eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 35,
@@ -266,6 +301,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "cybersecurity",
     url: "https://www.scouting.org/merit-badges/cybersecurity/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 36,
@@ -273,6 +309,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "cycling",
     url: "https://www.scouting.org/merit-badges/cycling/",
     eagle_required: true,
+    category: "Sports",
     eagle_group: "fitness",
   },
   {
@@ -281,6 +318,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "dentistry",
     url: "https://www.scouting.org/merit-badges/dentistry/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 38,
@@ -288,6 +326,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "digital-technology",
     url: "https://www.scouting.org/merit-badges/digital-technology/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 39,
@@ -295,6 +334,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "disabilities-awareness",
     url: "https://www.scouting.org/merit-badges/disabilities-awareness/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 40,
@@ -302,6 +342,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "dog-care",
     url: "https://www.scouting.org/merit-badges/dog-care/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 41,
@@ -309,6 +350,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "drafting",
     url: "https://www.scouting.org/merit-badges/drafting/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 42,
@@ -316,6 +358,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "electricity",
     url: "https://www.scouting.org/merit-badges/electricity/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 43,
@@ -323,6 +366,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "electronics",
     url: "https://www.scouting.org/merit-badges/electronics/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 44,
@@ -330,6 +374,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "emergency-preparedness",
     url: "https://www.scouting.org/merit-badges/emergency-preparedness/",
     eagle_required: true,
+    category: "Public Service",
     eagle_group: "emergency",
   },
   {
@@ -338,6 +383,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "energy",
     url: "https://www.scouting.org/merit-badges/energy/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 46,
@@ -345,6 +391,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "engineering",
     url: "https://www.scouting.org/merit-badges/engineering/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 47,
@@ -352,6 +399,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "entrepreneurship",
     url: "https://www.scouting.org/merit-badges/entrepreneurship/",
     eagle_required: false,
+    category: "Business and Industry",
   },
   {
     id: 48,
@@ -359,6 +407,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "environmental-science",
     url: "https://www.scouting.org/merit-badges/environmental-science/",
     eagle_required: true,
+    category: "Conservation",
     eagle_group: "environment",
   },
   {
@@ -367,6 +416,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "exploration",
     url: "https://www.scouting.org/merit-badges/exploration/",
     eagle_required: false,
+    category: "Business and Industry",
   },
   {
     id: 50,
@@ -374,6 +424,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "family-life",
     url: "https://www.scouting.org/merit-badges/family-life/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 51,
@@ -381,6 +432,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "farm-mechanics",
     url: "https://www.scouting.org/merit-badges/farm-mechanics/",
     eagle_required: false,
+    category: "Agribusiness",
   },
   {
     id: 52,
@@ -388,6 +440,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "fingerprinting",
     url: "https://www.scouting.org/merit-badges/fingerprinting/",
     eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 53,
@@ -395,6 +448,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "fire-safety",
     url: "https://www.scouting.org/merit-badges/fire-safety/",
     eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 54,
@@ -402,6 +456,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "first-aid",
     url: "https://www.scouting.org/merit-badges/first-aid/",
     eagle_required: true,
+    category: "Public Service",
   },
   {
     id: 55,
@@ -409,6 +464,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "fish-and-wildlife-management",
     url: "https://www.scouting.org/merit-badges/fish-wildlife-management/",
     eagle_required: false,
+    category: "Conservation",
   },
   {
     id: 56,
@@ -416,6 +472,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "fishing",
     url: "https://www.scouting.org/merit-badges/fishing/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 57,
@@ -423,6 +480,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "fly-fishing",
     url: "https://www.scouting.org/merit-badges/fly-fishing/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 58,
@@ -430,6 +488,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "forestry",
     url: "https://www.scouting.org/merit-badges/forestry/",
     eagle_required: false,
+    category: "Conservation",
   },
   {
     id: 59,
@@ -437,6 +496,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "game-design",
     url: "https://www.scouting.org/merit-badges/game-design/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 60,
@@ -444,6 +504,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "gardening",
     url: "https://www.scouting.org/merit-badges/gardening/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 61,
@@ -451,6 +512,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "genealogy",
     url: "https://www.scouting.org/merit-badges/genealogy/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 62,
@@ -458,6 +520,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "geocaching",
     url: "https://www.scouting.org/merit-badges/geocaching/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 63,
@@ -465,6 +528,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "geology",
     url: "https://www.scouting.org/merit-badges/geology/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 64,
@@ -472,6 +536,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "golf",
     url: "https://www.scouting.org/merit-badges/golf/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 65,
@@ -479,6 +544,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "graphic-arts",
     url: "https://www.scouting.org/merit-badges/graphic-arts/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 66,
@@ -486,6 +552,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "health-care-professions",
     url: "https://www.scouting.org/merit-badges/health-care-professions/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 67,
@@ -493,6 +560,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "hiking",
     url: "https://www.scouting.org/merit-badges/hiking/",
     eagle_required: true,
+    category: "Hobbies",
     eagle_group: "fitness",
   },
   {
@@ -501,6 +569,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "home-repairs",
     url: "https://www.scouting.org/merit-badges/home-repairs/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 69,
@@ -508,6 +577,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "horsemanship",
     url: "https://www.scouting.org/merit-badges/horsemanship/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 70,
@@ -515,6 +585,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "indian-lore",
     url: "https://www.scouting.org/merit-badges/indian-lore/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 71,
@@ -522,6 +593,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "insect-study",
     url: "https://www.scouting.org/merit-badges/insect-study/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 72,
@@ -529,6 +601,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "inventing",
     url: "https://www.scouting.org/merit-badges/inventing/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 73,
@@ -536,6 +609,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "journalism",
     url: "https://www.scouting.org/merit-badges/journalism/",
     eagle_required: false,
+    category: "Communications",
   },
   {
     id: 74,
@@ -543,6 +617,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "kayaking",
     url: "https://www.scouting.org/merit-badges/kayaking/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 75,
@@ -550,6 +625,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "landscape-architecture",
     url: "https://www.scouting.org/merit-badges/landscape-architecture/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 76,
@@ -557,6 +633,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "law",
     url: "https://www.scouting.org/merit-badges/law/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 77,
@@ -564,6 +641,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "leatherwork",
     url: "https://www.scouting.org/merit-badges/leatherwork/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 78,
@@ -571,6 +649,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "lifesaving",
     url: "https://www.scouting.org/merit-badges/lifesaving/",
     eagle_required: true,
+    category: "Public Service",
     eagle_group: "emergency",
   },
   {
@@ -579,6 +658,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "mammal-study",
     url: "https://www.scouting.org/merit-badges/mammal-study/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 80,
@@ -586,6 +666,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "metalwork",
     url: "https://www.scouting.org/merit-badges/metalwork/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 81,
@@ -593,6 +674,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "mining-in-society",
     url: "https://www.scouting.org/merit-badges/mining-in-society/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 82,
@@ -600,6 +682,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "model-design-and-building",
     url: "https://www.scouting.org/merit-badges/model-design-and-building/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 83,
@@ -607,6 +690,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "motorboating",
     url: "https://www.scouting.org/merit-badges/motorboating/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 84,
@@ -614,6 +698,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "moviemaking",
     url: "https://www.scouting.org/merit-badges/moviemaking/",
     eagle_required: false,
+    category: "Communications",
   },
   {
     id: 85,
@@ -621,6 +706,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "multisport",
     url: "https://www.scouting.org/merit-badges/multisport/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 86,
@@ -628,6 +714,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "music",
     url: "https://www.scouting.org/merit-badges/music/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 87,
@@ -635,6 +722,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "nature",
     url: "https://www.scouting.org/merit-badges/nature/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 88,
@@ -642,6 +730,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "nuclear-science",
     url: "https://www.scouting.org/merit-badges/nuclear-science/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 89,
@@ -649,6 +738,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "oceanography",
     url: "https://www.scouting.org/merit-badges/oceanography/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 90,
@@ -656,6 +746,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "orienteering",
     url: "https://www.scouting.org/merit-badges/orienteering/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 91,
@@ -663,6 +754,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "painting",
     url: "https://www.scouting.org/merit-badges/painting/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 92,
@@ -670,6 +762,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "personal-fitness",
     url: "https://www.scouting.org/merit-badges/personal-fitness/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 93,
@@ -677,6 +770,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "personal-management",
     url: "https://www.scouting.org/merit-badges/personal-management/",
     eagle_required: true,
+    category: "Personal Development",
   },
   {
     id: 94,
@@ -684,6 +778,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "pets",
     url: "https://www.scouting.org/merit-badges/pets/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 95,
@@ -691,6 +786,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "photography",
     url: "https://www.scouting.org/merit-badges/photography/",
     eagle_required: false,
+    category: "Communications",
   },
   {
     id: 96,
@@ -698,6 +794,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "pioneering",
     url: "https://www.scouting.org/merit-badges/pioneering/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 97,
@@ -705,6 +802,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "plant-science",
     url: "https://www.scouting.org/merit-badges/plant-science/",
     eagle_required: false,
+    category: "Agribusiness",
   },
   {
     id: 98,
@@ -712,6 +810,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "plumbing",
     url: "https://www.scouting.org/merit-badges/plumbing/",
     eagle_required: false,
+    category: "Trades",
   },
   {
     id: 99,
@@ -719,6 +818,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "pottery",
     url: "https://www.scouting.org/merit-badges/pottery/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 100,
@@ -726,6 +826,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "programming",
     url: "https://www.scouting.org/merit-badges/programming/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 101,
@@ -733,6 +834,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "public-health",
     url: "https://www.scouting.org/merit-badges/public-health/",
     eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 102,
@@ -740,6 +842,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "public-speaking",
     url: "https://www.scouting.org/merit-badges/public-speaking/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 103,
@@ -747,6 +850,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "pulp-and-paper",
     url: "https://www.scouting.org/merit-badges/pulp-and-paper/",
     eagle_required: false,
+    category: "Business and Industry",
   },
   {
     id: 104,
@@ -754,6 +858,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "radio",
     url: "https://www.scouting.org/merit-badges/radio/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 105,
@@ -761,6 +866,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "railroading",
     url: "https://www.scouting.org/merit-badges/railroading/",
     eagle_required: false,
+    category: "Transportation",
   },
   {
     id: 106,
@@ -768,6 +874,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "reading",
     url: "https://www.scouting.org/merit-badges/reading/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 107,
@@ -775,6 +882,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "reptile-and-amphibian-study",
     url: "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 108,
@@ -782,6 +890,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "rifle-shooting",
     url: "https://www.scouting.org/merit-badges/rifle-shooting/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 109,
@@ -789,6 +898,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "robotics",
     url: "https://www.scouting.org/merit-badges/robotics/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 110,
@@ -796,6 +906,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "rowing",
     url: "https://www.scouting.org/merit-badges/rowing/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 111,
@@ -803,6 +914,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "safety",
     url: "https://www.scouting.org/merit-badges/safety/",
     eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 112,
@@ -810,6 +922,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "salesmanship",
     url: "https://www.scouting.org/merit-badges/salesmanship/",
     eagle_required: false,
+    category: "Business and Industry",
   },
   {
     id: 113,
@@ -817,6 +930,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "scholarship",
     url: "https://www.scouting.org/merit-badges/scholarship/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 114,
@@ -824,6 +938,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "scouting-heritage",
     url: "https://www.scouting.org/merit-badges/scouting-heritage/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 115,
@@ -831,6 +946,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "scuba-diving",
     url: "https://www.scouting.org/merit-badges/scuba-diving/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 116,
@@ -838,6 +954,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "sculpture",
     url: "https://www.scouting.org/merit-badges/sculpture/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 117,
@@ -845,6 +962,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "search-and-rescue",
     url: "https://www.scouting.org/merit-badges/search-and-rescue/",
     eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 118,
@@ -852,6 +970,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "shotgun-shooting",
     url: "https://www.scouting.org/merit-badges/shotgun-shooting/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 119,
@@ -859,6 +978,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "signs-signals-and-codes",
     url: "https://www.scouting.org/merit-badges/signs-signals-and-codes/",
     eagle_required: false,
+    category: "Communications",
   },
   {
     id: 120,
@@ -866,6 +986,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "skating",
     url: "https://www.scouting.org/merit-badges/skating/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 121,
@@ -873,6 +994,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "small-boat-sailing",
     url: "https://www.scouting.org/merit-badges/small-boat-sailing/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 122,
@@ -880,6 +1002,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "snow-sports",
     url: "https://www.scouting.org/merit-badges/snow-sports/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 123,
@@ -887,6 +1010,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "soil-and-water-conservation",
     url: "https://www.scouting.org/merit-badges/soil-and-water-conservation/",
     eagle_required: false,
+    category: "Conservation",
   },
   {
     id: 124,
@@ -894,6 +1018,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "space-exploration",
     url: "https://www.scouting.org/merit-badges/space-exploration/",
     eagle_required: false,
+    category: "Physical Science",
   },
   {
     id: 125,
@@ -901,6 +1026,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "sports",
     url: "https://www.scouting.org/merit-badges/sports/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 126,
@@ -908,6 +1034,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "stamp-collecting",
     url: "https://www.scouting.org/merit-badges/stamp-collecting/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 127,
@@ -915,6 +1042,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "surveying",
     url: "https://www.scouting.org/merit-badges/surveying/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 128,
@@ -922,6 +1050,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "sustainability",
     url: "https://www.scouting.org/merit-badges/sustainability/",
     eagle_required: true,
+    category: "Conservation",
     eagle_group: "environment",
   },
   {
@@ -930,6 +1059,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "swimming",
     url: "https://www.scouting.org/merit-badges/swimming/",
     eagle_required: true,
+    category: "Sports",
     eagle_group: "fitness",
   },
   {
@@ -938,6 +1068,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "textile",
     url: "https://www.scouting.org/merit-badges/textile/",
     eagle_required: false,
+    category: "Business and Industry",
   },
   {
     id: 131,
@@ -945,6 +1076,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "theater",
     url: "https://www.scouting.org/merit-badges/theater/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 132,
@@ -952,6 +1084,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "traffic-safety",
     url: "https://www.scouting.org/merit-badges/traffic-safety/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 133,
@@ -959,6 +1092,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "truck-transportation",
     url: "https://www.scouting.org/merit-badges/truck-transportation/",
     eagle_required: false,
+    category: "Transportation",
   },
   {
     id: 134,
@@ -966,6 +1100,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "veterinary-medicine",
     url: "https://www.scouting.org/merit-badges/veterinary-medicine/",
     eagle_required: false,
+    category: "Professions",
   },
   {
     id: 135,
@@ -973,6 +1108,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "water-sports",
     url: "https://www.scouting.org/merit-badges/water-sports/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 136,
@@ -980,6 +1116,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "weather",
     url: "https://www.scouting.org/merit-badges/weather/",
     eagle_required: false,
+    category: "Natural Science",
   },
   {
     id: 137,
@@ -987,6 +1124,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "welding",
     url: "https://www.scouting.org/merit-badges/welding/",
     eagle_required: false,
+    category: "Hobbies",
   },
   {
     id: 138,
@@ -994,6 +1132,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "whitewater",
     url: "https://www.scouting.org/merit-badges/whitewater/",
     eagle_required: false,
+    category: "Sports",
   },
   {
     id: 139,
@@ -1001,6 +1140,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "wilderness-survival",
     url: "https://www.scouting.org/merit-badges/wilderness-survival/",
     eagle_required: false,
+    category: "Personal Development",
   },
   {
     id: 140,
@@ -1008,6 +1148,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "wood-carving",
     url: "https://www.scouting.org/merit-badges/wood-carving/",
     eagle_required: false,
+    category: "Arts and Crafts",
   },
   {
     id: 141,
@@ -1015,6 +1156,7 @@ export const MERIT_BADGES: MeritBadge[] = [
     slug: "woodwork",
     url: "https://www.scouting.org/merit-badges/woodwork/",
     eagle_required: false,
+    category: "Professions",
   },
 ];
 

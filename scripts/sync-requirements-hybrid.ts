@@ -58,6 +58,7 @@ interface BadgeData {
   slug: string;
   url: string;
   eagle_required?: boolean;
+  category?: string;
   eagle_group?: string;
   discontinued?: boolean;
   discontinued_date?: string;
@@ -854,6 +855,7 @@ try {
     slug: badge.slug,
     url: badge.url,
     eagle_required: badge.eagle_required,
+    category: badge.category,
     ...(badge.eagle_group !== undefined && { eagle_group: badge.eagle_group }),
     ...(badge.discontinued === true && { discontinued: badge.discontinued }),
     ...(badge.discontinued_date !== undefined && {

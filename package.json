@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "sync:badges": "bun scripts/sync-requirements-hybrid.ts",
+    "patch:categories": "bun scripts/patch-categories.ts",
+    "patch:frontmatter-categories": "bun scripts/patch-frontmatter-categories.ts",
     "add:schema": "bun scripts/add-schema-property.ts",
     "detect:links": "bun scripts/detect-related-badges.ts",
     "build:local": "rm -rf hugo/public && cd hugo && hugo && bun run index",
