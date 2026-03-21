@@ -37,8 +37,6 @@ hugo/public
 hugo/resources
 .playwright-mcp
 
-# Badge relationship reports (ephemeral, regenerated on each run)
-reports/
 
 firebase-*.log
 .playwright/
