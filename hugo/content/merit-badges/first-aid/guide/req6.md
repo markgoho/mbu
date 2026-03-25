@@ -112,6 +112,8 @@ Many Scouts with diabetes carry juice boxes or glucose tablets specifically for 
 - Do NOT put anything in their mouth — the "swallowing their tongue" belief is a myth
 - Do NOT give water or food until fully conscious
 
+{{< drg/image src="images/recovery-position-body-alignment.avif" alt="Side-view recovery position showing bent top knee, lower arm extended, upper hand supporting the cheek, and airway-open head position" >}}
+
 **When to call 911:**
 - Seizure lasts more than 5 minutes
 - No return to consciousness between seizures

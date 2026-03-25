@@ -126,6 +126,8 @@ CPR is performed when a person is in **cardiac arrest** — meaning their heart 
 - 30 chest compressions followed by 2 rescue breaths (tilt the head, lift the chin, seal the mouth, breathe in over 1 second, watch for chest rise).
 - Continue the 30:2 cycle.
 
+{{< drg/image src="images/cpr-hand-placement-compression-depth.avif" alt="Two-panel CPR diagram showing correct hand placement on the lower half of the sternum and about 2 inches of chest compression depth with full recoil" >}}
+
 **For infants (under 1 year):** Use two fingers on the center of the chest; compress about 1.5 inches; 30:2 ratio.
 
 **For children (1 year through puberty):** Use one or two hands depending on the child's size; compress about 2 inches; 30:2 ratio.
@@ -159,6 +161,8 @@ Bystander CPR doubles or triples survival rates for cardiac arrest. Despite this
 5. **Resume CPR immediately** after the shock, or as directed by the AED.
 
 **The key takeaway:** Don't delay CPR waiting for an AED. But when an AED is available, use it as soon as possible — defibrillation within the first few minutes dramatically increases survival.
+
+{{< drg/image src="images/aed-pad-placement-chest.avif" alt="Front-view chest diagram showing standard AED pad placement on the upper right chest and lower left side" >}}
 
 {{< drg/video
     title="Using an AED"

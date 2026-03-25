@@ -157,6 +157,8 @@ Putting on gloves is easy. Taking them off safely is a skill:
 
 Never touch your face or any clean surface with used gloves.
 
+{{< drg/image src="images/glove-removal-sequence.avif" alt="Four-step safe glove removal sequence showing inside-out technique and finger placement" >}}
+
 ### After Care
 
 - Wash your hands thoroughly with soap and water for at least 20 seconds immediately after removing gloves.

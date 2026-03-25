@@ -99,6 +99,8 @@ A femur fracture is one of the most serious orthopedic injuries. As discussed in
 5. Check distal PSM after.
 6. A femur fracture patient should be evacuated as a priority — this injury requires hospital care.
 
+{{< drg/image src="images/femur-splint-improvised-layout.avif" alt="Top-down diagram showing improvised femur splint layout with outer and inner rigid supports and key tie points" >}}
+
 {{< drg/safety-first >}}
 A femur fracture patient may be in or developing shock. Monitor for pale, cool skin, rapid weak pulse, and confusion. Keep them warm with a sleeping bag or emergency blanket. Do not delay transport while perfecting the splint.
 {{< /drg/safety-first >}}

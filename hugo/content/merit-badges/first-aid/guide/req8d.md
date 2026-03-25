@@ -53,6 +53,8 @@ After any sling, check the fingers for:
 
 If circulation is impaired, loosen the sling immediately.
 
+{{< drg/image src="images/arm-sling-triangular-bandage.avif" alt="Three-panel triangular bandage diagram showing standard sling setup, completed sling, and elevation sling for collarbone injury" >}}
+
 {{< drg/video
     title="Bandages for Sprained Ankle, Head, Upper Arm, Collarbone"
     url="https://youtu.be/ybpr7nCelK0?si=2SjPp8f4iMAzfVBv" >}}
@@ -78,6 +80,8 @@ Ankle wrapping supports the joint, limits excessive movement, and reduces swelli
 ### Cravat Bandage for Ankle
 
 A cravat is a triangular bandage folded lengthwise to form a strip. It can be used as a figure-8 wrap for the ankle in the same manner as the elastic wrap above.
+
+{{< drg/image src="images/ankle-figure-eight-wrap-sequence.avif" alt="Four-step ankle wrapping sequence showing the figure-eight path from the ball of the foot across the ankle and up the lower leg" >}}
 
 **Field tip:** If no elastic bandage is available, a clothing strip, rolled sock, or bandana can be used as an improvised cravat.
 

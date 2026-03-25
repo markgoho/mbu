@@ -27,6 +27,8 @@ For strains and mild muscle tears, the foundational first aid is **RICE:**
 
 Some guidelines now use **POLICE** (Protection, Optimal Loading, Ice, Compression, Elevation) to emphasize that some gentle movement during recovery promotes healing — but rest is still appropriate in the acute phase (first 24–48 hours).
 
+{{< drg/image src="images/rice-elevation-and-compression.avif" alt="Correct versus incorrect ankle injury setup showing above-heart elevation, cloth-wrapped ice, and light compression compared with a poor setup" >}}
+
 ---
 
 ## Muscle Strain

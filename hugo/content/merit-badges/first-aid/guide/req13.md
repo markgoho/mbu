@@ -205,6 +205,8 @@ The FAST acronym is the standard public recognition tool:
 
 **Other stroke signs:** Sudden severe headache with no known cause ("the worst headache of my life" — a classic sign of hemorrhagic stroke); sudden vision loss or double vision in one or both eyes; sudden loss of coordination or balance; sudden confusion.
 
+{{< drg/image src="images/stroke-fast-checks.avif" alt="Four-panel FAST stroke recognition image showing face droop, arm drift, slurred speech, and urgent time to call emergency services" >}}
+
 **First aid:**
 1. Call 911 immediately — stroke is a time-critical emergency. Note what time symptoms started.
 2. Keep the person calm and lying down.

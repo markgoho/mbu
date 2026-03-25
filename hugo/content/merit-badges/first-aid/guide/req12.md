@@ -101,6 +101,8 @@ Choose three scenarios you've actually experienced (or could plausibly face) and
 
 **Grounding:** When panic or anxiety is overwhelming, anchor yourself to the present moment. Identify 5 things you can see; 4 things you can touch; 3 things you can hear. This interrupts the anxious thought loop.
 
+{{< drg/image src="images/box-breathing-cycle.avif" alt="Square breathing cycle diagram showing inhale 4, hold 4, exhale 4, hold 4 in a repeating loop" >}}
+
 ### Supporting Someone Else
 
 When a fellow Scout is overwhelmed:

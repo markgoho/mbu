@@ -38,6 +38,8 @@ Uncontrolled bleeding is one of the most preventable causes of death in traumati
 4. Hold continuous pressure for 10–15 minutes without releasing to check.
 5. Apply a cold compress to the bridge of the nose.
 
+{{< drg/image src="images/nosebleed-correct-lean.avif" alt="Side-by-side comparison of the wrong head-back posture and the correct slight-forward lean while pinching the soft part of the nose" >}}
+
 **When to seek care:**
 - Bleeding doesn't stop after 20–30 minutes of direct pressure
 - Caused by a head injury
@@ -135,6 +137,8 @@ Use a tourniquet when:
 - As a first response before trying direct pressure (unless bleeding is catastrophically severe, like amputation)
 - On neck, chest, or abdominal wounds (only for extremities)
 - Over a joint (knee or elbow)
+
+{{< drg/image src="images/tourniquet-placement-zones.avif" alt="Diagram showing correct tourniquet placement 2 to 3 inches above a limb wound, no-go zones over joints, and labeled tourniquet parts" >}}
 
 ### Benefits
 

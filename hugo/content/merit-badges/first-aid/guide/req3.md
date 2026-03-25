@@ -120,6 +120,8 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** wash the area; remove ticks with tweezers pulled straight out.
 - **Prevention:** repellent, long clothing, and tick checks.
 
+{{< drg/image src="images/tick-removal-technique.avif" alt="Close-up of correct tick removal with fine-tipped tweezers grasping close to the skin and pulling straight upward" >}}
+
 ## Bee stings
 
 {{< drg/inherited-requirement number="3m" req_path="3.m" topic="Bee stings" />}}

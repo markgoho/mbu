@@ -26,6 +26,8 @@ Every hike, climb, and game of capture-the-flag carries a chance of injuring a m
 
 Understanding which of these is injured helps you understand the mechanism, the severity, and the care required.
 
+{{< drg/image src="images/injury-tissue-map.avif" alt="Joint-region anatomy map showing bone, ligament, tendon, muscle, and joint surfaces with callouts linking each injury type to the tissue involved" >}}
+
 ## Soft Tissue Injuries (Muscles and Tendons)
 
 ### Strain

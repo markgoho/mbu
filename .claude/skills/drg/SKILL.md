@@ -219,6 +219,39 @@ Apply this when **all** of these are true:
 
 Do **not** force this pattern onto every badge. If the child requirement already contains full operative text, or if the parent action does not split cleanly into reusable buckets, write normal prose instead.
 
+### Image Hint Handoff
+
+`drg` owns scaffold and content generation. It does **not** own `images.json`, image generation, AVIF conversion, or shortcode replacement. Those stay in `drg-images`.
+
+When a page would benefit from a future image, leave an inline HTML comment placeholder as the handoff to `drg-images`:
+
+```markdown
+<!-- IMAGE: tick-removal-technique.png | Close-up of correct tick removal with tweezers near the skin | style:annotated-photo | verb:show -->
+```
+
+Supported placeholder parts:
+
+- `<!-- IMAGE: {id}.png | {alt/scene description} -->` — base format
+- `style:{style}` — optional visual-format hint for `drg-images`
+- `verb:{family}` — optional operative-verb hint for `drg-images`
+
+Keep the vocabulary closed and simple. Use only these verb families when the requirement structure makes the operative action clear enough to help image planning:
+
+- `show` — for show / demonstrate actions
+- `describe` — for describe / explain actions
+- `identify` — for identify / list / recognize actions
+- `create` — for create / plan / build actions
+
+Add `verb:` only when it is genuinely useful. Good cases include inherited-action patterns where the parent requirement provides the verbs and the child requirement is only a topic label. For example, a first-aid child page derived from “Describe the symptoms and signs of, show first aid for, and explain prevention of…” may justify image hints like `verb:show` for technique-focused visuals or `verb:describe` for labeled diagrams.
+
+Do **not** add `verb:` when:
+
+- the child requirement already has its own full operative wording
+- the operative action is ambiguous or mixed in a way that would not guide image choice
+- the page does not actually need an image
+
+`verb:` is a hint, not a command. It exists only to help `drg-images` make better image-value and prompt decisions later. Existing placeholders without `style:` or `verb:` remain valid.
+
 ### "Choose One" Requirements
 
 Any requirement whose `subrequirement_mode` has `"type": "select"` in `data.json` always gets a dedicated **overview page** (`req{N}.md`) in addition to individual pages for each option. The overview page is what a Scout reads _before_ choosing — it is not a table of contents stub, it is genuine decision-support content.
@@ -520,6 +553,16 @@ Use `drg/be-prepared` for **scenario-based problem-solving** — situations the 
     title="Video Title"
     url="https://www.youtube.com/watch?v=..." */>}}
 ```
+
+For image planning handoff, use HTML comment placeholders inline with the supporting content:
+
+```markdown
+<!-- IMAGE: filename-id.png | Alt text or scene description -->
+<!-- IMAGE: compass-parts-labeled.png | Baseplate compass with all major parts labeled | style:diagram -->
+<!-- IMAGE: tick-removal-technique.png | Close-up of correct tick removal with tweezers near the skin | style:annotated-photo | verb:show -->
+```
+
+Only use `verb:` with the closed verb-family vocabulary documented in **Image Hint Handoff** above.
 
 **IMPORTANT:** YouTube videos should use the `drg/video` shortcode, which embeds the video player directly on the page. However, if a video has embedding disabled by its uploader (shows "Video unavailable" when embedded), use `drg/external-link` instead so users can still click through to watch it on YouTube. Reserve `drg/external-link` for non-video resources (websites, articles, tools, organizations) and for YouTube videos with embedding disabled.
 

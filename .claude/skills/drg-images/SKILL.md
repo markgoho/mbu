@@ -88,9 +88,50 @@ During content writing (in the `drg` skill), HTML comment placeholders are used 
 ```markdown
 <!-- IMAGE: filename-id.png | Alt text description -->
 <!-- IMAGE: compass-parts-labeled.png | Baseplate compass with all parts labeled | style:diagram -->
+<!-- IMAGE: tick-removal-technique.png | Close-up of correct tick removal with tweezers near the skin | style:annotated-photo | verb:show -->
 ```
 
+Supported hint tokens:
+
+- `style:{style}` — optional visual-format override
+- `verb:{family}` — optional verb-family hint from `drg`
+
 The optional `style:` hint indicates which image generation style to use (see Image Style Selection below). If omitted, the image defaults to `photo` style.
+
+The optional `verb:` hint carries forward the operative requirement family already inferred during content writing. Use it as guidance for image-value decisions and prompt framing, not as a command to force an image.
+
+Supported verb families:
+
+- `show` — show / demonstrate; `demonstrate` usually points toward photographic, step-wise instructional imagery rather than a static abstract diagram
+- `describe` — describe / explain
+- `identify` — identify / list / recognize
+- `create` — create / plan / build
+
+Backward compatibility is required: placeholders without `style:` or `verb:` remain fully valid.
+
+When converting placeholders into `images.json`, map `verb:{family}` to optional manifest metadata:
+
+```json
+{
+  "id": "tick-removal-technique",
+  "file": "req3a.md",
+  "style": "annotated-photo",
+  "verb_family": "show",
+  "description": "Close-up of correct tick removal with fine-tipped tweezers grasping close to the skin and pulling straight upward",
+  "value": "Shows the exact grip angle and straight-up pull direction that text alone cannot teach clearly"
+}
+```
+
+`style` remains the explicit visual-format choice. `verb_family` is additional semantic guidance that can help decide whether the image should be a diagram, comparison, annotated photo, or realistic action scene.
+
+Recommended image directions by verb family:
+
+- `show` — procedural sequences, annotated technique, comparison images; when the requirement says **demonstrate**, prefer a **photographic step-wise instructional image** that shows the action clearly in order
+- `describe` — labeled diagrams, cross-sections, structure visuals
+- `identify` — identification grids, side-by-side comparisons
+- `create` — spatial diagrams, annotated layouts, before/after visuals
+
+Use these as defaults, not rigid rules. If the image cannot pass the Image Value Test, cut it even if a `verb:` hint exists.
 
 Place each placeholder **inline with the content it supports** — directly after the paragraph that describes what the image shows. Do not group placeholders at the end of the page.
 
@@ -170,6 +211,7 @@ The manifest file lives at `hugo/content/merit-badges/{slug}/guide/images.json`.
 | `id` | Yes | Unique kebab-case identifier, becomes the filename |
 | `file` | Yes | Which `.md` file this image appears in |
 | `style` | No | Image generation style (omit for default `photo`) |
+| `verb_family` | No | Verb hint from placeholder handoff: `show`, `describe`, `identify`, or `create` |
 | `description` | Yes | Detailed scene description for AI image generator |
 | `value` | Yes | What this image teaches that text alone cannot — the justification for its existence |
 
@@ -200,12 +242,13 @@ This command may take several minutes for large guides. Let it run to completion
 
 ### Step 3: Convert to AVIF
 
-Convert all generated PNGs to AVIF format (1200px wide, quality 80), then delete source PNGs:
+Convert all generated images to AVIF format (800px wide, quality 80):
 
 ```bash
 bun run convert:drg-images -- --badge {slug}
-rm hugo/content/merit-badges/{slug}/guide/images/*.png
 ```
+
+The conversion script already prefers `.png` sources, writes `.avif` outputs, and can resize existing `.avif` files in place when needed. Do not add a manual `rm` step here.
 
 ### Step 4: Replace Placeholders with Shortcodes
 
