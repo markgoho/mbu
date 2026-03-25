@@ -34,6 +34,7 @@ type RequirementPage = {
   title: string;
   groupTitle: string;
   reqNumber: string;
+  reqPath: string;
   isSub: boolean;
   body: string;
 };
@@ -250,6 +251,7 @@ function createGroupedLeafPage({
     title: requirementTitle({ path: requirement.path }),
     groupTitle,
     reqNumber: compactRequirementNumber({ path: requirement.path }),
+    reqPath: requirement.path,
     isSub: isRequirementSubPage({ path: requirement.path }),
     body: buildGroupedLeafPageBody({ requirement }),
   };
@@ -286,7 +288,7 @@ function buildGroupedSubrequirementSection({
   return [
     `## Requirement ${compactRequirementNumber({ path: subrequirement.path })}`,
     "",
-    buildRequirementShortcodeBlock({ requirement: subrequirement }),
+    buildInheritedRequirementShortcodeBlock({ requirement: subrequirement }),
     "",
     "[PLACEHOLDER: Write the instructional body for this subrequirement.]",
     "",
@@ -313,6 +315,7 @@ function buildLeafLikePage({
     title: requirementTitle({ path: requirement.path }),
     groupTitle,
     reqNumber: compactRequirementNumber({ path: requirement.path }),
+    reqPath: requirement.path,
     isSub: isRequirementSubPage({ path: requirement.path }),
     body,
   };
@@ -649,6 +652,15 @@ function buildRequirementShortcodeBlock({
   return [openingLine, requirement.text, "{{< /drg/requirement >}}"].join("\n");
 }
 
+function buildInheritedRequirementShortcodeBlock({
+  requirement,
+}: {
+  requirement: Requirement;
+}): string {
+  const requirementNumber = compactRequirementNumber({ path: requirement.path });
+  return `{{< drg/inherited-requirement number="${requirementNumber}" req_path="${requirement.path}" topic="${escapeAttribute({ value: requirement.text })}" />}}`;
+}
+
 function buildResourceBlock({
   requirement,
 }: {
@@ -872,6 +884,7 @@ function renderPage({
 
   if (guidePage.kind === "requirement") {
     frontMatterLines.push(`req_number: \"${guidePage.reqNumber}\"`);
+    frontMatterLines.push(`req_path: \"${guidePage.reqPath}\"`);
   }
 
   if (guidePage.kind === "print") {

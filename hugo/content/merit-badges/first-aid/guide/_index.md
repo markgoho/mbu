@@ -3,8 +3,8 @@ title: "Introduction & Overview"
 layout: guide
 badge_name: "First Aid"
 group_title: "Getting Started"
-next: "/merit-badges/first-aid/guide/req1a/"
-next_title: "Req 1a — Assessing an Emergency"
+next: "/merit-badges/first-aid/guide/req1/"
+next_title: "Req 1 — Handling a First Aid Emergency"
 guide_nav:
   - group_title: "Getting Started"
     items:
@@ -12,79 +12,43 @@ guide_nav:
         url: "/merit-badges/first-aid/guide/"
   - group_title: "Handling Emergencies"
     items:
-      - title: "Req 1a — Assessing an Emergency"
-        url: "/merit-badges/first-aid/guide/req1a/"
-        is_sub: true
-      - title: "Req 1b — Getting Help"
-        url: "/merit-badges/first-aid/guide/req1b/"
-        is_sub: true
-      - title: "Req 1c — Infection Prevention"
-        url: "/merit-badges/first-aid/guide/req1c/"
-        is_sub: true
-      - title: "Req 1d — Airway & Breathing"
-        url: "/merit-badges/first-aid/guide/req1d/"
-        is_sub: true
-      - title: "Req 1e — Patient Examination"
-        url: "/merit-badges/first-aid/guide/req1e/"
-        is_sub: true
-      - title: "Req 1f — Shock & Triage"
-        url: "/merit-badges/first-aid/guide/req1f/"
-        is_sub: true
+      - title: "Req 1 — Handling a First Aid Emergency"
+        url: "/merit-badges/first-aid/guide/req1/"
+        is_sub: false
   - group_title: "Preparing for Emergencies"
     items:
-      - title: "Req 2a — Health & Medical Records"
-        url: "/merit-badges/first-aid/guide/req2a/"
-        is_sub: true
-      - title: "Req 2b — First-Aid Kits"
-        url: "/merit-badges/first-aid/guide/req2b/"
-        is_sub: true
+      - title: "Req 2 — Preparing for First Aid Emergencies"
+        url: "/merit-badges/first-aid/guide/req2/"
+        is_sub: false
   - group_title: "Wounds Without Bleeding"
     items:
-      - title: "Req 3a — Closed Wounds & Burns"
-        url: "/merit-badges/first-aid/guide/req3a/"
-        is_sub: true
-      - title: "Req 3b — Cold Injuries & Abrasions"
-        url: "/merit-badges/first-aid/guide/req3b/"
-        is_sub: true
-      - title: "Req 3c — Punctures, Plants & Stings"
-        url: "/merit-badges/first-aid/guide/req3c/"
-        is_sub: true
+      - title: "Req 3 — Wounds Without External Bleeding"
+        url: "/merit-badges/first-aid/guide/req3/"
+        is_sub: false
   - group_title: "Bleeding Wounds"
     items:
-      - title: "Req 4a — Nosebleeds & Mild Bleeding"
-        url: "/merit-badges/first-aid/guide/req4a/"
-        is_sub: true
-      - title: "Req 4b — Severe Bleeding & Tourniquets"
-        url: "/merit-badges/first-aid/guide/req4b/"
-        is_sub: true
+      - title: "Req 4 — Bleeding Wounds"
+        url: "/merit-badges/first-aid/guide/req4/"
+        is_sub: false
   - group_title: "Breathing Emergencies"
     items:
       - title: "Req 5 — Breathing Emergencies"
         url: "/merit-badges/first-aid/guide/req5/"
   - group_title: "Loss of Consciousness"
     items:
-      - title: "Req 6a — Fainting, Low Blood Sugar & Seizures"
-        url: "/merit-badges/first-aid/guide/req6a/"
-        is_sub: true
-      - title: "Req 6b — Overdose, Drowning & Electrical Shock"
-        url: "/merit-badges/first-aid/guide/req6b/"
-        is_sub: true
+      - title: "Req 6 — Loss of Consciousness"
+        url: "/merit-badges/first-aid/guide/req6/"
+        is_sub: false
   - group_title: "Heart Attack & CPR"
     items:
-      - title: "Req 7a — Heart Attacks & CPR"
-        url: "/merit-badges/first-aid/guide/req7a/"
-        is_sub: true
-      - title: "Req 7b — AEDs"
-        url: "/merit-badges/first-aid/guide/req7b/"
-        is_sub: true
+      - title: "Req 7 — Heart Attack, CPR & AEDs"
+        url: "/merit-badges/first-aid/guide/req7/"
+        is_sub: false
   - group_title: "Muscle & Bone Injuries"
     items:
-      - title: "Req 8a — Strains, Sprains & Fractures"
-        url: "/merit-badges/first-aid/guide/req8a/"
-        is_sub: true
-      - title: "Req 8b — Bandaging & Splinting"
-        url: "/merit-badges/first-aid/guide/req8b/"
-        is_sub: true
+      - title: "Req 8 — Muscle & Bone Injuries"
+        url: "/merit-badges/first-aid/guide/req8/"
+        is_sub: false
   - group_title: "Head & Spine Injuries"
     items:
       - title: "Req 9 — Head & Spine Injuries"
@@ -190,4 +154,4 @@ Now let's dive into the first requirement — learning how to assess and handle 
 {{< drg/next-page
     text="You now know why first aid matters and the different situations where you might use it."
     teaser="Learn the steps to assess and handle any first aid emergency safely."
-    url="/merit-badges/first-aid/guide/req1a/" >}}
+    url="/merit-badges/first-aid/guide/req1/" >}}

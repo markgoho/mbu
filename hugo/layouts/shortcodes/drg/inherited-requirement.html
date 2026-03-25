@@ -1,0 +1,76 @@
+{{- $number := .Get "number" -}}
+{{- $topic := .Get "topic" | default (.Inner | strings.TrimSpace) -}}
+{{- $reqPath := .Get "req_path" | default $number -}}
+{{- $pageReqPath := $.Page.Params.req_path -}}
+{{- $badgePage := $.Page.CurrentSection.Parent | default $.Page.Parent -}}
+{{- $badgeSlug := "" -}}
+{{- with $badgePage -}}
+  {{- $badgeSlug = .File.ContentBaseName -}}
+{{- end -}}
+{{- $badgeData := dict -}}
+{{- if ne $badgeSlug "" -}}
+  {{- with index $.Site.Data "merit-badges" $badgeSlug -}}
+    {{- $badgeData = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $pathParts := split $reqPath "." -}}
+{{- $parentPath := "" -}}
+{{- if gt (len $pathParts) 1 -}}
+  {{- $parentPath = delimit (first (sub (len $pathParts) 1) $pathParts) "." -}}
+{{- end -}}
+
+{{- $state := newScratch -}}
+{{- $state.Set "parentText" "" -}}
+
+{{- define "partials/drg-find-requirement-text" -}}
+  {{- $requirements := .requirements -}}
+  {{- $targetPath := .targetPath -}}
+  {{- $state := .state -}}
+  {{- range $requirements -}}
+    {{- if and (eq ($state.Get "parentText") "") (eq .path $targetPath) -}}
+      {{- $state.Set "parentText" .text -}}
+    {{- end -}}
+    {{- if and (eq ($state.Get "parentText") "") .subrequirements -}}
+      {{- template "partials/drg-find-requirement-text" (dict "requirements" .subrequirements "targetPath" $targetPath "state" $state) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and (ne $parentPath "") (ne $badgeData dict) -}}
+  {{- template "partials/drg-find-requirement-text" (dict "requirements" $badgeData.requirements "targetPath" $parentPath "state" $state) -}}
+{{- end -}}
+
+{{- $parentText := $state.Get "parentText" | strings.TrimSpace -}}
+{{- $displayText := $topic -}}
+{{- if and $parentText $topic -}}
+  {{- $actionText := replaceRE `^[^.]+\.\s+` "" $parentText -}}
+  {{- $actionText = strings.TrimSpace $actionText -}}
+  {{- $actionText = replaceRE `:\s*$` "" $actionText -}}
+  {{- $topicText := $topic -}}
+  {{- if and (not (findRE `^(?i)(a|an|the)\b` $topicText)) (findRE `(?i)\b(of|for)\s*$` $actionText) -}}
+    {{- if findRE `(?i)^[aeiou]` $topicText -}}
+      {{- $topicText = printf "an %s" $topicText -}}
+    {{- else if findRE `(?i)^(honest|hour|heir)` $topicText -}}
+      {{- $topicText = printf "an %s" $topicText -}}
+    {{- else if not (findRE `(?i)(sickness|injuries|allergies|burns|scalds|bites|stings|choking|fainting|hypoglycemia|seizures|drowning|heatstroke|frostbite|dehydration)$` $topicText) -}}
+      {{- $topicText = printf "a %s" $topicText -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $actionText = replaceRE `(?i)\b(for each of|each of|the) following( [a-z][a-z ]+)?\s*$` "" $actionText -}}
+  {{- $actionText = replaceRE `(?i)\bthese [a-z][a-z ]+\s*$` "" $actionText -}}
+  {{- $actionText = strings.TrimSpace $actionText -}}
+  {{- $displayText = printf "%s %s." $actionText $topicText -}}
+  {{- $displayText = replaceRE `\s+\.` "." $displayText -}}
+{{- end -}}
+
+{{- $isSub := findRE `[a-zA-Z]` $number -}}
+{{- $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" -}}
+<div class="{{ $class }}">
+  {{ with $number }}
+    <span class="drg-requirement__number">{{ . }}.</span>
+  {{ end }}
+  <div class="drg-requirement__text">
+    {{ $displayText | markdownify }}
+  </div>
+</div>
