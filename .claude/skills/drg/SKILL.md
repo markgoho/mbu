@@ -182,6 +182,43 @@ This requirement covers four topics that every archer needs to understand:
 
 This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
 
+### Inherited Action Patterns
+
+Some parent requirements carry the operative verbs while the child sub-requirements are only topic labels. In those cases, the page structure should mirror the action pattern instead of leaving the prose as one undifferentiated block.
+
+Common example:
+
+- Parent requirement: `Describe the symptoms and signs of, show first aid for, and explain prevention of these wounds:`
+- Child requirement: `Closed wounds, such as a bruise (contusion) or a hematoma`
+
+On the child section or page, organize the teaching content under `###` headings that restate the parent action with the child topic. This makes the page easier for Scouts to scan and makes the relationship between the requirement and the teaching copy obvious.
+
+Use this pattern:
+
+```markdown
+{{</* drg/inherited-requirement number="3a" req_path="3.a" topic="Closed wounds, such as a bruise (contusion) or a hematoma" */>}}
+
+### Signs and symptoms of closed wounds
+
+Brief Scout-facing explanation of what they would notice.
+
+### First aid for closed wounds
+
+Brief Scout-facing explanation of what to do first.
+
+### Prevention of closed wounds
+
+Brief Scout-facing explanation of how to avoid the injury.
+```
+
+Apply this when **all** of these are true:
+
+- the parent requirement supplies the verbs
+- the child requirement is mainly a topic label, not a full sentence with its own verbs
+- the parent action naturally breaks into distinct teaching buckets
+
+Do **not** force this pattern onto every badge. If the child requirement already contains full operative text, or if the parent action does not split cleanly into reusable buckets, write normal prose instead.
+
 ### "Choose One" Requirements
 
 Any requirement whose `subrequirement_mode` has `"type": "select"` in `data.json` always gets a dedicated **overview page** (`req{N}.md`) in addition to individual pages for each option. The overview page is what a Scout reads _before_ choosing — it is not a table of contents stub, it is genuine decision-support content.

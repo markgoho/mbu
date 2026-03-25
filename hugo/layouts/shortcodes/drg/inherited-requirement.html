@@ -60,8 +60,13 @@
   {{- $actionText = replaceRE `(?i)\b(for each of|each of|the) following( [a-z][a-z ]+)?\s*$` "" $actionText -}}
   {{- $actionText = replaceRE `(?i)\bthese [a-z][a-z ]+\s*$` "" $actionText -}}
   {{- $actionText = strings.TrimSpace $actionText -}}
-  {{- $displayText = printf "%s %s." $actionText $topicText -}}
-  {{- $displayText = replaceRE `\s+\.` "." $displayText -}}
+  {{- /* If the action frame collapsed to a bare structural verb (e.g. "Do", "Choose"), skip the merge */ -}}
+  {{- if le (len $actionText) 6 -}}
+    {{- $displayText = $topicText -}}
+  {{- else -}}
+    {{- $displayText = printf "%s %s." $actionText $topicText -}}
+    {{- $displayText = replaceRE `\s+\.` "." $displayText -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $isSub := findRE `[a-zA-Z]` $number -}}
