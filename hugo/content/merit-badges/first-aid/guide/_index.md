@@ -118,11 +118,6 @@ guide_nav:
       - title: "Extended Learning"
         url: "/merit-badges/first-aid/guide/extended-learning/"
         is_sub: false
-  - group_title: "Printable Guide"
-    items:
-      - title: "Complete Digital Resource Guide"
-        url: "/merit-badges/first-aid/guide/print/"
-        is_sub: false
 ---
 
 ## Overview

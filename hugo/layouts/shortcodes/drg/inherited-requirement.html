@@ -9,7 +9,7 @@
 {{- end -}}
 {{- $badgeData := dict -}}
 {{- if ne $badgeSlug "" -}}
-  {{- with index $.Site.Data "merit-badges" $badgeSlug -}}
+  {{- with index hugo.Data "merit-badges" $badgeSlug -}}
     {{- $badgeData = . -}}
   {{- end -}}
 {{- end -}}
@@ -44,11 +44,18 @@
 {{- $parentText := $state.Get "parentText" | strings.TrimSpace -}}
 {{- $displayText := $topic -}}
 {{- if and $parentText $topic -}}
-  {{- $actionText := replaceRE `^[^.]+\.\s+` "" $parentText -}}
+  {{- $actionText := $parentText -}}
   {{- $actionText = strings.TrimSpace $actionText -}}
   {{- $actionText = replaceRE `:\s*$` "" $actionText -}}
   {{- $topicText := $topic -}}
-  {{- if and (not (findRE `^(?i)(a|an|the)\b` $topicText)) (findRE `(?i)\b(of|for)\s*$` $actionText) -}}
+  {{- $topicStartsWithOwnAction := false -}}
+  {{- if findRE `(?i)^(explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick)\b` $topicText -}}
+    {{- $topicStartsWithOwnAction = true -}}
+  {{- end -}}
+  {{- if findRE `(?i)^(with|after|before|using|by)\b` $topicText -}}
+    {{- $topicStartsWithOwnAction = true -}}
+  {{- end -}}
+  {{- if and (not $topicStartsWithOwnAction) (not (findRE `^(?i)(a|an|the)\b` $topicText)) (findRE `(?i)\b(of|for)\s*$` $actionText) -}}
     {{- if findRE `(?i)^[aeiou]` $topicText -}}
       {{- $topicText = printf "an %s" $topicText -}}
     {{- else if findRE `(?i)^(honest|hour|heir)` $topicText -}}
@@ -59,9 +66,11 @@
   {{- end -}}
   {{- $actionText = replaceRE `(?i)\b(for each of|each of|the) following( [a-z][a-z ]+)?\s*$` "" $actionText -}}
   {{- $actionText = replaceRE `(?i)\bthese [a-z][a-z ]+\s*$` "" $actionText -}}
+  {{- $actionText = replaceRE `(?i)\bdo the following\s*$` "" $actionText -}}
   {{- $actionText = strings.TrimSpace $actionText -}}
-  {{- /* If the action frame collapsed to a bare structural verb (e.g. "Do", "Choose"), skip the merge */ -}}
-  {{- if le (len $actionText) 6 -}}
+  {{- $actionText = replaceRE `\s+` " " $actionText -}}
+  {{- /* Merge only when the child is a topic label, not when it already starts with its own operative wording. */ -}}
+  {{- if or $topicStartsWithOwnAction (le (len $actionText) 6) -}}
     {{- $displayText = $topicText -}}
   {{- else -}}
     {{- $displayText = printf "%s %s." $actionText $topicText -}}

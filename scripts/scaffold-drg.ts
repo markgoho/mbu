@@ -285,10 +285,14 @@ function buildGroupedSubrequirementSection({
 }: {
   subrequirement: Requirement;
 }): string {
+  const requirementBlock = buildRequirementDisplayShortcodeBlock({
+    requirement: subrequirement,
+  });
+
   return [
     `## Requirement ${compactRequirementNumber({ path: subrequirement.path })}`,
     "",
-    buildInheritedRequirementShortcodeBlock({ requirement: subrequirement }),
+    requirementBlock,
     "",
     "[PLACEHOLDER: Write the instructional body for this subrequirement.]",
     "",
@@ -653,6 +657,18 @@ function buildRequirementShortcodeBlock({
   return [openingLine, requirement.text, "{{< /drg/requirement >}}"].join("\n");
 }
 
+function buildRequirementDisplayShortcodeBlock({
+  requirement,
+}: {
+  requirement: Requirement;
+}): string {
+  if (shouldUseInheritedRequirementDisplay({ text: requirement.text })) {
+    return buildInheritedRequirementShortcodeBlock({ requirement });
+  }
+
+  return buildRequirementShortcodeBlock({ requirement });
+}
+
 function buildInheritedRequirementShortcodeBlock({
   requirement,
 }: {
@@ -660,6 +676,34 @@ function buildInheritedRequirementShortcodeBlock({
 }): string {
   const requirementNumber = compactRequirementNumber({ path: requirement.path });
   return `{{< drg/inherited-requirement number="${requirementNumber}" req_path="${requirement.path}" topic="${escapeAttribute({ value: requirement.text })}" />}}`;
+}
+
+function shouldUseInheritedRequirementDisplay({
+  text,
+}: {
+  text: string;
+}): boolean {
+  const trimmedText = text.trim();
+
+  if (trimmedText === "") {
+    return false;
+  }
+
+  const startsWithOwnAction = /^(?i:(explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick))\b/.test(
+    trimmedText,
+  );
+  if (startsWithOwnAction) {
+    return false;
+  }
+
+  const startsWithLeadIn = /^(?i:(with|after|before|using|by))\b/.test(
+    trimmedText,
+  );
+  if (startsWithLeadIn) {
+    return false;
+  }
+
+  return true;
 }
 
 function buildResourceBlock({
@@ -834,6 +878,10 @@ function buildGuideNav({
   const groups = new Map<string, GuideNavGroup>();
 
   for (const guidePage of guidePages) {
+    if (guidePage.kind === "print") {
+      continue;
+    }
+
     const existingGroup = groups.get(guidePage.groupTitle);
     const guideNavItem: GuideNavItem = {
       title: guidePage.title,
