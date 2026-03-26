@@ -12,7 +12,7 @@ Merit Badge University (MBU) is a Hugo-based static site that provides comprehen
 - **Runtime**: Bun (JavaScript/TypeScript runtime)
 - **Styling**: SCSS with Dart Sass transpiler
 - **Deployment**: Firebase Hosting (via GitHub Actions)
-- **Scraping**: Cheerio + Impit (TLS fingerprint mimicry)
+- **Scraping**: Firecrawl + Cheerio
 
 ## Essential Commands
 
@@ -29,7 +29,7 @@ bun run hugo:dev
 ```bash
 # Sync all merit badge requirements from scouting.org
 bun run sync:badges
-# Runs: bun scripts/sync-requirements.ts
+# Runs: bun scripts/sync-requirements-hybrid.ts
 
 # Sync a single merit badge (faster for testing)
 BADGE_NAME="camping" bun run sync:badges
@@ -101,10 +101,8 @@ hugo/
 ```
 scripts/
 ├── merit-badges.ts              # Static list of all 143 merit badges
-├── sync-requirements.ts         # Main scraper script
-├── detect-related-badges.ts     # Auto-detect and link related badge references
-├── debug-req6.ts               # Debug helpers
-└── debug-beef-cattle.ts        # Debug helpers
+├── sync-requirements-hybrid.ts  # Main scraper script
+└── detect-related-badges.ts     # Auto-detect and link related badge references
 ```
 
 ### Key Template Features
@@ -162,13 +160,13 @@ Each merit badge has a `data.json` file with the following structure:
 
 ## Scraping System
 
-The scraper in `scripts/sync-requirements.ts` uses:
+The scraper in `scripts/sync-requirements-hybrid.ts` uses:
 
 1. **Static Badge List**: `scripts/merit-badges.ts` contains all 143 merit badges (title, slug, URL, eagle_required flag). This eliminates the need to scrape the index page.
 
-2. **TLS Fingerprint Mimicry**: Uses Impit library to mimic Chrome browser and avoid rate limiting/blocking.
+2. **Firecrawl Fetching**: Uses `@mendable/firecrawl-js` to fetch and parse requirement pages.
 
-3. **Recursive Extraction**: The `extractSubrequirements()` function recursively processes nested requirements at any depth, handling:
+3. **Recursive Extraction**: The scraper recursively processes nested requirements at any depth, handling:
    - Standard format: `(a)`, `(b)`, etc.
    - Numbered format: `1.`, `2.`, etc.
    - Named options: "Beef Cattle Option"
@@ -177,7 +175,7 @@ The scraper in `scripts/sync-requirements.ts` uses:
 
 4. **Deduplication**: Scouting.org HTML sometimes contains duplicate elements. The scraper uses Maps to deduplicate by `req_id` or text hash.
 
-5. **Rate Limiting**: Random delays (500-1500ms) between requests to avoid overwhelming scouting.org.
+5. **Sequential Processing**: Badge syncing runs sequentially to maintain stability.
 
 ## Deployment
 

@@ -1,167 +1,192 @@
 ---
-title: "Req 12 — Mental Health & Stress"
-layout: guide
-group_title: "Mental Health"
+title: "Req 12 — Mental Health First Aid"
+layout: "guide"
+group_title: "Mental Health & Stress"
 req_number: "12"
+req_path: "12"
 prev: "/merit-badges/first-aid/guide/req11/"
-prev_title: "Req 11 — Heat & Cold Conditions"
+prev_title: "Req 11 — Temperature Emergencies"
 next: "/merit-badges/first-aid/guide/req13/"
-next_title: "Req 13 — Miscellaneous Conditions"
+next_title: "Req 13 — Eyes, Teeth & Strokes"
 ---
 
-{{< drg/requirement number="12a" >}}
-Reactions associated with at least three stressful situations, such as mountain backpacking, rappelling, a ropes course, speaking before an audience, making a phone call to an adult, taking a swim test, missing home, lighting a match, trying out for a sports team, meeting someone for the first time, or other stressful circumstances.
+{{< drg/requirement number="12" >}}
+Mental Health Conditions. Describe the following:
 {{< /drg/requirement >}}
 
-{{< drg/requirement number="12b" >}}
-The actions that you and others should take to prepare for and manage these situations.
-{{< /drg/requirement >}}
+First aid has always been about responding to physical injury. But requirement 12 broadens that definition: fear, anxiety, stress, and the mental states that make someone a danger to themselves or others are legitimate first aid situations. This requirement covers four sub-requirements:
 
-{{< drg/requirement number="12c" >}}
-The indications that someone might be a danger to themselves or others.
-{{< /drg/requirement >}}
+- **12a** — Reactions to stressful Scouting situations
+- **12b** — Actions to prepare for and manage those situations
+- **12c** — Warning signs that someone might be dangerous to themselves or others
+- **12d** — What to do if you suspect someone is a danger to themselves or others
 
-{{< drg/requirement number="12d" >}}
-The actions that you should take if you suspect that someone might be a danger to themselves or others.
-{{< /drg/requirement >}}
+---
 
-First aid is not just for physical injuries. Mental and emotional well-being are just as important as physical health — and as a Scout trained in first aid, you should be able to recognize when someone is struggling emotionally and know what to do about it.
+## Requirement 12a: Stress Reactions in Scouting Situations
 
-## Stress Reactions
+{{< drg/inherited-requirement number="12a" req_path="12.a" topic="Reactions associated with at least three stressful situations, such as mountain backpacking, rappelling, a ropes course, speaking before an audience, making a phone call to an adult, taking a swim test, missing home, lighting a match, trying out for a sports team, meeting someone for the first time, or other stressful circumstances." />}}
 
-Stress is a normal part of life. Your body's stress response — the "fight, flight, or freeze" reaction — is designed to help you deal with challenges. But when stress becomes overwhelming, it can cause real physical and emotional symptoms.
+Stress is the body's response to a perceived challenge or threat. The stress response is hardwired — it exists to keep you alive in genuinely dangerous situations. The problem is that the brain can't always tell the difference between a tiger and a swim test.
 
-### Common Stressful Situations in Scouting
+### The Physiology of Stress
 
-Everyone responds to stress differently. Here are situations many Scouts find stressful, along with the reactions they might trigger:
+When you encounter something stressful, your hypothalamus triggers the release of adrenaline and cortisol. The result: faster heart rate, increased breathing, heightened alertness, muscle tension, and suppressed digestion. This is the "fight-or-flight" response.
 
-**High-adventure activities (rappelling, ropes course, cliff jumping):**
-- Racing heart, sweaty palms, shaking
-- Freezing in place — unable to move
-- Feeling nauseated or dizzy
-- Crying or wanting to quit
+**This is not weakness.** It's biology. Even experienced athletes, military personnel, and emergency responders experience it.
 
-**Performance situations (speaking to a group, swim test, sports tryouts):**
-- Dry mouth, voice shaking
-- Mind going blank
-- Stomach pain or "butterflies"
-- Wanting to avoid the situation entirely
+### Three Scouting Scenarios
 
-**Social situations (meeting new people, calling an adult, homesickness):**
-- Anxiety, worry, feeling "on edge"
-- Difficulty sleeping
-- Withdrawing from the group
-- Tearfulness or irritability
+**1. Rappelling for the first time**
+
+Reactions: Heart pounding; shaky hands; freezing at the cliff edge; refusing to lean back; tears; anger or frustration directed outward; tunnel vision on the drop below.
+
+Why it happens: The brain registers "vertical drop" as a mortal threat. Standing at the edge triggers the primal fear of falling. The rappel harness doesn't immediately override that fear.
+
+**2. Taking a swim test at camp**
+
+Reactions: Anxiety for days before; churning stomach at the dock; inability to perform a stroke you know perfectly well in practice; going stiff in the water; shutting down.
+
+Why it happens: Performance anxiety triggers the same stress response as physical danger. The evaluation aspect ("being watched and judged") amplifies the physiological response.
+
+**3. Missing home at a long camp or high-adventure trip**
+
+Reactions: Difficulty sleeping; low appetite; irritability; crying; withdrawal from the group; physical symptoms (headache, stomachache) without a clear physical cause.
+
+Why it happens: Separation from familiar environments and attachment figures is a genuine psychological stressor, especially early in development. Homesickness is not a sign of weakness or immaturity.
 
 {{< drg/tip >}}
-Feeling nervous before a challenge is completely normal — even experienced adults feel it. The goal is not to eliminate stress but to manage it so it does not control you. Stress that motivates you to prepare and perform is actually helpful.
+Choose three scenarios you've actually experienced (or could plausibly face) and think through how your own body and mind responded. Your counselor's goal is for you to demonstrate awareness of stress responses — not to recite a textbook answer.
 {{< /drg/tip >}}
 
-### Preparing for and Managing Stress
+{{< drg/video
+    title="3 Tools for Situational Anxiety"
+    url="https://youtu.be/_H5QFfiU0s0" >}}
 
-**Before the stressful event:**
+{{< drg/video
+    title="Overcoming Social Anxiety"
+    url="https://youtu.be/BmX6GXDvlLM" >}}
 
-- **Practice and prepare.** The more familiar you are with a skill, the less stressful it feels. Rehearse presentations. Practice knots before climbing. Take a swim test at your pool first.
-- **Learn about it.** Fear of the unknown is a powerful stressor. Learn what to expect — watch videos, talk to people who have done it, ask questions.
-- **Visualize success.** Athletes use visualization to perform under pressure. Picture yourself succeeding.
-- **Talk about it.** Tell a friend, parent, or leader that you are nervous. Just saying it out loud reduces its power.
+{{< drg/video
+    title="Power of Self-Confidence"
+    url="https://www.youtube.com/watch?v=gTd6Lq1M9Tc" >}}
 
-**During the stressful event:**
-
-- **Breathe.** Slow, deep breaths (4 seconds in, hold 4, out 4) activate the calming part of your nervous system. This is one of the most effective stress management techniques that exists.
-- **Focus on one step at a time.** Do not think about the whole rappel — just focus on the next foot placement.
-- **Use positive self-talk.** "I can do this. I am prepared. I have done hard things before."
-- **Accept imperfection.** You do not have to be perfect. You just have to try.
-
-**After the stressful event:**
-
-- **Reflect on what went well.** Even if it was hard, you did it.
-- **Talk about it.** Sharing the experience helps process the emotions.
-- **Rest.** Stress is exhausting — your body and mind need recovery time.
-
-{{< drg/did-you-know >}}
-The breathing technique described above — called "box breathing" — is used by Navy SEALs, surgeons, and first responders to stay calm under extreme pressure. It works because it directly activates the parasympathetic nervous system, which counters the fight-or-flight response.
-{{< /drg/did-you-know >}}
-
-{{< drg/image src="images/managing-stress.avif" alt="A Scout standing at the top of a rappelling tower, taking a deep breath with eyes closed, a belayer and supportive friends visible below" >}}
+{{< drg/video
+    title="Getting Ready for Tryouts"
+    url="https://youtu.be/a_dVK2EEWKE" >}}
 
 ---
 
-## Recognizing Danger to Self or Others
+## Requirement 12b: Managing Stress Reactions
 
-This section is serious. As a Scout, you spend time with peers in settings where adults may not always be present — hiking, camping, late-night conversations in tents. You may be the first person to notice that someone is in crisis.
+{{< drg/inherited-requirement number="12b" req_path="12.b" topic="The actions that you and others should take to prepare for and manage these situations." />}}
 
-### Warning Signs That Someone May Be a Danger to Themselves
+### Before the Stressful Event (Preparation)
 
-- **Talking about wanting to die** or wanting to kill themselves
-- **Talking about feeling hopeless,** having no reason to live, or being a burden to others
-- **Withdrawing** from friends, family, and activities they used to enjoy
-- **Giving away possessions** — especially meaningful items
-- **Sudden calmness** after a period of depression (may indicate they have made a decision)
-- **Increased use of alcohol or drugs**
-- **Reckless or self-destructive behavior** — taking unusual risks
-- **Changes in eating or sleeping** — too much or too little
-- **Expressing rage, anger, or desire for revenge**
-- **Researching methods** of self-harm
+- **Exposure:** Gradually approach the stressor in low-stakes settings. A Scout who fears heights benefits from climbing a short wall before standing at a rappel cliff.
+- **Information:** Fear of the unknown amplifies stress. Knowing what rappelling will feel like before you do it reduces the surprise factor.
+- **Physical preparation:** Exercise, adequate sleep, and proper nutrition reduce baseline stress levels and improve recovery from acute stress.
+- **Positive self-talk:** Replace "I can't do this" with "This is hard, but I've done hard things before."
 
-### Warning Signs That Someone May Be a Danger to Others
+### During the Stressful Situation
 
-- **Threats of violence** — spoken, written, or posted online
-- **Fascination with weapons** or past acts of violence
-- **Expressing a desire to hurt specific people**
-- **History of bullying, cruelty to animals, or violent behavior**
-- **Extreme anger** that seems out of proportion
-- **Plans or preparations** for a violent act
+**Controlled breathing is the most powerful immediate tool you have.** Slowing and deepening your breath directly counteracts the physiological stress response.
 
-{{< drg/safety-first >}}
-Take every threat seriously — even if you think the person is "just joking" or "just venting." You are not qualified to determine whether a threat is real. Tell a trusted adult immediately. It is always better to overreact and be wrong than to ignore a warning sign and be right.
-{{< /drg/safety-first >}}
+**Box breathing (used by military and first responders):**
+1. Inhale for 4 counts
+2. Hold for 4 counts
+3. Exhale for 4 counts
+4. Hold for 4 counts
+5. Repeat 4–6 times
+
+**Grounding:** When panic or anxiety is overwhelming, anchor yourself to the present moment. Identify 5 things you can see; 4 things you can touch; 3 things you can hear. This interrupts the anxious thought loop.
+
+{{< drg/image src="images/box-breathing-cycle.avif" alt="Square breathing cycle diagram showing inhale 4, hold 4, exhale 4, hold 4 in a repeating loop" >}}
+
+### Supporting Someone Else
+
+When a fellow Scout is overwhelmed:
+- **Stay calm yourself.** A calm presence is contagious.
+- **Don't minimize.** "It's not a big deal" increases shame. "I can see this is tough for you" validates the experience.
+- **Give them control.** Let them set the pace. A Scout who feels forced through a fear usually develops a harder version of it.
+- **Stay nearby** — don't leave them alone — but don't hover or pressure.
+
+{{< drg/video
+    title="Techniques to Manage Stress"
+    url="https://youtu.be/h2zWopNUUJE" >}}
+
+{{< drg/video
+    title="Box Breathing | The Breathing Exercise Used By Navy SEALs"
+    url="https://youtu.be/UC6HUrneIWI" >}}
+
+{{< drg/video
+    title="Tips for Overcoming Phone Anxiety"
+    url="https://youtu.be/QcKbxaGpwf4" >}}
+
+{{< drg/video
+    title="How to Stop Letting Social Anxiety Control You"
+    url="https://youtu.be/wbroM1Di-bI" >}}
 
 ---
 
-## What to Do
+## Requirement 12c: Warning Signs of Danger to Self or Others
 
-### If You Suspect Someone Is a Danger to Themselves
+{{< drg/inherited-requirement number="12c" req_path="12.c" topic="The indications that someone might be a danger to themselves or others." />}}
 
-1. **Take it seriously.** Never dismiss or minimize what someone tells you.
-2. **Listen without judgment.** You do not need to fix the problem — just be present. Say things like, "I hear you. I'm glad you told me."
-3. **Ask directly.** It is okay to ask, "Are you thinking about hurting yourself?" Research shows this question does not increase risk — it opens the door to help.
-4. **Do not promise to keep it a secret.** Say, "I care about you too much to keep this to myself. We need to get you help."
-5. **Tell a trusted adult immediately** — a parent, Scout leader, teacher, school counselor, or religious leader.
-6. **Call or text 988** (the Suicide and Crisis Lifeline) if you are unsure what to do or if the person is in immediate danger.
-7. **Stay with the person** until help arrives. Do not leave them alone.
+This is sensitive but important content. Being able to recognize when someone has crossed from ordinary stress into genuine crisis — where they might hurt themselves or someone else — is a real first aid skill.
 
-### If You Suspect Someone Is a Danger to Others
+### Signs Someone May Be a Danger to Themselves
 
-1. **Do not confront them.** Your safety is the priority.
-2. **Tell a trusted adult immediately.**
-3. **If the threat is imminent,** call 911.
-4. **Remove yourself and others** from the situation if possible.
-5. **Document what you saw or heard** — specific words, dates, and context. This helps adults and authorities assess the situation.
+- **Talking about wanting to die, disappear, or not exist:** Any statement about suicide or self-harm should be taken seriously. There is no "crying wolf" when it comes to suicidal ideation.
+- **Giving away important possessions** — especially suddenly or unexpectedly
+- **Saying goodbye** in ways that feel final
+- **Researching methods of self-harm** or acquiring means
+- **Withdrawal** from friends, family, and activities they used to enjoy
+- **Dramatic mood changes**, especially a sudden calm after a period of crisis (this can indicate resolution to act)
+- **Increasing use of alcohol or drugs**
+- **Expressing feelings of being a burden** to others ("Everyone would be better off without me")
 
-{{< drg/be-prepared title="A Friend Says Something Worrying" >}}
-During a late-night conversation at camp, a friend says, "Sometimes I think everyone would be better off without me." They seem serious.
+### Signs Someone May Be a Danger to Others
 
-- **Do not brush it off.** This is a warning sign.
-- **Listen.** Ask, "Do you mean that? Are you thinking about hurting yourself?"
-- **Stay calm and non-judgmental.** "I'm really glad you told me. You matter."
-- **Tell a trusted adult** — the Scoutmaster, assistant Scoutmaster, or a parent. Tonight, not tomorrow.
-- **Call or text 988** if you need immediate guidance from a trained crisis counselor.
-{{< /drg/be-prepared >}}
+- **Explicit threats** directed at specific individuals or places
+- **Access to weapons combined with grievance**: Someone who has been talking about being wronged and suddenly has or is seeking access to a weapon
+- **History of violence combined with escalating behavior**
+- **Extreme social isolation** paired with fixation on revenge or blame
+- **Talk of a final act** or "teaching someone a lesson"
 
-{{< drg/external-link
-    title="988 Suicide & Crisis Lifeline"
-    url="https://988lifeline.org/"
-    description="Call or text 988 for free, confidential support 24/7. Chat is also available at the website. This resource is available to everyone — not just people in crisis." >}}
+### What Doesn't Necessarily Indicate Danger
 
-{{< drg/external-link
-    title="Crisis Text Line"
-    url="https://www.crisistextline.org/"
-    description="Text HOME to 741741 to connect with a trained crisis counselor. Available 24/7 via text — a format many teens find more comfortable than a phone call." >}}
+Normal expressions of anger, frustration, or distress — even dramatic ones — are not the same as warning signs. Context matters enormously. The difference is usually specificity, intensity, and whether the person has made a plan.
 
-{{< drg/image src="images/peer-support.avif" alt="Two Scouts sitting together on a log at dusk, one listening attentively to the other who is speaking, showing a supportive and caring interaction" >}}
+---
+
+## Requirement 12d: What to Do When You Suspect Danger
+
+{{< drg/inherited-requirement number="12d" req_path="12.d" topic="The actions that you should take if you suspect that someone might be a danger to themselves or others." />}}
+
+### If You're Concerned About a Friend or Troop Member
+
+1. **Talk to them directly** if you can do so safely. Asking someone directly about suicidal thoughts does not plant the idea — research shows it actually reduces the risk by opening the door to conversation.
+2. **Tell an adult immediately.** This is not tattling — this is potentially saving a life. Tell a parent, Scoutmaster, school counselor, or other trusted adult. You are not expected to handle a mental health crisis alone.
+3. **Do not leave the person alone** if you believe the danger is immediate.
+4. **Call 911** if there is immediate danger to the person or to others.
+
+### Crisis Resources
+
+If a Scout or someone you know is in crisis:
+- **988 Suicide and Crisis Lifeline:** Call or text **988** (US)
+- **Crisis Text Line:** Text HOME to **741741**
+- **Emergency:** Call **911**
+
+### The Scout's Role
+
+You are not expected to be a therapist, counselor, or crisis negotiator. Your role is simple: recognize the warning signs, tell a trusted adult, and stay with the person until that help arrives. That's enough — and it can make all the difference.
+
+---
+
+Mental health first aid is some of the most human work in this entire badge. Next, you'll wrap up the medical conditions section with eyes, teeth, digestive emergencies, and stroke.
 
 {{< drg/next-page
-    text="You have learned about managing stress and recognizing when someone may need mental health support."
-    teaser="Cover the remaining miscellaneous first aid conditions — from objects in the eye to stroke."
+    text="You understand how to recognize and respond to mental health crises"
+    teaser="Learn the final category of medical emergencies — eye injuries, dental trauma, food poisoning, abdominal pain, and stroke."
     url="/merit-badges/first-aid/guide/req13/" >}}

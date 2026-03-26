@@ -1,77 +1,87 @@
 ---
-title: "Req 7 — Heart Attack, CPR & AEDs"
-layout: guide
+title: "Req 7 — CPR and AED"
+layout: "guide"
 group_title: "Heart Attack & CPR"
 req_number: "7"
+req_path: "7"
 prev: "/merit-badges/first-aid/guide/req6/"
-prev_title: "Req 6 — Loss of Consciousness"
-next: "/merit-badges/first-aid/guide/req8/"
-next_title: "Req 8 — Muscle & Bone Injuries"
+prev_title: "Req 6 — Fainting, Seizures & Drowning"
+next: "/merit-badges/first-aid/guide/req8a/"
+next_title: "Req 8a — Understanding Injuries"
 ---
 
 {{< drg/requirement number="7" >}}
 Heart Attack. Do the following:
 {{< /drg/requirement >}}
 
-A heart attack can turn into cardiac arrest in minutes, which is why this requirement moves from recognizing the emergency to taking action with CPR and an AED. Work through the sections in order: understand what is happening, recognize the warning signs, know when to start CPR, and learn how an AED fits into the rescue.
+Cardiac arrest is the single most common cause of adult death in the United States. Every minute without CPR reduces survival by 7–10%. The skills in this requirement — recognizing a heart attack, performing CPR, and using an AED — could realistically save someone you know. This requirement covers seven sub-requirements:
 
-## What Is a Heart Attack?
+- **7a** — What is a heart attack?
+- **7b** — Symptoms of a heart attack and first aid
+- **7c** — When to start CPR
+- **7d** — Demonstrating CPR technique
+- **7e** — How an AED works
+- **7f** — Demonstrating AED use
+- **7g** — Finding AEDs in your community
 
-{{< drg/requirement number="7a" >}}
-Explain what a heart attack is.
-{{< /drg/requirement >}}
+---
 
-A **heart attack** (myocardial infarction) happens when blood flow to part of the heart muscle is blocked — usually by a blood clot in one of the coronary arteries. Without blood flow, that section of the heart begins to die.
+## Requirement 7a: What Is a Heart Attack?
 
-A heart attack is **not** the same as cardiac arrest:
+{{< drg/inherited-requirement number="7a" req_path="7.a" topic="Explain what a heart attack is." />}}
 
-| | Heart Attack | Cardiac Arrest |
-|---|---|---|
-| **What happens** | Blocked artery reduces blood flow to the heart | Heart stops beating effectively |
-| **Consciousness** | Usually conscious | Unconscious |
-| **Breathing** | Usually breathing | Not breathing (or only gasping) |
-| **Pulse** | Has a pulse | No pulse |
-| **Treatment** | Call 911, aspirin, keep calm | CPR + AED immediately |
+**The heart is a muscle.** Like all muscles, it needs a constant blood supply to stay alive. The arteries that supply the heart muscle itself (coronary arteries) can become narrowed or blocked by plaque — a buildup of cholesterol and other materials inside the artery wall. When a clot forms at a plaque site and completely blocks a coronary artery, part of the heart muscle is deprived of oxygen and begins to die. This is a **myocardial infarction** — a heart attack.
 
-A heart attack can **lead to** cardiac arrest if the heart's electrical system is disrupted — which is why rapid treatment matters.
+The longer the blocked artery goes untreated, the more heart muscle dies. Time is muscle.
+
+### Heart Attack vs. Cardiac Arrest
+
+These terms are often confused but refer to different events:
+
+- A **heart attack** is a plumbing problem — a blocked artery causing damage to heart muscle. The heart is still beating, but part of it is dying.
+- **Cardiac arrest** is an electrical problem — the heart's electrical system fails and the heart stops beating effectively. No pulse, no blood circulation, no consciousness. This is immediately life-threatening.
+
+A heart attack can trigger cardiac arrest — the damaged muscle causes electrical instability. CPR is for cardiac arrest, not for a heart attack. (A conscious, breathing person with chest pain is having a heart attack; call 911 and keep them calm.)
 
 {{< drg/video
     title="What Happens During a Heart Attack"
     url="https://youtu.be/3_PYnWVoUzM?si=FlnFcSGpYJuxGIo5" >}}
 
+{{< drg/video
+    title="Heart Attack vs. Cardiac Arrest"
+    url="https://youtu.be/psx-QcxL1A8" >}}
+
 ---
 
-## Heart Attack Signs and First Aid
+## Requirement 7b: Heart Attack Symptoms and First Aid
 
-{{< drg/requirement number="7b" >}}
-Describe the symptoms and signs of a heart attack and first aid for this condition.
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="7b" req_path="7.b" topic="Describe the symptoms and signs of a heart attack and first aid for this condition." />}}
 
-**Signs and symptoms:**
+### Classic Symptoms
 
-- **Chest pain or pressure** — often described as "squeezing," "tightness," or "a heavy weight on my chest." May come and go.
-- **Pain radiating** to the left arm, shoulder, neck, jaw, or back
-- **Shortness of breath** — with or without chest pain
-- **Nausea, vomiting, or indigestion**
-- **Cold sweat, lightheadedness, or dizziness**
-- **Fatigue** — especially unusual, sudden fatigue
-- **Anxiety** — a feeling that "something is very wrong"
+- **Chest discomfort:** Pressure, squeezing, fullness, or pain in the center of the chest, lasting more than a few minutes or going away and coming back.
+- **Radiation:** Discomfort spreading to the arms (usually left), back, jaw, or stomach.
+- **Shortness of breath:** With or without chest discomfort.
+- **Other signs:** Cold sweat, nausea, lightheadedness.
 
-{{< drg/safety-first >}}
-Heart attack symptoms are not always dramatic. Women, in particular, may experience less obvious symptoms — fatigue, nausea, back pain, or shortness of breath without chest pain. If someone complains of any combination of these symptoms, take it seriously and act quickly.
-{{< /drg/safety-first >}}
+### Non-Classic Presentations
 
-## First Aid for a Heart Attack
+Heart attack symptoms can be subtler, especially in women, diabetics, and elderly patients. Some people experience only:
+- Unusual fatigue
+- Jaw pain or upper back pain
+- Indigestion or heartburn that doesn't respond to antacids
+- No pain at all (a "silent" heart attack)
 
-1. **Call 911 immediately.** Do not drive the person to the hospital yourself unless there is absolutely no other option — they could go into cardiac arrest in the car.
-2. **Have the person sit or lie down** in whatever position is most comfortable.
-3. **Give aspirin** if the person is not allergic to it and is not already taking blood thinners. Have them chew (not swallow whole) one regular aspirin (325 mg) or four baby aspirin (81 mg each). Aspirin helps prevent the blood clot from growing.
-4. **Loosen tight clothing.**
-5. **Keep them calm.** Anxiety increases heart rate and oxygen demand.
-6. **Monitor breathing and pulse.** Be prepared to begin CPR if the person becomes unresponsive and stops breathing.
+### First Aid for a Suspected Heart Attack
+
+1. **Call 911 immediately.** Time is critical.
+2. Keep the person calm and have them sit or lie in a position of comfort.
+3. Loosen tight clothing.
+4. If the person is not allergic to aspirin, is conscious, and can swallow, have them chew (not swallow whole) one adult aspirin (325 mg) or four baby aspirin (81 mg each). Aspirin inhibits clotting and can slow the blockage.
+5. Be ready to perform CPR if they lose consciousness and stop breathing.
 
 {{< drg/tip >}}
-Time is everything during a heart attack. Every minute of delay in treatment means more heart muscle dies. The phrase in emergency medicine is "time is muscle." Call 911 at the first sign of symptoms — do not wait to see if they pass.
+The single most important thing you can do for someone having a heart attack is to call 911 quickly and keep them calm while waiting. Don't drive them to the hospital yourself — paramedics can begin treatment in the ambulance.
 {{< /drg/tip >}}
 
 {{< drg/video
@@ -80,19 +90,17 @@ Time is everything during a heart attack. Every minute of delay in treatment mea
 
 ---
 
-## When to Perform CPR
+## Requirement 7c: When to Perform CPR
 
-{{< drg/requirement number="7c" >}}
-Describe the conditions that must exist before performing CPR on a person.
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="7c" req_path="7.c" topic="Describe the conditions that must exist before performing CPR on a person." />}}
 
-CPR is performed when **all three** of these conditions exist:
+CPR is performed when a person is in **cardiac arrest** — meaning their heart is not pumping blood effectively. The three conditions that indicate CPR should be started:
 
-1. **The person is unresponsive** — they do not respond to tapping and shouting
-2. **The person is not breathing normally** — no breath, or only gasping (agonal breathing)
-3. **There is no pulse** — check the carotid pulse (side of the neck) for no more than 10 seconds
+1. **Unresponsive** — tap the shoulders and shout "Are you okay?" No response.
+2. **Not breathing normally** — absent or abnormal breathing. Gasping/agonal breathing looks like breathing but is a sign of cardiac arrest — begin CPR.
+3. **No pulse** — check the carotid pulse (neck) for no more than 10 seconds. If unsure, start CPR — starting CPR on someone who doesn't need it causes little harm, while not starting it on someone who does is fatal.
 
-If these three conditions are present, begin CPR immediately. Every minute without CPR reduces the chance of survival by 7–10%.
+**Do not start CPR if:** The person is breathing normally; they have an obvious, unsurvivable injury; they have a valid Do Not Resuscitate (DNR) order; the scene is unsafe.
 
 {{< drg/video
     title="Responding to Cardiac Arrest"
@@ -100,76 +108,61 @@ If these three conditions are present, begin CPR immediately. Every minute witho
 
 ---
 
-## CPR Technique
+## Requirement 7d: Performing CPR
 
-{{< drg/requirement number="7d" >}}
-Demonstrate proper CPR technique using a training device approved by your counselor.
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="7d" req_path="7.d" topic="Demonstrate proper CPR technique using a training device approved by your counselor." />}}
 
-CPR is the technique used to manually pump blood through the body when the heart has stopped. It keeps oxygen flowing to the brain and vital organs until a defibrillator or paramedics can restart the heart.
+**Hands-Only CPR** (recommended for untrained or newly trained bystanders, and effective for adult cardiac arrest):
 
-### Hands-Only CPR
+1. Call 911 (or have someone else call).
+2. Place the heel of one hand on the center of the chest (lower half of the breastbone).
+3. Place the second hand on top; interlace fingers and keep them off the chest.
+4. Keep arms straight, lean over the victim.
+5. Compress the chest at least 2 inches deep at a rate of **100–120 compressions per minute** (the beat of "Stayin' Alive" by the Bee Gees).
+6. Allow full chest recoil between compressions — don't lean on the chest.
+7. Don't stop except to use an AED.
 
-For bystanders without CPR training, **Hands-Only CPR** (compression-only, no rescue breaths) is recommended by the American Heart Association. It is simple and effective:
+**CPR with breaths (for trained responders, especially for children and drowning):**
+- 30 chest compressions followed by 2 rescue breaths (tilt the head, lift the chin, seal the mouth, breathe in over 1 second, watch for chest rise).
+- Continue the 30:2 cycle.
 
-1. **Call 911** (or have someone else call).
-2. **Place the heel of one hand** on the center of the chest (on the breastbone, between the nipples).
-3. **Place your other hand on top** and interlace your fingers.
-4. **Push hard and fast** — compress the chest at least 2 inches deep at a rate of 100–120 compressions per minute.
-5. **Do not stop** until EMS arrives, an AED is ready to use, or the person starts breathing on their own.
+{{< drg/image src="images/cpr-hand-placement-compression-depth.avif" alt="Two-panel CPR diagram showing correct hand placement on the lower half of the sternum and about 2 inches of chest compression depth with full recoil" >}}
 
-**The rhythm:** Push to the beat of the song "Stayin' Alive" by the Bee Gees — it is exactly 100 beats per minute.
+**For infants (under 1 year):** Use two fingers on the center of the chest; compress about 1.5 inches; 30:2 ratio.
 
-### Conventional CPR (with Rescue Breaths)
+**For children (1 year through puberty):** Use one or two hands depending on the child's size; compress about 2 inches; 30:2 ratio.
 
-If you are trained in full CPR, the cycle is **30 compressions : 2 rescue breaths**:
-
-1. Perform 30 chest compressions (hard and fast, 2 inches deep).
-2. Open the airway with head-tilt, chin-lift.
-3. Give 2 rescue breaths (1 second each, watching for chest rise). Use a CPR barrier.
-4. Repeat the 30:2 cycle until help arrives.
-
-**For two-rescuer CPR:** One person does compressions while the other gives breaths. Switch roles every 2 minutes to prevent fatigue — compression quality degrades quickly when you are tired.
-
-{{< drg/image src="images/cpr-technique.avif" alt="A Scout performing CPR chest compressions on a training mannequin, showing correct hand position on the center of the chest with arms straight and shoulders directly over the hands" >}}
-
-### CPR for Children and Infants
-
-| | Adult/Teen | Child (1–puberty) | Infant (under 1) |
-|---|---|---|---|
-| **Compression depth** | At least 2 inches | About 2 inches | About 1.5 inches |
-| **Compression method** | Two hands on sternum | One or two hands | Two fingers on sternum |
-| **Rate** | 100–120/min | 100–120/min | 100–120/min |
-| **Ratio** | 30:2 | 30:2 (one rescuer) or 15:2 (two rescuers) | 30:2 (one rescuer) or 15:2 (two rescuers) |
+**Your counselor will have you practice CPR on a training mannequin.** The physical practice is essential — knowing the steps intellectually is very different from doing effective chest compressions with proper depth and rate.
 
 {{< drg/did-you-know >}}
-Studies show that bystander CPR is performed in less than 40% of out-of-hospital cardiac arrests. The most common reason people do not act? Fear of doing it wrong. Here is the truth: imperfect CPR is infinitely better than no CPR. You cannot make a dead person worse.
+Bystander CPR doubles or triples survival rates for cardiac arrest. Despite this, fewer than 40% of cardiac arrest victims receive bystander CPR before professional help arrives. Your willingness to act — even imperfectly — matters enormously.
 {{< /drg/did-you-know >}}
 
 {{< drg/video
     title="Hands-Only CPR"
     url="https://youtu.be/A5PnI4I-vd8?si=ERt7HtnwcmqFJmQA" >}}
 
-{{< drg/external-link
-    title="American Heart Association — CPR & First Aid"
-    url="https://www.heart.org/en/health-topics/cardiac-arrest/cardiac-arrest-tools--resources/hands-only-cpr"
-    description="Learn Hands-Only CPR in just two steps — and find in-person CPR classes near you." >}}
-
 ---
 
-## What an AED Does
+## Requirement 7e: Automated External Defibrillators (AEDs)
 
-{{< drg/requirement number="7e" >}}
-Explain the use of an automated external defibrillator (AED).
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="7e" req_path="7.e" topic="Explain the use of an automated external defibrillator (AED)." />}}
 
-An **automated external defibrillator** (AED) is a portable device that analyzes the heart's rhythm and, if needed, delivers an electrical shock to restore a normal heartbeat. It is used during **cardiac arrest** — when the heart has stopped beating effectively.
+**What an AED does:** The most common cause of sudden cardiac arrest is ventricular fibrillation (VF) — the heart's ventricles are quivering chaotically instead of pumping. A defibrillator delivers a brief, controlled electrical shock that momentarily stops all electrical activity in the heart, giving the heart's natural pacemaker a chance to restart a normal rhythm.
 
-When the heart goes into cardiac arrest, it often enters a chaotic rhythm called **ventricular fibrillation** (V-fib). The heart muscle quivers rapidly instead of pumping blood. An AED delivers a controlled electrical shock that stops the chaotic rhythm, giving the heart a chance to reset and resume beating normally.
+**An AED is designed to be used by anyone** — it talks you through the entire process. It also analyzes the heart rhythm automatically and will NOT deliver a shock if one isn't needed.
 
-{{< drg/did-you-know >}}
-AEDs are intentionally designed for untrained bystanders. Once you turn the device on, it gives you clear voice prompts for every step. It analyzes the heart rhythm automatically and will only deliver a shock if one is needed — you cannot accidentally shock someone who does not need it.
-{{< /drg/did-you-know >}}
+### How to Use an AED
+
+1. **Turn it on** (usually by opening the case or pressing a button).
+2. **Follow the voice and visual prompts.**
+3. **Attach the pads** as shown in the diagrams on the pads — one on the upper right chest, one on the lower left side.
+4. **Make sure no one is touching the victim** when the AED analyzes the rhythm and when it delivers a shock.
+5. **Resume CPR immediately** after the shock, or as directed by the AED.
+
+**The key takeaway:** Don't delay CPR waiting for an AED. But when an AED is available, use it as soon as possible — defibrillation within the first few minutes dramatically increases survival.
+
+{{< drg/image src="images/aed-pad-placement-chest.avif" alt="Front-view chest diagram showing standard AED pad placement on the upper right chest and lower left side" >}}
 
 {{< drg/video
     title="Using an AED"
@@ -177,90 +170,57 @@ AEDs are intentionally designed for untrained bystanders. Once you turn the devi
 
 ---
 
-## Using an AED Correctly
+## Requirement 7f: Demonstrating AED Use
 
-{{< drg/requirement number="7f" >}}
-Demonstrate or simulate the proper use of an AED, using an AED training device if available.
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="7f" req_path="7.f" topic="Demonstrate or simulate the proper use of an AED, using an AED training device if available." />}}
 
-### Step-by-Step
+Your counselor will have you walk through the AED process — ideally using an AED trainer (a device that simulates the real AED experience without delivering any actual electricity). The key skills to demonstrate:
 
-1. **Continue CPR** until the AED is powered on and ready. Every second without compressions reduces survival.
-2. **Turn on the AED.** Press the power button or open the lid (some models turn on automatically when opened).
-3. **Attach the pads.** Peel the adhesive pads from the packaging and place them on the victim's bare chest as shown in the diagram on the pads:
-   - **One pad** on the upper right chest, below the collarbone
-   - **One pad** on the lower left side, below the armpit
-4. **Clear the victim.** Make sure no one is touching the person. The AED needs a clear reading.
-5. **Let the AED analyze.** The device will say "Analyzing heart rhythm — do not touch the patient." Wait.
-6. **If a shock is advised:** The AED will say "Shock advised. Stand clear." Make sure no one is touching the victim. Press the shock button when prompted.
-7. **Resume CPR immediately** after the shock. The AED will prompt you to continue compressions.
-8. **If no shock is advised:** The AED will tell you. Continue CPR. The AED will re-analyze every 2 minutes.
+- Powering on the device
+- Correct pad placement on the chest
+- Ensuring no one is touching the victim during analysis and shock
+- Resuming CPR after the shock per the device's instructions
 
-### Important Details
-
-- **Bare chest required.** Remove clothing from the chest. If the chest is wet, dry it quickly. If the person has excessive chest hair, the pads may not stick — some AED kits include a razor.
-- **Medication patches.** If the person has a medication patch (nitroglycerin, nicotine) where a pad needs to go, remove it with a gloved hand and wipe the area before placing the pad.
-- **Implanted pacemaker or defibrillator.** Look for a lump under the skin on the upper chest. Place the AED pad at least one inch away from it.
-- **Children under 8 or under 55 pounds.** Use pediatric pads if available. If not, adult pads can be used — place one on the front of the chest and one on the back.
-
-{{< drg/tip >}}
-When an AED is available, use it as soon as possible. For every minute that passes without defibrillation, the chance of survival drops by about 10%. CPR alone keeps blood flowing, but the AED is what actually fixes the heart rhythm.
-{{< /drg/tip >}}
-
-{{< drg/image src="images/aed-pad-placement.avif" alt="An illustration showing correct AED pad placement on a person's bare chest — one pad on the upper right below the collarbone, one on the lower left below the armpit, with the AED device visible nearby" >}}
-
-{{< drg/safety-first >}}
-When the AED says "Stand clear," everyone must stop touching the victim — including the person doing CPR. An AED shock delivered while someone is touching the patient can cause injury. Shout "Clear!" and visually confirm no one is in contact before pressing the shock button.
-{{< /drg/safety-first >}}
+Many schools, community centers, gyms, and businesses have AEDs. Knowing where they are in your community is just as important as knowing how to use them.
 
 {{< drg/external-link
     title="AEDs in Scouting"
     url="https://blog.scoutingmagazine.org/2024/06/13/does-your-scout-unit-have-an-aed/"
-    description="Scouting Magazine explains why units should know where AEDs are located and how they fit into an emergency action plan." >}}
+    description="Scout Life discusses whether Scout units should have AEDs and how to make the case for acquiring one." >}}
 
 ---
 
-## Finding AEDs in Your Community
+## Requirement 7g: Finding AEDs in Your Community
 
-{{< drg/requirement number="7g" >}}
-Identify the typical location(s) of one or more AED(s) at public facilities in your community, such as, your school, place of worship, unit meeting place, sports facilities, and/or camp or by using a smart phone app. Discuss the reasons for choosing locations like these.
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="7g" req_path="7.g" topic="Identify the typical location(s) of one or more AED(s) at public facilities in your community, such as, your school, place of worship, unit meeting place, sports facilities, and/or camp or by using a smart phone app. Discuss the reasons for choosing locations like these." />}}
 
-AEDs are placed in locations where large numbers of people gather and where cardiac arrest is most likely to be witnessed. For this requirement, identify AED locations at places like:
+**Why location matters:** An AED is only useful if someone can find it and bring it to the victim within minutes. Most cardiac arrests occur in homes or public places, not hospitals. Strategic placement of AEDs in high-traffic areas maximizes the chance that one will be available quickly.
 
-- **Schools** — often in the main office, gymnasium, or cafeteria
-- **Places of worship** — in the foyer or main gathering area
-- **Scout meeting places** — your troop's regular meeting location
-- **Sports facilities** — gyms, pools, fields, and recreation centers
-- **Community buildings** — libraries, community centers, government offices
-- **Airports, malls, and transit stations**
-- **Camp** — the health lodge or dining hall at Scout camp
+**Common AED placement locations:**
+- Schools (gym, front office, hallways)
+- Sports arenas and stadiums
+- Shopping malls
+- Airports
+- Health clubs and fitness centers
+- Places of worship
+- Government buildings
 
-### Why These Locations?
+**AED Finder apps and maps:** Several smartphone apps (AED Finder, PulsePoint AED, and others) allow users to locate registered AEDs in their area. Some communities maintain public registries.
 
-AEDs are placed where:
-- Many people are present (higher statistical chance of a cardiac event)
-- Physical exertion occurs (sports facilities, gyms)
-- Older adults gather (places of worship, community centers)
-- Emergency response time may be long (remote camps, large buildings)
+**For this requirement:** Physically locate at least one AED at your school, meeting place, or another regular gathering spot. Know exactly where it is so you could retrieve it in under 2 minutes.
 
-### Smartphone AED Locators
-
-Several apps and websites map AED locations:
-
-{{< drg/external-link
-    title="PulsePoint AED — AED Locator App"
-    url="https://www.pulsepoint.org/"
-    description="A free app that shows nearby AED locations and alerts CPR-trained bystanders when someone nearby is in cardiac arrest." >}}
+**Why these locations are chosen:** The logic is simple — large crowds, people under stress (sporting events, hot environments), and people with known cardiac risk (older populations at some venues) all increase the likelihood of someone experiencing cardiac arrest nearby.
 
 {{< drg/external-link
     title="Where to Place AEDs"
     url="https://cpr.heart.org/en/-/media/CPR-Files/Training-Programs/AED-Implementation/2023-updates/KJ1683-AED-Guide.pdf"
-    description="American Heart Association guidance on where AEDs are most useful and how facilities should choose their locations." >}}
+    description="The American Heart Association's evidence-based guide to AED placement strategy in public facilities." >}}
 
-{{< drg/image src="images/aed-wall-mount.avif" alt="An AED in its bright green wall-mounted cabinet in a school hallway, with the universal heart/lightning bolt AED sign clearly visible above it" >}}
+---
+
+You now have the most critical life-saving skills in the entire First Aid badge. Next, you'll move into musculoskeletal injuries — sprains, strains, and fractures.
 
 {{< drg/next-page
-    text="You now understand heart attacks, when to start CPR, how an AED works, and where AEDs are usually found."
-    teaser="Learn about muscle and bone injuries — strains, sprains, fractures, and dislocations."
+    text="CPR and AED skills are the most important tools you've learned"
+    teaser="Now learn about injuries to muscles and bones — from a strained ankle to a suspected femur fracture — and how to manage them in the field."
     url="/merit-badges/first-aid/guide/req8a/" >}}

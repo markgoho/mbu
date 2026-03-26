@@ -1,125 +1,120 @@
 ---
-title: "Req 14 — Teaching First Aid"
-layout: guide
-group_title: "Teaching & Careers"
+title: "Req 14 — Teaching with EDGE"
+layout: "guide"
+group_title: "Teaching First Aid"
 req_number: "14"
+req_path: "14"
 prev: "/merit-badges/first-aid/guide/req13/"
-prev_title: "Req 13 — Miscellaneous Conditions"
+prev_title: "Req 13 — Eyes, Teeth & Strokes"
 next: "/merit-badges/first-aid/guide/req15/"
-next_title: "Req 15 — EMS Careers"
+next_title: "Req 15 — Explore EMS Careers"
 ---
 
 {{< drg/requirement number="14" >}}
 With guidance from your counselor, develop a plan to teach a first-aid skill or topic using the EDGE method. Discuss your skill, topic, and plan with your counselor, and then teach your skill or topic to your family or to one or more Scouts.
 {{< /drg/requirement >}}
 
-Teaching is one of the most powerful ways to solidify your own knowledge. When you teach a first aid skill, you do not just pass on information — you deepen your own understanding and give others the ability to help in an emergency. This requirement asks you to plan and deliver a first aid lesson using the EDGE method.
+You've learned an enormous amount about first aid. Now you'll pass some of it on — because teaching is one of the deepest forms of learning, and because the whole point of first aid knowledge is for it to spread.
 
 ## The EDGE Method
 
-**EDGE** is Scouting's teaching framework. It stands for:
+EDGE is Scouting's framework for teaching any practical skill. It stands for:
 
-### Explain
+| Letter | Step | What It Means |
+|--------|------|--------------|
+| **E** | **Explain** | Tell the learner what they're about to learn and why it matters |
+| **D** | **Demonstrate** | Show them exactly how to do it, step by step |
+| **G** | **Guide** | Help them do it — with your hands, your voice, and your presence |
+| **E** | **Enable** | Step back and let them do it on their own while you observe |
 
-Tell your learners **what** the skill is and **why** it matters. Give them context before diving into the how-to.
+EDGE isn't just a mnemonic — it reflects a genuine learning progression. You can't guide someone through a skill they haven't seen demonstrated, and you can't enable someone who hasn't been guided. The order matters.
 
-- "Today I'm going to teach you how to apply a tourniquet. This skill can stop life-threatening bleeding in seconds. Here's why it's important..."
+## Choosing Your Skill or Topic
 
-### Demonstrate
+You have tremendous flexibility here. Some questions to help you choose:
 
-**Show** the skill step by step while narrating what you are doing. Go slowly. Your learners should be watching, not doing — yet.
+- What skill from this badge was most surprising or impactful for you?
+- What skill would be most immediately useful to the people you're teaching?
+- What can you credibly demonstrate with the equipment you have?
 
-- "Watch me. First, I place the tourniquet high on the limb, above the wound..."
+**Strong choices for a family teaching session:**
+- Hands-only CPR (demonstrated on a training mannequin or pillow)
+- Using an EpiPen (or demonstrated with a trainer device)
+- Stopping severe bleeding with direct pressure and improvised dressing
+- Removing a tick properly
+- Recognizing and responding to a stroke (FAST)
 
-### Guide
+**Strong choices for a Scout teaching session:**
+- Building a personal first aid kit and demonstrating each item
+- Applying an ankle wrap or arm sling
+- Scene assessment and the 3 C's
+- Recognizing shock
 
-Now let **them** try it while you **watch and coach**. Give feedback in real time. Correct mistakes gently and encourage progress.
+## Building Your Teaching Plan
 
-- "Great, now you try it. Remember — high and tight. Good. Now twist the windlass... that's it. One more turn."
+Work through the four EDGE steps as a written or verbal plan before discussing with your counselor.
 
-### Enable
+### Explain Phase (2–3 minutes)
 
-Step back and let them **practice independently**. Check in, answer questions, but let them build confidence by doing it on their own.
+- **What is this skill?** Give a clear, one-sentence definition.
+- **Why does it matter?** Give a specific, realistic scenario where this skill would be used.
+- **What will the learner be able to do by the end?** Make it concrete: "By the end of this lesson, you'll be able to apply an arm sling that safely immobilizes the arm for transport."
 
-- "Now do it again on your own, start to finish. I'll be right here if you need me."
+### Demonstrate Phase (3–5 minutes)
 
-{{< drg/tip >}}
-The EDGE method works for any skill — not just first aid. You can use it to teach knots, fire-starting, cooking, or any other Scout skill. The key is spending time in each phase and not jumping straight to "now you do it."
-{{< /drg/tip >}}
+- Do the skill yourself, slowly, talking through each step.
+- Emphasize the parts that are counterintuitive or easy to get wrong.
+- Demonstrate any equipment needed.
 
-## Choosing Your Topic
+### Guide Phase (5–10 minutes)
 
-Pick a skill that is:
+- Have the learner try the skill while you're right there.
+- Give specific, actionable feedback: not "that's wrong" but "bring your elbow a little higher — there, that's the position."
+- Let them make small mistakes and correct; this is better for learning than jumping in immediately.
 
-- **Practical and demonstrable** — you can actually show the steps, not just talk about them
-- **Appropriate for your audience** — match the complexity to who you are teaching
-- **Something you know well** — you should be able to teach it confidently
+### Enable Phase (3–5 minutes)
 
-### Good First Aid Topics for EDGE Teaching
+- Have the learner perform the skill independently while you observe without coaching.
+- Evaluate: did they get the key steps right? Are there safety-critical errors?
+- Give brief, positive reinforcement of what worked, and identify one specific improvement.
 
-{{< drg/checklist title="Topic Ideas" subtitle="Skills that work well for EDGE teaching" >}}
-- CPR (Hands-Only): High impact, easy to practice with demonstrations
-- Tourniquet application: Timely, life-saving, straightforward steps
-- Arm sling: Hands-on bandaging skill with clear steps
-- Choking response (Heimlich maneuver): Practical and universally useful
-- Wound cleaning and bandaging: Basic skill everyone should know
-- Splinting a forearm: Uses improvised materials — engaging for Scouts
-- Recovery position: Quick to learn, critical for unconscious victims
-- Tick removal: Especially relevant for outdoor Scouts
-- Blister prevention and treatment: Practical trail skill
-- Treating for shock: Important and often misunderstood
+## Tips for an Effective Teaching Session
+
+{{< drg/checklist title="Before Your Lesson" subtitle="Preparation makes the difference" >}}
+
+- Practice the skill yourself until it's fluent — you can't teach what you're unsure of
+- Gather all needed materials ahead of time
+- Decide who your learner(s) will be and adjust vocabulary for their age/background
+- Plan for about 15–20 minutes total
+- Know what success looks like — you need a clear standard to evaluate against
 {{< /drg/checklist >}}
 
-## Planning Your Lesson
+{{< drg/tip >}}
+The hardest part of EDGE is the Enable step. Most Scout instructors jump back in too quickly when the learner makes a mistake. Resist that impulse — guided struggle is when real learning happens. Let them work through it unless they're about to do something unsafe.
+{{< /drg/tip >}}
 
-Before you teach, plan your lesson. Here is a framework:
+## Discussing Your Plan with Your Counselor
 
-### Lesson Plan Template
+Before you teach, talk through your plan. Your counselor will likely ask:
 
-1. **Topic:** What skill are you teaching?
-2. **Audience:** Who are you teaching? (Family members, younger Scouts, patrol members)
-3. **Objective:** What should learners be able to do after the lesson?
-4. **Materials needed:** What supplies do you need? (Bandages, splints, mannequin, etc.)
-5. **EDGE steps:**
-   - **Explain** (2–3 minutes): What is this skill? Why does it matter? When would you use it?
-   - **Demonstrate** (3–5 minutes): Show the complete skill step by step.
-   - **Guide** (5–10 minutes): Have each learner practice while you coach.
-   - **Enable** (5 minutes): Let learners practice independently. Assess their competence.
-6. **Assessment:** How will you know they learned the skill? (Can they demonstrate it correctly without prompts?)
+- Why did you choose this skill?
+- Who are you teaching it to, and why is this appropriate for that audience?
+- Walk me through your EDGE plan step by step.
+- What materials do you need?
+- How will you know if the learner successfully learned the skill?
 
-### Tips for Teaching Well
-
-- **Keep it short.** A 15–20 minute focused lesson is better than a 45-minute lecture.
-- **Use real scenarios.** "Imagine you're hiking and your buddy trips and sprains their ankle. What do you do?"
-- **Let them practice.** Hands-on time is where learning actually happens.
-- **Give constructive feedback.** Be specific: "Try placing your hands a little higher on the chest" rather than "You're doing it wrong."
-- **Be patient.** Not everyone learns at the same speed.
-- **Make it fun.** Use a scenario, create a mini-competition, or set up a realistic practice station.
-
-{{< drg/did-you-know >}}
-Studies in medical education show that "see one, do one, teach one" is one of the most effective learning sequences. By the time you teach a skill to someone else, your own retention and understanding increase dramatically. Teaching makes you better at the skill, not just the person learning.
-{{< /drg/did-you-know >}}
-
-{{< drg/image src="images/teaching-first-aid.avif" alt="A Scout standing in front of a small group of younger Scouts, demonstrating how to apply an arm sling, with the learners watching attentively" >}}
-
-## After You Teach
-
-Discuss the experience with your counselor:
-
-- What topic did you choose and why?
-- How did the EDGE method work for you?
-- What went well?
-- What would you do differently next time?
-- Did your learners achieve the objective?
-
-{{< drg/image src="images/edge-method-practice.avif" alt="Two Scouts practicing a first aid skill together, one guiding the other through bandaging technique, representing the Guide phase of EDGE" >}}
+After you've taught it, come back to your counselor with a brief report on how it went — what worked, what didn't, and what you'd do differently next time.
 
 {{< drg/external-link
-    title="Scouting America — EDGE Method Overview"
-    url="https://www.scouting.org/"
-    description="Learn more about the EDGE teaching method and how it is used throughout the Scouting program for skill development." >}}
+    title="The Teaching EDGE: The Best Way to Teach Someone a New Skill"
+    url="https://blog.scoutingmagazine.org/2017/05/05/living-on-the-edge-this-is-the-correct-way-to-teach-someone-a-skill/"
+    description="Scout Life's explanation of the EDGE teaching method with examples of how to apply it to Scouting skills." >}}
+
+---
+
+Almost there — the final requirement gives you a chance to explore emergency medicine as a possible career or life path.
 
 {{< drg/next-page
-    text="You now have a plan to teach first aid using the EDGE method."
-    teaser="Explore careers in emergency medical services — from EMTs to paramedics to emergency physicians."
+    text="You've taught a first aid skill using the EDGE method"
+    teaser="For the final requirement, explore the professional world of emergency medical services — and whether it might be a path for you."
     url="/merit-badges/first-aid/guide/req15/" >}}

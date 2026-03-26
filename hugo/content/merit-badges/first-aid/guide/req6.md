@@ -1,42 +1,51 @@
 ---
-title: "Req 6 — Loss of Consciousness"
-layout: guide
+title: "Req 6 — Fainting, Seizures & Drowning"
+layout: "guide"
 group_title: "Loss of Consciousness"
 req_number: "6"
+req_path: "6"
 prev: "/merit-badges/first-aid/guide/req5/"
-prev_title: "Req 5 — Breathing Emergencies"
+prev_title: "Req 5 — Choking, Asthma & Altitude"
 next: "/merit-badges/first-aid/guide/req7/"
-next_title: "Req 7 — Heart Attack, CPR & AEDs"
+next_title: "Req 7 — CPR and AED"
 ---
 
 {{< drg/requirement number="6" >}}
 Loss of Consciousness. Describe the symptoms and signs of, show first aid for, and explain prevention of these conditions causing loss of consciousness:
 {{< /drg/requirement >}}
 
-These emergencies can happen fast and look overwhelming, but the same pattern helps you stay focused: recognize the warning signs, give the right first aid, and understand how the emergency might have been prevented. Work through each condition below with that three-part frame in mind.
+When someone loses consciousness, it's immediately alarming — and a whole range of different causes require different responses. This requirement covers seven causes of loss of consciousness:
 
-## Fainting (Syncope)
+- **6a** — Fainting
+- **6b** — Hypoglycemia (low blood sugar)
+- **6c** — Seizure
+- **6d** — Drug overdose and alcohol poisoning
+- **6e** — Underwater hypoxic blackout
+- **6f** — Cold water shock and drowning
+- **6g** — Lightning strike and electric shock
+
+---
+
+## Requirement 6a: Fainting
 
 {{< drg/inherited-requirement number="6a" req_path="6.a" topic="Fainting" />}}
 
-Fainting happens when the brain temporarily does not get enough blood flow. It is usually brief — the person collapses, then wakes up within a minute or two. Common triggers include standing for long periods, heat, dehydration, emotional stress, and standing up too quickly.
+**What it is:** Fainting (syncope) is a brief loss of consciousness caused by temporarily reduced blood flow to the brain. It's usually harmless — but the fall can cause injury, and it sometimes signals something more serious.
 
-**Signs before fainting:** Lightheadedness, pale or gray skin, sweating, nausea, blurred or tunnel vision, feeling warm.
+**Common triggers:** Standing up too quickly, prolonged standing in heat, emotional shock (seeing blood, receiving bad news), pain, dehydration, or standing in a hot shower.
 
-**First aid:**
+**Warning signs before fainting:** Dizziness or lightheadedness; nausea; pale, clammy skin; visual changes (tunnel vision or spots); ringing in the ears; weakness in the legs.
 
-1. **If you notice warning signs,** help the person sit or lie down immediately. Have them put their head between their knees if sitting.
-2. **If they have already fainted,** check for breathing and pulse. Place them on their back and elevate their legs about 12 inches.
-3. **Loosen tight clothing** around the neck and waist.
-4. **Do not splash water on their face** or slap them — this is not helpful.
-5. **When they wake up,** keep them lying down for several minutes. Offer water. Help them sit up slowly.
-6. **Call 911** if the person does not regain consciousness within a minute, if they hit their head during the fall, if they have chest pain or difficulty breathing, or if this is their first fainting episode with no clear cause.
+**If someone is about to faint:** Help them lie down or sit down with head between knees. This restores blood flow to the brain before loss of consciousness.
 
-**Prevention:** Stay hydrated. Avoid standing still for long periods — shift your weight, flex your calves. If you feel faint, lie down or sit with your head between your knees right away. Eat regular meals.
+**After fainting:**
+1. Lay them on their back with legs elevated (unless injured from the fall).
+2. Loosen any tight clothing.
+3. Ensure the airway is open and check for breathing.
+4. Most people recover within 1–2 minutes.
+5. Don't give anything by mouth until fully conscious.
 
-{{< drg/tip >}}
-Fainting at flag ceremonies and outdoor formations is common in Scouting — especially on hot days. If you are standing in formation and start to feel lightheaded, take a knee immediately. It is far safer to step out of formation than to fall face-first onto the ground.
-{{< /drg/tip >}}
+**When to call 911:** No regaining of consciousness within 1–2 minutes; fainting during exertion (a warning sign for cardiac problems); accompanying chest pain, shortness of breath, or heart palpitations; head injury from the fall.
 
 {{< drg/video
     title="Fainting"
@@ -44,36 +53,37 @@ Fainting at flag ceremonies and outdoor formations is common in Scouting — esp
 
 ---
 
-## Hypoglycemia (Low Blood Sugar)
+## Requirement 6b: Hypoglycemia
 
 {{< drg/inherited-requirement number="6b" req_path="6.b" topic="Hypoglycemia" />}}
 
-**Hypoglycemia** occurs when blood sugar drops too low — usually below 70 mg/dL. It most commonly affects people with diabetes who take insulin or certain medications, but it can also happen to anyone who has not eaten for a long time, especially during intense physical activity.
+**What it is:** Hypoglycemia (low blood sugar, below 70 mg/dL) occurs most commonly in people with diabetes who take insulin or certain diabetes medications. It can also occur in people who haven't eaten in a long time and have been exercising heavily.
 
-**Signs and symptoms:** Shakiness, sweating, pale skin, hunger, irritability, confusion, dizziness, rapid heartbeat, weakness, slurred speech, and in severe cases, loss of consciousness and seizures.
+The brain runs almost exclusively on glucose. When blood sugar drops, brain function deteriorates rapidly.
 
-**First aid:**
+**Signs and symptoms (mild to moderate):**
+- Shakiness, trembling
+- Sweating, pale skin
+- Rapid heartbeat
+- Hunger
+- Headache
+- Dizziness
+- Confusion, irritability, or unusual behavior
 
-1. **If the person is conscious and can swallow,** give them fast-acting sugar immediately:
-   - Glucose tablets (the best option — carried by many diabetics)
-   - Fruit juice (4 oz)
-   - Regular soda (not diet)
-   - Hard candy
-   - Honey or sugar packets
+**Signs and symptoms (severe):** Seizures, unconsciousness.
 
-2. **Wait 15 minutes,** then check if they feel better. If not, give another dose of sugar.
+**First aid for a conscious patient:**
+Give **15–20 grams of fast-acting sugar** (the "15-15 rule"):
+- 4 oz of fruit juice or regular soda (not diet)
+- 3–4 glucose tablets
+- A tablespoon of honey or sugar
+Recheck symptoms in 15 minutes. Repeat if still symptomatic. Follow with a snack containing protein and carbohydrates.
 
-3. **Once they improve,** have them eat a snack with protein and carbohydrates (peanut butter crackers, cheese and crackers) to stabilize blood sugar.
+**If unconscious:** Do NOT give anything by mouth. Call 911. If the person carries a glucagon kit and you are trained to use it, administer it.
 
-4. **If the person is unconscious or unable to swallow, do not put anything in their mouth.** Call 911 immediately. Place them in the recovery position and keep the airway clear (review [Req 1](/merit-badges/first-aid/guide/req1/)). If they carry a glucagon kit, a trained person can administer it by injection.
-
-{{< drg/did-you-know >}}
-The brain uses about 20% of the body's total glucose supply even though it makes up only 2% of body weight. That is why low blood sugar affects thinking and behavior before anything else — the brain is literally running out of fuel.
-{{< /drg/did-you-know >}}
-
-**Prevention:** People with diabetes should monitor blood sugar regularly, carry fast-acting sugar at all times, and eat balanced meals. For all Scouts — eat regular meals and snacks during activities, especially in hot weather or during strenuous exercise.
-
-{{< drg/image src="images/hypoglycemia-response.avif" alt="A Scout offering a juice box to a fellow Scout who looks pale and shaky, sitting on a bench at a campsite" >}}
+{{< drg/tip >}}
+Many Scouts with diabetes carry juice boxes or glucose tablets specifically for this purpose. Know who in your troop has diabetes, and know where their emergency supplies are.
+{{< /drg/tip >}}
 
 {{< drg/video
     title="Diabetic Emergencies"
@@ -81,149 +91,138 @@ The brain uses about 20% of the body's total glucose supply even though it makes
 
 ---
 
-## Seizure
+## Requirement 6c: Seizure
 
 {{< drg/inherited-requirement number="6c" req_path="6.c" topic="Seizure" />}}
 
-A **seizure** occurs when there is a sudden burst of abnormal electrical activity in the brain. Seizures can be caused by epilepsy, head injuries, high fever, low blood sugar, drug overdose, or other medical conditions. Some seizures involve full-body convulsions; others may appear as staring spells or repetitive movements.
+**What it is:** A seizure is caused by abnormal electrical activity in the brain. Most seizures in Scouts with epilepsy are familiar and expected. But seizures can also result from head injury, high fever, low blood sugar, poisoning, or cardiac arrest.
 
-**Signs of a generalized (tonic-clonic) seizure:** Sudden stiffening of the body, uncontrolled jerking or shaking, loss of consciousness, drooling or foaming at the mouth, eyes rolling back, loss of bladder control, confusion or sleepiness after the seizure ends.
+**Generalized (tonic-clonic) seizure signs:** Sudden loss of consciousness; rigid body (tonic phase); rhythmic jerking of limbs (clonic phase); possible frothing at the mouth; possible loss of bladder or bowel control. Usually lasts 1–3 minutes.
 
-**First aid:**
+**What to do during a seizure:**
+1. **Keep them safe:** Move objects that could cause injury.
+2. **Ease them to the floor** if standing.
+3. **Protect the head:** Place something soft under it.
+4. **Roll them on their side** (recovery position) after convulsive movements stop — this prevents choking on saliva or vomit.
+5. **Note the time** — duration matters.
+6. **Stay with them** and reassure them as they regain consciousness; a postictal (post-seizure) state of confusion is normal.
 
-1. **Do not restrain the person.** You cannot stop a seizure by holding someone down. Restraining them can cause injuries.
-2. **Do not put anything in their mouth.** Despite the old myth, people cannot swallow their tongues during a seizure. Putting objects in the mouth can break teeth or cause choking.
-3. **Protect their head.** Place something soft (jacket, towel, your hands) under their head to prevent it from hitting the ground.
-4. **Clear the area.** Move furniture, rocks, or anything the person could hit during the seizure.
-5. **Time the seizure.** This information is critical for medical professionals.
-6. **After the seizure stops,** turn the person onto their side (recovery position) to keep the airway clear.
-7. **Stay with them.** The person will be confused and disoriented when they wake up. Speak calmly and reassure them.
+**What NOT to do:**
+- Do NOT restrain the person
+- Do NOT put anything in their mouth — the "swallowing their tongue" belief is a myth
+- Do NOT give water or food until fully conscious
+
+{{< drg/image src="images/recovery-position-body-alignment.avif" alt="Side-view recovery position showing bent top knee, lower arm extended, upper hand supporting the cheek, and airway-open head position" >}}
 
 **When to call 911:**
-- The seizure lasts more than 5 minutes
-- The person does not regain consciousness
-- Another seizure begins shortly after the first
-- The person is injured during the seizure
-- This is their first seizure or you do not know their seizure history
-- The person is pregnant, has diabetes, or is in water
-
-{{< drg/safety-first >}}
-The most important thing you can do during a seizure is protect the person from injury and let the seizure run its course. It will stop on its own. Your job is to keep them safe until it does.
-{{< /drg/safety-first >}}
-
-**Prevention:** People with epilepsy should take prescribed medications consistently, get adequate sleep, and avoid known triggers. For other causes — prevent head injuries with helmets, manage diabetes, and avoid substance abuse.
-
-{{< drg/be-prepared title="Seizure at a Campout" >}}
-A Scout suddenly falls to the ground and begins shaking uncontrollably during a campout.
-
-- **Stay calm.** Note the time the seizure started.
-- **Clear the area** of tent stakes, firewood, and camp chairs.
-- **Protect the head** by placing a folded jacket underneath.
-- **Do not hold them down** or put anything in their mouth.
-- **When the seizure stops** (usually 1–3 minutes), roll them onto their side.
-- **Check for a medical alert bracelet** — it may say "epilepsy" and list emergency contacts.
-- **If this is a known seizure condition** and the Scout recovers normally, monitor them. If it is their first seizure or lasts more than 5 minutes, call 911.
-{{< /drg/be-prepared >}}
-
-{{< drg/image src="images/seizure-first-aid.avif" alt="A Scout protecting the head of a person having a seizure by placing a folded jacket under their head, while keeping the area clear of obstacles" >}}
+- Seizure lasts more than 5 minutes
+- No return to consciousness between seizures
+- Injury during the seizure
+- First seizure (no known epilepsy)
+- Breathing problems after the seizure
+- Seizure in water
 
 {{< drg/video
-    title="Seizure First Aid — Epilepsy Foundation"
-    url="https://www.youtube.com/watch?v=Ovsw7tdneqE" >}}
-
-{{< drg/external-link
-    title="Epilepsy Foundation — Seizure First Aid"
-    url="https://www.epilepsy.com/first-aid"
-    description="Clear, step-by-step seizure first aid guidance from the leading epilepsy organization, including videos and printable guides." >}}
+    title="First Aid for a Seizure"
+    url="https://www.youtube.com/watch?v=nnpttMlAG_w" >}}
 
 ---
 
-## Drug Overdose and Alcohol Poisoning
+## Requirement 6d: Drug Overdose and Alcohol Poisoning
 
 {{< drg/inherited-requirement number="6d" req_path="6.d" topic="Drug overdose and alcohol poisoning" />}}
 
-An **overdose** occurs when a person takes more of a substance than their body can safely process. This can happen with prescription medications, over-the-counter drugs, illegal drugs, or alcohol.
+### Opioid Overdose
 
-**Alcohol poisoning** is a specific type of overdose caused by drinking a dangerous amount of alcohol in a short period. It is a leading cause of death among young people.
+Opioids (heroin, fentanyl, oxycodone) suppress the brain's drive to breathe. An opioid overdose victim stops breathing and dies of hypoxia (oxygen deprivation).
 
-**Signs and symptoms:** Confusion or unresponsiveness, slow or irregular breathing (fewer than 8 breaths per minute), blue or pale skin, vomiting (especially while unconscious), seizures, low body temperature, inability to be woken up.
+**Signs:** Unresponsive or unconscious; slow, shallow, or stopped breathing; pinpoint (very small) pupils; blue lips.
 
 **First aid:**
+1. Call 911.
+2. Administer **naloxone (Narcan)** if available — it reverses opioid effects in 2–5 minutes. It is available without a prescription in most states. First responders, schools, and many pharmacies stock it.
+3. If not breathing, begin rescue breathing or CPR.
+4. Place in recovery position if breathing but unconscious.
+5. Stay until EMS arrives — naloxone wears off in 30–90 minutes, and the overdose can return.
 
-1. **Call 911 immediately.** Do not wait to "see if they get better."
-2. **Check breathing.** If the person is not breathing, begin CPR.
-3. **Place them in the recovery position** if they are breathing but unconscious — this prevents choking on vomit.
-4. **Stay with them.** Monitor breathing continuously.
-5. **If you suspect an opioid overdose** (heroin, fentanyl, prescription painkillers) and naloxone (Narcan) is available, administer it as a nasal spray. Naloxone temporarily reverses opioid effects and is available without a prescription in most states.
-6. **Do not give them coffee, cold showers, or try to "walk it off."** These do not reverse an overdose and waste precious time.
+### Alcohol Poisoning
+
+Alcohol is a central nervous system depressant. High blood alcohol levels can cause unconsciousness, breathing suppression, choking on vomit, and cardiac arrest.
+
+**Signs:** Unconscious or minimally responsive; cold, clammy, pale or blue skin; slow or irregular breathing; strong alcohol odor; vomiting.
+
+**First aid:**
+1. Call 911.
+2. Roll to the recovery position (on their side) — people who are drunk and unconscious can vomit and aspirate (inhale) it.
+3. Monitor breathing continuously.
+4. Do NOT give coffee or food; do NOT put in a cold shower; do NOT leave them alone.
 
 {{< drg/safety-first >}}
-Never leave an intoxicated or overdosing person alone "to sleep it off." Alcohol and drugs can continue to absorb into the bloodstream after a person loses consciousness. What looks like sleeping can become a medical emergency — or a death — without warning.
+Never leave an unconscious person alone "to sleep it off." Alcohol levels can continue rising after someone stops drinking, and an unconscious person can stop breathing or aspirate vomit without anyone noticing.
 {{< /drg/safety-first >}}
-
-**Prevention:** Never misuse prescription medications. Avoid alcohol and drugs entirely — they are illegal for minors and dangerous at any age. If you see someone in danger, call for help. Good Samaritan laws in many states protect people who call 911 for an overdose from prosecution.
-
-{{< drg/did-you-know >}}
-Naloxone (Narcan) nasal spray can reverse an opioid overdose in 2–5 minutes. Many schools, camps, and public buildings now carry it. You do not need medical training to use it — the instructions are printed on the package, and it cannot harm someone who is not overdosing on opioids.
-{{< /drg/did-you-know >}}
 
 {{< drg/video
     title="Naloxone Treatment of an Opioid Overdose"
     url="https://youtu.be/8eUUf5ssH_4" >}}
 
+{{< drg/video
+    title="Alcohol Poisoning"
+    url="https://youtu.be/UqY7DZ46prA?si=BB3yLWOqqxd-jhsG" >}}
+
 ---
 
-## Underwater Hypoxic Blackout
+## Requirement 6e: Underwater Hypoxic Blackout
 
 {{< drg/inherited-requirement number="6e" req_path="6.e" topic="Underwater hypoxic blackout" />}}
 
-**Underwater hypoxic blackout** (also called shallow water blackout) happens when a swimmer loses consciousness underwater due to low oxygen levels in the blood. It is most often caused by **hyperventilating before diving** — taking several fast, deep breaths to "load up" on air. This does not actually increase oxygen — it just lowers carbon dioxide, which is the signal that tells your brain to breathe. The swimmer feels fine, dives under, and blacks out without warning.
+**What it is:** Shallow water blackout (more accurately, underwater hypoxic blackout) kills swimmers — including fit, athletic, competitive swimmers — every year. It is completely preventable once you understand the mechanism.
 
-**Signs:** A swimmer who suddenly stops moving underwater. An unconscious person at the bottom of a pool. A swimmer who surfaces unconscious or limp.
+**The mechanism:** Some swimmers hyperventilate (take many rapid deep breaths) before an underwater swim to extend their breath-hold time. This works by lowering CO₂ levels — but CO₂ is what triggers the urge to breathe. The swimmer can stay underwater until oxygen levels drop to the point of unconsciousness, all without feeling any warning urge to surface.
 
-**First aid:**
+**Why it's uniquely dangerous:** Unlike most drownings, there are often no signs of struggle. The swimmer simply stops moving and sinks.
 
-1. **Get the person out of the water** immediately. If you are trained in water rescue, follow safe rescue techniques. If not, use a reaching or throwing assist — do not swim to the victim unless you are a trained lifeguard.
-2. **Call 911.**
-3. **Check breathing and pulse.** Begin CPR immediately if needed.
-4. **Do not give up.** Drowning victims — especially in cold water — have survived after extended submersion. Continue CPR until EMS arrives.
+**First aid:** Rescue from the water immediately; begin CPR if not breathing; call 911.
 
-**Prevention:** Never hyperventilate before swimming underwater. Swim with a buddy who watches you from the surface. Never swim alone. Follow the BSA Safe Swim Defense guidelines.
+**Prevention:** Never hyperventilate before underwater swimming. Never swim alone. Never do breath-holding contests. Swim with a buddy who knows what to look for.
+
+{{< drg/safety-first >}}
+Never hyperventilate before attempting an underwater distance swim, even in a supervised pool. This practice has killed competitive swimmers who were not in distress when they blacked out. The safer approach is to take only one or two deep breaths before swimming.
+{{< /drg/safety-first >}}
 
 {{< drg/external-link
-    title="Underwater Blackout"
+    title="Underwater Hypoxic Blackout"
     url="https://underwaterhypoxicblackout.org/"
-    description="A focused educational resource explaining shallow-water blackout, why hyperventilation is dangerous, and how to prevent this silent drowning hazard." >}}
+    description="A dedicated educational site explaining the mechanism, statistics, and prevention of hypoxic blackout in swimmers." >}}
 
 ---
 
-## Cold Water Shock and Drowning
+## Requirement 6f: Cold Water Shock and Drowning
 
 {{< drg/inherited-requirement number="6f" req_path="6.f" topic="Cold water shock and drowning" />}}
 
-**Cold water shock** is the body's involuntary response to sudden immersion in cold water (below 70°F / 21°C). Within the first minute, the body gasps, hyperventilates, and the heart rate spikes. This can cause a person to inhale water and drown even if they are a strong swimmer.
+### Cold Water Shock
 
-If a person survives the initial shock, cold water rapidly saps strength and coordination. Within 10–15 minutes, the muscles may become so weak that the person cannot swim or hold onto a rescue device.
+Sudden immersion in cold water (below 59°F / 15°C) triggers an immediate, involuntary gasp reflex and hyperventilation. This gasp can happen before you have a chance to take a breath — meaning you can inhale water in the first seconds.
 
-**Drowning** is death by suffocation in water. It is the leading cause of unintentional death for children ages 1–4 and a top cause for all ages.
+Cold water shock can also trigger cardiac arrhythmias in susceptible individuals, causing sudden death in the water unrelated to drowning.
 
-**Signs of a drowning person:** Head low in the water with mouth at water level. Head tilted back with mouth open. Glassy, unfocused eyes. Vertical body position, not using legs. Trying to swim but making no forward progress. Attempting to roll over on the back. Silence — drowning is almost always silent.
+**Response:** If you fall into cold water, fight the urge to swim hard immediately. Float on your back, breathe, and wait for the cold shock response to subside (1–3 minutes). Then assess your situation before attempting to swim to safety.
 
-**First aid:**
+### Drowning
 
-1. **Do not jump in** unless you are trained in water rescue. More than half of people who die trying to rescue a drowning person are untrained bystanders.
-2. **Reach, throw, row, go** — in that order. Extend a pole or branch. Throw a flotation device. Use a boat. Enter the water only as a last resort with proper training.
-3. **Call 911.**
-4. **Once the person is out of the water,** check breathing and begin CPR if needed.
-5. **Treat for hypothermia.** Remove wet clothing. Wrap in blankets. Warm gradually.
+A drowning person is often silent — they don't have the breath to yell for help. True drowning is vertical, with mouth at or near the water surface, arms pressing down at the sides, head tilted back.
 
-{{< drg/safety-first >}}
-Never enter cold water to rescue someone unless you are wearing a personal flotation device (PFD) and are trained in cold-water rescue. Cold water shock can disable even the strongest swimmer in seconds. Throw a rope, a cooler, a life jacket — anything that floats.
-{{< /drg/safety-first >}}
+**Rescue priority:** Reach, throw, don't go. Reach with a paddle or rope; throw a flotation device; only enter the water as an absolute last resort (a panicking drowning victim can push you underwater).
 
-**Prevention:** Always wear a PFD when boating or paddling. Never swim alone. Follow BSA Safe Swim Defense and Safety Afloat policies. Learn to swim well. Know the water temperature before entering.
+**First aid after removal from water:**
+1. Call 911 immediately.
+2. Begin CPR if the person is not breathing — do NOT wait for the person to "wake up" on the way to shore.
+3. Drowning victims are often hypothermic — protect from further heat loss after CPR is established.
+4. All near-drowning patients need hospital evaluation even if they seem fine — secondary drowning (delayed pulmonary edema) can occur hours later.
 
-{{< drg/image src="images/water-rescue-throw.avif" alt="A Scout on a dock throwing a ring buoy to a person in the water, demonstrating the throw step of reach-throw-row-go rescue" >}}
+{{< drg/video
+    title="Understanding Cold Water Shock"
+    url="https://youtu.be/RypLau65Wa0?si=c25FnmssnqvQqecU" >}}
 
 {{< drg/video
     title="How to Perform CPR for a Drowning Victim"
@@ -231,47 +230,39 @@ Never enter cold water to rescue someone unless you are wearing a personal flota
 
 ---
 
-## Lightning Strike and Electric Shock
+## Requirement 6g: Lightning Strike and Electric Shock
 
 {{< drg/inherited-requirement number="6g" req_path="6.g" topic="Lightning strike and electric shock" />}}
 
-A **lightning strike** delivers up to 300 million volts in a fraction of a second. Lightning can cause cardiac arrest, severe burns, nerve damage, and brain injury. **Electric shock** from power lines, outlets, or equipment can cause similar injuries.
+### Lightning Strike
 
-**Signs and symptoms:** Loss of consciousness, cardiac arrest (no pulse), burns (entry and exit points), confusion, muscle pain, numbness, difficulty breathing, seizures.
+Lightning strikes carry 100 million to 1 billion volts — but they're extremely brief (a few milliseconds). Most lightning deaths are from cardiac arrest caused by the massive current disrupting the heart's electrical system.
+
+**Contrary to common myth: Lightning strike victims are NOT electrically charged after the strike.** You can touch them safely.
+
+**Signs:** Burns at entry and exit points (often the top of the head or shoulders and the feet); cardiac arrest; confusion or loss of consciousness; keraunoparalysis (temporary paralysis of limbs); flash blindness.
 
 **First aid:**
+1. Ensure the scene is safe — move to shelter if lightning is still active.
+2. Begin CPR immediately if the victim is unresponsive and not breathing.
+3. Call 911.
+4. Treat burns with cool water and sterile dressings.
 
-1. **Ensure the scene is safe.** For lightning: if there is still a storm, move the victim and yourself to a safe structure or vehicle if you can do so quickly. For electrical shock: make sure the power source is off before touching the victim.
-2. **Call 911 immediately.**
-3. **Check for breathing and a pulse.** Lightning can stop the heart. Begin CPR immediately if there is no pulse — lightning victims have a high survival rate with prompt CPR.
-4. **Treat burns** at entry and exit points.
-5. **Treat for shock** — lay the person down, elevate legs, keep warm.
-6. **Check for spinal injuries** — the force of a lightning strike or fall from electrical contact can cause fractures.
+**Prevention:** If caught outside in a storm, avoid the tallest trees, open fields, and ridgelines. Spread out (don't huddle together — ground current can injure multiple people). Crouch low with feet together and hands over ears if no shelter is available.
 
-{{< drg/did-you-know >}}
-It is safe to touch a person who has been struck by lightning. The human body does not store electrical charge. Do not hesitate to begin CPR — the delay caused by this myth has cost lives.
-{{< /drg/did-you-know >}}
+### Electric Shock
 
-**Prevention:** Follow the 30/30 rule — if the time between a lightning flash and thunder is 30 seconds or less, go inside. Wait 30 minutes after the last thunder before going back outside. Avoid open fields, hilltops, tall isolated trees, and bodies of water during storms. Stay away from downed power lines.
+See also Req 3d for electrical burns. Cardiac arrest and respiratory arrest are the primary life threats from electric shock. Begin CPR if needed; call 911; do not touch the victim until the power source is confirmed off.
 
-{{< drg/be-prepared title="Lightning at Camp" >}}
-During a sudden thunderstorm at camp, a Scout is struck by lightning and falls to the ground.
+{{< drg/video
+    title="First Aid for Electrical Shocks and Lightning Strikes"
+    url="https://youtu.be/oFLAKfjEjcg?si=GCT03PYYxBdE4jNd" >}}
 
-- **Move quickly** — the storm is still a danger. If a safe structure is nearby, move the victim there.
-- **Check for a pulse.** Lightning commonly causes cardiac arrest.
-- **Begin CPR immediately** if there is no pulse. Lightning victims respond well to CPR.
-- **Send someone to call 911** while you continue CPR.
-- **Check for burns and other injuries** once the victim is stabilized.
-{{< /drg/be-prepared >}}
+---
 
-{{< drg/image src="images/lightning-safety.avif" alt="Scouts quickly moving toward a sturdy building as dark storm clouds and lightning appear in the distance, with one Scout gesturing urgently to the group" >}}
-
-{{< drg/external-link
-    title="National Weather Service — Lightning Safety"
-    url="https://www.weather.gov/safety/lightning"
-    description="Official NWS lightning safety guidelines, including the 30/30 rule, safe shelter criteria, and first aid for lightning strike victims." >}}
+Now that you know how to respond when someone loses consciousness, you'll learn the most famous — and most important — first aid skill of all: CPR.
 
 {{< drg/next-page
-    text="You have learned how to recognize, respond to, and help prevent seven causes of loss of consciousness."
-    teaser="Learn about heart attacks, CPR, and how automated external defibrillators can restart a stopped heart."
+    text="You've learned to recognize why people lose consciousness"
+    teaser="Now learn to respond when the heart itself stops — with CPR, AEDs, and heart attack recognition."
     url="/merit-badges/first-aid/guide/req7/" >}}

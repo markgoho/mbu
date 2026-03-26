@@ -13,10 +13,13 @@ type ImageStyle =
   | "annotated-photo"
   | "comparison";
 
+type VerbFamily = "show" | "describe" | "identify" | "create";
+
 interface DrgImage {
   id: string;
   file: string;
   style?: ImageStyle;
+  verb_family?: VerbFamily;
   description: string;
 }
 
@@ -240,6 +243,21 @@ SCENE: `;
   }
 }
 
+function buildVerbFamilyGuidance(verbFamily?: VerbFamily): string {
+  switch (verbFamily) {
+    case "show":
+      return "\n\nVERB FAMILY GUIDANCE: The requirement is action-forward and demonstration-oriented. Prefer prompts that clearly show technique, sequence, comparison, or observable steps when the image adds real teaching value. When the requirement specifically uses demonstrate-style wording, prefer photographic step-wise instructional imagery over abstract diagrams.\n\n";
+    case "describe":
+      return "\n\nVERB FAMILY GUIDANCE: The requirement is explanation-oriented. Prefer prompts that clarify structure, labeled parts, or visual relationships when the image helps the reader understand what is being described.\n\n";
+    case "identify":
+      return "\n\nVERB FAMILY GUIDANCE: The requirement is identification-oriented. Prefer prompts that support visual recognition, side-by-side comparison, or distinguishing features.\n\n";
+    case "create":
+      return "\n\nVERB FAMILY GUIDANCE: The requirement is planning/building-oriented. Prefer prompts that show layout, assembly, spatial arrangement, or before-and-after outcomes.\n\n";
+    default:
+      return "";
+  }
+}
+
 function loadManifest(badge: string): DrgManifest {
   const manifestPath = path.resolve(
     `hugo/content/merit-badges/${badge}/guide/images.json`,
@@ -272,7 +290,8 @@ async function generateImage(
 ): Promise<Buffer | null> {
   const style: ImageStyle = image.style ?? "photo";
   const styleGuide = buildStyleGuide(context, style);
-  const prompt = styleGuide + image.description;
+  const verbGuidance = buildVerbFamilyGuidance(image.verb_family);
+  const prompt = styleGuide + verbGuidance + image.description;
 
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {

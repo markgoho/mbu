@@ -499,6 +499,7 @@ function createOverviewPage({
     title: requirementTitle({ path: requirement.path }),
     groupTitle,
     reqNumber: compactRequirementNumber({ path: requirement.path }),
+    reqPath: requirement.path,
     isSub,
     body: buildOverviewPageBody({ requirement, kind }),
   };
