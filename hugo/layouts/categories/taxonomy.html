@@ -7,7 +7,7 @@
 
   <section class="badges-grid">
     {{ range $index, $page := .Pages.ByTitle }}
-      {{ $json := index $.Site.Data "merit-badges" $page.File.ContentBaseName }}
+      {{ $json := index hugo.Data "merit-badges" $page.File.ContentBaseName }}
       {{ if $json }}
         {{ $reqCount := len $json.requirements }}
         {{ $hasGuide := $page.GetPage "guide" }}

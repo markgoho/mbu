@@ -1,6 +1,6 @@
 {{- /* JSON-LD Course schema for merit badge requirements pages */ -}}
 {{- $badge := .Parent -}}
-{{- $json := index .Site.Data "merit-badges" $badge.File.ContentBaseName -}}
+{{- $json := index hugo.Data "merit-badges" $badge.File.ContentBaseName -}}
 {{- $reqCount := len $json.requirements -}}
 
 {{- /* Use frontmatter description or generate fallback */ -}}

@@ -8,7 +8,7 @@
   {{ $standaloneBadges := slice }}
   {{ $groupedBadges := dict }}
   {{ range $meritBadges.Pages.ByTitle }}
-    {{ $json := index $.Site.Data "merit-badges" .File.ContentBaseName }}
+    {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
     {{ if $json }}
       {{ if $json.eagle_required }}
         {{ $entry := dict "page" . "json" $json }}
