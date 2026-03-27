@@ -248,7 +248,7 @@ Convert all generated images to AVIF format (800px wide, quality 80):
 bun run convert:drg-images -- --badge {slug}
 ```
 
-The conversion script already prefers `.png` sources, writes `.avif` outputs, and can resize existing `.avif` files in place when needed. Do not add a manual `rm` step here.
+The conversion script prefers `.png` sources, writes `.avif` outputs, can resize existing `.avif` files in place when needed, and removes source PNGs automatically after successful conversion. Do not add a manual `rm` step here.
 
 ### Step 4: Replace Placeholders with Shortcodes
 

@@ -91,21 +91,37 @@ async function convertToAvif({
 }: {
   image: ImageFile;
   force: boolean;
-}): Promise<{ converted: boolean; originalSize: number; newSize: number }> {
+}): Promise<{
+  converted: boolean;
+  originalSize: number;
+  newSize: number;
+  removedPng: boolean;
+}> {
   const isAvifSource = image.filePath.endsWith(".avif");
   const avifPath = isAvifSource
     ? image.filePath
     : image.filePath.replace(/\.png$/, ".avif");
 
   if (!force && !isAvifSource && fs.existsSync(avifPath)) {
-    return { converted: false, originalSize: 0, newSize: 0 };
+    fs.unlinkSync(image.filePath);
+    return {
+      converted: false,
+      originalSize: 0,
+      newSize: 0,
+      removedPng: true,
+    };
   }
 
   // For AVIF sources, check if already at target width
   if (!force && isAvifSource) {
     const metadata = await sharp(image.filePath).metadata();
     if (metadata.width !== undefined && metadata.width <= AVIF_WIDTH) {
-      return { converted: false, originalSize: 0, newSize: 0 };
+      return {
+        converted: false,
+        originalSize: 0,
+        newSize: 0,
+        removedPng: false,
+      };
     }
   }
 
@@ -125,12 +141,18 @@ async function convertToAvif({
       .resize(AVIF_WIDTH, undefined, { fit: "inside" })
       .avif({ quality: AVIF_QUALITY })
       .toFile(avifPath);
+    fs.unlinkSync(image.filePath);
   }
 
   const newStats = await stat(avifPath);
   const newSize = newStats.size;
 
-  return { converted: true, originalSize, newSize };
+  return {
+    converted: true,
+    originalSize,
+    newSize,
+    removedPng: !isAvifSource,
+  };
 }
 
 function formatBytes(bytes: number): string {
@@ -150,17 +172,18 @@ async function main(): Promise<void> {
   const images = await findDrgImages(options.badge);
 
   if (images.length === 0) {
-    console.log("No PNG images found.");
+    console.log("No DRG images found.");
     return;
   }
 
   const scope = options.badge !== undefined ? options.badge : "all badges";
   console.log(
-    `Found ${images.length} PNG images (${scope})${options.force ? " [force mode]" : ""}`,
+    `Found ${images.length} DRG images (${scope})${options.force ? " [force mode]" : ""}`,
   );
 
   let convertedCount = 0;
   let skippedCount = 0;
+  let removedPngCount = 0;
   let totalOriginalSize = 0;
   let totalNewSize = 0;
 
@@ -170,6 +193,9 @@ async function main(): Promise<void> {
       const result = await convertToAvif({ image, force: options.force });
       if (result.converted) {
         convertedCount++;
+        if (result.removedPng) {
+          removedPngCount++;
+        }
         totalOriginalSize += result.originalSize;
         totalNewSize += result.newSize;
         const savings = (
@@ -181,6 +207,10 @@ async function main(): Promise<void> {
         );
       } else {
         skippedCount++;
+        if (result.removedPng) {
+          removedPngCount++;
+          console.log(`  ✓ Removed source PNG after confirming existing AVIF: ${image.badge}/${basename}`);
+        }
       }
     } catch (error: unknown) {
       const errorMessage =
@@ -193,6 +223,9 @@ async function main(): Promise<void> {
   console.log("CONVERSION COMPLETE");
   console.log(`${"=".repeat(50)}`);
   console.log(`Converted: ${convertedCount}`);
+  if (removedPngCount > 0) {
+    console.log(`Removed PNG sources: ${removedPngCount}`);
+  }
   if (skippedCount > 0) {
     console.log(`Skipped (already exist): ${skippedCount}`);
   }
