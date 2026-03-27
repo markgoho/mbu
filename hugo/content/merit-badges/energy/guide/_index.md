@@ -107,7 +107,7 @@ Every time you flip on a light, charge a phone, toast bread, or ride in a car, y
 
 Energy is one of the biggest ideas in science because it connects almost everything you do. It shapes your home, your community, the environment, and the jobs people do every day. Once you start tracing energy through real systems, the world stops looking ordinary and starts looking like one giant chain of inputs, conversions, and consequences.
 
-<!-- IMAGE: energy-everyday-conversions.png | A Scout in a kitchen and living room with arrows showing electricity turning into light, sound, motion, and heat | style:diagram | verb:describe -->
+{{< drg/image src="images/energy-everyday-conversions.avif" alt="Diagram showing household electricity changing into light, sound, motion, and heat through everyday devices" >}}
 
 ## Then and Now
 

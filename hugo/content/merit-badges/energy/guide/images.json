@@ -1,0 +1,30 @@
+{
+  "badge": "energy",
+  "style_context": "Energy sources, energy conversion, electricity use, and efficiency in homes, schools, and everyday systems",
+  "images": [
+    {
+      "id": "energy-everyday-conversions",
+      "file": "_index.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "A clean instructional diagram of a Scout at home with a kitchen on one side and a living room on the other, showing everyday energy conversions. Electricity enters common devices and is shown turning into visible outputs: a lamp producing light and heat, a toaster producing heat, a phone charger producing stored battery energy and a little heat, a speaker producing sound, and a ceiling fan producing motion. Use simple arrows and short labels only for the energy forms, with a clear visual flow from electrical energy to light, sound, motion, and heat. No branding, no organization names, no decorative title text.",
+      "value": "Shows multiple everyday energy conversions side by side with visual flow arrows from electricity to light, sound, motion, and heat — a systems view that text alone cannot convey quickly"
+    },
+    {
+      "id": "simple-energy-conversion-builds",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "A four-panel educational diagram of simple Scout-safe energy projects, each shown as a small build with clear input and output arrows. Panel 1: a rubber-band car, showing human motion winding the band, stored elastic energy, and motion of the car. Panel 2: a small solar fan, showing sunlight turning into electricity and then spinning blades. Panel 3: a battery connected to an LED and small buzzer, showing chemical energy in the battery becoming electrical energy, then light and sound. Panel 4: a mini water wheel model, showing falling water turning the wheel and optionally a tiny generator. Keep the layout clean and visual-first with only brief labels for input and output energy forms. No branding or extra text.",
+      "value": "Shows four different build ideas with visible input-to-output energy pathways in one glance, making the conversion chains easier to compare than text alone"
+    },
+    {
+      "id": "school-energy-waste-audit",
+      "file": "req5.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "A realistic school hallway and entrance scene used for an energy-waste audit. Show bright daylight coming through windows while overhead lights are still on, an exterior door propped open while conditioned indoor air escapes, and a school pickup area visible outside with an idling vehicle waiting. Add only a few clear callouts highlighting each waste point: lights on in daylight, door open with heating or cooling escaping, and engine idling outside. The scene should feel like a practical walkthrough where a student is spotting waste in a real building. No logos, no school names, no branding.",
+      "value": "Shows several waste patterns in their real building context at once — the visual recognition of what to look for during an audit is more teachable in an annotated scene than in text alone"
+    }
+  ]
+}

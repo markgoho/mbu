@@ -67,7 +67,7 @@ Good project ideas include:
 Build only simple, age-appropriate systems with your counselor's and parent or guardian's guidance. Do not work with household wiring, open flames, pressurized fuels, or large power tools for this requirement unless a qualified adult has set up a safe environment for you.
 {{< /drg/safety-first >}}
 
-<!-- IMAGE: simple-energy-conversion-builds.png | Four small Scout-safe energy projects labeled with input and output arrows: rubber-band car, solar fan, battery LED, and mini water wheel | style:diagram | verb:create -->
+{{< drg/image src="images/simple-energy-conversion-builds.avif" alt="Four simple energy projects showing how different inputs are converted into motion, light, sound, and other outputs" >}}
 
 ### How to present your build
 

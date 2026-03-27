@@ -69,7 +69,7 @@ Ask these questions for each idea:
 The best suggestions are realistic. A simple fix people will actually do is often stronger than a perfect solution nobody will adopt.
 {{< /drg/tip >}}
 
-<!-- IMAGE: school-energy-waste-audit.png | A school hallway with labeled examples of energy waste like lights on in daylight, door open with AC running, and idle vehicles outside | style:annotated-photo | verb:identify -->
+{{< drg/image src="images/school-energy-waste-audit.avif" alt="Annotated school scene highlighting common energy waste like unnecessary lighting, escaping conditioned air, and vehicle idling" >}}
 
 {{< drg/external-link title="Energy Saver" url="https://www.energy.gov/energysaver/energy-saver" description="Useful examples of common energy waste and practical ways buildings and households can reduce it." >}}
 
