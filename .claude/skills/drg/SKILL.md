@@ -182,6 +182,32 @@ This requirement covers four topics that every archer needs to understand:
 
 This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
 
+### Hybrid Parent Requirements
+
+Some parent requirements are not just umbrellas. They contain **real instructional content of their own** and then continue into child sub-requirements.
+
+Example pattern:
+
+- Parent requirement: `Explain the following terms: native metal, malleable, metallurgy, alloy, nonferrous, and ferrous. Then do the following:`
+- Child requirements: `2a`, `2b`, `2c`, `2d`
+
+For these hybrid parents, do **not** treat the parent text as a throwaway intro. Instead, structure the page in this order:
+
+1. Parent `drg/requirement` shortcode
+2. Parent-specific teaching content first
+3. Clearly labeled child requirement sections in order
+4. A short synthesis, checklist, or bridge tying the whole page together
+
+Use this approach when **all** of these are true:
+
+- the parent requirement still has meaningful instructional content even before you read the child list
+- the child requirements elaborate on, apply, or extend that parent content
+- the whole requirement reads better as one coherent learning unit than as separate disconnected pages
+
+A simple test: if removing the child requirements would still leave you with something real to teach from the parent text, treat it as a hybrid parent requirement.
+
+Do **not** use the hybrid-parent pattern when the parent text is only a vague umbrella such as `Do the following:` or `Explain the following:` with no substantive standalone content. In those cases, use the normal umbrella-intro pattern instead.
+
 ### Inherited Action Patterns
 
 Some parent requirements carry the operative verbs while the child sub-requirements are only topic labels. In those cases, the page structure should mirror the action pattern instead of leaving the prose as one undifferentiated block.
@@ -721,6 +747,11 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
 2. Read the existing or scaffolded guide files under `hugo/content/merit-badges/$ARGUMENTS/guide/`.
 3. Study relevant exemplar guides from the reference table for structure, tone, and section patterns.
 4. Preserve the scaffolded file structure, page ordering, and navigation. Replace placeholders with real content instead of inventing a new layout.
+5. During analysis, explicitly classify parent requirements as one of three patterns before writing:
+   - **umbrella parent** — vague parent text like `Do the following:` that mainly introduces child requirements
+   - **hybrid parent** — parent text that contains real standalone instructional content and then continues into child requirements
+   - **inherited-action parent** — parent text supplies the operative verbs while child requirements are mostly topic labels
+6. Apply the matching writing pattern on purpose rather than defaulting every parent-with-children requirement to the same structure.
 
 ### Phase 2: Write the Guide
 
@@ -732,6 +763,10 @@ Requirements for writing:
 
 - Keep all prose specific to the badge.
 - Use exact requirement wording inside `drg/requirement` shortcodes.
+- Match the page structure to the parent-requirement pattern you identified in Phase 1B:
+  - **umbrella parent** → brief orienting intro, then child sections or child pages
+  - **hybrid parent** → teach the parent's standalone content first, then move into child sections, then add a short synthesis or bridge
+  - **inherited-action parent** → mirror the parent verbs in the child section structure when that makes the requirement clearer
 - Keep official resources relevant to the requirement they belong to.
 - Preserve valid front matter, `guide_nav`, and prev/next links.
 - Replace placeholder titles like `[TITLE]` and group labels like `[GROUP: Requirement 3]` with polished final text when completing the guide.
@@ -746,7 +781,20 @@ Requirements for writing:
    - `BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources`
    - `bun run build`
 
-### Phase 4: Resume Behavior
+### Phase 4: Image Handoff
+
+After the guide content is complete and verification passes, immediately invoke the
+`drg-images` skill with the same `$ARGUMENTS`.
+
+Do not stop after content-only completion when image placeholders are present. Hand
+those placeholders off to `drg-images`, which owns `images.json`, image generation,
+AVIF conversion, and shortcode replacement.
+
+Use the Skill tool to run:
+
+`drg-images $ARGUMENTS`
+
+### Phase 5: Resume Behavior
 
 If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
 
