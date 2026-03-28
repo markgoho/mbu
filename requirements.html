@@ -1,0 +1,723 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hiking Merit Badge Requirements | Merit Badge University</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;900&amp;family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@300;400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#7a5736",
+              "secondary-fixed": "#ffdcbf",
+              "on-primary-fixed-variant": "#384c2b",
+              tertiary: "#454237",
+              "on-tertiary-fixed": "#1e1b13",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#f0ede8",
+              "primary-fixed": "#d1eabd",
+              "on-primary": "#ffffff",
+              "on-surface": "#1c1c19",
+              "on-primary-fixed": "#0e2004",
+              "surface-container-high": "#ebe8e3",
+              "on-secondary-fixed": "#2d1600",
+              "tertiary-container": "#5d594e",
+              "surface-variant": "#e5e2dd",
+              "surface-container-highest": "#e5e2dd",
+              "surface-tint": "#4f6441",
+              primary: "#334726",
+              outline: "#74786e",
+              "inverse-on-surface": "#f3f0eb",
+              surface: "#fcf9f4",
+              "primary-fixed-dim": "#b6cea3",
+              "on-secondary": "#ffffff",
+              "error-container": "#ffdad6",
+              error: "#ba1a1a",
+              "primary-container": "#4a5f3c",
+              background: "#fcf9f4",
+              "tertiary-fixed-dim": "#cdc6b8",
+              "tertiary-fixed": "#e9e2d3",
+              "surface-bright": "#fcf9f4",
+              "on-tertiary-container": "#d7d0c2",
+              "on-surface-variant": "#44483f",
+              "on-secondary-fixed-variant": "#5f4021",
+              "on-background": "#1c1c19",
+              "inverse-surface": "#31302d",
+              "surface-dim": "#dcdad5",
+              "on-primary-container": "#bfd8ac",
+              "secondary-fixed-dim": "#ecbe95",
+              "secondary-container": "#fecea5",
+              "on-error": "#ffffff",
+              "inverse-primary": "#b6cea3",
+              "on-tertiary-fixed-variant": "#4a463c",
+              "surface-container-low": "#f6f3ee",
+              "outline-variant": "#c4c8bc",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#795635",
+              "on-tertiary": "#ffffff",
+            },
+            fontFamily: {
+              headline: ["Geologica", "Epilogue", "sans-serif"],
+              body: ["Geologica", "Manrope", "sans-serif"],
+              label: ["Geologica", "Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Geologica", sans-serif;
+        font-weight: 300;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .font-900 {
+        font-weight: 900;
+      }
+      .font-300 {
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopAppBar -->
+    <header
+      class="bg-[#f4f1ec] dark:bg-[#2a3525] border-b-4 border-[#4a5f3c] sticky top-0 z-50"
+    >
+      <div
+        class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto"
+      >
+        <div
+          class="text-2xl font-black tracking-tighter text-[#4a5f3c] dark:text-[#f4f1ec]"
+        >
+          Merit Badge University
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-[#4a5f3c]/70 dark:text-[#f4f1ec]/70 font-light hover:bg-[#e5e2dd] transition-colors duration-200 px-2 py-1"
+            href="#"
+            >Handbooks</a
+          >
+          <a
+            class="text-[#4a5f3c] dark:text-[#f4f1ec] font-bold border-b-[5px] border-[#4a5f3c] pb-1"
+            href="#"
+            >Badges</a
+          >
+          <a
+            class="text-[#4a5f3c]/70 dark:text-[#f4f1ec]/70 font-light hover:bg-[#e5e2dd] transition-colors duration-200 px-2 py-1"
+            href="#"
+            >Resources</a
+          >
+          <a
+            class="text-[#4a5f3c]/70 dark:text-[#f4f1ec]/70 font-light hover:bg-[#e5e2dd] transition-colors duration-200 px-2 py-1"
+            href="#"
+            >Awards</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <span
+            class="material-symbols-outlined text-[#4a5f3c] cursor-pointer"
+            data-icon="search"
+            >search</span
+          >
+          <span
+            class="material-symbols-outlined text-[#4a5f3c] cursor-pointer"
+            data-icon="account_circle"
+            >account_circle</span
+          >
+        </div>
+      </div>
+    </header>
+    <div class="flex min-h-screen">
+      <!-- SideNavBar -->
+      <aside
+        class="hidden lg:flex flex-col fixed left-0 top-[76px] h-[calc(100vh-76px)] bg-[#f6f3ee] dark:bg-[#2a3525] w-64 border-r-4 border-[#4a5f3c] shadow-[4px_0px_0px_0px_rgba(42,53,37,0.06)] overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-8">
+            <div
+              class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center text-on-primary-container"
+            >
+              <span class="material-symbols-outlined" data-icon="hiking"
+                >hiking</span
+              >
+            </div>
+            <div>
+              <h3 class="font-black text-[#4a5f3c] leading-tight">
+                Hiking Badge
+              </h3>
+              <p class="text-xs uppercase tracking-widest text-[#4a5f3c]/60">
+                Eagle Required
+              </p>
+            </div>
+          </div>
+          <nav class="space-y-4">
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c] dark:text-[#f4f1ec] font-black border-l-4 border-[#4a5f3c] pl-4 py-2 hover:translate-x-1 transition-transform duration-200"
+              href="#"
+            >
+              <span class="material-symbols-outlined" data-icon="assignment"
+                >assignment</span
+              >
+              <span>Requirements</span>
+            </a>
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c]/60 dark:text-[#f4f1ec]/60 pl-4 py-2 hover:translate-x-1 transition-transform duration-200"
+              href="#"
+            >
+              <span class="material-symbols-outlined" data-icon="menu_book"
+                >menu_book</span
+              >
+              <span>Study Guide</span>
+            </a>
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c]/60 dark:text-[#f4f1ec]/60 pl-4 py-2 hover:translate-x-1 transition-transform duration-200"
+              href="#"
+            >
+              <span class="material-symbols-outlined" data-icon="edit_note"
+                >edit_note</span
+              >
+              <span>Worksheet</span>
+            </a>
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c]/60 dark:text-[#f4f1ec]/60 pl-4 py-2 hover:translate-x-1 transition-transform duration-200"
+              href="#"
+            >
+              <span
+                class="material-symbols-outlined"
+                data-icon="supervisor_account"
+                >supervisor_account</span
+              >
+              <span>Leader Notes</span>
+            </a>
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c]/60 dark:text-[#f4f1ec]/60 pl-4 py-2 hover:translate-x-1 transition-transform duration-200"
+              href="#"
+            >
+              <span class="material-symbols-outlined" data-icon="history"
+                >history</span
+              >
+              <span>History</span>
+            </a>
+          </nav>
+        </div>
+        <div class="mt-auto p-6 border-t border-[#4a5f3c]/10">
+          <nav class="space-y-4">
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c]/60 pl-4 py-1 text-sm"
+              href="#"
+              ><span class="material-symbols-outlined text-sm" data-icon="help"
+                >help</span
+              >
+              Support</a
+            >
+            <a
+              class="flex items-center gap-3 text-[#4a5f3c]/60 pl-4 py-1 text-sm"
+              href="#"
+              ><span
+                class="material-symbols-outlined text-sm"
+                data-icon="settings"
+                >settings</span
+              >
+              Settings</a
+            >
+          </nav>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <main class="flex-1 lg:ml-64 p-4 md:p-8 lg:p-12">
+        <div class="max-w-4xl mx-auto">
+          <!-- Breadcrumbs -->
+          <nav
+            class="flex items-center gap-2 text-xs uppercase tracking-widest text-[#4a5f3c]/60 mb-8 overflow-x-auto whitespace-nowrap"
+          >
+            <a class="hover:text-primary" href="#">Home</a>
+            <span
+              class="material-symbols-outlined text-xs"
+              data-icon="chevron_right"
+              >chevron_right</span
+            >
+            <a class="hover:text-primary" href="#">All Badges</a>
+            <span
+              class="material-symbols-outlined text-xs"
+              data-icon="chevron_right"
+              >chevron_right</span
+            >
+            <a class="hover:text-primary" href="#">Hiking</a>
+            <span
+              class="material-symbols-outlined text-xs"
+              data-icon="chevron_right"
+              >chevron_right</span
+            >
+            <span class="text-primary font-bold">Requirements</span>
+          </nav>
+          <!-- Header Section -->
+          <header class="mb-12 border-b border-outline-variant pb-6">
+            <h1
+              class="text-4xl md:text-5xl font-900 tracking-tighter text-[#4a5f3c] mb-2 uppercase font-headline"
+            >
+              Hiking Merit Badge Requirements
+            </h1>
+            <div class="h-1.5 w-24 bg-primary rounded-full"></div>
+          </header>
+          <!-- Requirements List -->
+          <div class="space-y-16 pb-24">
+            <!-- Requirement 1 -->
+            <section class="group flex gap-8">
+              <span
+                class="text-5xl font-900 text-primary/20 shrink-0 tabular-nums font-headline"
+                >01</span
+              >
+              <div class="flex-1">
+                <div class="flex justify-between items-start mb-4">
+                  <h2
+                    class="text-2xl font-bold text-on-background font-headline"
+                  >
+                    Health &amp; Safety
+                  </h2>
+                  <div
+                    class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Copy Link"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="link"
+                        >link</span
+                      >
+                    </button>
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Open Study Guide"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="menu_book"
+                        >menu_book</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Explain to your counselor the most likely hazards you may
+                      encounter while hiking, and what you should do to
+                      anticipate, help prevent, mitigate, and respond to these
+                      hazards.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Show that you know first aid for injuries or illnesses
+                      that could occur while hiking, including hypothermia,
+                      frostbite, dehydration, heat exhaustion, heatstroke,
+                      sunburn, blisters, and hyperventilation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Requirement 2 -->
+            <section
+              class="group flex gap-8 bg-primary/5 p-8 -mx-8 rounded-xl ring-1 ring-primary/10"
+            >
+              <span
+                class="text-5xl font-900 text-primary/20 shrink-0 tabular-nums font-headline"
+                >02</span
+              >
+              <div class="flex-1">
+                <div class="flex justify-between items-start mb-4">
+                  <h2
+                    class="text-2xl font-bold text-on-background font-headline"
+                  >
+                    Ethics &amp; Conduct
+                  </h2>
+                  <div
+                    class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Copy Link"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="link"
+                        >link</span
+                      >
+                    </button>
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Open Study Guide"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="menu_book"
+                        >menu_book</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Explain and demonstrate the importance of the Leave No
+                      Trace Seven Principles and the Outdoor Code in hiking.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Explain why it is important to hike with a buddy and what
+                      to do if you get lost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Requirement 3 -->
+            <section class="group flex gap-8">
+              <span
+                class="text-5xl font-900 text-primary/20 shrink-0 tabular-nums font-headline"
+                >03</span
+              >
+              <div class="flex-1">
+                <div class="flex justify-between items-start mb-4">
+                  <h2
+                    class="text-2xl font-bold text-on-background font-headline"
+                  >
+                    Planning &amp; Equipment
+                  </h2>
+                  <div
+                    class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Copy Link"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="link"
+                        >link</span
+                      >
+                    </button>
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Open Study Guide"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="menu_book"
+                        >menu_book</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Explain how to plan for a hike and the importance of
+                      having a written plan shared with someone at home.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Discuss the appropriate clothing and footwear for hiking
+                      under various weather conditions and terrain types.
+                    </p>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg mt-1"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <p
+                      class="font-light text-on-surface-variant leading-relaxed"
+                    >
+                      Prepare a hiking kit with the Scout Basic Essentials plus
+                      any additional items needed for a specific hike.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Requirement 4 -->
+            <section class="group flex gap-8">
+              <span
+                class="text-5xl font-900 text-primary/20 shrink-0 tabular-nums font-headline"
+                >04</span
+              >
+              <div class="flex-1">
+                <div class="flex justify-between items-start mb-4">
+                  <h2
+                    class="text-2xl font-bold text-on-background font-headline"
+                  >
+                    The Hikes
+                  </h2>
+                  <div
+                    class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Copy Link"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="link"
+                        >link</span
+                      >
+                    </button>
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Open Study Guide"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="menu_book"
+                        >menu_book</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <p
+                  class="mb-6 font-light text-on-surface-variant italic leading-relaxed"
+                >
+                  Take the following five hikes of at least 10 continuous miles
+                  each, and one hike of at least 20 continuous miles.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/30 flex items-center gap-4"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <span class="text-sm font-bold text-on-surface"
+                      >One 10-mile hike</span
+                    >
+                  </div>
+                  <div
+                    class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/30 flex items-center gap-4"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <span class="text-sm font-bold text-on-surface"
+                      >One 10-mile hike</span
+                    >
+                  </div>
+                  <div
+                    class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/30 flex items-center gap-4"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <span class="text-sm font-bold text-on-surface"
+                      >One 10-mile hike</span
+                    >
+                  </div>
+                  <div
+                    class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/30 flex items-center gap-4"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <span class="text-sm font-bold text-on-surface"
+                      >One 10-mile hike</span
+                    >
+                  </div>
+                  <div
+                    class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/30 flex items-center gap-4 md:col-span-2"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    <span class="text-sm font-bold text-on-surface"
+                      >One 10-mile hike</span
+                    >
+                  </div>
+                  <div
+                    class="p-6 bg-primary/5 rounded-lg border-2 border-primary border-dashed flex items-center gap-4 md:col-span-2"
+                  >
+                    <div
+                      class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary shrink-0"
+                    >
+                      F
+                    </div>
+                    <div>
+                      <span
+                        class="text-lg font-black block text-primary font-headline"
+                        >The 20-Mile Finale</span
+                      >
+                      <p class="text-sm text-on-surface-variant/70">
+                        One hike of at least 20 continuous miles.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Requirement 5 -->
+            <section class="group flex gap-8">
+              <span
+                class="text-5xl font-900 text-primary/20 shrink-0 tabular-nums font-headline"
+                >05</span
+              >
+              <div class="flex-1">
+                <div class="flex justify-between items-start mb-4">
+                  <h2
+                    class="text-2xl font-bold text-on-background font-headline"
+                  >
+                    Reporting
+                  </h2>
+                  <div
+                    class="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Copy Link"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="link"
+                        >link</span
+                      >
+                    </button>
+                    <button
+                      class="p-1.5 hover:bg-surface-container-high rounded-full text-primary/60"
+                      title="Open Study Guide"
+                    >
+                      <span
+                        class="material-symbols-outlined text-xl"
+                        data-icon="menu_book"
+                        >menu_book</span
+                      >
+                    </button>
+                  </div>
+                </div>
+                <p class="font-light text-on-surface-variant leading-relaxed">
+                  After each of the hikes in requirement 4, write a short report
+                  of your experience. Give dates and descriptions of routes
+                  covered, the weather, and any interesting things you saw.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="bg-[#2a3525] text-[#f4f1ec] w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 border-t-[5px] border-[#4a5f3c]"
+    >
+      <div class="flex flex-col gap-2">
+        <span
+          class="text-[#f4f1ec] font-black tracking-tighter text-xl font-headline"
+          >Merit Badge University</span
+        >
+        <p class="font-300 text-sm tracking-wide uppercase opacity-80 max-w-md">
+          © 2025 Merit Badge University. All scouting materials for educational
+          reference only.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <a
+          class="text-[#f4f1ec]/80 hover:text-white transition-colors text-xs tracking-widest uppercase"
+          href="#"
+          >Privacy Policy</a
+        >
+        <a
+          class="text-[#f4f1ec]/80 hover:text-white transition-colors text-xs tracking-widest uppercase"
+          href="#"
+          >Terms of Service</a
+        >
+        <a
+          class="text-[#f4f1ec]/80 hover:text-white transition-colors text-xs tracking-widest uppercase"
+          href="#"
+          >Accessibility</a
+        >
+        <a
+          class="text-[#f4f1ec]/80 hover:text-white transition-colors text-xs tracking-widest uppercase underline"
+          href="#"
+          >Contact Support</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
