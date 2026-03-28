@@ -1,0 +1,61 @@
+{
+  "badge": "moviemaking",
+  "style_context": "Film production, cinematography, storyboarding, camera technique, and video training scenes",
+  "images": [
+    {
+      "id": "moviemaking-types-collage",
+      "file": "_index.md",
+      "style": "annotated-photo",
+      "description": "Four-panel collage comparing four distinct moviemaking formats: a small narrative scene with a teenager actor in a clean Scout uniform in a campsite setting, a documentary interview setup with camera and seated subject, a court of honor event video setup with tripod aimed at podium and audience, and a Scout-skill training video setup with overhead camera showing hands demonstrating gear. Minimal horizontal panel labels only: Narrative, Documentary, Event, Training. No logos, no branding, no organization names visible.",
+      "value": "Side-by-side comparison of four production formats with their different camera setups and purposes — a visual contrast that text alone cannot teach as quickly"
+    },
+    {
+      "id": "moviemaking-composition-guide",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean educational two-column diagram comparing weak and strong interview framing for one person on camera. Left side shows too much headroom, cluttered background, and poor looking room. Right side shows balanced headroom, subject placed on a rule-of-thirds point, and proper looking room. Use simple arrows and very short horizontal labels only: headroom, looking room, clutter, subject. No decorative text.",
+      "value": "Shows correct and incorrect framing, headroom, and looking room in one glance — spatial relationships that are hard to learn from words alone"
+    },
+    {
+      "id": "moviemaking-storyboard-example",
+      "file": "req2b.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Educational storyboard page with six rough sketch panels laid out in a neat grid, showing a simple sequence of a Scout finding a lost script and heading to a meeting. Each panel includes only a very short label such as wide, medium, close, pan, reaction, end. Visible pencil arrows show movement between panels. The drawings should look intentionally rough and teach planning, not polished comic art.",
+      "value": "Shows how a sequence of storyboard panels turns one story into planned shot types and movement — something much easier to grasp visually than through description alone"
+    },
+    {
+      "id": "moviemaking-tripod-pan-framing",
+      "file": "req2c.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Three-panel instructional diagram for beginner camera technique. Panel one: stable tripod setup on level ground with locked legs and camera mounted. Panel two: top-down view of a camera smoothly panning across a stage from start frame to end frame using a curved motion arrow. Panel three: well-framed interview shot with proper headroom and looking room. Use only short labels: tripod, start, end, headroom, looking room.",
+      "value": "Combines tripod stability, pan path, and framing targets into one visual teaching aid — exact motion and spacing cues that text alone cannot show clearly"
+    },
+    {
+      "id": "moviemaking-short-feature-set",
+      "file": "req2d2.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Small indoor short-film set with a teenage Scout filmmaker in a clean Scout uniform beside a tripod-mounted camera, directing two teen actors in a simple scene. A storyboard page is clipped to a nearby stand. Add a few short callouts only: camera, actors, storyboard, key light. The room should feel practical and low-budget but organized, with no visible logos or branding.",
+      "value": "Shows how a small short-feature production organizes camera, performers, and planning materials in one workable setup — a production layout that text alone cannot convey as directly"
+    },
+    {
+      "id": "moviemaking-scout-skill-vignette",
+      "file": "req2d3.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Close-up training-video setup showing Scout hands demonstrating a knot on a tabletop while a phone or small camera records from an overhead tripod arm. Clean background, bright even lighting, and the finished knot visible beside the in-progress step. Minimal callouts only: overhead view, hands, knot, final result. No brand names or extra text.",
+      "value": "Shows the overhead angle, hand position, and finished result that make an instructional video easy for beginners to follow — practical viewing geometry that text alone cannot provide"
+    },
+    {
+      "id": "moviemaking-zoom-lens-parts",
+      "file": "req3b.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean side-view technical diagram of a camera zoom lens with clear horizontal labels pointing to the zoom ring, focus ring, and aperture or iris control area, plus visible focal length markings near the zoom ring. The lens should be isolated on a plain background with simple callout lines and no brand markings.",
+      "value": "Identifies the major physical controls on a zoom lens and where they sit relative to one another — a part-to-position relationship that is best learned visually"
+    }
+  ]
+}
