@@ -1,0 +1,86 @@
+{
+  "badge": "model-design-and-building",
+  "style_context": "Model design, scale drawing, prototypes, architecture, structural framing, plumbing systems, mechanical devices, vehicle modeling, and concept design",
+  "images": [
+    {
+      "id": "modelmaking-safety-bench",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "A clean modelmaking workbench in a bright workshop with a teenager in a clean Scout uniform shirt standing beside it, pointing to a cutting mat, safety glasses, clamps holding material, capped glue, and a marked safe blade direction area. Only five labels total: safety glasses, cutting mat, clamp, capped glue, blade path. No extra text.",
+      "value": "Shows the physical layout of a safe bench setup and the clear blade path that text alone cannot communicate as quickly"
+    },
+    {
+      "id": "model-types-comparison-board",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Five miniature model examples arranged in a clean grid on a neutral background: an architectural house model, a structural framing corner, a plumbing process model with color-coded lines, a simple mechanical device with moving parts, and a passenger vehicle model. Short horizontal labels under each model only. No other text.",
+      "value": "Shows the visual differences between five model categories side by side, making their distinct purposes easier to grasp than text alone"
+    },
+    {
+      "id": "project-planning-sheet",
+      "file": "req3.md",
+      "style": "annotated-photo",
+      "verb_family": "create",
+      "description": "Overhead view of a Scout project planning workspace with a clean hand-drawn scale sketch, a simple materials list, a tool checklist, and a small note about CAD vs hand drawing on one planning sheet. A ruler, pencil, and eraser sit nearby. Only four short callouts total: scale, materials, tools, CAD plan. No extra text.",
+      "value": "Shows how planning elements fit together on one workable project sheet, a layout that is much clearer visually than a written description"
+    },
+    {
+      "id": "architectural-house-model",
+      "file": "req4a.md",
+      "style": "annotated-photo",
+      "verb_family": "create",
+      "description": "A neatly built 1:48 scale house model on a table beside matching floor plan and elevation drawings. The model shows doors, windows, roof shape, and a simple walkway with shrubs. Three short horizontal labels only: floor plan, elevation, finished model. Bright indoor studio lighting.",
+      "value": "Shows the relationship between drawings and the finished architectural model in one glance, which text alone cannot demonstrate as directly"
+    },
+    {
+      "id": "wood-frame-corner-model",
+      "file": "req4b.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clear educational diagram of a 1:8 scale wood-frame building corner model on a plain background. The framing members are easy to distinguish and have short horizontal labels radiating outward: joist, bridging, subfloor, sill, sole plate, stud, rafter. Clean technical illustration style.",
+      "value": "Shows the spatial relationship of framing members in a structural corner, something much harder to understand from a word list alone"
+    },
+    {
+      "id": "house-plumbing-process-model",
+      "file": "req4c.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Cutaway house plumbing model in diagram style with simple room outlines and clearly separated pipe runs. Cold-water lines are blue, hot-water lines are red, waste lines are dark gray, and vent lines are light gray. Short horizontal labels only for the four system types. No dense text.",
+      "value": "Shows how supply, waste, and vent lines travel through one house as a connected system, a spatial relationship that text alone cannot convey well"
+    },
+    {
+      "id": "simple-machines-device-model",
+      "file": "req4d.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "A working model of a small lifting device built from wood and simple hardware on a neutral background, clearly using a lever and pulley. Clean arrows show the direction of hand force and the direction of the lifted load. Short labels only: lever, pulley, effort, load. No other text.",
+      "value": "Shows the force path and moving parts of a two-machine device, which readers need to see rather than only read about"
+    },
+    {
+      "id": "passenger-vehicle-scale-model",
+      "file": "req4e.md",
+      "style": "annotated-photo",
+      "verb_family": "create",
+      "description": "A clean scaled passenger vehicle model displayed beside matching side, front, rear, and top-view drawings on a drafting table. Three short labels only: measured views, scaled drawing, final model. Bright studio setting with no extra text.",
+      "value": "Shows how multi-view measurements turn into a scaled vehicle model, a visual connection that is difficult to explain fully in text"
+    },
+    {
+      "id": "fantasy-spacecraft-concept-sheet",
+      "file": "req5.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Science-fiction concept sheet on a clean background showing one original spacecraft from front, side, top, and perspective views, plus small component sketches for cockpit, engines, and storage. Very short labels only for the component sketches. No long text or branding.",
+      "value": "Shows how one fantasy vehicle stays consistent across multiple views and component studies, something readers learn much faster by seeing than by description alone"
+    },
+    {
+      "id": "model-design-overview-collage",
+      "file": "_index.md",
+      "style": "annotated-photo",
+      "verb_family": "describe",
+      "description": "A Scout in a clean Scout uniform shirt at a worktable comparing three stages of one project: hand sketches on paper, a foam-board physical model, and a laptop displaying a 3D model. Three short horizontal labels only: sketch, physical model, digital model. Warm studio lighting.",
+      "value": "Shows the three main forms of model development together in one scene, helping readers see the full workflow beyond what text can summarize"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "badge": "model-design-and-building",
+  "searched_at": "2026-03-28T03:19:25.554Z",
+  "videos": [
+    {
+      "id": "cardboard-basics-tutorial-guide-chipmatte-board-mo",
+      "file": "req2.md",
+      "requirement_path": "2",
+      "video_id": "x6s3lGH4MyI",
+      "title": "CardBoard Basics Tutorial Guide Chip/Matte Board model making: modeling for Designers & Architects",
+      "channel": "Eric Strebel",
+      "duration_seconds": 610000,
+      "views": 191930,
+      "url": "https://youtu.be/x6s3lGH4MyI",
+      "status": "working",
+      "relevance": "This video gives a practical overview of common modelmaking board materials and cutting approaches, which directly supports requirement 2's focus on materials, fabrication methods, and choosing tools on purpose.",
+      "query": "Model Design and Building types models materials tutorial",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-think-like-an-architect-the-design-process",
+      "file": "req3.md",
+      "requirement_path": "3",
+      "video_id": "vmHoGicPQQQ",
+      "title": "How To Think Like An Architect: The Design Process",
+      "channel": "Barry Berkus",
+      "duration_seconds": 235000,
+      "views": 2752369,
+      "url": "https://youtu.be/vmHoGicPQQQ",
+      "status": "working",
+      "relevance": "This short video reinforces requirement 3's planning mindset by showing how designers move from ideas to deliberate decisions before building. It fits the page's emphasis on selecting a project, preparing plans, and revising thoughtfully.",
+      "query": "Model Design and Building planning project advice select sub",
+      "trust_score": 8
+    },
+    {
+      "id": "new-to-scale-modeling-avoid-these-five-beginner-mi",
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "tn2SnnhHoLo",
+      "title": "New to Scale Modeling? Avoid These Five Beginner Mistakes!",
+      "channel": "SpruesNBrews Scale Modeling",
+      "duration_seconds": 703000,
+      "views": 727637,
+      "url": "https://youtu.be/tn2SnnhHoLo",
+      "status": "working",
+      "relevance": "This video fits the parent choice page because it helps Scouts avoid picking a model path that is too ambitious or hard to finish. Its beginner-focused advice reinforces the page's guidance about scale, manageable scope, and choosing a project you can realistically complete.",
+      "query": "manual selection for req4 overview gap",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-build-a-deck-design-layout-1-of-5",
+      "file": "req4b.md",
+      "requirement_path": "4.b",
+      "video_id": "v79flY1pIKk",
+      "title": "How To Build a Deck | Design & Layout (1 of 5)",
+      "channel": "Lowe's Home Improvement",
+      "duration_seconds": 196000,
+      "views": 868861,
+      "url": "https://youtu.be/v79flY1pIKk",
+      "status": "working",
+      "relevance": "This video is a strong fit for the structural option because it shows layout thinking, framing relationships, and how builders plan load-bearing members before assembly. It complements the page's explanation of joists, supports, and readable structural layouts.",
+      "query": "Model Design and Building Know the Main Parts",
+      "trust_score": 8
+    },
+    {
+      "id": "architect---career-spotlight",
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "ag-JKMCf-SE",
+      "title": "Architect - Career Spotlight",
+      "channel": "USAGov",
+      "duration_seconds": 137000,
+      "views": 72359,
+      "url": "https://youtu.be/ag-JKMCf-SE",
+      "status": "working",
+      "relevance": "This video supports the careers page with a concise, credible introduction to one of the badge's clearest career paths. It helps Scouts connect modelmaking, design communication, and real professional work in architecture.",
+      "query": "Model Design and Building Careers You Might Explore",
+      "trust_score": 0
+    }
+  ]
+}
