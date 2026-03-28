@@ -11,6 +11,7 @@ allowed-tools:
   - Bash
   - AskUserQuestion
   - Task
+  - Skill
   - EnterPlanMode
 ---
 
@@ -502,12 +503,14 @@ prev_title: "{Last Requirement Title}"
 
 **Structural convention:**
 
-Extended Learning sections should follow a consistent lettered structure:
+Extended Learning should use clear, descriptive headings without letter prefixes. Do not publish headings like `A`, `B:`, or `Section C`. Use reader-facing titles instead.
 
-- **Section A:** Brief congratulatory intro (2–3 sentences acknowledging the Scout's achievement and teasing what lies ahead).
-- **Sections B–D:** Deep dives. Each should be substantive — at least 8–10 sentences with practical detail that teaches something new, not just a surface skim.
-- **Section E:** Real-world experiences (3–5 experience cards).
-- **Section F:** Organizations (3–6 org cards).
+Recommended structure:
+
+- **Congratulations** — Brief introductory section (2–3 sentences acknowledging the Scout's achievement and teasing what lies ahead).
+- **2–4 deep-dive sections** — Each should have a descriptive title and be substantive, with practical detail that teaches something new rather than repeating requirement-page content.
+- **Real-World Experiences** — 3–5 experience cards.
+- **Organizations** — 3–6 org cards.
 
 ## Shortcode Catalog
 
@@ -794,7 +797,38 @@ Use the Skill tool to run:
 
 `drg-images $ARGUMENTS`
 
-### Phase 5: Resume Behavior
+### Phase 5: Conditional Video Handoff
+
+After `drg-images` completes, determine whether to run `drg-videos`.
+
+Use the badge data already read in Phase 1B from
+`hugo/data/merit-badges/$ARGUMENTS.json`. Check whether any requirement or
+subrequirement anywhere in the badge JSON has a `resources` field. This check must
+cover the full requirement tree at any depth, not just top-level requirements or
+immediate children.
+
+- If any requirement node anywhere in the source JSON has `resources`, skip
+  `drg-videos`. Official resource links already exist for this badge, so a
+  supplemental video pass would be redundant.
+- If no requirement node anywhere in the source JSON has `resources`, continue to
+  the next check.
+
+Before invoking `drg-videos`, check whether
+`hugo/content/merit-badges/$ARGUMENTS/guide/videos.json` already exists.
+
+- If `guide/videos.json` already exists, skip `drg-videos`. The video workflow has
+  already run for this badge.
+- If `guide/videos.json` does not exist and the source JSON has no `resources`
+  anywhere, invoke `drg-videos` with the same `$ARGUMENTS`.
+
+Use the Skill tool to run only when both conditions pass:
+
+`drg-videos $ARGUMENTS`
+
+If `drg-videos` encounters an unrecoverable error, report it to the user and stop.
+Do not treat that as a failure of the completed guide-writing pass.
+
+### Phase 6: Resume Behavior
 
 If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
 

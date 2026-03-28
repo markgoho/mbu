@@ -1,0 +1,36 @@
+{
+  "badge": "motorboating",
+  "searched_at": "2026-03-28T12:33:48.036Z",
+  "videos": [
+    {
+      "id": "driving-a-boat-the-basics",
+      "file": "req5.md",
+      "requirement_path": "5",
+      "video_id": "FjkVFTHBizI",
+      "title": "Driving a boat: The basics",
+      "channel": "boatsales",
+      "duration_seconds": 211000,
+      "views": 158829,
+      "url": "https://www.youtube.com/watch?v=FjkVFTHBizI",
+      "status": "working",
+      "relevance": "This video supports the hands-on boat-handling parts of Requirement 5 by showing throttle control, steering awareness, and basic operator habits in motion. It is a focused, practical demonstration from a credible boating channel rather than a generic merit-badge talk.",
+      "query": "Motorboating Requirement 2a",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-drive-a-boat-in-rough-water-big-sea-throttl",
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "dAxC2xAi12c",
+      "title": "How to drive a boat in rough water | Big sea throttle techniques explained | Motor Boat & Yachting",
+      "channel": "Motor Boat & Yachting",
+      "duration_seconds": 722000,
+      "views": 724441,
+      "url": "https://www.youtube.com/watch?v=dAxC2xAi12c",
+      "status": "working",
+      "relevance": "This video fits Requirement 4c because it shows how rough-water conditions change throttle use, hull attitude, and operator decision-making. It teaches weather-and-heavy-water judgment in a way static text cannot fully demonstrate.",
+      "query": "Motorboating Requirement 4a",
+      "trust_score": 8
+    }
+  ]
+}
