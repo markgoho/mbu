@@ -1,0 +1,38 @@
+{
+  "badge": "multisport",
+  "style_context": "Multisport training, transitions, first aid, swimming, cycling, running, and youth endurance event preparation",
+  "images": [
+    {
+      "id": "multisport-first-aid-kit-layout",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Overhead instructional photo of an open first-aid kit arranged beside running shoes, a bike helmet, and swim goggles, with the key items for common multisport injuries clearly visible and lightly labeled: blister pads, adhesive bandages, gauze pads, elastic wrap, instant cold pack, antiseptic wipes, medical tape, gloves, and emergency contact card; clean neutral background, horizontal labels only, no branding or logos",
+      "value": "Shows which first-aid items belong in a multisport kit and where each treatment tool fits in relation to common injuries, a visual inventory text alone cannot teach as quickly"
+    },
+    {
+      "id": "multisport-gear-layout",
+      "file": "req3.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Top-down educational layout of beginner multisport gear grouped into three clean sections for swim, bike, and run, with each section showing only the essential items: goggles and swim cap for swim, properly fitted helmet, bike, and water bottle for bike, and running shoes and lightweight hat for run; minimal horizontal labels only, bright neutral floor, no branding or logos",
+      "value": "Shows the essential gear grouped by discipline so a beginner can instantly see what belongs to swim, bike, and run, a spatial comparison that prose alone makes harder to scan"
+    },
+    {
+      "id": "multisport-transition-area",
+      "file": "req6.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Instructional photo of a neatly organized beginner multisport transition area beside a bike rack, showing a towel as the base, helmet placed first and closest to the rider, cycling shoes opened and ready, running shoes positioned behind them, and swim gear tucked to one side; a few short horizontal callouts point to the logical order of use, clean race-like setting, no visible logos or branded text",
+      "value": "Shows the exact physical layout and order-of-use in a transition area, a spatial routine that text alone cannot make immediately obvious"
+    },
+    {
+      "id": "multisport-season-progression",
+      "file": "extended-learning.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean educational timeline diagram of a youth multisport season laid out left to right with four stages: base training, build weeks, taper, and race day; each stage shown as a horizontal panel with a simple icon and one short label, plus a curved effort line rising gradually through base and build, dropping during taper, and peaking at race day; white background, horizontal text only, no branding",
+      "value": "Shows how training load changes across a season and how taper fits before race day, a time-based relationship that is much easier to grasp visually than through description alone"
+    }
+  ]
+}
