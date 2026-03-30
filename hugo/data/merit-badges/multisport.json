@@ -175,7 +175,7 @@
                 {
                   "req_id": "a",
                   "path": "4.a.1.a",
-                  "text": "Before doing requirements 5 through 8, earn the Swimming merit badge.",
+                  "text": "Before doing requirements 5 through 8, earn the [Swimming merit badge](/merit-badges/swimming/).",
                   "resources": [
                     {
                       "title": "Swimming Merit Badge (website)",
@@ -450,7 +450,7 @@
                 {
                   "req_id": "a",
                   "path": "4.c.1.a",
-                  "text": "Before doing requirements 5 through 8, earn the Swimming merit badge.",
+                  "text": "Before doing requirements 5 through 8, earn the [Swimming merit badge](/merit-badges/swimming/).",
                   "resources": [
                     {
                       "title": "Swimming Merit Badge (website)",
@@ -569,7 +569,7 @@
                 {
                   "req_id": "a",
                   "path": "4.d.1.a",
-                  "text": "Before doing requirements 5 through 8, earn the Swimming merit badge.",
+                  "text": "Before doing requirements 5 through 8, earn the [Swimming merit badge](/merit-badges/swimming/).",
                   "resources": [
                     {
                       "title": "Swimming Merit Badge (website)",

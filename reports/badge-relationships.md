@@ -1,6 +1,6 @@
 # Badge Relationship Detection Report
 
-Generated: 2026-01-10T19:28:59.042Z
+Generated: 2026-03-30T03:52:02.105Z
 
 ## Summary
 - Total badges processed: 141
@@ -18,11 +18,6 @@ Generated: 2026-01-10T19:28:59.042Z
 - **Requirement 9** -> [First Aid](/merit-badges/first-aid/)
   - Text: "First Aid Merit Badge. Earn the First Aid merit badge."
 
-### Lifesaving
-
-- **Requirement 2.a** -> [Swimming](/merit-badges/swimming/)
-  - Text: "Earn the Swimming merit badge."
-
 ### Multisport
 
 - **Requirement 4.a.1.a** -> [Swimming](/merit-badges/swimming/)
@@ -33,6 +28,11 @@ Generated: 2026-01-10T19:28:59.042Z
 
 - **Requirement 4.d.1.a** -> [Swimming](/merit-badges/swimming/)
   - Text: "Before doing requirements 5 through 8, earn the Swimming merit badge."
+
+### Scuba Diving
+
+- **Requirement 2** -> [Swimming](/merit-badges/swimming/)
+  - Text: "Before completing requirements 3 through 6, earn the Swimming merit badge."
 
 ### Whitewater
 

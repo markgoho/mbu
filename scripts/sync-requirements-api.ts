@@ -232,6 +232,12 @@ function isArtifactRequirementRow({
 }): boolean {
   const sortOrder = requirementRow["sortOrder"].trim();
   const requirementName = requirementRow["name"];
+  const listNumber = requirementRow["listNumber"].trim();
+  const requirementNumber = requirementRow["requirementNumber"].trim();
+  const parentRequirementId = requirementRow["parentRequirementId"].trim();
+  const normalizedText = normalizeRequirementText({
+    text: requirementName,
+  });
 
   if (sortOrder === "" && /<\/?(?:b|strong)>/i.test(requirementName)) {
     return true;
@@ -241,7 +247,17 @@ function isArtifactRequirementRow({
     return true;
   }
 
-  return /official merit badge pamphlets/i.test(requirementName);
+  if (/official merit badge pamphlets/i.test(requirementName)) {
+    return true;
+  }
+
+  return (
+    parentRequirementId === "" &&
+    listNumber === "" &&
+    requirementNumber === "" &&
+    sortOrder.startsWith("0.") &&
+    /^note:/i.test(normalizedText)
+  );
 }
 
 function extractResourcesFromRequirementHtml({
