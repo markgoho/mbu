@@ -4,8 +4,9 @@
   "slug": "home-repairs",
   "url": "https://www.scouting.org/merit-badges/home-repairs/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Home%20Repairs.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -280,7 +281,7 @@
               "url": "https://youtu.be/drsaKC6_gYw?si=xfZ534IbYV6IsYgI"
             },
             {
-              "title": "How to Change an Outlet (video)",
+              "title": "How To Change an Outlet (video)",
               "url": "https://www.youtube.com/watch?v=OC-b-00d-R0"
             }
           ]
@@ -523,6 +524,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

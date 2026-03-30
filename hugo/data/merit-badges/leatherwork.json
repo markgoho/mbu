@@ -4,8 +4,9 @@
   "slug": "leatherwork",
   "url": "https://www.scouting.org/merit-badges/leatherwork/",
   "eagle_required": false,
+  "category": "Arts and Crafts",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Leatherwork.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -98,7 +99,7 @@
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Best uses for each type of leather.",
+          "text": "Best uses for each type of leather",
           "resources": [
             {
               "title": "What Leather Should I Use for Tooling? (video)",
@@ -232,7 +233,7 @@
         {
           "req_id": "h",
           "path": "3.h",
-          "text": "Dressing edges.",
+          "text": "Dressing edges",
           "resources": [
             {
               "title": "Edge Finishing Techniques (video)",
@@ -328,6 +329,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Arts and Crafts"
+  ]
 }

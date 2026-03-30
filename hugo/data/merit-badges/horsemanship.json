@@ -4,8 +4,9 @@
   "slug": "horsemanship",
   "url": "https://www.scouting.org/merit-badges/horsemanship/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Horsemanship.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -49,12 +50,16 @@
           "url": "https://youtu.be/y369q1jh8HQ"
         },
         {
-          "title": "Parts of a Horse (filled) (PDF)",
+          "title": "Parts of a Horse (filled) (photo)",
           "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse.jpg"
         },
         {
           "title": "Parts of a Horse (blank) (PDF)",
           "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Horsemanship/Parts%20of%20a%20Horse%20-%20blank%20worksheet.pdf"
+        },
+        {
+          "title": "Parts of a Horse (video)",
+          "url": "https://www.youtube.com/watch?v=y369q1jh8HQ"
         }
       ]
     },
@@ -336,6 +341,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

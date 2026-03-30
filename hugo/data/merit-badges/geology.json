@@ -4,6 +4,7 @@
   "slug": "geology",
   "url": "https://www.scouting.org/merit-badges/geology/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Geology.pdf",
   "last_updated": "2026-03-12",
   "requirements": [
@@ -526,6 +527,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

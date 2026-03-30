@@ -4,6 +4,7 @@
   "slug": "landscape-architecture",
   "url": "https://www.scouting.org/merit-badges/landscape-architecture/",
   "eagle_required": false,
+  "category": "Professions",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Architecture_Landscape.pdf",
   "last_updated": "2025-12-26",
   "requirements": [
@@ -119,6 +120,5 @@
         }
       ]
     }
-  ],
-  "category": "Professions"
+  ]
 }

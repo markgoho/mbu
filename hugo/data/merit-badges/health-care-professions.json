@@ -4,8 +4,9 @@
   "slug": "health-care-professions",
   "url": "https://www.scouting.org/merit-badges/health-care-professions/",
   "eagle_required": false,
+  "category": "Professions",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Health%20Care%20Professions.pdf",
-  "last_updated": "2026-03-14",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -24,7 +25,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 3
       }
     },
     {
@@ -44,7 +46,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 3
       }
     },
     {
@@ -64,7 +67,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 3
       }
     },
     {
@@ -84,7 +88,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 3
       }
     },
     {
@@ -124,7 +129,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 1
       }
     },
     {
@@ -147,6 +153,5 @@
       "path": "9",
       "text": "With your parent or guardian's and counselor's approval, serve as a volunteer at a health-related event or facility in your community (e.g. blood drive, health fair, blood pressure screening event). Report to your counselor what you did and learned from the experience."
     }
-  ],
-  "category": "Professions"
+  ]
 }

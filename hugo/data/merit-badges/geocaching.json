@@ -4,8 +4,9 @@
   "slug": "geocaching",
   "url": "https://www.scouting.org/merit-badges/geocaching/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Geocaching.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -50,7 +51,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "The Leave No Trace Seven Principles and the Outdoor Code as they apply to geocaching."
+          "text": "The Leave No Trace Seven Principles and the Outdoor Code as they apply to geocaching"
         }
       ],
       "subrequirement_mode": {
@@ -60,12 +61,12 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Explain the following terms used in geocaching: waypoint, log, cache, accuracy, difficulty and terrain ratings, attributes, trackable. Choose five additional terms to explain to your counselor."
+      "text": "Explain the following terms used in geocaching: waypoint, log, cache, accuracy, difficulty and terrain ratings, attributes, and trackable. Choose five additional terms to explain to your counselor."
     },
     {
       "req_id": "4",
       "path": "4",
-      "text": "Explain how the Global Positioning System (GPS) works. Then, using Scouting's Teaching EDGE, demonstrate to your counselor the use of a GPS unit. Include marking and editing a waypoint, changing field functions, and changing the coordinate system in the unit."
+      "text": "Explain how the Global Positioning System (GPS) works. Then, using Scouting's EDGE, demonstrate to your counselor the use of a GPS unit. Include marking and editing a waypoint, changing field functions, and changing the coordinate system in the unit."
     },
     {
       "req_id": "5",
@@ -105,12 +106,12 @@
         {
           "req_id": "a",
           "path": "8.a",
-          "text": "If a Cache to Eagle® series exists in your council, visit at least three of the locations in the series. Describe the projects that each cache you visit highlights, and explain how the Cache to Eagle® program helps share our Scouting service with the public."
+          "text": "If a Cache to Eagle &reg; series exists in your council, visit at least three of the locations in the series. Describe the projects that each cache you visit highlights, and explain how the Cache to Eagle &reg; program helps share our Scouting service with the public."
         },
         {
           "req_id": "b",
           "path": "8.b",
-          "text": "Create a Scouting-related Travel Bug® that promotes one of the values of Scouting. \"Release\" your Travel Bug into a public geocache and, with your parent or guardian's permission, monitor its progress at www.geocaching.com for 30 days. Keep a log, and share this with your counselor at the end of the 30-day period."
+          "text": "Create a Scouting-related Travel Bug &reg; that promotes one of the values of Scouting. Release your Travel Bug into a public geocache and, with your parent or guardian's permission, monitor its progress at www.geocaching.com for 30 days. Keep a log, and share this with your counselor at the end of the 30-day period."
         },
         {
           "req_id": "c",
@@ -133,6 +134,5 @@
       "path": "9",
       "text": "Plan a geohunt for a youth group such as your troop or a neighboring pack, at school, or your place of worship. Choose a theme, set up a course with at least four waypoints, teach the players how to use a GPS unit, and play the game. Tell your counselor about your experience, and share the materials you used and developed for this event."
     }
-  ],
-  "category": "Sports"
+  ]
 }

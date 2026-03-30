@@ -4,8 +4,9 @@
   "slug": "journalism",
   "url": "https://www.scouting.org/merit-badges/journalism/",
   "eagle_required": false,
+  "category": "Communications",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Journalism.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -32,6 +33,7 @@
               "req_id": "2",
               "path": "2.a.2",
               "text": "Visit the office of a newspaper, magazine, or internet news site. Ask for a tour of the various divisions (editorial, business, and printing). During your tour, talk to an executive from the business side about management's relations with reporters, editors, and photographers and what makes a \"good\" newspaper, magazine, or internet news site. Note: If there are no opportunities for in-person visits in your community, a virtual visit is acceptable with the news site of your choice, provided your counselor approves this option in advance. (You can request a virtual visit with Scout Life magazine)",
+              "is_option": true,
               "resources": [
                 {
                   "title": "Scout Life magazine",
@@ -133,6 +135,5 @@
       "path": "5",
       "text": "Identify three career opportunities that would use skills and knowledge in journalism. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
-  ],
-  "category": "Communications"
+  ]
 }

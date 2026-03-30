@@ -4,8 +4,9 @@
   "slug": "insect-study",
   "url": "https://www.scouting.org/merit-badges/insect-study/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Insect%20Study.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -132,7 +133,7 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Raise an insect through complete metamorphosis from its larval stage to its adult stage (e.g., raise a butterfly or moth from a caterpillar). (Some insects are endangered species and are protected by federal or state law. Every species is found only in its own special type of habitat. Be sure to check natural resources authorities in advance to be sure that you will not be collecting any species that is known to be protected or endangered, or in any habitat where collecting is prohibite(d) In most cases, all specimens should be returned at the location of capture after the requirement has been met. Check with your counselor for those instances where the return of these specimens would not be appropriate.)"
+          "text": "Raise an insect through complete metamorphosis from its larval stage to its adult stage (e.g., raise a butterfly or moth from a caterpillar). (Some insects are endangered species and are protected by federal or state law. Every species is found only in its own special type of habitat. Be sure to check natural resources authorities in advance to be sure that you will not be collecting any species that is known to be protected or endangered, or in any habitat where collecting is prohibited. In most cases, all specimens should be returned at the location of capture after the requirement has been met. Check with your counselor for those instances where the return of these specimens would not be appropriate.)"
         }
       ],
       "subrequirement_mode": {
@@ -181,7 +182,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Make a scrapbook of the 20 insects you observe in 5(b) Include photographs, sketches, illustrations, and articles. Label each insect with its common and scientific names, where possible. Share your scrapbook with your counselor.",
+          "text": "Make a scrapbook of the 20 insects you observe in 4(b). Include photographs, sketches, illustrations, and articles. Label each insect with its common and scientific names, where possible. Share your scrapbook with your counselor.",
           "resources": [
             {
               "title": "How to Start a Bug Collection (video)",
@@ -249,7 +250,7 @@
             {
               "req_id": "1",
               "path": "5.b.1",
-              "text": "1. Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony.",
+              "text": "Observe an ant colony in a formicarium (ant farm). Find the queen and worker ants. Explain to your counselor the different chambers found within an ant colony.",
               "resources": [
                 {
                   "title": "Inside the Ant Colony ( video)",
@@ -260,7 +261,8 @@
             {
               "req_id": "2",
               "path": "5.b.2",
-              "text": "2. Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option 1 above.)",
+              "text": "Study a hive of bees. Remove the combs and find the queen. Estimate the amount of brood and count the number of queen cells. Explain how to determine the amount of honey in the hive. (If you are allergic to bee stings, pick option (1) above.)",
+              "is_option": true,
               "resources": [
                 {
                   "title": "Beekeeping 101 ( video)",
@@ -319,7 +321,7 @@
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "Explain the symbiotic relationship between bees and humankin(d) Explain what colony collapse disorder (CCD) is and some of the possible causes. Discuss how CCD affects our food supply.",
+          "text": "Explain the symbiotic relationship between bees and humankind. Explain what colony collapse disorder (CCD) is and some of the possible causes. Discuss how CCD affects our food supply.",
           "resources": [
             {
               "title": "Hundreds of Millions of Bees Mysteriously Dying ( video)",
@@ -424,6 +426,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

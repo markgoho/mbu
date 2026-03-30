@@ -4,8 +4,9 @@
   "slug": "kayaking",
   "url": "https://www.scouting.org/merit-badges/kayaking/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Kayaking.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -90,17 +91,17 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Correct methods for the use of a kayak paddle."
+          "text": "Correct methods for the use of a kayak paddle"
         },
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Parts of a paddle."
+          "text": "Parts of a paddle"
         },
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "The care and maintenance of a paddle."
+          "text": "The care and maintenance of a paddle"
         }
       ],
       "subrequirement_mode": {
@@ -175,7 +176,7 @@
         {
           "req_id": "f",
           "path": "7.f",
-          "text": "Stern draw."
+          "text": "Stern draw"
         }
       ],
       "subrequirement_mode": {
@@ -227,6 +228,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

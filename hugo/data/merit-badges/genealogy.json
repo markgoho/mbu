@@ -4,8 +4,9 @@
   "slug": "genealogy",
   "url": "https://www.scouting.org/merit-badges/genealogy/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Genealogy.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -58,7 +59,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Create a time line for yourself or for a relative. Then write a short biography based on that time line.",
+          "text": "Create a timeline for yourself or for a relative. Then write a short biography based on that time line.",
           "resources": [
             {
               "title": "All About Timelines (video)",
@@ -188,7 +189,7 @@
         {
           "req_id": "d",
           "path": "5.d",
-          "text": "A genealogical educational facility or institution.",
+          "text": "A genealogical educational facility or institution",
           "resources": [
             {
               "title": "Getting Started With the Genealogy Center (video)",
@@ -199,7 +200,7 @@
         {
           "req_id": "e",
           "path": "5.e",
-          "text": "A genealogical record repository of any type (courthouse, genealogical library, state or national archive, state library, etc.).",
+          "text": "A genealogical record repository of any type (courthouse, genealogical library, state or national archive, state library, etc.)",
           "resources": [
             {
               "title": "Where to Find Records for Family History Research (video)",
@@ -291,6 +292,5 @@
       "path": "9",
       "text": "Discuss what you have learned about your family and your family members through your genealogical research."
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

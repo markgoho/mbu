@@ -4,8 +4,9 @@
   "slug": "golf",
   "url": "https://www.scouting.org/merit-badges/golf/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Golf.pdf",
-  "last_updated": "2026-03-11",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -662,6 +663,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

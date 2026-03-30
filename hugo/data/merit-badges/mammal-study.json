@@ -4,8 +4,9 @@
   "slug": "mammal-study",
   "url": "https://www.scouting.org/merit-badges/mammal-study/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Mammal%20Study.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -106,6 +107,18 @@
             {
               "title": "Preparing Mammal Specimens (video)",
               "url": "https://www.youtube.com/watch?v=dBk9jwQBiuA"
+            },
+            {
+              "title": "Skinning Your Rat (video)",
+              "url": "https://youtu.be/m93WO9praZE"
+            },
+            {
+              "title": "Preparing Mammal Specimens (video)",
+              "url": "https://youtu.be/dBk9jwQBiuA"
+            },
+            {
+              "title": "Natural History Museums in the US (website)",
+              "url": "https://whichmuseum.com/place/united-states-2682?category%5B%5D=nature-natural-history"
             }
           ]
         },
@@ -164,6 +177,10 @@
             {
               "title": "What Is the Purpose of a Natural History Museum? (video)",
               "url": "https://youtu.be/sCm6JFBdWfM?si=abiHDMFT2hvlOGJS"
+            },
+            {
+              "title": "Natural History Museums in the US (website)",
+              "url": "https://whichmuseum.com/place/united-states-2682?category%5B%5D=nature-natural-history"
             }
           ]
         },
@@ -268,6 +285,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

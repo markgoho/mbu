@@ -4,8 +4,9 @@
   "slug": "graphic-arts",
   "url": "https://www.scouting.org/merit-badges/graphic-arts/",
   "eagle_required": false,
+  "category": "Trades",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Graphic%20Arts.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -19,6 +20,10 @@
         {
           "title": "Learning About Printmaking (video)",
           "url": "https://www.youtube.com/watch?v=ns9_2SfhCtM"
+        },
+        {
+          "title": "Learning About Printmaking (video)",
+          "url": "https://www.youtube.com/watch?v=ns9_2SfhCtM "
         }
       ]
     },
@@ -38,6 +43,10 @@
         {
           "title": "What Is a Digital Image? (video)",
           "url": "https://www.youtube.com/watch?v=TVTn7mYKegY"
+        },
+        {
+          "title": "What Is a Digital Image? (video)",
+          "url": "https://www.youtube.com/watch?v=TVTn7mYKegY "
         }
       ]
     },
@@ -64,6 +73,10 @@
         {
           "title": "Prepress Tips - How to Set Up Your Digital Print Files Correctly (video)",
           "url": "https://www.youtube.com/watch?v=QxlB6rl8aNU"
+        },
+        {
+          "title": "Prepress Tips - How to Set Up Your Digital Print Files Correctly (video)",
+          "url": "https://www.youtube.com/watch?v=QxlB6rl8aNU "
         }
       ],
       "subrequirements": [
@@ -146,7 +159,7 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Collect, describe, or identify examples of the following types of binding: perfect, spiral, plastic comb, saddle stitch, case."
+          "text": "Collect, describe, or identify examples of the following types of binding: perfect, spiral, plastic comb, saddle stitch, and case."
         }
       ],
       "subrequirement_mode": {
@@ -170,6 +183,10 @@
             {
               "title": "How Are Newspapers Made? (video)",
               "url": "https://www.youtube.com/watch?v=dEqMu7IVURE%20"
+            },
+            {
+              "title": "How Are Newspapers Made? (video)",
+              "url": "https://www.youtube.com/watch?v=dEqMu7IVURE "
             }
           ]
         },
@@ -185,6 +202,10 @@
             {
               "title": "Flexographic Printing Basics (video)",
               "url": "https://www.youtube.com/watch?v=hTF_fgpWoTo%20"
+            },
+            {
+              "title": "Flexographic Printing Basics (video)",
+              "url": "https://www.youtube.com/watch?v=hTF_fgpWoTo "
             }
           ]
         },
@@ -240,9 +261,16 @@
         {
           "title": "Graphic Design and Printing Career Guide (website)",
           "url": "https://www.khake.com/page27.html"
+        },
+        {
+          "title": "Desktop Publishing as a Career (video)",
+          "url": "https://www.youtube.com/watch?v=tuP-G9wJxmY "
+        },
+        {
+          "title": "Printing Press Operators (video)",
+          "url": "https://www.youtube.com/watch?v=hOArtAsYeP8 "
         }
       ]
     }
-  ],
-  "category": "Trades"
+  ]
 }

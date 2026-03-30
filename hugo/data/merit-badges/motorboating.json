@@ -4,6 +4,7 @@
   "slug": "motorboating",
   "url": "https://www.scouting.org/merit-badges/motorboating/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Motorboating.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -182,6 +183,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

@@ -4,6 +4,7 @@
   "slug": "indian-lore",
   "url": "https://www.scouting.org/merit-badges/indian-lore/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Indian_Lore.pdf",
   "last_updated": "2025-12-24",
   "requirements": [
@@ -88,6 +89,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }
