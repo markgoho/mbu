@@ -1,4 +1,4 @@
-import { readdir } from "node:fs/promises";
+import { Glob } from "bun";
 import { join } from "node:path";
 
 const SCHEMA_URL = "../../static/schemas/merit-badge.schema.json";
@@ -22,19 +22,17 @@ type BadgeJson = {
 } & { [key: string]: JsonValue };
 
 async function addSchemaProperty(): Promise<void> {
-  const directoryEntries = await readdir(BADGE_DATA_DIRECTORY, {
-    withFileTypes: true,
-  });
-  const filePaths = directoryEntries
-    .filter(directoryEntry => directoryEntry.isFile())
-    .filter(directoryEntry => directoryEntry.name.endsWith(".json"))
-    .map(directoryEntry => join(BADGE_DATA_DIRECTORY, directoryEntry.name));
+  const filePaths: string[] = [];
+  for await (const fileName of new Glob("*.json").scan(BADGE_DATA_DIRECTORY)) {
+    filePaths.push(join(BADGE_DATA_DIRECTORY, fileName));
+  }
+  filePaths.sort((leftPath, rightPath) => leftPath.localeCompare(rightPath));
 
   if (filePaths.length === 0) {
-    throw new Error(`No merit badge JSON files found in ${BADGE_DATA_DIRECTORY}`);
+    throw new Error(
+      `No merit badge JSON files found in ${BADGE_DATA_DIRECTORY}`,
+    );
   }
-
-  filePaths.sort((leftPath, rightPath) => leftPath.localeCompare(rightPath));
 
   let updatedCount = 0;
   let alreadyCorrectCount = 0;

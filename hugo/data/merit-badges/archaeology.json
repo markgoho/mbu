@@ -4,6 +4,7 @@
   "slug": "archaeology",
   "url": "https://www.scouting.org/merit-badges/archaeology/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Archaeology.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -165,6 +166,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

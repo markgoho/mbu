@@ -1,5 +1,4 @@
 import { GoogleGenAI } from "@google/genai";
-import * as fs from "node:fs";
 import * as path from "node:path";
 import { loadEnvFromRepoRoot } from "./lib/load-env-from-repo-root.ts";
 
@@ -28,12 +27,16 @@ async function loadReferenceImage(): Promise<{
 }> {
   const absolutePath = path.resolve(REFERENCE_IMAGE_PATH);
 
-  if (!fs.existsSync(absolutePath)) {
+  const referenceImageFile = Bun.file(absolutePath);
+  if (!(await referenceImageFile.exists())) {
     throw new Error(`Reference image not found: ${absolutePath}`);
   }
 
-  const imageBuffer = fs.readFileSync(absolutePath);
-  const base64Data = imageBuffer.toString("base64");
+  const imageBytes = await referenceImageFile.bytes();
+  const binaryString = Array.from(imageBytes, byte =>
+    String.fromCodePoint(byte),
+  ).join("");
+  const base64Data = btoa(binaryString);
 
   return {
     data: base64Data,
@@ -115,8 +118,8 @@ IMPORTANT:
   let imageSaved = false;
   for (const part of response.candidates?.[0]?.content?.parts || []) {
     if (part.inlineData?.data) {
-      const buffer = Buffer.from(part.inlineData.data, "base64");
-      fs.writeFileSync(outputPath, buffer);
+      const buffer = Uint8Array.fromBase64(part.inlineData.data);
+      await Bun.write(outputPath, buffer);
       console.log(`\nImage saved to: ${outputPath}`);
       imageSaved = true;
       break;

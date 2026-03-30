@@ -1,5 +1,4 @@
 import { GoogleGenAI } from "@google/genai";
-import * as fs from "node:fs";
 import * as path from "node:path";
 import { loadEnvFromRepoRoot } from "./lib/load-env-from-repo-root.ts";
 
@@ -258,18 +257,19 @@ function buildVerbFamilyGuidance(verbFamily?: VerbFamily): string {
   }
 }
 
-function loadManifest(badge: string): DrgManifest {
+async function loadManifest(badge: string): Promise<DrgManifest> {
   const manifestPath = path.resolve(
     `hugo/content/merit-badges/${badge}/guide/images.json`,
   );
-  if (!fs.existsSync(manifestPath)) {
+  const manifestFile = Bun.file(manifestPath);
+  if (!(await manifestFile.exists())) {
     console.error(`Manifest not found: ${manifestPath}`);
     console.error(
       `Create an images.json file in the guide directory for "${badge}".`,
     );
     process.exit(1);
   }
-  const raw = fs.readFileSync(manifestPath, "utf-8");
+  const raw = await manifestFile.text();
   return JSON.parse(raw) as DrgManifest;
 }
 
@@ -287,7 +287,7 @@ function sleep(ms: number): Promise<void> {
 async function generateImage(
   image: DrgImage,
   context: string,
-): Promise<Buffer | null> {
+): Promise<Uint8Array | null> {
   const style: ImageStyle = image.style ?? "photo";
   const styleGuide = buildStyleGuide(context, style);
   const verbGuidance = buildVerbFamilyGuidance(image.verb_family);
@@ -315,7 +315,7 @@ async function generateImage(
       // Extract image data from response
       for (const part of response.candidates?.[0]?.content?.parts || []) {
         if (part.inlineData?.data) {
-          return Buffer.from(part.inlineData.data, "base64");
+          return Uint8Array.fromBase64(part.inlineData.data);
         }
       }
 
@@ -341,9 +341,12 @@ async function generateImage(
   return null;
 }
 
-function savePng(pngBuffer: Buffer, outputPath: string): boolean {
+async function savePng(
+  pngBuffer: Uint8Array,
+  outputPath: string,
+): Promise<boolean> {
   try {
-    fs.writeFileSync(outputPath, pngBuffer);
+    await Bun.write(outputPath, pngBuffer);
     return true;
   } catch (error: unknown) {
     const err = error as { message?: string };
@@ -420,12 +423,15 @@ async function main() {
     process.exit(1);
   }
 
-  const manifest = loadManifest(args.badge);
+  const manifest = await loadManifest(args.badge);
   const outputDir = path.resolve(
     `hugo/content/merit-badges/${args.badge}/guide/images`,
   );
 
-  fs.mkdirSync(outputDir, { recursive: true });
+  await Bun.write(path.join(outputDir, ".gitkeep"), "", {
+    createPath: true,
+  });
+  await Bun.file(path.join(outputDir, ".gitkeep")).delete();
 
   console.log(`Badge: ${manifest.badge}`);
   console.log(`Manifest: ${manifest.images.length} images defined`);
@@ -462,10 +468,14 @@ async function main() {
 
   if (args.skipExisting) {
     const before = imagesToGenerate.length;
-    imagesToGenerate = imagesToGenerate.filter(img => {
-      const pngPath = path.join(outputDir, `${img.id}.png`);
-      return !fs.existsSync(pngPath);
-    });
+    const filteredImages: DrgImage[] = [];
+    for (const image of imagesToGenerate) {
+      const pngPath = path.join(outputDir, `${image.id}.png`);
+      if (!(await Bun.file(pngPath).exists())) {
+        filteredImages.push(image);
+      }
+    }
+    imagesToGenerate = filteredImages;
     const skipped = before - imagesToGenerate.length;
     if (skipped > 0) {
       console.log(`Skipping ${skipped} existing images`);
@@ -487,7 +497,9 @@ async function main() {
     const pngPath = path.join(outputDir, `${image.id}.png`);
     const progress = `[${i + 1}/${imagesToGenerate.length}]`;
 
-    console.log(`${progress} Generating: ${image.id} (${image.style ?? "photo"})...`);
+    console.log(
+      `${progress} Generating: ${image.id} (${image.style ?? "photo"})...`,
+    );
 
     const pngBuffer = await generateImage(image, manifest.style_context);
     if (!pngBuffer) {
@@ -496,10 +508,9 @@ async function main() {
       continue;
     }
 
-    const saved = savePng(pngBuffer, pngPath);
+    const saved = await savePng(pngBuffer, pngPath);
     if (saved) {
-      const stats = fs.statSync(pngPath);
-      const sizeKB = (stats.size / 1024).toFixed(1);
+      const sizeKB = ((Bun.file(pngPath).size ?? 0) / 1024).toFixed(1);
       console.log(`${progress} ✓ Saved: ${image.id}.png (${sizeKB} KB)`);
       results.push({ id: image.id, success: true });
     } else {

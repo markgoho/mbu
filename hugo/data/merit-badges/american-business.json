@@ -4,6 +4,7 @@
   "slug": "american-business",
   "url": "https://www.scouting.org/merit-badges/american-business/",
   "eagle_required": false,
+  "category": "Business and Industry",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Business.pdf",
   "last_updated": "2025-12-24",
   "requirements": [
@@ -159,6 +160,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Business and Industry"
+  ]
 }

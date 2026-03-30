@@ -4,6 +4,7 @@
   "slug": "american-heritage",
   "url": "https://www.scouting.org/merit-badges/american-heritage/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Heritage.pdf",
   "last_updated": "2025-12-25",
   "requirements": [
@@ -135,6 +136,5 @@
       "path": "6",
       "text": "Discuss with your counselor the career opportunities in American heritage. Pick one that interests you and explain how to prepare for this career. Discuss what education and training are required for this career."
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

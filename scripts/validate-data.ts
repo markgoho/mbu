@@ -1,5 +1,5 @@
 import { Glob } from "bun";
-import { join } from "path";
+import { join } from "node:path";
 
 const CONTENT_DIR = join(import.meta.dir, "../hugo/data/merit-badges");
 

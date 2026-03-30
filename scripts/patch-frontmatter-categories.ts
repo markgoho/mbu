@@ -1,10 +1,6 @@
 import { MERIT_BADGES } from "./merit-badges";
 
-function buildCategoryFrontmatter({
-  category,
-}: {
-  category: string;
-}): string {
+function buildCategoryFrontmatter({ category }: { category: string }): string {
   return `categories: ["${category}"]`;
 }
 
@@ -37,8 +33,7 @@ for (const badge of MERIT_BADGES) {
   const body = content.slice(frontmatterEndIndex + 5);
   const frontmatterLines = frontmatter.split("\n").filter(Boolean);
   const filteredLines = frontmatterLines.filter(
-    (line) =>
-      !line.startsWith("categories:") && !line.startsWith("category_id:"),
+    line => !line.startsWith("categories:") && !line.startsWith("category_id:"),
   );
   const updatedFrontmatterLines = [...filteredLines, categoryLine];
   const updatedContent = `---\n${updatedFrontmatterLines.join("\n")}\n---\n${body}`;

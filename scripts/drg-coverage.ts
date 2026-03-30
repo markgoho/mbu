@@ -1,4 +1,4 @@
-import { readdir } from "node:fs/promises";
+import { Glob } from "bun";
 import { join } from "node:path";
 
 import { MERIT_BADGES } from "./merit-badges.ts";
@@ -236,13 +236,12 @@ async function countRequirementPages({
 }: {
   guideDirectory: string;
 }): Promise<number> {
-  const directoryEntries = await readdir(guideDirectory, {
-    withFileTypes: true,
-  });
+  let count = 0;
+  for await (const _fileName of new Glob("req*.md").scan(guideDirectory)) {
+    count += 1;
+  }
 
-  return directoryEntries.filter(directoryEntry => {
-    return directoryEntry.isFile() && /^req.*\.md$/u.test(directoryEntry.name);
-  }).length;
+  return count;
 }
 
 async function buildBadgeWarnings({

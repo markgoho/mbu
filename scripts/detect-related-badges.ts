@@ -11,8 +11,7 @@
  * @see specs/feature-2-related-badges-spec.md
  */
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
-import { join } from "path";
+import { join } from "node:path";
 import { MERIT_BADGES, type MeritBadge } from "./merit-badges";
 
 // Types
@@ -243,11 +242,12 @@ function processRequirement(
 }
 
 // Process a single badge
-function processBadge(badge: MeritBadge, stats: Stats): boolean {
+async function processBadge(badge: MeritBadge, stats: Stats): Promise<boolean> {
   const dataPath = join(DATA_DIR, `${badge.slug}.json`);
 
   // Check if data file exists
-  if (!existsSync(dataPath)) {
+  const dataFile = Bun.file(dataPath);
+  if (!(await dataFile.exists())) {
     console.warn(
       `Warning: data file not found for ${badge.title} (${badge.slug})`,
     );
@@ -256,7 +256,7 @@ function processBadge(badge: MeritBadge, stats: Stats): boolean {
 
   try {
     // Read badge data
-    const dataContent = readFileSync(dataPath, "utf-8");
+    const dataContent = await dataFile.text();
     const data: BadgeData = JSON.parse(dataContent);
 
     // Build patterns (excluding self)
@@ -272,7 +272,7 @@ function processBadge(badge: MeritBadge, stats: Stats): boolean {
 
     // Write back if modified
     if (modified) {
-      writeFileSync(dataPath, JSON.stringify(data, null, 2) + "\n");
+      await Bun.write(dataPath, JSON.stringify(data, null, 2) + "\n");
       console.log(`Updated: ${badge.title}`);
     }
 
@@ -362,19 +362,15 @@ async function main() {
   // Process each badge
   let modifiedCount = 0;
   for (const badge of badgesToProcess) {
-    if (processBadge(badge, stats)) {
+    if (await processBadge(badge, stats)) {
       modifiedCount++;
     }
   }
 
   // Generate report
-  if (!existsSync(REPORTS_DIR)) {
-    mkdirSync(REPORTS_DIR, { recursive: true });
-  }
-
   const report = generateReport(stats);
   const reportPath = join(REPORTS_DIR, "badge-relationships.md");
-  writeFileSync(reportPath, report);
+  await Bun.write(reportPath, report);
 
   // Print summary
   console.log("\n====================================");

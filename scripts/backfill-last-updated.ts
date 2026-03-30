@@ -6,8 +6,7 @@
  * This ignores formatting-only commits, file moves, and metadata-only changes.
  */
 
-import { $ } from "bun";
-import { readdir } from "node:fs/promises";
+import { $, Glob } from "bun";
 import { join } from "node:path";
 
 interface CommitEntry {
@@ -82,8 +81,11 @@ async function getRequirementsAtCommit({
 }
 
 const dataDirectory = "hugo/data/merit-badges";
-const files = await readdir(dataDirectory);
-const jsonFiles = files.filter((file) => file.endsWith(".json")).sort();
+const jsonFiles: string[] = [];
+for await (const fileName of new Glob("*.json").scan(dataDirectory)) {
+  jsonFiles.push(fileName);
+}
+jsonFiles.sort();
 
 console.log(`Found ${jsonFiles.length} badge data files\n`);
 

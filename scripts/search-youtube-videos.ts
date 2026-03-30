@@ -11,7 +11,7 @@
  *   bun scripts/search-youtube-videos.ts --badge archery --max-results 10
  */
 
-import * as fs from "node:fs";
+import { Glob } from "bun";
 import * as path from "node:path";
 import YouTube from "youtube-sr";
 import { buildVideoSearchQueries } from "./lib/build-video-search-queries.ts";
@@ -78,10 +78,7 @@ function parseArguments(): {
       index++;
     } else if (argument === "--dry-run") {
       dryRun = true;
-    } else if (
-      argument === "--max-results" &&
-      index + 1 < arguments_.length
-    ) {
+    } else if (argument === "--max-results" && index + 1 < arguments_.length) {
       maxResults = Number.parseInt(arguments_[index + 1]!, 10);
       index++;
     }
@@ -90,9 +87,7 @@ function parseArguments(): {
   if (badge === "") {
     console.error("Usage: bun scripts/search-youtube-videos.ts --badge <slug>");
     console.error("       --dry-run         Print queries without searching");
-    console.error(
-      "       --max-results <N> Results per query (default 5)",
-    );
+    console.error("       --max-results <N> Results per query (default 5)");
     process.exit(1);
   }
 
@@ -104,21 +99,22 @@ function parseArguments(): {
 // ---------------------------------------------------------------------------
 
 /** Read badge data from hugo/data/merit-badges/{slug}.json */
-function readBadgeData({ badge }: { badge: string }): BadgeData {
+async function readBadgeData({ badge }: { badge: string }): Promise<BadgeData> {
   const dataPath = path.join("hugo", "data", "merit-badges", `${badge}.json`);
-  if (!fs.existsSync(dataPath)) {
+  const badgeDataFile = Bun.file(dataPath);
+  if (!(await badgeDataFile.exists())) {
     console.error(`Badge data not found: ${dataPath}`);
     process.exit(1);
   }
-  return JSON.parse(fs.readFileSync(dataPath, "utf-8")) as BadgeData;
+  return (await badgeDataFile.json()) as BadgeData;
 }
 
 /** Get all req*.md files in the guide directory */
-function getGuideFiles({
+async function getGuideFiles({
   badge,
 }: {
   badge: string;
-}): Array<{ filename: string; filepath: string }> {
+}): Promise<Array<{ filename: string; filepath: string }>> {
   const guideDirectory = path.join(
     "hugo",
     "content",
@@ -126,34 +122,38 @@ function getGuideFiles({
     badge,
     "guide",
   );
-  if (!fs.existsSync(guideDirectory)) {
+  const guideDirectoryFile = Bun.file(guideDirectory);
+  if (!(await guideDirectoryFile.exists())) {
     console.error(`Guide directory not found: ${guideDirectory}`);
     console.error("This badge may not have a DRG guide yet.");
     process.exit(1);
   }
 
-  return fs
-    .readdirSync(guideDirectory)
-    .filter((file) => file.startsWith("req") && file.endsWith(".md"))
-    .map((filename) => ({
+  return Array.from(new Glob("req*.md").scanSync(guideDirectory)).map(
+    filename => ({
       filename,
       filepath: path.join(guideDirectory, filename),
-    }));
+    }),
+  );
 }
 
 /** Check if a guide file already has a drg/video shortcode */
-function hasExistingVideo({ filepath }: { filepath: string }): boolean {
-  const content = fs.readFileSync(filepath, "utf-8");
+async function hasExistingVideo({
+  filepath,
+}: {
+  filepath: string;
+}): Promise<boolean> {
+  const content = await Bun.file(filepath).text();
   return content.includes("drg/video");
 }
 
 /** Extract H2/H3 headings from a markdown file */
-function extractHeadings({
+async function extractHeadings({
   filepath,
 }: {
   filepath: string;
-}): string[] {
-  const content = fs.readFileSync(filepath, "utf-8");
+}): Promise<string[]> {
+  const content = await Bun.file(filepath).text();
   const headingRegex = /^#{2,3}\s+(.+)$/gm;
   const headings: string[] = [];
   let match: RegExpExecArray | null = headingRegex.exec(content);
@@ -170,11 +170,7 @@ function extractHeadings({
 }
 
 /** Map a filename like "req1b.md" to a requirement path like "1.b" */
-function filenameToRequirementPath({
-  filename,
-}: {
-  filename: string;
-}): string {
+function filenameToRequirementPath({ filename }: { filename: string }): string {
   // Remove "req" prefix and ".md" suffix
   const body = filename.replace(/^req/, "").replace(/\.md$/, "");
 
@@ -288,7 +284,7 @@ function calculateTrustScore({
 
   // Tutorial-style title keywords: +3
   const lowerTitle = title.toLowerCase();
-  const hasTutorialKeyword = TUTORIAL_KEYWORDS.some((keyword) =>
+  const hasTutorialKeyword = TUTORIAL_KEYWORDS.some(keyword =>
     lowerTitle.includes(keyword),
   );
   if (hasTutorialKeyword) {
@@ -309,11 +305,11 @@ async function main(): Promise<void> {
   console.log("=".repeat(60));
 
   // Read badge data
-  const badgeData = readBadgeData({ badge });
+  const badgeData = await readBadgeData({ badge });
   console.log(`Badge: ${badgeData.title}`);
 
   // Get guide files
-  const guideFiles = getGuideFiles({ badge });
+  const guideFiles = await getGuideFiles({ badge });
   console.log(`Found ${guideFiles.length} requirement pages\n`);
 
   // Build search plan
@@ -332,7 +328,7 @@ async function main(): Promise<void> {
     const requirementPath = filenameToRequirementPath({ filename });
 
     // Skip files that already have videos
-    if (hasExistingVideo({ filepath })) {
+    if (await hasExistingVideo({ filepath })) {
       searchPlans.push({
         filename,
         filepath,
@@ -349,7 +345,7 @@ async function main(): Promise<void> {
       requirements: badgeData.requirements,
       targetPath: requirementPath,
     });
-    const pageHeadings = extractHeadings({ filepath });
+    const pageHeadings = await extractHeadings({ filepath });
 
     // Build queries
     const queries = buildVideoSearchQueries({
@@ -369,7 +365,7 @@ async function main(): Promise<void> {
   }
 
   // Print search plan
-  const skippedCount = searchPlans.filter((plan) => plan.skipped).length;
+  const skippedCount = searchPlans.filter(plan => plan.skipped).length;
   const searchableCount = searchPlans.length - skippedCount;
 
   console.log(`Pages to search: ${searchableCount}`);
@@ -404,9 +400,7 @@ async function main(): Promise<void> {
 
     for (const searchQuery of plan.queries) {
       try {
-        process.stdout.write(
-          `  Searching: "${searchQuery.query}"...`,
-        );
+        process.stdout.write(`  Searching: "${searchQuery.query}"...`);
 
         const results = await YouTube.search(searchQuery.query, {
           type: "video",
@@ -415,8 +409,7 @@ async function main(): Promise<void> {
         });
 
         const newResults = results.filter(
-          (video) =>
-            video.id !== undefined && !seenVideoIds.has(video.id),
+          video => video.id !== undefined && !seenVideoIds.has(video.id),
         );
 
         process.stdout.write(
@@ -481,8 +474,7 @@ async function main(): Promise<void> {
         `  [${verifiedCount}/${allCandidates.length}] BROKEN: ${candidate.title}\n`,
       );
     } else {
-      const statusLabel =
-        result.status === "working" ? "OK" : "EMBED_DISABLED";
+      const statusLabel = result.status === "working" ? "OK" : "EMBED_DISABLED";
       process.stdout.write(
         `  [${verifiedCount}/${allCandidates.length}] ${statusLabel}: ${candidate.title}\n`,
       );
@@ -521,9 +513,11 @@ async function main(): Promise<void> {
     "guide",
   );
   const manifestPath = path.join(guideDirectory, "videos.json");
-  fs.writeFileSync(manifestPath, JSON.stringify(manifest, undefined, 2) + "\n");
+  await Bun.write(manifestPath, JSON.stringify(manifest, undefined, 2) + "\n");
 
-  console.log(`Wrote ${verifiedCandidates.length} candidates to ${manifestPath}\n`);
+  console.log(
+    `Wrote ${verifiedCandidates.length} candidates to ${manifestPath}\n`,
+  );
 
   // Summary report
   console.log("=".repeat(60));
@@ -533,9 +527,15 @@ async function main(): Promise<void> {
   console.log(`  Pages searched:     ${searchableCount}`);
   console.log(`  Pages skipped:      ${skippedCount}`);
   console.log(`  Candidates found:   ${allCandidates.length}`);
-  console.log(`  Verified (working): ${verifiedCandidates.filter((video) => video.status === "working").length}`);
-  console.log(`  Embed disabled:     ${verifiedCandidates.filter((video) => video.status === "embed_disabled").length}`);
-  console.log(`  Broken (excluded):  ${allCandidates.length - verifiedCandidates.length}`);
+  console.log(
+    `  Verified (working): ${verifiedCandidates.filter(video => video.status === "working").length}`,
+  );
+  console.log(
+    `  Embed disabled:     ${verifiedCandidates.filter(video => video.status === "embed_disabled").length}`,
+  );
+  console.log(
+    `  Broken (excluded):  ${allCandidates.length - verifiedCandidates.length}`,
+  );
 
   // Show top candidates by trust score
   const topCandidates = verifiedCandidates.slice(0, 10);

@@ -4,6 +4,7 @@
   "slug": "american-labor",
   "url": "https://www.scouting.org/merit-badges/american-labor/",
   "eagle_required": false,
+  "category": "Trades",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Labor.pdf",
   "last_updated": "2025-12-24",
   "requirements": [
@@ -98,6 +99,5 @@
       "path": "9",
       "text": "Learn about opportunities in the field of labor relations. Choose one career in which you are interested and discuss with your counselor the major responsibilities of that position and the qualifications, education, and training such a position requires."
     }
-  ],
-  "category": "Trades"
+  ]
 }

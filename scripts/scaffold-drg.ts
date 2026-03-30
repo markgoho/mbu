@@ -1,5 +1,5 @@
-import { join } from "node:path";
 import { $ } from "bun";
+import { join } from "node:path";
 
 type Resource = {
   title: string;
@@ -382,7 +382,11 @@ function shouldCreateIntermediateOverviewPage({
   return requirement.path.split(".").length >= 3;
 }
 
-function groupTitleForRequirement({ requirement }: { requirement: Requirement }): string {
+function groupTitleForRequirement({
+  requirement,
+}: {
+  requirement: Requirement;
+}): string {
   const pathParts = requirement.path.split(".");
   const topLevelPart = pathParts[0];
   const secondPart = pathParts[1];
@@ -437,7 +441,8 @@ function buildOverviewPageBody({
 }): string {
   const requirementBlock = buildRequirementShortcodeBlock({ requirement });
   const overviewTargets = buildOverviewTargets({ requirement });
-  const sectionTitle = kind === "select" ? "Your Options" : "What You'll Complete";
+  const sectionTitle =
+    kind === "select" ? "Your Options" : "What You'll Complete";
   const intro =
     kind === "select"
       ? buildSelectionGuidance({
@@ -523,7 +528,6 @@ function createOptionOverviewPage({
     isSub: false,
   });
 }
-
 
 function buildIndexPage({
   badgeData,
@@ -635,7 +639,6 @@ function buildRequirementPageBody({
   ].join("\n");
 }
 
-
 function buildRequirementShortcodeBlock({
   requirement,
 }: {
@@ -674,7 +677,9 @@ function buildInheritedRequirementShortcodeBlock({
 }: {
   requirement: Requirement;
 }): string {
-  const requirementNumber = compactRequirementNumber({ path: requirement.path });
+  const requirementNumber = compactRequirementNumber({
+    path: requirement.path,
+  });
   return `{{< drg/inherited-requirement number="${requirementNumber}" req_path="${requirement.path}" topic="${escapeAttribute({ value: requirement.text })}" />}}`;
 }
 
@@ -689,9 +694,10 @@ function shouldUseInheritedRequirementDisplay({
     return false;
   }
 
-  const startsWithOwnAction = /^(?i:(explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick))\b/.test(
-    trimmedText,
-  );
+  const startsWithOwnAction =
+    /^(?i:(explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick))\b/.test(
+      trimmedText,
+    );
   if (startsWithOwnAction) {
     return false;
   }
@@ -820,9 +826,8 @@ function requirementPathToDisplayNumber({
 
 function extractOptionLabel({ text }: { text: string }): string {
   const trimmedText = text.trim();
-  const namedOptionMatch = /^Option\s+[A-Z0-9]+\s*[—-]\s*([^.:]+?)(?:[.:]|$)/.exec(
-    trimmedText,
-  );
+  const namedOptionMatch =
+    /^Option\s+[A-Z0-9]+\s*[—-]\s*([^.:]+?)(?:[.:]|$)/.exec(trimmedText);
 
   if (namedOptionMatch?.[1] !== undefined) {
     return namedOptionMatch[1].trim();
@@ -830,9 +835,7 @@ function extractOptionLabel({ text }: { text: string }): string {
 
   const optionMatch = /^(.*?Option)\.?/.exec(trimmedText);
   if (optionMatch?.[1] !== undefined) {
-    return optionMatch[1]
-      .replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9]+$/g, "")
-      .trim();
+    return optionMatch[1].replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9]+$/g, "").trim();
   }
 
   return trimmedText;

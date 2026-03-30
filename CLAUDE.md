@@ -29,13 +29,17 @@ bun run hugo:dev
 ```bash
 # Sync all merit badge requirements from scouting.org
 bun run sync:badges
-# Runs: bun scripts/sync-requirements-hybrid.ts
+# Runs: bun scripts/sync-requirements-api.ts
 
 # Sync a single merit badge (faster for testing)
 BADGE_NAME="camping" bun run sync:badges
 
 # Test mode - sync only 3 badges (archery, camping, first-aid)
 TEST_MODE=1 bun run sync:badges
+
+# Firecrawl fallback path
+bun run sync:badges:firecrawl
+# Runs: bun scripts/sync-requirements-hybrid.ts
 ```
 
 ### Related Badge Link Detection

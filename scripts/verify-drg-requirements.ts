@@ -131,7 +131,10 @@ function shortcodeUsageMatchesExpectation(
     return actualShortcode === "inherited-requirement";
   }
 
-  return actualShortcode === "requirement" || actualShortcode === "inherited-requirement";
+  return (
+    actualShortcode === "requirement" ||
+    actualShortcode === "inherited-requirement"
+  );
 }
 
 function formatExpectedShortcode(expectedShortcode: ShortcodeKind): string {
@@ -189,7 +192,9 @@ function childLooksLikeScenarioLabel(text: string): boolean {
 
 function childLooksLikeListLabel(text: string): boolean {
   const trimmedText = text.trim();
-  return !startsWithOwnAction(trimmedText) && /^[A-Z][^.]*[.:]?$/s.test(trimmedText);
+  return (
+    !startsWithOwnAction(trimmedText) && /^[A-Z][^.]*[.:]?$/s.test(trimmedText)
+  );
 }
 
 function childLooksLikeStandaloneQuestion(text: string): boolean {
@@ -288,7 +293,8 @@ function expectedShortcodeForRequirement(
   }
 
   if (
-    (childLooksLikeScenarioLabel(trimmedText) || childLooksLikeListLabel(trimmedText)) &&
+    (childLooksLikeScenarioLabel(trimmedText) ||
+      childLooksLikeListLabel(trimmedText)) &&
     shouldAllowPlainRequirementForLabel(trimmedText, parentText)
   ) {
     return "requirement";
@@ -306,7 +312,10 @@ function expectedShortcodeForRequirement(
     return "requirement";
   }
 
-  if (/^the difference\b/i.test(trimmedText) || /^the differences\b/i.test(trimmedText)) {
+  if (
+    /^the difference\b/i.test(trimmedText) ||
+    /^the differences\b/i.test(trimmedText)
+  ) {
     return "requirement";
   }
 
@@ -314,7 +323,10 @@ function expectedShortcodeForRequirement(
     return "requirement";
   }
 
-  if (/^what\b/i.test(trimmedText) && shouldAllowPlainRequirementForLabel(trimmedText, parentText)) {
+  if (
+    /^what\b/i.test(trimmedText) &&
+    shouldAllowPlainRequirementForLabel(trimmedText, parentText)
+  ) {
     return "requirement";
   }
 
@@ -327,7 +339,10 @@ function expectedShortcodeForRequirement(
     : "requirement";
 }
 
-function shouldSkipRequirementUsageCheck(requirement: Requirement, reqPath: string): boolean {
+function shouldSkipRequirementUsageCheck(
+  requirement: Requirement,
+  reqPath: string,
+): boolean {
   if (requirement.is_option === true) {
     return true;
   }
@@ -382,7 +397,9 @@ function possibleFilesForRequirement(slug: string, reqPath: string): string[] {
 
   return Array.from(
     new Set(
-      candidatePaths.map(path => `${guideDirectory}/${requirementPathToPageSlug(path)}.md`),
+      candidatePaths.map(
+        path => `${guideDirectory}/${requirementPathToPageSlug(path)}.md`,
+      ),
     ),
   );
 }
@@ -391,14 +408,20 @@ function directFileForRequirement(slug: string, reqPath: string): string {
   return `hugo/content/merit-badges/${slug}/guide/${requirementPathToPageSlug(reqPath)}.md`;
 }
 
-function fileContainsRequirementShortcode(content: string, reqNumber: string): boolean {
+function fileContainsRequirementShortcode(
+  content: string,
+  reqNumber: string,
+): boolean {
   const pattern = new RegExp(
     String.raw`\{\{<\s*drg/requirement\s+number="${reqNumber}"(?:\s|>)`,
   );
   return pattern.test(content);
 }
 
-function fileContainsInheritedShortcode(content: string, reqNumber: string): boolean {
+function fileContainsInheritedShortcode(
+  content: string,
+  reqNumber: string,
+): boolean {
   const pattern = new RegExp(
     String.raw`\{\{<\s*drg/inherited-requirement\s+number="${reqNumber}"(?:\s|>|/)`,
   );
@@ -422,7 +445,10 @@ function detectShortcodeKind(
   return "missing";
 }
 
-function fileLikelyContainsRequirementSection(content: string, reqPath: string): boolean {
+function fileLikelyContainsRequirementSection(
+  content: string,
+  reqPath: string,
+): boolean {
   const reqNumber = compactRequirementPath(reqPath);
   const headingPattern = new RegExp(`^## Requirement ${reqNumber}\\b`, "m");
   if (headingPattern.test(content)) {
@@ -487,7 +513,10 @@ function requirementHasDisplaySlot(
   }
 
   for (const [filePath, content] of fileCache) {
-    if (filePath !== directFile && fileLikelyContainsRequirementSection(content, reqPath)) {
+    if (
+      filePath !== directFile &&
+      fileLikelyContainsRequirementSection(content, reqPath)
+    ) {
       return true;
     }
   }
@@ -518,19 +547,33 @@ function extractRequirementMappings(
   parentText?: string,
 ): RequirementMapping[] {
   const mappings: RequirementMapping[] = [];
-  const currentPath = parentPath ? `${parentPath}.${requirement.req_id}` : requirement.path;
+  const currentPath = parentPath
+    ? `${parentPath}.${requirement.req_id}`
+    : requirement.path;
 
-  if (parentPath !== undefined && !shouldSkipRequirementUsageCheck(requirement, currentPath)) {
+  if (
+    parentPath !== undefined &&
+    !shouldSkipRequirementUsageCheck(requirement, currentPath)
+  ) {
     mappings.push({
       reqPath: currentPath,
       reqText: requirement.text,
-      expectedShortcode: expectedShortcodeForRequirement(requirement.text, parentText),
+      expectedShortcode: expectedShortcodeForRequirement(
+        requirement.text,
+        parentText,
+      ),
     });
   }
 
   if (requirement.subrequirements !== undefined) {
     for (const subrequirement of requirement.subrequirements) {
-      mappings.push(...extractRequirementMappings(subrequirement, currentPath, requirement.text));
+      mappings.push(
+        ...extractRequirementMappings(
+          subrequirement,
+          currentPath,
+          requirement.text,
+        ),
+      );
     }
   }
 
@@ -542,7 +585,9 @@ async function discoverBadgeSlugs(): Promise<string[]> {
   const glob = new Glob("hugo/content/merit-badges/*/guide/_index.md");
 
   for await (const filePath of glob.scan(".")) {
-    const match = filePath.match(/hugo\/content\/merit-badges\/([^/]+)\/guide\/_index\.md$/);
+    const match = filePath.match(
+      /hugo\/content\/merit-badges\/([^/]+)\/guide\/_index\.md$/,
+    );
     const slug = match?.[1];
     if (slug !== undefined) {
       slugs.push(slug);
@@ -562,7 +607,9 @@ async function main(): Promise<void> {
           .filter(Boolean)
       : await discoverBadgeSlugs();
 
-  console.log(`Checking ${badgeSlugs.length} badge(s): ${badgeSlugs.join(", ")}`);
+  console.log(
+    `Checking ${badgeSlugs.length} badge(s): ${badgeSlugs.join(", ")}`,
+  );
   console.log();
 
   const mismatches: RequirementUsage[] = [];
@@ -576,7 +623,9 @@ async function main(): Promise<void> {
     );
 
     const fileCache = new Map<string, string>();
-    const guideGlob = new Glob(`hugo/content/merit-badges/${slug}/guide/**/*.md`);
+    const guideGlob = new Glob(
+      `hugo/content/merit-badges/${slug}/guide/**/*.md`,
+    );
     for await (const filePath of guideGlob.scan(".")) {
       fileCache.set(filePath, await Bun.file(filePath).text());
     }
@@ -585,13 +634,29 @@ async function main(): Promise<void> {
 
     for (const mapping of mappings) {
       totalChecks += 1;
-      const { actualShortcode, matchedFile } = findActualUsage(slug, mapping.reqPath, fileCache);
+      const { actualShortcode, matchedFile } = findActualUsage(
+        slug,
+        mapping.reqPath,
+        fileCache,
+      );
 
-      if (!shouldAuditRequirementUsage(slug, mapping.reqPath, actualShortcode, fileCache)) {
+      if (
+        !shouldAuditRequirementUsage(
+          slug,
+          mapping.reqPath,
+          actualShortcode,
+          fileCache,
+        )
+      ) {
         continue;
       }
 
-      if (!shortcodeUsageMatchesExpectation(mapping.expectedShortcode, actualShortcode)) {
+      if (
+        !shortcodeUsageMatchesExpectation(
+          mapping.expectedShortcode,
+          actualShortcode,
+        )
+      ) {
         badgeMismatchCount += 1;
         mismatches.push({
           badge: slug,
@@ -605,16 +670,22 @@ async function main(): Promise<void> {
     }
 
     if (badgeMismatchCount === 0) {
-      console.log(`  ✅ ${slug}: all ${mappings.length} child requirements use expected shortcode types`);
+      console.log(
+        `  ✅ ${slug}: all ${mappings.length} child requirements use expected shortcode types`,
+      );
     } else {
       console.log(`  ❌ ${slug}: ${badgeMismatchCount} shortcode mismatch(es)`);
     }
   }
 
   console.log();
-  console.log("================================================================================");
+  console.log(
+    "================================================================================",
+  );
   console.log("RESULTS");
-  console.log("================================================================================");
+  console.log(
+    "================================================================================",
+  );
 
   if (mismatches.length === 0) {
     console.log("No shortcode mismatches found.");
@@ -622,16 +693,22 @@ async function main(): Promise<void> {
     for (const mismatch of mismatches) {
       console.log(`- ${mismatch.badge} ${mismatch.reqPath}`);
       console.log(`  file: ${mismatch.filePath}`);
-      console.log(`  expected: ${formatExpectedShortcode(mismatch.expectedShortcode)}`);
+      console.log(
+        `  expected: ${formatExpectedShortcode(mismatch.expectedShortcode)}`,
+      );
       console.log(`  actual: ${mismatch.actualShortcode}`);
       console.log(`  text: ${mismatch.reqText}`);
       console.log();
     }
   }
 
-  console.log("================================================================================");
+  console.log(
+    "================================================================================",
+  );
   console.log("SUMMARY");
-  console.log("================================================================================");
+  console.log(
+    "================================================================================",
+  );
   console.log(`  Total child requirements checked: ${totalChecks}`);
   console.log(`  Mismatches found:                 ${mismatches.length}`);
 

@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import * as fs from "node:fs";
+import { Glob } from "bun";
 import * as path from "node:path";
 import { loadEnvFromRepoRoot } from "./lib/load-env-from-repo-root.ts";
 
@@ -169,12 +169,16 @@ async function loadReferenceImage(): Promise<{
 }> {
   const absolutePath = path.resolve(REFERENCE_IMAGE_PATH);
 
-  if (!fs.existsSync(absolutePath)) {
+  const referenceImageFile = Bun.file(absolutePath);
+  if (!(await referenceImageFile.exists())) {
     throw new Error(`Reference image not found: ${absolutePath}`);
   }
 
-  const imageBuffer = fs.readFileSync(absolutePath);
-  const base64Data = imageBuffer.toString("base64");
+  const imageBytes = await referenceImageFile.bytes();
+  const binaryString = Array.from(imageBytes, byte =>
+    String.fromCodePoint(byte),
+  ).join("");
+  const base64Data = btoa(binaryString);
 
   return {
     data: base64Data,
@@ -191,23 +195,21 @@ async function generateBadgeImage(badgeSlug: string): Promise<void> {
   const outputPath = path.resolve(`${badgeDir}/${badgeSlug}-merit-badge.png`);
 
   // 0. Delete existing image files (png and avif)
-  const existingFiles = fs.readdirSync(path.resolve(badgeDir));
-  for (const file of existingFiles) {
-    if (file.endsWith(".png") || file.endsWith(".avif")) {
-      const filePath = path.resolve(badgeDir, file);
-      fs.unlinkSync(filePath);
-      console.log(`Deleted existing image: ${file}`);
-    }
+  for await (const file of new Glob("*.{png,avif}").scan(
+    path.resolve(badgeDir),
+  )) {
+    const filePath = path.resolve(badgeDir, file);
+    await Bun.file(filePath).delete();
+    console.log(`Deleted existing image: ${file}`);
   }
 
   // 1. Load data.json
   console.log(`Loading data from ${dataJsonPath}...`);
-  if (!fs.existsSync(dataJsonPath)) {
+  const badgeDataFile = Bun.file(dataJsonPath);
+  if (!(await badgeDataFile.exists())) {
     throw new Error(`Badge data not found: ${dataJsonPath}`);
   }
-  const dataJson = JSON.parse(
-    fs.readFileSync(dataJsonPath, "utf-8"),
-  ) as BadgeData;
+  const dataJson = (await badgeDataFile.json()) as BadgeData;
 
   // 2. Extract visuals using text model
   const visuals = await extractVisualsFromBadge(dataJson);
@@ -253,8 +255,8 @@ async function generateBadgeImage(badgeSlug: string): Promise<void> {
   let imageSaved = false;
   for (const part of response.candidates?.[0]?.content?.parts || []) {
     if (part.inlineData?.data) {
-      const buffer = Buffer.from(part.inlineData.data, "base64");
-      fs.writeFileSync(outputPath, buffer);
+      const buffer = Uint8Array.fromBase64(part.inlineData.data);
+      await Bun.write(outputPath, buffer);
       console.log(`\nImage saved to: ${outputPath}`);
       imageSaved = true;
       break;

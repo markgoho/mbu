@@ -162,7 +162,10 @@ function urlAppearsInContent(url: string, content: string): boolean {
   let urlMatch: RegExpExecArray | null = urlPattern.exec(content);
   while (urlMatch !== null) {
     const matchedUrl = urlMatch[0];
-    if (matchedUrl !== undefined && normalizeUrl(matchedUrl) === normalizedTargetUrl) {
+    if (
+      matchedUrl !== undefined &&
+      normalizeUrl(matchedUrl) === normalizedTargetUrl
+    ) {
       return true;
     }
     urlMatch = urlPattern.exec(content);
@@ -244,7 +247,7 @@ function findMisplacedResourceInCombinedPage({
     return undefined;
   }
 
-  const expectedHeadingIndex = headingMatches.findIndex((headingMatch) => {
+  const expectedHeadingIndex = headingMatches.findIndex(headingMatch => {
     return headingMatch[0] === expectedHeading;
   });
 
@@ -269,7 +272,11 @@ function findMisplacedResourceInCombinedPage({
     return undefined;
   }
 
-  for (let headingIndex = 0; headingIndex < headingMatches.length; headingIndex += 1) {
+  for (
+    let headingIndex = 0;
+    headingIndex < headingMatches.length;
+    headingIndex += 1
+  ) {
     const headingMatch = headingMatches[headingIndex];
     if (headingMatch === undefined) {
       continue;
@@ -284,7 +291,10 @@ function findMisplacedResourceInCombinedPage({
       continue;
     }
 
-    const sectionContent = content.slice(sectionBounds.start, sectionBounds.end);
+    const sectionContent = content.slice(
+      sectionBounds.start,
+      sectionBounds.end,
+    );
     if (!urlAppearsInContent(resource.url, sectionContent)) {
       continue;
     }
@@ -311,7 +321,9 @@ function extractResources(
   parentPath?: string,
 ): ResourceMapping[] {
   const mappings: ResourceMapping[] = [];
-  const currentPath = parentPath ? `${parentPath}.${requirement.req_id}` : requirement.path;
+  const currentPath = parentPath
+    ? `${parentPath}.${requirement.req_id}`
+    : requirement.path;
 
   if (requirement.resources !== undefined) {
     for (const resource of requirement.resources) {
@@ -338,9 +350,7 @@ function isYoutubeUrl(url: string): boolean {
   return /(?:youtube\.com|youtu\.be)/.test(url);
 }
 
-function findWrongShortcodes(
-  fileCache: Map<string, string>,
-): WrongShortcode[] {
+function findWrongShortcodes(fileCache: Map<string, string>): WrongShortcode[] {
   const issues: WrongShortcode[] = [];
 
   for (const [filePath, content] of fileCache.entries()) {
@@ -379,7 +389,7 @@ function findWrongShortcodes(
 }
 
 async function main(): Promise<void> {
-  const configuredBadgeSlugs = process.env.BADGE_SLUGS?.split(",").map((slug) => {
+  const configuredBadgeSlugs = process.env.BADGE_SLUGS?.split(",").map(slug => {
     return slug.trim();
   });
 
@@ -389,9 +399,14 @@ async function main(): Promise<void> {
     slugsToCheck = configuredBadgeSlugs;
   } else {
     slugsToCheck = [];
-    const guideIndexGlob = new Glob("hugo/content/merit-badges/*/guide/_index.md");
+    const guideIndexGlob = new Glob(
+      "hugo/content/merit-badges/*/guide/_index.md",
+    );
 
-    for await (const path of guideIndexGlob.scan({ cwd: ".", absolute: false })) {
+    for await (const path of guideIndexGlob.scan({
+      cwd: ".",
+      absolute: false,
+    })) {
       const badgeMatch = path.match(/merit-badges\/([^/]+)\/guide/);
       const badgeSlug = badgeMatch?.[1];
       if (badgeSlug !== undefined) {
@@ -402,7 +417,9 @@ async function main(): Promise<void> {
     slugsToCheck.sort();
   }
 
-  console.log(`Checking ${slugsToCheck.length} badge(s): ${slugsToCheck.join(", ")}\n`);
+  console.log(
+    `Checking ${slugsToCheck.length} badge(s): ${slugsToCheck.join(", ")}\n`,
+  );
 
   const allMissing: MissingResource[] = [];
   const allFound: FoundResource[] = [];
@@ -434,8 +451,13 @@ async function main(): Promise<void> {
     totalResources += resourceMappings.length;
 
     const fileCache = new Map<string, string>();
-    const guideFileGlob = new Glob(`hugo/content/merit-badges/${slug}/guide/**/*.md`);
-    for await (const guidePath of guideFileGlob.scan({ cwd: ".", absolute: false })) {
+    const guideFileGlob = new Glob(
+      `hugo/content/merit-badges/${slug}/guide/**/*.md`,
+    );
+    for await (const guidePath of guideFileGlob.scan({
+      cwd: ".",
+      absolute: false,
+    })) {
       const guideContent = await Bun.file(guidePath).text();
       fileCache.set(guidePath, guideContent);
     }
@@ -445,7 +467,10 @@ async function main(): Promise<void> {
     const badgeMisplaced: MisplacedResource[] = [];
 
     for (const resourceMapping of resourceMappings) {
-      const possibleFiles = reqPathToPossibleFiles(slug, resourceMapping.reqPath);
+      const possibleFiles = reqPathToPossibleFiles(
+        slug,
+        resourceMapping.reqPath,
+      );
       let found = false;
       const checkedFiles: string[] = [];
 
@@ -537,7 +562,9 @@ async function main(): Promise<void> {
       statusParts.push(`${badgeMisplaced.length} misplaced resource(s)`);
     }
     if (wrongShortcodes.length > 0) {
-      statusParts.push(`${wrongShortcodes.length} YouTube video(s) using wrong shortcode`);
+      statusParts.push(
+        `${wrongShortcodes.length} YouTube video(s) using wrong shortcode`,
+      );
     }
 
     console.log(`  ${badgeStatus} ${slug}: ${statusParts.join(", ")}`);
@@ -552,7 +579,8 @@ async function main(): Promise<void> {
 
     const resourcesByBadge = new Map<string, MissingResource[]>();
     for (const missingResource of allMissing) {
-      const existingResources = resourcesByBadge.get(missingResource.badge) ?? [];
+      const existingResources =
+        resourcesByBadge.get(missingResource.badge) ?? [];
       existingResources.push(missingResource);
       resourcesByBadge.set(missingResource.badge, existingResources);
     }
@@ -606,7 +634,9 @@ async function main(): Promise<void> {
   }
 
   if (allFound.length > 0) {
-    console.log(`\n✅ FOUND (${allFound.length} resources present in guide pages)\n`);
+    console.log(
+      `\n✅ FOUND (${allFound.length} resources present in guide pages)\n`,
+    );
   }
 
   console.log("=".repeat(80));
@@ -629,7 +659,11 @@ async function main(): Promise<void> {
     );
   }
 
-  if (allMissing.length > 0 || allMisplaced.length > 0 || allWrongShortcodes.length > 0) {
+  if (
+    allMissing.length > 0 ||
+    allMisplaced.length > 0 ||
+    allWrongShortcodes.length > 0
+  ) {
     process.exitCode = 1;
   }
 }

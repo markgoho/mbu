@@ -1,4 +1,3 @@
-import { spawn } from "child_process";
 import { MERIT_BADGES } from "./merit-badges";
 
 // Parse command line arguments
@@ -59,25 +58,20 @@ console.log("");
 
 // Process each badge
 async function generateImage(slug: string): Promise<boolean> {
-  return new Promise(resolve => {
-    const child = spawn(
-      "bun",
-      ["run", "scripts/generate-merit-badge-image.ts", slug],
+  try {
+    const subprocess = Bun.spawn(
+      ["bun", "run", "scripts/generate-merit-badge-image.ts", slug],
       {
-        stdio: "inherit",
+        stdio: ["inherit", "inherit", "inherit"],
         cwd: process.cwd(),
       },
     );
 
-    child.on("close", code => {
-      resolve(code === 0);
-    });
-
-    child.on("error", err => {
-      console.error(`Failed to start process for ${slug}:`, err);
-      resolve(false);
-    });
-  });
+    return (await subprocess.exited) === 0;
+  } catch (error) {
+    console.error(`Failed to start process for ${slug}:`, error);
+    return false;
+  }
 }
 
 async function main() {

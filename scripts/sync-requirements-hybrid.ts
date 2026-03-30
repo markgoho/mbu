@@ -548,7 +548,9 @@ function splitEmbeddedLists(requirements: Requirement[]): void {
     if (!requirement.subrequirements) {
       // Pattern: text contains "following:" followed by letter items "a. ", "b. ", etc.
       // Note: May have NO space after "following:" (health-care-professions case)
-      const followingMatch = requirement.text.match(/^(.*?following:)\s*(.+)$/i);
+      const followingMatch = requirement.text.match(
+        /^(.*?following:)\s*(.+)$/i,
+      );
       if (followingMatch && followingMatch[1] && followingMatch[2]) {
         const possibleIntro = followingMatch[1].trim();
         const remainder = followingMatch[2];
@@ -614,24 +616,34 @@ function splitEmbeddedParenthesizedLists(requirements: Requirement[]): void {
     const markerMatches = Array.from(requirement.text.matchAll(markerPattern));
 
     if (markerMatches.length >= 3) {
-      const numbers = markerMatches.map(match => Number.parseInt(match[1] ?? "", 10));
+      const numbers = markerMatches.map(match =>
+        Number.parseInt(match[1] ?? "", 10),
+      );
       const hasSequentialMarkers = numbers.every(
         (number, index) => number === index + 1,
       );
 
       if (hasSequentialMarkers) {
         const firstMarker = markerMatches[0];
-        if (firstMarker && firstMarker.index !== undefined && firstMarker.index > 0) {
+        if (
+          firstMarker &&
+          firstMarker.index !== undefined &&
+          firstMarker.index > 0
+        ) {
           const intro = requirement.text.slice(0, firstMarker.index).trim();
           const remainder = requirement.text.slice(firstMarker.index).trim();
 
           if (intro.endsWith(":")) {
             const normalizedIntro = intro.replace(/:(\S)/g, ": $1");
             const normalizedRemainder = remainder.replace(/:(\S)/g, ": $1");
-            const groupMatch = normalizedIntro.match(/^(.*?following:)\s*(.+)$/i);
+            const groupMatch = normalizedIntro.match(
+              /^(.*?following:)\s*(.+)$/i,
+            );
             const leadInText = groupMatch?.[1]?.trim() ?? normalizedIntro;
             const groupLabel = groupMatch?.[2]?.trim();
-            const selectMatch = leadInText.match(/\bselect\s+(one|two|three|four|five|six|seven|eight|nine|ten|\d+)\b/i);
+            const selectMatch = leadInText.match(
+              /\bselect\s+(one|two|three|four|five|six|seven|eight|nine|ten|\d+)\b/i,
+            );
             const selectValue = selectMatch?.[1]?.toLowerCase();
             const selectCount =
               selectValue === undefined
@@ -667,7 +679,8 @@ function splitEmbeddedParenthesizedLists(requirements: Requirement[]): void {
                 .join("\n");
 
               if (requirement.subrequirements) {
-                const groupHeading = groupLabel === undefined ? "" : `\n\n${groupLabel}`;
+                const groupHeading =
+                  groupLabel === undefined ? "" : `\n\n${groupLabel}`;
                 requirement.text = `${leadInText}${groupHeading}\n\n${markdownList}`;
                 requirement.subrequirement_mode = { type: "all" };
               } else {
@@ -838,10 +851,14 @@ try {
 
     if (existingRequirements === newRequirements) {
       lastUpdated = existingData.last_updated ?? today;
-      console.log(`\n📅 Requirements unchanged — preserving last_updated: ${lastUpdated}`);
+      console.log(
+        `\n📅 Requirements unchanged — preserving last_updated: ${lastUpdated}`,
+      );
     } else {
       lastUpdated = today;
-      console.log(`\n📅 Requirements changed — setting last_updated: ${lastUpdated}`);
+      console.log(
+        `\n📅 Requirements changed — setting last_updated: ${lastUpdated}`,
+      );
     }
   } else {
     lastUpdated = today;

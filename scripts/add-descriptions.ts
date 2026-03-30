@@ -1,6 +1,5 @@
 import { $ } from "bun";
-import { existsSync, readFileSync, writeFileSync } from "fs";
-import { join } from "path";
+import { join } from "node:path";
 import { MERIT_BADGES, findBadgeBySlug, type MeritBadge } from "./merit-badges";
 
 // CONFIGURATION
@@ -64,19 +63,19 @@ if (SINGLE_BADGE) {
 }
 
 // Helper function to load badge data
-function loadBadgeData(slug: string): BadgeData | null {
+async function loadBadgeData(slug: string): Promise<BadgeData | null> {
   const dataPath = join(DATA_DIR, `${slug}.json`);
+  const badgeFile = Bun.file(dataPath);
 
-  if (!existsSync(dataPath)) {
+  if (!(await badgeFile.exists())) {
     console.warn(`⚠️  data.json not found for ${slug}`);
     return null;
   }
 
   try {
-    const content = readFileSync(dataPath, "utf-8");
-    return JSON.parse(content) as BadgeData;
-  } catch (err) {
-    console.error(`❌ Error reading data.json for ${slug}:`, err);
+    return (await badgeFile.json()) as BadgeData;
+  } catch (error) {
+    console.error(`❌ Error reading data.json for ${slug}:`, error);
     return null;
   }
 }
@@ -164,16 +163,20 @@ Be specific about what scouts learn and do. End with "to earn this${eagleText} m
 }
 
 // Helper function to update front matter
-function updateFrontMatter(slug: string, description: string): boolean {
+async function updateFrontMatter(
+  slug: string,
+  description: string,
+): Promise<boolean> {
   const indexPath = join(CONTENT_DIR, slug, "requirements", "index.md");
+  const indexFile = Bun.file(indexPath);
 
-  if (!existsSync(indexPath)) {
+  if (!(await indexFile.exists())) {
     console.error(`❌ _index.md not found for ${slug}`);
     return false;
   }
 
   try {
-    const content = readFileSync(indexPath, "utf-8");
+    const content = await indexFile.text();
 
     // Parse front matter
     const frontMatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
@@ -204,10 +207,10 @@ function updateFrontMatter(slug: string, description: string): boolean {
       `---\n${newFrontMatter}\n---`,
     );
 
-    writeFileSync(indexPath, newContent, "utf-8");
+    await Bun.write(indexPath, newContent);
     return true;
-  } catch (err) {
-    console.error(`❌ Error updating front matter for ${slug}:`, err);
+  } catch (error) {
+    console.error(`❌ Error updating front matter for ${slug}:`, error);
     return false;
   }
 }
@@ -226,7 +229,7 @@ for (let i = 0; i < badgeList.length; i++) {
 
   try {
     // Load badge data
-    const badgeData = loadBadgeData(slug);
+    const badgeData = await loadBadgeData(slug);
 
     if (!badgeData) {
       errorCount++;
@@ -253,7 +256,7 @@ for (let i = 0; i < badgeList.length; i++) {
     console.log(`📝 Generated (${description.length} chars): ${description}`);
 
     // Update front matter
-    const updated = updateFrontMatter(slug, description);
+    const updated = await updateFrontMatter(slug, description);
 
     if (!updated) {
       errorCount++;

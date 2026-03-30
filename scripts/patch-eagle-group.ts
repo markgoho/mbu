@@ -6,7 +6,7 @@
 
 import { MERIT_BADGES } from "./merit-badges";
 
-const eagleBadges = MERIT_BADGES.filter((badge) => badge.eagle_required);
+const eagleBadges = MERIT_BADGES.filter(badge => badge.eagle_required);
 
 for (const badge of eagleBadges) {
   const dataPath = `hugo/data/merit-badges/${badge.slug}.json`;

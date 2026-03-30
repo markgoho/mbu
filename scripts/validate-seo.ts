@@ -5,8 +5,8 @@
  * Validates all SEO improvements from seo.md implementation checklist
  */
 
-import { existsSync, readFileSync, readdirSync, statSync } from "fs";
-import { join } from "path";
+import { Glob } from "bun";
+import { join } from "node:path";
 
 interface ValidationResult {
   passed: boolean;
@@ -15,15 +15,15 @@ interface ValidationResult {
 
 interface ValidationCheck {
   name: string;
-  check: () => ValidationResult;
+  check: () => Promise<ValidationResult>;
 }
 
 const checks: ValidationCheck[] = [
   // 1. Hugo sitemap configuration
   {
     name: "Hugo sitemap with git-based lastmod",
-    check: () => {
-      const config = readFileSync("hugo/hugo.toml", "utf-8");
+    check: async () => {
+      const config = await Bun.file("hugo/hugo.toml").text();
       const hasGitInfo = config.includes("enableGitInfo = true");
       const hasSitemap = config.includes("[sitemap]");
       const hasChangefreq = config.includes('changefreq = ""');
@@ -45,15 +45,12 @@ const checks: ValidationCheck[] = [
   // 2. BreadcrumbList schema
   {
     name: "BreadcrumbList schema partial exists",
-    check: () => {
-      const exists = existsSync(
+    check: async () => {
+      const breadcrumbFile = Bun.file(
         "hugo/layouts/partials/json-ld/breadcrumb.html",
       );
-      if (exists) {
-        const content = readFileSync(
-          "hugo/layouts/partials/json-ld/breadcrumb.html",
-          "utf-8",
-        );
+      if (await breadcrumbFile.exists()) {
+        const content = await breadcrumbFile.text();
         const hasBreadcrumb = content.includes('"@type": "BreadcrumbList"');
         if (hasBreadcrumb) {
           return {
@@ -73,11 +70,10 @@ const checks: ValidationCheck[] = [
   // 3. BreadcrumbList schema included in requirements page
   {
     name: "BreadcrumbList schema included in requirements layout",
-    check: () => {
-      const layout = readFileSync(
+    check: async () => {
+      const layout = await Bun.file(
         "hugo/layouts/merit-badges/requirements.html",
-        "utf-8",
-      );
+      ).text();
       const includes = layout.includes('partial "json-ld/breadcrumb.html"');
       if (includes) {
         return {
@@ -95,11 +91,10 @@ const checks: ValidationCheck[] = [
   // 4. Course schema includes all requirements (not just first 5)
   {
     name: "Course schema includes all requirements",
-    check: () => {
-      const schema = readFileSync(
+    check: async () => {
+      const schema = await Bun.file(
         "hugo/layouts/partials/json-ld/merit-badge-requirements.html",
-        "utf-8",
-      );
+      ).text();
       const hasFirst5 = schema.includes("first 5");
       const hasJsonRequirements = schema.includes("$json.requirements");
 
@@ -121,15 +116,12 @@ const checks: ValidationCheck[] = [
   // 5. Organization schema
   {
     name: "Organization schema partial exists",
-    check: () => {
-      const exists = existsSync(
+    check: async () => {
+      const organizationFile = Bun.file(
         "hugo/layouts/partials/json-ld/organization.html",
       );
-      if (exists) {
-        const content = readFileSync(
-          "hugo/layouts/partials/json-ld/organization.html",
-          "utf-8",
-        );
+      if (await organizationFile.exists()) {
+        const content = await organizationFile.text();
         const hasOrganization = content.includes('"@type": "Organization"');
         const hasName = content.includes('"name": "Merit Badge University"');
         if (hasOrganization && hasName) {
@@ -150,8 +142,8 @@ const checks: ValidationCheck[] = [
   // 6. Organization schema included in homepage
   {
     name: "Organization schema included in homepage",
-    check: () => {
-      const homepage = readFileSync("hugo/layouts/index.html", "utf-8");
+    check: async () => {
+      const homepage = await Bun.file("hugo/layouts/index.html").text();
       const includes = homepage.includes('partial "json-ld/organization.html"');
       if (includes) {
         return {
@@ -169,10 +161,10 @@ const checks: ValidationCheck[] = [
   // 7. robots.txt
   {
     name: "robots.txt with sitemap location",
-    check: () => {
-      const exists = existsSync("hugo/static/robots.txt");
-      if (exists) {
-        const content = readFileSync("hugo/static/robots.txt", "utf-8");
+    check: async () => {
+      const robotsFile = Bun.file("hugo/static/robots.txt");
+      if (await robotsFile.exists()) {
+        const content = await robotsFile.text();
         const hasSitemap = content.includes(
           "Sitemap: https://merit-badge.university/sitemap.xml",
         );
@@ -195,8 +187,8 @@ const checks: ValidationCheck[] = [
   // 8. CSP headers in firebase.json
   {
     name: "CSP headers in firebase.json",
-    check: () => {
-      const config = readFileSync("firebase.json", "utf-8");
+    check: async () => {
+      const config = await Bun.file("firebase.json").text();
       const hasHeaders = config.includes('"headers"');
       const hasCSP = config.includes("Content-Security-Policy");
       const hasXFrame = config.includes("X-Frame-Options");
@@ -220,11 +212,10 @@ const checks: ValidationCheck[] = [
   // 9. Preconnect for scouting.org
   {
     name: "Preconnect for scouting.org",
-    check: () => {
-      const sitePartial = readFileSync(
+    check: async () => {
+      const sitePartial = await Bun.file(
         "hugo/layouts/partials/head/site.html",
-        "utf-8",
-      );
+      ).text();
       const hasPreconnect = sitePartial.includes(
         'rel="preconnect" href="https://www.scouting.org"',
       );
@@ -249,8 +240,8 @@ const checks: ValidationCheck[] = [
   // 10. hreflang tag
   {
     name: 'hreflang="en-US" tag',
-    check: () => {
-      const baseof = readFileSync("hugo/layouts/_default/baseof.html", "utf-8");
+    check: async () => {
+      const baseof = await Bun.file("hugo/layouts/_default/baseof.html").text();
       const hasHreflang = baseof.includes('hreflang="en-US"');
 
       if (hasHreflang) {
@@ -269,11 +260,10 @@ const checks: ValidationCheck[] = [
   // 11. Content-Language meta tag
   {
     name: "content-language meta tag",
-    check: () => {
-      const sitePartial = readFileSync(
+    check: async () => {
+      const sitePartial = await Bun.file(
         "hugo/layouts/partials/head/site.html",
-        "utf-8",
-      );
+      ).text();
       const hasContentLanguage = sitePartial.includes(
         'content-language" content="en-US"',
       );
@@ -294,8 +284,8 @@ const checks: ValidationCheck[] = [
   // 12. Canonical tags
   {
     name: "Canonical tags with trailing slashes",
-    check: () => {
-      const baseof = readFileSync("hugo/layouts/_default/baseof.html", "utf-8");
+    check: async () => {
+      const baseof = await Bun.file("hugo/layouts/_default/baseof.html").text();
       const hasCanonical = baseof.includes(
         '<link rel="canonical" href="{{ .Permalink | absURL }}" />',
       );
@@ -317,21 +307,20 @@ const checks: ValidationCheck[] = [
   // 13. Meta descriptions
   {
     name: "Meta descriptions for all badges",
-    check: () => {
+    check: async () => {
       const badgesPath = "hugo/content/merit-badges";
-      const badges = readdirSync(badgesPath).filter(name => {
-        const path = join(badgesPath, name);
-        return statSync(path).isDirectory();
-      });
+      const badgeDirectories = Array.from(new Glob("*/").scanSync(badgesPath));
 
       let withDescriptions = 0;
       let total = 0;
 
-      for (const badge of badges) {
+      for (const badgeDirectory of badgeDirectories) {
+        const badge = badgeDirectory.replace(/\/$/, "");
         const reqPath = join(badgesPath, badge, "requirements", "index.md");
-        if (existsSync(reqPath)) {
+        const requirementFile = Bun.file(reqPath);
+        if (await requirementFile.exists()) {
           total++;
-          const content = readFileSync(reqPath, "utf-8");
+          const content = await requirementFile.text();
           if (/^description:/m.test(content)) {
             withDescriptions++;
           }
@@ -361,7 +350,7 @@ let passedCount = 0;
 let failedCount = 0;
 
 for (const check of checks) {
-  const result = check.check();
+  const result = await check.check();
   console.log(`${result.message}`);
 
   if (result.passed) {

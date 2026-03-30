@@ -4,8 +4,9 @@
   "slug": "animal-science",
   "url": "https://www.scouting.org/merit-badges/animal-science/",
   "eagle_required": false,
+  "category": "Agribusiness",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Animal%20Science.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -25,7 +26,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Select one type of animal: beef, cow, dairy cow, horse, sheep, goat, or hog, or a poultry flock, and tell how you would properly manage it. Include in your discussion nutritional (feeding) concerns, housing, disease prevention, waste control/removal, breeding programs, and biosecurity as appropriate."
+      "text": "Select one type of animal: beef cow, dairy cow, horse, sheep, goat, or hog, or a poultry flock, and tell how you would properly manage it. Include in your discussion nutritional (feeding) concerns, housing, disease prevention, waste control/removal, breeding programs, and biosecurity as appropriate."
     },
     {
       "req_id": "5",
@@ -60,7 +61,7 @@
         {
           "req_id": "beef-cattle",
           "path": "6.beef-cattle",
-          "text": "Beef Cattle Option",
+          "text": "Option A—Beef Cattle. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -111,7 +112,7 @@
         {
           "req_id": "dairy",
           "path": "6.dairy",
-          "text": "Dairy Option",
+          "text": "Option B—Dairy. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -152,7 +153,7 @@
         {
           "req_id": "horse",
           "path": "6.horse",
-          "text": "Horse Option",
+          "text": "Option C—Horse. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -188,7 +189,7 @@
         {
           "req_id": "sheep-or-goat",
           "path": "6.sheep-or-goat",
-          "text": "Sheep or Goat Option (choose one and complete the following based upon the choice)",
+          "text": "Option D—Sheep or Goat. Choose one and do ALL of the following based upon the choice:",
           "is_option": true,
           "subrequirements": [
             {
@@ -234,13 +235,14 @@
             }
           ],
           "subrequirement_mode": {
-            "type": "all"
+            "type": "select",
+            "count": 1
           }
         },
         {
           "req_id": "hog",
           "path": "6.hog",
-          "text": "Hog Option",
+          "text": "Option E—Hog. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -287,7 +289,7 @@
         {
           "req_id": "avian",
           "path": "6.avian",
-          "text": "Avian Option",
+          "text": "Option F—Avian. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -352,6 +354,5 @@
       "path": "7",
       "text": "Find out about three career opportunities in animal science. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
     }
-  ],
-  "category": "Agribusiness"
+  ]
 }

@@ -1,5 +1,4 @@
-import { readdir, stat } from "node:fs/promises";
-import * as fs from "node:fs";
+import { Glob } from "bun";
 import * as path from "node:path";
 import sharp from "sharp";
 
@@ -38,37 +37,30 @@ async function findDrgImages(badge?: string): Promise<ImageFile[]> {
   if (badge !== undefined) {
     badgeSlugs.push(badge);
   } else {
-    const entries = await readdir(basePath);
-    for (const entry of entries) {
-      const guideImagesPath = path.join(basePath, entry, "guide", "images");
-      try {
-        const stats = await stat(guideImagesPath);
-        if (stats.isDirectory()) {
-          badgeSlugs.push(entry);
-        }
-      } catch {
-        // No guide/images directory for this badge
+    for await (const entry of new Glob("*/guide/images/").scan(basePath)) {
+      const badgeSlug = entry.split("/")[0];
+      if (badgeSlug !== undefined) {
+        badgeSlugs.push(badgeSlug);
       }
     }
   }
 
   for (const slug of badgeSlugs) {
     const imagesDirectory = path.join(basePath, slug, "guide", "images");
-    try {
-      const files = await readdir(imagesDirectory);
-      for (const file of files) {
-        if (file.endsWith(".png") || file.endsWith(".avif")) {
-          images.push({
-            filePath: path.join(imagesDirectory, file),
-            badge: slug,
-          });
-        }
-      }
-    } catch {
+    const directoryExists = await Bun.file(imagesDirectory).exists();
+    if (!directoryExists) {
       if (badge !== undefined) {
         console.error(`No images directory found for badge: ${slug}`);
         process.exit(1);
       }
+      continue;
+    }
+
+    for await (const file of new Glob("*.{png,avif}").scan(imagesDirectory)) {
+      images.push({
+        filePath: path.join(imagesDirectory, file),
+        badge: slug,
+      });
     }
   }
 
@@ -102,8 +94,8 @@ async function convertToAvif({
     ? image.filePath
     : image.filePath.replace(/\.png$/, ".avif");
 
-  if (!force && !isAvifSource && fs.existsSync(avifPath)) {
-    fs.unlinkSync(image.filePath);
+  if (!force && !isAvifSource && (await Bun.file(avifPath).exists())) {
+    await Bun.file(image.filePath).delete();
     return {
       converted: false,
       originalSize: 0,
@@ -125,8 +117,7 @@ async function convertToAvif({
     }
   }
 
-  const originalStats = await stat(image.filePath);
-  const originalSize = originalStats.size;
+  const originalSize = Bun.file(image.filePath).size ?? 0;
 
   // When source and destination are the same file, write to a temp file first
   if (isAvifSource) {
@@ -135,17 +126,17 @@ async function convertToAvif({
       .resize(AVIF_WIDTH, undefined, { fit: "inside" })
       .avif({ quality: AVIF_QUALITY })
       .toFile(temporaryPath);
-    fs.renameSync(temporaryPath, avifPath);
+    await Bun.write(avifPath, Bun.file(temporaryPath));
+    await Bun.file(temporaryPath).delete();
   } else {
     await sharp(image.filePath)
       .resize(AVIF_WIDTH, undefined, { fit: "inside" })
       .avif({ quality: AVIF_QUALITY })
       .toFile(avifPath);
-    fs.unlinkSync(image.filePath);
+    await Bun.file(image.filePath).delete();
   }
 
-  const newStats = await stat(avifPath);
-  const newSize = newStats.size;
+  const newSize = Bun.file(avifPath).size ?? 0;
 
   return {
     converted: true,
@@ -209,7 +200,9 @@ async function main(): Promise<void> {
         skippedCount++;
         if (result.removedPng) {
           removedPngCount++;
-          console.log(`  ✓ Removed source PNG after confirming existing AVIF: ${image.badge}/${basename}`);
+          console.log(
+            `  ✓ Removed source PNG after confirming existing AVIF: ${image.badge}/${basename}`,
+          );
         }
       }
     } catch (error: unknown) {

@@ -119,7 +119,7 @@ async function scanFiles(globPattern: string): Promise<VideoEntry[]> {
 // ---------------------------------------------------------------------------
 
 async function main() {
-  const badgeSlugs = process.env.BADGE_SLUGS?.split(",").map((s) => s.trim());
+  const badgeSlugs = process.env.BADGE_SLUGS?.split(",").map(s => s.trim());
 
   let globPattern: string;
   if (badgeSlugs && badgeSlugs.length > 0) {
@@ -134,7 +134,7 @@ async function main() {
   const entries = await scanFiles(globPattern);
 
   // Deduplicate by videoId (same video may appear in multiple files)
-  const uniqueIds = [...new Set(entries.map((e) => e.videoId))];
+  const uniqueIds = [...new Set(entries.map(e => e.videoId))];
 
   console.log(
     `Found ${entries.length} YouTube references (${uniqueIds.length} unique video IDs)\n`,
@@ -165,7 +165,7 @@ async function main() {
   console.log(`  Verified ${verified}/${uniqueIds.length} unique IDs.   \n`);
 
   // Build results
-  const results: VerificationResult[] = entries.map((entry) => {
+  const results: VerificationResult[] = entries.map(entry => {
     const cached = verificationCache.get(entry.videoId)!;
     return {
       ...entry,
@@ -175,9 +175,9 @@ async function main() {
   });
 
   // Report
-  const broken = results.filter((r) => r.status === "broken");
-  const embedDisabled = results.filter((r) => r.status === "embed_disabled");
-  const working = results.filter((r) => r.status === "working");
+  const broken = results.filter(r => r.status === "broken");
+  const embedDisabled = results.filter(r => r.status === "embed_disabled");
+  const working = results.filter(r => r.status === "working");
 
   console.log("=".repeat(80));
   console.log("RESULTS");
@@ -196,18 +196,14 @@ async function main() {
   }
 
   if (embedDisabled.length > 0) {
-    console.log(
-      `\n⚠️  EMBED DISABLED (${embedDisabled.length} references):\n`,
-    );
+    console.log(`\n⚠️  EMBED DISABLED (${embedDisabled.length} references):\n`);
     console.log(
       `    These videos exist and are watchable on YouTube, but embedding`,
     );
     console.log(
       `    is disabled by the uploader. They show "Video unavailable" when`,
     );
-    console.log(
-      `    embedded. Consider switching from {{< drg/video >}} to`,
-    );
+    console.log(`    embedded. Consider switching from {{< drg/video >}} to`);
     console.log(`    {{< drg/external-link >}} for these.\n`);
     for (const r of embedDisabled) {
       const relPath = r.file.replace(process.cwd() + "/", "");
@@ -242,11 +238,15 @@ async function main() {
   // Group broken + embed-disabled by badge
   const problematic = [...broken, ...embedDisabled];
   if (problematic.length > 0) {
-    const byBadge = new Map<string, { broken: number; embedDisabled: number }>();
+    const byBadge = new Map<
+      string,
+      { broken: number; embedDisabled: number }
+    >();
     for (const r of problematic) {
       const badgeMatch = r.file.match(/merit-badges\/([^/]+)\//);
       const badge = badgeMatch?.[1] ?? "unknown";
-      if (!byBadge.has(badge)) byBadge.set(badge, { broken: 0, embedDisabled: 0 });
+      if (!byBadge.has(badge))
+        byBadge.set(badge, { broken: 0, embedDisabled: 0 });
       const counts = byBadge.get(badge)!;
       if (r.status === "broken") counts.broken++;
       else counts.embedDisabled++;
