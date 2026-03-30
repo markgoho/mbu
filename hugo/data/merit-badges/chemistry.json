@@ -4,13 +4,14 @@
   "slug": "chemistry",
   "url": "https://www.scouting.org/merit-badges/chemistry/",
   "eagle_required": false,
+  "category": "Physical Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Chemistry.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
-      "text": "Do the following and discuss with your counselor:",
+      "text": "Chemistry and Safety. Do the following and discuss with your counselor:",
       "subrequirements": [
         {
           "req_id": "a",
@@ -100,6 +101,10 @@
             {
               "title": "Watching How Alcohol Kills Viruses and Bacteria Under a Microscope (video)",
               "url": "https://www.youtube.com/shorts/Jx5BgbIkXEs"
+            },
+            {
+              "title": "Watching How Alcohol Kills Virus and Bacteria Under a Microscope (video)",
+              "url": "https://youtu.be/vX_Gp-NXyAM"
             }
           ]
         }
@@ -316,6 +321,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

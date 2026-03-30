@@ -4,8 +4,9 @@
   "slug": "canoeing",
   "url": "https://www.scouting.org/merit-badges/canoeing/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Canoeing.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -95,7 +96,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "Review the importance of safety and rescue equipment such as a sound signal device, extra paddle, sponge, bailer, bilge pump, rescue sling, ropes, throw bag."
+          "text": "Review the importance of safety and rescue equipment such as a sound signal device, extra paddle, sponge, bailer, bilge pump, rescue sling, ropes, and throw bag."
         }
       ],
       "subrequirement_mode": {
@@ -185,7 +186,7 @@
         {
           "req_id": "a",
           "path": "9.a",
-          "text": "Pivot (spin) the canoe 180° (half circle) to the right from a stationary position, stop, and return to the starting position by pivoting to the left using draw and pushaway strokes or using forward and reverse sweeps staying within 2 boat lengths of the starting position."
+          "text": "Pivot (spin) the canoe 180&deg; (half circle) to the right from a stationary position, stop, and return to the starting position by pivoting to the left using draw and pushaway strokes or using forward and reverse sweeps staying within 2 boat lengths of the starting position."
         },
         {
           "req_id": "b",
@@ -210,7 +211,7 @@
         {
           "req_id": "f",
           "path": "9.f",
-          "text": "While maintaining forward motion, turn the canoe 90° in an arc to the right in 5-10 boat lengths with the bow paddler using as necessary either the draw stroke or forward sweep and the stern paddler using only the forward stroke. Repeat the maneuver turning the canoe 90° to the left."
+          "text": "While maintaining forward motion, turn the canoe 90&deg; in an arc to the right in 5-10 boat lengths with the bow paddler using as necessary either the draw stroke or forward sweep and the stern paddler using only the forward stroke. Repeat the maneuver turning the canoe 90&deg; to the left."
         },
         {
           "req_id": "g",
@@ -227,6 +228,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

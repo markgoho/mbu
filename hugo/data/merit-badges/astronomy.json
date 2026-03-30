@@ -4,6 +4,7 @@
   "slug": "astronomy",
   "url": "https://www.scouting.org/merit-badges/astronomy/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Astronomy.pdf",
   "last_updated": "2025-12-25",
   "requirements": [
@@ -660,6 +661,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

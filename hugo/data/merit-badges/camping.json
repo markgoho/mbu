@@ -4,8 +4,9 @@
   "slug": "camping",
   "url": "https://www.scouting.org/merit-badges/camping/",
   "eagle_required": true,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Camping.pdf",
-  "last_updated": "2026-03-11",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -527,6 +528,5 @@
       "path": "10",
       "text": "Discuss how the things you did to earn this badge have taught you about personal health and safety, survival, public health, conservation, and good citizenship. In your discussion, tell how Scout spirit and the Scout Oath and Scout Law apply to camping and outdoor ethics."
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

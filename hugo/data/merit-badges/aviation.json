@@ -4,6 +4,7 @@
   "slug": "aviation",
   "url": "https://www.scouting.org/merit-badges/aviation/",
   "eagle_required": false,
+  "category": "Transportation",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Aviation.pdf",
   "last_updated": "2025-12-24",
   "requirements": [
@@ -185,6 +186,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Transportation"
+  ]
 }

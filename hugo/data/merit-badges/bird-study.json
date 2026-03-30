@@ -4,8 +4,9 @@
   "slug": "bird-study",
   "url": "https://www.scouting.org/merit-badges/bird-study/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Bird%20Study.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -86,6 +87,10 @@
             {
               "title": "How to Use Binoculars For Bird Watching - A Beginners Guide! (video)",
               "url": "https://www.youtube.com/watch?v=cNx9klskWFk"
+            },
+            {
+              "title": "How to Get Crystal Clear Focus With Your Binoculars (video)",
+              "url": "https://www.youtube.com/watch?v=pkPzl-VPmo4 "
             }
           ]
         },
@@ -159,7 +164,7 @@
         {
           "req_id": "f",
           "path": "4.f",
-          "text": "Sparrow."
+          "text": "Sparrow"
         }
       ],
       "subrequirement_mode": {
@@ -219,6 +224,10 @@
             {
               "title": "Bird Feeding Adaptations: How Beaks Are Adapted to What Birds Eat (video)",
               "url": "https://www.youtube.com/watch?v=lFZ8NMBDCJw"
+            },
+            {
+              "title": "A Beginner's Guide to Bird Beaks (video)",
+              "url": "https://www.youtube.com/watch?v=BjzYfiFm_tw "
             }
           ]
         },
@@ -245,6 +254,10 @@
             {
               "title": "AMAZING Bird Feet! (video)",
               "url": "https://www.youtube.com/watch?v=cwFZyNiRzQU%20"
+            },
+            {
+              "title": "AMAZING Bird Feet! (video)",
+              "url": "https://www.youtube.com/watch?v=cwFZyNiRzQU "
             }
           ]
         },
@@ -284,6 +297,10 @@
         {
           "title": "Two Types of Communication Between Birds: Understanding Bird Language Songs and Calls (video)",
           "url": "https://www.youtube.com/watch?v=4_1zIwEENt8"
+        },
+        {
+          "title": "Two Types of Communication Between Birds: Understanding Bird Language Songs and Calls (video)",
+          "url": "https://www.youtube.com/watch?v=4_1zIwEENt8 "
         }
       ]
     },
@@ -520,7 +537,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 2
       }
     },
     {
@@ -594,6 +612,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

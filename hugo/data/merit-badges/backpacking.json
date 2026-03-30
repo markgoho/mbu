@@ -4,13 +4,14 @@
   "slug": "backpacking",
   "url": "https://www.scouting.org/merit-badges/backpacking/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Backpacking.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
-      "text": "Discuss the prevention of and treatment for the health concerns that could occur while backpacking, including hypothermia, heat reactions, frostbite, dehydration, insect stings, tick bites, snakebite, blisters.",
+      "text": "Discuss the prevention of and treatment for the health concerns that could occur while backpacking, including hypothermia, heat reactions, frostbite, dehydration, insect stings, tick bites, snakebite, and blisters.",
       "resources": [
         {
           "title": "Backpacking First Aid (What to Carry + Foot Care, Snakes, Poison Plants, Hypothermia, etc.) (video)",
@@ -34,7 +35,7 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "List 10 items that are essential to be carried on any backpacking trek and explain why each item is necessary.",
+          "text": "List the 10 Scout Basic Essentials to be carried on any backpacking trek and explain why each item is necessary.",
           "resources": [
             {
               "title": "What Are the 10 Essentials? (video)",
@@ -121,7 +122,7 @@
           "text": "Describe the importance of following the Leave No Trace Seven Principles and the Outdoor Code while backpacking, and at least five ways you can lessen the crew's impact on the environment.",
           "resources": [
             {
-              "title": "What is Leave No Trace?  (video)",
+              "title": "What is Leave No Trace? (video)",
               "url": "https://youtu.be/Rpq01rO9ZR0?si=YIELlDJ5aYqUmUi9"
             }
           ]
@@ -350,7 +351,7 @@
       "text": "Following the Leave No Trace Seven Principles and the Outdoor Code, participate in at least three backpacking treks of at least three days each and at least 15 miles each, and using at least two different campsites on each trek. Carry everything you will need throughout the trek.",
       "resources": [
         {
-          "title": "What is Leave No trace?  (video)",
+          "title": "What is Leave No trace? (video)",
           "url": "https://youtu.be/Rpq01rO9ZR0?si=hjjnThExBUjG0aIW"
         },
         {
@@ -375,7 +376,7 @@
           "text": "Following the Leave No Trace Seven Principles and the Outdoor Code, take the trek as planned in requirement 11(a) that is at least five full days, covering at least 30 miles and utilizing at least three different campsites. While on trek, complete at least one service project approved by your counselor.",
           "resources": [
             {
-              "title": "What is Leave No trace?  (video)",
+              "title": "What is Leave No trace? (video)",
               "url": "https://youtu.be/Rpq01rO9ZR0?si=hjjnThExBUjG0aIW"
             },
             {
@@ -394,6 +395,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

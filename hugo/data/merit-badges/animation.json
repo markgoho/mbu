@@ -4,8 +4,9 @@
   "slug": "animation",
   "url": "https://www.scouting.org/merit-badges/animation/",
   "eagle_required": false,
+  "category": "Arts and Crafts",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Animation.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -46,7 +47,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Principles of Animation. Choose five of the following 12 principles of animation, and discuss how each one makes an animation appear more believable: squash and stretch, anticipation, staging, straight ahead action and pose to pose, follow through and overlapping action, slow in and slow out, arcs, secondary action, timing, exaggeration, solid drawing, appeal.",
+      "text": "Principles of Animation. Choose five of the following 12 principles of animation, and discuss how each one makes an animation appear more believable: squash and stretch, anticipation, staging, straight ahead action and pose to pose, follow through and overlapping action, slow in and slow out, arcs, secondary action, timing, exaggeration, solid drawing, and appeal.",
       "resources": [
         {
           "title": "The 12 Principles of Animation Explained - The Most Important Rules for Animating (video)",
@@ -67,26 +68,6 @@
           "req_id": "a",
           "path": "3.a",
           "text": "Technique 1",
-          "subrequirements": [
-            {
-              "req_id": "1",
-              "path": "3.a.1",
-              "text": "1. Plan your animation using thumbnail sketches and/or layout drawings either on paper or using an animation software program."
-            },
-            {
-              "req_id": "2",
-              "path": "3.a.2",
-              "text": "2. Create the animation."
-            },
-            {
-              "req_id": "3",
-              "path": "3.a.3",
-              "text": "3. Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          },
           "resources": [
             {
               "title": "Pencil2D | Learn 2D Animation Tutorial Overview (video)",
@@ -100,32 +81,32 @@
               "title": "StoryBoarder (video)",
               "url": "https://youtu.be/gPurQv4rC1E?si=VvVgSOBGPVPSOZTF"
             }
-          ]
+          ],
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "3.a.1",
+              "text": "Plan your animation using thumbnail sketches and/or layout drawings either on paper or using an animation software program."
+            },
+            {
+              "req_id": "2",
+              "path": "3.a.2",
+              "text": "Create the animation."
+            },
+            {
+              "req_id": "3",
+              "path": "3.a.3",
+              "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "b",
           "path": "3.b",
           "text": "Technique 2",
-          "subrequirements": [
-            {
-              "req_id": "1",
-              "path": "3.b.1",
-              "text": "1. Plan your animation using thumbnail sketches and/or layout drawings."
-            },
-            {
-              "req_id": "2",
-              "path": "3.b.2",
-              "text": "2. Create the animation."
-            },
-            {
-              "req_id": "3",
-              "path": "3.b.3",
-              "text": "3. Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
-            }
-          ],
-          "subrequirement_mode": {
-            "type": "all"
-          },
           "resources": [
             {
               "title": "How to Make a Flipbook (video)",
@@ -139,11 +120,32 @@
               "title": "FlipAnim: How to Make Flipbook Animations Online (website)",
               "url": "https://flipanim.com/"
             }
-          ]
+          ],
+          "subrequirements": [
+            {
+              "req_id": "1",
+              "path": "3.b.1",
+              "text": "Plan your animation using thumbnail sketches and/or layout drawings."
+            },
+            {
+              "req_id": "2",
+              "path": "3.b.2",
+              "text": "Create the animation."
+            },
+            {
+              "req_id": "3",
+              "path": "3.b.3",
+              "text": "Share your animations with your counselor. Explain how you created each one, and discuss any improvements that could be made."
+            }
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 2
       }
     },
     {
@@ -205,6 +207,5 @@
         }
       ]
     }
-  ],
-  "category": "Arts and Crafts"
+  ]
 }

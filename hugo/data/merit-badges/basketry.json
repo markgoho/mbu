@@ -4,8 +4,9 @@
   "slug": "basketry",
   "url": "https://www.scouting.org/merit-badges/basketry/",
   "eagle_required": false,
+  "category": "Arts and Crafts",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Basketry.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -15,12 +16,32 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain to your counselor the hazards you are most likely to encounter while using basketry tools and materials, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards."
+          "text": "Explain to your counselor the hazards you are most likely to encounter while using basketry tools and materials, and what you should do to anticipate, help prevent, mitigate, and respond to these hazards.",
+          "resources": [
+            {
+              "title": "Cutting Tool Safety (video)",
+              "url": "https://youtu.be/nhB-42oMZF8"
+            },
+            {
+              "title": "Hand Tool Safety (video)",
+              "url": "https://youtu.be/jIllqEyw3rA"
+            },
+            {
+              "title": "Health and Safety Tips for Basket Weavers (PDF)",
+              "url": "https://sites.google.com/basketweavers.org/missouribasketweaversguild/weaving-tips/health-and-safety"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Discuss the prevention of and first-aid treatment for injuries, including cuts, scratches, and scrapes, that could occur while working with basketry tools and materials."
+          "text": "Discuss the prevention of and first-aid treatment for injuries, including cuts, scratches, and scrapes, that could occur while working with basketry tools and materials.",
+          "resources": [
+            {
+              "title": "How to Treat Cuts & Scrapes | First Aid Training (video)",
+              "url": "https://youtu.be/L77rERL64zc"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -35,12 +56,36 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Show your counselor that you are able to identify the following types of baskets: plaited, coiled, ribbed, and wicker."
+          "text": "Show your counselor that you are able to identify the following types of baskets: plaited, coiled, ribbed, and wicker.",
+          "resources": [
+            {
+              "title": "What Are the Four Types of Baskets? (website)",
+              "url": "https://www.wicker-basket.co.uk/blogs/news/what-are-the-four-types-of-baskets/"
+            },
+            {
+              "title": "Historical Types of Baskets (video)",
+              "url": "https://youtu.be/Z5PttnxrB0I"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Describe three different types of weaves to your counselor."
+          "text": "Describe three different types of weaves to your counselor.",
+          "resources": [
+            {
+              "title": "How to Start a Coiled Basket (video)",
+              "url": "https://youtu.be/knbR3kgGssE"
+            },
+            {
+              "title": "Making a Ribbed Basket (video)",
+              "url": "https://youtu.be/Jb0tFaZytM8"
+            },
+            {
+              "title": "Weaving a Plaited Bsket (video)",
+              "url": "https://youtube.com/shorts/yqe6R4uWzQo"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -55,23 +100,56 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Square basket"
+          "text": "Square basket",
+          "resources": [
+            {
+              "title": "Bamboo Basket Tokari Weaving (video)",
+              "url": "https://youtu.be/2H0VJtOZ-Kk"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Round basket"
+          "text": "Round basket",
+          "resources": [
+            {
+              "title": "How to Make a Rustic Round Basket out of Wild Vines (video)",
+              "url": "https://youtu.be/gKYft82Yobk"
+            },
+            {
+              "title": "Round Reed Basket (video)",
+              "url": "https://youtu.be/jnK1kUcXqO0"
+            },
+            {
+              "title": "Cherokee Basket Weaving (video)",
+              "url": "https://youtu.be/e-ZFtsLuiMo"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Campstool seat."
+          "text": "Campstool seat",
+          "resources": [
+            {
+              "title": "Weaving a Camp Stool (video)",
+              "url": "https://youtu.be/qdtWwXhm0H8"
+            },
+            {
+              "title": "Learn to Rope Your Chairs (video)",
+              "url": "https://youtu.be/k9jRWXz8HOs"
+            },
+            {
+              "title": "How to Weave a Wooden Chair Step by Step (video)",
+              "url": "https://youtu.be/e_boV4f5tp4"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
         "type": "all"
       }
     }
-  ],
-  "category": "Arts and Crafts"
+  ]
 }

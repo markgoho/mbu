@@ -4,7 +4,8 @@
   "slug": "artificial-intelligence",
   "url": "https://www.scouting.org/merit-badges/artificial-intelligence/",
   "eagle_required": false,
-  "last_updated": "2025-12-24",
+  "category": "Physical Science",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -19,22 +20,22 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Identify 10 examples of how AI is currently used in everyday life."
+          "text": "Identify ten examples of how AI is currently used in everyday life."
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Identify 5 examples of how AI is currently used in the workplace."
+          "text": "Identify five examples of how AI is currently used in the workplace."
         },
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Identify 5 examples of how AI can be used at school or in support of your education."
+          "text": "Identify five examples of how AI can be used at school or in support of your education."
         },
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Meet with your counselor and play 10 rounds of the \"AI or Not?\" game to determine if the presented scenario utilizes AI. Discuss your answers."
+          "text": "Meet with your counselor and play ten rounds of the \"AI or Not?\" game to determine if the presented scenario utilizes AI. Discuss your answers."
         },
         {
           "req_id": "e",
@@ -59,12 +60,12 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Identify 5 examples of how automation is currently used in the workplace."
+          "text": "Identify five examples of how automation is currently used in the workplace."
         },
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Identify 5 examples of how automation can be used at school or in support of your education."
+          "text": "Identify five examples of how automation can be used at school or in support of your education."
         },
         {
           "req_id": "d",
@@ -94,7 +95,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Meet with your counselor, play, and discuss 5 rounds of the \"What Would You Do?\" ethical decision-making scenarios."
+          "text": "Meet with your counselor, play, and discuss five rounds of the \"What Would You Do?\" ethical decision-making scenarios."
         },
         {
           "req_id": "c",
@@ -144,7 +145,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Identify 5 methods of how to effectively communicate with AI."
+          "text": "Identify five methods of how to effectively communicate with AI."
         },
         {
           "req_id": "c",
@@ -154,7 +155,7 @@
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "Demonstrate 3 examples of writing clear instructions for a school-related task."
+          "text": "Demonstrate three examples of writing clear instructions for a school-related task."
         }
       ],
       "subrequirement_mode": {
@@ -203,6 +204,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

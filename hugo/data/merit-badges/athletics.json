@@ -4,8 +4,9 @@
   "slug": "athletics",
   "url": "https://www.scouting.org/merit-badges/athletics/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Athletics.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -29,7 +30,7 @@
           "text": "Show that you know first aid for injuries or illnesses that could occur while participating in athletics events, including sprains, strains, contusions, abrasions, blisters, dehydration, heat reactions, and concussions.",
           "resources": [
             {
-              "title": "Using the RICE Method for Injuries - Rest, Ice, Compress, Elevate (video)",
+              "title": "Using the Rice Method for Injuries - Rest, Ice, Compress, Elevate (video)",
               "url": "https://youtu.be/TZqDBgiEfL8?si=RV6nOMJpa0Rc2LbT"
             },
             {
@@ -39,6 +40,10 @@
             {
               "title": "Top 10 Most Common Sports Injuries (and How to Prevent Them!) (video)",
               "url": "https://youtu.be/OcGeUdfL-s4?si=-4uuzL95rK4Is-T2"
+            },
+            {
+              "title": "How to Treat Cuts & Scrapes (video)",
+              "url": "https://youtu.be/L77rERL64zc?si=VZiIB3O9QKOg_diX"
             }
           ]
         }
@@ -124,6 +129,10 @@
             {
               "title": "7 Powerful Journaling Ideas for Youth Sports Athletes (website)",
               "url": "https://isport360.com/7-powerful-journaling-ideas-for-youth-sports-athletes/%20"
+            },
+            {
+              "title": "7 Powerful Journaling Ideas for Youth Sports Athletes (website)",
+              "url": "https://isport360.com/7-powerful-journaling-ideas-for-youth-sports-athletes/ "
             }
           ]
         },
@@ -135,6 +144,10 @@
             {
               "title": "Equipment Needed to Play Various Sports (website)",
               "url": "https://www.spookynooksports.com/blog/manheim/equipment-needed-to-play-sports%20"
+            },
+            {
+              "title": "Equipment Needed to Play Various Sports (website)",
+              "url": "https://www.spookynooksports.com/blog/manheim/equipment-needed-to-play-sports "
             }
           ]
         },
@@ -167,6 +180,10 @@
             {
               "title": "Rules of Sports (website)",
               "url": "https://www.rulesofsport.com/%20"
+            },
+            {
+              "title": "Rules of Sports (website)",
+              "url": "https://www.rulesofsport.com/ "
             }
           ]
         },
@@ -630,6 +647,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

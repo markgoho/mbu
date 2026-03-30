@@ -4,13 +4,20 @@
   "slug": "art",
   "url": "https://www.scouting.org/merit-badges/art/",
   "eagle_required": false,
+  "category": "Arts and Crafts",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Art.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
       "text": "Discuss the following with your counselor:",
+      "resources": [
+        {
+          "title": "What is Art (video)",
+          "url": "https://youtu.be/dKM9ZkglGDs?si=coueSTzeFmn89l95"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -25,7 +32,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "What art means to you and how art can make you feel."
+          "text": "What art means to you and how art can make you feel"
         }
       ],
       "subrequirement_mode": {
@@ -35,17 +42,35 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Discuss with your counselor the following terms and elements of art: line, value, shape, form, space, color, and texture. Show examples of each element."
+      "text": "Discuss with your counselor the following terms and elements of art: line, value, shape, form, space, color, and texture. Show examples of each element.",
+      "resources": [
+        {
+          "title": "Beginner's Guide to the 7 Elements of Art (video)",
+          "url": "https://youtu.be/Z-I6o2wu9v4?si=Wq0zT_Pv5G3TcNvP"
+        }
+      ]
     },
     {
       "req_id": "3",
       "path": "3",
-      "text": "Discuss with your counselor the six principles of design: rhythm, balance, proportion, variety, emphasis, and unity."
+      "text": "Discuss with your counselor the six principles of design: rhythm, balance, proportion, variety, emphasis, and unity.",
+      "resources": [
+        {
+          "title": "What Makes a Great Design? The 7 Principles You Need to Know (video)",
+          "url": "https://youtu.be/qp3jHWyPW-E?si=ARY1F9kOCKWW_ewy"
+        }
+      ]
     },
     {
       "req_id": "4",
       "path": "4",
       "text": "Render a subject of your choice in FOUR of these ways:",
+      "resources": [
+        {
+          "title": "What Are the Different Mediums Used in Art? (video)",
+          "url": "https://youtu.be/W4NuqLa9i1Q?si=Og8wbpmeGsS3-s73"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -90,17 +115,32 @@
         {
           "req_id": "i",
           "path": "4.i",
-          "text": "Computer drawing or painting."
+          "text": "Computer drawing or painting"
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 4
       }
     },
     {
       "req_id": "5",
       "path": "5",
       "text": "Do ONE of the following:",
+      "resources": [
+        {
+          "title": "Design Useful Things website (website)",
+          "url": "https://www.tinkercad.com"
+        },
+        {
+          "title": "Create With Canva (website)",
+          "url": "https://www.canva.com/"
+        },
+        {
+          "title": "Model and Animate Your Character (video)",
+          "url": "https://youtu.be/-gbCSnkvwNo"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -126,13 +166,28 @@
     {
       "req_id": "6",
       "path": "6",
-      "text": "With your parent or guardian's permission and your counselor's approval, visit a museum, art exhibit, art gallery, artists' co-op, or artist's workshop. Find out about the art displayed or created there. Discuss what you learn with your counselor."
+      "text": "With your parent or guardian's permission and your counselor's approval, visit a museum, art exhibit, art gallery, artists' co-op, or artist's workshop. Find out about the art displayed or created there. Discuss what you learned with your counselor.",
+      "resources": [
+        {
+          "title": "Art Museums in the US (website)",
+          "url": "https://whichmuseum.com/place/united-states-2682?category%5B%5D=art-design"
+        },
+        {
+          "title": "Oahu's Art Scene: Museums, Murals, Makers and More (website)",
+          "url": "https://gocity.com/en/oahu/things-to-do/oahu-for-art-lovers"
+        }
+      ]
     },
     {
       "req_id": "7",
       "path": "7",
-      "text": "Find out about three career opportunities in art. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
+      "text": "Find out about three career opportunities in art. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you.",
+      "resources": [
+        {
+          "title": "Careers in Art. The Amazing Jobs an Art Education Can Lead to! (video)",
+          "url": "https://youtu.be/OYF_LHeHLXA?si=5uI1TC_nvDtqMFD3"
+        }
+      ]
     }
-  ],
-  "category": "Arts and Crafts"
+  ]
 }

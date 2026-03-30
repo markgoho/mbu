@@ -4,8 +4,9 @@
   "slug": "archery",
   "url": "https://www.scouting.org/merit-badges/archery/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Archery.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -15,27 +16,61 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain what a projectile is, and why any device that shoots a projectile at high speed must be handled with care and respect, and used only in approved locations."
+          "text": "Explain what a projectile is, and why any device that shoots a projectile at high speed must be handled with care and respect, and used only in approved locations.",
+          "resources": [
+            {
+              "title": "High-Speed Collisions in Space - Experiments with a Carrot Gun (video)",
+              "url": "https://youtu.be/kStpU1bU-oc"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain the five range safety rules."
+          "text": "Explain the five range safety rules.",
+          "resources": [
+            {
+              "title": "Archery Range Rules (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/Archery%20Range%20Rules.png"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Explain the four whistle commands used on the range."
+          "text": "Explain the four whistle commands used on the range.",
+          "resources": [
+            {
+              "title": "Archery Range Rules (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/Archery%20Range%20Rules.png"
+            }
+          ]
         },
         {
           "req_id": "d",
           "path": "1.d",
-          "text": "Explain how to safely remove arrows from the target and return them to your quiver."
+          "text": "Explain how to safely remove arrows from the target and return them to your quiver.",
+          "resources": [
+            {
+              "title": "How to Safely Pull Your Arrows From The Target (video)",
+              "url": "https://youtu.be/E51Y4ZIaJ7k"
+            },
+            {
+              "title": "Retrieving Arrrows (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/retrieving_arrows.jpeg"
+            }
+          ]
         },
         {
           "req_id": "e",
           "path": "1.e",
-          "text": "Tell your counselor about your local and state laws for owning and using archery equipment."
+          "text": "Tell your counselor about your local and state laws for owning and using archery equipment.",
+          "resources": [
+            {
+              "title": "Regulations by State (website)",
+              "url": "https://www.gearheadarchery.com/regulations/"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -50,17 +85,39 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Name and point to the parts of an arrow."
+          "text": "Name and point to the parts of an arrow.",
+          "resources": [
+            {
+              "title": "Diagram of Arrow (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/arrow.png"
+            },
+            {
+              "title": "How To Measure an Archer's Arrow Length (video)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/How%20to%20Measure%20an%20Archer%27s%20Arrow%20Length.mp4"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Describe three or more different types of arrows."
+          "text": "Describe three or more different types of arrows.",
+          "resources": [
+            {
+              "title": "Different Types of Arrows and Uses (website)",
+              "url": "https://legendarchery.com/blogs/archery-bowhunting-blog/different-types-of-arrows-and-uses"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Name the four principal materials for making arrow shafts."
+          "text": "Name the four principal materials for making arrow shafts.",
+          "resources": [
+            {
+              "title": "Different Types of Arrows and Uses (website)",
+              "url": "https://legendarchery.com/blogs/archery-bowhunting-blog/different-types-of-arrows-and-uses"
+            }
+          ]
         },
         {
           "req_id": "d",
@@ -70,12 +127,40 @@
             {
               "req_id": "1",
               "path": "2.d.1",
-              "text": "Make a complete arrow from a bare shaft using appropriate equipment available to you."
+              "text": "Make a complete arrow from a bare shaft using appropriate equipment available to you.",
+              "resources": [
+                {
+                  "title": "How To Make Wood Arrows in 5 Steps (video)",
+                  "url": "https://youtu.be/bu6qDn3HXEQ"
+                }
+              ]
             },
             {
               "req_id": "2",
               "path": "2.d.2",
-              "text": "To demonstrate arrow repair, inspect the shafts and prepare and replace at least three vanes, one point, and one nock. You may use as many arrows as necessary to accomplish this. The repairs can be done on wood, fiberglass, or aluminum arrows."
+              "text": "To demonstrate arrow repair, inspect the shafts and prepare and replace at least three vanes, one point, and one nock. You may use as many arrows as necessary to accomplish this. The repairs can be done on wood, fiberglass, or aluminum arrows.",
+              "resources": [
+                {
+                  "title": "How To Replace the Nocking Point (video)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/How%20to%20Replace%20the%20Nocking%20Point.mp4"
+                },
+                {
+                  "title": "Basic Repair Kit (photo)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/basic_repair_kit.png"
+                },
+                {
+                  "title": "How To Replace the Arrow Fletching (video)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/How%20to%20Replace%20the%20Arrow%20Fletching.mp4"
+                },
+                {
+                  "title": "How To Replace the Nock (video)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/How%20to%20Replace%20the%20Nock.mp4"
+                },
+                {
+                  "title": "How To Replace the Target Point (video)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/How%20to%20Replace%20the%20Target%20Point.mp4"
+                }
+              ]
             }
           ],
           "subrequirement_mode": {
@@ -86,7 +171,13 @@
         {
           "req_id": "e",
           "path": "2.e",
-          "text": "Explain how to properly care for and store arrows."
+          "text": "Explain how to properly care for and store arrows.",
+          "resources": [
+            {
+              "title": "How To Store Arrows (video)",
+              "url": "https://youtu.be/PKyA6i1TATM"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -101,12 +192,36 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Explain the proper use, care, and storage of, as well as the reasons for using tabs, arm guards, shooting gloves, and quivers."
+          "text": "Explain the proper use, care, and storage of, as well as the reasons for using tabs, arm guards, shooting gloves, and quivers.",
+          "resources": [
+            {
+              "title": "How To Wear Your Archery Gear Correctly (video)",
+              "url": "https://youtu.be/1g10qARTSrE"
+            },
+            {
+              "title": "Arm Guard (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/arm%20guard.tif"
+            },
+            {
+              "title": "Finger Tab on Hand (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/finger_tab_on_hand.tif"
+            },
+            {
+              "title": "Quiver (photo)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/quiver.tif"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Explain the following terms: draw length, draw weight, mechanical release, barebow."
+          "text": "Explain the following terms: draw length, draw weight, mechanical release, and barebow.",
+          "resources": [
+            {
+              "title": "Basic Archery Terms (video)",
+              "url": "https://youtu.be/bH7RTX0fgUM"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -121,22 +236,46 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "The difference between an end and a round"
+          "text": "The difference between an end and a round",
+          "resources": [
+            {
+              "title": "NFAA Indoor: Fundamentals of an Indoor Round (video)",
+              "url": "https://youtu.be/zJcaPSDtboI"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "The differences among field, target, and 3-D archery"
+          "text": "The differences among field, target, and 3-D archery",
+          "resources": [
+            {
+              "title": "How To Shoot: 3D, Field and Outdoor Target Archery (website)",
+              "url": "https://archery360.com/2022/03/10/how-to-shoot-3d-field-and-outdoor-target-archery/"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "How the five-color World Archery Federation target is scored"
+          "text": "How the five-color World Archery Federation target is scored",
+          "resources": [
+            {
+              "title": "How To Score an Archery Target (video)",
+              "url": "https://youtu.be/WUgH5IbxuT8"
+            }
+          ]
         },
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "How the National Field Archery Association (NFAA) black-and-white field targets and blue indoor targets are scored."
+          "text": "How the National Field Archery Association (NFAA) black-and-white field targets and blue indoor targets are scored",
+          "resources": [
+            {
+              "title": "How to Score an NFAA Field Archery Target (video)",
+              "url": "https://youtu.be/O47cSaBzNw0"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -146,38 +285,75 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Working under the supervision of a certified USA Archery Level 1 Instructor or a certified long-term camp staff member (i.e., a National Camping School [NCS] Range Activities Director; or a Rangemaster over age 18 who is trained by a NCS Range Activities Director or by a USA Archery Level 1 Instructor), do ONE of the following Options:",
+      "text": "Working under the supervision of a certified USA Archery Level 1 Instructor or a certified long-term camp staff member (i.e., a National Camping School [NCS] Range Activities Director; or a Rangemaster over age 18 who is trained by a NCS Range Activities Director or by a USA Archery Level 1 Instructor), do ONE of the following options: Note: When using a Genesis bow, apply the requirements in Option A.",
+      "is_option": true,
+      "resources": [
+        {
+          "title": "How is a Compound Bow Different From a Recurve Bow? (video)",
+          "url": "https://youtu.be/EuMHSsN8YLM"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "recurve-bow-or-longbow",
           "path": "5.recurve-bow-or-longbow",
-          "text": "Option A—Recurve Bow or Longbow. Do the following:",
+          "text": "Option A—Recurve Bow or Longbow. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
               "req_id": "a",
               "path": "5.recurve-bow-or-longbow.a",
-              "text": "Name and point to the parts of the recurve or longbow you are shooting."
+              "text": "Name and point to the parts of the recurve or longbow you are shooting.",
+              "resources": [
+                {
+                  "title": "Recurve Bow Measurement Chart (photo)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/recurve_bow_size.tif"
+                }
+              ]
             },
             {
               "req_id": "b",
               "path": "5.recurve-bow-or-longbow.b",
-              "text": "Explain how to properly care for and store recurve bows and longbows."
+              "text": "Explain how to properly care for and store recurve bows and longbows.",
+              "resources": [
+                {
+                  "title": "How to Store a Recurve Bow (video)",
+                  "url": "https://youtu.be/Kbl2a9HRAR8"
+                }
+              ]
             },
             {
               "req_id": "c",
               "path": "5.recurve-bow-or-longbow.c",
-              "text": "Demonstrate and explain USA Archery's eleven \"Steps of Shooting\" for the bow you are shooting."
+              "text": "Demonstrate and explain USA Archery's 11 Steps of Shooting for the bow you are shooting.",
+              "resources": [
+                {
+                  "title": "Steps of Shooting (video)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/Steps%20of%20Shooting%20with%20a%20Recurve%20Bow.mp4"
+                }
+              ]
             },
             {
               "req_id": "d",
               "path": "5.recurve-bow-or-longbow.d",
-              "text": "Demonstrate the proper way to string a recurve bow or longbow."
+              "text": "Demonstrate the proper way to string a recurve bow or longbow.",
+              "resources": [
+                {
+                  "title": "How to String a Recurve Bow (video)",
+                  "url": "https://youtu.be/K1NMzkoLC3c"
+                }
+              ]
             },
             {
               "req_id": "e",
               "path": "5.recurve-bow-or-longbow.e",
-              "text": "Using a bow square, locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using."
+              "text": "Using a bow square, locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using.",
+              "resources": [
+                {
+                  "title": "How to Mark a Nock on a Recurve Bow (video)",
+                  "url": "https://youtu.be/325P19BBNgY"
+                }
+              ]
             },
             {
               "req_id": "f",
@@ -234,7 +410,7 @@
         {
           "req_id": "compound-bow",
           "path": "5.compound-bow",
-          "text": "Option B—Compound Bow. Do the following:",
+          "text": "Option B—Compound Bow Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -250,7 +426,13 @@
             {
               "req_id": "c",
               "path": "5.compound-bow.c",
-              "text": "Demonstrate and explain USA Archery's eleven \"Steps of Shooting\" for the bow you are shooting."
+              "text": "Demonstrate and explain USA Archery's 11 Steps of Shooting for the bow you are shooting.",
+              "resources": [
+                {
+                  "title": "Steps of Shooting (video)",
+                  "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Archery/Steps%20of%20Shooting%20with%20a%20Recurve%20Bow.mp4#t=16"
+                }
+              ]
             },
             {
               "req_id": "d",
@@ -260,7 +442,13 @@
             {
               "req_id": "e",
               "path": "5.compound-bow.e",
-              "text": "Locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using."
+              "text": "Locate and mark with dental floss, crimp-on, or other method, the nocking point on the bowstring of the bow you are using.",
+              "resources": [
+                {
+                  "title": "How to Mark a Nock on a Compound Bow (video)",
+                  "url": "https://youtu.be/Hh0UgcUrpSI"
+                }
+              ]
             },
             {
               "req_id": "f",
@@ -320,6 +508,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

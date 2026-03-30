@@ -4,8 +4,9 @@
   "slug": "american-cultures",
   "url": "https://www.scouting.org/merit-badges/american-cultures/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/American%20Cultures.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -63,6 +64,5 @@
       "path": "5",
       "text": "Give a talk to your Scout unit or class at school on how people from different groups have gotten along together. Lead a discussion on what can be done to help various groups understand one another better."
     }
-  ],
-  "category": "Personal Development"
+  ]
 }
