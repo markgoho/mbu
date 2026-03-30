@@ -4,6 +4,8 @@
   "slug": "environmental-science",
   "url": "https://www.scouting.org/merit-badges/environmental-science/",
   "eagle_required": true,
+  "category": "Conservation",
+  "eagle_group": "environment",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Environmental_Science.pdf",
   "last_updated": "2025-12-26",
   "requirements": [
@@ -495,7 +497,5 @@
         }
       ]
     }
-  ],
-  "eagle_group": "environment",
-  "category": "Conservation"
+  ]
 }

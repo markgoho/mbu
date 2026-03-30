@@ -4,23 +4,42 @@
   "slug": "drafting",
   "url": "https://www.scouting.org/merit-badges/drafting/",
   "eagle_required": false,
+  "category": "Trades",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Drafting.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
       "text": "Format TWO sheets of drawing paper with proper borders and title blocks - one for your manual project (see requirement 2) and one for your lettering project (see requirement 5).",
+      "resources": [
+        {
+          "title": "Technical Drawing - Border and Title Block (video)",
+          "url": "https://youtu.be/OOMLwD0ogrk?si=Z8PR9MBvQLzUU8uF"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Make a rough sketch for each of your project drawings to determine the correct size of paper to format."
+          "text": "Make a rough sketch for each of your project drawings to determine the correct size of paper to format.",
+          "resources": [
+            {
+              "title": "How to Calculate Scale, Papers Size and Maximum Drawing Size (video)",
+              "url": "https://youtu.be/mMBQU2YqKg0?si=tLBF5YIE6FgrNty6"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Using either single-stroke vertical or slant Gothic lettering, fill in all important information in the title block sections of the formatted paper."
+          "text": "Using either single-stroke vertical or slant Gothic lettering, fill in all important information in the title block sections of the formatted paper.",
+          "resources": [
+            {
+              "title": "Border, Title Block and Lettering (video)",
+              "url": "https://youtu.be/S5xqPw-v3GI?si=QZlk-6uBVX2opXeM"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -35,17 +54,35 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Architectural: Make a scale drawing of an architectural project. The architectural drawing may be a floor plan; electrical, plumbing, or mechanical service plan; elevation plan; or landscaping plan. Use an architect's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and considerations necessary for construction. Properly print a bill of materials for at least three of the raw materials or components in the project."
+          "text": "Architectural: Make a scale drawing of an architectural project. The architectural drawing may be a floor plan; electrical, plumbing, or mechanical service plan; elevation plan; or landscaping plan. Use an architect's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and considerations necessary for construction. Properly print a bill of materials for at least three of the raw materials or components in the project.",
+          "resources": [
+            {
+              "title": "How to Sketch a Floor Plan | COMPLETE Beginner's Guide!! Step by Step (video)",
+              "url": "https://youtu.be/7IuSTwAB2QQ?si=PwzIxSaP3mVhoFrK"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Mechanical: Make a scale drawing of some mechanical device or interesting object. The mechanical drawing may be of the orthographic (third-angle) or isometric style. Use an engineer's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and manufacturing considerations. Properly print a bill of materials for at least three of the raw materials or components in the assembly."
+          "text": "Mechanical: Make a scale drawing of some mechanical device or interesting object. The mechanical drawing may be of the orthographic (third-angle) or isometric style. Use an engineer's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and manufacturing considerations. Properly print a bill of materials for at least three of the raw materials or components in the assembly.",
+          "resources": [
+            {
+              "title": "Isometric Drawing Made Easy: How to Draw Isometric Views with Orthographic Projections (video)",
+              "url": "https://youtu.be/h_u0BHKJ0yk?si=AfIUMBvYIRkn0lC9"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Electrical: Draw a simple schematic of a radio or electronic circuit. Properly print a bill of materials including all of the major electrical components used in the circuit. Use standard drawing symbols to represent the electronic components."
+          "text": "Electrical: Draw a simple schematic of a radio or electronic circuit. Properly print a bill of materials including all of the major electrical components used in the circuit. Use standard drawing symbols to represent the electronic components.",
+          "resources": [
+            {
+              "title": "How to Draw an Electrical Circuit in AutoCAD (video)",
+              "url": "https://youtu.be/q3wa6ZPVWd8?si=eSR8nkvqZURN1iGa"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -61,17 +98,35 @@
         {
           "req_id": "a",
           "path": "3.a",
-          "text": "Architectural: Make a scale drawing of an architectural project. The architectural drawing may be a floor plan; electrical, plumbing, or mechanical service plan; elevation plan; or landscaping plan. Use an architect's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and considerations necessary for construction."
+          "text": "Architectural: Make a scale drawing of an architectural project. The architectural drawing may be a floor plan; electrical, plumbing, or mechanical service plan; elevation plan; or landscaping plan. Use an architect's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and considerations necessary for construction.",
+          "resources": [
+            {
+              "title": "AutoCAD 2D Basics - Tutorial to Draw a Simple Floor Plan (Fast and Effective!) (video)",
+              "url": "https://youtu.be/yOGzf_Myxmc?si=OrB47LxA2Bm70HYu"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Mechanical: Make a scale drawing of some mechanical device or interesting object. The mechanical drawing may be of the orthographic (third-angle) or isometric style. Use an engineer's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and manufacturing considerations."
+          "text": "Mechanical: Make a scale drawing of some mechanical device or interesting object. The mechanical drawing may be of the orthographic (third-angle) or isometric style. Use an engineer's scale and show dimensions to communicate the actual size of features. Include any important sectional drawings, notes, and manufacturing considerations.",
+          "resources": [
+            {
+              "title": "Technical Drawing Tutorial - Prepare a Perfect Mechanical Drawing for Machinists (video)",
+              "url": "https://youtu.be/Nn-JuuWsW0s?si=3N4iDuZQ0uaWEjRg"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "Electrical: Draw a simple schematic of a radio or electronic circuit. Properly print a bill of materials including all of the major electrical components used in the circuit. Use standard drawing symbols to represent the electronic components."
+          "text": "Electrical: Draw a simple schematic of a radio or electronic circuit. Properly print a bill of materials including all of the major electrical components used in the circuit. Use standard drawing symbols to represent the electronic components.",
+          "resources": [
+            {
+              "title": "How to Draw an Electrical Circuit in AutoCAD (video)",
+              "url": "https://youtu.be/q3wa6ZPVWd8?si=eSR8nkvqZURN1iGa"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -92,7 +147,13 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Make the correction from the redline, identify it on the drawings with a revision marker, and add a revision block."
+          "text": "Make the correction from the redline, identify it on the drawings with a revision marker, and add a revision block.",
+          "resources": [
+            {
+              "title": "AutoCAD II 25-19 Revision History Blocks (video)",
+              "url": "https://youtu.be/1XQ2fdCbx9g?si=OgJjHpOp3lt68dWZ"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -118,6 +179,12 @@
           "req_id": "a",
           "path": "7.a",
           "text": "Visit a facility or industry workplace where drafting is part of the business. Ask to see an example of the work that is done there, the different drafting facilities, and the tools used.",
+          "resources": [
+            {
+              "title": "Benefits of AutoCAD to Manufacturing Design Workflow (video)",
+              "url": "https://youtu.be/_39brJN-POU?si=9E5Yy4SX8tpPWg7D"
+            }
+          ],
           "subrequirements": [
             {
               "req_id": "1",
@@ -143,6 +210,20 @@
           "req_id": "b",
           "path": "7.b",
           "text": "Using resources you find on your own such as at the library and on the internet (with your parent or guardian's permission), learn more about the drafting trade and discuss the following with your counselor.",
+          "resources": [
+            {
+              "title": "Tracing the Evolution of Technical Drawings: From Da Vinci to CAD (URL with video)",
+              "url": "https://profiletree.com/evolution-of-technical-drawings"
+            },
+            {
+              "title": "The Evolution of Drafting (video)",
+              "url": "https://youtu.be/_ULPY3B2BoQ?si=CH6nDUvqKBIrb4Mb"
+            },
+            {
+              "title": "A Walk Through the History of CAD (video)",
+              "url": "https://youtu.be/mcwIMsh_g3o?si=Ru7dNN8JDco0ycRJ"
+            }
+          ],
           "subrequirements": [
             {
               "req_id": "1",
@@ -173,8 +254,17 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Identify three career opportunities that would use skills and knowledge in Drafting. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+      "text": "Identify three career opportunities that would use skills and knowledge in Drafting. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.",
+      "resources": [
+        {
+          "title": "Drafter | Careers That Work (video)",
+          "url": "https://youtu.be/w9K7P383cXs?si=72p1e1i6nPm7qRIo"
+        },
+        {
+          "title": "23 Different Types of Drafting Jobs (Plus Salary Information) (website)",
+          "url": "https://www.indeed.com/career-advice/finding-a-job/different-types-of-drafting-jobs"
+        }
+      ]
     }
-  ],
-  "category": "Trades"
+  ]
 }

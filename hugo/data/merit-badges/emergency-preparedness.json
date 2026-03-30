@@ -4,8 +4,10 @@
   "slug": "emergency-preparedness",
   "url": "https://www.scouting.org/merit-badges/emergency-preparedness/",
   "eagle_required": true,
+  "category": "Public Service",
+  "eagle_group": "emergency",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Emergency%20Preparedness.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -125,6 +127,14 @@
                 {
                   "title": "Backpacking First Aid (What To Carry + Foot Care, Snakes, Poison Plants, Hypothermia, etc) (video)",
                   "url": "https://youtu.be/nxExCQiWa_U?si=oF8Tjni8vOmZT6hH%20"
+                },
+                {
+                  "title": "Patient Assessment (video)",
+                  "url": "https://youtu.be/hXQAmx2AYIk?si=BAUtTIDcUUVTWFu2"
+                },
+                {
+                  "title": "Review of Traumatic Injuries with Wilderness First Aid (video)",
+                  "url": "https://youtu.be/QK8rf9Q9zKQ?si=bDXzfaKi9A-gom9v"
                 }
               ]
             },
@@ -275,7 +285,7 @@
             {
               "req_id": "21",
               "path": "1.b.21",
-              "text": "Lightning storm.",
+              "text": "Lightning storm",
               "resources": [
                 {
                   "title": "What Happens When You Are Struck by Lightning (video)",
@@ -289,7 +299,8 @@
             }
           ],
           "subrequirement_mode": {
-            "type": "all"
+            "type": "select",
+            "count": 10
           }
         }
       ],
@@ -338,6 +349,10 @@
             {
               "title": "Build a Kit (website)",
               "url": "https://www.ready.gov/kit"
+            },
+            {
+              "title": "Checklist for Sheltering in Place (PDF)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Emergency%20Preparedness/Family%20Emergency%20Sheltering%20in%20Place%20Checklist%2001%202026.pdf"
             }
           ]
         }
@@ -359,6 +374,10 @@
             {
               "title": "Checklists Home Safety (PDF)",
               "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Emergency%20Preparedness/E%20Prep%20Checklists%20Home%20Safety%20%231%20%23%202.docx.pdf"
+            },
+            {
+              "title": "Checklists Home Safety (PDF)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Emergency%20Preparedness/Home%20Safety%20Checklists%20%231%20%23%202%2001%202026.pdf"
             }
           ]
         },
@@ -420,7 +439,7 @@
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "Drowning, using nonswimming rescues (including accidents on ice).",
+          "text": "Drowning, using nonswimming rescues (including accidents on ice)",
           "resources": [
             {
               "title": "Reach, Throw, Row, but Don't Go! (video)",
@@ -590,7 +609,7 @@
             {
               "req_id": "4",
               "path": "8.a.4",
-              "text": "Group feeding, shelter, and sanitation.",
+              "text": "Group feeding, shelter, and sanitation",
               "resources": [
                 {
                   "title": "Feeding LA Wildfire Evacuees (video)",
@@ -642,7 +661,7 @@
     {
       "req_id": "9",
       "path": "9",
-      "text": "[First Aid Merit Badge](/merit-badges/first-aid/). Earn the [First Aid merit badge](/merit-badges/first-aid/)."
+      "text": "First Aid Merit Badge. Earn the First Aid merit badge."
     },
     {
       "req_id": "10",
@@ -688,7 +707,5 @@
         "count": 1
       }
     }
-  ],
-  "eagle_group": "emergency",
-  "category": "Public Service"
+  ]
 }

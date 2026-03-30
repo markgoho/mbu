@@ -4,8 +4,9 @@
   "slug": "fly-fishing",
   "url": "https://www.scouting.org/merit-badges/fly-fishing/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Fly-Fishing.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -25,7 +26,7 @@
         {
           "req_id": "c",
           "path": "1.c",
-          "text": "Explain how to remove a hook that has lodged in your arm."
+          "text": "Explain how to remove a hook that has lodged in someone's arm."
         }
       ],
       "subrequirement_mode": {
@@ -127,6 +128,5 @@
       "path": "11",
       "text": "If regulations and health concerns permit, clean and cook a fish you have caught. If you are unable to catch a fish for eating, acquire a fish, clean the fish you acquired, and cook the fish you acquired. Note: It is not required that you eat the fish."
     }
-  ],
-  "category": "Sports"
+  ]
 }

@@ -4,8 +4,9 @@
   "slug": "electricity",
   "url": "https://www.scouting.org/merit-badges/electricity/",
   "eagle_required": false,
+  "category": "Physical Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Electricity.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -55,7 +56,13 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Complete an electrical home safety inspection of your home, using the checklist found in the Electricity merit badge pamphlet or one approved by your counselor. Discuss what you find with your counselor."
+      "text": "Complete an electrical home safety inspection of your home, using the checklist found in the Electricity merit badge pamphlet or one approved by your counselor. Discuss what you find with your counselor.",
+      "resources": [
+        {
+          "title": "Electrical Fire Safety Checklist (PDF)",
+          "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Electricity/Electrical%20Safety%20Checklist.docx.pdf"
+        }
+      ]
     },
     {
       "req_id": "3",
@@ -223,6 +230,5 @@
       "path": "11",
       "text": "Identify three career opportunities that would use skills and knowledge in electricity. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

@@ -4,8 +4,9 @@
   "slug": "engineering",
   "url": "https://www.scouting.org/merit-badges/engineering/",
   "eagle_required": false,
+  "category": "Professions",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Engineering.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -199,7 +200,7 @@
     {
       "req_id": "7",
       "path": "7",
-      "text": "Explain what it means to be a registered Professional Engineer (P. E.). Name the types of engineering work for which registration is most important.",
+      "text": "Explain what it means to be a registered Professional Engineer (P.E.). Name the types of engineering work for which registration is most important.",
       "resources": [
         {
           "title": "How to Become an Engineer & Types of Engineering Careers (video)",
@@ -237,6 +238,5 @@
         }
       ]
     }
-  ],
-  "category": "Professions"
+  ]
 }

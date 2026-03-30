@@ -4,8 +4,9 @@
   "slug": "energy",
   "url": "https://www.scouting.org/merit-badges/energy/",
   "eagle_required": false,
+  "category": "Physical Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Energy.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -15,7 +16,17 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "With your parent or guardian's permission, use the internet to find a blog, podcast, website, or an article on the use or conservation of energy. Discuss with your counselor what details in the article were interesting to you, the questions it raises, and what ideas it addresses that you do not understand."
+          "text": "With your parent or guardian's permission, use the internet to find a blog, podcast, website, or an article on the use or conservation of energy. Discuss with your counselor what details in the article were interesting to you, the questions it raises, and what ideas it addresses that you do not understand.",
+          "resources": [
+            {
+              "title": "The Essentials of Energy (video)",
+              "url": "https://youtu.be/ytwIzy3XuGg"
+            },
+            {
+              "title": "World's Most Asked Questions: What Is Energy? (video)",
+              "url": "https://youtu.be/CW0_S5YpYVo"
+            }
+          ]
         },
         {
           "req_id": "b",
@@ -31,16 +42,74 @@
       "req_id": "2",
       "path": "2",
       "text": "Show you understand energy forms and conversions by doing the following:",
+      "resources": [
+        {
+          "title": "Different Forms of Energy (video)",
+          "url": "https://youtu.be/mA7aYNCpHdg"
+        },
+        {
+          "title": "Energy Transformations (video)",
+          "url": "https://youtu.be/5UL_FX5wCH4"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Explain how THREE of the following devices use energy, and explain their energy conversions: toaster, greenhouse, lightbulb, bow drill, cell phone, nuclear reactor, sauna, or electric vehicles."
+          "text": "Explain how THREE of the following devices use energy, and explain their energy conversions: toaster, greenhouse, lightbulb, bow drill, cell phone, nuclear reactor, sauna, or electric vehicles.",
+          "resources": [
+            {
+              "title": "How Does a Toaster Work? (video)",
+              "url": "https://youtu.be/s5gufMXDg9M"
+            },
+            {
+              "title": "How Do Greenhouses Work? Easy Explanation! (video)",
+              "url": "https://youtu.be/KI-Wf2odCqM"
+            },
+            {
+              "title": "How Modern Light Bulbs Work (video)",
+              "url": "https://youtu.be/oCEKMEeZXug"
+            },
+            {
+              "title": "Primitive Technology: Cord Drill and Pump Drill (video)",
+              "url": "https://youtu.be/ZEl-Y1NvBVI"
+            },
+            {
+              "title": "How Wireless Charging REALLY Works! (The Hidden Physics) (video)",
+              "url": "https://youtu.be/AYgxeSvPXK4"
+            },
+            {
+              "title": "What Is Nuclear Energy? | National Geographic (video)",
+              "url": "https://youtu.be/Ta3z3pGK0vU"
+            },
+            {
+              "title": "ICE vs. Electric: The Future of Driving Compared (video)",
+              "url": "https://youtu.be/734-EmRGYPI"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Construct a system that makes at least two energy conversions and explain this to your counselor."
+          "text": "Construct a system that makes at least two energy conversions and explain this to your counselor.",
+          "resources": [
+            {
+              "title": "Solar Motor-Free Energy Motor (video)",
+              "url": "https://youtu.be/VQqpnAKf9cM"
+            },
+            {
+              "title": "Solar Powered Toy Bell Ringer (video)",
+              "url": "https://youtu.be/DcZkmj1afZs"
+            },
+            {
+              "title": "How to Make a Simple Windmill for Free Energy - School Project | Functional (video)",
+              "url": "https://youtu.be/P6al80Gv4wg"
+            },
+            {
+              "title": "How to Make a Free Energy Using Water Wheel - Science Project Without Electricity (video)",
+              "url": "https://youtu.be/-1xsyt4T6eU"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -51,6 +120,12 @@
       "req_id": "3",
       "path": "3",
       "text": "Show you understand energy efficiency by explaining to your counselor a common example of a situation where energy moves through a system to produce a useful result. Do the following:",
+      "resources": [
+        {
+          "title": "Energy Transfers in Appliances (video)",
+          "url": "https://youtu.be/gWil5xVfwqw"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -81,16 +156,58 @@
       "req_id": "4",
       "path": "4",
       "text": "Conduct an energy audit of your home. Keep a 14 day log that records what you and your family did to reduce energy use. Include the following in your report and, after the 14-day period, discuss what you have learned with your counselor.",
+      "resources": [
+        {
+          "title": "Energy 101: Home Energy Assessment (video)",
+          "url": "https://youtu.be/YolBP0-vkBU"
+        },
+        {
+          "title": "Do-It-Yourself Home Energy Assessments (website)",
+          "url": "https://www.energy.gov/energysaver/do-it-yourself-home-energy-assessments"
+        },
+        {
+          "title": "Do It Yourself Home Energy Audit Form (PDF)",
+          "url": "https://www.seattle.gov/Documents/Departments/OSE/GreenHomeGuide-FYIenergyaudit.pdf"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "List the types of energy used in your home such as electricity, wood, oil, liquid petroleum, and natural gas, and tell how each is delivered and measured, and the current cost; OR record the transportation fuel used, miles driven, miles per gallon, and trips using your family car or another vehicle."
+          "text": "List the types of energy used in your home such as electricity, wood, oil, liquid petroleum, and natural gas, and tell how each is delivered and measured, and the current cost; OR record the transportation fuel used, miles driven, miles per gallon, and trips using your family car or another vehicle.",
+          "resources": [
+            {
+              "title": "Use of Energy Explained - Energy Use in Homes (website)",
+              "url": "https://www.eia.gov/energyexplained/use-of-energy/homes.php"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Describe ways you and your family can use energy resources more wisely. In preparing your discussion, consider the energy required for the things you do and use on a daily basis (cooking, showering, using lights, driving, watching TV, using the computer). Explain what is meant by sustainable energy sources. Explain how you can change your energy use through reuse and recycling."
+          "text": "Describe ways you and your family can use energy resources more wisely. In preparing your discussion, consider the energy required for the things you do and use on a daily basis (cooking, showering, using lights, driving, watching TV, using the computer). Explain what is meant by sustainable energy sources. Explain how you can change your energy use through reuse and recycling.",
+          "resources": [
+            {
+              "title": "Save Energy (video)",
+              "url": "https://www.youtube.com/watch?v=AKcfc2WXIWY"
+            },
+            {
+              "title": "Environmental Footprint Calculator (website)",
+              "url": "https://carbon-calculator.climatehero.org/"
+            },
+            {
+              "title": "Your Carbon Footprint (video)",
+              "url": "https://youtu.be/J_iDcKDAwbA"
+            },
+            {
+              "title": "Renewable Energy 101 (video)",
+              "url": "https://youtu.be/1kUE0BZtTRc"
+            },
+            {
+              "title": "Reduce, Reuse, Recycle (video)",
+              "url": "https://youtu.be/uCDOm4AcPQk"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -101,6 +218,12 @@
       "req_id": "5",
       "path": "5",
       "text": "In a notebook, identify and describe five examples of energy waste in your school or community. Suggest in each case possible ways to reduce this waste. Describe the idea of trade-offs in energy use. In your response, do the following:",
+      "resources": [
+        {
+          "title": "The Surprising Places We Waste Energy (video)",
+          "url": "https://youtu.be/QsAgaD7IeuA"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -110,7 +233,13 @@
         {
           "req_id": "b",
           "path": "5.b",
-          "text": "Explain what changes to routines, habits, or convenience are necessary to reduce energy waste. Tell why people might resist the changes you suggest."
+          "text": "Explain what changes to routines, habits, or convenience are necessary to reduce energy waste. Tell why people might resist the changes you suggest.",
+          "resources": [
+            {
+              "title": "Actions for a Healthy Planet (website)",
+              "url": "https://www.un.org/en/actnow/ten-actions#:~:text=Use%20less%20energy%20by%20reducing,instead%20of%20using%20a%20dryer."
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -125,27 +254,73 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "The energy resources that supply the United States with most of its energy"
+          "text": "The energy resources that supply the United States with most of its energy",
+          "resources": [
+            {
+              "title": "U.S. Energy Consumption by Source and Sector, 2024 (website)",
+              "url": "https://www.eia.gov/totalenergy/data/monthly/pdf/flow/total_energy_spaghettichart_2024.pdf"
+            },
+            {
+              "title": "Everything You Need to Know About the Energy Flowcharts (video)",
+              "url": "https://youtu.be/OBuAzxp3EE0"
+            },
+            {
+              "title": "Monthly Energy Review (website)",
+              "url": "https://www.eia.gov/totalenergy/data/monthly/"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "The share of energy resources used by the United States that comes from other countries"
+          "text": "The share of energy resources used by the United States that comes from other countries",
+          "resources": [
+            {
+              "title": "Why Does the US Import Oil When They Export So Much? (video)",
+              "url": "https://youtu.be/evIAnt5mNGI"
+            },
+            {
+              "title": "US Energy Imports and Exports (website)",
+              "url": "https://www.eia.gov/todayinenergy/detail.php?id=65664"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "The proportion of energy resources used by homes, businesses, industry, and transportation"
+          "text": "The proportion of energy resources used by homes, businesses, industry, and transportation",
+          "resources": [
+            {
+              "title": "Use of Energy Explained (website)",
+              "url": "https://www.eia.gov/energyexplained/use-of-energy/"
+            },
+            {
+              "title": "Energy Consumption & Efficiency Data | Energy Information Agency (website)",
+              "url": "https://www.eia.gov/consumption/"
+            }
+          ]
         },
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "The fuels used to generate America's electricity"
+          "text": "The fuels used to generate America's electricity",
+          "resources": [
+            {
+              "title": "Total Energy: Primary Energy Consumption by Source (website)",
+              "url": "https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T01.03#/?f=A"
+            }
+          ]
         },
         {
           "req_id": "e",
           "path": "6.e",
-          "text": "The world's known and estimated primary energy resource reserves."
+          "text": "The world's known and estimated primary energy resource reserves",
+          "resources": [
+            {
+              "title": "International Data (website)",
+              "url": "https://www.eia.gov/international/overview/world"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -156,51 +331,123 @@
       "req_id": "7",
       "path": "7",
       "text": "Tell what is being done to make FIVE of the following energy systems produce more usable energy. In your explanation, describe the technology, cost, environmental impacts, and safety concerns.",
+      "resources": [
+        {
+          "title": "How Cheap Renewable Energy Is Finally Flattening Emissions (video)",
+          "url": "https://youtu.be/Z8JFCJP70rg"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "Biomass digesters or waste-to-energy plants"
+          "text": "Biomass digesters or waste-to-energy plants",
+          "resources": [
+            {
+              "title": "Flexible Clean Energy: Powering Tomorrow With Biomass (video)",
+              "url": "https://youtu.be/cxvl24c_oeQ"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Cogeneration plants"
+          "text": "Cogeneration plants",
+          "resources": [
+            {
+              "title": "The Combined Cycle Gas Turbine - the World's Most Efficient Power Machine (video)",
+              "url": "https://youtu.be/P-sMnC8CxI8"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Fossil fuel power plants"
+          "text": "Fossil fuel power plants",
+          "resources": [
+            {
+              "title": "From Coal to Clean Energy: A Utility-Scale Milestone in New Mexico (video)",
+              "url": "https://youtu.be/TGppuZZosxQ"
+            },
+            {
+              "title": "How Forsite Development Transforms Retired Coal Sites Into Clean Solar Energy Hubs (video)",
+              "url": "https://youtu.be/XSsiohv0DLc"
+            }
+          ]
         },
         {
           "req_id": "d",
           "path": "7.d",
-          "text": "Fuel cells"
+          "text": "Fuel cells",
+          "resources": [
+            {
+              "title": "Fuel Cell Technology - the Future of Clean Energy (video)",
+              "url": "https://youtu.be/6tvvsCxBfeM"
+            }
+          ]
         },
         {
           "req_id": "e",
           "path": "7.e",
-          "text": "Geothermal power plants"
+          "text": "Geothermal power plants",
+          "resources": [
+            {
+              "title": "The Secret Behind Iceland's Geothermal Energy (video)",
+              "url": "https://youtu.be/eWkhpWRRpVo"
+            },
+            {
+              "title": "Should We Build A Geothermal Power Plant In Yellowstone? (video)",
+              "url": "https://youtu.be/rqkJiMDAIpA"
+            }
+          ]
         },
         {
           "req_id": "f",
           "path": "7.f",
-          "text": "Nuclear power plants"
+          "text": "Nuclear power plants",
+          "resources": [
+            {
+              "title": "The Path to a New Era for Nuclear Energy (video)",
+              "url": "https://youtu.be/jRYUjQw5fWE"
+            },
+            {
+              "title": "How Close Are We to Nuclear Fusion? (video)",
+              "url": "https://youtu.be/xKeCmpZ0-U4"
+            }
+          ]
         },
         {
           "req_id": "g",
           "path": "7.g",
-          "text": "Solar power systems"
+          "text": "Solar power systems",
+          "resources": [
+            {
+              "title": "Solar 3.0: This New Technology Could Change Everything (video)",
+              "url": "https://youtu.be/tQmFVcD-Mbo"
+            }
+          ]
         },
         {
           "req_id": "h",
           "path": "7.h",
-          "text": "Tidal energy, wave energy, or ocean thermal energy conversion devices"
+          "text": "Tidal energy, wave energy, or ocean thermal energy conversion devices",
+          "resources": [
+            {
+              "title": "OTEC: The Huge Ocean Energy Source You've Never Heard of (video)",
+              "url": "https://youtu.be/HsyIbzIiaBM"
+            }
+          ]
         },
         {
           "req_id": "i",
           "path": "7.i",
-          "text": "Wind turbines."
+          "text": "Wind turbines",
+          "resources": [
+            {
+              "title": "Wind Power Advances: Cutting-Edge Technologies Shaping the Future (video)",
+              "url": "https://youtu.be/9tJjDQ-X2mo"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -211,8 +458,17 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Identify three career opportunities that would use skills and knowledge in energy. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
+      "text": "Identify three career opportunities that would use skills and knowledge in energy. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities, and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career.",
+      "resources": [
+        {
+          "title": "Careers in Energy and Natural Resources (video)",
+          "url": "https://youtu.be/jBZ3vurfhXM"
+        },
+        {
+          "title": "7 Nuclear Careers that Don't Require an Engineering Degree (PDF)",
+          "url": "https://www.energy.gov/ne/articles/7-nuclear-careers-dont-require-engineering-degree"
+        }
+      ]
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

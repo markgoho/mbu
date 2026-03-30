@@ -4,6 +4,7 @@
   "slug": "game-design",
   "url": "https://www.scouting.org/merit-badges/game-design/",
   "eagle_required": false,
+  "category": "Physical Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Game%20Design.pdf",
   "last_updated": "2025-12-24",
   "requirements": [
@@ -168,6 +169,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

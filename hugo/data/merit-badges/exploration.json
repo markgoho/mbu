@@ -4,8 +4,9 @@
   "slug": "exploration",
   "url": "https://www.scouting.org/merit-badges/exploration/",
   "eagle_required": false,
+  "category": "Business and Industry",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Exploration.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -92,7 +93,7 @@
         {
           "req_id": "c",
           "path": "3.c",
-          "text": "What you think it takes to be an explorer.",
+          "text": "What you think it takes to be an explorer",
           "resources": [
             {
               "title": "Why Great Scientists Ask Great Questions? w/ Neil deGrasse Tyson (video)",
@@ -176,7 +177,7 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Exploration in Lab and Field. Do ONE of the following, and share what you learn with your counselor:",
+      "text": "Exploration in Lab and Field. Do ONE of the following, and share what you learned with your counselor:",
       "subrequirements": [
         {
           "req_id": "a",
@@ -421,6 +422,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Business and Industry"
+  ]
 }

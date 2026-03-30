@@ -4,6 +4,7 @@
   "slug": "entrepreneurship",
   "url": "https://www.scouting.org/merit-badges/entrepreneurship/",
   "eagle_required": false,
+  "category": "Business and Industry",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Entrepreneurship.pdf",
   "last_updated": "2025-12-26",
   "requirements": [
@@ -172,6 +173,5 @@
       "path": "6",
       "text": "When you believe your business idea is feasible, imagine your business idea is now up and running. What successes and problems might you experience? How would you overcome any failures? Discuss with your counselor any ethical questions you might face and how you would deal with them."
     }
-  ],
-  "category": "Business and Industry"
+  ]
 }

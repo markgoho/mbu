@@ -4,8 +4,9 @@
   "slug": "family-life",
   "url": "https://www.scouting.org/merit-badges/family-life/",
   "eagle_required": true,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Family%20Life.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -99,7 +100,7 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "The results of the project."
+          "text": "The results of the project"
         }
       ],
       "subrequirement_mode": {
@@ -222,7 +223,7 @@
             {
               "req_id": "7",
               "path": "6.b.7",
-              "text": "Good etiquette and manners.",
+              "text": "Good etiquette and manners",
               "resources": [
                 {
                   "title": "Etiquette (video)",
@@ -259,6 +260,5 @@
         }
       ]
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

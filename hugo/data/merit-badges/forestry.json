@@ -4,13 +4,24 @@
   "slug": "forestry",
   "url": "https://www.scouting.org/merit-badges/forestry/",
   "eagle_required": false,
+  "category": "Conservation",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Forestry.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
       "text": "Prepare a field notebook, make a collection, and identify 15 species of trees, wild shrubs, or vines in a local forested area. Write a description in which you identify and discuss the following:",
+      "resources": [
+        {
+          "title": "How to Press Leaves (video)",
+          "url": "https://youtu.be/06nhKenT4109"
+        },
+        {
+          "title": "Best Tree ID Apps Reviewed (video)",
+          "url": "https://youtu.be/AtoSxXlRzsM"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -40,17 +51,51 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Collect and identify wood samples of 10 species of trees. List several ways the wood of each species can be used."
+          "text": "Collect and identify wood samples of 10 species of trees. List several ways the wood of each species can be used.",
+          "resources": [
+            {
+              "title": "How to Identify Wood Species (video)",
+              "url": "https://youtu.be/HKU8EKGSsHY"
+            },
+            {
+              "title": "Mississippi State University Wood ID Team (video)",
+              "url": "https://youtu.be/Lj5MPkEsuSY"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Find and examine three stumps, logs, or core samples that show variations in the growth rate of their ring patterns. In the field notebook you prepared for requirement 1, describe the location or origin of each example (including elevation, aspect, slope, and the position on the slope), and discuss possible reasons for the variations in growth rate. Photograph or sketch each example."
+          "text": "Find and examine three stumps, logs, or core samples that show variations in the growth rate of their ring patterns. In the field notebook you prepared for requirement 1, describe the location or origin of each example (including elevation, aspect, slope, and the position on the slope), and discuss possible reasons for the variations in growth rate. Photograph or sketch each example.",
+          "resources": [
+            {
+              "title": "Reading a Tree's Stump (video)",
+              "url": "https://youtu.be/7zMWaFRRExI"
+            },
+            {
+              "title": "Aging of Trees; Studying Tree Rings (video)",
+              "url": "https://youtu.be/8qtlZk8QFRw"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Find and examine two types of animal, insect, or disease damage to trees. In the field notebook you prepared for requirement 1, identify the damage, explain how the damage was caused, and describe the effects of the damage on the trees. Photograph or sketch each example."
+          "text": "Find and examine two types of animal, insect, or disease damage to trees. In the field notebook you prepared for requirement 1, identify the damage, explain how the damage was caused, and describe the effects of the damage on the trees. Photograph or sketch each example.",
+          "resources": [
+            {
+              "title": "Ask an Arborist: How Do I Check for Tree Pests? (video)",
+              "url": "https://youtu.be/LUShQaEXmMA"
+            },
+            {
+              "title": "Why You Should Stomp Every Spotted Lanternfly (video)",
+              "url": "https://youtu.be/81edC7KdOCc"
+            },
+            {
+              "title": "10 Pictures of Tree Diseases and Pests to Help You Spot Problems (website)",
+              "url": "https://www.bhg.com/gardening/pests/insects-diseases-weeds/tree-disease-photos/"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -62,6 +107,16 @@
       "req_id": "3",
       "path": "3",
       "text": "Do the following:",
+      "resources": [
+        {
+          "title": "Top 10 Benefits of Forestry (website)",
+          "url": "https://orbisinc.com/top-10-benefits-of-forestry/"
+        },
+        {
+          "title": "How Forests Make Our Lives Better (video)",
+          "url": "https://youtu.be/QqDIMbWypDU"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -116,7 +171,13 @@
         {
           "req_id": "b",
           "path": "3.b",
-          "text": "Tell which watershed or other source your community relies on for its water supply."
+          "text": "Tell which watershed or other source your community relies on for its water supply.",
+          "resources": [
+            {
+              "title": "Watersheds! (video)",
+              "url": "https://youtu.be/2pwW2rlGIa8"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -131,27 +192,61 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Multiple-use management"
+          "text": "Multiple-use management",
+          "resources": [
+            {
+              "title": "Managing Forests for Multi-Use (video)",
+              "url": "https://youtu.be/oBDnYd_745s"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Sustainable forest management"
+          "text": "Sustainable forest management",
+          "resources": [
+            {
+              "title": "Serious Science: Sustainable Forests (video)",
+              "url": "https://youtu.be/oJa1uRSHNmA"
+            }
+          ]
         },
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Even-aged and uneven-aged management and the silvicultural systems associated with each"
+          "text": "Even-aged and uneven-aged management and the silvicultural systems associated with each",
+          "resources": [
+            {
+              "title": "Akhlaq Wani Education and Nature Series? (video)",
+              "url": "https://youtu.be/em53n_v7V8g"
+            }
+          ]
         },
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "Intermediate cuttings"
+          "text": "Intermediate cuttings",
+          "resources": [
+            {
+              "title": "Tree Thinning Explained (video)",
+              "url": "https://youtu.be/eqEPycreZUo"
+            }
+          ]
         },
         {
           "req_id": "e",
           "path": "4.e",
-          "text": "The role of prescribed burning and related forest-management practices."
+          "text": "The role of prescribed burning and related forest-management practices",
+          "resources": [
+            {
+              "title": "Prescribed Fire Explained (video)",
+              "url": "https://youtu.be/_835N77EK4g"
+            },
+            {
+              "title": "How Do We Minimize Risk of Catastrophic Wildfires (video)",
+              "url": "https://youtu.be/DFSxtFXRS8k"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -166,12 +261,24 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Visit a managed public or private forest area with the manager or a forester who is familiar with it. Write a brief report describing the type of forest, the management objectives, and the forestry techniques used to achieve the objectives."
+          "text": "Visit a managed public or private forest area with the manager or a forester who is familiar with it. Write a brief report describing the type of forest, the management objectives, and the forestry techniques used to achieve the objectives.",
+          "resources": [
+            {
+              "title": "International Paper Managed Forest Tour (video)",
+              "url": "https://youtu.be/1iTvc_8AFVc"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "5.b",
           "text": "With a knowledgeable individual, visit a current or past logging operation or wood-using manufacturing plant. Write a brief report describing the following:",
+          "resources": [
+            {
+              "title": "A Possible Virtual Tour: Big Logging Equipment in Action (video)",
+              "url": "https://youtu.be/OBlcDZxHKXY"
+            }
+          ],
           "subrequirements": [
             {
               "req_id": "1",
@@ -216,7 +323,13 @@
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "Take part in a forest-fire prevention campaign in cooperation with your local fire warden, state wildfire agency, forester, or counselor. Write a brief report describing the campaign, how it will help prevent wildfires, and your part in it."
+          "text": "Take part in a forest-fire prevention campaign in cooperation with your local fire warden, state wildfire agency, forester, or counselor. Write a brief report describing the campaign, how it will help prevent wildfires, and your part in it.",
+          "resources": [
+            {
+              "title": "Your Home Can Survive a Wildfire (video)",
+              "url": "https://youtu.be/vL_syp1ZScM"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -228,6 +341,12 @@
       "req_id": "6",
       "path": "6",
       "text": "In your camp, local recreation area (park or equivalent), or neighborhood, do ONE of the following:",
+      "resources": [
+        {
+          "title": "Tree Risk Assessment (video)",
+          "url": "https://youtu.be/wGQmDkBVa64"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -253,7 +372,37 @@
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "Describe the consequences to forests that result from FIVE of the following elements: wildfire, absence of fire, destructive insects, loss of pollinating insect population, tree diseases, air pollution, overgrazing, deer or other wildlife overpopulation, improper harvest, urbanization."
+          "text": "Describe the consequences to forests that result from FIVE of the following elements: wildfire, absence of fire, destructive insects, loss of pollinating insect population, tree diseases, air pollution, overgrazing, deer or other wildlife overpopulation, improper harvest, and urbanization.",
+          "resources": [
+            {
+              "title": "Wildfires (video)",
+              "url": "https://youtu.be/5hghT1W33cY"
+            },
+            {
+              "title": "How Decades of Stopping Forest Fires Made Them Worse (video)",
+              "url": "https://youtu.be/0o6ezu_h6iE"
+            },
+            {
+              "title": "How too Many Deer are Affecting Maryland's Forests (website)",
+              "url": "https://news.maryland.gov/dnr/2025/08/12/how-too-many-deer-are-harming-marylands-forests/"
+            },
+            {
+              "title": "This Tiny Beetle Is Devastating Forests in the Worst Outbreak Ever (video)",
+              "url": "https://youtu.be/vR30qlK0-Cw"
+            },
+            {
+              "title": "What Happens If You Cut Down All of a City's Trees? (video)",
+              "url": "https://youtu.be/zarll9bx6FI"
+            },
+            {
+              "title": "Deforestation and Diseases: Why Disrupting Ecosystems May Put Us at Risk (video)",
+              "url": "https://youtu.be/mobzZtAafus"
+            },
+            {
+              "title": "How Do You Pollinate 40 Million Almond Trees? (video)",
+              "url": "https://youtu.be/ccS_ZwEoRgA"
+            }
+          ]
         },
         {
           "req_id": "b",
@@ -263,7 +412,13 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Describe what you should do if you discover a forest fire and how a professional firefighting crew might control it. Name your state or local wildfire control agency."
+          "text": "Describe what you should do if you discover a forest fire and how a professional firefighting crew might control it. Name your state or local wildfire control agency.",
+          "resources": [
+            {
+              "title": "Fire: Be Safe by Doing the Following (website)",
+              "url": "https://www.fs.usda.gov/visit/know-before-you-go/fire"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -273,8 +428,17 @@
     {
       "req_id": "8",
       "path": "8",
-      "text": "Visit one or more local foresters and write a brief report about the person (or persons) OR write about a forester's occupation including the education, qualifications, career opportunities, and duties related to forestry."
+      "text": "Visit one or more local foresters and write a brief report about the person (or persons) OR write about a forester's occupation including the education, qualifications, career opportunities, and duties related to forestry.",
+      "resources": [
+        {
+          "title": "Forestry Degree Requirements (website)",
+          "url": "https://www.environmentalscience.org/degree/forestry#"
+        },
+        {
+          "title": "How to Become a Forester - Forestry Jobs, Forest Ecology, and Other Environmental Jobs! (video)",
+          "url": "https://youtu.be/NRloBRkwinc"
+        }
+      ]
     }
-  ],
-  "category": "Conservation"
+  ]
 }
