@@ -4,8 +4,9 @@
   "slug": "composite-materials",
   "url": "https://www.scouting.org/merit-badges/composite-materials/",
   "eagle_required": false,
+  "category": "Trades",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Composite%20Materials.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -140,17 +141,17 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "With your parent or guardian's permission and your counselor's approval do ONE of the following:",
+      "text": "With your parent or guardian's permission and your counselor's approval, do ONE of the following:",
       "subrequirements": [
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Visit a company that manufactures or repairs products made with composites. Discuss what you learn with your counselor."
+          "text": "Visit a company that manufactures or repairs products made with composites. Discuss what you learned with your counselor."
         },
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Find three composites-related websites. Share and discuss what you learn with your counselor."
+          "text": "Find three composites-related websites. Share and discuss what you learned with your counselor."
         }
       ],
       "subrequirement_mode": {
@@ -242,6 +243,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Trades"
+  ]
 }

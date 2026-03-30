@@ -4,8 +4,9 @@
   "slug": "cooking",
   "url": "https://www.scouting.org/merit-badges/cooking/",
   "eagle_required": true,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Cooking.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -67,7 +68,7 @@
               "url": "https://youtu.be/ZCiPJoIajV4?si=2Oqv-3UIA2XCgJ8m"
             },
             {
-              "title": "What's a Food Allergy -- and What's Not? (video)",
+              "title": "What's a Food Allergy—and What's Not? (video)",
               "url": "https://youtu.be/8GxhiuN_bY0?si=5mU948QM9RzjOBw4"
             }
           ]
@@ -96,11 +97,19 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Using the MyPlate food guide or the current USDA nutrition model, give five examples for EACH of the following food groups, the recommended number of daily servings, and the recommended serving size: (1) Fruits (2) Vegetables (3) Grains (4) Proteins (5) Dairy.",
+          "text": "Using the MyPlate food guide or the current USDA nutrition model, give five examples for EACH of the following food groups, the recommended number of daily servings, and the recommended serving size: (1) Fruits (2) Vegetables (3) Grains (4) Proteins (5) Dairy",
           "resources": [
             {
               "title": "MyPlate Food Groups (website)",
               "url": "https://www.myplate.gov/eat-healthy/what-is-myplate"
+            },
+            {
+              "title": "6 Campfire Cooking Mistakes to Avoid *Do This Instead* (video)",
+              "url": "https://youtu.be/mJvu1d-Y10I?si=tRd5StGLFOf7OlQX"
+            },
+            {
+              "title": "5 Mistakes EVERY New Camper Makes COOKING (video)",
+              "url": "https://youtu.be/qBdJOYEvA0A?si=s7XfLMxdfBIC59xv"
             }
           ]
         },
@@ -112,6 +121,18 @@
             {
               "title": "Tips for Limiting Sugar in Your Diet (video)",
               "url": "https://youtu.be/rvEVY6SCEUg?si=rzAoy8sQR3eLK4QI"
+            },
+            {
+              "title": "Treating Burns and Cuts (video)",
+              "url": "https://www.youtube.com/watch?v=tm0mRPy2VH4"
+            },
+            {
+              "title": "Food Allergy with Anaphylaxis (video)",
+              "url": "https://www.youtube.com/watch?v=veHAMX6vukY"
+            },
+            {
+              "title": "What to Do When an Adult is Choking (Responsive) (video)",
+              "url": "https://youtu.be/8R3RWC-xx1I?si=SzH8cXYSs0BrEKwR"
             }
           ]
         },
@@ -123,6 +144,10 @@
             {
               "title": "MyPlate Food Plan (website)",
               "url": "https://www.myplate.gov/myplate-plan"
+            },
+            {
+              "title": "Basic Food Safety: Avoiding Cross Contamination (video)",
+              "url": "https://youtu.be/yiNTqUU-h6w?si=vlMbmOnZnVFqYRTW"
             }
           ]
         },
@@ -134,6 +159,14 @@
             {
               "title": "Healthy Eating Tip Sheets (website)",
               "url": "https://www.myplate.gov/myplate-tip-sheets"
+            },
+            {
+              "title": "Food Allergy Awareness (video)",
+              "url": "https://youtu.be/ZCiPJoIajV4?si=2Oqv-3UIA2XCgJ8m"
+            },
+            {
+              "title": "What's a Food Allergy—and What's Not? (video)",
+              "url": "https://youtu.be/8GxhiuN_bY0?si=5mU948QM9RzjOBw4"
             }
           ]
         },
@@ -145,6 +178,10 @@
             {
               "title": "How to Read Food Labels (video)",
               "url": "https://youtu.be/76g2wabvA-w?si=gUuXZXKcrK7HY4vZ"
+            },
+            {
+              "title": "10 Rules for Reading a Food Label (video)",
+              "url": "https://youtu.be/R-o-83k8dP0?si=67Y3d8V1j407TPAn"
             }
           ]
         }
@@ -174,6 +211,10 @@
             {
               "title": "Dutch Oven Basics for Beginners (video)",
               "url": "https://youtu.be/9uP1mauAtuI?si=tD0sbJHF2nxcapP8"
+            },
+            {
+              "title": "MyPlate Food Groups (website)",
+              "url": "https://www.myplate.gov/eat-healthy/what-is-myplate"
             }
           ]
         },
@@ -185,6 +226,10 @@
             {
               "title": "Camp Stove vs Campfires (website)",
               "url": "https://hotashstove.com/blogs/news/camping-stoves-vs-campfires"
+            },
+            {
+              "title": "Tips for Limiting Sugar in Your Diet (video)",
+              "url": "https://youtu.be/rvEVY6SCEUg?si=rzAoy8sQR3eLK4QI"
             }
           ]
         },
@@ -196,6 +241,10 @@
             {
               "title": "Timing Your Meals (video)",
               "url": "https://youtu.be/ED4Cm-xz-_k?si=sk-7jnMuLwLqFJyp"
+            },
+            {
+              "title": "MyPlate Food Plan (website)",
+              "url": "https://www.myplate.gov/myplate-plan"
             }
           ]
         },
@@ -207,6 +256,10 @@
             {
               "title": "How Your Sense of Smell Helps You Savor Flavor (video)",
               "url": "https://youtu.be/3NFTa9kTVRU?si=GXdAHD3F6vfyveN8"
+            },
+            {
+              "title": "Healthy Eating Tip Sheets (website)",
+              "url": "https://www.myplate.gov/myplate-tip-sheets"
             }
           ]
         }
@@ -234,6 +287,18 @@
             {
               "title": "MyPlate Kitchen (website)",
               "url": "https://www.myplate.gov/myplate-kitchen"
+            },
+            {
+              "title": "Types of Cooking Techniques, Cooking Methods (video)",
+              "url": "https://youtu.be/GE7FJU_9JsA?si=pahlJikaqGxsi8yK"
+            },
+            {
+              "title": "6 Tips to Master Foil Packet Cooking (video)",
+              "url": "https://youtu.be/HoZElsSBEPk?si=iBtzoe7NaEvwVTfa"
+            },
+            {
+              "title": "Dutch Oven Basics for Beginners (video)",
+              "url": "https://youtu.be/9uP1mauAtuI?si=tD0sbJHF2nxcapP8"
             }
           ]
         },
@@ -245,6 +310,10 @@
             {
               "title": "MyPlate Kitchen (website)",
               "url": "https://www.myplate.gov/myplate-kitchen"
+            },
+            {
+              "title": "Camp Stove vs Campfires (website)",
+              "url": "https://hotashstove.com/blogs/news/camping-stoves-vs-campfires"
             }
           ]
         },
@@ -256,13 +325,23 @@
             {
               "title": "MyPlate Kitchen (website)",
               "url": "https://www.myplate.gov/myplate-kitchen"
+            },
+            {
+              "title": "Timing Your Meals (video)",
+              "url": "https://youtu.be/ED4Cm-xz-_k?si=sk-7jnMuLwLqFJyp"
             }
           ]
         },
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "Using at least five of the 10 cooking methods from requirement 3, prepare and serve yourself and at least one adult (parent, family member, guardian, or other responsible adult) one breakfast, one lunch, one dinner, and one dessert from the meals you planned."
+          "text": "Using at least five of the 10 cooking methods from requirement 3, prepare and serve yourself and at least one adult (parent, family member, guardian, or other responsible adult) one breakfast, one lunch, one dinner, and one dessert from the meals you planned.",
+          "resources": [
+            {
+              "title": "How Your Sense of Smell Helps You Savor Flavor (video)",
+              "url": "https://youtu.be/3NFTa9kTVRU?si=GXdAHD3F6vfyveN8"
+            }
+          ]
         },
         {
           "req_id": "e",
@@ -298,6 +377,10 @@
             {
               "title": "MyPlate Tools (website)",
               "url": "https://www.myplate.gov/resources/tools"
+            },
+            {
+              "title": "MyPlate Kitchen (website)",
+              "url": "https://www.myplate.gov/myplate-kitchen"
             }
           ]
         },
@@ -309,13 +392,23 @@
             {
               "title": "MyPlate Tools (website)",
               "url": "https://www.myplate.gov/resources/tools"
+            },
+            {
+              "title": "MyPlate Kitchen (website)",
+              "url": "https://www.myplate.gov/myplate-kitchen"
             }
           ]
         },
         {
           "req_id": "c",
           "path": "5.c",
-          "text": "Share and discuss your menu plans and shopping list with your counselor."
+          "text": "Share and discuss your menu plans and shopping list with your counselor.",
+          "resources": [
+            {
+              "title": "MyPlate Kitchen (website)",
+              "url": "https://www.myplate.gov/myplate-kitchen"
+            }
+          ]
         },
         {
           "req_id": "d",
@@ -343,7 +436,13 @@
         {
           "req_id": "e",
           "path": "5.e",
-          "text": "In the outdoors, using your menu plans and recipes for this requirement, prepare one snack and one dessert. Serve both of these to your patrol or a group of youth."
+          "text": "In the outdoors, using your menu plans and recipes for this requirement, prepare one snack and one dessert. Serve both of these to your patrol or a group of youth.",
+          "resources": [
+            {
+              "title": "Timing Your Meals (video)",
+              "url": "https://youtu.be/ED4Cm-xz-_k?si=sk-7jnMuLwLqFJyp"
+            }
+          ]
         },
         {
           "req_id": "f",
@@ -353,7 +452,13 @@
         {
           "req_id": "g",
           "path": "5.g",
-          "text": "Lead the clean-up of equipment, utensils, and the cooking site thoroughly after each meal. Properly store or dispose unused ingredients, leftover food, dishwater and garbage."
+          "text": "Lead the clean-up of equipment, utensils, and the cooking site thoroughly after each meal. Properly store or dispose unused ingredients, leftover food, dishwater and garbage.",
+          "resources": [
+            {
+              "title": "How to Wash Dishes at Camp (video)",
+              "url": "https://youtu.be/4tNLdcjBlQc?si=u2FkF5Ct3KmmnRtj"
+            }
+          ]
         },
         {
           "req_id": "h",
@@ -373,7 +478,13 @@
       ],
       "subrequirement_mode": {
         "type": "all"
-      }
+      },
+      "resources": [
+        {
+          "title": "The Five Tastes (video)",
+          "url": "https://youtu.be/MZn2PMUWO-Y?si=DlM3rdYtgJGpJ5hB"
+        }
+      ]
     },
     {
       "req_id": "6",
@@ -388,13 +499,23 @@
             {
               "title": "MyPlate Kitchen (website)",
               "url": "https://www.myplate.gov/myplate-kitchen"
+            },
+            {
+              "title": "MyPlate Tools (website)",
+              "url": "https://www.myplate.gov/resources/tools"
             }
           ]
         },
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "Create a shopping list for your meals, showing the amount of food needed to prepare and serve each meal, and the cost for each meal."
+          "text": "Create a shopping list for your meals, showing the amount of food needed to prepare and serve each meal, and the cost for each meal.",
+          "resources": [
+            {
+              "title": "MyPlate Tools (website)",
+              "url": "https://www.myplate.gov/resources/tools"
+            }
+          ]
         },
         {
           "req_id": "c",
@@ -415,6 +536,22 @@
             {
               "title": "Lighting a Liquid Fuel Stove (video)",
               "url": "https://youtu.be/2XRqdVIqimY?si=ZyyBNl0sWqmn5gKI"
+            },
+            {
+              "title": "How to Use a Propane Stove (video)",
+              "url": "https://youtu.be/6il0aDjwSGI?si=IMrR6Ycu03lWzTtU"
+            },
+            {
+              "title": "How to Use a Liquid Fuel Stove (video)",
+              "url": "https://youtu.be/2XRqdVIqimY?si=Wj7JsttaHkIADW9a"
+            },
+            {
+              "title": "6 Tips to Master Foil Packet Cooking (video)",
+              "url": "https://youtu.be/HoZElsSBEPk?si=iBtzoe7NaEvwVTfa"
+            },
+            {
+              "title": "Dutch Oven Basics for Beginners (video)",
+              "url": "https://youtu.be/9uP1mauAtuI?si=tD0sbJHF2nxcapP8"
             }
           ]
         },
@@ -460,6 +597,10 @@
             {
               "title": "How to Become a Chocolatier (video)",
               "url": "https://youtu.be/wIfmCuKRIk8?si=DlJe74iFtNVcdWxk"
+            },
+            {
+              "title": "MyPlate Kitchen (website)",
+              "url": "https://www.myplate.gov/myplate-kitchen"
             }
           ]
         },
@@ -484,6 +625,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

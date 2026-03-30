@@ -4,7 +4,8 @@
   "slug": "cybersecurity",
   "url": "https://www.scouting.org/merit-badges/cybersecurity/",
   "eagle_required": false,
-  "last_updated": "2025-12-24",
+  "category": "Physical Science",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -34,6 +35,10 @@
             {
               "title": "Big Data Privacy, Security, & Liability Issues: CompTIA's Future of Tech (website)",
               "url": "https://www.futureoftech.org/big-data/5-privacy-security-liability/"
+            },
+            {
+              "title": "Protecting Your Digital Footprint - Keys to Cybersecurity (website)",
+              "url": "https://cyber.org/find-curricula/key-5"
             }
           ]
         },
@@ -124,7 +129,7 @@
               "url": "https://www.futureoftech.org/cybersecurity/5-impact-of-cybersecurity/"
             },
             {
-              "title": "Cybersecurity in Critical Infrastructure: Protecting Power Grids and Smart Grids (website)",
+              "title": "Cybersecurity In Critical Infrastructure: Protecting Power Grids and Smart Grids - Cyber Defense Magazine (website)",
               "url": "https://www.cyberdefensemagazine.com/cybersecurity-in-critical-infrastructure-protecting-power-grids-and-smart-grids/"
             }
           ]
@@ -183,7 +188,7 @@
               "url": "https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:online-data-security/xcae6f4a7ff015e7d:cyber-attacks/a/computer-malware"
             },
             {
-              "title": "Every Type of Computer Virus Explained in 8 Minutes  (video)",
+              "title": "Every Type of Computer Virus Explained in 8 Minutes (video)",
               "url": "https://youtu.be/VJFaO2-zsCU?si=Osg7sPJeQxuEn_sq"
             },
             {
@@ -263,12 +268,16 @@
               "path": "4.e.2",
               "text": "With your parent or guardian's permission, watch a movie or read a book in which cybersecurity plays a significant role. Discuss how cybersecurity topics were depicted and how realistic you think it was."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         },
         {
           "req_id": "f",
           "path": "4.f",
-          "text": "Create a list of what is part of your cyber attack surface including all the ways someone could try to access your personal information or devices—such as online accounts, apps, or home networks. Resource: What Is an Attack Surface? | Cybersecurity Explained in 60 Seconds (video)",
+          "text": "Create a list of what is part of your cyber attack surface including all the ways someone could try to access your personal information or devices—such as online accounts, apps, or home networks.",
           "resources": [
             {
               "title": "What Is an Attack Surface? | Cybersecurity Explained in 60 Seconds (video)",
@@ -302,6 +311,14 @@
             {
               "title": "Technologies in Cybersecurity: CompTIA's Future of Tech (website)",
               "url": "https://www.futureoftech.org/cybersecurity/3-technologies-in-cybersecurity/"
+            },
+            {
+              "title": "How Not To Get Hacked: Install Updates (Code.org) (video)",
+              "url": "https://youtu.be/goMnkhKBOHY"
+            },
+            {
+              "title": "Update Software | CISA (website)",
+              "url": "https://www.cisa.gov/secure-our-world/update-software"
             }
           ]
         },
@@ -328,7 +345,7 @@
             {
               "req_id": "2",
               "path": "5.b.2",
-              "text": "Demonstrate to your counselor how to check for, download, and install the latest updates for your computer or mobile device, or another computer you have permission to use (if you are unable to do this on your computer, you may use an online guide with screenshots to demonstrate this). Show your counselor how to verify that your computer or mobile device is up-to-date. Resource: Keep Your Device's Operating System and Applications Up to Date | CISA (website)",
+              "text": "Demonstrate to your counselor how to check for, download, and install the latest updates for your computer or mobile device, or another computer you have permission to use (if you are unable to do this on your computer, you may use an online guide with screenshots to demonstrate this). Show your counselor how to verify that your computer or mobile device is up-to-date.",
               "resources": [
                 {
                   "title": "Keep Your Device's Operating System and Applications Up to Date | CISA (website)",
@@ -336,7 +353,10 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "all"
+          }
         },
         {
           "req_id": "c",
@@ -388,7 +408,7 @@
             {
               "req_id": "3",
               "path": "5.c.3",
-              "text": "Install and set up a password manager. Demonstrate how it works to your counselor. Resource: Yes, You Need a Password Manager. Here's Why | Khan Academy (website)",
+              "text": "Install and set up a password manager. Demonstrate how it works to your counselor.",
               "resources": [
                 {
                   "title": "Yes, You Need a Password Manager. Here's Why | Khan Academy (website)",
@@ -528,7 +548,11 @@
               "path": "5.c.9",
               "text": "Identify one or more other vulnerabilities on your home computer or network or another computer or network you have permission to use and discuss with your counselor. With permission from the system owner, take the necessary actions to fix it."
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 3
+          }
         }
       ],
       "subrequirement_mode": {
@@ -568,10 +592,6 @@
           "path": "6.b",
           "text": "Show how you can know if your connection to a website is encrypted.",
           "resources": [
-            {
-              "title": "How Not to Get Hacked: Websites and Wi-Fi (video)",
-              "url": "https://www.youtube.com/watch?v=E3imvkP3IC0"
-            },
             {
               "title": "HTTP Secure (HTTPS) | Khan Academy (website)",
               "url": "https://www.youtube.com/watch?v=E3imvkP3IC0"
@@ -659,7 +679,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "subrequirement_mode": {
+            "type": "select",
+            "count": 1
+          }
         }
       ],
       "subrequirement_mode": {
@@ -731,11 +755,11 @@
               "url": "https://cryptologicfoundation.org/students/games/cybersecurity-computer-gaming.html"
             },
             {
-              "title": "Cyber Threat Defender · The UTSA CIAS (website)",
+              "title": "Cyber Threat Defender - The UTSA CIAS (website)",
               "url": "https://cias.utsa.edu/ctd/"
             },
             {
-              "title": "K-12 Cybersecurity Games · The UTSA CIAS (website)",
+              "title": "K-12 Cybersecurity Games - The UTSA CIAS (website)",
               "url": "https://cias.utsa.edu/k-12/cybersecurity-games/"
             },
             {
@@ -788,6 +812,10 @@
             {
               "title": "NCF Panel Discussion about Cybersecurity Careers | #CyberChats (podcast)",
               "url": "https://cryptologicfoundation.org/students/cyberchats/archive.html/article/2022/02/16/careers-in-cybersecurity-an-ncf-panel-discussion"
+            },
+            {
+              "title": "Career Exploration Cards | Cyber.org (PDF)",
+              "url": "https://www.cybermission.tech/game"
             }
           ]
         },
@@ -802,6 +830,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

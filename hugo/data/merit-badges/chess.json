@@ -4,8 +4,9 @@
   "slug": "chess",
   "url": "https://www.scouting.org/merit-badges/chess/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Chess.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -45,7 +46,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Sportsmanship and chess etiquette."
+          "text": "Sportsmanship and chess etiquette"
         }
       ],
       "subrequirement_mode": {
@@ -75,7 +76,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "The five ways a game can end in a draw."
+          "text": "The five ways a game can end in a draw"
         }
       ],
       "subrequirement_mode": {
@@ -105,7 +106,7 @@
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "On a chessboard, demonstrate Scholar's Mate, Fool's Mate, Légal Mate, Fried Liver Attack, and Noah's Ark Trap."
+          "text": "On a chessboard, demonstrate Scholar's Mate, Fool's Mate, L&eacute;gal Mate, Fried Liver Attack, and Noah's Ark Trap."
         }
       ],
       "subrequirement_mode": {
@@ -135,17 +136,17 @@
             {
               "req_id": "1",
               "path": "5.c.1",
-              "text": "White on e1, the White rooks on a1 and h1, and the Black king on e5."
+              "text": "White on e1 , the White rooks on a1 and h1 , and the Black king on e5 ."
             },
             {
               "req_id": "2",
               "path": "5.c.2",
-              "text": "White King on e1, White queen on d1, Black king on e5."
+              "text": "White King on e1 , White queen on d1 , Black king on e5 ."
             },
             {
               "req_id": "3",
               "path": "5.c.3",
-              "text": "White king on e1, White rook on a1, Black king on e5."
+              "text": "White king on e1 , White rook on a1 , Black king on e5 ."
             }
           ],
           "subrequirement_mode": {
@@ -155,7 +156,7 @@
         {
           "req_id": "d",
           "path": "5.d",
-          "text": "With White king on d4, White pawn on e3, and Black king on e6:",
+          "text": "With White king on d4 , White pawn on e3 , and Black king on e6 :",
           "subrequirements": [
             {
               "req_id": "1",
@@ -213,6 +214,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

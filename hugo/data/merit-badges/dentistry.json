@@ -4,8 +4,9 @@
   "slug": "dentistry",
   "url": "https://www.scouting.org/merit-badges/dentistry/",
   "eagle_required": false,
+  "category": "Professions",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Dentistry.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -126,7 +127,7 @@
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "Make a model tooth out of soap, clay, papier-m?ch?, or wax. Using a string and a large hand brush, show your troop or a school class proper tooth-brushing and flossing procedures."
+          "text": "Make a model tooth out of soap, clay, paper-mache, or wax. Using a string and a large hand brush, show your troop or a school class proper tooth-brushing and flossing procedures."
         },
         {
           "req_id": "b",
@@ -159,6 +160,5 @@
       "path": "7",
       "text": "Identify three career opportunities that would use skills and knowledge in dentistry. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
-  ],
-  "category": "Professions"
+  ]
 }

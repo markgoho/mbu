@@ -4,8 +4,9 @@
   "slug": "citizenship-in-the-nation",
   "url": "https://www.scouting.org/merit-badges/citizenship-in-the-nation/",
   "eagle_required": true,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Citizenship%20in%20the%20Nation.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -40,7 +41,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "How citizens can be involved in each branch of government."
+          "text": "How citizens can be involved in each branch of government"
         }
       ],
       "subrequirement_mode": {
@@ -65,7 +66,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "\"E Pluribus Unum,\" the traditional United States motto."
+          "text": "E Pluribus Unum, the traditional United States motto"
         }
       ],
       "subrequirement_mode": {
@@ -130,7 +131,7 @@
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Tour your state capitol building or the U. S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history."
+          "text": "Tour your state capitol building or the U.S. Capitol. Tell your counselor what you learned about the capitol, its function, and the history."
         },
         {
           "req_id": "c",
@@ -153,6 +154,5 @@
       "path": "8",
       "text": "Name your representatives in the United States Congress. Write to your representative in Congress explaining your views on a national issue. Show your correspondence, along with any response you receive, to your counselor."
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

@@ -4,8 +4,10 @@
   "slug": "cycling",
   "url": "https://www.scouting.org/merit-badges/cycling/",
   "eagle_required": true,
+  "category": "Sports",
+  "eagle_group": "fitness",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Cycling.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -26,6 +28,10 @@
             {
               "title": "Avoiding Road Hazards (video)",
               "url": "https://www.youtube.com/watch?v=dcRpBP9WvKg%20"
+            },
+            {
+              "title": "Avoiding Road Hazards (video)",
+              "url": "https://www.youtube.com/watch?v=dcRpBP9WvKg "
             }
           ]
         },
@@ -37,6 +43,10 @@
             {
               "title": "First Aid Guide for Mountain Bikers (video)",
               "url": "https://www.youtube.com/watch?v=oPCWzECMD_4%20"
+            },
+            {
+              "title": "First Aid Guide for Mountain Bikers (video)",
+              "url": "https://www.youtube.com/watch?v=oPCWzECMD_4 "
             }
           ]
         }
@@ -63,7 +73,7 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Explain the importance of wearing the right clothing and gear while cycling, including a properly sized and fitted helmet. Know the Scouting America Bike Safety Guidelines.",
+      "text": "Explain the importance of wearing the right clothing and gear while cycling, including a properly sized and fitted helmet. Know the Scouting America Bike Safety Guidelines .",
       "resources": [
         {
           "title": "Fitting a Bike Helmet (video)",
@@ -113,6 +123,14 @@
             {
               "title": "How to Set Your Bicycle Seat Height (video)",
               "url": "https://www.youtube.com/watch?v=jh5Zv6Dcn6k%20"
+            },
+            {
+              "title": "Bike Tips: Finding and Fitting the Right Bike (video)",
+              "url": "https://www.youtube.com/watch?v=dsM9brngVmc&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=6 "
+            },
+            {
+              "title": "How to Set Your Bicycle Seat Height (video)",
+              "url": "https://www.youtube.com/watch?v=jh5Zv6Dcn6k "
             }
           ]
         },
@@ -124,6 +142,10 @@
             {
               "title": "Bike Tips: Proper Shifting Technique (video)",
               "url": "https://www.youtube.com/watch?v=7kc-CHtlQyM&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=7%20"
+            },
+            {
+              "title": "Bike Tips: Proper Shifting Technique (video)",
+              "url": "https://www.youtube.com/watch?v=7kc-CHtlQyM&list=PLHGEvyG5wuthKCwDfpQIZfTfan4mI6XTe&index=7 "
             }
           ]
         },
@@ -155,6 +177,10 @@
             {
               "title": "Rules of the Road (video)",
               "url": "https://www.youtube.com/watch?v=-Jp0SSAeCiY%20"
+            },
+            {
+              "title": "Rules of the Road (video)",
+              "url": "https://www.youtube.com/watch?v=-Jp0SSAeCiY "
             }
           ]
         }
@@ -190,13 +216,17 @@
         {
           "title": "Barriers to Abuse (PDF)",
           "url": "https://www.scouting.org/wp-content/uploads/2024/09/Youth-Safety-Infographic-Barriers-to-Abuse-1536x1363.png"
+        },
+        {
+          "title": "The Buddy System in Scouting: Why No Scout Should Go It Alone (website)",
+          "url": "https://www.scoutshop.org/blog/the-buddy-system-in-scouting-why-it-matters-more-than-ever.html"
         }
       ],
       "subrequirements": [
         {
           "req_id": "a",
           "path": "6.a",
-          "text": "A Option A—Road Biking. Do ALL of the following:",
+          "text": "Option A—Road Biking. Do ALL of the following:",
           "is_option": true,
           "resources": [
             {
@@ -222,6 +252,10 @@
                     {
                       "title": "Bike Hand Signals (PDF)",
                       "url": "https://static.nhtsa.gov/nhtsa/downloads/NTI/Responsible_Walk-Bike_Activities/ComboLessons/L3Handouts/8009_HandSignals_122811_v1a.pdf"
+                    },
+                    {
+                      "title": "Bike Safety | Hand Signals (video)",
+                      "url": "https://www.youtube.com/watch?v=v_hRsNHlq8M "
                     }
                   ]
                 },
@@ -266,6 +300,10 @@
                     {
                       "title": "How to Cross Railroad Tracks (video)",
                       "url": "https://www.youtube.com/watch?v=62jc3-6Jgdw%20"
+                    },
+                    {
+                      "title": "How to Cross Railroad Tracks (video)",
+                      "url": "https://www.youtube.com/watch?v=62jc3-6Jgdw "
                     }
                   ]
                 }
@@ -293,6 +331,7 @@
               "req_id": "3",
               "path": "6.a.3",
               "text": "After completing requirement (2) for the road biking option, do ONE of the following:",
+              "is_option": true,
               "subrequirements": [
                 {
                   "req_id": "a",
@@ -330,7 +369,7 @@
         {
           "req_id": "b",
           "path": "6.b",
-          "text": "B Option B—Trail or Mixed Surface Biking Do ALL of the following: Note: These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.",
+          "text": "Option B—Trail or Mixed Surface Biking Do ALL of the following: Note: These requirements may be completed using a mountain bike or other properly equipped, manually-powered cycle such as a gravel bike, tandem bike, hand-powered bike, recumbent bike, adult tricycle, or adaptive cycle. If a tandem bike is used, the Scout must actively power the cycle in concert with the other rider.",
           "is_option": true,
           "subrequirements": [
             {
@@ -350,6 +389,10 @@
                     {
                       "title": "Advanced MTB Cornering Techniques: Body Position & Technical Terrain (video)",
                       "url": "https://www.youtube.com/watch?v=Ammz64zxnhg%20"
+                    },
+                    {
+                      "title": "Advanced MTB Cornering Techniques: Body Position & Technical Terrain (video)",
+                      "url": "https://www.youtube.com/watch?v=Ammz64zxnhg "
                     }
                   ]
                 },
@@ -459,6 +502,10 @@
                 {
                   "title": "Tread Lightly (website)",
                   "url": "https://treadlightly.org/learn/recreation-tips/sharing-our-trails/%20"
+                },
+                {
+                  "title": "Tread Lightly (website)",
+                  "url": "https://treadlightly.org/learn/recreation-tips/sharing-our-trails/ "
                 }
               ]
             },
@@ -486,7 +533,8 @@
             }
           ],
           "subrequirement_mode": {
-            "type": "all"
+            "type": "select",
+            "count": 4
           }
         }
       ],
@@ -495,7 +543,5 @@
         "count": 1
       }
     }
-  ],
-  "eagle_group": "fitness",
-  "category": "Sports"
+  ]
 }

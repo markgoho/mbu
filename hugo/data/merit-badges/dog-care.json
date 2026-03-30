@@ -4,8 +4,9 @@
   "slug": "dog-care",
   "url": "https://www.scouting.org/merit-badges/dog-care/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Dog%20Care.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -114,7 +115,13 @@
       ],
       "subrequirement_mode": {
         "type": "all"
-      }
+      },
+      "resources": [
+        {
+          "title": "Basic Dog Anatomy (video)",
+          "url": "https://youtu.be/ydzIvqvSKdk?si=uJiETon8SHdKagVg"
+        }
+      ]
     },
     {
       "req_id": "4",
@@ -139,6 +146,10 @@
         {
           "title": "How to Teach Your Dog the Basics (video)",
           "url": "https://www.youtube.com/watch?v=lUzcA9qa_P8"
+        },
+        {
+          "title": "How to Keep Track of Pet Care (video)",
+          "url": "https://youtu.be/rS4dprT0rg0?si=wZQbDaOU29oFYKDa"
         }
       ]
     },
@@ -224,7 +235,17 @@
       ],
       "subrequirement_mode": {
         "type": "all"
-      }
+      },
+      "resources": [
+        {
+          "title": "10 Most Basic Commands Every Dog Owner Should Know (video)",
+          "url": "https://www.youtube.com/watch?v=eHbcb2EQC88"
+        },
+        {
+          "title": "How to Teach Your Dog the Basics (video)",
+          "url": "https://www.youtube.com/watch?v=lUzcA9qa_P8"
+        }
+      ]
     },
     {
       "req_id": "7",
@@ -239,6 +260,10 @@
             {
               "title": "How to Be Safe When Handling a Sick or Injured Dog (video)",
               "url": "https://www.youtube.com/watch?v=7JP3IFdClU8"
+            },
+            {
+              "title": "Puppy Vaccinations 101: What, When, and Why (video)",
+              "url": "https://www.youtube.com/watch?v=BnVVSciMymE"
             }
           ]
         },
@@ -250,6 +275,10 @@
             {
               "title": "How Do I Safely Muzzle a Pet in an Emergency? (video)",
               "url": "https://www.youtube.com/watch?v=E7_77X7hAqQ"
+            },
+            {
+              "title": "How to Treat Fleas, Ticks & Worms in Dogs (video)",
+              "url": "https://www.youtube.com/watch?v=NdykIsBmmao"
             }
           ]
         },
@@ -261,6 +290,10 @@
             {
               "title": "First Aid for Dog Bites (video)",
               "url": "https://www.youtube.com/watch?v=J5AeWWQ3eN0"
+            },
+            {
+              "title": "Dental Health Important for Your Pet Dogs (video)",
+              "url": "https://www.youtube.com/watch?v=Qm92tNqrNAU"
             }
           ]
         },
@@ -272,6 +305,10 @@
             {
               "title": "Pet First Aid: How to Bandage Your Pet's Paw in Case of Emergency (video)",
               "url": "https://www.youtube.com/watch?v=s7ZvhxUv8HU"
+            },
+            {
+              "title": "Everything You Need to Know About Dog Grooming (video)",
+              "url": "https://www.youtube.com/watch?v=73abRtKHDfI"
             }
           ]
         },
@@ -283,6 +320,14 @@
             {
               "title": "What to Do to Help a Dog Hit by a Car (video)",
               "url": "https://www.youtube.com/watch?v=Zidt9dhMEZ4"
+            },
+            {
+              "title": "Hot Weather Tips for Dogs! (video)",
+              "url": "https://www.youtube.com/shorts/JsnPl3mvgG4"
+            },
+            {
+              "title": "Winter Weather - Pet Safety Tips (video)",
+              "url": "https://www.youtube.com/watch?v=P7nVESKP_sA"
             }
           ]
         },
@@ -298,6 +343,14 @@
             {
               "title": "What to Put in a Dog First Aid Kit for Hiking (video)",
               "url": "https://www.youtube.com/watch?v=7sszmRkdOyM"
+            },
+            {
+              "title": "Spaying and Neutering Pets: Myths Debunked & Health Benefits Explained (video)",
+              "url": "https://www.youtube.com/watch?v=H9r9J3zlGZI"
+            },
+            {
+              "title": "To Neuter or Not? (video)",
+              "url": "https://youtu.be/SaQRnYbco5M?si=8BgNtVlMOUSq_8Dd"
             }
           ]
         },
@@ -363,6 +416,14 @@
         {
           "title": "Michigan's Animal Control Laws (video)",
           "url": "https://www.youtube.com/watch?v=Hr7n_5GCiUk"
+        },
+        {
+          "title": "Small Animal Hospital Virtual Tour (video)",
+          "url": "https://www.youtube.com/watch?v=O_R3raXyB8s"
+        },
+        {
+          "title": "What is an Animal Shelter (video)",
+          "url": "https://www.youtube.com/watch?v=_CIC1OXl2u0"
         }
       ]
     },
@@ -400,12 +461,16 @@
           "text": "Identify how you might use the skills and knowledge in working with dogs to pursue a personal hobby and/or healthy lifestyle. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this.",
           "resources": [
             {
-              "title": "9 Dog-Friendly Hobbies to Strengthen Your Connection With Your Pup (website)",
+              "title": "9 Dog-Friendly Hobbies To Strengthen Your Connection With Your Pup (website)",
               "url": "https://thenatureofhome.com/dog-friendly-hobbies/"
             },
             {
               "title": "Dog Carving (video)",
               "url": "https://www.youtube.com/shorts/bRJr3fVXGnU"
+            },
+            {
+              "title": "Puppy Raising for the Blind (website)",
+              "url": "https://www.guidingeyes.org/puppy-raising/"
             }
           ]
         }
@@ -413,8 +478,13 @@
       "subrequirement_mode": {
         "type": "select",
         "count": 1
-      }
+      },
+      "resources": [
+        {
+          "title": "Michigan's Animal Control Laws (video)",
+          "url": "https://www.youtube.com/watch?v=Hr7n_5GCiUk"
+        }
+      ]
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

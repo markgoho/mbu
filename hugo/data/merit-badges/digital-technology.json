@@ -4,8 +4,9 @@
   "slug": "digital-technology",
   "url": "https://www.scouting.org/merit-badges/digital-technology/",
   "eagle_required": false,
+  "category": "Physical Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Digital%20Technology.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -457,13 +458,27 @@
             {
               "title": "Digital Technology Careers (video)",
               "url": "https://career.albany.edu/videos/digital-technology/"
+            },
+            {
+              "title": "The NBA Data Scientist (video)",
+              "url": "https://youtu.be/MpLHMKTolVw?si=cR5j7TBulSoOGupx"
             }
           ]
         },
         {
           "req_id": "b",
           "path": "9.b",
-          "text": "Explore how you could use knowledge and skills from the Digital Technology merit badge to pursue a hobby or interest. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this."
+          "text": "Explore how you could use knowledge and skills from the Digital Technology merit badge to pursue a hobby or interest. Research any training needed, expenses, and organizations that promote or support it. Discuss with your counselor what short-term and long-term goals you might have if you pursued this.",
+          "resources": [
+            {
+              "title": "Tech Hobbies: The Best Technology Hobbies You Need to Try (video)",
+              "url": "https://youtu.be/bDHWybulLw8?si=ZB7SYh4y5cinPyc4"
+            },
+            {
+              "title": "20 Computer Hobbies That Will Entertain You for Long (website)",
+              "url": "https://insideofhappiness.com/20-computer-hobbies-that-will-entertain-you-for-long/"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -471,6 +486,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Physical Science"
+  ]
 }
