@@ -4,23 +4,42 @@
   "slug": "theater",
   "url": "https://www.scouting.org/merit-badges/theater/",
   "eagle_required": false,
+  "category": "Arts and Crafts",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Theater.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
       "path": "1",
-      "text": "See or read three full-length plays. Write a review of each. Discuss with your counselor the plot or story. If you chose to watch the plays, comment on the acting and the staging. Note: Watching plays on television, video, or as a movie is not permitted."
+      "text": "See or read three full-length plays. Write a review of each. Discuss with your counselor the plot or story. If you chose to watch the plays, comment on the acting and the staging. Note: Watching plays on television, video, or as a movie is not permitted.",
+      "resources": [
+        {
+          "title": "Theatre Merit Badge (video)",
+          "url": "https://youtu.be/wj2tyVAYlMg"
+        }
+      ]
     },
     {
       "req_id": "2",
       "path": "2",
-      "text": "Write a one-act play that will take at least 10 minutes to perform. The play must have a main character, conflict, and a climax."
+      "text": "Write a one-act play that will take at least 10 minutes to perform. The play must have a main character, conflict, and a climax.",
+      "resources": [
+        {
+          "title": "How to Write a One-Act Play (video)",
+          "url": "https://youtu.be/ZRTuslMz2Rw?si=cy09j4rU7f5-l9_O"
+        }
+      ]
     },
     {
       "req_id": "3",
       "path": "3",
       "text": "Discuss with your counselor the safety precautions that should be practiced when working in a theater to protect the cast and crew. Then do THREE of the following:",
+      "resources": [
+        {
+          "title": "General Safety in the Theatre (video)",
+          "url": "https://youtu.be/4dGuuOgzK5U?si=9KtI0d1RU7ruD-Yg"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -82,6 +101,12 @@
       "req_id": "4",
       "path": "4",
       "text": "Mime or pantomime any ONE of the following, chosen by your counselor.",
+      "resources": [
+        {
+          "title": "What is Pantomime? (video)",
+          "url": "https://youtu.be/fLTXMZj2saE"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -122,8 +147,13 @@
     {
       "req_id": "5",
       "path": "5",
-      "text": "Explain the following: proscenium arch, central or arena staging, center stage, stage right, stage left, downstage, upstage, stage crew, flies, portal, cyclorama, stage brace, spotlight, floodlight, lighting control board, sound mixing desk, thrust staging, ground plans, and sightlines."
+      "text": "Explain the following: proscenium arch, central or arena staging, center stage, stage right, stage left, downstage, upstage, stage crew, flies, portal, cyclorama, stage brace, spotlight, floodlight, lighting control board, sound mixing desk, thrust staging, ground plans, and sightlines.",
+      "resources": [
+        {
+          "title": "Stage Anatomy (video)",
+          "url": "https://youtu.be/ju6Q_0jXFE0?si=vimJx4FEihmqE6T_"
+        }
+      ]
     }
-  ],
-  "category": "Arts and Crafts"
+  ]
 }

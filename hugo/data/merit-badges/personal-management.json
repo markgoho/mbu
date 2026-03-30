@@ -4,8 +4,9 @@
   "slug": "personal-management",
   "url": "https://www.scouting.org/merit-badges/personal-management/",
   "eagle_required": true,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Management.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -100,7 +101,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Track and record your actual income, expenses, and savings for 13 consecutive weeks (the same 13-week period for which you budgeted). (You may use the forms provided in the Personal Management merit badge pamphlet, devise your own, or use a computer-generated version.) When complete, present the records showing the results to your counselor."
+          "text": "Track and record your actual income, expenses, and savings for 13 consecutive weeks (the same 13-week period for which you budgeted). (You may use the forms provided in the Personal Management merit badge pamphlet, devise your own, or use a computer-generated version). When complete, present the records showing the results to your counselor."
         },
         {
           "req_id": "d",
@@ -231,7 +232,7 @@
         {
           "req_id": "f",
           "path": "5.f",
-          "text": "A U.S. savings bond."
+          "text": "A U.S. savings bond"
         }
       ],
       "subrequirement_mode": {
@@ -261,7 +262,7 @@
         {
           "req_id": "d",
           "path": "6.d",
-          "text": "Whole life and term life."
+          "text": "Whole life and term life"
         }
       ],
       "subrequirement_mode": {
@@ -276,7 +277,7 @@
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "What a loan is, what interest is, and how the annual percentage rate (APR) measures the true cost of a loan."
+          "text": "What a loan is, what interest is, and how the annual percentage rate (APR) measures the true cost of a loan"
         },
         {
           "req_id": "b",
@@ -286,12 +287,12 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "The differences between a charge card, debit card, and credit card. What are the costs and pitfalls of using these financial tools? Explain why it is unwise to make only the minimum payment on your credit card."
+          "text": "The differences between a charge card, debit card, and credit card, including the costs and pitfalls of using these financial tools, and why it is unwise to make only the minimum payment on your credit card"
         },
         {
           "req_id": "d",
           "path": "7.d",
-          "text": "Credit reports and how personal responsibility can affect your credit report."
+          "text": "Credit reports and how personal responsibility can affect your credit report"
         },
         {
           "req_id": "e",
@@ -388,6 +389,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

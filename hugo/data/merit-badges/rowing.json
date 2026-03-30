@@ -4,8 +4,9 @@
   "slug": "rowing",
   "url": "https://www.scouting.org/merit-badges/rowing/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Rowing.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -142,7 +143,7 @@
         {
           "req_id": "c",
           "path": "8.c",
-          "text": "Types of oarlocks used in competitive and recreational rowing."
+          "text": "Types of oarlocks used in competitive and recreational rowing"
         }
       ],
       "subrequirement_mode": {
@@ -194,6 +195,5 @@
         "type": "all"
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

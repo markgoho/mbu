@@ -4,8 +4,9 @@
   "slug": "stamp-collecting",
   "url": "https://www.scouting.org/merit-badges/stamp-collecting/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Stamp%20Collecting.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -65,6 +66,10 @@
         {
           "title": "Topical Stamp Collecting (website)",
           "url": "https://www.linns.com/content/collector-resources/collecting-basics/topical-stamp-collecting"
+        },
+        {
+          "title": "Topical Stamp Collecting (website)",
+          "url": "https://www.linns.com/content/collector-resources/collecting-basics/topical-stamp-collecting "
         }
       ]
     },
@@ -205,7 +210,7 @@
         {
           "req_id": "j",
           "path": "3.j",
-          "text": "Postal stationery (aerogramme, stamped envelope, and postal card).",
+          "text": "Postal stationery (aerogramme, stamped envelope, and postal card)",
           "resources": [
             {
               "title": "4 Helpful Stamp Collecting Tips for Beginners (video)",
@@ -340,7 +345,7 @@
         {
           "req_id": "g",
           "path": "5.g",
-          "text": "Watermark fluid.",
+          "text": "Watermark fluid",
           "resources": [
             {
               "title": "How to Find Watermarks on Stamps (video)",
@@ -527,6 +532,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

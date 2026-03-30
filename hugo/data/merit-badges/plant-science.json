@@ -4,8 +4,9 @@
   "slug": "plant-science",
   "url": "https://www.scouting.org/merit-badges/plant-science/",
   "eagle_required": false,
+  "category": "Agribusiness",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Plant%20Science.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -132,10 +133,6 @@
               "url": "https://youtu.be/sbyuwd1nDVo"
             },
             {
-              "title": "10 Botany Jobs: Environmental Conservation Botany Jobs and Environmental Internships (video)",
-              "url": "https://youtu.be/d1HGz04SA9U?si=zGMuF_gt8Tm5s368"
-            },
-            {
               "title": "What's the Difference Between Horticulture and Agronomy (video)",
               "url": "https://youtu.be/d1HGz04SA9U?si=zGMuF_gt8Tm5s368"
             }
@@ -245,7 +242,7 @@
                 {
                   "req_id": "a",
                   "path": "8.a.5.a",
-                  "text": "(5)(a) Corn",
+                  "text": "Corn",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -282,7 +279,7 @@
                 {
                   "req_id": "b",
                   "path": "8.a.5.b",
-                  "text": "(5)(b) Cotton",
+                  "text": "Cotton",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -323,7 +320,7 @@
                 {
                   "req_id": "c",
                   "path": "8.a.5.c",
-                  "text": "(5)(c) Forage Crops",
+                  "text": "Forage Crops",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -364,12 +361,12 @@
                 {
                   "req_id": "d",
                   "path": "8.a.5.d",
-                  "text": "(5)(d) Small Grains",
+                  "text": "Small Grains",
                   "subrequirements": [
                     {
                       "req_id": "1",
                       "path": "8.a.5.d.1",
-                      "text": "Give production figures for small grain crops listed in the U. S. Statistical Report or Agricultural Statistics Handbook for the latest year available.",
+                      "text": "Give production figures for small grain crops listed in the U.S. Statistical Report or Agricultural Statistics Handbook for the latest year available.",
                       "resources": [
                         {
                           "title": "USDA - National Agricultural Statistics Service - Charts and Maps - Field Crops (website)",
@@ -419,7 +416,7 @@
                 {
                   "req_id": "e",
                   "path": "8.a.5.e",
-                  "text": "(5)(e) Oil Crops",
+                  "text": "Oil Crops",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -620,7 +617,7 @@
                 {
                   "req_id": "a",
                   "path": "8.b.5.a",
-                  "text": "(5)(a) Bedding Plants",
+                  "text": "Bedding Plants",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -672,7 +669,7 @@
                 {
                   "req_id": "b",
                   "path": "8.b.5.b",
-                  "text": "(5)(b) Fruit, Berry, and Nut Crops",
+                  "text": "Fruit, Berry, and Nut Crops",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -724,7 +721,7 @@
                 {
                   "req_id": "c",
                   "path": "8.b.5.c",
-                  "text": "(5)(c) Woody Ornamentals",
+                  "text": "Woody Ornamentals",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -789,7 +786,7 @@
                 {
                   "req_id": "d",
                   "path": "8.b.5.d",
-                  "text": "(5)(d) Home Gardening",
+                  "text": "Home Gardening",
                   "subrequirements": [
                     {
                       "req_id": "1",
@@ -907,7 +904,7 @@
             {
               "req_id": "2",
               "path": "8.c.2",
-              "text": "Select a study site that is at least 100 by 100 feet. Make a list of 10 woody plants (trees and shrubs) and 10 non-woody plants in the study site. Find out which of these are native plants and which are exotic (or nonnative).",
+              "text": "Select a study site that is at least 100 by 100 feet. Make a list of 10 woody plants (trees and shrubs) and 10 non-woody plants in the study site. Find out which of these are native plants and which are exotic (or non-native).",
               "resources": [
                 {
                   "title": "Native Plants vs Exotic Plants | Which Are More Beneficial to the Ecosystem (video)",
@@ -985,7 +982,7 @@
                     {
                       "req_id": "3",
                       "path": "8.c.6.a.3",
-                      "text": "List the types of trees by scientific name and give common names. Note the number and size (diameter at 4½ feet above ground) of trees observed and determine the largest of each species in your study area."
+                      "text": "List the types of trees by scientific name and give common names. Note the number and size (diameter at 4&frac12; feet above ground) of trees observed and determine the largest of each species in your study area."
                     },
                     {
                       "req_id": "4",
@@ -1031,7 +1028,7 @@
                         {
                           "req_id": "b",
                           "path": "8.c.6.b.3.b",
-                          "text": "Measure the diameter of each tree at 4½ feet above the ground, and map and list each tree."
+                          "text": "Measure the diameter of each tree at 4&frac12; feet above the ground, and map and list each tree."
                         }
                       ],
                       "subrequirement_mode": {
@@ -1066,7 +1063,7 @@
                         {
                           "req_id": "a",
                           "path": "8.c.6.c.3.a",
-                          "text": "Identify, measure, and map each tree in a 100-by-100-foot plot. (Measure the diameter of each tree larger than 3 inches in diameter at 4½ feet above the ground.)"
+                          "text": "Identify, measure, and map each tree in a 100-by-100-foot plot. (Measure the diameter of each tree larger than 3 inches in diameter at 4&frac12; feet above the ground.)"
                         },
                         {
                           "req_id": "b",
@@ -1082,7 +1079,7 @@
                         {
                           "req_id": "c",
                           "path": "8.c.6.c.3.c",
-                          "text": "Identify and count all broad-leaved plants (trees, shrubs, vines, and herbaceous plants) all plants (wildflowers, ferns, grasses, mosses, etc.) of a 4-by-4-foot plot within the 10-by-10-foot plot."
+                          "text": "Identify and count all broad-leaved plants (trees, shrubs, vines, and herbaceous plants) all plants (wildflowers, ferns, grasses, mosses, etc.) of a 4-by-4-foot plot within the 10-by-10-foot plot. Note: If individual plants like ferns, grasses and mosses cannot be clearly distinguished, make a reasonable estimate of area (square inches of cover) for each species and record that as an estimate within the 4 x 4 subplot."
                         }
                       ],
                       "subrequirement_mode": {
@@ -1160,7 +1157,7 @@
                     {
                       "req_id": "3",
                       "path": "8.c.6.e.3",
-                      "text": "If possible, visit a nature preserve managed by the organization. Tell about land management practices such as controlled burning, or measures to eradicate invasive (nonnative) plants or other threats to the plants that are native to the area."
+                      "text": "If possible, visit a nature preserve managed by the organization. Tell about land management practices such as controlled burning, or measures to eradicate invasive (non-native) plants or other threats to the plants that are native to the area."
                     }
                   ],
                   "subrequirement_mode": {
@@ -1199,6 +1196,5 @@
         }
       ]
     }
-  ],
-  "category": "Agribusiness"
+  ]
 }

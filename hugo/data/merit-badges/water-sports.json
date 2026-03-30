@@ -4,6 +4,7 @@
   "slug": "water-sports",
   "url": "https://www.scouting.org/merit-badges/water-sports/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Water%20Sports.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -92,6 +93,5 @@
       "path": "6",
       "text": "While on shore, show that you know how to properly adjust the bindings of your ski(s) or wakeboard to fit yourself. Then, in deep water, show you can adjust bindings to fit. Recover and put on your ski(s) or wakeboard that has come off during a fall."
     }
-  ],
-  "category": "Sports"
+  ]
 }

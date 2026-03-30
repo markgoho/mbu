@@ -4,8 +4,9 @@
   "slug": "reptile-and-amphibian-study",
   "url": "https://www.scouting.org/merit-badges/reptile-and-amphibian-study/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Reptile%20Amphibian.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -30,6 +31,14 @@
         {
           "title": "Find Amphibian and Reptile Species in Your Area (website)",
           "url": "https://geonarrative.usgs.gov/amphibianreptileexplorer/"
+        },
+        {
+          "title": "Reptiles of the United States (website)",
+          "url": "https://www.inaturalist.org/places/united-states#taxon=26036"
+        },
+        {
+          "title": "Amphibians of the United States (website)",
+          "url": "https://www.inaturalist.org/places/united-states#taxon=20978"
         }
       ]
     },
@@ -86,7 +95,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "Snakes and lizards.",
+          "text": "Snakes and lizards",
           "resources": [
             {
               "title": "How Are Snakes Different From Lizards? (video)",
@@ -97,7 +106,13 @@
       ],
       "subrequirement_mode": {
         "type": "all"
-      }
+      },
+      "resources": [
+        {
+          "title": "Find Amphibian and Reptile Species in Your Area (website)",
+          "url": "https://geonarrative.usgs.gov/amphibianreptileexplorer/"
+        }
+      ]
     },
     {
       "req_id": "4",
@@ -142,6 +157,22 @@
         {
           "title": "What Are Oviparous and Viviparous Snakes? (video)",
           "url": "https://youtu.be/KFCfL99rHpw?si=rCqWcKm5S4LBA7zW"
+        },
+        {
+          "title": "Ecological Roles of Reptiles and Amphibians (website with videos)",
+          "url": "https://www.online-field-guide.com/ecological-roles-of-reptiles-and-amphibians/"
+        },
+        {
+          "title": "Dying for Protection: Amphibians and Reptiles (video)",
+          "url": "https://youtu.be/dQpHqkAvNnc?si=2E6kp1GO8McIHRsI"
+        },
+        {
+          "title": "Search for Endangered Species in Your Area | U.S. Fish & Wildlife Service (website)",
+          "url": "https://ecos.fws.gov/ecp0/reports/ad-hoc-species-report?kingdom=V&kingdom=I&status=E&status=T&status=EmE&status=EmT&status=EXPE&status=EXPN&status=SAE&status=SAT&mapstatus=3&fcrithab=on&fstatus=on&fspecrule=on&finvpop=on&fgroup=on&header=Listed+Animals"
+        },
+        {
+          "title": "Feeding Our Amphibians (video)",
+          "url": "https://www.youtube.com/watch?v=baY4dzLSWlY"
         }
       ]
     },
@@ -161,6 +192,22 @@
         {
           "title": "True Facts: How Snakes Move (video)",
           "url": "https://www.youtube.com/watch?v=zFNnx4UgkNI"
+        },
+        {
+          "title": "Reptile vs Amphibian (video)",
+          "url": "https://www.youtube.com/watch?v=GKM_mDDPJh0"
+        },
+        {
+          "title": "Lifecycle of an Amphibian (Frog) (video)",
+          "url": "https://youtu.be/sZnvgGmvuVs?si=3d5-sxPLy1jJbJz_"
+        },
+        {
+          "title": "How Lizards Reproduce (Video)",
+          "url": "https://www.youtube.com/watch?v=ACEpFX2Dnmk"
+        },
+        {
+          "title": "What Are Oviparous and Viviparous Snakes? (video)",
+          "url": "https://youtu.be/KFCfL99rHpw?si=rCqWcKm5S4LBA7zW"
         }
       ]
     },
@@ -172,6 +219,14 @@
         {
           "title": "The Most VENOMOUS Snakes in the US (video)",
           "url": "https://youtu.be/guMzO7vzMT0?si=3thQ8FQdwoEHXV75"
+        },
+        {
+          "title": "How Snakes Move! (They Don't Just Slither!) (video)",
+          "url": "https://www.youtube.com/watch?v=7-AKPFiIEEw"
+        },
+        {
+          "title": "How Do Snakes Move? (video)",
+          "url": "https://www.youtube.com/watch?v=aPV0HpPRH2A"
         }
       ]
     },
@@ -200,7 +255,13 @@
       "subrequirement_mode": {
         "type": "select",
         "count": 1
-      }
+      },
+      "resources": [
+        {
+          "title": "The Most VENOMOUS Snakes in the US (video)",
+          "url": "https://youtu.be/guMzO7vzMT0?si=3thQ8FQdwoEHXV75"
+        }
+      ]
     },
     {
       "req_id": "9",
@@ -215,6 +276,10 @@
             {
               "title": "Frog Sounds: Why They Make Them (Examples) (video)",
               "url": "https://youtu.be/74-vaZv54s8?si=7ClcX_Akwhjh0A_T"
+            },
+            {
+              "title": "Pet Journaling: Track Your Pet's Needs and Your Time Efficiently (website)",
+              "url": "https://fluent-time-management.com/pet-journaling-track-your-pets-needs-and-your-time-efficiently/"
             }
           ]
         },
@@ -259,6 +324,5 @@
         }
       ]
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

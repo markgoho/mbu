@@ -4,8 +4,9 @@
   "slug": "rifle-shooting",
   "url": "https://www.scouting.org/merit-badges/rifle-shooting/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Rifle%20Shooting.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -85,12 +86,12 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Working under the supervision of a certified National Rifle Association (NRA) Rifle instructor and a certified range safety officer, at a nationally authorized camp property or at a commercial firearm range (as defined in the Scouting America National Range and Target Activities Manual), do ONE of the following options:",
+      "text": "Working under the supervision of a certified National Rifle Association (NRA) rifle instructor and a certified range safety officer, at a nationally authorized camp property or at a commercial firearm range (as defined in the Scouting America National Range and Target Activities Manual ), do ONE of the following options:",
       "subrequirements": [
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Option A—Rifle Shooting (Modern Cartridge Type). Do the following:",
+          "text": "Option A—Rifle Shooting (Modern Cartridge Type). Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -146,7 +147,7 @@
             {
               "req_id": "k",
               "path": "2.a.k",
-              "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: A-32 targets: 9; A-17 or TQ-1 targets: 7; A-36 targets: 5."
+              "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: A-32 targets: 9; A-17 or TQ-1 targets: 7; A-36 targets: 5. Note: Other suitable NRA targets may be used based on availability."
             }
           ],
           "subrequirement_mode": {
@@ -156,7 +157,7 @@
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Option B—Air Rifle Shooting (BB or Pellet). Do the following:",
+          "text": "Option B—Air Rifle Shooting (BB or Pellet). Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -207,7 +208,7 @@
             {
               "req_id": "j",
               "path": "2.b.j",
-              "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed air rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: BB rifle at 15 feet (or 5 meters) using TQ-5 targets: 8; Pellet rifle at 25 feet using TQ-5 targets: 8; Pellet rifle at 33 feet (or 10 meters) using AR-1 targets: 6."
+              "text": "Adjust sights to center the group on the target and fire five groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed air rifle—you may explain (rather than doing) how to adjust the sights, and then fire five groups (five shots per group) in which all shots can be touched by a quarter. According to the target used, each shot in the group must meet the following minimum score: BB rifle at 15 feet (or 5 meters) using TQ-5 targets: 8; Pellet rifle at 25 feet using TQ-5 targets: 8; Pellet rifle at 33 feet (or 10 meters) using AR-1 targets: 6. Note: Other suitable NRA targets may be used based on availability."
             }
           ],
           "subrequirement_mode": {
@@ -217,7 +218,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "Option C—Muzzleloading Rifle Shooting. Do the following:",
+          "text": "Option C—Muzzleloading Rifle Shooting. Do ALL of the following:",
           "is_option": true,
           "subrequirements": [
             {
@@ -288,7 +289,7 @@
             {
               "req_id": "n",
               "path": "2.c.n",
-              "text": "Adjust the sights to center the group on the target and fire three groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed muzzleloading rifle—you may explain (rather than doing) how to adjust the sights, and then fire three groups (five shots per group) in which all shots can be covered by the base of a standard-size soft drink can. According to the target used, each shot in the group must meet the following minimum score: at 25 yards using NRA A-23 or NMLRA 50-yard targets: 7; at 50 yards using NRA A-25 or NMLRA 100-yard targets: 7."
+              "text": "Adjust the sights to center the group on the target and fire three groups (five shots per group). In the event that your instructor determines it is not practical to adjust the sights—for instance, on a borrowed muzzleloading rifle—you may explain (rather than doing) how to adjust the sights, and then fire three groups (five shots per group) in which all shots can be covered by the base of a standard-size soft drink can. According to the target used, each shot in the group must meet the following minimum score: at 25 yards using NRA A-23 or NMLRA 50-yard targets: 7; at 50 yards using NRA A-25 or NMLRA 100-yard targets: 7. Note: Other suitable NRA targets may be used based on availability."
             }
           ],
           "subrequirement_mode": {
@@ -306,6 +307,5 @@
       "path": "3",
       "text": "Identify how you could apply the skills and knowledge of safe and responsible use of firearms you learned in this merit badge to pursue a career or personal hobby. Research the additional training and experience you would need, expenses you may incur, and the affiliation with organizations that could help you maximize the positive impact and enjoyment you gain from it. Discuss what you learned with your counselor, and share what short-term and long-term goals you might have if you pursued this."
     }
-  ],
-  "category": "Sports"
+  ]
 }

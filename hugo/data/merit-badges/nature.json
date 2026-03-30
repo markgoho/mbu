@@ -4,8 +4,9 @@
   "slug": "nature",
   "url": "https://www.scouting.org/merit-badges/nature/",
   "eagle_required": false,
+  "category": "Natural Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Nature.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -30,6 +31,14 @@
         {
           "title": "How Do Animals Help Plants? (4 Symbiotic Interactions) (website)",
           "url": "https://nature-mentor.com/how-do-animals-help-plants/"
+        },
+        {
+          "title": "Why Animals Need Plants (video)",
+          "url": "https://www.pbs.org/video/why-animals-need-plants-y469zr"
+        },
+        {
+          "title": "11 Plants That Use Animals to Do Their Dirty Work (website)",
+          "url": "https://completegardening.com/11-plants-that-use-animals-to-do-their-dirty-work/"
         }
       ]
     },
@@ -45,6 +54,10 @@
         {
           "title": "Food Chains in the Everglades (video)",
           "url": "https://youtu.be/5Z8rKhXUYAg?si=CG1gOoYQ6n9s86LY"
+        },
+        {
+          "title": "How Do Animals Help Plants? (4 Symbiotic Interactions) (website)",
+          "url": "https://nature-mentor.com/how-do-animals-help-plants/"
         }
       ]
     },
@@ -56,7 +69,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Birds",
+          "text": "Birds. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -100,7 +113,7 @@
         {
           "req_id": "b",
           "path": "4.b",
-          "text": "Mammals",
+          "text": "Mammals. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -140,7 +153,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Reptiles and Amphibians",
+          "text": "Reptiles and Amphibians. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -195,7 +208,7 @@
         {
           "req_id": "d",
           "path": "4.d",
-          "text": "Insects and Spiders",
+          "text": "Insects and Spiders. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -235,7 +248,7 @@
         {
           "req_id": "e",
           "path": "4.e",
-          "text": "Fish",
+          "text": "Fish. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -267,7 +280,7 @@
         {
           "req_id": "f",
           "path": "4.f",
-          "text": "Mollusks and Crustaceans",
+          "text": "Mollusks and Crustaceans. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -307,7 +320,7 @@
         {
           "req_id": "g",
           "path": "4.g",
-          "text": "Plants",
+          "text": "Plants. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -369,7 +382,7 @@
         {
           "req_id": "h",
           "path": "4.h",
-          "text": "Soils and Rocks",
+          "text": "Soils and Rocks. Do ALL of the following:",
           "subrequirements": [
             {
               "req_id": "1",
@@ -406,7 +419,17 @@
       "subrequirement_mode": {
         "type": "select",
         "count": 5
-      }
+      },
+      "resources": [
+        {
+          "title": "Food Chains and Food Webs (video)",
+          "url": "https://youtu.be/JCl_yDf0Qok?si=E9r3jI_7n8iYE1Rb"
+        },
+        {
+          "title": "Food Chains in the Everglades (video)",
+          "url": "https://youtu.be/5Z8rKhXUYAg?si=CG1gOoYQ6n9s86LY"
+        }
+      ]
     },
     {
       "req_id": "5",
@@ -461,7 +484,21 @@
       ],
       "subrequirement_mode": {
         "type": "all"
-      }
+      },
+      "resources": [
+        {
+          "title": "The Outdoor Code Explained (video)",
+          "url": "https://www.youtube.com/watch?v=XoOSgw6sOPA"
+        },
+        {
+          "title": "What is Leave No Trace? (video)",
+          "url": "https://www.youtube.com/watch?v=Rpq01rO9ZR0"
+        },
+        {
+          "title": "Leave No Trace Basics (video)",
+          "url": "https://vimeo.com/1115216743/63b20c0b33?share=copy"
+        }
+      ]
     },
     {
       "req_id": "7",
@@ -484,6 +521,14 @@
             {
               "title": "10+ Outdoor & Nature Job Ideas With NO Degree! (video)",
               "url": "https://youtu.be/Q-3KseGxoOw?si=qn8G2GE_wnzwTI6B"
+            },
+            {
+              "title": "Ecological Succession (video)",
+              "url": "https://www.youtube.com/watch?v=IrIvMt6HWlA"
+            },
+            {
+              "title": "Ecological Succession: Change Is Good (video)",
+              "url": "https://www.youtube.com/watch?v=jZKIHe2LDP8"
             }
           ]
         },
@@ -499,6 +544,10 @@
             {
               "title": "15 Hobbies for Animal and Nature Lovers (website)",
               "url": "https://wildlifeinformer.com/hobbies-for-animal-and-nature-lovers/"
+            },
+            {
+              "title": "Ecological Succession-Primary and Secondary (video)",
+              "url": "https://youtu.be/8ceDE01iWLE?si=kzFlf4WEsd2ArppS"
             }
           ]
         }
@@ -508,6 +557,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Natural Science"
+  ]
 }

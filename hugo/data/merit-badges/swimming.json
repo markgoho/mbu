@@ -4,8 +4,10 @@
   "slug": "swimming",
   "url": "https://www.scouting.org/merit-badges/swimming/",
   "eagle_required": true,
+  "category": "Sports",
+  "eagle_group": "fitness",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Swimming.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -110,7 +112,7 @@
         {
           "req_id": "c",
           "path": "6.c",
-          "text": "While wearing a properly fitted U. S. Coast Guard-approved life jacket, demonstrate the HELP and huddle positions. Explain their purposes."
+          "text": "While wearing a properly fitted U.S. Coast Guard-approved life jacket, demonstrate the HELP and huddle positions. Explain their purposes."
         },
         {
           "req_id": "d",
@@ -157,7 +159,5 @@
       "path": "9",
       "text": "Explain the health benefits of regular aerobic exercise, and discuss why swimming is favored as both fitness and therapeutic exercise."
     }
-  ],
-  "eagle_group": "fitness",
-  "category": "Sports"
+  ]
 }

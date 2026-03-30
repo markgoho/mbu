@@ -4,8 +4,9 @@
   "slug": "scuba-diving",
   "url": "https://www.scouting.org/merit-badges/scuba-diving/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scuba%20Diving.pdf",
-  "last_updated": "2026-01-08",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -30,7 +31,7 @@
     {
       "req_id": "2",
       "path": "2",
-      "text": "Before completing requirements 3 through 6, earn the [Swimming merit badge](/merit-badges/swimming/)."
+      "text": "Before completing requirements 3 through 6, earn the Swimming merit badge."
     },
     {
       "req_id": "3",
@@ -52,6 +53,5 @@
       "path": "6",
       "text": "Find out about three career opportunities in the scuba industry. Pick one and find out the education, training, and experience required for this profession. Discuss this with your counselor, and explain why this profession might interest you."
     }
-  ],
-  "category": "Sports"
+  ]
 }

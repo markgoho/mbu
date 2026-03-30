@@ -4,8 +4,9 @@
   "slug": "search-and-rescue",
   "url": "https://www.scouting.org/merit-badges/search-and-rescue/",
   "eagle_required": false,
+  "category": "Public Service",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Search%20and%20Rescue.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -80,7 +81,7 @@
             {
               "req_id": "13",
               "path": "1.a.13",
-              "text": "Bite of a venomous snake."
+              "text": "Bite of a venomous snake"
             }
           ],
           "subrequirement_mode": {
@@ -90,7 +91,7 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain how the Scout Essentials address hazards outdoors and help lost Scouts stay safe before they are rescued."
+          "text": "Explain how the Scout Basic Essentials address hazards outdoors and help lost Scouts stay safe before they are rescued."
         },
         {
           "req_id": "c",
@@ -300,7 +301,7 @@
             {
               "req_id": "12",
               "path": "6.e.12",
-              "text": "Grid search."
+              "text": "Grid search"
             }
           ],
           "subrequirement_mode": {
@@ -309,7 +310,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 4
       }
     },
     {
@@ -330,7 +332,7 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Before the search begins, conduct a PAUSE briefing to review hazards, safety concerns, personal and shared Scout Essentials, and other gear."
+          "text": "Before the search begins, conduct a PAUSE briefing to review hazards, safety concerns, personal and shared Scout Basic Essentials, and other gear."
         },
         {
           "req_id": "d",
@@ -368,6 +370,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Public Service"
+  ]
 }

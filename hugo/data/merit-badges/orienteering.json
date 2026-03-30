@@ -4,8 +4,9 @@
   "slug": "orienteering",
   "url": "https://www.scouting.org/merit-badges/orienteering/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Orienteering.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -97,7 +98,7 @@
         {
           "req_id": "c",
           "path": "4.c",
-          "text": "Explain the meaning of declination. Tell why you must consider declination when using map and compass together.",
+          "text": "Explain the meaning of declination . Tell why you must consider declination when using map and compass together.",
           "resources": [
             {
               "title": "Magnetic Declination (video)",
@@ -236,6 +237,5 @@
       "path": "10",
       "text": "Teach orienteering techniques to your patrol, troop or crew."
     }
-  ],
-  "category": "Sports"
+  ]
 }

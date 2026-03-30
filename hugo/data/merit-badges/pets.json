@@ -4,8 +4,9 @@
   "slug": "pets",
   "url": "https://www.scouting.org/merit-badges/pets/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Pets.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -66,6 +67,10 @@
             {
               "title": "How I Trained My Cat to Fetch (video)",
               "url": "https://www.youtube.com/watch?v=zrDskEObBs8"
+            },
+            {
+              "title": "Easiest Way to Teach Your Dog to Roll Over (video)",
+              "url": "https://www.youtube.com/watch?v=IsJ0VdeOJcg "
             }
           ]
         }
@@ -96,6 +101,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

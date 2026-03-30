@@ -4,8 +4,9 @@
   "slug": "wilderness-survival",
   "url": "https://www.scouting.org/merit-badges/wilderness-survival/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Wilderness%20Survival.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -188,7 +189,7 @@
             {
               "req_id": "13",
               "path": "1.a.13",
-              "text": "Bite of a venomous snake.",
+              "text": "Bite of a venomous snake",
               "resources": [
                 {
                   "title": "Venomous Snake Bites (website)",
@@ -204,10 +205,10 @@
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain how the Scout Essentials address hazards of survival situations and are basic to a survival kit.",
+          "text": "Explain how the Scout Basic Essentials address hazards of survival situations and are basic to a survival kit.",
           "resources": [
             {
-              "title": "Scout Essentials (website)",
+              "title": "The 10 Scout Basic Outdoor Essentials (website)",
               "url": "https://scoutlife.org/outdoors/outdoorarticles/6976/scout-outdoor-essentials-checklist/"
             },
             {
@@ -272,11 +273,11 @@
           "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Wilderness%20Survival/Personal%20Family%20Troop%20First%20Aid%20Kit%20Checklist.pdf"
         },
         {
-          "title": "First Aid KIt Checklists (website)",
+          "title": "First Aid Kit Checklists (website)",
           "url": "https://scoutlife.org/video-audio/4937/first-aid-kit-buying-guide/"
         },
         {
-          "title": "Scout Essentials for Wilderness Survival (website)",
+          "title": "Scout Basic Essentials for Wilderness Survival (website)",
           "url": "https://troopleader.scouting.org/program-features/wilderness-survival/information/"
         },
         {
@@ -320,7 +321,7 @@
                   "url": "https://youtu.be/MmHkiHeoI3U?si=Q306ujTfQ3V2QHP4"
                 },
                 {
-                  "title": "16 Hours in a Bivi Bag in Wind & Rain (video)",
+                  "title": "Staying Warm and Dry in Wind and Rain (video)",
                   "url": "https://youtu.be/t9NLAIxlWgE?si=prPrtr-kxSBLOsOH"
                 },
                 {
@@ -358,7 +359,7 @@
             {
               "req_id": "5",
               "path": "5.a.5",
-              "text": "At or on the water.",
+              "text": "At or on the water",
               "resources": [
                 {
                   "title": "What to do if Your Boat Capsizes (website)",
@@ -454,7 +455,7 @@
               "url": "https://youtu.be/X8j5NC7Bqq4"
             },
             {
-              "title": "Surface to Air Visual and Body Signals (PDF)",
+              "title": "Surface to Air Visual and Body Signals (website)",
               "url": "http://www.cap-es.net/zips/gnd2airsignals.PDF"
             },
             {
@@ -477,7 +478,7 @@
         {
           "req_id": "c",
           "path": "7.c",
-          "text": "Describe from memory five ground-to-air signals and tell what they mean."
+          "text": "Describe from memory five ground-to- air signals and tell what they mean."
         }
       ],
       "subrequirement_mode": {
@@ -541,6 +542,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

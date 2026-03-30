@@ -4,8 +4,9 @@
   "slug": "robotics",
   "url": "https://www.scouting.org/merit-badges/robotics/",
   "eagle_required": false,
+  "category": "Physical Science",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Robotics.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -144,6 +145,10 @@
                 {
                   "title": "VEXcode VR (website)",
                   "url": "https://www.vexrobotics.com/vexcode/vr?srsltid=AfmBOopvcCE5uFUVB__bxV0UiLP20ZZQwq0WrNHHJWuIQUDXmLAwl8UL%5C"
+                },
+                {
+                  "title": "VEXcode VR (website)",
+                  "url": "https://www.vexrobotics.com/vexcode/vr?srsltid=AfmBOopvcCE5uFUVB__bxV0UiLP20ZZQwq0WrNHHJWuIQUDXmLAwl8UL\\"
                 }
               ]
             },
@@ -252,7 +257,25 @@
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Identify how you might use the skills and knowledge in Robotics to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this."
+          "text": "Identify how you might use the skills and knowledge in robotics to pursue a personal hobby. Research the additional training required, expenses, and affiliation with organizations that would help you maximize the enjoyment and benefit you might gain from it. Discuss what you learned with your counselor and share what short-term and long-term goals you might have if you pursued this.",
+          "resources": [
+            {
+              "title": "How to Make Anything - Learn to Think Like an Engineer (video)",
+              "url": "https://www.youtube.com/watch?v=IIwTCyu2wS4"
+            },
+            {
+              "title": "Why Try Computer Quilting ? (video)",
+              "url": "https://youtu.be/Z_ftO9LanyI?si=p7e9HkOE8mGD2RpS"
+            },
+            {
+              "title": "How I Built a Difference | My Engineering Journey (video)",
+              "url": "https://youtu.be/PCQHSzoPoO8"
+            },
+            {
+              "title": "Tertill Weeding Robot Overview Video (video)",
+              "url": "https://youtu.be/wAMXnxXa3UU?si=U8BNl3na8OfxNTWd"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -260,6 +283,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Physical Science"
+  ]
 }

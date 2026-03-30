@@ -4,6 +4,7 @@
   "slug": "reading",
   "url": "https://www.scouting.org/merit-badges/reading/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Reading.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -255,6 +256,5 @@
       "path": "7",
       "text": "Identify three career opportunities that would use skills and knowledge in reading. Pick one and research the training, education, certification requirements, experience, and expenses associated with entering the field. Research the prospects for employment, starting salary, advancement opportunities and career goals associated with this career. Discuss what you learned with your counselor and whether you might be interested in this career."
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

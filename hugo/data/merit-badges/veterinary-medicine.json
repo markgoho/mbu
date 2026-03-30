@@ -4,8 +4,9 @@
   "slug": "veterinary-medicine",
   "url": "https://www.scouting.org/merit-badges/veterinary-medicine/",
   "eagle_required": false,
+  "category": "Professions",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Veterinary%20Medicine.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -40,7 +41,7 @@
         {
           "req_id": "f",
           "path": "1.f",
-          "text": "Wildlife medicine and aquaculture medicine."
+          "text": "Wildlife medicine and aquaculture medicine"
         }
       ],
       "subrequirement_mode": {
@@ -75,7 +76,7 @@
         {
           "req_id": "e",
           "path": "2.e",
-          "text": "Teaching and government."
+          "text": "Teaching and government"
         }
       ],
       "subrequirement_mode": {
@@ -90,7 +91,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Tell your counselor what a registered veterinary technician (R. T. V.) or animal health technician (A. H. T.) is. Describe the training required to become an R. V. T. or A. H. T. Where is the school or facility for R. V. T. or A. H. T training in your state or nearest to you? Describe the role an R. V. T. or A. H. T. would play in assisting a veterinarian working in three of the practice types listed in requirement 1."
+      "text": "Tell your counselor what a registered veterinary technician (R.V.T.) or animal health technician (A.H.T.) is. Describe the training required to become an R.V.T. or A.H.T. Where is the school or facility for R.V.T. or A.H.T training in your state or nearest to you? Describe the role an R.V.T. or A.H.T. would play in assisting a veterinarian working in three of the practice types listed in requirement 1."
     },
     {
       "req_id": "5",
@@ -150,9 +151,9 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 1
       }
     }
-  ],
-  "category": "Professions"
+  ]
 }

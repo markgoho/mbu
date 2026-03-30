@@ -4,8 +4,10 @@
   "slug": "sustainability",
   "url": "https://www.scouting.org/merit-badges/sustainability/",
   "eagle_required": true,
+  "category": "Conservation",
+  "eagle_group": "environment",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Sustainability.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -92,16 +94,6 @@
       "req_id": "3",
       "path": "3",
       "text": "Food. Do ONE of the following and discuss with your counselor:",
-      "resources": [
-        {
-          "title": "Matter and Energy in Food Webs (video)",
-          "url": "https://youtu.be/qIgL05zOx5U?si=T5n5awJMxxmXV0Hw"
-        },
-        {
-          "title": "Food and Energy in Organisms (video)",
-          "url": "https://youtu.be/wPhjCn9kq5M?si=Bo_JNmkBG0G63dyi"
-        }
-      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -156,7 +148,17 @@
       "subrequirement_mode": {
         "type": "select",
         "count": 1
-      }
+      },
+      "resources": [
+        {
+          "title": "Matter and Energy in Food Webs (video)",
+          "url": "https://youtu.be/qIgL05zOx5U?si=T5n5awJMxxmXV0Hw"
+        },
+        {
+          "title": "Food and Energy in Organisms (video)",
+          "url": "https://youtu.be/wPhjCn9kq5M?si=Bo_JNmkBG0G63dyi"
+        }
+      ]
     },
     {
       "req_id": "4",
@@ -481,6 +483,10 @@
             {
               "title": "Leave No Trace - and There's a Song! (video)",
               "url": "https://www.youtube.com/watch?v=6_jz421duVg%20"
+            },
+            {
+              "title": "Leave No Trace - and There's a Song! (video)",
+              "url": "https://www.youtube.com/watch?v=6_jz421duVg "
             }
           ]
         },
@@ -523,7 +529,5 @@
         }
       ]
     }
-  ],
-  "eagle_group": "environment",
-  "category": "Conservation"
+  ]
 }

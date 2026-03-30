@@ -4,8 +4,9 @@
   "slug": "railroading",
   "url": "https://www.scouting.org/merit-badges/railroading/",
   "eagle_required": false,
+  "category": "Transportation",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Railroading.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -97,7 +98,7 @@
         {
           "req_id": "a",
           "path": "4.a",
-          "text": "Explain the purpose of Operation Lifesaver and its mission"
+          "text": "Explain the purpose of Operation Lifesaver and its mission."
         },
         {
           "req_id": "b",
@@ -117,7 +118,7 @@
         {
           "req_id": "e",
           "path": "4.e",
-          "text": "Explain safety precautions when using a light rail or commuter train"
+          "text": "Explain safety precautions when using a light rail or commuter train."
         }
       ],
       "subrequirement_mode": {
@@ -132,7 +133,7 @@
         {
           "req_id": "a",
           "path": "5.a",
-          "text": "Passive signs and active signs."
+          "text": "Passive signs and active signs"
         },
         {
           "req_id": "b",
@@ -157,7 +158,7 @@
         {
           "req_id": "f",
           "path": "5.f",
-          "text": "Signs at the crossing (crossbuck sign, emergency notification system sign, multiple track sign, stop sign, and yield sign)."
+          "text": "Signs at the crossing (crossbuck sign, emergency notification system sign, multiple track sign, stop sign, and yield sign)"
         }
       ],
       "subrequirement_mode": {
@@ -203,6 +204,7 @@
           "req_id": "a",
           "path": "7.a",
           "text": "Option A—Model Railroading. With your parent or guardian's and counselor's approval, do TWO of the following:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
@@ -254,6 +256,7 @@
           "req_id": "b",
           "path": "7.b",
           "text": "Option B—Railfanning. With your parent or guardian's and counselor's approval, do TWO of the following:",
+          "is_option": true,
           "subrequirements": [
             {
               "req_id": "1",
@@ -287,6 +290,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Transportation"
+  ]
 }

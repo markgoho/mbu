@@ -4,8 +4,9 @@
   "slug": "traffic-safety",
   "url": "https://www.scouting.org/merit-badges/traffic-safety/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Traffic%20Safety.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -273,7 +274,8 @@
         }
       ],
       "subrequirement_mode": {
-        "type": "all"
+        "type": "select",
+        "count": 1
       }
     },
     {
@@ -409,6 +411,5 @@
         }
       ]
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

@@ -4,6 +4,7 @@
   "slug": "public-health",
   "url": "https://www.scouting.org/merit-badges/public-health/",
   "eagle_required": false,
+  "category": "Public Service",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Public%20Health.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -224,6 +225,5 @@
       "path": "8",
       "text": "Pick a profession in the public health sector that interests you. Find out the education, training, and experience required to work in this profession. Discuss what you learn with your counselor."
     }
-  ],
-  "category": "Public Service"
+  ]
 }

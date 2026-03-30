@@ -4,8 +4,9 @@
   "slug": "scouting-heritage",
   "url": "https://www.scouting.org/merit-badges/scouting-heritage/",
   "eagle_required": false,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Scouting%20Heritage.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -119,7 +120,7 @@
             {
               "req_id": "9",
               "path": "2.a.9",
-              "text": "Edgar Robinson.",
+              "text": "Edgar Robinson",
               "resources": [
                 {
                   "title": "Edgar Robinson (video)",
@@ -182,7 +183,7 @@
             {
               "req_id": "4",
               "path": "2.b.4",
-              "text": "Scout Life magazine (formerly Boys' Life).",
+              "text": "Scout Life magazine (formerly Boys' Life )",
               "resources": [
                 {
                   "title": "Artifact of the Week - Boys' Life to Scout Life (video)",
@@ -229,6 +230,10 @@
         {
           "title": "20 Facts About Venturing (website)",
           "url": "https://blog.scoutingmagazine.org/2018/02/09/20-facts-about-venturing-on-the-programs-20th-birthday/"
+        },
+        {
+          "title": "Legacy Video Scouting History Timeline (video)",
+          "url": "https://youtu.be/KavSY2fFb-4?si=BmKsD_8QHVTJ-pGd"
         }
       ]
     },
@@ -355,6 +360,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

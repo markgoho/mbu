@@ -4,6 +4,7 @@
   "slug": "woodwork",
   "url": "https://www.scouting.org/merit-badges/woodwork/",
   "eagle_required": false,
+  "category": "Professions",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Woodwork.pdf",
   "last_updated": "2026-02-26",
   "requirements": [
@@ -215,6 +216,5 @@
         }
       ]
     }
-  ],
-  "category": "Professions"
+  ]
 }

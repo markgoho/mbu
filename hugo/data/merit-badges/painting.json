@@ -4,6 +4,7 @@
   "slug": "painting",
   "url": "https://www.scouting.org/merit-badges/painting/",
   "eagle_required": false,
+  "category": "Trades",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Painting.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -186,6 +187,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Trades"
+  ]
 }

@@ -4,8 +4,9 @@
   "slug": "sports",
   "url": "https://www.scouting.org/merit-badges/sports/",
   "eagle_required": false,
+  "category": "Sports",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Sports.pdf",
-  "last_updated": "2025-12-24",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -45,7 +46,7 @@
         {
           "req_id": "c",
           "path": "2.c",
-          "text": "The importance of maintaining a healthy diet."
+          "text": "The importance of maintaining a healthy diet"
         }
       ],
       "subrequirement_mode": {
@@ -75,7 +76,7 @@
         {
           "req_id": "d",
           "path": "3.d",
-          "text": "The attributes (qualities) of a good sport, the importance of sportsmanship, and the traits of a good team leader and player who exhibits Scout spirit on and off the playing field."
+          "text": "The attributes (qualities) of a good sport, the importance of sportsmanship, and the traits of a good team leader and player who exhibits Scout spirit on and off the playing field"
         }
       ],
       "subrequirement_mode": {
@@ -158,6 +159,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Sports"
+  ]
 }

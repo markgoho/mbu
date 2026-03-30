@@ -4,6 +4,7 @@
   "slug": "music",
   "url": "https://www.scouting.org/merit-badges/music/",
   "eagle_required": false,
+  "category": "Arts and Crafts",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Music%20Bugling.pdf",
   "last_updated": "2026-01-10",
   "requirements": [
@@ -142,6 +143,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Arts and Crafts"
+  ]
 }

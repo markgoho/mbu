@@ -4,8 +4,9 @@
   "slug": "signs-signals-and-codes",
   "url": "https://www.scouting.org/merit-badges/signs-signals-and-codes/",
   "eagle_required": false,
+  "category": "Communications",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Signs%20Signals%20Codes.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -150,7 +151,7 @@
         {
           "req_id": "e",
           "path": "8.e",
-          "text": "An activity selected by you and your counselor."
+          "text": "An activity selected by you and your counselor"
         }
       ],
       "subrequirement_mode": {
@@ -188,6 +189,5 @@
       "path": "10",
       "text": "Briefly discuss the history of secret code writing (cryptography). Make up your own secret code and write a message of up to 25 words using this code. Share the message with a friend or fellow Scout. Then share the message and code key with your counselor and discuss the effectiveness of your code."
     }
-  ],
-  "category": "Communications"
+  ]
 }

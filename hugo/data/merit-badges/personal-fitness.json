@@ -4,8 +4,9 @@
   "slug": "personal-fitness",
   "url": "https://www.scouting.org/merit-badges/personal-fitness/",
   "eagle_required": true,
+  "category": "Personal Development",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Personal%20Fitness.pdf",
-  "last_updated": "2026-01-10",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -31,6 +32,10 @@
             {
               "title": "Being Mentally, Emotionally, and Socially Fit (video)",
               "url": "https://www.pbs.org/video/wellness-mind-frame-7um7lc/%20"
+            },
+            {
+              "title": "Being Mentally, Emotionally, and Socially Fit (video)",
+              "url": "https://www.pbs.org/video/wellness-mind-frame-7um7lc/ "
             }
           ]
         },
@@ -169,6 +174,10 @@
             {
               "title": "Your Body Composition (video)",
               "url": "https://youtu.be/Yk3UkkJk474?si=MIO8KBdqsszMGPRo"
+            },
+            {
+              "title": "Body Mass Index (BMI) Calculator (website)",
+              "url": "https://www.cdc.gov/bmi/child-teen-calculator/index.html "
             }
           ]
         },
@@ -397,11 +406,15 @@
         {
           "req_id": "f",
           "path": "6.f",
-          "text": "A plan for achieving your two improvement goals related to diet and nutrition.",
+          "text": "A plan for achieving your two improvement goals related to diet and nutrition",
           "resources": [
             {
               "title": "The MyPlate Quiz (website)",
               "url": "https://www.myplate.gov/form/myplate-quiz#question_1%20"
+            },
+            {
+              "title": "The MyPlate Quiz (website)",
+              "url": "https://www.myplate.gov/form/myplate-quiz#question_1 "
             }
           ]
         }
@@ -487,6 +500,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Personal Development"
+  ]
 }

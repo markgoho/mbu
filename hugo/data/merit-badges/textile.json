@@ -4,8 +4,9 @@
   "slug": "textile",
   "url": "https://www.scouting.org/merit-badges/textile/",
   "eagle_required": false,
+  "category": "Business and Industry",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Textile.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -169,7 +170,7 @@
     {
       "req_id": "4",
       "path": "4",
-      "text": "Explain the meaning of 10 of the following terms: warp, harness, heddle, shed, aramid, spandex, sliver, yarn, spindle, distaff, loom, cellulose, sericulture, extrusion, carbon fibers, spinneret, staple, worsted, nonwoven, greige goods.",
+      "text": "Explain the meaning of 10 of the following terms: warp, harness, heddle, shed, aramid, spandex, sliver, yarn, spindle, distaff, loom, cellulose, sericulture, extrusion, carbon fibers, spinneret, staple, worsted, nonwoven, and greige goods.",
       "resources": [
         {
           "title": "Loom and Weaving Terminology (video)",
@@ -211,6 +212,5 @@
         }
       ]
     }
-  ],
-  "category": "Business and Industry"
+  ]
 }

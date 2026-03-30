@@ -4,8 +4,9 @@
   "slug": "pioneering",
   "url": "https://www.scouting.org/merit-badges/pioneering/",
   "eagle_required": false,
+  "category": "Hobbies",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Pioneering.pdf",
-  "last_updated": "2025-12-25",
+  "last_updated": "2026-03-30",
   "requirements": [
     {
       "req_id": "1",
@@ -64,6 +65,10 @@
             {
               "title": "How to Tie a Sailmaker's Whipping (video)",
               "url": "https://youtu.be/bzTduzweDdE?si=UByC4CSpmRy9G3FI"
+            },
+            {
+              "title": "Safe Pioneering (video)",
+              "url": "https://youtu.be/hWDLLkUPFCI?si=8JSQve7lVV65fKp9"
             }
           ]
         },
@@ -95,6 +100,18 @@
             {
               "title": "How to Tie a Rolling Hitch (video)",
               "url": "https://youtu.be/O0vGxZ5KQ-s?si=Jim_m6GbDLg30g1l"
+            },
+            {
+              "title": "Pioneering Safety Checklist (PDF)",
+              "url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Requirement%20Resources/Pioneering/Pioneering_Safety_Checklist.pdf"
+            },
+            {
+              "title": "Sunburn (video)",
+              "url": "https://www.youtube.com/watch?v=DCNUwuNTtGg"
+            },
+            {
+              "title": "First Aid for Rope Burns (website)",
+              "url": "https://www.firstaidforfree.com/first-aid-for-rope-burn/"
             }
           ]
         },
@@ -147,6 +164,14 @@
             {
               "title": "Tripod Hand Wash Station: The Ideal First Class Camp Gadget! (video)",
               "url": "https://youtu.be/bImsiFVwhpQ?si=DU03rbOjtb5vL3nJ"
+            },
+            {
+              "title": "How to Tie a Half Knot (West Country) Whipping (video)",
+              "url": "https://youtu.be/gU3LJ-QD_-s?si=0smdbUSo_20udYq3"
+            },
+            {
+              "title": "How to Tie a Sailmaker's Whipping (video)",
+              "url": "https://youtu.be/bzTduzweDdE?si=UByC4CSpmRy9G3FI"
             }
           ]
         },
@@ -158,6 +183,30 @@
             {
               "title": "Patrol Challenge - 15 Foot Scout Stave Flagpole (video)",
               "url": "https://youtu.be/M2sEwJr_NX0?si=D_CDFf4ROU_-4-AS"
+            },
+            {
+              "title": "How to Tie a Rope Tackle (video)",
+              "url": "https://youtu.be/fZC2iXF0V3g?si=Nl9Z-88jPw1wTzlq"
+            },
+            {
+              "title": "How to Tie and Apply a Clove Hitch and Half Hitches (video)",
+              "url": "https://youtu.be/LFH1L3lfciA?si=RhEQn4lo1Oc7fpwU"
+            },
+            {
+              "title": "How to Tie a Clove Hitch on a Bight (video)",
+              "url": "https://youtu.be/IXsXjB0gWqw?si=IVQv_b3mkhjb8lWo"
+            },
+            {
+              "title": "How to Tie a Butterfly Knot (video)",
+              "url": "https://youtu.be/q0KPxnj3Rck?si=LYZ3LFkgbb86EINV"
+            },
+            {
+              "title": "How to Tie a Roundturn with Two Half Hitches (video)",
+              "url": "https://youtu.be/90MJxoRu9Fg?si=H_r3J8zOUTSwyVZ8"
+            },
+            {
+              "title": "How to Tie a Rolling Hitch (video)",
+              "url": "https://youtu.be/O0vGxZ5KQ-s?si=Jim_m6GbDLg30g1l"
             }
           ]
         },
@@ -169,6 +218,30 @@
             {
               "title": "Simple Camp Table (video)",
               "url": "https://youtu.be/MjlZez7vGDQ?si=bfk_4HLElA_WuApo"
+            },
+            {
+              "title": "How to Tie the Mark II Square Lashing (video)",
+              "url": "https://youtu.be/ll5BC7SohnE?si=dmcZo8pVawLfULQx"
+            },
+            {
+              "title": "How to Tie a Diagonal Lashing (video)",
+              "url": "https://youtu.be/F-RRn9ccf34?si=18PZENVSjSti0Css"
+            },
+            {
+              "title": "How to Tie a Round Lashing (video)",
+              "url": "https://youtu.be/tDGSiQhmwBs?si=j_7GZgMV4xdTinXY"
+            },
+            {
+              "title": "How to Tie a Shear Lashing (video)",
+              "url": "https://youtu.be/ZleaU84exEw?si=u1In--D192D2eIFE"
+            },
+            {
+              "title": "How to Tie a Tripod Lashing (with Plain Turns) (video)",
+              "url": "https://youtu.be/DB1g69AaMy8?si=qOpo7B_b-CjAFuQO"
+            },
+            {
+              "title": "How to Tie a Floor Lashing (video)",
+              "url": "https://youtu.be/aS8mPYPGJGI?si=Ud7walIeV2dsRYwa"
             }
           ]
         }
@@ -204,6 +277,10 @@
         {
           "title": "How to Create a Short Splice (video)",
           "url": "https://youtu.be/8HZbsRtxgw0?si=gQq1qdxcJrRcY2lQ"
+        },
+        {
+          "title": "How to Prepare and Preserve Lashing Ropes and Pioneering Spars (video)",
+          "url": "https://youtu.be/2GfbsP7G5YE?si=VuSeeyD_YzDOVzEO"
         }
       ]
     },
@@ -215,6 +292,18 @@
         {
           "title": "Making a Rope from Twine (video)",
           "url": "https://youtu.be/1yb5fqq4dxU?si=Zkl9MOFSFyIRwdwD"
+        },
+        {
+          "title": "How to Create a Back Splice (video)",
+          "url": "https://youtu.be/s65PbgZZSgE?si=OkKgfp8pSZRqQ3ts"
+        },
+        {
+          "title": "How to Create an Eye Splice (video)",
+          "url": "https://youtu.be/ZHffzAX3-tk?si=mIKK34hC692CWIrc"
+        },
+        {
+          "title": "How to Create a Short Splice (video)",
+          "url": "https://youtu.be/8HZbsRtxgw0?si=gQq1qdxcJrRcY2lQ"
         }
       ]
     },
@@ -226,6 +315,10 @@
         {
           "title": "Anchoring Pioneering Projects (video)",
           "url": "https://youtu.be/_z-GzDAjVZM?si=qyEvV1jFW0nCHHT8"
+        },
+        {
+          "title": "Making a Rope from Twine (video)",
+          "url": "https://youtu.be/1yb5fqq4dxU?si=Zkl9MOFSFyIRwdwD"
         }
       ]
     },
@@ -237,6 +330,10 @@
         {
           "title": "Making a Trestle (video)",
           "url": "https://youtu.be/YATmim1eIrQ?si=XFpV4wfQRaEE5l_6"
+        },
+        {
+          "title": "Anchoring Pioneering Projects (video)",
+          "url": "https://youtu.be/_z-GzDAjVZM?si=qyEvV1jFW0nCHHT8"
         }
       ]
     },
@@ -313,6 +410,5 @@
         "count": 1
       }
     }
-  ],
-  "category": "Hobbies"
+  ]
 }

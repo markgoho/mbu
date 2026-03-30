@@ -4,8 +4,9 @@
   "slug": "salesmanship",
   "url": "https://www.scouting.org/merit-badges/salesmanship/",
   "eagle_required": false,
+  "category": "Business and Industry",
   "pamphlet_url": "https://filestore.scouting.org/filestore/Merit_Badge_ReqandRes/Pamphlets/Salesmanship.pdf",
-  "last_updated": "2025-12-26",
+  "last_updated": "2026-03-29",
   "requirements": [
     {
       "req_id": "1",
@@ -15,12 +16,24 @@
         {
           "req_id": "a",
           "path": "1.a",
-          "text": "Explain the responsibilities of a salesperson and how a salesperson serves customers and helps stimulate the economy."
+          "text": "Explain the responsibilities of a salesperson and how a salesperson serves customers and helps stimulate the economy.",
+          "resources": [
+            {
+              "title": "Sales Representative Duties and Responsibilities (video)",
+              "url": "https://youtu.be/bpuVvUZnWxE"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "1.b",
-          "text": "Explain the differences between a business-to-business salesperson and a consumer salesperson."
+          "text": "Explain the differences between a business-to-business salesperson and a consumer salesperson.",
+          "resources": [
+            {
+              "title": "Understanding B2C vs B2B for Beginners (video)",
+              "url": "https://youtu.be/XEVR9zIbMiw"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -35,12 +48,24 @@
         {
           "req_id": "a",
           "path": "2.a",
-          "text": "Research the market to be sure the product or service meets the needs of customers."
+          "text": "Research the market to be sure the product or service meets the needs of customers.",
+          "resources": [
+            {
+              "title": "Market Research The Secret Ingredient for Business Success (video)",
+              "url": "https://youtu.be/CqaFYgRGDmo"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "2.b",
-          "text": "Learn all about the product to be sold."
+          "text": "Learn all about the product to be sold.",
+          "resources": [
+            {
+              "title": "3 Keys for Successful Selling Know Your Product (video)",
+              "url": "https://youtu.be/FDVR9MoQb44"
+            }
+          ]
         },
         {
           "req_id": "c",
@@ -50,7 +75,13 @@
         {
           "req_id": "d",
           "path": "2.d",
-          "text": "Follow up with customers after their purchase to confirm their satisfaction and discuss their concerns about the product."
+          "text": "Follow up with customers after their purchase to confirm their satisfaction and discuss their concerns about the product.",
+          "resources": [
+            {
+              "title": "Why Is Following Up Important (video)",
+              "url": "https://youtu.be/DMfH_03nR0o"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
@@ -60,12 +91,24 @@
     {
       "req_id": "3",
       "path": "3",
-      "text": "Write and present a sales plan for a product and a sales territory assigned by your counselor."
+      "text": "Write and present a sales plan for a product and a sales territory assigned by your counselor.",
+      "resources": [
+        {
+          "title": "How to Write Your Marketing Plan (video)",
+          "url": "https://youtu.be/pFG_Q7e14AA"
+        }
+      ]
     },
     {
       "req_id": "4",
       "path": "4",
-      "text": "Make a sales presentation of a product assigned by your counselor."
+      "text": "Make a sales presentation of a product assigned by your counselor.",
+      "resources": [
+        {
+          "title": "How to Give Effective Sales Presentations (video)",
+          "url": "https://youtu.be/8eo01Wlkd4o"
+        }
+      ]
     },
     {
       "req_id": "5",
@@ -97,6 +140,12 @@
       "req_id": "6",
       "path": "6",
       "text": "Do ONE of the following:",
+      "resources": [
+        {
+          "title": "How to Conduct an Interview (video)",
+          "url": "https://youtu.be/kO9WcdINoRk"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
@@ -141,7 +190,13 @@
             {
               "req_id": "2",
               "path": "6.b.2",
-              "text": "What good traits should a sales representative have? What habits should the sales representative avoid?"
+              "text": "What good traits should a sales representative have? What habits should the sales representative avoid?",
+              "resources": [
+                {
+                  "title": "Top 5 Traits of Great Sales People (video)",
+                  "url": "https://youtu.be/OjCnfTSrq1s"
+                }
+              ]
             },
             {
               "req_id": "3",
@@ -168,22 +223,39 @@
       "req_id": "7",
       "path": "7",
       "text": "Investigate and report on career opportunities in sales, then do the following:",
+      "resources": [
+        {
+          "title": "Is Sales the Perfect Career for YOU? Career Deep Dive (video)",
+          "url": "https://youtu.be/2iQ6clokEPo"
+        }
+      ],
       "subrequirements": [
         {
           "req_id": "a",
           "path": "7.a",
-          "text": "Prepare a written statement of your qualifications and experience. Include relevant classes you have taken in school and merit badges you have earned."
+          "text": "Prepare a written statement of your qualifications and experience. Include relevant classes you have taken in school and merit badges you have earned.",
+          "resources": [
+            {
+              "title": "Easy Guide to Writing a High School Student Resume (video)",
+              "url": "https://youtu.be/-z4v-Dw7n50"
+            }
+          ]
         },
         {
           "req_id": "b",
           "path": "7.b",
-          "text": "Discuss with your counselor what education, experience, or training you should obtain so you are prepared to serve in a sales position."
+          "text": "Discuss with your counselor what education, experience, or training you should obtain so you are prepared to serve in a sales position.",
+          "resources": [
+            {
+              "title": "How to become a Highly Paid Salesperson (video)",
+              "url": "https://youtu.be/frRl9nrntpM"
+            }
+          ]
         }
       ],
       "subrequirement_mode": {
         "type": "all"
       }
     }
-  ],
-  "category": "Business and Industry"
+  ]
 }
