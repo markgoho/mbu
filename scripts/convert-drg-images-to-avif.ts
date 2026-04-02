@@ -11,6 +11,25 @@ interface ImageFile {
   badge: string;
 }
 
+async function directoryExists(directoryPath: string): Promise<boolean> {
+  try {
+    const iterator = new Glob("*").scan({
+      cwd: directoryPath,
+      absolute: false,
+      onlyFiles: false,
+      dot: true,
+    });
+    await iterator.next();
+    return true;
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (message.includes("ENOENT") || message.includes("ENOTDIR")) {
+      return false;
+    }
+    throw error;
+  }
+}
+
 function parseArguments(): { badge?: string; force: boolean } {
   const arguments_ = process.argv.slice(2);
   const result: { badge?: string; force: boolean } = { force: false };
@@ -47,8 +66,8 @@ async function findDrgImages(badge?: string): Promise<ImageFile[]> {
 
   for (const slug of badgeSlugs) {
     const imagesDirectory = path.join(basePath, slug, "guide", "images");
-    const directoryExists = await Bun.file(imagesDirectory).exists();
-    if (!directoryExists) {
+    const hasImagesDirectory = await directoryExists(imagesDirectory);
+    if (!hasImagesDirectory) {
       if (badge !== undefined) {
         console.error(`No images directory found for badge: ${slug}`);
         process.exit(1);
