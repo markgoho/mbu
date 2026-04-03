@@ -1,0 +1,38 @@
+{
+  "badge": "pets",
+  "style_context": "Household pet care, animal housing, pet training, and safe preparation for pet activities",
+  "images": [
+    {
+      "id": "pet-care-log-example",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Clean educational weekly pet care log page on a clipboard with clearly separated rows for feeding, water, habitat cleaning, exercise, and health checks across seven days, a few boxes filled with short realistic entries and check marks, visual emphasis on repeated routine patterns, minimal horizontal labels only, no branding",
+      "value": "A filled weekly log layout shows how evidence of steady pet care should be organized over time, which is much clearer visually than prose alone"
+    },
+    {
+      "id": "pet-housing-needs-grid",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Four-panel educational comparison grid showing a dog resting area, a bird cage setup, a filtered aquarium, and a reptile terrarium, each panel highlighting one or two key housing features such as space, perch variety, filtration, basking light, clean bedding, and enrichment, very short horizontal labels only, no branding",
+      "value": "Side-by-side housing examples reveal how different species need different environments and equipment in ways a text list cannot visualize as quickly"
+    },
+    {
+      "id": "pet-show-prep-kit",
+      "file": "req4a.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Top-down organized pet show prep kit on a plain table with a carrier, collapsible water bowl, brush, towel, cleanup bags, treats, leash, and paperwork folder, each item separated cleanly with short horizontal labels, simple educational layout, no branding",
+      "value": "A labeled gear layout lets the reader instantly see what belongs in a pet-show prep kit and how the supplies fit together"
+    },
+    {
+      "id": "pet-training-shaping-steps",
+      "file": "req4b.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Four-panel instructional sequence of a pet dog learning roll over through shaping, showing panel 1 down position, panel 2 head turn toward a treat, panel 3 shoulder roll, and panel 4 full roll over with reward, simple arrows between panels, very short horizontal labels only, no branding",
+      "value": "Step-by-step progression makes shaping visible by showing how a finished trick is built from small rewarded actions, something text alone struggles to convey"
+    }
+  ]
+}
