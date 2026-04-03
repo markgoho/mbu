@@ -1,0 +1,70 @@
+{
+  "badge": "pioneering",
+  "style_context": "Rope lashings, camp structures, anchoring systems, trestles, bridges, towers, and practical outdoor building techniques",
+  "images": [
+    {
+      "id": "pioneering-hazard-zones",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean top-down educational diagram of a pioneering work site with a partially assembled camp structure, long spars laid out on the ground, tensioned ropes, anchor points, and safe walking lanes. Short horizontal labels identify spar fall zone, rope tension area, anchor area, tool zone, and clear travel path. No logos, no branding, minimal text.",
+      "value": "Shows the spatial layout of danger zones and safe movement paths around a pioneering site, which is hard to understand from text alone"
+    },
+    {
+      "id": "tripod-wash-station-labeled",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Clean educational diagram of a tripod wash station built from spars and rope, with short labels identifying tripod lashing, hanging water container, soap line, towel position, and stable leg spacing. Neutral campsite background, object-focused layout, no visible branding or logos.",
+      "value": "Shows how the main parts of a tripod wash station fit together in one view so readers can understand placement and function instantly"
+    },
+    {
+      "id": "rope-types-comparison",
+      "file": "req4.md",
+      "style": "comparison",
+      "verb_family": "describe",
+      "description": "Side-by-side educational comparison of two rope samples: natural-fiber rope on the left and synthetic rope on the right. Each sample is shown in close detail with a few short labels indicating grip, texture, stretch tendency, and weather resistance. Clean simple background, minimal text, no branding.",
+      "value": "Shows the visible texture and handling differences between natural-fiber and synthetic rope in a way descriptive prose cannot convey clearly"
+    },
+    {
+      "id": "rope-making-process",
+      "file": "req6.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Step-by-step educational diagram showing three yarns twisting into one strand, then three strands laying together into a finished rope on a simple rope-making machine. Clear sequence with arrows and very short horizontal labels only: yarns, strands, rope. Clean workshop style, no logos or branding.",
+      "value": "Shows the twist direction and sequence from yarns to strands to finished rope, which is much easier to grasp visually than through text alone"
+    },
+    {
+      "id": "anchoring-systems-comparison",
+      "file": "req7.md",
+      "style": "comparison",
+      "verb_family": "describe",
+      "description": "Side-by-side educational diagrams comparing a 3-2-1 anchoring system and a log-and-stake anchoring system for pioneering. Each panel shows stakes, rope attachment point, log placement where applicable, and arrows for direction of pull using short horizontal labels only. Neutral ground cross-section style, no branding.",
+      "value": "Shows how the two anchor systems are arranged in space and how the pull direction relates to each setup, which text alone cannot make immediate"
+    },
+    {
+      "id": "trestle-load-path",
+      "file": "req8.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean educational diagram of a pioneering trestle with labeled legs, cross members, X braces, and simple arrows showing downward load and sideways racking force. Clear structure-focused layout, short labels only, no background clutter, no logos.",
+      "value": "Shows how load moves through a trestle and how X braces resist sideways distortion, which is difficult to picture from prose alone"
+    },
+    {
+      "id": "pioneering-project-options-grid",
+      "file": "req9.md",
+      "style": "illustrated",
+      "verb_family": "identify",
+      "description": "Educational illustrated grid showing simplified but recognizable silhouettes of major pioneering project types: monkey bridge, A-frame bridge, trestle bridge, lock bridge, climbing tower, gateway tower, and Chippewa kitchen. Each panel uses tiny simple icons for relative space needs and complexity with no readable text, no logos, and no branding.",
+      "value": "Shows the major project types side by side so readers can compare structure shape and scale at a glance before choosing"
+    },
+    {
+      "id": "lashing-comparison-chart",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Six-panel educational diagram comparing square, diagonal, round, shear, tripod, and floor lashings on spars. Each panel shows the pole relationship clearly with a short label for the lashing name and no other dense text. Clean neutral background, consistent visual style, no logos or branding.",
+      "value": "Shows the different spar relationships each lashing is designed for, making the use cases much faster to understand than text descriptions alone"
+    }
+  ]
+}
