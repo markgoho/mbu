@@ -1,0 +1,44 @@
+{
+  "badge": "photography",
+  "style_context": "Camera operation, lighting, composition, exposure, editing, and visual storytelling",
+  "images": [
+    {
+      "id": "photography-types-collage",
+      "file": "_index.md",
+      "style": "illustrated",
+      "description": "Clean educational collage showing five distinct photography genres in separate panels: portrait, wildlife, sports action, night photography, and documentary event coverage. Each panel emphasizes a different shooting situation and camera challenge, with no visible text, no logos, and no branding.",
+      "value": "Shows the visual range of major photography genres side by side so readers can compare subject types and shooting situations at a glance"
+    },
+    {
+      "id": "camera-parts-labeled",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean educational diagram of a digital camera with major parts clearly labeled using short horizontal labels only: lens, shutter button, mode dial, flash, sensor, memory card slot, battery compartment, screen, and viewfinder. Simple neutral background, crisp object-focused layout, no branding or logos.",
+      "value": "Shows the main camera parts in their actual spatial relationship so readers can connect names to positions instantly"
+    },
+    {
+      "id": "angle-comparison-subject",
+      "file": "req4a.md",
+      "style": "comparison",
+      "verb_family": "show",
+      "description": "Split comparison image of the same backpack on a park bench photographed from two clearly different viewpoints: one high angle looking down and one low angle looking upward from bench level. The subject stays consistent while the feeling and emphasis change dramatically. No text labels, no branding.",
+      "value": "Shows how changing camera height alone alters perspective and visual emphasis in a way prose cannot demonstrate directly"
+    },
+    {
+      "id": "animal-photo-eye-level",
+      "file": "req5d.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Annotated realistic outdoor scene showing a Scout in appropriate clean casual outdoor clothing crouched low to photograph a calm dog from the dog's eye level. Short callouts indicate low shooting height, focus on the eye, and extra space in front of the dog's gaze. Natural light, minimal horizontal labels only, no branding or logos.",
+      "value": "Shows the physical shooting position and framing choices that make animal photos feel more engaging, which text alone cannot teach as clearly"
+    },
+    {
+      "id": "depth-of-field-comparison",
+      "file": "req2.md",
+      "style": "comparison",
+      "description": "Side-by-side comparison of the same subject photographed twice from nearly the same position: left image with shallow depth of field and creamy blurred background, right image with deep depth of field and most of the scene sharp. Clean clear subject, no visible text, no branding.",
+      "value": "Shows the visual difference between shallow and deep depth of field immediately, making background blur and subject isolation easy to grasp"
+    }
+  ]
+}
