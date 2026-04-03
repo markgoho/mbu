@@ -1,0 +1,38 @@
+{
+  "badge": "painting",
+  "style_context": "House painting, surface preparation, primers and topcoats, color selection, and safe paint disposal",
+  "images": [
+    {
+      "id": "paint-sheen-board",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean educational sample board showing the same paint color applied in five side-by-side finish strips labeled flat, eggshell, satin, semi-gloss, and gloss, lit from one side so the reflected light clearly changes across the finishes, simple horizontal labels only, no branding",
+      "value": "Side-by-side sheen comparison under the same light shows how reflectivity changes surface appearance in a way text alone cannot make obvious"
+    },
+    {
+      "id": "surface-prep-sequence",
+      "file": "req3.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Four-panel realistic instructional sequence of a small damaged interior wall area being repaired, showing panel 1 cleaning loose debris, panel 2 applying patching compound with a putty knife, panel 3 sanding the dried patch smooth, and panel 4 rolling primer over the repaired spot, with a few clean callouts and arrows, minimal text, no branding",
+      "value": "Step-by-step visual sequence shows the order and look of proper wall repair before painting, which is much clearer than text alone"
+    },
+    {
+      "id": "color-wheel-project-board",
+      "file": "req4.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Clean tabletop design board with a simple color wheel, two painted wood sample swatches in an analogous pairing and two in a complementary pairing, plus a small unfinished stool sketch beside the swatches to show how the colors could be applied to a real project, minimal horizontal labels only, no branding",
+      "value": "Connects color-wheel relationships to real painted sample swatches and a small project plan, helping the reader see harmony choices that are hard to picture from prose alone"
+    },
+    {
+      "id": "responsible-paint-disposal-flow",
+      "file": "req7.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Simple educational flow diagram showing leftover paint handled responsibly: a sealed labeled paint can, a crossed-out storm drain, a separate keep-for-reuse branch, and an approved recycling or drop-off destination, with arrows between steps and very short horizontal labels only, no branding",
+      "value": "Flow layout makes the safe disposal decision path visible at a glance, especially the contrast between approved handling and crossed-out unsafe dumping"
+    }
+  ]
+}
