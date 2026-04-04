@@ -1,0 +1,62 @@
+{
+  "badge": "pottery",
+  "style_context": "Pottery tools, clay bodies, hand-building methods, potter's wheels, kilns, and ceramic materials",
+  "images": [
+    {
+      "id": "pottery-safety-setup",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Realistic pottery studio worktable arranged for safe use with a clean apron, tied-back hair, sponge and bucket for wet cleanup, neatly stored trimming and carving tools with tips pointed safely away, clay scraps contained, clear walkway, and a kiln in the background with a marked safety zone. Add only a few short instructional callouts such as wet cleanup, safe tool storage, tied-back hair, and clear kiln area. No logos, no branding, no decorative title.",
+      "value": "Shows the physical layout of safe pottery habits, tool placement, and kiln clearance in one view — studio setup details are easier to learn visually than from a verbal list"
+    },
+    {
+      "id": "clay-body-comparison",
+      "file": "req2a.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean side-by-side educational diagram of two clay body samples in cutaway view. Left sample is hand-building clay with slightly rougher groggy texture and a labeled tall sculptural form beside it. Right sample is smoother wheel-throwing clay beside a centered cylinder on a pottery wheel. Use only short labels like hand-building, throwing, grog, smooth, and stronger support. Keep layout simple and text minimal.",
+      "value": "Side-by-side visual comparison of coarse hand-building clay versus smoother throwing clay with matching use cases — texture and fit-for-purpose differences are hard to grasp from words alone"
+    },
+    {
+      "id": "pottery-wheel-types",
+      "file": "req2b.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Simple three-column diagram of a kick wheel, treadle wheel, and electric potter's wheel, each shown from the side with the wheel head, power source, and motion path clearly visible. Show a foot kicking the flywheel on the kick wheel, a pumping treadle on the treadle wheel, and a motor with pedal control on the electric wheel. Use only short horizontal labels for the three types and a few small motion arrows.",
+      "value": "Shows how motion is created and transferred differently in kick, treadle, and electric wheels — mechanical relationships are much clearer in a visual comparison"
+    },
+    {
+      "id": "pottery-form-sketches",
+      "file": "req3.md",
+      "style": "illustrated",
+      "verb_family": "create",
+      "description": "Illustrated overhead view of two pottery concept sketches on white paper. One sketch is a historical amphora with simple labels for rim, neck, shoulder, belly, and foot. The second is a modern Scout-designed mug or vase concept with notes pointing to handle shape, base stability, and decoration zone. Keep labels short and clean, no branding, no decorative title.",
+      "value": "Shows how pottery forms are broken into design parts like rim, shoulder, and foot on both a historical and original sketch — planning structure is easier to understand visually than through description alone"
+    },
+    {
+      "id": "handbuilding-three-methods",
+      "file": "req5.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Three-panel instructional diagram showing the main hand-building methods. Panel one shows flat slabs being joined into a cup or box form. Panel two shows coils stacked into a pot. Panel three shows hands pinching open a small clay bowl. Clean white background, minimal short labels only: slab, coil, pinch. No decorative text.",
+      "value": "Shows the distinct starting shapes and hand motions for slab, coil, and pinch construction side by side — procedural differences are immediately clearer visually"
+    },
+    {
+      "id": "ceramics-industry-grid",
+      "file": "req6.md",
+      "style": "illustrated",
+      "verb_family": "identify",
+      "description": "Four-panel educational illustration comparing major ceramic products beyond craft pottery: ceramic floor tile, a white sink or toilet fixture, spark plugs, and a dense technical ceramic component, with a handmade mug included for scale and comparison. Use only tiny short labels under each object, simple neutral background, no branding or title text.",
+      "value": "Shows how widely ceramic products differ in shape and purpose across household and technical uses — the visual range of non-pottery ceramics is much easier to grasp by sight"
+    },
+    {
+      "id": "kiln-yard-types",
+      "file": "req7a.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Realistic outdoor kiln yard scene at a craft school showing four distinct kiln types in one training view: an electric kiln, a gas kiln, a larger wood or soda kiln structure, and a small raku setup. Include an adult guide and a Scout-aged visitor in clean non-messy clothes observing from a safe distance. Add a few short callouts naming each kiln type and marking the safe viewing area. No logos, no organizational text.",
+      "value": "Shows the real scale and visual differences among electric, gas, wood or soda, and raku kilns in one shared setting — comparing kiln types in place is difficult to teach with text alone"
+    }
+  ]
+}
