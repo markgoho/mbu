@@ -1,0 +1,81 @@
+{
+  "badge": "rifle-shooting",
+  "searched_at": "2026-04-05T17:36:19.791Z",
+  "videos": [
+    {
+      "id": "beginners-guide-to-handling-rifles-safely-rifle-10",
+      "file": "req1b.md",
+      "requirement_path": "1.b",
+      "video_id": "mK7uihP5oMY",
+      "title": "Beginners Guide to Handling Rifles Safely | Rifle 101 with Top Shot Champion Chris Cheng",
+      "channel": "NSSF—The Firearm Industry Trade Association",
+      "duration_seconds": 167000,
+      "views": 135135,
+      "url": "https://youtu.be/mK7uihP5oMY",
+      "status": "working",
+      "relevance": "This short safety-focused video reinforces the four universal rules with clear rifle-handling examples that match the page's emphasis on applying the rules, not just memorizing them.",
+      "query": "Rifle Shooting basic rules safe gun handling apply tutorial",
+      "trust_score": 8
+    },
+    {
+      "id": "firearm-basics-parts-of-a-cartridge",
+      "file": "req2ac.md",
+      "requirement_path": "2.ac",
+      "video_id": "rnkKZuYGH4Y",
+      "title": "Firearm Basics: Parts of a Cartridge",
+      "channel": "NRApubs",
+      "duration_seconds": 212000,
+      "views": 74161,
+      "url": "https://youtu.be/rnkKZuYGH4Y",
+      "status": "working",
+      "relevance": "This video directly supports the page's anatomy discussion by visually identifying cartridge parts and showing how they fit together, which helps Scouts distinguish rimfire and centerfire construction.",
+      "query": "Rifle Shooting Parts of a Cartridge (Both Types)",
+      "trust_score": 3
+    },
+    {
+      "id": "introduction-to-range-safety-and-etiquette---firea",
+      "file": "req2af.md",
+      "requirement_path": "2.af",
+      "video_id": "COvFyw-6Fqs",
+      "title": "Introduction to Range Safety and Etiquette - Firearm Safety",
+      "channel": "NSSF—The Firearm Industry Trade Association",
+      "duration_seconds": 528000,
+      "views": 2863027,
+      "url": "https://youtu.be/COvFyw-6Fqs",
+      "status": "working",
+      "relevance": "This video is tightly aligned with range procedures and commands, showing how safe range behavior looks in practice and reinforcing the attitude expectations described on the page.",
+      "query": "Rifle Shooting Range Commands",
+      "trust_score": 8
+    },
+    {
+      "id": "two-shot-sight-in-how-to-zero-a-rifle-in-two-shots",
+      "file": "req2ak.md",
+      "requirement_path": "2.ak",
+      "video_id": "TiOpQY2ORo4",
+      "title": "Two-Shot Sight-In: How to Zero a Rifle in Two Shots - Rifle Tip",
+      "channel": "NSSF—The Firearm Industry Trade Association",
+      "duration_seconds": 142000,
+      "views": 2097748,
+      "url": "https://youtu.be/TiOpQY2ORo4",
+      "status": "working",
+      "relevance": "This concise zeroing video fits the page's first path exactly by explaining sight adjustment and group-centering in the same context Scouts use for the scored grouping exercise.",
+      "query": "Rifle Shooting The Two Paths",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-load-shoot-your-cva-muzzleloader",
+      "file": "req2cg.md",
+      "requirement_path": "2.cg",
+      "video_id": "lfSIpk60Z6U",
+      "title": "How To Load & Shoot Your CVA Muzzleloader",
+      "channel": "CVA",
+      "duration_seconds": 276000,
+      "views": 716583,
+      "url": "https://youtu.be/lfSIpk60Z6U",
+      "status": "working",
+      "relevance": "This video usefully complements the written loading sequence by showing the accessories, order of operations, and deliberate pace required for safe muzzleloader loading under supervision.",
+      "query": "Rifle Shooting Loading Accessories",
+      "trust_score": 8
+    }
+  ]
+}
