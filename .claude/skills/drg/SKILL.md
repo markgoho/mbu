@@ -498,8 +498,8 @@ prev_title: "{Last Requirement Title}"
 **Content sections:**
 
 1. **Deep dives** — 2–4 sections going deeper into practical aspects.
-2. **Real-world experiences** — Places, projects, or events to seek out. Card-based layout.
-3. **Organizations** — 3–6 relevant organizations with name, mission, and link.
+2. **Real-world experiences** — Places, projects, or events to seek out. Use the existing HTML card patterns already present in the repo (for example `drg-card-grid` / `drg-card`), not shortcode wrappers.
+3. **Organizations** — 3–6 relevant organizations with name, mission, and link. Use the existing HTML/card patterns already present in the repo, not shortcode wrappers.
 
 **Structural convention:**
 
@@ -509,8 +509,16 @@ Recommended structure:
 
 - **Congratulations** — Brief introductory section (2–3 sentences acknowledging the Scout's achievement and teasing what lies ahead).
 - **2–4 deep-dive sections** — Each should have a descriptive title and be substantive, with practical detail that teaches something new rather than repeating requirement-page content.
-- **Real-World Experiences** — 3–5 experience cards.
-- **Organizations** — 3–6 org cards.
+- **Real-World Experiences** — 3–5 experience cards, built with existing HTML structures already used in published guides.
+- **Organizations** — 3–6 org cards, built with existing HTML structures already used in published guides.
+
+**Do not invent card shortcodes.** There is no supported `cards`, `card`, `drg/cards`, or similar card shortcode in this repo. If you want a card layout, copy the existing HTML structure from published guides (such as `div` blocks with `drg-card-grid`, `drg-card`, `drg-experience-card`, or `drg-org-card` classes) instead of writing new shortcode syntax.
+
+Before using any shortcode that is not already listed in the Shortcode Catalog below, verify that a matching template actually exists in the repo. If it is not in the catalog and not clearly implemented, do not use it.
+
+## Supported Shortcodes Only
+
+The shortcode list below is exhaustive for DRG writing guidance in this skill. Do not invent additional shortcode names.
 
 ## Shortcode Catalog
 
