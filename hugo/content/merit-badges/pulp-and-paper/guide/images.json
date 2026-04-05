@@ -1,0 +1,86 @@
+{
+  "badge": "pulp-and-paper",
+  "style_context": "Papermaking processes, forest fiber, packaging materials, recycling operations, and paper product engineering",
+  "images": [
+    {
+      "id": "papermaking-timeline",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Horizontal educational timeline showing four papermaking eras: early Chinese hand papermaking with fiber slurry on a screen, rag-based water-powered mill in medieval Europe, 19th-century industrial wood-pulp paper machine, and modern recycling-based paper production with collection bins and finished rolls, short era labels only, clean textbook diagram style, light background, no branding",
+      "value": "Visual sequence of the major papermaking eras and process shifts — the progression from hand craft to industrial and recycled production is easier to grasp in a timeline than in prose"
+    },
+    {
+      "id": "softwood-vs-hardwood-fibers",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Side-by-side educational diagram comparing long softwood fibers and shorter hardwood fibers under simplified magnified view, with brief labels for pine or spruce on one side and birch or poplar on the other, plus minimal callouts for strength and smoothness, clean science-textbook style, no dense text",
+      "value": "Shows the actual difference in fiber length and how that connects to paper properties — readers can understand the material trade-off only by seeing the fibers side by side"
+    },
+    {
+      "id": "hand-papermaking-steps",
+      "file": "req4.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Four-panel step-by-step diagram of handmade papermaking: torn scrap paper soaking in water, blended pulp slurry in a tub, screen lifting a thin wet sheet, and pressed sheet drying flat between towels, each panel clearly separated with very short step labels only, clean instructional layout, no branding",
+      "value": "Sequential visual of the physical papermaking process from scraps to finished sheet — the order and hand motions are much clearer in panels than in a paragraph"
+    },
+    {
+      "id": "coated-vs-uncoated-paper",
+      "file": "req5.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Split-frame comparison image showing glossy coated magazine paper with sharp colorful printing on one side and uncoated notebook paper with pencil writing and visible absorbency on the other, plus a smaller lower strip showing matte brochure paper and absorbent paper towel for context, short material labels only, clean educational comparison layout",
+      "value": "Directly contrasts surface sheen, print sharpness, and absorbency across paper types — those tactile and visual differences are much easier to learn by seeing them side by side"
+    },
+    {
+      "id": "paper-products-sort-table",
+      "file": "req6.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Top-down annotated photo of a table with ten real household paper products grouped into four clusters: writing papers, packaging board, absorbent tissue products, and specialty paper items, with short callout labels pointing to cereal carton, notebook, paper towel, shipping box, tissue box, coffee filter, envelope, sticky notes, paper bag, and paper plate, clean indoor lighting, no logos or brand names",
+      "value": "Shows category differences among real household paper products at one glance — grouping by function and material type is easier to understand visually than from a list"
+    },
+    {
+      "id": "pulp-mill-flow",
+      "file": "req7a.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Simplified process-flow diagram for a pulp mill showing logs or wood chips entering from the left, chip screening, digester cooking vessel, pulp washing stage, and clean cellulose fibers exiting to storage or the next mill stage, with arrows showing flow direction and very short equipment labels, clean industrial textbook style",
+      "value": "Shows the order of major pulp-mill stages and how wood changes into clean cellulose fibers — the flow relationship is difficult to visualize from text alone"
+    },
+    {
+      "id": "paper-mill-sample-analysis",
+      "file": "req7b.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Annotated photo of a Scout in a clean tan uniform shirt examining a paper sample on a clipboard after a mill visit, with simple callouts for smoothness, thickness, brightness, stiffness, and likely end use, neutral industrial visitor setting in the background, no logos or organizational text",
+      "value": "Connects visible paper traits to product purpose in a single real sample — the relationship between touch-and-see features and end use is much easier to teach visually"
+    },
+    {
+      "id": "corrugated-box-layers",
+      "file": "req7c.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean cutaway diagram of corrugated board showing outer liner, fluted medium, and inner liner with short labels and a simple compression arrow demonstrating why the fluted middle adds strength, light background, educational packaging diagram style, no branding",
+      "value": "Cross-section of corrugated board reveals the hidden fluted structure that gives boxes strength — that internal geometry cannot be understood from text alone"
+    },
+    {
+      "id": "recycling-sort-line",
+      "file": "req7d.md",
+      "style": "annotated-photo",
+      "verb_family": "describe",
+      "description": "Wide annotated photo inside a paper recycling sorting facility showing conveyors, separate cardboard and mixed-paper streams, a contamination removal area, and compressed bales ready for shipment, with short operational callouts only, realistic industrial setting, no logos",
+      "value": "Shows the actual layout and movement of materials through a sorting line — the flow from mixed input to separated bales is much clearer visually than in text"
+    },
+    {
+      "id": "paper-rd-lab",
+      "file": "req7e.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Annotated lab scene showing a technician testing paper samples with simple equipment for strength, absorbency, and coating performance, including short callouts for sample sheet, test fixture, absorbency test area, and recorded results, clean modern materials-testing lab, no branding or visible company names",
+      "value": "Shows that paper R&D relies on measurable sample testing rather than guesswork — the lab setup and side-by-side tests make the innovation process concrete in a way text cannot"
+    }
+  ]
+}
