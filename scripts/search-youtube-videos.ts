@@ -12,6 +12,7 @@
  */
 
 import { Glob } from "bun";
+import { existsSync, statSync } from "node:fs";
 import * as path from "node:path";
 import YouTube from "youtube-sr";
 import { buildVideoSearchQueries } from "./lib/build-video-search-queries.ts";
@@ -122,8 +123,7 @@ async function getGuideFiles({
     badge,
     "guide",
   );
-  const guideDirectoryFile = Bun.file(guideDirectory);
-  if (!(await guideDirectoryFile.exists())) {
+  if (!existsSync(guideDirectory) || !statSync(guideDirectory).isDirectory()) {
     console.error(`Guide directory not found: ${guideDirectory}`);
     console.error("This badge may not have a DRG guide yet.");
     process.exit(1);

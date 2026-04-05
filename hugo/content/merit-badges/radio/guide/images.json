@@ -1,0 +1,55 @@
+{
+  "badge": "radio",
+  "style_context": "Radio communication, antennas, spectrum, wave propagation, amateur radio, broadcasting, and mobile wireless technology",
+  "images": [
+    {
+      "id": "radio-spectrum-services-map",
+      "file": "req2a.md",
+      "style": "diagram",
+      "description": "Clean educational log-scale radio spectrum diagram from 300 kilohertz to 3 gigahertz. Show horizontal frequency axis with clearly separated MF, HF, VHF, and UHF regions in distinct colors. Place labeled service bands as simple blocks or brackets: AM broadcast, 160-meter amateur, 80-meter amateur, 40-meter amateur, 20-meter amateur, CB, FM broadcast, 2-meter amateur, public safety, 70-centimeter amateur, cellular, GPS, Wi-Fi, and Bluetooth. White background, visual-first layout, only short horizontal labels, no branding.",
+      "value": "Log-scale placement of major radio bands and services across a huge frequency range — spatial frequency relationships that text alone cannot convey clearly"
+    },
+    {
+      "id": "radio-propagation-modes",
+      "file": "req3.md",
+      "style": "diagram",
+      "description": "Educational comparison diagram of three radio propagation modes over the curved Earth. Show ground wave hugging the Earth's surface, skywave reflecting from a labeled ionosphere layer back to a distant receiver, and line-of-sight traveling straight between two elevated antennas. Include simple transmitter and receiver towers, curved Earth, and one hill blocking a line-of-sight path. Clean white background, minimal short labels only, textbook style.",
+      "value": "Side-by-side visual of ground-wave, skywave, and line-of-sight paths over Earth curvature and the ionosphere — propagation geometry that text alone cannot show well"
+    },
+    {
+      "id": "radio-station-block-diagram",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "Clear block diagram of a radio station signal path. Show microphone feeding a transceiver box that contains separate transmitter and receiver sections, then an amplifier, feedline, and antenna on the transmit path. Show the receive path from antenna back through feedline into the receiver section and then to a speaker. Use arrows for signal direction, simple labeled boxes, white background, no dense text, clean educational layout.",
+      "value": "Transmit and receive signal flow through a complete radio station with shared transceiver functions — system organization that text alone cannot present as clearly"
+    },
+    {
+      "id": "smartphone-radio-systems",
+      "file": "req7.md",
+      "style": "diagram",
+      "description": "Educational diagram of a modern smartphone surrounded by five wireless connections. Show one phone in the center connecting to a cell tower, home Wi-Fi router, Bluetooth earbuds, several GPS satellites in orbit, and an NFC payment terminal held close to the phone. Use clean curved connection lines and short labels: cellular, Wi-Fi, Bluetooth, GPS, NFC. White background, simple realistic icons, no branding.",
+      "value": "One device using multiple different radio systems at the same time with different destinations and ranges — simultaneous wireless roles that text alone cannot visualize clearly"
+    },
+    {
+      "id": "amateur-repeater-range-extension",
+      "file": "req8a5.md",
+      "style": "diagram",
+      "description": "Educational range-extension diagram showing two amateur radio operators with handheld transceivers on opposite sides of rolling hills and buildings. A hilltop repeater tower between them receives one signal and retransmits it farther. Show a faint short direct path blocked by terrain and strong paths from each handheld to the repeater and from repeater outward. Minimal labels: handheld, repeater, input, output. Clean daylight scene, no logos, visual-first layout.",
+      "value": "Terrain-blocked direct communication contrasted with successful repeater-assisted communication over longer distance — range extension that text alone cannot demonstrate as clearly"
+    },
+    {
+      "id": "day-vs-night-medium-wave-propagation",
+      "file": "req8c4.md",
+      "style": "comparison",
+      "description": "Two-panel educational comparison of medium-wave propagation. Left panel labeled daytime shows AM signal leaving a broadcast tower and being absorbed by a lower D layer before reaching higher ionosphere, leaving only a short ground-wave path. Right panel labeled nighttime shows the D layer gone and the signal reflecting from higher E and F layers back to distant receivers in multiple hops. Curved Earth, simple towers, white background, only short horizontal labels.",
+      "value": "Day-versus-night change in ionospheric behavior and AM signal paths — the reason distant stations appear after dark is much easier to grasp visually than in text alone"
+    },
+    {
+      "id": "tape-measure-yagi-layout",
+      "file": "req8d3.md",
+      "style": "diagram",
+      "description": "Clean labeled diagram of a tape-measure Yagi antenna for 2-meter ARDF. Show a PVC boom with three perpendicular tape-measure elements: long reflector at back, split driven element in the middle with coax attached at the center gap, and shorter director at front. Include measurement callouts for element spacing and a simple arrow showing strongest reception toward the director. White background, short horizontal labels, realistic proportions, no clutter.",
+      "value": "Physical arrangement, spacing, and front-to-back directionality of reflector, driven element, and director on a Yagi boom — build geometry that text alone cannot teach clearly"
+    }
+  ]
+}
