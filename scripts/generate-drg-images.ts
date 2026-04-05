@@ -46,7 +46,13 @@ When people appear in the scene, draw from this specific group of Scouts. They a
 4. JAMES — 13-year-old boy, East Asian, average height, glasses, curious expression, often examining things closely
 5. KAI — 16-year-old boy, Pacific Islander/mixed-race, broad-shouldered and tallest of the group, relaxed and easygoing presence
 
-Not every kid needs to appear in every photo — use whichever 2-5 of them make sense for the scene. But they must be RECOGNIZABLY the same individuals across images: same hair, same face, same build, same glasses (James), same freckles (Ethan), etc.`;
+Not every kid needs to appear in every photo — use whichever 2-5 of them make sense for the scene. But they must be RECOGNIZABLY the same individuals across images: same hair, same face, same build, same glasses (James), same freckles (Ethan), etc.
+
+CAST PRIVACY RULE:
+- These names and demographic descriptors are prompt-only casting guidance.
+- NEVER render any cast name, age, race, ethnicity, nationality, or gender as visible text anywhere in the image.
+- NEVER turn cast descriptors into labels, callouts, captions, badges, posters, watermarks, or annotations.
+- If the image includes text annotations, they may label ONLY techniques, equipment, actions, directions, or safety concepts — never people.`;
 
 const UNIFORM_SECTION = `
 ABSOLUTELY FORBIDDEN — ORGANIZATIONAL TEXT IN IMAGES:

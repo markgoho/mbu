@@ -149,6 +149,8 @@ Place each placeholder **inline with the content it supports** — directly afte
 
 **People-label rule:** Demographic terms (age, gender, race, ethnicity, nationality) may appear in image description prompts to guide the scene, but must NEVER appear as visible rendered text, labels, or annotations in the generated image itself. For example, an annotated-photo description can say "a teenager climbing a wall" to set the scene, but no label or callout in the image should read "teenager" or "diverse" or any demographic term. Visible text in the image should only describe actions, equipment, techniques, or concepts.
 
+**Cast-label rule:** If the generation workflow uses recurring named characters or cast descriptions behind the scenes, those names and character descriptors are prompt-only metadata. They must NEVER appear as visible text in the image. That means no names like "Maya" or "Ethan," and no labels like "14-year-old Black girl" or similar descriptors in callouts, captions, badges, or overlays. Annotations may label only the instructional content, never the people.
+
 ## Image Style Selection
 
 The image generation pipeline supports six styles. Choose the style that best serves the educational content — not every image needs to be a photo.

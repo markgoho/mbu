@@ -1,0 +1,36 @@
+{
+  "badge": "rowing",
+  "searched_at": "2026-04-05T21:19:57.516Z",
+  "videos": [
+    {
+      "id": "how-to-get-back-into-your-scull-after-flipping",
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "nhtv53MOrqA",
+      "title": "How to Get Back into Your Scull after Flipping",
+      "channel": "rowingwithcalmwaters",
+      "duration_seconds": 148000,
+      "views": 375363,
+      "url": "https://youtu.be/nhtv53MOrqA",
+      "status": "working",
+      "relevance": "This short demonstration closely matches the page's swamped-boat drill content by showing a real reboarding process after a flip. It gives Scouts a concrete visual sense of staying with the boat, stabilizing it, and getting back aboard.",
+      "query": "Rowing participate swamped boat drill including righting tut",
+      "trust_score": 8
+    },
+    {
+      "id": "an-insider-look-at-rowing-equipment",
+      "file": "req8.md",
+      "requirement_path": "3",
+      "video_id": "HYH1hANh1Ms",
+      "title": "An insider look at rowing equipment",
+      "channel": "World Rowing",
+      "duration_seconds": 175000,
+      "views": 32498,
+      "url": "https://youtu.be/HYH1hANh1Ms",
+      "status": "working",
+      "relevance": "This World Rowing video is a strong fit for the equipment discussion because it shows real competitive rowing gear, helping Scouts connect terms like shells, riggers, and oar hardware to actual equipment in use.",
+      "query": "Rowing What to Look For",
+      "trust_score": 0
+    }
+  ]
+}
