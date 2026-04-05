@@ -1,0 +1,94 @@
+{
+  "badge": "programming",
+  "style_context": "Programming concepts, coding workflows, software design, and computing devices",
+  "images": [
+    {
+      "id": "programming-robotics-laptop",
+      "file": "_index.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "A clean instructional scene showing a Scout in a neat field uniform using a laptop beside a small wheeled robot and microcontroller on a worktable, with simple callouts identifying the code on screen, the controller board, and the robot response, no branding, no visible organizational text",
+      "value": "Annotated relationship between code on the laptop, controller hardware, and robot movement — the connection from program to physical response is hard to teach with text alone"
+    },
+    {
+      "id": "ergonomic-coding-setup",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Clean educational diagram of a youth coder seated at a desk with neutral wrists, feet flat, back supported, elbows bent comfortably, and monitor at eye level, with brief labels for wrist position, chair height, screen height, and viewing distance, plain background, no branding or decorative text",
+      "value": "Correct body alignment, desk spacing, and screen placement shown at once — posture relationships are much clearer visually than in text"
+    },
+    {
+      "id": "programming-history-timeline",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Horizontal visual timeline of programming history with simple illustrated milestones: punched cards and room-sized computer, early high-level language era, home computer, web browser era, and modern laptop or mobile app development, using short era labels only, no brand names, no dense paragraphs",
+      "value": "Visual sequence of major eras and hardware shifts across time — readers grasp progression faster from the timeline layout than from prose alone"
+    },
+    {
+      "id": "everyday-programmed-devices",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Three everyday devices shown side by side: smartphone, smartwatch, and home Wi-Fi router, each with simple arrows for input, processing, and output plus very short labels, clean white background, educational technical illustration, no branding",
+      "value": "Side-by-side input-processing-output pattern across familiar devices — the shared computing logic becomes obvious only when the devices are compared visually"
+    },
+    {
+      "id": "software-rights-comparison",
+      "file": "req4.md",
+      "style": "comparison",
+      "verb_family": "describe",
+      "description": "Three-panel comparison graphic for freeware, open-source software, and commercial software using icons for cost, code access, sharing permissions, and support, each panel visually distinct with very short headings only, no logos, no dense text blocks",
+      "value": "At-a-glance contrast of permission differences between software types — a visual comparison prevents readers from blending the categories together"
+    },
+    {
+      "id": "simple-program-flow",
+      "file": "req5a.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Simple flowchart showing a user entering data, the program performing a calculation, a decision branch with yes and no paths, and an output screen, minimal short labels, clean educational diagram style, no branding",
+      "value": "Flow of input, computation, decision, and output in one glance — the logic path is much easier to understand visually than through a paragraph"
+    },
+    {
+      "id": "two-coding-environments-comparison",
+      "file": "req5b.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Side-by-side educational comparison of two coding environments displaying similar beginner logic, one terminal or desktop editor view and one browser or web editor view, with brief labels for run button, console output, and debugging aids, no branding or product names",
+      "value": "Visual differences in interface, workflow, and debugging tools between two environments — these contrasts are hard to imagine from text alone"
+    },
+    {
+      "id": "three-project-summary-board",
+      "file": "req5c.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Scout in a clean field uniform reviewing three finished programming projects on a table with a laptop and printed notes, simple callouts highlighting language, environment, debugging lesson, and output for each project, indoor meeting setting, no visible organizational text",
+      "value": "Concrete side-by-side comparison of three completed projects and what changed between them — the visual summary makes transfer of skills across projects easier to grasp"
+    },
+    {
+      "id": "programming-career-pathways",
+      "file": "req6a.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Branching career pathways diagram starting from programming skills and expanding to software developer, web developer, game programmer, robotics programmer, data analyst, and cybersecurity analyst, each with small icons for education, daily duties, and advancement, short labels only, no logos",
+      "value": "Branching relationships among different programming careers and their focus areas — the career landscape is easier to compare visually than in a list"
+    },
+    {
+      "id": "scout-coding-hobby-goals",
+      "file": "req6b.md",
+      "style": "annotated-photo",
+      "verb_family": "create",
+      "description": "Scout in a clean field uniform planning a coding hobby project at a table with a laptop, notebook, and small maker device, with simple callouts for short-term goal, long-term goal, training needed, and costs, clear instructional composition, no branding",
+      "value": "Visible planning layout tying goals, tools, and costs together on one workspace — the structure of a hobby plan is easier to model visually than through text alone"
+    },
+    {
+      "id": "scout-physical-computing-project",
+      "file": "extended-learning.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Scout in a clean field uniform testing a small microcontroller project with sensors and a compact display on a camp table, with subtle callouts for sensor input, program logic, and output display, outdoor but orderly setting, no logos or visible organizational text",
+      "value": "Shows how code connects to sensors and real-world output in one physical setup — that hardware-software relationship is much easier to understand visually"
+    }
+  ]
+}
