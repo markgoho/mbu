@@ -1,0 +1,69 @@
+{
+  "badge": "public-health",
+  "style_context": "Community health systems, disease prevention, sanitation, water safety, food safety, environmental health, and public health careers",
+  "images": [
+    {
+      "id": "public-health-systems-overview",
+      "file": "_index.md",
+      "style": "diagram",
+      "description": "Clean educational cutaway illustration of a small town showing the hidden systems of public health working together: a water tower and treatment plant, a health department office, a restaurant kitchen being inspected, a vaccination clinic, a mosquito-control truck treating standing water, and homes connected to sewer lines. No visible branding or organization names. Use simple labels only for system names such as water treatment, vaccination, food inspection, and vector control.",
+      "value": "Shows multiple public-health systems operating at the same time in one community scene — a systems view text alone cannot convey as clearly"
+    },
+    {
+      "id": "disease-transmission-routes",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Educational diagram comparing major disease transmission routes with clear visual icons and arrows: foodborne contamination from unsafe food, wound entry through a puncture injury, blood or body-fluid transmission, respiratory spread in shared indoor air, and vector-borne spread through mosquito and tick bites. Clean white background, bold simple icons, short labels only, no extra text blocks.",
+      "value": "Shows the visual differences among major transmission routes side by side so readers can compare patterns that are hard to hold in mind from prose alone"
+    },
+    {
+      "id": "vaccine-memory-cells",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Friendly educational diagram showing how vaccination creates immune memory: a simplified vaccine enters the body, immune cells learn to recognize a germ, memory cells remain, and a later exposure is met with a faster response. Use simple labeled stages with clean arrows, bright medical-education colors, and no dense text.",
+      "value": "Shows the sequence from vaccination to immune-memory response in a way that makes the invisible biological process easier to understand than text alone"
+    },
+    {
+      "id": "camp-water-treatment-methods",
+      "file": "req3.md",
+      "style": "comparison",
+      "verb_family": "show",
+      "description": "Side-by-side instructional comparison. Left panel: a Scout in appropriate outdoor clothing boiling water on a camp stove with a pot at a rolling boil. Right panel: a Scout using a backpacking water filter to treat stream water into a clean bottle. Add a few short labels for each method such as boil and filter, plus simple callouts for key steps and limitations. No logos or branding.",
+      "value": "Shows the equipment, posture, and setup differences between boiling and filtering so readers can immediately compare two field-treatment methods visually"
+    },
+    {
+      "id": "vector-control-home-camp-community",
+      "file": "req4.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Three-panel educational diagram about vector control. Panel 1: home scene with dumping standing water from a bucket and sealing food. Panel 2: campsite scene with food stored securely, trimmed area, and a Scout checking for ticks after a hike. Panel 3: community sanitation scene with trash pickup, drain maintenance, and neighborhood mosquito-control work. Clean labels, no decorative background.",
+      "value": "Shows which vector-control actions happen at home, camp, and community scale — a level-of-responsibility comparison that text alone is slower to teach"
+    },
+    {
+      "id": "wastewater-treatment-flow",
+      "file": "req5a.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Step-by-step wastewater treatment flow diagram from incoming sewage to screened debris removal, settling tanks, biological treatment, disinfection, and safe water discharge. Use a clear left-to-right layout with tanks, arrows, and brief labels for each stage. Clean engineering-education style, no branding.",
+      "value": "Shows the order and relationship of wastewater-treatment stages, making the system flow much easier to grasp than a text-only description"
+    },
+    {
+      "id": "food-safety-danger-zone",
+      "file": "req5b.md",
+      "style": "annotated-photo",
+      "verb_family": "describe",
+      "description": "Annotated instructional kitchen photo in a clean school cafeteria or restaurant kitchen. A food thermometer is inserted into cooked food, with nearby clearly visible examples of chilled storage and hot holding equipment. Use only a few short labels such as thermometer, keep cold, and hold hot. Realistic lighting, minimal text, no logos or branding.",
+      "value": "Shows where thermometers are used and how safe hot and cold handling relate to the danger zone — a temperature-and-context relationship text alone cannot show as quickly"
+    },
+    {
+      "id": "public-health-careers-collage",
+      "file": "req8.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Four-panel educational comparison image showing different public health careers in action: an epidemiologist studying a disease map on screens, an environmental health specialist collecting a water sample, a public health nurse helping at a clinic, and an emergency preparedness planner reviewing response boards. Each panel should visually emphasize tools and work setting, with very short role labels only.",
+      "value": "Shows how public-health careers differ in tools, settings, and day-to-day work so readers can compare professions visually rather than imagining them from titles alone"
+    }
+  ]
+}

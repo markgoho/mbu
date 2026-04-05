@@ -138,10 +138,16 @@
   container-name: drg-content;
 
   // --- Tables (markdown-generated) ---
+  .drg-table-scroll {
+    overflow-x: auto;
+    margin-block: var(--space-m);
+    -webkit-overflow-scrolling: touch;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-block: var(--space-m);
+    margin-block: 0;
     font-size: var(--step--1);
 
     th {
@@ -151,23 +157,20 @@
       text-align: left;
       padding: var(--space-xs) var(--space-s);
       border: 1px solid var(--tan-300);
+      overflow-wrap: normal;
+      word-break: normal;
     }
 
     td {
       padding: var(--space-xs) var(--space-s);
       border: 1px solid var(--tan-300);
       vertical-align: top;
-      overflow-wrap: anywhere;
+      overflow-wrap: normal;
+      word-break: normal;
     }
 
     tbody tr:nth-child(even) {
       background-color: var(--tan-000);
-    }
-  }
-
-  @container drg-content (min-width: 741px) {
-    table th {
-      white-space: nowrap;
     }
   }
 
@@ -176,6 +179,12 @@
     table {
       table-layout: fixed;
     }
+  }
+}
+
+@media print {
+  .drg-content .drg-table-scroll {
+    overflow-x: visible;
   }
 }
 

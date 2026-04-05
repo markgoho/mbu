@@ -1,0 +1,81 @@
+{
+  "badge": "public-health",
+  "searched_at": "2026-04-04T00:00:00Z",
+  "videos": [
+    {
+      "id": "how-do-vaccines-help-babies-fight-infections",
+      "file": "req2.md",
+      "requirement_path": "2",
+      "video_id": "k7DGeWlKu0Q",
+      "title": "How do vaccines help babies fight infections? | How Vaccines Work",
+      "channel": "Centers for Disease Control and Prevention (CDC)",
+      "duration_seconds": 61,
+      "views": 1527418,
+      "url": "https://www.youtube.com/watch?v=k7DGeWlKu0Q",
+      "status": "working",
+      "relevance": "This short CDC video clearly shows the immune-memory idea behind immunization, which matches Req 2a and supports the page's explanation of how vaccines prepare the body to respond faster.",
+      "query": "how do vaccines work CDC video",
+      "trust_score": 15
+    },
+    {
+      "id": "how-to-filter-water-in-the-backcountry",
+      "file": "req3.md",
+      "requirement_path": "3",
+      "video_id": "Kb_6eXF8kVE",
+      "title": "How to Filter Water in the Backcountry || REI",
+      "channel": "REI",
+      "duration_seconds": 218,
+      "views": 74400,
+      "url": "https://www.youtube.com/watch?v=Kb_6eXF8kVE",
+      "status": "working",
+      "relevance": "This REI demonstration is practical, short, and directly useful for the requirement's camp water treatment discussion. It shows real backcountry filtering steps that complement the guide's explanation of water safety methods.",
+      "query": "REI water treatment backpacking",
+      "trust_score": 13
+    },
+    {
+      "id": "importance-of-safe-internal-temperature-and-food-thermometer",
+      "file": "req5b.md",
+      "requirement_path": "5.b",
+      "video_id": "-2KkV2yFiN0",
+      "title": "The Importance of Cooking to a Safe Internal Temperature and How to Use a Food Thermometer",
+      "channel": "USDAFoodSafety",
+      "duration_seconds": 198,
+      "views": 287635,
+      "url": "https://www.youtube.com/watch?v=-2KkV2yFiN0",
+      "status": "working",
+      "relevance": "This USDA Food Safety video directly supports Req 5b3 by showing why thermometers matter and how to use them correctly. It also reinforces the page's discussion of microbial growth, safe temperatures, and contamination prevention.",
+      "query": "USDA food thermometer video",
+      "trust_score": 5
+    },
+    {
+      "id": "outbreak-investigated-student-quick-learn",
+      "file": "req7b.md",
+      "requirement_path": "7.b",
+      "video_id": "kYFIqTbRd2o",
+      "title": "CDC NERD Academy Student Quick Learn: How is an outbreak investigated?",
+      "channel": "Centers for Disease Control and Prevention (CDC)",
+      "duration_seconds": 764,
+      "views": 86327,
+      "url": "https://www.youtube.com/watch?v=kYFIqTbRd2o",
+      "status": "working",
+      "relevance": "This CDC video matches Req 7b2 especially well because it walks through how outbreaks are investigated. It gives Scouts a concrete picture of the agency roles the page describes: tracking, investigating, communicating, and coordinating.",
+      "query": "CDC outbreak investigation video",
+      "trust_score": 10
+    },
+    {
+      "id": "public-health-careers-epidemiologist-part-1",
+      "file": "req8.md",
+      "requirement_path": "8",
+      "video_id": "tYx-fO5hMA4",
+      "title": "Public Health Careers: Epidemiologist, Part 1",
+      "channel": "Centers for Disease Control and Prevention (CDC)",
+      "duration_seconds": 93,
+      "views": 60670,
+      "url": "https://www.youtube.com/watch?v=tYx-fO5hMA4",
+      "status": "working",
+      "relevance": "This CDC career profile is a strong fit for Req 8 because it shows one real public-health profession in action. It helps Scouts connect the badge's ideas about outbreaks and community protection to an actual career path.",
+      "query": "epidemiologist career video public health",
+      "trust_score": 10
+    }
+  ]
+}
