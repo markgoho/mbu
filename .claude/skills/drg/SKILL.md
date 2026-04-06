@@ -88,12 +88,15 @@ Do not create `videos.json` or `images.json` as part of scaffolding or writing.
 
 Always keep file-path expectations aligned with `scripts/verify-drg-resources.ts`.
 
-After writing, run the same verification flow as before:
+After writing, run the verification flow below before considering the guide complete:
 
 ```bash
 BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources
+BADGE_SLUGS="$ARGUMENTS" bun run verify:youtube-links
 bun run build
 ```
+
+`verify:drg-resources` checks that every official resource appears on the correct page and that YouTube resources use the correct shortcode. `verify:youtube-links` is also required because it verifies that each YouTube video actually exists and is embeddable (or flags embed-disabled / broken videos). A guide is **not** done if `verify:drg-resources` passes but `verify:youtube-links` reports broken videos.
 
 If the scaffold created placeholder content, replace placeholders rather than layering duplicate sections on top.
 
@@ -245,6 +248,46 @@ Apply this when **all** of these are true:
 - the parent action naturally breaks into distinct teaching buckets
 
 Do **not** force this pattern onto every badge. If the child requirement already contains full operative text, or if the parent action does not split cleanly into reusable buckets, write normal prose instead.
+
+### Inherited Parent Sentence Pattern
+
+Some child requirements are even simpler than the inherited-action case: the parent requirement supplies the full task, and each child is only a name, place, publication, event, or topic label.
+
+Common examples:
+
+- Parent requirement: `Give a short biographical summary of any TWO of the following, and tell of their roles in how Scouting developed and grew in the United States.`
+- Child requirement: `Daniel Carter Beard`
+
+or:
+
+- Parent requirement: `Discuss the significance to Scouting of any TWO of the following:`
+- Child requirement: `Brownsea Island`
+
+In these cases, a child page should **not** display only the bare label in the `drg/requirement` shortcode. Merge the parent sentence with the child label so the Scout can see the actual task on that page.
+
+Use this pattern:
+
+```markdown
+{{</* drg/requirement number="2a1" */>}}
+Give a short biographical summary of Daniel Carter Beard, and tell of his role in how Scouting developed and grew in the United States.
+{{</* /drg/requirement */>}}
+```
+
+and:
+
+```markdown
+{{</* drg/requirement number="2b1" */>}}
+Discuss the significance to Scouting of Brownsea Island.
+{{</* /drg/requirement */>}}
+```
+
+Apply this when **all** of these are true:
+
+- the parent requirement contains the operative task
+- the child requirement is mainly a label or noun phrase
+- rendering only the child text would hide what the Scout is actually supposed to do
+
+When possible, preserve the parent's wording and only substitute the child label into the sentence with minimal grammatical cleanup.
 
 ### Image Hint Handoff
 
