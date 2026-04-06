@@ -1,0 +1,66 @@
+{
+  "badge": "search-and-rescue",
+  "searched_at": "2026-04-06T17:19:17.758Z",
+  "videos": [
+    {
+      "id": "in-and-out-navigation-the-easiest-way-to-use-a-com",
+      "file": "req3.md",
+      "requirement_path": "3",
+      "video_id": "mZF-RKJcODQ",
+      "title": "In and Out Navigation: The Easiest Way to Use a Compass",
+      "channel": "Coalcracker Bushcraft",
+      "duration_seconds": 511000,
+      "views": 435497,
+      "url": "https://youtu.be/mZF-RKJcODQ",
+      "status": "working",
+      "relevance": "A focused compass demonstration that reinforces orienting a map and taking a useful bearing, which fits the practical navigation work in Requirement 3 better than a broad SAR overview would.",
+      "query": "Search and Rescue maps using map compass gps device tutorial",
+      "trust_score": 5
+    },
+    {
+      "id": "introduction-to-the-incident-command-system-ics",
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "P-dPBso2xPM",
+      "title": "Introduction to the Incident Command System (ICS)",
+      "channel": "Justice Institute of British Columbia (JIBC)",
+      "duration_seconds": 550000,
+      "views": 145518,
+      "url": "https://youtu.be/P-dPBso2xPM",
+      "status": "working",
+      "relevance": "This is a clear introductory walkthrough of ICS structure and roles, making it a strong fit for the page that explains how incident command is organized before comparing it to the patrol method.",
+      "query": "Search and Rescue incident command system ics tutorial",
+      "trust_score": 8
+    },
+    {
+      "id": "urban-search-and-rescue-communications-specialist-",
+      "file": "req6c.md",
+      "requirement_path": "6.c",
+      "video_id": "YE-WG9_IWTc",
+      "title": "Urban Search and Rescue Communications Specialist Training 2015",
+      "channel": "FEMA",
+      "duration_seconds": 163000,
+      "views": 2489,
+      "url": "https://youtu.be/YE-WG9_IWTc",
+      "status": "working",
+      "relevance": "Although it comes from the urban side of SAR, it directly shows why communications discipline, clear reporting, and assigned communication roles matter in a real response system.",
+      "query": "Search and Rescue importance effective communication sar ope",
+      "trust_score": 3
+    },
+    {
+      "id": "volunteers-need-to-know-this-before-joining-a-sear",
+      "file": "req8b.md",
+      "requirement_path": "8.b",
+      "video_id": "dMD9OudzeXs",
+      "title": "Volunteers Need to Know This Before Joining A Search and Rescue Team",
+      "channel": "Emhance International Responder Development®",
+      "duration_seconds": 681000,
+      "views": 693,
+      "url": "https://youtu.be/dMD9OudzeXs",
+      "status": "working",
+      "relevance": "This video is directly about the expectations and realities of joining a volunteer SAR team, which matches the page's focus on training, commitment, and realistic next steps.",
+      "query": "Search and Rescue Requirement 7a",
+      "trust_score": 0
+    }
+  ]
+}
