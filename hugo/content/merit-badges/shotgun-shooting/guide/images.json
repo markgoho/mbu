@@ -1,0 +1,86 @@
+{
+  "badge": "shotgun-shooting",
+  "style_context": "Shotgun shooting safety, clay target range instruction, shotshell and muzzleloading shotgun anatomy, gauges, choke patterns, and moving-target technique",
+  "images": [
+    {
+      "id": "shotgun-pellet-spread-pattern",
+      "file": "req1a.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean educational diagram showing three side-view shotgun pellet patterns at 10, 20, and 40 yards, each widening into a cone shape from the muzzle, with only very short distance labels and a plain light background, no branding or decorative text",
+      "value": "Shows how a shotgun pattern widens over distance from one muzzle into a broad cone — the expanding shape is much easier to grasp visually than from description alone"
+    },
+    {
+      "id": "shotgun-trigger-finger-placement",
+      "file": "req1b.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Close-up instructional photo of hands holding an unloaded break-action shotgun with the action open, showing the trigger finger straight along the receiver outside the trigger guard, one short callout for correct finger position, neutral range background, no logos or visible brand names",
+      "value": "Shows the exact safe resting position of the trigger finger outside the guard on a real shotgun — hand placement is clearer visually than in text"
+    },
+    {
+      "id": "shotgun-hearing-protection-comparison",
+      "file": "req1d.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Clean educational side-by-side comparison of foam earplugs, over-the-ear hearing muffs, and electronic hearing muffs at equal scale, with only very short labels for each type and a small fit cue for ear cup seal, plain background, no branding",
+      "value": "Shows the physical differences between earplug and earmuff types side by side — the equipment categories and fit cues are easier to compare visually than through a list"
+    },
+    {
+      "id": "break-action-shotgun-parts",
+      "file": "req2Aa.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean side-view diagram of a break-action shotgun with short labels for buttstock, comb, grip, fore-end, receiver, chamber, bore, choke, bead sight, and muzzle, plain light background, no logos or decorative text",
+      "value": "Shows the major shotgun parts in their real spatial relationship from stock to muzzle — part names are much easier to learn from a labeled visual than from prose alone"
+    },
+    {
+      "id": "shotshell-cutaway-diagram",
+      "file": "req2Ac.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean cutaway diagram of a modern shotgun shell with short labels for hull, brass head, primer, powder charge, wad, shot column, and crimp, plain background, no branding or decorative text",
+      "value": "Internal parts of a shotshell shown in cutaway order from base to crimp — the stacked structure is much easier to understand visually than through a written description"
+    },
+    {
+      "id": "shotgun-gauge-size-comparison",
+      "file": "req2Ad.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Educational side-by-side size comparison of 12 gauge, 20 gauge, 28 gauge, and .410 bore shells standing upright at the same scale with short labels only, clean white background, no branding",
+      "value": "Shows the real size difference between common shotgun shell types at equal scale — relative shell size is far easier to judge visually than from numbers alone"
+    },
+    {
+      "id": "shotgun-mount-cheek-shoulder-placement",
+      "file": "req2Aj.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Side-view instructional photo of a shooter in appropriate range clothing mounting a shotgun correctly, with short callouts for cheek on comb and butt in shoulder pocket, simple trap range background, no logos or visible brand names",
+      "value": "Shows the exact relationship between cheek contact and shoulder pocket placement during the mount — correct body contact points are clearer visually than in text"
+    },
+    {
+      "id": "muzzleloading-shotgun-parts",
+      "file": "req2Bb.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean side-view diagram of a percussion-cap muzzleloading shotgun with short labels for stock, barrel, hammer, nipple, trigger, ramrod, breech plug, and muzzle, plain background, no logos or decorative text",
+      "value": "Shows the unique muzzleloading shotgun parts such as the nipple and ramrod in their real locations — these historical components are easier to recognize visually than through text alone"
+    },
+    {
+      "id": "muzzleloading-shotgun-trap-sequence",
+      "file": "req2Bm.md",
+      "style": "comparison",
+      "verb_family": "show",
+      "description": "Four-panel instructional sequence showing a shooter with a muzzleloading shotgun on a trap field in these stages: ready position, mounted swing, shot fired, and follow-through, with only very short stage labels, plain range background, no branding",
+      "value": "Shows the continuous sequence from ready position through follow-through for a moving target — motion timing is much easier to understand in ordered panels than from prose alone"
+    },
+    {
+      "id": "shotgun-pattern-board-analysis",
+      "file": "extended-learning.md",
+      "style": "annotated-photo",
+      "verb_family": "describe",
+      "description": "Instructional photo of a shooter at a patterning board examining a large paper target covered with pellet holes, with choke tubes and marker on a nearby bench, one short callout for pellet density inside a 30 inch circle, outdoor range setting, no logos or branding",
+      "value": "Shows what a real shotgun pattern board result looks like, including pellet density and spread on paper — the visual evidence of pattern shape cannot be replaced by text alone"
+    }
+  ]
+}

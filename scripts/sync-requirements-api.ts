@@ -88,6 +88,230 @@ const TITLE_OVERRIDES: Record<string, string> = {
   [normalizeTitle({ title: "Indian Lore" })]: "American Indian Culture",
 };
 
+const SUBREQUIREMENT_MODE_OVERRIDES: Record<
+  string,
+  Requirement["subrequirement_mode"]
+> = {
+  "shotgun-shooting:1": { type: "all" },
+};
+
+const REQUIREMENT_ID_OVERRIDES: Record<string, string> = {
+  "shotgun-shooting:2:Option A—Shotgun Shooting (Modern Shotshell Type). Do ALL of the following:":
+    "A",
+  "shotgun-shooting:2:Option B—Muzzleloading Shotgun Shooting. Do ALL of the following:":
+    "B",
+};
+
+const REQUIREMENT_PATH_OVERRIDES: Record<string, string> = {
+  "shotgun-shooting:2.A": "2.A",
+  "shotgun-shooting:2.A.a": "2.A.a",
+  "shotgun-shooting:2.A.b": "2.A.b",
+  "shotgun-shooting:2.A.c": "2.A.c",
+  "shotgun-shooting:2.A.d": "2.A.d",
+  "shotgun-shooting:2.A.e": "2.A.e",
+  "shotgun-shooting:2.A.f": "2.A.f",
+  "shotgun-shooting:2.A.g": "2.A.g",
+  "shotgun-shooting:2.A.h": "2.A.h",
+  "shotgun-shooting:2.A.i": "2.A.i",
+  "shotgun-shooting:2.A.j": "2.A.j",
+  "shotgun-shooting:2.B": "2.B",
+  "shotgun-shooting:2.B.a": "2.B.a",
+  "shotgun-shooting:2.B.b": "2.B.b",
+  "shotgun-shooting:2.B.c": "2.B.c",
+  "shotgun-shooting:2.B.d": "2.B.d",
+  "shotgun-shooting:2.B.e": "2.B.e",
+  "shotgun-shooting:2.B.f": "2.B.f",
+  "shotgun-shooting:2.B.g": "2.B.g",
+  "shotgun-shooting:2.B.h": "2.B.h",
+  "shotgun-shooting:2.B.i": "2.B.i",
+  "shotgun-shooting:2.B.j": "2.B.j",
+  "shotgun-shooting:2.B.k": "2.B.k",
+  "shotgun-shooting:2.B.l": "2.B.l",
+  "shotgun-shooting:2.B.m": "2.B.m",
+};
+
+function normalizeRequirementOverrideKey({
+  text,
+}: {
+  text: string;
+}): string {
+  return normalizeWhitespace({ text }).replaceAll(/\s+/g, " ").trim();
+}
+
+function buildRequirementIdOverrideKey({
+  badgeSlug,
+  parentPath,
+  text,
+}: {
+  badgeSlug: string;
+  parentPath: string;
+  text: string;
+}): string {
+  return `${badgeSlug}:${parentPath}:${normalizeRequirementOverrideKey({ text })}`;
+}
+
+function buildRequirementPathOverrideKey({
+  badgeSlug,
+  path,
+}: {
+  badgeSlug: string;
+  path: string;
+}): string {
+  return `${badgeSlug}:${path}`;
+}
+
+function applyRequirementPathOverrides({
+  badgeSlug,
+  requirements,
+}: {
+  badgeSlug: string;
+  requirements: Requirement[];
+}): void {
+  for (const requirement of requirements) {
+    const override =
+      REQUIREMENT_PATH_OVERRIDES[
+        buildRequirementPathOverrideKey({
+          badgeSlug,
+          path: requirement["path"],
+        })
+      ];
+    if (override !== undefined) {
+      requirement["path"] = override;
+    }
+
+    if (requirement["subrequirements"] !== undefined) {
+      applyRequirementPathOverrides({
+        badgeSlug,
+        requirements: requirement["subrequirements"],
+      });
+    }
+  }
+}
+
+function applyRequirementIdOverrides({
+  badgeSlug,
+  requirements,
+}: {
+  badgeSlug: string;
+  requirements: Requirement[];
+}): void {
+  for (const requirement of requirements) {
+    if (requirement["subrequirements"] !== undefined) {
+      applyRequirementIdOverrides({
+        badgeSlug,
+        requirements: requirement["subrequirements"],
+      });
+    }
+  }
+}
+
+function applyShotgunOptionBranchOverrides({
+  badgeSlug,
+  requirements,
+}: {
+  badgeSlug: string;
+  requirements: Requirement[];
+}): void {
+  if (badgeSlug !== "shotgun-shooting") {
+    return;
+  }
+
+  const requirementTwo = requirements.find(requirement => requirement["path"] === "2");
+  if (requirementTwo?.["subrequirements"] === undefined) {
+    return;
+  }
+
+  for (const optionRequirement of requirementTwo["subrequirements"]) {
+    const overrideId =
+      REQUIREMENT_ID_OVERRIDES[
+        buildRequirementIdOverrideKey({
+          badgeSlug,
+          parentPath: requirementTwo["path"],
+          text: optionRequirement["text"],
+        })
+      ];
+    if (overrideId === undefined) {
+      continue;
+    }
+
+    optionRequirement["req_id"] = overrideId;
+    optionRequirement["path"] = computePath({
+      parentPath: requirementTwo["path"],
+      requirementId: overrideId,
+    });
+
+    for (const childRequirement of optionRequirement["subrequirements"] ?? []) {
+      childRequirement["path"] = computePath({
+        parentPath: optionRequirement["path"],
+        requirementId: childRequirement["req_id"],
+      });
+    }
+  }
+}
+
+function applyRequirementStructureOverrides({
+  badgeSlug,
+  requirements,
+}: {
+  badgeSlug: string;
+  requirements: Requirement[];
+}): void {
+  applyShotgunOptionBranchOverrides({ badgeSlug, requirements });
+  applyRequirementPathOverrides({ badgeSlug, requirements });
+}
+
+function applyRequirementOverrides({
+  badgeSlug,
+  requirements,
+}: {
+  badgeSlug: string;
+  requirements: Requirement[];
+}): void {
+  applyRequirementStructureOverrides({ badgeSlug, requirements });
+  applySubrequirementModeOverrides({ badgeSlug, requirements });
+}
+
+function applySubrequirementModeOverrides({
+  badgeSlug,
+  requirements,
+}: {
+  badgeSlug: string;
+  requirements: Requirement[];
+}): void {
+  for (const requirement of requirements) {
+    const override =
+      SUBREQUIREMENT_MODE_OVERRIDES[`${badgeSlug}:${requirement["path"]}`];
+    if (override !== undefined) {
+      requirement["subrequirement_mode"] = { ...override };
+    }
+
+    if (requirement["subrequirements"] !== undefined) {
+      applySubrequirementModeOverrides({
+        badgeSlug,
+        requirements: requirement["subrequirements"],
+      });
+    }
+  }
+}
+
+function applyRequirementIdOverride({
+  badgeSlug,
+  parentPath,
+  text,
+}: {
+  badgeSlug: string;
+  parentPath: string;
+  text: string;
+}): string | undefined {
+  return REQUIREMENT_ID_OVERRIDES[
+    buildRequirementIdOverrideKey({
+      badgeSlug,
+      parentPath,
+      text,
+    })
+  ];
+}
+
 const WORD_TO_COUNT: Record<string, number> = {
   one: 1,
   two: 2,
@@ -1083,6 +1307,10 @@ async function main(): Promise<void> {
     }),
   });
   correctTyposInRequirements({ requirements });
+  applyRequirementOverrides({
+    badgeSlug: badge["slug"],
+    requirements,
+  });
   console.log("   Reused committed req_id/path structure where compatible");
 
   console.log("\n📄 Step 6: Extracting pamphlet URL...\n");

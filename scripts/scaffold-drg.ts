@@ -407,7 +407,7 @@ function groupTitleForRequirement({
 }
 
 function isCompactPathSegment({ value }: { value: string }): boolean {
-  return /^[a-z0-9]$/.test(value);
+  return /^[a-z0-9]$/i.test(value);
 }
 
 function compactRequirementNumber({ path }: { path: string }): string {
