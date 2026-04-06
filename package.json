@@ -23,7 +23,8 @@
     "verify:drg-resources": "bun scripts/verify-drg-resources.ts",
     "verify:drg-requirements": "bun scripts/verify-drg-requirements.ts",
     "scaffold:drg": "bun scripts/scaffold-drg.ts",
-    "drg:coverage": "bun scripts/drg-coverage.ts"
+    "drg:coverage": "bun scripts/drg-coverage.ts",
+    "search:pdf": "python3 scripts/search-pdf.py"
   },
   "devDependencies": {
     "@google/genai": "^1.46.0",

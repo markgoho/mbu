@@ -186,6 +186,57 @@ This requirement covers four topics that every archer needs to understand:
 
 This applies to both combined pages (where all sub-requirements appear on one page) and overview pages (where sub-requirements link out to separate pages).
 
+### Named Artifact Investigation
+
+Some requirements name a formal artifact instead of spelling it out in the requirement text. When that happens, do **not** assume the requirement text alone is enough.
+
+A **named artifact** includes things like a code, policy, checklist, oath, law, acronym expansion, table, test, form, or procedure referenced by name.
+
+Common examples:
+
+- `Scuba Diver's Code`
+- `Safety Afloat`
+- `Safe Swim Defense`
+- `Outdoor Code`
+- named checklists, forms, and tests
+- acronym expansions such as `S.A.F.E.`
+
+If a requirement tells the Scout to discuss, explain, review, use, or follow a named artifact, investigate that artifact directly in the official pamphlet or other official source before writing.
+
+When the requirement expects discussion of the artifact itself, include the actual artifact text or enumerated items on the page when appropriate so the Scout can see what they are being asked to discuss.
+
+Do **not** broadly copy the pamphlet. This exception applies only to the specific named artifact needed to teach the requirement accurately.
+
+### Pamphlet Concept Lookup
+
+Some requirements depend on a concept, procedure, acronym, or safety standard that is only briefly named in the requirement text. When that concept is important to teaching the requirement accurately, search the official pamphlet before writing instead of guessing from general knowledge.
+
+Use pamphlet lookup for things like:
+
+- named procedures and checks
+- technical terms the Scout must explain or demonstrate
+- acronym expansions
+- safety standards or frameworks
+- concepts that the requirement assumes the Scout already understands
+
+If `pamphlet_url` exists, prefer targeted pamphlet search over broad page dumping.
+
+Start with:
+
+```bash
+bun run search:pdf "$PAMPHLET_URL" --query "Safe Swim Defense" --ignore-case --json
+```
+
+Then review `matched_pages` and dump only the relevant pages:
+
+```bash
+bun run search:pdf "$PAMPHLET_URL" --dump-pages 19-20
+```
+
+If the first search misses, retry with alternate wording, acronym/full-name variants, or regex only when needed.
+
+Use pamphlet search to confirm the official framing and terminology needed for the guide page. Do **not** dump or copy large pamphlet sections when only a small excerpt or enumerated list is needed.
+
 ### Hybrid Parent Requirements
 
 Some parent requirements are not just umbrellas. They contain **real instructional content of their own** and then continue into child sub-requirements.
@@ -736,7 +787,7 @@ Two exemplar worksheets demonstrate different approaches:
 ### DO NOT
 
 - Give away the answer (if requirement says "Identify 10 examples," don't list exactly 10)
-- Copy or paraphrase the merit badge pamphlet
+- Broadly copy or paraphrase the merit badge pamphlet outside the narrow named-artifact exception described above
 - Alter requirement text
 - Use jargon without defining it
 - Link to commercial products or unreliable sources
@@ -806,8 +857,98 @@ Each deep-dive section in Extended Learning should teach something **genuinely n
    - **hybrid parent** — parent text that contains real standalone instructional content and then continues into child requirements
    - **inherited-action parent** — parent text supplies the operative verbs while child requirements are mostly topic labels
 6. Apply the matching writing pattern on purpose rather than defaulting every parent-with-children requirement to the same structure.
+7. If `pamphlet_url` exists, inspect it specifically for named artifacts and requirement-critical concepts referenced by the requirements.
+8. Use `bun run search:pdf` for targeted pamphlet lookups before drafting any page that depends on a named artifact, technical concept, procedure, acronym, or safety standard.
+9. For each named artifact you find, decide which guide page must include the actual artifact text or enumerated items, and write with that requirement in mind.
 
 ### Phase 2: Write the Guide
+
+Work page-by-page and turn scaffold placeholders into complete Scout-friendly content. Keep the deterministic scaffold structure intact unless the user explicitly asks for a structural change.
+
+**Write every page before moving to Phase 3.** Do not stop after a subset of pages, do not offer progress summaries mid-guide, do not ask whether to continue. Move directly from one page to the next until all pages are complete.
+
+### Named Artifact Completeness Check
+
+Before considering a requirement page done, ask:
+
+- Does this requirement name a specific code, policy, checklist, oath, law, acronym, table, test, or other formal artifact?
+- If yes, did I investigate that artifact directly in the official pamphlet or other official source?
+- Does this page depend on a concept, procedure, acronym, or safety standard that I have not yet confirmed in the pamphlet?
+- If yes, did I run a targeted pamphlet search before finalizing the explanation?
+- If the Scout is expected to discuss the artifact itself, does the page include the actual artifact text or enumerated items, rather than only explaining around it?
+
+Requirements for writing:
+
+- Keep all prose specific to the badge.
+- Use exact requirement wording inside `drg/requirement` shortcodes.
+- Match the page structure to the parent-requirement pattern you identified in Phase 1B:
+  - **umbrella parent** → brief orienting intro, then child sections or child pages
+  - **hybrid parent** → teach the parent's standalone content first, then move into child sections, then add a short synthesis or bridge
+  - **inherited-action parent** → mirror the parent verbs in the child section structure when that makes the requirement clearer
+- If a requirement names a formal artifact, include the actual artifact text or enumerated items when needed for accurate teaching.
+- Keep official resources relevant to the requirement they belong to.
+- Preserve valid front matter, `guide_nav`, and prev/next links.
+- Replace placeholder titles like `[TITLE]` and group labels like `[GROUP: Requirement 3]` with polished final text when completing the guide.
+
+### Phase 3: Resources and Verification
+
+1. Keep or add official resource shortcodes:
+   - `drg/video` for YouTube
+   - `drg/external-link` for other official URLs
+2. Before adding a YouTube video, verify it with the project's video verification workflow.
+3. After making guide changes, run relevant checks when appropriate, such as:
+   - `BADGE_SLUGS="$ARGUMENTS" bun run verify:drg-resources`
+   - `bun run build`
+
+### Phase 4: Image Handoff
+
+After the guide content is complete and verification passes, immediately invoke the
+`drg-images` skill with the same `$ARGUMENTS`.
+
+Do not stop after content-only completion when image placeholders are present. Hand
+those placeholders off to `drg-images`, which owns `images.json`, image generation,
+AVIF conversion, and shortcode replacement.
+
+Use the Skill tool to run:
+
+`drg-images $ARGUMENTS`
+
+### Phase 5: Conditional Video Handoff
+
+After `drg-images` completes, determine whether to run `drg-videos`.
+
+Use the badge data already read in Phase 1B from
+`hugo/data/merit-badges/$ARGUMENTS.json`. Check whether any requirement or
+subrequirement anywhere in the badge JSON has a `resources` field. This check must
+cover the full requirement tree at any depth, not just top-level requirements or
+immediate children.
+
+- If any requirement node anywhere in the source JSON has `resources`, skip
+  `drg-videos`. Official resource links already exist for this badge, so a
+  supplemental video pass would be redundant.
+- If no requirement node anywhere in the source JSON has `resources`, continue to
+  the next check.
+
+Before invoking `drg-videos`, check whether
+`hugo/content/merit-badges/$ARGUMENTS/guide/videos.json` already exists.
+
+- If `guide/videos.json` already exists, skip `drg-videos`. The video workflow has
+  already run for this badge.
+- If `guide/videos.json` does not exist and the source JSON has no `resources`
+  anywhere, invoke `drg-videos` with the same `$ARGUMENTS`.
+
+Use the Skill tool to run only when both conditions pass:
+
+`drg-videos $ARGUMENTS`
+
+If `drg-videos` encounters an unrecoverable error, report it to the user and stop.
+Do not treat that as a failure of the completed guide-writing pass.
+
+### Phase 6: Resume Behavior
+
+If a guide already exists, do not overwrite it wholesale. Read what is there, preserve completed work, and continue editing the existing guide files.
+
+**Resume means finish, not restart.** When resuming a partially-written guide, complete all remaining pages without stopping. Do not summarize what has been done and ask whether to proceed — just continue writing from where the guide left off.
 
 Work page-by-page and turn scaffold placeholders into complete Scout-friendly content. Keep the deterministic scaffold structure intact unless the user explicitly asks for a structural change.
 
