@@ -1,0 +1,22 @@
+{
+  "badge": "scuba-diving",
+  "style_context": "Scuba training, underwater buoyancy control, coral reef diving, dive instruction, and aquatic ecosystems",
+  "images": [
+    {
+      "id": "scuba-overview-training-to-ocean",
+      "file": "_index.md",
+      "style": "illustrated",
+      "verb_family": "describe",
+      "description": "Educational split-scene illustration showing the progression from scuba training to open-water diving. Left side: a teenager learning scuba skills in a clear pool with instructor nearby, practicing calm breathing and buoyancy with mask, regulator, tank, and BCD visible. Right side: the same diver in clear open water above a healthy coral reef with fish, hovering with good trim and distance from the reef. No visible logos, no branding, no text in the image.",
+      "value": "Shows the transition from controlled pool training to real open-water reef diving in one side-by-side visual, helping readers grasp how scuba skills transfer between environments"
+    },
+    {
+      "id": "coral-reef-buoyancy-control",
+      "file": "req5.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Annotated underwater instructional photo of a diver hovering horizontally above a coral reef with excellent buoyancy control. Short horizontal callouts only identify key ideas such as neutral buoyancy, fins clear of coral, hands off the reef, and safe distance from fragile coral heads. Do not include any labels, callouts, or visible text describing the person's age, gender, race, ethnicity, or any other personal characteristic. Clear tropical water, small reef fish nearby, realistic scuba gear, no logos, no branding, no extra text.",
+      "value": "Shows the exact body position, fin clearance, and distance from coral that protect a reef, a spatial technique that text alone cannot teach as clearly"
+    }
+  ]
+}

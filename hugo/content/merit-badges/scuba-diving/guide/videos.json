@@ -1,0 +1,51 @@
+{
+  "badge": "scuba-diving",
+  "searched_at": "2026-04-06T03:59:35.783Z",
+  "videos": [
+    {
+      "id": "how-to-master-swimming-water-confidence-navy-seal-",
+      "file": "req2.md",
+      "requirement_path": "2",
+      "video_id": "CqCfZSHw31U",
+      "title": "How To MASTER Swimming + Water Confidence (Navy SEAL, Air Force Pararescue)",
+      "channel": "SOFPrepCoach",
+      "duration_seconds": 656000,
+      "views": 122953,
+      "url": "https://youtu.be/CqCfZSHw31U",
+      "status": "working",
+      "relevance": "This supports the page's main point that calm water comfort and efficient movement come before scuba gear skills. It gives Scouts a practical picture of the confidence and control that make later dive training safer.",
+      "query": "Scuba Diving Why swimming comes first",
+      "trust_score": 8
+    },
+    {
+      "id": "how-to-get-scuba-certified",
+      "file": "req4.md",
+      "requirement_path": "4",
+      "video_id": "PCcTAS53Inc",
+      "title": "How to Get Scuba Certified",
+      "channel": "PADI",
+      "duration_seconds": 192000,
+      "views": 323136,
+      "url": "https://youtu.be/PCcTAS53Inc",
+      "status": "working",
+      "relevance": "This is a concise overview from a major training agency that matches the page's explanation of the certification journey. It helps Scouts see how knowledge work, confined-water practice, and open-water training fit together.",
+      "query": "Scuba Diving before completing requirements through earn swi",
+      "trust_score": 8
+    },
+    {
+      "id": "5-scuba-jobs-that-can-take-you-anywhere-in-the-wor",
+      "file": "req6.md",
+      "requirement_path": "6",
+      "video_id": "DmKPYSH0gOA",
+      "title": "5 SCUBA Jobs that can take you anywhere in the world 🌎 // SCUBA diving careers",
+      "channel": "Ocean Scholar",
+      "duration_seconds": 744000,
+      "views": 15754,
+      "url": "https://youtu.be/DmKPYSH0gOA",
+      "status": "working",
+      "relevance": "This gives Scouts a quick comparison of multiple scuba career paths, which matches the page's goal of exploring several professions before choosing one to research more deeply. It is broad enough to support the career-overview section without duplicating the page word for word.",
+      "query": "Scuba Diving find out three career opportunities scuba tutor",
+      "trust_score": 0
+    }
+  ]
+}
