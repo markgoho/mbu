@@ -1,0 +1,38 @@
+{
+  "badge": "sports",
+  "style_context": "Organized sports participation, athlete training, injury prevention, equipment, and healthy performance habits",
+  "images": [
+    {
+      "id": "sports-first-aid-essentials",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Top-down view of an open sports first-aid kit on a clean bench with elastic wrap, instant cold pack, gauze pads, athletic tape, blister pads, antiseptic wipes, and a labeled water bottle, with simple callouts pointing to each item, no branding or decorative text",
+      "value": "Shows the actual appearance and grouping of core sports first-aid items in one glance, helping the reader recognize what belongs in a ready-to-use kit"
+    },
+    {
+      "id": "athlete-plate-balance",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean overhead diagram of a balanced athlete meal on a plate divided into grains, lean protein, vegetables, and fruit with a water bottle beside it, each section labeled with short single-word labels, bright simple educational layout",
+      "value": "Shows the visual balance of food groups on one plate, making proportion and meal composition easier to understand than text alone"
+    },
+    {
+      "id": "sports-choice-planner",
+      "file": "req4.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Simple planning worksheet diagram comparing two sports options side by side with clearly separated boxes for practice schedule, equipment, travel, competitions, and counselor approval, minimal horizontal labels only, no branding",
+      "value": "Shows how to compare two sports across practical planning factors in one visual layout, helping the reader structure a realistic choice"
+    },
+    {
+      "id": "playing-area-diagram-example",
+      "file": "req5.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Clean example sports field diagram with boundary lines, center area, scoring zones, sidelines, and player starting positions, viewed from above with short horizontal labels and arrows kept minimal, educational black-and-color linework",
+      "value": "Shows how a playing-area diagram should organize boundaries, zones, and positions spatially, which is hard to teach clearly with prose alone"
+    }
+  ]
+}
