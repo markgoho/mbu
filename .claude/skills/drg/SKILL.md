@@ -717,6 +717,12 @@ AI models hallucinate plausible-looking YouTube video IDs that don't correspond 
 
 4. **Fallback:** If no verified video can be found for a topic, use a `drg/external-link` to a reputable organization's video page instead of embedding a specific video. A guide page without a video is better than one with a broken embed.
 
+### Web Research
+
+A working MCP web fetch server is available in this environment and can be used for web research when current or external information would improve the guide. Use it for tasks like confirming recent mission updates, finding authoritative background on organizations or technologies, or checking reputable non-YouTube resources.
+
+Prefer official and high-authority sources first, such as NASA, ESA, JPL, NOAA, NPS, universities, museums, government agencies, and established nonprofits. Use web research to strengthen accuracy and recency, not to replace requirement-driven writing or official badge resources.
+
 ## Handling Requirement Modes
 
 The `data.json` `subrequirement_mode` field determines how sub-requirements relate:
