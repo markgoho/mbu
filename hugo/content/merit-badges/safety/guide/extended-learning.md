@@ -73,54 +73,57 @@ Preparedness work can look quiet from the outside, but it often prevents the ver
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Visit a local fire station or emergency operations center</h3>
-    <p>See how professionals plan for incidents before alarms go off. Ask how they practice communication, equipment checks, and response roles.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Attend a CERT or preparedness workshop</h3>
-    <p>Many communities offer disaster readiness classes for ordinary residents. These programs show how neighborhoods organize before and after emergencies.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Shadow a building or workplace inspection</h3>
-    <p>With permission and an adult, learn how inspectors look for hazards most people miss. You may never look at exits, wiring, or storage the same way again.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Lead a troop safety review before an outing</h3>
-    <p>Help create a weather, gear, transport, and communication checklist for a real event. That turns badge knowledge into leadership.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Visit a local fire station or emergency operations center"
+  details="See how professionals plan for incidents before alarms go off. Ask how they practice communication, equipment checks, and response roles."
+>}}
+
+{{< drg/experience-card
+  title="Attend a CERT or preparedness workshop"
+  details="Many communities offer disaster readiness classes for ordinary residents. These programs show how neighborhoods organize before and after emergencies."
+>}}
+
+{{< drg/experience-card
+  title="Shadow a building or workplace inspection"
+  details="With permission and an adult, learn how inspectors look for hazards most people miss. You may never look at exits, wiring, or storage the same way again."
+>}}
+
+{{< drg/experience-card
+  title="Lead a troop safety review before an outing"
+  details="Help create a weather, gear, transport, and communication checklist for a real event. That turns badge knowledge into leadership."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>National Fire Protection Association (NFPA)</h3>
-    <p>A leading organization for fire codes, prevention education, and home fire safety resources.</p>
-    <p><a href="https://www.nfpa.org/">nfpa.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Ready.gov</h3>
-    <p>Federal preparedness guidance for families, disasters, evacuation planning, and emergency kits.</p>
-    <p><a href="https://www.ready.gov/">ready.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Occupational Safety and Health Administration (OSHA)</h3>
-    <p>Offers workplace safety guidance, career information, and examples of how safety rules protect workers.</p>
-    <p><a href="https://www.osha.gov/">osha.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Center for Missing & Exploited Children</h3>
-    <p>Provides resources on child safety, online exploitation prevention, and reporting concerns.</p>
-    <p><a href="https://www.missingkids.org/">missingkids.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Cybersecurity and Infrastructure Security Agency (CISA)</h3>
-    <p>Shares practical advice on cybersecurity, suspicious activity awareness, and protecting systems and communities.</p>
-    <p><a href="https://www.cisa.gov/">cisa.gov</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="National Fire Protection Association (NFPA)"
+  url="https://www.nfpa.org/"
+  description="A leading organization for fire codes, prevention education, and home fire safety resources."
+>}}
+
+{{< drg/org-card
+  name="Ready.gov"
+  url="https://www.ready.gov/"
+  description="Federal preparedness guidance for families, disasters, evacuation planning, and emergency kits."
+>}}
+
+{{< drg/org-card
+  name="Occupational Safety and Health Administration (OSHA)"
+  url="https://www.osha.gov/"
+  description="Offers workplace safety guidance, career information, and examples of how safety rules protect workers."
+>}}
+
+{{< drg/org-card
+  name="National Center for Missing & Exploited Children"
+  url="https://www.missingkids.org/"
+  description="Provides resources on child safety, online exploitation prevention, and reporting concerns."
+>}}
+
+{{< drg/org-card
+  name="Cybersecurity and Infrastructure Security Agency (CISA)"
+  url="https://www.cisa.gov/"
+  description="Shares practical advice on cybersecurity, suspicious activity awareness, and protecting systems and communities."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the requirements and explored how real safety systems work."

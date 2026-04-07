@@ -57,58 +57,62 @@ That is how interests become skills. A Scout who likes history may start visitin
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Visit your public library's research desk</h3>
-    <p>Ask a librarian how students can use databases, citation tools, local history collections, or homework help services. You may discover research tools your school classmates do not even know exist.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Attend a college, trade school, or career fair</h3>
-    <p>These events help you compare educational paths side by side. Ask what preparation matters most in high school and what students wish they had done earlier.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Join a school club with a real output</h3>
-    <p>Yearbook, robotics, theater, debate, student media, service clubs, and similar groups teach organization and teamwork because the work leads to something visible.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Shadow an adult for part of a workday</h3>
-    <p>With parent, guardian, and workplace approval, observing real work can show you how communication, training, and problem-solving look outside school.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Create a personal mini-research project</h3>
-    <p>Pick a topic you care about, gather three strong sources, take notes, and explain what you learned to a friend, troop, or family member. That turns curiosity into practice.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Visit your public library's research desk"
+  details="Ask a librarian how students can use databases, citation tools, local history collections, or homework help services. You may discover research tools your school classmates do not even know exist."
+>}}
+
+{{< drg/experience-card
+  title="Attend a college, trade school, or career fair"
+  details="These events help you compare educational paths side by side. Ask what preparation matters most in high school and what students wish they had done earlier."
+>}}
+
+{{< drg/experience-card
+  title="Join a school club with a real output"
+  details="Yearbook, robotics, theater, debate, student media, service clubs, and similar groups teach organization and teamwork because the work leads to something visible."
+>}}
+
+{{< drg/experience-card
+  title="Shadow an adult for part of a workday"
+  details="With parent, guardian, and workplace approval, observing real work can show you how communication, training, and problem-solving look outside school."
+>}}
+
+{{< drg/experience-card
+  title="Create a personal mini-research project"
+  details="Pick a topic you care about, gather three strong sources, take notes, and explain what you learned to a friend, troop, or family member. That turns curiosity into practice."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Institute of Museum and Library Services</h3>
-    <p>Supports libraries and museums across the United States and helps explain how these institutions serve community learning.</p>
-    <p><a href="https://www.imls.gov/">imls.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>CareerOneStop</h3>
-    <p>A U.S. Department of Labor resource with career profiles, training pathways, salary information, and job outlook tools for many different fields.</p>
-    <p><a href="https://www.careeronestop.org/">careeronestop.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Occupational Outlook Handbook</h3>
-    <p>Published by the U.S. Bureau of Labor Statistics, this resource gives reliable information about job duties, education, pay, and projected growth.</p>
-    <p><a href="https://www.bls.gov/ooh/">bls.gov/ooh</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Future Business Leaders of America (FBLA)</h3>
-    <p>A student organization that helps young people build leadership, communication, and career-readiness skills through competitions and chapter activities.</p>
-    <p><a href="https://www.fbla.org/">fbla.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Khan Academy</h3>
-    <p>Offers free lessons and practice in math, science, economics, computing, and more. Useful when you need a different explanation than the one you got in class.</p>
-    <p><a href="https://www.khanacademy.org/">khanacademy.org</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="Institute of Museum and Library Services"
+  url="https://www.imls.gov/"
+  description="Supports libraries and museums across the United States and helps explain how these institutions serve community learning."
+>}}
+
+{{< drg/org-card
+  name="CareerOneStop"
+  url="https://www.careeronestop.org/"
+  description="A U.S. Department of Labor resource with career profiles, training pathways, salary information, and job outlook tools for many different fields."
+>}}
+
+{{< drg/org-card
+  name="Occupational Outlook Handbook"
+  url="https://www.bls.gov/ooh/"
+  description="Published by the U.S. Bureau of Labor Statistics, this resource gives reliable information about job duties, education, pay, and projected growth."
+>}}
+
+{{< drg/org-card
+  name="Future Business Leaders of America (FBLA)"
+  url="https://www.fbla.org/"
+  description="A student organization that helps young people build leadership, communication, and career-readiness skills through competitions and chapter activities."
+>}}
+
+{{< drg/org-card
+  name="Khan Academy"
+  url="https://www.khanacademy.org/"
+  description="Offers free lessons and practice in math, science, economics, computing, and more. Useful when you need a different explanation than the one you got in class."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the badge and looked at how scholarship becomes a lifelong habit."

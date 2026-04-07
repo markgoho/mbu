@@ -69,54 +69,57 @@ When you learn to listen carefully, ask good questions, explain value, and follo
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Shadow a local small-business owner</h3>
-    <p>Ask how they attract customers, handle repeat business, and decide what to promote. You will see that sales and operations are closely connected.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Volunteer for a troop or school fundraiser</h3>
-    <p>Try writing the message, organizing the booth, or tracking results. Fundraising is one of the easiest real places to practice ethical salesmanship.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Visit a local chamber of commerce event</h3>
-    <p>Business networking events show how adults introduce themselves, describe value quickly, and build professional relationships.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Help with a school store or concession stand</h3>
-    <p>That setting gives quick feedback on customer questions, product display, pricing, and transaction flow.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Shadow a local small-business owner"
+  details="Ask how they attract customers, handle repeat business, and decide what to promote. You will see that sales and operations are closely connected."
+>}}
+
+{{< drg/experience-card
+  title="Volunteer for a troop or school fundraiser"
+  details="Try writing the message, organizing the booth, or tracking results. Fundraising is one of the easiest real places to practice ethical salesmanship."
+>}}
+
+{{< drg/experience-card
+  title="Visit a local chamber of commerce event"
+  details="Business networking events show how adults introduce themselves, describe value quickly, and build professional relationships."
+>}}
+
+{{< drg/experience-card
+  title="Help with a school store or concession stand"
+  details="That setting gives quick feedback on customer questions, product display, pricing, and transaction flow."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>SCORE</h3>
-    <p>Provides mentoring and free business education for entrepreneurs and small businesses. Great for learning how selling fits into business planning.</p>
-    <p><a href="https://www.score.org/">score.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>U.S. Small Business Administration</h3>
-    <p>Offers practical guidance on market research, planning, and understanding customers. Helpful if salesmanship leads you toward entrepreneurship.</p>
-    <p><a href="https://www.sba.gov/">sba.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Future Business Leaders of America (FBLA)</h3>
-    <p>A student organization that helps young people practice communication, leadership, business planning, and competitive events.</p>
-    <p><a href="https://www.fbla.org/">fbla.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>CareerOneStop</h3>
-    <p>A career exploration site sponsored by the U.S. Department of Labor, with information on sales jobs, training, and skill pathways.</p>
-    <p><a href="https://www.careeronestop.org/">careeronestop.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Bureau of Labor Statistics Occupational Outlook Handbook</h3>
-    <p>Reliable career information on sales roles, pay ranges, and expected job growth across different industries.</p>
-    <p><a href="https://www.bls.gov/ooh/">bls.gov/ooh</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="SCORE"
+  url="https://www.score.org/"
+  description="Provides mentoring and free business education for entrepreneurs and small businesses. Great for learning how selling fits into business planning."
+>}}
+
+{{< drg/org-card
+  name="U.S. Small Business Administration"
+  url="https://www.sba.gov/"
+  description="Offers practical guidance on market research, planning, and understanding customers. Helpful if salesmanship leads you toward entrepreneurship."
+>}}
+
+{{< drg/org-card
+  name="Future Business Leaders of America (FBLA)"
+  url="https://www.fbla.org/"
+  description="A student organization that helps young people practice communication, leadership, business planning, and competitive events."
+>}}
+
+{{< drg/org-card
+  name="CareerOneStop"
+  url="https://www.careeronestop.org/"
+  description="A career exploration site sponsored by the U.S. Department of Labor, with information on sales jobs, training, and skill pathways."
+>}}
+
+{{< drg/org-card
+  name="Bureau of Labor Statistics Occupational Outlook Handbook"
+  url="https://www.bls.gov/ooh/"
+  description="Reliable career information on sales roles, pay ranges, and expected job growth across different industries."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the badge and looked at how salesmanship connects to trust, value, and careers."

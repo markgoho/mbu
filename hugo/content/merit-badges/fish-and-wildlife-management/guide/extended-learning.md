@@ -56,67 +56,67 @@ The Yellowstone wolf case has inspired reintroduction proposals and debates acro
 
 The field comes alive when you're actually in it. Here are experiences that will take your knowledge from this guide and turn it into something real:
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Volunteer for a State Wildlife Survey</h3>
-  <p>Most state fish and wildlife agencies use volunteers for deer spotlight counts, breeding bird surveys, frog calling surveys, and stream monitoring. Contact your state agency's wildlife division and ask how to sign up. You'll work alongside professional biologists, collect real data, and see exactly how management operates.</p>
-</div>
+{{< drg/experience-card
+  title="Volunteer for a State Wildlife Survey"
+  details="Most state fish and wildlife agencies use volunteers for deer spotlight counts, breeding bird surveys, frog calling surveys, and stream monitoring. Contact your state agency's wildlife division and ask how to sign up. You'll work alongside professional biologists, collect real data, and see exactly how management operates."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Visit a State Fish Hatchery</h3>
-  <p>Nearly every state operates at least one fish hatchery, and most offer public tours. You'll see fish at every life stage from egg to stocking size, watch feeding and water quality operations, and often talk to a hatchery biologist about how stocking programs are managed. Hatcheries are usually free to visit and run well-organized tours for Scout groups.</p>
-</div>
+{{< drg/experience-card
+  title="Visit a State Fish Hatchery"
+  details="Nearly every state operates at least one fish hatchery, and most offer public tours. You'll see fish at every life stage from egg to stocking size, watch feeding and water quality operations, and often talk to a hatchery biologist about how stocking programs are managed. Hatcheries are usually free to visit and run well-organized tours for Scout groups."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Attend a National Wildlife Refuge Open House</h3>
-  <p>The U.S. Fish and Wildlife Service manages 568 National Wildlife Refuges covering 150 million acres. Many refuges host public events — waterfowl migration viewing programs, eagle surveys, birding walks, and environmental education days. Find your nearest refuge at fws.gov/refuges and check their events calendar.</p>
-</div>
+{{< drg/experience-card
+  title="Attend a National Wildlife Refuge Open House"
+  details="The U.S. Fish and Wildlife Service manages 568 National Wildlife Refuges covering 150 million acres. Many refuges host public events — waterfowl migration viewing programs, eagle surveys, birding walks, and environmental education days. Find your nearest refuge at fws.gov/refuges and check their events calendar."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Participate in a Christmas Bird Count</h3>
-  <p>Running since 1900, the Audubon Society's Christmas Bird Count is the longest-running citizen science wildlife census in North America. Each year in late December and early January, thousands of observers cover 2,600 count circles across the Western Hemisphere. Your data from a single morning contributes to a population trend dataset that spans more than a century. All skill levels welcome — beginners pair with experienced birders. Find your local count at audubon.org/conservation/science/christmas-bird-count.</p>
-</div>
+{{< drg/experience-card
+  title="Participate in a Christmas Bird Count"
+  details="Running since 1900, the Audubon Society's Christmas Bird Count is the longest-running citizen science wildlife census in North America. Each year in late December and early January, thousands of observers cover 2,600 count circles across the Western Hemisphere. Your data from a single morning contributes to a population trend dataset that spans more than a century. All skill levels welcome — beginners pair with experienced birders. Find your local count at audubon.org/conservation/science/christmas-bird-count."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Join a Stream Macroinvertebrate Monitoring Team</h3>
-  <p>Stream bioassessment monitoring programs exist in most states, usually run by state environmental agencies or watershed councils. Volunteers are trained to sample and identify aquatic invertebrates, then monitor assigned stream reaches on a regular schedule. It's one of the most hands-on ways to participate in water quality science and connects directly to fish habitat management.</p>
-</div>
+{{< drg/experience-card
+  title="Join a Stream Macroinvertebrate Monitoring Team"
+  details="Stream bioassessment monitoring programs exist in most states, usually run by state environmental agencies or watershed councils. Volunteers are trained to sample and identify aquatic invertebrates, then monitor assigned stream reaches on a regular schedule. It's one of the most hands-on ways to participate in water quality science and connects directly to fish habitat management."
+>}}
 
 ## F. Organizations Working on Fish and Wildlife
 
 These are the leading organizations at different scales of fish and wildlife conservation — each doing work that directly connects to what you've learned in this badge:
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">The Wildlife Society</h3>
-  <p class="drg-org-card__mission">The professional organization for wildlife biologists and managers. Publishes The Journal of Wildlife Management, sets professional standards, and runs student chapters at universities.</p>
-  <a href="https://wildlife.org/" class="drg-org-card__link">wildlife.org</a>
-</div>
+{{< drg/org-card
+  name="The Wildlife Society"
+  url="https://wildlife.org/"
+  description="The professional organization for wildlife biologists and managers. Publishes The Journal of Wildlife Management, sets professional standards, and runs student chapters at universities."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">American Fisheries Society</h3>
-  <p class="drg-org-card__mission">The primary professional organization for fisheries scientists. Publishes peer-reviewed journals, maintains career resources, and advocates for science-based fisheries management.</p>
-  <a href="https://fisheries.org/" class="drg-org-card__link">fisheries.org</a>
-</div>
+{{< drg/org-card
+  name="American Fisheries Society"
+  url="https://fisheries.org/"
+  description="The primary professional organization for fisheries scientists. Publishes peer-reviewed journals, maintains career resources, and advocates for science-based fisheries management."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Ducks Unlimited</h3>
-  <p class="drg-org-card__mission">The world's largest waterfowl conservation organization, focused on protecting and restoring wetland habitat across North America. Has protected more than 15 million acres since its founding in 1937.</p>
-  <a href="https://www.ducks.org/" class="drg-org-card__link">ducks.org</a>
-</div>
+{{< drg/org-card
+  name="Ducks Unlimited"
+  url="https://www.ducks.org/"
+  description="The world's largest waterfowl conservation organization, focused on protecting and restoring wetland habitat across North America. Has protected more than 15 million acres since its founding in 1937."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Trout Unlimited</h3>
-  <p class="drg-org-card__mission">Focused on protecting and restoring cold water fisheries. Operates through 300 local chapters with active stream restoration, advocacy, and education programs. Has a youth program specifically for young anglers and conservationists.</p>
-  <a href="https://www.tu.org/" class="drg-org-card__link">tu.org</a>
-</div>
+{{< drg/org-card
+  name="Trout Unlimited"
+  url="https://www.tu.org/"
+  description="Focused on protecting and restoring cold water fisheries. Operates through 300 local chapters with active stream restoration, advocacy, and education programs. Has a youth program specifically for young anglers and conservationists."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">National Wildlife Federation</h3>
-  <p class="drg-org-card__mission">One of the largest conservation organizations in the U.S., working on habitat protection, wildlife conservation policy, and public education. Their Certified Wildlife Habitat program has recognized more than 250,000 properties.</p>
-  <a href="https://www.nwf.org/" class="drg-org-card__link">nwf.org</a>
-</div>
+{{< drg/org-card
+  name="National Wildlife Federation"
+  url="https://www.nwf.org/"
+  description="One of the largest conservation organizations in the U.S., working on habitat protection, wildlife conservation policy, and public education. Their Certified Wildlife Habitat program has recognized more than 250,000 properties."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Association of Fish and Wildlife Agencies</h3>
-  <p class="drg-org-card__mission">The organization representing all 50 state fish and wildlife agencies. Coordinates interstate wildlife management, advocates for federal funding for state programs, and publishes policy positions on conservation issues.</p>
-  <a href="https://www.fishwildlife.org/" class="drg-org-card__link">fishwildlife.org</a>
-</div>
+{{< drg/org-card
+  name="Association of Fish and Wildlife Agencies"
+  url="https://www.fishwildlife.org/"
+  description="The organization representing all 50 state fish and wildlife agencies. Coordinates interstate wildlife management, advocates for federal funding for state programs, and publishes policy positions on conservation issues."
+>}}

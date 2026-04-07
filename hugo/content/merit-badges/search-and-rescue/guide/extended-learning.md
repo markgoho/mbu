@@ -32,58 +32,62 @@ That is one reason the badge spends so much time on prevention, essentials, and 
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Attend a county emergency management open house</h3>
-    <p>Many counties host preparedness fairs, severe-weather events, or public-safety demonstrations. These events let you see command-post tools, response vehicles, and how agencies explain emergency plans to the public.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Take part in a map-and-compass field day</h3>
-    <p>Ask your troop, camp staff, or local outdoor club whether they run navigation practice events. Search planning makes much more sense when you have to orient a map and make decisions outdoors.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Visit a state park or ranger station</h3>
-    <p>Rangers often think about lost visitors, weather hazards, trail safety, and communication limits every day. A visit can show you how prevention and response fit together in the real world.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Take a first-aid or CPR course beyond the badge</h3>
-    <p>SAR depends on patient care after the subject is found. More medical training gives you a stronger foundation for future rescue, public-safety, and service roles.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Observe a public safety exercise</h3>
-    <p>Some agencies allow the public or youth groups to observe drills, preparedness days, or mock incident exercises. Watching a briefing and debrief in person makes ICS much easier to understand.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Attend a county emergency management open house"
+  details="Many counties host preparedness fairs, severe-weather events, or public-safety demonstrations. These events let you see command-post tools, response vehicles, and how agencies explain emergency plans to the public."
+>}}
+
+{{< drg/experience-card
+  title="Take part in a map-and-compass field day"
+  details="Ask your troop, camp staff, or local outdoor club whether they run navigation practice events. Search planning makes much more sense when you have to orient a map and make decisions outdoors."
+>}}
+
+{{< drg/experience-card
+  title="Visit a state park or ranger station"
+  details="Rangers often think about lost visitors, weather hazards, trail safety, and communication limits every day. A visit can show you how prevention and response fit together in the real world."
+>}}
+
+{{< drg/experience-card
+  title="Take a first-aid or CPR course beyond the badge"
+  details="SAR depends on patient care after the subject is found. More medical training gives you a stronger foundation for future rescue, public-safety, and service roles."
+>}}
+
+{{< drg/experience-card
+  title="Observe a public safety exercise"
+  details="Some agencies allow the public or youth groups to observe drills, preparedness days, or mock incident exercises. Watching a briefing and debrief in person makes ICS much easier to understand."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>National Association for Search and Rescue (NASAR)</h3>
-    <p>A major SAR education organization that supports training, standards, and public-safety awareness.</p>
-    <p><a href="https://www.nasar.org/">nasar.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Air Force Rescue Coordination Center</h3>
-    <p>The inland federal coordination center referenced in the merit badge pamphlet resources for many search-and-rescue situations in the United States.</p>
-    <p><a href="https://www.1af.acc.af.mil/Units/AFRCC/">1af.acc.af.mil/Units/AFRCC/</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Federal Emergency Management Agency (FEMA)</h3>
-    <p>Provides training, ICS resources, preparedness guidance, and emergency-management education used across the country.</p>
-    <p><a href="https://www.fema.gov/">fema.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Mountain Rescue Association</h3>
-    <p>A strong example of specialized rescue organizations working in steep and difficult terrain.</p>
-    <p><a href="https://mra.org/">mra.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Ski Patrol</h3>
-    <p>Supports mountain safety, outdoor emergency care, and volunteer patrol service in winter environments.</p>
-    <p><a href="https://www.nsp.org/">nsp.org</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="National Association for Search and Rescue (NASAR)"
+  url="https://www.nasar.org/"
+  description="A major SAR education organization that supports training, standards, and public-safety awareness."
+>}}
+
+{{< drg/org-card
+  name="Air Force Rescue Coordination Center"
+  url="https://www.1af.acc.af.mil/Units/AFRCC/"
+  description="The inland federal coordination center referenced in the merit badge pamphlet resources for many search-and-rescue situations in the United States."
+>}}
+
+{{< drg/org-card
+  name="Federal Emergency Management Agency (FEMA)"
+  url="https://www.fema.gov/"
+  description="Provides training, ICS resources, preparedness guidance, and emergency-management education used across the country."
+>}}
+
+{{< drg/org-card
+  name="Mountain Rescue Association"
+  url="https://mra.org/"
+  description="A strong example of specialized rescue organizations working in steep and difficult terrain."
+>}}
+
+{{< drg/org-card
+  name="National Ski Patrol"
+  url="https://www.nsp.org/"
+  description="Supports mountain safety, outdoor emergency care, and volunteer patrol service in winter environments."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the badge and explored how SAR keeps growing through training, service, and real-world practice."

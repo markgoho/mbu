@@ -57,46 +57,48 @@ The more traditions you compare, the more you realize there is no single "correc
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Take a community ceramics class</h3>
-    <p>Look for parks departments, art centers, or community colleges that offer beginner wheel or hand-building classes.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Visit a pottery market or art fair</h3>
-    <p>Compare many makers in one day and notice how different artists solve the same problems of form and surface.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Watch a live firing or demo</h3>
-    <p>Seeing kiln loading, raku firing, or a wheel demonstration gives you timing and scale that videos cannot fully show.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Start a pottery notebook</h3>
-    <p>Keep sketches, glaze ideas, vocabulary, artist names, and notes from visits so your learning keeps building over time.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Take a community ceramics class"
+  details="Look for parks departments, art centers, or community colleges that offer beginner wheel or hand-building classes."
+>}}
+
+{{< drg/experience-card
+  title="Visit a pottery market or art fair"
+  details="Compare many makers in one day and notice how different artists solve the same problems of form and surface."
+>}}
+
+{{< drg/experience-card
+  title="Watch a live firing or demo"
+  details="Seeing kiln loading, raku firing, or a wheel demonstration gives you timing and scale that videos cannot fully show."
+>}}
+
+{{< drg/experience-card
+  title="Start a pottery notebook"
+  details="Keep sketches, glaze ideas, vocabulary, artist names, and notes from visits so your learning keeps building over time."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>The American Ceramic Society</h3>
-    <p>A major organization connecting ceramics art, science, engineering, and industry.</p>
-    <p><a href="https://ceramics.org/">ceramics.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Council on Education for the Ceramic Arts</h3>
-    <p>Supports ceramic art, exhibitions, teaching, and professional development.</p>
-    <p><a href="https://nceca.net/">nceca.net</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Archie Bray Foundation</h3>
-    <p>A well-known ceramics center focused on residencies, exhibitions, and artist development.</p>
-    <p><a href="https://archiebray.org/">archiebray.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Ceramic Arts Network</h3>
-    <p>Offers articles, videos, and technique resources for ceramic artists and teachers.</p>
-    <p><a href="https://ceramicartsnetwork.org/">ceramicartsnetwork.org</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="The American Ceramic Society"
+  url="https://ceramics.org/"
+  description="A major organization connecting ceramics art, science, engineering, and industry."
+>}}
+
+{{< drg/org-card
+  name="National Council on Education for the Ceramic Arts"
+  url="https://nceca.net/"
+  description="Supports ceramic art, exhibitions, teaching, and professional development."
+>}}
+
+{{< drg/org-card
+  name="Archie Bray Foundation"
+  url="https://archiebray.org/"
+  description="A well-known ceramics center focused on residencies, exhibitions, and artist development."
+>}}
+
+{{< drg/org-card
+  name="Ceramic Arts Network"
+  url="https://ceramicartsnetwork.org/"
+  description="Offers articles, videos, and technique resources for ceramic artists and teachers."
+>}}

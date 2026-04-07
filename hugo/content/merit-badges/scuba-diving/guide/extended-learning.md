@@ -48,49 +48,51 @@ The best divers often do both. Travel expands your idea of what diving can be. L
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Visit a local dive shop</h3>
-    <p>Ask how classes are scheduled, what equipment beginners usually rent first, and what local conditions challenge new divers most.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Attend a pool skills night or refresher session</h3>
-    <p>Watching experienced divers practice mask clearing, buoyancy drills, or rescue setups can teach you how much calm repetition matters.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Join an underwater cleanup or conservation event</h3>
-    <p>If you are certified and the event is age-appropriate, this is one of the best ways to connect scuba with service.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Visit an aquarium or marine science center</h3>
-    <p>Pay attention to habitat design, species relationships, and the educational work behind exhibits. It connects directly to Req 5 and Req 6.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Visit a local dive shop"
+  details="Ask how classes are scheduled, what equipment beginners usually rent first, and what local conditions challenge new divers most."
+>}}
+
+{{< drg/experience-card
+  title="Attend a pool skills night or refresher session"
+  details="Watching experienced divers practice mask clearing, buoyancy drills, or rescue setups can teach you how much calm repetition matters."
+>}}
+
+{{< drg/experience-card
+  title="Join an underwater cleanup or conservation event"
+  details="If you are certified and the event is age-appropriate, this is one of the best ways to connect scuba with service."
+>}}
+
+{{< drg/experience-card
+  title="Visit an aquarium or marine science center"
+  details="Pay attention to habitat design, species relationships, and the educational work behind exhibits. It connects directly to Req 5 and Req 6."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Scouting America Aquatics</h3>
-    <p>Scouting's aquatics resources connect water skills, policy, and training across many programs.</p>
-    <p><a href="https://www.scouting.org/health-and-safety/aquatics/">scouting.org/health-and-safety/aquatics/</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>NOAA Ocean Service</h3>
-    <p>Offers solid background on coasts, reefs, habitats, and ocean science that helps divers understand where they dive.</p>
-    <p><a href="https://oceanservice.noaa.gov/">oceanservice.noaa.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>American Red Cross</h3>
-    <p>Useful for keeping first-aid, CPR, and emergency-response skills strong alongside diving skills.</p>
-    <p><a href="https://www.redcross.org/take-a-class/cpr/cpr-training">redcross.org/take-a-class/cpr/cpr-training</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Scouting America Safety Afloat</h3>
-    <p>Even though scuba has its own training path, this page is a good reminder that water safety systems always matter.</p>
-    <p><a href="https://www.scouting.org/health-and-safety/safety-afloat/">scouting.org/health-and-safety/safety-afloat/</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="Scouting America Aquatics"
+  url="https://www.scouting.org/health-and-safety/aquatics/"
+  description="Scouting's aquatics resources connect water skills, policy, and training across many programs."
+>}}
+
+{{< drg/org-card
+  name="NOAA Ocean Service"
+  url="https://oceanservice.noaa.gov/"
+  description="Offers solid background on coasts, reefs, habitats, and ocean science that helps divers understand where they dive."
+>}}
+
+{{< drg/org-card
+  name="American Red Cross"
+  url="https://www.redcross.org/take-a-class/cpr/cpr-training"
+  description="Useful for keeping first-aid, CPR, and emergency-response skills strong alongside diving skills."
+>}}
+
+{{< drg/org-card
+  name="Scouting America Safety Afloat"
+  url="https://www.scouting.org/health-and-safety/safety-afloat/"
+  description="Even though scuba has its own training path, this page is a good reminder that water safety systems always matter."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the badge and explored how divers keep learning after certification."

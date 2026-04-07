@@ -40,54 +40,57 @@ The light from the Sun takes a little more than eight minutes to reach Earth. Ev
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Visit a planetarium or science museum</h3>
-    <p>Look for live sky shows, scale models of the solar system, mission exhibits, or engineering displays that explain how spacecraft work.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Watch a real launch stream</h3>
-    <p>Follow a NASA or commercial launch from countdown to orbit insertion. Pay attention to how many teams and systems have to work together.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Join a model rocketry launch day</h3>
-    <p>Flying with an organized club can teach you more about safe launches, weather, recovery, and flight troubleshooting than launching alone.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Attend a public star party</h3>
-    <p>Many astronomy clubs host open observing nights where you can see planets, the Moon, and deep-sky objects through telescopes.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Visit a planetarium or science museum"
+  details="Look for live sky shows, scale models of the solar system, mission exhibits, or engineering displays that explain how spacecraft work."
+>}}
+
+{{< drg/experience-card
+  title="Watch a real launch stream"
+  details="Follow a NASA or commercial launch from countdown to orbit insertion. Pay attention to how many teams and systems have to work together."
+>}}
+
+{{< drg/experience-card
+  title="Join a model rocketry launch day"
+  details="Flying with an organized club can teach you more about safe launches, weather, recovery, and flight troubleshooting than launching alone."
+>}}
+
+{{< drg/experience-card
+  title="Attend a public star party"
+  details="Many astronomy clubs host open observing nights where you can see planets, the Moon, and deep-sky objects through telescopes."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>NASA</h3>
-    <p>The main U.S. civil space agency, with mission updates, educational resources, images, videos, and career paths across science and engineering.</p>
-    <p><a href="https://www.nasa.gov/">nasa.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Jet Propulsion Laboratory (JPL)</h3>
-    <p>Leads many robotic planetary missions and shares excellent mission explainers, engineering stories, and image galleries.</p>
-    <p><a href="https://www.jpl.nasa.gov/">jpl.nasa.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>European Space Agency (ESA)</h3>
-    <p>A major international partner in space science, astronomy, Earth observation, and planetary exploration.</p>
-    <p><a href="https://www.esa.int/">esa.int</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Association of Rocketry (NAR)</h3>
-    <p>Offers model rocketry safety guidance, clubs, launches, contests, and resources for people who want to keep flying rockets.</p>
-    <p><a href="https://www.nar.org/">nar.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>The Planetary Society</h3>
-    <p>Supports public engagement in space science and shares articles, advocacy, and mission explainers for curious learners.</p>
-    <p><a href="https://www.planetary.org/">planetary.org</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="NASA"
+  url="https://www.nasa.gov/"
+  description="The main U.S. civil space agency, with mission updates, educational resources, images, videos, and career paths across science and engineering."
+>}}
+
+{{< drg/org-card
+  name="Jet Propulsion Laboratory (JPL)"
+  url="https://www.jpl.nasa.gov/"
+  description="Leads many robotic planetary missions and shares excellent mission explainers, engineering stories, and image galleries."
+>}}
+
+{{< drg/org-card
+  name="European Space Agency (ESA)"
+  url="https://www.esa.int/"
+  description="A major international partner in space science, astronomy, Earth observation, and planetary exploration."
+>}}
+
+{{< drg/org-card
+  name="National Association of Rocketry (NAR)"
+  url="https://www.nar.org/"
+  description="Offers model rocketry safety guidance, clubs, launches, contests, and resources for people who want to keep flying rockets."
+>}}
+
+{{< drg/org-card
+  name="The Planetary Society"
+  url="https://www.planetary.org/"
+  description="Supports public engagement in space science and shares articles, advocacy, and mission explainers for curious learners."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the badge and looked at deeper science, real experiences, and places to keep learning."

@@ -32,54 +32,54 @@ A great next step is to ask a local conservation district, extension office, sta
 
 ## Real-World Experiences
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Join a Stream Cleanup or Monitoring Day</h3>
-  <p>Many watershed groups, parks, and conservation districts run stream cleanups, turbidity checks, or water-quality sampling days. These events let you see how sediment, litter, and runoff problems are documented in the real world.</p>
-</div>
+{{< drg/experience-card
+  title="Join a Stream Cleanup or Monitoring Day"
+  details="Many watershed groups, parks, and conservation districts run stream cleanups, turbidity checks, or water-quality sampling days. These events let you see how sediment, litter, and runoff problems are documented in the real world."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Visit a County Conservation District or NRCS Office Event</h3>
-  <p>Local conservation professionals often host field days about cover crops, streambank repair, grazing management, native planting, and soil surveys. These are excellent places to meet people who work on the same issues covered in this badge.</p>
-</div>
+{{< drg/experience-card
+  title="Visit a County Conservation District or NRCS Office Event"
+  details="Local conservation professionals often host field days about cover crops, streambank repair, grazing management, native planting, and soil surveys. These are excellent places to meet people who work on the same issues covered in this badge."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Help Build a Rain Garden or Bioswale</h3>
-  <p>Rain gardens and bioswales slow runoff and help water soak into the ground instead of racing across pavement. Assisting with one teaches you how design, plants, and drainage all work together.</p>
-</div>
+{{< drg/experience-card
+  title="Help Build a Rain Garden or Bioswale"
+  details="Rain gardens and bioswales slow runoff and help water soak into the ground instead of racing across pavement. Assisting with one teaches you how design, plants, and drainage all work together."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Map Problem Spots at Camp After a Storm</h3>
-  <p>After a heavy rain, walk camp roads, trails, and drainage channels with permission. Note puddling, muddy runoff, exposed roots, or fresh sediment. This kind of observation is how many useful conservation projects begin.</p>
-</div>
+{{< drg/experience-card
+  title="Map Problem Spots at Camp After a Storm"
+  details="After a heavy rain, walk camp roads, trails, and drainage channels with permission. Note puddling, muddy runoff, exposed roots, or fresh sediment. This kind of observation is how many useful conservation projects begin."
+>}}
 
 ## Organizations
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Natural Resources Conservation Service (NRCS)</h3>
-  <p class="drg-org-card__mission">A U.S. Department of Agriculture agency that works with landowners on soil health, water quality, erosion control, grazing management, wetlands, and conservation planning.</p>
-  <a href="https://www.nrcs.usda.gov/" class="drg-org-card__link">nrcs.usda.gov</a>
-</div>
+{{< drg/org-card
+  name="Natural Resources Conservation Service (NRCS)"
+  url="https://www.nrcs.usda.gov/"
+  description="A U.S. Department of Agriculture agency that works with landowners on soil health, water quality, erosion control, grazing management, wetlands, and conservation planning."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">U.S. Geological Survey Water Resources</h3>
-  <p class="drg-org-card__mission">Tracks streamflow, groundwater, drought, and water science across the country. A strong source if you want to keep learning about watersheds, aquifers, and water data.</p>
-  <a href="https://www.usgs.gov/mission-areas/water-resources" class="drg-org-card__link">usgs.gov/mission-areas/water-resources</a>
-</div>
+{{< drg/org-card
+  name="U.S. Geological Survey Water Resources"
+  url="https://www.usgs.gov/mission-areas/water-resources"
+  description="Tracks streamflow, groundwater, drought, and water science across the country. A strong source if you want to keep learning about watersheds, aquifers, and water data."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Soil and Water Conservation Society</h3>
-  <p class="drg-org-card__mission">A professional organization focused on research, policy, and practical conservation methods for soil health, water quality, and resilient land use.</p>
-  <a href="https://www.swcs.org/" class="drg-org-card__link">swcs.org</a>
-</div>
+{{< drg/org-card
+  name="Soil and Water Conservation Society"
+  url="https://www.swcs.org/"
+  description="A professional organization focused on research, policy, and practical conservation methods for soil health, water quality, and resilient land use."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">National Association of Conservation Districts</h3>
-  <p class="drg-org-card__mission">Represents local conservation districts that work directly with communities on erosion control, watershed projects, education, and land stewardship.</p>
-  <a href="https://www.nacdnet.org/" class="drg-org-card__link">nacdnet.org</a>
-</div>
+{{< drg/org-card
+  name="National Association of Conservation Districts"
+  url="https://www.nacdnet.org/"
+  description="Represents local conservation districts that work directly with communities on erosion control, watershed projects, education, and land stewardship."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">The Nature Conservancy</h3>
-  <p class="drg-org-card__mission">Protects land and water through restoration, science, and partnerships. Their work often includes floodplain restoration, watershed protection, and regenerative land management.</p>
-  <a href="https://www.nature.org/" class="drg-org-card__link">nature.org</a>
-</div>
+{{< drg/org-card
+  name="The Nature Conservancy"
+  url="https://www.nature.org/"
+  description="Protects land and water through restoration, science, and partnerships. Their work often includes floodplain restoration, watershed protection, and regenerative land management."
+>}}

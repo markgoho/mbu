@@ -32,54 +32,54 @@ If you keep going in sports, you may eventually become the older player who enco
 
 ## Real-World Experiences
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Attend a College or Semi-Pro Game With a Notebook</h3>
-  <p>Watch warmups, substitutions, communication, officiating, and sideline behavior instead of only following the score. You will start seeing the strategy, preparation, and team culture that most casual fans miss.</p>
-</div>
+{{< drg/experience-card
+  title="Attend a College or Semi-Pro Game With a Notebook"
+  details="Watch warmups, substitutions, communication, officiating, and sideline behavior instead of only following the score. You will start seeing the strategy, preparation, and team culture that most casual fans miss."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Volunteer at a Youth Sports Event</h3>
-  <p>Helping with setup, timing, scorekeeping, concessions, or cleanup shows you how many people make sports events possible. It is also a good way to see leadership and sportsmanship from a different angle.</p>
-</div>
+{{< drg/experience-card
+  title="Volunteer at a Youth Sports Event"
+  details="Helping with setup, timing, scorekeeping, concessions, or cleanup shows you how many people make sports events possible. It is also a good way to see leadership and sportsmanship from a different angle."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Try a New Sport Clinic or Intro Session</h3>
-  <p>A beginner clinic in tennis, rowing, martial arts, climbing, fencing, pickleball, or another sport can stretch your confidence and help you compare movement skills across activities.</p>
-</div>
+{{< drg/experience-card
+  title="Try a New Sport Clinic or Intro Session"
+  details="A beginner clinic in tennis, rowing, martial arts, climbing, fencing, pickleball, or another sport can stretch your confidence and help you compare movement skills across activities."
+>}}
 
-<div class="drg-experience-card">
-  <h3 class="drg-experience-card__title">Run or Join a Community Fitness Challenge</h3>
-  <p>A 5K training group, swim challenge, bike ride, or step-count goal can help you keep the badge's momentum going even when you are between organized seasons.</p>
-</div>
+{{< drg/experience-card
+  title="Run or Join a Community Fitness Challenge"
+  details="A 5K training group, swim challenge, bike ride, or step-count goal can help you keep the badge's momentum going even when you are between organized seasons."
+>}}
 
 ## Organizations
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">National Federation of State High School Associations (NFHS)</h3>
-  <p class="drg-org-card__mission">Supports high school athletics and activities across the United States, including rules education, sportsmanship resources, and safety guidance for school sports.</p>
-  <a href="https://www.nfhs.org/" class="drg-org-card__link">nfhs.org</a>
-</div>
+{{< drg/org-card
+  name="National Federation of State High School Associations (NFHS)"
+  url="https://www.nfhs.org/"
+  description="Supports high school athletics and activities across the United States, including rules education, sportsmanship resources, and safety guidance for school sports."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">President's Council on Sports, Fitness & Nutrition</h3>
-  <p class="drg-org-card__mission">Encourages Americans to be active and build lifelong healthy habits through sport, physical activity, and nutrition education.</p>
-  <a href="https://health.gov/our-work/nutrition-physical-activity/presidents-council" class="drg-org-card__link">health.gov</a>
-</div>
+{{< drg/org-card
+  name="President's Council on Sports, Fitness & Nutrition"
+  url="https://health.gov/our-work/nutrition-physical-activity/presidents-council"
+  description="Encourages Americans to be active and build lifelong healthy habits through sport, physical activity, and nutrition education."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Special Olympics</h3>
-  <p class="drg-org-card__mission">Uses sports to build inclusion, confidence, leadership, and community for athletes with intellectual disabilities and the people around them.</p>
-  <a href="https://www.specialolympics.org/" class="drg-org-card__link">specialolympics.org</a>
-</div>
+{{< drg/org-card
+  name="Special Olympics"
+  url="https://www.specialolympics.org/"
+  description="Uses sports to build inclusion, confidence, leadership, and community for athletes with intellectual disabilities and the people around them."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">Amateur Athletic Union (AAU)</h3>
-  <p class="drg-org-card__mission">Provides youth sports programs, competitions, and development opportunities across many sports throughout the United States.</p>
-  <a href="https://aausports.org/" class="drg-org-card__link">aausports.org</a>
-</div>
+{{< drg/org-card
+  name="Amateur Athletic Union (AAU)"
+  url="https://aausports.org/"
+  description="Provides youth sports programs, competitions, and development opportunities across many sports throughout the United States."
+>}}
 
-<div class="drg-org-card">
-  <h3 class="drg-org-card__name">YMCA</h3>
-  <p class="drg-org-card__mission">Offers community sports, swimming, wellness programs, and youth development opportunities that can help turn sports into a lasting part of everyday life.</p>
-  <a href="https://www.ymca.org/" class="drg-org-card__link">ymca.org</a>
-</div>
+{{< drg/org-card
+  name="YMCA"
+  url="https://www.ymca.org/"
+  description="Offers community sports, swimming, wellness programs, and youth development opportunities that can help turn sports into a lasting part of everyday life."
+>}}

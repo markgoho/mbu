@@ -38,49 +38,51 @@ Strong sailors are often the ones who do the small things well every time.
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Take a beginner regatta clinic</h3>
-    <p>A clinic or fun regatta can teach starts, mark roundings, and tactical thinking in a way casual sailing often does not.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Volunteer on a club workday</h3>
-    <p>Helping rig boats, move dollies, repair gear, or clean a waterfront teaches how much seamanship happens before and after the sail.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Watch a sailing race from shore</h3>
-    <p>Try calling out the wind shifts, points of sail, and maneuvers you see. It is a great way to train your eye even when you are not afloat.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Try another aquatics badge</h3>
-    <p>Badges like Canoeing, Rowing, Kayaking, or Motorboating show how different craft solve the same water-safety problems in different ways.</p>
-  </div>
-</div>
+{{< drg/experience-card
+  title="Take a beginner regatta clinic"
+  details="A clinic or fun regatta can teach starts, mark roundings, and tactical thinking in a way casual sailing often does not."
+>}}
+
+{{< drg/experience-card
+  title="Volunteer on a club workday"
+  details="Helping rig boats, move dollies, repair gear, or clean a waterfront teaches how much seamanship happens before and after the sail."
+>}}
+
+{{< drg/experience-card
+  title="Watch a sailing race from shore"
+  details="Try calling out the wind shifts, points of sail, and maneuvers you see. It is a great way to train your eye even when you are not afloat."
+>}}
+
+{{< drg/experience-card
+  title="Try another aquatics badge"
+  details="Badges like Canoeing, Rowing, Kayaking, or Motorboating show how different craft solve the same water-safety problems in different ways."
+>}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>US Sailing</h3>
-    <p>The national governing body for sailing in the United States, with training pathways, racing information, and educational resources.</p>
-    <p><a href="https://www.ussailing.org/">ussailing.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Scouting America Safety Afloat</h3>
-    <p>Revisit this policy any time you help plan or participate in Scout boating activities.</p>
-    <p><a href="https://www.scouting.org/health-and-safety/safety-afloat/">scouting.org/health-and-safety/safety-afloat/</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Weather Service</h3>
-    <p>Reliable forecasts, alerts, and weather education that help sailors make smarter go-or-no-go decisions.</p>
-    <p><a href="https://www.weather.gov/">weather.gov</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>U.S. Coast Guard Boating Safety Division</h3>
-    <p>Practical boating-safety information on life jackets, rules, required equipment, and accident prevention.</p>
-    <p><a href="https://www.uscgboating.org/">uscgboating.org</a></p>
-  </div>
-</div>
+{{< drg/org-card
+  name="US Sailing"
+  url="https://www.ussailing.org/"
+  description="The national governing body for sailing in the United States, with training pathways, racing information, and educational resources."
+>}}
+
+{{< drg/org-card
+  name="Scouting America Safety Afloat"
+  url="https://www.scouting.org/health-and-safety/safety-afloat/"
+  description="Revisit this policy any time you help plan or participate in Scout boating activities."
+>}}
+
+{{< drg/org-card
+  name="National Weather Service"
+  url="https://www.weather.gov/"
+  description="Reliable forecasts, alerts, and weather education that help sailors make smarter go-or-no-go decisions."
+>}}
+
+{{< drg/org-card
+  name="U.S. Coast Guard Boating Safety Division"
+  url="https://www.uscgboating.org/"
+  description="Practical boating-safety information on life jackets, rules, required equipment, and accident prevention."
+>}}
 
 {{< drg/next-page
     text="You have gone beyond the requirements and explored where sailing skills can keep growing."
