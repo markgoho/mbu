@@ -1,0 +1,41 @@
+{
+  "badge": "skating",
+  "style_context": "Ice skating, roller skating, inline skating, and skateboarding techniques, equipment, and safety",
+  "images": [
+    {
+      "id": "ice-rescue-reach-throw-go",
+      "file": "req2a2.md",
+      "style": "diagram",
+      "description": "Top-down illustrated diagram of a frozen lake shoreline showing three labeled rescue zones: REACH zone (rescuer lying flat on ice near shore extending a long branch or rope to a person who has fallen through the ice), THROW zone (rescuer standing on shore throwing a rope ring toward the victim), and GO zone (human chain of three rescuers lying flat gripping each other's ankles extending toward the victim). Each zone has a bold label and a simple arrow. The victim is shown in an ice hole in the center. Ice texture in blue-white. Labels in white text on dark background strips. Clean instructional illustration style.",
+      "value": "Bird's-eye spatial layout of the three rescue zones showing exact body positions, distances, and sequencing — the spatial relationship between rescuer and victim positions cannot be conveyed in a text list"
+    },
+    {
+      "id": "ice-skate-types-comparison",
+      "file": "req2a3.md",
+      "style": "diagram",
+      "description": "Side-by-side illustration of three ice skates shown from the side at the same scale: left skate labeled FIGURE SKATE with arrows pointing to toe pick, blade rocker curve, high ankle boot, and inside/outside edge. Center skate labeled HOCKEY SKATE with arrows pointing to low-cut boot, flat blade, reinforced toe cap, no toe pick. Right skate labeled SPEED SKATE with arrows pointing to very long blade extending past heel and toe, extremely low boot, nearly flat rocker. Clean white background, each skate rendered in a different color (blue, red, gray). Labels in clean sans-serif black text. Educational diagram style with minimal text per label.",
+      "value": "Three skate types rendered at the same scale with labeled parts showing how blade length, rocker, boot height, and toe-pick presence differ — spatial and proportional differences that text descriptions alone cannot convey"
+    },
+    {
+      "id": "protective-gear-fit-checkpoints",
+      "file": "req2d4.md",
+      "style": "annotated-photo",
+      "description": "Full-body photo of a teenager wearing complete skateboarding protective gear — helmet, knee pads, elbow pads, and wrist guards — standing in a ready skating stance. Four labeled callout arrows point to: HELMET callout showing two-finger gap above eyebrow and chin strap snug; WRIST GUARDS callout showing hard plastic splint on palm side; KNEE PADS callout showing hard cap centered on kneecap; ELBOW PADS callout showing pad centered on elbow point. Each callout box has a white background with the label in bold. Bright, clean studio-style lighting. The person wears athletic clothing appropriate for skateboarding.",
+      "value": "Shows exact positioning of four gear pieces on a real body with labeled placement checkpoints — text alone cannot convey where the cap should sit relative to the kneecap or how to check the chin-strap fit"
+    },
+    {
+      "id": "skate-park-features-diagram",
+      "file": "req2d5.md",
+      "style": "diagram",
+      "description": "Overhead isometric illustration of a skate park showing six key features each with a bold label: QUARTER PIPE (curved ramp against a wall), HALFPIPE (two quarter pipes facing each other), BOWL (circular pool-shaped depression), MANUAL PAD (low flat rectangular platform), RAIL (metal rod suspended between two posts), LEDGE (concrete rectangular block). The illustration uses clean flat colors — warm concrete gray for surfaces, orange for labels. Each feature is clearly separated with enough space to read the label. Simple birds-eye-to-isometric perspective. No people, no background clutter.",
+      "value": "Isometric layout showing six named park features in spatial context — readers see the three-dimensional shape of each feature, which text descriptions and tables cannot convey for structures like bowls, halfpipes, and spines"
+    },
+    {
+      "id": "skateboard-parts-diagram",
+      "file": "req2d6.md",
+      "style": "diagram",
+      "description": "Exploded diagram of a complete skateboard viewed from the side and slightly above, with all major components separated and labeled with short leader lines: DECK (top maple board), GRIP TAPE (black sandpaper layer on top of deck), TRUCK x2 showing BASEPLATE, HANGER, AXLE, KINGPIN, BUSHINGS each labeled, WHEELS x4 (polyurethane cylinders), BEARINGS (shown as small rings inside wheel), HARDWARE (bolt and nut pair). Components are arranged vertically with the deck at top and trucks and wheels spread below. Clean white background. Each component rendered in realistic material color. Labels in black sans-serif. Simple leader lines with no crossing. Educational diagram style.",
+      "value": "Exploded view showing all skateboard components separated and labeled in spatial relationship — readers learn part names, positions, and how they assemble together, which text alone cannot convey"
+    }
+  ]
+}
