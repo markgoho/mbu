@@ -13,6 +13,7 @@
  */
 
 import { Glob } from "bun";
+import { verifyYoutubeVideo } from "./lib/verify-youtube-video.ts";
 
 interface Resource {
   title: string;
@@ -64,6 +65,7 @@ interface WrongShortcode {
   line: number;
   url: string;
   title: string;
+  reason: "youtube_should_embed" | "youtube_embed_disabled_allowed";
 }
 
 interface ResourceMapping {
@@ -350,7 +352,9 @@ function isYoutubeUrl(url: string): boolean {
   return /(?:youtube\.com|youtu\.be)/.test(url);
 }
 
-function findWrongShortcodes(fileCache: Map<string, string>): WrongShortcode[] {
+async function findWrongShortcodes(
+  fileCache: Map<string, string>,
+): Promise<WrongShortcode[]> {
   const issues: WrongShortcode[] = [];
 
   for (const [filePath, content] of fileCache.entries()) {
@@ -375,12 +379,33 @@ function findWrongShortcodes(fileCache: Map<string, string>): WrongShortcode[] {
 
       const titleMatch = shortcodeBlock.match(/title="([^"]+)"/);
       const matchedTitle = titleMatch?.[1] ?? "(no title)";
+      const videoIdMatch = matchedUrl.match(
+        /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^?&\s"]+)/,
+      );
+      const videoId = videoIdMatch?.[1];
+
+      if (videoId === undefined) {
+        issues.push({
+          file: filePath,
+          line: lineIndex + 1,
+          url: matchedUrl,
+          title: matchedTitle,
+          reason: "youtube_should_embed",
+        });
+        continue;
+      }
+
+      const verification = await verifyYoutubeVideo({ videoId });
+      if (verification.status === "embed_disabled") {
+        continue;
+      }
 
       issues.push({
         file: filePath,
         line: lineIndex + 1,
         url: matchedUrl,
         title: matchedTitle,
+        reason: "youtube_should_embed",
       });
     }
   }
@@ -545,7 +570,7 @@ async function main(): Promise<void> {
       }
     }
 
-    const wrongShortcodes = findWrongShortcodes(fileCache);
+    const wrongShortcodes = await findWrongShortcodes(fileCache);
     allWrongShortcodes.push(...wrongShortcodes);
 
     const badgeStatus =

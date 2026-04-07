@@ -1,0 +1,70 @@
+{
+  "badge": "snow-sports",
+  "style_context": "Snow sports safety, trail symbols, avalanche awareness, snowshoe equipment, winter trail technique, and backcountry navigation",
+  "images": [
+    {
+      "id": "trail-marking-symbols-guide",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean educational diagram showing six winter trail markers in a simple grid on a plain light background: green circle easiest trail, blue square more difficult trail, black diamond most difficult trail, double black diamond expert only trail, orange terrain park sign, and red closed-trail marker. Use short horizontal labels only and keep each symbol large, crisp, and easy to compare. No logos, no branding, no extra scenery.",
+      "value": "Shows the visual shape-and-color differences among common snow-sport trail markers side by side — symbol recognition is much faster by sight than by text description alone"
+    },
+    {
+      "id": "your-responsibility-code-diagram",
+      "file": "req6.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean seven-panel instructional diagram for the Your Responsibility Code in a snow-sport setting. Each panel shows one mountain scene with minimal text and short horizontal labels only: skier staying in control, uphill skier yielding to downhill rider, safe stopping area off the main trail, rider looking uphill before merging, ski brakes or snowboard retention device preventing runaway gear, closed-trail sign being respected, and safe chairlift loading and unloading. Simple snow background, no branding, no logos.",
+      "value": "Shows the seven mountain-safety rules as concrete situations rather than abstract wording — the practical meaning of each rule is easier to grasp visually than through text alone"
+    },
+    {
+      "id": "avalanche-terrain-warning-signs",
+      "file": "req6.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Educational mountain cross-section diagram showing avalanche terrain features with clear short horizontal labels only: steep starting zone near the ridgeline, wind-loaded slab, weak layer within the snowpack, avalanche path down the slope, debris runout zone at the bottom, and a safer ridgeline travel route off to one side. Include one tiny human figure for scale. Keep arrows simple and unambiguous. No logos, no branding.",
+      "value": "Shows the spatial relationship between starting zone, path, runout, and safer travel lines — avalanche terrain is fundamentally a layout problem that text alone cannot teach clearly"
+    },
+    {
+      "id": "snowshoe-parts-labeled",
+      "file": "req7d1.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean labeled diagram of a modern snowshoe seen from a slight top-and-side angle with short horizontal labels only for frame, deck, binding, pivot rod, toe strap, crampons, and heel lift. Show the underside traction area clearly enough that the crampons make visual sense. Plain uncluttered background, no branding, no logos.",
+      "value": "Shows the exact location and relationship of the main snowshoe parts in one view — part names are much easier to learn visually than from a list"
+    },
+    {
+      "id": "snowshoe-size-flotation-comparison",
+      "file": "req7d2.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Split-frame winter comparison on a plain snowy background. Left panel shows a smaller snowshoe under a heavier hiker sinking deeper into loose powder. Right panel shows a larger snowshoe supporting the same total load with better flotation. Add a second small row or inset comparing packed snow where both sizes perform adequately. Use only short horizontal labels such as smaller, larger, powder, packed. No branding, no logos.",
+      "value": "Shows how flotation changes with snowshoe size and snow condition — the amount of sink and support is easier to judge visually than by text alone"
+    },
+    {
+      "id": "snowshoe-types-comparison",
+      "file": "req7d3.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Clean side-by-side educational comparison of five snowshoe types on a plain background: recreational flat-terrain, trail backcountry, mountaineering, running, and traditional wood-frame style. Emphasize differences in length, width, deck shape, bindings, and traction. Use only short horizontal labels naming each type. No extra scenery, no branding, no logos.",
+      "value": "Shows how snowshoe categories differ in shape and traction at a glance — these design differences are easier to compare visually than through paragraphs of description"
+    },
+    {
+      "id": "snowshoe-techniques-sequence",
+      "file": "req7d8.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Four-panel step-by-step winter skills sequence showing one person on snowshoes in appropriate cold-weather hiking clothing, not a uniform. Panel 1: breaking trail through fresh snow with high deliberate steps. Panel 2: uphill kick-stepping with poles. Panel 3: downhill plunge-stepping with knees bent and weight slightly back. Panel 4: sideways traverse across a slope with uphill edge engaged. Use only short horizontal panel labels. Keep the terrain simple and the body positions clear. No branding or logos.",
+      "value": "Shows the body position and foot placement differences among the four core snowshoe techniques — movement mechanics are much clearer visually than through text alone"
+    },
+    {
+      "id": "topo-map-compass-workflow",
+      "file": "req7d-10.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Visual-first four-step diagram of map-and-compass use on a simple topo map. Step 1 shows orienting the map to north. Step 2 shows laying the compass edge from current location to destination. Step 3 shows rotating the bezel so orienting lines match map north-south lines. Step 4 shows following the bearing toward a chosen landmark in snowy terrain. Use very short horizontal step labels only. Keep arrows simple, precise, and easy to follow. No branding, no logos.",
+      "value": "Shows the sequence of aligning map, compass, bezel, and travel direction — the order and spatial relationships are difficult to learn from text alone"
+    }
+  ]
+}
