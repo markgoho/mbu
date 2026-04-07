@@ -1,0 +1,51 @@
+{
+  "badge": "small-boat-sailing",
+  "searched_at": "2026-04-07T03:37:28.419Z",
+  "videos": [
+    {
+      "id": "video-tip-wind-direction",
+      "file": "req5.md",
+      "requirement_path": "5",
+      "video_id": "5B1YdpLkYFE",
+      "title": "Video tip: Wind direction",
+      "channel": "American Sailing",
+      "duration_seconds": 132000,
+      "views": 52586,
+      "url": "https://youtu.be/5B1YdpLkYFE",
+      "status": "working",
+      "relevance": "This is a short, focused sailing video on reading wind direction, which matches Requirement 5 closely. It reinforces the page's discussion of wind indicators without wandering into unrelated gear or cruising topics.",
+      "query": "Small-Boat Sailing wind direction wind indicators importance",
+      "trust_score": 0
+    },
+    {
+      "id": "six-knots---ab-marlinespike-seamanship-practical-d",
+      "file": "req7.md",
+      "requirement_path": "7.a",
+      "video_id": "oWQpfGYyRus",
+      "title": "Six Knots - AB Marlinespike Seamanship Practical Demonstration",
+      "channel": "US Captain's Training",
+      "duration_seconds": 313000,
+      "views": 24527,
+      "url": "https://youtu.be/oWQpfGYyRus",
+      "status": "working",
+      "relevance": "Requirement 7a asks Scouts to show several knots and explain their use, and this video is a direct knot demonstration rather than a general sailing vlog. It works well as a visual companion to the page's knot-by-knot explanations.",
+      "query": "Small-Boat Sailing working knowledge marlinespike seamanship",
+      "trust_score": 3
+    },
+    {
+      "id": "whats-the-best-sailboats-for-beginners",
+      "file": "req9.md",
+      "requirement_path": "9",
+      "video_id": "wy13QKapiq4",
+      "title": "What's the Best Sailboats for Beginners?",
+      "channel": "Practical Sailor",
+      "duration_seconds": 512000,
+      "views": 119652,
+      "url": "https://youtu.be/wy13QKapiq4",
+      "status": "working",
+      "relevance": "This supports the second half of Requirement 9 by comparing beginner-friendly sailboat types and tradeoffs. It complements the page's discussion of dinghies, keelboats, cat-rigged boats, and sloops without repeating the terminology section word for word.",
+      "query": "Small-Boat Sailing Sailing terms worth knowing well",
+      "trust_score": 8
+    }
+  ]
+}

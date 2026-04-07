@@ -1,0 +1,62 @@
+{
+  "badge": "small-boat-sailing",
+  "style_context": "Small-boat sailing, dinghy handling, sailing safety, wind awareness, ropework, and sailboat seamanship",
+  "images": [
+    {
+      "id": "safety-afloat-small-boat-sailing-grid",
+      "file": "req1.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean nine-panel instructional diagram showing the nine Safety Afloat points in a small-boat sailing context. Each panel should use a simple visual scene rather than text-heavy labels: trained adult supervising at a dock, health form review, swimmer readiness, fitted life jacket, buddy check, beginner sailing lesson, float plan with route and return time, inspected sailboat gear, and disciplined crew during a maneuver. Use only very short horizontal labels for the nine point names. Plain uncluttered background, no branding, no logos.",
+      "value": "Shows the full Safety Afloat system as nine distinct small-boat sailing situations at a glance — the visual structure and real-world applications are easier to grasp together than through text alone"
+    },
+    {
+      "id": "small-boat-sailing-parts-labeled",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean side-view educational diagram of a small training sailboat on plain water with the major parts labeled using short horizontal labels only: hull, bow, stern, mast, boom, mainsail, jib, rudder, tiller, mainsheet, and centerboard. Keep the background simple and the label lines unambiguous. No decorative scenery, no branding, no logos.",
+      "value": "Shows the spatial relationship of the major sailboat parts in one view — readers learn positions and names much faster visually than from a paragraph list"
+    },
+    {
+      "id": "small-boat-sailing-clothing-comparison",
+      "file": "req4.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Split-frame instructional comparison. Left panel: teenager in appropriate warm-weather sailing clothing on a dock beside a small sailboat, showing sun shirt, hat, sunglasses retainer, grippy footwear, water bottle, and light quick-dry layers. Right panel: teenager in appropriate cool-weather sailing clothing showing layered synthetic top, wind shell, grippy footwear, sailing gloves, and dry spare clothes bag. Use only a few short callouts naming the major gear items. No uniforms, no branding, no readable logos.",
+      "value": "Shows the practical visual differences between warm-weather and cool-weather sailing clothing systems side by side — layering and gear choices are easier to judge by sight than prose alone"
+    },
+    {
+      "id": "lake-wind-indicators-guide",
+      "file": "req5.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Annotated waterfront photo of a small lake sailing area with a small training sailboat near shore and no people anywhere in the scene. Show visible wind clues only: a flag extended from shore, ripples and darker gust patches on the water, slight tree movement, and telltales streaming on the sail. Add only a few short callouts such as flag, ripples, gust patch, trees, telltales. Do not include any demographic words, people labels, cast names, or visible text other than those wind-feature callouts. Keep the scene realistic and uncluttered, with no logos, no branding, and no extra labels on boats, docks, or shoreline objects.",
+      "value": "Shows several real-world wind indicators working together in one scene — combining water texture, shoreline clues, and sail telltales is much easier to understand visually than from separate text descriptions"
+    },
+    {
+      "id": "small-boat-sailing-underway-sequence",
+      "file": "req6.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Six-panel visual-first instructional sequence for a small training sailboat: pre-sail check on shore, clean launch, tack, jibe with crew ducking the boom, safety position with sails luffing on a close reach, and end-of-day securing at dock or beach. Use tiny horizontal panel labels only, avoid dense text, and keep each panel simple and easy to scan. No branding or logos.",
+      "value": "Shows the sequence and body-position changes across several key small-boat sailing actions — the flow of maneuvers and crew movement is clearer visually than text alone"
+    },
+    {
+      "id": "sailing-knots-and-line-types",
+      "file": "req7.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Clean instructional board-style diagram showing six sailing knots in separate boxes: square knot, clove hitch, two half hitches, bowline, cleat hitch, and figure-eight knot, alongside three simple line samples labeled sheet, halyard, and dock line. Use short horizontal labels only and keep the line textures distinct but simple. Plain background, no extra paragraph text, no branding.",
+      "value": "Shows the visible shapes of the required knots and compares common sailing line types in one reference view — knot form and line distinctions are much easier to study visually than by description alone"
+    },
+    {
+      "id": "points-of-sail-small-boat-sailing",
+      "file": "req9.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Top-down educational diagram of a small sailboat with wind direction clearly shown and five surrounding positions labeled with short horizontal labels only: beating, close reach, beam reach, broad reach, and running. Show the boat orientation and sail trim angle changing at each position with clean simple arrows and no curved text. Minimal background, no branding, no logos.",
+      "value": "Shows how boat angle, wind direction, and sail trim change across the five points of sail in one unified view — a spatial relationship that is difficult to communicate fully through prose"
+    }
+  ]
+}
