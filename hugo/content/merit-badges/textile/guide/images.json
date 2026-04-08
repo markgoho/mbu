@@ -1,0 +1,78 @@
+{
+  "badge": "textile",
+  "style_context": "Textile fibers, fabric construction, dyeing, waterproofing, weaving, and textile manufacturing concepts",
+  "images": [
+    {
+      "id": "textile-swatch-comparison",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Five clearly labeled textile swatches laid flat in a clean comparison grid: cotton, wool, polyester, nylon, and lyocell. Each swatch shows distinct surface texture and drape, with minimal callouts highlighting absorbent plant fiber, animal fiber scales, smooth synthetic filament appearance, and soft cellulosic drape. Educational textile-sample board style, neutral background, no branding.",
+      "value": "Side-by-side visual comparison of five fiber categories and their surface differences — texture and drape cues that text alone cannot teach clearly"
+    },
+    {
+      "id": "cardboard-loom-weaving",
+      "file": "req3b.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Homemade cardboard loom viewed from above with a Scout's hands weaving a narrow band. Clear visual labels for warp yarns running lengthwise, weft yarn crossing over-under, top and bottom notches, and gentle edge arc to prevent pulling too tight. Clean instructional craft diagram, minimal text, realistic yarn colors.",
+      "value": "Shows warp direction, weft path, and correct edge handling on a simple loom — spatial weaving relationships that are hard to grasp from text alone"
+    },
+    {
+      "id": "woven-knit-nonwoven-closeup",
+      "file": "req3c.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Three-panel magnified textile comparison: left panel woven fabric with clear over-under grid, center panel knitted fabric with interlocking loop structure, right panel nonwoven felt with random matted fibers. Short labels only: woven, knitted, nonwoven. High-clarity educational close-up textures on plain background.",
+      "value": "Three textile constructions shown at matching magnification — readers can instantly see grid, loop, and matted-fiber structures that text descriptions cannot replace"
+    },
+    {
+      "id": "wet-felting-steps",
+      "file": "req3d.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Three-step visual sequence for wet felting: loose wool fibers layered in alternating directions, hands wetting and rubbing soapy fibers on a protected surface, finished dense felt square. Arrows show progression from fluffy fibers to bonded fabric. Clean educational craft diagram, top-down views, no extra scenery.",
+      "value": "Step-by-step transformation from loose fiber to finished felt — a process change that is much easier to learn visually than from prose alone"
+    },
+    {
+      "id": "natural-dye-swatch-grid",
+      "file": "req3e.md",
+      "style": "diagram",
+      "verb_family": "create",
+      "description": "Neat grid of cotton fabric swatches dyed with two natural dye baths, showing clear variation in shade and saturation. One column from onion-skin style warm dye, one column from cabbage or berry style cool dye, with before-and-after white control swatch for comparison. Minimal labels, clean textile-sample layout, no branding.",
+      "value": "Before-and-after dye results and side-by-side color variation on the same fabric — visual outcomes that text alone cannot communicate accurately"
+    },
+    {
+      "id": "waterproofing-water-bead-test",
+      "file": "req3f.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Close-up comparison of two fabric samples under water droplets: untreated sample darkening and absorbing water on one side, treated sample showing round beaded droplets on the other. Simple callouts point to absorption versus beading behavior. Realistic textile test setup on neutral tabletop, no visible brand names.",
+      "value": "Shows the visible difference between absorption and water beading on treated fabric — performance behavior that prose cannot demonstrate as clearly"
+    },
+    {
+      "id": "fiber-identification-comparison",
+      "file": "req3g.md",
+      "style": "comparison",
+      "verb_family": "identify",
+      "description": "Split comparison image: left side microscope-style close view of different textile fibers with visibly different shapes and textures, right side hands performing a simple controlled breaking test on labeled sample strands. Minimal short labels only, clean scientific comparison layout, neutral background.",
+      "value": "Pairs microscopic appearance with hands-on break behavior so readers can compare two identification methods visually rather than imagining them from text"
+    },
+    {
+      "id": "textile-terms-reference",
+      "file": "req4.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Educational textile glossary diagram combining a simple loom side view with labeled parts: warp, harness, heddle, shed, loom, plus a separate small manufactured-fiber section showing spinneret, extrusion, sliver, yarn, and staple concept. Clean white background, short labels only, uncluttered layout.",
+      "value": "Maps several abstract textile terms onto concrete visual parts and process stages — positional meaning that is much easier to learn by seeing than by reading definitions alone"
+    },
+    {
+      "id": "textile-ecological-tradeoffs",
+      "file": "req5.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Four-column visual comparison of textile fiber categories: natural plant, natural animal, cellulosic manufactured, and synthetic manufactured. Each column uses simple icons and one-word labels to show water use, durability, chemical processing, and microfiber concerns. Clean horizontal layout with large readable symbols, minimal text only.",
+      "value": "Visual side-by-side tradeoff map across four fiber groups — lets readers compare multiple impacts at once in a way plain paragraphs cannot"
+    }
+  ]
+}
