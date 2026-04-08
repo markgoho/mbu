@@ -1,0 +1,38 @@
+{
+  "badge": "traffic-safety",
+  "style_context": "Road safety, vehicle inspection, roadway design, and transportation safety systems",
+  "images": [
+    {
+      "id": "vehicle-safety-features-dashboard",
+      "file": "req2.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Driver's-eye view of a modern passenger vehicle interior and exterior safety system callouts, with a simple clean diagram style highlighting backup camera view, blind-spot warning indicator in side mirror, anti-lock braking icon, stability control icon, and automatic headlight indicator, minimal text labels only, no branding or logos",
+      "value": "Shows where multiple safety systems appear in the vehicle at the same time and how a driver encounters them visually — spatial relationships text cannot show clearly"
+    },
+    {
+      "id": "tire-pressure-tread-check",
+      "file": "req3.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Annotated instructional photo of a Scout in appropriate clean casual clothing beside a parked car, checking tire pressure with a handheld gauge on one tire while a close secondary callout shows tread depth measurement on the tire surface, arrows and brief labels only for gauge placement, valve stem, and tread measurement point, realistic daylight driveway setting, no branding or visible text on clothing",
+      "value": "Shows the exact hand placement, gauge position, and tread-check location on a real tire — physical technique and orientation that text alone cannot teach well"
+    },
+    {
+      "id": "safer-road-design-elements",
+      "file": "req5a.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Overhead roadway safety diagram showing a divided road with raised median, paved shoulders, marked crosswalk, turn lane, and interstate-style entrance ramp merge area, each feature clearly separated and labeled with short horizontal labels only, clean educational colors, no logos, no branding, no decorative scenery",
+      "value": "Shows how multiple roadway features fit together in one traffic system and why their positions matter — a spatial layout impossible to explain as clearly with text alone"
+    },
+    {
+      "id": "car-and-truck-blind-spots",
+      "file": "req6.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Top-down comparison diagram of a passenger car and a large truck in adjacent lanes, shaded blind-spot zones around each vehicle clearly visible with simple horizontal labels, lane-change context with another smaller vehicle near the blind spot, clean road markings, minimal text, no branding or logos",
+      "value": "Lets the reader compare the size and location of blind spots around a car versus a truck at a glance — comparative visibility zones that are hard to picture accurately from prose alone"
+    }
+  ]
+}
