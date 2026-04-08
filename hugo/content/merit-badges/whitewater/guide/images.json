@@ -1,0 +1,62 @@
+{
+  "badge": "whitewater",
+  "style_context": "Whitewater river reading, paddling technique, rescue skills, and safety equipment",
+  "images": [
+    {
+      "id": "whitewater-river-features-diagram",
+      "file": "req2a.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Overhead river diagram with labeled examples of upstream V, downstream V, riffle, eddy, eddy line, ledge, river bend, shallows, current at different depths, drop, horizon line, and hydraulic, with clear current arrows and minimal text labels only",
+      "value": "Shows multiple river-surface features and how current bends around them in one visual field—spatial relationships that text alone cannot teach clearly"
+    },
+    {
+      "id": "standing-wave-vs-wave-train",
+      "file": "req2b.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Two-panel instructional river diagram comparing a single standing wave over one riverbed obstacle with a wave train over a longer shallow section, with arrows showing current direction and very short labels only",
+      "value": "Shows the visual difference between one fixed standing wave and a repeating wave train, including how riverbed shape creates each pattern—contrast that text alone cannot make immediate"
+    },
+    {
+      "id": "eddy-turn-and-ferry-edge",
+      "file": "req2c.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Two-panel instructional diagram of a paddler in moving water showing correct boat edge while crossing an eddy line and while ferrying across current, torso upright over the hull, current arrows clearly marked, minimal short labels only",
+      "value": "Shows the difference between hull tilt and body lean during eddy-line and ferry moves—precise body-to-boat positioning that text alone cannot convey well"
+    },
+    {
+      "id": "universal-river-signals",
+      "file": "req6.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Six-panel clean instructional diagram of a paddler demonstrating whitewater river signals for stop, are you OK, help emergency, all clear come ahead, run river left, and run river right, with large readable body positions and paddles, no branding or extra text beyond very short signal names",
+      "value": "Shows the exact arm and paddle positions for the universal river signals, which must be seen to be reproduced accurately"
+    },
+    {
+      "id": "whitewater-core-maneuvers-sequence",
+      "file": "req10.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Instructional sequence diagram showing seven whitewater maneuvers in simple top-down river panels: launch, straight travel, backpaddle, upstream ferry, downstream ferry, eddy turn, and peel-out, with current arrows and clear boat paths, minimal text labels only",
+      "value": "Shows how the core maneuvers differ in boat path, angle, and relationship to current—movement patterns that are difficult to understand from prose alone"
+    },
+    {
+      "id": "whitewater-throw-rope-rescue",
+      "file": "req11.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Realistic instructional scene on a riverbank showing a paddler in proper safety clothing throwing a rope bag to a swimmer in moving water while a second backup paddler waits in an eddy, with minimal annotation callouts for throw bag, loose rope end, swimmer body position on back, and shore rescuer stance, no logos or branding",
+      "value": "Shows the rescuer's stance, the throw-bag path, and the swimmer's receiving position in one scene—coordination and spacing that text alone cannot teach clearly"
+    },
+    {
+      "id": "whitewater-pfd-helmet-fit",
+      "file": "req1.md",
+      "style": "annotated-photo",
+      "verb_family": "identify",
+      "description": "Scout in appropriate whitewater paddling clothing wearing a properly fitted whitewater helmet and life jacket with simple callouts showing snug helmet fit, chin strap position, shoulder adjustment, waist fit, and whistle placement on the life jacket, no visible organization names or logos",
+      "value": "Shows the exact fit points of a helmet and life jacket so a reader can visually judge correct adjustment—fit details that are hard to learn from words alone"
+    }
+  ]
+}
