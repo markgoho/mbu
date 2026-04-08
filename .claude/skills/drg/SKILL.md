@@ -592,8 +592,8 @@ prev_title: "{Last Requirement Title}"
 **Content sections:**
 
 1. **Deep dives** — 2–4 sections going deeper into practical aspects.
-2. **Real-world experiences** — Places, projects, or events to seek out. Use the existing HTML card patterns already present in the repo (for example `drg-card-grid` / `drg-card`), not shortcode wrappers.
-3. **Organizations** — 3–6 relevant organizations with name, mission, and link. Use the existing HTML/card patterns already present in the repo, not shortcode wrappers.
+2. **Real-world experiences** — Places, projects, or events to seek out. Use the repo's supported `drg/experience-card` shortcode for each experience card.
+3. **Organizations** — 3–6 relevant organizations with name, mission, and link. Use the repo's supported `drg/org-card` shortcode for each organization card.
 
 **Structural convention:**
 
@@ -603,10 +603,10 @@ Recommended structure:
 
 - **Congratulations** — Brief introductory section (2–3 sentences acknowledging the Scout's achievement and teasing what lies ahead).
 - **2–4 deep-dive sections** — Each should have a descriptive title and be substantive, with practical detail that teaches something new rather than repeating requirement-page content.
-- **Real-World Experiences** — 3–5 experience cards, built with existing HTML structures already used in published guides.
-- **Organizations** — 3–6 org cards, built with existing HTML structures already used in published guides.
+- **Real-World Experiences** — 3–5 experience cards using `drg/experience-card`.
+- **Organizations** — 3–6 org cards using `drg/org-card`.
 
-**Do not invent card shortcodes.** There is no supported `cards`, `card`, `drg/cards`, or similar card shortcode in this repo. If you want a card layout, copy the existing HTML structure from published guides (such as `div` blocks with `drg-card-grid`, `drg-card`, `drg-experience-card`, or `drg-org-card` classes) instead of writing new shortcode syntax.
+**Do not invent card shortcodes.** Use the supported `drg/experience-card` and `drg/org-card` shortcodes for Extended Learning cards. Do not use unsupported wrappers like `cards`, `card`, or `drg/cards`.
 
 Before using any shortcode that is not already listed in the Shortcode Catalog below, verify that a matching template actually exists in the repo. If it is not in the catalog and not clearly implemented, do not use it.
 
@@ -683,6 +683,15 @@ Use `drg/be-prepared` for **scenario-based problem-solving** — situations the 
 {{</* drg/video
     title="Video Title"
     url="https://www.youtube.com/watch?v=..." */>}}
+
+{{</* drg/experience-card
+    title="Visit a Local Survey Office"
+    details="Location: Your area | Highlights: See how field measurements become maps and records." */>}}
+
+{{</* drg/org-card
+    name="National Society of Professional Surveyors"
+    url="https://www.nsps.us/"
+    description="Professional organization supporting surveying education and practice." */>}}
 ```
 
 For image planning handoff, use HTML comment placeholders inline with the supporting content:
