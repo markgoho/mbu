@@ -917,12 +917,16 @@ Requirements for writing:
 
 ### Phase 4: Image Handoff
 
+During writing, add inline `<!-- IMAGE: ... -->` placeholders for any image that clearly passes the Image Value Test. In normal guide production, you should expect to leave at least one high-value image placeholder for the badge unless, after deliberate review, you truly cannot justify even a single non-decorative image.
+
+Do not treat image placeholders as optional polish. They are the primary handoff from `drg` to `drg-images`, and they should be placed inline at the exact teaching moment where the future image belongs.
+
 After the guide content is complete and verification passes, immediately invoke the
 `drg-images` skill with the same `$ARGUMENTS`.
 
 Do not stop after content-only completion when image placeholders are present. Hand
 those placeholders off to `drg-images`, which owns `images.json`, image generation,
-AVIF conversion, and shortcode replacement.
+AVIF conversion, and shortcode replacement. If no placeholders were added, `drg-images` must still run and may infer image candidates directly from the finished guide content.
 
 Use the Skill tool to run:
 
@@ -993,12 +997,16 @@ Requirements for writing:
 
 ### Phase 4: Image Handoff
 
+During writing, add inline `<!-- IMAGE: ... -->` placeholders for any image that clearly passes the Image Value Test. In normal guide production, you should expect to leave at least one high-value image placeholder for the badge unless, after deliberate review, you truly cannot justify even a single non-decorative image.
+
+Do not treat image placeholders as optional polish. They are the primary handoff from `drg` to `drg-images`, and they should be placed inline at the exact teaching moment where the future image belongs.
+
 After the guide content is complete and verification passes, immediately invoke the
 `drg-images` skill with the same `$ARGUMENTS`.
 
 Do not stop after content-only completion when image placeholders are present. Hand
 those placeholders off to `drg-images`, which owns `images.json`, image generation,
-AVIF conversion, and shortcode replacement.
+AVIF conversion, and shortcode replacement. If no placeholders were added, `drg-images` must still run and may infer image candidates directly from the finished guide content.
 
 Use the Skill tool to run:
 

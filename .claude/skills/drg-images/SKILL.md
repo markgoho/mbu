@@ -83,7 +83,9 @@ Every image entry in `images.json` must include a `value` field that explicitly 
 
 ## Image Placeholders
 
-During content writing (in the `drg` skill), HTML comment placeholders are used instead of image shortcodes (keeps Hugo build green before images exist):
+The preferred workflow is placeholder-first: during content writing (in the `drg` skill), HTML comment placeholders are used instead of image shortcodes (keeps Hugo build green before images exist).
+
+However, placeholder absence is not a valid reason to produce zero images automatically. If a finished guide has no placeholders, `drg-images` must audit the guide content itself, identify high-value image opportunities, insert inline placeholders at the correct teaching moments, and then continue with normal manifest generation.
 
 ```markdown
 <!-- IMAGE: filename-id.png | Alt text description -->
@@ -231,6 +233,13 @@ The `style_context` value is prepended to every image generation prompt. To prev
 ### Step 1: Create or Update images.json
 
 Build the manifest with all images that pass the value test. Every entry needs `id`, `file`, `description`, and `value`.
+
+If the guide has no `<!-- IMAGE: -->` placeholders, first do a fallback content audit:
+
+1. Read the guide markdown files.
+2. Identify at least one high-value image opportunity for the badge unless none truly pass the Image Value Test.
+3. Insert inline placeholders directly after the paragraph or section they support.
+4. Then build `images.json` from those placeholders.
 
 ### Step 2: Generate Images
 
