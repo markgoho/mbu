@@ -1,4 +1,4 @@
-// Merit Badges List Page
+/* Merit Badges List Page */
 .badge-count {
   color: var(--color-text-muted, #666);
   margin-block-start: var(--space-2xs);
@@ -37,7 +37,7 @@
       0 0 0 1px var(--tan-300);
   }
 
-  // Cards without images (text-only)
+  /* Cards without images (text-only) */
   &:not(.badge-card--with-image) {
     padding: var(--space-s);
 
@@ -58,7 +58,7 @@
   }
 }
 
-// Cards with images
+/* Cards with images */
 .badge-card--with-image {
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@
   margin-block-start: var(--space-2xs);
 }
 
-// Merit Badge Featured Image
+/* Merit Badge Featured Image */
 .badge-featured-image {
   background: white;
   border-radius: 16px;
@@ -151,7 +151,7 @@
   }
 }
 
-// Badge Quick Actions Grid
+/* Badge Quick Actions Grid */
 .badge-quick-actions {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
@@ -198,60 +198,61 @@
     }
   }
 
-  &--primary {
-    background: linear-gradient(
-      135deg,
-      var(--olive-500) 0%,
-      var(--teal-600) 100%
-    );
-    border-color: var(--olive-600);
+}
+
+.badge-action-card--primary {
+  background: linear-gradient(
+    135deg,
+    var(--olive-500) 0%,
+    var(--teal-600) 100%
+  );
+  border-color: var(--olive-600);
+  color: white;
+
+  .badge-action-card__title,
+  .badge-action-card__description {
     color: white;
-
-    .badge-action-card__title,
-    .badge-action-card__description {
-      color: white;
-    }
-
-    &::before {
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        transparent 50%
-      );
-    }
-
-    &:hover {
-      border-color: var(--olive-400);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-    }
   }
 
-  &--guide {
+  &::before {
     background: linear-gradient(
       135deg,
-      var(--brown-450) 0%,
-      var(--brown-500) 100%
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
     );
-    border-color: var(--brown-500);
+  }
+
+  &:hover {
+    border-color: var(--olive-400);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.badge-action-card--guide {
+  background: linear-gradient(
+    135deg,
+    var(--brown-450) 0%,
+    var(--brown-500) 100%
+  );
+  border-color: var(--brown-500);
+  color: white;
+
+  .badge-action-card__title,
+  .badge-action-card__description {
     color: white;
+  }
 
-    .badge-action-card__title,
-    .badge-action-card__description {
-      color: white;
-    }
+  &::before {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
+  }
 
-    &::before {
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1) 0%,
-        transparent 50%
-      );
-    }
-
-    &:hover {
-      border-color: var(--brown-400);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-    }
+  &:hover {
+    border-color: var(--brown-400);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -290,7 +291,7 @@
   padding-inline: clamp(var(--space-xs), 4vw, var(--space-m));
 }
 
-// Merit Badge Requirements Page
+/* Merit Badge Requirements Page */
 .merit-badge {
   max-width: 60ch;
   margin-inline: auto;
@@ -298,7 +299,7 @@
   container-name: merit-badge;
 }
 
-// DRG Guide Banner on Requirements Page
+/* DRG Guide Banner on Requirements Page */
 .guide-banner {
   margin-block: var(--space-s);
   border-radius: 12px;
@@ -315,7 +316,7 @@
       0 0 0 1px var(--brown-400);
   }
 
-  &__link {
+  .guide-banner__link {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
@@ -329,44 +330,44 @@
     text-decoration: none;
   }
 
-  &__icon {
+  .guide-banner__icon {
     font-size: 2rem;
     flex-shrink: 0;
     line-height: 1;
   }
 
-  &__content {
+  .guide-banner__content {
     flex: 1;
     min-width: 0;
   }
 
-  &__title {
+  .guide-banner__title {
     display: block;
     font-size: 1.1rem;
     line-height: 1.3;
   }
 
-  &__description {
+  .guide-banner__description {
     margin: var(--space-3xs) 0 0;
     font-size: 0.9rem;
     opacity: 0.9;
     line-height: 1.4;
   }
 
-  &__arrow {
+  .guide-banner__arrow {
     font-size: 1.5rem;
     flex-shrink: 0;
     opacity: 0.7;
     transition: transform 0.2s ease;
   }
 
-  &:hover &__arrow {
+  &:hover .guide-banner__arrow {
     transform: translateX(4px);
     opacity: 1;
   }
 }
 
-// Badge grid guide indicator
+/* Badge grid guide indicator */
 .guide-indicator {
   display: inline-block;
   font-size: 0.8rem;
@@ -374,7 +375,7 @@
   margin-block-start: var(--space-3xs);
 }
 
-// Discontinued Badge Notice
+/* Discontinued Badge Notice */
 .discontinued-notice {
   background: var(--brown-100);
   border: 2px solid var(--brown-400);
@@ -445,7 +446,7 @@
   }
 }
 
-// Deep linking custom properties
+/* Deep linking custom properties */
 :root {
   --deep-link-highlight-color: var(--olive-500-alpha-20);
   --deep-link-border-color: var(--olive-200);
@@ -572,17 +573,17 @@
     margin-block-end: var(--space-xs);
   }
 
-  // Alphabetic subrequirements (a, b, c)
+  /* Alphabetic subrequirements (a, b, c) */
   &.alpha {
     list-style: lower-alpha;
   }
 
-  // Numeric subrequirements (1, 2, 3)
+  /* Numeric subrequirements (1, 2, 3) */
   &.numeric {
     list-style: decimal;
   }
 
-  // Named options (Beef Cattle Option, Dairy Option, etc.)
+  /* Named options (Beef Cattle Option, Dairy Option, etc.) */
   &.options {
     list-style: none;
     padding-inline-start: 0;
@@ -719,7 +720,7 @@
   }
 }
 
-// Visually hidden utility for screen readers
+/* Visually hidden utility for screen readers */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -778,18 +779,18 @@
   }
 }
 
-// Eagle Required "Choose One" Groups
+/* Eagle Required "Choose One" Groups */
 .eagle-group {
   margin-block-start: var(--space-m);
 
-  &__heading {
+  .eagle-group__heading {
     font-size: 1.1rem;
     font-weight: var(--font-weight-bold);
     margin-block-end: var(--space-xs);
     color: var(--color-heading, #333);
   }
 
-  &__badges {
+  .eagle-group__badges {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-s);
@@ -801,7 +802,7 @@
     max-width: 400px;
   }
 
-  &__separator {
+  .eagle-group__separator {
     display: flex;
     align-items: center;
     font-weight: var(--font-weight-bold);

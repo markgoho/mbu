@@ -1,6 +1,6 @@
 .nav-cards-container {
   container: nav-cards / inline-size;
-  // outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .nav-card-container {
@@ -17,14 +17,14 @@
 .nav-card {
   display: grid;
   gap: var(--space-xs);
-  // grid-template-columns: subgrid;
+  /* grid-template-columns: subgrid; */
   place-items: center;
   text-decoration: none;
   padding: var(--space-s);
   border: 5px solid var(--tan-400);
   border-radius: var(--spacing-btn-radius);
   background-color: var(--tan-000);
-  // width: max-content;
+  /* width: max-content; */
 
   &:hover {
     border-color: var(--olive-500);
@@ -43,7 +43,7 @@
 
   .nav-card__description {
     text-align: center;
-    // max-width: 40ch;
+    /* max-width: 40ch; */
     margin: 0;
     grid-column: 1 / -1;
   }

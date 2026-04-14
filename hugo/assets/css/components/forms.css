@@ -58,7 +58,7 @@ fieldset {
 .form__input[type="radio"] {
   width: var(--space-l);
   height: var(--space-l);
-  accent-color: var(--tan-400); // Modern browsers, for color
+  accent-color: var(--tan-400); /* Modern browsers, for color */
   margin-inline-end: var(--space-2xs);
   background-color: var(--tan-000);
 }
