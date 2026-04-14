@@ -6,7 +6,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Set versions for our tools as arguments
 ARG HUGO_VERSION=0.159.2
-ARG DART_SASS_VERSION=1.99.0
 ARG BUN_VERSION=1.3.11
 ARG PLAYWRIGHT_VERSION=1.57.0
 
@@ -37,16 +36,8 @@ RUN wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hu
   && apt-get install -y ./hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
   && rm hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 
-# 4. Install Dart Sass
-RUN wget "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" \
-  && tar -xzf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" \
-  && mv dart-sass /usr/local/share/ \
-  && ln -s /usr/local/share/dart-sass/sass /usr/local/bin/sass \
-  && rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-
 RUN echo "Bun version: $(bun --version)"
 RUN echo "Hugo version: $(hugo version)"
-RUN echo "Sass version: $(sass --version)"
 RUN echo "Node.js version: $(node --version)"
 
 # Set the working directory for when the container starts
