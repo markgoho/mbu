@@ -456,7 +456,7 @@ function fileLikelyContainsRequirementSection(
   }
 
   const escapedReqPath = reqPath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const reqPathPattern = new RegExp(`^req_path:\s*"${escapedReqPath}"`, "m");
+  const reqPathPattern = new RegExp(`^req_path:s*"${escapedReqPath}"`, "m");
   return reqPathPattern.test(content);
 }
 

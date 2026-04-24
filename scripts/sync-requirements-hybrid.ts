@@ -151,7 +151,7 @@ function slugifyOption(text: string): string | null {
     // Also handles: "Option 1—Traditional Golf" -> extract "Traditional Golf"
     // Triggered by: golf (has "Option 1—Traditional Golf", "Option 2—Disc Golf")
     const prefixOptionMatch = nameToSlugify.match(
-      /^option\s+[a-z0-9][-—]\s*(.+?)(?:[\.\?]|$)/i,
+      /^option\s+[a-z0-9][-—]\s*(.+?)(?:[.?]|$)/i,
     );
     if (prefixOptionMatch && prefixOptionMatch[1]) {
       nameToSlugify = prefixOptionMatch[1];
@@ -395,7 +395,6 @@ function parseStructureFromHtml(html: string): {
   let pamphletUrl: string | undefined;
   $("a").each((_, linkEl) => {
     const $link = $(linkEl);
-    const linkText = $link.text().trim().toLowerCase();
     const href = $link.attr("href");
     // Must have valid href and end with .pdf
     if (href && href.length > 0 && href.endsWith(".pdf")) {
@@ -761,8 +760,6 @@ function mergeContent(
   contentMap: ContentMap,
 ): void {
   for (const req of requirements) {
-    const content = contentMap.get(req.path);
-
     // Don't merge LLM resources - HTML extraction is comprehensive and reliable
     // The LLM sometimes hallucinates resources or assigns them to wrong levels
     // HTML extraction with Cheerio is the source of truth for resources

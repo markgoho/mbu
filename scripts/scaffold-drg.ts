@@ -922,27 +922,27 @@ function renderPage({
   const nextPage = pageIndex >= 0 ? guidePages[pageIndex + 1] : undefined;
   const frontMatterLines = [
     "---",
-    `title: \"${guidePage.title}\"`,
-    `layout: \"${guidePage.kind === "print" ? "guide-print" : "guide"}\"`,
+    `title: "${guidePage.title}"`,
+    `layout: "${guidePage.kind === "print" ? "guide-print" : "guide"}"`,
   ];
 
   if (guidePage.kind === "index" || guidePage.kind === "print") {
-    frontMatterLines.push(`badge_name: \"${badgeData.title}\"`);
+    frontMatterLines.push(`badge_name: "${badgeData.title}"`);
   }
 
   if (guidePage.kind !== "print") {
-    frontMatterLines.push(`group_title: \"${guidePage.groupTitle}\"`);
+    frontMatterLines.push(`group_title: "${guidePage.groupTitle}"`);
   }
 
   if (guidePage.kind === "requirement") {
-    frontMatterLines.push(`req_number: \"${guidePage.reqNumber}\"`);
-    frontMatterLines.push(`req_path: \"${guidePage.reqPath}\"`);
+    frontMatterLines.push(`req_number: "${guidePage.reqNumber}"`);
+    frontMatterLines.push(`req_path: "${guidePage.reqPath}"`);
   }
 
   if (guidePage.kind === "print") {
     frontMatterLines.push("noindex: true");
     frontMatterLines.push(
-      `canonical_override: \"/merit-badges/${badgeData.slug}/guide/\"`,
+      `canonical_override: "/merit-badges/${badgeData.slug}/guide/"`,
     );
     frontMatterLines.push("build:");
     frontMatterLines.push("  list: never");
@@ -950,27 +950,27 @@ function renderPage({
 
   if (guidePage.kind !== "print" && previousPage !== undefined) {
     frontMatterLines.push(
-      `prev: \"${pageUrl({ slug: badgeData.slug, pageSlug: previousPage.pageSlug })}\"`,
+      `prev: "${pageUrl({ slug: badgeData.slug, pageSlug: previousPage.pageSlug })}"`,
     );
-    frontMatterLines.push(`prev_title: \"${previousPage.title}\"`);
+    frontMatterLines.push(`prev_title: "${previousPage.title}"`);
   }
 
   if (guidePage.kind !== "print" && nextPage !== undefined) {
     frontMatterLines.push(
-      `next: \"${pageUrl({ slug: badgeData.slug, pageSlug: nextPage.pageSlug })}\"`,
+      `next: "${pageUrl({ slug: badgeData.slug, pageSlug: nextPage.pageSlug })}"`,
     );
-    frontMatterLines.push(`next_title: \"${nextPage.title}\"`);
+    frontMatterLines.push(`next_title: "${nextPage.title}"`);
   }
 
   if (guidePage.kind === "index") {
     const guideNav = buildGuideNav({ guidePages, badgeData });
     frontMatterLines.push("guide_nav:");
     for (const guideNavGroup of guideNav) {
-      frontMatterLines.push(`  - group_title: \"${guideNavGroup.groupTitle}\"`);
+      frontMatterLines.push(`  - group_title: "${guideNavGroup.groupTitle}"`);
       frontMatterLines.push("    items:");
       for (const guideNavItem of guideNavGroup.items) {
-        frontMatterLines.push(`      - title: \"${guideNavItem.title}\"`);
-        frontMatterLines.push(`        url: \"${guideNavItem.url}\"`);
+        frontMatterLines.push(`      - title: "${guideNavItem.title}"`);
+        frontMatterLines.push(`        url: "${guideNavItem.url}"`);
         frontMatterLines.push(
           `        is_sub: ${guideNavItem.isSub ? "true" : "false"}`,
         );

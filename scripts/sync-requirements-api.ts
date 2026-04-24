@@ -188,23 +188,6 @@ function applyRequirementPathOverrides({
   }
 }
 
-function applyRequirementIdOverrides({
-  badgeSlug,
-  requirements,
-}: {
-  badgeSlug: string;
-  requirements: Requirement[];
-}): void {
-  for (const requirement of requirements) {
-    if (requirement["subrequirements"] !== undefined) {
-      applyRequirementIdOverrides({
-        badgeSlug,
-        requirements: requirement["subrequirements"],
-      });
-    }
-  }
-}
-
 function applyShotgunOptionBranchOverrides({
   badgeSlug,
   requirements,
@@ -292,24 +275,6 @@ function applySubrequirementModeOverrides({
       });
     }
   }
-}
-
-function applyRequirementIdOverride({
-  badgeSlug,
-  parentPath,
-  text,
-}: {
-  badgeSlug: string;
-  parentPath: string;
-  text: string;
-}): string | undefined {
-  return REQUIREMENT_ID_OVERRIDES[
-    buildRequirementIdOverrideKey({
-      badgeSlug,
-      parentPath,
-      text,
-    })
-  ];
 }
 
 const WORD_TO_COUNT: Record<string, number> = {
@@ -439,7 +404,7 @@ function extractPamphletUrl({
     }
 
     const pdfMatch = requirementRow["name"].match(
-      /href=\"([^\"]+\.pdf[^\"]*)\"/i,
+      /href="([^"]+\.pdf[^"]*)"/i,
     );
     if (pdfMatch?.[1] !== undefined) {
       return pdfMatch[1];

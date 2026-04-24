@@ -54,7 +54,20 @@ function validateRequirement(badgeSlug: string, req: any, path: string[]) {
   const location = path.join(".");
 
   // Check for encoding issues (garbage characters)
-  if (/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F\uFFFD]/.test(req.text || "")) {
+  if (
+    Array.from(req.text || "").some(char => {
+      const codePoint = char.codePointAt(0);
+      return (
+        codePoint !== undefined &&
+        ((codePoint >= 0 && codePoint <= 8) ||
+          codePoint === 11 ||
+          codePoint === 12 ||
+          (codePoint >= 14 && codePoint <= 31) ||
+          (codePoint >= 127 && codePoint <= 159) ||
+          codePoint === 65533)
+      );
+    })
+  ) {
     issues.push({
       badge: badgeSlug,
       type: "encoding_issue",

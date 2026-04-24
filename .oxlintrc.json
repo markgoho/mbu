@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "off",
+    "pedantic": "off",
+    "perf": "off",
+    "style": "off",
+    "restriction": "off",
+    "nursery": "off"
+  },
+  "options": {
+    "reportUnusedDisableDirectives": "error",
+    "typeAware": false,
+    "typeCheck": false
+  },
+  "plugins": ["typescript", "unicorn", "import"],
+  "ignorePatterns": [
+    "node_modules/**",
+    "hugo/public/**",
+    "public/**",
+    "reports/**",
+    "tmp/**"
+  ],
+  "rules": {}
+}
