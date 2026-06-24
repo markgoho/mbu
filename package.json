@@ -26,7 +26,9 @@
     "verify:drg-requirements": "bun scripts/verify-drg-requirements.ts",
     "scaffold:drg": "bun scripts/scaffold-drg.ts",
     "drg:coverage": "bun scripts/drg-coverage.ts",
-    "search:pdf": "python3 scripts/search-pdf.py"
+    "search:pdf": "python3 scripts/search-pdf.py",
+    "worksheets": "bun scripts/generate-worksheets.ts",
+    "worksheets:pilot": "BADGE_SLUGS='aviation,camping,first-aid,personal-management' bun scripts/generate-worksheets.ts"
   },
   "devDependencies": {
     "@google/genai": "^1.52.0",
@@ -45,6 +47,7 @@
   },
   "dependencies": {
     "cheerio": "^1.2.0",
+    "pdf-lib": "^1.17.1",
     "slugify": "^1.6.9",
     "youtube-sr": "^4.3.12"
   }

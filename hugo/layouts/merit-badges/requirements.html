@@ -40,6 +40,16 @@
             Download Free Pamphlet ↓
           </a>
         {{ end }}
+        {{ $worksheets := index hugo.Data "worksheets" }}
+        {{ if and $worksheets (in $worksheets.slugs $badge.File.ContentBaseName) }}
+          <a
+            href="/worksheets/{{ $badge.File.ContentBaseName }}-worksheet.pdf"
+            target="_blank"
+            rel="noopener"
+            class="pamphlet-link">
+            Download Fillable Worksheet ↓
+          </a>
+        {{ end }}
       </div>
     </header>
 
