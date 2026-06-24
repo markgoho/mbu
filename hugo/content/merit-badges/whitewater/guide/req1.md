@@ -76,21 +76,179 @@ At the first sign of thunder or lightning, get off the river as soon as it is sa
 
 {{< drg/inherited-requirement number="1b" req_path="1.b" topic="Review with your counselor the prevention, symptoms, and first aid treatment for the following injuries or illnesses that could occur while participating in whitewater activities including cold-water shock; hypothermia; head, neck, and back injuries; heat-related illnesses; sunburn; dehydration; blisters; bruises; cuts; sprains and strains; shoulder dislocation; and submersion injuries." />}}
 
-Whitewater first aid starts with prevention. Most river injuries happen because someone was cold, tired, sunburned, dehydrated, underdressed, or moving carelessly around slippery rocks and heavy gear.
+Whitewater first aid starts with prevention. Most river injuries happen because someone was cold, tired, sunburned, dehydrated, underdressed, or moving carelessly around slippery rocks and heavy gear. Review each condition below with your counselor so you can recognize trouble early on the river.
 
-### Prevention for common river injuries
+{{< drg/safety-first >}}
+On the river, start with scene safety. You cannot help well if you are also in current, under a boat, or exposed to lightning. Once the scene is stable, handle life threats first—airway, breathing, and severe bleeding—then protect the injured person from cold and continue assessment.
+{{< /drg/safety-first >}}
 
-Dress for water temperature, not just air temperature. Wear sun protection even on cloudy days. Drink regularly before you feel thirsty. Carry boats with a team so one awkward lift does not become a shoulder injury. Keep feet protected with secure river shoes, and step carefully on wet rocks and shorelines.
+### Cold-water shock
 
-### Symptoms and signs to watch for
+#### Prevention of cold-water shock
 
-Cold-water shock can cause gasping and panic right after immersion. Hypothermia can start with shivering and clumsy movement, then progress to confusion and exhaustion. Heat illness may show up as headache, dizziness, nausea, heavy sweating, or later a hot, dry body and altered behavior. Head, neck, and back injuries can involve pain, numbness, weakness, or loss of normal movement after a hit or awkward fall.
+Dress for water temperature, not just air temperature. Wear a properly fitted life jacket so you stay afloat during the first seconds after a swim. Avoid cotton layers that hold cold water against your skin.
 
-For smaller injuries, learn the pattern: blisters begin as hot spots, cuts bleed and can get dirty fast, sprains and strains cause swelling and pain with movement, and a shoulder dislocation often looks obviously out of place and hurts severely.
+#### Signs and symptoms of cold-water shock
 
-### First aid priorities on the river
+Gasping, panic, fast breathing, and loss of breath control in the first moments after immersion. The person may inhale water or struggle to keep their head above the surface even if they are a strong swimmer.
 
-Start with scene safety. You cannot help well if you are also in current, under a boat, or exposed to lightning. Once the scene is stable, handle life threats first—airway, breathing, and severe bleeding. Then protect the injured person from cold and continue assessment.
+#### First aid for cold-water shock
+
+Get the person out of the current and onto stable ground or into a boat. Help them focus on controlled breathing. Keep them warm and watch for hypothermia, which often follows cold-water shock.
+
+### Hypothermia
+
+#### Prevention of hypothermia
+
+Wear synthetic or wool layers under splash gear, eat and drink regularly, and get off the water before exhaustion sets in. Snowmelt-fed rivers can be dangerously cold even on sunny days.
+
+#### Signs and symptoms of hypothermia
+
+Shivering, clumsy hands, slurred speech, confusion, and unusual tiredness are early signs. Later, shivering may stop and the person may become sleepy or hard to wake.
+
+#### First aid for hypothermia
+
+Move the person out of wind and wet clothing. Insulate the head and torso with dry layers, warm the core gradually, and get medical help for moderate or severe cases. Give warm drinks only if the person is fully awake and can swallow.
+
+### Head, neck, and back injuries
+
+#### Prevention of head, neck, and back injuries
+
+Wear a solid, correctly fitted helmet on Class II water and above. Step carefully on wet rocks, avoid jumping from boats onto shore, and carry heavy boats with a team instead of twisting alone.
+
+#### Signs and symptoms of head, neck, and back injuries
+
+Pain, headache, dizziness, numbness, tingling, weakness, or loss of normal movement after a hit, fall, or awkward landing. Neck or back pain after any head impact should be treated as serious.
+
+#### First aid for head, neck, and back injuries
+
+Keep the person still and support the head and neck in the position found unless immediate danger forces a move. Do not remove a helmet unless breathing requires it. Call for emergency help and coordinate evacuation from the river corridor.
+
+### Heat-related illnesses
+
+#### Prevention of heat-related illnesses
+
+Drink before you feel thirsty, take shade breaks on hot days, wear light breathable clothing, and pace yourself during long carries and portages.
+
+#### Signs and symptoms of heat-related illnesses
+
+Early signs include muscle cramps, heavy sweating, headache, dizziness, and nausea. Heat exhaustion may progress to heatstroke—hot skin, confusion, vomiting, collapse, or altered behavior—which is a life-threatening emergency.
+
+#### First aid for heat-related illnesses
+
+Move the person to shade, loosen extra layers, and cool them with water and wet cloths. For heatstroke, call for emergency help and cool aggressively. Give fluids only if the person is fully alert.
+
+### Sunburn
+
+#### Prevention of sunburn
+
+Apply sunscreen before launch and reapply after swimming or sweating. Wear a brimmed hat, long sleeves when practical, and remember that water reflects sunlight upward.
+
+#### Signs and symptoms of sunburn
+
+Red, hot, painful skin that worsens over the next day. Severe sunburn can blister and cause fever or chills.
+
+#### First aid for sunburn
+
+Get out of direct sun, cool the skin with wet cloths, and avoid more exposure. Do not pop blisters. Seek medical help for large blistered areas or signs of infection.
+
+### Dehydration
+
+#### Prevention of dehydration
+
+Drink regularly throughout the day, eat salty snacks during long effort, and carry more water than you think you will need—paddling and portaging both drain fluids fast.
+
+#### Signs and symptoms of dehydration
+
+Thirst, dark urine, headache, dizziness, tiredness, and poor judgment. A dehydrated paddler may become cranky or clumsy before admitting anything is wrong.
+
+#### First aid for dehydration
+
+Rest in shade, sip water or an electrolyte drink slowly, and watch for heat illness that may be developing at the same time.
+
+### Blisters
+
+#### Prevention of blisters
+
+Wear broken-in river shoes and dry socks. Fix hot spots early with tape or moleskin instead of pushing through a full day of paddling.
+
+#### Signs and symptoms of blisters
+
+A hot spot, tenderness, redness, or a fluid-filled bubble on the foot or hand that changes how a person walks or grips a paddle.
+
+#### First aid for blisters
+
+Stop early, clean the area, and cover it with moleskin, tape, or a blister pad to reduce friction. Keep the area clean to prevent infection.
+
+### Bruises
+
+#### Prevention of bruises
+
+Wear a helmet and life jacket, secure loose gear in the boat, and keep hands and feet inside the boat when running rapids.
+
+#### Signs and symptoms of bruises
+
+Pain, swelling, and skin discoloration after a hit from a rock, paddle, or boat frame. Deep bruises over joints or the abdomen need closer attention.
+
+#### First aid for bruises
+
+Rest the area, apply a cold pack if available, and watch for signs of a more serious underlying injury such as fracture or internal bleeding.
+
+### Cuts
+
+#### Prevention of cuts
+
+Handle knives and rigging carefully, wear river shoes on rocky shorelines, and avoid reaching into brush or strainers.
+
+#### Signs and symptoms of cuts
+
+Bleeding, pain, and an open wound. River cuts often pick up dirt and bacteria quickly.
+
+#### First aid for cuts
+
+Control bleeding with direct pressure. Clean the wound with clean water when possible, cover it with a sterile dressing, and watch for signs of infection. Deep cuts or heavy bleeding need professional care.
+
+### Sprains and strains
+
+#### Prevention of sprains and strains
+
+Warm up before heavy lifting, carry boats with a team, keep your center of gravity low on slippery rocks, and avoid sudden twists when portaging.
+
+#### Signs and symptoms of sprains and strains
+
+Pain, swelling, bruising, and reduced motion at a joint or along a muscle. Weight-bearing may be difficult.
+
+#### First aid for sprains and strains
+
+Rest the injury, apply cold if available, and avoid using the joint until it can be assessed. Severe pain or obvious deformity suggests a fracture, not a simple sprain.
+
+### Shoulder dislocation
+
+#### Prevention of shoulder dislocation
+
+Use proper lifting technique when carrying boats and gear. Avoid reaching overhead to catch a heavy load or bracing a fall with an outstretched arm on slick rocks.
+
+#### Signs and symptoms of shoulder dislocation
+
+Severe pain, obvious deformity, and inability to move the arm normally. The shoulder may look squared off or lower than the other side.
+
+#### First aid for shoulder dislocation
+
+Keep the arm still and support it in the most comfortable position. Do not try to force the joint back into place. Get medical help for reduction and follow-up care.
+
+### Submersion injuries
+
+#### Prevention of submersion injuries
+
+Wear a life jacket, know your swimming limits, scout hazards before committing to a line, and never paddle alone. Good rescue planning reduces time in the water after a capsize.
+
+#### Signs and symptoms of submersion injuries
+
+Coughing, difficulty breathing, blue lips, confusion, or unconsciousness after being underwater. Symptoms may appear minutes after the person seems fine—a condition sometimes called secondary drowning.
+
+#### First aid for submersion injuries
+
+Get the person out of the water and check breathing. Begin CPR if needed and call for emergency help. Even a brief underwater struggle can injure the lungs, so anyone who was submerged and is having trouble breathing needs medical evaluation.
 
 {{< drg/be-prepared title="A swimmer comes out shivering and panicked" >}}
 - **Get them out of the current**: Move to shore or into a stable rescue position first.
