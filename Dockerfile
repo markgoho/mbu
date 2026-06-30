@@ -23,8 +23,8 @@ RUN git config --global --add safe.directory /__w/mbu/mbu && \
   git config --system --add safe.directory /__w/mbu/mbu && \
   git config --system --add core.quotepath false
 
-# Install Node.js 20.x (required by Firebase Functions)
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+# Install Node.js 22.x LTS (firebase-tools, sharp, and other native deps)
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
   && apt-get install -y nodejs
 
 # 2. Install Bun
