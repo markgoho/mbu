@@ -48,6 +48,24 @@
           </div>
         </a>
 
+        {{ $worksheets := index hugo.Data "worksheets" }}
+        {{ $slug := .File.ContentBaseName }}
+        {{ if and $worksheets (in $worksheets.slugs $slug) }}
+          <a
+            href="{{ $slug }}-merit-badge-worksheet.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge-action-card badge-action-card--worksheet">
+            <span class="badge-action-card__icon">📝</span>
+            <div class="badge-action-card__content">
+              <h2 class="badge-action-card__title">Fillable Worksheet</h2>
+              <p class="badge-action-card__description">
+                Printable PDF to record your work
+              </p>
+            </div>
+          </a>
+        {{ end }}
+
         {{ $guide := .GetPage "guide" }}
         {{ if $guide }}
           <a

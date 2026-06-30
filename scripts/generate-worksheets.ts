@@ -21,8 +21,20 @@ import {
   PDFPage,
   PDFForm,
 } from "pdf-lib";
-import { classifyNode, parsePrompts } from "./lib/requirement-field-type.ts";
-import type { Requirement, PromptSegment } from "./lib/requirement-field-type.ts";
+import {
+  classifyNode,
+  parsePrompts,
+  parseChoiceList,
+  parseCompletionClause,
+  parseOralActionLabel,
+  parseLabeledPair,
+  detectInterviewCount,
+} from "./lib/requirement-field-type.ts";
+import type {
+  Requirement,
+  PromptSegment,
+  SegmentFieldType,
+} from "./lib/requirement-field-type.ts";
 import { MERIT_BADGES } from "./merit-badges.ts";
 
 interface BadgeData {
@@ -46,6 +58,7 @@ const FIELD_LABEL_W = 120;
 const FIELD_HEIGHT = 16;
 const MULTILINE_HEIGHT = FIELD_HEIGHT * 4;
 const DRAW_BOX_HEIGHT = 80;
+const CHECKBOX_SIZE = 11;
 
 // --- Layout state ---
 interface LayoutState {
@@ -160,6 +173,125 @@ function addTextField(
   state.y -= h + 4;
 }
 
+/** Draw a horizontal row of choice checkboxes, wrapping as needed. */
+function addCheckboxGroup(
+  state: LayoutState,
+  baseName: string,
+  labels: string[],
+  indent: number,
+): void {
+  const startX = MARGIN + indent;
+  const maxX = MARGIN + CONTENT_W;
+  ensureSpace(state, CHECKBOX_SIZE + 8);
+  let x = startX;
+  for (const label of labels) {
+    const labelW = state.font.widthOfTextAtSize(label, FONT_SIZE_BODY);
+    const cellW = CHECKBOX_SIZE + 5 + labelW + 18;
+    if (x !== startX && x + cellW > maxX) {
+      state.y -= CHECKBOX_SIZE + 6;
+      ensureSpace(state, CHECKBOX_SIZE + 8);
+      x = startX;
+    }
+    const cb = state.form.createCheckBox(`${baseName}_${state.fieldIndex++}`);
+    cb.addToPage(state.page, {
+      x,
+      y: state.y - CHECKBOX_SIZE,
+      width: CHECKBOX_SIZE,
+      height: CHECKBOX_SIZE,
+      borderWidth: 1,
+      borderColor: rgb(0.4, 0.4, 0.4),
+    });
+    state.page.drawText(label, {
+      x: x + CHECKBOX_SIZE + 5,
+      y: state.y - CHECKBOX_SIZE + 2,
+      size: FONT_SIZE_BODY,
+      font: state.font,
+      color: rgb(0, 0, 0),
+    });
+    x += cellW;
+  }
+  state.y -= CHECKBOX_SIZE + 8;
+}
+
+/** Draw a single completion checkbox with a label. */
+function addCompletionCheckbox(
+  state: LayoutState,
+  name: string,
+  label: string,
+  indent: number,
+): void {
+  ensureSpace(state, CHECKBOX_SIZE + 8);
+  const cb = state.form.createCheckBox(name);
+  cb.addToPage(state.page, {
+    x: MARGIN + indent,
+    y: state.y - CHECKBOX_SIZE,
+    width: CHECKBOX_SIZE,
+    height: CHECKBOX_SIZE,
+    borderWidth: 1,
+    borderColor: rgb(0.4, 0.4, 0.4),
+  });
+  const labelMaxW = CONTENT_W - indent - CHECKBOX_SIZE - 5;
+  const lines = wrapText(label, state.font, FONT_SIZE_BODY, labelMaxW);
+  state.page.drawText(lines[0], {
+    x: MARGIN + indent + CHECKBOX_SIZE + 5,
+    y: state.y - CHECKBOX_SIZE + 2,
+    size: FONT_SIZE_BODY,
+    font: state.font,
+    color: rgb(0, 0, 0),
+  });
+  state.y -= CHECKBOX_SIZE + 8;
+}
+
+// Countable nouns whose items have a name worth recording (a song title, a
+// book title, etc.) → render a name field above each description box.
+const NAMEABLE_ITEMS = new Set([
+  "song", "book", "film", "movie", "recording", "poem", "story",
+  "picture", "photograph", "article", "biography",
+]);
+
+function singularize(noun: string): string {
+  return noun.replace(/ies$/i, "y").replace(/s$/i, "");
+}
+
+/** Draw a named entry: a single-line title field, then a description box. */
+function addNamedEntry(
+  state: LayoutState,
+  baseName: string,
+  itemLabel: string,
+  index: number,
+  indent: number,
+): void {
+  addTextField(state, fieldName(baseName, state), `${itemLabel} ${index}`, {
+    indent,
+    labelWidth: 56,
+  });
+  addTextField(state, fieldName(baseName, state), "", {
+    indent,
+    multiline: true,
+    height: MULTILINE_HEIGHT * 0.75,
+  });
+  state.y -= 2;
+}
+
+/** Draw a labeled multiline answer box (label above the box). */
+function addLabeledBox(
+  state: LayoutState,
+  name: string,
+  label: string,
+  indent: number,
+): void {
+  ensureSpace(state, MULTILINE_HEIGHT + FONT_SIZE_SMALL + 8);
+  state.page.drawText(label, {
+    x: MARGIN + indent,
+    y: state.y - FONT_SIZE_SMALL - 2,
+    size: FONT_SIZE_SMALL,
+    font: state.boldFont,
+    color: rgb(0.2, 0.2, 0.2),
+  });
+  state.y -= FONT_SIZE_SMALL + 4;
+  addTextField(state, name, "", { indent, multiline: true, height: MULTILINE_HEIGHT });
+}
+
 /** Draw a blank bordered box (for drawing requirements). */
 function addDrawBox(state: LayoutState, indent: number): void {
   ensureSpace(state, DRAW_BOX_HEIGHT + 4);
@@ -174,6 +306,19 @@ function addDrawBox(state: LayoutState, indent: number): void {
   state.y -= DRAW_BOX_HEIGHT + 4;
 }
 
+// A "discuss" requirement defaults to the counselor, but some explicitly name a
+// different party ("discuss with your family/parent/group"). Reflect that in the
+// checkbox label so the Scout knows who the conversation is with.
+function discussLabel(text: string): string {
+  const t = text.toLowerCase();
+  if (/\bwith\s+(?:your|a|the)\s+(?:parent|guardian)s?\b/.test(t))
+    return "Discussed with parent/guardian";
+  if (/\bwith\s+(?:your|the)\s+famil(?:y|ies)\b/.test(t)) return "Discussed with family";
+  if (/\bwith\s+(?:your|the)\s+(?:group|patrol|troop|den|crew|class|team|unit)\b/.test(t))
+    return "Discussed with group";
+  return "Discussed with counselor";
+}
+
 function renderSegmentFields(
   state: LayoutState,
   fName: string,
@@ -181,9 +326,40 @@ function renderSegmentFields(
   seg: PromptSegment,
 ): void {
   const { fieldType, count } = seg;
-  if (fieldType === "demonstrate" || fieldType === "do") return;
+  if (fieldType === "demonstrate" || fieldType === "do" || fieldType === "discuss") {
+    // Conversation with the counselor → completion checkbox.
+    if (fieldType === "discuss") {
+      addCompletionCheckbox(state, fieldName(fName, state), discussLabel(seg.text), fieldIndent);
+      return;
+    }
+    // A self-contained oral performance ("Give a talk", "Lead a discussion")
+    // gets a single completion checkbox with a concise label.
+    const oralLabel = parseOralActionLabel(seg.text);
+    if (oralLabel) {
+      addCompletionCheckbox(state, fieldName(fName, state), oralLabel, fieldIndent);
+      return;
+    }
+    // Activity requirements may carry an inline choice list ("a song, dance,
+    // poem, or story") and/or a completion action ("and teach it to friends").
+    const choices = parseChoiceList(seg.text);
+    if (choices) addCheckboxGroup(state, fName, choices, fieldIndent);
+    const completion = parseCompletionClause(seg.text);
+    if (completion) addCompletionCheckbox(state, fieldName(fName, state), completion, fieldIndent);
+    // A physical-skill requirement ("Demonstrate …", "Shoot a round …") with no
+    // other field gets a completion checkbox so it can be tracked.
+    if (fieldType === "demonstrate" && !choices && !completion) {
+      addCompletionCheckbox(state, fieldName(fName, state), "Completed", fieldIndent);
+    }
+    return;
+  }
 
-  if (count !== null && count <= 6) {
+  const itemNoun = seg.noun ? singularize(seg.noun) : null;
+  if (count !== null && count <= 6 && itemNoun && NAMEABLE_ITEMS.has(itemNoun)) {
+    const itemLabel = itemNoun.charAt(0).toUpperCase() + itemNoun.slice(1);
+    for (let i = 0; i < count; i++) {
+      addNamedEntry(state, fName, itemLabel, i + 1, fieldIndent);
+    }
+  } else if (count !== null && count <= 6) {
     const h = fieldType === "write-long" ? 2 * FIELD_HEIGHT : FIELD_HEIGHT;
     const ml = fieldType === "write-long";
     for (let i = 0; i < count; i++) {
@@ -210,13 +386,64 @@ function renderRequirement(
   req: Requirement,
   depth: number,
   prefix: string,
+  inherited?: SegmentFieldType | "label-only",
 ): void {
   const indent = depth * 16;
   const reqPath = req.path.replace(/\./g, "_");
 
+  // Named options ("Option A—Beef Cattle…") already read as their own label;
+  // don't prepend the slugified req_id.
+  const labelPrefix = req.is_option ? "" : `${prefix}. `;
+
+  // Intro parent ("Explain the following:") whose children are bare items: render
+  // the header, then give each child its own field inheriting the lead verb.
+  // An "intro parent" ends with a colon and delegates a single verb to its
+  // children — either "Explain the following:" or a trailing imperative like
+  // "List the three branches… Explain:". "discuss" is excluded so it stays a
+  // single-checkbox discussion container handled below.
+  const introVerb = req.subrequirements?.length
+    ? stripMarkdown(req.text)
+        .trim()
+        .match(/(?:^|[.;]\s+)(explain|describe|tell|list|name|identify|define)\b[^.:]*:\s*$/i)?.[1]
+    : undefined;
+  if (introVerb) {
+    const v = introVerb.toLowerCase();
+    const childType: SegmentFieldType = /^(?:list|name|identify)$/.test(v)
+      ? "write-short"
+      : v === "discuss"
+        ? "discuss"
+        : "write-long";
+    ensureSpace(state, 24);
+    drawText(state, `${labelPrefix}${stripMarkdown(req.text)}`, { indent, size: FONT_SIZE_BODY });
+    state.y -= 2;
+    for (const child of req.subrequirements!) {
+      renderRequirement(state, child, depth + 1, child.req_id, childType);
+    }
+    return;
+  }
+
+  // A "Discuss … :" parent with sub-topics is a single conversation: render the
+  // header, one shared "Discussed" checkbox, and the topics as plain text. (Some
+  // such parents aren't caught by the container classifier when they lack the
+  // word "following".)
+  if (
+    req.subrequirements?.length &&
+    /^discuss\b/i.test(stripMarkdown(req.text).trim()) &&
+    /:\s*$/.test(stripMarkdown(req.text).trim())
+  ) {
+    ensureSpace(state, 24);
+    drawText(state, `${labelPrefix}${stripMarkdown(req.text)}`, { indent, size: FONT_SIZE_BODY });
+    state.y -= 2;
+    addCompletionCheckbox(state, fieldName(`req_${reqPath}`, state), discussLabel(req.text), indent + 12);
+    for (const child of req.subrequirements) {
+      renderRequirement(state, child, depth + 1, child.req_id, "label-only");
+    }
+    return;
+  }
+
   if (classifyNode(req) === "container") {
     ensureSpace(state, 24);
-    drawText(state, `${prefix}. ${stripMarkdown(req.text)}`, { bold: true, indent, size: FONT_SIZE_BODY });
+    drawText(state, `${labelPrefix}${stripMarkdown(req.text)}`, { bold: true, indent, size: FONT_SIZE_BODY });
 
     const mode = req.subrequirement_mode;
     if (mode?.type === "select" && mode.count) {
@@ -227,31 +454,146 @@ function renderRequirement(
       });
     }
 
+    // A list of options lets each fully field-less option carry a completion
+    // checkbox so the Scout can mark which ones they did. Skipped for discussion
+    // containers, which instead get one shared "Discussed" checkbox.
+    const isDiscussContainer = /^discuss\b/i.test(stripMarkdown(req.text).trim());
+    const childInherit: SegmentFieldType | "label-only" = isDiscussContainer
+      ? "label-only"
+      : "demonstrate";
     if (req.subrequirements) {
       for (const child of req.subrequirements) {
-        renderRequirement(state, child, depth + 1, child.req_id);
+        renderRequirement(state, child, depth + 1, child.req_id, childInherit);
       }
+    }
+
+    // "Discuss the following with your counselor:" → one completion checkbox
+    // covering the discussion of all the listed topics.
+    if (isDiscussContainer) {
+      addCompletionCheckbox(state, fieldName(`req_${reqPath}`, state), discussLabel(req.text), indent + 12);
     }
     return;
   }
 
   // Leaf: parse into prompt segments; each gets its own label + field(s)
-  const segments = parsePrompts(req.text);
+  let segments = parsePrompts(req.text);
   const fName = `req_${reqPath}`;
   const fieldIndent = indent + 12;
 
+  const renderChildren = (): void => {
+    if (req.subrequirements) {
+      for (const child of req.subrequirements) {
+        renderRequirement(state, child, depth + 1, child.req_id);
+      }
+    }
+  };
+
+  const drawSegmentText = (): void => {
+    segments.forEach((seg, i) => {
+      drawText(state, i === 0 ? `${labelPrefix}${seg.text}` : seg.text, { indent, size: FONT_SIZE_BODY });
+    });
+  };
+
+  // A topic listed under a "Discuss … with your counselor:" container is just a
+  // talking point — render it as text; the parent carries the single checkbox.
+  if (inherited === "label-only") {
+    drawSegmentText();
+    state.y -= 4;
+    renderChildren();
+    return;
+  }
+
+  // A child of an "Explain/Describe the following:" intro parent inherits its
+  // verb. Override bare phrases ("do") and spurious "discuss" matches (e.g. a
+  // topic that merely contains the word "discuss"), but keep a child's own
+  // explicit draw/compute/write field if it has one.
+  if (inherited && inherited !== "demonstrate") {
+    segments = segments.map(s =>
+      s.fieldType === "do" || s.fieldType === "discuss" ? { ...s, fieldType: inherited } : s,
+    );
+  }
+
+  // A fully field-less option inside a "choose/do one of the following" list →
+  // one completion checkbox so the Scout can mark it done. When the option is
+  // itself a "do ALL the following" task list, push the tracking down so each
+  // listed task gets its own checkbox instead of one on the wrapper.
+  if (inherited === "demonstrate" && segments.every(s => s.fieldType === "do")) {
+    drawSegmentText();
+    state.y -= 2;
+    const isTaskList =
+      !!req.subrequirements?.length &&
+      /\b(?:do|complete|perform)\b[^.]*\bfollowing\b/i.test(stripMarkdown(req.text));
+    if (isTaskList) {
+      for (const child of req.subrequirements!) {
+        renderRequirement(state, child, depth + 1, child.req_id, "demonstrate");
+      }
+    } else {
+      addCompletionCheckbox(state, fieldName(fName, state), "Completed", fieldIndent);
+      renderChildren();
+    }
+    state.y -= 4;
+    return;
+  }
+
+  // Leaf mode: counted interviews → completion checkboxes, no written fields.
+  const interviewCount = detectInterviewCount(req.text);
+  if (interviewCount) {
+    drawSegmentText();
+    state.y -= 2;
+    for (let k = 1; k <= interviewCount; k++) {
+      addCompletionCheckbox(state, fieldName(fName, state), `Interview ${k} complete`, fieldIndent);
+    }
+    state.y -= 4;
+    renderChildren();
+    return;
+  }
+
+  // Leaf mode: "one a political leader … and the other a private citizen" → two
+  // labeled boxes covering the whole requirement (the rest is instruction text).
+  const labeledPair = parseLabeledPair(req.text);
+  if (labeledPair) {
+    drawSegmentText();
+    state.y -= 2;
+    addLabeledBox(state, fieldName(fName, state), labeledPair[0], fieldIndent);
+    addLabeledBox(state, fieldName(fName, state), labeledPair[1], fieldIndent);
+    state.y -= 4;
+    renderChildren();
+    return;
+  }
+
+  // Leaf mode: open-ended research narrative → one box (+ counselor checkbox).
+  if (/^(?:research|investigate|study|trace|explore)\b/i.test(segments[0]?.text ?? "")) {
+    drawSegmentText();
+    state.y -= 2;
+    addTextField(state, fieldName(fName, state), "", { indent: fieldIndent, multiline: true });
+    const discussSeg = segments.find(s => s.fieldType === "discuss");
+    if (discussSeg) {
+      addCompletionCheckbox(state, fieldName(fName, state), discussLabel(discussSeg.text), fieldIndent);
+    }
+    state.y -= 4;
+    renderChildren();
+    return;
+  }
+
+  // A standalone activity requirement with no written, visual, or oral
+  // deliverable ("carry your pack to complete a hike", "participate in three
+  // treks") → a single completion checkbox so it can be tracked.
+  if (!req.subrequirements?.length && segments.every(s => s.fieldType === "do")) {
+    drawSegmentText();
+    state.y -= 2;
+    addCompletionCheckbox(state, fieldName(fName, state), "Completed", fieldIndent);
+    state.y -= 4;
+    return;
+  }
+
   segments.forEach((seg, i) => {
-    drawText(state, i === 0 ? `${prefix}. ${seg.text}` : seg.text, { indent, size: FONT_SIZE_BODY });
+    drawText(state, i === 0 ? `${labelPrefix}${seg.text}` : seg.text, { indent, size: FONT_SIZE_BODY });
     state.y -= 2;
     renderSegmentFields(state, fName, fieldIndent, seg);
     state.y -= 4;
   });
 
-  if (req.subrequirements) {
-    for (const child of req.subrequirements) {
-      renderRequirement(state, child, depth + 1, child.req_id);
-    }
-  }
+  renderChildren();
 }
 
 async function generateWorksheet(slug: string, data: BadgeData): Promise<Uint8Array> {
@@ -334,8 +676,9 @@ async function main(): Promise<void> {
     slugs = MERIT_BADGES.map(b => b.slug);
   }
 
-  const outDir = path.join(import.meta.dir, "../hugo/static/worksheets");
-  mkdirSync(outDir, { recursive: true });
+  // Worksheets are nested per badge so each is served alongside its landing page
+  // at /merit-badges/{slug}/worksheet.pdf.
+  const baseDir = path.join(import.meta.dir, "../hugo/static/merit-badges");
 
   const generated: string[] = [];
 
@@ -348,7 +691,9 @@ async function main(): Promise<void> {
     const data: BadgeData = JSON.parse(readFileSync(dataPath, "utf8"));
     console.log(`[gen] ${data.title}...`);
     const pdf = await generateWorksheet(slug, data);
-    const outPath = path.join(outDir, `${slug}-worksheet.pdf`);
+    const outDir = path.join(baseDir, slug);
+    mkdirSync(outDir, { recursive: true });
+    const outPath = path.join(outDir, `${slug}-merit-badge-worksheet.pdf`);
     const tmpPath = outPath + ".tmp.pdf";
     writeFileSync(tmpPath, pdf);
     // Post-process: strip AP streams from multiline fields, set /Helv 0 Tf DA
