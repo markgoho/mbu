@@ -1,0 +1,12 @@
+<main class="home">
+  <h1>Merit Badge University Platform</h1>
+  <p class="home__lead">Foundation skeleton — API health check</p>
+
+  <section class="home__status" aria-live="polite">
+    <span class="home__label">API status</span>
+    <output class="home__value">{{ status() }}</output>
+    @if (error(); as message) {
+      <p class="home__error">{{ message }}</p>
+    }
+  </section>
+</main>

@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["es2023"],
+    "module": "NodeNext",
+    "outDir": "lib",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "es2022"
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": ["src/**/*.test.ts", "src/test-utils/**", "node_modules"]
+}

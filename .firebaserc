@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "merit-badge-university"
-  }
+  },
+  "targets": {
+    "merit-badge-university": {
+      "hosting": {
+        "app-site": [
+          "mbu-platform"
+        ],
+        "main-site": [
+          "merit-badge-university"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Set versions for our tools as arguments
 ARG HUGO_VERSION=0.159.2
 ARG BUN_VERSION=1.3.11
-ARG PLAYWRIGHT_VERSION=1.57.0
+ARG PLAYWRIGHT_VERSION=1.61.0
 
 # 1. Install base dependencies and Java 21 (required for Firebase emulators - firebase-tools requires Java 21+)
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -16,7 +16,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   ca-certificates \
   unzip \
   git \
+  openjdk-21-jre-headless \
   && rm -rf /var/lib/apt/lists/*
+
+# Set JAVA_HOME for Firebase emulators
+ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 # Configure git to trust the workspace directory to avoid ownership errors in GitHub Actions
 RUN git config --global --add safe.directory /__w/mbu/mbu && \
@@ -36,9 +41,16 @@ RUN wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hu
   && apt-get install -y ./hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
   && rm hugo_extended_${HUGO_VERSION}_linux-amd64.deb
 
+# 4. Install Playwright with Chromium browser and OS dependencies (for app E2E tests)
+# Use a fixed browsers path to avoid HOME directory issues in GitHub Actions
+ENV PLAYWRIGHT_BROWSERS_PATH=/opt/playwright-browsers
+RUN bunx playwright@${PLAYWRIGHT_VERSION} install chromium --with-deps
+
 RUN echo "Bun version: $(bun --version)"
 RUN echo "Hugo version: $(hugo version)"
 RUN echo "Node.js version: $(node --version)"
+RUN echo "Java version:" && java -version
+RUN bunx playwright@${PLAYWRIGHT_VERSION} --version
 
 # Set the working directory for when the container starts
 WORKDIR /workspace
