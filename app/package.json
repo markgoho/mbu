@@ -1,0 +1,49 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "lint": "ng lint",
+    "lint:e2e": "eslint e2e",
+    "typecheck:e2e": "tsc --project tsconfig.e2e.json --noEmit",
+    "e2e": "bash scripts/run-e2e.sh",
+    "e2e:ui": "bash scripts/run-e2e.sh --ui"
+  },
+  "private": true,
+  "packageManager": "bun@1.3.14",
+  "dependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/compiler": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/forms": "^22.0.0",
+    "@angular/platform-browser": "^22.0.0",
+    "@angular/router": "^22.0.0",
+    "firebase": "^12.15.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular-eslint/builder": "^22.0.0",
+    "@angular/build": "^22.0.5",
+    "@angular/cli": "^22.0.5",
+    "@angular/compiler-cli": "^22.0.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.61.0",
+    "@testing-library/angular": "^19.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitest/coverage-v8": "^4.1.9",
+    "angular-eslint": "^22.0.0",
+    "eslint": "^10.4.0",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.8.1",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.1",
+    "vitest": "^4.1.9"
+  }
+}

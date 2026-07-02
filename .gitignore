@@ -35,9 +35,12 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 hugo/public
 hugo/resources
+functions/lib
 .playwright-mcp
 
 
+.firebase/
 firebase-*.log
+firestore-debug.log
 .playwright/
 .playwright-cli/
