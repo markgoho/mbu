@@ -48,7 +48,12 @@ export class ValidationError extends HttpError {
 
 /** 409 Conflict — resource conflict (already exists, concurrent modification). */
 export class ConflictError extends HttpError {
-  constructor(message: string, code?: string) {
+  constructor(
+    message: string,
+    /** Optional structured payload (e.g. conflicting class ids). */
+    public readonly details?: unknown,
+    code?: string,
+  ) {
     super(message, 409, code);
   }
 }

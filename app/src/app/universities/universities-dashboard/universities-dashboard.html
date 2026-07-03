@@ -1,0 +1,44 @@
+<main class="dashboard">
+  <header class="dashboard__header">
+    <h1>Your Universities</h1>
+    <a routerLink="/universities/new" class="dashboard__create">Create University</a>
+  </header>
+
+  @if (flashMessage(); as message) {
+    <p class="dashboard__flash" role="status">
+      {{ message }}
+      <button type="button" (click)="dismissFlash()">Dismiss</button>
+    </p>
+  }
+
+  @if (list.error()) {
+    <p class="dashboard__error" role="alert">Could not load your universities.</p>
+  } @else if (list.isLoading()) {
+    <p>Loading…</p>
+  } @else {
+    @if (isEmpty()) {
+      <p class="dashboard__empty">
+        You have not created a University yet.
+        <a routerLink="/universities/new">Create one</a>.
+      </p>
+    } @else {
+      <ul class="dashboard__list">
+        @for (uni of items(); track uni.id) {
+          <li>
+            <a [routerLink]="['/universities', uni.id]" class="dashboard__card">
+              <span class="dashboard__title">{{ uni.title }}</span>
+              <span class="dashboard__meta">
+                {{ uni.status }} ·
+                {{ uni.startDate | date: 'mediumDate' }}
+                @if (uni.endDate) {
+                  – {{ uni.endDate | date: 'mediumDate' }}
+                }
+                · {{ uni.classCount }} {{ uni.classCount === 1 ? 'class' : 'classes' }}
+              </span>
+            </a>
+          </li>
+        }
+      </ul>
+    }
+  }
+</main>

@@ -1,0 +1,72 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="class-form">
+  @if (errorMessage(); as error) {
+    <p class="class-form__error" role="alert">{{ error }}</p>
+  }
+
+  <label for="badgeSlug">Merit badge</label>
+  <select id="badgeSlug" formControlName="badgeSlug">
+    <option value="">Select a badge…</option>
+    @for (badge of badges(); track badge.slug) {
+      <option [value]="badge.slug">
+        {{ badge.title }}
+        @if (badge.eagleRequired) {
+          (Eagle required)
+        }
+      </option>
+    }
+  </select>
+
+  <fieldset class="class-form__fieldset">
+    <legend>Periods</legend>
+    @if (periods().length === 0) {
+      <p class="class-form__hint">Add periods before creating classes.</p>
+    }
+    @for (period of periods(); track period.periodId) {
+      <label class="class-form__checkbox">
+        <input
+          type="checkbox"
+          [checked]="isPeriodSelected(period.periodId)"
+          (change)="togglePeriod(period.periodId, $any($event.target).checked)"
+        />
+        {{ period.label }}
+      </label>
+    }
+  </fieldset>
+
+  <label for="capacity">Capacity</label>
+  <input id="capacity" type="number" formControlName="capacity" min="1" max="200" />
+
+  <label for="room">Room (optional)</label>
+  <input id="room" type="text" formControlName="room" />
+
+  <label for="notes">Notes (optional)</label>
+  <textarea id="notes" formControlName="notes" rows="2"></textarea>
+
+  @if (!editing()) {
+    <fieldset class="class-form__fieldset">
+      <legend>Counselor (you)</legend>
+      <p>
+        Name: <strong>{{ chancellorName() }}</strong>
+      </p>
+      <label for="bsaId">BSA member ID</label>
+      <input id="bsaId" type="text" formControlName="bsaId" autocomplete="off" />
+      <label class="class-form__checkbox">
+        <input type="checkbox" formControlName="acceptDisclaimer" />
+        {{ disclaimerText }}
+      </label>
+    </fieldset>
+  }
+
+  <div class="class-form__actions">
+    <button type="button" (click)="dismissed.emit()">Cancel</button>
+    <button type="submit" [disabled]="isLoading()">
+      @if (isLoading()) {
+        Saving…
+      } @else if (editing()) {
+        Update class
+      } @else {
+        Add class
+      }
+    </button>
+  </div>
+</form>

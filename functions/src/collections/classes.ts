@@ -9,12 +9,16 @@ export function classesPath(universityId: string): string {
 }
 
 /**
- * Display-only cache of a class's counselors.
+ * Display cache of a class counselor, including self-attested credentials.
  * Authorization always queries roleGrants — never this array.
  */
-export interface CounselorRef {
+export interface ClassCounselor {
   uid: string;
   displayName: string;
+  /** Self-attested BSA member ID; not verified by Scouting America. */
+  bsaId: string;
+  disclaimerAcceptedAt: Timestamp;
+  disclaimerVersion: string;
 }
 
 /** A badge taught in one or more periods. */
@@ -31,8 +35,8 @@ export interface ClassDocument {
   waitlistCount: number;
   room: string | null;
   notes: string | null;
-  /** Display cache only; see CounselorRef. */
-  counselors: CounselorRef[];
+  /** Display cache only; see ClassCounselor. */
+  counselors: ClassCounselor[];
   createdAt: Timestamp;
   updatedAt: Timestamp;
 }
