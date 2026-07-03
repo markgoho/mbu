@@ -25,6 +25,33 @@ export const routes: Routes = [
       import('./onboarding/onboarding').then((m) => m.Onboarding),
   },
   {
+    path: 'universities',
+    canActivate: [requireAuth, requireVerified, requireOnboarded],
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./universities/universities-dashboard/universities-dashboard').then(
+            (m) => m.UniversitiesDashboard,
+          ),
+      },
+      {
+        path: 'new',
+        loadComponent: () =>
+          import('./universities/university-new/university-new').then(
+            (m) => m.UniversityNew,
+          ),
+      },
+      {
+        path: ':id',
+        loadComponent: () =>
+          import('./universities/university-editor/university-editor').then(
+            (m) => m.UniversityEditor,
+          ),
+      },
+    ],
+  },
+  {
     path: '',
     canActivate: [requireAuth, requireVerified, requireOnboarded],
     loadComponent: () => import('./home/home').then((m) => m.Home),

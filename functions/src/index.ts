@@ -26,3 +26,14 @@ export const usersApi = onRequest(
     await handleUsersApi(request, response);
   },
 );
+
+export const universitiesApi = onRequest(
+  {
+    invoker: "public",
+    region: "us-east4",
+  },
+  async (request, response) => {
+    const { handleUniversitiesApi } = await import("./universities-api/handler.js");
+    await handleUniversitiesApi(request, response);
+  },
+);

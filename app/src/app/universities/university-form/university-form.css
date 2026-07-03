@@ -1,0 +1,19 @@
+.uni-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.uni-form__fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.uni-form__error {
+  color: var(--color-error);
+  margin: 0;
+}

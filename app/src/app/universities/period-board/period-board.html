@@ -1,0 +1,37 @@
+<section class="period-board">
+  <h2>Periods</h2>
+  <p class="period-board__hint">
+    Define flexible time blocks for your event. Overlapping periods are allowed but warned.
+  </p>
+
+  @if (errorMessage(); as error) {
+    <p class="period-board__error" role="alert">{{ error }}</p>
+  }
+  @if (overlapWarning(); as warning) {
+    <p class="period-board__warning" role="status">{{ warning }}</p>
+  }
+
+  <form [formGroup]="form" (ngSubmit)="save()">
+    <div formArrayName="rows" class="period-board__rows">
+      @for (row of rows.controls; track $index; let i = $index) {
+        <fieldset [formGroupName]="i" class="period-board__row">
+          <input type="hidden" formControlName="periodId" />
+          <label>Label <input type="text" formControlName="label" /></label>
+          <label>Starts <input type="datetime-local" formControlName="startsAt" /></label>
+          <label>Ends <input type="datetime-local" formControlName="endsAt" /></label>
+          <button type="button" (click)="removeRow(i)">Remove</button>
+        </fieldset>
+      }
+    </div>
+    <div class="period-board__actions">
+      <button type="button" (click)="addRow()">Add period</button>
+      <button type="submit" [disabled]="isLoading()">
+        @if (isLoading()) {
+          Saving…
+        } @else {
+          Save periods
+        }
+      </button>
+    </div>
+  </form>
+</section>

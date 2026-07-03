@@ -1,0 +1,39 @@
+<section class="class-list">
+  <header class="class-list__header">
+    <h2>Classes</h2>
+    @if (!showForm()) {
+      <button type="button" (click)="startCreate()">Add class</button>
+    }
+  </header>
+
+  @if (classes().length === 0 && !showForm()) {
+    <p class="class-list__empty">No classes yet.</p>
+  } @else {
+    <ul class="class-list__items">
+      @for (cls of classes(); track cls.classId) {
+        <li class="class-list__item">
+          <span>
+            <strong>{{ cls.badgeTitle }}</strong>
+            · cap {{ cls.capacity }} · {{ cls.periodIds.length }} period(s)
+            @if (cls.room) {
+              · {{ cls.room }}
+            }
+          </span>
+          <span class="class-list__actions">
+            <button type="button" (click)="startEdit(cls)">Edit</button>
+            <button type="button" (click)="deleteClass(cls)">Delete</button>
+          </span>
+        </li>
+      }
+    </ul>
+  }
+
+  @if (showForm()) {
+    <app-class-form
+      [universityId]="universityId()"
+      [periods]="periods()"
+      [editing]="editingClass()"
+      (dismissed)="closeForm()"
+    />
+  }
+</section>

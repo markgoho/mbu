@@ -1,0 +1,36 @@
+.editor {
+  max-width: 40rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.editor__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.editor__status {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.editor__delete {
+  margin-inline-start: auto;
+  color: var(--color-error);
+}
+
+.editor__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.editor__error {
+  color: var(--color-error);
+}

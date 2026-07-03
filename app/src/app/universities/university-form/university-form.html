@@ -1,0 +1,52 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="uni-form">
+  @if (errorMessage(); as error) {
+    <p class="uni-form__error" role="alert">{{ error }}</p>
+  }
+
+  <label for="title">Title</label>
+  <input id="title" type="text" formControlName="title" />
+
+  <label for="timezone">Timezone (IANA)</label>
+  <input id="timezone" type="text" formControlName="timezone" list="tz-list" />
+  <datalist id="tz-list">
+    <option value="America/New_York"></option>
+    <option value="America/Chicago"></option>
+    <option value="America/Denver"></option>
+    <option value="America/Los_Angeles"></option>
+    <option value="America/Phoenix"></option>
+  </datalist>
+
+  <label for="startDate">Event start</label>
+  <input id="startDate" type="datetime-local" formControlName="startDate" />
+
+  <label for="endDate">Event end (optional — leave blank for single-day)</label>
+  <input id="endDate" type="datetime-local" formControlName="endDate" />
+
+  <label for="registrationOpensAt">Registration opens (optional)</label>
+  <input id="registrationOpensAt" type="datetime-local" formControlName="registrationOpensAt" />
+
+  <label for="registrationClosesAt">Registration closes</label>
+  <input id="registrationClosesAt" type="datetime-local" formControlName="registrationClosesAt" />
+
+  <fieldset class="uni-form__fieldset">
+    <legend>Location</legend>
+    <label for="locationName">Venue name</label>
+    <input id="locationName" type="text" formControlName="locationName" />
+    <label for="locationAddress">Street address</label>
+    <input id="locationAddress" type="text" formControlName="locationAddress" />
+    <label for="locationCity">City</label>
+    <input id="locationCity" type="text" formControlName="locationCity" />
+    <label for="locationState">State</label>
+    <input id="locationState" type="text" formControlName="locationState" />
+    <label for="locationZip">ZIP</label>
+    <input id="locationZip" type="text" formControlName="locationZip" />
+  </fieldset>
+
+  <button type="submit" [disabled]="isLoading()">
+    @if (isLoading()) {
+      Saving…
+    } @else {
+      Save university
+    }
+  </button>
+</form>

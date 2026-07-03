@@ -103,6 +103,11 @@
           "region": "us-east4"
         },
         {
+          "source": "/api/universities{,/**}",
+          "function": "universitiesApi",
+          "region": "us-east4"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }

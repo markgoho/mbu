@@ -1,6 +1,6 @@
 import { logger } from "firebase-functions/v2";
 import { ERROR_IDS } from "../../constants/error-ids.js";
-import { HttpError } from "./http-error.js";
+import { ConflictError, HttpError } from "./http-error.js";
 
 interface OnErrorContext {
   /** Elysia error code — its own literals ("VALIDATION", …) or an HTTP number. */
@@ -17,7 +17,16 @@ interface OnErrorContext {
 export function mapError({ code, error, set }: OnErrorContext) {
   if (error instanceof HttpError) {
     set.status = error.statusCode;
-    return { error: error.message, code: error.code };
+    const body: { error: string; code?: string; details?: unknown } = {
+      error: error.message,
+    };
+    if (error.code !== undefined) {
+      body.code = error.code;
+    }
+    if (error instanceof ConflictError && error.details !== undefined) {
+      body.details = error.details;
+    }
+    return body;
   }
 
   if (code === "VALIDATION") {

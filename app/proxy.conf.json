@@ -8,5 +8,10 @@
     "target": "http://localhost:5001/merit-badge-university/us-east4/usersApi",
     "secure": false,
     "changeOrigin": true
+  },
+  "/api/universities": {
+    "target": "http://localhost:5001/merit-badge-university/us-east4/universitiesApi",
+    "secure": false,
+    "changeOrigin": true
   }
 }

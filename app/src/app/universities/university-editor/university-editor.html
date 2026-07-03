@@ -1,0 +1,36 @@
+<main class="editor">
+  <a routerLink="/universities">← Back to dashboard</a>
+
+  @if (detail.isLoading()) {
+    <p>Loading…</p>
+  } @else if (loadError(); as message) {
+    <p class="editor__error" role="alert">{{ message }}</p>
+  } @else if (detail.value(); as data) {
+    <header class="editor__header">
+      <h1>{{ data.university.title }}</h1>
+      <span class="editor__status">{{ data.university.status }}</span>
+      @if (data.university.status === 'draft') {
+        <button type="button" class="editor__delete" (click)="deleteUniversity()">
+          Delete draft
+        </button>
+      }
+    </header>
+
+    <section class="editor__section">
+      <h2>Details</h2>
+      <app-university-form [universityId]="universityId()" [initial]="data.university" />
+    </section>
+
+    <app-period-board
+      [universityId]="universityId()"
+      [periods]="data.university.periods"
+      [classes]="data.classes"
+    />
+
+    <app-class-list
+      [universityId]="universityId()"
+      [periods]="data.university.periods"
+      [classes]="data.classes"
+    />
+  }
+</main>
