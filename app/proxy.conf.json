@@ -3,5 +3,10 @@
     "target": "http://localhost:5001/merit-badge-university/us-east4/healthApi",
     "secure": false,
     "changeOrigin": true
+  },
+  "/api/users": {
+    "target": "http://localhost:5001/merit-badge-university/us-east4/usersApi",
+    "secure": false,
+    "changeOrigin": true
   }
 }

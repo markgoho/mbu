@@ -4,7 +4,7 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig([
   {
-    ignores: ["lib/**", "**/*.test.ts", "src/test-utils/**", "vitest.config.ts"],
+    ignores: ["lib/**"],
   },
   {
     files: ["**/*.ts"],
@@ -18,7 +18,9 @@ export default defineConfig([
     files: ["**/*.ts"],
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        // tsconfig.test.json includes all of src (source + *.test.ts) with the
+        // same compiler options, so every linted .ts file is in the project.
+        project: ["./tsconfig.test.json"],
         tsconfigRootDir: import.meta.dirname,
       },
     },

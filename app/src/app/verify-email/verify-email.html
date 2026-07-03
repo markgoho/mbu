@@ -1,0 +1,26 @@
+<main class="verify">
+  <h1>Verify your email</h1>
+  <p>
+    We sent a verification link
+    @if (email) {
+      to <strong>{{ email }}</strong>
+    }
+    . Open it, then come back and continue.
+  </p>
+
+  @if (message()) {
+    <p class="verify__message" role="status">{{ message() }}</p>
+  }
+  @if (errorMessage(); as error) {
+    <p class="verify__error" role="alert">{{ error }}</p>
+  }
+
+  <div class="verify__actions">
+    <button type="button" (click)="onResend()" [disabled]="isLoading()">
+      Resend email
+    </button>
+    <button type="button" (click)="onContinue()" [disabled]="isLoading()">
+      I've verified — continue
+    </button>
+  </div>
+</main>

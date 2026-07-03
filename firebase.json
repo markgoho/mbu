@@ -98,6 +98,11 @@
           "region": "us-east4"
         },
         {
+          "source": "/api/users{,/**}",
+          "function": "usersApi",
+          "region": "us-east4"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }

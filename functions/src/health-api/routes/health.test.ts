@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it } from "bun:test";
 import { handleRequest } from "../../test-utils/handle-request.js";
 import { createApp } from "../app.js";
 
