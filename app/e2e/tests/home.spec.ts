@@ -1,18 +1,12 @@
-import { expect, test } from '@playwright/test';
+import { expect, test } from '../fixtures/auth.fixture';
 
-test('home page boots and shows API health status', async ({ page }) => {
-  await page.route('**/api/health', async (route) => {
-    await route.fulfill({
-      status: 200,
-      contentType: 'application/json',
-      body: JSON.stringify({ status: 'ok' }),
-    });
-  });
-
-  await page.goto('/');
-
+test('signed-in verified user lands on home with stubbed API', async ({
+  verifiedPage,
+}) => {
   await expect(
-    page.getByRole('heading', { name: 'Merit Badge University Platform' }),
+    verifiedPage.getByRole('heading', {
+      name: 'Merit Badge University Platform',
+    }),
   ).toBeVisible();
-  await expect(page.getByText('ok')).toBeVisible();
+  await expect(verifiedPage.getByText('ok')).toBeVisible();
 });

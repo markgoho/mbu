@@ -15,3 +15,14 @@ export const healthApi = onRequest(
     await handleHealthApi(request, response);
   },
 );
+
+export const usersApi = onRequest(
+  {
+    invoker: "public",
+    region: "us-east4",
+  },
+  async (request, response) => {
+    const { handleUsersApi } = await import("./users-api/handler.js");
+    await handleUsersApi(request, response);
+  },
+);
