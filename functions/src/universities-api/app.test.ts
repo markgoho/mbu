@@ -2,6 +2,7 @@ import { describe, expect, it } from "bun:test";
 import type { DecodedIdToken } from "firebase-admin/auth";
 import {
   ForbiddenError,
+  NotFoundError,
   ValidationError,
 } from "../shared-api/errors/http-error.js";
 import type { TokenVerifier } from "../shared-api/plugins/require-auth.js";
@@ -46,7 +47,51 @@ const sampleUniversity = {
   updatedAt: "2026-07-01T00:00:00.000Z",
 };
 
+const samplePublicUniversity = {
+  id: "uni1",
+  title: "Spring MBU",
+  timezone: "America/New_York",
+  startDate: "2026-06-01T12:00:00.000Z",
+  endDate: null,
+  registrationOpensAt: null,
+  registrationClosesAt: "2026-05-25T23:59:59.000Z",
+  location: sampleUniversity.location,
+  periods: [
+    {
+      periodId: "p1",
+      label: "Morning",
+      startsAt: "2026-06-01T08:00:00.000Z",
+      endsAt: "2026-06-01T12:00:00.000Z",
+    },
+  ],
+  classes: [
+    {
+      classId: "cls1",
+      badgeSlug: "camping",
+      badgeTitle: "Camping",
+      eagleRequired: true,
+      periodIds: ["p1"],
+      room: "Room A",
+      notes: null,
+      capacity: 20,
+      enrolledCount: 5,
+      seatsRemaining: 15,
+      waitlistCount: 0,
+      counselors: [{ displayName: "Alex Counselor" }],
+    },
+  ],
+};
+
 const universitiesService: UniversitiesService = {
+  getPublic: universityId => {
+    if (universityId === "draft-uni") {
+      return Promise.reject(new NotFoundError("University not found"));
+    }
+    if (universityId === "missing-uni") {
+      return Promise.reject(new NotFoundError("University not found"));
+    }
+    return Promise.resolve({ ...samplePublicUniversity, id: universityId });
+  },
   create: (_caller, request) =>
     Promise.resolve({
       ...sampleUniversity,
@@ -248,6 +293,66 @@ describe("universities-api routes", () => {
       authed("/api/universities/uni1/classes/cls1", "DELETE"),
     );
     expect(response.status).toBe(204);
+  });
+});
+
+describe("universities-api public route", () => {
+  const publicApp = () =>
+    createApp({
+      universitiesService,
+      periodsService,
+      classesService,
+      verifyToken: verified,
+    });
+
+  it("GET /api/universities/:id/public returns the public DTO without auth", async () => {
+    const response = await handleRequest(
+      publicApp(),
+      new Request("http://localhost/api/universities/uni1/public", {
+        method: "GET",
+      }),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as Record<string, unknown>;
+    expect(body["id"]).toBe("uni1");
+    expect(body["title"]).toBe("Spring MBU");
+    expect(body).not.toHaveProperty("createdByUid");
+    expect(body).not.toHaveProperty("status");
+    const counselors = (
+      body["classes"] as { counselors: Record<string, unknown>[] }[]
+    )[0]?.counselors;
+    expect(counselors?.[0]).toEqual({ displayName: "Alex Counselor" });
+    expect(counselors?.[0]).not.toHaveProperty("uid");
+    expect(counselors?.[0]).not.toHaveProperty("bsaId");
+  });
+
+  it("returns 404 for draft and missing ids with identical bodies", async () => {
+    const app = publicApp();
+    const draftResponse = await handleRequest(
+      app,
+      new Request("http://localhost/api/universities/draft-uni/public", {
+        method: "GET",
+      }),
+    );
+    const missingResponse = await handleRequest(
+      app,
+      new Request("http://localhost/api/universities/missing-uni/public", {
+        method: "GET",
+      }),
+    );
+    expect(draftResponse.status).toBe(404);
+    expect(missingResponse.status).toBe(404);
+    expect(await draftResponse.json()).toEqual(await missingResponse.json());
+  });
+
+  it("sets Cache-Control: no-store on the public response", async () => {
+    const response = await handleRequest(
+      publicApp(),
+      new Request("http://localhost/api/universities/uni1/public", {
+        method: "GET",
+      }),
+    );
+    expect(response.headers.get("cache-control")).toBe("no-store");
   });
 });
 
