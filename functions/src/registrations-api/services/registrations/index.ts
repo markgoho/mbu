@@ -5,7 +5,10 @@ import {
   type Firestore,
 } from "firebase-admin/firestore";
 import { logger } from "firebase-functions/v2";
-import { classesPath, type ClassDocument } from "../../../collections/classes.js";
+import {
+  classesPath,
+  type ClassDocument,
+} from "../../../collections/classes.js";
 import {
   REGISTRATIONS_SUBCOLLECTION,
   registrationsPath,
@@ -16,7 +19,10 @@ import {
   UNIVERSITIES_COLLECTION,
   type UniversityDocument,
 } from "../../../collections/universities.js";
-import { USERS_COLLECTION, type UserDocument } from "../../../collections/users.js";
+import {
+  USERS_COLLECTION,
+  type UserDocument,
+} from "../../../collections/users.js";
 import {
   ConflictError,
   ERROR_CODES,
@@ -38,7 +44,7 @@ import type {
   RegistrationResponse,
   ScheduleResponse,
 } from "../../schemas/registration-schemas.js";
-import { notifier } from "../notifier/index.js";
+import { emailNotifier } from "../notifier/email-notifier.js";
 import type { Notifier } from "../notifier/interface.js";
 import { toIso } from "../validation.js";
 import { assertWindowOpen, computeBypassWindow } from "../window-policy.js";
@@ -63,7 +69,7 @@ function toRegistrationResponse(
 export class RegistrationsServiceImpl implements RegistrationsService {
   constructor(
     private readonly database?: Firestore,
-    private readonly notifierPort: Notifier = notifier,
+    private readonly notifierPort: Notifier = emailNotifier,
     private readonly scoutOwnership: ScoutOwnershipReader = scoutOwnershipReader,
     private readonly roleGrants: RoleGrantsReader = roleGrantsReader,
   ) {}
@@ -231,6 +237,7 @@ export class RegistrationsServiceImpl implements RegistrationsService {
           scoutId: registration.scoutId,
           parentUid: registration.parentUid,
           badgeTitle: registration.badgeTitle,
+          status: registration.status as "enrolled" | "waitlisted",
         });
       } catch (error) {
         // Notification failures must not fail the registration itself.

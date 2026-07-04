@@ -5,6 +5,7 @@ export interface RegisteredEvent {
   scoutId: string;
   parentUid: string;
   badgeTitle: string;
+  status: "enrolled" | "waitlisted";
 }
 
 /** Fired when a waitlisted scout is promoted to enrolled (a seat opened up). */

@@ -1,9 +1,12 @@
 import { getApps, initializeApp } from "firebase-admin/app";
+import { defineSecret } from "firebase-functions/params";
 import { onRequest } from "firebase-functions/v2/https";
 
 if (getApps().length === 0) {
   initializeApp();
 }
+
+const MAILGUN_API_KEY = defineSecret("MAILGUN_API_KEY");
 
 export const healthApi = onRequest(
   {
@@ -43,6 +46,7 @@ export const registrationsApi = onRequest(
   {
     invoker: "public",
     region: "us-east4",
+    secrets: [MAILGUN_API_KEY],
   },
   async (request, response) => {
     const { handleRegistrationsApi } =

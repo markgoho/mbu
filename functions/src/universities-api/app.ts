@@ -37,6 +37,9 @@ import type { PartialUniversitiesApiServices } from "./types/services.js";
 export function createApp(services?: PartialUniversitiesApiServices) {
   const universities = services?.universitiesService ?? defaultUniversities;
   const periods = services?.periodsService ?? defaultPeriods;
+  // classChangeNotifier is a type-level DI seam only (see UniversitiesApiServices) —
+  // #108 threads it into ClassesServiceImpl/PeriodsServiceImpl once there's a real
+  // call site (classes.remove/patch, periods.put).
   const classes = services?.classesService ?? defaultClasses;
   const verifyToken = services?.verifyToken ?? verifyAuthToken;
 
