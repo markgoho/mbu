@@ -1,0 +1,82 @@
+.roster-page {
+  max-width: 60rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.roster-page__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.roster-page__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.roster-page__error {
+  color: var(--color-error);
+}
+
+.roster-page__empty {
+  color: var(--color-muted);
+}
+
+.roster-page__class {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-block-end: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.roster-page__class-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.roster-page__class-meta {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.roster-page__counselors {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.roster-page__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.roster-page__table th,
+.roster-page__table td {
+  text-align: left;
+  padding: 0.375rem 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media print {
+  .roster-page > a,
+  .roster-page button {
+    display: none;
+  }
+
+  .roster-page__class:not(:last-child) {
+    break-after: page;
+  }
+
+  .roster-page__class {
+    border-bottom: none;
+  }
+}

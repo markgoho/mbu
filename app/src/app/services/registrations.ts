@@ -4,6 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import type {
   RegisterRequest,
   RegistrationResponse,
+  RosterResponse,
   ScheduleResponse,
 } from '../api-types/registrations-api.types';
 
@@ -29,6 +30,22 @@ export class Registrations {
 
   reloadSchedule(): void {
     this.schedule.reload();
+  }
+
+  /** Set by the roster page; drives the roster resource. */
+  readonly rosterUniversityId = signal<string | undefined>(undefined);
+
+  readonly roster = httpResource<RosterResponse>(() => {
+    const id = this.rosterUniversityId();
+    return id ? `/api/registrations/${id}/roster` : undefined;
+  });
+
+  openRoster(id: string): void {
+    if (this.rosterUniversityId() === id) {
+      this.roster.reload();
+    } else {
+      this.rosterUniversityId.set(id);
+    }
   }
 
   async register(

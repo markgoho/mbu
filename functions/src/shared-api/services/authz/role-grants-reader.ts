@@ -1,6 +1,7 @@
 import { getFirestore } from "firebase-admin/firestore";
 import {
   type GrantRole,
+  type RoleGrantDocument,
   ROLE_GRANTS_COLLECTION,
 } from "../../../collections/role-grants.js";
 
@@ -17,6 +18,11 @@ export interface GrantQuery {
  */
 export interface RoleGrantsReader {
   hasActiveGrant(query: GrantQuery): Promise<boolean>;
+  /** Active class-scoped counselor grants for a user within one university. */
+  listActiveClassGrants(query: {
+    uid: string;
+    universityId: string;
+  }): Promise<string[]>;
 }
 
 /**
@@ -35,5 +41,19 @@ export const roleGrantsReader: RoleGrantsReader = {
       .limit(1)
       .get();
     return !snapshot.empty;
+  },
+
+  async listActiveClassGrants({ uid, universityId }) {
+    const snapshot = await getFirestore()
+      .collection(ROLE_GRANTS_COLLECTION)
+      .where("uid", "==", uid)
+      .where("role", "==", "counselor")
+      .where("scopeType", "==", "class")
+      .where("status", "==", "active")
+      .get();
+    return snapshot.docs
+      .map(doc => doc.data() as RoleGrantDocument)
+      .filter(grant => grant.universityId === universityId)
+      .map(grant => grant.scopeId);
   },
 };

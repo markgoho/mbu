@@ -59,6 +59,11 @@ export const routes: Routes = [
             (m) => m.UniversityEditor,
           ),
       },
+      {
+        path: ':id/roster',
+        loadComponent: () =>
+          import('./universities/roster-page/roster-page').then((m) => m.RosterPage),
+      },
     ],
   },
   {

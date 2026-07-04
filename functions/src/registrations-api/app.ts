@@ -6,6 +6,7 @@ import { verifyAuthToken } from "../shared-api/services/auth/verify-token.js";
 import {
   RegisterRequestSchema,
   RegistrationResponseSchema,
+  RosterResponseSchema,
   ScheduleResponseSchema,
 } from "./schemas/registration-schemas.js";
 import {
@@ -59,6 +60,12 @@ export function createApp(services?: PartialRegistrationsApiServices) {
         );
         set.status = 204;
       },
+    )
+    .get(
+      "/registrations/:universityId/roster",
+      ({ caller, params }) =>
+        registrations.listRoster(caller, params.universityId),
+      { response: RosterResponseSchema },
     )
     .get(
       "/registrations/:universityId",
