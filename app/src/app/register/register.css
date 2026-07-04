@@ -1,0 +1,45 @@
+@layer components {
+  .register {
+    container-type: inline-size;
+    margin-inline: auto;
+    max-width: 48rem;
+    padding: clamp(1.5rem, 4cqi, 3rem);
+  }
+
+  .register__scout-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+
+  .register__scout--selected {
+    font-weight: bold;
+  }
+
+  .register__period-row {
+    margin-block: 1.5rem;
+  }
+
+  .register__class-list {
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .register__class-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 1rem;
+  }
+
+  .register__conflict,
+  .register__error {
+    color: var(--color-danger, #b3261e);
+  }
+}

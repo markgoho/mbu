@@ -1,0 +1,130 @@
+<main class="register">
+  @if (event.isLoading()) {
+    <p>Loading event…</p>
+  } @else if (event.error()) {
+    <h1>Something went wrong</h1>
+    <p>We couldn't load this event. Please refresh to try again.</p>
+  } @else if (event.value(); as ev) {
+    <header class="register__header">
+      <h1>Register for {{ ev.title }}</h1>
+      <p>
+        {{ ev.startDate | date: 'mediumDate' : ev.timezone }}
+        @if (ev.endDate) {
+          – {{ ev.endDate | date: 'mediumDate' : ev.timezone }}
+        }
+      </p>
+    </header>
+
+    @if (scouts.mine.isLoading()) {
+      <p>Loading your scouts…</p>
+    } @else if (scoutList().length === 0) {
+      <section class="register__empty-scouts">
+        <h2>Add a scout to get started</h2>
+        <p>You don't have any scouts yet. Add one to build a schedule.</p>
+        <app-scout-quick-add (created)="onScoutAdded($event)" />
+      </section>
+    } @else {
+      <section class="register__scout-picker" aria-label="Select a scout">
+        <label>
+          Filter scouts
+          <input
+            type="search"
+            [value]="scoutFilter()"
+            (input)="scoutFilter.set($any($event.target).value)"
+          />
+        </label>
+
+        <ul class="register__scout-list">
+          @for (scout of filteredScouts(); track scout.scoutId) {
+            <li>
+              <button
+                type="button"
+                [class.register__scout--selected]="selectedScoutId() === scout.scoutId"
+                (click)="selectScout(scout.scoutId)"
+              >
+                {{ scout.firstName }} {{ scout.lastName }}
+              </button>
+            </li>
+          }
+        </ul>
+
+        @if (!showAddScout()) {
+          <button type="button" (click)="showAddScout.set(true)">Add another scout</button>
+        } @else {
+          <app-scout-quick-add (created)="onScoutAdded($event)" />
+        }
+
+        @if (selectedScoutProgress(); as progress) {
+          <p class="register__progress" aria-live="polite">
+            {{ progress.scheduled }}/{{ progress.total }} periods scheduled
+          </p>
+        }
+      </section>
+
+      @if (actionError()) {
+        <p class="register__error" role="alert">{{ actionError() }}</p>
+      }
+
+      <section class="register__periods">
+        @for (period of ev.periods; track period.periodId) {
+          <div class="register__period-row">
+            <h2>
+              {{ period.label }} ·
+              {{ period.startsAt | date: 'shortTime' : ev.timezone }}
+              – {{ period.endsAt | date: 'shortTime' : ev.timezone }}
+            </h2>
+
+            <ul class="register__class-list">
+              @for (cls of periodClasses(period); track cls.classId) {
+                <li class="register__class-card">
+                  <h3>{{ cls.badgeTitle }}</h3>
+                  <p>
+                    {{ cls.enrolledCount }} of {{ cls.capacity }} seats filled ·
+                    {{ cls.seatsRemaining }} seats left
+                  </p>
+
+                  @let registration = scoutRegistrationFor(cls.classId);
+                  @let conflict = conflictFor(cls);
+
+                  @if (registration) {
+                    <p>
+                      {{ registration.status === 'waitlisted' ? 'On waitlist' : 'Registered' }}
+                    </p>
+                    <button
+                      type="button"
+                      [disabled]="pendingClassId() === cls.classId"
+                      (click)="onCancel(cls)"
+                    >
+                      Drop
+                    </button>
+                  } @else if (conflict) {
+                    <p class="register__conflict">
+                      Conflicts with {{ conflict.badgeTitle }} in this period.
+                    </p>
+                    <button type="button" disabled title="Resolve the period conflict first">
+                      {{ cls.seatsRemaining <= 0 ? 'Join waitlist' : 'Register' }}
+                    </button>
+                  } @else if (waitlistPromptClassId() === cls.classId) {
+                    <p>This class is full. Join the waitlist instead?</p>
+                    <button type="button" (click)="confirmWaitlist(cls, true)">
+                      Join waitlist
+                    </button>
+                    <button type="button" (click)="confirmWaitlist(cls, false)">Cancel</button>
+                  } @else {
+                    <button
+                      type="button"
+                      [disabled]="pendingClassId() === cls.classId"
+                      (click)="onRegister(cls)"
+                    >
+                      {{ cls.seatsRemaining <= 0 ? 'Join waitlist' : 'Register' }}
+                    </button>
+                  }
+                </li>
+              }
+            </ul>
+          </div>
+        }
+      </section>
+    }
+  }
+</main>

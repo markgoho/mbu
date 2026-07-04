@@ -13,6 +13,11 @@ export const routes: Routes = [
       import('./public-event/public-event').then((m) => m.PublicEvent),
   },
   {
+    path: 'e/:id/register',
+    canActivate: [requireAuth, requireVerified, requireOnboarded],
+    loadComponent: () => import('./register/register').then((m) => m.Register),
+  },
+  {
     path: 'sign-in',
     canActivate: [requireUnauth],
     loadComponent: () => import('./sign-in/sign-in').then((m) => m.SignIn),

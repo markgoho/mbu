@@ -1,0 +1,18 @@
+@layer components {
+  .scout-quick-add {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 20rem;
+  }
+
+  .scout-quick-add label {
+    display: grid;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .scout-quick-add__error {
+    color: var(--color-danger, #b3261e);
+    margin: 0;
+  }
+}

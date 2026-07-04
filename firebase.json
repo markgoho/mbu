@@ -108,6 +108,11 @@
           "region": "us-east4"
         },
         {
+          "source": "/api/registrations{,/**}",
+          "function": "registrationsApi",
+          "region": "us-east4"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
