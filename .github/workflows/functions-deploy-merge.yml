@@ -1,0 +1,79 @@
+name: Deploy Cloud Functions on merge
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - trunk
+    paths:
+      - "functions/**"
+      - "firebase.json"
+      - ".firebaserc"
+      - ".github/workflows/functions-deploy-merge.yml"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Lint functions
+        working-directory: functions
+        run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Test functions
+        working-directory: functions
+        run: npm test
+
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Build functions
+        working-directory: functions
+        run: npm run build
+
+  deploy:
+    needs: [lint, test, build]
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install root dependencies
+        run: bun install
+      - name: Install functions dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Deploy functions
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MERIT_BADGE_UNIVERSITY }}
+        run: |
+          echo "$FIREBASE_SA" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          bunx firebase deploy --only functions --project merit-badge-university --non-interactive --force

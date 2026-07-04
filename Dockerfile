@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Set versions for our tools as arguments
 ARG HUGO_VERSION=0.159.2
-ARG BUN_VERSION=1.3.11
+ARG BUN_VERSION=1.3.14
 ARG PLAYWRIGHT_VERSION=1.61.0
 
 # 1. Install base dependencies and Java 21 (required for Firebase emulators - firebase-tools requires Java 21+)
@@ -28,8 +28,8 @@ RUN git config --global --add safe.directory /__w/mbu/mbu && \
   git config --system --add safe.directory /__w/mbu/mbu && \
   git config --system --add core.quotepath false
 
-# Install Node.js 22.x LTS (firebase-tools, sharp, and other native deps)
-RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+# Install Node.js 24.x LTS (firebase-tools, sharp, and other native deps)
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - \
   && apt-get install -y nodejs
 
 # 2. Install Bun
