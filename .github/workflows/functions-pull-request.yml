@@ -1,0 +1,64 @@
+name: Check Cloud Functions on PR
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    paths:
+      - "functions/**"
+      - "firebase.json"
+      - ".firebaserc"
+      - ".github/workflows/functions-pull-request.yml"
+
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  lint:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Lint functions
+        working-directory: functions
+        run: npm run lint
+
+  test:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Test functions
+        working-directory: functions
+        run: npm test
+
+  build:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Install dependencies
+        working-directory: functions
+        run: npm ci
+      - name: Build functions
+        working-directory: functions
+        run: npm run build
