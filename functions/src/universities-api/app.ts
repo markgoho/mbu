@@ -14,6 +14,7 @@ import {
   PeriodsPutRequestSchema,
   PeriodsResponseSchema,
 } from "./schemas/period-schemas.js";
+import { PublicUniversityResponseSchema } from "./schemas/public-schemas.js";
 import {
   UniversityCreateRequestSchema,
   UniversityListResponseSchema,
@@ -29,8 +30,9 @@ import type { PartialUniversitiesApiServices } from "./types/services.js";
  * Create the universities-api Elysia app with injectable dependencies.
  *
  * Firebase hosting routes /api/universities/** → universitiesApi function.
- * Every route runs behind `requireAuth`; scoped writes call assertChancellorOf
- * inside the relevant services.
+ * Authenticated routes run behind `requireAuth`; scoped writes call
+ * assertChancellorOf inside the relevant services. The public event read is
+ * unauthenticated (link-only access).
  */
 export function createApp(services?: PartialUniversitiesApiServices) {
   const universities = services?.universitiesService ?? defaultUniversities;
@@ -40,6 +42,14 @@ export function createApp(services?: PartialUniversitiesApiServices) {
 
   return new Elysia({ adapter: node(), prefix: "/api" })
     .onError(mapError)
+    .get(
+      "/universities/:id/public",
+      async ({ params, set }) => {
+        set.headers["cache-control"] = "no-store";
+        return universities.getPublic(params.id);
+      },
+      { response: PublicUniversityResponseSchema },
+    )
     .resolve(requireAuth(verifyToken))
     .post(
       "/universities",

@@ -1,6 +1,7 @@
 import { inject } from '@angular/core';
 import { Router, type CanActivateFn } from '@angular/router';
 import { auth } from '../lib/firebase';
+import { safeReturnTo } from '../lib/return-to';
 import { Auth } from '../services/auth';
 
 /**
@@ -35,8 +36,9 @@ export const requireOnboarded: CanActivateFn = async () => {
 };
 
 /** Inverse of requireAuth: sends already signed-in users to the app home. */
-export const requireUnauth: CanActivateFn = async () => {
+export const requireUnauth: CanActivateFn = async (route) => {
   const router = inject(Router);
   await auth.authStateReady();
-  return auth.currentUser ? router.parseUrl('/') : true;
+  if (!auth.currentUser) return true;
+  return router.parseUrl(safeReturnTo(route.queryParamMap));
 };

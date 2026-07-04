@@ -8,6 +8,11 @@ import {
 
 export const routes: Routes = [
   {
+    path: 'e/:id',
+    loadComponent: () =>
+      import('./public-event/public-event').then((m) => m.PublicEvent),
+  },
+  {
     path: 'sign-in',
     canActivate: [requireUnauth],
     loadComponent: () => import('./sign-in/sign-in').then((m) => m.SignIn),

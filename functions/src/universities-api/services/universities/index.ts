@@ -28,6 +28,7 @@ import type {
   ClassResponse,
   UniversityDetailResponse,
 } from "../../schemas/class-schemas.js";
+import type { PublicUniversityResponse } from "../../schemas/public-schemas.js";
 import type {
   UniversityCreateRequest,
   UniversityListResponse,
@@ -85,6 +86,26 @@ function toClassResponse(classId: string, doc: ClassDocument): ClassResponse {
     })),
     createdAt: toIso(doc.createdAt) ?? "",
     updatedAt: toIso(doc.updatedAt) ?? "",
+  };
+}
+
+function toPublicClassResponse(
+  classId: string,
+  doc: ClassDocument,
+): PublicUniversityResponse["classes"][number] {
+  return {
+    classId,
+    badgeSlug: doc.badgeSlug,
+    badgeTitle: doc.badgeTitle,
+    eagleRequired: doc.eagleRequired,
+    periodIds: doc.periodIds,
+    room: doc.room,
+    notes: doc.notes,
+    capacity: doc.capacity,
+    enrolledCount: doc.enrolledCount,
+    seatsRemaining: Math.max(0, doc.capacity - doc.enrolledCount),
+    waitlistCount: doc.waitlistCount,
+    counselors: doc.counselors.map(c => ({ displayName: c.displayName })),
   };
 }
 
@@ -335,6 +356,50 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     );
 
     return { universities: summaries };
+  }
+
+  async getPublic(universityId: string): Promise<PublicUniversityResponse> {
+    const reference = this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .doc(universityId);
+    const snapshot = await reference.get();
+    if (!snapshot.exists) {
+      throw new NotFoundError("University not found");
+    }
+    const doc = snapshot.data() as UniversityDocument;
+    // Allowlist, not denylist: only a published event is publicly viewable.
+    // Every other status (draft/submitted/needs_review/rejected/closed) 404s
+    // with the same body so a probe can't confirm a hidden or rejected event.
+    if (doc.status !== "published") {
+      throw new NotFoundError("University not found");
+    }
+
+    const classesSnapshot = await this.db()
+      .collection(
+        `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
+      )
+      .orderBy("createdAt")
+      .get();
+
+    return {
+      id: universityId,
+      title: doc.title,
+      timezone: doc.timezone,
+      startDate: toIso(doc.startDate) ?? "",
+      endDate: toIso(doc.endDate),
+      registrationOpensAt: toIso(doc.registrationOpensAt),
+      registrationClosesAt: toIso(doc.registrationClosesAt) ?? "",
+      location: doc.location,
+      periods: doc.periods.map(p => ({
+        periodId: p.periodId,
+        label: p.label,
+        startsAt: toIso(p.startsAt) ?? "",
+        endsAt: toIso(p.endsAt) ?? "",
+      })),
+      classes: classesSnapshot.docs.map(classDoc =>
+        toPublicClassResponse(classDoc.id, classDoc.data() as ClassDocument),
+      ),
+    };
   }
 
   async getDetail(

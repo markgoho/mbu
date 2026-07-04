@@ -144,6 +144,38 @@ export interface UniversityDetailResponse {
   classes: ClassResponse[];
 }
 
+export interface PublicClassCounselor {
+  displayName: string;
+}
+
+export interface PublicClass {
+  classId: string;
+  badgeSlug: string;
+  badgeTitle: string;
+  eagleRequired: boolean;
+  periodIds: string[];
+  room: string | null;
+  notes: string | null;
+  capacity: number;
+  enrolledCount: number;
+  seatsRemaining: number;
+  waitlistCount: number;
+  counselors: PublicClassCounselor[];
+}
+
+export interface PublicUniversity {
+  id: string;
+  title: string;
+  timezone: string;
+  startDate: string;
+  endDate: string | null;
+  registrationOpensAt: string | null;
+  registrationClosesAt: string;
+  location: UniversityLocation;
+  periods: Period[];
+  classes: PublicClass[];
+}
+
 export interface ApiErrorBody {
   error?: string;
   code?: string;

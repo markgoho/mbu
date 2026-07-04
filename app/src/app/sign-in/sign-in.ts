@@ -5,7 +5,8 @@ import {
   Validators,
   type FormGroup,
 } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { safeReturnTo } from '../lib/return-to';
 import { Auth } from '../services/auth';
 
 @Component({
@@ -18,6 +19,7 @@ import { Auth } from '../services/auth';
 export class SignIn {
   private readonly auth = inject(Auth);
   private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
   private readonly fb = inject(FormBuilder);
 
   protected readonly mode = signal<'sign-in' | 'sign-up'>('sign-in');
@@ -51,7 +53,7 @@ export class SignIn {
       await (this.mode() === 'sign-in'
         ? this.auth.signInWithEmailPassword(email, password)
         : this.auth.signUpWithEmailPassword(email, password));
-      await this.router.navigate(['/']);
+      await this.router.navigateByUrl(this.returnTo());
     } catch (error) {
       if (error instanceof Error) this.errorMessage.set(error.message);
     } finally {
@@ -64,11 +66,15 @@ export class SignIn {
     this.errorMessage.set('');
     try {
       await this.auth.signInWithGoogle();
-      await this.router.navigate(['/']);
+      await this.router.navigateByUrl(this.returnTo());
     } catch (error) {
       if (error instanceof Error) this.errorMessage.set(error.message);
     } finally {
       this.isLoading.set(false);
     }
+  }
+
+  private returnTo(): string {
+    return safeReturnTo(this.route.snapshot.queryParamMap);
   }
 }

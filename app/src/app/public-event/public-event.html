@@ -1,0 +1,77 @@
+<main class="public-event">
+  @if (event.isLoading()) {
+    <p>Loading event…</p>
+  } @else if (notFound()) {
+    <h1>Event not found</h1>
+    <p>This event is not available or has not been published yet.</p>
+  } @else if (event.error()) {
+    <h1>Something went wrong</h1>
+    <p>We couldn't load this event. Please refresh to try again.</p>
+  } @else if (event.value(); as ev) {
+    <header class="public-event__header">
+      <h1>{{ ev.title }}</h1>
+      <p>{{ formatLocation(ev) }}</p>
+      <p>
+        {{ ev.startDate | date: 'mediumDate' : ev.timezone }}
+        @if (ev.endDate) {
+          – {{ ev.endDate | date: 'mediumDate' : ev.timezone }}
+        }
+      </p>
+    </header>
+
+    @if (ev.periods.length > 0) {
+      <section class="public-event__periods">
+        <h2>Periods</h2>
+        <ul>
+          @for (period of ev.periods; track period.periodId) {
+            <li>
+              <strong>{{ period.label }}</strong>
+              · {{ period.startsAt | date: 'shortTime' : ev.timezone }}
+              – {{ period.endsAt | date: 'shortTime' : ev.timezone }}
+            </li>
+          }
+        </ul>
+      </section>
+    }
+
+    <section class="public-event__classes">
+      <h2>Classes</h2>
+      @if (ev.classes.length === 0) {
+        <p>No classes listed yet.</p>
+      } @else {
+        <ul class="public-event__class-list">
+          @for (cls of ev.classes; track cls.classId) {
+            <li class="public-event__class-card">
+              <h3>{{ cls.badgeTitle }}</h3>
+              @if (cls.eagleRequired) {
+                <p class="public-event__eagle">Eagle-required</p>
+              }
+              <p>
+                {{ cls.enrolledCount }} of {{ cls.capacity }} seats filled ·
+                {{ cls.seatsRemaining }} seats left
+              </p>
+              @if (cls.waitlistCount > 0) {
+                <p>{{ cls.waitlistCount }} on waitlist</p>
+              }
+              @if (cls.counselors.length > 0) {
+                <p>Counselor: {{ counselorNames(cls.counselors) }}</p>
+              }
+              @if (cls.room) {
+                <p>Room: {{ cls.room }}</p>
+              }
+              @if (cls.notes) {
+                <p>{{ cls.notes }}</p>
+              }
+            </li>
+          }
+        </ul>
+      }
+    </section>
+
+    <p class="public-event__cta">
+      <a routerLink="/sign-in" [queryParams]="{ returnTo: signInReturnTo() }">
+        Sign in to register
+      </a>
+    </p>
+  }
+</main>

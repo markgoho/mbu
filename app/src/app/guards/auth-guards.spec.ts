@@ -64,6 +64,7 @@ const routes: Routes = [
   { path: 'protected', component: MockProtected, canActivate: [requireAuth] },
   { path: 'verified-only', component: MockProtected, canActivate: [requireVerified] },
   { path: 'guest-only', component: MockSignIn, canActivate: [requireUnauth] },
+  { path: 'return-target', component: MockProtected },
   { path: 'onboarded-only', component: MockProtected, canActivate: [requireOnboarded] },
 ];
 
@@ -109,6 +110,14 @@ describe('auth route guards', () => {
       });
       await navigate('/guest-only');
       expect(screen.getByText('Home')).toBeVisible();
+    });
+
+    it('redirects an authenticated user to returnTo when provided', async () => {
+      const { navigate } = await setup({
+        currentUser: { uid: 'u1', emailVerified: true },
+      });
+      await navigate('/guest-only?returnTo=%2Freturn-target');
+      expect(screen.getByText('Protected')).toBeVisible();
     });
 
     it('allows an unauthenticated user to reach the guest-only page', async () => {

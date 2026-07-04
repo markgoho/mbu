@@ -1,5 +1,6 @@
 import type { Caller } from "../../../shared-api/types/caller.js";
 import type { UniversityDetailResponse } from "../../schemas/class-schemas.js";
+import type { PublicUniversityResponse } from "../../schemas/public-schemas.js";
 import type {
   UniversityCreateRequest,
   UniversityListResponse,
@@ -8,6 +9,7 @@ import type {
 } from "../../schemas/university-schemas.js";
 
 export interface UniversitiesService {
+  getPublic(universityId: string): Promise<PublicUniversityResponse>;
   create(
     caller: Caller,
     request: UniversityCreateRequest,
