@@ -9,6 +9,7 @@
     <header class="editor__header">
       <h1>{{ data.university.title }}</h1>
       <span class="editor__status">{{ data.university.status }}</span>
+      <a [routerLink]="['/universities', universityId(), 'roster']">View rosters</a>
       @if (data.university.status === 'draft') {
         <button type="button" class="editor__delete" (click)="deleteUniversity()">
           Delete draft

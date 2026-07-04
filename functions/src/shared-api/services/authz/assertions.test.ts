@@ -26,6 +26,7 @@ function readerAllowing(
   return {
     hasActiveGrant: ({ scopeId, role }: GrantQuery) =>
       Promise.resolve(grants.some((g) => g.scopeId === scopeId && g.role === role)),
+    listActiveClassGrants: () => Promise.resolve([]),
   };
 }
 
@@ -45,7 +46,10 @@ describe("assertChancellorOf", () => {
   });
 
   it("allows super-admin without consulting grants", async () => {
-    const reader = { hasActiveGrant: mock(() => Promise.resolve(false)) };
+    const reader = {
+      hasActiveGrant: mock(() => Promise.resolve(false)),
+      listActiveClassGrants: () => Promise.resolve([]),
+    };
     await assertChancellorOf(caller({ superAdmin: true }), "uni1", reader);
     expect(reader.hasActiveGrant).not.toHaveBeenCalled();
   });

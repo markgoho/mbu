@@ -10,7 +10,10 @@ import {
 import type { TokenVerifier } from "../shared-api/plugins/require-auth.js";
 import { handleRequest } from "../test-utils/handle-request.js";
 import { createApp } from "./app.js";
-import type { RegistrationResponse } from "./schemas/registration-schemas.js";
+import type {
+  RegistrationResponse,
+  RosterResponse,
+} from "./schemas/registration-schemas.js";
 import type { RegistrationsService } from "./services/registrations/interface.js";
 
 const enrolledRegistration: RegistrationResponse = {
@@ -30,6 +33,76 @@ const waitlistedRegistration: RegistrationResponse = {
   status: "waitlisted",
   enrolledAt: null,
   waitlistedAt: "2026-07-02T00:00:00.000Z",
+};
+
+const sampleRoster: RosterResponse = {
+  university: {
+    title: "Spring MBU",
+    startDate: "2026-06-01T12:00:00.000Z",
+    endDate: null,
+    location: {
+      name: "Scout Hall",
+      address: "1 Main St",
+      city: "Anytown",
+      state: "NY",
+      zip: "12345",
+    },
+    timezone: "America/New_York",
+  },
+  classRosters: [
+    {
+      class: {
+        classId: "cls1",
+        badgeTitle: "Camping",
+        periodLabels: ["Period 1"],
+        room: "Room A",
+        capacity: 10,
+        enrolledCount: 1,
+        waitlistCount: 1,
+        counselorNames: ["Pat Counselor"],
+      },
+      enrolled: [
+        {
+          scoutId: "scout1",
+          scoutFirstName: "Alex",
+          scoutLastName: "Smith",
+          scoutUnit: "Troop 1",
+          accommodations: null,
+          parentName: "Jamie Smith",
+          parentEmail: "jamie@example.com",
+          consentReceived: true,
+          status: "enrolled",
+        },
+      ],
+      waitlisted: [
+        {
+          scoutId: "scout2",
+          scoutFirstName: "Sam",
+          scoutLastName: "Jones",
+          scoutUnit: null,
+          accommodations: "Wheelchair access",
+          parentName: "Robin Jones",
+          parentEmail: "robin@example.com",
+          consentReceived: true,
+          status: "waitlisted",
+        },
+      ],
+    },
+    {
+      class: {
+        classId: "cls2",
+        badgeTitle: "Archery",
+        periodLabels: ["Period 2"],
+        room: null,
+        capacity: 5,
+        enrolledCount: 0,
+        waitlistCount: 0,
+        counselorNames: [],
+      },
+      enrolled: [],
+      waitlisted: [],
+    },
+  ],
 };
 
 interface SetupOptions {
@@ -63,6 +136,7 @@ function setup({
     register: () => Promise.resolve(enrolledRegistration),
     cancel: () => Promise.resolve(),
     listSchedule: () => Promise.resolve({ registrations: [] }),
+    listRoster: () => Promise.resolve(sampleRoster),
     ...service,
   };
 
@@ -251,5 +325,40 @@ describe("GET /api/registrations/:universityId", () => {
       enrolledRegistration,
       waitlistedRegistration,
     ]);
+  });
+});
+
+describe("GET /api/registrations/:universityId/roster", () => {
+  it("returns the event's class rosters, including an empty class", async () => {
+    const { request } = setup();
+    const response = await request("/api/registrations/uni1/roster", "GET");
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as RosterResponse;
+    expect(body).toEqual(sampleRoster);
+  });
+
+  it("maps no accessible classes to 403", async () => {
+    const { request } = setup({
+      service: {
+        listRoster: () =>
+          Promise.reject(
+            new ForbiddenError(
+              "You do not have access to any classes in this event",
+            ),
+          ),
+      },
+    });
+    const response = await request("/api/registrations/uni1/roster", "GET");
+    expect(response.status).toBe(403);
+  });
+
+  it("maps a missing university to 404", async () => {
+    const { request } = setup({
+      service: {
+        listRoster: () => Promise.reject(new NotFoundError("University not found")),
+      },
+    });
+    const response = await request("/api/registrations/uni1/roster", "GET");
+    expect(response.status).toBe(404);
   });
 });

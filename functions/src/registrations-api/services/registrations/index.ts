@@ -29,7 +29,10 @@ import {
   ForbiddenError,
   NotFoundError,
 } from "../../../shared-api/errors/http-error.js";
-import { assertOwnsScout } from "../../../shared-api/services/authz/assertions.js";
+import {
+  assertChancellorOf,
+  assertOwnsScout,
+} from "../../../shared-api/services/authz/assertions.js";
 import {
   roleGrantsReader,
   type RoleGrantsReader,
@@ -40,8 +43,11 @@ import {
 } from "../../../shared-api/services/authz/scout-ownership-reader.js";
 import type { Caller } from "../../../shared-api/types/caller.js";
 import type {
+  ClassRoster,
   RegisterRequest,
   RegistrationResponse,
+  RosterResponse,
+  RosterRow,
   ScheduleResponse,
 } from "../../schemas/registration-schemas.js";
 import { emailNotifier } from "../notifier/email-notifier.js";
@@ -63,6 +69,20 @@ function toRegistrationResponse(
     badgeTitle: doc.badgeTitle,
     waitlistedAt: toIso(doc.waitlistedAt),
     enrolledAt: toIso(doc.enrolledAt),
+  };
+}
+
+function toRosterRow(doc: RegistrationDocument): RosterRow {
+  return {
+    scoutId: doc.scoutId,
+    scoutFirstName: doc.scoutFirstName,
+    scoutLastName: doc.scoutLastName,
+    scoutUnit: doc.scoutUnit,
+    accommodations: doc.accommodations,
+    parentName: doc.parentName,
+    parentEmail: doc.parentEmail,
+    consentReceived: doc.parentConsentAt != null,
+    status: doc.status as "enrolled" | "waitlisted",
   };
 }
 
@@ -367,6 +387,117 @@ export class RegistrationsServiceImpl implements RegistrationsService {
       toRegistrationResponse(doc.data() as RegistrationDocument),
     );
     return { registrations };
+  }
+
+  async listRoster(
+    caller: Caller,
+    universityId: string,
+  ): Promise<RosterResponse> {
+    const universitySnapshot = await this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .doc(universityId)
+      .get();
+    if (!universitySnapshot.exists) {
+      throw new NotFoundError("University not found");
+    }
+    const university = universitySnapshot.data() as UniversityDocument;
+    const periodLabels = new Map(
+      university.periods.map(period => [period.periodId, period.label]),
+    );
+
+    // Chancellors see every class; everyone else is scoped to their active
+    // counselor grants. assertChancellorOf throws (403) on a non-chancellor,
+    // so only that 403 is caught to fall through to the counselor path — any
+    // other error (e.g. a transient Firestore read failure) must surface
+    // rather than silently demote the caller to a narrower view.
+    let classIds: string[] | "all";
+    try {
+      await assertChancellorOf(caller, universityId, this.roleGrants);
+      classIds = "all";
+    } catch (error) {
+      if (!(error instanceof ForbiddenError)) throw error;
+      const granted = await this.roleGrants.listActiveClassGrants({
+        uid: caller.uid,
+        universityId,
+      });
+      if (granted.length === 0) {
+        throw new ForbiddenError(
+          "You do not have access to any classes in this event",
+        );
+      }
+      classIds = granted;
+    }
+
+    const classesSnapshot = await this.db()
+      .collection(classesPath(universityId))
+      .get();
+    const inScopeClasses = classesSnapshot.docs.filter(
+      doc => classIds === "all" || classIds.includes(doc.id),
+    );
+
+    const registrationsSnapshot = await this.db()
+      .collectionGroup(REGISTRATIONS_SUBCOLLECTION)
+      .where("universityId", "==", universityId)
+      .where("status", "in", ["enrolled", "waitlisted"])
+      .get();
+    const rowsByClass = new Map<string, RegistrationDocument[]>();
+    for (const doc of registrationsSnapshot.docs) {
+      const registration = doc.data() as RegistrationDocument;
+      const rows = rowsByClass.get(registration.classId) ?? [];
+      rows.push(registration);
+      rowsByClass.set(registration.classId, rows);
+    }
+
+    const classRosters: ClassRoster[] = inScopeClasses.map(doc => {
+      const classDoc = doc.data() as ClassDocument;
+      const rows = rowsByClass.get(doc.id) ?? [];
+      const enrolled = rows
+        .filter(row => row.status === "enrolled")
+        .sort((a, b) =>
+          a.scoutLastName === b.scoutLastName
+            ? a.scoutFirstName.localeCompare(b.scoutFirstName)
+            : a.scoutLastName.localeCompare(b.scoutLastName),
+        )
+        .map(toRosterRow);
+      const waitlisted = rows
+        .filter(row => row.status === "waitlisted")
+        .sort(
+          (a, b) =>
+            (a.waitlistedAt?.toMillis() ?? 0) -
+            (b.waitlistedAt?.toMillis() ?? 0),
+        )
+        .map(toRosterRow);
+
+      return {
+        class: {
+          classId: doc.id,
+          badgeTitle: classDoc.badgeTitle,
+          periodLabels: classDoc.periodIds.map(
+            id => periodLabels.get(id) ?? id,
+          ),
+          room: classDoc.room,
+          capacity: classDoc.capacity,
+          enrolledCount: classDoc.enrolledCount,
+          waitlistCount: classDoc.waitlistCount,
+          counselorNames: classDoc.counselors.map(
+            counselor => counselor.displayName,
+          ),
+        },
+        enrolled,
+        waitlisted,
+      };
+    });
+
+    return {
+      university: {
+        title: university.title,
+        startDate: university.startDate.toDate().toISOString(),
+        endDate: toIso(university.endDate),
+        location: university.location,
+        timezone: university.timezone,
+      },
+      classRosters,
+    };
   }
 }
 
