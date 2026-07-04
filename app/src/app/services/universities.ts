@@ -9,6 +9,7 @@ import type {
   ClassResponse,
   PeriodsPutRequest,
   PeriodsResponse,
+  PublicUniversity,
   UniversityCreateRequest,
   UniversityDetailResponse,
   UniversityListResponse,
@@ -23,6 +24,9 @@ export class Universities {
   /** Set by the editor route; drives the detail resource. */
   readonly activeUniversityId = signal<string | undefined>(undefined);
 
+  /** Set by the public register route; drives the public event resource. */
+  readonly activePublicUniversityId = signal<string | undefined>(undefined);
+
   /** Flash message for dashboard redirects (e.g. 403). */
   readonly flashMessage = signal<string | null>(null);
 
@@ -33,6 +37,15 @@ export class Universities {
   readonly detail = httpResource<UniversityDetailResponse>(() => {
     const id = this.activeUniversityId();
     return id ? `/api/universities/${id}` : undefined;
+  });
+
+  /**
+   * Published, parent-facing view of an event (the same read the marketing
+   * page uses). Drives the register page so its collaborators are injectable.
+   */
+  readonly publicEvent = httpResource<PublicUniversity>(() => {
+    const id = this.activePublicUniversityId();
+    return id ? `/api/universities/${id}/public` : undefined;
   });
 
   openUniversity(id: string): void {
@@ -47,6 +60,18 @@ export class Universities {
 
   clearActiveUniversity(): void {
     this.activeUniversityId.set(undefined);
+  }
+
+  openPublicUniversity(id: string): void {
+    if (this.activePublicUniversityId() === id) {
+      this.publicEvent.reload();
+    } else {
+      this.activePublicUniversityId.set(id);
+    }
+  }
+
+  reloadPublicEvent(): void {
+    this.publicEvent.reload();
   }
 
   reloadMine(): void {

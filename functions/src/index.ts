@@ -33,7 +33,20 @@ export const universitiesApi = onRequest(
     region: "us-east4",
   },
   async (request, response) => {
-    const { handleUniversitiesApi } = await import("./universities-api/handler.js");
+    const { handleUniversitiesApi } =
+      await import("./universities-api/handler.js");
     await handleUniversitiesApi(request, response);
+  },
+);
+
+export const registrationsApi = onRequest(
+  {
+    invoker: "public",
+    region: "us-east4",
+  },
+  async (request, response) => {
+    const { handleRegistrationsApi } =
+      await import("./registrations-api/handler.js");
+    await handleRegistrationsApi(request, response);
   },
 );

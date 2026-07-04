@@ -61,6 +61,11 @@ export class ConflictError extends HttpError {
 /** Machine-readable error codes shared with the client. */
 export const ERROR_CODES = {
   EMAIL_NOT_VERIFIED: "EMAIL_NOT_VERIFIED",
+  CLASS_FULL: "class_full",
+  PERIOD_CONFLICT: "period_conflict",
+  EVENT_NOT_OPEN: "event_not_open",
+  REGISTRATION_NOT_OPEN: "registration_not_open",
+  REGISTRATION_CLOSED: "registration_closed",
 } as const;
 
 export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];

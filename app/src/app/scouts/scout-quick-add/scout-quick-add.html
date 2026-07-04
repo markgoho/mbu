@@ -1,0 +1,21 @@
+<form class="scout-quick-add" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h2>Add a scout</h2>
+
+  <label>
+    First name
+    <input type="text" formControlName="firstName" required />
+  </label>
+
+  <label>
+    Last name
+    <input type="text" formControlName="lastName" required />
+  </label>
+
+  @if (errorMessage()) {
+    <p class="scout-quick-add__error" role="alert">{{ errorMessage() }}</p>
+  }
+
+  <button type="submit" [disabled]="isLoading()">
+    {{ isLoading() ? 'Adding…' : 'Add scout' }}
+  </button>
+</form>
