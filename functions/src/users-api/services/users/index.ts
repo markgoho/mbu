@@ -4,19 +4,37 @@ import {
   Timestamp,
   type Firestore,
 } from "firebase-admin/firestore";
-import { ROLE_GRANTS_COLLECTION } from "../../../collections/role-grants.js";
+import {
+  ROLE_GRANTS_COLLECTION,
+  type RoleGrantDocument,
+} from "../../../collections/role-grants.js";
+import { scoutsPath } from "../../../collections/scouts.js";
+import {
+  UNIVERSITIES_COLLECTION,
+  type UniversityDocument,
+} from "../../../collections/universities.js";
 import {
   USERS_COLLECTION,
   type UserDocument,
 } from "../../../collections/users.js";
 import { POLICY_VERSION } from "../../../constants/privacy.js";
-import { NotFoundError } from "../../../shared-api/errors/http-error.js";
+import {
+  ERROR_CODES,
+  ForbiddenError,
+  NotFoundError,
+} from "../../../shared-api/errors/http-error.js";
+import {
+  authAdminPort,
+  type AuthAdminPort,
+} from "../../../shared-api/services/auth/auth-admin-port.js";
 import type { Caller } from "../../../shared-api/types/caller.js";
 import type {
   BootstrapResponse,
   OnboardingRequest,
   UserResponse,
 } from "../../schemas/user-schemas.js";
+import { scoutsService as defaultScoutsService } from "../scouts/index.js";
+import type { ScoutsService } from "../scouts/interface.js";
 import type { UsersService } from "./interface.js";
 
 function toIso(value: Timestamp | null): string | null {
@@ -36,7 +54,11 @@ function toUserResponse(uid: string, doc: UserDocument): UserResponse {
 }
 
 export class UsersServiceImpl implements UsersService {
-  constructor(private readonly database?: Firestore) {}
+  constructor(
+    private readonly database?: Firestore,
+    private readonly scouts: ScoutsService = defaultScoutsService,
+    private readonly authAdmin: AuthAdminPort = authAdminPort,
+  ) {}
 
   private db(): Firestore {
     return this.database ?? getFirestore();
@@ -110,6 +132,69 @@ export class UsersServiceImpl implements UsersService {
       caller.uid,
       (await reference.get()).data() as UserDocument,
     );
+  }
+
+  async deleteAccount(caller: Caller): Promise<void> {
+    const chancellorGrants = await this.db()
+      .collection(ROLE_GRANTS_COLLECTION)
+      .where("uid", "==", caller.uid)
+      .where("role", "==", "chancellor")
+      .where("status", "==", "active")
+      .get();
+
+    for (const grant of chancellorGrants.docs) {
+      const { scopeId } = grant.data() as RoleGrantDocument;
+      const universitySnapshot = await this.db()
+        .collection(UNIVERSITIES_COLLECTION)
+        .doc(scopeId)
+        .get();
+      const university = universitySnapshot.exists
+        ? (universitySnapshot.data() as UniversityDocument)
+        : null;
+      if (
+        university &&
+        university.status !== "draft" &&
+        university.status !== "closed"
+      ) {
+        throw new ForbiddenError(
+          "Close your events first",
+          ERROR_CODES.CLOSE_EVENTS_FIRST,
+        );
+      }
+    }
+
+    const scoutsSnapshot = await this.db()
+      .collection(scoutsPath(caller.uid))
+      .get();
+    for (const scoutDoc of scoutsSnapshot.docs) {
+      await this.scouts.remove(caller, scoutDoc.id);
+    }
+
+    // Revoke every remaining active grant — counselor grants and the
+    // chancellor grants on draft/closed events allowed past the block above —
+    // so no active grant is left pointing at the deleted account.
+    const activeGrants = await this.db()
+      .collection(ROLE_GRANTS_COLLECTION)
+      .where("uid", "==", caller.uid)
+      .where("status", "==", "active")
+      .get();
+    if (!activeGrants.empty) {
+      const batch = this.db().batch();
+      for (const grant of activeGrants.docs) {
+        batch.update(grant.ref, {
+          status: "revoked",
+          updatedAt: FieldValue.serverTimestamp(),
+        });
+      }
+      await batch.commit();
+    }
+
+    // Delete the PII-bearing user doc before the Auth user: this cascade is
+    // retry-tolerant rather than atomic, and removing the PII first means a
+    // failure here leaves only a login with no data behind it (a re-login
+    // re-bootstraps a blank doc), never orphaned PII.
+    await this.db().collection(USERS_COLLECTION).doc(caller.uid).delete();
+    await this.authAdmin.deleteUser(caller.uid);
   }
 
   /**

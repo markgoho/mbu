@@ -42,13 +42,21 @@ export function createApp(services?: PartialUsersApiServices) {
       body: OnboardingRequestSchema,
       response: UserResponseSchema,
     })
+    .delete("/users/me", async ({ caller, set }) => {
+      await users.deleteAccount(caller);
+      set.status = 204;
+    })
     .get("/users/me/scouts", ({ caller }) => scouts.list(caller), {
       response: ScoutListResponseSchema,
     })
-    .post("/users/me/scouts", ({ caller, body }) => scouts.create(caller, body), {
-      body: ScoutRequestSchema,
-      response: ScoutResponseSchema,
-    })
+    .post(
+      "/users/me/scouts",
+      ({ caller, body }) => scouts.create(caller, body),
+      {
+        body: ScoutRequestSchema,
+        response: ScoutResponseSchema,
+      },
+    )
     .patch(
       "/users/me/scouts/:scoutId",
       ({ caller, params, body }) => scouts.update(caller, params.scoutId, body),

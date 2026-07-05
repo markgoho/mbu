@@ -13,6 +13,10 @@ export interface ScoutsService {
     scoutId: string,
     request: ScoutRequest,
   ): Promise<ScoutResponse>;
-  /** Hard-delete; 404 if missing. Cascade vs active registrations is #84. */
+  /**
+   * Hard-delete; 404 if missing. Cascades: cancels (and hard-deletes) every
+   * active registration for this scout, promoting waitlisted scouts as
+   * seats free up, before deleting the scout profile.
+   */
   remove(caller: Caller, scoutId: string): Promise<void>;
 }

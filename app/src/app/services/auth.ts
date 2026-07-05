@@ -176,6 +176,12 @@ export class Auth {
     }
   }
 
+  /** Right-to-erasure: deletes the backend account, then signs out. */
+  async deleteAccount(): Promise<void> {
+    await firstValueFrom(this.httpClient.delete('/api/users/me'));
+    await this.signOut();
+  }
+
   async signOut(): Promise<void> {
     try {
       await signOut(auth);

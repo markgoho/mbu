@@ -42,6 +42,7 @@ import {
   scoutOwnershipReader,
   type ScoutOwnershipReader,
 } from "../../../shared-api/services/authz/scout-ownership-reader.js";
+import { cancelRegistrationTxn } from "../../../shared-api/services/registrations/cancel-registration-txn.js";
 import type { Caller } from "../../../shared-api/types/caller.js";
 import type {
   ClassRoster,
@@ -286,7 +287,6 @@ export class RegistrationsServiceImpl implements RegistrationsService {
     const universityRef = this.db()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
-    const classRef = this.db().doc(`${classesPath(universityId)}/${classId}`);
     const registrationRef = this.db().doc(
       `${registrationsPath(universityId, classId)}/${scoutId}`,
     );
@@ -329,38 +329,13 @@ export class RegistrationsServiceImpl implements RegistrationsService {
         throw new NotFoundError("Registration not found");
       }
 
-      const now = Timestamp.now();
-
-      if (registration.status === "enrolled") {
-        const waitlistQuery = this.db()
-          .collection(registrationsPath(universityId, classId))
-          .where("status", "==", "waitlisted")
-          .orderBy("waitlistedAt", "asc")
-          .limit(1);
-        const waitlistSnapshot = await txn.get(waitlistQuery);
-        const nextDoc = waitlistSnapshot.docs[0];
-
-        if (nextDoc) {
-          // Cancel-enrolled frees a seat (-1) and the promotion fills it (+1):
-          // net enrolledCount change is 0, so only waitlistCount moves. Both
-          // must be one combined update() call — Firestore transactions
-          // reject a second update() on the same doc ref.
-          txn.update(classRef, { waitlistCount: FieldValue.increment(-1) });
-          txn.update(nextDoc.ref, {
-            status: "enrolled",
-            enrolledAt: now,
-            waitlistedAt: null,
-            updatedAt: now,
-          });
-          promotedScoutId = nextDoc.id;
-        } else {
-          txn.update(classRef, { enrolledCount: FieldValue.increment(-1) });
-        }
-      } else {
-        txn.update(classRef, { waitlistCount: FieldValue.increment(-1) });
-      }
-
-      txn.update(registrationRef, { status: "cancelled", updatedAt: now });
+      const result = await cancelRegistrationTxn(txn, this.db(), {
+        universityId,
+        classId,
+        registrationRef,
+        registration,
+      });
+      promotedScoutId = result.promotedScoutId;
     });
 
     if (promotedScoutId) {

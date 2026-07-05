@@ -68,6 +68,14 @@
         { "fieldPath": "universityId", "order": "ASCENDING" },
         { "fieldPath": "status", "order": "ASCENDING" }
       ]
+    },
+    {
+      "collectionGroup": "registrations",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        { "fieldPath": "scoutId", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" }
+      ]
     }
   ],
   "fieldOverrides": []

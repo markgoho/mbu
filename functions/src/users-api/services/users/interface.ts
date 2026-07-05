@@ -16,4 +16,12 @@ export interface UsersService {
   getMe(caller: Caller): Promise<UserResponse>;
   /** Record displayName + Terms/Privacy consent timestamps. */
   onboard(caller: Caller, request: OnboardingRequest): Promise<UserResponse>;
+  /**
+   * Right-to-erasure: deletes every owned scout (cascading their active
+   * registrations), revokes active counselor grants, deletes the user doc,
+   * and deletes the Firebase Auth user. Blocked while the caller holds an
+   * active chancellor grant on a published/submitted/needs_review event —
+   * close or draft it first.
+   */
+  deleteAccount(caller: Caller): Promise<void>;
 }
