@@ -12,11 +12,15 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { ClassList } from '../class-list/class-list';
 import { PeriodBoard } from '../period-board/period-board';
 import { UniversityForm } from '../university-form/university-form';
+import { StatusBadge } from '../../shared/status-badge/status-badge';
 import { Universities } from '../../services/universities';
+
+const LOCKED_STATUSES = new Set(['submitted', 'published', 'closed']);
+const SUBMITTABLE_STATUSES = new Set(['draft', 'rejected']);
 
 @Component({
   selector: 'app-university-editor',
-  imports: [RouterLink, UniversityForm, PeriodBoard, ClassList],
+  imports: [RouterLink, UniversityForm, PeriodBoard, ClassList, StatusBadge],
   templateUrl: './university-editor.html',
   styleUrl: './university-editor.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -39,6 +43,21 @@ export class UniversityEditor {
     if (error instanceof HttpErrorResponse && error.status === 403) return null;
     return 'Could not load this university.';
   });
+
+  protected readonly isLocked = computed(() =>
+    LOCKED_STATUSES.has(this.detail.value()?.university.status ?? ''),
+  );
+
+  protected readonly canSubmit = computed(() =>
+    SUBMITTABLE_STATUSES.has(this.detail.value()?.university.status ?? ''),
+  );
+
+  protected readonly canClose = computed(
+    () => this.detail.value()?.university.status === 'published',
+  );
+
+  protected readonly actionPending = signal(false);
+  protected readonly actionError = signal('');
 
   constructor() {
     effect(() => {
@@ -65,5 +84,34 @@ export class UniversityEditor {
     }
     await this.universities.deleteUniversity(id);
     await this.router.navigate(['/universities']);
+  }
+
+  protected async submitForReview(): Promise<void> {
+    this.actionError.set('');
+    this.actionPending.set(true);
+    try {
+      await this.universities.submitUniversity(this.universityId());
+    } catch (error) {
+      this.actionError.set(
+        this.universities.apiErrorMessage(error, 'Could not submit for review.'),
+      );
+    } finally {
+      this.actionPending.set(false);
+    }
+  }
+
+  protected async closeEvent(): Promise<void> {
+    if (!globalThis.confirm('Close this event? This cannot be undone.')) {
+      return;
+    }
+    this.actionError.set('');
+    this.actionPending.set(true);
+    try {
+      await this.universities.closeUniversity(this.universityId());
+    } catch (error) {
+      this.actionError.set(this.universities.apiErrorMessage(error, 'Could not close the event.'));
+    } finally {
+      this.actionPending.set(false);
+    }
   }
 }

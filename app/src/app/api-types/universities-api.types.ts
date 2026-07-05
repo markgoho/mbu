@@ -7,12 +7,7 @@ export interface UniversityLocation {
 }
 
 export type UniversityStatus =
-  | 'draft'
-  | 'submitted'
-  | 'needs_review'
-  | 'published'
-  | 'closed'
-  | 'rejected';
+  'draft' | 'submitted' | 'needs_review' | 'published' | 'closed' | 'rejected';
 
 export interface UniversityResponse {
   id: string;
@@ -25,6 +20,8 @@ export interface UniversityResponse {
   registrationClosesAt: string;
   location: UniversityLocation;
   createdByUid: string;
+  reviewNote: string | null;
+  submittedAt: string | null;
   createdAt: string;
   updatedAt: string;
 }
@@ -174,6 +171,20 @@ export interface PublicUniversity {
   location: UniversityLocation;
   periods: Period[];
   classes: PublicClass[];
+}
+
+export interface ReviewQueueRow {
+  id: string;
+  title: string;
+  chancellorName: string;
+  chancellorEmail: string;
+  submittedAt: string | null;
+  classCount: number;
+  startDate: string;
+}
+
+export interface ReviewQueueResponse {
+  universities: ReviewQueueRow[];
 }
 
 export interface ApiErrorBody {

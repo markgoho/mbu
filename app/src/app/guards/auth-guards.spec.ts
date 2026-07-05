@@ -1,11 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import {
-  Router,
-  RouterOutlet,
-  provideRouter,
-  type Routes,
-} from '@angular/router';
+import { Router, RouterOutlet, provideRouter, type Routes } from '@angular/router';
 import { render, screen } from '@testing-library/angular/zoneless';
 import { describe, expect, it, vi } from 'vitest';
 import type { BootstrapResponse } from '../api-types/users-api.types';
@@ -13,6 +8,7 @@ import { Auth } from '../services/auth';
 import {
   requireAuth,
   requireOnboarded,
+  requireSuperAdmin,
   requireUnauth,
   requireVerified,
 } from './auth-guards';
@@ -21,10 +17,7 @@ import {
 // mock at the firebase SDK boundary instead.
 const { mockAuth } = vi.hoisted(() => ({
   mockAuth: {
-    currentUser: undefined as
-      | { uid: string; emailVerified: boolean }
-      | null
-      | undefined,
+    currentUser: undefined as { uid: string; emailVerified: boolean } | null | undefined,
     authStateReady: vi.fn<() => Promise<void>>(() => Promise.resolve()),
   },
 }));
@@ -39,15 +32,35 @@ vi.mock('firebase/firestore', () => ({
   connectFirestoreEmulator: vi.fn(),
 }));
 
-@Component({ selector: 'app-mock-home', template: '<h1>Home</h1>', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({
+  selector: 'app-mock-home',
+  template: '<h1>Home</h1>',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
 class MockHome {}
-@Component({ selector: 'app-mock-sign-in', template: '<h1>Sign In</h1>', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({
+  selector: 'app-mock-sign-in',
+  template: '<h1>Sign In</h1>',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
 class MockSignIn {}
-@Component({ selector: 'app-mock-verify', template: '<h1>Verify</h1>', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({
+  selector: 'app-mock-verify',
+  template: '<h1>Verify</h1>',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
 class MockVerify {}
-@Component({ selector: 'app-mock-onboarding', template: '<h1>Onboarding</h1>', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({
+  selector: 'app-mock-onboarding',
+  template: '<h1>Onboarding</h1>',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
 class MockOnboarding {}
-@Component({ selector: 'app-mock-protected', template: '<h1>Protected</h1>', changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({
+  selector: 'app-mock-protected',
+  template: '<h1>Protected</h1>',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
 class MockProtected {}
 @Component({
   template: '<router-outlet></router-outlet>',
@@ -66,6 +79,7 @@ const routes: Routes = [
   { path: 'guest-only', component: MockSignIn, canActivate: [requireUnauth] },
   { path: 'return-target', component: MockProtected },
   { path: 'onboarded-only', component: MockProtected, canActivate: [requireOnboarded] },
+  { path: 'admin-only', component: MockProtected, canActivate: [requireSuperAdmin] },
 ];
 
 describe('auth route guards', () => {
@@ -144,6 +158,20 @@ describe('auth route guards', () => {
       expect(screen.getByText('Protected')).toBeVisible();
     });
   });
+
+  describe('requireSuperAdmin', () => {
+    it('redirects a non-super-admin to the app home', async () => {
+      const { navigate } = await setup({ superAdmin: false });
+      await navigate('/admin-only');
+      expect(screen.getByText('Home')).toBeVisible();
+    });
+
+    it('allows a super-admin through', async () => {
+      const { navigate } = await setup({ superAdmin: true });
+      await navigate('/admin-only');
+      expect(screen.getByText('Protected')).toBeVisible();
+    });
+  });
 });
 
 function fakeUser() {
@@ -160,22 +188,21 @@ function fakeUser() {
 interface SetupOptions {
   currentUser?: { uid: string; emailVerified: boolean } | null;
   bootstrap?: BootstrapResponse | undefined;
+  superAdmin?: boolean;
 }
 
-async function setup({ currentUser, bootstrap }: SetupOptions = {}) {
+async function setup({ currentUser, bootstrap, superAdmin = false }: SetupOptions = {}) {
   vi.spyOn(console, 'error').mockReturnValue(undefined);
   mockAuth.currentUser = currentUser;
   mockAuth.authStateReady = vi.fn(() => Promise.resolve());
 
   const mockAuthService = {
     ensureBootstrap: vi.fn(() => Promise.resolve(bootstrap)),
+    ensureSuperAdmin: vi.fn(() => Promise.resolve(superAdmin)),
   };
 
   await render(MockApp, {
-    providers: [
-      provideRouter(routes),
-      { provide: Auth, useValue: mockAuthService },
-    ],
+    providers: [provideRouter(routes), { provide: Auth, useValue: mockAuthService }],
   });
 
   const router = TestBed.inject(Router);

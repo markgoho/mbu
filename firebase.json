@@ -108,6 +108,11 @@
           "region": "us-east4"
         },
         {
+          "source": "/api/admin/universities{,/**}",
+          "function": "universitiesApi",
+          "region": "us-east4"
+        },
+        {
           "source": "/api/registrations{,/**}",
           "function": "registrationsApi",
           "region": "us-east4"

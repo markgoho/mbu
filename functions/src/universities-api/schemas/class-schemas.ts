@@ -93,6 +93,8 @@ export const UniversityDetailResponseSchema = t.Object({
       }),
     ),
     createdByUid: t.String(),
+    reviewNote: t.Union([t.String(), t.Null()]),
+    submittedAt: t.Union([t.String(), t.Null()]),
     createdAt: t.String(),
     updatedAt: t.String(),
   }),

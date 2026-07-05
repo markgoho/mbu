@@ -19,19 +19,23 @@
           <label>Label <input type="text" formControlName="label" /></label>
           <label>Starts <input type="datetime-local" formControlName="startsAt" /></label>
           <label>Ends <input type="datetime-local" formControlName="endsAt" /></label>
-          <button type="button" (click)="removeRow(i)">Remove</button>
+          @if (!readonly()) {
+            <button type="button" (click)="removeRow(i)">Remove</button>
+          }
         </fieldset>
       }
     </div>
-    <div class="period-board__actions">
-      <button type="button" (click)="addRow()">Add period</button>
-      <button type="submit" [disabled]="isLoading()">
-        @if (isLoading()) {
-          Saving…
-        } @else {
-          Save periods
-        }
-      </button>
-    </div>
+    @if (!readonly()) {
+      <div class="period-board__actions">
+        <button type="button" (click)="addRow()">Add period</button>
+        <button type="submit" [disabled]="isLoading()">
+          @if (isLoading()) {
+            Saving…
+          } @else {
+            Save periods
+          }
+        </button>
+      </div>
+    }
   </form>
 </section>

@@ -66,6 +66,8 @@ export const UniversityResponseSchema = t.Object({
   registrationClosesAt: t.String(),
   location: LocationSchema,
   createdByUid: t.String(),
+  reviewNote: t.Union([t.String(), t.Null()]),
+  submittedAt: t.Union([t.String(), t.Null()]),
   createdAt: t.String(),
   updatedAt: t.String(),
 });
@@ -89,3 +91,24 @@ export const UniversityListResponseSchema = t.Object({
 export type UniversityListResponse = Static<
   typeof UniversityListResponseSchema
 >;
+
+export const RejectRequestSchema = t.Object({
+  note: t.String({ minLength: 1, maxLength: 2000 }),
+});
+export type RejectRequest = Static<typeof RejectRequestSchema>;
+
+export const ReviewQueueRowSchema = t.Object({
+  id: t.String(),
+  title: t.String(),
+  chancellorName: t.String(),
+  chancellorEmail: t.String(),
+  submittedAt: t.Union([t.String(), t.Null()]),
+  classCount: t.Number(),
+  startDate: t.String(),
+});
+export type ReviewQueueRow = Static<typeof ReviewQueueRowSchema>;
+
+export const ReviewQueueResponseSchema = t.Object({
+  universities: t.Array(ReviewQueueRowSchema),
+});
+export type ReviewQueueResponse = Static<typeof ReviewQueueResponseSchema>;

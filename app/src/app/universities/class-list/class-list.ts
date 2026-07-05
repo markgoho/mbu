@@ -16,6 +16,7 @@ export class ClassList {
   readonly universityId = input.required<string>();
   readonly periods = input<Period[]>([]);
   readonly classes = input<ClassResponse[]>([]);
+  readonly readonly = input(false);
 
   protected readonly showForm = signal(false);
   protected readonly editingClass = signal<ClassResponse | undefined>(undefined);

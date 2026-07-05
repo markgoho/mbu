@@ -2,6 +2,7 @@ import { type Routes } from '@angular/router';
 import {
   requireAuth,
   requireOnboarded,
+  requireSuperAdmin,
   requireUnauth,
   requireVerified,
 } from './guards/auth-guards';
@@ -9,8 +10,7 @@ import {
 export const routes: Routes = [
   {
     path: 'e/:id',
-    loadComponent: () =>
-      import('./public-event/public-event').then((m) => m.PublicEvent),
+    loadComponent: () => import('./public-event/public-event').then((m) => m.PublicEvent),
   },
   {
     path: 'e/:id/register',
@@ -25,14 +25,12 @@ export const routes: Routes = [
   {
     path: 'verify-email',
     canActivate: [requireAuth],
-    loadComponent: () =>
-      import('./verify-email/verify-email').then((m) => m.VerifyEmail),
+    loadComponent: () => import('./verify-email/verify-email').then((m) => m.VerifyEmail),
   },
   {
     path: 'onboarding',
     canActivate: [requireAuth, requireVerified],
-    loadComponent: () =>
-      import('./onboarding/onboarding').then((m) => m.Onboarding),
+    loadComponent: () => import('./onboarding/onboarding').then((m) => m.Onboarding),
   },
   {
     path: 'universities',
@@ -48,9 +46,7 @@ export const routes: Routes = [
       {
         path: 'new',
         loadComponent: () =>
-          import('./universities/university-new/university-new').then(
-            (m) => m.UniversityNew,
-          ),
+          import('./universities/university-new/university-new').then((m) => m.UniversityNew),
       },
       {
         path: ':id',
@@ -63,6 +59,21 @@ export const routes: Routes = [
         path: ':id/roster',
         loadComponent: () =>
           import('./universities/roster-page/roster-page').then((m) => m.RosterPage),
+      },
+    ],
+  },
+  {
+    path: 'admin',
+    canActivate: [requireAuth, requireVerified, requireOnboarded, requireSuperAdmin],
+    children: [
+      {
+        path: 'review',
+        loadComponent: () => import('./admin/review-queue/review-queue').then((m) => m.ReviewQueue),
+      },
+      {
+        path: 'review/:id',
+        loadComponent: () =>
+          import('./admin/review-detail/review-detail').then((m) => m.ReviewDetail),
       },
     ],
   },

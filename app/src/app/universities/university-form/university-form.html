@@ -42,11 +42,13 @@
     <input id="locationZip" type="text" formControlName="locationZip" />
   </fieldset>
 
-  <button type="submit" [disabled]="isLoading()">
-    @if (isLoading()) {
-      Saving…
-    } @else {
-      Save university
-    }
-  </button>
+  @if (!readonly()) {
+    <button type="submit" [disabled]="isLoading()">
+      @if (isLoading()) {
+        Saving…
+      } @else {
+        Save university
+      }
+    </button>
+  }
 </form>

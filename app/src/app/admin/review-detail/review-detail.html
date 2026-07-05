@@ -1,0 +1,63 @@
+<main class="review-detail">
+  <a routerLink="/admin/review">← Back to queue</a>
+
+  @if (detail.isLoading()) {
+    <p>Loading…</p>
+  } @else if (detail.error()) {
+    <p class="review-detail__error" role="alert">Could not load this university.</p>
+  } @else if (detail.value(); as data) {
+    <header class="review-detail__header">
+      <h1>{{ data.university.title }}</h1>
+      <app-status-badge [status]="data.university.status" />
+    </header>
+
+    <dl class="review-detail__meta">
+      <dt>Location</dt>
+      <dd>
+        {{ data.university.location.name }}, {{ data.university.location.city }},
+        {{ data.university.location.state }}
+      </dd>
+      <dt>Timezone</dt>
+      <dd>{{ data.university.timezone }}</dd>
+      <dt>Classes</dt>
+      <dd>{{ data.classes.length }}</dd>
+    </dl>
+
+    <section class="review-detail__classes">
+      <h2>Classes</h2>
+      <ul>
+        @for (cls of data.classes; track cls.classId) {
+          <li>{{ cls.badgeTitle }} · cap {{ cls.capacity }}</li>
+        }
+      </ul>
+    </section>
+
+    @if (actionError(); as message) {
+      <p class="review-detail__error" role="alert">{{ message }}</p>
+    }
+
+    @if (data.university.status === 'submitted') {
+      <div class="review-detail__actions">
+        <button type="button" [disabled]="actionPending()" (click)="approve()">Approve</button>
+        @if (!showRejectForm()) {
+          <button type="button" (click)="showRejectForm.set(true)">Reject</button>
+        }
+      </div>
+
+      @if (showRejectForm()) {
+        <form class="review-detail__reject-form" (ngSubmit)="reject()">
+          <label for="rejectNote">Reason for rejection</label>
+          <textarea
+            id="rejectNote"
+            [value]="rejectNote()"
+            (input)="setRejectNote($any($event.target).value)"
+            required
+          ></textarea>
+          <button type="submit" [disabled]="actionPending() || !rejectNote().trim()">
+            Submit rejection
+          </button>
+        </form>
+      }
+    }
+  }
+</main>

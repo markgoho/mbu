@@ -1,0 +1,31 @@
+<main class="review-queue">
+  <header class="review-queue__header">
+    <h1>Review Queue</h1>
+  </header>
+
+  @if (queue.error()) {
+    <p class="review-queue__error" role="alert">Could not load the review queue.</p>
+  } @else if (queue.isLoading()) {
+    <p>Loading…</p>
+  } @else if (isEmpty()) {
+    <p class="review-queue__empty">Nothing is waiting for review.</p>
+  } @else {
+    <ul class="review-queue__list">
+      @for (row of rows(); track row.id) {
+        <li>
+          <a [routerLink]="['/admin/review', row.id]" class="review-queue__card">
+            <span class="review-queue__title">{{ row.title }}</span>
+            <span class="review-queue__meta">
+              {{ row.chancellorName }} ({{ row.chancellorEmail }}) ·
+              {{ row.startDate | date: 'mediumDate' }} · {{ row.classCount }}
+              {{ row.classCount === 1 ? 'class' : 'classes' }}
+              @if (row.submittedAt) {
+                · submitted {{ row.submittedAt | date: 'medium' }}
+              }
+            </span>
+          </a>
+        </li>
+      }
+    </ul>
+  }
+</main>

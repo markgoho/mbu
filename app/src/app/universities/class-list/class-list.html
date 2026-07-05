@@ -1,7 +1,7 @@
 <section class="class-list">
   <header class="class-list__header">
     <h2>Classes</h2>
-    @if (!showForm()) {
+    @if (!showForm() && !readonly()) {
       <button type="button" (click)="startCreate()">Add class</button>
     }
   </header>
@@ -19,16 +19,18 @@
               · {{ cls.room }}
             }
           </span>
-          <span class="class-list__actions">
-            <button type="button" (click)="startEdit(cls)">Edit</button>
-            <button type="button" (click)="deleteClass(cls)">Delete</button>
-          </span>
+          @if (!readonly()) {
+            <span class="class-list__actions">
+              <button type="button" (click)="startEdit(cls)">Edit</button>
+              <button type="button" (click)="deleteClass(cls)">Delete</button>
+            </span>
+          }
         </li>
       }
     </ul>
   }
 
-  @if (showForm()) {
+  @if (showForm() && !readonly()) {
     <app-class-form
       [universityId]="universityId()"
       [periods]="periods()"

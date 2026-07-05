@@ -18,11 +18,18 @@ import {
   type UniversityDocument,
 } from "../../../collections/universities.js";
 import {
+  USERS_COLLECTION,
+  type UserDocument,
+} from "../../../collections/users.js";
+import {
   ConflictError,
   NotFoundError,
   ValidationError,
 } from "../../../shared-api/errors/http-error.js";
-import { assertChancellorOf } from "../../../shared-api/services/authz/assertions.js";
+import {
+  assertChancellorOf,
+  requireSuperAdmin,
+} from "../../../shared-api/services/authz/assertions.js";
 import type { Caller } from "../../../shared-api/types/caller.js";
 import type {
   ClassResponse,
@@ -30,13 +37,16 @@ import type {
 } from "../../schemas/class-schemas.js";
 import type { PublicUniversityResponse } from "../../schemas/public-schemas.js";
 import type {
+  ReviewQueueResponse,
   UniversityCreateRequest,
   UniversityListResponse,
   UniversityPatchRequest,
   UniversityResponse,
 } from "../../schemas/university-schemas.js";
+import { assertTransition } from "../transitions.js";
 import {
   assertDraftStatus,
+  assertEditableStatus,
   parseIso,
   toIso,
   validateDateOrder,
@@ -60,6 +70,8 @@ function toUniversityResponse(
     registrationClosesAt: toIso(doc.registrationClosesAt) ?? "",
     location: doc.location,
     createdByUid: doc.createdByUid,
+    reviewNote: doc.reviewNote,
+    submittedAt: toIso(doc.submittedAt),
     createdAt: toIso(doc.createdAt) ?? "",
     updatedAt: toIso(doc.updatedAt) ?? "",
   };
@@ -239,7 +251,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       throw new NotFoundError("University not found");
     }
     const current = snapshot.data() as UniversityDocument;
-    assertDraftStatus(current.status);
+    assertEditableStatus(current.status);
 
     const updates: Record<string, unknown> = {
       updatedAt: FieldValue.serverTimestamp(),
@@ -442,6 +454,8 @@ export class UniversitiesServiceImpl implements UniversitiesService {
           endsAt: toIso(p.endsAt) ?? "",
         })),
         createdByUid: doc.createdByUid,
+        reviewNote: doc.reviewNote,
+        submittedAt: toIso(doc.submittedAt),
         createdAt: toIso(doc.createdAt) ?? "",
         updatedAt: toIso(doc.updatedAt) ?? "",
       },
@@ -482,6 +496,185 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     }
     batch.delete(universityRef);
     await batch.commit();
+  }
+
+  async submit(
+    caller: Caller,
+    universityId: string,
+  ): Promise<UniversityResponse> {
+    await assertChancellorOf(caller, universityId);
+
+    const universityRef = this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .doc(universityId);
+
+    await this.db().runTransaction(async txn => {
+      const snapshot = await txn.get(universityRef);
+      if (!snapshot.exists) {
+        throw new NotFoundError("University not found");
+      }
+      const current = snapshot.data() as UniversityDocument;
+      assertTransition(current.status, "submitted");
+
+      const classesSnapshot = await txn.get(
+        this.db()
+          .collection(
+            `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
+          )
+          .limit(1),
+      );
+      if (classesSnapshot.empty) {
+        throw new ValidationError(
+          "At least one class is required to submit for review",
+        );
+      }
+
+      txn.update(universityRef, {
+        status: "submitted",
+        submittedAt: FieldValue.serverTimestamp(),
+        reviewNote: null,
+        updatedAt: FieldValue.serverTimestamp(),
+      });
+    });
+
+    return toUniversityResponse(
+      universityId,
+      (await universityRef.get()).data() as UniversityDocument,
+    );
+  }
+
+  async close(
+    caller: Caller,
+    universityId: string,
+  ): Promise<UniversityResponse> {
+    await assertChancellorOf(caller, universityId);
+
+    const universityRef = this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .doc(universityId);
+
+    await this.db().runTransaction(async txn => {
+      const snapshot = await txn.get(universityRef);
+      if (!snapshot.exists) {
+        throw new NotFoundError("University not found");
+      }
+      const current = snapshot.data() as UniversityDocument;
+      assertTransition(current.status, "closed");
+
+      txn.update(universityRef, {
+        status: "closed",
+        updatedAt: FieldValue.serverTimestamp(),
+      });
+    });
+
+    return toUniversityResponse(
+      universityId,
+      (await universityRef.get()).data() as UniversityDocument,
+    );
+  }
+
+  async approve(
+    caller: Caller,
+    universityId: string,
+  ): Promise<UniversityResponse> {
+    requireSuperAdmin(caller);
+
+    const universityRef = this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .doc(universityId);
+
+    await this.db().runTransaction(async txn => {
+      const snapshot = await txn.get(universityRef);
+      if (!snapshot.exists) {
+        throw new NotFoundError("University not found");
+      }
+      const current = snapshot.data() as UniversityDocument;
+      assertTransition(current.status, "published");
+
+      txn.update(universityRef, {
+        status: "published",
+        publishedAt: FieldValue.serverTimestamp(),
+        reviewNote: null,
+        updatedAt: FieldValue.serverTimestamp(),
+      });
+    });
+
+    return toUniversityResponse(
+      universityId,
+      (await universityRef.get()).data() as UniversityDocument,
+    );
+  }
+
+  async reject(
+    caller: Caller,
+    universityId: string,
+    note: string,
+  ): Promise<UniversityResponse> {
+    requireSuperAdmin(caller);
+
+    const universityRef = this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .doc(universityId);
+
+    await this.db().runTransaction(async txn => {
+      const snapshot = await txn.get(universityRef);
+      if (!snapshot.exists) {
+        throw new NotFoundError("University not found");
+      }
+      const current = snapshot.data() as UniversityDocument;
+      assertTransition(current.status, "rejected");
+
+      txn.update(universityRef, {
+        status: "rejected",
+        reviewNote: note,
+        updatedAt: FieldValue.serverTimestamp(),
+      });
+    });
+
+    return toUniversityResponse(
+      universityId,
+      (await universityRef.get()).data() as UniversityDocument,
+    );
+  }
+
+  async listReviewQueue(caller: Caller): Promise<ReviewQueueResponse> {
+    requireSuperAdmin(caller);
+
+    const snapshot = await this.db()
+      .collection(UNIVERSITIES_COLLECTION)
+      .where("status", "==", "submitted")
+      .orderBy("submittedAt", "asc")
+      .get();
+
+    const universities = await Promise.all(
+      snapshot.docs.map(async doc => {
+        const data = doc.data() as UniversityDocument;
+        const [classCountResult, userSnapshot] = await Promise.all([
+          this.db()
+            .collection(
+              `${UNIVERSITIES_COLLECTION}/${doc.id}/${CLASSES_SUBCOLLECTION}`,
+            )
+            .count()
+            .get(),
+          this.db().collection(USERS_COLLECTION).doc(data.createdByUid).get(),
+        ]);
+        const user = userSnapshot.exists
+          ? (userSnapshot.data() as UserDocument)
+          : null;
+
+        return {
+          id: doc.id,
+          title: data.title,
+          chancellorName: user?.displayName ?? "",
+          chancellorEmail: user?.email ?? "",
+          submittedAt: toIso(data.submittedAt),
+          classCount: classCountResult.data().count,
+          startDate: toIso(data.startDate) ?? "",
+        };
+      }),
+    );
+
+    return { universities };
   }
 }
 
