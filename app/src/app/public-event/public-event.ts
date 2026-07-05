@@ -1,9 +1,10 @@
 import { DatePipe } from '@angular/common';
-import { HttpErrorResponse, httpResource } from '@angular/common/http';
-import { Component, computed, inject } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
+import { Component, computed, effect, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import type { PublicUniversity } from '../api-types/universities-api.types';
+import { Universities } from '../services/universities';
 
 @Component({
   selector: 'app-public-event',
@@ -13,16 +14,22 @@ import type { PublicUniversity } from '../api-types/universities-api.types';
 })
 export class PublicEvent {
   private readonly route = inject(ActivatedRoute);
+  private readonly universities = inject(Universities);
   private readonly params = toSignal(this.route.paramMap);
 
   protected readonly eventId = computed(() => this.params()?.get('id') ?? '');
 
-  // Keyed on the route id: navigating between events refetches and cancels the
-  // superseded request, so a slow earlier response can't overwrite a later one.
-  protected readonly event = httpResource<PublicUniversity>(() => {
-    const id = this.eventId();
-    return id ? `/api/universities/${id}/public` : undefined;
-  });
+  // The shared, published event read (also used by the register page). Opening
+  // by id refetches on change and cancels the superseded request, so a slow
+  // earlier response can't overwrite a later one.
+  protected readonly event = this.universities.publicEvent;
+
+  constructor() {
+    effect(() => {
+      const id = this.eventId();
+      if (id) this.universities.openPublicUniversity(id);
+    });
+  }
 
   /** A 404 means missing or unpublished; any other error is a generic failure. */
   protected readonly notFound = computed(() => {
@@ -34,9 +41,7 @@ export class PublicEvent {
     return `/e/${this.eventId()}`;
   }
 
-  protected counselorNames(
-    counselors: PublicUniversity['classes'][number]['counselors'],
-  ): string {
+  protected counselorNames(counselors: PublicUniversity['classes'][number]['counselors']): string {
     return counselors.map((c) => c.displayName).join(', ');
   }
 

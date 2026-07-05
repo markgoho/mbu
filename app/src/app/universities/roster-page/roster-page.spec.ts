@@ -1,23 +1,30 @@
-import { provideHttpClient } from '@angular/common/http';
-import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
-import { Component, inject } from '@angular/core';
-import { TestBed } from '@angular/core/testing';
-import { provideRouter, Router, RouterOutlet } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
+import { Component, inject, signal } from '@angular/core';
+import { provideRouter, RouterLink, RouterOutlet } from '@angular/router';
 import { render, screen } from '@testing-library/angular/zoneless';
+import userEvent from '@testing-library/user-event';
 import { describe, expect, it } from 'vitest';
 import type { RosterResponse } from '../../api-types/registrations-api.types';
+import { Registrations } from '../../services/registrations';
 import { Universities } from '../../services/universities';
+import { fakeResource } from '../../test-utils/fake-resource';
 import { RosterPage } from './roster-page';
 
+// Root under test: the "View rosters" link the chancellor follows (mirroring
+// the editor's link) plus the outlet its destination renders into.
 @Component({
-  template: '<router-outlet />',
-  imports: [RouterOutlet],
+  template: `
+    <a routerLink="/universities/uni1/roster">View rosters</a>
+    <router-outlet />
+  `,
+  imports: [RouterLink, RouterOutlet],
 })
 class TestApp {}
 
-/** Stub for the redirect target — renders the flash message so tests assert on what the user sees. */
+/** Redirect target — renders the flash message so tests assert on what the user sees. */
 @Component({
-  template: '<p>Dashboard{{ universities.flashMessage() ? ": " + universities.flashMessage() : "" }}</p>',
+  template:
+    '<p>Dashboard{{ universities.flashMessage() ? ": " + universities.flashMessage() : "" }}</p>',
 })
 class DashboardStub {
   protected readonly universities = inject(Universities);
@@ -28,7 +35,13 @@ const sampleRoster: RosterResponse = {
     title: 'Spring MBU',
     startDate: '2026-06-01T12:00:00.000Z',
     endDate: null,
-    location: { name: 'Scout Hall', address: '1 Main St', city: 'Anytown', state: 'NY', zip: '12345' },
+    location: {
+      name: 'Scout Hall',
+      address: '1 Main St',
+      city: 'Anytown',
+      state: 'NY',
+      zip: '12345',
+    },
     timezone: 'America/New_York',
   },
   classRosters: [
@@ -87,29 +100,50 @@ const sampleRoster: RosterResponse = {
   ],
 };
 
-const flushMicrotasks = () => new Promise((resolve) => setTimeout(resolve, 0));
-
 describe('RosterPage', () => {
-  async function renderAt(path: string): Promise<HttpTestingController> {
+  interface SetupOptions {
+    roster?: RosterResponse;
+    // The signed-in user isn't allowed to see these rosters.
+    forbidden?: boolean;
+  }
+
+  async function setup({ roster = sampleRoster, forbidden = false }: SetupOptions = {}) {
+    const rosterResource = fakeResource<RosterResponse>();
+    if (forbidden) {
+      rosterResource.setError(new HttpErrorResponse({ status: 403, statusText: 'Forbidden' }));
+    } else {
+      rosterResource.set(roster);
+    }
+
+    const user = userEvent.setup();
     await render(TestApp, {
       providers: [
         provideRouter([
           { path: 'universities/:id/roster', component: RosterPage },
           { path: 'universities', component: DashboardStub },
         ]),
-        provideHttpClient(),
-        provideHttpClientTesting(),
+        {
+          provide: Registrations,
+          useValue: { roster: rosterResource, openRoster: () => {} },
+        },
+        {
+          provide: Universities,
+          useValue: { flashMessage: signal<string | null>(null) },
+        },
       ],
     });
-    await TestBed.inject(Router).navigateByUrl(path);
-    await flushMicrotasks();
-    return TestBed.inject(HttpTestingController);
+
+    return {
+      async openRosters() {
+        await user.click(await screen.findByRole('link', { name: 'View rosters' }));
+      },
+    };
   }
 
   it("renders each class's enrolled and waitlisted tables, including an empty class", async () => {
-    const httpMock = await renderAt('/universities/uni1/roster');
+    const { openRosters } = await setup();
 
-    httpMock.expectOne('/api/registrations/uni1/roster').flush(sampleRoster);
+    await openRosters();
 
     expect(await screen.findByText('Spring MBU — Rosters')).toBeVisible();
     expect(await screen.findByRole('heading', { name: 'Camping' })).toBeVisible();
@@ -122,14 +156,13 @@ describe('RosterPage', () => {
     expect(screen.getAllByRole('button', { name: 'Export CSV' })).toHaveLength(2);
   });
 
-  it('redirects to the dashboard with a flash message on 403', async () => {
-    const httpMock = await renderAt('/universities/uni1/roster');
+  it('redirects to the dashboard with a flash message when access is forbidden', async () => {
+    const { openRosters } = await setup({ forbidden: true });
 
-    httpMock
-      .expectOne('/api/registrations/uni1/roster')
-      .flush('forbidden', { status: 403, statusText: 'Forbidden' });
-    await flushMicrotasks();
+    await openRosters();
 
-    expect(await screen.findByText('Dashboard: You do not have access to those rosters.')).toBeVisible();
+    expect(
+      await screen.findByText('Dashboard: You do not have access to those rosters.'),
+    ).toBeVisible();
   });
 });
