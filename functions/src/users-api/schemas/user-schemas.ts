@@ -9,6 +9,7 @@ export const UserResponseSchema = t.Object({
   acceptedTermsAt: t.Union([t.String(), t.Null()]),
   acceptedPrivacyAt: t.Union([t.String(), t.Null()]),
   acceptedPolicyVersion: t.Union([t.String(), t.Null()]),
+  rosterExportAckAt: t.Union([t.String(), t.Null()]),
 });
 export type UserResponse = Static<typeof UserResponseSchema>;
 

@@ -1,0 +1,24 @@
+:host {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0 0 0 / 50%);
+  z-index: 100;
+}
+
+.confirm-modal__dialog {
+  max-width: 28rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--color-surface);
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 25%);
+}
+
+.confirm-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}

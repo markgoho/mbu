@@ -25,7 +25,9 @@ function readerAllowing(
 ): RoleGrantsReader {
   return {
     hasActiveGrant: ({ scopeId, role }: GrantQuery) =>
-      Promise.resolve(grants.some((g) => g.scopeId === scopeId && g.role === role)),
+      Promise.resolve(
+        grants.some(g => g.scopeId === scopeId && g.role === role),
+      ),
     listActiveClassGrants: () => Promise.resolve([]),
   };
 }
@@ -77,6 +79,16 @@ describe("assertCounselorOf", () => {
   it("rejects when neither grant exists", async () => {
     await expect(
       assertCounselorOf(caller(), scope, readerAllowing([])),
+    ).rejects.toBeInstanceOf(ForbiddenError);
+  });
+
+  it("rejects a counselor of a different class in the same university", async () => {
+    await expect(
+      assertCounselorOf(
+        caller(),
+        scope,
+        readerAllowing([{ scopeId: "cls2-not-cls1", role: "counselor" }]),
+      ),
     ).rejects.toBeInstanceOf(ForbiddenError);
   });
 

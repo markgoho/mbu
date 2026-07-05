@@ -24,6 +24,8 @@ export interface UserDocument {
   acceptedPrivacyAt: Timestamp | null;
   /** POLICY_VERSION in effect when onboarding consent was accepted. */
   acceptedPolicyVersion: string | null;
+  /** Set once this chancellor/counselor has clicked through the roster-export warning. */
+  rosterExportAckAt: Timestamp | null;
   createdAt: Timestamp;
   updatedAt: Timestamp;
 }

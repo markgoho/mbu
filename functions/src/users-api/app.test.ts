@@ -35,6 +35,7 @@ const usersService: UsersService = {
         acceptedTermsAt: null,
         acceptedPrivacyAt: null,
         acceptedPolicyVersion: null,
+        rosterExportAckAt: null,
       },
       needsConsent: true,
     }),
@@ -47,6 +48,7 @@ const usersService: UsersService = {
       acceptedTermsAt: null,
       acceptedPrivacyAt: null,
       acceptedPolicyVersion: null,
+      rosterExportAckAt: null,
     }),
   onboard: (caller, request) =>
     Promise.resolve({
@@ -57,6 +59,18 @@ const usersService: UsersService = {
       acceptedTermsAt: "2026-07-03T00:00:00.000Z",
       acceptedPrivacyAt: "2026-07-03T00:00:00.000Z",
       acceptedPolicyVersion: "2026-07-04",
+      rosterExportAckAt: null,
+    }),
+  ackRosterExport: caller =>
+    Promise.resolve({
+      uid: caller.uid,
+      displayName: "Pat",
+      email: caller.email,
+      phone: null,
+      acceptedTermsAt: "2026-07-03T00:00:00.000Z",
+      acceptedPrivacyAt: "2026-07-03T00:00:00.000Z",
+      acceptedPolicyVersion: "2026-07-04",
+      rosterExportAckAt: "2026-07-05T00:00:00.000Z",
     }),
   deleteAccount: () => Promise.resolve(),
 };
@@ -221,5 +235,17 @@ describe("users-api routes", () => {
     expect(response.status).toBe(403);
     const body = (await response.json()) as { code?: string };
     expect(body.code).toBe(ERROR_CODES.CLOSE_EVENTS_FIRST);
+  });
+
+  it("POST /api/users/me/roster-export-ack stamps rosterExportAckAt", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/users/me/roster-export-ack", "POST"),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as {
+      rosterExportAckAt: string | null;
+    };
+    expect(body.rosterExportAckAt).not.toBeNull();
   });
 });

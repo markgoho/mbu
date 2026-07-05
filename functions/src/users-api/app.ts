@@ -46,6 +46,11 @@ export function createApp(services?: PartialUsersApiServices) {
       await users.deleteAccount(caller);
       set.status = 204;
     })
+    .post(
+      "/users/me/roster-export-ack",
+      ({ caller }) => users.ackRosterExport(caller),
+      { response: UserResponseSchema },
+    )
     .get("/users/me/scouts", ({ caller }) => scouts.list(caller), {
       response: ScoutListResponseSchema,
     })

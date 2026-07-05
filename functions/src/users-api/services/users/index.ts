@@ -50,6 +50,7 @@ function toUserResponse(uid: string, doc: UserDocument): UserResponse {
     acceptedTermsAt: toIso(doc.acceptedTermsAt),
     acceptedPrivacyAt: toIso(doc.acceptedPrivacyAt),
     acceptedPolicyVersion: doc.acceptedPolicyVersion ?? null,
+    rosterExportAckAt: toIso(doc.rosterExportAckAt),
   };
 }
 
@@ -84,6 +85,7 @@ export class UsersServiceImpl implements UsersService {
         acceptedTermsAt: null,
         acceptedPrivacyAt: null,
         acceptedPolicyVersion: null,
+        rosterExportAckAt: null,
         createdAt: FieldValue.serverTimestamp(),
         updatedAt: FieldValue.serverTimestamp(),
       });
@@ -195,6 +197,28 @@ export class UsersServiceImpl implements UsersService {
     // re-bootstraps a blank doc), never orphaned PII.
     await this.db().collection(USERS_COLLECTION).doc(caller.uid).delete();
     await this.authAdmin.deleteUser(caller.uid);
+  }
+
+  async ackRosterExport(caller: Caller): Promise<UserResponse> {
+    const reference = this.db().collection(USERS_COLLECTION).doc(caller.uid);
+    const snapshot = await reference.get();
+    if (!snapshot.exists) {
+      throw new NotFoundError("User not found");
+    }
+    const existing = snapshot.data() as UserDocument;
+    if (existing.rosterExportAckAt === null) {
+      await reference.set(
+        {
+          rosterExportAckAt: FieldValue.serverTimestamp(),
+          updatedAt: FieldValue.serverTimestamp(),
+        },
+        { merge: true },
+      );
+    }
+    return toUserResponse(
+      caller.uid,
+      (await reference.get()).data() as UserDocument,
+    );
   }
 
   /**
