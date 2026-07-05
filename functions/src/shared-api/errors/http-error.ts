@@ -66,6 +66,7 @@ export const ERROR_CODES = {
   EVENT_NOT_OPEN: "event_not_open",
   REGISTRATION_NOT_OPEN: "registration_not_open",
   REGISTRATION_CLOSED: "registration_closed",
+  CONSENT_REQUIRED: "consent_required",
 } as const;
 
 export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];

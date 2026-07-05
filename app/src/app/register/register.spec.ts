@@ -1,6 +1,6 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { signal, type WritableSignal } from '@angular/core';
-import { render, screen, within } from '@testing-library/angular/zoneless';
+import { render, screen, waitFor, within } from '@testing-library/angular/zoneless';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { of } from 'rxjs';
 import { describe, expect, it } from 'vitest';
@@ -25,10 +25,26 @@ const sampleEvent: PublicUniversity = {
   endDate: null,
   registrationOpensAt: null,
   registrationClosesAt: '2026-05-25T23:59:59.000Z',
-  location: { name: 'Scout Hall', address: '1 Main St', city: 'Anytown', state: 'NY', zip: '12345' },
+  location: {
+    name: 'Scout Hall',
+    address: '1 Main St',
+    city: 'Anytown',
+    state: 'NY',
+    zip: '12345',
+  },
   periods: [
-    { periodId: 'p1', label: 'Period 1', startsAt: '2026-06-01T13:00:00.000Z', endsAt: '2026-06-01T14:00:00.000Z' },
-    { periodId: 'p2', label: 'Period 2', startsAt: '2026-06-01T14:00:00.000Z', endsAt: '2026-06-01T15:00:00.000Z' },
+    {
+      periodId: 'p1',
+      label: 'Period 1',
+      startsAt: '2026-06-01T13:00:00.000Z',
+      endsAt: '2026-06-01T14:00:00.000Z',
+    },
+    {
+      periodId: 'p2',
+      label: 'Period 2',
+      startsAt: '2026-06-01T14:00:00.000Z',
+      endsAt: '2026-06-01T15:00:00.000Z',
+    },
   ],
   classes: [
     // Camping is full — its default action is "Join waitlist".
@@ -192,7 +208,7 @@ describe('Register component', () => {
     expect(await screen.findByText(/Conflicts with Archery/)).toBeVisible();
   });
 
-  it('counts a waitlisted class toward the scout\'s scheduled periods', async () => {
+  it("counts a waitlisted class toward the scout's scheduled periods", async () => {
     await setup({ registrations: [registrationFor('archery', 'waitlisted')] });
 
     expect(await screen.findByText('1/2 periods scheduled')).toBeVisible();
@@ -201,7 +217,11 @@ describe('Register component', () => {
   it('marks the class as registered after the scout registers', async () => {
     await setup({ registerOutcome: 'enrolled' });
 
+    screen.getByRole('checkbox').click();
     const archeryCard = (await screen.findByText('Archery')).closest('li') as HTMLElement;
+    await waitFor(() =>
+      expect(within(archeryCard).getByRole('button', { name: 'Register' })).toBeEnabled(),
+    );
     within(archeryCard).getByRole('button', { name: 'Register' }).click();
 
     expect(await within(archeryCard).findByText('Registered')).toBeVisible();
@@ -211,13 +231,64 @@ describe('Register component', () => {
   it('offers the waitlist when a class turns out to be full, then shows the scout as waitlisted', async () => {
     await setup({ registerOutcome: 'full-then-waitlist' });
 
+    screen.getByRole('checkbox').click();
     const archeryCard = (await screen.findByText('Archery')).closest('li') as HTMLElement;
+    await waitFor(() =>
+      expect(within(archeryCard).getByRole('button', { name: 'Register' })).toBeEnabled(),
+    );
     within(archeryCard).getByRole('button', { name: 'Register' }).click();
 
     expect(await within(archeryCard).findByText(/This class is full/)).toBeVisible();
     within(archeryCard).getByRole('button', { name: 'Join waitlist' }).click();
 
     expect(await within(archeryCard).findByText('On waitlist')).toBeVisible();
+  });
+
+  it('gates Register on consent but keeps Drop available', async () => {
+    await setup({ registrations: [registrationFor('archery', 'enrolled')] });
+
+    const archeryCard = (await screen.findByText('Archery')).closest('li') as HTMLElement;
+    const hikingCard = (await screen.findByText('Hiking')).closest('li') as HTMLElement;
+    // Dropping withdraws data, so it never requires a fresh share-consent.
+    expect(within(archeryCard).getByRole('button', { name: 'Drop' })).toBeEnabled();
+    expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeDisabled();
+
+    screen.getByRole('checkbox').click();
+
+    await waitFor(() =>
+      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeEnabled(),
+    );
+  });
+
+  it('requires fresh consent after switching to another scout', async () => {
+    const bailey: ScoutResponse = {
+      ...alexSmith,
+      scoutId: 'scout2',
+      firstName: 'Bailey',
+      lastName: 'Jones',
+    };
+    await setup({ scouts: [alexSmith, bailey] });
+
+    // Consent for the first (default-selected) scout enables Register.
+    const hikingCard = (await screen.findByText('Hiking')).closest('li') as HTMLElement;
+    screen.getByRole('checkbox').click();
+    await waitFor(() =>
+      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeEnabled(),
+    );
+
+    // Switching scouts clears consent — the box unchecks and Register re-disables.
+    screen.getByRole('button', { name: 'Bailey Jones' }).click();
+
+    await waitFor(() => {
+      expect(screen.getByRole('checkbox')).not.toBeChecked();
+      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeDisabled();
+    });
+  });
+
+  it('shows a single consent checkbox for the whole event', async () => {
+    await setup();
+
+    expect(screen.getAllByRole('checkbox')).toHaveLength(1);
   });
 
   it('prompts the caller to add a scout when they have none', async () => {

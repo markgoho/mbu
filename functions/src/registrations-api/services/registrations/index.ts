@@ -23,6 +23,7 @@ import {
   USERS_COLLECTION,
   type UserDocument,
 } from "../../../collections/users.js";
+import { POLICY_VERSION } from "../../../constants/privacy.js";
 import {
   ConflictError,
   ERROR_CODES,
@@ -160,6 +161,13 @@ export class RegistrationsServiceImpl implements RegistrationsService {
         priorCreatedAt = existing.createdAt;
       }
 
+      if (request.acceptConsent !== true) {
+        throw new ForbiddenError(
+          "Parental consent required",
+          ERROR_CODES.CONSENT_REQUIRED,
+        );
+      }
+
       const conflictQuery = this.db()
         .collectionGroup(REGISTRATIONS_SUBCOLLECTION)
         .where("scoutId", "==", request.scoutId)
@@ -238,6 +246,7 @@ export class RegistrationsServiceImpl implements RegistrationsService {
         waitlistedAt,
         enrolledAt,
         parentConsentAt: now,
+        acceptedPolicyVersion: POLICY_VERSION,
         createdAt: priorCreatedAt ?? now,
         updatedAt: now,
       };

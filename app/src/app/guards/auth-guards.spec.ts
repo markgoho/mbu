@@ -182,6 +182,7 @@ function fakeUser() {
     phone: null,
     acceptedTermsAt: null,
     acceptedPrivacyAt: null,
+    acceptedPolicyVersion: null,
   };
 }
 

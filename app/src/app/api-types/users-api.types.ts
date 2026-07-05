@@ -8,6 +8,7 @@ export interface UserResponse {
   phone: string | null;
   acceptedTermsAt: string | null;
   acceptedPrivacyAt: string | null;
+  acceptedPolicyVersion: string | null;
 }
 
 /** Bootstrap result: the user doc plus whether onboarding/consent is still required. */

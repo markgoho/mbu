@@ -61,6 +61,17 @@
         }
       </section>
 
+      <section class="register__consent">
+        <label>
+          <input
+            type="checkbox"
+            [checked]="consentAccepted()"
+            (change)="consentAccepted.set($any($event.target).checked)"
+          />
+          {{ consentLabel() }}
+        </label>
+      </section>
+
       @if (actionError()) {
         <p class="register__error" role="alert">{{ actionError() }}</p>
       }
@@ -106,14 +117,18 @@
                     </button>
                   } @else if (waitlistPromptClassId() === cls.classId) {
                     <p>This class is full. Join the waitlist instead?</p>
-                    <button type="button" (click)="confirmWaitlist(cls, true)">
+                    <button
+                      type="button"
+                      [disabled]="!consentAccepted()"
+                      (click)="confirmWaitlist(cls, true)"
+                    >
                       Join waitlist
                     </button>
                     <button type="button" (click)="confirmWaitlist(cls, false)">Cancel</button>
                   } @else {
                     <button
                       type="button"
-                      [disabled]="pendingClassId() === cls.classId"
+                      [disabled]="pendingClassId() === cls.classId || !consentAccepted()"
                       (click)="onRegister(cls)"
                     >
                       {{ cls.seatsRemaining <= 0 ? 'Join waitlist' : 'Register' }}

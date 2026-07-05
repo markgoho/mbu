@@ -228,6 +228,9 @@ test.describe('parent registration flow', () => {
     const cookingCard = page.locator('.register__class-card', { hasText: 'Cooking' });
     await expect(cookingCard.getByRole('button', { name: 'Register' })).toBeVisible();
 
+    // Consent gates registration for the selected scout — accept before registering.
+    await page.getByRole('checkbox').check();
+
     // First attempt: UI thought seats were open, backend says the class just filled.
     await cookingCard.getByRole('button', { name: 'Register' }).click();
     await expect(

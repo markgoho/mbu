@@ -10,11 +10,7 @@ import {
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import type {
-  ApiErrorBody,
-  Period,
-  PublicClass,
-} from '../api-types/universities-api.types';
+import type { ApiErrorBody, Period, PublicClass } from '../api-types/universities-api.types';
 import type { RegistrationResponse } from '../api-types/registrations-api.types';
 import type { ScoutResponse } from '../api-types/users-api.types';
 import { Registrations } from '../services/registrations';
@@ -51,6 +47,7 @@ export class Register {
   protected readonly actionError = signal('');
   protected readonly pendingClassId = signal<string | undefined>(undefined);
   protected readonly waitlistPromptClassId = signal<string | undefined>(undefined);
+  protected readonly consentAccepted = signal(false);
 
   protected readonly scoutList = computed(() => this.scouts.mine.value()?.scouts ?? []);
 
@@ -61,9 +58,7 @@ export class Register {
     return list.filter((s) => `${s.firstName} ${s.lastName}`.toLowerCase().includes(filter));
   });
 
-  protected readonly registrationsList = computed(
-    () => this.schedule.value()?.registrations ?? [],
-  );
+  protected readonly registrationsList = computed(() => this.schedule.value()?.registrations ?? []);
 
   protected readonly selectedScoutRegistrations = computed(() => {
     const scoutId = this.selectedScoutId();
@@ -75,6 +70,13 @@ export class Register {
     const ev = this.event.value();
     if (!ev) return null;
     return scoutProgress(this.selectedScoutRegistrations(), ev.periods.length);
+  });
+
+  protected readonly consentLabel = computed(() => {
+    const scout = this.scoutList().find((s) => s.scoutId === this.selectedScoutId());
+    const scoutName = scout ? `${scout.firstName} ${scout.lastName}` : 'your scout';
+    const universityTitle = this.event.value()?.title ?? 'this event';
+    return `I consent to share ${scoutName}'s information with the organizers of ${universityTitle}.`;
   });
 
   constructor() {
@@ -96,13 +98,16 @@ export class Register {
   }
 
   protected selectScout(scoutId: string): void {
+    if (scoutId === this.selectedScoutId()) return;
     this.selectedScoutId.set(scoutId);
     this.actionError.set('');
+    // Consent is per scout per event: switching scouts requires a fresh act.
+    this.consentAccepted.set(false);
   }
 
   protected onScoutAdded(scout: ScoutResponse): void {
     this.showAddScout.set(false);
-    this.selectedScoutId.set(scout.scoutId);
+    this.selectScout(scout.scoutId);
   }
 
   protected periodClasses(period: Period): PublicClass[] {
@@ -129,12 +134,14 @@ export class Register {
     scoutId: string,
     acceptWaitlist: boolean,
   ): Promise<void> {
+    if (!this.consentAccepted()) return;
     this.actionError.set('');
     this.pendingClassId.set(cls.classId);
     try {
       await this.registrations.register(this.universityId(), cls.classId, {
         scoutId,
         acceptWaitlist,
+        acceptConsent: true,
       });
       this.universities.reloadPublicEvent();
     } catch (error) {

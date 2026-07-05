@@ -1,5 +1,5 @@
-import type { DecodedIdToken } from "firebase-admin/auth";
 import { describe, expect, it } from "bun:test";
+import type { DecodedIdToken } from "firebase-admin/auth";
 import type { TokenVerifier } from "../shared-api/plugins/require-auth.js";
 import { handleRequest } from "../test-utils/handle-request.js";
 import { createApp } from "./app.js";
@@ -21,7 +21,7 @@ const unverified: TokenVerifier = () =>
   } as DecodedIdToken);
 
 const usersService: UsersService = {
-  bootstrap: (caller) =>
+  bootstrap: caller =>
     Promise.resolve({
       user: {
         uid: caller.uid,
@@ -30,10 +30,11 @@ const usersService: UsersService = {
         phone: null,
         acceptedTermsAt: null,
         acceptedPrivacyAt: null,
+        acceptedPolicyVersion: null,
       },
       needsConsent: true,
     }),
-  getMe: (caller) =>
+  getMe: caller =>
     Promise.resolve({
       uid: caller.uid,
       displayName: "Pat",
@@ -41,6 +42,7 @@ const usersService: UsersService = {
       phone: null,
       acceptedTermsAt: null,
       acceptedPrivacyAt: null,
+      acceptedPolicyVersion: null,
     }),
   onboard: (caller, request) =>
     Promise.resolve({
@@ -50,6 +52,7 @@ const usersService: UsersService = {
       phone: null,
       acceptedTermsAt: "2026-07-03T00:00:00.000Z",
       acceptedPrivacyAt: "2026-07-03T00:00:00.000Z",
+      acceptedPolicyVersion: "2026-07-04",
     }),
 };
 
@@ -101,7 +104,11 @@ describe("users-api auth gate", () => {
   });
 
   it("rejects an unverified email with 403 EMAIL_NOT_VERIFIED", async () => {
-    const app = createApp({ usersService, scoutsService, verifyToken: unverified });
+    const app = createApp({
+      usersService,
+      scoutsService,
+      verifyToken: unverified,
+    });
     const response = await handleRequest(app, authed("/api/users/me", "POST"));
     expect(response.status).toBe(403);
     const body = (await response.json()) as { code?: string };
@@ -114,7 +121,10 @@ describe("users-api routes", () => {
     createApp({ usersService, scoutsService, verifyToken: verified });
 
   it("POST /api/users/me bootstraps and reports needsConsent", async () => {
-    const response = await handleRequest(app(), authed("/api/users/me", "POST"));
+    const response = await handleRequest(
+      app(),
+      authed("/api/users/me", "POST"),
+    );
     expect(response.status).toBe(200);
     const body = (await response.json()) as {
       needsConsent: boolean;

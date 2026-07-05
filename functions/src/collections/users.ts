@@ -22,6 +22,8 @@ export interface UserDocument {
   counselorProfile: CounselorProfile | null;
   acceptedTermsAt: Timestamp | null;
   acceptedPrivacyAt: Timestamp | null;
+  /** POLICY_VERSION in effect when onboarding consent was accepted. */
+  acceptedPolicyVersion: string | null;
   createdAt: Timestamp;
   updatedAt: Timestamp;
 }

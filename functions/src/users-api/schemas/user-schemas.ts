@@ -8,6 +8,7 @@ export const UserResponseSchema = t.Object({
   phone: t.Union([t.String(), t.Null()]),
   acceptedTermsAt: t.Union([t.String(), t.Null()]),
   acceptedPrivacyAt: t.Union([t.String(), t.Null()]),
+  acceptedPolicyVersion: t.Union([t.String(), t.Null()]),
 });
 export type UserResponse = Static<typeof UserResponseSchema>;
 
