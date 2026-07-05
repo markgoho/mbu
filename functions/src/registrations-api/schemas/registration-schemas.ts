@@ -3,6 +3,7 @@ import { t, type Static } from "elysia";
 export const RegisterRequestSchema = t.Object({
   scoutId: t.String({ minLength: 1 }),
   acceptWaitlist: t.Optional(t.Boolean()),
+  acceptConsent: t.Boolean(),
 });
 export type RegisterRequest = Static<typeof RegisterRequestSchema>;
 

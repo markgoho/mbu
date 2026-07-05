@@ -1,6 +1,7 @@
 export interface RegisterRequest {
   scoutId: string;
   acceptWaitlist?: boolean;
+  acceptConsent: boolean;
 }
 
 export type RegistrationStatus = 'enrolled' | 'waitlisted';

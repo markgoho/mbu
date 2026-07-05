@@ -47,6 +47,8 @@ export interface RegistrationDocument {
   waitlistedAt: Timestamp | null;
   enrolledAt: Timestamp | null;
   parentConsentAt: Timestamp | null;
+  /** POLICY_VERSION in effect when parentConsentAt was stamped. */
+  acceptedPolicyVersion: string | null;
   createdAt: Timestamp;
   updatedAt: Timestamp;
 }

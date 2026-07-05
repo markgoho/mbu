@@ -1,22 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import {
-  FormBuilder,
-  ReactiveFormsModule,
-  Validators,
-  type FormGroup,
-} from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormBuilder, ReactiveFormsModule, Validators, type FormGroup } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
-import type {
-  OnboardingRequest,
-  UserResponse,
-} from '../api-types/users-api.types';
+import type { OnboardingRequest, UserResponse } from '../api-types/users-api.types';
 import { Auth } from '../services/auth';
 
 @Component({
   selector: 'app-onboarding',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './onboarding.html',
   styleUrl: './onboarding.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -31,10 +23,7 @@ export class Onboarding {
   protected readonly errorMessage = signal('');
 
   protected readonly form: FormGroup = this.fb.group({
-    displayName: [
-      this.auth.currentUser?.displayName ?? '',
-      [Validators.required],
-    ],
+    displayName: [this.auth.currentUser?.displayName ?? '', [Validators.required]],
     acceptedTerms: [false, [Validators.requiredTrue]],
   });
 
@@ -50,9 +39,7 @@ export class Onboarding {
     const body: OnboardingRequest = { displayName, acceptedTerms: true };
 
     try {
-      await firstValueFrom(
-        this.httpClient.patch<UserResponse>('/api/users/me', body),
-      );
+      await firstValueFrom(this.httpClient.patch<UserResponse>('/api/users/me', body));
       await this.router.navigate(['/']);
     } catch {
       this.errorMessage.set('Could not save your details. Please try again.');

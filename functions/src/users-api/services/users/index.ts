@@ -1,6 +1,15 @@
-import { FieldValue, getFirestore, Timestamp } from "firebase-admin/firestore";
+import {
+  FieldValue,
+  getFirestore,
+  Timestamp,
+  type Firestore,
+} from "firebase-admin/firestore";
 import { ROLE_GRANTS_COLLECTION } from "../../../collections/role-grants.js";
-import { USERS_COLLECTION, type UserDocument } from "../../../collections/users.js";
+import {
+  USERS_COLLECTION,
+  type UserDocument,
+} from "../../../collections/users.js";
+import { POLICY_VERSION } from "../../../constants/privacy.js";
 import { NotFoundError } from "../../../shared-api/errors/http-error.js";
 import type { Caller } from "../../../shared-api/types/caller.js";
 import type {
@@ -22,13 +31,19 @@ function toUserResponse(uid: string, doc: UserDocument): UserResponse {
     phone: doc.phone,
     acceptedTermsAt: toIso(doc.acceptedTermsAt),
     acceptedPrivacyAt: toIso(doc.acceptedPrivacyAt),
+    acceptedPolicyVersion: doc.acceptedPolicyVersion,
   };
 }
 
 export class UsersServiceImpl implements UsersService {
+  constructor(private readonly database?: Firestore) {}
+
+  private db(): Firestore {
+    return this.database ?? getFirestore();
+  }
+
   async bootstrap(caller: Caller): Promise<BootstrapResponse> {
-    const database = getFirestore();
-    const reference = database.collection(USERS_COLLECTION).doc(caller.uid);
+    const reference = this.db().collection(USERS_COLLECTION).doc(caller.uid);
     const existing = await reference.get();
 
     if (existing.exists) {
@@ -46,6 +61,7 @@ export class UsersServiceImpl implements UsersService {
         counselorProfile: null,
         acceptedTermsAt: null,
         acceptedPrivacyAt: null,
+        acceptedPolicyVersion: null,
         createdAt: FieldValue.serverTimestamp(),
         updatedAt: FieldValue.serverTimestamp(),
       });
@@ -62,7 +78,7 @@ export class UsersServiceImpl implements UsersService {
   }
 
   async getMe(caller: Caller): Promise<UserResponse> {
-    const snapshot = await getFirestore()
+    const snapshot = await this.db()
       .collection(USERS_COLLECTION)
       .doc(caller.uid)
       .get();
@@ -76,9 +92,7 @@ export class UsersServiceImpl implements UsersService {
     caller: Caller,
     request: OnboardingRequest,
   ): Promise<UserResponse> {
-    const reference = getFirestore()
-      .collection(USERS_COLLECTION)
-      .doc(caller.uid);
+    const reference = this.db().collection(USERS_COLLECTION).doc(caller.uid);
     if (!(await reference.get()).exists) {
       throw new NotFoundError("User not found; bootstrap the session first");
     }
@@ -87,6 +101,7 @@ export class UsersServiceImpl implements UsersService {
         displayName: request.displayName,
         acceptedTermsAt: FieldValue.serverTimestamp(),
         acceptedPrivacyAt: FieldValue.serverTimestamp(),
+        acceptedPolicyVersion: POLICY_VERSION,
         updatedAt: FieldValue.serverTimestamp(),
       },
       { merge: true },
@@ -103,7 +118,7 @@ export class UsersServiceImpl implements UsersService {
    * match the stored invitedEmail.
    */
   private async claimPendingInvites(caller: Caller): Promise<void> {
-    const database = getFirestore();
+    const database = this.db();
     const pending = await database
       .collection(ROLE_GRANTS_COLLECTION)
       .where("invitedEmail", "==", caller.email)

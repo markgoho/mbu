@@ -23,6 +23,14 @@ export const routes: Routes = [
     loadComponent: () => import('./sign-in/sign-in').then((m) => m.SignIn),
   },
   {
+    path: 'privacy',
+    loadComponent: () => import('./privacy/privacy').then((m) => m.Privacy),
+  },
+  {
+    path: 'terms',
+    loadComponent: () => import('./terms/terms').then((m) => m.Terms),
+  },
+  {
     path: 'verify-email',
     canActivate: [requireAuth],
     loadComponent: () => import('./verify-email/verify-email').then((m) => m.VerifyEmail),

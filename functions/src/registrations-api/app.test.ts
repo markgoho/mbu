@@ -181,6 +181,7 @@ describe("POST /api/registrations/:universityId/:classId", () => {
     const { request } = setup();
     const response = await request("/api/registrations/uni1/cls1", "POST", {
       scoutId: "scout1",
+      acceptConsent: true,
     });
     expect(response.status).toBe(200);
     const body = (await response.json()) as RegistrationResponse;
@@ -194,11 +195,41 @@ describe("POST /api/registrations/:universityId/:classId", () => {
     const response = await request("/api/registrations/uni1/cls1", "POST", {
       scoutId: "scout1",
       acceptWaitlist: true,
+      acceptConsent: true,
     });
     expect(response.status).toBe(200);
     const body = (await response.json()) as RegistrationResponse;
     expect(body.status).toBe("waitlisted");
     expect(body.waitlistedAt).not.toBeNull();
+  });
+
+  it("maps missing parental consent to 403 consent_required", async () => {
+    const { request } = setup({
+      service: {
+        register: () =>
+          Promise.reject(
+            new ForbiddenError(
+              "Parental consent required",
+              ERROR_CODES.CONSENT_REQUIRED,
+            ),
+          ),
+      },
+    });
+    const response = await request("/api/registrations/uni1/cls1", "POST", {
+      scoutId: "scout1",
+      acceptConsent: false,
+    });
+    expect(response.status).toBe(403);
+    const body = (await response.json()) as { code?: string };
+    expect(body.code).toBe(ERROR_CODES.CONSENT_REQUIRED);
+  });
+
+  it("rejects a body missing acceptConsent with 400", async () => {
+    const { request } = setup();
+    const response = await request("/api/registrations/uni1/cls1", "POST", {
+      scoutId: "scout1",
+    });
+    expect(response.status).toBe(400);
   });
 
   it("maps a full class to 409 class_full", async () => {
@@ -216,6 +247,7 @@ describe("POST /api/registrations/:universityId/:classId", () => {
     });
     const response = await request("/api/registrations/uni1/cls1", "POST", {
       scoutId: "scout1",
+      acceptConsent: true,
     });
     expect(response.status).toBe(409);
     const body = (await response.json()) as { code?: string };
@@ -237,6 +269,7 @@ describe("POST /api/registrations/:universityId/:classId", () => {
     });
     const response = await request("/api/registrations/uni1/cls1", "POST", {
       scoutId: "scout1",
+      acceptConsent: true,
     });
     expect(response.status).toBe(409);
     const body = (await response.json()) as {
@@ -261,6 +294,7 @@ describe("POST /api/registrations/:universityId/:classId", () => {
     });
     const response = await request("/api/registrations/uni1/cls1", "POST", {
       scoutId: "scout1",
+      acceptConsent: true,
     });
     expect(response.status).toBe(403);
     const body = (await response.json()) as { code?: string };
@@ -287,7 +321,8 @@ describe("DELETE /api/registrations/:universityId/:classId/:scoutId", () => {
   it("maps a missing registration to 404", async () => {
     const { request } = setup({
       service: {
-        cancel: () => Promise.reject(new NotFoundError("Registration not found")),
+        cancel: () =>
+          Promise.reject(new NotFoundError("Registration not found")),
       },
     });
     const response = await request(
@@ -355,7 +390,8 @@ describe("GET /api/registrations/:universityId/roster", () => {
   it("maps a missing university to 404", async () => {
     const { request } = setup({
       service: {
-        listRoster: () => Promise.reject(new NotFoundError("University not found")),
+        listRoster: () =>
+          Promise.reject(new NotFoundError("University not found")),
       },
     });
     const response = await request("/api/registrations/uni1/roster", "GET");
