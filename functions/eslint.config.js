@@ -44,6 +44,39 @@ const noFirebaseAdminMock = {
     "Never mock firebase-admin internals. Mock the service interface at the plugin boundary (create*TestPlugin), not the transport it uses.",
 };
 
+// Tests are per-route boundary tests living in a routes/ directory. A test file
+// anywhere else (a whole-app app.test.ts, a standalone service-layer test) is a
+// convention violation regardless of its contents, so flag the whole file.
+const testFileOutsideRoutes = {
+  selector: "Program",
+  message:
+    "Tests must be per-route boundary tests inside a routes/ directory — no whole-app app.test.ts, no service-layer tests. Drive the plugin via handle() with mocked services. See docs/adr/0001-api-module-architecture.md.",
+};
+
+// Content rules that apply to every test file wherever it lives.
+const testContentRules = [
+  noServiceClasses,
+  noMockCallAssertions,
+  noTestHooks,
+  noFirebaseAdminMock,
+];
+
+// Emulators/test harnesses have no place in these unit tests — mock at the
+// boundary. (Firestore *rules* tests, if ever added, live under firestore/ with
+// their own emulator script, not in functions/src.)
+const noEmulatorImports = [
+  {
+    name: "firebase-functions-test",
+    message:
+      "No Functions emulator/harness in unit tests — drive the plugin via handle() with mocked services (create*TestPlugin).",
+  },
+  {
+    name: "@firebase/rules-unit-testing",
+    message:
+      "No emulator in unit tests — mock services at the boundary. Firestore rules tests belong under firestore/, not functions/src.",
+  },
+];
+
 export default defineConfig([
   {
     ignores: ["lib/**"],
@@ -71,17 +104,24 @@ export default defineConfig([
     },
   },
   {
-    // Boundary tests only: drive the plugin through handle(), mock services at
-    // the seam, assert on the response. (Enforced test location: routes/ — see
-    // `npm run check:arch`.)
+    // Every test file: content rules + no emulator imports.
     files: ["**/*.test.ts"],
+    rules: {
+      "no-restricted-syntax": ["error", ...testContentRules],
+      "no-restricted-imports": ["error", { paths: noEmulatorImports }],
+    },
+  },
+  {
+    // Test files NOT under a routes/ directory are misplaced by definition —
+    // flag the file location on top of the content rules. (Ordered after the
+    // block above so this rule set wins for these files.)
+    files: ["**/*.test.ts"],
+    ignores: ["**/routes/**"],
     rules: {
       "no-restricted-syntax": [
         "error",
-        noServiceClasses,
-        noMockCallAssertions,
-        noTestHooks,
-        noFirebaseAdminMock,
+        testFileOutsideRoutes,
+        ...testContentRules,
       ],
     },
   },

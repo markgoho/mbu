@@ -211,10 +211,11 @@ function per route, plain-object services, and per-route boundary tests — with
 The conventions are enforced, so non-conforming code fails CI:
 
 - `cd functions && npm run lint` — ESLint bans service classes, mock-call
-  assertions, test lifecycle hooks, and mocking `firebase-admin` internals.
-- `cd functions && npm run check:arch` — tests must live in `routes/`, and every
-  deployed `*-api` module must have `routes/` + `plugins/` + `app.ts` +
-  `handler.ts`.
+  assertions, test lifecycle hooks, mocking `firebase-admin` internals, and
+  emulator imports, and flags any test file outside a `routes/` directory.
+- `cd functions && npm run check:arch` — every deployed `*-api` module must have
+  `routes/` + `plugins/` + `app.ts` + `handler.ts` (the file-existence invariant
+  ESLint can't express).
 
 Angular spec conventions are enforced the same way via `app/eslint.config.js`.
 

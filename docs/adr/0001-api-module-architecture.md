@@ -54,12 +54,14 @@ reference:
 
 ## Enforcement (docs describe; lint/CI enforce)
 
-- **ESLint** (`functions/eslint.config.js`): bans service classes
-  (`class … implements`), mock-call assertions, lifecycle hooks (SIFERS), and
-  mocking `firebase-admin` internals. Runs in the `lint` CI job.
+- **ESLint** (`functions/eslint.config.js`) — everything about files that
+  exist: bans service classes (`class … implements`), mock-call assertions,
+  lifecycle hooks (SIFERS), mocking `firebase-admin` internals, and emulator
+  imports; and flags any test file outside a `routes/` directory (catches
+  whole-app `app.test.ts` and service-layer tests). Runs in the `lint` CI job.
 - **Structural check** (`functions/scripts/check-architecture.sh`, via
-  `npm run check:arch`, `arch` CI job): tests must live in `routes/`, no
-  `app.test.ts`, every deployed `*-api` module has `routes/` + `plugins/` +
-  `app.ts` + `handler.ts`.
+  `npm run check:arch`, `arch` CI job) — the one thing a per-file linter can't
+  express: required paths must **exist**. Every deployed `*-api` module has
+  `routes/` + `plugins/` + `app.ts` + `handler.ts`.
 - **Scaffold new modules by copying `health-api`** — the smallest conformant
   module — so the correct pattern is the path of least resistance.
