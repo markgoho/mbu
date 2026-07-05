@@ -1,0 +1,25 @@
+name: Retention purge cron
+
+on:
+  schedule:
+    # Daily — the purge itself is idempotent and only acts on universities
+    # whose event ended 90+ days ago, so running more often than needed is
+    # harmless. Off-peak, off-the-hour to avoid GitHub Actions' cron pile-up.
+    - cron: "23 9 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the retention purge endpoint
+        run: |
+          status=$(curl -sS -o /tmp/response.json -w "%{http_code}" \
+            -X POST "https://mbu-platform.web.app/api/retention/purge" \
+            -H "Authorization: Bearer ${{ secrets.RETENTION_PURGE_SECRET }}")
+          echo "HTTP status: $status"
+          cat /tmp/response.json
+          if [ "$status" -ge 300 ]; then
+            echo "Retention purge request failed"
+            exit 1
+          fi

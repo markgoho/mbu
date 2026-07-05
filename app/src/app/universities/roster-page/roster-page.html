@@ -38,11 +38,15 @@
         </header>
 
         @if (classRoster.class.counselorNames.length > 0) {
-          <p class="roster-page__counselors">Counselors: {{ classRoster.class.counselorNames.join(', ') }}</p>
+          <p class="roster-page__counselors">
+            Counselors: {{ classRoster.class.counselorNames.join(', ') }}
+          </p>
         }
 
         <table class="roster-page__table">
-          <caption>Enrolled</caption>
+          <caption>
+            Enrolled
+          </caption>
           <thead>
             <tr>
               <th scope="col">Present</th>
@@ -58,11 +62,17 @@
             @for (row of classRoster.enrolled; track row.scoutId) {
               <tr>
                 <td></td>
-                <td>{{ row.scoutLastName }}</td>
-                <td>{{ row.scoutFirstName }}</td>
+                <td>{{ row.scoutLastName ?? '(purged)' }}</td>
+                <td>{{ row.scoutFirstName ?? '(purged)' }}</td>
                 <td>{{ row.scoutUnit ?? '—' }}</td>
                 <td>{{ row.accommodations ?? '—' }}</td>
-                <td>{{ row.parentName }} ({{ row.parentEmail }})</td>
+                <td>
+                  @if (row.parentName || row.parentEmail) {
+                    {{ row.parentName }} ({{ row.parentEmail }})
+                  } @else {
+                    (purged)
+                  }
+                </td>
                 <td>{{ row.consentReceived ? 'Yes' : 'No' }}</td>
               </tr>
             } @empty {
@@ -75,7 +85,9 @@
 
         @if (classRoster.waitlisted.length > 0) {
           <table class="roster-page__table">
-            <caption>Waitlisted</caption>
+            <caption>
+              Waitlisted
+            </caption>
             <thead>
               <tr>
                 <th scope="col">Position</th>
@@ -91,11 +103,17 @@
               @for (row of classRoster.waitlisted; track row.scoutId; let i = $index) {
                 <tr>
                   <td>{{ i + 1 }}</td>
-                  <td>{{ row.scoutLastName }}</td>
-                  <td>{{ row.scoutFirstName }}</td>
+                  <td>{{ row.scoutLastName ?? '(purged)' }}</td>
+                  <td>{{ row.scoutFirstName ?? '(purged)' }}</td>
                   <td>{{ row.scoutUnit ?? '—' }}</td>
                   <td>{{ row.accommodations ?? '—' }}</td>
-                  <td>{{ row.parentName }} ({{ row.parentEmail }})</td>
+                  <td>
+                    @if (row.parentName || row.parentEmail) {
+                      {{ row.parentName }} ({{ row.parentEmail }})
+                    } @else {
+                      (purged)
+                    }
+                  </td>
                   <td>{{ row.consentReceived ? 'Yes' : 'No' }}</td>
                 </tr>
               }

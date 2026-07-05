@@ -18,14 +18,14 @@ function csvRow(fields: string[]): string {
 function rosterRowFields(row: RosterRow, waitlistPosition: string): string[] {
   return [
     '', // Present
-    row.scoutLastName,
-    row.scoutFirstName,
+    row.scoutLastName ?? '',
+    row.scoutFirstName ?? '',
     row.scoutUnit ?? '',
     row.status,
     waitlistPosition,
     row.accommodations ?? '',
-    row.parentName,
-    row.parentEmail,
+    row.parentName ?? '',
+    row.parentEmail ?? '',
     row.consentReceived ? 'Yes' : 'No',
   ];
 }

@@ -7,6 +7,7 @@ if (getApps().length === 0) {
 }
 
 const MAILGUN_API_KEY = defineSecret("MAILGUN_API_KEY");
+const RETENTION_PURGE_SECRET = defineSecret("RETENTION_PURGE_SECRET");
 
 export const healthApi = onRequest(
   {
@@ -52,5 +53,20 @@ export const registrationsApi = onRequest(
     const { handleRegistrationsApi } =
       await import("./registrations-api/handler.js");
     await handleRegistrationsApi(request, response);
+  },
+);
+
+// Invoker is "public" (network-reachable by anyone) like the other APIs, but
+// the only real caller is the daily GitHub Actions cron job — app-level auth
+// is the shared secret checked by requireCronSecret, not a Firebase ID token.
+export const retentionApi = onRequest(
+  {
+    invoker: "public",
+    region: "us-east4",
+    secrets: [RETENTION_PURGE_SECRET],
+  },
+  async (request, response) => {
+    const { handleRetentionApi } = await import("./retention-api/handler.js");
+    await handleRetentionApi(request, response);
   },
 );

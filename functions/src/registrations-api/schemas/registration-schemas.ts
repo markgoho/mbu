@@ -27,12 +27,13 @@ export type ScheduleResponse = Static<typeof ScheduleResponseSchema>;
 
 export const RosterRowSchema = t.Object({
   scoutId: t.String(),
-  scoutFirstName: t.String(),
-  scoutLastName: t.String(),
+  // Nulled once the retention purge scrubs this registration's PII snapshot.
+  scoutFirstName: t.Union([t.String(), t.Null()]),
+  scoutLastName: t.Union([t.String(), t.Null()]),
   scoutUnit: t.Union([t.String(), t.Null()]),
   accommodations: t.Union([t.String(), t.Null()]),
-  parentName: t.String(),
-  parentEmail: t.String(),
+  parentName: t.Union([t.String(), t.Null()]),
+  parentEmail: t.Union([t.String(), t.Null()]),
   consentReceived: t.Boolean(),
   status: t.Union([t.Literal("enrolled"), t.Literal("waitlisted")]),
 });

@@ -118,6 +118,11 @@
           "region": "us-east4"
         },
         {
+          "source": "/api/retention{,/**}",
+          "function": "retentionApi",
+          "region": "us-east4"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
