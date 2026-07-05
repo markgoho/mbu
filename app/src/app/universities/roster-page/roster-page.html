@@ -11,8 +11,8 @@
     <header class="roster-page__header">
       <h1>{{ data.university.title }} — Rosters</h1>
       <div class="roster-page__actions">
-        <button type="button" (click)="print()">Print</button>
-        <button type="button" (click)="exportEventCsv()">Export event CSV</button>
+        <button type="button" (click)="onPrint()">Print</button>
+        <button type="button" (click)="onExportEventCsv()">Export event CSV</button>
       </div>
     </header>
 
@@ -34,7 +34,7 @@
               · {{ classRoster.class.waitlistCount }} waitlisted
             }
           </span>
-          <button type="button" (click)="exportClassCsv(classRoster)">Export CSV</button>
+          <button type="button" (click)="onExportClassCsv(classRoster)">Export CSV</button>
         </header>
 
         @if (classRoster.class.counselorNames.length > 0) {
@@ -122,5 +122,15 @@
         }
       </section>
     }
+  }
+
+  @if (showExportWarning()) {
+    <app-confirm-modal
+      title="Export contains youth information"
+      message="You are responsible for safeguarding and deleting this data per Youth Protection guidelines once you're done with it."
+      confirmLabel="I understand, continue"
+      (confirmed)="confirmExportWarning()"
+      (cancelled)="cancelExportWarning()"
+    />
   }
 </main>

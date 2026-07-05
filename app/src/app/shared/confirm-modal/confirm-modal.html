@@ -1,0 +1,16 @@
+<div
+  class="confirm-modal__dialog"
+  role="alertdialog"
+  aria-modal="true"
+  [attr.aria-label]="title() || message()"
+  (click)="$event.stopPropagation()"
+>
+  @if (title()) {
+    <h2>{{ title() }}</h2>
+  }
+  <p>{{ message() }}</p>
+  <div class="confirm-modal__actions">
+    <button type="button" (click)="cancelled.emit()">{{ cancelLabel() }}</button>
+    <button type="button" (click)="confirmed.emit()">{{ confirmLabel() }}</button>
+  </div>
+</div>

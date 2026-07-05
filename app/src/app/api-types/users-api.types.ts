@@ -9,6 +9,7 @@ export interface UserResponse {
   acceptedTermsAt: string | null;
   acceptedPrivacyAt: string | null;
   acceptedPolicyVersion: string | null;
+  rosterExportAckAt: string | null;
 }
 
 /** Bootstrap result: the user doc plus whether onboarding/consent is still required. */

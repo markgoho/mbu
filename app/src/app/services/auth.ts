@@ -14,7 +14,7 @@ import {
   type UserCredential,
 } from 'firebase/auth';
 import { firstValueFrom } from 'rxjs';
-import type { BootstrapResponse } from '../api-types/users-api.types';
+import type { BootstrapResponse, UserResponse } from '../api-types/users-api.types';
 import { auth } from '../lib/firebase';
 
 // Shared auth error messages, translated from Firebase error codes.
@@ -180,6 +180,18 @@ export class Auth {
   async deleteAccount(): Promise<void> {
     await firstValueFrom(this.httpClient.delete('/api/users/me'));
     await this.signOut();
+  }
+
+  /**
+   * Stamps the one-time roster-export acknowledgment and updates the cached
+   * session user in place, so `sessionUser()` reflects it immediately without
+   * a re-bootstrap.
+   */
+  async ackRosterExport(): Promise<void> {
+    const user = await firstValueFrom(
+      this.httpClient.post<UserResponse>('/api/users/me/roster-export-ack', {}),
+    );
+    this.session.value.update((current) => (current ? { ...current, user } : current));
   }
 
   async signOut(): Promise<void> {

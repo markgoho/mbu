@@ -183,6 +183,7 @@ function fakeUser() {
     acceptedTermsAt: null,
     acceptedPrivacyAt: null,
     acceptedPolicyVersion: null,
+    rosterExportAckAt: null,
   };
 }
 

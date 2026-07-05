@@ -17,6 +17,7 @@ export interface UsersService {
   /** Record displayName + Terms/Privacy consent timestamps. */
   onboard(caller: Caller, request: OnboardingRequest): Promise<UserResponse>;
   /**
+  /**
    * Right-to-erasure: deletes every owned scout (cascading their active
    * registrations), revokes active counselor grants, deletes the user doc,
    * and deletes the Firebase Auth user. Blocked while the caller holds an
@@ -24,4 +25,9 @@ export interface UsersService {
    * close or draft it first.
    */
   deleteAccount(caller: Caller): Promise<void>;
+  /**
+   * Stamps rosterExportAckAt the first time a chancellor/counselor clicks
+   * through the roster-export warning. Idempotent — first-write-wins.
+   */
+  ackRosterExport(caller: Caller): Promise<UserResponse>;
 }
