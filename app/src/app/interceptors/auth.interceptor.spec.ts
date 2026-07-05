@@ -1,10 +1,17 @@
-import { HttpClient, provideHttpClient, withInterceptors } from '@angular/common/http';
 import {
-  HttpTestingController,
-  provideHttpClientTesting,
-} from '@angular/common/http/testing';
-import { TestBed } from '@angular/core/testing';
-import { Router, provideRouter } from '@angular/router';
+  HttpBackend,
+  HttpClient,
+  HttpErrorResponse,
+  type HttpEvent,
+  type HttpRequest,
+  HttpResponse,
+  provideHttpClient,
+  withInterceptors,
+} from '@angular/common/http';
+import { Component, InjectionToken, inject, signal } from '@angular/core';
+import { RouterOutlet, provideRouter } from '@angular/router';
+import { render, screen, waitFor } from '@testing-library/angular/zoneless';
+import { Observable } from 'rxjs';
 import { describe, expect, it, vi } from 'vitest';
 import { authInterceptor } from './auth.interceptor';
 
@@ -32,120 +39,166 @@ vi.mock('firebase/firestore', () => ({
   connectFirestoreEmulator: vi.fn(),
 }));
 
-const flushMicrotasks = () => new Promise((resolve) => setTimeout(resolve, 0));
+/** The route the interceptor redirects to on a 401. */
+@Component({ template: '<p>Sign-in page</p>' })
+class SignInStub {}
+
+/** The URL the host component requests — configured per test. */
+const REQUEST_URL = new InjectionToken<string>('REQUEST_URL');
+
+/**
+ * A tiny consumer of `HttpClient`. Clicking "Fetch" fires the request the
+ * interceptor wraps; the result the caller observes is reflected in the DOM.
+ */
+@Component({
+  imports: [RouterOutlet],
+  template: `
+    <button (click)="fetch()">Fetch</button>
+    <p>Result: {{ result() }}</p>
+    <router-outlet />
+  `,
+})
+class HostComponent {
+  private readonly http = inject(HttpClient);
+  private readonly url = inject(REQUEST_URL);
+  readonly result = signal('idle');
+
+  fetch(): void {
+    this.http.get(this.url).subscribe({
+      next: () => this.result.set('ok'),
+      error: () => this.result.set('error'),
+    });
+  }
+}
+
+/**
+ * Stands in for the real transport backend (the seam the interceptor chain
+ * terminates at). Records the outgoing requests it receives so tests can assert
+ * on what the interceptor produced, and emits a configurable response.
+ */
+class FakeBackend implements HttpBackend {
+  readonly requests: HttpRequest<unknown>[] = [];
+
+  constructor(private readonly status: number) {}
+
+  handle(request: HttpRequest<unknown>): Observable<HttpEvent<unknown>> {
+    this.requests.push(request);
+    return new Observable<HttpEvent<unknown>>((subscriber) => {
+      if (this.status >= 400) {
+        subscriber.error(
+          new HttpErrorResponse({
+            status: this.status,
+            statusText: 'Error',
+            url: request.url,
+          }),
+        );
+      } else {
+        subscriber.next(new HttpResponse({ status: this.status, body: {} }));
+        subscriber.complete();
+      }
+    });
+  }
+}
 
 describe('authInterceptor', () => {
+  interface SetupOptions {
+    currentUser?: MockUser | null;
+    url?: string;
+    responseStatus?: number;
+  }
+
+  async function setup({
+    currentUser,
+    url = '/api/users/me',
+    responseStatus = 200,
+  }: SetupOptions = {}) {
+    vi.spyOn(console, 'error').mockReturnValue(undefined);
+
+    mockAuth.currentUser = currentUser;
+    mockSignOut.mockReset();
+    mockSignOut.mockImplementation(() => Promise.resolve());
+
+    const backend = new FakeBackend(responseStatus);
+
+    await render(HostComponent, {
+      providers: [
+        provideHttpClient(withInterceptors([authInterceptor])),
+        { provide: HttpBackend, useValue: backend },
+        { provide: REQUEST_URL, useValue: url },
+        provideRouter([{ path: 'sign-in', component: SignInStub }]),
+      ],
+    });
+
+    return { backend };
+  }
+
   it('attaches a Bearer token to authenticated /api requests', async () => {
-    const { httpClient, httpTesting } = setup({
+    const { backend } = await setup({
       currentUser: { uid: 'u1', getIdToken: () => Promise.resolve('test-token') },
     });
 
-    httpClient.get('/api/users/me').subscribe();
-    await flushMicrotasks();
+    screen.getByRole('button', { name: 'Fetch' }).click();
 
-    const request = httpTesting.expectOne('/api/users/me');
-    expect(request.request.headers.get('Authorization')).toBe('Bearer test-token');
-    request.flush({});
+    await waitFor(() =>
+      expect(backend.requests[0]?.headers.get('Authorization')).toBe('Bearer test-token'),
+    );
   });
 
   it('leaves the request unmodified when no user is authenticated', async () => {
-    const { httpClient, httpTesting } = setup();
+    const { backend } = await setup();
 
-    httpClient.get('/api/users/me').subscribe();
-    await flushMicrotasks();
+    screen.getByRole('button', { name: 'Fetch' }).click();
 
-    const request = httpTesting.expectOne('/api/users/me');
-    expect(request.request.headers.has('Authorization')).toBe(false);
-    request.flush({});
+    await waitFor(() => expect(backend.requests).toHaveLength(1));
+    expect(backend.requests[0]!.headers.has('Authorization')).toBe(false);
   });
 
-  it('does not touch requests to non-api hosts/paths', async () => {
-    const getIdToken = vi.fn();
-    const { httpClient, httpTesting } = setup({ currentUser: { uid: 'u1', getIdToken } });
+  it('does not touch requests to non-api paths', async () => {
+    const { backend } = await setup({
+      currentUser: { uid: 'u1', getIdToken: () => Promise.resolve('test-token') },
+      url: '/assets/config.json',
+    });
 
-    httpClient.get('/assets/config.json').subscribe();
-    await flushMicrotasks();
+    screen.getByRole('button', { name: 'Fetch' }).click();
 
-    const request = httpTesting.expectOne('/assets/config.json');
-    expect(request.request.headers.has('Authorization')).toBe(false);
-    expect(getIdToken).not.toHaveBeenCalled();
-    request.flush({});
+    await waitFor(() => expect(backend.requests).toHaveLength(1));
+    expect(backend.requests[0]!.headers.has('Authorization')).toBe(false);
   });
 
   it('signs out and redirects to sign-in on a 401 response', async () => {
-    const { httpClient, httpTesting, navigateSpy } = setup({
+    await setup({
       currentUser: { uid: 'u1', getIdToken: () => Promise.resolve('test-token') },
+      responseStatus: 401,
     });
 
-    httpClient.get('/api/users/me').subscribe({ error: vi.fn() });
-    await flushMicrotasks();
+    screen.getByRole('button', { name: 'Fetch' }).click();
 
-    httpTesting
-      .expectOne('/api/users/me')
-      .flush('unauthorized', { status: 401, statusText: 'Unauthorized' });
-    await flushMicrotasks();
-
-    expect(mockSignOut).toHaveBeenCalledOnce();
-    expect(navigateSpy).toHaveBeenCalledWith(['/sign-in']);
+    expect(await screen.findByText('Sign-in page')).toBeVisible();
   });
 
   it('rethrows non-401 errors without signing out', async () => {
-    const { httpClient, httpTesting } = setup({
+    await setup({
       currentUser: { uid: 'u1', getIdToken: () => Promise.resolve('test-token') },
+      responseStatus: 500,
     });
-    const errorHandler = vi.fn();
 
-    httpClient.get('/api/users/me').subscribe({ error: errorHandler });
-    await flushMicrotasks();
+    screen.getByRole('button', { name: 'Fetch' }).click();
 
-    httpTesting
-      .expectOne('/api/users/me')
-      .flush('server error', { status: 500, statusText: 'Server Error' });
-    await flushMicrotasks();
-
-    expect(errorHandler).toHaveBeenCalledOnce();
-    expect(mockSignOut).not.toHaveBeenCalled();
+    expect(await screen.findByText('Result: error')).toBeVisible();
+    expect(screen.queryByText('Sign-in page')).not.toBeInTheDocument();
   });
 
   it('proceeds without a token when token acquisition fails', async () => {
-    const { httpClient, httpTesting } = setup({
+    const { backend } = await setup({
       currentUser: {
         uid: 'u1',
         getIdToken: () => Promise.reject(new Error('network-request-failed')),
       },
     });
 
-    httpClient.get('/api/users/me').subscribe();
-    await flushMicrotasks();
+    screen.getByRole('button', { name: 'Fetch' }).click();
 
-    const request = httpTesting.expectOne('/api/users/me');
-    expect(request.request.headers.has('Authorization')).toBe(false);
-    request.flush({});
+    await waitFor(() => expect(backend.requests).toHaveLength(1));
+    expect(backend.requests[0]!.headers.has('Authorization')).toBe(false);
   });
 });
-
-interface SetupOptions {
-  currentUser?: MockUser | null;
-}
-
-function setup({ currentUser }: SetupOptions = {}) {
-  vi.spyOn(console, 'error').mockReturnValue(undefined);
-
-  mockAuth.currentUser = currentUser;
-  mockSignOut.mockReset();
-  mockSignOut.mockImplementation(() => Promise.resolve());
-
-  TestBed.configureTestingModule({
-    providers: [
-      provideHttpClient(withInterceptors([authInterceptor])),
-      provideHttpClientTesting(),
-      provideRouter([]),
-    ],
-  });
-
-  const httpClient = TestBed.inject(HttpClient);
-  const httpTesting = TestBed.inject(HttpTestingController);
-  const navigateSpy = vi.spyOn(TestBed.inject(Router), 'navigate').mockResolvedValue(true);
-
-  return { httpClient, httpTesting, navigateSpy };
-}

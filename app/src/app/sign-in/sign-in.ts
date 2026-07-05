@@ -1,10 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import {
-  FormBuilder,
-  ReactiveFormsModule,
-  Validators,
-  type FormGroup,
-} from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, Validators, type FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { safeReturnTo } from '../lib/return-to';
 import { Auth } from '../services/auth';

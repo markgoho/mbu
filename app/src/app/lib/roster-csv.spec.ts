@@ -82,7 +82,13 @@ describe('eventRosterToCsv', () => {
         title: 'Spring MBU',
         startDate: '2026-06-01T12:00:00.000Z',
         endDate: null,
-        location: { name: 'Scout Hall', address: '1 Main St', city: 'Anytown', state: 'NY', zip: '12345' },
+        location: {
+          name: 'Scout Hall',
+          address: '1 Main St',
+          city: 'Anytown',
+          state: 'NY',
+          zip: '12345',
+        },
         timezone: 'America/New_York',
       },
       classRosters: [classRoster()],
@@ -122,7 +128,11 @@ describe('eventRosterToCsv', () => {
       roster({
         classRosters: [
           classRoster({ class: { ...classRoster().class, badgeTitle: 'Camping' } }),
-          classRoster({ class: { ...classRoster().class, badgeTitle: 'Archery' }, enrolled: [], waitlisted: [] }),
+          classRoster({
+            class: { ...classRoster().class, badgeTitle: 'Archery' },
+            enrolled: [],
+            waitlisted: [],
+          }),
         ],
       }),
     );

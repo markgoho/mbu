@@ -1,9 +1,7 @@
 import { node } from "@elysiajs/node";
 import { Elysia } from "elysia";
 import { mapError } from "../shared-api/errors/on-error.js";
-import { requireCronSecret } from "./plugins/require-cron-secret.js";
-import { PurgeResponseSchema } from "./schemas/retention-schemas.js";
-import { retentionService as defaultRetention } from "./services/retention/index.js";
+import { createRetentionPlugin } from "./plugins/retention-plugin.js";
 import type { PartialRetentionApiServices } from "./types/services.js";
 
 /**
@@ -16,14 +14,9 @@ import type { PartialRetentionApiServices } from "./types/services.js";
  * isn't a signed-in user.
  */
 export function createApp(services?: PartialRetentionApiServices) {
-  const retention = services?.retentionService ?? defaultRetention;
-
   return new Elysia({ adapter: node(), prefix: "/api" })
     .onError(mapError)
-    .resolve(requireCronSecret(services?.secretReader))
-    .post("/retention/purge", () => retention.purge(), {
-      response: PurgeResponseSchema,
-    });
+    .use(createRetentionPlugin(services));
 }
 
 export const app = createApp();

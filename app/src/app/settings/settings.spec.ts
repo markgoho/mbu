@@ -1,10 +1,10 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { signal, type WritableSignal } from '@angular/core';
 import { render, screen, waitFor, within } from '@testing-library/angular/zoneless';
 import { describe, expect, it, vi } from 'vitest';
 import type { ScoutListResponse, ScoutResponse } from '../api-types/users-api.types';
 import { Auth } from '../services/auth';
 import { Scouts } from '../services/scouts';
+import { fakeResource } from '../test-utils/fake-resource';
 import { Settings } from './settings';
 
 const alexSmith: ScoutResponse = {
@@ -19,11 +19,6 @@ const alexSmith: ScoutResponse = {
   accommodations: null,
 };
 
-/** Minimal stand-in for an `httpResource` — just the signals the UI reads. */
-function fakeResource<T>(value: WritableSignal<T | undefined>) {
-  return { value, isLoading: signal(false), error: signal<unknown>(undefined), reload: () => {} };
-}
-
 describe('Settings component', () => {
   interface SetupOptions {
     scouts?: ScoutResponse[];
@@ -36,14 +31,15 @@ describe('Settings component', () => {
     removeScout = async () => {},
     deleteAccount = async () => {},
   }: SetupOptions = {}) {
-    const scoutsValue = signal<ScoutListResponse | undefined>({ scouts });
     const scoutsMock = {
-      mine: fakeResource(scoutsValue),
+      mine: fakeResource<ScoutListResponse>({ scouts }),
       remove: async (scoutId: string) => {
         await removeScout(scoutId);
-        scoutsValue.update((s) => ({
-          scouts: (s?.scouts ?? []).filter((scout) => scout.scoutId !== scoutId),
-        }));
+        scoutsMock.mine.set({
+          scouts: (scoutsMock.mine.value()?.scouts ?? []).filter(
+            (scout) => scout.scoutId !== scoutId,
+          ),
+        });
       },
     };
     const authMock = { deleteAccount };

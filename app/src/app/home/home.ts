@@ -1,6 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { HealthService } from '../services/health.service';
+import { Health } from '../services/health';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { HealthService } from '../services/health.service';
   styleUrl: './home.css',
 })
 export class Home {
-  private readonly health = inject(HealthService).health;
+  private readonly health = inject(Health).health;
 
   protected readonly status = computed(() => {
     if (this.health.error()) {

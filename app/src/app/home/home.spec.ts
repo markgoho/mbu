@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { render, screen } from '@testing-library/angular/zoneless';
 import { describe, expect, it } from 'vitest';
 import type { HealthResponse } from '../api-types/health-api.types';
-import { HealthService } from '../services/health.service';
+import { Health } from '../services/health';
 import { Home } from './home';
 
 @Component({
@@ -12,13 +12,10 @@ import { Home } from './home';
 })
 class TestHost {}
 
-function fakeHealthService(
-  value: HealthResponse | undefined,
-  error: unknown,
-): HealthService {
+function fakeHealthService(value: HealthResponse | undefined, error: unknown): Health {
   return {
     health: { value: signal(value), error: signal(error) },
-  } as unknown as HealthService;
+  } as unknown as Health;
 }
 
 describe('Home', () => {
@@ -26,7 +23,7 @@ describe('Home', () => {
     await render(TestHost, {
       providers: [
         provideRouter([]),
-        { provide: HealthService, useValue: fakeHealthService({ status: 'ok' }, undefined) },
+        { provide: Health, useValue: fakeHealthService({ status: 'ok' }, undefined) },
       ],
     });
 
@@ -38,7 +35,7 @@ describe('Home', () => {
       providers: [
         provideRouter([]),
         {
-          provide: HealthService,
+          provide: Health,
           useValue: fakeHealthService(undefined, new Error('unreachable')),
         },
       ],

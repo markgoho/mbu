@@ -3,12 +3,7 @@ import type { Timestamp } from "firebase-admin/firestore";
 export const UNIVERSITIES_COLLECTION = "universities";
 
 export type UniversityStatus =
-  | "draft"
-  | "submitted"
-  | "needs_review"
-  | "published"
-  | "closed"
-  | "rejected";
+  "draft" | "submitted" | "needs_review" | "published" | "closed" | "rejected";
 
 /** Chancellor-pays-to-publish billing. `not_required` in v1 (money off). */
 export type BillingStatus = "not_required" | "pending" | "paid" | "waived";
