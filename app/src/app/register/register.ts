@@ -98,13 +98,16 @@ export class Register {
   }
 
   protected selectScout(scoutId: string): void {
+    if (scoutId === this.selectedScoutId()) return;
     this.selectedScoutId.set(scoutId);
     this.actionError.set('');
+    // Consent is per scout per event: switching scouts requires a fresh act.
+    this.consentAccepted.set(false);
   }
 
   protected onScoutAdded(scout: ScoutResponse): void {
     this.showAddScout.set(false);
-    this.selectedScoutId.set(scout.scoutId);
+    this.selectScout(scout.scoutId);
   }
 
   protected periodClasses(period: Period): PublicClass[] {
@@ -162,7 +165,7 @@ export class Register {
 
   protected async onCancel(cls: PublicClass): Promise<void> {
     const scoutId = this.selectedScoutId();
-    if (!scoutId || !this.consentAccepted()) return;
+    if (!scoutId) return;
     if (!globalThis.confirm(`Drop ${cls.badgeTitle}?`)) return;
 
     this.actionError.set('');

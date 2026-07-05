@@ -103,7 +103,7 @@
                     </p>
                     <button
                       type="button"
-                      [disabled]="pendingClassId() === cls.classId || !consentAccepted()"
+                      [disabled]="pendingClassId() === cls.classId"
                       (click)="onCancel(cls)"
                     >
                       Drop

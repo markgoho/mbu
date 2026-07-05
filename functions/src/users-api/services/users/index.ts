@@ -31,7 +31,7 @@ function toUserResponse(uid: string, doc: UserDocument): UserResponse {
     phone: doc.phone,
     acceptedTermsAt: toIso(doc.acceptedTermsAt),
     acceptedPrivacyAt: toIso(doc.acceptedPrivacyAt),
-    acceptedPolicyVersion: doc.acceptedPolicyVersion,
+    acceptedPolicyVersion: doc.acceptedPolicyVersion ?? null,
   };
 }
 

@@ -244,19 +244,44 @@ describe('Register component', () => {
     expect(await within(archeryCard).findByText('On waitlist')).toBeVisible();
   });
 
-  it('disables Register and Drop until the consent checkbox is checked', async () => {
+  it('gates Register on consent but keeps Drop available', async () => {
     await setup({ registrations: [registrationFor('archery', 'enrolled')] });
 
     const archeryCard = (await screen.findByText('Archery')).closest('li') as HTMLElement;
     const hikingCard = (await screen.findByText('Hiking')).closest('li') as HTMLElement;
-    expect(within(archeryCard).getByRole('button', { name: 'Drop' })).toBeDisabled();
+    // Dropping withdraws data, so it never requires a fresh share-consent.
+    expect(within(archeryCard).getByRole('button', { name: 'Drop' })).toBeEnabled();
     expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeDisabled();
 
     screen.getByRole('checkbox').click();
 
+    await waitFor(() =>
+      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeEnabled(),
+    );
+  });
+
+  it('requires fresh consent after switching to another scout', async () => {
+    const bailey: ScoutResponse = {
+      ...alexSmith,
+      scoutId: 'scout2',
+      firstName: 'Bailey',
+      lastName: 'Jones',
+    };
+    await setup({ scouts: [alexSmith, bailey] });
+
+    // Consent for the first (default-selected) scout enables Register.
+    const hikingCard = (await screen.findByText('Hiking')).closest('li') as HTMLElement;
+    screen.getByRole('checkbox').click();
+    await waitFor(() =>
+      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeEnabled(),
+    );
+
+    // Switching scouts clears consent — the box unchecks and Register re-disables.
+    screen.getByRole('button', { name: 'Bailey Jones' }).click();
+
     await waitFor(() => {
-      expect(within(archeryCard).getByRole('button', { name: 'Drop' })).toBeEnabled();
-      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeEnabled();
+      expect(screen.getByRole('checkbox')).not.toBeChecked();
+      expect(within(hikingCard).getByRole('button', { name: 'Register' })).toBeDisabled();
     });
   });
 
