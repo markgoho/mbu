@@ -24,12 +24,13 @@ export interface ScheduleResponse {
 
 export interface RosterRow {
   scoutId: string;
-  scoutFirstName: string;
-  scoutLastName: string;
+  /** Null once the retention purge scrubs this registration's PII snapshot. */
+  scoutFirstName: string | null;
+  scoutLastName: string | null;
   scoutUnit: string | null;
   accommodations: string | null;
-  parentName: string;
-  parentEmail: string;
+  parentName: string | null;
+  parentEmail: string | null;
   consentReceived: boolean;
   status: RegistrationStatus;
 }

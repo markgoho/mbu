@@ -248,6 +248,7 @@ export class RegistrationsServiceImpl implements RegistrationsService {
         enrolledAt,
         parentConsentAt: now,
         acceptedPolicyVersion: POLICY_VERSION,
+        purgedAt: null,
         createdAt: priorCreatedAt ?? now,
         updatedAt: now,
       };
@@ -439,8 +440,8 @@ export class RegistrationsServiceImpl implements RegistrationsService {
         .filter(row => row.status === "enrolled")
         .sort((a, b) =>
           a.scoutLastName === b.scoutLastName
-            ? a.scoutFirstName.localeCompare(b.scoutFirstName)
-            : a.scoutLastName.localeCompare(b.scoutLastName),
+            ? (a.scoutFirstName ?? "").localeCompare(b.scoutFirstName ?? "")
+            : (a.scoutLastName ?? "").localeCompare(b.scoutLastName ?? ""),
         )
         .map(toRosterRow);
       const waitlisted = rows
