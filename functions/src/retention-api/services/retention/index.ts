@@ -17,6 +17,9 @@ import type { RetentionService } from "./interface.js";
 
 const RETENTION_WINDOW_MS = RETENTION_WINDOW_DAYS * 24 * 60 * 60 * 1000;
 
+/** Firestore's hard limit on operations in a single batched write. */
+const MAX_BATCH_WRITES = 500;
+
 export class RetentionServiceImpl implements RetentionService {
   constructor(private readonly database?: Firestore) {}
 
@@ -61,7 +64,6 @@ export class RetentionServiceImpl implements RetentionService {
 
     if (pending.empty) return 0;
 
-    const batch = this.db().batch();
     const purgedAt = Timestamp.now();
     const scrubbedFields: Pick<
       RegistrationDocument,
@@ -81,10 +83,17 @@ export class RetentionServiceImpl implements RetentionService {
       parentEmail: null,
       purgedAt,
     };
-    for (const doc of pending.docs) {
-      batch.update(doc.ref, scrubbedFields);
+    // Firestore caps a batched write at 500 operations; a large event can have
+    // more registrations than that, so commit in chunks. The purgedAt filter
+    // above keeps this idempotent even if a later chunk fails and the job
+    // re-runs — already-scrubbed docs drop out of the query.
+    for (let i = 0; i < pending.docs.length; i += MAX_BATCH_WRITES) {
+      const batch = this.db().batch();
+      for (const doc of pending.docs.slice(i, i + MAX_BATCH_WRITES)) {
+        batch.update(doc.ref, scrubbedFields);
+      }
+      await batch.commit();
     }
-    await batch.commit();
 
     return pending.size;
   }
