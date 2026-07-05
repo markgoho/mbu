@@ -1,11 +1,12 @@
 import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { StatusBadge } from '../../shared/status-badge/status-badge';
 import { Universities } from '../../services/universities';
 
 @Component({
   selector: 'app-universities-dashboard',
-  imports: [RouterLink, DatePipe],
+  imports: [RouterLink, DatePipe, StatusBadge],
   templateUrl: './universities-dashboard.html',
   styleUrl: './universities-dashboard.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

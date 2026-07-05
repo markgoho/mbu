@@ -1,6 +1,7 @@
 import { describe, expect, it } from "bun:test";
 import type { DecodedIdToken } from "firebase-admin/auth";
 import {
+  ConflictError,
   ForbiddenError,
   NotFoundError,
   ValidationError,
@@ -26,6 +27,14 @@ const unverified: TokenVerifier = () =>
     email_verified: false,
   } as DecodedIdToken);
 
+const superAdminVerified: TokenVerifier = () =>
+  Promise.resolve({
+    uid: "admin1",
+    email: "admin1@example.com",
+    email_verified: true,
+    superAdmin: true,
+  } as DecodedIdToken);
+
 const sampleUniversity = {
   id: "uni1",
   title: "Spring MBU",
@@ -43,6 +52,8 @@ const sampleUniversity = {
     zip: "12345",
   },
   createdByUid: "u1",
+  reviewNote: null,
+  submittedAt: null,
   createdAt: "2026-07-01T00:00:00.000Z",
   updatedAt: "2026-07-01T00:00:00.000Z",
 };
@@ -127,6 +138,78 @@ const universitiesService: UniversitiesService = {
       classes: [],
     }),
   remove: () => Promise.resolve(),
+  submit: (_caller, universityId) => {
+    if (universityId === "no-classes-uni") {
+      return Promise.reject(
+        new ValidationError(
+          "At least one class is required to submit for review",
+        ),
+      );
+    }
+    if (universityId === "illegal-uni") {
+      return Promise.reject(
+        new ConflictError("Cannot transition from published to submitted"),
+      );
+    }
+    return Promise.resolve({
+      ...sampleUniversity,
+      id: universityId,
+      status: "submitted" as const,
+      submittedAt: "2026-07-04T00:00:00.000Z",
+      reviewNote: null,
+    });
+  },
+  close: (_caller, universityId) =>
+    Promise.resolve({
+      ...sampleUniversity,
+      id: universityId,
+      status: "closed" as const,
+    }),
+  approve: (caller, universityId) => {
+    if (!caller.superAdmin) {
+      return Promise.reject(
+        new ForbiddenError("Super-admin privileges required"),
+      );
+    }
+    return Promise.resolve({
+      ...sampleUniversity,
+      id: universityId,
+      status: "published" as const,
+    });
+  },
+  reject: (caller, universityId, note) => {
+    if (!caller.superAdmin) {
+      return Promise.reject(
+        new ForbiddenError("Super-admin privileges required"),
+      );
+    }
+    return Promise.resolve({
+      ...sampleUniversity,
+      id: universityId,
+      status: "rejected" as const,
+      reviewNote: note,
+    });
+  },
+  listReviewQueue: caller => {
+    if (!caller.superAdmin) {
+      return Promise.reject(
+        new ForbiddenError("Super-admin privileges required"),
+      );
+    }
+    return Promise.resolve({
+      universities: [
+        {
+          id: "uni1",
+          title: "Spring MBU",
+          chancellorName: "Alex Chancellor",
+          chancellorEmail: "alex@example.com",
+          submittedAt: "2026-07-01T00:00:00.000Z",
+          classCount: 2,
+          startDate: sampleUniversity.startDate,
+        },
+      ],
+    });
+  },
 };
 
 const periodsService: PeriodsService = {
@@ -293,6 +376,101 @@ describe("universities-api routes", () => {
       authed("/api/universities/uni1/classes/cls1", "DELETE"),
     );
     expect(response.status).toBe(204);
+  });
+
+  it("POST /api/universities/:id/submit transitions to submitted", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/universities/uni1/submit", "POST"),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as { status: string };
+    expect(body.status).toBe("submitted");
+  });
+
+  it("POST /api/universities/:id/submit returns 400 with zero classes", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/universities/no-classes-uni/submit", "POST"),
+    );
+    expect(response.status).toBe(400);
+  });
+
+  it("POST /api/universities/:id/submit returns 409 on an illegal transition", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/universities/illegal-uni/submit", "POST"),
+    );
+    expect(response.status).toBe(409);
+  });
+
+  it("POST /api/universities/:id/close transitions to closed", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/universities/uni1/close", "POST"),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as { status: string };
+    expect(body.status).toBe("closed");
+  });
+});
+
+describe("universities-api admin routes", () => {
+  const adminApp = () =>
+    createApp({
+      universitiesService,
+      periodsService,
+      classesService,
+      verifyToken: superAdminVerified,
+    });
+
+  it("POST /api/admin/universities/:id/approve transitions to published", async () => {
+    const response = await handleRequest(
+      adminApp(),
+      authed("/api/admin/universities/uni1/approve", "POST"),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as { status: string };
+    expect(body.status).toBe("published");
+  });
+
+  it("POST /api/admin/universities/:id/reject transitions to rejected with the note", async () => {
+    const response = await handleRequest(
+      adminApp(),
+      authed("/api/admin/universities/uni1/reject", "POST", {
+        note: "Missing counselor disclaimers",
+      }),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as {
+      status: string;
+      reviewNote: string | null;
+    };
+    expect(body.status).toBe("rejected");
+    expect(body.reviewNote).toBe("Missing counselor disclaimers");
+  });
+
+  it("GET /api/admin/universities/review-queue returns queued rows", async () => {
+    const response = await handleRequest(
+      adminApp(),
+      authed("/api/admin/universities/review-queue", "GET"),
+    );
+    expect(response.status).toBe(200);
+    const body = (await response.json()) as { universities: unknown[] };
+    expect(body.universities).toHaveLength(1);
+  });
+
+  it("returns 403 when a non-super-admin hits an admin route", async () => {
+    const response = await handleRequest(
+      createApp({
+        universitiesService,
+        periodsService,
+        classesService,
+        verifyToken: verified,
+      }),
+      authed("/api/admin/universities/uni1/approve", "POST"),
+    );
+    expect(response.status).toBe(403);
   });
 });
 

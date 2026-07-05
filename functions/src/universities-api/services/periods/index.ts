@@ -25,7 +25,7 @@ import type {
   PeriodsResponse,
 } from "../../schemas/period-schemas.js";
 import {
-  assertDraftStatus,
+  assertEditableStatus,
   mintPeriodId,
   parseIso,
   toIso,
@@ -109,7 +109,7 @@ export class PeriodsServiceImpl implements PeriodsService {
         throw new NotFoundError("University not found");
       }
       const current = snapshot.data() as UniversityDocument;
-      assertDraftStatus(current.status);
+      assertEditableStatus(current.status);
 
       const nextPeriods = buildPeriods(request.periods, current.periods);
       const nextIds = new Set(nextPeriods.map(p => p.periodId));

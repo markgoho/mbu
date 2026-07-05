@@ -8,30 +8,54 @@
   } @else if (detail.value(); as data) {
     <header class="editor__header">
       <h1>{{ data.university.title }}</h1>
-      <span class="editor__status">{{ data.university.status }}</span>
+      <app-status-badge [status]="data.university.status" />
       <a [routerLink]="['/universities', universityId(), 'roster']">View rosters</a>
       @if (data.university.status === 'draft') {
         <button type="button" class="editor__delete" (click)="deleteUniversity()">
           Delete draft
         </button>
       }
+      @if (canSubmit()) {
+        <button type="button" [disabled]="actionPending()" (click)="submitForReview()">
+          Submit for review
+        </button>
+      }
+      @if (canClose()) {
+        <button type="button" [disabled]="actionPending()" (click)="closeEvent()">
+          Close event
+        </button>
+      }
     </header>
+
+    @if (actionError(); as message) {
+      <p class="editor__error" role="alert">{{ message }}</p>
+    }
+
+    @if (data.university.status === 'rejected' && data.university.reviewNote) {
+      <p class="editor__review-note" role="status">Rejected: {{ data.university.reviewNote }}</p>
+    }
 
     <section class="editor__section">
       <h2>Details</h2>
-      <app-university-form [universityId]="universityId()" [initial]="data.university" />
+      <app-university-form
+        [universityId]="universityId()"
+        [initial]="data.university"
+        [readonly]="isLocked()"
+      />
     </section>
 
     <app-period-board
       [universityId]="universityId()"
       [periods]="data.university.periods"
       [classes]="data.classes"
+      [readonly]="isLocked()"
     />
 
     <app-class-list
       [universityId]="universityId()"
       [periods]="data.university.periods"
       [classes]="data.classes"
+      [readonly]="isLocked()"
     />
   }
 </main>

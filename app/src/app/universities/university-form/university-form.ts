@@ -30,6 +30,7 @@ export class UniversityForm {
   /** When set, the form edits an existing university; otherwise it creates one. */
   readonly universityId = input<string | undefined>(undefined);
   readonly initial = input<UniversityResponse | undefined>(undefined);
+  readonly readonly = input(false);
 
   readonly saved = output<UniversityResponse>();
 
@@ -54,6 +55,14 @@ export class UniversityForm {
     effect(() => {
       const data = this.initial();
       if (data) this.applyInitial(data);
+    });
+
+    effect(() => {
+      if (this.readonly()) {
+        this.form.disable();
+      } else {
+        this.form.enable();
+      }
     });
   }
 

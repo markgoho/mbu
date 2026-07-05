@@ -1,11 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  inject,
-  input,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, signal } from '@angular/core';
 import { FormArray, FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import type { ClassResponse, Period, PeriodInput } from '../../api-types/universities-api.types';
 import { Universities } from '../../services/universities';
@@ -24,6 +17,7 @@ export class PeriodBoard {
   readonly universityId = input.required<string>();
   readonly periods = input<Period[]>([]);
   readonly classes = input<ClassResponse[]>([]);
+  readonly readonly = input(false);
 
   protected readonly isLoading = signal(false);
   protected readonly errorMessage = signal('');
@@ -39,6 +33,14 @@ export class PeriodBoard {
     effect(() => {
       this.periods();
       this.syncPeriods();
+    });
+
+    effect(() => {
+      if (this.readonly()) {
+        this.form.disable();
+      } else {
+        this.form.enable();
+      }
     });
   }
 

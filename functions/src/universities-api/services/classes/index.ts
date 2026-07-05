@@ -34,7 +34,7 @@ import type {
   ClassPatchRequest,
   ClassResponse,
 } from "../../schemas/class-schemas.js";
-import { assertDraftStatus, toIso } from "../validation.js";
+import { assertEditableStatus, toIso } from "../validation.js";
 import type { ClassesService } from "./interface.js";
 
 function toClassResponse(classId: string, doc: ClassDocument): ClassResponse {
@@ -123,7 +123,7 @@ export class ClassesServiceImpl implements ClassesService {
         throw new NotFoundError("University not found");
       }
       const university = uniSnapshot.data() as UniversityDocument;
-      assertDraftStatus(university.status);
+      assertEditableStatus(university.status);
       validatePeriodIds(request.periodIds, university);
 
       const classDoc = {
@@ -197,7 +197,7 @@ export class ClassesServiceImpl implements ClassesService {
       }
 
       const university = uniSnapshot.data() as UniversityDocument;
-      assertDraftStatus(university.status);
+      assertEditableStatus(university.status);
 
       const updates: Record<string, unknown> = {
         updatedAt: FieldValue.serverTimestamp(),
@@ -260,7 +260,7 @@ export class ClassesServiceImpl implements ClassesService {
       if (!classSnapshot.exists) {
         throw new NotFoundError("Class not found");
       }
-      assertDraftStatus((uniSnapshot.data() as UniversityDocument).status);
+      assertEditableStatus((uniSnapshot.data() as UniversityDocument).status);
 
       const grantsQuery = this.db()
         .collection(ROLE_GRANTS_COLLECTION)

@@ -1,0 +1,49 @@
+.review-detail {
+  max-width: 40rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.review-detail__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.review-detail__meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+}
+
+.review-detail__meta dt {
+  color: var(--color-muted);
+}
+
+.review-detail__classes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.review-detail__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.review-detail__reject-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.review-detail__error {
+  color: var(--color-error);
+}

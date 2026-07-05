@@ -35,6 +35,13 @@ export const requireOnboarded: CanActivateFn = async () => {
   return bootstrap?.needsConsent ? router.parseUrl('/onboarding') : true;
 };
 
+/** Requires the super-admin custom claim. Redirects to / otherwise. */
+export const requireSuperAdmin: CanActivateFn = async () => {
+  const router = inject(Router);
+  const authService = inject(Auth);
+  return (await authService.ensureSuperAdmin()) ? true : router.parseUrl('/');
+};
+
 /** Inverse of requireAuth: sends already signed-in users to the app home. */
 export const requireUnauth: CanActivateFn = async (route) => {
   const router = inject(Router);

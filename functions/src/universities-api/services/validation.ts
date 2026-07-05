@@ -53,6 +53,14 @@ export function assertDraftStatus(status: string): void {
   }
 }
 
+export function assertEditableStatus(status: string): void {
+  if (status !== "draft" && status !== "rejected") {
+    throw new ValidationError(
+      "Only draft or rejected universities can be modified",
+    );
+  }
+}
+
 export function mintPeriodId(): string {
   return crypto.randomUUID();
 }

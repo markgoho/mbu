@@ -28,7 +28,7 @@
             <a [routerLink]="['/universities', uni.id]" class="dashboard__card">
               <span class="dashboard__title">{{ uni.title }}</span>
               <span class="dashboard__meta">
-                {{ uni.status }} ·
+                <app-status-badge [status]="uni.status" /> ·
                 {{ uni.startDate | date: 'mediumDate' }}
                 @if (uni.endDate) {
                   – {{ uni.endDate | date: 'mediumDate' }}

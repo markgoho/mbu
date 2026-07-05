@@ -10,6 +10,7 @@ import type {
   PeriodsPutRequest,
   PeriodsResponse,
   PublicUniversity,
+  ReviewQueueResponse,
   UniversityCreateRequest,
   UniversityDetailResponse,
   UniversityListResponse,
@@ -47,6 +48,23 @@ export class Universities {
     const id = this.activePublicUniversityId();
     return id ? `/api/universities/${id}/public` : undefined;
   });
+
+  /** Set by the admin review-queue route; gates the super-admin-only queue fetch. */
+  readonly activeReviewQueue = signal(false);
+
+  readonly reviewQueue = httpResource<ReviewQueueResponse>(() =>
+    this.activeReviewQueue() ? '/api/admin/universities/review-queue' : undefined,
+  );
+
+  openReviewQueue(): void {
+    // Gate the admin-only fetch behind explicit activation so it never fires
+    // (and 403s) for non-super-admins who inject this service on other pages.
+    if (this.activeReviewQueue()) {
+      this.reviewQueue.reload();
+    } else {
+      this.activeReviewQueue.set(true);
+    }
+  }
 
   openUniversity(id: string): void {
     // Changing the id makes the detail resource refetch on its own; only force a
@@ -153,6 +171,52 @@ export class Universities {
     await firstValueFrom(this.httpClient.delete(`/api/universities/${id}`));
     this.clearActiveUniversity();
     this.reloadMine();
+  }
+
+  async submitUniversity(id: string): Promise<UniversityResponse> {
+    const result = await firstValueFrom(
+      this.httpClient.post<UniversityResponse>(`/api/universities/${id}/submit`, {}),
+    );
+    this.reloadMine();
+    if (this.activeUniversityId() === id) {
+      this.reloadDetail();
+    }
+    return result;
+  }
+
+  async closeUniversity(id: string): Promise<UniversityResponse> {
+    const result = await firstValueFrom(
+      this.httpClient.post<UniversityResponse>(`/api/universities/${id}/close`, {}),
+    );
+    this.reloadMine();
+    if (this.activeUniversityId() === id) {
+      this.reloadDetail();
+    }
+    return result;
+  }
+
+  async approveUniversity(id: string): Promise<UniversityResponse> {
+    const result = await firstValueFrom(
+      this.httpClient.post<UniversityResponse>(`/api/admin/universities/${id}/approve`, {}),
+    );
+    this.reviewQueue.reload();
+    if (this.activeUniversityId() === id) {
+      this.reloadDetail();
+    }
+    return result;
+  }
+
+  async rejectUniversity(id: string, note: string): Promise<UniversityResponse> {
+    const result = await firstValueFrom(
+      this.httpClient.post<UniversityResponse>(`/api/admin/universities/${id}/reject`, {
+        note,
+      }),
+    );
+    this.reviewQueue.reload();
+    if (this.activeUniversityId() === id) {
+      this.reloadDetail();
+    }
+    return result;
   }
 
   isForbidden(error: unknown): boolean {

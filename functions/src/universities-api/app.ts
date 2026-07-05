@@ -16,6 +16,8 @@ import {
 } from "./schemas/period-schemas.js";
 import { PublicUniversityResponseSchema } from "./schemas/public-schemas.js";
 import {
+  RejectRequestSchema,
+  ReviewQueueResponseSchema,
   UniversityCreateRequestSchema,
   UniversityListResponseSchema,
   UniversityPatchRequestSchema,
@@ -116,6 +118,32 @@ export function createApp(services?: PartialUniversitiesApiServices) {
         await classes.remove(caller, params.id, params.classId);
         set.status = 204;
       },
+    )
+    .post(
+      "/universities/:id/submit",
+      ({ caller, params }) => universities.submit(caller, params.id),
+      { response: UniversityResponseSchema },
+    )
+    .post(
+      "/universities/:id/close",
+      ({ caller, params }) => universities.close(caller, params.id),
+      { response: UniversityResponseSchema },
+    )
+    .get(
+      "/admin/universities/review-queue",
+      ({ caller }) => universities.listReviewQueue(caller),
+      { response: ReviewQueueResponseSchema },
+    )
+    .post(
+      "/admin/universities/:id/approve",
+      ({ caller, params }) => universities.approve(caller, params.id),
+      { response: UniversityResponseSchema },
+    )
+    .post(
+      "/admin/universities/:id/reject",
+      ({ caller, params, body }) =>
+        universities.reject(caller, params.id, body.note),
+      { body: RejectRequestSchema, response: UniversityResponseSchema },
     );
 }
 
