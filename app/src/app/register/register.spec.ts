@@ -1,5 +1,4 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { signal, type WritableSignal } from '@angular/core';
 import { render, screen, waitFor, within } from '@testing-library/angular/zoneless';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { of } from 'rxjs';
@@ -15,6 +14,7 @@ import type { ScoutListResponse, ScoutResponse } from '../api-types/users-api.ty
 import { Registrations } from '../services/registrations';
 import { Scouts } from '../services/scouts';
 import { Universities } from '../services/universities';
+import { fakeResource } from '../test-utils/fake-resource';
 import { Register } from './register';
 
 const sampleEvent: PublicUniversity = {
@@ -120,11 +120,6 @@ function registrationFor(classId: string, status: RegistrationStatus): Registrat
   };
 }
 
-/** Minimal stand-in for an `httpResource` — just the signals the UI reads. */
-function fakeResource<T>(value: WritableSignal<T | undefined>) {
-  return { value, isLoading: signal(false), error: signal<unknown>(undefined), reload: () => {} };
-}
-
 describe('Register component', () => {
   interface SetupOptions {
     scouts?: ScoutResponse[];
@@ -138,7 +133,7 @@ describe('Register component', () => {
     registrations = [],
     registerOutcome = 'enrolled',
   }: SetupOptions = {}) {
-    const scheduleValue = signal<ScheduleResponse | undefined>({ registrations });
+    const schedule = fakeResource<ScheduleResponse>({ registrations });
 
     let registerCalls = 0;
     const register = async (
@@ -157,23 +152,23 @@ describe('Register component', () => {
       }
       const status: RegistrationStatus = registerOutcome === 'enrolled' ? 'enrolled' : 'waitlisted';
       const reg = registrationFor(classId, status);
-      scheduleValue.update((s) => ({ registrations: [...(s?.registrations ?? []), reg] }));
+      schedule.set({ registrations: [...(schedule.value()?.registrations ?? []), reg] });
       return reg;
     };
 
     const registrationsMock = {
-      schedule: fakeResource(scheduleValue),
+      schedule,
       openUniversity: () => {},
       register,
       cancel: async () => {},
     };
     const universitiesMock = {
-      publicEvent: fakeResource(signal<PublicUniversity | undefined>(sampleEvent)),
+      publicEvent: fakeResource<PublicUniversity>(sampleEvent),
       openPublicUniversity: () => {},
       reloadPublicEvent: () => {},
     };
     const scoutsMock = {
-      mine: fakeResource(signal<ScoutListResponse | undefined>({ scouts })),
+      mine: fakeResource<ScoutListResponse>({ scouts }),
       create: async (): Promise<ScoutResponse> => alexSmith,
     };
 

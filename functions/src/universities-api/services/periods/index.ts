@@ -1,8 +1,4 @@
-import {
-  FieldValue,
-  getFirestore,
-  type Firestore,
-} from "firebase-admin/firestore";
+import { FieldValue, getFirestore } from "firebase-admin/firestore";
 import {
   CLASSES_SUBCOLLECTION,
   type ClassDocument,
@@ -85,13 +81,7 @@ function buildPeriods(input: PeriodInput[], existing: Period[]): Period[] {
   });
 }
 
-export class PeriodsServiceImpl implements PeriodsService {
-  constructor(private readonly database?: Firestore) {}
-
-  private db(): Firestore {
-    return this.database ?? getFirestore();
-  }
-
+export const PeriodsServiceImpl: PeriodsService = {
   async put(
     caller: Caller,
     universityId: string,
@@ -99,11 +89,11 @@ export class PeriodsServiceImpl implements PeriodsService {
   ): Promise<PeriodsResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
 
-    return this.db().runTransaction(async txn => {
+    return getFirestore().runTransaction(async txn => {
       const snapshot = await txn.get(universityRef);
       if (!snapshot.exists) {
         throw new NotFoundError("University not found");
@@ -118,7 +108,7 @@ export class PeriodsServiceImpl implements PeriodsService {
         .filter(id => !nextIds.has(id));
 
       if (removedIds.length > 0) {
-        const classesRef = this.db().collection(
+        const classesRef = getFirestore().collection(
           `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
         );
         // array-contains-any accepts at most 10 values, so chunk the removed
@@ -148,7 +138,5 @@ export class PeriodsServiceImpl implements PeriodsService {
 
       return toPeriodsResponse(nextPeriods);
     });
-  }
-}
-
-export const periodsService = new PeriodsServiceImpl();
+  },
+};

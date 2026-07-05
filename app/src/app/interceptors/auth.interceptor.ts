@@ -21,9 +21,7 @@ const AUTHENTICATED_API_PATHS = ['/api/'];
 export const authInterceptor: HttpInterceptorFn = (request, next) => {
   const router = inject(Router);
 
-  const requiresAuth = AUTHENTICATED_API_PATHS.some((path) =>
-    request.url.includes(path),
-  );
+  const requiresAuth = AUTHENTICATED_API_PATHS.some((path) => request.url.includes(path));
   if (!requiresAuth) {
     return next(request);
   }
@@ -35,8 +33,7 @@ export const authInterceptor: HttpInterceptorFn = (request, next) => {
       // 401 handler below then catches.
       console.error('Failed to acquire auth token for request:', {
         url: request.url,
-        error:
-          tokenError instanceof Error ? tokenError.message : String(tokenError),
+        error: tokenError instanceof Error ? tokenError.message : String(tokenError),
       });
       return of(null);
     }),

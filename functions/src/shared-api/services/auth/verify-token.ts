@@ -53,7 +53,9 @@ export async function verifyAuthToken(
             errorId: ERROR_IDS.API_AUTH_TOKEN_EXPIRED,
             errorCode: error.code,
           });
-          throw new AuthError("Your session has expired. Please sign in again.");
+          throw new AuthError(
+            "Your session has expired. Please sign in again.",
+          );
         }
         case "auth/id-token-revoked":
         case "auth/session-cookie-revoked": {

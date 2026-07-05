@@ -1,5 +1,5 @@
-import type { HealthService } from "../services/health/interface.js";
 import type { Logger } from "../../shared-api/types/logger.js";
+import type { HealthService } from "../services/health/interface.js";
 
 export const SERVICE_KEYS = {
   HEALTH_SERVICE: "healthService",

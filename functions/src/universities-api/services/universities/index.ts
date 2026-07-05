@@ -1,9 +1,4 @@
-import {
-  FieldValue,
-  getFirestore,
-  Timestamp,
-  type Firestore,
-} from "firebase-admin/firestore";
+import { FieldValue, getFirestore, Timestamp } from "firebase-admin/firestore";
 import {
   CLASSES_SUBCOLLECTION,
   type ClassDocument,
@@ -156,13 +151,7 @@ function validateCreateFields(request: UniversityCreateRequest): {
   return { startDate, endDate, registrationOpensAt, registrationClosesAt };
 }
 
-export class UniversitiesServiceImpl implements UniversitiesService {
-  constructor(private readonly database?: Firestore) {}
-
-  private db(): Firestore {
-    return this.database ?? getFirestore();
-  }
-
+export const UniversitiesServiceImpl: UniversitiesService = {
   async create(
     caller: Caller,
     request: UniversityCreateRequest,
@@ -170,10 +159,10 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     const { startDate, endDate, registrationOpensAt, registrationClosesAt } =
       validateCreateFields(request);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(request.id);
-    const grantRef = this.db()
+    const grantRef = getFirestore()
       .collection(ROLE_GRANTS_COLLECTION)
       .doc(roleGrantId(request.id, "chancellor", caller.uid));
 
@@ -220,7 +209,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       updatedAt: FieldValue.serverTimestamp(),
     };
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const existing = await txn.get(universityRef);
       if (existing.exists) {
         throw new ConflictError("University already exists");
@@ -234,7 +223,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       request.id,
       snapshot.data() as UniversityDocument,
     );
-  }
+  },
 
   async patch(
     caller: Caller,
@@ -243,7 +232,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
   ): Promise<UniversityResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const reference = this.db()
+    const reference = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
     const snapshot = await reference.get();
@@ -320,10 +309,10 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       universityId,
       (await reference.get()).data() as UniversityDocument,
     );
-  }
+  },
 
   async listMine(caller: Caller): Promise<UniversityListResponse> {
-    const grants = await this.db()
+    const grants = await getFirestore()
       .collection(ROLE_GRANTS_COLLECTION)
       .where("uid", "==", caller.uid)
       .where("role", "==", "chancellor")
@@ -339,9 +328,9 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       doc => (doc.data() as RoleGrantDocument).scopeId,
     );
     const universityRefs = universityIds.map(id =>
-      this.db().collection(UNIVERSITIES_COLLECTION).doc(id),
+      getFirestore().collection(UNIVERSITIES_COLLECTION).doc(id),
     );
-    const universityDocs = await this.db().getAll(...universityRefs);
+    const universityDocs = await getFirestore().getAll(...universityRefs);
 
     const summaries = await Promise.all(
       universityDocs
@@ -349,7 +338,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
         .map(async doc => {
           const data = doc.data() as UniversityDocument;
           const classCount = (
-            await this.db()
+            await getFirestore()
               .collection(
                 `${UNIVERSITIES_COLLECTION}/${doc.id}/${CLASSES_SUBCOLLECTION}`,
               )
@@ -368,10 +357,10 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     );
 
     return { universities: summaries };
-  }
+  },
 
   async getPublic(universityId: string): Promise<PublicUniversityResponse> {
-    const reference = this.db()
+    const reference = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
     const snapshot = await reference.get();
@@ -386,7 +375,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       throw new NotFoundError("University not found");
     }
 
-    const classesSnapshot = await this.db()
+    const classesSnapshot = await getFirestore()
       .collection(
         `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
       )
@@ -412,7 +401,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
         toPublicClassResponse(classDoc.id, classDoc.data() as ClassDocument),
       ),
     };
-  }
+  },
 
   async getDetail(
     caller: Caller,
@@ -420,7 +409,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
   ): Promise<UniversityDetailResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const reference = this.db()
+    const reference = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
     const snapshot = await reference.get();
@@ -429,7 +418,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     }
     const doc = snapshot.data() as UniversityDocument;
 
-    const classesSnapshot = await this.db()
+    const classesSnapshot = await getFirestore()
       .collection(
         `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
       )
@@ -463,12 +452,12 @@ export class UniversitiesServiceImpl implements UniversitiesService {
         toClassResponse(classDoc.id, classDoc.data() as ClassDocument),
       ),
     };
-  }
+  },
 
   async remove(caller: Caller, universityId: string): Promise<void> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
     const snapshot = await universityRef.get();
@@ -477,17 +466,17 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     }
     assertDraftStatus((snapshot.data() as UniversityDocument).status);
 
-    const classesSnapshot = await this.db()
+    const classesSnapshot = await getFirestore()
       .collection(
         `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
       )
       .get();
-    const grantsSnapshot = await this.db()
+    const grantsSnapshot = await getFirestore()
       .collection(ROLE_GRANTS_COLLECTION)
       .where("universityId", "==", universityId)
       .get();
 
-    const batch = this.db().batch();
+    const batch = getFirestore().batch();
     for (const classDoc of classesSnapshot.docs) {
       batch.delete(classDoc.ref);
     }
@@ -496,7 +485,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     }
     batch.delete(universityRef);
     await batch.commit();
-  }
+  },
 
   async submit(
     caller: Caller,
@@ -504,11 +493,11 @@ export class UniversitiesServiceImpl implements UniversitiesService {
   ): Promise<UniversityResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const snapshot = await txn.get(universityRef);
       if (!snapshot.exists) {
         throw new NotFoundError("University not found");
@@ -517,7 +506,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       assertTransition(current.status, "submitted");
 
       const classesSnapshot = await txn.get(
-        this.db()
+        getFirestore()
           .collection(
             `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
           )
@@ -541,7 +530,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       universityId,
       (await universityRef.get()).data() as UniversityDocument,
     );
-  }
+  },
 
   async close(
     caller: Caller,
@@ -549,11 +538,11 @@ export class UniversitiesServiceImpl implements UniversitiesService {
   ): Promise<UniversityResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const snapshot = await txn.get(universityRef);
       if (!snapshot.exists) {
         throw new NotFoundError("University not found");
@@ -571,7 +560,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       universityId,
       (await universityRef.get()).data() as UniversityDocument,
     );
-  }
+  },
 
   async approve(
     caller: Caller,
@@ -579,11 +568,11 @@ export class UniversitiesServiceImpl implements UniversitiesService {
   ): Promise<UniversityResponse> {
     requireSuperAdmin(caller);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const snapshot = await txn.get(universityRef);
       if (!snapshot.exists) {
         throw new NotFoundError("University not found");
@@ -603,7 +592,7 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       universityId,
       (await universityRef.get()).data() as UniversityDocument,
     );
-  }
+  },
 
   async reject(
     caller: Caller,
@@ -612,11 +601,11 @@ export class UniversitiesServiceImpl implements UniversitiesService {
   ): Promise<UniversityResponse> {
     requireSuperAdmin(caller);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const snapshot = await txn.get(universityRef);
       if (!snapshot.exists) {
         throw new NotFoundError("University not found");
@@ -635,12 +624,12 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       universityId,
       (await universityRef.get()).data() as UniversityDocument,
     );
-  }
+  },
 
   async listReviewQueue(caller: Caller): Promise<ReviewQueueResponse> {
     requireSuperAdmin(caller);
 
-    const snapshot = await this.db()
+    const snapshot = await getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .where("status", "==", "submitted")
       .orderBy("submittedAt", "asc")
@@ -650,13 +639,16 @@ export class UniversitiesServiceImpl implements UniversitiesService {
       snapshot.docs.map(async doc => {
         const data = doc.data() as UniversityDocument;
         const [classCountResult, userSnapshot] = await Promise.all([
-          this.db()
+          getFirestore()
             .collection(
               `${UNIVERSITIES_COLLECTION}/${doc.id}/${CLASSES_SUBCOLLECTION}`,
             )
             .count()
             .get(),
-          this.db().collection(USERS_COLLECTION).doc(data.createdByUid).get(),
+          getFirestore()
+            .collection(USERS_COLLECTION)
+            .doc(data.createdByUid)
+            .get(),
         ]);
         const user = userSnapshot.exists
           ? (userSnapshot.data() as UserDocument)
@@ -675,7 +667,5 @@ export class UniversitiesServiceImpl implements UniversitiesService {
     );
 
     return { universities };
-  }
-}
-
-export const universitiesService = new UniversitiesServiceImpl();
+  },
+};

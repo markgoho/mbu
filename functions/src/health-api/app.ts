@@ -15,19 +15,13 @@ import { SERVICE_KEYS, type PartialServices } from "./types/services.js";
 export function createApp(services?: PartialServices) {
   const resolvedHealthService = services?.healthService ?? healthService;
 
-  return (
-    new Elysia({ adapter: node(), prefix: "/api" })
-      .decorate(SERVICE_KEYS.LOGGER, services?.logger ?? firebaseLogger)
-      .decorate(SERVICE_KEYS.HEALTH_SERVICE, resolvedHealthService)
-      .get(
-        "/health",
-        ({ healthService: service }) => healthRoute(service),
-        {
-          response: HealthResponseSchema,
-        },
-      )
-      .use(createHealthPlugin(services))
-  );
+  return new Elysia({ adapter: node(), prefix: "/api" })
+    .decorate(SERVICE_KEYS.LOGGER, services?.logger ?? firebaseLogger)
+    .decorate(SERVICE_KEYS.HEALTH_SERVICE, resolvedHealthService)
+    .get("/health", ({ healthService: service }) => healthRoute(service), {
+      response: HealthResponseSchema,
+    })
+    .use(createHealthPlugin(services));
 }
 
 export const app = createApp();

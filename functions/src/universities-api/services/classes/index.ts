@@ -1,9 +1,4 @@
-import {
-  FieldValue,
-  getFirestore,
-  Timestamp,
-  type Firestore,
-} from "firebase-admin/firestore";
+import { FieldValue, getFirestore, Timestamp } from "firebase-admin/firestore";
 import { findBadge, MERIT_BADGES } from "../../../catalog/merit-badges.js";
 import {
   CLASSES_SUBCOLLECTION,
@@ -76,13 +71,7 @@ function validatePeriodIds(
   }
 }
 
-export class ClassesServiceImpl implements ClassesService {
-  constructor(private readonly database?: Firestore) {}
-
-  private db(): Firestore {
-    return this.database ?? getFirestore();
-  }
-
+export const ClassesServiceImpl: ClassesService = {
   async create(
     caller: Caller,
     universityId: string,
@@ -95,7 +84,7 @@ export class ClassesServiceImpl implements ClassesService {
       throw new ValidationError(`Unknown badge slug: ${request.badgeSlug}`);
     }
 
-    const userSnapshot = await this.db()
+    const userSnapshot = await getFirestore()
       .collection(USERS_COLLECTION)
       .doc(caller.uid)
       .get();
@@ -104,20 +93,20 @@ export class ClassesServiceImpl implements ClassesService {
     }
     const user = userSnapshot.data() as UserDocument;
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
-    const classRef = this.db()
+    const classRef = getFirestore()
       .collection(
         `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
       )
       .doc();
     const classId = classRef.id;
-    const grantRef = this.db()
+    const grantRef = getFirestore()
       .collection(ROLE_GRANTS_COLLECTION)
       .doc(roleGrantId(classId, "counselor", caller.uid));
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const uniSnapshot = await txn.get(universityRef);
       if (!uniSnapshot.exists) {
         throw new NotFoundError("University not found");
@@ -167,7 +156,7 @@ export class ClassesServiceImpl implements ClassesService {
 
     const written = await classRef.get();
     return toClassResponse(classId, written.data() as ClassDocument);
-  }
+  },
 
   async patch(
     caller: Caller,
@@ -177,14 +166,14 @@ export class ClassesServiceImpl implements ClassesService {
   ): Promise<ClassResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
-    const classRef = this.db().doc(
+    const classRef = getFirestore().doc(
       `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}/${classId}`,
     );
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const [uniSnapshot, classSnapshot] = await Promise.all([
         txn.get(universityRef),
         txn.get(classRef),
@@ -233,7 +222,7 @@ export class ClassesServiceImpl implements ClassesService {
 
     const refreshed = await classRef.get();
     return toClassResponse(classId, refreshed.data() as ClassDocument);
-  }
+  },
 
   async remove(
     caller: Caller,
@@ -242,14 +231,14 @@ export class ClassesServiceImpl implements ClassesService {
   ): Promise<void> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = this.db()
+    const universityRef = getFirestore()
       .collection(UNIVERSITIES_COLLECTION)
       .doc(universityId);
-    const classRef = this.db().doc(
+    const classRef = getFirestore().doc(
       `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}/${classId}`,
     );
 
-    await this.db().runTransaction(async txn => {
+    await getFirestore().runTransaction(async txn => {
       const [uniSnapshot, classSnapshot] = await Promise.all([
         txn.get(universityRef),
         txn.get(classRef),
@@ -262,7 +251,7 @@ export class ClassesServiceImpl implements ClassesService {
       }
       assertEditableStatus((uniSnapshot.data() as UniversityDocument).status);
 
-      const grantsQuery = this.db()
+      const grantsQuery = getFirestore()
         .collection(ROLE_GRANTS_COLLECTION)
         .where("scopeId", "==", classId)
         .where("role", "==", "counselor");
@@ -273,7 +262,7 @@ export class ClassesServiceImpl implements ClassesService {
         txn.delete(grant.ref);
       }
     });
-  }
+  },
 
   async listBadges(): Promise<BadgeCatalogResponse> {
     return {
@@ -283,7 +272,5 @@ export class ClassesServiceImpl implements ClassesService {
         eagleRequired: b.eagleRequired,
       })),
     };
-  }
-}
-
-export const classesService = new ClassesServiceImpl();
+  },
+};
