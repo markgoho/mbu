@@ -170,15 +170,17 @@ export class UsersServiceImpl implements UsersService {
       await this.scouts.remove(caller, scoutDoc.id);
     }
 
-    const counselorGrants = await this.db()
+    // Revoke every remaining active grant — counselor grants and the
+    // chancellor grants on draft/closed events allowed past the block above —
+    // so no active grant is left pointing at the deleted account.
+    const activeGrants = await this.db()
       .collection(ROLE_GRANTS_COLLECTION)
       .where("uid", "==", caller.uid)
-      .where("role", "==", "counselor")
       .where("status", "==", "active")
       .get();
-    if (!counselorGrants.empty) {
+    if (!activeGrants.empty) {
       const batch = this.db().batch();
-      for (const grant of counselorGrants.docs) {
+      for (const grant of activeGrants.docs) {
         batch.update(grant.ref, {
           status: "revoked",
           updatedAt: FieldValue.serverTimestamp(),
@@ -187,6 +189,10 @@ export class UsersServiceImpl implements UsersService {
       await batch.commit();
     }
 
+    // Delete the PII-bearing user doc before the Auth user: this cascade is
+    // retry-tolerant rather than atomic, and removing the PII first means a
+    // failure here leaves only a login with no data behind it (a re-login
+    // re-bootstraps a blank doc), never orphaned PII.
     await this.db().collection(USERS_COLLECTION).doc(caller.uid).delete();
     await this.authAdmin.deleteUser(caller.uid);
   }
