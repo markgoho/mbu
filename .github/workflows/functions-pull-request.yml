@@ -18,6 +18,16 @@ permissions:
   pull-requests: write
 
 jobs:
+  arch:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+      - name: Check API module architecture
+        working-directory: functions
+        run: npm run check:arch
+
   lint:
     if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: ubuntu-latest

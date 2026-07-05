@@ -198,6 +198,26 @@ The scraper in `scripts/sync-requirements-hybrid.ts` uses:
   - Auto-organize imports
 - **TypeScript**: Strict mode enabled, Bun module resolution
 
+## Event Platform (`functions/` + `app/`)
+
+The self-serve event platform (issue #94) is a separate stack from the Hugo
+site: an Angular SPA in `app/` and per-domain Elysia APIs on Cloud Functions in
+`functions/`. Its API modules follow a fixed architecture — plugin + one logic
+function per route, plain-object services, and per-route boundary tests — with
+`functions/src/health-api/` as the reference module.
+
+**Before adding or changing an API module, read
+[docs/adr/0001-api-module-architecture.md](docs/adr/0001-api-module-architecture.md).**
+The conventions are enforced, so non-conforming code fails CI:
+
+- `cd functions && npm run lint` — ESLint bans service classes, mock-call
+  assertions, test lifecycle hooks, and mocking `firebase-admin` internals.
+- `cd functions && npm run check:arch` — tests must live in `routes/`, and every
+  deployed `*-api` module must have `routes/` + `plugins/` + `app.ts` +
+  `handler.ts`.
+
+Angular spec conventions are enforced the same way via `app/eslint.config.js`.
+
 ## Important Notes
 
 - Main branch is `trunk`, not `main` or `master`

@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
+    "check:arch": "bash scripts/check-architecture.sh",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "typecheck": "tsc --noEmit",
