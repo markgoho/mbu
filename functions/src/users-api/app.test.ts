@@ -1,5 +1,9 @@
 import { describe, expect, it } from "bun:test";
 import type { DecodedIdToken } from "firebase-admin/auth";
+import {
+  ERROR_CODES,
+  ForbiddenError,
+} from "../shared-api/errors/http-error.js";
 import type { TokenVerifier } from "../shared-api/plugins/require-auth.js";
 import { handleRequest } from "../test-utils/handle-request.js";
 import { createApp } from "./app.js";
@@ -54,6 +58,7 @@ const usersService: UsersService = {
       acceptedPrivacyAt: "2026-07-03T00:00:00.000Z",
       acceptedPolicyVersion: "2026-07-04",
     }),
+  deleteAccount: () => Promise.resolve(),
 };
 
 const scoutsService: ScoutsService = {
@@ -176,5 +181,45 @@ describe("users-api routes", () => {
     expect(response.status).toBe(200);
     const body = (await response.json()) as { scouts: unknown[] };
     expect(body.scouts).toEqual([]);
+  });
+
+  it("DELETE /api/users/me/scouts/:scoutId removes a scout", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/users/me/scouts/s1", "DELETE"),
+    );
+    expect(response.status).toBe(204);
+  });
+
+  it("DELETE /api/users/me deletes the account", async () => {
+    const response = await handleRequest(
+      app(),
+      authed("/api/users/me", "DELETE"),
+    );
+    expect(response.status).toBe(204);
+  });
+
+  it("DELETE /api/users/me maps an active-chancellor block to 403 close_events_first", async () => {
+    const blockedApp = createApp({
+      usersService: {
+        ...usersService,
+        deleteAccount: () =>
+          Promise.reject(
+            new ForbiddenError(
+              "Close your events first",
+              ERROR_CODES.CLOSE_EVENTS_FIRST,
+            ),
+          ),
+      },
+      scoutsService,
+      verifyToken: verified,
+    });
+    const response = await handleRequest(
+      blockedApp,
+      authed("/api/users/me", "DELETE"),
+    );
+    expect(response.status).toBe(403);
+    const body = (await response.json()) as { code?: string };
+    expect(body.code).toBe(ERROR_CODES.CLOSE_EVENTS_FIRST);
   });
 });

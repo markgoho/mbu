@@ -41,6 +41,11 @@ export const routes: Routes = [
     loadComponent: () => import('./onboarding/onboarding').then((m) => m.Onboarding),
   },
   {
+    path: 'settings',
+    canActivate: [requireAuth, requireVerified, requireOnboarded],
+    loadComponent: () => import('./settings/settings').then((m) => m.Settings),
+  },
+  {
     path: 'universities',
     canActivate: [requireAuth, requireVerified, requireOnboarded],
     children: [

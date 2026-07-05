@@ -1,0 +1,36 @@
+<main class="settings">
+  <h1>Settings</h1>
+
+  @if (errorMessage()) {
+    <p class="settings__error" role="alert">{{ errorMessage() }}</p>
+  }
+
+  <section class="settings__scouts" aria-label="Your scouts">
+    <h2>Your scouts</h2>
+    @if (scoutList().length === 0) {
+      <p>You don't have any scouts yet.</p>
+    } @else {
+      <ul>
+        @for (scout of scoutList(); track scout.scoutId) {
+          <li>
+            {{ scout.firstName }} {{ scout.lastName }}
+            <button
+              type="button"
+              [disabled]="pendingScoutId() === scout.scoutId"
+              (click)="onDeleteScout(scout.scoutId, scout.firstName + ' ' + scout.lastName)"
+            >
+              Delete
+            </button>
+          </li>
+        }
+      </ul>
+    }
+  </section>
+
+  <section class="settings__account" aria-label="Account">
+    <h2>Account</h2>
+    <button type="button" [disabled]="isDeletingAccount()" (click)="onDeleteAccount()">
+      Delete my account
+    </button>
+  </section>
+</main>

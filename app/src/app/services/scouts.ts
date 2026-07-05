@@ -1,11 +1,7 @@
 import { HttpClient, httpResource } from '@angular/common/http';
 import { inject, Service } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import type {
-  ScoutListResponse,
-  ScoutRequest,
-  ScoutResponse,
-} from '../api-types/users-api.types';
+import type { ScoutListResponse, ScoutRequest, ScoutResponse } from '../api-types/users-api.types';
 
 @Service()
 export class Scouts {
@@ -23,5 +19,10 @@ export class Scouts {
     );
     this.reload();
     return result;
+  }
+
+  async remove(scoutId: string): Promise<void> {
+    await firstValueFrom(this.httpClient.delete(`/api/users/me/scouts/${scoutId}`));
+    this.reload();
   }
 }
