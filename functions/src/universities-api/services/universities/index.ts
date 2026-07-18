@@ -1,4 +1,10 @@
-import { FieldValue, getFirestore, Timestamp } from "firebase-admin/firestore";
+import {
+  FieldValue,
+  getFirestore,
+  Timestamp,
+  type DocumentReference,
+  type Transaction,
+} from "firebase-admin/firestore";
 import {
   CLASSES_SUBCOLLECTION,
   type ClassDocument,
@@ -11,6 +17,7 @@ import {
 import {
   UNIVERSITIES_COLLECTION,
   type UniversityDocument,
+  type UniversityStatus,
 } from "../../../collections/universities.js";
 import {
   USERS_COLLECTION,
@@ -71,6 +78,47 @@ function toUniversityResponse(
     createdAt: toIso(doc.createdAt) ?? "",
     updatedAt: toIso(doc.updatedAt) ?? "",
   };
+}
+
+async function transitionUniversity({
+  universityId,
+  targetStatus,
+  updateFields = {},
+  beforeUpdate,
+}: {
+  universityId: string;
+  targetStatus: UniversityStatus;
+  updateFields?: Record<string, unknown>;
+  beforeUpdate?: (
+    txn: Transaction,
+    universityRef: DocumentReference,
+  ) => Promise<void>;
+}): Promise<UniversityResponse> {
+  const universityRef = getFirestore()
+    .collection(UNIVERSITIES_COLLECTION)
+    .doc(universityId);
+
+  await getFirestore().runTransaction(async txn => {
+    const snapshot = await txn.get(universityRef);
+    if (!snapshot.exists) {
+      throw new NotFoundError("University not found");
+    }
+    const current = snapshot.data() as UniversityDocument;
+    assertTransition(current.status, targetStatus);
+
+    await beforeUpdate?.(txn, universityRef);
+
+    txn.update(universityRef, {
+      status: targetStatus,
+      ...updateFields,
+      updatedAt: FieldValue.serverTimestamp(),
+    });
+  });
+
+  return toUniversityResponse(
+    universityId,
+    (await universityRef.get()).data() as UniversityDocument,
+  );
 }
 
 function toClassResponse(classId: string, doc: ClassDocument): ClassResponse {
@@ -489,43 +537,28 @@ export const UniversitiesServiceImpl: UniversitiesService = {
   ): Promise<UniversityResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = getFirestore()
-      .collection(UNIVERSITIES_COLLECTION)
-      .doc(universityId);
-
-    await getFirestore().runTransaction(async txn => {
-      const snapshot = await txn.get(universityRef);
-      if (!snapshot.exists) {
-        throw new NotFoundError("University not found");
-      }
-      const current = snapshot.data() as UniversityDocument;
-      assertTransition(current.status, "submitted");
-
-      const classesSnapshot = await txn.get(
-        getFirestore()
-          .collection(
-            `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
-          )
-          .limit(1),
-      );
-      if (classesSnapshot.empty) {
-        throw new ValidationError(
-          "At least one class is required to submit for review",
-        );
-      }
-
-      txn.update(universityRef, {
-        status: "submitted",
+    return transitionUniversity({
+      universityId,
+      targetStatus: "submitted",
+      updateFields: {
         submittedAt: FieldValue.serverTimestamp(),
         reviewNote: null,
-        updatedAt: FieldValue.serverTimestamp(),
-      });
+      },
+      beforeUpdate: async txn => {
+        const classesSnapshot = await txn.get(
+          getFirestore()
+            .collection(
+              `${UNIVERSITIES_COLLECTION}/${universityId}/${CLASSES_SUBCOLLECTION}`,
+            )
+            .limit(1),
+        );
+        if (classesSnapshot.empty) {
+          throw new ValidationError(
+            "At least one class is required to submit for review",
+          );
+        }
+      },
     });
-
-    return toUniversityResponse(
-      universityId,
-      (await universityRef.get()).data() as UniversityDocument,
-    );
   },
 
   async close(
@@ -534,28 +567,7 @@ export const UniversitiesServiceImpl: UniversitiesService = {
   ): Promise<UniversityResponse> {
     await assertChancellorOf(caller, universityId);
 
-    const universityRef = getFirestore()
-      .collection(UNIVERSITIES_COLLECTION)
-      .doc(universityId);
-
-    await getFirestore().runTransaction(async txn => {
-      const snapshot = await txn.get(universityRef);
-      if (!snapshot.exists) {
-        throw new NotFoundError("University not found");
-      }
-      const current = snapshot.data() as UniversityDocument;
-      assertTransition(current.status, "closed");
-
-      txn.update(universityRef, {
-        status: "closed",
-        updatedAt: FieldValue.serverTimestamp(),
-      });
-    });
-
-    return toUniversityResponse(
-      universityId,
-      (await universityRef.get()).data() as UniversityDocument,
-    );
+    return transitionUniversity({ universityId, targetStatus: "closed" });
   },
 
   async approve(
@@ -564,30 +576,14 @@ export const UniversitiesServiceImpl: UniversitiesService = {
   ): Promise<UniversityResponse> {
     requireSuperAdmin(caller);
 
-    const universityRef = getFirestore()
-      .collection(UNIVERSITIES_COLLECTION)
-      .doc(universityId);
-
-    await getFirestore().runTransaction(async txn => {
-      const snapshot = await txn.get(universityRef);
-      if (!snapshot.exists) {
-        throw new NotFoundError("University not found");
-      }
-      const current = snapshot.data() as UniversityDocument;
-      assertTransition(current.status, "published");
-
-      txn.update(universityRef, {
-        status: "published",
+    return transitionUniversity({
+      universityId,
+      targetStatus: "published",
+      updateFields: {
         publishedAt: FieldValue.serverTimestamp(),
         reviewNote: null,
-        updatedAt: FieldValue.serverTimestamp(),
-      });
+      },
     });
-
-    return toUniversityResponse(
-      universityId,
-      (await universityRef.get()).data() as UniversityDocument,
-    );
   },
 
   async reject(
@@ -597,29 +593,11 @@ export const UniversitiesServiceImpl: UniversitiesService = {
   ): Promise<UniversityResponse> {
     requireSuperAdmin(caller);
 
-    const universityRef = getFirestore()
-      .collection(UNIVERSITIES_COLLECTION)
-      .doc(universityId);
-
-    await getFirestore().runTransaction(async txn => {
-      const snapshot = await txn.get(universityRef);
-      if (!snapshot.exists) {
-        throw new NotFoundError("University not found");
-      }
-      const current = snapshot.data() as UniversityDocument;
-      assertTransition(current.status, "rejected");
-
-      txn.update(universityRef, {
-        status: "rejected",
-        reviewNote: note,
-        updatedAt: FieldValue.serverTimestamp(),
-      });
-    });
-
-    return toUniversityResponse(
+    return transitionUniversity({
       universityId,
-      (await universityRef.get()).data() as UniversityDocument,
-    );
+      targetStatus: "rejected",
+      updateFields: { reviewNote: note },
+    });
   },
 
   async listReviewQueue(caller: Caller): Promise<ReviewQueueResponse> {
