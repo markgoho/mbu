@@ -1,13 +1,25 @@
 import { Elysia } from "elysia";
+import { healthRoute } from "../routes/health.js";
+import { HealthResponseSchema } from "../schemas/health-schemas.js";
 import { healthService } from "../services/health/index.js";
-import { SERVICE_KEYS, type PartialServices } from "../types/services.js";
+import type { HealthService } from "../services/health/interface.js";
+
+export interface HealthApiServices {
+  healthService: HealthService;
+}
+
+export type PartialHealthApiServices = Partial<HealthApiServices>;
 
 /**
- * Health API plugin — placeholder for future authenticated routes (#80+).
+ * Health routes. Dependencies are resolved once here and passed explicitly to
+ * route logic through closures.
  */
-export function createHealthPlugin(services?: PartialServices) {
-  return new Elysia({ name: "health-api" }).decorate(
-    SERVICE_KEYS.HEALTH_SERVICE,
-    services?.healthService ?? healthService,
+export function createHealthPlugin(services?: PartialHealthApiServices) {
+  const resolvedHealthService = services?.healthService ?? healthService;
+
+  return new Elysia({ name: "health-api" }).get(
+    "/health",
+    () => healthRoute(resolvedHealthService),
+    { response: HealthResponseSchema },
   );
 }

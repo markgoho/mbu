@@ -13,10 +13,7 @@ import {
   ScheduleResponseSchema,
 } from "../schemas/registration-schemas.js";
 import { registrationsService as defaultRegistrationsService } from "../services/registrations/index.js";
-import {
-  SERVICE_KEYS,
-  type PartialRegistrationsApiServices,
-} from "../types/services.js";
+import type { PartialRegistrationsApiServices } from "../types/services.js";
 
 /**
  * Registrations plugin. Every route runs behind `requireAuth` (there is no
@@ -30,23 +27,21 @@ export function createRegistrationsPlugin(
   services?: PartialRegistrationsApiServices,
 ) {
   const verifyToken = services?.verifyToken ?? verifyAuthToken;
+  const registrations =
+    services?.registrationsService ?? defaultRegistrationsService;
 
   return new Elysia({ name: "registrations" })
     .onError(mapError)
-    .decorate(
-      SERVICE_KEYS.REGISTRATIONS_SERVICE,
-      services?.registrationsService ?? defaultRegistrationsService,
-    )
     .resolve(requireAuth(verifyToken))
     .post(
       "/registrations/:universityId/:classId",
-      ({ caller, params, body, registrationsService }) =>
+      ({ caller, params, body }) =>
         registerLogic({
           caller,
           universityId: params.universityId,
           classId: params.classId,
           body,
-          registrationsService,
+          registrationsService: registrations,
         }),
       {
         body: RegisterRequestSchema,
@@ -55,33 +50,33 @@ export function createRegistrationsPlugin(
     )
     .delete(
       "/registrations/:universityId/:classId/:scoutId",
-      ({ caller, params, registrationsService, set }) =>
+      ({ caller, params, set }) =>
         cancelLogic({
           caller,
           universityId: params.universityId,
           classId: params.classId,
           scoutId: params.scoutId,
-          registrationsService,
+          registrationsService: registrations,
           set,
         }),
     )
     .get(
       "/registrations/:universityId/roster",
-      ({ caller, params, registrationsService }) =>
+      ({ caller, params }) =>
         listRosterLogic({
           caller,
           universityId: params.universityId,
-          registrationsService,
+          registrationsService: registrations,
         }),
       { response: RosterResponseSchema },
     )
     .get(
       "/registrations/:universityId",
-      ({ caller, params, registrationsService }) =>
+      ({ caller, params }) =>
         listScheduleLogic({
           caller,
           universityId: params.universityId,
-          registrationsService,
+          registrationsService: registrations,
         }),
       { response: ScheduleResponseSchema },
     );

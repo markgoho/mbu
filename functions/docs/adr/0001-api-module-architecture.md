@@ -29,8 +29,11 @@ reference:
    `services/` · `test-utils/create-<name>-test-plugin.ts` · `types/`.
 2. **`app.ts` is a thin factory:**
    `createApp(services?) => new Elysia({ adapter: node(), prefix: "/api" }).onError(mapError).use(create<Name>Plugin(services))`.
-   Authentication lives in the plugin guard (`.resolve(requireAuth(...))`);
-   public routes stay outside it. Domain authorization stays in services.
+   Each plugin resolves injected or production dependencies once, then passes them
+   explicitly to route logic through closures; do not decorate dependencies onto
+   the Elysia context. Authentication lives in the plugin guard
+   (`.resolve(requireAuth(...))`); public routes stay outside it. Domain
+   authorization stays in services.
 3. **Services are plain object literals** typed to an interface
    (`export const XServiceImpl: X = { … }`) — never classes. Call
    `getFirestore()` inline and take cross-cutting deps (`logger`) as function
