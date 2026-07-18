@@ -55,6 +55,15 @@ const location = {
   zip: "12345",
 };
 
+export const UNIVERSITY_IDS = {
+  DEFAULT: "uni1",
+  MISSING: "missing-uni",
+  DRAFT: "draft-uni",
+  FORBIDDEN: "forbidden-uni",
+  WITHOUT_CLASSES: "no-classes-uni",
+  ILLEGAL_TRANSITION: "illegal-uni",
+} as const;
+
 const sampleUniversity = {
   id: "uni1",
   title: "Spring MBU",
@@ -124,15 +133,16 @@ const samplePublicUniversity = {
 };
 
 /**
- * Default mock universities service. Scenario ids drive failure paths:
- * `missing-uni`/`draft-uni` → 404, `forbidden-uni` → 403, `no-classes-uni`
- * → 400 (submit), `illegal-uni` → 409 (any transition). Admin methods reject a
+ * Default mock University module. `UNIVERSITY_IDS` selects its failure paths:
+ * MISSING/DRAFT → 404, FORBIDDEN → 403, WITHOUT_CLASSES → 400 (submit), and
+ * ILLEGAL_TRANSITION → 409 (any transition). Admin methods reject a
  * non-super-admin caller with 403.
  */
 function defaultUniversitiesService(): UniversitiesService {
   return {
     getPublic: mock(universityId =>
-      universityId === "draft-uni" || universityId === "missing-uni"
+      universityId === UNIVERSITY_IDS.DRAFT ||
+      universityId === UNIVERSITY_IDS.MISSING
         ? Promise.reject(new NotFoundError("University not found"))
         : Promise.resolve({ ...samplePublicUniversity, id: universityId }),
     ),
@@ -165,7 +175,7 @@ function defaultUniversitiesService(): UniversitiesService {
       }),
     ),
     getDetail: mock((_caller, universityId) =>
-      universityId === "forbidden-uni"
+      universityId === UNIVERSITY_IDS.FORBIDDEN
         ? Promise.reject(
             new ForbiddenError("Not chancellor of this university"),
           )
@@ -176,14 +186,14 @@ function defaultUniversitiesService(): UniversitiesService {
     ),
     remove: mock(() => Promise.resolve()),
     submit: mock((_caller, universityId) => {
-      if (universityId === "no-classes-uni") {
+      if (universityId === UNIVERSITY_IDS.WITHOUT_CLASSES) {
         return Promise.reject(
           new ValidationError(
             "At least one class is required to submit for review",
           ),
         );
       }
-      if (universityId === "illegal-uni") {
+      if (universityId === UNIVERSITY_IDS.ILLEGAL_TRANSITION) {
         return Promise.reject(
           new ConflictError("Cannot transition from published to submitted"),
         );
@@ -196,7 +206,7 @@ function defaultUniversitiesService(): UniversitiesService {
       });
     }),
     close: mock((_caller, universityId) =>
-      universityId === "illegal-uni"
+      universityId === UNIVERSITY_IDS.ILLEGAL_TRANSITION
         ? Promise.reject(
             new ConflictError("Cannot transition from draft to closed"),
           )
@@ -212,7 +222,7 @@ function defaultUniversitiesService(): UniversitiesService {
           new ForbiddenError("Super-admin privileges required"),
         );
       }
-      if (universityId === "illegal-uni") {
+      if (universityId === UNIVERSITY_IDS.ILLEGAL_TRANSITION) {
         return Promise.reject(
           new ConflictError("Cannot transition from draft to published"),
         );
@@ -229,7 +239,7 @@ function defaultUniversitiesService(): UniversitiesService {
           new ForbiddenError("Super-admin privileges required"),
         );
       }
-      if (universityId === "illegal-uni") {
+      if (universityId === UNIVERSITY_IDS.ILLEGAL_TRANSITION) {
         return Promise.reject(
           new ConflictError("Cannot transition from draft to rejected"),
         );

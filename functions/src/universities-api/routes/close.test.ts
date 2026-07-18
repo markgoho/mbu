@@ -2,11 +2,12 @@ import { describe, expect, it } from "bun:test";
 import { handleRequest } from "../../test-utils/handle-request.js";
 import {
   createUniversitiesTestPlugin,
+  UNIVERSITY_IDS,
   unverified,
 } from "../test-utils/create-universities-test-plugin.js";
 
 function setup({
-  id = "uni1",
+  id = UNIVERSITY_IDS.DEFAULT,
   authToken = "test-token",
   verifyToken,
 }: {
@@ -34,7 +35,7 @@ describe("POST /api/universities/:id/close", () => {
   });
 
   it("returns 409 on an illegal transition", async () => {
-    const { app, request } = setup({ id: "illegal-uni" });
+    const { app, request } = setup({ id: UNIVERSITY_IDS.ILLEGAL_TRANSITION });
     expect((await handleRequest(app, request)).status).toBe(409);
   });
 

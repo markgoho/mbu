@@ -38,6 +38,7 @@ import type {
   UniversityPatchRequest,
   UniversityResponse,
 } from "../../schemas/university-schemas.js";
+import { toPeriodsResponse } from "../periods/index.js";
 import { assertTransition } from "../transitions.js";
 import {
   assertDraftStatus,
@@ -391,12 +392,7 @@ export const UniversitiesServiceImpl: UniversitiesService = {
       registrationOpensAt: toIso(doc.registrationOpensAt),
       registrationClosesAt: toIso(doc.registrationClosesAt) ?? "",
       location: doc.location,
-      periods: doc.periods.map(p => ({
-        periodId: p.periodId,
-        label: p.label,
-        startsAt: toIso(p.startsAt) ?? "",
-        endsAt: toIso(p.endsAt) ?? "",
-      })),
+      periods: toPeriodsResponse(doc.periods).periods,
       classes: classesSnapshot.docs.map(classDoc =>
         toPublicClassResponse(classDoc.id, classDoc.data() as ClassDocument),
       ),

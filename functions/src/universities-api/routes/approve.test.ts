@@ -3,12 +3,13 @@ import { handleRequest } from "../../test-utils/handle-request.js";
 import {
   createUniversitiesTestPlugin,
   superAdmin,
+  UNIVERSITY_IDS,
   unverified,
   verified,
 } from "../test-utils/create-universities-test-plugin.js";
 
 function setup({
-  id = "uni1",
+  id = UNIVERSITY_IDS.DEFAULT,
   authToken = "admin-token",
   verifyToken = superAdmin,
 }: {
@@ -37,7 +38,7 @@ describe("POST /api/admin/universities/:id/approve", () => {
   });
 
   it("returns 409 on an illegal transition", async () => {
-    const { app, request } = setup({ id: "illegal-uni" });
+    const { app, request } = setup({ id: UNIVERSITY_IDS.ILLEGAL_TRANSITION });
     expect((await handleRequest(app, request)).status).toBe(409);
   });
 

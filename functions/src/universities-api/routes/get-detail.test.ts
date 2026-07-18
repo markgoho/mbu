@@ -2,11 +2,12 @@ import { describe, expect, it } from "bun:test";
 import { handleRequest } from "../../test-utils/handle-request.js";
 import {
   createUniversitiesTestPlugin,
+  UNIVERSITY_IDS,
   unverified,
 } from "../test-utils/create-universities-test-plugin.js";
 
 function setup({
-  id = "uni1",
+  id = UNIVERSITY_IDS.DEFAULT,
   authToken = "test-token",
   verifyToken,
 }: {
@@ -44,7 +45,7 @@ describe("GET /api/universities/:id", () => {
   });
 
   it("propagates a 403 when the caller is not the chancellor", async () => {
-    const { app, request } = setup({ id: "forbidden-uni" });
+    const { app, request } = setup({ id: UNIVERSITY_IDS.FORBIDDEN });
     expect((await handleRequest(app, request)).status).toBe(403);
   });
 });

@@ -1,8 +1,11 @@
 import { describe, expect, it } from "bun:test";
 import { handleRequest } from "../../test-utils/handle-request.js";
-import { createUniversitiesTestPlugin } from "../test-utils/create-universities-test-plugin.js";
+import {
+  createUniversitiesTestPlugin,
+  UNIVERSITY_IDS,
+} from "../test-utils/create-universities-test-plugin.js";
 
-function setup({ id = "uni1" }: { id?: string } = {}) {
+function setup({ id = UNIVERSITY_IDS.DEFAULT }: { id?: string } = {}) {
   const app = createUniversitiesTestPlugin();
   const request = new Request(
     `http://localhost/api/universities/${id}/public`,
@@ -29,7 +32,7 @@ describe("GET /api/universities/:id/public", () => {
   });
 
   it("returns 404 for a non-published or missing university", async () => {
-    const { app, request } = setup({ id: "missing-uni" });
+    const { app, request } = setup({ id: UNIVERSITY_IDS.MISSING });
     const response = await handleRequest(app, request);
     expect(response.status).toBe(404);
   });

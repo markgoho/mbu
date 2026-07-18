@@ -38,7 +38,7 @@ function chunk10<T>(items: T[]): T[][] {
   return chunks;
 }
 
-function toPeriodsResponse(periods: Period[]): PeriodsResponse {
+export function toPeriodsResponse(periods: Period[]): PeriodsResponse {
   return {
     periods: periods.map(p => ({
       periodId: p.periodId,
