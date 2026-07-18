@@ -207,7 +207,7 @@ function per route, plain-object services, and per-route boundary tests — with
 `functions/src/health-api/` as the reference module.
 
 **Before adding or changing an API module, read
-[docs/adr/0001-api-module-architecture.md](docs/adr/0001-api-module-architecture.md).**
+[functions/docs/adr/0001-api-module-architecture.md](functions/docs/adr/0001-api-module-architecture.md).**
 The conventions are enforced, so non-conforming code fails CI:
 
 - `cd functions && npm run lint` — ESLint bans service classes, mock-call
@@ -230,3 +230,17 @@ Angular spec conventions are enforced the same way via `app/eslint.config.js`.
 ## Merit Badges
 
 A complete list of merit badges can be found at `scripts/merit-badges.ts`. If for any reason you need to loop over these merit badges, please use this file as an input.
+
+## Agent skills
+
+### Issue tracker
+
+Issues are tracked in GitHub Issues (`gh` CLI); external PRs are not treated as a triage surface. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Canonical role names are used as-is (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`functions/CONTEXT.md` + `functions/docs/adr/`). See `docs/agents/domain.md`.
