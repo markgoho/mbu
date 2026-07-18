@@ -11,7 +11,12 @@
       <app-status-badge [status]="data.university.status" />
       <a [routerLink]="['/universities', universityId(), 'roster']">View rosters</a>
       @if (data.university.status === 'draft') {
-        <button type="button" class="editor__delete" (click)="deleteUniversity()">
+        <button
+          type="button"
+          class="editor__delete"
+          [disabled]="actionPending()"
+          (click)="deleteUniversity()"
+        >
           Delete draft
         </button>
       }

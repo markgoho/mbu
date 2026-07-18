@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
+import { createUniversityAction } from '../../services/university-action';
 import type { ClassResponse, Period } from '../../api-types/universities-api.types';
 import { Universities } from '../../services/universities';
 import { ClassForm } from '../class-form/class-form';
@@ -20,6 +21,11 @@ export class ClassList {
 
   protected readonly showForm = signal(false);
   protected readonly editingClass = signal<ClassResponse | undefined>(undefined);
+  private readonly action = createUniversityAction(
+    this.universities.apiErrorMessage.bind(this.universities),
+  );
+  protected readonly actionPending = this.action.pending;
+  protected readonly actionError = this.action.error;
 
   protected startCreate(): void {
     this.editingClass.set(undefined);
@@ -37,7 +43,10 @@ export class ClassList {
   }
 
   protected async deleteClass(cls: ClassResponse): Promise<void> {
-    if (!globalThis.confirm(`Delete ${cls.badgeTitle}?`)) return;
-    await this.universities.deleteClass(this.universityId(), cls.classId);
+    await this.action.run({
+      confirm: `Delete ${cls.badgeTitle}?`,
+      action: () => this.universities.deleteClass(this.universityId(), cls.classId),
+      fallback: 'Could not delete this class.',
+    });
   }
 }

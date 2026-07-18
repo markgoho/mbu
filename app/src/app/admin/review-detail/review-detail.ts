@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { StatusBadge } from '../../shared/status-badge/status-badge';
+import { createUniversityAction } from '../../services/university-action';
 import { Universities } from '../../services/universities';
 
 @Component({
@@ -26,8 +27,11 @@ export class ReviewDetail {
 
   protected readonly showRejectForm = signal(false);
   protected readonly rejectNote = signal('');
-  protected readonly actionPending = signal(false);
-  protected readonly actionError = signal('');
+  private readonly action = createUniversityAction(
+    this.universities.apiErrorMessage.bind(this.universities),
+  );
+  protected readonly actionPending = this.action.pending;
+  protected readonly actionError = this.action.error;
 
   constructor() {
     effect(() => {
@@ -44,35 +48,21 @@ export class ReviewDetail {
   }
 
   protected async approve(): Promise<void> {
-    this.actionError.set('');
-    this.actionPending.set(true);
-    try {
-      await this.universities.approveUniversity(this.universityId());
-      await this.router.navigate(['/admin/review']);
-    } catch (error) {
-      this.actionError.set(
-        this.universities.apiErrorMessage(error, 'Could not approve this event.'),
-      );
-    } finally {
-      this.actionPending.set(false);
-    }
+    await this.action.run({
+      action: () => this.universities.approveUniversity(this.universityId()),
+      fallback: 'Could not approve this event.',
+      onSuccess: () => this.router.navigate(['/admin/review']),
+    });
   }
 
   protected async reject(): Promise<void> {
     const note = this.rejectNote().trim();
     if (!note) return;
 
-    this.actionError.set('');
-    this.actionPending.set(true);
-    try {
-      await this.universities.rejectUniversity(this.universityId(), note);
-      await this.router.navigate(['/admin/review']);
-    } catch (error) {
-      this.actionError.set(
-        this.universities.apiErrorMessage(error, 'Could not reject this event.'),
-      );
-    } finally {
-      this.actionPending.set(false);
-    }
+    await this.action.run({
+      action: () => this.universities.rejectUniversity(this.universityId(), note),
+      fallback: 'Could not reject this event.',
+      onSuccess: () => this.router.navigate(['/admin/review']),
+    });
   }
 }

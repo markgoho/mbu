@@ -1,4 +1,3 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -8,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import type { ClassRoster } from '../../api-types/registrations-api.types';
 import { classRosterToCsv, eventRosterToCsv } from '../../lib/roster-csv';
 import { Auth } from '../../services/auth';
@@ -25,7 +24,6 @@ import { ConfirmModal } from '../../shared/confirm-modal/confirm-modal';
 })
 export class RosterPage {
   private readonly route = inject(ActivatedRoute);
-  private readonly router = inject(Router);
   private readonly universities = inject(Universities);
   private readonly registrations = inject(Registrations);
   private readonly auth = inject(Auth);
@@ -36,11 +34,9 @@ export class RosterPage {
 
   protected readonly roster = this.registrations.roster;
 
-  protected readonly loadError = computed(() => {
-    const error = this.roster.error();
-    if (!error) return null;
-    if (error instanceof HttpErrorResponse && error.status === 403) return null;
-    return 'Could not load rosters for this event.';
+  protected readonly loadError = this.universities.recoverDenied(this.roster.error, {
+    denied: 'You do not have access to those rosters.',
+    fallback: 'Could not load rosters for this event.',
   });
 
   protected readonly hasAckedExport = computed(() => !!this.auth.sessionUser()?.rosterExportAckAt);
@@ -53,14 +49,6 @@ export class RosterPage {
       if (id) {
         this.universityId.set(id);
         this.registrations.openRoster(id);
-      }
-    });
-
-    effect(() => {
-      const error = this.roster.error();
-      if (error instanceof HttpErrorResponse && error.status === 403) {
-        this.universities.flashMessage.set('You do not have access to those rosters.');
-        void this.router.navigate(['/universities']);
       }
     });
   }

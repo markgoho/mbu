@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { HttpErrorResponse } from '@angular/common/http';
+import { createUniversityAction } from '../../services/university-action';
 import { ClassList } from '../class-list/class-list';
 import { PeriodBoard } from '../period-board/period-board';
 import { UniversityForm } from '../university-form/university-form';
@@ -37,11 +37,9 @@ export class UniversityEditor {
 
   protected readonly detail = this.universities.detail;
 
-  protected readonly loadError = computed(() => {
-    const error = this.detail.error();
-    if (!error) return null;
-    if (error instanceof HttpErrorResponse && error.status === 403) return null;
-    return 'Could not load this university.';
+  protected readonly loadError = this.universities.recoverDenied(this.detail.error, {
+    denied: 'You do not have access to that university.',
+    fallback: 'Could not load this university.',
   });
 
   protected readonly isLocked = computed(() =>
@@ -56,8 +54,11 @@ export class UniversityEditor {
     () => this.detail.value()?.university.status === 'published',
   );
 
-  protected readonly actionPending = signal(false);
-  protected readonly actionError = signal('');
+  private readonly action = createUniversityAction(
+    this.universities.apiErrorMessage.bind(this.universities),
+  );
+  protected readonly actionPending = this.action.pending;
+  protected readonly actionError = this.action.error;
 
   constructor() {
     effect(() => {
@@ -67,51 +68,29 @@ export class UniversityEditor {
         this.universities.openUniversity(id);
       }
     });
-
-    effect(() => {
-      const error = this.detail.error();
-      if (error instanceof HttpErrorResponse && error.status === 403) {
-        this.universities.flashMessage.set('You do not have access to that university.');
-        void this.router.navigate(['/universities']);
-      }
-    });
   }
 
   protected async deleteUniversity(): Promise<void> {
-    const id = this.universityId();
-    if (!globalThis.confirm('Delete this draft university and all its classes?')) {
-      return;
-    }
-    await this.universities.deleteUniversity(id);
-    await this.router.navigate(['/universities']);
+    await this.action.run({
+      confirm: 'Delete this draft university and all its classes?',
+      action: () => this.universities.deleteUniversity(this.universityId()),
+      fallback: 'Could not delete this university.',
+      onSuccess: () => this.router.navigate(['/universities']),
+    });
   }
 
   protected async submitForReview(): Promise<void> {
-    this.actionError.set('');
-    this.actionPending.set(true);
-    try {
-      await this.universities.submitUniversity(this.universityId());
-    } catch (error) {
-      this.actionError.set(
-        this.universities.apiErrorMessage(error, 'Could not submit for review.'),
-      );
-    } finally {
-      this.actionPending.set(false);
-    }
+    await this.action.run({
+      action: () => this.universities.submitUniversity(this.universityId()),
+      fallback: 'Could not submit for review.',
+    });
   }
 
   protected async closeEvent(): Promise<void> {
-    if (!globalThis.confirm('Close this event? This cannot be undone.')) {
-      return;
-    }
-    this.actionError.set('');
-    this.actionPending.set(true);
-    try {
-      await this.universities.closeUniversity(this.universityId());
-    } catch (error) {
-      this.actionError.set(this.universities.apiErrorMessage(error, 'Could not close the event.'));
-    } finally {
-      this.actionPending.set(false);
-    }
+    await this.action.run({
+      confirm: 'Close this event? This cannot be undone.',
+      action: () => this.universities.closeUniversity(this.universityId()),
+      fallback: 'Could not close the event.',
+    });
   }
 }

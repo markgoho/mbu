@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component, effect, inject, input, signal } from '@angular/core';
 import { FormArray, FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import type { ClassResponse, Period, PeriodInput } from '../../api-types/universities-api.types';
+import { datetimeInputToIso, isoToDatetimeInput } from '../../lib/event-datetime';
+import { createUniversityAction } from '../../services/university-action';
 import { Universities } from '../../services/universities';
 
 @Component({
@@ -19,8 +21,11 @@ export class PeriodBoard {
   readonly classes = input<ClassResponse[]>([]);
   readonly readonly = input(false);
 
-  protected readonly isLoading = signal(false);
-  protected readonly errorMessage = signal('');
+  private readonly action = createUniversityAction(
+    this.universities.apiErrorMessage.bind(this.universities),
+  );
+  protected readonly isLoading = this.action.pending;
+  protected readonly errorMessage = this.action.error;
   protected readonly overlapWarning = signal<string | null>(null);
 
   protected readonly form = this.fb.group({
@@ -91,8 +96,8 @@ export class PeriodBoard {
       const v = control.value;
       const entry: PeriodInput = {
         label: (v.label as string).trim(),
-        startsAt: toIso(v.startsAt as string),
-        endsAt: toIso(v.endsAt as string),
+        startsAt: datetimeInputToIso(v.startsAt as string),
+        endsAt: datetimeInputToIso(v.endsAt as string),
       };
       if (v.periodId) {
         entry.periodId = v.periodId as string;
@@ -105,34 +110,20 @@ export class PeriodBoard {
       this.overlapWarning.set(`Periods "${overlap.a}" and "${overlap.b}" overlap in time.`);
     }
 
-    this.isLoading.set(true);
-    try {
-      await this.universities.putPeriods(this.universityId(), { periods });
-    } catch (error) {
-      this.errorMessage.set(this.universities.apiErrorMessage(error, 'Could not save periods.'));
-    } finally {
-      this.isLoading.set(false);
-    }
+    await this.action.run({
+      action: () => this.universities.putPeriods(this.universityId(), { periods }),
+      fallback: 'Could not save periods.',
+    });
   }
 
   private createRow(period?: Period) {
     return this.fb.group({
       periodId: [period?.periodId ?? ''],
       label: [period?.label ?? '', Validators.required],
-      startsAt: [period ? toLocalInput(period.startsAt) : '', Validators.required],
-      endsAt: [period ? toLocalInput(period.endsAt) : '', Validators.required],
+      startsAt: [period ? isoToDatetimeInput(period.startsAt) : '', Validators.required],
+      endsAt: [period ? isoToDatetimeInput(period.endsAt) : '', Validators.required],
     });
   }
-}
-
-function toIso(localDatetime: string): string {
-  return new Date(localDatetime).toISOString();
-}
-
-function toLocalInput(iso: string): string {
-  const date = new Date(iso);
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`;
 }
 
 export function findOverlaps(periods: PeriodInput[]): { a: string; b: string } | null {

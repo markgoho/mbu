@@ -1,16 +1,9 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  inject,
-  input,
-  output,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import type { ClassResponse, Period } from '../../api-types/universities-api.types';
 import { DISCLAIMER_TEXT } from '../../constants/disclaimer';
 import { Auth } from '../../services/auth';
+import { createUniversityAction } from '../../services/university-action';
 import { Universities } from '../../services/universities';
 
 @Component({
@@ -31,8 +24,11 @@ export class ClassForm {
   readonly dismissed = output<void>();
 
   protected readonly disclaimerText = DISCLAIMER_TEXT;
-  protected readonly isLoading = signal(false);
-  protected readonly errorMessage = signal('');
+  private readonly action = createUniversityAction(
+    this.universities.apiErrorMessage.bind(this.universities),
+  );
+  protected readonly isLoading = this.action.pending;
+  protected readonly errorMessage = this.action.error;
 
   protected readonly form = this.fb.group({
     badgeSlug: ['', Validators.required],
@@ -99,22 +95,22 @@ export class ClassForm {
       return;
     }
 
-    this.isLoading.set(true);
-    this.errorMessage.set('');
     const v = this.form.value;
     const editing = this.editing();
 
-    try {
-      if (editing) {
-        await this.universities.patchClass(this.universityId(), editing.classId, {
-          badgeSlug: v.badgeSlug as string,
-          periodIds: v.periodIds as string[],
-          capacity: v.capacity as number,
-          room: (v.room as string) || null,
-          notes: (v.notes as string) || null,
-        });
-      } else {
-        await this.universities.createClass(this.universityId(), {
+    await this.action.run({
+      fallback: 'Could not save the class.',
+      action: () => {
+        if (editing) {
+          return this.universities.patchClass(this.universityId(), editing.classId, {
+            badgeSlug: v.badgeSlug as string,
+            periodIds: v.periodIds as string[],
+            capacity: v.capacity as number,
+            room: (v.room as string) || null,
+            notes: (v.notes as string) || null,
+          });
+        }
+        return this.universities.createClass(this.universityId(), {
           badgeSlug: v.badgeSlug as string,
           periodIds: v.periodIds as string[],
           capacity: v.capacity as number,
@@ -125,18 +121,16 @@ export class ClassForm {
             acceptDisclaimer: true,
           },
         });
-      }
-      this.form.reset({
-        capacity: 20,
-        periodIds: [],
-        acceptDisclaimer: false,
-      });
-      this.dismissed.emit();
-    } catch (error) {
-      this.errorMessage.set(this.universities.apiErrorMessage(error, 'Could not save the class.'));
-    } finally {
-      this.isLoading.set(false);
-    }
+      },
+      onSuccess: () => {
+        this.form.reset({
+          capacity: 20,
+          periodIds: [],
+          acceptDisclaimer: false,
+        });
+        this.dismissed.emit();
+      },
+    });
   }
 
   protected badges() {

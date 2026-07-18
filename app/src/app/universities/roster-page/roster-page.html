@@ -5,8 +5,6 @@
     <p>Loading…</p>
   } @else if (loadError(); as message) {
     <p class="roster-page__error" role="alert">{{ message }}</p>
-  } @else if (roster.error()) {
-    <!-- 403 — the constructor effect is redirecting to the dashboard. -->
   } @else if (roster.value(); as data) {
     <header class="roster-page__header">
       <h1>{{ data.university.title }} — Rosters</h1>

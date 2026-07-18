@@ -6,6 +6,10 @@
     }
   </header>
 
+  @if (actionError(); as error) {
+    <p class="class-list__error" role="alert">{{ error }}</p>
+  }
+
   @if (classes().length === 0 && !showForm()) {
     <p class="class-list__empty">No classes yet.</p>
   } @else {
@@ -22,7 +26,9 @@
           @if (!readonly()) {
             <span class="class-list__actions">
               <button type="button" (click)="startEdit(cls)">Edit</button>
-              <button type="button" (click)="deleteClass(cls)">Delete</button>
+              <button type="button" [disabled]="actionPending()" (click)="deleteClass(cls)">
+                Delete
+              </button>
             </span>
           }
         </li>

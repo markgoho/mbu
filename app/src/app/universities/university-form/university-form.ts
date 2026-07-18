@@ -1,18 +1,12 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  effect,
-  inject,
-  input,
-  output,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators, type FormGroup } from '@angular/forms';
 import type {
   UniversityCreateRequest,
   UniversityPatchRequest,
   UniversityResponse,
 } from '../../api-types/universities-api.types';
+import { datetimeInputToIso, isoToDatetimeInput } from '../../lib/event-datetime';
+import { createUniversityAction } from '../../services/university-action';
 import { Universities } from '../../services/universities';
 
 /** Shared university fields form for create and edit. */
@@ -34,8 +28,11 @@ export class UniversityForm {
 
   readonly saved = output<UniversityResponse>();
 
-  protected readonly isLoading = signal(false);
-  protected readonly errorMessage = signal('');
+  private readonly action = createUniversityAction(
+    this.universities.apiErrorMessage.bind(this.universities),
+  );
+  protected readonly isLoading = this.action.pending;
+  protected readonly errorMessage = this.action.error;
 
   protected readonly form: FormGroup = this.fb.group({
     title: ['', [Validators.required, Validators.maxLength(120)]],
@@ -70,10 +67,12 @@ export class UniversityForm {
     this.form.patchValue({
       title: data.title,
       timezone: data.timezone,
-      startDate: toLocalInput(data.startDate),
-      endDate: data.endDate ? toLocalInput(data.endDate) : '',
-      registrationOpensAt: data.registrationOpensAt ? toLocalInput(data.registrationOpensAt) : '',
-      registrationClosesAt: toLocalInput(data.registrationClosesAt),
+      startDate: isoToDatetimeInput(data.startDate),
+      endDate: data.endDate ? isoToDatetimeInput(data.endDate) : '',
+      registrationOpensAt: data.registrationOpensAt
+        ? isoToDatetimeInput(data.registrationOpensAt)
+        : '',
+      registrationClosesAt: isoToDatetimeInput(data.registrationClosesAt),
       locationName: data.location.name,
       locationAddress: data.location.address,
       locationCity: data.location.city,
@@ -88,9 +87,6 @@ export class UniversityForm {
       return;
     }
 
-    this.isLoading.set(true);
-    this.errorMessage.set('');
-
     const v = this.form.value;
     const location = {
       name: (v.locationName as string).trim(),
@@ -99,55 +95,42 @@ export class UniversityForm {
       state: (v.locationState as string).trim(),
       zip: (v.locationZip as string).trim(),
     };
+    const id = this.universityId();
+    let result: UniversityResponse | undefined;
 
-    try {
-      const id = this.universityId();
-      let result: UniversityResponse;
-      if (id) {
-        const body: UniversityPatchRequest = {
-          title: (v.title as string).trim(),
-          timezone: v.timezone as string,
-          startDate: toIso(v.startDate as string),
-          endDate: v.endDate ? toIso(v.endDate as string) : null,
-          registrationOpensAt: v.registrationOpensAt
-            ? toIso(v.registrationOpensAt as string)
-            : null,
-          registrationClosesAt: toIso(v.registrationClosesAt as string),
-          location,
-        };
-        result = await this.universities.patchUniversity(id, body);
-      } else {
-        const body: UniversityCreateRequest = {
-          id: crypto.randomUUID(),
-          title: (v.title as string).trim(),
-          timezone: v.timezone as string,
-          startDate: toIso(v.startDate as string),
-          endDate: v.endDate ? toIso(v.endDate as string) : null,
-          registrationOpensAt: v.registrationOpensAt
-            ? toIso(v.registrationOpensAt as string)
-            : null,
-          registrationClosesAt: toIso(v.registrationClosesAt as string),
-          location,
-        };
-        result = await this.universities.createUniversity(body);
-      }
-      this.saved.emit(result);
-    } catch (error) {
-      this.errorMessage.set(
-        this.universities.apiErrorMessage(error, 'Could not save the university.'),
-      );
-    } finally {
-      this.isLoading.set(false);
-    }
+    await this.action.run({
+      fallback: 'Could not save the university.',
+      action: async () => {
+        if (id) {
+          const body: UniversityPatchRequest = {
+            title: (v.title as string).trim(),
+            timezone: v.timezone as string,
+            startDate: datetimeInputToIso(v.startDate as string),
+            endDate: v.endDate ? datetimeInputToIso(v.endDate as string) : null,
+            registrationOpensAt: v.registrationOpensAt
+              ? datetimeInputToIso(v.registrationOpensAt as string)
+              : null,
+            registrationClosesAt: datetimeInputToIso(v.registrationClosesAt as string),
+            location,
+          };
+          result = await this.universities.patchUniversity(id, body);
+        } else {
+          const body: UniversityCreateRequest = {
+            id: crypto.randomUUID(),
+            title: (v.title as string).trim(),
+            timezone: v.timezone as string,
+            startDate: datetimeInputToIso(v.startDate as string),
+            endDate: v.endDate ? datetimeInputToIso(v.endDate as string) : null,
+            registrationOpensAt: v.registrationOpensAt
+              ? datetimeInputToIso(v.registrationOpensAt as string)
+              : null,
+            registrationClosesAt: datetimeInputToIso(v.registrationClosesAt as string),
+            location,
+          };
+          result = await this.universities.createUniversity(body);
+        }
+      },
+      onSuccess: () => this.saved.emit(result!),
+    });
   }
-}
-
-function toIso(localDatetime: string): string {
-  return new Date(localDatetime).toISOString();
-}
-
-function toLocalInput(iso: string): string {
-  const date = new Date(iso);
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`;
 }

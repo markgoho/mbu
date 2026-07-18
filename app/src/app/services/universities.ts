@@ -1,5 +1,6 @@
 import { HttpClient, HttpErrorResponse, httpResource } from '@angular/common/http';
-import { inject, Service, signal } from '@angular/core';
+import { computed, effect, inject, Service, signal, type Signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import type {
   ApiErrorBody,
@@ -21,6 +22,7 @@ import type {
 @Service()
 export class Universities {
   private readonly httpClient = inject(HttpClient);
+  private readonly router = inject(Router);
 
   /** Set by the editor route; drives the detail resource. */
   readonly activeUniversityId = signal<string | undefined>(undefined);
@@ -219,8 +221,27 @@ export class Universities {
     return result;
   }
 
-  isForbidden(error: unknown): boolean {
-    return error instanceof HttpErrorResponse && error.status === 403;
+  recoverDenied(
+    error: Signal<unknown>,
+    { denied, fallback }: { denied: string; fallback: string },
+  ): Signal<string | null> {
+    const loadError = computed(() => {
+      const value = error();
+      if (!value || (value instanceof HttpErrorResponse && value.status === 403)) {
+        return null;
+      }
+      return fallback;
+    });
+
+    effect(() => {
+      const value = error();
+      if (value instanceof HttpErrorResponse && value.status === 403) {
+        this.flashMessage.set(denied);
+        void this.router.navigate(['/universities']);
+      }
+    });
+
+    return loadError;
   }
 
   apiErrorMessage(error: unknown, fallback: string): string {

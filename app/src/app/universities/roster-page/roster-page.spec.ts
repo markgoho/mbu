@@ -1,5 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
+import { TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
 import { provideRouter, RouterLink, RouterOutlet } from '@angular/router';
 import { render, screen, waitFor } from '@testing-library/angular/zoneless';
 import userEvent from '@testing-library/user-event';
@@ -120,12 +122,15 @@ describe('RosterPage', () => {
     forbidden?: boolean;
     // ISO timestamp if the user already acknowledged the export warning.
     ackedAt?: string | null;
+    loadError?: HttpErrorResponse;
   }
 
-  async function setup({ forbidden = false, ackedAt = null }: SetupOptions = {}) {
+  async function setup({ forbidden = false, ackedAt = null, loadError }: SetupOptions = {}) {
     const rosterResource = fakeResource<RosterResponse>();
-    if (forbidden) {
+    if (forbidden || loadError?.status === 403) {
       rosterResource.setError(new HttpErrorResponse({ status: 403, statusText: 'Forbidden' }));
+    } else if (loadError) {
+      rosterResource.setError(loadError);
     } else {
       rosterResource.set(sampleRoster);
     }
@@ -138,7 +143,32 @@ describe('RosterPage', () => {
           { path: 'universities', component: DashboardStub },
         ]),
         { provide: Registrations, useValue: { roster: rosterResource, openRoster: () => {} } },
-        { provide: Universities, useValue: { flashMessage: signal<string | null>(null) } },
+        {
+          provide: Universities,
+          useValue: {
+            flashMessage: signal<string | null>(null),
+            recoverDenied: (
+              error: () => unknown,
+              { denied, fallback }: { denied: string; fallback: string },
+            ) => {
+              effect(() => {
+                const value = error();
+                if (value instanceof HttpErrorResponse && value.status === 403) {
+                  TestBed.inject(Universities).flashMessage.set(denied);
+                  void TestBed.inject(Router).navigate(['/universities']);
+                }
+              });
+              return computed(() => {
+                const value = error();
+                return value instanceof HttpErrorResponse && value.status === 403
+                  ? null
+                  : value
+                    ? fallback
+                    : null;
+              });
+            },
+          },
+        },
         { provide: Auth, useValue: fakeAuth(ackedAt) },
       ],
     });
@@ -209,6 +239,16 @@ describe('RosterPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
 
     await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
+  });
+
+  it('shows its fallback message on a non-403 load failure', async () => {
+    const { openRosters } = await setup({
+      loadError: new HttpErrorResponse({ status: 500, statusText: 'Server Error' }),
+    });
+
+    await openRosters();
+
+    expect(await screen.findByText('Could not load rosters for this event.')).toBeVisible();
   });
 
   it('redirects to the dashboard with a flash message when access is forbidden', async () => {
