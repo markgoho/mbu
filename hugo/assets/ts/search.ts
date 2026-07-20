@@ -83,7 +83,9 @@ const container = document.querySelector("#search");
 if (container) {
   const INPUT_SELECTOR = ".pagefind-ui__search-input";
   const MESSAGE_SELECTOR = ".pagefind-ui__message";
+  const RESULT_LINK_SELECTOR = ".pagefind-ui__result-link";
   const DEBOUNCE_MS = 300;
+  const MIN_QUERY_LENGTH = 3;
 
   let debounceId: ReturnType<typeof setTimeout>;
 
@@ -96,6 +98,31 @@ if (container) {
       url.searchParams.delete("q");
     }
     history.replaceState(null, "", url.toString());
+  }
+
+  // Finalizes a query: syncs the URL and, if it turned up nothing,
+  // reports a no-results event. Called once per settled query, either
+  // after the debounce idles or when the input is committed
+  // (blur/Enter), so short-lived intermediate keystrokes aren't logged.
+  // Raw query text otherwise isn't reported — result clicks (below)
+  // are the signal that matters for analytics.
+  function commitQuery(query: string): void {
+    if (!container) return;
+    updateURL(query);
+
+    if (
+      typeof pirsch === "undefined" ||
+      !query ||
+      query.length < MIN_QUERY_LENGTH
+    ) {
+      return;
+    }
+
+    const messageEl = container.querySelector(MESSAGE_SELECTOR);
+    const match = messageEl?.textContent?.match(/(\d+)\s+results?\b/i);
+    if (match && Number(match[1]) === 0) {
+      pirsch("merit-badge-search-no-results", { meta: { query } });
+    }
   }
 
   // Initialize from URL if ?q= param exists
@@ -124,21 +151,49 @@ if (container) {
 
     clearTimeout(debounceId);
     debounceId = setTimeout(() => {
-      const query = target.value.trim();
-      updateURL(query);
-
-      // Pirsch analytics
-      if (typeof pirsch !== "undefined" && query) {
-        const messageEl = container.querySelector(MESSAGE_SELECTOR);
-        let resultCount = 0;
-        if (messageEl?.textContent) {
-          const match = messageEl.textContent.match(/(\d+)\s+results?\b/i);
-          if (match) resultCount = Number(match[1]);
-        }
-        pirsch("merit-badge-search", {
-          meta: { query, results: resultCount },
-        });
-      }
+      commitQuery(target.value.trim());
     }, DEBOUNCE_MS);
+  });
+
+  // Commit immediately when the user finishes with the field, rather
+  // than waiting out the debounce.
+  function flush(event: Event): void {
+    const target = event.target;
+    if (
+      !(target instanceof HTMLInputElement) ||
+      !target.matches(INPUT_SELECTOR)
+    ) {
+      return;
+    }
+
+    clearTimeout(debounceId);
+    commitQuery(target.value.trim());
+  }
+
+  container.addEventListener("focusout", flush);
+  container.addEventListener("keydown", event => {
+    if (event instanceof KeyboardEvent && event.key === "Enter") flush(event);
+  });
+
+  // Track actual search intent: a result being opened, tagged with the
+  // query that produced it. This is the primary analytics signal —
+  // it tells us what people search for and successfully find.
+  container.addEventListener("click", event => {
+    if (typeof pirsch === "undefined" || !(event.target instanceof Element)) {
+      return;
+    }
+
+    const link = event.target.closest(RESULT_LINK_SELECTOR);
+    if (!(link instanceof HTMLAnchorElement)) return;
+
+    const input = container.querySelector(
+      INPUT_SELECTOR,
+    ) as HTMLInputElement | null;
+    const query = input?.value.trim() ?? "";
+    if (query.length < MIN_QUERY_LENGTH) return;
+
+    pirsch("merit-badge-search-result-click", {
+      meta: { query, result: link.pathname },
+    });
   });
 }
