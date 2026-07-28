@@ -443,6 +443,15 @@
   gap: var(--space-m);
 }
 
+/* A "plain" group whose items are depth 3+: a compact sequential
+   sub-list (e.g. forestry 5.b's seven report points), so it gets a
+   list's tight vertical rhythm instead of plain's block spacing. */
+.req-children--numbered {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
 .req-child {
   position: relative;
   border: 1px solid var(--outline-variant);
@@ -461,7 +470,8 @@
   background: var(--surface-raised);
 }
 
-.req-child--plain {
+.req-child--plain,
+.req-child--numbered {
   border: none;
   border-radius: 0;
   padding: 0;
@@ -501,24 +511,55 @@
   gap: var(--space-2xs);
 }
 
-.req-child__heading {
-  min-width: 0;
-}
-
-.req-child__id {
-  margin: 0 0 var(--space-3xs);
-  font-size: var(--step--2);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--on-surface-muted);
-}
-
 .req-child__title {
+  min-width: 0;
   margin: 0;
   font-size: var(--step-0);
   font-weight: 700;
   color: var(--on-surface);
+}
+
+/* Marker + verbatim text run inline on the same line: the marker is a
+   fixed-width flex item, so a wrapped second line of text hangs under
+   the text column, not under the marker (a plain hanging indent, for
+   free, from flexbox itself -- no negative-margin tricks needed). */
+.req-child__body {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+}
+
+.req-child__marker {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--on-surface-muted);
+}
+
+.req-child--numbered .req-child__marker {
+  min-width: 1.5em;
+  text-align: right;
+}
+
+.req-child__body > .req-card__text,
+.req-child__body > .req-child__text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Actions inline in the header row (titled items) stay put; actions
+   left inside the body (no header, i.e. no title) have nowhere natural
+   to sit inline without crowding the marker, so they float top-right
+   and reveal on hover/focus, same treatment as the tiles variant. */
+.req-child__body > .req-actions {
+  position: absolute;
+  top: var(--space-3xs);
+  right: var(--space-3xs);
+  opacity: 0;
+}
+
+.req-child:hover .req-child__body > .req-actions,
+.req-child:focus-within .req-child__body > .req-actions {
+  opacity: 1;
 }
 
 .req-child__text {
@@ -526,6 +567,10 @@
   margin-block: var(--space-2xs) 0;
   line-height: var(--line-height-relaxed);
   color: var(--on-surface);
+
+  & p {
+    margin: 0;
+  }
 }
 
 /* Nested children inside a child item shouldn't add a third layer of

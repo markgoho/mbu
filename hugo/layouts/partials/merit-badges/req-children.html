@@ -106,10 +106,12 @@
       sequential sub-list (e.g. forestry 5.b's seven report points),
       not a stack of normal-flow blocks -- give it tighter, numbered-list
       rhythm instead. Children are always uniformly one depth (siblings),
-      so this check is safe to make once for the whole group. */}}
+      so this check is safe to make once for the whole group.
+    */}}
     {{ if and (eq $displayVariant "plain") (ge (add $depth 1) 3) }}
       {{ $displayVariant = "numbered" }}
     {{ end }}
+
 
     <ol class="req-children req-children--{{ $displayVariant }}">
       {{ range $i, $child := $children }}
