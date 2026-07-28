@@ -1,0 +1,16 @@
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var isDark =
+        stored === "dark" ||
+        (stored !== "light" &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches);
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+      }
+    } catch (e) {
+      /* localStorage/matchMedia unavailable — fall back to light, no-op */
+    }
+  })();
+</script>

@@ -1,0 +1,47 @@
+{{- /*
+  Icon dispatcher.
+
+  Resolves a Phosphor icon by name (and weight) to the matching partial in
+  layouts/partials/icons/ and renders it. Missing icon names, or a weight
+  that was not vendored for that name, fail the build loudly (errorf)
+  rather than rendering nothing.
+
+  Params (dict):
+  name   (required) - icon name, matches layouts/partials/icons/<name>.html
+  weight (optional) - "regular" (default) or "duotone". "duotone" resolves
+  layouts/partials/icons/duotone/<name>.html and adds an
+  "icon--duotone" class to the rendered <svg> alongside any
+  caller-supplied class.
+  class  (optional) - CSS class(es) applied to the <svg>
+  size   (optional) - sets width and height on the <svg>, e.g. "1.25em" or "20"
+  title  (optional) - accessible name; when present the icon gets
+  role="img" and a <title>. When absent the icon is
+  aria-hidden="true" (decorative).
+
+  Usage:
+  partial "icon.html" (dict "name" "tree-evergreen" "class" "req-card__icon")
+  partial "icon.html" (dict "name" "tree-evergreen" "weight" "duotone")
+  */
+-}}
+{{- $name := .name -}}
+{{- if not $name -}}
+  {{ errorf "partial \"icon.html\": missing required \"name\" parameter" }}
+{{- end -}}
+{{- $weight := .weight | default "regular" -}}
+{{- $partialPath := "" -}}
+{{- if eq $weight "regular" -}}
+  {{- $partialPath = printf "icons/%s.html" $name -}}
+{{- else if eq $weight "duotone" -}}
+  {{- $partialPath = printf "icons/duotone/%s.html" $name -}}
+{{- else -}}
+  {{ errorf "partial \"icon.html\": unknown weight %q for icon %q (expected \"regular\" or \"duotone\")" $weight $name }}
+{{- end -}}
+{{- if not (templates.Exists (printf "partials/%s" $partialPath)) -}}
+  {{ errorf "partial \"icon.html\": no icon partial found for name %q at weight %q (expected layouts/partials/%s)" $name $weight $partialPath }}
+{{- end -}}
+{{- $ctx := . -}}
+{{- if eq $weight "duotone" -}}
+  {{- $class := .class -}}
+  {{- $ctx = merge . (dict "class" (strings.TrimSpace (printf "%s icon--duotone" ($class | default "")))) -}}
+{{- end -}}
+{{- partial $partialPath $ctx -}}

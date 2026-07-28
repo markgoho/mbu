@@ -1,0 +1,120 @@
+{{/* merit-badges/req-children.html
+
+  Dispatches a requirement's subrequirements to the right rendering
+  variant. Validated against all 141 badges; precedence top to bottom,
+  first match wins:
+  1. mode.type == "select"                    -> options    (267)
+  2. this node's own depth >= 3                -> deep-list  (51)
+  3. any child itself has children             -> list       (65)
+  4. all children leaf AND avg text len < 60    -> tiles      (97)
+  5. otherwise                                  -> cards      (413)
+
+  "depth" is this node's own nesting depth (top-level requirement = 1,
+  its children = 2, grandchildren = 3, ...), i.e. the depth of the PARENT
+  whose children are being dispatched here -- not the depth of the
+  children themselves. Once a parent is depth >= 3, any further card
+  chrome would nest a third level deep, so we drop to a plain list and
+  hand off permanently to the pre-redesign partials/requirement.html,
+  which already recurses correctly to any depth.
+
+  For non-tiles variants, child titles are all-or-nothing PER GROUP:
+  measured coverage shows title resolution is almost always uniform
+  within a group of siblings (38% of groups: all resolve; 60%: none do;
+  only 2% are mixed). A group with some titled and some untitled cards
+  reads as broken/missing data, so titles are resolved once for the
+  whole group here and suppressed for everyone in the group unless every
+  child resolves one.
+
+  A "cards" group additionally switches its whole presentation on that
+  same result: titled -> stacked cards (chrome earns its keep because
+  there's a real title to show); untitled -> plain normal-flow blocks,
+  no grid, no card chrome, just the id label and verbatim text in
+  document order. "options" (select mode) always keeps the card
+  treatment regardless -- it's a set of choices, not incidental
+  sub-points, so the chrome stays even on the rare untitled option group.
+
+  Params (dict):
+  req            - the parent requirement (its .subrequirements are
+  rendered)
+  badge_name
+  hide_resources
+  guide
+*/}}
+{{ $req := .req }}
+{{ $children := $req.subrequirements }}
+
+{{ if $children }}
+  {{ $badgeName := .badge_name }}
+  {{ $hideResources := .hide_resources | default false }}
+  {{ $guide := .guide }}
+  {{ $mode := $req.subrequirement_mode }}
+  {{ $depth := len (split $req.path ".") }}
+
+  {{ $anyChildHasChildren := false }}
+  {{ $totalLen := 0 }}
+  {{ range $children }}
+    {{ if .subrequirements }}
+      {{ $anyChildHasChildren = true }}
+    {{ end }}
+    {{ $totalLen = add $totalLen (len .text) }}
+  {{ end }}
+  {{ $avgLen := div (mul $totalLen 1.0) (len $children) }}
+
+  {{ $variant := "cards" }}
+  {{ if and $mode (eq $mode.type "select") }}
+    {{ $variant = "options" }}
+  {{ else if ge $depth 3 }}
+    {{ $variant = "deep-list" }}
+  {{ else if $anyChildHasChildren }}
+    {{ $variant = "list" }}
+  {{ else if lt $avgLen 60.0 }}
+    {{ $variant = "tiles" }}
+  {{ end }}
+
+  {{ if eq $variant "deep-list" }}
+    <ol class="req-children req-children--deep-list">
+      {{ range $children }}
+        {{ partial "requirement.html" (dict "req" . "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
+      {{ end }}
+    </ol>
+  {{ else }}
+    {{/* Resolve every child's guide lookup once here so it can both
+      decide the group-wide "all titles or no titles" rule and be
+      handed to req-child-item.html without a second lookup.
+    */}}
+    {{ $lookups := slice }}
+    {{ $allHaveTitles := true }}
+    {{ if eq $variant "tiles" }}
+      {{ $allHaveTitles = false }}
+    {{ end }}
+    {{ range $children }}
+      {{ $lookup := dict }}
+      {{ if ne $variant "tiles" }}
+        {{ $lookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" .path "children" .subrequirements) }}
+        {{ if not $lookup.title }}
+          {{ $allHaveTitles = false }}
+        {{ end }}
+      {{ end }}
+      {{ $lookups = $lookups | append $lookup }}
+    {{ end }}
+
+    {{ $displayVariant := $variant }}
+    {{ if and (eq $variant "cards") (not $allHaveTitles) }}
+      {{ $displayVariant = "plain" }}
+    {{ end }}
+    {{/* A "plain" group whose children are depth 3+ is a compact
+      sequential sub-list (e.g. forestry 5.b's seven report points),
+      not a stack of normal-flow blocks -- give it tighter, numbered-list
+      rhythm instead. Children are always uniformly one depth (siblings),
+      so this check is safe to make once for the whole group. */}}
+    {{ if and (eq $displayVariant "plain") (ge (add $depth 1) 3) }}
+      {{ $displayVariant = "numbered" }}
+    {{ end }}
+
+    <ol class="req-children req-children--{{ $displayVariant }}">
+      {{ range $i, $child := $children }}
+        {{ partial "merit-badges/req-child-item.html" (dict "req" $child "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "variant" $displayVariant "lookup" (index $lookups $i) "show_title" $allHaveTitles) }}
+      {{ end }}
+    </ol>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,50 @@
+{{/* merit-badges/req-text.html
+
+  Renders a requirement's verbatim text -- markdownify runs on it either
+  way, never synthesized wording -- either as a stylized "pill" or as
+  normal prose.
+
+  A pill applies when the requirement has a subrequirement_mode (type
+  "all" or "select") AND its own text is at most 80 characters: that's
+  the short imperative stem ("Do ONE of the following:", "Do the
+  following:") rather than a genuine paragraph. Longer mode-bearing text
+  (e.g. forestry req 1's 199-character field-notebook paragraph) renders
+  as normal prose -- cramming a paragraph into a pill would be worse than
+  the plain text. "select" gets the more prominent accent treatment
+  because the scout must make a choice there; "all" gets a quieter
+  informational treatment.
+
+  Params (dict):
+  text  - requirement text (raw markdown string), rendered verbatim
+  mode  - subrequirement_mode dict, or nil
+  class - base class for the text element (e.g. "req-card__text"),
+  kept on both the pill and the plain-prose paths so shared
+  rules (max-width, line-height, ...) keep applying
+*/}}
+{{ $text := .text }}
+{{ $mode := .mode }}
+{{ $class := .class }}
+
+{{ $isPill := false }}
+{{ $icon := "" }}
+{{ $modeClass := "" }}
+{{ if and $mode (le (len $text) 80) }}
+  {{ if eq $mode.type "select" }}
+    {{ $isPill = true }}
+    {{ $icon = "hand-pointing" }}
+    {{ $modeClass = "select" }}
+  {{ else if eq $mode.type "all" }}
+    {{ $isPill = true }}
+    {{ $icon = "list-checks" }}
+    {{ $modeClass = "all" }}
+  {{ end }}
+{{ end }}
+
+{{ if $isPill }}
+  <div class="{{ $class }} req-text-pill req-text-pill--{{ $modeClass }}">
+    {{ partial "icon.html" (dict "name" $icon "class" "req-text-pill__icon") }}
+    {{ $text | markdownify }}
+  </div>
+{{ else }}
+  <div class="{{ $class }}">{{ $text | markdownify }}</div>
+{{ end }}

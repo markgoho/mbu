@@ -7,6 +7,24 @@
   font-variation-settings: "slnt" 0;
 }
 
+/* v2 design system typefaces (self-hosted, SIL OFL) */
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("/assets/fonts/Literata-VariableFont_opsz_wght.woff2")
+    format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Typography Design Tokens (already present) */
 :root {
   /* Typography */

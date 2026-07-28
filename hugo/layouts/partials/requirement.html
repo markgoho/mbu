@@ -15,7 +15,9 @@
     data-anchor="{{ $req.path }}" data-badge-name="{{ $badgeName }}"
   {{ end }}>
   {{ if $index }}
-    <span class="req-number" aria-hidden="true">{{ printf "%02d" $index }}</span>
+    <span class="req-number" aria-hidden="true"
+      >{{ printf "%02d" $index }}</span
+    >
   {{ end }}
   <div class="req-body">
     {{ if $req.path }}
@@ -34,15 +36,20 @@
           {{ $guideSlug := printf "req%s" (replace $req.path "." "") }}
           {{ $guidePage := $guide.GetPage $guideSlug }}
           {{ if $guidePage }}
-            <a class="guide-link-btn" href="{{ $guidePage.RelPermalink }}" title="Study guide for this requirement">
+            <a
+              class="guide-link-btn"
+              href="{{ $guidePage.RelPermalink }}"
+              title="Study guide for this requirement">
               <span aria-hidden="true">📖</span>
-              <span class="visually-hidden">Open study guide for requirement {{ $req.path }}</span>
+              <span class="visually-hidden"
+                >Open study guide for requirement {{ $req.path }}</span
+              >
             </a>
           {{ end }}
         {{ end }}
       </div>
     {{ end }}
-    <div class="req-text">{{ $req.text | markdownify }}</div>
+    {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-text") }}
 
     {{ if $req.subrequirements }}
       {{/* Determine list type based on first child */}}

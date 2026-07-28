@@ -2,6 +2,7 @@
 {{ $criticalCSS := slice
   (resources.Get "css/base.css")
   (resources.Get "css/colors.css")
+  (resources.Get "css/tokens-v2.css")
   (resources.Get "css/typography.css")
   (resources.Get "css/spacing.css")
   (resources.Get "css/layout.css")
@@ -13,6 +14,7 @@
   (resources.Get "css/components/profile-card.css")
   (resources.Get "css/components/tag.css")
   (resources.Get "css/pages/merit-badges.css")
+  (resources.Get "css/pages/merit-badge-requirements.css")
   (resources.Get "css/pages/drg.css")
   | resources.Concat "css/critical.css"
   | resources.Minify

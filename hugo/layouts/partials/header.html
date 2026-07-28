@@ -18,7 +18,21 @@
     </span>
     <span class="navbar__search-text">Search</span>
   </a>
+  <button
+    type="button"
+    id="theme-toggle"
+    class="navbar__theme-toggle button button-secondary"
+    aria-label="Theme: System (click to switch to light)"
+    data-theme-toggle>
+    {{/* TODO: icon */}}
+    <span class="navbar__theme-toggle-text" data-theme-toggle-label
+      >System</span
+    >
+  </button>
   <a href="/merit-badges/" class="navbar__cta button navbar__button"
     >Browse Badges</a
   >
 </nav>
+
+{{ $themeToggleTS := resources.Get "ts/theme-toggle.ts" | js.Build (dict "minify" true) }}
+<script>{{ $themeToggleTS.Content | safeJS }}</script>

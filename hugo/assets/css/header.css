@@ -4,8 +4,8 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-areas: "logo search cta" "nav nav nav";
+  grid-template-columns: min-content 1fr min-content min-content;
+  grid-template-areas: "logo search theme cta" "nav nav nav nav";
   align-items: center;
   background: var(--tan-300);
   padding: var(--space-xs);
@@ -63,6 +63,13 @@
   place-content: center;
 }
 
+.navbar__theme-toggle {
+  grid-area: theme;
+  justify-self: center;
+  padding: var(--space-3xs) var(--space-2xs);
+  font-size: var(--step--2);
+}
+
 .navbar__cta {
   grid-area: cta;
   justify-self: end;
@@ -85,8 +92,8 @@
 
 @container header (min-width: 60rem) {
   .navbar {
-    grid-template-columns: max-content 1fr max-content max-content;
-    grid-template-areas: "logo nav search cta";
+    grid-template-columns: max-content 1fr max-content max-content max-content;
+    grid-template-areas: "logo nav search theme cta";
     grid-template-rows: auto;
     padding: var(--space-s) var(--space-m);
     column-gap: var(--space-l);

@@ -1,0 +1,79 @@
+{{/* merit-badges/req-guide-lookup.html
+
+  Resolves the DRG guide page (if any) for a requirement node, along with
+  the eyebrow (group_title) and stripped title to render on a card.
+
+  Resolution order, first hit wins:
+  1. req + path with dots removed (3.a -> req3a) -- covers 85%
+  2. req + path with dots as hyphens (6.beef-cattle -> req6-beef-cattle)
+  -- covers the named-option nodes whose ids are slugified
+  3. scan the guide section for a page whose req_number frontmatter
+  equals the path with dots removed, OR starts with it on a clean
+  boundary (the next character isn't a digit). The equals case is an
+  ordinary exact match; the prefix case catches a MERGED page whose
+  req_number covers this requirement's first subrequirement -- e.g.
+  forestry has no req3.md, but req3ab.md has req_number: "3a", which
+  covers requirement 3's subrequirements and is the best available
+  title source for requirement 3 itself. The boundary check keeps path
+  "1" from matching req_number "10" or "11": the character right after
+  the "1" prefix is a digit, so those are rejected.
+  4. if nothing resolves directly but this node has children, fall back
+  to the first child's group_title for the eyebrow only -- never a
+  title, since we'd be fabricating one for a node with no page
+
+  Params (dict):
+  guide    - the guide section Page, or nil if this badge has no DRG guide
+  path     - the requirement's path, e.g. "3.a" or "6.beef-cattle"
+  children - (optional) the requirement's subrequirements slice, used
+  only for the rule-4 fallback
+
+  Returns a dict:
+  page    - the *directly* matched guide Page, or "" (falsy). Only set
+  when this exact path resolves to a page of its own -- never
+  inherited from a child fallback. Callers use this to decide
+  whether to show a study-guide action link.
+  eyebrow - group_title string, or "".
+  title   - title string with its "Req N -- " / "Requirement N -- "
+  prefix stripped, or "" when no direct page was found.
+*/}}
+{{ $guide := .guide }}
+{{ $path := .path }}
+{{ $children := .children }}
+
+{{ $page := "" }}
+{{ $eyebrow := "" }}
+{{ $title := "" }}
+
+{{ if $guide }}
+  {{ $dotsRemoved := replace $path "." "" }}
+  {{ $hyphenated := replace $path "." "-" }}
+
+  {{ $found := $guide.GetPage (printf "req%s" $dotsRemoved) }}
+  {{ if not $found }}
+    {{ $found = $guide.GetPage (printf "req%s" $hyphenated) }}
+  {{ end }}
+  {{ if not $found }}
+    {{ range $guide.RegularPages }}
+      {{ $reqNumber := .Params.req_number }}
+      {{ if and (not $found) $reqNumber (strings.HasPrefix $reqNumber $dotsRemoved) }}
+        {{ $boundary := substr $reqNumber (len $dotsRemoved) 1 }}
+        {{ if not (findRE "[0-9]" $boundary) }}
+          {{ $found = . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $found }}
+    {{ $page = $found }}
+    {{ $eyebrow = $found.Params.group_title | default "" }}
+    {{ $rawTitle := $found.Params.title | default "" }}
+    {{ $title = replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $rawTitle }}
+  {{ else if $children }}
+    {{ $first := index $children 0 }}
+    {{ $childLookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $first.path "children" $first.subrequirements) }}
+    {{ $eyebrow = $childLookup.eyebrow }}
+  {{ end }}
+{{ end }}
+
+{{ return (dict "page" $page "eyebrow" $eyebrow "title" $title) }}

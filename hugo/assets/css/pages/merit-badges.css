@@ -197,7 +197,6 @@
       transform: scale(1.15) rotate(5deg);
     }
   }
-
 }
 
 .badge-action-card--primary {
@@ -321,74 +320,6 @@
   margin-inline: auto;
   container-type: inline-size;
   container-name: merit-badge;
-}
-
-/* DRG Guide Banner on Requirements Page */
-.guide-banner {
-  margin-block: var(--space-s);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.08),
-    0 0 0 1px var(--brown-400);
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow:
-      0 8px 24px rgba(0, 0, 0, 0.15),
-      0 0 0 1px var(--brown-400);
-  }
-
-  .guide-banner__link {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: var(--space-xs) var(--space-s);
-    background: linear-gradient(
-      135deg,
-      var(--brown-450) 0%,
-      var(--brown-500) 100%
-    );
-    color: white;
-    text-decoration: none;
-  }
-
-  .guide-banner__icon {
-    font-size: 2rem;
-    flex-shrink: 0;
-    line-height: 1;
-  }
-
-  .guide-banner__content {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .guide-banner__title {
-    display: block;
-    font-size: 1.1rem;
-    line-height: 1.3;
-  }
-
-  .guide-banner__description {
-    margin: var(--space-3xs) 0 0;
-    font-size: 0.9rem;
-    opacity: 0.9;
-    line-height: 1.4;
-  }
-
-  .guide-banner__arrow {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    opacity: 0.7;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover .guide-banner__arrow {
-    transform: translateX(4px);
-    opacity: 1;
-  }
 }
 
 /* Badge grid guide indicator */
@@ -756,7 +687,6 @@
   white-space: nowrap;
   border: 0;
 }
-
 
 .subreq-text {
   margin-block-end: var(--space-2xs);

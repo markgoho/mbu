@@ -78,6 +78,11 @@ a:not([class]) {
   color: currentColor;
 }
 
+/* Ensure the hidden attribute always hides elements, overriding any element-level display rules */
+[hidden] {
+  display: none !important;
+}
+
 /* Make images easier to work with */
 img,
 picture {
