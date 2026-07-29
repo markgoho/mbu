@@ -38,6 +38,7 @@
   --line-height-tight: 1.25em;
   --line-height-relaxed: 1.5em;
   --color-text-main: var(--olive-500);
+  --link-color: var(--olive-500);
 
   --step--2: clamp(0.8889rem, 0.8747rem + 0.0711vw, 0.96rem);
   --step--1: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
@@ -109,7 +110,7 @@ p {
 
 a {
   transition: color 0.2s;
-  color: var(--color-text-main);
+  color: var(--link-color, var(--color-text-main));
 }
 
 main h1 {

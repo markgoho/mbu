@@ -18,31 +18,8 @@
 {{ $slug := $badge.File.ContentBaseName }}
 {{ $reqCount := len $json.requirements }}
 
-{{ $iconData := index hugo.Data "badge-icons" }}
-{{ $iconName := "" }}
-{{ if $iconData }}
-  {{ $iconName = index $iconData.badges $slug }}
-{{ end }}
-
-{{ $badgeName := strings.TrimSuffix " Merit Badge" $badge.Title }}
-{{ $categoryName := $json.category | default "Merit Badge" }}
-
-
 <div class="req-sidebar">
-  <div class="req-sidebar__identity">
-    {{ if $iconName }}
-      <div class="req-sidebar__glow-ring-wrap">
-        <div class="req-sidebar__glow-ring">
-          {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "req-sidebar__icon") }}
-        </div>
-      </div>
-    {{ end }}
-    <div class="req-sidebar__header-text">
-      <span class="req-sidebar__eyebrow-category">{{ $categoryName }}</span>
-      <h1 class="req-sidebar__title">{{ $badgeName }}</h1>
-      <span class="req-sidebar__micro-tag">MERIT BADGE</span>
-    </div>
-  </div>
+  {{ partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug) }}
 
   <nav class="req-sidebar__nav" aria-label="{{ $badge.Title }} sections">
     <ul>

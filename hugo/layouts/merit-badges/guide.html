@@ -1,107 +1,15 @@
-{{ define "main-class" }}drg-page{{ end }}
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main-class" }}drg-page drg-page-main{{ end }}
 
 {{ define "main" }}
   {{ $badgePage := .CurrentSection.Parent | default .Parent }}
-  {{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
+  {{ $json := index hugo.Data "merit-badges" $badgePage.File.ContentBaseName }}
 
-  <aside class="drg-sidebar">
-    {{ $currentUrl := .RelPermalink }}
-    {{ $guideNav := .Params.guide_nav | default .CurrentSection.Params.guide_nav | default .Parent.Params.guide_nav }}
-
-    {{ if $guideNav }}
-      <ul class="drg-nav">
-        {{ range $guideNav }}
-          {{ if .group_title }}
-            <li class="drg-nav__group-title">{{ .group_title }}</li>
-          {{ end }}
-
-          {{ range .items }}
-            <li class="drg-nav__item">
-              <a
-                href="{{ .url }}"
-                class="drg-nav__link {{ if eq .url $currentUrl }}
-                  drg-nav__link--active
-                {{ end }}">
-                {{ .title }}
-              </a>
-            </li>
-          {{ end }}
-        {{ end }}
-        <li class="drg-nav__group-title">Reference</li>
-        <li class="drg-nav__item">
-          <a href="{{ $reqUrl }}" class="drg-nav__link drg-nav__link--reference">
-            📋 View Requirements
-          </a>
-        </li>
-        {{ $printPage := $.Site.GetPage (printf "%sprint/" $.CurrentSection.RelPermalink) }}
-        {{ if $printPage }}
-          <li class="drg-nav__item">
-            <a href="{{ $printPage.RelPermalink }}" class="drg-nav__link drg-nav__link--reference">
-              🖨️ Print Complete Guide
-            </a>
-          </li>
-        {{ end }}
-      </ul>
-    {{ end }}
-  </aside>
+  {{ partial "merit-badges/drg-sidebar.html" (dict "page" . "badgePage" $badgePage "json" $json) }}
 
   <article class="drg-content">
     {{ partial "breadcrumb.html" . }}
-    {{/* Mobile-only collapsible navigation (hidden when sidebar is visible) */}}
-    {{ $guideNav := .Params.guide_nav | default .CurrentSection.Params.guide_nav | default .Parent.Params.guide_nav }}
-    {{ if $guideNav }}
-      <nav aria-label="Guide navigation">
-        <details class="drg-mobile-nav">
-          <summary class="drg-mobile-nav__toggle">
-            <svg
-              class="drg-mobile-nav__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="20"
-              height="20"
-              fill="currentColor">
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-            </svg>
-            <span>Guide Navigation</span>
-            <span class="drg-mobile-nav__arrow"></span>
-          </summary>
-          <ul class="drg-mobile-nav__list">
-            {{ $currentUrl := .RelPermalink }}
-            {{ range $guideNav }}
-              {{ if .group_title }}
-                <li class="drg-mobile-nav__group">{{ .group_title }}</li>
-              {{ end }}
-              {{ range .items }}
-                <li>
-                  <a
-                    href="{{ .url }}"
-                    class="drg-mobile-nav__link {{ if eq .url $currentUrl }}
-                      drg-mobile-nav__link--active
-                    {{ end }}"
-                    >{{ .title }}</a
-                  >
-                </li>
-              {{ end }}
-            {{ end }}
-            <li class="drg-mobile-nav__group">Reference</li>
-            <li>
-              <a href="{{ $reqUrl }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
-                📋 View Requirements
-              </a>
-            </li>
-            {{ $printPage := $.Site.GetPage (printf "%sprint/" $.CurrentSection.RelPermalink) }}
-            {{ if $printPage }}
-              <li>
-                <a href="{{ $printPage.RelPermalink }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
-                  🖨️ Print Complete Guide
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-        </details>
-      </nav>
-    {{ end }}
-
 
     <header class="drg-header">
       {{ $isIntro := .IsSection }}

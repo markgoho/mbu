@@ -1,0 +1,38 @@
+{{/* merit-badges/badge-identity.html
+
+  Shared identity header for both the requirements sidebar and the DRG
+  sidebar: duotone Phosphor emblem in a conic-gradient glow ring, category
+  eyebrow, badge title, "MERIT BADGE" micro-tag.
+
+  Params (dict):
+  badge - the badge's landing Page
+  json  - the badge's data.json (from hugo.Data "merit-badges")
+  slug  - the badge's content base name (used to key hugo.Data "badge-icons")
+*/}}
+{{ $badge := .badge }}
+{{ $json := .json }}
+{{ $slug := .slug }}
+
+{{ $iconData := index hugo.Data "badge-icons" }}
+{{ $iconName := "" }}
+{{ if $iconData }}
+  {{ $iconName = index $iconData.badges $slug }}
+{{ end }}
+
+{{ $badgeName := strings.TrimSuffix " Merit Badge" $badge.Title }}
+{{ $categoryName := $json.category | default "Merit Badge" }}
+
+<div class="badge-identity">
+  {{ if $iconName }}
+    <div class="badge-identity__glow-ring-wrap">
+      <div class="badge-identity__glow-ring">
+        {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-identity__icon") }}
+      </div>
+    </div>
+  {{ end }}
+  <div class="badge-identity__header-text">
+    <span class="badge-identity__eyebrow-category">{{ $categoryName }}</span>
+    <h1 class="badge-identity__title">{{ $badgeName }}</h1>
+    <span class="badge-identity__micro-tag">MERIT BADGE</span>
+  </div>
+</div>

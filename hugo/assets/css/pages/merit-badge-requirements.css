@@ -90,7 +90,11 @@
   box-shadow: var(--shadow-elevated-hover);
 }
 
-.req-sidebar__identity {
+/* ------------------------------------------------------------------ */
+/* Badge identity (shared with the DRG sidebar — see badge-identity.html) */
+/* ------------------------------------------------------------------ */
+
+.badge-identity {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,7 +104,7 @@
   border-block-end: 1px dashed var(--card-border-subtle);
 }
 
-.req-sidebar__glow-ring-wrap {
+.badge-identity__glow-ring-wrap {
   padding: 3px;
   border-radius: 50%;
   background: conic-gradient(
@@ -115,7 +119,7 @@
     box-shadow 0.25s ease;
 }
 
-.dark .req-sidebar__glow-ring-wrap {
+.dark .badge-identity__glow-ring-wrap {
   background: conic-gradient(
     from 180deg,
     var(--amber),
@@ -125,11 +129,12 @@
   box-shadow: 0 0 18px var(--amber-glow);
 }
 
-.req-sidebar:hover .req-sidebar__glow-ring-wrap {
+.req-sidebar:hover .badge-identity__glow-ring-wrap,
+.drg-sidebar:hover .badge-identity__glow-ring-wrap {
   transform: scale(1.04);
 }
 
-.req-sidebar__glow-ring {
+.badge-identity__glow-ring {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
@@ -139,7 +144,7 @@
   justify-content: center;
 }
 
-.req-sidebar__icon {
+.badge-identity__icon {
   width: 2.2rem;
   height: 2.2rem;
   flex-shrink: 0;
@@ -149,18 +154,18 @@
     color 0.25s ease;
 }
 
-.dark .req-sidebar__icon {
+.dark .badge-identity__icon {
   color: var(--amber);
 }
 
-.req-sidebar__header-text {
+.badge-identity__header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.2rem;
 }
 
-.req-sidebar__eyebrow-category {
+.badge-identity__eyebrow-category {
   font-size: 0.675rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -168,11 +173,11 @@
   color: var(--on-accent-container);
 }
 
-.dark .req-sidebar__eyebrow-category {
+.dark .badge-identity__eyebrow-category {
   color: var(--amber);
 }
 
-.req-sidebar__title {
+.badge-identity__title {
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.55rem;
@@ -182,7 +187,7 @@
   text-wrap: balance;
 }
 
-.req-sidebar__micro-tag {
+.badge-identity__micro-tag {
   font-size: 0.625rem;
   font-weight: 700;
   text-transform: uppercase;
