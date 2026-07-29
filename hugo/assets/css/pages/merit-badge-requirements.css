@@ -32,12 +32,14 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
+  padding-block-start: var(--space-m);
 
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
     gap: var(--space-l);
     padding-inline: var(--space-m);
+    padding-block-start: var(--space-l);
   }
 }
 
@@ -63,9 +65,26 @@
   flex-direction: column;
   gap: var(--space-s);
   background: var(--surface-raised);
-  border: 1px solid var(--outline-variant);
+  border: 1px solid var(--card-border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-s);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.req-sidebar:hover {
+  border-color: var(--accent-container);
+  box-shadow: var(--shadow-raised);
+}
+
+.dark .req-sidebar {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-sidebar:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-elevated-hover);
 }
 
 .req-sidebar__identity {
@@ -78,7 +97,36 @@
   width: 2rem;
   height: 2rem;
   flex-shrink: 0;
-  color: var(--accent);
+  color: var(--on-surface-muted);
+  transition: transform 0.2s ease;
+}
+
+.req-sidebar__icon .icon__fill {
+  fill: var(--on-surface-muted);
+  opacity: 0.2;
+  transition: fill 0.25s ease, opacity 0.25s ease;
+}
+
+.dark .req-sidebar__icon .icon__fill {
+  opacity: 0.35;
+}
+
+.req-sidebar:hover .req-sidebar__icon {
+  transform: scale(1.05);
+}
+
+.req-sidebar:hover .req-sidebar__icon .icon__fill {
+  fill: var(--amber);
+  opacity: 0.7;
+}
+
+.dark .req-sidebar:hover .req-sidebar__icon {
+  filter: drop-shadow(0 2px 8px var(--amber-glow));
+}
+
+.dark .req-sidebar:hover .req-sidebar__icon .icon__fill {
+  fill: var(--amber);
+  opacity: 0.45;
 }
 
 .req-sidebar__title {
@@ -243,27 +291,51 @@
   flex-shrink: 0;
   width: var(--space-l);
   height: var(--space-l);
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 4px solid var(--surface);
   border-radius: var(--radius-full);
   background: var(--accent-container);
   color: var(--on-accent-container);
+  box-shadow: var(--shadow-card);
+}
+
+.req-card__node-text {
+  display: block;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--step-1);
-  box-shadow: var(--shadow-card);
+  line-height: 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  transform: translateY(-2px);
 }
 
 .req-card__panel {
   flex: 1;
   min-width: 0;
   background: var(--surface-raised);
-  border: 1px solid var(--outline-variant);
+  border: 1px solid var(--card-border-subtle);
   border-radius: var(--radius-xl);
   padding: var(--space-s);
   box-shadow: var(--shadow-card);
   scroll-margin-top: var(--space-m);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.req-card:hover .req-card__panel {
+  border-color: var(--accent-container);
+  box-shadow: var(--shadow-raised), 0 0 0 1px var(--accent-container);
+}
+
+.dark .req-card__panel {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-card:hover .req-card__panel {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-elevated-hover), 0 0 0 1px var(--accent);
 }
 
 .req-card:target .req-card__panel {
@@ -301,6 +373,7 @@
 .req-card__text {
   max-width: 75ch;
   margin-block: var(--space-xs) 0;
+  font-size: var(--step-0);
   line-height: var(--line-height-relaxed);
   color: var(--on-surface);
 }
@@ -310,61 +383,28 @@
     gap: var(--space-m);
   }
 
+  /* No more side-by-side node + panel: the panel goes full width and the
+     node becomes a badge pinned to its top-left corner instead, so the
+     timeline doesn't eat horizontal space on narrow screens. */
   .req-card {
-    gap: var(--space-2xs);
+    display: block;
   }
 
   .req-card__node {
+    position: absolute;
+    top: calc(var(--space-2xs) * -1);
+    left: calc(var(--space-2xs) * -1);
     width: 2rem;
     height: 2rem;
     font-size: var(--step-0);
   }
 
   .req-card::before {
-    left: calc(1rem - 1px);
-    top: 2rem;
+    content: none;
   }
 }
 
-/* ------------------------------------------------------------------ */
-/* Verbatim text rendered as a pill (req-text.html)                    */
-/* ------------------------------------------------------------------ */
 
-/* A short mode-bearing stem ("Do ONE of the following:") renders as a
-   pill instead of a paragraph -- this is the requirement's own verbatim
-   text, never synthesized wording, just styled differently. "select"
-   (the scout must make a choice) gets the more prominent solid-accent
-   treatment; "all" (informational) gets the quieter container tint. */
-.req-text-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2xs);
-  margin-block: var(--space-xs) 0;
-  padding: var(--space-2xs) var(--space-s);
-  border-radius: var(--radius-full);
-  font-weight: 700;
-
-  & p {
-    display: inline;
-    margin: 0;
-  }
-}
-
-.req-text-pill--select {
-  background: var(--accent);
-  color: var(--on-accent);
-}
-
-.req-text-pill--all {
-  background: var(--secondary-container);
-  color: var(--on-secondary-container);
-}
-
-.req-text-pill__icon {
-  width: 1.1em;
-  height: 1.1em;
-  flex-shrink: 0;
-}
 
 /* ------------------------------------------------------------------ */
 /* Actions (copy link / study guide link)                               */
@@ -411,20 +451,9 @@
 }
 
 .req-children--options,
-.req-children--list {
-  grid-template-columns: 1fr;
-}
-
+.req-children--list,
 .req-children--cards {
-  /* Content-driven column count (like nav-card.css's grid), capped at 3:
-     each track can't shrink below a third of the row (minus gaps), so
-     auto-fit never places a 4th column no matter how wide the shell
-     gets, while narrower rows naturally fall back to 2 or 1. */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(max(18rem, (100% - 2 * var(--space-xs)) / 3), 1fr)
-  );
-  align-items: start;
+  grid-template-columns: 1fr;
 }
 
 .req-children--tiles {
@@ -511,6 +540,50 @@
   gap: var(--space-2xs);
 }
 
+
+
+.req-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-block-start: var(--space-m);
+  padding-block-start: var(--space-s);
+  border-top: 1px solid var(--card-border-subtle);
+}
+
+.dark .req-card__footer {
+  border-top-color: var(--card-border-subtle);
+}
+
+.req-card__guide-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.req-card__guide-link:hover,
+.req-card__guide-link:focus-visible {
+  color: var(--on-surface);
+  text-decoration: underline;
+}
+
+.req-card__guide-link:hover .req-card__guide-link-icon,
+.req-card__guide-link:focus-visible .req-card__guide-link-icon {
+  transform: translateX(4px);
+}
+
+.req-card__guide-link-icon {
+  width: 1.15em;
+  height: 1.15em;
+  transition: transform 0.2s ease;
+}
+
 .req-child__title {
   min-width: 0;
   margin: 0;
@@ -573,12 +646,75 @@
   }
 }
 
+/* ------------------------------------------------------------------ */
+/* Verbatim text rendered as a pill (req-text.html)                    */
+/* ------------------------------------------------------------------ */
+
+/* A short mode-bearing stem ("Do ONE of the following:") renders as a
+   pill instead of a paragraph -- this is the requirement's own verbatim
+   text, never synthesized wording, just styled differently. "select"
+   (the scout must make a choice) gets the more prominent solid-accent
+   treatment; "all" (informational) gets the quieter container tint.
+   Defined after .req-card__text and .req-child__text so text color overrides
+   work correctly in both light and dark mode. */
+.req-card__title-row,
+.req-child__title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.req-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--2);
+  line-height: 1.2;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.req-pill--select {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  border: 1px solid var(--accent);
+}
+
+.req-pill--all {
+  background: var(--surface-sunken);
+  color: var(--on-surface-muted);
+  border: 1px solid var(--outline-variant);
+}
+
+.req-pill__icon {
+  width: 0.9em;
+  height: 0.9em;
+  flex-shrink: 0;
+}
+
 /* Nested children inside a child item shouldn't add a third layer of
    heavy chrome -- flatten the background for the next level down. */
 .req-child .req-children--cards .req-child,
-.req-child .req-children--list .req-child,
 .req-child .req-children--options .req-child {
   background: var(--surface-raised);
+}
+
+/* A "list" group nested inside an already-chromed item (e.g. a lettered
+   sub-list inside a named "options" choice, animal-science 6.beef-cattle
+   a-d) would stack a third layer of card chrome directly on the second --
+   drop its own border/background entirely, same treatment as
+   req-child--plain/numbered, so the marker + indent carries the grouping
+   instead of a second concentric box. */
+.req-child .req-children--list .req-child {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
 }
 
 .req-children--deep-list {

@@ -20,6 +20,7 @@
     </aside>
 
     <div class="req-main">
+      {{ partial "breadcrumb.html" . }}
       {{ partial "discontinued-notice.html" $json }}
 
       {{ with .Description }}

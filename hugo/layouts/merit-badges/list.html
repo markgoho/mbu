@@ -1,5 +1,8 @@
 {{ define "main" }}
-  {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+  {{ $json := false }}
+  {{ if .File }}
+    {{ $json = index hugo.Data "merit-badges" .File.ContentBaseName }}
+  {{ end }}
 
   {{ if $json }}
     {{ $reqCount := len $json.requirements }}
@@ -14,6 +17,7 @@
 
 
     <article class="merit-badge-landing">
+      {{ partial "breadcrumb.html" . }}
       <header class="badge-header">
         <h1>
           {{ .Title }}
@@ -140,7 +144,10 @@
 
     <section class="badges-grid">
       {{ range $index, $page := .Pages.ByTitle }}
-        {{ $json := index hugo.Data "merit-badges" $page.File.ContentBaseName }}
+        {{ $json := false }}
+        {{ if $page.File }}
+          {{ $json = index hugo.Data "merit-badges" $page.File.ContentBaseName }}
+        {{ end }}
         {{ if $json }}
           {{ $reqCount := len $json.requirements }}
           {{ $hasGuide := $page.GetPage "guide" }}
@@ -205,7 +212,10 @@
 {{ end }}
 
 {{ define "footer-scripts" }}
-  {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+  {{ $json := false }}
+  {{ if .File }}
+    {{ $json = index hugo.Data "merit-badges" .File.ContentBaseName }}
+  {{ end }}
   {{ if $json }}
     {{/* Individual badge landing page - include JSON-LD */}}
     {{ partial "json-ld/merit-badge-landing.html" . }}

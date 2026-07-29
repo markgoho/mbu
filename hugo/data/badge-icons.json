@@ -48,6 +48,7 @@
     "coin-collecting": "coin",
     "collections": "archive",
     "communication": "chat-circle-text",
+    "competitive-gaming": "game-controller",
     "composite-materials": "stack",
     "cooking": "cooking-pot",
     "crime-prevention": "shield-check",
@@ -156,6 +157,7 @@
     "welding": "flame",
     "whitewater": "wave-triangle",
     "wilderness-survival": "compass",
+    "wildland-fire-management": "flame",
     "wood-carving": "knife",
     "woodwork": "hammer"
   }

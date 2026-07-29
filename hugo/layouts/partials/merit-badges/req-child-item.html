@@ -11,15 +11,13 @@
   fabricated -- rendered as an inline prefix immediately before its own
   verbatim text (title, when shown, stays a separate heading above; the
   marker never gets concatenated into the markdownified text itself, it's
-  a sibling <span>). The marker format depends on the item's OWN depth:
-  - depth 2 (a direct child of a depth-1 requirement, e.g. "1.a",
-  "6.beef-cattle"): the combined parent+child label ("1a", or the
-  bare slug "beef-cattle" for named options), same as before.
-  - depth 3+ (a grandchild or deeper, e.g. "5.b.1", "6.b.i"): ONLY the
-  item's own last path segment, with a trailing period ("1.", "i.")
-  -- the combined label loses its usefulness once there's more than
-  one level of parent context, and the parent card directly above
-  already carries that context.
+  a sibling <span>). The marker is just the item's own last path segment
+  plus a trailing period ("1.a" -> "a.", "5.b.1" -> "1.", "6.b.i" -> "i."),
+  regardless of depth -- the parent card/marker directly above already
+  carries the rest of the path's context, so repeating it here would just
+  be noise. Named-option slugs (e.g. "beef-cattle", "option3") render
+  bare instead, with no period and no parent prefix, since they read as
+  words, not list markers.
 
   A resolved DRG title is layered on top of the marker only when the
   whole sibling group resolved one (see req-children.html); tiles never
@@ -51,26 +49,19 @@
 {{ $segments := split $req.path "." }}
 {{ $itemDepth := len $segments }}
 
-{{/* Marker text: depth 3+ uses only the item's own last path segment
-  ("5.b.1" -> "1.", "6.b.i" -> "i."). Depth 2 keeps the combined
-  parent+child label built from real data only: the path with dots
-  removed (e.g. "1.a" -> "1a") for ordinary lettered/numbered nesting,
-  or the child's own req_id alone for named-option slugs (e.g.
-  "beef-cattle", "option3") -- combining those with the parent number
-  would just be noise ("6beef-cattle"). A req_id counts as a slug when
-  it's more than one character AND not purely numeric, so multi-digit
-  sequence continuations like "10".."21" still combine with the
-  parent for context instead of losing it.
+{{/* Marker text: the item's own last path segment plus a trailing
+  period ("1.a" -> "a.", "5.b.1" -> "1.", "6.b.i" -> "i."), regardless
+  of depth. Named-option slugs (e.g. "beef-cattle", "option3") render
+  bare instead, with no period and no parent prefix -- a req_id counts
+  as a slug when it's more than one character AND not purely numeric,
+  so multi-digit sequence continuations like "10".."21" still get the
+  trailing period.
 */}}
-{{ $marker := "" }}
-{{ if ge $itemDepth 3 }}
-  {{ $marker = printf "%s." (index $segments (sub $itemDepth 1)) }}
-{{ else }}
-  {{ $marker = replace $req.path "." "" }}
-  {{ $nonDigits := findRE "[^0-9]" $req.req_id }}
-  {{ if and (gt (len $req.req_id) 1) $nonDigits }}
-    {{ $marker = $req.req_id }}
-  {{ end }}
+{{ $ownSegment := index $segments (sub $itemDepth 1) }}
+{{ $nonDigits := findRE "[^0-9]" $req.req_id }}
+{{ $marker := printf "%s." $ownSegment }}
+{{ if and (gt (len $req.req_id) 1) $nonDigits }}
+  {{ $marker = $req.req_id }}
 {{ end }}
 
 
@@ -81,12 +72,15 @@
   data-anchor="{{ $req.path }}"
   data-badge-name="{{ $badgeName }}">
   {{ if eq $variant "tiles" }}
-    <div class="req-child__text">{{ $req.text | markdownify }}</div>
+    <p class="req-child__text">{{ $req.text | markdownify }}</p>
     {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" "") }}
   {{ else }}
     {{ if and $showTitle $lookup.title }}
       <div class="req-child__header">
-        <h4 class="req-child__title">{{ $lookup.title }}</h4>
+        <div class="req-child__title-row">
+          <h4 class="req-child__title">{{ $lookup.title }}</h4>
+          {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
+        </div>
         {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" $lookup.page) }}
       </div>
     {{ end }}
@@ -94,7 +88,12 @@
 
     <div class="req-child__body">
       <span class="req-child__marker">{{ $marker }}</span>
-      {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text") }}
+      <div class="req-child__content">
+        {{ if not (and $showTitle $lookup.title) }}
+          {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
+        {{ end }}
+        {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text") }}
+      </div>
       {{ if not (and $showTitle $lookup.title) }}
         {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" $lookup.page) }}
       {{ end }}

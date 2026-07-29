@@ -15,7 +15,10 @@
   --olive-300: hsl(138, 27%, 79%);
   --olive-400: hsl(138, 27%, 58%);
   --olive-500: hsl(138, 27%, 19%);
+  --olive-500-alpha-05: hsla(138, 27%, 19%, 0.05);
+  --olive-500-alpha-08: hsla(138, 27%, 19%, 0.08);
   --olive-500-alpha-10: hsla(138, 27%, 19%, 0.1);
+  --olive-500-alpha-12: hsla(138, 27%, 19%, 0.12);
   --olive-500-alpha-20: hsla(138, 27%, 19%, 0.2);
   --olive-600: hsl(138, 27%, 15%);
   --olive-700: hsl(138, 27%, 10%);
@@ -63,10 +66,14 @@
     --olive-300: oklch(0.855 0.0415 154.91);
     --olive-400: oklch(0.7086 0.0846 153.31);
     --olive-500: oklch(0.3368 0.0452 153.21); /* original */
+    --olive-500-alpha-05: oklch(0.3368 0.0452 153.21 / 0.05);
+    --olive-500-alpha-08: oklch(0.3368 0.0452 153.21 / 0.08);
     --olive-500-alpha-10: oklch(0.3368 0.0452 153.21 / 0.1);
+    --olive-500-alpha-12: oklch(0.3368 0.0452 153.21 / 0.12);
     --olive-500-alpha-20: oklch(0.3368 0.0452 153.21 / 0.2);
     --olive-600: oklch(0.289 0.0376 153.05);
     --olive-700: oklch(0.2289 0.0268 153.38);
+    --olive-800: oklch(0.165 0.023 153.3);
 
     --tan-000: oklch(0.98 0.003 86.03);
     --tan-100: oklch(0.9585 0.0068 86.03);
@@ -99,37 +106,41 @@
  */
 :root {
   /* --- v2 light ramp --- */
-  --v2-primary: #56642b;
-  --v2-primary-container: #8a9a5b;
-  --v2-on-primary: #ffffff;
-  --v2-on-primary-container: #253000;
+  /* Primary uses the v1 olive ramp -- official Scouting America green. */
+  --v2-primary: var(--olive-500);
+  --v2-primary-container: var(--olive-300);
+  --v2-on-primary: var(--tan-000);
+  --v2-on-primary-container: var(--olive-600);
 
   --v2-secondary: #50606f;
   --v2-secondary-container: #d1e1f4;
   --v2-on-secondary-container: #556474;
 
-  --v2-surface: #fbf9f5;
-  --v2-surface-container-lowest: #ffffff;
+  /* Surface family uses the v1 tan ramp -- official Scouting America tan. */
+  --v2-surface: var(--tan-100);
+  --v2-surface-container-lowest: var(--tan-000);
   --v2-surface-container-low: #f5f3ef;
-  --v2-surface-container: #efeeea;
+  --v2-surface-container: var(--tan-200);
   --v2-surface-container-high: #eae8e4;
   --v2-surface-variant: #e4e2de;
-  --v2-on-surface: #1b1c1a;
+  /* Near-black, but tinted with the olive ramp instead of neutral gray. */
+  --v2-on-surface: var(--olive-800);
   --v2-on-surface-variant: #46483c;
 
-  --v2-outline: #76786b;
-  --v2-outline-variant: #c6c8b8;
+  --v2-outline: var(--tan-400);
+  --v2-outline-variant: var(--tan-300);
 
   --v2-error: #ba1a1a;
   --v2-error-container: #ffdad6;
   --v2-on-error-container: #93000a;
 
-  --v2-inverse-surface: #30312e;
-  --v2-inverse-on-surface: #f2f0ed;
+  --v2-inverse-surface: var(--olive-600);
+  --v2-inverse-on-surface: var(--tan-000);
 
   /* --- v2 dark ramp ---
-   * Derived from the light ramp's hue/chroma family plus the mock's
-   * "fixed" hints (primary-fixed-dim #bdce89, on-primary-fixed #161f00).
+   * Derived from the light ramp's hue/chroma family. Primary stays on
+   * the v1 olive ramp (official Scouting America green), shifted to a
+   * lighter step so it reads against a dark surface.
    * See tokens-v2.css for the AA contrast ratios verified for each pair.
    */
   --v2-dark-surface: #171816;
@@ -140,10 +151,10 @@
   --v2-dark-inverse-surface: #fbf9f5; /* = light --v2-surface */
   --v2-dark-inverse-on-surface: #1b1c1a; /* = light --v2-on-surface */
 
-  --v2-dark-primary: #bdce89; /* primary-fixed-dim */
-  --v2-dark-on-primary: #161f00; /* on-primary-fixed */
-  --v2-dark-primary-container: #485328;
-  --v2-dark-on-primary-container: #e7eed3;
+  --v2-dark-primary: var(--olive-400);
+  --v2-dark-on-primary: var(--olive-700);
+  --v2-dark-primary-container: var(--olive-600);
+  --v2-dark-on-primary-container: var(--olive-200);
 
   --v2-dark-secondary: #b9c7d5;
   --v2-dark-secondary-container: #313d49;
@@ -155,4 +166,19 @@
   --v2-dark-error: #ffb4ab;
   --v2-dark-error-container: #93000a;
   --v2-dark-on-error-container: #ffdad6;
+
+  --v2-amber: #ffb800;
+  --v2-dark-amber: #ffc83b;
+  --v2-amber-alpha-30: rgba(255, 184, 0, 0.3);
+  --v2-dark-amber-alpha-30: rgba(255, 200, 59, 0.3);
+
+  /* Neutral overlay/scrim alphas -- dark-theme hairline borders and the
+     elevated card shadows (blurred drop-shadows read as near-invisible
+     against dark surfaces, so cards lean on bigger, darker scrims). */
+  --v2-dark-overlay-08: rgba(255, 255, 255, 0.08);
+  --v2-dark-overlay-12: rgba(255, 255, 255, 0.12);
+  --v2-dark-scrim-20: rgba(0, 0, 0, 0.2);
+  --v2-dark-scrim-35: rgba(0, 0, 0, 0.35);
+  --v2-dark-scrim-40: rgba(0, 0, 0, 0.4);
+  --v2-dark-scrim-45: rgba(0, 0, 0, 0.45);
 }

@@ -46,6 +46,7 @@
   </aside>
 
   <article class="drg-content">
+    {{ partial "breadcrumb.html" . }}
     {{/* Mobile-only collapsible navigation (hidden when sidebar is visible) */}}
     {{ $guideNav := .Params.guide_nav | default .CurrentSection.Params.guide_nav | default .Parent.Params.guide_nav }}
     {{ if $guideNav }}

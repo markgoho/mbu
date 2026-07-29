@@ -20,31 +20,22 @@
   class - base class for the text element (e.g. "req-card__text"),
   kept on both the pill and the plain-prose paths so shared
   rules (max-width, line-height, ...) keep applying
+  title - (optional) the card's resolved title. When the text opens with
+  this same label (BSA writes many requirements as "Label. Do the
+  following:"), that label is stripped before rendering -- the
+  title is already shown directly above, so repeating it would
+  just echo it back verbatim.
 */}}
 {{ $text := .text }}
-{{ $mode := .mode }}
 {{ $class := .class }}
+{{ $title := .title }}
 
-{{ $isPill := false }}
-{{ $icon := "" }}
-{{ $modeClass := "" }}
-{{ if and $mode (le (len $text) 80) }}
-  {{ if eq $mode.type "select" }}
-    {{ $isPill = true }}
-    {{ $icon = "hand-pointing" }}
-    {{ $modeClass = "select" }}
-  {{ else if eq $mode.type "all" }}
-    {{ $isPill = true }}
-    {{ $icon = "list-checks" }}
-    {{ $modeClass = "all" }}
+{{ if $title }}
+  {{ $prefix := printf "%s." (lower $title) }}
+  {{ if strings.HasPrefix (lower $text) $prefix }}
+    {{ $text = strings.TrimSpace (substr $text (len $prefix)) }}
   {{ end }}
 {{ end }}
 
-{{ if $isPill }}
-  <div class="{{ $class }} req-text-pill req-text-pill--{{ $modeClass }}">
-    {{ partial "icon.html" (dict "name" $icon "class" "req-text-pill__icon") }}
-    {{ $text | markdownify }}
-  </div>
-{{ else }}
-  <div class="{{ $class }}">{{ $text | markdownify }}</div>
-{{ end }}
+<p class="{{ $class }}">{{ $text | markdownify }}</p>
+

@@ -1,13 +1,34 @@
+{{/* drg/requirement.html
+
+  Quotes a requirement's verbatim text inside a guide page. When this block
+  is the page's OWN requirement (number == the page's req_number -- true
+  only for the page's lead quote, never its subrequirement quotes), and the
+  official text opens with a label matching the page's title, that label is
+  stripped here: the page's <h1> (drg-header__title) already shows it right
+  above, so repeating it would just echo the title back verbatim.
+*/}}
 {{ $number := .Get "number" }}
 {{ $option := .Get "option" }}
 {{ $isSub := findRE `[a-zA-Z]` $number }}
 {{ $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" }}
+
+{{ $text := $.Inner | strings.TrimSpace }}
+{{ if eq $number $.Page.Params.req_number }}
+  {{ $title := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $.Page.Title }}
+  {{ if $title }}
+    {{ $prefix := printf "%s." (lower $title) }}
+    {{ if strings.HasPrefix (lower $text) $prefix }}
+      {{ $text = strings.TrimSpace (substr $text (len $prefix)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 <div class="{{ $class }}">
   {{ with $number }}
     <span class="drg-requirement__number">{{ . }}.</span>
   {{ end }}
-  <div class="drg-requirement__text">
-    {{ $.Inner | markdownify }}
+  <p class="drg-requirement__text">
+    {{ $text | markdownify }}
     {{ with $option }}<strong>{{ . }}</strong>{{ end }}
-  </div>
+  </p>
 </div>
