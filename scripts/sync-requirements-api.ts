@@ -130,11 +130,7 @@ const REQUIREMENT_PATH_OVERRIDES: Record<string, string> = {
   "shotgun-shooting:2.B.m": "2.B.m",
 };
 
-function normalizeRequirementOverrideKey({
-  text,
-}: {
-  text: string;
-}): string {
+function normalizeRequirementOverrideKey({ text }: { text: string }): string {
   return normalizeWhitespace({ text }).replaceAll(/\s+/g, " ").trim();
 }
 
@@ -199,7 +195,9 @@ function applyShotgunOptionBranchOverrides({
     return;
   }
 
-  const requirementTwo = requirements.find(requirement => requirement["path"] === "2");
+  const requirementTwo = requirements.find(
+    requirement => requirement["path"] === "2",
+  );
   if (requirementTwo?.["subrequirements"] === undefined) {
     return;
   }
@@ -403,9 +401,7 @@ function extractPamphletUrl({
       continue;
     }
 
-    const pdfMatch = requirementRow["name"].match(
-      /href="([^"]+\.pdf[^"]*)"/i,
-    );
+    const pdfMatch = requirementRow["name"].match(/href="([^"]+\.pdf[^"]*)"/i);
     if (pdfMatch?.[1] !== undefined) {
       return pdfMatch[1];
     }
@@ -638,10 +634,12 @@ function inferSubrequirementMode({
   text,
   childrenRequired,
   childCount,
+  anyChildRequired,
 }: {
   text: string;
   childrenRequired?: number;
   childCount: number;
+  anyChildRequired: boolean;
 }): SelectMode | undefined {
   if (childCount === 0) {
     return undefined;
@@ -652,7 +650,22 @@ function inferSubrequirementMode({
     return { type: "select", count: textSelectionCount };
   }
 
-  if (childrenRequired !== undefined && childrenRequired < childCount) {
+  // The API's childrenRequired is NOT reliably "how many the scout picks":
+  // for plenty of do-all groups it comes back one short of the child count
+  // (wildland-fire-management 7(a) reports 5 of 6, snow-sports 7(b) 10 of
+  // 11, bird-study 10 and automotive-maintenance 3 both 2 of 3) even though
+  // every child is flagged required. Trusting it there turns "demonstrate
+  // the following six tactics" into a bogus "Choose 5" pill.
+  //
+  // A genuine choice group never flags any child required -- the scout
+  // hasn't chosen yet, so none of them individually are. Requiring that
+  // keeps every real "choose N" group (art 4, personal-management 3,
+  // wildland-fire-management 9, ...) while rejecting the stale counts.
+  if (
+    !anyChildRequired &&
+    childrenRequired !== undefined &&
+    childrenRequired < childCount
+  ) {
     return { type: "select", count: childrenRequired };
   }
 
@@ -793,6 +806,9 @@ function buildRequirementsForRows({
       text: requirementRow["text"],
       childrenRequired: requirementRow["childrenRequired"],
       childCount: childRequirements.length,
+      anyChildRequired: childRequirementRows.some(
+        childRequirementRow => childRequirementRow["required"],
+      ),
     });
 
     return {
