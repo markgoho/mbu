@@ -1,6 +1,6 @@
 /* Merit Badges List Page */
 .badge-count {
-  color: var(--color-text-muted, #666);
+  color: var(--on-surface-muted);
   margin-block-start: var(--space-2xs);
 }
 
@@ -15,13 +15,12 @@
   }
 }
 
+/* Base chrome (background/border/radius/shadow/hover-lift) comes from
+   .card-surface .card-surface--lift, composed onto every .badge-card
+   element in the markup (merit-badges/badge-card.html and the
+   eagle-required "choose one" groups). Rules below are layout/content
+   only. */
 .badge-card {
-  background: white;
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.06),
-    0 0 0 1px var(--tan-200);
   overflow: hidden;
 
   a {
@@ -30,20 +29,12 @@
     display: block;
   }
 
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow:
-      0 8px 24px rgba(0, 0, 0, 0.12),
-      0 0 0 1px var(--tan-300);
-  }
-
   /* Cards without images (text-only) */
   &:not(.badge-card--with-image) {
     padding: var(--space-s);
 
     &.eagle {
-      border-left: 4px solid var(--olive-400);
-      background: linear-gradient(to right, var(--olive-100) 0%, white 10%);
+      border-inline-start: 4px solid var(--accent);
     }
   }
 
@@ -55,6 +46,7 @@
     align-items: center;
     gap: var(--space-2xs);
     line-height: 1.3;
+    color: var(--on-surface);
   }
 }
 
@@ -63,18 +55,15 @@
   display: flex;
   flex-direction: column;
 
-  &.eagle {
-    .badge-card__content {
-      background: linear-gradient(to right, var(--olive-100) 0%, white 15%);
-      border-left: 4px solid var(--olive-400);
-    }
+  &.eagle .badge-card__content {
+    border-inline-start: 4px solid var(--accent);
   }
 
   .badge-card__image {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--tan-000) 0%, white 100%);
+    background: var(--surface-sunken);
     position: relative;
     margin: 0;
     padding: 0;
@@ -96,7 +85,6 @@
 
   .badge-card__content {
     padding: var(--space-xs);
-    background: white;
   }
 }
 
@@ -104,34 +92,26 @@
   font-size: 0.75em;
 }
 
+.eagle-badge__icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+}
+
 .req-count {
-  color: var(--color-text-muted, #666);
+  color: var(--on-surface-muted);
   font-size: 0.9rem;
   margin-block-start: var(--space-2xs);
 }
 
-/* Merit Badge Featured Image */
+/* Merit Badge Featured Image — base chrome from .card-surface
+   .card-surface--lift, composed in merit-badges/list.html. */
 .badge-featured-image {
-  background: white;
-  border-radius: 16px;
-  box-shadow:
-    0 4px 16px rgba(0, 0, 0, 0.08),
-    0 0 0 1px var(--tan-200);
   overflow: hidden;
   margin-block: var(--space-m);
   max-width: 600px;
   margin-inline: auto;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   animation: badge-fade-in 0.6s ease-out backwards;
-
-  @media (hover: hover) {
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.12),
-        0 0 0 1px var(--tan-300);
-    }
-  }
 
   img {
     width: 100%;
@@ -161,17 +141,18 @@
   margin-inline: auto;
 }
 
+/* Base chrome (background/border/radius/shadow/hover-lift) comes from
+   .card-surface .card-surface--lift, composed onto every
+   .badge-action-card in merit-badges/list.html. Variants differentiate
+   by icon rather than color-coded gradients, except --primary which
+   gets an accent tint to mark it as the featured action. */
 .badge-action-card {
-  background: white;
-  border: 2px solid var(--tan-200);
-  border-radius: 16px;
-  padding: var(--space-m);
   display: flex;
   gap: var(--space-xs);
   align-items: flex-start;
+  padding: var(--space-m);
   text-decoration: none;
-  color: var(--color-text-main);
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--on-surface);
   position: relative;
   overflow: hidden;
 
@@ -179,112 +160,47 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--tan-000) 0%, transparent 50%);
+    background: var(--accent-wash);
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
   }
 
-  &:hover {
-    transform: translateY(-4px);
-    border-color: var(--olive-400);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  &:hover::before,
+  &:focus-visible::before {
+    opacity: 1;
+  }
 
-    &::before {
-      opacity: 1;
-    }
-
-    .badge-action-card__icon {
-      transform: scale(1.15) rotate(5deg);
-    }
+  &:hover .badge-action-card__icon,
+  &:focus-visible .badge-action-card__icon {
+    transform: scale(1.15) rotate(5deg);
   }
 }
 
 .badge-action-card--primary {
-  background: linear-gradient(
-    135deg,
-    var(--olive-500) 0%,
-    var(--teal-600) 100%
-  );
-  border-color: var(--olive-600);
-  color: white;
+  background: var(--accent-container);
+  border-color: var(--accent);
 
   .badge-action-card__title,
-  .badge-action-card__description {
-    color: white;
-  }
-
-  &::before {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 50%
-    );
-  }
-
-  &:hover {
-    border-color: var(--olive-400);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.badge-action-card--guide {
-  background: linear-gradient(
-    135deg,
-    var(--brown-450) 0%,
-    var(--brown-500) 100%
-  );
-  border-color: var(--brown-500);
-  color: white;
-
-  .badge-action-card__title,
-  .badge-action-card__description {
-    color: white;
-  }
-
-  &::before {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 50%
-    );
-  }
-
-  &:hover {
-    border-color: var(--brown-400);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.badge-action-card--worksheet {
-  background: linear-gradient(135deg, var(--teal-400) 0%, var(--teal-500) 100%);
-  border-color: var(--teal-500);
-  color: white;
-
-  .badge-action-card__title,
-  .badge-action-card__description {
-    color: white;
-  }
-
-  &::before {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 50%
-    );
-  }
-
-  &:hover {
-    border-color: var(--teal-300);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  .badge-action-card__description,
+  .badge-action-card__icon {
+    color: var(--on-accent-container);
   }
 }
 
 .badge-action-card__icon {
-  font-size: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   flex-shrink: 0;
+  color: var(--accent);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  line-height: 1;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.dark .badge-action-card__icon {
+  color: var(--amber);
+}
+
+.dark .badge-action-card--primary .badge-action-card__icon {
+  color: var(--on-accent-container);
 }
 
 .badge-action-card__content {
@@ -298,13 +214,14 @@
   font-weight: var(--font-weight-bold);
   margin: 0 0 var(--space-3xs) 0;
   line-height: 1.2;
+  color: var(--on-surface);
 }
 
 .badge-action-card__description {
   font-size: clamp(0.875rem, 2vw, 1rem);
   font-weight: var(--font-weight-regular);
   margin: 0;
-  opacity: 0.85;
+  color: var(--on-surface-muted);
   line-height: 1.4;
 }
 
@@ -322,18 +239,10 @@
   container-name: merit-badge;
 }
 
-/* Badge grid guide indicator */
-.guide-indicator {
-  display: inline-block;
-  font-size: 0.8rem;
-  color: var(--brown-450);
-  margin-block-start: var(--space-3xs);
-}
-
 /* Discontinued Badge Notice */
 .discontinued-notice {
-  background: var(--brown-100);
-  border: 2px solid var(--brown-400);
+  background: var(--error-container);
+  border: 2px solid var(--error);
   border-radius: 8px;
   padding: var(--space-xs);
   margin-block: var(--space-s);
@@ -343,11 +252,11 @@
   strong {
     display: block;
     margin-block-end: var(--space-3xs);
-    color: var(--brown-500);
+    color: var(--on-error-container);
   }
 
   a {
-    color: var(--teal-500);
+    color: var(--accent);
     font-weight: 600;
   }
 }
@@ -741,7 +650,7 @@
     font-size: 1.1rem;
     font-weight: var(--font-weight-bold);
     margin-block-end: var(--space-xs);
-    color: var(--color-heading, #333);
+    color: var(--on-surface);
   }
 
   .eagle-group__badges {
@@ -761,7 +670,7 @@
     align-items: center;
     font-weight: var(--font-weight-bold);
     font-size: 0.875rem;
-    color: var(--color-text-muted, #666);
+    color: var(--on-surface-muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     padding-inline: var(--space-3xs);

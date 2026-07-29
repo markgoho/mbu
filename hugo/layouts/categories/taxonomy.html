@@ -1,3 +1,5 @@
+{{ define "html-class" }}theme-v2{{ end }}
+
 {{ define "main" }}
   {{ partial "breadcrumb.html" . }}
   <header>
@@ -13,57 +15,7 @@
         {{ $json = index hugo.Data "merit-badges" $page.File.ContentBaseName }}
       {{ end }}
       {{ if $json }}
-        {{ $reqCount := len $json.requirements }}
-        {{ $hasGuide := $page.GetPage "guide" }}
-        {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
-        {{ if not $badgeImage }}
-          {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
-        {{ end }}
-
-        <article
-          class="badge-card {{ if $badgeImage }}
-            badge-card--with-image
-          {{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
-          <a href="{{ $page.RelPermalink }}">
-            {{ if $badgeImage }}
-              <div class="badge-card__image">
-                {{ if lt $index 3 }}
-                  <img
-                    src="{{ $badgeImage.RelPermalink }}"
-                    alt="{{ $page.Title }} Merit Badge"
-                    width="400"
-                    height="225"
-                    fetchpriority="high" />
-                {{ else if lt $index 6 }}
-                  <img
-                    src="{{ $badgeImage.RelPermalink }}"
-                    alt="{{ $page.Title }} Merit Badge"
-                    width="400"
-                    height="225" />
-                {{ else }}
-                  <img
-                    src="{{ $badgeImage.RelPermalink }}"
-                    alt="{{ $page.Title }} Merit Badge"
-                    width="400"
-                    height="225"
-                    loading="lazy" />
-                {{ end }}
-              </div>
-            {{ end }}
-            <div class="badge-card__content">
-              <h2>
-                {{ $page.Title }}
-                {{ if $json.eagle_required }}
-                  <span class="eagle-badge" title="Eagle Required">🦅</span>
-                {{ end }}
-              </h2>
-              <p class="req-count">{{ $reqCount }} requirements</p>
-              {{ if $hasGuide }}
-                <span class="guide-indicator">📖 Study Guide</span>
-              {{ end }}
-            </div>
-          </a>
-        </article>
+        {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
       {{ end }}
     {{ end }}
   </section>

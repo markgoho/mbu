@@ -1,0 +1,54 @@
+{{- /*
+  home/hero.html — homepage hero: eyebrow chip row, display heading, lead
+  copy (from _index.md front matter), search form, secondary links.
+  Ambient wash blob is a decorative ::after in pages/home.css.
+*/ -}}
+{{ $meritBadges := .Site.GetPage "/merit-badges" }}
+{{ $badgeCount := len $meritBadges.Pages }}
+{{ $guideCount := 0 }}
+{{ range $meritBadges.Pages }}
+  {{ if .GetPage "guide" }}
+    {{ $guideCount = add $guideCount 1 }}
+  {{ end }}
+{{ end }}
+
+<section class="home-hero">
+  <div class="home-hero__inner">
+    <div class="home-hero__eyebrow-row">
+      <span class="home-hero__meta">
+        {{ partial "icon.html" (dict "name" "list-checks" "class" "home-hero__meta-icon") }}
+        {{ $badgeCount }} badges &middot; {{ $guideCount }} study guides
+      </span>
+    </div>
+
+    <h1 class="home-hero__title">{{ .Title }}</h1>
+
+    {{ with .Params.lead }}
+      <p class="home-hero__lead">{{ . }}</p>
+    {{ end }}
+
+    <form class="home-search" action="/search/" method="get" role="search">
+      <label class="visually-hidden" for="home-search-input">Search merit badges</label>
+      {{ partial "icon.html" (dict "name" "search" "class" "home-search__icon") }}
+      <input
+        id="home-search-input"
+        class="home-search__input"
+        type="search"
+        name="q"
+        placeholder="Search merit badge requirements&hellip;"
+        autocomplete="off" />
+      <button type="submit" class="button home-search__submit">Search</button>
+    </form>
+
+    <div class="home-hero__links">
+      <a href="/merit-badges/" class="home-hero__link">
+        Browse all badges
+        {{ partial "icon.html" (dict "name" "arrow-right" "class" "home-hero__link-icon") }}
+      </a>
+      <a href="/merit-badges/eagle-required/" class="home-hero__link">
+        Eagle-required badges
+        {{ partial "icon.html" (dict "name" "arrow-right" "class" "home-hero__link-icon") }}
+      </a>
+    </div>
+  </div>
+</section>

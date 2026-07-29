@@ -1,3 +1,5 @@
+{{ define "html-class" }}theme-v2{{ end }}
+
 {{ define "main" }}
   {{ $json := false }}
   {{ if .File }}
@@ -30,7 +32,7 @@
       {{ partial "discontinued-notice.html" $json }}
 
       {{ if $badgeImage }}
-        <div class="badge-featured-image">
+        <div class="badge-featured-image card-surface card-surface--lift">
           <img
             src="{{ $badgeImage.RelPermalink }}"
             alt="{{ .Title }} Merit Badge"
@@ -42,8 +44,8 @@
       <div class="badge-quick-actions">
         <a
           href="requirements/"
-          class="badge-action-card badge-action-card--primary">
-          <span class="badge-action-card__icon">📋</span>
+          class="badge-action-card badge-action-card--primary card-surface card-surface--lift">
+          {{ partial "icon.html" (dict "name" "list-checks" "class" "badge-action-card__icon") }}
           <div class="badge-action-card__content">
             <h2 class="badge-action-card__title">View Requirements</h2>
             <p class="badge-action-card__description">
@@ -59,8 +61,8 @@
             href="{{ $slug }}-merit-badge-worksheet.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            class="badge-action-card badge-action-card--worksheet">
-            <span class="badge-action-card__icon">📝</span>
+            class="badge-action-card card-surface card-surface--lift">
+            {{ partial "icon.html" (dict "name" "download-simple" "class" "badge-action-card__icon") }}
             <div class="badge-action-card__content">
               <h2 class="badge-action-card__title">Fillable Worksheet</h2>
               <p class="badge-action-card__description">
@@ -74,8 +76,8 @@
         {{ if $guide }}
           <a
             href="{{ $guide.RelPermalink }}"
-            class="badge-action-card badge-action-card--guide">
-            <span class="badge-action-card__icon">📖</span>
+            class="badge-action-card card-surface card-surface--lift">
+            {{ partial "icon.html" (dict "name" "book" "class" "badge-action-card__icon") }}
             <div class="badge-action-card__content">
               <h2 class="badge-action-card__title">Digital Resource Guide</h2>
               <p class="badge-action-card__description">
@@ -86,8 +88,8 @@
 
           {{ $guidePrint := .GetPage "guide/print" }}
           {{ if $guidePrint }}
-            <a href="{{ $guidePrint.RelPermalink }}" class="badge-action-card">
-              <span class="badge-action-card__icon">🖨️</span>
+            <a href="{{ $guidePrint.RelPermalink }}" class="badge-action-card card-surface card-surface--lift">
+              {{ partial "icon.html" (dict "name" "scroll" "class" "badge-action-card__icon") }}
               <div class="badge-action-card__content">
                 <h2 class="badge-action-card__title">Print Complete Guide</h2>
                 <p class="badge-action-card__description">
@@ -103,8 +105,8 @@
             href="{{ $json.pamphlet_url }}"
             target="_blank"
             rel="noopener noreferrer"
-            class="badge-action-card">
-            <span class="badge-action-card__icon">📘</span>
+            class="badge-action-card card-surface card-surface--lift">
+            {{ partial "icon.html" (dict "name" "book-open-text" "class" "badge-action-card__icon") }}
             <div class="badge-action-card__content">
               <h2 class="badge-action-card__title">Merit Badge Pamphlet</h2>
               <p class="badge-action-card__description">
@@ -119,8 +121,8 @@
           href="{{ $json.url }}"
           target="_blank"
           rel="noopener noreferrer"
-          class="badge-action-card">
-          <span class="badge-action-card__icon">🔗</span>
+          class="badge-action-card card-surface card-surface--lift">
+          {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "badge-action-card__icon") }}
           <div class="badge-action-card__content">
             <h2 class="badge-action-card__title">Scouting.org Page</h2>
             <p class="badge-action-card__description">
@@ -149,62 +151,7 @@
           {{ $json = index hugo.Data "merit-badges" $page.File.ContentBaseName }}
         {{ end }}
         {{ if $json }}
-          {{ $reqCount := len $json.requirements }}
-          {{ $hasGuide := $page.GetPage "guide" }}
-          {{/* Prefer card-optimized images for list, fallback to any image */}}
-          {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
-          {{ if not $badgeImage }}
-            {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
-          {{ end }}
-
-
-          <article
-            class="badge-card {{ if $badgeImage }}
-              badge-card--with-image
-            {{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
-            <a href="{{ $page.RelPermalink }}">
-              {{ if $badgeImage }}
-                <div class="badge-card__image">
-                  {{/* First 3 images get fetchpriority=high for desktop LCP optimization */}}
-                  {{ if lt $index 3 }}
-                    <img
-                      src="{{ $badgeImage.RelPermalink }}"
-                      alt="{{ $page.Title }} Merit Badge"
-                      width="400"
-                      height="225"
-                      fetchpriority="high" />
-                    {{/* Next 3 images (3-5) load eagerly without lazy loading */}}
-                  {{ else if lt $index 6 }}
-                    <img
-                      src="{{ $badgeImage.RelPermalink }}"
-                      alt="{{ $page.Title }} Merit Badge"
-                      width="400"
-                      height="225" />
-                    {{/* Remaining images use lazy loading */}}
-                  {{ else }}
-                    <img
-                      src="{{ $badgeImage.RelPermalink }}"
-                      alt="{{ $page.Title }} Merit Badge"
-                      width="400"
-                      height="225"
-                      loading="lazy" />
-                  {{ end }}
-                </div>
-              {{ end }}
-              <div class="badge-card__content">
-                <h2>
-                  {{ $page.Title }}
-                  {{ if $json.eagle_required }}
-                    <span class="eagle-badge" title="Eagle Required">🦅</span>
-                  {{ end }}
-                </h2>
-                <p class="req-count">{{ $reqCount }} requirements</p>
-                {{ if $hasGuide }}
-                  <span class="guide-indicator">📖 Study Guide</span>
-                {{ end }}
-              </div>
-            </a>
-          </article>
+          {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
         {{ end }}
       {{ end }}
     </section>

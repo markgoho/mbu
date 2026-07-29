@@ -1,0 +1,294 @@
+/*
+ * Homepage — v2 redesign.
+ *
+ * Opts into v2 via {{ define "html-class" }}theme-v2{{ end }} and goes
+ * full-bleed via {{ define "main-class" }}home-main{{ end }} in
+ * layouts/index.html, mirroring the .req-page-main pattern in
+ * pages/merit-badge-requirements.css. Each section below re-applies its
+ * own measure since the shell itself goes edge to edge.
+ */
+
+.home-main {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+}
+
+/* Shared section measure: full-bleed background, capped/padded content. */
+.home-hero__inner,
+.home-steps,
+.home-categories,
+.home-eagle {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: clamp(var(--space-xs), 4vw, var(--space-m));
+}
+
+/* ------------------------------------------------------------------ */
+/* Hero                                                                 */
+/* ------------------------------------------------------------------ */
+
+.home-hero {
+  position: relative;
+  overflow: clip;
+  padding-block: var(--space-2xl) var(--space-xl);
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  inset-inline-end: -10rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-wash-strong), transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.home-hero__eyebrow-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-block-end: var(--space-s);
+}
+
+.home-hero__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  color: var(--on-surface-muted);
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.home-hero__meta-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex-shrink: 0;
+}
+
+.home-hero__title {
+  margin: 0;
+  max-width: 20ch;
+  font-family: var(--font-display);
+  font-size: var(--step-5);
+  font-weight: 800;
+  color: var(--on-surface);
+  text-wrap: balance;
+}
+
+.home-hero__lead {
+  max-width: 65ch;
+  margin-block-start: var(--space-s);
+  font-size: var(--step-0);
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface-muted);
+}
+
+.home-search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  max-width: 34rem;
+  margin-block: var(--space-m);
+  background: var(--surface-raised);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-full);
+  padding: var(--space-3xs);
+  padding-inline-start: var(--space-s);
+  box-shadow: var(--shadow-card);
+}
+
+.home-search__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: var(--on-surface-muted);
+}
+
+.home-search__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  color: var(--on-surface);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--on-surface-muted);
+  }
+}
+
+.home-search__submit {
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+}
+
+.home-hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+}
+
+.home-hero__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.home-hero__link-icon {
+  width: 1.1em;
+  height: 1.1em;
+  transition: transform 0.2s ease;
+}
+
+.home-hero__link:hover .home-hero__link-icon,
+.home-hero__link:focus-visible .home-hero__link-icon {
+  transform: translateX(4px);
+}
+
+/* ------------------------------------------------------------------ */
+/* Steps (timeline)                                                     */
+/* ------------------------------------------------------------------ */
+
+.home-steps {
+  padding-block: var(--space-l);
+  max-width: 60rem;
+}
+
+.home-steps__heading,
+.home-categories__heading {
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-steps__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin-block-end: var(--space-3xs);
+}
+
+.home-steps__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.dark .home-steps__icon {
+  color: var(--amber);
+}
+
+.home-steps__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--on-surface);
+}
+
+.home-steps__text {
+  margin: 0;
+  max-width: 60ch;
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Categories                                                           */
+/* ------------------------------------------------------------------ */
+
+.home-categories {
+  padding-block: var(--space-l);
+}
+
+.home-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: var(--space-s);
+}
+
+.category-tile {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: var(--space-2xs);
+  padding: var(--space-s);
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-tile__icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--accent);
+}
+
+.dark .category-tile__icon {
+  color: var(--amber);
+}
+
+.category-tile__name {
+  min-width: 0;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.category-tile__count {
+  font-size: var(--step--1);
+  color: var(--on-surface-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Eagle strip                                                          */
+/* ------------------------------------------------------------------ */
+
+.home-eagle {
+  padding-block: var(--space-l) var(--space-2xl);
+}
+
+.home-eagle__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-eagle__heading-icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--accent);
+}
+
+.dark .home-eagle__heading-icon {
+  color: var(--amber);
+}
+
+.home-eagle__grid {
+  margin-block-end: var(--space-m);
+}
+
+.home-eagle__link {
+  display: inline-flex;
+}

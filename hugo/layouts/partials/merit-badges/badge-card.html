@@ -1,0 +1,69 @@
+{{- /*
+  merit-badges/badge-card.html
+
+  Shared badge card markup for merit-badges/list.html,
+  categories/taxonomy.html, eagle-required/list.html and home/eagle.html.
+
+  Params (dict):
+  page  - the badge's landing Page
+  json  - the badge's data.json (from hugo.Data "merit-badges")
+  index - the badge's position within its containing grid (0-based),
+          used only to preserve the LCP-optimized image loading ladder:
+          index < 3 -> fetchpriority="high", 3-5 -> plain, 6+ -> lazy.
+*/ -}}
+{{ $page := .page }}
+{{ $json := .json }}
+{{ $index := .index }}
+
+{{ $reqCount := len $json.requirements }}
+{{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
+{{ if not $badgeImage }}
+  {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
+{{ end }}
+
+<article
+  class="badge-card card-surface card-surface--lift {{ if $badgeImage }}
+    badge-card--with-image
+  {{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
+  <a href="{{ $page.RelPermalink }}">
+    {{ if $badgeImage }}
+      <div class="badge-card__image">
+        {{/* First 3 images get fetchpriority=high for desktop LCP optimization */}}
+        {{ if lt $index 3 }}
+          <img
+            src="{{ $badgeImage.RelPermalink }}"
+            alt="{{ $page.Title }} Merit Badge"
+            width="400"
+            height="225"
+            fetchpriority="high" />
+          {{/* Next 3 images (3-5) load eagerly without lazy loading */}}
+        {{ else if lt $index 6 }}
+          <img
+            src="{{ $badgeImage.RelPermalink }}"
+            alt="{{ $page.Title }} Merit Badge"
+            width="400"
+            height="225" />
+          {{/* Remaining images use lazy loading */}}
+        {{ else }}
+          <img
+            src="{{ $badgeImage.RelPermalink }}"
+            alt="{{ $page.Title }} Merit Badge"
+            width="400"
+            height="225"
+            loading="lazy" />
+        {{ end }}
+      </div>
+    {{ end }}
+    <div class="badge-card__content">
+      <h2>
+        {{ $page.Title }}
+        {{ if $json.eagle_required }}
+          <span class="eagle-badge" title="Eagle Required">
+            {{ partial "icon.html" (dict "name" "shield-check" "class" "eagle-badge__icon") }}
+          </span>
+        {{ end }}
+      </h2>
+      <p class="req-count">{{ $reqCount }} requirements</p>
+    </div>
+  </a>
+</article>

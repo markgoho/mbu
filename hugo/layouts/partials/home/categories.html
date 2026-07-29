@@ -1,0 +1,40 @@
+{{- /*
+  home/categories.html — grid of category tiles linking to each taxonomy
+  term page (/categories/<term>/), with a duotone Phosphor icon per
+  category.
+
+  Icon lookup needs care: Hugo titleizes term pages, so a term's
+  `.Page.Title` for "arts-and-crafts" renders as "Arts And Crafts" while
+  badge-icons.json keys it "Arts and Crafts". `.Term` turned out to be
+  unreliable too — for multi-word categories it isn't the hyphenated
+  slug `urlize` would produce (single-word categories only matched by
+  coincidence), so this instead derives the slug straight from the term
+  page's own permalink, which Hugo guarantees is url-safe. Falls back to
+  "trophy" ("medal" isn't vendored at duotone weight).
+*/ -}}
+{{ $iconData := index hugo.Data "badge-icons" }}
+{{ $categoriesPage := .Site.GetPage "/categories" }}
+
+<section class="home-categories">
+  <h2 class="home-categories__heading">Browse by category</h2>
+
+  <div class="home-categories__grid">
+    {{ range $categoriesPage.Data.Terms.Alphabetical }}
+      {{ $termSlug := path.Base (strings.TrimSuffix "/" .Page.RelPermalink) }}
+      {{ $iconName := "trophy" }}
+      {{ if $iconData }}
+        {{ range $catKey, $catIcon := $iconData.categories }}
+          {{ if eq (urlize $catKey) $termSlug }}
+            {{ $iconName = $catIcon }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <a href="{{ .Page.RelPermalink }}" class="category-tile card-surface card-surface--lift">
+        {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "category-tile__icon") }}
+        <span class="category-tile__name">{{ .Page.Title }}</span>
+        <span class="category-tile__count">{{ .Count }} badges</span>
+      </a>
+    {{ end }}
+  </div>
+</section>

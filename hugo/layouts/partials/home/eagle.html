@@ -1,0 +1,30 @@
+{{- /* home/eagle.html — Eagle-required badge strip using the shared badge-card partial. */ -}}
+{{ $meritBadges := .Site.GetPage "/merit-badges" }}
+{{ $eagleBadges := slice }}
+{{ range $meritBadges.Pages.ByTitle }}
+  {{ $json := false }}
+  {{ if .File }}
+    {{ $json = index hugo.Data "merit-badges" .File.ContentBaseName }}
+  {{ end }}
+  {{ if and $json $json.eagle_required }}
+    {{ $eagleBadges = $eagleBadges | append (dict "page" . "json" $json) }}
+  {{ end }}
+{{ end }}
+
+<section class="home-eagle">
+  <h2 class="home-eagle__heading">
+    {{ partial "icon.html" (dict "name" "shield-check" "weight" "duotone" "class" "home-eagle__heading-icon") }}
+    Eagle-required merit badges
+  </h2>
+
+  <div class="badges-grid home-eagle__grid">
+    {{ range $index, $entry := $eagleBadges }}
+      {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" $index) }}
+    {{ end }}
+  </div>
+
+  <a href="/merit-badges/eagle-required/" class="req-card__guide-link home-eagle__link">
+    View all Eagle-required
+    {{ partial "icon.html" (dict "name" "arrow-right" "class" "req-card__guide-link-icon") }}
+  </a>
+</section>
