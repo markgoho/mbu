@@ -37,7 +37,7 @@
 
 .navbar__theme-toggle {
   grid-area: theme;
-  justify-self: center;
+  justify-self: end;
   position: relative;
   overflow: hidden;
 }
