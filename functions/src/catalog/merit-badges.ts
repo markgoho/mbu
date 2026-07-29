@@ -69,6 +69,11 @@ export const MERIT_BADGES: readonly BadgeCatalogEntry[] = [
   { slug: "collections", title: "Collections", eagleRequired: false },
   { slug: "communication", title: "Communication", eagleRequired: true },
   {
+    slug: "competitive-gaming",
+    title: "Competitive Gaming",
+    eagleRequired: false,
+  },
+  {
     slug: "composite-materials",
     title: "Composite Materials",
     eagleRequired: false,
@@ -258,6 +263,11 @@ export const MERIT_BADGES: readonly BadgeCatalogEntry[] = [
   {
     slug: "wilderness-survival",
     title: "Wilderness Survival",
+    eagleRequired: false,
+  },
+  {
+    slug: "wildland-fire-management",
+    title: "Wildland Fire Management",
     eagleRequired: false,
   },
   { slug: "wood-carving", title: "Wood Carving", eagleRequired: false },
