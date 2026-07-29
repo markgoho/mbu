@@ -21,7 +21,7 @@
 
   A resolved DRG title is layered on top of the marker only when the
   whole sibling group resolved one (see req-children.html); tiles never
-  show a title, only the label-free requirement text. The eyebrow
+  show a title, only the marker plus verbatim text. The eyebrow
   (group_title) is depth-1-card-only -- never repeated on child items.
 
   Params (dict):
@@ -72,6 +72,7 @@
   data-anchor="{{ $req.path }}"
   data-badge-name="{{ $badgeName }}">
   {{ if eq $variant "tiles" }}
+    <span class="req-child__marker">{{ $marker }}</span>
     <p class="req-child__text">{{ $req.text | markdownify }}</p>
     {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" "") }}
   {{ else }}
