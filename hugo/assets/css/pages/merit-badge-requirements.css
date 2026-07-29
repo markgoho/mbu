@@ -69,7 +69,10 @@
   border-radius: var(--radius-lg);
   padding: var(--space-s);
   box-shadow: var(--shadow-card);
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .req-sidebar:hover {
@@ -100,13 +103,25 @@
 .req-sidebar__glow-ring-wrap {
   padding: 3px;
   border-radius: 50%;
-  background: conic-gradient(from 180deg, var(--accent), var(--accent-container), var(--accent));
+  background: conic-gradient(
+    from 180deg,
+    var(--accent),
+    var(--accent-container),
+    var(--accent)
+  );
   box-shadow: 0 4px 14px var(--shadow-card);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .dark .req-sidebar__glow-ring-wrap {
-  background: conic-gradient(from 180deg, var(--amber), var(--amber-glow), var(--amber));
+  background: conic-gradient(
+    from 180deg,
+    var(--amber),
+    var(--amber-glow),
+    var(--amber)
+  );
   box-shadow: 0 0 18px var(--amber-glow);
 }
 
@@ -129,7 +144,9 @@
   height: 2.2rem;
   flex-shrink: 0;
   color: var(--accent);
-  transition: transform 0.2s ease, color 0.25s ease;
+  transition:
+    transform 0.2s ease,
+    color 0.25s ease;
 }
 
 .dark .req-sidebar__icon {
@@ -217,7 +234,7 @@
   align-items: flex-start;
   gap: var(--space-2xs);
   padding-block-start: var(--space-xs);
-  border-block-start: 1px solid var(--outline-variant);
+  border-block-start: 1px dashed var(--card-border-subtle);
   font-size: var(--step--1);
   color: var(--on-surface-muted);
 }
@@ -358,12 +375,17 @@
   padding: var(--space-s);
   box-shadow: var(--shadow-card);
   scroll-margin-top: var(--space-m);
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .req-card:hover .req-card__panel {
   border-color: var(--accent-container);
-  box-shadow: var(--shadow-raised), 0 0 0 1px var(--accent-container);
+  box-shadow:
+    var(--shadow-raised),
+    0 0 0 1px var(--accent-container);
 }
 
 .dark .req-card__panel {
@@ -373,7 +395,9 @@
 
 .dark .req-card:hover .req-card__panel {
   border-color: var(--accent);
-  box-shadow: var(--shadow-elevated-hover), 0 0 0 1px var(--accent);
+  box-shadow:
+    var(--shadow-elevated-hover),
+    0 0 0 1px var(--accent);
 }
 
 .req-card:target .req-card__panel {
@@ -442,8 +466,6 @@
   }
 }
 
-
-
 /* ------------------------------------------------------------------ */
 /* Actions (copy link / study guide link)                               */
 /* ------------------------------------------------------------------ */
@@ -477,109 +499,186 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Children dispatch variants                                          */
+/* Children: rail / chips / options                                     */
 /* ------------------------------------------------------------------ */
 
+/* Card chrome exists only on the depth-1 panel (.req-card__panel).
+   Nothing below it draws a border, background or radius -- depth is
+   carried by a left rail, a hanging marker and type weight, which costs
+   nothing to nest. See req-children.html for the dispatch rules. */
 .req-children {
   list-style: none;
-  margin: var(--space-s) 0 0;
   padding: 0;
-  display: grid;
-  gap: var(--space-xs);
-}
-
-.req-children--options,
-.req-children--list,
-.req-children--cards {
-  grid-template-columns: 1fr;
-}
-
-.req-children--tiles {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  @container req-main (min-width: 500px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-/* An untitled "cards" group: no title earns no chrome. Plain normal-flow
-   blocks in document order, not a grid of boxes. */
-.req-children--plain {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-}
-
-/* A "plain" group whose items are depth 3+: a compact sequential
-   sub-list (e.g. forestry 5.b's seven report points), so it gets a
-   list's tight vertical rhythm instead of plain's block spacing. */
-.req-children--numbered {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2xs);
 }
 
 .req-child {
   position: relative;
-  border: 1px solid var(--outline-variant);
-  border-radius: var(--radius-lg);
-  padding: var(--space-s);
-  background: var(--surface-sunken);
   scroll-margin-top: var(--space-m);
 }
 
 .req-child:target {
   outline: 2px solid var(--accent);
-  outline-offset: 2px;
+  outline-offset: 4px;
+  border-radius: var(--radius-md);
 }
 
-.req-child--options {
-  background: var(--surface-raised);
+.req-child__body {
+  min-width: 0;
 }
 
-.req-child--plain,
-.req-child--numbered {
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  background: transparent;
-}
+/* --- rail: the default nesting treatment -------------------------- */
 
-.req-child--tiles {
+.req-children--rail {
+  margin: var(--space-s) 0 0;
+  padding-inline-start: var(--space-s);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3xs);
-  min-height: 44px;
-  text-align: center;
-  font-size: var(--step--1);
-  font-weight: 600;
-
-  .req-child__text {
-    margin: 0;
-  }
-
-  .req-actions {
-    position: absolute;
-    top: var(--space-3xs);
-    right: var(--space-3xs);
-    opacity: 0;
-  }
-
-  &:hover .req-actions,
-  &:focus-within .req-actions {
-    opacity: 1;
-  }
+  flex-direction: column;
+  gap: var(--space-s);
+  border-inline-start: 2px solid var(--outline-variant);
 }
 
-.req-child__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+/* A nested rail sits tighter and lighter than its parent, so going
+   deeper reads as "quieter" rather than as another box. */
+.req-child__body .req-children--rail {
+  margin-block-start: var(--space-xs);
+  gap: var(--space-2xs);
+  border-inline-start-style: dashed;
+}
+
+/* Marker is a fixed grid track, so a wrapped second line of text hangs
+   under the text column rather than under the marker. */
+.req-child--rail {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  align-items: baseline;
   gap: var(--space-2xs);
 }
 
+.req-child__marker {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--on-surface-muted);
+}
 
+/* --- chips: short leaf labels ------------------------------------- */
+
+/* Wrapping pills rather than a fixed grid: a 5-item group can't strand
+   a hole in a 4-up last row, and a two-word label doesn't get a full
+   card's padding. */
+.req-children--chips {
+  margin: var(--space-s) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.req-child--chips {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+  padding: var(--space-3xs) var(--space-xs);
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  font-size: var(--step--1);
+  color: var(--on-surface);
+}
+
+.req-child--chips .req-child__text {
+  max-width: none;
+  margin: 0;
+}
+
+.req-child--chips .req-child__text p {
+  display: inline;
+}
+
+/* --- options: a genuine "choose N" -------------------------------- */
+
+/* Deliberately NOT a shared rail -- a rail down the group says "these
+   belong together", the opposite of what a choice set means. Discrete
+   ring markers plus hairline separators instead: the shape everyone
+   already reads as "exactly one of these". */
+.req-children--options {
+  margin: var(--space-s) 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.req-child--options {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  gap: var(--space-xs);
+  padding-block: var(--space-s);
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+/* An option whose id is a slug drops its ring, because the slug is
+   derived from the option's own opening words (see req-child-item.html). */
+.req-child--no-ring {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.req-children--options > .req-child:first-child {
+  border-block-start: 0;
+  padding-block-start: var(--space-2xs);
+}
+
+.req-child__ring {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-full);
+  font-size: var(--step--2);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* --- shared item internals ---------------------------------------- */
+
+.req-child__title {
+  min-width: 0;
+  margin: 0;
+  font-size: var(--step-0);
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.req-child__text {
+  max-width: 75ch;
+  margin-block: var(--space-3xs) 0;
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface);
+
+  & p {
+    margin: 0;
+  }
+}
+
+/* Actions are taken out of flow: inline they'd either crowd the marker
+   or reserve an empty 2.75rem row above every untitled item. Same
+   hover/focus reveal the tiles used before. */
+.req-child > .req-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.req-child:hover > .req-actions,
+.req-child:focus-within > .req-actions {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .req-child > .req-actions {
+    opacity: 1;
+  }
+}
 
 .req-card__footer {
   display: flex;
@@ -621,68 +720,6 @@
   width: 1.15em;
   height: 1.15em;
   transition: transform 0.2s ease;
-}
-
-.req-child__title {
-  min-width: 0;
-  margin: 0;
-  font-size: var(--step-0);
-  font-weight: 700;
-  color: var(--on-surface);
-}
-
-/* Marker + verbatim text run inline on the same line: the marker is a
-   fixed-width flex item, so a wrapped second line of text hangs under
-   the text column, not under the marker (a plain hanging indent, for
-   free, from flexbox itself -- no negative-margin tricks needed). */
-.req-child__body {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-2xs);
-}
-
-.req-child__marker {
-  flex-shrink: 0;
-  font-weight: 700;
-  color: var(--on-surface-muted);
-}
-
-.req-child--numbered .req-child__marker {
-  min-width: 1.5em;
-  text-align: right;
-}
-
-.req-child__body > .req-card__text,
-.req-child__body > .req-child__text {
-  flex: 1;
-  min-width: 0;
-}
-
-/* Actions inline in the header row (titled items) stay put; actions
-   left inside the body (no header, i.e. no title) have nowhere natural
-   to sit inline without crowding the marker, so they float top-right
-   and reveal on hover/focus, same treatment as the tiles variant. */
-.req-child__body > .req-actions {
-  position: absolute;
-  top: var(--space-3xs);
-  right: var(--space-3xs);
-  opacity: 0;
-}
-
-.req-child:hover .req-child__body > .req-actions,
-.req-child:focus-within .req-child__body > .req-actions {
-  opacity: 1;
-}
-
-.req-child__text {
-  max-width: 75ch;
-  margin-block: var(--space-2xs) 0;
-  line-height: var(--line-height-relaxed);
-  color: var(--on-surface);
-
-  & p {
-    margin: 0;
-  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -734,28 +771,4 @@
   width: 0.9em;
   height: 0.9em;
   flex-shrink: 0;
-}
-
-/* Nested children inside a child item shouldn't add a third layer of
-   heavy chrome -- flatten the background for the next level down. */
-.req-child .req-children--cards .req-child,
-.req-child .req-children--options .req-child {
-  background: var(--surface-raised);
-}
-
-/* A "list" group nested inside an already-chromed item (e.g. a lettered
-   sub-list inside a named "options" choice, animal-science 6.beef-cattle
-   a-d) would stack a third layer of card chrome directly on the second --
-   drop its own border/background entirely, same treatment as
-   req-child--plain/numbered, so the marker + indent carries the grouping
-   instead of a second concentric box. */
-.req-child .req-children--list .req-child {
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  background: transparent;
-}
-
-.req-children--deep-list {
-  margin-block-start: var(--space-xs);
 }

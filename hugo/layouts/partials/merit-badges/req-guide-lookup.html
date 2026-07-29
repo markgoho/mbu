@@ -13,13 +13,23 @@
   ordinary exact match; the prefix case catches a MERGED page whose
   req_number covers this requirement's first subrequirement -- e.g.
   forestry has no req3.md, but req3ab.md has req_number: "3a", which
-  covers requirement 3's subrequirements and is the best available
-  title source for requirement 3 itself. The boundary check keeps path
+  covers requirement 3's subrequirements. The boundary check keeps path
   "1" from matching req_number "10" or "11": the character right after
   the "1" prefix is a digit, so those are rejected.
   4. if nothing resolves directly but this node has children, fall back
   to the first child's group_title for the eyebrow only -- never a
   title, since we'd be fabricating one for a node with no page
+
+  A TITLE NEVER TRAVELS UPWARD. Rules 3-prefix and 4 both yield a page
+  and/or an eyebrow but no title, because the page they found describes a
+  DESCENDANT, not this node. Letting a parent borrow it produced visible
+  double-titling: wildland-fire-management requirement 4 has no req4.md,
+  so it matched req4a.md and rendered "Wildfire Causes & Prevention" --
+  and then child 4.a resolved that same page and rendered the identical
+  heading one level down. A node with no page of its own simply goes
+  untitled and leans on its verbatim text, which is what it actually
+  says. This is the common case (168 nodes across the badge set), so the
+  page must read well without a title.
 
   Params (dict):
   guide    - the guide section Page, or nil if this badge has no DRG guide
@@ -28,13 +38,12 @@
   only for the rule-4 fallback
 
   Returns a dict:
-  page    - the *directly* matched guide Page, or "" (falsy). Only set
-  when this exact path resolves to a page of its own -- never
-  inherited from a child fallback. Callers use this to decide
-  whether to show a study-guide action link.
+  page    - the matched guide Page, or "" (falsy). Set by rules 1-3, so
+  a parent covered by a merged descendant page still links to
+  it; never inherited from the rule-4 child fallback.
   eyebrow - group_title string, or "".
   title   - title string with its "Req N -- " / "Requirement N -- "
-  prefix stripped, or "" when no direct page was found.
+  prefix stripped, or "" unless this exact node has its own page.
 */}}
 {{ $guide := .guide }}
 {{ $path := .path }}
@@ -48,6 +57,10 @@
   {{ $dotsRemoved := replace $path "." "" }}
   {{ $hyphenated := replace $path "." "-" }}
 
+  {{/* coversThisNode: does the page describe this exact requirement, or
+    only a descendant of it? Only the former may supply a title.
+  */}}
+  {{ $coversThisNode := true }}
   {{ $found := $guide.GetPage (printf "req%s" $dotsRemoved) }}
   {{ if not $found }}
     {{ $found = $guide.GetPage (printf "req%s" $hyphenated) }}
@@ -59,6 +72,7 @@
         {{ $boundary := substr $reqNumber (len $dotsRemoved) 1 }}
         {{ if not (findRE "[0-9]" $boundary) }}
           {{ $found = . }}
+          {{ $coversThisNode = eq $reqNumber $dotsRemoved }}
         {{ end }}
       {{ end }}
     {{ end }}
@@ -67,8 +81,10 @@
   {{ if $found }}
     {{ $page = $found }}
     {{ $eyebrow = $found.Params.group_title | default "" }}
-    {{ $rawTitle := $found.Params.title | default "" }}
-    {{ $title = replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $rawTitle }}
+    {{ if $coversThisNode }}
+      {{ $rawTitle := $found.Params.title | default "" }}
+      {{ $title = replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $rawTitle }}
+    {{ end }}
   {{ else if $children }}
     {{ $first := index $children 0 }}
     {{ $childLookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $first.path "children" $first.subrequirements) }}
