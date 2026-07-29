@@ -272,6 +272,14 @@ export const MERIT_BADGES: MeritBadge[] = [
     category: "Personal Development",
   },
   {
+    id: 159,
+    title: "Competitive Gaming",
+    slug: "competitive-gaming",
+    url: "https://www.scouting.org/merit-badges/competitive-gaming/",
+    eagle_required: false,
+    category: "Hobbies",
+  },
+  {
     id: 32,
     title: "Composite Materials",
     slug: "composite-materials",
@@ -1141,6 +1149,14 @@ export const MERIT_BADGES: MeritBadge[] = [
     url: "https://www.scouting.org/merit-badges/wilderness-survival/",
     eagle_required: false,
     category: "Personal Development",
+  },
+  {
+    id: 160,
+    title: "Wildland Fire Management",
+    slug: "wildland-fire-management",
+    url: "https://www.scouting.org/merit-badges/wildland-fire-management/",
+    eagle_required: false,
+    category: "Public Service",
   },
   {
     id: 140,
