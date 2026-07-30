@@ -171,6 +171,13 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--on-accent-container);
+  text-decoration: none;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
 }
 
 .dark .badge-identity__eyebrow-category {

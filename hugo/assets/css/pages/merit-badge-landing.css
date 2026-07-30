@@ -161,12 +161,27 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-hover, var(--outline-variant));
+    color: var(--on-surface);
+  }
 }
 
 .dark .badge-hero__eyebrow {
   background: oklch(0.98 0.003 86.03 / 0.12);
   border-color: oklch(0.853 0.0244 86.09 / 0.2);
   color: var(--hero-on);
+
+  &:hover,
+  &:focus-visible {
+    background: oklch(0.98 0.003 86.03 / 0.22);
+    border-color: oklch(0.853 0.0244 86.09 / 0.4);
+    color: var(--hero-on);
+  }
 }
 
 .badge-hero__eyebrow-icon {
@@ -446,6 +461,28 @@
     font-weight: 700;
     color: var(--on-surface);
     text-align: end;
+  }
+}
+
+.badge-glance__category-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--card-border-subtle);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+}
+
+.dark .badge-glance__category-link {
+  &:hover,
+  &:focus-visible {
+    color: var(--amber);
+    text-decoration-color: var(--amber);
   }
 }
 

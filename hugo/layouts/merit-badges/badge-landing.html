@@ -30,6 +30,14 @@
   {{ end }}
   {{ $badgeName := strings.TrimSuffix " Merit Badge" .Title }}
   {{ $categoryName := $json.category | default "Merit Badge" }}
+  {{ $categorySlug := $categoryName | urlize }}
+  {{ $categoryPage := site.GetPage (printf "categories/%s" $categorySlug) }}
+  {{ $categoryURL := "" }}
+  {{ if $categoryPage }}
+    {{ $categoryURL = $categoryPage.RelPermalink }}
+  {{ else }}
+    {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
+  {{ end }}
 
   <div class="req-page req-page--landing">
     <aside class="req-sidebar-wrap">
@@ -58,12 +66,12 @@
         <div class="badge-hero__grid">
           <div class="badge-hero__content">
             <div class="badge-hero__eyebrow-row">
-              <span class="badge-hero__eyebrow">
+              <a href="{{ $categoryURL }}" class="badge-hero__eyebrow">
                 {{ if $iconName }}
                   {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-hero__eyebrow-icon") }}
                 {{ end }}
                 {{ $categoryName }}
-              </span>
+              </a>
               {{ if $json.eagle_required }}
                 <span class="badge-hero__eagle-chip">
                   {{ partial "icon.html" (dict "name" "medal" "class" "badge-hero__eagle-icon") }}
@@ -180,7 +188,9 @@
                 {{ end }}
                 Category
               </dt>
-              <dd>{{ $categoryName }}</dd>
+              <dd>
+                <a href="{{ $categoryURL }}" class="badge-glance__category-link">{{ $categoryName }}</a>
+              </dd>
             </div>
             <div class="badge-glance__row">
               <dt>{{ partial "icon.html" (dict "name" "medal" "class" "badge-glance__icon") }} Eagle Required</dt>

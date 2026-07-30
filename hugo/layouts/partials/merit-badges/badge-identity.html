@@ -27,6 +27,14 @@
 
 {{ $badgeName := strings.TrimSuffix " Merit Badge" $badge.Title }}
 {{ $categoryName := $json.category | default "Merit Badge" }}
+{{ $categorySlug := $categoryName | urlize }}
+{{ $categoryPage := site.GetPage (printf "categories/%s" $categorySlug) }}
+{{ $categoryURL := "" }}
+{{ if $categoryPage }}
+  {{ $categoryURL = $categoryPage.RelPermalink }}
+{{ else }}
+  {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
+{{ end }}
 
 <div class="badge-identity">
   {{ if $iconName }}
@@ -37,7 +45,7 @@
     </div>
   {{ end }}
   <div class="badge-identity__header-text">
-    <span class="badge-identity__eyebrow-category">{{ $categoryName }}</span>
+    <a href="{{ $categoryURL }}" class="badge-identity__eyebrow-category">{{ $categoryName }}</a>
     {{ if $demoteHeading }}
       <p class="badge-identity__title">{{ $badgeName }}</p>
     {{ else }}
