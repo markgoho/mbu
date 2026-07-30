@@ -1,0 +1,126 @@
+{{/* merit-badges/req-child-item.html
+
+  Renders one non-top-level requirement inside the rail/chips/options
+  variants dispatched by req-children.html, and recurses back into
+  req-children.html for its own subrequirements. No variant draws a
+  border or a background: card chrome lives only on the depth-1 panel
+  (see req-children.html), so this can nest to any depth without
+  stacking boxes.
+
+  Every item gets a small id marker built from real data -- never
+  fabricated. The marker is just the item's own last path segment plus a
+  trailing period ("1.a" -> "a.", "5.b.1" -> "1.", "6.b.i" -> "i."),
+  regardless of depth: the parent directly above already carries the rest
+  of the path's context, so repeating it would be noise. Named-option
+  slugs (e.g. "beef-cattle", "option3") render bare instead, with no
+  period, since they read as words rather than list markers.
+
+  In an "options" group the marker becomes a ring -- but only when it's a
+  short token that fits one ("a", "ii", "10"). A slug id is derived from
+  the option's own opening words ("Beef Cattle Option. Do the
+  following:" -> "beef-cattle"), so rendering it beside that same text
+  would just echo it; those options drop the marker and let their text
+  name them. animal-science 6, archery 5 and disabilities-awareness 4 are
+  the groups this affects.
+
+  A resolved DRG title is layered on top of the marker only when the
+  whole sibling group resolved one (see req-children.html); chips never
+  show a title, only the marker plus verbatim text. The eyebrow
+  (group_title) is depth-1-card-only -- never repeated on child items.
+
+  Params (dict):
+  req, badge_name, hide_resources, guide - see req-children.html
+  variant    - "rail" | "chips" | "options", the variant this item is
+  rendered inside
+  lookup     - this child's already-resolved req-guide-lookup.html
+  result (dict "page" "eyebrow" "title"), or an empty dict
+  for "chips" (which never look up a title)
+  show_title - bool, whether this whole sibling group resolved a title
+  for EVERY child. When false, only the marker + verbatim
+  text render, even if this particular child has one.
+*/}}
+{{ $req := .req }}
+{{ $badgeName := .badge_name }}
+{{ $hideResources := .hide_resources | default false }}
+{{ $guide := .guide }}
+{{ $variant := .variant }}
+{{ $lookup := .lookup }}
+{{ $showTitle := .show_title }}
+
+{{ $segments := split $req.path "." }}
+{{ $ownSegment := index $segments (sub (len $segments) 1) }}
+
+{{/* A req_id counts as a slug when it's more than one character AND not
+  purely numeric, so multi-digit sequence continuations like "10".."21"
+  still get the trailing period.
+*/}}
+{{ $nonDigits := findRE "[^0-9]" $req.req_id }}
+{{ $isSlug := and (gt (len $req.req_id) 1) $nonDigits }}
+{{ $marker := cond $isSlug $req.req_id (printf "%s." $ownSegment) }}
+{{ $bare := cond $isSlug $req.req_id $ownSegment }}
+
+{{/* Roman numerals and multi-digit numbers still fit a ring; hyphenated
+  or long slugs don't.
+*/}}
+{{ $ringable := and (le (len $bare) 4) (not (in $bare "-")) }}
+
+{{ $hasTitle := and $showTitle $lookup.title }}
+
+{{ $classes := printf "req-child req-child--%s" $variant }}
+{{ if and (eq $variant "options") (not $ringable) }}
+  {{ $classes = printf "%s req-child--no-ring" $classes }}
+{{ end }}
+
+
+<li
+  id="{{ $req.path }}"
+  class="{{ $classes }}"
+  data-pagefind-index-attrs="data-anchor,data-badge-name"
+  data-anchor="{{ $req.path }}"
+  data-badge-name="{{ $badgeName }}">
+  {{ if eq $variant "chips" }}
+    <span class="req-child__marker">{{ $bare }}</span>
+    <span class="req-child__text">{{ $req.text | markdownify }}</span>
+  {{ else }}
+    {{ if eq $variant "options" }}
+      {{ if $ringable }}
+        <span class="req-child__ring" aria-hidden="true">{{ $bare }}</span>
+      {{ end }}
+    {{ else }}
+      <span class="req-child__marker">{{ $marker }}</span>
+    {{ end }}
+
+
+    <div class="req-child__body">
+      {{ if or $hasTitle $req.subrequirement_mode }}
+        <div class="req-child__title-row">
+          {{ if $hasTitle }}
+            <h4 class="req-child__title">{{ $lookup.title }}</h4>
+          {{ end }}
+          {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
+        </div>
+      {{ end }}
+
+      {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text" "title" $lookup.title) }}
+
+      {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
+
+      {{ if and $req.resources (not $hideResources) }}
+        <div class="resources">
+          <strong>Resources:</strong>
+          <ul>
+            {{ range $req.resources }}
+              <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+
+    {{/* Out of flow (see the CSS): actions have nowhere to sit inline
+      without crowding the marker or reserving an empty row above every
+      untitled item.
+    */}}
+    {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" $lookup.page) }}
+  {{ end }}
+</li>

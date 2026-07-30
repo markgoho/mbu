@@ -1,0 +1,22 @@
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p class="badge-count">{{ len .Pages }} merit badges in this category</p>
+    <p><a href="/categories/">View all categories</a></p>
+  </header>
+
+  <section class="badges-grid">
+    {{ range $index, $page := .Pages.ByTitle }}
+      {{ $json := false }}
+      {{ if $page.File }}
+        {{ $json = index hugo.Data "merit-badges" $page.File.ContentBaseName }}
+      {{ end }}
+      {{ if $json }}
+        {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

@@ -1,5 +1,13 @@
-/* Search page styles */
-/* Design: "Scout Field Guide" - clean cards with badge imagery */
+/*
+ * Search page (/search/) — v2 redesign.
+ *
+ * Opts into v2 via {{ define "html-class" }}theme-v2{{ end }} in
+ * layouts/search/list.html. Pagefind's own UI ships fixed class names
+ * (`.pagefind-ui__*`) we don't control the markup for, so it's themed
+ * here via its `--pagefind-ui-*` custom properties plus targeted
+ * overrides, all pointed at the shared semantic tokens so light/dark
+ * follow the rest of the v2 system automatically.
+ */
 
 .search-header {
   text-align: center;
@@ -11,7 +19,7 @@
 }
 
 .search-description {
-  color: var(--gray-500);
+  color: var(--on-surface-muted);
   font-size: var(--step-0);
   font-weight: var(--font-weight-regular);
 }
@@ -19,13 +27,13 @@
 /* Pagefind UI overrides */
 .pagefind-ui {
   --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: var(--olive-500);
-  --pagefind-ui-text: var(--color-text-main);
-  --pagefind-ui-background: var(--tan-000);
-  --pagefind-ui-border: var(--tan-400);
-  --pagefind-ui-tag: var(--tan-200);
+  --pagefind-ui-primary: var(--accent);
+  --pagefind-ui-text: var(--on-surface);
+  --pagefind-ui-background: var(--surface-raised);
+  --pagefind-ui-border: var(--outline);
+  --pagefind-ui-tag: var(--surface-sunken);
   --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: 0.75rem;
+  --pagefind-ui-border-radius: var(--radius-lg);
   --pagefind-ui-image-border-radius: 50%;
   --pagefind-ui-image-box-ratio: 1;
   --pagefind-ui-font: inherit;
@@ -45,29 +53,34 @@
   min-width: 0;
   font-size: var(--step-0);
   padding: var(--space-s) var(--space-m);
-  border: 2px solid var(--tan-400);
-  border-radius: 0.75rem;
-  background: var(--tan-000);
+  border: 2px solid var(--outline);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  color: var(--on-surface);
   transition:
     border-color 0.2s,
     box-shadow 0.2s;
 
   margin-inline-end: var(--space-2xs);
 
+  &::placeholder {
+    color: var(--on-surface-muted);
+  }
+
   &:focus {
     outline: none;
-    border-color: var(--olive-500);
-    box-shadow: 0 0 0 4px var(--olive-200);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-wash);
   }
 }
 
 .pagefind-ui__form .pagefind-ui__search-clear {
-  font-family: var(--font-family-main);
+  font-family: var(--font-body);
   font-weight: var(--font-weight-boldest);
   font-size: var(--step-1);
-  color: var(--tan-600);
-  background: var(--tan-200);
-  border-radius: var(--border-radius-md);
+  color: var(--on-surface-muted);
+  background: var(--surface-sunken);
+  border-radius: var(--radius-md);
   padding: var(--space-xs) var(--space-s);
   text-decoration: none;
   border: none;
@@ -78,7 +91,7 @@
 
   &:hover,
   &:focus {
-    background: var(--tan-300);
+    background: var(--outline-variant);
   }
 }
 
@@ -90,7 +103,7 @@
 /* Results count message */
 .pagefind-ui__message {
   font-weight: var(--font-weight-semibold);
-  color: var(--gray-500);
+  color: var(--on-surface-muted);
   padding: var(--space-s) 0;
   font-size: var(--step--1);
 }
@@ -104,19 +117,24 @@
 
   .pagefind-ui__result {
     display: flex;
-    background: var(--tan-000);
-    border-radius: 1rem;
+    background: var(--surface-raised);
+    border-radius: var(--radius-xl);
     padding: 0;
-    border: 2px solid var(--tan-200);
+    border: 1px solid var(--card-border-subtle);
+    box-shadow: var(--shadow-card);
     gap: 0;
     overflow: hidden;
   }
 }
 
+.dark .pagefind-ui__results .pagefind-ui__result {
+  box-shadow: var(--shadow-elevated);
+}
+
 /* Full-bleed image - fixed width, stretches full height */
 .pagefind-ui__result-thumb {
   flex: 0 0 20%;
-  outline: 1px solid pink;
+  background: var(--surface-sunken);
 }
 
 .pagefind-ui__result-image {
@@ -139,24 +157,26 @@
 }
 
 .pagefind-ui__result-link {
-  color: var(--olive-500);
+  color: var(--accent);
   text-decoration: none;
   font-weight: var(--font-weight-bold);
   font-size: var(--step-1);
   line-height: var(--line-height-tight);
-  transition: color 0.2s;
 
   &:hover {
-    color: var(--olive-600);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
   }
 }
 
+.dark .pagefind-ui__result-link {
+  color: var(--amber);
+}
+
 /* Excerpt with line-clamp for cleaner display */
 .pagefind-ui__result-excerpt {
-  color: var(--gray-600);
+  color: var(--on-surface-muted);
   font-size: var(--step--1);
   line-height: 1.65;
   margin: 0;
@@ -168,18 +188,14 @@
 
   /* Refined highlighted search matches */
   mark {
-    background: linear-gradient(
-      135deg,
-      var(--brown-100) 0%,
-      var(--brown-200) 100%
-    );
-    color: var(--brown-500);
+    background: var(--accent-container);
+    color: var(--on-accent-container);
     padding: 0.05em 0.3em;
     border-radius: 0.2rem;
     font-weight: var(--font-weight-semibold);
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-    border-bottom: 2px solid var(--brown-300);
+    border-bottom: 2px solid var(--accent);
   }
 }
 
@@ -187,7 +203,7 @@
 .pagefind-ui__result-nested {
   margin-block-start: var(--space-xs);
   padding-inline-start: var(--space-s);
-  border-inline-start: 3px solid var(--olive-300);
+  border-inline-start: 3px solid var(--outline-variant);
   display: flex;
   flex-direction: column;
   gap: var(--space-2xs);
@@ -195,7 +211,6 @@
   .pagefind-ui__result-link {
     font-size: var(--step--1);
     font-weight: var(--font-weight-semibold);
-    color: var(--olive-500);
   }
 
   .pagefind-ui__result-excerpt {
@@ -217,10 +232,10 @@
   width: 100%;
   padding: var(--space-s) var(--space-m);
   margin-block-start: var(--space-s);
-  background: white;
-  border: 2px solid var(--tan-300);
-  border-radius: 0.75rem;
-  color: var(--olive-500);
+  background: var(--surface-raised);
+  border: 2px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  color: var(--accent);
   font-family: inherit;
   font-size: var(--step--1);
   font-weight: var(--font-weight-semibold);
@@ -228,12 +243,21 @@
   transition: all 0.2s ease;
 
   &:hover {
-    background: var(--tan-100);
-    border-color: var(--olive-400);
-    color: var(--olive-600);
+    background: var(--surface-sunken);
+    border-color: var(--accent);
+    color: var(--accent);
   }
 
   &:active {
     transform: translateY(1px);
+  }
+}
+
+.dark .pagefind-ui__button {
+  color: var(--amber);
+
+  &:hover {
+    border-color: var(--amber);
+    color: var(--amber);
   }
 }

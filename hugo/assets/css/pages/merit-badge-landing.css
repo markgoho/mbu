@@ -1,0 +1,650 @@
+/*
+ * Merit Badge landing page (/merit-badges/<slug>/) — v2 redesign.
+ *
+ * Reuses the requirements page's shell (.req-page / .req-sidebar-wrap /
+ * .req-main / .req-main container query, all from
+ * pages/merit-badge-requirements.css, loaded just before this file in
+ * head/critical-css.html) and its .req-card__node circle for the
+ * "What you'll do" preview rows. Only the hero, bento overview, and
+ * start CTA are new here.
+ *
+ * The hero (.badge-hero) reads its scrim/text colors from the same
+ * semantic tokens as the rest of the page in light mode -- a soft,
+ * editorial wash over the blurred emblem, sitting flush with the light
+ * sidebar beside it. In dark mode it switches to a genuinely cinematic
+ * near-black treatment (fixed oklch() values, the same documented
+ * exception pages/home.css's .hero-d makes), because a token-mapped
+ * "dark mode" surface here would just be a dim gray box, not a photo
+ * treatment. Everything outside the hero uses semantic tokens only and
+ * needs no .dark overrides of its own.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Hero                                                                 */
+/* ------------------------------------------------------------------ */
+
+.badge-hero {
+  --hero-on: var(--on-surface);
+  --hero-on-muted: var(--on-surface-muted);
+  --hero-scrim-1: color-mix(in oklab, var(--surface-raised) 90%, transparent);
+  --hero-scrim-2: color-mix(in oklab, var(--surface) 82%, transparent);
+
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  border-radius: var(--radius-xl);
+  margin-block: var(--space-m) var(--space-l);
+  border: 1px solid var(--card-border-subtle);
+  color: var(--hero-on);
+}
+
+.dark .badge-hero {
+  --hero-on: oklch(0.98 0.003 86.03);
+  --hero-on-muted: oklch(0.82 0.01 86.03);
+  --hero-scrim-1: oklch(0.14 0.023 153.3 / 0.92);
+  --hero-scrim-2: oklch(0.18 0.028 153.3 / 0.88);
+
+  border-color: transparent;
+}
+
+.badge-hero__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.badge-hero__backdrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(40px) saturate(1.15);
+  transform: scale(1.15);
+}
+
+.badge-hero__backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--hero-scrim-1) 0%,
+    var(--hero-scrim-2) 50%,
+    var(--hero-scrim-1) 100%
+  );
+}
+
+.badge-hero__glow {
+  position: absolute;
+  z-index: -1;
+  top: -6rem;
+  right: -6rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--accent) 16%, transparent),
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.dark .badge-hero__glow {
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--amber) 20%, transparent),
+    transparent 70%
+  );
+}
+
+.badge-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--space-xl) clamp(var(--space-m), 4vw, var(--space-xl));
+  position: relative;
+}
+
+@container req-main (max-width: 700px) {
+  .badge-hero__grid {
+    grid-template-columns: 1fr;
+    padding: var(--space-l) var(--space-m);
+    gap: var(--space-m);
+  }
+
+  .badge-hero__content {
+    max-width: none;
+  }
+
+  .badge-hero__emblem-col {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 200px;
+    mask-image: none;
+    -webkit-mask-image: none;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    order: -1;
+  }
+}
+
+.badge-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  min-width: 0;
+  max-width: 580px;
+  z-index: 2;
+  position: relative;
+}
+
+.badge-hero__eyebrow-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.badge-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: 0.3rem var(--space-s);
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface-muted);
+  font-size: var(--step--1);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-hover, var(--outline-variant));
+    color: var(--on-surface);
+  }
+}
+
+.dark .badge-hero__eyebrow {
+  background: oklch(0.98 0.003 86.03 / 0.12);
+  border-color: oklch(0.853 0.0244 86.09 / 0.2);
+  color: var(--hero-on);
+
+  &:hover,
+  &:focus-visible {
+    background: oklch(0.98 0.003 86.03 / 0.22);
+    border-color: oklch(0.853 0.0244 86.09 / 0.4);
+    color: var(--hero-on);
+  }
+}
+
+.badge-hero__eyebrow-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.badge-hero__eagle-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: 0.3rem var(--space-s);
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  border: 1px solid var(--accent);
+  color: var(--on-accent-container);
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+
+.dark .badge-hero__eagle-chip {
+  background: color-mix(in oklab, var(--amber) 22%, transparent);
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.badge-hero__eagle-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.badge-hero__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-4);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--hero-on);
+  /* Overrides the global centered `main h1` -- this hero's title is
+     left-aligned with the rest of the hero content. */
+  text-align: start;
+}
+
+.badge-hero__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.dark .badge-hero__title em {
+  color: var(--amber);
+}
+
+.badge-hero__lead {
+  max-width: 55ch;
+  margin: 0;
+  font-size: var(--step-0);
+  line-height: var(--line-height-relaxed);
+  color: var(--hero-on-muted);
+}
+
+.badge-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block-start: var(--space-xs);
+}
+
+.badge-hero__cta {
+  min-height: 44px;
+}
+
+/* In light mode the hero is just another (bordered) light surface, so
+   the shared .button/.button-secondary chrome already reads correctly
+   there. Dark mode's near-black cinematic backdrop needs its own
+   amber-on-dark treatment instead. */
+.dark .badge-hero .button.badge-hero__cta {
+  background-color: var(--amber);
+  border-color: var(--amber);
+  color: #1a1400;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ffc83b;
+    border-color: #ffc83b;
+  }
+}
+
+.dark .badge-hero .button-secondary.badge-hero__cta {
+  border-color: oklch(0.853 0.0244 86.09 / 0.35);
+  color: var(--hero-on);
+
+  &:hover,
+  &:focus-visible {
+    background-color: oklch(0.98 0.003 86.03 / 0.1);
+    border-color: var(--hero-on);
+    color: var(--hero-on);
+  }
+}
+
+.badge-hero__cta-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.badge-hero__emblem-col {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 35%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
+}
+
+.badge-hero__emblem {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  aspect-ratio: auto;
+  filter: brightness(0.95);
+}
+
+/* ------------------------------------------------------------------ */
+/* Bento overview                                                       */
+/* ------------------------------------------------------------------ */
+
+.badge-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-m);
+  margin-block-end: var(--space-l);
+}
+
+@container req-main (min-width: 700px) {
+  .badge-overview {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .badge-preview {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .badge-glance {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .badge-resources {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+.badge-preview,
+.badge-glance,
+.badge-resources {
+  padding: var(--space-m);
+}
+
+.badge-preview__heading,
+.badge-glance__heading,
+.badge-resources__heading {
+  margin: 0 0 var(--space-s);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--on-surface);
+}
+
+/* --- What you'll do -------------------------------------------------- */
+
+.badge-preview__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.badge-preview__link {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-s);
+  min-height: 44px;
+  padding: var(--space-2xs);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-sunken);
+  }
+}
+
+.badge-preview__node {
+  flex-shrink: 0;
+}
+
+.badge-preview__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.badge-preview__title {
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.badge-preview__snippet {
+  font-size: var(--step--1);
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface-muted);
+}
+
+.badge-preview__more {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  margin-block-start: var(--space-s);
+  font-weight: 700;
+  font-size: var(--step--1);
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.badge-preview__more-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* --- At a glance ------------------------------------------------------ */
+
+.badge-glance__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-glance__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-s);
+  padding-block: var(--space-2xs);
+  border-block-end: 1px dashed var(--card-border-subtle);
+
+  &:last-child {
+    border-block-end: 0;
+  }
+
+  dt {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--on-surface-muted);
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 700;
+    color: var(--on-surface);
+    text-align: end;
+  }
+}
+
+.badge-glance__category-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--card-border-subtle);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+}
+
+.dark .badge-glance__category-link {
+  &:hover,
+  &:focus-visible {
+    color: var(--amber);
+    text-decoration-color: var(--amber);
+  }
+}
+
+.badge-glance__icon {
+  width: 1.1em;
+  height: 1.1em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.dark .badge-glance__icon {
+  color: var(--amber);
+}
+
+.badge-glance__pill {
+  display: inline-flex;
+  padding: var(--space-3xs) var(--space-xs);
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+
+.badge-glance__pill--no {
+  background: var(--surface-sunken);
+  color: var(--on-surface-muted);
+}
+
+/* --- Resources & downloads --------------------------------------------- */
+
+.badge-resources__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.badge-resources__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  padding-inline: var(--space-2xs);
+  border-radius: var(--radius-md);
+  color: var(--on-surface);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-sunken);
+    color: var(--accent);
+  }
+}
+
+.badge-resources__icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.dark .badge-resources__icon {
+  color: var(--amber);
+}
+
+/* ------------------------------------------------------------------ */
+/* Start CTA                                                            */
+/* ------------------------------------------------------------------ */
+
+.badge-start-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  padding-block: var(--space-m);
+  border-radius: var(--radius-xl);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.badge-start-cta:hover,
+.badge-start-cta:focus-visible {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .badge-start-cta {
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .badge-start-cta:hover,
+  .badge-start-cta:focus-visible {
+    transform: translateY(-2px);
+  }
+}
+
+.badge-start-cta__icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* ------------------------------------------------------------------ */
+/* Print                                                                */
+/* ------------------------------------------------------------------ */
+
+@media print {
+  /* Light mode already prints correctly: the hero's default colors are
+     the same semantic tokens as the rest of the page, and tokens-v2.css's
+     print reset remaps those to light regardless of the viewed theme.
+     Only the backdrop photo and dark mode's fixed oklch() cinematic
+     values (see .dark .badge-hero above) need an explicit reset here. */
+  .badge-hero__backdrop,
+  .badge-hero__glow {
+    display: none;
+  }
+
+  .dark .badge-hero {
+    --hero-on: var(--on-surface);
+    --hero-on-muted: var(--on-surface-muted);
+    border-color: var(--card-border-subtle);
+  }
+
+  .dark .badge-hero__eyebrow {
+    background: var(--surface-sunken);
+    border-color: var(--outline-variant);
+    color: var(--on-surface-muted);
+  }
+
+  .dark .badge-hero__eagle-chip {
+    background: var(--accent-container);
+    border-color: var(--accent);
+    color: var(--on-accent-container);
+  }
+
+  .dark .badge-hero__title em {
+    color: var(--accent);
+  }
+
+  .dark .badge-hero .button.badge-hero__cta,
+  .dark .badge-hero .button-secondary.badge-hero__cta {
+    background: none;
+    color: var(--on-surface);
+    border: 1px solid var(--card-border-subtle);
+  }
+
+  .badge-start-cta {
+    background: none;
+    border: 1px solid var(--card-border-subtle);
+  }
+}

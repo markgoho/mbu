@@ -1,105 +1,59 @@
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main-class" }}req-page-main{{ end }}
+
 {{ define "main" }}
   {{/* Access parent page to get badge data */}}
   {{ $badge := .Parent }}
-  {{ $json := index hugo.Data "merit-badges" $badge.File.ContentBaseName }}
-  {{ $reqCount := len $json.requirements }}
+  {{ $json := index hugo.Data "merit-badges" (path.Base $badge.File.Dir) }}
   {{/* Get badge image for Pagefind search results */}}
   {{ $badgeImage := $badge.Resources.GetMatch "*-merit-badge.avif" }}
   {{ if not $badgeImage }}
     {{ $badgeImage = $badge.Resources.GetMatch "*-merit-badge-card.avif" }}
   {{ end }}
+  {{ $guide := $badge.GetPage "guide" }}
 
 
-  <article class="merit-badge">
-    <header class="badge-header">
-      <h1>
-        {{ .Title }}
-      </h1>
-      {{ if $json.eagle_required }}
-        <span class="eagle-badge">🦅 Eagle Required</span>
+  <div class="req-page">
+    <aside class="req-sidebar-wrap">
+      {{ partial "merit-badges/req-sidebar.html" (dict "badge" $badge "json" $json "guide" $guide "active" "requirements") }}
+    </aside>
+
+    <div class="req-main">
+      {{ partial "breadcrumb.html" . }}
+      {{ partial "discontinued-notice.html" $json }}
+
+      {{ with .Description }}
+        <div class="badge-description">
+          <p>{{ . }}</p>
+        </div>
       {{ end }}
 
 
-      <div class="badge-meta">
-        <span>{{ $reqCount }} Requirements</span>
-        {{ with $json.last_updated }}
-          <span class="requirements-updated">
-            Updated
-            {{ time . | dateFormat "January 2, 2006" }}
+      <div class="requirements" data-pagefind-body>
+        {{/* Hidden image for Pagefind search results */}}
+        {{ with $badgeImage }}
+          <img
+            src="{{ .RelPermalink }}"
+            alt=""
+            data-pagefind-meta="image[src]"
+            hidden />
+        {{ end }}
+        {{ if $json.eagle_required }}
+          <span data-pagefind-meta="eagle_required:true" hidden>
+            Eagle Required Merit Badge
           </span>
         {{ end }}
-        <a href="{{ $json.url }}" target="_blank" rel="noopener">
-          View Official Page ↗
-        </a>
-        {{ if $json.pamphlet_url }}
-          <a
-            href="{{ $json.pamphlet_url }}"
-            target="_blank"
-            rel="noopener"
-            class="pamphlet-link">
-            Download Free Pamphlet ↓
-          </a>
-        {{ end }}
-        {{ $worksheets := index hugo.Data "worksheets" }}
-        {{ if and $worksheets (in $worksheets.slugs $badge.File.ContentBaseName) }}
-          <a
-            href="/worksheets/{{ $badge.File.ContentBaseName }}-worksheet.pdf"
-            target="_blank"
-            rel="noopener"
-            class="pamphlet-link">
-            Download Fillable Worksheet ↓
-          </a>
-        {{ end }}
+        <h2 class="req-main__heading">Requirements</h2>
+
+        <ol class="req-timeline">
+          {{ range $i, $req := $json.requirements }}
+            {{ partial "merit-badges/req-card.html" (dict "req" $req "index" (add $i 1) "badge_name" $json.title "hide_resources" true "guide" $guide) }}
+          {{ end }}
+        </ol>
       </div>
-    </header>
-
-    {{ partial "discontinued-notice.html" $json }}
-
-    {{ $guide := $badge.GetPage "guide" }}
-    {{ if $guide }}
-      <div class="guide-banner">
-        <a href="{{ $guide.RelPermalink }}" class="guide-banner__link">
-          <span class="guide-banner__icon" aria-hidden="true">📖</span>
-          <div class="guide-banner__content">
-            <strong class="guide-banner__title">Digital Resource Guide Available</strong>
-            <p class="guide-banner__description">Study tips, videos, images, and interactive content for every requirement.</p>
-          </div>
-          <span class="guide-banner__arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
-    {{ end }}
-
-    {{ with .Description }}
-      <div class="badge-description">
-        <p>{{ . }}</p>
-      </div>
-    {{ end }}
-
-
-    <div class="requirements" data-pagefind-body>
-      {{/* Hidden image for Pagefind search results */}}
-      {{ with $badgeImage }}
-        <img
-          src="{{ .RelPermalink }}"
-          alt=""
-          data-pagefind-meta="image[src]"
-          hidden />
-      {{ end }}
-      {{ if $json.eagle_required }}
-        <span data-pagefind-meta="eagle_required:true" hidden>
-          Eagle Required Merit Badge
-        </span>
-      {{ end }}
-      <h2>Requirements</h2>
-
-      <ol class="requirements-list">
-        {{ range $i, $req := $json.requirements }}
-          {{/* Use recursive partial for infinite nesting */}}
-          {{ partial "requirement.html" (dict "req" $req "index" (add $i 1) "badge_name" $json.title "hide_resources" true "guide" $guide) }}
-        {{ end }}
-      </ol>
     </div>
-  </article>
+  </div>
 {{ end }}
 
 {{ define "footer-scripts" }}

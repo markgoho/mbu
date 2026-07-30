@@ -1,0 +1,38 @@
+{{/* merit-badges/req-actions.html
+
+  Copy-link + study-guide-link actions for a single requirement, at any
+  depth. Extracted from the pre-redesign partials/requirement.html so it
+  can be reused by req-card.html and req-child-item.html.
+
+  Params (dict):
+  path      - the requirement's path (used for the #anchor and labels)
+  guidePage - the resolved DRG guide Page for this exact requirement, or
+  "" / nil. Callers should reuse the Page already resolved
+  by merit-badges/req-guide-lookup.html rather than looking
+  it up a second time.
+*/}}
+{{ $path := .path }}
+{{ $guidePage := .guidePage }}
+
+
+<div class="req-actions">
+  <a
+    class="req-actions__btn req-actions__btn--copy copy-link-btn"
+    href="#{{ $path }}"
+    aria-label="Copy link to requirement {{ $path }}"
+    title="Copy link to requirement {{ $path }}">
+    {{ partial "icon.html" (dict "name" "link" "class" "req-actions__icon") }}
+    <span class="visually-hidden">Copy link to requirement {{ $path }}</span>
+  </a>
+  {{ with $guidePage }}
+    <a
+      class="req-actions__btn req-actions__btn--guide guide-link-btn"
+      href="{{ .RelPermalink }}"
+      title="Study guide for this requirement">
+      {{ partial "icon.html" (dict "name" "book-open-text" "class" "req-actions__icon") }}
+      <span class="visually-hidden"
+        >Open study guide for requirement {{ $path }}</span
+      >
+    </a>
+  {{ end }}
+</div>

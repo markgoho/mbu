@@ -1,0 +1,112 @@
+{{/* merit-badges/drg-sidebar.html
+
+  Sticky sidebar for DRG guide pages: badge identity (shared with the
+  requirements page via badge-identity.html), the guide's own nav groups,
+  and a "Reference" group linking back to Requirements / Print Complete
+  Guide. Also renders the mobile <details> nav variant so guide.html
+  doesn't have to duplicate the nav loop for desktop and mobile.
+
+  Params (dict):
+  page      - the current guide Page (used to resolve guide_nav + the
+              "active" nav item)
+  badgePage - the badge's landing Page
+  json      - the badge's data.json (from hugo.Data "merit-badges")
+*/}}
+{{ $page := .page }}
+{{ $badgePage := .badgePage }}
+{{ $json := .json }}
+{{ $slug := $badgePage.File.ContentBaseName }}
+
+{{ $currentUrl := $page.RelPermalink }}
+{{ $guideNav := $page.Params.guide_nav | default $page.CurrentSection.Params.guide_nav | default $page.Parent.Params.guide_nav }}
+{{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
+{{ $printPage := $page.Site.GetPage (printf "%sprint/" $page.CurrentSection.RelPermalink) }}
+
+<aside class="drg-sidebar-wrap">
+  <div class="drg-sidebar">
+    {{ partial "merit-badges/badge-identity.html" (dict "badge" $badgePage "json" $json "slug" $slug) }}
+
+    {{ if $guideNav }}
+      <ul class="drg-nav">
+        {{ range $guideNav }}
+          {{ if .group_title }}
+            <li class="drg-nav__group-title">{{ .group_title }}</li>
+          {{ end }}
+
+          {{ range .items }}
+            <li class="drg-nav__item">
+              <a
+                href="{{ .url }}"
+                class="drg-nav__link {{ if eq .url $currentUrl }}
+                  drg-nav__link--active
+                {{ end }}">
+                {{ .title }}
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+        <li class="drg-nav__group-title">Reference</li>
+        <li class="drg-nav__item">
+          <a href="{{ $reqUrl }}" class="drg-nav__link drg-nav__link--reference">
+            {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-nav__link-icon") }}
+            View Requirements
+          </a>
+        </li>
+        {{ if $printPage }}
+          <li class="drg-nav__item">
+            <a href="{{ $printPage.RelPermalink }}" class="drg-nav__link drg-nav__link--reference">
+              {{ partial "icon.html" (dict "name" "scroll" "class" "drg-nav__link-icon") }}
+              Print Complete Guide
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</aside>
+
+{{/* Mobile-only collapsible navigation (hidden when the sidebar above is visible) */}}
+{{ if $guideNav }}
+  <nav class="drg-mobile-nav-wrap" aria-label="Guide navigation">
+    <details class="drg-mobile-nav">
+      <summary class="drg-mobile-nav__toggle">
+        {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__icon") }}
+        <span>Guide Navigation</span>
+        <span class="drg-mobile-nav__arrow"></span>
+      </summary>
+      <ul class="drg-mobile-nav__list">
+        {{ range $guideNav }}
+          {{ if .group_title }}
+            <li class="drg-mobile-nav__group">{{ .group_title }}</li>
+          {{ end }}
+          {{ range .items }}
+            <li>
+              <a
+                href="{{ .url }}"
+                class="drg-mobile-nav__link {{ if eq .url $currentUrl }}
+                  drg-mobile-nav__link--active
+                {{ end }}"
+                >{{ .title }}</a
+              >
+            </li>
+          {{ end }}
+        {{ end }}
+        <li class="drg-mobile-nav__group">Reference</li>
+        <li>
+          <a href="{{ $reqUrl }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
+            {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__link-icon") }}
+            View Requirements
+          </a>
+        </li>
+        {{ if $printPage }}
+          <li>
+            <a href="{{ $printPage.RelPermalink }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
+              {{ partial "icon.html" (dict "name" "scroll" "class" "drg-mobile-nav__link-icon") }}
+              Print Complete Guide
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </details>
+  </nav>
+{{ end }}

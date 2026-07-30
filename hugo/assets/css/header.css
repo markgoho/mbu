@@ -4,13 +4,15 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-areas: "logo search cta" "nav nav nav";
+  grid-template-columns: min-content 1fr min-content min-content;
+  grid-template-areas: "logo theme search cta" "nav nav nav nav";
   align-items: center;
-  background: var(--tan-300);
+  background-color: var(--surface-sunken);
+  color: var(--on-surface);
   padding: var(--space-xs);
   column-gap: var(--space-xs);
   row-gap: var(--space-xs);
+  border-bottom: 1px solid var(--outline-variant);
 }
 
 .navbar__logo {
@@ -19,7 +21,7 @@
 }
 
 .navbar__logo h2 {
-  color: var(--color-text-main);
+  color: var(--accent);
   margin: 0;
 }
 
@@ -33,25 +35,47 @@
   padding: 0;
 }
 
+.navbar__theme-toggle {
+  grid-area: theme;
+  justify-self: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar__theme-toggle-icon {
+  display: grid;
+  place-items: center;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.35s ease;
+}
+
+/* Light mode: Sun visible, Moon hidden */
+.navbar__theme-toggle-icon--sun {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+.navbar__theme-toggle-icon--moon {
+  position: absolute;
+  transform: rotate(120deg) scale(0.2);
+  opacity: 0;
+}
+
+/* Dark mode: Moon visible, Sun hidden */
+html.dark .navbar__theme-toggle-icon--sun,
+html:has(#theme-toggle-checkbox:checked) .navbar__theme-toggle-icon--sun {
+  transform: rotate(-120deg) scale(0.2);
+  opacity: 0;
+}
+
+html.dark .navbar__theme-toggle-icon--moon,
+html:has(#theme-toggle-checkbox:checked) .navbar__theme-toggle-icon--moon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+
 .navbar__search {
   grid-area: search;
-  display: grid;
-  place-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  color: var(--color-text-main);
-  transition: color 0.2s;
   justify-self: end;
-  padding: 0;
-
-  &:hover {
-    color: var(--olive-600);
-  }
-
-  .search-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
 }
 
 .navbar__search-text {
@@ -59,34 +83,39 @@
 }
 
 .navbar__search-icon {
-  display: grid;
-  place-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar__cta {
   grid-area: cta;
   justify-self: end;
-  max-width: max-content;
 }
 
 .navbar__link {
-  color: var(--color-text-main);
+  color: var(--on-surface);
   text-decoration: none;
   font-weight: var(--font-weight-boldest);
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--accent);
 }
 
 .navbar__nav > li {
-  border-bottom: 5px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 .navbar__nav > .active {
-  border-bottom-color: var(--olive-500);
+  border-bottom-color: var(--accent);
 }
 
 @container header (min-width: 60rem) {
   .navbar {
-    grid-template-columns: max-content 1fr max-content max-content;
-    grid-template-areas: "logo nav search cta";
+    grid-template-columns: max-content 1fr max-content max-content max-content;
+    grid-template-areas: "logo nav theme search cta";
     grid-template-rows: auto;
     padding: var(--space-s) var(--space-m);
     column-gap: var(--space-l);
@@ -98,12 +127,6 @@
 
   .navbar__search {
     justify-self: center;
-    width: auto;
-    height: auto;
-    padding: var(--space-xs) var(--space-s);
-    display: flex;
-    align-items: center;
-    gap: var(--space-2xs);
   }
 
   .navbar__search-text {

@@ -1,0 +1,37 @@
+{{- /* home/steps.html — "what's on a badge page" three-step timeline. */ -}}
+{{ $steps := slice
+  (dict
+    "icon" "list-checks"
+    "title" "Requirements"
+    "text" "The full official requirement list, broken into a clear numbered timeline with every subrequirement and choice spelled out."
+  )
+  (dict
+    "icon" "book"
+    "title" "Digital Resource Guide"
+    "text" "An interactive study guide for each badge — background reading, worked examples, and links for every requirement."
+  )
+  (dict
+    "icon" "trophy"
+    "title" "Printable worksheet"
+    "text" "A fillable PDF worksheet Scouts can use to record their work and bring to their merit badge counselor."
+  )
+}}
+
+<section class="home-steps">
+  <h2 class="home-steps__heading">What's on a badge page</h2>
+
+  <ol class="timeline home-steps__timeline">
+    {{ range $i, $step := $steps }}
+      <li class="timeline__item">
+        <span class="timeline__node" aria-hidden="true"><span class="timeline__node-text">{{ add $i 1 }}</span></span>
+        <div class="timeline__panel card-surface card-surface--lift">
+          <div class="home-steps__title-row">
+            {{ partial "icon.html" (dict "name" $step.icon "class" "home-steps__icon") }}
+            <h3 class="home-steps__title">{{ $step.title }}</h3>
+          </div>
+          <p class="home-steps__text">{{ $step.text }}</p>
+        </div>
+      </li>
+    {{ end }}
+  </ol>
+</section>

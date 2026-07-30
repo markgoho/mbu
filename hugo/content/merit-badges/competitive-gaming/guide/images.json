@@ -1,0 +1,59 @@
+{
+  "badge": "competitive-gaming",
+  "style_context": "Competitive video gaming, esports broadcasting, hardware engineering, and digital citizenship",
+  "images": [
+    {
+      "id": "competitive-gaming-setup",
+      "file": "_index.md",
+      "style": "photo",
+      "description": "A clean modern gaming desk setup featuring dual high-refresh-rate monitors on desk arms, a mechanical keyboard with subtle RGB backlight, an ergonomic gaming mouse, cable management channels, and a padded headset on a desk stand.",
+      "value": "Shows the spatial arrangement of a dual-monitor ergonomic desk setup — equipment layout details text alone cannot convey."
+    },
+    {
+      "id": "esports-vs-casual-gaming",
+      "file": "req1.md",
+      "style": "comparison",
+      "description": "Side-by-side split screen image comparing video gaming formats. Left side shows a casual living room with friends playing on a couch in front of a TV screen. Right side shows a professional esports tournament stage with players wearing headsets at PCs, stage lighting, and referees.",
+      "value": "Split-frame contrast of casual living room gaming vs an organized stage esports environment with referee, team headsets, and audience screens — highlights structural elements text cannot convey."
+    },
+    {
+      "id": "in-game-safety-controls",
+      "file": "req2.md",
+      "style": "annotated-photo",
+      "verb_family": "show",
+      "description": "Close-up view of a gaming video display overlay menu showing player profile options with clear callouts highlighting the Mute, Block, and Report Player buttons.",
+      "value": "Annotated player action menu showing exact locations of Mute, Block, and Report buttons on a game UI overlay — menu positioning that text cannot teach clearly."
+    },
+    {
+      "id": "gamer-ergonomics-posture",
+      "file": "req3.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Clean educational diagram of proper computer desk ergonomic posture. Vector style graphic showing a person seated with labeled checkpoints: Monitor Top at Eye Level, 90 degree elbow bend, Lumbar Back Support, Neutral Wrist Position, Feet Flat on Floor.",
+      "value": "Labeled ergonomic posture diagram showing exact angles for monitor height, neutral wrist alignment, 90-degree elbow bend, and lumbar support — posture details text alone cannot illustrate."
+    },
+    {
+      "id": "two-factor-authentication-flow",
+      "file": "req4.md",
+      "style": "diagram",
+      "verb_family": "show",
+      "description": "Step-by-step educational diagram showing Two-Factor Authentication (2FA) account security flow. Panel 1: Password entry on computer monitor. Panel 2: Mobile smartphone receiving 6-digit authenticator verification code. Panel 3: Account Access Approved green checkmark shield icon.",
+      "value": "Step-by-step security flow showing primary password authentication combined with mobile authenticator approval — teaches 2FA verification steps text cannot easily show."
+    },
+    {
+      "id": "custom-pc-components",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "Exploded technical diagram layout of custom desktop gaming PC hardware components. Clear labels for CPU Processor, GPU Graphics Card, Motherboard, RAM Memory Sticks, SSD Storage Drive, and Power Supply Unit.",
+      "value": "Exploded layout showing spatial positioning and connection sockets of CPU, GPU, RAM modules, motherboard, and power supply — teaches hardware component relationships text cannot convey."
+    },
+    {
+      "id": "esports-broadcast-overlay",
+      "file": "req6b.md",
+      "style": "diagram",
+      "verb_family": "describe",
+      "description": "Educational layout diagram showing an esports live stream broadcast interface layout. Clear labels pointing to Main Gameplay View, Player Webcams, Mini-Map Corner, Score & Timer Banner, and Shoutcaster Desk Window.",
+      "value": "Annotated broadcast overlay diagram showing match feed, player webcams, mini-map, score tickers, and shoutcaster picture-in-picture box — teaches esports production layout text cannot show."
+    }
+  ]
+}

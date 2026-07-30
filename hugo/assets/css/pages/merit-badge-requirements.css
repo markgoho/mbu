@@ -1,0 +1,798 @@
+/*
+ * Merit Badge Requirements page — v2 redesign.
+ *
+ * Full-bleed two-column shell (sidebar + main content) that collapses to
+ * a top bar on mobile, mirroring the drg-page/drg-sidebar/drg-content
+ * shell in css/pages/drg.css. Uses ONLY the v2 semantic tokens from
+ * tokens-v2.css (--surface, --on-surface, --accent, --radius-*,
+ * --shadow-*, etc) plus the existing fluid --step-N type scale and
+ * spacing.css tokens. This page opts into the v2 theme via
+ * {{ define "html-class" }}theme-v2{{ end }} and goes full-bleed via
+ * {{ define "main-class" }}req-page-main{{ end }} in
+ * layouts/merit-badges/requirements.html.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Full-bleed override                                                  */
+/* ------------------------------------------------------------------ */
+
+/* main-class lands on the same element as .container (see baseof.html),
+   so override the custom properties .container reads instead of
+   fighting its specificity. */
+.req-page-main {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Shell                                                                */
+/* ------------------------------------------------------------------ */
+
+.req-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  padding-block-start: var(--space-m);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-l);
+    padding-inline: var(--space-m);
+    padding-block-start: var(--space-l);
+  }
+}
+
+.req-sidebar-wrap {
+  padding-inline: var(--space-s);
+
+  @media (min-width: 768px) {
+    flex: 0 0 17.5rem;
+    position: sticky;
+    top: var(--space-m);
+    max-height: calc(100vh - var(--space-2xl));
+    overflow-y: auto;
+    padding-inline: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Sidebar                                                              */
+/* ------------------------------------------------------------------ */
+
+.req-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  background: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-s);
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.req-sidebar:hover {
+  border-color: var(--accent-container);
+  box-shadow: var(--shadow-raised);
+}
+
+.dark .req-sidebar {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-sidebar:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-elevated-hover);
+}
+
+/* ------------------------------------------------------------------ */
+/* Badge identity (shared with the DRG sidebar — see badge-identity.html) */
+/* ------------------------------------------------------------------ */
+
+.badge-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-xs);
+  padding-block-end: var(--space-s);
+  border-block-end: 1px dashed var(--card-border-subtle);
+}
+
+.badge-identity__glow-ring-wrap {
+  padding: 3px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg,
+    var(--accent),
+    var(--accent-container),
+    var(--accent)
+  );
+  box-shadow: 0 4px 14px var(--shadow-card);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dark .badge-identity__glow-ring-wrap {
+  background: conic-gradient(
+    from 180deg,
+    var(--amber),
+    var(--amber-glow),
+    var(--amber)
+  );
+  box-shadow: 0 0 18px var(--amber-glow);
+}
+
+.req-sidebar:hover .badge-identity__glow-ring-wrap,
+.drg-sidebar:hover .badge-identity__glow-ring-wrap {
+  transform: scale(1.04);
+}
+
+.badge-identity__glow-ring {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-identity__icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+  color: var(--accent);
+  transition:
+    transform 0.2s ease,
+    color 0.25s ease;
+}
+
+.dark .badge-identity__icon {
+  color: var(--amber);
+}
+
+.badge-identity__header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.badge-identity__eyebrow-category {
+  font-size: 0.675rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--on-accent-container);
+  text-decoration: none;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.dark .badge-identity__eyebrow-category {
+  color: var(--amber);
+}
+
+.badge-identity__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--on-surface);
+  text-wrap: balance;
+}
+
+.badge-identity__micro-tag {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--on-surface-muted);
+  margin-top: 0.15rem;
+}
+
+.req-sidebar__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.req-sidebar__nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  min-height: 44px;
+  padding-inline: var(--space-xs);
+  border-radius: var(--radius-md);
+  color: var(--on-surface-muted);
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-sunken);
+    color: var(--on-surface);
+  }
+
+  &[aria-current="page"] {
+    background: var(--secondary-container);
+    color: var(--on-secondary-container);
+  }
+}
+
+.req-sidebar__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2xs);
+  padding-block-start: var(--space-xs);
+  border-block-start: 1px dashed var(--card-border-subtle);
+  font-size: var(--step--1);
+  color: var(--on-surface-muted);
+}
+
+.req-sidebar__eagle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  width: fit-content;
+  padding: var(--space-3xs) var(--space-xs);
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+.req-sidebar__eagle-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.req-sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  min-height: 44px;
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.req-sidebar__link-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Main content                                                         */
+/* ------------------------------------------------------------------ */
+
+.req-main {
+  min-width: 0;
+  padding-inline: var(--space-s);
+  container-type: inline-size;
+  container-name: req-main;
+
+  @media (min-width: 768px) {
+    flex: 1;
+    padding-inline: 0;
+  }
+}
+
+.req-main__heading {
+  margin-block: var(--space-m) var(--space-s);
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  color: var(--on-surface);
+}
+
+/* Prose reads full-width shell, readable-measure text: the shell itself
+   (sidebar + grids of cards) goes edge to edge, but running paragraph
+   text gets a capped measure so it doesn't stretch into an unreadable
+   line length on a wide monitor. */
+.badge-description p {
+  max-width: 75ch;
+}
+
+/* ------------------------------------------------------------------ */
+/* Timeline + depth-1 card                                              */
+/* ------------------------------------------------------------------ */
+
+.req-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.req-card {
+  position: relative;
+  display: flex;
+  gap: var(--space-s);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--space-l) / 2 - 1px);
+    top: var(--space-l);
+    bottom: calc(var(--space-l) * -1);
+    width: 2px;
+    background: var(--outline-variant);
+  }
+
+  &:last-child::before {
+    content: none;
+  }
+}
+
+.req-card__node {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: var(--space-l);
+  height: var(--space-l);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--surface);
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  box-shadow: var(--shadow-card);
+}
+
+.req-card__node-text {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--step-1);
+  line-height: 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  transform: translateY(-2px);
+}
+
+.req-card__panel {
+  flex: 1;
+  min-width: 0;
+  background: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-s);
+  box-shadow: var(--shadow-card);
+  scroll-margin-top: var(--space-m);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.req-card:hover .req-card__panel {
+  border-color: var(--accent-container);
+  box-shadow:
+    var(--shadow-raised),
+    0 0 0 1px var(--accent-container);
+}
+
+.dark .req-card__panel {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-card:hover .req-card__panel {
+  border-color: var(--accent);
+  box-shadow:
+    var(--shadow-elevated-hover),
+    0 0 0 1px var(--accent);
+}
+
+.req-card:target .req-card__panel {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.dark .req-card:target .req-card__panel {
+  outline-color: var(--amber);
+}
+
+.req-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-xs);
+}
+
+.req-card__heading {
+  min-width: 0;
+}
+
+.req-card__eyebrow {
+  margin: 0 0 var(--space-3xs);
+  font-size: var(--step--1);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-muted);
+}
+
+.req-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.req-card__text {
+  max-width: 75ch;
+  margin-block: var(--space-xs) 0;
+  font-size: var(--step-0);
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface);
+}
+
+@container req-main (max-width: 500px) {
+  .req-timeline {
+    gap: var(--space-m);
+  }
+
+  /* No more side-by-side node + panel: the panel goes full width and the
+     node becomes a badge pinned to its top-left corner instead, so the
+     timeline doesn't eat horizontal space on narrow screens. */
+  .req-card {
+    display: block;
+  }
+
+  .req-card .req-card__node {
+    position: absolute;
+    top: calc(var(--space-2xs) * -1);
+    left: calc(var(--space-2xs) * -1);
+    width: 2rem;
+    height: 2rem;
+    font-size: var(--step-0);
+  }
+
+  .req-card::before {
+    content: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Actions (copy link / study guide link)                               */
+/* ------------------------------------------------------------------ */
+
+.req-actions {
+  display: none;
+  gap: var(--space-3xs);
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.req-actions__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  color: var(--on-surface-muted);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-sunken);
+    color: var(--accent);
+  }
+}
+
+.req-actions__icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Children: rail / chips / options                                     */
+/* ------------------------------------------------------------------ */
+
+/* Card chrome exists only on the depth-1 panel (.req-card__panel).
+   Nothing below it draws a border, background or radius -- depth is
+   carried by a left rail, a hanging marker and type weight, which costs
+   nothing to nest. See req-children.html for the dispatch rules. */
+.req-children {
+  list-style: none;
+  padding: 0;
+}
+
+.req-child {
+  position: relative;
+  scroll-margin-top: var(--space-m);
+}
+
+.req-child:target {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: var(--radius-md);
+}
+
+.dark .req-child:target {
+  outline-color: var(--amber);
+}
+
+.req-child__body {
+  min-width: 0;
+}
+
+/* --- rail: the default nesting treatment -------------------------- */
+
+.req-children--rail {
+  margin: var(--space-s) 0 0;
+  padding-inline-start: var(--space-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  border-inline-start: 2px solid var(--outline-variant);
+}
+
+/* A nested rail sits tighter and lighter than its parent, so going
+   deeper reads as "quieter" rather than as another box. */
+.req-child__body .req-children--rail {
+  margin-block-start: var(--space-xs);
+  gap: var(--space-2xs);
+  border-inline-start-style: dashed;
+}
+
+/* Marker is a fixed grid track, so a wrapped second line of text hangs
+   under the text column rather than under the marker. */
+.req-child--rail {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: var(--space-2xs);
+}
+
+.req-child__marker {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--on-surface-muted);
+}
+
+/* --- chips: short leaf labels ------------------------------------- */
+
+/* Wrapping pills rather than a fixed grid: a 5-item group can't strand
+   a hole in a 4-up last row, and a two-word label doesn't get a full
+   card's padding. */
+.req-children--chips {
+  margin: var(--space-s) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.req-child--chips {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+  padding: var(--space-3xs) var(--space-xs);
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  font-size: var(--step--1);
+  color: var(--on-surface);
+}
+
+.req-child--chips .req-child__text {
+  max-width: none;
+  margin: 0;
+}
+
+.req-child--chips .req-child__text p {
+  display: inline;
+}
+
+/* --- options: a genuine "choose N" -------------------------------- */
+
+/* Deliberately NOT a shared rail -- a rail down the group says "these
+   belong together", the opposite of what a choice set means. Discrete
+   ring markers plus hairline separators instead: the shape everyone
+   already reads as "exactly one of these". */
+.req-children--options {
+  margin: var(--space-s) 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.req-child--options {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  gap: var(--space-xs);
+  padding-block: var(--space-s);
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+/* An option whose id is a slug drops its ring, because the slug is
+   derived from the option's own opening words (see req-child-item.html). */
+.req-child--no-ring {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.req-children--options > .req-child:first-child {
+  border-block-start: 0;
+  padding-block-start: var(--space-2xs);
+}
+
+.req-child__ring {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-full);
+  font-size: var(--step--2);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* --- shared item internals ---------------------------------------- */
+
+.req-child__title {
+  min-width: 0;
+  margin: 0;
+  font-size: var(--step-0);
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.req-child__text {
+  max-width: 75ch;
+  margin-block: var(--space-3xs) 0;
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface);
+
+  & p {
+    margin: 0;
+  }
+}
+
+/* Actions are taken out of flow: inline they'd either crowd the marker
+   or reserve an empty 2.75rem row above every untitled item. Same
+   hover/focus reveal the tiles used before. */
+.req-child > .req-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.req-child:hover > .req-actions,
+.req-child:focus-within > .req-actions {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .req-child > .req-actions {
+    opacity: 1;
+  }
+}
+
+.req-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-block-start: var(--space-m);
+  padding-block-start: var(--space-s);
+  border-top: 1px solid var(--card-border-subtle);
+}
+
+.dark .req-card__footer {
+  border-top-color: var(--card-border-subtle);
+}
+
+.req-card__guide-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.req-card__guide-link:hover,
+.req-card__guide-link:focus-visible {
+  color: var(--on-surface);
+  text-decoration: underline;
+}
+
+.req-card__guide-link:hover .req-card__guide-link-icon,
+.req-card__guide-link:focus-visible .req-card__guide-link-icon {
+  transform: translateX(4px);
+}
+
+.req-card__guide-link-icon {
+  width: 1.15em;
+  height: 1.15em;
+  transition: transform 0.2s ease;
+}
+
+/* ------------------------------------------------------------------ */
+/* Verbatim text rendered as a pill (req-text.html)                    */
+/* ------------------------------------------------------------------ */
+
+/* A short mode-bearing stem ("Do ONE of the following:") renders as a
+   pill instead of a paragraph -- this is the requirement's own verbatim
+   text, never synthesized wording, just styled differently. "select"
+   (the scout must make a choice) gets the more prominent solid-accent
+   treatment; "all" (informational) gets the quieter container tint.
+   Defined after .req-card__text and .req-child__text so text color overrides
+   work correctly in both light and dark mode. */
+.req-card__title-row,
+.req-child__title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.req-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--2);
+  line-height: 1.2;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.req-pill--select {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  border: 1px solid var(--accent);
+}
+
+.req-pill--all {
+  background: var(--surface-sunken);
+  color: var(--on-surface-muted);
+  border: 1px solid var(--outline-variant);
+}
+
+.req-pill__icon {
+  width: 0.9em;
+  height: 0.9em;
+  flex-shrink: 0;
+}

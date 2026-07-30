@@ -1,0 +1,159 @@
+{{- /*
+  home/hero.html — homepage hero.
+
+  Full-bleed cinematic hero with a featured-badge carousel: prev/next
+  cycles through Camping, Competitive Gaming, and Wildland Fire
+  Management. Built with radio inputs + CSS sibling selectors instead of
+  JS — each `[data-slide]` element (lead paragraph, image, badge caption,
+  "Learn about <badge>" CTA, prev/next controls) is pre-rendered once per
+  badge, and `#hero-badge-<slug>:checked ~ ... [data-slide="<slug>"]`
+  in pages/home.css shows the matching one. The prev/next controls are
+  <label for> elements pointing at the neighbouring radio — clicking one
+  checks that radio natively, no script involved. Search lives in
+  home/search.html, below the fold, not in the hero.
+*/ -}}
+{{ $badges := slice
+  (dict
+    "slug" "camping"
+    "icon" "tent"
+    "title" "Camping"
+    "href" "/merit-badges/camping/"
+    "img" ((.Site.GetPage "/merit-badges/camping").Resources.GetMatch "*-merit-badge.avif")
+    "alt" "Camping gear — backpack, hiking boots, and a trail map — laid out on a picnic table"
+    "leadPre" "Dive deep into the wilderness with the "
+    "leadBadge" "Camping Merit Badge"
+    "leadPost" ". Learn to pitch a tent, build a fire, and survive in the great outdoors."
+  )
+  (dict
+    "slug" "competitive-gaming"
+    "icon" "game-controller"
+    "title" "Competitive Gaming"
+    "href" "/merit-badges/competitive-gaming/"
+    "img" ((.Site.GetPage "/merit-badges/competitive-gaming").Resources.GetMatch "*-merit-badge.avif")
+    "alt" "A gaming desk with controllers, a mechanical keyboard, a headset, and an esports strategy notebook"
+    "leadPre" "Level up your strategy with the "
+    "leadBadge" "Competitive Gaming Merit Badge"
+    "leadPost" ". Learn game design, esports teamwork, and how to compete with integrity."
+  )
+  (dict
+    "slug" "wildland-fire-management"
+    "icon" "flame"
+    "title" "Wildland Fire Management"
+    "href" "/merit-badges/wildland-fire-management/"
+    "img" ((.Site.GetPage "/merit-badges/wildland-fire-management").Resources.GetMatch "*-merit-badge.avif")
+    "alt" "Wildland firefighting gear — hard hat, gloves, radio, and a fire containment map — on a table overlooking a forested ridge"
+    "leadPre" "Get hands-on with the "
+    "leadBadge" "Wildland Fire Management Merit Badge"
+    "leadPost" ". Learn fire behavior, prevention, and the tools crews use to protect the land."
+  )
+}}
+{{ $n := len $badges }}
+
+{{/* Real site stats, not decoration — ground the left column against
+  the image's bottom edge (see .hero-d__stats in pages/home.css) rather
+  than leaving a block of empty dark space under the CTA. */}}
+{{ $meritBadges := .Site.GetPage "/merit-badges" }}
+{{ $badgeCount := len $meritBadges.Pages }}
+{{/* Eagle-required is a fixed BSA constant (14 required categories),
+  NOT len(badges flagged eagle_required) — three of those categories are
+  either/or choices (Hiking/Cycling/Swimming, Emergency Preparedness/
+  Lifesaving, Environmental Science/Sustainability), so summing the
+  per-badge flags overcounts to 17. */}}
+{{ $eagleCount := 14 }}
+
+<section class="home-hero hero-d">
+  <div class="hero-d__bg">
+    <img src="/prototype-hero-image.jpg" alt="" loading="lazy" />
+  </div>
+
+  <div class="hero-d__inner">
+    {{/* Direct children of .hero-d__inner, not wrapped — the ~ sibling
+      selectors in pages/home.css need these as true DOM siblings of
+      .hero-d__content / .hero-d__image-col / .hero-d__carousel-row.
+      display:contents on a wrapper would NOT work here: it only changes
+      the box tree, not the DOM tree that selector matching uses. */}}
+    {{ range $i, $b := $badges }}
+      <input
+        type="radio"
+        name="hero-badge"
+        id="hero-badge-{{ $b.slug }}"
+        class="hero-d__radio visually-hidden"
+        aria-label="{{ $b.title }}"
+        {{ if eq $i 0 }}checked{{ end }} />
+    {{ end }}
+
+    <div class="hero-d__content">
+      <div class="hero-d__content-top">
+        <h1 class="hero-d__title">
+          Master New <em>Skills</em>
+        </h1>
+
+        {{ range $badges }}
+          <p class="hero-d__lead" data-slide="{{ .slug }}">
+            {{ .leadPre }}<strong class="hero-d__badge-name">{{ .leadBadge }}</strong>{{ .leadPost }}
+          </p>
+        {{ end }}
+
+        {{ range $badges }}
+          <a href="{{ .href }}" data-slide="{{ .slug }}" class="button hero-d__view-cta">
+            Learn about {{ .title }}
+            {{ partial "icon.html" (dict "name" "arrow-right" "class" "hero-d__cta-icon") }}
+          </a>
+        {{ end }}
+      </div>
+
+      <div class="hero-d__stats">
+        <div class="hero-d__stat">
+          <span class="hero-d__stat-number">{{ $badgeCount }}</span>
+          <span class="hero-d__stat-label">Merit badges</span>
+        </div>
+        <div class="hero-d__stat">
+          <span class="hero-d__stat-number">{{ $eagleCount }}</span>
+          <span class="hero-d__stat-label">Eagle required</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-d__image-col">
+      <div class="hero-d__image-wrap">
+        {{ range $i, $b := $badges }}
+          {{ with $b.img }}
+            <img
+              class="hero-d__image"
+              data-slide="{{ $b.slug }}"
+              src="{{ .RelPermalink }}"
+              alt="{{ $b.alt }}"
+              {{ if eq $i 0 }}loading="eager"{{ else }}loading="lazy"{{ end }} />
+          {{ end }}
+        {{ end }}
+        <div class="hero-d__image-scrim"></div>
+        <div class="hero-d__badge-tags">
+          {{ range $badges }}
+            <div class="hero-d__badge-tag" data-slide="{{ .slug }}">
+              <div class="hero-d__badge-tag-row">
+                {{ partial "icon.html" (dict "name" .icon "weight" "duotone" "class" "hero-d__badge-tag-icon") }}
+                <span class="hero-d__badge-tag-eyebrow">Featured Badge</span>
+              </div>
+              <span class="hero-d__badge-tag-title">{{ .title }}</span>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-d__carousel-row">
+      {{ range $i, $b := $badges }}
+        {{ $prev := index $badges (mod (add $i (sub $n 1)) $n) }}
+        {{ $next := index $badges (mod (add $i 1) $n) }}
+        <div class="hero-d__carousel-nav" data-slide="{{ $b.slug }}">
+          <label for="hero-badge-{{ $prev.slug }}" class="hero-d__carousel-btn" aria-hidden="true">
+            {{ partial "icon.html" (dict "name" "arrow-right" "class" "hero-d__arrow-icon hero-d__arrow-icon--flip") }}
+          </label>
+          <label for="hero-badge-{{ $next.slug }}" class="hero-d__carousel-btn" aria-hidden="true">
+            {{ partial "icon.html" (dict "name" "arrow-right" "class" "hero-d__arrow-icon") }}
+          </label>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

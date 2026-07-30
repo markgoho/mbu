@@ -1,0 +1,38 @@
+{{- /*
+  home/categories.html — Simple category grid: each tile is a plain link
+  to its category page, showing an icon, name, and badge count.
+*/ -}}
+{{ $iconData := index hugo.Data "badge-icons" }}
+{{ $categoriesPage := .Site.GetPage "/categories" }}
+{{ $terms := $categoriesPage.Data.Terms.Alphabetical }}
+
+<section class="home-categories" id="home-categories-section">
+  <div class="home-categories__head">
+    <h2 class="home-categories__heading">Browse by Category</h2>
+    <p class="home-categories__subheading">Explore Scouting merit badges by field of interest.</p>
+  </div>
+
+  <div class="category-tile-grid">
+    {{ range $terms }}
+      {{ $termSlug := path.Base (strings.TrimSuffix "/" .Page.RelPermalink) }}
+      {{ $iconName := "trophy" }}
+      {{ if $iconData }}
+        {{ range $catKey, $catIcon := $iconData.categories }}
+          {{ if eq (urlize $catKey) $termSlug }}{{ $iconName = $catIcon }}{{ end }}
+        {{ end }}
+      {{ end }}
+
+      <a href="{{ .Page.RelPermalink }}" class="category-tile card-surface card-surface--lift">
+        <div class="category-tile__icon-ring">
+          <div class="category-tile__icon-box">
+            {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "category-tile__icon") }}
+          </div>
+        </div>
+        <div class="category-tile__info">
+          <span class="category-tile__name">{{ .Page.Title }}</span>
+          <span class="category-tile__count">{{ .Count }} badges</span>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</section>

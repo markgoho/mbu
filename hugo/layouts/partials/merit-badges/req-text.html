@@ -1,0 +1,41 @@
+{{/* merit-badges/req-text.html
+
+  Renders a requirement's verbatim text -- markdownify runs on it either
+  way, never synthesized wording -- either as a stylized "pill" or as
+  normal prose.
+
+  A pill applies when the requirement has a subrequirement_mode (type
+  "all" or "select") AND its own text is at most 80 characters: that's
+  the short imperative stem ("Do ONE of the following:", "Do the
+  following:") rather than a genuine paragraph. Longer mode-bearing text
+  (e.g. forestry req 1's 199-character field-notebook paragraph) renders
+  as normal prose -- cramming a paragraph into a pill would be worse than
+  the plain text. "select" gets the more prominent accent treatment
+  because the scout must make a choice there; "all" gets a quieter
+  informational treatment.
+
+  Params (dict):
+  text  - requirement text (raw markdown string), rendered verbatim
+  mode  - subrequirement_mode dict, or nil
+  class - base class for the text element (e.g. "req-card__text"),
+  kept on both the pill and the plain-prose paths so shared
+  rules (max-width, line-height, ...) keep applying
+  title - (optional) the card's resolved title. When the text opens with
+  this same label (BSA writes many requirements as "Label. Do the
+  following:"), that label is stripped before rendering -- the
+  title is already shown directly above, so repeating it would
+  just echo it back verbatim.
+*/}}
+{{ $text := .text }}
+{{ $class := .class }}
+{{ $title := .title }}
+
+{{ if $title }}
+  {{ $prefix := printf "%s." (lower $title) }}
+  {{ if strings.HasPrefix (lower $text) $prefix }}
+    {{ $text = strings.TrimSpace (substr $text (len $prefix)) }}
+  {{ end }}
+{{ end }}
+
+<p class="{{ $class }}">{{ $text | markdownify }}</p>
+

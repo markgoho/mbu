@@ -1,0 +1,95 @@
+{{/* merit-badges/req-guide-lookup.html
+
+  Resolves the DRG guide page (if any) for a requirement node, along with
+  the eyebrow (group_title) and stripped title to render on a card.
+
+  Resolution order, first hit wins:
+  1. req + path with dots removed (3.a -> req3a) -- covers 85%
+  2. req + path with dots as hyphens (6.beef-cattle -> req6-beef-cattle)
+  -- covers the named-option nodes whose ids are slugified
+  3. scan the guide section for a page whose req_number frontmatter
+  equals the path with dots removed, OR starts with it on a clean
+  boundary (the next character isn't a digit). The equals case is an
+  ordinary exact match; the prefix case catches a MERGED page whose
+  req_number covers this requirement's first subrequirement -- e.g.
+  forestry has no req3.md, but req3ab.md has req_number: "3a", which
+  covers requirement 3's subrequirements. The boundary check keeps path
+  "1" from matching req_number "10" or "11": the character right after
+  the "1" prefix is a digit, so those are rejected.
+  4. if nothing resolves directly but this node has children, fall back
+  to the first child's group_title for the eyebrow only -- never a
+  title, since we'd be fabricating one for a node with no page
+
+  A TITLE NEVER TRAVELS UPWARD. Rules 3-prefix and 4 both yield a page
+  and/or an eyebrow but no title, because the page they found describes a
+  DESCENDANT, not this node. Letting a parent borrow it produced visible
+  double-titling: wildland-fire-management requirement 4 has no req4.md,
+  so it matched req4a.md and rendered "Wildfire Causes & Prevention" --
+  and then child 4.a resolved that same page and rendered the identical
+  heading one level down. A node with no page of its own simply goes
+  untitled and leans on its verbatim text, which is what it actually
+  says. This is the common case (168 nodes across the badge set), so the
+  page must read well without a title.
+
+  Params (dict):
+  guide    - the guide section Page, or nil if this badge has no DRG guide
+  path     - the requirement's path, e.g. "3.a" or "6.beef-cattle"
+  children - (optional) the requirement's subrequirements slice, used
+  only for the rule-4 fallback
+
+  Returns a dict:
+  page    - the matched guide Page, or "" (falsy). Set by rules 1-3, so
+  a parent covered by a merged descendant page still links to
+  it; never inherited from the rule-4 child fallback.
+  eyebrow - group_title string, or "".
+  title   - title string with its "Req N -- " / "Requirement N -- "
+  prefix stripped, or "" unless this exact node has its own page.
+*/}}
+{{ $guide := .guide }}
+{{ $path := .path }}
+{{ $children := .children }}
+
+{{ $page := "" }}
+{{ $eyebrow := "" }}
+{{ $title := "" }}
+
+{{ if $guide }}
+  {{ $dotsRemoved := replace $path "." "" }}
+  {{ $hyphenated := replace $path "." "-" }}
+
+  {{/* coversThisNode: does the page describe this exact requirement, or
+    only a descendant of it? Only the former may supply a title.
+  */}}
+  {{ $coversThisNode := true }}
+  {{ $found := $guide.GetPage (printf "req%s" $dotsRemoved) }}
+  {{ if not $found }}
+    {{ $found = $guide.GetPage (printf "req%s" $hyphenated) }}
+  {{ end }}
+  {{ if not $found }}
+    {{ range $guide.RegularPages }}
+      {{ $reqNumber := .Params.req_number }}
+      {{ if and (not $found) $reqNumber (strings.HasPrefix $reqNumber $dotsRemoved) }}
+        {{ $boundary := substr $reqNumber (len $dotsRemoved) 1 }}
+        {{ if not (findRE "[0-9]" $boundary) }}
+          {{ $found = . }}
+          {{ $coversThisNode = eq $reqNumber $dotsRemoved }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $found }}
+    {{ $page = $found }}
+    {{ $eyebrow = $found.Params.group_title | default "" }}
+    {{ if $coversThisNode }}
+      {{ $rawTitle := $found.Params.title | default "" }}
+      {{ $title = replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $rawTitle }}
+    {{ end }}
+  {{ else if $children }}
+    {{ $first := index $children 0 }}
+    {{ $childLookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $first.path "children" $first.subrequirements) }}
+    {{ $eyebrow = $childLookup.eyebrow }}
+  {{ end }}
+{{ end }}
+
+{{ return (dict "page" $page "eyebrow" $eyebrow "title" $title) }}

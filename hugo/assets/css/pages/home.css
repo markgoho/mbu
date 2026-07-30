@@ -1,0 +1,672 @@
+/*
+ * Homepage — v2 redesign.
+ *
+ * Opts into v2 via {{ define "html-class" }}theme-v2{{ end }} and goes
+ * full-bleed via {{ define "main-class" }}home-main{{ end }} in
+ * layouts/index.html, mirroring the .req-page-main pattern in
+ * pages/merit-badge-requirements.css. Each section below re-applies its
+ * own measure since the shell itself goes edge to edge.
+ */
+
+.home-main {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+}
+
+/* Shared section measure: full-bleed background, capped/padded content. */
+.home-steps,
+.home-categories,
+.home-eagle,
+.home-search-band__inner {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: clamp(var(--space-xs), 4vw, var(--space-m));
+}
+
+/* ------------------------------------------------------------------ */
+/* Search — shared .home-search bar styling, used by home/search.html   */
+/* ------------------------------------------------------------------ */
+
+.home-hero {
+  position: relative;
+  overflow: clip;
+}
+
+.home-search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  max-width: 34rem;
+  margin-block: var(--space-m);
+  background: var(--surface-raised);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-full);
+  padding: var(--space-3xs);
+  padding-inline-start: var(--space-s);
+  box-shadow: var(--shadow-card);
+}
+
+.home-search__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: var(--on-surface-muted);
+}
+
+.home-search__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  color: var(--on-surface);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--on-surface-muted);
+  }
+}
+
+.home-search__submit {
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+}
+
+/* ------------------------------------------------------------------ */
+/* Search band — below the fold, moved out of the hero                  */
+/* ------------------------------------------------------------------ */
+
+.home-search-band {
+  padding-block: var(--space-l);
+  border-block-end: 1px solid var(--outline-variant);
+}
+
+.home-search-band__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.home-search-band__heading {
+  margin: 0;
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--on-surface);
+}
+
+.home-search-band__form {
+  flex: 1;
+  min-width: 18rem;
+  margin-block: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Steps (timeline)                                                     */
+/* ------------------------------------------------------------------ */
+
+.home-steps {
+  padding-block: var(--space-l);
+  max-width: 60rem;
+}
+
+.home-steps__heading,
+.home-categories__heading {
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-steps__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin-block-end: var(--space-3xs);
+}
+
+.home-steps__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.dark .home-steps__icon {
+  color: var(--amber);
+}
+
+.home-steps__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--on-surface);
+}
+
+.home-steps__text {
+  margin: 0;
+  max-width: 60ch;
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Categories — simple grid of tiles, each a plain link to its category. */
+/* ------------------------------------------------------------------ */
+
+.home-categories {
+  padding-block: var(--space-xl);
+}
+
+.home-categories__head {
+  margin-bottom: var(--space-l);
+  max-width: 48ch;
+}
+
+.home-categories__heading {
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-categories__subheading {
+  margin: var(--space-2xs) 0 0;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--on-surface-muted);
+}
+
+.category-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: var(--space-s);
+}
+
+.category-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  min-height: 8rem;
+  padding: var(--space-s);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--outline-variant);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.category-tile:hover,
+.category-tile:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.category-tile:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.dark .category-tile:hover,
+.dark .category-tile:focus-visible {
+  border-color: var(--amber, #ffb800);
+}
+
+.dark .category-tile:focus-visible {
+  outline-color: var(--amber, #ffb800);
+}
+
+/* Icon glow-ring — same conic-gradient ring trick as
+   .badge-identity__glow-ring-wrap (merit-badge-requirements.css), scaled
+   down for a grid tile. Neutral (no accent) at rest since 14 glowing
+   rings at once would be overwhelming; the ring only lights up with the
+   accent/amber gradient on hover or focus, matching the same
+   only-color-on-interaction restraint used for the icon itself. */
+.category-tile__icon-ring {
+  padding: 3px;
+  border-radius: 50%;
+  background: var(--outline-variant);
+  flex-shrink: 0;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-tile:hover .category-tile__icon-ring,
+.category-tile:focus-visible .category-tile__icon-ring {
+  background: conic-gradient(from 180deg, var(--accent), var(--accent-container), var(--accent));
+  box-shadow: 0 4px 14px var(--shadow-card);
+}
+
+.dark .category-tile:hover .category-tile__icon-ring,
+.dark .category-tile:focus-visible .category-tile__icon-ring {
+  background: conic-gradient(from 180deg, var(--amber, #ffb800), var(--amber-glow), var(--amber, #ffb800));
+  box-shadow: 0 0 18px var(--amber-glow, rgba(255, 184, 0, 0.3));
+}
+
+.category-tile__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  color: var(--on-surface-muted);
+  transition: color 0.2s ease;
+}
+
+.category-tile:hover .category-tile__icon-box,
+.category-tile:focus-visible .category-tile__icon-box {
+  color: var(--accent);
+}
+
+.dark .category-tile:hover .category-tile__icon-box,
+.dark .category-tile:focus-visible .category-tile__icon-box {
+  color: var(--amber, #ffb800);
+}
+
+.category-tile__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.category-tile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.category-tile__name {
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--on-surface);
+}
+
+.category-tile__count {
+  font-size: var(--step--2);
+  color: var(--on-surface-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Eagle strip                                                          */
+/* ------------------------------------------------------------------ */
+
+.home-eagle {
+  padding-block: var(--space-l) var(--space-2xl);
+}
+
+.home-eagle__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-eagle__heading-icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--accent);
+}
+
+.dark .home-eagle__heading-icon {
+  color: var(--amber);
+}
+
+.home-eagle__grid {
+  margin-block-end: var(--space-m);
+}
+
+.home-eagle__link {
+  display: inline-flex;
+}
+
+/* ================================================================
+   Cinematic hero — full-bleed background image + featured-badge
+   carousel (Camping / Competitive Gaming / Wildland Fire Management).
+   ================================================================ */
+
+.hero-d {
+  position: relative;
+  overflow: clip;
+  color: var(--tan-000, #faf9f6);
+}
+
+/* Full-bleed background image + dark gradient overlay */
+.hero-d__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-d__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) saturate(0.7);
+}
+
+.hero-d__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    oklch(0.14 0.023 153.3 / 0.92) 0%,
+    oklch(0.18 0.028 153.3 / 0.88) 50%,
+    oklch(0.14 0.023 153.3 / 0.94) 100%
+  );
+}
+
+/* Ambient accent glow — top-right */
+.hero-d::after {
+  content: "";
+  position: absolute;
+  top: -8rem;
+  right: -8rem;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--accent-container) 18%, transparent),
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-d__inner {
+  position: relative;
+  z-index: 1;
+  margin-inline: auto;
+  padding: var(--space-2xl) clamp(var(--space-m), 4vw, var(--space-2xl)) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-xl);
+  /* Center, not stretch/start: the text column's natural height rarely
+     matches the image's (which itself swings a lot with viewport width,
+     since it's aspect-ratio driven). Centering distributes whatever gap
+     remains evenly above/below, so there's never a single lopsided void
+     at some particular width — see .hero-d__content below. */
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-d__inner {
+    grid-template-columns: 1fr;
+  }
+  .hero-d__image-col {
+    order: -1;
+  }
+}
+
+.hero-d__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.hero-d__content-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+/* Quiet stat strip, directly under the CTA — real numbers instead of
+   decorative filler. */
+.hero-d__stats {
+  display: flex;
+  gap: var(--space-l);
+  padding-top: var(--space-m);
+  border-top: 1px solid oklch(0.853 0.0244 86.09 / 0.15);
+}
+
+.hero-d__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.hero-d__stat-number {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 800;
+  color: var(--tan-000, #faf9f6);
+}
+
+.hero-d__stat-label {
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: oklch(0.75 0.01 86.03);
+}
+
+.hero-d__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-5);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--tan-000, #faf9f6);
+}
+
+.hero-d__title em {
+  font-style: italic;
+  color: var(--amber, #ffb800);
+}
+
+.hero-d__lead {
+  display: none;
+  max-width: 50ch;
+  font-size: var(--step-0);
+  color: oklch(0.82 0.01 86.03);
+  line-height: 1.6;
+}
+
+.hero-d__badge-name {
+  color: var(--amber, #ffb800);
+  font-weight: 600;
+}
+
+/* View Requirements — the hero's one CTA, under the featured-badge text */
+.hero-d__view-cta {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  font-size: var(--step-0);
+  padding-block: var(--space-xs);
+  background: var(--amber, #ffb800);
+  color: #1a1400;
+  border-color: var(--amber, #ffb800);
+
+  &:hover,
+  &:focus-visible {
+    background: #ffc83b;
+    color: #1a1400;
+    border-color: #ffc83b;
+  }
+}
+
+.hero-d__cta-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* Carousel arrows — centered in their own row below the full grid */
+.hero-d__carousel-row {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-d__carousel-nav {
+  display: none;
+  gap: var(--space-m);
+}
+
+.hero-d__carousel-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-full);
+  border: 1px solid oklch(0.853 0.0244 86.09 / 0.2);
+  background: oklch(0.98 0.003 86.03 / 0.06);
+  color: oklch(0.85 0.01 86.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.hero-d__carousel-btn:hover {
+  background: oklch(0.98 0.003 86.03 / 0.15);
+  color: var(--tan-000, #faf9f6);
+  border-color: oklch(0.853 0.0244 86.09 / 0.4);
+}
+
+.hero-d__arrow-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.hero-d__arrow-icon--flip {
+  transform: scaleX(-1);
+}
+
+/* Image — elevated card, glowing against the dark bg. Three per-badge
+   images are absolutely stacked in the same box. */
+.hero-d__image-col {
+  position: relative;
+}
+
+.hero-d__image-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  box-shadow:
+    0 8px 40px oklch(0.165 0.023 153.3 / 0.5),
+    0 0 0 1px oklch(0.853 0.0244 86.09 / 0.1);
+}
+
+.hero-d__image {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bottom scrim so the badge caption stays legible over any photo */
+.hero-d__image-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    oklch(0.12 0.02 153.3 / 0.7) 0%,
+    oklch(0.12 0.02 153.3 / 0.3) 35%,
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Featured-badge caption — overlaid at the bottom of the image         */
+/* ------------------------------------------------------------------ */
+
+.hero-d__badge-tags {
+  position: absolute;
+  z-index: 2;
+  inset-inline: 0;
+  bottom: 0;
+  padding: var(--space-xs) var(--space-m) var(--space-xs);
+  /* Slightly opaque backing (not just the gradient scrim) so caption
+     text stays legible over any photo — kept light to not block the
+     image, but present for contrast. */
+  background: oklch(0.12 0.02 153.3 / 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.hero-d__badge-tag {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+
+.hero-d__badge-tag-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+
+.hero-d__badge-tag-icon {
+  width: 1.1em;
+  height: 1.1em;
+  color: var(--amber, #ffb800);
+}
+
+.hero-d__badge-tag-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--amber, #ffb800);
+}
+
+.hero-d__badge-tag-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--tan-000, #faf9f6);
+  text-shadow: 0 2px 12px oklch(0.1 0.02 153.3 / 0.6);
+}
+
+/* ------------------------------------------------------------------ */
+/* Carousel — radio inputs + sibling selectors, no JS.                  */
+/* The checked radio's slug drives which [data-slide] elements show.    */
+/* ------------------------------------------------------------------ */
+
+/* The radios are direct children of .hero-d__inner (a grid container),
+   but .visually-hidden makes them position: absolute, which excludes
+   them from grid auto-placement — no extra grid cell is consumed. */
+
+#hero-badge-camping:checked ~ .hero-d__content [data-slide="camping"],
+#hero-badge-competitive-gaming:checked ~ .hero-d__content [data-slide="competitive-gaming"],
+#hero-badge-wildland-fire-management:checked ~ .hero-d__content [data-slide="wildland-fire-management"],
+#hero-badge-camping:checked ~ .hero-d__image-col .hero-d__image[data-slide="camping"],
+#hero-badge-competitive-gaming:checked ~ .hero-d__image-col .hero-d__image[data-slide="competitive-gaming"],
+#hero-badge-wildland-fire-management:checked ~ .hero-d__image-col .hero-d__image[data-slide="wildland-fire-management"] {
+  display: block;
+}
+
+#hero-badge-camping:checked ~ .hero-d__image-col .hero-d__badge-tag[data-slide="camping"],
+#hero-badge-competitive-gaming:checked ~ .hero-d__image-col .hero-d__badge-tag[data-slide="competitive-gaming"],
+#hero-badge-wildland-fire-management:checked ~ .hero-d__image-col .hero-d__badge-tag[data-slide="wildland-fire-management"],
+#hero-badge-camping:checked ~ .hero-d__carousel-row .hero-d__carousel-nav[data-slide="camping"],
+#hero-badge-competitive-gaming:checked ~ .hero-d__carousel-row .hero-d__carousel-nav[data-slide="competitive-gaming"],
+#hero-badge-wildland-fire-management:checked ~ .hero-d__carousel-row .hero-d__carousel-nav[data-slide="wildland-fire-management"] {
+  display: flex;
+}
+
+#hero-badge-camping:checked ~ .hero-d__content .hero-d__view-cta[data-slide="camping"],
+#hero-badge-competitive-gaming:checked ~ .hero-d__content .hero-d__view-cta[data-slide="competitive-gaming"],
+#hero-badge-wildland-fire-management:checked ~ .hero-d__content .hero-d__view-cta[data-slide="wildland-fire-management"] {
+  display: inline-flex;
+}

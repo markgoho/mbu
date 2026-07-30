@@ -1,0 +1,275 @@
+{{/* merit-badges/badge-landing.html
+
+  Single-badge overview page (/merit-badges/<slug>/). Reuses the
+  requirements page's sidebar shell (req-page / req-sidebar-wrap /
+  req-main), with "Overview" as the active nav item and the sidebar's
+  own H1 demoted to a <p> -- the H1 for this page lives in the hero
+  below. All content is data-driven: intro copy is the requirements
+  page's front-matter description, "What you'll do" previews the badge's
+  own top-level requirements, and the facts card reads data.json. No
+  hand-written prose, no progress UI, no JS.
+*/}}
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main-class" }}req-page-main{{ end }}
+
+{{ define "main" }}
+  {{ $badge := . }}
+  {{ $slug := path.Base .File.Dir }}
+  {{ $json := index hugo.Data "merit-badges" $slug }}
+  {{ $reqPage := .GetPage "requirements" }}
+  {{ $guide := .GetPage "guide" }}
+  {{ $guidePrint := .GetPage "guide/print" }}
+  {{ $emblem := .Resources.GetMatch "*-merit-badge.avif" }}
+  {{ $reqCount := len $json.requirements }}
+
+  {{ $iconData := index hugo.Data "badge-icons" }}
+  {{ $iconName := "" }}
+  {{ if $iconData }}
+    {{ $iconName = index $iconData.badges $slug }}
+  {{ end }}
+  {{ $badgeName := strings.TrimSuffix " Merit Badge" .Title }}
+  {{ $categoryName := $json.category | default "Merit Badge" }}
+  {{ $categorySlug := $categoryName | urlize }}
+  {{ $categoryPage := site.GetPage (printf "categories/%s" $categorySlug) }}
+  {{ $categoryURL := "" }}
+  {{ if $categoryPage }}
+    {{ $categoryURL = $categoryPage.RelPermalink }}
+  {{ else }}
+    {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
+  {{ end }}
+
+  <div class="req-page req-page--landing">
+    <aside class="req-sidebar-wrap">
+      {{ partial "merit-badges/req-sidebar.html" (dict
+        "badge" $badge
+        "json" $json
+        "guide" $guide
+        "active" "overview"
+        "demote_heading" true
+        "variant" "landing"
+      ) }}
+    </aside>
+
+    <div class="req-main">
+      {{ partial "breadcrumb.html" . }}
+      {{ partial "discontinued-notice.html" $json }}
+
+      <section class="badge-hero">
+        {{ with $emblem }}
+          <div class="badge-hero__backdrop" aria-hidden="true">
+            <img src="{{ .RelPermalink }}" alt="" loading="eager" />
+          </div>
+        {{ end }}
+        <div class="badge-hero__glow" aria-hidden="true"></div>
+
+        <div class="badge-hero__grid">
+          <div class="badge-hero__content">
+            <div class="badge-hero__eyebrow-row">
+              <a href="{{ $categoryURL }}" class="badge-hero__eyebrow">
+                {{ if $iconName }}
+                  {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-hero__eyebrow-icon") }}
+                {{ end }}
+                {{ $categoryName }}
+              </a>
+              {{ if $json.eagle_required }}
+                <span class="badge-hero__eagle-chip">
+                  {{ partial "icon.html" (dict "name" "medal" "class" "badge-hero__eagle-icon") }}
+                  Eagle Required
+                </span>
+              {{ end }}
+            </div>
+
+            <h1 class="badge-hero__title">
+              {{ $badgeName }} <em>Merit Badge</em>
+            </h1>
+
+            {{ with $reqPage }}
+              {{ with .Description }}
+                <p class="badge-hero__lead">{{ . }}</p>
+              {{ end }}
+            {{ end }}
+
+            <div class="badge-hero__ctas">
+              {{ with $reqPage }}
+                <a href="{{ .RelPermalink }}" class="button badge-hero__cta">
+                  {{ partial "icon.html" (dict "name" "list-checks" "class" "badge-hero__cta-icon") }}
+                  View Requirements
+                </a>
+              {{ end }}
+            </div>
+          </div>
+
+          {{ with $emblem }}
+            <div class="badge-hero__emblem-col">
+              <img
+                class="badge-hero__emblem"
+                src="{{ .RelPermalink }}"
+                width="1200"
+                height="670"
+                alt="{{ $badge.Title }} emblem"
+                fetchpriority="high"
+                loading="eager" />
+            </div>
+          {{ end }}
+        </div>
+      </section>
+
+      <div class="badge-overview">
+        <div class="badge-preview card-surface">
+          <h2 class="badge-preview__heading">What you'll do</h2>
+          <ul class="badge-preview__list">
+            {{ range $i, $req := first 4 $json.requirements }}
+              {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
+              {{ $title := $lookup.title }}
+              {{ $firstSub := "" }}
+              {{ $subLookup := dict }}
+              {{ if $req.subrequirements }}
+                {{ $firstSub = index $req.subrequirements 0 }}
+                {{ $subLookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $firstSub.path "children" $firstSub.subrequirements) }}
+              {{ end }}
+
+              {{ if not $title }}
+                {{ if $lookup.eyebrow }}
+                  {{ $title = $lookup.eyebrow }}
+                {{ else if $subLookup.title }}
+                  {{ $title = $subLookup.title }}
+                {{ else if $subLookup.eyebrow }}
+                  {{ $title = $subLookup.eyebrow }}
+                {{ else }}
+                  {{ $title = printf "Requirement %s" $req.path }}
+                {{ end }}
+              {{ end }}
+
+              {{ $rawSnippet := $req.text | markdownify | plainify }}
+              {{ $isBoilerplate := findRE `(?i)^(do the following|with the aid of|do (one|two|three|all) of the following|in field trips|if instruction is done)` $rawSnippet 1 }}
+              {{ if and $isBoilerplate $firstSub }}
+                {{ $rawSnippet = $firstSub.text | markdownify | plainify }}
+              {{ end }}
+
+              {{ $snippet := $rawSnippet }}
+              {{ $sentenceMatch := findRE `^[^.!?]*[.!?]` $rawSnippet 1 }}
+              {{ if $sentenceMatch }}
+                {{ $snippet = index $sentenceMatch 0 }}
+              {{ end }}
+
+              <li class="badge-preview__item">
+                {{ with $reqPage }}
+                  <a href="{{ .RelPermalink }}#{{ $req.path }}" class="badge-preview__link">
+                    <span class="badge-preview__node req-card__node" aria-hidden="true"><span class="req-card__node-text">{{ add $i 1 }}</span></span>
+                    <span class="badge-preview__text">
+                      <span class="badge-preview__title">{{ $title }}</span>
+                      <span class="badge-preview__snippet">{{ $snippet | truncate 120 }}</span>
+                    </span>
+                  </a>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+          {{ if and $reqPage (gt $reqCount 4) }}
+            <a href="{{ $reqPage.RelPermalink }}" class="badge-preview__more">
+              +{{ sub $reqCount 4 }} more requirements
+              {{ partial "icon.html" (dict "name" "arrow-right" "class" "badge-preview__more-icon") }}
+            </a>
+          {{ end }}
+        </div>
+
+        <div class="badge-glance card-surface">
+          <h2 class="badge-glance__heading">At a glance</h2>
+          <dl class="badge-glance__list">
+            <div class="badge-glance__row">
+              <dt>{{ partial "icon.html" (dict "name" "list-checks" "class" "badge-glance__icon") }} Requirements</dt>
+              <dd>{{ $reqCount }}</dd>
+            </div>
+            <div class="badge-glance__row">
+              <dt>
+                {{ if $iconName }}
+                  {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-glance__icon") }}
+                {{ end }}
+                Category
+              </dt>
+              <dd>
+                <a href="{{ $categoryURL }}" class="badge-glance__category-link">{{ $categoryName }}</a>
+              </dd>
+            </div>
+            <div class="badge-glance__row">
+              <dt>{{ partial "icon.html" (dict "name" "medal" "class" "badge-glance__icon") }} Eagle Required</dt>
+              <dd>
+                <span class="badge-glance__pill{{ if not $json.eagle_required }} badge-glance__pill--no{{ end }}">
+                  {{ if $json.eagle_required }}Yes{{ else }}No{{ end }}
+                </span>
+              </dd>
+            </div>
+            {{ with $json.last_updated }}
+              <div class="badge-glance__row">
+                <dt>Updated</dt>
+                <dd>{{ time . | dateFormat "January 2, 2006" }}</dd>
+              </div>
+            {{ end }}
+          </dl>
+        </div>
+
+        <div class="badge-resources card-surface">
+          <h2 class="badge-resources__heading">Resources &amp; downloads</h2>
+          <ul class="badge-resources__list">
+            {{ $worksheets := index hugo.Data "worksheets" }}
+            {{ if and $worksheets (in $worksheets.slugs $slug) }}
+              <li>
+                <a
+                  href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="badge-resources__link">
+                  {{ partial "icon.html" (dict "name" "download-simple" "class" "badge-resources__icon") }}
+                  Fillable Worksheet
+                </a>
+              </li>
+            {{ end }}
+            {{ if $json.pamphlet_url }}
+              <li>
+                <a
+                  href="{{ $json.pamphlet_url }}"
+                  target="_blank"
+                  rel="noopener"
+                  class="badge-resources__link">
+                  {{ partial "icon.html" (dict "name" "book-open-text" "class" "badge-resources__icon") }}
+                  Merit Badge Pamphlet
+                </a>
+              </li>
+            {{ end }}
+            {{ with $guidePrint }}
+              <li>
+                <a href="{{ .RelPermalink }}" class="badge-resources__link">
+                  {{ partial "icon.html" (dict "name" "scroll" "class" "badge-resources__icon") }}
+                  Print Complete Guide
+                </a>
+              </li>
+            {{ end }}
+            <li>
+              <a
+                href="{{ $json.url }}"
+                target="_blank"
+                rel="noopener"
+                class="badge-resources__link">
+                {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "badge-resources__icon") }}
+                Scouting.org
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {{ if and $reqPage (not $json.discontinued) }}
+        <a href="{{ $reqPage.RelPermalink }}#1" class="badge-start-cta">
+          Start with Requirement 1
+          {{ partial "icon.html" (dict "name" "arrow-right" "class" "badge-start-cta__icon") }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/merit-badge-landing.html" . }}
+  {{ partial "json-ld/breadcrumb-auto.html" . }}
+{{ end }}

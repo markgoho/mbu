@@ -6,9 +6,16 @@
 {{ else }}
   {{ $img = "/merit-badges/merit-badge-university.jpg" | absURL }}
 {{ end }}
-{{ $description := .Description | default
-  .Summary
-}}
+{{ $description := .Description | default .Summary }}
+{{ if not $description }}
+  {{/* Badge landing pages carry no body copy of their own -- borrow the
+    requirements page's front-matter description rather than shipping an
+    empty <meta name="description">. Inert everywhere else: GetPage
+    returns nil for non-badge pages. */}}
+  {{ with .GetPage "requirements" }}
+    {{ $description = .Description }}
+  {{ end }}
+{{ end }}
 
 {{ $badgeName := .Params.badge_name | default .CurrentSection.Params.badge_name }}
 {{ $fullTitle := .Title }}

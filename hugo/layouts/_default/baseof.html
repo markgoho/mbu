@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="{{ block "html-class" . }}{{ end }}">
   <head>
+    {{ partial "head/theme-init.html" . }}
     {{ partial "head/site.html" . }}
     {{ partial "head/critical-css.html" . }}
 
@@ -14,7 +15,6 @@
     {{- end -}}
 
     {{ partial "head/meta.html" . }}
-
 
     {{ $canonical := .Scratch.Get "canonical_override" | default .Params.canonical_override | default (.Permalink | absURL) }}
     <link rel="canonical" href="{{ $canonical | absURL }}" />
@@ -32,14 +32,11 @@
       {{ end }}
     </header>
 
-    {{ partial "breadcrumb.html" . }}
-
     <main class="main container {{ block "main-class" . }}{{ end }}">
       {{ block "main" . }}
       {{ end }}
     </main>
 
-    {{ partial "breadcrumb.html" . }}
 
     <footer class="footer">
       {{ block "footer" . }}

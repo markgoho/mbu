@@ -9,16 +9,33 @@
       </li>
     {{ end }}
   </ul>
+  <label
+    class="button button-secondary button-icon navbar__theme-toggle"
+    aria-label="Toggle dark and light theme">
+    <input
+      type="checkbox"
+      id="theme-toggle-checkbox"
+      class="visually-hidden"
+      data-theme-toggle />
+    <span class="navbar__theme-toggle-icon navbar__theme-toggle-icon--sun">
+      {{ partial "icon.html" (dict "name" "sun" "size" "1.25rem") }}
+    </span>
+    <span class="navbar__theme-toggle-icon navbar__theme-toggle-icon--moon">
+      {{ partial "icon.html" (dict "name" "moon" "size" "1.25rem") }}
+    </span>
+    <span class="visually-hidden">Toggle theme</span>
+  </label>
   <a
     href="/search/"
-    class="navbar__search button button-secondary"
+    class="button button-secondary navbar__search"
     aria-label="Search requirements">
     <span class="navbar__search-icon">
-      {{ partial "icons/search.html" . }}
+      {{ partial "icon.html" (dict "name" "search" "size" "1.25rem") }}
     </span>
     <span class="navbar__search-text">Search</span>
   </a>
-  <a href="/merit-badges/" class="navbar__cta button navbar__button"
-    >Browse Badges</a
-  >
+  <a href="/merit-badges/" class="button navbar__cta">Browse Badges</a>
 </nav>
+
+{{ $themeToggleTS := resources.Get "ts/theme-toggle.ts" | js.Build (dict "minify" true) }}
+<script>{{ $themeToggleTS.Content | safeJS }}</script>

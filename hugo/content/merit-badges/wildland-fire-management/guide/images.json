@@ -1,0 +1,34 @@
+{
+  "badge": "wildland-fire-management",
+  "style_context": "Wildland fire management, forest ecology, prescribed fire, firefighter safety protocols, and wildland suppression tactics",
+  "images": [
+    {
+      "id": "prescribed-vs-unmanaged-forest-comparison",
+      "file": "_index.md",
+      "style": "comparison",
+      "description": "Split-frame comparison. Left side shows an unmanaged forest dense with accumulated leaf litter, dead branches, and thick underbrush forming ladder fuels up into tree canopies. Right side shows a healthy forest treated with prescribed fire, featuring clear ground, thinned understory, spaced trees, and open canopy allowing sunlight.",
+      "value": "Side-by-side visual comparison of dense unmanaged forest with hazardous ladder fuel buildup versus open canopy forest restored by prescribed burning — teaches structural fuel differences that text cannot convey"
+    },
+    {
+      "id": "hydrophobic-soil-cross-section",
+      "file": "req2.md",
+      "style": "diagram",
+      "description": "Cross-section diagram of forest soil after an intense wildfire. Top layer shows a dark ash bed above a highlighted waxy water-repellent hydrophobic soil layer. Raindrops on top fail to penetrate, forming arrows showing surface runoff and topsoil erosion down a slope.",
+      "value": "Cross-section diagram contrasting water infiltration in normal porous soil with surface runoff and erosion on severe hydrophobic soil post-wildfire — teaches the physics of soil water repellency"
+    },
+    {
+      "id": "defensible-space-zones",
+      "file": "req4b.md",
+      "style": "diagram",
+      "description": "Clean top-down spatial diagram of a residential house surrounded by three concentric defensible space zones: Zone 0 (0-5 feet, ember-resistant gravel/stone), Zone 1 (5-30 feet, lean green lawns and thinned trees), and Zone 2 (30-100 feet, reduced fuel brush and mowed grass).",
+      "value": "Top-down spatial diagram of Zone 0, Zone 1, and Zone 2 clearances around a residential home — teaches exact vegetation spacing and ember-resistant distance boundaries impossible in text alone"
+    },
+    {
+      "id": "slope-fire-spread-effect",
+      "file": "req5.md",
+      "style": "diagram",
+      "description": "Cross-section diagram showing wildfire burning on a steep hillside. Convection heat currents and thermal radiation angle uphill, preheating dry trees and brush above the advancing flame front, contrasting with flat ground fire spread.",
+      "value": "Cross-section diagram showing rising heat convection and thermal radiation preheating uphill vegetation ahead of flames — teaches why wildfires advance exponentially faster up steep slopes"
+    }
+  ]
+}

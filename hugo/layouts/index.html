@@ -1,26 +1,13 @@
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main-class" }}home-main{{ end }}
+
 {{ define "main" }}
-  <h1>Merit Badge University</h1>
-
-  <section class="intro">
-    <p>
-      Welcome to Merit Badge University! Explore comprehensive resources for
-      Scouting America merit badges. Each badge page includes requirements,
-      helpful resources, and tips for success.
-    </p>
-  </section>
-
-  <section class="merit-badges-list">
-    <h2>Merit Badges</h2>
-    <p><a href="/merit-badges/">Browse all merit badges →</a></p>
-  </section>
-
-  <section class="eagle-cta">
-    <h2>🦅 Eagle Required Merit Badges</h2>
-    <p>
-      The merit badges every Eagle Scout must earn.
-      <a href="/merit-badges/eagle-required/">View Eagle Required Badges →</a>
-    </p>
-  </section>
+  {{ partial "home/hero.html" . }}
+  {{ partial "home/search.html" . }}
+  {{ partial "home/steps.html" . }}
+  {{ partial "home/categories.html" . }}
+  {{ partial "home/eagle.html" . }}
 {{ end }}
 
 {{ define "footer-scripts" }}

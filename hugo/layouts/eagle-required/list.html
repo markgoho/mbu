@@ -1,4 +1,7 @@
+{{ define "html-class" }}theme-v2{{ end }}
+
 {{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
   <header>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
@@ -32,47 +35,7 @@
 
   <section class="badges-grid">
     {{ range $index, $entry := $standaloneBadges }}
-      {{ $page := $entry.page }}
-      {{ $json := $entry.json }}
-      {{ $reqCount := len $json.requirements }}
-      {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
-      {{ if not $badgeImage }}
-        {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
-      {{ end }}
-
-      <article
-        class="badge-card {{ if $badgeImage }}
-          badge-card--with-image
-        {{ end }} eagle">
-        <a href="{{ $page.RelPermalink }}">
-          {{ if $badgeImage }}
-            <div class="badge-card__image">
-              {{ if lt $index 3 }}
-                <img
-                  src="{{ $badgeImage.RelPermalink }}"
-                  alt="{{ $page.Title }} Merit Badge"
-                  width="400"
-                  height="225"
-                  fetchpriority="high" />
-              {{ else }}
-                <img
-                  src="{{ $badgeImage.RelPermalink }}"
-                  alt="{{ $page.Title }} Merit Badge"
-                  width="400"
-                  height="225"
-                  loading="lazy" />
-              {{ end }}
-            </div>
-          {{ end }}
-          <div class="badge-card__content">
-            <h2>
-              {{ $page.Title }}
-              <span class="eagle-badge" title="Eagle Required">🦅</span>
-            </h2>
-            <p class="req-count">{{ $reqCount }} requirements</p>
-          </div>
-        </a>
-      </article>
+      {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" $index) }}
     {{ end }}
   </section>
 
@@ -94,38 +57,7 @@
             {{ if gt $badgeIndex 0 }}
               <div class="eagle-group__separator" aria-hidden="true">OR</div>
             {{ end }}
-            {{ $page := $entry.page }}
-            {{ $json := $entry.json }}
-            {{ $reqCount := len $json.requirements }}
-            {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
-            {{ if not $badgeImage }}
-              {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
-            {{ end }}
-
-            <article
-              class="badge-card {{ if $badgeImage }}
-                badge-card--with-image
-              {{ end }} eagle">
-              <a href="{{ $page.RelPermalink }}">
-                {{ if $badgeImage }}
-                  <div class="badge-card__image">
-                    <img
-                      src="{{ $badgeImage.RelPermalink }}"
-                      alt="{{ $page.Title }} Merit Badge"
-                      width="400"
-                      height="225"
-                      loading="lazy" />
-                  </div>
-                {{ end }}
-                <div class="badge-card__content">
-                  <h2>
-                    {{ $page.Title }}
-                    <span class="eagle-badge" title="Eagle Required">🦅</span>
-                  </h2>
-                  <p class="req-count">{{ $reqCount }} requirements</p>
-                </div>
-              </a>
-            </article>
+            {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" $badgeIndex) }}
           {{ end }}
         </div>
       </section>

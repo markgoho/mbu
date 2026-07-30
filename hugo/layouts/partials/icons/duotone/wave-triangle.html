@@ -1,0 +1,19 @@
+{{- /* Phosphor "wave-triangle" icon (duotone weight). Rendered via partial "icon.html"; do not call directly. */ -}}
+{{- $class := .class -}}
+{{- $size := .size -}}
+{{- $title := .title -}}
+<svg
+  viewBox="0 0 256 256"
+  fill="currentColor"
+  class="{{ $class }}"
+  {{ with $size }}width="{{ . }}" height="{{ . }}"{{ end }}
+  {{ if $title }}
+    role="img"
+  {{ else }}
+    aria-hidden="true"
+  {{ end }}>
+  {{ with $title }}<title>{{ . }}</title>{{ end }}
+  <path class="icon__fill" d="M76,56l52,72H24Zm156,72H128l52,72Z" />
+  <path
+    d="M238.48,132.68l-52,72a8,8,0,0,1-13,0L76,69.66l-45.51,63a8,8,0,1,1-13-9.36l52-72a8,8,0,0,1,13,0l97.51,135,45.51-63a8,8,0,1,1,13,9.36Z" />
+</svg>

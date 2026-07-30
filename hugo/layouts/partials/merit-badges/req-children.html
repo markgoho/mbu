@@ -1,0 +1,107 @@
+{{/* merit-badges/req-children.html
+
+  Dispatches a requirement's subrequirements to one of three renderings.
+  Precedence top to bottom, first match wins:
+
+  1. mode.type == "select"                    -> options
+  2. every child is a leaf AND avg text < 60  -> chips
+  3. otherwise                                -> rail
+
+  The governing rule is that CARD CHROME ONLY EXISTS AT DEPTH 1. The
+  depth-1 panel drawn by req-card.html is the only box; everything below
+  it is drawn with a left rail, a hanging marker and type weight. The
+  previous design gave nearly every level its own border, so a group like
+  wildland-fire-management 7 stacked three concentric boxes and the page
+  read as nothing but frames. Because a rail costs nothing to nest, this
+  recurses to any depth without a special case -- which is also why there
+  is no longer a depth-based handoff to a separate deep-list partial.
+
+  "chips" is for groups of short leaf labels ("Soil and water", "Fuel
+  reduction"). They wrap as inline pills rather than filling a fixed
+  grid, so a 5-item group can't strand a hole in a 4-up last row, and a
+  two-word label doesn't get a full card's padding.
+
+  "options" is a genuine choice ("Do ONE of the following"). It gets the
+  one affordance everyone already reads as "exactly one of these": a
+  radio-style ring per option, with hairline separators. Deliberately NOT
+  a shared left rail -- a rail down the group says "these belong
+  together", which is the opposite of what a choice set means.
+
+  Child titles are all-or-nothing PER GROUP: measured coverage shows
+  title resolution is almost always uniform within a group of siblings
+  (38% of groups: all resolve; 60%: none do; only 2% are mixed). A group
+  with some titled and some untitled items reads as broken/missing data,
+  so titles are resolved once for the whole group here and suppressed for
+  everyone unless every child resolves one.
+
+  A resolved title is also dropped when it merely echoes the child's own
+  verbatim text -- wildland-fire-management 7(a)'s six options each had a
+  guide page titled "Direct Attack" sitting directly above the text
+  "Direct attack". Comparison is on letters and digits only, so case and
+  punctuation don't defeat it.
+
+  Params (dict):
+  req            - the parent requirement (its .subrequirements are rendered)
+  badge_name
+  hide_resources
+  guide
+*/}}
+{{ $req := .req }}
+{{ $children := $req.subrequirements }}
+
+{{ if $children }}
+  {{ $badgeName := .badge_name }}
+  {{ $hideResources := .hide_resources | default false }}
+  {{ $guide := .guide }}
+  {{ $mode := $req.subrequirement_mode }}
+
+  {{ $anyChildHasChildren := false }}
+  {{ $totalLen := 0 }}
+  {{ range $children }}
+    {{ if .subrequirements }}
+      {{ $anyChildHasChildren = true }}
+    {{ end }}
+    {{ $totalLen = add $totalLen (len .text) }}
+  {{ end }}
+  {{ $avgLen := div (mul $totalLen 1.0) (len $children) }}
+
+  {{ $variant := "rail" }}
+  {{ if and $mode (eq $mode.type "select") }}
+    {{ $variant = "options" }}
+  {{ else if and (not $anyChildHasChildren) (lt $avgLen 60.0) }}
+    {{ $variant = "chips" }}
+  {{ end }}
+
+  {{/* Resolve every child's guide lookup once here so it can both decide
+    the group-wide "all titles or no titles" rule and be handed to
+    req-child-item.html without a second lookup. Chips never show a
+    title, so they skip the lookup entirely.
+  */}}
+  {{ $lookups := slice }}
+  {{ $allHaveTitles := ne $variant "chips" }}
+  {{ range $children }}
+    {{ $lookup := dict }}
+    {{ if ne $variant "chips" }}
+      {{ $lookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" .path "children" .subrequirements) }}
+      {{ $title := $lookup.title }}
+      {{ if $title }}
+        {{ $normTitle := trim (replaceRE "[^a-z0-9]+" " " (lower $title)) " " }}
+        {{ $normText := trim (replaceRE "[^a-z0-9]+" " " (lower .text)) " " }}
+        {{ if eq $normTitle $normText }}
+          {{ $lookup = merge $lookup (dict "title" "") }}
+        {{ end }}
+      {{ end }}
+      {{ if not $lookup.title }}
+        {{ $allHaveTitles = false }}
+      {{ end }}
+    {{ end }}
+    {{ $lookups = $lookups | append $lookup }}
+  {{ end }}
+
+
+  <ol class="req-children req-children--{{ $variant }}">
+    {{ range $i, $child := $children }}
+      {{ partial "merit-badges/req-child-item.html" (dict "req" $child "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "variant" $variant "lookup" (index $lookups $i) "show_title" $allHaveTitles) }}
+    {{ end }}
+  </ol>
+{{ end }}

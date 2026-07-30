@@ -1,4 +1,5 @@
 {{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
   <div class="content-wrapper list-container">
     <ul>
       {{ range .Pages.ByTitle }}

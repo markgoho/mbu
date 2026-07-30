@@ -1,0 +1,230 @@
+/*
+ * Semantic token layer for the v2 design system.
+ *
+ * Rules for consumers:
+ *  - Components must NEVER reference raw ramps (colors.css `--v2-*`,
+ *    `--brown-*`, `--olive-*`, etc). Only the semantic names below.
+ *  - `:root` holds the v1 (today's look) defaults so existing pages are
+ *    completely unaffected until a layout opts into `.theme-v2`.
+ *  - `.theme-v2` holds the v2 LIGHT theme.
+ *  - `.theme-v2.dark` / `.dark .theme-v2` holds the v2 DARK theme (the
+ *    `.dark` class is set on `<html>` by `theme-init.html` before first
+ *    paint, and toggled at runtime by `theme-toggle.ts`).
+ */
+
+/* ------------------------------------------------------------------ */
+/* v1 (default) — mapped to today's existing look, nothing regresses  */
+/* ------------------------------------------------------------------ */
+:root {
+  --surface: var(--tan-100);
+  --surface-raised: var(--tan-000);
+  --surface-sunken: var(--tan-200);
+  --surface-inverse: var(--olive-600);
+
+  --on-surface: var(--olive-500);
+  --on-surface-muted: var(--tan-600);
+  --on-surface-inverse: var(--tan-000);
+
+  --accent: var(--olive-500);
+  --accent-container: var(--olive-300);
+  --on-accent: var(--tan-000);
+  --on-accent-container: var(--olive-600);
+
+  --secondary: var(--teal-500);
+  --secondary-container: var(--teal-300);
+  --on-secondary-container: var(--teal-600);
+
+  --outline: var(--tan-400);
+  --outline-variant: var(--tan-300);
+
+  --error: var(--v2-error);
+  --error-container: var(--v2-error-container);
+  --on-error-container: var(--v2-on-error-container);
+
+  --font-display: "Literata", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --radius-sm: var(--border-radius-sm);
+  --radius-md: var(--border-radius-md);
+  --radius-lg: var(--border-radius-lg);
+  --radius-xl: 1rem;
+  --radius-full: var(--border-radius-pill);
+
+  --shadow-card: 0 0 10px var(--olive-100);
+  --shadow-raised: 0 0 15px var(--olive-200);
+}
+
+/* ------------------------------------------------------------------ */
+/* v2 light                                                            */
+/* ------------------------------------------------------------------ */
+.theme-v2 {
+  --surface: var(--v2-surface);
+  --surface-raised: var(--v2-surface-container-lowest);
+  --surface-sunken: var(--v2-surface-container);
+  --surface-inverse: var(--v2-inverse-surface);
+
+  --on-surface: var(--v2-on-surface);
+  --on-surface-muted: var(--v2-on-surface-variant);
+  --on-surface-inverse: var(--v2-inverse-on-surface);
+
+  --accent: var(--v2-primary);
+  --accent-container: var(--v2-primary-container);
+  --on-accent: var(--v2-on-primary);
+  --on-accent-container: var(--v2-on-primary-container);
+
+  --secondary: var(--v2-secondary);
+  --secondary-container: var(--v2-secondary-container);
+  --on-secondary-container: var(--v2-on-secondary-container);
+
+  --outline: var(--v2-outline);
+  --outline-variant: var(--v2-outline-variant);
+
+  --error: var(--v2-error);
+  --error-container: var(--v2-error-container);
+  --on-error-container: var(--v2-on-error-container);
+
+  --amber: var(--v2-amber);
+  --amber-glow: var(--v2-amber-alpha-30);
+
+  /* --font-display / --font-body inherited from :root (global default) */
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1.5rem; /* 24px — card radius from the mock */
+  --radius-full: 9999px;
+
+  --shadow-card: 0 4px 20px var(--olive-500-alpha-05);
+  --shadow-raised: 0 8px 30px var(--olive-500-alpha-08);
+  --card-border-subtle: var(--olive-500-alpha-12);
+
+  --accent-wash: color-mix(in oklab, var(--accent-container) 22%, transparent);
+  --accent-wash-strong: color-mix(in oklab, var(--accent-container) 45%, transparent);
+
+  --color-text-main: var(--on-surface);
+  --link-color: var(--accent);
+}
+
+/* ------------------------------------------------------------------ */
+/* v2 dark                                                             */
+/* `.dark` is applied to <html> (see theme-init.html), so both forms   */
+/* below are supported: <html class="dark"><body class="theme-v2">    */
+/* and <html class="theme-v2 dark">.                                   */
+/* ------------------------------------------------------------------ */
+.theme-v2.dark,
+.dark .theme-v2,
+html.theme-v2:has(#theme-toggle-checkbox:checked) {
+  --surface: var(--v2-dark-surface);
+  --surface-raised: var(--v2-dark-surface-raised);
+  --surface-sunken: var(--v2-dark-surface-sunken);
+  --surface-inverse: var(--v2-dark-inverse-surface);
+
+  --on-surface: var(--v2-dark-on-surface);
+  --on-surface-muted: var(--v2-dark-on-surface-muted);
+  --on-surface-inverse: var(--v2-dark-inverse-on-surface);
+
+  --accent: var(--v2-dark-primary);
+  --accent-container: var(--v2-dark-primary-container);
+  --on-accent: var(--v2-dark-on-primary);
+  --on-accent-container: var(--v2-dark-on-primary-container);
+
+  --secondary: var(--v2-dark-secondary);
+  --secondary-container: var(--v2-dark-secondary-container);
+  --on-secondary-container: var(--v2-dark-on-secondary-container);
+
+  --outline: var(--v2-dark-outline);
+  --outline-variant: var(--v2-dark-outline-variant);
+
+  --error: var(--v2-dark-error);
+  --error-container: var(--v2-dark-error-container);
+  --on-error-container: var(--v2-dark-on-error-container);
+
+  --amber: var(--v2-dark-amber);
+  --amber-glow: var(--v2-dark-amber-alpha-30);
+
+  /* --font-display / --font-body inherited from :root (global default) */
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /*
+   * Shadows read as near-invisible on dark surfaces, so instead of a
+   * blurred drop-shadow we lean on `--surface-raised` (a lighter
+   * elevation tier) plus a hairline border for definition.
+   */
+  --shadow-card: 0 0 0 1px var(--v2-dark-overlay-08);
+  --shadow-raised:
+    0 0 0 1px var(--v2-dark-overlay-12), 0 4px 12px var(--v2-dark-scrim-40);
+  --card-border-subtle: var(--v2-dark-overlay-08);
+
+  /* Cards that want a stronger elevated look than --shadow-raised
+     (e.g. hovered/focused requirement cards) use this pair instead. */
+  --shadow-elevated: 0 6px 24px var(--v2-dark-scrim-35), 0 2px 6px var(--v2-dark-scrim-20);
+  --shadow-elevated-hover: 0 12px 36px var(--v2-dark-scrim-45);
+
+  /* Dark uses the amber accent as the wash base, matching how
+     .badge-identity__glow-ring-wrap already switches to amber in dark. */
+  --accent-wash: color-mix(in oklab, var(--amber) 22%, transparent);
+  --accent-wash-strong: color-mix(in oklab, var(--amber) 45%, transparent);
+
+  --color-text-main: var(--on-surface);
+  --link-color: var(--accent);
+}
+
+/* ------------------------------------------------------------------ */
+/* v2 print — force the light theme regardless of stored dark-mode      */
+/* preference. Same selectors as the dark block above, but declared      */
+/* inside @media print so equal specificity + later source order wins    */
+/* the cascade only when printing. Shadows are unusable on paper, so     */
+/* they're neutralized rather than ported.                               */
+/* ------------------------------------------------------------------ */
+@media print {
+  .theme-v2,
+  .theme-v2.dark,
+  .dark .theme-v2,
+  html.theme-v2:has(#theme-toggle-checkbox:checked) {
+    --surface: var(--v2-surface);
+    --surface-raised: var(--v2-surface-container-lowest);
+    --surface-sunken: var(--v2-surface-container);
+    --surface-inverse: var(--v2-inverse-surface);
+
+    --on-surface: var(--v2-on-surface);
+    --on-surface-muted: var(--v2-on-surface-variant);
+    --on-surface-inverse: var(--v2-inverse-on-surface);
+
+    --accent: var(--v2-primary);
+    --accent-container: var(--v2-primary-container);
+    --on-accent: var(--v2-on-primary);
+    --on-accent-container: var(--v2-on-primary-container);
+
+    --secondary: var(--v2-secondary);
+    --secondary-container: var(--v2-secondary-container);
+    --on-secondary-container: var(--v2-on-secondary-container);
+
+    --outline: var(--v2-outline);
+    --outline-variant: var(--v2-outline-variant);
+
+    --error: var(--v2-error);
+    --error-container: var(--v2-error-container);
+    --on-error-container: var(--v2-on-error-container);
+
+    --amber: var(--v2-amber);
+    --amber-glow: var(--v2-amber-alpha-30);
+
+    --card-border-subtle: var(--olive-500-alpha-12);
+
+    --shadow-card: none;
+    --shadow-raised: none;
+    --shadow-elevated: none;
+    --shadow-elevated-hover: none;
+
+    --accent-wash: transparent;
+    --accent-wash-strong: transparent;
+
+    --color-text-main: var(--on-surface);
+    --link-color: var(--accent);
+  }
+}

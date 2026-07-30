@@ -33,15 +33,7 @@
       class="drg-video__link"
       target="_blank"
       rel="noopener noreferrer">
-      <svg
-        class="drg-video__play-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        width="48"
-        height="48">
-        <path d="M8 5v14l11-7z" />
-      </svg>
+      {{ partial "icon.html" (dict "name" "video-camera" "weight" "duotone" "class" "drg-video__play-icon") }}
       <span class="drg-video__title">{{ .Get "title" }}</span>
     </a>
   {{ end }}
