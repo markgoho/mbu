@@ -4,35 +4,74 @@
   Shared badge card markup for merit-badges/list.html,
   categories/taxonomy.html, eagle-required/list.html and home/eagle.html.
 
+  A band across the top carries the badge's category, with a gold Eagle
+  chip pushed to the end when the badge is Eagle-required. The band, the
+  emblem, and the title mirror .badge-hero's eyebrow row, emblem column,
+  and title on merit-badges/badge-landing.html, and each carries a
+  slug-derived `view-transition-name` so those three parts morph into
+  their hero counterparts on navigation. The names must be unique per
+  document; the slug guarantees that, since no page renders a badge twice.
+
   Params (dict):
   page  - the badge's landing Page
   json  - the badge's data.json (from hugo.Data "merit-badges")
   index - the badge's position within its containing grid (0-based),
-          used only to preserve the LCP-optimized image loading ladder:
-          index < 3 -> fetchpriority="high", 3-5 -> plain, 6+ -> lazy.
-*/ -}}
+  used only to preserve the LCP-optimized image loading ladder:
+  index < 3 -> fetchpriority="high", 3-5 -> plain, 6+ -> lazy.
+  */
+-}}
 {{ $page := .page }}
 {{ $json := .json }}
 {{ $index := .index }}
 
+{{ $slug := path.Base $page.File.Dir }}
 {{ $reqCount := len $json.requirements }}
+{{ $category := $json.category | default "Merit Badge" }}
+{{ $stem := strings.TrimSuffix " Merit Badge" $page.Title }}
+
+{{ $iconData := index hugo.Data "badge-icons" }}
+{{ $iconName := "" }}
+{{ if $iconData }}
+  {{ $iconName = index $iconData.badges $slug }}
+{{ end }}
+
 {{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
 {{ if not $badgeImage }}
   {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
 {{ end }}
+
 
 <article
   class="badge-card card-surface card-surface--lift {{ if $badgeImage }}
     badge-card--with-image
   {{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
   <a href="{{ $page.RelPermalink }}">
+    <p
+      class="badge-card__band"
+      style="view-transition-name: mb-band-{{ $slug }}">
+      <span class="badge-card__category">
+        {{ if $iconName }}
+          {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-card__category-icon") }}
+        {{ end }}
+        <span class="badge-card__category-text">{{ $category }}</span>
+      </span>
+      {{ if $json.eagle_required }}
+        <span class="badge-card__eagle">
+          {{ partial "icon.html" (dict "name" "medal" "class" "badge-card__eagle-icon") }}
+          Eagle required
+        </span>
+      {{ end }}
+    </p>
+
     {{ if $badgeImage }}
-      <div class="badge-card__image">
+      <div
+        class="badge-card__image"
+        style="view-transition-name: mb-emblem-{{ $slug }}">
         {{/* First 3 images get fetchpriority=high for desktop LCP optimization */}}
         {{ if lt $index 3 }}
           <img
             src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ $page.Title }} Merit Badge"
+            alt="{{ $page.Title }}"
             width="400"
             height="225"
             fetchpriority="high" />
@@ -40,28 +79,28 @@
         {{ else if lt $index 6 }}
           <img
             src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ $page.Title }} Merit Badge"
+            alt="{{ $page.Title }}"
             width="400"
             height="225" />
           {{/* Remaining images use lazy loading */}}
         {{ else }}
           <img
             src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ $page.Title }} Merit Badge"
+            alt="{{ $page.Title }}"
             width="400"
             height="225"
             loading="lazy" />
         {{ end }}
       </div>
     {{ end }}
+
+
     <div class="badge-card__content">
-      <h2>
-        {{ $page.Title }}
-        {{ if $json.eagle_required }}
-          <span class="eagle-badge" title="Eagle Required">
-            {{ partial "icon.html" (dict "name" "shield-check" "class" "eagle-badge__icon") }}
-          </span>
-        {{ end }}
+      {{/* Split to match .badge-hero__title, so the morph is a change of
+        scale rather than a change of composition.
+      */}}
+      <h2 style="view-transition-name: mb-title-{{ $slug }}">
+        {{ $stem }} <em>Merit Badge</em>
       </h2>
       <p class="req-count">{{ $reqCount }} requirements</p>
     </div>

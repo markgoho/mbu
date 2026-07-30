@@ -13,6 +13,16 @@
 
 {{ define "main-class" }}req-page-main{{ end }}
 
+{{/* Hold the first paint until the hero has been parsed. Without this the
+  browser can snapshot this page for an incoming view transition before
+  the elements the grid's card is morphing into exist, which reads as a
+  stall followed by a jump. Parsing continues in the background; only
+  painting waits, and only on the hero — not the rest of the page.
+*/}}
+{{ define "head-styles" }}
+  <link rel="expect" href="#badge-hero" blocking="render" />
+{{ end }}
+
 {{ define "main" }}
   {{ $badge := . }}
   {{ $slug := path.Base .File.Dir }}
@@ -39,6 +49,7 @@
     {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
   {{ end }}
 
+
   <div class="req-page req-page--landing">
     <aside class="req-sidebar-wrap">
       {{ partial "merit-badges/req-sidebar.html" (dict
@@ -48,14 +59,16 @@
         "active" "overview"
         "demote_heading" true
         "variant" "landing"
-      ) }}
+        )
+      }}
     </aside>
 
     <div class="req-main">
       {{ partial "breadcrumb.html" . }}
       {{ partial "discontinued-notice.html" $json }}
 
-      <section class="badge-hero">
+
+      <section class="badge-hero" id="badge-hero">
         {{ with $emblem }}
           <div class="badge-hero__backdrop" aria-hidden="true">
             <img src="{{ .RelPermalink }}" alt="" loading="eager" />
@@ -65,7 +78,13 @@
 
         <div class="badge-hero__grid">
           <div class="badge-hero__content">
-            <div class="badge-hero__eyebrow-row">
+            {{/* The three `mb-*` names pair this hero with the badge's card
+              in the grid, so those parts morph rather than cross-fade on
+              navigation. See assets/css/view-transitions.css.
+            */}}
+            <div
+              class="badge-hero__eyebrow-row"
+              style="view-transition-name: mb-band-{{ $slug }}">
               <a href="{{ $categoryURL }}" class="badge-hero__eyebrow">
                 {{ if $iconName }}
                   {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-hero__eyebrow-icon") }}
@@ -80,7 +99,9 @@
               {{ end }}
             </div>
 
-            <h1 class="badge-hero__title">
+            <h1
+              class="badge-hero__title"
+              style="view-transition-name: mb-title-{{ $slug }}">
               {{ $badgeName }} <em>Merit Badge</em>
             </h1>
 
@@ -89,6 +110,7 @@
                 <p class="badge-hero__lead">{{ . }}</p>
               {{ end }}
             {{ end }}
+
 
             <div class="badge-hero__ctas">
               {{ with $reqPage }}
@@ -101,7 +123,9 @@
           </div>
 
           {{ with $emblem }}
-            <div class="badge-hero__emblem-col">
+            <div
+              class="badge-hero__emblem-col"
+              style="view-transition-name: mb-emblem-{{ $slug }}">
               <img
                 class="badge-hero__emblem"
                 src="{{ .RelPermalink }}"
@@ -145,7 +169,8 @@
               {{ $rawSnippet := $req.text | markdownify | plainify | htmlUnescape }}
               {{ $candidate := $req }}
               {{/* Some boilerplate ("Do the following:") nests directly into a subrequirement
-                   that is itself just boilerplate, so walk down a few levels for real content. */}}
+                that is itself just boilerplate, so walk down a few levels for real content.
+              */}}
               {{ range seq 3 }}
                 {{ $trimmedSnippet := strings.TrimSpace $rawSnippet }}
                 {{ $isLabelOnly := and (strings.HasSuffix $trimmedSnippet ":") (le (len (split $trimmedSnippet " ")) 4) }}
@@ -156,10 +181,11 @@
               {{ end }}
 
               {{/* Newer badges echo the section title as the requirement's opening sentence
-                   (e.g. "History of Wildland Fire. Research and discuss…"), and some older
-                   badges open with a bare label ("Maps.", "Safety.") that just paraphrases
-                   the guide's title. Strip that lead-in so the snippet doesn't repeat the
-                   title above it or read as an uninformative one-word fragment. */}}
+                (e.g. "History of Wildland Fire. Research and discuss…"), and some older
+                badges open with a bare label ("Maps.", "Safety.") that just paraphrases
+                the guide's title. Strip that lead-in so the snippet doesn't repeat the
+                title above it or read as an uninformative one-word fragment.
+              */}}
               {{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $rawSnippet 1 }}
               {{ if $leadSentence }}
                 {{ $lead := index $leadSentence 0 }}
@@ -175,7 +201,8 @@
               {{ end }}
 
               {{/* Some scraped text has a stray empty sentence ("Option A—Access. . Visit…")
-                   left over from a source label; drop any leading punctuation-only fragment. */}}
+                left over from a source label; drop any leading punctuation-only fragment.
+              */}}
               {{ $rawSnippet = replaceRE `^\s*[.!?]+\s*` "" $rawSnippet }}
 
               {{ $snippet := $rawSnippet }}
@@ -184,13 +211,24 @@
                 {{ $snippet = index $sentenceMatch 0 }}
               {{ end }}
 
+
               <li class="badge-preview__item">
                 {{ with $reqPage }}
-                  <a href="{{ .RelPermalink }}#{{ $req.path }}" class="badge-preview__link">
-                    <span class="badge-preview__node req-card__node" aria-hidden="true"><span class="req-card__node-text">{{ add $i 1 }}</span></span>
+                  <a
+                    href="{{ .RelPermalink }}#{{ $req.path }}"
+                    class="badge-preview__link">
+                    <span
+                      class="badge-preview__node req-card__node"
+                      aria-hidden="true"
+                      ><span class="req-card__node-text"
+                        >{{ add $i 1 }}</span
+                      ></span
+                    >
                     <span class="badge-preview__text">
                       <span class="badge-preview__title">{{ $title }}</span>
-                      <span class="badge-preview__snippet">{{ $snippet | truncate 120 }}</span>
+                      <span class="badge-preview__snippet"
+                        >{{ $snippet | truncate 120 }}</span
+                      >
                     </span>
                   </a>
                 {{ end }}
@@ -209,7 +247,10 @@
           <h2 class="badge-glance__heading">At a glance</h2>
           <dl class="badge-glance__list">
             <div class="badge-glance__row">
-              <dt>{{ partial "icon.html" (dict "name" "list-checks" "class" "badge-glance__icon") }} Requirements</dt>
+              <dt>
+                {{ partial "icon.html" (dict "name" "list-checks" "class" "badge-glance__icon") }}
+                Requirements
+              </dt>
               <dd>{{ $reqCount }}</dd>
             </div>
             <div class="badge-glance__row">
@@ -220,14 +261,26 @@
                 Category
               </dt>
               <dd>
-                <a href="{{ $categoryURL }}" class="badge-glance__category-link">{{ $categoryName }}</a>
+                <a href="{{ $categoryURL }}" class="badge-glance__category-link"
+                  >{{ $categoryName }}</a
+                >
               </dd>
             </div>
             <div class="badge-glance__row">
-              <dt>{{ partial "icon.html" (dict "name" "medal" "class" "badge-glance__icon") }} Eagle Required</dt>
+              <dt>
+                {{ partial "icon.html" (dict "name" "medal" "class" "badge-glance__icon") }}
+                Eagle Required
+              </dt>
               <dd>
-                <span class="badge-glance__pill{{ if not $json.eagle_required }} badge-glance__pill--no{{ end }}">
-                  {{ if $json.eagle_required }}Yes{{ else }}No{{ end }}
+                <span
+                  class="badge-glance__pill{{ if not $json.eagle_required }}
+                    badge-glance__pill--no
+                  {{ end }}">
+                  {{ if $json.eagle_required }}
+                    Yes
+                  {{ else }}
+                    No
+                  {{ end }}
                 </span>
               </dd>
             </div>
