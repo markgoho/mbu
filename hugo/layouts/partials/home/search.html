@@ -1,0 +1,23 @@
+{{- /*
+  home/search.html — homepage search band.
+
+  Moved out of the hero (hero.html) so the hero's CTA and the site-wide
+  search aren't competing for attention in the same block.
+*/ -}}
+<section class="home-search-band">
+  <div class="home-search-band__inner">
+    <h2 class="home-search-band__heading">Looking for a specific badge?</h2>
+    <form class="home-search home-search-band__form" action="/search/" method="get" role="search">
+      <label class="visually-hidden" for="home-search-input">Search merit badges</label>
+      {{ partial "icon.html" (dict "name" "search" "class" "home-search__icon") }}
+      <input
+        id="home-search-input"
+        class="home-search__input"
+        type="search"
+        name="q"
+        placeholder="Search for merit badges, requirements, or guides&hellip;"
+        autocomplete="off" />
+      <button type="submit" class="button home-search__submit">Search</button>
+    </form>
+  </div>
+</section>

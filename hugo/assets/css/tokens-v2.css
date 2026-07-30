@@ -41,8 +41,8 @@
   --error-container: var(--v2-error-container);
   --on-error-container: var(--v2-on-error-container);
 
-  --font-display: var(--font-family-main);
-  --font-body: var(--font-family-main);
+  --font-display: "Literata", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
 
   --radius-sm: var(--border-radius-sm);
   --radius-md: var(--border-radius-md);
@@ -86,8 +86,7 @@
   --amber: var(--v2-amber);
   --amber-glow: var(--v2-amber-alpha-30);
 
-  --font-display: "Literata", Georgia, serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  /* --font-display / --font-body inherited from :root (global default) */
 
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -143,8 +142,7 @@ html.theme-v2:has(#theme-toggle-checkbox:checked) {
   --amber: var(--v2-dark-amber);
   --amber-glow: var(--v2-dark-amber-alpha-30);
 
-  --font-display: "Literata", Georgia, serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  /* --font-display / --font-body inherited from :root (global default) */
 
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;

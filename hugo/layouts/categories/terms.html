@@ -5,16 +5,8 @@
   <div class="content-wrapper list-container">
     <header>
       <h1>{{ .Title }}</h1>
-      <p>Browse merit badges by category.</p>
     </header>
 
-    <ul>
-      {{ range .Data.Terms.Alphabetical }}
-        <li>
-          <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
-          ({{ .Count }})
-        </li>
-      {{ end }}
-    </ul>
+    {{ partial "home/categories.html" . }}
   </div>
 {{ end }}

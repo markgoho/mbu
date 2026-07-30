@@ -1,13 +1,4 @@
-@font-face {
-  font-family: "Geologica";
-  src: url("/assets/fonts/Geologica-VariableFont_CRSV,SHRP,slnt,wght.woff2")
-    format("woff2");
-  font-weight: 100 900;
-  font-display: swap;
-  font-variation-settings: "slnt" 0;
-}
-
-/* v2 design system typefaces (self-hosted, SIL OFL) */
+/* Site typefaces (self-hosted, SIL OFL) */
 @font-face {
   font-family: "Inter";
   src: url("/assets/fonts/Inter-VariableFont_wght.woff2") format("woff2");
@@ -28,7 +19,6 @@
 /* Typography Design Tokens (already present) */
 :root {
   /* Typography */
-  --font-family-main: "Geologica", sans-serif;
   --font-weight-boldest: 900;
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
@@ -53,7 +43,7 @@
 
 /* Global Typography Styles */
 body {
-  font-family: var(--font-body, var(--font-family-main));
+  font-family: var(--font-body);
   font-size: var(--step-0);
   font-weight: var(--font-weight-light);
   line-height: var(--line-height-relaxed);
@@ -67,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-main);
+  font-family: var(--font-display);
   font-weight: var(--font-weight-boldest);
   line-height: var(--line-height-tight);
   color: var(--color-text-main, #222);
