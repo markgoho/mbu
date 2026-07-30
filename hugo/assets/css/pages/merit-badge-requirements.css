@@ -417,6 +417,10 @@
   outline-offset: 2px;
 }
 
+.dark .req-card:target .req-card__panel {
+  outline-color: var(--amber);
+}
+
 .req-card__header {
   display: flex;
   align-items: flex-start;
@@ -483,9 +487,13 @@
 /* ------------------------------------------------------------------ */
 
 .req-actions {
-  display: flex;
+  display: none;
   gap: var(--space-3xs);
   flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .req-actions__btn {
@@ -532,6 +540,10 @@
   outline: 2px solid var(--accent);
   outline-offset: 4px;
   border-radius: var(--radius-md);
+}
+
+.dark .req-child:target {
+  outline-color: var(--amber);
 }
 
 .req-child__body {
