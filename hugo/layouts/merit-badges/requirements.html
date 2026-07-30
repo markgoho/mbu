@@ -5,7 +5,7 @@
 {{ define "main" }}
   {{/* Access parent page to get badge data */}}
   {{ $badge := .Parent }}
-  {{ $json := index hugo.Data "merit-badges" $badge.File.ContentBaseName }}
+  {{ $json := index hugo.Data "merit-badges" (path.Base $badge.File.Dir) }}
   {{/* Get badge image for Pagefind search results */}}
   {{ $badgeImage := $badge.Resources.GetMatch "*-merit-badge.avif" }}
   {{ if not $badgeImage }}

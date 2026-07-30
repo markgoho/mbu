@@ -27,6 +27,28 @@
       "target": "main-site",
       "public": "hugo/public",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "redirects": [
+        {
+          "source": "/worksheets/:slug-worksheet.pdf",
+          "destination": "/merit-badges/:slug/:slug-merit-badge-worksheet.pdf",
+          "type": 301
+        },
+        {
+          "source": "/worksheets/:slug.pdf",
+          "destination": "/merit-badges/:slug/:slug-merit-badge-worksheet.pdf",
+          "type": 301
+        },
+        {
+          "source": "/merit-badges/familylife/:rest*",
+          "destination": "/merit-badges/family-life/:rest*",
+          "type": 301
+        },
+        {
+          "source": "/contact-us{,/**}",
+          "destination": "/",
+          "type": 301
+        }
+      ],
       "headers": [
         {
           "source": "**/*.avif",

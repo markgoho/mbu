@@ -3,7 +3,7 @@
 {{ define "main" }}
   {{ $json := false }}
   {{ if .File }}
-    {{ $json = index hugo.Data "merit-badges" .File.ContentBaseName }}
+    {{ $json = index hugo.Data "merit-badges" (path.Base .File.Dir) }}
   {{ end }}
 
   {{ if $json }}
@@ -55,10 +55,10 @@
         </a>
 
         {{ $worksheets := index hugo.Data "worksheets" }}
-        {{ $slug := .File.ContentBaseName }}
+        {{ $slug := path.Base .File.Dir }}
         {{ if and $worksheets (in $worksheets.slugs $slug) }}
           <a
-            href="{{ $slug }}-merit-badge-worksheet.pdf"
+            href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
             target="_blank"
             rel="noopener noreferrer"
             class="badge-action-card card-surface card-surface--lift">
@@ -148,7 +148,7 @@
       {{ range $index, $page := .Pages.ByTitle }}
         {{ $json := false }}
         {{ if $page.File }}
-          {{ $json = index hugo.Data "merit-badges" $page.File.ContentBaseName }}
+          {{ $json = index hugo.Data "merit-badges" (path.Base $page.File.Dir) }}
         {{ end }}
         {{ if $json }}
           {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
@@ -161,7 +161,7 @@
 {{ define "footer-scripts" }}
   {{ $json := false }}
   {{ if .File }}
-    {{ $json = index hugo.Data "merit-badges" .File.ContentBaseName }}
+    {{ $json = index hugo.Data "merit-badges" (path.Base .File.Dir) }}
   {{ end }}
   {{ if $json }}
     {{/* Individual badge landing page - include JSON-LD */}}

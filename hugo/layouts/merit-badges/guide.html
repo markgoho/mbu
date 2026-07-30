@@ -4,7 +4,7 @@
 
 {{ define "main" }}
   {{ $badgePage := .CurrentSection.Parent | default .Parent }}
-  {{ $json := index hugo.Data "merit-badges" $badgePage.File.ContentBaseName }}
+  {{ $json := index hugo.Data "merit-badges" (path.Base $badgePage.File.Dir) }}
 
   {{ partial "merit-badges/drg-sidebar.html" (dict "page" . "badgePage" $badgePage "json" $json) }}
 

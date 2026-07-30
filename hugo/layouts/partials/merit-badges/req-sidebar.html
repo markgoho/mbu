@@ -15,7 +15,7 @@
 {{ $page := .page }}
 {{ $json := .json }}
 {{ $guide := .guide }}
-{{ $slug := $badge.File.ContentBaseName }}
+{{ $slug := path.Base $badge.File.Dir }}
 {{ $reqCount := len $json.requirements }}
 
 <div class="req-sidebar">
@@ -75,7 +75,7 @@
     {{ $worksheets := index hugo.Data "worksheets" }}
     {{ if and $worksheets (in $worksheets.slugs $slug) }}
       <a
-        href="/worksheets/{{ $slug }}-worksheet.pdf"
+        href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
         target="_blank"
         rel="noopener"
         class="req-sidebar__link">
