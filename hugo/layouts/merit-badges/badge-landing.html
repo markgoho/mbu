@@ -113,17 +113,44 @@
           <ul class="badge-preview__list">
             {{ range $i, $req := first 4 $json.requirements }}
               {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
-              {{ $snippet := $req.text | markdownify | plainify }}
-              {{ $sentenceMatch := findRE `^[^.!?]*[.!?]` $snippet 1 }}
+              {{ $title := $lookup.title }}
+              {{ $firstSub := "" }}
+              {{ $subLookup := dict }}
+              {{ if $req.subrequirements }}
+                {{ $firstSub = index $req.subrequirements 0 }}
+                {{ $subLookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $firstSub.path "children" $firstSub.subrequirements) }}
+              {{ end }}
+
+              {{ if not $title }}
+                {{ if $lookup.eyebrow }}
+                  {{ $title = $lookup.eyebrow }}
+                {{ else if $subLookup.title }}
+                  {{ $title = $subLookup.title }}
+                {{ else if $subLookup.eyebrow }}
+                  {{ $title = $subLookup.eyebrow }}
+                {{ else }}
+                  {{ $title = printf "Requirement %s" $req.path }}
+                {{ end }}
+              {{ end }}
+
+              {{ $rawSnippet := $req.text | markdownify | plainify }}
+              {{ $isBoilerplate := findRE `(?i)^(do the following|with the aid of|do (one|two|three|all) of the following|in field trips|if instruction is done)` $rawSnippet 1 }}
+              {{ if and $isBoilerplate $firstSub }}
+                {{ $rawSnippet = $firstSub.text | markdownify | plainify }}
+              {{ end }}
+
+              {{ $snippet := $rawSnippet }}
+              {{ $sentenceMatch := findRE `^[^.!?]*[.!?]` $rawSnippet 1 }}
               {{ if $sentenceMatch }}
                 {{ $snippet = index $sentenceMatch 0 }}
               {{ end }}
+
               <li class="badge-preview__item">
                 {{ with $reqPage }}
                   <a href="{{ .RelPermalink }}#{{ $req.path }}" class="badge-preview__link">
                     <span class="badge-preview__node req-card__node" aria-hidden="true"><span class="req-card__node-text">{{ add $i 1 }}</span></span>
                     <span class="badge-preview__text">
-                      <span class="badge-preview__title">{{ $lookup.title | default (printf "Requirement %s" $req.path) }}</span>
+                      <span class="badge-preview__title">{{ $title }}</span>
                       <span class="badge-preview__snippet">{{ $snippet | truncate 120 }}</span>
                     </span>
                   </a>
