@@ -13,9 +13,7 @@
   active         - which nav item is "current": "overview" |
                    "requirements" | "guide" (default "requirements")
   demote_heading - passed through to badge-identity.html (h1 -> p; the
-                   landing page's H1 lives in its hero, not here)
-  variant        - "landing" adds a root modifier class so mobile CSS
-                   can hide the repeated identity block there
+  variant        - "landing" adds a root modifier class for landing-specific styling
 */}}
 {{ $badge := .badge }}
 {{ $json := .json }}

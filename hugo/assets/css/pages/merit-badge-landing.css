@@ -600,17 +600,6 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Sidebar variant: hide the repeated identity block on mobile          */
-/* (the hero already carries badge name + category there)               */
-/* ------------------------------------------------------------------ */
-
-@media (max-width: 767px) {
-  .req-sidebar--landing .badge-identity {
-    display: none;
-  }
-}
-
-/* ------------------------------------------------------------------ */
 /* Print                                                                */
 /* ------------------------------------------------------------------ */
 
