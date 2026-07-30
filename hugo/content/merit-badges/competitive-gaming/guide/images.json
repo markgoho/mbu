@@ -1,0 +1,21 @@
+{
+  "badge": "competitive-gaming",
+  "style_context": "Video game consoles, PC hardware, and competitive gaming technology across different eras",
+  "images": [
+    {
+      "id": "gaming-console-timeline",
+      "file": "req1.md",
+      "verb_family": "create",
+      "description": "Five iconic video game consoles photographed side by side in chronological order from left to right: a wood-paneled Atari 2600 with joystick controller, a gray Nintendo Entertainment System with rectangular controller, an original gray PlayStation console with controller, a black Xbox 360 console with controller, and a Nintendo Switch in its dock with Joy-Con controllers attached. Clean neutral studio background, even lighting, each console clearly distinguishable in size and design.",
+      "value": "Visual side-by-side comparison of console design and size across five hardware generations — the physical evolution is something a reader can only really absorb by seeing the consoles together, not from a list of names and years"
+    },
+    {
+      "id": "pc-parts-labeled-diagram",
+      "file": "req5.md",
+      "style": "diagram",
+      "verb_family": "identify",
+      "description": "Clean exploded diagram of a desktop gaming PC tower with the case open, showing labeled components: CPU on the motherboard, motherboard itself, RAM sticks in their slots, graphics card (GPU), power supply unit (PSU), storage drive, and case cooling fans. Each component has a short single-word label with a thin leader line pointing to it. Simple, uncluttered technical illustration style with a light background.",
+      "value": "Labeled spatial layout showing where each component physically sits inside the case and how they connect — the physical arrangement and relative size of parts is something text alone cannot convey"
+    }
+  ]
+}
