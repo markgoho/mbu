@@ -468,7 +468,7 @@
     display: block;
   }
 
-  .req-card__node {
+  .req-card .req-card__node {
     position: absolute;
     top: calc(var(--space-2xs) * -1);
     left: calc(var(--space-2xs) * -1);
