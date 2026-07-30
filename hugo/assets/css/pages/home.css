@@ -492,8 +492,11 @@
   color: #1a1400;
   border-color: var(--amber, #ffb800);
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background: #ffc83b;
+    color: #1a1400;
+    border-color: #ffc83b;
   }
 }
 

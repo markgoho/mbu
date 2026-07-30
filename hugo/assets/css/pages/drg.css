@@ -46,32 +46,62 @@
 /* Sidebar                                                              */
 /* ------------------------------------------------------------------ */
 
-.drg-sidebar {
+.drg-sidebar-wrap {
   display: none;
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-s);
+    display: block;
     flex: 0 0 17.5rem;
     position: sticky;
     top: var(--space-m);
     max-height: calc(100vh - var(--space-2xl));
     overflow-y: auto;
-    background: var(--surface-raised);
-    border: 1px solid var(--card-border-subtle);
-    border-radius: var(--radius-lg);
-    padding: var(--space-s);
-    box-shadow: var(--shadow-card);
-    transition:
-      border-color 0.25s ease,
-      box-shadow 0.25s ease,
-      background-color 0.25s ease;
+
+    /* Scrollbar stays invisible until the nav itself is hovered, so it
+       doesn't compete with the badge glow / card border at rest. */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 
     &:hover {
-      border-color: var(--accent-container);
-      box-shadow: var(--shadow-raised);
+      scrollbar-color: var(--outline-variant) transparent;
     }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: var(--radius-full);
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: var(--outline-variant);
+    }
+  }
+}
+
+.drg-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  background: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-s);
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+  &:hover {
+    border-color: var(--accent-container);
+    box-shadow: var(--shadow-raised);
   }
 }
 
@@ -89,16 +119,18 @@
 /* Mobile navigation (collapsible, shown only when sidebar is hidden)   */
 /* ------------------------------------------------------------------ */
 
+.drg-mobile-nav-wrap {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .drg-mobile-nav {
   margin-bottom: var(--space-m);
   background: var(--surface-raised);
   border: 1px solid var(--card-border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
 
   & .drg-mobile-nav__toggle {
     display: flex;
@@ -265,6 +297,30 @@
   width: 1.1rem;
   height: 1.1rem;
   flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Page body (breadcrumb + prose)                                       */
+/* ------------------------------------------------------------------ */
+
+/* The flex item that actually sits beside the sidebar. Breadcrumb is a
+   direct child here so it spans the full column instead of being capped
+   to .drg-content's 65ch reading measure below. */
+.drg-page-body {
+  flex: 1;
+  min-width: 0;
+  padding-inline: var(--space-s);
+
+  @media (min-width: 768px) {
+    padding-inline: 0;
+  }
+}
+
+/* .drg-content still carries its own padding-inline for the printable
+   guide pages that use it directly as the flex item (no .drg-page-body
+   wrapper there); zero it out here so nesting doesn't double the gutter. */
+.drg-page-body .drg-content {
+  padding-inline: 0;
 }
 
 /* ------------------------------------------------------------------ */

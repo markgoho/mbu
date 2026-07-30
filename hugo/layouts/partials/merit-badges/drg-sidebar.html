@@ -22,50 +22,52 @@
 {{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
 {{ $printPage := $page.Site.GetPage (printf "%sprint/" $page.CurrentSection.RelPermalink) }}
 
-<aside class="drg-sidebar">
-  {{ partial "merit-badges/badge-identity.html" (dict "badge" $badgePage "json" $json "slug" $slug) }}
+<aside class="drg-sidebar-wrap">
+  <div class="drg-sidebar">
+    {{ partial "merit-badges/badge-identity.html" (dict "badge" $badgePage "json" $json "slug" $slug) }}
 
-  {{ if $guideNav }}
-    <ul class="drg-nav">
-      {{ range $guideNav }}
-        {{ if .group_title }}
-          <li class="drg-nav__group-title">{{ .group_title }}</li>
+    {{ if $guideNav }}
+      <ul class="drg-nav">
+        {{ range $guideNav }}
+          {{ if .group_title }}
+            <li class="drg-nav__group-title">{{ .group_title }}</li>
+          {{ end }}
+
+          {{ range .items }}
+            <li class="drg-nav__item">
+              <a
+                href="{{ .url }}"
+                class="drg-nav__link {{ if eq .url $currentUrl }}
+                  drg-nav__link--active
+                {{ end }}">
+                {{ .title }}
+              </a>
+            </li>
+          {{ end }}
         {{ end }}
-
-        {{ range .items }}
+        <li class="drg-nav__group-title">Reference</li>
+        <li class="drg-nav__item">
+          <a href="{{ $reqUrl }}" class="drg-nav__link drg-nav__link--reference">
+            {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-nav__link-icon") }}
+            View Requirements
+          </a>
+        </li>
+        {{ if $printPage }}
           <li class="drg-nav__item">
-            <a
-              href="{{ .url }}"
-              class="drg-nav__link {{ if eq .url $currentUrl }}
-                drg-nav__link--active
-              {{ end }}">
-              {{ .title }}
+            <a href="{{ $printPage.RelPermalink }}" class="drg-nav__link drg-nav__link--reference">
+              {{ partial "icon.html" (dict "name" "scroll" "class" "drg-nav__link-icon") }}
+              Print Complete Guide
             </a>
           </li>
         {{ end }}
-      {{ end }}
-      <li class="drg-nav__group-title">Reference</li>
-      <li class="drg-nav__item">
-        <a href="{{ $reqUrl }}" class="drg-nav__link drg-nav__link--reference">
-          {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-nav__link-icon") }}
-          View Requirements
-        </a>
-      </li>
-      {{ if $printPage }}
-        <li class="drg-nav__item">
-          <a href="{{ $printPage.RelPermalink }}" class="drg-nav__link drg-nav__link--reference">
-            {{ partial "icon.html" (dict "name" "scroll" "class" "drg-nav__link-icon") }}
-            Print Complete Guide
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-  {{ end }}
+      </ul>
+    {{ end }}
+  </div>
 </aside>
 
 {{/* Mobile-only collapsible navigation (hidden when the sidebar above is visible) */}}
 {{ if $guideNav }}
-  <nav aria-label="Guide navigation">
+  <nav class="drg-mobile-nav-wrap" aria-label="Guide navigation">
     <details class="drg-mobile-nav">
       <summary class="drg-mobile-nav__toggle">
         {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__icon") }}

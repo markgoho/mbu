@@ -10,6 +10,11 @@
 {{- else if .Content -}}
   {{- $description = .Content | plainify -}}
 {{- else -}}
+  {{- with .GetPage "requirements" -}}
+    {{- $description = .Description -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $description -}}
   {{- $description = printf "Learn about the %s merit badge through Scouting America's program. Complete %d requirements to earn this merit badge." .Title $reqCount -}}
 {{- end -}}
 

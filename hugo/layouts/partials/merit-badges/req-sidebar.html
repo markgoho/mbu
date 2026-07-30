@@ -1,40 +1,54 @@
 {{/* merit-badges/req-sidebar.html
 
-  Sticky left sidebar for the requirements page: badge identity, section
-  nav (Overview / Requirements / Study Guide), and the meta block that
-  used to live in the requirements page's <header class="badge-header">.
-  Collapses to a top bar on mobile (see merit-badge-requirements.css).
+  Sticky left sidebar shared by the requirements page and the badge
+  landing page: badge identity, section nav (Overview / Requirements /
+  Study Guide), and the meta block that used to live in the requirements
+  page's <header class="badge-header">. Collapses to a top bar on
+  mobile (see merit-badge-requirements.css).
 
   Params (dict):
-  badge - the badge's landing Page (Parent of the requirements page)
-  page  - the requirements Page itself (used for the "current" nav item)
-  json  - the badge's data.json (from hugo.Data "merit-badges")
-  guide - the guide section Page, or nil
+  badge          - the badge's landing Page
+  json           - the badge's data.json (from hugo.Data "merit-badges")
+  guide          - the guide section Page, or nil
+  active         - which nav item is "current": "overview" |
+                   "requirements" | "guide" (default "requirements")
+  demote_heading - passed through to badge-identity.html (h1 -> p; the
+                   landing page's H1 lives in its hero, not here)
+  variant        - "landing" adds a root modifier class so mobile CSS
+                   can hide the repeated identity block there
 */}}
 {{ $badge := .badge }}
-{{ $page := .page }}
 {{ $json := .json }}
 {{ $guide := .guide }}
+{{ $active := .active | default "requirements" }}
+{{ $demoteHeading := .demote_heading | default false }}
+{{ $variant := .variant }}
 {{ $slug := path.Base $badge.File.Dir }}
 {{ $reqCount := len $json.requirements }}
+{{ $reqPage := $badge.GetPage "requirements" }}
 
-<div class="req-sidebar">
-  {{ partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug) }}
+<div class="req-sidebar{{ if eq $variant "landing" }} req-sidebar--landing{{ end }}">
+  {{ partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug "demote_heading" $demoteHeading) }}
 
   <nav class="req-sidebar__nav" aria-label="{{ $badge.Title }} sections">
     <ul>
       <li>
-        <a href="{{ $badge.RelPermalink }}"> Overview </a>
-      </li>
-      <li>
-        <a href="{{ $page.RelPermalink }}" aria-current="page">
-          Requirements
+        <a href="{{ $badge.RelPermalink }}"{{ if eq $active "overview" }} aria-current="page"{{ end }}>
+          Overview
         </a>
       </li>
-      {{ $studyGuide := $badge.GetPage "guide" }}
-      {{ if $studyGuide }}
+      {{ with $reqPage }}
         <li>
-          <a href="{{ $studyGuide.RelPermalink }}"> Study Guide </a>
+          <a href="{{ .RelPermalink }}"{{ if eq $active "requirements" }} aria-current="page"{{ end }}>
+            Requirements
+          </a>
+        </li>
+      {{ end }}
+      {{ if $guide }}
+        <li>
+          <a href="{{ $guide.RelPermalink }}"{{ if eq $active "guide" }} aria-current="page"{{ end }}>
+            Study Guide
+          </a>
         </li>
       {{ end }}
     </ul>

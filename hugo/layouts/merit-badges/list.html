@@ -1,171 +1,27 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
 {{ define "main" }}
-  {{ $json := false }}
-  {{ if .File }}
-    {{ $json = index hugo.Data "merit-badges" (path.Base .File.Dir) }}
-  {{ end }}
+  {{/* Main merit badges listing page */}}
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p class="badge-count">{{ len .Pages }} merit badges available</p>
+    <p><a href="/merit-badges/eagle-required/">🦅 View Eagle Required badges</a></p>
+  </header>
 
-  {{ if $json }}
-    {{ $reqCount := len $json.requirements }}
-    {{/* Prefer larger merit-badge image for featured display, fallback to card */}}
-    {{ $badgeImage := .Resources.GetMatch "*-merit-badge.avif" }}
-    {{ if not $badgeImage }}
-      {{ $badgeImage = .Resources.GetMatch "*-merit-badge-card.avif" }}
-    {{ end }}
-    {{ if not $badgeImage }}
-      {{ $badgeImage = .Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
-    {{ end }}
-
-
-    <article class="merit-badge-landing">
-      {{ partial "breadcrumb.html" . }}
-      <header class="badge-header">
-        <h1>
-          {{ .Title }}
-        </h1>
-        {{ if $json.eagle_required }}
-          <span class="eagle-badge">🦅 Eagle Required</span>
-        {{ end }}
-      </header>
-
-      {{ partial "discontinued-notice.html" $json }}
-
-      {{ if $badgeImage }}
-        <div class="badge-featured-image card-surface card-surface--lift">
-          <img
-            src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ .Title }} Merit Badge"
-            loading="eager" />
-        </div>
+  <section class="badges-grid">
+    {{ range $index, $page := .Pages.ByTitle }}
+      {{ $json := false }}
+      {{ if $page.File }}
+        {{ $json = index hugo.Data "merit-badges" (path.Base $page.File.Dir) }}
       {{ end }}
-
-
-      <div class="badge-quick-actions">
-        <a
-          href="requirements/"
-          class="badge-action-card badge-action-card--primary card-surface card-surface--lift">
-          {{ partial "icon.html" (dict "name" "list-checks" "class" "badge-action-card__icon") }}
-          <div class="badge-action-card__content">
-            <h2 class="badge-action-card__title">View Requirements</h2>
-            <p class="badge-action-card__description">
-              {{ $reqCount }} main requirements
-            </p>
-          </div>
-        </a>
-
-        {{ $worksheets := index hugo.Data "worksheets" }}
-        {{ $slug := path.Base .File.Dir }}
-        {{ if and $worksheets (in $worksheets.slugs $slug) }}
-          <a
-            href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="badge-action-card card-surface card-surface--lift">
-            {{ partial "icon.html" (dict "name" "download-simple" "class" "badge-action-card__icon") }}
-            <div class="badge-action-card__content">
-              <h2 class="badge-action-card__title">Fillable Worksheet</h2>
-              <p class="badge-action-card__description">
-                Printable PDF to record your work
-              </p>
-            </div>
-          </a>
-        {{ end }}
-
-        {{ $guide := .GetPage "guide" }}
-        {{ if $guide }}
-          <a
-            href="{{ $guide.RelPermalink }}"
-            class="badge-action-card card-surface card-surface--lift">
-            {{ partial "icon.html" (dict "name" "book" "class" "badge-action-card__icon") }}
-            <div class="badge-action-card__content">
-              <h2 class="badge-action-card__title">Digital Resource Guide</h2>
-              <p class="badge-action-card__description">
-                Interactive study guide
-              </p>
-            </div>
-          </a>
-
-          {{ $guidePrint := .GetPage "guide/print" }}
-          {{ if $guidePrint }}
-            <a href="{{ $guidePrint.RelPermalink }}" class="badge-action-card card-surface card-surface--lift">
-              {{ partial "icon.html" (dict "name" "scroll" "class" "badge-action-card__icon") }}
-              <div class="badge-action-card__content">
-                <h2 class="badge-action-card__title">Print Complete Guide</h2>
-                <p class="badge-action-card__description">
-                  Single-page version for printing
-                </p>
-              </div>
-            </a>
-          {{ end }}
-        {{ end }}
-
-        {{ if $json.pamphlet_url }}
-          <a
-            href="{{ $json.pamphlet_url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="badge-action-card card-surface card-surface--lift">
-            {{ partial "icon.html" (dict "name" "book-open-text" "class" "badge-action-card__icon") }}
-            <div class="badge-action-card__content">
-              <h2 class="badge-action-card__title">Merit Badge Pamphlet</h2>
-              <p class="badge-action-card__description">
-                Official PDF resource
-              </p>
-            </div>
-          </a>
-        {{ end }}
-
-
-        <a
-          href="{{ $json.url }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="badge-action-card card-surface card-surface--lift">
-          {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "badge-action-card__icon") }}
-          <div class="badge-action-card__content">
-            <h2 class="badge-action-card__title">Scouting.org Page</h2>
-            <p class="badge-action-card__description">
-              Official badge information
-            </p>
-          </div>
-        </a>
-      </div>
-
-      {{ .Content }}
-
-    </article>
-  {{ else }}
-    {{/* Main merit badges listing page */}}
-    <header>
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
-      <p class="badge-count">{{ len .Pages }} merit badges available</p>
-      <p><a href="/merit-badges/eagle-required/">🦅 View Eagle Required badges</a></p>
-    </header>
-
-    <section class="badges-grid">
-      {{ range $index, $page := .Pages.ByTitle }}
-        {{ $json := false }}
-        {{ if $page.File }}
-          {{ $json = index hugo.Data "merit-badges" (path.Base $page.File.Dir) }}
-        {{ end }}
-        {{ if $json }}
-          {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
-        {{ end }}
+      {{ if $json }}
+        {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
       {{ end }}
-    </section>
-  {{ end }}
+    {{ end }}
+  </section>
 {{ end }}
 
 {{ define "footer-scripts" }}
-  {{ $json := false }}
-  {{ if .File }}
-    {{ $json = index hugo.Data "merit-badges" (path.Base .File.Dir) }}
-  {{ end }}
-  {{ if $json }}
-    {{/* Individual badge landing page - include JSON-LD */}}
-    {{ partial "json-ld/merit-badge-landing.html" . }}
-  {{ end }}
   {{ partial "json-ld/breadcrumb-auto.html" . }}
 {{ end }}
