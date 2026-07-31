@@ -2,46 +2,65 @@
 
 {{ define "main-class" }}drg-page drg-page-main{{ end }}
 
+{{/* Hold the first paint until the hero has been parsed, matching
+  badge-landing.html -- both ends of the badge-landing <-> guide-landing
+  view transition need this so the incoming snapshot has the morph
+  targets already in the DOM. Only .IsSection pages render the hero, but
+  the hint is harmless (a no-op) on requirement sub-pages.
+*/}}
+{{ define "head-styles" }}
+  <link rel="expect" href="#badge-hero" blocking="render" />
+{{ end }}
+
 {{ define "main" }}
   {{ $badgePage := .CurrentSection.Parent | default .Parent }}
-  {{ $json := index hugo.Data "merit-badges" (path.Base $badgePage.File.Dir) }}
+  {{ $slug := path.Base $badgePage.File.Dir }}
+  {{ $json := index hugo.Data "merit-badges" $slug }}
 
   {{ partial "merit-badges/drg-sidebar.html" (dict "page" . "badgePage" $badgePage "json" $json) }}
 
   <div class="drg-page-body">
     {{ partial "breadcrumb.html" . }}
 
+    {{ if .IsSection }}
+      {{ $reqPage := $badgePage.GetPage "requirements" }}
+      {{ $lead := "" }}
+      {{ with $reqPage }}
+        {{ $lead = .Description }}
+      {{ end }}
+
+      {{ $pageCount := 0 }}
+      {{ range .Params.guide_nav }}
+        {{ $pageCount = add $pageCount (len .items) }}
+      {{ end }}
+
+      {{ $title := .Params.badge_name | default (strings.TrimSuffix " Merit Badge" $badgePage.Title) }}
+
+      {{ $ctas := slice (dict "url" .Params.next "label" "Start the Guide" "icon" "book-open-text") }}
+      {{ with $reqPage }}
+        {{ $ctas = $ctas | append (dict "url" .RelPermalink "label" "View Requirements" "icon" "list-checks" "secondary" true) }}
+      {{ end }}
+
+      {{ partial "merit-badges/badge-hero.html" (dict
+        "badge" $badgePage
+        "json" $json
+        "slug" $slug
+        "title" $title
+        "accent_title" "Digital Resource Guide"
+        "lead" $lead
+        "extra_pills" (slice (dict "label" (printf "%d Pages" $pageCount) "icon" "stack"))
+        "ctas" $ctas) }}
+    {{ end }}
+
     <article class="drg-content">
-      <header class="drg-header">
-        {{ $isIntro := .IsSection }}
-        {{ if $isIntro }}
-          {{ $badgePage := .Site.GetPage (path.Dir (path.Dir .RelPermalink)) }}
-          {{ if not $badgePage }}
-            {{ $badgePage = .Parent }}
+      {{ if not .IsSection }}
+        <header class="drg-header">
+          {{ with .Params.group_title }}
+            <span class="drg-header__kicker">{{ . }}</span>
           {{ end }}
-
-          {{ $image := "" }}
-          {{ with $badgePage.Resources.GetMatch "*badge*.png" }}
-            {{ $image = . }}
-          {{ else }}
-            {{ with $badgePage.Resources.GetMatch "*badge*.jpg" }}
-              {{ $image = . }}
-            {{ end }}
-          {{ end }}
-
-          {{ if $image }}
-            <img
-              src="{{ $image.RelPermalink }}"
-              alt="{{ $badgePage.Title }} Merit Badge"
-              class="drg-header__badge-img" />
-          {{ end }}
-        {{ end }}
-
-        {{ with .Params.group_title }}
-          <span class="drg-header__kicker">{{ . }}</span>
-        {{ end }}
-        <h1 class="drg-header__title">{{ .Title }}</h1>
-      </header>
+          <h1 class="drg-header__title">{{ .Title }}</h1>
+        </header>
+      {{ end }}
 
       {{ .Content }}
 

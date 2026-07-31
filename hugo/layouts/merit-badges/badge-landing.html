@@ -30,7 +30,6 @@
   {{ $reqPage := .GetPage "requirements" }}
   {{ $guide := .GetPage "guide" }}
   {{ $guidePrint := .GetPage "guide/print" }}
-  {{ $emblem := .Resources.GetMatch "*-merit-badge.avif" }}
   {{ $reqCount := len $json.requirements }}
 
   {{ $iconData := index hugo.Data "badge-icons" }}
@@ -49,6 +48,15 @@
     {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
   {{ end }}
 
+  {{ $lead := "" }}
+  {{ with $reqPage }}
+    {{ $lead = .Description }}
+  {{ end }}
+
+  {{ $ctas := slice }}
+  {{ with $reqPage }}
+    {{ $ctas = $ctas | append (dict "url" .RelPermalink "label" "View Requirements" "icon" "list-checks") }}
+  {{ end }}
 
   <div class="req-page req-page--landing">
     <aside class="req-sidebar-wrap">
@@ -68,76 +76,14 @@
       {{ partial "discontinued-notice.html" $json }}
 
 
-      <section class="badge-hero" id="badge-hero">
-        {{ with $emblem }}
-          <div class="badge-hero__backdrop" aria-hidden="true">
-            <img src="{{ .RelPermalink }}" alt="" loading="eager" />
-          </div>
-        {{ end }}
-        <div class="badge-hero__glow" aria-hidden="true"></div>
-
-        <div class="badge-hero__grid">
-          <div class="badge-hero__content">
-            {{/* The three `mb-*` names pair this hero with the badge's card
-              in the grid, so those parts morph rather than cross-fade on
-              navigation. See assets/css/view-transitions.css.
-            */}}
-            <div
-              class="badge-hero__eyebrow-row"
-              style="view-transition-name: mb-band-{{ $slug }}">
-              <a href="{{ $categoryURL }}" class="badge-hero__eyebrow">
-                {{ if $iconName }}
-                  {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-hero__eyebrow-icon") }}
-                {{ end }}
-                {{ $categoryName }}
-              </a>
-              {{ if $json.eagle_required }}
-                <span class="badge-hero__eagle-chip">
-                  {{ partial "icon.html" (dict "name" "medal" "class" "badge-hero__eagle-icon") }}
-                  Eagle Required
-                </span>
-              {{ end }}
-            </div>
-
-            <h1
-              class="badge-hero__title"
-              style="view-transition-name: mb-title-{{ $slug }}">
-              {{ $badgeName }} <em>Merit Badge</em>
-            </h1>
-
-            {{ with $reqPage }}
-              {{ with .Description }}
-                <p class="badge-hero__lead">{{ . }}</p>
-              {{ end }}
-            {{ end }}
-
-
-            <div class="badge-hero__ctas">
-              {{ with $reqPage }}
-                <a href="{{ .RelPermalink }}" class="button badge-hero__cta">
-                  {{ partial "icon.html" (dict "name" "list-checks" "class" "badge-hero__cta-icon") }}
-                  View Requirements
-                </a>
-              {{ end }}
-            </div>
-          </div>
-
-          {{ with $emblem }}
-            <div
-              class="badge-hero__emblem-col"
-              style="view-transition-name: mb-emblem-{{ $slug }}">
-              <img
-                class="badge-hero__emblem"
-                src="{{ .RelPermalink }}"
-                width="1200"
-                height="670"
-                alt="{{ $badge.Title }} emblem"
-                fetchpriority="high"
-                loading="eager" />
-            </div>
-          {{ end }}
-        </div>
-      </section>
+      {{ partial "merit-badges/badge-hero.html" (dict
+        "badge" $badge
+        "json" $json
+        "slug" $slug
+        "title" $badgeName
+        "accent_title" "Merit Badge"
+        "lead" $lead
+        "ctas" $ctas) }}
 
       <div class="badge-overview">
         <div class="badge-preview card-surface">
