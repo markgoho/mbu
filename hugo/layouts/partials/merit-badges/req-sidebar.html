@@ -25,6 +25,64 @@
 {{ $reqCount := len $json.requirements }}
 {{ $reqPage := $badge.GetPage "requirements" }}
 
+<nav class="req-mobile-nav-wrap" aria-label="Page section navigation">
+  <details class="req-mobile-nav">
+    <summary class="req-mobile-nav__toggle">
+      {{ if eq $active "overview" }}
+        {{ partial "icon.html" (dict "name" "compass" "class" "req-mobile-nav__icon") }}
+        <span>Overview</span>
+      {{ else if eq $active "guide" }}
+        {{ partial "icon.html" (dict "name" "book-open-text" "class" "req-mobile-nav__icon") }}
+        <span>Study Guide</span>
+      {{ else }}
+        {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__icon") }}
+        <span>Requirements</span>
+      {{ end }}
+      <span class="req-mobile-nav__chevron">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </summary>
+
+    <div class="req-mobile-nav__menu">
+      <ul class="req-mobile-nav__list">
+        <li>
+          <a href="{{ $badge.RelPermalink }}" class="req-mobile-nav__item{{ if eq $active "overview" }} req-mobile-nav__item--active{{ end }}">
+            {{ partial "icon.html" (dict "name" "compass" "class" "req-mobile-nav__item-icon") }}
+            <span class="req-mobile-nav__item-label">Overview</span>
+            {{ if eq $active "overview" }}
+              <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            {{ end }}
+          </a>
+        </li>
+        {{ with $reqPage }}
+          <li>
+            <a href="{{ .RelPermalink }}" class="req-mobile-nav__item{{ if eq $active "requirements" }} req-mobile-nav__item--active{{ end }}">
+              {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__item-icon") }}
+              <span class="req-mobile-nav__item-label">Requirements</span>
+              {{ if eq $active "requirements" }}
+                <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              {{ end }}
+            </a>
+          </li>
+        {{ end }}
+        {{ if $guide }}
+          <li>
+            <a href="{{ $guide.RelPermalink }}" class="req-mobile-nav__item{{ if eq $active "guide" }} req-mobile-nav__item--active{{ end }}">
+              {{ partial "icon.html" (dict "name" "book-open-text" "class" "req-mobile-nav__item-icon") }}
+              <span class="req-mobile-nav__item-label">Study Guide</span>
+              {{ if eq $active "guide" }}
+                <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              {{ end }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+</nav>
+
 <div class="req-sidebar{{ if eq $variant "landing" }} req-sidebar--landing{{ end }}">
   {{ partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug "demote_heading" $demoteHeading) }}
 
@@ -90,7 +148,7 @@
         href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
         target="_blank"
         rel="noopener"
-        class="req-sidebar__link">
+        class="req-sidebar__link hide-on-mobile">
         {{ partial "icon.html" (dict "name" "download-simple" "class" "req-sidebar__link-icon") }}
         Download Fillable Worksheet
       </a>

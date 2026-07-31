@@ -298,7 +298,7 @@
           <ul class="badge-resources__list">
             {{ $worksheets := index hugo.Data "worksheets" }}
             {{ if and $worksheets (in $worksheets.slugs $slug) }}
-              <li>
+              <li class="hide-on-mobile">
                 <a
                   href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
                   target="_blank"

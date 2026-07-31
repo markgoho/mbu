@@ -125,19 +125,21 @@ if (container) {
     }
   }
 
-  // Initialize from URL if ?q= param exists
+  // Initialize from URL if ?q= param exists, else focus input
   const initialQuery = new URLSearchParams(window.location.search).get("q");
-  if (initialQuery) {
-    setTimeout(() => {
-      const input = container.querySelector(
-        INPUT_SELECTOR,
-      ) as HTMLInputElement | null;
-      if (input) {
+  setTimeout(() => {
+    const input = container.querySelector(
+      INPUT_SELECTOR,
+    ) as HTMLInputElement | null;
+    if (input) {
+      if (initialQuery) {
         input.value = initialQuery;
         input.dispatchEvent(new Event("input", { bubbles: true }));
+      } else {
+        input.focus();
       }
-    }, 100);
-  }
+    }
+  }, 100);
 
   // Handle search input
   container.addEventListener("input", event => {

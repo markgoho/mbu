@@ -510,11 +510,14 @@
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .hero-d__carousel-nav {
   display: none;
   gap: var(--space-m);
+  scroll-snap-align: center;
 }
 
 .hero-d__carousel-btn {

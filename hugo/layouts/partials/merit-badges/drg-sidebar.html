@@ -72,41 +72,66 @@
       <summary class="drg-mobile-nav__toggle">
         {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__icon") }}
         <span>Guide Navigation</span>
-        <span class="drg-mobile-nav__arrow"></span>
+        <span class="drg-mobile-nav__chevron">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
       </summary>
-      <ul class="drg-mobile-nav__list">
-        {{ range $guideNav }}
-          {{ if .group_title }}
-            <li class="drg-mobile-nav__group">{{ .group_title }}</li>
+      <div class="drg-mobile-nav__menu">
+        <ul class="drg-mobile-nav__list">
+          {{ range $guideNav }}
+            {{ if .group_title }}
+              <li class="drg-mobile-nav__group">{{ .group_title }}</li>
+            {{ end }}
+            {{ range .items }}
+              <li>
+                <a
+                  href="{{ .url }}"
+                  class="drg-mobile-nav__link {{ if eq .url $currentUrl }}
+                    drg-mobile-nav__link--active
+                  {{ end }}">
+                  <span>{{ .title }}</span>
+                  {{ if eq .url $currentUrl }}
+                    <svg class="drg-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {{ end }}
+                </a>
+              </li>
+            {{ end }}
           {{ end }}
-          {{ range .items }}
-            <li>
-              <a
-                href="{{ .url }}"
-                class="drg-mobile-nav__link {{ if eq .url $currentUrl }}
-                  drg-mobile-nav__link--active
-                {{ end }}"
-                >{{ .title }}</a
-              >
-            </li>
-          {{ end }}
-        {{ end }}
-        <li class="drg-mobile-nav__group">Reference</li>
-        <li>
-          <a href="{{ $reqUrl }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
-            {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__link-icon") }}
-            View Requirements
-          </a>
-        </li>
-        {{ if $printPage }}
+          <li class="drg-mobile-nav__group">Reference</li>
           <li>
-            <a href="{{ $printPage.RelPermalink }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
-              {{ partial "icon.html" (dict "name" "scroll" "class" "drg-mobile-nav__link-icon") }}
-              Print Complete Guide
+            <a href="{{ $reqUrl }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
+              {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__link-icon") }}
+              <span>View Requirements</span>
             </a>
           </li>
-        {{ end }}
-      </ul>
+          {{ if $printPage }}
+            <li>
+              <a href="{{ $printPage.RelPermalink }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
+                {{ partial "icon.html" (dict "name" "scroll" "class" "drg-mobile-nav__link-icon") }}
+                <span>Print Complete Guide</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
     </details>
   </nav>
+  <script>
+    (function() {
+      var lastScrollY = window.scrollY;
+      var nav = document.querySelector('.drg-mobile-nav-wrap');
+      if (!nav) return;
+      window.addEventListener('scroll', function() {
+        var currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+          nav.classList.add('nav-hidden');
+        } else {
+          nav.classList.remove('nav-hidden');
+        }
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    })();
+  </script>
 {{ end }}

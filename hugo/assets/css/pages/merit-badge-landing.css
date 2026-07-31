@@ -103,6 +103,15 @@
   grid-template-columns: 1fr;
   padding: var(--space-xl) clamp(var(--space-m), 4vw, var(--space-xl));
   position: relative;
+
+  /* Where .badge-hero__content's box actually ends (its left inset plus
+     its own max-width). The emblem's mask reads this, so the crisp image
+     never starts until *after* the text -- intrinsically, at any
+     container width, instead of at a fixed percentage of the container
+     that only clears the text at wide viewports. */
+  --hero-content-edge: calc(
+    clamp(var(--space-m), 4vw, var(--space-xl)) + 580px
+  );
 }
 
 @container req-main (max-width: 700px) {
@@ -114,20 +123,6 @@
 
   .badge-hero__content {
     max-width: none;
-  }
-
-  .badge-hero__emblem-col {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    width: 100%;
-    height: 200px;
-    mask-image: none;
-    -webkit-mask-image: none;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    order: -1;
   }
 }
 
@@ -289,15 +284,22 @@
 
 .badge-hero__emblem-col {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 58%;
+  inset: 0;
   z-index: 1;
   pointer-events: none;
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent 0%, black 35%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent var(--hero-content-edge),
+    black calc(var(--hero-content-edge) + 7.5rem)
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent var(--hero-content-edge),
+    black calc(var(--hero-content-edge) + 7.5rem)
+  );
 }
 
 .badge-hero__emblem {
@@ -305,8 +307,53 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
+  object-position: right center;
   aspect-ratio: auto;
   filter: brightness(0.95);
+}
+
+/* Narrow containers can't fit the two-column hero: the blurred backdrop
+   loses its scrim margin and text ends up sitting directly on the photo.
+   Below 700px the crisp emblem becomes a full-bleed band up top instead,
+   and the backdrop/glow (which exist only to make text-over-photo work)
+   are dropped in favor of the hero's own solid surface. */
+@container req-main (max-width: 700px) {
+  .badge-hero {
+    background: var(--surface-raised);
+    --hero-on: var(--on-surface);
+    --hero-on-muted: var(--on-surface-muted);
+  }
+
+  .dark .badge-hero {
+    border-color: var(--card-border-subtle);
+  }
+
+  .badge-hero__backdrop,
+  .badge-hero__glow {
+    display: none;
+  }
+
+  .badge-hero__grid {
+    padding: 0 0 var(--space-l);
+  }
+
+  .badge-hero__emblem-col {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 200px;
+    order: -1;
+    overflow: hidden;
+    mask-image: none;
+    -webkit-mask-image: none;
+    border-radius: 0;
+  }
+
+  .badge-hero__content {
+    padding-inline: var(--space-m);
+  }
 }
 
 /* ------------------------------------------------------------------ */

@@ -10,7 +10,12 @@
   gap: var(--space-s);
   margin-block-start: var(--space-m);
 
-  @media (min-width: 768px) {
+  @media (max-width: 60rem) {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xs);
+  }
+
+  @media (min-width: 60rem) {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 
@@ -138,12 +143,19 @@
   margin-inline-start: auto;
   padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
-  background: var(--amber);
-  color: var(--olive-800);
+  background: var(--accent-container);
+  border: 1px solid var(--accent);
+  color: var(--on-accent-container);
   font-size: 0.625rem;
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.dark .badge-card__eagle {
+  background: color-mix(in oklab, var(--amber) 22%, transparent);
+  border-color: var(--amber);
+  color: var(--amber);
 }
 
 .badge-card__eagle-icon {
@@ -152,6 +164,16 @@
 }
 
 /* Cards with images */
+@media (max-width: 60rem) {
+  .badge-card {
+    height: auto;
+  }
+
+  .badge-card--with-image .badge-card__image {
+    display: none;
+  }
+}
+
 .badge-card--with-image {
   display: flex;
   flex-direction: column;

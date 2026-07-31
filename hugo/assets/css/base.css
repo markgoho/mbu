@@ -123,3 +123,9 @@ textarea:not([rows]) {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+@media (max-width: 60rem) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}

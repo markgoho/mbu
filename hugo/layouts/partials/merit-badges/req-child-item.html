@@ -59,10 +59,9 @@
 {{ $marker := cond $isSlug $req.req_id (printf "%s." $ownSegment) }}
 {{ $bare := cond $isSlug $req.req_id $ownSegment }}
 
-{{/* Roman numerals and multi-digit numbers still fit a ring; hyphenated
-  or long slugs don't.
+{{/* Roman numerals and multi-digit numbers still fit a ring; slugs don't.
 */}}
-{{ $ringable := and (le (len $bare) 4) (not (in $bare "-")) }}
+{{ $ringable := and (not $isSlug) (le (len $bare) 4) (not (in $bare "-")) }}
 
 {{ $hasTitle := and $showTitle $lookup.title }}
 

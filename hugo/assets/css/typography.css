@@ -111,3 +111,17 @@ main h1 {
 .highlight {
   font-weight: var(--font-weight-bold);
 }
+
+@media (max-width: 60rem) {
+  a:not(.breadcrumb__link),
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .badge-identity__micro-tag,
+  .badge-card__eagle,
+  .badge-card__category {
+    font-size: 0.75rem !important;
+  }
+}

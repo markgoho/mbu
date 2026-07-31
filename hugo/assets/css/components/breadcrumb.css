@@ -33,6 +33,7 @@
 }
 
 .breadcrumb__link {
+  position: relative;
   color: var(--on-surface-muted);
   text-decoration: none;
 
@@ -41,6 +42,16 @@
     opacity: 1;
     text-decoration: underline;
     text-underline-offset: 2px;
+  }
+}
+
+@media (max-width: 60rem) {
+  /* Expand the tap target toward the 44px minimum without inflating the
+     visible breadcrumb row height. */
+  .breadcrumb__link::after {
+    content: "";
+    position: absolute;
+    inset: -11px;
   }
 }
 

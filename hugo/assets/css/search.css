@@ -261,3 +261,24 @@
     color: var(--amber);
   }
 }
+
+@media (max-width: 60rem) {
+  .search-header {
+    display: none;
+  }
+
+  .pagefind-ui__results .pagefind-ui__result {
+    flex-direction: column;
+    padding: var(--space-s);
+    border: 1px solid var(--card-border-subtle);
+    border-radius: var(--radius-md);
+  }
+
+  .pagefind-ui__result-thumb {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    flex: none;
+  }
+}
+
