@@ -338,13 +338,33 @@
    carousel (Camping / Competitive Gaming / Wildland Fire Management).
    ================================================================ */
 
+/*
+ * Same light/dark split as .badge-hero (components/badge-hero.css): the
+ * hero reads semantic tokens for a soft, editorial wash in light mode,
+ * and only switches to the fixed-oklch cinematic near-black treatment
+ * under .dark, via the --hero-* custom properties below.
+ */
 .hero-d {
+  --hero-on: var(--on-surface);
+  --hero-on-muted: var(--on-surface-muted);
+  --hero-scrim-1: color-mix(in oklab, var(--surface-raised) 90%, transparent);
+  --hero-scrim-2: color-mix(in oklab, var(--surface) 82%, transparent);
+  --hero-border: var(--outline-variant);
+
   position: relative;
   overflow: clip;
-  color: var(--tan-000, #faf9f6);
+  color: var(--hero-on);
 }
 
-/* Full-bleed background image + dark gradient overlay */
+.dark .hero-d {
+  --hero-on: var(--tan-000, #faf9f6);
+  --hero-on-muted: oklch(0.82 0.01 86.03);
+  --hero-scrim-1: oklch(0.14 0.023 153.3 / 0.92);
+  --hero-scrim-2: oklch(0.18 0.028 153.3 / 0.88);
+  --hero-border: oklch(0.853 0.0244 86.09 / 0.15);
+}
+
+/* Full-bleed background image + gradient overlay */
 .hero-d__bg {
   position: absolute;
   inset: 0;
@@ -364,9 +384,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    oklch(0.14 0.023 153.3 / 0.92) 0%,
-    oklch(0.18 0.028 153.3 / 0.88) 50%,
-    oklch(0.14 0.023 153.3 / 0.94) 100%
+    var(--hero-scrim-1) 0%,
+    var(--hero-scrim-2) 50%,
+    var(--hero-scrim-1) 100%
   );
 }
 
@@ -387,6 +407,14 @@
   filter: blur(60px);
   pointer-events: none;
   z-index: 0;
+}
+
+.dark .hero-d::after {
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--amber) 20%, transparent),
+    transparent 70%
+  );
 }
 
 .hero-d__inner {
@@ -432,7 +460,7 @@
   display: flex;
   gap: var(--space-l);
   padding-top: var(--space-m);
-  border-top: 1px solid oklch(0.853 0.0244 86.09 / 0.15);
+  border-top: 1px solid var(--hero-border);
 }
 
 .hero-d__stat {
@@ -445,13 +473,13 @@
   font-family: var(--font-display);
   font-size: var(--step-3);
   font-weight: 800;
-  color: var(--tan-000, #faf9f6);
+  color: var(--hero-on);
 }
 
 .hero-d__stat-label {
   font-size: var(--step--1);
   font-weight: 500;
-  color: oklch(0.75 0.01 86.03);
+  color: var(--hero-on-muted);
 }
 
 .hero-d__title {
@@ -460,11 +488,15 @@
   font-size: var(--step-5);
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--tan-000, #faf9f6);
+  color: var(--hero-on);
 }
 
 .hero-d__title em {
   font-style: italic;
+  color: var(--accent);
+}
+
+.dark .hero-d__title em {
   color: var(--amber, #ffb800);
 }
 
@@ -472,22 +504,31 @@
   display: none;
   max-width: 50ch;
   font-size: var(--step-0);
-  color: oklch(0.82 0.01 86.03);
+  color: var(--hero-on-muted);
   line-height: 1.6;
 }
 
 .hero-d__badge-name {
-  color: var(--amber, #ffb800);
+  color: var(--accent);
   font-weight: 600;
 }
 
-/* View Requirements — the hero's one CTA, under the featured-badge text */
+.dark .hero-d__badge-name {
+  color: var(--amber, #ffb800);
+}
+
+/* View Requirements — the hero's one CTA, under the featured-badge text.
+   In light mode it's just the shared .button chrome (accent bg); dark
+   mode gets its own amber-on-dark treatment, same as .badge-hero__cta. */
 .hero-d__view-cta {
   display: none;
   width: 100%;
   justify-content: center;
   font-size: var(--step-0);
   padding-block: var(--space-xs);
+}
+
+.dark .hero-d__view-cta {
   background: var(--amber, #ffb800);
   color: #1a1400;
   border-color: var(--amber, #ffb800);
@@ -524,9 +565,9 @@
   width: 3.5rem;
   height: 3.5rem;
   border-radius: var(--radius-full);
-  border: 1px solid oklch(0.853 0.0244 86.09 / 0.2);
-  background: oklch(0.98 0.003 86.03 / 0.06);
-  color: oklch(0.85 0.01 86.03);
+  border: 1px solid var(--hero-border);
+  background: var(--surface-raised);
+  color: var(--hero-on-muted);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -535,6 +576,18 @@
 }
 
 .hero-d__carousel-btn:hover {
+  background: var(--accent-container);
+  color: var(--hero-on);
+  border-color: var(--accent);
+}
+
+.dark .hero-d__carousel-btn {
+  border-color: oklch(0.853 0.0244 86.09 / 0.2);
+  background: oklch(0.98 0.003 86.03 / 0.06);
+  color: oklch(0.85 0.01 86.03);
+}
+
+.dark .hero-d__carousel-btn:hover {
   background: oklch(0.98 0.003 86.03 / 0.15);
   color: var(--tan-000, #faf9f6);
   border-color: oklch(0.853 0.0244 86.09 / 0.4);
@@ -560,6 +613,10 @@
   border-radius: var(--radius-xl);
   overflow: hidden;
   aspect-ratio: 16 / 9;
+  box-shadow: var(--shadow-raised), 0 0 0 1px var(--card-border-subtle);
+}
+
+.dark .hero-d__image-wrap {
   box-shadow:
     0 8px 40px oklch(0.165 0.023 153.3 / 0.5),
     0 0 0 1px oklch(0.853 0.0244 86.09 / 0.1);
