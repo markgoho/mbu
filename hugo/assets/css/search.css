@@ -114,6 +114,7 @@
   padding: 0;
 
   .pagefind-ui__result {
+    position: relative;
     display: flex;
     align-items: stretch;
     background: var(--surface-raised);
@@ -123,11 +124,43 @@
     box-shadow: var(--shadow-card);
     gap: 0;
     overflow: hidden;
+    cursor: pointer;
+    transition:
+      box-shadow 0.15s ease,
+      border-color 0.15s ease;
   }
 }
 
 .dark .pagefind-ui__results .pagefind-ui__result {
   box-shadow: var(--shadow-elevated);
+}
+
+/* Whole-card click target. The result title's link grows an ::after
+   sized to the card via `inset: 0`, positioned against the nearest
+   positioned ancestor (.pagefind-ui__result) rather than the link
+   itself, so clicking anywhere in the card follows it — no JS needed.
+   Sub-results nest their own links inside .pagefind-ui__result-nested,
+   so only the *direct* title link gets the overlay, and the nested
+   block is lifted to its own stacking context above the overlay so
+   its links stay independently clickable. */
+@media (hover: hover) {
+  .pagefind-ui__result:hover {
+    border-color: var(--outline);
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+.pagefind-ui__result-inner
+  > .pagefind-ui__result-title
+  > .pagefind-ui__result-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.pagefind-ui__result-nested {
+  position: relative;
+  z-index: 1;
 }
 
 /* Thumbnail. Full-bleed, same language as .badge-hero__emblem and
