@@ -34,8 +34,6 @@
   --pagefind-ui-tag: var(--surface-sunken);
   --pagefind-ui-border-width: 2px;
   --pagefind-ui-border-radius: var(--radius-lg);
-  --pagefind-ui-image-border-radius: var(--radius-lg);
-  --pagefind-ui-image-box-ratio: 1;
   --pagefind-ui-font: inherit;
 }
 
@@ -117,6 +115,7 @@
 
   .pagefind-ui__result {
     display: flex;
+    align-items: stretch;
     background: var(--surface-raised);
     border-radius: var(--radius-xl);
     padding: 0;
@@ -131,25 +130,32 @@
   box-shadow: var(--shadow-elevated);
 }
 
-/* Thumbnail. Pagefind's bundled result component (pagefind-ui.css) ships
-   its own scoped rules for these two classes at higher specificity than
-   plain class selectors (each selector repeats its `svelte-*` scope class,
-   e.g. `.pagefind-ui__result-thumb.svelte-x.svelte-x`), so a version bump
-   can silently re-win the cascade out from under us — as happened here
-   (the thumb reverted to Pagefind's position:relative/aspect-ratio box and
-   the image to position:absolute/height:auto, letting it spill past the
-   thumb and under the title). `!important` pins our layout regardless of
-   what Pagefind's internal CSS does next. */
+/* Thumbnail. Full-bleed, same language as .badge-hero__emblem and
+   .badge-card__image: the photo runs edge-to-edge with no gutter or
+   border-radius of its own, stretching to the row's full height, and
+   is clipped only by .pagefind-ui__result's own overflow:hidden and
+   corner radius above.
+
+   Pagefind's bundled result component (pagefind-ui.css) ships its own
+   scoped rules for these two classes at higher specificity than plain
+   class selectors (each selector repeats its `svelte-*` scope class,
+   e.g. `.pagefind-ui__result-thumb.svelte-x.svelte-x`), so a version
+   bump can silently re-win the cascade out from under us — as happened
+   here (the thumb reverted to Pagefind's own aspect-ratio box and
+   flex-start alignment, and the image to position:absolute/height:auto,
+   letting it spill past the thumb and under the title). `!important`
+   pins this layout regardless of what Pagefind's internal CSS does
+   next. */
 .pagefind-ui__result-thumb {
-  flex: 0 0 6.5rem !important;
-  width: 6.5rem !important;
-  max-width: none !important;
-  height: 6.5rem !important;
-  aspect-ratio: 1 / 1 !important;
+  flex: 0 0 28% !important;
+  width: 28% !important;
+  max-width: 11rem !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
   margin: 0 !important;
   position: relative !important;
   overflow: hidden !important;
-  border-radius: var(--radius-lg);
+  border-radius: 0 !important;
   background: var(--surface-sunken);
 }
 
@@ -163,15 +169,7 @@
   max-width: none !important;
   max-height: none !important;
   object-fit: cover;
-  border-radius: inherit;
-}
-
-@media (min-width: 60rem) {
-  .pagefind-ui__result-thumb {
-    flex-basis: 9rem !important;
-    width: 9rem !important;
-    height: 9rem !important;
-  }
+  border-radius: 0 !important;
 }
 
 /* Result content area */
