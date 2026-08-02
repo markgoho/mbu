@@ -149,7 +149,7 @@
 .pagefind-ui__result-thumb {
   flex: 0 0 28% !important;
   width: 28% !important;
-  max-width: 11rem !important;
+  max-width: 14rem !important;
   height: auto !important;
   aspect-ratio: auto !important;
   margin: 0 !important;
@@ -369,14 +369,25 @@
   }
 }
 
+/* Below 60rem there's no room for a side rail without cropping the photo
+   to a sliver, so it switches to a full-width band above the text —
+   the same swap .badge-hero__emblem-col makes at its own narrow
+   breakpoint. Still full bleed: edge-to-edge, no radius of its own. */
 @media (max-width: 60rem) {
   .search-header {
     display: none;
   }
 
   .pagefind-ui__results .pagefind-ui__result {
-    padding: var(--space-s) !important;
-    border: 1px solid var(--card-border-subtle);
-    border-radius: var(--radius-md);
+    flex-direction: column !important;
+    border-radius: var(--radius-lg);
+  }
+
+  .pagefind-ui__result-thumb {
+    flex-basis: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
   }
 }
