@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en" class="{{ block "html-class" . }}{{ end }}">
   <head>
-    {{ partial "head/theme-init.html" . }}
     {{ partial "head/site.html" . }}
+    {{ partial "head/theme-init.html" . }}
     {{ partial "head/critical-css.html" . }}
 
     {{- block "head-styles" . -}}
@@ -14,12 +14,12 @@
     {{- block "head-scripts" . -}}
     {{- end -}}
 
+    {{ partial "head/resource-hints.html" . }}
     {{ partial "head/meta.html" . }}
 
     {{ $canonical := .Scratch.Get "canonical_override" | default .Params.canonical_override | default (.Permalink | absURL) }}
     <link rel="canonical" href="{{ $canonical | absURL }}" />
     <link rel="alternate" hreflang="en-US" href="{{ .Permalink | absURL }}" />
-    <link rel="prefetch" href="/pagefind/pagefind-ui.js" as="script" />
   </head>
 
   <body>
