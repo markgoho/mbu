@@ -1018,20 +1018,6 @@
   outline-color: transparent;
 }
 
-/* One active requirement at a time. Focus persists (that's the point --
-   it holds the toolbar open on what you clicked), but hovering a sibling
-   would otherwise light up two at once: two outlines, colliding where
-   the items meet, and two toolbars. The pointer is where the attention
-   is, so hover wins while it lasts and the focused sibling returns to
-   normal; move away and its outline and toolbar come back. */
-.req-children:has(> .req-child:hover) > .req-child:not(:hover) {
-  outline-color: transparent;
-}
-
-.req-children:has(> .req-child:hover) > .req-child:not(:hover) > .req-toolbar--inset {
-  opacity: 0;
-}
-
 .req-child__body {
   min-width: 0;
 }
@@ -1051,8 +1037,16 @@
    deeper reads as "quieter" rather than as another box. */
 .req-child__body .req-children--rail {
   margin-block-start: var(--space-xs);
-  gap: var(--space-2xs);
+  gap: var(--space-xs);
   border-inline-start-style: dashed;
+}
+
+/* It still has to clear the highlight outlines its items draw: at the
+   old --space-2xs gap two lit siblings overlapped by 2px at the narrow
+   end of the clamp. The highlight pulls in a step here too, which suits
+   a level meant to read quieter anyway. */
+.req-child__body .req-children--rail > .req-child {
+  outline-offset: 2px;
 }
 
 /* Marker is a fixed grid track, so a wrapped second line of text hangs
@@ -1082,7 +1076,11 @@
   gap: var(--space-2xs);
 }
 
+/* Chips are packed tighter than the outline's default reach allows, and
+   they already have a filled pill to read as a boundary, so their
+   highlight sits closer in. */
 .req-child--chips {
+  outline-offset: 1px;
   display: inline-flex;
   align-items: baseline;
   gap: var(--space-2xs);
@@ -1108,10 +1106,18 @@
    belong together", the opposite of what a choice set means. Discrete
    ring markers plus hairline separators instead: the shape everyone
    already reads as "exactly one of these". */
+/* The gap is load-bearing, not decoration. Every .req-child draws its
+   highlight with outline-offset: 4px, so an outline reaches 6px (offset
+   + width) beyond its own box on each side. Flush items -- these were
+   stacked with no gap at all, divided only by a top border -- therefore
+   overlapped by 12px whenever two were lit at once, which is exactly
+   what a focused option next to a hovered one looks like. The gap has to
+   clear twice that reach. */
 .req-children--options {
   margin: var(--space-s) 0 0;
   display: flex;
   flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .req-child--options {
