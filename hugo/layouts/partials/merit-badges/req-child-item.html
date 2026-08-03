@@ -38,6 +38,9 @@
   show_title - bool, whether this whole sibling group resolved a title
   for EVERY child. When false, only the marker + verbatim
   text render, even if this particular child has one.
+  preview_text_path - see req-card.html. When it equals this item's own
+  path, this item's text carries the view-transition-name that morphs it
+  in from the overview page's preview snippet.
 */}}
 {{ $req := .req }}
 {{ $badgeName := .badge_name }}
@@ -46,6 +49,18 @@
 {{ $variant := .variant }}
 {{ $lookup := .lookup }}
 {{ $showTitle := .show_title }}
+{{ $previewTextPath := .preview_text_path | default "" }}
+{{ $inheritedGuide := .inherited_guide | default "" }}
+
+{{/* This item's own guide when it has one, otherwise the nearest
+  ancestor's -- see req-children.html. What it passes DOWN is the same
+  value, so the nearest guide always wins over a more distant one. */}}
+{{ $guidePage := or $lookup.page $inheritedGuide }}
+
+{{ $textTransitionKey := "" }}
+{{ if eq $previewTextPath $req.path }}
+  {{ $textTransitionKey = replace $req.path "." "-" }}
+{{ end }}
 
 {{ $segments := split $req.path "." }}
 {{ $ownSegment := index $segments (sub (len $segments) 1) }}
@@ -65,6 +80,24 @@
 
 {{ $hasTitle := and $showTitle $lookup.title }}
 
+{{/* The study-guide URL. When this item owns its guide page the page top
+  IS the right destination. When it inherits an ancestor's, the page top
+  is the ancestor's material, so aim at the heading covering this item if
+  the page has one -- cooking's req7.md carries
+  "### Option A — Cooking Careers", which is precisely what 7.a wants.
+  Falls back to the page top when no heading matches, rather than
+  inventing a fragment. */}}
+{{ $guideHref := "" }}
+{{ with $guidePage }}
+  {{ $guideHref = .RelPermalink }}
+  {{ if not $lookup.page }}
+    {{ $fragment := partial "merit-badges/req-guide-fragment.html" (dict "page" . "marker" $bare "is_slug" $isSlug) }}
+    {{ with $fragment }}
+      {{ $guideHref = printf "%s#%s" $guidePage.RelPermalink . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ $classes := printf "req-child req-child--%s" $variant }}
 {{ if and (eq $variant "options") (not $ringable) }}
   {{ $classes = printf "%s req-child--no-ring" $classes }}
@@ -74,12 +107,16 @@
 <li
   id="{{ $req.path }}"
   class="{{ $classes }}"
+  tabindex="-1"
   data-pagefind-index-attrs="data-anchor,data-badge-name"
   data-anchor="{{ $req.path }}"
   data-badge-name="{{ $badgeName }}">
   {{ if eq $variant "chips" }}
     <span class="req-child__marker">{{ $bare }}</span>
-    <span class="req-child__text">{{ $req.text | markdownify }}</span>
+    <span
+      class="req-child__text"
+      {{ with $textTransitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
+      >{{ $req.text | markdownify }}</span>
   {{ else }}
     {{ if eq $variant "options" }}
       {{ if $ringable }}
@@ -100,9 +137,9 @@
         </div>
       {{ end }}
 
-      {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text" "title" $lookup.title) }}
+      {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text" "title" $lookup.title "transition_key" $textTransitionKey) }}
 
-      {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
+      {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "preview_text_path" $previewTextPath "inherited_guide" $guidePage) }}
 
       {{ if and $req.resources (not $hideResources) }}
         <div class="resources">
@@ -116,10 +153,12 @@
       {{ end }}
     </div>
 
-    {{/* Out of flow (see the CSS): actions have nowhere to sit inline
+    {{/* Out of flow (see the CSS): the toolbar has nowhere to sit inline
       without crowding the marker or reserving an empty row above every
-      untitled item.
+      untitled item. It carries this subrequirement's guide link too --
+      the floating guide icon that used to sit here occupied the very
+      corner the toolbar needs.
     */}}
-    {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" $lookup.page) }}
+    {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guideHref" $guideHref "variant" "inset") }}
   {{ end }}
 </li>

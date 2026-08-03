@@ -3,52 +3,114 @@
   Renders one depth-1 requirement as a timeline node + card: eyebrow,
   title (both from the DRG guide when it resolves), verbatim requirement
   text (styled as a pill when it's a short mode-bearing stem, and with
-  any title-matching leading label stripped -- see req-text.html),
-  actions, and its children (dispatched via req-children.html). Card
-  chrome only ever starts here -- depth 1.
+  any title-matching leading label stripped -- see req-text.html), an
+  action toolbar, and its children (dispatched via req-children.html).
+  Card chrome only ever starts here -- depth 1.
+
+  WHY THE PANEL IS CAPPED. The main column runs the full width of the
+  page, but requirement text is capped at a readable measure, so a panel
+  that filled the column put its actions hundreds of pixels from the text
+  they belonged to on a wide monitor -- the two read as unrelated things.
+  The panel is therefore no wider than the text it holds, which keeps
+  every action next to its content without needing a second column to
+  park them in. (There was one: a sticky "action rail" holding a
+  study-guide CTA, a jump list of subrequirements and copy-link. Once
+  every requirement grew its own toolbar, the rail was carrying a link
+  the subrequirement below it already carried, and on 422 of 1,115 cards
+  it was a lone button in a 13rem column. See git history.)
 
   Params (dict):
-  req            - the top-level requirement object
-  index          - 1-based position, used for the timeline node number
-  badge_name     - badge title, for the data-badge-name pagefind attr
-  hide_resources - passed through to children/resources rendering
-  guide          - the guide section Page, or nil
+  req                - the top-level requirement object
+  index              - 1-based position, used for the timeline node number
+  badge_name         - badge title, for the data-badge-name pagefind attr
+  hide_resources     - passed through to children/resources rendering
+  guide              - the guide section Page, or nil
+  preview_transition - true when this requirement also appears in the
+  overview page's "What you'll do" preview (badge-landing.html shows
+  the first 4). Only then does the card carry view-transition-names,
+  so the number/title morph in from their preview counterparts instead
+  of just cross-fading -- see view-transitions.css.
+  preview_text_path  - path of the node whose text the preview's snippet
+  actually shows (see req-preview.html). Usually equal to req.path, but
+  when this requirement's own text is boilerplate ("Do the following:")
+  the preview snippet comes from a subrequirement instead, so the text
+  view-transition-name belongs on that descendant, not here -- this gets
+  threaded down through req-children.html/req-child-item.html until a
+  node's own path matches it.
 */}}
 {{ $req := .req }}
 {{ $index := .index }}
 {{ $badgeName := .badge_name }}
 {{ $hideResources := .hide_resources | default false }}
 {{ $guide := .guide }}
+{{ $previewTransition := .preview_transition | default false }}
+{{ $previewTextPath := .preview_text_path | default "" }}
+
+{{ $transitionKey := "" }}
+{{ if $previewTransition }}
+  {{ $transitionKey = replace $req.path "." "-" }}
+{{ end }}
+
+{{ $textTransitionKey := "" }}
+{{ if eq $previewTextPath $req.path }}
+  {{ $textTransitionKey = replace $req.path "." "-" }}
+{{ end }}
 
 {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
+
+{{/* Only offer a guide for THIS requirement when the resolved page
+  actually covers it. Under req-guide-lookup.html's rule-3 prefix match a
+  page is found for a parent that has none of its own -- cooking 1
+  resolves req1a.md -- and that page really belongs to the first child,
+  which links to it from its own toolbar. Offering it here too would put
+  the same link twice on one card. */}}
+{{ $ownPage := cond (eq $lookup.covers true) $lookup.page "" }}
+{{ $ownGuideHref := "" }}
+{{ with $ownPage }}
+  {{ $ownGuideHref = .RelPermalink }}
+{{ end }}
 
 
 <li
   id="{{ $req.path }}"
   class="req-card"
+  tabindex="-1"
   data-pagefind-index-attrs="data-anchor,data-badge-name"
   data-anchor="{{ $req.path }}"
   data-badge-name="{{ $badgeName }}">
-  <span class="req-card__node" aria-hidden="true"><span class="req-card__node-text">{{ $index }}</span></span>
+  <span
+    class="req-card__node"
+    aria-hidden="true"
+    {{ with $transitionKey }}style="view-transition-name: req-num-{{ . }}"{{ end }}
+    ><span class="req-card__node-text">{{ $index }}</span></span
+  >
   <div class="req-card__panel">
     <div class="req-card__header">
       <div class="req-card__heading">
-        {{ with $lookup.eyebrow }}
-          <p class="req-card__eyebrow">{{ . }}</p>
-        {{ end }}
+        {{/* The toolbar rides with the eyebrow/title -- the line where
+          the requirement announces itself -- so it sits beside the text
+          it acts on rather than in a far corner. */}}
+        <div class="req-card__eyebrow-row">
+          {{ with $lookup.eyebrow }}
+            <p class="req-card__eyebrow">{{ . }}</p>
+          {{ end }}
+          {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guideHref" $ownGuideHref "variant" "heading") }}
+        </div>
         <div class="req-card__title-row">
           {{ with $lookup.title }}
-            <h3 class="req-card__title">{{ . }}</h3>
+            <h3
+              class="req-card__title"
+              {{ with $transitionKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}
+              >{{ . }}</h3>
           {{ end }}
           {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
         </div>
       </div>
-      {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guidePage" "") }}
     </div>
 
-    {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-card__text" "title" $lookup.title) }}
+    {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-card__text" "title" $lookup.title "transition_key" $textTransitionKey) }}
 
-    {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide) }}
+    {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "inherited_guide" $ownPage "preview_text_path" $previewTextPath) }}
 
     {{ if and $req.resources (not $hideResources) }}
       <div class="resources">
@@ -58,15 +120,6 @@
             <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
           {{ end }}
         </ul>
-      </div>
-    {{ end }}
-
-    {{ with $lookup.page }}
-      <div class="req-card__footer">
-        <a href="{{ .RelPermalink }}" class="req-card__guide-link">
-          <span>View {{ if in (lower (printf "%s %s" $lookup.eyebrow $lookup.title)) "field" }}Field{{ else }}Study{{ end }} Guide</span>
-          {{ partial "icon.html" (dict "name" "arrow-right" "class" "req-card__guide-link-icon") }}
-        </a>
       </div>
     {{ end }}
   </div>

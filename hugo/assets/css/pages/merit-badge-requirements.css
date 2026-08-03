@@ -554,10 +554,22 @@
   }
 }
 
+/* Sticky, so the requirement you're reading stays labelled the whole way
+   down a card that's taller than the viewport -- lifesaving 3 and cooking
+   4 both are. Its containing block is the full-height <li>, so it travels
+   the length of its own card and stops, rather than running on into the
+   next requirement. The 4px surface-coloured border doubles as the mask
+   that hides the timeline line passing underneath it.
+
+   The narrow-container rule below re-pins this to the panel corner with
+   `position: absolute`, which wins on specificity -- there is no room for
+   a gutter at that width, so nothing sticks. */
 .req-card__node {
-  position: relative;
+  position: sticky;
+  top: var(--space-m);
   z-index: 1;
   flex-shrink: 0;
+  align-self: flex-start;
   width: var(--space-l);
   height: var(--space-l);
   display: flex;
@@ -580,9 +592,15 @@
   transform: translateY(-2px);
 }
 
+/* No wider than the text it holds. The main column is full-bleed, so a
+   panel that filled it stranded every action hundreds of pixels from the
+   content on a wide monitor -- the problem the action rail used to exist
+   to solve by filling that space instead. With the toolbar sitting beside
+   the text, capping the panel is the simpler answer. */
 .req-card__panel {
   flex: 1;
   min-width: 0;
+  max-inline-size: 78ch;
   background: var(--surface-raised);
   border: 1px solid var(--card-border-subtle);
   border-radius: var(--radius-xl);
@@ -614,13 +632,29 @@
     0 0 0 1px var(--accent);
 }
 
-.req-card:target .req-card__panel {
+/* The currently-linked requirement, by either of two routes:
+     :target       -- arrived here from a link someone shared
+     :focus-within -- clicked or tapped it on this page
+   Clicking can't use :target, because :target only updates on a real
+   fragment navigation and that always scrolls its target to the top of
+   the viewport. Requirements carry tabindex="-1", so clicking one
+   focuses it; the browser scrolls a focused element into view only when
+   it isn't already visible, so a requirement you can see stays put. */
+.req-card:target > .req-card__panel,
+.req-card:focus-within > .req-card__panel {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-.dark .req-card:target .req-card__panel {
+.dark .req-card:target > .req-card__panel,
+.dark .req-card:focus-within > .req-card__panel {
   outline-color: var(--amber);
+}
+
+/* A card containing the linked subrequirement is not itself linked. */
+.req-card:has(.req-child:target) > .req-card__panel,
+.req-card:has(.req-child:focus-within) > .req-card__panel {
+  outline: none;
 }
 
 .req-card__header {
@@ -650,8 +684,9 @@
   color: var(--on-surface);
 }
 
+/* The panel is already at the measure, so a second, narrower cap here
+   would only create a second ragged edge inside it. */
 .req-card__text {
-  max-width: 75ch;
   margin-block: var(--space-xs) 0;
   font-size: var(--step-0);
   line-height: var(--line-height-relaxed);
@@ -685,35 +720,268 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Actions (copy link / study guide link)                               */
+/* Action toolbar (copy link / copy text / study guide)                 */
 /* ------------------------------------------------------------------ */
 
-.req-actions {
+/* A single inset bar rather than icons pinned to a corner. Pinning them
+   to a corner meant fighting the panel's border radius, and left no room
+   for a second action once "copy text" joined "copy link". Inset by a
+   fixed offset, the toolbar never meets a rounded edge at all. */
+.req-toolbar {
   display: flex;
-  gap: var(--space-3xs);
+  align-items: center;
+  gap: 1px;
+  padding: 2px;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.req-toolbar__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 2rem;
+  padding: 0 0.5rem;
+  border: 0;
+  border-radius: calc(var(--radius-md) - 3px);
+  background: none;
+  font-family: var(--font-body);
+  font-size: var(--step--2);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--on-surface-muted);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.req-toolbar__btn:hover,
+.req-toolbar__btn:focus-visible {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+}
+
+.req-toolbar__icon {
+  width: 0.95em;
+  height: 0.95em;
   flex-shrink: 0;
 }
 
-.req-actions__btn {
-  display: inline-flex;
+/* Depth 1: inline beside the eyebrow. It wraps -- at 390px an eyebrow
+   plus a three-button toolbar measured 327px against a 390px viewport
+   and pushed the whole page into horizontal scroll. */
+.req-card__eyebrow-row {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: var(--radius-full);
-  color: var(--on-surface-muted);
-  text-decoration: none;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  min-height: 2.25rem;
+}
 
-  &:hover,
-  &:focus-visible {
-    background: var(--surface-sunken);
-    color: var(--accent);
+.req-card__eyebrow-row .req-card__eyebrow {
+  margin: 0;
+}
+
+/* Below depth 1: pinned inside the item's own top-right. */
+.req-toolbar--inset {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Opacity, not display: the buttons stay focusable, so tabbing into a
+   requirement brings its toolbar up. A hover-only affordance is
+   unreachable by keyboard and invisible on touch, which is exactly what
+   the icon buttons here got wrong. */
+/* Hover reveals it; so does focus. Clicking a requirement focuses it
+   (tabindex="-1"), so the toolbar stays up on the requirement you just
+   picked -- the same state that draws its outline and put its link on
+   your clipboard -- until you pick another or click away. Tabbing works
+   for the same reason: an opacity:0 button is still focusable. */
+.req-card:hover .req-toolbar--heading,
+.req-card:focus-within .req-toolbar--heading,
+.req-child:hover > .req-toolbar--inset,
+.req-child:focus-within > .req-toolbar--inset {
+  opacity: 1;
+}
+
+/* Nested requirements: hovering 3.a also hovers the card containing it,
+   so without this every ancestor's toolbar would light up at once. Only
+   the innermost hovered requirement shows its own. */
+.req-card:has(.req-child:hover) .req-toolbar--heading,
+.req-card:has(.req-child:focus-within) .req-toolbar--heading,
+.req-child:has(.req-child:hover) > .req-toolbar--inset,
+.req-child:has(.req-child:focus-within) > .req-toolbar--inset {
+  opacity: 0;
+}
+
+/* Touch: there is no hover, so tapping a requirement is how you ask for
+   its toolbar. Focus does the revealing -- requirements carry
+   tabindex="-1" so a tap focuses one -- rather than a hash navigation,
+   which would scroll the tapped requirement to the top of the viewport
+   at the same moment its toolbar appeared, throwing the thing you
+   touched away from your thumb. The browser scrolls a focused element
+   into view only when it isn't already visible, so a requirement you can
+   see stays exactly where it is.
+
+   Showing every toolbar instead was measured at +2,330px (+17.7%) on
+   cooking's already-13,000px page, to surface chrome that Selective
+   Attention says stops registering after the first screen. */
+/* LAYOUT IS KEYED ON WIDTH, NOT ON POINTER TYPE.
+   Revealing is already handled above by hover OR focus, which covers
+   every input; what changes here is only where the toolbar sits.
+
+   Keying this on (hover: none) was wrong twice over. A touch laptop,
+   a Surface or an iPad with a trackpad reports (hover: hover) at a
+   narrow width and got the wide-screen layout it has no room for --
+   the toolbar absolutely positioned over its own title. And because
+   Chrome's device emulation flips that media feature on resize, the
+   layout visibly jumped between the two on a single page.
+
+   Pinned to the top-right the toolbar lands on the title once the
+   column is narrow, so below this width it joins the flow. It has to
+   SPAN the item's grid rather than sit in a cell: a subrequirement is a
+   grid of [marker | content], so an auto-placed toolbar three labelled
+   buttons wide overflowed its own outline. */
+@container req-main (max-width: 40rem) {
+  .req-toolbar--inset {
+    position: static;
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-inline-size: 100%;
+    margin-block-start: var(--space-2xs);
   }
 }
 
-.req-actions__icon {
-  width: 1.1rem;
-  height: 1.1rem;
+/* Both carry tabindex="-1", so this is never real keyboard focus (that
+   never puts them in the tab order) -- it's the browser focusing the
+   fragment-navigation target, which arriving from "What you'll do" or
+   any #path link triggers on every pointer type, not just touch. The
+   toolbar appearing (:focus-within, above) and :target's own outline are
+   the feedback; the UA's default ring on top of them is noise.
+
+   .req-card only. Its <li> draws no outline of ours -- the highlight
+   lives on the panel inside it -- so the UA ring is all there is to
+   remove. .req-child draws ITS highlight on this very element, and was
+   in this rule too, so `outline: none` was silently cancelling the
+   highlight on every clicked subrequirement. Its permanent
+   `outline: 2px solid transparent` already displaces the UA ring. */
+.req-card:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .req-toolbar {
+    transition: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Clickable requirement region                                         */
+/* ------------------------------------------------------------------ */
+
+/* Clicking anywhere in a requirement copies its link, so the boundary of
+   what you're about to copy has to be visible before you commit.
+
+   Depth 1 draws NO outline of its own: its [data-anchor] element is the
+   whole <li>, wrapping the timeline node AND the panel, so an outline
+   there ringed everything from outside -- and the panel's own hover
+   border was already drawing a ring at the same moment, giving two
+   concentric outlines. The panel ring IS the highlight; the node lights
+   up with it so the requirement reads as one object. */
+.req-card,
+.req-child {
+  cursor: pointer;
+}
+
+.req-card:hover > .req-card__node,
+.req-card:focus-within > .req-card__node {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+/* Subrequirements have no panel to light up, so they get the outline. */
+.req-child {
+  border-radius: var(--radius-md);
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+  transition:
+    outline-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.req-child:hover,
+.req-child:focus-visible {
+  outline-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+/* Requirements nest, so hovering 3.a also hovers everything containing
+   it. Only the innermost may light up -- including suppressing the
+   card's panel ring and node, which otherwise lit the whole card
+   whenever a single subrequirement was hovered. */
+.req-card:has(.req-child:hover) > .req-card__panel {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+.req-card:has(.req-child:hover) > .req-card__node {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+}
+
+.req-child:has(.req-child:hover) {
+  outline-color: transparent;
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .req-child {
+    transition: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Copy confirmation                                                    */
+/* ------------------------------------------------------------------ */
+
+/* Built by deep-link.ts on first use. A copy that says nothing is
+   indistinguishable from one the browser blocked. */
+.req-toast {
+  position: fixed;
+  z-index: 100;
+  inset-block-end: 1.5rem;
+  inset-inline-start: 50%;
+  translate: -50% 0;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  box-shadow: var(--shadow-elevated);
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    translate 0.2s ease;
+  pointer-events: none;
+}
+
+.req-toast[data-show] {
+  opacity: 1;
+  translate: -50% -0.35rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .req-toast {
+    transition: none;
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -734,14 +1002,34 @@
   scroll-margin-top: var(--space-m);
 }
 
-.req-child:target {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-  border-radius: var(--radius-md);
+.req-child:target,
+.req-child:focus-within {
+  outline-color: var(--accent);
 }
 
-.dark .req-child:target {
+.dark .req-child:target,
+.dark .req-child:focus-within {
   outline-color: var(--amber);
+}
+
+/* Innermost only -- a subrequirement's focus must not also light up
+   every requirement containing it. */
+.req-child:has(.req-child:focus-within) {
+  outline-color: transparent;
+}
+
+/* One active requirement at a time. Focus persists (that's the point --
+   it holds the toolbar open on what you clicked), but hovering a sibling
+   would otherwise light up two at once: two outlines, colliding where
+   the items meet, and two toolbars. The pointer is where the attention
+   is, so hover wins while it lasts and the focused sibling returns to
+   normal; move away and its outline and toolbar come back. */
+.req-children:has(> .req-child:hover) > .req-child:not(:hover) {
+  outline-color: transparent;
+}
+
+.req-children:has(> .req-child:hover) > .req-child:not(:hover) > .req-toolbar--inset {
+  opacity: 0;
 }
 
 .req-child__body {
@@ -871,7 +1159,6 @@
 }
 
 .req-child__text {
-  max-width: 75ch;
   margin-block: var(--space-3xs) 0;
   line-height: var(--line-height-relaxed);
   color: var(--on-surface);
@@ -879,69 +1166,6 @@
   & p {
     margin: 0;
   }
-}
-
-/* Actions are taken out of flow: inline they'd either crowd the marker
-   or reserve an empty 2.75rem row above every untitled item. Same
-   hover/focus reveal the tiles used before. */
-.req-child > .req-actions {
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-}
-
-.req-child:hover > .req-actions,
-.req-child:focus-within > .req-actions {
-  opacity: 1;
-}
-
-@media (hover: none) {
-  .req-child > .req-actions {
-    opacity: 1;
-  }
-}
-
-.req-card__footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-block-start: var(--space-m);
-  padding-block-start: var(--space-s);
-  border-top: 1px solid var(--card-border-subtle);
-}
-
-.dark .req-card__footer {
-  border-top-color: var(--card-border-subtle);
-}
-
-.req-card__guide-link {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3xs);
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: var(--step--1);
-  color: var(--accent);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.req-card__guide-link:hover,
-.req-card__guide-link:focus-visible {
-  color: var(--on-surface);
-  text-decoration: underline;
-}
-
-.req-card__guide-link:hover .req-card__guide-link-icon,
-.req-card__guide-link:focus-visible .req-card__guide-link-icon {
-  transform: translateX(4px);
-}
-
-.req-card__guide-link-icon {
-  width: 1.15em;
-  height: 1.15em;
-  transition: transform 0.2s ease;
 }
 
 /* ------------------------------------------------------------------ */

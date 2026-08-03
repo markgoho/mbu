@@ -1,0 +1,63 @@
+{{/* merit-badges/req-guide-fragment.html
+
+  Finds the heading ON an inherited guide page that actually describes a
+  given subrequirement, so the link can land on it instead of the top of
+  the page.
+
+  This exists because a guide page often covers a whole requirement in
+  one file while still giving each option its own heading. Cooking has
+  req7.md and no req7a.md, so subrequirement 7.a inherits requirement 7's
+  page (see req-children.html) -- but that page contains
+  "### Option A — Cooking Careers", which is exactly the section 7.a is
+  asking for. Linking to the page top made the scout hunt for it.
+
+  Matching is on the rendered heading IDs (Page.Fragments.Identifiers),
+  not on heading text, because the ID is already normalised:
+  "### Option A — Cooking Careers" -> "option-a--cooking-careers". Two
+  shapes are recognised, both anchored to the START of the id so that
+  marker "a" can never match "option-ab-...":
+
+    option-<marker> / part-<marker>  -- "a"           -> option-a--...
+    <slug>                           -- "beef-cattle" -> beef-cattle-option
+
+  The bare form is only tried for SLUG ids. A one-letter marker matches
+  far too much on its own: "a" hit animal-science's "### A Brief History"
+  (id "a-brief-history"), which has nothing to do with option A. A slug
+  is several words long and can't collide by accident.
+
+  Returns the fragment id, or "" when nothing matches -- in which case
+  the caller should link to the page without one rather than guess.
+
+  Params (dict):
+  page    - the guide Page being inherited
+  marker  - the subrequirement's own bare id ("a", "3", "beef-cattle")
+  is_slug - whether that id is a named-option slug rather than a list
+  marker; see req-child-item.html, which already computes it
+*/}}
+{{ $page := .page }}
+{{ $marker := lower (.marker | default "") }}
+{{ $isSlug := .is_slug | default false }}
+{{ $fragment := "" }}
+
+{{ if and $page $marker }}
+  {{ $candidates := slice
+    (printf "option-%s" $marker)
+    (printf "part-%s" $marker)
+  }}
+  {{ if $isSlug }}
+    {{ $candidates = $candidates | append $marker }}
+  {{ end }}
+  {{ range $id := $page.Fragments.Identifiers }}
+    {{ if not $fragment }}
+      {{ range $candidate := $candidates }}
+        {{ if not $fragment }}
+          {{ if or (eq $id $candidate) (strings.HasPrefix $id (printf "%s-" $candidate)) }}
+            {{ $fragment = $id }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $fragment }}

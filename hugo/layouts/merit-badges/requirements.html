@@ -48,9 +48,21 @@
 
         <ol class="req-timeline">
           {{ range $i, $req := $json.requirements }}
-            {{ partial "merit-badges/req-card.html" (dict "req" $req "index" (add $i 1) "badge_name" $json.title "hide_resources" true "guide" $guide) }}
+            {{/* Only the first 4 requirements appear in the overview page's
+              "What you'll do" preview, so only those carry a
+              view-transition-name here. preview_text_path tells req-card.html
+              (and, when it's nested deeper, req-child-item.html) which node's
+              text is the one the preview snippet actually shows -- see
+              req-preview.html and req-card.html. */}}
+            {{ $previewTextPath := "" }}
+            {{ if lt $i 4 }}
+              {{ $preview := partial "merit-badges/req-preview.html" (dict "guide" $guide "req" $req) }}
+              {{ $previewTextPath = $preview.candidate_path }}
+            {{ end }}
+            {{ partial "merit-badges/req-card.html" (dict "req" $req "index" (add $i 1) "badge_name" $json.title "hide_resources" true "guide" $guide "preview_transition" (lt $i 4) "preview_text_path" $previewTextPath) }}
           {{ end }}
         </ol>
+
       </div>
     </div>
   </div>

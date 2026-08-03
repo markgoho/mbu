@@ -1,0 +1,93 @@
+{{/* merit-badges/req-preview.html
+
+  Resolves the "What you'll do" preview card content for one top-level
+  requirement: title, one-sentence snippet, and which node the snippet's
+  text actually came from. Shared by badge-landing.html (which renders the
+  preview) and requirements.html/req-card.html (which need to know where
+  to put the matching view-transition-name -- boilerplate text like "Do
+  the following:" has no snippet of its own, so the walk-down below can
+  land on a subrequirement instead of the top-level requirement itself).
+
+  Params (dict):
+  guide - the guide section Page, or nil
+  req   - the top-level requirement object
+
+  Returns a dict:
+  title          - resolved title, or a synthesized "Requirement N" when
+  nothing resolves (matches what the preview card displays)
+  snippet        - one-sentence preview text
+  candidate_path - path of the node the snippet's text actually came
+  from; equal to req.path unless boilerplate forced a walk-down
+*/}}
+{{ $guide := .guide }}
+{{ $req := .req }}
+
+{{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
+{{ $title := $lookup.title }}
+
+{{ $firstSub := "" }}
+{{ $subLookup := dict }}
+{{ if $req.subrequirements }}
+  {{ $firstSub = index $req.subrequirements 0 }}
+  {{ $subLookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $firstSub.path "children" $firstSub.subrequirements) }}
+{{ end }}
+
+{{ if not $title }}
+  {{ if $lookup.eyebrow }}
+    {{ $title = $lookup.eyebrow }}
+  {{ else if $subLookup.title }}
+    {{ $title = $subLookup.title }}
+  {{ else if $subLookup.eyebrow }}
+    {{ $title = $subLookup.eyebrow }}
+  {{ else }}
+    {{ $title = printf "Requirement %s" $req.path }}
+  {{ end }}
+{{ end }}
+
+{{ $boilerplateRE := `(?i)^([^.!?]*[.!?]\s*)?(do the following|with the aid of|do (one|two|three|all) of the following|in field trips|if instruction is done|discuss( with your counselor)? the following)` }}
+{{ $rawSnippet := $req.text | markdownify | plainify | htmlUnescape }}
+{{ $candidate := $req }}
+{{/* Some boilerplate ("Do the following:") nests directly into a subrequirement
+  that is itself just boilerplate, so walk down a few levels for real content.
+*/}}
+{{ range seq 3 }}
+  {{ $trimmedSnippet := strings.TrimSpace $rawSnippet }}
+  {{ $isLabelOnly := and (strings.HasSuffix $trimmedSnippet ":") (le (len (split $trimmedSnippet " ")) 4) }}
+  {{ if and (or (findRE $boilerplateRE $rawSnippet 1) $isLabelOnly) $candidate.subrequirements }}
+    {{ $candidate = index $candidate.subrequirements 0 }}
+    {{ $rawSnippet = $candidate.text | markdownify | plainify | htmlUnescape }}
+  {{ end }}
+{{ end }}
+
+{{/* Newer badges echo the section title as the requirement's opening sentence
+  (e.g. "History of Wildland Fire. Research and discuss…"), and some older
+  badges open with a bare label ("Maps.", "Safety.") that just paraphrases
+  the guide's title. Strip that lead-in so the snippet doesn't repeat the
+  title above it or read as an uninformative one-word fragment.
+*/}}
+{{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $rawSnippet 1 }}
+{{ if $leadSentence }}
+  {{ $lead := index $leadSentence 0 }}
+  {{ $leadText := strings.TrimRight ".!?" $lead | strings.TrimSpace }}
+  {{ $matchesTitle := eq (strings.ToLower $leadText) (strings.ToLower (strings.TrimSpace $title)) }}
+  {{ $isShortLabel := le (len (split $leadText " ")) 3 }}
+  {{ if or $matchesTitle $isShortLabel }}
+    {{ $rest := strings.TrimSpace (strings.TrimPrefix $lead $rawSnippet) }}
+    {{ if ge (len $rest) 15 }}
+      {{ $rawSnippet = $rest }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Some scraped text has a stray empty sentence ("Option A—Access. . Visit…")
+  left over from a source label; drop any leading punctuation-only fragment.
+*/}}
+{{ $rawSnippet = replaceRE `^\s*[.!?]+\s*` "" $rawSnippet }}
+
+{{ $snippet := $rawSnippet }}
+{{ $sentenceMatch := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $rawSnippet 1 }}
+{{ if $sentenceMatch }}
+  {{ $snippet = index $sentenceMatch 0 }}
+{{ end }}
+
+{{ return (dict "title" $title "snippet" $snippet "candidate_path" $candidate.path) }}

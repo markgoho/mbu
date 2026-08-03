@@ -41,18 +41,28 @@
   punctuation don't defeat it.
 
   Params (dict):
-  req            - the parent requirement (its .subrequirements are rendered)
+  req              - the parent requirement (its .subrequirements are rendered)
   badge_name
   hide_resources
   guide
+  preview_text_path - see req-card.html; threaded through to req-child-item.html
+  inherited_guide - the nearest ancestor's own guide Page, or "". A
+  subrequirement with no guide of its own offers this instead, so every
+  requirement can reach the guide that actually covers it -- cooking has
+  req7.md but no req7a.md, and option A was showing no study guide at
+  all even though requirement 7's guide describes it.
+  unchanged so whichever descendant's path matches it can carry the
+  preview snippet's view-transition-name
 */}}
 {{ $req := .req }}
 {{ $children := $req.subrequirements }}
+{{ $inheritedGuide := .inherited_guide | default "" }}
 
 {{ if $children }}
   {{ $badgeName := .badge_name }}
   {{ $hideResources := .hide_resources | default false }}
   {{ $guide := .guide }}
+  {{ $previewTextPath := .preview_text_path | default "" }}
   {{ $mode := $req.subrequirement_mode }}
 
   {{ $anyChildHasChildren := false }}
@@ -101,7 +111,7 @@
 
   <ol class="req-children req-children--{{ $variant }}">
     {{ range $i, $child := $children }}
-      {{ partial "merit-badges/req-child-item.html" (dict "req" $child "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "variant" $variant "lookup" (index $lookups $i) "show_title" $allHaveTitles) }}
+      {{ partial "merit-badges/req-child-item.html" (dict "req" $child "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "variant" $variant "lookup" (index $lookups $i) "show_title" $allHaveTitles "preview_text_path" $previewTextPath "inherited_guide" $inheritedGuide) }}
     {{ end }}
   </ol>
 {{ end }}

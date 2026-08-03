@@ -90,73 +90,24 @@
           <h2 class="badge-preview__heading">What you'll do</h2>
           <ul class="badge-preview__list">
             {{ range $i, $req := first 4 $json.requirements }}
-              {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
-              {{ $title := $lookup.title }}
-              {{ $firstSub := "" }}
-              {{ $subLookup := dict }}
-              {{ if $req.subrequirements }}
-                {{ $firstSub = index $req.subrequirements 0 }}
-                {{ $subLookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $firstSub.path "children" $firstSub.subrequirements) }}
-              {{ end }}
+              {{ $preview := partial "merit-badges/req-preview.html" (dict "guide" $guide "req" $req) }}
+              {{ $title := $preview.title }}
+              {{ $snippet := $preview.snippet }}
 
-              {{ if not $title }}
-                {{ if $lookup.eyebrow }}
-                  {{ $title = $lookup.eyebrow }}
-                {{ else if $subLookup.title }}
-                  {{ $title = $subLookup.title }}
-                {{ else if $subLookup.eyebrow }}
-                  {{ $title = $subLookup.eyebrow }}
-                {{ else }}
-                  {{ $title = printf "Requirement %s" $req.path }}
-                {{ end }}
-              {{ end }}
-
-              {{ $boilerplateRE := `(?i)^([^.!?]*[.!?]\s*)?(do the following|with the aid of|do (one|two|three|all) of the following|in field trips|if instruction is done|discuss( with your counselor)? the following)` }}
-              {{ $rawSnippet := $req.text | markdownify | plainify | htmlUnescape }}
-              {{ $candidate := $req }}
-              {{/* Some boilerplate ("Do the following:") nests directly into a subrequirement
-                that is itself just boilerplate, so walk down a few levels for real content.
-              */}}
-              {{ range seq 3 }}
-                {{ $trimmedSnippet := strings.TrimSpace $rawSnippet }}
-                {{ $isLabelOnly := and (strings.HasSuffix $trimmedSnippet ":") (le (len (split $trimmedSnippet " ")) 4) }}
-                {{ if and (or (findRE $boilerplateRE $rawSnippet 1) $isLabelOnly) $candidate.subrequirements }}
-                  {{ $candidate = index $candidate.subrequirements 0 }}
-                  {{ $rawSnippet = $candidate.text | markdownify | plainify | htmlUnescape }}
-                {{ end }}
-              {{ end }}
-
-              {{/* Newer badges echo the section title as the requirement's opening sentence
-                (e.g. "History of Wildland Fire. Research and discuss…"), and some older
-                badges open with a bare label ("Maps.", "Safety.") that just paraphrases
-                the guide's title. Strip that lead-in so the snippet doesn't repeat the
-                title above it or read as an uninformative one-word fragment.
-              */}}
-              {{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $rawSnippet 1 }}
-              {{ if $leadSentence }}
-                {{ $lead := index $leadSentence 0 }}
-                {{ $leadText := strings.TrimRight ".!?" $lead | strings.TrimSpace }}
-                {{ $matchesTitle := eq (strings.ToLower $leadText) (strings.ToLower (strings.TrimSpace $title)) }}
-                {{ $isShortLabel := le (len (split $leadText " ")) 3 }}
-                {{ if or $matchesTitle $isShortLabel }}
-                  {{ $rest := strings.TrimSpace (strings.TrimPrefix $lead $rawSnippet) }}
-                  {{ if ge (len $rest) 15 }}
-                    {{ $rawSnippet = $rest }}
-                  {{ end }}
-                {{ end }}
-              {{ end }}
-
-              {{/* Some scraped text has a stray empty sentence ("Option A—Access. . Visit…")
-                left over from a source label; drop any leading punctuation-only fragment.
-              */}}
-              {{ $rawSnippet = replaceRE `^\s*[.!?]+\s*` "" $rawSnippet }}
-
-              {{ $snippet := $rawSnippet }}
-              {{ $sentenceMatch := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $rawSnippet 1 }}
-              {{ if $sentenceMatch }}
-                {{ $snippet = index $sentenceMatch 0 }}
-              {{ end }}
-
+              {{/* Shared with req-card.html/req-child-item.html on the
+                requirements page: a `view-transition-name` keyed by path
+                lets this card's number, title, and snippet morph into their
+                counterparts there instead of just cross-fading. The number
+                and title key off this requirement's own path, but the
+                snippet keys off `candidate_path` -- when this requirement's
+                own text is just boilerplate ("Do the following:"),
+                req-preview.html walks down to the subrequirement whose text
+                actually became the snippet, and that's the element the
+                snippet needs to morph into. Dots in a path aren't valid in
+                a CSS custom-ident, so they're swapped for hyphens -- same
+                convention req-guide-lookup.html uses. */}}
+              {{ $transitionKey := replace $req.path "." "-" }}
+              {{ $textTransitionKey := replace $preview.candidate_path "." "-" }}
 
               <li class="badge-preview__item">
                 {{ with $reqPage }}
@@ -166,13 +117,20 @@
                     <span
                       class="badge-preview__node req-card__node"
                       aria-hidden="true"
+                      style="view-transition-name: req-num-{{ $transitionKey }}"
                       ><span class="req-card__node-text"
                         >{{ add $i 1 }}</span
                       ></span
                     >
                     <span class="badge-preview__text">
-                      <span class="badge-preview__title">{{ $title }}</span>
-                      <span class="badge-preview__snippet"
+                      <span
+                        class="badge-preview__title"
+                        style="view-transition-name: req-title-{{ $transitionKey }}"
+                        >{{ $title }}</span
+                      >
+                      <span
+                        class="badge-preview__snippet"
+                        style="view-transition-name: req-text-{{ $textTransitionKey }}"
                         >{{ $snippet | truncate 120 }}</span
                       >
                     </span>

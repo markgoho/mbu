@@ -25,10 +25,15 @@
   following:"), that label is stripped before rendering -- the
   title is already shown directly above, so repeating it would
   just echo it back verbatim.
+  transition_key - (optional) requirement path with dots hyphenated. When
+  set, this element carries the matching view-transition-name so it
+  morphs in from the overview page's preview snippet -- see
+  req-card.html and view-transitions.css.
 */}}
 {{ $text := .text }}
 {{ $class := .class }}
 {{ $title := .title }}
+{{ $transitionKey := .transition_key }}
 
 {{ if $title }}
   {{ $prefix := printf "%s." (lower $title) }}
@@ -37,5 +42,8 @@
   {{ end }}
 {{ end }}
 
-<p class="{{ $class }}">{{ $text | markdownify }}</p>
+<p
+  class="{{ $class }}"
+  {{ with $transitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
+  >{{ $text | markdownify }}</p>
 
