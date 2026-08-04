@@ -104,18 +104,27 @@
   view-transition-class: req-num;
 }
 
+.req-card__eyebrow,
+.drg-header__kicker {
+  view-transition-class: req-eyebrow;
+}
+
 .badge-preview__title,
-.req-card__title {
+.req-card__title,
+.req-child__title,
+.drg-header__title {
   view-transition-class: req-title;
 }
 
 .badge-preview__snippet,
 .req-card__text,
-.req-child__text {
+.req-child__text,
+.drg-requirement__text {
   view-transition-class: req-text;
 }
 
 ::view-transition-group(.req-num),
+::view-transition-group(.req-eyebrow),
 ::view-transition-group(.req-title),
 ::view-transition-group(.req-text) {
   animation-duration: 0.4s;
@@ -123,12 +132,17 @@
 }
 
 /*
- * The snippet is a single truncated line at one end and a full paragraph
- * at the other -- letting the box resize and cross-fading the content
- * reads better than stretching one line of text to fill a paragraph's box.
+ * The snippet/title/eyebrow change line count, size and measure between the
+ * requirement card and the guide -- letting the box animate while
+ * cross-fading the text content reads smoothly.
  */
+::view-transition-old(.req-eyebrow),
+::view-transition-new(.req-eyebrow),
+::view-transition-old(.req-title),
+::view-transition-new(.req-title),
 ::view-transition-old(.req-text),
 ::view-transition-new(.req-text) {
   height: 100%;
   object-fit: contain;
+  object-position: left top;
 }

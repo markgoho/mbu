@@ -40,7 +40,7 @@
                 class="drg-nav__link {{ if eq .url $currentUrl }}
                   drg-nav__link--active
                 {{ end }}">
-                {{ .title }}
+                {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
               </a>
             </li>
           {{ end }}
@@ -91,7 +91,7 @@
                   class="drg-mobile-nav__link {{ if eq .url $currentUrl }}
                     drg-mobile-nav__link--active
                   {{ end }}">
-                  <span>{{ .title }}</span>
+                  <span>{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}</span>
                   {{ if eq .url $currentUrl }}
                     <svg class="drg-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   {{ end }}
