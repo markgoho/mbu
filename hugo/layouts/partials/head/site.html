@@ -9,3 +9,6 @@
 
 <!-- Resource hints for external domains -->
 <link rel="preconnect" href="https://www.scouting.org" crossorigin />
+{{/* ik.imagekit.io serves the LCP image on most pages — preconnect before
+  Clarity (next in baseof.html) so connection setup isn't queued behind it. */}}
+<link rel="preconnect" href="https://ik.imagekit.io" crossorigin />

@@ -18,8 +18,12 @@
   </h2>
 
   <div class="badges-grid home-eagle__grid">
+    {{/* This grid is the last section on the homepage (hero, search, steps,
+      categories, then this) — always below the fold, so force every card
+      past badge-card.html's eager/fetchpriority thresholds (index >= 6)
+      regardless of position within this grid. */}}
     {{ range $index, $entry := $eagleBadges }}
-      {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" $index) }}
+      {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" (add $index 6)) }}
     {{ end }}
   </div>
 

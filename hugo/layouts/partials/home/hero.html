@@ -125,6 +125,11 @@
 
     <div class="hero-d__image-col">
       <div class="hero-d__image-wrap">
+        {{/* The sizes value below matches the 768px column-collapse
+          breakpoint and the .hero-d__inner padding-inline (2 *
+          --space-m's floor, 1.6875rem) below it — not the full 100vw the
+          old value claimed, which made the browser fetch an oversized
+          srcset candidate. See pages/home.css for both values. */}}
         {{ range $i, $b := $badges }}
           {{ with index $badgeImages.badges $b.slug }}
             {{ partial "imagekit/img.html" (dict
@@ -134,7 +139,7 @@
               "width" 1200
               "height" 670
               "alt" $b.alt
-              "sizes" "(max-width: 900px) 100vw, 600px"
+              "sizes" "(max-width: 768px) calc(100vw - 3.375rem), 600px"
               "class" "hero-d__image"
               "attrs" (dict "data-slide" $b.slug)
               "loading" (cond (eq $i 0) "eager" "lazy")
