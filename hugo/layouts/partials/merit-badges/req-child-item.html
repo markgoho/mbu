@@ -57,10 +57,11 @@
   value, so the nearest guide always wins over a more distant one. */}}
 {{ $guidePage := or $lookup.page $inheritedGuide }}
 
-{{ $textTransitionKey := "" }}
-{{ if eq $previewTextPath $req.path }}
-  {{ $textTransitionKey = replace $req.path "." "-" }}
-{{ end }}
+{{ $itemKey := replace $req.path "." "-" }}
+{{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+{{ $itemKey = lower $itemKey }}
+
+{{ $textTransitionKey := $itemKey }}
 
 {{ $segments := split $req.path "." }}
 {{ $ownSegment := index $segments (sub (len $segments) 1) }}
@@ -110,12 +111,13 @@
   tabindex="-1"
   data-pagefind-index-attrs="data-anchor,data-badge-name"
   data-anchor="{{ $req.path }}"
-  data-badge-name="{{ $badgeName }}">
+  data-badge-name="{{ $badgeName }}"
+  {{ with $guideHref }}data-guide="{{ . }}"{{ end }}>
   {{ if eq $variant "chips" }}
     <span class="req-child__marker">{{ $bare }}</span>
     <span
       class="req-child__text"
-      {{ with $textTransitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
+      style="view-transition-name: req-text-{{ $itemKey }}"
       >{{ $req.text | markdownify }}</span>
   {{ else }}
     {{ if eq $variant "options" }}
@@ -131,7 +133,10 @@
       {{ if or $hasTitle $req.subrequirement_mode }}
         <div class="req-child__title-row">
           {{ if $hasTitle }}
-            <h4 class="req-child__title">{{ $lookup.title }}</h4>
+            <h4
+              class="req-child__title"
+              style="view-transition-name: req-title-{{ $itemKey }}"
+              >{{ $lookup.title }}</h4>
           {{ end }}
           {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
         </div>
@@ -152,13 +157,5 @@
         </div>
       {{ end }}
     </div>
-
-    {{/* Out of flow (see the CSS): the toolbar has nowhere to sit inline
-      without crowding the marker or reserving an empty row above every
-      untitled item. It carries this subrequirement's guide link too --
-      the floating guide icon that used to sit here occupied the very
-      corner the toolbar needs.
-    */}}
-    {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guideHref" $guideHref "variant" "inset") }}
   {{ end }}
 </li>

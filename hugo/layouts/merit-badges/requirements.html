@@ -64,6 +64,13 @@
       </div>
     </div>
   </div>
+
+  {{/* Deliberately OUTSIDE .req-main. That element has container-type:
+    inline-size, which applies layout containment, which makes it a
+    containing block for position:fixed descendants -- a dock rendered
+    inside it would pin to the bottom of that column, not the viewport.
+    See req-dock.html for the full reasoning. */}}
+  {{ partial "merit-badges/req-dock.html" . }}
 {{ end }}
 
 {{ define "footer-scripts" }}

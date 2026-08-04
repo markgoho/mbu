@@ -1,4 +1,5 @@
-// deep-link.ts - copy affordances for requirements and subrequirements.
+// deep-link.ts - the requirement dock, and copy affordances for
+// requirements and subrequirements.
 //
 // Three ways to get a requirement out of the page, in decreasing order of
 // how deliberate they are:
@@ -10,29 +11,39 @@
 //                        instead.
 //   click the text     - anywhere in a requirement copies its link, on a
 //                        fine pointer only. Undiscoverable on its own,
-//                        which is why the toolbar exists; but once you
-//                        know, the target is the whole requirement rather
-//                        than a 32px button. On touch a tap reveals the
-//                        toolbar instead (CSS :focus-within), so reading
-//                        never writes to the clipboard by accident.
+//                        which is why the dock exists to spell it out;
+//                        but once you know, the target is the whole
+//                        requirement rather than a small button. On
+//                        touch a tap selects the requirement instead
+//                        (CSS :focus-within brings the dock up), so
+//                        reading never writes to the clipboard by
+//                        accident.
 //
 // None of it navigates. See copyLink.
 //
-// Every path confirms. The previous version wrote to the clipboard and
-// said nothing, so a successful copy and a blocked one looked identical.
+// Every path confirms. Writing to the clipboard silently made a
+// successful copy and a blocked one look identical.
+//
+// THE DOCK. There is one shared action bar (req-dock.html) instead of a
+// toolbar per requirement, fixed near the bottom of the viewport. It has
+// no idea which requirement it applies to until this file tells it:
+// focusin or click on any [data-anchor] points the dock at that
+// requirement by setting attributes (pointDockAt, below) -- the dock's
+// own CSS does everything else (req-dock rules in
+// merit-badge-requirements.css). Script never builds, clones, or empties
+// any DOM here; it only moves attribute values.
 
 const TOAST_MS = 1700;
-let toastEl: HTMLElement | null = null;
+// Authored in req-dock.html, inside the dock's stack, rather than built
+// here on first use. As two independently-fixed elements the toast and
+// the dock simply overlapped -- the confirmation landed across the very
+// buttons that raised it. Sharing a flex column makes that impossible,
+// and it takes the last bit of DOM construction out of this file.
+const toastEl = document.getElementById("req-toast");
 let toastTimer: number | undefined;
 
 function toast(message: string): void {
-  if (!toastEl) {
-    toastEl = document.createElement("div");
-    toastEl.className = "req-toast";
-    toastEl.setAttribute("role", "status");
-    toastEl.setAttribute("aria-live", "polite");
-    document.body.appendChild(toastEl);
-  }
+  if (!toastEl) return;
   toastEl.textContent = message;
   toastEl.setAttribute("data-show", "");
   window.clearTimeout(toastTimer);
@@ -136,12 +147,80 @@ function copyText(requirement: HTMLElement, path: string): void {
   copy(requirementText(requirement, path), `Text of ${path}`);
 }
 
+// ---------------------------------------------------------------------
+// The dock: pointing it at whatever requirement is selected.
+// ---------------------------------------------------------------------
+
+const dock = document.getElementById("req-dock");
+const dockFor = document.getElementById("req-dock-for") as HTMLElement | null;
+const dockGuide = document.getElementById("req-dock-guide") as HTMLAnchorElement | null;
+const dockLink = document.getElementById("req-dock-link") as HTMLAnchorElement | null;
+
+// Everything the dock shows is drawn from attributes (see the CSS), so
+// pointing it at a requirement is just copying values across -- nothing
+// is built, cloned, or emptied.
+function pointDockAt(el: HTMLElement): void {
+  const path = el.dataset.anchor;
+  if (!dock || !dockFor || !dockGuide || !dockLink || !path) return;
+
+  // "7.b.2" splits into a bold "7" and a lighter ".b.2" -- see
+  // .req-dock__for's ::before/::after in the CSS -- so the dock reads as
+  // a place inside requirement 7 rather than one five-character token.
+  const cut = path.indexOf(".");
+  dockFor.dataset.req = cut === -1 ? path : path.slice(0, cut);
+  dockFor.dataset.sub = cut === -1 ? "" : path.slice(cut);
+
+  dockLink.setAttribute("href", `#${path}`);
+  // Not every requirement has a guide; data-guide is absent on those
+  // (see req-card.html / req-child-item.html), and an empty href is what
+  // the CSS keys off of to hide the button rather than leave it dangling.
+  dockGuide.setAttribute("href", el.dataset.guide ?? "");
+
+  // NAMING THE TARGET IS NOT DECORATION HERE. The number chip is two CSS
+  // pseudo-elements, which put no text in the accessibility tree at all,
+  // and unlike the per-requirement toolbar this replaced, the dock does
+  // not sit inside the thing it acts on -- so without this a screen
+  // reader reaching it finds three buttons with nothing to say which of
+  // a thousand requirements they apply to. The visible chip and this
+  // label are the same fact, told twice.
+  dock.setAttribute("aria-label", `Actions for requirement ${path}`);
+
+  dock.dataset.for = path;
+}
+
+// Focus and click both point the dock -- focus so that tabbing through
+// requirements (or arriving via a #path link, which focuses its
+// tabindex="-1" target) brings it up without requiring a click, click so
+// that a mouse or touch selection does the same. A click that lands
+// outside any requirement -- and outside the dock itself, which must not
+// clear the very requirement its own buttons are about to act on --
+// clears the selection instead.
+["focusin", "click"].forEach((type) => {
+  document.addEventListener(type, (event: Event) => {
+    const target = event.target as HTMLElement;
+    if (target.closest(".req-dock")) return;
+    const requirement = target.closest<HTMLElement>("[data-anchor]");
+    if (requirement) {
+      pointDockAt(requirement);
+    } else if (type === "click") {
+      dock?.removeAttribute("data-for");
+    }
+  });
+});
+
 document.addEventListener("click", (event: MouseEvent) => {
   const target = event.target as HTMLElement;
 
   const copyTextBtn = target.closest<HTMLElement>(".copy-text-btn");
   if (copyTextBtn) {
-    const requirement = copyTextBtn.closest<HTMLElement>("[data-anchor]");
+    // The dock's copy-text button (the only one left -- there is no
+    // longer a per-requirement copy-text button) has no [data-anchor]
+    // ancestor of its own; it lives in req-dock.html, outside the
+    // requirement it acts on. Fall back to the requirement the dock is
+    // currently pointed at.
+    const requirement =
+      copyTextBtn.closest<HTMLElement>("[data-anchor]") ??
+      (dock?.dataset.for ? document.getElementById(dock.dataset.for) : null);
     if (requirement?.dataset.anchor) {
       event.preventDefault();
       copyText(requirement, requirement.dataset.anchor);
@@ -174,15 +253,14 @@ document.addEventListener("click", (event: MouseEvent) => {
   if (target.closest("a, button")) return;
   if (String(window.getSelection())) return;
 
-  // On a touch screen, tapping a requirement is how you ASK FOR its
-  // toolbar -- there's no hover to reveal it. Navigating would scroll
-  // that requirement to the top of the viewport just as the toolbar
-  // appeared under your thumb, so the thing you tapped jumps away from
-  // where you tapped it. Focus does the revealing instead (CSS
-  // :focus-within, on the tabindex="-1" the markup already carries), and
-  // the browser only scrolls if the element isn't already visible.
-  // Copying stays with the explicit buttons, where it can't surprise
-  // anyone who was only trying to read.
+  // On a touch screen, tapping a requirement is how you ASK FOR the dock
+  // -- there's no hover to reveal it, and the focusin/click listener
+  // above already brought it up by the time this handler runs. Copying
+  // the link on top of that, from a plain tap, would surprise anyone who
+  // was only trying to read; it stays behind the dock's explicit button.
+  // (On a fine pointer the tap-equivalent is a click, which IS explicit
+  // enough -- clicking a requirement is understood as "select this one",
+  // and copying its link is the reward for knowing that.)
   if (window.matchMedia("(hover: none)").matches) return;
 
   copyLink(requirement.dataset.anchor);

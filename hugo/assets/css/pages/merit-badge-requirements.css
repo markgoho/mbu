@@ -28,11 +28,24 @@
 /* Shell                                                                */
 /* ------------------------------------------------------------------ */
 
+/* How much viewport the dock covers: its own inset, its height, and the
+   gap to the toast above it. Everything that has to keep clear of the
+   dock measures itself against this rather than guessing. */
+:root {
+  --req-dock-clearance: calc(max(0.75rem, env(safe-area-inset-bottom)) + 5.5rem);
+}
+
+/* The dock floats over the page instead of taking a row in it, which is
+   the whole point -- but that means the last requirements would sit
+   permanently underneath it with no way to scroll clear. This is the one
+   place the dock costs any space at all, and it costs it once per page
+   rather than once per requirement. */
 .req-page {
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
   padding-block-start: var(--space-m);
+  padding-block-end: var(--req-dock-clearance);
 
   @media (min-width: 60rem) {
     flex-direction: row;
@@ -720,150 +733,21 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Action toolbar (copy link / copy text / study guide)                 */
+/* Action dock (copy link / copy text / study guide)                    */
 /* ------------------------------------------------------------------ */
 
-/* A single inset bar rather than icons pinned to a corner. Pinning them
-   to a corner meant fighting the panel's border radius, and left no room
-   for a second action once "copy text" joined "copy link". Inset by a
-   fixed offset, the toolbar never meets a rounded edge at all. */
-.req-toolbar {
-  display: flex;
-  align-items: center;
-  gap: 1px;
-  padding: 2px;
-  border: 1px solid var(--outline-variant);
-  border-radius: var(--radius-md);
-  background: var(--surface-raised);
-  box-shadow: var(--shadow-card);
-  opacity: 0;
-  transition: opacity 0.15s ease;
-}
-
-.req-toolbar__btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  min-height: 2rem;
-  padding: 0 0.5rem;
-  border: 0;
-  border-radius: calc(var(--radius-md) - 3px);
-  background: none;
-  font-family: var(--font-body);
-  font-size: var(--step--2);
-  font-weight: 700;
-  line-height: 1;
-  white-space: nowrap;
-  color: var(--on-surface-muted);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.req-toolbar__btn:hover,
-.req-toolbar__btn:focus-visible {
-  background: var(--accent-container);
-  color: var(--on-accent-container);
-}
-
-.req-toolbar__icon {
-  width: 0.95em;
-  height: 0.95em;
-  flex-shrink: 0;
-}
-
-/* Depth 1: inline beside the eyebrow. It wraps -- at 390px an eyebrow
-   plus a three-button toolbar measured 327px against a 390px viewport
-   and pushed the whole page into horizontal scroll. */
-.req-card__eyebrow-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-2xs);
-  min-height: 2.25rem;
-}
-
-.req-card__eyebrow-row .req-card__eyebrow {
-  margin: 0;
-}
-
-/* Below depth 1: pinned inside the item's own top-right. */
-.req-toolbar--inset {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/* Opacity, not display: the buttons stay focusable, so tabbing into a
-   requirement brings its toolbar up. A hover-only affordance is
-   unreachable by keyboard and invisible on touch, which is exactly what
-   the icon buttons here got wrong. */
-/* Hover reveals it; so does focus. Clicking a requirement focuses it
-   (tabindex="-1"), so the toolbar stays up on the requirement you just
-   picked -- the same state that draws its outline and put its link on
-   your clipboard -- until you pick another or click away. Tabbing works
-   for the same reason: an opacity:0 button is still focusable. */
-.req-card:hover .req-toolbar--heading,
-.req-card:focus-within .req-toolbar--heading,
-.req-child:hover > .req-toolbar--inset,
-.req-child:focus-within > .req-toolbar--inset {
-  opacity: 1;
-}
-
-/* Nested requirements: hovering 3.a also hovers the card containing it,
-   so without this every ancestor's toolbar would light up at once. Only
-   the innermost hovered requirement shows its own. */
-.req-card:has(.req-child:hover) .req-toolbar--heading,
-.req-card:has(.req-child:focus-within) .req-toolbar--heading,
-.req-child:has(.req-child:hover) > .req-toolbar--inset,
-.req-child:has(.req-child:focus-within) > .req-toolbar--inset {
-  opacity: 0;
-}
-
-/* Touch: there is no hover, so tapping a requirement is how you ask for
-   its toolbar. Focus does the revealing -- requirements carry
-   tabindex="-1" so a tap focuses one -- rather than a hash navigation,
-   which would scroll the tapped requirement to the top of the viewport
-   at the same moment its toolbar appeared, throwing the thing you
-   touched away from your thumb. The browser scrolls a focused element
-   into view only when it isn't already visible, so a requirement you can
-   see stays exactly where it is.
-
-   Showing every toolbar instead was measured at +2,330px (+17.7%) on
-   cooking's already-13,000px page, to surface chrome that Selective
-   Attention says stops registering after the first screen. */
-/* LAYOUT IS KEYED ON WIDTH, NOT ON POINTER TYPE.
-   Revealing is already handled above by hover OR focus, which covers
-   every input; what changes here is only where the toolbar sits.
-
-   Keying this on (hover: none) was wrong twice over. A touch laptop,
-   a Surface or an iPad with a trackpad reports (hover: hover) at a
-   narrow width and got the wide-screen layout it has no room for --
-   the toolbar absolutely positioned over its own title. And because
-   Chrome's device emulation flips that media feature on resize, the
-   layout visibly jumped between the two on a single page.
-
-   Pinned to the top-right the toolbar lands on the title once the
-   column is narrow, so below this width it joins the flow. It has to
-   SPAN the item's grid rather than sit in a cell: a subrequirement is a
-   grid of [marker | content], so an auto-placed toolbar three labelled
-   buttons wide overflowed its own outline. */
-@container req-main (max-width: 40rem) {
-  .req-toolbar--inset {
-    position: static;
-    grid-column: 1 / -1;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-inline-size: 100%;
-    margin-block-start: var(--space-2xs);
-  }
-}
+/* The dock itself lives below, after the timeline/rail/options sections
+   it has no dependency on -- see "Action dock" further down. What
+   remains here is the :target / :focus-within highlighting a selected
+   requirement still needs regardless of which action UI is attached to
+   it. */
 
 /* Both carry tabindex="-1", so this is never real keyboard focus (that
    never puts them in the tab order) -- it's the browser focusing the
    fragment-navigation target, which arriving from "What you'll do" or
    any #path link triggers on every pointer type, not just touch. The
-   toolbar appearing (:focus-within, above) and :target's own outline are
-   the feedback; the UA's default ring on top of them is noise.
+   requirement's own :target/:focus-within outline is the feedback; the
+   UA's default ring on top of it is noise.
 
    .req-card only. Its <li> draws no outline of ours -- the highlight
    lives on the panel inside it -- so the UA ring is all there is to
@@ -873,12 +757,6 @@
    `outline: 2px solid transparent` already displaces the UA ring. */
 .req-card:focus {
   outline: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .req-toolbar {
-    transition: none;
-  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -950,14 +828,11 @@
 /* Copy confirmation                                                    */
 /* ------------------------------------------------------------------ */
 
-/* Built by deep-link.ts on first use. A copy that says nothing is
-   indistinguishable from one the browser blocked. */
+/* A copy that says nothing is indistinguishable from one the browser
+   blocked. Authored in req-dock.html and sits in the dock's stack, so it
+   rides above the bar instead of across it -- see .req-dock-stack. */
 .req-toast {
-  position: fixed;
-  z-index: 100;
-  inset-block-end: 1.5rem;
-  inset-inline-start: 50%;
-  translate: -50% 0;
+  margin: 0;
   padding: 0.5rem 0.9rem;
   border-radius: var(--radius-full);
   background: var(--accent);
@@ -965,17 +840,25 @@
   font-family: var(--font-body);
   font-weight: 700;
   font-size: var(--step--1);
-  box-shadow: var(--shadow-elevated);
+  box-shadow:
+    0 2px 4px rgb(0 0 0 / 10%),
+    0 10px 24px -8px rgb(0 0 0 / 28%);
   opacity: 0;
-  transition:
-    opacity 0.2s ease,
-    translate 0.2s ease;
+  translate: 0 0.5rem;
+  /* Empty until deep-link.ts writes a message, and an empty pill still
+     paints a stray dot of accent in the stack. */
+  visibility: hidden;
   pointer-events: none;
+  transition:
+    opacity 0.18s ease-out,
+    translate 0.28s cubic-bezier(0.2, 1.3, 0.35, 1),
+    visibility 0.28s allow-discrete;
 }
 
 .req-toast[data-show] {
   opacity: 1;
-  translate: -50% -0.35rem;
+  translate: 0 0;
+  visibility: visible;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1229,5 +1112,281 @@
   .requirements ol ol,
   .req-timeline ol ol {
     padding-left: var(--space-xs);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Action dock                                                          */
+/* ------------------------------------------------------------------ */
+
+/* ONE bar, fixed near the bottom of the viewport, standing in for what
+   used to be an opacity:0 action bar rendered under EVERY requirement
+   (see git history above this point for the rules that used to define
+   it). It acts on whichever requirement is currently selected and names
+   it by number; deep-link.ts points it by setting attributes on
+   req-dock.html's markup on focusin/click of any [data-anchor] -- this
+   file only renders what those attributes say. */
+/* The fixed bottom stack: copy confirmation on top, dock beneath. Both
+   used to be fixed to the bottom centre independently, which meant the
+   toast landed across the buttons that raised it. As flex items they
+   cannot overlap at all. */
+/* Arriving from a shared #path link must not land the requirement under
+   the dock. Scoped with :has so it only applies on pages that have one. */
+html:has(.req-dock-stack) {
+  scroll-padding-block-end: var(--req-dock-clearance);
+}
+
+.req-dock-stack {
+  position: fixed;
+  z-index: 90;
+  inset-block-end: max(0.75rem, env(safe-area-inset-bottom));
+  inset-inline: var(--space-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xs);
+  /* The stack spans the viewport so its children can centre in it; only
+     the children themselves may take a click, or the empty space beside
+     the dock would swallow taps meant for the page. */
+  pointer-events: none;
+}
+
+.req-dock-stack > * {
+  pointer-events: auto;
+}
+
+.req-dock {
+  /* Sized to its contents, not to the viewport. A full-width bar with a
+     number at one end and three icons at the other read as page
+     furniture rather than as something attached to the requirement you
+     just picked. */
+  inline-size: fit-content;
+  max-inline-size: min(32rem, 100%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-2xs);
+  /* A tray, not a pill. The panel it belongs to is --radius-xl; this is
+     the same family a size down, where a full pill read as a floating
+     widget from some other app. */
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+
+  /* ELEVATION IS SPELT OUT HERE RATHER THAN TAKEN FROM A TOKEN.
+     --shadow-elevated is only defined on the dark theme (tokens-v2.css),
+     so `box-shadow: var(--shadow-elevated)` resolved to nothing at all
+     in light mode and the bar sat flat on the text it floats over. Four
+     layers instead: a hairline ring for the edge, a tight contact
+     shadow, and two wide soft ones, so it reads as lifted off the page
+     rather than drawn onto it. */
+  box-shadow:
+    0 0 0 1px var(--card-border-subtle),
+    0 2px 4px rgb(0 0 0 / 8%),
+    0 10px 20px -6px rgb(0 0 0 / 16%),
+    0 28px 48px -16px rgb(0 0 0 / 20%);
+
+  opacity: 0;
+  translate: 0 1.25rem;
+  scale: 0.94;
+  /* visibility, not just opacity: an invisible dock must also be out of
+     the tab order, or it adds three phantom stops between the page and
+     the footer even when nothing is selected. transition-behavior keeps
+     it animating out rather than vanishing on the first frame. */
+  visibility: hidden;
+  /* It rises further than it fades: opacity lands in 0.14s so the bar
+     registers immediately, while the movement runs on to 0.34s and
+     overshoots slightly before settling. A bar that merely cross-fades
+     at 0.16s was easy to miss entirely at the bottom of a long page. */
+  transition:
+    opacity 0.14s ease-out,
+    translate 0.34s cubic-bezier(0.2, 1.3, 0.35, 1),
+    scale 0.34s cubic-bezier(0.2, 1.3, 0.35, 1),
+    visibility 0.34s allow-discrete;
+}
+
+/* Black shadows do nothing against a dark background, so dark mode
+   separates with light instead: a brighter ring and a lit top edge,
+   over a deeper cast shadow. */
+.dark .req-dock {
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 10%),
+    inset 0 1px 0 rgb(255 255 255 / 7%),
+    0 8px 20px rgb(0 0 0 / 45%),
+    0 28px 56px rgb(0 0 0 / 38%);
+}
+
+/* Translucency is what actually separates foreground from background --
+   the text visibly diffuses as it passes under the bar, which no amount
+   of shadow conveys on its own. Progressive: the opaque background above
+   stands until the browser can blur, so nothing is ever unreadable. */
+@supports (backdrop-filter: blur(1px)) {
+  .req-dock {
+    background: color-mix(in oklab, var(--surface-raised) 78%, transparent);
+    backdrop-filter: blur(16px) saturate(1.8);
+  }
+}
+
+/* One attribute is the whole open/closed state. */
+.req-dock[data-for] {
+  opacity: 1;
+  translate: 0 0;
+  scale: 1;
+  visibility: visible;
+}
+
+/* The contents arrive just behind the bar itself, so it reads as a tray
+   that fills rather than one solid block appearing. Staggering only the
+   entrance -- on the way out everything leaves together, because a
+   dismissal that takes its time reads as lag. */
+.req-dock > * {
+  opacity: 0;
+  translate: 0 0.35rem;
+  transition:
+    opacity 0.2s ease-out,
+    translate 0.2s ease-out;
+}
+
+.req-dock[data-for] > * {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.req-dock[data-for] > :nth-child(1) {
+  transition-delay: 0.06s;
+}
+
+.req-dock[data-for] > :nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.req-dock[data-for] > :nth-child(3) {
+  transition-delay: 0.14s;
+}
+
+.req-dock[data-for] > :nth-child(4) {
+  transition-delay: 0.18s;
+}
+
+/* Identifying the requirement is the one thing a shared bar must do that
+   a per-item toolbar never needed to -- so the number leads, and it is
+   the only text here. The title isn't repeated: read against a
+   requirement already outlined on screen, it would just repeat what you
+   were looking at.
+
+   Both halves are drawn from attributes, so naming the target costs no
+   DOM construction -- the trailing segments sit lighter, and "7.b.2"
+   reads as a place inside requirement 7 rather than as one
+   five-character token. */
+.req-dock__for {
+  flex-shrink: 0;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15ch;
+  min-inline-size: 2.75rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-md);
+  background: var(--surface-sunken);
+  font-family: var(--font-display);
+  font-size: var(--step-0);
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  color: var(--on-surface);
+}
+
+.req-dock__for::before {
+  content: attr(data-req);
+}
+
+.req-dock__for::after {
+  content: attr(data-sub);
+  font-size: var(--step--1);
+  color: var(--on-surface-muted);
+}
+
+/* Not every requirement has a guide, so the link hides itself rather than
+   being added and removed. */
+.req-dock__btn[href=""] {
+  display: none;
+}
+
+/* Every label stays. Icon-only was smaller but it left three unexplained
+   glyphs where the old per-requirement toolbar had been doing the
+   explaining. Stacking the label under its icon is what buys the room
+   back: labelled side-by-side, the three buttons measure ~350px against
+   a 390px viewport, which is how the old toolbar ended up wrapping in
+   the first place. */
+.req-dock__btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  /* 44px, the same floor .drg-nav__link and the mobile nav toggle already
+     hold. The old toolbar button was 2rem, 32px. */
+  min-block-size: 2.75rem;
+  min-inline-size: 2.75rem;
+  padding: 0.3rem 0.5rem;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-family: var(--font-body);
+  font-size: var(--step--2);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Side by side once the width is there -- a stacked label reads as a
+   phone's action bar, which is wrong on a desktop toolbar. */
+@media (min-width: 30rem) {
+  .req-dock__btn {
+    flex-direction: row;
+    gap: 0.4rem;
+    padding: 0 0.75rem;
+  }
+}
+
+.req-dock__btn:hover,
+.req-dock__btn:focus-visible {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+/* Phosphor's glyphs don't fill their 256 viewBox to the same extent --
+   "copy" is inset well inside it, "book-open-text" runs to the edges --
+   so three icons in identical boxes still read as three different sizes.
+   A bigger box shrinks that gap relative to the mark, and a per-icon
+   nudge closes the rest. */
+.req-dock__btn svg {
+  inline-size: 1.35em;
+  block-size: 1.35em;
+  flex-shrink: 0;
+}
+
+#req-dock-text svg {
+  scale: 1.12;
+}
+
+#req-dock-guide svg {
+  scale: 0.94;
+}
+
+/* The offsets have to be cleared, not just the transitions: left in
+   place with `transition: none` the dock would still be built at 94% and
+   its contents 0.35rem low, and simply snap there. Reduced motion means
+   no movement, not instant movement. */
+@media (prefers-reduced-motion: reduce) {
+  .req-dock,
+  .req-dock > *,
+  .req-toast {
+    transition: none;
+    translate: none;
+    scale: none;
   }
 }

@@ -3,9 +3,14 @@
   Renders one depth-1 requirement as a timeline node + card: eyebrow,
   title (both from the DRG guide when it resolves), verbatim requirement
   text (styled as a pill when it's a short mode-bearing stem, and with
-  any title-matching leading label stripped -- see req-text.html), an
-  action toolbar, and its children (dispatched via req-children.html).
-  Card chrome only ever starts here -- depth 1.
+  any title-matching leading label stripped -- see req-text.html), and its
+  children (dispatched via req-children.html). Card chrome only ever
+  starts here -- depth 1.
+
+  The <li> carries data-guide, this requirement's own resolved study-guide
+  URL (omitted entirely when there is none), so the single shared
+  req-dock.html can point its "Study guide" link at whichever requirement
+  is currently selected without a per-card toolbar of its own.
 
   WHY THE PANEL IS CAPPED. The main column runs the full width of the
   page, but requirement text is capped at a readable measure, so a panel
@@ -46,15 +51,17 @@
 {{ $previewTransition := .preview_transition | default false }}
 {{ $previewTextPath := .preview_text_path | default "" }}
 
-{{ $transitionKey := "" }}
+{{ $cardGroupKey := replaceRE "^([0-9]+).*" "$1" $req.path }}
+{{ $cardKey := replace $req.path "." "-" }}
+{{ $cardKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $cardKey }}
+{{ $cardKey = lower $cardKey }}
+
+{{ $numTransitionKey := "" }}
 {{ if $previewTransition }}
-  {{ $transitionKey = replace $req.path "." "-" }}
+  {{ $numTransitionKey = $cardKey }}
 {{ end }}
 
-{{ $textTransitionKey := "" }}
-{{ if eq $previewTextPath $req.path }}
-  {{ $textTransitionKey = replace $req.path "." "-" }}
-{{ end }}
+{{ $textTransitionKey := $cardKey }}
 
 {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
 
@@ -62,8 +69,9 @@
   actually covers it. Under req-guide-lookup.html's rule-3 prefix match a
   page is found for a parent that has none of its own -- cooking 1
   resolves req1a.md -- and that page really belongs to the first child,
-  which links to it from its own toolbar. Offering it here too would put
-  the same link twice on one card. */}}
+  which carries it as its own data-guide. Offering it here too would let
+  the dock's guide link point at two different requirements' worth of
+  material depending on which one was last selected. */}}
 {{ $ownPage := cond (eq $lookup.covers true) $lookup.page "" }}
 {{ $ownGuideHref := "" }}
 {{ with $ownPage }}
@@ -77,30 +85,28 @@
   tabindex="-1"
   data-pagefind-index-attrs="data-anchor,data-badge-name"
   data-anchor="{{ $req.path }}"
-  data-badge-name="{{ $badgeName }}">
+  data-badge-name="{{ $badgeName }}"
+  {{ with $ownGuideHref }}data-guide="{{ . }}"{{ end }}>
   <span
     class="req-card__node"
     aria-hidden="true"
-    {{ with $transitionKey }}style="view-transition-name: req-num-{{ . }}"{{ end }}
+    {{ with $numTransitionKey }}style="view-transition-name: req-num-{{ . }}"{{ end }}
     ><span class="req-card__node-text">{{ $index }}</span></span
   >
   <div class="req-card__panel">
     <div class="req-card__header">
       <div class="req-card__heading">
-        {{/* The toolbar rides with the eyebrow/title -- the line where
-          the requirement announces itself -- so it sits beside the text
-          it acts on rather than in a far corner. */}}
-        <div class="req-card__eyebrow-row">
-          {{ with $lookup.eyebrow }}
-            <p class="req-card__eyebrow">{{ . }}</p>
-          {{ end }}
-          {{ partial "merit-badges/req-actions.html" (dict "path" $req.path "guideHref" $ownGuideHref "variant" "heading") }}
-        </div>
+        {{ with $lookup.eyebrow }}
+          <p
+            class="req-card__eyebrow"
+            style="view-transition-name: req-eyebrow-{{ $cardGroupKey }}"
+            >{{ . }}</p>
+        {{ end }}
         <div class="req-card__title-row">
           {{ with $lookup.title }}
             <h3
               class="req-card__title"
-              {{ with $transitionKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}
+              style="view-transition-name: req-title-{{ $cardKey }}"
               >{{ . }}</h3>
           {{ end }}
           {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
