@@ -33,6 +33,8 @@
 // merit-badge-requirements.css). Script never builds, clones, or empties
 // any DOM here; it only moves attribute values.
 
+document.documentElement.setAttribute("data-js", "");
+
 const TOAST_MS = 1700;
 // Authored in req-dock.html, inside the dock's stack, rather than built
 // here on first use. As two independently-fixed elements the toast and
@@ -67,6 +69,25 @@ function linkFor(path: string): string {
   return `${window.location.origin}${window.location.pathname}#${path}`;
 }
 
+function selectRequirement(el: HTMLElement | null, updateUrl = true): void {
+  document.querySelectorAll<HTMLElement>("[data-anchor][data-selected]").forEach((node) => {
+    node.removeAttribute("data-selected");
+  });
+
+  if (el && el.dataset.anchor) {
+    el.setAttribute("data-selected", "true");
+    pointDockAt(el);
+    if (updateUrl) {
+      window.history.replaceState(null, "", linkFor(el.dataset.anchor));
+    }
+  } else {
+    dock?.removeAttribute("data-for");
+    if (updateUrl && window.location.hash) {
+      window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  }
+}
+
 // COPYING A LINK UPDATES THE URL, BUT DOES NOT NAVIGATE.
 //
 // Scrolling the target into view is native behaviour for a fragment
@@ -74,13 +95,9 @@ function linkFor(path: string): string {
 // trigger one. replaceState puts the address bar in agreement with
 // what's on the clipboard without moving the page or stacking a history
 // entry, because copying a link isn't going anywhere.
-//
-// The highlight is CSS's job either way: :target when someone arrives
-// from a shared link, :focus-within when they click a requirement here.
-// (Clicking can't rely on :target -- replaceState never re-evaluates
-// it. That's what :focus-within and tabindex="-1" are for.)
 function copyLink(path: string): void {
-  window.history.replaceState(null, "", linkFor(path));
+  const req = document.querySelector<HTMLElement>(`[data-anchor="${CSS.escape(path)}"]`);
+  selectRequirement(req);
   copy(linkFor(path), `Link to ${path}`);
 }
 
@@ -188,22 +205,16 @@ function pointDockAt(el: HTMLElement): void {
   dock.dataset.for = path;
 }
 
-// Focus and click both point the dock -- focus so that tabbing through
-// requirements (or arriving via a #path link, which focuses its
-// tabindex="-1" target) brings it up without requiring a click, click so
-// that a mouse or touch selection does the same. A click that lands
-// outside any requirement -- and outside the dock itself, which must not
-// clear the very requirement its own buttons are about to act on --
-// clears the selection instead.
+// Focus and click both point the dock and update selection.
 ["focusin", "click"].forEach((type) => {
   document.addEventListener(type, (event: Event) => {
     const target = event.target as HTMLElement;
     if (target.closest(".req-dock")) return;
     const requirement = target.closest<HTMLElement>("[data-anchor]");
     if (requirement) {
-      pointDockAt(requirement);
+      selectRequirement(requirement);
     } else if (type === "click") {
-      dock?.removeAttribute("data-for");
+      selectRequirement(null);
     }
   });
 });
@@ -220,7 +231,9 @@ document.addEventListener("click", (event: MouseEvent) => {
     // currently pointed at.
     const requirement =
       copyTextBtn.closest<HTMLElement>("[data-anchor]") ??
-      (dock?.dataset.for ? document.getElementById(dock.dataset.for) : null);
+      (dock?.dataset.for
+        ? document.querySelector<HTMLElement>(`[data-anchor="${CSS.escape(dock.dataset.for)}"]`)
+        : null);
     if (requirement?.dataset.anchor) {
       event.preventDefault();
       copyText(requirement, requirement.dataset.anchor);
@@ -265,3 +278,25 @@ document.addEventListener("click", (event: MouseEvent) => {
 
   copyLink(requirement.dataset.anchor);
 });
+
+function initFromHash(): void {
+  if (!window.location.hash) {
+    selectRequirement(null);
+    return;
+  }
+  const rawHash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  if (!rawHash) {
+    selectRequirement(null);
+    return;
+  }
+  const initialReq = document.querySelector<HTMLElement>(`[data-anchor="${CSS.escape(rawHash)}"]`);
+  selectRequirement(initialReq);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initFromHash);
+} else {
+  initFromHash();
+}
+
+window.addEventListener("hashchange", initFromHash);
