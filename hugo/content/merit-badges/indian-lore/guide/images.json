@@ -7,21 +7,30 @@
       "file": "req1.md",
       "style": "comparison",
       "description": "Four-panel comparison image showing four distinct Indigenous housing traditions in their environments: top left an Arctic kayak and snow house on sea ice, top right a Northwest Coast cedar plank house beside a large canoe and salmon stream, bottom left a Southwest multistory adobe pueblo under a dry mesa sky, bottom right a Plains buffalo-hide tipi on open grassland. No decorative title text. Each panel should clearly emphasize the different climate, materials, and landscape so the contrast is immediately understandable.",
-      "value": "Side-by-side comparison of four housing and environment systems — visual contrast between climate, materials, and settlement patterns that text alone cannot convey"
+      "value": "Side-by-side comparison of four housing and environment systems — visual contrast between climate, materials, and settlement patterns that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "82331957"
     },
     {
       "id": "museum-artifact-observation-grid",
       "file": "req5a.md",
       "style": "diagram",
       "description": "Clean museum-study diagram showing a 2x2 grid of four Indigenous artifacts on a neutral background: a tightly woven basket, a carved wooden paddle, a painted pottery jar, and a decorated shirt. Each object shown at clear scale with simple horizontal labels identifying material and typical use in very short phrases only. No branding, no museum logo, no dense text, no people.",
-      "value": "Shows artifact shape, material, and function side by side — object features and scale comparisons that are difficult to communicate through text lists alone"
+      "value": "Shows artifact shape, material, and function side by side — object features and scale comparisons that are difficult to communicate through text lists alone",
+      "width": 800,
+      "height": 447,
+      "v": "ec34f11d"
     },
     {
       "id": "powwow-etiquette-scene",
       "file": "req5b.md",
       "style": "annotated-photo",
       "description": "Respectful contemporary outdoor Native gathering scene with dancers in regalia in an arena, seated families and vendors around the edge, and a visiting Scout-age youth quietly observing from the audience with a notebook. Add only three simple callouts total: one indicating the announcer area, one indicating audience seating, and one indicating a no-touch / ask-before-photos etiquette idea near observers. Keep all labels horizontal, short, and sparse. No tribal names, no event branding, no extra text.",
-      "value": "Shows the real spatial layout of a contemporary gathering and where respectful guest behavior applies — social context and etiquette cues that are hard to picture from text alone"
+      "value": "Shows the real spatial layout of a contemporary gathering and where respectful guest behavior applies — social context and etiquette cues that are hard to picture from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "1aed9880"
     }
   ]
 }

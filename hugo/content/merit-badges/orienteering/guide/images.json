@@ -5,118 +5,181 @@
     {
       "id": "scouts-orienteering-forest",
       "file": "_index.md",
-      "description": "Two Scouts (ages 13-14) running through an open deciduous forest in athletic clothing, one checking a baseplate compass while the other looks ahead toward a distant orange-and-white orienteering control marker flag hanging from a wooden post. Dappled sunlight filters through the tree canopy. Both Scouts carry folded orienteering maps. The forest floor is clear with scattered leaves, suggesting an accessible running surface."
+      "description": "Two Scouts (ages 13-14) running through an open deciduous forest in athletic clothing, one checking a baseplate compass while the other looks ahead toward a distant orange-and-white orienteering control marker flag hanging from a wooden post. Dappled sunlight filters through the tree canopy. Both Scouts carry folded orienteering maps. The forest floor is clear with scattered leaves, suggesting an accessible running surface.",
+      "width": 800,
+      "height": 447,
+      "v": "72a64e3c"
     },
     {
       "id": "orienteering-types-comparison",
       "file": "_index.md",
       "style": "comparison",
-      "description": "Four-panel comparison showing different orienteering formats. Top-left: a runner moving through dense forest with a map (labeled 'Cross-Country'). Top-right: a runner near urban buildings checking a watch (labeled 'Sprint'). Bottom-left: a group studying a map with multiple flags visible on a hillside (labeled 'Score'). Bottom-right: a person in a wheelchair carefully studying a map on a marked trail with control flags visible (labeled 'Trail'). Each panel has a distinct environment and clear label."
+      "description": "Four-panel comparison showing different orienteering formats. Top-left: a runner moving through dense forest with a map (labeled 'Cross-Country'). Top-right: a runner near urban buildings checking a watch (labeled 'Sprint'). Bottom-left: a group studying a map with multiple flags visible on a hillside (labeled 'Score'). Bottom-right: a person in a wheelchair carefully studying a map on a marked trail with control flags visible (labeled 'Trail'). Each panel has a distinct environment and clear label.",
+      "width": 800,
+      "height": 447,
+      "v": "91ac2760"
     },
     {
       "id": "orienteering-first-aid-kit",
       "file": "req1.md",
-      "description": "A compact first aid kit laid open on a mossy rock in a forest setting, showing neatly organized supplies: adhesive bandages, gauze pads, moleskin strips, fine-tipped tweezers, antiseptic wipes, a small tube of sunscreen, insect repellent spray, and an orange emergency whistle. A baseplate orienteering compass and a folded topographic map sit beside the kit. Natural lighting, realistic and practical."
+      "description": "A compact first aid kit laid open on a mossy rock in a forest setting, showing neatly organized supplies: adhesive bandages, gauze pads, moleskin strips, fine-tipped tweezers, antiseptic wipes, a small tube of sunscreen, insect repellent spray, and an orange emergency whistle. A baseplate orienteering compass and a folded topographic map sit beside the kit. Natural lighting, realistic and practical.",
+      "width": 800,
+      "height": 447,
+      "v": "53383149"
     },
     {
       "id": "orienteering-event-overview",
       "file": "req2.md",
-      "description": "A close-up photograph of a real orienteering map spread flat on a table or the ground, showing the distinctive colorful printing of an orienteering map: brown contour lines, green vegetation areas of varying density, white open forest, yellow clearings, blue water features, and a printed course with a start triangle, numbered control circles connected by straight lines, and a finish double circle. The map is detailed and realistic, showing the level of detail found on a 1:10,000 or 1:15,000 scale orienteering map. A baseplate compass rests on one corner of the map. Natural lighting, sharp focus on the map details."
+      "description": "A close-up photograph of a real orienteering map spread flat on a table or the ground, showing the distinctive colorful printing of an orienteering map: brown contour lines, green vegetation areas of varying density, white open forest, yellow clearings, blue water features, and a printed course with a start triangle, numbered control circles connected by straight lines, and a finish double circle. The map is detailed and realistic, showing the level of detail found on a 1:10,000 or 1:15,000 scale orienteering map. A baseplate compass rests on one corner of the map. Natural lighting, sharp focus on the map details.",
+      "width": 800,
+      "height": 447,
+      "v": "54f0f186"
     },
     {
       "id": "orienteering-compass-parts",
       "file": "req3a.md",
       "style": "diagram",
-      "description": "A detailed labeled diagram of a baseplate orienteering compass viewed from above. All major parts are clearly labeled with lines pointing to each component: the transparent baseplate, direction-of-travel arrow printed on the baseplate, index line where the bezel meets the baseplate, rotating bezel (housing) with degree markings from 0 to 360, orienting arrow (shed/doghouse shape) inside the bezel, parallel orienting lines (meridian lines) inside the bezel, magnetic needle with the north end colored red, magnifying lens on the baseplate, ruler markings along both edges of the baseplate, and lanyard attachment hole. Clean white background with precise labeling."
+      "description": "A detailed labeled diagram of a baseplate orienteering compass viewed from above. All major parts are clearly labeled with lines pointing to each component: the transparent baseplate, direction-of-travel arrow printed on the baseplate, index line where the bezel meets the baseplate, rotating bezel (housing) with degree markings from 0 to 360, orienting arrow (shed/doghouse shape) inside the bezel, parallel orienting lines (meridian lines) inside the bezel, magnetic needle with the north end colored red, magnifying lens on the baseplate, ruler markings along both edges of the baseplate, and lanyard attachment hole. Clean white background with precise labeling.",
+      "width": 800,
+      "height": 447,
+      "v": "c8aecc4b"
     },
     {
       "id": "compass-bearing-steps",
       "file": "req3b.md",
       "style": "diagram",
-      "description": "A three-step illustrated diagram showing how to take and follow a compass bearing. Step 1 (left panel): hands placing a compass on a topographic map with the baseplate edge connecting a current position dot to a destination dot, direction-of-travel arrow pointing toward the destination. Step 2 (center panel): close-up of fingers rotating the bezel to align the orienting lines parallel with the map's north-south grid lines, with the orienting arrow pointing to the top of the map. Step 3 (right panel): a person standing and holding the compass level at waist height with the direction-of-travel arrow pointing toward a distant distinctive tree, the red needle aligned inside the orienting arrow (red in the shed). Each step is clearly numbered and labeled."
+      "description": "A three-step illustrated diagram showing how to take and follow a compass bearing. Step 1 (left panel): hands placing a compass on a topographic map with the baseplate edge connecting a current position dot to a destination dot, direction-of-travel arrow pointing toward the destination. Step 2 (center panel): close-up of fingers rotating the bezel to align the orienting lines parallel with the map's north-south grid lines, with the orienting arrow pointing to the top of the map. Step 3 (right panel): a person standing and holding the compass level at waist height with the direction-of-travel arrow pointing toward a distant distinctive tree, the red needle aligned inside the orienting arrow (red in the shed). Each step is clearly numbered and labeled.",
+      "width": 800,
+      "height": 447,
+      "v": "4863b2b2"
     },
     {
       "id": "terrain-features-contour",
       "file": "req4a.md",
       "style": "diagram",
-      "description": "Educational side-by-side diagram showing five terrain features. Each feature is displayed as a pair: a small 3D landscape view on the left and its corresponding contour line pattern on the right. The five features are: Hill (concentric circles with elevation increasing inward), Valley/Re-entrant (V-shaped contour lines pointing uphill), Ridge/Spur (V-shaped contour lines pointing downhill), Saddle (hourglass shape between two hills), and Depression (concentric circles with small inward-pointing tick marks/hachures). Each pair is labeled clearly. Clean educational style with brown contour lines on white background."
+      "description": "Educational side-by-side diagram showing five terrain features. Each feature is displayed as a pair: a small 3D landscape view on the left and its corresponding contour line pattern on the right. The five features are: Hill (concentric circles with elevation increasing inward), Valley/Re-entrant (V-shaped contour lines pointing uphill), Ridge/Spur (V-shaped contour lines pointing downhill), Saddle (hourglass shape between two hills), and Depression (concentric circles with small inward-pointing tick marks/hachures). Each pair is labeled clearly. Clean educational style with brown contour lines on white background.",
+      "width": 800,
+      "height": 447,
+      "v": "0bbd8809"
     },
     {
       "id": "topo-map-symbols-reference",
       "file": "req4b.md",
       "style": "infographic",
-      "description": "An educational reference chart showing 12 common USGS topographic map symbols arranged in a clean 4x3 grid on a light background. Each cell shows the symbol as it appears on a real USGS map on the left side and its name on the right side. The 12 symbols are: contour line (brown curved line), index contour (bold brown line with elevation number), perennial stream (solid blue line), intermittent stream (dashed blue line), lake (blue filled area), swamp/marsh (blue horizontal lines with vegetation tufts), building (small black square), unimproved road (parallel black dashes), trail (single black dashed line), woodland (green tinted area), benchmark (black triangle with BM), and power line (black dashed line with dots). Clear, scannable layout."
+      "description": "An educational reference chart showing 12 common USGS topographic map symbols arranged in a clean 4x3 grid on a light background. Each cell shows the symbol as it appears on a real USGS map on the left side and its name on the right side. The 12 symbols are: contour line (brown curved line), index contour (bold brown line with elevation number), perennial stream (solid blue line), intermittent stream (dashed blue line), lake (blue filled area), swamp/marsh (blue horizontal lines with vegetation tufts), building (small black square), unimproved road (parallel black dashes), trail (single black dashed line), woodland (green tinted area), benchmark (black triangle with BM), and power line (black dashed line with dots). Clear, scannable layout.",
+      "width": 800,
+      "height": 447,
+      "v": "9ff36f2f"
     },
     {
       "id": "declination-diagram",
       "file": "req4c.md",
       "style": "diagram",
-      "description": "A clear diagram illustrating magnetic declination. The main image shows a compass rose with True North labeled at the top and Magnetic North offset approximately 12 degrees to the east, with the declination angle clearly marked with an arc and labeled 'Declination: 12° East.' A smaller inset in the lower right shows a simplified map of the United States with the agonic line (zero declination) drawn roughly through the Mississippi Valley, labeled areas showing 'West Declination' on the left side of the line and 'East Declination' on the right side. Clean lines, minimal clutter, educational focus."
+      "description": "A clear diagram illustrating magnetic declination. The main image shows a compass rose with True North labeled at the top and Magnetic North offset approximately 12 degrees to the east, with the declination angle clearly marked with an arc and labeled 'Declination: 12° East.' A smaller inset in the lower right shows a simplified map of the United States with the agonic line (zero declination) drawn roughly through the Mississippi Valley, labeled areas showing 'West Declination' on the left side of the line and 'East Declination' on the right side. Clean lines, minimal clutter, educational focus.",
+      "width": 800,
+      "height": 447,
+      "v": "c7de5409"
     },
     {
       "id": "drawing-mn-lines",
       "file": "req4d.md",
-      "description": "Close-up overhead photograph of hands drawing magnetic north-south lines on a USGS topographic map spread on a table. A clear plastic protractor is positioned at a starting point on the map edge. Several parallel red pencil lines have already been drawn across the map at a slight angle from the printed grid lines. A baseplate orienteering compass lies nearby for reference. The map shows contour lines, a stream, and trail markings visible between the red lines. Natural indoor lighting."
+      "description": "Close-up overhead photograph of hands drawing magnetic north-south lines on a USGS topographic map spread on a table. A clear plastic protractor is positioned at a starting point on the map edge. Several parallel red pencil lines have already been drawn across the map at a slight angle from the printed grid lines. A baseplate orienteering compass lies nearby for reference. The map shows contour lines, a stream, and trail markings visible between the red lines. Natural indoor lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "2e00ea7f"
     },
     {
       "id": "orienting-map-compass",
       "file": "req4ef.md",
-      "description": "A Scout (age 13) kneeling on a grassy hillside holding a topographic map flat with a baseplate compass placed on it, in the process of rotating the map to orient it. The hillside setting shows visible terrain features in the background — a tree line on a ridge, a small stream in a valley below, and an open meadow — features that would match what appears on the map. The Scout wears outdoor clothing and looks focused on aligning the compass needle with the map."
+      "description": "A Scout (age 13) kneeling on a grassy hillside holding a topographic map flat with a baseplate compass placed on it, in the process of rotating the map to orient it. The hillside setting shows visible terrain features in the background — a tree line on a ridge, a small stream in a valley below, and an open meadow — features that would match what appears on the map. The Scout wears outdoor clothing and looks focused on aligning the compass needle with the map.",
+      "width": 800,
+      "height": 447,
+      "v": "0c3b10aa"
     },
     {
       "id": "pace-counting-course",
       "file": "req5.md",
-      "description": "A Scout (age 14) walking along a measured course marked by orange traffic cones on a flat grassy field, concentrating on counting paces. The Scout holds a small notebook for recording counts. Two orange cones are visible, one nearby and one in the distance, marking the 100-meter course. Clear sky, open field setting."
+      "description": "A Scout (age 14) walking along a measured course marked by orange traffic cones on a flat grassy field, concentrating on counting paces. The Scout holds a small notebook for recording counts. Two orange cones are visible, one nearby and one in the distance, marking the 100-meter course. Clear sky, open field setting.",
+      "width": 800,
+      "height": 447,
+      "v": "7b634a40"
     },
     {
       "id": "control-description-symbols",
       "file": "req6a.md",
       "style": "infographic",
-      "description": "An educational infographic showing 12 of the most common IOF (International Orienteering Federation) control description symbols arranged in a 4x3 grid on a light background. Each cell displays the official IOF pictograph symbol on the left and its meaning labeled on the right. The 12 symbols shown are: boulder (circle), re-entrant (V-shape), spur (inverted V), cliff (thick horizontal line), depression (V with dots), knoll (dot), stream junction (Y-shape), path crossing (X-shape), distinct tree (circle with dot), marsh (horizontal lines), earth bank (filled semicircle), and vegetation boundary (dashed line with dots). Clean, standardized, educational layout."
+      "description": "An educational infographic showing 12 of the most common IOF (International Orienteering Federation) control description symbols arranged in a 4x3 grid on a light background. Each cell displays the official IOF pictograph symbol on the left and its meaning labeled on the right. The 12 symbols shown are: boulder (circle), re-entrant (V-shape), spur (inverted V), cliff (thick horizontal line), depression (V with dots), knoll (dot), stream junction (Y-shape), path crossing (X-shape), distinct tree (circle with dot), marsh (horizontal lines), earth bank (filled semicircle), and vegetation boundary (dashed line with dots). Clean, standardized, educational layout.",
+      "width": 800,
+      "height": 447,
+      "v": "7bb3d259"
     },
     {
       "id": "control-description-sheet",
       "file": "req6b.md",
       "style": "diagram",
-      "description": "A clean educational illustration of a sample orienteering control description sheet for a 5-control course. The header shows a sample event name, course name, distance (3.2 km), and climb (85m). Below is a grid with 5 rows (one per control) and 8 columns labeled A through H. Columns A and B contain numbers, column D contains small IOF pictograph symbols (boulder, re-entrant, path, knoll, stream), and column G contains position symbols. Each column header is labeled with its purpose (Control Number, Code, Which, Feature, Appearance, Dimensions, Position, Other). The start triangle and finish double-circle are shown at the top and bottom of the sheet."
+      "description": "A clean educational illustration of a sample orienteering control description sheet for a 5-control course. The header shows a sample event name, course name, distance (3.2 km), and climb (85m). Below is a grid with 5 rows (one per control) and 8 columns labeled A through H. Columns A and B contain numbers, column D contains small IOF pictograph symbols (boulder, re-entrant, path, knoll, stream), and column G contains position symbols. Each column header is labeled with its purpose (Control Number, Code, Which, Feature, Appearance, Dimensions, Position, Other). The start triangle and finish double-circle are shown at the top and bottom of the sheet.",
+      "width": 800,
+      "height": 447,
+      "v": "01de1789"
     },
     {
       "id": "navigation-techniques",
       "file": "req6c.md",
       "style": "diagram",
-      "description": "An illustrated orienteering map excerpt demonstrating four navigation techniques with labeled callout boxes. The map shows contour lines, a trail, a stream, and forest. Four techniques are highlighted: (1) Attack Point — a trail junction marked with a star symbol near a control circle, with a callout explaining 'Navigate to this obvious feature first.' (2) Catching Feature — a road drawn beyond the control, with a callout 'If you hit this, you have gone too far.' (3) Aiming Off — a bearing line aimed slightly left of a control that sits on a stream, with a callout 'Aim left of target, then follow stream right.' (4) Handrail — a dotted line following a fence toward a control, with a callout 'Follow this linear feature toward the control.' Clean, instructional style."
+      "description": "An illustrated orienteering map excerpt demonstrating four navigation techniques with labeled callout boxes. The map shows contour lines, a trail, a stream, and forest. Four techniques are highlighted: (1) Attack Point — a trail junction marked with a star symbol near a control circle, with a callout explaining 'Navigate to this obvious feature first.' (2) Catching Feature — a road drawn beyond the control, with a callout 'If you hit this, you have gone too far.' (3) Aiming Off — a bearing line aimed slightly left of a control that sits on a stream, with a callout 'Aim left of target, then follow stream right.' (4) Handrail — a dotted line following a fence toward a control, with a callout 'Follow this linear feature toward the control.' Clean, instructional style.",
+      "width": 800,
+      "height": 447,
+      "v": "87fe0837"
     },
     {
       "id": "orienteering-event-start",
       "file": "req7a.md",
-      "description": "A group of six Scouts (ages 12-16) at the start area of an orienteering event in a park setting. Several Scouts study their maps intently, one holds a compass over the map. In the background, an orange-and-white orienteering banner is visible, along with a registration table where an adult volunteer organizes materials. A forest edge is visible behind the start area. The atmosphere is energetic and focused, with morning light."
+      "description": "A group of six Scouts (ages 12-16) at the start area of an orienteering event in a park setting. Several Scouts study their maps intently, one holds a compass over the map. In the background, an orange-and-white orienteering banner is visible, along with a registration table where an adult volunteer organizes materials. A forest edge is visible behind the start area. The atmosphere is energetic and focused, with morning light.",
+      "width": 800,
+      "height": 447,
+      "v": "795d08b1"
     },
     {
       "id": "event-report-map",
       "file": "req7b.md",
       "style": "annotated-photo",
-      "description": "A close-up photograph of an orienteering map lying on a table with a red line drawn showing a competitor's actual route between five control points. The route includes several inefficient detours. Annotated overlays highlight key areas: a circled zone labeled 'Wrong turn — lost 3 min' where the red line deviates from the optimal path, and a dotted blue line showing the 'Ideal route' for comparison on one leg. A red pen and the competitor's punch card sit beside the map."
+      "description": "A close-up photograph of an orienteering map lying on a table with a red line drawn showing a competitor's actual route between five control points. The route includes several inefficient detours. Annotated overlays highlight key areas: a circled zone labeled 'Wrong turn — lost 3 min' where the red line deviates from the optimal path, and a dotted blue line showing the 'Ideal route' for comparison on one leg. A red pen and the competitor's punch card sit beside the map.",
+      "width": 800,
+      "height": 447,
+      "v": "74babcfa"
     },
     {
       "id": "course-design-map",
       "file": "req8.md",
       "style": "diagram",
-      "description": "A topographic map excerpt showing a well-designed 5-control orienteering course. The map features brown contour lines showing hills and a valley, a blue stream, green forest areas, white open areas, and black trail lines. A red start triangle is in the lower portion, five numbered red control circles are placed on distinct terrain features (1: stream junction, 2: hilltop, 3: trail bend, 4: boulder area, 5: re-entrant), red connecting lines show the course sequence, and a red finish double-circle is near the start. Clean cartographic style."
+      "description": "A topographic map excerpt showing a well-designed 5-control orienteering course. The map features brown contour lines showing hills and a valley, a blue stream, green forest areas, white open areas, and black trail lines. A red start triangle is in the lower portion, five numbered red control circles are placed on distinct terrain features (1: stream junction, 2: hilltop, 3: trail bend, 4: boulder area, 5: re-entrant), red connecting lines show the course sequence, and a red finish double-circle is near the start. Clean cartographic style.",
+      "width": 800,
+      "height": 447,
+      "v": "7caa055d"
     },
     {
       "id": "event-official-start",
       "file": "req9.md",
-      "description": "A Scout (age 15) wearing a bright yellow high-visibility vest standing at an event start area, holding a clipboard and a digital stopwatch. The Scout is briefing two younger Scouts (ages 12-13) who hold compasses and look attentive. Behind them, a folding table displays course maps, control description sheets, and punch cards. A 'START' banner and a forest edge are visible in the background."
+      "description": "A Scout (age 15) wearing a bright yellow high-visibility vest standing at an event start area, holding a clipboard and a digital stopwatch. The Scout is briefing two younger Scouts (ages 12-13) who hold compasses and look attentive. Behind them, a folding table displays course maps, control description sheets, and punch cards. A 'START' banner and a forest edge are visible in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "553189b0"
     },
     {
       "id": "teaching-orienteering",
       "file": "req10.md",
-      "description": "A Scout (age 15) teaching a semicircle of four younger Scouts (ages 11-13) in a sunny park clearing. The older Scout holds up a baseplate compass and points to its features while explaining. Each younger Scout holds their own compass and looks at it, trying to follow along. A topographic map is spread on a nearby picnic table. The setting is a grassy area with scattered trees and dappled light."
+      "description": "A Scout (age 15) teaching a semicircle of four younger Scouts (ages 11-13) in a sunny park clearing. The older Scout holds up a baseplate compass and points to its features while explaining. Each younger Scout holds their own compass and looks at it, trying to follow along. A topographic map is spread on a nearby picnic table. The setting is a grassy area with scattered trees and dappled light.",
+      "width": 800,
+      "height": 447,
+      "v": "d90aa201"
     },
     {
       "id": "extended-learning-adventure",
       "file": "extended-learning.md",
-      "description": "A wide landscape photograph showing two orienteers running through a beautiful autumn forest with vibrant red, orange, and gold foliage. One runner holds an orienteering map and compass at waist level while navigating. The other runner is slightly ahead, approaching a distant orange-and-white control flag attached to a wooden stake near a large boulder. Golden sunlight filters through the canopy, creating dramatic light rays. The scene conveys the excitement, natural beauty, and athleticism of competitive orienteering."
+      "description": "A wide landscape photograph showing two orienteers running through a beautiful autumn forest with vibrant red, orange, and gold foliage. One runner holds an orienteering map and compass at waist level while navigating. The other runner is slightly ahead, approaching a distant orange-and-white control flag attached to a wooden stake near a large boulder. Golden sunlight filters through the canopy, creating dramatic light rays. The scene conveys the excitement, natural beauty, and athleticism of competitive orienteering.",
+      "width": 800,
+      "height": 447,
+      "v": "6d7b0b9b"
     }
   ]
 }

@@ -5,80 +5,125 @@
     {
       "id": "scout-art-studio",
       "file": "_index.md",
-      "description": "A Scout (age 13-14, wearing a clean Scout uniform shirt) standing confidently at a wooden easel in a bright, organized art studio. The Scout holds a paintbrush and looks at a canvas with a colorful landscape in progress. A well-organized table nearby holds tubes of paint, brushes in jars, a palette, and a cup of water. Natural light streams through a large window. The studio has white walls with a few framed artworks hanging on them."
+      "description": "A Scout (age 13-14, wearing a clean Scout uniform shirt) standing confidently at a wooden easel in a bright, organized art studio. The Scout holds a paintbrush and looks at a canvas with a colorful landscape in progress. A well-organized table nearby holds tubes of paint, brushes in jars, a palette, and a cup of water. Natural light streams through a large window. The studio has white walls with a few framed artworks hanging on them.",
+      "width": 800,
+      "height": 447,
+      "v": "fd40dd61"
     },
     {
       "id": "pencil-sketching-still-life",
       "file": "_index.md",
-      "description": "Close-up view of a Scout's hands holding a pencil, sketching a still-life arrangement on a spiral-bound sketchpad. The still life consists of a red apple, a ceramic vase with dried flowers, and a small wooden box arranged on a draped cloth. The sketch is partially complete, showing confident pencil lines and light shading. A few other pencils and an eraser sit on the table beside the sketchpad."
+      "description": "Close-up view of a Scout's hands holding a pencil, sketching a still-life arrangement on a spiral-bound sketchpad. The still life consists of a red apple, a ceramic vase with dried flowers, and a small wooden box arranged on a draped cloth. The sketch is partially complete, showing confident pencil lines and light shading. A few other pencils and an eraser sit on the table beside the sketchpad.",
+      "width": 800,
+      "height": 447,
+      "v": "3ee91697"
     },
     {
       "id": "art-forms-collage",
       "file": "req1.md",
-      "description": "A visually appealing collage-style composition showing six different art forms side by side: a detailed pencil portrait drawing, a vibrant watercolor landscape, a small clay sculpture of a bird, a black-and-white photograph of a tree, a colorful digital illustration on a tablet screen, and a piece of woven textile art. Each form is presented in its own distinct frame or section, creating an organized visual catalog of art forms."
+      "description": "A visually appealing collage-style composition showing six different art forms side by side: a detailed pencil portrait drawing, a vibrant watercolor landscape, a small clay sculpture of a bird, a black-and-white photograph of a tree, a colorful digital illustration on a tablet screen, and a piece of woven textile art. Each form is presented in its own distinct frame or section, creating an organized visual catalog of art forms.",
+      "width": 800,
+      "height": 447,
+      "v": "609a5fff"
     },
     {
       "id": "elements-of-art-overview",
       "file": "req2.md",
       "style": "infographic",
-      "description": "A clean, educational infographic-style illustration divided into seven sections, each labeled and demonstrating one element of art: LINE (various types of lines — straight, curved, zigzag, thick, thin), VALUE (a gradient strip from white to black), SHAPE (geometric and organic shapes — circles, triangles, leaves, clouds), FORM (a shaded sphere showing 3D depth), SPACE (a simple one-point perspective drawing of a road), COLOR (a color wheel with primary, secondary, and tertiary colors), TEXTURE (close-up patches showing rough, smooth, bumpy, and woven surfaces). The overall design is colorful and well-organized on a light background."
+      "description": "A clean, educational infographic-style illustration divided into seven sections, each labeled and demonstrating one element of art: LINE (various types of lines — straight, curved, zigzag, thick, thin), VALUE (a gradient strip from white to black), SHAPE (geometric and organic shapes — circles, triangles, leaves, clouds), FORM (a shaded sphere showing 3D depth), SPACE (a simple one-point perspective drawing of a road), COLOR (a color wheel with primary, secondary, and tertiary colors), TEXTURE (close-up patches showing rough, smooth, bumpy, and woven surfaces). The overall design is colorful and well-organized on a light background.",
+      "width": 800,
+      "height": 447,
+      "v": "3cfa432e"
     },
     {
       "id": "positive-negative-space",
       "file": "req2.md",
       "style": "comparison",
-      "description": "A split-panel educational illustration demonstrating positive and negative space. On the left, a solid black vase or chalice shape centered on a white background, with 'Positive Space' labeled. On the right, the same image but with the white background highlighted to show that the negative space between the vase edges creates the silhouette of two face profiles looking at each other, with 'Negative Space' labeled. Clean, high-contrast design on a neutral background."
+      "description": "A split-panel educational illustration demonstrating positive and negative space. On the left, a solid black vase or chalice shape centered on a white background, with 'Positive Space' labeled. On the right, the same image but with the white background highlighted to show that the negative space between the vase edges creates the silhouette of two face profiles looking at each other, with 'Negative Space' labeled. Clean, high-contrast design on a neutral background.",
+      "width": 800,
+      "height": 447,
+      "v": "0bc05b72"
     },
     {
       "id": "principles-of-design-grid",
       "file": "req3.md",
       "style": "infographic",
-      "description": "A six-panel grid illustration, each panel demonstrating one principle of design with a simple, clear visual example and a label beneath. RHYTHM: repeating colorful arches in a row. BALANCE: a symmetrical butterfly with matching wing patterns. PROPORTION: a large oak tree beside a small house showing size relationships. VARIETY: a collection of autumn leaves in different shapes, sizes, and colors. EMPHASIS: one bright red circle standing out among several gray circles. UNITY: a harmonious landscape scene where all elements (sky, mountains, trees, river) share a cohesive color palette. Clean, modern illustration style."
+      "description": "A six-panel grid illustration, each panel demonstrating one principle of design with a simple, clear visual example and a label beneath. RHYTHM: repeating colorful arches in a row. BALANCE: a symmetrical butterfly with matching wing patterns. PROPORTION: a large oak tree beside a small house showing size relationships. VARIETY: a collection of autumn leaves in different shapes, sizes, and colors. EMPHASIS: one bright red circle standing out among several gray circles. UNITY: a harmonious landscape scene where all elements (sky, mountains, trees, river) share a cohesive color palette. Clean, modern illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "8a3781cc"
     },
     {
       "id": "emphasis-example",
       "file": "req3.md",
-      "description": "A painting of a busy outdoor market scene with many people walking among vendor stalls with colorful canopies. Most of the people and stalls are rendered in muted earth tones and soft blues. One person in the center-left of the composition wears a bright yellow jacket, immediately standing out as the clear focal point against the subdued surroundings. The scene demonstrates the principle of emphasis through color contrast."
+      "description": "A painting of a busy outdoor market scene with many people walking among vendor stalls with colorful canopies. Most of the people and stalls are rendered in muted earth tones and soft blues. One person in the center-left of the composition wears a bright yellow jacket, immediately standing out as the clear focal point against the subdued surroundings. The scene demonstrates the principle of emphasis through color contrast.",
+      "width": 800,
+      "height": 447,
+      "v": "cea83d9c"
     },
     {
       "id": "art-supplies-arranged",
       "file": "req4.md",
-      "description": "A beautifully arranged flat lay (top-down view) of various art supplies on a light wooden table. Arranged in an organized, aesthetically pleasing layout: graphite pencils from 2H to 6B, fine-tip ink pens, an open watercolor palette with vibrant colors, soft pastel sticks in warm tones, vine charcoal sticks and a compressed charcoal pencil, small tubes of acrylic paint in primary colors, tubes of oil paint, bottles of tempera paint, and a digital drawing tablet with stylus. Each medium grouping is slightly separated for clarity."
+      "description": "A beautifully arranged flat lay (top-down view) of various art supplies on a light wooden table. Arranged in an organized, aesthetically pleasing layout: graphite pencils from 2H to 6B, fine-tip ink pens, an open watercolor palette with vibrant colors, soft pastel sticks in warm tones, vine charcoal sticks and a compressed charcoal pencil, small tubes of acrylic paint in primary colors, tubes of oil paint, bottles of tempera paint, and a digital drawing tablet with stylus. Each medium grouping is slightly separated for clarity.",
+      "width": 800,
+      "height": 447,
+      "v": "f0e5868f"
     },
     {
       "id": "scout-painting-at-easel",
       "file": "req4.md",
-      "description": "A Scout (age 14-15, wearing a clean and unstained apron over casual work clothes) standing outdoors at a portable easel, painting a sunny landscape with acrylic paints. The Scout holds a palette in one hand and a brush in the other, concentrating on the canvas. A folding table beside the easel holds paint tubes, brushes in a jar, and a water cup. The background shows the actual landscape being painted — green hills and blue sky. Warm, natural lighting."
+      "description": "A Scout (age 14-15, wearing a clean and unstained apron over casual work clothes) standing outdoors at a portable easel, painting a sunny landscape with acrylic paints. The Scout holds a palette in one hand and a brush in the other, concentrating on the canvas. A folding table beside the easel holds paint tubes, brushes in a jar, and a water cup. The background shows the actual landscape being painted — green hills and blue sky. Warm, natural lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "df84e6b9"
     },
     {
       "id": "design-sketch-model",
       "file": "req5.md",
-      "description": "A Scout's open sketchbook lying on a desk, showing a product design page with multiple concept sketches of a camp kitchen organizer drawn in pencil and ink. The sketches show different angles and ideas with handwritten annotation notes and arrows. Next to the sketchbook sits a small prototype model made from cardboard and tape, bringing one of the sketched concepts to life in three dimensions. A pencil and ruler sit beside the sketchbook."
+      "description": "A Scout's open sketchbook lying on a desk, showing a product design page with multiple concept sketches of a camp kitchen organizer drawn in pencil and ink. The sketches show different angles and ideas with handwritten annotation notes and arrows. Next to the sketchbook sits a small prototype model made from cardboard and tape, bringing one of the sketched concepts to life in three dimensions. A pencil and ruler sit beside the sketchbook.",
+      "width": 800,
+      "height": 447,
+      "v": "fb0facc9"
     },
     {
       "id": "logo-design-process",
       "file": "req5.md",
-      "description": "A sketchbook page showing the evolution of a Scout patrol logo design from rough concept to polished final version. The top of the page has a dozen quick, loose thumbnail sketches of different logo ideas featuring an eagle motif. The middle shows three semi-refined concepts circled with notes about strengths and weaknesses. The bottom shows a single clean, finalized logo design in a bold, simple style — an eagle silhouette inside a shield shape with a banner. Pencil and fine-tip marker were used."
+      "description": "A sketchbook page showing the evolution of a Scout patrol logo design from rough concept to polished final version. The top of the page has a dozen quick, loose thumbnail sketches of different logo ideas featuring an eagle motif. The middle shows three semi-refined concepts circled with notes about strengths and weaknesses. The bottom shows a single clean, finalized logo design in a bold, simple style — an eagle silhouette inside a shield shape with a banner. Pencil and fine-tip marker were used.",
+      "width": 800,
+      "height": 447,
+      "v": "c88f1654"
     },
     {
       "id": "scout-at-museum",
       "file": "req6.md",
-      "description": "A Scout (age 12-13, wearing a clean Scout uniform) standing in a modern art museum gallery with white walls and polished floors. The Scout looks up thoughtfully at a large framed landscape painting hanging on the wall. Other artworks — paintings and a small sculpture on a pedestal — are visible farther down the gallery. Soft, even gallery lighting illuminates the space. The Scout holds a small notebook and pencil."
+      "description": "A Scout (age 12-13, wearing a clean Scout uniform) standing in a modern art museum gallery with white walls and polished floors. The Scout looks up thoughtfully at a large framed landscape painting hanging on the wall. Other artworks — paintings and a small sculpture on a pedestal — are visible farther down the gallery. Soft, even gallery lighting illuminates the space. The Scout holds a small notebook and pencil.",
+      "width": 800,
+      "height": 447,
+      "v": "529081bb"
     },
     {
       "id": "art-careers-montage",
       "file": "req7.md",
-      "description": "A four-panel montage showing different art professionals at work. Top-left: a graphic designer sitting at a dual-monitor desk, designing a colorful website layout. Top-right: an architect reviewing blueprints spread across a large table with a building model nearby. Bottom-left: a muralist on scaffolding, painting a large colorful mural on the side of a building. Bottom-right: a digital animator working on a tablet, drawing a cartoon character with animation frames visible on a nearby screen. Each panel is vibrantly colored and clearly shows a distinct art career."
+      "description": "A four-panel montage showing different art professionals at work. Top-left: a graphic designer sitting at a dual-monitor desk, designing a colorful website layout. Top-right: an architect reviewing blueprints spread across a large table with a building model nearby. Bottom-left: a muralist on scaffolding, painting a large colorful mural on the side of a building. Bottom-right: a digital animator working on a tablet, drawing a cartoon character with animation frames visible on a nearby screen. Each panel is vibrantly colored and clearly shows a distinct art career.",
+      "width": 800,
+      "height": 447,
+      "v": "d9f72e9b"
     },
     {
       "id": "filled-sketchbook-pages",
       "file": "extended-learning.md",
-      "description": "An open sketchbook photographed from above, showing two facing pages filled with a variety of sketches in pencil and ink. The left page has quick gesture drawings of people in different poses, a detailed study of a hand, and a small landscape doodle. The right page has observational drawings of everyday objects — a coffee mug, a pair of shoes, a house key — along with some loose contour drawings and handwritten notes. The sketches range from rough and loose to carefully detailed, showing the natural variety of a working sketchbook."
+      "description": "An open sketchbook photographed from above, showing two facing pages filled with a variety of sketches in pencil and ink. The left page has quick gesture drawings of people in different poses, a detailed study of a hand, and a small landscape doodle. The right page has observational drawings of everyday objects — a coffee mug, a pair of shoes, a house key — along with some loose contour drawings and handwritten notes. The sketches range from rough and loose to carefully detailed, showing the natural variety of a working sketchbook.",
+      "width": 800,
+      "height": 447,
+      "v": "1c0ec94e"
     },
     {
       "id": "plein-air-painting-park",
       "file": "extended-learning.md",
-      "description": "A Scout (age 14-15, wearing casual outdoor clothes and a sun hat) sitting on a portable folding stool in a green park, painting a landscape scene on a small portable easel. A compact watercolor set is open on a small table beside the Scout, along with a cup of water and a few brushes. The Scout is surrounded by mature trees, dappled sunlight, and a winding path. The mood is peaceful and focused. The painting in progress on the easel roughly matches the park scene in front of the Scout."
+      "description": "A Scout (age 14-15, wearing casual outdoor clothes and a sun hat) sitting on a portable folding stool in a green park, painting a landscape scene on a small portable easel. A compact watercolor set is open on a small table beside the Scout, along with a cup of water and a few brushes. The Scout is surrounded by mature trees, dappled sunlight, and a winding path. The mood is peaceful and focused. The painting in progress on the easel roughly matches the park scene in front of the Scout.",
+      "width": 800,
+      "height": 447,
+      "v": "e273f896"
     }
   ]
 }

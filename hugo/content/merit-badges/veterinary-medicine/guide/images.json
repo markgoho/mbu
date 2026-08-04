@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "describe",
       "description": "Split educational image. Left panel: clean veterinary exam room with a veterinarian examining a calm medium-sized dog on an exam table while a pet owner watches. Right panel: outdoor barn aisle with a veterinarian examining a horse beside a handler. Add minimal clear instructional callouts labeling the clinic setting, horse barn setting, small-animal patient, equine patient, and note that communication and environment change with the species. No branding or logos.",
-      "value": "Shows the visual contrast between small-animal clinic care and equine field care — two work environments and patient scales that text alone cannot compare as quickly"
+      "value": "Shows the visual contrast between small-animal clinic care and equine field care — two work environments and patient scales that text alone cannot compare as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "041361c7"
     },
     {
       "id": "veterinary-training-pathway",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean horizontal educational pathway diagram with simple icons and very short labels only. Five connected stages from left to right: high school science foundation, undergraduate prerequisites, veterinary experience and application preparation, four years of veterinary school, licensing exams and optional specialty training. Use books, microscope, animal clinic, graduation cap, and exam certificate icons. Keep text minimal and horizontal. No logos.",
-      "value": "Shows the full sequence and progression of training milestones at a glance — timeline structure that is harder to hold in memory from text alone"
+      "value": "Shows the full sequence and progression of training milestones at a glance — timeline structure that is harder to hold in memory from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "428c102b"
     },
     {
       "id": "veterinary-technician-task-board",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Educational collage-style diagram with four clean panels showing a veterinary technician role: taking a dog's temperature and pulse, preparing a blood sample and microscope slide, monitoring anesthesia equipment during surgery, and helping explain home-care instructions to a pet owner. Use short horizontal callouts only: vitals, lab work, anesthesia monitoring, client guidance. No branding.",
-      "value": "Shows the range of technician duties across patient care, lab work, surgery support, and communication — role variety that text alone cannot display as one connected team job"
+      "value": "Shows the range of technician duties across patient care, lab work, surgery support, and communication — role variety that text alone cannot display as one connected team job",
+      "width": 800,
+      "height": 447,
+      "v": "afe50e66"
     },
     {
       "id": "veterinarian-family-pet-consult",
@@ -32,7 +41,10 @@
       "style": "photo",
       "verb_family": "describe",
       "description": "Realistic veterinary exam-room consultation. A veterinarian kneels beside a calm dog while talking with a family standing nearby. The dog is relaxed, the family is attentive, and the room looks professional and welcoming with normal exam-room equipment. Focus on the shared attention between veterinarian, pet, and family. No visible logos, signs, or text.",
-      "value": "Shows the three-way relationship between veterinarian, animal, and family in one moment — the human-animal bond in practice is easier to understand visually than through description alone"
+      "value": "Shows the three-way relationship between veterinarian, animal, and family in one moment — the human-animal bond in practice is easier to understand visually than through description alone",
+      "width": 800,
+      "height": 447,
+      "v": "5b3187f4"
     },
     {
       "id": "veterinary-clinic-workflow-map",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple veterinary clinic workflow diagram with five connected stations arranged left to right: check-in desk, exam room, diagnostics area, treatment or surgery area, discharge desk. Use icons and arrows, with only very short horizontal labels for each station. Make the spaces clearly different and easy to scan. No branding or extra text.",
-      "value": "Shows how a patient moves through a veterinary facility from arrival to discharge — workflow and space relationships that are much clearer visually than in paragraph form"
+      "value": "Shows how a patient moves through a veterinary facility from arrival to discharge — workflow and space relationships that are much clearer visually than in paragraph form",
+      "width": 800,
+      "height": 447,
+      "v": "73237ca9"
     }
   ]
 }

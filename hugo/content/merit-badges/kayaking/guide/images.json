@@ -7,42 +7,60 @@
       "file": "req3.md",
       "style": "comparison",
       "description": "Side-by-side comparison of a kayaker in appropriate paddling clothing seated in a kayak wearing a properly fitted paddling life jacket on one side and a poorly fitted jacket riding up at the shoulders on the other, emphasizing snug torso fit, free arm movement, and obvious shoulder ride-up problems. Minimal short labels only. No branding or logos.",
-      "value": "Shows the visible difference between correct and incorrect kayaking life jacket fit in a seated paddling position — fit problems that text alone cannot convey"
+      "value": "Shows the visible difference between correct and incorrect kayaking life jacket fit in a seated paddling position — fit problems that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "770fbce5"
     },
     {
       "id": "kayak-parts-labeled-diagram",
       "file": "req4.md",
       "style": "diagram",
       "description": "Clean educational diagram with side view and top view of a recreational kayak, using short horizontal callouts to label major parts: bow, stern, hull, deck, cockpit, seat, back band, foot braces, grab handles, deck lines, hatch, bulkhead, skeg, and rudder. Visual-first layout with sparse readable labels and no extra scenery.",
-      "value": "Shows the spatial relationship of major kayak parts in one view so a reader can identify and point them out on a real boat — positions that are hard to learn from text alone"
+      "value": "Shows the spatial relationship of major kayak parts in one view so a reader can identify and point them out on a real boat — positions that are hard to learn from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "327a0c45"
     },
     {
       "id": "efficient-kayak-forward-stroke-annotated",
       "file": "req5.md",
       "style": "annotated-photo",
       "description": "Annotated side-view photo of one kayaker on calm water demonstrating an efficient forward stroke. Show only five short callouts: hand spacing, upright posture, torso rotation, catch near feet, and exit at hip. Keep the scene simple and the annotations minimal.",
-      "value": "Shows body position and blade path during an efficient forward stroke — movement mechanics and posture cues that are much easier to learn visually than from prose"
+      "value": "Shows body position and blade path during an efficient forward stroke — movement mechanics and posture cues that are much easier to learn visually than from prose",
+      "width": 800,
+      "height": 447,
+      "v": "be717187"
     },
     {
       "id": "wet-exit-sequence-four-panel",
       "file": "req6.md",
       "style": "comparison",
       "description": "Four-panel step-by-step instructional sequence in a simple side-view pool setting with one paddler and one open-cockpit kayak. Panel 1: the kayak is upside down and the paddler is still seated inside underwater. Panel 2: the paddler places both hands forward and pushes out of the cockpit. Panel 3: the paddler's hips and legs slide fully clear of the cockpit while staying close to the boat. Panel 4: the paddler is at the surface beside the overturned kayak and holding the paddle. Keep the same kayak and paddler across all four panels. Emphasize the body moving out of the cockpit. Only four panels total, with one short label per panel and no extra annotations.",
-      "value": "Shows the physical sequence of a wet exit from capsize to resurfacing — an underwater body movement sequence that text alone cannot demonstrate clearly"
+      "value": "Shows the physical sequence of a wet exit from capsize to resurfacing — an underwater body movement sequence that text alone cannot demonstrate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "1b65b095"
     },
     {
       "id": "six-essential-kayak-strokes-grid",
       "file": "req7.md",
       "style": "illustrated",
       "description": "Clean illustrated 2-by-3 grid of six separate kayaker views on calm water, each demonstrating one essential stroke with minimal short labels and clear paddle-path cues: forward stroke, backstroke, forward sweep, reverse sweep, draw stroke, and stern draw. Consistent boat orientation where helpful, clear spacing, and no decorative background.",
-      "value": "Shows the distinct blade paths and boat effects of all six essential strokes side by side — comparisons that help the reader visually separate similar motions"
+      "value": "Shows the distinct blade paths and boat effects of all six essential strokes side by side — comparisons that help the reader visually separate similar motions",
+      "width": 800,
+      "height": 447,
+      "v": "ecc50e44"
     },
     {
       "id": "kayak-figure-eight-course-overhead",
       "file": "req8.md",
       "style": "diagram",
       "description": "Bird's-eye educational diagram of a kayak paddling a figure-eight course around two buoys spaced a few boat lengths apart, with smooth path lines showing early turn setup, crossing point, and balanced loops around each marker. Minimal labels, clear water background, and path-focused layout.",
-      "value": "Shows the spatial path and timing of a smooth figure-eight maneuver around buoys — course geometry and turn setup that are difficult to picture from text alone"
+      "value": "Shows the spatial path and timing of a smooth figure-eight maneuver around buoys — course geometry and turn setup that are difficult to picture from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "a6dd1022"
     }
   ]
 }

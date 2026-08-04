@@ -5,167 +5,257 @@
     {
       "id": "scout-stargazing-field",
       "file": "_index.md",
-      "description": "A Scout (age 13-15) standing in an open grassy field at night, gazing upward at a vivid starry sky. The Milky Way is clearly visible stretching across the sky. The Scout is wearing a clean Scout uniform with a warm jacket. A gentle glow of twilight is on the distant horizon. The scene conveys wonder and excitement about the night sky."
+      "description": "A Scout (age 13-15) standing in an open grassy field at night, gazing upward at a vivid starry sky. The Milky Way is clearly visible stretching across the sky. The Scout is wearing a clean Scout uniform with a warm jacket. A gentle glow of twilight is on the distant horizon. The scene conveys wonder and excitement about the night sky.",
+      "width": 800,
+      "height": 447,
+      "v": "ae8dd18f"
     },
     {
       "id": "telescope-star-cluster",
       "file": "_index.md",
-      "description": "A telescope set up on a tripod in a backyard at night, pointed upward at the sky. A bright star cluster is visible in the dark sky above. The telescope is a modern consumer reflector on an equatorial mount. Warm ambient light from a nearby house softly illuminates the foreground."
+      "description": "A telescope set up on a tripod in a backyard at night, pointed upward at the sky. A bright star cluster is visible in the dark sky above. The telescope is a modern consumer reflector on an equatorial mount. Warm ambient light from a nearby house softly illuminates the foreground.",
+      "width": 800,
+      "height": 447,
+      "v": "5b2e2186"
     },
     {
       "id": "astrophotography-setup",
       "file": "_index.md",
-      "description": "An amateur astrophotography setup with a DSLR camera mounted on a telescope under a clear starry sky. The camera is connected to the telescope with an adapter. A laptop nearby shows a celestial image. The scene is lit by a faint red light to preserve night vision."
+      "description": "An amateur astrophotography setup with a DSLR camera mounted on a telescope under a clear starry sky. The camera is connected to the telescope with an adapter. A laptop nearby shows a celestial image. The scene is lit by a faint red light to preserve night vision.",
+      "width": 800,
+      "height": 447,
+      "v": "2bb10d8f"
     },
     {
       "id": "stargazing-campsite-safety",
       "file": "req1a.md",
-      "description": "A small group of Scouts (ages 12-15) at a well-organized stargazing site at night. They are standing near a telescope on level ground. One Scout holds a red-light flashlight. Equipment cases are neatly arranged. The Scouts wear clean Scout uniforms with warm jackets. The scene emphasizes safety and organization."
+      "description": "A small group of Scouts (ages 12-15) at a well-organized stargazing site at night. They are standing near a telescope on level ground. One Scout holds a red-light flashlight. Equipment cases are neatly arranged. The Scouts wear clean Scout uniforms with warm jackets. The scene emphasizes safety and organization.",
+      "width": 800,
+      "height": 447,
+      "v": "89cf1873"
     },
     {
       "id": "first-aid-cold-weather",
       "file": "req1b.md",
-      "description": "One Scout (age 14) helping another Scout wrap up in a reflective emergency blanket on a cold clear night. A telescope and tripod are visible in the background. The helping Scout is calm and focused. Both wear clean Scout uniforms with warm layers. Stars are visible in the dark sky above."
+      "description": "One Scout (age 14) helping another Scout wrap up in a reflective emergency blanket on a cold clear night. A telescope and tripod are visible in the background. The helping Scout is calm and focused. Both wear clean Scout uniforms with warm layers. Stars are visible in the dark sky above.",
+      "width": 800,
+      "height": 447,
+      "v": "e1e0dd2d"
     },
     {
       "id": "layered-astronomer-night",
       "file": "req1c.md",
-      "description": "A warmly dressed Scout at a telescope on a cold, clear winter night. The Scout wears multiple visible layers: a base layer, fleece mid-layer, and outer shell jacket, plus a warm hat and gloves. A red headlamp glows on the hat. A thermos and folding chair are nearby. Stars fill the sky above."
+      "description": "A warmly dressed Scout at a telescope on a cold, clear winter night. The Scout wears multiple visible layers: a base layer, fleece mid-layer, and outer shell jacket, plus a warm hat and gloves. A red headlamp glows on the hat. A thermos and folding chair are nearby. Stars fill the sky above.",
+      "width": 800,
+      "height": 447,
+      "v": "814f2c12"
     },
     {
       "id": "solar-observation-methods",
       "file": "req1d.md",
       "style": "infographic",
-      "description": "A split illustration showing three safe solar observation methods side by side: (1) A person wearing eclipse glasses looking up at the Sun, (2) A telescope with a white solar filter cap on the front, (3) A pinhole projection setup with cardboard projecting a small image of the Sun onto white paper. Each method is clearly separated and labeled."
+      "description": "A split illustration showing three safe solar observation methods side by side: (1) A person wearing eclipse glasses looking up at the Sun, (2) A telescope with a white solar filter cap on the front, (3) A pinhole projection setup with cardboard projecting a small image of the Sun onto white paper. Each method is clearly separated and labeled.",
+      "width": 800,
+      "height": 447,
+      "v": "c29374a0"
     },
     {
       "id": "bortle-scale-comparison",
       "file": "req2.md",
       "style": "comparison",
-      "description": "A dramatic side-by-side comparison of the night sky from two locations. The left half shows a dark rural sky (Bortle 2) with thousands of stars and a vivid Milky Way. The right half shows a city sky (Bortle 8) with only a handful of bright stars visible against an orange-gray sky glow. A horizon line connects both halves."
+      "description": "A dramatic side-by-side comparison of the night sky from two locations. The left half shows a dark rural sky (Bortle 2) with thousands of stars and a vivid Milky Way. The right half shows a city sky (Bortle 8) with only a handful of bright stars visible against an orange-gray sky glow. A horizon line connects both halves.",
+      "width": 800,
+      "height": 447,
+      "v": "6f35cc78"
     },
     {
       "id": "binoculars-telescope-comparison",
       "file": "req3a.md",
-      "description": "Two Scouts side by side at night. The Scout on the left looks through a pair of binoculars held to the eyes. The Scout on the right looks through the eyepiece of a telescope on a tripod. Both Scouts wear clean Scout uniforms with warm jackets. Stars are visible in the background sky."
+      "description": "Two Scouts side by side at night. The Scout on the left looks through a pair of binoculars held to the eyes. The Scout on the right looks through the eyepiece of a telescope on a tripod. Both Scouts wear clean Scout uniforms with warm jackets. Stars are visible in the background sky.",
+      "width": 800,
+      "height": 447,
+      "v": "625d4026"
     },
     {
       "id": "three-telescope-types",
       "file": "req3b.md",
       "style": "diagram",
-      "description": "A clean educational diagram showing three telescope designs side by side with light paths traced: a refractor (lens at front, eyepiece at back), a Newtonian reflector (mirror at bottom, eyepiece on side), and a compound/Schmidt-Cassegrain (corrector plate at front, mirror at back, eyepiece at back). Light rays are shown entering each telescope and being focused. Labeled clearly."
+      "description": "A clean educational diagram showing three telescope designs side by side with light paths traced: a refractor (lens at front, eyepiece at back), a Newtonian reflector (mirror at bottom, eyepiece on side), and a compound/Schmidt-Cassegrain (corrector plate at front, mirror at back, eyepiece at back). Light rays are shown entering each telescope and being focused. Labeled clearly.",
+      "width": 800,
+      "height": 447,
+      "v": "d7d2709f"
     },
     {
       "id": "spectrograph-rainbow",
       "file": "req3c.md",
       "style": "diagram",
-      "description": "A prism or diffraction grating splitting a beam of white starlight into a colorful rainbow spectrum. Dark absorption lines are visible at specific wavelengths across the spectrum. The spectrum transitions smoothly from red on one end through orange, yellow, green, blue, to violet on the other end. Labels indicate key absorption lines."
+      "description": "A prism or diffraction grating splitting a beam of white starlight into a colorful rainbow spectrum. Dark absorption lines are visible at specific wavelengths across the spectrum. The spectrum transitions smoothly from red on one end through orange, yellow, green, blue, to violet on the other end. Labels indicate key absorption lines.",
+      "width": 800,
+      "height": 447,
+      "v": "6758d823"
     },
     {
       "id": "telescope-storage-setup",
       "file": "req3d.md",
-      "description": "A well-organized indoor telescope storage area. A telescope stands upright with dust caps on all optics. Next to it is a padded case holding several eyepieces in individual compartments. A pair of binoculars sits in their case nearby. Everything is clean and organized on a shelf in a dry room."
+      "description": "A well-organized indoor telescope storage area. A telescope stands upright with dust caps on all optics. Next to it is a padded case holding several eyepieces in individual compartments. A pair of binoculars sits in their case nearby. Everything is clean and organized on a shelf in a dry room.",
+      "width": 800,
+      "height": 447,
+      "v": "15e950cc"
     },
     {
       "id": "constellation-chart-zodiac",
       "file": "req4a.md",
       "style": "diagram",
-      "description": "A stylized star chart showing several zodiac constellations against a deep blue-black background. Leo, Scorpius, Taurus, and Gemini are shown with their star patterns connected by thin lines and labeled with constellation names and key star names (Regulus, Antares, Aldebaran, Castor, Pollux). Stars are shown as bright dots of varying sizes."
+      "description": "A stylized star chart showing several zodiac constellations against a deep blue-black background. Leo, Scorpius, Taurus, and Gemini are shown with their star patterns connected by thin lines and labeled with constellation names and key star names (Regulus, Antares, Aldebaran, Castor, Pollux). Stars are shown as bright dots of varying sizes.",
+      "width": 800,
+      "height": 447,
+      "v": "a4ca2a9c"
     },
     {
       "id": "star-hopping-patterns",
       "file": "req4b.md",
       "style": "diagram",
-      "description": "A star chart showing three major star-hopping patterns: the Winter Triangle (Sirius, Betelgeuse, Procyon connected by dashed lines), the Summer Triangle (Vega, Deneb, Altair connected by dashed lines), and an arrow curving from the Big Dipper's handle through Arcturus and on to Spica. Stars are labeled and shown at varying brightness. Background is deep blue-black."
+      "description": "A star chart showing three major star-hopping patterns: the Winter Triangle (Sirius, Betelgeuse, Procyon connected by dashed lines), the Summer Triangle (Vega, Deneb, Altair connected by dashed lines), and an arrow curving from the Big Dipper's handle through Arcturus and on to Spica. Stars are labeled and shown at varying brightness. Background is deep blue-black.",
+      "width": 800,
+      "height": 447,
+      "v": "77657418"
     },
     {
       "id": "big-dipper-sketches",
       "file": "req4c.md",
-      "description": "Two side-by-side astronomical sketches on white paper as if drawn by a Scout. Each shows the Big Dipper at a different orientation around Polaris. The left sketch shows the Big Dipper in one position with Polaris labeled and a horizon line with simple landmarks (tree, house). The right sketch shows the same view hours later with the Big Dipper rotated counterclockwise. Dates and times are written on each."
+      "description": "Two side-by-side astronomical sketches on white paper as if drawn by a Scout. Each shows the Big Dipper at a different orientation around Polaris. The left sketch shows the Big Dipper in one position with Polaris labeled and a horizon line with simple landmarks (tree, house). The right sketch shows the same view hours later with the Big Dipper rotated counterclockwise. Dates and times are written on each.",
+      "width": 800,
+      "height": 447,
+      "v": "42a4a52f"
     },
     {
       "id": "milky-way-dark-sky",
       "file": "req4d.md",
-      "description": "A breathtaking view of the Milky Way arching over a dark landscape. The galactic center is bright and prominent near the horizon in the direction of Sagittarius. Dark dust lanes are visible splitting the band of light. The landscape below shows a silhouette of rolling hills. No light pollution is visible."
+      "description": "A breathtaking view of the Milky Way arching over a dark landscape. The galactic center is bright and prominent near the horizon in the direction of Sagittarius. Dark dust lanes are visible splitting the band of light. The landscape below shows a silhouette of rolling hills. No light pollution is visible.",
+      "width": 800,
+      "height": 447,
+      "v": "9630bf6e"
     },
     {
       "id": "five-planets-lineup",
       "file": "req5a.md",
       "style": "illustrated",
-      "description": "An illustrated lineup of the five naked-eye planets in order from the Sun: Mercury (small, gray), Venus (bright, yellowish-white), Mars (reddish-orange), Jupiter (large, banded), and Saturn (golden with prominent rings). Each planet is labeled with its name. They are shown at roughly proportional sizes with artistic styling."
+      "description": "An illustrated lineup of the five naked-eye planets in order from the Sun: Mercury (small, gray), Venus (bright, yellowish-white), Mars (reddish-orange), Jupiter (large, banded), and Saturn (golden with prominent rings). Each planet is labeled with its name. They are shown at roughly proportional sizes with artistic styling.",
+      "width": 800,
+      "height": 447,
+      "v": "d8b3a32d"
     },
     {
       "id": "planet-visibility-timeline",
       "file": "req5b.md",
       "style": "infographic",
-      "description": "A colorful horizontal timeline chart showing 12 months across the top. Five rows represent Mercury, Venus, Mars, Jupiter, and Saturn. Colored bars indicate periods when each planet is visible in the evening sky. Each planet has a different color. The chart is clean and easy to read with month labels and planet names."
+      "description": "A colorful horizontal timeline chart showing 12 months across the top. Five rows represent Mercury, Venus, Mars, Jupiter, and Saturn. Colored bars indicate periods when each planet is visible in the evening sky. Each planet has a different color. The chart is clean and easy to read with month labels and planet names.",
+      "width": 800,
+      "height": 447,
+      "v": "fe3a34af"
     },
     {
       "id": "retrograde-motion-diagram",
       "file": "req5c.md",
       "style": "diagram",
-      "description": "A diagram showing Earth and Mars orbiting the Sun, with numbered positions showing Earth passing Mars. Above, against a backdrop of stars, the apparent positions of Mars are shown connected by a line that forms a loop — demonstrating retrograde motion. Arrows show the direction of orbital motion. The retrograde loop is highlighted."
+      "description": "A diagram showing Earth and Mars orbiting the Sun, with numbered positions showing Earth passing Mars. Above, against a backdrop of stars, the apparent positions of Mars are shown connected by a line that forms a loop — demonstrating retrograde motion. Arrows show the direction of orbital motion. The retrograde loop is highlighted.",
+      "width": 800,
+      "height": 447,
+      "v": "5745c656"
     },
     {
       "id": "planet-observation-notebook",
       "file": "req5d.md",
-      "description": "A close-up of an observation notebook page on a clipboard. The page shows a hand-drawn sketch of Jupiter as a disk with two horizontal cloud bands and four tiny dots (moons) in a line beside it. Written notes include date, time, conditions, telescope used, and descriptions of what was observed. A red-light flashlight and pencil sit beside the clipboard."
+      "description": "A close-up of an observation notebook page on a clipboard. The page shows a hand-drawn sketch of Jupiter as a disk with two horizontal cloud bands and four tiny dots (moons) in a line beside it. Written notes include date, time, conditions, telescope used, and descriptions of what was observed. A red-light flashlight and pencil sit beside the clipboard.",
+      "width": 800,
+      "height": 447,
+      "v": "a9d535ec"
     },
     {
       "id": "labeled-moon-map",
       "file": "req6a.md",
       "style": "annotated-photo",
-      "description": "A detailed photograph or illustration of the full Moon with labels pointing to five dark maria (Mare Tranquillitatis, Mare Serenitatis, Mare Imbrium, Mare Crisium, Oceanus Procellarum) and five craters (Tycho, Copernicus, Kepler, Plato, Aristarchus). Thin lines connect each label to its feature. The image is clear and educational."
+      "description": "A detailed photograph or illustration of the full Moon with labels pointing to five dark maria (Mare Tranquillitatis, Mare Serenitatis, Mare Imbrium, Mare Crisium, Oceanus Procellarum) and five craters (Tycho, Copernicus, Kepler, Plato, Aristarchus). Thin lines connect each label to its feature. The image is clear and educational.",
+      "width": 800,
+      "height": 447,
+      "v": "5699c622"
     },
     {
       "id": "moon-phase-sketches-four-nights",
       "file": "req6b.md",
-      "description": "Four observation sketches arranged in a row, each showing the Moon at a slightly different phase and position over four consecutive nights. Each sketch has a consistent horizon with the same landmarks (tree, building, hill). The Moon moves slightly eastward and grows from crescent toward half-Moon across the four sketches. Dates and times are written below each."
+      "description": "Four observation sketches arranged in a row, each showing the Moon at a slightly different phase and position over four consecutive nights. Each sketch has a consistent horizon with the same landmarks (tree, building, hill). The Moon moves slightly eastward and grows from crescent toward half-Moon across the four sketches. Dates and times are written below each.",
+      "width": 800,
+      "height": 447,
+      "v": "12b5f596"
     },
     {
       "id": "moon-orbit-forces",
       "file": "req6c.md",
       "style": "diagram",
-      "description": "A diagram showing the Moon in orbit around Earth. A large arrow points from the Moon toward Earth (labeled Gravity). A second arrow points tangent to the orbit in the direction of motion (labeled Velocity). The curved orbital path is shown as a dashed ellipse. Earth is at the center. The diagram is clean and educational."
+      "description": "A diagram showing the Moon in orbit around Earth. A large arrow points from the Moon toward Earth (labeled Gravity). A second arrow points tangent to the orbit in the direction of motion (labeled Velocity). The curved orbital path is shown as a dashed ellipse. Earth is at the center. The diagram is clean and educational.",
+      "width": 800,
+      "height": 447,
+      "v": "dea89bf0"
     },
     {
       "id": "moon-phases-diagram",
       "file": "req6d.md",
       "style": "diagram",
-      "description": "A circular diagram showing the Moon at eight positions around Earth. Parallel arrows from the left represent sunlight. At each position, the Moon is shown half-lit by the Sun, and a small image shows what the Moon looks like from Earth at that phase. Phases labeled: New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, Waning Crescent."
+      "description": "A circular diagram showing the Moon at eight positions around Earth. Parallel arrows from the left represent sunlight. At each position, the Moon is shown half-lit by the Sun, and a small image shows what the Moon looks like from Earth at that phase. Phases labeled: New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, Waning Crescent.",
+      "width": 800,
+      "height": 447,
+      "v": "bc3cea7c"
     },
     {
       "id": "sun-cross-section",
       "file": "req7a.md",
       "style": "diagram",
-      "description": "A cross-section diagram of the Sun showing its internal layers. The core is at the center (labeled Core), surrounded by the Radiative Zone, then the Convective Zone (shown with circular convection cells), then the Photosphere (visible surface), the thin Chromosphere, and the extended Corona. Each layer is labeled with its name and approximate temperature."
+      "description": "A cross-section diagram of the Sun showing its internal layers. The core is at the center (labeled Core), surrounded by the Radiative Zone, then the Convective Zone (shown with circular convection cells), then the Photosphere (visible surface), the thin Chromosphere, and the extended Corona. Each layer is labeled with its name and approximate temperature.",
+      "width": 800,
+      "height": 447,
+      "v": "f8554eb8"
     },
     {
       "id": "sunspot-closeup",
       "file": "req7b.md",
-      "description": "A close-up view of the Sun's surface showing a group of sunspots. The dark umbra (center) and lighter penumbra (surrounding region) of each sunspot are clearly visible against the bright, granulated photosphere. The image shows the textured surface of the Sun with convection granules visible. Scientific and educational in style."
+      "description": "A close-up view of the Sun's surface showing a group of sunspots. The dark umbra (center) and lighter penumbra (surrounding region) of each sunspot are clearly visible against the bright, granulated photosphere. The image shows the textured surface of the Sun with convection granules visible. Scientific and educational in style.",
+      "width": 800,
+      "height": 447,
+      "v": "5ad1ef27"
     },
     {
       "id": "star-colors-temperature",
       "file": "req7c.md",
       "style": "infographic",
-      "description": "An illustrated temperature scale showing stars ranging from cool to hot. On the left, a large red star (labeled Betelgeuse, 3,500°C). In the center, a medium yellow star (labeled Capella, 5,000°C). On the right, a bright blue-white star (labeled Rigel, 12,000°C). A temperature gradient bar runs along the bottom from red to blue. Each star is shown at its approximate relative color."
+      "description": "An illustrated temperature scale showing stars ranging from cool to hot. On the left, a large red star (labeled Betelgeuse, 3,500°C). In the center, a medium yellow star (labeled Capella, 5,000°C). On the right, a bright blue-white star (labeled Rigel, 12,000°C). A temperature gradient bar runs along the bottom from red to blue. Each star is shown at its approximate relative color.",
+      "width": 800,
+      "height": 447,
+      "v": "d9a52626"
     },
     {
       "id": "scout-star-party",
       "file": "req8.md",
-      "description": "A group of five Scouts (ages 12-16, diverse) gathered around a telescope at a star party on a clear night. One Scout looks through the eyepiece while another points at the sky explaining something. A few other Scouts look upward. They all wear clean Scout uniforms with warm jackets. A red-light lantern provides dim illumination. Stars fill the background sky."
+      "description": "A group of five Scouts (ages 12-16, diverse) gathered around a telescope at a star party on a clear night. One Scout looks through the eyepiece while another points at the sky explaining something. A few other Scouts look upward. They all wear clean Scout uniforms with warm jackets. A red-light lantern provides dim illumination. Stars fill the background sky.",
+      "width": 800,
+      "height": 447,
+      "v": "acfe1010"
     },
     {
       "id": "astronomy-careers-collage",
       "file": "req9.md",
-      "description": "A collage showing three astronomy career scenes: (1) A researcher at a computer with astronomical data and graphs on screen, (2) An engineer in a clean room working on a satellite or telescope instrument, (3) A planetarium educator presenting to an audience in a domed theater with star projections on the ceiling. Each scene is distinct and professional."
+      "description": "A collage showing three astronomy career scenes: (1) A researcher at a computer with astronomical data and graphs on screen, (2) An engineer in a clean room working on a satellite or telescope instrument, (3) A planetarium educator presenting to an audience in a domed theater with star projections on the ceiling. Each scene is distinct and professional.",
+      "width": 800,
+      "height": 447,
+      "v": "492ce11b"
     },
     {
       "id": "space-telescopes-comparison",
       "file": "extended-learning.md",
       "style": "comparison",
-      "description": "A side-by-side comparison of the Hubble Space Telescope and the James Webb Space Telescope floating in space. Hubble is shown as a silver cylinder with solar panels. Webb is shown with its distinctive gold hexagonal mirror array and diamond-shaped sunshield. The Earth is visible in the background. Labels identify each telescope."
+      "description": "A side-by-side comparison of the Hubble Space Telescope and the James Webb Space Telescope floating in space. Hubble is shown as a silver cylinder with solar panels. Webb is shown with its distinctive gold hexagonal mirror array and diamond-shaped sunshield. The Earth is visible in the background. Labels identify each telescope.",
+      "width": 800,
+      "height": 447,
+      "v": "7f976884"
     }
   ]
 }

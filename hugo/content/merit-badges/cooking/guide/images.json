@@ -5,225 +5,354 @@
     {
       "id": "scout-kitchen-ready",
       "file": "_index.md",
-      "description": "A Scout (age 14, diverse appearance) standing in a clean, well-lit home kitchen wearing a clean apron over casual clothes, holding a wooden spoon confidently. Fresh ingredients (vegetables, eggs, bread, fruit) are spread on the counter. The kitchen is organized and welcoming. Warm lighting, inviting atmosphere."
+      "description": "A Scout (age 14, diverse appearance) standing in a clean, well-lit home kitchen wearing a clean apron over casual clothes, holding a wooden spoon confidently. Fresh ingredients (vegetables, eggs, bread, fruit) are spread on the counter. The kitchen is organized and welcoming. Warm lighting, inviting atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "66afb43f"
     },
     {
       "id": "camp-cooking-scene",
       "file": "_index.md",
-      "description": "Two Scouts (ages 13-15, diverse appearances) cooking at a campsite. One operates a camp stove on a picnic table while the other stirs a pot. They wear clean Scout uniforms. Trees and a tent visible in the background. Bright daylight, outdoor setting."
+      "description": "Two Scouts (ages 13-15, diverse appearances) cooking at a campsite. One operates a camp stove on a picnic table while the other stirs a pot. They wear clean Scout uniforms. Trees and a tent visible in the background. Bright daylight, outdoor setting.",
+      "width": 800,
+      "height": 447,
+      "v": "d7bf9b67"
     },
     {
       "id": "global-cuisine-spread",
       "file": "_index.md",
-      "description": "A colorful overhead view of a table with dishes from different world cuisines arranged in bowls and plates: pasta with red sauce, a stir-fry with vegetables, tacos with fresh toppings, and a curry with rice. Vibrant colors, appetizing presentation, wooden table surface."
+      "description": "A colorful overhead view of a table with dishes from different world cuisines arranged in bowls and plates: pasta with red sauce, a stir-fry with vegetables, tacos with fresh toppings, and a curry with rice. Vibrant colors, appetizing presentation, wooden table surface.",
+      "width": 800,
+      "height": 447,
+      "v": "7f76c9df"
     },
     {
       "id": "kitchen-safety-scan",
       "file": "req1a.md",
-      "description": "A Scout (age 14) in a home kitchen pointing toward a red fire extinguisher mounted on the wall. A first-aid kit sits on the counter nearby. The kitchen is clean and well-organized. The Scout wears an apron and looks focused and responsible."
+      "description": "A Scout (age 14) in a home kitchen pointing toward a red fire extinguisher mounted on the wall. A first-aid kit sits on the counter nearby. The kitchen is clean and well-organized. The Scout wears an apron and looks focused and responsible.",
+      "width": 800,
+      "height": 447,
+      "v": "252d8553"
     },
     {
       "id": "outdoor-cooking-hazards",
       "file": "req1a.md",
-      "description": "A campsite cooking area with a camp stove set up on a stable flat surface. A small fire extinguisher sits nearby. A Scout washes hands at a portable hand-washing station (a water jug with a spigot over a basin). Trees and a cleared campsite in the background. Daylight."
+      "description": "A campsite cooking area with a camp stove set up on a stable flat surface. A small fire extinguisher sits nearby. A Scout washes hands at a portable hand-washing station (a water jug with a spigot over a basin). Trees and a cleared campsite in the background. Daylight.",
+      "width": 800,
+      "height": 447,
+      "v": "870193b1"
     },
     {
       "id": "first-aid-burns-cuts",
       "file": "req1b.md",
-      "description": "A first-aid kit open on a kitchen counter showing bandages, gauze pads, antiseptic wipes, and nitrile gloves neatly organized. Beside it, a Scout (age 13) demonstrates cooling a minor finger burn under cool running water at the kitchen sink. Clean kitchen background."
+      "description": "A first-aid kit open on a kitchen counter showing bandages, gauze pads, antiseptic wipes, and nitrile gloves neatly organized. Beside it, a Scout (age 13) demonstrates cooling a minor finger burn under cool running water at the kitchen sink. Clean kitchen background.",
+      "width": 800,
+      "height": 447,
+      "v": "c9d7c203"
     },
     {
       "id": "allergy-awareness-cooking",
       "file": "req1b.md",
-      "description": "A Scout (age 15) at a camp kitchen table carefully reading the ingredient label on a food package. Another Scout points to a clipboard posted nearby that shows a handwritten list titled 'Allergy Alert' with food allergen names listed. Outdoor camp kitchen setting with a canopy overhead."
+      "description": "A Scout (age 15) at a camp kitchen table carefully reading the ingredient label on a food package. Another Scout points to a clipboard posted nearby that shows a handwritten list titled 'Allergy Alert' with food allergen names listed. Outdoor camp kitchen setting with a canopy overhead.",
+      "width": 800,
+      "height": 447,
+      "v": "47b6a030"
     },
     {
       "id": "fridge-organization",
       "file": "req1c.md",
       "style": "annotated-photo",
-      "description": "A well-organized open refrigerator viewed from the front. Raw meats are on the bottom shelf in sealed containers, dairy products on a middle shelf, vegetables in the crisper drawers, and eggs in their carton on a shelf. Labels or arrows point to each section showing proper placement. Clean, bright interior."
+      "description": "A well-organized open refrigerator viewed from the front. Raw meats are on the bottom shelf in sealed containers, dairy products on a middle shelf, vegetables in the crisper drawers, and eggs in their carton on a shelf. Labels or arrows point to each section showing proper placement. Clean, bright interior.",
+      "width": 800,
+      "height": 447,
+      "v": "0feeda55"
     },
     {
       "id": "cross-contamination-prevention",
       "file": "req1c.md",
-      "description": "A Scout (age 14) at a camp cooking station using two separate cutting boards: a red one with raw chicken pieces and a green one with fresh vegetables. A portable hand-washing station is visible to the side. The workspace is organized and clean. Outdoor setting under a dining fly."
+      "description": "A Scout (age 14) at a camp cooking station using two separate cutting boards: a red one with raw chicken pieces and a green one with fresh vegetables. A portable hand-washing station is visible to the side. The workspace is organized and clean. Outdoor setting under a dining fly.",
+      "width": 800,
+      "height": 447,
+      "v": "d280f165"
     },
     {
       "id": "food-safety-awareness",
       "file": "req1d.md",
-      "description": "A Scout (age 14) standing at a whiteboard in a camp kitchen, writing a list of food allergies for the group. Simple allergen icons (peanut, milk, egg, wheat) are drawn on the board. Other Scouts watch from a picnic table in the background. Outdoor daylight setting."
+      "description": "A Scout (age 14) standing at a whiteboard in a camp kitchen, writing a list of food allergies for the group. Simple allergen icons (peanut, milk, egg, wheat) are drawn on the board. Other Scouts watch from a picnic table in the background. Outdoor daylight setting.",
+      "width": 800,
+      "height": 447,
+      "v": "6d0e9577"
     },
     {
       "id": "reading-food-label",
       "file": "req1e.md",
-      "description": "A Scout (age 13) holding a cereal box at a grocery store, looking closely at the Nutrition Facts label on the back. A magnifying effect highlights the 'Contains: wheat, milk, soy' allergen statement at the bottom of the ingredients list. Grocery store aisle background."
+      "description": "A Scout (age 13) holding a cereal box at a grocery store, looking closely at the Nutrition Facts label on the back. A magnifying effect highlights the 'Contains: wheat, milk, soy' allergen statement at the bottom of the ingredients list. Grocery store aisle background.",
+      "width": 800,
+      "height": 447,
+      "v": "3b5f4700"
     },
     {
       "id": "camp-label-check",
       "file": "req1e.md",
-      "description": "Three Scouts (ages 13-15, diverse appearances) at a camp kitchen picnic table checking food packages. One Scout marks an allergen warning on a can with a red permanent marker. A clipboard with a posted allergy list is visible nearby. Outdoor camp setting."
+      "description": "Three Scouts (ages 13-15, diverse appearances) at a camp kitchen picnic table checking food packages. One Scout marks an allergen warning on a can with a red permanent marker. A clipboard with a posted allergy list is visible nearby. Outdoor camp setting.",
+      "width": 800,
+      "height": 447,
+      "v": "524df734"
     },
     {
       "id": "myplate-diagram",
       "file": "req2a.md",
-      "description": "A colorful, appetizing dinner plate divided into the five MyPlate food group sections. The plate has real food arranged in each section: fruits (strawberries, orange slices), vegetables (broccoli, carrots), grains (brown rice), protein (grilled chicken), with a glass of milk beside it representing dairy. Clean white background, top-down view."
+      "description": "A colorful, appetizing dinner plate divided into the five MyPlate food group sections. The plate has real food arranged in each section: fruits (strawberries, orange slices), vegetables (broccoli, carrots), grains (brown rice), protein (grilled chicken), with a glass of milk beside it representing dairy. Clean white background, top-down view.",
+      "width": 800,
+      "height": 447,
+      "v": "09244455"
     },
     {
       "id": "sugar-in-foods",
       "file": "req2b.md",
       "style": "infographic",
-      "description": "A clean tabletop showing four common foods lined up in a row (a soda can, a container of flavored yogurt, a granola bar, and a bottle of ketchup). Next to each item, stacks of sugar cubes represent the sugar content — tallest stack by the soda, decreasing to the smallest by the ketchup. Educational and visual, clean white background."
+      "description": "A clean tabletop showing four common foods lined up in a row (a soda can, a container of flavored yogurt, a granola bar, and a bottle of ketchup). Next to each item, stacks of sugar cubes represent the sugar content — tallest stack by the soda, decreasing to the smallest by the ketchup. Educational and visual, clean white background.",
+      "width": 800,
+      "height": 447,
+      "v": "7a958f46"
     },
     {
       "id": "activity-tracker-notebook",
       "file": "req2c.md",
-      "description": "A Scout (age 14) sitting on a park bench writing in a small notebook. The notebook page shows a handwritten activity log with entries like 'Biking - 30 min' and 'Soccer practice - 60 min'. A water bottle and bicycle are visible nearby. Bright outdoor park setting."
+      "description": "A Scout (age 14) sitting on a park bench writing in a small notebook. The notebook page shows a handwritten activity log with entries like 'Biking - 30 min' and 'Soccer practice - 60 min'. A water bottle and bicycle are visible nearby. Bright outdoor park setting.",
+      "width": 800,
+      "height": 447,
+      "v": "81096812"
     },
     {
       "id": "healthy-vs-typical-plate",
       "file": "req2d.md",
       "style": "comparison",
-      "description": "Side-by-side comparison of two dinner plates on a table. Left plate: a typical teen meal of a burger, fries, and a glass of soda. Right plate: a MyPlate-balanced meal of grilled chicken breast, steamed broccoli, brown rice, a side of fruit, and a glass of water. Both plates are well-presented. Clean table background."
+      "description": "Side-by-side comparison of two dinner plates on a table. Left plate: a typical teen meal of a burger, fries, and a glass of soda. Right plate: a MyPlate-balanced meal of grilled chicken breast, steamed broccoli, brown rice, a side of fruit, and a glass of water. Both plates are well-presented. Clean table background.",
+      "width": 800,
+      "height": 447,
+      "v": "bf2a16fb"
     },
     {
       "id": "nutrition-label-annotated",
       "file": "req2e.md",
       "style": "annotated-photo",
-      "description": "A large, clearly readable Nutrition Facts label on a white background. Small arrows and labels point to each key line item: Calories, Total Fat, Saturated Fat, Trans Fat, Cholesterol, Sodium, Total Carbohydrate, Dietary Fiber, Total Sugars, Added Sugars, and Protein. Educational diagram style, clean and easy to read."
+      "description": "A large, clearly readable Nutrition Facts label on a white background. Small arrows and labels point to each key line item: Calories, Total Fat, Saturated Fat, Trans Fat, Cholesterol, Sodium, Total Carbohydrate, Dietary Fiber, Total Sugars, Added Sugars, and Protein. Educational diagram style, clean and easy to read.",
+      "width": 800,
+      "height": 447,
+      "v": "f4d2c6ba"
     },
     {
       "id": "cooking-methods-grid",
       "file": "req3a.md",
       "style": "infographic",
-      "description": "A 2x3 grid of cooking method scenes: (1) a pot of boiling pasta on a stove, (2) a skillet with sunny-side-up eggs, (3) an oven with golden biscuits baking inside, (4) vegetables on a charcoal grill, (5) a Dutch oven sitting on charcoal briquettes, (6) foil packets on a campfire grate. Each scene is bright and appetizing."
+      "description": "A 2x3 grid of cooking method scenes: (1) a pot of boiling pasta on a stove, (2) a skillet with sunny-side-up eggs, (3) an oven with golden biscuits baking inside, (4) vegetables on a charcoal grill, (5) a Dutch oven sitting on charcoal briquettes, (6) foil packets on a campfire grate. Each scene is bright and appetizing.",
+      "width": 800,
+      "height": 447,
+      "v": "61765d9e"
     },
     {
       "id": "stove-vs-fire-comparison",
       "file": "req3b.md",
       "style": "comparison",
-      "description": "A split-image composition. Left side: a camp stove on a picnic table with a pot of water coming to a boil, clean and controlled. Right side: a campfire cooking setup with a Dutch oven nestled in hot coals and a grate over the fire ring. Both scenes are at a campsite during daytime."
+      "description": "A split-image composition. Left side: a camp stove on a picnic table with a pot of water coming to a boil, clean and controlled. Right side: a campfire cooking setup with a Dutch oven nestled in hot coals and a grate over the fire ring. Both scenes are at a campsite during daytime.",
+      "width": 800,
+      "height": 447,
+      "v": "f75f29ec"
     },
     {
       "id": "meal-timing-plan",
       "file": "req3c.md",
-      "description": "A Scout (age 14) in a home kitchen writing a timing plan on a small whiteboard mounted on the wall. The plan shows meal components with start times listed (e.g., '5:05 - Chicken in oven', '5:38 - Start rice'). A clock on the wall shows 5:00. Ingredients are prepped in bowls on the counter (mise en place style)."
+      "description": "A Scout (age 14) in a home kitchen writing a timing plan on a small whiteboard mounted on the wall. The plan shows meal components with start times listed (e.g., '5:05 - Chicken in oven', '5:38 - Start rice'). A clock on the wall shows 5:00. Ingredients are prepped in bowls on the counter (mise en place style).",
+      "width": 800,
+      "height": 447,
+      "v": "f883a44d"
     },
     {
       "id": "sensory-experience-cooking",
       "file": "req3d.md",
-      "description": "A Scout (age 15) at a camp cooking station lifting the lid off a large pot with visible steam rising. The Scout smiles, clearly enjoying the aroma. Three other Scouts in the background look eager and interested, sitting at a picnic table. Outdoor campsite setting, warm afternoon light."
+      "description": "A Scout (age 15) at a camp cooking station lifting the lid off a large pot with visible steam rising. The Scout smiles, clearly enjoying the aroma. Three other Scouts in the background look eager and interested, sitting at a picnic table. Outdoor campsite setting, warm afternoon light.",
+      "width": 800,
+      "height": 447,
+      "v": "17da319c"
     },
     {
       "id": "menu-planning-table",
       "file": "req4a.md",
-      "description": "A Scout (age 14) sitting at a kitchen table with an open notebook showing a three-day meal plan grid. A tablet nearby displays the MyPlate website. A pencil and colorful sticky notes are on the table. The notebook has handwritten meal names organized by day and meal type. Bright, organized home setting."
+      "description": "A Scout (age 14) sitting at a kitchen table with an open notebook showing a three-day meal plan grid. A tablet nearby displays the MyPlate website. A pencil and colorful sticky notes are on the table. The notebook has handwritten meal names organized by day and meal type. Bright, organized home setting.",
+      "width": 800,
+      "height": 447,
+      "v": "0bd15373"
     },
     {
       "id": "shopping-list-budget",
       "file": "req4b.md",
-      "description": "A Scout (age 13) standing in a grocery store aisle holding a clipboard with a shopping list. The Scout compares two brands of pasta sauce, looking at the price tags on the shelf. A grocery cart with a few items is visible beside them. Standard grocery store interior lighting."
+      "description": "A Scout (age 13) standing in a grocery store aisle holding a clipboard with a shopping list. The Scout compares two brands of pasta sauce, looking at the price tags on the shelf. A grocery cart with a few items is visible beside them. Standard grocery store interior lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "1307d760"
     },
     {
       "id": "counselor-review-plan",
       "file": "req4c.md",
-      "description": "A Scout (age 14) sitting across a table from an adult merit badge counselor in a community room. The Scout shows an open notebook with a meal plan while the counselor reviews it and points to a section. Both are engaged in discussion. Indoor meeting room setting."
+      "description": "A Scout (age 14) sitting across a table from an adult merit badge counselor in a community room. The Scout shows an open notebook with a meal plan while the counselor reviews it and points to a section. Both are engaged in discussion. Indoor meeting room setting.",
+      "width": 800,
+      "height": 447,
+      "v": "606012ce"
     },
     {
       "id": "scout-cooking-home",
       "file": "req4d.md",
-      "description": "A Scout (age 15) at a home kitchen stove, carefully pan-frying eggs in a skillet on one burner while a pot of oatmeal simmers on a back burner. The Scout wears an apron. The workspace is clean and organized with prepped ingredients in small bowls. Morning light through a kitchen window."
+      "description": "A Scout (age 15) at a home kitchen stove, carefully pan-frying eggs in a skillet on one burner while a pot of oatmeal simmers on a back burner. The Scout wears an apron. The workspace is clean and organized with prepped ingredients in small bowls. Morning light through a kitchen window.",
+      "width": 800,
+      "height": 447,
+      "v": "b6bd04b4"
     },
     {
       "id": "timing-in-action",
       "file": "req4e.md",
-      "description": "A Scout (age 14) in a home kitchen checking a timer on their phone while simultaneously stirring a pot on the stove with the other hand. On the refrigerator door behind them, a handwritten timing plan is posted with magnetic clips. Multiple pots and a baking dish are visible on the counter."
+      "description": "A Scout (age 14) in a home kitchen checking a timer on their phone while simultaneously stirring a pot on the stove with the other hand. On the refrigerator door behind them, a handwritten timing plan is posted with magnetic clips. Multiple pots and a baking dish are visible on the counter.",
+      "width": 800,
+      "height": 447,
+      "v": "a490e031"
     },
     {
       "id": "evaluation-notebook",
       "file": "req4f.md",
-      "description": "A Scout (age 14) sitting at a dining table with an empty plate pushed aside, writing in a notebook labeled 'Meal Evaluation'. An adult family member across the table smiles and gestures, offering feedback. The dining table has a simple table setting. Warm evening lighting."
+      "description": "A Scout (age 14) sitting at a dining table with an empty plate pushed aside, writing in a notebook labeled 'Meal Evaluation'. An adult family member across the table smiles and gestures, offering feedback. The dining table has a simple table setting. Warm evening lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "ed2e7b6d"
     },
     {
       "id": "camp-kitchen-setup",
       "file": "req5a.md",
-      "description": "A well-organized camp kitchen at a campsite. A camp stove sits on a folding table, a Dutch oven is near a fire ring, two coolers are stored underneath the table in the shade, and a portable hand-washing station (jug with spigot) is to the side. Two Scouts in clean uniforms stand ready to cook. Trees and tents in the background. Bright daylight."
+      "description": "A well-organized camp kitchen at a campsite. A camp stove sits on a folding table, a Dutch oven is near a fire ring, two coolers are stored underneath the table in the shade, and a portable hand-washing station (jug with spigot) is to the side. Two Scouts in clean uniforms stand ready to cook. Trees and tents in the background. Bright daylight.",
+      "width": 800,
+      "height": 447,
+      "v": "bc5803d5"
     },
     {
       "id": "camp-budget-planning",
       "file": "req5b.md",
-      "description": "Four Scouts (ages 13-15, diverse appearances) sitting around a campsite picnic table with grocery receipts spread out, a calculator, and a notebook. One Scout writes numbers while another points at a receipt. The atmosphere is collaborative and focused. Outdoor camp setting."
+      "description": "Four Scouts (ages 13-15, diverse appearances) sitting around a campsite picnic table with grocery receipts spread out, a calculator, and a notebook. One Scout writes numbers while another points at a receipt. The atmosphere is collaborative and focused. Outdoor camp setting.",
+      "width": 800,
+      "height": 447,
+      "v": "41480562"
     },
     {
       "id": "camp-plan-counselor",
       "file": "req5c.md",
-      "description": "A Scout (age 14) showing a camp menu plan on a clipboard to a merit badge counselor at an outdoor meeting area. The counselor is pointing to a specific section of the plan. Both are sitting at a picnic table. Trees and camp buildings visible in the background."
+      "description": "A Scout (age 14) showing a camp menu plan on a clipboard to a merit badge counselor at an outdoor meeting area. The counselor is pointing to a specific section of the plan. Both are sitting at a picnic table. Trees and camp buildings visible in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "33208ff4"
     },
     {
       "id": "dutch-oven-coals",
       "file": "req5d.md",
-      "description": "A close-up of a cast-iron Dutch oven sitting on a bed of white-hot charcoal briquettes. Additional briquettes are arranged on the flanged lid. A Scout in the background uses a lid lifter to check inside a second Dutch oven. Campfire ring setting, warm glowing coals, outdoor daylight."
+      "description": "A close-up of a cast-iron Dutch oven sitting on a bed of white-hot charcoal briquettes. Additional briquettes are arranged on the flanged lid. A Scout in the background uses a lid lifter to check inside a second Dutch oven. Campfire ring setting, warm glowing coals, outdoor daylight.",
+      "width": 800,
+      "height": 447,
+      "v": "dd4ccddf"
     },
     {
       "id": "camp-dessert-prep",
       "file": "req5e.md",
-      "description": "Two Scouts (ages 13-14) at a camp kitchen table preparing banana boats. One Scout splits a banana lengthwise while the other adds chocolate chips and mini marshmallows to an already-split banana. Aluminum foil sheets and a bag of marshmallows are on the table. Outdoor camp setting, afternoon light."
+      "description": "Two Scouts (ages 13-14) at a camp kitchen table preparing banana boats. One Scout splits a banana lengthwise while the other adds chocolate chips and mini marshmallows to an already-split banana. Aluminum foil sheets and a bag of marshmallows are on the table. Outdoor camp setting, afternoon light.",
+      "width": 800,
+      "height": 447,
+      "v": "2a171f37"
     },
     {
       "id": "camp-feedback-circle",
       "file": "req5f.md",
-      "description": "A patrol of six Scouts (ages 12-15, diverse appearances) sitting in a circle on camp chairs and logs after a meal. One Scout holds a notebook and takes notes while the others share feedback about the meal. Empty plates and cups are visible. Campsite setting with trees, warm evening light."
+      "description": "A patrol of six Scouts (ages 12-15, diverse appearances) sitting in a circle on camp chairs and logs after a meal. One Scout holds a notebook and takes notes while the others share feedback about the meal. Empty plates and cups are visible. Campsite setting with trees, warm evening light.",
+      "width": 800,
+      "height": 447,
+      "v": "941a432e"
     },
     {
       "id": "three-basin-wash",
       "file": "req5g.md",
-      "description": "Three Scouts (ages 13-15) at a camp dishwashing station using the three-basin system. Three large basins are set up on a table: one with soapy water (a Scout scrubs a pot), one with rinse water (a Scout rinses a plate), and one with sanitize water (a Scout dips utensils). Clean and organized outdoor camp setting."
+      "description": "Three Scouts (ages 13-15) at a camp dishwashing station using the three-basin system. Three large basins are set up on a table: one with soapy water (a Scout scrubs a pot), one with rinse water (a Scout rinses a plate), and one with sanitize water (a Scout dips utensils). Clean and organized outdoor camp setting.",
+      "width": 800,
+      "height": 447,
+      "v": "3863222d"
     },
     {
       "id": "leave-no-trace-cooking",
       "file": "req5h.md",
       "style": "comparison",
-      "description": "A before-and-after split image of a campsite cooking area. Left side shows Scouts actively cooking at a fire ring with equipment spread around. Right side shows the exact same spot after cleanup — completely clean, no trace of cooking activity, natural ground visible. The contrast is dramatic and clear."
+      "description": "A before-and-after split image of a campsite cooking area. Left side shows Scouts actively cooking at a fire ring with equipment spread around. Right side shows the exact same spot after cleanup — completely clean, no trace of cooking activity, natural ground visible. The contrast is dramatic and clear.",
+      "width": 800,
+      "height": 447,
+      "v": "81febda2"
     },
     {
       "id": "trail-food-spread",
       "file": "req6a.md",
-      "description": "An array of trail-appropriate foods laid out on a flat rock in an outdoor mountain setting. Items include: instant oatmeal packets, tortillas, a jar of peanut butter, bags of trail mix, beef jerky, dehydrated meal pouches, instant rice packets, energy bars, and a small bag of dried fruit. Organized and colorful, natural outdoor backdrop."
+      "description": "An array of trail-appropriate foods laid out on a flat rock in an outdoor mountain setting. Items include: instant oatmeal packets, tortillas, a jar of peanut butter, bags of trail mix, beef jerky, dehydrated meal pouches, instant rice packets, energy bars, and a small bag of dried fruit. Organized and colorful, natural outdoor backdrop.",
+      "width": 800,
+      "height": 447,
+      "v": "6abc2e81"
     },
     {
       "id": "trail-shopping-scale",
       "file": "req6b.md",
-      "description": "A Scout (age 14) at a home kitchen counter weighing a bag of trail mix on a digital kitchen scale. A clipboard with a shopping list shows items with weight and cost columns. Bags of dried food, energy bars, and zip-lock bags are spread across the counter. Organized, well-lit kitchen."
+      "description": "A Scout (age 14) at a home kitchen counter weighing a bag of trail mix on a digital kitchen scale. A clipboard with a shopping list shows items with weight and cost columns. Bags of dried food, energy bars, and zip-lock bags are spread across the counter. Organized, well-lit kitchen.",
+      "width": 800,
+      "height": 447,
+      "v": "33d3cdb9"
     },
     {
       "id": "repackaging-station",
       "file": "req6c.md",
-      "description": "A Scout (age 15) at a kitchen table transferring oatmeal from a cardboard box into a zip-lock bag. A permanent marker, kitchen scale, labeled zip-lock bags of various trail foods, and the discarded cardboard packaging are visible on the table. Organized workspace, home kitchen setting."
+      "description": "A Scout (age 15) at a kitchen table transferring oatmeal from a cardboard box into a zip-lock bag. A permanent marker, kitchen scale, labeled zip-lock bags of various trail foods, and the discarded cardboard packaging are visible on the table. Organized workspace, home kitchen setting.",
+      "width": 800,
+      "height": 447,
+      "v": "bee47150"
     },
     {
       "id": "trail-stove-cooking",
       "file": "req6d.md",
-      "description": "A Scout (age 14) kneeling beside a small canister backpacking stove set up on a flat rock, boiling water in a lightweight titanium pot. Three other hikers rest nearby with their backpacks, in a scenic mountain meadow with distant peaks. Late afternoon light, beautiful wilderness setting."
+      "description": "A Scout (age 14) kneeling beside a small canister backpacking stove set up on a flat rock, boiling water in a lightweight titanium pot. Three other hikers rest nearby with their backpacks, in a scenic mountain meadow with distant peaks. Late afternoon light, beautiful wilderness setting.",
+      "width": 800,
+      "height": 447,
+      "v": "fd5c460d"
     },
     {
       "id": "trail-meal-evaluation",
       "file": "req6e.md",
-      "description": "A group of four hikers (Scouts ages 13-15) sitting on rocks at a scenic overlook, eating from lightweight bowls and cups. One Scout writes in a small waterproof notebook while the others eat and chat. Backpacks are leaning against the rocks. Mountain vista in the background."
+      "description": "A group of four hikers (Scouts ages 13-15) sitting on rocks at a scenic overlook, eating from lightweight bowls and cups. One Scout writes in a small waterproof notebook while the others eat and chat. Backpacks are leaning against the rocks. Mountain vista in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "fdd1913f"
     },
     {
       "id": "bear-bag-hang",
       "file": "req6f.md",
-      "description": "A Scout (age 15) demonstrating the process of hanging a bear bag from a tall tree branch. A rope extends over a high branch (at least 12 feet up) with a stuff sack hanging from it. The Scout holds the rope end at ground level. Forest campsite setting, dappled woodland light."
+      "description": "A Scout (age 15) demonstrating the process of hanging a bear bag from a tall tree branch. A rope extends over a high branch (at least 12 feet up) with a stuff sack hanging from it. The Scout holds the rope end at ground level. Forest campsite setting, dappled woodland light.",
+      "width": 800,
+      "height": 447,
+      "v": "7201e347"
     },
     {
       "id": "culinary-careers",
       "file": "req7.md",
-      "description": "A triptych (three-panel) image showing different culinary career paths. Left panel: a chef in white coat and hat carefully plating a dish in a professional kitchen. Center panel: a food scientist in a lab coat examining food samples in a bright laboratory. Right panel: a person photographing an artfully arranged plate of food from above for content creation. Each panel represents a different career path."
+      "description": "A triptych (three-panel) image showing different culinary career paths. Left panel: a chef in white coat and hat carefully plating a dish in a professional kitchen. Center panel: a food scientist in a lab coat examining food samples in a bright laboratory. Right panel: a person photographing an artfully arranged plate of food from above for content creation. Each panel represents a different career path.",
+      "width": 800,
+      "height": 447,
+      "v": "1f4a1172"
     },
     {
       "id": "heat-transfer-diagram",
       "file": "extended-learning.md",
       "style": "diagram",
-      "description": "An educational diagram showing three types of heat transfer in cooking, arranged side by side. Left: conduction — a steak sizzling on a hot cast-iron skillet with heat arrows showing contact transfer. Center: convection — hot air circulating around food inside an oven with curved arrows. Right: radiation — wavy heat lines going from a glowing broiler element down to food on a pan below. Clean, educational illustration style."
+      "description": "An educational diagram showing three types of heat transfer in cooking, arranged side by side. Left: conduction — a steak sizzling on a hot cast-iron skillet with heat arrows showing contact transfer. Center: convection — hot air circulating around food inside an oven with curved arrows. Right: radiation — wavy heat lines going from a glowing broiler element down to food on a pan below. Clean, educational illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "82fa2772"
     }
   ]
 }

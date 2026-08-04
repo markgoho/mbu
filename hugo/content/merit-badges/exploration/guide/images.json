@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A clean four-panel educational diagram comparing major exploration domains. Panel 1 shows ocean exploration with a research vessel deploying a remotely operated vehicle over a mapped seafloor. Panel 2 shows space exploration with a rover on a rocky planetary surface and scientists reviewing transmitted images. Panel 3 shows field exploration with Scouts in clean uniforms and outdoor layers using notebooks, binoculars, and sampling tools in dense terrain while documenting observations. Panel 4 shows laboratory exploration with a scientist and a Scout in safety goggles examining samples and instrument readouts indoors. Keep the four panels visually distinct but consistent, with only short horizontal labels naming each domain. No branding, no organization names, no decorative title text.",
-      "value": "Shows four exploration settings side by side with their distinct tools and environments — a visual comparison that text alone cannot deliver as quickly"
+      "value": "Shows four exploration settings side by side with their distinct tools and environments — a visual comparison that text alone cannot deliver as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "d4f7871f"
     },
     {
       "id": "living-explorer-presentation-board",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "describe",
       "description": "A realistic classroom presentation scene with a Scout in a clean Scout uniform standing beside a simple display board about a living explorer. The board shows a route map, a vertical timeline, and a few expedition photos arranged in clear sections. Keep the layout visual-first with minimal text and no extra labels beyond a few simple section markers. No branding, no organization names, no visible project titles.",
-      "value": "Shows how to organize a strong explorer profile visually with a map, timeline, and achievements in one board layout — structure that text alone cannot demonstrate clearly"
+      "value": "Shows how to organize a strong explorer profile visually with a map, timeline, and achievements in one board layout — structure that text alone cannot demonstrate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "2a9c4f30"
     },
     {
       "id": "lab-and-field-comparison",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "A split-panel educational diagram comparing field exploration and laboratory exploration. Left panel: an outdoor field team using notebooks, sample bags, GPS, and cameras while collecting observations in a rugged natural setting. Right panel: an indoor lab team using microscopes, labeled sample trays, and computer displays to analyze those observations. Use matching visual cues so the viewer can see how notes, samples, and measurements move from field collection to lab analysis. Keep labels very short and horizontal only, with a clean layout and no extra text.",
-      "value": "Shows the direct connection between collecting evidence in the field and analyzing it in the lab — a workflow relationship that is hard to picture from text alone"
+      "value": "Shows the direct connection between collecting evidence in the field and analyzing it in the lab — a workflow relationship that is hard to picture from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "7eee0138"
     },
     {
       "id": "expedition-planning-board",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "A clean expedition planning board laid out like a visual organizer on a table. Separate sections show route map, objectives, schedule, budget, gear checklist, hazards, communication plan, and team roles. Use icons, colored boxes, and arrows to show how the planning pieces connect, but keep text minimal and horizontal. Include a realistic route map and small gear illustrations so the board feels like an actual planning tool rather than decorative text. No branding or title banner.",
-      "value": "Shows how many expedition planning elements fit together in one visual system — the structure and relationships are clearer in a board layout than in a written list"
+      "value": "Shows how many expedition planning elements fit together in one visual system — the structure and relationships are clearer in a board layout than in a written list",
+      "width": 800,
+      "height": 447,
+      "v": "20e0b45b"
     },
     {
       "id": "scout-safe-checklist-review",
@@ -40,7 +52,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "A realistic pre-expedition review scene with a Scout in a clean Scout uniform and an adult leader studying a printed SAFE checklist beside a route map, weather notes, and packed gear on a table. Add a few simple callouts to the checklist, route review, and gear readiness check. The focus is on the physical act of reviewing safety before departure, not on readable paragraph text. No logos, no organization names, no decorative heading.",
-      "value": "Shows the real pre-departure safety review setup with checklist, map, and gear in one scene — visual context that text alone cannot teach as effectively"
+      "value": "Shows the real pre-departure safety review setup with checklist, map, and gear in one scene — visual context that text alone cannot teach as effectively",
+      "width": 800,
+      "height": 447,
+      "v": "491830e3"
     },
     {
       "id": "expedition-report-layout",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "A clean two-page expedition report layout viewed from above. Distinct sections show objective, route map, field notes, photo evidence, findings, problems encountered, and conclusion. Use blocks, icons, and small sample visuals so the viewer can immediately see where each required report element belongs. Keep labels short and horizontal, with no dense paragraphs and no branding.",
-      "value": "Shows the full structure of a complete expedition report at a glance — page organization and section placement that text alone cannot communicate as clearly"
+      "value": "Shows the full structure of a complete expedition report at a glance — page organization and section placement that text alone cannot communicate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "87c8698f"
     }
   ]
 }

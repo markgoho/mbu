@@ -35,14 +35,10 @@
   {{ $iconName = index $iconData.badges $slug }}
 {{ end }}
 
-{{ $badgeImage := $page.Resources.GetMatch "*-merit-badge-card.avif" }}
-{{ if not $badgeImage }}
-  {{ $badgeImage = $page.Resources.GetMatch "*.{jpg,jpeg,png,webp,avif}" }}
-{{ end }}
-
+{{ $emblemMeta := index (index hugo.Data "badge-images").badges $slug }}
 
 <article
-  class="badge-card card-surface card-surface--lift {{ if $badgeImage }}
+  class="badge-card card-surface card-surface--lift {{ if $emblemMeta }}
     badge-card--with-image
   {{ end }} {{ if $json.eagle_required }}eagle{{ end }}">
   <a href="{{ $page.RelPermalink }}">
@@ -63,34 +59,23 @@
       {{ end }}
     </p>
 
-    {{ if $badgeImage }}
+    {{ with $emblemMeta }}
       <div
         class="badge-card__image"
         style="view-transition-name: mb-emblem-{{ $slug }}">
-        {{/* First 3 images get fetchpriority=high for desktop LCP optimization */}}
-        {{ if lt $index 3 }}
-          <img
-            src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ $page.Title }}"
-            width="400"
-            height="225"
-            fetchpriority="high" />
-          {{/* Next 3 images (3-5) load eagerly without lazy loading */}}
-        {{ else if lt $index 6 }}
-          <img
-            src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ $page.Title }}"
-            width="400"
-            height="225" />
-          {{/* Remaining images use lazy loading */}}
-        {{ else }}
-          <img
-            src="{{ $badgeImage.RelPermalink }}"
-            alt="{{ $page.Title }}"
-            width="400"
-            height="225"
-            loading="lazy" />
-        {{ end }}
+        {{/* First 3 cards get fetchpriority=high for desktop LCP optimization;
+          the next 3 load eagerly plain; the rest lazy-load. */}}
+        {{ partial "imagekit/img.html" (dict
+          "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
+          "v" .v
+          "maxWidth" 800
+          "width" 400
+          "height" 225
+          "alt" $page.Title
+          "sizes" "(max-width: 600px) 100vw, 320px"
+          "loading" (cond (lt $index 6) "eager" "lazy")
+          "fetchpriority" (cond (lt $index 3) "high" "")
+        ) }}
       </div>
     {{ end }}
 

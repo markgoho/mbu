@@ -1,0 +1,731 @@
+{
+  "badges": {
+    "american-business": {
+      "width": 1376,
+      "height": 768,
+      "v": "c45642d4"
+    },
+    "american-cultures": {
+      "width": 1376,
+      "height": 768,
+      "v": "422b99ab"
+    },
+    "american-heritage": {
+      "width": 1376,
+      "height": 768,
+      "v": "0fae9822"
+    },
+    "american-labor": {
+      "width": 1376,
+      "height": 768,
+      "v": "463790c4"
+    },
+    "animal-science": {
+      "width": 1376,
+      "height": 768,
+      "v": "176b3392"
+    },
+    "animation": {
+      "width": 1376,
+      "height": 768,
+      "v": "0afe85e2"
+    },
+    "archaeology": {
+      "width": 1376,
+      "height": 768,
+      "v": "4cb589b5"
+    },
+    "archery": {
+      "width": 1376,
+      "height": 768,
+      "v": "daaf13bc"
+    },
+    "architecture": {
+      "width": 1376,
+      "height": 768,
+      "v": "c9b3debf"
+    },
+    "art": {
+      "width": 1376,
+      "height": 768,
+      "v": "41ba7965"
+    },
+    "artificial-intelligence": {
+      "width": 1376,
+      "height": 768,
+      "v": "57eed82e"
+    },
+    "astronomy": {
+      "width": 1376,
+      "height": 768,
+      "v": "baa46db6"
+    },
+    "athletics": {
+      "width": 1376,
+      "height": 768,
+      "v": "9b054f90"
+    },
+    "automotive-maintenance": {
+      "width": 1376,
+      "height": 768,
+      "v": "58755c8a"
+    },
+    "aviation": {
+      "width": 1376,
+      "height": 768,
+      "v": "b5bec620"
+    },
+    "backpacking": {
+      "width": 1376,
+      "height": 768,
+      "v": "1c49c96f"
+    },
+    "basketry": {
+      "width": 1376,
+      "height": 768,
+      "v": "24330aff"
+    },
+    "bird-study": {
+      "width": 1376,
+      "height": 768,
+      "v": "f866974a"
+    },
+    "bugling": {
+      "width": 1376,
+      "height": 768,
+      "v": "0bece192"
+    },
+    "camping": {
+      "width": 1376,
+      "height": 768,
+      "v": "4682f090"
+    },
+    "canoeing": {
+      "width": 1376,
+      "height": 768,
+      "v": "d5deb074"
+    },
+    "chemistry": {
+      "width": 1376,
+      "height": 768,
+      "v": "e840e52d"
+    },
+    "chess": {
+      "width": 1376,
+      "height": 768,
+      "v": "97d7112b"
+    },
+    "citizenship-in-society": {
+      "width": 1376,
+      "height": 768,
+      "v": "885c2811"
+    },
+    "citizenship-in-the-community": {
+      "width": 1376,
+      "height": 768,
+      "v": "db6bc293"
+    },
+    "citizenship-in-the-nation": {
+      "width": 1376,
+      "height": 768,
+      "v": "99764cc8"
+    },
+    "citizenship-in-the-world": {
+      "width": 1376,
+      "height": 768,
+      "v": "140346e9"
+    },
+    "climbing": {
+      "width": 1376,
+      "height": 768,
+      "v": "b58f27e7"
+    },
+    "coin-collecting": {
+      "width": 1376,
+      "height": 768,
+      "v": "902bbe2f"
+    },
+    "collections": {
+      "width": 1376,
+      "height": 768,
+      "v": "0d42724f"
+    },
+    "communication": {
+      "width": 1376,
+      "height": 768,
+      "v": "a1e4cacc"
+    },
+    "competitive-gaming": {
+      "width": 1376,
+      "height": 768,
+      "v": "89f11190"
+    },
+    "composite-materials": {
+      "width": 1376,
+      "height": 768,
+      "v": "d9d81ec3"
+    },
+    "cooking": {
+      "width": 1376,
+      "height": 768,
+      "v": "f4d2cfe4"
+    },
+    "crime-prevention": {
+      "width": 1376,
+      "height": 768,
+      "v": "cca10f78"
+    },
+    "cybersecurity": {
+      "width": 1376,
+      "height": 768,
+      "v": "01e84a4d"
+    },
+    "cycling": {
+      "width": 1376,
+      "height": 768,
+      "v": "4c601df8"
+    },
+    "dentistry": {
+      "width": 1376,
+      "height": 768,
+      "v": "cc8e3574"
+    },
+    "digital-technology": {
+      "width": 1376,
+      "height": 768,
+      "v": "0e6689f8"
+    },
+    "disabilities-awareness": {
+      "width": 1376,
+      "height": 768,
+      "v": "399a8652"
+    },
+    "dog-care": {
+      "width": 1376,
+      "height": 768,
+      "v": "fc1ce6df"
+    },
+    "drafting": {
+      "width": 1376,
+      "height": 768,
+      "v": "c5513375"
+    },
+    "electricity": {
+      "width": 1376,
+      "height": 768,
+      "v": "1fedada3"
+    },
+    "electronics": {
+      "width": 1376,
+      "height": 768,
+      "v": "8feaa987"
+    },
+    "emergency-preparedness": {
+      "width": 1376,
+      "height": 768,
+      "v": "620d27fb"
+    },
+    "energy": {
+      "width": 1376,
+      "height": 768,
+      "v": "ab095aff"
+    },
+    "engineering": {
+      "width": 1376,
+      "height": 768,
+      "v": "b66a3861"
+    },
+    "entrepreneurship": {
+      "width": 1376,
+      "height": 768,
+      "v": "358d7ccc"
+    },
+    "environmental-science": {
+      "width": 1376,
+      "height": 768,
+      "v": "2a584eb4"
+    },
+    "exploration": {
+      "width": 1376,
+      "height": 768,
+      "v": "9ceb3f12"
+    },
+    "family-life": {
+      "width": 1376,
+      "height": 768,
+      "v": "7ede3d8d"
+    },
+    "farm-mechanics": {
+      "width": 1376,
+      "height": 768,
+      "v": "1b921fc3"
+    },
+    "fingerprinting": {
+      "width": 1376,
+      "height": 768,
+      "v": "a2c910bf"
+    },
+    "fire-safety": {
+      "width": 1376,
+      "height": 768,
+      "v": "174506f6"
+    },
+    "first-aid": {
+      "width": 1376,
+      "height": 768,
+      "v": "faa7e08d"
+    },
+    "fish-and-wildlife-management": {
+      "width": 1376,
+      "height": 768,
+      "v": "8caa660c"
+    },
+    "fishing": {
+      "width": 1376,
+      "height": 768,
+      "v": "778b5361"
+    },
+    "fly-fishing": {
+      "width": 1376,
+      "height": 768,
+      "v": "207d43b4"
+    },
+    "forestry": {
+      "width": 1376,
+      "height": 768,
+      "v": "d0d355b3"
+    },
+    "game-design": {
+      "width": 1376,
+      "height": 768,
+      "v": "f0f13a9b"
+    },
+    "gardening": {
+      "width": 1376,
+      "height": 768,
+      "v": "e606cac6"
+    },
+    "genealogy": {
+      "width": 1376,
+      "height": 768,
+      "v": "e1d9bd1d"
+    },
+    "geocaching": {
+      "width": 1376,
+      "height": 768,
+      "v": "9e8ba544"
+    },
+    "geology": {
+      "width": 1376,
+      "height": 768,
+      "v": "dd3ad726"
+    },
+    "golf": {
+      "width": 1376,
+      "height": 768,
+      "v": "b5e63561"
+    },
+    "graphic-arts": {
+      "width": 1376,
+      "height": 768,
+      "v": "f24ba426"
+    },
+    "health-care-professions": {
+      "width": 1376,
+      "height": 768,
+      "v": "dadf789f"
+    },
+    "hiking": {
+      "width": 1376,
+      "height": 768,
+      "v": "6180c6a6"
+    },
+    "home-repairs": {
+      "width": 1376,
+      "height": 768,
+      "v": "7c598f06"
+    },
+    "horsemanship": {
+      "width": 1376,
+      "height": 768,
+      "v": "d9141f6d"
+    },
+    "indian-lore": {
+      "width": 1376,
+      "height": 768,
+      "v": "8a36fe7c"
+    },
+    "insect-study": {
+      "width": 1376,
+      "height": 768,
+      "v": "e5ca0af9"
+    },
+    "inventing": {
+      "width": 1376,
+      "height": 768,
+      "v": "bf4983ba"
+    },
+    "journalism": {
+      "width": 1376,
+      "height": 768,
+      "v": "aece03f3"
+    },
+    "kayaking": {
+      "width": 1376,
+      "height": 768,
+      "v": "67e6efca"
+    },
+    "landscape-architecture": {
+      "width": 1376,
+      "height": 768,
+      "v": "b9f0bfb2"
+    },
+    "law": {
+      "width": 1376,
+      "height": 768,
+      "v": "f1bf7c6c"
+    },
+    "leatherwork": {
+      "width": 1376,
+      "height": 768,
+      "v": "46297bec"
+    },
+    "lifesaving": {
+      "width": 1376,
+      "height": 768,
+      "v": "f8c94e01"
+    },
+    "mammal-study": {
+      "width": 1376,
+      "height": 768,
+      "v": "cfeae3f8"
+    },
+    "metalwork": {
+      "width": 1376,
+      "height": 768,
+      "v": "74ef3eb7"
+    },
+    "mining-in-society": {
+      "width": 1376,
+      "height": 768,
+      "v": "1f65beaa"
+    },
+    "model-design-and-building": {
+      "width": 1376,
+      "height": 768,
+      "v": "9315c8ed"
+    },
+    "motorboating": {
+      "width": 1376,
+      "height": 768,
+      "v": "596407ff"
+    },
+    "moviemaking": {
+      "width": 1376,
+      "height": 768,
+      "v": "d287b025"
+    },
+    "multisport": {
+      "width": 1376,
+      "height": 768,
+      "v": "a3b47d8c"
+    },
+    "music": {
+      "width": 1376,
+      "height": 768,
+      "v": "1d4ae8f5"
+    },
+    "nature": {
+      "width": 1376,
+      "height": 768,
+      "v": "0b50ae4a"
+    },
+    "nuclear-science": {
+      "width": 1376,
+      "height": 768,
+      "v": "b459e42e"
+    },
+    "oceanography": {
+      "width": 1376,
+      "height": 768,
+      "v": "da834342"
+    },
+    "orienteering": {
+      "width": 1376,
+      "height": 768,
+      "v": "de9b9875"
+    },
+    "painting": {
+      "width": 1376,
+      "height": 768,
+      "v": "27fc71f1"
+    },
+    "personal-fitness": {
+      "width": 1376,
+      "height": 768,
+      "v": "44656329"
+    },
+    "personal-management": {
+      "width": 1376,
+      "height": 768,
+      "v": "530f4b06"
+    },
+    "pets": {
+      "width": 1376,
+      "height": 768,
+      "v": "257afcdd"
+    },
+    "photography": {
+      "width": 1376,
+      "height": 768,
+      "v": "462fa9c5"
+    },
+    "pioneering": {
+      "width": 1376,
+      "height": 768,
+      "v": "0cb2456f"
+    },
+    "plant-science": {
+      "width": 1376,
+      "height": 768,
+      "v": "eada081a"
+    },
+    "plumbing": {
+      "width": 1376,
+      "height": 768,
+      "v": "cd42ad81"
+    },
+    "pottery": {
+      "width": 1376,
+      "height": 768,
+      "v": "34e8ca65"
+    },
+    "programming": {
+      "width": 1376,
+      "height": 768,
+      "v": "0565c250"
+    },
+    "public-health": {
+      "width": 1376,
+      "height": 768,
+      "v": "7857bba7"
+    },
+    "public-speaking": {
+      "width": 1376,
+      "height": 768,
+      "v": "53263d24"
+    },
+    "pulp-and-paper": {
+      "width": 1376,
+      "height": 768,
+      "v": "a9dff664"
+    },
+    "radio": {
+      "width": 1376,
+      "height": 768,
+      "v": "c389cf69"
+    },
+    "railroading": {
+      "width": 1376,
+      "height": 768,
+      "v": "e4710bc8"
+    },
+    "reading": {
+      "width": 1376,
+      "height": 768,
+      "v": "8068e290"
+    },
+    "reptile-and-amphibian-study": {
+      "width": 1376,
+      "height": 768,
+      "v": "c149068e"
+    },
+    "rifle-shooting": {
+      "width": 1376,
+      "height": 768,
+      "v": "50b5df5a"
+    },
+    "robotics": {
+      "width": 1376,
+      "height": 768,
+      "v": "5571a317"
+    },
+    "rowing": {
+      "width": 1376,
+      "height": 768,
+      "v": "d7d11ded"
+    },
+    "safety": {
+      "width": 1376,
+      "height": 768,
+      "v": "e778da24"
+    },
+    "salesmanship": {
+      "width": 1376,
+      "height": 768,
+      "v": "8a38f0fd"
+    },
+    "scholarship": {
+      "width": 1376,
+      "height": 768,
+      "v": "7c96b65c"
+    },
+    "scouting-heritage": {
+      "width": 1376,
+      "height": 768,
+      "v": "00d780fe"
+    },
+    "scuba-diving": {
+      "width": 1376,
+      "height": 768,
+      "v": "ba10ff6f"
+    },
+    "sculpture": {
+      "width": 1376,
+      "height": 768,
+      "v": "9a3e9f86"
+    },
+    "search-and-rescue": {
+      "width": 1376,
+      "height": 768,
+      "v": "fa15d3a9"
+    },
+    "shotgun-shooting": {
+      "width": 1376,
+      "height": 768,
+      "v": "71967d8d"
+    },
+    "signs-signals-and-codes": {
+      "width": 1376,
+      "height": 768,
+      "v": "0e76fcaf"
+    },
+    "skating": {
+      "width": 1376,
+      "height": 768,
+      "v": "39cf2756"
+    },
+    "small-boat-sailing": {
+      "width": 1376,
+      "height": 768,
+      "v": "c8503cc8"
+    },
+    "snow-sports": {
+      "width": 1376,
+      "height": 768,
+      "v": "76966610"
+    },
+    "soil-and-water-conservation": {
+      "width": 1376,
+      "height": 768,
+      "v": "3d564f4e"
+    },
+    "space-exploration": {
+      "width": 1376,
+      "height": 768,
+      "v": "15a27fae"
+    },
+    "sports": {
+      "width": 1376,
+      "height": 768,
+      "v": "ee5adde4"
+    },
+    "stamp-collecting": {
+      "width": 1376,
+      "height": 768,
+      "v": "bbbc8ac5"
+    },
+    "surveying": {
+      "width": 1376,
+      "height": 768,
+      "v": "b93d0deb"
+    },
+    "sustainability": {
+      "width": 1376,
+      "height": 768,
+      "v": "9f301373"
+    },
+    "swimming": {
+      "width": 1376,
+      "height": 768,
+      "v": "82049b74"
+    },
+    "textile": {
+      "width": 1376,
+      "height": 768,
+      "v": "66d16324"
+    },
+    "theater": {
+      "width": 1376,
+      "height": 768,
+      "v": "90f67dfa"
+    },
+    "traffic-safety": {
+      "width": 1376,
+      "height": 768,
+      "v": "146beb5f"
+    },
+    "truck-transportation": {
+      "width": 1376,
+      "height": 768,
+      "v": "28a401c8"
+    },
+    "veterinary-medicine": {
+      "width": 1376,
+      "height": 768,
+      "v": "43217e08"
+    },
+    "water-sports": {
+      "width": 1376,
+      "height": 768,
+      "v": "a4b4dd73"
+    },
+    "weather": {
+      "width": 1376,
+      "height": 768,
+      "v": "aeda51e2"
+    },
+    "welding": {
+      "width": 1376,
+      "height": 768,
+      "v": "f8c43f69"
+    },
+    "whitewater": {
+      "width": 1376,
+      "height": 768,
+      "v": "0d7f36a6"
+    },
+    "wilderness-survival": {
+      "width": 1376,
+      "height": 768,
+      "v": "e5e9d080"
+    },
+    "wildland-fire-management": {
+      "width": 1376,
+      "height": 768,
+      "v": "fc9b99fa"
+    },
+    "wood-carving": {
+      "width": 1376,
+      "height": 768,
+      "v": "d34f70a1"
+    },
+    "woodwork": {
+      "width": 1376,
+      "height": 768,
+      "v": "b4601a72"
+    }
+  },
+  "site": {
+    "hero": {
+      "width": 1264,
+      "height": 848,
+      "v": "ff476583"
+    },
+    "og-default": {
+      "width": 1200,
+      "height": 675,
+      "v": "da8af70d"
+    }
+  }
+}

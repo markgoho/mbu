@@ -6,7 +6,10 @@
       "id": "mining-in-society-merit-badge",
       "file": "_index.md",
       "description": "Official Mining in Society merit badge emblem showing crossed mining tools over a mine entrance.",
-      "value": "Provides immediate visual identification of the badge on the introduction page so readers can quickly confirm the guide's subject"
+      "value": "Provides immediate visual identification of the badge on the introduction page so readers can quickly confirm the guide's subject",
+      "width": 1200,
+      "height": 670,
+      "v": "25745520"
     },
     {
       "id": "surface-mine-overview",
@@ -14,7 +17,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational cutaway-style overview of a modern open-pit surface mine with terraced benches, haul roads, drilling area, shovel loading zone, giant haul trucks, crusher area, and waste-rock area. Use a simple self-explanatory layout with short horizontal labels only. No logos, no branding, no decorative scenery.",
-      "value": "Shows the spatial relationship between benches, haul roads, loading zones, and processing areas in a surface mine — layout knowledge that text alone cannot convey clearly"
+      "value": "Shows the spatial relationship between benches, haul roads, loading zones, and processing areas in a surface mine — layout knowledge that text alone cannot convey clearly",
+      "width": 800,
+      "height": 447,
+      "v": "b75c91ad"
     },
     {
       "id": "underground-mine-sections",
@@ -22,7 +28,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Educational underground mine cutaway diagram showing surface at top and below-ground shaft, ramp, tunnels, ventilation flow, refuge chamber area, and haul route. Clear horizontal labels in boxes, simplified structure, strong contrast between surface and underground sections, no clutter, no branding.",
-      "value": "Shows how shafts, ramps, tunnels, ventilation, and refuge areas fit together underground — a cross-sectional relationship impossible to explain as clearly with text alone"
+      "value": "Shows how shafts, ramps, tunnels, ventilation, and refuge areas fit together underground — a cross-sectional relationship impossible to explain as clearly with text alone",
+      "width": 800,
+      "height": 447,
+      "v": "12bd547b"
     },
     {
       "id": "minerals-to-products-grid",
@@ -30,7 +39,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Educational identification grid with paired panels linking raw minerals to common products: gypsum to drywall, quartz-rich silica sand to glass, copper mineral to electrical wire, graphite to battery or pencil core, limestone to cement or concrete, phosphate rock to fertilizer. Use realistic object drawings or simple photo-like renderings arranged in a neat grid with very short horizontal labels only.",
-      "value": "Shows side-by-side visual matches between raw minerals and finished products — recognition and comparison that text lists alone do not teach as effectively"
+      "value": "Shows side-by-side visual matches between raw minerals and finished products — recognition and comparison that text lists alone do not teach as effectively",
+      "width": 800,
+      "height": 447,
+      "v": "ed952e58"
     },
     {
       "id": "annotated-mining-map-example",
@@ -38,7 +50,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Simple state-style map example for a mining badge guide with five marked mining sites, major city dots, one highway, one railroad, one river, and icons distinguishing surface and underground mines. Use a clean self-structuring layout with legend and short horizontal labels only. The goal is to teach what information belongs on the map, not represent a real state.",
-      "value": "Shows how to organize mine locations together with transportation routes and operation types on one map — a visual planning structure that text alone cannot model as clearly"
+      "value": "Shows how to organize mine locations together with transportation routes and operation types on one map — a visual planning structure that text alone cannot model as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "ea2b3a1f"
     },
     {
       "id": "miner-ppe-labeled",
@@ -46,7 +61,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Realistic instructional image of a miner standing in a safe neutral setting wearing full personal protective equipment: hard hat, safety glasses, hearing protection, respirator or dust mask, self-rescue device, high-visibility vest, gloves, and protective boots. Use clear callouts with very short labels only, one label per item, no extra text, no logos.",
-      "value": "Shows the exact placement and appearance of key mine PPE items on the body — spatial identification that text descriptions alone cannot teach well"
+      "value": "Shows the exact placement and appearance of key mine PPE items on the body — spatial identification that text descriptions alone cannot teach well",
+      "width": 800,
+      "height": 447,
+      "v": "97656124"
     },
     {
       "id": "mine-monitoring-and-rescue-tech",
@@ -54,7 +72,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "Split-frame educational comparison. Left panel: close-up of a miner underground using a handheld gas monitor with clear display and protective gear visible. Right panel: rescue drone or robotic device inspecting a hazardous mine passage from a distance. Minimal short labels only, clean layout, strong visual contrast between monitoring and remote rescue technology.",
-      "value": "Shows the contrast between on-site danger detection and remote rescue inspection technology — operational differences that are much easier to grasp visually than through prose alone"
+      "value": "Shows the contrast between on-site danger detection and remote rescue inspection technology — operational differences that are much easier to grasp visually than through prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "0da9d5b4"
     },
     {
       "id": "abandoned-mine-warning-scene",
@@ -62,7 +83,10 @@
       "style": "annotated-photo",
       "verb_family": "describe",
       "description": "Instructional photo-style scene of an abandoned mine entrance behind fencing with warning signs, unstable rocky ground, and dark standing water nearby. Add a few short callouts identifying hidden hazards such as unstable ground, deep water, and dangerous opening. No people entering the site, no branding, no long text.",
-      "value": "Shows multiple hidden abandoned-mine hazards in one realistic scene — a risk picture that text warnings alone cannot make as immediate"
+      "value": "Shows multiple hidden abandoned-mine hazards in one realistic scene — a risk picture that text warnings alone cannot make as immediate",
+      "width": 800,
+      "height": 447,
+      "v": "0ccc23eb"
     },
     {
       "id": "ore-processing-flow",
@@ -70,7 +94,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean process-flow diagram of ore handling from blasted rock to primary crusher to grinding mill to chemical extraction tank to metal product, with arrows and short horizontal stage labels only. Make the stages visually distinct and sequential, simple industrial equipment icons, no dense text.",
-      "value": "Shows the step-by-step flow from raw rock through crushing, grinding, chemical extraction, and recovered product — a process sequence that is much easier to learn visually"
+      "value": "Shows the step-by-step flow from raw rock through crushing, grinding, chemical extraction, and recovered product — a process sequence that is much easier to learn visually",
+      "width": 800,
+      "height": 447,
+      "v": "08d7f287"
     },
     {
       "id": "reclaimed-mine-to-scout-reserve",
@@ -78,7 +105,10 @@
       "style": "comparison",
       "verb_family": "describe",
       "description": "Before-and-after comparison image. Left panel: disturbed former mine landscape with bare ground, cut slopes, and industrial remnants. Right panel: reclaimed green landscape used for outdoor recreation with trails, trees, open space, and a few Scouts in clean uniform at a distance. No visible organizational text, no logos, minimal or no labels.",
-      "value": "Shows the dramatic visual transformation from disturbed mine land to reclaimed public-use landscape — before-and-after change that prose cannot communicate as powerfully"
+      "value": "Shows the dramatic visual transformation from disturbed mine land to reclaimed public-use landscape — before-and-after change that prose cannot communicate as powerfully",
+      "width": 800,
+      "height": 447,
+      "v": "a7d819fc"
     },
     {
       "id": "lunar-resource-mining-concept",
@@ -86,7 +116,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Educational concept diagram of robotic lunar resource collection near a shadowed crater, with rover gathering icy regolith and a nearby processing unit producing usable resources. Use short horizontal labels such as rover, regolith, ice deposit, and processing unit. Keep the layout simple, scientific, and visually clear, with no branding or long text.",
-      "value": "Shows how robotic collection and local processing might work together on the Moon — a future systems concept that text alone cannot picture clearly"
+      "value": "Shows how robotic collection and local processing might work together on the Moon — a future systems concept that text alone cannot picture clearly",
+      "width": 800,
+      "height": 447,
+      "v": "0563be40"
     }
   ]
 }

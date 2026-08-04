@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Educational comparison diagram showing five common kinds of mammal field evidence side by side on a clean natural background: deer hoof tracks in mud, raccoon hand-like tracks, a small cluster of mammal scat, gnawed sticks with visible tooth marks, and a small mammal burrow entrance in grass. Clear visual separation between each sign type, realistic scale differences, minimal short labels only naming each sign, visual-first composition, no branding or extra text.",
-      "value": "Side-by-side shapes and textures of tracks, scat, gnaw marks, and burrow openings — field clues the reader must see to recognize in real habitat"
+      "value": "Side-by-side shapes and textures of tracks, scat, gnaw marks, and burrow openings — field clues the reader must see to recognize in real habitat",
+      "width": 800,
+      "height": 447,
+      "v": "a37f2d15"
     },
     {
       "id": "wildlife-photo-notes-example",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "describe",
       "description": "Annotated wildlife field-record example built around one realistic photo of a white-tailed deer standing at the edge of cover near water in early evening light. Add a few clean callouts pointing to observation details such as date and time, weather, approximate distance, nearby water, dense cover, and feeding behavior. Keep labels very short, large, and sparse so they remain readable; no paragraphs, no branding, no logos.",
-      "value": "Shows how observation notes connect to one real wildlife image and habitat scene — a concrete field-record format that is harder to grasp from a checklist alone"
+      "value": "Shows how observation notes connect to one real wildlife image and habitat scene — a concrete field-record format that is harder to grasp from a checklist alone",
+      "width": 800,
+      "height": 447,
+      "v": "610e63d7"
     }
   ]
 }

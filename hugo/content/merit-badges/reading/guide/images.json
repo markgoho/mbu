@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Instructional library scene showing a Scout in a clean field uniform comparing a library catalog screen entry to the call number label on a nonfiction book spine, with short callouts highlighting title, author, call number, and matching shelf label; real public library shelves, no logos, no branding, text-light annotations only",
-      "value": "Shows how catalog information matches the call number on a real book spine and shelf label, a visual connection text alone cannot make instantly clear"
+      "value": "Shows how catalog information matches the call number on a real book spine and shelf label, a visual connection text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "56a807d8"
     },
     {
       "id": "book-drive-sorting-table",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "create",
       "description": "Instructional scene of a Scout in a clean field uniform sorting donated books on a table into clearly separated boxes by age level and type before delivery to a community partner, with short callouts marking inspect condition, sort by age, and box for delivery; indoor community room, no visible brand names, no decorative text",
-      "value": "Shows the physical sorting workflow and category setup for a book drive, a process layout that prose alone cannot teach as clearly"
+      "value": "Shows the physical sorting workflow and category setup for a book drive, a process layout that prose alone cannot teach as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "e143a709"
     }
   ]
 }

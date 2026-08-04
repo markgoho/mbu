@@ -5,152 +5,239 @@
     {
       "id": "scout-athletics-field",
       "file": "_index.md",
-      "description": "A Scout (age 14, diverse appearance) standing on an outdoor athletics track at sunrise, doing a standing quad stretch. The Scout wears clean athletic clothing. In the background, a green grass field with bleachers and lane markings on the track. Warm golden light, energetic and inviting atmosphere."
+      "description": "A Scout (age 14, diverse appearance) standing on an outdoor athletics track at sunrise, doing a standing quad stretch. The Scout wears clean athletic clothing. In the background, a green grass field with bleachers and lane markings on the track. Warm golden light, energetic and inviting atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "3d1249ec"
     },
     {
       "id": "team-sports-collage",
       "file": "_index.md",
-      "description": "A four-panel collage of youth athletic activities: top-left shows a Scout shooting a basketball on an outdoor court, top-right shows a Scout kicking a soccer ball on a green field, bottom-left shows a Scout throwing a football in a park, bottom-right shows a Scout throwing a baseball on a diamond. All Scouts wear clean athletic clothing. Bright daylight, action poses."
+      "description": "A four-panel collage of youth athletic activities: top-left shows a Scout shooting a basketball on an outdoor court, top-right shows a Scout kicking a soccer ball on a green field, bottom-left shows a Scout throwing a football in a park, bottom-right shows a Scout throwing a baseball on a diamond. All Scouts wear clean athletic clothing. Bright daylight, action poses.",
+      "width": 800,
+      "height": 447,
+      "v": "1cdb0080"
     },
     {
       "id": "swimmer-pool-lane",
       "file": "_index.md",
-      "description": "A young swimmer (age 13) doing freestyle stroke in a pool lane, photographed from pool level. Lane ropes are visible on either side. The swimmer wears goggles and a swim cap. Clean blue water with gentle splashing. A pace clock is visible on the pool deck in the background."
+      "description": "A young swimmer (age 13) doing freestyle stroke in a pool lane, photographed from pool level. Lane ropes are visible on either side. The swimmer wears goggles and a swim cap. Clean blue water with gentle splashing. A pace clock is visible on the pool deck in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "aae81219"
     },
     {
       "id": "warmup-stretching",
       "file": "req1a.md",
-      "description": "A group of five diverse Scouts (ages 12-16) on a grass field doing dynamic stretching exercises together before practice. One Scout demonstrates leg swings while others do walking lunges. An adult coach stands nearby with a clipboard. Clean athletic wear, bright afternoon light."
+      "description": "A group of five diverse Scouts (ages 12-16) on a grass field doing dynamic stretching exercises together before practice. One Scout demonstrates leg swings while others do walking lunges. An adult coach stands nearby with a clipboard. Clean athletic wear, bright afternoon light.",
+      "width": 800,
+      "height": 447,
+      "v": "170f49b2"
     },
     {
       "id": "first-aid-kit-field",
       "file": "req1a.md",
-      "description": "A red first-aid kit open on a wooden bench next to an athletics track. Inside the kit, visible items include adhesive bandages, athletic tape, gauze pads, an instant cold pack, and elastic bandages. The track is visible in the soft-focus background. Clean, organized, well-stocked appearance."
+      "description": "A red first-aid kit open on a wooden bench next to an athletics track. Inside the kit, visible items include adhesive bandages, athletic tape, gauze pads, an instant cold pack, and elastic bandages. The track is visible in the soft-focus background. Clean, organized, well-stocked appearance.",
+      "width": 800,
+      "height": 447,
+      "v": "88a2b1b8"
     },
     {
       "id": "rice-method-diagram",
       "file": "req1b.md",
       "style": "infographic",
-      "description": "An illustrated infographic showing the four steps of the RICE method for treating athletic injuries. Four panels in a row: REST (a person sitting down), ICE (an ice pack on an ankle), COMPRESSION (an elastic bandage being wrapped around a knee), ELEVATION (a leg propped up on a pillow). Clean, simple graphic style with bold labels."
+      "description": "An illustrated infographic showing the four steps of the RICE method for treating athletic injuries. Four panels in a row: REST (a person sitting down), ICE (an ice pack on an ankle), COMPRESSION (an elastic bandage being wrapped around a knee), ELEVATION (a leg propped up on a pillow). Clean, simple graphic style with bold labels.",
+      "width": 800,
+      "height": 447,
+      "v": "4faf19bb"
     },
     {
       "id": "sports-first-aid-action",
       "file": "req1b.md",
-      "description": "A Scout (age 15) kneeling on a grass sports field, carefully applying an instant cold pack wrapped in a cloth to a teammate's ankle. The teammate sits on a bench with a pained but calm expression. A first-aid kit sits open nearby. Both Scouts wear clean athletic clothing. Warm afternoon light."
+      "description": "A Scout (age 15) kneeling on a grass sports field, carefully applying an instant cold pack wrapped in a cloth to a teammate's ankle. The teammate sits on a bench with a pained but calm expression. A first-aid kit sits open nearby. Both Scouts wear clean athletic clothing. Warm afternoon light.",
+      "width": 800,
+      "height": 447,
+      "v": "ec4d061f"
     },
     {
       "id": "doctor-physical-exam",
       "file": "req2a.md",
-      "description": "A young athlete (age 14, diverse appearance) sitting on an exam table in a bright, modern doctor's office. A doctor in a white coat uses a stethoscope to listen to the athlete's heart. Both are smiling warmly. Medical equipment and a growth chart are visible in the background. Professional, reassuring atmosphere."
+      "description": "A young athlete (age 14, diverse appearance) sitting on an exam table in a bright, modern doctor's office. A doctor in a white coat uses a stethoscope to listen to the athlete's heart. Both are smiling warmly. Medical equipment and a growth chart are visible in the background. Professional, reassuring atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "5361cb73"
     },
     {
       "id": "healthy-habits-montage",
       "file": "req2b.md",
       "style": "comparison",
-      "description": "A split-screen image. Left side: a Scout sleeping peacefully in a dark bedroom with a clock showing 9 PM on the nightstand. Right side: the same Scout outdoors on a sunny athletic field, taking a drink from a water bottle during a training break. Clean athletic clothing on the right side, pajamas on the left. Contrast between rest and activity."
+      "description": "A split-screen image. Left side: a Scout sleeping peacefully in a dark bedroom with a clock showing 9 PM on the nightstand. Right side: the same Scout outdoors on a sunny athletic field, taking a drink from a water bottle during a training break. Clean athletic clothing on the right side, pajamas on the left. Contrast between rest and activity.",
+      "width": 800,
+      "height": 447,
+      "v": "552614c4"
     },
     {
       "id": "myplate-foods",
       "file": "req2c.md",
-      "description": "A colorful plate of food arranged in the USDA MyPlate format on a wooden table. The plate is divided into sections: grains (brown rice), protein (grilled chicken), fruits (sliced strawberries and blueberries), and vegetables (broccoli and carrots). A glass of milk sits beside the plate, along with a glass of water. Overhead view, bright natural light, appetizing presentation."
+      "description": "A colorful plate of food arranged in the USDA MyPlate format on a wooden table. The plate is divided into sections: grains (brown rice), protein (grilled chicken), fruits (sliced strawberries and blueberries), and vegetables (broccoli and carrots). A glass of milk sits beside the plate, along with a glass of water. Overhead view, bright natural light, appetizing presentation.",
+      "width": 800,
+      "height": 447,
+      "v": "a4c966a4"
     },
     {
       "id": "training-plan-calendar",
       "file": "req3.md",
-      "description": "A Scout (age 13) sitting at a desk, writing out a training plan on a wall calendar. The calendar shows workout notations written in different colored markers. Running shoes, a water bottle, and a stopwatch sit on the desk nearby. The Scout looks focused and organized. Warm indoor lighting."
+      "description": "A Scout (age 13) sitting at a desk, writing out a training plan on a wall calendar. The calendar shows workout notations written in different colored markers. Running shoes, a water bottle, and a stopwatch sit on the desk nearby. The Scout looks focused and organized. Warm indoor lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "96f2ea05"
     },
     {
       "id": "scout-reviewing-log",
       "file": "req3.md",
-      "description": "A Scout (age 15) and an adult counselor sitting together on metal bleachers, reviewing a spiral notebook training log. The Scout points at an entry while the counselor nods approvingly. An outdoor track with lane markings is visible in the background. Late afternoon light, collaborative atmosphere."
+      "description": "A Scout (age 15) and an adult counselor sitting together on metal bleachers, reviewing a spiral notebook training log. The Scout points at an entry while the counselor nods approvingly. An outdoor track with lane markings is visible in the background. Late afternoon light, collaborative atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "92c7f487"
     },
     {
       "id": "referee-signals",
       "file": "req4a.md",
-      "description": "A referee in a black and white striped shirt standing on an athletics track, holding a starting pistol raised above their head with one arm. Several young runners are crouched at the starting line in the background, ready to sprint. Clean track surface, bright competition day atmosphere."
+      "description": "A referee in a black and white striped shirt standing on an athletics track, holding a starting pistol raised above their head with one arm. Several young runners are crouched at the starting line in the background, ready to sprint. Clean track surface, bright competition day atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "1832cf14"
     },
     {
       "id": "dynamic-stretching",
       "file": "req4b.md",
-      "description": "A group of young athletes (ages 12-16) on an outdoor track performing dynamic warm-up exercises in a line. The athletes at the front demonstrate walking lunges while others behind do leg swings. All wear clean athletic clothing. Lane markings visible on the red track surface. Bright morning light."
+      "description": "A group of young athletes (ages 12-16) on an outdoor track performing dynamic warm-up exercises in a line. The athletes at the front demonstrate walking lunges while others behind do leg swings. All wear clean athletic clothing. Lane markings visible on the red track surface. Bright morning light.",
+      "width": 800,
+      "height": 447,
+      "v": "e591e96f"
     },
     {
       "id": "amateur-pro-contrast",
       "file": "req4c.md",
       "style": "comparison",
-      "description": "A split-screen comparison. Left side: a Scout in clean athletic clothing running on a simple school track with a few classmates, looking happy and determined. Right side: a professional athlete in a team uniform running in a large stadium filled with spectators and bright lights. Both runners shown in mid-stride. Contrast between grassroots and professional athletics."
+      "description": "A split-screen comparison. Left side: a Scout in clean athletic clothing running on a simple school track with a few classmates, looking happy and determined. Right side: a professional athlete in a team uniform running in a large stadium filled with spectators and bright lights. Both runners shown in mid-stride. Contrast between grassroots and professional athletics.",
+      "width": 800,
+      "height": 447,
+      "v": "e9961c3a"
     },
     {
       "id": "handshake-after-game",
       "file": "req4d.md",
-      "description": "Two teams of young athletes (ages 12-15) forming a line and shaking hands after a basketball game. The players smile and show mutual respect. Coaches and a referee stand nearby. A gymnasium with basketball hoops and bleachers is visible in the background. Warm, sportsmanlike atmosphere."
+      "description": "Two teams of young athletes (ages 12-15) forming a line and shaking hands after a basketball game. The players smile and show mutual respect. Coaches and a referee stand nearby. A gymnasium with basketball hoops and bleachers is visible in the background. Warm, sportsmanlike atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "1bc66824"
     },
     {
       "id": "nine-options-overview",
       "file": "req5.md",
       "style": "infographic",
-      "description": "A wide panoramic illustration showing nine athletic activities in small circular vignettes arranged in a 3x3 grid: a sprinter on a track, a distance runner on a trail, a long jumper over a sand pit, a swimmer in a pool, someone doing pull-ups on a bar, a baseball thrower, a basketball shooter at a hoop, a soccer player kicking, and a weight lifter on a bench. Each vignette has a clean background. Colorful, energetic style."
+      "description": "A wide panoramic illustration showing nine athletic activities in small circular vignettes arranged in a 3x3 grid: a sprinter on a track, a distance runner on a trail, a long jumper over a sand pit, a swimmer in a pool, someone doing pull-ups on a bar, a baseball thrower, a basketball shooter at a hoop, a soccer player kicking, and a weight lifter on a bench. Each vignette has a clean background. Colorful, energetic style.",
+      "width": 800,
+      "height": 447,
+      "v": "647d0dd3"
     },
     {
       "id": "sprinter-starting-blocks",
       "file": "req5-sprinting.md",
-      "description": "A Scout (age 14) in the set position in starting blocks on a red track, fingers behind the starting line, weight loaded onto their rear leg, focused expression looking down the lane. Clean athletic clothing including running spikes. Lane markings and other empty lanes visible. Intense, pre-race moment."
+      "description": "A Scout (age 14) in the set position in starting blocks on a red track, fingers behind the starting line, weight loaded onto their rear leg, focused expression looking down the lane. Clean athletic clothing including running spikes. Lane markings and other empty lanes visible. Intense, pre-race moment.",
+      "width": 800,
+      "height": 447,
+      "v": "c5976c86"
     },
     {
       "id": "distance-runner-trail",
       "file": "req5-long-distance-running.md",
-      "description": "A Scout (age 15) running at an easy pace on a tree-lined paved path during a distance run. The Scout has a relaxed stride, calm expression, and natural arm swing. Dappled sunlight filters through the trees. The path curves gently ahead. Clean athletic clothing, peaceful training atmosphere."
+      "description": "A Scout (age 15) running at an easy pace on a tree-lined paved path during a distance run. The Scout has a relaxed stride, calm expression, and natural arm swing. Dappled sunlight filters through the trees. The path curves gently ahead. Clean athletic clothing, peaceful training atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "baaaf348"
     },
     {
       "id": "long-jump-takeoff",
       "file": "req5-jumping.md",
-      "description": "A Scout (age 14) in mid-air during a running long jump, legs extended forward over a sand pit. The white takeoff board is visible on the ground behind them. A measuring tape extends along the edge of the pit. The Scout wears clean athletic clothing and shows good form with arms reaching forward. Bright outdoor competition setting."
+      "description": "A Scout (age 14) in mid-air during a running long jump, legs extended forward over a sand pit. The white takeoff board is visible on the ground behind them. A measuring tape extends along the edge of the pit. The Scout wears clean athletic clothing and shows good form with arms reaching forward. Bright outdoor competition setting.",
+      "width": 800,
+      "height": 447,
+      "v": "05110876"
     },
     {
       "id": "swimmer-freestyle",
       "file": "req5-swimming.md",
-      "description": "A young swimmer doing freestyle in a lane of an outdoor pool, photographed from slightly above water level. The swimmer's arm is extended forward mid-stroke, with clean water splashing. Blue lane ropes are visible on both sides. The swimmer wears goggles and a swim cap. Clear, bright pool environment."
+      "description": "A young swimmer doing freestyle in a lane of an outdoor pool, photographed from slightly above water level. The swimmer's arm is extended forward mid-stroke, with clean water splashing. Blue lane ropes are visible on both sides. The swimmer wears goggles and a swim cap. Clear, bright pool environment.",
+      "width": 800,
+      "height": 447,
+      "v": "a7000bdd"
     },
     {
       "id": "pull-up-form",
       "file": "req5-pull-ups-push-ups.md",
-      "description": "A Scout (age 15) performing a pull-up on an outdoor pull-up bar in a park fitness area. The Scout is shown at the top of the movement with chin clearly above the bar, arms fully engaged, body straight. Clean athletic clothing. Green grass and trees in the background. Strong, determined expression."
+      "description": "A Scout (age 15) performing a pull-up on an outdoor pull-up bar in a park fitness area. The Scout is shown at the top of the movement with chin clearly above the bar, arms fully engaged, body straight. Clean athletic clothing. Green grass and trees in the background. Strong, determined expression.",
+      "width": 800,
+      "height": 447,
+      "v": "efb39797"
     },
     {
       "id": "baseball-throw-form",
       "file": "req5-baseball-throw.md",
-      "description": "A Scout (age 13) on a baseball field in mid-throw, showing proper overhand throwing mechanics. The throwing arm is in the L-shape position behind the ear, the front shoulder points at the target, and the lead foot is stepping forward. A baseball glove sits on the ground nearby. Clean athletic clothing. Bright field with grass and dirt."
+      "description": "A Scout (age 13) on a baseball field in mid-throw, showing proper overhand throwing mechanics. The throwing arm is in the L-shape position behind the ear, the front shoulder points at the target, and the lead foot is stepping forward. A baseball glove sits on the ground nearby. Clean athletic clothing. Bright field with grass and dirt.",
+      "width": 800,
+      "height": 447,
+      "v": "a33d0094"
     },
     {
       "id": "basketball-court-positions",
       "file": "req5-basketball-shooting.md",
       "style": "diagram",
-      "description": "A bird's-eye view diagram of a basketball court showing the key, free-throw line, three-point arc, and basket. Eight numbered dots mark the shooting positions: two layup spots (left and right), two spots along the key line, two at the elbow (where key meets free-throw line), top of the key, and one on the three-point line. Clean, labeled diagram style with clear markings."
+      "description": "A bird's-eye view diagram of a basketball court showing the key, free-throw line, three-point arc, and basket. Eight numbered dots mark the shooting positions: two layup spots (left and right), two spots along the key line, two at the elbow (where key meets free-throw line), top of the key, and one on the three-point line. Clean, labeled diagram style with clear markings.",
+      "width": 800,
+      "height": 447,
+      "v": "98f01fe6"
     },
     {
       "id": "soccer-kick-form",
       "file": "req5-football-soccer-kick.md",
-      "description": "A Scout (age 14) on a green soccer field mid-kick, striking a soccer ball with the instep (laces) of their foot. The plant foot is beside the ball pointing at the goal, and the kicking leg is in full follow-through. A soccer goal with a white net is visible in the background. Clean athletic clothing. Bright afternoon light."
+      "description": "A Scout (age 14) on a green soccer field mid-kick, striking a soccer ball with the instep (laces) of their foot. The plant foot is beside the ball pointing at the goal, and the kicking leg is in full follow-through. A soccer goal with a white net is visible in the background. Clean athletic clothing. Bright afternoon light.",
+      "width": 800,
+      "height": 447,
+      "v": "1b33cd21"
     },
     {
       "id": "weight-training-bench",
       "file": "req5-weight-training.md",
-      "description": "A Scout (age 16) performing a bench press in a well-lit gym. The Scout lies on a flat bench with hands gripping a barbell at chest level, pressing upward. A spotter (adult) stands behind the bench with hands near the bar, ready to assist. Both wear clean athletic clothing. Weight plates are visible on the bar. Safe, supervised environment."
+      "description": "A Scout (age 16) performing a bench press in a well-lit gym. The Scout lies on a flat bench with hands gripping a barbell at chest level, pressing upward. A spotter (adult) stands behind the bench with hands near the bar, ready to assist. Both wear clean athletic clothing. Weight plates are visible on the bar. Safe, supervised environment.",
+      "width": 800,
+      "height": 447,
+      "v": "10ec7fcb"
     },
     {
       "id": "field-day-setup",
       "file": "req6.md",
-      "description": "An outdoor grass field being set up for a sports meet. Orange cones mark running lanes, a folding table holds clipboards and stopwatches, and two Scouts carry a long jump measuring tape. In the background, a basketball hoop and soccer goal are visible. Bright morning light with a few clouds. Organized, preparation-in-progress atmosphere."
+      "description": "An outdoor grass field being set up for a sports meet. Orange cones mark running lanes, a folding table holds clipboards and stopwatches, and two Scouts carry a long jump measuring tape. In the background, a basketball hoop and soccer goal are visible. Bright morning light with a few clouds. Organized, preparation-in-progress atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "225768af"
     },
     {
       "id": "careers-in-athletics",
       "file": "req7.md",
-      "description": "A four-panel collage showing athletics careers: top-left an athletic trainer taping a young athlete's ankle in a training room, top-right a coach holding a clipboard and whistle on a field, bottom-left a sports journalist speaking into a microphone at a stadium, bottom-right a strength and conditioning coach demonstrating proper squat form to a small group. Professional, diverse representation."
+      "description": "A four-panel collage showing athletics careers: top-left an athletic trainer taping a young athlete's ankle in a training room, top-right a coach holding a clipboard and whistle on a field, bottom-left a sports journalist speaking into a microphone at a stadium, bottom-right a strength and conditioning coach demonstrating proper squat form to a small group. Professional, diverse representation.",
+      "width": 800,
+      "height": 447,
+      "v": "4ef5098e"
     },
     {
       "id": "mental-focus-athlete",
       "file": "extended-learning.md",
-      "description": "A Scout (age 15) sitting quietly on a metal bench beside a track, eyes closed in focused visualization before a race. The Scout wears clean athletic clothing and running shoes. In the soft-focus background, other competitors warm up on the track. Calm, contemplative atmosphere with warm afternoon light."
+      "description": "A Scout (age 15) sitting quietly on a metal bench beside a track, eyes closed in focused visualization before a race. The Scout wears clean athletic clothing and running shoes. In the soft-focus background, other competitors warm up on the track. Calm, contemplative atmosphere with warm afternoon light.",
+      "width": 800,
+      "height": 447,
+      "v": "b2ee90df"
     }
   ]
 }

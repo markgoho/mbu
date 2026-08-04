@@ -8,7 +8,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "Side-by-side comparison at a dock of the same teenager in appropriate boating clothes wearing a properly fitted recreational boating life jacket on one side and a loose, badly riding-up life jacket on the other. Emphasize snug torso fit, secured straps, clear shoulder ride-up in the incorrect example, and a calm marina background. Only two short labels total: correct and incorrect.",
-      "value": "Shows the visible difference between correct and incorrect life-jacket fit on a real boater — ride-up and looseness that text alone cannot teach clearly"
+      "value": "Shows the visible difference between correct and incorrect life-jacket fit on a real boater — ride-up and looseness that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "74622c56"
     },
     {
       "id": "boat-wake-and-passenger-positions",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational top-down diagram of a small runabout underway on open water, with passengers seated in stable positions, the operator at the helm with clear lookout zones, and wake spreading behind the boat toward nearby water users and a dock area. Use a simple self-structuring layout with short horizontal labels for safe seated positions, operator visibility, stern prop area, and wake impact zone. Minimal text, no branding.",
-      "value": "Shows how passenger placement, lookout zones, prop area, and wake spread relate spatially around one moving boat — relationships that are difficult to picture from prose alone"
+      "value": "Shows how passenger placement, lookout zones, prop area, and wake spread relate spatially around one moving boat — relationships that are difficult to picture from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "636b2130"
     },
     {
       "id": "safety-afloat-motorboating-grid",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Nine-panel educational grid showing the Safety Afloat points applied to one small motorboat outing. Each panel uses a simple icon-plus-scene approach with minimal horizontal labels only: supervision at dock, health review clipboard, swimmer readiness, worn life jackets, buddy awareness, skill practice at helm, float-plan map, required gear check, and disciplined passenger behavior. Clean visual-first layout, very sparse text, no organization names or logos.",
-      "value": "Shows all nine Safety Afloat ideas as distinct visual situations in one unified boating context — a visual summary that helps readers connect abstract policy points to real actions"
+      "value": "Shows all nine Safety Afloat ideas as distinct visual situations in one unified boating context — a visual summary that helps readers connect abstract policy points to real actions",
+      "width": 800,
+      "height": 447,
+      "v": "81b4b03e"
     },
     {
       "id": "required-motorboat-safety-gear-layout",
@@ -32,7 +41,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Overhead annotated photo of required motorboat safety gear laid out neatly on a dock: wearable life jacket, throwable flotation cushion, marine fire extinguisher, whistle, anchor with line, navigation light set, first-aid kit, and registration pouch. Use only short callouts pointing to each item with a clean uncluttered dock background and no extra gear.",
-      "value": "Lets the reader visually identify the common required safety items by shape and appearance in one view — recognition that text lists cannot provide as quickly"
+      "value": "Lets the reader visually identify the common required safety items by shape and appearance in one view — recognition that text lists cannot provide as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "d7b6c6ee"
     },
     {
       "id": "motorboat-course-handling-diagram",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Bird's-eye instructional diagram of a one-mile small-motorboat practice course with buoys and channel markers, showing overtaking a slower boat, meeting oncoming traffic, yielding right-of-way, making a controlled turn, reversing direction, and following navigation aids. Use clear path lines, simple boat icons, and very short horizontal labels only. Emphasize route geometry and decision points rather than scenery.",
-      "value": "Shows the spatial flow of a practice course with traffic interactions, turns, and navigation references — course geometry and sequencing that text alone is hard to visualize"
+      "value": "Shows the spatial flow of a practice course with traffic interactions, turns, and navigation references — course geometry and sequencing that text alone is hard to visualize",
+      "width": 800,
+      "height": 447,
+      "v": "82264277"
     },
     {
       "id": "boating-knots-reference-board",
@@ -48,7 +63,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Straight-on photo of a simple practice board displaying five neatly tied boating knots in light rope against a plain background: cleating hitch on a cleat, bowline, clove hitch on a post, anchor bend on a ring, and sheet bend joining two ropes. Use one short horizontal label per knot only, with clean spacing and no extra decorations.",
-      "value": "Shows the finished shape of five boating knots side by side for visual identification and comparison — knot forms that are much easier to learn by sight than description alone"
+      "value": "Shows the finished shape of five boating knots side by side for visual identification and comparison — knot forms that are much easier to learn by sight than description alone",
+      "width": 800,
+      "height": 447,
+      "v": "d785cf6b"
     }
   ]
 }

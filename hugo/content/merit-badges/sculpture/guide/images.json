@@ -7,7 +7,10 @@
       "file": "_index.md",
       "style": "annotated-photo",
       "description": "Realistic worktable in an art classroom with a clean Scout uniform shirt visible on the student at the table, showing a small clay maquette, a plaster sample, simple carving tools, modeling tools, and a reference sketch arranged neatly. Add only a few short callouts such as clay model, plaster sample, carving tools, and maquette. No logos, no branding, no title text.",
-      "value": "Shows the major sculpture materials and tool categories together around one small project — the relationship between materials, tools, and three-dimensional planning is easier to understand visually than from a list"
+      "value": "Shows the major sculpture materials and tool categories together around one small project — the relationship between materials, tools, and three-dimensional planning is easier to understand visually than from a list",
+      "width": 800,
+      "height": 447,
+      "v": "a0d082ce"
     },
     {
       "id": "sculpture-tool-safety-layout",
@@ -15,7 +18,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Clean instructional diagram of a sculpture work surface with carving tools, goggles, gloves, a dust respirator, and a wood block clamped in place. Show one bold safe cutting arrow moving away from the body and one crossed-out unsafe cutting direction toward the support hand. Use only short labels like goggles, respirator, clamp workpiece, safe cut, and never cut toward hand. Keep text minimal and layout clear.",
-      "value": "Shows the exact physical relationship between tool direction, hand placement, clamping, and protective gear — safe cutting setup is much clearer in a visual than in prose alone"
+      "value": "Shows the exact physical relationship between tool direction, hand placement, clamping, and protective gear — safe cutting setup is much clearer in a visual than in prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "33eff95d"
     },
     {
       "id": "sculpture-head-proportions",
@@ -23,7 +29,10 @@
       "style": "illustrated",
       "verb_family": "describe",
       "description": "Clean educational illustration of a clay portrait head shown in front and side view with simple guide lines for eye line, nose line, mouth line, jaw, neck, and skull mass. Minimal labels only, plain light background, no decorative title, no branding.",
-      "value": "Shows the proportional landmarks of a head from two angles at once — the spatial relationship between skull mass, facial features, and neck placement is hard to grasp from text alone"
+      "value": "Shows the proportional landmarks of a head from two angles at once — the spatial relationship between skull mass, facial features, and neck placement is hard to grasp from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "6fdc280d"
     },
     {
       "id": "sculpture-fruit-mold-sequence",
@@ -31,7 +40,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Three-panel step-by-step diagram showing a pear as the original object, a plaster mold half capturing its shape, and a finished cast copy removed from the mold. Include only short labels such as original, mold, and cast, plus one simple arrow between panels. Clean white background, minimal text, no branding.",
-      "value": "Shows how a positive object becomes a negative mold and then a positive cast again — that transformation is much easier to understand visually than through explanation alone"
+      "value": "Shows how a positive object becomes a negative mold and then a positive cast again — that transformation is much easier to understand visually than through explanation alone",
+      "width": 800,
+      "height": 447,
+      "v": "217cea86"
     },
     {
       "id": "sculpture-gallery-observation",
@@ -39,7 +51,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Realistic museum gallery scene with a Scout in a clean uniform taking notes in a sketchbook while looking at a pedestal sculpture. Keep the room simple, with one wall label and a clear path through the gallery. Add only a few short callouts such as sculpture, wall label, notes, and viewing path. No logos, no branding, no title text.",
-      "value": "Shows how artwork, labels, note-taking, and visitor movement relate inside a gallery space — the full observation experience is more concrete visually than through text alone"
+      "value": "Shows how artwork, labels, note-taking, and visitor movement relate inside a gallery space — the full observation experience is more concrete visually than through text alone",
+      "width": 800,
+      "height": 447,
+      "v": "d1b05b44"
     },
     {
       "id": "sculpture-public-art-context",
@@ -47,7 +62,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Three-panel comparison diagram showing the same abstract sculpture concept in three settings: a memorial plaza, a playful park area, and a museum pedestal display. Use only short labels for memorial, park, and museum. Keep the sculpture form recognizable across all three panels so the setting change is obvious. Minimal text, clean layout, no branding.",
-      "value": "Shows how the same sculptural form changes meaning when placed in a memorial, park, or museum context — the influence of setting on interpretation is far easier to see than to describe"
+      "value": "Shows how the same sculptural form changes meaning when placed in a memorial, park, or museum context — the influence of setting on interpretation is far easier to see than to describe",
+      "width": 800,
+      "height": 447,
+      "v": "05fb3b3b"
     }
   ]
 }

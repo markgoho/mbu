@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Cross-section side view of a coniferous forest stand cut away to show three vertical layers of burning. Below the soil surface, a smoldering ground fire glows in the duff and root layer. At the surface, low flames burn through grass, needle litter, and downed branches. In the canopy above, tall flames sweep through the tops of the trees. A continuous line of small trees and low-hanging branches connects the surface flames to the canopy. Four short horizontal labels only: GROUND, SURFACE, CROWN, LADDER FUELS. Clean educational cross-section, muted forest greens and browns with orange flame, no scenery beyond the stand, no other text.",
-      "value": "Vertical cross-section showing ground, surface, and crown fire occupying three distinct layers with ladder fuels connecting them — the spatial relationship that explains why crown fire happens, which text cannot convey"
+      "value": "Vertical cross-section showing ground, surface, and crown fire occupying three distinct layers with ladder fuels connecting them — the spatial relationship that explains why crown fire happens, which text cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "5a88ab16"
     },
     {
       "id": "ember-ignition-home-vulnerabilities",
@@ -16,7 +19,10 @@
       "style": "illustrated",
       "verb_family": "identify",
       "description": "Illustrated three-quarter view of a single-story wood-sided house with a pitched roof, drawn in a clean educational style against a plain light background. Glowing orange embers drift on the wind toward the house and collect in five clearly visible places: pine needles packed into a roof valley, a gutter full of dry leaves, an open rectangular vent under the eave, gaps between the boards of a wooden deck, and a woodpile stacked against the side wall. Each of the five spots has a small glowing ember cluster and a short single-word horizontal label beside it: ROOF, GUTTER, VENT, DECK, WOODPILE. No other text, no people, no landscape scenery.",
-      "value": "Shows exactly where wind-driven embers accumulate on a real house — the five specific ignition points that explain why most homes are lost to embers rather than flame fronts"
+      "value": "Shows exactly where wind-driven embers accumulate on a real house — the five specific ignition points that explain why most homes are lost to embers rather than flame fronts",
+      "width": 800,
+      "height": 447,
+      "v": "1c40c06d"
     },
     {
       "id": "campfire-extinguish-sequence",
@@ -24,7 +30,10 @@
       "style": "photo",
       "verb_family": "show",
       "description": "Four-panel horizontal photographic sequence showing a teenager in a clean tan Scout uniform shirt properly extinguishing a campfire in a stone fire ring at a wooded campsite. Panel one: pouring water from a metal bucket over glowing coals, steam rising. Panel two: stirring the wet ashes and coals thoroughly with a small shovel. Panel three: scraping a partially burned stick with the shovel edge to expose hidden embers. Panel four: crouching low and holding the back of a bare hand a few inches above the flat gray ash to feel for heat. Natural daylight, realistic outdoor campsite, numbers 1 through 4 in the corner of each panel and no other text.",
-      "value": "Shows the four-step drown-stir-scrape-feel procedure as physical actions in order, including the bare-hand heat check — hand positioning and sequence that a written list cannot make concrete"
+      "value": "Shows the four-step drown-stir-scrape-feel procedure as physical actions in order, including the bare-hand heat check — hand positioning and sequence that a written list cannot make concrete",
+      "width": 800,
+      "height": 447,
+      "v": "1f7bc64c"
     },
     {
       "id": "defensible-space-zones",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Overhead bird's-eye diagram of a single house at the center of three concentric treated zones drawn on a plain light background. The innermost band hugging the house is gray gravel with no plants at all. The middle band has short mowed green grass and a few small, widely separated shrubs. The outer band has thinned trees whose canopies do not touch, with clear ground between them. Each band is tinted a slightly different shade and has one short horizontal label with its distance: 0-5 FT, 5-30 FT, 30-100 FT. Simple driveway leading to the house. No other text, no people.",
-      "value": "Bird's-eye view of the three home ignition zones at their true relative distances with the vegetation treatment in each — spatial relationships and scale that a written description of distances cannot convey"
+      "value": "Bird's-eye view of the three home ignition zones at their true relative distances with the vegetation treatment in each — spatial relationships and scale that a written description of distances cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "3b997d6c"
     },
     {
       "id": "parts-of-a-wildfire-diagram",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Flat overhead map view of a wildfire, drawn on a plain light background, seen straight down with no 3D perspective. A long teardrop of black burned ground runs from the bottom of the frame to the top. The top end is wide and rimmed with bright orange flames. The bottom end is a narrow pointed tail with no flames. Two narrow black strips reach further upward past the flaming top end, with a wedge of green between them. One small green patch sits surrounded by black. Two small orange flame spots sit in the green above the flaming end. Green vegetation fills the rest of the frame. A single arrow at the right edge points upward. Exactly nine short horizontal text labels, each touching the feature it names: HEAD on the flaming top end, REAR on the narrow bottom tail, ORIGIN just below the tail, LEFT FLANK on the left long side, RIGHT FLANK on the right long side, FINGER on one narrow upward strip, ISLAND on the green patch inside the black, SPOT FIRE on one small flame spot, WIND on the arrow. No other words anywhere in the image.",
-      "value": "The actual shape and named anatomy of a wildfire in one overhead view — a Scout must see how head, flanks, fingers, pockets, islands, and spots relate spatially in order to draw the Req 5c diagram"
+      "value": "The actual shape and named anatomy of a wildfire in one overhead view — a Scout must see how head, flanks, fingers, pockets, islands, and spots relate spatially in order to draw the Req 5c diagram",
+      "width": 800,
+      "height": 447,
+      "v": "014cf377"
     },
     {
       "id": "wildland-firefighter-ppe-labeled",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Full-length front view of a wildland firefighter standing on a plain light background, wearing complete protective equipment: a hard hat with chin strap and headlamp, goggles, a fabric shroud covering the neck and ears, a loose-fitting yellow long-sleeved flame-resistant shirt, green flame-resistant trousers, leather gloves, and tall lace-up leather boots with lugged soles. A backpack with a hydration tube, a radio clipped at the chest, and a rectangular pouch on the belt hip. Short horizontal labels with thin lines pointing to each item: HARD HAT, GOGGLES, SHROUD, SHIRT, PANTS, GLOVES, BOOTS, PACK, RADIO, FIRE SHELTER. No other text, face not detailed.",
-      "value": "Every piece of wildland PPE shown in place on one figure with names attached — teaches the complete kit and where each item is worn, which a written list leaves abstract"
+      "value": "Every piece of wildland PPE shown in place on one figure with names attached — teaches the complete kit and where each item is worn, which a written list leaves abstract",
+      "width": 800,
+      "height": 447,
+      "v": "274d16ee"
     },
     {
       "id": "lces-fireline-diagram",
@@ -56,7 +74,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple overhead terrain diagram of a forested hillside on a plain light background. Near the bottom, an orange fire edge burns upslope. Above it, a thin cleared strip of bare soil runs across the slope with four small crew figures on it. A single figure stands on a high rocky point at the upper left with a clear view of both the fire and the crew, connected to the crew by a thin dashed line. Two bold arrows lead from the crew away from the fire toward a large gray cleared open area at the upper right. Four short horizontal labels only: LOOKOUT, CREW, ESCAPE ROUTES, SAFETY ZONE. Muted greens and grays with orange fire. No other text.",
-      "value": "Shows the spatial relationship LCES depends on — lookout positioned to see both fire and crew, two escape routes, and a safety zone at a survivable distance — which is a geometry problem text cannot draw"
+      "value": "Shows the spatial relationship LCES depends on — lookout positioned to see both fire and crew, two escape routes, and a safety zone at a survivable distance — which is a geometry problem text cannot draw",
+      "width": 800,
+      "height": 447,
+      "v": "472e7bf1"
     },
     {
       "id": "wildland-hand-tools-comparison",
@@ -64,7 +85,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A clean product-style lineup of three firefighting hand tools, upright, side by side, evenly spaced, at matching scale on a plain pale background. Each tool is viewed squarely from the side. Left tool: a wooden handle topped by one forged steel head combining an axe blade on one side and, opposite it on the same head, a wide flat rectangular grubbing blade turned crosswise with its edge facing downward. Center tool: a long straight wooden handle topped by a heavy solid rectangular steel plate mounted flat and crosswise, with six thick blunt square teeth along one long edge and a plain straight sharpened edge along the other. Right tool: a long wooden handle with a narrow steel spade blade tapering to a point, side edges sharpened. Absolutely no callouts, no annotation lines, no arrows, no measurements, no dimension marks, no descriptive sentences anywhere in the image. The only text in the entire image is three single words in bold capitals centered beneath each tool: PULASKI, MCLEOD, SHOVEL.",
-      "value": "Side-by-side identification of the three signature wildland tools at matched scale with their distinctive dual-purpose heads visible — a Scout must see the shapes to recognize and name them"
+      "value": "Side-by-side identification of the three signature wildland tools at matched scale with their distinctive dual-purpose heads visible — a Scout must see the shapes to recognize and name them",
+      "width": 800,
+      "height": 447,
+      "v": "dd0e6c53"
     },
     {
       "id": "fireline-cross-section-cup-trench",
@@ -72,7 +96,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Cross-section side view cutting through a forested slope on a plain light background, with the hillside rising to the left and falling to the right. The soil is shown in layers: a dark brown organic duff and litter layer on top of lighter tan mineral soil. Across the middle of the slope, a cleared strip has the dark top layer completely scraped away exposing the tan layer beneath. On the uphill edge of the cleared strip, a shallow trench is dug with a raised lip, and a glowing pine cone rests caught inside it. A small pile of cut brush lies on the downhill side. Short horizontal labels only: DUFF, MINERAL SOIL, FIRELINE, CUP TRENCH. No other text.",
-      "value": "Cross-section showing what scraping to mineral soil actually means and how a cup trench catches rolling burning material — teaches the physics of why the line is built this way on a slope"
+      "value": "Cross-section showing what scraping to mineral soil actually means and how a cup trench catches rolling burning material — teaches the physics of why the line is built this way on a slope",
+      "width": 800,
+      "height": 447,
+      "v": "5cad4995"
     }
   ]
 }

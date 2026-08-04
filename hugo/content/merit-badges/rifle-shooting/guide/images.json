@@ -8,7 +8,10 @@
       "style": "comparison",
       "verb_family": "describe",
       "description": "Clean educational side-by-side comparison showing a hand-thrown baseball, a steel BB, and a rifle bullet with simple horizontal speed bars and impact depth into stacked foam blocks, very short labels only, plain light background, no logos, no branding, no decorative text",
-      "value": "Side-by-side scale of speed and penetration differences between everyday thrown objects and fired projectiles — the risk jump is much clearer visually than in text"
+      "value": "Side-by-side scale of speed and penetration differences between everyday thrown objects and fired projectiles — the risk jump is much clearer visually than in text",
+      "width": 800,
+      "height": 447,
+      "v": "6160d58b"
     },
     {
       "id": "ppe-shooting-range",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Front-facing educational diagram of a shooter from shoulders up wearing wraparound impact-rated safety glasses and over-ear hearing protection, with very short labels for eye coverage, side protection, full ear cup seal, and clear cheek area, plain background, no visible text except brief equipment labels, no branding",
-      "value": "Correct fit and coverage of both eye and hearing protection at the same time — PPE placement is easier to judge visually than from text alone"
+      "value": "Correct fit and coverage of both eye and hearing protection at the same time — PPE placement is easier to judge visually than from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "993373e8"
     },
     {
       "id": "rifle-parts-diagram",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean side-view educational diagram of a bolt-action rifle with short labels for stock, action, and barrel plus brief sub-labels for trigger, bolt handle, chamber area, sights, comb, butt plate, and muzzle, plain background, no branding or extra text",
-      "value": "Three main rifle assemblies and their key subparts shown in their real spatial relationship — the layout is much easier to learn visually than from a paragraph"
+      "value": "Three main rifle assemblies and their key subparts shown in their real spatial relationship — the layout is much easier to learn visually than from a paragraph",
+      "width": 800,
+      "height": 447,
+      "v": "0f0d14a9"
     },
     {
       "id": "cartridge-anatomy-diagram",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Educational side-by-side cutaway diagram of a rimfire cartridge and a centerfire cartridge with short labels for bullet, case, propellant, and primer, clearly showing primer compound in the rim on one and the centered primer cup on the other, clean white background, no branding",
-      "value": "Internal structure of rimfire and centerfire cartridges shown side by side — primer location and part relationships are much clearer in a cutaway than in text"
+      "value": "Internal structure of rimfire and centerfire cartridges shown side by side — primer location and part relationships are much clearer in a cutaway than in text",
+      "width": 800,
+      "height": 447,
+      "v": "14e1c711"
     },
     {
       "id": "air-rifle-parts-diagram",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean educational side-view diagram of a break-barrel air rifle with short labels for stock, powerplant or action, barrel, rear sight, front sight, trigger, and cocking hinge, plain background, no logos or decorative text",
-      "value": "Air rifle stock, powerplant, and barrel shown together with the break-barrel layout — the different power system is easier to understand visually than through description alone"
+      "value": "Air rifle stock, powerplant, and barrel shown together with the break-barrel layout — the different power system is easier to understand visually than through description alone",
+      "width": 800,
+      "height": 447,
+      "v": "5c8858bd"
     },
     {
       "id": "bb-vs-pellet-diagram",
@@ -48,7 +63,10 @@
       "style": "comparison",
       "verb_family": "identify",
       "description": "Educational side-by-side comparison of a round steel BB and a diabolo pellet at the same scale with very short labels for round ball, waist, head, and skirt, plain background, clean technical illustration style, no branding",
-      "value": "Shape differences between a BB and a pellet shown at equal scale — the reason they behave differently is much easier to grasp visually than from text alone"
+      "value": "Shape differences between a BB and a pellet shown at equal scale — the reason they behave differently is much easier to grasp visually than from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "7311ebbc"
     },
     {
       "id": "muzzleloader-parts-diagram",
@@ -56,7 +74,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean side-view educational diagram of a percussion muzzleloading rifle with short labels for stock, barrel, lock, hammer, nipple, ramrod, trigger, front sight, rear sight, and muzzle, plain background, no logos or branding",
-      "value": "Unique muzzleloader parts such as the lock, nipple, and ramrod shown in place on the rifle — these historical components are much easier to recognize visually than from text alone"
+      "value": "Unique muzzleloader parts such as the lock, nipple, and ramrod shown in place on the rifle — these historical components are much easier to recognize visually than from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "d6822932"
     }
   ]
 }

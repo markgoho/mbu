@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational diagram showing five instrument families in a simple grid: violin for strings, clarinet for woodwinds, trumpet for brass, snare drum for percussion, and piano for keyboard. Each instrument is shown clearly with one short horizontal label identifying the vibrating part first: string, reed, buzzing lips into mouthpiece, drumhead, and string struck by hammer. Include minimal arrows only where the vibrating source is unambiguous, white background, textbook clarity, no logos or branding.",
-      "value": "Shows the first vibrating element for five instrument families side by side, a visual comparison that text alone cannot make instantly clear"
+      "value": "Shows the first vibrating element for five instrument families side by side, a visual comparison that text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "86ad4ecc"
     },
     {
       "id": "scout-leading-group-song",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Annotated instructional photo of a Scout in a clean Scout uniform leading a small mixed-age group in singing indoors, facing the group with one hand marking a clear steady beat and the other giving a cutoff cue. Add only a few short horizontal callouts pointing to beat pattern, eye contact, and cutoff gesture. The group is watching attentively and singing from memory, simple rehearsal or meeting-room setting, no visible logos or readable brand text.",
-      "value": "Shows the body position, beat gesture, and cutoff cue that make song-leading readable to a group in ways prose cannot demonstrate well"
+      "value": "Shows the body position, beat gesture, and cutoff cue that make song-leading readable to a group in ways prose cannot demonstrate well",
+      "width": 800,
+      "height": 447,
+      "v": "1116f0a6"
     },
     {
       "id": "scout-composing-on-staff-paper",
@@ -24,7 +30,10 @@
       "style": "annotated-photo",
       "verb_family": "create",
       "description": "Annotated close-up photo of a Scout in a clean Scout uniform seated at a table writing a short melody on staff paper with a pencil, an instrument case nearby but not dominant. The page clearly shows grouped measures, bar lines, a clef, time signature, and a simple dynamic marking, with a few short horizontal callouts for phrase idea, repeated variation, and ending cadence. Bright neutral indoor lighting, no branding, no decorative text blocks.",
-      "value": "Shows how a short composition is organized on the page with measures, phrase shape, and ending placement, structure that text alone cannot visualize clearly"
+      "value": "Shows how a short composition is organized on the page with measures, phrase shape, and ending placement, structure that text alone cannot visualize clearly",
+      "width": 800,
+      "height": 447,
+      "v": "e67d2859"
     }
   ]
 }

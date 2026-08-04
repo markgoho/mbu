@@ -5,114 +5,177 @@
     {
       "id": "scout-loaded-pack-trailhead",
       "file": "_index.md",
-      "description": "A Scout (age 14-15) standing at a wilderness trailhead with a fully loaded backpacking pack, looking out at a mountain trail stretching into the distance through a forest. The Scout wears clean hiking clothes and sturdy boots, appearing excited and ready to begin the journey. Morning light, green trees, trail sign visible."
+      "description": "A Scout (age 14-15) standing at a wilderness trailhead with a fully loaded backpacking pack, looking out at a mountain trail stretching into the distance through a forest. The Scout wears clean hiking clothes and sturdy boots, appearing excited and ready to begin the journey. Morning light, green trees, trail sign visible.",
+      "width": 800,
+      "height": 447,
+      "v": "54a0eebb"
     },
     {
       "id": "desert-backpacking-canyon",
       "file": "_index.md",
-      "description": "Two Scouts hiking through a red rock desert canyon with tall sandstone walls rising on either side and a strip of bright blue sky above. They wear clean hiking clothes, sun hats, and carry loaded backpacks. The scene is warm-toned with desert light and sandy trail surface."
+      "description": "Two Scouts hiking through a red rock desert canyon with tall sandstone walls rising on either side and a strip of bright blue sky above. They wear clean hiking clothes, sun hats, and carry loaded backpacks. The scene is warm-toned with desert light and sandy trail surface.",
+      "width": 800,
+      "height": 447,
+      "v": "a302b589"
     },
     {
       "id": "base-camp-mountain-lake",
       "file": "_index.md",
-      "description": "A backpacking base camp set up near a clear mountain lake. Two lightweight tents pitched on durable ground, a small cooking area with a backpacking stove, and snow-capped mountain peaks reflected in the lake. Late afternoon golden light. Clean, organized camp with no visible trash."
+      "description": "A backpacking base camp set up near a clear mountain lake. Two lightweight tents pitched on durable ground, a small cooking area with a backpacking stove, and snow-capped mountain peaks reflected in the lake. Late afternoon golden light. Clean, organized camp with no visible trash.",
+      "width": 800,
+      "height": 447,
+      "v": "164082e4"
     },
     {
       "id": "hydration-break-shade",
       "file": "req1.md",
-      "description": "Three Scouts taking a hydration break in the shade of large deciduous trees along a trail. They sit on rocks and logs, drinking water from water bottles and hydration bladder hoses. Backpacks rest on the ground beside them. Clean hiking clothes, dappled sunlight through leaves."
+      "description": "Three Scouts taking a hydration break in the shade of large deciduous trees along a trail. They sit on rocks and logs, drinking water from water bottles and hydration bladder hoses. Backpacks rest on the ground beside them. Clean hiking clothes, dappled sunlight through leaves.",
+      "width": 800,
+      "height": 447,
+      "v": "0a1e8ba2"
     },
     {
       "id": "first-aid-kit-trail",
       "file": "req1.md",
-      "description": "An open backpacking first-aid kit laid out on a flat rock beside a trail. Contents visible: adhesive bandages, moleskin squares, antiseptic wipes, gauze pads, tweezers, medical tape, and nitrile gloves. The kit is a compact red zippered pouch. Natural forest background slightly blurred."
+      "description": "An open backpacking first-aid kit laid out on a flat rock beside a trail. Contents visible: adhesive bandages, moleskin squares, antiseptic wipes, gauze pads, tweezers, medical tape, and nitrile gloves. The kit is a compact red zippered pouch. Natural forest background slightly blurred.",
+      "width": 800,
+      "height": 447,
+      "v": "8319df24"
     },
     {
       "id": "ten-essentials-flatlay",
       "file": "req2a.md",
       "style": "diagram",
-      "description": "A flat-lay arrangement of the ten essential backpacking items on a clean wooden surface, each item clearly labeled with text: topographic map, baseplate compass, LED headlamp, sunscreen bottle, compact first-aid kit, folding knife, waterproof matches, energy bars, water filter, and ultralight emergency bivy sack. Clean white labels with black text, items spaced evenly."
+      "description": "A flat-lay arrangement of the ten essential backpacking items on a clean wooden surface, each item clearly labeled with text: topographic map, baseplate compass, LED headlamp, sunscreen bottle, compact first-aid kit, folding knife, waterproof matches, energy bars, water filter, and ultralight emergency bivy sack. Clean white labels with black text, items spaced evenly.",
+      "width": 800,
+      "height": 447,
+      "v": "348ffb9f"
     },
     {
       "id": "pack-weight-comparison",
       "file": "req2b.md",
       "style": "comparison",
-      "description": "Side-by-side comparison split down the middle. Left side labeled 'Traditional Setup - 35 lbs': a large heavy-looking pack with bulky tent, thick sleeping bag, heavy boots, and oversized cookware. Right side labeled 'Lighter Setup - 18 lbs': a sleek modern pack with compact tent, lightweight quilt, trail runners, and minimal titanium cookware. Clean background, items laid out neatly."
+      "description": "Side-by-side comparison split down the middle. Left side labeled 'Traditional Setup - 35 lbs': a large heavy-looking pack with bulky tent, thick sleeping bag, heavy boots, and oversized cookware. Right side labeled 'Lighter Setup - 18 lbs': a sleek modern pack with compact tent, lightweight quilt, trail runners, and minimal titanium cookware. Clean background, items laid out neatly.",
+      "width": 800,
+      "height": 447,
+      "v": "543ac071"
     },
     {
       "id": "crew-hiking-formation",
       "file": "req3.md",
-      "description": "A small group of five Scouts hiking single file on a mountain trail through alpine meadow terrain. The leader is visible in front setting the pace, the sweep is at the back. They are spaced evenly about 15-20 feet apart. All wear clean hiking clothes and loaded backpacks. Blue sky with a few clouds, wildflowers along the trail."
+      "description": "A small group of five Scouts hiking single file on a mountain trail through alpine meadow terrain. The leader is visible in front setting the pace, the sweep is at the back. They are spaced evenly about 15-20 feet apart. All wear clean hiking clothes and loaded backpacks. Blue sky with a few clouds, wildflowers along the trail.",
+      "width": 800,
+      "height": 447,
+      "v": "2063b0aa"
     },
     {
       "id": "leave-no-trace-campsite",
       "file": "req4a.md",
-      "description": "A pristine backcountry campsite in a pine forest with absolutely no visible impact — no litter, no fire rings, no trampled vegetation. A single lightweight tent is pitched neatly on durable ground (bare earth and pine needles). The scene conveys 'you would never know anyone was here.' Soft morning light filtering through trees."
+      "description": "A pristine backcountry campsite in a pine forest with absolutely no visible impact — no litter, no fire rings, no trampled vegetation. A single lightweight tent is pitched neatly on durable ground (bare earth and pine needles). The scene conveys 'you would never know anyone was here.' Soft morning light filtering through trees.",
+      "width": 800,
+      "height": 447,
+      "v": "4ae6602d"
     },
     {
       "id": "backcountry-hand-washing",
       "file": "req4b.md",
-      "description": "A Scout at a backcountry campsite washing hands using a small squeeze bottle of biodegradable camp soap and water poured from an aluminum pot. The Scout is kneeling on the ground well away from any visible water source. Clean hiking clothes. Forest background with tents visible in the distance."
+      "description": "A Scout at a backcountry campsite washing hands using a small squeeze bottle of biodegradable camp soap and water poured from an aluminum pot. The Scout is kneeling on the ground well away from any visible water source. Clean hiking clothes. Forest background with tents visible in the distance.",
+      "width": 800,
+      "height": 447,
+      "v": "94d37d3b"
     },
     {
       "id": "ideal-campsite-diagram",
       "file": "req4c.md",
       "style": "diagram",
-      "description": "A bird's-eye view diagram of an ideal backcountry campsite layout. The tent area is at center, with labeled arrows showing: cooking area 200 feet downwind, water source (stream) 200 feet away, bear hang tree 200 feet from tent, and cathole area 200 feet from water and camp. Distances labeled with '200 ft' markers. Simple, clean illustration with green for trees, blue for water, and clear labels."
+      "description": "A bird's-eye view diagram of an ideal backcountry campsite layout. The tent area is at center, with labeled arrows showing: cooking area 200 feet downwind, water source (stream) 200 feet away, bear hang tree 200 feet from tent, and cathole area 200 feet from water and camp. Distances labeled with '200 ft' markers. Simple, clean illustration with green for trees, blue for water, and clear labels.",
+      "width": 800,
+      "height": 447,
+      "v": "b7773961"
     },
     {
       "id": "water-treatment-methods",
       "file": "req5.md",
       "style": "comparison",
-      "description": "Four water treatment methods shown in a 2x2 grid, each in its own quadrant with a label. Top-left: 'Pump Filter' showing a hand-pump water filter connected to a water bottle. Top-right: 'Chemical Tablets' showing water purification tablets next to a water bottle. Bottom-left: 'Boiling' showing a pot of water on a small backpacking stove with steam rising. Bottom-right: 'UV Purifier' showing a SteriPEN-style UV device being stirred in a clear water bottle. Clean backgrounds in each quadrant."
+      "description": "Four water treatment methods shown in a 2x2 grid, each in its own quadrant with a label. Top-left: 'Pump Filter' showing a hand-pump water filter connected to a water bottle. Top-right: 'Chemical Tablets' showing water purification tablets next to a water bottle. Bottom-left: 'Boiling' showing a pot of water on a small backpacking stove with steam rising. Bottom-right: 'UV Purifier' showing a SteriPEN-style UV device being stirred in a clear water bottle. Clean backgrounds in each quadrant.",
+      "width": 800,
+      "height": 447,
+      "v": "36edd4bd"
     },
     {
       "id": "topo-map-features",
       "file": "req6.md",
       "style": "diagram",
-      "description": "An illustrated educational diagram of a topographic map showing terrain features. Brown contour lines of varying spacing illustrate steep and gentle slopes. A hilltop is shown with concentric circles. A valley is shown with V-shaped contour lines. A dashed trail line winds through the terrain. A blue stream runs through the valley. Clean, colorful educational illustration style with labeled features."
+      "description": "An illustrated educational diagram of a topographic map showing terrain features. Brown contour lines of varying spacing illustrate steep and gentle slopes. A hilltop is shown with concentric circles. A valley is shown with V-shaped contour lines. A dashed trail line winds through the terrain. A blue stream runs through the valley. Clean, colorful educational illustration style with labeled features.",
+      "width": 800,
+      "height": 447,
+      "v": "a78c12aa"
     },
     {
       "id": "compass-map-navigation",
       "file": "req6.md",
-      "description": "A Scout holding a clear baseplate compass flat over a topographic map that is spread out on a large flat rock. The Scout is orienting the map to match the terrain. Mountain terrain is visible in the background with distinct ridgelines that match features on the map. Clear, bright day. The Scout wears clean hiking clothes."
+      "description": "A Scout holding a clear baseplate compass flat over a topographic map that is spread out on a large flat rock. The Scout is orienting the map to match the terrain. Mountain terrain is visible in the background with distinct ridgelines that match features on the map. Clear, bright day. The Scout wears clean hiking clothes.",
+      "width": 800,
+      "height": 447,
+      "v": "eec27fc8"
     },
     {
       "id": "rain-gear-trail",
       "file": "req7.md",
-      "description": "A Scout hiking along a forest trail wearing full rain gear — a bright waterproof jacket with the hood up, rain pants, and a pack cover on the backpack. Light rain is falling through the tree canopy, with water droplets visible on leaves. The trail is slightly muddy. The Scout looks confident and well-prepared despite the weather."
+      "description": "A Scout hiking along a forest trail wearing full rain gear — a bright waterproof jacket with the hood up, rain pants, and a pack cover on the backpack. Light rain is falling through the tree canopy, with water droplets visible on leaves. The trail is slightly muddy. The Scout looks confident and well-prepared despite the weather.",
+      "width": 800,
+      "height": 447,
+      "v": "141438d0"
     },
     {
       "id": "three-stove-types",
       "file": "req8.md",
       "style": "comparison",
-      "description": "Three backpacking stoves shown side by side on a flat rock surface, each labeled. Left: 'Canister Stove' — a small stove screwed onto a fuel canister. Center: 'Liquid Fuel Stove' — a stove connected to a red fuel bottle via a fuel line. Right: 'Alcohol Stove' — a simple small metal cup stove with a small fuel bottle. Clean rock surface, each stove clearly distinct."
+      "description": "Three backpacking stoves shown side by side on a flat rock surface, each labeled. Left: 'Canister Stove' — a small stove screwed onto a fuel canister. Center: 'Liquid Fuel Stove' — a stove connected to a red fuel bottle via a fuel line. Right: 'Alcohol Stove' — a simple small metal cup stove with a small fuel bottle. Clean rock surface, each stove clearly distinct.",
+      "width": 800,
+      "height": 447,
+      "v": "bf850821"
     },
     {
       "id": "hike-plan-writing",
       "file": "req9.md",
-      "description": "A Scout (age 13-14) sitting at a wooden picnic table writing a hike plan on lined paper. A topographic map is spread out beside the paper, with a compass sitting on top of it. The Scout holds a pencil and is concentrating. Clean Scout activity uniform shirt. Outdoor setting with trees in the background."
+      "description": "A Scout (age 13-14) sitting at a wooden picnic table writing a hike plan on lined paper. A topographic map is spread out beside the paper, with a compass sitting on top of it. The Scout holds a pencil and is concentrating. Clean Scout activity uniform shirt. Outdoor setting with trees in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "37c4249a"
     },
     {
       "id": "pack-adjustment-labeled",
       "file": "req9.md",
       "style": "diagram",
-      "description": "A side-view diagram of a Scout wearing a properly fitted backpacking pack. Labeled arrows point to key adjustment points: 'Hip Belt' on the iliac crest, 'Shoulder Straps' wrapping over the shoulders, 'Load Lifters' at 45-degree angle from top of shoulders to top of pack, 'Sternum Strap' across the chest. A note reads '70-80% of weight on hips.' Clean illustration style with a neutral background."
+      "description": "A side-view diagram of a Scout wearing a properly fitted backpacking pack. Labeled arrows point to key adjustment points: 'Hip Belt' on the iliac crest, 'Shoulder Straps' wrapping over the shoulders, 'Load Lifters' at 45-degree angle from top of shoulders to top of pack, 'Sternum Strap' across the chest. A note reads '70-80% of weight on hips.' Clean illustration style with a neutral background.",
+      "width": 800,
+      "height": 447,
+      "v": "9f8dd62c"
     },
     {
       "id": "backpackers-mountain-trail",
       "file": "req10.md",
-      "description": "A small crew of four Scouts hiking along a scenic mountain trail with fully loaded backpacks. Wildflowers line both sides of the narrow trail. Distant mountain peaks are visible under a partly cloudy sky. The Scouts are spaced out in single file, moving confidently through the landscape. Clean hiking clothes, bright daylight."
+      "description": "A small crew of four Scouts hiking along a scenic mountain trail with fully loaded backpacks. Wildflowers line both sides of the narrow trail. Distant mountain peaks are visible under a partly cloudy sky. The Scouts are spaced out in single file, moving confidently through the landscape. Clean hiking clothes, bright daylight.",
+      "width": 800,
+      "height": 447,
+      "v": "b1298fd0"
     },
     {
       "id": "trek-planning-spread",
       "file": "req11.md",
-      "description": "A planning workspace on a large table showing all the elements of a five-day trek plan: a topographic map with a route marked in red, a handwritten daily schedule on lined paper, a food list with checkboxes, and gear sorted into small piles on the table. The scene is organized and systematic. Indoor setting with natural light from a window."
+      "description": "A planning workspace on a large table showing all the elements of a five-day trek plan: a topographic map with a route marked in red, a handwritten daily schedule on lined paper, a food list with checkboxes, and gear sorted into small piles on the table. The scene is organized and systematic. Indoor setting with natural light from a window.",
+      "width": 800,
+      "height": 447,
+      "v": "dcb6a4b3"
     },
     {
       "id": "journal-writing-campfire",
       "file": "req11.md",
-      "description": "A Scout sitting on a log at a backcountry campsite in the evening, writing in a small notebook by the warm light of a headlamp. The Scout's backpack leans against a nearby tree. A tent is pitched in the background. The sky shows sunset colors fading to deep blue. Peaceful, contemplative scene. Clean hiking clothes."
+      "description": "A Scout sitting on a log at a backcountry campsite in the evening, writing in a small notebook by the warm light of a headlamp. The Scout's backpack leans against a nearby tree. A tent is pitched in the background. The sky shows sunset colors fading to deep blue. Peaceful, contemplative scene. Clean hiking clothes.",
+      "width": 800,
+      "height": 447,
+      "v": "fc73141a"
     }
   ]
 }

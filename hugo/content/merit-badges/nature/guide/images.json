@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Annotated outdoor study scene showing a Scout wearing a clean Scout uniform shirt kneeling beside a pond edge with a field notebook, hand lens, and field guide. Short callouts identify the notebook for recording observations, hand lens for close detail, field guide for comparison, and pond-edge habitat clues such as emergent plants and shallow water. Realistic lighting, natural habitat, minimal horizontal labels only, no branding or logos.",
-      "value": "Shows the core field-study tools and how they are used together in one observation setting, a relationship text alone cannot make instantly clear"
+      "value": "Shows the core field-study tools and how they are used together in one observation setting, a relationship text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "9e5038a9"
     },
     {
       "id": "plant-animal-connections-web",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational ecosystem diagram showing one central native plant connected to several animals with simple arrows and short labels: a deer browsing leaves, a caterpillar eating foliage, a songbird nesting in branches, and a rabbit using ground cover for shelter. Additional small visual cues show oxygen release and shaded cooler ground beneath the plant. White or pale background, simple horizontal labels only, no branding.",
-      "value": "Shows food, shelter, and habitat-support roles in one visual web so the reader can see multiple plant-to-animal connections at once"
+      "value": "Shows food, shelter, and habitat-support roles in one visual web so the reader can see multiple plant-to-animal connections at once",
+      "width": 800,
+      "height": 447,
+      "v": "5830ed14"
     },
     {
       "id": "backyard-bird-station-observation",
@@ -24,7 +30,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Annotated realistic backyard scene with a Scout in a clean Scout uniform shirt sitting at a small observation spot with notebook and binoculars while watching a feeder and birdbath. Different birds are using the feeder, the birdbath, and nearby cover. Short callouts label feeder, birdbath, nearby shrub cover, and observation notes area. Natural morning light, tidy habitat, minimal horizontal labels only, no branding or logos.",
-      "value": "Shows how a bird-friendly setup, nearby cover, and record-keeping station work together in a month-long observation project"
+      "value": "Shows how a bird-friendly setup, nearby cover, and record-keeping station work together in a month-long observation project",
+      "width": 800,
+      "height": 447,
+      "v": "9531da75"
     },
     {
       "id": "frog-call-and-egg-mass-guide",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Split educational diagram. Left panel shows a frog calling from wetland vegetation with simple sound-wave marks and habitat clues such as shallow water, cattails, and muddy edge. Right panel shows close-up examples of a gelatinous frog egg mass, a snake shed skin, and a burrow entrance, each with short horizontal labels. Clean visual layout, minimal text, no branding.",
-      "value": "Shows the distinct visual and habitat clues for frog calls, egg masses, sheds, and burrows so readers can identify signs they might otherwise misinterpret"
+      "value": "Shows the distinct visual and habitat clues for frog calls, egg masses, sheds, and burrows so readers can identify signs they might otherwise misinterpret",
+      "width": 800,
+      "height": 447,
+      "v": "96145303"
     },
     {
       "id": "wild-plant-identification-clues",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean field-identification diagram centered on one wild flowering plant with short horizontal labels pointing to leaf arrangement, leaf edge, vein pattern, flower shape, bark or stem texture, and surrounding habitat notes. A small open field notebook beside the plant shows matching sketch marks and observation bullets. Pale background, clear leader lines, no branding.",
-      "value": "Shows which plant features to compare on the same specimen, making field identification clues easier to organize than text alone"
+      "value": "Shows which plant features to compare on the same specimen, making field identification clues easier to organize than text alone",
+      "width": 800,
+      "height": 447,
+      "v": "3abf0a6f"
     },
     {
       "id": "plant-photo-catalog-layout",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Educational layout diagram of a sample plant photo catalog page with four image areas: whole plant view, close-up leaf view, close-up seed or fruit view, and one photo with a ruler for scale. Small side areas show date, habitat, and location notes. Clean page mockup with short horizontal labels only, no dense text, no branding.",
-      "value": "Shows how multiple photo angles, scale reference, and habitat notes fit together into a useful catalog page, a structure text alone cannot demonstrate clearly"
+      "value": "Shows how multiple photo angles, scale reference, and habitat notes fit together into a useful catalog page, a structure text alone cannot demonstrate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "8789c452"
     },
     {
       "id": "soil-and-rock-comparison-board",
@@ -56,7 +74,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Annotated top-down field-study board on an outdoor table showing three clearly separated soil samples labeled sandy, clay-rich, and humus-rich, plus five different local rocks arranged with visible contrasts in grain, layering, and shape. A Scout hand in a clean Scout uniform sleeve points to texture differences. Short horizontal callouts identify gritty texture, sticky texture, dark organic matter, layered rock, and rounded stream rock. Natural daylight, minimal labels, no branding.",
-      "value": "Shows visible texture and structure differences among soil types and rock samples, comparisons that are much easier to learn visually than from prose alone"
+      "value": "Shows visible texture and structure differences among soil types and rock samples, comparisons that are much easier to learn visually than from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "280b2c3f"
     }
   ]
 }

@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean educational comparison diagram showing four welding process setups side by side: stick welding with power source, electrode holder, rod, work clamp, and weld puddle; MIG welding with machine, wire spool, gun, gas cylinder, regulator, and work clamp; TIG welding with tungsten torch, filler rod, gas cylinder, and foot control; oxy-fuel setup with oxygen cylinder, fuel gas cylinder, regulators, hoses, torch, and flame. Minimal workshop background, horizontal labels only, no branding, no logos, no decorative text.",
-      "value": "Shows the major parts and physical differences among four welding setups in one glance — spatial equipment relationships that are hard to compare in prose"
+      "value": "Shows the major parts and physical differences among four welding setups in one glance — spatial equipment relationships that are hard to compare in prose",
+      "width": 800,
+      "height": 447,
+      "v": "b7b4b450"
     },
     {
       "id": "welding-ppe-check",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Realistic instructional photo of a teenager in a clean Scout uniform adapted safely for welding work area: welding helmet lifted, safety glasses visible underneath, heavy welding gloves, flame-resistant long sleeves over uniform shirt, long pants, and leather work boots. Clear callouts point to eye protection, gloves, sleeves, pants, and boots. Welding booth setting, no readable brand text, no logos, no words on clothing.",
-      "value": "Shows a full correctly dressed welding setup at once, letting the reader see coverage gaps and layer order that a checklist alone cannot make obvious"
+      "value": "Shows a full correctly dressed welding setup at once, letting the reader see coverage gaps and layer order that a checklist alone cannot make obvious",
+      "width": 800,
+      "height": 447,
+      "v": "26e70e31"
     },
     {
       "id": "welding-puddle-protection",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Educational cutaway welding diagram showing base metal plates, electrode, arc, molten weld pool, filler metal addition, shielding gas cloud on one side and flux/slag protection concept on another, with solidified bead behind the puddle. Simple arrows and short labels only: electrode, arc, weld pool, slag, shielding gas, base metal, weld bead. White background, textbook style, no branding.",
-      "value": "Shows how the molten weld pool, filler, and shielding interact at the same moment — a dynamic relationship that text descriptions make hard to visualize"
+      "value": "Shows how the molten weld pool, filler, and shielding interact at the same moment — a dynamic relationship that text descriptions make hard to visualize",
+      "width": 800,
+      "height": 447,
+      "v": "1942eaa9"
     },
     {
       "id": "cutting-methods-compare",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Side-by-side educational diagram comparing metal cutting categories. Left panel: mechanical cutting examples including bandsaw, shear, and abrasive cutoff wheel cutting steel. Right panel: thermal cutting examples including oxy-fuel torch and plasma torch cutting plate. Each panel has a few short horizontal labels naming the tools only. Clean industrial illustration, no long text blocks, no branding.",
-      "value": "Lets the reader instantly compare representative mechanical and thermal tools and see how each interacts with metal — a contrast much faster to grasp visually than by reading lists"
+      "value": "Lets the reader instantly compare representative mechanical and thermal tools and see how each interacts with metal — a contrast much faster to grasp visually than by reading lists",
+      "width": 800,
+      "height": 447,
+      "v": "b17a98d8"
     },
     {
       "id": "welding-station-setup",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Organized welding station diagram prepared for counselor inspection: welding machine, secured upright gas cylinder with chain, regulator and flowmeter, welding leads, work clamp attached to clean metal, filler materials laid out, helmet and gloves nearby, ventilation hood visible, clear floor space, no combustibles. Short labels only for major components. Neat shop layout, no logos, no branding.",
-      "value": "Shows the full physical layout of a safe ready-to-inspect welding station, including where major components sit relative to one another — spatial planning that text alone cannot convey clearly"
+      "value": "Shows the full physical layout of a safe ready-to-inspect welding station, including where major components sit relative to one another — spatial planning that text alone cannot convey clearly",
+      "width": 800,
+      "height": 447,
+      "v": "1aded296"
     },
     {
       "id": "practice-bead-plate",
@@ -48,7 +63,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Realistic close-up photo of a small steel practice plate covered with several side-by-side weld beads. Overlaid instructional callouts highlight one even bead with consistent spacing, one bead with overlap problem, and one bead with wavering travel. Clean metalwork bench background, short labels only, no brand text.",
-      "value": "Shows what consistent bead spacing looks like versus common beginner errors on the same plate — visual differences in weld appearance that are difficult to teach with words alone"
+      "value": "Shows what consistent bead spacing looks like versus common beginner errors on the same plate — visual differences in weld appearance that are difficult to teach with words alone",
+      "width": 800,
+      "height": 447,
+      "v": "71b40188"
     }
   ]
 }

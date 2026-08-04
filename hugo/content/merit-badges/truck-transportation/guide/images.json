@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Simple step-by-step intermodal freight diagram showing a sealed ocean container moving in sequence from overseas factory to port, container ship, rail yard, truck chassis, regional warehouse, and retail store, with each stage visually distinct and connected by arrows",
-      "value": "Shows the full multi-step intermodal path and handoff sequence in one spatial visual that text alone cannot convey as clearly"
+      "value": "Shows the full multi-step intermodal path and handoff sequence in one spatial visual that text alone cannot convey as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "bc145217"
     },
     {
       "id": "truck-blind-spots-comparison",
@@ -16,7 +19,10 @@
       "style": "comparison",
       "verb_family": "describe",
       "description": "Two-panel educational comparison image: left panel is a top-down tractor-trailer with large blind-spot zones shaded around front sides rear and passenger side, right panel shows safe car positions around the truck with clear open-space buffers and no decorative background",
-      "value": "Contrasts unsafe blind-spot zones with safe vehicle positions around a truck in a way that spatial text descriptions cannot teach as quickly"
+      "value": "Contrasts unsafe blind-spot zones with safe vehicle positions around a truck in a way that spatial text descriptions cannot teach as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "9b9e2733"
     },
     {
       "id": "palletized-freight-prep-diagram",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Labeled diagram of a properly prepared palletized freight shipment with stacked cartons on a pallet, corner protection, shrink wrap, shipping label placement, and simple measurement callouts for length width height and total weight",
-      "value": "Shows how a shipment should be physically built and labeled on a pallet, including protective elements and measurement points that are hard to picture from prose alone"
+      "value": "Shows how a shipment should be physically built and labeled on a pallet, including protective elements and measurement points that are hard to picture from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "25416bd4"
     },
     {
       "id": "bill-of-lading-labeled-example",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean sample bill of lading document layout with major fields visually highlighted, including shipper, consignee, destination, shipment description, weight, freight charges, and driver receipt copy, using large readable field blocks and minimal text",
-      "value": "Shows where the most important bill-of-lading fields appear on the document, something a verbal definition alone cannot make instantly recognizable"
+      "value": "Shows where the most important bill-of-lading fields appear on the document, something a verbal definition alone cannot make instantly recognizable",
+      "width": 800,
+      "height": 447,
+      "v": "5278de4b"
     }
   ]
 }

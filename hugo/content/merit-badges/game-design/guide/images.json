@@ -7,133 +7,190 @@
       "file": "req1a.md",
       "style": "comparison",
       "description": "Four-panel comparison layout showing the same game-analysis categories across four different media: a tabletop board game with board and pawns, a card game with hands of cards at a table, a sport played on a field with cones and players in motion, and a digital game on a monitor with controller. Each panel is visually distinct and emphasizes the different resources, play spaces, and player interaction styles. Educational side-by-side composition, clean and uncluttered, no branding or long text.",
-      "value": "Side-by-side visual comparison of four game media with their different physical setups and interaction styles — cross-medium differences are much easier to grasp visually than through text alone"
+      "value": "Side-by-side visual comparison of four game media with their different physical setups and interaction styles — cross-medium differences are much easier to grasp visually than through text alone",
+      "width": 800,
+      "height": 447,
+      "v": "fdc64ae8"
     },
     {
       "id": "play-value-four-types-grid",
       "file": "req1b.md",
       "style": "comparison",
       "description": "Four-panel educational comparison showing four types of play value through clear scenes: challenge value as a player intensely planning a move in a strategy board game, social value as friends laughing around a party card game, story or fantasy value as players immersed in a role-playing adventure map and character sheets, and discovery or creativity value as a player building and experimenting with modular game pieces. Clear visual contrast in mood and activity, minimal text, no branding.",
-      "value": "Shows four distinct emotional and activity patterns of play value side by side — the contrast between challenge, social, story, and creativity is more immediate visually than in prose"
+      "value": "Shows four distinct emotional and activity patterns of play value side by side — the contrast between challenge, social, story, and creativity is more immediate visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "d2b86a1b"
     },
     {
       "id": "game-design-terms-map",
       "file": "req2.md",
       "style": "diagram",
       "description": "Clean educational diagram organized as a central game board shape surrounded by grouped concept boxes for core game design terms. Short labels only: story, setting, characters, play sequence, level design, interface, difficulty, balance, depth, pace, replay value, age appropriateness, single-player/multiplayer, cooperative/competitive, turn-based/real-time, strategy/reflex/chance, abstract/thematic. Use horizontal labels in tidy grouped clusters with connecting lines, lots of whitespace, text-light layout, modern educational diagram style.",
-      "value": "A grouped visual map of how major design terms relate to one another — the conceptual clustering and relationships are easier to remember when seen spatially"
+      "value": "A grouped visual map of how major design terms relate to one another — the conceptual clustering and relationships are easier to remember when seen spatially",
+      "width": 800,
+      "height": 447,
+      "v": "bf83f7f9"
     },
     {
       "id": "intellectual-property-game-assets-breakdown",
       "file": "req3.md",
       "style": "diagram",
       "description": "Educational diagram of a fictional game project broken into protectable parts. Show a board game box, game board, cards, character art, logo, rulebook pages, soundtrack icon, source code window, and invention prototype, with short labels identifying copyright, trademark, trade secret, and patent in separate grouped callouts. Self-structuring flat-lay layout, no real brands, no legal logos, no dense text.",
-      "value": "Breaks a game into visible asset categories tied to different kinds of intellectual property protection — this legal distinction is clearer when the protected elements are seen side by side"
+      "value": "Breaks a game into visible asset categories tied to different kinds of intellectual property protection — this legal distinction is clearer when the protected elements are seen side by side",
+      "width": 800,
+      "height": 447,
+      "v": "da75aed4"
     },
     {
       "id": "baseline-game-observation-notes",
       "file": "req4a.md",
       "style": "annotated-photo",
       "description": "Realistic tabletop playtest scene with a small group of teenagers playing a simple board or card game at a table while one observer records notes in a notebook. Subtle educational callouts identify observable features such as player choices, pace, fairness, excitement, and confusion moments. Clean Scout meeting environment, Scouts in clean uniforms seated around the table, no branded text, no clutter, annotations limited to a few short labels.",
-      "value": "Shows what a baseline playtest observation session actually looks like, including where a designer watches player behavior and takes notes — the observation setup and focus points are practical details best shown visually"
+      "value": "Shows what a baseline playtest observation session actually looks like, including where a designer watches player behavior and takes notes — the observation setup and focus points are practical details best shown visually",
+      "width": 800,
+      "height": 447,
+      "v": "f48eb5a9"
     },
     {
       "id": "rule-change-levers-diagram",
       "file": "req4b.md",
       "style": "diagram",
       "description": "Educational lever-style system diagram for game design showing a central game state surrounded by simple labeled control levers for scoring, time limit, rounds, movement, team size, allowed actions, hidden information, and win condition. Each lever is visually distinct and points toward the center game system, with short horizontal labels only. Clean, text-light, modern educational diagram with strong shapes and spacing.",
-      "value": "Shows rule-change levers as system controls affecting the whole game — the idea of individual design inputs shifting a central system is more intuitive as a diagram than as a list"
+      "value": "Shows rule-change levers as system controls affecting the whole game — the idea of individual design inputs shifting a central system is more intuitive as a diagram than as a list",
+      "width": 800,
+      "height": 447,
+      "v": "c324a298"
     },
     {
       "id": "three-playtest-results-comparison",
       "file": "req4c.md",
       "style": "comparison",
       "description": "Three-column comparison showing the same game tested under three different rule changes. Each column shows players around a table with visibly different reactions and behaviors: one version with faster, more rushed play, one with more teamwork and discussion, and one with confusion or imbalance. Clear side-by-side educational composition, same base game components in each column so the player behavior differences stand out. No branding, minimal text.",
-      "value": "Compares how three separate rule changes create visibly different player behaviors and emotions — the contrast across test sessions is far easier to understand visually than from summaries alone"
+      "value": "Compares how three separate rule changes create visibly different player behaviors and emotions — the contrast across test sessions is far easier to understand visually than from summaries alone",
+      "width": 800,
+      "height": 447,
+      "v": "1e48de57"
     },
     {
       "id": "prediction-vs-results-analysis-board",
       "file": "req4d.md",
       "style": "diagram",
       "description": "Structured educational analysis board with three vertical sections labeled by very short headings: original game, predicted effect, actual result. Use sticky-note style boxes, arrows, and icons showing differences in speed, fairness, teamwork, and confusion. Keep text extremely short and horizontal, with a notebook-and-pencil aesthetic suggesting post-playtest reflection. Clean layout, no clutter.",
-      "value": "Shows the side-by-side analytical structure of comparing baseline, prediction, and outcome — that comparison framework is much easier to internalize when arranged visually"
+      "value": "Shows the side-by-side analytical structure of comparing baseline, prediction, and outcome — that comparison framework is much easier to internalize when arranged visually",
+      "width": 800,
+      "height": 447,
+      "v": "fcb42d26"
     },
     {
       "id": "vision-statement-design-planner",
       "file": "req5a.md",
       "style": "illustrated",
       "description": "Illustrated overhead view of a game designer's planning notebook page with clearly separated sections for vision statement, medium, player format, objective, theme, setting, story, and characters. Include sketched arrows, icons, and small example thumbnails for board game, card game, and field game possibilities. Organized, inviting, educational, handwritten-planner feel without dense readable text.",
-      "value": "Shows how an early game concept can be organized into core planning categories on one page — the structure of a design vision is easier to understand as a visual planner layout"
+      "value": "Shows how an early game concept can be organized into core planning categories on one page — the structure of a design vision is easier to understand as a visual planner layout",
+      "width": 800,
+      "height": 447,
+      "v": "b504e829"
     },
     {
       "id": "core-appeal-player-motivation-grid",
       "file": "req5b.md",
       "style": "comparison",
       "description": "Educational six-panel grid showing different reasons players want to play games: challenge, competition, cooperation, story, creativity, and humor or chaos. Each panel features a distinct scene and emotion, such as intense concentration, triumphant competition, collaborative planning, immersive storytelling, building or inventing, and laughing surprise. Consistent art direction, clear emotional contrast, minimal or no text.",
-      "value": "Visually compares several kinds of player motivation and emotional payoff — the different appeals are more memorable when seen as distinct player reactions rather than just listed"
+      "value": "Visually compares several kinds of player motivation and emotional payoff — the different appeals are more memorable when seen as distinct player reactions rather than just listed",
+      "width": 800,
+      "height": 447,
+      "v": "28be6766"
     },
     {
       "id": "prototype-rules-and-resources-layout",
       "file": "req5c.md",
       "style": "diagram",
       "description": "Top-down diagram of a simple prototype game laid out on a table with labeled categories for setup area, player actions, turn order, score tracking, components, and resource pool. Use paper cards, dice, tokens, notebook notes, and arrows showing the core loop of play. Clean educational composition, short labels only, easy-to-follow structure, no branding.",
-      "value": "Shows how rules and resources connect into a playable loop with real components — the system structure is clearer as a spatial layout than as separate written definitions"
+      "value": "Shows how rules and resources connect into a playable loop with real components — the system structure is clearer as a spatial layout than as separate written definitions",
+      "width": 800,
+      "height": 447,
+      "v": "adbf1e4d"
     },
     {
       "id": "game-elements-sketch-sheet",
       "file": "req5d.md",
       "style": "illustrated",
       "description": "Illustrated sketch sheet showing rough design drawings for multiple game elements: a board section, several cards, tokens, a score tracker, a player aid, and an optional menu screen mockup. Pencil-style lines, clear callouts to functional areas, emphasis on layout and information flow rather than polished art. Educational design-sketch aesthetic, no branding, minimal labels.",
-      "value": "Shows how rough sketches communicate function, layout, and interaction before final art exists — that design purpose is best understood by seeing the prototype drawings themselves"
+      "value": "Shows how rough sketches communicate function, layout, and interaction before final art exists — that design purpose is best understood by seeing the prototype drawings themselves",
+      "width": 800,
+      "height": 447,
+      "v": "751fe57f"
     },
     {
       "id": "prototype-build-materials-and-safety",
       "file": "req6a.md",
       "style": "comparison",
       "description": "Two-part educational comparison. Left side shows a tabletop prototype built from paper cards, sticky notes, tokens, cones, and handwritten labels. Right side shows a physical play area with clearly marked boundaries, safe spacing, and equipment placement for an active game prototype. Teens in clean Scout uniforms where appropriate indoors; outdoor active side uses practical athletic clothing if needed. Minimal text, practical educational focus.",
-      "value": "Contrasts prototype building materials with safe play-area setup for physical testing — these practical preparation details are far easier to learn from a visual example than from description alone"
+      "value": "Contrasts prototype building materials with safe play-area setup for physical testing — these practical preparation details are far easier to learn from a visual example than from description alone",
+      "width": 800,
+      "height": 447,
+      "v": "f05d4a11"
     },
     {
       "id": "iteration-cycle-playtest-loop",
       "file": "req6bc.md",
       "style": "diagram",
       "description": "Clear circular iteration diagram for game design with an obvious starting point at the top labeled Step 1 prototype, followed clockwise by Step 2 playtest, Step 3 observe problems, Step 4 revise rules, and Step 5 retest. Around the circle, include small icons for confusion, exploit, dead end, balance issue, and notebook updates. Use simple arrows and horizontal labels only, bold educational style, no dense text. Make the first stage clearly read as step 1, not step 2.",
-      "value": "Shows the repeated loop of testing and revision as a continuous cycle — iteration is a process concept that is much easier to grasp in circular visual form"
+      "value": "Shows the repeated loop of testing and revision as a continuous cycle — iteration is a process concept that is much easier to grasp in circular visual form",
+      "width": 800,
+      "height": 447,
+      "v": "14cfc93f"
     },
     {
       "id": "instruction-sheet-structure-example",
       "file": "req7a.md",
       "style": "diagram",
       "description": "Structured example layout of a beginner-friendly game instruction sheet, with clearly separated sections for objective, materials, setup, turn sequence, end condition, and win condition. Use boxes, numbered sections, icons, and a clean reading flow from top to bottom. Keep visible text short and generic, emphasizing layout and clarity rather than paragraphs.",
-      "value": "Demonstrates how a rule sheet should be organized in player order — the information structure is easier to learn from a visible page layout than from advice alone"
+      "value": "Demonstrates how a rule sheet should be organized in player order — the information structure is easier to learn from a visible page layout than from advice alone",
+      "width": 800,
+      "height": 447,
+      "v": "841da542"
     },
     {
       "id": "blind-playtest-observation-scene",
       "file": "req7bc.md",
       "style": "annotated-photo",
       "description": "Realistic blind playtest scene with a new group of teenagers attempting to set up and play a prototype game from written instructions while the designer watches silently from a short distance and writes notes. A few subtle callouts identify setup confusion, rule misunderstanding, component confusion, and emotional response. Clean educational environment, no branding, annotations limited and brief.",
-      "value": "Shows the difference between teaching a game and silently observing a blind test, including the specific moments a designer should watch for — those observation targets are best conveyed visually"
+      "value": "Shows the difference between teaching a game and silently observing a blind test, including the specific moments a designer should watch for — those observation targets are best conveyed visually",
+      "width": 800,
+      "height": 447,
+      "v": "6fa06a3d"
     },
     {
       "id": "game-development-role-pipeline",
       "file": "req8a.md",
       "style": "diagram",
       "description": "Pipeline diagram showing major game development roles arranged along a project flow: concept, prototyping, production, testing, polish, release. Include simple role icons and short labels for designer, programmer, artist, writer, producer, audio, QA, and UX. Clean professional educational style, horizontal labels only, no company logos or branding.",
-      "value": "Shows how different game industry roles fit into the larger development pipeline — that process relationship is easier to understand as a visual flow than from a paragraph description"
+      "value": "Shows how different game industry roles fit into the larger development pipeline — that process relationship is easier to understand as a visual flow than from a paragraph description",
+      "width": 800,
+      "height": 447,
+      "v": "607b6707"
     },
     {
       "id": "educator-skills-ladder",
       "file": "req8b.md",
       "style": "diagram",
       "description": "Educational skills-ladder diagram showing how learners grow in game development through stages such as brainstorming, clear rules writing, prototyping, testing, visual communication, coding or logic, collaboration, feedback, and finishing projects. Use simple icons, short horizontal labels, and an upward progression layout. Friendly classroom design aesthetic, minimal text.",
-      "value": "Shows how classroom skills build on one another over time — the progression from beginner habits to stronger design practice is more intuitive as a visual ladder"
+      "value": "Shows how classroom skills build on one another over time — the progression from beginner habits to stronger design practice is more intuitive as a visual ladder",
+      "width": 800,
+      "height": 447,
+      "v": "2f9dbbde"
     },
     {
       "id": "balance-and-playtesting-connections",
       "file": "extended-learning.md",
       "style": "comparison",
       "description": "Educational comparison showing two sides of game balance and testing. One side shows an unbalanced game state with one dominant strategy and disengaged players; the other shows a healthier balanced game with multiple viable choices and engaged players. Include visual hints of tabletop and digital design borrowing from each other, such as cards, tokens, interface mockups, and playtest notes. Clear, concept-driven composition, no branding.",
-      "value": "Shows the practical difference between unbalanced and well-tested game systems, including player engagement and choice diversity — these abstract design outcomes are easier to understand through visual contrast"
+      "value": "Shows the practical difference between unbalanced and well-tested game systems, including player engagement and choice diversity — these abstract design outcomes are easier to understand through visual contrast",
+      "width": 800,
+      "height": 447,
+      "v": "8d4af081"
     }
   ]
 }

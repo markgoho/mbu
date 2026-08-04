@@ -7,7 +7,10 @@
       "file": "_index.md",
       "style": "diagram",
       "description": "Clean four-panel educational collage showing four nuclear science domains with minimal horizontal labels only: a reactor control room with screens and operators, a medical imaging scanner with patient table, a particle accelerator tunnel with beamline structure, and a cloud chamber view with visible particle tracks. Balanced layout, realistic but diagram-like clarity, no branding, no logos, no decorative text.",
-      "value": "Shows the four major domains of nuclear science side by side so the reader can immediately see the field's range in a way text alone cannot convey"
+      "value": "Shows the four major domains of nuclear science side by side so the reader can immediately see the field's range in a way text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "d1f69aaa"
     },
     {
       "id": "isotope-model-example",
@@ -15,7 +18,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Educational diagram showing three side-by-side isotope models of the same element with clear colored spheres for protons, neutrons, and electrons. Each model includes short horizontal labels for proton count, neutron count, electron count, atomic number, mass number, and isotope notation. Clean white background, simple leader lines, no dense text, no branding.",
-      "value": "Shows how three isotopes of one element differ only in neutron count while sharing the same proton count, a structural comparison that is much easier to grasp visually"
+      "value": "Shows how three isotopes of one element differ only in neutron count while sharing the same proton count, a structural comparison that is much easier to grasp visually",
+      "width": 800,
+      "height": 447,
+      "v": "5601e105"
     },
     {
       "id": "electroscope-parts",
@@ -23,7 +29,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean labeled diagram of a simple electroscope with metal ball, conducting rod, insulating stopper, glass jar, and two foil leaves spread apart. Short horizontal labels only, clear leader lines, pale background, simple educational style, no branding.",
-      "value": "Shows the spatial relationship of the electroscope parts and the foil leaves' separated position, which text alone cannot communicate as clearly"
+      "value": "Shows the spatial relationship of the electroscope parts and the foil leaves' separated position, which text alone cannot communicate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "0f0a5339"
     },
     {
       "id": "cloud-chamber-track-types",
@@ -31,7 +40,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Educational cloud chamber illustration showing a dark chamber floor with several visible white condensation tracks of different styles: one short thick track, one long thin track, and one bent or branching track. Minimal horizontal labels identify track appearance only, not advanced particle names. High contrast, clean layout, no branding.",
-      "value": "Shows the visible differences between common cloud chamber track styles so readers can recognize what varying particle paths look like at a glance"
+      "value": "Shows the visible differences between common cloud chamber track styles so readers can recognize what varying particle paths look like at a glance",
+      "width": 800,
+      "height": 447,
+      "v": "95711157"
     },
     {
       "id": "xray-room-layout",
@@ -39,7 +51,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Top-down educational floor plan of an X-ray room showing X-ray unit, patient table, operator position behind protective barrier, control area, beam direction, and room door. Clean simple layout with short horizontal labels only, clear spacing, pale background, no branding or logos.",
-      "value": "Shows the operator, patient, machine, and shielding positions in one spatial view, a room relationship that prose alone cannot teach effectively"
+      "value": "Shows the operator, patient, machine, and shielding positions in one spatial view, a room relationship that prose alone cannot teach effectively",
+      "width": 800,
+      "height": 447,
+      "v": "8d0b256a"
     },
     {
       "id": "fission-chain-reaction-diagram",
@@ -47,7 +62,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Step-by-step educational diagram showing an incoming neutron striking a heavy nucleus, the nucleus splitting into two smaller nuclei, released energy, and multiple outgoing neutrons continuing the chain reaction. Final small panel shows control rods inserted among fuel elements to suggest control of the reaction. Short horizontal labels only, clean arrows, simple scientific layout, no branding.",
-      "value": "Shows the sequence of fission and the branching growth of a chain reaction in one visual flow, making the process easier to understand than text alone"
+      "value": "Shows the sequence of fission and the branching growth of a chain reaction in one visual flow, making the process easier to understand than text alone",
+      "width": 800,
+      "height": 447,
+      "v": "c3705fc7"
     }
   ]
 }

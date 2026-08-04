@@ -7,9 +7,11 @@
   {{ $badge := .Parent }}
   {{ $json := index hugo.Data "merit-badges" (path.Base $badge.File.Dir) }}
   {{/* Get badge image for Pagefind search results */}}
-  {{ $badgeImage := $badge.Resources.GetMatch "*-merit-badge.avif" }}
-  {{ if not $badgeImage }}
-    {{ $badgeImage = $badge.Resources.GetMatch "*-merit-badge-card.avif" }}
+  {{ $slug := path.Base $badge.File.Dir }}
+  {{ $emblemMeta := index (index hugo.Data "badge-images").badges $slug }}
+  {{ $badgeImageURL := "" }}
+  {{ with $emblemMeta }}
+    {{ $badgeImageURL = partial "imagekit/url.html" (dict "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug) "tr" "w-600" "v" .v) }}
   {{ end }}
   {{ $guide := $badge.GetPage "guide" }}
 
@@ -32,12 +34,8 @@
 
       <div class="requirements" data-pagefind-body>
         {{/* Hidden image for Pagefind search results */}}
-        {{ with $badgeImage }}
-          <img
-            src="{{ .RelPermalink }}"
-            alt=""
-            data-pagefind-meta="image[src]"
-            hidden />
+        {{ with $badgeImageURL }}
+          <img src="{{ . }}" alt="" data-pagefind-meta="image[src]" hidden />
         {{ end }}
         {{ if $json.eagle_required }}
           <span data-pagefind-meta="eagle_required:true" hidden>

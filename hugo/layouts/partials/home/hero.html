@@ -12,13 +12,14 @@
   checks that radio natively, no script involved. Search lives in
   home/search.html, below the fold, not in the hero.
 */ -}}
+{{ $badgeImages := index hugo.Data "badge-images" }}
+
 {{ $badges := slice
   (dict
     "slug" "camping"
     "icon" "tent"
     "title" "Camping"
     "href" "/merit-badges/camping/"
-    "img" ((.Site.GetPage "/merit-badges/camping").Resources.GetMatch "*-merit-badge.avif")
     "alt" "Camping gear — backpack, hiking boots, and a trail map — laid out on a picnic table"
     "leadPre" "Dive deep into the wilderness with the "
     "leadBadge" "Camping Merit Badge"
@@ -29,7 +30,6 @@
     "icon" "game-controller"
     "title" "Competitive Gaming"
     "href" "/merit-badges/competitive-gaming/"
-    "img" ((.Site.GetPage "/merit-badges/competitive-gaming").Resources.GetMatch "*-merit-badge.avif")
     "alt" "A gaming desk with controllers, a mechanical keyboard, a headset, and an esports strategy notebook"
     "leadPre" "Level up your strategy with the "
     "leadBadge" "Competitive Gaming Merit Badge"
@@ -40,7 +40,6 @@
     "icon" "flame"
     "title" "Wildland Fire Management"
     "href" "/merit-badges/wildland-fire-management/"
-    "img" ((.Site.GetPage "/merit-badges/wildland-fire-management").Resources.GetMatch "*-merit-badge.avif")
     "alt" "Wildland firefighting gear — hard hat, gloves, radio, and a fire containment map — on a table overlooking a forested ridge"
     "leadPre" "Get hands-on with the "
     "leadBadge" "Wildland Fire Management Merit Badge"
@@ -63,7 +62,17 @@
 
 <section class="home-hero hero-d">
   <div class="hero-d__bg">
-    <img src="/prototype-hero-image.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" loading="eager" />
+    {{ partial "imagekit/img.html" (dict
+      "path" "/mbu-assets/site/hero"
+      "v" $badgeImages.site.hero.v
+      "maxWidth" 1600
+      "width" 1920
+      "height" 1080
+      "alt" ""
+      "sizes" "100vw"
+      "fetchpriority" "high"
+      "loading" "eager"
+    ) }}
   </div>
 
   <div class="hero-d__inner">
@@ -117,13 +126,19 @@
     <div class="hero-d__image-col">
       <div class="hero-d__image-wrap">
         {{ range $i, $b := $badges }}
-          {{ with $b.img }}
-            <img
-              class="hero-d__image"
-              data-slide="{{ $b.slug }}"
-              src="{{ .RelPermalink }}"
-              alt="{{ $b.alt }}"
-              {{ if eq $i 0 }}loading="eager"{{ else }}loading="lazy"{{ end }} />
+          {{ with index $badgeImages.badges $b.slug }}
+            {{ partial "imagekit/img.html" (dict
+              "path" (printf "/mbu-assets/merit-badges/%s/emblem" $b.slug)
+              "v" .v
+              "maxWidth" 800
+              "width" 1200
+              "height" 670
+              "alt" $b.alt
+              "sizes" "(max-width: 900px) 100vw, 600px"
+              "class" "hero-d__image"
+              "attrs" (dict "data-slide" $b.slug)
+              "loading" (cond (eq $i 0) "eager" "lazy")
+            ) }}
           {{ end }}
         {{ end }}
         <div class="hero-d__image-scrim"></div>

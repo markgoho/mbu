@@ -5,124 +5,193 @@
     {
       "id": "scout-financial-planning",
       "file": "_index.md",
-      "description": "A Scout (age 14) sitting at a well-organized desk with a notebook, calculator, and laptop open to a spreadsheet. The Scout wears a clean Scout uniform and has a determined, focused expression. The desk is well-lit and the scene conveys confidence and preparation. Warm, inviting indoor setting."
+      "description": "A Scout (age 14) sitting at a well-organized desk with a notebook, calculator, and laptop open to a spreadsheet. The Scout wears a clean Scout uniform and has a determined, focused expression. The desk is well-lit and the scene conveys confidence and preparation. Warm, inviting indoor setting.",
+      "width": 800,
+      "height": 447,
+      "v": "3b348fba"
     },
     {
       "id": "scout-budgeting",
       "file": "_index.md",
-      "description": "A Scout (age 13) reviewing a handwritten budget on lined notebook paper, using a pencil to check off items. A few coins and neatly folded dollar bills are organized on the table beside the notebook. The scene is at a kitchen table with natural light from a window. Clean Scout uniform."
+      "description": "A Scout (age 13) reviewing a handwritten budget on lined notebook paper, using a pencil to check off items. A few coins and neatly folded dollar bills are organized on the table beside the notebook. The scene is at a kitchen table with natural light from a window. Clean Scout uniform.",
+      "width": 800,
+      "height": 447,
+      "v": "c582ff83"
     },
     {
       "id": "family-discussing-purchase",
       "file": "req1a.md",
-      "description": "A Scout (age 14) in a clean Scout uniform sitting at a kitchen table with two family members. They are looking at a laptop together, comparing products. A notepad with handwritten notes sits nearby. The atmosphere is warm and collaborative, with the family engaged in discussion."
+      "description": "A Scout (age 14) in a clean Scout uniform sitting at a kitchen table with two family members. They are looking at a laptop together, comparing products. A notepad with handwritten notes sits nearby. The atmosphere is warm and collaborative, with the family engaged in discussion.",
+      "width": 800,
+      "height": 447,
+      "v": "874a3a60"
     },
     {
       "id": "scout-savings-plan",
       "file": "req1b.md",
-      "description": "A Scout (age 13) writing in a notebook at a desk, creating a savings plan. The notebook shows a hand-drawn chart with weekly savings targets and a goal amount circled at the top. A calculator and piggy bank are visible on the desk. Clean Scout uniform, indoor setting with warm lighting."
+      "description": "A Scout (age 13) writing in a notebook at a desk, creating a savings plan. The notebook shows a hand-drawn chart with weekly savings targets and a goal amount circled at the top. A calculator and piggy bank are visible on the desk. Clean Scout uniform, indoor setting with warm lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "1889ff91"
     },
     {
       "id": "scout-comparison-shopping",
       "file": "req1c.md",
-      "description": "A Scout (age 14) at a library table with a laptop open showing product comparison charts. The Scout has a notepad where they are writing down prices from different sources. A few printouts with product reviews are spread on the table. Clean Scout uniform, library setting with bookshelves in the background."
+      "description": "A Scout (age 14) at a library table with a laptop open showing product comparison charts. The Scout has a notepad where they are writing down prices from different sources. A few printouts with product reviews are spread on the table. Clean Scout uniform, library setting with bookshelves in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "04c8079e"
     },
     {
       "id": "scout-creating-budget",
       "file": "req2a.md",
-      "description": "A Scout (age 13) at a kitchen table working on a budget. The table has a calculator, pencils, and a notebook showing neat columns labeled Income, Expenses, and Savings with week numbers down the side. The Scout is focused and engaged. Clean Scout uniform, bright kitchen setting."
+      "description": "A Scout (age 13) at a kitchen table working on a budget. The table has a calculator, pencils, and a notebook showing neat columns labeled Income, Expenses, and Savings with week numbers down the side. The Scout is focused and engaged. Clean Scout uniform, bright kitchen setting.",
+      "width": 800,
+      "height": 447,
+      "v": "4a3a797f"
     },
     {
       "id": "scout-balancing-budget",
       "file": "req2b.md",
-      "description": "A Scout (age 14) looking at a notebook with two columns side by side comparing income and expenses totals. The Scout is using a pencil to make adjustments to the numbers. A small illustration of a balanced scale is drawn in the notebook margin. Clean Scout uniform, desk setting."
+      "description": "A Scout (age 14) looking at a notebook with two columns side by side comparing income and expenses totals. The Scout is using a pencil to make adjustments to the numbers. A small illustration of a balanced scale is drawn in the notebook margin. Clean Scout uniform, desk setting.",
+      "width": 800,
+      "height": 447,
+      "v": "c4a94332"
     },
     {
       "id": "scout-tracking-expenses",
       "file": "req2c.md",
-      "description": "A Scout (age 13) standing just outside a store, recording a purchase in a small pocket notebook. The Scout holds a receipt in one hand and writes with the other. They are wearing a clean Scout uniform and have a small backpack. Outdoor setting with a storefront visible."
+      "description": "A Scout (age 13) standing just outside a store, recording a purchase in a small pocket notebook. The Scout holds a receipt in one hand and writes with the other. They are wearing a clean Scout uniform and have a small backpack. Outdoor setting with a storefront visible.",
+      "width": 800,
+      "height": 447,
+      "v": "83e7a3f0"
     },
     {
       "id": "scout-reviewing-budget",
       "file": "req2d.md",
-      "description": "A Scout (age 14) in a clean Scout uniform and an adult merit badge counselor sitting together at a table, reviewing budget records spread out between them. The counselor is pointing at a section of the records while the Scout takes notes. Indoor meeting room or library setting."
+      "description": "A Scout (age 14) in a clean Scout uniform and an adult merit badge counselor sitting together at a table, reviewing budget records spread out between them. The counselor is pointing at a section of the records while the Scout takes notes. Indoor meeting room or library setting.",
+      "width": 800,
+      "height": 447,
+      "v": "85eb5e6d"
     },
     {
       "id": "scout-thinking-about-money",
       "file": "req3.md",
-      "description": "A Scout (age 13) sitting thoughtfully on a park bench with a gentle smile, chin resting on one hand. Above the Scout are illustrated thought bubbles containing simple icons: a piggy bank, a shopping cart, a clock, and a dollar sign. The Scout wears a clean Scout uniform. Outdoor park setting with trees."
+      "description": "A Scout (age 13) sitting thoughtfully on a park bench with a gentle smile, chin resting on one hand. Above the Scout are illustrated thought bubbles containing simple icons: a piggy bank, a shopping cart, a clock, and a dollar sign. The Scout wears a clean Scout uniform. Outdoor park setting with trees.",
+      "width": 800,
+      "height": 447,
+      "v": "74aea45f"
     },
     {
       "id": "saving-vs-investing",
       "file": "req4.md",
       "style": "comparison",
-      "description": "A split illustration showing two paths from a starting point. On the left, a safe and steady path leads to a piggy bank labeled Saving, with a small upward arrow showing slow growth. On the right, a path with hills and valleys leads to a growing stock chart labeled Investing, with a larger upward arrow. Clean, educational infographic style."
+      "description": "A split illustration showing two paths from a starting point. On the left, a safe and steady path leads to a piggy bank labeled Saving, with a small upward arrow showing slow growth. On the right, a path with hills and valleys leads to a growing stock chart labeled Investing, with a larger upward arrow. Clean, educational infographic style.",
+      "width": 800,
+      "height": 447,
+      "v": "3ff5cd5f"
     },
     {
       "id": "investment-types-overview",
       "file": "req5.md",
       "style": "infographic",
-      "description": "Six illustrated icons arranged in a grid representing different investment types. A stock certificate for stocks, a basket filled with mixed items for mutual funds, a protective umbrella for life insurance, a locked vault for CDs, a classic piggy bank for savings accounts, and an eagle perched on a bond for U.S. savings bonds. Clean, colorful educational illustration style."
+      "description": "Six illustrated icons arranged in a grid representing different investment types. A stock certificate for stocks, a basket filled with mixed items for mutual funds, a protective umbrella for life insurance, a locked vault for CDs, a classic piggy bank for savings accounts, and an eagle perched on a bond for U.S. savings bonds. Clean, colorful educational illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "a439ee67"
     },
     {
       "id": "insurance-protection-shield",
       "file": "req6.md",
       "style": "infographic",
-      "description": "A large illustrated shield divided into four quadrants. Each quadrant contains a clear icon: a car for automobile insurance, a medical cross for health insurance, a house for homeowner's insurance, and a family silhouette for life insurance. The shield has a protective, sturdy appearance. Clean educational illustration style with bold colors."
+      "description": "A large illustrated shield divided into four quadrants. Each quadrant contains a clear icon: a car for automobile insurance, a medical cross for health insurance, a house for homeowner's insurance, and a family silhouette for life insurance. The shield has a protective, sturdy appearance. Clean educational illustration style with bold colors.",
+      "width": 800,
+      "height": 447,
+      "v": "ebbf45d0"
     },
     {
       "id": "scout-understanding-loans",
       "file": "req7a.md",
-      "description": "A Scout (age 14) at a desk reading a document labeled Loan Agreement with a magnifying glass focused on the interest rate section. A calculator and notepad are on the desk. The Scout looks curious and engaged. Clean Scout uniform, indoor study setting with warm lighting."
+      "description": "A Scout (age 14) at a desk reading a document labeled Loan Agreement with a magnifying glass focused on the interest rate section. A calculator and notepad are on the desk. The Scout looks curious and engaged. Clean Scout uniform, indoor study setting with warm lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "f736d573"
     },
     {
       "id": "types-of-borrowing",
       "file": "req7b.md",
       "style": "infographic",
-      "description": "An illustrated chart showing six types of borrowing arranged vertically from lowest to highest interest rate. Each type is represented by a simple icon: a house for mortgage, a car for auto loan, a graduation cap for student loan, a handshake for personal loan, a credit card for credit cards, and a warning triangle for payday loans. Color gradient from green (low rate) to red (high rate). Clean educational infographic."
+      "description": "An illustrated chart showing six types of borrowing arranged vertically from lowest to highest interest rate. Each type is represented by a simple icon: a house for mortgage, a car for auto loan, a graduation cap for student loan, a handshake for personal loan, a credit card for credit cards, and a warning triangle for payday loans. Color gradient from green (low rate) to red (high rate). Clean educational infographic.",
+      "width": 800,
+      "height": 447,
+      "v": "34b75376"
     },
     {
       "id": "three-cards-comparison",
       "file": "req7c.md",
       "style": "comparison",
-      "description": "Three payment cards displayed side by side on a clean surface. Each card has a distinct color and a label underneath: a blue debit card labeled Spends Your Money, a silver credit card labeled Borrows Money, and a gold charge card labeled Must Pay in Full. Clean, modern illustration with clear typography."
+      "description": "Three payment cards displayed side by side on a clean surface. Each card has a distinct color and a label underneath: a blue debit card labeled Spends Your Money, a silver credit card labeled Borrows Money, and a gold charge card labeled Must Pay in Full. Clean, modern illustration with clear typography.",
+      "width": 800,
+      "height": 447,
+      "v": "edd18d4a"
     },
     {
       "id": "scout-credit-report",
       "file": "req7d.md",
-      "description": "A Scout (age 14) in a clean Scout uniform looking at a document labeled Credit Report. The document shows visible sections for Payment History, Accounts, and Credit Score. The Scout has a thoughtful, analytical expression. Indoor desk setting with good lighting."
+      "description": "A Scout (age 14) in a clean Scout uniform looking at a document labeled Credit Report. The document shows visible sections for Payment History, Accounts, and Credit Score. The Scout has a thoughtful, analytical expression. Indoor desk setting with good lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "bd231292"
     },
     {
       "id": "debt-payoff-strategies",
       "file": "req7e.md",
       "style": "comparison",
-      "description": "A side-by-side illustration comparing two debt payoff methods. On the left, the Debt Avalanche shows debt bars arranged by interest rate from highest to lowest with an arrow pointing down. On the right, the Debt Snowball shows debt bars arranged by balance from smallest to largest with a growing snowball rolling downhill. Clean educational infographic with clear labels."
+      "description": "A side-by-side illustration comparing two debt payoff methods. On the left, the Debt Avalanche shows debt bars arranged by interest rate from highest to lowest with an arrow pointing down. On the right, the Debt Snowball shows debt bars arranged by balance from smallest to largest with a growing snowball rolling downhill. Clean educational infographic with clear labels.",
+      "width": 800,
+      "height": 447,
+      "v": "ff7d81bf"
     },
     {
       "id": "scout-time-management",
       "file": "req8.md",
-      "description": "A Scout (age 13) at a desk with a weekly planner open, writing in tasks and time blocks. Around the desk are symbols of their activities: a backpack, a soccer ball, textbooks stacked neatly, and a Scout handbook. The planner shows a colorful grid with different activities color-coded. Clean Scout uniform, organized bedroom or study space."
+      "description": "A Scout (age 13) at a desk with a weekly planner open, writing in tasks and time blocks. Around the desk are symbols of their activities: a backpack, a soccer ball, textbooks stacked neatly, and a Scout handbook. The planner shows a colorful grid with different activities color-coded. Clean Scout uniform, organized bedroom or study space.",
+      "width": 800,
+      "height": 447,
+      "v": "cb0b625e"
     },
     {
       "id": "scout-project-planning",
       "file": "req9.md",
-      "description": "A Scout (age 14) standing in front of a large whiteboard covered with colorful sticky notes arranged in columns, a hand-drawn timeline, and a project plan outline. The Scout holds a marker and is adding a new sticky note. Clean Scout uniform, meeting room or classroom setting."
+      "description": "A Scout (age 14) standing in front of a large whiteboard covered with colorful sticky notes arranged in columns, a hand-drawn timeline, and a project plan outline. The Scout holds a marker and is adding a new sticky note. Clean Scout uniform, meeting room or classroom setting.",
+      "width": 800,
+      "height": 447,
+      "v": "97cf4baf"
     },
     {
       "id": "scout-career-exploration",
       "file": "req10.md",
-      "description": "A Scout (age 14) in a clean Scout uniform sitting at a library table with career guidebooks open and a laptop showing the Bureau of Labor Statistics website. Small thought bubbles above show icons representing different careers: a stethoscope for medicine, a hard hat for engineering, a tree for park ranger, and a computer for technology. Library setting with bookshelves."
+      "description": "A Scout (age 14) in a clean Scout uniform sitting at a library table with career guidebooks open and a laptop showing the Bureau of Labor Statistics website. Small thought bubbles above show icons representing different careers: a stethoscope for medicine, a hard hat for engineering, a tree for park ranger, and a computer for technology. Library setting with bookshelves.",
+      "width": 800,
+      "height": 447,
+      "v": "5ae10038"
     },
     {
       "id": "compound-interest-growth",
       "file": "extended-learning.md",
       "style": "infographic",
-      "description": "A clean line chart showing two growth curves over time from age 15 to age 65. The blue line starts at age 15 and curves steeply upward. The orange line starts at age 25 and follows a similar curve but ends much lower. Both lines are labeled with starting ages. The area between the curves is lightly shaded to emphasize the difference. X-axis shows age, Y-axis shows dollar amounts. Educational infographic style."
+      "description": "A clean line chart showing two growth curves over time from age 15 to age 65. The blue line starts at age 15 and curves steeply upward. The orange line starts at age 25 and follows a similar curve but ends much lower. Both lines are labeled with starting ages. The area between the curves is lightly shaded to emphasize the difference. X-axis shows age, Y-axis shows dollar amounts. Educational infographic style.",
+      "width": 800,
+      "height": 447,
+      "v": "a41bca2c"
     },
     {
       "id": "scout-financial-habits",
       "file": "extended-learning.md",
-      "description": "A Scout (age 14) in casual clothes sitting comfortably in a chair at home, reviewing a financial app on a tablet. The Scout looks confident and in control. The tablet screen shows a simple budget dashboard with green positive indicators. A cozy home setting with a lamp and bookshelf in the background."
+      "description": "A Scout (age 14) in casual clothes sitting comfortably in a chair at home, reviewing a financial app on a tablet. The Scout looks confident and in control. The tablet screen shows a simple budget dashboard with green positive indicators. A cozy home setting with a lamp and bookshelf in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "80b10912"
     }
   ]
 }

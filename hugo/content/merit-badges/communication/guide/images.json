@@ -5,89 +5,140 @@
     {
       "id": "scout-speaking-group",
       "file": "_index.md",
-      "description": "A Scout standing confidently in front of a small group of fellow Scouts, gesturing while explaining an idea, with an outdoor pavilion setting"
+      "description": "A Scout standing confidently in front of a small group of fellow Scouts, gesturing while explaining an idea, with an outdoor pavilion setting",
+      "width": 800,
+      "height": 447,
+      "v": "2444b6c3"
     },
     {
       "id": "communication-methods-collage",
       "file": "_index.md",
-      "description": "A collage showing different forms of communication: a person speaking at a podium, someone writing a letter, a group video call on a laptop, and a Scout reading a book"
+      "description": "A collage showing different forms of communication: a person speaking at a podium, someone writing a letter, a group video call on a laptop, and a Scout reading a book",
+      "width": 800,
+      "height": 447,
+      "v": "1fe926a3"
     },
     {
       "id": "scout-communication-log",
       "file": "req1.md",
-      "description": "A Scout sitting at a desk writing in a notebook, with a phone, headphones, and an open book nearby, tracking communication activities throughout the day"
+      "description": "A Scout sitting at a desk writing in a notebook, with a phone, headphones, and an open book nearby, tracking communication activities throughout the day",
+      "width": 800,
+      "height": 447,
+      "v": "faf383d6"
     },
     {
       "id": "communication-methods-brainstorm",
       "file": "req1.md",
-      "description": "A whiteboard covered with colorful sticky notes listing different communication methods organized by category, with a Scout's hand adding a new note"
+      "description": "A whiteboard covered with colorful sticky notes listing different communication methods organized by category, with a Scout's hand adding a new note",
+      "width": 800,
+      "height": 447,
+      "v": "df14f0c3"
     },
     {
       "id": "scout-creative-presentation",
       "file": "req2.md",
-      "description": "A Scout showing a colorful collage on a poster board to a merit badge counselor seated at a table, both smiling in a well-lit meeting room"
+      "description": "A Scout showing a colorful collage on a poster board to a merit badge counselor seated at a table, both smiling in a well-lit meeting room",
+      "width": 800,
+      "height": 447,
+      "v": "d6dd2997"
     },
     {
       "id": "scout-delivering-speech",
       "file": "req3.md",
-      "description": "A Scout standing at the front of a meeting room delivering a speech to an attentive group of Scouts and leaders, using confident hand gestures"
+      "description": "A Scout standing at the front of a meeting room delivering a speech to an attentive group of Scouts and leaders, using confident hand gestures",
+      "width": 800,
+      "height": 447,
+      "v": "a15c0d62"
     },
     {
       "id": "speech-structure-diagram",
       "file": "req3.md",
       "style": "diagram",
-      "description": "A simple visual diagram showing the three parts of a speech — Opening, Body, and Closing — with brief labels and an arrow flowing from top to bottom"
+      "description": "A simple visual diagram showing the three parts of a speech — Opening, Body, and Closing — with brief labels and an arrow flowing from top to bottom",
+      "width": 800,
+      "height": 447,
+      "v": "7ccf0785"
     },
     {
       "id": "scout-interviewing-leader",
       "file": "req4.md",
-      "description": "A Scout sitting across a table from a community leader, taking notes in a notebook during an interview, with both people engaged in friendly conversation"
+      "description": "A Scout sitting across a table from a community leader, taking notes in a notebook during an interview, with both people engaged in friendly conversation",
+      "width": 800,
+      "height": 447,
+      "v": "59be6ebc"
     },
     {
       "id": "scout-phone-invitation",
       "file": "req4.md",
-      "description": "A Scout holding a phone to their ear and looking at a notepad with event details written on it, preparing to make a professional invitation call"
+      "description": "A Scout holding a phone to their ear and looking at a notepad with event details written on it, preparing to make a professional invitation call",
+      "width": 800,
+      "height": 447,
+      "v": "2ac45a46"
     },
     {
       "id": "scout-public-meeting",
       "file": "req5.md",
-      "description": "A Scout sitting in the audience of a city council meeting, taking notes in a notebook, with council members seated at a raised desk in the background"
+      "description": "A Scout sitting in the audience of a city council meeting, taking notes in a notebook, with council members seated at a raised desk in the background",
+      "width": 800,
+      "height": 447,
+      "v": "c4fa2eb1"
     },
     {
       "id": "scout-writing-report",
       "file": "req5.md",
-      "description": "A Scout sitting at a desk reviewing handwritten notes and writing a report, with a printed meeting agenda visible beside the notebook"
+      "description": "A Scout sitting at a desk reviewing handwritten notes and writing a report, with a printed meeting agenda visible beside the notebook",
+      "width": 800,
+      "height": 447,
+      "v": "fb249db0"
     },
     {
       "id": "scout-teaching-knots",
       "file": "req6.md",
-      "description": "A Scout demonstrating how to tie a knot to a younger Scout, with a poster showing knot diagrams propped up behind them on an easel outdoors"
+      "description": "A Scout demonstrating how to tie a knot to a younger Scout, with a poster showing knot diagrams propped up behind them on an easel outdoors",
+      "width": 800,
+      "height": 447,
+      "v": "a29229c0"
     },
     {
       "id": "scout-building-website",
       "file": "req7.md",
-      "description": "A Scout working on a laptop, designing a website with a colorful troop page visible on the screen, with notes and photos spread on the desk beside them"
+      "description": "A Scout working on a laptop, designing a website with a colorful troop page visible on the screen, with notes and photos spread on the desk beside them",
+      "width": 800,
+      "height": 447,
+      "v": "05f80314"
     },
     {
       "id": "scout-mc-campfire",
       "file": "req8.md",
-      "description": "A Scout standing confidently near a campfire at dusk, addressing a group of Scouts seated in a semicircle, holding script notes"
+      "description": "A Scout standing confidently near a campfire at dusk, addressing a group of Scouts seated in a semicircle, holding script notes",
+      "width": 800,
+      "height": 447,
+      "v": "03c7bad7"
     },
     {
       "id": "court-of-honor-ceremony",
       "file": "req8.md",
-      "description": "A Scout in clean uniform standing at a podium during a court of honor ceremony, with award recipients lined up and families watching from chairs"
+      "description": "A Scout in clean uniform standing at a podium during a court of honor ceremony, with award recipients lined up and families watching from chairs",
+      "width": 800,
+      "height": 447,
+      "v": "ddca8275"
     },
     {
       "id": "communication-careers-montage",
       "file": "req9.md",
       "style": "infographic",
-      "description": "A four-panel illustration showing different communication careers: a journalist with a microphone, a web designer at a computer, a public speaker at a conference podium, and a video producer behind a camera"
+      "description": "A four-panel illustration showing different communication careers: a journalist with a microphone, a web designer at a computer, a public speaker at a conference podium, and a video producer behind a camera",
+      "width": 800,
+      "height": 447,
+      "v": "1e778ba5"
     },
     {
       "id": "scouts-conflict-resolution",
       "file": "extended-learning.md",
-      "description": "Two Scouts sitting face-to-face in a calm discussion, with a patrol leader mediating between them, in an outdoor campsite setting with trees in the background"
+      "description": "Two Scouts sitting face-to-face in a calm discussion, with a patrol leader mediating between them, in an outdoor campsite setting with trees in the background",
+      "width": 800,
+      "height": 447,
+      "v": "b2b62e3c"
     }
   ]
 }

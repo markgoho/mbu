@@ -7,7 +7,10 @@
       "file": "req1.md",
       "style": "diagram",
       "description": "A clean educational workshop-bench safety diagram showing a freshly heated metal workpiece resting on a firebrick in a clearly marked HOT ZONE, with a separate TOOL ZONE for tongs and hammer, and a SCRAP ZONE for sharp offcuts. Simple top-down or slight angled view of a metalworking bench with short horizontal labels only, no branding, no decorative clutter.",
-      "value": "Clearly marked hot, tool, and scrap zones around a heated workpiece — spatial safety relationships that text alone cannot teach as quickly"
+      "value": "Clearly marked hot, tool, and scrap zones around a heated workpiece — spatial safety relationships that text alone cannot teach as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "c40b8aaa"
     },
     {
       "id": "ferrous-vs-nonferrous-comparison",
@@ -15,7 +18,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A side-by-side educational comparison diagram with two columns labeled FERROUS and NONFERROUS. Under FERROUS, show simple visual examples of carbon steel, cast iron, and stainless steel with a small magnet icon and a rust-resistance indicator. Under NONFERROUS, show copper, brass, bronze, and aluminum with corrosion-resistance and non-magnetic icons. Minimal short labels only, clean light background, visual-first textbook style.",
-      "value": "Side-by-side visual grouping of common ferrous and nonferrous metals with magnetism and corrosion cues — comparison patterns that are much faster to grasp visually than in prose"
+      "value": "Side-by-side visual grouping of common ferrous and nonferrous metals with magnetism and corrosion cues — comparison patterns that are much faster to grasp visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "5b8c84f8"
     },
     {
       "id": "work-hardening-bend-line-sequence",
@@ -23,7 +29,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "A three-stage comparison image showing the same strip of brass or copper sheet metal in sequence: left panel flat sheet, center panel bent to 45 degrees, right panel the bend line being heavily peened with a hammer. Emphasize the bend line area and show that the metal has become stiffer there. Clear panel labels such as FLAT, BENT, and PEENED only.",
-      "value": "Three-stage visual progression from flat sheet to bent and peened bend line — the physical sequence of work-hardening that text cannot show as directly"
+      "value": "Three-stage visual progression from flat sheet to bent and peened bend line — the physical sequence of work-hardening that text cannot show as directly",
+      "width": 800,
+      "height": 447,
+      "v": "cb9c1890"
     },
     {
       "id": "tinsmith-basic-tools-layout",
@@ -31,7 +40,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A clean labeled diagram of basic tinsmith tools arranged by function on a light workshop background: ruler and combination square for layout, tin snips for cutting, hand seamer for bending, mallet and ball-peen hammer for shaping, stake or small forming stake for support, file for deburring, rivet tools, and soldering setup for joining. Short labels only, no dense text, textbook diagram style.",
-      "value": "Labeled layout of the core tinsmith tools grouped by job — tool recognition and role matching that readers need to see rather than imagine from a list"
+      "value": "Labeled layout of the core tinsmith tools grouped by job — tool recognition and role matching that readers need to see rather than imagine from a list",
+      "width": 800,
+      "height": 447,
+      "v": "a0f2207b"
     },
     {
       "id": "sheet-metal-project-sketch-example",
@@ -39,7 +51,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "A hand-drawn project-planning diagram on clean paper showing two beginner sheet-metal objects: a shallow tray and a small scoop. Include clear dimension lines, bend lines, tabs, and separate parts identified with very short labels. Visual-first drafting example, no paragraphs, neat pencil-and-ruler style.",
-      "value": "Example sheet-metal project sketches with dimensions, bend lines, and tabs — planning details that are much clearer in a visual layout than in verbal description"
+      "value": "Example sheet-metal project sketches with dimensions, bend lines, and tabs — planning details that are much clearer in a visual layout than in verbal description",
+      "width": 800,
+      "height": 447,
+      "v": "dce57b48"
     },
     {
       "id": "sheet-metal-joining-sequence",
@@ -47,7 +62,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "A step-by-step comparison sequence showing sheet metal fabrication stages for one object: cut edge, deburred edge, bent and fitted parts, riveted joint, and final protective finish. Keep each stage visually distinct and easy to compare, with brief labels only.",
-      "value": "Step-by-step progression from cut sheet to deburred, bent, riveted, and finished object — process order that text alone cannot demonstrate as clearly"
+      "value": "Step-by-step progression from cut sheet to deburred, bent, riveted, and finished object — process order that text alone cannot demonstrate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "3c6a766d"
     },
     {
       "id": "silversmith-bench-tools",
@@ -55,7 +73,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A clean educational diagram of a silversmith bench setup showing a jeweler's saw, bench pin, files, small hammers, forming stakes, torch, tweezers, flux brush, and polishing supplies. Each tool has a short label and is arranged neatly on a light neutral background in textbook style.",
-      "value": "Labeled silversmith bench setup with the main small-scale tools in context — fine-tool recognition that is far easier to learn visually than from names alone"
+      "value": "Labeled silversmith bench setup with the main small-scale tools in context — fine-tool recognition that is far easier to learn visually than from names alone",
+      "width": 800,
+      "height": 447,
+      "v": "16a2e49f"
     },
     {
       "id": "silversmith-sketch-with-components",
@@ -63,7 +84,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "A neat hand-drawn silversmith planning sketch showing a small pendant and a shallow dish with dimension lines, one solder seam, one sawed opening, and one clearly marked sunken area. Minimal short labels only, clean drafting style on a light background.",
-      "value": "Silversmith project sketches showing where dimensions, solder seams, sawed areas, and sunken forms belong — planning relationships that text alone cannot map clearly"
+      "value": "Silversmith project sketches showing where dimensions, solder seams, sawed areas, and sunken forms belong — planning relationships that text alone cannot map clearly",
+      "width": 800,
+      "height": 447,
+      "v": "5ae1c822"
     },
     {
       "id": "silversmith-project-sequence",
@@ -71,7 +95,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "A four-panel instructional comparison showing copper sheet being sawed, then a shallow sunken form being made, then a soldered seam being heated, and finally the cleaned and polished finished object. Brief panel labels only, visual-first layout.",
-      "value": "Four-stage sequence of sawing, sinking, soldering, and polishing — the order and visible changes of silversmithing work that are best taught by seeing them"
+      "value": "Four-stage sequence of sawing, sinking, soldering, and polishing — the order and visible changes of silversmithing work that are best taught by seeing them",
+      "width": 800,
+      "height": 447,
+      "v": "5c26bb6a"
     },
     {
       "id": "two-piece-mold-parts-labeled",
@@ -79,7 +106,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A clean cutaway educational diagram of a two-piece mold showing the cope, drag, parting line, cavity, pouring gate or sprue, runner, and vent. Use short horizontal labels and simple arrows only. Light background, modern textbook style, highly legible.",
-      "value": "Cutaway view of a two-piece mold with all major parts labeled in place — internal mold relationships that are difficult to understand from words alone"
+      "value": "Cutaway view of a two-piece mold with all major parts labeled in place — internal mold relationships that are difficult to understand from words alone",
+      "width": 800,
+      "height": 447,
+      "v": "07bfe0a5"
     },
     {
       "id": "casting-object-sketches",
@@ -87,7 +117,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Two simple casting-planning sketches on paper, such as a medallion and a small decorative hook or plaque, each with basic dimensions and clearly suggested gate and vent positions. Clean drafting look with very short labels only.",
-      "value": "Casting sketches that show object shape together with possible gate and vent placement — planning geometry that is much easier to grasp visually"
+      "value": "Casting sketches that show object shape together with possible gate and vent placement — planning geometry that is much easier to grasp visually",
+      "width": 800,
+      "height": 447,
+      "v": "2d11cf7e"
     },
     {
       "id": "casting-pour-sequence",
@@ -95,7 +128,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "A three-stage comparison sequence showing a prepared two-piece mold, molten lead-free pewter being poured into the gate with proper control, and the finished casting after release. Emphasize the path from mold to pour to object, with brief stage labels only.",
-      "value": "Sequence from prepared mold to controlled pour to released casting — the cause-and-effect flow of founding that text cannot illustrate as directly"
+      "value": "Sequence from prepared mold to controlled pour to released casting — the cause-and-effect flow of founding that text cannot illustrate as directly",
+      "width": 800,
+      "height": 447,
+      "v": "da0677cd"
     },
     {
       "id": "blacksmith-tool-station",
@@ -103,7 +139,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "A labeled blacksmith work area showing forge, anvil with face and horn visible, hammer, tongs, vise, and wire brush arranged in a clear educational layout. Short labels only, light neutral background, clean textbook diagram style.",
-      "value": "Labeled layout of a forge station with the main blacksmith tools and work surfaces — spatial tool relationships that readers need to see clearly"
+      "value": "Labeled layout of a forge station with the main blacksmith tools and work surfaces — spatial tool relationships that readers need to see clearly",
+      "width": 800,
+      "height": 447,
+      "v": "96a8c8ed"
     },
     {
       "id": "blacksmith-project-sketches",
@@ -111,7 +150,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Two forged-project planning sketches such as a wall hook and a fire poker, with dimensions, bend locations, a decorative twist location, and simple component notes marked clearly. Clean drafting style on a light background with minimal labels.",
-      "value": "Forged-object sketches showing bends, twist locations, and overall proportions — planning information that is much more intuitive in a visual sketch than in text"
+      "value": "Forged-object sketches showing bends, twist locations, and overall proportions — planning information that is much more intuitive in a visual sketch than in text",
+      "width": 800,
+      "height": 447,
+      "v": "8bdec310"
     },
     {
       "id": "blacksmith-four-core-exercises",
@@ -119,7 +161,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "A four-panel instructional comparison image showing hot-forging exercises: drawing out a taper, making a U-bend on the horn, twisting square steel, and making an L-bend on the anvil edge. Clear panel separation, very short labels only, educational emphasis on the different metal shapes produced.",
-      "value": "Four side-by-side blacksmithing exercises with distinct resulting shapes — forging movements and outcomes that are much easier to learn visually than verbally"
+      "value": "Four side-by-side blacksmithing exercises with distinct resulting shapes — forging movements and outcomes that are much easier to learn visually than verbally",
+      "width": 800,
+      "height": 447,
+      "v": "bd511d6c"
     },
     {
       "id": "finished-forged-objects-sequence",
@@ -127,7 +172,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "A process sequence showing two blacksmith projects progressing from heated steel stock to shaped work on the anvil to finished forged objects, one with a decorative twist and one with a hammer-riveted joint. Keep the focus on the visible transformation of the steel and the final details.",
-      "value": "Transformation from heated stock to finished forged objects with a twist and riveted joint — the visible build progression that words alone cannot convey well"
+      "value": "Transformation from heated stock to finished forged objects with a twist and riveted joint — the visible build progression that words alone cannot convey well",
+      "width": 800,
+      "height": 447,
+      "v": "bf72ec19"
     }
   ]
 }

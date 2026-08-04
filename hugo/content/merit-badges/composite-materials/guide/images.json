@@ -6,97 +6,145 @@
       "id": "composite-history-timeline",
       "file": "_index.md",
       "style": "infographic",
-      "description": "A horizontal timeline infographic showing key milestones in composite materials history. Left to right: ancient mud brick with straw fibers (3400 BCE), Mongolian composite bow (1200 CE), fiberglass production at Owens Corning (1930s), WWII fiberglass aircraft radome (1940s), carbon fiber development (1960s), Kevlar invention (1971), Boeing 787 Dreamliner composite fuselage (2011), modern 3D-printed composite part (2020s). Clean white background, bold dates in blue, connecting timeline arrow in dark gray, small illustrated icons for each milestone."
+      "description": "A horizontal timeline infographic showing key milestones in composite materials history. Left to right: ancient mud brick with straw fibers (3400 BCE), Mongolian composite bow (1200 CE), fiberglass production at Owens Corning (1930s), WWII fiberglass aircraft radome (1940s), carbon fiber development (1960s), Kevlar invention (1971), Boeing 787 Dreamliner composite fuselage (2011), modern 3D-printed composite part (2020s). Clean white background, bold dates in blue, connecting timeline arrow in dark gray, small illustrated icons for each milestone.",
+      "width": 800,
+      "height": 447,
+      "v": "9f56ef01"
     },
     {
       "id": "frp-examples-collage",
       "file": "_index.md",
       "style": "comparison",
-      "description": "Three-panel comparison image showing fiber-reinforced polymer products. Left panel: a sleek fiberglass kayak hull in bright red, sitting on a grassy shore near water, labeled 'Fiberglass'. Center panel: a high-end carbon fiber road bicycle frame in glossy black with visible carbon weave pattern, labeled 'Carbon Fiber'. Right panel: a tan aramid Kevlar ballistic helmet photographed on a white background, labeled 'Aramid/Kevlar'. Each panel has clean white borders separating them."
+      "description": "Three-panel comparison image showing fiber-reinforced polymer products. Left panel: a sleek fiberglass kayak hull in bright red, sitting on a grassy shore near water, labeled 'Fiberglass'. Center panel: a high-end carbon fiber road bicycle frame in glossy black with visible carbon weave pattern, labeled 'Carbon Fiber'. Right panel: a tan aramid Kevlar ballistic helmet photographed on a white background, labeled 'Aramid/Kevlar'. Each panel has clean white borders separating them.",
+      "width": 800,
+      "height": 447,
+      "v": "db81fbd8"
     },
     {
       "id": "natural-composite-cross-section",
       "file": "_index.md",
       "style": "diagram",
-      "description": "A scientific cross-section diagram of a human bone showing its composite structure. The outer layer (cortical bone) is labeled 'Dense Outer Shell' with an arrow pointing to the hard outer ring. Inside, the spongy trabecular bone structure is labeled 'Porous Core — Lightweight & Strong'. A magnified inset circle shows the microscopic level with collagen fibers (labeled 'Collagen Fibers — Flexible') intertwined with mineral crystals (labeled 'Mineral Crystals — Rigid'). A note at bottom reads 'Nature's Composite: Flexibility + Rigidity = Toughness'. Clean white background with soft blue and tan coloring."
+      "description": "A scientific cross-section diagram of a human bone showing its composite structure. The outer layer (cortical bone) is labeled 'Dense Outer Shell' with an arrow pointing to the hard outer ring. Inside, the spongy trabecular bone structure is labeled 'Porous Core — Lightweight & Strong'. A magnified inset circle shows the microscopic level with collagen fibers (labeled 'Collagen Fibers — Flexible') intertwined with mineral crystals (labeled 'Mineral Crystals — Rigid'). A note at bottom reads 'Nature's Composite: Flexibility + Rigidity = Toughness'. Clean white background with soft blue and tan coloring.",
+      "width": 800,
+      "height": 447,
+      "v": "b7dfc3f5"
     },
     {
       "id": "ppe-composite-worker",
       "file": "req1a.md",
       "style": "annotated-photo",
-      "description": "An annotated photo of personal protective equipment for composites work laid out neatly on a workbench. Items arranged from left to right: safety glasses with side shields, a half-face respirator with pink P100 cartridges, a pair of purple nitrile gloves, and a folded long-sleeve work shirt. Each item has a clean annotated label: 'Safety Glasses', 'Respirator with Cartridges', 'Nitrile Gloves', 'Long Sleeves'. Behind the PPE, white fiberglass fabric is visible on the bench. Bright workshop lighting, clean white background."
+      "description": "An annotated photo of personal protective equipment for composites work laid out neatly on a workbench. Items arranged from left to right: safety glasses with side shields, a half-face respirator with pink P100 cartridges, a pair of purple nitrile gloves, and a folded long-sleeve work shirt. Each item has a clean annotated label: 'Safety Glasses', 'Respirator with Cartridges', 'Nitrile Gloves', 'Long Sleeves'. Behind the PPE, white fiberglass fabric is visible on the bench. Bright workshop lighting, clean white background.",
+      "width": 800,
+      "height": 447,
+      "v": "36a00afb"
     },
     {
       "id": "composite-materials-storage",
       "file": "req1b.md",
       "style": "diagram",
-      "description": "A clean, organized workshop storage diagram showing proper composite materials storage. Left section: a metal shelving unit with labeled containers — 'RESIN' on the top shelf in blue containers, 'HARDENER' on a separate lower shelf in green containers (with a note 'Store Separately from Resin'). Center: rolled fiberglass and carbon fiber fabric stored horizontally on a fabric rack, labeled 'Reinforcement Fabrics — Keep Dry, Store Flat'. Right: a red flammable liquids cabinet labeled 'FLAMMABLE — Solvents Only' with acetone and MEK containers visible inside. A small box on a separate shelf is labeled 'MEKP Catalyst — Store Separately, Cool Location'. White background with clean lines and clear labels."
+      "description": "A clean, organized workshop storage diagram showing proper composite materials storage. Left section: a metal shelving unit with labeled containers — 'RESIN' on the top shelf in blue containers, 'HARDENER' on a separate lower shelf in green containers (with a note 'Store Separately from Resin'). Center: rolled fiberglass and carbon fiber fabric stored horizontally on a fabric rack, labeled 'Reinforcement Fabrics — Keep Dry, Store Flat'. Right: a red flammable liquids cabinet labeled 'FLAMMABLE — Solvents Only' with acetone and MEK containers visible inside. A small box on a separate shelf is labeled 'MEKP Catalyst — Store Separately, Cool Location'. White background with clean lines and clear labels.",
+      "width": 800,
+      "height": 447,
+      "v": "84f72b5e"
     },
     {
       "id": "sds-document-sections",
       "file": "req1c.md",
       "style": "diagram",
-      "description": "A stylized representation of a Safety Data Sheet document showing all 16 section headers listed vertically. The document has a header reading 'Safety Data Sheet (SDS)' with a hazard diamond icon. Sections 2 (Hazard Identification), 4 (First-Aid Measures), 7 (Handling and Storage), 8 (Exposure Controls/PPE), and 13 (Disposal Considerations) are highlighted in bold blue with star icons, while the remaining sections are in standard gray text. A sidebar note reads 'These 5 sections are most important for composites work'. Clean white background, professional document styling."
+      "description": "A stylized representation of a Safety Data Sheet document showing all 16 section headers listed vertically. The document has a header reading 'Safety Data Sheet (SDS)' with a hazard diamond icon. Sections 2 (Hazard Identification), 4 (First-Aid Measures), 7 (Handling and Storage), 8 (Exposure Controls/PPE), and 13 (Disposal Considerations) are highlighted in bold blue with star icons, while the remaining sections are in standard gray text. A sidebar note reads 'These 5 sections are most important for composites work'. Clean white background, professional document styling.",
+      "width": 800,
+      "height": 447,
+      "v": "4b8fdcfc"
     },
     {
       "id": "composite-evolution-examples",
       "file": "req2a.md",
       "style": "infographic",
-      "description": "A four-quadrant infographic showing the evolution of composite materials through real-world examples. Top-left: illustration of an ancient Mesopotamian mud brick with visible straw fibers, labeled 'Ancient: Mud + Straw (3400 BCE)'. Top-right: illustration of a 1940s military fiberglass boat hull, labeled 'WWII Era: Fiberglass Boats (1940s)'. Bottom-left: illustration of a carbon fiber Formula 1 racing car monocoque in glossy black, labeled 'Performance: Carbon Fiber Race Cars (1980s–present)'. Bottom-right: illustration of a massive wind turbine blade being transported on a long flatbed truck, labeled 'Modern: 100m Wind Turbine Blades (2020s)'. Center connecting text: 'From Ancient Craft to Advanced Engineering'. Clean white background with subtle grid lines."
+      "description": "A four-quadrant infographic showing the evolution of composite materials through real-world examples. Top-left: illustration of an ancient Mesopotamian mud brick with visible straw fibers, labeled 'Ancient: Mud + Straw (3400 BCE)'. Top-right: illustration of a 1940s military fiberglass boat hull, labeled 'WWII Era: Fiberglass Boats (1940s)'. Bottom-left: illustration of a carbon fiber Formula 1 racing car monocoque in glossy black, labeled 'Performance: Carbon Fiber Race Cars (1980s–present)'. Bottom-right: illustration of a massive wind turbine blade being transported on a long flatbed truck, labeled 'Modern: 100m Wind Turbine Blades (2020s)'. Center connecting text: 'From Ancient Craft to Advanced Engineering'. Clean white background with subtle grid lines.",
+      "width": 800,
+      "height": 447,
+      "v": "19332556"
     },
     {
       "id": "materials-comparison-infographic",
       "file": "req2b.md",
       "style": "comparison",
-      "description": "A five-column comparison layout showing material samples side by side. From left to right: a black carbon fiber composite panel with visible twill weave pattern, a natural-grain wooden plank, a shiny silver aluminum sheet, a copper-colored pipe section, and a structural steel I-beam section. Below each sample, three key properties are listed in a clean format. Composite: 'Lightweight, Strong, Corrosion-Resistant'. Wood: 'Affordable, Renewable, Easy to Shape'. Aluminum: 'Light Metal, Recyclable, Conductive'. Copper: 'Best Conductor, Durable, Corrosion-Resistant'. Steel: 'Strongest, Cheapest Metal, Fully Recyclable'. Clean white background with material labels in bold."
+      "description": "A five-column comparison layout showing material samples side by side. From left to right: a black carbon fiber composite panel with visible twill weave pattern, a natural-grain wooden plank, a shiny silver aluminum sheet, a copper-colored pipe section, and a structural steel I-beam section. Below each sample, three key properties are listed in a clean format. Composite: 'Lightweight, Strong, Corrosion-Resistant'. Wood: 'Affordable, Renewable, Easy to Shape'. Aluminum: 'Light Metal, Recyclable, Conductive'. Copper: 'Best Conductor, Durable, Corrosion-Resistant'. Steel: 'Strongest, Cheapest Metal, Fully Recyclable'. Clean white background with material labels in bold.",
+      "width": 800,
+      "height": 447,
+      "v": "eec5f3d5"
     },
     {
       "id": "reinforcement-fibers-closeup",
       "file": "req3a.md",
       "style": "comparison",
-      "description": "Three-panel close-up comparison of reinforcement fiber fabrics. Left panel: white fiberglass woven fabric showing the plain weave pattern with glass fibers catching light, labeled 'Fiberglass — Most Common, Lowest Cost'. Center panel: black carbon fiber fabric in a 2x2 twill weave pattern showing the characteristic diagonal pattern, labeled 'Carbon Fiber — Strongest, Stiffest'. Right panel: golden-yellow aramid Kevlar fabric in a plain weave, labeled 'Aramid (Kevlar) — Best Impact Resistance'. Each panel shows the fabric at macro scale where individual fiber bundles are visible. Clean white borders between panels."
+      "description": "Three-panel close-up comparison of reinforcement fiber fabrics. Left panel: white fiberglass woven fabric showing the plain weave pattern with glass fibers catching light, labeled 'Fiberglass — Most Common, Lowest Cost'. Center panel: black carbon fiber fabric in a 2x2 twill weave pattern showing the characteristic diagonal pattern, labeled 'Carbon Fiber — Strongest, Stiffest'. Right panel: golden-yellow aramid Kevlar fabric in a plain weave, labeled 'Aramid (Kevlar) — Best Impact Resistance'. Each panel shows the fabric at macro scale where individual fiber bundles are visible. Clean white borders between panels.",
+      "width": 800,
+      "height": 447,
+      "v": "ccb26a53"
     },
     {
       "id": "resin-types-comparison",
       "file": "req3b.md",
       "style": "comparison",
-      "description": "Three-panel comparison showing resin types in their working state. Left panel: a two-part epoxy system — a can of amber epoxy resin and a bottle of clear hardener next to a mixing cup with mixed epoxy, labeled 'Epoxy (Thermoset) — Mix Resin + Hardener'. Center panel: a can of polyester resin with a small bottle of MEKP catalyst, showing a drop of catalyst being added to the resin in a cup, labeled 'Polyester (Thermoset) — Add Catalyst to Resin'. Right panel: a pile of small white/off-white nylon pellets next to a finished molded nylon gear part, labeled 'Nylon (Thermoplastic) — Heat, Mold, Cool'. Clean white background, each panel separated by thin gray borders."
+      "description": "Three-panel comparison showing resin types in their working state. Left panel: a two-part epoxy system — a can of amber epoxy resin and a bottle of clear hardener next to a mixing cup with mixed epoxy, labeled 'Epoxy (Thermoset) — Mix Resin + Hardener'. Center panel: a can of polyester resin with a small bottle of MEKP catalyst, showing a drop of catalyst being added to the resin in a cup, labeled 'Polyester (Thermoset) — Add Catalyst to Resin'. Right panel: a pile of small white/off-white nylon pellets next to a finished molded nylon gear part, labeled 'Nylon (Thermoplastic) — Heat, Mold, Cool'. Clean white background, each panel separated by thin gray borders.",
+      "width": 800,
+      "height": 447,
+      "v": "b2e1db5f"
     },
     {
       "id": "innovation-brainstorm",
       "file": "req3c.md",
       "style": "illustrated",
-      "description": "An illustrated scene of a teenager sitting at a desk covered with sketches and notes, brainstorming composite material applications. On the desk are three visible sketches: a bridge deck panel labeled 'Epoxy + Carbon Fiber', a drone frame labeled 'Nylon + Carbon Fiber — Recyclable', and a flat-pack shelter panel labeled 'Polyester + Fiberglass — Low Cost'. The teenager holds a pencil and looks thoughtful. Material property sticky notes are visible on the wall behind: 'Strong', 'Lightweight', 'Recyclable', 'Affordable'. Warm desk lamp lighting, illustrated in a clean educational style with bold outlines."
+      "description": "An illustrated scene of a teenager sitting at a desk covered with sketches and notes, brainstorming composite material applications. On the desk are three visible sketches: a bridge deck panel labeled 'Epoxy + Carbon Fiber', a drone frame labeled 'Nylon + Carbon Fiber — Recyclable', and a flat-pack shelter panel labeled 'Polyester + Fiberglass — Low Cost'. The teenager holds a pencil and looks thoughtful. Material property sticky notes are visible on the wall behind: 'Strong', 'Lightweight', 'Recyclable', 'Affordable'. Warm desk lamp lighting, illustrated in a clean educational style with bold outlines.",
+      "width": 800,
+      "height": 447,
+      "v": "6cf4db8d"
     },
     {
       "id": "composites-facility-tour",
       "file": "req4.md",
       "style": "photo",
-      "description": "A teenager wearing safety glasses and closed-toe shoes standing in a clean composites manufacturing workshop, observing a technician performing a hand lay-up process on a fiberglass mold. The workshop has industrial lighting, rolls of fiberglass fabric on a storage rack, a vacuum pump visible on a shelf, and a ventilation duct overhead. The teenager is watching attentively from a safe distance while the technician, wearing full PPE including respirator and gloves, works with wet fiberglass on a boat hull mold."
+      "description": "A teenager wearing safety glasses and closed-toe shoes standing in a clean composites manufacturing workshop, observing a technician performing a hand lay-up process on a fiberglass mold. The workshop has industrial lighting, rolls of fiberglass fabric on a storage rack, a vacuum pump visible on a shelf, and a ventilation duct overhead. The teenager is watching attentively from a safe distance while the technician, wearing full PPE including respirator and gloves, works with wet fiberglass on a boat hull mold.",
+      "width": 800,
+      "height": 447,
+      "v": "8f23839d"
     },
     {
       "id": "hand-layup-process",
       "file": "req5a.md",
       "style": "annotated-photo",
-      "description": "A three-panel horizontal layout showing the hand lay-up composites process. Each panel is a separate photo with a single label. LEFT PANEL: hands in purple nitrile gloves placing dry white fiberglass fabric onto a flat mold, label reads 'Step 1: Place Fabric'. CENTER PANEL: a brush applying amber epoxy resin onto fiberglass fabric, wetting it out, label reads 'Step 2: Apply Resin'. RIGHT PANEL: a ribbed metal roller pressing down on wetted fiberglass to remove air bubbles, label reads 'Step 3: Roll Out Air'. Exactly three panels, three labels, no other text or annotations. Clean white dividers between panels."
+      "description": "A three-panel horizontal layout showing the hand lay-up composites process. Each panel is a separate photo with a single label. LEFT PANEL: hands in purple nitrile gloves placing dry white fiberglass fabric onto a flat mold, label reads 'Step 1: Place Fabric'. CENTER PANEL: a brush applying amber epoxy resin onto fiberglass fabric, wetting it out, label reads 'Step 2: Apply Resin'. RIGHT PANEL: a ribbed metal roller pressing down on wetted fiberglass to remove air bubbles, label reads 'Step 3: Roll Out Air'. Exactly three panels, three labels, no other text or annotations. Clean white dividers between panels.",
+      "width": 800,
+      "height": 447,
+      "v": "1c0df96d"
     },
     {
       "id": "composites-workspace-setup",
       "file": "req5b.md",
       "style": "photo",
-      "description": "A well-organized composites workspace in a residential garage with the large garage door fully open for ventilation. A sturdy table at standing height is covered with clean plastic sheeting. Materials are organized neatly: fiberglass fabric rolls on one side, resin containers and mixing supplies on the other, scissors and rollers in a tool holder. A box fan is visible in a side window blowing outward. PPE (safety glasses, respirator, nitrile gloves) hangs on hooks on the wall near the table. A fire extinguisher is mounted on the wall within easy reach. The space is clean, bright with natural light from the open door, and clearly ready for work."
+      "description": "A well-organized composites workspace in a residential garage with the large garage door fully open for ventilation. A sturdy table at standing height is covered with clean plastic sheeting. Materials are organized neatly: fiberglass fabric rolls on one side, resin containers and mixing supplies on the other, scissors and rollers in a tool holder. A box fan is visible in a side window blowing outward. PPE (safety glasses, respirator, nitrile gloves) hangs on hooks on the wall near the table. A fire extinguisher is mounted on the wall within easy reach. The space is clean, bright with natural light from the open door, and clearly ready for work.",
+      "width": 800,
+      "height": 447,
+      "v": "be4161fa"
     },
     {
       "id": "composite-part-evaluation",
       "file": "req5c.md",
       "style": "photo",
-      "description": "A teenager and an adult standing together at a workbench, examining a finished fiberglass composite part (a small flat panel or tray shape). The teenager is pointing to a specific area on the part's surface while the adult takes notes on a clipboard. The part shows realistic beginner quality — mostly smooth but with one visible air bubble area. Good workshop lighting illuminates the part clearly. Both people are wearing clean casual clothes, the workbench is tidy with a few tools visible in the background."
+      "description": "A teenager and an adult standing together at a workbench, examining a finished fiberglass composite part (a small flat panel or tray shape). The teenager is pointing to a specific area on the part's surface while the adult takes notes on a clipboard. The part shows realistic beginner quality — mostly smooth but with one visible air bubble area. Good workshop lighting illuminates the part clearly. Both people are wearing clean casual clothes, the workbench is tidy with a few tools visible in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "fe68bb33"
     },
     {
       "id": "composites-hobby-montage",
       "file": "req6.md",
       "style": "infographic",
-      "description": "A four-quadrant montage showing composites hobbies. Top-left: a custom fiberglass surfboard being sanded smooth on sawhorses in a garage, labeled 'Custom Surfboards'. Top-right: a small carbon fiber RC aircraft wing being assembled on a workbench with tools and a radio controller nearby, labeled 'RC Aircraft Building'. Bottom-left: a fiberglass kayak hull under construction with layers of cloth visible, sitting upside down on supports in a workshop, labeled 'Boat Building'. Bottom-right: pieces of lightweight composite cosplay armor (a chest plate and shoulder pieces) in metallic silver paint drying on newspaper, labeled 'Cosplay & Props'. Center connecting badge: 'Composites Hobbies'. Clean white background with rounded corners on each quadrant image."
+      "description": "A four-quadrant montage showing composites hobbies. Top-left: a custom fiberglass surfboard being sanded smooth on sawhorses in a garage, labeled 'Custom Surfboards'. Top-right: a small carbon fiber RC aircraft wing being assembled on a workbench with tools and a radio controller nearby, labeled 'RC Aircraft Building'. Bottom-left: a fiberglass kayak hull under construction with layers of cloth visible, sitting upside down on supports in a workshop, labeled 'Boat Building'. Bottom-right: pieces of lightweight composite cosplay armor (a chest plate and shoulder pieces) in metallic silver paint drying on newspaper, labeled 'Cosplay & Props'. Center connecting badge: 'Composites Hobbies'. Clean white background with rounded corners on each quadrant image.",
+      "width": 800,
+      "height": 447,
+      "v": "ed4f5726"
     }
   ]
 }

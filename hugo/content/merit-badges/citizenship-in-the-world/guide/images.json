@@ -5,109 +5,169 @@
     {
       "id": "scout-globe-overview",
       "file": "_index.md",
-      "description": "A Scout studying a large globe with international flags in the background, looking curious and engaged. The Scout is wearing a clean Scout uniform and standing in a well-lit room, perhaps a library or classroom."
+      "description": "A Scout studying a large globe with international flags in the background, looking curious and engaged. The Scout is wearing a clean Scout uniform and standing in a well-lit room, perhaps a library or classroom.",
+      "width": 800,
+      "height": 447,
+      "v": "06946984"
     },
     {
       "id": "scouts-world-flags",
       "file": "_index.md",
-      "description": "Scouts of diverse backgrounds standing together holding small flags from different countries, smiling and talking to each other. They are wearing clean Scout uniforms and gathered outdoors on a sunny day."
+      "description": "Scouts of diverse backgrounds standing together holding small flags from different countries, smiling and talking to each other. They are wearing clean Scout uniforms and gathered outdoors on a sunny day.",
+      "width": 800,
+      "height": 447,
+      "v": "b53b9f34"
     },
     {
       "id": "global-connections-map",
       "file": "_index.md",
       "style": "infographic",
-      "description": "An illustrated world map showing colorful lines connecting different continents, representing trade routes, communication networks, and international partnerships. The style is clean and educational, like an infographic."
+      "description": "An illustrated world map showing colorful lines connecting different continents, representing trade routes, communication networks, and international partnerships. The style is clean and educational, like an infographic.",
+      "width": 800,
+      "height": 447,
+      "v": "e9bd6442"
     },
     {
       "id": "scout-reflecting-world",
       "file": "req1.md",
-      "description": "A Scout sitting under a tree writing in a journal, with a thought bubble showing diverse scenes from around the world — a marketplace, mountains, a city skyline, and people in traditional clothing. The Scout is wearing a clean uniform and looks thoughtful."
+      "description": "A Scout sitting under a tree writing in a journal, with a thought bubble showing diverse scenes from around the world — a marketplace, mountains, a city skyline, and people in traditional clothing. The Scout is wearing a clean uniform and looks thoughtful.",
+      "width": 800,
+      "height": 447,
+      "v": "7004a45b"
     },
     {
       "id": "scouting-worldwide",
       "file": "req1.md",
       "style": "illustrated",
-      "description": "A colorful illustrated world map with Scout fleur-de-lis emblems pinned to different continents, showing the global reach of the Scouting movement. The map has a warm, inviting color palette."
+      "description": "A colorful illustrated world map with Scout fleur-de-lis emblems pinned to different continents, showing the global reach of the Scouting movement. The map has a warm, inviting color palette.",
+      "width": 800,
+      "height": 447,
+      "v": "5271ff57"
     },
     {
       "id": "citizenship-ceremony",
       "file": "req2.md",
-      "description": "A diverse group of people raising their right hands and taking the Oath of Allegiance at a naturalization ceremony. An American flag is prominently displayed in the background. The scene is solemn and joyful."
+      "description": "A diverse group of people raising their right hands and taking the Oath of Allegiance at a naturalization ceremony. An American flag is prominently displayed in the background. The scene is solemn and joyful.",
+      "width": 800,
+      "height": 447,
+      "v": "a5583978"
     },
     {
       "id": "world-citizenship-comparison",
       "file": "req2.md",
       "style": "comparison",
-      "description": "An illustrated side-by-side comparison showing three different passports from different countries with icons representing rights like voting, free speech, and travel arranged around them. Clean, educational infographic style."
+      "description": "An illustrated side-by-side comparison showing three different passports from different countries with icons representing rights like voting, free speech, and travel arranged around them. Clean, educational infographic style.",
+      "width": 800,
+      "height": 447,
+      "v": "bc3c7748"
     },
     {
       "id": "scout-reading-news",
       "file": "req3a.md",
-      "description": "A Scout sitting at a table with a tablet showing a world news website, with a notebook and pen nearby for taking notes. The Scout is wearing a clean uniform and looks focused and engaged with the material."
+      "description": "A Scout sitting at a table with a tablet showing a world news website, with a notebook and pen nearby for taking notes. The Scout is wearing a clean uniform and looks focused and engaged with the material.",
+      "width": 800,
+      "height": 447,
+      "v": "b29b32a2"
     },
     {
       "id": "national-interests-diagram",
       "file": "req3a.md",
       "style": "diagram",
-      "description": "An illustrated diagram showing four interconnected circles labeled Security, Economy, Values, and Health, with arrows between them showing how they influence each other. Clean educational infographic style with distinct colors for each circle."
+      "description": "An illustrated diagram showing four interconnected circles labeled Security, Economy, Values, and Health, with arrows between them showing how they influence each other. Clean educational infographic style with distinct colors for each circle.",
+      "width": 800,
+      "height": 447,
+      "v": "d6d6867c"
     },
     {
       "id": "geography-economy-map",
       "file": "req3b.md",
       "style": "illustrated",
-      "description": "An illustrated map showing a country's key geographic features — mountains, rivers, coastline, farmland, and mineral deposits — with labels showing how each feature connects to the economy. Educational illustration style."
+      "description": "An illustrated map showing a country's key geographic features — mountains, rivers, coastline, farmland, and mineral deposits — with labels showing how each feature connects to the economy. Educational illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "fe70f3cf"
     },
     {
       "id": "scout-researching-country",
       "file": "req3b.md",
-      "description": "A Scout at a library table with an atlas open to a world map, surrounded by books and a laptop showing country data. The Scout is wearing a clean uniform and is engaged in research."
+      "description": "A Scout at a library table with an atlas open to a world map, surrounded by books and a laptop showing country data. The Scout is wearing a clean uniform and is engaged in research.",
+      "width": 800,
+      "height": 447,
+      "v": "2c7495e9"
     },
     {
       "id": "global-organizations",
       "file": "req4.md",
       "style": "illustrated",
-      "description": "An illustrated collage showing symbols of international organizations — the UN building, a Red Cross emblem, a globe with a stethoscope representing WHO, and a Scout fleur-de-lis — arranged around a world map. Clean, colorful educational style."
+      "description": "An illustrated collage showing symbols of international organizations — the UN building, a Red Cross emblem, a globe with a stethoscope representing WHO, and a Scout fleur-de-lis — arranged around a world map. Clean, colorful educational style.",
+      "width": 800,
+      "height": 447,
+      "v": "6266fa6d"
     },
     {
       "id": "trade-routes-illustration",
       "file": "req4.md",
-      "description": "An illustrated cargo ship on the ocean with colorful shipping containers, showing global trade in action. A port city with cranes and buildings is visible in the background. Bright, engaging illustration style."
+      "description": "An illustrated cargo ship on the ocean with colorful shipping containers, showing global trade in action. A port city with cranes and buildings is visible in the background. Bright, engaging illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "8246f31e"
     },
     {
       "id": "world-governments-map",
       "file": "req5.md",
       "style": "infographic",
-      "description": "An illustrated world map with different regions color-coded by government type, including a clear legend showing democracy, constitutional monarchy, authoritarian, communist state, and theocracy. Educational map style with distinct colors."
+      "description": "An illustrated world map with different regions color-coded by government type, including a clear legend showing democracy, constitutional monarchy, authoritarian, communist state, and theocracy. Educational map style with distinct colors.",
+      "width": 800,
+      "height": 447,
+      "v": "abecca4e"
     },
     {
       "id": "scout-map-activity",
       "file": "req5.md",
-      "description": "A Scout working on a world map poster at a table, coloring in countries with different markers and creating a legend. Reference books are nearby. The Scout is wearing a clean uniform and is focused on the activity."
+      "description": "A Scout working on a world map poster at a table, coloring in countries with different markers and creating a legend. Reference books are nearby. The Scout is wearing a clean uniform and is focused on the activity.",
+      "width": 800,
+      "height": 447,
+      "v": "e1f0a63d"
     },
     {
       "id": "embassy-diplomacy",
       "file": "req6.md",
-      "description": "An illustrated embassy building with the U.S. flag flying outside, showing diplomats greeting visitors at the entrance. The host country's cityscape is visible in the background. Professional, welcoming atmosphere."
+      "description": "An illustrated embassy building with the U.S. flag flying outside, showing diplomats greeting visitors at the entrance. The host country's cityscape is visible in the background. Professional, welcoming atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "f1714f88"
     },
     {
       "id": "passport-visa-illustration",
       "file": "req6.md",
-      "description": "An illustrated open passport with colorful visa stamps from various countries, alongside a boarding pass and a small world map. The composition conveys the excitement of international travel. Clean illustration style."
+      "description": "An illustrated open passport with colorful visa stamps from various countries, alongside a boarding pass and a small world map. The composition conveys the excitement of international travel. Clean illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "a69acad7"
     },
     {
       "id": "scout-cultural-festival",
       "file": "req7.md",
-      "description": "A Scout in a clean uniform at a vibrant international cultural festival, looking at colorful displays from different countries. Food booths and flags from around the world are visible in the background. Lively, festive atmosphere."
+      "description": "A Scout in a clean uniform at a vibrant international cultural festival, looking at colorful displays from different countries. Food booths and flags from around the world are visible in the background. Lively, festive atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "2e301c58"
     },
     {
       "id": "jota-joti-scouts",
       "file": "req7.md",
-      "description": "A Scout wearing headphones and speaking into a ham radio microphone with a world map on the wall behind them showing pins where they have made contact with Scouts in other countries. The Scout is wearing a clean uniform and looks excited."
+      "description": "A Scout wearing headphones and speaking into a ham radio microphone with a world map on the wall behind them showing pins where they have made contact with Scouts in other countries. The Scout is wearing a clean uniform and looks excited.",
+      "width": 800,
+      "height": 447,
+      "v": "e19d77b3"
     },
     {
       "id": "model-un-conference",
       "file": "extended-learning.md",
-      "description": "Students in business attire seated at desks with country nameplates, participating in a Model United Nations conference in a large meeting hall. The scene shows active debate and engagement among diverse young people."
+      "description": "Students in business attire seated at desks with country nameplates, participating in a Model United Nations conference in a large meeting hall. The scene shows active debate and engagement among diverse young people.",
+      "width": 800,
+      "height": 447,
+      "v": "bf962cbe"
     }
   ]
 }

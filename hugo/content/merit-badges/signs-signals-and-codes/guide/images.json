@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean overhead instructional diagram showing seven large ground-to-air distress symbols laid out on open terrain at realistic scale: V, X, arrow, F, LL, N, and Y. Include one small human figure beside the symbols for scale. Use only very short labels with each symbol meaning such as assistance, medical, direction, food and water, all well, no, and yes. Keep the background simple and high-contrast with no decorative text.",
-      "value": "Shows the actual ground shapes and relative scale of the standard symbols side by side — you must see these patterns to reproduce them clearly for rescuers"
+      "value": "Shows the actual ground shapes and relative scale of the standard symbols side by side — you must see these patterns to reproduce them clearly for rescuers",
+      "width": 800,
+      "height": 447,
+      "v": "97f8fef2"
     },
     {
       "id": "signal-mirror-aiming-technique",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Realistic close instructional photo of a hiker in practical outdoor clothing using a signal mirror in daylight. Show the mirror held near one eye, the other arm extended with two fingers making a V toward a distant aircraft, and the reflected sunlight spot aligned in the finger gap. Add only a few short callouts such as mirror near eye, V fingers, reflected spot, and aircraft. No logos, no branding, no visible text on clothing.",
-      "value": "Shows the exact hand positions and aiming alignment needed to flash a signal mirror accurately — grip and sighting geometry are difficult to learn from text alone"
+      "value": "Shows the exact hand positions and aiming alignment needed to flash a signal mirror accurately — grip and sighting geometry are difficult to learn from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "7b107c12"
     },
     {
       "id": "semaphore-vs-nautical-flags",
@@ -24,7 +30,10 @@
       "style": "comparison",
       "verb_family": "describe",
       "description": "Split-frame instructional comparison. Left panel: a person on a dock holding two small semaphore flags in a clear letter position, with a short label reading motion spells letters. Right panel: a ship mast hoisting three different nautical signal flags, with a short label reading flag design carries meaning. Keep labels minimal, keep both scenes simple, and include no logos or branding.",
-      "value": "Shows the visual contrast between motion-based semaphore and fixed-design nautical flags in one glance — the difference is much easier to grasp by seeing both systems side by side"
+      "value": "Shows the visual contrast between motion-based semaphore and fixed-design nautical flags in one glance — the difference is much easier to grasp by seeing both systems side by side",
+      "width": 800,
+      "height": 447,
+      "v": "afe59912"
     },
     {
       "id": "braille-cell-reading-technique",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Two-part educational diagram. Left side: a large braille cell with dots 1 through 6 clearly numbered in the standard two-by-three layout. Right side: a close view of fingertips gliding lightly across a line of braille cells with one short arrow showing horizontal reading movement and a tiny label reading light touch. Plain background, minimal text, no branding.",
-      "value": "Shows both the six-dot cell layout and the light fingertip motion used to read it — dot positions and touch technique are far clearer visually than in prose"
+      "value": "Shows both the six-dot cell layout and the light fingertip motion used to read it — dot positions and touch technique are far clearer visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "b601d671"
     },
     {
       "id": "silent-scout-signals-reference",
@@ -40,7 +52,10 @@
       "style": "illustrated",
       "verb_family": "show",
       "description": "Clean six-panel instructional illustration of one teenager in a plain tan uniform-style shirt and neckerchief, no readable patches or text, demonstrating six silent group signals: attention, gather, line up, follow me, stop, and get down. In the attention panel, the raised right hand must clearly show the Scout sign: exactly three fingers extended upright, with thumb touching the pinky. Make that hand pose large, unambiguous, and anatomically correct, with enough detail that the three-fingers-plus-thumb-to-pinky position is obvious at a glance. Use only those short labels below each panel. White background, consistent full-body pose, no decorative title, no branding.",
-      "value": "Shows the exact full-body positions for six common silent Scout signals side by side — these movement cues need to be seen, not just described"
+      "value": "Shows the exact full-body positions for six common silent Scout signals side by side — these movement cues need to be seen, not just described",
+      "width": 800,
+      "height": 447,
+      "v": "d254754e"
     },
     {
       "id": "trail-signs-reference-grid",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean outdoor instruction grid showing six traditional trail markers made from natural materials: arrow from sticks, turn marker, short distance marker, small stone cairn trail marker, danger stones in a row, and end-of-trail camp marker. Each example appears isolated on plain ground with only a very short label beneath it. Keep the materials realistic and minimal, with no branding or decorative text.",
-      "value": "Shows the actual shapes and material layouts of several trail markers at once — readers need to see these arrangements to recognize and build them correctly"
+      "value": "Shows the actual shapes and material layouts of several trail markers at once — readers need to see these arrangements to recognize and build them correctly",
+      "width": 800,
+      "height": 447,
+      "v": "30c3d843"
     },
     {
       "id": "topographic-map-symbols-legend-grid",
@@ -56,7 +74,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean educational legend-style grid showing ten common topographic map symbols on a plain background: perennial stream, intermittent stream, contour line, index contour, forest shading, lake, building, paved road, trail, and benchmark peak. Use only these short labels next to each symbol. Keep the symbols large and crisp, with no extra paragraph text, no logos, and no branding.",
-      "value": "Shows the visual appearance of ten common topo symbols in a true legend-style layout — symbol recognition is much faster by sight than from verbal descriptions alone"
+      "value": "Shows the visual appearance of ten common topo symbols in a true legend-style layout — symbol recognition is much faster by sight than from verbal descriptions alone",
+      "width": 800,
+      "height": 447,
+      "v": "564bec0e"
     }
   ]
 }

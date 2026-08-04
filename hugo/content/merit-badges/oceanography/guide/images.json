@@ -7,7 +7,10 @@
       "file": "_index.md",
       "style": "diagram",
       "description": "Clean educational ocean cross-section collage showing surface waves, a research vessel lowering instruments, a coral reef zone with fish, open-water plankton, and deep-sea terrain with ridge and trench, arranged as one connected ocean system with minimal short labels and no branding text",
-      "value": "Cross-section view ties surface processes, ocean life, and deep-sea terrain into one connected system that text alone cannot show at a glance"
+      "value": "Cross-section view ties surface processes, ocean life, and deep-sea terrain into one connected system that text alone cannot show at a glance",
+      "width": 800,
+      "height": 447,
+      "v": "39352086"
     },
     {
       "id": "ctd-ocean-profile",
@@ -15,7 +18,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clear labeled diagram of a CTD instrument package being lowered from a research ship into the ocean, with simple labels for conductivity sensor, temperature sensor, depth or pressure sensor, cable, and water column, plus a basic depth profile inset, minimal horizontal text only",
-      "value": "Shows the physical arrangement of CTD sensors and how one instrument profiles the water column, a spatial relationship text alone cannot teach clearly"
+      "value": "Shows the physical arrangement of CTD sensors and how one instrument profiles the water column, a spatial relationship text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "92a55a4b"
     },
     {
       "id": "breakers-formation-sequence",
@@ -23,7 +29,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Four-panel sequence of a wave moving from deep water into shallow water, with the base slowing, the crest steepening, and the toppling breaker forming near shore, clean side-view diagram with arrows and very short labels only",
-      "value": "Step-by-step sequence shows how bottom friction steepens a wave into a breaker, motion and progression that are hard to understand from text alone"
+      "value": "Step-by-step sequence shows how bottom friction steepens a wave into a breaker, motion and progression that are hard to understand from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "ee5a61e8"
     },
     {
       "id": "ocean-floor-cross-section",
@@ -31,7 +40,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Wide side-view diagram of the seafloor from continent to deep ocean, clearly showing continental shelf, continental slope, abyssal plain, submarine canyon, seamount, guyot, oceanic ridge, rift valley, and trench with short horizontal labels and no decorative elements",
-      "value": "Side-view layout lets the reader compare the relative position and shape of seafloor features in one glance, which a list of definitions cannot provide"
+      "value": "Side-view layout lets the reader compare the relative position and shape of seafloor features in one glance, which a list of definitions cannot provide",
+      "width": 800,
+      "height": 447,
+      "v": "14768b4f"
     },
     {
       "id": "plankton-sample-microscope",
@@ -39,7 +51,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Close-up realistic microscope-slide view of a plankton sample in shallow water on glass, showing several distinct plankton forms such as diatom-like shapes, copepod-like bodies, and tiny larvae, with a few clean callouts circling the most common types, minimal text and no branding",
-      "value": "Shows side-by-side visual differences among common plankton forms so the reader can recognize what they are looking at under magnification"
+      "value": "Shows side-by-side visual differences among common plankton forms so the reader can recognize what they are looking at under magnification",
+      "width": 800,
+      "height": 447,
+      "v": "a156e00a"
     },
     {
       "id": "secchi-disk-water-study",
@@ -47,7 +62,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Realistic instructional scene of a teenager in weather-appropriate field clothes and life jacket lowering a black-and-white Secchi disk from a dock into calm water while recording measurements on a clipboard, with clean callouts for disk, marked line, water surface, and observation notes, no branding text",
-      "value": "Shows the actual setup and hand positioning for a Secchi disk measurement, which is much easier to learn visually than from description alone"
+      "value": "Shows the actual setup and hand positioning for a Secchi disk measurement, which is much easier to learn visually than from description alone",
+      "width": 800,
+      "height": 447,
+      "v": "e6779ef6"
     },
     {
       "id": "littoral-current-model",
@@ -55,7 +73,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Top-down and slight side-angle educational tray model of a coastline with arrows showing longshore sediment movement, plus clearly marked berm, low-tide terrace, offshore bar, cliff edge, and high and low waterlines, simple horizontal labels only",
-      "value": "Model view makes sediment movement direction and the spatial relationship of shoreline features visible in a way paragraph descriptions cannot match"
+      "value": "Model view makes sediment movement direction and the spatial relationship of shoreline features visible in a way paragraph descriptions cannot match",
+      "width": 800,
+      "height": 447,
+      "v": "08da76a3"
     }
   ]
 }

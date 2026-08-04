@@ -8,7 +8,10 @@
       "style": "illustrated",
       "verb_family": "describe",
       "description": "Four-panel educational illustration comparing major robotics domains: an industrial robotic arm welding in a guarded work cell, a hospital service robot delivering supplies in a hallway, a Mars-style rover crossing rocky terrain, and a student-built competition robot on a practice field, clean separated panels, no branding, no visible organizational text",
-      "value": "Side-by-side comparison of four robotics domains and their environments — the contrast between contexts is clearer visually than in text alone"
+      "value": "Side-by-side comparison of four robotics domains and their environments — the contrast between contexts is clearer visually than in text alone",
+      "width": 800,
+      "height": 447,
+      "v": "6e74462c"
     },
     {
       "id": "robotics-ppe-bench",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Instructional workshop scene showing a Scout at a robotics workbench wearing safety glasses and closed-toe shoes, long hair secured, no dangling jewelry, tools neatly organized, power disconnected on the robot, with short callouts for eye protection, tidy workspace, and safe clothing, no branding or visible organizational text",
-      "value": "Shows the combination of correct protective gear, secured clothing, and tidy bench setup in one glance — a full safety posture that text alone cannot demonstrate as clearly"
+      "value": "Shows the combination of correct protective gear, secured clothing, and tidy bench setup in one glance — a full safety posture that text alone cannot demonstrate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "5529610e"
     },
     {
       "id": "robot-mobility-types",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean three-panel robotics mobility diagram showing a legged robot stepping over rubble, a quadcopter inspecting a tall structure from the air, and a snake robot moving through a pipe, each panel with a short horizontal label only, white background, educational technical style, no branding",
-      "value": "Compares three non-wheel mobility methods against the environments they fit best — the match between motion style and terrain is much easier to grasp visually"
+      "value": "Compares three non-wheel mobility methods against the environments they fit best — the match between motion style and terrain is much easier to grasp visually",
+      "width": 800,
+      "height": 447,
+      "v": "51d9251b"
     },
     {
       "id": "five-fields-of-robotics",
@@ -32,7 +41,10 @@
       "style": "illustrated",
       "verb_family": "identify",
       "description": "Simple educational illustration of one small wheeled robot with a gripper arm, shown beside a handheld controller and a laptop screen, with five short horizontal labels only: interface, mobility, manipulation, programming, sensors, clean white background, no logos, no extra text",
-      "value": "Maps the five major robotics fields onto one robot system at once — the relationship between abstract categories and physical parts is difficult to teach with text alone"
+      "value": "Maps the five major robotics fields onto one robot system at once — the relationship between abstract categories and physical parts is difficult to teach with text alone",
+      "width": 800,
+      "height": 447,
+      "v": "184f56a8"
     },
     {
       "id": "robotics-notebook-mission-plan",
@@ -40,7 +52,10 @@
       "style": "annotated-photo",
       "verb_family": "create",
       "description": "Top-down view of an open engineering notebook on a clean table with a small robot sketch, a short mission statement, labeled sensor note, and simple success criteria checklist, pencil and ruler nearby, with subtle callouts for task, sensor feedback, and success definition, no branding or visible organizational text",
-      "value": "Shows how a clear robot mission is organized on the page with task, sensor role, and success criteria together — planning structure is easier to model visually than from prose"
+      "value": "Shows how a clear robot mission is organized on the page with task, sensor role, and success criteria together — planning structure is easier to model visually than from prose",
+      "width": 800,
+      "height": 447,
+      "v": "5dff6577"
     },
     {
       "id": "robotics-design-sketch",
@@ -48,14 +63,20 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Engineering notebook style robot design diagram with top and side sketches of a small wheeled robot with lifting arm, sensor placement marked on the front, battery and controller locations labeled, and two degrees of freedom highlighted with arrows for drive movement and arm lift, clean educational drafting style, short labels only",
-      "value": "Shows sensor placement, subsystem layout, and two independent motions in one plan view — those design relationships are hard to visualize from text alone"
+      "value": "Shows sensor placement, subsystem layout, and two independent motions in one plan view — those design relationships are hard to visualize from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "4da4aaaa"
     },
     {
       "id": "robotics-prototype-bench",
       "file": "req4c.md",
       "verb_family": "create",
       "description": "Clean instructional photo of a half-built small student robot on a workbench, with visible frame, wheels, battery, controller, and sensor wiring laid out clearly during assembly, no labels, no branding, no visible organizational text",
-      "value": "Shows how the main subsystems physically fit together during a real prototype build — the transition from sketch to hardware is clearer visually than in text"
+      "value": "Shows how the main subsystems physically fit together during a real prototype build — the transition from sketch to hardware is clearer visually than in text",
+      "width": 800,
+      "height": 447,
+      "v": "7456f525"
     },
     {
       "id": "robotics-flowchart-example",
@@ -63,7 +84,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Clean flowchart diagram for a simple sensor-based robot showing start, drive forward action, distance sensor check in a decision diamond, yes branch to stop and raise arm, no branch looping back to keep driving, minimal large labels only, white background, educational diagram style",
-      "value": "Shows the exact branching logic of a sensor-driven robot in a readable sequence — decision flow is much easier to understand visually than through paragraph explanation"
+      "value": "Shows the exact branching logic of a sensor-driven robot in a readable sequence — decision flow is much easier to understand visually than through paragraph explanation",
+      "width": 800,
+      "height": 447,
+      "v": "32ec15f3"
     }
   ]
 }

@@ -5,124 +5,190 @@
     {
       "id": "scout-examining-collection",
       "file": "_index.md",
-      "description": "A Scout (age 14, wearing a clean tan Scout uniform shirt) sitting at a well-lit wooden table, leaning forward with interest while examining a small collectible item through a magnifying glass. On the table around them are organized display cases, a stamp album open to colorful pages, a few coins in protective flips, and a notebook. Warm natural light from a nearby window. The scene conveys curiosity and careful study."
+      "description": "A Scout (age 14, wearing a clean tan Scout uniform shirt) sitting at a well-lit wooden table, leaning forward with interest while examining a small collectible item through a magnifying glass. On the table around them are organized display cases, a stamp album open to colorful pages, a few coins in protective flips, and a notebook. Warm natural light from a nearby window. The scene conveys curiosity and careful study.",
+      "width": 800,
+      "height": 447,
+      "v": "9f587aad"
     },
     {
       "id": "cabinets-of-curiosities-to-modern",
       "file": "_index.md",
       "style": "comparison",
-      "description": "Split comparison image. LEFT side: A Renaissance-era cabinet of curiosities (Wunderkammer) with wooden shelving filled with seashells, mineral specimens, taxidermy birds, dried plants, and small sculptures in a dimly lit room with candlelight. RIGHT side: A modern collector's organized display room with LED-lit glass cases, neatly labeled mineral specimens, a digital tablet showing a cataloging app, and clean white shelving. The contrast highlights centuries of evolution in how people collect and display."
+      "description": "Split comparison image. LEFT side: A Renaissance-era cabinet of curiosities (Wunderkammer) with wooden shelving filled with seashells, mineral specimens, taxidermy birds, dried plants, and small sculptures in a dimly lit room with candlelight. RIGHT side: A modern collector's organized display room with LED-lit glass cases, neatly labeled mineral specimens, a digital tablet showing a cataloging app, and clean white shelving. The contrast highlights centuries of evolution in how people collect and display.",
+      "width": 800,
+      "height": 447,
+      "v": "df23cb43"
     },
     {
       "id": "collection-variety-grid",
       "file": "_index.md",
       "style": "infographic",
-      "description": "A six-panel grid infographic showing different types of collections. Panel 1: Colorful postage stamps arranged in an album page. Panel 2: Shiny coins in a velvet-lined display case. Panel 3: Vibrant mineral specimens (amethyst, pyrite, malachite) on a white background. Panel 4: Trading cards in protective penny sleeves and top-loaders. Panel 5: Vintage comic books fanned out showing colorful covers. Panel 6: Vinyl records standing upright on a wooden shelf. Each panel has a small label below: Stamps, Coins, Minerals, Cards, Comics, Vinyl. Clean layout with thin borders between panels."
+      "description": "A six-panel grid infographic showing different types of collections. Panel 1: Colorful postage stamps arranged in an album page. Panel 2: Shiny coins in a velvet-lined display case. Panel 3: Vibrant mineral specimens (amethyst, pyrite, malachite) on a white background. Panel 4: Trading cards in protective penny sleeves and top-loaders. Panel 5: Vintage comic books fanned out showing colorful covers. Panel 6: Vinyl records standing upright on a wooden shelf. Each panel has a small label below: Stamps, Coins, Minerals, Cards, Comics, Vinyl. Clean layout with thin borders between panels.",
+      "width": 800,
+      "height": 447,
+      "v": "b10c8630"
     },
     {
       "id": "scout-writing-report",
       "file": "req1.md",
-      "description": "A Scout (age 13, wearing a clean tan Scout uniform shirt) sitting at a desk writing in a spiral notebook with a pencil. Nearby on the desk are a few collection items spread out for reference: a small coin album open to a page of quarters, a magnifying glass, and a printed reference guide. The Scout looks focused and engaged. Warm desk lamp lighting. Tidy workspace."
+      "description": "A Scout (age 13, wearing a clean tan Scout uniform shirt) sitting at a desk writing in a spiral notebook with a pencil. Nearby on the desk are a few collection items spread out for reference: a small coin album open to a page of quarters, a magnifying glass, and a printed reference guide. The Scout looks focused and engaged. Warm desk lamp lighting. Tidy workspace.",
+      "width": 800,
+      "height": 447,
+      "v": "0a988698"
     },
     {
       "id": "collection-growth-timeline",
       "file": "req2.md",
       "style": "infographic",
-      "description": "A horizontal timeline infographic showing the growth of a collection over time. The timeline moves left to right with five milestone markers connected by a flowing path: 'First Item' (icon of a single coin), 'First Trade' (icon of two arrows exchanging), 'Joined a Club' (icon of people), '50th Item' (icon of a filled display case), 'First Rare Find' (icon of a star/gem). Below the timeline, a subtle bar chart shows the collection growing in size. Clean design with muted earth tones and clear labels."
+      "description": "A horizontal timeline infographic showing the growth of a collection over time. The timeline moves left to right with five milestone markers connected by a flowing path: 'First Item' (icon of a single coin), 'First Trade' (icon of two arrows exchanging), 'Joined a Club' (icon of people), '50th Item' (icon of a filled display case), 'First Rare Find' (icon of a star/gem). Below the timeline, a subtle bar chart shows the collection growing in size. Clean design with muted earth tones and clear labels.",
+      "width": 800,
+      "height": 447,
+      "v": "c4a6ec11"
     },
     {
       "id": "scout-comparing-items",
       "file": "req2.md",
-      "description": "A Scout (age 15, wearing a clean tan Scout uniform shirt) holding two similar coins side by side, one in each hand, comparing them carefully. One coin appears worn and the other is in excellent condition, showing the difference visually. A magnifying loupe sits on the table nearby along with a reference book. The Scout has a concentrated, analytical expression. Good overhead lighting."
+      "description": "A Scout (age 15, wearing a clean tan Scout uniform shirt) holding two similar coins side by side, one in each hand, comparing them carefully. One coin appears worn and the other is in excellent condition, showing the difference visually. A magnifying loupe sits on the table nearby along with a reference book. The Scout has a concentrated, analytical expression. Good overhead lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "38ba11fb"
     },
     {
       "id": "preservation-supplies",
       "file": "req3a.md",
       "style": "diagram",
-      "description": "A flat-lay diagram of archival preservation supplies neatly arranged on a white background with thin labels pointing to each item: white cotton gloves, nitrile gloves, stamp tongs (not tweezers), acid-free coin flips, plastic coin capsules, penny sleeves for cards, top-loader card holders, a soft felt pad, acid-free tissue paper, a small hygrometer, and silica gel packets. Each item has a clean label with its name and brief purpose. Overhead view, organized in a grid layout."
+      "description": "A flat-lay diagram of archival preservation supplies neatly arranged on a white background with thin labels pointing to each item: white cotton gloves, nitrile gloves, stamp tongs (not tweezers), acid-free coin flips, plastic coin capsules, penny sleeves for cards, top-loader card holders, a soft felt pad, acid-free tissue paper, a small hygrometer, and silica gel packets. Each item has a clean label with its name and brief purpose. Overhead view, organized in a grid layout.",
+      "width": 800,
+      "height": 447,
+      "v": "b46858bd"
     },
     {
       "id": "storage-environment-comparison",
       "file": "req3a.md",
       "style": "comparison",
-      "description": "Split comparison image. LEFT side labeled 'Poor Storage': A dusty attic space with fluctuating temperatures visible via a thermometer showing extreme heat, direct sunlight streaming through a window onto cardboard boxes of collectibles, visible moisture condensation, and a spider web. Items show visible damage — faded colors, warped paper, tarnished metal. RIGHT side labeled 'Proper Storage': A climate-controlled room with archival storage boxes on metal shelving, a digital hygrometer showing 45% humidity and 68°F, indirect lighting, and items in protective holders. Everything is clean and organized."
+      "description": "Split comparison image. LEFT side labeled 'Poor Storage': A dusty attic space with fluctuating temperatures visible via a thermometer showing extreme heat, direct sunlight streaming through a window onto cardboard boxes of collectibles, visible moisture condensation, and a spider web. Items show visible damage — faded colors, warped paper, tarnished metal. RIGHT side labeled 'Proper Storage': A climate-controlled room with archival storage boxes on metal shelving, a digital hygrometer showing 45% humidity and 68°F, indirect lighting, and items in protective holders. Everything is clean and organized.",
+      "width": 800,
+      "height": 447,
+      "v": "bbd89db6"
     },
     {
       "id": "display-case-setup",
       "file": "req3b.md",
-      "description": "A well-organized collection display case (shadow box style) showing mineral specimens arranged on black velvet with small printed labels next to each specimen. The case has proper indirect LED lighting that highlights the specimens without creating glare. Specimens include a purple amethyst cluster, golden pyrite cubes, and green malachite. Each label shows the mineral name, location found, and date acquired. The display looks professional and museum-quality."
+      "description": "A well-organized collection display case (shadow box style) showing mineral specimens arranged on black velvet with small printed labels next to each specimen. The case has proper indirect LED lighting that highlights the specimens without creating glare. Specimens include a purple amethyst cluster, golden pyrite cubes, and green malachite. Each label shows the mineral name, location found, and date acquired. The display looks professional and museum-quality.",
+      "width": 800,
+      "height": 447,
+      "v": "6a839981"
     },
     {
       "id": "display-labeling-example",
       "file": "req3b.md",
       "style": "diagram",
-      "description": "Close-up educational diagram showing the anatomy of a proper collection display label. A sample label card is shown enlarged with labeled arrows pointing to each element: Item Name (in bold), Date/Era, Origin/Source, Condition Grade, and a brief Description. Next to the label is a small mineral specimen it describes. The diagram also shows label placement relative to the item — slightly in front and below, angled for easy reading. Clean white background with thin guide lines."
+      "description": "Close-up educational diagram showing the anatomy of a proper collection display label. A sample label card is shown enlarged with labeled arrows pointing to each element: Item Name (in bold), Date/Era, Origin/Source, Condition Grade, and a brief Description. Next to the label is a small mineral specimen it describes. The diagram also shows label placement relative to the item — slightly in front and below, angled for easy reading. Clean white background with thin guide lines.",
+      "width": 800,
+      "height": 447,
+      "v": "8c7552ad"
     },
     {
       "id": "collector-show-floor",
       "file": "req3c.md",
-      "description": "A wide-angle view of a busy indoor collector show. Rows of tables with dealers displaying items under bright lighting. Attendees of various ages browse the tables, some examining items with magnifying loupes. Signs and banners hang above sections. A Scout (age 14, clean tan uniform shirt) is visible in the crowd, looking at a display table with interest. The atmosphere is busy and energetic but organized. Convention center or hotel ballroom setting."
+      "description": "A wide-angle view of a busy indoor collector show. Rows of tables with dealers displaying items under bright lighting. Attendees of various ages browse the tables, some examining items with magnifying loupes. Signs and banners hang above sections. A Scout (age 14, clean tan uniform shirt) is visible in the crowd, looking at a display table with interest. The atmosphere is busy and energetic but organized. Convention center or hotel ballroom setting.",
+      "width": 800,
+      "height": 447,
+      "v": "1ebae2ae"
     },
     {
       "id": "cataloging-methods-comparison",
       "file": "req3d.md",
       "style": "infographic",
-      "description": "A three-panel infographic comparing cataloging methods. Panel 1 labeled 'Notebook': An open spiral notebook with handwritten entries showing item name, date, and condition in neat columns, with a pencil beside it. Panel 2 labeled 'Spreadsheet': A laptop screen showing a Google Sheets spreadsheet with columns for Name, Date, Source, Grade, Value, and Location, with colored cells and sort arrows. Panel 3 labeled 'App': A smartphone screen showing a collection cataloging app interface with item photos, search bar, and category filters. Each panel has a small pro/con list below. Clean design with consistent styling."
+      "description": "A three-panel infographic comparing cataloging methods. Panel 1 labeled 'Notebook': An open spiral notebook with handwritten entries showing item name, date, and condition in neat columns, with a pencil beside it. Panel 2 labeled 'Spreadsheet': A laptop screen showing a Google Sheets spreadsheet with columns for Name, Date, Source, Grade, Value, and Location, with colored cells and sort arrows. Panel 3 labeled 'App': A smartphone screen showing a collection cataloging app interface with item photos, search bar, and category filters. Each panel has a small pro/con list below. Clean design with consistent styling.",
+      "width": 800,
+      "height": 447,
+      "v": "8298918d"
     },
     {
       "id": "collector-evaluating-purchase",
       "file": "req4.md",
-      "description": "A Scout (age 15, wearing a clean tan Scout uniform shirt) at a table carefully examining a spread of collectible items (coins or cards) with a magnifying loupe held to one eye. On the table is a price guide book open to a reference page, a small notepad with handwritten notes, and several items arranged in rows. The Scout has a thoughtful, evaluative expression — weighing a purchase decision. Indoor setting with good task lighting."
+      "description": "A Scout (age 15, wearing a clean tan Scout uniform shirt) at a table carefully examining a spread of collectible items (coins or cards) with a magnifying loupe held to one eye. On the table is a price guide book open to a reference page, a small notepad with handwritten notes, and several items arranged in rows. The Scout has a thoughtful, evaluative expression — weighing a purchase decision. Indoor setting with good task lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "89a839ee"
     },
     {
       "id": "collector-terms-flashcards",
       "file": "req5a.md",
       "style": "illustrated",
-      "description": "A set of illustrated flashcards spread out on a wooden table surface. Each card shows a collector term on the visible side with a small illustration: 'Obverse' with a coin face sketch, 'Centering' with a card showing border measurements, 'Perforation Gauge' with a stamp edge detail, 'Mint State' with a gleaming coin, 'Toning' with a coin showing rainbow surface colors, and 'Short Print' with a card marked 'SP'. The cards have a clean educational style with consistent formatting — term in bold, small illustration below. Some cards are face-up showing definitions. Warm overhead lighting."
+      "description": "A set of illustrated flashcards spread out on a wooden table surface. Each card shows a collector term on the visible side with a small illustration: 'Obverse' with a coin face sketch, 'Centering' with a card showing border measurements, 'Perforation Gauge' with a stamp edge detail, 'Mint State' with a gleaming coin, 'Toning' with a coin showing rainbow surface colors, and 'Short Print' with a card marked 'SP'. The cards have a clean educational style with consistent formatting — term in bold, small illustration below. Some cards are face-up showing definitions. Warm overhead lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "c2407434"
     },
     {
       "id": "organized-collection-groups",
       "file": "req5b.md",
-      "description": "Two distinct groups of mineral specimens arranged on a dark felt-covered table, separated by a clear gap. The left group is organized by type (labeled 'By Mineral Type') with similar specimens grouped together — quartzes in one cluster, feldspars in another, micas in a third. The right group is organized by location (labeled 'By Geographic Origin') with small location cards reading state names next to each specimen. Small printed labels identify each specimen. Clear, well-lit overhead shot showing the organizational contrast."
+      "description": "Two distinct groups of mineral specimens arranged on a dark felt-covered table, separated by a clear gap. The left group is organized by type (labeled 'By Mineral Type') with similar specimens grouped together — quartzes in one cluster, feldspars in another, micas in a third. The right group is organized by location (labeled 'By Geographic Origin') with small location cards reading state names next to each specimen. Small printed labels identify each specimen. Clear, well-lit overhead shot showing the organizational contrast.",
+      "width": 800,
+      "height": 447,
+      "v": "ade93844"
     },
     {
       "id": "value-research-tools",
       "file": "req5c.md",
-      "description": "A Scout's workspace showing multiple value research tools in use. A Red Book coin price guide is open on the desk showing price listings. Next to it, a laptop screen displays an eBay search results page filtered to 'Sold Items' with completed auction prices visible. A smartphone on the other side shows a grading service app with a population report. A few coins in protective holders sit between the references. The scene shows active research in progress. Good desk lighting."
+      "description": "A Scout's workspace showing multiple value research tools in use. A Red Book coin price guide is open on the desk showing price listings. Next to it, a laptop screen displays an eBay search results page filtered to 'Sold Items' with completed auction prices visible. A smartphone on the other side shows a grading service app with a population report. A few coins in protective holders sit between the references. The scene shows active research in progress. Good desk lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "58d272e5"
     },
     {
       "id": "grading-scale-visual",
       "file": "req5d.md",
       "style": "diagram",
-      "description": "An educational diagram showing five versions of the same type of coin (a Walking Liberty half dollar) at different grades, arranged horizontally from left (lowest grade) to right (highest grade). Labels below each: 'AG-3 (About Good)', 'F-12 (Fine)', 'VF-30 (Very Fine)', 'AU-50 (About Uncirculated)', 'MS-65 (Gem Mint State)'. Thin arrows point to specific areas on each coin showing the wear differences — flattened details on lower grades, sharp details and luster on higher grades. White background, clean labels, educational tone."
+      "description": "An educational diagram showing five versions of the same type of coin (a Walking Liberty half dollar) at different grades, arranged horizontally from left (lowest grade) to right (highest grade). Labels below each: 'AG-3 (About Good)', 'F-12 (Fine)', 'VF-30 (Very Fine)', 'AU-50 (About Uncirculated)', 'MS-65 (Gem Mint State)'. Thin arrows point to specific areas on each coin showing the wear differences — flattened details on lower grades, sharp details and luster on higher grades. White background, clean labels, educational tone.",
+      "width": 800,
+      "height": 447,
+      "v": "c67a8e7a"
     },
     {
       "id": "professional-grading-slab",
       "file": "req5d.md",
-      "description": "A close-up photograph of a professionally graded collectible coin sealed in a clear tamper-evident plastic holder (slab). The printed label at the top of the slab shows the grade (MS-65), certification number, coin identification (year, denomination, type), and the grading service logo. The coin is visible through the clear window, showing sharp detail. The slab is resting on a dark velvet surface at a slight angle, with soft lighting that shows the holographic security feature on the label."
+      "description": "A close-up photograph of a professionally graded collectible coin sealed in a clear tamper-evident plastic holder (slab). The printed label at the top of the slab shows the grade (MS-65), certification number, coin identification (year, denomination, type), and the grading service logo. The coin is visible through the clear window, showing sharp detail. The slab is resting on a dark velvet surface at a slight angle, with soft lighting that shows the holographic security feature on the label.",
+      "width": 800,
+      "height": 447,
+      "v": "b670322d"
     },
     {
       "id": "collector-club-meeting",
       "file": "req5e.md",
-      "description": "A group of collectors of various ages (including teens in clean Scout uniform shirts and adults in casual clothing) gathered around a large table at a community center or library meeting room. Items are spread on the table for discussion — coins in flips, a few albums, magnifying glasses. One person is holding up an item while others lean in to look. A small banner or sign reading 'Coin Club' or similar is visible on the wall. The atmosphere is friendly, educational, and inclusive."
+      "description": "A group of collectors of various ages (including teens in clean Scout uniform shirts and adults in casual clothing) gathered around a large table at a community center or library meeting room. Items are spread on the table for discussion — coins in flips, a few albums, magnifying glasses. One person is holding up an item while others lean in to look. A small banner or sign reading 'Coin Club' or similar is visible on the wall. The atmosphere is friendly, educational, and inclusive.",
+      "width": 800,
+      "height": 447,
+      "v": "17a2e698"
     },
     {
       "id": "identification-marks-closeup",
       "file": "req5f.md",
       "style": "annotated-photo",
-      "description": "An annotated photograph showing four close-up views of identification marks on different collectibles, arranged in a 2x2 grid. Top-left: A coin with an arrow pointing to a tiny mint mark letter 'D' below the date. Top-right: A stamp with an arrow pointing to its Scott catalog number in a reference margin. Bottom-left: A silver item with an arrow pointing to a '925' hallmark stamp. Bottom-right: A graded card slab label with an arrow pointing to the serial/certification number. Each close-up has a clean label explaining what the mark means. White divider lines between the four views."
+      "description": "An annotated photograph showing four close-up views of identification marks on different collectibles, arranged in a 2x2 grid. Top-left: A coin with an arrow pointing to a tiny mint mark letter 'D' below the date. Top-right: A stamp with an arrow pointing to its Scott catalog number in a reference margin. Bottom-left: A silver item with an arrow pointing to a '925' hallmark stamp. Bottom-right: A graded card slab label with an arrow pointing to the serial/certification number. Each close-up has a clean label explaining what the mark means. White divider lines between the four views.",
+      "width": 800,
+      "height": 447,
+      "v": "219e2ea1"
     },
     {
       "id": "collection-roadmap",
       "file": "req6.md",
       "style": "infographic",
-      "description": "An illustrated roadmap infographic showing a collector's journey as a winding path from bottom-left to top-right. Milestone markers along the path with icons and labels: 'First Item' (single object icon), 'Learn the Basics' (book icon), 'Join a Club' (people icon), 'Complete First Set' (checklist icon), 'Attend a Show' (building icon), 'Develop a Specialty' (magnifying glass icon), 'Become an Expert' (star icon). The path transitions from simple/green at the start to more sophisticated/gold at the end. Soft gradient background, clean modern design."
+      "description": "An illustrated roadmap infographic showing a collector's journey as a winding path from bottom-left to top-right. Milestone markers along the path with icons and labels: 'First Item' (single object icon), 'Learn the Basics' (book icon), 'Join a Club' (people icon), 'Complete First Set' (checklist icon), 'Attend a Show' (building icon), 'Develop a Specialty' (magnifying glass icon), 'Become an Expert' (star icon). The path transitions from simple/green at the start to more sophisticated/gold at the end. Soft gradient background, clean modern design.",
+      "width": 800,
+      "height": 447,
+      "v": "0f422d78"
     },
     {
       "id": "careers-in-collecting-montage",
       "file": "req7.md",
       "style": "infographic",
-      "description": "A four-panel infographic showing different careers in collecting. Panel 1 'Museum Curator': A professional arranging items in a glass museum display case with white gloves. Panel 2 'Appraiser': A professional examining a small item through a jeweler's loupe at a desk with reference books. Panel 3 'Auctioneer': A professional at a podium with a gavel, audience visible in foreground. Panel 4 'Conservator': A professional in a lab coat carefully cleaning a historical artifact under a bright task light with fine tools. Each panel has the job title below and a clean consistent visual style. Muted professional color palette."
+      "description": "A four-panel infographic showing different careers in collecting. Panel 1 'Museum Curator': A professional arranging items in a glass museum display case with white gloves. Panel 2 'Appraiser': A professional examining a small item through a jeweler's loupe at a desk with reference books. Panel 3 'Auctioneer': A professional at a podium with a gavel, audience visible in foreground. Panel 4 'Conservator': A professional in a lab coat carefully cleaning a historical artifact under a bright task light with fine tools. Each panel has the job title below and a clean consistent visual style. Muted professional color palette.",
+      "width": 800,
+      "height": 447,
+      "v": "56d0e574"
     }
   ]
 }

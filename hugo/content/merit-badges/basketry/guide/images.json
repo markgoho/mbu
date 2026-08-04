@@ -5,85 +5,130 @@
     {
       "id": "scout-weaving-basket",
       "file": "_index.md",
-      "description": "A Scout (age 13-14, wearing a clean Scout BSA uniform shirt) sitting at a wooden picnic table outdoors on a sunny day, weaving a reed basket. On the table are basketry supplies: a bucket of water with reed soaking in it, bundles of flat reed, and reed cutters. The Scout is focused and engaged, holding the basket-in-progress in one hand and threading a reed strip with the other. Background shows a grassy park or campsite setting."
+      "description": "A Scout (age 13-14, wearing a clean Scout BSA uniform shirt) sitting at a wooden picnic table outdoors on a sunny day, weaving a reed basket. On the table are basketry supplies: a bucket of water with reed soaking in it, bundles of flat reed, and reed cutters. The Scout is focused and engaged, holding the basket-in-progress in one hand and threading a reed strip with the other. Background shows a grassy park or campsite setting.",
+      "width": 800,
+      "height": 447,
+      "v": "c045e4c6"
     },
     {
       "id": "plaited-basket-closeup",
       "file": "_index.md",
       "style": "illustrated",
-      "description": "A detailed illustration of a plaited basket viewed from a slight angle, with a magnified inset showing the over-under checkerboard weave pattern of flat reed strips. The strips are woven at right angles in alternating colors (natural tan and light brown) to make the pattern clearly visible. Clean white background with labels pointing to 'flat strips' and 'over-under pattern'. Educational, clean line art style."
+      "description": "A detailed illustration of a plaited basket viewed from a slight angle, with a magnified inset showing the over-under checkerboard weave pattern of flat reed strips. The strips are woven at right angles in alternating colors (natural tan and light brown) to make the pattern clearly visible. Clean white background with labels pointing to 'flat strips' and 'over-under pattern'. Educational, clean line art style.",
+      "width": 800,
+      "height": 447,
+      "v": "9e5c4723"
     },
     {
       "id": "four-basket-types",
       "file": "_index.md",
       "style": "diagram",
-      "description": "A 2x2 grid diagram showing four basket types. Top left: a plaited basket with flat woven strips in a grid pattern, labeled 'Plaited'. Top right: a coiled basket with visible spiral coils, labeled 'Coiled'. Bottom left: a wicker basket with round spokes and weavers, labeled 'Wicker'. Bottom right: a ribbed basket with hoop frame and curved ribs in a melon shape, labeled 'Ribbed'. Each basket is drawn in clean line art with subtle shading, on a white background. Clear labels beneath each basket."
+      "description": "A 2x2 grid diagram showing four basket types. Top left: a plaited basket with flat woven strips in a grid pattern, labeled 'Plaited'. Top right: a coiled basket with visible spiral coils, labeled 'Coiled'. Bottom left: a wicker basket with round spokes and weavers, labeled 'Wicker'. Bottom right: a ribbed basket with hoop frame and curved ribs in a melon shape, labeled 'Ribbed'. Each basket is drawn in clean line art with subtle shading, on a white background. Clear labels beneath each basket.",
+      "width": 800,
+      "height": 447,
+      "v": "da9b7a6d"
     },
     {
       "id": "basketry-tools-labeled",
       "file": "req1.md",
       "style": "diagram",
-      "description": "A clean diagram of common basketry tools arranged on a white background. Items include: reed cutters (side cutters), an awl with pointed tip, a utility/craft knife, a spray bottle, a packing tool (flat screwdriver-like tool), and a pair of thin work gloves. Each tool is drawn in detailed line art with a label arrow pointing to it. Clean, educational style suitable for a reference guide."
+      "description": "A clean diagram of common basketry tools arranged on a white background. Items include: reed cutters (side cutters), an awl with pointed tip, a utility/craft knife, a spray bottle, a packing tool (flat screwdriver-like tool), and a pair of thin work gloves. Each tool is drawn in detailed line art with a label arrow pointing to it. Clean, educational style suitable for a reference guide.",
+      "width": 800,
+      "height": 447,
+      "v": "9a9a00ab"
     },
     {
       "id": "first-aid-kit-basketry",
       "file": "req1.md",
-      "description": "A small open first-aid kit sitting on a workbench next to basketry materials (coils of reed, reed cutters). The kit shows adhesive bandages, tweezers, antiseptic wipes, gauze pads, and adhesive tape neatly organized inside. The scene is well-lit and clean, photographed from above at a slight angle. Natural wood workbench surface."
+      "description": "A small open first-aid kit sitting on a workbench next to basketry materials (coils of reed, reed cutters). The kit shows adhesive bandages, tweezers, antiseptic wipes, gauze pads, and adhesive tape neatly organized inside. The scene is well-lit and clean, photographed from above at a slight angle. Natural wood workbench surface.",
+      "width": 800,
+      "height": 447,
+      "v": "6d9e8b1b"
     },
     {
       "id": "basket-type-comparison",
       "file": "req2.md",
       "style": "comparison",
-      "description": "A four-panel comparison image showing the structural differences between basket types. Panel 1 (top-left): Plaited basket base showing flat strips woven in a grid, labeled 'Plaited — flat strips at right angles'. Panel 2 (top-right): Coiled basket base showing tight spiral from center, labeled 'Coiled — spiral from center outward'. Panel 3 (bottom-left): Wicker basket base showing radiating spokes with weavers, labeled 'Wicker — spokes with weavers'. Panel 4 (bottom-right): Ribbed basket showing hoop frame with curved ribs, labeled 'Ribbed — hoop frame with ribs'. Clean white dividers between panels."
+      "description": "A four-panel comparison image showing the structural differences between basket types. Panel 1 (top-left): Plaited basket base showing flat strips woven in a grid, labeled 'Plaited — flat strips at right angles'. Panel 2 (top-right): Coiled basket base showing tight spiral from center, labeled 'Coiled — spiral from center outward'. Panel 3 (bottom-left): Wicker basket base showing radiating spokes with weavers, labeled 'Wicker — spokes with weavers'. Panel 4 (bottom-right): Ribbed basket showing hoop frame with curved ribs, labeled 'Ribbed — hoop frame with ribs'. Clean white dividers between panels.",
+      "width": 800,
+      "height": 447,
+      "v": "069886e8"
     },
     {
       "id": "weave-types-illustrated",
       "file": "req2.md",
       "style": "diagram",
-      "description": "Three weave patterns shown side by side in cross-section detail view. Left panel: 'Simple (Plain) Weave' showing a weaver going over-one, under-one with alternating rows. Center panel: 'Twill Weave' showing a weaver going over-two, under-two with offset creating diagonal lines. Right panel: 'Twining' showing two weavers twisting around each other between spokes. Each panel has clean line art with the weaver in a darker color and the stakes/spokes in lighter color. Labels below each panel. White background, educational diagram style."
+      "description": "Three weave patterns shown side by side in cross-section detail view. Left panel: 'Simple (Plain) Weave' showing a weaver going over-one, under-one with alternating rows. Center panel: 'Twill Weave' showing a weaver going over-two, under-two with offset creating diagonal lines. Right panel: 'Twining' showing two weavers twisting around each other between spokes. Each panel has clean line art with the weaver in a darker color and the stakes/spokes in lighter color. Labels below each panel. White background, educational diagram style.",
+      "width": 800,
+      "height": 447,
+      "v": "c60f68eb"
     },
     {
       "id": "square-basket-weaving",
       "file": "req3a.md",
-      "description": "Close-up of hands weaving a square basket. The basket is in progress — the base is complete and the walls are about half-height. The weaver's hands are threading a flat reed strip through upright stakes in an over-under pattern. Clothespins hold some stakes in place. The workspace has a towel, spray bottle, and reed cutters visible at the edges. Natural indoor lighting, warm tones."
+      "description": "Close-up of hands weaving a square basket. The basket is in progress — the base is complete and the walls are about half-height. The weaver's hands are threading a flat reed strip through upright stakes in an over-under pattern. Clothespins hold some stakes in place. The workspace has a towel, spray bottle, and reed cutters visible at the edges. Natural indoor lighting, warm tones.",
+      "width": 800,
+      "height": 447,
+      "v": "4e425b09"
     },
     {
       "id": "completed-square-basket",
       "file": "req3a.md",
-      "description": "A completed square reed basket sitting on a wooden table. The basket is approximately 6 inches square and 4 inches tall, made from natural tan flat reed with a neat woven rim. The weave is tight and even, showing the over-under pattern clearly. Soft natural light from a window, clean background. The basket casts a gentle shadow on the table."
+      "description": "A completed square reed basket sitting on a wooden table. The basket is approximately 6 inches square and 4 inches tall, made from natural tan flat reed with a neat woven rim. The weave is tight and even, showing the over-under pattern clearly. Soft natural light from a window, clean background. The basket casts a gentle shadow on the table.",
+      "width": 800,
+      "height": 447,
+      "v": "d03918d5"
     },
     {
       "id": "round-basket-base-cross",
       "file": "req3b.md",
       "style": "illustrated",
-      "description": "An illustrated close-up of a round basket base being started. Shows round reed spokes arranged in a cross pattern (two groups of spokes crossing at the center), with the first 3-4 rows of weaving visible spiraling outward. The spokes are beginning to fan apart as the weaving progresses. Labels point to 'spokes', 'center cross', and 'weaver'. Clean educational illustration on a light background with subtle shadows."
+      "description": "An illustrated close-up of a round basket base being started. Shows round reed spokes arranged in a cross pattern (two groups of spokes crossing at the center), with the first 3-4 rows of weaving visible spiraling outward. The spokes are beginning to fan apart as the weaving progresses. Labels point to 'spokes', 'center cross', and 'weaver'. Clean educational illustration on a light background with subtle shadows.",
+      "width": 800,
+      "height": 447,
+      "v": "e1e8f498"
     },
     {
       "id": "round-basket-in-progress",
       "file": "req3b.md",
-      "description": "Hands of a young person weaving a round basket. The basket is about half-finished — the round base is complete and curved walls are rising about 2 inches. Clothespins hold a few spokes in position. The weaver is threading round reed through the spokes. A spray bottle and bucket of water are visible nearby. The scene is on a workbench with natural lighting."
+      "description": "Hands of a young person weaving a round basket. The basket is about half-finished — the round base is complete and curved walls are rising about 2 inches. Clothespins hold a few spokes in position. The weaver is threading round reed through the spokes. A spray bottle and bucket of water are visible nearby. The scene is on a workbench with natural lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "3ec224c5"
     },
     {
       "id": "campstool-frame-diagram",
       "file": "req3c.md",
       "style": "diagram",
-      "description": "A technical diagram of a campstool X-frame (folding style) shown from a three-quarter angle. The wooden frame has two pairs of legs connected by a pivot bolt at the center, with seat rails across the top. Labels point to: 'seat rails' (where the woven seat attaches), 'legs', 'pivot bolt', and 'seat area' (the rectangular opening to be filled with weaving). The frame is shown without a seat to clearly indicate where the weaving goes. Clean line art on white background."
+      "description": "A technical diagram of a campstool X-frame (folding style) shown from a three-quarter angle. The wooden frame has two pairs of legs connected by a pivot bolt at the center, with seat rails across the top. Labels point to: 'seat rails' (where the woven seat attaches), 'legs', 'pivot bolt', and 'seat area' (the rectangular opening to be filled with weaving). The frame is shown without a seat to clearly indicate where the weaving goes. Clean line art on white background.",
+      "width": 800,
+      "height": 447,
+      "v": "4489a53e"
     },
     {
       "id": "campstool-seat-weaving",
       "file": "req3c.md",
-      "description": "Close-up of hands weaving flat reed strips across a campstool frame. The warp strips (front-to-back) are already in place, and the weaver is threading a weft strip (side-to-side) through them in an over-under pattern. The wooden campstool frame is visible at the edges. The weave is tight and neat, about two-thirds complete. Natural indoor lighting."
+      "description": "Close-up of hands weaving flat reed strips across a campstool frame. The warp strips (front-to-back) are already in place, and the weaver is threading a weft strip (side-to-side) through them in an over-under pattern. The wooden campstool frame is visible at the edges. The weave is tight and neat, about two-thirds complete. Natural indoor lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "629d7b23"
     },
     {
       "id": "completed-campstool",
       "file": "req3c.md",
-      "description": "A completed campstool with a tightly woven natural reed seat, set up outdoors on grass near a campsite. The woven seat shows a clean, tight plain-weave pattern in natural tan reed. The wooden X-frame legs are visible. The scene is outdoors on a sunny day with a campfire ring and trees in the background. The stool looks sturdy and ready to use."
+      "description": "A completed campstool with a tightly woven natural reed seat, set up outdoors on grass near a campsite. The woven seat shows a clean, tight plain-weave pattern in natural tan reed. The wooden X-frame legs are visible. The scene is outdoors on a sunny day with a campfire ring and trees in the background. The stool looks sturdy and ready to use.",
+      "width": 800,
+      "height": 447,
+      "v": "a59d9a39"
     },
     {
       "id": "natural-basket-materials",
       "file": "extended-learning.md",
       "style": "illustrated",
-      "description": "An illustrated arrangement of natural basketry materials on a wooden table surface. Items include: several long willow rods (pale greenish-tan), a braided sweetgrass bundle (golden), a bundle of long pine needles tied with string, a coil of flat reed, and a few strips of white oak splint. Each material is labeled with its name. Clean educational illustration style with warm, natural colors."
+      "description": "An illustrated arrangement of natural basketry materials on a wooden table surface. Items include: several long willow rods (pale greenish-tan), a braided sweetgrass bundle (golden), a bundle of long pine needles tied with string, a coil of flat reed, and a few strips of white oak splint. Each material is labeled with its name. Clean educational illustration style with warm, natural colors.",
+      "width": 800,
+      "height": 447,
+      "v": "9535119e"
     }
   ]
 }

@@ -25,7 +25,7 @@
 {{ $ctas := .ctas }}
 {{ $extraPills := .extra_pills }}
 
-{{ $emblem := $badge.Resources.GetMatch "*-merit-badge.avif" }}
+{{ $emblemMeta := index (index hugo.Data "badge-images").badges $slug }}
 
 {{ $iconData := index hugo.Data "badge-icons" }}
 {{ $iconName := "" }}
@@ -44,9 +44,19 @@
 
 <div class="badge-hero-wrap">
   <section class="badge-hero" id="badge-hero">
-    {{ with $emblem }}
+    {{ with $emblemMeta }}
       <div class="badge-hero__backdrop" aria-hidden="true">
-        <img src="{{ .RelPermalink }}" alt="" loading="eager" />
+        {{ partial "imagekit/img.html" (dict
+          "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
+          "v" .v
+          "tr" "bl-20"
+          "maxWidth" 400
+          "width" 400
+          "height" 223
+          "alt" ""
+          "sizes" "400px"
+          "loading" "eager"
+        ) }}
       </div>
     {{ end }}
     <div class="badge-hero__glow" aria-hidden="true"></div>
@@ -108,18 +118,22 @@
         {{ end }}
       </div>
 
-      {{ with $emblem }}
+      {{ with $emblemMeta }}
         <div
           class="badge-hero__emblem-col"
           style="view-transition-name: mb-emblem-{{ $slug }}">
-          <img
-            class="badge-hero__emblem"
-            src="{{ .RelPermalink }}"
-            width="1200"
-            height="670"
-            alt="{{ $badge.Title }} emblem"
-            fetchpriority="high"
-            loading="eager" />
+          {{ partial "imagekit/img.html" (dict
+            "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
+            "v" .v
+            "maxWidth" 1600
+            "width" 1200
+            "height" 670
+            "alt" (printf "%s emblem" $badge.Title)
+            "sizes" "(max-width: 700px) 100vw, 50vw"
+            "class" "badge-hero__emblem"
+            "fetchpriority" "high"
+            "loading" "eager"
+          ) }}
         </div>
       {{ end }}
     </div>

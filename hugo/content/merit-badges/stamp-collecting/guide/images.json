@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Close-up of a collector using a handheld magnifier over a postage stamp on a clean work surface, with the magnified area clearly revealing clipped perforations, a faint postmark, and fine engraved line detail; instructional callouts label only the stamp features being inspected, not the person",
-      "value": "Magnified stamp details like clipped perforations, faint postmarks, and engraved line quality shown at once — inspection clues too small and spatially precise for text alone"
+      "value": "Magnified stamp details like clipped perforations, faint postmarks, and engraved line quality shown at once — inspection clues too small and spatially precise for text alone",
+      "width": 800,
+      "height": 447,
+      "v": "da859a17"
     },
     {
       "id": "hinge-vs-mount-comparison",
@@ -16,7 +19,10 @@
       "style": "comparison",
       "verb_family": "identify",
       "description": "Side-by-side comparison of the same style postage stamp mounted on album pages two different ways: left panel uses a small folded stamp hinge attached behind the stamp, right panel uses a clear protective stamp mount sleeve; both pages shown close enough to see how the stamp is held and how much of the stamp back is protected",
-      "value": "Direct side-by-side view of hinge attachment versus protective mount enclosure — the preservation and display difference is immediately visible in a way prose cannot match"
+      "value": "Direct side-by-side view of hinge attachment versus protective mount enclosure — the preservation and display difference is immediately visible in a way prose cannot match",
+      "width": 800,
+      "height": 447,
+      "v": "ed73b9ec"
     },
     {
       "id": "regional-stamp-map-layout",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Clean educational album-page diagram showing a regional map layout for a stamp collection: a map occupies the center with several countries clearly outlined, stamps mounted just outside the map boundary near their matching countries, thin leader lines connect each stamp to its country, and open space is preserved so no important geographic features are covered; labels are short country names only",
-      "value": "Shows the spatial layout of map, stamps, and uncluttered country references on one page — a page-design relationship that is hard to teach clearly with text alone"
+      "value": "Shows the spatial layout of map, stamps, and uncluttered country references on one page — a page-design relationship that is hard to teach clearly with text alone",
+      "width": 800,
+      "height": 447,
+      "v": "2ddbe34d"
     }
   ]
 }

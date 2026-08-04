@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Side-by-side instructional comparison of two water-sports start positions on calm lake water: left panel shows a rider on two skis in a compact crouched deepwater-start posture with ski tips up and close together, right panel shows a rider on a wakeboard with both feet attached and the board turned sideways before the pull; clean educational layout, minimal short labels only, no logos or branding",
-      "value": "Shows the distinct body and equipment setup differences between two-ski and wakeboard starts, a side-by-side comparison text alone cannot teach quickly"
+      "value": "Shows the distinct body and equipment setup differences between two-ski and wakeboard starts, a side-by-side comparison text alone cannot teach quickly",
+      "width": 800,
+      "height": 447,
+      "v": "656680a6"
     },
     {
       "id": "help-position-cold-water",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Educational cold-water survival diagram of a person floating in a life jacket in the HELP position with knees drawn up, arms folded in close, head above water, and body compact to reduce heat loss; simple side and front views with very short labels only, clean water background, no branding",
-      "value": "Shows the compact body posture of the HELP position, a survival shape that is difficult to picture correctly from prose alone"
+      "value": "Shows the compact body posture of the HELP position, a survival shape that is difficult to picture correctly from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "96ae10a6"
     },
     {
       "id": "life-jacket-fit-check-water-sports",
@@ -24,7 +30,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close instructional view of a teenager wearing a Type III water-sports life jacket while checking zipper, chest buckles, side straps, and shoulder fit, with small callouts highlighting snug waist fit, secured closures, and limited ride-up at the shoulders; realistic dockside or boat-ramp setting, no visible logos or words on clothing, minimal labels only",
-      "value": "Shows the exact closure points and snug shoulder-to-waist fit a rider should check before launch, details that text alone cannot demonstrate clearly"
+      "value": "Shows the exact closure points and snug shoulder-to-waist fit a rider should check before launch, details that text alone cannot demonstrate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "5e1b1c2d"
     },
     {
       "id": "skier-hand-signals-water-sports",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Clean six-panel educational diagram showing standard water-sports hand signals with a single rider silhouette in each panel: skier safe with hands clasped overhead, faster, slower, turn, back to dock, cut motor, plus a separate skier-in-water panel with one ski held upright above the head; plain background, large simple labels only, no branding",
-      "value": "Shows the actual shapes of the standard skier signals, visual forms a Scout must see in order to reproduce and recognize them accurately"
+      "value": "Shows the actual shapes of the standard skier signals, visual forms a Scout must see in order to reproduce and recognize them accurately",
+      "width": 800,
+      "height": 447,
+      "v": "b64e03dc"
     },
     {
       "id": "wake-crossing-path",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Top-down diagram of a towboat wake pattern on a lake with a rider path beginning outside the wakes, crossing both wakes, returning to the center wake, then repeating the pattern multiple times; clear wake lines, rider arrows, and centerline shown with short labels only, no logos or decorative text",
-      "value": "Shows the repeated outside-to-center wake-crossing path spatially, a movement pattern that prose alone cannot make instantly clear"
+      "value": "Shows the repeated outside-to-center wake-crossing path spatially, a movement pattern that prose alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "eef68a36"
     }
   ]
 }

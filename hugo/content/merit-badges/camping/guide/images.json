@@ -5,273 +5,432 @@
     {
       "id": "scout-campsite-sunset",
       "file": "_index.md",
-      "description": "A Scout wearing a backpack standing near a campsite at golden hour, looking out at a forested landscape. A dome tent is pitched nearby on level ground. Warm sunset light filters through the trees. The scene conveys excitement and anticipation for a camping adventure."
+      "description": "A Scout wearing a backpack standing near a campsite at golden hour, looking out at a forested landscape. A dome tent is pitched nearby on level ground. Warm sunset light filters through the trees. The scene conveys excitement and anticipation for a camping adventure.",
+      "width": 800,
+      "height": 447,
+      "v": "e133236c"
     },
     {
       "id": "winter-camping-scene",
       "file": "_index.md",
-      "description": "Two Scouts setting up a four-season tent in a snowy forest clearing. Snow-covered pine trees surround the clearing. One Scout is inserting a tent pole while the other holds the tent fabric. They are wearing winter layers with insulated jackets and warm hats. Fresh snow on the ground."
+      "description": "Two Scouts setting up a four-season tent in a snowy forest clearing. Snow-covered pine trees surround the clearing. One Scout is inserting a tent pole while the other holds the tent fabric. They are wearing winter layers with insulated jackets and warm hats. Fresh snow on the ground.",
+      "width": 800,
+      "height": 447,
+      "v": "04d5f831"
     },
     {
       "id": "patrol-cooking-campfire",
       "file": "_index.md",
-      "description": "A patrol of diverse Scouts cooking together at a campsite. A camp stove sits on a picnic table with pots and utensils. Several dome tents are visible in the background among trees. The Scouts are working together — one stirring a pot, another preparing ingredients, and a third carrying water. Daytime, natural light."
+      "description": "A patrol of diverse Scouts cooking together at a campsite. A camp stove sits on a picnic table with pots and utensils. Several dome tents are visible in the background among trees. The Scouts are working together — one stirring a pot, another preparing ingredients, and a third carrying water. Daytime, natural light.",
+      "width": 800,
+      "height": 447,
+      "v": "a6d4c964"
     },
     {
       "id": "campsite-safety-overview",
       "file": "req1a.md",
-      "description": "A well-organized campsite demonstrating safety practices. A bear bag hangs from a tree branch high off the ground. A contained campfire burns inside a fire ring with a bright blue water bucket beside it. Tents are pitched on level ground away from dead trees. The scene is a model of a properly set up, safe campsite in a mixed forest."
+      "description": "A well-organized campsite demonstrating safety practices. A bear bag hangs from a tree branch high off the ground. A contained campfire burns inside a fire ring with a bright blue water bucket beside it. Tents are pitched on level ground away from dead trees. The scene is a model of a properly set up, safe campsite in a mixed forest.",
+      "width": 800,
+      "height": 447,
+      "v": "3434ef14"
     },
     {
       "id": "scout-checking-map-safety",
       "file": "req1a.md",
-      "description": "A Scout at a camp table reviewing a topographic map. A first-aid kit is open on the table showing bandages and supplies. Safety gear including a headlamp, whistle, and compass are laid out nearby. Forest campsite setting with dappled sunlight."
+      "description": "A Scout at a camp table reviewing a topographic map. A first-aid kit is open on the table showing bandages and supplies. Safety gear including a headlamp, whistle, and compass are laid out nearby. Forest campsite setting with dappled sunlight.",
+      "width": 800,
+      "height": 447,
+      "v": "09c8e77c"
     },
     {
       "id": "cloud-types-sky",
       "file": "req1b.md",
-      "description": "A dramatic sky scene showing different cloud types visible at the same time. High thin cirrus wisps at the top of the sky, puffy white cumulus clouds in the middle, and a dark towering cumulonimbus thunderhead building on the distant horizon. A grassy meadow in the foreground with a trail leading toward the horizon."
+      "description": "A dramatic sky scene showing different cloud types visible at the same time. High thin cirrus wisps at the top of the sky, puffy white cumulus clouds in the middle, and a dark towering cumulonimbus thunderhead building on the distant horizon. A grassy meadow in the foreground with a trail leading toward the horizon.",
+      "width": 800,
+      "height": 447,
+      "v": "673f55f9"
     },
     {
       "id": "scout-rain-tarp-setup",
       "file": "req1b.md",
-      "description": "A Scout adjusting a blue rain tarp strung over a camp cooking area. Dark rain clouds are gathering overhead. The tarp is tied to trees with paracord and has a slight angle so water will run off. A camp stove and pot are visible under the tarp. A tent is visible at a safe distance in the background."
+      "description": "A Scout adjusting a blue rain tarp strung over a camp cooking area. Dark rain clouds are gathering overhead. The tarp is tied to trees with paracord and has a slight angle so water will run off. A camp stove and pot are visible under the tarp. A tent is visible at a safe distance in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "22f5cefb"
     },
     {
       "id": "first-aid-kit-camping",
       "file": "req1c.md",
-      "description": "An open camping first-aid kit laid out on a wooden camp table. Organized compartments show adhesive bandages, gauze rolls, antiseptic wipes, moleskin sheets, tweezers, medical tape, nitrile gloves, and an emergency blanket. The kit bag is red with a white cross. Forest campsite background."
+      "description": "An open camping first-aid kit laid out on a wooden camp table. Organized compartments show adhesive bandages, gauze rolls, antiseptic wipes, moleskin sheets, tweezers, medical tape, nitrile gloves, and an emergency blanket. The kit bag is red with a white cross. Forest campsite background.",
+      "width": 800,
+      "height": 447,
+      "v": "ccdd6729"
     },
     {
       "id": "tick-removal-technique",
       "file": "req1c.md",
       "style": "illustrated",
-      "description": "A close-up instructional illustration showing the correct technique for removing a tick. Fine-tipped tweezers grasp the tick as close to the skin surface as possible. An arrow indicates pulling straight upward with steady pressure. Clean, clear medical-illustration style against a simple background."
+      "description": "A close-up instructional illustration showing the correct technique for removing a tick. Fine-tipped tweezers grasp the tick as close to the skin surface as possible. An arrow indicates pulling straight upward with steady pressure. Clean, clear medical-illustration style against a simple background.",
+      "width": 800,
+      "height": 447,
+      "v": "1010377f"
     },
     {
       "id": "leave-no-trace-campsite",
       "file": "req2.md",
-      "description": "A pristine forest campsite that shows zero impact. No trash, no fire scars, no trampled vegetation. A cleared tent pad with no tent (as if the camper has already packed up and left no evidence). Healthy green vegetation, clean ground, and a beautiful natural forest clearing. The scene represents a perfectly executed Leave No Trace departure."
+      "description": "A pristine forest campsite that shows zero impact. No trash, no fire scars, no trampled vegetation. A cleared tent pad with no tent (as if the camper has already packed up and left no evidence). Healthy green vegetation, clean ground, and a beautiful natural forest clearing. The scene represents a perfectly executed Leave No Trace departure.",
+      "width": 800,
+      "height": 447,
+      "v": "b5fe8e57"
     },
     {
       "id": "scout-picking-up-trash",
       "file": "req2.md",
-      "description": "A Scout bending down to pick up a small piece of litter from a forest trail. The Scout is wearing a daypack and hiking clothes. The trail stretches behind them through a beautiful deciduous forest. A small trash bag is visible in the Scout's other hand. The scene represents stewardship and responsibility."
+      "description": "A Scout bending down to pick up a small piece of litter from a forest trail. The Scout is wearing a daypack and hiking clothes. The trail stretches behind them through a beautiful deciduous forest. A small trash bag is visible in the Scout's other hand. The scene represents stewardship and responsibility.",
+      "width": 800,
+      "height": 447,
+      "v": "c7e30174"
     },
     {
       "id": "topo-map-compass-table",
       "file": "req3.md",
-      "description": "A topographic map spread out on a flat camp table or rock surface. A compass with a clear baseplate sits on the map. A pencil and yellow highlighter are nearby, with a route marked on the map in highlighter. Contour lines and trail markings are visible on the map. Outdoor setting with natural lighting."
+      "description": "A topographic map spread out on a flat camp table or rock surface. A compass with a clear baseplate sits on the map. A pencil and yellow highlighter are nearby, with a route marked on the map in highlighter. Contour lines and trail markings are visible on the map. Outdoor setting with natural lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "dd4d5c20"
     },
     {
       "id": "scout-using-compass-trail",
       "file": "req3.md",
-      "description": "A Scout standing on a trail holding a compass flat in their outstretched palm, sighting along the direction-of-travel arrow toward a mountain ridge in the distance. A folded topo map is visible in their other hand. Hiking trail setting with mountains and trees in the background."
+      "description": "A Scout standing on a trail holding a compass flat in their outstretched palm, sighting along the direction-of-travel arrow toward a mountain ridge in the distance. A folded topo map is visible in their other hand. Hiking trail setting with mountains and trees in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "34c0776c"
     },
     {
       "id": "patrol-duty-roster-board",
       "file": "req4.md",
-      "description": "A handwritten duty roster on a small portable whiteboard or poster at a campsite. The roster shows a grid with patrol member names across the top and meal duties (Cook, Fire Tender, Cleanup, Water) down the side. Dry-erase markers are nearby. Campsite setting with tents visible in the background."
+      "description": "A handwritten duty roster on a small portable whiteboard or poster at a campsite. The roster shows a grid with patrol member names across the top and meal duties (Cook, Fire Tender, Cleanup, Water) down the side. Dry-erase markers are nearby. Campsite setting with tents visible in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "1cd0618e"
     },
     {
       "id": "scouts-teaching-tent-setup",
       "file": "req4.md",
-      "description": "An older Scout demonstrating tent setup to a small group of younger Scouts or Webelos. One younger Scout holds a tent pole while another spreads the ground cloth. The older Scout is pointing and explaining. A half-assembled dome tent is in the center. Outdoor campsite setting with other tents already set up nearby."
+      "description": "An older Scout demonstrating tent setup to a small group of younger Scouts or Webelos. One younger Scout holds a tent pole while another spreads the ground cloth. The older Scout is pointing and explaining. A half-assembled dome tent is in the center. Outdoor campsite setting with other tents already set up nearby.",
+      "width": 800,
+      "height": 447,
+      "v": "8e74e107"
     },
     {
       "id": "layering-system-display",
       "file": "req5a.md",
-      "description": "Three clothing layers laid out side by side on a sleeping bag inside a tent. From left to right: a thin moisture-wicking base layer shirt, a fleece mid-layer jacket, and a waterproof rain shell outer layer. Each layer is neatly displayed showing the progression from thin to weatherproof."
+      "description": "Three clothing layers laid out side by side on a sleeping bag inside a tent. From left to right: a thin moisture-wicking base layer shirt, a fleece mid-layer jacket, and a waterproof rain shell outer layer. Each layer is neatly displayed showing the progression from thin to weatherproof.",
+      "width": 800,
+      "height": 447,
+      "v": "bd04314f"
     },
     {
       "id": "scout-packing-clothing",
       "file": "req5a.md",
-      "description": "A Scout in their bedroom organizing camping clothing into a waterproof stuff sack. Clothing items are laid out in two groups on the floor — warm weather items (shorts, t-shirts, sun hat) on one side and cold weather items (fleece, rain jacket, warm hat, gloves) on the other. A backpack sits nearby."
+      "description": "A Scout in their bedroom organizing camping clothing into a waterproof stuff sack. Clothing items are laid out in two groups on the floor — warm weather items (shorts, t-shirts, sun hat) on one side and cold weather items (fleece, rain jacket, warm hat, gloves) on the other. A backpack sits nearby.",
+      "width": 800,
+      "height": 447,
+      "v": "565e610b"
     },
     {
       "id": "hiking-footwear-lineup",
       "file": "req5b.md",
-      "description": "Four types of hiking footwear arranged in a row on a wooden porch or deck. From left to right: lightweight trail runners, low-cut hiking shoes, mid-cut hiking boots, and tall insulated winter boots. Each pair shows its distinctive profile. Natural outdoor lighting."
+      "description": "Four types of hiking footwear arranged in a row on a wooden porch or deck. From left to right: lightweight trail runners, low-cut hiking shoes, mid-cut hiking boots, and tall insulated winter boots. Each pair shows its distinctive profile. Natural outdoor lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "fd937c1c"
     },
     {
       "id": "sleeping-bag-storage-sack",
       "file": "req5c.md",
-      "description": "A sleeping bag loosely stored in a large breathable mesh storage sack next to a small compression stuff sack. The size contrast between the two sacks is dramatic — the storage sack is three to four times larger. A label or tag reads 'For Storage Only.' Garage or closet setting."
+      "description": "A sleeping bag loosely stored in a large breathable mesh storage sack next to a small compression stuff sack. The size contrast between the two sacks is dramatic — the storage sack is three to four times larger. A label or tag reads 'For Storage Only.' Garage or closet setting.",
+      "width": 800,
+      "height": 447,
+      "v": "c11c2141"
     },
     {
       "id": "gear-drying-clothesline",
       "file": "req5c.md",
-      "description": "Camping gear drying on a backyard clothesline in sunshine. A sleeping bag is draped over the line. Hiking socks and moisture-wicking shirts hang from clips. Below the line, hiking boots sit upside down on the grass with newspaper stuffed inside to absorb moisture."
+      "description": "Camping gear drying on a backyard clothesline in sunshine. A sleeping bag is draped over the line. Hiking socks and moisture-wicking shirts hang from clips. Below the line, hiking boots sit upside down on the grass with newspaper stuffed inside to absorb moisture.",
+      "width": 800,
+      "height": 447,
+      "v": "bf1658a9"
     },
     {
       "id": "outdoor-essentials-layout",
       "file": "req5d.md",
-      "description": "All ten Scout outdoor essentials laid out neatly on a flat granite rock in the outdoors. Items include: a folding pocketknife, a red first-aid kit pouch, an extra fleece and socks, a packable rain jacket, a water bottle, a headlamp, trail mix in a bag, waterproof matches in a container, sunscreen and sunglasses, and a folded topo map with a compass on top. Organized and clearly visible from above."
+      "description": "All ten Scout outdoor essentials laid out neatly on a flat granite rock in the outdoors. Items include: a folding pocketknife, a red first-aid kit pouch, an extra fleece and socks, a packable rain jacket, a water bottle, a headlamp, trail mix in a bag, waterproof matches in a container, sunscreen and sunglasses, and a folded topo map with a compass on top. Organized and clearly visible from above.",
+      "width": 800,
+      "height": 447,
+      "v": "be7358e4"
     },
     {
       "id": "ditty-bag-essentials",
       "file": "req5d.md",
-      "description": "A small nylon ditty bag unzipped and open on a camp table, with essentials partially visible inside: a headlamp, waterproof matches, a compass, a whistle, sunscreen, and a small first-aid pouch. The bag is compact enough to fit in a backpack's top lid."
+      "description": "A small nylon ditty bag unzipped and open on a camp table, with essentials partially visible inside: a headlamp, waterproof matches, a compass, a whistle, sunscreen, and a small first-aid pouch. The bag is compact enough to fit in a backpack's top lid.",
+      "width": 800,
+      "height": 447,
+      "v": "920ef2c1"
     },
     {
       "id": "scout-pack-inspection",
       "file": "req5e.md",
-      "description": "A Scout standing with a fully loaded backpack in front of a Scoutmaster at a troop meeting or campsite. The Scoutmaster is looking at gear visible in the pack — a sleeping bag peeking from the bottom, a water bottle in a side pocket, and the top lid slightly open showing a first-aid kit. The Scout stands confidently."
+      "description": "A Scout standing with a fully loaded backpack in front of a Scoutmaster at a troop meeting or campsite. The Scoutmaster is looking at gear visible in the pack — a sleeping bag peeking from the bottom, a water bottle in a side pocket, and the top lid slightly open showing a first-aid kit. The Scout stands confidently.",
+      "width": 800,
+      "height": 447,
+      "v": "2ea385ef"
     },
     {
       "id": "pack-contents-laid-out",
       "file": "req5e.md",
-      "description": "All the contents of a well-packed camping backpack laid out in organized groups on a blue tarp. Groups include: clothing (shirts, socks, rain jacket), sleeping gear (bag and pad), cooking gear (stove, pot, utensils), food (bags of trail mix, pasta, oatmeal), essentials (first aid, headlamp, map), and hygiene items. The empty backpack sits to one side."
+      "description": "All the contents of a well-packed camping backpack laid out in organized groups on a blue tarp. Groups include: clothing (shirts, socks, rain jacket), sleeping gear (bag and pad), cooking gear (stove, pot, utensils), food (bags of trail mix, pasta, oatmeal), essentials (first aid, headlamp, map), and hygiene items. The empty backpack sits to one side.",
+      "width": 800,
+      "height": 447,
+      "v": "9ec4d888"
     },
     {
       "id": "tent-types-comparison",
       "file": "req6a.md",
-      "description": "Four different tents set up side by side in a grassy campground clearing. From left to right: a classic A-frame tent, a modern dome tent, a long tunnel tent, and a sturdy four-season mountaineering tent. Each tent clearly shows its distinctive shape and structure. Daylight with clear skies."
+      "description": "Four different tents set up side by side in a grassy campground clearing. From left to right: a classic A-frame tent, a modern dome tent, a long tunnel tent, and a sturdy four-season mountaineering tent. Each tent clearly shows its distinctive shape and structure. Daylight with clear skies.",
+      "width": 800,
+      "height": 447,
+      "v": "c0dd8046"
     },
     {
       "id": "scouts-pitching-dome-tent",
       "file": "req6a.md",
-      "description": "Two Scouts working together to pitch a dome tent in a forest clearing. One Scout holds a flexible pole arched over the tent body while the other clips the tent fabric to the pole with plastic clips. The rain fly is laid nearby, ready to go over the top. Ground cloth visible underneath."
+      "description": "Two Scouts working together to pitch a dome tent in a forest clearing. One Scout holds a flexible pole arched over the tent body while the other clips the tent fabric to the pole with plastic clips. The rain fly is laid nearby, ready to go over the top. Ground cloth visible underneath.",
+      "width": 800,
+      "height": 447,
+      "v": "da470ac2"
     },
     {
       "id": "three-bucket-wash-station",
       "file": "req6b.md",
-      "description": "A camp dishwashing station showing three collapsible buckets set up in a row on a camp table. Each bucket is labeled with a handwritten sign: Wash, Rinse, Sanitize. A bottle of biodegradable camp soap sits next to the first bucket. A mesh strainer and a drying rack are nearby. Campsite background."
+      "description": "A camp dishwashing station showing three collapsible buckets set up in a row on a camp table. Each bucket is labeled with a handwritten sign: Wash, Rinse, Sanitize. A bottle of biodegradable camp soap sits next to the first bucket. A mesh strainer and a drying rack are nearby. Campsite background.",
+      "width": 800,
+      "height": 447,
+      "v": "cf077fa1"
     },
     {
       "id": "water-treatment-methods",
       "file": "req6b.md",
-      "description": "Four water treatment methods displayed on a flat rock by a stream. From left to right: a small pot of water boiling on a camp stove, a handheld pump water filter with input and output hoses, a package of water purification tablets beside a water bottle, and a UV light pen (SteriPEN style) inserted in a clear water bottle. Each method clearly visible."
+      "description": "Four water treatment methods displayed on a flat rock by a stream. From left to right: a small pot of water boiling on a camp stove, a handheld pump water filter with input and output hoses, a package of water purification tablets beside a water bottle, and a UV light pen (SteriPEN style) inserted in a clear water bottle. Each method clearly visible.",
+      "width": 800,
+      "height": 447,
+      "v": "0f4d8e10"
     },
     {
       "id": "ideal-campsite-labeled",
       "file": "req6c.md",
       "style": "diagram",
-      "description": "A bird's-eye illustrated view of an ideal campsite layout. A tent is positioned on level ground behind a cluster of trees that serve as a windbreak. A cooking area with a camp stove is set up downwind, about 200 feet from the tent. A bear bag hangs from a tree further away. A stream runs through the scene at a safe distance from all camp elements. Clean, informative diagram style."
+      "description": "A bird's-eye illustrated view of an ideal campsite layout. A tent is positioned on level ground behind a cluster of trees that serve as a windbreak. A cooking area with a camp stove is set up downwind, about 200 feet from the tent. A bear bag hangs from a tree further away. A stream runs through the scene at a safe distance from all camp elements. Clean, informative diagram style.",
+      "width": 800,
+      "height": 447,
+      "v": "44a7cd52"
     },
     {
       "id": "scout-surveying-campsite",
       "file": "req6c.md",
-      "description": "A Scout standing at the edge of a forest clearing, hands on hips, looking around and evaluating the area as a potential campsite. The clearing has level ground with grass, a few large trees for shelter, and a stream visible in the middle distance. The Scout appears thoughtful and observant."
+      "description": "A Scout standing at the edge of a forest clearing, hands on hips, looking around and evaluating the area as a potential campsite. The clearing has level ground with grass, a few large trees for shelter, and a stream visible in the middle distance. The Scout appears thoughtful and observant.",
+      "width": 800,
+      "height": 447,
+      "v": "a6bec16e"
     },
     {
       "id": "internal-vs-external-frame",
       "file": "req6d.md",
-      "description": "Two backpacks standing upright side by side outdoors on a trail. On the left, an external-frame pack with its visible aluminum frame, attached bag, and gear lashed to the outside. On the right, a modern internal-frame pack with a sleek, streamlined profile. Both are loaded and ready for the trail."
+      "description": "Two backpacks standing upright side by side outdoors on a trail. On the left, an external-frame pack with its visible aluminum frame, attached bag, and gear lashed to the outside. On the right, a modern internal-frame pack with a sleek, streamlined profile. Both are loaded and ready for the trail.",
+      "width": 800,
+      "height": 447,
+      "v": "408ab323"
     },
     {
       "id": "pack-fitting-diagram",
       "file": "req6d.md",
       "style": "annotated-photo",
-      "description": "A Scout wearing a properly fitted internal-frame backpack shown from the side profile. Visual labels point to key fit areas: the hip belt sitting on the hip bones, shoulder straps wrapping over the shoulders, load lifter straps angling at 45 degrees from shoulder to pack top, and the sternum strap across the chest. Clean instructional style."
+      "description": "A Scout wearing a properly fitted internal-frame backpack shown from the side profile. Visual labels point to key fit areas: the hip belt sitting on the hip bones, shoulder straps wrapping over the shoulders, load lifter straps angling at 45 degrees from shoulder to pack top, and the sternum strap across the chest. Clean instructional style.",
+      "width": 800,
+      "height": 447,
+      "v": "445e8a4d"
     },
     {
       "id": "sleeping-bag-types",
       "file": "req6e.md",
-      "description": "Three sleeping bags laid out side by side on a tent floor viewed from above. A tapered mummy bag on the left, a wide rectangular bag in the center, and a semi-rectangular barrel-shaped bag on the right. Each is partially unzipped to show its shape and interior. Different colors help distinguish them."
+      "description": "Three sleeping bags laid out side by side on a tent floor viewed from above. A tapered mummy bag on the left, a wide rectangular bag in the center, and a semi-rectangular barrel-shaped bag on the right. Each is partially unzipped to show its shape and interior. Different colors help distinguish them.",
+      "width": 800,
+      "height": 447,
+      "v": "a2dc9dfb"
     },
     {
       "id": "ground-bed-layers",
       "file": "req6e.md",
       "style": "diagram",
-      "description": "A cutaway cross-section illustration showing the layers of a comfortable camping ground bed from bottom to top: a waterproof ground cloth, the tent floor, a sleeping pad (inflatable style), and a sleeping bag laid on top. Each layer is labeled. Clean educational illustration style."
+      "description": "A cutaway cross-section illustration showing the layers of a comfortable camping ground bed from bottom to top: a waterproof ground cloth, the tent floor, a sleeping pad (inflatable style), and a sleeping bag laid on top. Each layer is labeled. Clean educational illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "96a58a87"
     },
     {
       "id": "backpack-packing-zones",
       "file": "req7.md",
       "style": "diagram",
-      "description": "A cutaway diagram of a backpack showing four labeled packing zones. The bottom compartment contains a sleeping bag. The middle core zone (close to the back) holds heavy items like food and a stove. The top zone contains rain gear and snacks. Side pockets hold water bottles, and the lid pocket shows a first-aid kit and headlamp. Color-coded zones."
+      "description": "A cutaway diagram of a backpack showing four labeled packing zones. The bottom compartment contains a sleeping bag. The middle core zone (close to the back) holds heavy items like food and a stove. The top zone contains rain gear and snacks. Side pockets hold water bottles, and the lid pocket shows a first-aid kit and headlamp. Color-coded zones.",
+      "width": 800,
+      "height": 447,
+      "v": "110ee8d0"
     },
     {
       "id": "scouts-dividing-patrol-gear",
       "file": "req7.md",
-      "description": "A patrol of Scouts gathered around a tarp spread on the ground with shared patrol gear laid out: a camp stove, cooking pots, a tarp, rope, a water filter, and a lantern. Each Scout has their personal backpack nearby and they are in the process of dividing the patrol gear among themselves."
+      "description": "A patrol of Scouts gathered around a tarp spread on the ground with shared patrol gear laid out: a camp stove, cooking pots, a tarp, rope, a water filter, and a lantern. Each Scout has their personal backpack nearby and they are in the process of dividing the patrol gear among themselves.",
+      "width": 800,
+      "height": 447,
+      "v": "136414df"
     },
     {
       "id": "camp-stove-safety-setup",
       "file": "req8a.md",
-      "description": "A camp stove set up on bare, level ground with a clear area around it free of flammable materials. A pot of water is heating on the stove. A tent is visible at a safe distance in the background (at least 15 feet away). A water bottle and pot gripper sit nearby."
+      "description": "A camp stove set up on bare, level ground with a clear area around it free of flammable materials. A pot of water is heating on the stove. A tent is visible at a safe distance in the background (at least 15 feet away). A water bottle and pot gripper sit nearby.",
+      "width": 800,
+      "height": 447,
+      "v": "4781ffc3"
     },
     {
       "id": "fuel-storage-labeled",
       "file": "req8a.md",
-      "description": "A red fuel bottle with a bright label reading 'WHITE GAS — FUEL ONLY' and a green propane canister stored upright in a shaded area at camp. They are clearly separated from a group of water bottles and food bags by several feet. A tree provides shade over the fuel storage area."
+      "description": "A red fuel bottle with a bright label reading 'WHITE GAS — FUEL ONLY' and a green propane canister stored upright in a shaded area at camp. They are clearly separated from a group of water bottles and food bags by several feet. A tree provides shade over the fuel storage area.",
+      "width": 800,
+      "height": 447,
+      "v": "73eef30d"
     },
     {
       "id": "stove-types-lineup",
       "file": "req8b.md",
-      "description": "Five different camp stoves arranged on a flat rock surface outdoors. From left to right: a canister stove screwed onto a butane/propane canister, a liquid fuel stove connected to a red fuel bottle, a small aluminum alcohol stove, a folding solid fuel tablet stove, and a compact wood-burning stove with twigs beside it. Each stove has its fuel source visible."
+      "description": "Five different camp stoves arranged on a flat rock surface outdoors. From left to right: a canister stove screwed onto a butane/propane canister, a liquid fuel stove connected to a red fuel bottle, a small aluminum alcohol stove, a folding solid fuel tablet stove, and a compact wood-burning stove with twigs beside it. Each stove has its fuel source visible.",
+      "width": 800,
+      "height": 447,
+      "v": "b1656f15"
     },
     {
       "id": "scout-cooking-canister-stove",
       "file": "req8b.md",
-      "description": "A Scout cooking a simple meal on a canister stove at a campsite. The Scout holds a pot gripper and is stirring pasta in a small pot. A water bottle, food packet, and spork sit nearby on a flat rock. Trees and a tent are visible in the soft-focus background."
+      "description": "A Scout cooking a simple meal on a canister stove at a campsite. The Scout holds a pot gripper and is stirring pasta in a small pot. A water bottle, food packet, and spork sit nearby on a flat rock. Trees and a tent are visible in the soft-focus background.",
+      "width": 800,
+      "height": 447,
+      "v": "827431a4"
     },
     {
       "id": "camp-menu-planning-table",
       "file": "req8c.md",
-      "description": "A patrol of Scouts gathered around a kitchen table at home during a planning meeting. A whiteboard on the wall shows a meal planning grid with slots for breakfasts, lunches, and dinners. One Scout writes on the whiteboard while others discuss. A grocery list notepad and some food items are on the table."
+      "description": "A patrol of Scouts gathered around a kitchen table at home during a planning meeting. A whiteboard on the wall shows a meal planning grid with slots for breakfasts, lunches, and dinners. One Scout writes on the whiteboard while others discuss. A grocery list notepad and some food items are on the table.",
+      "width": 800,
+      "height": 447,
+      "v": "c44e7ee2"
     },
     {
       "id": "bear-bag-hanging",
       "file": "req8c.md",
-      "description": "A properly hung bear bag suspended from a tree branch in a forest. A rope goes over a high branch with the food bag hanging at least 12 feet off the ground and 6 feet from the trunk. The bag is a stuff sack. Tall trees surround the scene. Dusk lighting to suggest evening food storage."
+      "description": "A properly hung bear bag suspended from a tree branch in a forest. A rope goes over a high branch with the food bag hanging at least 12 feet off the ground and 6 feet from the trunk. The bag is a stuff sack. Tall trees surround the scene. Dusk lighting to suggest evening food storage.",
+      "width": 800,
+      "height": 447,
+      "v": "bddfef1b"
     },
     {
       "id": "trail-meal-stove",
       "file": "req8d.md",
-      "description": "A Scout sitting on a rock beside a trail, cooking a simple trail meal on a lightweight canister stove. A small pot of water is boiling. A food packet (ramen or oatmeal) sits nearby. The Scout's daypack leans against the rock. A forest trail winds behind them."
+      "description": "A Scout sitting on a rock beside a trail, cooking a simple trail meal on a lightweight canister stove. A small pot of water is boiling. A food packet (ramen or oatmeal) sits nearby. The Scout's daypack leans against the rock. A forest trail winds behind them.",
+      "width": 800,
+      "height": 447,
+      "v": "7ed79b2c"
     },
     {
       "id": "patrol-eating-together",
       "file": "req8d.md",
-      "description": "A patrol of diverse Scouts sitting on logs and camp chairs around a campsite, eating a meal they cooked together. They hold plates and cups. A camp stove and cooking gear are visible on a table in the background. The mood is cheerful and communal. Evening golden light."
+      "description": "A patrol of diverse Scouts sitting on logs and camp chairs around a campsite, eating a meal they cooked together. They hold plates and cups. A camp stove and cooking gear are visible on a table in the background. The mood is cheerful and communal. Evening golden light.",
+      "width": 800,
+      "height": 447,
+      "v": "cc3b3d6f"
     },
     {
       "id": "camping-log-journal",
       "file": "req9a.md",
-      "description": "A Scout's camping log notebook open to a page showing handwritten entries with dates, locations, shelter types, and brief notes. A pen lies across the page. The notebook sits on a sleeping bag inside a tent. A headlamp and water bottle are nearby."
+      "description": "A Scout's camping log notebook open to a page showing handwritten entries with dates, locations, shelter types, and brief notes. A pen lies across the page. The notebook sits on a sleeping bag inside a tent. A headlamp and water bottle are nearby.",
+      "width": 800,
+      "height": 447,
+      "v": "3e4d94c8"
     },
     {
       "id": "variety-of-camp-shelters",
       "file": "req9a.md",
-      "description": "A four-panel collage showing different camping shelter types. Top left: a dome tent pitched in a forest clearing. Top right: a hammock with rainfly strung between two trees. Bottom left: a lean-to shelter made of logs and branches with an open front. Bottom right: a Scout in a sleeping bag on a pad under the open night sky."
+      "description": "A four-panel collage showing different camping shelter types. Top left: a dome tent pitched in a forest clearing. Top right: a hammock with rainfly strung between two trees. Bottom left: a lean-to shelter made of logs and branches with an open front. Bottom right: a Scout in a sleeping bag on a pad under the open night sky.",
+      "width": 800,
+      "height": 447,
+      "v": "ef254169"
     },
     {
       "id": "adventure-activities-collage",
       "file": "req9b.md",
-      "description": "A four-panel collage showing Scouts in different adventure activities. Top left: a Scout hiking up a steep mountain trail with trekking poles. Top right: two Scouts paddling a canoe on a calm lake with forest shoreline. Bottom left: a Scout in a climbing harness rappelling down a rock face with a safety rope. Bottom right: two Scouts snowshoeing through a snowy forest."
+      "description": "A four-panel collage showing Scouts in different adventure activities. Top left: a Scout hiking up a steep mountain trail with trekking poles. Top right: two Scouts paddling a canoe on a calm lake with forest shoreline. Bottom left: a Scout in a climbing harness rappelling down a rock face with a safety rope. Bottom right: two Scouts snowshoeing through a snowy forest.",
+      "width": 800,
+      "height": 447,
+      "v": "f79595de"
     },
     {
       "id": "scouts-trail-maintenance",
       "file": "req9c.md",
-      "description": "A group of Scouts performing trail maintenance in a deciduous forest. They use hand tools — loppers, a bow saw, and rakes — to clear brush and repair a water bar across a hiking trail. They wear work gloves and some have safety glasses. An adult leader supervises nearby."
+      "description": "A group of Scouts performing trail maintenance in a deciduous forest. They use hand tools — loppers, a bow saw, and rakes — to clear brush and repair a water bar across a hiking trail. They wear work gloves and some have safety glasses. An adult leader supervises nearby.",
+      "width": 800,
+      "height": 447,
+      "v": "6099b23e"
     },
     {
       "id": "before-after-cleanup",
       "file": "req9c.md",
       "style": "comparison",
-      "description": "A split-screen before-and-after comparison of a campsite area. The left half shows the area cluttered with scattered litter, an unauthorized fire ring, and trampled vegetation. The right half shows the exact same area cleaned up — no trash, the fire ring removed, and the ground raked smooth. Clear visual transformation."
+      "description": "A split-screen before-and-after comparison of a campsite area. The left half shows the area cluttered with scattered litter, an unauthorized fire ring, and trampled vegetation. The right half shows the exact same area cleaned up — no trash, the fire ring removed, and the ground raked smooth. Clear visual transformation.",
+      "width": 800,
+      "height": 447,
+      "v": "cb8029d1"
     },
     {
       "id": "scout-campfire-reflection",
       "file": "req10.md",
-      "description": "A Scout sitting alone by a small campfire at dusk, holding an open journal and pen, looking thoughtful. A tent is visible behind them. The sky shows early stars appearing. The scene conveys quiet reflection and personal growth. Warm firelight on the Scout's face."
+      "description": "A Scout sitting alone by a small campfire at dusk, holding an open journal and pen, looking thoughtful. A tent is visible behind them. The sky shows early stars appearing. The scene conveys quiet reflection and personal growth. Warm firelight on the Scout's face.",
+      "width": 800,
+      "height": 447,
+      "v": "3ac0c968"
     },
     {
       "id": "eagle-scout-trail-sunset",
       "file": "req10.md",
-      "description": "A Scout standing on a mountain overlook at sunset, looking out over a vast forested landscape. The Scout wears a backpack and stands tall with a sense of accomplishment. Warm orange and purple sunset colors fill the sky. Mountains recede into the distance. The scene symbolizes the journey and achievement of completing the Camping merit badge."
+      "description": "A Scout standing on a mountain overlook at sunset, looking out over a vast forested landscape. The Scout wears a backpack and stands tall with a sense of accomplishment. Warm orange and purple sunset colors fill the sky. Mountains recede into the distance. The scene symbolizes the journey and achievement of completing the Camping merit badge.",
+      "width": 800,
+      "height": 447,
+      "v": "7b65e0ce"
     },
     {
       "id": "philmont-tooth-of-time",
       "file": "extended-learning.md",
-      "description": "A group of Scouts hiking along a trail at Philmont Scout Ranch in New Mexico. The iconic Tooth of Time rock formation is visible in the background against a deep blue sky. The Scouts carry loaded backpacks and walk single file on a dusty trail through scrubby high-desert vegetation."
+      "description": "A group of Scouts hiking along a trail at Philmont Scout Ranch in New Mexico. The iconic Tooth of Time rock formation is visible in the background against a deep blue sky. The Scouts carry loaded backpacks and walk single file on a dusty trail through scrubby high-desert vegetation.",
+      "width": 800,
+      "height": 447,
+      "v": "52e3d18f"
     },
     {
       "id": "scouts-stargazing-camp",
       "file": "extended-learning.md",
-      "description": "A group of Scouts lying on sleeping pads outside their tents, looking up at a spectacular star-filled night sky. The Milky Way is visible stretching across the sky. Their tents are softly illuminated from inside. The scene captures the wonder and beauty of camping in a remote area with minimal light pollution."
+      "description": "A group of Scouts lying on sleeping pads outside their tents, looking up at a spectacular star-filled night sky. The Milky Way is visible stretching across the sky. Their tents are softly illuminated from inside. The scene captures the wonder and beauty of camping in a remote area with minimal light pollution.",
+      "width": 800,
+      "height": 447,
+      "v": "33ca7025"
     }
   ]
 }

@@ -5,136 +5,208 @@
     {
       "id": "scout-canoe-lake-launch",
       "file": "_index.md",
-      "description": "Two Scouts (ages 13-14) in clean Scout uniforms and properly fitted life jackets preparing to launch a red canoe from a sandy lakeshore on a sunny summer day. One holds the stern steady while the other places paddles inside the canoe. Clear blue lake water, green tree-lined shore in the background. Excitement and anticipation on their faces."
+      "description": "Two Scouts (ages 13-14) in clean Scout uniforms and properly fitted life jackets preparing to launch a red canoe from a sandy lakeshore on a sunny summer day. One holds the stern steady while the other places paddles inside the canoe. Clear blue lake water, green tree-lined shore in the background. Excitement and anticipation on their faces.",
+      "width": 800,
+      "height": 447,
+      "v": "d638e87c"
     },
     {
       "id": "canoe-types-variety",
       "file": "_index.md",
       "style": "diagram",
-      "description": "Three different canoe styles shown side by side on a grassy shore with clean white background labels. Left: a wide, flat-bottomed recreational canoe (labeled 'Recreational — 16 ft, stable, great for lakes'). Center: a long, narrow touring/tripping canoe (labeled 'Touring — 18 ft, fast, built for distance'). Right: a short, highly rockered whitewater canoe (labeled 'Whitewater — 14 ft, maneuverable, built for rapids'). Each canoe shown in profile view with length and key features annotated."
+      "description": "Three different canoe styles shown side by side on a grassy shore with clean white background labels. Left: a wide, flat-bottomed recreational canoe (labeled 'Recreational — 16 ft, stable, great for lakes'). Center: a long, narrow touring/tripping canoe (labeled 'Touring — 18 ft, fast, built for distance'). Right: a short, highly rockered whitewater canoe (labeled 'Whitewater — 14 ft, maneuverable, built for rapids'). Each canoe shown in profile view with length and key features annotated.",
+      "width": 800,
+      "height": 447,
+      "v": "c7cb5b9b"
     },
     {
       "id": "canoe-weather-hazards",
       "file": "req1a.md",
       "style": "comparison",
-      "description": "Split-frame comparison of two canoeing conditions. Left side labeled 'SAFE': calm sunny lake, two paddlers in a canoe on mirror-flat water, blue sky, gentle clouds. Right side labeled 'DANGER': same lake view but dark storm clouds rolling in, wind-driven whitecaps on the water surface, trees bending in wind. Clear visual contrast between safe paddling conditions and dangerous weather approaching."
+      "description": "Split-frame comparison of two canoeing conditions. Left side labeled 'SAFE': calm sunny lake, two paddlers in a canoe on mirror-flat water, blue sky, gentle clouds. Right side labeled 'DANGER': same lake view but dark storm clouds rolling in, wind-driven whitecaps on the water surface, trees bending in wind. Clear visual contrast between safe paddling conditions and dangerous weather approaching.",
+      "width": 800,
+      "height": 447,
+      "v": "c37c942b"
     },
     {
       "id": "canoe-first-aid-kit",
       "file": "req1b.md",
-      "description": "A well-organized paddler's first aid kit laid out on a blue dry bag beside a canoe on a wooden dock. Visible supplies neatly arranged: adhesive bandages, moleskin patches, tube of sunscreen, elastic ACE wrap, emergency foil blanket, electrolyte drink packets, antibiotic ointment tube, roll of medical tape, and small bottle of pain reliever. Everything clean, labeled, and ready for use. Bright natural lighting."
+      "description": "A well-organized paddler's first aid kit laid out on a blue dry bag beside a canoe on a wooden dock. Visible supplies neatly arranged: adhesive bandages, moleskin patches, tube of sunscreen, elastic ACE wrap, emergency foil blanket, electrolyte drink packets, antibiotic ointment tube, roll of medical tape, and small bottle of pain reliever. Everything clean, labeled, and ready for use. Bright natural lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "9e7a4566"
     },
     {
       "id": "safety-afloat-infographic",
       "file": "req1c.md",
       "style": "infographic",
-      "description": "Infographic showing the nine points of Safety Afloat arranged in a 3x3 grid with clean icons and labels. 1: Qualified Supervision (adult figure with checkmark). 2: Personal Health Review (clipboard with medical cross). 3: Swimming Ability (swimmer icon). 4: Life Jackets (PFD icon). 5: Buddy System (two figures side by side). 6: Skill Proficiency (paddle with star). 7: Planning (map with route). 8: Equipment (canoe with gear). 9: Discipline (raised hand/stop signal). Blue and gold color scheme. Title at top: 'Safety Afloat — 9 Points'. Clean, scannable design."
+      "description": "Infographic showing the nine points of Safety Afloat arranged in a 3x3 grid with clean icons and labels. 1: Qualified Supervision (adult figure with checkmark). 2: Personal Health Review (clipboard with medical cross). 3: Swimming Ability (swimmer icon). 4: Life Jackets (PFD icon). 5: Buddy System (two figures side by side). 6: Skill Proficiency (paddle with star). 7: Planning (map with route). 8: Equipment (canoe with gear). 9: Discipline (raised hand/stop signal). Blue and gold color scheme. Title at top: 'Safety Afloat — 9 Points'. Clean, scannable design.",
+      "width": 800,
+      "height": 447,
+      "v": "1b42a88b"
     },
     {
       "id": "swimmer-test-diagram",
       "file": "req2.md",
       "style": "diagram",
-      "description": "A simple educational infographic with three rows on a clean white background. Row 1: an icon of a swimmer doing a forward stroke, labeled '75 yards' with the text 'Sidestroke, Breaststroke, or Crawl' beside it. Row 2: an icon of a swimmer doing a backstroke, labeled '25 yards' with the text 'Resting Backstroke' beside it. Row 3: an icon of a person treading water, labeled '1 minute' with the text 'Treading Water' beside it. A bold total at the bottom reads '100 yards continuous swim'. Blue and white color scheme, clean sans-serif text, minimal design."
+      "description": "A simple educational infographic with three rows on a clean white background. Row 1: an icon of a swimmer doing a forward stroke, labeled '75 yards' with the text 'Sidestroke, Breaststroke, or Crawl' beside it. Row 2: an icon of a swimmer doing a backstroke, labeled '25 yards' with the text 'Resting Backstroke' beside it. Row 3: an icon of a person treading water, labeled '1 minute' with the text 'Treading Water' beside it. A bold total at the bottom reads '100 yards continuous swim'. Blue and white color scheme, clean sans-serif text, minimal design.",
+      "width": 800,
+      "height": 447,
+      "v": "df5fa9da"
     },
     {
       "id": "canoe-parts-labeled",
       "file": "req3.md",
       "style": "illustrated",
-      "description": "An educational illustration of a canoe viewed from the side and from above. The side view shows the boat shape with labeled arrows pointing to the bow, stern, gunwale, keel, hull, and deck plates. The top view shows the interior layout with labeled arrows pointing to the bow seat, stern seat, thwarts, and yoke. Simple clean line drawing style with blue and gray coloring on a white background."
+      "description": "An educational illustration of a canoe viewed from the side and from above. The side view shows the boat shape with labeled arrows pointing to the bow, stern, gunwale, keel, hull, and deck plates. The top view shows the interior layout with labeled arrows pointing to the bow seat, stern seat, thwarts, and yoke. Simple clean line drawing style with blue and gray coloring on a white background.",
+      "width": 800,
+      "height": 447,
+      "v": "9e4b03a7"
     },
     {
       "id": "paddle-parts-labeled",
       "file": "req4.md",
       "style": "illustrated",
-      "description": "An educational illustration of a single canoe paddle shown vertically. Labeled arrows point to each part from top to bottom: grip at the top, shaft in the middle, throat where it widens, and blade at the bottom. Two small inset drawings show a T-grip and a palm grip side by side. Simple clean line drawing style with warm wood tones on a white background."
+      "description": "An educational illustration of a single canoe paddle shown vertically. Labeled arrows point to each part from top to bottom: grip at the top, shaft in the middle, throat where it widens, and blade at the bottom. Two small inset drawings show a T-grip and a palm grip side by side. Simple clean line drawing style with warm wood tones on a white background.",
+      "width": 800,
+      "height": 447,
+      "v": "b8c932d1"
     },
     {
       "id": "paddle-sizing-demo",
       "file": "req4.md",
-      "description": "A Scout standing on a lakeshore next to a canoe, holding a wooden canoe paddle vertically beside them to measure its length against their body. The paddle blade rests on the ground and the grip reaches to about chin height. The Scout wears a clean Scout uniform and a life jacket. Sunny day, green trees in background."
+      "description": "A Scout standing on a lakeshore next to a canoe, holding a wooden canoe paddle vertically beside them to measure its length against their body. The paddle blade rests on the ground and the grip reaches to about chin height. The Scout wears a clean Scout uniform and a life jacket. Sunny day, green trees in background.",
+      "width": 800,
+      "height": 447,
+      "v": "c366ef41"
     },
     {
       "id": "pfd-types-comparison",
       "file": "req5a.md",
       "style": "comparison",
-      "description": "Four different styles of life jackets displayed side by side on a wooden dock in bright daylight. From left to right: a bulky orange offshore life jacket, a standard orange near-shore vest, a sleek red paddlesport PFD designed for arm mobility, and a bright yellow specialized paddling vest. Each jacket is a distinctly different shape and size, clearly showing the range from bulky to streamlined."
+      "description": "Four different styles of life jackets displayed side by side on a wooden dock in bright daylight. From left to right: a bulky orange offshore life jacket, a standard orange near-shore vest, a sleek red paddlesport PFD designed for arm mobility, and a bright yellow specialized paddling vest. Each jacket is a distinctly different shape and size, clearly showing the range from bulky to streamlined.",
+      "width": 800,
+      "height": 447,
+      "v": "154bccf6"
     },
     {
       "id": "pfd-fitting-steps",
       "file": "req5b.md",
       "style": "annotated-photo",
-      "description": "A sequence of five photos showing a Scout properly putting on a life jacket on an outdoor dock. First photo: loosening straps. Second: putting it on and zipping up. Third: buckling clips. Fourth: tightening straps snugly. Fifth: a buddy pulling upward on the shoulders to test fit while the Scout stands still. Clean natural lighting, no text overlays."
+      "description": "A sequence of five photos showing a Scout properly putting on a life jacket on an outdoor dock. First photo: loosening straps. Second: putting it on and zipping up. Third: buckling clips. Fourth: tightening straps snugly. Fifth: a buddy pulling upward on the shoulders to test fit while the Scout stands still. Clean natural lighting, no text overlays.",
+      "width": 800,
+      "height": 447,
+      "v": "33dd437d"
     },
     {
       "id": "canoe-safety-gear-layout",
       "file": "req5c.md",
-      "description": "A flat-lay arrangement of canoe safety equipment on a wooden dock surface, shot from directly above. Items arranged in a clean grid: orange pealess whistle on a lanyard, spare wooden paddle, large natural sponge, cut-open milk jug bailer with handle, hand bilge pump, rescue sling (webbing loop), neatly coiled yellow polypropylene painter rope, and a red throw bag. Each item clearly visible and identifiable. Bright natural lighting, dock planks visible between items."
+      "description": "A flat-lay arrangement of canoe safety equipment on a wooden dock surface, shot from directly above. Items arranged in a clean grid: orange pealess whistle on a lanyard, spare wooden paddle, large natural sponge, cut-open milk jug bailer with handle, hand bilge pump, rescue sling (webbing loop), neatly coiled yellow polypropylene painter rope, and a red throw bag. Each item clearly visible and identifiable. Bright natural lighting, dock planks visible between items.",
+      "width": 800,
+      "height": 447,
+      "v": "0130f34c"
     },
     {
       "id": "canoe-storage-rack",
       "file": "req6.md",
-      "description": "Interior of a well-organized boathouse or storage area. A green canoe stored properly upside down on a sturdy wooden rack, supported at the gunwales. Nearby, three wooden paddles hung vertically on wall-mounted hooks. Two life jackets hang on separate pegs, fully unfolded to air dry. The space is clean and orderly. Natural light coming through an open door or window. Everything stored off the ground and properly arranged."
+      "description": "Interior of a well-organized boathouse or storage area. A green canoe stored properly upside down on a sturdy wooden rack, supported at the gunwales. Nearby, three wooden paddles hung vertically on wall-mounted hooks. Two life jackets hang on separate pegs, fully unfolded to air dry. The space is clean and orderly. Natural light coming through an open door or window. Everything stored off the ground and properly arranged.",
+      "width": 800,
+      "height": 447,
+      "v": "bbd67850"
     },
     {
       "id": "canoe-shore-launch",
       "file": "req7.md",
-      "description": "Two Scouts (ages 13-15) launching a canoe from a sandy lakeshore. The stern paddler stands in knee-deep water holding the canoe steady by gripping both gunwales at the stern. The bow paddler is carefully stepping into the center of the canoe with one foot, hands on both gunwales, keeping weight low. Both wear properly fitted red life jackets over clean Scout uniforms. Paddles already placed inside the canoe. Calm lake, sunny day, pine trees in background."
+      "description": "Two Scouts (ages 13-15) launching a canoe from a sandy lakeshore. The stern paddler stands in knee-deep water holding the canoe steady by gripping both gunwales at the stern. The bow paddler is carefully stepping into the center of the canoe with one foot, hands on both gunwales, keeping weight low. Both wear properly fitted red life jackets over clean Scout uniforms. Paddles already placed inside the canoe. Calm lake, sunny day, pine trees in background.",
+      "width": 800,
+      "height": 447,
+      "v": "afc00ace"
     },
     {
       "id": "canoe-kneeling-position",
       "file": "req7.md",
       "style": "annotated-photo",
-      "description": "Close-up of a Scout demonstrating the proper kneeling position inside a canoe on calm water. Knees spread wide on the hull bottom, backside resting against the front edge of the canoe seat, paddle held in ready position. Annotated callouts point to: 'Knees wide on hull bottom' (at knees), 'Weight rests on seat edge' (at seat contact point), 'Low center of gravity' (arrow showing body position), 'Paddle ready' (at hands). The Scout wears a life jacket. Water visible on both sides of the canoe."
+      "description": "Close-up of a Scout demonstrating the proper kneeling position inside a canoe on calm water. Knees spread wide on the hull bottom, backside resting against the front edge of the canoe seat, paddle held in ready position. Annotated callouts point to: 'Knees wide on hull bottom' (at knees), 'Weight rests on seat edge' (at seat contact point), 'Low center of gravity' (arrow showing body position), 'Paddle ready' (at hands). The Scout wears a life jacket. Water visible on both sides of the canoe.",
+      "width": 800,
+      "height": 447,
+      "v": "f259dfd4"
     },
     {
       "id": "canoe-reentry-assist",
       "file": "req8a.md",
       "style": "annotated-photo",
-      "description": "A deep-water canoe reentry scene. One Scout is in the water beside a canoe, gripping the near gunwale and preparing to kick and pull themselves aboard. The other Scout is in the canoe, leaning over the far gunwale to counterbalance. Annotated callouts: 'Swimmer grips gunwale' (at the water-level Scout's hands), 'Kick hard while pulling up' (at swimmer's legs), 'Partner counterbalances on far side' (at the canoe paddler leaning opposite). Both wearing life jackets. Calm lake water, the canoe is stable."
+      "description": "A deep-water canoe reentry scene. One Scout is in the water beside a canoe, gripping the near gunwale and preparing to kick and pull themselves aboard. The other Scout is in the canoe, leaning over the far gunwale to counterbalance. Annotated callouts: 'Swimmer grips gunwale' (at the water-level Scout's hands), 'Kick hard while pulling up' (at swimmer's legs), 'Partner counterbalances on far side' (at the canoe paddler leaning opposite). Both wearing life jackets. Calm lake water, the canoe is stable.",
+      "width": 800,
+      "height": 447,
+      "v": "b6b2d858"
     },
     {
       "id": "capsized-canoe-floating",
       "file": "req8b.md",
-      "description": "Two Scouts in bright orange life jackets floating calmly in a lake, each holding onto opposite ends of an overturned (capsized) green canoe. The hull is visible above the waterline. Both Scouts have relaxed, calm expressions — demonstrating that staying with the boat is safe and manageable. Their heads are well above water thanks to their PFDs. Blue sky, calm water with small ripples. A distant tree-lined shore visible in the background."
+      "description": "Two Scouts in bright orange life jackets floating calmly in a lake, each holding onto opposite ends of an overturned (capsized) green canoe. The hull is visible above the waterline. Both Scouts have relaxed, calm expressions — demonstrating that staying with the boat is safe and manageable. Their heads are well above water thanks to their PFDs. Blue sky, calm water with small ripples. A distant tree-lined shore visible in the background.",
+      "width": 800,
+      "height": 447,
+      "v": "038dd735"
     },
     {
       "id": "swamped-canoe-emptying",
       "file": "req8c.md",
-      "description": "Two Scouts standing in waist-deep water working together to empty a swamped canoe. They are rolling the canoe onto its side, with water pouring out over the far gunwale. Both wear life jackets. The lake bottom is visible through the clear shallow water. The canoe is partially tipped with a visible stream of water draining from it. Sunny day, reeds and a sandy bottom visible in the foreground."
+      "description": "Two Scouts standing in waist-deep water working together to empty a swamped canoe. They are rolling the canoe onto its side, with water pouring out over the far gunwale. Both wear life jackets. The lake bottom is visible through the clear shallow water. The canoe is partially tipped with a visible stream of water draining from it. Sunny day, reeds and a sandy bottom visible in the foreground.",
+      "width": 800,
+      "height": 447,
+      "v": "9f7a3277"
     },
     {
       "id": "canoe-over-canoe-rescue",
       "file": "req8d.md",
       "style": "diagram",
-      "description": "A top-down diagram showing the canoe-over-canoe (T-rescue) sequence in four steps. Step 1: Rescue canoe approaches perpendicular to the capsized canoe, forming a T shape, with swimmers holding the far end. Step 2: The bow of the swamped canoe is being pulled up and across the rescue canoe's gunwales. Step 3: The swamped canoe is balanced across the rescue canoe, draining water (water droplets illustrated). Step 4: The now-empty canoe is slid back into the water alongside the rescue canoe, gunwale to gunwale, with swimmers approaching the far side to reboard. Clean arrows showing movement, labeled steps, blue water background."
+      "description": "A top-down diagram showing the canoe-over-canoe (T-rescue) sequence in four steps. Step 1: Rescue canoe approaches perpendicular to the capsized canoe, forming a T shape, with swimmers holding the far end. Step 2: The bow of the swamped canoe is being pulled up and across the rescue canoe's gunwales. Step 3: The swamped canoe is balanced across the rescue canoe, draining water (water droplets illustrated). Step 4: The now-empty canoe is slid back into the water alongside the rescue canoe, gunwale to gunwale, with swimmers approaching the far side to reboard. Clean arrows showing movement, labeled steps, blue water background.",
+      "width": 800,
+      "height": 447,
+      "v": "71a3e13b"
     },
     {
       "id": "canoe-swimmer-rescue",
       "file": "req8e.md",
-      "description": "A rescue canoe approaching a conscious swimmer in calm lake water. The swimmer floats with one hand raised to signal, wearing an orange life jacket. In the canoe, the bow paddler leans forward communicating with the swimmer while the stern paddler positions the canoe alongside. The canoe approaches from the side, not head-on. Both canoe occupants wear life jackets. Clear water, sunny conditions, a sense of controlled urgency."
+      "description": "A rescue canoe approaching a conscious swimmer in calm lake water. The swimmer floats with one hand raised to signal, wearing an orange life jacket. In the canoe, the bow paddler leans forward communicating with the swimmer while the stern paddler positions the canoe alongside. The canoe approaches from the side, not head-on. Both canoe occupants wear life jackets. Clear water, sunny conditions, a sense of controlled urgency.",
+      "width": 800,
+      "height": 447,
+      "v": "4acff0e5"
     },
     {
       "id": "throw-bag-technique",
       "file": "req8f.md",
       "style": "annotated-photo",
-      "description": "A Scout standing on a lakeshore in a throwing stance, mid-release of a throw bag toward a target in the water about 30 feet away. The red throw bag is in the air with yellow rope paying out behind it in a visible arc. Annotated callouts: 'Hold free end of rope' (at the Scout's non-throwing hand), 'Underhand toss' (at the throwing arm), 'Aim beyond the target' (arrow toward the landing zone), 'Feet planted, stable stance' (at feet). The Scout wears a life jacket. A buoy or floating target is visible in the water."
+      "description": "A Scout standing on a lakeshore in a throwing stance, mid-release of a throw bag toward a target in the water about 30 feet away. The red throw bag is in the air with yellow rope paying out behind it in a visible arc. Annotated callouts: 'Hold free end of rope' (at the Scout's non-throwing hand), 'Underhand toss' (at the throwing arm), 'Aim beyond the target' (arrow toward the landing zone), 'Feet planted, stable stance' (at feet). The Scout wears a life jacket. A buoy or floating target is visible in the water.",
+      "width": 800,
+      "height": 447,
+      "v": "11c545d3"
     },
     {
       "id": "canoe-paddle-strokes",
       "file": "req9.md",
       "style": "diagram",
-      "description": "A top-down diagram of a canoe showing six core paddle strokes, three on each side. Each stroke is illustrated with an arrow showing the blade path through the water, labeled clearly. Left side (bow paddler): Forward Stroke (straight back arrow), Forward Sweep (wide arc from bow outward to stern), Draw Stroke (arrow pulling toward canoe). Right side (stern paddler): Back Stroke (straight forward arrow), Reverse Sweep (wide arc from stern outward to bow), J-Stroke (straight back arrow with a small J-hook correction at the end). Clean diagram style, blue water, gray canoe outline, colored arrows for each stroke."
+      "description": "A top-down diagram of a canoe showing six core paddle strokes, three on each side. Each stroke is illustrated with an arrow showing the blade path through the water, labeled clearly. Left side (bow paddler): Forward Stroke (straight back arrow), Forward Sweep (wide arc from bow outward to stern), Draw Stroke (arrow pulling toward canoe). Right side (stern paddler): Back Stroke (straight forward arrow), Reverse Sweep (wide arc from stern outward to bow), J-Stroke (straight back arrow with a small J-hook correction at the end). Clean diagram style, blue water, gray canoe outline, colored arrows for each stroke.",
+      "width": 800,
+      "height": 447,
+      "v": "d1a378e1"
     },
     {
       "id": "figure-eight-course",
       "file": "req9.md",
       "style": "diagram",
-      "description": "A top-down diagram showing a figure-eight canoe course. Two orange buoy markers placed 3-4 boat lengths apart on blue water. A dashed line traces the canoe's path in a figure-eight pattern around both markers, with directional arrows. Small canoe icons at key points show the boat's orientation during turns. Labels indicate 'Start/Finish', 'Marker 1', 'Marker 2', and '3-4 boat lengths' for the distance between markers. Small stroke labels at turn points: 'Draw + Forward Sweep' and 'J-Stroke for tracking'. Clean, instructional style."
+      "description": "A top-down diagram showing a figure-eight canoe course. Two orange buoy markers placed 3-4 boat lengths apart on blue water. A dashed line traces the canoe's path in a figure-eight pattern around both markers, with directional arrows. Small canoe icons at key points show the boat's orientation during turns. Labels indicate 'Start/Finish', 'Marker 1', 'Marker 2', and '3-4 boat lengths' for the distance between markers. Small stroke labels at turn points: 'Draw + Forward Sweep' and 'J-Stroke for tracking'. Clean, instructional style.",
+      "width": 800,
+      "height": 447,
+      "v": "5a12a001"
     },
     {
       "id": "canoe-wilderness-sunset",
       "file": "extended-learning.md",
-      "description": "A canoe beached bow-first on a rocky Canadian Shield-style lakeshore at golden hour sunset. A small campfire burns in a fire ring nearby with two camp chairs beside it. A dome tent is pitched on a flat spot among pine trees. The lake is calm and reflective, mirroring orange and pink sunset colors. Pine-covered granite hills rise on the far shore. No people visible — just the peaceful scene of a wilderness canoe camp at the end of a good day of paddling. Warm, inviting atmosphere."
+      "description": "A canoe beached bow-first on a rocky Canadian Shield-style lakeshore at golden hour sunset. A small campfire burns in a fire ring nearby with two camp chairs beside it. A dome tent is pitched on a flat spot among pine trees. The lake is calm and reflective, mirroring orange and pink sunset colors. Pine-covered granite hills rise on the far shore. No people visible — just the peaceful scene of a wilderness canoe camp at the end of a good day of paddling. Warm, inviting atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "8a490d77"
     }
   ]
 }

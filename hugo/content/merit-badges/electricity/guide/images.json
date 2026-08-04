@@ -7,126 +7,180 @@
       "file": "req1.md",
       "style": "diagram",
       "description": "Clean educational diagram of a residential electrical service panel with the deadfront cover on, showing a large main breaker at the top and several labeled branch circuit breakers below. Labels identify main breaker, branch breakers, kitchen circuit, bedroom circuit, bathroom GFCI circuit, and panel directory. Front view, uncluttered white background, high contrast, only short horizontal labels, no branding.",
-      "value": "Front-view layout of a main breaker and branch breakers inside a home service panel — spatial relationships and component identification that text alone cannot convey"
+      "value": "Front-view layout of a main breaker and branch breakers inside a home service panel — spatial relationships and component identification that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "7e2e6f1e"
     },
     {
       "id": "car-downed-line-exit-sequence",
       "file": "req1.md",
       "style": "comparison",
       "description": "Two-panel educational comparison showing emergency exit from a car with a downed utility wire. Left panel shows the dangerous wrong action: a person stepping out while one hand still touches the car and one foot touches the ground, with a red X. Right panel shows the correct action: the person jumping clear with both feet together, then shuffling away in small steps, with a green check. Downed power line resting on car roof, simple outdoor roadside setting, clear body positions, minimal text labels only reading WRONG and CORRECT.",
-      "value": "Correct versus incorrect body positioning when exiting a car touching a downed wire — a motion and posture comparison that text alone cannot convey"
+      "value": "Correct versus incorrect body positioning when exiting a car touching a downed wire — a motion and posture comparison that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "4231414b"
     },
     {
       "id": "electromagnet-coil-around-nail",
       "file": "req3.md",
       "style": "diagram",
       "description": "Educational parts diagram of a simple electromagnet built from an iron nail wrapped with insulated copper wire, with wire leads connected to a small battery and several paper clips attracted to the nail tip. Short horizontal labels identify battery, wire coil, iron nail core, current path, and paper clips. Clean white background, realistic proportions, no extra scenery, visual-first layout.",
-      "value": "Labeled relationship between battery, coiled wire, iron core, and attracted metal objects — component arrangement and cause-effect that text alone cannot show"
+      "value": "Labeled relationship between battery, coiled wire, iron core, and attracted metal objects — component arrangement and cause-effect that text alone cannot show",
+      "width": 800,
+      "height": 447,
+      "v": "2954032c"
     },
     {
       "id": "ac-dc-wave-comparison",
       "file": "req4.md",
       "style": "comparison",
       "description": "Split educational diagram comparing direct current and alternating current. Left panel shows a flat or one-direction current line with arrows all moving one way and a battery icon. Right panel shows a smooth sine-wave style alternating pattern crossing a center line with arrows changing direction and a wall outlet icon. Minimal horizontal labels only: DC, AC, one direction, switches direction. White background, clean textbook style, no dense text.",
-      "value": "Side-by-side visual contrast between one-direction current and reversing current over time — pattern recognition that text alone cannot convey"
+      "value": "Side-by-side visual contrast between one-direction current and reversing current over time — pattern recognition that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "aaff33f5"
     },
     {
       "id": "battery-bell-circuit-diagram",
       "file": "req5.md",
       "style": "diagram",
       "description": "Clear labeled educational diagram of a simple battery and electric bell circuit. Show a battery, wires, push button switch, electromagnet coil, moving armature, striker hammer, bell gong, and contact screw interrupter in one loop. Include a few simple arrows showing the repeating sequence from closed switch to energized coil to armature movement to broken contact. White background, short horizontal labels, clean mechanical layout, no branding.",
-      "value": "Labeled sequence of parts and motion in a battery-powered bell circuit — the repeating interrupter action and component roles that text alone cannot show"
+      "value": "Labeled sequence of parts and motion in a battery-powered bell circuit — the repeating interrupter action and component roles that text alone cannot show",
+      "width": 800,
+      "height": 447,
+      "v": "ea1e246d"
     },
     {
       "id": "overload-wattage-add-up-example",
       "file": "req6.md",
       "style": "diagram",
       "description": "Simple educational diagram showing three kitchen appliances on one branch circuit: microwave labeled 1200 W, toaster labeled 900 W, coffee maker labeled 800 W, all feeding into one 120-volt branch circuit line with a note at the end showing total 2900 W and about 24.2 A compared against a 15 A and 20 A breaker scale. Use large readable numbers and short labels only. White background, visual-first layout, no paragraphs.",
-      "value": "Visual add-up of appliance wattages compared to branch-circuit amp limits — numerical overload relationship that is easier to grasp visually than in text alone"
+      "value": "Visual add-up of appliance wattages compared to branch-circuit amp limits — numerical overload relationship that is easier to grasp visually than in text alone",
+      "width": 800,
+      "height": 447,
+      "v": "722d29d3"
     },
     {
       "id": "tripped-breaker-reset-sequence",
       "file": "req6.md",
       "style": "comparison",
       "description": "Three-position educational comparison of a household circuit breaker handle showing ON, TRIPPED middle position, and OFF then reset to ON. Emphasize the middle tripped position and the motion sequence to reset: move fully to OFF first, then firmly to ON. Clean panel fragment only, short horizontal labels, arrows between positions, white background.",
-      "value": "Breaker handle positions and reset motion sequence — physical handle states and movement that text alone cannot convey clearly"
+      "value": "Breaker handle positions and reset motion sequence — physical handle states and movement that text alone cannot convey clearly",
+      "width": 800,
+      "height": 447,
+      "v": "dc8a47c0"
     },
     {
       "id": "room-wiring-floor-plan-example",
       "file": "req7.md",
       "style": "diagram",
       "description": "Top-down educational floor plan of a simple bedroom showing door, window, ceiling light, wall switch, four duplex outlets, and labels tying each device to breaker 12. Include one line from the wall switch to the ceiling light to show control relationship. Simple legend with light, switch, and outlet symbols. Clean white background, uncluttered blueprint-like layout, only short horizontal labels.",
-      "value": "Top-down spatial map linking outlets, switch, light fixture, and breaker number within one room — layout relationships impossible to communicate as clearly in text"
+      "value": "Top-down spatial map linking outlets, switch, light fixture, and breaker number within one room — layout relationships impossible to communicate as clearly in text",
+      "width": 800,
+      "height": 447,
+      "v": "c4aee2ca"
     },
     {
       "id": "sample-electric-bill-breakdown",
       "file": "req8.md",
       "style": "diagram",
       "description": "Clean mock electric bill with a few large highlighted sections only: meter reading previous and current, total usage 750 kWh, energy charge, delivery charge, taxes and fees, and total due. Use oversized callout boxes instead of dense text. Simple utility bill layout on white paper, high legibility, no real company name, no branding.",
-      "value": "Highlighted structure of a utility bill showing which numbers map to usage, energy charges, and fees — document anatomy that text alone cannot show as effectively"
+      "value": "Highlighted structure of a utility bill showing which numbers map to usage, energy charges, and fees — document anatomy that text alone cannot show as effectively",
+      "width": 800,
+      "height": 447,
+      "v": "7fae86ad"
     },
     {
       "id": "generation-to-home-grid-flow",
       "file": "req9.md",
       "style": "diagram",
       "description": "Horizontal educational flow diagram showing electricity path from generation to home: power plant and wind turbine at left, high-voltage transmission towers, substation, step-down transformer, neighborhood distribution lines, GFCI outlet and surge protector in a home at right. Minimal horizontal labels for generation, transmission, substation, transformer, distribution, and use. Clean white background, simple icons, no dense text.",
-      "value": "End-to-end visual map from generating source through transmission, substation, transformer, distribution, and household protection devices — system flow that text alone cannot visualize well"
+      "value": "End-to-end visual map from generating source through transmission, substation, transformer, distribution, and household protection devices — system flow that text alone cannot visualize well",
+      "width": 800,
+      "height": 447,
+      "v": "3101d991"
     },
     {
       "id": "basic-circuit-loop-with-switch",
       "file": "req10a.md",
       "style": "diagram",
       "description": "Simple educational circuit diagram showing a battery, switch, light bulb, and wires in one complete loop. Include one inset state with switch open and bulb off, and one with switch closed and bulb glowing. Minimal labels only: battery, switch, load, open, closed. White background, beginner-friendly textbook style.",
-      "value": "Open-versus-closed circuit loop with current path through battery, switch, and load — the complete-path concept that text alone cannot show as clearly"
+      "value": "Open-versus-closed circuit loop with current path through battery, switch, and load — the complete-path concept that text alone cannot show as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "48d7f47f"
     },
     {
       "id": "simple-motor-part-layout",
       "file": "req10b.md",
       "style": "diagram",
       "description": "Educational diagram of a simple classroom electric motor with a wire coil suspended between two support contacts above a battery, permanent magnets on each side, and a curved arrow showing rotation. Short labels identify battery, coil, contacts, magnets, and spin direction. Clean white background, no clutter, no branding.",
-      "value": "Arrangement of coil, magnets, contacts, and rotation in a simple motor — magnetic interaction and physical layout that text alone cannot convey"
+      "value": "Arrangement of coil, magnets, contacts, and rotation in a simple motor — magnetic interaction and physical layout that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "89d445dd"
     },
     {
       "id": "rheostat-contact-path-change",
       "file": "req10c.md",
       "style": "diagram",
       "description": "Educational diagram of a beginner rheostat showing a resistive strip and a movable slider contact in two positions. Left position shows a shorter active resistive path and brighter bulb, right position shows a longer active path and dimmer bulb. Short labels only: slider, resistive path, less resistance, more resistance. White background, clear arrows, visual-first layout.",
-      "value": "Movable contact changing the effective resistive path length and resulting bulb brightness — variable-resistance behavior that text alone cannot show clearly"
+      "value": "Movable contact changing the effective resistive path length and resulting bulb brightness — variable-resistance behavior that text alone cannot show clearly",
+      "width": 800,
+      "height": 447,
+      "v": "f663ddca"
     },
     {
       "id": "spdt-switch-two-load-paths",
       "file": "req10d.md",
       "style": "diagram",
       "description": "Clear educational diagram of a single-pole, double-throw switch with one common terminal connected to a battery and two output paths leading to two separate light bulbs. Show the switch lever selecting light A in one position and light B in the other. Minimal labels only: common, throw A, throw B, load A, load B. White background, clean routing lines.",
-      "value": "One common input routed to one of two output paths in an SPDT switch — current-routing logic that text alone cannot illustrate as clearly"
+      "value": "One common input routed to one of two output paths in an SPDT switch — current-routing logic that text alone cannot illustrate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "a7d52ce5"
     },
     {
       "id": "three-way-switch-traveler-paths",
       "file": "req10e.md",
       "style": "diagram",
       "description": "Educational wiring logic diagram for a 3-way lighting circuit with two switches and one light. Show the two traveler wires between switches, one common feed on the first switch, and the light on the second switch common. Include two simple rows: top row with both switches on matching traveler path and light on, bottom row with mismatched traveler path and light off. Use only short horizontal labels: switch 1, switch 2, traveler 1, traveler 2, light on, light off.",
-      "value": "Traveler-wire path matching versus mismatching between two 3-way switches controlling one light — switching logic that text alone is hard to visualize"
+      "value": "Traveler-wire path matching versus mismatching between two 3-way switches controlling one light — switching logic that text alone is hard to visualize",
+      "width": 800,
+      "height": 447,
+      "v": "60f088a1"
     },
     {
       "id": "series-parallel-two-bulb-comparison",
       "file": "req10f.md",
       "style": "comparison",
       "description": "Side-by-side educational comparison of the same battery, switch, and two bulbs wired two ways. Left panel shows a series circuit with one path and two dimmer bulbs; right panel shows a parallel circuit with two branches and brighter bulbs. Include a small inset showing one bulb removed: in series both go dark, in parallel one branch stays lit. Minimal labels only: series, parallel, one path, two branches. White background, clean textbook look.",
-      "value": "Direct visual comparison of one-path series wiring versus two-branch parallel wiring and the different bulb behavior — circuit behavior that text alone cannot show as immediately"
+      "value": "Direct visual comparison of one-path series wiring versus two-branch parallel wiring and the different bulb behavior — circuit behavior that text alone cannot show as immediately",
+      "width": 800,
+      "height": 447,
+      "v": "098eaabd"
     },
     {
       "id": "electric-careers-at-work-grid",
       "file": "req11.md",
       "style": "comparison",
       "description": "Three-panel educational comparison showing electricity careers in action. Panel one: electrician in a clean hard hat and safety glasses working at a training wall with conduit and outlet boxes. Panel two: power line worker in protective gear near a bucket truck and distribution lines. Panel three: electrical engineer or electronics technician at a workbench with circuit boards, test instruments, and computer screens. No visible company logos or text, realistic workplace scenes, clean presentation.",
-      "value": "Side-by-side visual contrast of three electricity career environments and tools — workplace differences that text alone cannot communicate as immediately"
+      "value": "Side-by-side visual contrast of three electricity career environments and tools — workplace differences that text alone cannot communicate as immediately",
+      "width": 800,
+      "height": 447,
+      "v": "3a44cc58"
     },
     {
       "id": "grid-scale-power-delivery-overview",
       "file": "extended-learning.md",
       "style": "diagram",
       "description": "Wide educational diagram showing the power grid from left to right: hydro dam, gas plant, solar field, and wind turbines feeding transmission lines, then a substation, transformers, neighborhood distribution poles, and homes. Keep icons simple and realistic, use only short labels for each stage, clean sky and land background, no branding, no dense text.",
-      "value": "Big-picture grid journey from multiple generation sources through transmission and distribution to homes — large-scale system relationships that text alone cannot visualize well"
+      "value": "Big-picture grid journey from multiple generation sources through transmission and distribution to homes — large-scale system relationships that text alone cannot visualize well",
+      "width": 800,
+      "height": 447,
+      "v": "7e545695"
     }
   ]
 }

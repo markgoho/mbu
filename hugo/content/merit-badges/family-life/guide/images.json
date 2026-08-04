@@ -6,93 +6,147 @@
       "id": "family-through-history",
       "file": "_index.md",
       "style": "comparison",
-      "description": "A split illustration showing two scenes side by side. On the left, a historical family from the 1800s working together on a small farm — adults tending crops while children carry baskets and an elder sits nearby. On the right, a diverse modern family gathered around a dinner table in a warm kitchen, laughing and passing dishes. Both scenes convey teamwork and togetherness across eras."
+      "description": "A split illustration showing two scenes side by side. On the left, a historical family from the 1800s working together on a small farm — adults tending crops while children carry baskets and an elder sits nearby. On the right, a diverse modern family gathered around a dinner table in a warm kitchen, laughing and passing dishes. Both scenes convey teamwork and togetherness across eras.",
+      "width": 800,
+      "height": 447,
+      "v": "b2178537"
     },
     {
       "id": "diverse-family-types",
       "file": "_index.md",
-      "description": "A warm collage-style illustration showing four different family types in separate vignettes: a large multigenerational family with grandparents, parents, and children gathered on a porch; a single parent walking hand-in-hand with two children in a park; a blended family with step-siblings playing a board game together; and a military family in civilian clothes reuniting at an airport. All depicted with warmth, joy, and diversity in age, ethnicity, and family structure."
+      "description": "A warm collage-style illustration showing four different family types in separate vignettes: a large multigenerational family with grandparents, parents, and children gathered on a porch; a single parent walking hand-in-hand with two children in a park; a blended family with step-siblings playing a board game together; and a military family in civilian clothes reuniting at an airport. All depicted with warmth, joy, and diversity in age, ethnicity, and family structure.",
+      "width": 800,
+      "height": 447,
+      "v": "e40791e7"
     },
     {
       "id": "family-dinner-conversation",
       "file": "req1.md",
-      "description": "A diverse family of five sitting around a dinner table engaged in lively conversation. The table has home-cooked food, and the warm overhead lighting creates a cozy atmosphere. Family members are smiling and gesturing as they talk. The kitchen is visible in the background with a lived-in, comfortable feel."
+      "description": "A diverse family of five sitting around a dinner table engaged in lively conversation. The table has home-cooked food, and the warm overhead lighting creates a cozy atmosphere. Family members are smiling and gesturing as they talk. The kitchen is visible in the background with a lived-in, comfortable feel.",
+      "width": 800,
+      "height": 447,
+      "v": "be65654a"
     },
     {
       "id": "ripple-effect-family",
       "file": "req1.md",
-      "description": "An illustration showing a Scout helping wash dishes at a kitchen sink, with visual ripple-like waves emanating outward. In the ripples, family members are shown smiling and relaxing — a parent reading a book, a sibling doing homework peacefully, a grandparent watching TV contentedly. The concept shows how one positive action creates a chain of positive effects throughout the household."
+      "description": "An illustration showing a Scout helping wash dishes at a kitchen sink, with visual ripple-like waves emanating outward. In the ripples, family members are shown smiling and relaxing — a parent reading a book, a sibling doing homework peacefully, a grandparent watching TV contentedly. The concept shows how one positive action creates a chain of positive effects throughout the household.",
+      "width": 800,
+      "height": 447,
+      "v": "bf1bc030"
     },
     {
       "id": "scout-helping-family",
       "file": "req2.md",
-      "description": "A Scout sitting at a kitchen table helping a younger sibling with homework. The Scout is pointing at a textbook and explaining something while the younger child looks engaged. In the background, a parent is preparing dinner at the stove, glancing over with a warm smile. The scene conveys everyday helpfulness and family connection."
+      "description": "A Scout sitting at a kitchen table helping a younger sibling with homework. The Scout is pointing at a textbook and explaining something while the younger child looks engaged. In the background, a parent is preparing dinner at the stove, glancing over with a warm smile. The scene conveys everyday helpfulness and family connection.",
+      "width": 800,
+      "height": 447,
+      "v": "4b787c4a"
     },
     {
       "id": "family-appreciation-circle",
       "file": "req2.md",
-      "description": "A family of four sitting in a comfortable living room arranged in a loose circle. Each person holds a small piece of paper and one person is reading theirs aloud while others listen attentively. The atmosphere is warm and slightly emotional. A coffee table has mugs and a plate of cookies. Natural light comes through a window."
+      "description": "A family of four sitting in a comfortable living room arranged in a loose circle. Each person holds a small piece of paper and one person is reading theirs aloud while others listen attentively. The atmosphere is warm and slightly emotional. A coffee table has mugs and a plate of cookies. Natural light comes through a window.",
+      "width": 800,
+      "height": 447,
+      "v": "41424a01"
     },
     {
       "id": "scout-doing-chores",
       "file": "req3.md",
-      "description": "A Scout vacuuming a living room floor with a positive expression. In the background, a simple chore chart or checklist is visible on the wall with several items checked off. The room is tidy and well-lit. The Scout is wearing casual clothes appropriate for housework."
+      "description": "A Scout vacuuming a living room floor with a positive expression. In the background, a simple chore chart or checklist is visible on the wall with several items checked off. The room is tidy and well-lit. The Scout is wearing casual clothes appropriate for housework.",
+      "width": 800,
+      "height": 447,
+      "v": "f39925be"
     },
     {
       "id": "chore-tracking-calendar",
       "file": "req3.md",
-      "description": "A close-up view of a colorful wall calendar or tracking chart showing several weeks of completed chores. Different colored checkmarks and small star stickers mark completed tasks. A hand holding a marker is about to check off another item. The calendar is on a kitchen wall with a few family photos visible nearby."
+      "description": "A close-up view of a colorful wall calendar or tracking chart showing several weeks of completed chores. Different colored checkmarks and small star stickers mark completed tasks. A hand holding a marker is about to check off another item. The calendar is on a kitchen wall with a few family photos visible nearby.",
+      "width": 800,
+      "height": 447,
+      "v": "c8aea352"
     },
     {
       "id": "scout-organizing-garage",
       "file": "req4.md",
-      "description": "A Scout organizing a garage workspace. Labeled clear storage bins are stacked neatly on shelves, tools are hung on a pegboard in an orderly arrangement, and the floor is swept clean. The Scout is placing a labeled bin onto a shelf with a satisfied expression. Before-state clutter is subtly implied by an empty messy corner being transformed."
+      "description": "A Scout organizing a garage workspace. Labeled clear storage bins are stacked neatly on shelves, tools are hung on a pegboard in an orderly arrangement, and the floor is swept clean. The Scout is placing a labeled bin onto a shelf with a satisfied expression. Before-state clutter is subtly implied by an empty messy corner being transformed.",
+      "width": 800,
+      "height": 447,
+      "v": "bf1411d8"
     },
     {
       "id": "before-after-project",
       "file": "req4.md",
       "style": "comparison",
-      "description": "A split-view image showing a home project transformation. The left side labeled 'Before' shows a cluttered, disorganized hall closet with shoes piled up, coats falling off hooks, and items spilling out. The right side labeled 'After' shows the same closet neatly organized with a shoe rack, properly hung coats, labeled bins on the shelf, and a small basket for accessories. Clean, well-lit photography style."
+      "description": "A split-view image showing a home project transformation. The left side labeled 'Before' shows a cluttered, disorganized hall closet with shoes piled up, coats falling off hooks, and items spilling out. The right side labeled 'After' shows the same closet neatly organized with a shoe rack, properly hung coats, labeled bins on the shelf, and a small basket for accessories. Clean, well-lit photography style.",
+      "width": 800,
+      "height": 447,
+      "v": "9a7ed54e"
     },
     {
       "id": "family-garden-project",
       "file": "req5.md",
-      "description": "A family of four working together in a backyard garden on a sunny day. One person is digging with a shovel, another is planting seedlings, a third is watering with a hose, and a younger child is carrying a small pot of flowers. Garden tools, seed packets, and bags of soil are visible. Everyone is smiling and engaged in the collaborative project."
+      "description": "A family of four working together in a backyard garden on a sunny day. One person is digging with a shovel, another is planting seedlings, a third is watering with a hose, and a younger child is carrying a small pot of flowers. Garden tools, seed packets, and bags of soil are visible. Everyone is smiling and engaged in the collaborative project.",
+      "width": 800,
+      "height": 447,
+      "v": "44e1ca52"
     },
     {
       "id": "family-volunteering-together",
       "file": "req5.md",
-      "description": "A family wearing matching plain volunteer T-shirts sorting canned food and boxed items at a community food bank. They are working as a team at a long table, with stacked donation boxes behind them. A banner reading 'Community Food Drive' is partially visible. The family members range in age and are working with focus and smiles."
+      "description": "A family wearing matching plain volunteer T-shirts sorting canned food and boxed items at a community food bank. They are working as a team at a long table, with stacked donation boxes behind them. A banner reading 'Community Food Drive' is partially visible. The family members range in age and are working with focus and smiles.",
+      "width": 800,
+      "height": 447,
+      "v": "ea25ad7c"
     },
     {
       "id": "family-meeting-table",
       "file": "req6a.md",
-      "description": "A family of four sitting around a kitchen table having a family meeting. A handwritten agenda on a piece of paper is visible in the center of the table. One person is speaking while others listen attentively. No phones or devices are present. A notepad and pen sit in front of one person for taking notes. The atmosphere is calm and focused."
+      "description": "A family of four sitting around a kitchen table having a family meeting. A handwritten agenda on a piece of paper is visible in the center of the table. One person is speaking while others listen attentively. No phones or devices are present. A notepad and pen sit in front of one person for taking notes. The atmosphere is calm and focused.",
+      "width": 800,
+      "height": 447,
+      "v": "1df865d6"
     },
     {
       "id": "meeting-agenda-notepad",
       "file": "req6a.md",
-      "description": "A close-up of a spiral notepad on a wooden table with a neatly handwritten family meeting agenda. Visible items include numbered topics like 'Scout Oath at Home', 'Screen Time Rules', and 'Family Budget'. A pen rests beside the notepad, and a mug of hot cocoa with a marshmallow sits nearby. Soft natural light from a window illuminates the scene."
+      "description": "A close-up of a spiral notepad on a wooden table with a neatly handwritten family meeting agenda. Visible items include numbered topics like 'Scout Oath at Home', 'Screen Time Rules', and 'Family Budget'. A pen rests beside the notepad, and a mug of hot cocoa with a marshmallow sits nearby. Soft natural light from a window illuminates the scene.",
+      "width": 800,
+      "height": 447,
+      "v": "7b609c5a"
     },
     {
       "id": "family-meeting-discussion",
       "file": "req6b.md",
-      "description": "A family sitting in a comfortable living room having a serious but warm discussion. Notebooks and a printed agenda are visible. Phones and tablets are set aside in a basket on a nearby side table. Family members show engaged body language — leaning forward, making eye contact, one person gesturing while speaking. The tone is focused but not tense."
+      "description": "A family sitting in a comfortable living room having a serious but warm discussion. Notebooks and a printed agenda are visible. Phones and tablets are set aside in a basket on a nearby side table. Family members show engaged body language — leaning forward, making eye contact, one person gesturing while speaking. The tone is focused but not tense.",
+      "width": 800,
+      "height": 447,
+      "v": "513ade95"
     },
     {
       "id": "parent-teaching-moment",
       "file": "req7.md",
-      "description": "A parent and a Scout sitting together on the front porch steps of a home, having a calm one-on-one conversation. Both are turned toward each other with open, relaxed body language. The parent is gesturing gently while speaking, and the Scout is listening with a thoughtful expression. Late afternoon golden sunlight bathes the scene. A backpack sits nearby suggesting the Scout just came home."
+      "description": "A parent and a Scout sitting together on the front porch steps of a home, having a calm one-on-one conversation. Both are turned toward each other with open, relaxed body language. The parent is gesturing gently while speaking, and the Scout is listening with a thoughtful expression. Late afternoon golden sunlight bathes the scene. A backpack sits nearby suggesting the Scout just came home.",
+      "width": 800,
+      "height": 447,
+      "v": "7bad0467"
     },
     {
       "id": "family-walking-together",
       "file": "req7.md",
-      "description": "A multigenerational family walking together through a sunny park path. A grandparent, a parent, and a Scout walk side by side, with a younger child slightly ahead on the path. Tall trees line the walkway and dappled sunlight filters through the leaves. The family is diverse in age and the mood is peaceful and connected."
+      "description": "A multigenerational family walking together through a sunny park path. A grandparent, a parent, and a Scout walk side by side, with a younger child slightly ahead on the path. Tall trees line the walkway and dappled sunlight filters through the leaves. The family is diverse in age and the mood is peaceful and connected.",
+      "width": 800,
+      "height": 447,
+      "v": "9e0106b5"
     },
     {
       "id": "family-tradition-collage",
       "file": "extended-learning.md",
-      "description": "A warm collage-style illustration showing three family tradition scenes: a family cooking together in a kitchen with flour-dusted counters and a mixing bowl; a family playing a board game around a coffee table with laughter; and a family decorating a holiday tree together with ornaments and string lights. Each scene conveys joy, togetherness, and the warmth of repeated family rituals."
+      "description": "A warm collage-style illustration showing three family tradition scenes: a family cooking together in a kitchen with flour-dusted counters and a mixing bowl; a family playing a board game around a coffee table with laughter; and a family decorating a holiday tree together with ornaments and string lights. Each scene conveys joy, togetherness, and the warmth of repeated family rituals.",
+      "width": 800,
+      "height": 447,
+      "v": "c701a61a"
     }
   ]
 }

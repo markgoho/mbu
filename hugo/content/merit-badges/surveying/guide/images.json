@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Clean instructional scene on an open practice lot: two surveyors in clean field clothing, one operating a tripod-mounted total station centered over a corner stake and the other holding a prism pole at another marked corner, with a few visible boundary stakes and simple callouts labeling the instrument, prism pole, reference corner, and measured line; no logos or branding text",
-      "value": "Shows the spatial relationship between the total station, prism pole, and corner stakes in one field setup \u2014 a layout that text alone cannot convey clearly"
+      "value": "Shows the spatial relationship between the total station, prism pole, and corner stakes in one field setup — a layout that text alone cannot convey clearly",
+      "width": 800,
+      "height": 447,
+      "v": "5cb7f530"
     },
     {
       "id": "tick-check-after-fieldwork",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Instructional close-to-mid shot of a Scout in appropriate outdoor field clothing performing a tick check after surveying in brush, focusing on socks, pant cuffs, and lower legs beside neatly set-down survey gear, with a few simple callouts marking common tick-check spots; no logos or branding text",
-      "value": "Shows exactly where to inspect clothing and skin after brush work \u2014 inspection locations that are easier to learn visually than from text alone"
+      "value": "Shows exactly where to inspect clothing and skin after brush work — inspection locations that are easier to learn visually than from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "07377fac"
     },
     {
       "id": "radial-survey-field-notes",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Clean top-down educational diagram of an open field notebook page for a radial survey, showing one station point at a lot corner, several angle rays spreading to other corners and to a tree, shrub, and rock, plus a neat field-note table with short labels for point name, angle, distance, and remarks; minimal text only, no branding",
-      "value": "Combines the spoke-like geometry of a radial survey with the matching notebook layout \u2014 a visual connection between field positions and recorded notes that text cannot show efficiently"
+      "value": "Combines the spoke-like geometry of a radial survey with the matching notebook layout — a visual connection between field positions and recorded notes that text cannot show efficiently",
+      "width": 800,
+      "height": 447,
+      "v": "29f37aeb"
     },
     {
       "id": "plotting-points-with-protractor",
@@ -32,7 +41,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close instructional view of hands using a protractor and engineer scale on graph paper to plot survey points from field notes, with subtle callouts labeling reference line, angle mark, scaled distance, and plotted point; realistic desktop scene, no logos or branding text",
-      "value": "Shows how the protractor, scale, and plotted point work together on the page \u2014 hand placement and tool alignment that text alone cannot teach well"
+      "value": "Shows how the protractor, scale, and plotted point work together on the page — hand placement and tool alignment that text alone cannot teach well",
+      "width": 800,
+      "height": 447,
+      "v": "fa9341e9"
     },
     {
       "id": "survey-level-and-rod-reading",
@@ -40,7 +52,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Outdoor instructional scene with one Scout sighting through a builder's level on a tripod and another Scout holding a leveling rod straight on a marked corner, with simple callouts for level line of sight, upright rod, benchmark corner, and field notebook reading; clean field clothing, no logos or branding text",
-      "value": "Shows the correct relationship between level, rod, and benchmark in one moment \u2014 positioning and posture that are hard to understand from text alone"
+      "value": "Shows the correct relationship between level, rod, and benchmark in one moment — positioning and posture that are hard to understand from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "12e1a5aa"
     },
     {
       "id": "drone-and-laser-scan-comparison",
@@ -48,7 +63,10 @@
       "style": "comparison",
       "verb_family": "describe",
       "description": "Two-panel comparison image: left panel shows a drone mapping an open construction site from above with ground control markers visible, right panel shows a tripod laser scanner capturing the facade of a building and nearby surfaces; clean instructional composition, no logos or branding text",
-      "value": "Shows the very different kinds of scenes each technology captures best \u2014 a contrast in viewpoint and use case that text alone cannot make immediate"
+      "value": "Shows the very different kinds of scenes each technology captures best — a contrast in viewpoint and use case that text alone cannot make immediate",
+      "width": 800,
+      "height": 447,
+      "v": "721537d6"
     },
     {
       "id": "gps-receiver-on-survey-pole",
@@ -56,7 +74,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Instructional field scene of a survey-grade GPS receiver mounted on a pole in an open area with clear sky, held by a surveyor in clean field clothing, with simple callouts labeling receiver, survey pole, open-sky signal path, and ground point coordinate location; no logos or branding text",
-      "value": "Shows the physical setup GPS surveying depends on, especially the receiver-on-pole arrangement and need for open sky \u2014 a field configuration easier to grasp visually than through text alone"
+      "value": "Shows the physical setup GPS surveying depends on, especially the receiver-on-pole arrangement and need for open sky — a field configuration easier to grasp visually than through text alone",
+      "width": 800,
+      "height": 447,
+      "v": "c08c9041"
     }
   ]
 }

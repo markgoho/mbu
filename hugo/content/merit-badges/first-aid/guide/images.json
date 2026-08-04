@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Four-panel instructional sequence showing hands removing disposable medical gloves safely: pinch the outside of one glove near the wrist, peel it off inside-out, slide two bare fingers under the remaining glove cuff, peel it off inside-out over the first glove, and drop both gloves into a sealed trash bag; clean neutral background, short callout labels only, no branding or logos",
-      "value": "Shows the exact inside-out glove removal sequence and finger placement that text alone cannot teach clearly"
+      "value": "Shows the exact inside-out glove removal sequence and finger placement that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "483df88f"
     },
     {
       "id": "tick-removal-technique",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close-up instructional photo of fine-tipped tweezers grasping a tick as close to the skin surface as possible and pulling straight upward, with one small crossed-out inset showing the wrong twisting method; skin and tool only, clean medical demonstration, minimal text, no logos",
-      "value": "Shows correct grip location near the skin and straight-up pull direction that text alone cannot convey precisely"
+      "value": "Shows correct grip location near the skin and straight-up pull direction that text alone cannot convey precisely",
+      "width": 800,
+      "height": 447,
+      "v": "9ff76c59"
     },
     {
       "id": "nosebleed-correct-lean",
@@ -24,7 +30,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "Side-by-side comparison of the same seated teenager with a nosebleed: left panel shows the wrong method with head tilted back and a subtle arrow indicating blood draining toward the throat, right panel shows the correct method leaning slightly forward while pinching the soft part of the nose below the bony bridge; plain background, no visible words except tiny correct and wrong labels",
-      "value": "Shows the body position contrast between leaning forward and tilting back, a mistake-prone difference that text alone cannot fix quickly"
+      "value": "Shows the body position contrast between leaning forward and tilting back, a mistake-prone difference that text alone cannot fix quickly",
+      "width": 800,
+      "height": 447,
+      "v": "2a07f908"
     },
     {
       "id": "tourniquet-placement-zones",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational diagram of an injured arm and leg with a wound marked, showing correct commercial tourniquet placement 2 to 3 inches above the wound, clear no-go zones over elbow and knee joints, and labeled tourniquet parts including strap, buckle, windlass rod, and retaining clip; simple limb silhouettes, horizontal labels only, no branding",
-      "value": "Shows exact placement relative to wounds and joints, plus tourniquet part layout, in a spatial way text cannot replace"
+      "value": "Shows exact placement relative to wounds and joints, plus tourniquet part layout, in a spatial way text cannot replace",
+      "width": 800,
+      "height": 447,
+      "v": "47103054"
     },
     {
       "id": "recovery-position-body-alignment",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Side-view instructional diagram of an unconscious breathing person placed in the recovery position on the ground, with the lower arm extended, upper hand supporting the cheek, top knee bent forward as a stabilizing kickstand, and head tilted slightly back to keep the airway open; simple arrows marking the key support points, clean white background, short labels only",
-      "value": "Shows the exact body alignment that keeps an unconscious person stable and airway-open, geometry that text alone cannot communicate well"
+      "value": "Shows the exact body alignment that keeps an unconscious person stable and airway-open, geometry that text alone cannot communicate well",
+      "width": 800,
+      "height": 447,
+      "v": "97c9e6bb"
     },
     {
       "id": "cpr-hand-placement-compression-depth",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Two-panel CPR teaching diagram: first panel is a top-down view of an adult chest showing heel-of-hand placement on the lower half of the sternum with the second hand on top and fingers lifted off the ribs, second panel is a side-view cross-section showing straight locked arms over the chest and compression depth of about 2 inches with full recoil indicated; simple labels, no branding",
-      "value": "Shows hand placement and compression depth visually, two CPR details that are hard to learn from prose alone"
+      "value": "Shows hand placement and compression depth visually, two CPR details that are hard to learn from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "ef9e5803"
     },
     {
       "id": "aed-pad-placement-chest",
@@ -56,7 +74,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Front-view chest diagram showing AED pad placement on an adult: one pad on the upper right chest below the collarbone and one on the lower left side of the chest below the armpit, with a small side inset for an alternate front-back pad placement; clean human torso silhouette, horizontal labels only, no visible brand names",
-      "value": "Shows exact pad locations and spacing on the chest, a spatial instruction text alone cannot make instantly clear"
+      "value": "Shows exact pad locations and spacing on the chest, a spatial instruction text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "6ca8e11c"
     },
     {
       "id": "injury-tissue-map",
@@ -64,7 +85,10 @@
       "style": "illustrated",
       "verb_family": "describe",
       "description": "Educational cross-section illustration of a joint region with clearly differentiated bone, ligament, tendon, muscle, and joint surfaces, each visually distinct and lightly labeled, with small callouts matching common injuries to the tissue involved: sprain to ligament, strain and tear to muscle, tendon rupture to tendon, fracture to bone, dislocation to joint alignment; clean textbook style, horizontal labels only",
-      "value": "Shows how the injured tissues relate to each other anatomically, which turns vocabulary into a mental model that text cannot provide"
+      "value": "Shows how the injured tissues relate to each other anatomically, which turns vocabulary into a mental model that text cannot provide",
+      "width": 800,
+      "height": 447,
+      "v": "c8d04cc3"
     },
     {
       "id": "rice-elevation-and-compression",
@@ -72,7 +96,10 @@
       "style": "comparison",
       "verb_family": "show",
       "description": "Two-panel comparison for ankle injury care: left panel shows a lower leg elevated on packs so the ankle is above heart level with a cloth-wrapped cold pack and light compression wrap, right panel shows the common wrong setup with the ankle resting too low and ice placed directly on bare skin; realistic but clean educational scene, no branding, tiny correct and wrong labels only",
-      "value": "Shows above-heart elevation and proper ice-plus-compression setup in a way text cannot demonstrate spatially"
+      "value": "Shows above-heart elevation and proper ice-plus-compression setup in a way text cannot demonstrate spatially",
+      "width": 800,
+      "height": 447,
+      "v": "74d7dc81"
     },
     {
       "id": "arm-sling-triangular-bandage",
@@ -80,7 +107,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Three-panel triangular bandage sling diagram: panel one shows bandage orientation before folding around the injured arm, panel two shows a completed standard sling with forearm at about 90 degrees and hand slightly higher than elbow, panel three shows an elevation sling for collarbone injury with fingertips pointing toward the opposite shoulder and a swathe around the torso; short horizontal labels only, clean white background",
-      "value": "Shows the difference between standard and elevation sling geometry, a positional distinction prose alone is poor at teaching"
+      "value": "Shows the difference between standard and elevation sling geometry, a positional distinction prose alone is poor at teaching",
+      "width": 800,
+      "height": 447,
+      "v": "ad5e42e9"
     },
     {
       "id": "ankle-figure-eight-wrap-sequence",
@@ -88,7 +118,10 @@
       "style": "illustrated",
       "verb_family": "show",
       "description": "Four-step instructional sequence for wrapping a sprained ankle with an elastic bandage: start at the ball of the foot, wrap around the foot, angle diagonally across the front of the ankle, continue behind the ankle and repeat the figure-eight pattern, ending with overlapping spirals up the lower leg and toes left exposed; clean medical illustration, minimal labels, no logos",
-      "value": "Shows the wrap path and repeated figure-eight pattern that text alone cannot make easy to follow while bandaging"
+      "value": "Shows the wrap path and repeated figure-eight pattern that text alone cannot make easy to follow while bandaging",
+      "width": 800,
+      "height": 447,
+      "v": "610663d1"
     },
     {
       "id": "femur-splint-improvised-layout",
@@ -96,7 +129,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Top-down educational diagram of a person lying on the ground with an improvised femur splint using two long padded rigid supports: outer splint from armpit to foot and inner splint from groin to foot, with tie points marked above the fracture, at the leg, knee, ankle, and foot, and knots placed on the outside; simple field gear such as trekking poles and cravats, clean layout, horizontal labels only",
-      "value": "Shows the full splint layout, support lengths, and tie locations for a femur injury, spatial relationships prose cannot communicate reliably"
+      "value": "Shows the full splint layout, support lengths, and tie locations for a femur injury, spatial relationships prose cannot communicate reliably",
+      "width": 800,
+      "height": 447,
+      "v": "c5cc9a67"
     },
     {
       "id": "box-breathing-cycle",
@@ -104,7 +140,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple square breathing diagram with four horizontal sides labeled inhale 4, hold 4, exhale 4, hold 4, and a single directional arrow tracing the loop around the square; calm clean design, large readable words only, no extra text, no branding",
-      "value": "Shows the repeating four-count breathing cycle at a glance, which is easier to follow under stress than reading instructions"
+      "value": "Shows the repeating four-count breathing cycle at a glance, which is easier to follow under stress than reading instructions",
+      "width": 800,
+      "height": 447,
+      "v": "6e9ef129"
     },
     {
       "id": "stroke-fast-checks",
@@ -112,7 +151,10 @@
       "style": "comparison",
       "verb_family": "identify",
       "description": "Four-panel FAST stroke recognition image: face droop when smiling, one arm drifting lower when both arms are raised, slurred speech while repeating a simple phrase shown as a distorted speech bubble, and a final urgent clock panel emphasizing time to call emergency services immediately; clear medical illustration style, large simple labels face arms speech time only, no logos",
-      "value": "Shows the visible differences a bystander must recognize during FAST screening, pattern recognition that text alone cannot train as quickly"
+      "value": "Shows the visible differences a bystander must recognize during FAST screening, pattern recognition that text alone cannot train as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "19a5e644"
     }
   ]
 }

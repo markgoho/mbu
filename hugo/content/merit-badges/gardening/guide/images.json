@@ -7,84 +7,120 @@
       "file": "req1ab.md",
       "style": "comparison",
       "description": "Side-by-side safety comparison in a home garden. Left panel shows correct tool safety: a gardener in clean Scout uniform carrying a shovel and hand trowel with sharp ends pointed downward, tools neatly grouped in one work area beside a raised bed, closed-toe shoes, clear walking path. Right panel shows incorrect tool handling: pruners, trowel, and rake scattered across the ground with sharp ends up and handles creating trip hazards. Realistic educational comparison with no branding or extra text beyond minimal short labels for safe and unsafe.",
-      "value": "Shows the physical difference between safe and unsafe tool carry and storage habits — hazard patterns that are understood instantly when seen side by side"
+      "value": "Shows the physical difference between safe and unsafe tool carry and storage habits — hazard patterns that are understood instantly when seen side by side",
+      "width": 800,
+      "height": 447,
+      "v": "1a3fc44e"
     },
     {
       "id": "seed-vs-seedling-growth-path",
       "file": "req2a.md",
       "style": "comparison",
       "description": "Three-panel educational comparison of vegetable growing paths. First panel shows seed packet, planted seeds, and newly emerged sprouts in soil. Second panel shows nursery seedling being transplanted carefully into garden soil with intact root ball. Third panel shows both paths reaching similar harvest-ready vegetable plants side by side. Clear progression, realistic garden setting, visual emphasis on the different starting stages rather than text.",
-      "value": "Shows the visible differences between starting from seed and starting from seedlings, then how both paths converge at harvest — a growth timeline easier to grasp visually than in prose"
+      "value": "Shows the visible differences between starting from seed and starting from seedlings, then how both paths converge at harvest — a growth timeline easier to grasp visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "7673c282"
     },
     {
       "id": "seed-germination-test-sequence",
       "file": "req4.md",
       "style": "illustrated",
       "description": "Clean four-panel educational illustration of a 100-seed germination test using the paper towel method. Panel 1 shows seeds counted and arranged on a damp paper towel grid. Panel 2 shows the towel folded and placed into a partially sealed plastic bag. Panel 3 shows several seeds with tiny white root tips emerging. Panel 4 shows a final count layout with germinated seeds separated from ungerminated seeds. Minimal large labels only: count, fold, sprout, final count. No extra text.",
-      "value": "Shows the full setup-to-results sequence of a home germination test, including what counts as a sprouted seed — procedural steps and visual outcome that text alone cannot make as immediate"
+      "value": "Shows the full setup-to-results sequence of a home germination test, including what counts as a sprouted seed — procedural steps and visual outcome that text alone cannot make as immediate",
+      "width": 800,
+      "height": 447,
+      "v": "58df22ca"
     },
     {
       "id": "pollination-flower-transfer-sequence",
       "file": "req6.md",
       "style": "illustrated",
       "description": "Three-panel close-up illustration of flower pollination by a honeybee. Panel 1 shows a honeybee landing on an open blossom and collecting nectar. Panel 2 shows pollen grains clinging to the fuzzy hairs on the bee's body and legs. Panel 3 shows the bee visiting a second flower with pollen contacting the stigma. Bright botanical accuracy, enlarged details, clean background, no branding, only very short labels for pollen and stigma if needed.",
-      "value": "Shows the actual movement of pollen from flower to bee to next flower — a microscopic transfer process that readers need to visualize to fully understand pollination"
+      "value": "Shows the actual movement of pollen from flower to bee to next flower — a microscopic transfer process that readers need to visualize to fully understand pollination",
+      "width": 800,
+      "height": 447,
+      "v": "090ef148"
     },
     {
       "id": "common-garden-pests-identification-grid",
       "file": "req7.md",
       "style": "illustrated",
       "description": "Educational identification grid with five equal panels showing common garden problems: aphids clustered on tender stems, a tomato hornworm on a tomato stem, a slug on a chewed leafy green, powdery mildew coating a leaf surface, and tomato leaf spot with dark lesions and yellowing. Each panel includes the pest or disease and one obvious symptom. Clean field-guide style, realistic colors, simple horizontal labels only, no clutter.",
-      "value": "Shows five pests and diseases side by side with their signature visible symptoms — pattern recognition that helps with real-world identification faster than written descriptions alone"
+      "value": "Shows five pests and diseases side by side with their signature visible symptoms — pattern recognition that helps with real-world identification faster than written descriptions alone",
+      "width": 800,
+      "height": 447,
+      "v": "dd245673"
     },
     {
       "id": "compost-browns-greens-layers",
       "file": "req8a.md",
       "style": "diagram",
       "description": "Clear cross-section diagram of a backyard compost bin. Visible alternating layers of browns such as dry leaves and shredded paper, greens such as fruit scraps and grass clippings, small air spaces, moisture throughout, and darker finished compost forming at the bottom. Simple labeled arrows for airflow and decomposition direction. Bin walls visible for context. Educational visual with short labels only.",
-      "value": "Shows the internal structure of a healthy compost pile — layered materials, airflow, moisture, and breakdown zones that are hard to picture from description alone"
+      "value": "Shows the internal structure of a healthy compost pile — layered materials, airflow, moisture, and breakdown zones that are hard to picture from description alone",
+      "width": 800,
+      "height": 447,
+      "v": "14a4889a"
     },
     {
       "id": "simple-hydroponic-bucket-parts",
       "file": "req8c.md",
       "style": "diagram",
       "description": "Cutaway diagram of a simple bucket hydroponic system. Labeled parts include bucket lid, net pot, support media, plant stem and leaves above, roots suspended below, nutrient solution level, air stone, airline tube, and air pump connection. Clean isolated layout on plain background with short horizontal labels. Technical but easy to understand for beginners.",
-      "value": "Shows how the parts of a basic hydroponic system fit together around the root zone — spatial relationships and hidden components that text alone cannot reveal clearly"
+      "value": "Shows how the parts of a basic hydroponic system fit together around the root zone — spatial relationships and hidden components that text alone cannot reveal clearly",
+      "width": 800,
+      "height": 447,
+      "v": "b9482dfd"
     },
     {
       "id": "water-garden-plant-zones",
       "file": "req8d.md",
       "style": "diagram",
       "description": "Cross-section diagram of a small container water garden. Surface floating plants at the top, submerged oxygenating plants below the water line, and marginal plants rooted in shallow shelf zones around the edge. Visible container walls, water depth, planting shelf heights, and root placement. Clean botanical diagram with short labels for floating, submerged, and marginal zones.",
-      "value": "Shows the vertical planting zones in a water garden and where each plant type belongs — depth relationships that are much easier to learn visually"
+      "value": "Shows the vertical planting zones in a water garden and where each plant type belongs — depth relationships that are much easier to learn visually",
+      "width": 800,
+      "height": 447,
+      "v": "c8013469"
     },
     {
       "id": "honey-super-frame-layout",
       "file": "req8e.md",
       "style": "diagram",
       "description": "Exploded educational diagram of a beehive section focused on the honey super. Shows stacked hive arrangement with brood boxes below and the honey super above, plus the super box separated to reveal multiple parallel frames with wax foundation sheets. Clean structural view, no bees swarming in confusion, short labels only for super, frames, foundation, and brood boxes.",
-      "value": "Shows where the honey super sits in relation to the rest of the hive and how frames are arranged inside it — hive structure that is difficult to understand from words alone"
+      "value": "Shows where the honey super sits in relation to the rest of the hive and how frames are arranged inside it — hive structure that is difficult to understand from words alone",
+      "width": 800,
+      "height": 447,
+      "v": "d5b48cf3"
     },
     {
       "id": "garden-layout-spacing-plan",
       "file": "req8f.md",
       "style": "diagram",
       "description": "Simple top-down garden bed diagram for beginners. Rectangular bed divided into three clearly separated planting zones with one trellis row along the north edge, one narrow walking path, and sunlight coming from the south. The focus is on visible spacing between plants, support placement, and easy access for watering and harvest. Clean simple layout, plain background, very few large horizontal labels only.",
-      "value": "Shows how spacing, support placement, access paths, and sun orientation work together in a real garden plan — layout relationships that are difficult to teach with text only"
+      "value": "Shows how spacing, support placement, access paths, and sun orientation work together in a real garden plan — layout relationships that are difficult to teach with text only",
+      "width": 800,
+      "height": 447,
+      "v": "54345fca"
     },
     {
       "id": "small-space-gardening-progression",
       "file": "req9b.md",
       "style": "comparison",
       "description": "Three-stage comparison showing gardening as a growing hobby over time. Left stage shows a simple beginner setup with a few herb containers on a patio. Middle stage shows a moderate patio garden with more vegetables, tools, and trellised containers. Right stage shows a larger home garden with raised beds and a wider variety of plants. Same home setting evolving across stages, no branding, very light labeling only if needed.",
-      "value": "Shows how gardening can realistically grow from a small beginner hobby into a larger long-term lifestyle practice — progression that is easier to picture visually than through abstract goals"
+      "value": "Shows how gardening can realistically grow from a small beginner hobby into a larger long-term lifestyle practice — progression that is easier to picture visually than through abstract goals",
+      "width": 800,
+      "height": 447,
+      "v": "33dbc642"
     },
     {
       "id": "native-plant-food-web-connections",
       "file": "extended-learning.md",
       "style": "illustrated",
       "description": "Educational habitat illustration of a native plant garden connected to wildlife. Native flowering plants in bloom with bees visiting flowers, caterpillars on leaves, songbirds feeding nearby, and seedheads supporting later-season wildlife. The scene visually links plants to insects and birds in one small habitat. Clean ecological storytelling image with minimal labels and no decorative branding.",
-      "value": "Shows the living connections between native plants, pollinators, caterpillars, birds, and seeds in one habitat web — ecosystem relationships that text alone cannot make as immediate"
+      "value": "Shows the living connections between native plants, pollinators, caterpillars, birds, and seeds in one habitat web — ecosystem relationships that text alone cannot make as immediate",
+      "width": 800,
+      "height": 447,
+      "v": "e32cc8f9"
     }
   ]
 }

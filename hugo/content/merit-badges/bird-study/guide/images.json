@@ -5,165 +5,252 @@
     {
       "id": "scout-binoculars-wetland",
       "file": "_index.md",
-      "description": "A Scout (age 14, wearing a clean Scout uniform shirt) looking through binoculars at a wetland area during golden hour. Birds are flying overhead and wading in shallow water. The Scout stands on a boardwalk overlooking cattails and open water. Warm, inviting light."
+      "description": "A Scout (age 14, wearing a clean Scout uniform shirt) looking through binoculars at a wetland area during golden hour. Birds are flying overhead and wading in shallow water. The Scout stands on a boardwalk overlooking cattails and open water. Warm, inviting light.",
+      "width": 800,
+      "height": 447,
+      "v": "c833c9df"
     },
     {
       "id": "audubon-to-ebird",
       "file": "_index.md",
       "style": "comparison",
-      "description": "Split comparison image. Left side: a vintage-style hand-painted bird illustration reminiscent of 19th century naturalist art, showing a detailed songbird on a branch with muted, aged tones. Right side: a modern birder in outdoor clothing using a smartphone app in a sunlit field, with a real bird visible on a nearby branch. The contrast between historical and modern bird study methods is clear."
+      "description": "Split comparison image. Left side: a vintage-style hand-painted bird illustration reminiscent of 19th century naturalist art, showing a detailed songbird on a branch with muted, aged tones. Right side: a modern birder in outdoor clothing using a smartphone app in a sunlit field, with a real bird visible on a nearby branch. The contrast between historical and modern bird study methods is clear.",
+      "width": 800,
+      "height": 447,
+      "v": "ef671b79"
     },
     {
       "id": "hawk-watch-ridge",
       "file": "_index.md",
-      "description": "Several birders standing on a rocky mountain ridge overlook with binoculars and spotting scopes on tripods, watching hawks and eagles soaring overhead against a blue sky with scattered clouds. Fall foliage visible on surrounding hills. Wide, dramatic landscape."
+      "description": "Several birders standing on a rocky mountain ridge overlook with binoculars and spotting scopes on tripods, watching hawks and eagles soaring overhead against a blue sky with scattered clouds. Fall foliage visible on surrounding hills. Wide, dramatic landscape.",
+      "width": 800,
+      "height": 447,
+      "v": "53594428"
     },
     {
       "id": "bald-eagle-recovery",
       "file": "req1.md",
-      "description": "A majestic Bald Eagle perched on a large branch near a calm lake, looking directly at the camera. Clear, bright lighting. Pine trees in the background. The image symbolizes the species' recovery as a conservation success story."
+      "description": "A majestic Bald Eagle perched on a large branch near a calm lake, looking directly at the camera. Clear, bright lighting. Pine trees in the background. The image symbolizes the species' recovery as a conservation success story.",
+      "width": 800,
+      "height": 447,
+      "v": "8d885da5"
     },
     {
       "id": "ecosystem-web-birds",
       "file": "req1.md",
       "style": "infographic",
-      "description": "Infographic showing birds at the center of an ecosystem web. A central bird silhouette is surrounded by connected icons representing seeds, insects, fish, plants, predators (hawk, fox), and decomposition (vulture). Arrows show relationships: seed dispersal, pollination, pest control, food chain connections. Clean, modern design with a nature color palette of greens, blues, and earth tones."
+      "description": "Infographic showing birds at the center of an ecosystem web. A central bird silhouette is surrounded by connected icons representing seeds, insects, fish, plants, predators (hawk, fox), and decomposition (vulture). Arrows show relationships: seed dispersal, pollination, pest control, food chain connections. Clean, modern design with a nature color palette of greens, blues, and earth tones.",
+      "width": 800,
+      "height": 447,
+      "v": "aab4ff1b"
     },
     {
       "id": "perched-bird-labeled",
       "file": "req2a.md",
       "style": "diagram",
-      "description": "Detailed side-view scientific diagram of a perched songbird (similar to an American Robin) showing all major external anatomy parts with labeled lines: crown, forehead, nape, eye ring, lore, chin, throat, upper mandible, lower mandible, breast, belly, flanks, back, rump, wing bars, tail, tarsus, toes. Clean white background, precise labels with thin leader lines. Educational reference style."
+      "description": "Detailed side-view scientific diagram of a perched songbird (similar to an American Robin) showing all major external anatomy parts with labeled lines: crown, forehead, nape, eye ring, lore, chin, throat, upper mandible, lower mandible, breast, belly, flanks, back, rump, wing bars, tail, tarsus, toes. Clean white background, precise labels with thin leader lines. Educational reference style.",
+      "width": 800,
+      "height": 447,
+      "v": "e014520e"
     },
     {
       "id": "scout-sketching-bird",
       "file": "req2a.md",
-      "description": "A Scout (age 13) sitting on a fallen log outdoors, concentrating on sketching in a field notebook. A songbird is perched on a nearby low branch about 10 feet away. Dappled sunlight through trees. The Scout is wearing casual outdoor clothing and has binoculars around their neck."
+      "description": "A Scout (age 13) sitting on a fallen log outdoors, concentrating on sketching in a field notebook. A songbird is perched on a nearby low branch about 10 feet away. Dappled sunlight through trees. The Scout is wearing casual outdoor clothing and has binoculars around their neck.",
+      "width": 800,
+      "height": 447,
+      "v": "e3dc052e"
     },
     {
       "id": "extended-wing-labeled",
       "file": "req2b.md",
       "style": "diagram",
-      "description": "Detailed top-view scientific diagram of a bird wing fully extended and spread open, showing all six major feather groups clearly labeled with bracket lines: primaries (at the wingtip), secondaries (mid-wing), tertials (innermost), greater coverts, lesser coverts, and alula (thumb feathers). Clean white background with precise anatomical labels and leader lines. Each feather group is slightly different in shade for visual distinction."
+      "description": "Detailed top-view scientific diagram of a bird wing fully extended and spread open, showing all six major feather groups clearly labeled with bracket lines: primaries (at the wingtip), secondaries (mid-wing), tertials (innermost), greater coverts, lesser coverts, and alula (thumb feathers). Clean white background with precise anatomical labels and leader lines. Each feather group is slightly different in shade for visual distinction.",
+      "width": 800,
+      "height": 447,
+      "v": "3e942429"
     },
     {
       "id": "wing-feather-comparison",
       "file": "req2b.md",
       "style": "comparison",
-      "description": "Side-by-side comparison of two individual feathers. Left: a primary flight feather — long, stiff, asymmetrical with a narrow leading edge and broader trailing edge. Right: a covert feather — shorter, rounder, more symmetrical. Both feathers have parts labeled: rachis (central shaft), barbs, and vane. Clean white background, scientific illustration style."
+      "description": "Side-by-side comparison of two individual feathers. Left: a primary flight feather — long, stiff, asymmetrical with a narrow leading edge and broader trailing edge. Right: a covert feather — shorter, rounder, more symmetrical. Both feathers have parts labeled: rachis (central shaft), barbs, and vane. Clean white background, scientific illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "5ca9eeb2"
     },
     {
       "id": "optics-comparison",
       "file": "req3a.md",
       "style": "comparison",
-      "description": "Three birding optics displayed side by side on a wooden table: a pair of 8x42 binoculars (left), a spotting scope mounted on a small tripod (center), and a compact monocular (right). Each device has its specification numbers visible. A size comparison is evident. Clean, well-lit product-style photography."
+      "description": "Three birding optics displayed side by side on a wooden table: a pair of 8x42 binoculars (left), a spotting scope mounted on a small tripod (center), and a compact monocular (right). Each device has its specification numbers visible. A size comparison is evident. Clean, well-lit product-style photography.",
+      "width": 800,
+      "height": 447,
+      "v": "c69bd936"
     },
     {
       "id": "binocular-adjustment-steps",
       "file": "req3b.md",
       "style": "diagram",
-      "description": "Educational diagram showing three binocular adjustment steps in a horizontal layout. Step 1 shows a pair of binoculars with arrows indicating the hinge adjusting the barrel width, labeled 'Adjust Width.' Step 2 shows a close-up of the right eyepiece with a ring being turned, labeled 'Set Diopter.' Step 3 shows a center focus wheel being turned, labeled 'Focus.' Clean white background, simple line art with blue accent color, numbered steps."
+      "description": "Educational diagram showing three binocular adjustment steps in a horizontal layout. Step 1 shows a pair of binoculars with arrows indicating the hinge adjusting the barrel width, labeled 'Adjust Width.' Step 2 shows a close-up of the right eyepiece with a ring being turned, labeled 'Set Diopter.' Step 3 shows a center focus wheel being turned, labeled 'Focus.' Clean white background, simple line art with blue accent color, numbered steps.",
+      "width": 800,
+      "height": 447,
+      "v": "24fb954e"
     },
     {
       "id": "lens-cleaning-kit",
       "file": "req3c.md",
-      "description": "A lens cleaning kit neatly laid out on a clean wooden table: a rubber lens blower bulb, a soft-bristle lens brush, a folded blue microfiber cloth, and a small bottle of lens cleaning solution. A pair of binoculars sits beside the kit. Bright, clean lighting. Overhead view."
+      "description": "A lens cleaning kit neatly laid out on a clean wooden table: a rubber lens blower bulb, a soft-bristle lens brush, a folded blue microfiber cloth, and a small bottle of lens cleaning solution. A pair of binoculars sits beside the kit. Bright, clean lighting. Overhead view.",
+      "width": 800,
+      "height": 447,
+      "v": "e476858c"
     },
     {
       "id": "spotting-scope-shorebirds",
       "file": "req3d.md",
-      "description": "A birder crouching beside a spotting scope on a tripod at a coastal beach, looking at distant shorebirds on a mudflat. Other birders with binoculars stand nearby. Overcast sky, calm water, and small shorebirds visible in the distance. Natural, documentary-style lighting."
+      "description": "A birder crouching beside a spotting scope on a tripod at a coastal beach, looking at distant shorebirds on a mudflat. Other birders with binoculars stand nearby. Overcast sky, calm water, and small shorebirds visible in the distance. Natural, documentary-style lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "398e3560"
     },
     {
       "id": "field-guide-spread",
       "file": "req4.md",
       "style": "illustrated",
-      "description": "An open bird field guide book showing a spread with a detailed bird illustration on the left page (a colorful warbler with field marks indicated by arrows pointing to wing bars, eye ring, and breast color) and a species account on the right page with a small color-coded range map, habitat description, and size information. The book is lying on a rustic wooden surface with binoculars beside it."
+      "description": "An open bird field guide book showing a spread with a detailed bird illustration on the left page (a colorful warbler with field marks indicated by arrows pointing to wing bars, eye ring, and breast color) and a species account on the right page with a small color-coded range map, habitat description, and size information. The book is lying on a rustic wooden surface with binoculars beside it.",
+      "width": 800,
+      "height": 447,
+      "v": "7044f90b"
     },
     {
       "id": "range-map-example",
       "file": "req4.md",
       "style": "illustrated",
-      "description": "A sample range map of the Red-tailed Hawk showing North America with three color-coded regions: orange/red for breeding range (covering most of Canada), blue for wintering range (covering parts of Mexico), and purple for year-round range (covering most of the continental United States). A simple legend in the corner identifies each color. Clean cartographic style with state/province boundaries visible."
+      "description": "A sample range map of the Red-tailed Hawk showing North America with three color-coded regions: orange/red for breeding range (covering most of Canada), blue for wintering range (covering parts of Mexico), and purple for year-round range (covering most of the continental United States). A simple legend in the corner identifies each color. Clean cartographic style with state/province boundaries visible.",
+      "width": 800,
+      "height": 447,
+      "v": "f335758b"
     },
     {
       "id": "field-notebook-entry",
       "file": "req5.md",
       "style": "illustrated",
-      "description": "A sample field notebook page showing a neatly handwritten entry for an American Robin observation. The page has labeled sections: 'Species: American Robin' at top, 'Date: March 15 | Time: 7:45 AM' below, 'Location: Riverside Park, oak woodland trail' and 'Habitat: Suburban woodland edge.' Below that: 'Feeding habitat: Ground' and 'Food types: Earthworms, berries.' At bottom: 'Residency: Year-round resident.' A small pencil sketch of a robin is in the margin. The page looks realistic, like a Scout's actual notebook."
+      "description": "A sample field notebook page showing a neatly handwritten entry for an American Robin observation. The page has labeled sections: 'Species: American Robin' at top, 'Date: March 15 | Time: 7:45 AM' below, 'Location: Riverside Park, oak woodland trail' and 'Habitat: Suburban woodland edge.' Below that: 'Feeding habitat: Ground' and 'Food types: Earthworms, berries.' At bottom: 'Residency: Year-round resident.' A small pencil sketch of a robin is in the margin. The page looks realistic, like a Scout's actual notebook.",
+      "width": 800,
+      "height": 447,
+      "v": "f36e7049"
     },
     {
       "id": "scout-field-birding",
       "file": "req5.md",
-      "description": "A Scout (age 15) standing in a grassy meadow writing in a small field notebook, looking up at a bird perched on a wooden fence post about 15 feet away. The Scout has binoculars hanging from a neck strap and a field guide tucked in a back pocket. Morning light, wildflowers in the grass, blue sky."
+      "description": "A Scout (age 15) standing in a grassy meadow writing in a small field notebook, looking up at a bird perched on a wooden fence post about 15 feet away. The Scout has binoculars hanging from a neck strap and a field guide tucked in a back pocket. Morning light, wildflowers in the grass, blue sky.",
+      "width": 800,
+      "height": 447,
+      "v": "20f8599a"
     },
     {
       "id": "beak-adaptations",
       "file": "req6.md",
       "style": "illustrated",
-      "description": "Scientific illustration showing six bird heads in profile, arranged in two rows of three, each showing a different beak adaptation. Top row: conical beak (Northern Cardinal, red), hooked beak (Red-tailed Hawk, brown), needle-like beak (Ruby-throated Hummingbird, green). Bottom row: flat and wide beak (Mallard, green/brown), chisel-shaped beak (Downy Woodpecker, black and white), spear-like beak (Great Blue Heron, gray-blue). Each head is labeled with the beak type and species name. Clean white background."
+      "description": "Scientific illustration showing six bird heads in profile, arranged in two rows of three, each showing a different beak adaptation. Top row: conical beak (Northern Cardinal, red), hooked beak (Red-tailed Hawk, brown), needle-like beak (Ruby-throated Hummingbird, green). Bottom row: flat and wide beak (Mallard, green/brown), chisel-shaped beak (Downy Woodpecker, black and white), spear-like beak (Great Blue Heron, gray-blue). Each head is labeled with the beak type and species name. Clean white background.",
+      "width": 800,
+      "height": 447,
+      "v": "9716f929"
     },
     {
       "id": "foot-adaptations",
       "file": "req6.md",
       "style": "illustrated",
-      "description": "Scientific illustration showing four bird foot types side by side. From left to right: perching foot with three toes forward and one back (labeled 'Perching — Robin'), webbed foot with membrane between toes (labeled 'Webbed — Duck'), raptorial foot with large curved talons (labeled 'Raptorial — Hawk'), and long wading foot with spread toes (labeled 'Wading — Heron'). Clean white background, detailed linework, educational style."
+      "description": "Scientific illustration showing four bird foot types side by side. From left to right: perching foot with three toes forward and one back (labeled 'Perching — Robin'), webbed foot with membrane between toes (labeled 'Webbed — Duck'), raptorial foot with large curved talons (labeled 'Raptorial — Hawk'), and long wading foot with spread toes (labeled 'Wading — Heron'). Clean white background, detailed linework, educational style.",
+      "width": 800,
+      "height": 447,
+      "v": "773cbea1"
     },
     {
       "id": "scout-listening-birds",
       "file": "req7.md",
-      "description": "A Scout (age 14) standing still in a woodland clearing at dawn, eyes closed in concentration, with one hand cupped behind an ear to listen. Songbirds are perched on branches in surrounding trees. Soft morning light filters through the leaves. The Scout wears casual outdoor clothing with binoculars around their neck. Peaceful, meditative atmosphere."
+      "description": "A Scout (age 14) standing still in a woodland clearing at dawn, eyes closed in concentration, with one hand cupped behind an ear to listen. Songbirds are perched on branches in surrounding trees. Soft morning light filters through the leaves. The Scout wears casual outdoor clothing with binoculars around their neck. Peaceful, meditative atmosphere.",
+      "width": 800,
+      "height": 447,
+      "v": "1f9cc878"
     },
     {
       "id": "song-vs-call-diagram",
       "file": "req7.md",
       "style": "infographic",
-      "description": "Infographic comparing bird songs and calls. Left side shows a male songbird perched prominently on top of a bush with musical note symbols, labeled 'SONG' with bullet points: 'Long and complex,' 'Mostly males,' 'Breeding season,' 'Attract mates / defend territory.' Right side shows a small bird in a flock giving short chirps with simple sound symbols, labeled 'CALL' with bullet points: 'Short and simple,' 'Both sexes,' 'Year-round,' 'Alarm / contact / begging.' A dividing line separates the two sides. Nature color palette."
+      "description": "Infographic comparing bird songs and calls. Left side shows a male songbird perched prominently on top of a bush with musical note symbols, labeled 'SONG' with bullet points: 'Long and complex,' 'Mostly males,' 'Breeding season,' 'Attract mates / defend territory.' Right side shows a small bird in a flock giving short chirps with simple sound symbols, labeled 'CALL' with bullet points: 'Short and simple,' 'Both sexes,' 'Year-round,' 'Alarm / contact / begging.' A dividing line separates the two sides. Nature color palette.",
+      "width": 800,
+      "height": 447,
+      "v": "94009488"
     },
     {
       "id": "bird-banding-station",
       "file": "req8.md",
-      "description": "A wildlife researcher in field clothing carefully holding a small songbird in a bander's grip while attaching a tiny numbered aluminum band to its leg using specialized pliers. The setting is an outdoor banding station with fine mist nets visible stretched between poles in the background. Morning light, focused and respectful handling of the bird."
+      "description": "A wildlife researcher in field clothing carefully holding a small songbird in a bander's grip while attaching a tiny numbered aluminum band to its leg using specialized pliers. The setting is an outdoor banding station with fine mist nets visible stretched between poles in the background. Morning light, focused and respectful handling of the bird.",
+      "width": 800,
+      "height": 447,
+      "v": "79c04120"
     },
     {
       "id": "backyard-habitat-plan",
       "file": "req9.md",
       "style": "illustrated",
-      "description": "Illustrated overhead view of a backyard designed as bird habitat. The scene shows a yard with native shrubs bearing berries along a fence, a shallow birdbath near the center, a nest box on a pole, a small brush pile in a corner, flowering wildflowers in a garden bed, and a tree with a bird feeder hanging from a branch. Birds are visiting various features. Warm, inviting illustration style with green and brown tones."
+      "description": "Illustrated overhead view of a backyard designed as bird habitat. The scene shows a yard with native shrubs bearing berries along a fence, a shallow birdbath near the center, a nest box on a pole, a small brush pile in a corner, flowering wildflowers in a garden bed, and a tree with a bird feeder hanging from a branch. Birds are visiting various features. Warm, inviting illustration style with green and brown tones.",
+      "width": 800,
+      "height": 447,
+      "v": "f8a3a553"
     },
     {
       "id": "conservation-continuum",
       "file": "req10a.md",
       "style": "infographic",
-      "description": "Horizontal infographic showing the conservation status continuum as a gradient bar from left to right: Healthy (green), Declining (yellow-green), Threatened (orange), Endangered (red), Extinct (dark gray/black). Above each stage is a bird silhouette — full and vibrant on the left, fading and ghostly toward the right. A bracket labeled 'ESA Protection Zone' spans the Threatened and Endangered sections. Clean, modern design with clear typography."
+      "description": "Horizontal infographic showing the conservation status continuum as a gradient bar from left to right: Healthy (green), Declining (yellow-green), Threatened (orange), Endangered (red), Extinct (dark gray/black). Above each stage is a bird silhouette — full and vibrant on the left, fading and ghostly toward the right. A bracket labeled 'ESA Protection Zone' spans the Threatened and Endangered sections. Clean, modern design with clear typography.",
+      "width": 800,
+      "height": 447,
+      "v": "cdd3e16d"
     },
     {
       "id": "endangered-birds-trio",
       "file": "req10b.md",
       "style": "illustrated",
-      "description": "Three-panel scientific illustration. Left panel: a Whooping Crane standing tall in a wetland marsh with cattails. Center panel: a Red-cockaded Woodpecker clinging to the bark of a longleaf pine tree, with its small red cockade visible. Right panel: a Piping Plover standing on a sandy beach near the waterline. Each panel is labeled with the species name and 'Endangered' or 'Threatened.' Clean background, natural habitat colors, precise linework."
+      "description": "Three-panel scientific illustration. Left panel: a Whooping Crane standing tall in a wetland marsh with cattails. Center panel: a Red-cockaded Woodpecker clinging to the bark of a longleaf pine tree, with its small red cockade visible. Right panel: a Piping Plover standing on a sandy beach near the waterline. Each panel is labeled with the species name and 'Endangered' or 'Threatened.' Clean background, natural habitat colors, precise linework.",
+      "width": 800,
+      "height": 447,
+      "v": "8cab5720"
     },
     {
       "id": "habitat-protection-strategies",
       "file": "req10c.md",
       "style": "infographic",
-      "description": "Three-section infographic showing habitat protection strategies. Section 1 'Preserve': a forest with a protective boundary line and a shield icon. Section 2 'Restore': a before/after split showing degraded brown land transforming into green wetland with birds. Section 3 'Connect': an aerial view of green habitat patches linked by green corridor strips across a developed landscape. Each section has a bold title and short descriptor. Nature color palette with greens, blues, and earth tones."
+      "description": "Three-section infographic showing habitat protection strategies. Section 1 'Preserve': a forest with a protective boundary line and a shield icon. Section 2 'Restore': a before/after split showing degraded brown land transforming into green wetland with birds. Section 3 'Connect': an aerial view of green habitat patches linked by green corridor strips across a developed landscape. Each section has a bold title and short descriptor. Nature color palette with greens, blues, and earth tones.",
+      "width": 800,
+      "height": 447,
+      "v": "21305694"
     },
     {
       "id": "invasive-birds-trio",
       "file": "req11.md",
       "style": "illustrated",
-      "description": "Three-panel scientific illustration of invasive bird species. Left: a House Sparrow (male, with black bib and brown cap) perched on a fence. Center: a European Starling in iridescent breeding plumage perched on a wire. Right: a Rock Pigeon (classic gray with iridescent neck) standing on pavement. Each panel is labeled with common name and origin (e.g., 'House Sparrow — Europe'). Clean white background, detailed naturalist illustration style."
+      "description": "Three-panel scientific illustration of invasive bird species. Left: a House Sparrow (male, with black bib and brown cap) perched on a fence. Center: a European Starling in iridescent breeding plumage perched on a wire. Right: a Rock Pigeon (classic gray with iridescent neck) standing on pavement. Each panel is labeled with common name and origin (e.g., 'House Sparrow — Europe'). Clean white background, detailed naturalist illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "88014e7b"
     },
     {
       "id": "ethical-birding-scene",
       "file": "req12.md",
-      "description": "A Scout (age 13, wearing clean outdoor clothing with binoculars) standing on a wooden boardwalk through a wetland, observing a bird's nest in cattails from a respectful distance of about 30 feet. The Scout is using binoculars rather than approaching closer. A 'Stay on Trail' sign is visible on the boardwalk railing. Soft natural light, wetland habitat with open water and marsh grasses."
+      "description": "A Scout (age 13, wearing clean outdoor clothing with binoculars) standing on a wooden boardwalk through a wetland, observing a bird's nest in cattails from a respectful distance of about 30 feet. The Scout is using binoculars rather than approaching closer. A 'Stay on Trail' sign is visible on the boardwalk railing. Soft natural light, wetland habitat with open water and marsh grasses.",
+      "width": 800,
+      "height": 447,
+      "v": "2540ce33"
     },
     {
       "id": "birding-hobby-montage",
       "file": "req13.md",
-      "description": "Four-panel montage showing different aspects of birding as a hobby. Top-left: a person watching birds at a backyard feeder through a window. Top-right: two birders in a forest using binoculars. Bottom-left: a photographer with a large telephoto lens aimed at a perched bird. Bottom-right: someone sketching a bird in an illustrated nature journal. Each panel is bright and inviting, showing diverse people of different ages enjoying birding."
+      "description": "Four-panel montage showing different aspects of birding as a hobby. Top-left: a person watching birds at a backyard feeder through a window. Top-right: two birders in a forest using binoculars. Bottom-left: a photographer with a large telephoto lens aimed at a perched bird. Bottom-right: someone sketching a bird in an illustrated nature journal. Each panel is bright and inviting, showing diverse people of different ages enjoying birding.",
+      "width": 800,
+      "height": 447,
+      "v": "6a43d92f"
     }
   ]
 }

@@ -251,15 +251,15 @@ bun run generate:drg-images {slug}
 
 This command may take several minutes for large guides. Let it run to completion.
 
-### Step 3: Convert to AVIF
+### Step 3: Upload to ImageKit
 
-Convert all generated images to AVIF format (800px wide, quality 80):
+Images are served from ImageKit, not committed to git. Upload the freshly generated PNGs and let ImageKit derive the responsive AVIF/WebP/JPEG variants on demand — there's no local resize/convert step:
 
 ```bash
-bun run convert:drg-images -- --badge {slug}
+bun run migrate:imagekit -- --only=drg
 ```
 
-The conversion script prefers `.png` sources, writes `.avif` outputs, can resize existing `.avif` files in place when needed, and removes source PNGs automatically after successful conversion. Do not add a manual `rm` step here.
+This reads every entry in the badge's `images.json`, uploads whichever local master it finds (`.png` for new images, `.avif` for previously bulk-migrated ones), writes back `width`/`height`/`v` (a content-hash cache-buster) into `images.json`, and deletes the local `.png` staging file after a successful upload. Do not add a manual `rm` step — the script handles it.
 
 ### Step 4: Replace Placeholders with Shortcodes
 
@@ -286,7 +286,7 @@ When auditing an existing guide's images:
 
 1. Read `images.json` and all `.md` files with `drg/image` shortcodes.
 2. For each image, apply the Image Value Test: "Does this image teach something that text alone cannot?"
-3. Images that fail get **cut**: remove from `images.json`, remove shortcode from `.md` file, delete `.avif` file.
+3. Images that fail get **cut**: remove from `images.json`, remove shortcode from `.md` file, and delete the file on ImageKit (`client.files.delete` via the ImageKit API, or the dashboard — there's no local `.avif`/`.png` to `rm` anymore).
 4. Images that pass get a `value` field (if missing) explaining what they teach.
 5. Verify build passes after changes.
 6. Commit changes.

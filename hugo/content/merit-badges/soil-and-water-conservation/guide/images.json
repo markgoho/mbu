@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational cross-section diagram of a hillside soil profile with clearly separated horizontal layers: dark organic-rich topsoil, lighter subsoil, weathered parent material, and solid bedrock beneath. Include plant roots extending from grasses and a small shrub into the upper layers, small stones, earthworm tunnels, and leaf litter at the surface. Use only short readable labels for the layer names and a few key features such as roots and organic matter. No logos, branding, or decorative title text.",
-      "value": "Cross-section view of soil horizons, roots, and organic matter in spatial relationship — structure that text alone cannot show clearly"
+      "value": "Cross-section view of soil horizons, roots, and organic matter in spatial relationship — structure that text alone cannot show clearly",
+      "width": 800,
+      "height": 447,
+      "v": "8bfb232c"
     },
     {
       "id": "erosion-types-comparison",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Simple three-panel diagram comparing sheet erosion, rill erosion, and gully erosion on a dirt slope after rain. Panel one shows thin soil loss across the surface, panel two shows several small runoff channels, panel three shows one large deep channel. Natural earth colors, simple arrows for water movement, and short horizontal labels only.",
-      "value": "Side-by-side visual comparison of sheet, rill, and gully erosion stages — distinctions in channel size and pattern that are much faster to learn visually"
+      "value": "Side-by-side visual comparison of sheet, rill, and gully erosion stages — distinctions in channel size and pattern that are much faster to learn visually",
+      "width": 800,
+      "height": 447,
+      "v": "2ba39b78"
     },
     {
       "id": "hydrologic-cycle-labeled",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational landscape diagram of the hydrologic cycle showing ocean, lake, hills, clouds, sun, plants, and subsurface groundwater. Depict evaporation rising from surface water, condensation in clouds, precipitation falling over land and water, runoff flowing downhill into streams, infiltration entering the soil, groundwater flow moving underground, and transpiration rising from trees and grasses. Use simple arrows and only brief horizontal labels for each process. Keep the layout uncluttered and visual-first with no title text, branding, or dense paragraphs.",
-      "value": "Whole-system view of water moving between sky, land, plants, surface water, and groundwater — cyclical relationships impossible to grasp as quickly from prose alone"
+      "value": "Whole-system view of water moving between sky, land, plants, surface water, and groundwater — cyclical relationships impossible to grasp as quickly from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "2e3812b7"
     },
     {
       "id": "wastewater-treatment-flow",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple step-by-step wastewater treatment flow diagram from left to right. Show incoming wastewater entering screening, then grit removal or primary settling tank, then secondary biological treatment basin with aeration, then secondary clarifier, then disinfection, then clean effluent leaving the plant. Include a side branch for sludge handling with a simple tank or holding area. Use arrows for flow direction and only short horizontal labels naming each stage. Make the tanks and process steps visually distinct and easy to follow. No decorative title, branding, or extra text blocks.",
-      "value": "Sequential flow of wastewater through treatment stages with branching sludge handling — process order and connections that text alone cannot make instantly clear"
+      "value": "Sequential flow of wastewater through treatment stages with branching sludge handling — process order and connections that text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "51fea0c1"
     }
   ]
 }

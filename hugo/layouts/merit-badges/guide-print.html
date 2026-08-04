@@ -10,31 +10,9 @@
   {{ $badgePage := .CurrentSection.Parent | default .Parent.Parent }}
   {{ $guidePage := .Parent }}
   {{ $guideNav := $guidePage.Params.guide_nav }}
-  {{ $image := "" }}
-  {{ with $badgePage.Resources.GetMatch "*badge*.png" }}
-    {{ $image = . }}
-  {{ else }}
-    {{ with $badgePage.Resources.GetMatch "*badge*.jpg" }}
-      {{ $image = . }}
-    {{ else }}
-      {{ with $badgePage.Resources.GetMatch "*badge*.avif" }}
-        {{ $image = . }}
-      {{ else }}
-        {{ with $badgePage.Resources.GetMatch "*badge*.webp" }}
-          {{ $image = . }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
 
   <article class="drg-content">
     <header class="drg-print-header">
-      {{ if $image }}
-        <img
-          src="{{ $image.RelPermalink }}"
-          alt="{{ $badgePage.Title }} Merit Badge"
-          class="drg-print-header__badge-img" />
-      {{ end }}
       <div>
         <div class="drg-print-header__kicker">Printable Guide</div>
         <h1 class="drg-print-header__title">{{ $badgePage.Title }} — Complete Digital Resource Guide</h1>

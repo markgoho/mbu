@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational cutaway diagram of a modern two-story house showing the full residential plumbing system: water service line entering the basement, main shutoff valve, water meter, water heater, blue cold-water supply lines, red hot-water supply lines, drain-waste-vent piping, sink traps, toilets, tub and shower drains, roof vent stack, hose bib, and fixture branches. Use simple short labels only on major components, no branding, no logos, no decorative title.",
-      "value": "Cutaway view of the entire home plumbing system with supply, drain, vent, and meter relationships visible at once — inside-wall system layout that text alone cannot show"
+      "value": "Cutaway view of the entire home plumbing system with supply, drain, vent, and meter relationships visible at once — inside-wall system layout that text alone cannot show",
+      "width": 800,
+      "height": 447,
+      "v": "f7681539"
     },
     {
       "id": "house-water-supply-diagram",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple residential water supply diagram showing where water enters a house, the main shutoff, water meter, cold-water branches, water heater, and hot-water branches to sinks, shower, tub, dishwasher, and clothes washer. Use blue for cold lines and red for hot lines, clear left-to-right flow, and only short labels for major parts.",
-      "value": "Color-coded path of cold and hot water from service entry through the heater to fixtures — flow relationships easier to understand visually than in prose"
+      "value": "Color-coded path of cold and hot water from service entry through the heater to fixtures — flow relationships easier to understand visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "8ee34e20"
     },
     {
       "id": "plumbing-hand-tools-layout",
@@ -24,7 +30,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Top-down realistic workbench photo of five essential plumbing hand tools neatly arranged and labeled with short tags: pipe wrench, tongue-and-groove pliers, basin wrench, tubing cutter, and closet auger. Neutral workshop background, no brand names, no decorative text, clear instructional lighting.",
-      "value": "Side-by-side visual comparison of five core plumbing tools with shape and function cues — tool recognition depends on seeing the real forms"
+      "value": "Side-by-side visual comparison of five core plumbing tools with shape and function cues — tool recognition depends on seeing the real forms",
+      "width": 800,
+      "height": 447,
+      "v": "921325df"
     },
     {
       "id": "plumbing-terms-reference-board",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Educational reference board showing common plumbing parts and fittings arranged cleanly on a neutral background with short labels: washer, retaining nut, plunger, solder, flux, elbow, tee, nipple, coupling, plug, union, trap, drainpipe, and water meter. Clear spacing, simple arrows only where obvious, no branding, no title banner.",
-      "value": "Visual identification board of multiple plumbing parts and fittings in one place — part shapes and differences are easier to learn by sight than by text alone"
+      "value": "Visual identification board of multiple plumbing parts and fittings in one place — part shapes and differences are easier to learn by sight than by text alone",
+      "width": 800,
+      "height": 447,
+      "v": "f02d0899"
     },
     {
       "id": "pipe-material-comparison",
@@ -40,7 +52,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Side-by-side comparison photo of five common plumbing pipe materials laid out horizontally on a neutral work surface: copper pipe, red and blue PEX tubing, white PVC pipe and fittings, cream CPVC pipe and fittings, and galvanized steel pipe. Add short labels near each material and a few tiny callouts like rigid, flexible, hot-water capable, or threaded. No logos or decorative text.",
-      "value": "Direct visual comparison of color, texture, rigidity, and fitting style across common pipe materials — material differences are much faster to grasp visually"
+      "value": "Direct visual comparison of color, texture, rigidity, and fitting style across common pipe materials — material differences are much faster to grasp visually",
+      "width": 800,
+      "height": 447,
+      "v": "e15cabe1"
     },
     {
       "id": "hardware-store-plumbing-aisle",
@@ -48,7 +63,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Realistic hardware-store plumbing aisle scene with a clean Scout uniformed teenager and knowledgeable adult examining shelves of labeled plumbing materials. Visible groups include PVC fittings, CPVC pipe, coils of PEX, copper fittings, threaded steel fittings, and specialty plumbing tools. Add a few short instructional callouts pointing to each material category, but no store branding and no organizational text.",
-      "value": "Shows how different pipe systems and tool categories appear together on real store shelves — store-layout recognition is hard to learn from text alone"
+      "value": "Shows how different pipe systems and tool categories appear together on real store shelves — store-layout recognition is hard to learn from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "ff270fa7"
     },
     {
       "id": "pvc-solvent-weld-sequence",
@@ -56,7 +74,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Four-panel instructional diagram showing solvent welding of plastic pipe: panel 1 square cut pipe, panel 2 deburring the edge, panel 3 applying primer and cement, panel 4 assembling a coupling, tee, and elbow in correct alignment. Clean simple arrows, minimal short labels only, white background, no decorative title.",
-      "value": "Step-by-step sequence of cutting, deburring, priming, and assembling solvent-welded joints — procedural order and hand actions are clearer visually than in text"
+      "value": "Step-by-step sequence of cutting, deburring, priming, and assembling solvent-welded joints — procedural order and hand actions are clearer visually than in text",
+      "width": 800,
+      "height": 447,
+      "v": "589985a4"
     },
     {
       "id": "pex-connection-demo",
@@ -64,7 +85,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close-up realistic instructional photo of a Scout-aged teenager in clean work clothes and a knowledgeable adult making a PEX connection on a workbench. Show PEX tubing, a square-cut end, fitting, crimp ring, PEX cutter, and crimp tool with a few short callouts identifying each item and the full insertion of tubing. No brand names, no logos.",
-      "value": "Shows the real orientation of tubing, ring, fitting, and tool during a PEX connection — the hand position and assembly alignment are difficult to teach with text alone"
+      "value": "Shows the real orientation of tubing, ring, fitting, and tool during a PEX connection — the hand position and assembly alignment are difficult to teach with text alone",
+      "width": 800,
+      "height": 447,
+      "v": "940a78ae"
     },
     {
       "id": "copper-soldering-workstation",
@@ -72,7 +96,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Instructional photo of a safe copper soldering workstation on a bench: cleaned copper pipe and fitting, flux brush, solder coil, gas torch, heat shield, and knowledgeable adult supervising nearby. Add a few short callouts like cleaned joint, heat shield, hot zone, and solder. Emphasize safety and clear setup, no brand names, no decorative text.",
-      "value": "Shows the safe physical arrangement of tools, materials, and hot-work protection around a copper soldering job — workspace setup is best understood visually"
+      "value": "Shows the safe physical arrangement of tools, materials, and hot-work protection around a copper soldering job — workspace setup is best understood visually",
+      "width": 800,
+      "height": 447,
+      "v": "3c80aa46"
     },
     {
       "id": "faucet-replacement-under-sink",
@@ -80,7 +107,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Under-sink instructional photo during faucet replacement showing shutoff valves, supply lines, mounting hardware, basin wrench in use, and towel or pan below the work area. Tight cabinet space, realistic perspective, short clear callouts on the key components only, no branding or logos.",
-      "value": "Under-sink view of shutoffs, supply lines, mounting nuts, and tool access during faucet replacement — cramped working geometry is much easier to understand visually"
+      "value": "Under-sink view of shutoffs, supply lines, mounting nuts, and tool access during faucet replacement — cramped working geometry is much easier to understand visually",
+      "width": 800,
+      "height": 447,
+      "v": "e2d8ff9f"
     },
     {
       "id": "p-trap-cleanout-sequence",
@@ -88,7 +118,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Step-by-step sink trap cleaning diagram showing bucket placement, loosening slip nuts, removing the P-trap, cleaning debris, and reinstalling washers and trap parts in the correct order. White background, simple arrows, brief labels only, no title block.",
-      "value": "Sequence of trap removal, washer order, and reassembly orientation — part order and motion are far clearer in a step diagram than in prose"
+      "value": "Sequence of trap removal, washer order, and reassembly orientation — part order and motion are far clearer in a step diagram than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "adf1549f"
     },
     {
       "id": "thread-tape-wrapping",
@@ -96,7 +129,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close-up instructional photo of male pipe threads being wrapped correctly with white thread tape. Show the tape starting behind the pipe opening, wrapping in the tightening direction, and lying neatly in the thread grooves. Include a simple arrow for wrap direction and one small crossed-out wrong example off to the side. No branding, no decorative text.",
-      "value": "Close-up of wrap direction, starting point, and neat thread coverage on a real fitting — this small precision skill depends on seeing the correct orientation"
+      "value": "Close-up of wrap direction, starting point, and neat thread coverage on a real fitting — this small precision skill depends on seeing the correct orientation",
+      "width": 800,
+      "height": 447,
+      "v": "d353f4d8"
     }
   ]
 }

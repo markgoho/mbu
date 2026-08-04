@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close-up instructional photo of fine-tipped tweezers grasping a tick as close to the skin surface as possible and pulling straight upward, with one small crossed-out inset showing wrong squeezing or twisting methods; skin and tool only, clean medical demonstration, minimal text, no logos",
-      "value": "Shows the exact grip location near the skin and straight-up pull direction that text alone cannot teach clearly"
+      "value": "Shows the exact grip location near the skin and straight-up pull direction that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "3d0fec5b"
     },
     {
       "id": "sar-pack-layout",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Top-down educational layout of a search and rescue field pack with gear grouped into four color-coded hazard categories: exposure, travel, medical, and information; labeled items include rain shell, insulating layer, gloves, emergency bivy, headlamp, extra batteries, water, snacks, first aid kit, map, compass, radio, notebook, pencil, repair tape, multitool, and blister kit; clean white background, short horizontal labels only, no branding",
-      "value": "Shows how pack contents group by hazard category and where each item fits in the system, a visual relationship that text alone cannot convey well"
+      "value": "Shows how pack contents group by hazard category and where each item fits in the system, a visual relationship that text alone cannot convey well",
+      "width": 800,
+      "height": 447,
+      "v": "0fd6c447"
     },
     {
       "id": "signal-mirror-aiming",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Three-panel daylight signaling mirror diagram: first panel shows a Scout holding a small mirror near the eye with sun behind, second panel shows the bright reflected aiming spot aligned through the sighting hole, third panel shows the flash sweeping across a distant search aircraft in open sky; simple body silhouette, mirror, sun rays, and aircraft, horizontal labels only, no logos",
-      "value": "Shows the mirror orientation, sighting alignment, and sweep motion together, a sequence that is hard to understand from prose alone"
+      "value": "Shows the mirror orientation, sighting alignment, and sweep motion together, a sequence that is hard to understand from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "ee2785fe"
     },
     {
       "id": "containment-map-example",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Simple topographic map diagram with a place last seen marked by a bold dot, a stream on one side, a road on another, a ridgeline forming an upper boundary, and a shaded likely containment area between them; a few short labels identify PLS, road, stream, ridge, and containment boundary, all horizontal and minimal, no extra text",
-      "value": "Shows how natural and human-made boundaries combine around a place last seen to form a containment area, a spatial planning concept text alone cannot make immediate"
+      "value": "Shows how natural and human-made boundaries combine around a place last seen to form a containment area, a spatial planning concept text alone cannot make immediate",
+      "width": 800,
+      "height": 447,
+      "v": "b026b299"
     }
   ]
 }

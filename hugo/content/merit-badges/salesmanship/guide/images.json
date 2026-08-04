@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean two-column diagram comparing a product sales path and a service sales path. Left column shows simple labeled stages for a product: materials, build, quality check, packaging, customer use. Right column shows a service path: request, scheduling, work performed, follow-up, customer result. Use icons and arrows, minimal horizontal labels only, no branding, no decorative background.",
-      "value": "Side-by-side visual sequence of product construction versus service delivery shows process differences and flow that text alone cannot make instantly scannable"
+      "value": "Side-by-side visual sequence of product construction versus service delivery shows process differences and flow that text alone cannot make instantly scannable",
+      "width": 800,
+      "height": 447,
+      "v": "aa18c284"
     },
     {
       "id": "scout-sales-presentation",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Photorealistic Scout in a clean tan Scout uniform giving a simple sales presentation to one seated adult listener across a small table, holding a note card beside a sample product. Add a few short callouts with horizontal text only pointing to open posture, eye contact, product visible, and brief note card. Indoor community room setting, natural lighting, no logos, no visible brand text.",
-      "value": "Shows the physical setup of a clear sales presentation with body position, note-card use, visible product placement, and eye contact cues that text alone cannot demonstrate clearly"
+      "value": "Shows the physical setup of a clear sales presentation with body position, note-card use, visible product placement, and eye contact cues that text alone cannot demonstrate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "3a3c0631"
     }
   ]
 }

@@ -7,91 +7,130 @@
       "file": "req1.md",
       "style": "illustrated",
       "description": "Educational comparison chart showing five printing methods in a clean five-column layout: offset lithography with plate to rubber blanket to paper transfer, screen printing with mesh screen and squeegee over fabric, digital printing with computer file to digital press to paper, relief printing with raised inked block pressed onto paper, and gravure with engraved cylinder cells transferring ink to packaging film. Each column uses a simple cutaway visual of the process with one finished product example beneath it. Minimal horizontal labels only. No logos, no branding, no extra text.",
-      "value": "Side-by-side visual comparison of five printing mechanisms and their finished products — process differences are much easier to grasp by seeing them together than by text alone"
+      "value": "Side-by-side visual comparison of five printing mechanisms and their finished products — process differences are much easier to grasp by seeing them together than by text alone",
+      "width": 800,
+      "height": 447,
+      "v": "4f69343d"
     },
     {
       "id": "line-continuous-halftone-comparison",
       "file": "req2.md",
       "style": "comparison",
       "description": "Three-panel educational comparison image. Left panel shows line artwork as a crisp black logo and icon with sharp solid edges. Center panel shows continuous tone artwork as a realistic grayscale portrait with smooth shading. Right panel shows the same portrait reproduced as a visible halftone dot pattern, with a small magnified inset revealing the dots. Clean white background, simple horizontal panel labels only, no extra annotations.",
-      "value": "Direct visual contrast between line art, smooth-tone imagery, and halftone dots — the reader must see the texture and edge differences to understand the categories"
+      "value": "Direct visual contrast between line art, smooth-tone imagery, and halftone dots — the reader must see the texture and edge differences to understand the categories",
+      "width": 800,
+      "height": 447,
+      "v": "1fdfb853"
     },
     {
       "id": "vector-vs-raster-scaling-comparison",
       "file": "req2.md",
       "style": "comparison",
       "description": "Two-panel educational comparison. Left panel shows a vector logo enlarged from small to poster size with edges staying perfectly crisp. Right panel shows a raster photo crop enlarged to the same size with visible square pixels and soft edges. Include a small pixel grid magnifier on the raster side and smooth anchor-point path lines on the vector side. Minimal horizontal labels only, clean studio background, no branding.",
-      "value": "Shows how vector graphics stay sharp while raster images break into pixels when enlarged — scaling behavior is visual and cannot be taught as clearly in prose"
+      "value": "Shows how vector graphics stay sharp while raster images break into pixels when enlarged — scaling behavior is visual and cannot be taught as clearly in prose",
+      "width": 800,
+      "height": 447,
+      "v": "30022bdc"
     },
     {
       "id": "flyer-layout-hierarchy-wireframe",
       "file": "req3.md",
       "style": "diagram",
       "description": "Clean educational page-layout wireframe for a troop event flyer on a vertical sheet. Large headline area at top, hero image block beneath, grouped date time location details, short body copy section, and bold call-to-action block near bottom. Arrows or numbered callouts are not needed. Instead use clear labeled zones with horizontal labels such as headline, image, details, body, action. Strong spacing and white space visible between sections. No logos, no branding, no dense text.",
-      "value": "Visible page hierarchy and spacing relationships show how layout guides the eye through a printed piece — spatial organization is clearer in a wireframe than in verbal explanation"
+      "value": "Visible page hierarchy and spacing relationships show how layout guides the eye through a printed piece — spatial organization is clearer in a wireframe than in verbal explanation",
+      "width": 800,
+      "height": 447,
+      "v": "f6686ec1"
     },
     {
       "id": "offset-lithography-transfer-diagram",
       "file": "req4a.md",
       "style": "diagram",
       "description": "Educational cutaway diagram of offset lithography showing plate cylinder, dampening rollers, inking rollers, rubber blanket cylinder, impression cylinder, and paper sheet path. Use a left-to-right flow with color-coded components and short horizontal part labels. Show the image transferring from plate to blanket to paper. Clean technical illustration style, white background, no branding, no extra text blocks.",
-      "value": "Shows the hidden plate-to-blanket-to-paper transfer path inside offset printing — the sequence and component positions are spatial mechanics that text alone cannot convey"
+      "value": "Shows the hidden plate-to-blanket-to-paper transfer path inside offset printing — the sequence and component positions are spatial mechanics that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "117017e5"
     },
     {
       "id": "screen-printing-registration-setup",
       "file": "req4b.md",
       "style": "diagram",
       "description": "Clean educational overhead diagram of a small screen-printing station. Show a rectangular mesh screen in frame with stencil area visible, strips of masking tape covering non-print zones, simple registration guides on the platen below, and a squeegee positioned at the top edge ready to pull ink downward. Use only four short horizontal labels: stencil, masking, registration guides, squeegee. White background, clear shapes, no logos, no branding, no extra text.",
-      "value": "Shows how stencil, masking, and registration guides are physically arranged in one screen-printing setup — the exact placement of these parts is hard to understand from text alone"
+      "value": "Shows how stencil, masking, and registration guides are physically arranged in one screen-printing setup — the exact placement of these parts is hard to understand from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "4dbfdf14"
     },
     {
       "id": "digital-proof-screen-vs-print-comparison",
       "file": "req4c.md",
       "style": "comparison",
       "description": "Split educational image comparing a flyer on a computer monitor and the printed proof held beside it. The screen version appears bright and balanced, while the paper proof shows slightly darker color and tighter readability. Include subtle zoom insets highlighting headline size, contrast, and margin spacing differences. Realistic desk scene, no logos, no branding, minimal horizontal labels only.",
-      "value": "Before-and-after proof comparison reveals how a digital design can change when it moves from screen to paper — those print shifts are best learned visually"
+      "value": "Before-and-after proof comparison reveals how a digital design can change when it moves from screen to paper — those print shifts are best learned visually",
+      "width": 800,
+      "height": 447,
+      "v": "6b545c95"
     },
     {
       "id": "relief-printing-form-and-impression",
       "file": "req4d.md",
       "style": "comparison",
       "description": "Two-panel educational comparison image. Left panel shows a relief printing form with raised inked surface, brayer, and paper positioned above it. Right panel shows the finished print with slight impressed texture and bold transferred shapes. Include a small side cutaway indicating raised printing surface touching paper under pressure. Minimal horizontal labels only, clean studio background.",
-      "value": "Shows the relationship between raised printable surface and the final impressed print result — the physical transfer and texture are much clearer when seen"
+      "value": "Shows the relationship between raised printable surface and the final impressed print result — the physical transfer and texture are much clearer when seen",
+      "width": 800,
+      "height": 447,
+      "v": "4309a835"
     },
     {
       "id": "finishing-operations-four-panel",
       "file": "req5.md",
       "style": "illustrated",
       "description": "Four-panel educational sequence showing common postpress operations on printed sheets. Panel one: padding with a glued edge forming a tear-off memo pad. Panel two: drilling a neat stack of paper with round holes. Panel three: cutting a large printed sheet into smaller pieces with a guillotine cutter. Panel four: trimming a booklet to final clean edges. Use one short horizontal label per panel, simple workshop visuals, no extra text.",
-      "value": "Four distinct finishing operations shown as recognizable physical actions and results — the differences between these postpress steps are easier to learn by seeing them side by side"
+      "value": "Four distinct finishing operations shown as recognizable physical actions and results — the differences between these postpress steps are easier to learn by seeing them side by side",
+      "width": 800,
+      "height": 447,
+      "v": "0598a2da"
     },
     {
       "id": "binding-types-spine-comparison",
       "file": "req5.md",
       "style": "illustrated",
       "description": "Educational comparison grid with five bound book samples viewed from angled front and spine perspective: perfect binding, spiral binding, plastic comb, saddle stitch booklet, and case-bound hardcover. Each sample is isolated on a clean background with one short horizontal label. Emphasize the visible construction of the spine or fold for each type. No branding, no extra text.",
-      "value": "Shows the visual construction clues of five binding types at a glance — identifying bindings depends on seeing spine and fold structures, not just reading definitions"
+      "value": "Shows the visual construction clues of five binding types at a glance — identifying bindings depends on seeing spine and fold structures, not just reading definitions",
+      "width": 800,
+      "height": 447,
+      "v": "5d39c744"
     },
     {
       "id": "newspaper-story-workflow-diagram",
       "file": "req6a.md",
       "style": "diagram",
       "description": "Educational workflow diagram for newspaper production laid out as six connected horizontal stages: reporting, editing, page layout, prepress check, plate or digital press prep, and printing plus folding. Each stage uses a simple icon and compact scene thumbnail such as reporter notebook, editor screen, page layout monitor, plate output, and newspaper press. Keep text minimal with short horizontal stage labels only. Clean newsroom-to-press visual flow.",
-      "value": "Sequential visual workflow from reporter to press shows how many stages shape a newspaper before printing — process flow and handoff order are easier to understand visually"
+      "value": "Sequential visual workflow from reporter to press shows how many stages shape a newspaper before printing — process flow and handoff order are easier to understand visually",
+      "width": 800,
+      "height": 447,
+      "v": "e3d89ebf"
     },
     {
       "id": "commercial-print-job-workflow-board",
       "file": "req6b.md",
       "style": "diagram",
       "description": "Educational production workflow board showing a commercial print job moving through six stages on a shop wall or planning board: customer intake, file review, scheduling, printing, finishing, packing or pickup. Each stage is represented by a card with a simple icon and small visual thumbnail such as sample booklet, paper stack, press, cutter, and boxed order. Minimal horizontal labels only, clean organized layout, no branding.",
-      "value": "End-to-end job tracking board makes the commercial print workflow concrete — the progression from customer request to finished delivery is easier to learn as a visual sequence"
+      "value": "End-to-end job tracking board makes the commercial print workflow concrete — the progression from customer request to finished delivery is easier to learn as a visual sequence",
+      "width": 800,
+      "height": 447,
+      "v": "6b14a82b"
     },
     {
       "id": "school-graphic-arts-course-pathway",
       "file": "req6c.md",
       "style": "diagram",
       "description": "Educational course pathway chart for a school graphic arts program. Show beginner classes feeding into intermediate courses and then advanced specialties such as typography, digital imaging, print production, packaging, photography, and portfolio studio. Use boxes connected by arrows in a clean academic roadmap layout with only short horizontal course labels. No school names, no branding, no extra text.",
-      "value": "Visual prerequisite pathway shows how beginner classes lead into advanced graphic arts specialties — course sequencing is much easier to understand as a roadmap than as a paragraph"
+      "value": "Visual prerequisite pathway shows how beginner classes lead into advanced graphic arts specialties — course sequencing is much easier to understand as a roadmap than as a paragraph",
+      "width": 800,
+      "height": 447,
+      "v": "47c266e2"
     }
   ]
 }

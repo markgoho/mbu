@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Annotated photo at a dock of a teenager in appropriate rowing clothing wearing a low-profile recreational life jacket while a buddy performs the shoulder lift test. Use only a few short callouts highlighting snug torso fit, secured straps, free shoulder movement, and no ride-up past the chin. Calm waterfront background, no branding or logos.",
-      "value": "Shows the visible checkpoints of correct rowing life-jacket fit during the lift test — fit and ride-up details that text alone cannot teach clearly"
+      "value": "Shows the visible checkpoints of correct rowing life-jacket fit during the lift test — fit and ride-up details that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "5985e564"
     },
     {
       "id": "rowboat-pivot-maneuver",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Bird's-eye instructional diagram of a fixed-seat rowboat traveling to a buoy, stopping, pivoting in place, and returning to the start line. Show clean path lines, boat orientation at each phase, and two marker buoys with very short horizontal labels only. Emphasize turn geometry and controlled return path, not scenery.",
-      "value": "Shows the spatial sequence of stopping, pivoting, and returning on course — maneuver geometry that is difficult to picture from prose alone"
+      "value": "Shows the spatial sequence of stopping, pivoting, and returning on course — maneuver geometry that is difficult to picture from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "8239ab1c"
     },
     {
       "id": "stern-sculling-motion",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Clean educational stern view of a fixed-seat rowboat with one oar sculling over the stern in a smooth figure-eight pattern. Show the blade at several positions in the cycle with simple directional path cues and minimal short labels only. Focus on the changing oar angle and water-pressure path, with no decorative background.",
-      "value": "Shows the figure-eight blade path and changing oar angle used in stern sculling — motion mechanics that are much easier to understand visually than from text"
+      "value": "Shows the figure-eight blade path and changing oar angle used in stern sculling — motion mechanics that are much easier to understand visually than from text",
+      "width": 800,
+      "height": 447,
+      "v": "0bf256c4"
     },
     {
       "id": "sliding-seat-pier-exit",
@@ -32,7 +41,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Annotated photo of a teenager stepping carefully from a sliding-seat rowing shell to a dock while a buddy stabilizes the shell and riggers. Use only a few short callouts marking low center of gravity, stable hand placement, one-foot transfer, and shell support points. Clean boathouse dock setting, no logos or branding.",
-      "value": "Shows the body position, hand placement, and support points for a safe sliding-seat pier exchange — balance details that prose alone cannot make obvious"
+      "value": "Shows the body position, hand placement, and support points for a safe sliding-seat pier exchange — balance details that prose alone cannot make obvious",
+      "width": 800,
+      "height": 447,
+      "v": "62b64d08"
     },
     {
       "id": "stern-tow-rowboat",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Top-down rescue diagram of a rowboat approaching a swimmer, pivoting so the swimmer grips the stern, then towing steadily toward shore. Show three clear stages with simple path arrows and very short labels only: approach, stern hold, tow to shore. Keep the layout visual-first with calm water and no extra scenery.",
-      "value": "Shows the safe rescue positioning between rower, stern, swimmer, and shore in one view — a spatial relationship that text alone is hard to visualize"
+      "value": "Shows the safe rescue positioning between rower, stern, swimmer, and shore in one view — a spatial relationship that text alone is hard to visualize",
+      "width": 800,
+      "height": 447,
+      "v": "c530d56c"
     },
     {
       "id": "rowing-oarlock-comparison",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Side-by-side clean educational diagram comparing a simple recreational rowboat oarlock with a competitive rowing gate-and-pin system mounted on a rigger. Use short horizontal labels for only the major visible parts and keep the background plain. Focus on structural differences and where the oar pivots in each system.",
-      "value": "Shows the visual and structural differences between recreational and competitive oarlock systems side by side — equipment distinctions that are hard to grasp from description alone"
+      "value": "Shows the visual and structural differences between recreational and competitive oarlock systems side by side — equipment distinctions that are hard to grasp from description alone",
+      "width": 800,
+      "height": 447,
+      "v": "a8e9f76e"
     }
   ]
 }

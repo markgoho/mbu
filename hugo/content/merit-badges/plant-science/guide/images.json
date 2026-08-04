@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean educational diagram of a dissected flowering plant arranged on a plain white background, showing the whole plant structure and major parts clearly separated and labeled: roots, stem, leaf, petals, sepals, stamens, pistil, fruit, and seeds; realistic botanical colors, simple horizontal labels only, no branding or decorative text",
-      "value": "Shows the spatial arrangement and visual differences among the major flowering-plant parts in one view, relationships that text alone cannot teach quickly"
+      "value": "Shows the spatial arrangement and visual differences among the major flowering-plant parts in one view, relationships that text alone cannot teach quickly",
+      "width": 800,
+      "height": 447,
+      "v": "3525b320"
     }
   ]
 }

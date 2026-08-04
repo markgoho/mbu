@@ -8,7 +8,10 @@
       "style": "comparison",
       "verb_family": "identify",
       "description": "Side-by-side comparison of two real freight trains viewed broadside at track level: left panel shows a long coal unit train made entirely of matching open hopper cars behind heavy road locomotives, right panel shows a double-stack intermodal train with containers stacked two high on articulated well cars; clear daylight, no logos emphasized, the train lengths and repeated car patterns easy to compare",
-      "value": "Shows the visual difference between a single-commodity unit train and an intermodal train through car repetition and train makeup, distinctions that are much faster to grasp visually than from text alone"
+      "value": "Shows the visual difference between a single-commodity unit train and an intermodal train through car repetition and train makeup, distinctions that are much faster to grasp visually than from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "958a3bfc"
     },
     {
       "id": "class-i-railroad-route-map",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean route map of one major Class I railroad across the United States, with main lines highlighted, major served cities marked by dots, terminals marked with square icons, service facilities marked with wrench icons, and crew change points marked with small circles; simple legend, horizontal labels only, no decorative background",
-      "value": "Shows the spatial relationship between cities, terminals, service facilities, and crew change points across one railroad system, geography that text alone cannot communicate clearly"
+      "value": "Shows the spatial relationship between cities, terminals, service facilities, and crew change points across one railroad system, geography that text alone cannot communicate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "c834a787"
     },
     {
       "id": "railroad-car-types-reference",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Reference sheet with ten clean side-view freight and passenger car silhouettes arranged in a grid: boxcar, tank car, covered hopper, open hopper, flatcar, gondola, autorack, centerbeam flatcar, passenger coach, and caboose; each silhouette visually distinct with short horizontal labels only, plain white background, educational field-guide style",
-      "value": "Shows the silhouette differences among ten common car types, making visual identification possible in a way list-based descriptions cannot"
+      "value": "Shows the silhouette differences among ten common car types, making visual identification possible in a way list-based descriptions cannot",
+      "width": 800,
+      "height": 447,
+      "v": "4aadd065"
     },
     {
       "id": "diesel-electric-locomotive-cutaway",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean side cutaway diagram of a modern diesel-electric locomotive showing the diesel engine, alternator, cooling section, fuel tank, traction motors on the trucks, and electrical power path from engine to wheels; arrows show energy flow, labels are short and horizontal, no branding",
-      "value": "Shows how engine power is converted into electricity and then into wheel motion through the locomotive, a hidden internal process that prose alone cannot make intuitive"
+      "value": "Shows how engine power is converted into electricity and then into wheel motion through the locomotive, a hidden internal process that prose alone cannot make intuitive",
+      "width": 800,
+      "height": 447,
+      "v": "5c2cca29"
     },
     {
       "id": "heavy-rail-vs-light-rail",
@@ -40,7 +52,10 @@
       "style": "comparison",
       "verb_family": "identify",
       "description": "Side-by-side comparison of two rail transit systems: left panel shows a heavy-rail subway train at a high-platform grade-separated station in a tunnel or elevated structure, right panel shows a light rail vehicle running in a city street with overhead wires and pedestrian-scale stops; similar viewing angle for easy contrast, no logos",
-      "value": "Shows the environment, platform style, and street-running difference between heavy rail and light rail, distinctions that are easier to recognize visually than from definitions alone"
+      "value": "Shows the environment, platform style, and street-running difference between heavy rail and light rail, distinctions that are easier to recognize visually than from definitions alone",
+      "width": 800,
+      "height": 447,
+      "v": "54639e40"
     },
     {
       "id": "railroad-company-departments",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple organizational chart with one railroad company box at the top and four large department boxes beneath it labeled Transportation, Engineering, Mechanical, and Marketing, each with two or three short role labels under it such as crews and dispatching, track and bridges, locomotive and car maintenance, sales and customer service; clean lines, horizontal text only",
-      "value": "Shows how the major railroad departments relate to each other in one hierarchy, helping readers build a mental model of company structure that paragraphs alone cannot provide"
+      "value": "Shows how the major railroad departments relate to each other in one hierarchy, helping readers build a mental model of company structure that paragraphs alone cannot provide",
+      "width": 800,
+      "height": 447,
+      "v": "3f15c06e"
     },
     {
       "id": "railroad-right-of-way-boundary",
@@ -56,14 +74,20 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Educational diagram of a railroad corridor in cross-section with track, ballast shoulder, drainage ditch, fence line, and a clearly marked right-of-way boundary; one person stands safely outside the boundary while a train passes on the track, with a shaded hazard zone around the train overhang area; minimal labels only",
-      "value": "Shows the safe boundary and the train overhang hazard zone in relation to the track, spatial safety information that text alone cannot make instantly clear"
+      "value": "Shows the safe boundary and the train overhang hazard zone in relation to the track, spatial safety information that text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "eb493fc3"
     },
     {
       "id": "crossing-signal-with-flashing-lights",
       "file": "req5.md",
       "verb_family": "identify",
       "description": "Real grade crossing warning assembly viewed from the road approach, showing the white crossbuck mounted above two alternating red flashing lights on a mast, with the roadway and nearest rail visible in the frame; clean daylight photo, the signal hardware large and easy to study, no readable brand text emphasized",
-      "value": "Shows the real-world appearance and arrangement of a crossing mast with crossbuck and flashing lights, helping readers recognize what the device actually looks like before they see one on the road"
+      "value": "Shows the real-world appearance and arrangement of a crossing mast with crossbuck and flashing lights, helping readers recognize what the device actually looks like before they see one on the road",
+      "width": 800,
+      "height": 447,
+      "v": "3f16b223"
     },
     {
       "id": "rxr-pavement-marking-and-stop-bar",
@@ -71,7 +95,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Driver-eye road diagram approaching a grade crossing showing the white RXR pavement marking, the large white X, yellow no-passing lines, and a stop bar clearly positioned before the nearest rail; simple roadway perspective, short horizontal labels only, no extra clutter",
-      "value": "Shows the placement of the RXR marking and stop bar in relation to the rail and lane, a position-based road marking concept that text alone cannot teach as clearly"
+      "value": "Shows the placement of the RXR marking and stop bar in relation to the rail and lane, a position-based road marking concept that text alone cannot teach as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "0e0f90ca"
     },
     {
       "id": "crossbuck-and-ens-signs",
@@ -79,7 +106,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clean front-facing grade crossing sign assembly showing a white X-shaped crossbuck mounted above a blue emergency notification system sign, with a small multiple-track plaque beneath the crossbuck; the shapes and mounting order are obvious, text kept minimal and generic, no logos",
-      "value": "Shows the shape and stacked arrangement of the key signs mounted at the crossing itself, visual recognition that is much easier to learn from an image than from prose"
+      "value": "Shows the shape and stacked arrangement of the key signs mounted at the crossing itself, visual recognition that is much easier to learn from an image than from prose",
+      "width": 800,
+      "height": 447,
+      "v": "67d15997"
     },
     {
       "id": "color-light-signal-aspects",
@@ -87,14 +117,20 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Three-aspect color-light railroad signal shown clearly on a mast beside track, with three small side-by-side inset panels showing the same signal displaying green, yellow, and red aspects; each inset uses only a one-word label beneath it, clean sky background, simple educational layout",
-      "value": "Shows the visual difference between the three basic color-light signal aspects, which is essential recognition knowledge that text alone cannot teach quickly"
+      "value": "Shows the visual difference between the three basic color-light signal aspects, which is essential recognition knowledge that text alone cannot teach quickly",
+      "width": 800,
+      "height": 447,
+      "v": "ddc402cc"
     },
     {
       "id": "eotd-fred-rear-device",
       "file": "req6.md",
       "verb_family": "identify",
       "description": "Close-up rear view of the last freight car with an end-of-train device attached to the rear coupler area, the red flashing light illuminated and the compact equipment box clearly visible against the car end hardware; realistic daylight rail scene, no logos emphasized",
-      "value": "Shows the actual size, placement, and visible flashing light of an EOTD on the rear of a freight train, details that are hard to picture accurately from text alone"
+      "value": "Shows the actual size, placement, and visible flashing light of an EOTD on the rear of a freight train, details that are hard to picture accurately from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "8d26fdae"
     },
     {
       "id": "model-layout-track-plan",
@@ -102,7 +138,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Top-down hand-drawn style track plan on graph paper for a beginner model railroad, showing a loop with a passing siding, a small yard, and a station area, plus a clear room or benchwork outline around the plan; short horizontal labels only, clean pencil-and-ink educational look",
-      "value": "Shows what a complete beginner layout plan looks like with routings and railroad features arranged in space, a planning concept that text alone cannot demonstrate effectively"
+      "value": "Shows what a complete beginner layout plan looks like with routings and railroad features arranged in space, a planning concept that text alone cannot demonstrate effectively",
+      "width": 800,
+      "height": 447,
+      "v": "c0a0e06b"
     },
     {
       "id": "model-scale-size-comparison",
@@ -110,7 +149,10 @@
       "style": "comparison",
       "verb_family": "identify",
       "description": "Straight-on comparison of four model locomotives lined up smallest to largest on plain track sections: Z, N, HO, and O scales, with a ruler below and a common coin for size reference; neutral background, short scale labels only, no brand markings emphasized",
-      "value": "Shows the relative size difference among the major model scales at a glance, making scale comparison much easier than reading ratio numbers alone"
+      "value": "Shows the relative size difference among the major model scales at a glance, making scale comparison much easier than reading ratio numbers alone",
+      "width": 800,
+      "height": 447,
+      "v": "6a7206c2"
     },
     {
       "id": "timesaver-layout-overhead",
@@ -118,7 +160,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Top-down diagram of a classic Timesaver switching layout with one lead track and five short spurs of different lengths, each spur holding one or two freight cars, turnout locations obvious, and the locomotive positioned at one end ready to switch; clean background, minimal labels, no scenery clutter",
-      "value": "Shows the compact geometry and unequal track lengths that create the Timesaver puzzle, a spatial problem that text alone cannot explain nearly as well"
+      "value": "Shows the compact geometry and unequal track lengths that create the Timesaver puzzle, a spatial problem that text alone cannot explain nearly as well",
+      "width": 800,
+      "height": 447,
+      "v": "1bb7a2b5"
     },
     {
       "id": "dc-block-control-layout",
@@ -126,7 +171,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple instructional diagram of a model railroad oval divided into three electrical blocks, with one locomotive in each block, a single DC power pack, and three toggle switches feeding the blocks; the powered block is highlighted while the others are dimmed, arrows showing power flow from the pack to the selected block, clean horizontal labels only",
-      "value": "Shows how DC block control sends power to selected track sections rather than individual locomotives, a wiring concept that is difficult to understand from prose alone"
+      "value": "Shows how DC block control sends power to selected track sections rather than individual locomotives, a wiring concept that is difficult to understand from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "f6f46c8c"
     }
   ]
 }

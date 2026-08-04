@@ -8,7 +8,10 @@
       "style": "illustrated",
       "verb_family": "identify",
       "description": "Clean educational illustration of a teenager in a neat Scout uniform moving through everyday life while noticing several visible safety layers at once: a buckled seat belt in a parked car, a properly fitted bike helmet, a working smoke alarm on a home ceiling, and a pedestrian crosswalk signal. Show each safety layer clearly in its real context with minimal short labels only, no branding or visible text on clothing.",
-      "value": "Shows several everyday safety systems working in different contexts at once — a visual pattern of layered protection that text alone cannot convey as quickly"
+      "value": "Shows several everyday safety systems working in different contexts at once — a visual pattern of layered protection that text alone cannot convey as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "5bdb5e37"
     },
     {
       "id": "public-safety-scan",
@@ -16,7 +19,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Annotated photo of a teenager in a clean Scout uniform entering a public building lobby before an event and quietly scanning the space. Use only a few short callouts to mark exit signs, stairwell location, security desk, and the main crowd flow path. Realistic indoor lighting, clear wayfinding features, no logos or branded text.",
-      "value": "Shows what an effective public-place safety scan looks like by pointing out exits, stairs, and crowd flow in one real scene — situational awareness text alone cannot teach as clearly"
+      "value": "Shows what an effective public-place safety scan looks like by pointing out exits, stairs, and crowd flow in one real scene — situational awareness text alone cannot teach as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "111962b1"
     },
     {
       "id": "fire-escape-map-home",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Simple top-down home floor plan diagram with bedrooms, hallway, kitchen, and front and back exits. Mark two possible escape routes from sleeping areas with clear arrows and show one outdoor family meeting place away from the house. Keep labels short and horizontal only, with no decorative furniture clutter.",
-      "value": "Shows the spatial relationship between bedrooms, alternate exits, and the outdoor meeting place — escape-route planning that is much easier to understand visually than from prose alone"
+      "value": "Shows the spatial relationship between bedrooms, alternate exits, and the outdoor meeting place — escape-route planning that is much easier to understand visually than from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "485e4b56"
     },
     {
       "id": "social-media-oversharing-risks",
@@ -32,7 +41,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Annotated mock social media post shown on a smartphone screen with risky details highlighted: visible live location pin, school logo on clothing in the photo, vacation timing in the caption, and personal routine clues in the background. Use only a few short callouts naming the risk points. Keep the interface generic with no real platform branding.",
-      "value": "Shows exactly how multiple small details in one post combine into an oversharing risk — a pattern of exposed information that is hard to picture from text alone"
+      "value": "Shows exactly how multiple small details in one post combine into an oversharing risk — a pattern of exposed information that is hard to picture from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "feede7a6"
     }
   ]
 }

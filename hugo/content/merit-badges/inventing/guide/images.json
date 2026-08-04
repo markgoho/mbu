@@ -7,56 +7,80 @@
       "file": "_index.md",
       "style": "comparison",
       "description": "Split-frame educational comparison. Left panel: an inventor in a simple historical workshop using hand tools, gears, wood parts, and paper sketches on a bench. Right panel: a modern inventor using cardboard mockups, a laptop with a plain unlabeled design screen, and a desktop 3-D printer in a clean maker space. No logos or branding anywhere. The focus is on how tools and environments changed while problem-solving stayed the same.",
-      "value": "Side-by-side visual contrast between historical and modern inventing environments — comparison of tools and process that text alone cannot convey"
+      "value": "Side-by-side visual contrast between historical and modern inventing environments — comparison of tools and process that text alone cannot convey",
+      "width": 800,
+      "height": 447,
+      "v": "83dcbf34"
     },
     {
       "id": "patent-document-components-diagram",
       "file": "req3.md",
       "style": "diagram",
       "description": "Clean educational patent document diagram shown as a simplified sample patent page with six clearly separated horizontal sections labeled with short words only: Title, Abstract, Background, Description, Drawings, Claims. Each section has a small visual cue showing its purpose, such as a short header block, paragraph area, line drawing area, and numbered claim lines. Minimal text, white background, crisp black and blue linework, no legal document branding or government seals.",
-      "value": "Visual layout of the main parts of a patent document in their relative positions — document structure that is much easier to understand visually than from a list"
+      "value": "Visual layout of the main parts of a patent document in their relative positions — document structure that is much easier to understand visually than from a list",
+      "width": 800,
+      "height": 447,
+      "v": "8b35e449"
     },
     {
       "id": "original-vs-improved-camping-product-sketch",
       "file": "req5.md",
       "style": "comparison",
       "description": "Educational side-by-side concept sketch of a camping lantern redesign. Left panel shows the original lantern with a very small flush power button on top, hard to find in darkness. Right panel shows an improved version with a larger raised top button and a glow ring around it. Simple arrows and very short labels only for the changed button feature. Clean white background, product-design sketch style, no brand names, no decorative scenery.",
-      "value": "Direct before-and-after comparison of a specific product weakness and redesign — helps the reader see how an improvement recommendation becomes a visual sketch"
+      "value": "Direct before-and-after comparison of a specific product weakness and redesign — helps the reader see how an improvement recommendation becomes a visual sketch",
+      "width": 800,
+      "height": 447,
+      "v": "8ac127d2"
     },
     {
       "id": "labeled-invention-sketch-example",
       "file": "req6.md",
       "style": "diagram",
       "description": "Clean labeled invention sketch example of a simple troop gear organizer concept. The drawing shows a rectangular organizer with hanging hooks, a front pocket, side handles, and a fold-flat back panel. Use only short labels for the parts and a few arrows pointing to major features. White background, neat line drawing, educational product sketch style, no branding, no extra text blocks.",
-      "value": "A labeled example of how an invention sketch shows main shape, changed parts, and feature callouts — drawing conventions that are clearer by sight than explanation"
+      "value": "A labeled example of how an invention sketch shows main shape, changed parts, and feature callouts — drawing conventions that are clearer by sight than explanation",
+      "width": 800,
+      "height": 447,
+      "v": "b2d4bc50"
     },
     {
       "id": "cardboard-model-to-prototype-materials-comparison",
       "file": "req6.md",
       "style": "comparison",
       "description": "Split-frame educational comparison. Left panel shows a rough cardboard and tape scale model of a simple invention on a table. Right panel shows the same concept represented as prototype materials laid out clearly: wood pieces, bolts, webbing strap, foam padding, screws, and a hand tool. The design shape is visibly the same in both panels. No logos, no brand marks, no dense text.",
-      "value": "Visual difference between a quick form-testing model and the real materials needed for a working prototype — comparison that text alone cannot show as clearly"
+      "value": "Visual difference between a quick form-testing model and the real materials needed for a working prototype — comparison that text alone cannot show as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "777c2038"
     },
     {
       "id": "prototype-evaluation-scorecard-visual",
       "file": "req7.md",
       "style": "illustrated",
       "description": "Visual-first educational scorecard board with one prototype object in the center and five large surrounding icon panels labeled only with the short words Cost, Usefulness, Marketability, Appearance, and Function. Each panel uses a simple icon rather than detailed text: coins, checkmark, shopping tag, eye, and gear. Minimal text only for the five category names. Clean flat illustration style on white background.",
-      "value": "One-glance visual framework for the five prototype evaluation categories around a single invention — organization of evaluation criteria that is easier to remember visually"
+      "value": "One-glance visual framework for the five prototype evaluation categories around a single invention — organization of evaluation criteria that is easier to remember visually",
+      "width": 800,
+      "height": 447,
+      "v": "3122e3b9"
     },
     {
       "id": "solo-vs-team-inventing-workflow",
       "file": "req8a.md",
       "style": "comparison",
       "description": "Split-frame educational comparison. Left panel shows one inventor working alone at a table with notebook, sketch, and small prototype. Right panel shows a small team around a shared worktable with one person sketching, one testing a model, and one discussing parts. The scenes should clearly show the difference between solo decision-making and collaborative building. Clean indoor workshop setting, no logos or text on clothing, no branding.",
-      "value": "Side-by-side contrast between solo inventing and team-based inventing roles and workflow — group dynamics that are best understood visually"
+      "value": "Side-by-side contrast between solo inventing and team-based inventing roles and workflow — group dynamics that are best understood visually",
+      "width": 800,
+      "height": 447,
+      "v": "7d0a3d44"
     },
     {
       "id": "museum-presentation-story-flow",
       "file": "req8b.md",
       "style": "diagram",
       "description": "Simple educational presentation-flow diagram with five large horizontal panels connected in sequence. Each panel has a short label only: Problem, Invention, Impact, Surprise, Lesson. Each panel includes a small visual icon such as a question mark, object outline, people, spark, and speech bubble. White background, clean linework, minimal text, no museum branding.",
-      "value": "Ordered visual sequence for turning a museum visit into a presentation story — narrative flow that is easier to grasp as a diagram than as prose"
+      "value": "Ordered visual sequence for turning a museum visit into a presentation story — narrative flow that is easier to grasp as a diagram than as prose",
+      "width": 800,
+      "height": 447,
+      "v": "e2fa96c0"
     }
   ]
 }

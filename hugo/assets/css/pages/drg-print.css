@@ -234,18 +234,6 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
 
-  &:has(.drg-print-header__badge-img) {
-    grid-template-columns: 8rem 1fr;
-    align-items: center;
-  }
-
-  & .drg-print-header__badge-img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
-  }
-
   & .drg-print-header__kicker {
     font-size: var(--step--1);
     color: var(--on-surface-muted);
@@ -267,17 +255,9 @@
   }
 
   @container drg-content (max-width: 500px) {
-    &,
-    &:has(.drg-print-header__badge-img) {
-      grid-template-columns: 1fr;
-    }
-
+    grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-
-    & .drg-print-header__badge-img {
-      width: 6rem;
-    }
   }
 }
 
@@ -417,6 +397,13 @@
   }
 
   .drg-video__iframe {
+    display: none !important;
+  }
+
+  /* Print stays text-only — inline guide photos add weight/ink without
+     helping a printed checklist, and pulling them off ImageKit for a
+     print run isn't worth the request either. */
+  .drg-illustration {
     display: none !important;
   }
 

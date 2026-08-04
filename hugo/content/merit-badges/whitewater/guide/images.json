@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Overhead river diagram with labeled examples of upstream V, downstream V, riffle, eddy, eddy line, ledge, river bend, shallows, current at different depths, drop, horizon line, and hydraulic, with clear current arrows and minimal text labels only",
-      "value": "Shows multiple river-surface features and how current bends around them in one visual field—spatial relationships that text alone cannot teach clearly"
+      "value": "Shows multiple river-surface features and how current bends around them in one visual field—spatial relationships that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "1cc996e4"
     },
     {
       "id": "standing-wave-vs-wave-train",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Two-panel instructional river diagram comparing a single standing wave over one riverbed obstacle with a wave train over a longer shallow section, with arrows showing current direction and very short labels only",
-      "value": "Shows the visual difference between one fixed standing wave and a repeating wave train, including how riverbed shape creates each pattern—contrast that text alone cannot make immediate"
+      "value": "Shows the visual difference between one fixed standing wave and a repeating wave train, including how riverbed shape creates each pattern—contrast that text alone cannot make immediate",
+      "width": 800,
+      "height": 447,
+      "v": "156c883f"
     },
     {
       "id": "eddy-turn-and-ferry-edge",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Two-panel instructional diagram of a paddler in moving water showing correct boat edge while crossing an eddy line and while ferrying across current, torso upright over the hull, current arrows clearly marked, minimal short labels only",
-      "value": "Shows the difference between hull tilt and body lean during eddy-line and ferry moves—precise body-to-boat positioning that text alone cannot convey well"
+      "value": "Shows the difference between hull tilt and body lean during eddy-line and ferry moves—precise body-to-boat positioning that text alone cannot convey well",
+      "width": 800,
+      "height": 447,
+      "v": "13d0a130"
     },
     {
       "id": "universal-river-signals",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Six-panel clean instructional diagram of a paddler demonstrating whitewater river signals for stop, are you OK, help emergency, all clear come ahead, run river left, and run river right, with large readable body positions and paddles, no branding or extra text beyond very short signal names",
-      "value": "Shows the exact arm and paddle positions for the universal river signals, which must be seen to be reproduced accurately"
+      "value": "Shows the exact arm and paddle positions for the universal river signals, which must be seen to be reproduced accurately",
+      "width": 800,
+      "height": 447,
+      "v": "e495e5dd"
     },
     {
       "id": "whitewater-core-maneuvers-sequence",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Instructional sequence diagram showing seven whitewater maneuvers in simple top-down river panels: launch, straight travel, backpaddle, upstream ferry, downstream ferry, eddy turn, and peel-out, with current arrows and clear boat paths, minimal text labels only",
-      "value": "Shows how the core maneuvers differ in boat path, angle, and relationship to current—movement patterns that are difficult to understand from prose alone"
+      "value": "Shows how the core maneuvers differ in boat path, angle, and relationship to current—movement patterns that are difficult to understand from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "08bffb56"
     },
     {
       "id": "whitewater-throw-rope-rescue",
@@ -48,7 +63,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Realistic instructional scene on a riverbank showing a paddler in proper safety clothing throwing a rope bag to a swimmer in moving water while a second backup paddler waits in an eddy, with minimal annotation callouts for throw bag, loose rope end, swimmer body position on back, and shore rescuer stance, no logos or branding",
-      "value": "Shows the rescuer's stance, the throw-bag path, and the swimmer's receiving position in one scene—coordination and spacing that text alone cannot teach clearly"
+      "value": "Shows the rescuer's stance, the throw-bag path, and the swimmer's receiving position in one scene—coordination and spacing that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "3008b0cb"
     },
     {
       "id": "whitewater-pfd-helmet-fit",
@@ -56,7 +74,10 @@
       "style": "annotated-photo",
       "verb_family": "identify",
       "description": "Scout in appropriate whitewater paddling clothing wearing a properly fitted whitewater helmet and life jacket with simple callouts showing snug helmet fit, chin strap position, shoulder adjustment, waist fit, and whistle placement on the life jacket, no visible organization names or logos",
-      "value": "Shows the exact fit points of a helmet and life jacket so a reader can visually judge correct adjustment—fit details that are hard to learn from words alone"
+      "value": "Shows the exact fit points of a helmet and life jacket so a reader can visually judge correct adjustment—fit details that are hard to learn from words alone",
+      "width": 800,
+      "height": 447,
+      "v": "8501f7be"
     }
   ]
 }

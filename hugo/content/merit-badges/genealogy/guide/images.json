@@ -7,41 +7,59 @@
       "file": "req1.md",
       "style": "diagram",
       "description": "Clean educational diagram of a three-generation pedigree chart. One person appears in the starting position, with two parents connected above, and four grandparents connected in the next generation. Use simple boxes, connecting lines, and minimal short labels such as self, parents, and grandparents. White background, crisp black and muted blue lines, highly legible layout, no decorative elements.",
-      "value": "Shows the actual three-generation layout of self, parents, and grandparents with connecting lines — relationship structure that is much easier to understand visually than in text"
+      "value": "Shows the actual three-generation layout of self, parents, and grandparents with connecting lines — relationship structure that is much easier to understand visually than in text",
+      "width": 800,
+      "height": 447,
+      "v": "324ab4c4"
     },
     {
       "id": "family-history-interview-setup",
       "file": "req3.md",
       "description": "Photorealistic scene of a Scout in a clean tan uniform shirt interviewing an older relative at a kitchen table. The Scout has a notebook and pen ready, while old labeled family photographs, a small stack of letters, and a keepsake box are spread out between them to prompt memories. Warm natural light, respectful attentive posture, realistic home setting, no visible brand text.",
-      "value": "Shows how an interview setup uses photos, letters, and note-taking together to prompt stories and preserve details — physical arrangement and interaction that text alone cannot demonstrate"
+      "value": "Shows how an interview setup uses photos, letters, and note-taking together to prompt stories and preserve details — physical arrangement and interaction that text alone cannot demonstrate",
+      "width": 800,
+      "height": 447,
+      "v": "507c7957"
     },
     {
       "id": "original-record-vs-index-comparison",
       "file": "req4cd.md",
       "style": "comparison",
       "description": "Educational split-frame comparison. Left side shows a scanned historical census-style record with old handwriting, lined columns, and several household entries. Right side shows a clean typed index entry summarizing the same household with a few subtle spelling differences and fewer details. Make the contrast obvious: original image contains richer context, while the index is simplified. No logos, no extra branding.",
-      "value": "Shows the visual difference between an original handwritten record and a simplified index entry, including lost context and spelling variation — evidence comparison that requires seeing both formats"
+      "value": "Shows the visual difference between an original handwritten record and a simplified index entry, including lost context and spelling variation — evidence comparison that requires seeing both formats",
+      "width": 800,
+      "height": 447,
+      "v": "fb143690"
     },
     {
       "id": "pedigree-chart-blank-and-filled",
       "file": "req6.md",
       "style": "comparison",
       "description": "Side-by-side educational comparison of the same three-generation pedigree chart. Left panel shows a blank chart with empty boxes and connecting lines. Right panel shows the chart partly filled with names in several boxes while a few boxes remain blank to represent missing ancestors. Clean white background, orderly layout, minimal text, emphasis on how empty spaces reveal research gaps.",
-      "value": "Shows how a pedigree chart changes from blank form to partly completed research tool, with visible gaps that become future research targets — progress and missing information best understood visually"
+      "value": "Shows how a pedigree chart changes from blank form to partly completed research tool, with visible gaps that become future research targets — progress and missing information best understood visually",
+      "width": 800,
+      "height": 447,
+      "v": "d8e7865a"
     },
     {
       "id": "family-group-record-layout",
       "file": "req7.md",
       "style": "diagram",
       "description": "Clean educational family group record worksheet layout. Two parents are grouped at the top with spaces for key dates and places, and several children are listed in birth order below in structured rows. Include simple section labels for parents, children, dates, and places only. Flat overhead worksheet view, white background, crisp lines, no clutter.",
-      "value": "Shows how a family group record organizes one family unit with parents at the top and children listed below in birth order — worksheet structure that is clearer in a visual layout than in prose"
+      "value": "Shows how a family group record organizes one family unit with parents at the top and children listed below in birth order — worksheet structure that is clearer in a visual layout than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "1f31cc64"
     },
     {
       "id": "genealogy-workflow-then-and-now",
       "file": "req8abc.md",
       "style": "comparison",
       "description": "Split-frame comparison of genealogy research across time. Left panel shows an earlier-era researcher at a library microfilm reader with paper notes, folders, and a reel machine. Right panel shows a modern researcher at a computer viewing scanned records and a digital family tree, with organized digital notes nearby. Both scenes feel like serious research work, emphasizing differences in tools while keeping the same research purpose. No visible logos or brand names.",
-      "value": "Shows the contrast between microfilm-and-paper genealogy workflows and modern computer-based research, making the technology shift immediately visible in a way text cannot fully convey"
+      "value": "Shows the contrast between microfilm-and-paper genealogy workflows and modern computer-based research, making the technology shift immediately visible in a way text cannot fully convey",
+      "width": 800,
+      "height": 447,
+      "v": "999dfe3c"
     }
   ]
 }

@@ -17,3 +17,12 @@ enableGitInfo = true
 
 [taxonomies]
   category = 'categories'
+
+[params.imagekit]
+  # Plain default endpoint. A dedicated "mbu" URL-endpoint was tried but
+  # rejected: ImageKit's router treats a leading /mbu/ path segment as an
+  # endpoint switch even when addressed via the default endpoint, which
+  # shadows any real folder also named /mbu/. See docs/adr for the ImageKit
+  # migration decision record.
+  endpoint = 'https://ik.imagekit.io/doulacoop'
+  widths   = [400, 600, 800, 1200, 1600]

@@ -5,92 +5,140 @@
     {
       "id": "coin-cabinet-modern",
       "file": "_index.md",
-      "description": "A diverse group of three young Scouts aged 12-15 sitting around a table examining coins together. They are using magnifying glasses and looking at coin albums and individual coin holders spread across the table. A laptop showing a coin catalog website is open nearby. The setting is a well-lit meeting room. The Scouts wear clean uniforms and are engaged and focused. Natural, candid feel."
+      "description": "A diverse group of three young Scouts aged 12-15 sitting around a table examining coins together. They are using magnifying glasses and looking at coin albums and individual coin holders spread across the table. A laptop showing a coin catalog website is open nearby. The setting is a well-lit meeting room. The Scouts wear clean uniforms and are engaged and focused. Natural, candid feel.",
+      "width": 800,
+      "height": 447,
+      "v": "56d65560"
     },
     {
       "id": "coin-types-variety",
       "file": "_index.md",
-      "description": "A flat-lay photograph of six different coins arranged in a loose circle on a dark navy felt background. The coins include a Lincoln cent, a Buffalo nickel, a Walking Liberty half dollar, a Morgan silver dollar, a small ancient Roman bronze coin, and a colorful modern world coin. Each coin is clearly visible with good detail. Overhead lighting with soft shadows. Clean, editorial style."
+      "description": "A flat-lay photograph of six different coins arranged in a loose circle on a dark navy felt background. The coins include a Lincoln cent, a Buffalo nickel, a Walking Liberty half dollar, a Morgan silver dollar, a small ancient Roman bronze coin, and a colorful modern world coin. Each coin is clearly visible with good detail. Overhead lighting with soft shadows. Clean, editorial style.",
+      "width": 800,
+      "height": 447,
+      "v": "b11b29bf"
     },
     {
       "id": "coin-striking-process",
       "file": "req1.md",
       "style": "diagram",
-      "description": "A clean educational diagram showing six steps of coin production in a horizontal flow. Step 1: a metal coil being fed into a machine. Step 2: a blanking press punching circular blanks from the strip. Step 3: an annealing furnace with heat waves. Step 4: an upsetting mill adding a raised rim to a blank. Step 5: a coining press with upper and lower dies striking a planchet. Step 6: finished coins cascading into a collection bin. Each step is labeled with a number and short description. Arrows connect the steps left to right. Clean white background with blue and gray tones."
+      "description": "A clean educational diagram showing six steps of coin production in a horizontal flow. Step 1: a metal coil being fed into a machine. Step 2: a blanking press punching circular blanks from the strip. Step 3: an annealing furnace with heat waves. Step 4: an upsetting mill adding a raised rim to a blank. Step 5: a coining press with upper and lower dies striking a planchet. Step 6: finished coins cascading into a collection bin. Each step is labeled with a number and short description. Arrows connect the steps left to right. Clean white background with blue and gray tones.",
+      "width": 800,
+      "height": 447,
+      "v": "69475a80"
     },
     {
       "id": "us-mint-facilities-map",
       "file": "req1.md",
       "style": "infographic",
-      "description": "A simplified map of the United States showing the locations of all active U.S. Mint facilities. Philadelphia PA is marked with a P, Denver CO with a D, San Francisco CA with an S, West Point NY with a W, Washington DC labeled as Headquarters, and Fort Knox KY labeled as Bullion Depository. Each location has a small pin icon and its city name. The map uses a clean, minimal style with a light blue background for water, light gray for states, and bold colored markers for each facility. A small legend explains what each facility does."
+      "description": "A simplified map of the United States showing the locations of all active U.S. Mint facilities. Philadelphia PA is marked with a P, Denver CO with a D, San Francisco CA with an S, West Point NY with a W, Washington DC labeled as Headquarters, and Fort Knox KY labeled as Bullion Depository. Each location has a small pin icon and its city name. The map uses a clean, minimal style with a light blue background for water, light gray for states, and bold colored markers for each facility. A small legend explains what each facility does.",
+      "width": 800,
+      "height": 447,
+      "v": "27ea9929"
     },
     {
       "id": "coin-anatomy-labeled",
       "file": "req2.md",
       "style": "diagram",
-      "description": "A large educational diagram showing a quarter from three perspectives. Left: the obverse (front) with labeled callout lines pointing to the portrait of Washington, LIBERTY text, IN GOD WE TRUST motto, date, mint mark, and designer initials JFL. Center: a cross-section cutaway of the coin edge showing the three-layer clad construction with copper core between two copper-nickel outer layers, each layer labeled. Right: the reverse (back) with labeled callouts pointing to the eagle design, E PLURIBUS UNUM, UNITED STATES OF AMERICA, QUARTER DOLLAR denomination, and reeded edge detail. Clean white background, precise technical illustration style."
+      "description": "A large educational diagram showing a quarter from three perspectives. Left: the obverse (front) with labeled callout lines pointing to the portrait of Washington, LIBERTY text, IN GOD WE TRUST motto, date, mint mark, and designer initials JFL. Center: a cross-section cutaway of the coin edge showing the three-layer clad construction with copper core between two copper-nickel outer layers, each layer labeled. Right: the reverse (back) with labeled callouts pointing to the eagle design, E PLURIBUS UNUM, UNITED STATES OF AMERICA, QUARTER DOLLAR denomination, and reeded edge detail. Clean white background, precise technical illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "9aec08c2"
     },
     {
       "id": "coin-album-open",
       "file": "req3.md",
-      "description": "An open coin album lying flat on a wooden desk, showing a page of Lincoln Memorial cents organized by year with printed labels for each slot. About two-thirds of the slots are filled with pennies and one-third are empty, waiting to be filled. A clear plastic slide on the album page is partially lifted to reveal a coin underneath. A few loose coins and a soft cotton cloth sit nearby. Warm overhead lighting, casual collecting setup feel."
+      "description": "An open coin album lying flat on a wooden desk, showing a page of Lincoln Memorial cents organized by year with printed labels for each slot. About two-thirds of the slots are filled with pennies and one-third are empty, waiting to be filled. A clear plastic slide on the album page is partially lifted to reveal a coin underneath. A few loose coins and a soft cotton cloth sit nearby. Warm overhead lighting, casual collecting setup feel.",
+      "width": 800,
+      "height": 447,
+      "v": "2236a2ca"
     },
     {
       "id": "lincoln-cent-reverses",
       "file": "req4a.md",
       "style": "comparison",
-      "description": "A side-by-side comparison of three Lincoln cent reverse designs, each shown as a large detailed close-up. Left panel: Lincoln Memorial reverse (labeled 1959-2008) showing the memorial building with columns. Center panel: one of the 2009 Bicentennial designs showing a log cabin (labeled 2009 - Birth and Early Childhood). Right panel: Union Shield reverse (labeled 2010-present) showing the shield with horizontal bar and vertical stripes. Each panel is labeled with years and design name at the bottom. Clean white background, photographic detail."
+      "description": "A side-by-side comparison of three Lincoln cent reverse designs, each shown as a large detailed close-up. Left panel: Lincoln Memorial reverse (labeled 1959-2008) showing the memorial building with columns. Center panel: one of the 2009 Bicentennial designs showing a log cabin (labeled 2009 - Birth and Early Childhood). Right panel: Union Shield reverse (labeled 2010-present) showing the shield with horizontal bar and vertical stripes. Each panel is labeled with years and design name at the bottom. Clean white background, photographic detail.",
+      "width": 800,
+      "height": 447,
+      "v": "9813fb3e"
     },
     {
       "id": "nickel-westward-journey",
       "file": "req4b.md",
       "style": "comparison",
-      "description": "Four Jefferson nickels arranged in a row showing the 2004-2005 Westward Journey series. From left to right: Peace Medal reverse (2004), Keelboat reverse (2004), American Bison reverse with new forward-facing Jefferson obverse (2005), and Ocean in View reverse (2005). Each coin is shown as a detailed close-up, labeled with year and design name. The two 2004 coins show the classic left-facing Jefferson obverse above their reverses, while the two 2005 coins show the new forward-facing portrait. Clean neutral background."
+      "description": "Four Jefferson nickels arranged in a row showing the 2004-2005 Westward Journey series. From left to right: Peace Medal reverse (2004), Keelboat reverse (2004), American Bison reverse with new forward-facing Jefferson obverse (2005), and Ocean in View reverse (2005). Each coin is shown as a detailed close-up, labeled with year and design name. The two 2004 coins show the classic left-facing Jefferson obverse above their reverses, while the two 2005 coins show the new forward-facing portrait. Clean neutral background.",
+      "width": 800,
+      "height": 447,
+      "v": "4515b183"
     },
     {
       "id": "roosevelt-dime-details",
       "file": "req4c.md",
       "style": "diagram",
-      "description": "An educational diagram of a Roosevelt dime with three separate sections arranged left to right on a clean white background. SECTION 1 (left): A large obverse (front) view of the dime. Below it, a simple legend listing the key features visible on this side: Roosevelt portrait, LIBERTY, IN GOD WE TRUST, date, mint mark, designer initials JS. SECTION 2 (center): A large reverse (back) view of the dime. Below it, a legend listing: torch (center), olive branch (left of torch), oak branch (right of torch), ONE DIME, designer initials JS. SECTION 3 (right): An edge-on cross-section view showing the three-layer clad sandwich construction — a copper core (reddish-brown) between two copper-nickel outer layers (silvery). Each layer is labeled to the side. Keep all text in clean sans-serif font. No arrows or leader lines — use the legend-below-image approach for accuracy."
+      "description": "An educational diagram of a Roosevelt dime with three separate sections arranged left to right on a clean white background. SECTION 1 (left): A large obverse (front) view of the dime. Below it, a simple legend listing the key features visible on this side: Roosevelt portrait, LIBERTY, IN GOD WE TRUST, date, mint mark, designer initials JS. SECTION 2 (center): A large reverse (back) view of the dime. Below it, a legend listing: torch (center), olive branch (left of torch), oak branch (right of torch), ONE DIME, designer initials JS. SECTION 3 (right): An edge-on cross-section view showing the three-layer clad sandwich construction — a copper core (reddish-brown) between two copper-nickel outer layers (silvery). Each layer is labeled to the side. Keep all text in clean sans-serif font. No arrows or leader lines — use the legend-below-image approach for accuracy.",
+      "width": 800,
+      "height": 447,
+      "v": "fd35a7d7"
     },
     {
       "id": "quarter-programs-timeline",
       "file": "req4d.md",
       "style": "infographic",
-      "description": "A horizontal timeline infographic showing the evolution of the quarter dollar. Four sections from left to right: (1) Standard Washington Quarter 1965-1998 with a simple eagle reverse icon, (2) 50 State Quarters 1999-2009 with a sample state outline icon, (3) America the Beautiful 2010-2021 with a mountain/nature icon, (4) American Women Quarters 2022-2025 with a portrait silhouette icon. Each section is color-coded and labeled with program name, year range, and a brief one-line description. An arrow runs along the bottom connecting all four eras. Clean modern design with blue, green, gold, and purple color scheme."
+      "description": "A horizontal timeline infographic showing the evolution of the quarter dollar. Four sections from left to right: (1) Standard Washington Quarter 1965-1998 with a simple eagle reverse icon, (2) 50 State Quarters 1999-2009 with a sample state outline icon, (3) America the Beautiful 2010-2021 with a mountain/nature icon, (4) American Women Quarters 2022-2025 with a portrait silhouette icon. Each section is color-coded and labeled with program name, year range, and a brief one-line description. An arrow runs along the bottom connecting all four eras. Clean modern design with blue, green, gold, and purple color scheme.",
+      "width": 800,
+      "height": 447,
+      "v": "332888a6"
     },
     {
       "id": "kennedy-half-dollar-detail",
       "file": "req4e.md",
       "style": "diagram",
-      "description": "An educational diagram of a Kennedy half dollar with two large coin views on a clean white background. LEFT SECTION: A large obverse (front) view of the half dollar. Below it, a simple legend listing the features visible on this side: Kennedy portrait facing left, GR initials (Gilroy Roberts) at the truncation of Kennedy's neck, LIBERTY across the top, IN GOD WE TRUST along the bottom, date and mint mark below portrait. RIGHT SECTION: A large reverse (back) view. Below it, a legend listing: heraldic eagle with wings spread, olive branch in eagle's right talon, bundle of arrows in left talon, FG initials (Frank Gasparro) between tail feathers and left leg, ring of 50 stars surrounding the eagle, HALF DOLLAR denomination. A small edge-on cross-section at the bottom shows the clad layers. Keep all text in clean sans-serif font. No arrows or leader lines — use the legend-below-image approach for accuracy."
+      "description": "An educational diagram of a Kennedy half dollar with two large coin views on a clean white background. LEFT SECTION: A large obverse (front) view of the half dollar. Below it, a simple legend listing the features visible on this side: Kennedy portrait facing left, GR initials (Gilroy Roberts) at the truncation of Kennedy's neck, LIBERTY across the top, IN GOD WE TRUST along the bottom, date and mint mark below portrait. RIGHT SECTION: A large reverse (back) view. Below it, a legend listing: heraldic eagle with wings spread, olive branch in eagle's right talon, bundle of arrows in left talon, FG initials (Frank Gasparro) between tail feathers and left leg, ring of 50 stars surrounding the eagle, HALF DOLLAR denomination. A small edge-on cross-section at the bottom shows the clad layers. Keep all text in clean sans-serif font. No arrows or leader lines — use the legend-below-image approach for accuracy.",
+      "width": 800,
+      "height": 447,
+      "v": "23fffdb4"
     },
     {
       "id": "dollar-coins-three-series",
       "file": "req4f.md",
       "style": "comparison",
-      "description": "Three U.S. dollar coins shown side by side as large detailed photographs. Left: Susan B. Anthony dollar (silvery, showing the eleven-sided inner border and Anthony's portrait, labeled SBA 1979-1981, 1999). Center: Sacagawea golden dollar (distinctive gold color, showing Sacagawea carrying her infant son, labeled Sacagawea 2000-2008). Right: a Presidential dollar (golden, showing a president's portrait, labeled Presidential 2007-2016, 2020). Each coin shows both obverse detail and a small edge detail. The color difference between the silver-toned SBA and the golden Sacagawea/Presidential dollars is clearly visible."
+      "description": "Three U.S. dollar coins shown side by side as large detailed photographs. Left: Susan B. Anthony dollar (silvery, showing the eleven-sided inner border and Anthony's portrait, labeled SBA 1979-1981, 1999). Center: Sacagawea golden dollar (distinctive gold color, showing Sacagawea carrying her infant son, labeled Sacagawea 2000-2008). Right: a Presidential dollar (golden, showing a president's portrait, labeled Presidential 2007-2016, 2020). Each coin shows both obverse detail and a small edge detail. The color difference between the silver-toned SBA and the golden Sacagawea/Presidential dollars is clearly visible.",
+      "width": 800,
+      "height": 447,
+      "v": "b9040335"
     },
     {
       "id": "bicentennial-coins-trio",
       "file": "req5.md",
-      "description": "Three U.S. Bicentennial coins arranged in a row on a dark background, each showing its special reverse design. Left: the quarter with Colonial Drummer and 13 stars. Center: the half dollar with Independence Hall. Right: the large Eisenhower dollar with the Liberty Bell superimposed on the Moon. All three coins clearly show the dual date 1776-1976. The coins increase in size from left to right, emphasizing the scale difference. Warm, dramatic lighting highlighting the metallic surfaces."
+      "description": "Three U.S. Bicentennial coins arranged in a row on a dark background, each showing its special reverse design. Left: the quarter with Colonial Drummer and 13 stars. Center: the half dollar with Independence Hall. Right: the large Eisenhower dollar with the Liberty Bell superimposed on the Moon. All three coins clearly show the dual date 1776-1976. The coins increase in size from left to right, emphasizing the scale difference. Warm, dramatic lighting highlighting the metallic surfaces.",
+      "width": 800,
+      "height": 447,
+      "v": "ab90db7b"
     },
     {
       "id": "us-currency-portraits",
       "file": "req6.md",
       "style": "infographic",
-      "description": "An educational infographic showing all seven current U.S. paper currency denominations arranged in ascending order from left to right: $1 Washington, $2 Jefferson, $5 Lincoln, $10 Hamilton, $20 Jackson, $50 Grant, $100 Franklin. Each denomination is represented by a simplified rectangle showing the portrait side with the person's name and denomination below. The bills are slightly overlapping in a fan arrangement. A clean, modern design with green tones matching U.S. currency colors. Each portrait is a simplified but recognizable illustration of the historical figure."
+      "description": "An educational infographic showing all seven current U.S. paper currency denominations arranged in ascending order from left to right: $1 Washington, $2 Jefferson, $5 Lincoln, $10 Hamilton, $20 Jackson, $50 Grant, $100 Franklin. Each denomination is represented by a simplified rectangle showing the portrait side with the person's name and denomination below. The bills are slightly overlapping in a fan arrangement. A clean, modern design with green tones matching U.S. currency colors. Each portrait is a simplified but recognizable illustration of the historical figure.",
+      "width": 800,
+      "height": 447,
+      "v": "ee8e2ebf"
     },
     {
       "id": "coin-show-floor",
       "file": "req7.md",
-      "description": "A coin show floor scene with dealers at tables displaying coins under glass cases. Visitors are diverse in age, gender, and ethnicity — include men and women, teenagers and older adults, and people of different racial and cultural backgrounds. Some examine coins with magnifying glasses. Display boards show coin albums and certification service banners. The atmosphere is educational and welcoming, with good lighting and organized dealer tables. A young Black female Scout in a clean uniform is visible among the visitors, looking at coins with interest alongside an older Asian male dealer showing her a coin. Wide-angle perspective showing the scale and energy of the event."
+      "description": "A coin show floor scene with dealers at tables displaying coins under glass cases. Visitors are diverse in age, gender, and ethnicity — include men and women, teenagers and older adults, and people of different racial and cultural backgrounds. Some examine coins with magnifying glasses. Display boards show coin albums and certification service banners. The atmosphere is educational and welcoming, with good lighting and organized dealer tables. A young Black female Scout in a clean uniform is visible among the visitors, looking at coins with interest alongside an older Asian male dealer showing her a coin. Wide-angle perspective showing the scale and energy of the event.",
+      "width": 800,
+      "height": 447,
+      "v": "159abe20"
     },
     {
       "id": "coin-collection-display",
       "file": "extended-learning.md",
-      "description": "A well-organized coin collection displayed on a desk surface. Coins are arranged by type in labeled individual holders and a partially open album. A magnifying glass with 10x power, a pair of white cotton gloves, and a coin grading reference book sit nearby. A desk lamp provides bright, even illumination. The setup suggests a serious but accessible collecting workspace — organized, clean, and inviting. Overhead angle showing the full arrangement."
+      "description": "A well-organized coin collection displayed on a desk surface. Coins are arranged by type in labeled individual holders and a partially open album. A magnifying glass with 10x power, a pair of white cotton gloves, and a coin grading reference book sit nearby. A desk lamp provides bright, even illumination. The setup suggests a serious but accessible collecting workspace — organized, clean, and inviting. Overhead angle showing the full arrangement.",
+      "width": 800,
+      "height": 447,
+      "v": "67266919"
     }
   ]
 }

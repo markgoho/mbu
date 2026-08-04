@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Educational diagram of an Earth-observation satellite above Earth with four simple visual callouts showing weather tracking, crop monitoring, wildfire detection, and ocean observation, clean orbital view, minimal readable text, horizontal labels only, no branding or logos",
-      "value": "Shows one satellite gathering several kinds of Earth data at once, making the link between space hardware and practical Earth benefits visible in a way text alone cannot"
+      "value": "Shows one satellite gathering several kinds of Earth data at once, making the link between space hardware and practical Earth benefits visible in a way text alone cannot",
+      "width": 800,
+      "height": 447,
+      "v": "a2ecfa54"
     },
     {
       "id": "space-pioneer-card-layout",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Clean two-sided collector card layout diagram, front side with portrait area, name line, role line, and mission icon area, back side with clearly separated sections for key achievement, mission or program, why it mattered, and memorable fact, simple arrows showing front and back, minimal horizontal labels only, no branding",
-      "value": "Shows the spatial layout of an effective collector card so the Scout can see how to organize the front and back more clearly than text instructions alone"
+      "value": "Shows the spatial layout of an effective collector card so the Scout can see how to organize the front and back more clearly than text instructions alone",
+      "width": 800,
+      "height": 447,
+      "v": "e43fc058"
     },
     {
       "id": "model-rocket-fin-alignment",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Instructional diagram of a model rocket viewed from side and rear angles, fins highlighted with straight guide lines showing correct alignment, small inset showing a crooked fin as incorrect, minimal horizontal labels only, clear educational style, no branding",
-      "value": "Shows how properly aligned fins should look from multiple angles, including a visible wrong example, which is hard to teach precisely with words alone"
+      "value": "Shows how properly aligned fins should look from multiple angles, including a visible wrong example, which is hard to teach precisely with words alone",
+      "width": 800,
+      "height": 447,
+      "v": "aaaecfc6"
     },
     {
       "id": "satellite-image-transmission-flow",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simple flow diagram showing a spacecraft camera imaging Earth or a planet, digital data being sent by radio signal to a dish antenna on Earth, and computers reconstructing the image on monitors, three-stage left-to-right layout, short horizontal labels only, no branding",
-      "value": "Shows the full image-making pipeline from sensor to transmission to processed picture, making an invisible data flow understandable in one glance"
+      "value": "Shows the full image-making pipeline from sensor to transmission to processed picture, making an invisible data flow understandable in one glance",
+      "width": 800,
+      "height": 447,
+      "v": "0af5460b"
     },
     {
       "id": "planetary-mission-presentation-board",
@@ -40,7 +52,10 @@
       "style": "annotated-photo",
       "verb_family": "create",
       "description": "Realistic tabletop view of a Scout-made mission presentation board or slideshow planning sheet with sections for destination, spacecraft, discoveries, and current status, tidy printed photos and captions, a few large callout labels pointing to the sections, clean non-muddy Scout uniform sleeve visible nearby but no text on clothing, no branding",
-      "value": "Shows how to turn scattered mission facts and images into a clear audience-facing layout, something text alone cannot demonstrate as effectively"
+      "value": "Shows how to turn scattered mission facts and images into a clear audience-facing layout, something text alone cannot demonstrate as effectively",
+      "width": 800,
+      "height": 447,
+      "v": "44f78064"
     },
     {
       "id": "sample-return-mission-diagram",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Mission sequence diagram for a robotic sample-return mission with seven clear stages in left-to-right order: Earth launch, cruise, arrival at target world, surface sampling, sealed sample storage, return flight, and Earth recovery capsule landing, simple spacecraft icons and arrows, minimal horizontal labels only, no branding",
-      "value": "Shows the sequential logic of a sample-return mission from launch to recovery, helping the reader visualize the full chain of events better than paragraph text alone"
+      "value": "Shows the sequential logic of a sample-return mission from launch to recovery, helping the reader visualize the full chain of events better than paragraph text alone",
+      "width": 800,
+      "height": 447,
+      "v": "86f0f154"
     },
     {
       "id": "crewed-orbital-vehicle-sections",
@@ -56,7 +74,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean comparative cutaway diagram showing a crew capsule and a shuttle-style orbital vehicle side by side, each with major systems highlighted: crew cabin, docking system, power source, thermal protection, and life-support area, minimal horizontal labels only, no logos or branding",
-      "value": "Shows how two different crewed orbital vehicles arrange similar systems in different shapes, a structural comparison that is much easier to understand visually than through text alone"
+      "value": "Shows how two different crewed orbital vehicles arrange similar systems in different shapes, a structural comparison that is much easier to understand visually than through text alone",
+      "width": 800,
+      "height": 447,
+      "v": "448f9929"
     },
     {
       "id": "lunar-or-mars-base-cutaway",
@@ -64,7 +85,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Cutaway diagram of a future off-world base on a Moon-like or Mars-like surface with labeled habitat modules, airlock, power system, greenhouse, rover bay, and robotic construction equipment outside, underground or shielded sections visible, minimal horizontal labels only, no branding",
-      "value": "Shows how the major systems of a space base fit together spatially, which is essential for understanding habitat planning in a way text alone cannot provide"
+      "value": "Shows how the major systems of a space base fit together spatially, which is essential for understanding habitat planning in a way text alone cannot provide",
+      "width": 800,
+      "height": 447,
+      "v": "764b980c"
     }
   ]
 }

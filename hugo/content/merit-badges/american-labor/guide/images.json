@@ -5,77 +5,119 @@
     {
       "id": "workers-collage",
       "file": "_index.md",
-      "description": "A diverse group of American workers in different professions standing together confidently. Includes a construction worker in a hard hat, a healthcare worker in scrubs, a teacher holding books, and a farmer in work clothes. They stand in a row against a bright sky background, looking proud and unified. Warm, realistic illustration style."
+      "description": "A diverse group of American workers in different professions standing together confidently. Includes a construction worker in a hard hat, a healthcare worker in scrubs, a teacher holding books, and a farmer in work clothes. They stand in a row against a bright sky background, looking proud and unified. Warm, realistic illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "16265247"
     },
     {
       "id": "labor-history-march",
       "file": "_index.md",
-      "description": "A historical scene of workers marching with banners during an early 1900s labor parade on a wide city street. Workers wear period-appropriate clothing — caps, vests, rolled-up sleeves. The banners read 'Fair Wages' and '8-Hour Day.' Buildings line both sides of the street. Warm, sepia-toned illustrated style suggesting a vintage postcard."
+      "description": "A historical scene of workers marching with banners during an early 1900s labor parade on a wide city street. Workers wear period-appropriate clothing — caps, vests, rolled-up sleeves. The banners read 'Fair Wages' and '8-Hour Day.' Buildings line both sides of the street. Warm, sepia-toned illustrated style suggesting a vintage postcard.",
+      "width": 800,
+      "height": 447,
+      "v": "7ccb36f6"
     },
     {
       "id": "modern-workplace-variety",
       "file": "_index.md",
-      "description": "A split-panel illustration showing four different workplaces: top-left shows a construction site with steel beams and workers in hard hats, top-right shows a hospital hallway with a nurse, bottom-left shows a green farm field with workers harvesting crops, bottom-right shows a modern open-plan office with people at computers. Clean, colorful illustration style."
+      "description": "A split-panel illustration showing four different workplaces: top-left shows a construction site with steel beams and workers in hard hats, top-right shows a hospital hallway with a nurse, bottom-left shows a green farm field with workers harvesting crops, bottom-right shows a modern open-plan office with people at computers. Clean, colorful illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "2d8c251a"
     },
     {
       "id": "worker-concerns-brainstorm",
       "file": "req1.md",
-      "description": "A Scout in a clean uniform sitting at a desk with an open notebook and a laptop, researching worker concerns. Behind them on the wall are colorful sticky notes with words like 'Wages,' 'Safety,' 'Benefits,' 'Hours,' and 'Job Security.' The Scout is writing thoughtfully. Bright, modern illustration style with warm lighting."
+      "description": "A Scout in a clean uniform sitting at a desk with an open notebook and a laptop, researching worker concerns. Behind them on the wall are colorful sticky notes with words like 'Wages,' 'Safety,' 'Benefits,' 'Hours,' and 'Job Security.' The Scout is writing thoughtfully. Bright, modern illustration style with warm lighting.",
+      "width": 800,
+      "height": 447,
+      "v": "0e194f57"
     },
     {
       "id": "scout-visiting-union-hall",
       "file": "req2.md",
-      "description": "A Scout in a clean uniform shaking hands with a friendly union representative in an office setting. The office has a meeting table, labor posters on the walls, and a bulletin board with union notices. Both figures are smiling and engaged. Warm, welcoming illustration style."
+      "description": "A Scout in a clean uniform shaking hands with a friendly union representative in an office setting. The office has a meeting table, labor posters on the walls, and a bulletin board with union notices. Both figures are smiling and engaged. Warm, welcoming illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "f61b7526"
     },
     {
       "id": "collective-bargaining-table",
       "file": "req3.md",
-      "description": "An illustrated scene of a collective bargaining session. Union representatives sit on one side of a long conference table and management representatives sit on the other. Documents, folders, and coffee cups are on the table. Both sides are engaged in discussion, some gesturing, some taking notes. Professional, neutral-toned illustration."
+      "description": "An illustrated scene of a collective bargaining session. Union representatives sit on one side of a long conference table and management representatives sit on the other. Documents, folders, and coffee cups are on the table. Both sides are engaged in discussion, some gesturing, some taking notes. Professional, neutral-toned illustration.",
+      "width": 800,
+      "height": 447,
+      "v": "7220355c"
     },
     {
       "id": "mediation-session",
       "file": "req3.md",
-      "description": "A mediator sitting at a small round table between a union representative on one side and a management representative on the other. The mediator is gesturing with open palms in a calming way. All three people are professionally dressed and engaged in thoughtful discussion. Clean, professional illustration style."
+      "description": "A mediator sitting at a small round table between a union representative on one side and a management representative on the other. The mediator is gesturing with open palms in a calming way. All three people are professionally dressed and engaged in thoughtful discussion. Clean, professional illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "f1e67c83"
     },
     {
       "id": "adversarial-vs-cooperative",
       "file": "req4.md",
       "style": "comparison",
-      "description": "A split illustration divided down the middle. On the left (adversarial): two groups sit across from each other at a table with arms crossed and tense postures, a clear dividing line between them. On the right (cooperative): both groups sit together on the same side of a curved table, leaning in and collaborating over shared documents, with smiles and open body language. Clean, contrasting illustration."
+      "description": "A split illustration divided down the middle. On the left (adversarial): two groups sit across from each other at a table with arms crossed and tense postures, a clear dividing line between them. On the right (cooperative): both groups sit together on the same side of a curved table, leaning in and collaborating over shared documents, with smiles and open body language. Clean, contrasting illustration.",
+      "width": 800,
+      "height": 447,
+      "v": "e15f4ef9"
     },
     {
       "id": "labor-history-timeline",
       "file": "req5.md",
       "style": "infographic",
-      "description": "An illustrated horizontal timeline stretching across the image, showing key labor milestones from the 1770s to the present. Small icons mark each era: colonial craftsmen, factory smokestacks, picket signs, a gavel for labor laws, and modern workers at computers. The timeline flows left to right with dates marked below. Educational, infographic style with warm colors."
+      "description": "An illustrated horizontal timeline stretching across the image, showing key labor milestones from the 1770s to the present. Small icons mark each era: colonial craftsmen, factory smokestacks, picket signs, a gavel for labor laws, and modern workers at computers. The timeline flows left to right with dates marked below. Educational, infographic style with warm colors.",
+      "width": 800,
+      "height": 447,
+      "v": "81d4a961"
     },
     {
       "id": "global-supply-chain",
       "file": "req6.md",
       "style": "infographic",
-      "description": "An illustrated world map showing global trade and supply chain connections. Dotted lines and arrows connect continents, with small icons along the routes: factories in Asia, cargo ships on the ocean, trucks in North America, and retail stores. Workers of different nationalities are shown at various points along the chain. Clean, colorful infographic illustration style."
+      "description": "An illustrated world map showing global trade and supply chain connections. Dotted lines and arrows connect continents, with small icons along the routes: factories in Asia, cargo ships on the ocean, trucks in North America, and retail stores. Workers of different nationalities are shown at various points along the chain. Clean, colorful infographic illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "7d5af59b"
     },
     {
       "id": "debate-podium",
       "file": "req7.md",
-      "description": "A Scout in a clean uniform standing at a simple wooden podium holding note cards, as if preparing to present arguments. On the left side of the podium is a small sign reading 'Management' and on the right a sign reading 'Labor.' The Scout looks confident and prepared. Bright, encouraging illustration style."
+      "description": "A Scout in a clean uniform standing at a simple wooden podium holding note cards, as if preparing to present arguments. On the left side of the podium is a small sign reading 'Management' and on the right a sign reading 'Labor.' The Scout looks confident and prepared. Bright, encouraging illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "476751ab"
     },
     {
       "id": "stakeholder-web",
       "file": "req8.md",
       "style": "infographic",
-      "description": "An illustrated diagram showing a business building at the center with lines radiating outward to different stakeholder groups arranged in a circle: business owners in suits, stockholders with charts, customers shopping, employees at work, a union representative, community members, and a public official at a desk. Each group is depicted with a small icon and label. Clean, infographic-style illustration."
+      "description": "An illustrated diagram showing a business building at the center with lines radiating outward to different stakeholder groups arranged in a circle: business owners in suits, stockholders with charts, customers shopping, employees at work, a union representative, community members, and a public official at a desk. Each group is depicted with a small icon and label. Clean, infographic-style illustration.",
+      "width": 800,
+      "height": 447,
+      "v": "178b60ee"
     },
     {
       "id": "career-paths-labor",
       "file": "req9.md",
       "style": "infographic",
-      "description": "An illustrated career map showing different labor relations career paths branching out from a central crossroads. Each branch leads to a different career with a small icon: a mediator at a table, an HR manager at a desk, a union organizer speaking to a crowd, a lawyer with a briefcase, and a government official. The paths are drawn like a road map with clear labels. Warm, inviting illustration style."
+      "description": "An illustrated career map showing different labor relations career paths branching out from a central crossroads. Each branch leads to a different career with a small icon: a mediator at a table, an HR manager at a desk, a union organizer speaking to a crowd, a lawyer with a briefcase, and a government official. The paths are drawn like a road map with clear labels. Warm, inviting illustration style.",
+      "width": 800,
+      "height": 447,
+      "v": "2c8b5370"
     },
     {
       "id": "modern-worker-organizing",
       "file": "extended-learning.md",
-      "description": "A diverse group of young workers gathered at a community meeting. Some hold signs about fair wages, others are looking at laptops and phones. The setting is a community center or meeting hall with folding chairs. The mood is energetic and determined but positive. Modern, vibrant illustration style representing contemporary labor organizing."
+      "description": "A diverse group of young workers gathered at a community meeting. Some hold signs about fair wages, others are looking at laptops and phones. The setting is a community center or meeting hall with folding chairs. The mood is energetic and determined but positive. Modern, vibrant illustration style representing contemporary labor organizing.",
+      "width": 800,
+      "height": 447,
+      "v": "3e64648c"
     }
   ]
 }

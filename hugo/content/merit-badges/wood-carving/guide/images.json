@@ -8,7 +8,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Close-up instructional photo of clean splinter removal from a fingertip using fine-point tweezers, grasping the splinter close to the skin and pulling in the same direction the splinter entered, with simple callouts for tweezer tip, pull direction arrow, and hand position, neutral background, no branding or visible text beyond short instructional labels",
-      "value": "Shows the exact tweezer position, grip near the skin, and pull direction that text alone cannot teach clearly"
+      "value": "Shows the exact tweezer position, grip near the skin, and pull direction that text alone cannot teach clearly",
+      "width": 800,
+      "height": 447,
+      "v": "e578cd27"
     },
     {
       "id": "sharpening-knife-on-stone",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Clean educational diagram of a carving knife held at a steady bevel angle on a flat sharpening stone, side view with one horizontal arrow showing stroke direction and brief labels for blade bevel, sharpening stone, and steady angle, uncluttered workshop-style background, no branding",
-      "value": "Shows the bevel angle and stroke direction relationship that text alone cannot convey precisely"
+      "value": "Shows the bevel angle and stroke direction relationship that text alone cannot convey precisely",
+      "width": 800,
+      "height": 447,
+      "v": "070e91c1"
     },
     {
       "id": "carving-v-cut-sequence",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Three-panel educational diagram of a V-cut in wood, showing first angled knife cut, second angled knife cut, and finished V-shaped groove, each panel with simple horizontal labels and clean wood cross-section view, minimal text, no branding",
-      "value": "Shows how two separate angled cuts meet to create one clean groove, a sequence that text alone cannot visualize well"
+      "value": "Shows how two separate angled cuts meet to create one clean groove, a sequence that text alone cannot visualize well",
+      "width": 800,
+      "height": 447,
+      "v": "a8ca4e33"
     },
     {
       "id": "in-the-round-progress-sequence",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "create",
       "description": "Four-panel progress diagram of a simple in-the-round wood carving project such as a neckerchief slide or small figure, moving from rectangular wood blank to rough shape, refined form, and finished rounded carving, consistent viewpoint, clean educational style, minimal labels, no branding",
-      "value": "Shows how an in-the-round project changes shape across stages, a visual progression that text alone cannot communicate clearly"
+      "value": "Shows how an in-the-round project changes shape across stages, a visual progression that text alone cannot communicate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "47fa6f20"
     },
     {
       "id": "chip-carving-triangle-sequence",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "show",
       "description": "Three-step educational diagram of chip carving a single triangle from a flat wood board, showing first cut, second cut, and third cut releasing the triangular chip, top-down view with simple arrows and minimal labels, clean wood surface, no branding",
-      "value": "Shows the order and direction of the three cuts that release a triangular chip, which text alone cannot make immediately clear"
+      "value": "Shows the order and direction of the three cuts that release a triangular chip, which text alone cannot make immediately clear",
+      "width": 800,
+      "height": 447,
+      "v": "d382bb09"
     }
   ]
 }

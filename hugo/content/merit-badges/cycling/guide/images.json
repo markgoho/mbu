@@ -5,106 +5,166 @@
     {
       "id": "scout-bike-trailhead",
       "file": "_index.md",
-      "description": "Illustration of a Scout standing with a bicycle at a trailhead, wearing a properly fitted helmet, backpack, and bright jersey, looking excited to start a ride with a trail stretching into the distance"
+      "description": "Illustration of a Scout standing with a bicycle at a trailhead, wearing a properly fitted helmet, backpack, and bright jersey, looking excited to start a ride with a trail stretching into the distance",
+      "width": 800,
+      "height": 447,
+      "v": "1315bcfb"
     },
     {
       "id": "mountain-bike-singletrack",
       "file": "_index.md",
-      "description": "A Scout riding a mountain bike on a forest singletrack trail with trees overhead creating dappled sunlight, wearing helmet and gloves, leaning into a gentle turn"
+      "description": "A Scout riding a mountain bike on a forest singletrack trail with trees overhead creating dappled sunlight, wearing helmet and gloves, leaning into a gentle turn",
+      "width": 800,
+      "height": 447,
+      "v": "9c43b12e"
     },
     {
       "id": "bike-types-lineup",
       "file": "_index.md",
-      "description": "Several types of bicycles lined up side by side on a clean surface: a road bike, mountain bike, gravel bike, BMX bike, and a commuter bike with fenders and a basket, showing the variety of cycling"
+      "description": "Several types of bicycles lined up side by side on a clean surface: a road bike, mountain bike, gravel bike, BMX bike, and a commuter bike with fenders and a basket, showing the variety of cycling",
+      "width": 800,
+      "height": 447,
+      "v": "656a4330"
     },
     {
       "id": "cyclist-scanning-road",
       "file": "req1a.md",
-      "description": "A Scout on a bicycle scanning the road ahead while riding, hands positioned near the brake levers, wearing a bright yellow jersey and helmet, on a suburban street"
+      "description": "A Scout on a bicycle scanning the road ahead while riding, hands positioned near the brake levers, wearing a bright yellow jersey and helmet, on a suburban street",
+      "width": 800,
+      "height": 447,
+      "v": "9a8e4e3d"
     },
     {
       "id": "intersection-awareness",
       "file": "req1a.md",
       "style": "diagram",
-      "description": "Bird's-eye view illustration of a cyclist approaching an intersection, showing sight lines and potential hazard zones with turning cars, crosswalks, and proper lane positioning"
+      "description": "Bird's-eye view illustration of a cyclist approaching an intersection, showing sight lines and potential hazard zones with turning cars, crosswalks, and proper lane positioning",
+      "width": 800,
+      "height": 447,
+      "v": "9098d3f5"
     },
     {
       "id": "cycling-first-aid-kit",
       "file": "req1b.md",
-      "description": "An open compact first-aid kit sitting on a park bench next to a bicycle wheel, showing bandages, nitrile gloves, antiseptic wipes, moleskin, and gauze pads neatly organized"
+      "description": "An open compact first-aid kit sitting on a park bench next to a bicycle wheel, showing bandages, nitrile gloves, antiseptic wipes, moleskin, and gauze pads neatly organized",
+      "width": 800,
+      "height": 447,
+      "v": "759b06ba"
     },
     {
       "id": "trail-hazard-plants",
       "file": "req1b.md",
       "style": "illustrated",
-      "description": "An illustrated field guide showing poison ivy, poison oak, and poison sumac leaves side by side with labels, set against a natural forest background"
+      "description": "An illustrated field guide showing poison ivy, poison oak, and poison sumac leaves side by side with labels, set against a natural forest background",
+      "width": 800,
+      "height": 447,
+      "v": "65883c1d"
     },
     {
       "id": "cyclist-lane-position",
       "file": "req2.md",
       "style": "diagram",
-      "description": "Diagram showing a cyclist riding in the correct lane position on a two-lane road, with arrows indicating traffic flow and a safe 4-foot gap from parked cars on the right"
+      "description": "Diagram showing a cyclist riding in the correct lane position on a two-lane road, with arrows indicating traffic flow and a safe 4-foot gap from parked cars on the right",
+      "width": 800,
+      "height": 447,
+      "v": "05adc51d"
     },
     {
       "id": "hand-signals-diagram",
       "file": "req2.md",
       "style": "illustrated",
-      "description": "Clear illustration showing the three standard bicycle hand signals side by side: left turn (left arm straight out), right turn (right arm straight out), and stop (left arm down with palm back)"
+      "description": "Clear illustration showing the three standard bicycle hand signals side by side: left turn (left arm straight out), right turn (right arm straight out), and stop (left arm down with palm back)",
+      "width": 800,
+      "height": 447,
+      "v": "a16f9245"
     },
     {
       "id": "helmet-fit-check",
       "file": "req3.md",
-      "description": "Close-up of a Scout demonstrating the 2-V-1 helmet fitting method, showing the helmet sitting two fingers above the eyebrow, straps forming a V below the ear, and chin strap snug"
+      "description": "Close-up of a Scout demonstrating the 2-V-1 helmet fitting method, showing the helmet sitting two fingers above the eyebrow, straps forming a V below the ear, and chin strap snug",
+      "width": 800,
+      "height": 447,
+      "v": "6723911e"
     },
     {
       "id": "cyclist-gear-layout",
       "file": "req3.md",
-      "description": "Flat-lay photograph of essential cycling gear arranged neatly on a wooden surface: helmet, padded gloves, water bottle, bike multi-tool, spare tube, mini pump, and a reflective vest"
+      "description": "Flat-lay photograph of essential cycling gear arranged neatly on a wooden surface: helmet, padded gloves, water bottle, bike multi-tool, spare tube, mini pump, and a reflective vest",
+      "width": 800,
+      "height": 447,
+      "v": "4b28c5e4"
     },
     {
       "id": "abc-quick-check",
       "file": "req4.md",
-      "description": "A Scout crouched next to a bicycle performing a pre-ride safety check, squeezing the front tire to check air pressure, with the bike on a kickstand in a driveway"
+      "description": "A Scout crouched next to a bicycle performing a pre-ride safety check, squeezing the front tire to check air pressure, with the bike on a kickstand in a driveway",
+      "width": 800,
+      "height": 447,
+      "v": "b013ea8b"
     },
     {
       "id": "bike-chain-lube",
       "file": "req4.md",
-      "description": "Close-up of a Scout applying chain lubricant to a bicycle chain while slowly turning the pedals backward, with the bike mounted on a simple repair stand"
+      "description": "Close-up of a Scout applying chain lubricant to a bicycle chain while slowly turning the pedals backward, with the bike mounted on a simple repair stand",
+      "width": 800,
+      "height": 447,
+      "v": "4547c34b"
     },
     {
       "id": "emergency-stop-technique",
       "file": "req5.md",
-      "description": "Side view of a Scout demonstrating an emergency stop on a bicycle in a parking lot, weight shifted far back behind the saddle, both brake levers firmly engaged"
+      "description": "Side view of a Scout demonstrating an emergency stop on a bicycle in a parking lot, weight shifted far back behind the saddle, both brake levers firmly engaged",
+      "width": 800,
+      "height": 447,
+      "v": "d9203790"
     },
     {
       "id": "scout-hand-signal-turn",
       "file": "req5.md",
-      "description": "A Scout riding a bicycle on a quiet residential street extending their left arm straight out to signal a left turn, wearing a helmet and bright clothing"
+      "description": "A Scout riding a bicycle on a quiet residential street extending their left arm straight out to signal a left turn, wearing a helmet and bright clothing",
+      "width": 800,
+      "height": 447,
+      "v": "70770ff6"
     },
     {
       "id": "road-safety-skills",
       "file": "req6a.md",
-      "description": "A Scout cycling on a suburban street demonstrating proper lane position, riding past a row of parked cars with a safe 4-foot clearance, wearing helmet and reflective vest"
+      "description": "A Scout cycling on a suburban street demonstrating proper lane position, riding past a row of parked cars with a safe 4-foot clearance, wearing helmet and reflective vest",
+      "width": 800,
+      "height": 447,
+      "v": "3485c20c"
     },
     {
       "id": "road-cycling-scenic",
       "file": "req6a.md",
-      "description": "Two Scouts riding road bikes side by side along a scenic rural road with rolling green hills and a clear blue sky, wearing helmets and bright jerseys"
+      "description": "Two Scouts riding road bikes side by side along a scenic rural road with rolling green hills and a clear blue sky, wearing helmets and bright jerseys",
+      "width": 800,
+      "height": 447,
+      "v": "937a6e0f"
     },
     {
       "id": "mtb-ready-position",
       "file": "req6b.md",
-      "description": "A Scout on a mountain bike demonstrating the ready (attack) position on a wide dirt trail, knees bent, elbows out, eyes looking forward, wearing helmet and protective gear"
+      "description": "A Scout on a mountain bike demonstrating the ready (attack) position on a wide dirt trail, knees bent, elbows out, eyes looking forward, wearing helmet and protective gear",
+      "width": 800,
+      "height": 447,
+      "v": "f27eaa51"
     },
     {
       "id": "trail-obstacle-technique",
       "file": "req6b.md",
-      "description": "A Scout on a mountain bike crossing a section of trail with exposed tree roots, lifting the front wheel slightly, demonstrating proper body position with weight back"
+      "description": "A Scout on a mountain bike crossing a section of trail with exposed tree roots, lifting the front wheel slightly, demonstrating proper body position with weight back",
+      "width": 800,
+      "height": 447,
+      "v": "934b1eb4"
     },
     {
       "id": "trail-biking-group",
       "file": "req6b.md",
-      "description": "Two Scouts mountain biking together on a scenic trail through an open meadow with mountains visible in the background, both wearing helmets and smiling"
+      "description": "Two Scouts mountain biking together on a scenic trail through an open meadow with mountains visible in the background, both wearing helmets and smiling",
+      "width": 800,
+      "height": 447,
+      "v": "8ef4dc80"
     }
   ]
 }

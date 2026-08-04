@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Three-panel habitat overview showing a wetland with a calling frog on emergent plants, a damp forest floor with a salamander beneath a rotting log, and a sunny pond edge with a basking turtle on a log, clean educational composition, minimal labels, no logos or decorative text",
-      "value": "Side-by-side habitat comparison shows where major reptile and amphibian groups are most likely to be found — a spatial overview that prose alone cannot teach as quickly"
+      "value": "Side-by-side habitat comparison shows where major reptile and amphibian groups are most likely to be found — a spatial overview that prose alone cannot teach as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "5da9cfba"
     },
     {
       "id": "field-marks-reptile-amphibian-study",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Four-panel field identification diagram comparing a tree frog foot with toe pads, a turtle shell with visible scutes and shell shape, a patterned snake body with blotches and stripe cues, and a spotted salamander body with side markings, clean natural-history illustration, short part labels only, no branding",
-      "value": "Puts the most useful field marks side by side so a reader can visually compare identification clues across different animal groups in a way text cannot match"
+      "value": "Puts the most useful field marks side by side so a reader can visually compare identification clues across different animal groups in a way text cannot match",
+      "width": 800,
+      "height": 447,
+      "v": "3947ba3e"
     },
     {
       "id": "local-range-map-reptile-amphibian-study",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Simplified map of the United States with soft color zones highlighting wetter amphibian-rich regions in the Southeast, Appalachians, Pacific Northwest, and mountain areas, and warmer reptile-rich regions in the Southeast and Southwest, with small habitat icons and a clean legend, no dense text",
-      "value": "Shows national distribution patterns at a glance so readers can see how moisture and climate shape reptile and amphibian diversity across regions"
+      "value": "Shows national distribution patterns at a glance so readers can see how moisture and climate shape reptile and amphibian diversity across regions",
+      "width": 800,
+      "height": 447,
+      "v": "e121d42d"
     },
     {
       "id": "wetland-food-web-reptile-amphibian",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Educational wetland food web diagram with insects, tadpoles, frogs, salamanders, turtles, snakes, wading birds, and small mammals connected by simple arrows, pond and marsh setting, clean readable layout, minimal horizontal labels only",
-      "value": "Makes predator-prey relationships visible all at once, showing the ecological role of reptiles and amphibians in a food web that is hard to picture from sentences alone"
+      "value": "Makes predator-prey relationships visible all at once, showing the ecological role of reptiles and amphibians in a food web that is hard to picture from sentences alone",
+      "width": 800,
+      "height": 447,
+      "v": "b9ade91a"
     },
     {
       "id": "snake-movement-anatomy",
@@ -40,7 +52,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Cutaway diagram of a moving snake seen from slightly above and below, highlighting ventral belly plates contacting the ground, ribs within the body wall, and major muscle groups creating wave motion, with a few short labels and arrows showing forward push, realistic but clean educational style",
-      "value": "Shows how muscles, ribs, and belly plates work together during motion — an internal and external relationship that readers need to see, not just read about"
+      "value": "Shows how muscles, ribs, and belly plates work together during motion — an internal and external relationship that readers need to see, not just read about",
+      "width": 800,
+      "height": 447,
+      "v": "75f7051f"
     },
     {
       "id": "venomous-reptiles-us-overview",
@@ -48,7 +63,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "United States overview panel with simple range insets and clear side-by-side silhouettes or portraits of copperhead, cottonmouth, timber rattlesnake, eastern diamondback rattlesnake, western diamondback rattlesnake, coral snake, and Gila monster, emphasizing body shape and pattern differences, clean natural-history poster style, minimal labels only",
-      "value": "Combines range and appearance in one visual so readers can compare the main U.S. venomous reptiles without relying on long separate descriptions"
+      "value": "Combines range and appearance in one visual so readers can compare the main U.S. venomous reptiles without relying on long separate descriptions",
+      "width": 800,
+      "height": 447,
+      "v": "0a325c37"
     },
     {
       "id": "frog-calling-throat-sac",
@@ -56,7 +74,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Nighttime pond-edge scene with a frog calling on emergent vegetation, throat sac fully inflated, nearby Scout in appropriate outdoor clothing observing from a respectful distance with a flashlight pointed down, subtle callouts showing inflated throat sac and calling position, realistic instructional photo, no visible text beyond brief labels",
-      "value": "Shows the calling posture and inflated throat sac that help a Scout connect a sound to the animal making it — a visual moment difficult to explain clearly in text"
+      "value": "Shows the calling posture and inflated throat sac that help a Scout connect a sound to the animal making it — a visual moment difficult to explain clearly in text",
+      "width": 800,
+      "height": 447,
+      "v": "bffbe29d"
     }
   ]
 }

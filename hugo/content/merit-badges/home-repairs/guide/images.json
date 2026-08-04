@@ -7,112 +7,160 @@
       "file": "req1.md",
       "style": "illustrated",
       "description": "A clean educational illustration showing six common home-repair hazards in a 2x3 grid: utility knife causing a cut, flying debris hitting safety glasses, ladder overreach causing a fall risk, electrical outlet with power shut off and tester, fumes from paint or cleaner with an open window for ventilation, and a heavy box lifted with bent knees. Each panel uses simple realistic household scenes, minimal horizontal labels only, no branding, no extra text.",
-      "value": "Side-by-side visual identification of six distinct repair hazards and their matching safe responses — pattern recognition that plain text lists cannot teach as quickly"
+      "value": "Side-by-side visual identification of six distinct repair hazards and their matching safe responses — pattern recognition that plain text lists cannot teach as quickly",
+      "width": 800,
+      "height": 447,
+      "v": "b81ad880"
     },
     {
       "id": "yard-tool-reconditioning-sequence",
       "file": "req2a.md",
       "style": "comparison",
       "description": "A four-panel comparison image showing the same shovel through a reconditioning sequence on a workshop bench: dirty and rusty before condition, cleaning with brush, sharpening and tightening, then clean dry tool hanging on proper wall storage. Hands in work gloves, tools organized, realistic home workshop setting, no visible brand names, only four short horizontal panel labels.",
-      "value": "Step-by-step before-and-after progression from neglected tool to cleaned, sharpened, and properly stored condition — a visual process sequence text alone cannot demonstrate clearly"
+      "value": "Step-by-step before-and-after progression from neglected tool to cleaned, sharpened, and properly stored condition — a visual process sequence text alone cannot demonstrate clearly",
+      "width": 800,
+      "height": 447,
+      "v": "6b3ac947"
     },
     {
       "id": "weatherstripping-gap-comparison",
       "file": "req2b.md",
       "style": "comparison",
       "description": "A split-frame educational comparison of a house door edge. Left side shows worn cracked weatherstripping with visible daylight and airflow arrows through the gap. Right side shows new properly fitted weatherstripping compressed evenly with no daylight and door closing snugly. Tight close-up on door jamb and seal, realistic materials, minimal short labels only.",
-      "value": "Direct visual contrast between failed and correctly compressed weatherstripping at a moving door joint — seal quality and gap behavior that are hard to picture from text alone"
+      "value": "Direct visual contrast between failed and correctly compressed weatherstripping at a moving door joint — seal quality and gap behavior that are hard to picture from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "f5a9e556"
     },
     {
       "id": "caulk-bead-correct-vs-incorrect",
       "file": "req2c.md",
       "style": "comparison",
       "description": "A side-by-side close-up comparison of exterior trim caulking. Left panel shows bad caulk with oversized messy bead, smears, globs, and missed joint alignment. Right panel shows a neat smooth bead following the joint evenly between window trim and siding. Same exterior house material in both panels, realistic close-up, only two short horizontal labels, no branding.",
-      "value": "Correct-versus-incorrect bead shape, size, and placement at an exterior joint — precision and neatness cues that text descriptions cannot convey instantly"
+      "value": "Correct-versus-incorrect bead shape, size, and placement at an exterior joint — precision and neatness cues that text descriptions cannot convey instantly",
+      "width": 800,
+      "height": 447,
+      "v": "2c6a0465"
     },
     {
       "id": "screen-repair-parts-layout",
       "file": "req2e.md",
       "style": "diagram",
       "description": "A top-down diagram of a window screen repair setup on a flat workbench showing labeled parts: aluminum screen frame, new mesh laid oversize, spline groove, spline strip, spline roller tool, and trimming blade kept safely aside. The layout is clean and simple with short horizontal labels pointing to each part, no extra notes, no branding.",
-      "value": "Shows the spatial relationship of frame, mesh, spline, groove, and tool before assembly — parts orientation and workflow that are much easier to understand visually than in prose"
+      "value": "Shows the spatial relationship of frame, mesh, spline, groove, and tool before assembly — parts orientation and workflow that are much easier to understand visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "0d7fe85b"
     },
     {
       "id": "window-pane-replacement-ppe",
       "file": "req2f.md",
       "style": "comparison",
       "description": "A side-by-side educational comparison for broken window repair safety. Left panel shows unsafe setup with bare hands near broken glass, scattered shards, and no eye protection. Right panel shows safe setup with safety glasses, sturdy gloves, long sleeves, contained glass cleanup in a box, and a measured replacement pane on a work surface. Realistic household window frame, minimal short horizontal labels only, no branding.",
-      "value": "Shows correct protective gear and contained cleanup by contrasting unsafe and safe broken-glass handling setups — visual safety differences that text alone cannot communicate as clearly"
+      "value": "Shows correct protective gear and contained cleanup by contrasting unsafe and safe broken-glass handling setups — visual safety differences that text alone cannot communicate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "d7943504"
     },
     {
       "id": "workbench-support-structure",
       "file": "req3b.md",
       "style": "diagram",
       "description": "A simple educational diagram of a wooden workbench with the top slightly transparent or cutaway so the structural elements are visible and labeled: bench top, legs, apron, lower braces, and load path arrows down to the floor. Straight-on view, clean workshop style, short horizontal labels only, no decorative text.",
-      "value": "Reveals how the top, legs, and braces share load in a sturdy bench — structural relationships and support paths that prose alone cannot show clearly"
+      "value": "Reveals how the top, legs, and braces share load in a sturdy bench — structural relationships and support paths that prose alone cannot show clearly",
+      "width": 800,
+      "height": 447,
+      "v": "5a7a86cd"
     },
     {
       "id": "sagging-door-diagnosis-points",
       "file": "req3e.md",
       "style": "annotated-photo",
       "description": "A realistic indoor photo-style image of a slightly sagging house door shown partly open. Clean callouts identify loose top hinge area, rubbing point near the latch side, uneven reveal gap at the frame, and screw locations to inspect. Realistic residential doorway, no branding, only a few short horizontal labels.",
-      "value": "Shows the visual clues used to diagnose door sag — hinge condition, rubbing points, and uneven gaps that are much easier to spot in an image than to imagine from text"
+      "value": "Shows the visual clues used to diagnose door sag — hinge condition, rubbing points, and uneven gaps that are much easier to spot in an image than to imagine from text",
+      "width": 800,
+      "height": 447,
+      "v": "9e260a41"
     },
     {
       "id": "faucet-parts-order-layout",
       "file": "req5b.md",
       "style": "diagram",
       "description": "A top-down diagram of a simple faucet repair setup on a towel showing disassembled parts laid out in order from left to right: handle screw, handle, cap, cartridge or stem, washer or seal, and retaining parts, with shutoff valve indicated below the sink. Clean short labels only, realistic shapes, no brand names.",
-      "value": "Shows the importance of keeping faucet parts in removal order during disassembly — sequence and part relationships that are much easier to retain visually than from verbal instructions"
+      "value": "Shows the importance of keeping faucet parts in removal order during disassembly — sequence and part relationships that are much easier to retain visually than from verbal instructions",
+      "width": 800,
+      "height": 447,
+      "v": "d4424ec6"
     },
     {
       "id": "toilet-flush-cycle-parts",
       "file": "req5c.md",
       "style": "diagram",
       "description": "A clear cutaway diagram of a toilet tank with labeled parts: handle arm, chain, flapper, overflow tube, fill valve, float, and water line. Include simple directional arrows showing one flush cycle from handle press to refill. Keep labels short and horizontal, uncluttered educational style, no branding.",
-      "value": "Makes the hidden flush cycle visible by showing tank parts and their sequence of movement — internal system behavior impossible to see from outside the toilet"
+      "value": "Makes the hidden flush cycle visible by showing tank parts and their sequence of movement — internal system behavior impossible to see from outside the toilet",
+      "width": 800,
+      "height": 447,
+      "v": "c3e0adbc"
     },
     {
       "id": "sprinkler-pattern-good-vs-bad",
       "file": "req5e.md",
       "style": "comparison",
       "description": "A split-frame lawn-level comparison of a sprinkler head. Left side shows clogged or damaged head spraying crookedly onto sidewalk with dry patch in grass. Right side shows cleaned or replaced head with even fan pattern covering the intended lawn area. Realistic yard scene, only two short labels, no branding.",
-      "value": "Contrasts poor and correct irrigation spray patterns over the same area — water coverage behavior that readers need to see rather than just read about"
+      "value": "Contrasts poor and correct irrigation spray patterns over the same area — water coverage behavior that readers need to see rather than just read about",
+      "width": 800,
+      "height": 447,
+      "v": "8d885651"
     },
     {
       "id": "curtain-rod-measurement-layout",
       "file": "req6c.md",
       "style": "diagram",
       "description": "A front-view diagram of a window with curtain rod layout marks showing equal left and right bracket measurements from the same reference point and a level rod line above the window trim. Clean simple room wall, short horizontal labels for reference point, equal spacing, level line, and bracket position. No branding.",
-      "value": "Shows symmetric measurement and level placement around a window opening — alignment logic that is far easier to understand visually than through text instructions alone"
+      "value": "Shows symmetric measurement and level placement around a window opening — alignment logic that is far easier to understand visually than through text instructions alone",
+      "width": 800,
+      "height": 447,
+      "v": "430cdc85"
     },
     {
       "id": "drywall-patch-layers",
       "file": "req6d.md",
       "style": "illustrated",
       "description": "A three-stage educational illustration of a drywall hole repair in one image: backing support behind the opening, patch compound built in controlled layers, and final sanded smooth paint-ready surface. The three stages are side by side with only brief horizontal labels, clean wall cutaway style, no extra text.",
-      "value": "Shows the layered build-up from hole to finished wall surface — staged patch development that text alone cannot depict nearly as clearly"
+      "value": "Shows the layered build-up from hole to finished wall surface — staged patch development that text alone cannot depict nearly as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "d2b90895"
     },
     {
       "id": "drywall-anchor-load-comparison",
       "file": "req6e.md",
       "style": "comparison",
       "description": "A cutaway wall comparison showing a screw driven into bare drywall pulling out on one side and a proper anchor spreading the load behind the drywall on the other side while holding a wall-hung object. Minimal short labels only, simple cross-section style, no branding.",
-      "value": "Visualizes how an anchor spreads load behind drywall compared with an unsupported screw — hidden force distribution that cannot be understood well from text alone"
+      "value": "Visualizes how an anchor spreads load behind drywall compared with an unsupported screw — hidden force distribution that cannot be understood well from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "fce1af0b"
     },
     {
       "id": "picture-frame-corner-reinforcement",
       "file": "req6f.md",
       "style": "comparison",
       "description": "A close-up comparison of picture-frame corners. Left side shows an opening miter joint with slight twist and gap. Right side shows the same corner reinforced neatly with corner hardware or reinforcing piece, square and tight. Clean tabletop setting, two short labels only, no branding.",
-      "value": "Shows the difference between a failing corner joint and a properly reinforced one — structural improvement at a small scale that readers understand best by seeing it"
+      "value": "Shows the difference between a failing corner joint and a properly reinforced one — structural improvement at a small scale that readers understand best by seeing it",
+      "width": 800,
+      "height": 447,
+      "v": "8928fbdd"
     },
     {
       "id": "main-water-shutoff-types",
       "file": "req5.md",
       "style": "comparison",
       "description": "A three-panel educational comparison showing common home main water shutoff setups: basement lever valve on a municipal line, exterior meter box curb shutoff concept, and private well system with shutoff valve and pump switch. Clear realistic household contexts, very short horizontal labels only, no branding, no extra text.",
-      "value": "Shows the visual differences between common main water shutoff locations and controls — physical setups that are hard for beginners to recognize from text alone"
+      "value": "Shows the visual differences between common main water shutoff locations and controls — physical setups that are hard for beginners to recognize from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "77e9caaf"
     }
   ]
 }

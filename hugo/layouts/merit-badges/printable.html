@@ -5,28 +5,6 @@
 {{ define "main" }}
   <article class="drg-content">
     <header class="drg-header">
-      {{ $badgePage := .Site.GetPage (path.Dir (path.Dir .RelPermalink)) }}
-      {{ if not $badgePage }}
-        {{ $badgePage = .Parent }}
-      {{ end }}
-
-      {{ $image := "" }}
-      {{ with $badgePage.Resources.GetMatch "*badge*.png" }}
-        {{ $image = . }}
-      {{ else }}
-        {{ with $badgePage.Resources.GetMatch "*badge*.jpg" }}
-          {{ $image = . }}
-        {{ end }}
-      {{ end }}
-
-      {{ if $image }}
-        <img
-          src="{{ $image.RelPermalink }}"
-          alt="{{ $badgePage.Title }} Merit Badge"
-          class="drg-header__badge-img" />
-      {{ end }}
-
-
       <h1 class="drg-header__title">{{ .Title }}</h1>
       {{ with .Params.group_title }}
         <span class="drg-header__group">{{ . }}</span>

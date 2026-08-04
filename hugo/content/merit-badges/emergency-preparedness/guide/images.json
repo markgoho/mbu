@@ -5,103 +5,160 @@
     {
       "id": "scout-emergency-ready",
       "file": "_index.md",
-      "description": "A Scout standing confidently with an emergency kit and first aid supplies, ready to respond to an emergency"
+      "description": "A Scout standing confidently with an emergency kit and first aid supplies, ready to respond to an emergency",
+      "width": 800,
+      "height": 447,
+      "v": "b5038516"
     },
     {
       "id": "kinds-of-emergencies",
       "file": "_index.md",
-      "description": "Four panels showing different types of emergencies: a tornado in the distance, a house fire, a power outage with a dark neighborhood, and a first aid situation on a trail"
+      "description": "Four panels showing different types of emergencies: a tornado in the distance, a house fire, a power outage with a dark neighborhood, and a first aid situation on a trail",
+      "width": 800,
+      "height": 447,
+      "v": "ad4c532b"
     },
     {
       "id": "five-aspects-diagram",
       "file": "req1a.md",
       "style": "diagram",
-      "description": "A circular diagram showing the five aspects of emergency preparedness in a cycle: Prevention, Protection, Mitigation, Response, Recovery — with icons for each"
+      "description": "A circular diagram showing the five aspects of emergency preparedness in a cycle: Prevention, Protection, Mitigation, Response, Recovery — with icons for each",
+      "width": 800,
+      "height": 447,
+      "v": "07d560af"
     },
     {
       "id": "community-recovery",
       "file": "req1a.md",
-      "description": "Volunteers working together to clean up a neighborhood after a storm, stacking debris and helping neighbors carry belongings"
+      "description": "Volunteers working together to clean up a neighborhood after a storm, stacking debris and helping neighbors carry belongings",
+      "width": 800,
+      "height": 447,
+      "v": "30039b46"
     },
     {
       "id": "emergency-chart-example",
       "file": "req1b.md",
-      "description": "A Scout sitting at a table filling in a chart with emergency scenarios listed in rows and the five aspects of emergency preparedness as column headers"
+      "description": "A Scout sitting at a table filling in a chart with emergency scenarios listed in rows and the five aspects of emergency preparedness as column headers",
+      "width": 800,
+      "height": 447,
+      "v": "34abacfb"
     },
     {
       "id": "family-meeting",
       "file": "req2a.md",
-      "description": "A family gathered around a kitchen table discussing emergency plans, with papers, a map, and a notebook spread out"
+      "description": "A family gathered around a kitchen table discussing emergency plans, with papers, a map, and a notebook spread out",
+      "width": 800,
+      "height": 447,
+      "v": "31e64a15"
     },
     {
       "id": "evacuation-route-map",
       "file": "req2a.md",
       "style": "diagram",
-      "description": "A hand-drawn neighborhood map showing two different evacuation routes marked with arrows and a meeting point marked with a star"
+      "description": "A hand-drawn neighborhood map showing two different evacuation routes marked with arrows and a meeting point marked with a star",
+      "width": 800,
+      "height": 447,
+      "v": "8aaf561b"
     },
     {
       "id": "floor-plan-sketch",
       "file": "req2b.md",
       "style": "diagram",
-      "description": "A simple hand-drawn floor plan of a home showing rooms labeled, doors and windows marked, and two different escape routes drawn with colored arrows"
+      "description": "A simple hand-drawn floor plan of a home showing rooms labeled, doors and windows marked, and two different escape routes drawn with colored arrows",
+      "width": 800,
+      "height": 447,
+      "v": "b1ddb668"
     },
     {
       "id": "smoke-detector-test",
       "file": "req2b.md",
-      "description": "A Scout reaching up to press the test button on a smoke detector mounted on a hallway ceiling"
+      "description": "A Scout reaching up to press the test button on a smoke detector mounted on a hallway ceiling",
+      "width": 800,
+      "height": 447,
+      "v": "954ba73d"
     },
     {
       "id": "disaster-kit-spread",
       "file": "req2c.md",
-      "description": "A family disaster kit laid out on a table showing water jugs, canned food, flashlights, batteries, first aid kit, weather radio, and important documents in a waterproof bag"
+      "description": "A family disaster kit laid out on a table showing water jugs, canned food, flashlights, batteries, first aid kit, weather radio, and important documents in a waterproof bag",
+      "width": 800,
+      "height": 447,
+      "v": "dcb9df4d"
     },
     {
       "id": "home-safety-inspection",
       "file": "req3.md",
-      "description": "A Scout and an adult walking through a kitchen with a clipboard checklist, the Scout pointing at a fire extinguisher mounted on the wall"
+      "description": "A Scout and an adult walking through a kitchen with a clipboard checklist, the Scout pointing at a fire extinguisher mounted on the wall",
+      "width": 800,
+      "height": 447,
+      "v": "883262dd"
     },
     {
       "id": "reach-throw-row",
       "file": "req4.md",
       "style": "illustrated",
-      "description": "Three panels showing nonswimming water rescue methods: reaching with a pole from a dock, throwing a ring buoy, and rowing a small boat toward a person in the water"
+      "description": "Three panels showing nonswimming water rescue methods: reaching with a pole from a dock, throwing a ring buoy, and rowing a small boat toward a person in the water",
+      "width": 800,
+      "height": 447,
+      "v": "77b01e58"
     },
     {
       "id": "ground-to-air-signals",
       "file": "req5.md",
-      "description": "Overhead view of large ground-to-air signal symbols (V, X, arrow) made from rocks and branches arranged on a sandy clearing in a forest opening"
+      "description": "Overhead view of large ground-to-air signal symbols (V, X, arrow) made from rocks and branches arranged on a sandy clearing in a forest opening",
+      "width": 800,
+      "height": 447,
+      "v": "960c8e7e"
     },
     {
       "id": "improvised-stretcher",
       "file": "req6.md",
-      "description": "Two Scouts carefully carrying an improvised blanket-and-poles stretcher through a wooded trail, demonstrating proper carrying technique"
+      "description": "Two Scouts carefully carrying an improvised blanket-and-poles stretcher through a wooded trail, demonstrating proper carrying technique",
+      "width": 800,
+      "height": 447,
+      "v": "9c9c9a6b"
     },
     {
       "id": "stretcher-carry-trail",
       "file": "req6.md",
-      "description": "Four Scouts working as a team to carry a stretcher along a narrow woodland trail, communicating and watching the path"
+      "description": "Four Scouts working as a team to carry a stretcher along a narrow woodland trail, communicating and watching the path",
+      "width": 800,
+      "height": 447,
+      "v": "f81729df"
     },
     {
       "id": "ics-chart",
       "file": "req7.md",
       "style": "diagram",
-      "description": "An organizational chart showing the Incident Command System structure: Incident Commander at the top with Operations, Planning, Logistics, and Finance/Administration sections below, each with relevant icons"
+      "description": "An organizational chart showing the Incident Command System structure: Incident Commander at the top with Operations, Planning, Logistics, and Finance/Administration sections below, each with relevant icons",
+      "width": 800,
+      "height": 447,
+      "v": "6e267d0e"
     },
     {
       "id": "go-bag-contents",
       "file": "req8.md",
-      "description": "A personal emergency service go bag laid out on a table with all contents organized and visible: water bottle, food, first aid kit, flashlight, rain gear, gloves, notepad, and whistle"
+      "description": "A personal emergency service go bag laid out on a table with all contents organized and visible: water bottle, food, first aid kit, flashlight, rain gear, gloves, notepad, and whistle",
+      "width": 800,
+      "height": 447,
+      "v": "3e77a9ae"
     },
     {
       "id": "emergency-career-paths",
       "file": "req10.md",
       "style": "infographic",
-      "description": "A career path infographic showing different emergency services careers (firefighter, EMT, emergency manager, dispatcher, HAZMAT technician) branching from a central Emergency Preparedness label"
+      "description": "A career path infographic showing different emergency services careers (firefighter, EMT, emergency manager, dispatcher, HAZMAT technician) branching from a central Emergency Preparedness label",
+      "width": 800,
+      "height": 447,
+      "v": "42aafc3a"
     },
     {
       "id": "cert-training",
       "file": "extended-learning.md",
-      "description": "Teens wearing CERT green helmets and vests practicing light search and rescue techniques during a training exercise at a simulated disaster scene"
+      "description": "Teens wearing CERT green helmets and vests practicing light search and rescue techniques during a training exercise at a simulated disaster scene",
+      "width": 800,
+      "height": 447,
+      "v": "0138754f"
     }
   ]
 }

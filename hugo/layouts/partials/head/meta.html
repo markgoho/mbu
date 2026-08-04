@@ -1,10 +1,18 @@
-{{/* Look for merit badge image for OG tags: use PNG for social compatibility */}}
-{{ $meritBadgeImg := .Resources.GetMatch "*-merit-badge.png" }}
+{{/* Look for a merit badge emblem for OG tags; only the badge landing
+  page's own File.Dir matches a slug in badge-images.json, so subpages
+  (requirements, guide, print) correctly fall through to the site default,
+  same as before this used the local *-merit-badge.png resource. */}}
+{{ $badgeImages := index hugo.Data "badge-images" }}
+{{ $slug := "" }}
+{{ with .File }}
+  {{ $slug = path.Base .Dir }}
+{{ end }}
+{{ $emblemMeta := index $badgeImages.badges $slug }}
 {{ $img := "" }}
-{{ if $meritBadgeImg }}
-  {{ $img = $meritBadgeImg.Permalink }}
+{{ with $emblemMeta }}
+  {{ $img = partial "imagekit/url.html" (dict "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug) "tr" "n-mbu-og" "v" .v) }}
 {{ else }}
-  {{ $img = "/merit-badges/merit-badge-university.jpg" | absURL }}
+  {{ $img = partial "imagekit/url.html" (dict "path" "/mbu-assets/site/og-default" "tr" "n-mbu-og" "v" (index $badgeImages.site "og-default").v) }}
 {{ end }}
 {{ $description := .Description | default .Summary }}
 {{ if not $description }}
@@ -32,6 +40,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink | absURL }}" />
 <meta property="og:image" content="{{ $img | absURL }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:description" content="{{ $description }}" />
 
 <meta name="twitter:card" content="summary_large_image" />

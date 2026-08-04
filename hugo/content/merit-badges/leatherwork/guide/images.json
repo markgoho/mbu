@@ -7,63 +7,90 @@
       "file": "req2.md",
       "style": "diagram",
       "description": "Clean educational diagram of a full leather hide laid flat, showing the major sections: back, shoulder, side, and belly. Simple horizontal labels identify each section. The back area is shown as firmer and more even, while the belly area is shown as stretchier and less predictable. Minimal color palette, top-down view, no branding, no decorative background.",
-      "value": "Shows the spatial layout of hide sections and how firmness changes across the hide — a positional relationship text alone cannot make instantly clear"
+      "value": "Shows the spatial layout of hide sections and how firmness changes across the hide — a positional relationship text alone cannot make instantly clear",
+      "width": 800,
+      "height": 447,
+      "v": "5bde15fa"
     },
     {
       "id": "pattern-transfer-layout-sequence",
       "file": "req3a.md",
       "style": "illustrated",
       "description": "Four-panel instructional illustration showing pattern layout and transfer on vegetable-tanned leather. Panel 1: paper pattern aligned squarely on a leather piece. Panel 2: light centerline and reference marks added. Panel 3: stylus tracing around the pattern while the paper stays in place. Panel 4: clean transferred outline visible on the leather, ready for cutting. Clear visual progression, minimal text, neutral workbench background.",
-      "value": "Shows the step-by-step visual sequence from pattern placement to transferred outline — process stages and alignment cues that are easier to understand by seeing them"
+      "value": "Shows the step-by-step visual sequence from pattern placement to transferred outline — process stages and alignment cues that are easier to understand by seeing them",
+      "width": 800,
+      "height": 447,
+      "v": "e2947ef5"
     },
     {
       "id": "hole-spacing-correct-vs-crooked",
       "file": "req3c.md",
       "style": "comparison",
       "description": "Side-by-side comparison of two leather strips viewed from above. Left side shows a neat row of evenly spaced holes running parallel to the edge with consistent margin. Right side shows a poor example with crooked hole spacing, drifting distance from the edge, and irregular alignment. Clean studio lighting, simple labels only for correct and incorrect examples, no extra text.",
-      "value": "Shows at a glance how even spacing and edge distance differ from crooked punching — a visual quality comparison text cannot communicate as immediately"
+      "value": "Shows at a glance how even spacing and edge distance differ from crooked punching — a visual quality comparison text cannot communicate as immediately",
+      "width": 800,
+      "height": 447,
+      "v": "ea7bc200"
     },
     {
       "id": "stamped-border-spacing-comparison",
       "file": "req3d.md",
       "style": "comparison",
       "description": "Comparison image of two tooled leather border samples on vegetable-tanned leather. Left sample shows a clean decorative stamped border with even spacing, straight alignment, and consistent impressions. Right sample shows crowded uneven stamping with drifting spacing and inconsistent depth. Close-up view focused on the border impressions, neutral background, no branding.",
-      "value": "Shows the visual difference between organized tooling and crowded uneven stamping — spacing and rhythm that must be seen to judge well"
+      "value": "Shows the visual difference between organized tooling and crowded uneven stamping — spacing and rhythm that must be seen to judge well",
+      "width": 800,
+      "height": 447,
+      "v": "9fed48a2"
     },
     {
       "id": "saddle-stitch-layer-alignment",
       "file": "req3f.md",
       "style": "diagram",
       "description": "Clear instructional diagram of two leather layers aligned edge to edge with evenly spaced stitch holes and a saddle stitch passing through both layers. Show the front and cross-section relationship simply, with short labels for layers, holes, and stitch path. Focus on alignment and thread path, not decorative detail. Clean educational layout with horizontal labels only.",
-      "value": "Shows how aligned layers, matching holes, and the saddle stitch path relate in space — construction geometry that is much clearer visually than in prose"
+      "value": "Shows how aligned layers, matching holes, and the saddle stitch path relate in space — construction geometry that is much clearer visually than in prose",
+      "width": 800,
+      "height": 447,
+      "v": "47768600"
     },
     {
       "id": "snap-rivet-alignment-checkpoints",
       "file": "req3g.md",
       "style": "diagram",
       "description": "Educational diagram comparing correct and incorrect hardware setup for leather snaps and rivets. Show one correctly centered snap and rivet with straight setter alignment and proper hole placement, beside misaligned examples with off-center holes or angled setting. Minimal labels, simple top and side views, clean workbench style, no brand markings.",
-      "value": "Shows alignment errors and correct hardware positioning side by side — precise placement problems that text alone is hard to visualize"
+      "value": "Shows alignment errors and correct hardware positioning side by side — precise placement problems that text alone is hard to visualize",
+      "width": 800,
+      "height": 447,
+      "v": "e0fd1235"
     },
     {
       "id": "edge-finishing-before-after",
       "file": "req3h.md",
       "style": "comparison",
       "description": "Close-up before-and-after comparison of a leather project edge. Left side shows a rough fuzzy cut edge with visible fibers and uneven surface. Right side shows the same kind of edge after sanding, beveling, and burnishing: smooth, rounded, polished, and comfortable-looking. Tight crop, neutral background, no extra objects.",
-      "value": "Shows the tactile-looking difference between unfinished and properly burnished edges — surface quality the reader needs to see, not just read about"
+      "value": "Shows the tactile-looking difference between unfinished and properly burnished edges — surface quality the reader needs to see, not just read about",
+      "width": 800,
+      "height": 447,
+      "v": "22b245b8"
     },
     {
       "id": "four-strand-braid-sequence",
       "file": "req4.md",
       "style": "illustrated",
       "description": "Four-panel instructional illustration of a four-strand leather braid sequence. Each panel shows the strand order changing step by step, with distinct strand colors and the braid gradually forming into a neat round pattern. Horizontal labels or numbered panel markers only, uncluttered background, focused on hand positions and strand movement.",
-      "value": "Shows strand order changes across repeated braid steps — motion and pattern development that are difficult to follow from text alone"
+      "value": "Shows strand order changes across repeated braid steps — motion and pattern development that are difficult to follow from text alone",
+      "width": 800,
+      "height": 447,
+      "v": "8dec02ce"
     },
     {
       "id": "leather-vs-synthetic-aging-comparison",
       "file": "req5c.md",
       "style": "comparison",
       "description": "Side-by-side close-up of two similar wallet corners after extended use. The leather example shows patina, softened sheen, and smooth worn edges. The synthetic example shows peeling surface, cracking, and harsher edge breakdown. Same angle and scale for both samples, neutral background, no branding or labels beyond simple material identification.",
-      "value": "Shows how leather and synthetic materials age differently in real wear — long-term surface changes that text descriptions cannot convey as powerfully"
+      "value": "Shows how leather and synthetic materials age differently in real wear — long-term surface changes that text descriptions cannot convey as powerfully",
+      "width": 800,
+      "height": 447,
+      "v": "341993f9"
     }
   ]
 }

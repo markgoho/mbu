@@ -5,96 +5,144 @@
     {
       "id": "scout-chemistry-lab",
       "file": "_index.md",
-      "description": "A Scout aged 13-15 wearing safety goggles and blue nitrile gloves, standing at a chemistry lab bench. Colorful solutions in glass beakers and test tubes are arranged in front of them — red, blue, green, and yellow liquids. The Scout looks curious and engaged, examining one of the beakers. Clean lab environment with white surfaces and good lighting. The Scout wears a clean, presentable uniform."
+      "description": "A Scout aged 13-15 wearing safety goggles and blue nitrile gloves, standing at a chemistry lab bench. Colorful solutions in glass beakers and test tubes are arranged in front of them — red, blue, green, and yellow liquids. The Scout looks curious and engaged, examining one of the beakers. Clean lab environment with white surfaces and good lighting. The Scout wears a clean, presentable uniform.",
+      "width": 800,
+      "height": 447,
+      "v": "23e13ae0"
     },
     {
       "id": "chemistry-branches-overview",
       "file": "_index.md",
       "style": "infographic",
-      "description": "An educational infographic titled 'The Six Branches of Chemistry' showing six labeled sections in a clean grid layout. Each branch has a simple icon: Organic (hexagonal carbon ring), Inorganic (crystal/mineral shape), Analytical (magnifying glass over molecules), Physical (energy wave/thermometer), Biochemistry (DNA double helix), Environmental (Earth with water droplet). Each icon sits inside a colored circle. Modern, clean design with a white background and bold sans-serif typography. Scout-friendly color palette of blues, greens, and golds."
+      "description": "An educational infographic titled 'The Six Branches of Chemistry' showing six labeled sections in a clean grid layout. Each branch has a simple icon: Organic (hexagonal carbon ring), Inorganic (crystal/mineral shape), Analytical (magnifying glass over molecules), Physical (energy wave/thermometer), Biochemistry (DNA double helix), Environmental (Earth with water droplet). Each icon sits inside a colored circle. Modern, clean design with a white background and bold sans-serif typography. Scout-friendly color palette of blues, greens, and golds.",
+      "width": 800,
+      "height": 447,
+      "v": "1d1744f8"
     },
     {
       "id": "sds-document-sections",
       "file": "req1a.md",
       "style": "annotated-photo",
-      "description": "A Safety Data Sheet (SDS) document lying on a desk, with colored highlight boxes and labels pointing to key sections. Section 2 (Hazard Identification) is highlighted in red with an arrow labeled 'Pictograms & Signal Words'. Section 8 (Exposure Controls/PPE) is highlighted in blue with an arrow labeled 'What to Wear'. Section 7 (Handling and Storage) is highlighted in green with a label. The document looks realistic with printed text visible. A pair of safety goggles rests next to the document."
+      "description": "A Safety Data Sheet (SDS) document lying on a desk, with colored highlight boxes and labels pointing to key sections. Section 2 (Hazard Identification) is highlighted in red with an arrow labeled 'Pictograms & Signal Words'. Section 8 (Exposure Controls/PPE) is highlighted in blue with an arrow labeled 'What to Wear'. Section 7 (Handling and Storage) is highlighted in green with a label. The document looks realistic with printed text visible. A pair of safety goggles rests next to the document.",
+      "width": 800,
+      "height": 447,
+      "v": "ccab0499"
     },
     {
       "id": "ppe-types-labeled",
       "file": "req1b.md",
       "style": "diagram",
-      "description": "Four types of personal protective equipment (PPE) for chemistry arranged on a clean white background with labels and descriptions. Top left: splash-proof safety goggles labeled 'Eye Protection — Safety Goggles'. Top right: blue nitrile gloves labeled 'Hand Protection — Nitrile Gloves'. Bottom left: a white lab coat labeled 'Body Protection — Lab Coat'. Bottom right: a half-face respirator with cartridges labeled 'Respiratory Protection — Respirator'. Each item is shown clearly with clean lines and professional labeling."
+      "description": "Four types of personal protective equipment (PPE) for chemistry arranged on a clean white background with labels and descriptions. Top left: splash-proof safety goggles labeled 'Eye Protection — Safety Goggles'. Top right: blue nitrile gloves labeled 'Hand Protection — Nitrile Gloves'. Bottom left: a white lab coat labeled 'Body Protection — Lab Coat'. Bottom right: a half-face respirator with cartridges labeled 'Respiratory Protection — Respirator'. Each item is shown clearly with clean lines and professional labeling.",
+      "width": 800,
+      "height": 447,
+      "v": "7a3cbdf3"
     },
     {
       "id": "ghs-pictograms-grid",
       "file": "req1c.md",
       "style": "infographic",
-      "description": "A clean 3x3 grid showing all nine GHS (Globally Harmonized System) hazard pictograms. Each pictogram is a red diamond border with a black symbol on white background: flame, flame over circle, exploding bomb, skull and crossbones, exclamation mark, health hazard silhouette, corrosion (hand/metal being dissolved), gas cylinder, and dead fish/tree (environment). Each pictogram has its name in bold text below it: Flammable, Oxidizer, Explosive, Acute Toxicity, Irritant, Health Hazard, Corrosive, Gas Under Pressure, Environmental Hazard. Clean white background with modern typography."
+      "description": "A clean 3x3 grid showing all nine GHS (Globally Harmonized System) hazard pictograms. Each pictogram is a red diamond border with a black symbol on white background: flame, flame over circle, exploding bomb, skull and crossbones, exclamation mark, health hazard silhouette, corrosion (hand/metal being dissolved), gas cylinder, and dead fish/tree (environment). Each pictogram has its name in bold text below it: Flammable, Oxidizer, Explosive, Acute Toxicity, Irritant, Health Hazard, Corrosive, Gas Under Pressure, Environmental Hazard. Clean white background with modern typography.",
+      "width": 800,
+      "height": 447,
+      "v": "3c9d9cfc"
     },
     {
       "id": "chemical-storage-cabinet",
       "file": "req1d.md",
       "style": "diagram",
-      "description": "A well-organized chemical storage cabinet shown in cross-section view with four clearly labeled compartments. Top shelf: 'ACIDS' section in red with glass bottles. Second shelf: 'BASES' section in blue with labeled containers. Third shelf: 'FLAMMABLES' section in yellow with a flame warning symbol. Bottom shelf: 'OXIDIZERS' section in purple with appropriate containers. Physical dividers separate each section. Labels are large and clear. A small fire extinguisher icon appears next to the cabinet. Clean, educational diagram style with color coding."
+      "description": "A well-organized chemical storage cabinet shown in cross-section view with four clearly labeled compartments. Top shelf: 'ACIDS' section in red with glass bottles. Second shelf: 'BASES' section in blue with labeled containers. Third shelf: 'FLAMMABLES' section in yellow with a flame warning symbol. Bottom shelf: 'OXIDIZERS' section in purple with appropriate containers. Physical dividers separate each section. Labels are large and clear. A small fire extinguisher icon appears next to the cabinet. Clean, educational diagram style with color coding.",
+      "width": 800,
+      "height": 447,
+      "v": "524bf635"
     },
     {
       "id": "soap-molecule-diagram",
       "file": "req2a.md",
       "style": "diagram",
-      "description": "A scientific diagram showing how a soap molecule works. The molecule is shown as a line with a round hydrophilic head (labeled 'Water-loving head' in blue) and a wavy hydrophobic tail (labeled 'Oil-loving tail' in yellow/orange). Below this, a circular micelle is shown: multiple soap molecules arranged in a sphere around a central oil droplet, with tails pointing inward (toward the oil, colored yellow) and heads pointing outward (toward the surrounding water, colored blue). Labels clearly identify 'Oil droplet', 'Soap molecules', and 'Water'. Clean white background with educational style."
+      "description": "A scientific diagram showing how a soap molecule works. The molecule is shown as a line with a round hydrophilic head (labeled 'Water-loving head' in blue) and a wavy hydrophobic tail (labeled 'Oil-loving tail' in yellow/orange). Below this, a circular micelle is shown: multiple soap molecules arranged in a sphere around a central oil droplet, with tails pointing inward (toward the oil, colored yellow) and heads pointing outward (toward the surrounding water, colored blue). Labels clearly identify 'Oil droplet', 'Soap molecules', and 'Water'. Clean white background with educational style.",
+      "width": 800,
+      "height": 447,
+      "v": "8f203f12"
     },
     {
       "id": "micelle-formation",
       "file": "req2b.md",
       "style": "diagram",
-      "description": "A three-step sequence diagram showing the soap cleaning process on a flat surface. Step 1: An oily layer with embedded powder particles sits on a surface, with water beading up on top (labeled 'Water alone cannot penetrate oil'). Step 2: Soap molecules approach the oil layer, with their hydrophobic tails beginning to embed in the oil (labeled 'Soap molecules surround oil'). Step 3: Micelles have formed and lifted away from the surface, carrying oil and dirt with them into the water (labeled 'Micelles carry dirt away'). Clean arrows connect the three steps. Educational diagram style."
+      "description": "A three-step sequence diagram showing the soap cleaning process on a flat surface. Step 1: An oily layer with embedded powder particles sits on a surface, with water beading up on top (labeled 'Water alone cannot penetrate oil'). Step 2: Soap molecules approach the oil layer, with their hydrophobic tails beginning to embed in the oil (labeled 'Soap molecules surround oil'). Step 3: Micelles have formed and lifted away from the surface, carrying oil and dirt with them into the water (labeled 'Micelles carry dirt away'). Clean arrows connect the three steps. Educational diagram style.",
+      "width": 800,
+      "height": 447,
+      "v": "01c1339b"
     },
     {
       "id": "yeast-experiment-setup",
       "file": "req2c.md",
       "style": "comparison",
-      "description": "Three clear plastic cups side by side on a white surface, viewed from the front. Cup A (labeled 'Control — No Alcohol') shows active, bubbly, foamy yeast with lots of CO2 bubbles at the surface. Cup B (labeled 'Low Dose Alcohol') shows moderate foam with fewer bubbles and less activity. Cup C (labeled 'High Dose Alcohol') shows very little or no foam, with flat, inactive liquid. Each cup contains the same yellowish yeast mixture. The difference in activity levels is clearly visible, demonstrating how increasing alcohol concentration kills yeast."
+      "description": "Three clear plastic cups side by side on a white surface, viewed from the front. Cup A (labeled 'Control — No Alcohol') shows active, bubbly, foamy yeast with lots of CO2 bubbles at the surface. Cup B (labeled 'Low Dose Alcohol') shows moderate foam with fewer bubbles and less activity. Cup C (labeled 'High Dose Alcohol') shows very little or no foam, with flat, inactive liquid. Each cup contains the same yellowish yeast mixture. The difference in activity levels is clearly visible, demonstrating how increasing alcohol concentration kills yeast.",
+      "width": 800,
+      "height": 447,
+      "v": "783c9fab"
     },
     {
       "id": "maillard-reaction-stages",
       "file": "req3a.md",
       "style": "comparison",
-      "description": "Three slices of bread shown side by side demonstrating the progression of the Maillard reaction. Left slice: Fresh, untoasted white bread, pale and soft (labeled 'Before — No Reaction'). Center slice: Lightly toasted bread with golden-brown color (labeled 'Light Browning — Early Maillard Reaction'). Right slice: Well-toasted bread with deep brown color and visible texture change (labeled 'Full Browning — Advanced Maillard Reaction'). An arrow runs beneath all three from left to right labeled 'Increasing Temperature and Time'. Clean comparison layout."
+      "description": "Three slices of bread shown side by side demonstrating the progression of the Maillard reaction. Left slice: Fresh, untoasted white bread, pale and soft (labeled 'Before — No Reaction'). Center slice: Lightly toasted bread with golden-brown color (labeled 'Light Browning — Early Maillard Reaction'). Right slice: Well-toasted bread with deep brown color and visible texture change (labeled 'Full Browning — Advanced Maillard Reaction'). An arrow runs beneath all three from left to right labeled 'Increasing Temperature and Time'. Clean comparison layout.",
+      "width": 800,
+      "height": 447,
+      "v": "7ad77531"
     },
     {
       "id": "cabbage-indicator-colors",
       "file": "req3b.md",
       "style": "comparison",
-      "description": "Six clear glass cups in a row on a white surface, each containing red cabbage pH indicator liquid at different pH levels, creating a rainbow spectrum. From left to right: bright red/pink (pH 2, labeled 'Lemon Juice'), purple-pink (pH 4, labeled 'Vinegar'), blue-purple (pH 7, labeled 'Water'), blue-green (pH 8, labeled 'Baking Soda'), green (pH 10, labeled 'Soap Water'), yellow-green (pH 12, labeled 'Bleach'). A pH scale runs beneath the cups from 0 to 14. Clean, well-lit photo showing vivid colors."
+      "description": "Six clear glass cups in a row on a white surface, each containing red cabbage pH indicator liquid at different pH levels, creating a rainbow spectrum. From left to right: bright red/pink (pH 2, labeled 'Lemon Juice'), purple-pink (pH 4, labeled 'Vinegar'), blue-purple (pH 7, labeled 'Water'), blue-green (pH 8, labeled 'Baking Soda'), green (pH 10, labeled 'Soap Water'), yellow-green (pH 12, labeled 'Bleach'). A pH scale runs beneath the cups from 0 to 14. Clean, well-lit photo showing vivid colors.",
+      "width": 800,
+      "height": 447,
+      "v": "05b19409"
     },
     {
       "id": "fire-triangle-diagram",
       "file": "req4.md",
       "style": "diagram",
-      "description": "The fire triangle diagram showing three sides of a triangle labeled 'HEAT' (top, red), 'FUEL' (bottom left, orange), and 'OXYGEN' (bottom right, blue). A flame icon sits in the center of the triangle. Three arrows point away from the triangle, each showing how a different extinguisher type removes that element: 'Water removes HEAT' (arrow from top), 'Smothering removes OXYGEN' (arrow from right, with sand/CO2 icon), 'Removing fuel source' (arrow from left). Clean educational diagram with bold colors and clear labels."
+      "description": "The fire triangle diagram showing three sides of a triangle labeled 'HEAT' (top, red), 'FUEL' (bottom left, orange), and 'OXYGEN' (bottom right, blue). A flame icon sits in the center of the triangle. Three arrows point away from the triangle, each showing how a different extinguisher type removes that element: 'Water removes HEAT' (arrow from top), 'Smothering removes OXYGEN' (arrow from right, with sand/CO2 icon), 'Removing fuel source' (arrow from left). Clean educational diagram with bold colors and clear labels.",
+      "width": 800,
+      "height": 447,
+      "v": "00dc371b"
     },
     {
       "id": "green-chemistry-solutions",
       "file": "req5.md",
       "style": "infographic",
-      "description": "An infographic titled 'Chemistry Solutions for Single-Use Waste' with four quadrants on a clean background. Top left: 'Biodegradable Plastics' with a leaf/recycling icon, showing PLA and PHA materials. Top right: 'Chemical Recycling' with a circular arrow icon, showing depolymerization and enzymatic recycling. Bottom left: 'Better Batteries' with a battery icon, showing lithium-ion, solid-state, and sodium-ion technologies. Bottom right: 'Alternative Materials' with a mushroom/bamboo icon, showing mycelium packaging and bamboo straws. Each quadrant uses a different color. Modern, clean design with icons and brief text."
+      "description": "An infographic titled 'Chemistry Solutions for Single-Use Waste' with four quadrants on a clean background. Top left: 'Biodegradable Plastics' with a leaf/recycling icon, showing PLA and PHA materials. Top right: 'Chemical Recycling' with a circular arrow icon, showing depolymerization and enzymatic recycling. Bottom left: 'Better Batteries' with a battery icon, showing lithium-ion, solid-state, and sodium-ion technologies. Bottom right: 'Alternative Materials' with a mushroom/bamboo icon, showing mycelium packaging and bamboo straws. Each quadrant uses a different color. Modern, clean design with icons and brief text.",
+      "width": 800,
+      "height": 447,
+      "v": "eadb692c"
     },
     {
       "id": "chemistry-fields-connections",
       "file": "req6.md",
       "style": "infographic",
-      "description": "A web diagram showing five main fields of chemistry as circles connected by lines. Center-top: 'Organic Chemistry' (green circle with carbon ring icon). Center-left: 'Inorganic Chemistry' (gray circle with crystal icon). Center-right: 'Analytical Chemistry' (blue circle with magnifying glass icon). Bottom-left: 'Physical Chemistry' (red/orange circle with energy wave icon). Bottom-right: 'Biochemistry' (purple circle with DNA icon). Lines connect each circle to every other circle, with small labels on key connections: 'Drug Design' between Organic and Biochemistry, 'Battery Science' between Inorganic and Physical, 'Quality Testing' between Analytical and Organic. Clean white background."
+      "description": "A web diagram showing five main fields of chemistry as circles connected by lines. Center-top: 'Organic Chemistry' (green circle with carbon ring icon). Center-left: 'Inorganic Chemistry' (gray circle with crystal icon). Center-right: 'Analytical Chemistry' (blue circle with magnifying glass icon). Bottom-left: 'Physical Chemistry' (red/orange circle with energy wave icon). Bottom-right: 'Biochemistry' (purple circle with DNA icon). Lines connect each circle to every other circle, with small labels on key connections: 'Drug Design' between Organic and Biochemistry, 'Battery Science' between Inorganic and Physical, 'Quality Testing' between Analytical and Organic. Clean white background.",
+      "width": 800,
+      "height": 447,
+      "v": "6c6a9b09"
     },
     {
       "id": "epa-water-testing",
       "file": "req7.md",
-      "description": "An environmental scientist wearing a reflective safety vest, hard hat, and nitrile gloves kneeling beside a clear stream, collecting a water sample in a glass container. Testing equipment — pH meters, sample bottles in a carrying case, and a clipboard with data sheets — is arranged on the bank nearby. Trees and natural scenery are in the background. The scene conveys professional environmental monitoring work in a natural outdoor setting."
+      "description": "An environmental scientist wearing a reflective safety vest, hard hat, and nitrile gloves kneeling beside a clear stream, collecting a water sample in a glass container. Testing equipment — pH meters, sample bottles in a carrying case, and a clipboard with data sheets — is arranged on the bank nearby. Trees and natural scenery are in the background. The scene conveys professional environmental monitoring work in a natural outdoor setting.",
+      "width": 800,
+      "height": 447,
+      "v": "9ce8ee86"
     },
     {
       "id": "chemistry-careers-collage",
       "file": "req8.md",
       "style": "infographic",
-      "description": "A four-panel collage showing different chemistry career settings, each panel with a title. Top left: 'Research Lab' — a scientist at a bench with microscope and test tubes. Top right: 'Water Treatment' — a facility with tanks and monitoring equipment. Bottom left: 'Pharmaceutical' — a lab technician checking medicine quality. Bottom right: 'Food Science' — a professional testing food samples. Each panel uses a different accent color (blue, green, purple, orange). Clean, modern infographic layout with icons and labels."
+      "description": "A four-panel collage showing different chemistry career settings, each panel with a title. Top left: 'Research Lab' — a scientist at a bench with microscope and test tubes. Top right: 'Water Treatment' — a facility with tanks and monitoring equipment. Bottom left: 'Pharmaceutical' — a lab technician checking medicine quality. Bottom right: 'Food Science' — a professional testing food samples. Each panel uses a different accent color (blue, green, purple, orange). Clean, modern infographic layout with icons and labels.",
+      "width": 800,
+      "height": 447,
+      "v": "5ebc0b31"
     }
   ]
 }

@@ -1,23 +1,55 @@
+{{- /*
+  Resolves DRG guide images against the guide's images.json manifest
+  (id -> width/height/v written by scripts/migrate-images-to-imagekit.ts)
+  instead of a local page resource. src stays "images/<id>.avif" (or a
+  bare "<id>.avif" for the two call sites that reuse a badge emblem
+  inline) at every existing call site — only the id is extracted.
+
+  errorf's if the id is missing from the manifest, preserving the
+  build-time guarantee that used to come from a missing file.
+*/ -}}
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- $caption := .Get "caption" | default "" -}}
-{{- $image := .Page.Resources.GetMatch $src -}}
-{{- if not $image -}}
+{{- $id := strings.TrimSuffix ".avif" (strings.TrimPrefix "images/" $src) -}}
+
+{{- $guidePage := .Page -}}
+{{- $manifestResource := $guidePage.Resources.GetMatch "images.json" -}}
+{{- if not $manifestResource -}}
   {{- with .Page.Parent -}}
-    {{- $image = .Resources.GetMatch $src -}}
+    {{- $guidePage = . -}}
+    {{- $manifestResource = .Resources.GetMatch "images.json" -}}
   {{- end -}}
 {{- end -}}
-{{- with $image -}}
-  <figure class="drg-illustration">
-    <img
-      src="{{ .RelPermalink }}"
-      alt="{{ $alt }}"
-      loading="lazy"
-      decoding="async" />
-    {{- with $caption }}
-      <figcaption>{{ . }}</figcaption>
-    {{- end }}
-  </figure>
-{{- else -}}
-  {{- errorf "DRG image not found: %s (page: %s)" $src $.Page.RelPermalink -}}
+{{- if not $manifestResource -}}
+  {{- errorf "drg/image: no images.json manifest found for %s" $.Page.RelPermalink -}}
 {{- end -}}
+
+{{- $manifest := $manifestResource.Content | transform.Unmarshal -}}
+{{- $entry := "" -}}
+{{- range $manifest.images -}}
+  {{- if eq .id $id -}}
+    {{- $entry = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $entry -}}
+  {{- errorf "DRG image not found in manifest: %s (id: %s, page: %s)" $src $id $.Page.RelPermalink -}}
+{{- end -}}
+{{- if not (and $entry.width $entry.height $entry.v) -}}
+  {{- errorf "DRG image manifest entry missing width/height/v: %s (page: %s) — run bun run migrate:imagekit" $id $.Page.RelPermalink -}}
+{{- end -}}
+
+<figure class="drg-illustration">
+  {{ partial "imagekit/img.html" (dict
+    "path" (printf "/mbu-assets/merit-badges/%s/guide/%s" $manifest.badge $id)
+    "v" $entry.v
+    "maxWidth" 800
+    "width" $entry.width
+    "height" $entry.height
+    "alt" $alt
+    "sizes" "(max-width: 800px) 100vw, 800px"
+  ) }}
+  {{- with $caption }}
+    <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

@@ -8,7 +8,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Clean educational diagram collage showing a weather radar display, satellite view of cloud bands, a weather balloon rising through the atmosphere, and layered clouds over a small campsite, with minimal short labels only for the tools and no branding or logos",
-      "value": "Shows the main observing tools and how they connect sky observation with modern forecasting systems — a visual relationship that text alone cannot convey quickly"
+      "value": "Shows the main observing tools and how they connect sky observation with modern forecasting systems — a visual relationship that text alone cannot convey quickly",
+      "width": 800,
+      "height": 447,
+      "v": "8df17d33"
     },
     {
       "id": "cold-vs-warm-front-cross-sections",
@@ -16,7 +19,10 @@
       "style": "diagram",
       "verb_family": "describe",
       "description": "Side-by-side educational cross sections of a cold front and a warm front, showing cold and warm air masses, steep versus gentle frontal slope, cloud types in each system, arrows for air movement, and the location of precipitation, with simple horizontal labels and no dense text",
-      "value": "Shows the contrasting shapes, cloud placement, and precipitation zones of warm and cold fronts — spatial relationships that are difficult to understand from prose alone"
+      "value": "Shows the contrasting shapes, cloud placement, and precipitation zones of warm and cold fronts — spatial relationships that are difficult to understand from prose alone",
+      "width": 800,
+      "height": 447,
+      "v": "69b7db31"
     },
     {
       "id": "cloud-family-chart",
@@ -24,7 +30,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Vertical atmosphere chart dividing clouds into upper, middle, low, and towering categories with simple illustrations of cirrus, cirrostratus, altostratus, stratus, nimbostratus, cumulus, and cumulonimbus, each clearly separated and lightly labeled with short cloud names only",
-      "value": "Lets the reader compare cloud families by height and shape at a glance — side-by-side identification that text descriptions alone make harder"
+      "value": "Lets the reader compare cloud families by height and shape at a glance — side-by-side identification that text descriptions alone make harder",
+      "width": 800,
+      "height": 447,
+      "v": "ef5868c9"
     },
     {
       "id": "water-cycle-labeled-diagram",
@@ -32,7 +41,10 @@
       "style": "diagram",
       "verb_family": "identify",
       "description": "Clear water cycle diagram showing ocean, lake, trees, clouds, mountains, stream, and underground water with simple horizontal labels for evaporation, transpiration, condensation, precipitation, runoff, streamflow, and groundwater, using arrows and clean spacing with minimal text",
-      "value": "Shows the full loop of water moving through sky, land, plants, and underground pathways — a connected system that is much easier to grasp visually than from a paragraph"
+      "value": "Shows the full loop of water moving through sky, land, plants, and underground pathways — a connected system that is much easier to grasp visually than from a paragraph",
+      "width": 800,
+      "height": 447,
+      "v": "df6b235e"
     },
     {
       "id": "urban-heat-island-vs-tree-cover",
@@ -40,7 +52,10 @@
       "style": "comparison",
       "verb_family": "describe",
       "description": "Side-by-side comparison image: left panel shows a paved city block with dark rooftops, cars, little shade, and heat shimmer above sidewalks; right panel shows a tree-covered neighborhood with shaded streets, grass, and cooler-looking surfaces, with subtle arrows for runoff and heat but almost no text",
-      "value": "Shows the visual difference between paved heat-trapping surfaces and tree-covered cooling surfaces, making urban heat island and runoff effects immediately clear"
+      "value": "Shows the visual difference between paved heat-trapping surfaces and tree-covered cooling surfaces, making urban heat island and runoff effects immediately clear",
+      "width": 800,
+      "height": 447,
+      "v": "07502bd7"
     },
     {
       "id": "backyard-weather-station-log",
@@ -48,7 +63,10 @@
       "style": "annotated-photo",
       "verb_family": "show",
       "description": "Realistic backyard weather observation scene with a Scout in appropriate everyday outdoor clothing using a notebook beside a simple homemade rain gauge and wind vane, looking at clouds overhead, with light callouts marking observation time, wind direction, precipitation tool, and cloud notes, no uniforms, no branding, and no visible logos",
-      "value": "Shows how a simple home weather station setup, observation posture, and note-taking routine work together in one real scene — practical arrangement that text alone cannot demonstrate as clearly"
+      "value": "Shows how a simple home weather station setup, observation posture, and note-taking routine work together in one real scene — practical arrangement that text alone cannot demonstrate as clearly",
+      "width": 800,
+      "height": 447,
+      "v": "a1f630dc"
     }
   ]
 }
