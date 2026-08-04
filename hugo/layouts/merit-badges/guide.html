@@ -52,47 +52,58 @@
         "ctas" $ctas) }}
     {{ end }}
 
-    <article class="drg-content">
-      {{ if not .IsSection }}
-        <header class="drg-header">
-          {{ with .Params.group_title }}
-            <span class="drg-header__kicker">{{ . }}</span>
+    <div class="drg-body-grid">
+      <article class="drg-content">
+        {{ if not .IsSection }}
+          <header class="drg-header">
+            {{ with .Params.group_title }}
+              <span class="drg-header__kicker">{{ . }}</span>
+            {{ end }}
+            <h1 class="drg-header__title">{{ .Title }}</h1>
+          </header>
+        {{ end }}
+
+        {{ .Content }}
+
+
+        <nav class="drg-footer-nav" aria-label="Guide pagination">
+          {{ with .Params.prev }}
+            <a
+              href="{{ . }}"
+              class="drg-footer-nav__link drg-footer-nav__link--prev">
+              <span class="drg-footer-nav__label">Previous</span>
+              <span class="drg-footer-nav__title">
+                {{ with $.Params.prev_title }}
+                  {{ . }}
+                {{ else }}
+                  Previous Page
+                {{ end }}
+              </span>
+            </a>
           {{ end }}
-          <h1 class="drg-header__title">{{ .Title }}</h1>
-        </header>
+
+          {{ with .Params.next }}
+            <a
+              href="{{ . }}"
+              class="drg-footer-nav__link drg-footer-nav__link--next">
+              <span class="drg-footer-nav__label">Next</span>
+              <span class="drg-footer-nav__title">
+                {{ with $.Params.next_title }}{{ . }}{{ else }}Next Page{{ end }}
+              </span>
+            </a>
+          {{ end }}
+        </nav>
+      </article>
+
+      {{ with .Page.Store.Get "leadRequirement" }}
+        <aside class="drg-req-rail" inert>
+          <div class="drg-req-rail__inner">
+            <span class="drg-req-rail__number">{{ .number }}.</span>
+            <p class="drg-req-rail__text">{{ .text | markdownify }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</p>
+          </div>
+        </aside>
       {{ end }}
-
-      {{ .Content }}
-
-
-      <nav class="drg-footer-nav" aria-label="Guide pagination">
-        {{ with .Params.prev }}
-          <a
-            href="{{ . }}"
-            class="drg-footer-nav__link drg-footer-nav__link--prev">
-            <span class="drg-footer-nav__label">Previous</span>
-            <span class="drg-footer-nav__title">
-              {{ with $.Params.prev_title }}
-                {{ . }}
-              {{ else }}
-                Previous Page
-              {{ end }}
-            </span>
-          </a>
-        {{ end }}
-
-        {{ with .Params.next }}
-          <a
-            href="{{ . }}"
-            class="drg-footer-nav__link drg-footer-nav__link--next">
-            <span class="drg-footer-nav__label">Next</span>
-            <span class="drg-footer-nav__title">
-              {{ with $.Params.next_title }}{{ . }}{{ else }}Next Page{{ end }}
-            </span>
-          </a>
-        {{ end }}
-      </nav>
-    </article>
+    </div>
   </div>
 {{ end }}
 

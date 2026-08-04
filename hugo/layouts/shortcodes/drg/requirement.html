@@ -11,9 +11,10 @@
 {{ $option := .Get "option" }}
 {{ $isSub := findRE `[a-zA-Z]` $number }}
 {{ $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" }}
+{{ $isLead := eq $number $.Page.Params.req_number }}
 
 {{ $text := $.Inner | strings.TrimSpace }}
-{{ if eq $number $.Page.Params.req_number }}
+{{ if $isLead }}
   {{ $title := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $.Page.Title }}
   {{ if $title }}
     {{ $prefix := printf "%s." (lower $title) }}
@@ -21,6 +22,8 @@
       {{ $text = strings.TrimSpace (substr $text (len $prefix)) }}
     {{ end }}
   {{ end }}
+  {{ $class = printf "%s drg-requirement--lead" $class }}
+  {{ $.Page.Store.Set "leadRequirement" (dict "number" $number "text" $text "option" $option) }}
 {{ end }}
 
 <div class="{{ $class }}">

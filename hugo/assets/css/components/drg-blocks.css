@@ -274,6 +274,64 @@
 }
 
 /* ------------------------------------------------------------------ */
+/* Requirement rail (sticky echo of the lead quote, ≥1400px only)      */
+/* ------------------------------------------------------------------ */
+
+/* Quieter echo of .drg-requirement, not a boxed card -- same left rail
+   treatment as above, just dialed down since it's a supporting copy. */
+.drg-req-rail__inner {
+  padding-inline-start: var(--space-s);
+  border-inline-start: 2px solid var(--outline-variant);
+
+  & .drg-req-rail__number {
+    font-weight: var(--font-weight-bold);
+    color: var(--on-surface-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  & .drg-req-rail__text {
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+  }
+}
+
+@media (min-width: 87.5rem) {
+  @supports (animation-timeline: view()) {
+    .drg-requirement--lead {
+      view-timeline-name: --drg-lead-req;
+    }
+
+    .drg-req-rail__inner {
+      animation: drg-rail-in linear both;
+      animation-timeline: --drg-lead-req;
+      animation-range: exit 20% exit 100%;
+    }
+
+    @keyframes drg-rail-in {
+      from {
+        opacity: 0;
+        translate: -2rem 0;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      @keyframes drg-rail-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* External link & download                                             */
 /* ------------------------------------------------------------------ */
 

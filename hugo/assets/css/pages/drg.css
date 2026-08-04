@@ -433,6 +433,43 @@
 }
 
 /* ------------------------------------------------------------------ */
+/* Body grid + requirement rail                                        */
+/* ------------------------------------------------------------------ */
+
+/* Below 1400px this is a plain block wrapper -- .drg-content behaves
+   exactly as before and the rail is hidden, so nothing about the
+   existing layout changes until there's room for a rail beside the
+   75ch reading column. */
+.drg-body-grid {
+  --drg-rail-width: 17rem;
+}
+
+.drg-req-rail {
+  display: none;
+}
+
+@media (min-width: 87.5rem) {
+  .drg-body-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 75ch) var(--drg-rail-width);
+    gap: var(--space-l);
+    align-items: start;
+    timeline-scope: --drg-lead-req;
+  }
+
+  .drg-req-rail {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    position: sticky;
+    top: var(--space-m);
+    max-height: calc(100vh - var(--space-2xl));
+    overflow-y: auto;
+  }
+}
+
+/* ------------------------------------------------------------------ */
 /* Content / prose                                                      */
 /* ------------------------------------------------------------------ */
 
