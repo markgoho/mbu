@@ -30,8 +30,8 @@
   {{ with $number }}
     <span class="drg-requirement__number">{{ . }}.</span>
   {{ end }}
-  <p class="drg-requirement__text">
+  <div class="drg-requirement__text">
     {{ $text | markdownify }}
     {{ with $option }}<strong>{{ . }}</strong>{{ end }}
-  </p>
+  </div>
 </div>

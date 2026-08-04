@@ -258,7 +258,7 @@
     min-width: 0;
     color: var(--on-surface);
 
-    > p:last-child {
+    > :last-child {
       margin-bottom: 0;
     }
   }

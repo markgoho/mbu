@@ -99,7 +99,7 @@
         <aside class="drg-req-rail" inert>
           <div class="drg-req-rail__inner">
             <span class="drg-req-rail__number">{{ .number }}.</span>
-            <p class="drg-req-rail__text">{{ .text | markdownify }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</p>
+            <div class="drg-req-rail__text">{{ .text | markdownify }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
           </div>
         </aside>
       {{ end }}
