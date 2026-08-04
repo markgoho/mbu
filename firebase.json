@@ -91,7 +91,7 @@
           "headers": [
             {
               "key": "Content-Security-Policy",
-              "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://api.pirsch.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.scouting.org https://filestore.scouting.org https://api.pirsch.io; frame-src https://www.youtube.com https://www.youtube-nocookie.com; frame-ancestors 'none';"
+              "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://api.pirsch.io https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.scouting.org https://filestore.scouting.org https://api.pirsch.io https://www.clarity.ms https://*.clarity.ms; frame-src https://www.youtube.com https://www.youtube-nocookie.com; frame-ancestors 'none';"
             },
             {
               "key": "X-Frame-Options",
