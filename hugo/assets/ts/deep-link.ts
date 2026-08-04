@@ -33,6 +33,11 @@
 // merit-badge-requirements.css). Script never builds, clones, or empties
 // any DOM here; it only moves attribute values.
 
+declare const pirsch: (
+  event: string,
+  options?: { meta?: Record<string, string | number> },
+) => void;
+
 document.documentElement.setAttribute("data-js", "");
 
 const TOAST_MS = 1700;
@@ -161,7 +166,19 @@ function requirementText(li: HTMLElement, path: string): string {
 }
 
 function copyText(requirement: HTMLElement, path: string): void {
-  copy(requirementText(requirement, path), `Text of ${path}`);
+  const text = requirementText(requirement, path);
+
+  if (typeof pirsch !== "undefined") {
+    const badge =
+      requirement.dataset.badgeName ??
+      requirement.closest<HTMLElement>("[data-badge-name]")?.dataset.badgeName ??
+      "";
+    pirsch("merit-badge-requirement-copy-text", {
+      meta: { badge, path, length: text.length },
+    });
+  }
+
+  copy(text, `Text of ${path}`);
 }
 
 // ---------------------------------------------------------------------
