@@ -26,6 +26,22 @@ export class SignIn {
     password: ['', [Validators.required, Validators.minLength(6)]],
   });
 
+  constructor() {
+    void this.completeGoogleRedirect();
+  }
+
+  // Google sign-in redirects away and back rather than using a popup, so the
+  // result of a completed sign-in is picked up here on the page load that
+  // follows the redirect back.
+  private async completeGoogleRedirect(): Promise<void> {
+    try {
+      const result = await this.auth.completeGoogleRedirect();
+      if (result) await this.router.navigateByUrl(this.returnTo());
+    } catch (error) {
+      if (error instanceof Error) this.errorMessage.set(error.message);
+    }
+  }
+
   protected toggleMode(): void {
     this.mode.set(this.mode() === 'sign-in' ? 'sign-up' : 'sign-in');
     this.errorMessage.set('');
@@ -60,11 +76,11 @@ export class SignIn {
     this.isLoading.set(true);
     this.errorMessage.set('');
     try {
+      // Navigates away to Google; the sign-in completes on the page load that
+      // follows the redirect back, via completeGoogleRedirect().
       await this.auth.signInWithGoogle();
-      await this.router.navigateByUrl(this.returnTo());
     } catch (error) {
       if (error instanceof Error) this.errorMessage.set(error.message);
-    } finally {
       this.isLoading.set(false);
     }
   }

@@ -4,11 +4,12 @@ import { Router } from '@angular/router';
 import {
   createUserWithEmailAndPassword,
   getIdTokenResult,
+  getRedirectResult,
   GoogleAuthProvider,
   onIdTokenChanged,
   sendEmailVerification,
   signInWithEmailAndPassword,
-  signInWithPopup,
+  signInWithRedirect,
   signOut,
   type User,
   type UserCredential,
@@ -119,11 +120,24 @@ export class Auth {
     return result.claims['superAdmin'] === true;
   }
 
-  async signInWithGoogle(): Promise<UserCredential> {
+  // Redirect-based (not signInWithPopup): avoids the Cross-Origin-Opener-Policy
+  // warning Google's own sign-in page triggers when the SDK tries to close the
+  // popup. Navigates away, so callers should not expect this to resolve normally
+  // — the sign-in completes on the next load via completeGoogleRedirect().
+  async signInWithGoogle(): Promise<void> {
     try {
-      return await signInWithPopup(auth, new GoogleAuthProvider());
+      await signInWithRedirect(auth, new GoogleAuthProvider());
     } catch (error) {
       throw this.translateAuthError(error, 'signInWithGoogle');
+    }
+  }
+
+  /** Resolves a pending Google redirect sign-in on return, if one is in progress. */
+  async completeGoogleRedirect(): Promise<UserCredential | null> {
+    try {
+      return await getRedirectResult(auth);
+    } catch (error) {
+      throw this.translateAuthError(error, 'completeGoogleRedirect');
     }
   }
 
