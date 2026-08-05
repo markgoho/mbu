@@ -44,3 +44,4 @@ firebase-*.log
 firestore-debug.log
 .playwright/
 .playwright-cli/
+.secrets.local

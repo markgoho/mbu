@@ -3,7 +3,10 @@
   "version": 1,
   "cli": {
     "packageManager": "bun",
-    "schematicCollections": ["angular-eslint"]
+    "schematicCollections": [
+      "angular-eslint"
+    ],
+    "analytics": "24a6b271-2a2b-4978-aa87-7cd8ceac10a2"
   },
   "newProjectRoot": "projects",
   "projects": {
