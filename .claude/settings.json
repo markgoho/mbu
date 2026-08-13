@@ -17,11 +17,6 @@
     "deny": [],
     "ask": []
   },
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline-command.sh",
-    "padding": 0
-  },
   "hooks": {},
   "$schema": "https://json.schemastore.org/claude-code-settings.json"
 }
