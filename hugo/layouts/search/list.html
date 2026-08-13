@@ -5,12 +5,29 @@
 {{ end }}
 
 {{ define "main" }}
+  {{/* Same current-badge count as home/hero.html and
+    merit-badges/list.html — excludes the eagle-required listing page
+    and fully-discontinued badges, so this page never states a total
+    that disagrees with the rest of the site.
+  */}}
+  {{ $meritBadges := .Site.GetPage "/merit-badges" }}
+  {{ $badgeCount := 0 }}
+  {{ range $meritBadges.Pages }}
+    {{ if .File }}
+      {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+      {{ if and $json (not $json.discontinued) }}
+        {{ $badgeCount = add $badgeCount 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+
   <article class="search-page">
     {{ partial "breadcrumb.html" . }}
     <header class="search-header">
       <h1>{{ .Title }}</h1>
       <p class="search-description">
-        Find specific requirements across all 143 merit badges
+        Find specific requirements across all {{ $badgeCount }} merit badges
       </p>
     </header>
 

@@ -1,0 +1,28 @@
+{{- /*
+  home/featured.html — static three-badge showcase, below the hero.
+
+  Replaces the old hero carousel's badge picks with a plain grid, using
+  the shared badge-card partial the same way home/eagle.html does.
+  */
+-}}
+{{ $slugs := slice "camping" "competitive-gaming" "wildland-fire-management" }}
+
+
+<section class="home-featured">
+  <h2 class="home-featured__heading">Featured badges</h2>
+
+  <div class="badges-grid home-featured__grid">
+    {{ range $index, $slug := $slugs }}
+      {{ with $.Site.GetPage (printf "/merit-badges/%s" $slug) }}
+        {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+        {{ if $json }}
+          {{/* Always below the fold now that the hero has no images of
+            its own — force lazy-loading regardless of grid position,
+            same reasoning as home/eagle.html:21-24.
+          */}}
+          {{ partial "merit-badges/badge-card.html" (dict "page" . "json" $json "index" (add $index 6)) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+</section>

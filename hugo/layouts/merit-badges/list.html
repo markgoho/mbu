@@ -2,11 +2,33 @@
 
 {{ define "main" }}
   {{/* Main merit badges listing page */}}
+
+  {{/* Excludes discontinued badges (no requirements page, so not
+    Pagefind-indexed either — see home/hero.html) from both the count
+    and the grid below, so the two stay in agreement instead of the
+    header claiming a total the grid doesn't actually show.
+  */}}
+  {{ $badgeCount := 0 }}
+  {{ range .Pages }}
+    {{ if .File }}
+      {{ $json := index hugo.Data "merit-badges" (path.Base .File.Dir) }}
+      {{ if and $json (not $json.discontinued) }}
+        {{ $badgeCount = add $badgeCount 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+
   <header>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    <p class="badge-count">{{ len .Pages }} merit badges available</p>
-    <p><a href="/merit-badges/eagle-required/">🦅 View Eagle Required badges</a></p>
+    <p class="badge-count">{{ $badgeCount }} merit badges available</p>
+    <p>
+      <a href="/merit-badges/eagle-required/" class="button button-eagle">
+        {{ partial "icon.html" (dict "name" "medal" "class" "button-eagle-icon") }}
+        Browse Eagle-required
+      </a>
+    </p>
   </header>
 
   <section class="badges-grid">
@@ -15,7 +37,7 @@
       {{ if $page.File }}
         {{ $json = index hugo.Data "merit-badges" (path.Base $page.File.Dir) }}
       {{ end }}
-      {{ if $json }}
+      {{ if and $json (not $json.discontinued) }}
         {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
       {{ end }}
     {{ end }}

@@ -17,14 +17,14 @@
 .home-steps,
 .home-categories,
 .home-eagle,
-.home-search-band__inner {
+.home-featured {
   max-width: 75rem;
   margin-inline: auto;
   padding-inline: clamp(var(--space-xs), 4vw, var(--space-m));
 }
 
 /* ------------------------------------------------------------------ */
-/* Search — shared .home-search bar styling, used by home/search.html   */
+/* Search — shared .home-search bar styling, used by home/hero.html     */
 /* ------------------------------------------------------------------ */
 
 .home-hero {
@@ -74,36 +74,6 @@
 .home-search__submit {
   flex-shrink: 0;
   border-radius: var(--radius-full);
-}
-
-/* ------------------------------------------------------------------ */
-/* Search band — below the fold, moved out of the hero                  */
-/* ------------------------------------------------------------------ */
-
-.home-search-band {
-  padding-block: var(--space-l);
-  border-block-end: 1px solid var(--outline-variant);
-}
-
-.home-search-band__inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-m);
-}
-
-.home-search-band__heading {
-  margin: 0;
-  flex-shrink: 0;
-  font-family: var(--font-display);
-  font-size: var(--step-1);
-  color: var(--on-surface);
-}
-
-.home-search-band__form {
-  flex: 1;
-  min-width: 18rem;
-  margin-block: 0;
 }
 
 /* ------------------------------------------------------------------ */
@@ -199,7 +169,11 @@
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--outline-variant);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
   cursor: pointer;
 }
 
@@ -234,18 +208,30 @@
   border-radius: 50%;
   background: var(--outline-variant);
   flex-shrink: 0;
-  transition: background 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .category-tile:hover .category-tile__icon-ring,
 .category-tile:focus-visible .category-tile__icon-ring {
-  background: conic-gradient(from 180deg, var(--accent), var(--accent-container), var(--accent));
+  background: conic-gradient(
+    from 180deg,
+    var(--accent),
+    var(--accent-container),
+    var(--accent)
+  );
   box-shadow: 0 4px 14px var(--shadow-card);
 }
 
 .dark .category-tile:hover .category-tile__icon-ring,
 .dark .category-tile:focus-visible .category-tile__icon-ring {
-  background: conic-gradient(from 180deg, var(--amber, #ffb800), var(--amber-glow), var(--amber, #ffb800));
+  background: conic-gradient(
+    from 180deg,
+    var(--amber, #ffb800),
+    var(--amber-glow),
+    var(--amber, #ffb800)
+  );
   box-shadow: 0 0 18px var(--amber-glow, rgba(255, 184, 0, 0.3));
 }
 
@@ -298,6 +284,21 @@
 }
 
 /* ------------------------------------------------------------------ */
+/* Featured badges — static row below the hero.                        */
+/* ------------------------------------------------------------------ */
+
+.home-featured {
+  padding-block: var(--space-xl);
+}
+
+.home-featured__heading {
+  margin: 0 0 var(--space-l);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+/* ------------------------------------------------------------------ */
 /* Eagle strip                                                          */
 /* ------------------------------------------------------------------ */
 
@@ -334,8 +335,8 @@
 }
 
 /* ================================================================
-   Cinematic hero — full-bleed background image + featured-badge
-   carousel (Camping / Competitive Gaming / Wildland Fire Management).
+   Cinematic hero — full-bleed background image, single-column
+   search-first content.
    ================================================================ */
 
 /*
@@ -349,7 +350,6 @@
   --hero-on-muted: var(--on-surface-muted);
   --hero-scrim-1: color-mix(in oklab, var(--surface-raised) 90%, transparent);
   --hero-scrim-2: color-mix(in oklab, var(--surface) 82%, transparent);
-  --hero-border: var(--outline-variant);
 
   position: relative;
   overflow: clip;
@@ -361,7 +361,6 @@
   --hero-on-muted: oklch(0.82 0.01 86.03);
   --hero-scrim-1: oklch(0.14 0.023 153.3 / 0.92);
   --hero-scrim-2: oklch(0.18 0.028 153.3 / 0.88);
-  --hero-border: oklch(0.853 0.0244 86.09 / 0.15);
 }
 
 /* Full-bleed background image + gradient overlay */
@@ -421,15 +420,11 @@
   position: relative;
   z-index: 1;
   margin-inline: auto;
-  padding: var(--space-2xl) clamp(var(--space-m), 4vw, var(--space-2xl)) var(--space-xl);
+  padding: var(--space-2xl) clamp(var(--space-m), 4vw, var(--space-2xl))
+    var(--space-xl);
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   gap: var(--space-xl);
-  /* Center, not stretch/start: the text column's natural height rarely
-     matches the image's (which itself swings a lot with viewport width,
-     since it's aspect-ratio driven). Centering distributes whatever gap
-     remains evenly above/below, so there's never a single lopsided void
-     at some particular width — see .hero-d__content below. */
   align-items: center;
 }
 
@@ -437,9 +432,49 @@
   .hero-d__inner {
     grid-template-columns: 1fr;
   }
+
+  /* Below the fold real estate is precious here — keep the search bar
+     and CTAs immediately visible instead of pushing them down to make
+     room for a decorative image. */
   .hero-d__image-col {
-    order: -1;
+    display: none;
   }
+}
+
+.hero-d__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+/* Image — elevated card, glowing against the dark bg. Same generic
+   site/hero photo as the full-bleed background, shown crisp here
+   instead of blurred. */
+.hero-d__image-col {
+  position: relative;
+}
+
+.hero-d__image-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  box-shadow:
+    var(--shadow-raised),
+    0 0 0 1px var(--card-border-subtle);
+}
+
+.dark .hero-d__image-wrap {
+  box-shadow:
+    0 8px 40px oklch(0.165 0.023 153.3 / 0.5),
+    0 0 0 1px oklch(0.853 0.0244 86.09 / 0.1);
+}
+
+.hero-d__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-d__content {
@@ -452,34 +487,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
-}
-
-/* Quiet stat strip, directly under the CTA — real numbers instead of
-   decorative filler. */
-.hero-d__stats {
-  display: flex;
-  gap: var(--space-l);
-  padding-top: var(--space-m);
-  border-top: 1px solid var(--hero-border);
-}
-
-.hero-d__stat {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.hero-d__stat-number {
-  font-family: var(--font-display);
-  font-size: var(--step-3);
-  font-weight: 800;
-  color: var(--hero-on);
-}
-
-.hero-d__stat-label {
-  font-size: var(--step--1);
-  font-weight: 500;
-  color: var(--hero-on-muted);
 }
 
 .hero-d__title {
@@ -501,232 +508,8 @@
 }
 
 .hero-d__lead {
-  display: none;
   max-width: 50ch;
   font-size: var(--step-0);
   color: var(--hero-on-muted);
   line-height: 1.6;
-}
-
-.hero-d__badge-name {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.dark .hero-d__badge-name {
-  color: var(--amber, #ffb800);
-}
-
-/* View Requirements — the hero's one CTA, under the featured-badge text.
-   In light mode it's just the shared .button chrome (accent bg); dark
-   mode gets its own amber-on-dark treatment, same as .badge-hero__cta. */
-.hero-d__view-cta {
-  display: none;
-  width: 100%;
-  justify-content: center;
-  font-size: var(--step-0);
-  padding-block: var(--space-xs);
-}
-
-.dark .hero-d__view-cta {
-  background: var(--amber, #ffb800);
-  color: #1a1400;
-  border-color: var(--amber, #ffb800);
-
-  &:hover,
-  &:focus-visible {
-    background: #ffc83b;
-    color: #1a1400;
-    border-color: #ffc83b;
-  }
-}
-
-.hero-d__cta-icon {
-  width: 1.1em;
-  height: 1.1em;
-}
-
-/* Carousel arrows — centered in their own row below the full grid */
-.hero-d__carousel-row {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.hero-d__carousel-nav {
-  display: none;
-  gap: var(--space-m);
-  scroll-snap-align: center;
-}
-
-.hero-d__carousel-btn {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--hero-border);
-  background: var(--surface-raised);
-  color: var(--hero-on-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.hero-d__carousel-btn:hover {
-  background: var(--accent-container);
-  color: var(--hero-on);
-  border-color: var(--accent);
-}
-
-.dark .hero-d__carousel-btn {
-  border-color: oklch(0.853 0.0244 86.09 / 0.2);
-  background: oklch(0.98 0.003 86.03 / 0.06);
-  color: oklch(0.85 0.01 86.03);
-}
-
-.dark .hero-d__carousel-btn:hover {
-  background: oklch(0.98 0.003 86.03 / 0.15);
-  color: var(--tan-000, #faf9f6);
-  border-color: oklch(0.853 0.0244 86.09 / 0.4);
-}
-
-.hero-d__arrow-icon {
-  width: 1.75rem;
-  height: 1.75rem;
-}
-
-.hero-d__arrow-icon--flip {
-  transform: scaleX(-1);
-}
-
-/* Image — elevated card, glowing against the dark bg. Three per-badge
-   images are absolutely stacked in the same box. */
-.hero-d__image-col {
-  position: relative;
-}
-
-.hero-d__image-wrap {
-  position: relative;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  aspect-ratio: 16 / 9;
-  box-shadow: var(--shadow-raised), 0 0 0 1px var(--card-border-subtle);
-}
-
-.dark .hero-d__image-wrap {
-  box-shadow:
-    0 8px 40px oklch(0.165 0.023 153.3 / 0.5),
-    0 0 0 1px oklch(0.853 0.0244 86.09 / 0.1);
-}
-
-.hero-d__image {
-  display: none;
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Bottom scrim so the badge caption stays legible over any photo */
-.hero-d__image-scrim {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to top,
-    oklch(0.12 0.02 153.3 / 0.7) 0%,
-    oklch(0.12 0.02 153.3 / 0.3) 35%,
-    transparent 65%
-  );
-  pointer-events: none;
-}
-
-/* ------------------------------------------------------------------ */
-/* Featured-badge caption — overlaid at the bottom of the image         */
-/* ------------------------------------------------------------------ */
-
-.hero-d__badge-tags {
-  position: absolute;
-  z-index: 2;
-  inset-inline: 0;
-  bottom: 0;
-  padding: var(--space-xs) var(--space-m) var(--space-xs);
-  /* Slightly opaque backing (not just the gradient scrim) so caption
-     text stays legible over any photo — kept light to not block the
-     image, but present for contrast. */
-  background: oklch(0.12 0.02 153.3 / 0.4);
-  backdrop-filter: blur(6px);
-}
-
-.hero-d__badge-tag {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 0.3rem;
-}
-
-.hero-d__badge-tag-row {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3xs);
-}
-
-.hero-d__badge-tag-icon {
-  width: 1.1em;
-  height: 1.1em;
-  color: var(--amber, #ffb800);
-}
-
-.hero-d__badge-tag-eyebrow {
-  font-size: 0.7rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--amber, #ffb800);
-}
-
-.hero-d__badge-tag-title {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--tan-000, #faf9f6);
-  text-shadow: 0 2px 12px oklch(0.1 0.02 153.3 / 0.6);
-}
-
-/* ------------------------------------------------------------------ */
-/* Carousel — radio inputs + sibling selectors, no JS.                  */
-/* The checked radio's slug drives which [data-slide] elements show.    */
-/* ------------------------------------------------------------------ */
-
-/* The radios are direct children of .hero-d__inner (a grid container),
-   but .visually-hidden makes them position: absolute, which excludes
-   them from grid auto-placement — no extra grid cell is consumed. */
-
-#hero-badge-camping:checked ~ .hero-d__content [data-slide="camping"],
-#hero-badge-competitive-gaming:checked ~ .hero-d__content [data-slide="competitive-gaming"],
-#hero-badge-wildland-fire-management:checked ~ .hero-d__content [data-slide="wildland-fire-management"],
-#hero-badge-camping:checked ~ .hero-d__image-col .hero-d__image[data-slide="camping"],
-#hero-badge-competitive-gaming:checked ~ .hero-d__image-col .hero-d__image[data-slide="competitive-gaming"],
-#hero-badge-wildland-fire-management:checked ~ .hero-d__image-col .hero-d__image[data-slide="wildland-fire-management"] {
-  display: block;
-}
-
-#hero-badge-camping:checked ~ .hero-d__image-col .hero-d__badge-tag[data-slide="camping"],
-#hero-badge-competitive-gaming:checked ~ .hero-d__image-col .hero-d__badge-tag[data-slide="competitive-gaming"],
-#hero-badge-wildland-fire-management:checked ~ .hero-d__image-col .hero-d__badge-tag[data-slide="wildland-fire-management"],
-#hero-badge-camping:checked ~ .hero-d__carousel-row .hero-d__carousel-nav[data-slide="camping"],
-#hero-badge-competitive-gaming:checked ~ .hero-d__carousel-row .hero-d__carousel-nav[data-slide="competitive-gaming"],
-#hero-badge-wildland-fire-management:checked ~ .hero-d__carousel-row .hero-d__carousel-nav[data-slide="wildland-fire-management"] {
-  display: flex;
-}
-
-#hero-badge-camping:checked ~ .hero-d__content .hero-d__view-cta[data-slide="camping"],
-#hero-badge-competitive-gaming:checked ~ .hero-d__content .hero-d__view-cta[data-slide="competitive-gaming"],
-#hero-badge-wildland-fire-management:checked ~ .hero-d__content .hero-d__view-cta[data-slide="wildland-fire-management"] {
-  display: inline-flex;
 }

@@ -1,64 +1,63 @@
 {{- /*
   home/hero.html — homepage hero.
 
-  Full-bleed cinematic hero with a featured-badge carousel: prev/next
-  cycles through Camping, Competitive Gaming, and Wildland Fire
-  Management. Built with radio inputs + CSS sibling selectors instead of
-  JS — each `[data-slide]` element (lead paragraph, image, badge caption,
-  "Learn about <badge>" CTA, prev/next controls) is pre-rendered once per
-  badge, and `#hero-badge-<slug>:checked ~ ... [data-slide="<slug>"]`
-  in pages/home.css shows the matching one. The prev/next controls are
-  <label for> elements pointing at the neighbouring radio — clicking one
-  checks that radio natively, no script involved. Search lives in
-  home/search.html, below the fold, not in the hero.
-*/ -}}
+  Full-bleed background image, search-first content, one static
+  foreground image (the same generic site/hero photo as the background,
+  shown crisp instead of blurred). Replaces the old featured-badge
+  carousel (three hand-picked badges, cycled via radio inputs + CSS
+  sibling selectors) — a Clarity heatmap showed almost no clicks landing
+  there, while the header search icon and "Browse Badges" CTA got most
+  of them. The three featured badges still get a place on the page, in
+  home/featured.html, below the fold.
+  */
+-}}
 {{ $badgeImages := index hugo.Data "badge-images" }}
 
-{{ $badges := slice
-  (dict
-    "slug" "camping"
-    "icon" "tent"
-    "title" "Camping"
-    "href" "/merit-badges/camping/"
-    "alt" "Camping gear — backpack, hiking boots, and a trail map — laid out on a picnic table"
-    "leadPre" "Dive deep into the wilderness with the "
-    "leadBadge" "Camping Merit Badge"
-    "leadPost" ". Learn to pitch a tent, build a fire, and survive in the great outdoors."
-  )
-  (dict
-    "slug" "competitive-gaming"
-    "icon" "game-controller"
-    "title" "Competitive Gaming"
-    "href" "/merit-badges/competitive-gaming/"
-    "alt" "A gaming desk with controllers, a mechanical keyboard, a headset, and an esports strategy notebook"
-    "leadPre" "Level up your strategy with the "
-    "leadBadge" "Competitive Gaming Merit Badge"
-    "leadPost" ". Learn game design, esports teamwork, and how to compete with integrity."
-  )
-  (dict
-    "slug" "wildland-fire-management"
-    "icon" "flame"
-    "title" "Wildland Fire Management"
-    "href" "/merit-badges/wildland-fire-management/"
-    "alt" "Wildland firefighting gear — hard hat, gloves, radio, and a fire containment map — on a table overlooking a forested ridge"
-    "leadPre" "Get hands-on with the "
-    "leadBadge" "Wildland Fire Management Merit Badge"
-    "leadPost" ". Learn fire behavior, prevention, and the tools crews use to protect the land."
-  )
-}}
-{{ $n := len $badges }}
+{{/* $badgeCount and $eagleCount are the real, current merit badge
+  counts — used in the browse links here, on merit-badges/list.html, and
+  in search/list.html's copy, so visitors never see two different
+  "total badges" figures anywhere on the site.
 
-{{/* Real site stats, not decoration — ground the left column against
-  the image's bottom edge (see .hero-d__stats in pages/home.css) rather
-  than leaving a block of empty dark space under the CTA. */}}
+  $badgeCount excludes two things $meritBadges.Pages includes: the
+  /merit-badges/eagle-required/ listing page itself (not a badge, so it
+  has no hugo.Data entry — the "and $json" guard below drops it), and
+  badges BSA has fully discontinued (discontinued-notice.html). A
+  discontinued badge still gets a real requirements page and stays
+  Pagefind-searchable through its completion grace period, so Pagefind's
+  own index count runs one higher than this — that's fine, it's an
+  internal detail we don't need to surface as a competing headline
+  number.
+*/}}
 {{ $meritBadges := .Site.GetPage "/merit-badges" }}
-{{ $badgeCount := len $meritBadges.Pages }}
-{{/* Eagle-required is a fixed BSA constant (14 required categories),
-  NOT len(badges flagged eagle_required) — three of those categories are
-  either/or choices (Hiking/Cycling/Swimming, Emergency Preparedness/
-  Lifesaving, Environmental Science/Sustainability), so summing the
-  per-badge flags overcounts to 17. */}}
-{{ $eagleCount := 14 }}
+{{ $badgeCount := 0 }}
+{{ $eagleCount := 0 }}
+{{ $eagleGroupsSeen := slice }}
+{{ range $meritBadges.Pages }}
+  {{ if .File }}
+    {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+    {{ if and $json (not $json.discontinued) }}
+      {{ $badgeCount = add $badgeCount 1 }}
+    {{ end }}
+    {{/* Eagle-required categories, not badges: Cycling/Hiking/Swimming is
+      one category satisfied by any of three badges (same for Emergency
+      Preparedness/Lifesaving and Environmental Science/Sustainability),
+      so len(eagle_required badges) overcounts. eagle_group names the
+      shared category for those — dedup on it; ungrouped required
+      badges are their own category.
+    */}}
+    {{ if and $json $json.eagle_required }}
+      {{ if $json.eagle_group }}
+        {{ if not (in $eagleGroupsSeen $json.eagle_group) }}
+          {{ $eagleGroupsSeen = $eagleGroupsSeen | append $json.eagle_group }}
+          {{ $eagleCount = add $eagleCount 1 }}
+        {{ end }}
+      {{ else }}
+        {{ $eagleCount = add $eagleCount 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 
 <section class="home-hero hero-d">
   <div class="hero-d__bg">
@@ -72,108 +71,72 @@
       "sizes" "100vw"
       "fetchpriority" "high"
       "loading" "eager"
-    ) }}
+      )
+    }}
   </div>
 
   <div class="hero-d__inner">
-    {{/* Direct children of .hero-d__inner, not wrapped — the ~ sibling
-      selectors in pages/home.css need these as true DOM siblings of
-      .hero-d__content / .hero-d__image-col / .hero-d__carousel-row.
-      display:contents on a wrapper would NOT work here: it only changes
-      the box tree, not the DOM tree that selector matching uses. */}}
-    {{ range $i, $b := $badges }}
-      <input
-        type="radio"
-        name="hero-badge"
-        id="hero-badge-{{ $b.slug }}"
-        class="hero-d__radio visually-hidden"
-        aria-label="{{ $b.title }}"
-        {{ if eq $i 0 }}checked{{ end }} />
-    {{ end }}
-
     <div class="hero-d__content">
       <div class="hero-d__content-top">
-        <h1 class="hero-d__title">
-          Master New <em>Skills</em>
-        </h1>
+        <h1 class="hero-d__title">Find any merit badge <em>requirement</em></h1>
+        <p class="hero-d__lead">
+          Search merit badges and their requirements, or browse the full list to
+          find what you're working on.
+        </p>
 
-        {{ range $badges }}
-          <p class="hero-d__lead" data-slide="{{ .slug }}">
-            {{ .leadPre }}<strong class="hero-d__badge-name">{{ .leadBadge }}</strong>{{ .leadPost }}
-          </p>
-        {{ end }}
+        <form
+          id="hero-search-form"
+          class="home-search"
+          action="/search/"
+          method="get"
+          role="search">
+          <label class="visually-hidden" for="hero-search-input"
+            >Search merit badges</label
+          >
+          {{ partial "icon.html" (dict "name" "search" "class" "home-search__icon") }}
+          <input
+            id="hero-search-input"
+            class="home-search__input"
+            type="search"
+            name="q"
+            placeholder="Search merit badges…"
+            autocomplete="off" />
+          <button type="submit" class="button home-search__submit">Go</button>
+        </form>
 
-        {{ range $badges }}
-          <a href="{{ .href }}" data-slide="{{ .slug }}" class="button hero-d__view-cta">
-            Learn about {{ .title }}
-            {{ partial "icon.html" (dict "name" "arrow-right" "class" "hero-d__cta-icon") }}
+        <div class="hero-d__links">
+          <a href="/merit-badges/" class="button" data-hero-browse="all">
+            Browse all {{ $badgeCount }} badges
           </a>
-        {{ end }}
-      </div>
-
-      <div class="hero-d__stats">
-        <div class="hero-d__stat">
-          <span class="hero-d__stat-number">{{ $badgeCount }}</span>
-          <span class="hero-d__stat-label">Merit badges</span>
-        </div>
-        <div class="hero-d__stat">
-          <span class="hero-d__stat-number">{{ $eagleCount }}</span>
-          <span class="hero-d__stat-label">Eagle required</span>
+          <a
+            href="/merit-badges/eagle-required/"
+            class="button button-eagle"
+            data-hero-browse="eagle">
+            {{ partial "icon.html" (dict "name" "medal" "class" "button-eagle-icon") }}
+            Browse {{ $eagleCount }} Eagle-required badges
+          </a>
         </div>
       </div>
     </div>
 
     <div class="hero-d__image-col">
       <div class="hero-d__image-wrap">
-        {{/* The sizes value below matches the 768px column-collapse
-          breakpoint and the .hero-d__inner padding-inline (2 *
-          --space-m's floor, 1.6875rem) below it — not the full 100vw the
-          old value claimed, which made the browser fetch an oversized
-          srcset candidate. See pages/home.css for both values. */}}
-        {{ range $i, $b := $badges }}
-          {{ with index $badgeImages.badges $b.slug }}
-            {{ partial "imagekit/img.html" (dict
-              "path" (printf "/mbu-assets/merit-badges/%s/emblem" $b.slug)
-              "v" .v
-              "maxWidth" 800
-              "width" 1200
-              "height" 670
-              "alt" $b.alt
-              "sizes" "(max-width: 768px) calc(100vw - 3.375rem), 600px"
-              "class" "hero-d__image"
-              "attrs" (dict "data-slide" $b.slug)
-              "loading" (cond (eq $i 0) "eager" "lazy")
-            ) }}
-          {{ end }}
-        {{ end }}
-        <div class="hero-d__image-scrim"></div>
-        <div class="hero-d__badge-tags">
-          {{ range $badges }}
-            <div class="hero-d__badge-tag" data-slide="{{ .slug }}">
-              <div class="hero-d__badge-tag-row">
-                {{ partial "icon.html" (dict "name" .icon "weight" "duotone" "class" "hero-d__badge-tag-icon") }}
-                <span class="hero-d__badge-tag-eyebrow">Featured Badge</span>
-              </div>
-              <span class="hero-d__badge-tag-title">{{ .title }}</span>
-            </div>
-          {{ end }}
-        </div>
+        {{ partial "imagekit/img.html" (dict
+          "path" "/mbu-assets/site/hero"
+          "v" $badgeImages.site.hero.v
+          "maxWidth" 900
+          "width" 1264
+          "height" 848
+          "alt" "Scouting gear — a compass, trail map, and merit badges — arranged on a table"
+          "sizes" "45vw"
+          "class" "hero-d__image"
+          "loading" "lazy"
+          )
+        }}
       </div>
-    </div>
-
-    <div class="hero-d__carousel-row">
-      {{ range $i, $b := $badges }}
-        {{ $prev := index $badges (mod (add $i (sub $n 1)) $n) }}
-        {{ $next := index $badges (mod (add $i 1) $n) }}
-        <div class="hero-d__carousel-nav" data-slide="{{ $b.slug }}">
-          <label for="hero-badge-{{ $prev.slug }}" class="hero-d__carousel-btn" aria-hidden="true">
-            {{ partial "icon.html" (dict "name" "arrow-right" "class" "hero-d__arrow-icon hero-d__arrow-icon--flip") }}
-          </label>
-          <label for="hero-badge-{{ $next.slug }}" class="hero-d__carousel-btn" aria-hidden="true">
-            {{ partial "icon.html" (dict "name" "arrow-right" "class" "hero-d__arrow-icon") }}
-          </label>
-        </div>
-      {{ end }}
     </div>
   </div>
 </section>
+
+{{ $heroTS := resources.Get "ts/home-hero.ts" | js.Build (dict "minify" true) }}
+<script>{{ $heroTS.Content | safeJS }}</script>
