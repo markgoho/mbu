@@ -331,6 +331,28 @@
   }
 }
 
+/*
+ * Same-document view transition: when scrolling moves the "current"
+ * requirement (see drg-req-rail.ts), the number/text that were sitting in
+ * the body morph into the rail's echo of them instead of just swapping.
+ * Names are assigned and cleared by that script -- fixed names are fine
+ * since only one requirement is ever mid-morph at a time.
+ */
+::view-transition-group(drg-rail-num),
+::view-transition-group(drg-rail-text) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+::view-transition-old(drg-rail-num),
+::view-transition-new(drg-rail-num),
+::view-transition-old(drg-rail-text),
+::view-transition-new(drg-rail-text) {
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
+
 /* ------------------------------------------------------------------ */
 /* External link & download                                             */
 /* ------------------------------------------------------------------ */

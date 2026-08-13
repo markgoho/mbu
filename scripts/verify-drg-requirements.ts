@@ -292,12 +292,20 @@ function expectedShortcodeForRequirement(
     return "requirement";
   }
 
-  if (
-    (childLooksLikeScenarioLabel(trimmedText) ||
-      childLooksLikeListLabel(trimmedText)) &&
-    shouldAllowPlainRequirementForLabel(trimmedText, parentText)
-  ) {
-    return "requirement";
+  // "The difference(s) between X and Y" reads as a bare label but, unlike
+  // "Square basket" or "Electrical terms", the merged sentence needs no
+  // article and inherited-requirement.html now lower-cases the leading
+  // "The" -- so skip the generic label carve-out below (which would let
+  // any "explain/discuss the following"-style parent exempt it) and fall
+  // through to the general parent-quality check instead.
+  if (!/^the\s+differences?\b/i.test(trimmedText)) {
+    if (
+      (childLooksLikeScenarioLabel(trimmedText) ||
+        childLooksLikeListLabel(trimmedText)) &&
+      shouldAllowPlainRequirementForLabel(trimmedText, parentText)
+    ) {
+      return "requirement";
+    }
   }
 
   if (childLooksLikeStandaloneQuestion(trimmedText)) {
@@ -309,13 +317,6 @@ function expectedShortcodeForRequirement(
   }
 
   if (/^do\s+one\s+of\s+the\s+following/i.test(trimmedText)) {
-    return "requirement";
-  }
-
-  if (
-    /^the difference\b/i.test(trimmedText) ||
-    /^the differences\b/i.test(trimmedText)
-  ) {
     return "requirement";
   }
 

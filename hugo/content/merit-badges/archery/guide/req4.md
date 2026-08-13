@@ -22,9 +22,7 @@ This requirement covers four topics that every archer needs to understand:
 
 ## Req 4a — Ends and Rounds
 
-{{< drg/requirement number="4a" >}}
-The difference between an end and a round
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="4a" req_path="4.a" topic="The difference between an end and a round" />}}
 
 These two terms describe how shooting is organized in archery competitions and practice sessions.
 
@@ -50,9 +48,7 @@ The easiest way to remember: an **end** is a small group of arrows you shoot bef
 
 ## Req 4b — Field, Target, and 3-D Archery
 
-{{< drg/requirement number="4b" >}}
-The differences among field, target, and 3-D archery
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="4b" req_path="4.b" topic="The differences among field, target, and 3-D archery" />}}
 
 ### Target Archery
 
@@ -89,9 +85,7 @@ Field archery takes place on a walking course through varied terrain — typical
 
 ## Req 4c — World Archery Five-Color Target Scoring
 
-{{< drg/requirement number="4c" >}}
-How the five-color World Archery Federation target is scored
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="4c" req_path="4.c" topic="How the five-color World Archery Federation target is scored" />}}
 
 The World Archery (WA) target is the one you see at the Olympics and most organized target archery events. It has five colors arranged in concentric rings, with each color divided into two scoring zones (an inner and an outer ring). This creates **10 scoring rings** plus an inner "X" ring.
 
@@ -122,9 +116,7 @@ Remember the color order from center to outside: **Gold, Red, Blue, Black, White
 
 ## Req 4d — NFAA Target Scoring
 
-{{< drg/requirement number="4d" >}}
-How the National Field Archery Association (NFAA) black-and-white field targets and blue indoor targets are scored.
-{{< /drg/requirement >}}
+{{< drg/inherited-requirement number="4d" req_path="4.d" topic="How the National Field Archery Association (NFAA) black-and-white field targets and blue indoor targets are scored" />}}
 
 The NFAA uses different target designs than World Archery. Here is how each one works.
 

@@ -49,10 +49,22 @@
   {{- $actionText = replaceRE `:\s*$` "" $actionText -}}
   {{- $topicText := $topic -}}
   {{- $topicStartsWithOwnAction := false -}}
-  {{- if findRE `(?i)^(explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick)\b` $topicText -}}
+  {{- /* Keep in sync with OWN_ACTION_VERBS in scripts/verify-drg-requirements.ts --
+    a verb missing here but present there lets the verifier accept
+    inherited-requirement for an already-self-sufficient topic, and this
+    shortcode then wrongly prepends the parent's action anyway. */ -}}
+  {{- if findRE `(?i)^(obtain|explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick|select|choose|learn|help|point|tour|share|make|write|draw|locate|find|outline|plan|set|review|collect|calculate|give|state|explore|diagram|establish|follow|check|render|discover|document|think|do|observe|sketch|develop|meet)\b` $topicText -}}
     {{- $topicStartsWithOwnAction = true -}}
   {{- end -}}
   {{- if findRE `(?i)^(with|after|before|using|by)\b` $topicText -}}
+    {{- $topicStartsWithOwnAction = true -}}
+  {{- end -}}
+  {{- /* A topic with an internal sentence break ("Either...name. By sight...
+    long.") is already a complete, multi-sentence instruction, not a bare
+    label -- composing it onto the parent's verb produces "Then do Either
+    by sight...". Mirrors childLooksLikeDeclarativeTeachingPrompt in
+    verify-drg-requirements.ts. A single trailing period doesn't count. */ -}}
+  {{- if findRE `\.\s+\S` $topicText -}}
     {{- $topicStartsWithOwnAction = true -}}
   {{- end -}}
   {{- if and (not $topicStartsWithOwnAction) (not (findRE `^(?i)(a|an|the)\b` $topicText)) (findRE `(?i)\b(of|for)\s*$` $actionText) -}}
@@ -69,10 +81,34 @@
   {{- $actionText = replaceRE `(?i)\bdo the following\s*$` "" $actionText -}}
   {{- $actionText = strings.TrimSpace $actionText -}}
   {{- $actionText = replaceRE `\s+` " " $actionText -}}
+  {{- /* Some parent requirements carry a narrative preamble before the
+    actual instruction ("Importance of Exploration. Explain to your
+    counselor why it is important to explore. Discuss the following:").
+    Keeping the whole thing as the verb glues that preamble onto every
+    child. Only the last sentence -- the one that actually ends in "the
+    following" -- is the operative verb. */ -}}
+  {{- $actionSentences := split $actionText ". " -}}
+  {{- $actionText = index $actionSentences (sub (len $actionSentences) 1) -}}
   {{- /* Merge only when the child is a topic label, not when it already starts with its own operative wording. */ -}}
   {{- if or $topicStartsWithOwnAction (le (len $actionText) 6) -}}
     {{- $displayText = $topicText -}}
   {{- else -}}
+    {{- /* Some content files write the topic with its own trailing period.
+      The merge always appends one, so drop an existing one first to avoid
+      a double period ("...explorer.."). */ -}}
+    {{- $topicText = replaceRE `\.\s*$` "" $topicText -}}
+    {{- /* A topic that opens with a determiner or WH-word reads as its own
+      sentence ("The difference between...", "How the target is scored"),
+      capitalized accordingly. Merged after the parent's verb it's no
+      longer sentence-initial, so lower-case that opener ("Explain the
+      difference between...", "Explain how the target is scored").
+      Limited to a known word list rather than "any capitalized word" so
+      genuine proper nouns (NFAA, John Muir, ...) keep their capital. */ -}}
+    {{- $topicLeadWords := slice "The" "This" "These" "Those" "A" "An" "How" "What" "When" "Where" "Why" "Which" -}}
+    {{- $topicFirstWord := index (split $topicText " ") 0 -}}
+    {{- if in $topicLeadWords $topicFirstWord -}}
+      {{- $topicText = printf "%s%s" (lower (substr $topicText 0 1)) (substr $topicText 1) -}}
+    {{- end -}}
     {{- $displayText = printf "%s %s." $actionText $topicText -}}
     {{- $displayText = replaceRE `\s+\.` "." $displayText -}}
   {{- end -}}

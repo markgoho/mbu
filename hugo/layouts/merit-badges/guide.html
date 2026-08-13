@@ -140,6 +140,9 @@
     });
   </script>
 
+  {{ $reqRailTS := resources.Get "ts/drg-req-rail.ts" | js.Build (dict "minify" true) }}
+  <script>{{ $reqRailTS.Content | safeJS }}</script>
+
   {{/* JSON-LD structured data */}}
   {{ if .IsSection }}
     {{ partial "json-ld/drg-index.html" . }}
