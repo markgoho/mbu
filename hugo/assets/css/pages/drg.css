@@ -254,12 +254,13 @@
 }
 
 .drg-mobile-nav__group {
-  font-size: var(--step--2);
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--on-surface-muted);
+  opacity: 0.75;
   padding: var(--space-xs) 0.75rem var(--space-3xs);
-  font-weight: 800;
+  font-weight: 700;
   margin-top: var(--space-xs);
 }
 
@@ -275,9 +276,10 @@
   border-radius: var(--radius-md);
   color: var(--on-surface-muted);
   text-decoration: none;
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--step-0);
+  line-height: 1.35;
   transition:
     background-color 0.15s ease,
     color 0.15s ease,
@@ -359,11 +361,14 @@
   gap: var(--space-2xs);
   min-height: 44px;
   padding-inline: var(--space-xs);
+  padding-block: var(--space-3xs);
   border-radius: var(--radius-md);
   color: var(--on-surface-muted);
   text-decoration: none;
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--step--1);
+  line-height: 1.35;
   transition:
     background-color 0.2s,
     color 0.2s;
@@ -377,17 +382,19 @@
 .drg-nav__link--active {
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
+  font-weight: 700;
 }
 
 .drg-nav__group-title {
-  font-size: var(--step--2);
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: var(--on-surface-muted);
+  opacity: 0.75;
   margin-top: var(--space-m);
   margin-bottom: var(--space-2xs);
   padding-left: var(--space-xs);
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
 
   /* Separator for the "Reference" group at bottom of sidebar */
   &:last-of-type {

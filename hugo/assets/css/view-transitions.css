@@ -112,7 +112,9 @@
 .badge-preview__title,
 .req-card__title,
 .req-child__title,
-.drg-header__title {
+.drg-header__title,
+.drg-nav__link,
+.drg-mobile-nav__link {
   view-transition-class: req-title;
 }
 

@@ -83,3 +83,8 @@ Canonical role names are used as-is (`needs-triage`, `needs-info`, `ready-for-ag
 ### Domain docs
 
 Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`functions/CONTEXT.md` + `functions/docs/adr/`). See `docs/agents/domain.md`.
+
+# Intrinsic Web Design & Sizing
+
+Always design content-out using Intrinsic Web Design principles rather than hardcoding dimensions or relying on breakpoint-heavy overrides. For aligned icon-and-text headers, use CSS Grid with `min-content 1fr` columns and `auto` rows, letting icons span the text rows with `height: 100%; aspect-ratio: 1 / 1; align-self: center;` so
+their size is derived purely from the sibling content height. Use `display: contents` on semantic heading wrappers so nested children participate directly in the parent grid tracks.

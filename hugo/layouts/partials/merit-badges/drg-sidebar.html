@@ -22,11 +22,30 @@
 {{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
 {{ $printPage := $page.Site.GetPage (printf "%sprint/" $page.CurrentSection.RelPermalink) }}
 
+{{ $currentReqKey := "" }}
+{{ if not $page.IsSection }}
+  {{ $reqNum := $page.Params.req_number | default "" }}
+  {{ if $reqNum }}
+    {{ $currentReqKey = replace $reqNum "." "-" }}
+    {{ $currentReqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $currentReqKey }}
+    {{ $currentReqKey = lower $currentReqKey }}
+  {{ else }}
+    {{ $reqRaw := path.Base $page.File.TranslationBaseName | replaceRE "^req" "" }}
+    {{ $currentReqKey = replace $reqRaw "." "-" }}
+    {{ $currentReqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $currentReqKey }}
+    {{ $currentReqKey = lower $currentReqKey }}
+  {{ end }}
+{{ end }}
+
 <aside class="drg-sidebar-wrap">
   <div class="drg-sidebar">
     {{ partial "merit-badges/badge-identity.html" (dict "badge" $badgePage "json" $json "slug" $slug) }}
 
     {{ if $guideNav }}
+      {{ $usedDesktopKeys := slice }}
+      {{ if $currentReqKey }}
+        {{ $usedDesktopKeys = $usedDesktopKeys | append $currentReqKey }}
+      {{ end }}
       <ul class="drg-nav">
         {{ range $guideNav }}
           {{ if .group_title }}
@@ -34,12 +53,38 @@
           {{ end }}
 
           {{ range .items }}
+            {{ $isCurrent := eq .url $currentUrl }}
+            {{ $itemKey := "" }}
+            {{ if not $isCurrent }}
+              {{ $targetPage := $page.Site.GetPage .url }}
+              {{ with $targetPage }}
+                {{ if not .IsSection }}
+                  {{ $tReqNum := .Params.req_number | default "" }}
+                  {{ if $tReqNum }}
+                    {{ $itemKey = replace $tReqNum "." "-" }}
+                    {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                    {{ $itemKey = lower $itemKey }}
+                  {{ else }}
+                    {{ $tReqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
+                    {{ $itemKey = replace $tReqRaw "." "-" }}
+                    {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                    {{ $itemKey = lower $itemKey }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ if and $itemKey (not (in $usedDesktopKeys $itemKey)) }}
+                {{ $usedDesktopKeys = $usedDesktopKeys | append $itemKey }}
+              {{ else }}
+                {{ $itemKey = "" }}
+              {{ end }}
+            {{ end }}
             <li class="drg-nav__item">
               <a
                 href="{{ .url }}"
-                class="drg-nav__link {{ if eq .url $currentUrl }}
+                class="drg-nav__link {{ if $isCurrent }}
                   drg-nav__link--active
-                {{ end }}">
+                {{ end }}"
+                {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
                 {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
               </a>
             </li>
@@ -67,6 +112,10 @@
 
 {{/* Mobile-only collapsible navigation (hidden when the sidebar above is visible) */}}
 {{ if $guideNav }}
+  {{ $usedMobileKeys := slice }}
+  {{ if $currentReqKey }}
+    {{ $usedMobileKeys = $usedMobileKeys | append $currentReqKey }}
+  {{ end }}
   <nav class="drg-mobile-nav-wrap" aria-label="Guide navigation">
     <details class="drg-mobile-nav">
       <summary class="drg-mobile-nav__toggle">
@@ -85,14 +134,40 @@
               <li class="drg-mobile-nav__group">{{ .group_title }}</li>
             {{ end }}
             {{ range .items }}
+              {{ $isCurrent := eq .url $currentUrl }}
+              {{ $itemKey := "" }}
+              {{ if not $isCurrent }}
+                {{ $targetPage := $page.Site.GetPage .url }}
+                {{ with $targetPage }}
+                  {{ if not .IsSection }}
+                    {{ $tReqNum := .Params.req_number | default "" }}
+                    {{ if $tReqNum }}
+                      {{ $itemKey = replace $tReqNum "." "-" }}
+                      {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                      {{ $itemKey = lower $itemKey }}
+                    {{ else }}
+                      {{ $tReqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
+                      {{ $itemKey = replace $tReqRaw "." "-" }}
+                      {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                      {{ $itemKey = lower $itemKey }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ if and $itemKey (not (in $usedMobileKeys $itemKey)) }}
+                  {{ $usedMobileKeys = $usedMobileKeys | append $itemKey }}
+                {{ else }}
+                  {{ $itemKey = "" }}
+                {{ end }}
+              {{ end }}
               <li>
                 <a
                   href="{{ .url }}"
-                  class="drg-mobile-nav__link {{ if eq .url $currentUrl }}
+                  class="drg-mobile-nav__link {{ if $isCurrent }}
                     drg-mobile-nav__link--active
-                  {{ end }}">
+                  {{ end }}"
+                  {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
                   <span>{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}</span>
-                  {{ if eq .url $currentUrl }}
+                  {{ if $isCurrent }}
                     <svg class="drg-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   {{ end }}
                 </a>
