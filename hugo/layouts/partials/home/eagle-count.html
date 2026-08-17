@@ -1,0 +1,33 @@
+{{- /*
+  home/eagle-count.html — the real, current count of Eagle-required
+  merit badge *categories* (not badges). Shared by home/hero.html and
+  home/eagle.html so the "Browse N Eagle-required badges" button reads
+  the same N everywhere on the homepage.
+
+  Eagle-required categories, not badges: Cycling/Hiking/Swimming is one
+  category satisfied by any of three badges (same for Emergency
+  Preparedness/Lifesaving and Environmental Science/Sustainability), so
+  len(eagle_required badges) overcounts. eagle_group names the shared
+  category for those — dedup on it; ungrouped required badges are their
+  own category.
+  */
+-}}
+{{ $meritBadges := .Site.GetPage "/merit-badges" }}
+{{ $eagleCount := 0 }}
+{{ $eagleGroupsSeen := slice }}
+{{ range $meritBadges.Pages }}
+  {{ if .File }}
+    {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+    {{ if and $json $json.eagle_required }}
+      {{ if $json.eagle_group }}
+        {{ if not (in $eagleGroupsSeen $json.eagle_group) }}
+          {{ $eagleGroupsSeen = $eagleGroupsSeen | append $json.eagle_group }}
+          {{ $eagleCount = add $eagleCount 1 }}
+        {{ end }}
+      {{ else }}
+        {{ $eagleCount = add $eagleCount 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $eagleCount }}

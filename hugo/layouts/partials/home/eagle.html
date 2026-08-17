@@ -27,8 +27,8 @@
     {{ end }}
   </div>
 
-  <a href="/merit-badges/eagle-required/" class="home-eagle__link">
-    View all Eagle-required
-    {{ partial "icon.html" (dict "name" "arrow-right" "class" "home-eagle__link-icon") }}
+  <a href="/merit-badges/eagle-required/" class="button button-eagle">
+    {{ partial "icon.html" (dict "name" "medal" "class" "button-eagle-icon") }}
+    Browse {{ partial "home/eagle-count.html" . }} Eagle-required badges
   </a>
 </section>
