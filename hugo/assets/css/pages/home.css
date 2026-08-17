@@ -332,6 +332,31 @@
 
 .home-eagle__link {
   display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.home-eagle__link:hover,
+.home-eagle__link:focus-visible {
+  color: var(--on-surface);
+  text-decoration: underline;
+}
+
+.home-eagle__link:hover .home-eagle__link-icon,
+.home-eagle__link:focus-visible .home-eagle__link-icon {
+  transform: translateX(4px);
+}
+
+.home-eagle__link-icon {
+  width: 1.15em;
+  height: 1.15em;
+  transition: transform 0.2s ease;
 }
 
 /* ================================================================
