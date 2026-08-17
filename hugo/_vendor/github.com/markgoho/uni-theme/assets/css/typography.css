@@ -1,0 +1,127 @@
+/* Site typefaces (self-hosted, SIL OFL) */
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("/assets/fonts/Literata-VariableFont_opsz_wght.woff2")
+    format("woff2");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Typography Design Tokens (already present) */
+:root {
+  /* Typography */
+  --font-weight-boldest: 900;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+
+  --line-height-tight: 1.25em;
+  --line-height-relaxed: 1.5em;
+  --color-text-main: var(--olive-500);
+  --link-color: var(--olive-500);
+
+  --step--2: clamp(0.8889rem, 0.8747rem + 0.0711vw, 0.96rem);
+  --step--1: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
+  --step-0: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+  --step-1: clamp(1.2656rem, 1.1438rem + 0.6094vw, 1.875rem);
+  --step-2: clamp(1.4238rem, 1.2398rem + 0.9199vw, 2.3438rem);
+  --step-3: clamp(1.6018rem, 1.3362rem + 1.3279vw, 2.9297rem);
+  --step-4: clamp(1.802rem, 1.43rem + 1.8601vw, 3.6621rem);
+  --step-5: clamp(2.0273rem, 1.5172rem + 2.5504vw, 4.5776rem);
+  --step-6: clamp(2.2807rem, 1.5924rem + 3.4413vw, 5.722rem);
+}
+
+/* Global Typography Styles */
+body {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface);
+  background: var(--surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-boldest);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-main, #222);
+  margin-block-end: 0.5em;
+}
+
+h1 {
+  font-size: var(--step-6);
+  text-wrap: balance;
+}
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-2);
+}
+h4 {
+  font-size: var(--step-1);
+}
+h5,
+h6 {
+  font-size: var(--step-0);
+}
+
+p,
+li,
+blockquote,
+dd {
+  font-size: var(--step-0);
+  line-height: var(--line-height-relaxed);
+}
+
+p {
+  margin-block-start: 0.75em;
+
+  > a {
+    text-decoration-line: underline;
+  }
+}
+
+a {
+  transition: color 0.2s;
+  color: var(--link-color, var(--color-text-main));
+}
+
+main h1 {
+  text-align: center;
+  margin-block-start: var(--space-xl);
+}
+
+.highlight {
+  font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 60rem) {
+  a:not(.breadcrumb__link),
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .badge-identity__micro-tag,
+  .badge-card__eagle,
+  .badge-card__category {
+    font-size: 0.75rem !important;
+  }
+}

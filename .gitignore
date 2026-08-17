@@ -35,7 +35,6 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 hugo/public
 hugo/resources
-hugo/_vendor
 functions/lib
 .playwright-mcp
 
