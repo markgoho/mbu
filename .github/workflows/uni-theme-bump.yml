@@ -1,0 +1,89 @@
+name: Bump uni-theme pin
+
+on:
+  repository_dispatch:
+    types: [uni-theme-bump]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.0
+
+      - name: Record current pin
+        id: old
+        run: |
+          version=$(grep 'github.com/markgoho/uni-theme' hugo/go.mod | awk '{print $2}')
+          # pseudo-version vX.Y.Z-timestamp-sha -> extract the sha; a plain tag is used as-is
+          if [[ "$version" =~ -([0-9a-f]{12})$ ]]; then
+            ref="${BASH_REMATCH[1]}"
+          else
+            ref="$version"
+          fi
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: hugo/go.mod
+
+      - name: Install Hugo (extended)
+        run: |
+          hugo_version=$(grep -oP 'ARG HUGO_VERSION=\K[0-9.]+' Dockerfile)
+          curl -fsSL -o hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/hugo_extended_${hugo_version}_linux-amd64.deb"
+          sudo apt-get install -y ./hugo.deb
+          rm hugo.deb
+
+      - name: Bump uni-theme pin and vendor
+        working-directory: hugo
+        env:
+          # fetch the just-pushed commit directly rather than waiting on proxy.golang.org's cache
+          GOPRIVATE: github.com/markgoho/uni-theme
+        run: |
+          hugo mod get "github.com/markgoho/uni-theme@${{ github.event.client_payload.sha }}"
+          hugo mod vendor
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet -- hugo/go.mod hugo/go.sum hugo/_vendor; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build changelog
+        if: steps.diff.outputs.changed == 'true'
+        id: changelog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "changelog<<EOF"
+            gh api "repos/markgoho/uni-theme/compare/${{ steps.old.outputs.ref }}...${{ github.event.client_payload.sha }}" \
+              --jq '.commits[] | "- " + (.commit.message | split("\n")[0]) + " (" + .sha[0:7] + ")"'
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="uni-theme-bump/${{ github.event.client_payload.sha }}"
+          git checkout -b "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add hugo/go.mod hugo/go.sum hugo/_vendor
+          git commit -m "Bump uni-theme to ${{ github.event.client_payload.sha }}"
+          git push origin "$branch"
+          gh pr create \
+            --title "Bump uni-theme pin" \
+            --body "${{ steps.changelog.outputs.changelog }}" \
+            --base trunk \
+            --head "$branch"
