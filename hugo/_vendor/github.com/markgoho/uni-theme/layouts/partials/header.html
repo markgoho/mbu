@@ -1,0 +1,79 @@
+<nav class="navbar" id="navbar-root">
+  <a class="navbar__logo" href="/">
+    {{ partial "theme/logo.html" . }}
+  </a>
+
+  <div class="navbar__menu-content" id="navbar-menu-content" popover="auto">
+    <ul class="navbar__nav">
+      {{ range .Site.Menus.main }}
+        <li class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+          <a href="{{ .URL }}" class="navbar__link">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+    {{ with .Site.Params.theme.cta }}
+      <a href="{{ .href }}" class="button navbar__cta">{{ .label }}</a>
+    {{ end }}
+  </div>
+
+  <div class="navbar__controls">
+    <label
+      class="button button-secondary button-icon navbar__theme-toggle"
+      aria-label="Toggle dark and light theme">
+      <input
+        type="checkbox"
+        id="theme-toggle-checkbox"
+        class="visually-hidden"
+        data-theme-toggle />
+      <span class="navbar__theme-toggle-icon navbar__theme-toggle-icon--sun">
+        {{ partial "icon.html" (dict "name" "sun" "size" "1.25rem") }}
+      </span>
+      <span class="navbar__theme-toggle-icon navbar__theme-toggle-icon--moon">
+        {{ partial "icon.html" (dict "name" "moon" "size" "1.25rem") }}
+      </span>
+      <span class="visually-hidden">Toggle theme</span>
+    </label>
+    <a
+      href="/search/"
+      class="button button-secondary button-icon navbar__search"
+      aria-label="Search requirements">
+      <span class="navbar__search-icon">
+        {{ partial "icon.html" (dict "name" "search" "size" "1.25rem") }}
+      </span>
+      <span class="visually-hidden">Search requirements</span>
+    </a>
+    <button
+      class="navbar__mobile-menu button button-secondary"
+      id="mobile-menu-toggle"
+      popovertarget="navbar-menu-content"
+      aria-expanded="false"
+      aria-controls="navbar-menu-content"
+      aria-label="Toggle navigation menu">
+      Menu
+    </button>
+  </div>
+</nav>
+
+{{ $themeToggleTS := resources.Get "ts/theme-toggle.ts" | js.Build (dict "minify" true) }}
+<script>{{ $themeToggleTS.Content | safeJS }}</script>
+<script>
+  (function() {
+    var toggle = document.getElementById('mobile-menu-toggle');
+    var menu = document.getElementById('navbar-menu-content');
+    var navRoot = document.getElementById('navbar-root');
+    if (toggle && menu && navRoot) {
+      menu.addEventListener('toggle', function(e) {
+        var isOpen = e.newState === 'open';
+        toggle.setAttribute('aria-expanded', isOpen);
+        navRoot.classList.toggle('navbar--open', isOpen);
+      });
+      if (!('popover' in HTMLElement.prototype)) {
+        toggle.addEventListener('click', function() {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', !expanded);
+          navRoot.classList.toggle('navbar--open', !expanded);
+        });
+      }
+    }
+  })();
+</script>
