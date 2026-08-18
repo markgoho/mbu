@@ -13,7 +13,7 @@
  *
  * The container query below targets `badge-hero`, not the callers' own
  * containers (`req-main` on the MB Overview page, `req-content` on the
- * DRG guide page) -- .badge-hero-wrap declares its own container so an
+ * guide page) -- .badge-hero-wrap declares its own container so an
  * element never has to query the container it participates in.
  */
 

@@ -1,0 +1,26 @@
+/*
+ * Discontinued-badge notice — pairs with layouts/partials/discontinued-notice.html.
+ * Merit-badge-specific content modeling, so both stay in mbu rather than
+ * moving to uni-theme; split out of what used to be pages/merit-badges.css.
+ */
+
+.discontinued-notice {
+  background: var(--error-container);
+  border: 2px solid var(--error);
+  border-radius: 8px;
+  padding: var(--space-xs);
+  margin-block: var(--space-s);
+  line-height: 1.5;
+  font-size: 0.95rem;
+
+  strong {
+    display: block;
+    margin-block-end: var(--space-3xs);
+    color: var(--on-error-container);
+  }
+
+  a {
+    color: var(--accent);
+    font-weight: 600;
+  }
+}

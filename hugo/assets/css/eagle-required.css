@@ -1,0 +1,84 @@
+/*
+ * Eagle-required sections — Scouting-specific, so they stay in mbu while
+ * the generic browse-grid/homepage shells they sit inside live in
+ * uni-theme (pages/merit-badges.css, pages/home.css).
+ *
+ * Concatenated straight after those two theme files, which is what keeps
+ * the cascade identical to when these rules lived inside them.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Eagle strip (homepage) — split out of uni-theme's pages/home.css.    */
+/* ------------------------------------------------------------------ */
+
+/* Re-declares the shared section measure the theme applies to its own
+   .home-steps/.home-categories/.home-featured siblings. */
+.home-eagle {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: clamp(var(--space-xs), 4vw, var(--space-m));
+  padding-block: var(--space-l) var(--space-2xl);
+}
+
+.home-eagle__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-eagle__heading-icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--accent);
+}
+
+.dark .home-eagle__heading-icon {
+  color: var(--amber);
+}
+
+.home-eagle__grid {
+  margin-block-end: var(--space-m);
+}
+
+/* ------------------------------------------------------------------ */
+/* Eagle Required "Choose One" Groups (eagle-required/list.html) —      */
+/* split out of uni-theme's pages/merit-badges.css.                     */
+/* ------------------------------------------------------------------ */
+
+.eagle-group {
+  margin-block-start: var(--space-m);
+
+  .eagle-group__heading {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    margin-block-end: var(--space-xs);
+    color: var(--on-surface);
+  }
+
+  .eagle-group__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+    align-items: stretch;
+  }
+
+  .badge-card {
+    flex: 1 1 280px;
+    max-width: 400px;
+  }
+
+  .eagle-group__separator {
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-bold);
+    font-size: 0.875rem;
+    color: var(--on-surface-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-inline: var(--space-3xs);
+  }
+}
