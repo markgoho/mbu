@@ -1,0 +1,25 @@
+<div class="footer__main">
+  <div class="footer__brand">
+    <div class="footer__brand-title">{{ .Site.Params.theme.siteTitle }}</div>
+    {{ with .Site.Params.theme.tagline }}
+      <p class="footer__tagline">{{ . }}</p>
+    {{ end }}
+  </div>
+  <nav class="footer__nav" aria-label="Footer navigation">
+    {{ range .Site.Params.theme.footerColumns }}
+      <div class="footer__col">
+        <h2 class="footer__col-title">{{ .title }}</h2>
+        <ul class="footer__links">
+          {{ range .links }}
+            <li><a href="{{ .href }}">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </nav>
+</div>
+<div class="footer__bottom">
+  <div class="footer__copyright">
+    &copy; {{ now.Year }} {{ .Site.Params.theme.siteTitle }}
+  </div>
+</div>

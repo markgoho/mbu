@@ -1,7 +1,6 @@
 <nav class="navbar" id="navbar-root">
   <a class="navbar__logo" href="/">
-    <h2 class="desktop-logo">Merit Badge University</h2>
-    <h2 class="mobile-logo">MBU</h2>
+    {{ partial "theme/logo.html" . }}
   </a>
 
   <div class="navbar__menu-content" id="navbar-menu-content" popover="auto">
@@ -12,7 +11,9 @@
         </li>
       {{ end }}
     </ul>
-    <a href="/merit-badges/" class="button navbar__cta">Browse Badges</a>
+    {{ with .Site.Params.theme.cta }}
+      <a href="{{ .href }}" class="button navbar__cta">{{ .label }}</a>
+    {{ end }}
   </div>
 
   <div class="navbar__controls">

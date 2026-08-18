@@ -22,6 +22,30 @@ enableGitInfo = true
 [taxonomies]
   category = 'categories'
 
+[params.theme]
+  siteTitle = 'Merit Badge University'
+  siteTitleShort = 'MBU'
+  tagline = 'Your comprehensive resource for Scouting America merit badges.'
+
+  [params.theme.cta]
+    label = 'Browse Badges'
+    href = '/merit-badges/'
+
+  [[params.theme.footerColumns]]
+    title = 'Merit Badges'
+    [[params.theme.footerColumns.links]]
+      label = 'All Badges'
+      href = '/merit-badges/'
+
+  [[params.theme.footerColumns]]
+    title = 'Resources'
+    [[params.theme.footerColumns.links]]
+      label = 'Getting Started'
+      href = '/merit-badges/'
+    [[params.theme.footerColumns.links]]
+      label = 'Requirements'
+      href = '/search/'
+
 [params.imagekit]
   # Plain default endpoint. A dedicated "mbu" URL-endpoint was tried but
   # rejected: ImageKit's router treats a leading /mbu/ path segment as an
