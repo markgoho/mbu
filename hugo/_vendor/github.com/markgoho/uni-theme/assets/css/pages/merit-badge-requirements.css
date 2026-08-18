@@ -2,7 +2,7 @@
  * Merit Badge Requirements page — v2 redesign.
  *
  * Full-bleed two-column shell (sidebar + main content) that collapses to
- * a top bar on mobile, mirroring the drg-page/drg-sidebar/drg-content
+ * a top bar on mobile, mirroring the req-page/req-sidebar/req-content
  * shell in css/pages/drg.css. Uses ONLY the v2 semantic tokens from
  * tokens-v2.css (--surface, --on-surface, --accent, --radius-*,
  * --shadow-*, etc) plus the existing fluid --step-N type scale and
@@ -345,7 +345,7 @@
 }
 
 .req-sidebar:hover .badge-identity__glow-ring-wrap,
-.drg-sidebar:hover .badge-identity__glow-ring-wrap {
+.req-sidebar:hover .badge-identity__glow-ring-wrap {
   transform: scale(1.04);
 }
 
@@ -1332,7 +1332,7 @@ html:has(.req-dock-stack) {
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  /* 44px, the same floor .drg-nav__link and the mobile nav toggle already
+  /* 44px, the same floor .req-nav__link and the mobile nav toggle already
      hold. The old toolbar button was 2rem, 32px. */
   min-block-size: 2.75rem;
   min-inline-size: 2.75rem;

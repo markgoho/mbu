@@ -15,10 +15,10 @@
 {{ end }}
 
 
-<figure class="drg-video">
+<figure class="req-video">
   {{ if and $isYoutube $videoId }}
     <iframe
-      class="drg-video__iframe"
+      class="req-video__iframe"
       src="https://www.youtube.com/embed/{{ $videoId }}"
       title="{{ .Get "title" }}"
       width="560"
@@ -30,13 +30,13 @@
   {{ else }}
     <a
       href="{{ $url }}"
-      class="drg-video__link"
+      class="req-video__link"
       target="_blank"
       rel="noopener noreferrer">
-      {{ partial "icon.html" (dict "name" "video-camera" "weight" "duotone" "class" "drg-video__play-icon") }}
-      <span class="drg-video__title">{{ .Get "title" }}</span>
+      {{ partial "icon.html" (dict "name" "video-camera" "weight" "duotone" "class" "req-video__play-icon") }}
+      <span class="req-video__title">{{ .Get "title" }}</span>
     </a>
   {{ end }}
-  <p class="drg-video__print-link">🎬 Video: {{ .Get "title" }} — {{ $url }}</p>
-  <figcaption class="drg-video__caption">{{ .Get "title" }}</figcaption>
+  <p class="req-video__print-link">🎬 Video: {{ .Get "title" }} — {{ $url }}</p>
+  <figcaption class="req-video__caption">{{ .Get "title" }}</figcaption>
 </figure>

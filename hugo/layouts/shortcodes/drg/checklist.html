@@ -1,13 +1,13 @@
 {{ $isPrintPage := or (hasSuffix .Page.RelPermalink "/guide/print/") (hasSuffix .Page.Permalink "/guide/print/") (in .Page.Permalink "/guide/print/") }}
-<details class="drg-checklist"{{ if $isPrintPage }} open{{ end }}>
-  <summary class="drg-checklist__summary">
-    <h3 class="drg-checklist__title">{{ .Get "title" }}</h3>
+<details class="req-checklist"{{ if $isPrintPage }} open{{ end }}>
+  <summary class="req-checklist__summary">
+    <h3 class="req-checklist__title">{{ .Get "title" }}</h3>
     {{ with .Get "subtitle" }}
-      <span class="drg-checklist__subtitle">{{ . }}</span>
+      <span class="req-checklist__subtitle">{{ . }}</span>
     {{ end }}
-    <span class="drg-checklist__arrow"></span>
+    <span class="req-checklist__arrow"></span>
   </summary>
-  <div class="drg-checklist__content">
+  <div class="req-checklist__content">
     {{ .Inner | markdownify }}
   </div>
 </details>

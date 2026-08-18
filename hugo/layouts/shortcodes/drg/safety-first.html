@@ -1,7 +1,7 @@
-<aside class="drg-callout drg-callout--safety">
-  <div class="drg-callout__header">
-    {{ partial "icon.html" (dict "name" "siren" "weight" "duotone" "class" "drg-callout__icon") }}
-    <h3 class="drg-callout__title">Safety First!</h3>
+<aside class="req-callout req-callout--safety">
+  <div class="req-callout__header">
+    {{ partial "icon.html" (dict "name" "siren" "weight" "duotone" "class" "req-callout__icon") }}
+    <h3 class="req-callout__title">Safety First!</h3>
   </div>
-  <div class="drg-callout__body">{{ .Inner | markdownify }}</div>
+  <div class="req-callout__body">{{ .Inner | markdownify }}</div>
 </aside>

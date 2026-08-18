@@ -2,14 +2,14 @@
 {{ $url := .Get "url" }}
 <a
   href="{{ $url }}"
-  class="drg-download"
+  class="req-download"
   {{ if not $isPrintable }}download{{ end }}{{ if $isPrintable }}
     target="_blank" rel="noopener"
   {{ end }}>
-  {{ partial "icon.html" (dict "name" "download-simple" "class" "drg-download__icon") }}
-  <span class="drg-download__title">{{ .Get "title" }}</span>
+  {{ partial "icon.html" (dict "name" "download-simple" "class" "req-download__icon") }}
+  <span class="req-download__title">{{ .Get "title" }}</span>
   {{ with .Get "description" }}
-    <span class="drg-download__description">{{ . }}</span>
+    <span class="req-download__description">{{ . }}</span>
   {{ end }}
-  <span class="drg-download__print-link">Resource: {{ .Get "title" }} — {{ $url }}</span>
+  <span class="req-download__print-link">Resource: {{ .Get "title" }} — {{ $url }}</span>
 </a>

@@ -1,4 +1,4 @@
-// drg-req-rail.ts — the sticky requirement rail (.drg-req-rail) echoes the
+// req-rail.ts — the sticky requirement rail (.req-rail) echoes the
 // page's lead requirement so it stays readable once the reader has scrolled
 // past it. On pages with subrequirements (4, 4a, 4b, …) the rail should
 // track whichever one the reader is currently on, not stay pinned to 4.
@@ -9,18 +9,18 @@
 // between rendered frames, so the observer never sees it intersect and the
 // rail silently stops updating.
 
-const rail = document.querySelector<HTMLElement>(".drg-req-rail");
-const railNumber = rail?.querySelector<HTMLElement>(".drg-req-rail__number");
-const railText = rail?.querySelector<HTMLElement>(".drg-req-rail__text");
-const blocks = Array.from(document.querySelectorAll<HTMLElement>(".drg-content .drg-requirement"));
+const rail = document.querySelector<HTMLElement>(".req-rail");
+const railNumber = rail?.querySelector<HTMLElement>(".req-rail__number");
+const railText = rail?.querySelector<HTMLElement>(".req-rail__text");
+const blocks = Array.from(document.querySelectorAll<HTMLElement>(".req-content .req-requirement"));
 
 if (rail && railNumber && railText && blocks.length > 1) {
   const TRACK_LINE = 0.3; // fraction of viewport height counted as "current"
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const applyContent = (current: HTMLElement): void => {
-    const number = current.querySelector(".drg-requirement__number")?.textContent;
-    const text = current.querySelector(".drg-requirement__text")?.innerHTML;
+    const number = current.querySelector(".req-requirement__number")?.textContent;
+    const text = current.querySelector(".req-requirement__text")?.innerHTML;
     if (number) railNumber.textContent = number;
     if (text) railText.innerHTML = text;
   };
@@ -32,17 +32,17 @@ if (rail && railNumber && railText && blocks.length > 1) {
   let transitionSeq = 0;
   const morphContent = (current: HTMLElement): void => {
     const seq = ++transitionSeq;
-    const sourceNumber = current.querySelector<HTMLElement>(".drg-requirement__number");
-    const sourceText = current.querySelector<HTMLElement>(".drg-requirement__text");
-    if (sourceNumber) sourceNumber.style.viewTransitionName = "drg-rail-num";
-    if (sourceText) sourceText.style.viewTransitionName = "drg-rail-text";
+    const sourceNumber = current.querySelector<HTMLElement>(".req-requirement__number");
+    const sourceText = current.querySelector<HTMLElement>(".req-requirement__text");
+    if (sourceNumber) sourceNumber.style.viewTransitionName = "req-rail-num";
+    if (sourceText) sourceText.style.viewTransitionName = "req-rail-text";
 
     const transition = document.startViewTransition(() => {
       if (sourceNumber) sourceNumber.style.viewTransitionName = "";
       if (sourceText) sourceText.style.viewTransitionName = "";
       applyContent(current);
-      railNumber.style.viewTransitionName = "drg-rail-num";
-      railText.style.viewTransitionName = "drg-rail-text";
+      railNumber.style.viewTransitionName = "req-rail-num";
+      railText.style.viewTransitionName = "req-rail-text";
     });
 
     transition.finished.catch(() => {}).finally(() => {

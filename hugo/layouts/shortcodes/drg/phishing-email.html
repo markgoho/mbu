@@ -1,79 +1,79 @@
 <style>
-  .drg-phishing-email {
+  .req-phishing-email {
     margin-block: var(--space-l);
     margin-inline: 0;
   }
-  .drg-phishing-email__window {
+  .req-phishing-email__window {
     border: 1px solid var(--card-border-subtle);
     border-radius: var(--radius-xl);
     overflow: hidden;
     background-color: var(--surface-raised);
     box-shadow: var(--shadow-card);
   }
-  .drg-phishing-email__toolbar {
+  .req-phishing-email__toolbar {
     display: flex;
     gap: 6px;
     padding: var(--space-xs) var(--space-s);
     background-color: var(--surface-sunken);
     border-bottom: 1px solid var(--card-border-subtle);
   }
-  .drg-phishing-email__dot {
+  .req-phishing-email__dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
   }
-  .drg-phishing-email__dot--close { background-color: hsl(0, 60%, 60%); }
-  .drg-phishing-email__dot--min { background-color: hsl(45, 70%, 55%); }
-  .drg-phishing-email__dot--max { background-color: hsl(120, 40%, 55%); }
-  .drg-phishing-email__header {
+  .req-phishing-email__dot--close { background-color: hsl(0, 60%, 60%); }
+  .req-phishing-email__dot--min { background-color: hsl(45, 70%, 55%); }
+  .req-phishing-email__dot--max { background-color: hsl(120, 40%, 55%); }
+  .req-phishing-email__header {
     padding: var(--space-s) var(--space-m);
     border-bottom: 1px solid var(--card-border-subtle);
     background-color: var(--surface-raised);
   }
-  .drg-phishing-email__field {
+  .req-phishing-email__field {
     display: flex;
     gap: var(--space-xs);
     margin-bottom: var(--space-3xs);
     font-size: var(--step--1);
     line-height: 1.6;
   }
-  .drg-phishing-email__field-label {
+  .req-phishing-email__field-label {
     flex-shrink: 0;
     font-weight: var(--font-weight-bold);
     color: var(--on-surface-muted);
     min-width: 4em;
   }
-  .drg-phishing-email__field-value {
+  .req-phishing-email__field-value {
     color: var(--on-surface);
   }
-  .drg-phishing-email__field-value--bold {
+  .req-phishing-email__field-value--bold {
     font-weight: var(--font-weight-bold);
   }
-  .drg-phishing-email__field-email {
+  .req-phishing-email__field-email {
     color: var(--on-surface-muted);
     word-break: break-all;
   }
-  .drg-phishing-email__body {
+  .req-phishing-email__body {
     padding: var(--space-m);
     font-size: var(--step--1);
     line-height: 1.6;
     color: var(--on-surface);
   }
-  .drg-phishing-email__body p {
+  .req-phishing-email__body p {
     margin-bottom: var(--space-s);
   }
-  .drg-phishing-email__fake-link {
+  .req-phishing-email__fake-link {
     display: inline-flex;
     flex-direction: column;
     gap: 2px;
     cursor: default;
     text-decoration: none;
   }
-  .drg-phishing-email__link-display {
+  .req-phishing-email__link-display {
     color: var(--secondary);
     text-decoration: underline;
   }
-  .drg-phishing-email__link-actual {
+  .req-phishing-email__link-actual {
     font-size: var(--step--2);
     color: var(--on-error-container);
     background-color: var(--error-container);
@@ -81,15 +81,15 @@
     border-radius: var(--radius-sm);
     font-style: italic;
   }
-  .drg-phishing-email__sig {
+  .req-phishing-email__sig {
     margin-top: var(--space-m);
     color: var(--on-surface-muted);
   }
-  .drg-phishing-email__sig-note {
+  .req-phishing-email__sig-note {
     font-size: var(--step--2);
     color: var(--on-surface-muted);
   }
-  .drg-phishing-email__flag {
+  .req-phishing-email__flag {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -104,89 +104,89 @@
     margin-left: var(--space-3xs);
     flex-shrink: 0;
   }
-  .drg-phishing-email__legend {
+  .req-phishing-email__legend {
     padding: var(--space-m);
     background-color: var(--surface-raised);
     border: 1px solid var(--card-border-subtle);
     border-top: none;
     border-radius: 0 0 var(--radius-xl) var(--radius-xl);
   }
-  .drg-phishing-email__legend-list {
+  .req-phishing-email__legend-list {
     margin: 0;
     padding-left: var(--space-l);
     font-size: var(--step--1);
     color: var(--on-surface-muted);
   }
-  .drg-phishing-email__legend-list li {
+  .req-phishing-email__legend-list li {
     margin-bottom: var(--space-2xs);
     padding-left: var(--space-3xs);
   }
-  .drg-phishing-email__legend-list li::marker {
+  .req-phishing-email__legend-list li::marker {
     color: var(--error);
     font-weight: var(--font-weight-bold);
   }
-  .drg-phishing-email__legend-list li:last-child {
+  .req-phishing-email__legend-list li:last-child {
     margin-bottom: 0;
   }
-  @container drg-content (max-width: 500px) {
-    .drg-phishing-email__field {
+  @container req-content (max-width: 500px) {
+    .req-phishing-email__field {
       flex-direction: column;
       gap: 0;
     }
   }
 </style>
-<figure class="drg-phishing-email" role="img" aria-label="Anatomy of a phishing email with six numbered warning signs">
-  <div class="drg-phishing-email__window">
-    <div class="drg-phishing-email__toolbar">
-      <span class="drg-phishing-email__dot drg-phishing-email__dot--close"></span>
-      <span class="drg-phishing-email__dot drg-phishing-email__dot--min"></span>
-      <span class="drg-phishing-email__dot drg-phishing-email__dot--max"></span>
+<figure class="req-phishing-email" role="img" aria-label="Anatomy of a phishing email with six numbered warning signs">
+  <div class="req-phishing-email__window">
+    <div class="req-phishing-email__toolbar">
+      <span class="req-phishing-email__dot req-phishing-email__dot--close"></span>
+      <span class="req-phishing-email__dot req-phishing-email__dot--min"></span>
+      <span class="req-phishing-email__dot req-phishing-email__dot--max"></span>
     </div>
-    <div class="drg-phishing-email__header">
-      <div class="drg-phishing-email__field">
-        <span class="drg-phishing-email__field-label">From:</span>
-        <span class="drg-phishing-email__field-value">
+    <div class="req-phishing-email__header">
+      <div class="req-phishing-email__field">
+        <span class="req-phishing-email__field-label">From:</span>
+        <span class="req-phishing-email__field-value">
           SecureBank Alerts
-          <span class="drg-phishing-email__field-email">&lt;security@s3cure-bank-alerts.com&gt;</span>
-          <span class="drg-phishing-email__flag" aria-label="Warning sign 1">1</span>
+          <span class="req-phishing-email__field-email">&lt;security@s3cure-bank-alerts.com&gt;</span>
+          <span class="req-phishing-email__flag" aria-label="Warning sign 1">1</span>
         </span>
       </div>
-      <div class="drg-phishing-email__field">
-        <span class="drg-phishing-email__field-label">To:</span>
-        <span class="drg-phishing-email__field-value">you@email.com</span>
+      <div class="req-phishing-email__field">
+        <span class="req-phishing-email__field-label">To:</span>
+        <span class="req-phishing-email__field-value">you@email.com</span>
       </div>
-      <div class="drg-phishing-email__field">
-        <span class="drg-phishing-email__field-label">Subject:</span>
-        <span class="drg-phishing-email__field-value drg-phishing-email__field-value--bold">
+      <div class="req-phishing-email__field">
+        <span class="req-phishing-email__field-label">Subject:</span>
+        <span class="req-phishing-email__field-value req-phishing-email__field-value--bold">
           URGENT: Your account has been compromised!!!
-          <span class="drg-phishing-email__flag" aria-label="Warning sign 2">2</span>
+          <span class="req-phishing-email__flag" aria-label="Warning sign 2">2</span>
         </span>
       </div>
     </div>
-    <div class="drg-phishing-email__body">
-      <p>Dear Valued Customer, <span class="drg-phishing-email__flag" aria-label="Warning sign 3">3</span></p>
-      <p>We have detected suspicous activity on your account. Your account will be <strong>permanantly suspended</strong> within 24 hours unless you verify your identity immediatley. <span class="drg-phishing-email__flag" aria-label="Warning sign 4">4</span></p>
+    <div class="req-phishing-email__body">
+      <p>Dear Valued Customer, <span class="req-phishing-email__flag" aria-label="Warning sign 3">3</span></p>
+      <p>We have detected suspicous activity on your account. Your account will be <strong>permanantly suspended</strong> within 24 hours unless you verify your identity immediatley. <span class="req-phishing-email__flag" aria-label="Warning sign 4">4</span></p>
       <p>Please click the link below to confirm your account information:</p>
       <p>
-        <a class="drg-phishing-email__fake-link" tabindex="-1" aria-label="Fake link — do not click">
-          <span class="drg-phishing-email__link-display">https://www.securebank.com/verify</span>
-          <span class="drg-phishing-email__link-actual">Actually goes to: http://s3cure-bank-alerts.com/steal-info</span>
-          <span class="drg-phishing-email__flag" aria-label="Warning sign 5">5</span>
+        <a class="req-phishing-email__fake-link" tabindex="-1" aria-label="Fake link — do not click">
+          <span class="req-phishing-email__link-display">https://www.securebank.com/verify</span>
+          <span class="req-phishing-email__link-actual">Actually goes to: http://s3cure-bank-alerts.com/steal-info</span>
+          <span class="req-phishing-email__flag" aria-label="Warning sign 5">5</span>
         </a>
       </p>
       <p>Failure to respond will result in permanent account closure.</p>
-      <p class="drg-phishing-email__sig">
+      <p class="req-phishing-email__sig">
         Sincerely,<br>
         The SecureBank Security Team<br>
-        <span class="drg-phishing-email__sig-note">
+        <span class="req-phishing-email__sig-note">
           This email was sent from a no-reply address. Do not respond directly.
-          <span class="drg-phishing-email__flag" aria-label="Warning sign 6">6</span>
+          <span class="req-phishing-email__flag" aria-label="Warning sign 6">6</span>
         </span>
       </p>
     </div>
   </div>
-  <figcaption class="drg-phishing-email__legend">
-    <ol class="drg-phishing-email__legend-list">
+  <figcaption class="req-phishing-email__legend">
+    <ol class="req-phishing-email__legend-list">
       <li><strong>Suspicious sender address</strong> — display name says "SecureBank" but actual email is from a different domain</li>
       <li><strong>Urgency and threats</strong> — pressures you to act immediately without thinking</li>
       <li><strong>Generic greeting</strong> — "Dear Valued Customer" instead of your real name</li>

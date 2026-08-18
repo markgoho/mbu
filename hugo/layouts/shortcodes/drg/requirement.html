@@ -4,13 +4,13 @@
   is the page's OWN requirement (number == the page's req_number -- true
   only for the page's lead quote, never its subrequirement quotes), and the
   official text opens with a label matching the page's title, that label is
-  stripped here: the page's <h1> (drg-header__title) already shows it right
+  stripped here: the page's <h1> (req-header__title) already shows it right
   above, so repeating it would just echo the title back verbatim.
 */}}
 {{ $number := .Get "number" }}
 {{ $option := .Get "option" }}
 {{ $isSub := findRE `[a-zA-Z]` $number }}
-{{ $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" }}
+{{ $class := cond (gt (len $isSub) 0) "req-requirement req-requirement--sub" "req-requirement" }}
 {{ $isLead := eq $number $.Page.Params.req_number }}
 
 {{ $text := $.Inner | strings.TrimSpace }}
@@ -44,7 +44,7 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  {{ $class = printf "%s drg-requirement--lead" $class }}
+  {{ $class = printf "%s req-requirement--lead" $class }}
   {{ $.Page.Store.Set "leadRequirement" (dict "number" $number "text" $text "option" $option) }}
 {{ end }}
 
@@ -60,9 +60,9 @@
 
 <div class="{{ $class }}">
   {{ with $number }}
-    <span class="drg-requirement__number">{{ . }}.</span>
+    <span class="req-requirement__number">{{ . }}.</span>
   {{ end }}
-  <div class="drg-requirement__text" {{ with $reqKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}>
+  <div class="req-requirement__text" {{ with $reqKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}>
     {{ $text | markdownify }}
     {{ with $option }}<strong>{{ . }}</strong>{{ end }}
   </div>

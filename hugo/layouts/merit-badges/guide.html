@@ -1,6 +1,6 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main-class" }}drg-page drg-page-main{{ end }}
+{{ define "main-class" }}req-page req-page-main{{ end }}
 
 {{/* Hold the first paint until the hero has been parsed, matching
   badge-landing.html -- both ends of the badge-landing <-> guide-landing
@@ -19,7 +19,7 @@
 
   {{ partial "merit-badges/drg-sidebar.html" (dict "page" . "badgePage" $badgePage "json" $json) }}
 
-  <div class="drg-page-body">
+  <div class="req-page-body">
     {{ partial "breadcrumb.html" . }}
 
     {{ if .IsSection }}
@@ -52,8 +52,8 @@
         "ctas" $ctas) }}
     {{ end }}
 
-    <div class="drg-body-grid">
-      <article class="drg-content">
+    <div class="req-body-grid">
+      <article class="req-content">
         {{ if not .IsSection }}
           {{ $reqNum := .Params.req_number | default "" }}
           {{ $reqGroupKey := "" }}
@@ -71,24 +71,24 @@
             {{ $reqKey = lower $reqKey }}
           {{ end }}
           {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
-          <header class="drg-header">
+          <header class="req-header">
             {{ with .Params.group_title }}
-              <span class="drg-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
+              <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
             {{ end }}
-            <h1 class="drg-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
+            <h1 class="req-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
           </header>
         {{ end }}
 
         {{ .Content }}
 
 
-        <nav class="drg-footer-nav" aria-label="Guide pagination">
+        <nav class="req-footer-nav" aria-label="Guide pagination">
           {{ with .Params.prev }}
             <a
               href="{{ . }}"
-              class="drg-footer-nav__link drg-footer-nav__link--prev">
-              <span class="drg-footer-nav__label">Previous</span>
-              <span class="drg-footer-nav__title">
+              class="req-footer-nav__link req-footer-nav__link--prev">
+              <span class="req-footer-nav__label">Previous</span>
+              <span class="req-footer-nav__title">
                 {{ with $.Params.prev_title }}
                   {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}
                 {{ else }}
@@ -101,9 +101,9 @@
           {{ with .Params.next }}
             <a
               href="{{ . }}"
-              class="drg-footer-nav__link drg-footer-nav__link--next">
-              <span class="drg-footer-nav__label">Next</span>
-              <span class="drg-footer-nav__title">
+              class="req-footer-nav__link req-footer-nav__link--next">
+              <span class="req-footer-nav__label">Next</span>
+              <span class="req-footer-nav__title">
                 {{ with $.Params.next_title }}{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}{{ else }}Next Page{{ end }}
               </span>
             </a>
@@ -112,10 +112,10 @@
       </article>
 
       {{ with .Page.Store.Get "leadRequirement" }}
-        <aside class="drg-req-rail" inert>
-          <div class="drg-req-rail__inner">
-            <span class="drg-req-rail__number">{{ .number }}.</span>
-            <div class="drg-req-rail__text">{{ .text | markdownify }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
+        <aside class="req-rail" inert>
+          <div class="req-rail__inner">
+            <span class="req-rail__number">{{ .number }}.</span>
+            <div class="req-rail__text">{{ .text | markdownify }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
           </div>
         </aside>
       {{ end }}
@@ -127,8 +127,8 @@
   <script>
     // Scroll the active sidebar link into view without affecting page scroll
     requestAnimationFrame(function () {
-      var sidebar = document.querySelector(".drg-sidebar-wrap");
-      var active = document.querySelector(".drg-nav__link--active");
+      var sidebar = document.querySelector(".req-sidebar-wrap");
+      var active = document.querySelector(".req-nav__link--active");
       if (sidebar && active) {
         var top =
           active.offsetTop -
@@ -140,7 +140,7 @@
     });
   </script>
 
-  {{ $reqRailTS := resources.Get "ts/drg-req-rail.ts" | js.Build (dict "minify" true) }}
+  {{ $reqRailTS := resources.Get "ts/req-rail.ts" | js.Build (dict "minify" true) }}
   <script>{{ $reqRailTS.Content | safeJS }}</script>
 
   {{/* JSON-LD structured data */}}

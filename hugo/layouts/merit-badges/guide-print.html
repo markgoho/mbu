@@ -4,38 +4,38 @@
 
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main-class" }}drg-page{{ end }}
+{{ define "main-class" }}req-page{{ end }}
 
 {{ define "main" }}
   {{ $badgePage := .CurrentSection.Parent | default .Parent.Parent }}
   {{ $guidePage := .Parent }}
   {{ $guideNav := $guidePage.Params.guide_nav }}
 
-  <article class="drg-content">
-    <header class="drg-print-header">
+  <article class="req-content">
+    <header class="req-print-header">
       <div>
-        <div class="drg-print-header__kicker">Printable Guide</div>
-        <h1 class="drg-print-header__title">{{ $badgePage.Title }} — Complete Digital Resource Guide</h1>
-        <p class="drg-print-header__url">{{ $guidePage.Permalink }}</p>
+        <div class="req-print-header__kicker">Printable Guide</div>
+        <h1 class="req-print-header__title">{{ $badgePage.Title }} — Complete Digital Resource Guide</h1>
+        <p class="req-print-header__url">{{ $guidePage.Permalink }}</p>
       </div>
     </header>
 
-    <button class="drg-print-btn" type="button" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    <button class="req-print-btn" type="button" onclick="window.print()">🖨️ Print / Save as PDF</button>
 
     {{ range $guideNav }}
       {{ if .group_title }}
-        <div class="drg-print-divider">{{ .group_title }}</div>
+        <div class="req-print-divider">{{ .group_title }}</div>
       {{ end }}
 
       {{ range .items }}
         {{ $page := $.Site.GetPage .url }}
         {{ if $page }}
-          <section class="drg-print-section">
+          <section class="req-print-section">
             <h2>{{ $page.Title }}</h2>
             {{ $content := $page.Content }}
-            {{ $content = replaceRE `<details class="drg-checklist">` `<div class="drg-checklist drg-checklist--print">` $content }}
+            {{ $content = replaceRE `<details class="req-checklist">` `<div class="req-checklist req-checklist--print">` $content }}
             {{ $content = replaceRE `</details>` `</div>` $content }}
-            {{ $content = replaceRE `<summary class="drg-checklist__summary">([\s\S]*?)</summary>` `<div class="drg-checklist__summary">$1</div>` $content }}
+            {{ $content = replaceRE `<summary class="req-checklist__summary">([\s\S]*?)</summary>` `<div class="req-checklist__summary">$1</div>` $content }}
             {{ $content | safeHTML }}
           </section>
         {{ end }}

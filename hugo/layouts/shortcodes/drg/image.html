@@ -39,7 +39,7 @@
   {{- errorf "DRG image manifest entry missing width/height/v: %s (page: %s) — run bun run migrate:imagekit" $id $.Page.RelPermalink -}}
 {{- end -}}
 
-<figure class="drg-illustration">
+<figure class="req-illustration">
   {{ partial "imagekit/img.html" (dict
     "path" (printf "/mbu-assets/merit-badges/%s/guide/%s" $manifest.badge $id)
     "v" $entry.v

@@ -1,14 +1,14 @@
 {{ $url := .Get "url" }}
-<div class="drg-org-card">
+<div class="req-org-card">
   <a
     href="{{ $url }}"
-    class="drg-org-card__name"
+    class="req-org-card__name"
     target="_blank"
     rel="noopener noreferrer"
     >{{ .Get "name" }}</a
   >
-  <p class="drg-org-card__description">
+  <p class="req-org-card__description">
     {{ .Get "description" | markdownify }}
   </p>
-  <p class="drg-org-card__print-link">Organization: {{ .Get "name" }} — {{ $url }}</p>
+  <p class="req-org-card__print-link">Organization: {{ .Get "name" }} — {{ $url }}</p>
 </div>

@@ -3,40 +3,40 @@ title: "Insect Observation Scrapbook Worksheet"
 layout: printable
 ---
 
-<a class="drg-worksheet__back-link" href="/merit-badges/insect-study/guide/req4/">← Back to Req 4 — Observe, Record, and Interpret</a>
+<a class="req-worksheet__back-link" href="/merit-badges/insect-study/guide/req4/">← Back to Req 4 — Observe, Record, and Interpret</a>
 
 <button class="drg-worksheet__print-button" onclick="window.print()">Print this worksheet</button>
 
-<h2 class="drg-worksheet__title">Insect Observation Scrapbook Worksheet</h2>
-<p class="drg-worksheet__subtitle">Insect Study Merit Badge • Requirements 4b–4d</p>
+<h2 class="req-worksheet__title">Insect Observation Scrapbook Worksheet</h2>
+<p class="req-worksheet__subtitle">Insect Study Merit Badge • Requirements 4b–4d</p>
 
-<div class="drg-worksheet__section">
+<div class="req-worksheet__section">
   <div class="drg-worksheet__field-group drg-worksheet__field-group--two-up">
     <div>
-      <label class="drg-worksheet__label">Scout name</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Scout name</label>
+      <div class="req-worksheet__line"></div>
     </div>
     <div>
-      <label class="drg-worksheet__label">Counselor</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Counselor</label>
+      <div class="req-worksheet__line"></div>
     </div>
   </div>
   <div class="drg-worksheet__field-group drg-worksheet__field-group--two-up">
     <div>
-      <label class="drg-worksheet__label">Primary observation area</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Primary observation area</label>
+      <div class="req-worksheet__line"></div>
     </div>
     <div>
-      <label class="drg-worksheet__label">Dates observed</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Dates observed</label>
+      <div class="req-worksheet__line"></div>
     </div>
   </div>
 </div>
 
-<div class="drg-worksheet__section">
-  <h3 class="drg-worksheet__section-title">Observation Log</h3>
+<div class="req-worksheet__section">
+  <h3 class="req-worksheet__section-title">Observation Log</h3>
   <p class="drg-worksheet__help">Record at least 20 live insect species from at least four different orders. Use one line per insect.</p>
-  <table class="drg-worksheet__table">
+  <table class="req-worksheet__table">
     <thead>
       <tr>
         <th>#</th>
@@ -72,31 +72,31 @@ layout: printable
   </table>
 </div>
 
-<div class="drg-worksheet__section">
-  <h3 class="drg-worksheet__section-title">Orders Checklist</h3>
+<div class="req-worksheet__section">
+  <h3 class="req-worksheet__section-title">Orders Checklist</h3>
   <p class="drg-worksheet__help">Check the four or more insect orders you included.</p>
   <div class="drg-worksheet__check-grid drg-worksheet__check-grid--two-up">
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Coleoptera (beetles)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Lepidoptera (butterflies and moths)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Hymenoptera (ants, bees, wasps)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Diptera (flies)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Orthoptera (grasshoppers and crickets)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Odonata (dragonflies and damselflies)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Hemiptera (true bugs)</label>
-    <label class="drg-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Other: ____________________</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Coleoptera (beetles)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Lepidoptera (butterflies and moths)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Hymenoptera (ants, bees, wasps)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Diptera (flies)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Orthoptera (grasshoppers and crickets)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Odonata (dragonflies and damselflies)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Hemiptera (true bugs)</label>
+    <label class="req-worksheet__check-item"><span class="drg-worksheet__checkbox"></span>Other: ____________________</label>
   </div>
 </div>
 
-<div class="drg-worksheet__section">
-  <h3 class="drg-worksheet__section-title">Scrapbook Planning</h3>
+<div class="req-worksheet__section">
+  <h3 class="req-worksheet__section-title">Scrapbook Planning</h3>
   <p class="drg-worksheet__help">For each species, collect or create evidence you can show your counselor.</p>
-  <div class="drg-worksheet__writing-area drg-worksheet__writing-area--tall"></div>
+  <div class="req-worksheet__writing-area drg-worksheet__writing-area--tall"></div>
 </div>
 
-<div class="drg-worksheet__section">
-  <h3 class="drg-worksheet__section-title">Ecosystem Roles for 8 Species</h3>
+<div class="req-worksheet__section">
+  <h3 class="req-worksheet__section-title">Ecosystem Roles for 8 Species</h3>
   <p class="drg-worksheet__help">Choose eight insects from your scrapbook and note what role each one plays.</p>
-  <table class="drg-worksheet__table">
+  <table class="req-worksheet__table">
     <thead>
       <tr>
         <th>Species</th>
@@ -117,26 +117,26 @@ layout: printable
   </table>
 </div>
 
-<div class="drg-worksheet__section">
-  <h3 class="drg-worksheet__section-title">Counselor Review</h3>
+<div class="req-worksheet__section">
+  <h3 class="req-worksheet__section-title">Counselor Review</h3>
   <div class="drg-worksheet__field-group drg-worksheet__field-group--two-up">
     <div>
-      <label class="drg-worksheet__label">Scout signature</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Scout signature</label>
+      <div class="req-worksheet__line"></div>
     </div>
     <div>
-      <label class="drg-worksheet__label">Date</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Date</label>
+      <div class="req-worksheet__line"></div>
     </div>
   </div>
   <div class="drg-worksheet__field-group drg-worksheet__field-group--two-up">
     <div>
-      <label class="drg-worksheet__label">Counselor initials</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Counselor initials</label>
+      <div class="req-worksheet__line"></div>
     </div>
     <div>
-      <label class="drg-worksheet__label">Notes</label>
-      <div class="drg-worksheet__line"></div>
+      <label class="req-worksheet__label">Notes</label>
+      <div class="req-worksheet__line"></div>
     </div>
   </div>
 </div>

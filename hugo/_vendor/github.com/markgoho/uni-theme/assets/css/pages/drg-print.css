@@ -12,22 +12,22 @@
 /* Printable worksheet                                                  */
 /* ------------------------------------------------------------------ */
 
-.drg-worksheet {
+.req-worksheet {
   max-width: 65ch;
 
-  & .drg-worksheet__title {
+  & .req-worksheet__title {
     text-align: center;
     font-family: var(--font-display);
   }
 
-  & .drg-worksheet__subtitle {
+  & .req-worksheet__subtitle {
     font-size: var(--step-0);
     color: var(--on-surface-muted);
     text-align: center;
     margin-bottom: var(--space-l);
   }
 
-  & .drg-worksheet__print-btn {
+  & .req-worksheet__print-btn {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
@@ -53,19 +53,19 @@
     }
   }
 
-  & .drg-worksheet__section {
+  & .req-worksheet__section {
     margin-bottom: var(--space-l);
     break-inside: avoid;
   }
 
-  & .drg-worksheet__section-title {
+  & .req-worksheet__section-title {
     font-family: var(--font-display);
     padding-bottom: var(--space-3xs);
     border-bottom: 2px solid var(--accent);
   }
 
   /* Blank lines for fill-in fields */
-  & .drg-worksheet__field {
+  & .req-worksheet__field {
     display: flex;
     align-items: baseline;
     gap: var(--space-s);
@@ -73,36 +73,36 @@
     min-height: 2em;
   }
 
-  & .drg-worksheet__label {
+  & .req-worksheet__label {
     flex-shrink: 0;
     font-weight: var(--font-weight-bold);
     font-size: var(--step--1);
     color: var(--on-surface);
     min-width: 8em;
 
-    @container drg-content (max-width: 500px) {
+    @container req-content (max-width: 500px) {
       min-width: 6em;
     }
   }
 
-  & .drg-worksheet__line {
+  & .req-worksheet__line {
     flex: 1;
     border-bottom: 1px solid var(--outline);
     min-height: 1.5em;
   }
 
   /* Two-column grid for checklist items */
-  & .drg-worksheet__grid {
+  & .req-worksheet__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xs) var(--space-l);
 
-    @container drg-content (max-width: 500px) {
+    @container req-content (max-width: 500px) {
       grid-template-columns: 1fr;
     }
   }
 
-  & .drg-worksheet__check-item {
+  & .req-worksheet__check-item {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
@@ -119,7 +119,7 @@
   }
 
   /* Table for structured data entry */
-  & .drg-worksheet__table {
+  & .req-worksheet__table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: var(--space-m);
@@ -143,7 +143,7 @@
   }
 
   /* Map/drawing area */
-  & .drg-worksheet__draw-area {
+  & .req-worksheet__draw-area {
     border: 2px dashed var(--outline);
     border-radius: var(--radius-sm);
     min-height: 11.25rem;
@@ -157,8 +157,8 @@
   }
 
   /* Lined writing area for reports */
-  & .drg-worksheet__writing-area,
-  & .drg-worksheet__write-area {
+  & .req-worksheet__writing-area,
+  & .req-worksheet__write-area {
     min-height: 12.5rem;
     background-image: repeating-linear-gradient(
       transparent,
@@ -174,30 +174,30 @@
   }
 
   /* Signature area */
-  & .drg-worksheet__signature {
+  & .req-worksheet__signature {
     display: flex;
     gap: var(--space-xl);
     margin-top: var(--space-l);
     padding-top: var(--space-m);
     border-top: 1px solid var(--outline-variant);
 
-    @container drg-content (max-width: 500px) {
+    @container req-content (max-width: 500px) {
       flex-direction: column;
       gap: var(--space-l);
     }
   }
 
-  & .drg-worksheet__sig-block {
+  & .req-worksheet__sig-block {
     flex: 1;
   }
 
-  & .drg-worksheet__sig-line {
+  & .req-worksheet__sig-line {
     border-bottom: 1px solid var(--on-surface-muted);
     min-height: 2.5em;
     margin-bottom: var(--space-3xs);
   }
 
-  & .drg-worksheet__sig-label {
+  & .req-worksheet__sig-label {
     font-size: var(--step--2);
     color: var(--on-surface-muted);
     text-transform: uppercase;
@@ -205,7 +205,7 @@
   }
 
   /* Back link (screen only) */
-  & .drg-worksheet__back-link {
+  & .req-worksheet__back-link {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
@@ -224,7 +224,7 @@
 /* Complete guide print page                                            */
 /* ------------------------------------------------------------------ */
 
-.drg-print-header {
+.req-print-header {
   display: grid;
   gap: var(--space-m);
   margin-bottom: var(--space-xl);
@@ -234,7 +234,7 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-card);
 
-  & .drg-print-header__kicker {
+  & .req-print-header__kicker {
     font-size: var(--step--1);
     color: var(--on-surface-muted);
     font-weight: var(--font-weight-bold);
@@ -242,26 +242,26 @@
     letter-spacing: 0.05em;
   }
 
-  & .drg-print-header__title {
+  & .req-print-header__title {
     font-family: var(--font-display);
     margin-bottom: var(--space-2xs);
   }
 
-  & .drg-print-header__url {
+  & .req-print-header__url {
     margin: 0;
     font-size: var(--step--1);
     color: var(--on-surface-muted);
     word-break: break-word;
   }
 
-  @container drg-content (max-width: 500px) {
+  @container req-content (max-width: 500px) {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
   }
 }
 
-.drg-print-btn {
+.req-print-btn {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
@@ -281,7 +281,7 @@
   }
 }
 
-.drg-print-divider {
+.req-print-divider {
   margin: var(--space-2xl) 0 var(--space-l);
   padding-top: var(--space-l);
   border-top: 1px solid var(--outline-variant);
@@ -293,7 +293,7 @@
   break-after: avoid;
 }
 
-.drg-print-section {
+.req-print-section {
   margin-bottom: var(--space-2xl);
 
   h2:first-child {
@@ -309,21 +309,21 @@
   .header,
   .footer,
   .breadcrumb,
-  .drg-sidebar-wrap,
-  .drg-footer-nav,
-  .drg-next-page,
-  .drg-mobile-nav {
+  .req-sidebar-wrap,
+  .req-footer-nav,
+  .req-next-page,
+  .req-mobile-nav {
     display: none !important;
   }
 
-  .drg-page,
-  .drg-page-main {
+  .req-page,
+  .req-page-main {
     display: block;
     max-width: 100%;
     padding: 0;
   }
 
-  .drg-content {
+  .req-content {
     max-width: 100%;
   }
 
@@ -333,34 +333,34 @@
     margin: 0;
   }
 
-  .drg-worksheet {
+  .req-worksheet {
     max-width: 100%;
 
-    .drg-worksheet__print-btn,
-    .drg-worksheet__back-link {
+    .req-worksheet__print-btn,
+    .req-worksheet__back-link {
       display: none !important;
     }
 
-    .drg-worksheet__draw-area {
+    .req-worksheet__draw-area {
       min-height: 9.375rem;
     }
 
-    .drg-worksheet__writing-area {
+    .req-worksheet__writing-area {
       min-height: 11.25rem;
     }
 
-    .drg-worksheet__grid {
+    .req-worksheet__grid {
       grid-template-columns: 1fr 1fr;
     }
 
-    .drg-worksheet__table td {
+    .req-worksheet__table td {
       min-height: 1.8em;
     }
   }
 
-  .drg-callout,
-  .drg-be-prepared,
-  .drg-checklist {
+  .req-callout,
+  .req-be-prepared,
+  .req-checklist {
     break-inside: avoid;
   }
 
@@ -375,50 +375,50 @@
     display: block !important;
   }
 
-  .drg-checklist[open] > .drg-checklist__content {
+  .req-checklist[open] > .req-checklist__content {
     display: block !important;
   }
 
-  .drg-requirement,
-  .drg-worksheet__section {
+  .req-requirement,
+  .req-worksheet__section {
     break-inside: avoid;
   }
 
-  .drg-print-btn {
+  .req-print-btn {
     display: none !important;
   }
 
-  .drg-req-rail {
+  .req-rail {
     display: none !important;
   }
 
-  .drg-print-section {
+  .req-print-section {
     break-before: auto;
   }
 
-  .drg-print-section:first-of-type {
+  .req-print-section:first-of-type {
     break-before: auto;
   }
 
-  .drg-video__iframe {
+  .req-video__iframe {
     display: none !important;
   }
 
   /* Print stays text-only — inline guide photos add weight/ink without
      helping a printed checklist, and pulling them off ImageKit for a
      print run isn't worth the request either. */
-  .drg-illustration {
+  .req-illustration {
     display: none !important;
   }
 
-  .drg-video__print-link,
-  .drg-external-link__print-link,
-  .drg-download__print-link,
-  .drg-org-card__print-link {
+  .req-video__print-link,
+  .req-external-link__print-link,
+  .req-download__print-link,
+  .req-org-card__print-link {
     display: block;
   }
 
-  .drg-print-divider {
+  .req-print-divider {
     break-before: auto;
   }
 

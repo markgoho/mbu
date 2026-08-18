@@ -109,9 +109,9 @@
   id="{{ $req.path }}"
   class="{{ $classes }}"
   tabindex="-1"
-  data-pagefind-index-attrs="data-anchor,data-badge-name"
+  data-pagefind-index-attrs="data-anchor,data-content-name"
   data-anchor="{{ $req.path }}"
-  data-badge-name="{{ $badgeName }}"
+  data-content-name="{{ $badgeName }}"
   {{ with $guideHref }}data-guide="{{ . }}"{{ end }}>
   {{ if eq $variant "chips" }}
     <span class="req-child__marker">{{ $bare }}</span>

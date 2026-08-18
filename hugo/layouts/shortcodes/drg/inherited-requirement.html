@@ -23,7 +23,7 @@
 {{- $state := newScratch -}}
 {{- $state.Set "parentText" "" -}}
 
-{{- define "partials/drg-find-requirement-text" -}}
+{{- define "partials/req-find-requirement-text" -}}
   {{- $requirements := .requirements -}}
   {{- $targetPath := .targetPath -}}
   {{- $state := .state -}}
@@ -32,13 +32,13 @@
       {{- $state.Set "parentText" .text -}}
     {{- end -}}
     {{- if and (eq ($state.Get "parentText") "") .subrequirements -}}
-      {{- template "partials/drg-find-requirement-text" (dict "requirements" .subrequirements "targetPath" $targetPath "state" $state) -}}
+      {{- template "partials/req-find-requirement-text" (dict "requirements" .subrequirements "targetPath" $targetPath "state" $state) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 
 {{- if and (ne $parentPath "") (ne $badgeData dict) -}}
-  {{- template "partials/drg-find-requirement-text" (dict "requirements" $badgeData.requirements "targetPath" $parentPath "state" $state) -}}
+  {{- template "partials/req-find-requirement-text" (dict "requirements" $badgeData.requirements "targetPath" $parentPath "state" $state) -}}
 {{- end -}}
 
 {{- $parentText := $state.Get "parentText" | strings.TrimSpace -}}
@@ -115,12 +115,12 @@
 {{- end -}}
 
 {{- $isSub := findRE `[a-zA-Z]` $number -}}
-{{- $class := cond (gt (len $isSub) 0) "drg-requirement drg-requirement--sub" "drg-requirement" -}}
+{{- $class := cond (gt (len $isSub) 0) "req-requirement req-requirement--sub" "req-requirement" -}}
 <div class="{{ $class }}">
   {{ with $number }}
-    <span class="drg-requirement__number">{{ . }}.</span>
+    <span class="req-requirement__number">{{ . }}.</span>
   {{ end }}
-  <p class="drg-requirement__text">
+  <p class="req-requirement__text">
     {{ $displayText | markdownify }}
   </p>
 </div>

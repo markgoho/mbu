@@ -37,8 +37,8 @@
   {{ end }}
 {{ end }}
 
-<aside class="drg-sidebar-wrap">
-  <div class="drg-sidebar">
+<aside class="req-sidebar-wrap">
+  <div class="req-sidebar">
     {{ partial "merit-badges/badge-identity.html" (dict "badge" $badgePage "json" $json "slug" $slug) }}
 
     {{ if $guideNav }}
@@ -46,10 +46,10 @@
       {{ if $currentReqKey }}
         {{ $usedDesktopKeys = $usedDesktopKeys | append $currentReqKey }}
       {{ end }}
-      <ul class="drg-nav">
+      <ul class="req-nav">
         {{ range $guideNav }}
           {{ if .group_title }}
-            <li class="drg-nav__group-title">{{ .group_title }}</li>
+            <li class="req-nav__group-title">{{ .group_title }}</li>
           {{ end }}
 
           {{ range .items }}
@@ -78,11 +78,11 @@
                 {{ $itemKey = "" }}
               {{ end }}
             {{ end }}
-            <li class="drg-nav__item">
+            <li class="req-nav__item">
               <a
                 href="{{ .url }}"
-                class="drg-nav__link {{ if $isCurrent }}
-                  drg-nav__link--active
+                class="req-nav__link {{ if $isCurrent }}
+                  req-nav__link--active
                 {{ end }}"
                 {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
                 {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
@@ -90,17 +90,17 @@
             </li>
           {{ end }}
         {{ end }}
-        <li class="drg-nav__group-title">Reference</li>
-        <li class="drg-nav__item">
-          <a href="{{ $reqUrl }}" class="drg-nav__link drg-nav__link--reference">
-            {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-nav__link-icon") }}
+        <li class="req-nav__group-title">Reference</li>
+        <li class="req-nav__item">
+          <a href="{{ $reqUrl }}" class="req-nav__link req-nav__link--reference">
+            {{ partial "icon.html" (dict "name" "list-checks" "class" "req-nav__link-icon") }}
             View Requirements
           </a>
         </li>
         {{ if $printPage }}
-          <li class="drg-nav__item">
-            <a href="{{ $printPage.RelPermalink }}" class="drg-nav__link drg-nav__link--reference">
-              {{ partial "icon.html" (dict "name" "scroll" "class" "drg-nav__link-icon") }}
+          <li class="req-nav__item">
+            <a href="{{ $printPage.RelPermalink }}" class="req-nav__link req-nav__link--reference">
+              {{ partial "icon.html" (dict "name" "scroll" "class" "req-nav__link-icon") }}
               Print Complete Guide
             </a>
           </li>
@@ -116,22 +116,22 @@
   {{ if $currentReqKey }}
     {{ $usedMobileKeys = $usedMobileKeys | append $currentReqKey }}
   {{ end }}
-  <nav class="drg-mobile-nav-wrap" aria-label="Guide navigation">
-    <details class="drg-mobile-nav">
-      <summary class="drg-mobile-nav__toggle">
-        {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__icon") }}
+  <nav class="req-mobile-nav-wrap" aria-label="Guide navigation">
+    <details class="req-mobile-nav">
+      <summary class="req-mobile-nav__toggle">
+        {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__icon") }}
         <span>Guide Navigation</span>
-        <span class="drg-mobile-nav__chevron">
+        <span class="req-mobile-nav__chevron">
           <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </span>
       </summary>
-      <div class="drg-mobile-nav__menu">
-        <ul class="drg-mobile-nav__list">
+      <div class="req-mobile-nav__menu">
+        <ul class="req-mobile-nav__list">
           {{ range $guideNav }}
             {{ if .group_title }}
-              <li class="drg-mobile-nav__group">{{ .group_title }}</li>
+              <li class="req-mobile-nav__group">{{ .group_title }}</li>
             {{ end }}
             {{ range .items }}
               {{ $isCurrent := eq .url $currentUrl }}
@@ -162,29 +162,29 @@
               <li>
                 <a
                   href="{{ .url }}"
-                  class="drg-mobile-nav__link {{ if $isCurrent }}
-                    drg-mobile-nav__link--active
+                  class="req-mobile-nav__link {{ if $isCurrent }}
+                    req-mobile-nav__link--active
                   {{ end }}"
                   {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
                   <span>{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}</span>
                   {{ if $isCurrent }}
-                    <svg class="drg-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   {{ end }}
                 </a>
               </li>
             {{ end }}
           {{ end }}
-          <li class="drg-mobile-nav__group">Reference</li>
+          <li class="req-mobile-nav__group">Reference</li>
           <li>
-            <a href="{{ $reqUrl }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
-              {{ partial "icon.html" (dict "name" "list-checks" "class" "drg-mobile-nav__link-icon") }}
+            <a href="{{ $reqUrl }}" class="req-mobile-nav__link req-mobile-nav__link--reference">
+              {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__link-icon") }}
               <span>View Requirements</span>
             </a>
           </li>
           {{ if $printPage }}
             <li>
-              <a href="{{ $printPage.RelPermalink }}" class="drg-mobile-nav__link drg-mobile-nav__link--reference">
-                {{ partial "icon.html" (dict "name" "scroll" "class" "drg-mobile-nav__link-icon") }}
+              <a href="{{ $printPage.RelPermalink }}" class="req-mobile-nav__link req-mobile-nav__link--reference">
+                {{ partial "icon.html" (dict "name" "scroll" "class" "req-mobile-nav__link-icon") }}
                 <span>Print Complete Guide</span>
               </a>
             </li>
@@ -196,7 +196,7 @@
   <script>
     (function() {
       var lastScrollY = window.scrollY;
-      var nav = document.querySelector('.drg-mobile-nav-wrap');
+      var nav = document.querySelector('.req-mobile-nav-wrap');
       if (!nav) return;
       window.addEventListener('scroll', function() {
         var currentScrollY = window.scrollY;

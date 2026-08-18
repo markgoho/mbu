@@ -1,17 +1,17 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main-class" }}drg-page{{ end }}
+{{ define "main-class" }}req-page{{ end }}
 
 {{ define "main" }}
-  <article class="drg-content">
-    <header class="drg-header">
-      <h1 class="drg-header__title">{{ .Title }}</h1>
+  <article class="req-content">
+    <header class="req-header">
+      <h1 class="req-header__title">{{ .Title }}</h1>
       {{ with .Params.group_title }}
-        <span class="drg-header__group">{{ . }}</span>
+        <span class="req-header__group">{{ . }}</span>
       {{ end }}
     </header>
 
-    <section class="drg-worksheet">
+    <section class="req-worksheet">
       {{ .Content }}
     </section>
   </article>

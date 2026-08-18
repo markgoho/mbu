@@ -10,7 +10,7 @@
  * css/components/drg-blocks.css; the worksheet and complete-guide print
  * page live in css/pages/drg-print.css. This page opts into the v2
  * theme via {{ define "html-class" }}theme-v2{{ end }} and goes
- * full-bleed via {{ define "main-class" }}drg-page drg-page-main{{ end }}
+ * full-bleed via {{ define "main-class" }}req-page req-page-main{{ end }}
  * in layouts/merit-badges/guide.html.
  */
 
@@ -18,7 +18,7 @@
 /* Full-bleed override                                                  */
 /* ------------------------------------------------------------------ */
 
-.drg-page-main {
+.req-page-main {
   --container-max-width: 100%;
   --container-padding-inline: 0;
 }
@@ -27,7 +27,7 @@
 /* Shell                                                                */
 /* ------------------------------------------------------------------ */
 
-.drg-page {
+.req-page {
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
@@ -46,7 +46,7 @@
 /* Sidebar                                                              */
 /* ------------------------------------------------------------------ */
 
-.drg-sidebar-wrap {
+.req-sidebar-wrap {
   display: none;
 
   @media (min-width: 60rem) {
@@ -85,7 +85,7 @@
   }
 }
 
-.drg-sidebar {
+.req-sidebar {
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
@@ -105,12 +105,12 @@
   }
 }
 
-.dark .drg-sidebar {
+.dark .req-sidebar {
   border-color: var(--card-border-subtle);
   box-shadow: var(--shadow-elevated);
 }
 
-.dark .drg-sidebar:hover {
+.dark .req-sidebar:hover {
   border-color: var(--accent);
   box-shadow: var(--shadow-elevated-hover);
 }
@@ -119,7 +119,7 @@
 /* Mobile navigation (collapsible, shown only when sidebar is hidden)   */
 /* ------------------------------------------------------------------ */
 
-.drg-mobile-nav-wrap {
+.req-mobile-nav-wrap {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -131,16 +131,16 @@
   }
 }
 
-.drg-mobile-nav-wrap.nav-hidden {
+.req-mobile-nav-wrap.nav-hidden {
   transform: translateY(-100%);
 }
 
-.drg-mobile-nav {
+.req-mobile-nav {
   position: relative;
   margin-bottom: var(--space-m);
 }
 
-.drg-mobile-nav__toggle {
+.req-mobile-nav__toggle {
   display: flex;
   align-items: center;
   gap: var(--space-xs);
@@ -173,7 +173,7 @@
   }
 }
 
-.dark .drg-mobile-nav__toggle {
+.dark .req-mobile-nav__toggle {
   border-color: var(--card-border-subtle);
 
   &:hover,
@@ -183,18 +183,18 @@
   }
 }
 
-.drg-mobile-nav__icon {
+.req-mobile-nav__icon {
   width: 1.25rem;
   height: 1.25rem;
   flex-shrink: 0;
   color: var(--accent);
 }
 
-.dark .drg-mobile-nav__icon {
+.dark .req-mobile-nav__icon {
   color: var(--amber);
 }
 
-.drg-mobile-nav__chevron {
+.req-mobile-nav__chevron {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -206,16 +206,16 @@
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
 }
 
-.dark .drg-mobile-nav__chevron {
+.dark .req-mobile-nav__chevron {
   color: var(--amber);
 }
 
-.drg-mobile-nav[open] .drg-mobile-nav__chevron {
+.req-mobile-nav[open] .req-mobile-nav__chevron {
   transform: rotate(180deg);
 }
 
 /* Floating Dropdown Menu Panel */
-.drg-mobile-nav__menu {
+.req-mobile-nav__menu {
   position: absolute;
   top: calc(100% + 0.5rem);
   left: 0;
@@ -244,7 +244,7 @@
   }
 }
 
-.drg-mobile-nav__list {
+.req-mobile-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -253,7 +253,7 @@
   gap: var(--space-3xs);
 }
 
-.drg-mobile-nav__group {
+.req-mobile-nav__group {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -264,11 +264,11 @@
   margin-top: var(--space-xs);
 }
 
-.drg-mobile-nav__group:first-child {
+.req-mobile-nav__group:first-child {
   margin-top: 0;
 }
 
-.drg-mobile-nav__link {
+.req-mobile-nav__link {
   display: flex;
   align-items: center;
   gap: var(--space-xs);
@@ -292,7 +292,7 @@
   }
 }
 
-.drg-mobile-nav__link--active {
+.req-mobile-nav__link--active {
   background-color: var(--secondary-container, var(--accent-container));
   color: var(--on-secondary-container, var(--on-accent-container));
   font-weight: 700;
@@ -303,7 +303,7 @@
   }
 }
 
-.dark .drg-mobile-nav__link--active {
+.dark .req-mobile-nav__link--active {
   background-color: var(--amber);
   color: #0d130e;
 
@@ -313,13 +313,13 @@
   }
 }
 
-.drg-mobile-nav__check {
+.req-mobile-nav__check {
   margin-left: auto;
   flex-shrink: 0;
   color: currentColor;
 }
 
-.drg-mobile-nav__link--reference {
+.req-mobile-nav__link--reference {
   color: var(--accent);
   border-top: 1px dashed var(--card-border-subtle);
   margin-top: var(--space-2xs);
@@ -331,31 +331,31 @@
   }
 }
 
-.dark .drg-mobile-nav__link--reference {
+.dark .req-mobile-nav__link--reference {
   color: var(--amber);
 }
 
-.drg-mobile-nav__link-icon {
+.req-mobile-nav__link-icon {
   width: 1.1rem;
   height: 1.1rem;
   flex-shrink: 0;
 }
 
 /* ------------------------------------------------------------------ */
-/* Guide nav (desktop, inside .drg-sidebar)                             */
+/* Guide nav (desktop, inside .req-sidebar)                             */
 /* ------------------------------------------------------------------ */
 
-.drg-nav {
+.req-nav {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.drg-nav__item {
+.req-nav__item {
   margin-bottom: var(--space-3xs);
 }
 
-.drg-nav__link {
+.req-nav__link {
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
@@ -379,13 +379,13 @@
   }
 }
 
-.drg-nav__link--active {
+.req-nav__link--active {
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
   font-weight: 700;
 }
 
-.drg-nav__group-title {
+.req-nav__group-title {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -404,11 +404,11 @@
   }
 }
 
-.drg-nav__link--reference {
+.req-nav__link--reference {
   color: var(--accent);
 }
 
-.drg-nav__link-icon {
+.req-nav__link-icon {
   width: 1.1rem;
   height: 1.1rem;
   flex-shrink: 0;
@@ -420,8 +420,8 @@
 
 /* The flex item that actually sits beside the sidebar. Breadcrumb is a
    direct child here so it spans the full column instead of being capped
-   to .drg-content's 65ch reading measure below. */
-.drg-page-body {
+   to .req-content's 65ch reading measure below. */
+.req-page-body {
   flex: 1;
   min-width: 0;
   padding-inline: var(--space-s);
@@ -431,10 +431,10 @@
   }
 }
 
-/* .drg-content still carries its own padding-inline for the printable
-   guide pages that use it directly as the flex item (no .drg-page-body
+/* .req-content still carries its own padding-inline for the printable
+   guide pages that use it directly as the flex item (no .req-page-body
    wrapper there); zero it out here so nesting doesn't double the gutter. */
-.drg-page-body .drg-content {
+.req-page-body .req-content {
   padding-inline: 0;
   width: 100%;
 }
@@ -443,28 +443,28 @@
 /* Body grid + requirement rail                                        */
 /* ------------------------------------------------------------------ */
 
-/* Below 1400px this is a plain block wrapper -- .drg-content behaves
+/* Below 1400px this is a plain block wrapper -- .req-content behaves
    exactly as before and the rail is hidden, so nothing about the
    existing layout changes until there's room for a rail beside the
    75ch reading column. */
-.drg-body-grid {
-  --drg-rail-width: 17rem;
+.req-body-grid {
+  --req-rail-width: 17rem;
 }
 
-.drg-req-rail {
+.req-rail {
   display: none;
 }
 
 @media (min-width: 87.5rem) {
-  .drg-body-grid {
+  .req-body-grid {
     display: grid;
-    grid-template-columns: minmax(0, 75ch) var(--drg-rail-width);
+    grid-template-columns: minmax(0, 75ch) var(--req-rail-width);
     gap: var(--space-l);
     align-items: start;
-    timeline-scope: --drg-lead-req;
+    timeline-scope: --req-lead-req;
   }
 
-  .drg-req-rail {
+  .req-rail {
     display: block;
     grid-column: 2;
     grid-row: 1;
@@ -480,12 +480,12 @@
 /* Content / prose                                                      */
 /* ------------------------------------------------------------------ */
 
-.drg-content {
+.req-content {
   flex: 1;
   width: 100%;
   min-width: 0; /* Prevent flex overflow */
   container-type: inline-size;
-  container-name: drg-content;
+  container-name: req-content;
   padding-inline: var(--space-s);
 
   @media (min-width: 60rem) {
@@ -501,7 +501,7 @@
   }
 
   /* --- Tables (markdown-generated) --- */
-  & .drg-table-scroll {
+  & .req-table-scroll {
     overflow-x: auto;
     margin-block: var(--space-m);
     -webkit-overflow-scrolling: touch;
@@ -538,7 +538,7 @@
   }
 
   /* Fit markdown tables to narrow containers before falling back to overflow */
-  @container drg-content (max-width: 740px) {
+  @container req-content (max-width: 740px) {
     table {
       table-layout: fixed;
     }
@@ -546,22 +546,22 @@
 }
 
 @media (max-width: 60rem) {
-  .drg-content table,
-  .drg-content table thead,
-  .drg-content table tbody,
-  .drg-content table th,
-  .drg-content table td,
-  .drg-content table tr {
+  .req-content table,
+  .req-content table thead,
+  .req-content table tbody,
+  .req-content table th,
+  .req-content table td,
+  .req-content table tr {
     display: block;
   }
 
-  .drg-content table thead tr {
+  .req-content table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  .drg-content table tr {
+  .req-content table tr {
     border: 1px solid var(--card-border-subtle);
     margin-bottom: var(--space-s);
     border-radius: var(--radius-md);
@@ -569,7 +569,7 @@
     padding: var(--space-xs);
   }
 
-  .drg-content table td {
+  .req-content table td {
     border: none;
     border-bottom: 1px dashed var(--card-border-subtle);
     position: relative;
@@ -580,11 +580,11 @@
     align-items: center;
   }
 
-  .drg-content table td:last-child {
+  .req-content table td:last-child {
     border-bottom: none;
   }
 
-  .drg-content table td[data-label]:before {
+  .req-content table td[data-label]:before {
     content: attr(data-label);
     position: absolute;
     left: var(--space-xs);
@@ -595,13 +595,13 @@
 }
 
 @media print {
-  .drg-content .drg-table-scroll {
+  .req-content .req-table-scroll {
     overflow-x: visible;
   }
 }
 
 /* --- Illustrations --- */
-.drg-illustration {
+.req-illustration {
   margin-block: var(--space-l);
   margin-inline: 0;
   border-radius: var(--radius-xl);
@@ -631,18 +631,18 @@
 /* Page header                                                         */
 /* ------------------------------------------------------------------ */
 
-.drg-header {
+.req-header {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0 var(--space-m);
   text-align: left;
 
-  & .drg-header__title {
+  & .req-header__title {
     text-align: left;
     margin-block-start: 0;
   }
 
-  & .drg-header__kicker {
+  & .req-header__kicker {
     font-size: var(--step--1);
     color: var(--on-surface-muted);
     font-weight: var(--font-weight-bold);
@@ -650,12 +650,12 @@
     letter-spacing: 0.05em;
   }
 
-  @container drg-content (max-width: 500px) {
+  @container req-content (max-width: 500px) {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
 
-    & .drg-header__title {
+    & .req-header__title {
       text-align: center;
     }
   }
@@ -665,7 +665,7 @@
 /* Footer nav                                                           */
 /* ------------------------------------------------------------------ */
 
-.drg-footer-nav {
+.req-footer-nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -673,7 +673,7 @@
   margin-bottom: var(--space-l);
   gap: var(--space-s);
 
-  & .drg-footer-nav__link {
+  & .req-footer-nav__link {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -697,7 +697,7 @@
     }
   }
 
-  & .drg-footer-nav__label {
+  & .req-footer-nav__label {
     font-size: var(--step--2);
     font-weight: 700;
     text-transform: uppercase;
@@ -706,7 +706,7 @@
     margin-bottom: var(--space-3xs);
   }
 
-  & .drg-footer-nav__title {
+  & .req-footer-nav__title {
     font-weight: var(--font-weight-bold);
     font-size: var(--step--1);
     color: var(--on-surface);
@@ -716,33 +716,33 @@
     }
   }
 
-  @container drg-content (max-width: 480px) {
+  @container req-content (max-width: 480px) {
     flex-direction: column;
   }
 }
 
-.dark .drg-footer-nav__link {
+.dark .req-footer-nav__link {
   border-color: var(--card-border-subtle);
   box-shadow: var(--shadow-elevated);
 }
 
-.dark .drg-footer-nav__link:hover {
+.dark .req-footer-nav__link:hover {
   border-color: var(--accent);
   box-shadow: var(--shadow-elevated-hover);
 }
 
-.drg-footer-nav__link--prev {
+.req-footer-nav__link--prev {
   align-items: flex-start;
   text-align: left;
 }
 
-.drg-footer-nav__link--next {
+.req-footer-nav__link--next {
   align-items: flex-end;
   text-align: right;
 }
 
-@container drg-content (max-width: 480px) {
-  .drg-footer-nav__link--next {
+@container req-content (max-width: 480px) {
+  .req-footer-nav__link--next {
     align-items: flex-start;
     text-align: left;
   }

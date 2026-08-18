@@ -170,10 +170,10 @@ function copyText(requirement: HTMLElement, path: string): void {
 
   if (typeof pirsch !== "undefined") {
     const badge =
-      requirement.dataset.badgeName ??
-      requirement.closest<HTMLElement>("[data-badge-name]")?.dataset.badgeName ??
+      requirement.dataset.contentName ??
+      requirement.closest<HTMLElement>("[data-content-name]")?.dataset.contentName ??
       "";
-    pirsch("merit-badge-requirement-copy-text", {
+    pirsch("requirement-copy-text", {
       meta: { badge, path, length: text.length },
     });
   }
