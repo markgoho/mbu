@@ -35,6 +35,17 @@ DRG skills. Both are judged specific enough to merit badge requirements
 that scouting.university needs its own adapted form rather than a shared
 package — tracked as separate future efforts, not part of this decision.
 
+This exclusion is about data, scraping, and verification — never the
+visual *rendering* of requirements. Deep-linking, view-transition
+choreography, the sticky requirement rail, and requirement CSS are
+rendering-layer, not requirement-engine, and migrate into the theme like
+any other chrome once real duplication is visible. Content-modeling
+partials that read merit-badge data or front matter directly (e.g. the
+JSON-LD schema partials) stay local until scouting-u has real rank data to
+prove genericization against — see [Redraw the requirement-rendering
+boundary and extract what
+applies](https://github.com/markgoho/mbu/issues/145).
+
 ## Consequences
 
 - `mbu`'s Hugo build gains a Go-toolchain dependency at authoring time
