@@ -1,0 +1,749 @@
+/*
+ * Digital Resource Guide — v2 redesign.
+ *
+ * Shell, sidebar, nav, page header, prose/table styles and footer nav for
+ * DRG guide pages. Mirrors the shell established in
+ * css/pages/merit-badge-requirements.css (full-bleed main, sidebar as a
+ * raised card sharing .badge-identity with the requirements page) and
+ * uses ONLY the v2 semantic tokens from tokens-v2.css. Component blocks
+ * (callouts, cards, checklist, etc) live in
+ * css/components/drg-blocks.css; the worksheet and complete-guide print
+ * page live in css/pages/drg-print.css. This page opts into the v2
+ * theme via {{ define "html-class" }}theme-v2{{ end }} and goes
+ * full-bleed via {{ define "main-class" }}req-page req-page-main{{ end }}
+ * in layouts/merit-badges/guide.html.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Full-bleed override                                                  */
+/* ------------------------------------------------------------------ */
+
+.req-page-main {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Shell                                                                */
+/* ------------------------------------------------------------------ */
+
+.req-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  padding-block-start: var(--space-m);
+
+  @media (min-width: 60rem) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-l);
+    padding-inline: var(--space-m);
+    padding-block-start: var(--space-l);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Sidebar                                                              */
+/* ------------------------------------------------------------------ */
+
+.req-sidebar-wrap {
+  display: none;
+
+  @media (min-width: 60rem) {
+    display: block;
+    flex: 0 0 17.5rem;
+    position: sticky;
+    top: var(--space-m);
+    max-height: calc(100vh - var(--space-2xl));
+    overflow-y: auto;
+
+    /* Scrollbar stays invisible until the nav itself is hovered, so it
+       doesn't compete with the badge glow / card border at rest. */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &:hover {
+      scrollbar-color: var(--outline-variant) transparent;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: var(--radius-full);
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: var(--outline-variant);
+    }
+  }
+}
+
+.req-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  background: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-s);
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+  &:hover {
+    border-color: var(--accent-container);
+    box-shadow: var(--shadow-raised);
+  }
+}
+
+.dark .req-sidebar {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-sidebar:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-elevated-hover);
+}
+
+/* ------------------------------------------------------------------ */
+/* Mobile navigation (collapsible, shown only when sidebar is hidden)   */
+/* ------------------------------------------------------------------ */
+
+.req-mobile-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: transform 0.3s ease;
+  padding-inline: var(--space-s);
+
+  @media (min-width: 60rem) {
+    display: none;
+  }
+}
+
+.req-mobile-nav-wrap.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.req-mobile-nav {
+  position: relative;
+  margin-bottom: var(--space-m);
+}
+
+.req-mobile-nav__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 48px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border-subtle, var(--outline-variant));
+  background-color: var(--surface-raised);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-bold, 700);
+  font-size: var(--step-0);
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  list-style: none;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-raised), 0 0 0 3px var(--accent-wash);
+    background-color: var(--surface-sunken);
+  }
+}
+
+.dark .req-mobile-nav__toggle {
+  border-color: var(--card-border-subtle);
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--amber);
+    box-shadow: var(--shadow-elevated), 0 0 0 3px var(--amber-glow);
+  }
+}
+
+.req-mobile-nav__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.dark .req-mobile-nav__icon {
+  color: var(--amber);
+}
+
+.req-mobile-nav__chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--on-surface-muted);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+}
+
+.dark .req-mobile-nav__chevron {
+  color: var(--amber);
+}
+
+.req-mobile-nav[open] .req-mobile-nav__chevron {
+  transform: rotate(180deg);
+}
+
+/* Floating Dropdown Menu Panel */
+.req-mobile-nav__menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  z-index: 100;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: var(--surface-raised);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border-subtle, var(--outline-variant));
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-elevated, 0 16px 36px rgba(0, 0, 0, 0.35));
+  padding: 0.5rem;
+  animation: drgMobileNavFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes drgMobileNavFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.req-mobile-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.req-mobile-nav__group {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-muted);
+  opacity: 0.75;
+  padding: var(--space-xs) 0.75rem var(--space-3xs);
+  font-weight: 700;
+  margin-top: var(--space-xs);
+}
+
+.req-mobile-nav__group:first-child {
+  margin-top: 0;
+}
+
+.req-mobile-nav__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.625rem 0.875rem;
+  border-radius: var(--radius-md);
+  color: var(--on-surface-muted);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--step-0);
+  line-height: 1.35;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--surface-sunken);
+    color: var(--on-surface);
+  }
+}
+
+.req-mobile-nav__link--active {
+  background-color: var(--secondary-container, var(--accent-container));
+  color: var(--on-secondary-container, var(--on-accent-container));
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--secondary-container, var(--accent-container));
+    color: var(--on-secondary-container, var(--on-accent-container));
+  }
+}
+
+.dark .req-mobile-nav__link--active {
+  background-color: var(--amber);
+  color: #0d130e;
+
+  &:hover {
+    background-color: var(--amber);
+    color: #0d130e;
+  }
+}
+
+.req-mobile-nav__check {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.req-mobile-nav__link--reference {
+  color: var(--accent);
+  border-top: 1px dashed var(--card-border-subtle);
+  margin-top: var(--space-2xs);
+  padding-top: var(--space-xs);
+
+  &:hover {
+    color: var(--on-surface);
+    background-color: var(--surface-sunken);
+  }
+}
+
+.dark .req-mobile-nav__link--reference {
+  color: var(--amber);
+}
+
+.req-mobile-nav__link-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Guide nav (desktop, inside .req-sidebar)                             */
+/* ------------------------------------------------------------------ */
+
+.req-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.req-nav__item {
+  margin-bottom: var(--space-3xs);
+}
+
+.req-nav__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  min-height: 44px;
+  padding-inline: var(--space-xs);
+  padding-block: var(--space-3xs);
+  border-radius: var(--radius-md);
+  color: var(--on-surface-muted);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--step--1);
+  line-height: 1.35;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+
+  &:hover {
+    background-color: var(--surface-sunken);
+    color: var(--on-surface);
+  }
+}
+
+.req-nav__link--active {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+  font-weight: 700;
+}
+
+.req-nav__group-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-muted);
+  opacity: 0.75;
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-2xs);
+  padding-left: var(--space-xs);
+  font-weight: 700;
+
+  /* Separator for the "Reference" group at bottom of sidebar */
+  &:last-of-type {
+    margin-top: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px dashed var(--card-border-subtle);
+  }
+}
+
+.req-nav__link--reference {
+  color: var(--accent);
+}
+
+.req-nav__link-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Page body (breadcrumb + prose)                                       */
+/* ------------------------------------------------------------------ */
+
+/* The flex item that actually sits beside the sidebar. Breadcrumb is a
+   direct child here so it spans the full column instead of being capped
+   to .req-content's 65ch reading measure below. */
+.req-page-body {
+  flex: 1;
+  min-width: 0;
+  padding-inline: var(--space-s);
+
+  @media (min-width: 60rem) {
+    padding-inline: 0;
+  }
+}
+
+/* .req-content still carries its own padding-inline for the printable
+   guide pages that use it directly as the flex item (no .req-page-body
+   wrapper there); zero it out here so nesting doesn't double the gutter. */
+.req-page-body .req-content {
+  padding-inline: 0;
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------ */
+/* Body grid + requirement rail                                        */
+/* ------------------------------------------------------------------ */
+
+/* Below 1400px this is a plain block wrapper -- .req-content behaves
+   exactly as before and the rail is hidden, so nothing about the
+   existing layout changes until there's room for a rail beside the
+   75ch reading column. */
+.req-body-grid {
+  --req-rail-width: 17rem;
+}
+
+.req-rail {
+  display: none;
+}
+
+@media (min-width: 87.5rem) {
+  .req-body-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 75ch) var(--req-rail-width);
+    gap: var(--space-l);
+    align-items: start;
+    timeline-scope: --req-lead-req;
+  }
+
+  .req-rail {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    position: sticky;
+    top: var(--space-m);
+    max-height: calc(100vh - var(--space-2xl));
+    overflow-y: auto;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Content / prose                                                      */
+/* ------------------------------------------------------------------ */
+
+.req-content {
+  flex: 1;
+  width: 100%;
+  min-width: 0; /* Prevent flex overflow */
+  container-type: inline-size;
+  container-name: req-content;
+  padding-inline: var(--space-s);
+
+  @media (min-width: 60rem) {
+    padding-inline: 0;
+    max-width: 75ch;
+  }
+
+  & h2,
+  & h3,
+  & h4 {
+    font-family: var(--font-display);
+    color: var(--on-surface);
+  }
+
+  /* --- Tables (markdown-generated) --- */
+  & .req-table-scroll {
+    overflow-x: auto;
+    margin-block: var(--space-m);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: 0;
+    font-size: var(--step--1);
+
+    & th {
+      background-color: var(--surface-sunken);
+      font-weight: var(--font-weight-bold);
+      color: var(--on-surface);
+      text-align: left;
+      padding: var(--space-xs) var(--space-s);
+      border: 1px solid var(--outline-variant);
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+
+    & td {
+      padding: var(--space-xs) var(--space-s);
+      border: 1px solid var(--outline-variant);
+      vertical-align: top;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+
+    & tbody tr:nth-child(even) {
+      background-color: var(--surface-raised);
+    }
+  }
+
+  /* Fit markdown tables to narrow containers before falling back to overflow */
+  @container req-content (max-width: 740px) {
+    table {
+      table-layout: fixed;
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .req-content table,
+  .req-content table thead,
+  .req-content table tbody,
+  .req-content table th,
+  .req-content table td,
+  .req-content table tr {
+    display: block;
+  }
+
+  .req-content table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .req-content table tr {
+    border: 1px solid var(--card-border-subtle);
+    margin-bottom: var(--space-s);
+    border-radius: var(--radius-md);
+    background-color: var(--surface-raised);
+    padding: var(--space-xs);
+  }
+
+  .req-content table td {
+    border: none;
+    border-bottom: 1px dashed var(--card-border-subtle);
+    position: relative;
+    padding: var(--space-xs);
+    padding-left: 45%;
+    min-height: 2.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .req-content table td:last-child {
+    border-bottom: none;
+  }
+
+  .req-content table td[data-label]:before {
+    content: attr(data-label);
+    position: absolute;
+    left: var(--space-xs);
+    width: 40%;
+    font-weight: var(--font-weight-bold);
+    color: var(--on-surface-muted);
+  }
+}
+
+@media print {
+  .req-content .req-table-scroll {
+    overflow-x: visible;
+  }
+}
+
+/* --- Illustrations --- */
+.req-illustration {
+  margin-block: var(--space-l);
+  margin-inline: 0;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--card-border-subtle);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  figcaption {
+    padding: var(--space-xs) var(--space-s);
+    background-color: var(--surface-raised);
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    text-align: center;
+    border-top: 1px solid var(--card-border-subtle);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Page header                                                         */
+/* ------------------------------------------------------------------ */
+
+.req-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 var(--space-m);
+  text-align: left;
+
+  & .req-header__title {
+    text-align: left;
+    margin-block-start: 0;
+  }
+
+  & .req-header__kicker {
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @container req-content (max-width: 500px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+
+    & .req-header__title {
+      text-align: center;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer nav                                                           */
+/* ------------------------------------------------------------------ */
+
+.req-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-l);
+  gap: var(--space-s);
+
+  & .req-footer-nav__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    flex: 1;
+    min-width: 0;
+    padding: var(--space-s) var(--space-m);
+    background-color: var(--surface-raised);
+    border: 1px solid var(--card-border-subtle);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    transition:
+      border-color 0.2s,
+      box-shadow 0.2s,
+      transform 0.2s;
+
+    &:hover {
+      border-color: var(--accent-container);
+      box-shadow: var(--shadow-raised);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+  }
+
+  & .req-footer-nav__label {
+    font-size: var(--step--2);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--on-surface-muted);
+    margin-bottom: var(--space-3xs);
+  }
+
+  & .req-footer-nav__title {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--step--1);
+    color: var(--on-surface);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @container req-content (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.dark .req-footer-nav__link {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-footer-nav__link:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-elevated-hover);
+}
+
+.req-footer-nav__link--prev {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.req-footer-nav__link--next {
+  align-items: flex-end;
+  text-align: right;
+}
+
+@container req-content (max-width: 480px) {
+  .req-footer-nav__link--next {
+    align-items: flex-start;
+    text-align: left;
+  }
+}

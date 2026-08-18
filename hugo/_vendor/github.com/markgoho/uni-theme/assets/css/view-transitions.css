@@ -1,0 +1,86 @@
+/*
+ * Cross-document view transitions.
+ *
+ * Both ends of a navigation must carry this opt-in for a transition to run,
+ * so it lives in the critical bundle rather than in a single layout.
+ *
+ * Support: Chrome/Edge 126+, Safari 18.2+. Firefox has view transitions but
+ * not the cross-document form, and navigates instantly instead — which is
+ * exactly the behaviour without this file.
+ */
+
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
+/*
+ * Pairing: overview page's "What you'll do" preview <-> requirements page.
+ *
+ * Each of the first 4 requirements gets a per-path view-transition-name
+ * (req-num-<path>, req-title-<path>, req-text-<path>), set inline by
+ * badge-landing.html and req-card.html/req-child-item.html/req-text.html.
+ * Those names can't be selected in CSS, so each part also carries a
+ * view-transition-class, which is what the rules below target.
+ *
+ * The text name in particular doesn't always land on .req-card__text: when
+ * a requirement's own text is just boilerplate ("Do the following:"), the
+ * preview snippet is pulled from a subrequirement instead (see
+ * req-preview.html), so the name -- and this class -- lands on that child's
+ * .req-child__text.
+ */
+
+.badge-preview__node,
+.req-card__node {
+  view-transition-class: req-num;
+}
+
+.req-card__eyebrow,
+.req-header__kicker {
+  view-transition-class: req-eyebrow;
+}
+
+.badge-preview__title,
+.req-card__title,
+.req-child__title,
+.req-header__title,
+.req-nav__link,
+.req-mobile-nav__link {
+  view-transition-class: req-title;
+}
+
+.badge-preview__snippet,
+.req-card__text,
+.req-child__text,
+.req-requirement__text {
+  view-transition-class: req-text;
+}
+
+::view-transition-group(.req-num),
+::view-transition-group(.req-eyebrow),
+::view-transition-group(.req-title),
+::view-transition-group(.req-text) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/*
+ * The snippet/title/eyebrow change line count, size and measure between the
+ * requirement card and the guide -- letting the box animate while
+ * cross-fading the text content reads smoothly.
+ */
+::view-transition-old(.req-eyebrow),
+::view-transition-new(.req-eyebrow),
+::view-transition-old(.req-title),
+::view-transition-new(.req-title),
+::view-transition-old(.req-text),
+::view-transition-new(.req-text) {
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
