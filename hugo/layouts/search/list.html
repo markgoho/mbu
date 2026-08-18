@@ -21,23 +21,16 @@
     {{ end }}
   {{ end }}
 
-
-  <article class="search-page">
-    {{ partial "breadcrumb.html" . }}
-    <header class="search-header">
-      <h1>{{ .Title }}</h1>
-      <p class="search-description">
-        Find specific requirements across all {{ $badgeCount }} merit badges
-      </p>
-    </header>
-
-    <div id="search"></div>
-  </article>
+  {{ partial "search/page.html" (dict
+    "page" .
+    "description" (printf "Find specific requirements across all %d merit badges" $badgeCount)
+    "placeholder" "Search requirements..."
+    "zeroResults" "No requirements found"
+    "noResultsEvent" "merit-badge-search-no-results"
+    "resultClickEvent" "merit-badge-search-result-click"
+  ) }}
 {{ end }}
 
 {{ define "footer-scripts" }}
-  <script src="/pagefind/pagefind-ui.js"></script>
-  {{ $opts := dict "targetPath" "search.js" }}
-  {{ $built := resources.Get "ts/search.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
-  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+  {{ partial "search/scripts.html" . }}
 {{ end }}
