@@ -1,0 +1,312 @@
+/*
+ * Merit Badge landing page (/merit-badges/<slug>/) — v2 redesign.
+ *
+ * Reuses the requirements page's shell (.req-page / .req-sidebar-wrap /
+ * .req-main / .req-main container query, all from
+ * pages/merit-badge-requirements.css, loaded just before this file in
+ * head/critical-css.html) and its .req-card__node circle for the
+ * "What you'll do" preview rows. Only the bento overview and start CTA
+ * are here -- the hero itself lives in components/badge-hero.css,
+ * shared with the DRG guide landing page.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Bento overview                                                       */
+/* ------------------------------------------------------------------ */
+
+.badge-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-m);
+  margin-block-end: var(--space-l);
+}
+
+@container req-main (min-width: 700px) {
+  .badge-overview {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .badge-preview {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .badge-glance {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .badge-resources {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+.badge-preview,
+.badge-glance,
+.badge-resources {
+  padding: var(--space-m);
+}
+
+.badge-preview__heading,
+.badge-glance__heading,
+.badge-resources__heading {
+  margin: 0 0 var(--space-s);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--on-surface);
+}
+
+/* --- What you'll do -------------------------------------------------- */
+
+.badge-preview__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.badge-preview__link {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-s);
+  min-height: 44px;
+  padding: var(--space-2xs);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-sunken);
+  }
+}
+
+.badge-preview__node {
+  flex-shrink: 0;
+}
+
+.badge-preview__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.badge-preview__title {
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.badge-preview__snippet {
+  font-size: var(--step--1);
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface-muted);
+}
+
+.badge-preview__more {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  margin-block-start: var(--space-s);
+  font-weight: 700;
+  font-size: var(--step--1);
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}
+
+.badge-preview__more-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* --- At a glance ------------------------------------------------------ */
+
+.badge-glance__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-glance__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-s);
+  padding-block: var(--space-2xs);
+  border-block-end: 1px dashed var(--card-border-subtle);
+
+  &:last-child {
+    border-block-end: 0;
+  }
+
+  dt {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--on-surface-muted);
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 700;
+    color: var(--on-surface);
+    text-align: end;
+  }
+}
+
+.badge-glance__category-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--card-border-subtle);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+}
+
+.dark .badge-glance__category-link {
+  &:hover,
+  &:focus-visible {
+    color: var(--amber);
+    text-decoration-color: var(--amber);
+  }
+}
+
+.badge-glance__icon {
+  width: 1.1em;
+  height: 1.1em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.dark .badge-glance__icon {
+  color: var(--amber);
+}
+
+.badge-glance__pill {
+  display: inline-flex;
+  padding: var(--space-3xs) var(--space-xs);
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+
+.badge-glance__pill--no {
+  background: var(--surface-sunken);
+  color: var(--on-surface-muted);
+}
+
+/* --- Resources & downloads --------------------------------------------- */
+
+.badge-resources__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs);
+}
+
+.badge-resources__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  padding-inline: var(--space-2xs);
+  border-radius: var(--radius-md);
+  color: var(--on-surface);
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--surface-sunken);
+    color: var(--accent);
+  }
+}
+
+.badge-resources__icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.dark .badge-resources__icon {
+  color: var(--amber);
+}
+
+/* ------------------------------------------------------------------ */
+/* Start CTA                                                            */
+/* ------------------------------------------------------------------ */
+
+.badge-start-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  padding-block: var(--space-m);
+  border-radius: var(--radius-xl);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.badge-start-cta:hover,
+.badge-start-cta:focus-visible {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .badge-start-cta {
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .badge-start-cta:hover,
+  .badge-start-cta:focus-visible {
+    transform: translateY(-2px);
+  }
+}
+
+.badge-start-cta__icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* ------------------------------------------------------------------ */
+/* Print                                                                */
+/* ------------------------------------------------------------------ */
+
+@media print {
+  .badge-start-cta {
+    background: none;
+    border: 1px solid var(--card-border-subtle);
+  }
+}

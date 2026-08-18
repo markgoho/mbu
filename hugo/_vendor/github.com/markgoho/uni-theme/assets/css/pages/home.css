@@ -1,0 +1,478 @@
+/*
+ * Homepage — v2 redesign.
+ *
+ * Opts into v2 via {{ define "html-class" }}theme-v2{{ end }} and goes
+ * full-bleed via {{ define "main-class" }}home-main{{ end }} in
+ * layouts/index.html, mirroring the .req-page-main pattern in
+ * pages/merit-badge-requirements.css. Each section below re-applies its
+ * own measure since the shell itself goes edge to edge.
+ */
+
+.home-main {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+}
+
+/* Shared section measure: full-bleed background, capped/padded content. */
+.home-steps,
+.home-categories,
+.home-featured {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: clamp(var(--space-xs), 4vw, var(--space-m));
+}
+
+/* ------------------------------------------------------------------ */
+/* Search — shared .home-search bar styling, used by home/hero.html     */
+/* ------------------------------------------------------------------ */
+
+.home-hero {
+  position: relative;
+  overflow: clip;
+}
+
+.home-search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  max-width: 34rem;
+  margin-block: var(--space-m);
+  background: var(--surface-raised);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-full);
+  padding: var(--space-3xs);
+  padding-inline-start: var(--space-s);
+  box-shadow: var(--shadow-card);
+}
+
+.home-search__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: var(--on-surface-muted);
+}
+
+.home-search__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  color: var(--on-surface);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--on-surface-muted);
+  }
+}
+
+.home-search__submit {
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+}
+
+/* ------------------------------------------------------------------ */
+/* Steps (timeline)                                                     */
+/* ------------------------------------------------------------------ */
+
+.home-steps {
+  padding-block: var(--space-l);
+  max-width: 60rem;
+}
+
+.home-steps__heading,
+.home-categories__heading {
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-steps__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin-block-end: var(--space-3xs);
+}
+
+.home-steps__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.dark .home-steps__icon {
+  color: var(--amber);
+}
+
+.home-steps__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--on-surface);
+}
+
+.home-steps__text {
+  margin: 0;
+  max-width: 60ch;
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Categories — simple grid of tiles, each a plain link to its category. */
+/* ------------------------------------------------------------------ */
+
+.home-categories {
+  padding-block: var(--space-xl);
+}
+
+.home-categories__head {
+  margin-bottom: var(--space-l);
+  max-width: 48ch;
+}
+
+.home-categories__heading {
+  margin: 0 0 var(--space-m);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+.home-categories__subheading {
+  margin: var(--space-2xs) 0 0;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--on-surface-muted);
+}
+
+.category-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: var(--space-s);
+}
+
+.category-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  min-height: 8rem;
+  padding: var(--space-s);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--outline-variant);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+  cursor: pointer;
+}
+
+.category-tile:hover,
+.category-tile:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.category-tile:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.dark .category-tile:hover,
+.dark .category-tile:focus-visible {
+  border-color: var(--amber, #ffb800);
+}
+
+.dark .category-tile:focus-visible {
+  outline-color: var(--amber, #ffb800);
+}
+
+/* Icon glow-ring — same conic-gradient ring trick as
+   .badge-identity__glow-ring-wrap (merit-badge-requirements.css), scaled
+   down for a grid tile. Neutral (no accent) at rest since 14 glowing
+   rings at once would be overwhelming; the ring only lights up with the
+   accent/amber gradient on hover or focus, matching the same
+   only-color-on-interaction restraint used for the icon itself. */
+.category-tile__icon-ring {
+  padding: 3px;
+  border-radius: 50%;
+  background: var(--outline-variant);
+  flex-shrink: 0;
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.category-tile:hover .category-tile__icon-ring,
+.category-tile:focus-visible .category-tile__icon-ring {
+  background: conic-gradient(
+    from 180deg,
+    var(--accent),
+    var(--accent-container),
+    var(--accent)
+  );
+  box-shadow: 0 4px 14px var(--shadow-card);
+}
+
+.dark .category-tile:hover .category-tile__icon-ring,
+.dark .category-tile:focus-visible .category-tile__icon-ring {
+  background: conic-gradient(
+    from 180deg,
+    var(--amber, #ffb800),
+    var(--amber-glow),
+    var(--amber, #ffb800)
+  );
+  box-shadow: 0 0 18px var(--amber-glow, rgba(255, 184, 0, 0.3));
+}
+
+.category-tile__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--surface-raised);
+  color: var(--on-surface-muted);
+  transition: color 0.2s ease;
+}
+
+.category-tile:hover .category-tile__icon-box,
+.category-tile:focus-visible .category-tile__icon-box {
+  color: var(--accent);
+}
+
+.dark .category-tile:hover .category-tile__icon-box,
+.dark .category-tile:focus-visible .category-tile__icon-box {
+  color: var(--amber, #ffb800);
+}
+
+.category-tile__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.category-tile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.category-tile__name {
+  font-family: var(--font-display);
+  font-size: var(--step--1);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--on-surface);
+}
+
+.category-tile__count {
+  font-size: var(--step--2);
+  color: var(--on-surface-muted);
+}
+
+/* ------------------------------------------------------------------ */
+/* Featured badges — static row below the hero.                        */
+/* ------------------------------------------------------------------ */
+
+.home-featured {
+  padding-block: var(--space-xl);
+}
+
+.home-featured__heading {
+  margin: 0 0 var(--space-l);
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--on-surface);
+}
+
+/* ================================================================
+   Cinematic hero — full-bleed background image, single-column
+   search-first content.
+   ================================================================ */
+
+/*
+ * Same light/dark split as .badge-hero (components/badge-hero.css): the
+ * hero reads semantic tokens for a soft, editorial wash in light mode,
+ * and only switches to the fixed-oklch cinematic near-black treatment
+ * under .dark, via the --hero-* custom properties below.
+ */
+.hero-d {
+  --hero-on: var(--on-surface);
+  --hero-on-muted: var(--on-surface-muted);
+  --hero-scrim-1: color-mix(in oklab, var(--surface-raised) 90%, transparent);
+  --hero-scrim-2: color-mix(in oklab, var(--surface) 82%, transparent);
+
+  position: relative;
+  overflow: clip;
+  color: var(--hero-on);
+}
+
+.dark .hero-d {
+  --hero-on: var(--tan-000, #faf9f6);
+  --hero-on-muted: oklch(0.82 0.01 86.03);
+  --hero-scrim-1: oklch(0.14 0.023 153.3 / 0.92);
+  --hero-scrim-2: oklch(0.18 0.028 153.3 / 0.88);
+}
+
+/* Full-bleed background image + gradient overlay */
+.hero-d__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-d__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) saturate(0.7);
+}
+
+.hero-d__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--hero-scrim-1) 0%,
+    var(--hero-scrim-2) 50%,
+    var(--hero-scrim-1) 100%
+  );
+}
+
+/* Ambient accent glow — top-right */
+.hero-d::after {
+  content: "";
+  position: absolute;
+  top: -8rem;
+  right: -8rem;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--accent-container) 18%, transparent),
+    transparent 70%
+  );
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dark .hero-d::after {
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--amber) 20%, transparent),
+    transparent 70%
+  );
+}
+
+.hero-d__inner {
+  position: relative;
+  z-index: 1;
+  margin-inline: auto;
+  padding: var(--space-2xl) clamp(var(--space-m), 4vw, var(--space-2xl))
+    var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-d__inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* Below the fold real estate is precious here — keep the search bar
+     and CTAs immediately visible instead of pushing them down to make
+     room for a decorative image. */
+  .hero-d__image-col {
+    display: none;
+  }
+}
+
+.hero-d__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+/* Image — elevated card, glowing against the dark bg. Same generic
+   site/hero photo as the full-bleed background, shown crisp here
+   instead of blurred. */
+.hero-d__image-col {
+  position: relative;
+}
+
+.hero-d__image-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  box-shadow:
+    var(--shadow-raised),
+    0 0 0 1px var(--card-border-subtle);
+}
+
+.dark .hero-d__image-wrap {
+  box-shadow:
+    0 8px 40px oklch(0.165 0.023 153.3 / 0.5),
+    0 0 0 1px oklch(0.853 0.0244 86.09 / 0.1);
+}
+
+.hero-d__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-d__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.hero-d__content-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+.hero-d__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-5);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--hero-on);
+}
+
+.hero-d__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.dark .hero-d__title em {
+  color: var(--amber, #ffb800);
+}
+
+.hero-d__lead {
+  max-width: 50ch;
+  font-size: var(--step-0);
+  color: var(--hero-on-muted);
+  line-height: 1.6;
+}

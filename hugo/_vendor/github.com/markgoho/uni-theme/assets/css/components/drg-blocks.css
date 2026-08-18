@@ -1,0 +1,742 @@
+/*
+ * DRG content blocks — v2 redesign.
+ *
+ * Callouts, be-prepared, checklist, requirement quotes, external
+ * link/download cards, video, next-page CTA, experience/org cards and
+ * tabs. Uses ONLY the v2 semantic tokens from tokens-v2.css. Shell,
+ * sidebar and prose live in css/pages/drg.css; the worksheet and
+ * complete-guide print page live in css/pages/drg-print.css.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Callouts                                                             */
+/* ------------------------------------------------------------------ */
+
+.req-callout {
+  padding: var(--space-m);
+  margin-block: var(--space-m);
+  border-left: var(--border-width-md) solid;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+
+  & .req-callout__header {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: var(--space-s);
+  }
+
+  & .req-callout__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    line-height: var(--line-height-tight);
+  }
+
+  & .req-callout__icon {
+    height: 1.25em;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    color: inherit;
+    flex-shrink: 0;
+  }
+
+  & .req-callout__body {
+    margin-top: var(--space-xs);
+  }
+
+  & .req-callout__body > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* Fallback if markup is rendered without .req-callout__header */
+  &:not(:has(.req-callout__header)) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: var(--space-xs) var(--space-s);
+
+    & .req-callout__icon {
+      grid-column: 1;
+      grid-row: 1;
+      height: 1.25em;
+      width: auto;
+      aspect-ratio: 1 / 1;
+    }
+
+    & .req-callout__title {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & .req-callout__body {
+      grid-column: 1 / -1;
+      margin-top: 0;
+    }
+  }
+}
+
+.req-callout--safety {
+  background-color: var(--error-container);
+  border-left-color: var(--error);
+  color: var(--on-error-container);
+
+  .req-callout__icon {
+    color: var(--error);
+  }
+}
+
+.req-callout--fact {
+  background-color: var(--secondary-container);
+  border-left-color: var(--secondary);
+  color: var(--on-secondary-container);
+
+  .req-callout__icon {
+    color: var(--secondary);
+  }
+}
+
+.req-callout--tip {
+  background-color: var(--accent-container);
+  border-left-color: var(--accent);
+  color: var(--on-accent-container);
+
+  .req-callout__icon {
+    color: var(--accent);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Be Prepared                                                          */
+/* ------------------------------------------------------------------ */
+
+.req-be-prepared {
+  background-color: var(--error-container);
+  border: 1px solid var(--card-border-subtle);
+  border-left: var(--border-width-md) solid var(--error);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-m);
+  margin-block: var(--space-l);
+  color: var(--on-error-container);
+
+  & .req-be-prepared__header {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto auto;
+    column-gap: var(--space-s);
+    row-gap: var(--space-3xs);
+    align-items: center;
+  }
+
+  & .req-be-prepared__heading {
+    display: contents;
+  }
+
+  & .req-be-prepared__icon {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 100%;
+    width: auto;
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+    justify-self: center;
+    color: var(--error);
+    flex-shrink: 0;
+  }
+
+  & .req-be-prepared__label {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: var(--step--2);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.05em;
+    color: var(--error);
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  & .req-be-prepared__title {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    line-height: var(--line-height-tight);
+    color: var(--on-error-container);
+  }
+
+  /* Body content */
+  & .req-be-prepared__body {
+    margin-top: var(--space-s);
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    padding-left: var(--space-l);
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: var(--space-2xs);
+  }
+
+  /* Fallback if markup is rendered without .req-be-prepared__header */
+  &:not(:has(.req-be-prepared__header)) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto auto;
+    column-gap: var(--space-s);
+    row-gap: var(--space-3xs);
+    align-items: center;
+
+    & .req-be-prepared__icon {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      height: 100%;
+      width: auto;
+      max-height: 100%;
+      aspect-ratio: 1 / 1;
+      align-self: center;
+      justify-self: center;
+    }
+
+    & .req-be-prepared__label {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & .req-be-prepared__title {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    & .req-be-prepared__body {
+      grid-column: 1 / -1;
+      margin-top: var(--space-xs);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Checklist                                                            */
+/* ------------------------------------------------------------------ */
+
+.req-checklist {
+  background-color: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  margin-block: var(--space-m);
+  overflow: hidden;
+
+  & .req-checklist__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--step-0);
+    font-weight: var(--font-weight-bold);
+  }
+
+  & .req-checklist__summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2xs) var(--space-m);
+    padding: var(--space-s) var(--space-m);
+    background-color: var(--surface-sunken);
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--accent-container);
+    }
+  }
+
+  & .req-checklist__subtitle {
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    font-weight: normal;
+  }
+
+  & .req-checklist__arrow {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--on-surface-muted);
+    transition: transform 0.2s;
+  }
+
+  &[open] .req-checklist__arrow {
+    transform: rotate(180deg);
+  }
+
+  & .req-checklist__content {
+    padding: var(--space-m);
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    & li {
+      position: relative;
+      padding-left: var(--space-l);
+      margin-bottom: var(--space-s);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.2em;
+        width: 1em;
+        height: 1em;
+        border: var(--border-width-sm) solid var(--accent);
+        border-radius: var(--radius-sm);
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Requirement quote                                                    */
+/* ------------------------------------------------------------------ */
+
+/* Rail treatment (matches .req-child--rail in
+   merit-badge-requirements.css) rather than a boxed panel: a left rail
+   plus a fixed marker track, quieter and dashed when nested. */
+.req-requirement {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: var(--space-2xs);
+  padding-inline-start: var(--space-s);
+  border-inline-start: 2px solid var(--outline-variant);
+  margin-block: var(--space-m);
+
+  & .req-requirement__number {
+    grid-column: 1;
+    font-weight: var(--font-weight-bold);
+    color: var(--on-surface-muted);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.6;
+  }
+
+  & .req-requirement__text {
+    grid-column: 2;
+    min-width: 0;
+    color: var(--on-surface);
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.req-requirement--sub {
+  margin-inline-start: var(--space-l);
+  border-inline-start-style: dashed;
+
+  .req-requirement__number {
+    font-size: var(--step--1);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Requirement rail (sticky echo of the lead quote, ≥1400px only)      */
+/* ------------------------------------------------------------------ */
+
+/* Quieter echo of .req-requirement, not a boxed card -- same left rail
+   treatment as above, just dialed down since it's a supporting copy. */
+.req-rail__inner {
+  padding-inline-start: var(--space-s);
+  border-inline-start: 2px solid var(--outline-variant);
+
+  & .req-rail__number {
+    font-weight: var(--font-weight-bold);
+    color: var(--on-surface-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  & .req-rail__text {
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+  }
+}
+
+@media (min-width: 87.5rem) {
+  @supports (animation-timeline: view()) {
+    .req-requirement--lead {
+      view-timeline-name: --req-lead-req;
+    }
+
+    .req-rail__inner {
+      animation: req-rail-in linear both;
+      animation-timeline: --req-lead-req;
+      animation-range: exit 20% exit 100%;
+    }
+
+    @keyframes req-rail-in {
+      from {
+        opacity: 0;
+        translate: -2rem 0;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      @keyframes req-rail-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Same-document view transition: when scrolling moves the "current"
+ * requirement (see req-rail.ts), the number/text that were sitting in
+ * the body morph into the rail's echo of them instead of just swapping.
+ * Names are assigned and cleared by that script -- fixed names are fine
+ * since only one requirement is ever mid-morph at a time.
+ */
+::view-transition-group(req-rail-num),
+::view-transition-group(req-rail-text) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+::view-transition-old(req-rail-num),
+::view-transition-new(req-rail-num),
+::view-transition-old(req-rail-text),
+::view-transition-new(req-rail-text) {
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
+
+/* ------------------------------------------------------------------ */
+/* External link & download                                             */
+/* ------------------------------------------------------------------ */
+
+.req-external-link,
+.req-download {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2xs) var(--space-m);
+  padding: var(--space-m);
+  background-color: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  margin-block: var(--space-s);
+  text-decoration: none;
+  color: var(--on-surface);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-raised);
+    border-color: var(--accent-container);
+  }
+
+  & .req-external-link__icon,
+  & .req-download__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  & .req-external-link__title,
+  & .req-download__title {
+    font-weight: var(--font-weight-bold);
+  }
+
+  & .req-external-link__description,
+  & .req-download__description {
+    width: 100%;
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+  }
+
+  & .req-external-link__print-link,
+  & .req-download__print-link {
+    display: none;
+    width: 100%;
+    margin: 0;
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    overflow-wrap: anywhere;
+  }
+
+  @container req-content (max-width: 500px) {
+    gap: var(--space-2xs) var(--space-s);
+    padding: var(--space-s);
+  }
+}
+
+.dark .req-external-link,
+.dark .req-download {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+.dark .req-external-link:hover,
+.dark .req-download:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-elevated-hover);
+}
+
+/* ------------------------------------------------------------------ */
+/* Video                                                                */
+/* ------------------------------------------------------------------ */
+
+.req-video {
+  margin-block: var(--space-l);
+
+  & .req-video__iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: var(--radius-lg);
+    background-color: var(--surface-inverse);
+  }
+
+  & .req-video__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    background-color: var(--surface-inverse);
+    color: var(--on-surface-inverse);
+    text-decoration: none;
+    border-radius: var(--radius-lg);
+    gap: var(--space-m);
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(1.15);
+    }
+  }
+
+  & .req-video__play-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  & .req-video__caption {
+    margin-top: var(--space-xs);
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    text-align: center;
+    font-style: italic;
+  }
+
+  & .req-video__print-link {
+    display: none;
+    margin-top: var(--space-xs);
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    word-break: break-word;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Next page                                                            */
+/* ------------------------------------------------------------------ */
+
+.req-next-page {
+  text-align: center;
+  margin-block: var(--space-2xl);
+  padding: var(--space-l);
+  background-color: var(--surface-sunken);
+  border-radius: var(--radius-xl);
+
+  & .req-next-page__bridge {
+    font-size: var(--step-0);
+    margin-bottom: var(--space-m);
+    color: var(--on-surface-muted);
+  }
+
+  & .req-next-page__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-s);
+    padding: var(--space-m) var(--space-l);
+    background-color: var(--accent);
+    color: var(--on-accent);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    transition: background-color 0.2s;
+    text-align: left;
+    max-width: 100%;
+
+    &:hover {
+      background-color: var(--accent);
+      filter: brightness(1.1);
+    }
+  }
+
+  & .req-next-page__icon {
+    width: 1.2em;
+    height: 1.2em;
+    flex-shrink: 0;
+  }
+
+  & .req-next-page__teaser {
+    white-space: normal;
+  }
+
+  @container req-content (max-width: 500px) {
+    padding: var(--space-m);
+
+    .req-next-page__cta {
+      padding: var(--space-s) var(--space-m);
+      font-size: var(--step--1);
+      border-radius: var(--radius-md);
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Experience card                                                      */
+/* ------------------------------------------------------------------ */
+
+.req-experience-card {
+  background-color: var(--surface-raised);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--card-border-subtle);
+  display: flex;
+  flex-direction: column;
+  margin-block: var(--space-m);
+
+  & .req-experience-card__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  & .req-experience-card__title {
+    padding-inline: var(--space-m);
+    padding-top: var(--space-m);
+    font-family: var(--font-display);
+  }
+
+  & .req-experience-card__details {
+    padding-inline: var(--space-m);
+    padding-bottom: var(--space-m);
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+  }
+}
+
+.dark .req-experience-card {
+  border-color: var(--card-border-subtle);
+  box-shadow: var(--shadow-elevated);
+}
+
+/* ------------------------------------------------------------------ */
+/* Org card                                                             */
+/* ------------------------------------------------------------------ */
+
+.req-org-card {
+  padding: var(--space-m);
+  background-color: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-left: var(--border-width-md) solid var(--accent);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  margin-block: var(--space-s);
+
+  & .req-org-card__name {
+    display: block;
+    font-weight: var(--font-weight-bold);
+    color: var(--on-surface);
+    text-decoration: none;
+    margin-bottom: var(--space-2xs);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & .req-org-card__description {
+    margin: 0;
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+  }
+
+  & .req-org-card__print-link {
+    display: none;
+    margin: var(--space-xs) 0 0;
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Tabs (horizontal)                                                    */
+/* ------------------------------------------------------------------ */
+
+.req-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--outline-variant);
+  margin-bottom: var(--space-l);
+  overflow-x: auto;
+  gap: var(--space-m);
+
+  & .req-tabs__item {
+    padding-bottom: var(--space-xs);
+    text-decoration: none;
+    color: var(--on-surface-muted);
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--on-surface);
+    }
+  }
+}
+
+.req-tabs__item--active {
+  color: var(--on-surface);
+  font-weight: var(--font-weight-bold);
+  border-bottom-color: var(--accent);
+}

@@ -1,0 +1,429 @@
+/*
+ * DRG printable worksheet + complete-guide print page — v2 redesign.
+ *
+ * Uses ONLY the v2 semantic tokens from tokens-v2.css. The @media print
+ * block at the bottom is what actually prints (hides chrome, forces
+ * light surfaces via the tokens-v2.css @media print reset, disables
+ * container full-bleed). Shell/sidebar/nav live in css/pages/drg.css;
+ * content blocks live in css/components/drg-blocks.css.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Printable worksheet                                                  */
+/* ------------------------------------------------------------------ */
+
+.req-worksheet {
+  max-width: 65ch;
+
+  & .req-worksheet__title {
+    text-align: center;
+    font-family: var(--font-display);
+  }
+
+  & .req-worksheet__subtitle {
+    font-size: var(--step-0);
+    color: var(--on-surface-muted);
+    text-align: center;
+    margin-bottom: var(--space-l);
+  }
+
+  & .req-worksheet__print-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-s) var(--space-l);
+    background-color: var(--accent);
+    color: var(--on-accent);
+    border: none;
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--step-0);
+    cursor: pointer;
+    transition: filter 0.2s;
+    margin-bottom: var(--space-xl);
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+
+    & svg {
+      width: 1.25em;
+      height: 1.25em;
+      fill: currentColor;
+    }
+  }
+
+  & .req-worksheet__section {
+    margin-bottom: var(--space-l);
+    break-inside: avoid;
+  }
+
+  & .req-worksheet__section-title {
+    font-family: var(--font-display);
+    padding-bottom: var(--space-3xs);
+    border-bottom: 2px solid var(--accent);
+  }
+
+  /* Blank lines for fill-in fields */
+  & .req-worksheet__field {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-s);
+    margin-bottom: var(--space-s);
+    min-height: 2em;
+  }
+
+  & .req-worksheet__label {
+    flex-shrink: 0;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--step--1);
+    color: var(--on-surface);
+    min-width: 8em;
+
+    @container req-content (max-width: 500px) {
+      min-width: 6em;
+    }
+  }
+
+  & .req-worksheet__line {
+    flex: 1;
+    border-bottom: 1px solid var(--outline);
+    min-height: 1.5em;
+  }
+
+  /* Two-column grid for checklist items */
+  & .req-worksheet__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xs) var(--space-l);
+
+    @container req-content (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  & .req-worksheet__check-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--step--1);
+
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      width: 1em;
+      height: 1em;
+      border: var(--border-width-sm) solid var(--accent);
+      border-radius: var(--radius-sm);
+    }
+  }
+
+  /* Table for structured data entry */
+  & .req-worksheet__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-m);
+
+    & th {
+      background-color: var(--surface-sunken);
+      font-size: var(--step--1);
+      font-weight: var(--font-weight-bold);
+      color: var(--on-surface);
+      text-align: left;
+      padding: var(--space-xs) var(--space-s);
+      border: 1px solid var(--outline-variant);
+    }
+
+    & td {
+      padding: var(--space-s);
+      border: 1px solid var(--outline-variant);
+      min-height: 2em;
+      vertical-align: top;
+    }
+  }
+
+  /* Map/drawing area */
+  & .req-worksheet__draw-area {
+    border: 2px dashed var(--outline);
+    border-radius: var(--radius-sm);
+    min-height: 11.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--on-surface-muted);
+    font-size: var(--step--1);
+    font-style: italic;
+    margin-bottom: var(--space-m);
+  }
+
+  /* Lined writing area for reports */
+  & .req-worksheet__writing-area,
+  & .req-worksheet__write-area {
+    min-height: 12.5rem;
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 1.7em,
+      var(--outline-variant) 1.7em,
+      var(--outline-variant) calc(1.7em + 1px)
+    );
+    background-position: 0 0.4em;
+    border: 1px solid var(--outline-variant);
+    border-radius: var(--radius-sm);
+    padding: var(--space-xs);
+    margin-bottom: var(--space-m);
+  }
+
+  /* Signature area */
+  & .req-worksheet__signature {
+    display: flex;
+    gap: var(--space-xl);
+    margin-top: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--outline-variant);
+
+    @container req-content (max-width: 500px) {
+      flex-direction: column;
+      gap: var(--space-l);
+    }
+  }
+
+  & .req-worksheet__sig-block {
+    flex: 1;
+  }
+
+  & .req-worksheet__sig-line {
+    border-bottom: 1px solid var(--on-surface-muted);
+    min-height: 2.5em;
+    margin-bottom: var(--space-3xs);
+  }
+
+  & .req-worksheet__sig-label {
+    font-size: var(--step--2);
+    color: var(--on-surface-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Back link (screen only) */
+  & .req-worksheet__back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: var(--step--1);
+    margin-bottom: var(--space-m);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Complete guide print page                                            */
+/* ------------------------------------------------------------------ */
+
+.req-print-header {
+  display: grid;
+  gap: var(--space-m);
+  margin-bottom: var(--space-xl);
+  padding: var(--space-l);
+  background-color: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+
+  & .req-print-header__kicker {
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  & .req-print-header__title {
+    font-family: var(--font-display);
+    margin-bottom: var(--space-2xs);
+  }
+
+  & .req-print-header__url {
+    margin: 0;
+    font-size: var(--step--1);
+    color: var(--on-surface-muted);
+    word-break: break-word;
+  }
+
+  @container req-content (max-width: 500px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+.req-print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-s) var(--space-l);
+  margin-bottom: var(--space-xl);
+  background-color: var(--accent);
+  color: var(--on-accent);
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--step-0);
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.req-print-divider {
+  margin: var(--space-2xl) 0 var(--space-l);
+  padding-top: var(--space-l);
+  border-top: 1px solid var(--outline-variant);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--on-surface-muted);
+  font-weight: var(--font-weight-bold);
+  break-after: avoid;
+}
+
+.req-print-section {
+  margin-bottom: var(--space-2xl);
+
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Print styles                                                         */
+/* ------------------------------------------------------------------ */
+
+@media print {
+  .header,
+  .footer,
+  .breadcrumb,
+  .req-sidebar-wrap,
+  .req-footer-nav,
+  .req-next-page,
+  .req-mobile-nav {
+    display: none !important;
+  }
+
+  .req-page,
+  .req-page-main {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .req-content {
+    max-width: 100%;
+  }
+
+  .main.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .req-worksheet {
+    max-width: 100%;
+
+    .req-worksheet__print-btn,
+    .req-worksheet__back-link {
+      display: none !important;
+    }
+
+    .req-worksheet__draw-area {
+      min-height: 9.375rem;
+    }
+
+    .req-worksheet__writing-area {
+      min-height: 11.25rem;
+    }
+
+    .req-worksheet__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .req-worksheet__table td {
+      min-height: 1.8em;
+    }
+  }
+
+  .req-callout,
+  .req-be-prepared,
+  .req-checklist {
+    break-inside: avoid;
+  }
+
+  details,
+  details[open] {
+    > summary {
+      list-style: none;
+    }
+  }
+
+  details[open] > *:not(summary) {
+    display: block !important;
+  }
+
+  .req-checklist[open] > .req-checklist__content {
+    display: block !important;
+  }
+
+  .req-requirement,
+  .req-worksheet__section {
+    break-inside: avoid;
+  }
+
+  .req-print-btn {
+    display: none !important;
+  }
+
+  .req-rail {
+    display: none !important;
+  }
+
+  .req-print-section {
+    break-before: auto;
+  }
+
+  .req-print-section:first-of-type {
+    break-before: auto;
+  }
+
+  .req-video__iframe {
+    display: none !important;
+  }
+
+  /* Print stays text-only — inline guide photos add weight/ink without
+     helping a printed checklist, and pulling them off ImageKit for a
+     print run isn't worth the request either. */
+  .req-illustration {
+    display: none !important;
+  }
+
+  .req-video__print-link,
+  .req-external-link__print-link,
+  .req-download__print-link,
+  .req-org-card__print-link {
+    display: block;
+  }
+
+  .req-print-divider {
+    break-before: auto;
+  }
+
+  @page {
+    margin: 0.75in;
+    size: letter;
+  }
+}

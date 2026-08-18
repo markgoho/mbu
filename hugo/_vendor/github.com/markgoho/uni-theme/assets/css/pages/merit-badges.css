@@ -1,0 +1,214 @@
+/* Merit Badges List Page */
+.badge-count {
+  color: var(--on-surface-muted);
+  margin-block-start: var(--space-2xs);
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-s);
+  margin-block-start: var(--space-m);
+
+  @media (max-width: 60rem) {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xs);
+  }
+
+  @media (min-width: 60rem) {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  /* Every card carries three `view-transition-name`s (see
+     merit-badges/badge-card.html), and a cross-document transition
+     snapshots every named element in the outgoing document — 429 of them
+     across 144 badges, which is enough to stall the start of the
+     animation. Cards the browser skips rendering are not captured, so
+     deferring the off-screen ones cuts that to what's actually on screen.
+
+     The cutoff matches the image loading ladder in badge-card.html: the
+     first six load eagerly and stay rendered, so nothing above the fold is
+     deferred. `contain-intrinsic-size` holds the scroll height steady. */
+  .badge-card:nth-child(n + 7) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 340px;
+  }
+}
+
+/* Base chrome (background/border/radius/shadow/hover-lift) comes from
+   .card-surface .card-surface--lift, composed onto every .badge-card
+   element in the markup (merit-badges/badge-card.html and the
+   eagle-required "choose one" groups). Rules below are layout/content
+   only. */
+.badge-card {
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  /* Cards without images (text-only) */
+  &:not(.badge-card--with-image) {
+    .badge-card__content {
+      padding: var(--space-s);
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    text-wrap: balance;
+    color: var(--on-surface);
+
+    em {
+      font-style: italic;
+      color: var(--accent);
+    }
+  }
+}
+
+.dark .badge-card h2 em {
+  color: var(--amber);
+}
+
+/* The whole card is one target, but the focusable element is the link
+   inside it — and the card's `overflow: hidden` would clip an outline
+   drawn there. So the card wears the ring on the link's behalf. Matches
+   .category-tile's focus treatment in pages/home.css. */
+.badge-card:has(a:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-color: var(--accent);
+}
+
+.dark .badge-card:has(a:focus-visible) {
+  outline-color: var(--amber);
+  border-color: var(--amber);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .badge-card:has(a:focus-visible) {
+    transform: translateY(-2px);
+  }
+}
+
+/* The band states the badge's category on every card, which is always
+   news, and adds the Eagle chip only where it applies. It sits above the
+   emblem so the whole grid can be scanned by category down one edge. */
+.badge-card__band {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin: 0;
+  padding: 0.4rem var(--space-xs);
+  background: var(--surface-sunken);
+  border-block-end: 1px solid var(--card-border-subtle);
+}
+
+.badge-card__category {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  min-width: 0;
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-muted);
+}
+
+.badge-card__category-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: none;
+  color: var(--accent);
+}
+
+.badge-card__category-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge-card__eagle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  flex: none;
+  margin-inline-start: auto;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  border: 1px solid var(--accent);
+  color: var(--on-accent-container);
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dark .badge-card__eagle {
+  background: color-mix(in oklab, var(--amber) 22%, transparent);
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.badge-card__eagle-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* Cards with images */
+@media (max-width: 60rem) {
+  .badge-card {
+    height: auto;
+  }
+
+  .badge-card--with-image .badge-card__image {
+    display: none;
+  }
+}
+
+.badge-card--with-image {
+  display: flex;
+  flex-direction: column;
+
+  .badge-card__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--surface-sunken);
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &:hover .badge-card__image img {
+    transform: scale(1.05);
+  }
+
+  .badge-card__content {
+    padding: var(--space-xs);
+  }
+}
+
+.req-count {
+  color: var(--on-surface-muted);
+  font-size: 0.9rem;
+  margin-block-start: var(--space-2xs);
+}
