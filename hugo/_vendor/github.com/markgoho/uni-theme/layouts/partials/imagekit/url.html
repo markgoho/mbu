@@ -1,0 +1,21 @@
+{{- /*
+  Builds a single ImageKit URL.
+
+  dict "path" "/merit-badges/camping/emblem" "tr" "w-800" "v" "a1b2c3d4"
+  -> https://ik.imagekit.io/doulacoop/mbu/tr:w-800/merit-badges/camping/emblem?v=a1b2c3d4
+
+  The only place that knows the /tr:.../ path syntax. Quality and format are
+  account-level dashboard settings, not URL params — see docs/adr for why.
+*/ -}}
+{{- $endpoint := site.Params.imagekit.endpoint -}}
+{{- if not $endpoint -}}
+  {{- errorf "imagekit/url.html: site.Params.imagekit.endpoint is not set" -}}
+{{- end -}}
+{{- $path := .path -}}
+{{- $tr := .tr -}}
+{{- $v := .v -}}
+{{- $url := printf "%s/tr:%s%s" (strings.TrimSuffix "/" $endpoint) $tr $path -}}
+{{- with $v -}}
+  {{- $url = printf "%s?v=%s" $url . -}}
+{{- end -}}
+{{- return $url -}}
