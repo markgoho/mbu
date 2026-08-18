@@ -1,0 +1,47 @@
+{{- /*
+  Renders the search page shell: breadcrumb, heading, description, and
+  the #search mount point Pagefind's UI attaches to. Paired with
+  `partials/search/scripts.html` for the footer-scripts wiring.
+
+  dict
+    "page"              .                                    (required)
+    "description"       "Find specific requirements across…" (required)
+    "placeholder"        "Search…"                            (optional, UI copy)
+    "zeroResults"        "No results found"                   (optional, UI copy)
+    "noResultsEvent"     "my-search-no-results"                (optional, Pirsch event name)
+    "resultClickEvent"   "my-search-result-click"              (optional, Pirsch event name)
+
+  The four optional params surface as data-* attributes on #search, read
+  by assets/ts/search.ts — see CONTRACT.md's "Search page" section. The
+  two event names are only fired when present; omit either to skip that
+  analytics call entirely.
+*/ -}}
+{{- $page := .page -}}
+{{- if not $page }}{{ errorf "search/page.html: \"page\" is required" }}{{ end -}}
+{{- if not (isset . "description") }}{{ errorf "search/page.html: \"description\" is required" }}{{ end -}}
+{{- $description := .description -}}
+
+{{- $placeholder := .placeholder | default "Search..." -}}
+{{- $zeroResults := .zeroResults | default "No results found" -}}
+{{- $noResultsEvent := .noResultsEvent -}}
+{{- $resultClickEvent := .resultClickEvent -}}
+
+<article class="search-page">
+  {{ partial "breadcrumb.html" $page }}
+  <header class="search-header">
+    <h1>{{ $page.Title }}</h1>
+    <p class="search-description">{{ $description }}</p>
+  </header>
+
+  <div
+    id="search"
+    data-search-placeholder="{{ $placeholder }}"
+    data-search-zero-results="{{ $zeroResults }}"
+    {{- with $noResultsEvent }}
+    data-search-event-no-results="{{ . }}"
+    {{- end }}
+    {{- with $resultClickEvent }}
+    data-search-event-result-click="{{ . }}"
+    {{- end }}
+  ></div>
+</article>

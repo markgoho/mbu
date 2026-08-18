@@ -1,0 +1,152 @@
+/*
+ * Search page base layer — the `#search` mount point and Pagefind's own
+ * UI, themed via its `--pagefind-ui-*` custom properties plus targeted
+ * overrides, pointed at the shared semantic tokens so light/dark follow
+ * the rest of the theme automatically.
+ *
+ * Result-card presentation (thumbnail, image positioning, whole-card
+ * overlay, excerpt line-clamp, meta tag pills, narrow-viewport reflow)
+ * is NOT here — that's consumer-specific and lives in the consumer's own
+ * search.css. Paired with `partials/search/page.html` and
+ * `partials/search/scripts.html`.
+ */
+
+.search-header {
+  text-align: center;
+  margin-block-end: var(--space-l);
+
+  h1 {
+    margin-block-end: var(--space-2xs);
+  }
+}
+
+.search-description {
+  color: var(--on-surface-muted);
+  font-size: var(--step-0);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Pagefind UI overrides */
+.pagefind-ui {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--accent);
+  --pagefind-ui-text: var(--on-surface);
+  --pagefind-ui-background: var(--surface-raised);
+  --pagefind-ui-border: var(--outline);
+  --pagefind-ui-tag: var(--surface-sunken);
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: var(--radius-lg);
+  --pagefind-ui-font: inherit;
+}
+
+/* Form layout - input and clear button on same line */
+.pagefind-ui__form,
+.pagefind-ui__form form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Search input with refined styling */
+.pagefind-ui__search-input {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--step-0);
+  padding: var(--space-s) var(--space-m);
+  border: 2px solid var(--outline);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  color: var(--on-surface);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+
+  margin-inline-end: var(--space-2xs);
+
+  &::placeholder {
+    color: var(--on-surface-muted);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-wash);
+  }
+}
+
+.pagefind-ui__form .pagefind-ui__search-clear {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-boldest);
+  font-size: var(--step-1);
+  color: var(--on-surface-muted);
+  background: var(--surface-sunken);
+  border-radius: var(--radius-md);
+  padding: var(--space-xs) var(--space-s);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+
+  &:hover,
+  &:focus {
+    background: var(--outline-variant);
+  }
+}
+
+/* Hide Pagefind's default filter UI */
+.pagefind-ui__filter-panel {
+  display: none;
+}
+
+/* Results count message */
+.pagefind-ui__message {
+  font-weight: var(--font-weight-semibold);
+  color: var(--on-surface-muted);
+  padding: var(--space-s) 0;
+  font-size: var(--step--1);
+}
+
+/* Loading state */
+.pagefind-ui__loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-l);
+}
+
+/* Load more button */
+.pagefind-ui__button {
+  display: block;
+  width: 100%;
+  padding: var(--space-s) var(--space-m);
+  margin-block-start: var(--space-s);
+  background: var(--surface-raised);
+  border: 2px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  color: var(--accent);
+  font-family: inherit;
+  font-size: var(--step--1);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--surface-sunken);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.dark .pagefind-ui__button {
+  color: var(--amber);
+
+  &:hover {
+    border-color: var(--amber);
+    color: var(--amber);
+  }
+}
