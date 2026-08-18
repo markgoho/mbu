@@ -74,6 +74,7 @@ jobs:
 
       - name: Open pull request
         if: steps.diff.outputs.changed == 'true'
+        id: pr
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -84,8 +85,21 @@ jobs:
           git add hugo/go.mod hugo/go.sum hugo/_vendor
           git commit -m "Bump uni-theme to ${{ github.event.client_payload.sha }}"
           git push origin "$branch"
-          gh pr create \
+          url=$(gh pr create \
             --title "Bump uni-theme pin" \
             --body "${{ steps.changelog.outputs.changelog }}" \
             --base trunk \
-            --head "$branch"
+            --head "$branch")
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Close stale bump PRs
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr list --state open --json number,headRefName \
+            --jq '.[] | select(.headRefName | startswith("uni-theme-bump/")) | select(.headRefName != "${{ steps.pr.outputs.branch }}") | .number' |
+          while read -r pr; do
+            gh pr close "$pr" --comment "Superseded by ${{ steps.pr.outputs.url }} — a newer uni-theme commit landed before this one was merged."
+          done
