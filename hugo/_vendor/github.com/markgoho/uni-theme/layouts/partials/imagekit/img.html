@@ -1,0 +1,83 @@
+{{- /*
+  The only place <img> is written for ImageKit-backed images. width, height,
+  and sizes are required — this is what structurally prevents CLS and
+  over-fetch regressions from coming back.
+
+  dict
+    "path"          "/merit-badges/camping/guide/tick-removal"  (required)
+    "alt"           "…"                                          (required)
+    "width"         800                                          (required)
+    "height"        450                                          (required)
+    "sizes"         "(max-width: 800px) 100vw, 800px"             (required)
+    "v"             "a1b2c3d4"                                    (optional, cache version)
+    "maxWidth"      800                                           (optional, ladder ceiling; default = width)
+    "tr"            "bl-20"                                       (optional, extra params folded into every variant)
+    "class"         "…"                                           (optional)
+    "loading"       "lazy" | "eager"                               (optional, default "lazy")
+    "fetchpriority" "high" | "low"                                 (optional)
+    "decoding"      "async" | "sync"                               (optional, default "async")
+    "attrs"         (dict "data-slide" "camping")                  (optional, extra HTML attributes)
+*/ -}}
+{{- $path := .path -}}
+{{- $alt := .alt -}}
+{{- $width := .width -}}
+{{- $height := .height -}}
+{{- $sizes := .sizes -}}
+{{- if not $path }}{{ errorf "imagekit/img.html: \"path\" is required" }}{{ end -}}
+{{- if not (isset . "alt") }}{{ errorf "imagekit/img.html: \"alt\" is required (path: %s)" $path }}{{ end -}}
+{{- if not $width }}{{ errorf "imagekit/img.html: \"width\" is required (path: %s)" $path }}{{ end -}}
+{{- if not $height }}{{ errorf "imagekit/img.html: \"height\" is required (path: %s)" $path }}{{ end -}}
+{{- if not $sizes }}{{ errorf "imagekit/img.html: \"sizes\" is required (path: %s)" $path }}{{ end -}}
+
+{{- $v := .v -}}
+{{- $maxWidth := .maxWidth | default $width -}}
+{{- $extraTr := .tr -}}
+{{- $class := .class -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority -}}
+{{- $decoding := .decoding | default "async" -}}
+{{- $attrs := .attrs -}}
+
+{{- $ladder := slice -}}
+{{- range site.Params.imagekit.widths -}}
+  {{- if le . $maxWidth -}}
+    {{- $ladder = $ladder | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $ladder -}}
+  {{- $ladder = slice $maxWidth -}}
+{{- end -}}
+
+{{- $srcTr := printf "w-%d" $maxWidth -}}
+{{- with $extraTr }}{{ $srcTr = printf "%s,%s" $srcTr . }}{{ end -}}
+{{- $src := partial "imagekit/url.html" (dict "path" $path "tr" $srcTr "v" $v) -}}
+
+{{- $srcsetParts := slice -}}
+{{- range $ladder -}}
+  {{- $w := . -}}
+  {{- $tr := printf "w-%d" $w -}}
+  {{- with $extraTr }}{{ $tr = printf "%s,%s" $tr . }}{{ end -}}
+  {{- $u := partial "imagekit/url.html" (dict "path" $path "tr" $tr "v" $v) -}}
+  {{- $srcsetParts = $srcsetParts | append (printf "%s %dw" $u $w) -}}
+{{- end -}}
+
+<img
+  src="{{ $src }}"
+  {{- if gt (len $ladder) 1 }}
+  srcset="{{ delimit $srcsetParts ", " }}"
+  sizes="{{ $sizes }}"
+  {{- end }}
+  width="{{ $width }}"
+  height="{{ $height }}"
+  alt="{{ $alt }}"
+  loading="{{ $loading }}"
+  {{- with $fetchpriority }}
+  fetchpriority="{{ . }}"
+  {{- end }}
+  decoding="{{ $decoding }}"
+  {{- with $class }}
+  class="{{ . }}"
+  {{- end }}
+  {{- range $key, $value := $attrs }}
+  {{ printf "%s=%q" $key $value | safeHTMLAttr }}
+  {{- end }} />

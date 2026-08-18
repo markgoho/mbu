@@ -1,0 +1,89 @@
+/*
+ * .card-surface — shared v2 card chrome (background, border, radius,
+ * shadow, transition). Lifted from the Stitch frame's `.leaf-card`.
+ *
+ * Carries BASE chrome only. Hover triggers stay with each consumer
+ * because they differ (`.req-card__panel` lifts from a *parent* hover;
+ * `.req-sidebar` lifts from its own) — use the `--lift` modifier when a
+ * consumer's own hover is the trigger.
+ *
+ * Scope note: `.req-card__panel` (pages/merit-badge-requirements.css),
+ * `.req-sidebar` (pages/merit-badge-requirements.css) and `.drg-sidebar`
+ * (pages/drg.css) hand-inline this same base chrome and are NOT refactored
+ * onto `.card-surface` here — that would touch every shipped requirements
+ * and DRG page (143 badges x N pages) for zero visual change. Intended
+ * follow-up: fold those three onto `.card-surface`.
+ */
+
+.card-surface {
+  background: var(--surface-raised);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.dark .card-surface {
+  box-shadow: var(--shadow-elevated);
+}
+
+/* ------------------------------------------------------------------ */
+/* --lift: translate + shadow bump on hover                            */
+/* ------------------------------------------------------------------ */
+
+@media (hover: hover) {
+  .card-surface--lift:hover {
+    border-color: var(--accent-container);
+    box-shadow: var(--shadow-raised);
+  }
+
+  .dark .card-surface--lift:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-elevated-hover);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .card-surface--lift {
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+    }
+
+    .card-surface--lift:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* --wash: quarter-circle corner tint                                   */
+/* ------------------------------------------------------------------ */
+
+.card-surface--wash {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-surface--wash::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  width: 8rem;
+  height: 8rem;
+  border-end-start-radius: 100%;
+  background: var(--accent-wash);
+  pointer-events: none;
+  transition: transform 0.25s ease;
+}
+
+@media (hover: hover) {
+  .card-surface--wash:hover::before {
+    transform: scale(1.1);
+  }
+}

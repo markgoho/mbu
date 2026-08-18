@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" class="{{ block "html-class" . }}{{ end }}">
+  <head>
+    {{ partial "head/site.html" . }}
+    {{ partial "head/theme-init.html" . }}
+    {{ partial "head/clarity.html" . }}
+    {{ partial "head/critical-css.html" . }}
+
+    {{- block "head-styles" . -}}
+    {{- end -}}
+
+    {{ partial "head/non-critical-css.html" . }}
+    {{ partial "head/analytics.html" . }}
+
+    {{- block "head-scripts" . -}}
+    {{- end -}}
+
+    {{ partial "head/resource-hints.html" . }}
+    {{ partial "head/meta.html" . }}
+
+    {{ $canonical := .Scratch.Get "canonical_override" | default .Params.canonical_override | default (.Permalink | absURL) }}
+    <link rel="canonical" href="{{ $canonical | absURL }}" />
+    <link rel="alternate" hreflang="en-US" href="{{ .Permalink | absURL }}" />
+  </head>
+
+  <body>
+    {{ block "hero" . }}{{ end }}
+
+
+    <header class="header">
+      {{ block "header" . }}
+        {{ partial "header.html" . }}
+      {{ end }}
+    </header>
+
+    <main class="main container {{ block "main-class" . }}{{ end }}">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+
+    <footer class="footer">
+      {{ block "footer" . }}
+        {{ partial "footer.html" . }}
+      {{ end }}
+    </footer>
+
+    {{ block "footer-scripts" . }}{{ end }}
+  </body>
+</html>

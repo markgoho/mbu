@@ -1,0 +1,38 @@
+{{- if not .IsHome -}}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol class="breadcrumb__list">
+    {{- /* Build ancestors list by walking up .Parent chain */ -}}
+    {{- $ancestors := slice -}}
+    {{- $current := . -}}
+    {{- range seq 10 -}}
+      {{- with $current.Parent -}}
+        {{- $ancestors = $ancestors | append . -}}
+        {{- $current = . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* Reverse to get root-first order */ -}}
+    {{- $ancestors = $ancestors | collections.Reverse -}}
+
+    {{- /* Ancestor crumbs */ -}}
+    {{- range $ancestors -}}
+    <li class="breadcrumb__item">
+      <a href="{{ .RelPermalink }}" class="breadcrumb__link">
+        {{- if .IsHome -}}Home
+        {{- else if and (eq .Layout "guide") .IsSection -}}Digital Resource Guide
+        {{- else -}}{{ .Title }}
+        {{- end -}}
+      </a>
+      <svg class="breadcrumb__separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+    </li>
+    {{- end -}}
+
+    {{- /* Current page (no link) — use short labels where parent provides context */ -}}
+    <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">
+      {{- if and (eq .Layout "guide") .IsSection -}}Digital Resource Guide
+      {{- else if eq .Layout "requirements" -}}Requirements
+      {{- else -}}{{ .Title }}
+      {{- end -}}
+    </li>
+  </ol>
+</nav>
+{{- end -}}

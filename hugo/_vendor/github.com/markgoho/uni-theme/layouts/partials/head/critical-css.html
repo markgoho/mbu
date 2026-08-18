@@ -1,0 +1,31 @@
+<!-- Load Critical CSS Inline -->
+{{ $criticalCSS := slice
+  (resources.Get "css/base.css")
+  (resources.Get "css/colors.css")
+  (resources.Get "css/tokens-v2.css")
+  (resources.Get "css/typography.css")
+  (resources.Get "css/spacing.css")
+  (resources.Get "css/layout.css")
+  (resources.Get "css/header.css")
+  (resources.Get "css/footer.css")
+  (resources.Get "css/button.css")
+  (resources.Get "css/button-eagle.css")
+  (resources.Get "css/search.css")
+  (resources.Get "css/components/breadcrumb.css")
+  (resources.Get "css/components/profile-card.css")
+  (resources.Get "css/components/tag.css")
+  (resources.Get "css/components/card-surface.css")
+  (resources.Get "css/view-transitions.css")
+  (resources.Get "css/components/timeline.css")
+  (resources.Get "css/pages/home.css")
+  (resources.Get "css/pages/merit-badges.css")
+  (resources.Get "css/pages/merit-badge-requirements.css")
+  (resources.Get "css/components/badge-hero.css")
+  (resources.Get "css/pages/merit-badge-landing.css")
+  (resources.Get "css/pages/drg.css")
+  (resources.Get "css/components/drg-blocks.css")
+  (resources.Get "css/pages/drg-print.css")
+  | resources.Concat "css/critical.css"
+  | resources.Minify
+}}
+<style>{{ $criticalCSS.Content | safeCSS }}</style>

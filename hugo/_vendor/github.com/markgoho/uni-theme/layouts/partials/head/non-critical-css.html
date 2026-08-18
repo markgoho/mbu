@@ -1,0 +1,29 @@
+<!-- Load Non-Critical Styles Asynchronously -->
+{{ $nonCriticalCSS := slice
+  (resources.Get "css/non-critical.css")
+  (resources.Get "css/components/icon.css")
+  | resources.Concat "css/non-critical-bundle.css"
+  | resources.Minify
+  | resources.Fingerprint
+}}
+<link
+  rel="preload"
+  href="{{ $nonCriticalCSS.RelPermalink }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+
+<link
+  rel="preload"
+  href="/assets/fonts/Inter-VariableFont_wght.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin />
+<link
+  rel="preload"
+  href="/assets/fonts/Literata-VariableFont_opsz_wght.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin />
+<noscript>
+  <link rel="stylesheet" href="{{ $nonCriticalCSS.RelPermalink }}" />
+</noscript>

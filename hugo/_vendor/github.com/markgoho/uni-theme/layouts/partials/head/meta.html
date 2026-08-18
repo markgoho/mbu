@@ -1,0 +1,50 @@
+{{/* Look for a merit badge emblem for OG tags; only the badge landing
+  page's own File.Dir matches a slug in badge-images.json, so subpages
+  (requirements, guide, print) correctly fall through to the site default,
+  same as before this used the local *-merit-badge.png resource. */}}
+{{ $badgeImages := index hugo.Data "badge-images" }}
+{{ $slug := "" }}
+{{ with .File }}
+  {{ $slug = path.Base .Dir }}
+{{ end }}
+{{ $emblemMeta := index $badgeImages.badges $slug }}
+{{ $img := "" }}
+{{ with $emblemMeta }}
+  {{ $img = partial "imagekit/url.html" (dict "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug) "tr" "n-mbu-og" "v" .v) }}
+{{ else }}
+  {{ $img = partial "imagekit/url.html" (dict "path" "/mbu-assets/site/og-default" "tr" "n-mbu-og" "v" (index $badgeImages.site "og-default").v) }}
+{{ end }}
+{{ $description := .Description | default .Summary }}
+{{ if not $description }}
+  {{/* Badge landing pages carry no body copy of their own -- borrow the
+    requirements page's front-matter description rather than shipping an
+    empty <meta name="description">. Inert everywhere else: GetPage
+    returns nil for non-badge pages. */}}
+  {{ with .GetPage "requirements" }}
+    {{ $description = .Description }}
+  {{ end }}
+{{ end }}
+
+{{ $badgeName := .Params.badge_name | default .CurrentSection.Params.badge_name }}
+{{ $fullTitle := .Title }}
+{{ if $badgeName }}
+  {{ $fullTitle = printf "%s | %s Merit Badge" .Title $badgeName }}
+{{ end }}
+
+
+<meta name="description" content="{{ $description }}" />
+<meta name="theme-color" content="#1a1c1e" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+
+<meta property="og:title" content="{{ $fullTitle }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink | absURL }}" />
+<meta property="og:image" content="{{ $img | absURL }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:description" content="{{ $description }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $fullTitle }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+<meta name="twitter:image" content="{{ $img | absURL }}" />
