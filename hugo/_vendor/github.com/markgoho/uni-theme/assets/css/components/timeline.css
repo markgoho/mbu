@@ -1,0 +1,71 @@
+/*
+ * Generic numbered-node + connecting-rail timeline, generalized from the
+ * geometry at pages/merit-badge-requirements.css:319-372 (.req-timeline /
+ * .req-card). `.req-timeline` / `.req-card` are the specialized ancestor
+ * of these classes and are left alone here — intended follow-up is to
+ * merge them onto this shared primitive.
+ */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.timeline__item {
+  position: relative;
+  display: flex;
+  gap: var(--space-s);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--space-l) / 2 - 1px);
+    top: var(--space-l);
+    bottom: calc(var(--space-l) * -1);
+    width: 2px;
+    background: var(--outline-variant);
+  }
+
+  &:last-child::before {
+    content: none;
+  }
+}
+
+.timeline__node {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: var(--space-l);
+  height: var(--space-l);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--surface);
+  border-radius: var(--radius-full);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  box-shadow: var(--shadow-card);
+}
+
+/* Optical centering: digits sit visually high in their line box at
+   line-height: 1, so the glyph needs a small downward nudge to read as
+   centered inside the node. */
+.timeline__node-text {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--step-1);
+  line-height: 1;
+  font-variant-numeric: tabular-nums lining-nums;
+  transform: translateY(-2px);
+}
+
+.timeline__panel {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-s);
+}

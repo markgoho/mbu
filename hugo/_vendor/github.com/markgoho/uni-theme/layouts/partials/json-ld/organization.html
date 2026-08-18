@@ -1,0 +1,22 @@
+{{- /* Organization schema for homepage */ -}}
+{{ $siteImages := (index hugo.Data "badge-images").site }}
+{{ $logoURL := partial "imagekit/url.html" (dict "path" "/mbu-assets/site/og-default" "tr" "w-1200" "v" (index $siteImages "og-default").v) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Merit Badge University",
+  "alternateName": "MBU",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ $logoURL | absURL }}",
+    "width": 1200,
+    "height": 675
+  },
+  "description": "Comprehensive resource for Scouting America merit badge requirements. Search and track all 143 merit badges.",
+  "sameAs": [
+    "https://github.com/markgoho/mbu"
+  ]
+}
+</script>

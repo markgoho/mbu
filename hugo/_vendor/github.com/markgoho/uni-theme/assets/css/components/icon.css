@@ -1,0 +1,56 @@
+/*
+ * Duotone icon fill layer.
+ *
+ * Duotone icon partials (layouts/partials/icons/duotone/<name>.html) render
+ * two <path> elements: a plain outline path (same shape as the regular
+ * weight, always fully opaque) and a solid "fill" path carrying the
+ * `icon__fill` class. The dispatcher (partials/icon.html) adds the
+ * `icon--duotone` class to the <svg> root whenever weight="duotone" is
+ * requested.
+ *
+ * Phosphor ships the fill path with an inline `opacity="0.2"` attribute;
+ * the vendoring step strips that in favor of the rule below so the layer
+ * stays overridable from CSS (an inline attribute would beat any
+ * stylesheet rule and silently kill the hover/focus effect).
+ */
+
+.icon--duotone .icon__fill {
+  fill: currentColor;
+  opacity: 0.2;
+  transition:
+    fill 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/*
+ * When the icon sits inside a hovered or keyboard-focused link/button,
+ * shift the fill layer to the accent color at a higher opacity. Focus
+ * gets the identical treatment as hover — a hover-only affordance is
+ * invisible to keyboard users.
+ */
+a:hover .icon--duotone .icon__fill,
+a:focus-visible .icon--duotone .icon__fill,
+button:hover .icon--duotone .icon__fill,
+button:focus-visible .icon--duotone .icon__fill {
+  fill: var(--accent);
+  opacity: 0.5;
+}
+
+/*
+ * Dark surfaces: the fill layer inherits currentColor, which in most
+ * call sites resolves to a light `--on-surface` token against a dark
+ * `--surface`. A light fill at only 20% opacity nearly disappears into
+ * the dark background, reading as a faint gray haze rather than a
+ * legible second layer. Bump the resting opacity under `.dark` (set on
+ * <html>) so the duotone effect stays visible without overpowering the
+ * outline path.
+ */
+.dark .icon--duotone .icon__fill {
+  opacity: 0.35;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon--duotone .icon__fill {
+    transition: none;
+  }
+}

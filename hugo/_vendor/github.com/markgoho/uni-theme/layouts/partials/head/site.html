@@ -1,0 +1,14 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+{{ $badgeName := .Params.badge_name | default .CurrentSection.Params.badge_name }}
+{{ if $badgeName }}
+  <title>{{ .Title }} | {{ $badgeName }} Merit Badge</title>
+{{ else }}
+  <title>{{ .Title }}</title>
+{{ end }}
+
+<!-- Resource hints for external domains -->
+<link rel="preconnect" href="https://www.scouting.org" crossorigin />
+{{/* ik.imagekit.io serves the LCP image on most pages — preconnect before
+  Clarity (next in baseof.html) so connection setup isn't queued behind it. */}}
+<link rel="preconnect" href="https://ik.imagekit.io" crossorigin />

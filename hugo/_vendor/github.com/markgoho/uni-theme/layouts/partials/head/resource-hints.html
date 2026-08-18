@@ -1,0 +1,10 @@
+<!-- Resource hints for external domains -->
+<link rel="dns-prefetch" href="https://filestore.scouting.org" />
+<link rel="dns-prefetch" href="https://api.pirsch.io" />
+<link rel="dns-prefetch" href="https://www.clarity.ms" />
+<link rel="prefetch" href="/pagefind/pagefind-ui.js" as="script" />
+
+<link rel="icon" type="image/svg+xml" href='{{ "favicon.svg" | relURL }}' />
+{{ if .Params.noindex }}
+  <meta name="robots" content="noindex, follow" />
+{{ end }}

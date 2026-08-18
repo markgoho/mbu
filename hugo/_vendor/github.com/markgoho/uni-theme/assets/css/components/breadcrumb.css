@@ -1,0 +1,93 @@
+.breadcrumb {
+  padding-block: var(--space-3xs);
+  padding-inline: 0;
+  margin-bottom: var(--space-s);
+}
+
+.breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--step--2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: var(--line-height-flat, 1.2);
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  color: var(--on-surface-muted);
+  font-size: inherit;
+}
+
+.breadcrumb__item--current {
+  color: var(--on-surface);
+  font-weight: var(--font-weight-bold);
+  opacity: 1;
+}
+
+.breadcrumb__link {
+  position: relative;
+  color: var(--on-surface-muted);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent);
+    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+@media (max-width: 60rem) {
+  /* Expand the tap target toward the 44px minimum without inflating the
+     visible breadcrumb row height. */
+  .breadcrumb__link::after {
+    content: "";
+    position: absolute;
+    inset: -11px;
+  }
+}
+
+.breadcrumb__separator {
+  width: 0.75em;
+  height: 0.75em;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+/* Mobile: hide middle items when path is deep (>3 levels) */
+@media (max-width: 30rem) {
+  .breadcrumb__list:has(:nth-child(4)) {
+    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 2)) {
+      display: none;
+    }
+
+    .breadcrumb__item:first-child::after {
+      content: "...";
+      color: var(--on-surface-muted);
+      margin-inline-start: var(--space-3xs);
+    }
+  }
+}
+
+@container (max-width: 30rem) {
+  .breadcrumb__list:has(:nth-child(4)) {
+    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 2)) {
+      display: none;
+    }
+
+    .breadcrumb__item:first-child::after {
+      content: "...";
+      color: var(--on-surface-muted);
+      margin-inline-start: var(--space-3xs);
+    }
+  }
+}
+

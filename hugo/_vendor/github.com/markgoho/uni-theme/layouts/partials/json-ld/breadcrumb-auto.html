@@ -1,0 +1,40 @@
+{{- if not .IsHome -}}
+{{- /* Build ancestors list by walking up .Parent chain */ -}}
+{{- $ancestors := slice -}}
+{{- $current := . -}}
+{{- range seq 10 -}}
+  {{- with $current.Parent -}}
+    {{- $ancestors = $ancestors | append . -}}
+    {{- $current = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $ancestors = $ancestors | collections.Reverse -}}
+
+{{- /* Build items: ancestors + current page */ -}}
+{{- $items := slice -}}
+{{- $pos := 1 -}}
+{{- range $ancestors -}}
+  {{- $name := .Title -}}
+  {{- if .IsHome -}}{{- $name = "Home" -}}
+  {{- else if and (eq .Layout "guide") .IsSection -}}{{- $name = "Digital Resource Guide" -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "name" $name "url" (.Permalink | absURL) "position" $pos) -}}
+  {{- $pos = add $pos 1 -}}
+{{- end -}}
+{{- $currentName := $.Title -}}
+{{- if and (eq $.Layout "guide") $.IsSection -}}{{- $currentName = "Digital Resource Guide" -}}{{- end -}}
+{{- $items = $items | append (dict "name" $currentName "url" ($.Permalink | absURL) "position" $pos) -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $i, $item := $items -}}
+    {{- if $i }},{{ end -}}
+    { "@type": "ListItem", "position": {{ $item.position }}, "name": "{{ $item.name | safeJS }}", "item": "{{ $item.url | safeJS }}" }
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}

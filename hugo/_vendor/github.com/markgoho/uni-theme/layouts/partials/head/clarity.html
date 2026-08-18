@@ -1,0 +1,14 @@
+{{ if hugo.IsProduction }}
+  <script type="text/javascript">
+    // Deferred to `load` so Clarity's main-thread eval can't land inside
+    // the LCP render window. Tradeoff: Clarity misses the sliver of
+    // session between first paint and `load`.
+    window.addEventListener("load", function () {
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xw9nckd7a6");
+    });
+  </script>
+{{ end }}
