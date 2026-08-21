@@ -104,16 +104,27 @@
   {{ $classes = printf "%s req-child--no-ring" $classes }}
 {{ end }}
 
+{{/* This item's heading always renders and always carries id="{{ $req.path
+  }}" -- Pagefind's Route A sub-result grouping needs the id on an actual
+  h1-h6 with non-blank text, not on the <li> (see uni-theme#4 / this
+  fix's issue). Falls back to the requirement's own leading sentence
+  (req-fallback-title.html) when no title resolves, visually hidden so
+  sighted users see no change from today -- the text still gives the
+  heading a real accessible name (options' ring is aria-hidden, so today
+  it's otherwise nameless) and gives the Pagefind sub-result a distinct,
+  informative title instead of a repeated "Requirement N" placeholder. */}}
+{{ $fallbackTitle := partial "merit-badges/req-fallback-title.html" (dict "text" $req.text) }}
+{{ $displayTitle := cond $hasTitle $lookup.title $fallbackTitle }}
+
 
 <li
-  id="{{ $req.path }}"
   class="{{ $classes }}"
   tabindex="-1"
-  data-pagefind-index-attrs="data-anchor,data-content-name"
   data-anchor="{{ $req.path }}"
   data-content-name="{{ $badgeName }}"
   {{ with $guideHref }}data-guide="{{ . }}"{{ end }}>
   {{ if eq $variant "chips" }}
+    <h4 id="{{ $req.path }}" class="visually-hidden">{{ $fallbackTitle }}</h4>
     <span class="req-child__marker">{{ $bare }}</span>
     <span
       class="req-child__text"
@@ -122,27 +133,24 @@
   {{ else }}
     {{ if eq $variant "options" }}
       {{ if $ringable }}
-        <span class="req-child__ring" aria-hidden="true">{{ $bare }}</span>
+        <span class="req-child__ring" aria-hidden="true" data-pagefind-ignore>{{ $bare }}</span>
       {{ end }}
     {{ else }}
-      <span class="req-child__marker">{{ $marker }}</span>
+      <span class="req-child__marker" data-pagefind-ignore>{{ $marker }}</span>
     {{ end }}
 
 
     <div class="req-child__body">
-      {{ if or $hasTitle $req.subrequirement_mode }}
-        <div class="req-child__title-row">
-          {{ if $hasTitle }}
-            <h4
-              class="req-child__title"
-              style="view-transition-name: req-title-{{ $itemKey }}"
-              >{{ $lookup.title }}</h4>
-          {{ end }}
-          {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
-        </div>
-      {{ end }}
+      <div class="req-child__title-row">
+        <h4
+          id="{{ $req.path }}"
+          class="req-child__title{{ if not $hasTitle }} visually-hidden{{ end }}"
+          style="view-transition-name: req-title-{{ $itemKey }}"
+          >{{ if $hasTitle }}{{ $lookup.title }}{{ else }}{{ $fallbackTitle }}{{ end }}</h4>
+        {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
+      </div>
 
-      {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text" "title" $lookup.title "transition_key" $textTransitionKey) }}
+      {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-child__text" "title" $displayTitle "transition_key" $textTransitionKey) }}
 
       {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "preview_text_path" $previewTextPath "inherited_guide" $guidePage) }}
 

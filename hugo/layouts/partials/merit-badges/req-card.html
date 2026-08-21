@@ -78,18 +78,29 @@
   {{ $ownGuideHref = .RelPermalink }}
 {{ end }}
 
+{{/* The heading below always renders and always carries id="{{ $req.path
+  }}" -- Pagefind's Route A sub-result grouping needs the id on an actual
+  h1-h6 with non-blank text, not on the <li> (see uni-theme#4 / this
+  fix's issue). When no DRG title resolves it falls back to the
+  requirement's own leading sentence (req-fallback-title.html), visually
+  hidden so sighted users with a title see no change; the text still
+  gives the heading a real accessible name and gives the Pagefind
+  sub-result a distinct, informative title instead of a repeated
+  "Requirement N" placeholder. */}}
+{{ $hasOwnTitle := ne $lookup.title "" }}
+{{ $fallbackTitle := partial "merit-badges/req-fallback-title.html" (dict "text" $req.text) }}
+{{ $displayTitle := cond $hasOwnTitle $lookup.title $fallbackTitle }}
 
 <li
-  id="{{ $req.path }}"
   class="req-card"
   tabindex="-1"
-  data-pagefind-index-attrs="data-anchor,data-content-name"
   data-anchor="{{ $req.path }}"
   data-content-name="{{ $badgeName }}"
   {{ with $ownGuideHref }}data-guide="{{ . }}"{{ end }}>
   <span
     class="req-card__node"
     aria-hidden="true"
+    data-pagefind-ignore
     {{ with $numTransitionKey }}style="view-transition-name: req-num-{{ . }}"{{ end }}
     ><span class="req-card__node-text">{{ $index }}</span></span
   >
@@ -103,18 +114,17 @@
             >{{ . }}</p>
         {{ end }}
         <div class="req-card__title-row">
-          {{ with $lookup.title }}
-            <h3
-              class="req-card__title"
-              style="view-transition-name: req-title-{{ $cardKey }}"
-              >{{ . }}</h3>
-          {{ end }}
+          <h3
+            id="{{ $req.path }}"
+            class="req-card__title{{ if not $hasOwnTitle }} visually-hidden{{ end }}"
+            style="view-transition-name: req-title-{{ $cardKey }}"
+            >{{ if $hasOwnTitle }}{{ $lookup.title }}{{ else }}{{ $fallbackTitle }}{{ end }}</h3>
           {{ partial "merit-badges/req-pill.html" $req.subrequirement_mode }}
         </div>
       </div>
     </div>
 
-    {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-card__text" "title" $lookup.title "transition_key" $textTransitionKey) }}
+    {{ partial "merit-badges/req-text.html" (dict "text" $req.text "mode" $req.subrequirement_mode "class" "req-card__text" "title" $displayTitle "transition_key" $textTransitionKey) }}
 
     {{ partial "merit-badges/req-children.html" (dict "req" $req "badge_name" $badgeName "hide_resources" $hideResources "guide" $guide "inherited_guide" $ownPage "preview_text_path" $previewTextPath) }}
 
