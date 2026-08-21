@@ -6,6 +6,12 @@
   that step is not theme-owned.
 */ -}}
 <script src="/pagefind/pagefind-ui.js"></script>
-{{ $opts := dict "targetPath" "search.js" }}
+{{/* search.ts loads /pagefind/pagefind.js itself via a runtime dynamic
+  import (independent of PagefindUI's own bundled copy -- see search.ts's
+  checkFuzzyFloor, uni-theme#5). That path only exists once a consumer's
+  own indexing step runs, so esbuild can't resolve it at Hugo build time
+  -- externals leaves it as a plain runtime import instead of erroring.
+*/}}
+{{ $opts := dict "targetPath" "search.js" "externals" (slice "/pagefind/pagefind.js") }}
 {{ $built := resources.Get "ts/search.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
 <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>

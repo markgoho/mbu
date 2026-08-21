@@ -150,3 +150,23 @@
     color: var(--amber);
   }
 }
+
+/* search.ts's own fuzzy-match floor (see uni-theme#5): Pagefind's
+   ranking API can't drop a result to zero, so a query whose only
+   candidate is a weak fuzzy match still renders one. When search.ts
+   detects this, it toggles this class on #search and shows its own
+   message (a sibling <p class="pagefind-ui__message"> it manages
+   directly) in place of Pagefind's own message/results — reusing this
+   class only for consistent styling, not Pagefind's own DOM. */
+#search.search-fuzzy-suppressed .pagefind-ui__message,
+#search.search-fuzzy-suppressed .pagefind-ui__results {
+  display: none;
+}
+
+.search-fuzzy-override {
+  display: none;
+}
+
+#search.search-fuzzy-suppressed + .search-fuzzy-override {
+  display: block;
+}
