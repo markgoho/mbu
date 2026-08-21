@@ -1,0 +1,66 @@
+/*
+ * Generic nested-requirement rail: a marker + title + text list item for a
+ * requirement tree's non-top-level nodes. Generalized from
+ * merit-badge-requirements.css's .req-children--rail/.req-child--rail
+ * family (the rail variant only -- MBU's chips/options variants are driven
+ * by fields like subrequirement_mode that not every consumer's data has,
+ * so those stay local to that page). Pairs with the generic .timeline for
+ * the top-level numbered node + panel; see timeline.css.
+ */
+
+.req-list {
+  list-style: none;
+  margin: var(--space-s) 0 0;
+  padding-inline-start: var(--space-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  border-inline-start: 2px solid var(--outline-variant);
+}
+
+.req-list__item {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: var(--space-2xs);
+  border-radius: var(--radius-md);
+}
+
+/* The id lives on .req-list__title (an h1-h6), not this item -- Pagefind's
+   sub-result mechanism requires the heading itself to carry it (a missing
+   or misplaced id pollutes the previous requirement's excerpt). :has()
+   bubbles the highlight up to the whole item regardless. */
+.req-list__item:has(:target),
+.req-list__item:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.req-list__marker {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--on-surface-muted);
+}
+
+.req-list__body {
+  min-width: 0;
+}
+
+.req-list__title {
+  min-width: 0;
+  margin: 0;
+  font-size: var(--step-0);
+  font-weight: 700;
+  color: var(--on-surface);
+  scroll-margin-top: var(--space-m);
+}
+
+.req-list__text {
+  margin-block: var(--space-3xs) 0;
+  line-height: var(--line-height-relaxed);
+  color: var(--on-surface);
+}
+
+.req-list__text p {
+  margin: 0;
+}
