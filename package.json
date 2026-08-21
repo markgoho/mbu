@@ -16,7 +16,7 @@
     "lint": "oxlint .",
     "build:local": "rm -rf hugo/public && cd hugo && hugo && bun run index",
     "build": "cd hugo && hugo --minify && bun run index",
-    "hugo:dev": "bun run build:local && cd hugo && hugo server",
+    "hugo:dev": "bun run build:local && cd hugo && hugo server --port 1314",
     "index": "bunx pagefind --site hugo/public",
     "generate:drg-images": "bun scripts/generate-drg-images.ts --badge",
     "verify:youtube-links": "bun scripts/verify-youtube-links.ts",
