@@ -17,9 +17,7 @@
 
 
   <div class="req-page">
-    <aside class="req-sidebar-wrap">
-      {{ partial "merit-badges/req-sidebar.html" (dict "badge" $badge "json" $json "guide" $guide "active" "requirements") }}
-    </aside>
+    {{ partial "merit-badges/req-sidebar.html" (dict "badge" $badge "json" $json "guide" $guide "active" "requirements") }}
 
     <div class="req-main">
       {{ partial "breadcrumb.html" . }}

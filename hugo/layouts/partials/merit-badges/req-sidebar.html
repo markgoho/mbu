@@ -6,6 +6,14 @@
   page's <header class="badge-header">. Collapses to a top bar on
   mobile (see merit-badge-requirements.css).
 
+  Renders its own <aside class="req-sidebar-wrap"> around the desktop
+  sidebar, with the mobile <nav class="req-mobile-nav-wrap"> as a
+  sibling outside it -- callers must NOT wrap this partial's output in
+  their own .req-sidebar-wrap element. .req-sidebar-wrap is `display:
+  none` below the desktop breakpoint (see drg.css / merit-badge-
+  requirements.css), so wrapping the mobile nav inside it hides the
+  mobile nav too.
+
   Params (dict):
   badge          - the badge's landing Page
   json           - the badge's data.json (from hugo.Data "merit-badges")
@@ -83,75 +91,77 @@
   </details>
 </nav>
 
-<div class="req-sidebar{{ if eq $variant "landing" }} req-sidebar--landing{{ end }}">
-  {{ partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug "demote_heading" $demoteHeading) }}
+<aside class="req-sidebar-wrap">
+  <div class="req-sidebar{{ if eq $variant "landing" }} req-sidebar--landing{{ end }}">
+    {{ partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug "demote_heading" $demoteHeading) }}
 
-  <nav class="req-sidebar__nav" aria-label="{{ $badge.Title }} sections">
-    <ul>
-      <li>
-        <a href="{{ $badge.RelPermalink }}"{{ if eq $active "overview" }} aria-current="page"{{ end }}>
-          Overview
-        </a>
-      </li>
-      {{ with $reqPage }}
+    <nav class="req-sidebar__nav" aria-label="{{ $badge.Title }} sections">
+      <ul>
         <li>
-          <a href="{{ .RelPermalink }}"{{ if eq $active "requirements" }} aria-current="page"{{ end }}>
-            Requirements
+          <a href="{{ $badge.RelPermalink }}"{{ if eq $active "overview" }} aria-current="page"{{ end }}>
+            Overview
           </a>
         </li>
-      {{ end }}
-      {{ if $guide }}
-        <li>
-          <a href="{{ $guide.RelPermalink }}"{{ if eq $active "guide" }} aria-current="page"{{ end }}>
-            Study Guide
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-  </nav>
+        {{ with $reqPage }}
+          <li>
+            <a href="{{ .RelPermalink }}"{{ if eq $active "requirements" }} aria-current="page"{{ end }}>
+              Requirements
+            </a>
+          </li>
+        {{ end }}
+        {{ if $guide }}
+          <li>
+            <a href="{{ $guide.RelPermalink }}"{{ if eq $active "guide" }} aria-current="page"{{ end }}>
+              Study Guide
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
 
-  <div class="req-sidebar__meta">
-    <span class="req-sidebar__meta-item">{{ $reqCount }} Requirements</span>
-    {{ with $json.last_updated }}
-      <span class="req-sidebar__meta-item">
-        Updated
-        {{ time . | dateFormat "January 2, 2006" }}
-      </span>
-    {{ end }}
-    {{ if $json.eagle_required }}
-      <span class="req-sidebar__eagle">
-        {{ partial "icon.html" (dict "name" "medal" "class" "req-sidebar__eagle-icon") }}
-        Eagle Required
-      </span>
-    {{ end }}
-    <a
-      href="{{ $json.url }}"
-      target="_blank"
-      rel="noopener"
-      class="req-sidebar__link">
-      {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "req-sidebar__link-icon") }}
-      View Official Page
-    </a>
-    {{ if $json.pamphlet_url }}
+    <div class="req-sidebar__meta">
+      <span class="req-sidebar__meta-item">{{ $reqCount }} Requirements</span>
+      {{ with $json.last_updated }}
+        <span class="req-sidebar__meta-item">
+          Updated
+          {{ time . | dateFormat "January 2, 2006" }}
+        </span>
+      {{ end }}
+      {{ if $json.eagle_required }}
+        <span class="req-sidebar__eagle">
+          {{ partial "icon.html" (dict "name" "medal" "class" "req-sidebar__eagle-icon") }}
+          Eagle Required
+        </span>
+      {{ end }}
       <a
-        href="{{ $json.pamphlet_url }}"
+        href="{{ $json.url }}"
         target="_blank"
         rel="noopener"
         class="req-sidebar__link">
-        {{ partial "icon.html" (dict "name" "download-simple" "class" "req-sidebar__link-icon") }}
-        Download Free Pamphlet
+        {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "req-sidebar__link-icon") }}
+        View Official Page
       </a>
-    {{ end }}
-    {{ $worksheets := index hugo.Data "worksheets" }}
-    {{ if and $worksheets (in $worksheets.slugs $slug) }}
-      <a
-        href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
-        target="_blank"
-        rel="noopener"
-        class="req-sidebar__link hide-on-mobile">
-        {{ partial "icon.html" (dict "name" "download-simple" "class" "req-sidebar__link-icon") }}
-        Download Fillable Worksheet
-      </a>
-    {{ end }}
+      {{ if $json.pamphlet_url }}
+        <a
+          href="{{ $json.pamphlet_url }}"
+          target="_blank"
+          rel="noopener"
+          class="req-sidebar__link">
+          {{ partial "icon.html" (dict "name" "download-simple" "class" "req-sidebar__link-icon") }}
+          Download Free Pamphlet
+        </a>
+      {{ end }}
+      {{ $worksheets := index hugo.Data "worksheets" }}
+      {{ if and $worksheets (in $worksheets.slugs $slug) }}
+        <a
+          href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
+          target="_blank"
+          rel="noopener"
+          class="req-sidebar__link hide-on-mobile">
+          {{ partial "icon.html" (dict "name" "download-simple" "class" "req-sidebar__link-icon") }}
+          Download Fillable Worksheet
+        </a>
+      {{ end }}
+    </div>
   </div>
-</div>
+</aside>

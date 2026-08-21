@@ -59,17 +59,15 @@
   {{ end }}
 
   <div class="req-page req-page--landing">
-    <aside class="req-sidebar-wrap">
-      {{ partial "merit-badges/req-sidebar.html" (dict
-        "badge" $badge
-        "json" $json
-        "guide" $guide
-        "active" "overview"
-        "demote_heading" true
-        "variant" "landing"
-        )
-      }}
-    </aside>
+    {{ partial "merit-badges/req-sidebar.html" (dict
+      "badge" $badge
+      "json" $json
+      "guide" $guide
+      "active" "overview"
+      "demote_heading" true
+      "variant" "landing"
+      )
+    }}
 
     <div class="req-main">
       {{ partial "breadcrumb.html" . }}
