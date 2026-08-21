@@ -10,11 +10,17 @@
     "zeroResults"        "No results found"                   (optional, UI copy)
     "noResultsEvent"     "my-search-no-results"                (optional, Pirsch event name)
     "resultClickEvent"   "my-search-result-click"              (optional, Pirsch event name)
+    "pageSize"           7                                     (optional, int)
 
-  The four optional params surface as data-* attributes on #search, read
-  by assets/ts/search.ts — see CONTRACT.md's "Search page" section. The
-  two event names are only fired when present; omit either to skip that
-  analytics call entirely.
+  The optional params surface as data-* attributes on #search, read by
+  assets/ts/search.ts — see CONTRACT.md's "Search page" section. The two
+  event names are only fired when present; omit either to skip that
+  analytics call entirely. `pageSize` overrides Pagefind's own built-in
+  top-level-result page size (5) -- omit to keep that default. A
+  consumer whose corpus fits comfortably under 5 page-level results most
+  of the time won't need it; one that can plausibly match more than 5
+  distinct pages on a single query (e.g. scouting-u's 7 ranks) does, so
+  a broad query doesn't hide real matches behind a "Load more" click.
 */ -}}
 {{- $page := .page -}}
 {{- if not $page }}{{ errorf "search/page.html: \"page\" is required" }}{{ end -}}
@@ -25,6 +31,7 @@
 {{- $zeroResults := .zeroResults | default "No results found" -}}
 {{- $noResultsEvent := .noResultsEvent -}}
 {{- $resultClickEvent := .resultClickEvent -}}
+{{- $pageSize := .pageSize -}}
 
 <article class="search-page">
   {{ partial "breadcrumb.html" $page }}
@@ -42,6 +49,9 @@
     {{- end }}
     {{- with $resultClickEvent }}
     data-search-event-result-click="{{ . }}"
+    {{- end }}
+    {{- with $pageSize }}
+    data-search-page-size="{{ . }}"
     {{- end }}
   ></div>
 </article>

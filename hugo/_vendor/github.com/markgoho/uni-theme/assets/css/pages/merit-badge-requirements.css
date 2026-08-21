@@ -652,9 +652,15 @@
    fragment navigation and that always scrolls its target to the top of
    the viewport. Requirements carry tabindex="-1", so clicking one
    focuses it; the browser scrolls a focused element into view only when
-   it isn't already visible, so a requirement you can see stays put. */
+   it isn't already visible, so a requirement you can see stays put.
+
+   :has(:target) is additive, for a consumer (mbu) whose id lives on a
+   descendant heading rather than on the .req-card/.req-child itself --
+   Pagefind's sub-result grouping needs the id there. Plain :target still
+   covers a consumer (scouting-u) that keeps the id on the <li>. */
 .req-card[data-selected] > .req-card__panel,
 html:not([data-js]) .req-card:target > .req-card__panel,
+html:not([data-js]) .req-card:has(:target) > .req-card__panel,
 html:not([data-js]) .req-card:focus-within > .req-card__panel {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -662,13 +668,18 @@ html:not([data-js]) .req-card:focus-within > .req-card__panel {
 
 .dark .req-card[data-selected] > .req-card__panel,
 .dark html:not([data-js]) .req-card:target > .req-card__panel,
+.dark html:not([data-js]) .req-card:has(:target) > .req-card__panel,
 .dark html:not([data-js]) .req-card:focus-within > .req-card__panel {
   outline-color: var(--amber);
 }
 
-/* A card containing the linked subrequirement is not itself linked. */
+/* A card containing the linked subrequirement is not itself linked.
+   :has(.req-child :target) covers the descendant-heading-id case; source
+   order puts this after the plain-:target rule above so it still wins
+   the tie when both match (the id sits inside a nested .req-child). */
 .req-card:has(.req-child[data-selected]) > .req-card__panel,
 html:not([data-js]) .req-card:has(.req-child:target) > .req-card__panel,
+html:not([data-js]) .req-card:has(.req-child :target) > .req-card__panel,
 html:not([data-js]) .req-card:has(.req-child:focus-within) > .req-card__panel {
   outline: none;
 }
@@ -891,12 +902,14 @@ html:not([data-js]) .req-card:focus-within > .req-card__node {
 
 .req-child[data-selected],
 html:not([data-js]) .req-child:target,
+html:not([data-js]) .req-child:has(:target),
 html:not([data-js]) .req-child:focus-within {
   outline-color: var(--accent);
 }
 
 .dark .req-child[data-selected],
 .dark html:not([data-js]) .req-child:target,
+.dark html:not([data-js]) .req-child:has(:target),
 .dark html:not([data-js]) .req-child:focus-within {
   outline-color: var(--amber);
 }
@@ -905,6 +918,7 @@ html:not([data-js]) .req-child:focus-within {
    every requirement containing it. */
 .req-child:has(.req-child[data-selected]),
 html:not([data-js]) .req-child:has(.req-child:target),
+html:not([data-js]) .req-child:has(.req-child :target),
 html:not([data-js]) .req-child:has(.req-child:focus-within) {
   outline-color: transparent;
 }
