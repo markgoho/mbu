@@ -12,6 +12,9 @@ if (container) {
     container.dataset.searchZeroResults ?? "No results found";
   const noResultsEvent = container.dataset.searchEventNoResults;
   const resultClickEvent = container.dataset.searchEventResultClick;
+  const pageSize = container.dataset.searchPageSize
+    ? Number(container.dataset.searchPageSize)
+    : undefined;
 
   new PagefindUI({
     element: "#search",
@@ -19,6 +22,7 @@ if (container) {
     showImages: true,
     resetStyles: false,
     excerptLength: 500,
+    ...(pageSize ? { pageSize } : {}),
     processResult: function (result: any) {
       // Optimize excerpts to prioritize showing highlighted matches
       if (result.excerpt) {
