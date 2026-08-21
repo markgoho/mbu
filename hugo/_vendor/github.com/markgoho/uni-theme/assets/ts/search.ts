@@ -12,6 +12,9 @@ if (container) {
     container.dataset.searchZeroResults ?? "No results found";
   const noResultsEvent = container.dataset.searchEventNoResults;
   const resultClickEvent = container.dataset.searchEventResultClick;
+  const pageSize = container.dataset.searchPageSize
+    ? Number(container.dataset.searchPageSize)
+    : undefined;
 
   new PagefindUI({
     element: "#search",
@@ -19,6 +22,17 @@ if (container) {
     showImages: true,
     resetStyles: false,
     excerptLength: 500,
+    ...(pageSize ? { pageSize } : {}),
+    // Any query with no real match still returns Pagefind's best-effort
+    // fuzzy candidate (e.g. "knives" against a corpus that only has
+    // "knife" surfaces a single-character "(k)" match) — Pagefind never
+    // drops a result to zero, only re-scores it, so this can't produce a
+    // genuine "no results" state. Raising termSimilarity (default 1.0)
+    // at least keeps real matches from being outranked by that noise:
+    // verified live against this site's index that patrol/knife/
+    // pocketknife hold well above a nonsense-query noise floor at 10,
+    // while default (1.0) let a nonsense query outscore a real one.
+    ranking: { termSimilarity: 10 },
     processResult: function (result: any) {
       // Optimize excerpts to prioritize showing highlighted matches
       if (result.excerpt) {
