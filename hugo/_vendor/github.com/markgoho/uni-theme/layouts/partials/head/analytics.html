@@ -1,7 +1,9 @@
 {{ if hugo.IsProduction }}
-  <script
-    defer
-    src="https://api.pirsch.io/pa.js"
-    id="pianjs"
-    data-code="nGgx7zltXKwcHRduBaMGOBWCO8L1lAjQ"></script>
+  {{ with .Site.Params.analytics.pirsch_code }}
+    <script
+      defer
+      src="https://api.pirsch.io/pa.js"
+      id="pianjs"
+      data-code="{{ . }}"></script>
+  {{ end }}
 {{ end }}
