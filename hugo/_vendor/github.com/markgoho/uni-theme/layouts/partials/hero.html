@@ -1,0 +1,102 @@
+{{/* hero.html
+
+  Shared `.badge-hero-wrap`/`.badge-hero` markup shape for badge/rank
+  landing-page heroes (uni-theme#26): optional backdrop, glow, a grid
+  with an eyebrow row, <h1> title, optional lead paragraph, CTAs, and an
+  optional emblem column. The theme owns the wrapper structure; callers
+  own content that differs by data shape (eyebrow pills, emblem images)
+  by pre-rendering it as HTML, same pattern as req-sidebar.html's
+  `identity`/`meta` params.
+
+  Renders <section id="badge-hero"> unconditionally -- at least one
+  known caller (mbu's badge-landing.html/guide.html) pairs it with a
+  `<link rel="expect" href="#badge-hero" blocking="render" />` in its
+  head-styles, so the id must stay fixed rather than becoming a param.
+
+  Params (dict):
+  eyebrow        - pre-rendered HTML, optional. Content of the eyebrow
+                   row (e.g. a category link + chips, or a single pill
+                   span) -- callers own the shape via their own local
+                   partial or template markup.
+  title          - plain text, the <h1>'s first line.
+  accent_title   - plain text, optional. Second line, wrapped in <em>
+                   with a leading space (matches mbu's two-line style);
+                   omit entirely for a single-line title.
+  lead           - optional lead paragraph string.
+  ctas           - optional slice of dicts {url, label, icon, secondary}.
+  backdrop       - pre-rendered HTML, optional. The blurred backdrop
+                   image markup; omit when no emblem image exists yet.
+  emblem         - pre-rendered HTML, optional. The crisp emblem image
+                   markup for the emblem column; omit to collapse the
+                   grid to a single column, same as backdrop.
+  eyebrow_transition_name - string, optional. Full view-transition-name
+                   value (e.g. "mb-band-camping") for the eyebrow row.
+                   Opt-in only -- mbu's `mb-*` wiring is mbu-specific and
+                   must not leak into the theme as a default.
+  title_transition_name   - string, optional, same shape as above for
+                   the <h1>.
+  emblem_transition_name  - string, optional, same shape as above for
+                   the emblem column.
+*/}}
+{{ $eyebrow := .eyebrow }}
+{{ $title := .title }}
+{{ $accentTitle := .accent_title }}
+{{ $lead := .lead }}
+{{ $ctas := .ctas }}
+{{ $backdrop := .backdrop }}
+{{ $emblem := .emblem }}
+{{ $eyebrowTransitionName := .eyebrow_transition_name }}
+{{ $titleTransitionName := .title_transition_name }}
+{{ $emblemTransitionName := .emblem_transition_name }}
+
+<div class="badge-hero-wrap">
+  <section class="badge-hero" id="badge-hero">
+    {{ with $backdrop }}
+      <div class="badge-hero__backdrop" aria-hidden="true">{{ . | safeHTML }}</div>
+    {{ end }}
+    <div class="badge-hero__glow" aria-hidden="true"></div>
+
+    <div class="badge-hero__grid">
+      <div class="badge-hero__content">
+        <div
+          class="badge-hero__eyebrow-row"
+          {{ with $eyebrowTransitionName }}style="view-transition-name: {{ . }}"{{ end }}>
+          {{ with $eyebrow }}{{ . | safeHTML }}{{ end }}
+        </div>
+
+        <h1
+          class="badge-hero__title"
+          {{ with $titleTransitionName }}style="view-transition-name: {{ . }}"{{ end }}>
+          {{ $title }}{{ with $accentTitle }} <em>{{ . }}</em>{{ end }}
+        </h1>
+
+        {{ with $lead }}
+          <p class="badge-hero__lead">{{ . }}</p>
+        {{ end }}
+
+        {{ if $ctas }}
+          <div class="badge-hero__ctas">
+            {{ range $ctas }}
+              <a
+                href="{{ .url }}"
+                class="button {{ if .secondary }}button-secondary{{ end }} badge-hero__cta">
+                {{ if .icon }}
+                  {{ partial "icon.html" (dict "name" .icon "class" "badge-hero__cta-icon") }}
+                {{ end }}
+                {{ .label }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+
+      {{ with $emblem }}
+        <div
+          class="badge-hero__emblem-col"
+          {{ with $emblemTransitionName }}style="view-transition-name: {{ . }}"{{ end }}>
+          {{ . | safeHTML }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+</div>
