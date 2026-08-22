@@ -1,16 +1,17 @@
 {{- /*
-  footer-scripts wiring for the search page: Pagefind's UI bundle plus
-  the built assets/ts/search.ts. Paired with partials/search/page.html.
-  A consumer must run its own Pagefind indexing step (e.g. `bunx
-  pagefind`) so /pagefind/pagefind-ui.js exists at build output time —
+  footer-scripts wiring for the search page: the built assets/ts/search.ts.
+  Paired with partials/search/page.html.
+
+  Pagefind's Default UI (`/pagefind/pagefind-ui.js`) is deliberately NOT
+  loaded -- search.ts renders results itself against the raw Pagefind API
+  (uni-theme#14). A consumer must still run its own Pagefind indexing step
+  (e.g. `bunx pagefind`) so `/pagefind/pagefind.js` exists at request time;
   that step is not theme-owned.
 */ -}}
-<script src="/pagefind/pagefind-ui.js"></script>
-{{/* search.ts loads /pagefind/pagefind.js itself via a runtime dynamic
-  import (independent of PagefindUI's own bundled copy -- see search.ts's
-  checkFuzzyFloor, uni-theme#5). That path only exists once a consumer's
-  own indexing step runs, so esbuild can't resolve it at Hugo build time
-  -- externals leaves it as a plain runtime import instead of erroring.
+{{/* search.ts loads /pagefind/pagefind.js via a runtime dynamic import.
+  That path only exists once a consumer's own indexing step runs, so
+  esbuild can't resolve it at Hugo build time -- externals leaves it as a
+  plain runtime import instead of erroring.
 */}}
 {{ $opts := dict "targetPath" "search.js" "externals" (slice "/pagefind/pagefind.js") }}
 {{ $built := resources.Get "ts/search.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}

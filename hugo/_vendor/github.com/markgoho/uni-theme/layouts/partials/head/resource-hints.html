@@ -2,7 +2,9 @@
 <link rel="dns-prefetch" href="https://filestore.scouting.org" />
 <link rel="dns-prefetch" href="https://api.pirsch.io" />
 <link rel="dns-prefetch" href="https://www.clarity.ms" />
-<link rel="prefetch" href="/pagefind/pagefind-ui.js" as="script" />
+{{/* Pagefind's Default UI is no longer loaded (uni-theme#14); search.ts
+  imports the raw runtime instead, so that is what is worth prefetching. */}}
+<link rel="prefetch" href="/pagefind/pagefind.js" as="script" />
 
 <link rel="icon" type="image/svg+xml" href='{{ "favicon.svg" | relURL }}' />
 {{ if .Params.noindex }}
