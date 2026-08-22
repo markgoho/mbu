@@ -119,22 +119,9 @@
 /* Mobile navigation (collapsible, shown only when sidebar is hidden)   */
 /* ------------------------------------------------------------------ */
 
-.req-mobile-nav-wrap {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  transition: transform 0.3s ease;
-  padding-inline: var(--space-s);
-
-  @media (min-width: 60rem) {
-    display: none;
-  }
-}
-
-.req-mobile-nav-wrap.nav-hidden {
-  transform: translateY(-100%);
-}
-
+/* .req-mobile-nav-wrap's display/sticky positioning is shared with the
+   requirements page shell and lives in merit-badge-requirements.css,
+   which every req-page-shell page loads alongside this file. */
 .req-mobile-nav {
   position: relative;
   margin-bottom: var(--space-m);
