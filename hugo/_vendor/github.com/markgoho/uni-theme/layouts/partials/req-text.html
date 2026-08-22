@@ -43,11 +43,19 @@
   transition_key - (optional) this element's view-transition-name key
           (see text/transition-key.html), for a landing-page preview
           snippet to morph into this element instead of cross-fading
+  list  - (optional) {type: "ul"|"ol", items: [string, ...]}. Renders as
+          a real list after the prose above, inside this SAME element --
+          not a sibling -- so it stays inside deep-link.ts's
+          .req-card__text/.req-child__text scope and Pagefind's single
+          data-pagefind-body region. Items are plain text (auto-escaped),
+          never markdown/HTML -- a consumer whose list items carry their
+          own markup has no field for that yet, see CONTRACT.md.
 */}}
-{{ $text := .text }}
+{{ $text := .text | default "" }}
 {{ $class := .class }}
 {{ $title := .title }}
 {{ $textFormat := .text_format }}
+{{ $list := .list }}
 {{ if not (in (slice "markdown" "html") $textFormat) }}
   {{ errorf "req-text.html: text_format must be \"markdown\" or \"html\", got %q" $textFormat }}
 {{ end }}
@@ -85,4 +93,4 @@
 <div
   class="{{ $class }}"
   {{ with $transitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
-  >{{ partial "text/render.html" (dict "text" $text "text_format" $textFormat) }}</div>
+  >{{ partial "text/render.html" (dict "text" $text "text_format" $textFormat) }}{{ with $list }}{{ if eq .type "ol" }}<ol class="req-text-list">{{ range .items }}<li>{{ . }}</li>{{ end }}</ol>{{ else }}<ul class="req-text-list">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}{{ end }}</div>

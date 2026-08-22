@@ -739,6 +739,52 @@ html:not([data-js]) .req-card:has(.req-child:focus-within) > .req-card__panel {
   color: var(--on-surface);
 }
 
+/* A structured node.list, rendered by req-text.html inside the same
+   .req-card__text/.req-child__text element as the prose above it --
+   default browser list-style (not stripped) matches how this content
+   rendered before extraction, when it rode along as raw <ul>/<ol> markup
+   inside node.text itself. */
+.req-text-list {
+  margin-block: var(--space-3xs) 0;
+  padding-inline-start: var(--space-m);
+}
+
+/* req-footnotes.html's endnotes section: a rank/badge-level list of
+   footnote definitions, each citable by id="fn-{marker}" from a
+   consumer's own rewritten <sup> markers in requirement text. */
+.req-footnotes {
+  margin-block-start: var(--space-xl);
+  padding-block-start: var(--space-m);
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+.req-footnotes__heading {
+  margin: 0 0 var(--space-s);
+  font-size: var(--step-1);
+  font-weight: var(--font-weight-semibold);
+  color: var(--on-surface);
+}
+
+.req-footnotes__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  list-style: none;
+  padding: 0;
+  font-size: var(--step--1);
+  color: var(--on-surface-muted);
+}
+
+.req-footnotes__item {
+  display: flex;
+  gap: var(--space-3xs);
+  scroll-margin-top: var(--space-m);
+}
+
+.req-footnotes__marker {
+  font-weight: var(--font-weight-semibold);
+}
+
 @container req-main (max-width: 500px) {
   .req-timeline {
     gap: var(--space-m);

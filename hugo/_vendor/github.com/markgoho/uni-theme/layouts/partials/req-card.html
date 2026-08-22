@@ -20,6 +20,9 @@
   node - a node dict; node.text_format ("markdown" | "html", default
          "markdown") is resolved once here and threads through to
          text/heading-for.html and req-text.html -- see CONTRACT.md.
+         node.list, if set, renders even when node.text alone would have
+         promoted into the heading -- req-text.html still gets called,
+         with an empty text so only the list shows in the body.
 */}}
 {{ $node := .node }}
 {{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}
@@ -70,8 +73,9 @@
       </div>
     </div>
 
-    {{ if and $node.text (not $heading.promoted) }}
-      {{ partial "req-text.html" (dict "text" $node.text "class" "req-card__text" "title" $node.title "text_format" $textFormat "transition_key" ($node.text_transition_key | default $key)) }}
+    {{ if or (and $node.text (not $heading.promoted)) $node.list }}
+      {{ $bodyText := cond $heading.promoted "" $node.text }}
+      {{ partial "req-text.html" (dict "text" $bodyText "class" "req-card__text" "title" $node.title "text_format" $textFormat "list" $node.list "transition_key" ($node.text_transition_key | default $key)) }}
     {{ end }}
 
     {{ with $node.children }}

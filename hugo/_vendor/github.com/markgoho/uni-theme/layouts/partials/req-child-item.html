@@ -15,7 +15,9 @@
             behavior" section. node.text_format ("markdown" | "html",
             default "markdown") is resolved once here and threads
             through to text/heading-for.html, req-text.html, and
-            text/render.html (chips variant, below).
+            text/render.html (chips variant, below). node.list is only
+            rendered on the rail/options branch, via req-text.html --
+            chips has no field for it (see CONTRACT.md).
   variant - "rail" | "chips" | "options", the variant this item renders
             inside (chosen by the parent that called req-children.html).
 */}}
@@ -39,6 +41,9 @@
   data-content-name="{{ $node.content_name }}"
   {{ with $node.guide_href }}data-guide="{{ . }}"{{ end }}>
   {{ if eq $variant "chips" }}
+    {{ if $node.list }}
+      {{ errorf "req-child-item.html: node %q sets list on a chips-variant child, which has no field for it -- chips render inline inside their <li>, with no block-level element a list could nest inside" $node.path }}
+    {{ end }}
     {{/* Chips never promote -- a chip is already a short, single-
       sentence label by construction, exactly the condition that
       triggers promotion elsewhere, but a chip has no body wrapper: its
@@ -86,8 +91,9 @@
         {{ partial "req-pill.html" $node.pill }}
       </div>
 
-      {{ if and $node.text (not $heading.promoted) }}
-        {{ partial "req-text.html" (dict "text" $node.text "class" "req-child__text" "title" $node.title "text_format" $textFormat "transition_key" ($node.text_transition_key | default $key)) }}
+      {{ if or (and $node.text (not $heading.promoted)) $node.list }}
+        {{ $bodyText := cond $heading.promoted "" $node.text }}
+        {{ partial "req-text.html" (dict "text" $bodyText "class" "req-child__text" "title" $node.title "text_format" $textFormat "list" $node.list "transition_key" ($node.text_transition_key | default $key)) }}
       {{ end }}
 
       {{ with $node.children }}

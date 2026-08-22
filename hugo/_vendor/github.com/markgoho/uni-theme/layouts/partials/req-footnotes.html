@@ -1,0 +1,48 @@
+{{/* req-footnotes.html
+
+  Renders a badge/rank's footnote definitions as a real endnotes section,
+  each stamped with id="fn-{marker}" -- so a consumer's own ingestion
+  (e.g. scouting-u's Advancements-API sync) can rewrite a bare <sup>N</sup>
+  citation marker in requirement text into <sup><a href="#fn-N">N</a></sup>
+  and have it resolve to something real, instead of a dead/unlinked
+  digit. Forward links only: a footnote can be cited from more than one
+  requirement, so an id on the citation side would be duplicated across
+  the page. No back-links in this version -- each requirement already
+  carries its own id={path} if a consumer wants to build one later.
+
+  All marker/text extraction and marker<->definition matching is the
+  consumer's own job, done before calling this partial -- this partial
+  never parses HTML or inspects citation markers itself, matching the
+  rest of this file's "no site-specific lookup inside the partials"
+  discipline (see CONTRACT.md).
+
+  Params (dict):
+  footnotes - [{marker, text, text_format}, ...], required. `marker` is
+              the bare label a citation's <sup> shows (a digit, "12",
+              etc.) and becomes this item's id="fn-{marker}". `text`/
+              `text_format` render through text/render.html exactly like
+              a requirement's own text -- a footnote's own definition can
+              itself contain HTML (e.g. a nested <ul>).
+  heading   - optional visible section heading, default "Notes".
+
+  Renders nothing when `footnotes` is empty/unset.
+*/}}
+{{ $footnotes := .footnotes }}
+{{ if $footnotes }}
+  {{ $heading := .heading | default "Notes" }}
+  <section class="req-footnotes" aria-label="{{ $heading }}" role="doc-endnotes">
+    <h2 class="req-footnotes__heading">{{ $heading }}</h2>
+    <ol class="req-footnotes__list">
+      {{ range $footnotes }}
+        {{ $format := .text_format | default "markdown" }}
+        {{ if not (in (slice "markdown" "html") $format) }}
+          {{ errorf "req-footnotes.html: text_format must be \"markdown\" or \"html\", got %q" $format }}
+        {{ end }}
+        <li id="fn-{{ .marker }}" class="req-footnotes__item" role="doc-endnote">
+          <span class="req-footnotes__marker">{{ .marker }}</span>
+          <span class="req-footnotes__text">{{ partial "text/render.html" (dict "text" .text "text_format" $format) }}</span>
+        </li>
+      {{ end }}
+    </ol>
+  </section>
+{{ end }}
