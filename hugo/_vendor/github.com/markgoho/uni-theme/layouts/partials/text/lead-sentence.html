@@ -1,0 +1,43 @@
+{{/* text/lead-sentence.html
+
+  Reduces a block of markdown to its leading sentence, as a plain-text
+  string suitable for a heading or an accessible name.
+
+  Rendering pipeline: markdownify -> plainify -> first sentence -> cap.
+  The sentence's own terminal punctuation is dropped, since a heading
+  reads better without it. When the result is longer than 80 characters
+  it is cut on a word boundary and an ellipsis is appended, so the return
+  value is never longer than 81 characters (80 plus the ellipsis).
+
+  Params (dict):
+    text - the source markdown
+
+  Returns: a plain-text string. Empty in, empty out -- callers that need
+  a non-blank result (an id-bearing heading, say) must supply their own
+  placeholder.
+*/}}
+{{ $plain := .text | markdownify | plainify }}
+
+{{ $lead := $plain }}
+{{ $leadMatch := findRE `^[^.!?]*[.!?]` $plain 1 }}
+{{ with $leadMatch }}
+  {{ $lead = index . 0 }}
+{{ end }}
+{{ $lead = strings.TrimSuffix "." $lead }}
+{{ $lead = strings.TrimSuffix "!" $lead }}
+{{ $lead = strings.TrimSuffix "?" $lead }}
+{{ $lead = strings.TrimSpace $lead }}
+
+{{ if gt (len $lead) 80 }}
+  {{ $words := split $lead " " }}
+  {{ $capped := "" }}
+  {{ range $words }}
+    {{ $candidate := strings.TrimSpace (printf "%s %s" $capped .) }}
+    {{ if le (len $candidate) 80 }}
+      {{ $capped = $candidate }}
+    {{ end }}
+  {{ end }}
+  {{ $lead = printf "%s…" $capped }}
+{{ end }}
+
+{{ return $lead }}
