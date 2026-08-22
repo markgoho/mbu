@@ -24,3 +24,5 @@ github.com/markgoho/uni-theme v0.1.1-0.20260822003657-5507c49c2767 h1:61ywdee+V3
 github.com/markgoho/uni-theme v0.1.1-0.20260822003657-5507c49c2767/go.mod h1:psd0u9+1dlujyiZ+He8gk8wkYMWni9ZFwgbDQb4fp/A=
 github.com/markgoho/uni-theme v0.1.1-0.20260822015713-1ea9a077d8f1 h1:+2FVgmejz10p5Gw7LLW2lhdYxle/+dPeAYNL+/R8sUM=
 github.com/markgoho/uni-theme v0.1.1-0.20260822015713-1ea9a077d8f1/go.mod h1:psd0u9+1dlujyiZ+He8gk8wkYMWni9ZFwgbDQb4fp/A=
+github.com/markgoho/uni-theme v0.1.1-0.20260822025232-4fa0ff954b5b h1:2TUI09sRriHKBmqGWl5z1XgjGadGEzBlqLU1GMIMUVs=
+github.com/markgoho/uni-theme v0.1.1-0.20260822025232-4fa0ff954b5b/go.mod h1:psd0u9+1dlujyiZ+He8gk8wkYMWni9ZFwgbDQb4fp/A=
