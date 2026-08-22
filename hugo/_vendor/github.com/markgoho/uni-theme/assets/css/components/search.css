@@ -145,9 +145,11 @@
 }
 
 /* The rail keeps its full-bleed shape whether or not the award has art,
-   so a mixed result list holds one grid. Its height follows the
-   requirement count, so `contain` rather than `cover`: a circular emblem
-   would otherwise lose its ring to the crop on a tall card. */
+   so a mixed result list holds one grid. Award emblem art is a landscape
+   photo (mbu's badge-card/badge-hero render it at 16:9), not a circular
+   patch, so `cover` crops it the same way the rest of the site does
+   instead of letterboxing it inside the rail's requirement-count-driven
+   height. */
 .award-result__emblem {
   flex: 0 0 26%;
   max-width: 13rem;
@@ -160,8 +162,7 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  padding: var(--space-xs);
+  object-fit: cover;
 }
 
 .award-result__emblem-placeholder {

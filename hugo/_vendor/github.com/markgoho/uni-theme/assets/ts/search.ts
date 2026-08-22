@@ -65,6 +65,9 @@ if (container) {
   const emblemPlaceholder = container.dataset.searchEmblemPlaceholder ?? "";
   const zeroResults =
     container.dataset.searchZeroResults ?? "No results found";
+  const minQueryHint =
+    container.dataset.searchMinQueryHint ??
+    "Type at least 3 characters to search.";
   const noResultsEvent = container.dataset.searchEventNoResults;
   const resultClickEvent = container.dataset.searchEventResultClick;
   const pageSize = container.dataset.searchPageSize
@@ -147,21 +150,55 @@ if (container) {
   const MIN_EXCERPT_CHARS = 15;
 
   function trimExcerpt(excerpt: string, title: string): string {
-    const titleNorm = normalize(title);
-    if (!titleNorm) return excerpt;
-
     const holder = document.createElement("div");
     holder.innerHTML = excerpt;
+    trimMarkPunctuation(holder);
 
-    // Two passes at most: the title, then one repeat of it.
+    const titleNorm = normalize(title);
+    if (!titleNorm) return holder.innerHTML.trim();
+
+    // Two passes at most: the title, then one repeat of it. A chip-style
+    // requirement whose whole body is its own lead sentence has nothing
+    // left after both passes -- fall back to the single-stripped result
+    // (one surviving repeat, match and all) rather than showing nothing.
+    let fallback = holder.innerHTML;
     for (let pass = 0; pass < 2; pass++) {
       if (!normalize(holder.textContent ?? "").startsWith(titleNorm)) break;
       if (!cutLeadingTitle(holder, titleNorm)) break;
+      if (pass === 0) fallback = holder.innerHTML;
     }
 
     const rest = (holder.textContent ?? "").trim();
-    if (rest.length < MIN_EXCERPT_CHARS) return "";
-    return holder.innerHTML.trim();
+    if (rest.length >= MIN_EXCERPT_CHARS) return holder.innerHTML.trim();
+
+    // A bare title match (e.g. a grouping heading like "Hiking") leaves
+    // nothing behind but stray punctuation once its own text is cut --
+    // that isn't a highlighted match worth keeping.
+    const fallbackHolder = document.createElement("div");
+    fallbackHolder.innerHTML = fallback;
+    return fallbackHolder.querySelector("mark") ? fallback.trim() : "";
+  }
+
+  // Pagefind sometimes folds a trailing/leading punctuation character
+  // into a <mark> (e.g. "hammer," instead of "hammer"). Move that
+  // punctuation outside the mark so only the matched word is
+  // highlighted; a hyphen inside a compound word like "hammer-riveted"
+  // is untouched since it never sits at the mark's own edge.
+  function trimMarkPunctuation(holder: HTMLElement): void {
+    holder.querySelectorAll("mark").forEach(mark => {
+      const text = mark.textContent ?? "";
+      const leading = text.match(/^[^\p{L}\p{N}]+/u)?.[0] ?? "";
+      const trailing =
+        text.slice(leading.length).match(/[^\p{L}\p{N}]+$/u)?.[0] ?? "";
+      if (!leading && !trailing) return;
+
+      const core = text.slice(leading.length, text.length - trailing.length);
+      if (!core) return;
+
+      if (trailing) mark.after(document.createTextNode(trailing));
+      mark.textContent = core;
+      if (leading) mark.before(document.createTextNode(leading));
+    });
   }
 
   // Walks text nodes dropping characters until the normalized text
@@ -208,11 +245,14 @@ if (container) {
     return `<img${cls} src="${escapeHtml(src)}" alt="" loading="lazy" />`;
   }
 
-  function requirementTile(sub: PagefindSubResult, awardUrl: string): string {
+  function requirementTile(
+    sub: PagefindSubResult,
+    awardUrl: string,
+    excerpt: string,
+  ): string {
     const anchorId = sub.anchor?.id ?? "";
     const path = REQUIREMENT_PATH.test(anchorId) ? anchorId : "";
     const href = sub.url || awardUrl;
-    const excerpt = trimExcerpt(sub.excerpt ?? "", sub.title ?? "");
 
     return `
       <li class="requirement-result">
@@ -231,12 +271,30 @@ if (container) {
       sub => sub.anchor && REQUIREMENT_PATH.test(sub.anchor.id),
     );
 
+    // A grouping heading (e.g. "5" / "Hiking") that only matched on its
+    // own title, with no excerpt of its own, adds nothing once one of
+    // its child requirements is already showing as its own tile -- the
+    // match is assumed to live in the child's text too.
+    const withExcerpts = anchored.map(sub => ({
+      sub,
+      excerpt: trimExcerpt(sub.excerpt ?? "", sub.title ?? ""),
+    }));
+    const visible = withExcerpts.filter(({ sub, excerpt }) => {
+      if (excerpt) return true;
+      const id = sub.anchor?.id ?? "";
+      return !withExcerpts.some(
+        other => other.sub !== sub && (other.sub.anchor?.id ?? "").startsWith(`${id}.`),
+      );
+    });
+
     // A page-level match landing outside any requirement heading region
-    // (e.g. text before the first heading) leaves no anchored sub-result.
+    // (e.g. text before the first heading) leaves no visible sub-result.
     // The award still matched, so the panel renders with a single tile
     // pointing at the page rather than a title floating on its own.
-    const tiles = anchored.length
-      ? anchored.map(sub => requirementTile(sub, data.url)).join("")
+    const tiles = visible.length
+      ? visible
+          .map(({ sub, excerpt }) => requirementTile(sub, data.url, excerpt))
+          .join("")
       : `
       <li class="requirement-result requirement-result--page">
         <h3 class="requirement-result__title">
@@ -297,6 +355,7 @@ if (container) {
   async function runSearch(query: string): Promise<void> {
     if (query.length < MIN_QUERY_LENGTH) {
       reset();
+      if (query.length > 0) setMessage(minQueryHint);
       return;
     }
 
