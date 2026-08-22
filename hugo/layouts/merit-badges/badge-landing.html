@@ -58,16 +58,18 @@
     {{ $ctas = $ctas | append (dict "url" .RelPermalink "label" "View Requirements" "icon" "list-checks") }}
   {{ end }}
 
+  {{ $identity := partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug "demote_heading" true) }}
+  {{ $meta := partial "merit-badges/req-sidebar-meta.html" (dict "json" $json "slug" $slug) }}
+  {{ $navItems := slice (dict "label" "Overview" "url" $badge.RelPermalink "icon" "compass" "active" true) }}
+  {{ with $reqPage }}
+    {{ $navItems = $navItems | append (dict "label" "Requirements" "url" .RelPermalink "icon" "list-checks" "active" false) }}
+  {{ end }}
+  {{ if $guide }}
+    {{ $navItems = $navItems | append (dict "label" "Study Guide" "url" $guide.RelPermalink "icon" "book-open-text" "active" false) }}
+  {{ end }}
+
   <div class="req-page req-page--landing">
-    {{ partial "merit-badges/req-sidebar.html" (dict
-      "badge" $badge
-      "json" $json
-      "guide" $guide
-      "active" "overview"
-      "demote_heading" true
-      "variant" "landing"
-      )
-    }}
+    {{ partial "req-sidebar.html" (dict "nav_items" $navItems "identity" $identity "meta" $meta) }}
 
     <div class="req-main">
       {{ partial "breadcrumb.html" . }}

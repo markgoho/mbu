@@ -14,10 +14,20 @@
     {{ $badgeImageURL = partial "imagekit/url.html" (dict "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug) "tr" "w-600" "v" .v) }}
   {{ end }}
   {{ $guide := $badge.GetPage "guide" }}
+  {{ $reqPage := $badge.GetPage "requirements" }}
 
+  {{ $identity := partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug) }}
+  {{ $meta := partial "merit-badges/req-sidebar-meta.html" (dict "json" $json "slug" $slug) }}
+  {{ $navItems := slice (dict "label" "Overview" "url" $badge.RelPermalink "icon" "compass" "active" false) }}
+  {{ with $reqPage }}
+    {{ $navItems = $navItems | append (dict "label" "Requirements" "url" .RelPermalink "icon" "list-checks" "active" true) }}
+  {{ end }}
+  {{ if $guide }}
+    {{ $navItems = $navItems | append (dict "label" "Study Guide" "url" $guide.RelPermalink "icon" "book-open-text" "active" false) }}
+  {{ end }}
 
   <div class="req-page">
-    {{ partial "merit-badges/req-sidebar.html" (dict "badge" $badge "json" $json "guide" $guide "active" "requirements") }}
+    {{ partial "req-sidebar.html" (dict "nav_items" $navItems "identity" $identity "meta" $meta) }}
 
     <div class="req-main">
       {{ partial "breadcrumb.html" . }}
@@ -68,7 +78,7 @@
     containing block for position:fixed descendants -- a dock rendered
     inside it would pin to the bottom of that column, not the viewport.
     See req-dock.html for the full reasoning. */}}
-  {{ partial "merit-badges/req-dock.html" . }}
+  {{ partial "req-dock.html" . }}
 {{ end }}
 
 {{ define "footer-scripts" }}
