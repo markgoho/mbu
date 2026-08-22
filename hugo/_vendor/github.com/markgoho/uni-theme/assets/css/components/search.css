@@ -1,13 +1,10 @@
 /*
- * Search page base layer — the `#search` mount point and Pagefind's own
- * UI, themed via its `--pagefind-ui-*` custom properties plus targeted
- * overrides, pointed at the shared semantic tokens so light/dark follow
- * the rest of the theme automatically.
+ * Search page — the form and the theme's own results display.
  *
- * Result-card presentation (thumbnail, image positioning, whole-card
- * overlay, excerpt line-clamp, meta tag pills, narrow-viewport reflow)
- * is NOT here — that's consumer-specific and lives in the consumer's own
- * search.css. Paired with `partials/search/page.html` and
+ * Pagefind's Default UI is not loaded; assets/ts/search.ts renders these
+ * classes itself against the raw Pagefind API (uni-theme#14). Result-card
+ * presentation is therefore theme-owned end to end: a consumer no longer
+ * ships its own result CSS. Paired with `partials/search/page.html` and
  * `partials/search/scripts.html`.
  */
 
@@ -26,31 +23,25 @@
   font-weight: var(--font-weight-regular);
 }
 
-/* Pagefind UI overrides */
-.pagefind-ui {
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: var(--accent);
-  --pagefind-ui-text: var(--on-surface);
-  --pagefind-ui-background: var(--surface-raised);
-  --pagefind-ui-border: var(--outline);
-  --pagefind-ui-tag: var(--surface-sunken);
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: var(--radius-lg);
-  --pagefind-ui-font: inherit;
+/* The award panels reflow against the width of this column, not the
+   viewport — the search page can sit inside a narrower shell. */
+.search {
+  container-type: inline-size;
 }
 
-/* Form layout - input and clear button on same line */
-.pagefind-ui__form,
-.pagefind-ui__form form {
+/* ------------------------------------------------------------------ form */
+
+.search__form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: var(--space-2xs);
 }
 
-/* Search input with refined styling */
-.pagefind-ui__search-input {
+.search__input {
   flex: 1;
   min-width: 0;
+  font-family: inherit;
   font-size: var(--step-0);
   padding: var(--space-s) var(--space-m);
   border: 2px solid var(--outline);
@@ -60,8 +51,6 @@
   transition:
     border-color 0.2s,
     box-shadow 0.2s;
-
-  margin-inline-end: var(--space-2xs);
 
   &::placeholder {
     color: var(--on-surface-muted);
@@ -74,15 +63,14 @@
   }
 }
 
-.pagefind-ui__form .pagefind-ui__search-clear {
+.search__clear {
   font-family: var(--font-body);
   font-weight: var(--font-weight-boldest);
-  font-size: var(--step-1);
+  font-size: var(--step--1);
   color: var(--on-surface-muted);
   background: var(--surface-sunken);
   border-radius: var(--radius-md);
-  padding: var(--space-xs) var(--space-s);
-  text-decoration: none;
+  padding: var(--space-s) var(--space-m);
   border: none;
   cursor: pointer;
   transition:
@@ -90,33 +78,23 @@
     color 0.2s;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background: var(--outline-variant);
   }
 }
 
-/* Hide Pagefind's default filter UI */
-.pagefind-ui__filter-panel {
-  display: none;
-}
-
-/* Results count message */
-.pagefind-ui__message {
+.search__message {
   font-weight: var(--font-weight-semibold);
   color: var(--on-surface-muted);
   padding: var(--space-s) 0;
   font-size: var(--step--1);
+
+  &:empty {
+    display: none;
+  }
 }
 
-/* Loading state */
-.pagefind-ui__loading {
-  display: flex;
-  justify-content: center;
-  padding: var(--space-l);
-}
-
-/* Load more button */
-.pagefind-ui__button {
+.search__more {
   display: block;
   width: 100%;
   padding: var(--space-s) var(--space-m);
@@ -134,7 +112,6 @@
   &:hover {
     background: var(--surface-sunken);
     border-color: var(--accent);
-    color: var(--accent);
   }
 
   &:active {
@@ -142,7 +119,7 @@
   }
 }
 
-.dark .pagefind-ui__button {
+.dark .search__more {
   color: var(--amber);
 
   &:hover {
@@ -151,22 +128,190 @@
   }
 }
 
-/* search.ts's own fuzzy-match floor (see uni-theme#5): Pagefind's
-   ranking API can't drop a result to zero, so a query whose only
-   candidate is a weak fuzzy match still renders one. When search.ts
-   detects this, it toggles this class on #search and shows its own
-   message (a sibling <p class="pagefind-ui__message"> it manages
-   directly) in place of Pagefind's own message/results — reusing this
-   class only for consistent styling, not Pagefind's own DOM. */
-#search.search-fuzzy-suppressed .pagefind-ui__message,
-#search.search-fuzzy-suppressed .pagefind-ui__results {
-  display: none;
+/* --------------------------------------------------------- award results */
+
+/* One panel per matching Award. The panel as a whole is NOT a link: the
+   emblem rail and the award title link to the award page, and each
+   requirement tile is its own click target (uni-theme#12, variant A). */
+.award-result {
+  display: flex;
+  align-items: stretch;
+  background: var(--surface-raised);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  margin-block-end: var(--space-m);
 }
 
-.search-fuzzy-override {
-  display: none;
+/* The rail keeps its full-bleed shape whether or not the award has art,
+   so a mixed result list holds one grid. Its height follows the
+   requirement count, so `contain` rather than `cover`: a circular emblem
+   would otherwise lose its ring to the crop on a tall card. */
+.award-result__emblem {
+  flex: 0 0 26%;
+  max-width: 13rem;
+  position: relative;
+  background: var(--surface-sunken);
 }
 
-#search.search-fuzzy-suppressed + .search-fuzzy-override {
-  display: block;
+.award-result__emblem img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: var(--space-xs);
+}
+
+.award-result__emblem-placeholder {
+  opacity: 0.5;
+}
+
+.award-result__body {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-m);
+}
+
+.award-result__title {
+  margin: 0 0 var(--space-xs);
+  font-size: var(--step-1);
+  line-height: 1.2;
+
+  a {
+    color: var(--accent);
+    font-weight: var(--font-weight-boldest);
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+.dark .award-result__title a {
+  color: var(--amber);
+}
+
+.award-result__requirements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+/* ---------------------------------------------------- requirement results */
+
+.requirement-result {
+  position: relative;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xs) var(--space-s);
+  background: var(--surface);
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+
+  &:hover {
+    border-color: var(--accent);
+    background: var(--accent-wash);
+  }
+
+  &:has(a:focus-visible) {
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.requirement-result__title {
+  margin: 0 0 0.15rem;
+  font-size: var(--step-0);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.3;
+
+  a {
+    color: var(--on-surface);
+    text-decoration: none;
+
+    /* Whole tile clickable — the overlay is sized to the tile, which is
+       the nearest positioned ancestor. search.ts's result-click handler
+       delegates from the tile for the same reason. */
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.requirement-result__path {
+  color: var(--accent);
+  font-weight: var(--font-weight-boldest);
+  margin-inline-end: 0.4em;
+}
+
+.dark .requirement-result__path {
+  color: var(--amber);
+}
+
+.requirement-result__excerpt {
+  margin: 0;
+  color: var(--on-surface-muted);
+  font-size: var(--step--1);
+  line-height: 1.55;
+
+  mark {
+    background: var(--accent-wash);
+    color: inherit;
+    padding: 0 0.15em;
+    border-radius: 0.2rem;
+    font-weight: var(--font-weight-semibold);
+    box-decoration-break: clone;
+  }
+}
+
+/* Below this width the rail would cost a full band of vertical space
+   before the first requirement is visible — on a phone, where scanning
+   matters most. The emblem moves inline beside the award title instead
+   (uni-theme#14, detail 4). */
+@container (max-width: 40rem) {
+  .award-result {
+    flex-direction: column;
+  }
+
+  .award-result__emblem {
+    position: absolute;
+    inset-block-start: var(--space-m);
+    inset-inline-start: var(--space-m);
+    flex: none;
+    width: 3rem;
+    height: 3rem;
+    max-width: none;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .award-result {
+    position: relative;
+  }
+
+  .award-result__body {
+    padding-inline-start: calc(var(--space-m) + 3rem + var(--space-xs));
+  }
+
+  .award-result__title {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+  }
 }

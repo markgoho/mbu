@@ -1,31 +1,51 @@
 {{- /*
-  Renders the search page shell: breadcrumb, heading, description, and
-  the #search mount point Pagefind's UI attaches to. Paired with
-  `partials/search/scripts.html` for the footer-scripts wiring.
+  Renders the search page: breadcrumb, heading, description, the search
+  form, and the `#search-results` region the theme's own renderer fills
+  in. Paired with `partials/search/scripts.html` for the footer-scripts
+  wiring.
+
+  The results display is theme-owned end to end (uni-theme#14): Pagefind's
+  Default UI is not loaded, and `assets/ts/search.ts` renders award panels
+  and requirement tiles against the raw Pagefind API. See CONTRACT.md's
+  "Search page" section.
 
   dict
     "page"              .                                    (required)
     "description"       "Find specific requirements across…" (required)
-    "placeholder"        "Search…"                            (optional, UI copy)
-    "zeroResults"        "No results found"                   (optional, UI copy)
-    "noResultsEvent"     "my-search-no-results"                (optional, Pirsch event name)
-    "resultClickEvent"   "my-search-result-click"              (optional, Pirsch event name)
-    "pageSize"           7                                     (optional, int)
+    "awardLabel"        "Merit Badge"                        (required)
+    "emblemPlaceholder" "/img/emblem-placeholder.svg"        (optional)
+    "placeholder"       "Search…"                            (optional, UI copy)
+    "zeroResults"       "No results found"                   (optional, UI copy)
+    "noResultsEvent"    "my-search-no-results"               (optional, Pirsch event name)
+    "resultClickEvent"  "my-search-result-click"             (optional, Pirsch event name)
+    "pageSize"          7                                    (optional, int)
 
   The optional params surface as data-* attributes on #search, read by
-  assets/ts/search.ts — see CONTRACT.md's "Search page" section. The two
-  event names are only fired when present; omit either to skip that
-  analytics call entirely. `pageSize` overrides Pagefind's own built-in
-  top-level-result page size (5) -- omit to keep that default. A
-  consumer whose corpus fits comfortably under 5 page-level results most
-  of the time won't need it; one that can plausibly match more than 5
-  distinct pages on a single query (e.g. scouting-u's 7 ranks) does, so
-  a broad query doesn't hide real matches behind a "Load more" click.
+  assets/ts/search.ts. The two event names are only fired when present;
+  omit either to skip that analytics call entirely.
+
+  `awardLabel` is appended to each result's award title at render time
+  ("Hiking" -> "Hiking Merit Badge"), so the suffix is never indexed and
+  never has to be repeated in a site's content.
+
+  `emblemPlaceholder` is the image shown in an award's emblem rail when
+  Pagefind has no `image` meta for that page. Omit it and the rail
+  renders an empty tinted ground rather than a broken image.
+
+  `pageSize` is how many award panels render per page before the "Load
+  more" button appears (default 5) -- theme-implemented pagination over
+  Pagefind's raw result list, not a pass-through to Pagefind. A consumer
+  whose corpus can plausibly match more than 5 distinct pages on one
+  query (e.g. scouting-u's 7 ranks) should raise it so a broad query
+  doesn't hide real matches behind a click.
 */ -}}
 {{- $page := .page -}}
 {{- if not $page }}{{ errorf "search/page.html: \"page\" is required" }}{{ end -}}
 {{- if not (isset . "description") }}{{ errorf "search/page.html: \"description\" is required" }}{{ end -}}
+{{- if not (isset . "awardLabel") }}{{ errorf "search/page.html: \"awardLabel\" is required" }}{{ end -}}
 {{- $description := .description -}}
+{{- $awardLabel := .awardLabel -}}
+{{- $emblemPlaceholder := .emblemPlaceholder -}}
 
 {{- $placeholder := .placeholder | default "Search..." -}}
 {{- $zeroResults := .zeroResults | default "No results found" -}}
@@ -42,8 +62,13 @@
 
   <div
     id="search"
+    class="search"
+    data-search-award-label="{{ $awardLabel }}"
     data-search-placeholder="{{ $placeholder }}"
     data-search-zero-results="{{ $zeroResults }}"
+    {{- with $emblemPlaceholder }}
+    data-search-emblem-placeholder="{{ . }}"
+    {{- end }}
     {{- with $noResultsEvent }}
     data-search-event-no-results="{{ . }}"
     {{- end }}
@@ -53,5 +78,26 @@
     {{- with $pageSize }}
     data-search-page-size="{{ . }}"
     {{- end }}
-  ></div>
+  >
+    {{/* A real form so the field exists before search.ts runs; submit is
+      cancelled in JS because results are rendered live as you type. */}}
+    <form class="search__form" role="search" autocomplete="off">
+      <label class="visually-hidden" for="search-input">{{ $page.Title }}</label>
+      <input
+        type="search"
+        id="search-input"
+        class="search__input"
+        name="q"
+        placeholder="{{ $placeholder }}"
+        enterkeyhint="search"
+      />
+      <button type="button" class="search__clear" hidden>Clear</button>
+    </form>
+
+    <p class="search__message" role="status" aria-live="polite"></p>
+    {{/* container-type makes the @container rules in search.css resolve
+      against the results column rather than the viewport. */}}
+    <div class="search__results" id="search-results"></div>
+    <button type="button" class="search__more" hidden>Load more</button>
+  </div>
 </article>
