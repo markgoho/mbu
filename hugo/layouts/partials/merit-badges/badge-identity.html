@@ -1,8 +1,8 @@
 {{/* merit-badges/badge-identity.html
 
-  Shared identity header for both the requirements sidebar and the DRG
-  sidebar: duotone Phosphor emblem in a conic-gradient glow ring, category
-  eyebrow, badge title, "MERIT BADGE" micro-tag.
+  Derives merit-badge identity data (icon by slug, category eyebrow +
+  URL, badge name) and renders it via uni-theme's shared identity.html
+  partial (uni-theme#27), which owns the .badge-identity markup shape.
 
   Params (dict):
   badge          - the badge's landing Page
@@ -36,21 +36,11 @@
   {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
 {{ end }}
 
-<div class="badge-identity">
-  {{ if $iconName }}
-    <div class="badge-identity__glow-ring-wrap">
-      <div class="badge-identity__glow-ring">
-        {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-identity__icon") }}
-      </div>
-    </div>
-  {{ end }}
-  <div class="badge-identity__header-text">
-    <a href="{{ $categoryURL }}" class="badge-identity__eyebrow-category">{{ $categoryName }}</a>
-    {{ if $demoteHeading }}
-      <p class="badge-identity__title">{{ $badgeName }}</p>
-    {{ else }}
-      <h1 class="badge-identity__title">{{ $badgeName }}</h1>
-    {{ end }}
-    <span class="badge-identity__micro-tag">MERIT BADGE</span>
-  </div>
-</div>
+{{ partial "identity.html" (dict
+  "icon" $iconName
+  "eyebrow" $categoryName
+  "eyebrow_url" $categoryURL
+  "title" $badgeName
+  "demote_heading" $demoteHeading
+  "micro_tag" "MERIT BADGE"
+) }}
