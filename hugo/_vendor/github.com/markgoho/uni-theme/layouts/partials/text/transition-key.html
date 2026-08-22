@@ -1,0 +1,22 @@
+{{/* text/transition-key.html
+
+  Turns a requirement path ("3.a") into a CSS-custom-ident-safe
+  view-transition-name key ("3-a"). Dots aren't valid in a custom-ident,
+  so they become hyphens; a digit run immediately followed by a letter
+  run also gets a hyphen inserted ("3a" -> "3-a") so a depth-1 path with
+  no dot in it (a bare numeric+letter marker) still separates cleanly.
+
+  Centralizing this once matters: mbu independently reimplemented this
+  exact three-step pattern in four places (req-card.html,
+  req-child-item.html, drg-sidebar.html, badge-landing.html), and one of
+  those four copies (badge-landing.html) was missing the digit/letter
+  hyphenation step -- a latent view-transition-name mismatch between a
+  landing-page preview card and its requirements-page counterpart.
+
+  Params (dict): path - the requirement path, e.g. "3.a" or "6.beef-cattle"
+  Returns: a plain-text string safe to use in a view-transition-name.
+*/}}
+{{ $key := replace .path "." "-" }}
+{{ $key = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $key }}
+{{ $key = lower $key }}
+{{ return $key }}

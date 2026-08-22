@@ -1,0 +1,89 @@
+{{/* req-card.html
+
+  Renders one depth-1 requirement as a timeline node + card: eyebrow,
+  title, verbatim text, and its children (dispatched by req-children.html
+  per this node's own `variant`). Card chrome only ever starts here --
+  depth 1; nested requirements render via req-child-item.html instead.
+
+  The <li> carries data-guide (this requirement's own resolved
+  study-guide URL, omitted entirely when there is none) so the single
+  shared req-dock.html can point its "Study guide" link at whichever
+  requirement is currently selected, and data-content-name so deep-
+  link.ts's copy-text Pirsch event can label itself.
+
+  See text/heading-for.html for how the heading renders when this node
+  has no curated title (`node.title == ""`), and CONTRACT.md's
+  "Requirement-rendering behavior" section for the full node dict shape
+  and the deep-link.ts markup contract this partial's output must keep.
+
+  Params (dict):
+  node - a node dict.
+*/}}
+{{ $node := .node }}
+{{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}
+
+{{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path) }}
+{{ $displayTitle := $heading.display }}
+
+{{ $titleClasses := "req-card__title" }}
+{{ if $heading.hidden }}{{ $titleClasses = printf "%s visually-hidden" $titleClasses }}{{ end }}
+{{ if $heading.promoted }}{{ $titleClasses = printf "%s req-card__title--verbatim" $titleClasses }}{{ end }}
+
+<li
+  class="req-card"
+  tabindex="-1"
+  data-anchor="{{ $node.path }}"
+  data-content-name="{{ $node.content_name }}"
+  {{ with $node.guide_href }}data-guide="{{ . }}"{{ end }}>
+  <span
+    class="req-card__node"
+    aria-hidden="true"
+    data-pagefind-ignore
+    {{ if $node.transition_num }}style="view-transition-name: req-num-{{ $key }}"{{ end }}
+    ><span class="req-card__node-text">{{ $node.marker }}</span></span
+  >
+  <div class="req-card__panel">
+    <div class="req-card__header">
+      <div class="req-card__heading">
+        {{/* data-pagefind-ignore: the eyebrow renders BEFORE this card's
+          own heading, and Pagefind attributes pre-heading text to the
+          PREVIOUS requirement's region -- an unignored eyebrow leaks
+          into the wrong requirement's excerpt. */}}
+        {{ with $node.eyebrow }}
+          <p
+            class="req-card__eyebrow"
+            data-pagefind-ignore
+            style="view-transition-name: req-eyebrow-{{ $key }}"
+            >{{ . }}</p>
+        {{ end }}
+        <div class="req-card__title-row">
+          <h3
+            id="{{ $node.path }}"
+            class="{{ $titleClasses }}"
+            style="view-transition-name: req-title-{{ $key }}"
+            >{{ $displayTitle }}</h3>
+          {{ partial "req-pill.html" $node.pill }}
+        </div>
+      </div>
+    </div>
+
+    {{ if and $node.text (not $heading.promoted) }}
+      {{ partial "req-text.html" (dict "text" $node.text "class" "req-card__text" "title" $displayTitle "transition_key" ($node.text_transition_key | default $key)) }}
+    {{ end }}
+
+    {{ with $node.children }}
+      {{ partial "req-children.html" (dict "children" . "variant" ($node.variant | default "rail")) }}
+    {{ end }}
+
+    {{ if $node.resources }}
+      <div class="resources">
+        <strong>Resources:</strong>
+        <ul>
+          {{ range $node.resources }}
+            <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+</li>

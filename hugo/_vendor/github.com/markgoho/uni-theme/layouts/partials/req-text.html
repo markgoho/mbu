@@ -1,0 +1,67 @@
+{{/* req-text.html
+
+  Renders a requirement's verbatim text as prose -- markdownify runs on
+  it either way, never synthesized wording.
+
+  BSA often writes a requirement as "Label. Do the following:", where
+  the label just repeats what the heading directly above already says.
+  When the text's own leading sentence matches (or prefix-matches) the
+  heading's title -- or reads as a bare option/short label of its own --
+  that leading sentence is stripped before rendering, so the text
+  doesn't echo the heading back verbatim. Only strips when at least 10
+  characters of real text remain afterward, so a text that IS just that
+  one sentence renders unchanged rather than disappearing to nothing
+  (that all-one-sentence case is handled upstream instead -- see
+  text/heading-for.html's `promoted` case, which skips calling this
+  partial at all).
+
+  Params (dict):
+  text  - requirement text (raw markdown string), rendered verbatim
+  class - base class for the text element (e.g. "req-card__text"),
+          so shared rules (max-width, line-height, ...) apply the same
+          whether this is a card or a child body
+  title - the heading text actually shown above this text block (curated
+          or derived -- see text/heading-for.html), used only to decide
+          whether the leading sentence echoes it
+  transition_key - (optional) this element's view-transition-name key
+          (see text/transition-key.html), for a landing-page preview
+          snippet to morph into this element instead of cross-fading
+*/}}
+{{ $text := .text }}
+{{ $class := .class }}
+{{ $title := .title }}
+{{ $transitionKey := .transition_key }}
+
+{{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $text 1 }}
+{{ if $leadSentence }}
+  {{ $lead := index $leadSentence 0 }}
+  {{ $leadText := strings.TrimRight ".!?" $lead | strings.TrimSpace }}
+  {{ $leadLower := lower $leadText }}
+  {{ $titleLower := lower (strings.TrimSpace $title) }}
+
+  {{ $matchesTitle := false }}
+  {{ if $title }}
+    {{ if or (eq $leadLower $titleLower) (strings.HasPrefix $titleLower $leadLower) (strings.HasPrefix $leadLower $titleLower) }}
+      {{ $matchesTitle = true }}
+    {{ end }}
+  {{ end }}
+
+  {{ $words := split $leadText " " }}
+  {{ $firstWord := lower (index $words 0) }}
+  {{ $verbs := slice "do" "tell" "explain" "show" "describe" "list" "name" "discuss" "identify" "demonstrate" "find" "take" "make" "select" "choose" "visit" "prepare" "present" "complete" "outline" "interview" "review" "read" "go" "give" "keep" "write" "build" "create" "design" "conduct" "collect" "inspect" "develop" "plan" "render" "mount" "solder" "carve" "sew" "cook" "weld" }}
+  {{ $isVerb := in $verbs $firstWord }}
+  {{ $isOption := strings.HasPrefix $leadLower "option" }}
+  {{ $isShortLabel := and (le (len $words) 4) (not $isVerb) }}
+
+  {{ $rest := strings.TrimSpace (strings.TrimPrefix $lead $text) }}
+  {{ $rest = replaceRE `^\s*[.!?]+\s*` "" $rest }}
+
+  {{ if and (or $matchesTitle $isOption $isShortLabel) (ge (len $rest) 10) }}
+    {{ $text = $rest }}
+  {{ end }}
+{{ end }}
+
+<p
+  class="{{ $class }}"
+  {{ with $transitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
+  >{{ $text | markdownify }}</p>

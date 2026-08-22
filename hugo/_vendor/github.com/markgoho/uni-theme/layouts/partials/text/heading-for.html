@@ -1,0 +1,72 @@
+{{/* text/heading-for.html
+
+  Resolves what a requirement node's heading should say when it might
+  have no curated title -- the one decision both req-card.html and
+  req-child-item.html need, unified into one place instead of two
+  independently-drifting copies (or, before that, two sibling sites'
+  copies that disagreed).
+
+  Pagefind's Route A sub-results need the id on an actual heading
+  (h1-h6) with non-blank text, never on the wrapping <li> -- an id
+  there yields no sub-results at all. So a heading always renders, even
+  with no curated title:
+
+    title set                       -> title, shown normally.
+    title empty, text is a single,
+    short sentence (lead-sentence.html
+    captures it whole)              -> the full text, shown VISIBLY as
+                                        the heading (promoted: true) --
+                                        nothing would be left to show in
+                                        a separate text block anyway,
+                                        and deep-link.ts's copy-text
+                                        paste would otherwise double the
+                                        one sentence (title line + body
+                                        line, same sentence twice).
+    title empty, text is longer/
+    multi-sentence                  -> a derived lead sentence, meant to
+                                        render HIDDEN (hidden: true) --
+                                        real accessible name + Pagefind
+                                        title, invisible to sighted
+                                        users, who see the full text in
+                                        a separate block below instead.
+    title and text both empty
+    (a bare group stem)             -> "Requirement {path}", hidden.
+
+  Params (dict): title (optional, ""), text (optional, ""), path
+  (required, for the group-stem fallback).
+
+  Returns a dict: display (string), promoted (bool), hidden (bool).
+  Exactly one of promoted/hidden is true whenever display was derived
+  (title was empty); both are false when the caller's own title is used
+  as-is. A caller that must never promote (chips -- see req-child-
+  item.html) uses `display` but ignores `promoted`, always hidden.
+*/}}
+{{ $title := .title }}
+{{ $text := .text }}
+{{ $path := .path }}
+
+{{ $display := $title }}
+{{ $promoted := false }}
+{{ $hidden := false }}
+
+{{ if eq $title "" }}
+  {{ if ne $text "" }}
+    {{ $plain := strings.TrimSpace ($text | markdownify | plainify) }}
+    {{ $plainNorm := strings.TrimSuffix "." $plain }}
+    {{ $plainNorm = strings.TrimSuffix "!" $plainNorm }}
+    {{ $plainNorm = strings.TrimSuffix "?" $plainNorm }}
+    {{ $lead := partial "text/lead-sentence.html" (dict "text" $text) }}
+    {{ if eq $plainNorm $lead }}
+      {{ $display = $plain }}
+      {{ $promoted = true }}
+    {{ else }}
+      {{ $display = $lead }}
+      {{ $hidden = true }}
+    {{ end }}
+  {{ else }}
+    {{ $display = printf "Requirement %s" $path }}
+    {{ $hidden = true }}
+  {{ end }}
+{{ end }}
+
+{{ return (dict "display" $display "promoted" $promoted "hidden" $hidden) }}

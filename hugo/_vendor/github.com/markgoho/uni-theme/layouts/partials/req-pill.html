@@ -1,0 +1,37 @@
+{{/* req-pill.html
+
+  Renders a compact mode badge ("Do all" / "Choose N") next to a
+  requirement's title. Nil input renders nothing, so callers with no
+  concept of a mode (a rank requirement, say) can pass it through
+  unconditionally.
+
+  Params: a pill dict {type: "select"|"all", count: N (optional, "select"
+  only, default 1)}, or nil. Called with the bare value, not wrapped in
+  another dict: `partial "req-pill.html" $node.pill`.
+*/}}
+{{ $mode := . }}
+{{ if $mode }}
+  {{ $icon := "" }}
+  {{ $modeClass := "" }}
+  {{ $pillText := "" }}
+  {{ if eq $mode.type "select" }}
+    {{ $icon = "hand-pointing" }}
+    {{ $modeClass = "select" }}
+    {{ $count := int ($mode.count | default 1) }}
+    {{ $pillText = printf "Choose %d" $count }}
+  {{ else if eq $mode.type "all" }}
+    {{ $icon = "list-checks" }}
+    {{ $modeClass = "all" }}
+    {{ $pillText = "Do all" }}
+  {{ end }}
+  {{ if $pillText }}
+    {{/* data-pagefind-ignore: the pill is a UI affordance ("Do all",
+      "Choose 2"), not requirement prose. It sits between a requirement's
+      heading and its text, so Pagefind splices it into the middle of
+      that requirement's search excerpt without this. */}}
+    <span class="req-pill req-pill--{{ $modeClass }}" data-pagefind-ignore>
+      {{ partial "icon.html" (dict "name" $icon "class" "req-pill__icon") }}
+      <span>{{ $pillText }}</span>
+    </span>
+  {{ end }}
+{{ end }}

@@ -2,4 +2,4 @@ module github.com/markgoho/mbu/hugo
 
 go 1.26.5
 
-require github.com/markgoho/uni-theme v0.1.1-0.20260822041710-e7e6be3b8155 // indirect
+require github.com/markgoho/uni-theme v0.1.1-0.20260822141827-cf2b263532be // indirect

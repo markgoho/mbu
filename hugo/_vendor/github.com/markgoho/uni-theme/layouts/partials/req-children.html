@@ -1,0 +1,31 @@
+{{/* req-children.html
+
+  Renders one requirement's children in the requested variant. Pure
+  dispatch by `variant` -- deciding WHICH variant a group should use
+  (mode-driven "options", short-leaves-only "chips", else "rail") and
+  suppressing a title that isn't uniform across the whole sibling group
+  are both curation decisions made against a consumer's own data (a DRG
+  guide lookup, a subrequirement_mode field a rank has no equivalent of)
+  and stay in that consumer's own mapping layer, not here -- this
+  partial renders whatever `variant` and `title` each node already
+  carries.
+
+  Card chrome only exists at depth 1 (see req-card.html); every variant
+  here draws a rail/marker/hairline at most, never a border or a
+  background, so nesting to any depth never stacks boxes.
+
+  Params (dict):
+  children - slice of node dicts (see CONTRACT.md's "Requirement-
+             rendering behavior" section)
+  variant  - "rail" | "chips" | "options", default "rail"
+*/}}
+{{ $children := .children }}
+{{ $variant := .variant | default "rail" }}
+
+{{ if $children }}
+  <ol class="req-children req-children--{{ $variant }}">
+    {{ range $children }}
+      {{ partial "req-child-item.html" (dict "node" . "variant" $variant) }}
+    {{ end }}
+  </ol>
+{{ end }}

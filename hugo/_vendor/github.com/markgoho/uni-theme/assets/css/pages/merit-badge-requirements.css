@@ -722,6 +722,14 @@ html:not([data-js]) .req-card:has(.req-child:focus-within) > .req-card__panel {
   color: var(--on-surface);
 }
 
+/* A node with no curated title promotes its own verbatim requirement
+   text into the heading instead -- see text/heading-for.html. This
+   marks it as Scouting America's own wording rather than ours, the same
+   way the eyebrow/title split marks a curated title as ours. */
+.req-card__title--verbatim {
+  font-style: italic;
+}
+
 /* The panel is already at the measure, so a second, narrower cap here
    would only create a second ragged edge inside it. */
 .req-card__text {
@@ -1075,6 +1083,11 @@ html:not([data-js]) .req-child:has(.req-child:focus-within) {
   font-size: var(--step-0);
   font-weight: 700;
   color: var(--on-surface);
+}
+
+/* See .req-card__title--verbatim above. */
+.req-child__title--verbatim {
+  font-style: italic;
 }
 
 .req-child__text {
