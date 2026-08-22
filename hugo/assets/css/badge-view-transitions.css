@@ -1,0 +1,64 @@
+/*
+ * Cross-document view transition: badge card <-> badge hero.
+ *
+ * Opting in here lets a badge card's three named parts — band, emblem, and
+ * title — morph into their counterparts in .badge-hero when a Scout opens a
+ * badge, and back again. The names themselves are slug-derived and set
+ * inline by merit-badges/badge-card.html and merit-badges/badge-landing.html,
+ * so no script is involved: a `view-transition-name` only has to be unique
+ * within its own document, and no page renders the same badge twice.
+ *
+ * Those per-badge names can't be selected in CSS, so each pair also carries
+ * a `view-transition-class`, which is what the rules below target.
+ *
+ * The `@view-transition { navigation: auto }` opt-in itself lives in
+ * uni-theme's view-transitions.css (loaded on every page); this file only
+ * carries mbu's badge-card/badge-hero pairing, split out per #150 from the
+ * requirement-rendering pairing that moved into the theme alongside it.
+ */
+
+.badge-card__image,
+.badge-hero__emblem-col {
+  view-transition-class: mb-emblem;
+}
+
+.badge-card h2,
+.badge-hero__title {
+  view-transition-class: mb-title;
+}
+
+.badge-card__band,
+.badge-hero__eyebrow-row {
+  view-transition-class: mb-band;
+}
+
+::view-transition-group(.mb-emblem),
+::view-transition-group(.mb-title),
+::view-transition-group(.mb-band) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/*
+ * The emblem is a 16:9 card crop at one end and a tall right-hand bleed at
+ * the other. Filling the group and cropping keeps the photograph's
+ * proportions through the morph instead of squashing it.
+ */
+::view-transition-old(.mb-emblem),
+::view-transition-new(.mb-emblem) {
+  height: 100%;
+  object-fit: cover;
+  overflow: clip;
+}
+
+/*
+ * The title and band change line count and width rather than shape, so they
+ * cross-fade in place while the group animates their box.
+ */
+::view-transition-old(.mb-title),
+::view-transition-new(.mb-title),
+::view-transition-old(.mb-band),
+::view-transition-new(.mb-band) {
+  height: 100%;
+  object-fit: contain;
+}
