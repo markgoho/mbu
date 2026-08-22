@@ -348,7 +348,7 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Badge identity (shared with the DRG sidebar — see badge-identity.html) */
+/* Badge identity (shared with the DRG sidebar — see layouts/partials/identity.html) */
 /* ------------------------------------------------------------------ */
 
 .badge-identity {

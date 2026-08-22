@@ -1,0 +1,56 @@
+{{/* identity.html
+
+  Shared `.badge-identity` markup shape for the req-sidebar identity block
+  and badge/rank landing-page headers (uni-theme#27): an optional icon in
+  a glow ring, an eyebrow line, a title (<h1> or <p> depending on
+  demote_heading), and a micro-tag line. The theme owns the wrapper
+  structure; callers own domain derivation (icon lookup by slug, category
+  URL, rank level text) via their own local badge-identity.html/
+  rank-identity.html, which call this partial.
+
+  Params (dict):
+  icon           - Phosphor icon name, optional. When present, renders a
+                   duotone icon in a glow ring above the header text.
+                   Ranks have no icon, so omit entirely to collapse the
+                   glow ring.
+  eyebrow        - plain text, the eyebrow line above the title (e.g. a
+                   badge category name, or "Rank 3 of 7").
+  eyebrow_url    - string, optional. When present, the eyebrow renders as
+                   a link to this URL (e.g. the category page); otherwise
+                   it renders as plain text.
+  title          - plain text, the badge/rank name.
+  demote_heading - when true, render the title as a <p> instead of an
+                   <h1> (styling is class-based either way). Used on the
+                   landing page, where the H1 lives in the hero instead.
+  micro_tag      - plain text, the micro-tag line below the title (e.g.
+                   "MERIT BADGE", or "{program} RANK").
+*/}}
+{{ $icon := .icon }}
+{{ $eyebrow := .eyebrow }}
+{{ $eyebrowURL := .eyebrow_url }}
+{{ $title := .title }}
+{{ $demoteHeading := .demote_heading | default false }}
+{{ $microTag := .micro_tag }}
+
+<div class="badge-identity">
+  {{ with $icon }}
+    <div class="badge-identity__glow-ring-wrap">
+      <div class="badge-identity__glow-ring">
+        {{ partial "icon.html" (dict "name" . "weight" "duotone" "class" "badge-identity__icon") }}
+      </div>
+    </div>
+  {{ end }}
+  <div class="badge-identity__header-text">
+    {{ if $eyebrowURL }}
+      <a href="{{ $eyebrowURL }}" class="badge-identity__eyebrow-category">{{ $eyebrow }}</a>
+    {{ else }}
+      <span class="badge-identity__eyebrow-category">{{ $eyebrow }}</span>
+    {{ end }}
+    {{ if $demoteHeading }}
+      <p class="badge-identity__title">{{ $title }}</p>
+    {{ else }}
+      <h1 class="badge-identity__title">{{ $title }}</h1>
+    {{ end }}
+    <span class="badge-identity__micro-tag">{{ $microTag }}</span>
+  </div>
+</div>
