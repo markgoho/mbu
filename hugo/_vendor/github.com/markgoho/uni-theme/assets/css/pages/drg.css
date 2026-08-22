@@ -46,74 +46,10 @@
 /* Sidebar                                                              */
 /* ------------------------------------------------------------------ */
 
-.req-sidebar-wrap {
-  display: none;
-
-  @media (min-width: 60rem) {
-    display: block;
-    flex: 0 0 17.5rem;
-    position: sticky;
-    top: var(--space-m);
-    max-height: calc(100vh - var(--space-2xl));
-    overflow-y: auto;
-
-    /* Scrollbar stays invisible until the nav itself is hovered, so it
-       doesn't compete with the badge glow / card border at rest. */
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-
-    &:hover {
-      scrollbar-color: var(--outline-variant) transparent;
-    }
-
-    &::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: transparent;
-      border-radius: var(--radius-full);
-    }
-
-    &:hover::-webkit-scrollbar-thumb {
-      background-color: var(--outline-variant);
-    }
-  }
-}
-
-.req-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-s);
-  background: var(--surface-raised);
-  border: 1px solid var(--card-border-subtle);
-  border-radius: var(--radius-lg);
-  padding: var(--space-s);
-  box-shadow: var(--shadow-card);
-  transition:
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background-color 0.25s ease;
-
-  &:hover {
-    border-color: var(--accent-container);
-    box-shadow: var(--shadow-raised);
-  }
-}
-
-.dark .req-sidebar {
-  border-color: var(--card-border-subtle);
-  box-shadow: var(--shadow-elevated);
-}
-
-.dark .req-sidebar:hover {
-  border-color: var(--accent);
-  box-shadow: var(--shadow-elevated-hover);
-}
+/* .req-sidebar-wrap and .req-sidebar's display/sizing/scrollbar rules
+   are shared with the requirements page shell and live in
+   merit-badge-requirements.css, which every req-page-shell page loads
+   alongside this file (uni-theme#3). */
 
 /* ------------------------------------------------------------------ */
 /* Mobile navigation (collapsible, shown only when sidebar is hidden)   */

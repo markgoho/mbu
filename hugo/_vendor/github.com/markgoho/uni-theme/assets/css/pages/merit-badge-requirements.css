@@ -2,8 +2,10 @@
  * Merit Badge Requirements page — v2 redesign.
  *
  * Full-bleed two-column shell (sidebar + main content) that collapses to
- * a top bar on mobile, mirroring the req-page/req-sidebar/req-content
- * shell in css/pages/drg.css. Uses ONLY the v2 semantic tokens from
+ * a top bar on mobile. This is the canonical .req-sidebar-wrap/.req-sidebar
+ * definition for every req-page-shell page, including the DRG guide shell
+ * in css/pages/drg.css, which loads this file alongside its own (see the
+ * "Sidebar" section there). Uses ONLY the v2 semantic tokens from
  * tokens-v2.css (--surface, --on-surface, --accent, --radius-*,
  * --shadow-*, etc) plus the existing fluid --step-N type scale and
  * spacing.css tokens. This page opts into the v2 theme via
@@ -267,6 +269,11 @@
   }
 }
 
+/* .req-sidebar-wrap and .req-sidebar are shared with the DRG guide shell
+   in css/pages/drg.css, which every req-page-shell page loads alongside
+   this file -- defined once here rather than duplicated there, so the
+   two files can't cascade-fight over conflicting rules for the same
+   selector (uni-theme#3). */
 .req-sidebar-wrap {
   padding-inline: var(--space-s);
 
@@ -277,6 +284,32 @@
     max-height: calc(100vh - var(--space-2xl));
     overflow-y: auto;
     padding-inline: 0;
+
+    /* Scrollbar stays invisible until the nav itself is hovered, so it
+       doesn't compete with the badge glow / card border at rest. */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &:hover {
+      scrollbar-color: var(--outline-variant) transparent;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: var(--radius-full);
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: var(--outline-variant);
+    }
   }
 }
 
