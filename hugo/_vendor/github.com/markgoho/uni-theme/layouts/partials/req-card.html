@@ -17,12 +17,15 @@
   and the deep-link.ts markup contract this partial's output must keep.
 
   Params (dict):
-  node - a node dict.
+  node - a node dict; node.text_format ("markdown" | "html", default
+         "markdown") threads through to text/heading-for.html and
+         req-text.html -- see CONTRACT.md.
 */}}
 {{ $node := .node }}
 {{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}
 
-{{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path) }}
+{{ $textFormat := $node.text_format | default "markdown" }}
+{{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path "text_format" $textFormat) }}
 {{ $displayTitle := $heading.display }}
 
 {{ $titleClasses := "req-card__title" }}
@@ -68,7 +71,7 @@
     </div>
 
     {{ if and $node.text (not $heading.promoted) }}
-      {{ partial "req-text.html" (dict "text" $node.text "class" "req-card__text" "title" $displayTitle "transition_key" ($node.text_transition_key | default $key)) }}
+      {{ partial "req-text.html" (dict "text" $node.text "class" "req-card__text" "title" $node.title "text_format" $textFormat "transition_key" ($node.text_transition_key | default $key)) }}
     {{ end }}
 
     {{ with $node.children }}

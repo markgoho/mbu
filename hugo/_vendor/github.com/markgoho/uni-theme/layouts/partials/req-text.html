@@ -1,12 +1,18 @@
 {{/* req-text.html
 
-  Renders a requirement's verbatim text as prose -- markdownify runs on
-  it either way, never synthesized wording.
+  Renders a requirement's verbatim text as prose -- markdownify (or, for
+  text_format "html", safeHTML) runs on it either way, never synthesized
+  wording. Wrapped in a <div>, not a <p>: BSA requirement text sometimes
+  contains its own block content (a <ul> checklist, a <br>-separated
+  list), which a <p> cannot legally hold -- the HTML parser auto-closes
+  a <p> at a nested block start tag, orphaning that content as a
+  sibling instead of a child, which silently drops it from anything
+  scoped to this element (deep-link.ts's copy-text, most notably).
 
   BSA often writes a requirement as "Label. Do the following:", where
   the label just repeats what the heading directly above already says.
-  When the text's own leading sentence matches (or prefix-matches) the
-  heading's title -- or reads as a bare option/short label of its own --
+  When the text's own leading sentence matches (or prefix-matches) a
+  CURATED heading -- or reads as a bare option/short label of its own --
   that leading sentence is stripped before rendering, so the text
   doesn't echo the heading back verbatim. Only strips when at least 10
   characters of real text remain afterward, so a text that IS just that
@@ -16,13 +22,22 @@
   partial at all).
 
   Params (dict):
-  text  - requirement text (raw markdown string), rendered verbatim
+  text  - requirement text (raw markdown, or HTML -- see text_format),
+          rendered verbatim
   class - base class for the text element (e.g. "req-card__text"),
           so shared rules (max-width, line-height, ...) apply the same
           whether this is a card or a child body
-  title - the heading text actually shown above this text block (curated
-          or derived -- see text/heading-for.html), used only to decide
-          whether the leading sentence echoes it
+  title - the node's own CURATED title only ("" when the heading was
+          derived/hidden -- see text/heading-for.html), used only to
+          decide whether the leading sentence echoes an authored
+          heading. Passing a derived title here would strip that same
+          sentence out of the only place a sighted reader ever sees it
+          (the derived heading itself renders visually-hidden) -- callers
+          pass node.title, never heading-for.html's `display`.
+  text_format - (optional) "markdown" | "html", default "markdown".
+          "html" skips markdownify -- the text is already markup (e.g. a
+          consumer's own pre-sanitized upstream HTML), not source to
+          render -- and is emitted via safeHTML instead.
   transition_key - (optional) this element's view-transition-name key
           (see text/transition-key.html), for a landing-page preview
           snippet to morph into this element instead of cross-fading
@@ -30,6 +45,7 @@
 {{ $text := .text }}
 {{ $class := .class }}
 {{ $title := .title }}
+{{ $textFormat := .text_format | default "markdown" }}
 {{ $transitionKey := .transition_key }}
 
 {{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $text 1 }}
@@ -61,7 +77,7 @@
   {{ end }}
 {{ end }}
 
-<p
+<div
   class="{{ $class }}"
   {{ with $transitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
-  >{{ $text | markdownify }}</p>
+  >{{ if eq $textFormat "html" }}{{ $text | safeHTML }}{{ else }}{{ $text | markdownify }}{{ end }}</div>

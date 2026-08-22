@@ -12,15 +12,18 @@
 
   Params (dict):
   node    - a node dict; see CONTRACT.md's "Requirement-rendering
-            behavior" section.
+            behavior" section. node.text_format ("markdown" | "html",
+            default "markdown") threads through to text/heading-for.html
+            and req-text.html.
   variant - "rail" | "chips" | "options", the variant this item renders
             inside (chosen by the parent that called req-children.html).
 */}}
 {{ $node := .node }}
 {{ $variant := .variant }}
 {{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}
+{{ $textFormat := $node.text_format | default "markdown" }}
 
-{{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path) }}
+{{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path "text_format" $textFormat) }}
 {{ $displayTitle := $heading.display }}
 
 {{ $classes := printf "req-child req-child--%s" $variant }}
@@ -44,18 +47,31 @@
       the hidden-heading shape, regardless of what text/heading-for.html
       returned. */}}
     <h4 id="{{ $node.path }}" class="visually-hidden">{{ $displayTitle }}</h4>
-    <span class="req-child__marker" data-pagefind-ignore>{{ $node.marker }}</span>
+    <span
+      class="req-child__marker"
+      data-pagefind-ignore
+      {{ if $node.transition_num }}style="view-transition-name: req-num-{{ $key }}"{{ end }}
+      >{{ $node.marker }}</span>
     <span
       class="req-child__text"
       style="view-transition-name: req-text-{{ $node.text_transition_key | default $key }}"
-      >{{ $node.text | markdownify }}</span>
+      >{{ if eq $textFormat "html" }}{{ $node.text | safeHTML }}{{ else }}{{ $node.text | markdownify }}{{ end }}</span>
   {{ else }}
     {{ if eq $variant "options" }}
       {{ if $node.ring | default true }}
-        <span class="req-child__ring" aria-hidden="true" data-pagefind-ignore>{{ $node.marker }}</span>
+        <span
+          class="req-child__ring"
+          aria-hidden="true"
+          data-pagefind-ignore
+          {{ if $node.transition_num }}style="view-transition-name: req-num-{{ $key }}"{{ end }}
+          >{{ $node.marker }}</span>
       {{ end }}
     {{ else }}
-      <span class="req-child__marker" data-pagefind-ignore>{{ $node.marker }}</span>
+      <span
+        class="req-child__marker"
+        data-pagefind-ignore
+        {{ if $node.transition_num }}style="view-transition-name: req-num-{{ $key }}"{{ end }}
+        >{{ $node.marker }}</span>
     {{ end }}
 
     <div class="req-child__body">
@@ -70,7 +86,7 @@
       </div>
 
       {{ if and $node.text (not $heading.promoted) }}
-        {{ partial "req-text.html" (dict "text" $node.text "class" "req-child__text" "title" $displayTitle "transition_key" ($node.text_transition_key | default $key)) }}
+        {{ partial "req-text.html" (dict "text" $node.text "class" "req-child__text" "title" $node.title "text_format" $textFormat "transition_key" ($node.text_transition_key | default $key)) }}
       {{ end }}
 
       {{ with $node.children }}
