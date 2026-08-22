@@ -18,8 +18,8 @@
 
   Params (dict):
   node - a node dict; node.text_format ("markdown" | "html", default
-         "markdown") threads through to text/heading-for.html and
-         req-text.html -- see CONTRACT.md.
+         "markdown") is resolved once here and threads through to
+         text/heading-for.html and req-text.html -- see CONTRACT.md.
 */}}
 {{ $node := .node }}
 {{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}

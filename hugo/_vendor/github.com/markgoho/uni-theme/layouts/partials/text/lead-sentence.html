@@ -1,34 +1,30 @@
 {{/* text/lead-sentence.html
 
-  Reduces a block of markdown to its leading sentence, as a plain-text
-  string suitable for a heading or an accessible name.
+  Reduces a block of plain text to its leading sentence, suitable for a
+  heading or an accessible name.
 
-  Rendering pipeline: markdownify -> plainify -> first sentence -> cap.
-  The sentence's own terminal punctuation is dropped, since a heading
-  reads better without it. When the result is longer than 80 characters
-  it is cut on a word boundary and an ellipsis is appended, so the return
-  value is never longer than 81 characters (80 plus the ellipsis).
+  Pipeline: first sentence -> cap. The sentence's own terminal
+  punctuation is dropped, since a heading reads better without it. When
+  the result is longer than 80 characters it is cut on a word boundary
+  and an ellipsis is appended, so the return value is never longer than
+  81 characters (80 plus the ellipsis).
 
   Params (dict):
-    text        - the source markdown (or HTML, see text_format)
-    text_format - "markdown" | "html", default "markdown". "html" skips
-                  markdownify -- the text is already markup, not source
-                  to render.
-    uncapped    - bool, default false. Skips the 80-character cap, for a
-                  caller (text/heading-for.html) that needs the FULL
-                  lead sentence to compare against, capping only where
-                  the result is actually displayed.
+    text     - plain text, already resolved by text/plain-text.html.
+               heading-for.html passes the SAME resolved string into
+               both its capped and uncapped call, rather than each call
+               re-deriving plain text from raw source itself.
+    uncapped - bool, default false. Skips the 80-character cap, for a
+               caller (text/heading-for.html) that needs the FULL
+               lead sentence to compare against, capping only where
+               the result is actually displayed.
 
   Returns: a plain-text string. Empty in, empty out -- callers that need
   a non-blank result (an id-bearing heading, say) must supply their own
   placeholder.
 */}}
-{{ $textFormat := .text_format | default "markdown" }}
 {{ $uncapped := .uncapped }}
-{{ $plain := .text | plainify | htmlUnescape }}
-{{ if ne $textFormat "html" }}
-  {{ $plain = .text | markdownify | plainify | htmlUnescape }}
-{{ end }}
+{{ $plain := .text }}
 
 {{ $lead := $plain }}
 {{ $leadMatch := findRE `^[^.!?]*[.!?]` $plain 1 }}
