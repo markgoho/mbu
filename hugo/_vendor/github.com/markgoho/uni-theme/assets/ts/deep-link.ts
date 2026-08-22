@@ -129,13 +129,17 @@ function requirementText(li: HTMLElement, path: string): string {
     return body ? `${path}. ${body}` : `${path}.`;
   }
 
-  const title = textOf(
-    scope.querySelector(
-      isCard
-        ? ":scope > .req-card__header .req-card__title"
-        : ":scope > .req-child__title-row > .req-child__title",
-    ),
+  // A visually-hidden title is DERIVED from the body's own lead sentence
+  // (text/heading-for.html), not authored separately -- the body below
+  // already carries that sentence in full. Treating it like an absent
+  // title (skip the line, read the body alone) is what keeps the paste
+  // from repeating that one sentence twice.
+  const titleEl = scope.querySelector<HTMLElement>(
+    isCard
+      ? ":scope > .req-card__header .req-card__title"
+      : ":scope > .req-child__title-row > .req-child__title",
   );
+  const title = titleEl && !titleEl.classList.contains("visually-hidden") ? textOf(titleEl) : "";
   const body = textOf(scope.querySelector(":scope > .req-child__text, :scope > .req-card__text"));
 
   const lines: string[] = [];
