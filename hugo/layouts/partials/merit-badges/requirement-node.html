@@ -1,0 +1,227 @@
+{{/* merit-badges/requirement-node.html
+
+  Maps one merit-badge requirement (and its subrequirements) into
+  uni-theme's node dict, the shape req-card.html/req-child-item.html
+  render from. See uni-theme's CONTRACT.md, "The .req-card/.req-child
+  markup, theme-owned" -- the theme owns the markup, the deep-link.ts
+  selector contract, and the Pagefind non-blank-heading invariant.
+  Nothing here emits markup; this partial only translates badge data
+  and does DRG guide resolution (req-guide-lookup.html/
+  req-guide-fragment.html, which stay local per CONTRACT.md -- they are
+  content-bound lookups, not markup).
+
+  Recursion is ours, not the theme's: req-card.html renders children
+  itself, but it needs them already mapped, so this partial walks the
+  tree to build nested node dicts. The children-variant dispatch
+  (rail/chips/options) and the per-sibling-group "all titles or none"
+  title suppression are both curation decisions over THIS badge's own
+  data (subrequirement_mode, a DRG guide lookup), so they live here too,
+  one level up from each child -- see req-children.html's old comment
+  (git history) for the full reasoning; the rules themselves are
+  unchanged; the theme just never has an opinion on them
+  (CONTRACT.md: "variant is never computed inside the theme").
+
+  Params (dict):
+  req                - the requirement object (top-level or nested)
+  depth              - 1 for a top-level requirement (default)
+  index              - 1-based position; only used at depth 1, for the
+                        timeline node's number marker
+  badge_name         - badge title, for node.content_name
+  hide_resources     - suppress node.resources at this node and below
+  guide              - the guide section Page, or nil
+  preview_transition - only meaningful at depth 1: true when this
+                        requirement also appears in the overview page's
+                        "What you'll do" preview (badge-landing.html
+                        shows the first 4) -- sets node.transition_num
+                        so its number bubble carries a
+                        view-transition-name. The body text below
+                        always carries one too (via req-card.html's own
+                        default, path-derived key) regardless of
+                        preview_transition -- badge-landing.html derives
+                        its own snippet's key the same way (via
+                        candidate_path), so the two agree without this
+                        partial having to single out which descendant
+                        the preview snippet came from.
+  inherited_guide    - the nearest ancestor's own resolved guide Page,
+                        or "". A subrequirement with none of its own
+                        offers this instead -- see req-guide-fragment.html.
+  variant            - "rail" | "chips" | "options": the variant THIS
+                        node is rendered inside (chosen by the parent
+                        that's calling us for one of its children).
+                        Only meaningful at depth > 1.
+  lookup             - this node's own already-resolved
+                        req-guide-lookup.html result, precomputed by the
+                        parent so the whole sibling group's "all titles
+                        or none" rule and this node's own DRG data share
+                        one lookup call. Only meaningful at depth > 1 --
+                        a depth-1 node resolves its own.
+  show_title         - bool, whether every sibling in this node's group
+                        resolved a DRG title. Only meaningful at depth > 1.
+
+  Returns: node dict for uni-theme's req-card.html/req-child-item.html.
+*/}}
+{{ $req := .req }}
+{{ $depth := .depth | default 1 }}
+{{ $badgeName := .badge_name }}
+{{ $hideResources := .hide_resources | default false }}
+{{ $guide := .guide }}
+{{ $previewTransition := .preview_transition | default false }}
+{{ $inheritedGuide := .inherited_guide | default "" }}
+
+{{ $marker := "" }}
+{{ $eyebrow := "" }}
+{{ $title := "" }}
+{{ $guideHref := "" }}
+{{ $ring := true }}
+{{ $ownGuideForChildren := $inheritedGuide }}
+
+{{ if eq $depth 1 }}
+  {{ $marker = .index }}
+
+  {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
+  {{ $eyebrow = $lookup.eyebrow }}
+  {{ $title = $lookup.title }}
+
+  {{/* A TITLE NEVER TRAVELS UPWARD (req-guide-lookup.html): only offer
+    THIS requirement's own page/link when the resolved page actually
+    covers it -- under rule 3's prefix match a page is found for a
+    parent that has none of its own, and that page really belongs to
+    the first child, which carries it as its own guide instead. */}}
+  {{ $ownPage := cond (eq $lookup.covers true) $lookup.page "" }}
+  {{ with $ownPage }}
+    {{ $guideHref = .RelPermalink }}
+  {{ end }}
+  {{ $ownGuideForChildren = $ownPage }}
+{{ else }}
+  {{ $variant := .variant }}
+  {{ $lookup := .lookup }}
+  {{ $showTitle := .show_title }}
+
+  {{/* Every item gets a small marker built from real data -- never
+    fabricated. It's the item's own last path segment plus a trailing
+    period ("1.a" -> "a.", "5.b.1" -> "1."), regardless of depth: the
+    parent directly above already carries the rest of the path's
+    context. Named-option slugs ("beef-cattle") render bare, with no
+    period. Chips and options never show the period -- see
+    req-child-item.html's chips/ring branches, which read as words or a
+    ring label rather than a list marker. */}}
+  {{ $segments := split $req.path "." }}
+  {{ $ownSegment := index $segments (sub (len $segments) 1) }}
+  {{ $nonDigits := findRE "[^0-9]" $req.req_id }}
+  {{ $isSlug := and (gt (len $req.req_id) 1) $nonDigits }}
+  {{ $bare := cond $isSlug $req.req_id $ownSegment }}
+  {{ $withPeriod := cond $isSlug $req.req_id (printf "%s." $ownSegment) }}
+  {{ $marker = cond (in (slice "chips" "options") $variant) $bare $withPeriod }}
+
+  {{/* Roman numerals and multi-digit numbers still fit a ring; slugs
+    don't. */}}
+  {{ $ring = and (not $isSlug) (le (len $bare) 4) (not (in $bare "-")) }}
+
+  {{ $hasTitle := and $showTitle $lookup.title }}
+  {{ if $hasTitle }}
+    {{ $title = $lookup.title }}
+  {{ end }}
+
+  {{/* This item's own guide when it has one, otherwise the nearest
+    ancestor's. The study-guide URL: when this item owns its guide page
+    the page top IS the right destination; when it inherits an
+    ancestor's, aim at the heading covering this item instead, via
+    req-guide-fragment.html, falling back to the page top when nothing
+    matches. */}}
+  {{ $guidePage := or $lookup.page $inheritedGuide }}
+  {{ $ownGuideForChildren = $guidePage }}
+  {{ with $guidePage }}
+    {{ $guideHref = .RelPermalink }}
+    {{ if not $lookup.page }}
+      {{ $fragment := partial "merit-badges/req-guide-fragment.html" (dict "page" . "marker" $bare "is_slug" $isSlug) }}
+      {{ with $fragment }}
+        {{ $guideHref = printf "%s#%s" $guidePage.RelPermalink . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Dispatch this requirement's own subrequirements to one of three
+  renderings -- precedence top to bottom, first match wins:
+  1. mode.type == "select"                   -> options
+  2. every child is a leaf AND avg text < 60 -> chips
+  3. otherwise                               -> rail
+  CARD CHROME ONLY EXISTS AT DEPTH 1 (req-card.html), so this dispatch
+  runs the same way regardless of this node's own depth. */}}
+{{ $children := slice }}
+{{ $childVariant := "rail" }}
+{{ if $req.subrequirements }}
+  {{ $mode := $req.subrequirement_mode }}
+  {{ $anyChildHasChildren := false }}
+  {{ $totalLen := 0 }}
+  {{ range $req.subrequirements }}
+    {{ if .subrequirements }}
+      {{ $anyChildHasChildren = true }}
+    {{ end }}
+    {{ $totalLen = add $totalLen (len .text) }}
+  {{ end }}
+  {{ $avgLen := div (mul $totalLen 1.0) (len $req.subrequirements) }}
+
+  {{ if and $mode (eq $mode.type "select") }}
+    {{ $childVariant = "options" }}
+  {{ else if and (not $anyChildHasChildren) (lt $avgLen 60.0) }}
+    {{ $childVariant = "chips" }}
+  {{ end }}
+
+  {{/* Child titles are all-or-nothing PER GROUP -- a group with some
+    titled and some untitled items reads as broken/missing data, so
+    titles are resolved once for the whole group here and suppressed
+    for everyone unless every child resolves one. A resolved title is
+    also dropped when it merely echoes the child's own verbatim text.
+    Chips never show a title, so they skip the lookup entirely. */}}
+  {{ $childLookups := slice }}
+  {{ $allHaveTitles := ne $childVariant "chips" }}
+  {{ range $req.subrequirements }}
+    {{ $cl := dict }}
+    {{ if ne $childVariant "chips" }}
+      {{ $cl = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" .path "children" .subrequirements) }}
+      {{ $childTitle := $cl.title }}
+      {{ if $childTitle }}
+        {{ $normTitle := trim (replaceRE "[^a-z0-9]+" " " (lower $childTitle)) " " }}
+        {{ $normText := trim (replaceRE "[^a-z0-9]+" " " (lower .text)) " " }}
+        {{ if eq $normTitle $normText }}
+          {{ $cl = merge $cl (dict "title" "") }}
+        {{ end }}
+      {{ end }}
+      {{ if not $cl.title }}
+        {{ $allHaveTitles = false }}
+      {{ end }}
+    {{ end }}
+    {{ $childLookups = $childLookups | append $cl }}
+  {{ end }}
+
+  {{ range $i, $child := $req.subrequirements }}
+    {{ $childNode := partial "merit-badges/requirement-node.html" (dict
+      "req" $child
+      "depth" (add $depth 1)
+      "badge_name" $badgeName
+      "hide_resources" $hideResources
+      "guide" $guide
+      "inherited_guide" $ownGuideForChildren
+      "variant" $childVariant
+      "lookup" (index $childLookups $i)
+      "show_title" $allHaveTitles) }}
+    {{ $children = $children | append $childNode }}
+  {{ end }}
+{{ end }}
+
+{{ return (dict
+  "path" $req.path
+  "marker" $marker
+  "content_name" $badgeName
+  "title" $title
+  "text" $req.text
+  "eyebrow" $eyebrow
+  "pill" $req.subrequirement_mode
+  "guide_href" $guideHref
+  "resources" (cond $hideResources (slice) $req.resources)
+  "children" $children
+  "variant" $childVariant
+  "ring" $ring
+  "transition_num" $previewTransition
+) }}
