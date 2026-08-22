@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="content-wrapper list-container">
+    <ul>
+      {{ range .Pages.ByTitle }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
