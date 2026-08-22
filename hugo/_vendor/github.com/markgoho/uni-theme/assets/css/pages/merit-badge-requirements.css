@@ -699,8 +699,15 @@ html:not([data-js]) .req-card:has(.req-child:focus-within) > .req-card__panel {
   min-width: 0;
 }
 
+/* font-family is set explicitly, not inherited: mbu's eyebrow is a <p>
+   (inherits body's sans-serif), but scouting-u's rank cards put this
+   class on an <h3> for Pagefind's id-on-heading requirement, which
+   would otherwise inherit the global h1-h6 serif rule and render the
+   eyebrow in the wrong font depending on which element it's attached
+   to. */
 .req-card__eyebrow {
   margin: 0 0 var(--space-3xs);
+  font-family: var(--font-body);
   font-size: var(--step--1);
   font-weight: 700;
   text-transform: uppercase;
