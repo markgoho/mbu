@@ -108,12 +108,12 @@
   }}" -- Pagefind's Route A sub-result grouping needs the id on an actual
   h1-h6 with non-blank text, not on the <li> (see uni-theme#4 / this
   fix's issue). Falls back to the requirement's own leading sentence
-  (req-fallback-title.html) when no title resolves, visually hidden so
+  (uni-theme's text/lead-sentence.html) when no title resolves, visually hidden so
   sighted users see no change from today -- the text still gives the
   heading a real accessible name (options' ring is aria-hidden, so today
   it's otherwise nameless) and gives the Pagefind sub-result a distinct,
   informative title instead of a repeated "Requirement N" placeholder. */}}
-{{ $fallbackTitle := partial "merit-badges/req-fallback-title.html" (dict "text" $req.text) }}
+{{ $fallbackTitle := partial "text/lead-sentence.html" (dict "text" $req.text) }}
 {{ $displayTitle := cond $hasTitle $lookup.title $fallbackTitle }}
 
 
