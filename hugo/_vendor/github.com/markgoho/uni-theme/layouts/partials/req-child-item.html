@@ -1,0 +1,92 @@
+{{/* req-child-item.html
+
+  Renders one non-top-level requirement inside the rail/chips/options
+  variant its parent chose (see req-children.html), and recurses back
+  into req-children.html for its own children. No variant draws a border
+  or a background -- card chrome lives only on the depth-1 panel (see
+  req-card.html) -- so this nests to any depth without stacking boxes.
+
+  See text/heading-for.html for how the heading renders when this node
+  has no curated title, EXCEPT for chips, which never promote: see the
+  comment on the chips branch below.
+
+  Params (dict):
+  node    - a node dict; see CONTRACT.md's "Requirement-rendering
+            behavior" section.
+  variant - "rail" | "chips" | "options", the variant this item renders
+            inside (chosen by the parent that called req-children.html).
+*/}}
+{{ $node := .node }}
+{{ $variant := .variant }}
+{{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}
+
+{{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path) }}
+{{ $displayTitle := $heading.display }}
+
+{{ $classes := printf "req-child req-child--%s" $variant }}
+{{ if and (eq $variant "options") (not ($node.ring | default true)) }}
+  {{ $classes = printf "%s req-child--no-ring" $classes }}
+{{ end }}
+
+<li
+  class="{{ $classes }}"
+  tabindex="-1"
+  data-anchor="{{ $node.path }}"
+  data-content-name="{{ $node.content_name }}"
+  {{ with $node.guide_href }}data-guide="{{ . }}"{{ end }}>
+  {{ if eq $variant "chips" }}
+    {{/* Chips never promote -- a chip is already a short, single-
+      sentence label by construction, exactly the condition that
+      triggers promotion elsewhere, but a chip has no body wrapper: its
+      marker and text sit directly under the <li> (deep-link.ts's
+      requirementText() has a dedicated no-body-wrapper fallback for
+      this), and the chips CSS forces the text's own <p> inline. Always
+      the hidden-heading shape, regardless of what text/heading-for.html
+      returned. */}}
+    <h4 id="{{ $node.path }}" class="visually-hidden">{{ $displayTitle }}</h4>
+    <span class="req-child__marker" data-pagefind-ignore>{{ $node.marker }}</span>
+    <span
+      class="req-child__text"
+      style="view-transition-name: req-text-{{ $node.text_transition_key | default $key }}"
+      >{{ $node.text | markdownify }}</span>
+  {{ else }}
+    {{ if eq $variant "options" }}
+      {{ if $node.ring | default true }}
+        <span class="req-child__ring" aria-hidden="true" data-pagefind-ignore>{{ $node.marker }}</span>
+      {{ end }}
+    {{ else }}
+      <span class="req-child__marker" data-pagefind-ignore>{{ $node.marker }}</span>
+    {{ end }}
+
+    <div class="req-child__body">
+      <div class="req-child__title-row">
+        <h4
+          id="{{ $node.path }}"
+          class="req-child__title{{ if $heading.hidden }} visually-hidden{{ end }}{{ if $heading.promoted }} req-child__title--verbatim{{ end }}"
+          style="view-transition-name: req-title-{{ $key }}"
+          >{{ $displayTitle }}</h4
+        >
+        {{ partial "req-pill.html" $node.pill }}
+      </div>
+
+      {{ if and $node.text (not $heading.promoted) }}
+        {{ partial "req-text.html" (dict "text" $node.text "class" "req-child__text" "title" $displayTitle "transition_key" ($node.text_transition_key | default $key)) }}
+      {{ end }}
+
+      {{ with $node.children }}
+        {{ partial "req-children.html" (dict "children" . "variant" ($node.variant | default "rail")) }}
+      {{ end }}
+
+      {{ if $node.resources }}
+        <div class="resources">
+          <strong>Resources:</strong>
+          <ul>
+            {{ range $node.resources }}
+              <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</li>
