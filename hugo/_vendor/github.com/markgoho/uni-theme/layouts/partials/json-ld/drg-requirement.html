@@ -1,0 +1,33 @@
+{{- /* LearningResource schema for DRG child/requirement pages */ -}}
+{{- $badgeName := .Params.badge_name | default .CurrentSection.Params.badge_name | default .Parent.Params.badge_name -}}
+{{- $guideSection := .CurrentSection -}}
+{{- $description := "" -}}
+{{- if .Summary -}}
+  {{- $description = .Summary | plainify -}}
+{{- else if .Content -}}
+  {{- $description = .Content | plainify | truncate 200 -}}
+{{- else -}}
+  {{- $description = printf "Study guide for %s merit badge requirement %s." $badgeName (.Params.req_number | default .Title) -}}
+{{- end -}}
+{{- if gt (len $description) 250 -}}
+  {{- $description = (substr $description 0 247) | printf "%s..." -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "{{ .Title }}",
+  "description": "{{ $description | safeJS }}",
+  "url": "{{ .Permalink | absURL }}",
+  "inLanguage": "en-US",
+  "learningResourceType": "Lesson",
+  "educationalLevel": "Youth (ages 11-17)",
+  "teaches": "{{ .Title | safeJS }}",
+  "isAccessibleForFree": true,
+  "isPartOf": {
+    "@type": "LearningResource",
+    "name": "{{ $badgeName }} Merit Badge — Digital Resource Guide",
+    "url": "{{ $guideSection.Permalink | absURL }}"
+  }
+}
+</script>

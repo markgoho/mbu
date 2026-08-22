@@ -1,0 +1,88 @@
+{{- /* JSON-LD Course schema for merit badge requirements pages */ -}}
+{{- $badge := .Parent -}}
+{{- $json := index hugo.Data "merit-badges" $badge.File.ContentBaseName -}}
+{{- $reqCount := len $json.requirements -}}
+
+{{- /* Use frontmatter description or generate fallback */ -}}
+{{- $description := .Description -}}
+{{- if not $description -}}
+  {{- $description = printf "Complete all %d requirements to earn the %s merit badge through Scouting America's program." $reqCount $badge.Title -}}
+{{- end -}}
+
+{{- /* Truncate description to 250 characters */ -}}
+{{- if gt (len $description) 250 -}}
+  {{- $description = (substr $description 0 247) | printf "%s..." -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "{{ .Title }}",
+  "description": "{{ $description | safeJS }}",
+  "url": "{{ .Permalink | absURL }}",
+  "courseCode": "{{ $json.slug }}-requirements",
+  "educationalLevel": "Youth (ages 11-17)",
+  "inLanguage": "en-US",
+  "provider": {
+    "@type": "Organization",
+    "name": "Scouting America"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Blended"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "Free"
+  },
+  "assesses": "{{ $badge.Title }} skills and knowledge as defined by Scouting America requirements",
+  "educationalCredentialAwarded": "Merit Badge",
+  "isAccessibleForFree": true,{{- if $json.requirements }}
+  {{- /* Build list of meaningful requirements, skipping generic preambles */ -}}
+  {{- $meaningfulReqs := slice -}}
+  {{- range $req := $json.requirements -}}
+    {{- $reqText := $req.text | plainify | lower -}}
+    {{- /* Skip generic preambles and use subrequirements instead */ -}}
+    {{- if and (in $reqText "do the following") (gt (len $req.subrequirements) 0) -}}
+      {{- range $subreq := $req.subrequirements -}}
+        {{- $meaningfulReqs = $meaningfulReqs | append $subreq -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $meaningfulReqs = $meaningfulReqs | append $req -}}
+    {{- end -}}
+  {{- end }}
+  "hasPart": [
+    {{- range $index, $req := $json.requirements -}}
+    {{- if gt $index 0 }},{{ end }}
+    {
+      "@type": "LearningResource",
+      "position": {{ add $index 1 }},
+      "name": "{{ $req.text | plainify | truncate 60 | safeJS }}",
+      "learningResourceType": "Activity",
+      "educationalLevel": "Youth (ages 11-17)",
+      "teaches": "{{ $req.text | plainify | truncate 150 | safeJS }}"
+    }
+    {{- end }}
+  ],{{ end }}
+  "isPartOf": {
+    "@type": "Course",
+    "name": "{{ $badge.Title }}",
+    "description": "{{ $badge.Title }} through Scouting America's program.",
+    "url": "{{ $badge.Permalink | absURL }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "Scouting America"
+    }
+  }{{ if $json.pamphlet_url }},
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "name": "{{ $badge.Title }} Pamphlet",
+    "url": "{{ $json.pamphlet_url }}",
+    "encodingFormat": "application/pdf"
+  }{{ end }}{{ if $json.url }},
+  "sameAs": "{{ $json.url }}"{{ end }}
+}
+</script>

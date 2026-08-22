@@ -1,0 +1,62 @@
+{{- /* LearningResource schema for DRG index pages */ -}}
+{{- $badgePage := .Parent -}}
+{{- $badgeName := .Params.badge_name -}}
+{{- $guideNav := .Params.guide_nav -}}
+{{- $description := "" -}}
+{{- if .Summary -}}
+  {{- $description = .Summary | plainify -}}
+{{- else if .Content -}}
+  {{- $description = .Content | plainify | truncate 200 -}}
+{{- else -}}
+  {{- $description = printf "A comprehensive study guide for the %s merit badge." $badgeName -}}
+{{- end -}}
+{{- if gt (len $description) 250 -}}
+  {{- $description = (substr $description 0 247) | printf "%s..." -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "{{ $badgeName }} Merit Badge — Digital Resource Guide",
+  "description": "{{ $description | safeJS }}",
+  "url": "{{ .Permalink | absURL }}",
+  "inLanguage": "en-US",
+  "learningResourceType": "Study Guide",
+  "educationalLevel": "Youth (ages 11-17)",
+  "isAccessibleForFree": true,
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "isPartOf": {
+    "@type": "Course",
+    "name": "{{ $badgeName }} Merit Badge",
+    "description": "Learn about the {{ $badgeName }} merit badge through Scouting America's program.",
+    "url": "{{ $badgePage.Permalink | absURL }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "Scouting America"
+    }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "{{ $badgeName }} Merit Badge"
+  }{{ if $guideNav }},
+  "hasPart": [
+    {{- $position := 0 -}}
+    {{- range $guideNav -}}
+      {{- range .items -}}
+        {{- $position = add $position 1 -}}
+        {{- if gt $position 1 }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ $position }},
+      "name": "{{ .title | safeJS }}",
+      "url": "{{ .url | absURL }}"
+    }
+      {{- end -}}
+    {{- end }}
+  ]{{ end }}
+}
+</script>
