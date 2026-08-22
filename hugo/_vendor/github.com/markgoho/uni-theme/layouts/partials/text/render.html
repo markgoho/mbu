@@ -1,0 +1,27 @@
+{{/* text/render.html
+
+  Renders text as safe HTML: markdownify for markdown source, safeHTML
+  for a consumer's own pre-sanitized HTML. The one place that branch is
+  written -- req-text.html and req-child-item.html's chips variant both
+  call this instead of repeating it.
+
+  Params (dict):
+    text        - the source markdown (or HTML, see text_format)
+    text_format - "markdown" | "html" (required -- no default here;
+                  the node-dict default lives once, at req-card.html/
+                  req-child-item.html, per CONTRACT.md)
+
+  Returns: safe HTML.
+*/}}
+{{ $text := .text }}
+{{ $textFormat := .text_format }}
+{{ if not (in (slice "markdown" "html") $textFormat) }}
+  {{ errorf "text/render.html: text_format must be \"markdown\" or \"html\", got %q" $textFormat }}
+{{ end }}
+
+{{ $rendered := $text | safeHTML }}
+{{ if ne $textFormat "html" }}
+  {{ $rendered = $text | markdownify }}
+{{ end }}
+
+{{ return $rendered }}

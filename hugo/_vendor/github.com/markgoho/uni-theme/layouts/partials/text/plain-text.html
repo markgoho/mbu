@@ -1,0 +1,30 @@
+{{/* text/plain-text.html
+
+  Resolves text to a plain-text string, once, so callers that only need
+  plain text (headings, lead sentences) don't have to know about
+  text_format at all -- they take the resolved string instead of
+  re-deriving it from raw source themselves.
+
+  Params (dict):
+    text        - the source markdown (or HTML, see text_format)
+    text_format - "markdown" | "html" (required -- no default here;
+                  the node-dict default lives once, at req-card.html/
+                  req-child-item.html, per CONTRACT.md)
+
+  Returns: a plain-text string, htmlUnescape'd to undo markdownify's own
+  smart-quote entities (e.g. ' -> &rsquo;) that plainify doesn't decode
+  and raw output would otherwise double-escape.
+*/}}
+{{ $text := .text }}
+{{ $textFormat := .text_format }}
+{{ if not (in (slice "markdown" "html") $textFormat) }}
+  {{ errorf "text/plain-text.html: text_format must be \"markdown\" or \"html\", got %q" $textFormat }}
+{{ end }}
+
+{{ $plain := $text | plainify | htmlUnescape }}
+{{ if ne $textFormat "html" }}
+  {{ $plain = $text | markdownify | plainify | htmlUnescape }}
+{{ end }}
+{{ $plain = strings.TrimSpace $plain }}
+
+{{ return $plain }}

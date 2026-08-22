@@ -34,10 +34,12 @@
           sentence out of the only place a sighted reader ever sees it
           (the derived heading itself renders visually-hidden) -- callers
           pass node.title, never heading-for.html's `display`.
-  text_format - (optional) "markdown" | "html", default "markdown".
-          "html" skips markdownify -- the text is already markup (e.g. a
-          consumer's own pre-sanitized upstream HTML), not source to
-          render -- and is emitted via safeHTML instead.
+  text_format - "markdown" | "html", required. "html" skips markdownify
+          -- the text is already markup (e.g. a consumer's own pre-
+          sanitized upstream HTML), not source to render -- and is
+          emitted via safeHTML instead (see text/render.html). The
+          node-dict default lives once, at req-card.html/req-child-
+          item.html.
   transition_key - (optional) this element's view-transition-name key
           (see text/transition-key.html), for a landing-page preview
           snippet to morph into this element instead of cross-fading
@@ -45,7 +47,10 @@
 {{ $text := .text }}
 {{ $class := .class }}
 {{ $title := .title }}
-{{ $textFormat := .text_format | default "markdown" }}
+{{ $textFormat := .text_format }}
+{{ if not (in (slice "markdown" "html") $textFormat) }}
+  {{ errorf "req-text.html: text_format must be \"markdown\" or \"html\", got %q" $textFormat }}
+{{ end }}
 {{ $transitionKey := .transition_key }}
 
 {{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $text 1 }}
@@ -80,4 +85,4 @@
 <div
   class="{{ $class }}"
   {{ with $transitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
-  >{{ if eq $textFormat "html" }}{{ $text | safeHTML }}{{ else }}{{ $text | markdownify }}{{ end }}</div>
+  >{{ partial "text/render.html" (dict "text" $text "text_format" $textFormat) }}</div>

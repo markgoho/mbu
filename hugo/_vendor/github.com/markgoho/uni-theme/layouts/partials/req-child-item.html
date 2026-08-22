@@ -13,8 +13,9 @@
   Params (dict):
   node    - a node dict; see CONTRACT.md's "Requirement-rendering
             behavior" section. node.text_format ("markdown" | "html",
-            default "markdown") threads through to text/heading-for.html
-            and req-text.html.
+            default "markdown") is resolved once here and threads
+            through to text/heading-for.html, req-text.html, and
+            text/render.html (chips variant, below).
   variant - "rail" | "chips" | "options", the variant this item renders
             inside (chosen by the parent that called req-children.html).
 */}}
@@ -55,7 +56,7 @@
     <span
       class="req-child__text"
       style="view-transition-name: req-text-{{ $node.text_transition_key | default $key }}"
-      >{{ if eq $textFormat "html" }}{{ $node.text | safeHTML }}{{ else }}{{ $node.text | markdownify }}{{ end }}</span>
+      >{{ partial "text/render.html" (dict "text" $node.text "text_format" $textFormat) }}</span>
   {{ else }}
     {{ if eq $variant "options" }}
       {{ if $node.ring | default true }}
