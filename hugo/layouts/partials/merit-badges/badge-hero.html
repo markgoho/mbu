@@ -1,10 +1,14 @@
 {{/* merit-badges/badge-hero.html
 
-  Shared hero for the MB Overview page and the DRG guide landing page:
-  blurred-emblem backdrop, category pill (+ optional Eagle Required chip
-  and extra pills), a two-line display title with an italic amber second
-  line, an optional lead paragraph, CTAs, and the crisp emblem bleeding
-  off the right edge behind a gradient mask.
+  Thin domain adapter around uni-theme's shared hero.html (uni-theme#26,
+  which now owns the .badge-hero-wrap/.badge-hero markup shape this
+  partial used to render directly). Derives mbu's badge-specific eyebrow
+  (category pill + eagle chip + extra pills, via badge-hero-eyebrow.html)
+  and emblem backdrop/crisp-image markup, and supplies the `mb-*` view-
+  transition-name wiring that pairs this hero with the badge's card in
+  the grid so those parts morph rather than cross-fade on navigation
+  (see assets/css/badge-view-transitions.css) -- opt-in only, since
+  uni-theme's hero.html has no default view-transition-name.
 
   Params (dict):
   badge         - the badge landing Page (for .Resources, .Title)
@@ -42,100 +46,50 @@
   {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
 {{ end }}
 
-<div class="badge-hero-wrap">
-  <section class="badge-hero" id="badge-hero">
-    {{ with $emblemMeta }}
-      <div class="badge-hero__backdrop" aria-hidden="true">
-        {{ partial "imagekit/img.html" (dict
-          "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
-          "v" .v
-          "tr" "bl-20"
-          "maxWidth" 400
-          "width" 400
-          "height" 223
-          "alt" ""
-          "sizes" "400px"
-          "loading" "eager"
-        ) }}
-      </div>
-    {{ end }}
-    <div class="badge-hero__glow" aria-hidden="true"></div>
+{{ $eyebrow := partial "merit-badges/badge-hero-eyebrow.html" (dict
+  "category_name" $categoryName
+  "category_url" $categoryURL
+  "icon_name" $iconName
+  "eagle_required" $json.eagle_required
+  "extra_pills" $extraPills) }}
 
-    <div class="badge-hero__grid">
-      <div class="badge-hero__content">
-        {{/* The three `mb-*` names pair this hero with the badge's card
-          in the grid, so those parts morph rather than cross-fade on
-          navigation. See assets/css/badge-view-transitions.css.
-        */}}
-        <div
-          class="badge-hero__eyebrow-row"
-          style="view-transition-name: mb-band-{{ $slug }}">
-          <a href="{{ $categoryURL }}" class="badge-hero__eyebrow">
-            {{ if $iconName }}
-              {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-hero__eyebrow-icon") }}
-            {{ end }}
-            {{ $categoryName }}
-          </a>
-          {{ if $json.eagle_required }}
-            <span class="badge-hero__eagle-chip">
-              {{ partial "icon.html" (dict "name" "medal" "class" "badge-hero__eagle-icon") }}
-              Eagle Required
-            </span>
-          {{ end }}
-          {{ range $extraPills }}
-            <span class="badge-hero__pill">
-              {{ if .icon }}
-                {{ partial "icon.html" (dict "name" .icon "class" "badge-hero__pill-icon") }}
-              {{ end }}
-              {{ .label }}
-            </span>
-          {{ end }}
-        </div>
+{{ $backdrop := "" }}
+{{ $emblem := "" }}
+{{ with $emblemMeta }}
+  {{ $backdrop = partial "imagekit/img.html" (dict
+    "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
+    "v" .v
+    "tr" "bl-20"
+    "maxWidth" 400
+    "width" 400
+    "height" 223
+    "alt" ""
+    "sizes" "400px"
+    "loading" "eager"
+  ) }}
+  {{ $emblem = partial "imagekit/img.html" (dict
+    "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
+    "v" .v
+    "maxWidth" 1600
+    "width" 1200
+    "height" 670
+    "alt" (printf "%s emblem" $badge.Title)
+    "sizes" "(max-width: 700px) 100vw, 50vw"
+    "class" "badge-hero__emblem"
+    "fetchpriority" "high"
+    "loading" "eager"
+  ) }}
+{{ end }}
 
-        <h1
-          class="badge-hero__title"
-          style="view-transition-name: mb-title-{{ $slug }}">
-          {{ $title }} <em>{{ $accentTitle }}</em>
-        </h1>
-
-        {{ with $lead }}
-          <p class="badge-hero__lead">{{ . }}</p>
-        {{ end }}
-
-        {{ if $ctas }}
-          <div class="badge-hero__ctas">
-            {{ range $ctas }}
-              <a
-                href="{{ .url }}"
-                class="button {{ if .secondary }}button-secondary{{ end }} badge-hero__cta">
-                {{ if .icon }}
-                  {{ partial "icon.html" (dict "name" .icon "class" "badge-hero__cta-icon") }}
-                {{ end }}
-                {{ .label }}
-              </a>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-
-      {{ with $emblemMeta }}
-        <div
-          class="badge-hero__emblem-col"
-          style="view-transition-name: mb-emblem-{{ $slug }}">
-          {{ partial "imagekit/img.html" (dict
-            "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
-            "v" .v
-            "maxWidth" 1600
-            "width" 1200
-            "height" 670
-            "alt" (printf "%s emblem" $badge.Title)
-            "sizes" "(max-width: 700px) 100vw, 50vw"
-            "class" "badge-hero__emblem"
-            "fetchpriority" "high"
-            "loading" "eager"
-          ) }}
-        </div>
-      {{ end }}
-    </div>
-  </section>
-</div>
+{{ partial "hero.html" (dict
+  "eyebrow" $eyebrow
+  "title" $title
+  "accent_title" $accentTitle
+  "lead" $lead
+  "ctas" $ctas
+  "backdrop" $backdrop
+  "emblem" $emblem
+  "eyebrow_transition_name" (printf "mb-band-%s" $slug)
+  "title_transition_name" (printf "mb-title-%s" $slug)
+  "emblem_transition_name" (printf "mb-emblem-%s" $slug)
+) }}

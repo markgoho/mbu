@@ -1,0 +1,37 @@
+{{/* merit-badges/badge-hero-eyebrow.html
+
+  badge-hero.html's eyebrow-row content: a category pill (with optional
+  icon), an optional "Eagle Required" chip, and any extra pills. Split
+  out so badge-hero.html can pre-render it and hand plain HTML to
+  uni-theme's shared hero.html partial (uni-theme#26).
+
+  Params (dict): category_name, category_url, icon_name (optional),
+  eagle_required (bool), extra_pills (optional slice of dicts
+  {label, icon}).
+*/}}
+{{ $categoryName := .category_name }}
+{{ $categoryURL := .category_url }}
+{{ $iconName := .icon_name }}
+{{ $eagleRequired := .eagle_required }}
+{{ $extraPills := .extra_pills }}
+
+<a href="{{ $categoryURL }}" class="badge-hero__eyebrow">
+  {{ if $iconName }}
+    {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-hero__eyebrow-icon") }}
+  {{ end }}
+  {{ $categoryName }}
+</a>
+{{ if $eagleRequired }}
+  <span class="badge-hero__eagle-chip">
+    {{ partial "icon.html" (dict "name" "medal" "class" "badge-hero__eagle-icon") }}
+    Eagle Required
+  </span>
+{{ end }}
+{{ range $extraPills }}
+  <span class="badge-hero__pill">
+    {{ if .icon }}
+      {{ partial "icon.html" (dict "name" .icon "class" "badge-hero__pill-icon") }}
+    {{ end }}
+    {{ .label }}
+  </span>
+{{ end }}
