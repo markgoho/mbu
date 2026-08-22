@@ -24,6 +24,7 @@
   {{ partial "search/page.html" (dict
     "page" .
     "description" (printf "Find specific requirements across all %d merit badges" $badgeCount)
+    "awardLabel" "Merit Badge"
     "placeholder" "Search requirements..."
     "zeroResults" "No requirements found"
     "noResultsEvent" "merit-badge-search-no-results"
