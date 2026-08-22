@@ -1,0 +1,99 @@
+{{/* req-sidebar.html
+
+  Shared shell for the requirements-page/landing-page sidebar: a desktop
+  card (badge identity or rank identity, section nav, meta) that
+  collapses to a mobile top bar. The theme owns exactly the structure;
+  callers own the content, since what belongs in the identity/meta blocks
+  differs by data shape (merit badges have an emblem, category and
+  worksheet downloads; ranks have a level and a prev/next pager).
+
+  Renders its own <aside class="req-sidebar-wrap"> around the desktop
+  card, with <nav class="req-mobile-nav-wrap"> as a SIBLING outside it --
+  callers must NOT wrap this partial's output in their own
+  .req-sidebar-wrap element. .req-sidebar-wrap has no height of its own
+  below the desktop breakpoint (the desktop card inside it is
+  display:none there), so nesting the mobile nav inside it leaves
+  .req-mobile-nav-wrap's sticky positioning almost no room to stick: it
+  hits the bottom of that ~1-line containing block a few pixels into the
+  scroll and gets carried off with the rest of the page instead of
+  staying pinned. This exact bug is why this partial was extracted here
+  instead of staying duplicated per consumer -- one copy drifted from the
+  other and lost the correct nesting.
+
+  Params (dict):
+  nav_items - slice of dicts, one per section link: {label, url, icon
+              (a phosphor icon name), active (bool)}. Rendered as both
+              the mobile <details> menu (summary = the active item's
+              icon+label) and the desktop <nav>, from the same slice, so
+              callers never duplicate the nav loop for both.
+  identity  - pre-rendered HTML (e.g. the output of capturing a call to
+              badge-identity.html, or a consumer's own identity partial)
+              for the desktop card's header block.
+  pager     - pre-rendered HTML, optional. Rendered between identity and
+              nav (e.g. a prev/next sequence pager).
+  meta      - pre-rendered HTML, optional. Rendered after nav (e.g. a
+              .req-sidebar__meta block with requirement count, links).
+*/}}
+{{ $navItems := .nav_items }}
+{{ $identity := .identity }}
+{{ $pager := .pager }}
+{{ $meta := .meta }}
+
+{{ $activeItem := dict }}
+{{ range $navItems }}
+  {{ if .active }}{{ $activeItem = . }}{{ end }}
+{{ end }}
+
+<nav class="req-mobile-nav-wrap" aria-label="Page section navigation">
+  <details class="req-mobile-nav">
+    <summary class="req-mobile-nav__toggle">
+      {{ with $activeItem.icon }}
+        {{ partial "icon.html" (dict "name" . "class" "req-mobile-nav__icon") }}
+      {{ end }}
+      <span>{{ $activeItem.label }}</span>
+      <span class="req-mobile-nav__chevron">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </summary>
+
+    <div class="req-mobile-nav__menu">
+      <ul class="req-mobile-nav__list">
+        {{ range $navItems }}
+          <li>
+            <a href="{{ .url }}" class="req-mobile-nav__item{{ if .active }} req-mobile-nav__item--active{{ end }}">
+              {{ partial "icon.html" (dict "name" .icon "class" "req-mobile-nav__item-icon") }}
+              <span class="req-mobile-nav__item-label">{{ .label }}</span>
+              {{ if .active }}
+                <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              {{ end }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+</nav>
+
+<aside class="req-sidebar-wrap">
+  <div class="req-sidebar">
+    {{ with $identity }}{{ . | safeHTML }}{{ end }}
+
+    {{ with $pager }}{{ . | safeHTML }}{{ end }}
+
+    <nav class="req-sidebar__nav" aria-label="Sections">
+      <ul>
+        {{ range $navItems }}
+          <li>
+            <a href="{{ .url }}"{{ if .active }} aria-current="page"{{ end }}>
+              {{ .label }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    {{ with $meta }}{{ . | safeHTML }}{{ end }}
+  </div>
+</aside>

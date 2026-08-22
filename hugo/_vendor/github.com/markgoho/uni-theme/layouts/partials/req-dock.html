@@ -1,0 +1,80 @@
+{{/* req-dock.html
+
+  ONE action bar for the whole /requirements/ page, fixed near the bottom
+  of the viewport, that acts on whichever requirement is currently
+  selected and names it by number. It replaces what used to be an
+  always-rendered, opacity:0 action bar on EVERY requirement (see git
+  history for the partial that used to render it, deleted alongside
+  this one's introduction).
+
+  WHY. That per-requirement bar reserved space even while invisible:
+  below a 40rem req-main container it joined normal flow at ~2.4rem, so
+  roughly a thousand subrequirements on a badge like cooking each carried
+  invisible chrome nobody was looking at -- measured at 4,032px (26%) of
+  the rendered page. A single shared bar means that space is paid for
+  once, if at all, instead of once per requirement.
+
+  This was chosen over two other prototyped approaches (see git history
+  for the throwaway variant-switcher partial this replaced, whose losing
+  variants were called "Overlay" and "Collapse") which kept
+  per-requirement action bars but tried to avoid reserving space for them
+  positionally. Both still meant up to three buttons' worth of
+  hit-testing and DOM per requirement; the dock needs exactly one set,
+  ever.
+
+  WHY THIS ISN'T PURE CSS. `.req-main` carries `container-type:
+  inline-size`, which applies layout containment, which makes it a
+  containing block for fixed-position descendants -- so a toolbar that
+  lived inside a requirement could never be promoted to a viewport-fixed
+  dock with plain CSS; it would pin to the bottom of the column instead
+  of the bottom of the screen. That containment is what forces this to be
+  one shared node rendered OUTSIDE .req-main (see the requirements page
+  layout), and a shared node is what forces "which requirement is this
+  acting on" to be scripted rather than resolved per element. deep-link.ts
+  owns that: on focusin/click of any `[data-anchor]` it points this dock
+  at the requirement by setting attributes here -- nothing here is ever
+  built, cloned, or emptied by script; only attributes move.
+
+  Real controls, authored once, so degraded (no-JS) behaviour comes free.
+  The copy-link anchor keeps the exact class the per-requirement toolbar
+  used to carry (`copy-link-btn`) and a real `href="#"`, so deep-link.ts's
+  existing click handler needs no dock-specific branch to intercept it,
+  and with JS off it's still a link -- just to nowhere useful until
+  deep-link.ts points it, which requires JS anyway to know what's
+  selected. Copy text has no non-JS equivalent (reading rendered words off
+  the page always requires script), so it's a <button>.
+
+  No params. Every consumer's markup is identical -- ids and classes are
+  the contract deep-link.ts (assets/ts/deep-link.ts) reads and writes.
+*/}}
+
+{{/* The toast shares a stack with the dock rather than being positioned
+  against the viewport on its own. Both are fixed to the bottom centre,
+  so as separate elements they simply sat on top of each other -- the
+  copy confirmation landed across the very buttons that triggered it.
+  Stacked, the gap between them is a flex gap and the overlap is not
+  something that can be reintroduced by tuning an offset.
+
+  It is also authored here rather than built by deep-link.ts on first
+  use, which is one less thing script has to construct: it now only
+  writes the message and flips an attribute. */}}
+<div class="req-dock-stack">
+  <p class="req-toast" id="req-toast" role="status" aria-live="polite"></p>
+
+  <div
+    class="req-dock"
+    id="req-dock"
+    role="group"
+    aria-label="Actions for the selected requirement">
+    <span class="req-dock__for" id="req-dock-for" aria-hidden="true"></span>
+    <a class="req-dock__btn" id="req-dock-guide" href="">
+      {{ partial "icon.html" (dict "name" "book-open-text") }}<span>Study guide</span>
+    </a>
+    <a class="req-dock__btn copy-link-btn" id="req-dock-link" href="#">
+      {{ partial "icon.html" (dict "name" "link") }}<span>Copy link</span>
+    </a>
+    <button type="button" class="req-dock__btn copy-text-btn" id="req-dock-text">
+      {{ partial "icon.html" (dict "name" "copy") }}<span>Copy text</span>
+    </button>
+  </div>
+</div>
