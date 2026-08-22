@@ -107,9 +107,16 @@
   <div class="req-card__panel">
     <div class="req-card__header">
       <div class="req-card__heading">
+        {{/* data-pagefind-ignore: the eyebrow is the DRG group label and
+          it renders BEFORE this card's own h3, so Pagefind attributes it
+          to the PREVIOUS requirement's region -- excerpts came back with
+          the next requirement's section name tacked on the end ("...and
+          insect bites or stings. Leave No Trace."). That is exactly the
+          cross-requirement bleed #162 reports (uni-theme#15). */}}
         {{ with $lookup.eyebrow }}
           <p
             class="req-card__eyebrow"
+            data-pagefind-ignore
             style="view-transition-name: req-eyebrow-{{ $cardGroupKey }}"
             >{{ . }}</p>
         {{ end }}

@@ -17,7 +17,11 @@
     {{ $pillText = "Do all" }}
   {{ end }}
   {{ if $pillText }}
-    <span class="req-pill req-pill--{{ $modeClass }}">
+    {{/* data-pagefind-ignore: the pill is a UI affordance ("Do all",
+      "Choose 2"), not requirement prose. It sits between a requirement's
+      heading and its text, so Pagefind splices it into the middle of that
+      requirement's search excerpt (uni-theme#15). */}}
+    <span class="req-pill req-pill--{{ $modeClass }}" data-pagefind-ignore>
       {{ partial "icon.html" (dict "name" $icon "class" "req-pill__icon") }}
       <span>{{ $pillText }}</span>
     </span>
