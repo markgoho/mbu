@@ -222,9 +222,9 @@
           }
         },
         {
-          "req_id": "option3",
-          "path": "6.option3",
-          "text": "c Discuss with your counselor what you learned from the discussion with the other Scout or youth."
+          "req_id": "c",
+          "path": "6.c",
+          "text": "Discuss with your counselor what you learned from the discussion with the other Scout or youth."
         }
       ],
       "subrequirement_mode": {
@@ -327,14 +327,14 @@
           }
         },
         {
-          "req_id": "option3",
-          "path": "11.option3",
-          "text": "c Give three examples of how limiting diverse input can be harmful."
+          "req_id": "c",
+          "path": "11.c",
+          "text": "Give three examples of how limiting diverse input can be harmful."
         },
         {
-          "req_id": "option4",
-          "path": "11.option4",
-          "text": "d Give three examples of how considering diverse opinions can lead to innovation and success."
+          "req_id": "d",
+          "path": "11.d",
+          "text": "Give three examples of how considering diverse opinions can lead to innovation and success."
         }
       ],
       "subrequirement_mode": {

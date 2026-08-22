@@ -191,8 +191,8 @@
       "text": "Do ONE of the following options:",
       "subrequirements": [
         {
-          "req_id": "option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with",
-          "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with",
+          "req_id": "a",
+          "path": "4.a",
           "text": "Option A—Access. . Visit TWO of the following locations and take notes about the accessibility to people with disabilities. In your notes, give examples of five things that could be done to improve upon the site and five things about the site that make it friendly to people with disabilities. Discuss your observations with your counselor.",
           "is_option": true,
           "resources": [
@@ -208,22 +208,22 @@
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.a",
+              "path": "4.a.a",
               "text": "Your school"
             },
             {
               "req_id": "b",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.b",
+              "path": "4.a.b",
               "text": "Your place of worship"
             },
             {
               "req_id": "c",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.c",
+              "path": "4.a.c",
               "text": "A Scouting event or campsite"
             },
             {
               "req_id": "d",
-              "path": "4.option-a-visit-two-of-the-following-locations-and-take-notes-about-the-accessibility-to-people-with.d",
+              "path": "4.a.d",
               "text": "A public exhibit or attraction (such as a theater, museum, or park)"
             }
           ],
@@ -233,8 +233,8 @@
           }
         },
         {
-          "req_id": "option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t",
-          "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t",
+          "req_id": "b",
+          "path": "4.b",
           "text": "Option B—Accommodation. Visit TWO of the following locations and take notes while observing features and methods that are used to accommodate people with invisible disabilities. While there, ask staff members to explain any accommodation features that may not be obvious. Note anything you think could be done to better accommodate people who have invisible disabilities. Discuss your observations with your counselor.",
           "is_option": true,
           "resources": [
@@ -246,22 +246,22 @@
           "subrequirements": [
             {
               "req_id": "a",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.a",
+              "path": "4.b.a",
               "text": "Your school"
             },
             {
               "req_id": "b",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.b",
+              "path": "4.b.b",
               "text": "Your place of worship"
             },
             {
               "req_id": "c",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.c",
+              "path": "4.b.c",
               "text": "A Scouting event or campsite"
             },
             {
               "req_id": "d",
-              "path": "4.option-b-visit-two-of-the-following-locations-and-take-notes-while-observing-features-and-methods-t.d",
+              "path": "4.b.d",
               "text": "A public exhibit or attraction (such as a theater, museum, or park)"
             }
           ],
