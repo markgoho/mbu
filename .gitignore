@@ -38,6 +38,15 @@ hugo/resources
 functions/lib
 .playwright-mcp
 
+# Local Hugo module workspace. To build against a uni-theme checkout on
+# disk, use this rather than a `replace` directive in go.mod -- a
+# committed replace names a path that exists on one machine only, and it
+# broke scouting-u's uni-theme bump workflow (scouting-u#52).
+#   cd hugo && go work init . && go work use /path/to/uni-theme
+#   HUGO_MODULE_WORKSPACE=go.work hugo --ignoreVendorPaths "github.com/markgoho/uni-theme"
+hugo/go.work
+hugo/go.work.sum
+
 
 .firebase/
 firebase-*.log
