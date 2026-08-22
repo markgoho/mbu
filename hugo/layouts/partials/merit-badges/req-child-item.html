@@ -125,7 +125,14 @@
   {{ with $guideHref }}data-guide="{{ . }}"{{ end }}>
   {{ if eq $variant "chips" }}
     <h4 id="{{ $req.path }}" class="visually-hidden">{{ $fallbackTitle }}</h4>
-    <span class="req-child__marker">{{ $bare }}</span>
+    {{/* data-pagefind-ignore: the marker is a positional label, not body
+      text, and it sits inside this requirement's own Pagefind region
+      (right after the h4 that carries the id), so without it the letter
+      leaks into the head of the excerpt AND splits the heading's two
+      copies apart, defeating search.ts's title/excerpt dedup
+      (uni-theme#15). The rail/options variants below already ignore
+      theirs. */}}
+    <span class="req-child__marker" data-pagefind-ignore>{{ $bare }}</span>
     <span
       class="req-child__text"
       style="view-transition-name: req-text-{{ $itemKey }}"
