@@ -177,22 +177,22 @@
   {{ $childLookups := slice }}
   {{ $allHaveTitles := ne $childVariant "chips" }}
   {{ range $req.subrequirements }}
-    {{ $cl := dict }}
+    {{ $childLookup := dict }}
     {{ if ne $childVariant "chips" }}
-      {{ $cl = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" .path "children" .subrequirements) }}
-      {{ $childTitle := $cl.title }}
+      {{ $childLookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" .path "children" .subrequirements) }}
+      {{ $childTitle := $childLookup.title }}
       {{ if $childTitle }}
         {{ $normTitle := trim (replaceRE "[^a-z0-9]+" " " (lower $childTitle)) " " }}
         {{ $normText := trim (replaceRE "[^a-z0-9]+" " " (lower .text)) " " }}
         {{ if eq $normTitle $normText }}
-          {{ $cl = merge $cl (dict "title" "") }}
+          {{ $childLookup = merge $childLookup (dict "title" "") }}
         {{ end }}
       {{ end }}
-      {{ if not $cl.title }}
+      {{ if not $childLookup.title }}
         {{ $allHaveTitles = false }}
       {{ end }}
     {{ end }}
-    {{ $childLookups = $childLookups | append $cl }}
+    {{ $childLookups = $childLookups | append $childLookup }}
   {{ end }}
 
   {{ range $i, $child := $req.subrequirements }}
