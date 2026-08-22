@@ -62,11 +62,20 @@
 
 .req-mobile-nav-wrap {
   display: block;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   margin-bottom: var(--space-s);
+  padding-inline: var(--space-s);
+  transition: transform 0.3s ease;
 
   @media (min-width: 60rem) {
     display: none;
   }
+}
+
+.req-mobile-nav-wrap.nav-hidden {
+  transform: translateY(-100%);
 }
 
 .req-mobile-nav {
