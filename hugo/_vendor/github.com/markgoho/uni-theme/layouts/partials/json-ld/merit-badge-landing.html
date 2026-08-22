@@ -1,0 +1,82 @@
+{{- /* JSON-LD Course schema for merit badge landing pages */ -}}
+{{- $json := index hugo.Data "merit-badges" .File.ContentBaseName -}}
+{{- $reqCount := len $json.requirements -}}
+{{- $guideSection := .GetPage "guide" -}}
+
+{{- /* Generate description from page content or fallback */ -}}
+{{- $description := "" -}}
+{{- if .Summary -}}
+  {{- $description = .Summary | plainify -}}
+{{- else if .Content -}}
+  {{- $description = .Content | plainify -}}
+{{- else -}}
+  {{- with .GetPage "requirements" -}}
+    {{- $description = .Description -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $description -}}
+  {{- $description = printf "Learn about the %s merit badge through Scouting America's program. Complete %d requirements to earn this merit badge." .Title $reqCount -}}
+{{- end -}}
+
+{{- /* Truncate description to 250 characters */ -}}
+{{- if gt (len $description) 250 -}}
+  {{- $description = (substr $description 0 247) | printf "%s..." -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "{{ .Title }}",
+  "description": "{{ $description | safeJS }}",
+  "url": "{{ .Permalink | absURL }}",
+  "courseCode": "{{ $json.slug }}",
+  "educationalLevel": "Youth (ages 11-17)",
+  "inLanguage": "en-US",
+  "availableLanguage": "en",
+  "provider": {
+    "@type": "Organization",
+    "name": "Scouting America"
+  },
+  "educationalCredentialAwarded": "Merit Badge",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "Free"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Blended"
+  },
+  "teaches": "{{ .Title }} skills and knowledge as defined by Scouting America merit badge requirements",
+  "about": {
+    "@type": "Thing",
+    "name": "{{ .Title }}"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "name": "{{ .Title }} Requirements",
+      "url": "{{ .Permalink | absURL }}requirements/"
+    }{{ with $guideSection }},
+    {
+      "@type": "LearningResource",
+      "name": "{{ $.Title }} — Digital Resource Guide",
+      "url": "{{ .Permalink | absURL }}",
+      "learningResourceType": "Study Guide"
+    }{{ end }}
+  ]{{ if $json.eagle_required }},
+  "isPartOf": {
+    "@type": "ItemList",
+    "name": "Eagle Required Merit Badges"
+  }{{ end }}{{ if $json.pamphlet_url }},
+  "associatedMedia": {
+    "@type": "MediaObject",
+    "name": "{{ .Title }} Pamphlet",
+    "url": "{{ $json.pamphlet_url }}",
+    "encodingFormat": "application/pdf"
+  }{{ end }}
+}
+</script>
