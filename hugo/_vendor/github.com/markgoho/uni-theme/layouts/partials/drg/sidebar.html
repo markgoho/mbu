@@ -1,0 +1,229 @@
+{{/* drg/sidebar.html
+
+  Sticky sidebar for DRG guide pages, generalized from
+  mbu/hugo/layouts/partials/merit-badges/drg-sidebar.html: identity
+  block, the guide's own nav groups, and a "Reference" group linking
+  back to Requirements / Print Complete Guide. Also renders the mobile
+  <details> nav variant so guide.html doesn't have to duplicate the nav
+  loop for desktop and mobile.
+
+  No site-specific lookup: `identity` arrives fully pre-resolved from
+  the calling layout (guide.html reads it off Page.Params, itself
+  written by the calling site's content/scaffold) and is passed straight
+  through to identity.html, exactly like mbu's badge-identity.html /
+  scouting-u's rank-identity.html both do already for the landing pages.
+
+  Params (dict):
+  page       - the current guide Page (used to resolve the "active" nav
+               item)
+  guide_nav  - [{group_title, items: [{title, url}]}, ...]
+  identity   - dict, passed straight to identity.html (icon, eyebrow,
+               eyebrow_url, title, demote_heading, micro_tag) -- see
+               that partial's own doc comment for the exact shape
+  req_url    - URL of the requirements page, "" if none
+  print_page - the "print complete guide" Page, nil if none
+*/}}
+{{ $page := .page }}
+{{ $guideNav := .guide_nav }}
+{{ $identity := .identity }}
+{{ $reqUrl := .req_url }}
+{{ $printPage := .print_page }}
+
+{{ $currentUrl := $page.RelPermalink }}
+
+{{ $currentReqKey := "" }}
+{{ if not $page.IsSection }}
+  {{ $reqNum := $page.Params.req_number | default "" }}
+  {{ if $reqNum }}
+    {{ $currentReqKey = replace $reqNum "." "-" }}
+    {{ $currentReqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $currentReqKey }}
+    {{ $currentReqKey = lower $currentReqKey }}
+  {{ else }}
+    {{ $reqRaw := path.Base $page.File.TranslationBaseName | replaceRE "^req" "" }}
+    {{ $currentReqKey = replace $reqRaw "." "-" }}
+    {{ $currentReqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $currentReqKey }}
+    {{ $currentReqKey = lower $currentReqKey }}
+  {{ end }}
+{{ end }}
+
+<aside class="req-sidebar-wrap">
+  <div class="req-sidebar">
+    {{ with $identity }}{{ partial "identity.html" . }}{{ end }}
+
+    {{ if $guideNav }}
+      {{ $usedDesktopKeys := slice }}
+      {{ if $currentReqKey }}
+        {{ $usedDesktopKeys = $usedDesktopKeys | append $currentReqKey }}
+      {{ end }}
+      <ul class="req-nav">
+        {{ range $guideNav }}
+          {{ if .group_title }}
+            <li class="req-nav__group-title">{{ .group_title }}</li>
+          {{ end }}
+
+          {{ range .items }}
+            {{ $isCurrent := eq .url $currentUrl }}
+            {{ $itemKey := "" }}
+            {{ if not $isCurrent }}
+              {{ $targetPage := $page.Site.GetPage .url }}
+              {{ with $targetPage }}
+                {{ if not .IsSection }}
+                  {{ $tReqNum := .Params.req_number | default "" }}
+                  {{ if $tReqNum }}
+                    {{ $itemKey = replace $tReqNum "." "-" }}
+                    {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                    {{ $itemKey = lower $itemKey }}
+                  {{ else }}
+                    {{ $tReqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
+                    {{ $itemKey = replace $tReqRaw "." "-" }}
+                    {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                    {{ $itemKey = lower $itemKey }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ if and $itemKey (not (in $usedDesktopKeys $itemKey)) }}
+                {{ $usedDesktopKeys = $usedDesktopKeys | append $itemKey }}
+              {{ else }}
+                {{ $itemKey = "" }}
+              {{ end }}
+            {{ end }}
+            <li class="req-nav__item">
+              <a
+                href="{{ .url }}"
+                class="req-nav__link {{ if $isCurrent }}
+                  req-nav__link--active
+                {{ end }}"
+                {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
+                {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+        {{ if or $reqUrl $printPage }}
+          <li class="req-nav__group-title">Reference</li>
+          {{ with $reqUrl }}
+            <li class="req-nav__item">
+              <a href="{{ . }}" class="req-nav__link req-nav__link--reference">
+                {{ partial "icon.html" (dict "name" "list-checks" "class" "req-nav__link-icon") }}
+                View Requirements
+              </a>
+            </li>
+          {{ end }}
+          {{ with $printPage }}
+            <li class="req-nav__item">
+              <a href="{{ .RelPermalink }}" class="req-nav__link req-nav__link--reference">
+                {{ partial "icon.html" (dict "name" "scroll" "class" "req-nav__link-icon") }}
+                Print Complete Guide
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</aside>
+
+{{/* Mobile-only collapsible navigation (hidden when the sidebar above is visible) */}}
+{{ if $guideNav }}
+  {{ $usedMobileKeys := slice }}
+  {{ if $currentReqKey }}
+    {{ $usedMobileKeys = $usedMobileKeys | append $currentReqKey }}
+  {{ end }}
+  <nav class="req-mobile-nav-wrap" aria-label="Guide navigation">
+    <details class="req-mobile-nav">
+      <summary class="req-mobile-nav__toggle">
+        {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__icon") }}
+        <span>Guide Navigation</span>
+        <span class="req-mobile-nav__chevron">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
+      </summary>
+      <div class="req-mobile-nav__menu">
+        <ul class="req-mobile-nav__list">
+          {{ range $guideNav }}
+            {{ if .group_title }}
+              <li class="req-mobile-nav__group">{{ .group_title }}</li>
+            {{ end }}
+            {{ range .items }}
+              {{ $isCurrent := eq .url $currentUrl }}
+              {{ $itemKey := "" }}
+              {{ if not $isCurrent }}
+                {{ $targetPage := $page.Site.GetPage .url }}
+                {{ with $targetPage }}
+                  {{ if not .IsSection }}
+                    {{ $tReqNum := .Params.req_number | default "" }}
+                    {{ if $tReqNum }}
+                      {{ $itemKey = replace $tReqNum "." "-" }}
+                      {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                      {{ $itemKey = lower $itemKey }}
+                    {{ else }}
+                      {{ $tReqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
+                      {{ $itemKey = replace $tReqRaw "." "-" }}
+                      {{ $itemKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $itemKey }}
+                      {{ $itemKey = lower $itemKey }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ if and $itemKey (not (in $usedMobileKeys $itemKey)) }}
+                  {{ $usedMobileKeys = $usedMobileKeys | append $itemKey }}
+                {{ else }}
+                  {{ $itemKey = "" }}
+                {{ end }}
+              {{ end }}
+              <li>
+                <a
+                  href="{{ .url }}"
+                  class="req-mobile-nav__link {{ if $isCurrent }}
+                    req-mobile-nav__link--active
+                  {{ end }}"
+                  {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
+                  <span>{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}</span>
+                  {{ if $isCurrent }}
+                    <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {{ end }}
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+          {{ if or $reqUrl $printPage }}
+            <li class="req-mobile-nav__group">Reference</li>
+            {{ with $reqUrl }}
+              <li>
+                <a href="{{ . }}" class="req-mobile-nav__link req-mobile-nav__link--reference">
+                  {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__link-icon") }}
+                  <span>View Requirements</span>
+                </a>
+              </li>
+            {{ end }}
+            {{ with $printPage }}
+              <li>
+                <a href="{{ .RelPermalink }}" class="req-mobile-nav__link req-mobile-nav__link--reference">
+                  {{ partial "icon.html" (dict "name" "scroll" "class" "req-mobile-nav__link-icon") }}
+                  <span>Print Complete Guide</span>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+  </nav>
+  <script>
+    (function() {
+      var lastScrollY = window.scrollY;
+      var nav = document.querySelector('.req-mobile-nav-wrap');
+      if (!nav) return;
+      window.addEventListener('scroll', function() {
+        var currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 80) {
+          nav.classList.add('nav-hidden');
+        } else {
+          nav.classList.remove('nav-hidden');
+        }
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    })();
+  </script>
+{{ end }}

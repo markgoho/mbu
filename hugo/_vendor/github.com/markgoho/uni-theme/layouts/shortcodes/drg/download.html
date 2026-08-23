@@ -1,0 +1,15 @@
+{{ $isPrintable := eq (.Get "type") "printable" }}
+{{ $url := .Get "url" }}
+<a
+  href="{{ $url }}"
+  class="req-download"
+  {{ if not $isPrintable }}download{{ end }}{{ if $isPrintable }}
+    target="_blank" rel="noopener"
+  {{ end }}>
+  {{ partial "icon.html" (dict "name" "download-simple" "class" "req-download__icon") }}
+  <span class="req-download__title">{{ .Get "title" }}</span>
+  {{ with .Get "description" }}
+    <span class="req-download__description">{{ . }}</span>
+  {{ end }}
+  <span class="req-download__print-link">Resource: {{ .Get "title" }} — {{ $url }}</span>
+</a>

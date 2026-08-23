@@ -1,4 +1,5 @@
 {{- if not .IsHome -}}
+{{- $guideLabel := site.Params.theme.guideLabel | default "Digital Resource Guide" -}}
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <ol class="breadcrumb__list">
     {{- /* Build ancestors list by walking up .Parent chain */ -}}
@@ -18,7 +19,7 @@
     <li class="breadcrumb__item">
       <a href="{{ .RelPermalink }}" class="breadcrumb__link">
         {{- if .IsHome -}}Home
-        {{- else if and (eq .Layout "guide") .IsSection -}}Digital Resource Guide
+        {{- else if and (eq .Layout "guide") .IsSection -}}{{ $guideLabel }}
         {{- else -}}{{ .Title }}
         {{- end -}}
       </a>
@@ -28,7 +29,7 @@
 
     {{- /* Current page (no link) — use short labels where parent provides context */ -}}
     <li class="breadcrumb__item breadcrumb__item--current" aria-current="page">
-      {{- if and (eq .Layout "guide") .IsSection -}}Digital Resource Guide
+      {{- if and (eq .Layout "guide") .IsSection -}}{{ $guideLabel }}
       {{- else if eq .Layout "requirements" -}}Requirements
       {{- else -}}{{ .Title }}
       {{- end -}}

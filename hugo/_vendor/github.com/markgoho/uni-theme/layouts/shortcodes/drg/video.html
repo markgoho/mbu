@@ -1,0 +1,42 @@
+{{ $url := .Get "url" }}
+{{ $isYoutube := or (in $url "youtube.com") (in $url "youtu.be") }}
+{{ $videoId := "" }}
+
+{{ if $isYoutube }}
+  {{ $vParam := findRE "v=([^&]+)" $url 1 }}
+  {{ if $vParam }}
+    {{ $videoId = index $vParam 0 | replaceRE "v=" "" }}
+  {{ else }}
+    {{ $beParam := findRE "youtu.be/([^?]+)" $url 1 }}
+    {{ if $beParam }}
+      {{ $videoId = index $beParam 0 | replaceRE "youtu.be/" "" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+<figure class="req-video">
+  {{ if and $isYoutube $videoId }}
+    <iframe
+      class="req-video__iframe"
+      src="https://www.youtube.com/embed/{{ $videoId }}"
+      title="{{ .Get "title" }}"
+      width="560"
+      height="315"
+      frameborder="0"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  {{ else }}
+    <a
+      href="{{ $url }}"
+      class="req-video__link"
+      target="_blank"
+      rel="noopener noreferrer">
+      {{ partial "icon.html" (dict "name" "video-camera" "weight" "duotone" "class" "req-video__play-icon") }}
+      <span class="req-video__title">{{ .Get "title" }}</span>
+    </a>
+  {{ end }}
+  <p class="req-video__print-link">🎬 Video: {{ .Get "title" }} — {{ $url }}</p>
+  <figcaption class="req-video__caption">{{ .Get "title" }}</figcaption>
+</figure>

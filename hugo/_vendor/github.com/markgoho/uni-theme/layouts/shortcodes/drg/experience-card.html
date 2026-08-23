@@ -1,0 +1,13 @@
+<div class="req-experience-card">
+  {{- with .Get "image" -}}
+    <img
+      src="{{ . }}"
+      alt="{{ $.Get "title" }}"
+      class="req-experience-card__image"
+      loading="lazy" />
+  {{- end -}}
+  <h3 class="req-experience-card__title">{{ .Get "title" }}</h3>
+  <div class="req-experience-card__details">
+    {{ .Get "details" | markdownify }}
+  </div>
+</div>

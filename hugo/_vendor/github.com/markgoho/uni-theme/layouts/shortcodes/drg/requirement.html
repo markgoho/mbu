@@ -1,0 +1,80 @@
+{{/* drg/requirement.html
+
+  Quotes a requirement's verbatim text inside a guide page. When this block
+  is the page's OWN requirement (number == the page's req_number -- true
+  only for the page's lead quote, never its subrequirement quotes), and the
+  official text opens with a label matching the page's title, that label is
+  stripped here: the page's <h1> (req-header__title) already shows it right
+  above, so repeating it would just echo the title back verbatim.
+
+  text_format - "markdown" (default) | "html". A source dataset's
+  requirement text is often pre-rendered HTML already (embedded <a
+  href>, <sup> footnote markers), not markdown -- running it through
+  `markdownify` is a second, unrelated goldmark pass, and without
+  `markup.goldmark.renderer.unsafe = true` in the consuming site's
+  config it silently strips those tags to `<!-- raw HTML omitted -->`.
+  Pass `text_format="html"` for such content; it renders via `safeHTML`
+  instead. Matches the node-dict `text_format` convention documented in
+  CONTRACT.md.
+*/}}
+{{ $number := .Get "number" }}
+{{ $option := .Get "option" }}
+{{ $textFormat := .Get "text_format" | default "markdown" }}
+{{ $isSub := findRE `[a-zA-Z]` $number }}
+{{ $class := cond (gt (len $isSub) 0) "req-requirement req-requirement--sub" "req-requirement" }}
+{{ $isLead := eq $number $.Page.Params.req_number }}
+
+{{ $text := $.Inner | strings.TrimSpace }}
+{{ if $isLead }}
+  {{ $title := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $.Page.Title }}
+  {{ if $title }}
+    {{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $text 1 }}
+    {{ if $leadSentence }}
+      {{ $lead := index $leadSentence 0 }}
+      {{ $leadText := strings.TrimRight ".!?" $lead | strings.TrimSpace }}
+      {{ $leadLower := lower $leadText }}
+      {{ $titleLower := lower (strings.TrimSpace $title) }}
+
+      {{ $matchesTitle := false }}
+      {{ if or (eq $leadLower $titleLower) (strings.HasPrefix $titleLower $leadLower) (strings.HasPrefix $leadLower $titleLower) }}
+        {{ $matchesTitle = true }}
+      {{ end }}
+
+      {{ $words := split $leadText " " }}
+      {{ $firstWord := lower (index $words 0) }}
+      {{ $verbs := slice "do" "tell" "explain" "show" "describe" "list" "name" "discuss" "identify" "demonstrate" "find" "take" "make" "select" "choose" "visit" "prepare" "present" "complete" "outline" "interview" "review" "read" "go" "give" "keep" "write" "build" "create" "design" "conduct" "collect" "inspect" "develop" "plan" "render" "mount" "solder" "carve" "sew" "cook" "weld" }}
+      {{ $isVerb := in $verbs $firstWord }}
+      {{ $isOption := strings.HasPrefix $leadLower "option" }}
+      {{ $isShortLabel := and (le (len $words) 4) (not $isVerb) }}
+
+      {{ $rest := strings.TrimSpace (strings.TrimPrefix $lead $text) }}
+      {{ $rest = replaceRE `^\s*[.!?]+\s*` "" $rest }}
+
+      {{ if and (or $matchesTitle $isOption $isShortLabel) (ge (len $rest) 10) }}
+        {{ $text = $rest }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $class = printf "%s req-requirement--lead" $class }}
+  {{ $.Page.Store.Set "leadRequirement" (dict "number" $number "text" $text "option" $option "text_format" $textFormat) }}
+{{ end }}
+
+{{ $reqKey := "" }}
+{{ if $isLead }}
+  {{ $reqNum := $.Page.Params.req_number | default $number }}
+  {{ if $reqNum }}
+    {{ $reqKey = replace $reqNum "." "-" }}
+    {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
+    {{ $reqKey = lower $reqKey }}
+  {{ end }}
+{{ end }}
+
+<div class="{{ $class }}">
+  {{ with $number }}
+    <span class="req-requirement__number">{{ . }}.</span>
+  {{ end }}
+  <div class="req-requirement__text" {{ with $reqKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}>
+    {{ if eq $textFormat "html" }}{{ $text | safeHTML }}{{ else }}{{ $text | markdownify }}{{ end }}
+    {{ with $option }}<strong>{{ . }}</strong>{{ end }}
+  </div>
+</div>
