@@ -16,6 +16,12 @@
   Pass `text_format="html"` for such content; it renders via `safeHTML`
   instead. Matches the node-dict `text_format` convention documented in
   CONTRACT.md.
+
+  A group-parent requirement with no narrative text of its own (only its
+  children carry text) passes empty .Inner. That's not an error -- render
+  nothing at all rather than an empty numbered quote box, and skip the
+  Page.Store write so guide.html's `.req-rail` sidebar quote doesn't render
+  an empty panel either.
 */}}
 {{ $number := .Get "number" }}
 {{ $option := .Get "option" }}
@@ -25,6 +31,7 @@
 {{ $isLead := eq $number $.Page.Params.req_number }}
 
 {{ $text := $.Inner | strings.TrimSpace }}
+{{ if $text }}
 {{ if $isLead }}
   {{ $title := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $.Page.Title }}
   {{ if $title }}
@@ -78,3 +85,4 @@
     {{ with $option }}<strong>{{ . }}</strong>{{ end }}
   </div>
 </div>
+{{ end }}
