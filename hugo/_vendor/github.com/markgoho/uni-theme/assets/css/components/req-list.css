@@ -57,6 +57,7 @@
 
 .req-list__text {
   margin-block: var(--space-3xs) 0;
+  font-family: var(--font-verbatim);
   line-height: var(--line-height-relaxed);
   color: var(--on-surface);
 }

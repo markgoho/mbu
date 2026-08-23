@@ -43,6 +43,7 @@
 
   --font-display: "Literata", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
+  --font-verbatim: "IBM Plex Mono", ui-monospace, monospace;
 
   --radius-sm: var(--border-radius-sm);
   --radius-md: var(--border-radius-md);
@@ -86,7 +87,7 @@
   --amber: var(--v2-amber);
   --amber-glow: var(--v2-amber-alpha-30);
 
-  /* --font-display / --font-body inherited from :root (global default) */
+  /* --font-display / --font-body / --font-verbatim inherited from :root (global default) */
 
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
@@ -142,7 +143,7 @@ html.theme-v2:has(#theme-toggle-checkbox:checked) {
   --amber: var(--v2-dark-amber);
   --amber-glow: var(--v2-dark-amber-alpha-30);
 
-  /* --font-display / --font-body inherited from :root (global default) */
+  /* --font-display / --font-body / --font-verbatim inherited from :root (global default) */
 
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
