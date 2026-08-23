@@ -147,104 +147,54 @@
           {{ end }}
         </div>
 
-        <div class="badge-glance card-surface">
-          <h2 class="badge-glance__heading">At a glance</h2>
-          <dl class="badge-glance__list">
-            <div class="badge-glance__row">
-              <dt>
-                {{ partial "icon.html" (dict "name" "list-checks" "class" "badge-glance__icon") }}
-                Requirements
-              </dt>
-              <dd>{{ $reqCount }}</dd>
-            </div>
-            <div class="badge-glance__row">
-              <dt>
-                {{ if $iconName }}
-                  {{ partial "icon.html" (dict "name" $iconName "weight" "duotone" "class" "badge-glance__icon") }}
-                {{ end }}
-                Category
-              </dt>
-              <dd>
-                <a href="{{ $categoryURL }}" class="badge-glance__category-link"
-                  >{{ $categoryName }}</a
-                >
-              </dd>
-            </div>
-            <div class="badge-glance__row">
-              <dt>
-                {{ partial "icon.html" (dict "name" "medal" "class" "badge-glance__icon") }}
-                Eagle Required
-              </dt>
-              <dd>
-                <span
-                  class="badge-glance__pill{{ if not $json.eagle_required }}
-                    badge-glance__pill--no
-                  {{ end }}">
-                  {{ if $json.eagle_required }}
-                    Yes
-                  {{ else }}
-                    No
-                  {{ end }}
-                </span>
-              </dd>
-            </div>
-            {{ with $json.last_updated }}
-              <div class="badge-glance__row">
-                <dt>Updated</dt>
-                <dd>{{ time . | dateFormat "January 2, 2006" }}</dd>
-              </div>
-            {{ end }}
-          </dl>
-        </div>
+        {{ $glanceRows := slice
+          (dict "icon" "list-checks" "label" "Requirements" "value" $reqCount)
+          (dict
+            "icon" $iconName
+            "icon_weight" "duotone"
+            "label" "Category"
+            "value" $categoryName
+            "value_variant" (dict "type" "link" "url" $categoryURL))
+          (dict
+            "icon" "medal"
+            "label" "Eagle Required"
+            "value" (cond $json.eagle_required "Yes" "No")
+            "value_variant" (dict "type" "pill" "negative" (not $json.eagle_required)))
+        }}
+        {{ with $json.last_updated }}
+          {{ $glanceRows = $glanceRows | append (dict "label" "Updated" "value" (time . | dateFormat "January 2, 2006")) }}
+        {{ end }}
+        {{ partial "glance-card.html" (dict "rows" $glanceRows) }}
 
-        <div class="badge-resources card-surface">
-          <h2 class="badge-resources__heading">Resources &amp; downloads</h2>
-          <ul class="badge-resources__list">
-            {{ $worksheets := index hugo.Data "worksheets" }}
-            {{ if and $worksheets (in $worksheets.slugs $slug) }}
-              <li class="hide-on-mobile">
-                <a
-                  href="/merit-badges/{{ $slug }}/{{ $slug }}-merit-badge-worksheet.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  class="badge-resources__link">
-                  {{ partial "icon.html" (dict "name" "download-simple" "class" "badge-resources__icon") }}
-                  Fillable Worksheet
-                </a>
-              </li>
-            {{ end }}
-            {{ if $json.pamphlet_url }}
-              <li>
-                <a
-                  href="{{ $json.pamphlet_url }}"
-                  target="_blank"
-                  rel="noopener"
-                  class="badge-resources__link">
-                  {{ partial "icon.html" (dict "name" "book-open-text" "class" "badge-resources__icon") }}
-                  Merit Badge Pamphlet
-                </a>
-              </li>
-            {{ end }}
-            {{ with $guidePrint }}
-              <li>
-                <a href="{{ .RelPermalink }}" class="badge-resources__link">
-                  {{ partial "icon.html" (dict "name" "scroll" "class" "badge-resources__icon") }}
-                  Print Complete Guide
-                </a>
-              </li>
-            {{ end }}
-            <li>
-              <a
-                href="{{ $json.url }}"
-                target="_blank"
-                rel="noopener"
-                class="badge-resources__link">
-                {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "badge-resources__icon") }}
-                Scouting.org
-              </a>
-            </li>
-          </ul>
-        </div>
+        {{ $resourceRows := slice }}
+        {{ $worksheets := index hugo.Data "worksheets" }}
+        {{ if and $worksheets (in $worksheets.slugs $slug) }}
+          {{ $resourceRows = $resourceRows | append (dict
+            "icon" "download-simple"
+            "label" "Fillable Worksheet"
+            "url" (printf "/merit-badges/%s/%s-merit-badge-worksheet.pdf" $slug $slug)
+            "external" true
+            "hide_on_mobile" true) }}
+        {{ end }}
+        {{ if $json.pamphlet_url }}
+          {{ $resourceRows = $resourceRows | append (dict
+            "icon" "book-open-text"
+            "label" "Merit Badge Pamphlet"
+            "url" $json.pamphlet_url
+            "external" true) }}
+        {{ end }}
+        {{ with $guidePrint }}
+          {{ $resourceRows = $resourceRows | append (dict
+            "icon" "scroll"
+            "label" "Print Complete Guide"
+            "url" .RelPermalink) }}
+        {{ end }}
+        {{ $resourceRows = $resourceRows | append (dict
+          "icon" "arrow-square-out"
+          "label" "Scouting.org"
+          "url" $json.url
+          "external" true) }}
+        {{ partial "resources-card.html" (dict "rows" $resourceRows) }}
       </div>
 
       {{ if and $reqPage (not $json.discontinued) }}
