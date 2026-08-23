@@ -1,5 +1,12 @@
-{{- /* LearningResource schema for DRG child/requirement pages */ -}}
-{{- $badgeName := .Params.badge_name | default .CurrentSection.Params.badge_name | default .Parent.Params.badge_name -}}
+{{- /* LearningResource schema for DRG child/requirement pages.
+
+  `badge_name`/"Merit Badge" is mbu's shape; a rank consumer instead sets
+  `rank_name` and `drg_noun` ("Rank"). No site-specific lookup either
+  way -- both are pre-resolved Params the calling content/scaffold
+  already wrote. */ -}}
+{{- $subjectName := .Params.badge_name | default .CurrentSection.Params.badge_name | default .Parent.Params.badge_name | default .Params.rank_name | default .CurrentSection.Params.rank_name | default .Parent.Params.rank_name -}}
+{{- $noun := .Params.drg_noun | default .CurrentSection.Params.drg_noun | default .Parent.Params.drg_noun | default "Merit Badge" -}}
+{{- $guideLabel := site.Params.theme.guideLabel | default "Digital Resource Guide" -}}
 {{- $guideSection := .CurrentSection -}}
 {{- $description := "" -}}
 {{- if .Summary -}}
@@ -7,7 +14,7 @@
 {{- else if .Content -}}
   {{- $description = .Content | plainify | truncate 200 -}}
 {{- else -}}
-  {{- $description = printf "Study guide for %s merit badge requirement %s." $badgeName (.Params.req_number | default .Title) -}}
+  {{- $description = printf "Study guide for %s %s requirement %s." $subjectName (lower $noun) (.Params.req_number | default .Title) -}}
 {{- end -}}
 {{- if gt (len $description) 250 -}}
   {{- $description = (substr $description 0 247) | printf "%s..." -}}
@@ -26,7 +33,7 @@
   "isAccessibleForFree": true,
   "isPartOf": {
     "@type": "LearningResource",
-    "name": "{{ $badgeName }} Merit Badge — Digital Resource Guide",
+    "name": "{{ $subjectName }} {{ $noun }} — {{ $guideLabel }}",
     "url": "{{ $guideSection.Permalink | absURL }}"
   }
 }

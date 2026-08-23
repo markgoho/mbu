@@ -1,0 +1,118 @@
+{{/* drg/inherited-requirement.html
+
+  Renders a child requirement whose own text is a bare topic label (e.g.
+  "Cooking on a trail stove") that only makes sense composed onto its
+  parent's operative verb ("Explain the safe use of a trail stove."). The
+  merge/grammar logic (verb detection, article insertion, sentence
+  trimming, capitalization) is a pure text transformation over two given
+  strings -- CONTRACT.md's "no site-specific lookup inside the theme"
+  rule doesn't touch it.
+
+  Unlike mbu's local copy of this shortcode (kept, unmodified, at
+  mbu/hugo/layouts/shortcodes/drg/inherited-requirement.html and still
+  winning by Hugo layout precedence for mbu's own content), this theme
+  version does NOT look up the parent's text itself via a
+  `hugo.Data "merit-badges"`/`hugo.Data "ranks"` walk -- that is exactly
+  the site-specific lookup CONTRACT.md forbids inside theme partials.
+  Instead the calling site resolves `parent_text` before invoking this
+  shortcode. For scouting-u, the Phase 3 scaffold script resolves a
+  parent's text by `path` at generation time and writes it as a literal
+  `parent_text="..."` param -- no runtime Hugo lookup at all.
+
+  Params:
+  number       - requirement number, e.g. "6.a"
+  topic        - the child's own (possibly bare) text; falls back to
+                 .Inner if omitted
+  parent_text  - REQUIRED. The parent requirement's verbatim text,
+                 pre-resolved by the calling site.
+  text_format  - "markdown" (default) | "html". See drg/requirement.html's
+                 doc comment -- pre-rendered HTML source text needs
+                 `safeHTML`, not a second `markdownify` pass.
+*/}}
+{{- $number := .Get "number" -}}
+{{- $topic := .Get "topic" | default (.Inner | strings.TrimSpace) -}}
+{{- $parentText := .Get "parent_text" | strings.TrimSpace -}}
+{{- $textFormat := .Get "text_format" | default "markdown" -}}
+
+{{- $displayText := $topic -}}
+{{- if and $parentText $topic -}}
+  {{- $actionText := $parentText -}}
+  {{- $actionText = strings.TrimSpace $actionText -}}
+  {{- $actionText = replaceRE `:\s*$` "" $actionText -}}
+  {{- $topicText := $topic -}}
+  {{- $topicStartsWithOwnAction := false -}}
+  {{- /* Keep in sync with OWN_ACTION_VERBS in scripts/verify-drg-requirements.ts --
+    a verb missing here but present there lets the verifier accept
+    inherited-requirement for an already-self-sufficient topic, and this
+    shortcode then wrongly prepends the parent's action anyway. */ -}}
+  {{- if findRE `(?i)^(obtain|explain|describe|identify|name|list|tell|discuss|show|demonstrate|construct|prepare|research|record|compare|create|define|use|conduct|revisit|complete|visit|interview|pick|select|choose|learn|help|point|tour|share|make|write|draw|locate|find|outline|plan|set|review|collect|calculate|give|state|explore|diagram|establish|follow|check|render|discover|document|think|do|observe|sketch|develop|meet)\b` $topicText -}}
+    {{- $topicStartsWithOwnAction = true -}}
+  {{- end -}}
+  {{- if findRE `(?i)^(with|after|before|using|by)\b` $topicText -}}
+    {{- $topicStartsWithOwnAction = true -}}
+  {{- end -}}
+  {{- /* A topic with an internal sentence break ("Either...name. By sight...
+    long.") is already a complete, multi-sentence instruction, not a bare
+    label -- composing it onto the parent's verb produces "Then do Either
+    by sight...". Mirrors childLooksLikeDeclarativeTeachingPrompt in
+    verify-drg-requirements.ts. A single trailing period doesn't count. */ -}}
+  {{- if findRE `\.\s+\S` $topicText -}}
+    {{- $topicStartsWithOwnAction = true -}}
+  {{- end -}}
+  {{- if and (not $topicStartsWithOwnAction) (not (findRE `^(?i)(a|an|the)\b` $topicText)) (findRE `(?i)\b(of|for)\s*$` $actionText) -}}
+    {{- if findRE `(?i)^[aeiou]` $topicText -}}
+      {{- $topicText = printf "an %s" $topicText -}}
+    {{- else if findRE `(?i)^(honest|hour|heir)` $topicText -}}
+      {{- $topicText = printf "an %s" $topicText -}}
+    {{- else if not (findRE `(?i)(sickness|injuries|allergies|burns|scalds|bites|stings|choking|fainting|hypoglycemia|seizures|drowning|heatstroke|frostbite|dehydration)$` $topicText) -}}
+      {{- $topicText = printf "a %s" $topicText -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $actionText = replaceRE `(?i)\b(for each of|each of|the) following( [a-z][a-z ]+)?\s*$` "" $actionText -}}
+  {{- $actionText = replaceRE `(?i)\bthese [a-z][a-z ]+\s*$` "" $actionText -}}
+  {{- $actionText = replaceRE `(?i)\bdo the following\s*$` "" $actionText -}}
+  {{- $actionText = strings.TrimSpace $actionText -}}
+  {{- $actionText = replaceRE `\s+` " " $actionText -}}
+  {{- /* Some parent requirements carry a narrative preamble before the
+    actual instruction ("Importance of Exploration. Explain to your
+    counselor why it is important to explore. Discuss the following:").
+    Keeping the whole thing as the verb glues that preamble onto every
+    child. Only the last sentence -- the one that actually ends in "the
+    following" -- is the operative verb. */ -}}
+  {{- $actionSentences := split $actionText ". " -}}
+  {{- $actionText = index $actionSentences (sub (len $actionSentences) 1) -}}
+  {{- /* Merge only when the child is a topic label, not when it already starts with its own operative wording. */ -}}
+  {{- if or $topicStartsWithOwnAction (le (len $actionText) 6) -}}
+    {{- $displayText = $topicText -}}
+  {{- else -}}
+    {{- /* Some content files write the topic with its own trailing period.
+      The merge always appends one, so drop an existing one first to avoid
+      a double period ("...explorer.."). */ -}}
+    {{- $topicText = replaceRE `\.\s*$` "" $topicText -}}
+    {{- /* A topic that opens with a determiner or WH-word reads as its own
+      sentence ("The difference between...", "How the target is scored"),
+      capitalized accordingly. Merged after the parent's verb it's no
+      longer sentence-initial, so lower-case that opener ("Explain the
+      difference between...", "Explain how the target is scored").
+      Limited to a known word list rather than "any capitalized word" so
+      genuine proper nouns (NFAA, John Muir, ...) keep their capital. */ -}}
+    {{- $topicLeadWords := slice "The" "This" "These" "Those" "A" "An" "How" "What" "When" "Where" "Why" "Which" -}}
+    {{- $topicFirstWord := index (split $topicText " ") 0 -}}
+    {{- if in $topicLeadWords $topicFirstWord -}}
+      {{- $topicText = printf "%s%s" (lower (substr $topicText 0 1)) (substr $topicText 1) -}}
+    {{- end -}}
+    {{- $displayText = printf "%s %s." $actionText $topicText -}}
+    {{- $displayText = replaceRE `\s+\.` "." $displayText -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $isSub := findRE `[a-zA-Z]` $number -}}
+{{- $class := cond (gt (len $isSub) 0) "req-requirement req-requirement--sub" "req-requirement" -}}
+<div class="{{ $class }}">
+  {{ with $number }}
+    <span class="req-requirement__number">{{ . }}.</span>
+  {{ end }}
+  <p class="req-requirement__text">
+    {{ if eq $textFormat "html" }}{{ $displayText | safeHTML }}{{ else }}{{ $displayText | markdownify }}{{ end }}
+  </p>
+</div>

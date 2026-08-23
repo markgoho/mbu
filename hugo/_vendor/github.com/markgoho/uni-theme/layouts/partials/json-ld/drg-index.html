@@ -1,6 +1,12 @@
-{{- /* LearningResource schema for DRG index pages */ -}}
+{{- /* LearningResource schema for DRG index pages.
+
+  `badge_name`/"Merit Badge" is mbu's shape; a rank consumer instead sets
+  `rank_name` and `drg_noun` ("Rank"). No site-specific lookup either
+  way -- both are pre-resolved Params the calling content/scaffold
+  already wrote. */ -}}
 {{- $badgePage := .Parent -}}
-{{- $badgeName := .Params.badge_name -}}
+{{- $subjectName := .Params.badge_name | default .Params.rank_name -}}
+{{- $noun := .Params.drg_noun | default "Merit Badge" -}}
 {{- $guideNav := .Params.guide_nav -}}
 {{- $description := "" -}}
 {{- if .Summary -}}
@@ -8,16 +14,17 @@
 {{- else if .Content -}}
   {{- $description = .Content | plainify | truncate 200 -}}
 {{- else -}}
-  {{- $description = printf "A comprehensive study guide for the %s merit badge." $badgeName -}}
+  {{- $description = printf "A comprehensive study guide for the %s %s." $subjectName (lower $noun) -}}
 {{- end -}}
 {{- if gt (len $description) 250 -}}
   {{- $description = (substr $description 0 247) | printf "%s..." -}}
 {{- end -}}
+{{- $guideLabel := site.Params.theme.guideLabel | default "Digital Resource Guide" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "name": "{{ $badgeName }} Merit Badge — Digital Resource Guide",
+  "name": "{{ $subjectName }} {{ $noun }} — {{ $guideLabel }}",
   "description": "{{ $description | safeJS }}",
   "url": "{{ .Permalink | absURL }}",
   "inLanguage": "en-US",
@@ -31,8 +38,8 @@
   },
   "isPartOf": {
     "@type": "Course",
-    "name": "{{ $badgeName }} Merit Badge",
-    "description": "Learn about the {{ $badgeName }} merit badge through Scouting America's program.",
+    "name": "{{ $subjectName }} {{ $noun }}",
+    "description": "Learn about the {{ $subjectName }} {{ lower $noun }} through Scouting America's program.",
     "url": "{{ $badgePage.Permalink | absURL }}",
     "provider": {
       "@type": "Organization",
@@ -41,7 +48,7 @@
   },
   "about": {
     "@type": "Thing",
-    "name": "{{ $badgeName }} Merit Badge"
+    "name": "{{ $subjectName }} {{ $noun }}"
   }{{ if $guideNav }},
   "hasPart": [
     {{- $position := 0 -}}

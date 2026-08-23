@@ -1,0 +1,13 @@
+{{ $url := .Get "url" }}
+<a
+  href="{{ $url }}"
+  class="req-external-link"
+  target="_blank"
+  rel="noopener noreferrer">
+  {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "req-external-link__icon") }}
+  <span class="req-external-link__title">{{ .Get "title" }}</span>
+  {{ with .Get "description" }}
+    <span class="req-external-link__description">{{ . }}</span>
+  {{ end }}
+  <span class="req-external-link__print-link">Link: {{ .Get "title" }} — {{ $url }}</span>
+</a>

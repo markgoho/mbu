@@ -1,0 +1,151 @@
+{{/* _default/guide.html
+
+  Generic Digital Resource/Requirements Guide page shell, ported from
+  mbu/hugo/layouts/merit-badges/guide.html. Lives under `_default/`, not
+  a type-specific dir, because unlike mbu (whose own more-specific
+  layouts/merit-badges/guide.html always wins for its own content and
+  never resolves here), scouting-u's guide pages must select this layout
+  purely via `layout: guide` front matter.
+
+  No site-specific data lookup happens here (CONTRACT.md). Everything
+  this layout needs is either a Page method (.Title, .Content, .Parent,
+  .CurrentSection, .Site.GetPage -- page-graph navigation, not a
+  hugo.Data lookup) or a pre-resolved Param the calling site's content
+  (or its scaffold) already wrote into front matter:
+
+  guide_nav   - [{group_title, items: [{title, url}]}, ...], read from
+                .Params on the section page, inherited by leaf pages via
+                .CurrentSection.Params/.Parent.Params
+  identity    - dict, passed straight through to partials/drg/sidebar.html
+                (in turn passed straight to identity.html) -- see that
+                partial's own doc comment for the exact shape
+  req_number  - dotted requirement number for a leaf page, e.g. "6.a"
+  group_title - eyebrow text above a leaf page's <h1>
+  prev/next, prev_title/next_title - pagination links
+*/}}
+
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main-class" }}req-page req-page-main{{ end }}
+
+{{ define "main" }}
+  {{ $guideNav := .Params.guide_nav | default .CurrentSection.Params.guide_nav | default .Parent.Params.guide_nav }}
+  {{ $identity := .Params.identity | default .CurrentSection.Params.identity | default .Parent.Params.identity }}
+  {{ $reqUrl := "" }}
+  {{ with .CurrentSection.Parent }}
+    {{ $reqUrl = printf "%srequirements/" .RelPermalink }}
+  {{ end }}
+  {{ $printPage := .Site.GetPage (printf "%sprint/" .CurrentSection.RelPermalink) }}
+
+  {{ partial "drg/sidebar.html" (dict
+    "page" .
+    "guide_nav" $guideNav
+    "identity" $identity
+    "req_url" $reqUrl
+    "print_page" $printPage) }}
+
+  <div class="req-page-body">
+    {{ partial "breadcrumb.html" . }}
+
+    <div class="req-body-grid">
+      <article class="req-content">
+        {{ if not .IsSection }}
+          {{ $reqNum := .Params.req_number | default "" }}
+          {{ $reqGroupKey := "" }}
+          {{ $reqKey := "" }}
+          {{ if $reqNum }}
+            {{ $reqGroupKey = replaceRE "^([0-9]+).*" "$1" $reqNum }}
+            {{ $reqKey = replace $reqNum "." "-" }}
+            {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
+            {{ $reqKey = lower $reqKey }}
+          {{ else }}
+            {{ $reqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
+            {{ $reqGroupKey = replaceRE "^([0-9]+).*" "$1" $reqRaw }}
+            {{ $reqKey = replace $reqRaw "." "-" }}
+            {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
+            {{ $reqKey = lower $reqKey }}
+          {{ end }}
+          {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
+          <header class="req-header">
+            {{ with .Params.group_title }}
+              <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
+            {{ end }}
+            <h1 class="req-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
+          </header>
+        {{ else }}
+          <header class="req-header">
+            <h1 class="req-header__title">{{ .Title }}</h1>
+          </header>
+        {{ end }}
+
+        {{ .Content }}
+
+        <nav class="req-footer-nav" aria-label="Guide pagination">
+          {{ with .Params.prev }}
+            <a
+              href="{{ . }}"
+              class="req-footer-nav__link req-footer-nav__link--prev">
+              <span class="req-footer-nav__label">Previous</span>
+              <span class="req-footer-nav__title">
+                {{ with $.Params.prev_title }}
+                  {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}
+                {{ else }}
+                  Previous Page
+                {{ end }}
+              </span>
+            </a>
+          {{ end }}
+
+          {{ with .Params.next }}
+            <a
+              href="{{ . }}"
+              class="req-footer-nav__link req-footer-nav__link--next">
+              <span class="req-footer-nav__label">Next</span>
+              <span class="req-footer-nav__title">
+                {{ with $.Params.next_title }}{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}{{ else }}Next Page{{ end }}
+              </span>
+            </a>
+          {{ end }}
+        </nav>
+      </article>
+
+      {{ with .Page.Store.Get "leadRequirement" }}
+        <aside class="req-rail" inert>
+          <div class="req-rail__inner">
+            <span class="req-rail__number">{{ .number }}.</span>
+            <div class="req-rail__text">{{ if eq .text_format "html" }}{{ .text | safeHTML }}{{ else }}{{ .text | markdownify }}{{ end }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
+          </div>
+        </aside>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  <script>
+    // Scroll the active sidebar link into view without affecting page scroll
+    requestAnimationFrame(function () {
+      var sidebar = document.querySelector(".req-sidebar-wrap");
+      var active = document.querySelector(".req-nav__link--active");
+      if (sidebar && active) {
+        var top =
+          active.offsetTop -
+          sidebar.offsetTop -
+          sidebar.clientHeight / 2 +
+          active.clientHeight / 2;
+        sidebar.scrollTop = Math.max(0, top);
+      }
+    });
+  </script>
+
+  {{ $reqRailTS := resources.Get "ts/req-rail.ts" | js.Build (dict "minify" true) }}
+  <script>{{ $reqRailTS.Content | safeJS }}</script>
+
+  {{/* JSON-LD structured data */}}
+  {{ if .IsSection }}
+    {{ partial "json-ld/drg-index.html" . }}
+  {{ else }}
+    {{ partial "json-ld/drg-requirement.html" . }}
+  {{ end }}
+  {{ partial "json-ld/breadcrumb-auto.html" . }}
+{{ end }}

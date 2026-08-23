@@ -1,4 +1,5 @@
 {{- if not .IsHome -}}
+{{- $guideLabel := site.Params.theme.guideLabel | default "Digital Resource Guide" -}}
 {{- /* Build ancestors list by walking up .Parent chain */ -}}
 {{- $ancestors := slice -}}
 {{- $current := . -}}
@@ -16,13 +17,13 @@
 {{- range $ancestors -}}
   {{- $name := .Title -}}
   {{- if .IsHome -}}{{- $name = "Home" -}}
-  {{- else if and (eq .Layout "guide") .IsSection -}}{{- $name = "Digital Resource Guide" -}}
+  {{- else if and (eq .Layout "guide") .IsSection -}}{{- $name = $guideLabel -}}
   {{- end -}}
   {{- $items = $items | append (dict "name" $name "url" (.Permalink | absURL) "position" $pos) -}}
   {{- $pos = add $pos 1 -}}
 {{- end -}}
 {{- $currentName := $.Title -}}
-{{- if and (eq $.Layout "guide") $.IsSection -}}{{- $currentName = "Digital Resource Guide" -}}{{- end -}}
+{{- if and (eq $.Layout "guide") $.IsSection -}}{{- $currentName = $guideLabel -}}{{- end -}}
 {{- $items = $items | append (dict "name" $currentName "url" ($.Permalink | absURL) "position" $pos) -}}
 
 <script type="application/ld+json">

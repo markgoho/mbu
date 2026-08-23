@@ -1,0 +1,58 @@
+{{/* _default/guide-print.html
+
+  Printable single-page rollup of a guide's pages, ported from
+  mbu/hugo/layouts/merit-badges/guide-print.html. No site-specific
+  lookup: `guide_nav` and the pages it points at are read via
+  .Parent.Params and .Site.GetPage, both page-graph navigation.
+*/}}
+
+{{ define "head-scripts" }}
+  <meta name="robots" content="noindex, follow" />
+{{ end }}
+
+{{ define "html-class" }}theme-v2{{ end }}
+
+{{ define "main-class" }}req-page{{ end }}
+
+{{ define "main" }}
+  {{ $subjectPage := .CurrentSection.Parent | default .Parent.Parent }}
+  {{ $guidePage := .Parent }}
+  {{ $guideNav := $guidePage.Params.guide_nav }}
+  {{ $guideLabel := site.Params.theme.guideLabel | default "Digital Resource Guide" }}
+
+  <article class="req-content">
+    <header class="req-print-header">
+      <div>
+        <div class="req-print-header__kicker">Printable Guide</div>
+        <h1 class="req-print-header__title">{{ $subjectPage.Title }} — Complete {{ $guideLabel }}</h1>
+        <p class="req-print-header__url">{{ $guidePage.Permalink }}</p>
+      </div>
+    </header>
+
+    <button class="req-print-btn" type="button" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+    {{ range $guideNav }}
+      {{ if .group_title }}
+        <div class="req-print-divider">{{ .group_title }}</div>
+      {{ end }}
+
+      {{ range .items }}
+        {{ $page := $.Site.GetPage .url }}
+        {{ if $page }}
+          <section class="req-print-section">
+            <h2>{{ $page.Title }}</h2>
+            {{ $content := $page.Content }}
+            {{ $content = replaceRE `<details class="req-checklist">` `<div class="req-checklist req-checklist--print">` $content }}
+            {{ $content = replaceRE `</details>` `</div>` $content }}
+            {{ $content = replaceRE `<summary class="req-checklist__summary">([\s\S]*?)</summary>` `<div class="req-checklist__summary">$1</div>` $content }}
+            {{ $content | safeHTML }}
+          </section>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </article>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{ partial "json-ld/breadcrumb-auto.html" . }}
+{{ end }}
