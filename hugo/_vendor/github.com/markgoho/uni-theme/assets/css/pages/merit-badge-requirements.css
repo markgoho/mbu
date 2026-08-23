@@ -756,11 +756,17 @@ html:not([data-js]) .req-card:has(.req-child:focus-within) > .req-card__panel {
 }
 
 /* A node with no curated title promotes its own verbatim requirement
-   text into the heading instead -- see text/heading-for.html. This
-   marks it as Scouting America's own wording rather than ours, the same
-   way the eyebrow/title split marks a curated title as ours. */
+   text into the heading instead -- see text/heading-for.html. It's
+   still the requirement's own body wording, not a title, so it reads
+   as one regardless of sentence count: sans-serif body font, not the
+   heading's serif/bold, and never italic. Without this override a
+   single-sentence item (promoted) looks different from its multi-
+   sentence siblings (plain paragraph text) for a reason invisible to
+   the reader. */
 .req-card__title--verbatim {
-  font-style: italic;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-light);
+  font-style: normal;
 }
 
 /* The panel is already at the measure, so a second, narrower cap here
@@ -1168,7 +1174,9 @@ html:not([data-js]) .req-child:has(.req-child:focus-within) {
 
 /* See .req-card__title--verbatim above. */
 .req-child__title--verbatim {
-  font-style: italic;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-light);
+  font-style: normal;
 }
 
 .req-child__text {
