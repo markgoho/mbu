@@ -20,11 +20,19 @@
             chips has no field for it (see CONTRACT.md).
   variant - "rail" | "chips" | "options", the variant this item renders
             inside (chosen by the parent that called req-children.html).
+
+  site.Params.theme.hideReqChildTitles (bool, default false) forces every
+  child heading below into the visually-hidden shape regardless of what
+  text/heading-for.html returned, so only the marker and requirement
+  text show. The heading element and id stay for Pagefind/a11y. Opt-in
+  per site so a consumer that still wants visible child headings (e.g.
+  curated short labels as scannable text) is unaffected.
 */}}
 {{ $node := .node }}
 {{ $variant := .variant }}
 {{ $key := partial "text/transition-key.html" (dict "path" $node.path) }}
 {{ $textFormat := $node.text_format | default "markdown" }}
+{{ $hideChildTitles := site.Params.theme.hideReqChildTitles | default false }}
 
 {{ $heading := partial "text/heading-for.html" (dict "title" $node.title "text" $node.text "path" $node.path "text_format" $textFormat) }}
 {{ $displayTitle := $heading.display }}
@@ -80,19 +88,20 @@
         >{{ $node.marker }}</span>
     {{ end }}
 
+    {{ $suppressText := and $heading.promoted (not $hideChildTitles) }}
     <div class="req-child__body">
       <div class="req-child__title-row">
         <h4
           id="{{ $node.path }}"
-          class="req-child__title{{ if $heading.hidden }} visually-hidden{{ end }}{{ if $heading.promoted }} req-child__title--verbatim{{ end }}"
+          class="req-child__title{{ if or $heading.hidden $hideChildTitles }} visually-hidden{{ end }}{{ if $suppressText }} req-child__title--verbatim{{ end }}"
           style="view-transition-name: req-title-{{ $key }}"
           >{{ $displayTitle }}</h4
         >
         {{ partial "req-pill.html" $node.pill }}
       </div>
 
-      {{ if or (and $node.text (not $heading.promoted)) $node.list }}
-        {{ $bodyText := cond $heading.promoted "" $node.text }}
+      {{ if or (and $node.text (not $suppressText)) $node.list }}
+        {{ $bodyText := cond $suppressText "" $node.text }}
         {{ partial "req-text.html" (dict "text" $bodyText "class" "req-child__text" "title" $node.title "text_format" $textFormat "list" $node.list "transition_key" ($node.text_transition_key | default $key)) }}
       {{ end }}
 
