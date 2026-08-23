@@ -1,0 +1,48 @@
+{{/* resources-card.html
+
+  Shared `.badge-resources`/`.card-surface` "Resources & downloads" card
+  for badge/rank landing pages (uni-theme#29): a heading and a <ul> of
+  icon+link rows. The theme owns the row markup; callers own which
+  resources exist (mbu's badge has worksheet/pamphlet/print-guide/
+  scouting.org links, scouting-u's rank has only a gated print-guide
+  link) by building the rows slice from their own domain data.
+
+  Renders nothing when rows is empty, so a caller can build a
+  conditional rows slice (e.g. only when a print Guide page exists) and
+  call this unconditionally instead of gating the whole card itself.
+
+  Params (dict):
+  heading - plain text, optional, default "Resources & downloads".
+  rows    - slice of dicts, each:
+            icon            - Phosphor icon name, required.
+            label           - plain text, the link's text.
+            url             - string, required, the link's href.
+            external        - bool, optional. When true, adds
+                              target="_blank" rel="noopener" (e.g. a
+                              pamphlet or scouting.org link that leaves
+                              the site).
+            hide_on_mobile  - bool, optional. When true, adds the
+                              theme's `.hide-on-mobile` class to the
+                              <li> (e.g. mbu's fillable-worksheet row).
+*/}}
+{{ $heading := .heading | default "Resources & downloads" }}
+{{ $rows := .rows }}
+
+{{ if $rows }}
+  <div class="badge-resources card-surface">
+    <h2 class="badge-resources__heading">{{ $heading }}</h2>
+    <ul class="badge-resources__list">
+      {{ range $row := $rows }}
+        <li{{ if $row.hide_on_mobile }} class="hide-on-mobile"{{ end }}>
+          <a
+            href="{{ $row.url }}"
+            {{ if $row.external }}target="_blank" rel="noopener"{{ end }}
+            class="badge-resources__link">
+            {{ partial "icon.html" (dict "name" $row.icon "class" "badge-resources__icon") }}
+            {{ $row.label }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

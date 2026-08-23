@@ -1,0 +1,63 @@
+{{/* glance-card.html
+
+  Shared `.badge-glance`/`.card-surface` "At a glance" facts card for
+  badge/rank landing pages (uni-theme#29): a heading and a <dl> of rows,
+  each an optional icon, a label, and a value. The theme owns the row
+  markup; callers own which facts exist and how each value renders
+  (mbu's badge has requirements/category/eagle-required/updated rows,
+  scouting-u's rank has requirements/program/updated) by building the
+  rows slice from their own domain data.
+
+  Renders nothing when rows is empty.
+
+  Params (dict):
+  heading - plain text, optional, default "At a glance".
+  rows    - slice of dicts, each:
+            icon          - Phosphor icon name, optional.
+            icon_weight   - icon weight, optional (e.g. "duotone").
+            label         - plain text, the <dt>'s text.
+            value         - plain text, the <dd>'s content.
+            value_variant - dict, optional, same type-tagged shape as
+                            req-pill.html's `pill` param. When absent,
+                            value renders as plain text. One of:
+                            {type: "link", url}   - value renders as a
+                              link to url (e.g. mbu's category row; the
+                              theme's only glance link style, reused for
+                              any link-valued row, not category-specific).
+                            {type: "pill", negative} - value renders as
+                              a pill span; `negative` (bool, optional)
+                              adds the theme's `--no` modifier class
+                              (e.g. mbu's Eagle Required yes/no).
+*/}}
+{{ $heading := .heading | default "At a glance" }}
+{{ $rows := .rows }}
+
+{{ if $rows }}
+  <div class="badge-glance card-surface">
+    <h2 class="badge-glance__heading">{{ $heading }}</h2>
+    <dl class="badge-glance__list">
+      {{ range $row := $rows }}
+        <div class="badge-glance__row">
+          <dt>
+            {{ with $row.icon }}
+              {{ partial "icon.html" (dict "name" . "weight" $row.icon_weight "class" "badge-glance__icon") }}
+            {{ end }}
+            {{ $row.label }}
+          </dt>
+          <dd>
+            {{ $value := $row.value }}
+            {{ with $row.value_variant }}
+              {{ if eq .type "pill" }}
+                <span class="badge-glance__pill{{ if .negative }} badge-glance__pill--no{{ end }}">{{ $value }}</span>
+              {{ else if eq .type "link" }}
+                <a href="{{ .url }}" class="badge-glance__category-link">{{ $value }}</a>
+              {{ end }}
+            {{ else }}
+              {{ $value }}
+            {{ end }}
+          </dd>
+        </div>
+      {{ end }}
+    </dl>
+  </div>
+{{ end }}
