@@ -1030,15 +1030,17 @@ html:not([data-js]) .req-child:has(.req-child:focus-within) {
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
-  border-inline-start: 2px solid var(--outline-variant);
 }
 
 /* A nested rail sits tighter and lighter than its parent, so going
-   deeper reads as "quieter" rather than as another box. */
+   deeper reads as "quieter" rather than as another box. It also picks
+   up the rail border the top level skips -- at that depth it's the
+   only cue marking the nesting, where the top level already has the
+   timeline connector running down the same side. */
 .req-child__body .req-children--rail {
   margin-block-start: var(--space-xs);
   gap: var(--space-xs);
-  border-inline-start-style: dashed;
+  border-inline-start: 2px dashed var(--outline-variant);
 }
 
 /* It still has to clear the highlight outlines its items draw: at the
