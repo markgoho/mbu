@@ -110,10 +110,20 @@
       </article>
 
       {{ with .Page.Store.Get "leadRequirement" }}
+        {{/* The rail is a compact "here's what you're reading" echo, not a
+             full reproduction -- a requirement whose text carries a long
+             <ul>/<ol> (a fitness benchmark's fill-in-the-blank test list, a
+             checklist, ...) has that list stripped from the echoed copy
+             here. Mirrors the same trim req-rail.ts applies when the JS
+             scroll-sync takes over on multi-requirement pages, so both
+             the pre-JS SSR state and the post-scroll state agree. */}}
+        {{ $railHTML := cond (eq .text_format "html") (.text | safeHTML) (.text | markdownify) }}
+        {{ $railHTML = replaceRE `(?s)<ul[^>]*>.*?</ul>` "" $railHTML }}
+        {{ $railHTML = replaceRE `(?s)<ol[^>]*>.*?</ol>` "" $railHTML }}
         <aside class="req-rail" inert>
           <div class="req-rail__inner">
             <span class="req-rail__number">{{ .number }}.</span>
-            <div class="req-rail__text">{{ if eq .text_format "html" }}{{ .text | safeHTML }}{{ else }}{{ .text | markdownify }}{{ end }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
+            <div class="req-rail__text">{{ $railHTML | safeHTML }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
           </div>
         </aside>
       {{ end }}
