@@ -18,11 +18,20 @@ if (rail && railNumber && railText && blocks.length > 1) {
   const TRACK_LINE = 0.3; // fraction of viewport height counted as "current"
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Most requirement text is a sentence or two and echoes into the rail
+  // in full. A few (fitness benchmarks quoting fill-in-the-blank test
+  // lists, checklists, ...) carry a long <ul>/<ol> alongside their lead
+  // sentence -- that's "extra" the rail isn't meant to hold, so it's
+  // dropped from the echoed copy while the surrounding prose stays.
   const applyContent = (current: HTMLElement): void => {
     const number = current.querySelector(".req-requirement__number")?.textContent;
-    const text = current.querySelector(".req-requirement__text")?.innerHTML;
+    const source = current.querySelector<HTMLElement>(".req-requirement__text");
     if (number) railNumber.textContent = number;
-    if (text) railText.innerHTML = text;
+    if (source) {
+      const excerpt = source.cloneNode(true) as HTMLElement;
+      excerpt.querySelectorAll("ul, ol").forEach(list => list.remove());
+      railText.innerHTML = excerpt.innerHTML;
+    }
   };
 
   // Shared, fixed view-transition-names (not per-requirement) -- only one
