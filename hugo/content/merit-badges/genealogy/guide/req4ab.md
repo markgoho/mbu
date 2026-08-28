@@ -92,6 +92,11 @@ When you find a useful source, record exactly where it came from. If you want to
     url="https://www.familysearch.org/search/collection/list"
     description="A large directory of searchable record collections organized by place and record type." >}}
 
+{{< drg/external-link
+    title="FinalNotes — Obituary Research Guide"
+    url="https://www.finalnotes.page/obituary-research-guide/"
+    description="A practical checklist for extracting names, relationships, places, and service details from obituary records." >}}
+
 You now understand where genealogists find physical and digital records and how those sources support a family tree. Next, you will practice finding a document and judging how trustworthy it really is.
 
 {{< drg/next-page
