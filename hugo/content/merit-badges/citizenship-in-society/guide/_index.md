@@ -5,50 +5,6 @@ badge_name: "Citizenship in Society"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-society/guide/req1/"
 next_title: "Key Terms"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/citizenship-in-society/guide/"
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. Key Terms"
-        url: "/merit-badges/citizenship-in-society/guide/req1/"
-        is_sub: false
-      - title: "2. Ethical Leadership"
-        url: "/merit-badges/citizenship-in-society/guide/req2/"
-        is_sub: false
-      - title: "3. Ethical Decisions"
-        url: "/merit-badges/citizenship-in-society/guide/req3/"
-        is_sub: false
-      - title: "4. Responding to Scenarios"
-        url: "/merit-badges/citizenship-in-society/guide/req4/"
-        is_sub: false
-      - title: "5. Welcoming Environments"
-        url: "/merit-badges/citizenship-in-society/guide/req5/"
-        is_sub: false
-      - title: "6. Connecting Across Differences"
-        url: "/merit-badges/citizenship-in-society/guide/req6/"
-        is_sub: false
-      - title: "7. Community Impact Interview"
-        url: "/merit-badges/citizenship-in-society/guide/req7/"
-        is_sub: false
-      - title: "8. A Positive Turning Point"
-        url: "/merit-badges/citizenship-in-society/guide/req8/"
-        is_sub: false
-      - title: "9. Leadership Beyond Scouting"
-        url: "/merit-badges/citizenship-in-society/guide/req9/"
-        is_sub: false
-      - title: "10. Stereotypes & Individuality"
-        url: "/merit-badges/citizenship-in-society/guide/req10/"
-        is_sub: false
-      - title: "11. Your DEI Action Plan"
-        url: "/merit-badges/citizenship-in-society/guide/req11/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/citizenship-in-society/guide/extended-learning/"
 ---
 
 Being a good citizen is about more than following rules or paying taxes. It is about how you treat the people around you every single day — in your school hallways, on your sports teams, in your Scout troop, and in your community. The Citizenship in Society merit badge challenges you to look at the world through other people's eyes and to become the kind of leader who makes everyone feel like they belong.

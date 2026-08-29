@@ -5,46 +5,6 @@ badge_name: "Drafting"
 group_title: "Getting Started"
 next: "/merit-badges/drafting/guide/req1a/"
 next_title: "Rough Sketches & Paper Sizing"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/drafting/guide/"
-  - group_title: "1. Setting Up Your Drawing Sheets"
-    items:
-      - title: "a Rough Sketches & Paper Sizing"
-        url: "/merit-badges/drafting/guide/req1a/"
-        is_sub: true
-      - title: "b Title Block Lettering"
-        url: "/merit-badges/drafting/guide/req1b/"
-        is_sub: true
-  - group_title: "Projects & Careers"
-    items:
-      - title: "2. Choose Your Drawing Type"
-        url: "/merit-badges/drafting/guide/req2/"
-        is_sub: false
-      - title: "3. CAD Design"
-        url: "/merit-badges/drafting/guide/req3/"
-        is_sub: false
-      - title: "4. Review & Revision Process"
-        url: "/merit-badges/drafting/guide/req4/"
-        is_sub: false
-      - title: "5. Manual vs. CAD Discussion"
-        url: "/merit-badges/drafting/guide/req5/"
-        is_sub: false
-      - title: "6. Lettering Your Opinion"
-        url: "/merit-badges/drafting/guide/req6/"
-        is_sub: false
-      - title: "7. Workplace Visit or Research"
-        url: "/merit-badges/drafting/guide/req7/"
-        is_sub: false
-      - title: "8. Drafting Career Exploration"
-        url: "/merit-badges/drafting/guide/req8/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/drafting/guide/extended-learning/"
 ---
 
 Every bridge you cross, every building you enter, every phone in your pocket — none of it existed until someone drew it first. Drafting is the language engineers, architects, and designers use to turn ideas into reality. A precise drawing tells a builder exactly what to cut, where to weld, and how parts fit together — down to fractions of a millimeter. Without drafting, modern civilization simply could not be built.

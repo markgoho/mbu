@@ -5,37 +5,6 @@ badge_name: "Architecture"
 group_title: "Getting Started"
 next: "/merit-badges/architecture/guide/req1a/"
 next_title: "Community Building Tour"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/architecture/guide/"
-  - group_title: "1. Exploring Your Community"
-    items:
-      - title: "a Community Building Tour"
-        url: "/merit-badges/architecture/guide/req1a/"
-        is_sub: true
-      - title: "b Historical Achievement"
-        url: "/merit-badges/architecture/guide/req1b/"
-        is_sub: true
-  - group_title: "Career Exploration"
-    items:
-      - title: "2. Sustainable Architecture"
-        url: "/merit-badges/architecture/guide/req2/"
-        is_sub: false
-      - title: "3. Meet an Architect"
-        url: "/merit-badges/architecture/guide/req3/"
-        is_sub: false
-      - title: "4. Floor Plan Drawing"
-        url: "/merit-badges/architecture/guide/req4/"
-        is_sub: false
-      - title: "5. Career Exploration"
-        url: "/merit-badges/architecture/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/architecture/guide/extended-learning/"
 ---
 
 Look around you right now. Chances are, you are inside a building that someone designed. The walls, the roof, the windows, the way light enters the room — an architect made decisions about all of it. Architecture is the art and science of designing the spaces where people live, work, learn, and play.

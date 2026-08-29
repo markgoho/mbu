@@ -5,48 +5,6 @@ badge_name: "Citizenship in the Community"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-the-community/guide/req1/"
 next_title: "What Good Citizenship Means"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/citizenship-in-the-community/guide/"
-  - group_title: "What Good Citizenship Means"
-    items:
-      - title: "1. What Good Citizenship Means"
-        url: "/merit-badges/citizenship-in-the-community/guide/req1/"
-        is_sub: false
-  - group_title: "2. Knowing Your Community"
-    items:
-      - title: "a Mapping Your Community"
-        url: "/merit-badges/citizenship-in-the-community/guide/req2a/"
-        is_sub: true
-      - title: "b Charting Local Government"
-        url: "/merit-badges/citizenship-in-the-community/guide/req2b/"
-        is_sub: true
-  - group_title: "Practical Applications"
-    items:
-      - title: "3. Attending a Government Meeting"
-        url: "/merit-badges/citizenship-in-the-community/guide/req3/"
-        is_sub: false
-      - title: "4. Investigating a Community Issue"
-        url: "/merit-badges/citizenship-in-the-community/guide/req4/"
-        is_sub: false
-      - title: "5. Community on Screen"
-        url: "/merit-badges/citizenship-in-the-community/guide/req5/"
-        is_sub: false
-      - title: "6. Taxpayer-Funded Services"
-        url: "/merit-badges/citizenship-in-the-community/guide/req6/"
-        is_sub: false
-      - title: "7. Charitable Organizations & Volunteering"
-        url: "/merit-badges/citizenship-in-the-community/guide/req7/"
-        is_sub: false
-      - title: "8. Your Community Presentation"
-        url: "/merit-badges/citizenship-in-the-community/guide/req8/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/citizenship-in-the-community/guide/extended-learning/"
 ---
 
 Your community is more than the place where you live. It is the people, the services, the traditions, and the shared spaces that connect you to your neighbors. The Citizenship in the Community merit badge challenges you to explore the place you call home — to understand how it works, who runs it, and how you can make it better.

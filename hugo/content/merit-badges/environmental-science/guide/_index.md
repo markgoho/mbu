@@ -5,57 +5,6 @@ badge_name: "Environmental Science"
 group_title: "Getting Started"
 next: "/merit-badges/environmental-science/guide/req1/"
 next_title: "Defining Environmental Science"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/environmental-science/guide/"
-  - group_title: "Defining Environmental Science"
-    items:
-      - title: "1. Defining Environmental Science"
-        url: "/merit-badges/environmental-science/guide/req1/"
-        is_sub: false
-  - group_title: "2. Ecology"
-    items:
-      - title: "a Observing an Ecosystem"
-        url: "/merit-badges/environmental-science/guide/req2a/"
-        is_sub: true
-      - title: "b Ecosystem Components"
-        url: "/merit-badges/environmental-science/guide/req2b/"
-        is_sub: true
-  - group_title: "Career Exploration"
-    items:
-      - title: "3. Air Pollution"
-        url: "/merit-badges/environmental-science/guide/req3/"
-        is_sub: false
-      - title: "4. Water Pollution"
-        url: "/merit-badges/environmental-science/guide/req4/"
-        is_sub: false
-      - title: "5. Land Pollution"
-        url: "/merit-badges/environmental-science/guide/req5/"
-        is_sub: false
-      - title: "6. Rare, Threatened, or Endangered Species"
-        url: "/merit-badges/environmental-science/guide/req6/"
-        is_sub: false
-      - title: "7. Pollution Prevention & Conservation"
-        url: "/merit-badges/environmental-science/guide/req7/"
-        is_sub: false
-      - title: "8. Pollination"
-        url: "/merit-badges/environmental-science/guide/req8/"
-        is_sub: false
-      - title: "9. Invasive Species"
-        url: "/merit-badges/environmental-science/guide/req9/"
-        is_sub: false
-      - title: "10. Environmental Impact Assessment"
-        url: "/merit-badges/environmental-science/guide/req10/"
-        is_sub: false
-      - title: "11. Career Exploration"
-        url: "/merit-badges/environmental-science/guide/req11/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/environmental-science/guide/extended-learning/"
 ---
 
 The air you breathe, the water you drink, and the ground you walk on — environmental science studies all of it. It is the field that asks big questions: How do ecosystems work? What happens when pollution enters a river? How can we protect species from disappearing forever? As a Scout, you already spend time outdoors. This merit badge gives you the tools to understand and protect the world around you.

@@ -5,45 +5,6 @@ badge_name: "Sports"
 group_title: "Getting Started"
 next: "/merit-badges/sports/guide/req1/"
 next_title: "Sports Safety and First Aid"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/sports/guide/"
-        is_sub: false
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Sports Safety and First Aid"
-        url: "/merit-badges/sports/guide/req1/"
-        is_sub: false
-      - title: "2. Health Habits That Support Performance"
-        url: "/merit-badges/sports/guide/req2/"
-        is_sub: false
-      - title: "3. Preparation, Strength, and Sportsmanship"
-        url: "/merit-badges/sports/guide/req3/"
-        is_sub: false
-      - title: "4. Pick Sports You Can Really Commit To"
-        url: "/merit-badges/sports/guide/req4/"
-        is_sub: false
-      - title: "5. Train, Compete, and Reflect"
-        url: "/merit-badges/sports/guide/req5/"
-        is_sub: false
-  - group_title: "6. Beyond Participation"
-    items:
-      - title: "6. Choose Your Next Step"
-        url: "/merit-badges/sports/guide/req6/"
-        is_sub: false
-      - title: "a Explore a Sports Career"
-        url: "/merit-badges/sports/guide/req6a/"
-        is_sub: true
-      - title: "b Build a Sports-Based Lifestyle"
-        url: "/merit-badges/sports/guide/req6b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/sports/guide/extended-learning/"
-        is_sub: false
 ---
 
 ## Overview

@@ -5,40 +5,6 @@ badge_name: "Welding"
 group_title: "Getting Started"
 next: "/merit-badges/welding/guide/req1/"
 next_title: "Welding Hazards and First Aid"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/welding/guide/"
-        is_sub: false
-  - group_title: "Career Exploration"
-    items:
-      - title: "1. Welding Hazards and First Aid"
-        url: "/merit-badges/welding/guide/req1/"
-        is_sub: false
-      - title: "2. Safety Gear, SDS, and Equipment Care"
-        url: "/merit-badges/welding/guide/req2/"
-        is_sub: false
-      - title: "3. Welding Terms and Process Basics"
-        url: "/merit-badges/welding/guide/req3/"
-        is_sub: false
-      - title: "4. Mechanical and Thermal Cutting"
-        url: "/merit-badges/welding/guide/req4/"
-        is_sub: false
-      - title: "5. Process Selection and Setup"
-        url: "/merit-badges/welding/guide/req5/"
-        is_sub: false
-      - title: "6. Beads and Basic Joints"
-        url: "/merit-badges/welding/guide/req6/"
-        is_sub: false
-      - title: "7. Careers and the American Welding Society"
-        url: "/merit-badges/welding/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/welding/guide/extended-learning/"
-        is_sub: false
 ---
 
 Welding is the skill of joining metal with heat, pressure, or both. It is one of the trades that quietly holds the modern world together — bridges, trailers, pipelines, bicycles, farm equipment, playgrounds, and skyscrapers all depend on strong welds. This merit badge introduces you to the science, safety, and hands-on practice behind that work.

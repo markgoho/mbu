@@ -5,51 +5,6 @@ badge_name: "Coin Collecting"
 group_title: "Getting Started"
 next: "/merit-badges/coin-collecting/guide/req1/"
 next_title: "How Coins Are Made"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/coin-collecting/guide/"
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. How Coins Are Made"
-        url: "/merit-badges/coin-collecting/guide/req1/"
-      - title: "2. Coin Terminology"
-        url: "/merit-badges/coin-collecting/guide/req2/"
-      - title: "3. Storing Your Collection"
-        url: "/merit-badges/coin-collecting/guide/req3/"
-  - group_title: "4. Building Your Collection"
-    items:
-      - title: "a The One-Cent Coin"
-        url: "/merit-badges/coin-collecting/guide/req4a/"
-        is_sub: true
-      - title: "b The Five-Cent Coin"
-        url: "/merit-badges/coin-collecting/guide/req4b/"
-        is_sub: true
-      - title: "c The Ten-Cent Coin"
-        url: "/merit-badges/coin-collecting/guide/req4c/"
-        is_sub: true
-      - title: "d The Quarter"
-        url: "/merit-badges/coin-collecting/guide/req4d/"
-        is_sub: true
-      - title: "e The Half Dollar"
-        url: "/merit-badges/coin-collecting/guide/req4e/"
-        is_sub: true
-      - title: "f The Dollar Coin"
-        url: "/merit-badges/coin-collecting/guide/req4f/"
-        is_sub: true
-  - group_title: "Additional Requirements"
-    items:
-      - title: "5. Bicentennial Coins"
-        url: "/merit-badges/coin-collecting/guide/req5/"
-      - title: "6. U.S. Currency"
-        url: "/merit-badges/coin-collecting/guide/req6/"
-      - title: "7. Expanding Your Horizons"
-        url: "/merit-badges/coin-collecting/guide/req7/"
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/coin-collecting/guide/extended-learning/"
 ---
 
 Every coin tells a story. The Lincoln cent in your pocket has traveled through thousands of hands since it left the Mint. The quarter in your change jar might feature a national park you have visited — or one you dream of seeing. And somewhere in a forgotten drawer, a coin from 1943 made of steel instead of copper is waiting for a collector sharp enough to spot it.

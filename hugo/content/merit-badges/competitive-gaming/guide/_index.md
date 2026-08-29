@@ -5,53 +5,6 @@ badge_name: "Competitive Gaming"
 group_title: "Getting Started"
 next: "/merit-badges/competitive-gaming/guide/req1/"
 next_title: "The History of Video Gaming and Esports"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/competitive-gaming/guide/"
-        is_sub: false
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. The History of Video Gaming and Esports"
-        url: "/merit-badges/competitive-gaming/guide/req1/"
-        is_sub: false
-      - title: "2. Living the Scout Oath and Law Online"
-        url: "/merit-badges/competitive-gaming/guide/req2/"
-        is_sub: false
-      - title: "3. Gamer Health and Balance"
-        url: "/merit-badges/competitive-gaming/guide/req3/"
-        is_sub: false
-      - title: "4. Gamer Safety and Community Connection"
-        url: "/merit-badges/competitive-gaming/guide/req4/"
-        is_sub: false
-      - title: "5. Technology in Competitive Gaming"
-        url: "/merit-badges/competitive-gaming/guide/req5/"
-        is_sub: false
-  - group_title: "6. Leadership and Service"
-    items:
-      - title: "6. Leadership and Service in Competitive Gaming"
-        url: "/merit-badges/competitive-gaming/guide/req6/"
-        is_sub: false
-      - title: "a Teach Digital Citizenship"
-        url: "/merit-badges/competitive-gaming/guide/req6a/"
-        is_sub: true
-      - title: "b Watch a Live Esports Event"
-        url: "/merit-badges/competitive-gaming/guide/req6b/"
-        is_sub: true
-      - title: "c Attend an Esports Event"
-        url: "/merit-badges/competitive-gaming/guide/req6c/"
-        is_sub: true
-  - group_title: "Exploring Professions in the Competitive Gaming Industry"
-    items:
-      - title: "7. Exploring Professions in the Competitive Gaming Industry"
-        url: "/merit-badges/competitive-gaming/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/competitive-gaming/guide/extended-learning/"
-        is_sub: false
 ---
 
 ## Overview

@@ -5,57 +5,6 @@ badge_name: "Fishing"
 group_title: "Getting Started"
 next: "/merit-badges/fishing/guide/req1a/"
 next_title: "Fishing Hazards"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/fishing/guide/"
-  - group_title: "1. Safety on the Water"
-    items:
-      - title: "a Fishing Hazards"
-        url: "/merit-badges/fishing/guide/req1a/"
-        is_sub: true
-      - title: "b Treating Fishing Injuries"
-        url: "/merit-badges/fishing/guide/req1b/"
-        is_sub: true
-      - title: "c Removing a Barbed Hook"
-        url: "/merit-badges/fishing/guide/req1c/"
-        is_sub: true
-      - title: "d Core Fishing Safety Practices"
-        url: "/merit-badges/fishing/guide/req1d/"
-        is_sub: true
-  - group_title: "2. Gear & Tackle"
-    items:
-      - title: "2. Fishing Outfits & Equipment Care"
-        url: "/merit-badges/fishing/guide/req2/"
-      - title: "3. Using Fishing Equipment"
-        url: "/merit-badges/fishing/guide/req3/"
-      - title: "4. Essential Fishing Knots"
-        url: "/merit-badges/fishing/guide/req4/"
-      - title: "5. Lures, Baits, and Baitfish"
-        url: "/merit-badges/fishing/guide/req5/"
-  - group_title: "6. Stewardship & Ethics"
-    items:
-      - title: "a Leave No Trace While Fishing"
-        url: "/merit-badges/fishing/guide/req6a/"
-        is_sub: true
-      - title: "b Catch and Release"
-        url: "/merit-badges/fishing/guide/req6b/"
-        is_sub: true
-      - title: "7. Fishing Regulations"
-        url: "/merit-badges/fishing/guide/req7/"
-      - title: "8. Sportsmanship for Anglers"
-        url: "/merit-badges/fishing/guide/req8/"
-  - group_title: "9. On-the-Water Skills"
-    items:
-      - title: "9. Catching and Identifying a Fish"
-        url: "/merit-badges/fishing/guide/req9/"
-      - title: "10. Cleaning and Cooking Your Catch"
-        url: "/merit-badges/fishing/guide/req10/"
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/fishing/guide/extended-learning/"
 ---
 
 A still pond at sunrise, a trout stream rushing over rocks, a pier buzzing with voices at sunset — fishing can feel peaceful, exciting, and full of surprises all at once. It teaches patience, observation, outdoor skills, and respect for the water and the life in it.

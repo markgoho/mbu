@@ -5,55 +5,6 @@ badge_name: "Citizenship in the Nation"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-the-nation/guide/req1/"
 next_title: "The Constitution"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/citizenship-in-the-nation/guide/"
-  - group_title: "1. The Constitution"
-    items:
-      - title: "1. The Constitution"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req1/"
-        is_sub: false
-      - title: "2. The Preamble"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req2/"
-        is_sub: false
-  - group_title: "Three Branches of Government"
-    items:
-      - title: "3. Three Branches of Government"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req3/"
-        is_sub: false
-  - group_title: "4. Founding Documents & Ideals"
-    items:
-      - title: "a Declaration of Independence"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req4a/"
-        is_sub: true
-      - title: "b Bill of Rights & 14th Amendment"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req4b/"
-        is_sub: true
-      - title: "c E Pluribus Unum"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req4c/"
-        is_sub: true
-  - group_title: "5. Citizenship in Action"
-    items:
-      - title: "5. Following the News"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req5/"
-        is_sub: false
-      - title: "6. A Historic Speech"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req6/"
-        is_sub: false
-  - group_title: "7. Experiencing Your Nation"
-    items:
-      - title: "7. Exploring National Sites"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req7/"
-        is_sub: false
-      - title: "8. Contacting Congress"
-        url: "/merit-badges/citizenship-in-the-nation/guide/req8/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/citizenship-in-the-nation/guide/extended-learning/"
 ---
 
 You are a citizen of the United States of America. That is not just a fact on a piece of paper — it is a living, active relationship between you and your country. The Citizenship in the Nation merit badge invites you to explore what that relationship really means: how your government works, what your rights are, and how you can make your voice heard on the national stage.

@@ -5,45 +5,6 @@ badge_name: "American Heritage"
 group_title: "Getting Started"
 next: "/merit-badges/american-heritage/guide/req1/"
 next_title: "The Declaration of Independence"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/american-heritage/guide/"
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. The Declaration of Independence"
-        url: "/merit-badges/american-heritage/guide/req1/"
-        is_sub: false
-      - title: "2. American Leaders & Change-Makers"
-        url: "/merit-badges/american-heritage/guide/req2/"
-        is_sub: false
-  - group_title: "3. National Symbols & Family Roots"
-    items:
-      - title: "a America in the News"
-        url: "/merit-badges/american-heritage/guide/req3a/"
-        is_sub: true
-      - title: "b National Symbols"
-        url: "/merit-badges/american-heritage/guide/req3b/"
-        is_sub: true
-      - title: "c Your Family"
-        url: "/merit-badges/american-heritage/guide/req3c/"
-        is_sub: true
-  - group_title: "Career Exploration"
-    items:
-      - title: "4. Local History & Landmarks"
-        url: "/merit-badges/american-heritage/guide/req4/"
-        is_sub: false
-      - title: "5. Heritage Through Media"
-        url: "/merit-badges/american-heritage/guide/req5/"
-        is_sub: false
-      - title: "6. Heritage Careers"
-        url: "/merit-badges/american-heritage/guide/req6/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/american-heritage/guide/extended-learning/"
 ---
 
 American Heritage is about understanding the ideas, people, symbols, and stories that shaped the United States. It is more than memorizing dates — it is discovering why those dates matter and how the past connects to your life right now.

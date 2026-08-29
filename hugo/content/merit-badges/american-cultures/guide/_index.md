@@ -5,36 +5,6 @@ badge_name: "American Cultures"
 group_title: "Getting Started"
 next: "/merit-badges/american-cultures/guide/req1/"
 next_title: "Cultural Experiences"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/american-cultures/guide/"
-  - group_title: "Cultural Experiences"
-    items:
-      - title: "1. Cultural Experiences"
-        url: "/merit-badges/american-cultures/guide/req1/"
-        is_sub: false
-  - group_title: "2. Understanding Diversity"
-    items:
-      - title: "2. Imagining a Single-Culture World"
-        url: "/merit-badges/american-cultures/guide/req2/"
-        is_sub: false
-      - title: "3. Customs and Commonalities"
-        url: "/merit-badges/american-cultures/guide/req3/"
-        is_sub: false
-  - group_title: "4. Celebrating Contributions"
-    items:
-      - title: "4. Contributions to America"
-        url: "/merit-badges/american-cultures/guide/req4/"
-        is_sub: false
-      - title: "5. Leading a Discussion"
-        url: "/merit-badges/american-cultures/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/american-cultures/guide/extended-learning/"
 ---
 
 America is not one culture — it is hundreds of cultures woven together. Every neighborhood, every city, and every region carries traditions, languages, foods, and stories brought by people from all over the world. The American Cultures merit badge invites you to step outside your own experience and explore how this incredible mix of backgrounds shapes the country you live in.

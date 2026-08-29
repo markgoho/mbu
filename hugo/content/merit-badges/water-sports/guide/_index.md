@@ -5,39 +5,6 @@ badge_name: "Water Sports"
 group_title: "Getting Started"
 next: "/merit-badges/water-sports/guide/req1/"
 next_title: "Water Sense and Safety"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/water-sports/guide/"
-        is_sub: false
-  - group_title: "1. Building Safe Habits"
-    items:
-      - title: "1. Water Sense and Safety"
-        url: "/merit-badges/water-sports/guide/req1/"
-        is_sub: false
-      - title: "2. Gear and Boat Safety"
-        url: "/merit-badges/water-sports/guide/req2/"
-        is_sub: false
-      - title: "3. Pass the Swimmer Test"
-        url: "/merit-badges/water-sports/guide/req3/"
-        is_sub: false
-  - group_title: "4. On-the-Water Skills"
-    items:
-      - title: "4. Hand Signals That Keep You Safe"
-        url: "/merit-badges/water-sports/guide/req4/"
-        is_sub: false
-      - title: "5. Starts, Wakes, and Falls"
-        url: "/merit-badges/water-sports/guide/req5/"
-        is_sub: false
-      - title: "6. Fit and Recover Your Gear"
-        url: "/merit-badges/water-sports/guide/req6/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/water-sports/guide/extended-learning/"
-        is_sub: false
 ---
 
 Water sports are fast, exciting, and unforgettable because they mix speed, balance, teamwork, and water safety all at once. Whether you are gliding on two skis, carving on one ski, or riding a wakeboard, you are learning how to stay calm, read conditions, and trust your training.

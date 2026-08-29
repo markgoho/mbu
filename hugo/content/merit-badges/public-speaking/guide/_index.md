@@ -5,39 +5,6 @@ badge_name: "Public Speaking"
 group_title: "Getting Started"
 next: "/merit-badges/public-speaking/guide/req1/"
 next_title: "Your Self-Introduction"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/public-speaking/guide/"
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. Your Self-Introduction"
-        url: "/merit-badges/public-speaking/guide/req1/"
-        is_sub: false
-      - title: "2. Prepared Talk with Visuals"
-        url: "/merit-badges/public-speaking/guide/req2/"
-        is_sub: false
-      - title: "3. Impromptu Speaking"
-        url: "/merit-badges/public-speaking/guide/req3/"
-        is_sub: false
-  - group_title: "4. The Big Speech"
-    items:
-      - title: "4. Researched Speech"
-        url: "/merit-badges/public-speaking/guide/req4/"
-        is_sub: false
-      - title: "Speech Planning Worksheet"
-        url: "/merit-badges/public-speaking/guide/speech-planning-worksheet/"
-        is_sub: true
-  - group_title: "Parliamentary Procedure"
-    items:
-      - title: "5. Parliamentary Procedure"
-        url: "/merit-badges/public-speaking/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/public-speaking/guide/extended-learning/"
 ---
 
 Stand up, open your mouth, and change the world. That might sound dramatic, but it is exactly what great public speakers do every day. The Public Speaking merit badge will teach you how to organize your thoughts, stand in front of a group, and deliver a message that people actually want to hear. Whether you are running for patrol leader, presenting a school project, or telling a story around the campfire, these skills will serve you for life.

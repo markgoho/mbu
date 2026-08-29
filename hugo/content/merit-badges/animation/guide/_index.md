@@ -5,44 +5,6 @@ badge_name: "Animation"
 group_title: "Getting Started"
 next: "/merit-badges/animation/guide/req1a/"
 next_title: "What Is Animation?"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/animation/guide/"
-  - group_title: "1. Understanding Animation"
-    items:
-      - title: "a What Is Animation?"
-        url: "/merit-badges/animation/guide/req1a/"
-        is_sub: true
-      - title: "b History of Animation"
-        url: "/merit-badges/animation/guide/req1b/"
-        is_sub: true
-  - group_title: "Additional Requirements"
-    items:
-      - title: "2. The 12 Principles"
-        url: "/merit-badges/animation/guide/req2/"
-        is_sub: false
-      - title: "3. Create Your Animations"
-        url: "/merit-badges/animation/guide/req3/"
-        is_sub: false
-  - group_title: "4. Animation in the Real World"
-    items:
-      - title: "a Studio Tour"
-        url: "/merit-badges/animation/guide/req4a/"
-        is_sub: true
-      - title: "b The Future of Animation"
-        url: "/merit-badges/animation/guide/req4b/"
-        is_sub: true
-  - group_title: "Careers in Animation"
-    items:
-      - title: "5. Careers in Animation"
-        url: "/merit-badges/animation/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/animation/guide/extended-learning/"
 ---
 
 Have you ever watched a cartoon character sprint off a cliff, hang in midair for a moment, look down, and then plummet? That moment — that pause, that comedic timing — is the magic of animation. Animation is the art of making still images appear to move, and it shows up everywhere: movies, video games, apps, medical simulations, weather maps, and even the emoji reactions on your phone.

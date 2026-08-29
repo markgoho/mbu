@@ -5,32 +5,6 @@ badge_name: "Basketry"
 group_title: "Getting Started"
 next: "/merit-badges/basketry/guide/req1/"
 next_title: "Safety & First Aid"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/basketry/guide/"
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Safety & First Aid"
-        url: "/merit-badges/basketry/guide/req1/"
-      - title: "2. Basket Types & Weaves"
-        url: "/merit-badges/basketry/guide/req2/"
-  - group_title: "3. Weaving Projects"
-    items:
-      - title: "a Square Basket"
-        url: "/merit-badges/basketry/guide/req3a/"
-        is_sub: true
-      - title: "b Round Basket"
-        url: "/merit-badges/basketry/guide/req3b/"
-        is_sub: true
-      - title: "c Campstool Seat"
-        url: "/merit-badges/basketry/guide/req3c/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/basketry/guide/extended-learning/"
 ---
 
 Basketry is one of the oldest crafts in human history — and one of the most satisfying to learn. With just a few simple materials, your hands, and a little patience, you can weave something useful and beautiful from scratch. Whether you are making a sturdy basket for carrying gear or a seat for a camp chair, you are practicing a skill that connects you to thousands of years of human ingenuity.

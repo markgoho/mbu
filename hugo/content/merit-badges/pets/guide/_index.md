@@ -5,50 +5,6 @@ badge_name: "Pets"
 group_title: "Getting Started"
 next: "/merit-badges/pets/guide/req1/"
 next_title: "Four Months of Care"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/pets/guide/"
-        is_sub: false
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. Four Months of Care"
-        url: "/merit-badges/pets/guide/req1/"
-        is_sub: false
-      - title: "2. Know Your Pet Well"
-        url: "/merit-badges/pets/guide/req2/"
-        is_sub: false
-      - title: "3. Read and Report"
-        url: "/merit-badges/pets/guide/req3/"
-        is_sub: false
-  - group_title: "4. Show Ring or Tricks"
-    items:
-      - title: "4. Show Time or Trick Time"
-        url: "/merit-badges/pets/guide/req4/"
-        is_sub: false
-      - title: "a Step Into a Pet Show"
-        url: "/merit-badges/pets/guide/req4a/"
-        is_sub: true
-      - title: "b Teach Tricks and Skills"
-        url: "/merit-badges/pets/guide/req4b/"
-        is_sub: true
-  - group_title: "5. Future Paths"
-    items:
-      - title: "5. Future Paths With Pets"
-        url: "/merit-badges/pets/guide/req5/"
-        is_sub: false
-      - title: "a Explore Pet Careers"
-        url: "/merit-badges/pets/guide/req5a/"
-        is_sub: true
-      - title: "b Turn Pet Skills Into a Hobby"
-        url: "/merit-badges/pets/guide/req5b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/pets/guide/extended-learning/"
-        is_sub: false
 ---
 
 Living with a pet means sharing your daily life with another living creature that depends on you. A pet can be funny, comforting, challenging, messy, and rewarding all at once. This merit badge helps you notice what responsible pet care really looks like: steady routines, safe housing, patient training, and respect for an animal's needs.

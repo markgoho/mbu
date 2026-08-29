@@ -5,52 +5,6 @@ badge_name: "Electronics"
 group_title: "Getting Started"
 next: "/merit-badges/electronics/guide/req1/"
 next_title: "Safety Precautions"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/electronics/guide/"
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Safety Precautions"
-        url: "/merit-badges/electronics/guide/req1/"
-      - title: "2. Reading & Drawing Schematics"
-        url: "/merit-badges/electronics/guide/req2/"
-      - title: "3. Soldering Techniques"
-        url: "/merit-badges/electronics/guide/req3/"
-  - group_title: "4. Circuits & Digital Logic"
-    items:
-      - title: "a Control, Logic & Analog"
-        url: "/merit-badges/electronics/guide/req4a/"
-        is_sub: true
-      - title: "b Binary & Decimal Conversion"
-        url: "/merit-badges/electronics/guide/req4b/"
-        is_sub: true
-      - title: "c Build a Circuit Project"
-        url: "/merit-badges/electronics/guide/req4c/"
-        is_sub: true
-  - group_title: "5. Measurement & Components"
-    items:
-      - title: "a Ohm"
-        url: "/merit-badges/electronics/guide/req5a/"
-        is_sub: true
-      - title: "b Test Equipment"
-        url: "/merit-badges/electronics/guide/req5b/"
-        is_sub: true
-      - title: "c Resistor Color Codes"
-        url: "/merit-badges/electronics/guide/req5c/"
-        is_sub: true
-      - title: "d Through Hole vs. Surface Mount"
-        url: "/merit-badges/electronics/guide/req5d/"
-        is_sub: true
-  - group_title: "Career Exploration"
-    items:
-      - title: "6. Career Exploration"
-        url: "/merit-badges/electronics/guide/req6/"
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/electronics/guide/extended-learning/"
 ---
 
 Every time you unlock your phone, flip a light switch, or hear music through a speaker, electronics are at work. The circuits inside those devices — tiny pathways of copper, silicon, and solder — carry electrical signals that make modern life possible. Understanding how those circuits work gives you something most people never have: the ability to build, fix, and invent things that run on electricity.

@@ -5,56 +5,6 @@ badge_name: "Programming"
 group_title: "Getting Started"
 next: "/merit-badges/programming/guide/req1/"
 next_title: "Digital Safety and Coding Health"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/programming/guide/"
-        is_sub: false
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Digital Safety and Coding Health"
-        url: "/merit-badges/programming/guide/req1/"
-        is_sub: false
-      - title: "2. From Punch Cards to Python"
-        url: "/merit-badges/programming/guide/req2/"
-        is_sub: false
-      - title: "3. Languages and Everyday Code"
-        url: "/merit-badges/programming/guide/req3/"
-        is_sub: false
-      - title: "4. Intellectual Property and Software Use"
-        url: "/merit-badges/programming/guide/req4/"
-        is_sub: false
-  - group_title: "5. Building Programs"
-    items:
-      - title: "5. Choosing Your Three Projects"
-        url: "/merit-badges/programming/guide/req5/"
-        is_sub: false
-      - title: "a First Language Project"
-        url: "/merit-badges/programming/guide/req5a/"
-        is_sub: true
-      - title: "b Second Language Project"
-        url: "/merit-badges/programming/guide/req5b/"
-        is_sub: true
-      - title: "c Third Language Project"
-        url: "/merit-badges/programming/guide/req5c/"
-        is_sub: true
-  - group_title: "6. Paths After the Badge"
-    items:
-      - title: "6. Careers or Coding for Life"
-        url: "/merit-badges/programming/guide/req6/"
-        is_sub: false
-      - title: "a Research a Programming Career"
-        url: "/merit-badges/programming/guide/req6a/"
-        is_sub: true
-      - title: "b Build a Programming Hobby"
-        url: "/merit-badges/programming/guide/req6b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/programming/guide/extended-learning/"
-        is_sub: false
 ---
 
 Programming is how people turn ideas into actions a computer can actually perform. Every game menu, weather app, smartwatch alert, and traffic light controller depends on instructions written by a programmer. This merit badge gives you a behind-the-screen view of how software works — and then asks you to build some of it yourself.
