@@ -66,6 +66,7 @@
       "items" (slice (dict "title" "Introduction & Overview" "url" $section.RelPermalink "page_title" "Introduction & Overview"))
     ) }}
 
+    {{ $advancementItems := slice }}
     {{ range $rankData.requirements }}
       {{ $req := . }}
       {{ $children := $req.children | default slice }}
@@ -83,8 +84,17 @@
         {{ $dotsRemoved := replace $req.path "." "" }}
         {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
         {{ $navTitle := printf "%s. %s" $req.req_id $req.short }}
-        {{ $navGroups = $navGroups | append (dict "group_title" "" "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" $req.short))) }}
+        {{ $isMilestone := or (findRE "(?i)conference|board of review|spirit|invite" $req.short) (ge (int $req.req_id) 10) }}
+        {{ if $isMilestone }}
+          {{ $advancementItems = $advancementItems | append (dict "title" $navTitle "url" $pageUrl "page_title" $req.short) }}
+        {{ else }}
+          {{ $navGroups = $navGroups | append (dict "group_title" $req.short "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" $req.short))) }}
+        {{ end }}
       {{ end }}
+    {{ end }}
+
+    {{ if gt (len $advancementItems) 0 }}
+      {{ $navGroups = $navGroups | append (dict "group_title" "Advancement & Review" "items" $advancementItems) }}
     {{ end }}
 
     {{ $extendedUrl := printf "%sextended-learning/" $section.RelPermalink }}
@@ -123,8 +133,9 @@
       {{ else }}
         {{ $dotsRemoved := replace $req.path "." "" }}
         {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
-        {{ $navTitle := printf "%s. %s" $req.req_id ($req.text | truncate 40) }}
-        {{ $navGroups = $navGroups | append (dict "group_title" "" "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" ($req.text | truncate 40)))) }}
+        {{ $shortText := $req.text | truncate 40 }}
+        {{ $navTitle := printf "%s. %s" $req.req_id $shortText }}
+        {{ $navGroups = $navGroups | append (dict "group_title" $shortText "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" $shortText))) }}
       {{ end }}
     {{ end }}
 
