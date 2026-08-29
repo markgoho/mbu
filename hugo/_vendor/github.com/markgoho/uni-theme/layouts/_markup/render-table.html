@@ -40,8 +40,9 @@
       {{- $firstCell := index . 0 -}}
       <li class="req-card-item">
         {{- with $firstCell }}
+          {{- $titleClean := .Text | replaceRE "</?strong>" "" | replaceRE "</?b>" "" | safeHTML -}}
           <header class="req-card-item__header">
-            <h3 class="req-card-item__title">{{ .Text }}</h3>
+            <h3 class="req-card-item__title">{{ $titleClean }}</h3>
           </header>
         {{- end }}
         <dl class="req-card-item__body">
