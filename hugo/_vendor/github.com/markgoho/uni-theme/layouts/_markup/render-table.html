@@ -1,27 +1,61 @@
-<div class="req-table-scroll" tabindex="0" aria-label="Scrollable table">
-  <table>
-    {{- $headers := slice -}}
-    {{- with .THead }}
-      <thead>
-        {{- range . }}
+<div class="req-table-container">
+  {{- $headers := slice -}}
+  {{- with .THead }}
+    {{- range . }}
+      {{- range . }}
+        {{- $headers = $headers | append .Text -}}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
+  {{/* 1. Desktop / Wide Table Representation */}}
+  <div class="req-table-desktop" tabindex="0" aria-label="Scrollable table">
+    <table>
+      {{- with .THead }}
+        <thead>
+          {{- range . }}
+            <tr>
+              {{- range . }}
+                <th{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</th>
+              {{- end }}
+            </tr>
+          {{- end }}
+        </thead>
+      {{- end }}
+      <tbody>
+        {{- range .TBody }}
           <tr>
             {{- range . }}
-              {{- $headers = $headers | append .Text -}}
-              <th{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</th>
+              <td{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</td>
             {{- end }}
           </tr>
         {{- end }}
-      </thead>
-    {{- end }}
-    <tbody>
-      {{- range .TBody }}
-        <tr>
+      </tbody>
+    </table>
+  </div>
+
+  {{/* 2. Mobile / Narrow Container Dedicated CSS Grid Cards */}}
+  <div class="req-table-cards" role="list">
+    {{- range .TBody }}
+      {{- $firstCell := index . 0 -}}
+      <article class="req-card-item" role="listitem">
+        {{- with $firstCell }}
+          <header class="req-card-item__header">
+            <div class="req-card-item__title">{{ .Text }}</div>
+          </header>
+        {{- end }}
+        <div class="req-card-item__body">
           {{- range $i, $cell := . }}
-            {{- $label := index $headers $i | default "" -}}
-            <td{{ with $label }} data-label="{{ . }}"{{ end }}{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</td>
+            {{- if gt $i 0 }}
+              {{- $label := index $headers $i | default "" -}}
+              <div class="req-card-item__row">
+                <span class="req-card-item__label">{{ $label }}</span>
+                <span class="req-card-item__value"{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{ .Text }}</span>
+              </div>
+            {{- end }}
           {{- end }}
-        </tr>
-      {{- end }}
-    </tbody>
-  </table>
+        </div>
+      </article>
+    {{- end }}
+  </div>
 </div>
