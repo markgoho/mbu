@@ -1,10 +1,12 @@
 <div class="req-table-scroll" tabindex="0" aria-label="Scrollable table">
   <table>
+    {{- $headers := slice -}}
     {{- with .THead }}
       <thead>
         {{- range . }}
           <tr>
             {{- range . }}
+              {{- $headers = $headers | append .Text -}}
               <th{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</th>
             {{- end }}
           </tr>
@@ -14,8 +16,9 @@
     <tbody>
       {{- range .TBody }}
         <tr>
-          {{- range . }}
-            <td{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</td>
+          {{- range $i, $cell := . }}
+            {{- $label := index $headers $i | default "" -}}
+            <td{{ with $label }} data-label="{{ . }}"{{ end }}{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{- .Text -}}</td>
           {{- end }}
         </tr>
       {{- end }}
