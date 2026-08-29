@@ -117,7 +117,8 @@
     {{ range $badgeData.requirements }}
       {{ $req := . }}
       {{ $subreqs := $req.subrequirements | default slice }}
-      {{ if gt (len $subreqs) 0 }}
+      {{ $parentReqPage := $section.GetPage (printf "req%s" $req.req_id) }}
+      {{ if and (gt (len $subreqs) 0) (not $parentReqPage) }}
         {{ range $subreqs }}
           {{ $dotsRemoved := replace .path "." "" }}
           {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
@@ -142,7 +143,7 @@
       {{ else }}
         {{ $dotsRemoved := replace $req.path "." "" }}
         {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
-        {{ $reqPage := $section.GetPage (printf "req%s" $dotsRemoved) }}
+        {{ $reqPage := $parentReqPage | default ($section.GetPage (printf "req%s" $dotsRemoved)) }}
         {{ $cleanTitle := $req.text | truncate 40 }}
         {{ $gTitle := printf "%s. Requirement %s" $req.req_id $req.req_id }}
         {{ with $reqPage }}

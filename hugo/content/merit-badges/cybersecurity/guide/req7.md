@@ -1,7 +1,7 @@
 ---
 title: "IoT Devices"
 layout: guide
-group_title: "7. Connected World"
+group_title: "Projects & Careers"
 req_number: "7"
 prev: "/merit-badges/cybersecurity/guide/req6c/"
 prev_title: "Crypto Hands-On"
