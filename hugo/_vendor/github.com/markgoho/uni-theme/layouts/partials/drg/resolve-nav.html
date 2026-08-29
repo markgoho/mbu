@@ -111,32 +111,59 @@
       "items" (slice (dict "title" "Introduction & Overview" "url" $section.RelPermalink "page_title" "Introduction & Overview"))
     ) }}
 
+    {{ $lastGroupTitle := "" }}
+    {{ $currentGroupItems := slice }}
+
     {{ range $badgeData.requirements }}
       {{ $req := . }}
       {{ $subreqs := $req.subrequirements | default slice }}
       {{ if gt (len $subreqs) 0 }}
-        {{ $gTitle := printf "%s. Requirement %s" $req.req_id $req.req_id }}
-        {{ if $req.text }}
-          {{ $shortText := $req.text | truncate 40 }}
-          {{ if not (findRE "^Do the following" $req.text) }}
-            {{ $gTitle = printf "%s. %s" $req.req_id $shortText }}
-          {{ end }}
-        {{ end }}
-        {{ $items := slice }}
         {{ range $subreqs }}
           {{ $dotsRemoved := replace .path "." "" }}
           {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
-          {{ $navTitle := printf "%s %s" .req_id (.text | truncate 40) }}
-          {{ $items = $items | append (dict "title" $navTitle "url" $pageUrl "page_title" (.text | truncate 40)) }}
+          {{ $reqPage := $section.GetPage (printf "req%s" $dotsRemoved) }}
+          {{ $cleanTitle := .text | truncate 40 }}
+          {{ $gTitle := printf "%s. Requirement %s" $req.req_id $req.req_id }}
+          {{ with $reqPage }}
+            {{ $cleanTitle = .Title }}
+            {{ with .Params.group_title }}{{ $gTitle = . }}{{ end }}
+          {{ end }}
+          {{ $navTitle := printf "%s %s" .req_id $cleanTitle }}
+          {{ if eq $gTitle $lastGroupTitle }}
+            {{ $currentGroupItems = $currentGroupItems | append (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
+          {{ else }}
+            {{ if gt (len $currentGroupItems) 0 }}
+              {{ $navGroups = $navGroups | append (dict "group_title" $lastGroupTitle "items" $currentGroupItems) }}
+            {{ end }}
+            {{ $lastGroupTitle = $gTitle }}
+            {{ $currentGroupItems = slice (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
+          {{ end }}
         {{ end }}
-        {{ $navGroups = $navGroups | append (dict "group_title" $gTitle "items" $items) }}
       {{ else }}
         {{ $dotsRemoved := replace $req.path "." "" }}
         {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
-        {{ $shortText := $req.text | truncate 40 }}
-        {{ $navTitle := printf "%s. %s" $req.req_id $shortText }}
-        {{ $navGroups = $navGroups | append (dict "group_title" $shortText "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" $shortText))) }}
+        {{ $reqPage := $section.GetPage (printf "req%s" $dotsRemoved) }}
+        {{ $cleanTitle := $req.text | truncate 40 }}
+        {{ $gTitle := printf "%s. Requirement %s" $req.req_id $req.req_id }}
+        {{ with $reqPage }}
+          {{ $cleanTitle = .Title }}
+          {{ with .Params.group_title }}{{ $gTitle = . }}{{ end }}
+        {{ end }}
+        {{ $navTitle := printf "%s. %s" $req.req_id $cleanTitle }}
+        {{ if eq $gTitle $lastGroupTitle }}
+          {{ $currentGroupItems = $currentGroupItems | append (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
+        {{ else }}
+          {{ if gt (len $currentGroupItems) 0 }}
+            {{ $navGroups = $navGroups | append (dict "group_title" $lastGroupTitle "items" $currentGroupItems) }}
+          {{ end }}
+          {{ $lastGroupTitle = $gTitle }}
+          {{ $currentGroupItems = slice (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
+        {{ end }}
       {{ end }}
+    {{ end }}
+
+    {{ if gt (len $currentGroupItems) 0 }}
+      {{ $navGroups = $navGroups | append (dict "group_title" $lastGroupTitle "items" $currentGroupItems) }}
     {{ end }}
 
     {{ $extendedUrl := printf "%sextended-learning/" $section.RelPermalink }}
