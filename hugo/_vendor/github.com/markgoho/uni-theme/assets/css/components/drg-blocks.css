@@ -740,3 +740,46 @@
   font-weight: var(--font-weight-bold);
   border-bottom-color: var(--accent);
 }
+
+/* ------------------------------------------------------------------ */
+/* Tables (markdown-generated via render-table hook)                    */
+/* ------------------------------------------------------------------ */
+
+.req-table-scroll {
+  overflow-x: auto;
+  margin-block: var(--space-m);
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--outline-variant);
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: 0;
+    font-size: var(--step--1);
+
+    & th {
+      background-color: var(--surface-sunken);
+      font-weight: var(--font-weight-bold);
+      color: var(--on-surface);
+      text-align: left;
+      padding: var(--space-xs) var(--space-s);
+      border: 1px solid var(--outline-variant);
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+
+    & td {
+      padding: var(--space-xs) var(--space-s);
+      border: 1px solid var(--outline-variant);
+      vertical-align: top;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+
+    & tbody tr:nth-child(even) {
+      background-color: var(--surface-raised);
+    }
+  }
+}
+
