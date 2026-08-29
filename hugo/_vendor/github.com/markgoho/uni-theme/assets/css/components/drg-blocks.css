@@ -818,13 +818,17 @@
 .req-card-item__header {
   background-color: var(--surface-sunken);
   border-bottom: 1px solid var(--outline-variant);
-  padding: var(--space-xs) var(--space-m);
+  padding: var(--space-3xs) var(--space-m);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .req-card-item__title {
   margin: 0;
+  width: 100%;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--space-xs);
@@ -837,6 +841,9 @@
   & a {
     color: inherit;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     view-transition-class: mb-title;
 
     &:hover {
@@ -850,6 +857,8 @@
     font-weight: var(--font-weight-normal);
     color: var(--on-surface-muted);
     font-style: italic;
+    display: inline-flex;
+    align-items: center;
   }
 }
 
