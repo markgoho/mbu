@@ -94,7 +94,19 @@
                   req-nav__link--active
                 {{ end }}"
                 {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
-                {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
+                {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
+                {{ $hasMarker := findRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` $cleanTitle }}
+                {{ if $hasMarker }}
+                  {{ $marker := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$1" $cleanTitle }}
+                  {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
+                    {{ $marker = replaceRE "\\.$" "" $marker }}
+                  {{ end }}
+                  {{ $label := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$2" $cleanTitle }}
+                  <span class="req-nav__marker">{{ $marker }}</span>
+                  <span class="req-nav__label">{{ $label }}</span>
+                {{ else }}
+                  <span class="req-nav__label">{{ $cleanTitle }}</span>
+                {{ end }}
               </a>
             </li>
           {{ end }}
@@ -105,7 +117,7 @@
             <li class="req-nav__item">
               <a href="{{ . }}" class="req-nav__link req-nav__link--reference">
                 {{ partial "icon.html" (dict "name" "list-checks" "class" "req-nav__link-icon") }}
-                View Requirements
+                <span class="req-nav__label">View Requirements</span>
               </a>
             </li>
           {{ end }}
@@ -113,7 +125,7 @@
             <li class="req-nav__item">
               <a href="{{ .RelPermalink }}" class="req-nav__link req-nav__link--reference">
                 {{ partial "icon.html" (dict "name" "scroll" "class" "req-nav__link-icon") }}
-                Print Complete Guide
+                <span class="req-nav__label">Print Complete Guide</span>
               </a>
             </li>
           {{ end }}
@@ -179,7 +191,19 @@
                     req-mobile-nav__link--active
                   {{ end }}"
                   {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
-                  <span>{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}</span>
+                  {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
+                  {{ $hasMarker := findRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` $cleanTitle }}
+                  {{ if $hasMarker }}
+                    {{ $marker := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$1" $cleanTitle }}
+                    {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
+                      {{ $marker = replaceRE "\\.$" "" $marker }}
+                    {{ end }}
+                    {{ $label := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$2" $cleanTitle }}
+                    <span class="req-mobile-nav__marker">{{ $marker }}</span>
+                    <span class="req-mobile-nav__label">{{ $label }}</span>
+                  {{ else }}
+                    <span class="req-mobile-nav__label">{{ $cleanTitle }}</span>
+                  {{ end }}
                   {{ if $isCurrent }}
                     <svg class="req-mobile-nav__check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   {{ end }}
@@ -193,7 +217,7 @@
               <li>
                 <a href="{{ . }}" class="req-mobile-nav__link req-mobile-nav__link--reference">
                   {{ partial "icon.html" (dict "name" "list-checks" "class" "req-mobile-nav__link-icon") }}
-                  <span>View Requirements</span>
+                  <span class="req-mobile-nav__label">View Requirements</span>
                 </a>
               </li>
             {{ end }}
@@ -201,7 +225,7 @@
               <li>
                 <a href="{{ .RelPermalink }}" class="req-mobile-nav__link req-mobile-nav__link--reference">
                   {{ partial "icon.html" (dict "name" "scroll" "class" "req-mobile-nav__link-icon") }}
-                  <span>Print Complete Guide</span>
+                  <span class="req-mobile-nav__label">Print Complete Guide</span>
                 </a>
               </li>
             {{ end }}
