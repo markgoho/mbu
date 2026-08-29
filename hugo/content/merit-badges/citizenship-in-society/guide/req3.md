@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Ethical Decisions"
+title: "Ethical Decisions"
 layout: guide
-group_title: "Ethical Decision-Making"
+group_title: "3. Ethical Decision-Making"
 req_number: "3"
 prev: "/merit-badges/citizenship-in-society/guide/req2/"
-prev_title: "Req 2 — Ethical Leadership"
+prev_title: "Ethical Leadership"
 next: "/merit-badges/citizenship-in-society/guide/req4/"
-next_title: "Req 4 — Responding to Scenarios"
+next_title: "Responding to Scenarios"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Maintenance and Emergency Stops"
+title: "Maintenance and Emergency Stops"
 layout: "guide"
-group_title: "Pre-Drive Safety Checkups"
+group_title: "3. Pre-Drive Safety Checkups"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/traffic-safety/guide/req2/"
-prev_title: "Req 2 — Vehicle Safety Basics"
+prev_title: "Vehicle Safety Basics"
 next: "/merit-badges/traffic-safety/guide/req4/"
-next_title: "Req 4 — Traffic Safety and the Law"
+next_title: "Traffic Safety and the Law"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1g — Hunter Education and State Hunting Laws"
+title: "Hunter Education and State Hunting Laws"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1g"
 req_path: "1.g"
 prev: "/merit-badges/shotgun-shooting/guide/req1f/"
-prev_title: "Req 1f — Hunting and Wildlife Resources"
+prev_title: "Hunting and Wildlife Resources"
 next: "/merit-badges/shotgun-shooting/guide/req1h/"
-next_title: "Req 1h — Hygiene on the Range"
+next_title: "Hygiene on the Range"
 ---
 
 {{< drg/requirement number="1g" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — The Story of Human Discovery"
+title: "The Story of Human Discovery"
 layout: "guide"
-group_title: "History of Discovery"
+group_title: "2. History of Discovery"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/exploration/guide/req1/"
-prev_title: "Req 1 — What Counts as Exploration"
+prev_title: "What Counts as Exploration"
 next: "/merit-badges/exploration/guide/req3/"
-next_title: "Req 3 — Why Exploration Matters"
+next_title: "Why Exploration Matters"
 ---
 
 {{< drg/requirement number="2" >}}

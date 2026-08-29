@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Choose Your Garden Project"
+title: "Choose Your Garden Project"
 layout: guide
-group_title: "Hands-On Garden Projects"
+group_title: "8. Hands-On Garden Projects"
 req_number: "8"
 prev: "/merit-badges/gardening/guide/req7/"
-prev_title: "Req 7 — Garden Pests & Organic Solutions"
+prev_title: "Garden Pests & Organic Solutions"
 next: "/merit-badges/gardening/guide/req8a/"
-next_title: "Req 8a — Compost Bin Project"
+next_title: "Compost Bin Project"
 ---
 
 {{< drg/requirement number="8" >}}

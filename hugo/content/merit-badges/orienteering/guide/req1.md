@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Safety and First Aid"
+title: "Safety and First Aid"
 layout: guide
-group_title: "Safety & First Aid"
+group_title: "1. Safety & First Aid"
 req_number: "1"
 prev: "/merit-badges/orienteering/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/orienteering/guide/req2/"
-next_title: "Req 2 — What Is Orienteering?"
+next_title: "What Is Orienteering?"
 ---
 
 {{< drg/requirement number="1" >}}

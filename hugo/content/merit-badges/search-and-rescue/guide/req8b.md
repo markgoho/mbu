@@ -1,11 +1,11 @@
 ---
-title: "Req 8b — Volunteer Response Paths"
+title: "Volunteer Response Paths"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "8. Future Paths"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/search-and-rescue/guide/req8a/"
-prev_title: "Req 8a — Research an SAR Career"
+prev_title: "Research an SAR Career"
 next: "/merit-badges/search-and-rescue/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

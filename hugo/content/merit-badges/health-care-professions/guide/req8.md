@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Recent Medical Breakthroughs"
+title: "Recent Medical Breakthroughs"
 layout: guide
-group_title: "Medical Innovation"
+group_title: "8. Medical Innovation"
 req_number: "8"
 prev: "/merit-badges/health-care-professions/guide/req7/"
-prev_title: "Req 7 — Confidentiality and HIPAA"
+prev_title: "Confidentiality and HIPAA"
 next: "/merit-badges/health-care-professions/guide/req9/"
-next_title: "Req 9 — Volunteer in Health Care"
+next_title: "Volunteer in Health Care"
 ---
 
 {{< drg/requirement number="8" >}}

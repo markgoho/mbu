@@ -1,11 +1,11 @@
 ---
-title: "Req 4b — Build a Film Hobby"
+title: "Build a Film Hobby"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "4. Future Paths"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/moviemaking/guide/req4a/"
-prev_title: "Req 4a — Research a Film Career"
+prev_title: "Research a Film Career"
 next: "/merit-badges/moviemaking/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Req 5g — Home Fire Escape Plan"
+title: "Home Fire Escape Plan"
 layout: guide
-group_title: "Home Fire Safety"
+group_title: "5. Home Fire Safety"
 req_number: "5g"
 prev: "/merit-badges/fire-safety/guide/req5ef/"
-prev_title: "Req 5e–5f — Smoke & CO Alarms"
+prev_title: "Smoke & CO Alarms"
 next: "/merit-badges/fire-safety/guide/req5hi/"
-next_title: "Req 5h–5i — Gas, Smoke & Reporting Fires"
+next_title: "Gas, Smoke & Reporting Fires"
 ---
 
  {{< drg/requirement number="5g" >}}

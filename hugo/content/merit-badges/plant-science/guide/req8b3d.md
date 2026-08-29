@@ -1,13 +1,13 @@
 ---
-title: "Req 8b3d — Planting a Tree or Shrub"
+title: "Planting a Tree or Shrub"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b3d"
 req_path: "8.b.3.d"
 prev: "/merit-badges/plant-science/guide/req8b3c/"
-prev_title: "Req 8b3c — Pruning with Purpose"
+prev_title: "Pruning Techniques"
 next: "/merit-badges/plant-science/guide/req8b4/"
-next_title: "Req 8b4 — Smart Landscape Choices"
+next_title: "Landscape Design Principles"
 ---
 
 {{< drg/requirement number="8b3d" >}}

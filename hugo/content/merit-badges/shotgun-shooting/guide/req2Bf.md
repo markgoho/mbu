@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-f — Components of a Load"
+title: "Components of a Load"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-f"
 req_path: "2.B.f"
 prev: "/merit-badges/shotgun-shooting/guide/req2Be/"
-prev_title: "Req 2B-e — Black Powder Storage Safety"
+prev_title: "Black Powder Storage Safety"
 next: "/merit-badges/shotgun-shooting/guide/req2Bg/"
-next_title: "Req 2B-g — Loading Procedures and Accessories"
+next_title: "Loading Procedures and Accessories"
 ---
 
 {{< drg/requirement number="2B-f" >}}

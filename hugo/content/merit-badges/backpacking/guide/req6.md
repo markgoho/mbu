@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Navigation"
+title: "Navigation"
 layout: guide
-group_title: "Navigation"
+group_title: "6. Navigation"
 req_number: "6"
 prev: "/merit-badges/backpacking/guide/req5/"
-prev_title: "Req 5 — Water Treatment & Hydration"
+prev_title: "Water Treatment & Hydration"
 next: "/merit-badges/backpacking/guide/req7/"
-next_title: "Req 7 — Weather Preparedness"
+next_title: "Weather Preparedness"
 ---
 
 {{< drg/requirement number="6" >}}

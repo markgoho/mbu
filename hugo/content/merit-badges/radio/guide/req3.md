@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Wave Propagation"
+title: "Wave Propagation"
 layout: "guide"
-group_title: "How Radio Waves Travel"
+group_title: "3. How Radio Waves Travel"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/radio/guide/req2b/"
-prev_title: "Req 2b — Radio Basics"
+prev_title: "Radio Basics"
 next: "/merit-badges/radio/guide/req4/"
-next_title: "Req 4 — Modulation & Data"
+next_title: "Modulation & Data"
 guide_nav:
   - group_title: "Getting Started"
     items:

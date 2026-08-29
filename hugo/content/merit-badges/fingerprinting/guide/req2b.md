@@ -1,12 +1,12 @@
 ---
-title: "Requirement 2b — Authentication in Daily Life"
+title: "Authentication in Daily Life"
 layout: guide
-group_title: "Modern Identification Systems"
+group_title: "2. Modern Identification Systems"
 req_number: "2b"
 prev: "/merit-badges/fingerprinting/guide/req2a/"
-prev_title: "Requirement 2a — AFIS and Biometric Systems"
+prev_title: "AFIS and Biometric Systems"
 next: "/merit-badges/fingerprinting/guide/req3a/"
-next_title: "Requirement 3a — Friction Ridges on the Body"
+next_title: "Friction Ridges on the Body"
 ---
 
 {{< drg/requirement number="2b" >}}

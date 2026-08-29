@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — IoT Devices"
+title: "IoT Devices"
 layout: guide
-group_title: "Connected World"
+group_title: "7. Connected World"
 req_number: "7"
 prev: "/merit-badges/cybersecurity/guide/req6c/"
-prev_title: "Req 6c — Crypto Hands-On"
+prev_title: "Crypto Hands-On"
 next: "/merit-badges/cybersecurity/guide/req8/"
-next_title: "Req 8 — Cybersecurity Activities"
+next_title: "Cybersecurity Activities"
 ---
 
 {{< drg/requirement number="7" >}}

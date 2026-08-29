@@ -1,11 +1,11 @@
 ---
-title: "Req 15d — EMS as a Lifestyle"
+title: "EMS as a Lifestyle"
 layout: "guide"
-group_title: "EMS Careers"
+group_title: "15. EMS Careers"
 req_number: "15d"
 req_path: "15.d"
 prev: "/merit-badges/first-aid/guide/req15c/"
-prev_title: "Req 15c — Research an EMS Career"
+prev_title: "Research an EMS Career"
 next: "/merit-badges/first-aid/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

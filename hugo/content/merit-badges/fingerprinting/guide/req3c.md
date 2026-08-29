@@ -1,12 +1,12 @@
 ---
-title: "Requirement 3c — Positive Identification"
+title: "Positive Identification"
 layout: guide
-group_title: "The Science of Fingerprints"
+group_title: "3. The Science of Fingerprints"
 req_number: "3c"
 prev: "/merit-badges/fingerprinting/guide/req3b/"
-prev_title: "Requirement 3b — Principles of Fingerprint Science"
+prev_title: "Principles of Fingerprint Science"
 next: "/merit-badges/fingerprinting/guide/req4a/"
-next_title: "Requirement 4a — Official Fingerprint Cards"
+next_title: "Official Fingerprint Cards"
 ---
 
 {{< drg/requirement number="3c" >}}

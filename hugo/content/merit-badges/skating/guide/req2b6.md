@@ -1,13 +1,13 @@
 ---
-title: "Req 2b6 — Forward Crossover"
+title: "Forward Crossover"
 layout: "guide"
-group_title: "Option B — Roller Skating"
+group_title: "2. Option B — Roller Skating"
 req_number: "2b6"
 req_path: "2.b.6"
 prev: "/merit-badges/skating/guide/req2b5/"
-prev_title: "Req 2b5 — One-Foot Glide"
+prev_title: "One-Foot Glide"
 next: "/merit-badges/skating/guide/req2b7/"
-next_title: "Req 2b7 — Backward Skating"
+next_title: "Backward Skating"
 ---
 
 {{< drg/requirement number="2b6" >}}

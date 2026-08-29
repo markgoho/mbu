@@ -1,13 +1,13 @@
 ---
-title: "Req 3d — Interview a Rail Professional"
+title: "Interview a Rail Professional"
 layout: "guide"
-group_title: "Rail Careers & Businesses"
+group_title: "3. Rail Careers & Businesses"
 req_number: "3d"
 req_path: "3.d"
 prev: "/merit-badges/railroading/guide/req3c/"
-prev_title: "Req 3c — Rail Support Industries"
+prev_title: "Rail Support Industries"
 next: "/merit-badges/railroading/guide/req4/"
-next_title: "Req 4 — Track Safety and Safe Behavior"
+next_title: "Track Safety and Safe Behavior"
 ---
 
 {{< drg/requirement number="3d" >}}

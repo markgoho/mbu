@@ -1,10 +1,10 @@
 ---
-title: "Req 5e — Aviation Careers"
+title: "Aviation Careers"
 layout: guide
-group_title: "Aviation Careers"
+group_title: "5. Aviation Careers"
 req_number: "5e"
 prev: "/merit-badges/aviation/guide/req5d/"
-prev_title: "Req 5d — Aviation Organizations"
+prev_title: "Aviation Organizations"
 next: "/merit-badges/aviation/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

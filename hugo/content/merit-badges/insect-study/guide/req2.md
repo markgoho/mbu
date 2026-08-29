@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Insect Anatomy and Orders"
+title: "Insect Anatomy and Orders"
 layout: guide
-group_title: "Body Plans and Identification"
+group_title: "2. Body Plans and Identification"
 req_number: "2"
 prev: "/merit-badges/insect-study/guide/req1/"
-prev_title: "Req 1 — Ants, Bees, and Field Safety"
+prev_title: "Ants, Bees, and Field Safety"
 next: "/merit-badges/insect-study/guide/req3/"
-next_title: "Req 3 — Life Cycles and Rearing"
+next_title: "Life Cycles and Rearing"
 ---
 
 {{< drg/requirement number="2" >}}

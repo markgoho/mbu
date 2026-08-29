@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Digital Safety and Coding Health"
+title: "Digital Safety and Coding Health"
 layout: "guide"
-group_title: "Safety and Healthy Coding"
+group_title: "1. Safety and Healthy Coding"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/programming/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/programming/guide/req2/"
-next_title: "Req 2 — From Punch Cards to Python"
+next_title: "From Punch Cards to Python"
 ---
 
 {{< drg/requirement number="1" >}}

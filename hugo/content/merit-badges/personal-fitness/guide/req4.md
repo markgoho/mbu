@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Fitness Assessments"
+title: "Fitness Assessments"
 layout: guide
-group_title: "Measuring Your Fitness"
+group_title: "4. Measuring Your Fitness"
 req_number: "4"
 prev: "/merit-badges/personal-fitness/guide/req3g/"
-prev_title: "Req 3g — Social & Family Time"
+prev_title: "Social & Family Time"
 next: "/merit-badges/personal-fitness/guide/req5/"
-next_title: "Req 5 — Baseline Testing"
+next_title: "Baseline Testing"
 ---
 
 {{< drg/requirement number="4" >}}

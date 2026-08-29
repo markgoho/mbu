@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Obedience Basics"
+title: "Obedience Basics"
 layout: guide
-group_title: "Teaching Good Habits"
+group_title: "5. Teaching Good Habits"
 req_number: "5"
 prev: "/merit-badges/dog-care/guide/req4/"
-prev_title: "Req 4 — Two-Month Care Log"
+prev_title: "Two-Month Care Log"
 next: "/merit-badges/dog-care/guide/req6a/"
-next_title: "Req 6a — Vaccination Planning"
+next_title: "Vaccination Planning"
 ---
 
 {{< drg/requirement number="5" >}}

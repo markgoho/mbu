@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Health Habits That Support Performance"
+title: "Health Habits That Support Performance"
 layout: "guide"
-group_title: "Building a Healthy Athlete"
+group_title: "2. Building a Healthy Athlete"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/sports/guide/req1/"
-prev_title: "Req 1 — Sports Safety and First Aid"
+prev_title: "Sports Safety and First Aid"
 next: "/merit-badges/sports/guide/req3/"
-next_title: "Req 3 — Preparation, Strength, and Sportsmanship"
+next_title: "Preparation, Strength, and Sportsmanship"
 ---
 
 {{< drg/requirement number="2" >}}

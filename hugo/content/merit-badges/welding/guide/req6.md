@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Beads and Basic Joints"
+title: "Beads and Basic Joints"
 layout: "guide"
-group_title: "Hands-On Welds"
+group_title: "6. Hands-On Welds"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/welding/guide/req5/"
-prev_title: "Req 5 — Process Selection and Setup"
+prev_title: "Process Selection and Setup"
 next: "/merit-badges/welding/guide/req7/"
-next_title: "Req 7 — Careers and the American Welding Society"
+next_title: "Careers and the American Welding Society"
 ---
 
 {{< drg/requirement number="6" >}}

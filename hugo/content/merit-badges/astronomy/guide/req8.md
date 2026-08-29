@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Choose Your Adventure"
+title: "Choose Your Adventure"
 layout: guide
-group_title: "Hands-On Astronomy"
+group_title: "8. Hands-On Astronomy"
 req_number: "8"
 prev: "/merit-badges/astronomy/guide/req7c/"
-prev_title: "Req 7c — Star Colors"
+prev_title: "Star Colors"
 next: "/merit-badges/astronomy/guide/req9/"
-next_title: "Req 9 — Astronomy Careers or Hobbies"
+next_title: "Astronomy Careers or Hobbies"
 ---
 
 {{< drg/requirement number="8" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Inspect, Adjust & Repair"
+title: "Inspect, Adjust & Repair"
 layout: guide
-group_title: "Bicycle Maintenance"
+group_title: "4. Bicycle Maintenance"
 req_number: "4"
 prev: "/merit-badges/cycling/guide/req3/"
-prev_title: "Req 3 — Clothing, Gear & Helmets"
+prev_title: "Clothing, Gear & Helmets"
 next: "/merit-badges/cycling/guide/req5/"
-next_title: "Req 5 — Basic Bike Handling"
+next_title: "Basic Bike Handling"
 ---
 
 {{< drg/requirement number="4" >}}

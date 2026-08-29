@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — A Positive Turning Point"
+title: "A Positive Turning Point"
 layout: guide
-group_title: "Moments That Changed Society"
+group_title: "8. Moments That Changed Society"
 req_number: "8"
 prev: "/merit-badges/citizenship-in-society/guide/req7/"
-prev_title: "Req 7 — Community Impact Interview"
+prev_title: "Community Impact Interview"
 next: "/merit-badges/citizenship-in-society/guide/req9/"
-next_title: "Req 9 — Leadership Beyond Scouting"
+next_title: "Leadership Beyond Scouting"
 ---
 
 {{< drg/requirement number="8" >}}

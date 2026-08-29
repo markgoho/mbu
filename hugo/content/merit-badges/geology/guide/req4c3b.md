@@ -1,12 +1,12 @@
 ---
-title: "Req 4c3b — Identify 15 Specimens"
+title: "Identify 15 Specimens"
 layout: guide
-group_title: "Mineral Resources"
+group_title: "4. Mineral Resources"
 req_number: "4c3b"
 prev: "/merit-badges/geology/guide/req4c3a/"
-prev_title: "Req 4c3a — Build a 10-Specimen Collection"
+prev_title: "Build a 10-Specimen Collection"
 next: "/merit-badges/geology/guide/req4c4/"
-next_title: "Req 4c4 — Road-Building Materials"
+next_title: "Road-Building Materials"
 ---
 
 {{< drg/requirement number="4c3b" >}}

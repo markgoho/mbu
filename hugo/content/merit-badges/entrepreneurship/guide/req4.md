@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Brainstorming Business Ideas"
+title: "Brainstorming Business Ideas"
 layout: guide
-group_title: "Real-World Research"
+group_title: "3. Real-World Research"
 req_number: "4"
 prev: "/merit-badges/entrepreneurship/guide/req3/"
-prev_title: "Req 3 — Interviewing an Entrepreneur"
+prev_title: "Interviewing an Entrepreneur"
 next: "/merit-badges/entrepreneurship/guide/req5a/"
-next_title: "Req 5a — Product or Service"
+next_title: "Product or Service"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2d4 — Protective Gear"
+title: "Protective Gear"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d4"
 req_path: "2.d.4"
 prev: "/merit-badges/skating/guide/req2d3/"
-prev_title: "Req 2d3 — Safety Rules & Courtesy"
+prev_title: "Safety Rules & Courtesy"
 next: "/merit-badges/skating/guide/req2d5/"
-next_title: "Req 2d5 — Street vs. Vert Styles"
+next_title: "Street vs. Vert Styles"
 ---
 
 {{< drg/requirement number="2d4" >}}

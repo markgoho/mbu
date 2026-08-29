@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — From Idea to Finished Robot"
+title: "From Idea to Finished Robot"
 layout: "guide"
-group_title: "Design and Build Your Robot"
+group_title: "4. Design and Build Your Robot"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/robotics/guide/req3/"
-prev_title: "Req 3 — Core Robotics Systems"
+prev_title: "Core Robotics Systems"
 next: "/merit-badges/robotics/guide/req4a/"
-next_title: "Req 4a — Choose the Mission"
+next_title: "Choose the Mission"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Land Pollution"
+title: "Land Pollution"
 layout: guide
-group_title: "Land Pollution"
+group_title: "5. Land Pollution"
 req_number: "5"
 prev: "/merit-badges/environmental-science/guide/req4/"
-prev_title: "Req 4 — Water Pollution"
+prev_title: "Water Pollution"
 next: "/merit-badges/environmental-science/guide/req6/"
-next_title: "Req 6 — Rare, Threatened, or Endangered Species"
+next_title: "Rare, Threatened, or Endangered Species"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -4,77 +4,77 @@ layout: "guide"
 badge_name: "Exploration"
 group_title: "Getting Started"
 next: "/merit-badges/exploration/guide/req1/"
-next_title: "Req 1 — What Counts as Exploration"
+next_title: "What Counts as Exploration"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/exploration/guide/"
         is_sub: false
-  - group_title: "Foundations of Exploration"
+  - group_title: "1. Foundations of Exploration"
     items:
-      - title: "Req 1 — What Counts as Exploration"
+      - title: "1. What Counts as Exploration"
         url: "/merit-badges/exploration/guide/req1/"
         is_sub: false
-  - group_title: "History of Discovery"
+  - group_title: "2. History of Discovery"
     items:
-      - title: "Req 2 — The Story of Human Discovery"
+      - title: "2. The Story of Human Discovery"
         url: "/merit-badges/exploration/guide/req2/"
         is_sub: false
-  - group_title: "Why Humans Explore"
+  - group_title: "3. Why Humans Explore"
     items:
-      - title: "Req 3 — Why Exploration Matters"
+      - title: "3. Why Exploration Matters"
         url: "/merit-badges/exploration/guide/req3/"
         is_sub: false
-  - group_title: "Real-World Exploration"
+  - group_title: "4. Real-World Exploration"
     items:
-      - title: "Req 4 — Choose a Real-World Exploration Path"
+      - title: "4. Choose a Real-World Exploration Path"
         url: "/merit-badges/exploration/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Profile a Living Explorer"
+      - title: "a Profile a Living Explorer"
         url: "/merit-badges/exploration/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Study a Scientific Expedition"
+      - title: "b Study a Scientific Expedition"
         url: "/merit-badges/exploration/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Explore Discovery in the Lab"
+      - title: "c Explore Discovery in the Lab"
         url: "/merit-badges/exploration/guide/req4c/"
         is_sub: true
-  - group_title: "Places That Support Discovery"
+  - group_title: "5. Places That Support Discovery"
     items:
-      - title: "Req 5 — Choose a Place to Learn"
+      - title: "5. Choose a Place to Learn"
         url: "/merit-badges/exploration/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Visit an Exploration Organization"
+      - title: "a Visit an Exploration Organization"
         url: "/merit-badges/exploration/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Visit a Research Facility"
+      - title: "b Visit a Research Facility"
         url: "/merit-badges/exploration/guide/req5b/"
         is_sub: true
-  - group_title: "Planning the Mission"
+  - group_title: "6. Planning the Mission"
     items:
-      - title: "Req 6 — Plan an Expedition That Works"
+      - title: "6. Plan an Expedition That Works"
         url: "/merit-badges/exploration/guide/req6/"
         is_sub: false
-  - group_title: "Preparing to Go"
+  - group_title: "7. Preparing to Go"
     items:
-      - title: "Req 7 — Prepare for the Real Thing"
+      - title: "7. Prepare for the Real Thing"
         url: "/merit-badges/exploration/guide/req7/"
         is_sub: false
-  - group_title: "The Expedition Itself"
+  - group_title: "8. The Expedition Itself"
     items:
-      - title: "Req 8 — Carry Out the Expedition"
+      - title: "8. Carry Out the Expedition"
         url: "/merit-badges/exploration/guide/req8/"
         is_sub: false
-  - group_title: "Exploration Futures"
+  - group_title: "9. Exploration Futures"
     items:
-      - title: "Req 9 — Choose Your Next Path"
+      - title: "9. Choose Your Next Path"
         url: "/merit-badges/exploration/guide/req9/"
         is_sub: false
-      - title: "Req 9a — Research an Exploration Career"
+      - title: "a Research an Exploration Career"
         url: "/merit-badges/exploration/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Turn Curiosity into a Hobby"
+      - title: "b Turn Curiosity into a Hobby"
         url: "/merit-badges/exploration/guide/req9b/"
         is_sub: true
   - group_title: "Beyond the Badge"

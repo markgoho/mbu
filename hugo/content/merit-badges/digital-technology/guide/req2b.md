@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Future Technology"
+title: "Future Technology"
 layout: guide
-group_title: "Computing Past & Future"
+group_title: "2. Computing Past & Future"
 req_number: "2b"
 prev: "/merit-badges/digital-technology/guide/req2a/"
-prev_title: "Req 2a — History of Digital Technology"
+prev_title: "History of Digital Technology"
 next: "/merit-badges/digital-technology/guide/req3a/"
-next_title: "Req 3a — Digitizing Text, Sound & Images"
+next_title: "Digitizing Text, Sound & Images"
 ---
 
 {{< drg/requirement number="2b" >}}

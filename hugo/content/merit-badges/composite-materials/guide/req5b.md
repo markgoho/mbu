@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Finding a Workspace"
+title: "Finding a Workspace"
 layout: guide
-group_title: "Building with Composites"
+group_title: "5. Building with Composites"
 req_number: "5b"
 prev: "/merit-badges/composite-materials/guide/req5a/"
-prev_title: "Req 5a — Hands-On Projects"
+prev_title: "Hands-On Projects"
 next: "/merit-badges/composite-materials/guide/req5c/"
-next_title: "Req 5c — Evaluating Your Work"
+next_title: "Evaluating Your Work"
 ---
 
 {{< drg/requirement number="5b" >}}

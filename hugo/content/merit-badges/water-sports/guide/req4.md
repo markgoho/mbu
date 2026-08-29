@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Hand Signals That Keep You Safe"
+title: "Hand Signals That Keep You Safe"
 layout: "guide"
-group_title: "On-the-Water Skills"
+group_title: "4. On-the-Water Skills"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/water-sports/guide/req3/"
-prev_title: "Req 3 — Pass the Swimmer Test"
+prev_title: "Pass the Swimmer Test"
 next: "/merit-badges/water-sports/guide/req5/"
-next_title: "Req 5 — Starts, Wakes, and Falls"
+next_title: "Starts, Wakes, and Falls"
 ---
 
 {{< drg/requirement number="4" >}}

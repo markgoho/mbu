@@ -1,13 +1,13 @@
 ---
-title: "Req 9a — Listen for Frogs and Toads"
+title: "Listen for Frogs and Toads"
 layout: "guide"
-group_title: "Field Challenges"
+group_title: "9. Field Challenges"
 req_number: "9a"
 req_path: "9.a"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req9/"
-prev_title: "Req 9 — Choose Two Field Challenges"
+prev_title: "Choose Two Field Challenges"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req9b/"
-next_title: "Req 9b — Identify Eight Species by Sight"
+next_title: "Identify Eight Species by Sight"
 ---
 
 {{< drg/requirement number="9a" >}}

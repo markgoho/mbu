@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Prepared Talk with Visuals"
+title: "Prepared Talk with Visuals"
 layout: guide
-group_title: "Body Language & Visual Aids"
+group_title: "2. Body Language & Visual Aids"
 req_number: "2"
 prev: "/merit-badges/public-speaking/guide/req1/"
-prev_title: "Req 1 — Your Self-Introduction"
+prev_title: "Your Self-Introduction"
 next: "/merit-badges/public-speaking/guide/req3/"
-next_title: "Req 3 — Impromptu Speaking"
+next_title: "Impromptu Speaking"
 ---
 
 {{< drg/requirement number="2" >}}

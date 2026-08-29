@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Genealogical or Lineage Society"
+title: "Genealogical or Lineage Society"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "5a"
 prev: "/merit-badges/genealogy/guide/req5/"
-prev_title: "Req 5 — Research Helpers Overview"
+prev_title: "Research Helpers Overview"
 next: "/merit-badges/genealogy/guide/req5b/"
-next_title: "Req 5b — Professional Genealogist"
+next_title: "Professional Genealogist"
 ---
 
 {{< drg/requirement number="5a" >}}

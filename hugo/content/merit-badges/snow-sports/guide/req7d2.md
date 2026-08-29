@@ -1,13 +1,13 @@
 ---
-title: "Req 7d2 — Choosing the Right Size"
+title: "Choosing the Right Size"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d2"
 req_path: "7.d.2"
 prev: "/merit-badges/snow-sports/guide/req7d1/"
-prev_title: "Req 7d1 — Parts of a Snowshoe"
+prev_title: "Parts of a Snowshoe"
 next: "/merit-badges/snow-sports/guide/req7d3/"
-next_title: "Req 7d3 — Types & Specialized Uses"
+next_title: "Types & Specialized Uses"
 ---
 
 {{< drg/requirement number="7d2" >}}

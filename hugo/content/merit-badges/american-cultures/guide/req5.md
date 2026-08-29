@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Leading a Discussion"
+title: "Leading a Discussion"
 layout: guide
-group_title: "Celebrating Contributions"
+group_title: "4. Celebrating Contributions"
 req_number: "5"
 prev: "/merit-badges/american-cultures/guide/req4/"
-prev_title: "Req 4 — Contributions to America"
+prev_title: "Contributions to America"
 next: "/merit-badges/american-cultures/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Personal Training Program"
+title: "Personal Training Program"
 layout: guide
-group_title: "Training & Progress"
+group_title: "3. Training & Progress"
 req_number: "3"
 prev: "/merit-badges/athletics/guide/req2c/"
-prev_title: "Req 2c — Balanced Diet"
+prev_title: "Balanced Diet"
 next: "/merit-badges/athletics/guide/req4a/"
-next_title: "Req 4a — Rules of the Game"
+next_title: "Rules of the Game"
 ---
 
 {{< drg/requirement number="3" >}}

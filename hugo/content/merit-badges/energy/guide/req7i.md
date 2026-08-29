@@ -1,13 +1,13 @@
 ---
-title: "Req 7i — Wind Turbines"
+title: "Wind Turbines"
 layout: "guide"
-group_title: "Wind"
+group_title: "7. Wind"
 req_number: "7i"
 req_path: "7.i"
 prev: "/merit-badges/energy/guide/req7h/"
-prev_title: "Req 7h — Ocean Energy Systems"
+prev_title: "Ocean Energy Systems"
 next: "/merit-badges/energy/guide/req8/"
-next_title: "Req 8 — Energy Careers"
+next_title: "Energy Careers"
 ---
 
 {{< drg/inherited-requirement number="7i" req_path="7.i" topic="Wind turbines." />}}

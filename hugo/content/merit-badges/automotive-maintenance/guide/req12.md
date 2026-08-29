@@ -1,10 +1,10 @@
 ---
-title: "Req 12 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Automotive Careers"
+group_title: "12. Automotive Careers"
 req_number: "12"
 prev: "/merit-badges/automotive-maintenance/guide/req11/"
-prev_title: "Req 11 — Choose Two Projects"
+prev_title: "Choose Two Projects"
 next: "/merit-badges/automotive-maintenance/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

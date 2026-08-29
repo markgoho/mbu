@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Perform with Expression"
+title: "Perform with Expression"
 layout: "guide"
-group_title: "Performing and Reading Music"
+group_title: "1. Performing and Reading Music"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/music/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/music/guide/req2/"
-next_title: "Req 2 — Instrument Families and Sound"
+next_title: "Instrument Families and Sound"
 ---
 
 {{< drg/requirement number="1" >}}

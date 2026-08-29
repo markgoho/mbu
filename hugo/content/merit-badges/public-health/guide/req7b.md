@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — How Agencies Protect Communities"
+title: "How Agencies Protect Communities"
 layout: "guide"
-group_title: "Public Health Agencies"
+group_title: "7. Public Health Agencies"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/public-health/guide/req7a2/"
-prev_title: "Req 7a2 — Investigate an Agency Website"
+prev_title: "Investigate an Agency Website"
 next: "/merit-badges/public-health/guide/req8/"
-next_title: "Req 8 — Explore a Public Health Career"
+next_title: "Explore a Public Health Career"
 ---
 
 {{< drg/requirement number="7b" >}}

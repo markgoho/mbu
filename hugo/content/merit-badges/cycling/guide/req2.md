@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Bicycle Laws"
+title: "Bicycle Laws"
 layout: guide
-group_title: "Rules of the Road"
+group_title: "2. Rules of the Road"
 req_number: "2"
 prev: "/merit-badges/cycling/guide/req1b/"
-prev_title: "Req 1b — First Aid for Cyclists"
+prev_title: "First Aid for Cyclists"
 next: "/merit-badges/cycling/guide/req3/"
-next_title: "Req 3 — Clothing, Gear & Helmets"
+next_title: "Clothing, Gear & Helmets"
 ---
 
 {{< drg/requirement number="2" >}}

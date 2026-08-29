@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — The Role of Profit"
+title: "The Role of Profit"
 layout: guide
-group_title: "Business Practices & Ethics"
+group_title: "3. Business Practices & Ethics"
 req_number: "3a"
 prev: "/merit-badges/american-business/guide/req2d/"
-prev_title: "Req 2d — Business Insurance"
+prev_title: "Business Insurance"
 next: "/merit-badges/american-business/guide/req3b/"
-next_title: "Req 3b — Green Marketing & Sustainability"
+next_title: "Green Marketing & Sustainability"
 ---
 
 {{< drg/requirement number="3a" >}}

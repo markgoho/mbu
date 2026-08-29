@@ -1,13 +1,13 @@
 ---
-title: "Req 2c16 — Curb Techniques"
+title: "Curb Techniques"
 layout: "guide"
-group_title: "Option C — In-Line Skating"
+group_title: "2. Option C — In-Line Skating"
 req_number: "2c16"
 req_path: "2.c.16"
 prev: "/merit-badges/skating/guide/req2c-15/"
-prev_title: "Req 2c15 — Avoiding Obstacles"
+prev_title: "Avoiding Obstacles"
 next: "/merit-badges/skating/guide/req2d/"
-next_title: "Req 2d — Skateboarding Overview"
+next_title: "Skateboarding Overview"
 ---
 
 {{< drg/requirement number="2c16" >}}

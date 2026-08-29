@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Erosion-Control Practices"
+title: "Erosion-Control Practices"
 layout: "guide"
-group_title: "Saving Soil"
+group_title: "3. Saving Soil"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/soil-and-water-conservation/guide/req2/"
-prev_title: "Req 2 — Understanding Soil Erosion"
+prev_title: "Understanding Soil Erosion"
 next: "/merit-badges/soil-and-water-conservation/guide/req4/"
-next_title: "Req 4 — Watersheds, Basins & Aquifers"
+next_title: "Watersheds, Basins & Aquifers"
 ---
 
 {{< drg/requirement number="3" >}}

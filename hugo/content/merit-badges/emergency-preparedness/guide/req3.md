@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Preventing Accidents"
+title: "Preventing Accidents"
 layout: guide
-group_title: "Preventing Accidents & Emergencies"
+group_title: "3. Preventing Accidents & Emergencies"
 req_number: "3"
 prev: "/merit-badges/emergency-preparedness/guide/req2c/"
-prev_title: "Requirement 2c — Family Disaster Kit"
+prev_title: "Family Disaster Kit"
 next: "/merit-badges/emergency-preparedness/guide/req4/"
-next_title: "Requirement 4 — Dangerous Situations"
+next_title: "Dangerous Situations"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 12a — Careers Working With Horses"
+title: "Careers Working With Horses"
 layout: guide
-group_title: "Careers and Lifelong Riding"
+group_title: "12. Careers and Lifelong Riding"
 req_number: "12a"
 prev: "/merit-badges/horsemanship/guide/req12/"
-prev_title: "Req 12 — Choose Your Path"
+prev_title: "Choose Your Path"
 next: "/merit-badges/horsemanship/guide/req12b/"
-next_title: "Req 12b — Horsemanship as a Hobby or Lifestyle"
+next_title: "Horsemanship as a Hobby or Lifestyle"
 ---
 
 {{< drg/requirement number="12a" >}}

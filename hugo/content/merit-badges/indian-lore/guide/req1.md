@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Cultural Areas"
+title: "Cultural Areas"
 layout: guide
-group_title: "Cultural Areas"
+group_title: "1. Cultural Areas"
 req_number: "1"
 prev: "/merit-badges/indian-lore/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/indian-lore/guide/req2/"
-next_title: "Req 2 — Researching a Nation"
+next_title: "Researching a Nation"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3g — Identify Fibers"
+title: "Identify Fibers"
 layout: "guide"
-group_title: "Choose Two Textile Projects"
+group_title: "3. Choose Two Textile Projects"
 req_number: "3g"
 req_path: "3.g"
 prev: "/merit-badges/textile/guide/req3f/"
-prev_title: "Req 3f — Make Fabric Resist Water"
+prev_title: "Make Fabric Resist Water"
 next: "/merit-badges/textile/guide/req4/"
-next_title: "Req 4 — Talk Like a Textile Maker"
+next_title: "Talk Like a Textile Maker"
 ---
 
 {{< drg/requirement number="3g" >}}

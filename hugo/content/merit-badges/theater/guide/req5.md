@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Theater Terminology"
+title: "Theater Terminology"
 layout: guide
-group_title: "Speaking the Language"
+group_title: "5. Speaking the Language"
 req_number: "5"
 prev: "/merit-badges/theater/guide/req4/"
-prev_title: "Req 4 — Mime & Pantomime"
+prev_title: "Mime & Pantomime"
 next: "/merit-badges/theater/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

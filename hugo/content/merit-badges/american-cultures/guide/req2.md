@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Imagining a Single-Culture World"
+title: "Imagining a Single-Culture World"
 layout: guide
-group_title: "Understanding Diversity"
+group_title: "2. Understanding Diversity"
 req_number: "2"
 prev: "/merit-badges/american-cultures/guide/req1/"
-prev_title: "Req 1 — Cultural Experiences"
+prev_title: "Cultural Experiences"
 next: "/merit-badges/american-cultures/guide/req3/"
-next_title: "Req 3 — Customs and Commonalities"
+next_title: "Customs and Commonalities"
 ---
 
 {{< drg/requirement number="2" >}}

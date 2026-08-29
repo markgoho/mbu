@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Set Up Your Transition Area"
+title: "Set Up Your Transition Area"
 layout: "guide"
-group_title: "Transitions"
+group_title: "6. Transitions"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/multisport/guide/req5/"
-prev_title: "Req 5 — Build Your Four-Week Plan"
+prev_title: "Build Your Four-Week Plan"
 next: "/merit-badges/multisport/guide/req7/"
-next_title: "Req 7 — Choose Your Race Simulation"
+next_title: "Choose Your Race Simulation"
 ---
 
 {{< drg/requirement number="6" >}}

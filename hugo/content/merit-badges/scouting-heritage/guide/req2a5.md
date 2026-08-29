@@ -1,13 +1,13 @@
 ---
-title: "Req 2a5 — James E. West"
+title: "James E. West"
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a5"
 req_path: "2.a.5"
 prev: "/merit-badges/scouting-heritage/guide/req2a4/"
-prev_title: "Req 2a4 — Ernest Thompson Seton"
+prev_title: "Ernest Thompson Seton"
 next: "/merit-badges/scouting-heritage/guide/req2a6/"
-next_title: "Req 2a6 — \"Green Bar Bill\" Hillcourt"
+next_title: '"Green Bar Bill"  Hillcourt'
 ---
 
 {{< drg/requirement number="2a5" >}}

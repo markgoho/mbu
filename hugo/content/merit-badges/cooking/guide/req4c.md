@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Share Your Plan"
+title: "Share Your Plan"
 layout: guide
-group_title: "Cooking at Home"
+group_title: "4. Cooking at Home"
 req_number: "4c"
 prev: "/merit-badges/cooking/guide/req4b/"
-prev_title: "Req 4b — Recipes & Shopping"
+prev_title: "Recipes & Shopping"
 next: "/merit-badges/cooking/guide/req4d/"
-next_title: "Req 4d — Cook & Serve"
+next_title: "Cook & Serve"
 ---
 
 {{< drg/requirement number="4c" >}}

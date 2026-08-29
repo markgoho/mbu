@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Carry Out the Expedition"
+title: "Carry Out the Expedition"
 layout: "guide"
-group_title: "The Expedition Itself"
+group_title: "8. The Expedition Itself"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/exploration/guide/req7/"
-prev_title: "Req 7 — Prepare for the Real Thing"
+prev_title: "Prepare for the Real Thing"
 next: "/merit-badges/exploration/guide/req9/"
-next_title: "Req 9 — Choose Your Next Path"
+next_title: "Choose Your Next Path"
 ---
 
 {{< drg/requirement number="8" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Hydraulic Systems"
+title: "Hydraulic Systems"
 layout: guide
-group_title: "Understanding Farm Power Systems"
+group_title: "2. Understanding Farm Power Systems"
 req_number: "2b"
 prev: "/merit-badges/farm-mechanics/guide/req2a/"
-prev_title: "Req 2a — Diesel Engines"
+prev_title: "Diesel Engines"
 next: "/merit-badges/farm-mechanics/guide/req2c/"
-next_title: "Req 2c — Transmissions & Power"
+next_title: "Transmissions & Power"
 ---
 
 {{< drg/requirement number="2b" >}}

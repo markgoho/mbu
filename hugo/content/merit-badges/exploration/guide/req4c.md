@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Explore Discovery in the Lab"
+title: "Explore Discovery in the Lab"
 layout: "guide"
-group_title: "Real-World Exploration"
+group_title: "4. Real-World Exploration"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/exploration/guide/req4b/"
-prev_title: "Req 4b — Study a Scientific Expedition"
+prev_title: "Study a Scientific Expedition"
 next: "/merit-badges/exploration/guide/req5/"
-next_title: "Req 5 — Choose a Place to Learn"
+next_title: "Choose a Place to Learn"
 ---
 
 {{< drg/requirement number="4c" >}}

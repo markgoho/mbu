@@ -1,13 +1,13 @@
 ---
-title: "Req 2ah — Clean a Rifle Properly"
+title: "Clean a Rifle Properly"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2ah"
 req_path: "2.a.h"
 prev: "/merit-badges/rifle-shooting/guide/req2ag/"
-prev_title: "Req 2ag — Cleaning Safety Rules and Materials"
+prev_title: "Cleaning Safety Rules and Materials"
 next: "/merit-badges/rifle-shooting/guide/req2ai/"
-next_title: "Req 2ai — Selecting a Rifle"
+next_title: "Selecting a Rifle"
 ---
 
 {{< drg/requirement number="2ah" >}}

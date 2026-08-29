@@ -1,12 +1,12 @@
 ---
-title: "Req 1h — Flight Instruments"
+title: "Flight Instruments"
 layout: guide
-group_title: "Mechanics of Flight"
+group_title: "1. Mechanics of Flight"
 req_number: "1h"
 prev: "/merit-badges/aviation/guide/req1g/"
-prev_title: "Req 1g — Control Surfaces"
+prev_title: "Control Surfaces"
 next: "/merit-badges/aviation/guide/req2/"
-next_title: "Req 2 — Build & Fly"
+next_title: "Build & Fly"
 ---
 
 {{< drg/requirement number="1h" >}}

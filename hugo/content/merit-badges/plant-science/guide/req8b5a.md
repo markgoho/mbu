@@ -1,13 +1,13 @@
 ---
-title: "Req 8b5a — Bedding Plants Through the Season"
+title: "Bedding Plants Through the Season"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b5a"
 req_path: "8.b.5.a"
 prev: "/merit-badges/plant-science/guide/req8b5/"
-prev_title: "Req 8b5 — Choose a Horticulture Project"
+prev_title: "Choose a Growing Project"
 next: "/merit-badges/plant-science/guide/req8b5b/"
-next_title: "Req 8b5b — Fruit, Berry, and Nut Crops"
+next_title: "Fruit, Berry & Nut Crops"
 ---
 
 {{< drg/requirement number="8b5a" >}}

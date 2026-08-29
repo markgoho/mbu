@@ -1,13 +1,13 @@
 ---
-title: "Req 7a6 — Linked Wedge Turns"
+title: "Linked Wedge Turns"
 layout: "guide"
-group_title: "Option A — Alpine Skiing"
+group_title: "7. Option A — Alpine Skiing"
 req_number: "7a6"
 req_path: "7.a.6"
 prev: "/merit-badges/snow-sports/guide/req7a5/"
-prev_title: "Req 7a5 — Beginning Maneuvers"
+prev_title: "Beginning Maneuvers"
 next: "/merit-badges/snow-sports/guide/req7a7/"
-next_title: "Req 7a7 — Christies"
+next_title: "Christies"
 ---
 
 {{< drg/requirement number="7a6" >}}

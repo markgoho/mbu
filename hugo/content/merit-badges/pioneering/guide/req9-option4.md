@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Single Lock Bridge"
+title: "Single Lock Bridge"
 layout: guide
-group_title: "Full-Size Projects"
+group_title: "9. Full-Size Projects"
 req_number: "9"
 req_path: "9.option4"
 prev: "/merit-badges/pioneering/guide/req9-option3/"
-prev_title: "Req 9 — Single Trestle Bridge"
+prev_title: "Single Trestle Bridge"
 next: "/merit-badges/pioneering/guide/req9-option5/"
-next_title: "Req 9 — 4x4 Square Climbing Tower"
+next_title: "4x4 Square Climbing Tower"
 ---
 
 {{< drg/requirement number="9" option="Single Lock Bridge" >}}

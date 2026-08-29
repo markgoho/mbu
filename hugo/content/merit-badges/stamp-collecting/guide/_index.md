@@ -4,105 +4,105 @@ layout: "guide"
 badge_name: "Stamp Collecting"
 group_title: "Getting Started"
 next: "/merit-badges/stamp-collecting/guide/req1/"
-next_title: "Req 1 — Why Stamps Matter"
+next_title: "Why Stamps Matter"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/stamp-collecting/guide/"
         is_sub: false
-  - group_title: "Why Collect Stamps"
+  - group_title: "1. Why Collect Stamps"
     items:
-      - title: "Req 1 — Why Stamps Matter"
+      - title: "1. Why Stamps Matter"
         url: "/merit-badges/stamp-collecting/guide/req1/"
         is_sub: false
-  - group_title: "Choosing a Collecting Style"
+  - group_title: "2. Choosing a Collecting Style"
     items:
-      - title: "Req 2 — Types of Collections"
+      - title: "2. Types of Collections"
         url: "/merit-badges/stamp-collecting/guide/req2/"
         is_sub: false
-  - group_title: "Stamp Vocabulary"
+  - group_title: "3. Stamp Vocabulary"
     items:
-      - title: "Req 3 — Stamp Terms in Action"
+      - title: "3. Stamp Terms in Action"
         url: "/merit-badges/stamp-collecting/guide/req3/"
         is_sub: false
-  - group_title: "Value and Condition"
+  - group_title: "4. Value and Condition"
     items:
-      - title: "Req 4 — Catalogs and Condition"
+      - title: "4. Catalogs and Condition"
         url: "/merit-badges/stamp-collecting/guide/req4/"
         is_sub: false
-  - group_title: "Collector's Tools"
+  - group_title: "5. Collector's Tools"
     items:
-      - title: "Req 5 — Choosing Your Tools"
+      - title: "5. Choosing Your Tools"
         url: "/merit-badges/stamp-collecting/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Using Stamp Tongs"
+      - title: "a Using Stamp Tongs"
         url: "/merit-badges/stamp-collecting/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Soaking With Water and a Tray"
+      - title: "b Soaking With Water and a Tray"
         url: "/merit-badges/stamp-collecting/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Inspecting With Magnifiers"
+      - title: "c Inspecting With Magnifiers"
         url: "/merit-badges/stamp-collecting/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Hinges and Mounts"
+      - title: "d Hinges and Mounts"
         url: "/merit-badges/stamp-collecting/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Measuring With a Perforation Gauge"
+      - title: "e Measuring With a Perforation Gauge"
         url: "/merit-badges/stamp-collecting/guide/req5e/"
         is_sub: true
-      - title: "Req 5f — Safe Storage Sleeves"
+      - title: "f Safe Storage Sleeves"
         url: "/merit-badges/stamp-collecting/guide/req5f/"
         is_sub: true
-      - title: "Req 5g — Finding Watermarks"
+      - title: "g Finding Watermarks"
         url: "/merit-badges/stamp-collecting/guide/req5g/"
         is_sub: true
-  - group_title: "Albums and Preservation"
+  - group_title: "6. Albums and Preservation"
     items:
-      - title: "Req 6 — Mounting and Protecting a Collection"
+      - title: "6. Mounting and Protecting a Collection"
         url: "/merit-badges/stamp-collecting/guide/req6/"
         is_sub: false
-  - group_title: "Creative Projects"
+  - group_title: "7. Creative Projects"
     items:
-      - title: "Req 7 — Pick Two Stamp Projects"
+      - title: "7. Pick Two Stamp Projects"
         url: "/merit-badges/stamp-collecting/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Design Work"
+      - title: "a Design Work"
         url: "/merit-badges/stamp-collecting/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Visit the Stamp World"
+      - title: "b Visit the Stamp World"
         url: "/merit-badges/stamp-collecting/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Review a Stamp Article"
+      - title: "c Review a Stamp Article"
         url: "/merit-badges/stamp-collecting/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Research Stamp History"
+      - title: "d Research Stamp History"
         url: "/merit-badges/stamp-collecting/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — How Stamps Are Made"
+      - title: "e How Stamps Are Made"
         url: "/merit-badges/stamp-collecting/guide/req7e/"
         is_sub: true
-      - title: "Req 7f — Build a Stamp Display"
+      - title: "f Build a Stamp Display"
         url: "/merit-badges/stamp-collecting/guide/req7f/"
         is_sub: true
-  - group_title: "Building Your Collection"
+  - group_title: "8. Building Your Collection"
     items:
-      - title: "Req 8 — Choose Your Album Project"
+      - title: "8. Choose Your Album Project"
         url: "/merit-badges/stamp-collecting/guide/req8/"
         is_sub: false
-      - title: "Req 8a — 250 Stamps From 15 Countries"
+      - title: "a 250 Stamps From 15 Countries"
         url: "/merit-badges/stamp-collecting/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — 50 Countries on Maps"
+      - title: "b 50 Countries on Maps"
         url: "/merit-badges/stamp-collecting/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — One Country or Region"
+      - title: "c One Country or Region"
         url: "/merit-badges/stamp-collecting/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — A Thematic Collection"
+      - title: "d A Thematic Collection"
         url: "/merit-badges/stamp-collecting/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — A 30-Day Mail Study"
+      - title: "e A 30-Day Mail Study"
         url: "/merit-badges/stamp-collecting/guide/req8e/"
         is_sub: true
   - group_title: "Beyond the Badge"

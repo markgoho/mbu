@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Safer Roads by Design"
+title: "Safer Roads by Design"
 layout: "guide"
-group_title: "Road Design and Traffic Signs"
+group_title: "5. Road Design and Traffic Signs"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/traffic-safety/guide/req5/"
-prev_title: "Req 5 — Choose Your Roadway Focus"
+prev_title: "Choose Your Roadway Focus"
 next: "/merit-badges/traffic-safety/guide/req5b/"
-next_title: "Req 5b — Reading Signs, Signals, and Markings"
+next_title: "Reading Signs, Signals, and Markings"
 ---
 
 {{< drg/requirement number="5a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Punching Accurate Holes"
+title: "Punching Accurate Holes"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3c"
 prev: "/merit-badges/leatherwork/guide/req3b/"
-prev_title: "Req 3b — Clean Cutting"
+prev_title: "Clean Cutting"
 next: "/merit-badges/leatherwork/guide/req3d/"
-next_title: "Req 3d — Carving and Stamping Designs"
+next_title: "Carving and Stamping Designs"
 ---
 
 {{< drg/requirement number="3c" >}}

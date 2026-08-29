@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Scout Essentials & Survival Kits"
+title: "Scout Essentials & Survival Kits"
 layout: guide
-group_title: "Hazards & First Aid"
+group_title: "1. Hazards & First Aid"
 req_number: "1b"
 prev: "/merit-badges/wilderness-survival/guide/req1a/"
-prev_title: "Req 1a — Backcountry Injuries & Conditions"
+prev_title: "Backcountry Injuries & Conditions"
 next: "/merit-badges/wilderness-survival/guide/req1c/"
-next_title: "Req 1c — Trip Planning & Prevention"
+next_title: "Trip Planning & Prevention"
 ---
 
 {{< drg/requirement number="1b" >}}

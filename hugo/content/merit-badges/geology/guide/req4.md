@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Pick Your Option"
+title: "Pick Your Option"
 layout: guide
-group_title: "Choose Your Geology Path"
+group_title: "4. Choose Your Geology Path"
 req_number: "4"
 prev: "/merit-badges/geology/guide/req3/"
-prev_title: "Req 3 — Geologic Maps"
+prev_title: "Geologic Maps"
 next: "/merit-badges/geology/guide/req4a/"
-next_title: "Req 4a — Streams Shape the Land"
+next_title: "Streams Shape the Land"
 ---
 
 {{< drg/requirement number="4" >}}

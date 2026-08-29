@@ -1,13 +1,13 @@
 ---
-title: "Req 2bc — Two Types of Air Rifle Ammunition"
+title: "Two Types of Air Rifle Ammunition"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2bc"
 req_path: "2.b.c"
 prev: "/merit-badges/rifle-shooting/guide/req2bb/"
-prev_title: "Req 2bb — Safe Storage and Handling"
+prev_title: "Safe Storage and Handling"
 next: "/merit-badges/rifle-shooting/guide/req2bd/"
-next_title: "Req 2bd — The Five Fundamentals of Shooting"
+next_title: "The Five Fundamentals of Shooting"
 ---
 
 {{< drg/requirement number="2bc" >}}

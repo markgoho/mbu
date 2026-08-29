@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Single A-Frame Bridge"
+title: "Single A-Frame Bridge"
 layout: guide
-group_title: "Full-Size Projects"
+group_title: "9. Full-Size Projects"
 req_number: "9"
 req_path: "9.option2"
 prev: "/merit-badges/pioneering/guide/req9-option1/"
-prev_title: "Req 9 — Double A-Frame Monkey Bridge"
+prev_title: "Double A-Frame Monkey Bridge"
 next: "/merit-badges/pioneering/guide/req9-option3/"
-next_title: "Req 9 — Single Trestle Bridge"
+next_title: "Single Trestle Bridge"
 ---
 
 {{< drg/requirement number="9" option="Single A-Frame Bridge" >}}

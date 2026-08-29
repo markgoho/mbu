@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Jobs in Law"
+title: "Jobs in Law"
 layout: guide
-group_title: "Legal Careers"
+group_title: "7. Legal Careers"
 req_number: "9"
 prev: "/merit-badges/law/guide/req8/"
-prev_title: "Requirement 8 — Becoming a Lawyer or Judge"
+prev_title: "Becoming a Lawyer or Judge"
 next: "/merit-badges/law/guide/req10/"
-next_title: "Requirement 10 — Access to Legal Help"
+next_title: "Access to Legal Help"
 ---
 
 {{< drg/requirement number="9" >}}

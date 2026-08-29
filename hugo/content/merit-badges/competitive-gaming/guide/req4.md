@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Gamer Safety and Community Connection"
+title: "Gamer Safety and Community Connection"
 layout: "guide"
-group_title: "Safety and Community"
+group_title: "4. Safety and Community"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/competitive-gaming/guide/req3/"
-prev_title: "Req 3 — Gamer Health and Balance"
+prev_title: "Gamer Health and Balance"
 next: "/merit-badges/competitive-gaming/guide/req5/"
-next_title: "Req 5 — Technology in Competitive Gaming"
+next_title: "Technology in Competitive Gaming"
 ---
 
 {{< drg/requirement number="4" >}}

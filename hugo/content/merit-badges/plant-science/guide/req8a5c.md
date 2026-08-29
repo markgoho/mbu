@@ -1,13 +1,13 @@
 ---
-title: "Req 8a5c — Forage Crops and Soil Health"
+title: "Forage Crops and Soil Health"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a5c"
 req_path: "8.a.5.c"
 prev: "/merit-badges/plant-science/guide/req8a5b/"
-prev_title: "Req 8a5b — Cotton from Field to Fiber"
+prev_title: "Cotton"
 next: "/merit-badges/plant-science/guide/req8a5d/"
-next_title: "Req 8a5d — Small Grains from Harvest to Mill"
+next_title: "Small Grains"
 ---
 
 {{< drg/requirement number="8a5c" >}}

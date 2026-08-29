@@ -1,13 +1,13 @@
 ---
-title: "Req 4a — Birds in the Field"
+title: "Birds in the Field"
 layout: "guide"
-group_title: "Bird Fieldwork"
+group_title: "4. Bird Fieldwork"
 req_number: "4a"
 req_path: "4.a"
 prev: "/merit-badges/nature/guide/req4/"
-prev_title: "Req 4 — Choose Your Five Field Studies"
+prev_title: "Choose Your Five Field Studies"
 next: "/merit-badges/nature/guide/req4b/"
-next_title: "Req 4b — Mammal Signs and Tracks"
+next_title: "Mammal Signs and Tracks"
 ---
 
 {{< drg/requirement number="4a" >}}

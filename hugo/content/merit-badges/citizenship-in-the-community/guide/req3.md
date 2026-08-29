@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Attending a Government Meeting"
+title: "Attending a Government Meeting"
 layout: guide
-group_title: "Democracy in Action"
+group_title: "3. Democracy in Action"
 req_number: "3"
 prev: "/merit-badges/citizenship-in-the-community/guide/req2b/"
-prev_title: "Req 2b — Charting Local Government"
+prev_title: "Charting Local Government"
 next: "/merit-badges/citizenship-in-the-community/guide/req4/"
-next_title: "Req 4 — Investigating a Community Issue"
+next_title: "Investigating a Community Issue"
 ---
 
 {{< drg/requirement number="3a" >}}

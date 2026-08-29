@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Research a Music Career"
+title: "Research a Music Career"
 layout: "guide"
-group_title: "Careers and Hobbies"
+group_title: "6. Careers and Hobbies"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/music/guide/req6/"
-prev_title: "Req 6 — Choose Your Next Step"
+prev_title: "Choose Your Next Step"
 next: "/merit-badges/music/guide/req6b/"
-next_title: "Req 6b — Turn Music into a Hobby"
+next_title: "Turn Music into a Hobby"
 ---
 
 {{< drg/requirement number="6a" >}}

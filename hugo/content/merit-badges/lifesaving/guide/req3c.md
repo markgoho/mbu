@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Rescue Order"
+title: "Rescue Order"
 layout: guide
-group_title: "Recognizing & Responding"
+group_title: "3. Recognizing & Responding"
 req_number: "3c"
 prev: "/merit-badges/lifesaving/guide/req3b/"
-prev_title: "Req 3b — Identifying Distress"
+prev_title: "Identifying Distress"
 next: "/merit-badges/lifesaving/guide/req3d/"
-next_title: "Req 3d — Adapting Rescue Techniques"
+next_title: "Adapting Rescue Techniques"
 ---
 
 {{< drg/requirement number="3c" >}}

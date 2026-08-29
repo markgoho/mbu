@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Drowning Situations"
+title: "Drowning Situations"
 layout: guide
-group_title: "Recognizing & Responding"
+group_title: "3. Recognizing & Responding"
 req_number: "3a"
 prev: "/merit-badges/lifesaving/guide/req2/"
-prev_title: "Req 2 — Swimming Prerequisites"
+prev_title: "Swimming Prerequisites"
 next: "/merit-badges/lifesaving/guide/req3b/"
-next_title: "Req 3b — Identifying Distress"
+next_title: "Identifying Distress"
 ---
 
 {{< drg/requirement number="3a" >}}

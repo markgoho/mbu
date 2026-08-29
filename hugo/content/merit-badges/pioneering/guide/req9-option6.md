@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Four Flag Gateway Tower"
+title: "Four Flag Gateway Tower"
 layout: guide
-group_title: "Full-Size Projects"
+group_title: "9. Full-Size Projects"
 req_number: "9"
 req_path: "9.option6"
 prev: "/merit-badges/pioneering/guide/req9-option5/"
-prev_title: "Req 9 — 4x4 Square Climbing Tower"
+prev_title: "4x4 Square Climbing Tower"
 next: "/merit-badges/pioneering/guide/req9-option7/"
-next_title: "Req 9 — Double Tripod Chippewa Kitchen"
+next_title: "Double Tripod Chippewa Kitchen"
 ---
 
 {{< drg/requirement number="9" option="Four Flag Gateway Tower" >}}

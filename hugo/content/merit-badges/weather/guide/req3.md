@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Forecasts and Warnings"
+title: "Forecasts and Warnings"
 layout: "guide"
-group_title: "Weather Basics"
+group_title: "1. Weather Basics"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/weather/guide/req2/"
-prev_title: "Req 2 — Dangerous Weather and Family Safety"
+prev_title: "Dangerous Weather and Family Safety"
 next: "/merit-badges/weather/guide/req4/"
-next_title: "Req 4 — Pressure Systems and Fronts"
+next_title: "Pressure Systems and Fronts"
 ---
 
 {{< drg/requirement number="3" >}}

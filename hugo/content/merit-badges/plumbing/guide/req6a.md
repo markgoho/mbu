@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Hardware Store Field ID"
+title: "Hardware Store Field ID"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/plumbing/guide/req6/"
-prev_title: "Req 6 — Choose Four Supervised Tasks"
+prev_title: "Choose Four Supervised Tasks"
 next: "/merit-badges/plumbing/guide/req6b/"
-next_title: "Req 6b — Solvent-Welded Plastic Pipe"
+next_title: "Solvent-Welded Plastic Pipe"
 ---
 
 {{< drg/requirement number="6a" >}}

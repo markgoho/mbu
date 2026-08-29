@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Business Ethics"
+title: "Business Ethics"
 layout: guide
-group_title: "Business Practices & Ethics"
+group_title: "3. Business Practices & Ethics"
 req_number: "3c"
 prev: "/merit-badges/american-business/guide/req3b/"
-prev_title: "Req 3b — Green Marketing & Sustainability"
+prev_title: "Green Marketing & Sustainability"
 next: "/merit-badges/american-business/guide/req3d/"
-next_title: "Req 3d — Brick-and-Mortar vs. Online"
+next_title: "Brick-and-Mortar vs. Online"
 ---
 
 {{< drg/requirement number="3c" >}}

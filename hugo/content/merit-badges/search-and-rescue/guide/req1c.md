@@ -1,13 +1,13 @@
 ---
-title: "Req 1c — What Goes in an SAR Pack"
+title: "What Goes in an SAR Pack"
 layout: "guide"
-group_title: "Field Safety and Self-Care"
+group_title: "1. Field Safety and Self-Care"
 req_number: "1c"
 req_path: "1.c"
 prev: "/merit-badges/search-and-rescue/guide/req1b/"
-prev_title: "Req 1b — Basic Essentials That Keep You Alive"
+prev_title: "Basic Essentials That Keep You Alive"
 next: "/merit-badges/search-and-rescue/guide/req2/"
-next_title: "Req 2 — Staying Found and Getting Found"
+next_title: "Staying Found and Getting Found"
 ---
 
 {{< drg/requirement number="1c" >}}

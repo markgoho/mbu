@@ -1,11 +1,11 @@
 ---
-title: "Req 10 — Myths, Legends, and True Stories"
+title: "Myths, Legends, and True Stories"
 layout: "guide"
-group_title: "Myths & Wild Facts"
+group_title: "10. Myths & Wild Facts"
 req_number: "10"
 req_path: "10"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req9c/"
-prev_title: "Req 9c — Teach a Short Talk"
+prev_title: "Teach a Short Talk"
 next: "/merit-badges/reptile-and-amphibian-study/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Model Railroading Projects"
+title: "Model Railroading Projects"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/railroading/guide/req7/"
-prev_title: "Req 7 — Choose a Special Interest"
+prev_title: "Choose a Special Interest"
 next: "/merit-badges/railroading/guide/req7a1/"
-next_title: "Req 7a1 — Plan a Layout"
+next_title: "Plan a Layout"
 ---
 
 {{< drg/requirement number="7" option="Model Railroading" >}}

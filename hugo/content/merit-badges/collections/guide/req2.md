@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Growth & Development"
+title: "Growth & Development"
 layout: guide
-group_title: "Growing Your Collection"
+group_title: "2. Growing Your Collection"
 req_number: "2"
 prev: "/merit-badges/collections/guide/req1/"
-prev_title: "Req 1 — Writing Your Collection Report"
+prev_title: "Writing Your Collection Report"
 next: "/merit-badges/collections/guide/req3a/"
-next_title: "Req 3a — Handling, Cleaning & Storage"
+next_title: "Handling, Cleaning & Storage"
 ---
 
 {{< drg/requirement number="2" >}}

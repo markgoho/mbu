@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — Electricity Careers"
+title: "Electricity Careers"
 layout: guide
-group_title: "Careers & Future Paths"
+group_title: "11. Careers & Future Paths"
 req_number: "11"
 prev: "/merit-badges/electricity/guide/req10f/"
-prev_title: "Req 10f — Series vs. Parallel Circuits"
+prev_title: "Series vs. Parallel Circuits"
 next: "/merit-badges/electricity/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

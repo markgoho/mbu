@@ -1,13 +1,13 @@
 ---
-title: "Req 8a5e — Soybeans and Oil Crops"
+title: "Soybeans and Oil Crops"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a5e"
 req_path: "8.a.5.e"
 prev: "/merit-badges/plant-science/guide/req8a5d/"
-prev_title: "Req 8a5d — Small Grains from Harvest to Mill"
+prev_title: "Small Grains"
 next: "/merit-badges/plant-science/guide/req8b/"
-next_title: "Req 8b — Horticulture Roadmap"
+next_title: "Horticulture Overview"
 ---
 
 {{< drg/requirement number="8a5e" >}}

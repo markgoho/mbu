@@ -1,13 +1,13 @@
 ---
-title: "Req 1d — Eye and Hearing Protection"
+title: "Eye and Hearing Protection"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1d"
 req_path: "1.d"
 prev: "/merit-badges/shotgun-shooting/guide/req1c/"
-prev_title: "Req 1c — A Friend Asks to See the Gun"
+prev_title: "A Friend Asks to See the Gun"
 next: "/merit-badges/shotgun-shooting/guide/req1e/"
-next_title: "Req 1e — Gun Laws in Your Community and State"
+next_title: "Gun Laws in Your Community and State"
 ---
 
 {{< drg/requirement number="1d" >}}

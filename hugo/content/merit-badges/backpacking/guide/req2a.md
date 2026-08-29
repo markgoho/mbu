@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Essential Gear"
+title: "Essential Gear"
 layout: guide
-group_title: "Gear & Pack Weight"
+group_title: "2. Gear & Pack Weight"
 req_number: "2a"
 prev: "/merit-badges/backpacking/guide/req1/"
-prev_title: "Req 1 — Trail Health & First Aid"
+prev_title: "Trail Health & First Aid"
 next: "/merit-badges/backpacking/guide/req2b/"
-next_title: "Req 2b — Reducing Pack Weight"
+next_title: "Reducing Pack Weight"
 ---
 
 {{< drg/requirement number="2a" >}}

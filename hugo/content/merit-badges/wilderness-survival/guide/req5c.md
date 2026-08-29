@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Wildlife Protection"
+title: "Wildlife Protection"
 layout: guide
-group_title: "Shelter & Exposure"
+group_title: "5. Shelter & Exposure"
 req_number: "5c"
 prev: "/merit-badges/wilderness-survival/guide/req5b/"
-prev_title: "Req 5b — Outdoor Clothing"
+prev_title: "Outdoor Clothing"
 next: "/merit-badges/wilderness-survival/guide/req5d/"
-next_title: "Req 5d — Survival Shelters"
+next_title: "Building Survival Shelters"
 ---
 
 {{< drg/requirement number="5c" >}}

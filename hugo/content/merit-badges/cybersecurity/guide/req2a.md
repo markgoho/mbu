@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Scout Law Online"
+title: "Scout Law Online"
 layout: guide
-group_title: "Cyber Ethics"
+group_title: "2. Cyber Ethics"
 req_number: "2a"
 prev: "/merit-badges/cybersecurity/guide/req1c/"
-prev_title: "Req 1c — Physical Safety"
+prev_title: "Physical Safety"
 next: "/merit-badges/cybersecurity/guide/req2b/"
-next_title: "Req 2b — Ethical Behavior"
+next_title: "Ethical Behavior"
 ---
 
 {{< drg/requirement number="2a" >}}

@@ -4,99 +4,99 @@ layout: "guide"
 badge_name: "Metalwork"
 group_title: "Getting Started"
 next: "/merit-badges/metalwork/guide/req1/"
-next_title: "Req 1 — Safety First"
+next_title: "Safety First"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/metalwork/guide/"
         is_sub: false
-  - group_title: "Safety & Vocabulary"
+  - group_title: "1. Safety & Vocabulary"
     items:
-      - title: "Req 1 — Safety First"
+      - title: "1. Safety First"
         url: "/merit-badges/metalwork/guide/req1/"
         is_sub: false
-      - title: "Req 2 — The Language of Metal"
+      - title: "2. The Language of Metal"
         url: "/merit-badges/metalwork/guide/req2/"
         is_sub: false
-  - group_title: "Hands-On Fundamentals"
+  - group_title: "3. Hands-On Fundamentals"
     items:
-      - title: "Req 3 — Hardening, Softening & Tempering"
+      - title: "3. Hardening, Softening & Tempering"
         url: "/merit-badges/metalwork/guide/req3/"
         is_sub: false
-  - group_title: "Future Pathways"
+  - group_title: "4. Future Pathways"
     items:
-      - title: "Req 4 — Where Metal Takes You"
+      - title: "4. Where Metal Takes You"
         url: "/merit-badges/metalwork/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Metalworking Careers"
+      - title: "a Metalworking Careers"
         url: "/merit-badges/metalwork/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Metalworking as a Hobby"
+      - title: "b Metalworking as a Hobby"
         url: "/merit-badges/metalwork/guide/req4b/"
         is_sub: true
-  - group_title: "Choose Your Craft"
+  - group_title: "5. Choose Your Craft"
     items:
-      - title: "Req 5 — Choose Your Craft"
+      - title: "5. Choose Your Craft"
         url: "/merit-badges/metalwork/guide/req5/"
         is_sub: false
-  - group_title: "Sheet Metal / Tinsmith"
+  - group_title: "5. Sheet Metal / Tinsmith"
     items:
-      - title: "Req 5a — Sheet Metal Mechanic/Tinsmith"
+      - title: "a Sheet Metal Mechanic/Tinsmith"
         url: "/merit-badges/metalwork/guide/req5a/"
         is_sub: false
-      - title: "Req 5a1 — Tinsmith Tools"
+      - title: "a Tinsmith Tools"
         url: "/merit-badges/metalwork/guide/req5a1/"
         is_sub: true
-      - title: "Req 5a2 — Sketching Your Sheet Metal Objects"
+      - title: "a Sketching Your Sheet Metal Objects"
         url: "/merit-badges/metalwork/guide/req5a2/"
         is_sub: true
-      - title: "Req 5a3 — Cutting, Bending & Joining"
+      - title: "a Cutting, Bending & Joining"
         url: "/merit-badges/metalwork/guide/req5a3/"
         is_sub: true
-  - group_title: "Silversmith"
+  - group_title: "5. Silversmith"
     items:
-      - title: "Req 5b — Silversmith"
+      - title: "b Silversmith"
         url: "/merit-badges/metalwork/guide/req5b/"
         is_sub: false
-      - title: "Req 5b1 — Silversmith Tools"
+      - title: "b Silversmith Tools"
         url: "/merit-badges/metalwork/guide/req5b1/"
         is_sub: true
-      - title: "Req 5b2 — Sketching Your Silver Objects"
+      - title: "b Sketching Your Silver Objects"
         url: "/merit-badges/metalwork/guide/req5b2/"
         is_sub: true
-      - title: "Req 5b3 — Sawing, Sinking & Soldering"
+      - title: "b Sawing, Sinking & Soldering"
         url: "/merit-badges/metalwork/guide/req5b3/"
         is_sub: true
-  - group_title: "Founder"
+  - group_title: "5. Founder"
     items:
-      - title: "Req 5c — Founder"
+      - title: "c Founder"
         url: "/merit-badges/metalwork/guide/req5c/"
         is_sub: false
-      - title: "Req 5c1 — Molds & Their Parts"
+      - title: "c Molds & Their Parts"
         url: "/merit-badges/metalwork/guide/req5c1/"
         is_sub: true
-      - title: "Req 5c2 — Sketching Your Cast Objects"
+      - title: "c Sketching Your Cast Objects"
         url: "/merit-badges/metalwork/guide/req5c2/"
         is_sub: true
-      - title: "Req 5c3 — Making & Pouring Your Molds"
+      - title: "c Making & Pouring Your Molds"
         url: "/merit-badges/metalwork/guide/req5c3/"
         is_sub: true
-  - group_title: "Blacksmith"
+  - group_title: "5. Blacksmith"
     items:
-      - title: "Req 5d — Blacksmith"
+      - title: "d Blacksmith"
         url: "/merit-badges/metalwork/guide/req5d/"
         is_sub: false
-      - title: "Req 5d1 — Blacksmith Tools"
+      - title: "d Blacksmith Tools"
         url: "/merit-badges/metalwork/guide/req5d1/"
         is_sub: true
-      - title: "Req 5d2 — Sketching Your Forged Objects"
+      - title: "d Sketching Your Forged Objects"
         url: "/merit-badges/metalwork/guide/req5d2/"
         is_sub: true
-      - title: "Req 5d3 — Hot-Forging Exercises"
+      - title: "d Hot-Forging Exercises"
         url: "/merit-badges/metalwork/guide/req5d3/"
         is_sub: true
-      - title: "Req 5d4 — Forging Your Two Objects"
+      - title: "d Forging Your Two Objects"
         url: "/merit-badges/metalwork/guide/req5d4/"
         is_sub: true
   - group_title: "Beyond the Badge"

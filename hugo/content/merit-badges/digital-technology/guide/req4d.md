@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Barcodes, QR Codes & RFID"
+title: "Barcodes, QR Codes & RFID"
 layout: guide
-group_title: "Software & Security"
+group_title: "4. Software & Security"
 req_number: "4d"
 prev: "/merit-badges/digital-technology/guide/req4c/"
-prev_title: "Req 4c — Malware & Protection"
+prev_title: "Malware & Protection"
 next: "/merit-badges/digital-technology/guide/req5a/"
-next_title: "Req 5a — How Data Travels Online"
+next_title: "How Data Travels Online"
 ---
 
 {{< drg/requirement number="4d" >}}

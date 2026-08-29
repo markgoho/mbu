@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6c2 — Marking Off Nested Plots"
+title: "Marking Off Nested Plots"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6c2"
 req_path: "8.c.6.c.2"
 prev: "/merit-badges/plant-science/guide/req8c6c1/"
-prev_title: "Req 8c6c1 — Choosing Two Nested Plot Sites"
+prev_title: "Visit Two Sites"
 next: "/merit-badges/plant-science/guide/req8c6c3/"
-next_title: "Req 8c6c3 — Recording a Nested Plot Inventory"
+next_title: "Record & Graph"
 ---
 
 {{< drg/requirement number="8c6c2" >}}

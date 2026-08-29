@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Journalism"
 group_title: "Getting Started"
 next: "/merit-badges/journalism/guide/req1/"
-next_title: "Req 1 — Press Freedom & Media Ethics"
+next_title: "Press Freedom & Media Ethics"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/journalism/guide/"
-  - group_title: "Rights, Truth, and Responsibility"
+  - group_title: "1. Rights, Truth, and Responsibility"
     items:
-      - title: "Req 1 — Press Freedom & Media Ethics"
+      - title: "1. Press Freedom & Media Ethics"
         url: "/merit-badges/journalism/guide/req1/"
-  - group_title: "Reporting Across Platforms"
+  - group_title: "2. Reporting Across Platforms"
     items:
-      - title: "Req 2 — Choose Your Newsroom"
+      - title: "2. Choose Your Newsroom"
         url: "/merit-badges/journalism/guide/req2/"
-      - title: "Req 2a — Print, Magazine & Online Reporting"
+      - title: "a Print, Magazine & Online Reporting"
         url: "/merit-badges/journalism/guide/req2a/"
-      - title: "Req 2a1 — Comparing Coverage"
+      - title: "a Comparing Coverage"
         url: "/merit-badges/journalism/guide/req2a1/"
         is_sub: true
-      - title: "Req 2a2 — Touring a News Operation"
+      - title: "a Touring a News Operation"
         url: "/merit-badges/journalism/guide/req2a2/"
         is_sub: true
-      - title: "Req 2b — Broadcast Newsroom Skills"
+      - title: "b Broadcast Newsroom Skills"
         url: "/merit-badges/journalism/guide/req2b/"
-      - title: "Req 2b1 — Comparing Broadcast Coverage"
+      - title: "b Comparing Broadcast Coverage"
         url: "/merit-badges/journalism/guide/req2b1/"
         is_sub: true
-      - title: "Req 2b2 — Visiting a Station"
+      - title: "b Visiting a Station"
         url: "/merit-badges/journalism/guide/req2b2/"
         is_sub: true
-  - group_title: "Storytelling and Interviews"
+  - group_title: "3. Storytelling and Interviews"
     items:
-      - title: "Req 3 — Choose a Storytelling Challenge"
+      - title: "3. Choose a Storytelling Challenge"
         url: "/merit-badges/journalism/guide/req3/"
-      - title: "Req 3a — Write the Story"
+      - title: "a Write the Story"
         url: "/merit-badges/journalism/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Interview an Influential Person"
+      - title: "b Interview an Influential Person"
         url: "/merit-badges/journalism/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Profile a Journalist"
+      - title: "c Profile a Journalist"
         url: "/merit-badges/journalism/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Cover a Scouting Event"
+      - title: "d Cover a Scouting Event"
         url: "/merit-badges/journalism/guide/req3d/"
         is_sub: true
-  - group_title: "Covering Live Events"
+  - group_title: "4. Covering Live Events"
     items:
-      - title: "Req 4 — Choose Your Event Coverage Format"
+      - title: "4. Choose Your Event Coverage Format"
         url: "/merit-badges/journalism/guide/req4/"
-      - title: "Req 4a — Two Written Styles"
+      - title: "a Two Written Styles"
         url: "/merit-badges/journalism/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Broadcast Scripts and Reviews"
+      - title: "b Broadcast Scripts and Reviews"
         url: "/merit-badges/journalism/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Photojournalism Storytelling"
+      - title: "c Photojournalism Storytelling"
         url: "/merit-badges/journalism/guide/req4c/"
         is_sub: true
-  - group_title: "Careers in Journalism"
+  - group_title: "5. Careers in Journalism"
     items:
-      - title: "Req 5 — Journalism Careers"
+      - title: "5. Journalism Careers"
         url: "/merit-badges/journalism/guide/req5/"
   - group_title: "Beyond the Badge"
     items:

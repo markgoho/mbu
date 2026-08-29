@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choking, Asthma & Altitude"
+title: "Choking, Asthma & Altitude"
 layout: "guide"
-group_title: "Breathing Emergencies"
+group_title: "5. Breathing Emergencies"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/first-aid/guide/req4/"
-prev_title: "Req 4 — Bleeding Control"
+prev_title: "Bleeding Control"
 next: "/merit-badges/first-aid/guide/req6/"
-next_title: "Req 6 — Fainting, Seizures & Drowning"
+next_title: "Fainting, Seizures & Drowning"
 ---
 
 {{< drg/requirement number="5" >}}

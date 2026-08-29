@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — The Human-Animal Bond"
+title: "The Human-Animal Bond"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/veterinary-medicine/guide/req4/"
-prev_title: "Req 4 — Veterinary Technicians in Action"
+prev_title: "Veterinary Technicians in Action"
 next: "/merit-badges/veterinary-medicine/guide/req6/"
-next_title: "Req 6 — Choose Your Field Experience"
+next_title: "Choose Your Field Experience"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Buoyant Aid Rescues"
+title: "Buoyant Aid Rescues"
 layout: guide
-group_title: "Swimming Rescues (Conscious)"
+group_title: "8. Swimming Rescues (Conscious)"
 req_number: "8"
 prev: "/merit-badges/lifesaving/guide/req7/"
-prev_title: "Req 7 — Go Rescue Aids"
+prev_title: "Go Rescue Aids"
 next: "/merit-badges/lifesaving/guide/req9/"
-next_title: "Req 9 — Nonbuoyant Aid Rescue"
+next_title: "Nonbuoyant Aid Rescue"
 ---
 
 {{< drg/requirement number="8" >}}

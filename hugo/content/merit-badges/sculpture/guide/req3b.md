@@ -1,11 +1,11 @@
 ---
-title: "Req 3b — Build a Hobby Path"
+title: "Build a Hobby Path"
 layout: "guide"
-group_title: "Sculpture as a Hobby"
+group_title: "3. Sculpture as a Hobby"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/sculpture/guide/req3a/"
-prev_title: "Req 3a — Research a Sculpture Career"
+prev_title: "Research a Sculpture Career"
 next: "/merit-badges/sculpture/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

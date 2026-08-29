@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Avoiding Panic & Maintaining Morale"
+title: "Avoiding Panic & Maintaining Morale"
 layout: guide
-group_title: "Survival Foundations"
+group_title: "2. Survival Foundations"
 req_number: "3"
 prev: "/merit-badges/wilderness-survival/guide/req2/"
-prev_title: "Req 2 — Seven Priorities of Survival"
+prev_title: "Seven Priorities of Survival"
 next: "/merit-badges/wilderness-survival/guide/req4/"
-next_title: "Req 4 — First Aid & Survival Kits"
+next_title: "First Aid & Survival Kits"
 ---
 
 {{< drg/requirement number="3" >}}

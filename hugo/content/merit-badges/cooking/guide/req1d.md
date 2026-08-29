@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Allergies & Food Illness"
+title: "Allergies & Food Illness"
 layout: guide
-group_title: "Health & Safety"
+group_title: "1. Health & Safety"
 req_number: "1d"
 prev: "/merit-badges/cooking/guide/req1c/"
-prev_title: "Req 1c — Safe Food Storage"
+prev_title: "Safe Food Storage"
 next: "/merit-badges/cooking/guide/req1e/"
-next_title: "Req 1e — Reading Food Labels"
+next_title: "Reading Food Labels"
 ---
 
 {{< drg/requirement number="1d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8c — Give an Oceanography Speech"
+title: "Give an Oceanography Speech"
 layout: "guide"
-group_title: "Share What You Learned"
+group_title: "8. Share What You Learned"
 req_number: "8c"
 req_path: "8.c"
 prev: "/merit-badges/oceanography/guide/req8b2/"
-prev_title: "Req 8b2 — Visit a Marine Lab or Aquarium"
+prev_title: "Visit a Marine Lab or Aquarium"
 next: "/merit-badges/oceanography/guide/req9/"
-next_title: "Req 9 — Tools of Ocean Science"
+next_title: "Tools of Ocean Science"
 ---
 
 {{< drg/requirement number="8c" >}}

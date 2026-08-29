@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Mapping Water, Access, and Comfort"
+title: "Mapping Water, Access, and Comfort"
 layout: guide
-group_title: "Studying and Redesigning Space"
+group_title: "4. Studying and Redesigning Space"
 req_number: "4"
 prev: "/merit-badges/landscape-architecture/guide/req3/"
-prev_title: "Req 3 — Choosing Trees, Shrubs, and Ground Covers"
+prev_title: "Choosing Trees, Shrubs, and Ground Covers"
 next: "/merit-badges/landscape-architecture/guide/req5/"
-next_title: "Req 5 — Exploring Landscape Architecture Careers"
+next_title: "Exploring Landscape Architecture Careers"
 ---
 
 {{< drg/requirement number="4" >}}

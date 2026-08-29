@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — The Milky Way"
+title: "The Milky Way"
 layout: guide
-group_title: "Navigating the Night Sky"
+group_title: "4. Navigating the Night Sky"
 req_number: "4d"
 prev: "/merit-badges/astronomy/guide/req4c/"
-prev_title: "Req 4c — Sketching the Big Dipper"
+prev_title: "Sketching the Big Dipper"
 next: "/merit-badges/astronomy/guide/req5a/"
-next_title: "Req 5a — Visible Planets & Phases"
+next_title: "Visible Planets & Phases"
 ---
 
 {{< drg/requirement number="4d" >}}

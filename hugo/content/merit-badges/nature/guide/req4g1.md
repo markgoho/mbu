@@ -1,13 +1,13 @@
 ---
-title: "Req 4g1 — Wild Plant Identification"
+title: "Wild Plant Identification"
 layout: "guide"
-group_title: "Plant Study"
+group_title: "4. Plant Study"
 req_number: "4g1"
 req_path: "4.g.1"
 prev: "/merit-badges/nature/guide/req4f/"
-prev_title: "Req 4f — Shells, Mollusks, and Crustaceans"
+prev_title: "Shells, Mollusks, and Crustaceans"
 next: "/merit-badges/nature/guide/req4g2/"
-next_title: "Req 4g2 — Seeds, Leaves, and Plant Records"
+next_title: "Seeds, Leaves, and Plant Records"
 ---
 
 {{< drg/requirement number="4g1" >}}

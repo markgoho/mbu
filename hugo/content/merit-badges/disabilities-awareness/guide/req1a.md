@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Key Terminology"
+title: "Key Terminology"
 layout: guide
-group_title: "Understanding Disabilities"
+group_title: "1. Understanding Disabilities"
 req_number: "1a"
 prev: "/merit-badges/disabilities-awareness/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/disabilities-awareness/guide/req1b/"
-next_title: "Req 1b — Disability Etiquette"
+next_title: "Disability Etiquette"
 ---
 
 {{< drg/requirement number="1a" >}}

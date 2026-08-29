@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Historical Achievement"
+title: "Historical Achievement"
 layout: guide
-group_title: "Exploring Your Community"
+group_title: "1. Exploring Your Community"
 req_number: "1b"
 prev: "/merit-badges/architecture/guide/req1a/"
-prev_title: "Req 1a — Community Building Tour"
+prev_title: "Community Building Tour"
 next: "/merit-badges/architecture/guide/req2/"
-next_title: "Req 2 — Sustainable Architecture"
+next_title: "Sustainable Architecture"
 ---
 
 {{< drg/requirement number="1b" >}}

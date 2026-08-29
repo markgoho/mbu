@@ -1,12 +1,12 @@
 ---
-title: "Req 6e — Trail Meal Evaluation"
+title: "Trail Meal Evaluation"
 layout: guide
-group_title: "Trail & Backpacking Meals"
+group_title: "6. Trail & Backpacking Meals"
 req_number: "6e"
 prev: "/merit-badges/cooking/guide/req6d/"
-prev_title: "Req 6d — Cook on the Trail"
+prev_title: "Cook on the Trail"
 next: "/merit-badges/cooking/guide/req6f/"
-next_title: "Req 6f — Load Sharing & Food Storage"
+next_title: "Load Sharing & Food Storage"
 ---
 
 {{< drg/requirement number="6e" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Trail Health & First Aid"
+title: "Trail Health & First Aid"
 layout: guide
-group_title: "Trail Health & Safety"
+group_title: "1. Trail Health & Safety"
 req_number: "1"
 prev: "/merit-badges/backpacking/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/backpacking/guide/req2a/"
-next_title: "Req 2a — Essential Gear"
+next_title: "Essential Gear"
 ---
 
 {{< drg/requirement number="1" >}}

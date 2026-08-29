@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Observing a Planet"
+title: "Observing a Planet"
 layout: guide
-group_title: "Exploring the Planets"
+group_title: "5. Exploring the Planets"
 req_number: "5d"
 prev: "/merit-badges/astronomy/guide/req5c/"
-prev_title: "Req 5c — Planetary Motion"
+prev_title: "Planetary Motion"
 next: "/merit-badges/astronomy/guide/req6a/"
-next_title: "Req 6a — Lunar Seas & Craters"
+next_title: "Lunar Seas & Craters"
 ---
 
 {{< drg/requirement number="5d" >}}

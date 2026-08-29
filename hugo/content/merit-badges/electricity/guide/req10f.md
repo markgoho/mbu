@@ -1,12 +1,12 @@
 ---
-title: "Req 10f — Series vs. Parallel Circuits"
+title: "Series vs. Parallel Circuits"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10f"
 prev: "/merit-badges/electricity/guide/req10e/"
-prev_title: "Req 10e — How a 3-Way Switch Works"
+prev_title: "How a 3-Way Switch Works"
 next: "/merit-badges/electricity/guide/req11/"
-next_title: "Req 11 — Electricity Careers"
+next_title: "Electricity Careers"
 ---
 
 {{< drg/requirement number="10f" >}}

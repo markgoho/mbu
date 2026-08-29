@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Dive Safety Starts Here"
+title: "Dive Safety Starts Here"
 layout: "guide"
-group_title: "Safety and Emergency Skills"
+group_title: "1. Safety and Emergency Skills"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/scuba-diving/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/scuba-diving/guide/req2/"
-next_title: "Req 2 — Swimming Before Scuba"
+next_title: "Swimming Before Scuba"
 ---
 
 {{< drg/requirement number="1" >}}

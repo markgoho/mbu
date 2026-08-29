@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Gasoline vs. Diesel"
+title: "Gasoline vs. Diesel"
 layout: "guide"
-group_title: "Engines and Equipment"
+group_title: "3. Engines and Equipment"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/truck-transportation/guide/req2/"
-prev_title: "Req 2 — How Freight Moves"
+prev_title: "How Freight Moves"
 next: "/merit-badges/truck-transportation/guide/req4/"
-next_title: "Req 4 — Inside a Truck Terminal"
+next_title: "Inside a Truck Terminal"
 ---
 
 {{< drg/requirement number="3" >}}

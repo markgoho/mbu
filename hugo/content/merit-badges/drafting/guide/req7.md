@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Workplace Visit or Research"
+title: "Workplace Visit or Research"
 layout: guide
-group_title: "Drafting in the Real World"
+group_title: "7. Drafting in the Real World"
 req_number: "7"
 prev: "/merit-badges/drafting/guide/req6/"
-prev_title: "Req 6 — Lettering Your Opinion"
+prev_title: "Lettering Your Opinion"
 next: "/merit-badges/drafting/guide/req8/"
-next_title: "Req 8 — Drafting Career Exploration"
+next_title: "Drafting Career Exploration"
 ---
 
 {{< drg/requirement number="7" >}}

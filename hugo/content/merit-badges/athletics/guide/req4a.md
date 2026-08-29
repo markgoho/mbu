@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Rules of the Game"
+title: "Rules of the Game"
 layout: guide
-group_title: "Rules & Sportsmanship"
+group_title: "4. Rules & Sportsmanship"
 req_number: "4a"
 prev: "/merit-badges/athletics/guide/req3/"
-prev_title: "Req 3 — Personal Training Program"
+prev_title: "Personal Training Program"
 next: "/merit-badges/athletics/guide/req4b/"
-next_title: "Req 4b — Warm-Ups & Cool-Downs"
+next_title: "Warm-Ups & Cool-Downs"
 ---
 
 {{< drg/requirement number="4a" >}}

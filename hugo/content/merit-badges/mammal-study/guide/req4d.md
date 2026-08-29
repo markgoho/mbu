@@ -1,13 +1,13 @@
 ---
-title: "Req 4d — Tracking Pit Investigation"
+title: "Tracking Pit Investigation"
 layout: "guide"
-group_title: "Mammal Investigation Options"
+group_title: "4. Mammal Investigation Options"
 req_number: "4d"
 req_path: "4.d"
 prev: "/merit-badges/mammal-study/guide/req4c/"
-prev_title: "Req 4c — Game Mammal Life History"
+prev_title: "Game Mammal Life History"
 next: "/merit-badges/mammal-study/guide/req4e/"
-next_title: "Req 4e — Natural History Museum Visit"
+next_title: "Natural History Museum Visit"
 ---
 
 {{< drg/requirement number="4d" >}}

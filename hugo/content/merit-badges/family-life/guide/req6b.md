@@ -1,12 +1,12 @@
 ---
-title: "Req 6b — Meeting Agenda Topics"
+title: "Meeting Agenda Topics"
 layout: guide
-group_title: "Family Meetings"
+group_title: "6. Family Meetings"
 req_number: "6b"
 prev: "/merit-badges/family-life/guide/req6a/"
-prev_title: "Req 6a — Planning Family Meetings"
+prev_title: "Planning Family Meetings"
 next: "/merit-badges/family-life/guide/req7/"
-next_title: "Req 7 — Understanding Parenthood"
+next_title: "Understanding Parenthood"
 ---
 
 {{< drg/requirement number="6b" >}}

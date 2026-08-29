@@ -1,13 +1,13 @@
 ---
-title: "Req 8b3c — Pruning with Purpose"
+title: "Pruning with Purpose"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b3c"
 req_path: "8.b.3.c"
 prev: "/merit-badges/plant-science/guide/req8b3b/"
-prev_title: "Req 8b3b — Transplanting Seedlings"
+prev_title: "Transplanting Seedlings"
 next: "/merit-badges/plant-science/guide/req8b3d/"
-next_title: "Req 8b3d — Planting a Tree or Shrub"
+next_title: "Planting a Tree or Shrub"
 ---
 
 {{< drg/requirement number="8b3c" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Livestock Breeds"
+title: "Livestock Breeds"
 layout: guide
-group_title: "Livestock Breeds"
+group_title: "1. Livestock Breeds"
 req_number: "1"
 prev: "/merit-badges/animal-science/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/animal-science/guide/req2/"
-next_title: "Req 2 — Livestock Diseases"
+next_title: "Livestock Diseases"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -4,70 +4,70 @@ layout: guide
 badge_name: "Aviation"
 group_title: "Getting Started"
 next: "/merit-badges/aviation/guide/req1a/"
-next_title: "Req 1a — What Is an Aircraft?"
+next_title: "What Is an Aircraft?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/aviation/guide/"
-  - group_title: "Aviation Basics"
+  - group_title: "1. Aviation Basics"
     items:
-      - title: "Req 1a — What Is an Aircraft?"
+      - title: "a What Is an Aircraft?"
         url: "/merit-badges/aviation/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — History of Flight"
+      - title: "b History of Flight"
         url: "/merit-badges/aviation/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Fixed Wing vs. Rotary Wing"
+      - title: "c Fixed Wing vs. Rotary Wing"
         url: "/merit-badges/aviation/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — How Engines Work"
+      - title: "d How Engines Work"
         url: "/merit-badges/aviation/guide/req1d/"
         is_sub: true
-  - group_title: "Mechanics of Flight"
+  - group_title: "1. Mechanics of Flight"
     items:
-      - title: "Req 1e — Four Forces of Flight"
+      - title: "e Four Forces of Flight"
         url: "/merit-badges/aviation/guide/req1e/"
         is_sub: true
-      - title: "Req 1f — Airfoils & Lift"
+      - title: "f Airfoils & Lift"
         url: "/merit-badges/aviation/guide/req1f/"
         is_sub: true
-      - title: "Req 1g — Control Surfaces"
+      - title: "g Control Surfaces"
         url: "/merit-badges/aviation/guide/req1g/"
         is_sub: true
-      - title: "Req 1h — Flight Instruments"
+      - title: "h Flight Instruments"
         url: "/merit-badges/aviation/guide/req1h/"
         is_sub: true
-  - group_title: "Principles of Flight"
+  - group_title: "2. Principles of Flight"
     items:
-      - title: "Req 2 — Build & Fly"
+      - title: "2. Build & Fly"
         url: "/merit-badges/aviation/guide/req2/"
         is_sub: false
-  - group_title: "Flight Operations"
+  - group_title: "3. Flight Operations"
     items:
-      - title: "Req 3 — Flight Operations"
+      - title: "3. Flight Operations"
         url: "/merit-badges/aviation/guide/req3/"
         is_sub: false
-  - group_title: "Airport Operations"
+  - group_title: "4. Airport Operations"
     items:
-      - title: "Req 4 — Airport Operations"
+      - title: "4. Airport Operations"
         url: "/merit-badges/aviation/guide/req4/"
         is_sub: false
-  - group_title: "Aviation Careers"
+  - group_title: "5. Aviation Careers"
     items:
-      - title: "Req 5a — Pilot Certificates"
+      - title: "a Pilot Certificates"
         url: "/merit-badges/aviation/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Instrument Rating"
+      - title: "b Instrument Rating"
         url: "/merit-badges/aviation/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Advanced Certificates"
+      - title: "c Advanced Certificates"
         url: "/merit-badges/aviation/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Aviation Organizations"
+      - title: "d Aviation Organizations"
         url: "/merit-badges/aviation/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Aviation Careers"
+      - title: "e Aviation Careers"
         url: "/merit-badges/aviation/guide/req5e/"
         is_sub: true
   - group_title: "Beyond the Badge"

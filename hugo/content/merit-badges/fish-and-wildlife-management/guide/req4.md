@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Five Management Practices"
+title: "Five Management Practices"
 layout: guide
-group_title: "Conservation Fundamentals"
+group_title: "1. Conservation Fundamentals"
 req_number: "4"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req3/"
-prev_title: "Req 3 — How Everyone Can Help"
+prev_title: "How Everyone Can Help"
 next: "/merit-badges/fish-and-wildlife-management/guide/req5/"
-next_title: "Req 5 — Choose a Hands-On Project"
+next_title: "Choose a Hands-On Project"
 ---
 
 {{< drg/requirement number="4" >}}

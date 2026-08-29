@@ -1,13 +1,13 @@
 ---
-title: "Req 7d1 — Parts of a Snowshoe"
+title: "Parts of a Snowshoe"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d1"
 req_path: "7.d.1"
 prev: "/merit-badges/snow-sports/guide/req7d/"
-prev_title: "Req 7d — Snowshoeing"
+prev_title: "Snowshoeing"
 next: "/merit-badges/snow-sports/guide/req7d2/"
-next_title: "Req 7d2 — Choosing the Right Size"
+next_title: "Choosing the Right Size"
 ---
 
 {{< drg/requirement number="7d1" >}}

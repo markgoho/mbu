@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Paper Products Around You"
+title: "Paper Products Around You"
 layout: "guide"
-group_title: "Paper at Home"
+group_title: "6. Paper at Home"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/pulp-and-paper/guide/req5/"
-prev_title: "Req 5 — Coatings and Specialty Papers"
+prev_title: "Coatings and Specialty Papers"
 next: "/merit-badges/pulp-and-paper/guide/req7/"
-next_title: "Req 7 — Choose Your Industry Experience"
+next_title: "Choose Your Industry Experience"
 ---
 
 {{< drg/requirement number="6" >}}

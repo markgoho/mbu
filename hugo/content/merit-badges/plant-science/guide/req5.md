@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Propagation in Practice"
+title: "Propagation in Practice"
 layout: "guide"
-group_title: "Plant Propagation"
+group_title: "5. Plant Propagation"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/plant-science/guide/req4/"
-prev_title: "Req 4 — What Plants Need to Thrive"
+prev_title: "What Plants Need to Thrive"
 next: "/merit-badges/plant-science/guide/req6/"
-next_title: "Req 6 — Native, Cultivated, and Invasive Plants"
+next_title: "Native, Cultivated, and Invasive Plants"
 ---
 
 {{< drg/requirement number="5" >}}

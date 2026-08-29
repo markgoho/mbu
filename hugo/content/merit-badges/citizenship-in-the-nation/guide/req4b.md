@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Bill of Rights & 14th Amendment"
+title: "Bill of Rights & 14th Amendment"
 layout: guide
-group_title: "Founding Documents & Ideals"
+group_title: "4. Founding Documents & Ideals"
 req_number: "4b"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req4a/"
-prev_title: "Req 4a — Declaration of Independence"
+prev_title: "Declaration of Independence"
 next: "/merit-badges/citizenship-in-the-nation/guide/req4c/"
-next_title: "Req 4c — E Pluribus Unum"
+next_title: "E Pluribus Unum"
 ---
 
 {{< drg/requirement number="4b" >}}

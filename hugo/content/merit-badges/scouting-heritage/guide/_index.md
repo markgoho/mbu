@@ -4,109 +4,109 @@ layout: "guide"
 badge_name: "Scouting Heritage"
 group_title: "Getting Started"
 next: "/merit-badges/scouting-heritage/guide/req1/"
-next_title: "Req 1 — Baden-Powell & the Birth of Scouting"
+next_title: "Baden-Powell & the Birth of Scouting"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/scouting-heritage/guide/"
         is_sub: false
-  - group_title: "The Founder's Story"
+  - group_title: "1. The Founder's Story"
     items:
-      - title: "Req 1 — Baden-Powell & the Birth of Scouting"
+      - title: "1. Baden-Powell & the Birth of Scouting"
         url: "/merit-badges/scouting-heritage/guide/req1/"
         is_sub: false
-  - group_title: "Scouting Pioneers"
+  - group_title: "2. Scouting Pioneers"
     items:
-      - title: "Req 2a — Choose Two Scouting Leaders"
+      - title: "a Choose Two Scouting Leaders"
         url: "/merit-badges/scouting-heritage/guide/req2a/"
         is_sub: false
-      - title: "Req 2a1 — Daniel Carter Beard"
+      - title: "a Daniel Carter Beard"
         url: "/merit-badges/scouting-heritage/guide/req2a1/"
         is_sub: true
-      - title: "Req 2a2 — William D. Boyce"
+      - title: "a William D. Boyce"
         url: "/merit-badges/scouting-heritage/guide/req2a2/"
         is_sub: true
-      - title: "Req 2a3 — Waite Phillips"
+      - title: "a Waite Phillips"
         url: "/merit-badges/scouting-heritage/guide/req2a3/"
         is_sub: true
-      - title: "Req 2a4 — Ernest Thompson Seton"
+      - title: "a Ernest Thompson Seton"
         url: "/merit-badges/scouting-heritage/guide/req2a4/"
         is_sub: true
-      - title: "Req 2a5 — James E. West"
+      - title: "a James E. West"
         url: "/merit-badges/scouting-heritage/guide/req2a5/"
         is_sub: true
-      - title: "Req 2a6 — \"Green Bar Bill\" Hillcourt"
+      - title: 'a "Green Bar Bill" Hillcourt'
         url: "/merit-badges/scouting-heritage/guide/req2a6/"
         is_sub: true
-      - title: "Req 2a7 — Frederick Russell Burnham"
+      - title: "a Frederick Russell Burnham"
         url: "/merit-badges/scouting-heritage/guide/req2a7/"
         is_sub: true
-      - title: "Req 2a8 — Dr. Charles Eastman"
+      - title: "a Dr. Charles Eastman"
         url: "/merit-badges/scouting-heritage/guide/req2a8/"
         is_sub: true
-      - title: "Req 2a9 — Edgar Robinson"
+      - title: "a Edgar Robinson"
         url: "/merit-badges/scouting-heritage/guide/req2a9/"
         is_sub: true
-  - group_title: "Scouting Milestones"
+  - group_title: "2. Scouting Milestones"
     items:
-      - title: "Req 2b — Choose Two Scouting Milestones"
+      - title: "b Choose Two Scouting Milestones"
         url: "/merit-badges/scouting-heritage/guide/req2b/"
         is_sub: false
-      - title: "Req 2b1 — Brownsea Island"
+      - title: "b Brownsea Island"
         url: "/merit-badges/scouting-heritage/guide/req2b1/"
         is_sub: true
-      - title: "Req 2b2 — First World Scout Jamboree"
+      - title: "b First World Scout Jamboree"
         url: "/merit-badges/scouting-heritage/guide/req2b2/"
         is_sub: true
-      - title: "Req 2b3 — Scouts BSA Handbook"
+      - title: "b Scouts BSA Handbook"
         url: "/merit-badges/scouting-heritage/guide/req2b3/"
         is_sub: true
-      - title: "Req 2b4 — Scout Life Magazine"
+      - title: "b Scout Life Magazine"
         url: "/merit-badges/scouting-heritage/guide/req2b4/"
         is_sub: true
-  - group_title: "Growing Scouting"
+  - group_title: "3. Growing Scouting"
     items:
-      - title: "Req 3 — How Scouting Grew for Every Age"
+      - title: "3. How Scouting Grew for Every Age"
         url: "/merit-badges/scouting-heritage/guide/req3/"
         is_sub: false
-  - group_title: "Experience Scouting History"
+  - group_title: "4. Experience Scouting History"
     items:
-      - title: "Req 4 — Choose a Scouting History Experience"
+      - title: "4. Choose a Scouting History Experience"
         url: "/merit-badges/scouting-heritage/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Jamboree or High Adventure Journal"
+      - title: "a Jamboree or High Adventure Journal"
         url: "/merit-badges/scouting-heritage/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — National Scouting Museum Visit"
+      - title: "b National Scouting Museum Visit"
         url: "/merit-badges/scouting-heritage/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Local Scouting History Visit"
+      - title: "c Local Scouting History Visit"
         url: "/merit-badges/scouting-heritage/guide/req4c/"
         is_sub: true
-  - group_title: "Your Scouting Story"
+  - group_title: "5. Your Scouting Story"
     items:
-      - title: "Req 5 — Research Your Scouting Community"
+      - title: "5. Research Your Scouting Community"
         url: "/merit-badges/scouting-heritage/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Build a Memorabilia Collection"
+      - title: "6. Build a Memorabilia Collection"
         url: "/merit-badges/scouting-heritage/guide/req6/"
         is_sub: false
-      - title: "Req 7 — Recreate an Old-Time Scout Game"
+      - title: "7. Recreate an Old-Time Scout Game"
         url: "/merit-badges/scouting-heritage/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Interview Former Scouts"
+      - title: "8. Interview Former Scouts"
         url: "/merit-badges/scouting-heritage/guide/req8/"
         is_sub: false
-  - group_title: "Careers in Scouting"
+  - group_title: "9. Careers in Scouting"
     items:
-      - title: "Req 9 — Choose Careers or Volunteer Service"
+      - title: "9. Choose Careers or Volunteer Service"
         url: "/merit-badges/scouting-heritage/guide/req9/"
         is_sub: false
-      - title: "Req 9a — Careers Related to Scouting"
+      - title: "a Careers Related to Scouting"
         url: "/merit-badges/scouting-heritage/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Serve as a Scouting Volunteer"
+      - title: "b Serve as a Scouting Volunteer"
         url: "/merit-badges/scouting-heritage/guide/req9b/"
         is_sub: true
   - group_title: "Beyond the Badge"

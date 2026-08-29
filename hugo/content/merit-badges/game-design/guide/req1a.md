@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Comparing Games"
+title: "Comparing Games"
 layout: guide
-group_title: "Thinking Like a Designer"
+group_title: "1. Thinking Like a Designer"
 req_number: "1a"
 prev: "/merit-badges/game-design/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/game-design/guide/req1b/"
-next_title: "Req 1b — Why People Play"
+next_title: "Why People Play"
 ---
 
 {{< drg/requirement number="1a" >}}

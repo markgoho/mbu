@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Feeding a Horse"
+title: "Feeding a Horse"
 layout: guide
-group_title: "Daily Horse Care"
+group_title: "7. Daily Horse Care"
 req_number: "8"
 prev: "/merit-badges/horsemanship/guide/req7/"
-prev_title: "Req 7 — Grooming and After-Ride Care"
+prev_title: "Grooming and After-Ride Care"
 next: "/merit-badges/horsemanship/guide/req9/"
-next_title: "Req 9 — Saddles, Bridles, and Mounting"
+next_title: "Saddles, Bridles, and Mounting"
 ---
 
 {{< drg/requirement number="8" >}}

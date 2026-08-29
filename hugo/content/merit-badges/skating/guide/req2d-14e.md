@@ -1,11 +1,11 @@
 ---
-title: "Req 2d14e — Footplant Tricks"
+title: "Footplant Tricks"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d14e"
 req_path: "2.d.14.e"
 prev: "/merit-badges/skating/guide/req2d-14d/"
-prev_title: "Req 2d14d — Air & Grab Tricks"
+prev_title: "Air & Grab Tricks"
 next: "/merit-badges/skating/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

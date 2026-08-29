@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Organize a Safety Event"
+title: "Organize a Safety Event"
 layout: "guide"
-group_title: "Community Action"
+group_title: "7. Community Action"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/traffic-safety/guide/req7b/"
-prev_title: "Req 7b — Write Your Traffic Safety Pledge"
+prev_title: "Write Your Traffic Safety Pledge"
 next: "/merit-badges/traffic-safety/guide/req8/"
-next_title: "Req 8 — Careers in Traffic Safety"
+next_title: "Careers in Traffic Safety"
 ---
 
 {{< drg/requirement number="7c" >}}

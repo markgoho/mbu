@@ -4,90 +4,90 @@ layout: "guide"
 badge_name: "Wildland Fire Management"
 group_title: "Getting Started"
 next: "/merit-badges/wildland-fire-management/guide/req1/"
-next_title: "Req 1 — The History of Wildland Fire"
+next_title: "The History of Wildland Fire"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/wildland-fire-management/guide/"
         is_sub: false
-  - group_title: "Fire in American History"
+  - group_title: "1. Fire in American History"
     items:
-      - title: "Req 1 — The History of Wildland Fire"
+      - title: "1. The History of Wildland Fire"
         url: "/merit-badges/wildland-fire-management/guide/req1/"
         is_sub: false
-  - group_title: "Counting the Cost"
+  - group_title: "2. Counting the Cost"
     items:
-      - title: "Req 2 — The Harms of Wildfire"
+      - title: "2. The Harms of Wildfire"
         url: "/merit-badges/wildland-fire-management/guide/req2/"
         is_sub: false
-  - group_title: "Fire as a Tool"
+  - group_title: "3. Fire as a Tool"
     items:
-      - title: "Req 3 — Prescribed Fire"
+      - title: "3. Prescribed Fire"
         url: "/merit-badges/wildland-fire-management/guide/req3/"
         is_sub: false
-  - group_title: "Prevention & Mitigation"
+  - group_title: "4. Prevention & Mitigation"
     items:
-      - title: "Req 4a — Wildfire Prevention"
+      - title: "a Wildfire Prevention"
         url: "/merit-badges/wildland-fire-management/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Wildfire Mitigation"
+      - title: "b Wildfire Mitigation"
         url: "/merit-badges/wildland-fire-management/guide/req4b/"
         is_sub: true
-  - group_title: "How Fire Behaves"
+  - group_title: "5. How Fire Behaves"
     items:
-      - title: "Req 5 — Fire Behavior"
+      - title: "5. Fire Behavior"
         url: "/merit-badges/wildland-fire-management/guide/req5/"
         is_sub: false
-  - group_title: "Firefighter Safety"
+  - group_title: "6. Firefighter Safety"
     items:
-      - title: "Req 6a — Personal Protective Equipment"
+      - title: "a Personal Protective Equipment"
         url: "/merit-badges/wildland-fire-management/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — The 10, the 18, and LCES"
+      - title: "b The 10, the 18, and LCES"
         url: "/merit-badges/wildland-fire-management/guide/req6b/"
         is_sub: true
-  - group_title: "Fighting the Fire"
+  - group_title: "7. Fighting the Fire"
     items:
-      - title: "Req 7a — Suppression Tactics"
+      - title: "a Suppression Tactics"
         url: "/merit-badges/wildland-fire-management/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — The Incident Command System"
+      - title: "b The Incident Command System"
         url: "/merit-badges/wildland-fire-management/guide/req7b/"
         is_sub: true
-  - group_title: "Tools of the Trade"
+  - group_title: "8. Tools of the Trade"
     items:
-      - title: "Req 8 — Suppression Tools & Equipment"
+      - title: "8. Suppression Tools & Equipment"
         url: "/merit-badges/wildland-fire-management/guide/req8/"
         is_sub: false
-  - group_title: "Taking Action"
+  - group_title: "9. Taking Action"
     items:
-      - title: "Req 9 — Choose Your Project"
+      - title: "9. Choose Your Project"
         url: "/merit-badges/wildland-fire-management/guide/req9/"
         is_sub: false
-      - title: "Req 9a — Build a Fire Readiness Plan"
+      - title: "a Build a Fire Readiness Plan"
         url: "/merit-badges/wildland-fire-management/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Talk With a Forestry Official"
+      - title: "b Talk With a Forestry Official"
         url: "/merit-badges/wildland-fire-management/guide/req9b/"
         is_sub: true
-      - title: "Req 9c — Firewise Assessment & Project"
+      - title: "c Firewise Assessment & Project"
         url: "/merit-badges/wildland-fire-management/guide/req9c/"
         is_sub: true
-      - title: "Req 9d — Create a Prevention Message"
+      - title: "d Create a Prevention Message"
         url: "/merit-badges/wildland-fire-management/guide/req9d/"
         is_sub: true
-      - title: "Req 9e — Talk Fire Weather"
+      - title: "e Talk Fire Weather"
         url: "/merit-badges/wildland-fire-management/guide/req9e/"
         is_sub: true
-  - group_title: "Learning From the Past"
+  - group_title: "10. Learning From the Past"
     items:
-      - title: "Req 10 — Lessons From a Catastrophic Fire"
+      - title: "10. Lessons From a Catastrophic Fire"
         url: "/merit-badges/wildland-fire-management/guide/req10/"
         is_sub: false
-  - group_title: "Careers"
+  - group_title: "11. Careers"
     items:
-      - title: "Req 11 — Careers in Wildland Fire"
+      - title: "11. Careers in Wildland Fire"
         url: "/merit-badges/wildland-fire-management/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

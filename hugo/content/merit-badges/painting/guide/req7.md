@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Paint, Health, and the Environment"
+title: "Paint, Health, and the Environment"
 layout: "guide"
-group_title: "Responsible Painting"
+group_title: "7. Responsible Painting"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/painting/guide/req6/"
-prev_title: "Req 6 — Ladder Safety and PPE"
+prev_title: "Ladder Safety and PPE"
 next: "/merit-badges/painting/guide/req8/"
-next_title: "Req 8 — Choose a Painting Path"
+next_title: "Choose a Painting Path"
 ---
 
 {{< drg/requirement number="7" >}}

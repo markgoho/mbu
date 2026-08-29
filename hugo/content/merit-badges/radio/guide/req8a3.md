@@ -1,13 +1,13 @@
 ---
-title: "Req 8a3 — Q Signals & Terms"
+title: "Q Signals & Terms"
 layout: "guide"
-group_title: "Option A: Amateur Radio"
+group_title: "8. Option A: Amateur Radio"
 req_number: "8a3"
 req_path: "8.a.3"
 prev: "/merit-badges/radio/guide/req8a2/"
-prev_title: "Req 8a2 — License Classes"
+prev_title: "License Classes"
 next: "/merit-badges/radio/guide/req8a4/"
-next_title: "Req 8a4 — Emergency Calls"
+next_title: "Emergency Calls"
 guide_nav:
   - group_title: "Getting Started"
     items:

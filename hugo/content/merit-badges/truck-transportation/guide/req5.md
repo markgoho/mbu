@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Company Departments and Jobs"
+title: "Company Departments and Jobs"
 layout: "guide"
-group_title: "How a Trucking Company Works"
+group_title: "5. How a Trucking Company Works"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/truck-transportation/guide/req4/"
-prev_title: "Req 4 — Inside a Truck Terminal"
+prev_title: "Inside a Truck Terminal"
 next: "/merit-badges/truck-transportation/guide/req6/"
-next_title: "Req 6 — Government Agencies and Their Roles"
+next_title: "Government Agencies and Their Roles"
 ---
 
 {{< drg/requirement number="5" >}}

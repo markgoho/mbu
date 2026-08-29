@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Intellectual Property and Sharing Music"
+title: "Intellectual Property and Sharing Music"
 layout: "guide"
-group_title: "Music and Ownership"
+group_title: "5. Music and Ownership"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/music/guide/req4c/"
-prev_title: "Req 4c — Make and Play a Traditional Instrument"
+prev_title: "Make and Play a Traditional Instrument"
 next: "/merit-badges/music/guide/req6/"
-next_title: "Req 6 — Choose Your Next Step"
+next_title: "Choose Your Next Step"
 ---
 
 {{< drg/requirement number="5" >}}

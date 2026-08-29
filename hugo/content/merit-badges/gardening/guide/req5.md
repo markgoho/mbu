@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Visiting Garden Experts"
+title: "Visiting Garden Experts"
 layout: guide
-group_title: "Exploring the Gardening World"
+group_title: "5. Exploring the Gardening World"
 req_number: "5"
 prev: "/merit-badges/gardening/guide/req4/"
-prev_title: "Req 4 — Seed Germination Testing"
+prev_title: "Seed Germination Testing"
 next: "/merit-badges/gardening/guide/req6/"
-next_title: "Req 6 — Pollinators & Honeybees"
+next_title: "Pollinators & Honeybees"
 ---
 
 {{< drg/requirement number="5" >}}

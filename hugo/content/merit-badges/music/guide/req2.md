@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Instrument Families and Sound"
+title: "Instrument Families and Sound"
 layout: "guide"
-group_title: "How Instruments Make Sound"
+group_title: "2. How Instruments Make Sound"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/music/guide/req1/"
-prev_title: "Req 1 — Perform with Expression"
+prev_title: "Perform with Expression"
 next: "/merit-badges/music/guide/req3/"
-next_title: "Req 3 — Choose Your Music Experiences"
+next_title: "Choose Your Music Experiences"
 ---
 
 {{< drg/requirement number="2" >}}

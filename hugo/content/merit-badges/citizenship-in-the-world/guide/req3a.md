@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Current Events & National Interests"
+title: "Current Events & National Interests"
 layout: guide
-group_title: "World Events & National Interests"
+group_title: "3. World Events & National Interests"
 req_number: "3a"
 prev: "/merit-badges/citizenship-in-the-world/guide/req2/"
-prev_title: "Req 2 — U.S. Citizenship & Comparing Countries"
+prev_title: "U.S. Citizenship & Comparing Countries"
 next: "/merit-badges/citizenship-in-the-world/guide/req3b/"
-next_title: "Req 3b — A Country's Geography & Economy"
+next_title: "A Country"
 ---
 
 {{< drg/requirement number="3a" >}}

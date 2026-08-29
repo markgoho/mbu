@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Contributions to America"
+title: "Contributions to America"
 layout: guide
-group_title: "Celebrating Contributions"
+group_title: "4. Celebrating Contributions"
 req_number: "4"
 prev: "/merit-badges/american-cultures/guide/req3/"
-prev_title: "Req 3 — Customs and Commonalities"
+prev_title: "Customs and Commonalities"
 next: "/merit-badges/american-cultures/guide/req5/"
-next_title: "Req 5 — Leading a Discussion"
+next_title: "Leading a Discussion"
 ---
 
 {{< drg/requirement number="4" >}}

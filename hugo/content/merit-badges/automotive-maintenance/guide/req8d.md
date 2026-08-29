@@ -1,12 +1,12 @@
 ---
-title: "Req 8d — Jump-Starting a Battery"
+title: "Jump-Starting a Battery"
 layout: guide
-group_title: "Ignition & Electrical"
+group_title: "8. Ignition & Electrical"
 req_number: "8d"
 prev: "/merit-badges/automotive-maintenance/guide/req8b/"
-prev_title: "Req 8b — Firing Order & Spark Gap"
+prev_title: "Firing Order & Spark Gap"
 next: "/merit-badges/automotive-maintenance/guide/req8e/"
-next_title: "Req 8e — Electric Vehicles"
+next_title: "Electric Vehicles"
 ---
 
 {{< drg/requirement number="8d" >}}

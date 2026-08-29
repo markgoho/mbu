@@ -1,13 +1,13 @@
 ---
-title: "Req 4a1 — Triathlon Swim Skills"
+title: "Triathlon Swim Skills"
 layout: "guide"
-group_title: "Triathlon Path"
+group_title: "4. Triathlon Path"
 req_number: "4a1"
 req_path: "4.a.1"
 prev: "/merit-badges/multisport/guide/req4a/"
-prev_title: "Req 4a — Triathlon Roadmap"
+prev_title: "Triathlon Roadmap"
 next: "/merit-badges/multisport/guide/req4a2/"
-next_title: "Req 4a2 — Triathlon Bike Skills"
+next_title: "Triathlon Bike Skills"
 ---
 
 {{< drg/requirement number="4a1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Investing, Buying & Selling"
+title: "Investing, Buying & Selling"
 layout: guide
-group_title: "Collecting as an Investment"
+group_title: "4. Collecting as an Investment"
 req_number: "4"
 prev: "/merit-badges/collections/guide/req3d/"
-prev_title: "Req 3d — Cataloging Your Collection"
+prev_title: "Cataloging Your Collection"
 next: "/merit-badges/collections/guide/req5a/"
-next_title: "Req 5a — Collector Vocabulary"
+next_title: "Collector Vocabulary"
 ---
 
 {{< drg/requirement number="4" >}}

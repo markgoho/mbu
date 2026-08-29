@@ -4,78 +4,78 @@ layout: guide
 badge_name: "Artificial Intelligence"
 group_title: "Getting Started"
 next: "/merit-badges/artificial-intelligence/guide/req1/"
-next_title: "Requirement 1 — Key AI Terms"
+next_title: "Key AI Terms"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/artificial-intelligence/guide/"
-  - group_title: "Key Concepts"
+  - group_title: "1. Key Concepts"
     items:
-      - title: "Req 1 — Key AI Terms"
+      - title: "1. Key AI Terms"
         url: "/merit-badges/artificial-intelligence/guide/req1/"
         is_sub: false
-  - group_title: "AI Basics"
+  - group_title: "2. AI Basics"
     items:
-      - title: "Req 2a–c — AI All Around You"
+      - title: "a AI All Around You"
         url: "/merit-badges/artificial-intelligence/guide/req2abc/"
         is_sub: true
-      - title: "Req 2d — AI or Not?"
+      - title: "d AI or Not?"
         url: "/merit-badges/artificial-intelligence/guide/req2d/"
         is_sub: true
-      - title: "Req 2e — AI Timeline"
+      - title: "e AI Timeline"
         url: "/merit-badges/artificial-intelligence/guide/req2e/"
         is_sub: true
-  - group_title: "Automation Basics"
+  - group_title: "3. Automation Basics"
     items:
-      - title: "Req 3a–c — Automation All Around You"
+      - title: "a Automation All Around You"
         url: "/merit-badges/artificial-intelligence/guide/req3abc/"
         is_sub: true
-      - title: "Req 3d — How Automation Works"
+      - title: "d How Automation Works"
         url: "/merit-badges/artificial-intelligence/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Automation Timeline"
+      - title: "e Automation Timeline"
         url: "/merit-badges/artificial-intelligence/guide/req3e/"
         is_sub: true
-  - group_title: "Ethics in AI"
+  - group_title: "4. Ethics in AI"
     items:
-      - title: "Req 4a — Bias, Privacy & Decisions"
+      - title: "a Bias, Privacy & Decisions"
         url: "/merit-badges/artificial-intelligence/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — What Would You Do?"
+      - title: "b What Would You Do?"
         url: "/merit-badges/artificial-intelligence/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Your Ethical Guidelines"
+      - title: "c Your Ethical Guidelines"
         url: "/merit-badges/artificial-intelligence/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — The Turing Test"
+      - title: "d The Turing Test"
         url: "/merit-badges/artificial-intelligence/guide/req4d/"
         is_sub: true
-  - group_title: "Deepfakes"
+  - group_title: "5. Deepfakes"
     items:
-      - title: "Req 5 — Deepfakes"
+      - title: "5. Deepfakes"
         url: "/merit-badges/artificial-intelligence/guide/req5/"
         is_sub: false
-  - group_title: "Developing AI Skills"
+  - group_title: "6. Developing AI Skills"
     items:
-      - title: "Req 6a — How AI Learns"
+      - title: "a How AI Learns"
         url: "/merit-badges/artificial-intelligence/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Communicating with AI"
+      - title: "b Communicating with AI"
         url: "/merit-badges/artificial-intelligence/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Prompt Engineering"
+      - title: "c Prompt Engineering"
         url: "/merit-badges/artificial-intelligence/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Writing Clear Instructions"
+      - title: "d Writing Clear Instructions"
         url: "/merit-badges/artificial-intelligence/guide/req6d/"
         is_sub: true
-  - group_title: "Putting It All Together"
+  - group_title: "7. Putting It All Together"
     items:
-      - title: "Req 7 — Build Your AI Project"
+      - title: "7. Build Your AI Project"
         url: "/merit-badges/artificial-intelligence/guide/req7/"
         is_sub: false
-      - title: "Req 8 — AI Careers"
+      - title: "8. AI Careers"
         url: "/merit-badges/artificial-intelligence/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

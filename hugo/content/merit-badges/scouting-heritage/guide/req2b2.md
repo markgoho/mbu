@@ -1,13 +1,13 @@
 ---
-title: "Req 2b2 — First World Scout Jamboree"
+title: "First World Scout Jamboree"
 layout: "guide"
-group_title: "Scouting Milestones"
+group_title: "2. Scouting Milestones"
 req_number: "2b2"
 req_path: "2.b.2"
 prev: "/merit-badges/scouting-heritage/guide/req2b1/"
-prev_title: "Req 2b1 — Brownsea Island"
+prev_title: "Brownsea Island"
 next: "/merit-badges/scouting-heritage/guide/req2b3/"
-next_title: "Req 2b3 — Scouts BSA Handbook"
+next_title: "Scouts BSA Handbook"
 ---
 
 {{< drg/requirement number="2b2" >}}

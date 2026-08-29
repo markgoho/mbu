@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Train, Compete, and Reflect"
+title: "Train, Compete, and Reflect"
 layout: "guide"
-group_title: "Season Planning and Participation"
+group_title: "5. Season Planning and Participation"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/sports/guide/req4/"
-prev_title: "Req 4 — Pick Sports You Can Really Commit To"
+prev_title: "Pick Sports You Can Really Commit To"
 next: "/merit-badges/sports/guide/req6/"
-next_title: "Req 6 — Choose Your Next Step"
+next_title: "Choose Your Next Step"
 ---
 
 {{< drg/requirement number="5" >}}

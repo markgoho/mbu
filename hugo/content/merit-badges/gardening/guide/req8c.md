@@ -1,12 +1,12 @@
 ---
-title: "Req 8c — Hydroponic Garden Project"
+title: "Hydroponic Garden Project"
 layout: guide
-group_title: "Hands-On Garden Projects"
+group_title: "8. Hands-On Garden Projects"
 req_number: "8c"
 prev: "/merit-badges/gardening/guide/req8b/"
-prev_title: "Req 8b — Vermicompost Bin Project"
+prev_title: "Vermicompost Bin Project"
 next: "/merit-badges/gardening/guide/req8d/"
-next_title: "Req 8d — Water Garden Project"
+next_title: "Water Garden Project"
 ---
 
 {{< drg/requirement number="8c" >}}

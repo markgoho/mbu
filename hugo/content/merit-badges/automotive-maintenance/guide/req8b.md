@@ -1,12 +1,12 @@
 ---
-title: "Req 8b — Firing Order & Spark Gap"
+title: "Firing Order & Spark Gap"
 layout: guide
-group_title: "Ignition & Electrical"
+group_title: "8. Ignition & Electrical"
 req_number: "8b"
 prev: "/merit-badges/automotive-maintenance/guide/req8a/"
-prev_title: "Req 8a — Electrical System Diagrams"
+prev_title: "Electrical System Diagrams"
 next: "/merit-badges/automotive-maintenance/guide/req8d/"
-next_title: "Req 8d — Jump-Starting a Battery"
+next_title: "Jump-Starting a Battery"
 ---
 
 {{< drg/requirement number="8b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Safety Precautions"
+title: "Safety Precautions"
 layout: guide
-group_title: "Electrical Safety"
+group_title: "1. Electrical Safety"
 req_number: "1"
 prev: "/merit-badges/electronics/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/electronics/guide/req2/"
-next_title: "Req 2 — Reading & Drawing Schematics"
+next_title: "Reading & Drawing Schematics"
 ---
 
 {{< drg/requirement number="1" >}}

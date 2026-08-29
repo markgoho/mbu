@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — Copyrights, Patents & Trademarks"
+title: "Copyrights, Patents & Trademarks"
 layout: guide
-group_title: "Intellectual Property"
+group_title: "7. Intellectual Property"
 req_number: "7a"
 prev: "/merit-badges/digital-technology/guide/req6/"
-prev_title: "Req 6 — Hands-On Digital Projects"
+prev_title: "Hands-On Digital Projects"
 next: "/merit-badges/digital-technology/guide/req7b/"
-next_title: "Req 7b — Software Sharing Ethics"
+next_title: "Software Sharing Ethics"
 ---
 
 {{< drg/requirement number="7a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4a — House in Miniature"
+title: "House in Miniature"
 layout: "guide"
-group_title: "Architectural House Model"
+group_title: "4. Architectural House Model"
 req_number: "4a"
 req_path: "4.a"
 prev: "/merit-badges/model-design-and-building/guide/req4/"
-prev_title: "Req 4 — Pick Your Model Path"
+prev_title: "Pick Your Model Path"
 next: "/merit-badges/model-design-and-building/guide/req4b/"
-next_title: "Req 4b — Showing How a Building Stands"
+next_title: "Showing How a Building Stands"
 ---
 
 {{< drg/requirement number="4a" >}}

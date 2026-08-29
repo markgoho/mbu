@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — How Coins Are Made"
+title: "How Coins Are Made"
 layout: guide
-group_title: "The U.S. Mint"
+group_title: "1. The U.S. Mint"
 req_number: "1"
 prev: "/merit-badges/coin-collecting/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/coin-collecting/guide/req2/"
-next_title: "Req 2 — Coin Terminology"
+next_title: "Coin Terminology"
 ---
 
 {{< drg/requirement number="1" >}}

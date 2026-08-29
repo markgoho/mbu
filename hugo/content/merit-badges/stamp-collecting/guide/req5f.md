@@ -1,13 +1,13 @@
 ---
-title: "Req 5f — Safe Storage Sleeves"
+title: "Safe Storage Sleeves"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5f"
 req_path: "5.f"
 prev: "/merit-badges/stamp-collecting/guide/req5e/"
-prev_title: "Req 5e — Measuring With a Perforation Gauge"
+prev_title: "Measuring With a Perforation Gauge"
 next: "/merit-badges/stamp-collecting/guide/req5g/"
-next_title: "Req 5g — Finding Watermarks"
+next_title: "Finding Watermarks"
 ---
 
 {{< drg/requirement number="5f" >}}

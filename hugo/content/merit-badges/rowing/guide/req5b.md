@@ -1,13 +1,13 @@
 ---
-title: "Req 5b — Sliding-Seat Dock Exchange"
+title: "Sliding-Seat Dock Exchange"
 layout: "guide"
-group_title: "Sliding-Seat Skills"
+group_title: "5. Sliding-Seat Skills"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/rowing/guide/req5a/"
-prev_title: "Req 5a — Passenger Handling & Sculling"
+prev_title: "Passenger Handling & Sculling"
 next: "/merit-badges/rowing/guide/req6/"
-next_title: "Req 6 — Swamped Boat Recovery"
+next_title: "Swamped Boat Recovery"
 ---
 
 {{< drg/requirement number="5b" >}}

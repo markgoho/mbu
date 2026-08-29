@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Use and Care for Your Tools"
+title: "Use and Care for Your Tools"
 layout: "guide"
-group_title: "Tool Care"
+group_title: "5. Tool Care"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/painting/guide/req4/"
-prev_title: "Req 4 — Choose Harmonizing Colors"
+prev_title: "Choose Harmonizing Colors"
 next: "/merit-badges/painting/guide/req6/"
-next_title: "Req 6 — Ladder Safety and PPE"
+next_title: "Ladder Safety and PPE"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — The Water Cycle & Runoff"
+title: "The Water Cycle & Runoff"
 layout: "guide"
-group_title: "Water on the Move"
+group_title: "5. Water on the Move"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/soil-and-water-conservation/guide/req4/"
-prev_title: "Req 4 — Watersheds, Basins & Aquifers"
+prev_title: "Watersheds, Basins & Aquifers"
 next: "/merit-badges/soil-and-water-conservation/guide/req6/"
-next_title: "Req 6 — Water Pollution & Waste Treatment"
+next_title: "Water Pollution & Waste Treatment"
 ---
 
 {{< drg/requirement number="5" >}}

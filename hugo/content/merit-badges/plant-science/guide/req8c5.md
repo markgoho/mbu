@@ -1,13 +1,13 @@
 ---
-title: "Req 8c5 — Rare Plants and Conservation"
+title: "Rare Plants and Conservation"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c5"
 req_path: "8.c.5"
 prev: "/merit-badges/plant-science/guide/req8c4/"
-prev_title: "Req 8c4 — Pressing and Mounting Specimens"
+prev_title: "Pressing & Mounting Plants"
 next: "/merit-badges/plant-science/guide/req8c6/"
-next_title: "Req 8c6 — Choose a Field Botany Project"
+next_title: "Choose a Field Study"
 ---
 
 {{< drg/requirement number="8c5" >}}

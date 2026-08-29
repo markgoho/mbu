@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Life in Seawater"
+title: "Life in Seawater"
 layout: "guide"
-group_title: "Ocean Ecology"
+group_title: "6. Ocean Ecology"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/oceanography/guide/req5/"
-prev_title: "Req 5 — Seawater Chemistry"
+prev_title: "Seawater Chemistry"
 next: "/merit-badges/oceanography/guide/req7/"
-next_title: "Req 7 — Choose an Ocean Investigation"
+next_title: "Choose an Ocean Investigation"
 ---
 
 {{< drg/requirement number="6" >}}

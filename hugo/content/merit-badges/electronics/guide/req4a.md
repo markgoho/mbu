@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Control, Logic & Analog"
+title: "Control, Logic & Analog"
 layout: guide
-group_title: "Circuits & Digital Logic"
+group_title: "4. Circuits & Digital Logic"
 req_number: "4a"
 prev: "/merit-badges/electronics/guide/req3/"
-prev_title: "Req 3 — Soldering Techniques"
+prev_title: "Soldering Techniques"
 next: "/merit-badges/electronics/guide/req4b/"
-next_title: "Req 4b — Binary & Decimal Conversion"
+next_title: "Binary & Decimal Conversion"
 ---
 
 {{< drg/requirement number="4a" >}}

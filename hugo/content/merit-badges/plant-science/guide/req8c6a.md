@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6a — Tree Inventory"
+title: "Tree Inventory"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6a"
 req_path: "8.c.6.a"
 prev: "/merit-badges/plant-science/guide/req8c6/"
-prev_title: "Req 8c6 — Choose a Field Botany Project"
+prev_title: "Choose a Field Study"
 next: "/merit-badges/plant-science/guide/req8c6b/"
-next_title: "Req 8c6b — Transect Study"
+next_title: "Transect Study"
 ---
 
 {{< drg/requirement number="8c6a" >}}

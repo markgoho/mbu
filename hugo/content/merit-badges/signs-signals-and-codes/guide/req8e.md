@@ -1,13 +1,13 @@
 ---
-title: "Req 8e — Your Custom Signal Set"
+title: "Your Custom Signal Set"
 layout: "guide"
-group_title: "Specialized Signal Systems"
+group_title: "8. Specialized Signal Systems"
 req_number: "8e"
 req_path: "8.e"
 prev: "/merit-badges/signs-signals-and-codes/guide/req8d/"
-prev_title: "Req 8d — Cyclist Hand Signals"
+prev_title: "Cyclist Hand Signals"
 next: "/merit-badges/signs-signals-and-codes/guide/req9/"
-next_title: "Req 9 — Symbols in Daily Life"
+next_title: "Symbols in Daily Life"
 ---
 
 {{< drg/requirement number="8e" >}}

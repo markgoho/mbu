@@ -1,12 +1,12 @@
 ---
-title: "Req 10a — Extinct, Endangered, Threatened"
+title: "Extinct, Endangered, Threatened"
 layout: guide
-group_title: "Conservation"
+group_title: "10. Conservation"
 req_number: "10a"
 prev: "/merit-badges/bird-study/guide/req9/"
-prev_title: "Req 9 — Build for Birds"
+prev_title: "Build for Birds"
 next: "/merit-badges/bird-study/guide/req10b/"
-next_title: "Req 10b — Endangered Species"
+next_title: "Endangered Species"
 ---
 
 {{< drg/requirement number="10a" >}}

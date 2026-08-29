@@ -1,10 +1,10 @@
 ---
-title: "Req 10 — Careers"
+title: "Careers"
 layout: guide
-group_title: "Careers in Emergency Services"
+group_title: "10. Careers in Emergency Services"
 req_number: "10"
 prev: "/merit-badges/emergency-preparedness/guide/req9/"
-prev_title: "Requirement 9 — First Aid Merit Badge"
+prev_title: "First Aid Merit Badge"
 next: "/merit-badges/emergency-preparedness/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

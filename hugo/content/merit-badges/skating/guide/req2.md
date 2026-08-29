@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Pick Your Option"
+title: "Pick Your Option"
 layout: "guide"
-group_title: "Choose Your Skating Option"
+group_title: "2. Choose Your Skating Option"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/skating/guide/req1/"
-prev_title: "Req 1 — Safety & First Aid"
+prev_title: "Safety & First Aid"
 next: "/merit-badges/skating/guide/req2a/"
-next_title: "Req 2a — Ice Skating Overview"
+next_title: "Ice Skating Overview"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Trail Marking System"
+title: "Trail Marking System"
 layout: "guide"
-group_title: "Trail Navigation"
+group_title: "3. Trail Navigation"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/snow-sports/guide/req2/"
-prev_title: "Req 2 — Rendering & Reporting Aid"
+prev_title: "Rendering & Reporting Aid"
 next: "/merit-badges/snow-sports/guide/req4/"
-next_title: "Req 4 — Fitness for Snow Sports"
+next_title: "Fitness for Snow Sports"
 ---
 
 {{< drg/requirement number="3" >}}

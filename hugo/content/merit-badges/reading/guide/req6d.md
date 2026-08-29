@@ -1,13 +1,13 @@
 ---
-title: "Req 6d — Run a Book Swap"
+title: "Run a Book Swap"
 layout: "guide"
-group_title: "Reading in Service"
+group_title: "6. Reading in Service"
 req_number: "6d"
 req_path: "6.d"
 prev: "/merit-badges/reading/guide/req6c/"
-prev_title: "Req 6c — Read to Younger Children"
+prev_title: "Read to Younger Children"
 next: "/merit-badges/reading/guide/req6e/"
-next_title: "Req 6e — Lead a Book Drive"
+next_title: "Lead a Book Drive"
 ---
 
 {{< drg/requirement number="6d" >}}

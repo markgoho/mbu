@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Belaying Skills"
+title: "Belaying Skills"
 layout: guide
-group_title: "Belaying"
+group_title: "10. Belaying"
 req_number: "10"
 prev: "/merit-badges/climbing/guide/req9/"
-prev_title: "Req 9 — Pre-Climb Safety Check"
+prev_title: "Pre-Climb Safety Check"
 next: "/merit-badges/climbing/guide/req11/"
-next_title: "Req 11 — Climbing Technique"
+next_title: "Climbing Technique"
 ---
 
 {{< drg/requirement number="10" >}}

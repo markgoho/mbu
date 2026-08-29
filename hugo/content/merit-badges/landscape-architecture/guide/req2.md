@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — What Makes a Site Work"
+title: "What Makes a Site Work"
 layout: guide
-group_title: "Analyzing a Finished Site"
+group_title: "2. Analyzing a Finished Site"
 req_number: "2"
 prev: "/merit-badges/landscape-architecture/guide/req1/"
-prev_title: "Req 1 — Reading a Designed Place"
+prev_title: "Reading a Designed Place"
 next: "/merit-badges/landscape-architecture/guide/req3/"
-next_title: "Req 3 — Choosing Trees, Shrubs, and Ground Covers"
+next_title: "Choosing Trees, Shrubs, and Ground Covers"
 ---
 
 {{< drg/requirement number="2" >}}

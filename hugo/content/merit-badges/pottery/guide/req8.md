@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Pottery Careers"
+title: "Pottery Careers"
 layout: "guide"
-group_title: "Careers & Future Paths"
+group_title: "8. Careers & Future Paths"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/pottery/guide/req7c/"
-prev_title: "Req 7c — Pottery in History and Culture"
+prev_title: "Pottery in History and Culture"
 next: "/merit-badges/pottery/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

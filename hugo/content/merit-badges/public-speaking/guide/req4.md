@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Researched Speech"
+title: "Researched Speech"
 layout: guide
-group_title: "The Big Speech"
+group_title: "4. The Big Speech"
 req_number: "4"
 prev: "/merit-badges/public-speaking/guide/req3/"
-prev_title: "Req 3 — Impromptu Speaking"
+prev_title: "Impromptu Speaking"
 next: "/merit-badges/public-speaking/guide/req5/"
-next_title: "Req 5 — Parliamentary Procedure"
+next_title: "Parliamentary Procedure"
 ---
 
 {{< drg/requirement number="4" >}}

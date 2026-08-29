@@ -1,13 +1,13 @@
 ---
-title: "Req 8d2 — Frequencies & Equipment"
+title: "Frequencies & Equipment"
 layout: "guide"
-group_title: "Option D: Direction Finding"
+group_title: "8. Option D: Direction Finding"
 req_number: "8d2"
 req_path: "8.d.2"
 prev: "/merit-badges/radio/guide/req8d1/"
-prev_title: "Req 8d1 — What Is ARDF?"
+prev_title: "What Is ARDF?"
 next: "/merit-badges/radio/guide/req8d3/"
-next_title: "Req 8d3 — Build a Directional Antenna"
+next_title: "Build a Directional Antenna"
 guide_nav:
   - group_title: "Getting Started"
     items:

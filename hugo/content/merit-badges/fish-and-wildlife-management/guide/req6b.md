@@ -1,12 +1,12 @@
 ---
-title: "Req 6b — Classify State Species"
+title: "Classify State Species"
 layout: guide
-group_title: "Wildlife Observation & Research"
+group_title: "6. Wildlife Observation & Research"
 req_number: "6b"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req6a/"
-prev_title: "Req 6a — Observe 25 Species"
+prev_title: "Observe 25 Species"
 next: "/merit-badges/fish-and-wildlife-management/guide/req6c/"
-next_title: "Req 6c — Wildlife Scrapbook"
+next_title: "Wildlife Scrapbook"
 ---
 
 {{< drg/requirement number="6b" >}}

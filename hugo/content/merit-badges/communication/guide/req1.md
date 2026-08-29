@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Communication Awareness"
+title: "Communication Awareness"
 layout: guide
-group_title: "Awareness & Listening"
+group_title: "1. Awareness & Listening"
 req_number: "1"
 prev: "/merit-badges/communication/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/communication/guide/req2/"
-next_title: "Req 2 — Creative Presentation"
+next_title: "Creative Presentation"
 ---
 
 {{< drg/requirement number="1" >}}

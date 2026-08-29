@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Dashboard & Driver Info"
+title: "Dashboard & Driver Info"
 layout: guide
-group_title: "Dashboard & Gauges"
+group_title: "3. Dashboard & Gauges"
 req_number: "3"
 prev: "/merit-badges/automotive-maintenance/guide/req2d/"
-prev_title: "Req 2d — Lights & Air Filters"
+prev_title: "Lights & Air Filters"
 next: "/merit-badges/automotive-maintenance/guide/req4a/"
-next_title: "Req 4a — Tire Specs & Pressure"
+next_title: "Tire Specs & Pressure"
 ---
 
 {{< drg/requirement number="3a" >}}

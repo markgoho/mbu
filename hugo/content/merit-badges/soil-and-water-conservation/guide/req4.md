@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Watersheds, Basins & Aquifers"
+title: "Watersheds, Basins & Aquifers"
 layout: "guide"
-group_title: "Watersheds & Groundwater"
+group_title: "4. Watersheds & Groundwater"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/soil-and-water-conservation/guide/req3/"
-prev_title: "Req 3 — Erosion-Control Practices"
+prev_title: "Erosion-Control Practices"
 next: "/merit-badges/soil-and-water-conservation/guide/req5/"
-next_title: "Req 5 — The Water Cycle & Runoff"
+next_title: "The Water Cycle & Runoff"
 ---
 
 {{< drg/requirement number="4" >}}

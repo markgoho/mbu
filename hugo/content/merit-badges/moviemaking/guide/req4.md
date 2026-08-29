@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose Your Next Step"
+title: "Choose Your Next Step"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "4. Future Paths"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/moviemaking/guide/req3b/"
-prev_title: "Req 3b — Understand the Zoom Lens"
+prev_title: "Understand the Zoom Lens"
 next: "/merit-badges/moviemaking/guide/req4a/"
-next_title: "Req 4a — Research a Film Career"
+next_title: "Research a Film Career"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Investigating a Manufactured Item"
+title: "Investigating a Manufactured Item"
 layout: guide
-group_title: "How Things Work"
+group_title: "1. How Things Work"
 req_number: "1"
 prev: "/merit-badges/engineering/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/engineering/guide/req2/"
-next_title: "Req 2 — Engineering That Changed the World"
+next_title: "Engineering That Changed the World"
 ---
 
 {{< drg/requirement number="1" >}}

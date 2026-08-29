@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Rockets, Orbits, and Images"
+title: "Rockets, Orbits, and Images"
 layout: "guide"
-group_title: "How Spaceflight Works"
+group_title: "4. How Spaceflight Works"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/space-exploration/guide/req3/"
-prev_title: "Req 3 — Build, Launch, Recover"
+prev_title: "Build, Launch, Recover"
 next: "/merit-badges/space-exploration/guide/req5/"
-next_title: "Req 5 — Choose Two Missions"
+next_title: "Choose Two Missions"
 ---
 
 {{< drg/requirement number="4" >}}

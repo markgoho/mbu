@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Investigating a Community Issue"
+title: "Investigating a Community Issue"
 layout: guide
-group_title: "Tackling Community Issues"
+group_title: "4. Tackling Community Issues"
 req_number: "4"
 prev: "/merit-badges/citizenship-in-the-community/guide/req3/"
-prev_title: "Req 3 — Attending a Government Meeting"
+prev_title: "Attending a Government Meeting"
 next: "/merit-badges/citizenship-in-the-community/guide/req5/"
-next_title: "Req 5 — Community on Screen"
+next_title: "Community on Screen"
 ---
 
 {{< drg/requirement number="4" >}}

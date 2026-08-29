@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Freight Terms You Should Know"
+title: "Freight Terms You Should Know"
 layout: "guide"
-group_title: "Truck Transportation Vocabulary"
+group_title: "9. Truck Transportation Vocabulary"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/truck-transportation/guide/req8/"
-prev_title: "Req 8 — Shipping 500 Pounds by Truck"
+prev_title: "Shipping 500 Pounds by Truck"
 next: "/merit-badges/truck-transportation/guide/req10/"
-next_title: "Req 10 — Exploring Trucking Careers"
+next_title: "Exploring Trucking Careers"
 ---
 
 {{< drg/requirement number="9" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Build an Electromagnet"
+title: "Build an Electromagnet"
 layout: guide
-group_title: "Magnetism & Current"
+group_title: "3. Magnetism & Current"
 req_number: "3"
 prev: "/merit-badges/electricity/guide/req2/"
-prev_title: "Req 2 — Home Safety Inspection"
+prev_title: "Home Safety Inspection"
 next: "/merit-badges/electricity/guide/req4/"
-next_title: "Req 4 — AC, DC, and Power Generation"
+next_title: "AC, DC, and Power Generation"
 ---
 
 {{< drg/requirement number="3" >}}

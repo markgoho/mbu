@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Responding to Scenarios"
+title: "Responding to Scenarios"
 layout: guide
-group_title: "Standing Up for Others"
+group_title: "4. Standing Up for Others"
 req_number: "4"
 prev: "/merit-badges/citizenship-in-society/guide/req3/"
-prev_title: "Req 3 — Ethical Decisions"
+prev_title: "Ethical Decisions"
 next: "/merit-badges/citizenship-in-society/guide/req5/"
-next_title: "Req 5 — Welcoming Environments"
+next_title: "Welcoming Environments"
 ---
 
 {{< drg/requirement number="4" >}}

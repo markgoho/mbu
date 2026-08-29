@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Compare Great Missions"
+title: "Compare Great Missions"
 layout: "guide"
-group_title: "Mission Pathways"
+group_title: "5. Mission Pathways"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/space-exploration/guide/req5/"
-prev_title: "Req 5 — Choose Two Missions"
+prev_title: "Choose Two Missions"
 next: "/merit-badges/space-exploration/guide/req5b/"
-next_title: "Req 5b — Build a Mission Story"
+next_title: "Build a Mission Story"
 ---
 
 {{< drg/requirement number="5a" >}}

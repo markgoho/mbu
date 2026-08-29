@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Impromptu Speaking"
+title: "Impromptu Speaking"
 layout: guide
-group_title: "Thinking on Your Feet"
+group_title: "3. Thinking on Your Feet"
 req_number: "3"
 prev: "/merit-badges/public-speaking/guide/req2/"
-prev_title: "Req 2 — Prepared Talk with Visuals"
+prev_title: "Prepared Talk with Visuals"
 next: "/merit-badges/public-speaking/guide/req4/"
-next_title: "Req 4 — Researched Speech"
+next_title: "Researched Speech"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Leave No Trace While Fishing"
+title: "Leave No Trace While Fishing"
 layout: guide
-group_title: "Stewardship & Ethics"
+group_title: "6. Stewardship & Ethics"
 req_number: "6a"
 prev: "/merit-badges/fishing/guide/req5/"
-prev_title: "Req 5 — Lures, Baits, and Baitfish"
+prev_title: "Lures, Baits, and Baitfish"
 next: "/merit-badges/fishing/guide/req6b/"
-next_title: "Req 6b — Catch and Release"
+next_title: "Catch and Release"
 ---
 
 {{< drg/requirement number="6a" >}}

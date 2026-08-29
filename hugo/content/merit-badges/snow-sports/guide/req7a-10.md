@@ -1,13 +1,13 @@
 ---
-title: "Req 7a10 — Major Ski Organizations"
+title: "Major Ski Organizations"
 layout: "guide"
-group_title: "Option A — Alpine Skiing"
+group_title: "7. Option A — Alpine Skiing"
 req_number: "7a10"
 req_path: "7.a.10"
 prev: "/merit-badges/snow-sports/guide/req7a9/"
-prev_title: "Req 7a9 — Varied Conditions"
+prev_title: "Varied Conditions"
 next: "/merit-badges/snow-sports/guide/req7b/"
-next_title: "Req 7b — Cross-Country (Nordic) Skiing"
+next_title: "Cross-Country (Nordic) Skiing"
 ---
 
 {{< drg/requirement number="7a10" >}}

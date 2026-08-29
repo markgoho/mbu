@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — The Four Steps to Finding a Cache"
+title: "The Four Steps to Finding a Cache"
 layout: guide
-group_title: "Your First Find"
+group_title: "6. Your First Find"
 req_number: "6"
 prev: "/merit-badges/geocaching/guide/req5/"
-prev_title: "Req 5 — Maps, Compass, and Navigation Choices"
+prev_title: "Maps, Compass, and Navigation Choices"
 next: "/merit-badges/geocaching/guide/req7/"
-next_title: "Req 7 — Research and Find a Public Cache"
+next_title: "Research and Find a Public Cache"
 ---
 
 {{< drg/requirement number="6" >}}

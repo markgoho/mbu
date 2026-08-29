@@ -1,13 +1,13 @@
 ---
-title: "Req 7a9 — Varied Conditions"
+title: "Varied Conditions"
 layout: "guide"
-group_title: "Option A — Alpine Skiing"
+group_title: "7. Option A — Alpine Skiing"
 req_number: "7a9"
 req_path: "7.a.9"
 prev: "/merit-badges/snow-sports/guide/req7a8/"
-prev_title: "Req 7a8 — Controlled Run"
+prev_title: "Controlled Run"
 next: "/merit-badges/snow-sports/guide/req7a-10/"
-next_title: "Req 7a10 — Major Ski Organizations"
+next_title: "Major Ski Organizations"
 ---
 
 {{< drg/requirement number="7a9" >}}

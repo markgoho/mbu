@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Aerobic Activity"
+title: "Aerobic Activity"
 layout: guide
-group_title: "Fitness & Conditioning"
+group_title: "3. Fitness & Conditioning"
 req_number: "3"
 prev: "/merit-badges/hiking/guide/req2c/"
-prev_title: "Requirement 2c — Outdoor Code"
+prev_title: "Outdoor Code"
 next: "/merit-badges/hiking/guide/req4/"
-next_title: "Requirement 4 — Your Hikes"
+next_title: "Your Hikes"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Organizing & Showing Groups"
+title: "Organizing & Showing Groups"
 layout: guide
-group_title: "Knowing Your Collection"
+group_title: "5. Knowing Your Collection"
 req_number: "5b"
 prev: "/merit-badges/collections/guide/req5a/"
-prev_title: "Req 5a — Collector Vocabulary"
+prev_title: "Collector Vocabulary"
 next: "/merit-badges/collections/guide/req5c/"
-next_title: "Req 5c — Monetary Value"
+next_title: "Monetary Value"
 ---
 
 {{< drg/requirement number="5b" >}}

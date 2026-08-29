@@ -1,13 +1,13 @@
 ---
-title: "Req 2b3 — Scouts BSA Handbook"
+title: "Scouts BSA Handbook"
 layout: "guide"
-group_title: "Scouting Milestones"
+group_title: "2. Scouting Milestones"
 req_number: "2b3"
 req_path: "2.b.3"
 prev: "/merit-badges/scouting-heritage/guide/req2b2/"
-prev_title: "Req 2b2 — First World Scout Jamboree"
+prev_title: "First World Scout Jamboree"
 next: "/merit-badges/scouting-heritage/guide/req2b4/"
-next_title: "Req 2b4 — Scout Life Magazine"
+next_title: "Scout Life Magazine"
 ---
 
 {{< drg/requirement number="2b3" >}}

@@ -1,11 +1,11 @@
 ---
-title: "Req 5d4 — Forging Your Two Objects"
+title: "Forging Your Two Objects"
 layout: "guide"
-group_title: "Blacksmith"
+group_title: "5. Blacksmith"
 req_number: "5d4"
 req_path: "5.d.4"
 prev: "/merit-badges/metalwork/guide/req5d3/"
-prev_title: "Req 5d3 — Hot-Forging Exercises"
+prev_title: "Hot-Forging Exercises"
 next: "/merit-badges/metalwork/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

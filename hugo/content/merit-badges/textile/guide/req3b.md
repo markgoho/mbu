@@ -1,13 +1,13 @@
 ---
-title: "Req 3b — Weave on a Homemade Loom"
+title: "Weave on a Homemade Loom"
 layout: "guide"
-group_title: "Choose Two Textile Projects"
+group_title: "3. Choose Two Textile Projects"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/textile/guide/req3a/"
-prev_title: "Req 3a — Behind the Scenes of Textile Production"
+prev_title: "Behind the Scenes of Textile Production"
 next: "/merit-badges/textile/guide/req3c/"
-next_title: "Req 3c — Compare Fabric Structures"
+next_title: "Compare Fabric Structures"
 ---
 
 {{< drg/requirement number="3b" >}}

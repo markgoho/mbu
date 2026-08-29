@@ -1,13 +1,13 @@
 ---
-title: "Req 7a3 — Wildlife Refuge or Game Area"
+title: "Wildlife Refuge or Game Area"
 layout: "guide"
-group_title: "Field Visits & Reports"
+group_title: "7. Field Visits & Reports"
 req_number: "7a3"
 req_path: "7.a.3"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7a2/"
-prev_title: "Req 7a2 — Managed Forest, Range, or Pasture"
+prev_title: "Managed Forest, Range, or Pasture"
 next: "/merit-badges/soil-and-water-conservation/guide/req7a4/"
-next_title: "Req 7a4 — Conservation-Managed Farm or Ranch"
+next_title: "Conservation-Managed Farm or Ranch"
 ---
 
 {{< drg/requirement number="7a3" >}}

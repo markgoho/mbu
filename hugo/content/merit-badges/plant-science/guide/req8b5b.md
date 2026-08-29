@@ -1,13 +1,13 @@
 ---
-title: "Req 8b5b — Fruit, Berry, and Nut Crops"
+title: "Fruit, Berry, and Nut Crops"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b5b"
 req_path: "8.b.5.b"
 prev: "/merit-badges/plant-science/guide/req8b5a/"
-prev_title: "Req 8b5a — Bedding Plants Through the Season"
+prev_title: "Bedding Plants"
 next: "/merit-badges/plant-science/guide/req8b5c/"
-next_title: "Req 8b5c — Woody Ornamentals in the Landscape"
+next_title: "Woody Ornamentals"
 ---
 
 {{< drg/requirement number="8b5b" >}}

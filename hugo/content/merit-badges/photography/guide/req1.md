@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Shoot Safely"
+title: "Shoot Safely"
 layout: "guide"
-group_title: "Safe Shooting Habits"
+group_title: "1. Safe Shooting Habits"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/photography/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/photography/guide/req2/"
-next_title: "Req 2 — Control Light and Motion"
+next_title: "Control Light and Motion"
 ---
 
 {{< drg/requirement number="1" >}}

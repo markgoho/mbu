@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Your Hikes"
+title: "Your Hikes"
 layout: guide
-group_title: "Hit the Trail"
+group_title: "4. Hit the Trail"
 req_number: "4"
 prev: "/merit-badges/hiking/guide/req3/"
-prev_title: "Requirement 3 — Aerobic Activity"
+prev_title: "Aerobic Activity"
 next: "/merit-badges/hiking/guide/req5/"
-next_title: "Requirement 5 — Hike Reports"
+next_title: "Hike Reports"
 ---
 
 {{< drg/requirement number="4" >}}

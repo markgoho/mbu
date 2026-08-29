@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Choose Your Field Experience"
+title: "Choose Your Field Experience"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/veterinary-medicine/guide/req5/"
-prev_title: "Req 5 — The Human-Animal Bond"
+prev_title: "The Human-Animal Bond"
 next: "/merit-badges/veterinary-medicine/guide/req6a/"
-next_title: "Req 6a — Observe a Veterinary Facility"
+next_title: "Observe a Veterinary Facility"
 ---
 
 {{< drg/requirement number="6" >}}

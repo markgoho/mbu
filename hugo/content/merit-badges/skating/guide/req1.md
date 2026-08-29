@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Safety & First Aid"
+title: "Safety & First Aid"
 layout: "guide"
-group_title: "Safety & First Aid"
+group_title: "1. Safety & First Aid"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/skating/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/skating/guide/req2/"
-next_title: "Req 2 — Pick Your Option"
+next_title: "Pick Your Option"
 ---
 
 {{< drg/requirement number="1" >}}

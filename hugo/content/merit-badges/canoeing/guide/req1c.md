@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Safety Afloat"
+title: "Safety Afloat"
 layout: guide
-group_title: "Safety & Hazard Preparedness"
+group_title: "1. Safety & Hazard Preparedness"
 req_number: "1c"
 prev: "/merit-badges/canoeing/guide/req1b/"
-prev_title: "Req 1b — Injuries & First Aid"
+prev_title: "Injuries & First Aid"
 next: "/merit-badges/canoeing/guide/req2/"
-next_title: "Req 2 — Swimmer Test"
+next_title: "Swimmer Test"
 ---
 
 {{< drg/requirement number="1c" >}}

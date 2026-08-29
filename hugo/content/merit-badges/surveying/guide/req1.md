@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Field Safety for Surveyors"
+title: "Field Safety for Surveyors"
 layout: "guide"
-group_title: "Field Safety"
+group_title: "1. Field Safety"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/surveying/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/surveying/guide/req2/"
-next_title: "Req 2 — Radial Measurements and GPS Checks"
+next_title: "Radial Measurements and GPS Checks"
 ---
 
 {{< drg/requirement number="1" >}}

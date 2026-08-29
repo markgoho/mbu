@@ -1,12 +1,12 @@
 ---
-title: "Req 12 — Leave No Trace"
+title: "Leave No Trace"
 layout: guide
-group_title: "Outdoor Ethics"
+group_title: "12. Outdoor Ethics"
 req_number: "12"
 prev: "/merit-badges/bird-study/guide/req11/"
-prev_title: "Req 11 — Non-Native Birds"
+prev_title: "Non-Native Birds"
 next: "/merit-badges/bird-study/guide/req13/"
-next_title: "Req 13 — Careers or Hobbies"
+next_title: "Careers or Hobbies"
 ---
 
 {{< drg/requirement number="12" >}}

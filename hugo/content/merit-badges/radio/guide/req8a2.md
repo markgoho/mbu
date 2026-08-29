@@ -1,13 +1,13 @@
 ---
-title: "Req 8a2 — License Classes"
+title: "License Classes"
 layout: "guide"
-group_title: "Option A: Amateur Radio"
+group_title: "8. Option A: Amateur Radio"
 req_number: "8a2"
 req_path: "8.a.2"
 prev: "/merit-badges/radio/guide/req8a1/"
-prev_title: "Req 8a1 — Why Amateur Radio Exists"
+prev_title: "Why Amateur Radio Exists"
 next: "/merit-badges/radio/guide/req8a3/"
-next_title: "Req 8a3 — Q Signals & Terms"
+next_title: "Q Signals & Terms"
 guide_nav:
   - group_title: "Getting Started"
     items:

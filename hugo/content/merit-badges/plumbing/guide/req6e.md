@@ -1,13 +1,13 @@
 ---
-title: "Req 6e — Replacing a Faucet"
+title: "Replacing a Faucet"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6e"
 req_path: "6.e"
 prev: "/merit-badges/plumbing/guide/req6d/"
-prev_title: "Req 6d — Soldering Copper"
+prev_title: "Soldering Copper"
 next: "/merit-badges/plumbing/guide/req6f/"
-next_title: "Req 6f — Cleaning a Drain Trap"
+next_title: "Cleaning a Drain Trap"
 ---
 
 {{< drg/requirement number="6e" >}}

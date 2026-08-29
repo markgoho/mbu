@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Access to Legal Help"
+title: "Access to Legal Help"
 layout: guide
-group_title: "Justice for All"
+group_title: "10. Justice for All"
 req_number: "10"
 prev: "/merit-badges/law/guide/req9/"
-prev_title: "Requirement 9 — Jobs in Law"
+prev_title: "Jobs in Law"
 next: "/merit-badges/law/guide/req11/"
-next_title: "Requirement 11 — Areas of Law"
+next_title: "Areas of Law"
 ---
 
 {{< drg/requirement number="10" >}}

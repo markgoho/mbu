@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Fire Safety in Public Buildings"
+title: "Fire Safety in Public Buildings"
 layout: guide
-group_title: "Public Building Safety"
+group_title: "7. Public Building Safety"
 req_number: "7"
 prev: "/merit-badges/fire-safety/guide/req6/"
-prev_title: "Req 6 — Safe Storage & Handling"
+prev_title: "Safe Storage & Handling"
 next: "/merit-badges/fire-safety/guide/req8/"
-next_title: "Req 8 — Fire Safety at Camp"
+next_title: "Fire Safety at Camp"
 ---
 
  {{< drg/requirement number="7" >}}

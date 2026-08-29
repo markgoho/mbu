@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Master of Ceremonies"
+title: "Master of Ceremonies"
 layout: guide
-group_title: "Event Leadership"
+group_title: "8. Event Leadership"
 req_number: "8"
 prev: "/merit-badges/communication/guide/req7/"
-prev_title: "Req 7 — Writing & Publishing"
+prev_title: "Writing & Publishing"
 next: "/merit-badges/communication/guide/req9/"
-next_title: "Req 9 — Career Exploration"
+next_title: "Career Exploration"
 ---
 
 {{< drg/requirement number="8" >}}

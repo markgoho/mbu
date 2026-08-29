@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Migration and Conservation"
+title: "Migration and Conservation"
 layout: guide
-group_title: "Protecting Insect Species"
+group_title: "8. Protecting Insect Species"
 req_number: "8"
 prev: "/merit-badges/insect-study/guide/req7/"
-prev_title: "Req 7 — Bees, Crops, and Pest Control"
+prev_title: "Bees, Crops, and Pest Control"
 next: "/merit-badges/insect-study/guide/req9/"
-next_title: "Req 9 — Careers or Hobbies"
+next_title: "Careers or Hobbies"
 ---
 
 {{< drg/requirement number="8" >}}

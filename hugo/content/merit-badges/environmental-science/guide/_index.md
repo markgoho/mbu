@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Environmental Science"
 group_title: "Getting Started"
 next: "/merit-badges/environmental-science/guide/req1/"
-next_title: "Req 1 — Defining Environmental Science"
+next_title: "Defining Environmental Science"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/environmental-science/guide/"
-  - group_title: "What Is Environmental Science?"
+  - group_title: "1. What Is Environmental Science?"
     items:
-      - title: "Req 1 — Defining Environmental Science"
+      - title: "1. Defining Environmental Science"
         url: "/merit-badges/environmental-science/guide/req1/"
         is_sub: false
-  - group_title: "Ecology"
+  - group_title: "2. Ecology"
     items:
-      - title: "Req 2a — Observing an Ecosystem"
+      - title: "a Observing an Ecosystem"
         url: "/merit-badges/environmental-science/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Ecosystem Components"
+      - title: "b Ecosystem Components"
         url: "/merit-badges/environmental-science/guide/req2b/"
         is_sub: true
-  - group_title: "Air Pollution"
+  - group_title: "3. Air Pollution"
     items:
-      - title: "Req 3 — Air Pollution"
+      - title: "3. Air Pollution"
         url: "/merit-badges/environmental-science/guide/req3/"
         is_sub: false
-  - group_title: "Water Pollution"
+  - group_title: "4. Water Pollution"
     items:
-      - title: "Req 4 — Water Pollution"
+      - title: "4. Water Pollution"
         url: "/merit-badges/environmental-science/guide/req4/"
         is_sub: false
-  - group_title: "Land Pollution"
+  - group_title: "5. Land Pollution"
     items:
-      - title: "Req 5 — Land Pollution"
+      - title: "5. Land Pollution"
         url: "/merit-badges/environmental-science/guide/req5/"
         is_sub: false
-  - group_title: "Endangered Species"
+  - group_title: "6. Endangered Species"
     items:
-      - title: "Req 6 — Rare, Threatened, or Endangered Species"
+      - title: "6. Rare, Threatened, or Endangered Species"
         url: "/merit-badges/environmental-science/guide/req6/"
         is_sub: false
-  - group_title: "Conservation & Resource Recovery"
+  - group_title: "7. Conservation & Resource Recovery"
     items:
-      - title: "Req 7 — Pollution Prevention & Conservation"
+      - title: "7. Pollution Prevention & Conservation"
         url: "/merit-badges/environmental-science/guide/req7/"
         is_sub: false
-  - group_title: "Pollination"
+  - group_title: "8. Pollination"
     items:
-      - title: "Req 8 — Pollination"
+      - title: "8. Pollination"
         url: "/merit-badges/environmental-science/guide/req8/"
         is_sub: false
-  - group_title: "Invasive Species"
+  - group_title: "9. Invasive Species"
     items:
-      - title: "Req 9 — Invasive Species"
+      - title: "9. Invasive Species"
         url: "/merit-badges/environmental-science/guide/req9/"
         is_sub: false
-  - group_title: "Environmental Impact"
+  - group_title: "10. Environmental Impact"
     items:
-      - title: "Req 10 — Environmental Impact Assessment"
+      - title: "10. Environmental Impact Assessment"
         url: "/merit-badges/environmental-science/guide/req10/"
         is_sub: false
-  - group_title: "Careers in Environmental Science"
+  - group_title: "11. Careers in Environmental Science"
     items:
-      - title: "Req 11 — Career Exploration"
+      - title: "11. Career Exploration"
         url: "/merit-badges/environmental-science/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

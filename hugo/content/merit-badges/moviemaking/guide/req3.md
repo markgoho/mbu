@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Pick a Production View"
+title: "Pick a Production View"
 layout: "guide"
-group_title: "Behind the Scenes"
+group_title: "3. Behind the Scenes"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/moviemaking/guide/req2d3/"
-prev_title: "Req 2d3 — Teach a Scout Skill"
+prev_title: "Teach a Scout Skill"
 next: "/merit-badges/moviemaking/guide/req3a/"
-next_title: "Req 3a — Visit a Working Set"
+next_title: "Visit a Working Set"
 ---
 
 {{< drg/requirement number="3" >}}

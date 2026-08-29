@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Streams Shape the Land"
+title: "Streams Shape the Land"
 layout: guide
-group_title: "Surface & Sedimentary Processes"
+group_title: "4. Surface & Sedimentary Processes"
 req_number: "4a"
 prev: "/merit-badges/geology/guide/req4/"
-prev_title: "Req 4 — Pick Your Option"
+prev_title: "Pick Your Option"
 next: "/merit-badges/geology/guide/req4a1/"
-next_title: "Req 4a1 — Sediment Settling"
+next_title: "Sediment Settling"
 ---
 
 {{< drg/requirement number="4" option="Surface and Sedimentary Processes" >}}

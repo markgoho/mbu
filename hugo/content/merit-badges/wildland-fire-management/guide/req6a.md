@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Personal Protective Equipment"
+title: "Personal Protective Equipment"
 layout: "guide"
-group_title: "Firefighter Safety"
+group_title: "6. Firefighter Safety"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/wildland-fire-management/guide/req5/"
-prev_title: "Req 5 — Fire Behavior"
+prev_title: "Fire Behavior"
 next: "/merit-badges/wildland-fire-management/guide/req6b/"
-next_title: "Req 6b — The 10, the 18, and LCES"
+next_title: "The 10, the 18, and LCES"
 ---
 
 {{< drg/requirement number="6a" >}}

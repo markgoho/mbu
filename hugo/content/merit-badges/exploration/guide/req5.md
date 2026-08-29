@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose a Place to Learn"
+title: "Choose a Place to Learn"
 layout: "guide"
-group_title: "Places That Support Discovery"
+group_title: "5. Places That Support Discovery"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/exploration/guide/req4c/"
-prev_title: "Req 4c — Explore Discovery in the Lab"
+prev_title: "Explore Discovery in the Lab"
 next: "/merit-badges/exploration/guide/req5a/"
-next_title: "Req 5a — Visit an Exploration Organization"
+next_title: "Visit an Exploration Organization"
 ---
 
 {{< drg/requirement number="5" >}}

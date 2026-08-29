@@ -4,61 +4,61 @@ layout: "guide"
 badge_name: "Moviemaking"
 group_title: "Getting Started"
 next: "/merit-badges/moviemaking/guide/req1/"
-next_title: "Req 1 — Film Language Basics"
+next_title: "Film Language Basics"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/moviemaking/guide/"
         is_sub: false
-  - group_title: "Film Language"
+  - group_title: "1. Film Language"
     items:
-      - title: "Req 1 — Film Language Basics"
+      - title: "1. Film Language Basics"
         url: "/merit-badges/moviemaking/guide/req1/"
         is_sub: false
-  - group_title: "Planning Your Movie"
+  - group_title: "2. Planning Your Movie"
     items:
-      - title: "Req 2a — Write the Treatment"
+      - title: "a Write the Treatment"
         url: "/merit-badges/moviemaking/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Build the Storyboard"
+      - title: "b Build the Storyboard"
         url: "/merit-badges/moviemaking/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Master Camera Moves"
+      - title: "c Master Camera Moves"
         url: "/merit-badges/moviemaking/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Choose Your Production"
+      - title: "d Choose Your Production"
         url: "/merit-badges/moviemaking/guide/req2d/"
         is_sub: false
-      - title: "Req 2d1 — Cover a Court of Honor"
+      - title: "d Cover a Court of Honor"
         url: "/merit-badges/moviemaking/guide/req2d1/"
         is_sub: true
-      - title: "Req 2d2 — Create a Short Feature"
+      - title: "d Create a Short Feature"
         url: "/merit-badges/moviemaking/guide/req2d2/"
         is_sub: true
-      - title: "Req 2d3 — Teach a Scout Skill"
+      - title: "d Teach a Scout Skill"
         url: "/merit-badges/moviemaking/guide/req2d3/"
         is_sub: true
-  - group_title: "Behind the Scenes"
+  - group_title: "3. Behind the Scenes"
     items:
-      - title: "Req 3 — Pick a Production View"
+      - title: "3. Pick a Production View"
         url: "/merit-badges/moviemaking/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Visit a Working Set"
+      - title: "a Visit a Working Set"
         url: "/merit-badges/moviemaking/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Understand the Zoom Lens"
+      - title: "b Understand the Zoom Lens"
         url: "/merit-badges/moviemaking/guide/req3b/"
         is_sub: true
-  - group_title: "Future Paths"
+  - group_title: "4. Future Paths"
     items:
-      - title: "Req 4 — Choose Your Next Step"
+      - title: "4. Choose Your Next Step"
         url: "/merit-badges/moviemaking/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Research a Film Career"
+      - title: "a Research a Film Career"
         url: "/merit-badges/moviemaking/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Build a Film Hobby"
+      - title: "b Build a Film Hobby"
         url: "/merit-badges/moviemaking/guide/req4b/"
         is_sub: true
   - group_title: "Beyond the Badge"

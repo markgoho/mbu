@@ -1,13 +1,13 @@
 ---
-title: "Req 9a — Build a Fire Readiness Plan"
+title: "Build a Fire Readiness Plan"
 layout: "guide"
-group_title: "Taking Action"
+group_title: "9. Taking Action"
 req_number: "9a"
 req_path: "9.a"
 prev: "/merit-badges/wildland-fire-management/guide/req9/"
-prev_title: "Req 9 — Choose Your Project"
+prev_title: "Choose Your Project"
 next: "/merit-badges/wildland-fire-management/guide/req9b/"
-next_title: "Req 9b — Talk With a Forestry Official"
+next_title: "Talk With a Forestry Official"
 ---
 
 {{< drg/requirement number="9a" >}}

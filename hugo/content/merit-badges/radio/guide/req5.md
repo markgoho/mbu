@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Equipment & Devices"
+title: "Equipment & Devices"
 layout: "guide"
-group_title: "Radio Hardware & Services"
+group_title: "5. Radio Hardware & Services"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/radio/guide/req4/"
-prev_title: "Req 4 — Modulation & Data"
+prev_title: "Modulation & Data"
 next: "/merit-badges/radio/guide/req6/"
-next_title: "Req 6 — FCC, ITU & Call Signs"
+next_title: "FCC, ITU & Call Signs"
 guide_nav:
   - group_title: "Getting Started"
     items:

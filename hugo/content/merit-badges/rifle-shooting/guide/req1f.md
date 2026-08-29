@@ -1,13 +1,13 @@
 ---
-title: "Req 1f — Hunting and Wildlife Resources"
+title: "Hunting and Wildlife Resources"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1f"
 req_path: "1.f"
 prev: "/merit-badges/rifle-shooting/guide/req1e/"
-prev_title: "Req 1e — Gun Laws in Your Community and State"
+prev_title: "Gun Laws in Your Community and State"
 next: "/merit-badges/rifle-shooting/guide/req1g/"
-next_title: "Req 1g — Hunter Education and State Hunting Laws"
+next_title: "Hunter Education and State Hunting Laws"
 ---
 
 {{< drg/requirement number="1f" >}}

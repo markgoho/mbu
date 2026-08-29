@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Transmissions & Power"
+title: "Transmissions & Power"
 layout: guide
-group_title: "Understanding Farm Power Systems"
+group_title: "2. Understanding Farm Power Systems"
 req_number: "2c"
 prev: "/merit-badges/farm-mechanics/guide/req2b/"
-prev_title: "Req 2b — Hydraulic Systems"
+prev_title: "Hydraulic Systems"
 next: "/merit-badges/farm-mechanics/guide/req3/"
-next_title: "Req 3 — Tool Maintenance Skills"
+next_title: "Tool Maintenance Skills"
 ---
 
 {{< drg/requirement number="2c" >}}

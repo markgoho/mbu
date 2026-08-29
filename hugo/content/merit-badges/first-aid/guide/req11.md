@@ -1,13 +1,13 @@
 ---
-title: "Req 11 — Temperature Emergencies"
+title: "Temperature Emergencies"
 layout: "guide"
-group_title: "Heat & Cold Conditions"
+group_title: "11. Heat & Cold Conditions"
 req_number: "11"
 req_path: "11"
 prev: "/merit-badges/first-aid/guide/req10/"
-prev_title: "Req 10 — Patient Transport"
+prev_title: "Patient Transport"
 next: "/merit-badges/first-aid/guide/req12/"
-next_title: "Req 12 — Mental Health First Aid"
+next_title: "Mental Health First Aid"
 ---
 
 {{< drg/requirement number="11" >}}

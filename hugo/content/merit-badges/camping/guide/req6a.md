@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Types of Tents"
+title: "Types of Tents"
 layout: guide
-group_title: "Shelter & Camp Setup"
+group_title: "6. Shelter & Camp Setup"
 req_number: "6a"
 prev: "/merit-badges/camping/guide/req5e/"
-prev_title: "Req 5e — Pack Inspection"
+prev_title: "Pack Inspection"
 next: "/merit-badges/camping/guide/req6b/"
-next_title: "Req 6b — Sanitation & Water Treatment"
+next_title: "Sanitation & Water Treatment"
 ---
 
 {{< drg/requirement number="6a" >}}

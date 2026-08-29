@@ -1,13 +1,13 @@
 ---
-title: "Req 10 — Patient Transport"
+title: "Patient Transport"
 layout: "guide"
-group_title: "Moving a Patient"
+group_title: "10. Moving a Patient"
 req_number: "10"
 req_path: "10"
 prev: "/merit-badges/first-aid/guide/req9/"
-prev_title: "Req 9 — Head, Neck & Back"
+prev_title: "Head, Neck & Back"
 next: "/merit-badges/first-aid/guide/req11/"
-next_title: "Req 11 — Temperature Emergencies"
+next_title: "Temperature Emergencies"
 ---
 
 {{< drg/requirement number="10" >}}

@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Tech Careers & Hobbies"
+title: "Tech Careers & Hobbies"
 layout: guide
-group_title: "Careers & Hobbies"
+group_title: "9. Careers & Hobbies"
 req_number: "9"
 prev: "/merit-badges/digital-technology/guide/req8/"
-prev_title: "Req 8 — Responsible Tech Disposal"
+prev_title: "Responsible Tech Disposal"
 next: "/merit-badges/digital-technology/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

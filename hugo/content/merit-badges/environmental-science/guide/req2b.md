@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Ecosystem Components"
+title: "Ecosystem Components"
 layout: guide
-group_title: "Ecology"
+group_title: "2. Ecology"
 req_number: "2b"
 prev: "/merit-badges/environmental-science/guide/req2a/"
-prev_title: "Req 2a — Observing an Ecosystem"
+prev_title: "Observing an Ecosystem"
 next: "/merit-badges/environmental-science/guide/req3/"
-next_title: "Req 3 — Air Pollution"
+next_title: "Air Pollution"
 ---
 
 {{< drg/requirement number="2b" >}}

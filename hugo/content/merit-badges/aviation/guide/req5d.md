@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Aviation Organizations"
+title: "Aviation Organizations"
 layout: guide
-group_title: "Aviation Careers"
+group_title: "5. Aviation Careers"
 req_number: "5d"
 prev: "/merit-badges/aviation/guide/req5c/"
-prev_title: "Req 5c — Advanced Certificates"
+prev_title: "Advanced Certificates"
 next: "/merit-badges/aviation/guide/req5e/"
-next_title: "Req 5e — Aviation Careers"
+next_title: "Aviation Careers"
 ---
 
 {{< drg/requirement number="5d" >}}

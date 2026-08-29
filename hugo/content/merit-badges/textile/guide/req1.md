@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Why Textiles Matter"
+title: "Why Textiles Matter"
 layout: "guide"
-group_title: "Why Textiles Matter"
+group_title: "1. Why Textiles Matter"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/textile/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/textile/guide/req2/"
-next_title: "Req 2 — From Fiber to Fabric"
+next_title: "From Fiber to Fabric"
 ---
 
 {{< drg/requirement number="1" >}}

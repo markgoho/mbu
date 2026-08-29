@@ -1,13 +1,13 @@
 ---
-title: "Req 9c — Teach a Short Talk"
+title: "Teach a Short Talk"
 layout: "guide"
-group_title: "Field Challenges"
+group_title: "9. Field Challenges"
 req_number: "9c"
 req_path: "9.c"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req9b/"
-prev_title: "Req 9b — Identify Eight Species by Sight"
+prev_title: "Identify Eight Species by Sight"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req10/"
-next_title: "Req 10 — Myths, Legends, and True Stories"
+next_title: "Myths, Legends, and True Stories"
 ---
 
 {{< drg/requirement number="9c" >}}

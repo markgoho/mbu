@@ -1,12 +1,12 @@
 ---
-title: "Req 7g — Limits of Home Treatment"
+title: "Limits of Home Treatment"
 layout: guide
-group_title: "Dog First Aid"
+group_title: "7. Dog First Aid"
 req_number: "7g"
 prev: "/merit-badges/dog-care/guide/req7f/"
-prev_title: "Req 7f — Dog First-Aid Kit"
+prev_title: "Dog First-Aid Kit"
 next: "/merit-badges/dog-care/guide/req7h/"
-next_title: "Req 7h — Major Dog Diseases"
+next_title: "Major Dog Diseases"
 ---
 
 {{< drg/requirement number="7g" >}}

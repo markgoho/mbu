@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Composites vs. Traditional Materials"
+title: "Composites vs. Traditional Materials"
 layout: guide
-group_title: "Understanding Composites"
+group_title: "2. Understanding Composites"
 req_number: "2b"
 prev: "/merit-badges/composite-materials/guide/req2a/"
-prev_title: "Req 2a — What Are Composites?"
+prev_title: "What Are Composites?"
 next: "/merit-badges/composite-materials/guide/req3a/"
-next_title: "Req 3a — Reinforcement Materials"
+next_title: "Reinforcement Materials"
 ---
 
 {{< drg/requirement number="2b" >}}

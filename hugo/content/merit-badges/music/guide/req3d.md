@@ -1,13 +1,13 @@
 ---
-title: "Req 3d — Influential Americans in Music"
+title: "Influential Americans in Music"
 layout: "guide"
-group_title: "Choose Two Music Experiences"
+group_title: "3. Choose Two Music Experiences"
 req_number: "3d"
 req_path: "3.d"
 prev: "/merit-badges/music/guide/req3c/"
-prev_title: "Req 3c — Ensemble or Solo Service"
+prev_title: "Ensemble or Solo Service"
 next: "/merit-badges/music/guide/req4/"
-next_title: "Req 4 — Choose a Music Project"
+next_title: "Choose a Music Project"
 ---
 
 {{< drg/requirement number="3d" >}}

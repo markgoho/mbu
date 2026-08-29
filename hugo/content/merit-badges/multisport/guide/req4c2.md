@@ -1,13 +1,13 @@
 ---
-title: "Req 4c2 — Aquathlon Run Skills"
+title: "Aquathlon Run Skills"
 layout: "guide"
-group_title: "Aquathlon Path"
+group_title: "4. Aquathlon Path"
 req_number: "4c2"
 req_path: "4.c.2"
 prev: "/merit-badges/multisport/guide/req4c1/"
-prev_title: "Req 4c1 — Aquathlon Swim Skills"
+prev_title: "Aquathlon Swim Skills"
 next: "/merit-badges/multisport/guide/req4d/"
-next_title: "Req 4d — Aquabike Roadmap"
+next_title: "Aquabike Roadmap"
 ---
 
 {{< drg/requirement number="4c2" >}}

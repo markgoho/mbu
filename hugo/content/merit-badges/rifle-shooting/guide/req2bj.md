@@ -1,13 +1,13 @@
 ---
-title: "Req 2bj — Scored Grouping Exercise"
+title: "Scored Grouping Exercise"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2bj"
 req_path: "2.b.j"
 prev: "/merit-badges/rifle-shooting/guide/req2bi/"
-prev_title: "Req 2bi — First Grouping Exercise"
+prev_title: "First Grouping Exercise"
 next: "/merit-badges/rifle-shooting/guide/req2c/"
-next_title: "Req 2c — Option C Overview"
+next_title: "Option C Overview"
 ---
 
 {{< drg/requirement number="2bj" >}}

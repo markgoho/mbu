@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — CPR and AED"
+title: "CPR and AED"
 layout: "guide"
-group_title: "Heart Attack & CPR"
+group_title: "7. Heart Attack & CPR"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/first-aid/guide/req6/"
-prev_title: "Req 6 — Fainting, Seizures & Drowning"
+prev_title: "Fainting, Seizures & Drowning"
 next: "/merit-badges/first-aid/guide/req8a/"
-next_title: "Req 8a — Understanding Injuries"
+next_title: "Understanding Injuries"
 ---
 
 {{< drg/requirement number="7" >}}

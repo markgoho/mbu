@@ -1,12 +1,12 @@
 ---
-title: "Req 4f — The Dollar Coin"
+title: "The Dollar Coin"
 layout: guide
-group_title: "Building Your Collection"
+group_title: "4. Building Your Collection"
 req_number: "4f"
 prev: "/merit-badges/coin-collecting/guide/req4e/"
-prev_title: "Req 4e — The Half Dollar"
+prev_title: "The Half Dollar"
 next: "/merit-badges/coin-collecting/guide/req5/"
-next_title: "Req 5 — Bicentennial Coins"
+next_title: "Bicentennial Coins"
 ---
 
 {{< drg/requirement number="4f" >}}

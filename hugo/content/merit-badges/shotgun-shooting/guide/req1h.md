@@ -1,13 +1,13 @@
 ---
-title: "Req 1h — Hygiene on the Range"
+title: "Hygiene on the Range"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1h"
 req_path: "1.h"
 prev: "/merit-badges/shotgun-shooting/guide/req1g/"
-prev_title: "Req 1g — Hunter Education and State Hunting Laws"
+prev_title: "Hunter Education and State Hunting Laws"
 next: "/merit-badges/shotgun-shooting/guide/req1i/"
-next_title: "Req 1i — Shotgun Sports and Local Opportunities"
+next_title: "Shotgun Sports and Local Opportunities"
 ---
 
 {{< drg/requirement number="1h" >}}

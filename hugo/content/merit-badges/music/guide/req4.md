@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose a Music Project"
+title: "Choose a Music Project"
 layout: "guide"
-group_title: "Choose One Music Project"
+group_title: "4. Choose One Music Project"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/music/guide/req3d/"
-prev_title: "Req 3d — Influential Americans in Music"
+prev_title: "Influential Americans in Music"
 next: "/merit-badges/music/guide/req4a/"
-next_title: "Req 4a — Teach and Lead Songs"
+next_title: "Teach and Lead Songs"
 ---
 
 {{< drg/requirement number="4" >}}

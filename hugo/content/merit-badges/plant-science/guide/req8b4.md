@@ -1,13 +1,13 @@
 ---
-title: "Req 8b4 — Smart Landscape Choices"
+title: "Smart Landscape Choices"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b4"
 req_path: "8.b.4"
 prev: "/merit-badges/plant-science/guide/req8b3d/"
-prev_title: "Req 8b3d — Planting a Tree or Shrub"
+prev_title: "Planting a Tree or Shrub"
 next: "/merit-badges/plant-science/guide/req8b5/"
-next_title: "Req 8b5 — Choose a Horticulture Project"
+next_title: "Choose a Growing Project"
 ---
 
 {{< drg/requirement number="8b4" >}}

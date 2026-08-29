@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Overloads, Fuses, and Breakers"
+title: "Overloads, Fuses, and Breakers"
 layout: guide
-group_title: "Circuits at Home"
+group_title: "6. Circuits at Home"
 req_number: "6"
 prev: "/merit-badges/electricity/guide/req5/"
-prev_title: "Req 5 — How an Electric Bell Works"
+prev_title: "How an Electric Bell Works"
 next: "/merit-badges/electricity/guide/req7/"
-next_title: "Req 7 — Room Wiring Diagram"
+next_title: "Room Wiring Diagram"
 ---
 
 {{< drg/requirement number="6" >}}

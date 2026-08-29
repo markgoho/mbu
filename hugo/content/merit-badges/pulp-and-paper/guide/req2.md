@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Forests, Fiber, and Stewardship"
+title: "Forests, Fiber, and Stewardship"
 layout: "guide"
-group_title: "Growing the Raw Material"
+group_title: "2. Growing the Raw Material"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/pulp-and-paper/guide/req1/"
-prev_title: "Req 1 — Paper Through History"
+prev_title: "Paper Through History"
 next: "/merit-badges/pulp-and-paper/guide/req3/"
-next_title: "Req 3 — Fibers, Pulp, and Bleaching"
+next_title: "Fibers, Pulp, and Bleaching"
 ---
 
 {{< drg/requirement number="2" >}}

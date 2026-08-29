@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Why Exploration Matters"
+title: "Why Exploration Matters"
 layout: "guide"
-group_title: "Why Humans Explore"
+group_title: "3. Why Humans Explore"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/exploration/guide/req2/"
-prev_title: "Req 2 — The Story of Human Discovery"
+prev_title: "The Story of Human Discovery"
 next: "/merit-badges/exploration/guide/req4/"
-next_title: "Req 4 — Choose a Real-World Exploration Path"
+next_title: "Choose a Real-World Exploration Path"
 ---
 
 {{< drg/requirement number="3" >}}

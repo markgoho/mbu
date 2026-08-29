@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Reading a Designed Place"
+title: "Reading a Designed Place"
 layout: guide
-group_title: "Seeing Landscapes Clearly"
+group_title: "1. Seeing Landscapes Clearly"
 req_number: "1"
 prev: "/merit-badges/landscape-architecture/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/landscape-architecture/guide/req2/"
-next_title: "Req 2 — What Makes a Site Work"
+next_title: "What Makes a Site Work"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8b2 — Visit a Marine Lab or Aquarium"
+title: "Visit a Marine Lab or Aquarium"
 layout: "guide"
-group_title: "Share What You Learned"
+group_title: "8. Share What You Learned"
 req_number: "8b2"
 req_path: "8.b.2"
 prev: "/merit-badges/oceanography/guide/req8b1/"
-prev_title: "Req 8b1 — Tour a Research Ship"
+prev_title: "Tour a Research Ship"
 next: "/merit-badges/oceanography/guide/req8c/"
-next_title: "Req 8c — Give an Oceanography Speech"
+next_title: "Give an Oceanography Speech"
 ---
 
 {{< drg/requirement number="8b2" >}}

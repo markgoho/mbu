@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Broadcast Scripts and Reviews"
+title: "Broadcast Scripts and Reviews"
 layout: guide
-group_title: "Covering Live Events"
+group_title: "4. Covering Live Events"
 req_number: "4b"
 prev: "/merit-badges/journalism/guide/req4a/"
-prev_title: "Req 4a — Two Written Styles"
+prev_title: "Two Written Styles"
 next: "/merit-badges/journalism/guide/req4c/"
-next_title: "Req 4c — Photojournalism Storytelling"
+next_title: "Photojournalism Storytelling"
 ---
 
 {{< drg/requirement number="4b" >}}

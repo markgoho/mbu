@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Practice With Flags"
+title: "Practice With Flags"
 layout: "guide"
-group_title: "Flag Signaling"
+group_title: "4. Flag Signaling"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/signs-signals-and-codes/guide/req4b/"
-prev_title: "Req 4b — Semaphore Flags vs. Nautical Flags"
+prev_title: "Semaphore Flags vs. Nautical Flags"
 next: "/merit-badges/signs-signals-and-codes/guide/req5/"
-next_title: "Req 5 — Reading and Writing Braille"
+next_title: "Reading and Writing Braille"
 ---
 
 {{< drg/requirement number="4c" >}}

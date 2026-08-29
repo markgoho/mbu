@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Your Education Story"
+title: "Your Education Story"
 layout: "guide"
-group_title: "Writing About Your Future"
+group_title: "5. Writing About Your Future"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/scholarship/guide/req5/"
-prev_title: "Req 5 — Write About Your Future"
+prev_title: "Write About Your Future"
 next: "/merit-badges/scholarship/guide/req5b/"
-next_title: "Req 5b — Careers and Classes"
+next_title: "Careers and Classes"
 ---
 
 {{< drg/requirement number="5a" >}}

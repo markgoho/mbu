@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Future Paths With Pets"
+title: "Future Paths With Pets"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "5. Future Paths"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/pets/guide/req4b/"
-prev_title: "Req 4b — Teach Tricks and Skills"
+prev_title: "Teach Tricks and Skills"
 next: "/merit-badges/pets/guide/req5a/"
-next_title: "Req 5a — Explore Pet Careers"
+next_title: "Explore Pet Careers"
 ---
 
 {{< drg/requirement number="5" >}}

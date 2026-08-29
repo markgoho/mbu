@@ -1,12 +1,12 @@
 ---
-title: "Req 10a — Visit a Fire Station"
+title: "Visit a Fire Station"
 layout: guide
-group_title: "Careers & Beyond"
+group_title: "10. Careers & Beyond"
 req_number: "10a"
 prev: "/merit-badges/fire-safety/guide/req10/"
-prev_title: "Req 10 — Fire Service Careers"
+prev_title: "Fire Service Careers"
 next: "/merit-badges/fire-safety/guide/req10b/"
-next_title: "Req 10b — Research a Fire Safety Career"
+next_title: "Research a Fire Safety Career"
 ---
 
  {{< drg/requirement number="10a" >}}

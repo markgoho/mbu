@@ -1,13 +1,13 @@
 ---
-title: "Req 2cb — Principal Parts and How They Work"
+title: "Principal Parts and How They Work"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cb"
 req_path: "2.c.b"
 prev: "/merit-badges/rifle-shooting/guide/req2ca/"
-prev_title: "Req 2ca — History of Muzzleloading Rifles"
+prev_title: "History of Muzzleloading Rifles"
 next: "/merit-badges/rifle-shooting/guide/req2cc/"
-next_title: "Req 2cc — Safe Storage and Handling"
+next_title: "Safe Storage and Handling"
 ---
 
 {{< drg/requirement number="2cb" >}}

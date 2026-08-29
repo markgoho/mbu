@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose a Career Reflection"
+title: "Choose a Career Reflection"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/veterinary-medicine/guide/req6b/"
-prev_title: "Req 6b — Shadow a Public-Service Veterinarian"
+prev_title: "Shadow a Public-Service Veterinarian"
 next: "/merit-badges/veterinary-medicine/guide/req7a/"
-next_title: "Req 7a — Why This Career Fits"
+next_title: "Why This Career Fits"
 ---
 
 {{< drg/requirement number="7" >}}

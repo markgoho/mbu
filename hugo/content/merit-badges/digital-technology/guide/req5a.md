@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — How Data Travels Online"
+title: "How Data Travels Online"
 layout: guide
-group_title: "The Internet"
+group_title: "5. The Internet"
 req_number: "5a"
 prev: "/merit-badges/digital-technology/guide/req4d/"
-prev_title: "Req 4d — Barcodes, QR Codes & RFID"
+prev_title: "Barcodes, QR Codes & RFID"
 next: "/merit-badges/digital-technology/guide/req5b/"
-next_title: "Req 5b — Search Engine Research"
+next_title: "Search Engine Research"
 ---
 
 {{< drg/requirement number="5a" >}}

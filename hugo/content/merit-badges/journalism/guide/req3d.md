@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Cover a Scouting Event"
+title: "Cover a Scouting Event"
 layout: guide
-group_title: "Storytelling and Interviews"
+group_title: "3. Storytelling and Interviews"
 req_number: "3d"
 prev: "/merit-badges/journalism/guide/req3c/"
-prev_title: "Req 3c — Profile a Journalist"
+prev_title: "Profile a Journalist"
 next: "/merit-badges/journalism/guide/req4/"
-next_title: "Req 4 — Choose Your Event Coverage Format"
+next_title: "Choose Your Event Coverage Format"
 ---
 
 {{< drg/requirement number="3d" >}}

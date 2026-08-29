@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Pick Your Snow Sport"
+title: "Pick Your Snow Sport"
 layout: "guide"
-group_title: "Choose Your Option"
+group_title: "7. Choose Your Option"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/snow-sports/guide/req6/"
-prev_title: "Req 6 — Responsibility, SMART Style & Avalanche"
+prev_title: "Responsibility, SMART Style & Avalanche"
 next: "/merit-badges/snow-sports/guide/req7a/"
-next_title: "Req 7a — Downhill (Alpine) Skiing"
+next_title: "Downhill (Alpine) Skiing"
 ---
 
 {{< drg/requirement number="7" >}}

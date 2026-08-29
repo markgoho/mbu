@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — From Punch Cards to Python"
+title: "From Punch Cards to Python"
 layout: "guide"
-group_title: "From Early Machines to Modern Code"
+group_title: "2. From Early Machines to Modern Code"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/programming/guide/req1/"
-prev_title: "Req 1 — Digital Safety and Coding Health"
+prev_title: "Digital Safety and Coding Health"
 next: "/merit-badges/programming/guide/req3/"
-next_title: "Req 3 — Languages and Everyday Code"
+next_title: "Languages and Everyday Code"
 ---
 
 {{< drg/requirement number="2" >}}

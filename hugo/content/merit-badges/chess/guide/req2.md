@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Strategy, Benefits & Etiquette"
+title: "Strategy, Benefits & Etiquette"
 layout: guide
-group_title: "The Thinking Game"
+group_title: "2. The Thinking Game"
 req_number: "2"
 prev: "/merit-badges/chess/guide/req1b/"
-prev_title: "Req 1b — Famous Chess Players"
+prev_title: "Famous Chess Players"
 next: "/merit-badges/chess/guide/req3a/"
-next_title: "Req 3a — Chess Piece Names"
+next_title: "Chess Piece Names"
 ---
 
 {{< drg/requirement number="2" >}}

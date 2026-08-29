@@ -1,13 +1,13 @@
 ---
-title: "Req 8e — Splinting Fractures"
+title: "Splinting Fractures"
 layout: "guide"
-group_title: "Muscle & Bone Injuries"
+group_title: "8. Muscle & Bone Injuries"
 req_number: "8e"
 req_path: "8.e"
 prev: "/merit-badges/first-aid/guide/req8d/"
-prev_title: "Req 8d — Bandaging Techniques"
+prev_title: "Bandaging Techniques"
 next: "/merit-badges/first-aid/guide/req9/"
-next_title: "Req 9 — Head, Neck & Back"
+next_title: "Head, Neck & Back"
 ---
 
 {{< drg/requirement number="8e" >}}

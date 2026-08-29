@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Sustainable Architecture"
+title: "Sustainable Architecture"
 layout: guide
-group_title: "Sustainability & Environment"
+group_title: "2. Sustainability & Environment"
 req_number: "2"
 prev: "/merit-badges/architecture/guide/req1b/"
-prev_title: "Req 1b — Historical Achievement"
+prev_title: "Historical Achievement"
 next: "/merit-badges/architecture/guide/req3/"
-next_title: "Req 3 — Meet an Architect"
+next_title: "Meet an Architect"
 ---
 
 {{< drg/requirement number="2" >}}

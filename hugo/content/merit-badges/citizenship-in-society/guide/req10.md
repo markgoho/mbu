@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Stereotypes & Individuality"
+title: "Stereotypes & Individuality"
 layout: guide
-group_title: "Challenging Stereotypes"
+group_title: "10. Challenging Stereotypes"
 req_number: "10"
 prev: "/merit-badges/citizenship-in-society/guide/req9/"
-prev_title: "Req 9 — Leadership Beyond Scouting"
+prev_title: "Leadership Beyond Scouting"
 next: "/merit-badges/citizenship-in-society/guide/req11/"
-next_title: "Req 11 — Your DEI Action Plan"
+next_title: "Your DEI Action Plan"
 ---
 
 {{< drg/requirement number="10" >}}

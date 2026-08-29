@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Law, Trade & Global Organizations"
+title: "Law, Trade & Global Organizations"
 layout: guide
-group_title: "International Connections"
+group_title: "4. International Connections"
 req_number: "4"
 prev: "/merit-badges/citizenship-in-the-world/guide/req3b/"
-prev_title: "Req 3b — A Country's Geography & Economy"
+prev_title: "A Country"
 next: "/merit-badges/citizenship-in-the-world/guide/req5/"
-next_title: "Req 5 — Types of Government"
+next_title: "Types of Government"
 ---
 
 {{< drg/requirement number="4" >}}

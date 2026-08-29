@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Sketching the Big Dipper"
+title: "Sketching the Big Dipper"
 layout: guide
-group_title: "Navigating the Night Sky"
+group_title: "4. Navigating the Night Sky"
 req_number: "4c"
 prev: "/merit-badges/astronomy/guide/req4b/"
-prev_title: "Req 4b — Bright Stars"
+prev_title: "Bright Stars"
 next: "/merit-badges/astronomy/guide/req4d/"
-next_title: "Req 4d — The Milky Way"
+next_title: "The Milky Way"
 ---
 
 {{< drg/requirement number="4c" >}}

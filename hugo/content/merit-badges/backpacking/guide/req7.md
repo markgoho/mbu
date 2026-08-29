@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Weather Preparedness"
+title: "Weather Preparedness"
 layout: guide
-group_title: "Weather"
+group_title: "7. Weather"
 req_number: "7"
 prev: "/merit-badges/backpacking/guide/req6/"
-prev_title: "Req 6 — Navigation"
+prev_title: "Navigation"
 next: "/merit-badges/backpacking/guide/req8/"
-next_title: "Req 8 — Stoves & Backcountry Cooking"
+next_title: "Stoves & Backcountry Cooking"
 ---
 
 {{< drg/requirement number="7" >}}

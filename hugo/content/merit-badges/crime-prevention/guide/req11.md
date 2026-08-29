@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — Crime Prevention Careers"
+title: "Crime Prevention Careers"
 layout: guide
-group_title: "Career Exploration"
+group_title: "10. Career Exploration"
 req_number: "11"
 prev: "/merit-badges/crime-prevention/guide/req10/"
-prev_title: "Req 10 — Interviewing a Professional"
+prev_title: "Interviewing a Professional"
 next: "/merit-badges/crime-prevention/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

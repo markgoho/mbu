@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Endurance Swim"
+title: "Endurance Swim"
 layout: guide
-group_title: "Stroke Technique"
+group_title: "3. Stroke Technique"
 req_number: "4"
 prev: "/merit-badges/swimming/guide/req3/"
-prev_title: "Req 3 — Swimming Strokes"
+prev_title: "Swimming Strokes"
 next: "/merit-badges/swimming/guide/req5a/"
-next_title: "Req 5a — Rescue Methods"
+next_title: "Rescue Methods"
 ---
 
 {{< drg/requirement number="4" >}}

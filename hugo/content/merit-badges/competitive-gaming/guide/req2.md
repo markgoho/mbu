@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Living the Scout Oath and Law Online"
+title: "Living the Scout Oath and Law Online"
 layout: "guide"
-group_title: "Character in Online Play"
+group_title: "2. Character in Online Play"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/competitive-gaming/guide/req1/"
-prev_title: "Req 1 — The History of Video Gaming and Esports"
+prev_title: "The History of Video Gaming and Esports"
 next: "/merit-badges/competitive-gaming/guide/req3/"
-next_title: "Req 3 — Gamer Health and Balance"
+next_title: "Gamer Health and Balance"
 ---
 
 {{< drg/requirement number="2" >}}

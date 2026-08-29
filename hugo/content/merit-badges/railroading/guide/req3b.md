@@ -1,13 +1,13 @@
 ---
-title: "Req 3b — Rail Jobs That Interest You"
+title: "Rail Jobs That Interest You"
 layout: "guide"
-group_title: "Rail Careers & Businesses"
+group_title: "3. Rail Careers & Businesses"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/railroading/guide/req3a/"
-prev_title: "Req 3a — Inside a Railroad Company"
+prev_title: "Inside a Railroad Company"
 next: "/merit-badges/railroading/guide/req3c/"
-next_title: "Req 3c — Rail Support Industries"
+next_title: "Rail Support Industries"
 ---
 
 {{< drg/requirement number="3b" >}}

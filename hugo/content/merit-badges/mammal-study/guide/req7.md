@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose Your Future Path"
+title: "Choose Your Future Path"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/mammal-study/guide/req6/"
-prev_title: "Req 6 — Outdoor Ethics in Mammal Study"
+prev_title: "Outdoor Ethics in Mammal Study"
 next: "/merit-badges/mammal-study/guide/req7a/"
-next_title: "Req 7a — Mammal-Related Careers"
+next_title: "Mammal-Related Careers"
 ---
 
 {{< drg/requirement number="7" >}}

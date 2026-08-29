@@ -1,12 +1,12 @@
 ---
-title: "Req 1a–1b — Garden Safety & First Aid"
+title: "Garden Safety & First Aid"
 layout: guide
-group_title: "Safe Gardening"
+group_title: "1. Safe Gardening"
 req_number: "1a"
 prev: "/merit-badges/gardening/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/gardening/guide/req2a/"
-next_title: "Req 2a — Growing Vegetables"
+next_title: "Growing Vegetables"
 ---
 
 {{< drg/requirement number="1" >}}

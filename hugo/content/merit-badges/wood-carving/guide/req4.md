@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Practice the Basic Cuts"
+title: "Practice the Basic Cuts"
 layout: "guide"
-group_title: "Tools and Technique"
+group_title: "3. Tools and Technique"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/wood-carving/guide/req3/"
-prev_title: "Req 3 — Tools and Sharpening"
+prev_title: "Tools and Sharpening"
 next: "/merit-badges/wood-carving/guide/req5/"
-next_title: "Req 5 — Choosing the Right Wood"
+next_title: "Choosing the Right Wood"
 ---
 
 {{< drg/requirement number="4" >}}

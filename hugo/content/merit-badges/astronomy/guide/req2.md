@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Light Pollution"
+title: "Light Pollution"
 layout: guide
-group_title: "Light & the Night Sky"
+group_title: "2. Light & the Night Sky"
 req_number: "2"
 prev: "/merit-badges/astronomy/guide/req1d/"
-prev_title: "Req 1d — Safe Solar Observation"
+prev_title: "Safe Solar Observation"
 next: "/merit-badges/astronomy/guide/req3a/"
-next_title: "Req 3a — Binoculars & Telescopes"
+next_title: "Binoculars & Telescopes"
 ---
 
 {{< drg/requirement number="2" >}}

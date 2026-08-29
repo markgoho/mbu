@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Outdoor Fix-It Options"
+title: "Outdoor Fix-It Options"
 layout: guide
-group_title: "Outdoor Repairs"
+group_title: "2. Outdoor Repairs"
 req_number: "2"
 prev: "/merit-badges/home-repairs/guide/req1/"
-prev_title: "Req 1 — Safety Basics"
+prev_title: "Safety Basics"
 next: "/merit-badges/home-repairs/guide/req2a/"
-next_title: "Req 2a — Yard Tool Tune-Up"
+next_title: "Yard Tool Tune-Up"
 guide_nav:
   - group_title: "Getting Started"
     items:

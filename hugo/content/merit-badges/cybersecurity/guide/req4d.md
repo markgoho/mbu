@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Spoofing & Phishing"
+title: "Spoofing & Phishing"
 layout: guide
-group_title: "Threats & Attacks"
+group_title: "4. Threats & Attacks"
 req_number: "4d"
 prev: "/merit-badges/cybersecurity/guide/req4c/"
-prev_title: "Req 4c — Public Wi-Fi Risks"
+prev_title: "Public Wi-Fi Risks"
 next: "/merit-badges/cybersecurity/guide/req4e/"
-next_title: "Req 4e — Current Events"
+next_title: "Current Events"
 ---
 
 {{< drg/requirement number="4d" >}}

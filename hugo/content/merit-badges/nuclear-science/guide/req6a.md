@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Fission and Chain Reactions"
+title: "Fission and Chain Reactions"
 layout: "guide"
-group_title: "Nuclear Power"
+group_title: "6. Nuclear Power"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/nuclear-science/guide/req6/"
-prev_title: "Req 6 — Choose a Nuclear Energy Path"
+prev_title: "Choose a Nuclear Energy Path"
 next: "/merit-badges/nuclear-science/guide/req6b/"
-next_title: "Req 6b — How Plants Make Electricity"
+next_title: "How Plants Make Electricity"
 ---
 
 {{< drg/requirement number="6a" >}}

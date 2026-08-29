@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — How Scouting Grew for Every Age"
+title: "How Scouting Grew for Every Age"
 layout: "guide"
-group_title: "Growing Scouting"
+group_title: "3. Growing Scouting"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/scouting-heritage/guide/req2b4/"
-prev_title: "Req 2b4 — Scout Life Magazine"
+prev_title: "Scout Life Magazine"
 next: "/merit-badges/scouting-heritage/guide/req4/"
-next_title: "Req 4 — Choose a Scouting History Experience"
+next_title: "Choose a Scouting History Experience"
 ---
 
 {{< drg/requirement number="3" >}}

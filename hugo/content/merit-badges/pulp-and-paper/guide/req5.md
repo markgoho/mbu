@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Coatings and Specialty Papers"
+title: "Coatings and Specialty Papers"
 layout: "guide"
-group_title: "Engineering Paper Performance"
+group_title: "5. Engineering Paper Performance"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/pulp-and-paper/guide/req4/"
-prev_title: "Req 4 — From Pulp to Paper"
+prev_title: "From Pulp to Paper"
 next: "/merit-badges/pulp-and-paper/guide/req6/"
-next_title: "Req 6 — Paper Products Around You"
+next_title: "Paper Products Around You"
 ---
 
 {{< drg/requirement number="5" >}}

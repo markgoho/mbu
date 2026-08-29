@@ -1,13 +1,13 @@
 ---
-title: "Req 2cj — Cleaning Safety Rules and Materials"
+title: "Cleaning Safety Rules and Materials"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cj"
 req_path: "2.c.j"
 prev: "/merit-badges/rifle-shooting/guide/req2ci/"
-prev_title: "Req 2ci — Range Procedures and Commands"
+prev_title: "Range Procedures and Commands"
 next: "/merit-badges/rifle-shooting/guide/req2ck/"
-next_title: "Req 2ck — Clean a Muzzleloader Properly"
+next_title: "Clean a Muzzleloader Properly"
 ---
 
 {{< drg/requirement number="2cj" >}}

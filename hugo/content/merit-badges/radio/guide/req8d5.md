@@ -1,13 +1,13 @@
 ---
-title: "Req 8d5 — Map Your Hunt"
+title: "Map Your Hunt"
 layout: "guide"
-group_title: "Option D: Direction Finding"
+group_title: "8. Option D: Direction Finding"
 req_number: "8d5"
 req_path: "8.d.5"
 prev: "/merit-badges/radio/guide/req8d4/"
-prev_title: "Req 8d4 — Participate in a Fox Hunt"
+prev_title: "Participate in a Fox Hunt"
 next: "/merit-badges/radio/guide/req8e/"
-next_title: "Req 8e — FRS & GMRS Overview"
+next_title: "FRS & GMRS Overview"
 guide_nav:
   - group_title: "Getting Started"
     items:

@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Menu Planning"
+title: "Menu Planning"
 layout: guide
-group_title: "Cooking at Home"
+group_title: "4. Cooking at Home"
 req_number: "4a"
 prev: "/merit-badges/cooking/guide/req3d/"
-prev_title: "Req 3d — Taste, Texture & Smell"
+prev_title: "Taste, Texture & Smell"
 next: "/merit-badges/cooking/guide/req4b/"
-next_title: "Req 4b — Recipes & Shopping"
+next_title: "Recipes & Shopping"
 ---
 
 {{< drg/requirement number="4a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Requirement 1 — Understanding Fingerprint History"
+title: "Understanding Fingerprint History"
 layout: guide
-group_title: "Understanding Fingerprints"
+group_title: "1. Understanding Fingerprints"
 req_number: "1"
 prev: "/merit-badges/fingerprinting/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/fingerprinting/guide/req2a/"
-next_title: "Requirement 2a — AFIS and Biometric Systems"
+next_title: "AFIS and Biometric Systems"
 ---
 
 {{< drg/requirement number="1" >}}

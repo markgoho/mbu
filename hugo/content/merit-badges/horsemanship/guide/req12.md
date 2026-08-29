@@ -1,12 +1,12 @@
 ---
-title: "Req 12 — Choose Your Path"
+title: "Choose Your Path"
 layout: guide
-group_title: "Careers and Lifelong Riding"
+group_title: "12. Careers and Lifelong Riding"
 req_number: "12"
 prev: "/merit-badges/horsemanship/guide/req11/"
-prev_title: "Req 11 — Walk, Trot, Halt, and Dismount"
+prev_title: "Walk, Trot, Halt, and Dismount"
 next: "/merit-badges/horsemanship/guide/req12a/"
-next_title: "Req 12a — Careers Working With Horses"
+next_title: "Careers Working With Horses"
 ---
 
 {{< drg/requirement number="12" >}}

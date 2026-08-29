@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Engines, Fuel & On-Water Awareness"
+title: "Engines, Fuel & On-Water Awareness"
 layout: "guide"
-group_title: "Boat Systems & Operations"
+group_title: "3. Boat Systems & Operations"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/motorboating/guide/req2/"
-prev_title: "Req 2 — Swim Readiness & Life Jackets"
+prev_title: "Swim Readiness & Life Jackets"
 next: "/merit-badges/motorboating/guide/req4/"
-next_title: "Req 4 — Rules, Weather & Required Gear"
+next_title: "Rules, Weather & Required Gear"
 ---
 
 {{< drg/requirement number="3" >}}

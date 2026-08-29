@@ -1,13 +1,13 @@
 ---
-title: "Req 2d3 — Teach a Scout Skill"
+title: "Teach a Scout Skill"
 layout: "guide"
-group_title: "Planning Your Movie"
+group_title: "2. Planning Your Movie"
 req_number: "2d3"
 req_path: "2.d.3"
 prev: "/merit-badges/moviemaking/guide/req2d2/"
-prev_title: "Req 2d2 — Create a Short Feature"
+prev_title: "Create a Short Feature"
 next: "/merit-badges/moviemaking/guide/req3/"
-next_title: "Req 3 — Pick a Production View"
+next_title: "Pick a Production View"
 ---
 
 {{< drg/requirement number="2d3" >}}

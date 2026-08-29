@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Your Safety Path"
+title: "Choose Your Safety Path"
 layout: "guide"
-group_title: "Careers and Service"
+group_title: "9. Careers and Service"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/safety/guide/req8/"
-prev_title: "Req 8 — Safer Ways to Travel"
+prev_title: "Safer Ways to Travel"
 next: "/merit-badges/safety/guide/req9a/"
-next_title: "Req 9a — Safety Careers"
+next_title: "Safety Careers"
 ---
 
 {{< drg/requirement number="9" >}}

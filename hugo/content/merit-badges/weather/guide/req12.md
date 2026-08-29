@@ -1,11 +1,11 @@
 ---
-title: "Req 12 — Careers in Meteorology"
+title: "Careers in Meteorology"
 layout: "guide"
-group_title: "Weather in Action"
+group_title: "10. Weather in Action"
 req_number: "12"
 req_path: "12"
 prev: "/merit-badges/weather/guide/req11/"
-prev_title: "Req 11 — Teach Weather Safety"
+prev_title: "Teach Weather Safety"
 next: "/merit-badges/weather/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

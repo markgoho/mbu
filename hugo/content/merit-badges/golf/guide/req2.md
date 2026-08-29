@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Traditional Golf or Disc Golf?"
+title: "Traditional Golf or Disc Golf?"
 layout: guide
-group_title: "Choose Your Game"
+group_title: "2. Choose Your Game"
 req_number: "2"
 prev: "/merit-badges/golf/guide/req1/"
-prev_title: "Req 1 — Course Safety & First Aid"
+prev_title: "Course Safety & First Aid"
 next: "/merit-badges/golf/guide/req2a/"
-next_title: "Req 2a — Traditional Golf Roadmap"
+next_title: "Traditional Golf Roadmap"
 ---
 
 {{< drg/requirement number="2" >}}

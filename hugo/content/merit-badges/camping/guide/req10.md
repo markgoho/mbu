@@ -1,10 +1,10 @@
 ---
-title: "Req 10 — Scout Spirit & Reflection"
+title: "Scout Spirit & Reflection"
 layout: guide
-group_title: "Reflection"
+group_title: "10. Reflection"
 req_number: "10"
 prev: "/merit-badges/camping/guide/req9c/"
-prev_title: "Req 9c — Conservation Project"
+prev_title: "Conservation Project"
 next: "/merit-badges/camping/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

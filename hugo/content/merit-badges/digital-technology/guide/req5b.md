@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Search Engine Research"
+title: "Search Engine Research"
 layout: guide
-group_title: "The Internet"
+group_title: "5. The Internet"
 req_number: "5b"
 prev: "/merit-badges/digital-technology/guide/req5a/"
-prev_title: "Req 5a — How Data Travels Online"
+prev_title: "How Data Travels Online"
 next: "/merit-badges/digital-technology/guide/req5c/"
-next_title: "Req 5c — HTTPS & Security Certificates"
+next_title: "HTTPS & Security Certificates"
 ---
 
 {{< drg/requirement number="5b" >}}

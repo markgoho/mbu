@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Flower Parts and Jobs"
+title: "Flower Parts and Jobs"
 layout: "guide"
-group_title: "Plant Anatomy"
+group_title: "1. Plant Anatomy"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/plant-science/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/plant-science/guide/req2/"
-next_title: "Req 2 — Photosynthesis and Why Plants Matter"
+next_title: "Photosynthesis and Why Plants Matter"
 ---
 
 {{< drg/requirement number="1" >}}

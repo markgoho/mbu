@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Interview a Safety Professional"
+title: "Interview a Safety Professional"
 layout: "guide"
-group_title: "Community Action"
+group_title: "7. Community Action"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/traffic-safety/guide/req7/"
-prev_title: "Req 7 — Choose Your Community Impact"
+prev_title: "Choose Your Community Impact"
 next: "/merit-badges/traffic-safety/guide/req7b/"
-next_title: "Req 7b — Write Your Traffic Safety Pledge"
+next_title: "Write Your Traffic Safety Pledge"
 ---
 
 {{< drg/requirement number="7a" >}}

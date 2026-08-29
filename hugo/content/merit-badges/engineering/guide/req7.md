@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Professional Engineer Registration"
+title: "Professional Engineer Registration"
 layout: guide
-group_title: "The Professional Engineer"
+group_title: "7. The Professional Engineer"
 req_number: "7"
 prev: "/merit-badges/engineering/guide/req6g/"
-prev_title: "Req 6g — Building an Engineering Project"
+prev_title: "Building an Engineering Project"
 next: "/merit-badges/engineering/guide/req8/"
-next_title: "Req 8 — The Engineer's Code of Ethics"
+next_title: "The Engineer"
 ---
 
 {{< drg/requirement number="7" >}}

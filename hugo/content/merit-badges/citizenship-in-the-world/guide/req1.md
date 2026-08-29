@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Defining World Citizenship"
+title: "Defining World Citizenship"
 layout: guide
-group_title: "What World Citizenship Means"
+group_title: "1. What World Citizenship Means"
 req_number: "1"
 prev: "/merit-badges/citizenship-in-the-world/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/citizenship-in-the-world/guide/req2/"
-next_title: "Req 2 — U.S. Citizenship & Comparing Countries"
+next_title: "U.S. Citizenship & Comparing Countries"
 ---
 
 {{< drg/requirement number="1" >}}

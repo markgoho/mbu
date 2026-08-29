@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — The Seven Dog Groups"
+title: "The Seven Dog Groups"
 layout: guide
-group_title: "Dogs Through Time"
+group_title: "1. Dogs Through Time"
 req_number: "1b"
 prev: "/merit-badges/dog-care/guide/req1a/"
-prev_title: "Req 1a — From Wolves to Companions"
+prev_title: "From Wolves to Companions"
 next: "/merit-badges/dog-care/guide/req1c/"
-next_title: "Req 1c — Breeds and Breed Stories"
+next_title: "Breeds and Breed Stories"
 ---
 
 {{< drg/requirement number="1b" >}}

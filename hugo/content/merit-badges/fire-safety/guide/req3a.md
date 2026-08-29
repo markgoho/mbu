@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Stop, Drop, Roll, Cool, Call"
+title: "Stop, Drop, Roll, Cool, Call"
 layout: guide
-group_title: "Fire-Related Injuries"
+group_title: "3. Fire-Related Injuries"
 req_number: "3a"
 prev: "/merit-badges/fire-safety/guide/req2/"
-prev_title: "Req 2 — Fire Extinguishers"
+prev_title: "Fire Extinguishers"
 next: "/merit-badges/fire-safety/guide/req3b/"
-next_title: "Req 3b — Clothing Fires"
+next_title: "Clothing Fires"
 ---
 
  {{< drg/requirement number="3a" >}}

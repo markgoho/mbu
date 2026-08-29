@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Shop Safety Hazards"
+title: "Shop Safety Hazards"
 layout: guide
-group_title: "Safety & Registration"
+group_title: "1. Safety & Registration"
 req_number: "1a"
 prev: "/merit-badges/automotive-maintenance/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/automotive-maintenance/guide/req1b/"
-next_title: "Req 1b — Safety Equipment & Clothing"
+next_title: "Safety Equipment & Clothing"
 ---
 
 {{< drg/requirement number="1a" >}}

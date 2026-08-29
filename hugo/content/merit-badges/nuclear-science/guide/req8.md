@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Explore a Nuclear Science Career"
+title: "Explore a Nuclear Science Career"
 layout: "guide"
-group_title: "Careers in the Field"
+group_title: "8. Careers in the Field"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/nuclear-science/guide/req7/"
-prev_title: "Req 7 — Nuclear Science in Daily Life"
+prev_title: "Nuclear Science in Daily Life"
 next: "/merit-badges/nuclear-science/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

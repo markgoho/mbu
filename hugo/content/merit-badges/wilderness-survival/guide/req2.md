@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Seven Priorities of Survival"
+title: "Seven Priorities of Survival"
 layout: guide
-group_title: "Survival Foundations"
+group_title: "2. Survival Foundations"
 req_number: "2"
 prev: "/merit-badges/wilderness-survival/guide/req1c/"
-prev_title: "Req 1c — Trip Planning & Prevention"
+prev_title: "Trip Planning & Prevention"
 next: "/merit-badges/wilderness-survival/guide/req3/"
-next_title: "Req 3 — Avoiding Panic & Maintaining Morale"
+next_title: "Avoiding Panic & Maintaining Morale"
 ---
 
 {{< drg/requirement number="2" >}}

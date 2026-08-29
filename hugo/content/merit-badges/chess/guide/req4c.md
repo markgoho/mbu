@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Opening Principles & Openings"
+title: "Opening Principles & Openings"
 layout: guide
-group_title: "Mastering the Game"
+group_title: "4. Mastering the Game"
 req_number: "4c"
 prev: "/merit-badges/chess/guide/req4b/"
-prev_title: "Req 4b — Opening, Middle & Endgame"
+prev_title: "Opening, Middle & Endgame"
 next: "/merit-badges/chess/guide/req4d/"
-next_title: "Req 4d — Famous Checkmates & Traps"
+next_title: "Famous Checkmates & Traps"
 ---
 
 {{< drg/requirement number="4c" >}}

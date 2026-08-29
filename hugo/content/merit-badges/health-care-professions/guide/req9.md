@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Volunteer in Health Care"
+title: "Volunteer in Health Care"
 layout: guide
-group_title: "Service in the Community"
+group_title: "9. Service in the Community"
 req_number: "9"
 prev: "/merit-badges/health-care-professions/guide/req8/"
-prev_title: "Req 8 — Recent Medical Breakthroughs"
+prev_title: "Recent Medical Breakthroughs"
 next: "/merit-badges/health-care-professions/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

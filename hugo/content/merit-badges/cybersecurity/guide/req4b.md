@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Malware"
+title: "Malware"
 layout: guide
-group_title: "Threats & Attacks"
+group_title: "4. Threats & Attacks"
 req_number: "4b"
 prev: "/merit-badges/cybersecurity/guide/req4a/"
-prev_title: "Req 4a — Threats & Vulnerabilities"
+prev_title: "Threats & Vulnerabilities"
 next: "/merit-badges/cybersecurity/guide/req4c/"
-next_title: "Req 4c — Public Wi-Fi Risks"
+next_title: "Public Wi-Fi Risks"
 ---
 
 {{< drg/requirement number="4b" >}}

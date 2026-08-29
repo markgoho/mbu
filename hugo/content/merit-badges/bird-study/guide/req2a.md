@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Bird Body Parts"
+title: "Bird Body Parts"
 layout: guide
-group_title: "Bird Anatomy"
+group_title: "2. Bird Anatomy"
 req_number: "2a"
 prev: "/merit-badges/bird-study/guide/req1/"
-prev_title: "Req 1 — Birds & the Environment"
+prev_title: "Birds & the Environment"
 next: "/merit-badges/bird-study/guide/req2b/"
-next_title: "Req 2b — Wing Feathers"
+next_title: "Wing Feathers"
 ---
 
 {{< drg/requirement number="2a" >}}

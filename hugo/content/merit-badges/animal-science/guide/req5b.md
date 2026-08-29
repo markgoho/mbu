@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Pure & Cross Breeding"
+title: "Pure & Cross Breeding"
 layout: guide
-group_title: "Genetics & Breeding"
+group_title: "5. Genetics & Breeding"
 req_number: "5b"
 prev: "/merit-badges/animal-science/guide/req5a/"
-prev_title: "Req 5a — Breeding Improvements"
+prev_title: "Breeding Improvements"
 next: "/merit-badges/animal-science/guide/req5c/"
-next_title: "Req 5c — Modern Technology"
+next_title: "Modern Technology"
 ---
 
 {{< drg/requirement number="5b" >}}

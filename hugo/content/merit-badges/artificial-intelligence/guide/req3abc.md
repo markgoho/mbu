@@ -1,12 +1,12 @@
 ---
-title: "Req 3a–c — Automation All Around You"
+title: "Automation All Around You"
 layout: guide
-group_title: "Automation Basics"
+group_title: "3. Automation Basics"
 req_number: "3a"
 prev: "/merit-badges/artificial-intelligence/guide/req2e/"
-prev_title: "Req 2e — AI Timeline"
+prev_title: "AI Timeline"
 next: "/merit-badges/artificial-intelligence/guide/req3d/"
-next_title: "Req 3d — How Automation Works"
+next_title: "How Automation Works"
 ---
 
 {{< drg/requirement number="3a" >}}

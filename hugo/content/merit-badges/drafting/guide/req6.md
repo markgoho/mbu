@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Lettering Your Opinion"
+title: "Lettering Your Opinion"
 layout: guide
-group_title: "Gothic Lettering & CAD Benefits"
+group_title: "6. Gothic Lettering & CAD Benefits"
 req_number: "6"
 prev: "/merit-badges/drafting/guide/req5/"
-prev_title: "Req 5 — Manual vs. CAD Discussion"
+prev_title: "Manual vs. CAD Discussion"
 next: "/merit-badges/drafting/guide/req7/"
-next_title: "Req 7 — Workplace Visit or Research"
+next_title: "Workplace Visit or Research"
 ---
 
 {{< drg/requirement number="6" >}}

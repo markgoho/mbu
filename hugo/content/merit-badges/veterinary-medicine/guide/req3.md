@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Becoming a Veterinarian"
+title: "Becoming a Veterinarian"
 layout: "guide"
-group_title: "Training and Team Roles"
+group_title: "3. Training and Team Roles"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/veterinary-medicine/guide/req2/"
-prev_title: "Req 2 — Public Service and Specialized Careers"
+prev_title: "Public Service and Specialized Careers"
 next: "/merit-badges/veterinary-medicine/guide/req4/"
-next_title: "Req 4 — Veterinary Technicians in Action"
+next_title: "Veterinary Technicians in Action"
 ---
 
 {{< drg/requirement number="3" >}}

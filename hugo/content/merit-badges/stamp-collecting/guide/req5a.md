@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Using Stamp Tongs"
+title: "Using Stamp Tongs"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/stamp-collecting/guide/req5/"
-prev_title: "Req 5 — Choosing Your Tools"
+prev_title: "Choosing Your Tools"
 next: "/merit-badges/stamp-collecting/guide/req5b/"
-next_title: "Req 5b — Soaking With Water and a Tray"
+next_title: "Soaking With Water and a Tray"
 ---
 
 {{< drg/requirement number="5a" >}}

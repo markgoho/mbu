@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Exploring Landscape Architecture Careers"
+title: "Exploring Landscape Architecture Careers"
 layout: guide
-group_title: "Careers in the Field"
+group_title: "5. Careers in the Field"
 req_number: "5"
 prev: "/merit-badges/landscape-architecture/guide/req4/"
-prev_title: "Req 4 — Mapping Water, Access, and Comfort"
+prev_title: "Mapping Water, Access, and Comfort"
 next: "/merit-badges/landscape-architecture/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

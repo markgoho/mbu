@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Chess Tournaments"
+title: "Chess Tournaments"
 layout: guide
-group_title: "Competition"
+group_title: "6. Competition"
 req_number: "6"
 prev: "/merit-badges/chess/guide/req5e/"
-prev_title: "Req 5e — Solving Mate Problems"
+prev_title: "Solving Mate Problems"
 next: "/merit-badges/chess/guide/req7/"
-next_title: "Req 7 — Play & Review Games"
+next_title: "Play & Review Games"
 ---
 
 {{< drg/requirement number="6" >}}

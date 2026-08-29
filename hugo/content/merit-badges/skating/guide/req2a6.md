@@ -1,13 +1,13 @@
 ---
-title: "Req 2a6 — Forward Skating & Stop"
+title: "Forward Skating & Stop"
 layout: "guide"
-group_title: "Option A — Ice Skating"
+group_title: "2. Option A — Ice Skating"
 req_number: "2a6"
 req_path: "2.a.6"
 prev: "/merit-badges/skating/guide/req2a5/"
-prev_title: "Req 2a5 — Storing Skates"
+prev_title: "Storing Skates"
 next: "/merit-badges/skating/guide/req2a7/"
-next_title: "Req 2a7 — Forward Glide"
+next_title: "Forward Glide"
 ---
 
 {{< drg/requirement number="2a6" >}}

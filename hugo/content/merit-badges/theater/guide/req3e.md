@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Hair & Makeup"
+title: "Hair & Makeup"
 layout: guide
-group_title: "Behind the Curtain"
+group_title: "3. Behind the Curtain"
 req_number: "3e"
 prev: "/merit-badges/theater/guide/req3d/"
-prev_title: "Req 3d — Costume Design"
+prev_title: "Costume Design"
 next: "/merit-badges/theater/guide/req3f/"
-next_title: "Req 3f — Scenery Building"
+next_title: "Scenery Building"
 ---
 
 {{< drg/requirement number="3e" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Tracking Your Money"
+title: "Tracking Your Money"
 layout: guide
-group_title: "Budgeting"
+group_title: "2. Budgeting"
 req_number: "2c"
 prev: "/merit-badges/personal-management/guide/req2b/"
-prev_title: "Req 2b — Balancing Your Budget"
+prev_title: "Balancing Your Budget"
 next: "/merit-badges/personal-management/guide/req2d/"
-next_title: "Req 2d — Budget Review"
+next_title: "Budget Review"
 ---
 
 {{< drg/requirement number="2c" >}}

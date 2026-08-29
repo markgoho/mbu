@@ -1,10 +1,10 @@
 ---
-title: "Req 7b — Building a DIY Hobby or Lifestyle"
+title: "Building a DIY Hobby or Lifestyle"
 layout: guide
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7b"
 prev: "/merit-badges/home-repairs/guide/req7a/"
-prev_title: "Req 7a — Exploring a Home Repair Career"
+prev_title: "Exploring a Home Repair Career"
 next: "/merit-badges/home-repairs/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Projectile Safety"
+title: "Projectile Safety"
 layout: guide
-group_title: "Safety on the Range"
+group_title: "1. Safety on the Range"
 req_number: "1a"
 prev: "/merit-badges/archery/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/archery/guide/req1b/"
-next_title: "Req 1b — Range Safety Rules"
+next_title: "Range Safety Rules"
 ---
 
 {{< drg/requirement number="1a" >}}

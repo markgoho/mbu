@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Writing Your Collection Report"
+title: "Writing Your Collection Report"
 layout: guide
-group_title: "Your Collection Story"
+group_title: "1. Your Collection Story"
 req_number: "1"
 prev: "/merit-badges/collections/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/collections/guide/req2/"
-next_title: "Req 2 — Growth & Development"
+next_title: "Growth & Development"
 ---
 
 {{< drg/requirement number="1" >}}

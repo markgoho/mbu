@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Taxpayer-Funded Services"
+title: "Taxpayer-Funded Services"
 layout: guide
-group_title: "Services Your Community Provides"
+group_title: "6. Services Your Community Provides"
 req_number: "6"
 prev: "/merit-badges/citizenship-in-the-community/guide/req5/"
-prev_title: "Req 5 — Community on Screen"
+prev_title: "Community on Screen"
 next: "/merit-badges/citizenship-in-the-community/guide/req7/"
-next_title: "Req 7 — Charitable Organizations & Volunteering"
+next_title: "Charitable Organizations & Volunteering"
 ---
 
 {{< drg/requirement number="6" >}}

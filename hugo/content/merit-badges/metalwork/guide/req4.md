@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Where Metal Takes You"
+title: "Where Metal Takes You"
 layout: "guide"
-group_title: "Future Pathways"
+group_title: "4. Future Pathways"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/metalwork/guide/req3/"
-prev_title: "Req 3 — Hardening, Softening & Tempering"
+prev_title: "Hardening, Softening & Tempering"
 next: "/merit-badges/metalwork/guide/req4a/"
-next_title: "Req 4a — Metalworking Careers"
+next_title: "Metalworking Careers"
 ---
 
 {{< drg/requirement number="4" >}}

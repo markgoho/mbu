@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Design Choices and Production Planning"
+title: "Design Choices and Production Planning"
 layout: guide
-group_title: "Designing for Print"
+group_title: "3. Designing for Print"
 req_number: "3"
 prev: "/merit-badges/graphic-arts/guide/req2/"
-prev_title: "Req 2 — Images, Halftones, and Digital Files"
+prev_title: "Images, Halftones, and Digital Files"
 next: "/merit-badges/graphic-arts/guide/req4/"
-next_title: "Req 4 — Pick Your Production Path"
+next_title: "Pick Your Production Path"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — International Space Station"
+title: "International Space Station"
 layout: "guide"
-group_title: "Spacecraft Choices"
+group_title: "6. Spacecraft Choices"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/space-exploration/guide/req6a/"
-prev_title: "Req 6a — Crewed Orbital Vehicles"
+prev_title: "Crewed Orbital Vehicles"
 next: "/merit-badges/space-exploration/guide/req7/"
-next_title: "Req 7 — Design a Space Base"
+next_title: "Design a Space Base"
 ---
 
 {{< drg/requirement number="6b" >}}

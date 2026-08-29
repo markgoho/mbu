@@ -4,31 +4,31 @@ layout: guide
 badge_name: "American Cultures"
 group_title: "Getting Started"
 next: "/merit-badges/american-cultures/guide/req1/"
-next_title: "Req 1 — Cultural Experiences"
+next_title: "Cultural Experiences"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-cultures/guide/"
-  - group_title: "Exploring Cultures"
+  - group_title: "1. Exploring Cultures"
     items:
-      - title: "Req 1 — Cultural Experiences"
+      - title: "1. Cultural Experiences"
         url: "/merit-badges/american-cultures/guide/req1/"
         is_sub: false
-  - group_title: "Understanding Diversity"
+  - group_title: "2. Understanding Diversity"
     items:
-      - title: "Req 2 — Imagining a Single-Culture World"
+      - title: "2. Imagining a Single-Culture World"
         url: "/merit-badges/american-cultures/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Customs and Commonalities"
+      - title: "3. Customs and Commonalities"
         url: "/merit-badges/american-cultures/guide/req3/"
         is_sub: false
-  - group_title: "Celebrating Contributions"
+  - group_title: "4. Celebrating Contributions"
     items:
-      - title: "Req 4 — Contributions to America"
+      - title: "4. Contributions to America"
         url: "/merit-badges/american-cultures/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Leading a Discussion"
+      - title: "5. Leading a Discussion"
         url: "/merit-badges/american-cultures/guide/req5/"
         is_sub: false
   - group_title: "Beyond the Badge"

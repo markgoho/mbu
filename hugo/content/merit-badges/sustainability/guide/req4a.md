@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Design a Community"
+title: "Design a Community"
 layout: guide
-group_title: "Sustainable Communities"
+group_title: "4. Sustainable Communities"
 req_number: "4a"
 prev: "/merit-badges/sustainability/guide/req3c/"
-prev_title: "Req 3c — Reducing Food Waste"
+prev_title: "Reducing Food Waste"
 next: "/merit-badges/sustainability/guide/req4b/"
-next_title: "Req 4b — Fix an Unsustainable Practice"
+next_title: "Fix an Unsustainable Practice"
 ---
 
 {{< drg/requirement number="4" >}}

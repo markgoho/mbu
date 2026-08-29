@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Public Wi-Fi Risks"
+title: "Public Wi-Fi Risks"
 layout: guide
-group_title: "Threats & Attacks"
+group_title: "4. Threats & Attacks"
 req_number: "4c"
 prev: "/merit-badges/cybersecurity/guide/req4b/"
-prev_title: "Req 4b — Malware"
+prev_title: "Malware"
 next: "/merit-badges/cybersecurity/guide/req4d/"
-next_title: "Req 4d — Spoofing & Phishing"
+next_title: "Spoofing & Phishing"
 ---
 
 {{< drg/requirement number="4c" >}}

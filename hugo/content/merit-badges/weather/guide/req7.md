@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — The Water Cycle in Motion"
+title: "The Water Cycle in Motion"
 layout: "guide"
-group_title: "How Weather Works"
+group_title: "4. How Weather Works"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/weather/guide/req6/"
-prev_title: "Req 6 — Cloud Clues"
+prev_title: "Cloud Clues"
 next: "/merit-badges/weather/guide/req8/"
-next_title: "Req 8 — People, Climate, and Change"
+next_title: "People, Climate, and Change"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Project for Mammal Numbers"
+title: "Project for Mammal Numbers"
 layout: "guide"
-group_title: "Conservation in Action"
+group_title: "5. Conservation in Action"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/mammal-study/guide/req4g/"
-prev_title: "Req 4g — Food Chains to a Carnivore"
+prev_title: "Food Chains to a Carnivore"
 next: "/merit-badges/mammal-study/guide/req6/"
-next_title: "Req 6 — Outdoor Ethics in Mammal Study"
+next_title: "Outdoor Ethics in Mammal Study"
 ---
 
 {{< drg/requirement number="5" >}}

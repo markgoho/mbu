@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Explore Railroading Careers"
+title: "Explore Railroading Careers"
 layout: "guide"
-group_title: "Rail Careers & Businesses"
+group_title: "3. Rail Careers & Businesses"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/railroading/guide/req2/"
-prev_title: "Req 2 — Passenger Rail in America"
+prev_title: "Passenger Rail in America"
 next: "/merit-badges/railroading/guide/req3a/"
-next_title: "Req 3a — Inside a Railroad Company"
+next_title: "Inside a Railroad Company"
 ---
 
 {{< drg/requirement number="3" >}}

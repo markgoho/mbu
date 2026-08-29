@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Focus & Adjustment"
+title: "Focus & Adjustment"
 layout: guide
-group_title: "Optics & Gear"
+group_title: "3. Optics & Gear"
 req_number: "3b"
 prev: "/merit-badges/bird-study/guide/req3a/"
-prev_title: "Req 3a — Specification Numbers"
+prev_title: "Specification Numbers"
 next: "/merit-badges/bird-study/guide/req3c/"
-next_title: "Req 3c — Lens Care"
+next_title: "Lens Care"
 ---
 
 {{< drg/requirement number="3b" >}}

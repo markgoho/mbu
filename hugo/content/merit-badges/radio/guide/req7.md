@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Cellular Technology"
+title: "Cellular Technology"
 layout: "guide"
-group_title: "Cell Phones"
+group_title: "7. Cell Phones"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/radio/guide/req6/"
-prev_title: "Req 6 — FCC, ITU & Call Signs"
+prev_title: "FCC, ITU & Call Signs"
 next: "/merit-badges/radio/guide/req8/"
-next_title: "Req 8 — Choose Your Option"
+next_title: "Choose Your Option"
 guide_nav:
   - group_title: "Getting Started"
     items:

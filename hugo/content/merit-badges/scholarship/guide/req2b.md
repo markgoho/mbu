@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — Interview Working Adults"
+title: "Interview Working Adults"
 layout: "guide"
-group_title: "Learning Beyond the Classroom"
+group_title: "2. Learning Beyond the Classroom"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/scholarship/guide/req2a/"
-prev_title: "Req 2a — Learn From Local Places"
+prev_title: "Learn From Local Places"
 next: "/merit-badges/scholarship/guide/req2c/"
-next_title: "Req 2c — Use a Planner Well"
+next_title: "Use a Planner Well"
 ---
 
 {{< drg/requirement number="2b" >}}

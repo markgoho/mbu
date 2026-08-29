@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Common Pipe Materials"
+title: "Common Pipe Materials"
 layout: "guide"
-group_title: "Choosing the Right Pipe"
+group_title: "5. Choosing the Right Pipe"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/plumbing/guide/req4/"
-prev_title: "Req 4 — Plumbing Parts and Terms"
+prev_title: "Plumbing Parts and Terms"
 next: "/merit-badges/plumbing/guide/req6/"
-next_title: "Req 6 — Choose Four Supervised Tasks"
+next_title: "Choose Four Supervised Tasks"
 ---
 
 {{< drg/requirement number="5" >}}

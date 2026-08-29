@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Choose Your Option"
+title: "Choose Your Option"
 layout: "guide"
-group_title: "Amateur & Professional Radio"
+group_title: "8. Amateur & Professional Radio"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/radio/guide/req7/"
-prev_title: "Req 7 — Cellular Technology"
+prev_title: "Cellular Technology"
 next: "/merit-badges/radio/guide/req8a/"
-next_title: "Req 8a — Amateur Radio Overview"
+next_title: "Amateur Radio Overview"
 guide_nav:
   - group_title: "Getting Started"
     items:

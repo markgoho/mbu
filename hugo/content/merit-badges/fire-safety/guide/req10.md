@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Fire Service Careers"
+title: "Fire Service Careers"
 layout: guide
-group_title: "Careers & Beyond"
+group_title: "10. Careers & Beyond"
 req_number: "10"
 prev: "/merit-badges/fire-safety/guide/req9/"
-prev_title: "Req 9 — Wildland Fires"
+prev_title: "Wildland Fires"
 next: "/merit-badges/fire-safety/guide/req10a/"
-next_title: "Req 10a — Visit a Fire Station"
+next_title: "Visit a Fire Station"
 ---
 
  {{< drg/requirement number="10" >}}

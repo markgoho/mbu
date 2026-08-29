@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Radial Measurements and GPS Checks"
+title: "Radial Measurements and GPS Checks"
 layout: "guide"
-group_title: "Measuring from the Ground"
+group_title: "2. Measuring from the Ground"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/surveying/guide/req1/"
-prev_title: "Req 1 — Field Safety for Surveyors"
+prev_title: "Field Safety for Surveyors"
 next: "/merit-badges/surveying/guide/req3/"
-next_title: "Req 3 — Plotting Your Survey Map"
+next_title: "Plotting Your Survey Map"
 ---
 
 {{< drg/requirement number="2" >}}

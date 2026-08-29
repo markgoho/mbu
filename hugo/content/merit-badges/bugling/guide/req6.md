@@ -1,10 +1,10 @@
 ---
-title: "Req 6 — Three Months of Service"
+title: "Three Months of Service"
 layout: guide
-group_title: "Serving as Troop Bugler"
+group_title: "6. Serving as Troop Bugler"
 req_number: "6"
 prev: "/merit-badges/bugling/guide/req5/"
-prev_title: "Req 5 — Caring for Your Bugle"
+prev_title: "Caring for Your Bugle"
 next: "/merit-badges/bugling/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

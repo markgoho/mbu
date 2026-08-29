@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Fishing Regulations"
+title: "Fishing Regulations"
 layout: guide
-group_title: "Stewardship & Ethics"
+group_title: "6. Stewardship & Ethics"
 req_number: "7"
 prev: "/merit-badges/fishing/guide/req6b/"
-prev_title: "Req 6b — Catch and Release"
+prev_title: "Catch and Release"
 next: "/merit-badges/fishing/guide/req8/"
-next_title: "Req 8 — Sportsmanship for Anglers"
+next_title: "Sportsmanship for Anglers"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Lures, Baits, and Baitfish"
+title: "Lures, Baits, and Baitfish"
 layout: guide
-group_title: "Gear & Tackle"
+group_title: "2. Gear & Tackle"
 req_number: "5"
 prev: "/merit-badges/fishing/guide/req4/"
-prev_title: "Req 4 — Essential Fishing Knots"
+prev_title: "Essential Fishing Knots"
 next: "/merit-badges/fishing/guide/req6a/"
-next_title: "Req 6a — Leave No Trace While Fishing"
+next_title: "Leave No Trace While Fishing"
 ---
 
 {{< drg/requirement number="5" >}}

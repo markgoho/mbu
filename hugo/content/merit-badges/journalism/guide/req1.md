@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Press Freedom & Media Ethics"
+title: "Press Freedom & Media Ethics"
 layout: guide
-group_title: "Rights, Truth, and Responsibility"
+group_title: "1. Rights, Truth, and Responsibility"
 req_number: "1"
 prev: "/merit-badges/journalism/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/journalism/guide/req2/"
-next_title: "Req 2 — Choose Your Newsroom"
+next_title: "Choose Your Newsroom"
 ---
 
 {{< drg/requirement number="1" >}}

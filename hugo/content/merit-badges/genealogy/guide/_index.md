@@ -4,66 +4,66 @@ layout: guide
 badge_name: "Genealogy"
 group_title: "Getting Started"
 next: "/merit-badges/genealogy/guide/req1/"
-next_title: "Req 1 — Genealogy Basics"
+next_title: "Genealogy Basics"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/genealogy/guide/"
-  - group_title: "Foundations of Family History"
+  - group_title: "1. Foundations of Family History"
     items:
-      - title: "Req 1 — Genealogy Basics"
+      - title: "1. Genealogy Basics"
         url: "/merit-badges/genealogy/guide/req1/"
-      - title: "Req 2 — Tell a Personal Story"
+      - title: "2. Tell a Personal Story"
         url: "/merit-badges/genealogy/guide/req2/"
-      - title: "Req 2a — Timeline & Biography"
+      - title: "a Timeline & Biography"
         url: "/merit-badges/genealogy/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Six-Week Journal"
+      - title: "b Six-Week Journal"
         url: "/merit-badges/genealogy/guide/req2b/"
         is_sub: true
-      - title: "Req 3 — Interview a Relative"
+      - title: "3. Interview a Relative"
         url: "/merit-badges/genealogy/guide/req3/"
-  - group_title: "Records and Research"
+  - group_title: "4. Records and Research"
     items:
-      - title: "Req 4a–4b — Physical and Digital Sources"
+      - title: "a Physical and Digital Sources"
         url: "/merit-badges/genealogy/guide/req4ab/"
         is_sub: true
-      - title: "Req 4c–4d — Finding and Evaluating a Document"
+      - title: "c Finding and Evaluating a Document"
         url: "/merit-badges/genealogy/guide/req4cd/"
         is_sub: true
-      - title: "Req 4e — Where Records Live"
+      - title: "e Where Records Live"
         url: "/merit-badges/genealogy/guide/req4e/"
         is_sub: true
-      - title: "Req 5 — Research Helpers Overview"
+      - title: "5. Research Helpers Overview"
         url: "/merit-badges/genealogy/guide/req5/"
-      - title: "Req 5a — Genealogical or Lineage Society"
+      - title: "a Genealogical or Lineage Society"
         url: "/merit-badges/genealogy/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Professional Genealogist"
+      - title: "b Professional Genealogist"
         url: "/merit-badges/genealogy/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Surname Organization"
+      - title: "c Surname Organization"
         url: "/merit-badges/genealogy/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Educational Facility"
+      - title: "d Educational Facility"
         url: "/merit-badges/genealogy/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Record Repository"
+      - title: "e Record Repository"
         url: "/merit-badges/genealogy/guide/req5e/"
         is_sub: true
-  - group_title: "Building Your Family Tree"
+  - group_title: "6. Building Your Family Tree"
     items:
-      - title: "Req 6 — Build a Pedigree Chart"
+      - title: "6. Build a Pedigree Chart"
         url: "/merit-badges/genealogy/guide/req6/"
-      - title: "Req 7 — Family Group Records"
+      - title: "7. Family Group Records"
         url: "/merit-badges/genealogy/guide/req7/"
-  - group_title: "Technology and Reflection"
+  - group_title: "8. Technology and Reflection"
     items:
-      - title: "Req 8a–8c — Technology Changes Genealogy"
+      - title: "a Technology Changes Genealogy"
         url: "/merit-badges/genealogy/guide/req8abc/"
         is_sub: true
-      - title: "Req 9 — What You Learned About Family"
+      - title: "9. What You Learned About Family"
         url: "/merit-badges/genealogy/guide/req9/"
   - group_title: "Beyond the Badge"
     items:

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Understanding Soil Erosion"
+title: "Understanding Soil Erosion"
 layout: "guide"
-group_title: "Erosion in Action"
+group_title: "2. Erosion in Action"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/soil-and-water-conservation/guide/req1/"
-prev_title: "Req 1 — Soil Fundamentals"
+prev_title: "Soil Fundamentals"
 next: "/merit-badges/soil-and-water-conservation/guide/req3/"
-next_title: "Req 3 — Erosion-Control Practices"
+next_title: "Erosion-Control Practices"
 ---
 
 {{< drg/requirement number="2" >}}

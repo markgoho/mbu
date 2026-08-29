@@ -1,12 +1,12 @@
 ---
-title: "Req 6d — Writing Clear Instructions"
+title: "Writing Clear Instructions"
 layout: guide
-group_title: "Developing AI Skills"
+group_title: "6. Developing AI Skills"
 req_number: "6d"
 prev: "/merit-badges/artificial-intelligence/guide/req6c/"
-prev_title: "Req 6c — Prompt Engineering"
+prev_title: "Prompt Engineering"
 next: "/merit-badges/artificial-intelligence/guide/req7/"
-next_title: "Req 7 — Build Your AI Project"
+next_title: "Build Your AI Project"
 ---
 
 {{< drg/requirement number="6d" >}}

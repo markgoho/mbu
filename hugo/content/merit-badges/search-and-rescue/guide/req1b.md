@@ -1,13 +1,13 @@
 ---
-title: "Req 1b — Basic Essentials That Keep You Alive"
+title: "Basic Essentials That Keep You Alive"
 layout: "guide"
-group_title: "Field Safety and Self-Care"
+group_title: "1. Field Safety and Self-Care"
 req_number: "1b"
 req_path: "1.b"
 prev: "/merit-badges/search-and-rescue/guide/req1a/"
-prev_title: "Req 1a — Field Injuries and Conditions"
+prev_title: "Field Injuries and Conditions"
 next: "/merit-badges/search-and-rescue/guide/req1c/"
-next_title: "Req 1c — What Goes in an SAR Pack"
+next_title: "What Goes in an SAR Pack"
 ---
 
 {{< drg/requirement number="1b" >}}

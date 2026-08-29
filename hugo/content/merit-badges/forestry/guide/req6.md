@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Choose a Hazard Tree Activity"
+title: "Choose a Hazard Tree Activity"
 layout: guide
-group_title: "Managing Forests"
+group_title: "4. Managing Forests"
 req_number: "6"
 prev: "/merit-badges/forestry/guide/req5c/"
-prev_title: "Req 5c — Fire Prevention Campaign"
+prev_title: "Fire Prevention Campaign"
 next: "/merit-badges/forestry/guide/req6a/"
-next_title: "Req 6a — Hazard Tree Inventory"
+next_title: "Hazard Tree Inventory"
 ---
 
 {{< drg/requirement number="6" >}}

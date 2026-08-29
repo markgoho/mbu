@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose Your Industry Experience"
+title: "Choose Your Industry Experience"
 layout: "guide"
-group_title: "Industry Experiences"
+group_title: "7. Industry Experiences"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/pulp-and-paper/guide/req6/"
-prev_title: "Req 6 — Paper Products Around You"
+prev_title: "Paper Products Around You"
 next: "/merit-badges/pulp-and-paper/guide/req7a/"
-next_title: "Req 7a — Inside a Pulp Mill"
+next_title: "Inside a Pulp Mill"
 ---
 
 {{< drg/requirement number="7" >}}

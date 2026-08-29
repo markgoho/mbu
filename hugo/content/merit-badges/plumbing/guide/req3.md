@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Essential Plumbing Tools"
+title: "Essential Plumbing Tools"
 layout: "guide"
-group_title: "Tools of the Trade"
+group_title: "3. Tools of the Trade"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/plumbing/guide/req2/"
-prev_title: "Req 2 — Home Water Systems"
+prev_title: "Home Water Systems"
 next: "/merit-badges/plumbing/guide/req4/"
-next_title: "Req 4 — Plumbing Parts and Terms"
+next_title: "Plumbing Parts and Terms"
 ---
 
 {{< drg/requirement number="3" >}}

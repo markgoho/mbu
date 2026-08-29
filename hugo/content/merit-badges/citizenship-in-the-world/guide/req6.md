@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — How Nations Connect"
+title: "How Nations Connect"
 layout: guide
-group_title: "Diplomacy & Foreign Relations"
+group_title: "6. Diplomacy & Foreign Relations"
 req_number: "6"
 prev: "/merit-badges/citizenship-in-the-world/guide/req5/"
-prev_title: "Req 5 — Types of Government"
+prev_title: "Types of Government"
 next: "/merit-badges/citizenship-in-the-world/guide/req7/"
-next_title: "Req 7 — World Exploration Activities"
+next_title: "World Exploration Activities"
 ---
 
 {{< drg/requirement number="6a" >}}

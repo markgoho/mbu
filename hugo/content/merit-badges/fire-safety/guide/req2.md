@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Fire Extinguishers"
+title: "Fire Extinguishers"
 layout: guide
-group_title: "Fire Extinguishers"
+group_title: "2. Fire Extinguishers"
 req_number: "2"
 prev: "/merit-badges/fire-safety/guide/req1/"
-prev_title: "Req 1 — Fire Science & Hazards"
+prev_title: "Fire Science & Hazards"
 next: "/merit-badges/fire-safety/guide/req3a/"
-next_title: "Req 3a — Stop, Drop, Roll, Cool, Call"
+next_title: "Stop, Drop, Roll, Cool, Call"
 ---
 
  {{< drg/requirement number="2" >}}

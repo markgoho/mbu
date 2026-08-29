@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Room Wiring Diagram"
+title: "Room Wiring Diagram"
 layout: guide
-group_title: "Circuits at Home"
+group_title: "6. Circuits at Home"
 req_number: "7"
 prev: "/merit-badges/electricity/guide/req6/"
-prev_title: "Req 6 — Overloads, Fuses, and Breakers"
+prev_title: "Overloads, Fuses, and Breakers"
 next: "/merit-badges/electricity/guide/req8/"
-next_title: "Req 8 — Reading Your Electric Bill"
+next_title: "Reading Your Electric Bill"
 ---
 
 {{< drg/requirement number="7" >}}

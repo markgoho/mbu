@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Swimming"
+title: "Swimming"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5d"
 prev: "/merit-badges/athletics/guide/req5-jumping/"
-prev_title: "Req 5c — Long Jump or High Jump"
+prev_title: "Long Jump or High Jump"
 next: "/merit-badges/athletics/guide/req5-pull-ups-push-ups/"
-next_title: "Req 5e — Pull-Ups & Push-Ups"
+next_title: "Pull-Ups & Push-Ups"
 ---
 
 {{< drg/requirement number="5" option="Option D—Swimming" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7c5 — Riding a Lift"
+title: "Riding a Lift"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c5"
 req_path: "7.c.5"
 prev: "/merit-badges/snow-sports/guide/req7c4/"
-prev_title: "Req 7c4 — Types of Snowboards"
+prev_title: "Types of Snowboards"
 next: "/merit-badges/snow-sports/guide/req7c6/"
-next_title: "Req 7c6 — Waxing a Snowboard"
+next_title: "Waxing a Snowboard"
 ---
 
 {{< drg/requirement number="7c5" >}}

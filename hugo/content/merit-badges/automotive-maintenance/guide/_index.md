@@ -4,106 +4,106 @@ layout: guide
 badge_name: "Automotive Maintenance"
 group_title: "Getting Started"
 next: "/merit-badges/automotive-maintenance/guide/req1a/"
-next_title: "Req 1a — Shop Safety Hazards"
+next_title: "Shop Safety Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/automotive-maintenance/guide/"
-  - group_title: "Safety & Registration"
+  - group_title: "1. Safety & Registration"
     items:
-      - title: "Req 1a — Shop Safety Hazards"
+      - title: "a Shop Safety Hazards"
         url: "/merit-badges/automotive-maintenance/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Safety Equipment & Clothing"
+      - title: "b Safety Equipment & Clothing"
         url: "/merit-badges/automotive-maintenance/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Vehicle Power Types"
+      - title: "c Vehicle Power Types"
         url: "/merit-badges/automotive-maintenance/guide/req1c/"
         is_sub: true
-      - title: "Req 1e — Maintenance Schedules"
+      - title: "e Maintenance Schedules"
         url: "/merit-badges/automotive-maintenance/guide/req1e/"
         is_sub: true
-      - title: "Req 1g — Inspections & Registration"
+      - title: "g Inspections & Registration"
         url: "/merit-badges/automotive-maintenance/guide/req1g/"
         is_sub: true
-  - group_title: "General Maintenance"
+  - group_title: "2. General Maintenance"
     items:
-      - title: "Req 2a — Checking Fluids"
+      - title: "a Checking Fluids"
         url: "/merit-badges/automotive-maintenance/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Fuses, Belts & Hoses"
+      - title: "b Fuses, Belts & Hoses"
         url: "/merit-badges/automotive-maintenance/guide/req2b/"
         is_sub: true
-      - title: "Req 2d — Lights & Air Filters"
+      - title: "d Lights & Air Filters"
         url: "/merit-badges/automotive-maintenance/guide/req2d/"
         is_sub: true
-  - group_title: "Dashboard & Gauges"
+  - group_title: "3. Dashboard & Gauges"
     items:
-      - title: "Req 3 — Dashboard & Driver Info"
+      - title: "3. Dashboard & Driver Info"
         url: "/merit-badges/automotive-maintenance/guide/req3/"
         is_sub: false
-  - group_title: "Tires"
+  - group_title: "4. Tires"
     items:
-      - title: "Req 4a — Tire Specs & Pressure"
+      - title: "a Tire Specs & Pressure"
         url: "/merit-badges/automotive-maintenance/guide/req4a/"
         is_sub: true
-      - title: "Req 4c — Alignment, Wear & Disposal"
+      - title: "c Alignment, Wear & Disposal"
         url: "/merit-badges/automotive-maintenance/guide/req4c/"
         is_sub: true
-  - group_title: "Engine & Oil"
+  - group_title: "5. Engine & Oil"
     items:
-      - title: "Req 5a — How Engines Work"
+      - title: "a How Engines Work"
         url: "/merit-badges/automotive-maintenance/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Engine Oil"
+      - title: "b Engine Oil"
         url: "/merit-badges/automotive-maintenance/guide/req5b/"
         is_sub: true
-  - group_title: "Cooling System"
+  - group_title: "6. Cooling System"
     items:
-      - title: "Req 6 — Coolant & Cooling"
+      - title: "6. Coolant & Cooling"
         url: "/merit-badges/automotive-maintenance/guide/req6/"
         is_sub: false
-  - group_title: "Fuel System"
+  - group_title: "7. Fuel System"
     items:
-      - title: "Req 7 — Air, Fuel & Injection"
+      - title: "7. Air, Fuel & Injection"
         url: "/merit-badges/automotive-maintenance/guide/req7/"
         is_sub: false
-  - group_title: "Ignition & Electrical"
+  - group_title: "8. Ignition & Electrical"
     items:
-      - title: "Req 8a — Electrical System Diagrams"
+      - title: "a Electrical System Diagrams"
         url: "/merit-badges/automotive-maintenance/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Firing Order & Spark Gap"
+      - title: "b Firing Order & Spark Gap"
         url: "/merit-badges/automotive-maintenance/guide/req8b/"
         is_sub: true
-      - title: "Req 8d — Jump-Starting a Battery"
+      - title: "d Jump-Starting a Battery"
         url: "/merit-badges/automotive-maintenance/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — Electric Vehicles"
+      - title: "e Electric Vehicles"
         url: "/merit-badges/automotive-maintenance/guide/req8e/"
         is_sub: true
-  - group_title: "Drive Train"
+  - group_title: "9. Drive Train"
     items:
-      - title: "Req 9a — Drive Train & Transmissions"
+      - title: "a Drive Train & Transmissions"
         url: "/merit-badges/automotive-maintenance/guide/req9a/"
         is_sub: true
-      - title: "Req 9c — Fluids & Drive Configurations"
+      - title: "c Fluids & Drive Configurations"
         url: "/merit-badges/automotive-maintenance/guide/req9c/"
         is_sub: true
-  - group_title: "Brake System"
+  - group_title: "10. Brake System"
     items:
-      - title: "Req 10 — Brakes"
+      - title: "10. Brakes"
         url: "/merit-badges/automotive-maintenance/guide/req10/"
         is_sub: false
-  - group_title: "Hands-On Skills"
+  - group_title: "11. Hands-On Skills"
     items:
-      - title: "Req 11 — Choose Two Projects"
+      - title: "11. Choose Two Projects"
         url: "/merit-badges/automotive-maintenance/guide/req11/"
         is_sub: false
-  - group_title: "Automotive Careers"
+  - group_title: "12. Automotive Careers"
     items:
-      - title: "Req 12 — Career Exploration"
+      - title: "12. Career Exploration"
         url: "/merit-badges/automotive-maintenance/guide/req12/"
         is_sub: false
   - group_title: "Beyond the Badge"

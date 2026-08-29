@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — The 10, the 18, and LCES"
+title: "The 10, the 18, and LCES"
 layout: "guide"
-group_title: "Firefighter Safety"
+group_title: "6. Firefighter Safety"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/wildland-fire-management/guide/req6a/"
-prev_title: "Req 6a — Personal Protective Equipment"
+prev_title: "Personal Protective Equipment"
 next: "/merit-badges/wildland-fire-management/guide/req7a/"
-next_title: "Req 7a — Suppression Tactics"
+next_title: "Suppression Tactics"
 ---
 
 {{< drg/requirement number="6b" >}}

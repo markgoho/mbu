@@ -1,12 +1,12 @@
 ---
-title: "Req 4a–4b — Physical and Digital Sources"
+title: "Physical and Digital Sources"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "4a"
 prev: "/merit-badges/genealogy/guide/req3/"
-prev_title: "Req 3 — Interview a Relative"
+prev_title: "Interview a Relative"
 next: "/merit-badges/genealogy/guide/req4cd/"
-next_title: "Req 4c–4d — Finding and Evaluating a Document"
+next_title: "Finding and Evaluating a Document"
 ---
 
 {{< drg/requirement number="4" >}}

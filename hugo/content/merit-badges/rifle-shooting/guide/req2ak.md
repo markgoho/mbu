@@ -1,13 +1,13 @@
 ---
-title: "Req 2ak — Scored Grouping Exercise"
+title: "Scored Grouping Exercise"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2ak"
 req_path: "2.a.k"
 prev: "/merit-badges/rifle-shooting/guide/req2aj/"
-prev_title: "Req 2aj — First Grouping Exercise: Zeroing"
+prev_title: "First Grouping Exercise: Zeroing"
 next: "/merit-badges/rifle-shooting/guide/req2b/"
-next_title: "Req 2b — Option B Overview"
+next_title: "Option B Overview"
 ---
 
 {{< drg/requirement number="2ak" >}}

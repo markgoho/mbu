@@ -1,13 +1,13 @@
 ---
-title: "Req 7a4 — Makers and Magazines"
+title: "Makers and Magazines"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a4"
 req_path: "7.a.4"
 prev: "/merit-badges/railroading/guide/req7a3/"
-prev_title: "Req 7a3 — Scales and Gauges"
+prev_title: "Scales and Gauges"
 next: "/merit-badges/railroading/guide/req7a5/"
-next_title: "Req 7a5 — Structures and Scenery"
+next_title: "Structures and Scenery"
 ---
 
 {{< drg/requirement number="7a4" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Handling, Cleaning & Storage"
+title: "Handling, Cleaning & Storage"
 layout: guide
-group_title: "Preserving & Displaying"
+group_title: "3. Preserving & Displaying"
 req_number: "3a"
 prev: "/merit-badges/collections/guide/req2/"
-prev_title: "Req 2 — Growth & Development"
+prev_title: "Growth & Development"
 next: "/merit-badges/collections/guide/req3b/"
-next_title: "Req 3b — Displaying Your Collection"
+next_title: "Displaying Your Collection"
 ---
 
 {{< drg/requirement number="3a" >}}

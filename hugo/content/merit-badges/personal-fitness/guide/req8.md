@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Future Career or Lifestyle"
+title: "Future Career or Lifestyle"
 layout: guide
-group_title: "Fitness Careers & Lifestyle"
+group_title: "8. Fitness Careers & Lifestyle"
 req_number: "8"
 prev: "/merit-badges/personal-fitness/guide/req7/"
-prev_title: "Req 7 — Execute & Track"
+prev_title: "Execute & Track"
 next: "/merit-badges/personal-fitness/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,10 +1,10 @@
 ---
-title: "Req 10b — Hobbies and Healthy Lifestyles"
+title: "Hobbies and Healthy Lifestyles"
 layout: guide
-group_title: "Paths Beyond the Badge"
+group_title: "10. Future Paths"
 req_number: "10b"
 prev: "/merit-badges/dog-care/guide/req10a/"
-prev_title: "Req 10a — Dog-Related Careers"
+prev_title: "Careers Working With Dogs"
 next: "/merit-badges/dog-care/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,10 +1,10 @@
 ---
-title: "Req 10 — Career Planning"
+title: "Career Planning"
 layout: guide
-group_title: "Career Exploration"
+group_title: "10. Career Exploration"
 req_number: "10"
 prev: "/merit-badges/personal-management/guide/req9/"
-prev_title: "Req 9 — Project Planning"
+prev_title: "Project Planning"
 next: "/merit-badges/personal-management/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

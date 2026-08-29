@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Choosing Your Five Skills"
+title: "Choosing Your Five Skills"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3"
 prev: "/merit-badges/leatherwork/guide/req2/"
-prev_title: "Req 2 — Hides, Leather Types, and Best Uses"
+prev_title: "Hides, Leather Types, and Best Uses"
 next: "/merit-badges/leatherwork/guide/req3a/"
-next_title: "Req 3a — Patterns and Transfer"
+next_title: "Patterns and Transfer"
 ---
 
 {{< drg/requirement number="3" >}}

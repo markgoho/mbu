@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Foresters & Forestry Careers"
+title: "Foresters & Forestry Careers"
 layout: guide
-group_title: "Threats, Fire & Careers"
+group_title: "7. Threats, Fire & Careers"
 req_number: "8"
 prev: "/merit-badges/forestry/guide/req7/"
-prev_title: "Req 7 — Forest Threats & Wildfire Response"
+prev_title: "Forest Threats & Wildfire Response"
 next: "/merit-badges/forestry/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

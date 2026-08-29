@@ -1,12 +1,12 @@
 ---
-title: "Req 8c — Hide and Maintain a Cache"
+title: "Hide and Maintain a Cache"
 layout: guide
-group_title: "Choose Your Adventure"
+group_title: "8. Choose Your Adventure"
 req_number: "8c"
 prev: "/merit-badges/geocaching/guide/req8b/"
-prev_title: "Req 8b — Travel Bug Mission"
+prev_title: "Travel Bug Mission"
 next: "/merit-badges/geocaching/guide/req8d/"
-next_title: "Req 8d — Cache In Trash Out Leadership"
+next_title: "Cache In Trash Out Leadership"
 ---
 
 {{< drg/requirement number="8c" >}}

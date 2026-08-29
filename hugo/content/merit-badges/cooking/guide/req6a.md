@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Trail Menu Planning"
+title: "Trail Menu Planning"
 layout: guide
-group_title: "Trail & Backpacking Meals"
+group_title: "6. Trail & Backpacking Meals"
 req_number: "6a"
 prev: "/merit-badges/cooking/guide/req5h/"
-prev_title: "Req 5h — Leave No Trace"
+prev_title: "Leave No Trace"
 next: "/merit-badges/cooking/guide/req6b/"
-next_title: "Req 6b — Trail Shopping List"
+next_title: "Trail Shopping List"
 ---
 
 {{< drg/requirement number="6a" >}}

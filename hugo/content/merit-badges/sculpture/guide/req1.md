@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Studio Safety"
+title: "Studio Safety"
 layout: "guide"
-group_title: "Studio Safety"
+group_title: "1. Studio Safety"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/sculpture/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/sculpture/guide/req2/"
-next_title: "Req 2 — Choose Your Projects"
+next_title: "Choose Your Projects"
 ---
 
 {{< drg/requirement number="1" >}}

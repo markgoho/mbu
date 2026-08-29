@@ -1,13 +1,13 @@
 ---
-title: "Req 5b3 — Sawing, Sinking & Soldering"
+title: "Sawing, Sinking & Soldering"
 layout: "guide"
-group_title: "Silversmith"
+group_title: "5. Silversmith"
 req_number: "5b3"
 req_path: "5.b.3"
 prev: "/merit-badges/metalwork/guide/req5b2/"
-prev_title: "Req 5b2 — Sketching Your Silver Objects"
+prev_title: "Sketching Your Silver Objects"
 next: "/merit-badges/metalwork/guide/req5c/"
-next_title: "Req 5c — Founder"
+next_title: "Founder"
 ---
 
 {{< drg/requirement number="5b3" >}}

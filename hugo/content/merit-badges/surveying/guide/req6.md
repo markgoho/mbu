@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Drones and Laser Scanning"
+title: "Drones and Laser Scanning"
 layout: "guide"
-group_title: "Modern Tools"
+group_title: "6. Modern Tools"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/surveying/guide/req5/"
-prev_title: "Req 5 — Reading a Property Deed"
+prev_title: "Reading a Property Deed"
 next: "/merit-badges/surveying/guide/req7/"
-next_title: "Req 7 — Why GPS Matters in Surveying"
+next_title: "Why GPS Matters in Surveying"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — NIMS and ICS"
+title: "NIMS and ICS"
 layout: guide
-group_title: "Emergency Management Systems"
+group_title: "7. Emergency Management Systems"
 req_number: "7"
 prev: "/merit-badges/emergency-preparedness/guide/req6/"
-prev_title: "Requirement 6 — Moving an Injured Person"
+prev_title: "Moving an Injured Person"
 next: "/merit-badges/emergency-preparedness/guide/req8/"
-next_title: "Requirement 8 — Emergency Service"
+next_title: "Emergency Service"
 ---
 
 {{< drg/requirement number="7" >}}

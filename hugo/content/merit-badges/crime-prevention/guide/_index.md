@@ -4,67 +4,67 @@ layout: guide
 badge_name: "Crime Prevention"
 group_title: "Getting Started"
 next: "/merit-badges/crime-prevention/guide/req1/"
-next_title: "Req 1 — Laws and Society"
+next_title: "Laws and Society"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/crime-prevention/guide/"
-  - group_title: "Laws & Society"
+  - group_title: "1. Laws & Society"
     items:
-      - title: "Req 1 — Laws and Society"
+      - title: "1. Laws and Society"
         url: "/merit-badges/crime-prevention/guide/req1/"
-  - group_title: "Crime Prevention Partners"
+  - group_title: "2. Crime Prevention Partners"
     items:
-      - title: "Req 2 — Groups Working to Prevent Crime"
+      - title: "2. Groups Working to Prevent Crime"
         url: "/merit-badges/crime-prevention/guide/req2/"
-  - group_title: "Crime in Your Community"
+  - group_title: "3. Crime in Your Community"
     items:
-      - title: "Req 3a — Researching Crimes"
+      - title: "a Researching Crimes"
         url: "/merit-badges/crime-prevention/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Analyzing Your Research"
+      - title: "b Analyzing Your Research"
         url: "/merit-badges/crime-prevention/guide/req3b/"
         is_sub: true
-  - group_title: "Home & Neighborhood Safety"
+  - group_title: "4. Home & Neighborhood Safety"
     items:
-      - title: "Req 4a — How Communities Prevent Crime"
+      - title: "a How Communities Prevent Crime"
         url: "/merit-badges/crime-prevention/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Conducting a Security Survey"
+      - title: "b Conducting a Security Survey"
         url: "/merit-badges/crime-prevention/guide/req4b/"
         is_sub: true
       - title: "Security Survey Worksheet"
         url: "/merit-badges/crime-prevention/guide/security-survey-worksheet/"
         is_sub: true
-      - title: "Req 4c — Teaching Crime Prevention"
+      - title: "c Teaching Crime Prevention"
         url: "/merit-badges/crime-prevention/guide/req4c/"
         is_sub: true
-  - group_title: "Retail Crime Prevention"
+  - group_title: "5. Retail Crime Prevention"
     items:
-      - title: "Req 5 — Retail Crime Prevention"
+      - title: "5. Retail Crime Prevention"
         url: "/merit-badges/crime-prevention/guide/req5/"
-  - group_title: "Reporting Crime"
+  - group_title: "6. Reporting Crime"
     items:
-      - title: "Req 6 — Reporting Crime"
+      - title: "6. Reporting Crime"
         url: "/merit-badges/crime-prevention/guide/req6/"
-  - group_title: "Peers & Crime"
+  - group_title: "7. Peers & Crime"
     items:
-      - title: "Req 7 — Peers and Crime"
+      - title: "7. Peers and Crime"
         url: "/merit-badges/crime-prevention/guide/req7/"
-  - group_title: "Substance Use & Crime"
+  - group_title: "8. Substance Use & Crime"
     items:
-      - title: "Req 8 — Substance Use and Crime"
+      - title: "8. Substance Use and Crime"
         url: "/merit-badges/crime-prevention/guide/req8/"
-  - group_title: "Online Crime & Safety"
+  - group_title: "9. Online Crime & Safety"
     items:
-      - title: "Req 9 — Online Crime and You"
+      - title: "9. Online Crime and You"
         url: "/merit-badges/crime-prevention/guide/req9/"
-  - group_title: "Career Exploration"
+  - group_title: "10. Career Exploration"
     items:
-      - title: "Req 10 — Interviewing a Professional"
+      - title: "10. Interviewing a Professional"
         url: "/merit-badges/crime-prevention/guide/req10/"
-      - title: "Req 11 — Crime Prevention Careers"
+      - title: "11. Crime Prevention Careers"
         url: "/merit-badges/crime-prevention/guide/req11/"
   - group_title: "Beyond the Badge"
     items:

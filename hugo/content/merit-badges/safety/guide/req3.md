@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Crime Awareness and Home Security"
+title: "Crime Awareness and Home Security"
 layout: "guide"
-group_title: "Crime Prevention"
+group_title: "3. Crime Prevention"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/safety/guide/req2/"
-prev_title: "Req 2 — Home Safety Plans"
+prev_title: "Home Safety Plans"
 next: "/merit-badges/safety/guide/req4/"
-next_title: "Req 4 — Public Place Emergencies"
+next_title: "Public Place Emergencies"
 ---
 
 {{< drg/requirement number="3" >}}

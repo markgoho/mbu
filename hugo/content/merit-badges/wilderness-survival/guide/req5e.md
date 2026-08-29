@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Building & Testing a Shelter"
+title: "Building & Testing a Shelter"
 layout: guide
-group_title: "Shelter & Exposure"
+group_title: "5. Shelter & Exposure"
 req_number: "5e"
 prev: "/merit-badges/wilderness-survival/guide/req5d/"
-prev_title: "Req 5d — Survival Shelters"
+prev_title: "Building Survival Shelters"
 next: "/merit-badges/wilderness-survival/guide/req6/"
-next_title: "Req 6 — Fire Building"
+next_title: "Fire Building"
 ---
 
 {{< drg/requirement number="5e" >}}

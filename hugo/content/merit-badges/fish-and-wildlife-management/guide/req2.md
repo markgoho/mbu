@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Major Threats to Fish and Wildlife"
+title: "Major Threats to Fish and Wildlife"
 layout: guide
-group_title: "Conservation Fundamentals"
+group_title: "1. Conservation Fundamentals"
 req_number: "2"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req1/"
-prev_title: "Req 1 — What Is Fish and Wildlife Management?"
+prev_title: "What Is Fish and Wildlife Management?"
 next: "/merit-badges/fish-and-wildlife-management/guide/req3/"
-next_title: "Req 3 — How Everyone Can Help"
+next_title: "How Everyone Can Help"
 ---
 
 {{< drg/requirement number="2" >}}

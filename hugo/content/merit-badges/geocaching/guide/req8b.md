@@ -1,12 +1,12 @@
 ---
-title: "Req 8b — Travel Bug Mission"
+title: "Travel Bug Mission"
 layout: guide
-group_title: "Choose Your Adventure"
+group_title: "8. Choose Your Adventure"
 req_number: "8b"
 prev: "/merit-badges/geocaching/guide/req8a/"
-prev_title: "Req 8a — Cache to Eagle Service Stops"
+prev_title: "Cache to Eagle Service Stops"
 next: "/merit-badges/geocaching/guide/req8c/"
-next_title: "Req 8c — Hide and Maintain a Cache"
+next_title: "Hide and Maintain a Cache"
 ---
 
 {{< drg/requirement number="8b" >}}

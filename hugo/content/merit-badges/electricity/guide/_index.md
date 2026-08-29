@@ -4,74 +4,74 @@ layout: guide
 badge_name: "Electricity"
 group_title: "Getting Started"
 next: "/merit-badges/electricity/guide/req1/"
-next_title: "Req 1 — Electrical Emergencies"
+next_title: "Electrical Emergencies"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/electricity/guide/"
         is_sub: false
-  - group_title: "Electrical Safety"
+  - group_title: "1. Electrical Safety"
     items:
-      - title: "Req 1 — Electrical Emergencies"
+      - title: "1. Electrical Emergencies"
         url: "/merit-badges/electricity/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Home Safety Inspection"
+      - title: "2. Home Safety Inspection"
         url: "/merit-badges/electricity/guide/req2/"
         is_sub: false
-  - group_title: "Magnetism & Current"
+  - group_title: "3. Magnetism & Current"
     items:
-      - title: "Req 3 — Build an Electromagnet"
+      - title: "3. Build an Electromagnet"
         url: "/merit-badges/electricity/guide/req3/"
         is_sub: false
-      - title: "Req 4 — AC, DC, and Power Generation"
+      - title: "4. AC, DC, and Power Generation"
         url: "/merit-badges/electricity/guide/req4/"
         is_sub: false
-      - title: "Req 5 — How an Electric Bell Works"
+      - title: "5. How an Electric Bell Works"
         url: "/merit-badges/electricity/guide/req5/"
         is_sub: false
-  - group_title: "Circuits at Home"
+  - group_title: "6. Circuits at Home"
     items:
-      - title: "Req 6 — Overloads, Fuses, and Breakers"
+      - title: "6. Overloads, Fuses, and Breakers"
         url: "/merit-badges/electricity/guide/req6/"
         is_sub: false
-      - title: "Req 7 — Room Wiring Diagram"
+      - title: "7. Room Wiring Diagram"
         url: "/merit-badges/electricity/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Reading Your Electric Bill"
+      - title: "8. Reading Your Electric Bill"
         url: "/merit-badges/electricity/guide/req8/"
         is_sub: false
-  - group_title: "Electrical Vocabulary"
+  - group_title: "9. Electrical Vocabulary"
     items:
-      - title: "Req 9 — Essential Electrical Terms"
+      - title: "9. Essential Electrical Terms"
         url: "/merit-badges/electricity/guide/req9/"
         is_sub: false
-  - group_title: "Hands-On Projects"
+  - group_title: "10. Hands-On Projects"
     items:
-      - title: "Req 10 — Choose Your Circuit Projects"
+      - title: "10. Choose Your Circuit Projects"
         url: "/merit-badges/electricity/guide/req10/"
         is_sub: false
-      - title: "Req 10a — Battery, Switch, and Load"
+      - title: "a Battery, Switch, and Load"
         url: "/merit-badges/electricity/guide/req10a/"
         is_sub: true
-      - title: "Req 10b — Simple Electric Motor"
+      - title: "b Simple Electric Motor"
         url: "/merit-badges/electricity/guide/req10b/"
         is_sub: true
-      - title: "Req 10c — Build a Rheostat"
+      - title: "c Build a Rheostat"
         url: "/merit-badges/electricity/guide/req10c/"
         is_sub: true
-      - title: "Req 10d — Single-Pole, Double-Throw Switch"
+      - title: "d Single-Pole, Double-Throw Switch"
         url: "/merit-badges/electricity/guide/req10d/"
         is_sub: true
-      - title: "Req 10e — How a 3-Way Switch Works"
+      - title: "e How a 3-Way Switch Works"
         url: "/merit-badges/electricity/guide/req10e/"
         is_sub: true
-      - title: "Req 10f — Series vs. Parallel Circuits"
+      - title: "f Series vs. Parallel Circuits"
         url: "/merit-badges/electricity/guide/req10f/"
         is_sub: true
-  - group_title: "Careers & Future Paths"
+  - group_title: "11. Careers & Future Paths"
     items:
-      - title: "Req 11 — Electricity Careers"
+      - title: "11. Electricity Careers"
         url: "/merit-badges/electricity/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Pick Three Subject Types"
+title: "Pick Three Subject Types"
 layout: "guide"
-group_title: "Field Practice: Requirement 5"
+group_title: "5. Field Practice: Requirement 5"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/photography/guide/req4d/"
-prev_title: "Req 4d — Change the Composition"
+prev_title: "Change the Composition"
 next: "/merit-badges/photography/guide/req5a/"
-next_title: "Req 5a — Make a Strong Close-Up"
+next_title: "Make a Strong Close-Up"
 ---
 
 {{< drg/requirement number="5" >}}

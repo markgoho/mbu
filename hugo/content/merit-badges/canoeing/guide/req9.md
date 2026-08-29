@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Tandem Maneuvers"
+title: "Tandem Maneuvers"
 layout: guide
-group_title: "Tandem Paddling Strokes"
+group_title: "9. Tandem Paddling Strokes"
 req_number: "9"
 prev: "/merit-badges/canoeing/guide/req8f/"
-prev_title: "Req 8f — Throw Bag Rescue"
+prev_title: "Throw Bag Rescue"
 next: "/merit-badges/canoeing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

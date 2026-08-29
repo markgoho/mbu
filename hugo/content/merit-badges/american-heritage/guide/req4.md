@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Local History & Landmarks"
+title: "Local History & Landmarks"
 layout: guide
-group_title: "History in Your Backyard"
+group_title: "4. History in Your Backyard"
 req_number: "4"
 prev: "/merit-badges/american-heritage/guide/req3c/"
-prev_title: "Req 3c — Your Family's Story"
+prev_title: "Your Family"
 next: "/merit-badges/american-heritage/guide/req5/"
-next_title: "Req 5 — Heritage Through Media"
+next_title: "Heritage Through Media"
 ---
 
 {{< drg/requirement number="4" >}}

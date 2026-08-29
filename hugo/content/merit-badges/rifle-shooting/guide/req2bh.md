@@ -1,13 +1,13 @@
 ---
-title: "Req 2bh — Selecting an Air Rifle"
+title: "Selecting an Air Rifle"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2bh"
 req_path: "2.b.h"
 prev: "/merit-badges/rifle-shooting/guide/req2bg/"
-prev_title: "Req 2bg — Clean an Air Rifle Properly"
+prev_title: "Clean an Air Rifle Properly"
 next: "/merit-badges/rifle-shooting/guide/req2bi/"
-next_title: "Req 2bi — First Grouping Exercise"
+next_title: "First Grouping Exercise"
 ---
 
 {{< drg/requirement number="2bh" >}}

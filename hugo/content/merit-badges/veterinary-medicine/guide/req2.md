@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Public Service and Specialized Careers"
+title: "Public Service and Specialized Careers"
 layout: "guide"
-group_title: "Veterinary Practice Types"
+group_title: "1. Veterinary Practice Types"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/veterinary-medicine/guide/req1/"
-prev_title: "Req 1 — Clinical Practice Settings"
+prev_title: "Clinical Practice Settings"
 next: "/merit-badges/veterinary-medicine/guide/req3/"
-next_title: "Req 3 — Becoming a Veterinarian"
+next_title: "Becoming a Veterinarian"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Core Design Terms"
+title: "Core Design Terms"
 layout: guide
-group_title: "Thinking Like a Designer"
+group_title: "1. Thinking Like a Designer"
 req_number: "2"
 prev: "/merit-badges/game-design/guide/req1b/"
-prev_title: "Req 1b — Why People Play"
+prev_title: "Why People Play"
 next: "/merit-badges/game-design/guide/req3/"
-next_title: "Req 3 — Intellectual Property"
+next_title: "Intellectual Property"
 ---
 
 {{< drg/requirement number="2" >}}

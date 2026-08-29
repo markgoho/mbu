@@ -1,12 +1,12 @@
 ---
-title: "Req 8d — Cook Your Meals"
+title: "Cook Your Meals"
 layout: guide
-group_title: "Camp Cooking"
+group_title: "8. Camp Cooking"
 req_number: "8d"
 prev: "/merit-badges/camping/guide/req8c/"
-prev_title: "Req 8c — Menu Planning"
+prev_title: "Menu Planning"
 next: "/merit-badges/camping/guide/req9a/"
-next_title: "Req 9a — 20 Nights of Camping"
+next_title: "20 Nights of Camping"
 ---
 
 {{< drg/requirement number="8d" >}}

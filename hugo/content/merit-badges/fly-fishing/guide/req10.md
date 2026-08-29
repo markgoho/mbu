@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Catch and Identify a Fish"
+title: "Catch and Identify a Fish"
 layout: guide
-group_title: "On-the-Water Skills"
+group_title: "10. On-the-Water Skills"
 req_number: "10"
 prev: "/merit-badges/fly-fishing/guide/req9/"
-prev_title: "Req 9 — Sportsmanship for Anglers"
+prev_title: "Sportsmanship for Anglers"
 next: "/merit-badges/fly-fishing/guide/req11/"
-next_title: "Req 11 — Clean and Cook Your Catch"
+next_title: "Clean and Cook Your Catch"
 ---
 
 {{< drg/requirement number="10" >}}

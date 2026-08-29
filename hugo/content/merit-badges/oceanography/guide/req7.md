@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose an Ocean Investigation"
+title: "Choose an Ocean Investigation"
 layout: "guide"
-group_title: "Hands-On Investigation"
+group_title: "7. Hands-On Investigation"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/oceanography/guide/req6/"
-prev_title: "Req 6 — Life in Seawater"
+prev_title: "Life in Seawater"
 next: "/merit-badges/oceanography/guide/req7a/"
-next_title: "Req 7a — Catch & Identify Plankton"
+next_title: "Catch & Identify Plankton"
 ---
 
 {{< drg/requirement number="7" >}}

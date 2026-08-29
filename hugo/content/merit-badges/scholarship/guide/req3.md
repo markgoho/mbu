@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Character, Leadership, and Service"
+title: "Character, Leadership, and Service"
 layout: "guide"
-group_title: "Character Counts"
+group_title: "3. Character Counts"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/scholarship/guide/req2d/"
-prev_title: "Req 2d — Compare Research Methods"
+prev_title: "Compare Research Methods"
 next: "/merit-badges/scholarship/guide/req4/"
-next_title: "Req 4 — Teamwork Through Participation"
+next_title: "Teamwork Through Participation"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4g — Food Chains to a Carnivore"
+title: "Food Chains to a Carnivore"
 layout: "guide"
-group_title: "Mammal Investigation Options"
+group_title: "4. Mammal Investigation Options"
 req_number: "4g"
 req_path: "4.g"
 prev: "/merit-badges/mammal-study/guide/req4f/"
-prev_title: "Req 4f — Mammal Book Report"
+prev_title: "Mammal Book Report"
 next: "/merit-badges/mammal-study/guide/req5/"
-next_title: "Req 5 — Project for Mammal Numbers"
+next_title: "Project for Mammal Numbers"
 ---
 
 {{< drg/requirement number="4g" >}}

@@ -5,72 +5,72 @@ badge_name: "Emergency Preparedness"
 eagle_required: true
 group_title: "Getting Started"
 next: "/merit-badges/emergency-preparedness/guide/req1a/"
-next_title: "Requirement 1a — Five Aspects of Emergency Preparedness"
+next_title: "Five Aspects of Emergency Preparedness"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/emergency-preparedness/guide/"
-  - group_title: "Emergency Situations"
+  - group_title: "1. Emergency Situations"
     items:
-      - title: "Req 1a — Five Aspects of Emergency Preparedness"
+      - title: "a Five Aspects of Emergency Preparedness"
         url: "/merit-badges/emergency-preparedness/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — 10 Emergency Scenarios"
+      - title: "b 10 Emergency Scenarios"
         url: "/merit-badges/emergency-preparedness/guide/req1b/"
         is_sub: true
-  - group_title: "Planning for Family Emergencies"
+  - group_title: "2. Planning for Family Emergencies"
     items:
-      - title: "Req 2a — Family Emergency Plans"
+      - title: "a Family Emergency Plans"
         url: "/merit-badges/emergency-preparedness/guide/req2a/"
         is_sub: true
       - title: "Family Emergency Plan"
         url: "/merit-badges/emergency-preparedness/guide/family-emergency-plan/"
         is_sub: true
-      - title: "Req 2b — Home Fire Escape Plan"
+      - title: "b Home Fire Escape Plan"
         url: "/merit-badges/emergency-preparedness/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Family Disaster Kit"
+      - title: "c Family Disaster Kit"
         url: "/merit-badges/emergency-preparedness/guide/req2c/"
         is_sub: true
-  - group_title: "Preventing Accidents & Emergencies"
+  - group_title: "3. Preventing Accidents & Emergencies"
     items:
-      - title: "Req 3 — Preventing Accidents"
+      - title: "3. Preventing Accidents"
         url: "/merit-badges/emergency-preparedness/guide/req3/"
         is_sub: false
-  - group_title: "Dangerous Situations"
+  - group_title: "4. Dangerous Situations"
     items:
-      - title: "Req 4 — Dangerous Situations"
+      - title: "4. Dangerous Situations"
         url: "/merit-badges/emergency-preparedness/guide/req4/"
         is_sub: false
-  - group_title: "Signaling for Help"
+  - group_title: "5. Signaling for Help"
     items:
-      - title: "Req 5 — Signaling for Help"
+      - title: "5. Signaling for Help"
         url: "/merit-badges/emergency-preparedness/guide/req5/"
         is_sub: false
-  - group_title: "Moving an Injured Person"
+  - group_title: "6. Moving an Injured Person"
     items:
-      - title: "Req 6 — Moving an Injured Person"
+      - title: "6. Moving an Injured Person"
         url: "/merit-badges/emergency-preparedness/guide/req6/"
         is_sub: false
-  - group_title: "Emergency Management Systems"
+  - group_title: "7. Emergency Management Systems"
     items:
-      - title: "Req 7 — NIMS and ICS"
+      - title: "7. NIMS and ICS"
         url: "/merit-badges/emergency-preparedness/guide/req7/"
         is_sub: false
-  - group_title: "Emergency Service"
+  - group_title: "8. Emergency Service"
     items:
-      - title: "Req 8 — Emergency Service"
+      - title: "8. Emergency Service"
         url: "/merit-badges/emergency-preparedness/guide/req8/"
         is_sub: false
-  - group_title: "Prerequisites"
+  - group_title: "9. Prerequisites"
     items:
-      - title: "Req 9 — First Aid Merit Badge"
+      - title: "9. First Aid Merit Badge"
         url: "/merit-badges/emergency-preparedness/guide/req9/"
         is_sub: false
-  - group_title: "Careers in Emergency Services"
+  - group_title: "10. Careers in Emergency Services"
     items:
-      - title: "Req 10 — Careers"
+      - title: "10. Careers"
         url: "/merit-badges/emergency-preparedness/guide/req10/"
         is_sub: false
   - group_title: "Beyond the Badge"

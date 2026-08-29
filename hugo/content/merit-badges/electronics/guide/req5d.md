@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Through Hole vs. Surface Mount"
+title: "Through Hole vs. Surface Mount"
 layout: guide
-group_title: "Measurement & Components"
+group_title: "5. Measurement & Components"
 req_number: "5d"
 prev: "/merit-badges/electronics/guide/req5c/"
-prev_title: "Req 5c — Resistor Color Codes"
+prev_title: "Resistor Color Codes"
 next: "/merit-badges/electronics/guide/req6/"
-next_title: "Req 6 — Career Exploration"
+next_title: "Career Exploration"
 ---
 
 {{< drg/requirement number="5d" >}}

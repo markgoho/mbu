@@ -1,13 +1,13 @@
 ---
-title: "Req 8a5d — Small Grains from Harvest to Mill"
+title: "Small Grains from Harvest to Mill"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a5d"
 req_path: "8.a.5.d"
 prev: "/merit-badges/plant-science/guide/req8a5c/"
-prev_title: "Req 8a5c — Forage Crops and Soil Health"
+prev_title: "Forage Crops"
 next: "/merit-badges/plant-science/guide/req8a5e/"
-next_title: "Req 8a5e — Soybeans and Oil Crops"
+next_title: "Oil Crops"
 ---
 
 {{< drg/requirement number="8a5d" >}}

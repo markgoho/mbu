@@ -1,13 +1,13 @@
 ---
-title: "Req 2d8 — Skateboard Maintenance"
+title: "Skateboard Maintenance"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d8"
 req_path: "2.d.8"
 prev: "/merit-badges/skating/guide/req2d7/"
-prev_title: "Req 2d7 — Build a Board"
+prev_title: "Build a Board"
 next: "/merit-badges/skating/guide/req2d9/"
-next_title: "Req 2d9 — Stance"
+next_title: "Stance"
 ---
 
 {{< drg/requirement number="2d8" >}}

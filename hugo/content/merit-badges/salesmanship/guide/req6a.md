@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Interview a Sales Professional"
+title: "Interview a Sales Professional"
 layout: "guide"
-group_title: "Learning from Professionals"
+group_title: "6. Learning from Professionals"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/salesmanship/guide/req6/"
-prev_title: "Req 6 — Choose an Interview Path"
+prev_title: "Choose an Interview Path"
 next: "/merit-badges/salesmanship/guide/req6b/"
-next_title: "Req 6b — Interview a Store Owner"
+next_title: "Interview a Store Owner"
 ---
 
 {{< drg/requirement number="6a" >}}

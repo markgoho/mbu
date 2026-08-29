@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Journalism Careers"
+title: "Journalism Careers"
 layout: guide
-group_title: "Careers in Journalism"
+group_title: "5. Careers in Journalism"
 req_number: "5"
 prev: "/merit-badges/journalism/guide/req4c/"
-prev_title: "Req 4c — Photojournalism Storytelling"
+prev_title: "Photojournalism Storytelling"
 next: "/merit-badges/journalism/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

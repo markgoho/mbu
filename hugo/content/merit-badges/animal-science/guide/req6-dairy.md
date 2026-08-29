@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Dairy Option"
+title: "Dairy Option"
 layout: guide
-group_title: "Specialty Options"
+group_title: "6. Specialty Options"
 req_number: "6"
 prev: "/merit-badges/animal-science/guide/req6-beef-cattle/"
-prev_title: "Req 6 — Beef Cattle Option"
+prev_title: "Beef Cattle Option"
 next: "/merit-badges/animal-science/guide/req6-horse/"
-next_title: "Req 6 — Horse Option"
+next_title: "Horse Option"
 ---
 
 {{< drg/requirement number="6" option="Dairy Option" >}}

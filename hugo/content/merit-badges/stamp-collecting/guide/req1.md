@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Why Stamps Matter"
+title: "Why Stamps Matter"
 layout: "guide"
-group_title: "Why Collect Stamps"
+group_title: "1. Why Collect Stamps"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/stamp-collecting/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/stamp-collecting/guide/req2/"
-next_title: "Req 2 — Types of Collections"
+next_title: "Types of Collections"
 ---
 
 {{< drg/requirement number="1" >}}

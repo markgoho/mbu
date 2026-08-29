@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Choose an Observation or Research Activity"
+title: "Choose an Observation or Research Activity"
 layout: guide
-group_title: "Wildlife Observation & Research"
+group_title: "6. Wildlife Observation & Research"
 req_number: "6"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req5d/"
-prev_title: "Req 5d — Wildlife Blind"
+prev_title: "Wildlife Blind"
 next: "/merit-badges/fish-and-wildlife-management/guide/req6a/"
-next_title: "Req 6a — Observe 25 Species"
+next_title: "Observe 25 Species"
 ---
 
 {{< drg/requirement number="6" >}}

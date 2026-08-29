@@ -1,13 +1,13 @@
 ---
-title: "Req 3a — Listen and Describe"
+title: "Listen and Describe"
 layout: "guide"
-group_title: "Choose Two Music Experiences"
+group_title: "3. Choose Two Music Experiences"
 req_number: "3a"
 req_path: "3.a"
 prev: "/merit-badges/music/guide/req3/"
-prev_title: "Req 3 — Choose Your Music Experiences"
+prev_title: "Choose Your Music Experiences"
 next: "/merit-badges/music/guide/req3b/"
-next_title: "Req 3b — Family Music Interview"
+next_title: "Family Music Interview"
 ---
 
 {{< drg/requirement number="3a" >}}

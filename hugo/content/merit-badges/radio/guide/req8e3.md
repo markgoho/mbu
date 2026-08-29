@@ -1,13 +1,13 @@
 ---
-title: "Req 8e3 — Use Radios in the Field"
+title: "Use Radios in the Field"
 layout: "guide"
-group_title: "Option E: FRS & GMRS"
+group_title: "8. Option E: FRS & GMRS"
 req_number: "8e3"
 req_path: "8.e.3"
 prev: "/merit-badges/radio/guide/req8e2/"
-prev_title: "Req 8e2 — FRS/GMRS Details"
+prev_title: "FRS/GMRS Details"
 next: "/merit-badges/radio/guide/req9/"
-next_title: "Req 9 — Choose Career or Hobby"
+next_title: "Choose Career or Hobby"
 guide_nav:
   - group_title: "Getting Started"
     items:

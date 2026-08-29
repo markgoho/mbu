@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Connecting Across Differences"
+title: "Connecting Across Differences"
 layout: guide
-group_title: "Connecting Across Differences"
+group_title: "6. Connecting Across Differences"
 req_number: "6"
 prev: "/merit-badges/citizenship-in-society/guide/req5/"
-prev_title: "Req 5 — Welcoming Environments"
+prev_title: "Welcoming Environments"
 next: "/merit-badges/citizenship-in-society/guide/req7/"
-next_title: "Req 7 — Community Impact Interview"
+next_title: "Community Impact Interview"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1c — Freight and Passenger Cars"
+title: "Freight and Passenger Cars"
 layout: "guide"
-group_title: "Choose Three Rail Foundations"
+group_title: "1. Choose Three Rail Foundations"
 req_number: "1c"
 req_path: "1.c"
 prev: "/merit-badges/railroading/guide/req1b/"
-prev_title: "Req 1b — Mapping a Railroad System"
+prev_title: "Mapping a Railroad System"
 next: "/merit-badges/railroading/guide/req1d/"
-next_title: "Req 1d — How Locomotives Make Power"
+next_title: "How Locomotives Make Power"
 ---
 
 {{< drg/requirement number="1c" >}}

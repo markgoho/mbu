@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Chemistry Careers"
+group_title: "8. Chemistry Careers"
 req_number: "8"
 prev: "/merit-badges/chemistry/guide/req7/"
-prev_title: "Req 7 — Government Agencies"
+prev_title: "Government Agencies"
 next: "/merit-badges/chemistry/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

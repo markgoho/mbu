@@ -1,12 +1,12 @@
 ---
-title: "Req 3f — Repairing Steps and Railings"
+title: "Repairing Steps and Railings"
 layout: guide
-group_title: "Workshop Projects"
+group_title: "3. Workshop Projects"
 req_number: "3f"
 prev: "/merit-badges/home-repairs/guide/req3e/"
-prev_title: "Req 3e — Fixing a Sagging Door or Gate"
+prev_title: "Fixing a Sagging Door or Gate"
 next: "/merit-badges/home-repairs/guide/req3g/"
-next_title: "Req 3g — Fence Repair"
+next_title: "Fence Repair"
 ---
 
 {{< drg/requirement number="3f" >}}

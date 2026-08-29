@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Vehicle Safety Basics"
+title: "Vehicle Safety Basics"
 layout: "guide"
-group_title: "Protection in the Vehicle"
+group_title: "2. Protection in the Vehicle"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/traffic-safety/guide/req1/"
-prev_title: "Req 1 — Preventing Impaired Driving"
+prev_title: "Preventing Impaired Driving"
 next: "/merit-badges/traffic-safety/guide/req3/"
-next_title: "Req 3 — Maintenance and Emergency Stops"
+next_title: "Maintenance and Emergency Stops"
 ---
 
 {{< drg/requirement number="2" >}}

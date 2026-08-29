@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Earning Open Water Certification"
+title: "Earning Open Water Certification"
 layout: "guide"
-group_title: "Certification Journey"
+group_title: "4. Certification Journey"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/scuba-diving/guide/req3/"
-prev_title: "Req 3 — The Scuba Diver's Code"
+prev_title: "The Scuba Diver"
 next: "/merit-badges/scuba-diving/guide/req5/"
-next_title: "Req 5 — Aquatic Ecosystems"
+next_title: "Aquatic Ecosystems"
 ---
 
 {{< drg/requirement number="4" >}}

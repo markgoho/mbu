@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Pick Your Production Path"
+title: "Pick Your Production Path"
 layout: guide
-group_title: "Choose a Printing Method"
+group_title: "4. Choose a Printing Method"
 req_number: "4"
 prev: "/merit-badges/graphic-arts/guide/req3/"
-prev_title: "Req 3 — Design Choices and Production Planning"
+prev_title: "Design Choices and Production Planning"
 next: "/merit-badges/graphic-arts/guide/req4a/"
-next_title: "Req 4a — Offset Lithography Run"
+next_title: "Offset Lithography Run"
 ---
 
 {{< drg/requirement number="4" >}}

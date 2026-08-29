@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Setting Up a Course"
+title: "Setting Up a Course"
 layout: guide
-group_title: "Course Design"
+group_title: "8. Course Design"
 req_number: "8"
 prev: "/merit-badges/orienteering/guide/req7b/"
-prev_title: "Req 7b — Event Reports"
+prev_title: "Event Reports"
 next: "/merit-badges/orienteering/guide/req9/"
-next_title: "Req 9 — Acting as an Official"
+next_title: "Acting as an Official"
 ---
 
 {{< drg/requirement number="8" >}}

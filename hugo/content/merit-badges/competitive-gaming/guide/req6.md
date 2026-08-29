@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Leadership and Service in Competitive Gaming"
+title: "Leadership and Service in Competitive Gaming"
 layout: "guide"
-group_title: "Leadership and Service"
+group_title: "6. Leadership and Service"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/competitive-gaming/guide/req5/"
-prev_title: "Req 5 — Technology in Competitive Gaming"
+prev_title: "Technology in Competitive Gaming"
 next: "/merit-badges/competitive-gaming/guide/req6a/"
-next_title: "Req 6a — Teach Digital Citizenship"
+next_title: "Teach Digital Citizenship"
 ---
 
 {{< drg/requirement number="6" >}}

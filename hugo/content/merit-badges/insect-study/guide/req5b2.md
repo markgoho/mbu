@@ -1,12 +1,12 @@
 ---
-title: "Req 5b2 — Reading a Bee Hive"
+title: "Reading a Bee Hive"
 layout: guide
-group_title: "Choosing a Colony Study"
+group_title: "5. Choosing a Colony Study"
 req_number: "5b2"
 prev: "/merit-badges/insect-study/guide/req5b1/"
-prev_title: "Req 5b1 — Inside an Ant Colony"
+prev_title: "Inside an Ant Colony"
 next: "/merit-badges/insect-study/guide/req6/"
-next_title: "Req 6 — Insects in Ecosystems"
+next_title: "Insects in Ecosystems"
 ---
 
 {{< drg/requirement number="5b2" >}}

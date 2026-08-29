@@ -4,129 +4,129 @@ layout: guide
 badge_name: "Cooking"
 group_title: "Getting Started"
 next: "/merit-badges/cooking/guide/req1a/"
-next_title: "Req 1a — Kitchen Hazards"
+next_title: "Kitchen Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/cooking/guide/"
-  - group_title: "Health & Safety"
+  - group_title: "1. Health & Safety"
     items:
-      - title: "Req 1a — Kitchen Hazards"
+      - title: "a Kitchen Hazards"
         url: "/merit-badges/cooking/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — First Aid for the Kitchen"
+      - title: "b First Aid for the Kitchen"
         url: "/merit-badges/cooking/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Safe Food Storage"
+      - title: "c Safe Food Storage"
         url: "/merit-badges/cooking/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Allergies & Food Illness"
+      - title: "d Allergies & Food Illness"
         url: "/merit-badges/cooking/guide/req1d/"
         is_sub: true
-      - title: "Req 1e — Reading Food Labels"
+      - title: "e Reading Food Labels"
         url: "/merit-badges/cooking/guide/req1e/"
         is_sub: true
-  - group_title: "Nutrition"
+  - group_title: "2. Nutrition"
     items:
-      - title: "Req 2a — MyPlate Food Groups"
+      - title: "a MyPlate Food Groups"
         url: "/merit-badges/cooking/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Oils & Sugars"
+      - title: "b Oils & Sugars"
         url: "/merit-badges/cooking/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Activity & Calories"
+      - title: "c Activity & Calories"
         url: "/merit-badges/cooking/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Healthy Eating Habits"
+      - title: "d Healthy Eating Habits"
         url: "/merit-badges/cooking/guide/req2d/"
         is_sub: true
-      - title: "Req 2e — Food Label Terms"
+      - title: "e Food Label Terms"
         url: "/merit-badges/cooking/guide/req2e/"
         is_sub: true
-  - group_title: "Cooking Basics"
+  - group_title: "3. Cooking Basics"
     items:
-      - title: "Req 3a — Cooking Methods"
+      - title: "a Cooking Methods"
         url: "/merit-badges/cooking/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Stoves vs. Fires"
+      - title: "b Stoves vs. Fires"
         url: "/merit-badges/cooking/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Meal Timing"
+      - title: "c Meal Timing"
         url: "/merit-badges/cooking/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Taste, Texture & Smell"
+      - title: "d Taste, Texture & Smell"
         url: "/merit-badges/cooking/guide/req3d/"
         is_sub: true
-  - group_title: "Cooking at Home"
+  - group_title: "4. Cooking at Home"
     items:
-      - title: "Req 4a — Menu Planning"
+      - title: "a Menu Planning"
         url: "/merit-badges/cooking/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Recipes & Shopping"
+      - title: "b Recipes & Shopping"
         url: "/merit-badges/cooking/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Share Your Plan"
+      - title: "c Share Your Plan"
         url: "/merit-badges/cooking/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Cook & Serve"
+      - title: "d Cook & Serve"
         url: "/merit-badges/cooking/guide/req4d/"
         is_sub: true
-      - title: "Req 4e — Meal Timing"
+      - title: "e Meal Timing"
         url: "/merit-badges/cooking/guide/req4e/"
         is_sub: true
-      - title: "Req 4f — Evaluate & Reflect"
+      - title: "f Evaluate & Reflect"
         url: "/merit-badges/cooking/guide/req4f/"
         is_sub: true
-  - group_title: "Camp Cooking"
+  - group_title: "5. Camp Cooking"
     items:
-      - title: "Req 5a — Camp Menu Planning"
+      - title: "a Camp Menu Planning"
         url: "/merit-badges/cooking/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Camp Recipes & Budget"
+      - title: "b Camp Recipes & Budget"
         url: "/merit-badges/cooking/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Share Camp Plan"
+      - title: "c Share Camp Plan"
         url: "/merit-badges/cooking/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Cook Outdoors"
+      - title: "d Cook Outdoors"
         url: "/merit-badges/cooking/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Snack & Dessert"
+      - title: "e Snack & Dessert"
         url: "/merit-badges/cooking/guide/req5e/"
         is_sub: true
-      - title: "Req 5f — Camp Meal Evaluation"
+      - title: "f Camp Meal Evaluation"
         url: "/merit-badges/cooking/guide/req5f/"
         is_sub: true
-      - title: "Req 5g — Cleanup & Storage"
+      - title: "g Cleanup & Storage"
         url: "/merit-badges/cooking/guide/req5g/"
         is_sub: true
-      - title: "Req 5h — Leave No Trace"
+      - title: "h Leave No Trace"
         url: "/merit-badges/cooking/guide/req5h/"
         is_sub: true
-  - group_title: "Trail & Backpacking Meals"
+  - group_title: "6. Trail & Backpacking Meals"
     items:
-      - title: "Req 6a — Trail Menu Planning"
+      - title: "a Trail Menu Planning"
         url: "/merit-badges/cooking/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Trail Shopping List"
+      - title: "b Trail Shopping List"
         url: "/merit-badges/cooking/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Repackaging & Reducing Waste"
+      - title: "c Repackaging & Reducing Waste"
         url: "/merit-badges/cooking/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Cook on the Trail"
+      - title: "d Cook on the Trail"
         url: "/merit-badges/cooking/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Trail Meal Evaluation"
+      - title: "e Trail Meal Evaluation"
         url: "/merit-badges/cooking/guide/req6e/"
         is_sub: true
-      - title: "Req 6f — Load Sharing & Food Storage"
+      - title: "f Load Sharing & Food Storage"
         url: "/merit-badges/cooking/guide/req6f/"
         is_sub: true
-  - group_title: "Careers & Hobbies"
+  - group_title: "7. Careers & Hobbies"
     items:
-      - title: "Req 7 — Careers & Hobbies"
+      - title: "7. Careers & Hobbies"
         url: "/merit-badges/cooking/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

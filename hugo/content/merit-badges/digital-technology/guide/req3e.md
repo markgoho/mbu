@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Computer Networks"
+title: "Computer Networks"
 layout: guide
-group_title: "How Digital Data Works"
+group_title: "3. How Digital Data Works"
 req_number: "3e"
 prev: "/merit-badges/digital-technology/guide/req3d/"
-prev_title: "Req 3d — Computers, Mobile & Consoles"
+prev_title: "Computers, Mobile & Consoles"
 next: "/merit-badges/digital-technology/guide/req4a/"
-next_title: "Req 4a — Programs, Apps & How They Run"
+next_title: "Programs, Apps & How They Run"
 ---
 
 {{< drg/requirement number="3e" >}}

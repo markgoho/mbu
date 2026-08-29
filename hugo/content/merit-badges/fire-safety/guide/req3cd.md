@@ -1,12 +1,12 @@
 ---
-title: "Req 3c–3d — Burns & Carbon Monoxide"
+title: "Burns & Carbon Monoxide"
 layout: guide
-group_title: "Fire-Related Injuries"
+group_title: "3. Fire-Related Injuries"
 req_number: "3c"
 prev: "/merit-badges/fire-safety/guide/req3b/"
-prev_title: "Req 3b — Clothing Fires"
+prev_title: "Clothing Fires"
 next: "/merit-badges/fire-safety/guide/req4/"
-next_title: "Req 4 — Fire Origins"
+next_title: "Fire Origins"
 ---
 
  {{< drg/requirement number="3c" >}}

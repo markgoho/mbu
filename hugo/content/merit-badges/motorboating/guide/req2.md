@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Swim Readiness & Life Jackets"
+title: "Swim Readiness & Life Jackets"
 layout: "guide"
-group_title: "Water Readiness"
+group_title: "2. Water Readiness"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/motorboating/guide/req1/"
-prev_title: "Req 1 — Hazards, First Aid & Safety Afloat"
+prev_title: "Hazards, First Aid & Safety Afloat"
 next: "/merit-badges/motorboating/guide/req3/"
-next_title: "Req 3 — Engines, Fuel & On-Water Awareness"
+next_title: "Engines, Fuel & On-Water Awareness"
 ---
 
 {{< drg/requirement number="2" >}}

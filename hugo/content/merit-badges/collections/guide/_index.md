@@ -4,63 +4,63 @@ layout: guide
 badge_name: "Collections"
 group_title: "Getting Started"
 next: "/merit-badges/collections/guide/req1/"
-next_title: "Req 1 — Writing Your Collection Report"
+next_title: "Writing Your Collection Report"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/collections/guide/"
-  - group_title: "Your Collection Story"
+  - group_title: "1. Your Collection Story"
     items:
-      - title: "Req 1 — Writing Your Collection Report"
+      - title: "1. Writing Your Collection Report"
         url: "/merit-badges/collections/guide/req1/"
-  - group_title: "Growing Your Collection"
+  - group_title: "2. Growing Your Collection"
     items:
-      - title: "Req 2 — Growth & Development"
+      - title: "2. Growth & Development"
         url: "/merit-badges/collections/guide/req2/"
-  - group_title: "Preserving & Displaying"
+  - group_title: "3. Preserving & Displaying"
     items:
-      - title: "Req 3a — Handling, Cleaning & Storage"
+      - title: "a Handling, Cleaning & Storage"
         url: "/merit-badges/collections/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Displaying Your Collection"
+      - title: "b Displaying Your Collection"
         url: "/merit-badges/collections/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Events for Collectors"
+      - title: "c Events for Collectors"
         url: "/merit-badges/collections/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Cataloging Your Collection"
+      - title: "d Cataloging Your Collection"
         url: "/merit-badges/collections/guide/req3d/"
         is_sub: true
-  - group_title: "Collecting as an Investment"
+  - group_title: "4. Collecting as an Investment"
     items:
-      - title: "Req 4 — Investing, Buying & Selling"
+      - title: "4. Investing, Buying & Selling"
         url: "/merit-badges/collections/guide/req4/"
-  - group_title: "Knowing Your Collection"
+  - group_title: "5. Knowing Your Collection"
     items:
-      - title: "Req 5a — Collector Vocabulary"
+      - title: "a Collector Vocabulary"
         url: "/merit-badges/collections/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Organizing & Showing Groups"
+      - title: "b Organizing & Showing Groups"
         url: "/merit-badges/collections/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Monetary Value"
+      - title: "c Monetary Value"
         url: "/merit-badges/collections/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Grading & Classification"
+      - title: "d Grading & Classification"
         url: "/merit-badges/collections/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Collector Associations"
+      - title: "e Collector Associations"
         url: "/merit-badges/collections/guide/req5e/"
         is_sub: true
-      - title: "Req 5f — Identification Marks"
+      - title: "f Identification Marks"
         url: "/merit-badges/collections/guide/req5f/"
         is_sub: true
-  - group_title: "Looking Ahead"
+  - group_title: "6. Looking Ahead"
     items:
-      - title: "Req 6 — Future Plans"
+      - title: "6. Future Plans"
         url: "/merit-badges/collections/guide/req6/"
-      - title: "Req 7 — Careers in Collecting"
+      - title: "7. Careers in Collecting"
         url: "/merit-badges/collections/guide/req7/"
   - group_title: "Beyond the Badge"
     items:

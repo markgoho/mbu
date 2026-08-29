@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Review & Revision Process"
+title: "Review & Revision Process"
 layout: guide
-group_title: "Revisions & Redlines"
+group_title: "4. Revisions & Redlines"
 req_number: "4"
 prev: "/merit-badges/drafting/guide/req3/"
-prev_title: "Req 3 — CAD Design"
+prev_title: "CAD Design"
 next: "/merit-badges/drafting/guide/req5/"
-next_title: "Req 5 — Manual vs. CAD Discussion"
+next_title: "Manual vs. CAD Discussion"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — First Aid Kits"
+title: "First Aid Kits"
 layout: "guide"
-group_title: "Preparing for Emergencies"
+group_title: "2. Preparing for Emergencies"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/first-aid/guide/req2a/"
-prev_title: "Req 2a — Health Records"
+prev_title: "Health Records"
 next: "/merit-badges/first-aid/guide/req3/"
-next_title: "Req 3 — Burns, Bites & Skin Injuries"
+next_title: "Burns, Bites & Skin Injuries"
 ---
 
 {{< drg/requirement number="2b" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose Your Race Simulation"
+title: "Choose Your Race Simulation"
 layout: "guide"
-group_title: "Race-Day Challenge"
+group_title: "7. Race-Day Challenge"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/multisport/guide/req6/"
-prev_title: "Req 6 — Set Up Your Transition Area"
+prev_title: "Set Up Your Transition Area"
 next: "/merit-badges/multisport/guide/req7a/"
-next_title: "Req 7a — Triathlon Simulation"
+next_title: "Triathlon Simulation"
 ---
 
 {{< drg/requirement number="7" >}}

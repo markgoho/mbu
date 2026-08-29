@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Rare, Threatened, or Endangered Species"
+title: "Rare, Threatened, or Endangered Species"
 layout: guide
-group_title: "Endangered Species"
+group_title: "6. Endangered Species"
 req_number: "6"
 prev: "/merit-badges/environmental-science/guide/req5/"
-prev_title: "Req 5 — Land Pollution"
+prev_title: "Land Pollution"
 next: "/merit-badges/environmental-science/guide/req7/"
-next_title: "Req 7 — Pollution Prevention & Conservation"
+next_title: "Pollution Prevention & Conservation"
 ---
 
 {{< drg/requirement number="6" >}}

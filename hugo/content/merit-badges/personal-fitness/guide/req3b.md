@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Avoiding Harmful Substances"
+title: "Avoiding Harmful Substances"
 layout: guide
-group_title: "Fitness Knowledge & Habits"
+group_title: "3. Fitness Knowledge & Habits"
 req_number: "3b"
 prev: "/merit-badges/personal-fitness/guide/req3a/"
-prev_title: "Req 3a — Exercise & the Four Components"
+prev_title: "Exercise & the Four Components"
 next: "/merit-badges/personal-fitness/guide/req3c/"
-next_title: "Req 3c — Vaccinations"
+next_title: "Vaccinations"
 ---
 
 {{< drg/requirement number="3b" >}}

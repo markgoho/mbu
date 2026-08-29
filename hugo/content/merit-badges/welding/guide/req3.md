@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Welding Terms and Process Basics"
+title: "Welding Terms and Process Basics"
 layout: "guide"
-group_title: "How Welding Works"
+group_title: "3. How Welding Works"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/welding/guide/req2/"
-prev_title: "Req 2 — Safety Gear, SDS, and Equipment Care"
+prev_title: "Safety Gear, SDS, and Equipment Care"
 next: "/merit-badges/welding/guide/req4/"
-next_title: "Req 4 — Mechanical and Thermal Cutting"
+next_title: "Mechanical and Thermal Cutting"
 ---
 
 {{< drg/requirement number="3" >}}

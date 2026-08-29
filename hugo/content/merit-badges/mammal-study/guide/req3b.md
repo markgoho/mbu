@@ -1,13 +1,13 @@
 ---
-title: "Req 3b — Five-Day Observation Log"
+title: "Five-Day Observation Log"
 layout: "guide"
-group_title: "Field Study Options"
+group_title: "3. Field Study Options"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/mammal-study/guide/req3a/"
-prev_title: "Req 3a — Two Habitats, Six Hours"
+prev_title: "Two Habitats, Six Hours"
 next: "/merit-badges/mammal-study/guide/req3c/"
-next_title: "Req 3c — Nongame Mammal Life History"
+next_title: "Nongame Mammal Life History"
 ---
 
 {{< drg/requirement number="3b" >}}

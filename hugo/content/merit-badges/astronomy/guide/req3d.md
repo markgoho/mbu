@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Care & Storage"
+title: "Care & Storage"
 layout: guide
-group_title: "Telescopes & Instruments"
+group_title: "3. Telescopes & Instruments"
 req_number: "3d"
 prev: "/merit-badges/astronomy/guide/req3c/"
-prev_title: "Req 3c — Telescope Instruments"
+prev_title: "Telescope Instruments"
 next: "/merit-badges/astronomy/guide/req4a/"
-next_title: "Req 4a — Constellations"
+next_title: "Constellations"
 ---
 
 {{< drg/requirement number="3d" >}}

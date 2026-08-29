@@ -1,12 +1,12 @@
 ---
-title: "Requirement 3b — Principles of Fingerprint Science"
+title: "Principles of Fingerprint Science"
 layout: guide
-group_title: "The Science of Fingerprints"
+group_title: "3. The Science of Fingerprints"
 req_number: "3b"
 prev: "/merit-badges/fingerprinting/guide/req3a/"
-prev_title: "Requirement 3a — Friction Ridges on the Body"
+prev_title: "Friction Ridges on the Body"
 next: "/merit-badges/fingerprinting/guide/req3c/"
-next_title: "Requirement 3c — Positive Identification"
+next_title: "Positive Identification"
 ---
 
 {{< drg/requirement number="3b" >}}

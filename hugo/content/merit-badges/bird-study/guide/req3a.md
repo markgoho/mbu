@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Specification Numbers"
+title: "Specification Numbers"
 layout: guide
-group_title: "Optics & Gear"
+group_title: "3. Optics & Gear"
 req_number: "3a"
 prev: "/merit-badges/bird-study/guide/req2b/"
-prev_title: "Req 2b — Wing Feathers"
+prev_title: "Wing Feathers"
 next: "/merit-badges/bird-study/guide/req3b/"
-next_title: "Req 3b — Focus & Adjustment"
+next_title: "Focus & Adjustment"
 ---
 
 {{< drg/requirement number="3a" >}}

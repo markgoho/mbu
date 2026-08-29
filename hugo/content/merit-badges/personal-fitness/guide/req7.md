@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Execute & Track"
+title: "Execute & Track"
 layout: guide
-group_title: "Completing the Program"
+group_title: "7. Completing the Program"
 req_number: "7"
 prev: "/merit-badges/personal-fitness/guide/req6/"
-prev_title: "Req 6 — The 12-Week Program"
+prev_title: "The 12-Week Program"
 next: "/merit-badges/personal-fitness/guide/req8/"
-next_title: "Req 8 — Future Career or Lifestyle"
+next_title: "Future Career or Lifestyle"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Key Terms"
+title: "Key Terms"
 layout: guide
-group_title: "Foundations of Citizenship"
+group_title: "1. Foundations of Citizenship"
 req_number: "1"
 prev: "/merit-badges/citizenship-in-society/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/citizenship-in-society/guide/req2/"
-next_title: "Req 2 — Ethical Leadership"
+next_title: "Ethical Leadership"
 ---
 
 {{< drg/requirement number="1" >}}

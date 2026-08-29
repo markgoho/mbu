@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — America in the News"
+title: "America in the News"
 layout: guide
-group_title: "National Symbols & Family Roots"
+group_title: "3. National Symbols & Family Roots"
 req_number: "3a"
 prev: "/merit-badges/american-heritage/guide/req2/"
-prev_title: "Req 2 — American Leaders & Change-Makers"
+prev_title: "American Leaders & Change-Makers"
 next: "/merit-badges/american-heritage/guide/req3b/"
-next_title: "Req 3b — National Symbols"
+next_title: "National Symbols"
 ---
 
 {{< drg/requirement number="3a" >}}

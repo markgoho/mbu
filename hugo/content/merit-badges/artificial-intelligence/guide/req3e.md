@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Automation Timeline"
+title: "Automation Timeline"
 layout: guide
-group_title: "Automation Basics"
+group_title: "3. Automation Basics"
 req_number: "3e"
 prev: "/merit-badges/artificial-intelligence/guide/req3d/"
-prev_title: "Req 3d — How Automation Works"
+prev_title: "How Automation Works"
 next: "/merit-badges/artificial-intelligence/guide/req4a/"
-next_title: "Req 4a — Bias, Privacy & Decisions"
+next_title: "Bias, Privacy & Decisions"
 ---
 
 {{< drg/requirement number="3e" >}}

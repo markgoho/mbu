@@ -4,66 +4,66 @@ layout: "guide"
 badge_name: "Public Health"
 group_title: "Getting Started"
 next: "/merit-badges/public-health/guide/req1/"
-next_title: "Req 1 — How Disease Spreads"
+next_title: "How Disease Spreads"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/public-health/guide/"
         is_sub: false
-  - group_title: "Disease Basics"
+  - group_title: "1. Disease Basics"
     items:
-      - title: "Req 1 — How Disease Spreads"
+      - title: "1. How Disease Spreads"
         url: "/merit-badges/public-health/guide/req1/"
         is_sub: false
-  - group_title: "Immunization"
+  - group_title: "2. Immunization"
     items:
-      - title: "Req 2 — Immunization Basics"
+      - title: "2. Immunization Basics"
         url: "/merit-badges/public-health/guide/req2/"
         is_sub: false
-  - group_title: "Water & Sanitation"
+  - group_title: "3. Water & Sanitation"
     items:
-      - title: "Req 3 — Safe Water and Clean Gear"
+      - title: "3. Safe Water and Clean Gear"
         url: "/merit-badges/public-health/guide/req3/"
         is_sub: false
-  - group_title: "Vectors & Prevention"
+  - group_title: "4. Vectors & Prevention"
     items:
-      - title: "Req 4 — Vectors and Pest Control"
+      - title: "4. Vectors and Pest Control"
         url: "/merit-badges/public-health/guide/req4/"
         is_sub: false
-  - group_title: "Field Investigations"
+  - group_title: "5. Field Investigations"
     items:
-      - title: "Req 5 — Choose Your Field Investigation"
+      - title: "5. Choose Your Field Investigation"
         url: "/merit-badges/public-health/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Waste and Wastewater Systems"
+      - title: "a Waste and Wastewater Systems"
         url: "/merit-badges/public-health/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Food Safety in Action"
+      - title: "b Food Safety in Action"
         url: "/merit-badges/public-health/guide/req5b/"
         is_sub: true
-  - group_title: "Environmental & Behavioral Risks"
+  - group_title: "6. Environmental & Behavioral Risks"
     items:
-      - title: "Req 6 — Pollution and Substance Risks"
+      - title: "6. Pollution and Substance Risks"
         url: "/merit-badges/public-health/guide/req6/"
         is_sub: false
-  - group_title: "Public Health Agencies"
+  - group_title: "7. Public Health Agencies"
     items:
-      - title: "Req 7a — Choose Your Agency Research Path"
+      - title: "a Choose Your Agency Research Path"
         url: "/merit-badges/public-health/guide/req7a/"
         is_sub: false
-      - title: "Req 7a1 — Visit a Public Health Agency"
+      - title: "a Visit a Public Health Agency"
         url: "/merit-badges/public-health/guide/req7a1/"
         is_sub: true
-      - title: "Req 7a2 — Investigate an Agency Website"
+      - title: "a Investigate an Agency Website"
         url: "/merit-badges/public-health/guide/req7a2/"
         is_sub: true
-      - title: "Req 7b — How Agencies Protect Communities"
+      - title: "b How Agencies Protect Communities"
         url: "/merit-badges/public-health/guide/req7b/"
         is_sub: true
-  - group_title: "Careers in Public Health"
+  - group_title: "8. Careers in Public Health"
     items:
-      - title: "Req 8 — Explore a Public Health Career"
+      - title: "8. Explore a Public Health Career"
         url: "/merit-badges/public-health/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Fire Safety at Camp"
+title: "Fire Safety at Camp"
 layout: guide
-group_title: "Camping & Wildland Fire"
+group_title: "8. Camping & Wildland Fire"
 req_number: "8"
 prev: "/merit-badges/fire-safety/guide/req7/"
-prev_title: "Req 7 — Fire Safety in Public Buildings"
+prev_title: "Fire Safety in Public Buildings"
 next: "/merit-badges/fire-safety/guide/req9/"
-next_title: "Req 9 — Wildland Fires"
+next_title: "Wildland Fires"
 ---
 
  {{< drg/requirement number="8" >}}

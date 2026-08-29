@@ -4,113 +4,113 @@ layout: "guide"
 badge_name: "First Aid"
 group_title: "Getting Started"
 next: "/merit-badges/first-aid/guide/req1/"
-next_title: "Req 1 — Handling an Emergency"
+next_title: "Handling an Emergency"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/first-aid/guide/"
         is_sub: false
-  - group_title: "Handling Emergencies"
+  - group_title: "1. Handling Emergencies"
     items:
-      - title: "Req 1 — Handling an Emergency"
+      - title: "1. Handling an Emergency"
         url: "/merit-badges/first-aid/guide/req1/"
         is_sub: false
-  - group_title: "Preparing for Emergencies"
+  - group_title: "2. Preparing for Emergencies"
     items:
-      - title: "Req 2a — Health Records"
+      - title: "a Health Records"
         url: "/merit-badges/first-aid/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — First Aid Kits"
+      - title: "b First Aid Kits"
         url: "/merit-badges/first-aid/guide/req2b/"
         is_sub: true
-  - group_title: "Wounds Without External Bleeding"
+  - group_title: "3. Wounds Without External Bleeding"
     items:
-      - title: "Req 3 — Burns, Bites & Skin Injuries"
+      - title: "3. Burns, Bites & Skin Injuries"
         url: "/merit-badges/first-aid/guide/req3/"
         is_sub: false
-  - group_title: "Bleeding Wounds"
+  - group_title: "4. Bleeding Wounds"
     items:
-      - title: "Req 4 — Bleeding Control"
+      - title: "4. Bleeding Control"
         url: "/merit-badges/first-aid/guide/req4/"
         is_sub: false
-  - group_title: "Breathing Emergencies"
+  - group_title: "5. Breathing Emergencies"
     items:
-      - title: "Req 5 — Choking, Asthma & Altitude"
+      - title: "5. Choking, Asthma & Altitude"
         url: "/merit-badges/first-aid/guide/req5/"
         is_sub: false
-  - group_title: "Loss of Consciousness"
+  - group_title: "6. Loss of Consciousness"
     items:
-      - title: "Req 6 — Fainting, Seizures & Drowning"
+      - title: "6. Fainting, Seizures & Drowning"
         url: "/merit-badges/first-aid/guide/req6/"
         is_sub: false
-  - group_title: "Heart Attack & CPR"
+  - group_title: "7. Heart Attack & CPR"
     items:
-      - title: "Req 7 — CPR and AED"
+      - title: "7. CPR and AED"
         url: "/merit-badges/first-aid/guide/req7/"
         is_sub: false
-  - group_title: "Muscle & Bone Injuries"
+  - group_title: "8. Muscle & Bone Injuries"
     items:
-      - title: "Req 8a — Understanding Injuries"
+      - title: "a Understanding Injuries"
         url: "/merit-badges/first-aid/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Strains, Tears & Tendons"
+      - title: "b Strains, Tears & Tendons"
         url: "/merit-badges/first-aid/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Sprains, Fractures & Dislocations"
+      - title: "c Sprains, Fractures & Dislocations"
         url: "/merit-badges/first-aid/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — Bandaging Techniques"
+      - title: "d Bandaging Techniques"
         url: "/merit-badges/first-aid/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — Splinting Fractures"
+      - title: "e Splinting Fractures"
         url: "/merit-badges/first-aid/guide/req8e/"
         is_sub: true
-  - group_title: "Head & Spine Injuries"
+  - group_title: "9. Head & Spine Injuries"
     items:
-      - title: "Req 9 — Head, Neck & Back"
+      - title: "9. Head, Neck & Back"
         url: "/merit-badges/first-aid/guide/req9/"
         is_sub: false
-  - group_title: "Moving a Patient"
+  - group_title: "10. Moving a Patient"
     items:
-      - title: "Req 10 — Patient Transport"
+      - title: "10. Patient Transport"
         url: "/merit-badges/first-aid/guide/req10/"
         is_sub: false
-  - group_title: "Heat & Cold Conditions"
+  - group_title: "11. Heat & Cold Conditions"
     items:
-      - title: "Req 11 — Temperature Emergencies"
+      - title: "11. Temperature Emergencies"
         url: "/merit-badges/first-aid/guide/req11/"
         is_sub: false
-  - group_title: "Mental Health & Stress"
+  - group_title: "12. Mental Health & Stress"
     items:
-      - title: "Req 12 — Mental Health First Aid"
+      - title: "12. Mental Health First Aid"
         url: "/merit-badges/first-aid/guide/req12/"
         is_sub: false
-  - group_title: "Miscellaneous Conditions"
+  - group_title: "13. Miscellaneous Conditions"
     items:
-      - title: "Req 13 — Eyes, Teeth & Strokes"
+      - title: "13. Eyes, Teeth & Strokes"
         url: "/merit-badges/first-aid/guide/req13/"
         is_sub: false
-  - group_title: "Teaching First Aid"
+  - group_title: "14. Teaching First Aid"
     items:
-      - title: "Req 14 — Teaching with EDGE"
+      - title: "14. Teaching with EDGE"
         url: "/merit-badges/first-aid/guide/req14/"
         is_sub: false
-  - group_title: "EMS Careers"
+  - group_title: "15. EMS Careers"
     items:
-      - title: "Req 15 — Explore EMS Careers"
+      - title: "15. Explore EMS Careers"
         url: "/merit-badges/first-aid/guide/req15/"
         is_sub: false
-      - title: "Req 15a — Visit an EMS Station"
+      - title: "a Visit an EMS Station"
         url: "/merit-badges/first-aid/guide/req15a/"
         is_sub: true
-      - title: "Req 15b — Interview an EMS Professional"
+      - title: "b Interview an EMS Professional"
         url: "/merit-badges/first-aid/guide/req15b/"
         is_sub: true
-      - title: "Req 15c — Research an EMS Career"
+      - title: "c Research an EMS Career"
         url: "/merit-badges/first-aid/guide/req15c/"
         is_sub: true
-      - title: "Req 15d — EMS as a Lifestyle"
+      - title: "d EMS as a Lifestyle"
         url: "/merit-badges/first-aid/guide/req15d/"
         is_sub: true
   - group_title: "Beyond the Badge"

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Passenger Rail in America"
+title: "Passenger Rail in America"
 layout: "guide"
-group_title: "Passenger Rail & Transit"
+group_title: "2. Passenger Rail & Transit"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/railroading/guide/req1d/"
-prev_title: "Req 1d — How Locomotives Make Power"
+prev_title: "How Locomotives Make Power"
 next: "/merit-badges/railroading/guide/req3/"
-next_title: "Req 3 — Explore Railroading Careers"
+next_title: "Explore Railroading Careers"
 ---
 
 {{< drg/requirement number="2" >}}

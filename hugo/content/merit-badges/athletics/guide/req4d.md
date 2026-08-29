@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Sportsmanship"
+title: "Sportsmanship"
 layout: guide
-group_title: "Rules & Sportsmanship"
+group_title: "4. Rules & Sportsmanship"
 req_number: "4d"
 prev: "/merit-badges/athletics/guide/req4c/"
-prev_title: "Req 4c — Amateur vs. Professional"
+prev_title: "Amateur vs. Professional"
 next: "/merit-badges/athletics/guide/req5/"
-next_title: "Req 5 — Athletic Options Overview"
+next_title: "Athletic Options Overview"
 ---
 
 {{< drg/requirement number="4d" >}}

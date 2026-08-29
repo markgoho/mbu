@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — What Inventing Does"
+title: "What Inventing Does"
 layout: guide
-group_title: "Why Inventions Matter"
+group_title: "1. Why Inventions Matter"
 req_number: "1"
 prev: "/merit-badges/inventing/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/inventing/guide/req2/"
-next_title: "Req 2 — Choose Your Research Path"
+next_title: "Choose Your Research Path"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Personal Protective Equipment"
+title: "Personal Protective Equipment"
 layout: guide
-group_title: "Harness, Helmet & Gloves"
+group_title: "8. Harness, Helmet & Gloves"
 req_number: "8"
 prev: "/merit-badges/climbing/guide/req7/"
-prev_title: "Req 7 — Essential Climbing Knots"
+prev_title: "Essential Climbing Knots"
 next: "/merit-badges/climbing/guide/req9/"
-next_title: "Req 9 — Pre-Climb Safety Check"
+next_title: "Pre-Climb Safety Check"
 ---
 
 {{< drg/requirement number="8" >}}

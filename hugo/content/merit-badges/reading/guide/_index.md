@@ -4,70 +4,70 @@ layout: "guide"
 badge_name: "Reading"
 group_title: "Getting Started"
 next: "/merit-badges/reading/guide/req1/"
-next_title: "Req 1 — Library Skills in Action"
+next_title: "Library Skills in Action"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/reading/guide/"
         is_sub: false
-  - group_title: "Using the Library"
+  - group_title: "1. Using the Library"
     items:
-      - title: "Req 1 — Library Skills in Action"
+      - title: "1. Library Skills in Action"
         url: "/merit-badges/reading/guide/req1/"
         is_sub: false
-  - group_title: "Choosing What to Read"
+  - group_title: "2. Choosing What to Read"
     items:
-      - title: "Req 2 — Choose Books You'll Actually Finish"
+      - title: "2. Choose Books You"
         url: "/merit-badges/reading/guide/req2/"
         is_sub: false
-  - group_title: "Responding to Books"
+  - group_title: "3. Responding to Books"
     items:
-      - title: "Req 3 — Choose How to Share What You Read"
+      - title: "3. Choose How to Share What You Read"
         url: "/merit-badges/reading/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Write a Thoughtful Review"
+      - title: "a Write a Thoughtful Review"
         url: "/merit-badges/reading/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Compare Book and Movie"
+      - title: "b Compare Book and Movie"
         url: "/merit-badges/reading/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Give a Book Talk"
+      - title: "c Give a Book Talk"
         url: "/merit-badges/reading/guide/req3c/"
         is_sub: true
-  - group_title: "Reading for Action"
+  - group_title: "4. Reading for Action"
     items:
-      - title: "Req 4 — Read to Build a Skill"
+      - title: "4. Read to Build a Skill"
         url: "/merit-badges/reading/guide/req4/"
         is_sub: false
-  - group_title: "Reading for Awareness"
+  - group_title: "5. Reading for Awareness"
     items:
-      - title: "Req 5 — Read the Wider World"
+      - title: "5. Read the Wider World"
         url: "/merit-badges/reading/guide/req5/"
         is_sub: false
-  - group_title: "Reading in Service"
+  - group_title: "6. Reading in Service"
     items:
-      - title: "Req 6 — Choose a Reading Service Project"
+      - title: "6. Choose a Reading Service Project"
         url: "/merit-badges/reading/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Read Aloud for Comfort"
+      - title: "a Read Aloud for Comfort"
         url: "/merit-badges/reading/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Volunteer at a Library"
+      - title: "b Volunteer at a Library"
         url: "/merit-badges/reading/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Read to Younger Children"
+      - title: "c Read to Younger Children"
         url: "/merit-badges/reading/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Run a Book Swap"
+      - title: "d Run a Book Swap"
         url: "/merit-badges/reading/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Lead a Book Drive"
+      - title: "e Lead a Book Drive"
         url: "/merit-badges/reading/guide/req6e/"
         is_sub: true
-  - group_title: "Reading for Work"
+  - group_title: "7. Reading for Work"
     items:
-      - title: "Req 7 — Explore Reading Careers"
+      - title: "7. Explore Reading Careers"
         url: "/merit-badges/reading/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

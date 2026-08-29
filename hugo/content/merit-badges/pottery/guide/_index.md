@@ -4,63 +4,63 @@ layout: "guide"
 badge_name: "Pottery"
 group_title: "Getting Started"
 next: "/merit-badges/pottery/guide/req1/"
-next_title: "Req 1 — Studio Safety"
+next_title: "Studio Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/pottery/guide/"
         is_sub: false
-  - group_title: "Studio Safety"
+  - group_title: "1. Studio Safety"
     items:
-      - title: "Req 1 — Studio Safety"
+      - title: "1. Studio Safety"
         url: "/merit-badges/pottery/guide/req1/"
         is_sub: false
-  - group_title: "Clay Bodies & Wheels"
+  - group_title: "2. Clay Bodies & Wheels"
     items:
-      - title: "Req 2a — Clay Bodies for Two Jobs"
+      - title: "a Clay Bodies for Two Jobs"
         url: "/merit-badges/pottery/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — How Potters' Wheels Work"
+      - title: "b How Potters"
         url: "/merit-badges/pottery/guide/req2b/"
         is_sub: true
-  - group_title: "Designing Forms"
+  - group_title: "3. Designing Forms"
     items:
-      - title: "Req 3 — Drawing Pottery Forms"
+      - title: "3. Drawing Pottery Forms"
         url: "/merit-badges/pottery/guide/req3/"
         is_sub: false
-  - group_title: "Pottery Vocabulary"
+  - group_title: "4. Pottery Vocabulary"
     items:
-      - title: "Req 4 — Pottery Vocabulary"
+      - title: "4. Pottery Vocabulary"
         url: "/merit-badges/pottery/guide/req4/"
         is_sub: false
-  - group_title: "Hands-On Making"
+  - group_title: "5. Hands-On Making"
     items:
-      - title: "Req 5 — Build, Throw, and Fire"
+      - title: "5. Build, Throw, and Fire"
         url: "/merit-badges/pottery/guide/req5/"
         is_sub: false
-  - group_title: "Ceramics in Daily Life"
+  - group_title: "6. Ceramics in Daily Life"
     items:
-      - title: "Req 6 — The U.S. Ceramic Industry"
+      - title: "6. The U.S. Ceramic Industry"
         url: "/merit-badges/pottery/guide/req6/"
         is_sub: false
-  - group_title: "Choose Your Pottery Experience"
+  - group_title: "7. Choose Your Pottery Experience"
     items:
-      - title: "Req 7 — Choosing Your Field Experience"
+      - title: "7. Choosing Your Field Experience"
         url: "/merit-badges/pottery/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Visit a Kiln Yard"
+      - title: "a Visit a Kiln Yard"
         url: "/merit-badges/pottery/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Learn from Pottery in Person"
+      - title: "b Learn from Pottery in Person"
         url: "/merit-badges/pottery/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Pottery in History and Culture"
+      - title: "c Pottery in History and Culture"
         url: "/merit-badges/pottery/guide/req7c/"
         is_sub: true
-  - group_title: "Careers & Future Paths"
+  - group_title: "8. Careers & Future Paths"
     items:
-      - title: "Req 8 — Pottery Careers"
+      - title: "8. Pottery Careers"
         url: "/merit-badges/pottery/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

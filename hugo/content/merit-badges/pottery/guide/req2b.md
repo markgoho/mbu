@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — How Potters' Wheels Work"
+title: "How Potters' Wheels Work"
 layout: "guide"
-group_title: "Clay Bodies & Wheels"
+group_title: "2. Clay Bodies & Wheels"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/pottery/guide/req2a/"
-prev_title: "Req 2a — Clay Bodies for Two Jobs"
+prev_title: "Clay Bodies for Two Jobs"
 next: "/merit-badges/pottery/guide/req3/"
-next_title: "Req 3 — Drawing Pottery Forms"
+next_title: "Drawing Pottery Forms"
 ---
 
 {{< drg/requirement number="2b" >}}

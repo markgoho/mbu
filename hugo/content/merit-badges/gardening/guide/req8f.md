@@ -1,12 +1,12 @@
 ---
-title: "Req 8f — Soil Garden Project"
+title: "Soil Garden Project"
 layout: guide
-group_title: "Hands-On Garden Projects"
+group_title: "8. Hands-On Garden Projects"
 req_number: "8f"
 prev: "/merit-badges/gardening/guide/req8e/"
-prev_title: "Req 8e — Honey Super Project"
+prev_title: "Honey Super Project"
 next: "/merit-badges/gardening/guide/req9/"
-next_title: "Req 9 — Careers or Healthy Living"
+next_title: "Careers or Healthy Living"
 ---
 
 {{< drg/requirement number="8f" >}}

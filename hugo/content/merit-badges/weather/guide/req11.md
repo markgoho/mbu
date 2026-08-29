@@ -1,13 +1,13 @@
 ---
-title: "Req 11 — Teach Weather Safety"
+title: "Teach Weather Safety"
 layout: "guide"
-group_title: "Weather in Action"
+group_title: "10. Weather in Action"
 req_number: "11"
 req_path: "11"
 prev: "/merit-badges/weather/guide/req10b/"
-prev_title: "Req 10b — Visit a Weather Expert"
+prev_title: "Visit a Weather Expert"
 next: "/merit-badges/weather/guide/req12/"
-next_title: "Req 12 — Careers in Meteorology"
+next_title: "Careers in Meteorology"
 ---
 
 {{< drg/requirement number="11" >}}

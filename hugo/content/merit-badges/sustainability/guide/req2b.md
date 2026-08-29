@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Water Systems"
+title: "Water Systems"
 layout: guide
-group_title: "Water Conservation"
+group_title: "2. Water Conservation"
 req_number: "2b"
 prev: "/merit-badges/sustainability/guide/req2a/"
-prev_title: "Req 2a — Household Water Usage"
+prev_title: "Household Water Usage"
 next: "/merit-badges/sustainability/guide/req2c/"
-next_title: "Req 2c — Floods & Droughts"
+next_title: "Floods & Droughts"
 ---
 
 {{< drg/requirement number="2b" >}}

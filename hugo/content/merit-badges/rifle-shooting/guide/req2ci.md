@@ -1,13 +1,13 @@
 ---
-title: "Req 2ci — Range Procedures and Commands"
+title: "Range Procedures and Commands"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2ci"
 req_path: "2.c.i"
 prev: "/merit-badges/rifle-shooting/guide/req2ch/"
-prev_title: "Req 2ch — Misfires, Hangfires, and Squib Fires"
+prev_title: "Misfires, Hangfires, and Squib Fires"
 next: "/merit-badges/rifle-shooting/guide/req2cj/"
-next_title: "Req 2cj — Cleaning Safety Rules and Materials"
+next_title: "Cleaning Safety Rules and Materials"
 ---
 
 {{< drg/requirement number="2ci" >}}

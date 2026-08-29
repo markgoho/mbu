@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Choose a Competition Path"
+title: "Choose a Competition Path"
 layout: "guide"
-group_title: "Competition Options"
+group_title: "6. Competition Options"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/robotics/guide/req5/"
-prev_title: "Req 5 — Show and Explain Your Robot"
+prev_title: "Show and Explain Your Robot"
 next: "/merit-badges/robotics/guide/req6a/"
-next_title: "Req 6a — Attend and Observe"
+next_title: "Attend and Observe"
 ---
 
 {{< drg/requirement number="6" >}}

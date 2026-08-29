@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Intellectual Property & Patents"
+title: "Intellectual Property & Patents"
 layout: guide
-group_title: "Protecting Ideas"
+group_title: "3. Protecting Ideas"
 req_number: "3"
 prev: "/merit-badges/inventing/guide/req2b/"
-prev_title: "Req 2b — Study Inventors"
+prev_title: "Study Inventors"
 next: "/merit-badges/inventing/guide/req4/"
-next_title: "Req 4 — Inventions That Should Be Shared"
+next_title: "Inventions That Should Be Shared"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — New Resin Applications"
+title: "New Resin Applications"
 layout: guide
-group_title: "How Composites Are Made"
+group_title: "3. How Composites Are Made"
 req_number: "3c"
 prev: "/merit-badges/composite-materials/guide/req3b/"
-prev_title: "Req 3b — Resins"
+prev_title: "Resins"
 next: "/merit-badges/composite-materials/guide/req4/"
-next_title: "Req 4 — Explore the Industry"
+next_title: "Explore the Industry"
 ---
 
 {{< drg/requirement number="3c" >}}

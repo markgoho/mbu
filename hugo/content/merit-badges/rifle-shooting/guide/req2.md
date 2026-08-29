@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Pick Your Option"
+title: "Pick Your Option"
 layout: "guide"
-group_title: "Choose Your Shooting Option"
+group_title: "2. Choose Your Shooting Option"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/rifle-shooting/guide/req1j/"
-prev_title: "Req 1j — Sources of Information on Firearms"
+prev_title: "Sources of Information on Firearms"
 next: "/merit-badges/rifle-shooting/guide/req2a/"
-next_title: "Req 2a — Option A Overview"
+next_title: "Option A Overview"
 ---
 
 {{< drg/requirement number="2" >}}

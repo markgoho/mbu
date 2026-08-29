@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Teach Digital Citizenship"
+title: "Teach Digital Citizenship"
 layout: "guide"
-group_title: "Leadership and Service"
+group_title: "6. Leadership and Service"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/competitive-gaming/guide/req6/"
-prev_title: "Req 6 — Leadership and Service in Competitive Gaming"
+prev_title: "Leadership and Service in Competitive Gaming"
 next: "/merit-badges/competitive-gaming/guide/req6b/"
-next_title: "Req 6b — Watch a Live Esports Event"
+next_title: "Watch a Live Esports Event"
 ---
 
 {{< drg/requirement number="6a" option="Teach Digital Citizenship" >}}

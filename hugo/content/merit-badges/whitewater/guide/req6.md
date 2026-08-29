@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — River Signals That Matter"
+title: "River Signals That Matter"
 layout: "guide"
-group_title: "River Judgment"
+group_title: "5. River Judgment"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/whitewater/guide/req5/"
-prev_title: "Req 5 — Classifying the River"
+prev_title: "Classifying the River"
 next: "/merit-badges/whitewater/guide/req7/"
-next_title: "Req 7 — Match the Boat to the Water"
+next_title: "Match the Boat to the Water"
 ---
 
 {{< drg/requirement number="6" >}}

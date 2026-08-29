@@ -1,12 +1,12 @@
 ---
-title: "Req 4c2 — What Makes a Mineral"
+title: "What Makes a Mineral"
 layout: guide
-group_title: "Mineral Resources"
+group_title: "4. Mineral Resources"
 req_number: "4c2"
 prev: "/merit-badges/geology/guide/req4c1/"
-prev_title: "Req 4c1 — The Three Rock Classes"
+prev_title: "The Three Rock Classes"
 next: "/merit-badges/geology/guide/req4c3/"
-next_title: "Req 4c3 — Collect or Identify Specimens"
+next_title: "Collect or Identify Specimens"
 ---
 
 {{< drg/requirement number="4c2" >}}

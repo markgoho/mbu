@@ -1,13 +1,13 @@
 ---
-title: "Req 10b — Visit a Weather Expert"
+title: "Visit a Weather Expert"
 layout: "guide"
-group_title: "Weather in Action"
+group_title: "10. Weather in Action"
 req_number: "10b"
 req_path: "10.b"
 prev: "/merit-badges/weather/guide/req10a/"
-prev_title: "Req 10a — Build an Instrument and Keep a Log"
+prev_title: "Build an Instrument and Keep a Log"
 next: "/merit-badges/weather/guide/req11/"
-next_title: "Req 11 — Teach Weather Safety"
+next_title: "Teach Weather Safety"
 ---
 
 {{< drg/requirement number="10b" >}}

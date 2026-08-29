@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Stoves vs. Fires"
+title: "Stoves vs. Fires"
 layout: guide
-group_title: "Cooking Basics"
+group_title: "3. Cooking Basics"
 req_number: "3b"
 prev: "/merit-badges/cooking/guide/req3a/"
-prev_title: "Req 3a — Cooking Methods"
+prev_title: "Cooking Methods"
 next: "/merit-badges/cooking/guide/req3c/"
-next_title: "Req 3c — Meal Timing"
+next_title: "Meal Timing"
 ---
 
 {{< drg/requirement number="3b" >}}

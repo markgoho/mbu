@@ -1,13 +1,13 @@
 ---
-title: "Req 8d — Enter a Sanctioned Event"
+title: "Enter a Sanctioned Event"
 layout: "guide"
-group_title: "Staying Involved"
+group_title: "8. Staying Involved"
 req_number: "8d"
 req_path: "8.d"
 prev: "/merit-badges/multisport/guide/req8c/"
-prev_title: "Req 8c — Lead a Training Group"
+prev_title: "Lead a Training Group"
 next: "/merit-badges/multisport/guide/req8e/"
-next_title: "Req 8e — Volunteer at an Event"
+next_title: "Volunteer at an Event"
 ---
 
 {{< drg/requirement number="8d" >}}

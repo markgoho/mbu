@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Wind, Rain, Lightning, and Hail"
+title: "Wind, Rain, Lightning, and Hail"
 layout: "guide"
-group_title: "How Weather Works"
+group_title: "4. How Weather Works"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/weather/guide/req4/"
-prev_title: "Req 4 — Pressure Systems and Fronts"
+prev_title: "Pressure Systems and Fronts"
 next: "/merit-badges/weather/guide/req6/"
-next_title: "Req 6 — Cloud Clues"
+next_title: "Cloud Clues"
 ---
 
 {{< drg/requirement number="5" >}}

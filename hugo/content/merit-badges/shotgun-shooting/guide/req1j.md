@@ -1,13 +1,13 @@
 ---
-title: "Req 1j — Sources of Information on Firearms"
+title: "Sources of Information on Firearms"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1j"
 req_path: "1.j"
 prev: "/merit-badges/shotgun-shooting/guide/req1i/"
-prev_title: "Req 1i — Shotgun Sports and Local Opportunities"
+prev_title: "Shotgun Sports and Local Opportunities"
 next: "/merit-badges/shotgun-shooting/guide/req2/"
-next_title: "Req 2 — Pick Your Option"
+next_title: "Pick Your Option"
 ---
 
 {{< drg/requirement number="1j" >}}

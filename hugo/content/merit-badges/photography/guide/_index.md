@@ -4,88 +4,88 @@ layout: "guide"
 badge_name: "Photography"
 group_title: "Getting Started"
 next: "/merit-badges/photography/guide/req1/"
-next_title: "Req 1 — Shoot Safely"
+next_title: "Shoot Safely"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/photography/guide/"
         is_sub: false
-  - group_title: "Safe Shooting Habits"
+  - group_title: "1. Safe Shooting Habits"
     items:
-      - title: "Req 1 — Shoot Safely"
+      - title: "1. Shoot Safely"
         url: "/merit-badges/photography/guide/req1/"
         is_sub: false
-  - group_title: "Control the Shot"
+  - group_title: "2. Control the Shot"
     items:
-      - title: "Req 2 — Control Light and Motion"
+      - title: "2. Control Light and Motion"
         url: "/merit-badges/photography/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Know Your Camera"
+      - title: "3. Know Your Camera"
         url: "/merit-badges/photography/guide/req3/"
         is_sub: false
-  - group_title: "Field Practice: Requirement 4"
+  - group_title: "4. Field Practice: Requirement 4"
     items:
-      - title: "Req 4 — Pick Two Creative Experiments"
+      - title: "4. Pick Two Creative Experiments"
         url: "/merit-badges/photography/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Change Your Angle"
+      - title: "a Change Your Angle"
         url: "/merit-badges/photography/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Change the Light"
+      - title: "b Change the Light"
         url: "/merit-badges/photography/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Change the Focus"
+      - title: "c Change the Focus"
         url: "/merit-badges/photography/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Change the Composition"
+      - title: "d Change the Composition"
         url: "/merit-badges/photography/guide/req4d/"
         is_sub: true
-  - group_title: "Field Practice: Requirement 5"
+  - group_title: "5. Field Practice: Requirement 5"
     items:
-      - title: "Req 5 — Pick Three Subject Types"
+      - title: "5. Pick Three Subject Types"
         url: "/merit-badges/photography/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Make a Strong Close-Up"
+      - title: "a Make a Strong Close-Up"
         url: "/merit-badges/photography/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Capture Interaction"
+      - title: "b Capture Interaction"
         url: "/merit-badges/photography/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Freeze or Follow Action"
+      - title: "c Freeze or Follow Action"
         url: "/merit-badges/photography/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Photograph Animals Patiently"
+      - title: "d Photograph Animals Patiently"
         url: "/merit-badges/photography/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Notice the Outdoors"
+      - title: "e Notice the Outdoors"
         url: "/merit-badges/photography/guide/req5e/"
         is_sub: true
-      - title: "Req 5f — Photograph a Person Intentionally"
+      - title: "f Photograph a Person Intentionally"
         url: "/merit-badges/photography/guide/req5f/"
         is_sub: true
-  - group_title: "Editing for Impact"
+  - group_title: "6. Editing for Impact"
     items:
-      - title: "Req 6 — Edit for Impact"
+      - title: "6. Edit for Impact"
         url: "/merit-badges/photography/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Crop for Stronger Framing"
+      - title: "a Crop for Stronger Framing"
         url: "/merit-badges/photography/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Fix Exposure or Color"
+      - title: "b Fix Exposure or Color"
         url: "/merit-badges/photography/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Improve Impact Another Way"
+      - title: "c Improve Impact Another Way"
         url: "/merit-badges/photography/guide/req6c/"
         is_sub: true
-  - group_title: "Visual Storytelling"
+  - group_title: "7. Visual Storytelling"
     items:
-      - title: "Req 7 — Tell a Visual Story"
+      - title: "7. Tell a Visual Story"
         url: "/merit-badges/photography/guide/req7/"
         is_sub: false
-  - group_title: "Photography Futures"
+  - group_title: "8. Photography Futures"
     items:
-      - title: "Req 8 — Explore Photography Careers"
+      - title: "8. Explore Photography Careers"
         url: "/merit-badges/photography/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

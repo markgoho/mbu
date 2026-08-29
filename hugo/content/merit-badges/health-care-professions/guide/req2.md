@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Bedside Care and Fast Decisions"
+title: "Bedside Care and Fast Decisions"
 layout: guide
-group_title: "Nursing, Pharmacy, and Emergency Care"
+group_title: "2. Nursing, Pharmacy, and Emergency Care"
 req_number: "2"
 prev: "/merit-badges/health-care-professions/guide/req1/"
-prev_title: "Req 1 — Diagnosing, Hearing, and Whole-Person Care"
+prev_title: "Diagnosing, Hearing, and Whole-Person Care"
 next: "/merit-badges/health-care-professions/guide/req3/"
-next_title: "Req 3 — Recovery, Communication, and Movement"
+next_title: "Recovery, Communication, and Movement"
 ---
 
 {{< drg/requirement number="2" >}}

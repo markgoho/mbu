@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Keep the Structure Put"
+title: "Keep the Structure Put"
 layout: guide
-group_title: "Anchors & Load Paths"
+group_title: "7. Anchors & Load Paths"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/pioneering/guide/req6/"
-prev_title: "Req 6 — Twist, Lay, and Whip"
+prev_title: "Twist, Lay, and Whip"
 next: "/merit-badges/pioneering/guide/req8/"
-next_title: "Req 8 — Build a Strong Frame"
+next_title: "Build a Strong Frame"
 ---
 
 {{< drg/requirement number="7" >}}

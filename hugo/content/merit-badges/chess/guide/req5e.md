@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Solving Mate Problems"
+title: "Solving Mate Problems"
 layout: guide
-group_title: "Tactics & Endgames"
+group_title: "5. Tactics & Endgames"
 req_number: "5e"
 prev: "/merit-badges/chess/guide/req5d/"
-prev_title: "Req 5d — King & Pawn Endgames"
+prev_title: "King & Pawn Endgames"
 next: "/merit-badges/chess/guide/req6/"
-next_title: "Req 6 — Chess Tournaments"
+next_title: "Chess Tournaments"
 ---
 
 {{< drg/requirement number="5e" >}}

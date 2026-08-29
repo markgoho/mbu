@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Geocaching"
 group_title: "Getting Started"
 next: "/merit-badges/geocaching/guide/req1/"
-next_title: "Req 1 — Safety, First Aid, and Planning"
+next_title: "Safety, First Aid, and Planning"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/geocaching/guide/"
         is_sub: false
-  - group_title: "Safe Adventures"
+  - group_title: "1. Safe Adventures"
     items:
-      - title: "Req 1 — Safety, First Aid, and Planning"
+      - title: "1. Safety, First Aid, and Planning"
         url: "/merit-badges/geocaching/guide/req1/"
         is_sub: false
-  - group_title: "Ethics in the Field"
+  - group_title: "2. Ethics in the Field"
     items:
-      - title: "Req 2 — Geocaching Etiquette and Leave No Trace"
+      - title: "2. Geocaching Etiquette and Leave No Trace"
         url: "/merit-badges/geocaching/guide/req2/"
         is_sub: false
-  - group_title: "Geocaching Language"
+  - group_title: "3. Geocaching Language"
     items:
-      - title: "Req 3 — Geocaching Terms and Ratings"
+      - title: "3. Geocaching Terms and Ratings"
         url: "/merit-badges/geocaching/guide/req3/"
         is_sub: false
-  - group_title: "Using GPS"
+  - group_title: "4. Using GPS"
     items:
-      - title: "Req 4 — How GPS Works and How to Teach It"
+      - title: "4. How GPS Works and How to Teach It"
         url: "/merit-badges/geocaching/guide/req4/"
         is_sub: false
-  - group_title: "Backup Navigation"
+  - group_title: "5. Backup Navigation"
     items:
-      - title: "Req 5 — Maps, Compass, and Navigation Choices"
+      - title: "5. Maps, Compass, and Navigation Choices"
         url: "/merit-badges/geocaching/guide/req5/"
         is_sub: false
-  - group_title: "Your First Find"
+  - group_title: "6. Your First Find"
     items:
-      - title: "Req 6 — The Four Steps to Finding a Cache"
+      - title: "6. The Four Steps to Finding a Cache"
         url: "/merit-badges/geocaching/guide/req6/"
         is_sub: false
-  - group_title: "Finding Local Caches"
+  - group_title: "7. Finding Local Caches"
     items:
-      - title: "Req 7 — Research and Find a Public Cache"
+      - title: "7. Research and Find a Public Cache"
         url: "/merit-badges/geocaching/guide/req7/"
         is_sub: false
-  - group_title: "Choose Your Adventure"
+  - group_title: "8. Choose Your Adventure"
     items:
-      - title: "Req 8 — Pick Your Geocaching Project"
+      - title: "8. Pick Your Geocaching Project"
         url: "/merit-badges/geocaching/guide/req8/"
         is_sub: false
-      - title: "Req 8a — Cache to Eagle Service Stops"
+      - title: "a Cache to Eagle Service Stops"
         url: "/merit-badges/geocaching/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Travel Bug Mission"
+      - title: "b Travel Bug Mission"
         url: "/merit-badges/geocaching/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Hide and Maintain a Cache"
+      - title: "c Hide and Maintain a Cache"
         url: "/merit-badges/geocaching/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — Cache In Trash Out Leadership"
+      - title: "d Cache In Trash Out Leadership"
         url: "/merit-badges/geocaching/guide/req8d/"
         is_sub: true
-  - group_title: "Leading a Geohunt"
+  - group_title: "9. Leading a Geohunt"
     items:
-      - title: "Req 9 — Plan and Run a Geohunt"
+      - title: "9. Plan and Run a Geohunt"
         url: "/merit-badges/geocaching/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

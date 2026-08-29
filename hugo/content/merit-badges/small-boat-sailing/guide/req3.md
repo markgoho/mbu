@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Know Your Boat"
+title: "Know Your Boat"
 layout: "guide"
-group_title: "Safety, Readiness & Boat Setup"
+group_title: "1. Safety, Readiness & Boat Setup"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/small-boat-sailing/guide/req2/"
-prev_title: "Req 2 — Swimmer Test Readiness"
+prev_title: "Swimmer Test Readiness"
 next: "/merit-badges/small-boat-sailing/guide/req4/"
-next_title: "Req 4 — Planning, Weather & Gear"
+next_title: "Planning, Weather & Gear"
 ---
 
 {{< drg/requirement number="3" >}}

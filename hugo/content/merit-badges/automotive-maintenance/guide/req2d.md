@@ -1,12 +1,12 @@
 ---
-title: "Req 2d — Lights & Air Filters"
+title: "Lights & Air Filters"
 layout: guide
-group_title: "General Maintenance"
+group_title: "2. General Maintenance"
 req_number: "2d"
 prev: "/merit-badges/automotive-maintenance/guide/req2b/"
-prev_title: "Req 2b — Fuses, Belts & Hoses"
+prev_title: "Fuses, Belts & Hoses"
 next: "/merit-badges/automotive-maintenance/guide/req3/"
-next_title: "Req 3 — Dashboard & Driver Info"
+next_title: "Dashboard & Driver Info"
 ---
 
 {{< drg/requirement number="2d" >}}

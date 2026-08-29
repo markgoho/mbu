@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose Your Dockside Skill"
+title: "Choose Your Dockside Skill"
 layout: "guide"
-group_title: "Choose Your Dockside Skill"
+group_title: "5. Choose Your Dockside Skill"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/rowing/guide/req4b/"
-prev_title: "Req 4b — Race Day as a Teammate"
+prev_title: "Race Day as a Teammate"
 next: "/merit-badges/rowing/guide/req5a/"
-next_title: "Req 5a — Passenger Handling & Sculling"
+next_title: "Passenger Handling & Sculling"
 ---
 
 {{< drg/requirement number="5" >}}

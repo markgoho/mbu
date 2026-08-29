@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — Fix Exposure or Color"
+title: "Fix Exposure or Color"
 layout: "guide"
-group_title: "Editing for Impact"
+group_title: "6. Editing for Impact"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/photography/guide/req6a/"
-prev_title: "Req 6a — Crop for Stronger Framing"
+prev_title: "Crop for Stronger Framing"
 next: "/merit-badges/photography/guide/req6c/"
-next_title: "Req 6c — Improve Impact Another Way"
+next_title: "Improve Impact Another Way"
 ---
 
 {{< drg/requirement number="6b" >}}

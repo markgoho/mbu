@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Catalogs and Condition"
+title: "Catalogs and Condition"
 layout: "guide"
-group_title: "Value and Condition"
+group_title: "4. Value and Condition"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/stamp-collecting/guide/req3/"
-prev_title: "Req 3 — Stamp Terms in Action"
+prev_title: "Stamp Terms in Action"
 next: "/merit-badges/stamp-collecting/guide/req5/"
-next_title: "Req 5 — Choosing Your Tools"
+next_title: "Choosing Your Tools"
 ---
 
 {{< drg/requirement number="4" >}}

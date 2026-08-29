@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Creative Presentation"
+title: "Creative Presentation"
 layout: guide
-group_title: "Self-Expression & Persuasion"
+group_title: "2. Self-Expression & Persuasion"
 req_number: "2"
 prev: "/merit-badges/communication/guide/req1/"
-prev_title: "Req 1 — Communication Awareness"
+prev_title: "Communication Awareness"
 next: "/merit-badges/communication/guide/req3/"
-next_title: "Req 3 — Writing & Delivering a Speech"
+next_title: "Writing & Delivering a Speech"
 ---
 
 {{< drg/requirement number="2" >}}

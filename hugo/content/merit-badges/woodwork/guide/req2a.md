@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — From Tree to Lumber"
+title: "From Tree to Lumber"
 layout: guide
-group_title: "Understanding Wood"
+group_title: "2. Understanding Wood"
 req_number: "2a"
 prev: "/merit-badges/woodwork/guide/req1c/"
-prev_title: "Req 1c — Totin' Chip"
+prev_title: "Totin"
 next: "/merit-badges/woodwork/guide/req2b/"
-next_title: "Req 2b — Wood Identification"
+next_title: "Wood Identification"
 ---
 
 {{< drg/requirement number="2a" >}}

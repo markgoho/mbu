@@ -1,13 +1,13 @@
 ---
-title: "Req 12 — Mental Health First Aid"
+title: "Mental Health First Aid"
 layout: "guide"
-group_title: "Mental Health & Stress"
+group_title: "12. Mental Health & Stress"
 req_number: "12"
 req_path: "12"
 prev: "/merit-badges/first-aid/guide/req11/"
-prev_title: "Req 11 — Temperature Emergencies"
+prev_title: "Temperature Emergencies"
 next: "/merit-badges/first-aid/guide/req13/"
-next_title: "Req 13 — Eyes, Teeth & Strokes"
+next_title: "Eyes, Teeth & Strokes"
 ---
 
 {{< drg/requirement number="12" >}}

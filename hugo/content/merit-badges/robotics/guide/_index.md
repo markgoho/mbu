@@ -4,79 +4,79 @@ layout: "guide"
 badge_name: "Robotics"
 group_title: "Getting Started"
 next: "/merit-badges/robotics/guide/req1/"
-next_title: "Req 1 — Workshop Safety"
+next_title: "Workshop Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/robotics/guide/"
         is_sub: false
-  - group_title: "Safe Robotics Work"
+  - group_title: "1. Safe Robotics Work"
     items:
-      - title: "Req 1 — Workshop Safety"
+      - title: "1. Workshop Safety"
         url: "/merit-badges/robotics/guide/req1/"
         is_sub: false
-  - group_title: "How Robots Work in the World"
+  - group_title: "2. How Robots Work in the World"
     items:
-      - title: "Req 2 — Robots in Action"
+      - title: "2. Robots in Action"
         url: "/merit-badges/robotics/guide/req2/"
         is_sub: false
-  - group_title: "The Five Fields of Robotics"
+  - group_title: "3. The Five Fields of Robotics"
     items:
-      - title: "Req 3 — Core Robotics Systems"
+      - title: "3. Core Robotics Systems"
         url: "/merit-badges/robotics/guide/req3/"
         is_sub: false
-  - group_title: "Design and Build Your Robot"
+  - group_title: "4. Design and Build Your Robot"
     items:
-      - title: "Req 4 — From Idea to Finished Robot"
+      - title: "4. From Idea to Finished Robot"
         url: "/merit-badges/robotics/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Choose the Mission"
+      - title: "a Choose the Mission"
         url: "/merit-badges/robotics/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Sketch the System"
+      - title: "b Sketch the System"
         url: "/merit-badges/robotics/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Build Your Prototype"
+      - title: "c Build Your Prototype"
         url: "/merit-badges/robotics/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Pick Your Programming Path"
+      - title: "d Pick Your Programming Path"
         url: "/merit-badges/robotics/guide/req4d/"
         is_sub: true
-      - title: "Req 4d1 — Write the Code"
+      - title: "d Write the Code"
         url: "/merit-badges/robotics/guide/req4d1/"
         is_sub: true
-      - title: "Req 4d2 — Map the Logic"
+      - title: "d Map the Logic"
         url: "/merit-badges/robotics/guide/req4d2/"
         is_sub: true
-      - title: "Req 4e — Test, Record, Improve"
+      - title: "e Test, Record, Improve"
         url: "/merit-badges/robotics/guide/req4e/"
         is_sub: true
-  - group_title: "Demonstration Day"
+  - group_title: "5. Demonstration Day"
     items:
-      - title: "Req 5 — Show and Explain Your Robot"
+      - title: "5. Show and Explain Your Robot"
         url: "/merit-badges/robotics/guide/req5/"
         is_sub: false
-  - group_title: "Competition Options"
+  - group_title: "6. Competition Options"
     items:
-      - title: "Req 6 — Choose a Competition Path"
+      - title: "6. Choose a Competition Path"
         url: "/merit-badges/robotics/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Attend and Observe"
+      - title: "a Attend and Observe"
         url: "/merit-badges/robotics/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Compare Youth Leagues"
+      - title: "b Compare Youth Leagues"
         url: "/merit-badges/robotics/guide/req6b/"
         is_sub: true
-  - group_title: "Future Paths"
+  - group_title: "7. Future Paths"
     items:
-      - title: "Req 7 — Choose Your Future Path"
+      - title: "7. Choose Your Future Path"
         url: "/merit-badges/robotics/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Explore Robotics Careers"
+      - title: "a Explore Robotics Careers"
         url: "/merit-badges/robotics/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Build a Robotics Hobby"
+      - title: "b Build a Robotics Hobby"
         url: "/merit-badges/robotics/guide/req7b/"
         is_sub: true
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Researching a Business"
+title: "Researching a Business"
 layout: guide
-group_title: "Putting It All Together"
+group_title: "5. Putting It All Together"
 req_number: "5"
 prev: "/merit-badges/american-business/guide/req4/"
-prev_title: "Req 4 — Labor Laws & Protections"
+prev_title: "Labor Laws & Protections"
 next: "/merit-badges/american-business/guide/req6/"
-next_title: "Req 6 — Careers & Leadership"
+next_title: "Careers & Leadership"
 ---
 
 {{< drg/requirement number="5" >}}

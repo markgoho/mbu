@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Modern Technology"
+title: "Modern Technology"
 layout: guide
-group_title: "Genetics & Breeding"
+group_title: "5. Genetics & Breeding"
 req_number: "5c"
 prev: "/merit-badges/animal-science/guide/req5b/"
-prev_title: "Req 5b — Pure & Cross Breeding"
+prev_title: "Pure & Cross Breeding"
 next: "/merit-badges/animal-science/guide/req6/"
-next_title: "Req 6 — Choose Your Specialty"
+next_title: "Choose Your Specialty"
 ---
 
 {{< drg/requirement number="5c" >}}

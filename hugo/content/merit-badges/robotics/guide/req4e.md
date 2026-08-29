@@ -1,13 +1,13 @@
 ---
-title: "Req 4e — Test, Record, Improve"
+title: "Test, Record, Improve"
 layout: "guide"
-group_title: "Design and Build Your Robot"
+group_title: "4. Design and Build Your Robot"
 req_number: "4e"
 req_path: "4.e"
 prev: "/merit-badges/robotics/guide/req4d2/"
-prev_title: "Req 4d2 — Map the Logic"
+prev_title: "Map the Logic"
 next: "/merit-badges/robotics/guide/req5/"
-next_title: "Req 5 — Show and Explain Your Robot"
+next_title: "Show and Explain Your Robot"
 ---
 
 {{< drg/requirement number="4e" >}}

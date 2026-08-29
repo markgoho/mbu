@@ -1,13 +1,13 @@
 ---
-title: "Req 15b — Interview an EMS Professional"
+title: "Interview an EMS Professional"
 layout: "guide"
-group_title: "EMS Careers"
+group_title: "15. EMS Careers"
 req_number: "15b"
 req_path: "15.b"
 prev: "/merit-badges/first-aid/guide/req15a/"
-prev_title: "Req 15a — Visit an EMS Station"
+prev_title: "Visit an EMS Station"
 next: "/merit-badges/first-aid/guide/req15c/"
-next_title: "Req 15c — Research an EMS Career"
+next_title: "Research an EMS Career"
 ---
 
 {{< drg/requirement number="15b" >}}

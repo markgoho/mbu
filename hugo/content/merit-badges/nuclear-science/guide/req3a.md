@@ -1,13 +1,13 @@
 ---
-title: "Req 3a — How Accelerators Work"
+title: "How Accelerators Work"
 layout: "guide"
-group_title: "Particle Accelerators"
+group_title: "3. Particle Accelerators"
 req_number: "3a"
 req_path: "3.a"
 prev: "/merit-badges/nuclear-science/guide/req2/"
-prev_title: "Req 2 — Atoms, Isotopes, and Particles"
+prev_title: "Atoms, Isotopes, and Particles"
 next: "/merit-badges/nuclear-science/guide/req3b/"
-next_title: "Req 3b — Choose an Accelerator Path"
+next_title: "Choose an Accelerator Path"
 ---
 
 {{< drg/requirement number="3a" >}}

@@ -4,39 +4,39 @@ layout: guide
 badge_name: "Art"
 group_title: "Getting Started"
 next: "/merit-badges/art/guide/req1/"
-next_title: "Req 1 — Understanding Art"
+next_title: "Understanding Art"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/art/guide/"
-  - group_title: "What Is Art?"
+  - group_title: "1. What Is Art?"
     items:
-      - title: "Req 1 — Understanding Art"
+      - title: "1. Understanding Art"
         url: "/merit-badges/art/guide/req1/"
         is_sub: false
-  - group_title: "Building Blocks of Art"
+  - group_title: "2. Building Blocks of Art"
     items:
-      - title: "Req 2 — Elements of Art"
+      - title: "2. Elements of Art"
         url: "/merit-badges/art/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Principles of Design"
+      - title: "3. Principles of Design"
         url: "/merit-badges/art/guide/req3/"
         is_sub: false
-  - group_title: "Making Art"
+  - group_title: "4. Making Art"
     items:
-      - title: "Req 4 — Creating in Different Media"
+      - title: "4. Creating in Different Media"
         url: "/merit-badges/art/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Applied Art Projects"
+      - title: "5. Applied Art Projects"
         url: "/merit-badges/art/guide/req5/"
         is_sub: false
-  - group_title: "Exploring the Art World"
+  - group_title: "6. Exploring the Art World"
     items:
-      - title: "Req 6 — Visiting Art in Person"
+      - title: "6. Visiting Art in Person"
         url: "/merit-badges/art/guide/req6/"
         is_sub: false
-      - title: "Req 7 — Careers in Art"
+      - title: "7. Careers in Art"
         url: "/merit-badges/art/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

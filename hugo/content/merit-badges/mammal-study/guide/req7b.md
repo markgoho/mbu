@@ -1,11 +1,11 @@
 ---
-title: "Req 7b — Hobbies and Healthy Living"
+title: "Hobbies and Healthy Living"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/mammal-study/guide/req7a/"
-prev_title: "Req 7a — Mammal-Related Careers"
+prev_title: "Mammal-Related Careers"
 next: "/merit-badges/mammal-study/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

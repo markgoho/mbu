@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose a Future-Focused Topic"
+title: "Choose a Future-Focused Topic"
 layout: "guide"
-group_title: "Choose a Future-Focused Topic"
+group_title: "7. Choose a Future-Focused Topic"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/mining-in-society/guide/req6/"
-prev_title: "Req 6 — Mining, Reclamation, and Sustainability"
+prev_title: "Mining, Reclamation, and Sustainability"
 next: "/merit-badges/mining-in-society/guide/req7a/"
-next_title: "Req 7a — Mining Beyond Earth"
+next_title: "Mining Beyond Earth"
 ---
 
 {{< drg/requirement number="7" >}}

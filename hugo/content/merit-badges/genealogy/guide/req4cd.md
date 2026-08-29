@@ -1,12 +1,12 @@
 ---
-title: "Req 4c–4d — Finding and Evaluating a Document"
+title: "Finding and Evaluating a Document"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "4c"
 prev: "/merit-badges/genealogy/guide/req4ab/"
-prev_title: "Req 4a–4b — Physical and Digital Sources"
+prev_title: "Physical and Digital Sources"
 next: "/merit-badges/genealogy/guide/req4e/"
-next_title: "Req 4e — Where Records Live"
+next_title: "Where Records Live"
 ---
 
 {{< drg/requirement number="4c" >}}

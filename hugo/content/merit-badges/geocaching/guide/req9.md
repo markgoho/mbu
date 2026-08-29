@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Plan and Run a Geohunt"
+title: "Plan and Run a Geohunt"
 layout: guide
-group_title: "Leading a Geohunt"
+group_title: "9. Leading a Geohunt"
 req_number: "9"
 prev: "/merit-badges/geocaching/guide/req8d/"
-prev_title: "Req 8d — Cache In Trash Out Leadership"
+prev_title: "Cache In Trash Out Leadership"
 next: "/merit-badges/geocaching/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

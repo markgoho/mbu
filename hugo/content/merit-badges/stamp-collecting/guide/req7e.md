@@ -1,13 +1,13 @@
 ---
-title: "Req 7e — How Stamps Are Made"
+title: "How Stamps Are Made"
 layout: "guide"
-group_title: "Creative Projects"
+group_title: "7. Creative Projects"
 req_number: "7e"
 req_path: "7.e"
 prev: "/merit-badges/stamp-collecting/guide/req7d/"
-prev_title: "Req 7d — Research Stamp History"
+prev_title: "Research Stamp History"
 next: "/merit-badges/stamp-collecting/guide/req7f/"
-next_title: "Req 7f — Build a Stamp Display"
+next_title: "Build a Stamp Display"
 ---
 
 {{< drg/requirement number="7e" >}}

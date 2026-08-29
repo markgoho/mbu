@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — Roller Skating Overview"
+title: "Roller Skating Overview"
 layout: "guide"
-group_title: "Option B — Roller Skating"
+group_title: "2. Option B — Roller Skating"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/skating/guide/req2/"
-prev_title: "Req 2 — Pick Your Option"
+prev_title: "Pick Your Option"
 next: "/merit-badges/skating/guide/req2b1/"
-next_title: "Req 2b1 — Roller Safety & Etiquette"
+next_title: "Roller Safety & Etiquette"
 ---
 
 {{< drg/requirement number="2" option="Roller Skating" >}}

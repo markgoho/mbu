@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — History of Chess"
+title: "History of Chess"
 layout: guide
-group_title: "The Royal Game"
+group_title: "1. The Royal Game"
 req_number: "1a"
 prev: "/merit-badges/chess/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/chess/guide/req1b/"
-next_title: "Req 1b — Famous Chess Players"
+next_title: "Famous Chess Players"
 ---
 
 {{< drg/requirement number="1a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1g — Control Surfaces"
+title: "Control Surfaces"
 layout: guide
-group_title: "Mechanics of Flight"
+group_title: "1. Mechanics of Flight"
 req_number: "1g"
 prev: "/merit-badges/aviation/guide/req1f/"
-prev_title: "Req 1f — Airfoils & Lift"
+prev_title: "Airfoils & Lift"
 next: "/merit-badges/aviation/guide/req1h/"
-next_title: "Req 1h — Flight Instruments"
+next_title: "Flight Instruments"
 ---
 
 {{< drg/requirement number="1g" >}}

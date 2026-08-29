@@ -1,13 +1,13 @@
 ---
-title: "Req 9b — Identify Eight Species by Sight"
+title: "Identify Eight Species by Sight"
 layout: "guide"
-group_title: "Field Challenges"
+group_title: "9. Field Challenges"
 req_number: "9b"
 req_path: "9.b"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req9a/"
-prev_title: "Req 9a — Listen for Frogs and Toads"
+prev_title: "Listen for Frogs and Toads"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req9c/"
-next_title: "Req 9c — Teach a Short Talk"
+next_title: "Teach a Short Talk"
 ---
 
 {{< drg/requirement number="9b" >}}

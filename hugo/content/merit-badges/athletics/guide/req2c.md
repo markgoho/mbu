@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Balanced Diet"
+title: "Balanced Diet"
 layout: guide
-group_title: "Health & Nutrition"
+group_title: "2. Health & Nutrition"
 req_number: "2c"
 prev: "/merit-badges/athletics/guide/req2b/"
-prev_title: "Req 2b — Healthy Habits"
+prev_title: "Healthy Habits"
 next: "/merit-badges/athletics/guide/req3/"
-next_title: "Req 3 — Personal Training Program"
+next_title: "Personal Training Program"
 ---
 
 {{< drg/requirement number="2c" >}}

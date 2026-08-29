@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — Choose Two Scouting Milestones"
+title: "Choose Two Scouting Milestones"
 layout: "guide"
-group_title: "Scouting Milestones"
+group_title: "2. Scouting Milestones"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/scouting-heritage/guide/req2a9/"
-prev_title: "Req 2a9 — Edgar Robinson"
+prev_title: "Edgar Robinson"
 next: "/merit-badges/scouting-heritage/guide/req2b1/"
-next_title: "Req 2b1 — Brownsea Island"
+next_title: "Brownsea Island"
 ---
 
 {{< drg/requirement number="2b" >}}

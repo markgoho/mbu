@@ -1,13 +1,13 @@
 ---
-title: "Req 3c — Ensemble or Solo Service"
+title: "Ensemble or Solo Service"
 layout: "guide"
-group_title: "Choose Two Music Experiences"
+group_title: "3. Choose Two Music Experiences"
 req_number: "3c"
 req_path: "3.c"
 prev: "/merit-badges/music/guide/req3b/"
-prev_title: "Req 3b — Family Music Interview"
+prev_title: "Family Music Interview"
 next: "/merit-badges/music/guide/req3d/"
-next_title: "Req 3d — Influential Americans in Music"
+next_title: "Influential Americans in Music"
 ---
 
 {{< drg/requirement number="3c" >}}

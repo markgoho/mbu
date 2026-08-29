@@ -1,13 +1,13 @@
 ---
-title: "Req 2c14 — Passing from Behind"
+title: "Passing from Behind"
 layout: "guide"
-group_title: "Option C — In-Line Skating"
+group_title: "2. Option C — In-Line Skating"
 req_number: "2c14"
 req_path: "2.c.14"
 prev: "/merit-badges/skating/guide/req2c-13/"
-prev_title: "Req 2c13 — One-Foot Downhill Slalom"
+prev_title: "One-Foot Downhill Slalom"
 next: "/merit-badges/skating/guide/req2c-15/"
-next_title: "Req 2c15 — Avoiding Obstacles"
+next_title: "Avoiding Obstacles"
 ---
 
 {{< drg/requirement number="2c14" >}}

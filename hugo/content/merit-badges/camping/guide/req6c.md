@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Campsite Selection"
+title: "Campsite Selection"
 layout: guide
-group_title: "Shelter & Camp Setup"
+group_title: "6. Shelter & Camp Setup"
 req_number: "6c"
 prev: "/merit-badges/camping/guide/req6b/"
-prev_title: "Req 6b — Sanitation & Water Treatment"
+prev_title: "Sanitation & Water Treatment"
 next: "/merit-badges/camping/guide/req6d/"
-next_title: "Req 6d — Backpacks"
+next_title: "Backpacks"
 ---
 
 {{< drg/requirement number="6c" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Safety & First Aid"
+title: "Safety & First Aid"
 layout: guide
-group_title: "Safety First"
+group_title: "1. Safety First"
 req_number: "1"
 prev: "/merit-badges/basketry/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/basketry/guide/req2/"
-next_title: "Req 2 — Basket Types & Weaves"
+next_title: "Basket Types & Weaves"
 ---
 
 {{< drg/requirement number="1" >}}

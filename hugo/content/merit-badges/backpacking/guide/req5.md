@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Water Treatment & Hydration"
+title: "Water Treatment & Hydration"
 layout: guide
-group_title: "Water on the Trail"
+group_title: "5. Water on the Trail"
 req_number: "5"
 prev: "/merit-badges/backpacking/guide/req4c/"
-prev_title: "Req 4c — Choosing a Campsite"
+prev_title: "Choosing a Campsite"
 next: "/merit-badges/backpacking/guide/req6/"
-next_title: "Req 6 — Navigation"
+next_title: "Navigation"
 ---
 
 {{< drg/requirement number="5" >}}

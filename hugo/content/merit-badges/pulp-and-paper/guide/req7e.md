@@ -1,13 +1,13 @@
 ---
-title: "Req 7e — Research and Development"
+title: "Research and Development"
 layout: "guide"
-group_title: "Industry Experiences"
+group_title: "7. Industry Experiences"
 req_number: "7e"
 req_path: "7.e"
 prev: "/merit-badges/pulp-and-paper/guide/req7d/"
-prev_title: "Req 7d — Recycling Collection and Sorting"
+prev_title: "Recycling Collection and Sorting"
 next: "/merit-badges/pulp-and-paper/guide/req8/"
-next_title: "Req 8 — Careers in Paper and Packaging"
+next_title: "Careers in Paper and Packaging"
 ---
 
 {{< drg/requirement number="7e" >}}

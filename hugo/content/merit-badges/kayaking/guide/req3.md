@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Life Jackets & Rescue Equipment"
+title: "Life Jackets & Rescue Equipment"
 layout: guide
-group_title: "Safety Gear"
+group_title: "3. Safety Gear"
 req_number: "3"
 prev: "/merit-badges/kayaking/guide/req2/"
-prev_title: "Req 2 — Swimmer Test Readiness"
+prev_title: "Swimmer Test Readiness"
 next: "/merit-badges/kayaking/guide/req4/"
-next_title: "Req 4 — Kayak Parts, Design & Care"
+next_title: "Kayak Parts, Design & Care"
 ---
 
 {{< drg/requirement number="3" >}}

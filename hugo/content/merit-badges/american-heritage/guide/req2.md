@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — American Leaders & Change-Makers"
+title: "American Leaders & Change-Makers"
 layout: guide
-group_title: "People Who Shaped America"
+group_title: "2. People Who Shaped America"
 req_number: "2"
 prev: "/merit-badges/american-heritage/guide/req1/"
-prev_title: "Req 1 — The Declaration of Independence"
+prev_title: "The Declaration of Independence"
 next: "/merit-badges/american-heritage/guide/req3a/"
-next_title: "Req 3a — America in the News"
+next_title: "America in the News"
 ---
 
 {{< drg/requirement number="2" >}}

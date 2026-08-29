@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Three Branches of Government"
+title: "Three Branches of Government"
 layout: guide
-group_title: "How Government Works"
+group_title: "3. How Government Works"
 req_number: "3"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req2/"
-prev_title: "Req 2 — The Preamble"
+prev_title: "The Preamble"
 next: "/merit-badges/citizenship-in-the-nation/guide/req4a/"
-next_title: "Req 4a — Declaration of Independence"
+next_title: "Declaration of Independence"
 ---
 
 {{< drg/requirement number="3" >}}

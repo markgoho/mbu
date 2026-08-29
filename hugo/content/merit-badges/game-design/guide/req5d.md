@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Drawing Game Elements"
+title: "Drawing Game Elements"
 layout: guide
-group_title: "Designing Your Game"
+group_title: "5. Designing Your Game"
 req_number: "5d"
 prev: "/merit-badges/game-design/guide/req5c/"
-prev_title: "Req 5c — Rules and Resources"
+prev_title: "Rules and Resources"
 next: "/merit-badges/game-design/guide/req6a/"
-next_title: "Req 6a — Build the Prototype"
+next_title: "Build the Prototype"
 ---
 
 {{< drg/requirement number="5d" >}}

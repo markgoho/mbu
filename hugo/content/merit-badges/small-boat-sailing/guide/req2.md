@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Swimmer Test Readiness"
+title: "Swimmer Test Readiness"
 layout: "guide"
-group_title: "Safety, Readiness & Boat Setup"
+group_title: "1. Safety, Readiness & Boat Setup"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/small-boat-sailing/guide/req1/"
-prev_title: "Req 1 — Safety, Injuries & Safety Afloat"
+prev_title: "Safety, Injuries & Safety Afloat"
 next: "/merit-badges/small-boat-sailing/guide/req3/"
-next_title: "Req 3 — Know Your Boat"
+next_title: "Know Your Boat"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers in Farm Mechanics"
+title: "Careers in Farm Mechanics"
 layout: guide
-group_title: "Careers & Beyond"
+group_title: "7. Careers & Beyond"
 req_number: "7"
 prev: "/merit-badges/farm-mechanics/guide/req6/"
-prev_title: "Req 6 — Maintenance Procedures"
+prev_title: "Maintenance Procedures"
 next: "/merit-badges/farm-mechanics/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

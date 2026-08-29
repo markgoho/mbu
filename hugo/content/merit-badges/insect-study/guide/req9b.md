@@ -1,10 +1,10 @@
 ---
-title: "Req 9b — Turn Insect Study into a Hobby"
+title: "Turn Insect Study into a Hobby"
 layout: guide
-group_title: "Hobby Exploration"
+group_title: "9. Hobby Exploration"
 req_number: "9b"
 prev: "/merit-badges/insect-study/guide/req9a/"
-prev_title: "Req 9a — Research an Insect Study Career"
+prev_title: "Research an Insect Study Career"
 next: "/merit-badges/insect-study/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

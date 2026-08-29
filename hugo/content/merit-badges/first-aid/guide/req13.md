@@ -1,13 +1,13 @@
 ---
-title: "Req 13 — Eyes, Teeth & Strokes"
+title: "Eyes, Teeth & Strokes"
 layout: "guide"
-group_title: "Miscellaneous Conditions"
+group_title: "13. Miscellaneous Conditions"
 req_number: "13"
 req_path: "13"
 prev: "/merit-badges/first-aid/guide/req12/"
-prev_title: "Req 12 — Mental Health First Aid"
+prev_title: "Mental Health First Aid"
 next: "/merit-badges/first-aid/guide/req14/"
-next_title: "Req 14 — Teaching with EDGE"
+next_title: "Teaching with EDGE"
 ---
 
 {{< drg/requirement number="13" >}}

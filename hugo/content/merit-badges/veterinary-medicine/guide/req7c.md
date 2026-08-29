@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — The Hardest Parts of the Job"
+title: "The Hardest Parts of the Job"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/veterinary-medicine/guide/req7b/"
-prev_title: "Req 7b — What You Would Enjoy"
+prev_title: "What You Would Enjoy"
 next: "/merit-badges/veterinary-medicine/guide/req7d/"
-next_title: "Req 7d — What Might Surprise You"
+next_title: "What Might Surprise You"
 ---
 
 {{< drg/requirement number="7c" >}}

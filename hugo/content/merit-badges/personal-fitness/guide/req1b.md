@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Mental, Emotional & Social Fitness"
+title: "Mental, Emotional & Social Fitness"
 layout: guide
-group_title: "Defining Personal Fitness"
+group_title: "1. Defining Personal Fitness"
 req_number: "1b"
 prev: "/merit-badges/personal-fitness/guide/req1a/"
-prev_title: "Req 1a — Physical Fitness"
+prev_title: "Physical Fitness"
 next: "/merit-badges/personal-fitness/guide/req1c/"
-next_title: "Req 1c — Spiritual Fitness"
+next_title: "Spiritual Fitness"
 ---
 
 {{< drg/requirement number="1b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Choose a Forestry Field Experience"
+title: "Choose a Forestry Field Experience"
 layout: guide
-group_title: "Managing Forests"
+group_title: "4. Managing Forests"
 req_number: "5"
 prev: "/merit-badges/forestry/guide/req4/"
-prev_title: "Req 4 — Forest Management Basics"
+prev_title: "Forest Management Basics"
 next: "/merit-badges/forestry/guide/req5a/"
-next_title: "Req 5a — Managed Forest Visit"
+next_title: "Managed Forest Visit"
 ---
 
 {{< drg/requirement number="5" >}}

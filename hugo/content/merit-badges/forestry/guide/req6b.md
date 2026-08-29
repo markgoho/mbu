@@ -1,12 +1,12 @@
 ---
-title: "Req 6b — Review a Professional Hazard Tree Report"
+title: "Review a Professional Hazard Tree Report"
 layout: guide
-group_title: "Managing Forests"
+group_title: "4. Managing Forests"
 req_number: "6b"
 prev: "/merit-badges/forestry/guide/req6a/"
-prev_title: "Req 6a — Hazard Tree Inventory"
+prev_title: "Hazard Tree Inventory"
 next: "/merit-badges/forestry/guide/req7/"
-next_title: "Req 7 — Forest Threats & Wildfire Response"
+next_title: "Forest Threats & Wildfire Response"
 ---
 
 {{< drg/requirement number="6b" >}}

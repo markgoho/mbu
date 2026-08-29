@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Global Food Supply"
+title: "Global Food Supply"
 layout: guide
-group_title: "Food Sustainability"
+group_title: "3. Food Sustainability"
 req_number: "3b"
 prev: "/merit-badges/sustainability/guide/req3a/"
-prev_title: "Req 3a — Food Sources"
+prev_title: "Food Sources"
 next: "/merit-badges/sustainability/guide/req3c/"
-next_title: "Req 3c — Reducing Food Waste"
+next_title: "Reducing Food Waste"
 ---
 
 {{< drg/requirement number="3b" >}}

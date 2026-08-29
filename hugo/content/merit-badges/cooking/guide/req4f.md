@@ -1,12 +1,12 @@
 ---
-title: "Req 4f — Evaluate & Reflect"
+title: "Evaluate & Reflect"
 layout: guide
-group_title: "Cooking at Home"
+group_title: "4. Cooking at Home"
 req_number: "4f"
 prev: "/merit-badges/cooking/guide/req4e/"
-prev_title: "Req 4e — Meal Timing"
+prev_title: "Meal Timing"
 next: "/merit-badges/cooking/guide/req5a/"
-next_title: "Req 5a — Camp Menu Planning"
+next_title: "Camp Menu Planning"
 ---
 
 {{< drg/requirement number="4f" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Creating in Different Media"
+title: "Creating in Different Media"
 layout: guide
-group_title: "Making Art"
+group_title: "4. Making Art"
 req_number: "4"
 prev: "/merit-badges/art/guide/req3/"
-prev_title: "Req 3 — Principles of Design"
+prev_title: "Principles of Design"
 next: "/merit-badges/art/guide/req5/"
-next_title: "Req 5 — Applied Art Projects"
+next_title: "Applied Art Projects"
 ---
 
 {{< drg/requirement number="4" >}}

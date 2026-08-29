@@ -4,74 +4,74 @@ layout: guide
 badge_name: "Backpacking"
 group_title: "Getting Started"
 next: "/merit-badges/backpacking/guide/req1/"
-next_title: "Req 1 — Trail Health & First Aid"
+next_title: "Trail Health & First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/backpacking/guide/"
-  - group_title: "Trail Health & Safety"
+  - group_title: "1. Trail Health & Safety"
     items:
-      - title: "Req 1 — Trail Health & First Aid"
+      - title: "1. Trail Health & First Aid"
         url: "/merit-badges/backpacking/guide/req1/"
         is_sub: false
-  - group_title: "Gear & Pack Weight"
+  - group_title: "2. Gear & Pack Weight"
     items:
-      - title: "Req 2a — Essential Gear"
+      - title: "a Essential Gear"
         url: "/merit-badges/backpacking/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Reducing Pack Weight"
+      - title: "b Reducing Pack Weight"
         url: "/merit-badges/backpacking/guide/req2b/"
         is_sub: true
-  - group_title: "Crew Organization"
+  - group_title: "3. Crew Organization"
     items:
-      - title: "Req 3 — Crew Organization & Safety"
+      - title: "3. Crew Organization & Safety"
         url: "/merit-badges/backpacking/guide/req3/"
         is_sub: false
-  - group_title: "Leave No Trace & Camp Hygiene"
+  - group_title: "4. Leave No Trace & Camp Hygiene"
     items:
-      - title: "Req 4a — Leave No Trace"
+      - title: "a Leave No Trace"
         url: "/merit-badges/backpacking/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Waste & Hygiene"
+      - title: "b Waste & Hygiene"
         url: "/merit-badges/backpacking/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Choosing a Campsite"
+      - title: "c Choosing a Campsite"
         url: "/merit-badges/backpacking/guide/req4c/"
         is_sub: true
-  - group_title: "Water on the Trail"
+  - group_title: "5. Water on the Trail"
     items:
-      - title: "Req 5 — Water Treatment & Hydration"
+      - title: "5. Water Treatment & Hydration"
         url: "/merit-badges/backpacking/guide/req5/"
         is_sub: false
-  - group_title: "Navigation"
+  - group_title: "6. Navigation"
     items:
-      - title: "Req 6 — Navigation"
+      - title: "6. Navigation"
         url: "/merit-badges/backpacking/guide/req6/"
         is_sub: false
-  - group_title: "Weather"
+  - group_title: "7. Weather"
     items:
-      - title: "Req 7 — Weather Preparedness"
+      - title: "7. Weather Preparedness"
         url: "/merit-badges/backpacking/guide/req7/"
         is_sub: false
-  - group_title: "Backcountry Cooking"
+  - group_title: "8. Backcountry Cooking"
     items:
-      - title: "Req 8 — Stoves & Backcountry Cooking"
+      - title: "8. Stoves & Backcountry Cooking"
         url: "/merit-badges/backpacking/guide/req8/"
         is_sub: false
-  - group_title: "Your First Trek"
+  - group_title: "9. Your First Trek"
     items:
-      - title: "Req 9 — Planning & Packing"
+      - title: "9. Planning & Packing"
         url: "/merit-badges/backpacking/guide/req9/"
         is_sub: false
-  - group_title: "Hit the Trail"
+  - group_title: "10. Hit the Trail"
     items:
-      - title: "Req 10 — Three-Day Treks"
+      - title: "10. Three-Day Treks"
         url: "/merit-badges/backpacking/guide/req10/"
         is_sub: false
-  - group_title: "The Big Trek"
+  - group_title: "11. The Big Trek"
     items:
-      - title: "Req 11 — The Big Trek"
+      - title: "11. The Big Trek"
         url: "/merit-badges/backpacking/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

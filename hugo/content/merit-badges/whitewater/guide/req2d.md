@@ -1,13 +1,13 @@
 ---
-title: "Req 2d — Scout, Portage, Decide"
+title: "Scout, Portage, Decide"
 layout: "guide"
-group_title: "Reading the River"
+group_title: "2. Reading the River"
 req_number: "2d"
 req_path: "2.d"
 prev: "/merit-badges/whitewater/guide/req2c/"
-prev_title: "Req 2c — Edge Control in Current"
+prev_title: "Edge Control in Current"
 next: "/merit-badges/whitewater/guide/req3/"
-next_title: "Req 3 — Build on Your Paddling Base"
+next_title: "Build on Your Paddling Base"
 ---
 
 {{< drg/requirement number="2d" >}}

@@ -4,66 +4,66 @@ layout: "guide"
 badge_name: "Pulp and Paper"
 group_title: "Getting Started"
 next: "/merit-badges/pulp-and-paper/guide/req1/"
-next_title: "Req 1 — Paper Through History"
+next_title: "Paper Through History"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/pulp-and-paper/guide/"
         is_sub: false
-  - group_title: "Paper Through Time"
+  - group_title: "1. Paper Through Time"
     items:
-      - title: "Req 1 — Paper Through History"
+      - title: "1. Paper Through History"
         url: "/merit-badges/pulp-and-paper/guide/req1/"
         is_sub: false
-  - group_title: "Growing the Raw Material"
+  - group_title: "2. Growing the Raw Material"
     items:
-      - title: "Req 2 — Forests, Fiber, and Stewardship"
+      - title: "2. Forests, Fiber, and Stewardship"
         url: "/merit-badges/pulp-and-paper/guide/req2/"
         is_sub: false
-  - group_title: "From Tree Fiber to Pulp"
+  - group_title: "3. From Tree Fiber to Pulp"
     items:
-      - title: "Req 3 — Fibers, Pulp, and Bleaching"
+      - title: "3. Fibers, Pulp, and Bleaching"
         url: "/merit-badges/pulp-and-paper/guide/req3/"
         is_sub: false
-  - group_title: "Making and Recycling Paper"
+  - group_title: "4. Making and Recycling Paper"
     items:
-      - title: "Req 4 — From Pulp to Paper"
+      - title: "4. From Pulp to Paper"
         url: "/merit-badges/pulp-and-paper/guide/req4/"
         is_sub: false
-  - group_title: "Engineering Paper Performance"
+  - group_title: "5. Engineering Paper Performance"
     items:
-      - title: "Req 5 — Coatings and Specialty Papers"
+      - title: "5. Coatings and Specialty Papers"
         url: "/merit-badges/pulp-and-paper/guide/req5/"
         is_sub: false
-  - group_title: "Paper at Home"
+  - group_title: "6. Paper at Home"
     items:
-      - title: "Req 6 — Paper Products Around You"
+      - title: "6. Paper Products Around You"
         url: "/merit-badges/pulp-and-paper/guide/req6/"
         is_sub: false
-  - group_title: "Industry Experiences"
+  - group_title: "7. Industry Experiences"
     items:
-      - title: "Req 7 — Choose Your Industry Experience"
+      - title: "7. Choose Your Industry Experience"
         url: "/merit-badges/pulp-and-paper/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Inside a Pulp Mill"
+      - title: "a Inside a Pulp Mill"
         url: "/merit-badges/pulp-and-paper/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Inside a Paper Mill"
+      - title: "b Inside a Paper Mill"
         url: "/merit-badges/pulp-and-paper/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Boxes and Corrugated Containers"
+      - title: "c Boxes and Corrugated Containers"
         url: "/merit-badges/pulp-and-paper/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Recycling Collection and Sorting"
+      - title: "d Recycling Collection and Sorting"
         url: "/merit-badges/pulp-and-paper/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — Research and Development"
+      - title: "e Research and Development"
         url: "/merit-badges/pulp-and-paper/guide/req7e/"
         is_sub: true
-  - group_title: "Exploring Paper Careers"
+  - group_title: "8. Exploring Paper Careers"
     items:
-      - title: "Req 8 — Careers in Paper and Packaging"
+      - title: "8. Careers in Paper and Packaging"
         url: "/merit-badges/pulp-and-paper/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

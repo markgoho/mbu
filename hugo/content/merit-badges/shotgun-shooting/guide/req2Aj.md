@@ -1,11 +1,11 @@
 ---
-title: "Req 2A-j — Shooting Moving Targets"
+title: "Shooting Moving Targets"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-j"
 req_path: "2.A.j"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ai/"
-prev_title: "Req 2A-i — Selecting a Shotgun"
+prev_title: "Selecting a Shotgun"
 next: "/merit-badges/shotgun-shooting/guide/req2B/"
 next_title: "Option B Overview"
 ---

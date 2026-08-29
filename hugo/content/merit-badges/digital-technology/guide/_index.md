@@ -4,88 +4,88 @@ layout: guide
 badge_name: "Digital Technology"
 group_title: "Getting Started"
 next: "/merit-badges/digital-technology/guide/req1/"
-next_title: "Req 1 — Digital Safety Awareness"
+next_title: "Digital Safety Awareness"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/digital-technology/guide/"
-  - group_title: "Digital Safety"
+  - group_title: "1. Digital Safety"
     items:
-      - title: "Req 1 — Digital Safety Awareness"
+      - title: "1. Digital Safety Awareness"
         url: "/merit-badges/digital-technology/guide/req1/"
-  - group_title: "Computing Past & Future"
+  - group_title: "2. Computing Past & Future"
     items:
-      - title: "Req 2a — History of Digital Technology"
+      - title: "a History of Digital Technology"
         url: "/merit-badges/digital-technology/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Future Technology"
+      - title: "b Future Technology"
         url: "/merit-badges/digital-technology/guide/req2b/"
         is_sub: true
-  - group_title: "How Digital Data Works"
+  - group_title: "3. How Digital Data Works"
     items:
-      - title: "Req 3a — Digitizing Text, Sound & Images"
+      - title: "a Digitizing Text, Sound & Images"
         url: "/merit-badges/digital-technology/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Lossy vs. Lossless Compression"
+      - title: "b Lossy vs. Lossless Compression"
         url: "/merit-badges/digital-technology/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Programmable Devices"
+      - title: "c Programmable Devices"
         url: "/merit-badges/digital-technology/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Computers, Mobile & Consoles"
+      - title: "d Computers, Mobile & Consoles"
         url: "/merit-badges/digital-technology/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Computer Networks"
+      - title: "e Computer Networks"
         url: "/merit-badges/digital-technology/guide/req3e/"
         is_sub: true
-  - group_title: "Software & Security"
+  - group_title: "4. Software & Security"
     items:
-      - title: "Req 4a — Programs, Apps & How They Run"
+      - title: "a Programs, Apps & How They Run"
         url: "/merit-badges/digital-technology/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Software You Use"
+      - title: "b Software You Use"
         url: "/merit-badges/digital-technology/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Malware & Protection"
+      - title: "c Malware & Protection"
         url: "/merit-badges/digital-technology/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Barcodes, QR Codes & RFID"
+      - title: "d Barcodes, QR Codes & RFID"
         url: "/merit-badges/digital-technology/guide/req4d/"
         is_sub: true
-  - group_title: "The Internet"
+  - group_title: "5. The Internet"
     items:
-      - title: "Req 5a — How Data Travels Online"
+      - title: "a How Data Travels Online"
         url: "/merit-badges/digital-technology/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Search Engine Research"
+      - title: "b Search Engine Research"
         url: "/merit-badges/digital-technology/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — HTTPS & Security Certificates"
+      - title: "c HTTPS & Security Certificates"
         url: "/merit-badges/digital-technology/guide/req5c/"
         is_sub: true
-  - group_title: "Digital Projects"
+  - group_title: "6. Digital Projects"
     items:
-      - title: "Req 6 — Hands-On Digital Projects"
+      - title: "6. Hands-On Digital Projects"
         url: "/merit-badges/digital-technology/guide/req6/"
-  - group_title: "Intellectual Property"
+  - group_title: "7. Intellectual Property"
     items:
-      - title: "Req 7a — Copyrights, Patents & Trademarks"
+      - title: "a Copyrights, Patents & Trademarks"
         url: "/merit-badges/digital-technology/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Software Sharing Ethics"
+      - title: "b Software Sharing Ethics"
         url: "/merit-badges/digital-technology/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — IP Disputes in the News"
+      - title: "c IP Disputes in the News"
         url: "/merit-badges/digital-technology/guide/req7c/"
         is_sub: true
-  - group_title: "E-Waste & Recycling"
+  - group_title: "8. E-Waste & Recycling"
     items:
-      - title: "Req 8 — Responsible Tech Disposal"
+      - title: "8. Responsible Tech Disposal"
         url: "/merit-badges/digital-technology/guide/req8/"
-  - group_title: "Careers & Hobbies"
+  - group_title: "9. Careers & Hobbies"
     items:
-      - title: "Req 9 — Tech Careers & Hobbies"
+      - title: "9. Tech Careers & Hobbies"
         url: "/merit-badges/digital-technology/guide/req9/"
   - group_title: "Beyond the Badge"
     items:

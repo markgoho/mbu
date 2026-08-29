@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Mapping Mines and Resources"
+title: "Mapping Mines and Resources"
 layout: "guide"
-group_title: "Mining on the Map"
+group_title: "2. Mining on the Map"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/mining-in-society/guide/req1/"
-prev_title: "Req 1 — Minerals in Everyday Life"
+prev_title: "Minerals in Everyday Life"
 next: "/merit-badges/mining-in-society/guide/req3/"
-next_title: "Req 3 — Mine Safety and Protective Gear"
+next_title: "Mine Safety and Protective Gear"
 ---
 
 {{< drg/requirement number="2" >}}

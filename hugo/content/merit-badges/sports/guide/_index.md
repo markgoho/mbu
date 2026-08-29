@@ -4,47 +4,47 @@ layout: "guide"
 badge_name: "Sports"
 group_title: "Getting Started"
 next: "/merit-badges/sports/guide/req1/"
-next_title: "Req 1 — Sports Safety and First Aid"
+next_title: "Sports Safety and First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/sports/guide/"
         is_sub: false
-  - group_title: "Safety and Injury Prevention"
+  - group_title: "1. Safety and Injury Prevention"
     items:
-      - title: "Req 1 — Sports Safety and First Aid"
+      - title: "1. Sports Safety and First Aid"
         url: "/merit-badges/sports/guide/req1/"
         is_sub: false
-  - group_title: "Building a Healthy Athlete"
+  - group_title: "2. Building a Healthy Athlete"
     items:
-      - title: "Req 2 — Health Habits That Support Performance"
+      - title: "2. Health Habits That Support Performance"
         url: "/merit-badges/sports/guide/req2/"
         is_sub: false
-  - group_title: "Training and Character"
+  - group_title: "3. Training and Character"
     items:
-      - title: "Req 3 — Preparation, Strength, and Sportsmanship"
+      - title: "3. Preparation, Strength, and Sportsmanship"
         url: "/merit-badges/sports/guide/req3/"
         is_sub: false
-  - group_title: "Choosing Your Two Sports"
+  - group_title: "4. Choosing Your Two Sports"
     items:
-      - title: "Req 4 — Pick Sports You Can Really Commit To"
+      - title: "4. Pick Sports You Can Really Commit To"
         url: "/merit-badges/sports/guide/req4/"
         is_sub: false
-  - group_title: "Season Planning and Participation"
+  - group_title: "5. Season Planning and Participation"
     items:
-      - title: "Req 5 — Train, Compete, and Reflect"
+      - title: "5. Train, Compete, and Reflect"
         url: "/merit-badges/sports/guide/req5/"
         is_sub: false
-  - group_title: "Beyond Participation"
+  - group_title: "6. Beyond Participation"
     items:
-      - title: "Req 6 — Choose Your Next Step"
+      - title: "6. Choose Your Next Step"
         url: "/merit-badges/sports/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Explore a Sports Career"
+      - title: "a Explore a Sports Career"
         url: "/merit-badges/sports/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Build a Sports-Based Lifestyle"
+      - title: "b Build a Sports-Based Lifestyle"
         url: "/merit-badges/sports/guide/req6b/"
         is_sub: true
   - group_title: "Beyond the Badge"

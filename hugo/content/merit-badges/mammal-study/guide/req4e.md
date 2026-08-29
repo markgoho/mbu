@@ -1,13 +1,13 @@
 ---
-title: "Req 4e — Natural History Museum Visit"
+title: "Natural History Museum Visit"
 layout: "guide"
-group_title: "Mammal Investigation Options"
+group_title: "4. Mammal Investigation Options"
 req_number: "4e"
 req_path: "4.e"
 prev: "/merit-badges/mammal-study/guide/req4d/"
-prev_title: "Req 4d — Tracking Pit Investigation"
+prev_title: "Tracking Pit Investigation"
 next: "/merit-badges/mammal-study/guide/req4f/"
-next_title: "Req 4f — Mammal Book Report"
+next_title: "Mammal Book Report"
 ---
 
 {{< drg/requirement number="4e" >}}

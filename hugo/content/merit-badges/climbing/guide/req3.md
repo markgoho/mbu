@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Dressing for the Climb"
+title: "Dressing for the Climb"
 layout: guide
-group_title: "Climbing Attire"
+group_title: "3. Climbing Attire"
 req_number: "3"
 prev: "/merit-badges/climbing/guide/req2/"
-prev_title: "Req 2 — Leave No Trace & Outdoor Code"
+prev_title: "Leave No Trace & Outdoor Code"
 next: "/merit-badges/climbing/guide/req4a/"
-next_title: "Req 4a — Climb Difficulty Ratings"
+next_title: "Climb Difficulty Ratings"
 ---
 
 {{< drg/requirement number="3" >}}

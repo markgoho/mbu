@@ -1,13 +1,13 @@
 ---
-title: "Req 5c — Third Language Project"
+title: "Third Language Project"
 layout: "guide"
-group_title: "Building Programs"
+group_title: "5. Building Programs"
 req_number: "5c"
 req_path: "5.c"
 prev: "/merit-badges/programming/guide/req5b/"
-prev_title: "Req 5b — Second Language Project"
+prev_title: "Second Language Project"
 next: "/merit-badges/programming/guide/req6/"
-next_title: "Req 6 — Careers or Coding for Life"
+next_title: "Careers or Coding for Life"
 ---
 
 {{< drg/requirement number="5c" >}}

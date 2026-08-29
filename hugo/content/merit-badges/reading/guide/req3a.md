@@ -1,13 +1,13 @@
 ---
-title: "Req 3a — Write a Thoughtful Review"
+title: "Write a Thoughtful Review"
 layout: "guide"
-group_title: "Responding to Books"
+group_title: "3. Responding to Books"
 req_number: "3a"
 req_path: "3.a"
 prev: "/merit-badges/reading/guide/req3/"
-prev_title: "Req 3 — Choose How to Share What You Read"
+prev_title: "Choose How to Share What You Read"
 next: "/merit-badges/reading/guide/req3b/"
-next_title: "Req 3b — Compare Book and Movie"
+next_title: "Compare Book and Movie"
 ---
 
 {{< drg/requirement number="3a" >}}

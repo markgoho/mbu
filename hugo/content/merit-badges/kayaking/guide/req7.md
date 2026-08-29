@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Essential Kayak Strokes"
+title: "Essential Kayak Strokes"
 layout: guide
-group_title: "Solo Stroke Skills"
+group_title: "7. Solo Stroke Skills"
 req_number: "7"
 prev: "/merit-badges/kayaking/guide/req6/"
-prev_title: "Req 6 — Capsize Recovery Skills"
+prev_title: "Capsize Recovery Skills"
 next: "/merit-badges/kayaking/guide/req8/"
-next_title: "Req 8 — Maneuvering with Control"
+next_title: "Maneuvering with Control"
 ---
 
 {{< drg/requirement number="7" >}}

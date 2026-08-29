@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Create Your Animations"
+title: "Create Your Animations"
 layout: guide
-group_title: "Animation Projects"
+group_title: "3. Animation Projects"
 req_number: "3"
 prev: "/merit-badges/animation/guide/req2/"
-prev_title: "Req 2 — The 12 Principles"
+prev_title: "The 12 Principles"
 next: "/merit-badges/animation/guide/req4a/"
-next_title: "Req 4a — Studio Tour"
+next_title: "Studio Tour"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 10 — Lessons From a Catastrophic Fire"
+title: "Lessons From a Catastrophic Fire"
 layout: "guide"
-group_title: "Learning From the Past"
+group_title: "10. Learning From the Past"
 req_number: "10"
 req_path: "10"
 prev: "/merit-badges/wildland-fire-management/guide/req9e/"
-prev_title: "Req 9e — Talk Fire Weather"
+prev_title: "Talk Fire Weather"
 next: "/merit-badges/wildland-fire-management/guide/req11/"
-next_title: "Req 11 — Careers in Wildland Fire"
+next_title: "Careers in Wildland Fire"
 ---
 
 {{< drg/requirement number="10" >}}

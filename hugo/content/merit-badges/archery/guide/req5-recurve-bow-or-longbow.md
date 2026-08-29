@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Recurve Bow or Longbow"
+title: "Recurve Bow or Longbow"
 layout: guide
-group_title: "On the Shooting Line"
+group_title: "5. On the Shooting Line"
 req_number: "5"
 prev: "/merit-badges/archery/guide/req5/"
-prev_title: "Req 5 — Shooting Options Overview"
+prev_title: "Shooting Options Overview"
 next: "/merit-badges/archery/guide/req5-compound-bow/"
-next_title: "Req 5 — Compound Bow"
+next_title: "Compound Bow"
 ---
 
 {{< drg/requirement number="5" option="Option A—Recurve Bow or Longbow" >}}

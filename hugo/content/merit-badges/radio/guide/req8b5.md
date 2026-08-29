@@ -1,13 +1,13 @@
 ---
-title: "Req 8b5 — Alternative Platforms"
+title: "Alternative Platforms"
 layout: "guide"
-group_title: "Option B: Radio Broadcasting"
+group_title: "8. Option B: Radio Broadcasting"
 req_number: "8b5"
 req_path: "8.b.5"
 prev: "/merit-badges/radio/guide/req8b4/"
-prev_title: "Req 8b4 — Broadcasting Terms"
+prev_title: "Broadcasting Terms"
 next: "/merit-badges/radio/guide/req8c/"
-next_title: "Req 8c — Shortwave Overview"
+next_title: "Shortwave Overview"
 guide_nav:
   - group_title: "Getting Started"
     items:

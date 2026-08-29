@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Staying Found and Getting Found"
+title: "Staying Found and Getting Found"
 layout: "guide"
-group_title: "Staying Found and Navigating"
+group_title: "2. Staying Found and Navigating"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/search-and-rescue/guide/req1c/"
-prev_title: "Req 1c — What Goes in an SAR Pack"
+prev_title: "What Goes in an SAR Pack"
 next: "/merit-badges/search-and-rescue/guide/req3/"
-next_title: "Req 3 — Reading the Map Like a Searcher"
+next_title: "Reading the Map Like a Searcher"
 ---
 
 {{< drg/requirement number="2" >}}

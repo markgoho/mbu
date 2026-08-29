@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Visit with a Lawyer"
+title: "Visit with a Lawyer"
 layout: guide
-group_title: "Legal Careers"
+group_title: "7. Legal Careers"
 req_number: "7"
 prev: "/merit-badges/law/guide/req6/"
-prev_title: "Requirement 6 — Courtroom Experience"
+prev_title: "Courtroom Experience"
 next: "/merit-badges/law/guide/req8/"
-next_title: "Requirement 8 — Becoming a Lawyer or Judge"
+next_title: "Becoming a Lawyer or Judge"
 ---
 
 {{< drg/requirement number="7" >}}

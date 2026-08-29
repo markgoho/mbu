@@ -1,10 +1,10 @@
 ---
-title: "Req 6 — Careers & Leadership"
+title: "Careers & Leadership"
 layout: guide
-group_title: "Putting It All Together"
+group_title: "5. Putting It All Together"
 req_number: "6"
 prev: "/merit-badges/american-business/guide/req5/"
-prev_title: "Req 5 — Researching a Business"
+prev_title: "Researching a Business"
 next: "/merit-badges/american-business/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

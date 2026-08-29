@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Choose a Reporting Project"
+title: "Choose a Reporting Project"
 layout: "guide"
-group_title: "Share What You Learned"
+group_title: "8. Share What You Learned"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/oceanography/guide/req7f/"
-prev_title: "Req 7f — Track Satellite Images"
+prev_title: "Track Satellite Images"
 next: "/merit-badges/oceanography/guide/req8a/"
-next_title: "Req 8a — Read and Report on a Book"
+next_title: "Read and Report on a Book"
 ---
 
 {{< drg/requirement number="8" >}}

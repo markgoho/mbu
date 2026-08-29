@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Birds & the Environment"
+title: "Birds & the Environment"
 layout: guide
-group_title: "Why Birds Matter"
+group_title: "1. Why Birds Matter"
 req_number: "1"
 prev: "/merit-badges/bird-study/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/bird-study/guide/req2a/"
-next_title: "Req 2a — Bird Body Parts"
+next_title: "Bird Body Parts"
 ---
 
 {{< drg/requirement number="1" >}}

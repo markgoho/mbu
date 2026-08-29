@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Animal Management"
+title: "Animal Management"
 layout: guide
-group_title: "Animal Management"
+group_title: "4. Animal Management"
 req_number: "4"
 prev: "/merit-badges/animal-science/guide/req3/"
-prev_title: "Req 3 — Digestive Systems"
+prev_title: "Digestive Systems"
 next: "/merit-badges/animal-science/guide/req5a/"
-next_title: "Req 5a — Breeding Improvements"
+next_title: "Breeding Improvements"
 ---
 
 {{< drg/requirement number="4" >}}

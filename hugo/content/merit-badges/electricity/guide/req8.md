@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Reading Your Electric Bill"
+title: "Reading Your Electric Bill"
 layout: guide
-group_title: "Circuits at Home"
+group_title: "6. Circuits at Home"
 req_number: "8"
 prev: "/merit-badges/electricity/guide/req7/"
-prev_title: "Req 7 — Room Wiring Diagram"
+prev_title: "Room Wiring Diagram"
 next: "/merit-badges/electricity/guide/req9/"
-next_title: "Req 9 — Essential Electrical Terms"
+next_title: "Essential Electrical Terms"
 ---
 
 {{< drg/requirement number="8" >}}

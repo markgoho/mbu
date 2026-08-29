@@ -1,12 +1,12 @@
 ---
-title: "Req 6e — Using Drywall Anchors"
+title: "Using Drywall Anchors"
 layout: guide
-group_title: "Indoor Finish Repairs"
+group_title: "6. Indoor Finish Repairs"
 req_number: "6e"
 prev: "/merit-badges/home-repairs/guide/req6d/"
-prev_title: "Req 6d — Patching Drywall"
+prev_title: "Patching Drywall"
 next: "/merit-badges/home-repairs/guide/req6f/"
-next_title: "Req 6f — Reinforcing a Picture Frame"
+next_title: "Reinforcing a Picture Frame"
 ---
 
 {{< drg/requirement number="6e" >}}

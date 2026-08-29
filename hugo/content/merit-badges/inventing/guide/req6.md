@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Plan Your Invention"
+title: "Plan Your Invention"
 layout: guide
-group_title: "From Problem to Model"
+group_title: "6. From Problem to Model"
 req_number: "6"
 prev: "/merit-badges/inventing/guide/req5/"
-prev_title: "Req 5 — Rethink a Camping Product"
+prev_title: "Rethink a Camping Product"
 next: "/merit-badges/inventing/guide/req7/"
-next_title: "Req 7 — Prototype, Test, Improve"
+next_title: "Prototype, Test, Improve"
 ---
 
 {{< drg/requirement number="6" >}}

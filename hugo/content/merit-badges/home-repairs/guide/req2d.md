@@ -1,12 +1,12 @@
 ---
-title: "Req 2d — Patching Concrete or Asphalt"
+title: "Patching Concrete or Asphalt"
 layout: guide
-group_title: "Outdoor Repairs"
+group_title: "2. Outdoor Repairs"
 req_number: "2d"
 prev: "/merit-badges/home-repairs/guide/req2c/"
-prev_title: "Req 2c — Exterior Caulking"
+prev_title: "Exterior Caulking"
 next: "/merit-badges/home-repairs/guide/req2e/"
-next_title: "Req 2e — Screen Repair"
+next_title: "Screen Repair"
 ---
 
 {{< drg/requirement number="2d" >}}

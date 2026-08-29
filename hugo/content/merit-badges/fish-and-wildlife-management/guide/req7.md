@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Choose a Fish Study Activity"
+title: "Choose a Fish Study Activity"
 layout: guide
-group_title: "Fish Study Techniques"
+group_title: "7. Fish Study Techniques"
 req_number: "7"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req6c/"
-prev_title: "Req 6c — Wildlife Scrapbook"
+prev_title: "Wildlife Scrapbook"
 next: "/merit-badges/fish-and-wildlife-management/guide/req7a/"
-next_title: "Req 7a — Fish Aging from Scales"
+next_title: "Fish Aging from Scales"
 ---
 
 {{< drg/requirement number="7" >}}

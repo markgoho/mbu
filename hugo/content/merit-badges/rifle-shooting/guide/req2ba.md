@@ -1,13 +1,13 @@
 ---
-title: "Req 2ba — Three Main Parts of an Air Rifle"
+title: "Three Main Parts of an Air Rifle"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2ba"
 req_path: "2.b.a"
 prev: "/merit-badges/rifle-shooting/guide/req2b/"
-prev_title: "Req 2b — Option B Overview"
+prev_title: "Option B Overview"
 next: "/merit-badges/rifle-shooting/guide/req2bb/"
-next_title: "Req 2bb — Safe Storage and Handling"
+next_title: "Safe Storage and Handling"
 ---
 
 {{< drg/requirement number="2ba" >}}

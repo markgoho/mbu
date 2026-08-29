@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Livestock Diseases"
+title: "Livestock Diseases"
 layout: guide
-group_title: "Animal Health"
+group_title: "2. Animal Health"
 req_number: "2"
 prev: "/merit-badges/animal-science/guide/req1/"
-prev_title: "Req 1 — Livestock Breeds"
+prev_title: "Livestock Breeds"
 next: "/merit-badges/animal-science/guide/req3/"
-next_title: "Req 3 — Digestive Systems"
+next_title: "Digestive Systems"
 ---
 
 {{< drg/requirement number="2" >}}

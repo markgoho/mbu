@@ -4,70 +4,70 @@ layout: guide
 badge_name: "Fish and Wildlife Management"
 group_title: "Getting Started"
 next: "/merit-badges/fish-and-wildlife-management/guide/req1/"
-next_title: "Req 1 — What Is Fish and Wildlife Management?"
+next_title: "What Is Fish and Wildlife Management?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/fish-and-wildlife-management/guide/"
-  - group_title: "Conservation Fundamentals"
+  - group_title: "1. Conservation Fundamentals"
     items:
-      - title: "Req 1 — What Is Fish and Wildlife Management?"
+      - title: "1. What Is Fish and Wildlife Management?"
         url: "/merit-badges/fish-and-wildlife-management/guide/req1/"
-      - title: "Req 2 — Major Threats to Fish and Wildlife"
+      - title: "2. Major Threats to Fish and Wildlife"
         url: "/merit-badges/fish-and-wildlife-management/guide/req2/"
-      - title: "Req 3 — How Everyone Can Help"
+      - title: "3. How Everyone Can Help"
         url: "/merit-badges/fish-and-wildlife-management/guide/req3/"
-      - title: "Req 4 — Five Management Practices"
+      - title: "4. Five Management Practices"
         url: "/merit-badges/fish-and-wildlife-management/guide/req4/"
-  - group_title: "Hands-On Field Projects"
+  - group_title: "5. Hands-On Field Projects"
     items:
-      - title: "Req 5 — Choose a Hands-On Project"
+      - title: "5. Choose a Hands-On Project"
         url: "/merit-badges/fish-and-wildlife-management/guide/req5/"
-      - title: "Req 5a — Nest Boxes"
+      - title: "a Nest Boxes"
         url: "/merit-badges/fish-and-wildlife-management/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Bird Feeders"
+      - title: "b Bird Feeders"
         url: "/merit-badges/fish-and-wildlife-management/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Habitat Improvement Project"
+      - title: "c Habitat Improvement Project"
         url: "/merit-badges/fish-and-wildlife-management/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Wildlife Blind"
+      - title: "d Wildlife Blind"
         url: "/merit-badges/fish-and-wildlife-management/guide/req5d/"
         is_sub: true
-  - group_title: "Wildlife Observation & Research"
+  - group_title: "6. Wildlife Observation & Research"
     items:
-      - title: "Req 6 — Choose an Observation or Research Activity"
+      - title: "6. Choose an Observation or Research Activity"
         url: "/merit-badges/fish-and-wildlife-management/guide/req6/"
-      - title: "Req 6a — Observe 25 Species"
+      - title: "a Observe 25 Species"
         url: "/merit-badges/fish-and-wildlife-management/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Classify State Species"
+      - title: "b Classify State Species"
         url: "/merit-badges/fish-and-wildlife-management/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Wildlife Scrapbook"
+      - title: "c Wildlife Scrapbook"
         url: "/merit-badges/fish-and-wildlife-management/guide/req6c/"
         is_sub: true
-  - group_title: "Fish Study Techniques"
+  - group_title: "7. Fish Study Techniques"
     items:
-      - title: "Req 7 — Choose a Fish Study Activity"
+      - title: "7. Choose a Fish Study Activity"
         url: "/merit-badges/fish-and-wildlife-management/guide/req7/"
-      - title: "Req 7a — Fish Aging from Scales"
+      - title: "a Fish Aging from Scales"
         url: "/merit-badges/fish-and-wildlife-management/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Creel Census"
+      - title: "b Creel Census"
         url: "/merit-badges/fish-and-wildlife-management/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Fish Stomach Contents"
+      - title: "c Fish Stomach Contents"
         url: "/merit-badges/fish-and-wildlife-management/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Freshwater Aquarium"
+      - title: "d Freshwater Aquarium"
         url: "/merit-badges/fish-and-wildlife-management/guide/req7d/"
         is_sub: true
-  - group_title: "Careers in Fish and Wildlife"
+  - group_title: "8. Careers in Fish and Wildlife"
     items:
-      - title: "Req 8 — Career Opportunities"
+      - title: "8. Career Opportunities"
         url: "/merit-badges/fish-and-wildlife-management/guide/req8/"
   - group_title: "Beyond the Badge"
     items:

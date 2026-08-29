@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Control Description Symbols"
+title: "Control Description Symbols"
 layout: guide
-group_title: "Orienteering Techniques"
+group_title: "6. Orienteering Techniques"
 req_number: "6a"
 prev: "/merit-badges/orienteering/guide/req5/"
-prev_title: "Req 5 — Pace Counting"
+prev_title: "Pace Counting"
 next: "/merit-badges/orienteering/guide/req6b/"
-next_title: "Req 6b — Control Description Sheets"
+next_title: "Control Description Sheets"
 ---
 
 {{< drg/requirement number="6a" >}}

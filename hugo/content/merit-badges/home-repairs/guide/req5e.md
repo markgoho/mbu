@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Cleaning or Replacing a Sprinkler Head"
+title: "Cleaning or Replacing a Sprinkler Head"
 layout: guide
-group_title: "Plumbing Basics"
+group_title: "5. Plumbing Basics"
 req_number: "5e"
 prev: "/merit-badges/home-repairs/guide/req5d/"
-prev_title: "Req 5d — Repairing a Hose or Connector"
+prev_title: "Repairing a Hose or Connector"
 next: "/merit-badges/home-repairs/guide/req6/"
-next_title: "Req 6 — Interior Repair Options"
+next_title: "Interior Repair Options"
 ---
 
 {{< drg/requirement number="5e" >}}

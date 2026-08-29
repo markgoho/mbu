@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Career or Hobby"
+title: "Choose Career or Hobby"
 layout: "guide"
-group_title: "Radio Careers"
+group_title: "9. Radio Careers"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/radio/guide/req8e3/"
-prev_title: "Req 8e3 — Use Radios in the Field"
+prev_title: "Use Radios in the Field"
 next: "/merit-badges/radio/guide/req9a/"
-next_title: "Req 9a — Research a Radio Career"
+next_title: "Research a Radio Career"
 guide_nav:
   - group_title: "Getting Started"
     items:

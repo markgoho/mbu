@@ -1,13 +1,13 @@
 ---
-title: "Req 6d — Lost Person Behavior"
+title: "Lost Person Behavior"
 layout: "guide"
-group_title: "Search Procedure Skills"
+group_title: "6. Search Procedure Skills"
 req_number: "6d"
 req_path: "6.d"
 prev: "/merit-badges/search-and-rescue/guide/req6c/"
-prev_title: "Req 6c — Clear Communication"
+prev_title: "Clear Communication"
 next: "/merit-badges/search-and-rescue/guide/req6e/"
-next_title: "Req 6e — Core SAR Terms"
+next_title: "Core SAR Terms"
 ---
 
 {{< drg/requirement number="6d" >}}

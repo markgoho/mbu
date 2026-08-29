@@ -1,13 +1,13 @@
 ---
-title: "Req 7b2 — Trail Rules"
+title: "Trail Rules"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b2"
 req_path: "7.b.2"
 prev: "/merit-badges/snow-sports/guide/req7b1/"
-prev_title: "Req 7b1 — Equipment Selection"
+prev_title: "Equipment Selection"
 next: "/merit-badges/snow-sports/guide/req7b3/"
-next_title: "Req 7b3 — Types of Nordic Skis"
+next_title: "Types of Nordic Skis"
 ---
 
 {{< drg/requirement number="7b2" >}}

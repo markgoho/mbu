@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — The Industrial Revolution"
+title: "The Industrial Revolution"
 layout: guide
-group_title: "Foundations of American Business"
+group_title: "1. Foundations of American Business"
 req_number: "1b"
 prev: "/merit-badges/american-business/guide/req1a/"
-prev_title: "Req 1a — Free Enterprise"
+prev_title: "Free Enterprise"
 next: "/merit-badges/american-business/guide/req1c/"
-next_title: "Req 1c — Areas of Business"
+next_title: "Areas of Business"
 ---
 
 {{< drg/requirement number="1b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2a1 — Rules, Terms & Amateur Status"
+title: "Rules, Terms & Amateur Status"
 layout: guide
-group_title: "Traditional Golf Path"
+group_title: "2. Traditional Golf Path"
 req_number: "2a1"
 prev: "/merit-badges/golf/guide/req2a/"
-prev_title: "Req 2a — Traditional Golf Roadmap"
+prev_title: "Traditional Golf Roadmap"
 next: "/merit-badges/golf/guide/req2a2/"
-next_title: "Req 2a2 — Understanding the Handicap System"
+next_title: "Understanding the Handicap System"
 ---
 
 {{< drg/requirement number="2a1" >}}

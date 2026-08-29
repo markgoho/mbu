@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose a Safety Investigation"
+title: "Choose a Safety Investigation"
 layout: "guide"
-group_title: "Radiation Protection"
+group_title: "5. Radiation Protection"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/nuclear-science/guide/req4c/"
-prev_title: "Req 4c — Model Half-Life"
+prev_title: "Model Half-Life"
 next: "/merit-badges/nuclear-science/guide/req5a/"
-next_title: "Req 5a — Time, Distance, and Shielding"
+next_title: "Time, Distance, and Shielding"
 ---
 
 {{< drg/requirement number="5" >}}

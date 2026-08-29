@@ -1,11 +1,11 @@
 ---
-title: "Req 7 — Exploring Plumbing Careers"
+title: "Exploring Plumbing Careers"
 layout: "guide"
-group_title: "Plumbing Careers"
+group_title: "7. Plumbing Careers"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/plumbing/guide/req6g/"
-prev_title: "Req 6g — Applying Thread Tape"
+prev_title: "Applying Thread Tape"
 next: "/merit-badges/plumbing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

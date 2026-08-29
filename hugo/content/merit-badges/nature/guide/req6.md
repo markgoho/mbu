@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Reading Ecological Succession"
+title: "Reading Ecological Succession"
 layout: "guide"
-group_title: "Changing Landscapes"
+group_title: "6. Changing Landscapes"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/nature/guide/req5/"
-prev_title: "Req 5 — Outdoor Ethics in Nature Study"
+prev_title: "Outdoor Ethics in Nature Study"
 next: "/merit-badges/nature/guide/req7/"
-next_title: "Req 7 — Choose a Future Path"
+next_title: "Choose a Future Path"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2c7 — Heel Brake Stop"
+title: "Heel Brake Stop"
 layout: "guide"
-group_title: "Option C — In-Line Skating"
+group_title: "2. Option C — In-Line Skating"
 req_number: "2c7"
 req_path: "2.c.7"
 prev: "/merit-badges/skating/guide/req2c6/"
-prev_title: "Req 2c6 — One-Foot Glide"
+prev_title: "One-Foot Glide"
 next: "/merit-badges/skating/guide/req2c8/"
-next_title: "Req 2c8 — Forward Crossover"
+next_title: "Forward Crossover"
 ---
 
 {{< drg/requirement number="2c7" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Community on Screen"
+title: "Community on Screen"
 layout: guide
-group_title: "Community Through Film"
+group_title: "5. Community Through Film"
 req_number: "5"
 prev: "/merit-badges/citizenship-in-the-community/guide/req4/"
-prev_title: "Req 4 — Investigating a Community Issue"
+prev_title: "Investigating a Community Issue"
 next: "/merit-badges/citizenship-in-the-community/guide/req6/"
-next_title: "Req 6 — Taxpayer-Funded Services"
+next_title: "Taxpayer-Funded Services"
 ---
 
 {{< drg/requirement number="5" >}}

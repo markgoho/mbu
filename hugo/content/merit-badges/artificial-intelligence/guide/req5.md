@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Deepfakes"
+title: "Deepfakes"
 layout: guide
-group_title: "Deepfakes"
+group_title: "5. Deepfakes"
 req_number: "5"
 prev: "/merit-badges/artificial-intelligence/guide/req4d/"
-prev_title: "Req 4d — The Turing Test"
+prev_title: "The Turing Test"
 next: "/merit-badges/artificial-intelligence/guide/req6a/"
-next_title: "Req 6a — How AI Learns"
+next_title: "How AI Learns"
 ---
 
 {{< drg/requirement number="5a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Emergency Planning"
+title: "Emergency Planning"
 layout: guide
-group_title: "Location & Route Assessment"
+group_title: "4. Location & Route Assessment"
 req_number: "4d"
 prev: "/merit-badges/climbing/guide/req4c/"
-prev_title: "Req 4c — Site Safety Evaluation"
+prev_title: "Site Safety Evaluation"
 next: "/merit-badges/climbing/guide/req5/"
-next_title: "Req 5 — Communication on the Wall"
+next_title: "Communication on the Wall"
 ---
 
 {{< drg/requirement number="4d" >}}

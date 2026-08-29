@@ -4,76 +4,76 @@ layout: guide
 badge_name: "Inventing"
 group_title: "Getting Started"
 next: "/merit-badges/inventing/guide/req1/"
-next_title: "Req 1 — What Inventing Does"
+next_title: "What Inventing Does"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/inventing/guide/"
         is_sub: false
-  - group_title: "Why Inventions Matter"
+  - group_title: "1. Why Inventions Matter"
     items:
-      - title: "Req 1 — What Inventing Does"
+      - title: "1. What Inventing Does"
         url: "/merit-badges/inventing/guide/req1/"
         is_sub: false
-  - group_title: "Learning from Inventors"
+  - group_title: "2. Learning from Inventors"
     items:
-      - title: "Req 2 — Choose Your Research Path"
+      - title: "2. Choose Your Research Path"
         url: "/merit-badges/inventing/guide/req2/"
         is_sub: false
-  - group_title: "Inventor Interviews"
+  - group_title: "2. Inventor Interviews"
     items:
-      - title: "Req 2a — Interview an Inventor"
+      - title: "a Interview an Inventor"
         url: "/merit-badges/inventing/guide/req2a/"
         is_sub: true
-  - group_title: "Inventor Profiles"
+  - group_title: "2. Inventor Profiles"
     items:
-      - title: "Req 2b — Study Inventors"
+      - title: "b Study Inventors"
         url: "/merit-badges/inventing/guide/req2b/"
         is_sub: true
-  - group_title: "Protecting Ideas"
+  - group_title: "3. Protecting Ideas"
     items:
-      - title: "Req 3 — Intellectual Property & Patents"
+      - title: "3. Intellectual Property & Patents"
         url: "/merit-badges/inventing/guide/req3/"
         is_sub: false
-  - group_title: "Sharing Responsibly"
+  - group_title: "4. Sharing Responsibly"
     items:
-      - title: "Req 4 — Inventions That Should Be Shared"
+      - title: "4. Inventions That Should Be Shared"
         url: "/merit-badges/inventing/guide/req4/"
         is_sub: false
-  - group_title: "Improving Gear"
+  - group_title: "5. Improving Gear"
     items:
-      - title: "Req 5 — Rethink a Camping Product"
+      - title: "5. Rethink a Camping Product"
         url: "/merit-badges/inventing/guide/req5/"
         is_sub: false
-  - group_title: "From Problem to Model"
+  - group_title: "6. From Problem to Model"
     items:
-      - title: "Req 6 — Plan Your Invention"
+      - title: "6. Plan Your Invention"
         url: "/merit-badges/inventing/guide/req6/"
         is_sub: false
-  - group_title: "Build and Test"
+  - group_title: "7. Build and Test"
     items:
-      - title: "Req 7 — Prototype, Test, Improve"
+      - title: "7. Prototype, Test, Improve"
         url: "/merit-badges/inventing/guide/req7/"
         is_sub: false
-  - group_title: "Inventing in the Real World"
+  - group_title: "8. Inventing in the Real World"
     items:
-      - title: "Req 8 — Choose an Inventing Experience"
+      - title: "8. Choose an Inventing Experience"
         url: "/merit-badges/inventing/guide/req8/"
         is_sub: false
-  - group_title: "Clubs and Teams"
+  - group_title: "8. Clubs and Teams"
     items:
-      - title: "Req 8a — Build with a Team"
+      - title: "a Build with a Team"
         url: "/merit-badges/inventing/guide/req8a/"
         is_sub: true
-  - group_title: "Museums and Exhibits"
+  - group_title: "8. Museums and Exhibits"
     items:
-      - title: "Req 8b — Visit an Inventing Exhibit"
+      - title: "b Visit an Inventing Exhibit"
         url: "/merit-badges/inventing/guide/req8b/"
         is_sub: true
-  - group_title: "Creative Futures"
+  - group_title: "9. Creative Futures"
     items:
-      - title: "Req 9 — Skills and Careers of Inventors"
+      - title: "9. Skills and Careers of Inventors"
         url: "/merit-badges/inventing/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

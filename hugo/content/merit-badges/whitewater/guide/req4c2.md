@@ -1,13 +1,13 @@
 ---
-title: "Req 4c2 — Bracing a Kayak"
+title: "Bracing a Kayak"
 layout: "guide"
-group_title: "Calm-Water Skill Building"
+group_title: "4. Calm-Water Skill Building"
 req_number: "4c2"
 req_path: "4.c.2"
 prev: "/merit-badges/whitewater/guide/req4c1/"
-prev_title: "Req 4c1 — Kayak Directional Control"
+prev_title: "Kayak Directional Control"
 next: "/merit-badges/whitewater/guide/req5/"
-next_title: "Req 5 — Classifying the River"
+next_title: "Classifying the River"
 ---
 
 {{< drg/requirement number="4c2" >}}

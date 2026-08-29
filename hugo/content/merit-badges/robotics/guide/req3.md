@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Core Robotics Systems"
+title: "Core Robotics Systems"
 layout: "guide"
-group_title: "The Five Fields of Robotics"
+group_title: "3. The Five Fields of Robotics"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/robotics/guide/req2/"
-prev_title: "Req 2 — Robots in Action"
+prev_title: "Robots in Action"
 next: "/merit-badges/robotics/guide/req4/"
-next_title: "Req 4 — From Idea to Finished Robot"
+next_title: "From Idea to Finished Robot"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Workshop Safety"
+title: "Workshop Safety"
 layout: "guide"
-group_title: "Safe Robotics Work"
+group_title: "1. Safe Robotics Work"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/robotics/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/robotics/guide/req2/"
-next_title: "Req 2 — Robots in Action"
+next_title: "Robots in Action"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Venomous Species and Bite Response"
+title: "Venomous Species and Bite Response"
 layout: "guide"
-group_title: "Safety with Venomous Species"
+group_title: "7. Safety with Venomous Species"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req6/"
-prev_title: "Req 6 — How Snakes Move"
+prev_title: "How Snakes Move"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req8/"
-next_title: "Req 8 — Choose Your Observation Project"
+next_title: "Choose Your Observation Project"
 ---
 
 {{< drg/requirement number="7" >}}

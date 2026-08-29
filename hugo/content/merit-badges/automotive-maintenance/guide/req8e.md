@@ -1,12 +1,12 @@
 ---
-title: "Req 8e — Electric Vehicles"
+title: "Electric Vehicles"
 layout: guide
-group_title: "Ignition & Electrical"
+group_title: "8. Ignition & Electrical"
 req_number: "8e"
 prev: "/merit-badges/automotive-maintenance/guide/req8d/"
-prev_title: "Req 8d — Jump-Starting a Battery"
+prev_title: "Jump-Starting a Battery"
 next: "/merit-badges/automotive-maintenance/guide/req9a/"
-next_title: "Req 9a — Drive Train & Transmissions"
+next_title: "Drive Train & Transmissions"
 ---
 
 {{< drg/requirement number="8e" >}}

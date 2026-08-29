@@ -1,13 +1,13 @@
 ---
-title: "Req 2c — Master Camera Moves"
+title: "Master Camera Moves"
 layout: "guide"
-group_title: "Planning Your Movie"
+group_title: "2. Planning Your Movie"
 req_number: "2c"
 req_path: "2.c"
 prev: "/merit-badges/moviemaking/guide/req2b/"
-prev_title: "Req 2b — Build the Storyboard"
+prev_title: "Build the Storyboard"
 next: "/merit-badges/moviemaking/guide/req2d/"
-next_title: "Req 2d — Choose Your Production"
+next_title: "Choose Your Production"
 ---
 
 {{< drg/requirement number="2c" >}}

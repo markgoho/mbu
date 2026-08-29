@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choosing Your Field Experience"
+title: "Choosing Your Field Experience"
 layout: "guide"
-group_title: "Choose Your Pottery Experience"
+group_title: "7. Choose Your Pottery Experience"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/pottery/guide/req6/"
-prev_title: "Req 6 — The U.S. Ceramic Industry"
+prev_title: "The U.S. Ceramic Industry"
 next: "/merit-badges/pottery/guide/req7a/"
-next_title: "Req 7a — Visit a Kiln Yard"
+next_title: "Visit a Kiln Yard"
 ---
 
 {{< drg/requirement number="7" >}}

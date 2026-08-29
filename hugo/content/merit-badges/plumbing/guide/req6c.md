@@ -1,13 +1,13 @@
 ---
-title: "Req 6c — PEX Connections"
+title: "PEX Connections"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6c"
 req_path: "6.c"
 prev: "/merit-badges/plumbing/guide/req6b/"
-prev_title: "Req 6b — Solvent-Welded Plastic Pipe"
+prev_title: "Solvent-Welded Plastic Pipe"
 next: "/merit-badges/plumbing/guide/req6d/"
-next_title: "Req 6d — Soldering Copper"
+next_title: "Soldering Copper"
 ---
 
 {{< drg/requirement number="6c" >}}

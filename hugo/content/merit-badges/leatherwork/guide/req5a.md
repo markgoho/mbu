@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Commercial Tanning"
+title: "Commercial Tanning"
 layout: guide
-group_title: "Exploring Leather Beyond the Bench"
+group_title: "5. Exploring Leather Beyond the Bench"
 req_number: "5a"
 prev: "/merit-badges/leatherwork/guide/req5/"
-prev_title: "Req 5 — Pick Your Leather Path"
+prev_title: "Pick Your Leather Path"
 next: "/merit-badges/leatherwork/guide/req5b/"
-next_title: "Req 5b — Tanning a Small Hide"
+next_title: "Tanning a Small Hide"
 ---
 
 {{< drg/requirement number="5a" >}}

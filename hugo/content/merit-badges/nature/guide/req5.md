@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Outdoor Ethics in Nature Study"
+title: "Outdoor Ethics in Nature Study"
 layout: "guide"
-group_title: "Outdoor Ethics"
+group_title: "5. Outdoor Ethics"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/nature/guide/req4h/"
-prev_title: "Req 4h — Soils and Rocks"
+prev_title: "Soils and Rocks"
 next: "/merit-badges/nature/guide/req6/"
-next_title: "Req 6 — Reading Ecological Succession"
+next_title: "Reading Ecological Succession"
 ---
 
 {{< drg/requirement number="5" >}}

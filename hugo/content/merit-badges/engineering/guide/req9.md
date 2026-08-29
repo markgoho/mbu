@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Exploring Engineering Careers"
+title: "Exploring Engineering Careers"
 layout: guide
-group_title: "Engineering Careers"
+group_title: "9. Engineering Careers"
 req_number: "9"
 prev: "/merit-badges/engineering/guide/req8/"
-prev_title: "Req 8 — The Engineer's Code of Ethics"
+prev_title: "The Engineer"
 next: "/merit-badges/engineering/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

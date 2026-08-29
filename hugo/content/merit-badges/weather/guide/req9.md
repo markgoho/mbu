@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Earth's Tilt and Regional Climate"
+title: "Earth's Tilt and Regional Climate"
 layout: "guide"
-group_title: "How Weather Works"
+group_title: "4. How Weather Works"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/weather/guide/req8/"
-prev_title: "Req 8 — People, Climate, and Change"
+prev_title: "People, Climate, and Change"
 next: "/merit-badges/weather/guide/req10/"
-next_title: "Req 10 — Choose Your Weather Project"
+next_title: "Choose Your Weather Project"
 ---
 
 {{< drg/requirement number="9" >}}

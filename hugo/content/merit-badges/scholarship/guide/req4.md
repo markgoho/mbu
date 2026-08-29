@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Teamwork Through Participation"
+title: "Teamwork Through Participation"
 layout: "guide"
-group_title: "Teamwork at School"
+group_title: "4. Teamwork at School"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/scholarship/guide/req3/"
-prev_title: "Req 3 — Character, Leadership, and Service"
+prev_title: "Character, Leadership, and Service"
 next: "/merit-badges/scholarship/guide/req4a/"
-next_title: "Req 4a — Join an Activity"
+next_title: "Join an Activity"
 ---
 
 {{< drg/requirement number="4" >}}

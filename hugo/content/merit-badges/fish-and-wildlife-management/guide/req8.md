@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Career Opportunities"
+title: "Career Opportunities"
 layout: guide
-group_title: "Careers in Fish and Wildlife"
+group_title: "8. Careers in Fish and Wildlife"
 req_number: "8"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req7d/"
-prev_title: "Req 7d — Freshwater Aquarium"
+prev_title: "Freshwater Aquarium"
 next: "/merit-badges/fish-and-wildlife-management/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

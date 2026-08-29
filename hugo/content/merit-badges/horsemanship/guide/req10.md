@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Approach, Lead, and Tie"
+title: "Approach, Lead, and Tie"
 layout: guide
-group_title: "Ground Handling"
+group_title: "10. Ground Handling"
 req_number: "10"
 prev: "/merit-badges/horsemanship/guide/req9/"
-prev_title: "Req 9 — Saddles, Bridles, and Mounting"
+prev_title: "Saddles, Bridles, and Mounting"
 next: "/merit-badges/horsemanship/guide/req11/"
-next_title: "Req 11 — Walk, Trot, Halt, and Dismount"
+next_title: "Walk, Trot, Halt, and Dismount"
 ---
 
 {{< drg/requirement number="10" >}}

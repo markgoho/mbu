@@ -1,13 +1,13 @@
 ---
-title: "Req 5c1 — Molds & Their Parts"
+title: "Molds & Their Parts"
 layout: "guide"
-group_title: "Founder"
+group_title: "5. Founder"
 req_number: "5c1"
 req_path: "5.c.1"
 prev: "/merit-badges/metalwork/guide/req5c/"
-prev_title: "Req 5c — Founder"
+prev_title: "Founder"
 next: "/merit-badges/metalwork/guide/req5c2/"
-next_title: "Req 5c2 — Sketching Your Cast Objects"
+next_title: "Sketching Your Cast Objects"
 ---
 
 {{< drg/requirement number="5c1" >}}

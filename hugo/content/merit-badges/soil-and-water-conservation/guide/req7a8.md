@@ -1,13 +1,13 @@
 ---
-title: "Req 7a8 — Industry Water Use Installation"
+title: "Industry Water Use Installation"
 layout: "guide"
-group_title: "Field Visits & Reports"
+group_title: "7. Field Visits & Reports"
 req_number: "7a8"
 req_path: "7.a.8"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7a7/"
-prev_title: "Req 7a7 — Drinking Water Treatment Plant"
+prev_title: "Drinking Water Treatment Plant"
 next: "/merit-badges/soil-and-water-conservation/guide/req7a9/"
-next_title: "Req 7a9 — Desalination Plant"
+next_title: "Desalination Plant"
 ---
 
 {{< drg/requirement number="7a8" >}}

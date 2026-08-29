@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Choose a Nuclear Energy Path"
+title: "Choose a Nuclear Energy Path"
 layout: "guide"
-group_title: "Nuclear Power"
+group_title: "6. Nuclear Power"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/nuclear-science/guide/req5c/"
-prev_title: "Req 5c — X-Ray Room Safety"
+prev_title: "X-Ray Room Safety"
 next: "/merit-badges/nuclear-science/guide/req6a/"
-next_title: "Req 6a — Fission and Chain Reactions"
+next_title: "Fission and Chain Reactions"
 ---
 
 {{< drg/requirement number="6" >}}

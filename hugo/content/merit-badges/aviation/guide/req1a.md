@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — What Is an Aircraft?"
+title: "What Is an Aircraft?"
 layout: guide
-group_title: "Aviation Basics"
+group_title: "1. Aviation Basics"
 req_number: "1a"
 prev: "/merit-badges/aviation/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/aviation/guide/req1b/"
-next_title: "Req 1b — History of Flight"
+next_title: "History of Flight"
 ---
 
 {{< drg/requirement number="1a" >}}

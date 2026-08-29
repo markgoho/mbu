@@ -4,51 +4,51 @@ layout: "guide"
 badge_name: "Surveying"
 group_title: "Getting Started"
 next: "/merit-badges/surveying/guide/req1/"
-next_title: "Req 1 — Field Safety for Surveyors"
+next_title: "Field Safety for Surveyors"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/surveying/guide/"
         is_sub: false
-  - group_title: "Field Safety"
+  - group_title: "1. Field Safety"
     items:
-      - title: "Req 1 — Field Safety for Surveyors"
+      - title: "1. Field Safety for Surveyors"
         url: "/merit-badges/surveying/guide/req1/"
         is_sub: false
-  - group_title: "Measuring from the Ground"
+  - group_title: "2. Measuring from the Ground"
     items:
-      - title: "Req 2 — Radial Measurements and GPS Checks"
+      - title: "2. Radial Measurements and GPS Checks"
         url: "/merit-badges/surveying/guide/req2/"
         is_sub: false
-  - group_title: "Mapmaking"
+  - group_title: "3. Mapmaking"
     items:
-      - title: "Req 3 — Plotting Your Survey Map"
+      - title: "3. Plotting Your Survey Map"
         url: "/merit-badges/surveying/guide/req3/"
         is_sub: false
-  - group_title: "Elevation and Levels"
+  - group_title: "4. Elevation and Levels"
     items:
-      - title: "Req 4 — Finding Elevations from a Benchmark"
+      - title: "4. Finding Elevations from a Benchmark"
         url: "/merit-badges/surveying/guide/req4/"
         is_sub: false
-  - group_title: "Property Records"
+  - group_title: "5. Property Records"
     items:
-      - title: "Req 5 — Reading a Property Deed"
+      - title: "5. Reading a Property Deed"
         url: "/merit-badges/surveying/guide/req5/"
         is_sub: false
-  - group_title: "Modern Tools"
+  - group_title: "6. Modern Tools"
     items:
-      - title: "Req 6 — Drones and Laser Scanning"
+      - title: "6. Drones and Laser Scanning"
         url: "/merit-badges/surveying/guide/req6/"
         is_sub: false
-  - group_title: "Satellite Positioning"
+  - group_title: "7. Satellite Positioning"
     items:
-      - title: "Req 7 — Why GPS Matters in Surveying"
+      - title: "7. Why GPS Matters in Surveying"
         url: "/merit-badges/surveying/guide/req7/"
         is_sub: false
-  - group_title: "Careers and Futures"
+  - group_title: "8. Careers and Futures"
     items:
-      - title: "Req 8 — Surveying Career Paths"
+      - title: "8. Surveying Career Paths"
         url: "/merit-badges/surveying/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

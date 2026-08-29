@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Removing a Barbed Hook"
+title: "Removing a Barbed Hook"
 layout: guide
-group_title: "Safety on the Water"
+group_title: "1. Safety on the Water"
 req_number: "1c"
 prev: "/merit-badges/fishing/guide/req1b/"
-prev_title: "Req 1b — Treating Fishing Injuries"
+prev_title: "Treating Fishing Injuries"
 next: "/merit-badges/fishing/guide/req1d/"
-next_title: "Req 1d — Core Fishing Safety Practices"
+next_title: "Core Fishing Safety Practices"
 ---
 
 {{< drg/requirement number="1c" >}}

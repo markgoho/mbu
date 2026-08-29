@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Hazards & First Aid Topics"
+title: "Hazards & First Aid Topics"
 layout: "guide"
-group_title: "Safety Foundations"
+group_title: "1. Safety Foundations"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/snow-sports/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/snow-sports/guide/req2/"
-next_title: "Req 2 — Rendering & Reporting Aid"
+next_title: "Rendering & Reporting Aid"
 ---
 
 {{< drg/requirement number="1" >}}

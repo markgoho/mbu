@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Profile a Journalist"
+title: "Profile a Journalist"
 layout: guide
-group_title: "Storytelling and Interviews"
+group_title: "3. Storytelling and Interviews"
 req_number: "3c"
 prev: "/merit-badges/journalism/guide/req3b/"
-prev_title: "Req 3b — Interview an Influential Person"
+prev_title: "Interview an Influential Person"
 next: "/merit-badges/journalism/guide/req3d/"
-next_title: "Req 3d — Cover a Scouting Event"
+next_title: "Cover a Scouting Event"
 ---
 
 {{< drg/requirement number="3c" >}}

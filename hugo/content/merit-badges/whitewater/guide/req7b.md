@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Whitewater Kayak Designs"
+title: "Whitewater Kayak Designs"
 layout: "guide"
-group_title: "Boats and Gear"
+group_title: "7. Boats and Gear"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/whitewater/guide/req7a/"
-prev_title: "Req 7a — Whitewater Canoe Designs"
+prev_title: "Whitewater Canoe Designs"
 next: "/merit-badges/whitewater/guide/req8/"
-next_title: "Req 8 — Pack for a Safe Run"
+next_title: "Pack for a Safe Run"
 ---
 
 {{< drg/requirement number="7b" >}}

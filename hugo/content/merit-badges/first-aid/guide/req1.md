@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Handling an Emergency"
+title: "Handling an Emergency"
 layout: "guide"
-group_title: "Handling Emergencies"
+group_title: "1. Handling Emergencies"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/first-aid/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/first-aid/guide/req2a/"
-next_title: "Req 2a — Health Records"
+next_title: "Health Records"
 ---
 
 {{< drg/requirement number="1" >}}

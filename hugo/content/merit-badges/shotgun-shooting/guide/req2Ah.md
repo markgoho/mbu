@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-h — Clean a Shotgun Properly"
+title: "Clean a Shotgun Properly"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-h"
 req_path: "2.A.h"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ag/"
-prev_title: "Req 2A-g — Cleaning Safety Rules and Materials"
+prev_title: "Cleaning Safety Rules and Materials"
 next: "/merit-badges/shotgun-shooting/guide/req2Ai/"
-next_title: "Req 2A-i — Selecting a Shotgun"
+next_title: "Selecting a Shotgun"
 ---
 
 {{< drg/requirement number="2A-h" >}}

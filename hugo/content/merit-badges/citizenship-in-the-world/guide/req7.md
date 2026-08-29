@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — World Exploration Activities"
+title: "World Exploration Activities"
 layout: guide
-group_title: "Explore the World"
+group_title: "7. Explore the World"
 req_number: "7"
 prev: "/merit-badges/citizenship-in-the-world/guide/req6/"
-prev_title: "Req 6 — How Nations Connect"
+prev_title: "How Nations Connect"
 next: "/merit-badges/citizenship-in-the-world/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

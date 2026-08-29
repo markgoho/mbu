@@ -1,12 +1,12 @@
 ---
-title: "Requirement 5 — Identifying Fingerprint Patterns"
+title: "Identifying Fingerprint Patterns"
 layout: guide
-group_title: "Pattern Recognition"
+group_title: "5. Pattern Recognition"
 req_number: "5"
 prev: "/merit-badges/fingerprinting/guide/req4b/"
-prev_title: "Requirement 4b — Tape and Pencil Method"
+prev_title: "Tape and Pencil Method"
 next: "/merit-badges/fingerprinting/guide/req6/"
-next_title: "Requirement 6 — Exploring Forensic Careers"
+next_title: "Exploring Forensic Careers"
 ---
 
 {{< drg/requirement number="5" >}}

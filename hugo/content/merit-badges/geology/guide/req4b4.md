@@ -1,12 +1,12 @@
 ---
-title: "Req 4b4 — Subsurface Structure Maps"
+title: "Subsurface Structure Maps"
 layout: guide
-group_title: "Energy Resources"
+group_title: "4. Energy Resources"
 req_number: "4b4"
 prev: "/merit-badges/geology/guide/req4b3/"
-prev_title: "Req 4b3 — Tools for Finding Oil and Gas"
+prev_title: "Tools for Finding Oil and Gas"
 next: "/merit-badges/geology/guide/req4b5/"
-next_title: "Req 4b5 — Show or Visit a Drilling Operation"
+next_title: "Show or Visit a Drilling Operation"
 ---
 
 {{< drg/requirement number="4b4" >}}

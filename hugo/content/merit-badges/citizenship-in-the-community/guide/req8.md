@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Your Community Presentation"
+title: "Your Community Presentation"
 layout: guide
-group_title: "Telling Your Community's Story"
+group_title: "8. Telling Your Community's Story"
 req_number: "8"
 prev: "/merit-badges/citizenship-in-the-community/guide/req7/"
-prev_title: "Req 7 — Charitable Organizations & Volunteering"
+prev_title: "Charitable Organizations & Volunteering"
 next: "/merit-badges/citizenship-in-the-community/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

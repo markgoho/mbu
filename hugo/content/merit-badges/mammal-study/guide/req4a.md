@@ -1,13 +1,13 @@
 ---
-title: "Req 4a — Museum Study Skins"
+title: "Museum Study Skins"
 layout: "guide"
-group_title: "Mammal Investigation Options"
+group_title: "4. Mammal Investigation Options"
 req_number: "4a"
 req_path: "4.a"
 prev: "/merit-badges/mammal-study/guide/req4/"
-prev_title: "Req 4 — Choose Your Investigation"
+prev_title: "Choose Your Investigation"
 next: "/merit-badges/mammal-study/guide/req4b/"
-next_title: "Req 4b — Wildlife Photography Log"
+next_title: "Wildlife Photography Log"
 ---
 
 {{< drg/requirement number="4a" >}}

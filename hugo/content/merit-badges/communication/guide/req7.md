@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Writing & Publishing"
+title: "Writing & Publishing"
 layout: guide
-group_title: "Written & Digital Communication"
+group_title: "7. Written & Digital Communication"
 req_number: "7"
 prev: "/merit-badges/communication/guide/req6/"
-prev_title: "Req 6 — Teach a Skill"
+prev_title: "Teach a Skill"
 next: "/merit-badges/communication/guide/req8/"
-next_title: "Req 8 — Master of Ceremonies"
+next_title: "Master of Ceremonies"
 ---
 
 {{< drg/requirement number="7" >}}

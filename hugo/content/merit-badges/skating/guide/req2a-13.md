@@ -1,13 +1,13 @@
 ---
-title: "Req 2a13 — Ice Race Safety"
+title: "Ice Race Safety"
 layout: "guide"
-group_title: "Option A — Ice Skating"
+group_title: "2. Option A — Ice Skating"
 req_number: "2a13"
 req_path: "2.a.13"
 prev: "/merit-badges/skating/guide/req2a-12/"
-prev_title: "Req 2a12 — Forward Crossovers"
+prev_title: "Forward Crossovers"
 next: "/merit-badges/skating/guide/req2a-14/"
-next_title: "Req 2a14 — Hockey Stop"
+next_title: "Hockey Stop"
 ---
 
 {{< drg/requirement number="2a13" >}}

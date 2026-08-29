@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Pollution and Substance Risks"
+title: "Pollution and Substance Risks"
 layout: "guide"
-group_title: "Environmental & Behavioral Risks"
+group_title: "6. Environmental & Behavioral Risks"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/public-health/guide/req5b/"
-prev_title: "Req 5b — Food Safety in Action"
+prev_title: "Food Safety in Action"
 next: "/merit-badges/public-health/guide/req7a/"
-next_title: "Req 7a — Choose Your Agency Research Path"
+next_title: "Choose Your Agency Research Path"
 ---
 
 {{< drg/requirement number="6" >}}

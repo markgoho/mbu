@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Applied Art Projects"
+title: "Applied Art Projects"
 layout: guide
-group_title: "Making Art"
+group_title: "4. Making Art"
 req_number: "5"
 prev: "/merit-badges/art/guide/req4/"
-prev_title: "Req 4 — Creating in Different Media"
+prev_title: "Creating in Different Media"
 next: "/merit-badges/art/guide/req6/"
-next_title: "Req 6 — Visiting Art in Person"
+next_title: "Visiting Art in Person"
 ---
 
 {{< drg/requirement number="5" >}}

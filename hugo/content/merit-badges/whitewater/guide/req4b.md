@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Solo Canoe Control"
+title: "Solo Canoe Control"
 layout: "guide"
-group_title: "Calm-Water Skill Building"
+group_title: "4. Calm-Water Skill Building"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/whitewater/guide/req4a3/"
-prev_title: "Req 4a3 — Bracing a Tandem Canoe"
+prev_title: "Bracing a Tandem Canoe"
 next: "/merit-badges/whitewater/guide/req4b1/"
-next_title: "Req 4b1 — Solo Canoe Precision Strokes"
+next_title: "Solo Canoe Precision Strokes"
 ---
 
 {{< drg/requirement number="4" option="Solo Canoest" >}}

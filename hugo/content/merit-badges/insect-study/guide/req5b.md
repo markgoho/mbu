@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Pick Your Colony Project"
+title: "Pick Your Colony Project"
 layout: guide
-group_title: "Choosing a Colony Study"
+group_title: "5. Choosing a Colony Study"
 req_number: "5b"
 prev: "/merit-badges/insect-study/guide/req5a/"
-prev_title: "Req 5a — Social vs. Solitary Insects"
+prev_title: "Social vs. Solitary Insects"
 next: "/merit-badges/insect-study/guide/req5b1/"
-next_title: "Req 5b1 — Inside an Ant Colony"
+next_title: "Inside an Ant Colony"
 ---
 
 {{< drg/requirement number="5b" >}}

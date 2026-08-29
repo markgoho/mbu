@@ -4,51 +4,51 @@ layout: guide
 badge_name: "American Labor"
 group_title: "Getting Started"
 next: "/merit-badges/american-labor/guide/req1/"
-next_title: "Req 1 — Worker Concerns"
+next_title: "Worker Concerns"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-labor/guide/"
-  - group_title: "Understanding Workers"
+  - group_title: "1. Understanding Workers"
     items:
-      - title: "Req 1 — Worker Concerns"
+      - title: "1. Worker Concerns"
         url: "/merit-badges/american-labor/guide/req1/"
         is_sub: false
-  - group_title: "Connecting with Labor"
+  - group_title: "2. Connecting with Labor"
     items:
-      - title: "Req 2 — Visiting a Labor Organization"
+      - title: "2. Visiting a Labor Organization"
         url: "/merit-badges/american-labor/guide/req2/"
         is_sub: false
-  - group_title: "How Unions Work"
+  - group_title: "3. How Unions Work"
     items:
-      - title: "Req 3 — What Labor Unions Do"
+      - title: "3. What Labor Unions Do"
         url: "/merit-badges/american-labor/guide/req3/"
         is_sub: false
-      - title: "Req 4 — Bargaining Models"
+      - title: "4. Bargaining Models"
         url: "/merit-badges/american-labor/guide/req4/"
         is_sub: false
-  - group_title: "Labor History"
+  - group_title: "5. Labor History"
     items:
-      - title: "Req 5 — Labor History Projects"
+      - title: "5. Labor History Projects"
         url: "/merit-badges/american-labor/guide/req5/"
         is_sub: false
-  - group_title: "The Global Workforce"
+  - group_title: "6. The Global Workforce"
     items:
-      - title: "Req 6 — Globalization"
+      - title: "6. Globalization"
         url: "/merit-badges/american-labor/guide/req6/"
         is_sub: false
-  - group_title: "Critical Thinking"
+  - group_title: "7. Critical Thinking"
     items:
-      - title: "Req 7 — Debating Labor Issues"
+      - title: "7. Debating Labor Issues"
         url: "/merit-badges/american-labor/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Stakeholder Goals"
+      - title: "8. Stakeholder Goals"
         url: "/merit-badges/american-labor/guide/req8/"
         is_sub: false
-  - group_title: "Your Future"
+  - group_title: "9. Your Future"
     items:
-      - title: "Req 9 — Careers in Labor Relations"
+      - title: "9. Careers in Labor Relations"
         url: "/merit-badges/american-labor/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

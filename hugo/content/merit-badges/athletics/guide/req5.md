@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Athletic Options Overview"
+title: "Athletic Options Overview"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5"
 prev: "/merit-badges/athletics/guide/req4d/"
-prev_title: "Req 4d — Sportsmanship"
+prev_title: "Sportsmanship"
 next: "/merit-badges/athletics/guide/req5-sprinting/"
-next_title: "Req 5a — Sprinting"
+next_title: "Sprinting"
 ---
 
 {{< drg/requirement number="5" >}}

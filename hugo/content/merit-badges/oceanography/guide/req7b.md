@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Build a Coral Reef Model"
+title: "Build a Coral Reef Model"
 layout: "guide"
-group_title: "Hands-On Investigation"
+group_title: "7. Hands-On Investigation"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/oceanography/guide/req7a/"
-prev_title: "Req 7a — Catch & Identify Plankton"
+prev_title: "Catch & Identify Plankton"
 next: "/merit-badges/oceanography/guide/req7c/"
-next_title: "Req 7c — Track Water Conditions"
+next_title: "Track Water Conditions"
 ---
 
 {{< drg/requirement number="7b" >}}

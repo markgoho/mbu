@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Crewed Orbital Vehicles"
+title: "Crewed Orbital Vehicles"
 layout: "guide"
-group_title: "Spacecraft Choices"
+group_title: "6. Spacecraft Choices"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/space-exploration/guide/req6/"
-prev_title: "Req 6 — Choose a Space Home"
+prev_title: "Choose a Space Home"
 next: "/merit-badges/space-exploration/guide/req6b/"
-next_title: "Req 6b — International Space Station"
+next_title: "International Space Station"
 ---
 
 {{< drg/requirement number="6a" >}}

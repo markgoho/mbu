@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Reducing Home Energy"
+title: "Reducing Home Energy"
 layout: guide
-group_title: "Energy & Resources"
+group_title: "5. Energy & Resources"
 req_number: "5c"
 prev: "/merit-badges/sustainability/guide/req5b/"
-prev_title: "Req 5b — Family Energy Use"
+prev_title: "Family Energy Use"
 next: "/merit-badges/sustainability/guide/req6a/"
-next_title: "Req 6a — Needs vs. Wants"
+next_title: "Needs vs. Wants"
 ---
 
 {{< drg/requirement number="5c" >}}

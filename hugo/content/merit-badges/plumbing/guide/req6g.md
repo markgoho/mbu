@@ -1,13 +1,13 @@
 ---
-title: "Req 6g — Applying Thread Tape"
+title: "Applying Thread Tape"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6g"
 req_path: "6.g"
 prev: "/merit-badges/plumbing/guide/req6f/"
-prev_title: "Req 6f — Cleaning a Drain Trap"
+prev_title: "Cleaning a Drain Trap"
 next: "/merit-badges/plumbing/guide/req7/"
-next_title: "Req 7 — Exploring Plumbing Careers"
+next_title: "Exploring Plumbing Careers"
 ---
 
 {{< drg/requirement number="6g" >}}

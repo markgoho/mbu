@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Safe Swim Defense"
+title: "Safe Swim Defense"
 layout: guide
-group_title: "Safety Foundations"
+group_title: "1. Safety Foundations"
 req_number: "1"
 prev: "/merit-badges/lifesaving/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/lifesaving/guide/req2/"
-next_title: "Req 2 — Swimming Prerequisites"
+next_title: "Swimming Prerequisites"
 ---
 
 {{< drg/requirement number="1" >}}

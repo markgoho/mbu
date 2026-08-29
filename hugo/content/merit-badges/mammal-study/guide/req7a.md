@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Mammal-Related Careers"
+title: "Mammal-Related Careers"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/mammal-study/guide/req7/"
-prev_title: "Req 7 — Choose Your Future Path"
+prev_title: "Choose Your Future Path"
 next: "/merit-badges/mammal-study/guide/req7b/"
-next_title: "Req 7b — Hobbies and Healthy Living"
+next_title: "Hobbies and Healthy Living"
 ---
 
 {{< drg/requirement number="7a" >}}

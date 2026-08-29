@@ -4,36 +4,36 @@ layout: guide
 badge_name: "Landscape Architecture"
 group_title: "Getting Started"
 next: "/merit-badges/landscape-architecture/guide/req1/"
-next_title: "Req 1 — Reading a Designed Place"
+next_title: "Reading a Designed Place"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/landscape-architecture/guide/"
         is_sub: false
-  - group_title: "Seeing Landscapes Clearly"
+  - group_title: "1. Seeing Landscapes Clearly"
     items:
-      - title: "Req 1 — Reading a Designed Place"
+      - title: "1. Reading a Designed Place"
         url: "/merit-badges/landscape-architecture/guide/req1/"
         is_sub: false
-  - group_title: "Analyzing a Finished Site"
+  - group_title: "2. Analyzing a Finished Site"
     items:
-      - title: "Req 2 — What Makes a Site Work"
+      - title: "2. What Makes a Site Work"
         url: "/merit-badges/landscape-architecture/guide/req2/"
         is_sub: false
-  - group_title: "Plants as Design Tools"
+  - group_title: "3. Plants as Design Tools"
     items:
-      - title: "Req 3 — Choosing Trees, Shrubs, and Ground Covers"
+      - title: "3. Choosing Trees, Shrubs, and Ground Covers"
         url: "/merit-badges/landscape-architecture/guide/req3/"
         is_sub: false
-  - group_title: "Studying and Redesigning Space"
+  - group_title: "4. Studying and Redesigning Space"
     items:
-      - title: "Req 4 — Mapping Water, Access, and Comfort"
+      - title: "4. Mapping Water, Access, and Comfort"
         url: "/merit-badges/landscape-architecture/guide/req4/"
         is_sub: false
-  - group_title: "Careers in the Field"
+  - group_title: "5. Careers in the Field"
     items:
-      - title: "Req 5 — Exploring Landscape Architecture Careers"
+      - title: "5. Exploring Landscape Architecture Careers"
         url: "/merit-badges/landscape-architecture/guide/req5/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Wildlife Scrapbook"
+title: "Wildlife Scrapbook"
 layout: guide
-group_title: "Wildlife Observation & Research"
+group_title: "6. Wildlife Observation & Research"
 req_number: "6c"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req6b/"
-prev_title: "Req 6b — Classify State Species"
+prev_title: "Classify State Species"
 next: "/merit-badges/fish-and-wildlife-management/guide/req7/"
-next_title: "Req 7 — Choose a Fish Study Activity"
+next_title: "Choose a Fish Study Activity"
 ---
 
 {{< drg/requirement number="6c" >}}

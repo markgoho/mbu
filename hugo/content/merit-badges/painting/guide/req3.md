@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Plan Two Real Projects"
+title: "Plan Two Real Projects"
 layout: "guide"
-group_title: "Hands-On Projects"
+group_title: "3. Hands-On Projects"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/painting/guide/req2/"
-prev_title: "Req 2 — Coatings, Paint Types & Sheen"
+prev_title: "Coatings, Paint Types & Sheen"
 next: "/merit-badges/painting/guide/req4/"
-next_title: "Req 4 — Choose Harmonizing Colors"
+next_title: "Choose Harmonizing Colors"
 ---
 
 {{< drg/requirement number="3" >}}

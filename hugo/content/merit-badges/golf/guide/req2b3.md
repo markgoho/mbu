@@ -1,12 +1,12 @@
 ---
-title: "Req 2b3 — Disc Design & Disc Golf Leaders"
+title: "Disc Design & Disc Golf Leaders"
 layout: guide
-group_title: "Disc Golf Path"
+group_title: "2. Disc Golf Path"
 req_number: "2b3"
 prev: "/merit-badges/golf/guide/req2b2/"
-prev_title: "Req 2b2 — Disc Golf History & Inclusion"
+prev_title: "Disc Golf History & Inclusion"
 next: "/merit-badges/golf/guide/req2b4/"
-next_title: "Req 2b4 — Fitness for Disc Golf"
+next_title: "Fitness for Disc Golf"
 ---
 
 {{< drg/requirement number="2b3" >}}

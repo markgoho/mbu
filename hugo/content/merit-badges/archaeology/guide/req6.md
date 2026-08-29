@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Being a Steward"
+title: "Being a Steward"
 layout: guide
-group_title: "Protecting the Past"
+group_title: "5. Protecting the Past"
 req_number: "6"
 prev: "/merit-badges/archaeology/guide/req5/"
-prev_title: "Req 5 — Laws That Protect Sites"
+prev_title: "Laws That Protect Sites"
 next: "/merit-badges/archaeology/guide/req7/"
-next_title: "Req 7 — Artifacts Tell Stories"
+next_title: "Artifacts Tell Stories"
 ---
 
 {{< drg/requirement number="6a" >}}

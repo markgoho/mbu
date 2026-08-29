@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Snack & Dessert"
+title: "Snack & Dessert"
 layout: guide
-group_title: "Camp Cooking"
+group_title: "5. Camp Cooking"
 req_number: "5e"
 prev: "/merit-badges/cooking/guide/req5d/"
-prev_title: "Req 5d — Cook Outdoors"
+prev_title: "Cook Outdoors"
 next: "/merit-badges/cooking/guide/req5f/"
-next_title: "Req 5f — Camp Meal Evaluation"
+next_title: "Camp Meal Evaluation"
 ---
 
 {{< drg/requirement number="5e" >}}

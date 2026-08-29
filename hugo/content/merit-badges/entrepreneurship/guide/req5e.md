@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Promotion & Marketing"
+title: "Promotion & Marketing"
 layout: guide
-group_title: "Building Your Business Plan"
+group_title: "5. Building Your Business Plan"
 req_number: "5e"
 prev: "/merit-badges/entrepreneurship/guide/req5d/"
-prev_title: "Req 5d — Personnel Plan"
+prev_title: "Personnel Plan"
 next: "/merit-badges/entrepreneurship/guide/req6/"
-next_title: "Req 6 — Running the Business"
+next_title: "Running the Business"
 ---
 
 {{< drg/requirement number="5e" >}}

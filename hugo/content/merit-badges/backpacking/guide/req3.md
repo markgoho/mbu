@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Crew Organization & Safety"
+title: "Crew Organization & Safety"
 layout: guide
-group_title: "Crew Organization"
+group_title: "3. Crew Organization"
 req_number: "3"
 prev: "/merit-badges/backpacking/guide/req2b/"
-prev_title: "Req 2b — Reducing Pack Weight"
+prev_title: "Reducing Pack Weight"
 next: "/merit-badges/backpacking/guide/req4a/"
-next_title: "Req 4a — Leave No Trace"
+next_title: "Leave No Trace"
 ---
 
 {{< drg/requirement number="3" >}}

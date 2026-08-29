@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Suppression Tactics"
+title: "Suppression Tactics"
 layout: "guide"
-group_title: "Fighting the Fire"
+group_title: "7. Fighting the Fire"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/wildland-fire-management/guide/req6b/"
-prev_title: "Req 6b — The 10, the 18, and LCES"
+prev_title: "The 10, the 18, and LCES"
 next: "/merit-badges/wildland-fire-management/guide/req7b/"
-next_title: "Req 7b — The Incident Command System"
+next_title: "The Incident Command System"
 ---
 
 {{< drg/requirement number="7a" >}}

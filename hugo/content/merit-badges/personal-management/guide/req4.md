@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Saving vs. Investing"
+title: "Saving vs. Investing"
 layout: guide
-group_title: "Saving & Investing"
+group_title: "4. Saving & Investing"
 req_number: "4"
 prev: "/merit-badges/personal-management/guide/req3/"
-prev_title: "Req 3 — Psychology of Money"
+prev_title: "Psychology of Money"
 next: "/merit-badges/personal-management/guide/req5/"
-next_title: "Req 5 — Types of Investments"
+next_title: "Types of Investments"
 ---
 
 {{< drg/requirement number="4" >}}

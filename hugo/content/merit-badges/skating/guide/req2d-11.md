@@ -1,13 +1,13 @@
 ---
-title: "Req 2d11 — Braking Techniques"
+title: "Braking Techniques"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d11"
 req_path: "2.d.11"
 prev: "/merit-badges/skating/guide/req2d-10/"
-prev_title: "Req 2d10 — Push, Cruise & Carve"
+prev_title: "Push, Cruise & Carve"
 next: "/merit-badges/skating/guide/req2d-12/"
-next_title: "Req 2d12 — Ollie"
+next_title: "Ollie"
 ---
 
 {{< drg/requirement number="2d11" >}}

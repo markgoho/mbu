@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Healthy Plumbing Habits"
+title: "Healthy Plumbing Habits"
 layout: "guide"
-group_title: "Health and Safety Basics"
+group_title: "1. Health and Safety Basics"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/plumbing/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/plumbing/guide/req2/"
-next_title: "Req 2 — Home Water Systems"
+next_title: "Home Water Systems"
 ---
 
 {{< drg/requirement number="1" >}}

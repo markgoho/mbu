@@ -1,13 +1,13 @@
 ---
-title: "Req 5b — Soaking With Water and a Tray"
+title: "Soaking With Water and a Tray"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/stamp-collecting/guide/req5a/"
-prev_title: "Req 5a — Using Stamp Tongs"
+prev_title: "Using Stamp Tongs"
 next: "/merit-badges/stamp-collecting/guide/req5c/"
-next_title: "Req 5c — Inspecting With Magnifiers"
+next_title: "Inspecting With Magnifiers"
 ---
 
 {{< drg/requirement number="5b" >}}

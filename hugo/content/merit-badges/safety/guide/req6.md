@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Avoiding Assault Risks"
+title: "Avoiding Assault Risks"
 layout: "guide"
-group_title: "Personal Safety"
+group_title: "6. Personal Safety"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/safety/guide/req5/"
-prev_title: "Req 5 — Keeping Scouting Safe"
+prev_title: "Keeping Scouting Safe"
 next: "/merit-badges/safety/guide/req7/"
-next_title: "Req 7 — Smart Online Safety"
+next_title: "Smart Online Safety"
 ---
 
 {{< drg/requirement number="6" >}}

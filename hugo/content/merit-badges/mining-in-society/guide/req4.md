@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Why Abandoned Mines Are Dangerous"
+title: "Why Abandoned Mines Are Dangerous"
 layout: "guide"
-group_title: "Stay Out and Stay Safe"
+group_title: "4. Stay Out and Stay Safe"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/mining-in-society/guide/req3/"
-prev_title: "Req 3 — Mine Safety and Protective Gear"
+prev_title: "Mine Safety and Protective Gear"
 next: "/merit-badges/mining-in-society/guide/req5/"
-next_title: "Req 5 — Choose Your Mining Experience"
+next_title: "Choose Your Mining Experience"
 ---
 
 {{< drg/requirement number="4" >}}

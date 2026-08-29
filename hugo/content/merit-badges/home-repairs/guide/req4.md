@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Safe Electrical Repairs"
+title: "Safe Electrical Repairs"
 layout: guide
-group_title: "Electrical Basics"
+group_title: "4. Electrical Basics"
 req_number: "4"
 prev: "/merit-badges/home-repairs/guide/req3g/"
-prev_title: "Req 3g — Fence Repair"
+prev_title: "Fence Repair"
 next: "/merit-badges/home-repairs/guide/req4a/"
-next_title: "Req 4a — Breakers and Fuses"
+next_title: "Breakers and Fuses"
 ---
 
 {{< drg/requirement number="4" >}}

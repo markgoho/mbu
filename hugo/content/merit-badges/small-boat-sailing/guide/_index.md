@@ -4,48 +4,48 @@ layout: "guide"
 badge_name: "Small-Boat Sailing"
 group_title: "Getting Started"
 next: "/merit-badges/small-boat-sailing/guide/req1/"
-next_title: "Req 1 — Safety, Injuries & Safety Afloat"
+next_title: "Safety, Injuries & Safety Afloat"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/small-boat-sailing/guide/"
         is_sub: false
-  - group_title: "Safety, Readiness & Boat Setup"
+  - group_title: "1. Safety, Readiness & Boat Setup"
     items:
-      - title: "Req 1 — Safety, Injuries & Safety Afloat"
+      - title: "1. Safety, Injuries & Safety Afloat"
         url: "/merit-badges/small-boat-sailing/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Swimmer Test Readiness"
+      - title: "2. Swimmer Test Readiness"
         url: "/merit-badges/small-boat-sailing/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Know Your Boat"
+      - title: "3. Know Your Boat"
         url: "/merit-badges/small-boat-sailing/guide/req3/"
         is_sub: false
-  - group_title: "Before You Cast Off"
+  - group_title: "4. Before You Cast Off"
     items:
-      - title: "Req 4 — Planning, Weather & Gear"
+      - title: "4. Planning, Weather & Gear"
         url: "/merit-badges/small-boat-sailing/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Read the Wind"
+      - title: "5. Read the Wind"
         url: "/merit-badges/small-boat-sailing/guide/req5/"
         is_sub: false
-  - group_title: "Handling the Boat Underway"
+  - group_title: "6. Handling the Boat Underway"
     items:
-      - title: "Req 6 — Sailing Skills Underway"
+      - title: "6. Sailing Skills Underway"
         url: "/merit-badges/small-boat-sailing/guide/req6/"
         is_sub: false
-  - group_title: "Ropework & Boat Care"
+  - group_title: "7. Ropework & Boat Care"
     items:
-      - title: "Req 7 — Knots, Lines & Seamanship"
+      - title: "7. Knots, Lines & Seamanship"
         url: "/merit-badges/small-boat-sailing/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Care for Boat and Gear"
+      - title: "8. Care for Boat and Gear"
         url: "/merit-badges/small-boat-sailing/guide/req8/"
         is_sub: false
-  - group_title: "Sailing Knowledge & Vocabulary"
+  - group_title: "9. Sailing Knowledge & Vocabulary"
     items:
-      - title: "Req 9 — Sailing Terms and Sailboat Types"
+      - title: "9. Sailing Terms and Sailboat Types"
         url: "/merit-badges/small-boat-sailing/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Environmental Impact Assessment"
+title: "Environmental Impact Assessment"
 layout: guide
-group_title: "Environmental Impact"
+group_title: "10. Environmental Impact"
 req_number: "10"
 prev: "/merit-badges/environmental-science/guide/req9/"
-prev_title: "Req 9 — Invasive Species"
+prev_title: "Invasive Species"
 next: "/merit-badges/environmental-science/guide/req11/"
-next_title: "Req 11 — Career Exploration"
+next_title: "Career Exploration"
 ---
 
 {{< drg/requirement number="10" >}}

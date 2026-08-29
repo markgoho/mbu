@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Seawater, Currents & Climate"
+title: "Seawater, Currents & Climate"
 layout: "guide"
-group_title: "How the Ocean Works"
+group_title: "2. How the Ocean Works"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/oceanography/guide/req1/"
-prev_title: "Req 1 — Branches of Oceanography"
+prev_title: "Branches of Oceanography"
 next: "/merit-badges/oceanography/guide/req3/"
-next_title: "Req 3 — Waves, Breakers & Rip Currents"
+next_title: "Waves, Breakers & Rip Currents"
 ---
 
 {{< drg/requirement number="2" >}}

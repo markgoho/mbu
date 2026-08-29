@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — History of Digital Technology"
+title: "History of Digital Technology"
 layout: guide
-group_title: "Computing Past & Future"
+group_title: "2. Computing Past & Future"
 req_number: "2a"
 prev: "/merit-badges/digital-technology/guide/req1/"
-prev_title: "Req 1 — Digital Safety Awareness"
+prev_title: "Digital Safety Awareness"
 next: "/merit-badges/digital-technology/guide/req2b/"
-next_title: "Req 2b — Future Technology"
+next_title: "Future Technology"
 ---
 
 {{< drg/requirement number="2a" >}}

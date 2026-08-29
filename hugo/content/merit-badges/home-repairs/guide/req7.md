@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Future Paths in Home Repairs"
+title: "Future Paths in Home Repairs"
 layout: guide
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7"
 prev: "/merit-badges/home-repairs/guide/req6h/"
-prev_title: "Req 6h — Drawer and Cabinet Hardware"
+prev_title: "Drawer and Cabinet Hardware"
 next: "/merit-badges/home-repairs/guide/req7a/"
-next_title: "Req 7a — Exploring a Home Repair Career"
+next_title: "Exploring a Home Repair Career"
 ---
 
 {{< drg/requirement number="7" >}}

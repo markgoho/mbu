@@ -1,13 +1,13 @@
 ---
-title: "Req 2d10 — Push, Cruise & Carve"
+title: "Push, Cruise & Carve"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d10"
 req_path: "2.d.10"
 prev: "/merit-badges/skating/guide/req2d9/"
-prev_title: "Req 2d9 — Stance"
+prev_title: "Stance"
 next: "/merit-badges/skating/guide/req2d-11/"
-next_title: "Req 2d11 — Braking Techniques"
+next_title: "Braking Techniques"
 ---
 
 {{< drg/requirement number="2d10" >}}

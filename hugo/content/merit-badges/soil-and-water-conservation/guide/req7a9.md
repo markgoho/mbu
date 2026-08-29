@@ -1,13 +1,13 @@
 ---
-title: "Req 7a9 — Desalination Plant"
+title: "Desalination Plant"
 layout: "guide"
-group_title: "Field Visits & Reports"
+group_title: "7. Field Visits & Reports"
 req_number: "7a9"
 req_path: "7.a.9"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7a8/"
-prev_title: "Req 7a8 — Industry Water Use Installation"
+prev_title: "Industry Water Use Installation"
 next: "/merit-badges/soil-and-water-conservation/guide/req7b/"
-next_title: "Req 7b — Plant for a Purpose"
+next_title: "Plant for a Purpose"
 ---
 
 {{< drg/requirement number="7a9" >}}

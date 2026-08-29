@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Visiting an Agency"
+title: "Visiting an Agency"
 layout: guide
-group_title: "Community Connections"
+group_title: "2. Community Connections"
 req_number: "2"
 prev: "/merit-badges/disabilities-awareness/guide/req1b/"
-prev_title: "Req 1b — Disability Etiquette"
+prev_title: "Disability Etiquette"
 next: "/merit-badges/disabilities-awareness/guide/req3/"
-next_title: "Req 3 — Personal Experiences"
+next_title: "Personal Experiences"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Combined Heat and Power"
+title: "Combined Heat and Power"
 layout: "guide"
-group_title: "Cogeneration"
+group_title: "7. Cogeneration"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/energy/guide/req7a/"
-prev_title: "Req 7a — Biomass & Waste-to-Energy"
+prev_title: "Biomass & Waste-to-Energy"
 next: "/merit-badges/energy/guide/req7c/"
-next_title: "Req 7c — Modern Fossil Fuel Plants"
+next_title: "Modern Fossil Fuel Plants"
 ---
 
 {{< drg/inherited-requirement number="7b" req_path="7.b" topic="Cogeneration plants" />}}

@@ -1,11 +1,11 @@
 ---
-title: "Req 9b — Safety in Service and Lifestyle"
+title: "Safety in Service and Lifestyle"
 layout: "guide"
-group_title: "Careers and Service"
+group_title: "9. Careers and Service"
 req_number: "9b"
 req_path: "9.b"
 prev: "/merit-badges/safety/guide/req9a/"
-prev_title: "Req 9a — Safety Careers"
+prev_title: "Safety Careers"
 next: "/merit-badges/safety/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

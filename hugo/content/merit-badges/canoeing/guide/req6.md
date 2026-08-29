@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Equipment Care"
+title: "Equipment Care"
 layout: guide
-group_title: "Canoe Care & Maintenance"
+group_title: "6. Canoe Care & Maintenance"
 req_number: "6"
 prev: "/merit-badges/canoeing/guide/req5c/"
-prev_title: "Req 5c — Safety & Rescue Equipment"
+prev_title: "Safety & Rescue Equipment"
 next: "/merit-badges/canoeing/guide/req7/"
-next_title: "Req 7 — On the Water Basics"
+next_title: "On the Water Basics"
 ---
 
 {{< drg/requirement number="6" >}}

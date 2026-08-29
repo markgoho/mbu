@@ -1,13 +1,13 @@
 ---
-title: "Req 5c — Founder"
+title: "Founder"
 layout: "guide"
-group_title: "Founder"
+group_title: "5. Founder"
 req_number: "5c"
 req_path: "5.c"
 prev: "/merit-badges/metalwork/guide/req5b3/"
-prev_title: "Req 5b3 — Sawing, Sinking & Soldering"
+prev_title: "Sawing, Sinking & Soldering"
 next: "/merit-badges/metalwork/guide/req5c1/"
-next_title: "Req 5c1 — Molds & Their Parts"
+next_title: "Molds & Their Parts"
 ---
 
 {{< drg/requirement number="5" option="Option 3—Founder" >}}

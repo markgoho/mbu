@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Native, Cultivated, and Invasive Plants"
+title: "Native, Cultivated, and Invasive Plants"
 layout: "guide"
-group_title: "Local Plants & Invasives"
+group_title: "6. Local Plants & Invasives"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/plant-science/guide/req5/"
-prev_title: "Req 5 — Propagation in Practice"
+prev_title: "Propagation in Practice"
 next: "/merit-badges/plant-science/guide/req7/"
-next_title: "Req 7 — Careers or Hobbies"
+next_title: "Careers or Hobbies"
 ---
 
 {{< drg/requirement number="6" >}}

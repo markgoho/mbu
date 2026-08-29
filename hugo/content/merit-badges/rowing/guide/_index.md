@@ -4,74 +4,74 @@ layout: "guide"
 badge_name: "Rowing"
 group_title: "Getting Started"
 next: "/merit-badges/rowing/guide/req1/"
-next_title: "Req 1 — Hazards, Injuries & Safety Afloat"
+next_title: "Hazards, Injuries & Safety Afloat"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/rowing/guide/"
         is_sub: false
-  - group_title: "Safety Foundations"
+  - group_title: "1. Safety Foundations"
     items:
-      - title: "Req 1 — Hazards, Injuries & Safety Afloat"
+      - title: "1. Hazards, Injuries & Safety Afloat"
         url: "/merit-badges/rowing/guide/req1/"
         is_sub: false
-  - group_title: "Water Readiness"
+  - group_title: "2. Water Readiness"
     items:
-      - title: "Req 2 — Swimmer Test Readiness"
+      - title: "2. Swimmer Test Readiness"
         url: "/merit-badges/rowing/guide/req2/"
         is_sub: false
-  - group_title: "Life Jackets"
+  - group_title: "3. Life Jackets"
     items:
-      - title: "Req 3 — Life Jacket Choice and Fit"
+      - title: "3. Life Jacket Choice and Fit"
         url: "/merit-badges/rowing/guide/req3/"
         is_sub: false
-  - group_title: "Choose Your Rowing Path"
+  - group_title: "4. Choose Your Rowing Path"
     items:
-      - title: "Req 4 — Choose Your Rowing Path"
+      - title: "4. Choose Your Rowing Path"
         url: "/merit-badges/rowing/guide/req4/"
         is_sub: false
-  - group_title: "On-the-Water Skills"
+  - group_title: "4. On-the-Water Skills"
     items:
-      - title: "Req 4a — Boat Handling Skills"
+      - title: "a Boat Handling Skills"
         url: "/merit-badges/rowing/guide/req4a/"
         is_sub: true
-  - group_title: "Competitive Team Rowing"
+  - group_title: "4. Competitive Team Rowing"
     items:
-      - title: "Req 4b — Race Day as a Teammate"
+      - title: "b Race Day as a Teammate"
         url: "/merit-badges/rowing/guide/req4b/"
         is_sub: true
-  - group_title: "Choose Your Dockside Skill"
+  - group_title: "5. Choose Your Dockside Skill"
     items:
-      - title: "Req 5 — Choose Your Dockside Skill"
+      - title: "5. Choose Your Dockside Skill"
         url: "/merit-badges/rowing/guide/req5/"
         is_sub: false
-  - group_title: "Fixed-Seat Skills"
+  - group_title: "5. Fixed-Seat Skills"
     items:
-      - title: "Req 5a — Passenger Handling & Sculling"
+      - title: "a Passenger Handling & Sculling"
         url: "/merit-badges/rowing/guide/req5a/"
         is_sub: true
-  - group_title: "Sliding-Seat Skills"
+  - group_title: "5. Sliding-Seat Skills"
     items:
-      - title: "Req 5b — Sliding-Seat Dock Exchange"
+      - title: "b Sliding-Seat Dock Exchange"
         url: "/merit-badges/rowing/guide/req5b/"
         is_sub: true
-  - group_title: "Rescue Skills"
+  - group_title: "6. Rescue Skills"
     items:
-      - title: "Req 6 — Swamped Boat Recovery"
+      - title: "6. Swamped Boat Recovery"
         url: "/merit-badges/rowing/guide/req6/"
         is_sub: false
-      - title: "Req 7 — Towing a Swimmer"
+      - title: "7. Towing a Swimmer"
         url: "/merit-badges/rowing/guide/req7/"
         is_sub: false
-  - group_title: "Rowing Equipment"
+  - group_title: "8. Rowing Equipment"
     items:
-      - title: "Req 8 — Craft, Materials & Oarlocks"
+      - title: "8. Craft, Materials & Oarlocks"
         url: "/merit-badges/rowing/guide/req8/"
         is_sub: false
-  - group_title: "Advanced Know-How"
+  - group_title: "9. Advanced Know-How"
     items:
-      - title: "Req 9 — Technique, Weather & Boat Care"
+      - title: "9. Technique, Weather & Boat Care"
         url: "/merit-badges/rowing/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Software You Use"
+title: "Software You Use"
 layout: guide
-group_title: "Software & Security"
+group_title: "4. Software & Security"
 req_number: "4b"
 prev: "/merit-badges/digital-technology/guide/req4a/"
-prev_title: "Req 4a — Programs, Apps & How They Run"
+prev_title: "Programs, Apps & How They Run"
 next: "/merit-badges/digital-technology/guide/req4c/"
-next_title: "Req 4c — Malware & Protection"
+next_title: "Malware & Protection"
 ---
 
 {{< drg/requirement number="4b" >}}

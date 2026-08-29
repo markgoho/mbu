@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Rocks, Minerals, and Society"
+title: "Rocks, Minerals, and Society"
 layout: guide
-group_title: "Mineral Resources"
+group_title: "4. Mineral Resources"
 req_number: "4c"
 prev: "/merit-badges/geology/guide/req4b5b/"
-prev_title: "Req 4b5b — Visit a Drilling Rig"
+prev_title: "Visit a Drilling Rig"
 next: "/merit-badges/geology/guide/req4c1/"
-next_title: "Req 4c1 — The Three Rock Classes"
+next_title: "The Three Rock Classes"
 ---
 
 {{< drg/requirement number="4" option="Mineral Resources" >}}

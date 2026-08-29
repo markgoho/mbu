@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Dental Health"
+title: "Dental Health"
 layout: guide
-group_title: "Monitoring Your Health"
+group_title: "2. Monitoring Your Health"
 req_number: "2b"
 prev: "/merit-badges/personal-fitness/guide/req2a/"
-prev_title: "Req 2a — Physical Examinations"
+prev_title: "Physical Examinations"
 next: "/merit-badges/personal-fitness/guide/req3a/"
-next_title: "Req 3a — Exercise & the Four Components"
+next_title: "Exercise & the Four Components"
 ---
 
 {{< drg/requirement number="2b" >}}

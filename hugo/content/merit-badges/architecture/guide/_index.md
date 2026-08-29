@@ -4,38 +4,38 @@ layout: guide
 badge_name: "Architecture"
 group_title: "Getting Started"
 next: "/merit-badges/architecture/guide/req1a/"
-next_title: "Req 1a — Community Building Tour"
+next_title: "Community Building Tour"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/architecture/guide/"
-  - group_title: "Exploring Your Community"
+  - group_title: "1. Exploring Your Community"
     items:
-      - title: "Req 1a — Community Building Tour"
+      - title: "a Community Building Tour"
         url: "/merit-badges/architecture/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Historical Achievement"
+      - title: "b Historical Achievement"
         url: "/merit-badges/architecture/guide/req1b/"
         is_sub: true
-  - group_title: "Sustainability & Environment"
+  - group_title: "2. Sustainability & Environment"
     items:
-      - title: "Req 2 — Sustainable Architecture"
+      - title: "2. Sustainable Architecture"
         url: "/merit-badges/architecture/guide/req2/"
         is_sub: false
-  - group_title: "The Professional Side"
+  - group_title: "3. The Professional Side"
     items:
-      - title: "Req 3 — Meet an Architect"
+      - title: "3. Meet an Architect"
         url: "/merit-badges/architecture/guide/req3/"
         is_sub: false
-  - group_title: "Drawing & Design"
+  - group_title: "4. Drawing & Design"
     items:
-      - title: "Req 4 — Floor Plan Drawing"
+      - title: "4. Floor Plan Drawing"
         url: "/merit-badges/architecture/guide/req4/"
         is_sub: false
-  - group_title: "Architecture Careers"
+  - group_title: "5. Architecture Careers"
     items:
-      - title: "Req 5 — Career Exploration"
+      - title: "5. Career Exploration"
         url: "/merit-badges/architecture/guide/req5/"
         is_sub: false
   - group_title: "Beyond the Badge"

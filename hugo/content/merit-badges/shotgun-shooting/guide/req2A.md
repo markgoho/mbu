@@ -1,13 +1,13 @@
 ---
 title: "Option A Overview"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A"
 req_path: "2.A"
 prev: "/merit-badges/shotgun-shooting/guide/req2/"
-prev_title: "Req 2 — Pick Your Option"
+prev_title: "Pick Your Option"
 next: "/merit-badges/shotgun-shooting/guide/req2Aa/"
-next_title: "Req 2A-a — Principal Parts and Action Types"
+next_title: "Principal Parts and Action Types"
 ---
 
 {{< drg/requirement number="2" option="Shotgun Shooting (Modern Shotshell Type)" >}}

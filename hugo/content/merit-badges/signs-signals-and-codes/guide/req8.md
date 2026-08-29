@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Choose Three Real-World Signal Systems"
+title: "Choose Three Real-World Signal Systems"
 layout: "guide"
-group_title: "Specialized Signal Systems"
+group_title: "8. Specialized Signal Systems"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/signs-signals-and-codes/guide/req7/"
-prev_title: "Req 7 — Trail Markers With Outdoor Ethics"
+prev_title: "Trail Markers With Outdoor Ethics"
 next: "/merit-badges/signs-signals-and-codes/guide/req8a/"
-next_title: "Req 8a — Sports Officiating Signals"
+next_title: "Sports Officiating Signals"
 ---
 
 {{< drg/requirement number="8" >}}

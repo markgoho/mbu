@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Leave No Trace & Outdoor Code"
+title: "Leave No Trace & Outdoor Code"
 layout: guide
-group_title: "Outdoor Ethics"
+group_title: "2. Outdoor Ethics"
 req_number: "2"
 prev: "/merit-badges/camping/guide/req1c/"
-prev_title: "Req 1c — Camping First Aid"
+prev_title: "Camping First Aid"
 next: "/merit-badges/camping/guide/req3/"
-next_title: "Req 3 — Map & Navigation"
+next_title: "Map & Navigation"
 ---
 
 {{< drg/requirement number="2" >}}

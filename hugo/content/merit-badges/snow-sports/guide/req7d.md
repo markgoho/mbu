@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Snowshoeing"
+title: "Snowshoeing"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/snow-sports/guide/req7c-11/"
-prev_title: "Req 7c11 — Major Snowboarding Organizations"
+prev_title: "Major Snowboarding Organizations"
 next: "/merit-badges/snow-sports/guide/req7d1/"
-next_title: "Req 7d1 — Parts of a Snowshoe"
+next_title: "Parts of a Snowshoe"
 ---
 
 {{< drg/requirement number="7" option="Snowshoeing" >}}

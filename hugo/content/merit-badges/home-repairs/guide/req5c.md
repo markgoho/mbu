@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Repairing a Toilet"
+title: "Repairing a Toilet"
 layout: guide
-group_title: "Plumbing Basics"
+group_title: "5. Plumbing Basics"
 req_number: "5c"
 prev: "/merit-badges/home-repairs/guide/req5b/"
-prev_title: "Req 5b — Fixing a Leaky Faucet"
+prev_title: "Fixing a Leaky Faucet"
 next: "/merit-badges/home-repairs/guide/req5d/"
-next_title: "Req 5d — Repairing a Hose or Connector"
+next_title: "Repairing a Hose or Connector"
 ---
 
 {{< drg/requirement number="5c" >}}

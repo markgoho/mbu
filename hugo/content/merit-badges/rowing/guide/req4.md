@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose Your Rowing Path"
+title: "Choose Your Rowing Path"
 layout: "guide"
-group_title: "Choose Your Rowing Path"
+group_title: "4. Choose Your Rowing Path"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/rowing/guide/req3/"
-prev_title: "Req 3 — Life Jacket Choice and Fit"
+prev_title: "Life Jacket Choice and Fit"
 next: "/merit-badges/rowing/guide/req4a/"
-next_title: "Req 4a — Boat Handling Skills"
+next_title: "Boat Handling Skills"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Requirement 4b — Tape and Pencil Method"
+title: "Tape and Pencil Method"
 layout: guide
-group_title: "Taking Your Own Fingerprints"
+group_title: "4. Taking Your Own Fingerprints"
 req_number: "4b"
 prev: "/merit-badges/fingerprinting/guide/req4a/"
-prev_title: "Requirement 4a — Official Fingerprint Cards"
+prev_title: "Official Fingerprint Cards"
 next: "/merit-badges/fingerprinting/guide/req5/"
-next_title: "Requirement 5 — Identifying Fingerprint Patterns"
+next_title: "Identifying Fingerprint Patterns"
 ---
 
 {{< drg/requirement number="4b" >}}

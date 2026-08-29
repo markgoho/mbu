@@ -4,62 +4,62 @@ layout: "guide"
 badge_name: "Textile"
 group_title: "Getting Started"
 next: "/merit-badges/textile/guide/req1/"
-next_title: "Req 1 — Why Textiles Matter"
+next_title: "Why Textiles Matter"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/textile/guide/"
         is_sub: false
-  - group_title: "Why Textiles Matter"
+  - group_title: "1. Why Textiles Matter"
     items:
-      - title: "Req 1 — Why Textiles Matter"
+      - title: "1. Why Textiles Matter"
         url: "/merit-badges/textile/guide/req1/"
         is_sub: false
-  - group_title: "Fibers, Yarns, and Fabrics"
+  - group_title: "2. Fibers, Yarns, and Fabrics"
     items:
-      - title: "Req 2 — From Fiber to Fabric"
+      - title: "2. From Fiber to Fabric"
         url: "/merit-badges/textile/guide/req2/"
         is_sub: false
-  - group_title: "Choose Two Textile Projects"
+  - group_title: "3. Choose Two Textile Projects"
     items:
-      - title: "Req 3 — Pick Your Two Projects"
+      - title: "3. Pick Your Two Projects"
         url: "/merit-badges/textile/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Behind the Scenes of Textile Production"
+      - title: "a Behind the Scenes of Textile Production"
         url: "/merit-badges/textile/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Weave on a Homemade Loom"
+      - title: "b Weave on a Homemade Loom"
         url: "/merit-badges/textile/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Compare Fabric Structures"
+      - title: "c Compare Fabric Structures"
         url: "/merit-badges/textile/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Make Felt by Hand"
+      - title: "d Make Felt by Hand"
         url: "/merit-badges/textile/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Dye Fabric with Natural Color"
+      - title: "e Dye Fabric with Natural Color"
         url: "/merit-badges/textile/guide/req3e/"
         is_sub: true
-      - title: "Req 3f — Make Fabric Resist Water"
+      - title: "f Make Fabric Resist Water"
         url: "/merit-badges/textile/guide/req3f/"
         is_sub: true
-      - title: "Req 3g — Identify Fibers"
+      - title: "g Identify Fibers"
         url: "/merit-badges/textile/guide/req3g/"
         is_sub: true
-  - group_title: "Textile Vocabulary"
+  - group_title: "4. Textile Vocabulary"
     items:
-      - title: "Req 4 — Talk Like a Textile Maker"
+      - title: "4. Talk Like a Textile Maker"
         url: "/merit-badges/textile/guide/req4/"
         is_sub: false
-  - group_title: "Materials and Impact"
+  - group_title: "5. Materials and Impact"
     items:
-      - title: "Req 5 — Compare Fibers and Their Footprint"
+      - title: "5. Compare Fibers and Their Footprint"
         url: "/merit-badges/textile/guide/req5/"
         is_sub: false
-  - group_title: "Textile Careers"
+  - group_title: "6. Textile Careers"
     items:
-      - title: "Req 6 — Explore Textile Careers"
+      - title: "6. Explore Textile Careers"
         url: "/merit-badges/textile/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

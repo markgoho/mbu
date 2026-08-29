@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Finding Elevations from a Benchmark"
+title: "Finding Elevations from a Benchmark"
 layout: "guide"
-group_title: "Elevation and Levels"
+group_title: "4. Elevation and Levels"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/surveying/guide/req3/"
-prev_title: "Req 3 — Plotting Your Survey Map"
+prev_title: "Plotting Your Survey Map"
 next: "/merit-badges/surveying/guide/req5/"
-next_title: "Req 5 — Reading a Property Deed"
+next_title: "Reading a Property Deed"
 ---
 
 {{< drg/requirement number="4" >}}

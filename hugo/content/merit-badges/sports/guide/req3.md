@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Preparation, Strength, and Sportsmanship"
+title: "Preparation, Strength, and Sportsmanship"
 layout: "guide"
-group_title: "Training and Character"
+group_title: "3. Training and Character"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/sports/guide/req2/"
-prev_title: "Req 2 — Health Habits That Support Performance"
+prev_title: "Health Habits That Support Performance"
 next: "/merit-badges/sports/guide/req4/"
-next_title: "Req 4 — Pick Sports You Can Really Commit To"
+next_title: "Pick Sports You Can Really Commit To"
 ---
 
 {{< drg/requirement number="3" >}}

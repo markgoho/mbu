@@ -1,13 +1,13 @@
 ---
-title: "Req 2bb — Safe Storage and Handling"
+title: "Safe Storage and Handling"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2bb"
 req_path: "2.b.b"
 prev: "/merit-badges/rifle-shooting/guide/req2ba/"
-prev_title: "Req 2ba — Three Main Parts of an Air Rifle"
+prev_title: "Three Main Parts of an Air Rifle"
 next: "/merit-badges/rifle-shooting/guide/req2bc/"
-next_title: "Req 2bc — Two Types of Air Rifle Ammunition"
+next_title: "Two Types of Air Rifle Ammunition"
 ---
 
 {{< drg/requirement number="2bb" >}}

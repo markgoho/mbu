@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Coatings, Paint Types & Sheen"
+title: "Coatings, Paint Types & Sheen"
 layout: "guide"
-group_title: "Understanding Coatings"
+group_title: "2. Understanding Coatings"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/painting/guide/req1/"
-prev_title: "Req 1 — Work Safe Before You Paint"
+prev_title: "Work Safe Before You Paint"
 next: "/merit-badges/painting/guide/req3/"
-next_title: "Req 3 — Plan Two Real Projects"
+next_title: "Plan Two Real Projects"
 ---
 
 {{< drg/requirement number="2" >}}

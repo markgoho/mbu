@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Elements of Art"
+title: "Elements of Art"
 layout: guide
-group_title: "Building Blocks of Art"
+group_title: "2. Building Blocks of Art"
 req_number: "2"
 prev: "/merit-badges/art/guide/req1/"
-prev_title: "Req 1 — Understanding Art"
+prev_title: "Understanding Art"
 next: "/merit-badges/art/guide/req3/"
-next_title: "Req 3 — Principles of Design"
+next_title: "Principles of Design"
 ---
 
 {{< drg/requirement number="2" >}}

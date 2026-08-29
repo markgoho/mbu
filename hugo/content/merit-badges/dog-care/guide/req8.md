@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Veterinary Hospital or Shelter Visit"
+title: "Veterinary Hospital or Shelter Visit"
 layout: guide
-group_title: "Community Connections"
+group_title: "8. Community Connections"
 req_number: "8"
 prev: "/merit-badges/dog-care/guide/req7h/"
-prev_title: "Req 7h — Major Dog Diseases"
+prev_title: "Major Dog Diseases"
 next: "/merit-badges/dog-care/guide/req9/"
-next_title: "Req 9 — Local Dog Laws"
+next_title: "Local Dog Laws"
 ---
 
 {{< drg/requirement number="8" >}}

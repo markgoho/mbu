@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Advocacy"
+title: "Advocacy"
 layout: guide
-group_title: "Advocacy & Action"
+group_title: "5. Advocacy & Action"
 req_number: "5"
 prev: "/merit-badges/disabilities-awareness/guide/req4-option-b/"
 prev_title: "Req 4 Option B — Invisible Disability Accommodations"
 next: "/merit-badges/disabilities-awareness/guide/req6/"
-next_title: "Req 6 — Personal Commitment"
+next_title: "Personal Commitment"
 ---
 
 {{< drg/requirement number="5" >}}

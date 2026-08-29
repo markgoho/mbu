@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Taking a Compass Bearing"
+title: "Taking a Compass Bearing"
 layout: guide
-group_title: "Compass Skills"
+group_title: "3. Compass Skills"
 req_number: "3b"
 prev: "/merit-badges/orienteering/guide/req3a/"
-prev_title: "Req 3a — How a Compass Works"
+prev_title: "How a Compass Works"
 next: "/merit-badges/orienteering/guide/req4a/"
-next_title: "Req 4a — Terrain Features"
+next_title: "Terrain Features"
 ---
 
 {{< drg/requirement number="3b" >}}

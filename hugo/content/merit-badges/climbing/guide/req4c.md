@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Site Safety Evaluation"
+title: "Site Safety Evaluation"
 layout: guide
-group_title: "Location & Route Assessment"
+group_title: "4. Location & Route Assessment"
 req_number: "4c"
 prev: "/merit-badges/climbing/guide/req4b/"
-prev_title: "Req 4b — Climbing Styles"
+prev_title: "Climbing Styles"
 next: "/merit-badges/climbing/guide/req4d/"
-next_title: "Req 4d — Emergency Planning"
+next_title: "Emergency Planning"
 ---
 
 {{< drg/requirement number="4c" >}}

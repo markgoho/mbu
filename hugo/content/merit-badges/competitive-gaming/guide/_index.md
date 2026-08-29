@@ -4,55 +4,55 @@ layout: "guide"
 badge_name: "Competitive Gaming"
 group_title: "Getting Started"
 next: "/merit-badges/competitive-gaming/guide/req1/"
-next_title: "Req 1 — The History of Video Gaming and Esports"
+next_title: "The History of Video Gaming and Esports"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/competitive-gaming/guide/"
         is_sub: false
-  - group_title: "Where Gaming Came From"
+  - group_title: "1. Where Gaming Came From"
     items:
-      - title: "Req 1 — The History of Video Gaming and Esports"
+      - title: "1. The History of Video Gaming and Esports"
         url: "/merit-badges/competitive-gaming/guide/req1/"
         is_sub: false
-  - group_title: "Character in Online Play"
+  - group_title: "2. Character in Online Play"
     items:
-      - title: "Req 2 — Living the Scout Oath and Law Online"
+      - title: "2. Living the Scout Oath and Law Online"
         url: "/merit-badges/competitive-gaming/guide/req2/"
         is_sub: false
-  - group_title: "Health and Balance"
+  - group_title: "3. Health and Balance"
     items:
-      - title: "Req 3 — Gamer Health and Balance"
+      - title: "3. Gamer Health and Balance"
         url: "/merit-badges/competitive-gaming/guide/req3/"
         is_sub: false
-  - group_title: "Safety and Community"
+  - group_title: "4. Safety and Community"
     items:
-      - title: "Req 4 — Gamer Safety and Community Connection"
+      - title: "4. Gamer Safety and Community Connection"
         url: "/merit-badges/competitive-gaming/guide/req4/"
         is_sub: false
-  - group_title: "Gaming Technology"
+  - group_title: "5. Gaming Technology"
     items:
-      - title: "Req 5 — Technology in Competitive Gaming"
+      - title: "5. Technology in Competitive Gaming"
         url: "/merit-badges/competitive-gaming/guide/req5/"
         is_sub: false
-  - group_title: "Leadership and Service"
+  - group_title: "6. Leadership and Service"
     items:
-      - title: "Req 6 — Leadership and Service in Competitive Gaming"
+      - title: "6. Leadership and Service in Competitive Gaming"
         url: "/merit-badges/competitive-gaming/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Teach Digital Citizenship"
+      - title: "a Teach Digital Citizenship"
         url: "/merit-badges/competitive-gaming/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Watch a Live Esports Event"
+      - title: "b Watch a Live Esports Event"
         url: "/merit-badges/competitive-gaming/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Attend an Esports Event"
+      - title: "c Attend an Esports Event"
         url: "/merit-badges/competitive-gaming/guide/req6c/"
         is_sub: true
-  - group_title: "Careers in Competitive Gaming"
+  - group_title: "7. Careers in Competitive Gaming"
     items:
-      - title: "Req 7 — Exploring Professions in the Competitive Gaming Industry"
+      - title: "7. Exploring Professions in the Competitive Gaming Industry"
         url: "/merit-badges/competitive-gaming/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — First Aid & Survival Kits"
+title: "First Aid & Survival Kits"
 layout: guide
-group_title: "Survival Foundations"
+group_title: "2. Survival Foundations"
 req_number: "4"
 prev: "/merit-badges/wilderness-survival/guide/req3/"
-prev_title: "Req 3 — Avoiding Panic & Maintaining Morale"
+prev_title: "Avoiding Panic & Maintaining Morale"
 next: "/merit-badges/wilderness-survival/guide/req5a/"
-next_title: "Req 5a — Exposure Conditions"
+next_title: "Exposure Conditions"
 ---
 
 {{< drg/requirement number="4" >}}

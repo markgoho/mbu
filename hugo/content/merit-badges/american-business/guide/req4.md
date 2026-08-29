@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Labor Laws & Protections"
+title: "Labor Laws & Protections"
 layout: guide
-group_title: "Labor & Government"
+group_title: "4. Labor & Government"
 req_number: "4"
 prev: "/merit-badges/american-business/guide/req3d/"
-prev_title: "Req 3d — Brick-and-Mortar vs. Online"
+prev_title: "Brick-and-Mortar vs. Online"
 next: "/merit-badges/american-business/guide/req5/"
-next_title: "Req 5 — Researching a Business"
+next_title: "Researching a Business"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -4,65 +4,65 @@ layout: guide
 badge_name: "Theater"
 group_title: "Getting Started"
 next: "/merit-badges/theater/guide/req1/"
-next_title: "Req 1 — Watching & Reviewing Plays"
+next_title: "Watching & Reviewing Plays"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/theater/guide/"
-  - group_title: "The Audience Experience"
+  - group_title: "1. The Audience Experience"
     items:
-      - title: "Req 1 — Watching & Reviewing Plays"
+      - title: "1. Watching & Reviewing Plays"
         url: "/merit-badges/theater/guide/req1/"
         is_sub: false
-  - group_title: "The Playwright's Craft"
+  - group_title: "2. The Playwright's Craft"
     items:
-      - title: "Req 2 — Writing a One-Act Play"
+      - title: "2. Writing a One-Act Play"
         url: "/merit-badges/theater/guide/req2/"
         is_sub: false
-  - group_title: "Behind the Curtain"
+  - group_title: "3. Behind the Curtain"
     items:
-      - title: "Req 3 — Theater Safety"
+      - title: "3. Theater Safety"
         url: "/merit-badges/theater/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Acting"
+      - title: "a Acting"
         url: "/merit-badges/theater/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Directing"
+      - title: "b Directing"
         url: "/merit-badges/theater/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Set Design"
+      - title: "c Set Design"
         url: "/merit-badges/theater/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Costume Design"
+      - title: "d Costume Design"
         url: "/merit-badges/theater/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Hair & Makeup"
+      - title: "e Hair & Makeup"
         url: "/merit-badges/theater/guide/req3e/"
         is_sub: true
-      - title: "Req 3f — Scenery Building"
+      - title: "f Scenery Building"
         url: "/merit-badges/theater/guide/req3f/"
         is_sub: true
-      - title: "Req 3g — Lighting Design"
+      - title: "g Lighting Design"
         url: "/merit-badges/theater/guide/req3g/"
         is_sub: true
-      - title: "Req 3h — Sound Design"
+      - title: "h Sound Design"
         url: "/merit-badges/theater/guide/req3h/"
         is_sub: true
-      - title: "Req 3i — Stage Management"
+      - title: "i Stage Management"
         url: "/merit-badges/theater/guide/req3i/"
         is_sub: true
-      - title: "Req 3j — Musical Direction"
+      - title: "j Musical Direction"
         url: "/merit-badges/theater/guide/req3j/"
         is_sub: true
-  - group_title: "The Art of Silence"
+  - group_title: "4. The Art of Silence"
     items:
-      - title: "Req 4 — Mime & Pantomime"
+      - title: "4. Mime & Pantomime"
         url: "/merit-badges/theater/guide/req4/"
         is_sub: false
-  - group_title: "Speaking the Language"
+  - group_title: "5. Speaking the Language"
     items:
-      - title: "Req 5 — Theater Terminology"
+      - title: "5. Theater Terminology"
         url: "/merit-badges/theater/guide/req5/"
         is_sub: false
   - group_title: "Beyond the Badge"

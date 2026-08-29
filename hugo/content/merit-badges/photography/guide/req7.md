@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Tell a Visual Story"
+title: "Tell a Visual Story"
 layout: "guide"
-group_title: "Visual Storytelling"
+group_title: "7. Visual Storytelling"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/photography/guide/req6c/"
-prev_title: "Req 6c — Improve Impact Another Way"
+prev_title: "Improve Impact Another Way"
 next: "/merit-badges/photography/guide/req8/"
-next_title: "Req 8 — Explore Photography Careers"
+next_title: "Explore Photography Careers"
 ---
 
 {{< drg/requirement number="7" >}}

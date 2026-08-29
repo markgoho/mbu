@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Choose Your Circuit Projects"
+title: "Choose Your Circuit Projects"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10"
 prev: "/merit-badges/electricity/guide/req9/"
-prev_title: "Req 9 — Essential Electrical Terms"
+prev_title: "Essential Electrical Terms"
 next: "/merit-badges/electricity/guide/req10a/"
-next_title: "Req 10a — Battery, Switch, and Load"
+next_title: "Battery, Switch, and Load"
 ---
 
 {{< drg/requirement number="10" >}}

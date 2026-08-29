@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Choose Your Adventure"
+title: "Choose Your Adventure"
 layout: guide
-group_title: "Birding Experiences"
+group_title: "8. Birding Experiences"
 req_number: "8"
 prev: "/merit-badges/bird-study/guide/req7/"
-prev_title: "Req 7 — Songs & Calls"
+prev_title: "Songs & Calls"
 next: "/merit-badges/bird-study/guide/req9/"
-next_title: "Req 9 — Build for Birds"
+next_title: "Build for Birds"
 ---
 
 {{< drg/requirement number="8" >}}

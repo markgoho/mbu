@@ -1,12 +1,12 @@
 ---
-title: "Req 15 — Spinal Injury Management"
+title: "Spinal Injury Management"
 layout: guide
-group_title: "Spinal Injury & Resuscitation"
+group_title: "15. Spinal Injury & Resuscitation"
 req_number: "15"
 prev: "/merit-badges/lifesaving/guide/req14/"
-prev_title: "Req 14 — Submerged Victim Recovery"
+prev_title: "Submerged Victim Recovery"
 next: "/merit-badges/lifesaving/guide/req16/"
-next_title: "Req 16 — CPR & Rescue Breathing"
+next_title: "CPR & Rescue Breathing"
 ---
 
 {{< drg/requirement number="15" >}}

@@ -4,116 +4,116 @@ layout: "guide"
 badge_name: "Railroading"
 group_title: "Getting Started"
 next: "/merit-badges/railroading/guide/req1/"
-next_title: "Req 1 — Choose Three Rail Foundations"
+next_title: "Choose Three Rail Foundations"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/railroading/guide/"
         is_sub: false
-  - group_title: "Choose Three Rail Foundations"
+  - group_title: "1. Choose Three Rail Foundations"
     items:
-      - title: "Req 1 — Choose Three Rail Foundations"
+      - title: "1. Choose Three Rail Foundations"
         url: "/merit-badges/railroading/guide/req1/"
         is_sub: false
-      - title: "Req 1a — Modern Freight Trains"
+      - title: "a Modern Freight Trains"
         url: "/merit-badges/railroading/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Mapping a Railroad System"
+      - title: "b Mapping a Railroad System"
         url: "/merit-badges/railroading/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Freight and Passenger Cars"
+      - title: "c Freight and Passenger Cars"
         url: "/merit-badges/railroading/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — How Locomotives Make Power"
+      - title: "d How Locomotives Make Power"
         url: "/merit-badges/railroading/guide/req1d/"
         is_sub: true
-  - group_title: "Passenger Rail & Transit"
+  - group_title: "2. Passenger Rail & Transit"
     items:
-      - title: "Req 2 — Passenger Rail in America"
+      - title: "2. Passenger Rail in America"
         url: "/merit-badges/railroading/guide/req2/"
         is_sub: false
-  - group_title: "Rail Careers & Businesses"
+  - group_title: "3. Rail Careers & Businesses"
     items:
-      - title: "Req 3 — Explore Railroading Careers"
+      - title: "3. Explore Railroading Careers"
         url: "/merit-badges/railroading/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Inside a Railroad Company"
+      - title: "a Inside a Railroad Company"
         url: "/merit-badges/railroading/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Rail Jobs That Interest You"
+      - title: "b Rail Jobs That Interest You"
         url: "/merit-badges/railroading/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Rail Support Industries"
+      - title: "c Rail Support Industries"
         url: "/merit-badges/railroading/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Interview a Rail Professional"
+      - title: "d Interview a Rail Professional"
         url: "/merit-badges/railroading/guide/req3d/"
         is_sub: true
-  - group_title: "Rail Safety Basics"
+  - group_title: "4. Rail Safety Basics"
     items:
-      - title: "Req 4 — Track Safety and Safe Behavior"
+      - title: "4. Track Safety and Safe Behavior"
         url: "/merit-badges/railroading/guide/req4/"
         is_sub: false
-  - group_title: "Crossing Signs & Signals"
+  - group_title: "5. Crossing Signs & Signals"
     items:
-      - title: "Req 5 — Reading Railroad Signs"
+      - title: "5. Reading Railroad Signs"
         url: "/merit-badges/railroading/guide/req5/"
         is_sub: false
-  - group_title: "Train Communication Systems"
+  - group_title: "6. Train Communication Systems"
     items:
-      - title: "Req 6 — Signals, Horns, and Rear-End Devices"
+      - title: "6. Signals, Horns, and Rear-End Devices"
         url: "/merit-badges/railroading/guide/req6/"
         is_sub: false
-  - group_title: "Choose a Special Interest"
+  - group_title: "7. Choose a Special Interest"
     items:
-      - title: "Req 7 — Choose a Special Interest"
+      - title: "7. Choose a Special Interest"
         url: "/merit-badges/railroading/guide/req7/"
         is_sub: false
-  - group_title: "Model Railroading Option"
+  - group_title: "7. Model Railroading Option"
     items:
-      - title: "Req 7a — Model Railroading Projects"
+      - title: "a Model Railroading Projects"
         url: "/merit-badges/railroading/guide/req7a/"
         is_sub: false
-      - title: "Req 7a1 — Plan a Layout"
+      - title: "a Plan a Layout"
         url: "/merit-badges/railroading/guide/req7a1/"
         is_sub: true
-      - title: "Req 7a2 — Build a Rolling Stock Kit"
+      - title: "a Build a Rolling Stock Kit"
         url: "/merit-badges/railroading/guide/req7a2/"
         is_sub: true
-      - title: "Req 7a3 — Scales and Gauges"
+      - title: "a Scales and Gauges"
         url: "/merit-badges/railroading/guide/req7a3/"
         is_sub: true
-      - title: "Req 7a4 — Makers and Magazines"
+      - title: "a Makers and Magazines"
         url: "/merit-badges/railroading/guide/req7a4/"
         is_sub: true
-      - title: "Req 7a5 — Structures and Scenery"
+      - title: "a Structures and Scenery"
         url: "/merit-badges/railroading/guide/req7a5/"
         is_sub: true
-      - title: "Req 7a6 — Build and Run a Layout"
+      - title: "a Build and Run a Layout"
         url: "/merit-badges/railroading/guide/req7a6/"
         is_sub: true
-      - title: "Req 7a7 — Switching Contest Skills"
+      - title: "a Switching Contest Skills"
         url: "/merit-badges/railroading/guide/req7a7/"
         is_sub: true
-      - title: "Req 7a8 — DC and DCC Control"
+      - title: "a DC and DCC Control"
         url: "/merit-badges/railroading/guide/req7a8/"
         is_sub: true
-  - group_title: "Railfanning Option"
+  - group_title: "7. Railfanning Option"
     items:
-      - title: "Req 7b — Railfanning Adventures"
+      - title: "b Railfanning Adventures"
         url: "/merit-badges/railroading/guide/req7b/"
         is_sub: false
-      - title: "Req 7b1 — Museum or Public Event Visit"
+      - title: "b Museum or Public Event Visit"
         url: "/merit-badges/railroading/guide/req7b1/"
         is_sub: true
-      - title: "Req 7b2 — Ride a Historic Railroad"
+      - title: "b Ride a Historic Railroad"
         url: "/merit-badges/railroading/guide/req7b2/"
         is_sub: true
-      - title: "Req 7b3 — Rail Preservation Groups"
+      - title: "b Rail Preservation Groups"
         url: "/merit-badges/railroading/guide/req7b3/"
         is_sub: true
-      - title: "Req 7b4 — Plan and Take a Rail Trip"
+      - title: "b Plan and Take a Rail Trip"
         url: "/merit-badges/railroading/guide/req7b4/"
         is_sub: true
   - group_title: "Beyond the Badge"

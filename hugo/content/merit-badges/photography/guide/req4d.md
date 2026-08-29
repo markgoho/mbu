@@ -1,13 +1,13 @@
 ---
-title: "Req 4d — Change the Composition"
+title: "Change the Composition"
 layout: "guide"
-group_title: "Field Practice: Requirement 4"
+group_title: "4. Field Practice: Requirement 4"
 req_number: "4d"
 req_path: "4.d"
 prev: "/merit-badges/photography/guide/req4c/"
-prev_title: "Req 4c — Change the Focus"
+prev_title: "Change the Focus"
 next: "/merit-badges/photography/guide/req5/"
-next_title: "Req 5 — Pick Three Subject Types"
+next_title: "Pick Three Subject Types"
 ---
 
 {{< drg/requirement number="4d" >}}

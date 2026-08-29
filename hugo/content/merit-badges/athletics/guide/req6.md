@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Planning a Sports Meet"
+title: "Planning a Sports Meet"
 layout: guide
-group_title: "Organizing & Officiating"
+group_title: "6. Organizing & Officiating"
 req_number: "6"
 prev: "/merit-badges/athletics/guide/req5-weight-training/"
-prev_title: "Req 5i — Weight Training"
+prev_title: "Weight Training"
 next: "/merit-badges/athletics/guide/req7/"
-next_title: "Req 7 — Careers & Lifestyle"
+next_title: "Careers & Lifestyle"
 ---
 
 {{< drg/requirement number="6a" >}}

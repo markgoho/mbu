@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Watching & Reviewing Plays"
+title: "Watching & Reviewing Plays"
 layout: guide
-group_title: "The Audience Experience"
+group_title: "1. The Audience Experience"
 req_number: "1"
 prev: "/merit-badges/theater/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/theater/guide/req2/"
-next_title: "Req 2 — Writing a One-Act Play"
+next_title: "Writing a One-Act Play"
 ---
 
 {{< drg/requirement number="1" >}}

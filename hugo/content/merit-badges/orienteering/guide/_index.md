@@ -4,77 +4,77 @@ layout: guide
 badge_name: "Orienteering"
 group_title: "Getting Started"
 next: "/merit-badges/orienteering/guide/req1/"
-next_title: "Req 1 — Safety and First Aid"
+next_title: "Safety and First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/orienteering/guide/"
-  - group_title: "Safety & First Aid"
+  - group_title: "1. Safety & First Aid"
     items:
-      - title: "Req 1 — Safety and First Aid"
+      - title: "1. Safety and First Aid"
         url: "/merit-badges/orienteering/guide/req1/"
-  - group_title: "What Is Orienteering?"
+  - group_title: "2. What Is Orienteering?"
     items:
-      - title: "Req 2 — What Is Orienteering?"
+      - title: "2. What Is Orienteering?"
         url: "/merit-badges/orienteering/guide/req2/"
-  - group_title: "Compass Skills"
+  - group_title: "3. Compass Skills"
     items:
-      - title: "Req 3a — How a Compass Works"
+      - title: "a How a Compass Works"
         url: "/merit-badges/orienteering/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Taking a Compass Bearing"
+      - title: "b Taking a Compass Bearing"
         url: "/merit-badges/orienteering/guide/req3b/"
         is_sub: true
-  - group_title: "Map Skills"
+  - group_title: "4. Map Skills"
     items:
-      - title: "Req 4a — Terrain Features"
+      - title: "a Terrain Features"
         url: "/merit-badges/orienteering/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Map Symbols"
+      - title: "b Map Symbols"
         url: "/merit-badges/orienteering/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Magnetic Declination"
+      - title: "c Magnetic Declination"
         url: "/merit-badges/orienteering/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Magnetic North-South Lines"
+      - title: "d Magnetic North-South Lines"
         url: "/merit-badges/orienteering/guide/req4d/"
         is_sub: true
-      - title: "Req 4e–4f — Distances and Orienting a Map"
+      - title: "e Distances and Orienting a Map"
         url: "/merit-badges/orienteering/guide/req4ef/"
         is_sub: true
-  - group_title: "Pace Counting"
+  - group_title: "5. Pace Counting"
     items:
-      - title: "Req 5 — Pace Counting"
+      - title: "5. Pace Counting"
         url: "/merit-badges/orienteering/guide/req5/"
-  - group_title: "Orienteering Techniques"
+  - group_title: "6. Orienteering Techniques"
     items:
-      - title: "Req 6a — Control Description Symbols"
+      - title: "a Control Description Symbols"
         url: "/merit-badges/orienteering/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Control Description Sheets"
+      - title: "b Control Description Sheets"
         url: "/merit-badges/orienteering/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Navigation Techniques"
+      - title: "c Navigation Techniques"
         url: "/merit-badges/orienteering/guide/req6c/"
         is_sub: true
-  - group_title: "Competing & Improving"
+  - group_title: "7. Competing & Improving"
     items:
-      - title: "Req 7a — Orienteering Events"
+      - title: "a Orienteering Events"
         url: "/merit-badges/orienteering/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Event Reports"
+      - title: "b Event Reports"
         url: "/merit-badges/orienteering/guide/req7b/"
         is_sub: true
-  - group_title: "Course Design"
+  - group_title: "8. Course Design"
     items:
-      - title: "Req 8 — Setting Up a Course"
+      - title: "8. Setting Up a Course"
         url: "/merit-badges/orienteering/guide/req8/"
-  - group_title: "Officiating & Teaching"
+  - group_title: "9. Officiating & Teaching"
     items:
-      - title: "Req 9 — Acting as an Official"
+      - title: "9. Acting as an Official"
         url: "/merit-badges/orienteering/guide/req9/"
-      - title: "Req 10 — Teaching Orienteering"
+      - title: "10. Teaching Orienteering"
         url: "/merit-badges/orienteering/guide/req10/"
   - group_title: "Beyond the Badge"
     items:

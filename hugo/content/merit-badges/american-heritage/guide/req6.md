@@ -1,10 +1,10 @@
 ---
-title: "Req 6 — Heritage Careers"
+title: "Heritage Careers"
 layout: guide
-group_title: "Your Future in Heritage"
+group_title: "6. Your Future in Heritage"
 req_number: "6"
 prev: "/merit-badges/american-heritage/guide/req5/"
-prev_title: "Req 5 — Heritage Through Media"
+prev_title: "Heritage Through Media"
 next: "/merit-badges/american-heritage/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

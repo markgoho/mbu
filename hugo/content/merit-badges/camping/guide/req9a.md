@@ -1,12 +1,12 @@
 ---
-title: "Req 9a — 20 Nights of Camping"
+title: "20 Nights of Camping"
 layout: guide
-group_title: "Camping Experience"
+group_title: "9. Camping Experience"
 req_number: "9a"
 prev: "/merit-badges/camping/guide/req8d/"
-prev_title: "Req 8d — Cook Your Meals"
+prev_title: "Cook Your Meals"
 next: "/merit-badges/camping/guide/req9b/"
-next_title: "Req 9b — Adventure Activities"
+next_title: "Adventure Activities"
 ---
 
 {{< drg/requirement number="9a" >}}

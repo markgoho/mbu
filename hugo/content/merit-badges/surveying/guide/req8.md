@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Surveying Career Paths"
+title: "Surveying Career Paths"
 layout: "guide"
-group_title: "Careers and Futures"
+group_title: "8. Careers and Futures"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/surveying/guide/req7/"
-prev_title: "Req 7 — Why GPS Matters in Surveying"
+prev_title: "Why GPS Matters in Surveying"
 next: "/merit-badges/surveying/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

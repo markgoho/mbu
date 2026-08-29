@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — The History of Wildland Fire"
+title: "The History of Wildland Fire"
 layout: "guide"
-group_title: "Fire in American History"
+group_title: "1. Fire in American History"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/wildland-fire-management/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/wildland-fire-management/guide/req2/"
-next_title: "Req 2 — The Harms of Wildfire"
+next_title: "The Harms of Wildfire"
 ---
 
 {{< drg/requirement number="1" >}}

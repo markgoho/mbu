@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Choose a Plant Science Track"
+title: "Choose a Plant Science Track"
 layout: "guide"
-group_title: "Advanced Plant Studies"
+group_title: "8. Choose Your Specialty"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/plant-science/guide/req7b/"
-prev_title: "Req 7b — Plant Science as a Hobby"
+prev_title: "Plant Science as a Hobby"
 next: "/merit-badges/plant-science/guide/req8a/"
-next_title: "Req 8a — Agronomy Roadmap"
+next_title: "Agronomy Overview"
 ---
 
 {{< drg/requirement number="8" >}}

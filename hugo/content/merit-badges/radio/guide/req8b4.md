@@ -1,13 +1,13 @@
 ---
-title: "Req 8b4 — Broadcasting Terms"
+title: "Broadcasting Terms"
 layout: "guide"
-group_title: "Option B: Radio Broadcasting"
+group_title: "8. Option B: Radio Broadcasting"
 req_number: "8b4"
 req_path: "8.b.4"
 prev: "/merit-badges/radio/guide/req8b3/"
-prev_title: "Req 8b3 — Log Broadcast Stations"
+prev_title: "Log Broadcast Stations"
 next: "/merit-badges/radio/guide/req8b5/"
-next_title: "Req 8b5 — Alternative Platforms"
+next_title: "Alternative Platforms"
 guide_nav:
   - group_title: "Getting Started"
     items:

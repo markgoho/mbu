@@ -1,11 +1,11 @@
 ---
-title: "Req 3 — Pathways, Training, and Goals"
+title: "Pathways, Training, and Goals"
 layout: "guide"
-group_title: "Careers and Goals"
+group_title: "3. Careers and Goals"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/rifle-shooting/guide/req2cn/"
-prev_title: "Req 2cn — Scored Grouping Exercise"
+prev_title: "Scored Grouping Exercise"
 next: "/merit-badges/rifle-shooting/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

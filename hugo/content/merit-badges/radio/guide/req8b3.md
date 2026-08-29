@@ -1,13 +1,13 @@
 ---
-title: "Req 8b3 — Log Broadcast Stations"
+title: "Log Broadcast Stations"
 layout: "guide"
-group_title: "Option B: Radio Broadcasting"
+group_title: "8. Option B: Radio Broadcasting"
 req_number: "8b3"
 req_path: "8.b.3"
 prev: "/merit-badges/radio/guide/req8b2/"
-prev_title: "Req 8b2 — Produce a Program"
+prev_title: "Produce a Program"
 next: "/merit-badges/radio/guide/req8b4/"
-next_title: "Req 8b4 — Broadcasting Terms"
+next_title: "Broadcasting Terms"
 guide_nav:
   - group_title: "Getting Started"
     items:

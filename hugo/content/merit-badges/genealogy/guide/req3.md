@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Interview a Relative"
+title: "Interview a Relative"
 layout: guide
-group_title: "Foundations of Family History"
+group_title: "1. Foundations of Family History"
 req_number: "3"
 prev: "/merit-badges/genealogy/guide/req2b/"
-prev_title: "Req 2b — Six-Week Journal"
+prev_title: "Six-Week Journal"
 next: "/merit-badges/genealogy/guide/req4ab/"
-next_title: "Req 4a–4b — Physical and Digital Sources"
+next_title: "Physical and Digital Sources"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — pH & Indicators"
+title: "pH & Indicators"
 layout: guide
-group_title: "Chemistry & Cooking"
+group_title: "3. Chemistry & Cooking"
 req_number: "3b"
 prev: "/merit-badges/chemistry/guide/req3a/"
-prev_title: "Req 3a — The Maillard Reaction"
+prev_title: "The Maillard Reaction"
 next: "/merit-badges/chemistry/guide/req4/"
-next_title: "Req 4 — Camping Chemistry"
+next_title: "Camping Chemistry"
 ---
 
 {{< drg/requirement number="3b" >}}

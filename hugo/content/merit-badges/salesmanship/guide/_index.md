@@ -4,61 +4,61 @@ layout: "guide"
 badge_name: "Salesmanship"
 group_title: "Getting Started"
 next: "/merit-badges/salesmanship/guide/req1/"
-next_title: "Req 1 — What Great Salespeople Actually Do"
+next_title: "What Great Salespeople Actually Do"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/salesmanship/guide/"
         is_sub: false
-  - group_title: "Understanding the Role"
+  - group_title: "1. Understanding the Role"
     items:
-      - title: "Req 1 — What Great Salespeople Actually Do"
+      - title: "1. What Great Salespeople Actually Do"
         url: "/merit-badges/salesmanship/guide/req1/"
         is_sub: false
-  - group_title: "Preparing to Sell Well"
+  - group_title: "2. Preparing to Sell Well"
     items:
-      - title: "Req 2 — Research, Product Knowledge, and Follow-Up"
+      - title: "2. Research, Product Knowledge, and Follow-Up"
         url: "/merit-badges/salesmanship/guide/req2/"
         is_sub: false
-  - group_title: "Planning the Sale"
+  - group_title: "3. Planning the Sale"
     items:
-      - title: "Req 3 — Build a Sales Plan"
+      - title: "3. Build a Sales Plan"
         url: "/merit-badges/salesmanship/guide/req3/"
         is_sub: false
-  - group_title: "Making the Pitch"
+  - group_title: "4. Making the Pitch"
     items:
-      - title: "Req 4 — Give a Sales Presentation"
+      - title: "4. Give a Sales Presentation"
         url: "/merit-badges/salesmanship/guide/req4/"
         is_sub: false
-  - group_title: "Earning Through Real Sales"
+  - group_title: "5. Earning Through Real Sales"
     items:
-      - title: "Req 5 — Choose Your Sales Project"
+      - title: "5. Choose Your Sales Project"
         url: "/merit-badges/salesmanship/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Support a Scout Fundraiser"
+      - title: "a Support a Scout Fundraiser"
         url: "/merit-badges/salesmanship/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Sell a Neighborhood Service"
+      - title: "b Sell a Neighborhood Service"
         url: "/merit-badges/salesmanship/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Try Retail Selling"
+      - title: "c Try Retail Selling"
         url: "/merit-badges/salesmanship/guide/req5c/"
         is_sub: true
-  - group_title: "Learning from Professionals"
+  - group_title: "6. Learning from Professionals"
     items:
-      - title: "Req 6 — Choose an Interview Path"
+      - title: "6. Choose an Interview Path"
         url: "/merit-badges/salesmanship/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Interview a Sales Professional"
+      - title: "a Interview a Sales Professional"
         url: "/merit-badges/salesmanship/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Interview a Store Owner"
+      - title: "b Interview a Store Owner"
         url: "/merit-badges/salesmanship/guide/req6b/"
         is_sub: true
-  - group_title: "Sales as a Career"
+  - group_title: "7. Sales as a Career"
     items:
-      - title: "Req 7 — Explore Sales Careers"
+      - title: "7. Explore Sales Careers"
         url: "/merit-badges/salesmanship/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

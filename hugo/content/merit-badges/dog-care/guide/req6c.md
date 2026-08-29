@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Dental Care"
+title: "Dental Care"
 layout: guide
-group_title: "Keeping Dogs Healthy"
+group_title: "6. Keeping Dogs Healthy"
 req_number: "6c"
 prev: "/merit-badges/dog-care/guide/req6b/"
-prev_title: "Req 6b — Parasite Prevention"
+prev_title: "Parasite Prevention"
 next: "/merit-badges/dog-care/guide/req6d/"
-next_title: "Req 6d — Grooming and Nail Care"
+next_title: "Grooming and Nail Care"
 ---
 
 {{< drg/requirement number="6c" >}}

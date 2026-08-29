@@ -1,12 +1,12 @@
 ---
-title: "Req 4b5 — Show or Visit a Drilling Operation"
+title: "Show or Visit a Drilling Operation"
 layout: guide
-group_title: "Energy Resources"
+group_title: "4. Energy Resources"
 req_number: "4b5"
 prev: "/merit-badges/geology/guide/req4b4/"
-prev_title: "Req 4b4 — Subsurface Structure Maps"
+prev_title: "Subsurface Structure Maps"
 next: "/merit-badges/geology/guide/req4b5a/"
-next_title: "Req 4b5a — Present How Fuels Are Found"
+next_title: "Present How Fuels Are Found"
 ---
 
 {{< drg/requirement number="4b5" >}}

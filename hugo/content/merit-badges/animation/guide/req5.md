@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Careers in Animation"
+title: "Careers in Animation"
 layout: guide
-group_title: "Animation Careers"
+group_title: "5. Animation Careers"
 req_number: "5"
 prev: "/merit-badges/animation/guide/req4b/"
-prev_title: "Req 4b — The Future of Animation"
+prev_title: "The Future of Animation"
 next: "/merit-badges/animation/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

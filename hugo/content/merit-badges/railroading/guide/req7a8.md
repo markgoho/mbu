@@ -1,13 +1,13 @@
 ---
-title: "Req 7a8 — DC and DCC Control"
+title: "DC and DCC Control"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a8"
 req_path: "7.a.8"
 prev: "/merit-badges/railroading/guide/req7a7/"
-prev_title: "Req 7a7 — Switching Contest Skills"
+prev_title: "Switching Contest Skills"
 next: "/merit-badges/railroading/guide/req7b/"
-next_title: "Req 7b — Railfanning Adventures"
+next_title: "Railfanning Adventures"
 ---
 
 {{< drg/requirement number="7a8" >}}

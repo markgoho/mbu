@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Meteorology, Weather, and Climate"
+title: "Meteorology, Weather, and Climate"
 layout: "guide"
-group_title: "Weather Basics"
+group_title: "1. Weather Basics"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/weather/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/weather/guide/req2/"
-next_title: "Req 2 — Dangerous Weather and Family Safety"
+next_title: "Dangerous Weather and Family Safety"
 ---
 
 {{< drg/requirement number="1" >}}

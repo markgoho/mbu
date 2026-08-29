@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Famous Checkmates & Traps"
+title: "Famous Checkmates & Traps"
 layout: guide
-group_title: "Mastering the Game"
+group_title: "4. Mastering the Game"
 req_number: "4d"
 prev: "/merit-badges/chess/guide/req4c/"
-prev_title: "Req 4c — Opening Principles & Openings"
+prev_title: "Opening Principles & Openings"
 next: "/merit-badges/chess/guide/req5a/"
-next_title: "Req 5a — Chess Strategy"
+next_title: "Chess Strategy"
 ---
 
 {{< drg/requirement number="4d" >}}

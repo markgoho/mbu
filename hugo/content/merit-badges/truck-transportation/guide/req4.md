@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Inside a Truck Terminal"
+title: "Inside a Truck Terminal"
 layout: "guide"
-group_title: "Terminal Safety and Operations"
+group_title: "4. Terminal Safety and Operations"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/truck-transportation/guide/req3/"
-prev_title: "Req 3 — Gasoline vs. Diesel"
+prev_title: "Gasoline vs. Diesel"
 next: "/merit-badges/truck-transportation/guide/req5/"
-next_title: "Req 5 — Company Departments and Jobs"
+next_title: "Company Departments and Jobs"
 ---
 
 {{< drg/requirement number="4" >}}

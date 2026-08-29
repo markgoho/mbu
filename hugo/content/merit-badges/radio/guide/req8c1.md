@@ -1,13 +1,13 @@
 ---
-title: "Req 8c1 — Shortwave Listening Sessions"
+title: "Shortwave Listening Sessions"
 layout: "guide"
-group_title: "Option C: Shortwave Listening"
+group_title: "8. Option C: Shortwave Listening"
 req_number: "8c1"
 req_path: "8.c.1"
 prev: "/merit-badges/radio/guide/req8c/"
-prev_title: "Req 8c — Shortwave Overview"
+prev_title: "Shortwave Overview"
 next: "/merit-badges/radio/guide/req8c2/"
-next_title: "Req 8c2 — Medium-Wave Listening"
+next_title: "Medium-Wave Listening"
 guide_nav:
   - group_title: "Getting Started"
     items:

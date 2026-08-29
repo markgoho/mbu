@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Researching Archaeological Sites"
+title: "Researching Archaeological Sites"
 layout: guide
-group_title: "Exploring Famous Sites"
+group_title: "4. Exploring Famous Sites"
 req_number: "4a"
 prev: "/merit-badges/archaeology/guide/req3/"
-prev_title: "Req 3 — Dating the Past"
+prev_title: "Dating the Past"
 next: "/merit-badges/archaeology/guide/req4b/"
-next_title: "Req 4b — Presenting Your Findings"
+next_title: "Presenting Your Findings"
 ---
 
 {{< drg/requirement number="4a" >}}

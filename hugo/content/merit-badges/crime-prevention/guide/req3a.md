@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Researching Crimes"
+title: "Researching Crimes"
 layout: guide
-group_title: "Crime in Your Community"
+group_title: "3. Crime in Your Community"
 req_number: "3a"
 prev: "/merit-badges/crime-prevention/guide/req2/"
-prev_title: "Req 2 — Groups Working to Prevent Crime"
+prev_title: "Groups Working to Prevent Crime"
 next: "/merit-badges/crime-prevention/guide/req3b/"
-next_title: "Req 3b — Analyzing Your Research"
+next_title: "Analyzing Your Research"
 ---
 
 {{< drg/requirement number="3a" >}}

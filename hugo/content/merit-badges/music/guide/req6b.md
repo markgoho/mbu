@@ -1,11 +1,11 @@
 ---
-title: "Req 6b — Turn Music into a Hobby"
+title: "Turn Music into a Hobby"
 layout: "guide"
-group_title: "Careers and Hobbies"
+group_title: "6. Careers and Hobbies"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/music/guide/req6a/"
-prev_title: "Req 6a — Research a Music Career"
+prev_title: "Research a Music Career"
 next: "/merit-badges/music/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

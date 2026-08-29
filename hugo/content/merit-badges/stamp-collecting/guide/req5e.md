@@ -1,13 +1,13 @@
 ---
-title: "Req 5e — Measuring With a Perforation Gauge"
+title: "Measuring With a Perforation Gauge"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5e"
 req_path: "5.e"
 prev: "/merit-badges/stamp-collecting/guide/req5d/"
-prev_title: "Req 5d — Hinges and Mounts"
+prev_title: "Hinges and Mounts"
 next: "/merit-badges/stamp-collecting/guide/req5f/"
-next_title: "Req 5f — Safe Storage Sleeves"
+next_title: "Safe Storage Sleeves"
 ---
 
 {{< drg/requirement number="5e" >}}

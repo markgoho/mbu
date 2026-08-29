@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Manual vs. CAD Discussion"
+title: "Manual vs. CAD Discussion"
 layout: guide
-group_title: "Comparing Manual & CAD"
+group_title: "5. Comparing Manual & CAD"
 req_number: "5"
 prev: "/merit-badges/drafting/guide/req4/"
-prev_title: "Req 4 — Review & Revision Process"
+prev_title: "Review & Revision Process"
 next: "/merit-badges/drafting/guide/req6/"
-next_title: "Req 6 — Lettering Your Opinion"
+next_title: "Lettering Your Opinion"
 ---
 
 {{< drg/requirement number="5" >}}

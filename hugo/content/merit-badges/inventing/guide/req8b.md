@@ -1,12 +1,12 @@
 ---
-title: "Req 8b — Visit an Inventing Exhibit"
+title: "Visit an Inventing Exhibit"
 layout: guide
-group_title: "Museums and Exhibits"
+group_title: "8. Museums and Exhibits"
 req_number: "8b"
 prev: "/merit-badges/inventing/guide/req8a/"
-prev_title: "Req 8a — Build with a Team"
+prev_title: "Build with a Team"
 next: "/merit-badges/inventing/guide/req9/"
-next_title: "Req 9 — Skills and Careers of Inventors"
+next_title: "Skills and Careers of Inventors"
 ---
 
 {{< drg/requirement number="8b" >}}

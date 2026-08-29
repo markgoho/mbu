@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-l — Selecting a Muzzleloading Shotgun"
+title: "Selecting a Muzzleloading Shotgun"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-l"
 req_path: "2.B.l"
 prev: "/merit-badges/shotgun-shooting/guide/req2Bk/"
-prev_title: "Req 2B-k — Clean a Muzzleloader Properly"
+prev_title: "Clean a Muzzleloader Properly"
 next: "/merit-badges/shotgun-shooting/guide/req2Bm/"
-next_title: "Req 2B-m — Shooting Moving Targets"
+next_title: "Shooting Moving Targets"
 ---
 
 {{< drg/requirement number="2B-l" >}}

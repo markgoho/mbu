@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Reading Energy Stories"
+title: "Reading Energy Stories"
 layout: "guide"
-group_title: "Start with Curiosity"
+group_title: "1. Start with Curiosity"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/energy/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/energy/guide/req2/"
-next_title: "Req 2 — Forms & Conversions"
+next_title: "Forms & Conversions"
 ---
 
 {{< drg/requirement number="1" >}}

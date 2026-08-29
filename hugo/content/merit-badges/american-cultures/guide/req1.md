@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Cultural Experiences"
+title: "Cultural Experiences"
 layout: guide
-group_title: "Exploring Cultures"
+group_title: "1. Exploring Cultures"
 req_number: "1"
 prev: "/merit-badges/american-cultures/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/american-cultures/guide/req2/"
-next_title: "Req 2 — Imagining a Single-Culture World"
+next_title: "Imagining a Single-Culture World"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1i — Shotgun Sports and Local Opportunities"
+title: "Shotgun Sports and Local Opportunities"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1i"
 req_path: "1.i"
 prev: "/merit-badges/shotgun-shooting/guide/req1h/"
-prev_title: "Req 1h — Hygiene on the Range"
+prev_title: "Hygiene on the Range"
 next: "/merit-badges/shotgun-shooting/guide/req1j/"
-next_title: "Req 1j — Sources of Information on Firearms"
+next_title: "Sources of Information on Firearms"
 ---
 
 {{< drg/requirement number="1i" >}}

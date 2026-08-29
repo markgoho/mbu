@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Energy by the Numbers"
+title: "Energy by the Numbers"
 layout: "guide"
-group_title: "Energy by the Numbers"
+group_title: "6. Energy by the Numbers"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/energy/guide/req5/"
-prev_title: "Req 5 — Community Energy Waste"
+prev_title: "Community Energy Waste"
 next: "/merit-badges/energy/guide/req7/"
-next_title: "Req 7 — Choose Five Energy Systems"
+next_title: "Choose Five Energy Systems"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Biomass & Waste-to-Energy"
+title: "Biomass & Waste-to-Energy"
 layout: "guide"
-group_title: "Biomass & Waste-to-Energy"
+group_title: "7. Biomass & Waste-to-Energy"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/energy/guide/req7/"
-prev_title: "Req 7 — Choose Five Energy Systems"
+prev_title: "Choose Five Energy Systems"
 next: "/merit-badges/energy/guide/req7b/"
-next_title: "Req 7b — Combined Heat and Power"
+next_title: "Combined Heat and Power"
 ---
 
 {{< drg/inherited-requirement number="7a" req_path="7.a" topic="Biomass digesters or waste-to-energy plants" />}}

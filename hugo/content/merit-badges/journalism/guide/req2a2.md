@@ -1,12 +1,12 @@
 ---
-title: "Req 2a2 — Touring a News Operation"
+title: "Touring a News Operation"
 layout: guide
-group_title: "Reporting Across Platforms"
+group_title: "2. Reporting Across Platforms"
 req_number: "2a2"
 prev: "/merit-badges/journalism/guide/req2a1/"
-prev_title: "Req 2a1 — Comparing Coverage"
+prev_title: "Comparing Coverage"
 next: "/merit-badges/journalism/guide/req2b/"
-next_title: "Req 2b — Broadcast Newsroom Skills"
+next_title: "Broadcast Newsroom Skills"
 ---
 
 {{< drg/requirement number="2.a.2" >}}

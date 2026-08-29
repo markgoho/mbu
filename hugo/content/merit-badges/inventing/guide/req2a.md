@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Interview an Inventor"
+title: "Interview an Inventor"
 layout: guide
-group_title: "Inventor Interviews"
+group_title: "2. Inventor Interviews"
 req_number: "2a"
 prev: "/merit-badges/inventing/guide/req2/"
-prev_title: "Req 2 — Choose Your Research Path"
+prev_title: "Choose Your Research Path"
 next: "/merit-badges/inventing/guide/req2b/"
-next_title: "Req 2b — Study Inventors"
+next_title: "Study Inventors"
 ---
 
 {{< drg/requirement number="2a" >}}

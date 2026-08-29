@@ -1,12 +1,12 @@
 ---
-title: "Req 6f — Reinforcing a Picture Frame"
+title: "Reinforcing a Picture Frame"
 layout: guide
-group_title: "Indoor Finish Repairs"
+group_title: "6. Indoor Finish Repairs"
 req_number: "6f"
 prev: "/merit-badges/home-repairs/guide/req6e/"
-prev_title: "Req 6e — Using Drywall Anchors"
+prev_title: "Using Drywall Anchors"
 next: "/merit-badges/home-repairs/guide/req6g/"
-next_title: "Req 6g — Mending China, Glass, or Pottery"
+next_title: "Mending China, Glass, or Pottery"
 ---
 
 {{< drg/requirement number="6f" >}}

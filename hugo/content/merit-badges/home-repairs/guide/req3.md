@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Shop and Structure Projects"
+title: "Shop and Structure Projects"
 layout: guide
-group_title: "Workshop Projects"
+group_title: "3. Workshop Projects"
 req_number: "3"
 prev: "/merit-badges/home-repairs/guide/req2f/"
-prev_title: "Req 2f — Replacing a Window Pane"
+prev_title: "Replacing a Window Pane"
 next: "/merit-badges/home-repairs/guide/req3a/"
-next_title: "Req 3a — Tool Storage Solutions"
+next_title: "Tool Storage Solutions"
 guide_nav:
   - group_title: "Getting Started"
     items:

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Choose Your Event Coverage Format"
+title: "Choose Your Event Coverage Format"
 layout: guide
-group_title: "Covering Live Events"
+group_title: "4. Covering Live Events"
 req_number: "4"
 prev: "/merit-badges/journalism/guide/req3d/"
-prev_title: "Req 3d — Cover a Scouting Event"
+prev_title: "Cover a Scouting Event"
 next: "/merit-badges/journalism/guide/req4a/"
-next_title: "Req 4a — Two Written Styles"
+next_title: "Two Written Styles"
 ---
 
 {{< drg/requirement number="4" >}}

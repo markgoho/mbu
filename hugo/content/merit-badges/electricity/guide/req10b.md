@@ -1,12 +1,12 @@
 ---
-title: "Req 10b — Simple Electric Motor"
+title: "Simple Electric Motor"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10b"
 prev: "/merit-badges/electricity/guide/req10a/"
-prev_title: "Req 10a — Battery, Switch, and Load"
+prev_title: "Battery, Switch, and Load"
 next: "/merit-badges/electricity/guide/req10c/"
-next_title: "Req 10c — Build a Rheostat"
+next_title: "Build a Rheostat"
 ---
 
 {{< drg/requirement number="10b" >}}

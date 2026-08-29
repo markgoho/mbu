@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Fitness for Snow Sports"
+title: "Fitness for Snow Sports"
 layout: "guide"
-group_title: "Getting Fit & Geared Up"
+group_title: "4. Getting Fit & Geared Up"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/snow-sports/guide/req3/"
-prev_title: "Req 3 — Trail Marking System"
+prev_title: "Trail Marking System"
 next: "/merit-badges/snow-sports/guide/req5/"
-next_title: "Req 5 — Clothing & Equipment"
+next_title: "Clothing & Equipment"
 ---
 
 {{< drg/requirement number="4" option="Discuss the importance of strength, endurance, and flexibility in snow sports. Demonstrate exercises and activities you can do to get fit for the option you choose in requirement 7." >}}

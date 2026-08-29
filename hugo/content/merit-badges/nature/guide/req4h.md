@@ -1,13 +1,13 @@
 ---
-title: "Req 4h — Soils and Rocks"
+title: "Soils and Rocks"
 layout: "guide"
-group_title: "Earth Materials"
+group_title: "4. Earth Materials"
 req_number: "4h"
 req_path: "4.h"
 prev: "/merit-badges/nature/guide/req4g2b/"
-prev_title: "Req 4g2b — Build a Photo Catalog"
+prev_title: "Build a Photo Catalog"
 next: "/merit-badges/nature/guide/req5/"
-next_title: "Req 5 — Outdoor Ethics in Nature Study"
+next_title: "Outdoor Ethics in Nature Study"
 ---
 
 {{< drg/requirement number="4h" >}}

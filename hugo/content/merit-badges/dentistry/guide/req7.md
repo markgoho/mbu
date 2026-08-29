@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers in Dentistry"
+title: "Careers in Dentistry"
 layout: guide
-group_title: "Dental Careers"
+group_title: "7. Dental Careers"
 req_number: "7"
 prev: "/merit-badges/dentistry/guide/req6/"
-prev_title: "Req 6 — Dental Health Outreach"
+prev_title: "Dental Health Outreach"
 next: "/merit-badges/dentistry/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

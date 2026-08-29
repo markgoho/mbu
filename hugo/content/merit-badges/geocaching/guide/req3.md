@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Geocaching Terms and Ratings"
+title: "Geocaching Terms and Ratings"
 layout: guide
-group_title: "Geocaching Language"
+group_title: "3. Geocaching Language"
 req_number: "3"
 prev: "/merit-badges/geocaching/guide/req2/"
-prev_title: "Req 2 — Geocaching Etiquette and Leave No Trace"
+prev_title: "Geocaching Etiquette and Leave No Trace"
 next: "/merit-badges/geocaching/guide/req4/"
-next_title: "Req 4 — How GPS Works and How to Teach It"
+next_title: "How GPS Works and How to Teach It"
 ---
 
 {{< drg/requirement number="3" >}}

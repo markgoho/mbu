@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Meal Timing"
+title: "Meal Timing"
 layout: guide
-group_title: "Cooking Basics"
+group_title: "3. Cooking Basics"
 req_number: "3c"
 prev: "/merit-badges/cooking/guide/req3b/"
-prev_title: "Req 3b — Stoves vs. Fires"
+prev_title: "Stoves vs. Fires"
 next: "/merit-badges/cooking/guide/req3d/"
-next_title: "Req 3d — Taste, Texture & Smell"
+next_title: "Taste, Texture & Smell"
 ---
 
 {{< drg/requirement number="3c" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Writing & Delivering a Speech"
+title: "Writing & Delivering a Speech"
 layout: guide
-group_title: "Public Speaking"
+group_title: "3. Public Speaking"
 req_number: "3"
 prev: "/merit-badges/communication/guide/req2/"
-prev_title: "Req 2 — Creative Presentation"
+prev_title: "Creative Presentation"
 next: "/merit-badges/communication/guide/req4/"
-next_title: "Req 4 — Conducting an Interview"
+next_title: "Conducting an Interview"
 ---
 
 {{< drg/requirement number="3" >}}

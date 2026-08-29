@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-e — Misfires, Hangfires, and Squib Fires"
+title: "Misfires, Hangfires, and Squib Fires"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-e"
 req_path: "2.A.e"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ad/"
-prev_title: "Req 2A-d — Shotgun Gauges"
+prev_title: "Shotgun Gauges"
 next: "/merit-badges/shotgun-shooting/guide/req2Af/"
-next_title: "Req 2A-f — Range Procedures and Commands"
+next_title: "Range Procedures and Commands"
 ---
 
 {{< drg/requirement number="2A-e" >}}

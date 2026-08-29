@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — First Aid for Observers"
+title: "First Aid for Observers"
 layout: guide
-group_title: "Safety Under the Stars"
+group_title: "1. Safety Under the Stars"
 req_number: "1b"
 prev: "/merit-badges/astronomy/guide/req1a/"
-prev_title: "Req 1a — Stargazing Hazards"
+prev_title: "Stargazing Hazards"
 next: "/merit-badges/astronomy/guide/req1c/"
-next_title: "Req 1c — Clothing & Night Precautions"
+next_title: "Clothing & Night Precautions"
 ---
 
 {{< drg/requirement number="1b" >}}

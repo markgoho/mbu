@@ -1,13 +1,13 @@
 ---
-title: "Req 5c — Design a Sample Return"
+title: "Design a Sample Return"
 layout: "guide"
-group_title: "Mission Pathways"
+group_title: "5. Mission Pathways"
 req_number: "5c"
 req_path: "5.c"
 prev: "/merit-badges/space-exploration/guide/req5b/"
-prev_title: "Req 5b — Build a Mission Story"
+prev_title: "Build a Mission Story"
 next: "/merit-badges/space-exploration/guide/req6/"
-next_title: "Req 6 — Choose a Space Home"
+next_title: "Choose a Space Home"
 ---
 
 {{< drg/requirement number="5c" >}}

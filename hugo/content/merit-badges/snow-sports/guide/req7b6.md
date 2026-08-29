@@ -1,13 +1,13 @@
 ---
-title: "Req 7b6 — One-Day Tour Gear"
+title: "One-Day Tour Gear"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b6"
 req_path: "7.b.6"
 prev: "/merit-badges/snow-sports/guide/req7b5/"
-prev_title: "Req 7b5 — Skiing Styles Compared"
+prev_title: "Skiing Styles Compared"
 next: "/merit-badges/snow-sports/guide/req7b7/"
-next_title: "Req 7b7 — Map & Compass"
+next_title: "Map & Compass"
 ---
 
 {{< drg/requirement number="7b6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 14 — Teaching with EDGE"
+title: "Teaching with EDGE"
 layout: "guide"
-group_title: "Teaching First Aid"
+group_title: "14. Teaching First Aid"
 req_number: "14"
 req_path: "14"
 prev: "/merit-badges/first-aid/guide/req13/"
-prev_title: "Req 13 — Eyes, Teeth & Strokes"
+prev_title: "Eyes, Teeth & Strokes"
 next: "/merit-badges/first-aid/guide/req15/"
-next_title: "Req 15 — Explore EMS Careers"
+next_title: "Explore EMS Careers"
 ---
 
 {{< drg/requirement number="14" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Climb Difficulty Ratings"
+title: "Climb Difficulty Ratings"
 layout: guide
-group_title: "Location & Route Assessment"
+group_title: "4. Location & Route Assessment"
 req_number: "4a"
 prev: "/merit-badges/climbing/guide/req3/"
-prev_title: "Req 3 — Dressing for the Climb"
+prev_title: "Dressing for the Climb"
 next: "/merit-badges/climbing/guide/req4b/"
-next_title: "Req 4b — Climbing Styles"
+next_title: "Climbing Styles"
 ---
 
 {{< drg/requirement number="4a" >}}

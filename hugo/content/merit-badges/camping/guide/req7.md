@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Gear Checklist & Packing"
+title: "Gear Checklist & Packing"
 layout: guide
-group_title: "Packing & Preparation"
+group_title: "7. Packing & Preparation"
 req_number: "7"
 prev: "/merit-badges/camping/guide/req6e/"
-prev_title: "Req 6e — Sleeping Bags"
+prev_title: "Sleeping Bags"
 next: "/merit-badges/camping/guide/req8a/"
-next_title: "Req 8a — Stove Safety"
+next_title: "Stove Safety"
 ---
 
 {{< drg/requirement number="7a" >}}

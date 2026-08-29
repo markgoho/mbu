@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Make a Strong Close-Up"
+title: "Make a Strong Close-Up"
 layout: "guide"
-group_title: "Field Practice: Requirement 5"
+group_title: "5. Field Practice: Requirement 5"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/photography/guide/req5/"
-prev_title: "Req 5 — Pick Three Subject Types"
+prev_title: "Pick Three Subject Types"
 next: "/merit-badges/photography/guide/req5b/"
-next_title: "Req 5b — Capture Interaction"
+next_title: "Capture Interaction"
 ---
 
 {{< drg/requirement number="5a" >}}

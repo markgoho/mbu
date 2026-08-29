@@ -1,13 +1,13 @@
 ---
-title: "Req 8c3 — Compare Day & Night Logs"
+title: "Compare Day & Night Logs"
 layout: "guide"
-group_title: "Option C: Shortwave Listening"
+group_title: "8. Option C: Shortwave Listening"
 req_number: "8c3"
 req_path: "8.c.3"
 prev: "/merit-badges/radio/guide/req8c2/"
-prev_title: "Req 8c2 — Medium-Wave Listening"
+prev_title: "Medium-Wave Listening"
 next: "/merit-badges/radio/guide/req8c4/"
-next_title: "Req 8c4 — Why Distant Stations Appear at Night"
+next_title: "Why Distant Stations Appear at Night"
 guide_nav:
   - group_title: "Getting Started"
     items:

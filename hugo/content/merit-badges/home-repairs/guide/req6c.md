@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Hanging Curtains or Drapes"
+title: "Hanging Curtains or Drapes"
 layout: guide
-group_title: "Indoor Finish Repairs"
+group_title: "6. Indoor Finish Repairs"
 req_number: "6c"
 prev: "/merit-badges/home-repairs/guide/req6b/"
-prev_title: "Req 6b — Repairing Flooring"
+prev_title: "Repairing Flooring"
 next: "/merit-badges/home-repairs/guide/req6d/"
-next_title: "Req 6d — Patching Drywall"
+next_title: "Patching Drywall"
 ---
 
 {{< drg/requirement number="6c" >}}

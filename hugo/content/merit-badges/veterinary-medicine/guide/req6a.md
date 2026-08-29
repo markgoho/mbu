@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Observe a Veterinary Facility"
+title: "Observe a Veterinary Facility"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/veterinary-medicine/guide/req6/"
-prev_title: "Req 6 — Choose Your Field Experience"
+prev_title: "Choose Your Field Experience"
 next: "/merit-badges/veterinary-medicine/guide/req6b/"
-next_title: "Req 6b — Shadow a Public-Service Veterinarian"
+next_title: "Shadow a Public-Service Veterinarian"
 ---
 
 {{< drg/requirement number="6a" >}}

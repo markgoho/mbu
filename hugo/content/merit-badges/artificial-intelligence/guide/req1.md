@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Key AI Terms"
+title: "Key AI Terms"
 layout: guide
-group_title: "Key Concepts"
+group_title: "1. Key Concepts"
 req_number: "1"
 prev: "/merit-badges/artificial-intelligence/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/artificial-intelligence/guide/req2abc/"
-next_title: "Req 2a–c — AI All Around You"
+next_title: "AI All Around You"
 ---
 
 {{< drg/requirement number="1" >}}

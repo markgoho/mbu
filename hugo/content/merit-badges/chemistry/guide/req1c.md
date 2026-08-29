@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Safety Pictograms"
+title: "Safety Pictograms"
 layout: guide
-group_title: "Chemical Safety"
+group_title: "1. Chemical Safety"
 req_number: "1c"
 prev: "/merit-badges/chemistry/guide/req1b/"
-prev_title: "Req 1b — Personal Protective Equipment"
+prev_title: "Personal Protective Equipment"
 next: "/merit-badges/chemistry/guide/req1d/"
-next_title: "Req 1d — Chemical Storage"
+next_title: "Chemical Storage"
 ---
 
 {{< drg/requirement number="1c" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3e — Dye Fabric with Natural Color"
+title: "Dye Fabric with Natural Color"
 layout: "guide"
-group_title: "Choose Two Textile Projects"
+group_title: "3. Choose Two Textile Projects"
 req_number: "3e"
 req_path: "3.e"
 prev: "/merit-badges/textile/guide/req3d/"
-prev_title: "Req 3d — Make Felt by Hand"
+prev_title: "Make Felt by Hand"
 next: "/merit-badges/textile/guide/req3f/"
-next_title: "Req 3f — Make Fabric Resist Water"
+next_title: "Make Fabric Resist Water"
 ---
 
 {{< drg/requirement number="3e" >}}

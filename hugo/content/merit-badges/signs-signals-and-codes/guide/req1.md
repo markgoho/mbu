@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Why Humans Need Shared Signals"
+title: "Why Humans Need Shared Signals"
 layout: "guide"
-group_title: "Why Communication Systems Matter"
+group_title: "1. Why Communication Systems Matter"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/signs-signals-and-codes/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/signs-signals-and-codes/guide/req2/"
-next_title: "Req 2 — Distress Signals That Get You Found"
+next_title: "Distress Signals That Get You Found"
 ---
 
 {{< drg/requirement number="1" >}}

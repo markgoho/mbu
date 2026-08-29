@@ -1,12 +1,12 @@
 ---
-title: "Req 7h — Major Dog Diseases"
+title: "Major Dog Diseases"
 layout: guide
-group_title: "Dog First Aid"
+group_title: "7. Dog First Aid"
 req_number: "7h"
 prev: "/merit-badges/dog-care/guide/req7g/"
-prev_title: "Req 7g — Limits of Home Treatment"
+prev_title: "Limits of Home Treatment"
 next: "/merit-badges/dog-care/guide/req8/"
-next_title: "Req 8 — Veterinary Hospital or Shelter Visit"
+next_title: "Veterinary Hospital or Shelter Visit"
 ---
 
 {{< drg/requirement number="7h" >}}

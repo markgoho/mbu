@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — Head and Figure Study"
+title: "Head and Figure Study"
 layout: "guide"
-group_title: "Head and Figure Modeling"
+group_title: "2. Head and Figure Modeling"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/sculpture/guide/req2/"
-prev_title: "Req 2 — Choose Your Projects"
+prev_title: "Choose Your Projects"
 next: "/merit-badges/sculpture/guide/req2b/"
-next_title: "Req 2b — Mold and Cast"
+next_title: "Mold and Cast"
 ---
 
 {{< drg/requirement number="2a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Weatherstripping a Door or Window"
+title: "Weatherstripping a Door or Window"
 layout: guide
-group_title: "Outdoor Repairs"
+group_title: "2. Outdoor Repairs"
 req_number: "2b"
 prev: "/merit-badges/home-repairs/guide/req2a/"
-prev_title: "Req 2a — Yard Tool Tune-Up"
+prev_title: "Yard Tool Tune-Up"
 next: "/merit-badges/home-repairs/guide/req2c/"
-next_title: "Req 2c — Exterior Caulking"
+next_title: "Exterior Caulking"
 ---
 
 {{< drg/requirement number="2b" >}}

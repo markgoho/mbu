@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-a — History of the Muzzleloading Shotgun"
+title: "History of the Muzzleloading Shotgun"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-a"
 req_path: "2.B.a"
 prev: "/merit-badges/shotgun-shooting/guide/req2B/"
 prev_title: "Option B Overview"
 next: "/merit-badges/shotgun-shooting/guide/req2Bb/"
-next_title: "Req 2B-b — Principal Parts and How They Work"
+next_title: "Principal Parts and How They Work"
 ---
 
 {{< drg/requirement number="2B-a" >}}

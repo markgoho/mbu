@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Breeds and Special Traits"
+title: "Breeds and Special Traits"
 layout: guide
-group_title: "Breeds and Purpose"
+group_title: "3. Breeds and Purpose"
 req_number: "3"
 prev: "/merit-badges/horsemanship/guide/req2/"
-prev_title: "Req 2 — Parts of the Horse"
+prev_title: "Parts of the Horse"
 next: "/merit-badges/horsemanship/guide/req4/"
-next_title: "Req 4 — Colic and Common Health Problems"
+next_title: "Colic and Common Health Problems"
 ---
 
 {{< drg/requirement number="3" >}}

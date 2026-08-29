@@ -1,12 +1,12 @@
 ---
-title: "Req 9a — Research an Insect Study Career"
+title: "Research an Insect Study Career"
 layout: guide
-group_title: "Career Exploration"
+group_title: "9. Career Exploration"
 req_number: "9a"
 prev: "/merit-badges/insect-study/guide/req9/"
-prev_title: "Req 9 — Careers or Hobbies"
+prev_title: "Careers or Hobbies"
 next: "/merit-badges/insect-study/guide/req9b/"
-next_title: "Req 9b — Turn Insect Study into a Hobby"
+next_title: "Turn Insect Study into a Hobby"
 ---
 
 {{< drg/requirement number="9a" >}}

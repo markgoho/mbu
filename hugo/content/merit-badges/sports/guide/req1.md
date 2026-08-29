@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Sports Safety and First Aid"
+title: "Sports Safety and First Aid"
 layout: "guide"
-group_title: "Safety and Injury Prevention"
+group_title: "1. Safety and Injury Prevention"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/sports/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/sports/guide/req2/"
-next_title: "Req 2 — Health Habits That Support Performance"
+next_title: "Health Habits That Support Performance"
 ---
 
 {{< drg/requirement number="1" >}}

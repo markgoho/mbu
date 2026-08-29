@@ -1,13 +1,13 @@
 ---
-title: "Req 2b13 — Dribble or Hockey Ball"
+title: "Dribble or Hockey Ball"
 layout: "guide"
-group_title: "Option B — Roller Skating"
+group_title: "2. Option B — Roller Skating"
 req_number: "2b13"
 req_path: "2.b.13"
 prev: "/merit-badges/skating/guide/req2b-12/"
-prev_title: "Req 2b12 — Stepover"
+prev_title: "Stepover"
 next: "/merit-badges/skating/guide/req2c/"
-next_title: "Req 2c — In-Line Skating Overview"
+next_title: "In-Line Skating Overview"
 ---
 
 {{< drg/requirement number="2b13" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose Five Energy Systems"
+title: "Choose Five Energy Systems"
 layout: "guide"
-group_title: "Choose Five Systems"
+group_title: "7. Choose Five Systems"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/energy/guide/req6/"
-prev_title: "Req 6 — Energy by the Numbers"
+prev_title: "Energy by the Numbers"
 next: "/merit-badges/energy/guide/req7a/"
-next_title: "Req 7a — Biomass & Waste-to-Energy"
+next_title: "Biomass & Waste-to-Energy"
 ---
 
 {{< drg/requirement number="7" >}}

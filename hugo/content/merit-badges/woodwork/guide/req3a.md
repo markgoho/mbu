@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Tool Care & Storage"
+title: "Tool Care & Storage"
 layout: guide
-group_title: "Tools of the Trade"
+group_title: "3. Tools of the Trade"
 req_number: "3a"
 prev: "/merit-badges/woodwork/guide/req2b/"
-prev_title: "Req 2b — Wood Identification"
+prev_title: "Wood Identification"
 next: "/merit-badges/woodwork/guide/req3b/"
-next_title: "Req 3b — Sharpening"
+next_title: "Sharpening"
 ---
 
 {{< drg/requirement number="3a" >}}

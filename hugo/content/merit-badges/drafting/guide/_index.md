@@ -4,53 +4,53 @@ layout: guide
 badge_name: "Drafting"
 group_title: "Getting Started"
 next: "/merit-badges/drafting/guide/req1a/"
-next_title: "Req 1a — Rough Sketches & Paper Sizing"
+next_title: "Rough Sketches & Paper Sizing"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/drafting/guide/"
-  - group_title: "Setting Up Your Drawing Sheets"
+  - group_title: "1. Setting Up Your Drawing Sheets"
     items:
-      - title: "Req 1a — Rough Sketches & Paper Sizing"
+      - title: "a Rough Sketches & Paper Sizing"
         url: "/merit-badges/drafting/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Title Block Lettering"
+      - title: "b Title Block Lettering"
         url: "/merit-badges/drafting/guide/req1b/"
         is_sub: true
-  - group_title: "Manual Drafting Project"
+  - group_title: "2. Manual Drafting Project"
     items:
-      - title: "Req 2 — Choose Your Drawing Type"
+      - title: "2. Choose Your Drawing Type"
         url: "/merit-badges/drafting/guide/req2/"
         is_sub: false
-  - group_title: "CAD Drawing Project"
+  - group_title: "3. CAD Drawing Project"
     items:
-      - title: "Req 3 — CAD Design"
+      - title: "3. CAD Design"
         url: "/merit-badges/drafting/guide/req3/"
         is_sub: false
-  - group_title: "Revisions & Redlines"
+  - group_title: "4. Revisions & Redlines"
     items:
-      - title: "Req 4 — Review & Revision Process"
+      - title: "4. Review & Revision Process"
         url: "/merit-badges/drafting/guide/req4/"
         is_sub: false
-  - group_title: "Comparing Manual & CAD"
+  - group_title: "5. Comparing Manual & CAD"
     items:
-      - title: "Req 5 — Manual vs. CAD Discussion"
+      - title: "5. Manual vs. CAD Discussion"
         url: "/merit-badges/drafting/guide/req5/"
         is_sub: false
-  - group_title: "Gothic Lettering & CAD Benefits"
+  - group_title: "6. Gothic Lettering & CAD Benefits"
     items:
-      - title: "Req 6 — Lettering Your Opinion"
+      - title: "6. Lettering Your Opinion"
         url: "/merit-badges/drafting/guide/req6/"
         is_sub: false
-  - group_title: "Drafting in the Real World"
+  - group_title: "7. Drafting in the Real World"
     items:
-      - title: "Req 7 — Workplace Visit or Research"
+      - title: "7. Workplace Visit or Research"
         url: "/merit-badges/drafting/guide/req7/"
         is_sub: false
-  - group_title: "Careers in Drafting"
+  - group_title: "8. Careers in Drafting"
     items:
-      - title: "Req 8 — Drafting Career Exploration"
+      - title: "8. Drafting Career Exploration"
         url: "/merit-badges/drafting/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

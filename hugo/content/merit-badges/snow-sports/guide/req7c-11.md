@@ -1,13 +1,13 @@
 ---
-title: "Req 7c11 — Major Snowboarding Organizations"
+title: "Major Snowboarding Organizations"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c11"
 req_path: "7.c.11"
 prev: "/merit-badges/snow-sports/guide/req7c-10/"
-prev_title: "Req 7c10 — Varied Conditions"
+prev_title: "Varied Conditions"
 next: "/merit-badges/snow-sports/guide/req7d/"
-next_title: "Req 7d — Snowshoeing"
+next_title: "Snowshoeing"
 ---
 
 {{< drg/requirement number="7c11" >}}

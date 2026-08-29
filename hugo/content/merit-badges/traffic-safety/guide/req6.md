@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Sharing the Road Safely"
+title: "Sharing the Road Safely"
 layout: "guide"
-group_title: "Sharing Streets with Others"
+group_title: "6. Sharing Streets with Others"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/traffic-safety/guide/req5b/"
-prev_title: "Req 5b — Reading Signs, Signals, and Markings"
+prev_title: "Reading Signs, Signals, and Markings"
 next: "/merit-badges/traffic-safety/guide/req7/"
-next_title: "Req 7 — Choose Your Community Impact"
+next_title: "Choose Your Community Impact"
 ---
 
 {{< drg/requirement number="6" >}}

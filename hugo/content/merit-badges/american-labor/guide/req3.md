@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — What Labor Unions Do"
+title: "What Labor Unions Do"
 layout: guide
-group_title: "How Unions Work"
+group_title: "3. How Unions Work"
 req_number: "3"
 prev: "/merit-badges/american-labor/guide/req2/"
-prev_title: "Req 2 — Visiting a Labor Organization"
+prev_title: "Visiting a Labor Organization"
 next: "/merit-badges/american-labor/guide/req4/"
-next_title: "Req 4 — Bargaining Models"
+next_title: "Bargaining Models"
 ---
 
 {{< drg/requirement number="3" >}}

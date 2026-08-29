@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — How Soap Works"
+title: "How Soap Works"
 layout: guide
-group_title: "Chemistry & First Aid"
+group_title: "2. Chemistry & First Aid"
 req_number: "2b"
 prev: "/merit-badges/chemistry/guide/req2a/"
-prev_title: "Req 2a — Soap & Alcohol"
+prev_title: "Soap & Alcohol"
 next: "/merit-badges/chemistry/guide/req2c/"
-next_title: "Req 2c — Alcohol & Microbes"
+next_title: "Alcohol & Microbes"
 ---
 
 {{< drg/requirement number="2b" >}}

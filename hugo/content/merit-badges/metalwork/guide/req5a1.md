@@ -1,13 +1,13 @@
 ---
-title: "Req 5a1 — Tinsmith Tools"
+title: "Tinsmith Tools"
 layout: "guide"
-group_title: "Sheet Metal / Tinsmith"
+group_title: "5. Sheet Metal / Tinsmith"
 req_number: "5a1"
 req_path: "5.a.1"
 prev: "/merit-badges/metalwork/guide/req5a/"
-prev_title: "Req 5a — Sheet Metal Mechanic/Tinsmith"
+prev_title: "Sheet Metal Mechanic/Tinsmith"
 next: "/merit-badges/metalwork/guide/req5a2/"
-next_title: "Req 5a2 — Sketching Your Sheet Metal Objects"
+next_title: "Sketching Your Sheet Metal Objects"
 ---
 
 {{< drg/requirement number="5a1" >}}

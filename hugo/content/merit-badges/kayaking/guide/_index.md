@@ -4,51 +4,51 @@ layout: guide
 badge_name: "Kayaking"
 group_title: "Getting Started"
 next: "/merit-badges/kayaking/guide/req1/"
-next_title: "Req 1 — Hazards, Injuries & Safety Afloat"
+next_title: "Hazards, Injuries & Safety Afloat"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/kayaking/guide/"
         is_sub: false
-  - group_title: "Staying Safe on the Water"
+  - group_title: "1. Staying Safe on the Water"
     items:
-      - title: "Req 1 — Hazards, Injuries & Safety Afloat"
+      - title: "1. Hazards, Injuries & Safety Afloat"
         url: "/merit-badges/kayaking/guide/req1/"
         is_sub: false
-  - group_title: "Swimming Readiness"
+  - group_title: "2. Swimming Readiness"
     items:
-      - title: "Req 2 — Swimmer Test Readiness"
+      - title: "2. Swimmer Test Readiness"
         url: "/merit-badges/kayaking/guide/req2/"
         is_sub: false
-  - group_title: "Safety Gear"
+  - group_title: "3. Safety Gear"
     items:
-      - title: "Req 3 — Life Jackets & Rescue Equipment"
+      - title: "3. Life Jackets & Rescue Equipment"
         url: "/merit-badges/kayaking/guide/req3/"
         is_sub: false
-  - group_title: "Know Your Boat"
+  - group_title: "4. Know Your Boat"
     items:
-      - title: "Req 4 — Kayak Parts, Design & Care"
+      - title: "4. Kayak Parts, Design & Care"
         url: "/merit-badges/kayaking/guide/req4/"
         is_sub: false
-  - group_title: "Paddling Fundamentals"
+  - group_title: "5. Paddling Fundamentals"
     items:
-      - title: "Req 5 — Paddle Skills & Paddle Care"
+      - title: "5. Paddle Skills & Paddle Care"
         url: "/merit-badges/kayaking/guide/req5/"
         is_sub: false
-  - group_title: "Rescues & Recovery"
+  - group_title: "6. Rescues & Recovery"
     items:
-      - title: "Req 6 — Capsize Recovery Skills"
+      - title: "6. Capsize Recovery Skills"
         url: "/merit-badges/kayaking/guide/req6/"
         is_sub: false
-  - group_title: "Solo Stroke Skills"
+  - group_title: "7. Solo Stroke Skills"
     items:
-      - title: "Req 7 — Essential Kayak Strokes"
+      - title: "7. Essential Kayak Strokes"
         url: "/merit-badges/kayaking/guide/req7/"
         is_sub: false
-  - group_title: "Boat Control"
+  - group_title: "8. Boat Control"
     items:
-      - title: "Req 8 — Maneuvering with Control"
+      - title: "8. Maneuvering with Control"
         url: "/merit-badges/kayaking/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

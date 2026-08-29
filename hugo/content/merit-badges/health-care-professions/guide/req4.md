@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Testing, Imaging, and Behind-the-Scenes Care"
+title: "Testing, Imaging, and Behind-the-Scenes Care"
 layout: guide
-group_title: "Labs, Imaging, and Medical Technology"
+group_title: "4. Labs, Imaging, and Medical Technology"
 req_number: "4"
 prev: "/merit-badges/health-care-professions/guide/req3/"
-prev_title: "Req 3 — Recovery, Communication, and Movement"
+prev_title: "Recovery, Communication, and Movement"
 next: "/merit-badges/health-care-professions/guide/req5/"
-next_title: "Req 5 — Making the Most of a Workplace Visit"
+next_title: "Making the Most of a Workplace Visit"
 ---
 
 {{< drg/requirement number="4" >}}

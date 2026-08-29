@@ -1,12 +1,12 @@
 ---
-title: "Req 4d4 — Fossils as Ancient Clues"
+title: "Fossils as Ancient Clues"
 layout: guide
-group_title: "Earth History"
+group_title: "4. Earth History"
 req_number: "4d4"
 prev: "/merit-badges/geology/guide/req4d3/"
-prev_title: "Req 4d3 — Burial, Fossils, and Extinction"
+prev_title: "Burial, Fossils, and Extinction"
 next: "/merit-badges/geology/guide/req4d5/"
-next_title: "Req 4d5 — Collect or Identify Fossils"
+next_title: "Collect or Identify Fossils"
 ---
 
 {{< drg/requirement number="4d4" >}}

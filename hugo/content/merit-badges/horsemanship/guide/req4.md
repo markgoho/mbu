@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Colic and Common Health Problems"
+title: "Colic and Common Health Problems"
 layout: guide
-group_title: "Horse Health"
+group_title: "4. Horse Health"
 req_number: "4"
 prev: "/merit-badges/horsemanship/guide/req3/"
-prev_title: "Req 3 — Breeds and Special Traits"
+prev_title: "Breeds and Special Traits"
 next: "/merit-badges/horsemanship/guide/req5/"
-next_title: "Req 5 — Conformation, Lameness, and Unsoundness"
+next_title: "Conformation, Lameness, and Unsoundness"
 ---
 
 {{< drg/requirement number="4" >}}

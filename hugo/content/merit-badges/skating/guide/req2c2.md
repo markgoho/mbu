@@ -1,13 +1,13 @@
 ---
-title: "Req 2c2 — Parts of In-Line Skates"
+title: "Parts of In-Line Skates"
 layout: "guide"
-group_title: "Option C — In-Line Skating"
+group_title: "2. Option C — In-Line Skating"
 req_number: "2c2"
 req_path: "2.c.2"
 prev: "/merit-badges/skating/guide/req2c1/"
-prev_title: "Req 2c1 — In-Line Safety & Courtesy"
+prev_title: "In-Line Safety & Courtesy"
 next: "/merit-badges/skating/guide/req2c3/"
-next_title: "Req 2c3 — Required Safety Gear"
+next_title: "Required Safety Gear"
 ---
 
 {{< drg/requirement number="2c2" >}}

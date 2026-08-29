@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Camping Chemistry"
+title: "Camping Chemistry"
 layout: guide
-group_title: "Chemistry & Camping"
+group_title: "4. Chemistry & Camping"
 req_number: "4"
 prev: "/merit-badges/chemistry/guide/req3b/"
-prev_title: "Req 3b — pH & Indicators"
+prev_title: "pH & Indicators"
 next: "/merit-badges/chemistry/guide/req5/"
-next_title: "Req 5 — Reducing Environmental Impact"
+next_title: "Reducing Environmental Impact"
 ---
 
 {{< drg/requirement number="4" >}}

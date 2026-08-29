@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Visit an Exploration Organization"
+title: "Visit an Exploration Organization"
 layout: "guide"
-group_title: "Places That Support Discovery"
+group_title: "5. Places That Support Discovery"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/exploration/guide/req5/"
-prev_title: "Req 5 — Choose a Place to Learn"
+prev_title: "Choose a Place to Learn"
 next: "/merit-badges/exploration/guide/req5b/"
-next_title: "Req 5b — Visit a Research Facility"
+next_title: "Visit a Research Facility"
 ---
 
 {{< drg/requirement number="5a" >}}

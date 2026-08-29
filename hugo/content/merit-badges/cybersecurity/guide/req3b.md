@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — The CIA Triad"
+title: "The CIA Triad"
 layout: guide
-group_title: "Cybersecurity Fundamentals"
+group_title: "3. Cybersecurity Fundamentals"
 req_number: "3b"
 prev: "/merit-badges/cybersecurity/guide/req3a/"
-prev_title: "Req 3a — Systems to Protect"
+prev_title: "Systems to Protect"
 next: "/merit-badges/cybersecurity/guide/req4a/"
-next_title: "Req 4a — Threats & Vulnerabilities"
+next_title: "Threats & Vulnerabilities"
 ---
 
 {{< drg/requirement number="3b" >}}

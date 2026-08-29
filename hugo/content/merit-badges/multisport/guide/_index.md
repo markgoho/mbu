@@ -4,120 +4,120 @@ layout: "guide"
 badge_name: "Multisport"
 group_title: "Getting Started"
 next: "/merit-badges/multisport/guide/req1/"
-next_title: "Req 1 — Hazards and First Aid"
+next_title: "Hazards and First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/multisport/guide/"
         is_sub: false
-  - group_title: "Safety and First Aid"
+  - group_title: "1. Safety and First Aid"
     items:
-      - title: "Req 1 — Hazards and First Aid"
+      - title: "1. Hazards and First Aid"
         url: "/merit-badges/multisport/guide/req1/"
         is_sub: false
-  - group_title: "Train Like an Athlete"
+  - group_title: "2. Train Like an Athlete"
     items:
-      - title: "Req 2 — Physical Readiness and Nutrition"
+      - title: "2. Physical Readiness and Nutrition"
         url: "/merit-badges/multisport/guide/req2/"
         is_sub: false
-  - group_title: "Choose Your Format"
+  - group_title: "3. Choose Your Format"
     items:
-      - title: "Req 3 — Picking Your Event"
+      - title: "3. Picking Your Event"
         url: "/merit-badges/multisport/guide/req3/"
         is_sub: false
-  - group_title: "Triathlon Path"
+  - group_title: "4. Triathlon Path"
     items:
-      - title: "Req 4a — Triathlon Roadmap"
+      - title: "a Triathlon Roadmap"
         url: "/merit-badges/multisport/guide/req4a/"
         is_sub: false
-      - title: "Req 4a1 — Triathlon Swim Skills"
+      - title: "a Triathlon Swim Skills"
         url: "/merit-badges/multisport/guide/req4a1/"
         is_sub: true
-      - title: "Req 4a2 — Triathlon Bike Skills"
+      - title: "a Triathlon Bike Skills"
         url: "/merit-badges/multisport/guide/req4a2/"
         is_sub: true
-      - title: "Req 4a3 — Triathlon Run Skills"
+      - title: "a Triathlon Run Skills"
         url: "/merit-badges/multisport/guide/req4a3/"
         is_sub: true
-  - group_title: "Duathlon Path"
+  - group_title: "4. Duathlon Path"
     items:
-      - title: "Req 4b — Duathlon Roadmap"
+      - title: "b Duathlon Roadmap"
         url: "/merit-badges/multisport/guide/req4b/"
         is_sub: false
-      - title: "Req 4b1 — Duathlon Bike Skills"
+      - title: "b Duathlon Bike Skills"
         url: "/merit-badges/multisport/guide/req4b1/"
         is_sub: true
-      - title: "Req 4b2 — Duathlon Run Skills"
+      - title: "b Duathlon Run Skills"
         url: "/merit-badges/multisport/guide/req4b2/"
         is_sub: true
-  - group_title: "Aquathlon Path"
+  - group_title: "4. Aquathlon Path"
     items:
-      - title: "Req 4c — Aquathlon Roadmap"
+      - title: "c Aquathlon Roadmap"
         url: "/merit-badges/multisport/guide/req4c/"
         is_sub: false
-      - title: "Req 4c1 — Aquathlon Swim Skills"
+      - title: "c Aquathlon Swim Skills"
         url: "/merit-badges/multisport/guide/req4c1/"
         is_sub: true
-      - title: "Req 4c2 — Aquathlon Run Skills"
+      - title: "c Aquathlon Run Skills"
         url: "/merit-badges/multisport/guide/req4c2/"
         is_sub: true
-  - group_title: "Aquabike Path"
+  - group_title: "4. Aquabike Path"
     items:
-      - title: "Req 4d — Aquabike Roadmap"
+      - title: "d Aquabike Roadmap"
         url: "/merit-badges/multisport/guide/req4d/"
         is_sub: false
-      - title: "Req 4d1 — Aquabike Swim Skills"
+      - title: "d Aquabike Swim Skills"
         url: "/merit-badges/multisport/guide/req4d1/"
         is_sub: true
-      - title: "Req 4d2 — Aquabike Bike Skills"
+      - title: "d Aquabike Bike Skills"
         url: "/merit-badges/multisport/guide/req4d2/"
         is_sub: true
-  - group_title: "Build Your Plan"
+  - group_title: "5. Build Your Plan"
     items:
-      - title: "Req 5 — Build Your Four-Week Plan"
+      - title: "5. Build Your Four-Week Plan"
         url: "/merit-badges/multisport/guide/req5/"
         is_sub: false
-  - group_title: "Transitions"
+  - group_title: "6. Transitions"
     items:
-      - title: "Req 6 — Set Up Your Transition Area"
+      - title: "6. Set Up Your Transition Area"
         url: "/merit-badges/multisport/guide/req6/"
         is_sub: false
-  - group_title: "Race-Day Challenge"
+  - group_title: "7. Race-Day Challenge"
     items:
-      - title: "Req 7 — Choose Your Race Simulation"
+      - title: "7. Choose Your Race Simulation"
         url: "/merit-badges/multisport/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Triathlon Simulation"
+      - title: "a Triathlon Simulation"
         url: "/merit-badges/multisport/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Duathlon Simulation"
+      - title: "b Duathlon Simulation"
         url: "/merit-badges/multisport/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Aquathlon Simulation"
+      - title: "c Aquathlon Simulation"
         url: "/merit-badges/multisport/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Aquabike Simulation"
+      - title: "d Aquabike Simulation"
         url: "/merit-badges/multisport/guide/req7d/"
         is_sub: true
-  - group_title: "Staying Involved"
+  - group_title: "8. Staying Involved"
     items:
-      - title: "Req 8 — Pick Your Next Two Steps"
+      - title: "8. Pick Your Next Two Steps"
         url: "/merit-badges/multisport/guide/req8/"
         is_sub: false
-      - title: "Req 8a — Keep Participating"
+      - title: "a Keep Participating"
         url: "/merit-badges/multisport/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Study a Triathlete"
+      - title: "b Study a Triathlete"
         url: "/merit-badges/multisport/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Lead a Training Group"
+      - title: "c Lead a Training Group"
         url: "/merit-badges/multisport/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — Enter a Sanctioned Event"
+      - title: "d Enter a Sanctioned Event"
         url: "/merit-badges/multisport/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — Volunteer at an Event"
+      - title: "e Volunteer at an Event"
         url: "/merit-badges/multisport/guide/req8e/"
         is_sub: true
   - group_title: "Beyond the Badge"

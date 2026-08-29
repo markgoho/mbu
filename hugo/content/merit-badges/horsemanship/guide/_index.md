@@ -4,71 +4,71 @@ layout: guide
 badge_name: "Horsemanship"
 group_title: "Getting Started"
 next: "/merit-badges/horsemanship/guide/req1/"
-next_title: "Req 1 — Horse and Barn Safety"
+next_title: "Horse and Barn Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/horsemanship/guide/"
         is_sub: false
-  - group_title: "Horse and Barn Safety"
+  - group_title: "1. Horse and Barn Safety"
     items:
-      - title: "Req 1 — Horse and Barn Safety"
+      - title: "1. Horse and Barn Safety"
         url: "/merit-badges/horsemanship/guide/req1/"
         is_sub: false
-  - group_title: "Horse Anatomy"
+  - group_title: "2. Horse Anatomy"
     items:
-      - title: "Req 2 — Parts of the Horse"
+      - title: "2. Parts of the Horse"
         url: "/merit-badges/horsemanship/guide/req2/"
         is_sub: false
-  - group_title: "Breeds and Purpose"
+  - group_title: "3. Breeds and Purpose"
     items:
-      - title: "Req 3 — Breeds and Special Traits"
+      - title: "3. Breeds and Special Traits"
         url: "/merit-badges/horsemanship/guide/req3/"
         is_sub: false
-  - group_title: "Horse Health"
+  - group_title: "4. Horse Health"
     items:
-      - title: "Req 4 — Colic and Common Health Problems"
+      - title: "4. Colic and Common Health Problems"
         url: "/merit-badges/horsemanship/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Conformation, Lameness, and Unsoundness"
+      - title: "5. Conformation, Lameness, and Unsoundness"
         url: "/merit-badges/horsemanship/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Hoof Care and Horseshoes"
+      - title: "6. Hoof Care and Horseshoes"
         url: "/merit-badges/horsemanship/guide/req6/"
         is_sub: false
-  - group_title: "Daily Horse Care"
+  - group_title: "7. Daily Horse Care"
     items:
-      - title: "Req 7 — Grooming and After-Ride Care"
+      - title: "7. Grooming and After-Ride Care"
         url: "/merit-badges/horsemanship/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Feeding a Horse"
+      - title: "8. Feeding a Horse"
         url: "/merit-badges/horsemanship/guide/req8/"
         is_sub: false
-  - group_title: "Tack and Mounting"
+  - group_title: "9. Tack and Mounting"
     items:
-      - title: "Req 9 — Saddles, Bridles, and Mounting"
+      - title: "9. Saddles, Bridles, and Mounting"
         url: "/merit-badges/horsemanship/guide/req9/"
         is_sub: false
-  - group_title: "Ground Handling"
+  - group_title: "10. Ground Handling"
     items:
-      - title: "Req 10 — Approach, Lead, and Tie"
+      - title: "10. Approach, Lead, and Tie"
         url: "/merit-badges/horsemanship/guide/req10/"
         is_sub: false
-  - group_title: "Basic Riding Skills"
+  - group_title: "11. Basic Riding Skills"
     items:
-      - title: "Req 11 — Walk, Trot, Halt, and Dismount"
+      - title: "11. Walk, Trot, Halt, and Dismount"
         url: "/merit-badges/horsemanship/guide/req11/"
         is_sub: false
-  - group_title: "Careers and Lifelong Riding"
+  - group_title: "12. Careers and Lifelong Riding"
     items:
-      - title: "Req 12 — Choose Your Path"
+      - title: "12. Choose Your Path"
         url: "/merit-badges/horsemanship/guide/req12/"
         is_sub: false
-      - title: "Req 12a — Careers Working With Horses"
+      - title: "a Careers Working With Horses"
         url: "/merit-badges/horsemanship/guide/req12a/"
         is_sub: true
-      - title: "Req 12b — Horsemanship as a Hobby or Lifestyle"
+      - title: "b Horsemanship as a Hobby or Lifestyle"
         url: "/merit-badges/horsemanship/guide/req12b/"
         is_sub: true
   - group_title: "Beyond the Badge"

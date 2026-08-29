@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Rendering & Reporting Aid"
+title: "Rendering & Reporting Aid"
 layout: "guide"
-group_title: "First Aid in the Field"
+group_title: "2. First Aid in the Field"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/snow-sports/guide/req1/"
-prev_title: "Req 1 — Hazards & First Aid Topics"
+prev_title: "Hazards & First Aid Topics"
 next: "/merit-badges/snow-sports/guide/req3/"
-next_title: "Req 3 — Trail Marking System"
+next_title: "Trail Marking System"
 ---
 
 {{< drg/requirement number="2" >}}

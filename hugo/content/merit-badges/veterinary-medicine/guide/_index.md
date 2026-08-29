@@ -4,59 +4,59 @@ layout: "guide"
 badge_name: "Veterinary Medicine"
 group_title: "Getting Started"
 next: "/merit-badges/veterinary-medicine/guide/req1/"
-next_title: "Req 1 — Clinical Practice Settings"
+next_title: "Clinical Practice Settings"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/veterinary-medicine/guide/"
         is_sub: false
-  - group_title: "Veterinary Practice Types"
+  - group_title: "1. Veterinary Practice Types"
     items:
-      - title: "Req 1 — Clinical Practice Settings"
+      - title: "1. Clinical Practice Settings"
         url: "/merit-badges/veterinary-medicine/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Public Service and Specialized Careers"
+      - title: "2. Public Service and Specialized Careers"
         url: "/merit-badges/veterinary-medicine/guide/req2/"
         is_sub: false
-  - group_title: "Training and Team Roles"
+  - group_title: "3. Training and Team Roles"
     items:
-      - title: "Req 3 — Becoming a Veterinarian"
+      - title: "3. Becoming a Veterinarian"
         url: "/merit-badges/veterinary-medicine/guide/req3/"
         is_sub: false
-      - title: "Req 4 — Veterinary Technicians in Action"
+      - title: "4. Veterinary Technicians in Action"
         url: "/merit-badges/veterinary-medicine/guide/req4/"
         is_sub: false
-  - group_title: "Care, Observation, and Reflection"
+  - group_title: "5. Care, Observation, and Reflection"
     items:
-      - title: "Req 5 — The Human-Animal Bond"
+      - title: "5. The Human-Animal Bond"
         url: "/merit-badges/veterinary-medicine/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Choose Your Field Experience"
+      - title: "6. Choose Your Field Experience"
         url: "/merit-badges/veterinary-medicine/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Observe a Veterinary Facility"
+      - title: "a Observe a Veterinary Facility"
         url: "/merit-badges/veterinary-medicine/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Shadow a Public-Service Veterinarian"
+      - title: "b Shadow a Public-Service Veterinarian"
         url: "/merit-badges/veterinary-medicine/guide/req6b/"
         is_sub: true
-      - title: "Req 7 — Choose a Career Reflection"
+      - title: "7. Choose a Career Reflection"
         url: "/merit-badges/veterinary-medicine/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Why This Career Fits"
+      - title: "a Why This Career Fits"
         url: "/merit-badges/veterinary-medicine/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — What You Would Enjoy"
+      - title: "b What You Would Enjoy"
         url: "/merit-badges/veterinary-medicine/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — The Hardest Parts of the Job"
+      - title: "c The Hardest Parts of the Job"
         url: "/merit-badges/veterinary-medicine/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — What Might Surprise You"
+      - title: "d What Might Surprise You"
         url: "/merit-badges/veterinary-medicine/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — Learning Never Stops"
+      - title: "e Learning Never Stops"
         url: "/merit-badges/veterinary-medicine/guide/req7e/"
         is_sub: true
   - group_title: "Beyond the Badge"

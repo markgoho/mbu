@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Towing a Swimmer"
+title: "Towing a Swimmer"
 layout: "guide"
-group_title: "Rescue Skills"
+group_title: "6. Rescue Skills"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/rowing/guide/req6/"
-prev_title: "Req 6 — Swamped Boat Recovery"
+prev_title: "Swamped Boat Recovery"
 next: "/merit-badges/rowing/guide/req8/"
-next_title: "Req 8 — Craft, Materials & Oarlocks"
+next_title: "Craft, Materials & Oarlocks"
 ---
 
 {{< drg/requirement number="7" >}}

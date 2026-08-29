@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Maneuvering with Control"
+title: "Maneuvering with Control"
 layout: guide
-group_title: "Boat Control"
+group_title: "8. Boat Control"
 req_number: "8"
 prev: "/merit-badges/kayaking/guide/req7/"
-prev_title: "Req 7 — Essential Kayak Strokes"
+prev_title: "Essential Kayak Strokes"
 next: "/merit-badges/kayaking/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

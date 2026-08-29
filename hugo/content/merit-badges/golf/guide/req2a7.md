@@ -1,12 +1,12 @@
 ---
-title: "Req 2a7 — Careers in Traditional Golf"
+title: "Careers in Traditional Golf"
 layout: guide
-group_title: "Traditional Golf Path"
+group_title: "2. Traditional Golf Path"
 req_number: "2a7"
 prev: "/merit-badges/golf/guide/req2a6/"
-prev_title: "Req 2a6 — Playing a Real Round"
+prev_title: "Playing a Real Round"
 next: "/merit-badges/golf/guide/req2b/"
-next_title: "Req 2b — Disc Golf Roadmap"
+next_title: "Disc Golf Roadmap"
 ---
 
 {{< drg/requirement number="2a7" >}}

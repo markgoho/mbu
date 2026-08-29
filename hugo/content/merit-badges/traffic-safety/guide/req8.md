@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Careers in Traffic Safety"
+title: "Careers in Traffic Safety"
 layout: "guide"
-group_title: "Career Paths"
+group_title: "8. Career Paths"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/traffic-safety/guide/req7c/"
-prev_title: "Req 7c — Organize a Safety Event"
+prev_title: "Organize a Safety Event"
 next: "/merit-badges/traffic-safety/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

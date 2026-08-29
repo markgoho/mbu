@@ -1,12 +1,12 @@
 ---
-title: "Req 14 — Submerged Victim Recovery"
+title: "Submerged Victim Recovery"
 layout: guide
-group_title: "Unconscious Victim Rescues"
+group_title: "13. Unconscious Victim Rescues"
 req_number: "14"
 prev: "/merit-badges/lifesaving/guide/req13/"
-prev_title: "Req 13 — Unconscious Rescue"
+prev_title: "Unconscious Rescue"
 next: "/merit-badges/lifesaving/guide/req15/"
-next_title: "Req 15 — Spinal Injury Management"
+next_title: "Spinal Injury Management"
 ---
 
 {{< drg/requirement number="14" >}}

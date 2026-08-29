@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Downhill (Alpine) Skiing"
+title: "Downhill (Alpine) Skiing"
 layout: "guide"
-group_title: "Option A — Alpine Skiing"
+group_title: "7. Option A — Alpine Skiing"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/snow-sports/guide/req7/"
-prev_title: "Req 7 — Pick Your Snow Sport"
+prev_title: "Pick Your Snow Sport"
 next: "/merit-badges/snow-sports/guide/req7a1/"
-next_title: "Req 7a1 — Wax, Bindings & DIN"
+next_title: "Wax, Bindings & DIN"
 ---
 
 {{< drg/requirement number="7" option="Downhill (Alpine) Skiing" >}}

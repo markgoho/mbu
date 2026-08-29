@@ -1,12 +1,12 @@
 ---
-title: "Req 6d — Professional Websites Research"
+title: "Professional Websites Research"
 layout: guide
-group_title: "Explore the Industry"
+group_title: "6. Explore the Industry"
 req_number: "6d"
 prev: "/merit-badges/graphic-arts/guide/req6c/"
-prev_title: "Req 6c — School Program Visit"
+prev_title: "School Program Visit"
 next: "/merit-badges/graphic-arts/guide/req7/"
-next_title: "Req 7 — Careers in Graphic Arts"
+next_title: "Careers in Graphic Arts"
 ---
 
 {{< drg/requirement number="6d" >}}

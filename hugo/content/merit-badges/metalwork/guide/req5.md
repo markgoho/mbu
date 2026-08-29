@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose Your Craft"
+title: "Choose Your Craft"
 layout: "guide"
-group_title: "Choose Your Craft"
+group_title: "5. Choose Your Craft"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/metalwork/guide/req4b/"
-prev_title: "Req 4b — Metalwork as a Hobby"
+prev_title: "Metalworking as a Hobby"
 next: "/merit-badges/metalwork/guide/req5a/"
-next_title: "Req 5a — Sheet Metal Mechanic/Tinsmith"
+next_title: "Sheet Metal Mechanic/Tinsmith"
 ---
 
 {{< drg/requirement number="5" >}}

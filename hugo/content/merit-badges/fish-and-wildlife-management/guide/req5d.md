@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Wildlife Blind"
+title: "Wildlife Blind"
 layout: guide
-group_title: "Hands-On Field Projects"
+group_title: "5. Hands-On Field Projects"
 req_number: "5d"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req5c/"
-prev_title: "Req 5c — Habitat Improvement Project"
+prev_title: "Habitat Improvement Project"
 next: "/merit-badges/fish-and-wildlife-management/guide/req6/"
-next_title: "Req 6 — Choose an Observation or Research Activity"
+next_title: "Choose an Observation or Research Activity"
 ---
 
 {{< drg/requirement number="5d" >}}

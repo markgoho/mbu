@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Basket Types & Weaves"
+title: "Basket Types & Weaves"
 layout: guide
-group_title: "Knowing Your Craft"
+group_title: "2. Knowing Your Craft"
 req_number: "2"
 prev: "/merit-badges/basketry/guide/req1/"
-prev_title: "Req 1 — Safety & First Aid"
+prev_title: "Safety & First Aid"
 next: "/merit-badges/basketry/guide/req3a/"
-next_title: "Req 3a — Square Basket"
+next_title: "Square Basket"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -4,66 +4,66 @@ layout: guide
 badge_name: "Gardening"
 group_title: "Getting Started"
 next: "/merit-badges/gardening/guide/req1ab/"
-next_title: "Req 1a–1b — Garden Safety & First Aid"
+next_title: "Garden Safety & First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/gardening/guide/"
-  - group_title: "Safe Gardening"
+  - group_title: "1. Safe Gardening"
     items:
-      - title: "Req 1a–1b — Garden Safety & First Aid"
+      - title: "a Garden Safety & First Aid"
         url: "/merit-badges/gardening/guide/req1ab/"
-  - group_title: "Growing Plants"
+  - group_title: "2. Growing Plants"
     items:
-      - title: "Req 2a — Growing Vegetables"
+      - title: "a Growing Vegetables"
         url: "/merit-badges/gardening/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Growing Flowers"
+      - title: "b Growing Flowers"
         url: "/merit-badges/gardening/guide/req2b/"
         is_sub: true
-      - title: "Req 3abc — Nutritional Value of Garden Crops"
+      - title: "abc Nutritional Value of Garden Crops"
         url: "/merit-badges/gardening/guide/req3abc/"
-      - title: "Req 4 — Seed Germination Testing"
+      - title: "4. Seed Germination Testing"
         url: "/merit-badges/gardening/guide/req4/"
-  - group_title: "Exploring the Gardening World"
+  - group_title: "5. Exploring the Gardening World"
     items:
-      - title: "Req 5 — Visiting Garden Experts"
+      - title: "5. Visiting Garden Experts"
         url: "/merit-badges/gardening/guide/req5/"
-      - title: "Req 6 — Pollinators & Honeybees"
+      - title: "6. Pollinators & Honeybees"
         url: "/merit-badges/gardening/guide/req6/"
-      - title: "Req 7 — Garden Pests & Organic Solutions"
+      - title: "7. Garden Pests & Organic Solutions"
         url: "/merit-badges/gardening/guide/req7/"
-  - group_title: "Hands-On Garden Projects"
+  - group_title: "8. Hands-On Garden Projects"
     items:
-      - title: "Req 8 — Choose Your Garden Project"
+      - title: "8. Choose Your Garden Project"
         url: "/merit-badges/gardening/guide/req8/"
-      - title: "Req 8a — Compost Bin Project"
+      - title: "a Compost Bin Project"
         url: "/merit-badges/gardening/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Vermicompost Bin Project"
+      - title: "b Vermicompost Bin Project"
         url: "/merit-badges/gardening/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Hydroponic Garden Project"
+      - title: "c Hydroponic Garden Project"
         url: "/merit-badges/gardening/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — Water Garden Project"
+      - title: "d Water Garden Project"
         url: "/merit-badges/gardening/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — Honey Super Project"
+      - title: "e Honey Super Project"
         url: "/merit-badges/gardening/guide/req8e/"
         is_sub: true
-      - title: "Req 8f — Soil Garden Project"
+      - title: "f Soil Garden Project"
         url: "/merit-badges/gardening/guide/req8f/"
         is_sub: true
-  - group_title: "Careers & Lifelong Gardening"
+  - group_title: "9. Careers & Lifelong Gardening"
     items:
-      - title: "Req 9 — Careers or Healthy Living"
+      - title: "9. Careers or Healthy Living"
         url: "/merit-badges/gardening/guide/req9/"
-      - title: "Req 9a — Gardening Careers"
+      - title: "a Gardening Careers"
         url: "/merit-badges/gardening/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Gardening as a Hobby & Healthy Lifestyle"
+      - title: "b Gardening as a Hobby & Healthy Lifestyle"
         url: "/merit-badges/gardening/guide/req9b/"
         is_sub: true
   - group_title: "Beyond the Badge"

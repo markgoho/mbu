@@ -1,13 +1,13 @@
 ---
-title: "Req 4d — Motion with Simple Machines"
+title: "Motion with Simple Machines"
 layout: "guide"
-group_title: "Mechanical Device Model"
+group_title: "4. Mechanical Device Model"
 req_number: "4d"
 req_path: "4.d"
 prev: "/merit-badges/model-design-and-building/guide/req4c/"
-prev_title: "Req 4c — Mapping Water In and Waste Out"
+prev_title: "Mapping Water In and Waste Out"
 next: "/merit-badges/model-design-and-building/guide/req4e/"
-next_title: "Req 4e — Designing a Scaled Passenger Vehicle"
+next_title: "Designing a Scaled Passenger Vehicle"
 ---
 
 {{< drg/requirement number="4d" >}}

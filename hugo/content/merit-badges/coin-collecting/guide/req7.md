@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Expanding Your Horizons"
+title: "Expanding Your Horizons"
 layout: guide
-group_title: "Going Global"
+group_title: "7. Going Global"
 req_number: "7"
 prev: "/merit-badges/coin-collecting/guide/req6/"
-prev_title: "Req 6 — U.S. Currency"
+prev_title: "U.S. Currency"
 next: "/merit-badges/coin-collecting/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

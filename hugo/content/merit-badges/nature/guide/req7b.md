@@ -1,11 +1,11 @@
 ---
-title: "Req 7b — Nature as a Lifelong Hobby"
+title: "Nature as a Lifelong Hobby"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/nature/guide/req7a/"
-prev_title: "Req 7a — Nature Careers"
+prev_title: "Nature Careers"
 next: "/merit-badges/nature/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

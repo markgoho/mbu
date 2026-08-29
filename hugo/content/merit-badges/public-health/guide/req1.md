@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — How Disease Spreads"
+title: "How Disease Spreads"
 layout: "guide"
-group_title: "Disease Basics"
+group_title: "1. Disease Basics"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/public-health/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/public-health/guide/req2/"
-next_title: "Req 2 — Immunization Basics"
+next_title: "Immunization Basics"
 ---
 
 {{< drg/requirement number="1" >}}

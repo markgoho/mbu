@@ -4,74 +4,74 @@ layout: "guide"
 badge_name: "Search and Rescue"
 group_title: "Getting Started"
 next: "/merit-badges/search-and-rescue/guide/req1a/"
-next_title: "Req 1a — Field Injuries and Conditions"
+next_title: "Field Injuries and Conditions"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/search-and-rescue/guide/"
         is_sub: false
-  - group_title: "Field Safety and Self-Care"
+  - group_title: "1. Field Safety and Self-Care"
     items:
-      - title: "Req 1a — Field Injuries and Conditions"
+      - title: "a Field Injuries and Conditions"
         url: "/merit-badges/search-and-rescue/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Basic Essentials That Keep You Alive"
+      - title: "b Basic Essentials That Keep You Alive"
         url: "/merit-badges/search-and-rescue/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — What Goes in an SAR Pack"
+      - title: "c What Goes in an SAR Pack"
         url: "/merit-badges/search-and-rescue/guide/req1c/"
         is_sub: true
-  - group_title: "Staying Found and Navigating"
+  - group_title: "2. Staying Found and Navigating"
     items:
-      - title: "Req 2 — Staying Found and Getting Found"
+      - title: "2. Staying Found and Getting Found"
         url: "/merit-badges/search-and-rescue/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Reading the Map Like a Searcher"
+      - title: "3. Reading the Map Like a Searcher"
         url: "/merit-badges/search-and-rescue/guide/req3/"
         is_sub: false
-  - group_title: "How Search Missions Work"
+  - group_title: "4. How Search Missions Work"
     items:
-      - title: "Req 4 — How the Command System Works"
+      - title: "4. How the Command System Works"
         url: "/merit-badges/search-and-rescue/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Who Does What on SAR Teams"
+      - title: "5. Who Does What on SAR Teams"
         url: "/merit-badges/search-and-rescue/guide/req5/"
         is_sub: false
-  - group_title: "Search Procedure Skills"
+  - group_title: "6. Search Procedure Skills"
     items:
-      - title: "Req 6 — Choose Four Search Procedure Skills"
+      - title: "6. Choose Four Search Procedure Skills"
         url: "/merit-badges/search-and-rescue/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Search vs. Rescue"
+      - title: "a Search vs. Rescue"
         url: "/merit-badges/search-and-rescue/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — PLS and LKP"
+      - title: "b PLS and LKP"
         url: "/merit-badges/search-and-rescue/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Clear Communication"
+      - title: "c Clear Communication"
         url: "/merit-badges/search-and-rescue/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Lost Person Behavior"
+      - title: "d Lost Person Behavior"
         url: "/merit-badges/search-and-rescue/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Core SAR Terms"
+      - title: "e Core SAR Terms"
         url: "/merit-badges/search-and-rescue/guide/req6e/"
         is_sub: true
-  - group_title: "Practice Mission"
+  - group_title: "7. Practice Mission"
     items:
-      - title: "Req 7 — Plan and Run a Practice Search"
+      - title: "7. Plan and Run a Practice Search"
         url: "/merit-badges/search-and-rescue/guide/req7/"
         is_sub: false
-  - group_title: "Future Paths"
+  - group_title: "8. Future Paths"
     items:
-      - title: "Req 8 — Choose Your Career Path"
+      - title: "8. Choose Your Career Path"
         url: "/merit-badges/search-and-rescue/guide/req8/"
         is_sub: false
-      - title: "Req 8a — Research an SAR Career"
+      - title: "a Research an SAR Career"
         url: "/merit-badges/search-and-rescue/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Volunteer Response Paths"
+      - title: "b Volunteer Response Paths"
         url: "/merit-badges/search-and-rescue/guide/req8b/"
         is_sub: true
   - group_title: "Beyond the Badge"

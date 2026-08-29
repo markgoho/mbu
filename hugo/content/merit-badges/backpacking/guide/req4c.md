@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Choosing a Campsite"
+title: "Choosing a Campsite"
 layout: guide
-group_title: "Leave No Trace & Camp Hygiene"
+group_title: "4. Leave No Trace & Camp Hygiene"
 req_number: "4c"
 prev: "/merit-badges/backpacking/guide/req4b/"
-prev_title: "Req 4b — Waste & Hygiene"
+prev_title: "Waste & Hygiene"
 next: "/merit-badges/backpacking/guide/req5/"
-next_title: "Req 5 — Water Treatment & Hydration"
+next_title: "Water Treatment & Hydration"
 ---
 
 {{< drg/requirement number="4c" >}}

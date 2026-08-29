@@ -1,13 +1,13 @@
 ---
-title: "Req 2a1 — Daniel Carter Beard"
+title: "Daniel Carter Beard"
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a1"
 req_path: "2.a.1"
 prev: "/merit-badges/scouting-heritage/guide/req2a/"
-prev_title: "Req 2a — Choose Two Scouting Leaders"
+prev_title: "Choose Two Scouting Leaders"
 next: "/merit-badges/scouting-heritage/guide/req2a2/"
-next_title: "Req 2a2 — William D. Boyce"
+next_title: "William D. Boyce"
 ---
 
 {{< drg/requirement number="2a1" >}}

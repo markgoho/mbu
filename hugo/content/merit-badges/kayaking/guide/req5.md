@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Paddle Skills & Paddle Care"
+title: "Paddle Skills & Paddle Care"
 layout: guide
-group_title: "Paddling Fundamentals"
+group_title: "5. Paddling Fundamentals"
 req_number: "5"
 prev: "/merit-badges/kayaking/guide/req4/"
-prev_title: "Req 4 — Kayak Parts, Design & Care"
+prev_title: "Kayak Parts, Design & Care"
 next: "/merit-badges/kayaking/guide/req6/"
-next_title: "Req 6 — Capsize Recovery Skills"
+next_title: "Capsize Recovery Skills"
 ---
 
 {{< drg/requirement number="5" >}}

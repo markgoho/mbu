@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Habitat Adaptations"
+title: "Habitat Adaptations"
 layout: guide
-group_title: "Bird Adaptations"
+group_title: "6. Bird Adaptations"
 req_number: "6"
 prev: "/merit-badges/bird-study/guide/req5/"
-prev_title: "Req 5 — Field Notebook"
+prev_title: "Field Notebook"
 next: "/merit-badges/bird-study/guide/req7/"
-next_title: "Req 7 — Songs & Calls"
+next_title: "Songs & Calls"
 ---
 
 {{< drg/requirement number="6" >}}

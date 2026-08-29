@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Atoms, Isotopes, and Particles"
+title: "Atoms, Isotopes, and Particles"
 layout: "guide"
-group_title: "Atomic Building Blocks"
+group_title: "2. Atomic Building Blocks"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/nuclear-science/guide/req1/"
-prev_title: "Req 1 — Understanding Radiation"
+prev_title: "Understanding Radiation"
 next: "/merit-badges/nuclear-science/guide/req3a/"
-next_title: "Req 3a — How Accelerators Work"
+next_title: "How Accelerators Work"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Your Next Path"
+title: "Choose Your Next Path"
 layout: "guide"
-group_title: "Exploration Futures"
+group_title: "9. Exploration Futures"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/exploration/guide/req8/"
-prev_title: "Req 8 — Carry Out the Expedition"
+prev_title: "Carry Out the Expedition"
 next: "/merit-badges/exploration/guide/req9a/"
-next_title: "Req 9a — Research an Exploration Career"
+next_title: "Research an Exploration Career"
 ---
 
 {{< drg/requirement number="9" >}}

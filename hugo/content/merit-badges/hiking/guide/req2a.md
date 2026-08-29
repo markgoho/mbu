@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Hiking Practices"
+title: "Hiking Practices"
 layout: guide
-group_title: "Hiking Ethics & Safety"
+group_title: "2. Hiking Ethics & Safety"
 req_number: "2a"
 prev: "/merit-badges/hiking/guide/req1b/"
-prev_title: "Requirement 1b — First Aid"
+prev_title: "First Aid"
 next: "/merit-badges/hiking/guide/req2b/"
-next_title: "Requirement 2b — Leave No Trace"
+next_title: "Leave No Trace"
 ---
 
 {{< drg/requirement number="2a" >}}

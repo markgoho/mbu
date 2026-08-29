@@ -1,13 +1,13 @@
 ---
-title: "Req 8a5a — Corn in the Field"
+title: "Corn in the Field"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a5a"
 req_path: "8.a.5.a"
 prev: "/merit-badges/plant-science/guide/req8a5/"
-prev_title: "Req 8a5 — Choose a Crop Study"
+prev_title: "Choose a Crop"
 next: "/merit-badges/plant-science/guide/req8a5b/"
-next_title: "Req 8a5b — Cotton from Field to Fiber"
+next_title: "Cotton"
 ---
 
 {{< drg/requirement number="8a5a" >}}

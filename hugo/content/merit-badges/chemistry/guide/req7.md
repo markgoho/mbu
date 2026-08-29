@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Government Agencies"
+title: "Government Agencies"
 layout: guide
-group_title: "Government & Regulation"
+group_title: "7. Government & Regulation"
 req_number: "7"
 prev: "/merit-badges/chemistry/guide/req6/"
-prev_title: "Req 6 — Five Fields of Chemistry"
+prev_title: "Five Fields of Chemistry"
 next: "/merit-badges/chemistry/guide/req8/"
-next_title: "Req 8 — Career Exploration"
+next_title: "Career Exploration"
 ---
 
 {{< drg/requirement number="7" >}}

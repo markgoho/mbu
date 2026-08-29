@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Traffic Safety and the Law"
+title: "Traffic Safety and the Law"
 layout: "guide"
-group_title: "Rules, Rights, and Responsibilities"
+group_title: "4. Rules, Rights, and Responsibilities"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/traffic-safety/guide/req3/"
-prev_title: "Req 3 — Maintenance and Emergency Stops"
+prev_title: "Maintenance and Emergency Stops"
 next: "/merit-badges/traffic-safety/guide/req5/"
-next_title: "Req 5 — Choose Your Roadway Focus"
+next_title: "Choose Your Roadway Focus"
 ---
 
 {{< drg/requirement number="4" >}}

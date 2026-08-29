@@ -1,13 +1,13 @@
 ---
-title: "Req 9c — Firewise Assessment & Project"
+title: "Firewise Assessment & Project"
 layout: "guide"
-group_title: "Taking Action"
+group_title: "9. Taking Action"
 req_number: "9c"
 req_path: "9.c"
 prev: "/merit-badges/wildland-fire-management/guide/req9b/"
-prev_title: "Req 9b — Talk With a Forestry Official"
+prev_title: "Talk With a Forestry Official"
 next: "/merit-badges/wildland-fire-management/guide/req9d/"
-next_title: "Req 9d — Create a Prevention Message"
+next_title: "Create a Prevention Message"
 ---
 
 {{< drg/requirement number="9c" >}}

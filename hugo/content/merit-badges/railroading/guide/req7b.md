@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Railfanning Adventures"
+title: "Railfanning Adventures"
 layout: "guide"
-group_title: "Railfanning Option"
+group_title: "7. Railfanning Option"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/railroading/guide/req7a8/"
-prev_title: "Req 7a8 — DC and DCC Control"
+prev_title: "DC and DCC Control"
 next: "/merit-badges/railroading/guide/req7b1/"
-next_title: "Req 7b1 — Museum or Public Event Visit"
+next_title: "Museum or Public Event Visit"
 ---
 
 {{< drg/requirement number="7" option="Railfanning" >}}

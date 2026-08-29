@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Wood Samples & Uses"
+title: "Wood Samples & Uses"
 layout: guide
-group_title: "Reading the Forest"
+group_title: "1. Reading the Forest"
 req_number: "2a"
 prev: "/merit-badges/forestry/guide/req2/"
-prev_title: "Req 2 — Choose a Tree Investigation"
+prev_title: "Choose a Tree Investigation"
 next: "/merit-badges/forestry/guide/req2b/"
-next_title: "Req 2b — Reading Tree Rings"
+next_title: "Reading Tree Rings"
 ---
 
 {{< drg/requirement number="2a" >}}

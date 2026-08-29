@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Swimmer Test"
+title: "Swimmer Test"
 layout: guide
-group_title: "Swimming Prerequisite"
+group_title: "2. Swimming Prerequisite"
 req_number: "2"
 prev: "/merit-badges/canoeing/guide/req1c/"
-prev_title: "Req 1c — Safety Afloat"
+prev_title: "Safety Afloat"
 next: "/merit-badges/canoeing/guide/req3/"
-next_title: "Req 3 — Canoe Anatomy & Design"
+next_title: "Canoe Anatomy & Design"
 ---
 
 {{< drg/requirement number="2" >}}

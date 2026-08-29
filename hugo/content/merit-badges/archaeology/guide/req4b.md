@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Presenting Your Findings"
+title: "Presenting Your Findings"
 layout: guide
-group_title: "Exploring Famous Sites"
+group_title: "4. Exploring Famous Sites"
 req_number: "4b"
 prev: "/merit-badges/archaeology/guide/req4a/"
-prev_title: "Req 4a — Researching Archaeological Sites"
+prev_title: "Researching Archaeological Sites"
 next: "/merit-badges/archaeology/guide/req5/"
-next_title: "Req 5 — Laws That Protect Sites"
+next_title: "Laws That Protect Sites"
 ---
 
 {{< drg/requirement number="4b" >}}

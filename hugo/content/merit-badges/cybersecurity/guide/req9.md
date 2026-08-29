@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Careers"
+title: "Careers"
 layout: guide
-group_title: "Career Exploration"
+group_title: "9. Career Exploration"
 req_number: "9"
 prev: "/merit-badges/cybersecurity/guide/req8/"
-prev_title: "Req 8 — Cybersecurity Activities"
+prev_title: "Cybersecurity Activities"
 next: "/merit-badges/cybersecurity/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

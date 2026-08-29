@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Rules and Resources"
+title: "Rules and Resources"
 layout: guide
-group_title: "Designing Your Game"
+group_title: "5. Designing Your Game"
 req_number: "5c"
 prev: "/merit-badges/game-design/guide/req5b/"
-prev_title: "Req 5b — Why Your Game Is Fun"
+prev_title: "Why Your Game Is Fun"
 next: "/merit-badges/game-design/guide/req5d/"
-next_title: "Req 5d — Drawing Game Elements"
+next_title: "Drawing Game Elements"
 ---
 
 {{< drg/requirement number="5c" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Fire Science & Hazards"
+title: "Fire Science & Hazards"
 layout: guide
-group_title: "Fire Science & Hazards"
+group_title: "1. Fire Science & Hazards"
 req_number: "1"
 prev: "/merit-badges/fire-safety/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/fire-safety/guide/req2/"
-next_title: "Req 2 — Fire Extinguishers"
+next_title: "Fire Extinguishers"
 ---
 
  {{< drg/requirement number="1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — The 12 Principles"
+title: "The 12 Principles"
 layout: guide
-group_title: "Principles of Animation"
+group_title: "2. Principles of Animation"
 req_number: "2"
 prev: "/merit-badges/animation/guide/req1b/"
-prev_title: "Req 1b — History of Animation"
+prev_title: "History of Animation"
 next: "/merit-badges/animation/guide/req3/"
-next_title: "Req 3 — Create Your Animations"
+next_title: "Create Your Animations"
 ---
 
 {{< drg/requirement number="2" >}}

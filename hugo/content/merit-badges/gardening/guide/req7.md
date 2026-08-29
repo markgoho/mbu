@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Garden Pests & Organic Solutions"
+title: "Garden Pests & Organic Solutions"
 layout: guide
-group_title: "Exploring the Gardening World"
+group_title: "5. Exploring the Gardening World"
 req_number: "7"
 prev: "/merit-badges/gardening/guide/req6/"
-prev_title: "Req 6 — Pollinators & Honeybees"
+prev_title: "Pollinators & Honeybees"
 next: "/merit-badges/gardening/guide/req8/"
-next_title: "Req 8 — Choose Your Garden Project"
+next_title: "Choose Your Garden Project"
 ---
 
 {{< drg/requirement number="7" >}}

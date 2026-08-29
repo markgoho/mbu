@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Following Energy Through a System"
+title: "Following Energy Through a System"
 layout: "guide"
-group_title: "System Efficiency"
+group_title: "3. System Efficiency"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/energy/guide/req2/"
-prev_title: "Req 2 — Forms & Conversions"
+prev_title: "Forms & Conversions"
 next: "/merit-badges/energy/guide/req4/"
-next_title: "Req 4 — Home Energy Audit"
+next_title: "Home Energy Audit"
 ---
 
 {{< drg/requirement number="3" >}}

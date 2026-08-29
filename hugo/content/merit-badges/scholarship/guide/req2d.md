@@ -1,13 +1,13 @@
 ---
-title: "Req 2d — Compare Research Methods"
+title: "Compare Research Methods"
 layout: "guide"
-group_title: "Learning Beyond the Classroom"
+group_title: "2. Learning Beyond the Classroom"
 req_number: "2d"
 req_path: "2.d"
 prev: "/merit-badges/scholarship/guide/req2c/"
-prev_title: "Req 2c — Use a Planner Well"
+prev_title: "Use a Planner Well"
 next: "/merit-badges/scholarship/guide/req3/"
-next_title: "Req 3 — Character, Leadership, and Service"
+next_title: "Character, Leadership, and Service"
 ---
 
 {{< drg/requirement number="2d" >}}

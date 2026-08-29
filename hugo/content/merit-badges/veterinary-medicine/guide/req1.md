@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Clinical Practice Settings"
+title: "Clinical Practice Settings"
 layout: "guide"
-group_title: "Veterinary Practice Types"
+group_title: "1. Veterinary Practice Types"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/veterinary-medicine/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/veterinary-medicine/guide/req2/"
-next_title: "Req 2 — Public Service and Specialized Careers"
+next_title: "Public Service and Specialized Careers"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Offset Lithography Run"
+title: "Offset Lithography Run"
 layout: guide
-group_title: "Choose a Printing Method"
+group_title: "4. Choose a Printing Method"
 req_number: "4a"
 prev: "/merit-badges/graphic-arts/guide/req4/"
-prev_title: "Req 4 — Pick Your Production Path"
+prev_title: "Pick Your Production Path"
 next: "/merit-badges/graphic-arts/guide/req4b/"
-next_title: "Req 4b — Screen Printing Run"
+next_title: "Screen Printing Run"
 ---
 
 {{< drg/requirement number="4a" >}}

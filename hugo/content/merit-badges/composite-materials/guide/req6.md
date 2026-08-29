@@ -1,10 +1,10 @@
 ---
-title: "Req 6 — Careers & Hobbies"
+title: "Careers & Hobbies"
 layout: guide
-group_title: "Your Composites Future"
+group_title: "6. Your Composites Future"
 req_number: "6"
 prev: "/merit-badges/composite-materials/guide/req5c/"
-prev_title: "Req 5c — Evaluating Your Work"
+prev_title: "Evaluating Your Work"
 next: "/merit-badges/composite-materials/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

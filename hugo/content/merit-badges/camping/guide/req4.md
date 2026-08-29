@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Duty Roster & Leadership"
+title: "Duty Roster & Leadership"
 layout: guide
-group_title: "Patrol Organization"
+group_title: "4. Patrol Organization"
 req_number: "4"
 prev: "/merit-badges/camping/guide/req3/"
-prev_title: "Req 3 — Map & Navigation"
+prev_title: "Map & Navigation"
 next: "/merit-badges/camping/guide/req5a/"
-next_title: "Req 5a — Camping Clothing"
+next_title: "Camping Clothing"
 ---
 
 {{< drg/requirement number="4a" >}}

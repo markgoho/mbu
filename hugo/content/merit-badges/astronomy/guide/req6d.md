@@ -1,12 +1,12 @@
 ---
-title: "Req 6d — Eclipses & Moon Phases"
+title: "Eclipses & Moon Phases"
 layout: guide
-group_title: "Our Moon"
+group_title: "6. Our Moon"
 req_number: "6d"
 prev: "/merit-badges/astronomy/guide/req6c/"
-prev_title: "Req 6c — Moon's Orbit"
+prev_title: "Moon"
 next: "/merit-badges/astronomy/guide/req7a/"
-next_title: "Req 7a — Composition of the Sun"
+next_title: "Composition of the Sun"
 ---
 
 {{< drg/requirement number="6d" >}}

@@ -4,66 +4,66 @@ layout: "guide"
 badge_name: "Space Exploration"
 group_title: "Getting Started"
 next: "/merit-badges/space-exploration/guide/req1/"
-next_title: "Req 1 — Why We Go"
+next_title: "Why We Go"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/space-exploration/guide/"
         is_sub: false
-  - group_title: "Why Explore Space"
+  - group_title: "1. Why Explore Space"
     items:
-      - title: "Req 1 — Why We Go"
+      - title: "1. Why We Go"
         url: "/merit-badges/space-exploration/guide/req1/"
         is_sub: false
-  - group_title: "Space Pioneers"
+  - group_title: "2. Space Pioneers"
     items:
-      - title: "Req 2 — Collector Card Mission"
+      - title: "2. Collector Card Mission"
         url: "/merit-badges/space-exploration/guide/req2/"
         is_sub: false
-  - group_title: "Model Rocketry"
+  - group_title: "3. Model Rocketry"
     items:
-      - title: "Req 3 — Build, Launch, Recover"
+      - title: "3. Build, Launch, Recover"
         url: "/merit-badges/space-exploration/guide/req3/"
         is_sub: false
-  - group_title: "How Spaceflight Works"
+  - group_title: "4. How Spaceflight Works"
     items:
-      - title: "Req 4 — Rockets, Orbits, and Images"
+      - title: "4. Rockets, Orbits, and Images"
         url: "/merit-badges/space-exploration/guide/req4/"
         is_sub: false
-  - group_title: "Mission Pathways"
+  - group_title: "5. Mission Pathways"
     items:
-      - title: "Req 5 — Choose Two Missions"
+      - title: "5. Choose Two Missions"
         url: "/merit-badges/space-exploration/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Compare Great Missions"
+      - title: "a Compare Great Missions"
         url: "/merit-badges/space-exploration/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Build a Mission Story"
+      - title: "b Build a Mission Story"
         url: "/merit-badges/space-exploration/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Design a Sample Return"
+      - title: "c Design a Sample Return"
         url: "/merit-badges/space-exploration/guide/req5c/"
         is_sub: true
-  - group_title: "Spacecraft Choices"
+  - group_title: "6. Spacecraft Choices"
     items:
-      - title: "Req 6 — Choose a Space Home"
+      - title: "6. Choose a Space Home"
         url: "/merit-badges/space-exploration/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Crewed Orbital Vehicles"
+      - title: "a Crewed Orbital Vehicles"
         url: "/merit-badges/space-exploration/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — International Space Station"
+      - title: "b International Space Station"
         url: "/merit-badges/space-exploration/guide/req6b/"
         is_sub: true
-  - group_title: "Living Beyond Earth"
+  - group_title: "7. Living Beyond Earth"
     items:
-      - title: "Req 7 — Design a Space Base"
+      - title: "7. Design a Space Base"
         url: "/merit-badges/space-exploration/guide/req7/"
         is_sub: false
-  - group_title: "Careers in Space"
+  - group_title: "8. Careers in Space"
     items:
-      - title: "Req 8 — Your Future in Space"
+      - title: "8. Your Future in Space"
         url: "/merit-badges/space-exploration/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

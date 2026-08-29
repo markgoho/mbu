@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — 4x4 Square Climbing Tower"
+title: "4x4 Square Climbing Tower"
 layout: guide
-group_title: "Full-Size Projects"
+group_title: "9. Full-Size Projects"
 req_number: "9"
 req_path: "9.option5"
 prev: "/merit-badges/pioneering/guide/req9-option4/"
-prev_title: "Req 9 — Single Lock Bridge"
+prev_title: "Single Lock Bridge"
 next: "/merit-badges/pioneering/guide/req9-option6/"
-next_title: "Req 9 — Four Flag Gateway Tower"
+next_title: "Four Flag Gateway Tower"
 ---
 
 {{< drg/requirement number="9" option="4x4 Square Climbing Tower" >}}

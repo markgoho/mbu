@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Paper Through History"
+title: "Paper Through History"
 layout: "guide"
-group_title: "Paper Through Time"
+group_title: "1. Paper Through Time"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/pulp-and-paper/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/pulp-and-paper/guide/req2/"
-next_title: "Req 2 — Forests, Fiber, and Stewardship"
+next_title: "Forests, Fiber, and Stewardship"
 ---
 
 {{< drg/requirement number="1" >}}

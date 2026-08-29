@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Fitness Benefits"
+title: "Fitness Benefits"
 layout: guide
-group_title: "Swimming & Fitness"
+group_title: "9. Swimming & Fitness"
 req_number: "9"
 prev: "/merit-badges/swimming/guide/req8/"
-prev_title: "Req 8 — Standing & Shallow Dives"
+prev_title: "Standing & Shallow Dives"
 next: "/merit-badges/swimming/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

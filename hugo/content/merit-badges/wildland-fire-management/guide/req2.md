@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — The Harms of Wildfire"
+title: "The Harms of Wildfire"
 layout: "guide"
-group_title: "Counting the Cost"
+group_title: "2. Counting the Cost"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/wildland-fire-management/guide/req1/"
-prev_title: "Req 1 — The History of Wildland Fire"
+prev_title: "The History of Wildland Fire"
 next: "/merit-badges/wildland-fire-management/guide/req3/"
-next_title: "Req 3 — Prescribed Fire"
+next_title: "Prescribed Fire"
 ---
 
 {{< drg/requirement number="2" >}}

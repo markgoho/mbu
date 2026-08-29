@@ -4,68 +4,68 @@ layout: "guide"
 badge_name: "Music"
 group_title: "Getting Started"
 next: "/merit-badges/music/guide/req1/"
-next_title: "Req 1 — Perform with Expression"
+next_title: "Perform with Expression"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/music/guide/"
         is_sub: false
-  - group_title: "Performing and Reading Music"
+  - group_title: "1. Performing and Reading Music"
     items:
-      - title: "Req 1 — Perform with Expression"
+      - title: "1. Perform with Expression"
         url: "/merit-badges/music/guide/req1/"
         is_sub: false
-  - group_title: "How Instruments Make Sound"
+  - group_title: "2. How Instruments Make Sound"
     items:
-      - title: "Req 2 — Instrument Families and Sound"
+      - title: "2. Instrument Families and Sound"
         url: "/merit-badges/music/guide/req2/"
         is_sub: false
-  - group_title: "Choose Two Music Experiences"
+  - group_title: "3. Choose Two Music Experiences"
     items:
-      - title: "Req 3 — Choose Your Music Experiences"
+      - title: "3. Choose Your Music Experiences"
         url: "/merit-badges/music/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Listen and Describe"
+      - title: "a Listen and Describe"
         url: "/merit-badges/music/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Family Music Interview"
+      - title: "b Family Music Interview"
         url: "/merit-badges/music/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Ensemble or Solo Service"
+      - title: "c Ensemble or Solo Service"
         url: "/merit-badges/music/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Influential Americans in Music"
+      - title: "d Influential Americans in Music"
         url: "/merit-badges/music/guide/req3d/"
         is_sub: true
-  - group_title: "Choose One Music Project"
+  - group_title: "4. Choose One Music Project"
     items:
-      - title: "Req 4 — Choose a Music Project"
+      - title: "4. Choose a Music Project"
         url: "/merit-badges/music/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Teach and Lead Songs"
+      - title: "a Teach and Lead Songs"
         url: "/merit-badges/music/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Compose a 12-Measure Piece"
+      - title: "b Compose a 12-Measure Piece"
         url: "/merit-badges/music/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Make and Play a Traditional Instrument"
+      - title: "c Make and Play a Traditional Instrument"
         url: "/merit-badges/music/guide/req4c/"
         is_sub: true
-  - group_title: "Music and Ownership"
+  - group_title: "5. Music and Ownership"
     items:
-      - title: "Req 5 — Intellectual Property and Sharing Music"
+      - title: "5. Intellectual Property and Sharing Music"
         url: "/merit-badges/music/guide/req5/"
         is_sub: false
-  - group_title: "Careers and Hobbies"
+  - group_title: "6. Careers and Hobbies"
     items:
-      - title: "Req 6 — Choose Your Next Step"
+      - title: "6. Choose Your Next Step"
         url: "/merit-badges/music/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Research a Music Career"
+      - title: "a Research a Music Career"
         url: "/merit-badges/music/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Turn Music into a Hobby"
+      - title: "b Turn Music into a Hobby"
         url: "/merit-badges/music/guide/req6b/"
         is_sub: true
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Essential Fishing Knots"
+title: "Essential Fishing Knots"
 layout: guide
-group_title: "Gear & Tackle"
+group_title: "2. Gear & Tackle"
 req_number: "4"
 prev: "/merit-badges/fishing/guide/req3/"
-prev_title: "Req 3 — Using Fishing Equipment"
+prev_title: "Using Fishing Equipment"
 next: "/merit-badges/fishing/guide/req5/"
-next_title: "Req 5 — Lures, Baits, and Baitfish"
+next_title: "Lures, Baits, and Baitfish"
 ---
 
 {{< drg/requirement number="4" >}}

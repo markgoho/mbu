@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Pre-Climb Safety Check"
+title: "Pre-Climb Safety Check"
 layout: guide
-group_title: "The CHECK System"
+group_title: "9. The CHECK System"
 req_number: "9"
 prev: "/merit-badges/climbing/guide/req8/"
-prev_title: "Req 8 — Personal Protective Equipment"
+prev_title: "Personal Protective Equipment"
 next: "/merit-badges/climbing/guide/req10/"
-next_title: "Req 10 — Belaying Skills"
+next_title: "Belaying Skills"
 ---
 
 {{< drg/requirement number="9" >}}

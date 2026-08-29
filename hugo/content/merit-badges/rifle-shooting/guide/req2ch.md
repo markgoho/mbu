@@ -1,13 +1,13 @@
 ---
-title: "Req 2ch — Misfires, Hangfires, and Squib Fires"
+title: "Misfires, Hangfires, and Squib Fires"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2ch"
 req_path: "2.c.h"
 prev: "/merit-badges/rifle-shooting/guide/req2cg/"
-prev_title: "Req 2cg — Loading Procedures and Accessories"
+prev_title: "Loading Procedures and Accessories"
 next: "/merit-badges/rifle-shooting/guide/req2ci/"
-next_title: "Req 2ci — Range Procedures and Commands"
+next_title: "Range Procedures and Commands"
 ---
 
 {{< drg/requirement number="2ch" >}}

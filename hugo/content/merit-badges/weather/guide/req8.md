@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — People, Climate, and Change"
+title: "People, Climate, and Change"
 layout: "guide"
-group_title: "How Weather Works"
+group_title: "4. How Weather Works"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/weather/guide/req7/"
-prev_title: "Req 7 — The Water Cycle in Motion"
+prev_title: "The Water Cycle in Motion"
 next: "/merit-badges/weather/guide/req9/"
-next_title: "Req 9 — Earth's Tilt and Regional Climate"
+next_title: "Earth"
 ---
 
 {{< drg/requirement number="8" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Reproduction and Life Cycles"
+title: "Reproduction and Life Cycles"
 layout: "guide"
-group_title: "Life Cycles & Movement"
+group_title: "5. Life Cycles & Movement"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req4/"
-prev_title: "Req 4 — Why They Matter"
+prev_title: "Why They Matter"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req6/"
-next_title: "Req 6 — How Snakes Move"
+next_title: "How Snakes Move"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6e — Visiting a Plant Conservation Organization"
+title: "Visiting a Plant Conservation Organization"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6e"
 req_path: "8.c.6.e"
 prev: "/merit-badges/plant-science/guide/req8c6d/"
-prev_title: "Req 8c6d — Visiting an Herbarium"
+prev_title: "Herbarium Visit"
 next: "/merit-badges/plant-science/guide/req9/"
-next_title: "Req 9 — Outdoor Ethics in Plant Science"
+next_title: "Leave No Trace & Plant Science"
 ---
 
 {{< drg/requirement number="8c6e" >}}

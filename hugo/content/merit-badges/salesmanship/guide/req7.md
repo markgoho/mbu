@@ -1,11 +1,11 @@
 ---
-title: "Req 7 — Explore Sales Careers"
+title: "Explore Sales Careers"
 layout: "guide"
-group_title: "Sales as a Career"
+group_title: "7. Sales as a Career"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/salesmanship/guide/req6b/"
-prev_title: "Req 6b — Interview a Store Owner"
+prev_title: "Interview a Store Owner"
 next: "/merit-badges/salesmanship/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

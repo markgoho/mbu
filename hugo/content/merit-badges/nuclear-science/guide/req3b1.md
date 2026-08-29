@@ -1,13 +1,13 @@
 ---
-title: "Req 3b1 — Visit a Lab or University"
+title: "Visit a Lab or University"
 layout: "guide"
-group_title: "Exploring Accelerator Research"
+group_title: "3. Exploring Accelerator Research"
 req_number: "3b1"
 req_path: "3.b.1"
 prev: "/merit-badges/nuclear-science/guide/req3b/"
-prev_title: "Req 3b — Choose an Accelerator Path"
+prev_title: "Choose an Accelerator Path"
 next: "/merit-badges/nuclear-science/guide/req3b2/"
-next_title: "Req 3b2 — Compare Major Accelerators"
+next_title: "Compare Major Accelerators"
 ---
 
 {{< drg/requirement number="3b1" >}}

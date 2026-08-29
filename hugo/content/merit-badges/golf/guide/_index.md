@@ -4,73 +4,73 @@ layout: guide
 badge_name: "Golf"
 group_title: "Getting Started"
 next: "/merit-badges/golf/guide/req1/"
-next_title: "Req 1 — Course Safety & First Aid"
+next_title: "Course Safety & First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/golf/guide/"
         is_sub: false
-  - group_title: "Safety on the Course"
+  - group_title: "1. Safety on the Course"
     items:
-      - title: "Req 1 — Course Safety & First Aid"
+      - title: "1. Course Safety & First Aid"
         url: "/merit-badges/golf/guide/req1/"
         is_sub: false
-  - group_title: "Choose Your Game"
+  - group_title: "2. Choose Your Game"
     items:
-      - title: "Req 2 — Traditional Golf or Disc Golf?"
+      - title: "2. Traditional Golf or Disc Golf?"
         url: "/merit-badges/golf/guide/req2/"
         is_sub: false
-  - group_title: "Traditional Golf Path"
+  - group_title: "2. Traditional Golf Path"
     items:
-      - title: "Req 2a — Traditional Golf Roadmap"
+      - title: "a Traditional Golf Roadmap"
         url: "/merit-badges/golf/guide/req2a/"
         is_sub: false
-      - title: "Req 2a1 — Rules, Terms & Amateur Status"
+      - title: "a Rules, Terms & Amateur Status"
         url: "/merit-badges/golf/guide/req2a1/"
         is_sub: true
-      - title: "Req 2a2 — Understanding the Handicap System"
+      - title: "a Understanding the Handicap System"
         url: "/merit-badges/golf/guide/req2a2/"
         is_sub: true
-      - title: "Req 2a3 — Golf History & Great Players"
+      - title: "a Golf History & Great Players"
         url: "/merit-badges/golf/guide/req2a3/"
         is_sub: true
-      - title: "Req 2a4 — Fitness for Golf"
+      - title: "a Fitness for Golf"
         url: "/merit-badges/golf/guide/req2a4/"
         is_sub: true
-      - title: "Req 2a5 — Traditional Golf Skills"
+      - title: "a Traditional Golf Skills"
         url: "/merit-badges/golf/guide/req2a5/"
         is_sub: true
-      - title: "Req 2a6 — Playing a Real Round"
+      - title: "a Playing a Real Round"
         url: "/merit-badges/golf/guide/req2a6/"
         is_sub: true
-      - title: "Req 2a7 — Careers in Traditional Golf"
+      - title: "a Careers in Traditional Golf"
         url: "/merit-badges/golf/guide/req2a7/"
         is_sub: true
-  - group_title: "Disc Golf Path"
+  - group_title: "2. Disc Golf Path"
     items:
-      - title: "Req 2b — Disc Golf Roadmap"
+      - title: "b Disc Golf Roadmap"
         url: "/merit-badges/golf/guide/req2b/"
         is_sub: false
-      - title: "Req 2b1 — Rules, Courtesy & Scoring"
+      - title: "b Rules, Courtesy & Scoring"
         url: "/merit-badges/golf/guide/req2b1/"
         is_sub: true
-      - title: "Req 2b2 — Disc Golf History & Inclusion"
+      - title: "b Disc Golf History & Inclusion"
         url: "/merit-badges/golf/guide/req2b2/"
         is_sub: true
-      - title: "Req 2b3 — Disc Design & Disc Golf Leaders"
+      - title: "b Disc Design & Disc Golf Leaders"
         url: "/merit-badges/golf/guide/req2b3/"
         is_sub: true
-      - title: "Req 2b4 — Fitness for Disc Golf"
+      - title: "b Fitness for Disc Golf"
         url: "/merit-badges/golf/guide/req2b4/"
         is_sub: true
-      - title: "Req 2b5 — Disc Golf Skills"
+      - title: "b Disc Golf Skills"
         url: "/merit-badges/golf/guide/req2b5/"
         is_sub: true
-      - title: "Req 2b6 — Playing a Full Disc Golf Round"
+      - title: "b Playing a Full Disc Golf Round"
         url: "/merit-badges/golf/guide/req2b6/"
         is_sub: true
-      - title: "Req 2b7 — Careers in Disc Golf"
+      - title: "b Careers in Disc Golf"
         url: "/merit-badges/golf/guide/req2b7/"
         is_sub: true
   - group_title: "Beyond the Badge"

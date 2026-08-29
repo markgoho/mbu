@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Photosynthesis and Why Plants Matter"
+title: "Photosynthesis and Why Plants Matter"
 layout: "guide"
-group_title: "Photosynthesis & Human Dependence"
+group_title: "2. Photosynthesis & Human Dependence"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/plant-science/guide/req1/"
-prev_title: "Req 1 — Flower Parts and Jobs"
+prev_title: "Flower Parts and Jobs"
 next: "/merit-badges/plant-science/guide/req3/"
-next_title: "Req 3 — Pollinators at Work"
+next_title: "Pollinators at Work"
 ---
 
 {{< drg/requirement number="2" >}}

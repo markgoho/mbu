@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Survival Shelters"
+title: "Survival Shelters"
 layout: guide
-group_title: "Shelter & Exposure"
+group_title: "5. Shelter & Exposure"
 req_number: "5d"
 prev: "/merit-badges/wilderness-survival/guide/req5c/"
-prev_title: "Req 5c — Wildlife Protection"
+prev_title: "Animal Safety"
 next: "/merit-badges/wilderness-survival/guide/req5e/"
-next_title: "Req 5e — Building & Testing a Shelter"
+next_title: "Improvised Natural Shelter"
 ---
 
 {{< drg/requirement number="5d" >}}

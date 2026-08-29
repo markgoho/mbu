@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Fainting, Seizures & Drowning"
+title: "Fainting, Seizures & Drowning"
 layout: "guide"
-group_title: "Loss of Consciousness"
+group_title: "6. Loss of Consciousness"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/first-aid/guide/req5/"
-prev_title: "Req 5 — Choking, Asthma & Altitude"
+prev_title: "Choking, Asthma & Altitude"
 next: "/merit-badges/first-aid/guide/req7/"
-next_title: "Req 7 — CPR and AED"
+next_title: "CPR and AED"
 ---
 
 {{< drg/requirement number="6" >}}

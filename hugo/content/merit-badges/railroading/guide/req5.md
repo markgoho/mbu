@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Reading Railroad Signs"
+title: "Reading Railroad Signs"
 layout: "guide"
-group_title: "Crossing Signs & Signals"
+group_title: "5. Crossing Signs & Signals"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/railroading/guide/req4/"
-prev_title: "Req 4 — Track Safety and Safe Behavior"
+prev_title: "Track Safety and Safe Behavior"
 next: "/merit-badges/railroading/guide/req6/"
-next_title: "Req 6 — Signals, Horns, and Rear-End Devices"
+next_title: "Signals, Horns, and Rear-End Devices"
 ---
 
 {{< drg/requirement number="5" >}}

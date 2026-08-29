@@ -1,13 +1,13 @@
 ---
-title: "Req 2d9 — Stance"
+title: "Stance"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d9"
 req_path: "2.d.9"
 prev: "/merit-badges/skating/guide/req2d8/"
-prev_title: "Req 2d8 — Skateboard Maintenance"
+prev_title: "Skateboard Maintenance"
 next: "/merit-badges/skating/guide/req2d-10/"
-next_title: "Req 2d10 — Push, Cruise & Carve"
+next_title: "Push, Cruise & Carve"
 ---
 
 {{< drg/requirement number="2d9" >}}

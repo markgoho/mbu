@@ -1,13 +1,13 @@
 ---
-title: "Req 8b3 — Choose a Hands-On Skill"
+title: "Choose a Hands-On Skill"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b3"
 req_path: "8.b.3"
 prev: "/merit-badges/plant-science/guide/req8b2/"
-prev_title: "Req 8b2 — Speaking the Language of Horticulture"
+prev_title: "Horticulture Terms & Hardiness"
 next: "/merit-badges/plant-science/guide/req8b3a/"
-next_title: "Req 8b3a — Propagation Methods"
+next_title: "Propagation Methods"
 ---
 
 {{< drg/requirement number="8b3" >}}

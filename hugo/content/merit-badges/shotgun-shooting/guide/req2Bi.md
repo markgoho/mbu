@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-i — Range Procedures and Commands"
+title: "Range Procedures and Commands"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-i"
 req_path: "2.B.i"
 prev: "/merit-badges/shotgun-shooting/guide/req2Bh/"
-prev_title: "Req 2B-h — Misfires, Hangfires, and Squib Fires"
+prev_title: "Misfires, Hangfires, and Squib Fires"
 next: "/merit-badges/shotgun-shooting/guide/req2Bj/"
-next_title: "Req 2B-j — Cleaning Safety Rules and Materials"
+next_title: "Cleaning Safety Rules and Materials"
 ---
 
 {{< drg/requirement number="2B-i" >}}

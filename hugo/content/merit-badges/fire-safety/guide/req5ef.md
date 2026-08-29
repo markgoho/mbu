@@ -1,12 +1,12 @@
 ---
-title: "Req 5e–5f — Smoke & CO Alarms"
+title: "Smoke & CO Alarms"
 layout: guide
-group_title: "Home Fire Safety"
+group_title: "5. Home Fire Safety"
 req_number: "5e"
 prev: "/merit-badges/fire-safety/guide/req5d/"
-prev_title: "Req 5d — Home Fire Hazard Inspection"
+prev_title: "Home Fire Hazard Inspection"
 next: "/merit-badges/fire-safety/guide/req5g/"
-next_title: "Req 5g — Home Fire Escape Plan"
+next_title: "Home Fire Escape Plan"
 ---
 
  {{< drg/requirement number="5e" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Five Fields of Chemistry"
+title: "Five Fields of Chemistry"
 layout: guide
-group_title: "Fields of Chemistry"
+group_title: "6. Fields of Chemistry"
 req_number: "6"
 prev: "/merit-badges/chemistry/guide/req5/"
-prev_title: "Req 5 — Reducing Environmental Impact"
+prev_title: "Reducing Environmental Impact"
 next: "/merit-badges/chemistry/guide/req7/"
-next_title: "Req 7 — Government Agencies"
+next_title: "Government Agencies"
 ---
 
 {{< drg/requirement number="6" >}}

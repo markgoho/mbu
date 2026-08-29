@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Pottery Vocabulary"
+title: "Pottery Vocabulary"
 layout: "guide"
-group_title: "Pottery Vocabulary"
+group_title: "4. Pottery Vocabulary"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/pottery/guide/req3/"
-prev_title: "Req 3 — Drawing Pottery Forms"
+prev_title: "Drawing Pottery Forms"
 next: "/merit-badges/pottery/guide/req5/"
-next_title: "Req 5 — Build, Throw, and Fire"
+next_title: "Build, Throw, and Fire"
 ---
 
 {{< drg/requirement number="4" >}}

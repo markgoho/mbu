@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Visit Two Conservation Sites"
+title: "Visit Two Conservation Sites"
 layout: "guide"
-group_title: "Field Visits & Reports"
+group_title: "7. Field Visits & Reports"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7/"
-prev_title: "Req 7 — Choose Two Conservation Projects"
+prev_title: "Choose Two Conservation Projects"
 next: "/merit-badges/soil-and-water-conservation/guide/req7a1/"
-next_title: "Req 7a1 — Agricultural Experiment"
+next_title: "Agricultural Experiment"
 ---
 
 {{< drg/requirement number="7a" >}}

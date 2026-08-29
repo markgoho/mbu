@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Pollinators at Work"
+title: "Pollinators at Work"
 layout: "guide"
-group_title: "Pollination"
+group_title: "3. Pollination"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/plant-science/guide/req2/"
-prev_title: "Req 2 — Photosynthesis and Why Plants Matter"
+prev_title: "Photosynthesis and Why Plants Matter"
 next: "/merit-badges/plant-science/guide/req4/"
-next_title: "Req 4 — What Plants Need to Thrive"
+next_title: "What Plants Need to Thrive"
 ---
 
 {{< drg/requirement number="3" >}}

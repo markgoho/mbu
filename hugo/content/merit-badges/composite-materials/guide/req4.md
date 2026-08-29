@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Explore the Industry"
+title: "Explore the Industry"
 layout: guide
-group_title: "Real-World Composites"
+group_title: "4. Real-World Composites"
 req_number: "4"
 prev: "/merit-badges/composite-materials/guide/req3c/"
-prev_title: "Req 3c — New Resin Applications"
+prev_title: "New Resin Applications"
 next: "/merit-badges/composite-materials/guide/req5a/"
-next_title: "Req 5a — Hands-On Projects"
+next_title: "Hands-On Projects"
 ---
 
 {{< drg/requirement number="4" >}}

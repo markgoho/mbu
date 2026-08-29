@@ -4,49 +4,49 @@ layout: guide
 badge_name: "Disabilities Awareness"
 group_title: "Getting Started"
 next: "/merit-badges/disabilities-awareness/guide/req1a/"
-next_title: "Req 1a — Key Terminology"
+next_title: "Key Terminology"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/disabilities-awareness/guide/"
-  - group_title: "Understanding Disabilities"
+  - group_title: "1. Understanding Disabilities"
     items:
-      - title: "Req 1a — Key Terminology"
+      - title: "a Key Terminology"
         url: "/merit-badges/disabilities-awareness/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Disability Etiquette"
+      - title: "b Disability Etiquette"
         url: "/merit-badges/disabilities-awareness/guide/req1b/"
         is_sub: true
-  - group_title: "Community Connections"
+  - group_title: "2. Community Connections"
     items:
-      - title: "Req 2 — Visiting an Agency"
+      - title: "2. Visiting an Agency"
         url: "/merit-badges/disabilities-awareness/guide/req2/"
-  - group_title: "Learning from Others"
+  - group_title: "3. Learning from Others"
     items:
-      - title: "Req 3 — Personal Experiences"
+      - title: "3. Personal Experiences"
         url: "/merit-badges/disabilities-awareness/guide/req3/"
-  - group_title: "Accessibility Audits"
+  - group_title: "4. Accessibility Audits"
     items:
-      - title: "Req 4 — Accessibility Observations"
+      - title: "4. Accessibility Observations"
         url: "/merit-badges/disabilities-awareness/guide/req4/"
-      - title: "Req 4 Option A — Visible Accessibility"
+      - title: "4. Req 4 Option A — Visible Accessibility"
         url: "/merit-badges/disabilities-awareness/guide/req4-option-a/"
         is_sub: true
-      - title: "Req 4 Option B — Invisible Disability Accommodations"
+      - title: "4. Req 4 Option B — Invisible Disability Accommodations"
         url: "/merit-badges/disabilities-awareness/guide/req4-option-b/"
         is_sub: true
-  - group_title: "Advocacy & Action"
+  - group_title: "5. Advocacy & Action"
     items:
-      - title: "Req 5 — Advocacy"
+      - title: "5. Advocacy"
         url: "/merit-badges/disabilities-awareness/guide/req5/"
-  - group_title: "Reflection & Growth"
+  - group_title: "6. Reflection & Growth"
     items:
-      - title: "Req 6 — Personal Commitment"
+      - title: "6. Personal Commitment"
         url: "/merit-badges/disabilities-awareness/guide/req6/"
-  - group_title: "Careers in Disability Services"
+  - group_title: "7. Careers in Disability Services"
     items:
-      - title: "Req 7 — Professions"
+      - title: "7. Professions"
         url: "/merit-badges/disabilities-awareness/guide/req7/"
   - group_title: "Beyond the Badge"
     items:

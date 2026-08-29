@@ -1,11 +1,11 @@
 ---
-title: "Req 6b — Build a Programming Hobby"
+title: "Build a Programming Hobby"
 layout: "guide"
-group_title: "Paths After the Badge"
+group_title: "6. Paths After the Badge"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/programming/guide/req6a/"
-prev_title: "Req 6a — Research a Programming Career"
+prev_title: "Research a Programming Career"
 next: "/merit-badges/programming/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

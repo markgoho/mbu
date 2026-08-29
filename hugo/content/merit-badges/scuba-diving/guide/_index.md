@@ -4,41 +4,41 @@ layout: "guide"
 badge_name: "Scuba Diving"
 group_title: "Getting Started"
 next: "/merit-badges/scuba-diving/guide/req1/"
-next_title: "Req 1 — Dive Safety Starts Here"
+next_title: "Dive Safety Starts Here"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/scuba-diving/guide/"
         is_sub: false
-  - group_title: "Safety and Emergency Skills"
+  - group_title: "1. Safety and Emergency Skills"
     items:
-      - title: "Req 1 — Dive Safety Starts Here"
+      - title: "1. Dive Safety Starts Here"
         url: "/merit-badges/scuba-diving/guide/req1/"
         is_sub: false
-  - group_title: "Water Readiness"
+  - group_title: "2. Water Readiness"
     items:
-      - title: "Req 2 — Swimming Before Scuba"
+      - title: "2. Swimming Before Scuba"
         url: "/merit-badges/scuba-diving/guide/req2/"
         is_sub: false
-  - group_title: "Diver Responsibility"
+  - group_title: "3. Diver Responsibility"
     items:
-      - title: "Req 3 — The Scuba Diver's Code"
+      - title: "3. The Scuba Diver"
         url: "/merit-badges/scuba-diving/guide/req3/"
         is_sub: false
-  - group_title: "Certification Journey"
+  - group_title: "4. Certification Journey"
     items:
-      - title: "Req 4 — Earning Open Water Certification"
+      - title: "4. Earning Open Water Certification"
         url: "/merit-badges/scuba-diving/guide/req4/"
         is_sub: false
-  - group_title: "Underwater Environments"
+  - group_title: "5. Underwater Environments"
     items:
-      - title: "Req 5 — Aquatic Ecosystems"
+      - title: "5. Aquatic Ecosystems"
         url: "/merit-badges/scuba-diving/guide/req5/"
         is_sub: false
-  - group_title: "Scuba Careers"
+  - group_title: "6. Scuba Careers"
     items:
-      - title: "Req 6 — Careers Below the Surface"
+      - title: "6. Careers Below the Surface"
         url: "/merit-badges/scuba-diving/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

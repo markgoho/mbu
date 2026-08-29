@@ -1,12 +1,12 @@
 ---
-title: "Req 5h — Football or Soccer Kick"
+title: "Football or Soccer Kick"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5h"
 prev: "/merit-badges/athletics/guide/req5-basketball-shooting/"
-prev_title: "Req 5g — Basketball Shooting"
+prev_title: "Basketball Shooting"
 next: "/merit-badges/athletics/guide/req5-weight-training/"
-next_title: "Req 5i — Weight Training"
+next_title: "Weight Training"
 ---
 
 {{< drg/requirement number="5" option="Option H—Football Kick OR Soccer Kick" >}}

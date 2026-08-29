@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Writing a One-Act Play"
+title: "Writing a One-Act Play"
 layout: guide
-group_title: "The Playwright's Craft"
+group_title: "2. The Playwright's Craft"
 req_number: "2"
 prev: "/merit-badges/theater/guide/req1/"
-prev_title: "Req 1 — Watching & Reviewing Plays"
+prev_title: "Watching & Reviewing Plays"
 next: "/merit-badges/theater/guide/req3/"
-next_title: "Req 3 — Theater Safety"
+next_title: "Theater Safety"
 ---
 
 {{< drg/requirement number="2" >}}

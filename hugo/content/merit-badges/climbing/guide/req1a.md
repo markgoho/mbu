@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Climbing Hazards"
+title: "Climbing Hazards"
 layout: guide
-group_title: "Safety & First Aid"
+group_title: "1. Safety & First Aid"
 req_number: "1a"
 prev: "/merit-badges/climbing/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/climbing/guide/req1b/"
-next_title: "Req 1b — Injury Prevention & First Aid"
+next_title: "Injury Prevention & First Aid"
 ---
 
 {{< drg/requirement number="1a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Responsibility, SMART Style & Avalanche"
+title: "Responsibility, SMART Style & Avalanche"
 layout: "guide"
-group_title: "Mountain Safety Codes"
+group_title: "6. Mountain Safety Codes"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/snow-sports/guide/req5/"
-prev_title: "Req 5 — Clothing & Equipment"
+prev_title: "Clothing & Equipment"
 next: "/merit-badges/snow-sports/guide/req7/"
-next_title: "Req 7 — Pick Your Snow Sport"
+next_title: "Pick Your Snow Sport"
 ---
 
 {{< drg/requirement number="6" >}}

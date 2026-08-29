@@ -1,13 +1,13 @@
 ---
-title: "Req 2be — Range Procedures and Commands"
+title: "Range Procedures and Commands"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2be"
 req_path: "2.b.e"
 prev: "/merit-badges/rifle-shooting/guide/req2bd/"
-prev_title: "Req 2bd — The Five Fundamentals of Shooting"
+prev_title: "The Five Fundamentals of Shooting"
 next: "/merit-badges/rifle-shooting/guide/req2bf/"
-next_title: "Req 2bf — Cleaning Safety Rules and Materials"
+next_title: "Cleaning Safety Rules and Materials"
 ---
 
 {{< drg/requirement number="2be" >}}

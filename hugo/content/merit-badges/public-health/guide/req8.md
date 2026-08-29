@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Explore a Public Health Career"
+title: "Explore a Public Health Career"
 layout: "guide"
-group_title: "Careers in Public Health"
+group_title: "8. Careers in Public Health"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/public-health/guide/req7b/"
-prev_title: "Req 7b — How Agencies Protect Communities"
+prev_title: "How Agencies Protect Communities"
 next: "/merit-badges/public-health/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

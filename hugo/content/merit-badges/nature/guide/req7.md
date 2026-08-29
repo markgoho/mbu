@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose a Future Path"
+title: "Choose a Future Path"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/nature/guide/req6/"
-prev_title: "Req 6 — Reading Ecological Succession"
+prev_title: "Reading Ecological Succession"
 next: "/merit-badges/nature/guide/req7a/"
-next_title: "Req 7a — Nature Careers"
+next_title: "Nature Careers"
 ---
 
 {{< drg/requirement number="7" >}}

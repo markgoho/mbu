@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Crypto Hands-On"
+title: "Crypto Hands-On"
 layout: guide
-group_title: "Cryptography"
+group_title: "6. Cryptography"
 req_number: "6c"
 prev: "/merit-badges/cybersecurity/guide/req6b/"
-prev_title: "Req 6b — Encrypted Connections"
+prev_title: "Encrypted Connections"
 next: "/merit-badges/cybersecurity/guide/req7/"
-next_title: "Req 7 — IoT Devices"
+next_title: "IoT Devices"
 ---
 
 {{< drg/requirement number="6c" >}}

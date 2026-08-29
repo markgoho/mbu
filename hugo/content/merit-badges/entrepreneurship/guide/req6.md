@@ -1,10 +1,10 @@
 ---
-title: "Req 6 — Running the Business"
+title: "Running the Business"
 layout: guide
-group_title: "Launch & Reflect"
+group_title: "6. Launch & Reflect"
 req_number: "6"
 prev: "/merit-badges/entrepreneurship/guide/req5e/"
-prev_title: "Req 5e — Promotion & Marketing"
+prev_title: "Promotion & Marketing"
 next: "/merit-badges/entrepreneurship/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

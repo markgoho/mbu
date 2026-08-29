@@ -1,13 +1,13 @@
 ---
-title: "Req 8a1 — Preparing a Seedbed"
+title: "Preparing a Seedbed"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a1"
 req_path: "8.a.1"
 prev: "/merit-badges/plant-science/guide/req8a/"
-prev_title: "Req 8a — Agronomy Roadmap"
+prev_title: "Agronomy Overview"
 next: "/merit-badges/plant-science/guide/req8a2/"
-next_title: "Req 8a2 — Seed Germination Testing"
+next_title: "Seed Germination Tester"
 ---
 
 {{< drg/requirement number="8a1" >}}

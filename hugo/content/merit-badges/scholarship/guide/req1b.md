@@ -1,13 +1,13 @@
 ---
-title: "Req 1b — Showing Improvement"
+title: "Showing Improvement"
 layout: "guide"
-group_title: "Academic Momentum"
+group_title: "1. Academic Momentum"
 req_number: "1b"
 req_path: "1.b"
 prev: "/merit-badges/scholarship/guide/req1a/"
-prev_title: "Req 1a — Keeping a B Average"
+prev_title: "Keeping a B Average"
 next: "/merit-badges/scholarship/guide/req2/"
-next_title: "Req 2 — Choose Two Learning Tools"
+next_title: "Choose Two Learning Tools"
 ---
 
 {{< drg/requirement number="1b" >}}

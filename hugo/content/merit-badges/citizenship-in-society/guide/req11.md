@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — Your DEI Action Plan"
+title: "Your DEI Action Plan"
 layout: guide
-group_title: "Your Impact Plan"
+group_title: "11. Your Impact Plan"
 req_number: "11"
 prev: "/merit-badges/citizenship-in-society/guide/req10/"
-prev_title: "Req 10 — Stereotypes & Individuality"
+prev_title: "Stereotypes & Individuality"
 next: "/merit-badges/citizenship-in-society/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

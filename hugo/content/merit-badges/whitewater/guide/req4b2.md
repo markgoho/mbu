@@ -1,13 +1,13 @@
 ---
-title: "Req 4b2 — Bracing a Solo Canoe"
+title: "Bracing a Solo Canoe"
 layout: "guide"
-group_title: "Calm-Water Skill Building"
+group_title: "4. Calm-Water Skill Building"
 req_number: "4b2"
 req_path: "4.b.2"
 prev: "/merit-badges/whitewater/guide/req4b1/"
-prev_title: "Req 4b1 — Solo Canoe Precision Strokes"
+prev_title: "Solo Canoe Precision Strokes"
 next: "/merit-badges/whitewater/guide/req4c/"
-next_title: "Req 4c — Solo Kayak Control"
+next_title: "Solo Kayak Control"
 ---
 
 {{< drg/requirement number="4b2" >}}

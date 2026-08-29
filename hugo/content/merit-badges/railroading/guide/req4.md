@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Track Safety and Safe Behavior"
+title: "Track Safety and Safe Behavior"
 layout: "guide"
-group_title: "Rail Safety Basics"
+group_title: "4. Rail Safety Basics"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/railroading/guide/req3d/"
-prev_title: "Req 3d — Interview a Rail Professional"
+prev_title: "Interview a Rail Professional"
 next: "/merit-badges/railroading/guide/req5/"
-next_title: "Req 5 — Reading Railroad Signs"
+next_title: "Reading Railroad Signs"
 ---
 
 {{< drg/requirement number="4" >}}

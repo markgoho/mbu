@@ -1,13 +1,13 @@
 ---
-title: "Req 2b4 — Scout Life Magazine"
+title: "Scout Life Magazine"
 layout: "guide"
-group_title: "Scouting Milestones"
+group_title: "2. Scouting Milestones"
 req_number: "2b4"
 req_path: "2.b.4"
 prev: "/merit-badges/scouting-heritage/guide/req2b3/"
-prev_title: "Req 2b3 — Scouts BSA Handbook"
+prev_title: "Scouts BSA Handbook"
 next: "/merit-badges/scouting-heritage/guide/req3/"
-next_title: "Req 3 — How Scouting Grew for Every Age"
+next_title: "How Scouting Grew for Every Age"
 ---
 
 {{< drg/requirement number="2b4" >}}

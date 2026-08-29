@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Breeding Improvements"
+title: "Breeding Improvements"
 layout: guide
-group_title: "Genetics & Breeding"
+group_title: "5. Genetics & Breeding"
 req_number: "5a"
 prev: "/merit-badges/animal-science/guide/req4/"
-prev_title: "Req 4 — Animal Management"
+prev_title: "Animal Management"
 next: "/merit-badges/animal-science/guide/req5b/"
-next_title: "Req 5b — Pure & Cross Breeding"
+next_title: "Pure & Cross Breeding"
 ---
 
 {{< drg/requirement number="5a" >}}

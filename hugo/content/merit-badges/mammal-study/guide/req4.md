@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose Your Investigation"
+title: "Choose Your Investigation"
 layout: "guide"
-group_title: "Mammal Investigation Options"
+group_title: "4. Mammal Investigation Options"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/mammal-study/guide/req3c/"
-prev_title: "Req 3c — Nongame Mammal Life History"
+prev_title: "Nongame Mammal Life History"
 next: "/merit-badges/mammal-study/guide/req4a/"
-next_title: "Req 4a — Museum Study Skins"
+next_title: "Museum Study Skins"
 ---
 
 {{< drg/requirement number="4" >}}

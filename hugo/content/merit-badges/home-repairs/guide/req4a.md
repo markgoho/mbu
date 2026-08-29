@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Breakers and Fuses"
+title: "Breakers and Fuses"
 layout: guide
-group_title: "Electrical Basics"
+group_title: "4. Electrical Basics"
 req_number: "4a"
 prev: "/merit-badges/home-repairs/guide/req4/"
-prev_title: "Req 4 — Safe Electrical Repairs"
+prev_title: "Safe Electrical Repairs"
 next: "/merit-badges/home-repairs/guide/req4b/"
-next_title: "Req 4b — Cords, Plugs, and Sockets"
+next_title: "Cords, Plugs, and Sockets"
 ---
 
 {{< drg/requirement number="4a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Waves, Breakers & Rip Currents"
+title: "Waves, Breakers & Rip Currents"
 layout: "guide"
-group_title: "Ocean Motion"
+group_title: "3. Ocean Motion"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/oceanography/guide/req2/"
-prev_title: "Req 2 — Seawater, Currents & Climate"
+prev_title: "Seawater, Currents & Climate"
 next: "/merit-badges/oceanography/guide/req4/"
-next_title: "Req 4 — The Shape of the Seafloor"
+next_title: "The Shape of the Seafloor"
 ---
 
 {{< drg/requirement number="3" >}}

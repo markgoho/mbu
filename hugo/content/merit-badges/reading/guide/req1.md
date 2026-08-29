@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Library Skills in Action"
+title: "Library Skills in Action"
 layout: "guide"
-group_title: "Using the Library"
+group_title: "1. Using the Library"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/reading/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/reading/guide/req2/"
-next_title: "Req 2 — Choose Books You'll Actually Finish"
+next_title: "Choose Books You"
 ---
 
 {{< drg/requirement number="1" >}}

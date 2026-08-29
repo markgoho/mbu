@@ -1,10 +1,10 @@
 ---
-title: "Req 10 — Teaching Orienteering"
+title: "Teaching Orienteering"
 layout: guide
-group_title: "Officiating & Teaching"
+group_title: "9. Officiating & Teaching"
 req_number: "10"
 prev: "/merit-badges/orienteering/guide/req9/"
-prev_title: "Req 9 — Acting as an Official"
+prev_title: "Acting as an Official"
 next: "/merit-badges/orienteering/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

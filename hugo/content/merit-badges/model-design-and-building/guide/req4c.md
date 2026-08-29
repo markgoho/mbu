@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Mapping Water In and Waste Out"
+title: "Mapping Water In and Waste Out"
 layout: "guide"
-group_title: "Plumbing Process Model"
+group_title: "4. Plumbing Process Model"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/model-design-and-building/guide/req4b/"
-prev_title: "Req 4b — Showing How a Building Stands"
+prev_title: "Showing How a Building Stands"
 next: "/merit-badges/model-design-and-building/guide/req4d/"
-next_title: "Req 4d — Motion with Simple Machines"
+next_title: "Motion with Simple Machines"
 ---
 
 {{< drg/requirement number="4c" >}}

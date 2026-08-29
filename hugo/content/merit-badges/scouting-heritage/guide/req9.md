@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Careers or Volunteer Service"
+title: "Choose Careers or Volunteer Service"
 layout: "guide"
-group_title: "Careers in Scouting"
+group_title: "9. Careers in Scouting"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/scouting-heritage/guide/req8/"
-prev_title: "Req 8 — Interview Former Scouts"
+prev_title: "Interview Former Scouts"
 next: "/merit-badges/scouting-heritage/guide/req9a/"
-next_title: "Req 9a — Careers Related to Scouting"
+next_title: "Careers Related to Scouting"
 ---
 
 {{< drg/requirement number="9" >}}

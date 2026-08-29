@@ -1,11 +1,11 @@
 ---
-title: "Req 8b — Make Painting Part of Your Life"
+title: "Make Painting Part of Your Life"
 layout: "guide"
-group_title: "Futures in Painting"
+group_title: "8. Futures in Painting"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/painting/guide/req8a/"
-prev_title: "Req 8a — Research a Painting Career"
+prev_title: "Research a Painting Career"
 next: "/merit-badges/painting/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

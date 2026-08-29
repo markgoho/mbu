@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Heritage Through Media"
+title: "Heritage Through Media"
 layout: guide
-group_title: "Heritage Through Media"
+group_title: "5. Heritage Through Media"
 req_number: "5"
 prev: "/merit-badges/american-heritage/guide/req4/"
-prev_title: "Req 4 — Local History & Landmarks"
+prev_title: "Local History & Landmarks"
 next: "/merit-badges/american-heritage/guide/req6/"
-next_title: "Req 6 — Heritage Careers"
+next_title: "Heritage Careers"
 ---
 
 {{< drg/requirement number="5" >}}

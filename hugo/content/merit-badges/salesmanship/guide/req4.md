@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Give a Sales Presentation"
+title: "Give a Sales Presentation"
 layout: "guide"
-group_title: "Making the Pitch"
+group_title: "4. Making the Pitch"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/salesmanship/guide/req3/"
-prev_title: "Req 3 — Build a Sales Plan"
+prev_title: "Build a Sales Plan"
 next: "/merit-badges/salesmanship/guide/req5/"
-next_title: "Req 5 — Choose Your Sales Project"
+next_title: "Choose Your Sales Project"
 ---
 
 {{< drg/requirement number="4" >}}

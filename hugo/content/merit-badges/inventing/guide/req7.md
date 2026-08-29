@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Prototype, Test, Improve"
+title: "Prototype, Test, Improve"
 layout: guide
-group_title: "Build and Test"
+group_title: "7. Build and Test"
 req_number: "7"
 prev: "/merit-badges/inventing/guide/req6/"
-prev_title: "Req 6 — Plan Your Invention"
+prev_title: "Plan Your Invention"
 next: "/merit-badges/inventing/guide/req8/"
-next_title: "Req 8 — Choose an Inventing Experience"
+next_title: "Choose an Inventing Experience"
 ---
 
 {{< drg/requirement number="7" >}}

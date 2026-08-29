@@ -1,13 +1,13 @@
 ---
-title: "Req 2a2 — William D. Boyce"
+title: "William D. Boyce"
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a2"
 req_path: "2.a.2"
 prev: "/merit-badges/scouting-heritage/guide/req2a1/"
-prev_title: "Req 2a1 — Daniel Carter Beard"
+prev_title: "Daniel Carter Beard"
 next: "/merit-badges/scouting-heritage/guide/req2a3/"
-next_title: "Req 2a3 — Waite Phillips"
+next_title: "Waite Phillips"
 ---
 
 {{< drg/requirement number="2a2" >}}

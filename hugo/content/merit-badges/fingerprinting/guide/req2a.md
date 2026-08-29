@@ -1,12 +1,12 @@
 ---
-title: "Requirement 2a — AFIS and Biometric Systems"
+title: "AFIS and Biometric Systems"
 layout: guide
-group_title: "Modern Identification Systems"
+group_title: "2. Modern Identification Systems"
 req_number: "2a"
 prev: "/merit-badges/fingerprinting/guide/req1/"
-prev_title: "Requirement 1 — Understanding Fingerprint History"
+prev_title: "Understanding Fingerprint History"
 next: "/merit-badges/fingerprinting/guide/req2b/"
-next_title: "Requirement 2b — Authentication in Daily Life"
+next_title: "Authentication in Daily Life"
 ---
 
 {{< drg/requirement number="2a" >}}

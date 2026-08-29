@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Pick Two Stamp Projects"
+title: "Pick Two Stamp Projects"
 layout: "guide"
-group_title: "Creative Projects"
+group_title: "7. Creative Projects"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/stamp-collecting/guide/req6/"
-prev_title: "Req 6 — Mounting and Protecting a Collection"
+prev_title: "Mounting and Protecting a Collection"
 next: "/merit-badges/stamp-collecting/guide/req7a/"
-next_title: "Req 7a — Design Work"
+next_title: "Design Work"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Engine Oil"
+title: "Engine Oil"
 layout: guide
-group_title: "Engine & Oil"
+group_title: "5. Engine & Oil"
 req_number: "5b"
 prev: "/merit-badges/automotive-maintenance/guide/req5a/"
-prev_title: "Req 5a — How Engines Work"
+prev_title: "How Engines Work"
 next: "/merit-badges/automotive-maintenance/guide/req6/"
-next_title: "Req 6 — Coolant & Cooling"
+next_title: "Coolant & Cooling"
 ---
 
 {{< drg/requirement number="5b" >}}

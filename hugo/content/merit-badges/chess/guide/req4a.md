@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Algebraic Notation"
+title: "Algebraic Notation"
 layout: guide
-group_title: "Mastering the Game"
+group_title: "4. Mastering the Game"
 req_number: "4a"
 prev: "/merit-badges/chess/guide/req3d/"
-prev_title: "Req 3d — Five Ways to Draw"
+prev_title: "Five Ways to Draw"
 next: "/merit-badges/chess/guide/req4b/"
-next_title: "Req 4b — Opening, Middle & Endgame"
+next_title: "Opening, Middle & Endgame"
 ---
 
 {{< drg/requirement number="4a" >}}

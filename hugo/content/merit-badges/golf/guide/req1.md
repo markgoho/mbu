@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Course Safety & First Aid"
+title: "Course Safety & First Aid"
 layout: guide
-group_title: "Safety on the Course"
+group_title: "1. Safety on the Course"
 req_number: "1"
 prev: "/merit-badges/golf/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/golf/guide/req2/"
-next_title: "Req 2 — Traditional Golf or Disc Golf?"
+next_title: "Traditional Golf or Disc Golf?"
 ---
 
 {{< drg/requirement number="1" >}}

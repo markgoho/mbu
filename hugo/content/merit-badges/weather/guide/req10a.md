@@ -1,13 +1,13 @@
 ---
-title: "Req 10a — Build an Instrument and Keep a Log"
+title: "Build an Instrument and Keep a Log"
 layout: "guide"
-group_title: "Weather in Action"
+group_title: "10. Weather in Action"
 req_number: "10a"
 req_path: "10.a"
 prev: "/merit-badges/weather/guide/req10/"
-prev_title: "Req 10 — Choose Your Weather Project"
+prev_title: "Choose Your Weather Project"
 next: "/merit-badges/weather/guide/req10b/"
-next_title: "Req 10b — Visit a Weather Expert"
+next_title: "Visit a Weather Expert"
 ---
 
 {{< drg/requirement number="10a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — Radio Basics"
+title: "Radio Basics"
 layout: "guide"
-group_title: "Radio Fundamentals"
+group_title: "2. Radio Fundamentals"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/radio/guide/req2a/"
-prev_title: "Req 2a — The Electromagnetic Spectrum"
+prev_title: "The Electromagnetic Spectrum"
 next: "/merit-badges/radio/guide/req3/"
-next_title: "Req 3 — Wave Propagation"
+next_title: "Wave Propagation"
 guide_nav:
   - group_title: "Getting Started"
     items:

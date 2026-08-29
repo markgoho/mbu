@@ -4,48 +4,48 @@ layout: "guide"
 badge_name: "Pets"
 group_title: "Getting Started"
 next: "/merit-badges/pets/guide/req1/"
-next_title: "Req 1 — Four Months of Care"
+next_title: "Four Months of Care"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/pets/guide/"
         is_sub: false
-  - group_title: "Building Daily Pet Care Habits"
+  - group_title: "1. Building Daily Pet Care Habits"
     items:
-      - title: "Req 1 — Four Months of Care"
+      - title: "1. Four Months of Care"
         url: "/merit-badges/pets/guide/req1/"
         is_sub: false
-  - group_title: "Understanding Your Pet"
+  - group_title: "2. Understanding Your Pet"
     items:
-      - title: "Req 2 — Know Your Pet Well"
+      - title: "2. Know Your Pet Well"
         url: "/merit-badges/pets/guide/req2/"
         is_sub: false
-  - group_title: "Learning From Experts"
+  - group_title: "3. Learning From Experts"
     items:
-      - title: "Req 3 — Read and Report"
+      - title: "3. Read and Report"
         url: "/merit-badges/pets/guide/req3/"
         is_sub: false
-  - group_title: "Show Ring or Tricks"
+  - group_title: "4. Show Ring or Tricks"
     items:
-      - title: "Req 4 — Show Time or Trick Time"
+      - title: "4. Show Time or Trick Time"
         url: "/merit-badges/pets/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Step Into a Pet Show"
+      - title: "a Step Into a Pet Show"
         url: "/merit-badges/pets/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Teach Tricks and Skills"
+      - title: "b Teach Tricks and Skills"
         url: "/merit-badges/pets/guide/req4b/"
         is_sub: true
-  - group_title: "Future Paths"
+  - group_title: "5. Future Paths"
     items:
-      - title: "Req 5 — Future Paths With Pets"
+      - title: "5. Future Paths With Pets"
         url: "/merit-badges/pets/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Explore Pet Careers"
+      - title: "a Explore Pet Careers"
         url: "/merit-badges/pets/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Turn Pet Skills Into a Hobby"
+      - title: "b Turn Pet Skills Into a Hobby"
         url: "/merit-badges/pets/guide/req5b/"
         is_sub: true
   - group_title: "Beyond the Badge"

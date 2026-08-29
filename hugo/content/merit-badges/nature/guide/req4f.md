@@ -1,13 +1,13 @@
 ---
-title: "Req 4f — Shells, Mollusks, and Crustaceans"
+title: "Shells, Mollusks, and Crustaceans"
 layout: "guide"
-group_title: "Shell and Shore Study"
+group_title: "4. Shell and Shore Study"
 req_number: "4f"
 req_path: "4.f"
 prev: "/merit-badges/nature/guide/req4e/"
-prev_title: "Req 4e — Fish and Food Sources"
+prev_title: "Fish and Food Sources"
 next: "/merit-badges/nature/guide/req4g1/"
-next_title: "Req 4g1 — Wild Plant Identification"
+next_title: "Wild Plant Identification"
 ---
 
 {{< drg/requirement number="4f" >}}

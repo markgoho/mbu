@@ -1,12 +1,12 @@
 ---
-title: "Req 6e — Converting Energy"
+title: "Converting Energy"
 layout: guide
-group_title: "Hands-On Engineering"
+group_title: "6. Hands-On Engineering"
 req_number: "6e"
 prev: "/merit-badges/engineering/guide/req6d/"
-prev_title: "Req 6d — Using Materials"
+prev_title: "Using Materials"
 next: "/merit-badges/engineering/guide/req6f/"
-next_title: "Req 6f — Moving People"
+next_title: "Moving People"
 ---
 
 {{< drg/requirement number="6e" >}}

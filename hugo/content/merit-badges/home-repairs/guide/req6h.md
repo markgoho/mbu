@@ -1,12 +1,12 @@
 ---
-title: "Req 6h — Drawer and Cabinet Hardware"
+title: "Drawer and Cabinet Hardware"
 layout: guide
-group_title: "Indoor Finish Repairs"
+group_title: "6. Indoor Finish Repairs"
 req_number: "6h"
 prev: "/merit-badges/home-repairs/guide/req6g/"
-prev_title: "Req 6g — Mending China, Glass, or Pottery"
+prev_title: "Mending China, Glass, or Pottery"
 next: "/merit-badges/home-repairs/guide/req7/"
-next_title: "Req 7 — Future Paths in Home Repairs"
+next_title: "Future Paths in Home Repairs"
 ---
 
 {{< drg/requirement number="6h" >}}

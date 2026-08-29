@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — First Aid for the Kitchen"
+title: "First Aid for the Kitchen"
 layout: guide
-group_title: "Health & Safety"
+group_title: "1. Health & Safety"
 req_number: "1b"
 prev: "/merit-badges/cooking/guide/req1a/"
-prev_title: "Req 1a — Kitchen Hazards"
+prev_title: "Kitchen Hazards"
 next: "/merit-badges/cooking/guide/req1c/"
-next_title: "Req 1c — Safe Food Storage"
+next_title: "Safe Food Storage"
 ---
 
 {{< drg/requirement number="1b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — MyPlate Food Groups"
+title: "MyPlate Food Groups"
 layout: guide
-group_title: "Nutrition"
+group_title: "2. Nutrition"
 req_number: "2a"
 prev: "/merit-badges/cooking/guide/req1e/"
-prev_title: "Req 1e — Reading Food Labels"
+prev_title: "Reading Food Labels"
 next: "/merit-badges/cooking/guide/req2b/"
-next_title: "Req 2b — Oils & Sugars"
+next_title: "Oils & Sugars"
 ---
 
 {{< drg/requirement number="2a" >}}

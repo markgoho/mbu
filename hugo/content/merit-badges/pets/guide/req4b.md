@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Teach Tricks and Skills"
+title: "Teach Tricks and Skills"
 layout: "guide"
-group_title: "Show Ring or Tricks"
+group_title: "4. Show Ring or Tricks"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/pets/guide/req4a/"
-prev_title: "Req 4a — Step Into a Pet Show"
+prev_title: "Step Into a Pet Show"
 next: "/merit-badges/pets/guide/req5/"
-next_title: "Req 5 — Future Paths With Pets"
+next_title: "Future Paths With Pets"
 ---
 
 {{< drg/requirement number="4b" >}}

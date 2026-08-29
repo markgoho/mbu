@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Caring for Your Bugle"
+title: "Caring for Your Bugle"
 layout: guide
-group_title: "Care & Maintenance"
+group_title: "5. Care & Maintenance"
 req_number: "5"
 prev: "/merit-badges/bugling/guide/req4/"
-prev_title: "Req 4 — When Calls Are Used"
+prev_title: "When Calls Are Used"
 next: "/merit-badges/bugling/guide/req6/"
-next_title: "Req 6 — Three Months of Service"
+next_title: "Three Months of Service"
 ---
 
 {{< drg/requirement number="5" >}}

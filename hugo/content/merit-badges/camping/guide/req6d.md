@@ -1,12 +1,12 @@
 ---
-title: "Req 6d — Backpacks"
+title: "Backpacks"
 layout: guide
-group_title: "Shelter & Camp Setup"
+group_title: "6. Shelter & Camp Setup"
 req_number: "6d"
 prev: "/merit-badges/camping/guide/req6c/"
-prev_title: "Req 6c — Campsite Selection"
+prev_title: "Campsite Selection"
 next: "/merit-badges/camping/guide/req6e/"
-next_title: "Req 6e — Sleeping Bags"
+next_title: "Sleeping Bags"
 ---
 
 {{< drg/requirement number="6d" >}}

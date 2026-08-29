@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Tooth Anatomy from X-Rays"
+title: "Tooth Anatomy from X-Rays"
 layout: guide
-group_title: "Understanding Tooth Structure"
+group_title: "1. Understanding Tooth Structure"
 req_number: "1"
 prev: "/merit-badges/dentistry/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/dentistry/guide/req2a/"
-next_title: "Req 2a — Causes of Decay & Gum Disease"
+next_title: "Causes of Decay & Gum Disease"
 ---
 
 {{< drg/requirement number="1" >}}

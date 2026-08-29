@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Stakeholder Goals"
+title: "Stakeholder Goals"
 layout: guide
-group_title: "Critical Thinking"
+group_title: "7. Critical Thinking"
 req_number: "8"
 prev: "/merit-badges/american-labor/guide/req7/"
-prev_title: "Req 7 — Debating Labor Issues"
+prev_title: "Debating Labor Issues"
 next: "/merit-badges/american-labor/guide/req9/"
-next_title: "Req 9 — Careers in Labor Relations"
+next_title: "Careers in Labor Relations"
 ---
 
 {{< drg/requirement number="8" >}}

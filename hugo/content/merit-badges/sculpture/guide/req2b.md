@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — Mold and Cast"
+title: "Mold and Cast"
 layout: "guide"
-group_title: "Mold Making and Casting"
+group_title: "2. Mold Making and Casting"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/sculpture/guide/req2a/"
-prev_title: "Req 2a — Head and Figure Study"
+prev_title: "Head and Figure Study"
 next: "/merit-badges/sculpture/guide/req2c/"
-next_title: "Req 2c — Art in Public and Community Life"
+next_title: "Art in Public and Community Life"
 ---
 
 {{< drg/requirement number="2b" >}}

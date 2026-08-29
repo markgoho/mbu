@@ -1,11 +1,11 @@
 ---
-title: "Req 6 — Careers in Design and Building"
+title: "Careers in Design and Building"
 layout: "guide"
-group_title: "Design Careers"
+group_title: "6. Design Careers"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/model-design-and-building/guide/req5/"
-prev_title: "Req 5 — Designing for the Big Screen"
+prev_title: "Designing for the Big Screen"
 next: "/merit-badges/model-design-and-building/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

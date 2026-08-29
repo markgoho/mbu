@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Interview an Implement Dealer"
+title: "Interview an Implement Dealer"
 layout: guide
-group_title: "Keeping Equipment Running"
+group_title: "5. Keeping Equipment Running"
 req_number: "5"
 prev: "/merit-badges/farm-mechanics/guide/req4/"
-prev_title: "Req 4 — Equipment Maintenance Tasks"
+prev_title: "Equipment Maintenance Tasks"
 next: "/merit-badges/farm-mechanics/guide/req6/"
-next_title: "Req 6 — Maintenance Procedures"
+next_title: "Maintenance Procedures"
 ---
 
 {{< drg/requirement number="5" >}}

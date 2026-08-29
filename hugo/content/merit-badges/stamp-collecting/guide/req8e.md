@@ -1,11 +1,11 @@
 ---
-title: "Req 8e — A 30-Day Mail Study"
+title: "A 30-Day Mail Study"
 layout: "guide"
-group_title: "Building Your Collection"
+group_title: "8. Building Your Collection"
 req_number: "8e"
 req_path: "8.e"
 prev: "/merit-badges/stamp-collecting/guide/req8d/"
-prev_title: "Req 8d — A Thematic Collection"
+prev_title: "A Thematic Collection"
 next: "/merit-badges/stamp-collecting/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

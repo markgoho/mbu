@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — Health Records"
+title: "Health Records"
 layout: "guide"
-group_title: "Preparing for Emergencies"
+group_title: "2. Preparing for Emergencies"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/first-aid/guide/req1/"
-prev_title: "Req 1 — Handling an Emergency"
+prev_title: "Handling an Emergency"
 next: "/merit-badges/first-aid/guide/req2b/"
-next_title: "Req 2b — First Aid Kits"
+next_title: "First Aid Kits"
 ---
 
 {{< drg/requirement number="2a" >}}

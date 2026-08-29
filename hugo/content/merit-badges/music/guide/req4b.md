@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Compose a 12-Measure Piece"
+title: "Compose a 12-Measure Piece"
 layout: "guide"
-group_title: "Choose One Music Project"
+group_title: "4. Choose One Music Project"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/music/guide/req4a/"
-prev_title: "Req 4a — Teach and Lead Songs"
+prev_title: "Teach and Lead Songs"
 next: "/merit-badges/music/guide/req4c/"
-next_title: "Req 4c — Make and Play a Traditional Instrument"
+next_title: "Make and Play a Traditional Instrument"
 ---
 
 {{< drg/requirement number="4b" >}}

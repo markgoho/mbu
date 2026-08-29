@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-g — Loading Procedures and Accessories"
+title: "Loading Procedures and Accessories"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-g"
 req_path: "2.B.g"
 prev: "/merit-badges/shotgun-shooting/guide/req2Bf/"
-prev_title: "Req 2B-f — Components of a Load"
+prev_title: "Components of a Load"
 next: "/merit-badges/shotgun-shooting/guide/req2Bh/"
-next_title: "Req 2B-h — Misfires, Hangfires, and Squib Fires"
+next_title: "Misfires, Hangfires, and Squib Fires"
 ---
 
 {{< drg/requirement number="2B-g" >}}

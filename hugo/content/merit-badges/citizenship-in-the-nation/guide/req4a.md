@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Declaration of Independence"
+title: "Declaration of Independence"
 layout: guide
-group_title: "Founding Documents & Ideals"
+group_title: "4. Founding Documents & Ideals"
 req_number: "4a"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req3/"
-prev_title: "Req 3 — Three Branches of Government"
+prev_title: "Three Branches of Government"
 next: "/merit-badges/citizenship-in-the-nation/guide/req4b/"
-next_title: "Req 4b — Bill of Rights & 14th Amendment"
+next_title: "Bill of Rights & 14th Amendment"
 ---
 
 {{< drg/requirement number="4a" >}}

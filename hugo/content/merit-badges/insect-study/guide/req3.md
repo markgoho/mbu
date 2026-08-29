@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Life Cycles and Rearing"
+title: "Life Cycles and Rearing"
 layout: guide
-group_title: "Metamorphosis in Action"
+group_title: "3. Metamorphosis in Action"
 req_number: "3"
 prev: "/merit-badges/insect-study/guide/req2/"
-prev_title: "Req 2 — Insect Anatomy and Orders"
+prev_title: "Insect Anatomy and Orders"
 next: "/merit-badges/insect-study/guide/req4/"
-next_title: "Req 4 — Observe, Record, and Interpret"
+next_title: "Observe, Record, and Interpret"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose a Scouting History Experience"
+title: "Choose a Scouting History Experience"
 layout: "guide"
-group_title: "Experience Scouting History"
+group_title: "4. Experience Scouting History"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/scouting-heritage/guide/req3/"
-prev_title: "Req 3 — How Scouting Grew for Every Age"
+prev_title: "How Scouting Grew for Every Age"
 next: "/merit-badges/scouting-heritage/guide/req4a/"
-next_title: "Req 4a — Jamboree or High Adventure Journal"
+next_title: "Jamboree or High Adventure Journal"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5c — Inspecting With Magnifiers"
+title: "Inspecting With Magnifiers"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5c"
 req_path: "5.c"
 prev: "/merit-badges/stamp-collecting/guide/req5b/"
-prev_title: "Req 5b — Soaking With Water and a Tray"
+prev_title: "Soaking With Water and a Tray"
 next: "/merit-badges/stamp-collecting/guide/req5d/"
-next_title: "Req 5d — Hinges and Mounts"
+next_title: "Hinges and Mounts"
 ---
 
 {{< drg/requirement number="5c" >}}

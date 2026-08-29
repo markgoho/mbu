@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Safety Data Sheets"
+title: "Safety Data Sheets"
 layout: guide
-group_title: "Farm Shop Safety"
+group_title: "1. Farm Shop Safety"
 req_number: "1d"
 prev: "/merit-badges/farm-mechanics/guide/req1c/"
-prev_title: "Req 1c — Safety Symbols & Warnings"
+prev_title: "Safety Symbols & Warnings"
 next: "/merit-badges/farm-mechanics/guide/req2a/"
-next_title: "Req 2a — Diesel Engines"
+next_title: "Diesel Engines"
 ---
 
 {{< drg/requirement number="1d" >}}

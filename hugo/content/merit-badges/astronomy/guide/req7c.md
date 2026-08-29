@@ -1,12 +1,12 @@
 ---
-title: "Req 7c — Star Colors"
+title: "Star Colors"
 layout: guide
-group_title: "Our Sun & the Stars"
+group_title: "7. Our Sun & the Stars"
 req_number: "7c"
 prev: "/merit-badges/astronomy/guide/req7b/"
-prev_title: "Req 7b — Sunspots"
+prev_title: "Sunspots"
 next: "/merit-badges/astronomy/guide/req8/"
-next_title: "Req 8 — Choose Your Adventure"
+next_title: "Choose Your Adventure"
 ---
 
 {{< drg/requirement number="7c" >}}

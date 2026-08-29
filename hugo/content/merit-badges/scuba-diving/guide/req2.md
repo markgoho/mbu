@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Swimming Before Scuba"
+title: "Swimming Before Scuba"
 layout: "guide"
-group_title: "Water Readiness"
+group_title: "2. Water Readiness"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/scuba-diving/guide/req1/"
-prev_title: "Req 1 — Dive Safety Starts Here"
+prev_title: "Dive Safety Starts Here"
 next: "/merit-badges/scuba-diving/guide/req3/"
-next_title: "Req 3 — The Scuba Diver's Code"
+next_title: "The Scuba Diver"
 ---
 
 {{< drg/requirement number="2" >}}

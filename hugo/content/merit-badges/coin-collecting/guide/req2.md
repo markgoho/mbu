@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Coin Terminology"
+title: "Coin Terminology"
 layout: guide
-group_title: "Coin Anatomy"
+group_title: "2. Coin Anatomy"
 req_number: "2"
 prev: "/merit-badges/coin-collecting/guide/req1/"
-prev_title: "Req 1 — How Coins Are Made"
+prev_title: "How Coins Are Made"
 next: "/merit-badges/coin-collecting/guide/req3/"
-next_title: "Req 3 — Storing Your Collection"
+next_title: "Storing Your Collection"
 ---
 
 {{< drg/requirement number="2" >}}

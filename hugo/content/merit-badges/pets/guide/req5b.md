@@ -1,11 +1,11 @@
 ---
-title: "Req 5b — Turn Pet Skills Into a Hobby"
+title: "Turn Pet Skills Into a Hobby"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "5. Future Paths"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/pets/guide/req5a/"
-prev_title: "Req 5a — Explore Pet Careers"
+prev_title: "Explore Pet Careers"
 next: "/merit-badges/pets/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

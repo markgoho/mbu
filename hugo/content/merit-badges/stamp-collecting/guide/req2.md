@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Types of Collections"
+title: "Types of Collections"
 layout: "guide"
-group_title: "Choosing a Collecting Style"
+group_title: "2. Choosing a Collecting Style"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/stamp-collecting/guide/req1/"
-prev_title: "Req 1 — Why Stamps Matter"
+prev_title: "Why Stamps Matter"
 next: "/merit-badges/stamp-collecting/guide/req3/"
-next_title: "Req 3 — Stamp Terms in Action"
+next_title: "Stamp Terms in Action"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3b — Understand the Zoom Lens"
+title: "Understand the Zoom Lens"
 layout: "guide"
-group_title: "Behind the Scenes"
+group_title: "3. Behind the Scenes"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/moviemaking/guide/req3a/"
-prev_title: "Req 3a — Visit a Working Set"
+prev_title: "Visit a Working Set"
 next: "/merit-badges/moviemaking/guide/req4/"
-next_title: "Req 4 — Choose Your Next Step"
+next_title: "Choose Your Next Step"
 ---
 
 {{< drg/requirement number="3b" >}}

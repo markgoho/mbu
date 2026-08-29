@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Responsible Tech Disposal"
+title: "Responsible Tech Disposal"
 layout: guide
-group_title: "E-Waste & Recycling"
+group_title: "8. E-Waste & Recycling"
 req_number: "8"
 prev: "/merit-badges/digital-technology/guide/req7c/"
-prev_title: "Req 7c — IP Disputes in the News"
+prev_title: "IP Disputes in the News"
 next: "/merit-badges/digital-technology/guide/req9/"
-next_title: "Req 9 — Tech Careers & Hobbies"
+next_title: "Tech Careers & Hobbies"
 ---
 
 {{< drg/requirement number="8" >}}

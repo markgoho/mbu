@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Compare Fibers and Their Footprint"
+title: "Compare Fibers and Their Footprint"
 layout: "guide"
-group_title: "Materials and Impact"
+group_title: "5. Materials and Impact"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/textile/guide/req4/"
-prev_title: "Req 4 — Talk Like a Textile Maker"
+prev_title: "Talk Like a Textile Maker"
 next: "/merit-badges/textile/guide/req6/"
-next_title: "Req 6 — Explore Textile Careers"
+next_title: "Explore Textile Careers"
 ---
 
 {{< drg/requirement number="5" >}}

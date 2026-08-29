@@ -1,11 +1,11 @@
 ---
-title: "Req 6 — Careers Below the Surface"
+title: "Careers Below the Surface"
 layout: "guide"
-group_title: "Scuba Careers"
+group_title: "6. Scuba Careers"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/scuba-diving/guide/req5/"
-prev_title: "Req 5 — Aquatic Ecosystems"
+prev_title: "Aquatic Ecosystems"
 next: "/merit-badges/scuba-diving/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

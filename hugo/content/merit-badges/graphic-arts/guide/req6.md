@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Choose a Graphic Arts Visit"
+title: "Choose a Graphic Arts Visit"
 layout: guide
-group_title: "Explore the Industry"
+group_title: "6. Explore the Industry"
 req_number: "6"
 prev: "/merit-badges/graphic-arts/guide/req5/"
-prev_title: "Req 5 — Postpress and Binding"
+prev_title: "Postpress and Binding"
 next: "/merit-badges/graphic-arts/guide/req6a/"
-next_title: "Req 6a — Newspaper Printing Visit"
+next_title: "Newspaper Printing Visit"
 ---
 
 {{< drg/requirement number="6" >}}

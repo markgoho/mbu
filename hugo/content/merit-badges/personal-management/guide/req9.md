@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Project Planning"
+title: "Project Planning"
 layout: guide
-group_title: "Project Planning"
+group_title: "9. Project Planning"
 req_number: "9"
 prev: "/merit-badges/personal-management/guide/req8/"
-prev_title: "Req 8 — Managing Your Time"
+prev_title: "Managing Your Time"
 next: "/merit-badges/personal-management/guide/req10/"
-next_title: "Req 10 — Career Planning"
+next_title: "Career Planning"
 ---
 
 {{< drg/requirement number="9" >}}

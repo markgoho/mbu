@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Educational Facility"
+title: "Educational Facility"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "5d"
 prev: "/merit-badges/genealogy/guide/req5c/"
-prev_title: "Req 5c — Surname Organization"
+prev_title: "Surname Organization"
 next: "/merit-badges/genealogy/guide/req5e/"
-next_title: "Req 5e — Record Repository"
+next_title: "Record Repository"
 ---
 
 {{< drg/requirement number="5d" >}}

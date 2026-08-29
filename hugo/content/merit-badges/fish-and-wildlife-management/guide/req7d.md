@@ -1,12 +1,12 @@
 ---
-title: "Req 7d — Freshwater Aquarium"
+title: "Freshwater Aquarium"
 layout: guide
-group_title: "Fish Study Techniques"
+group_title: "7. Fish Study Techniques"
 req_number: "7d"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req7c/"
-prev_title: "Req 7c — Fish Stomach Contents"
+prev_title: "Fish Stomach Contents"
 next: "/merit-badges/fish-and-wildlife-management/guide/req8/"
-next_title: "Req 8 — Career Opportunities"
+next_title: "Career Opportunities"
 ---
 
 {{< drg/requirement number="7d" >}}

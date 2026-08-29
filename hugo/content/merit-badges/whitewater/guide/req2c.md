@@ -1,13 +1,13 @@
 ---
-title: "Req 2c — Edge Control in Current"
+title: "Edge Control in Current"
 layout: "guide"
-group_title: "Reading the River"
+group_title: "2. Reading the River"
 req_number: "2c"
 req_path: "2.c"
 prev: "/merit-badges/whitewater/guide/req2b/"
-prev_title: "Req 2b — How Whitewater Waves Form"
+prev_title: "How Whitewater Waves Form"
 next: "/merit-badges/whitewater/guide/req2d/"
-next_title: "Req 2d — Scout, Portage, Decide"
+next_title: "Scout, Portage, Decide"
 ---
 
 {{< drg/requirement number="2c" >}}

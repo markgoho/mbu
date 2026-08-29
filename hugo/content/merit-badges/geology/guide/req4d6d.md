@@ -1,12 +1,12 @@
 ---
-title: "Req 4d6d — State Fossil Presentation"
+title: "State Fossil Presentation"
 layout: guide
-group_title: "Earth History"
+group_title: "4. Earth History"
 req_number: "4d6d"
 prev: "/merit-badges/geology/guide/req4d6c/"
-prev_title: "Req 4d6c — Fossil Outcrop Visit"
+prev_title: "Fossil Outcrop Visit"
 next: "/merit-badges/geology/guide/req5/"
-next_title: "Req 5 — Leave No Trace and the Outdoor Code"
+next_title: "Leave No Trace and the Outdoor Code"
 ---
 
 {{< drg/requirement number="4d6d" >}}

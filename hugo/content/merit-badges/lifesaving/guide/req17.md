@@ -1,10 +1,10 @@
 ---
-title: "Req 17 — Other Injuries & Illnesses"
+title: "Other Injuries & Illnesses"
 layout: guide
-group_title: "Spinal Injury & Resuscitation"
+group_title: "15. Spinal Injury & Resuscitation"
 req_number: "17"
 prev: "/merit-badges/lifesaving/guide/req16/"
-prev_title: "Req 16 — CPR & Rescue Breathing"
+prev_title: "CPR & Rescue Breathing"
 next: "/merit-badges/lifesaving/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

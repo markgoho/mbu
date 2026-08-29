@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Vehicle Power Types"
+title: "Vehicle Power Types"
 layout: guide
-group_title: "Safety & Registration"
+group_title: "1. Safety & Registration"
 req_number: "1c"
 prev: "/merit-badges/automotive-maintenance/guide/req1b/"
-prev_title: "Req 1b — Safety Equipment & Clothing"
+prev_title: "Safety Equipment & Clothing"
 next: "/merit-badges/automotive-maintenance/guide/req1e/"
-next_title: "Req 1e — Maintenance Schedules"
+next_title: "Maintenance Schedules"
 ---
 
 {{< drg/requirement number="1c" >}}

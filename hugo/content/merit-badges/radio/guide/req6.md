@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — FCC, ITU & Call Signs"
+title: "FCC, ITU & Call Signs"
 layout: "guide"
-group_title: "Radio Regulation"
+group_title: "6. Radio Regulation"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/radio/guide/req5/"
-prev_title: "Req 5 — Equipment & Devices"
+prev_title: "Equipment & Devices"
 next: "/merit-badges/radio/guide/req7/"
-next_title: "Req 7 — Cellular Technology"
+next_title: "Cellular Technology"
 guide_nav:
   - group_title: "Getting Started"
     items:

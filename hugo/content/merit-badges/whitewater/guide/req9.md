@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Your Line"
+title: "Choose Your Line"
 layout: "guide"
-group_title: "Running the River"
+group_title: "9. Running the River"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/whitewater/guide/req8/"
-prev_title: "Req 8 — Pack for a Safe Run"
+prev_title: "Pack for a Safe Run"
 next: "/merit-badges/whitewater/guide/req10/"
-next_title: "Req 10 — Core Moving-Water Maneuvers"
+next_title: "Core Moving-Water Maneuvers"
 ---
 
 {{< drg/requirement number="9" >}}

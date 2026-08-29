@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Health Concerns"
+title: "Health Concerns"
 layout: guide
-group_title: "Water Safety Fundamentals"
+group_title: "1. Water Safety Fundamentals"
 req_number: "1b"
 prev: "/merit-badges/swimming/guide/req1a/"
-prev_title: "Req 1a — Safe Swim Defense"
+prev_title: "Safe Swim Defense"
 next: "/merit-badges/swimming/guide/req2/"
-next_title: "Req 2 — Swimmer Test"
+next_title: "Swimmer Test"
 ---
 
 {{< drg/requirement number="1b" >}}

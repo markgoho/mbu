@@ -1,13 +1,13 @@
 ---
-title: "Req 2bd — The Five Fundamentals of Shooting"
+title: "The Five Fundamentals of Shooting"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2bd"
 req_path: "2.b.d"
 prev: "/merit-badges/rifle-shooting/guide/req2bc/"
-prev_title: "Req 2bc — Two Types of Air Rifle Ammunition"
+prev_title: "Two Types of Air Rifle Ammunition"
 next: "/merit-badges/rifle-shooting/guide/req2be/"
-next_title: "Req 2be — Range Procedures and Commands"
+next_title: "Range Procedures and Commands"
 ---
 
 {{< drg/requirement number="2bd" >}}

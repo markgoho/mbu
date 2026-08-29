@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Labor History Projects"
+title: "Labor History Projects"
 layout: guide
-group_title: "Labor History"
+group_title: "5. Labor History"
 req_number: "5"
 prev: "/merit-badges/american-labor/guide/req4/"
-prev_title: "Req 4 — Bargaining Models"
+prev_title: "Bargaining Models"
 next: "/merit-badges/american-labor/guide/req6/"
-next_title: "Req 6 — Globalization"
+next_title: "Globalization"
 ---
 
 {{< drg/requirement number="5" >}}

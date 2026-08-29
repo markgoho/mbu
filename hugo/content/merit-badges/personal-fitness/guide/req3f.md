@@ -1,12 +1,12 @@
 ---
-title: "Req 3f — Sleep"
+title: "Sleep"
 layout: guide
-group_title: "Fitness Knowledge & Habits"
+group_title: "3. Fitness Knowledge & Habits"
 req_number: "3f"
 prev: "/merit-badges/personal-fitness/guide/req3e/"
-prev_title: "Req 3e — Healthy Weight"
+prev_title: "Healthy Weight"
 next: "/merit-badges/personal-fitness/guide/req3g/"
-next_title: "Req 3g — Social & Family Time"
+next_title: "Social & Family Time"
 ---
 
 {{< drg/requirement number="3f" >}}

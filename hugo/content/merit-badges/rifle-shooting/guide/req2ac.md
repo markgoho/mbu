@@ -1,13 +1,13 @@
 ---
-title: "Req 2ac — Two Types of Cartridges"
+title: "Two Types of Cartridges"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2ac"
 req_path: "2.a.c"
 prev: "/merit-badges/rifle-shooting/guide/req2ab/"
-prev_title: "Req 2ab — Safe Storage and Handling"
+prev_title: "Safe Storage and Handling"
 next: "/merit-badges/rifle-shooting/guide/req2ad/"
-next_title: "Req 2ad — Misfire, Hangfire, and Squib Fire"
+next_title: "Misfire, Hangfire, and Squib Fire"
 ---
 
 {{< drg/requirement number="2ac" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Brick-and-Mortar vs. Online"
+title: "Brick-and-Mortar vs. Online"
 layout: guide
-group_title: "Business Practices & Ethics"
+group_title: "3. Business Practices & Ethics"
 req_number: "3d"
 prev: "/merit-badges/american-business/guide/req3c/"
-prev_title: "Req 3c — Business Ethics"
+prev_title: "Business Ethics"
 next: "/merit-badges/american-business/guide/req4/"
-next_title: "Req 4 — Labor Laws & Protections"
+next_title: "Labor Laws & Protections"
 ---
 
 {{< drg/requirement number="3d" >}}

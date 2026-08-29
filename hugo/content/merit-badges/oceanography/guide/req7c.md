@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Track Water Conditions"
+title: "Track Water Conditions"
 layout: "guide"
-group_title: "Hands-On Investigation"
+group_title: "7. Hands-On Investigation"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/oceanography/guide/req7b/"
-prev_title: "Req 7b — Build a Coral Reef Model"
+prev_title: "Build a Coral Reef Model"
 next: "/merit-badges/oceanography/guide/req7d/"
-next_title: "Req 7d — Model Sediment Movement"
+next_title: "Model Sediment Movement"
 ---
 
 {{< drg/requirement number="7c" >}}

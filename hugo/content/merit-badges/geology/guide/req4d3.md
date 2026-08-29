@@ -1,12 +1,12 @@
 ---
-title: "Req 4d3 — Burial, Fossils, and Extinction"
+title: "Burial, Fossils, and Extinction"
 layout: guide
-group_title: "Earth History"
+group_title: "4. Earth History"
 req_number: "4d3"
 prev: "/merit-badges/geology/guide/req4d2/"
-prev_title: "Req 4d2 — Plate Tectonics"
+prev_title: "Plate Tectonics"
 next: "/merit-badges/geology/guide/req4d4/"
-next_title: "Req 4d4 — Fossils as Ancient Clues"
+next_title: "Fossils as Ancient Clues"
 ---
 
 {{< drg/requirement number="4d3" >}}

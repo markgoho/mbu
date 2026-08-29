@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Record Repository"
+title: "Record Repository"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "5e"
 prev: "/merit-badges/genealogy/guide/req5d/"
-prev_title: "Req 5d — Educational Facility"
+prev_title: "Educational Facility"
 next: "/merit-badges/genealogy/guide/req6/"
-next_title: "Req 6 — Build a Pedigree Chart"
+next_title: "Build a Pedigree Chart"
 ---
 
 {{< drg/requirement number="5e" >}}

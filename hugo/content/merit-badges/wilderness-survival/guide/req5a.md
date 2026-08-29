@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Exposure Conditions"
+title: "Exposure Conditions"
 layout: guide
-group_title: "Shelter & Exposure"
+group_title: "5. Shelter & Exposure"
 req_number: "5a"
 prev: "/merit-badges/wilderness-survival/guide/req4/"
-prev_title: "Req 4 — First Aid & Survival Kits"
+prev_title: "First Aid & Survival Kits"
 next: "/merit-badges/wilderness-survival/guide/req5b/"
-next_title: "Req 5b — Outdoor Clothing"
+next_title: "Outdoor Clothing"
 ---
 
 {{< drg/requirement number="5a" >}}

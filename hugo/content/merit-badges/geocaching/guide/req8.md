@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Pick Your Geocaching Project"
+title: "Pick Your Geocaching Project"
 layout: guide
-group_title: "Choose Your Adventure"
+group_title: "8. Choose Your Adventure"
 req_number: "8"
 prev: "/merit-badges/geocaching/guide/req7/"
-prev_title: "Req 7 — Research and Find a Public Cache"
+prev_title: "Research and Find a Public Cache"
 next: "/merit-badges/geocaching/guide/req8a/"
-next_title: "Req 8a — Cache to Eagle Service Stops"
+next_title: "Cache to Eagle Service Stops"
 ---
 
 {{< drg/requirement number="8" >}}

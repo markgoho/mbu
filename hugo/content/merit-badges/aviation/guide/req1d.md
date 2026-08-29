@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — How Engines Work"
+title: "How Engines Work"
 layout: guide
-group_title: "Aviation Basics"
+group_title: "1. Aviation Basics"
 req_number: "1d"
 prev: "/merit-badges/aviation/guide/req1c/"
-prev_title: "Req 1c — Fixed Wing vs. Rotary Wing"
+prev_title: "Fixed Wing vs. Rotary Wing"
 next: "/merit-badges/aviation/guide/req1e/"
-next_title: "Req 1e — Four Forces of Flight"
+next_title: "Four Forces of Flight"
 ---
 
 {{< drg/requirement number="1d" >}}

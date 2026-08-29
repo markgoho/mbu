@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Digital Safety Awareness"
+title: "Digital Safety Awareness"
 layout: guide
-group_title: "Digital Safety"
+group_title: "1. Digital Safety"
 req_number: "1"
 prev: "/merit-badges/digital-technology/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/digital-technology/guide/req2a/"
-next_title: "Req 2a — History of Digital Technology"
+next_title: "History of Digital Technology"
 ---
 
 {{< drg/requirement number="1" >}}

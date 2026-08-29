@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Visit the Stamp World"
+title: "Visit the Stamp World"
 layout: "guide"
-group_title: "Creative Projects"
+group_title: "7. Creative Projects"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/stamp-collecting/guide/req7a/"
-prev_title: "Req 7a — Design Work"
+prev_title: "Design Work"
 next: "/merit-badges/stamp-collecting/guide/req7c/"
-next_title: "Req 7c — Review a Stamp Article"
+next_title: "Review a Stamp Article"
 ---
 
 {{< drg/requirement number="7b" >}}

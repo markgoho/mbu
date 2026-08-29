@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Robots in Action"
+title: "Robots in Action"
 layout: "guide"
-group_title: "How Robots Work in the World"
+group_title: "2. How Robots Work in the World"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/robotics/guide/req1/"
-prev_title: "Req 1 — Workshop Safety"
+prev_title: "Workshop Safety"
 next: "/merit-badges/robotics/guide/req3/"
-next_title: "Req 3 — Core Robotics Systems"
+next_title: "Core Robotics Systems"
 ---
 
 {{< drg/requirement number="2" >}}

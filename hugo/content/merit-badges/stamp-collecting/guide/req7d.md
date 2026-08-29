@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Research Stamp History"
+title: "Research Stamp History"
 layout: "guide"
-group_title: "Creative Projects"
+group_title: "7. Creative Projects"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/stamp-collecting/guide/req7c/"
-prev_title: "Req 7c — Review a Stamp Article"
+prev_title: "Review a Stamp Article"
 next: "/merit-badges/stamp-collecting/guide/req7e/"
-next_title: "Req 7e — How Stamps Are Made"
+next_title: "How Stamps Are Made"
 ---
 
 {{< drg/requirement number="7d" >}}

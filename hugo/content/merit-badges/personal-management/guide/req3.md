@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Psychology of Money"
+title: "Psychology of Money"
 layout: guide
-group_title: "Money & Emotions"
+group_title: "3. Money & Emotions"
 req_number: "3"
 prev: "/merit-badges/personal-management/guide/req2d/"
-prev_title: "Req 2d — Budget Review"
+prev_title: "Budget Review"
 next: "/merit-badges/personal-management/guide/req4/"
-next_title: "Req 4 — Saving vs. Investing"
+next_title: "Saving vs. Investing"
 ---
 
 {{< drg/requirement number="3" >}}

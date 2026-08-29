@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Pick Two Classic Experiments"
+title: "Pick Two Classic Experiments"
 layout: "guide"
-group_title: "Classic Experiments"
+group_title: "4. Classic Experiments"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/nuclear-science/guide/req3b2/"
-prev_title: "Req 3b2 — Compare Major Accelerators"
+prev_title: "Compare Major Accelerators"
 next: "/merit-badges/nuclear-science/guide/req4a/"
-next_title: "Req 4a — Build an Electroscope"
+next_title: "Build an Electroscope"
 ---
 
 {{< drg/requirement number="4" >}}

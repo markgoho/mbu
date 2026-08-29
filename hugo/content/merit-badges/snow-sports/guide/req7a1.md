@@ -1,13 +1,13 @@
 ---
-title: "Req 7a1 — Wax, Bindings & DIN"
+title: "Wax, Bindings & DIN"
 layout: "guide"
-group_title: "Option A — Alpine Skiing"
+group_title: "7. Option A — Alpine Skiing"
 req_number: "7a1"
 req_path: "7.a.1"
 prev: "/merit-badges/snow-sports/guide/req7a/"
-prev_title: "Req 7a — Downhill (Alpine) Skiing"
+prev_title: "Downhill (Alpine) Skiing"
 next: "/merit-badges/snow-sports/guide/req7a2/"
-next_title: "Req 7a2 — American Teaching System"
+next_title: "American Teaching System"
 ---
 
 {{< drg/requirement number="7a1" >}}

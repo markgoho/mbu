@@ -4,57 +4,57 @@ layout: "guide"
 badge_name: "Painting"
 group_title: "Getting Started"
 next: "/merit-badges/painting/guide/req1/"
-next_title: "Req 1 — Work Safe Before You Paint"
+next_title: "Work Safe Before You Paint"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/painting/guide/"
         is_sub: false
-  - group_title: "Safe Prep & Application"
+  - group_title: "1. Safe Prep & Application"
     items:
-      - title: "Req 1 — Work Safe Before You Paint"
+      - title: "1. Work Safe Before You Paint"
         url: "/merit-badges/painting/guide/req1/"
         is_sub: false
-  - group_title: "Understanding Coatings"
+  - group_title: "2. Understanding Coatings"
     items:
-      - title: "Req 2 — Coatings, Paint Types & Sheen"
+      - title: "2. Coatings, Paint Types & Sheen"
         url: "/merit-badges/painting/guide/req2/"
         is_sub: false
-  - group_title: "Hands-On Projects"
+  - group_title: "3. Hands-On Projects"
     items:
-      - title: "Req 3 — Plan Two Real Projects"
+      - title: "3. Plan Two Real Projects"
         url: "/merit-badges/painting/guide/req3/"
         is_sub: false
-  - group_title: "Color Decisions"
+  - group_title: "4. Color Decisions"
     items:
-      - title: "Req 4 — Choose Harmonizing Colors"
+      - title: "4. Choose Harmonizing Colors"
         url: "/merit-badges/painting/guide/req4/"
         is_sub: false
-  - group_title: "Tool Care"
+  - group_title: "5. Tool Care"
     items:
-      - title: "Req 5 — Use and Care for Your Tools"
+      - title: "5. Use and Care for Your Tools"
         url: "/merit-badges/painting/guide/req5/"
         is_sub: false
-  - group_title: "Job-Site Safety"
+  - group_title: "6. Job-Site Safety"
     items:
-      - title: "Req 6 — Ladder Safety and PPE"
+      - title: "6. Ladder Safety and PPE"
         url: "/merit-badges/painting/guide/req6/"
         is_sub: false
-  - group_title: "Responsible Painting"
+  - group_title: "7. Responsible Painting"
     items:
-      - title: "Req 7 — Paint, Health, and the Environment"
+      - title: "7. Paint, Health, and the Environment"
         url: "/merit-badges/painting/guide/req7/"
         is_sub: false
-  - group_title: "Futures in Painting"
+  - group_title: "8. Futures in Painting"
     items:
-      - title: "Req 8 — Choose a Painting Path"
+      - title: "8. Choose a Painting Path"
         url: "/merit-badges/painting/guide/req8/"
         is_sub: false
-      - title: "Req 8a — Research a Painting Career"
+      - title: "a Research a Painting Career"
         url: "/merit-badges/painting/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Make Painting Part of Your Life"
+      - title: "b Make Painting Part of Your Life"
         url: "/merit-badges/painting/guide/req8b/"
         is_sub: true
   - group_title: "Beyond the Badge"

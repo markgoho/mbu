@@ -1,12 +1,12 @@
 ---
-title: "Req 6f — Spaying and Neutering"
+title: "Spaying and Neutering"
 layout: guide
-group_title: "Keeping Dogs Healthy"
+group_title: "6. Keeping Dogs Healthy"
 req_number: "6f"
 prev: "/merit-badges/dog-care/guide/req6e/"
-prev_title: "Req 6e — Seasonal Safety"
+prev_title: "Seasonal Safety"
 next: "/merit-badges/dog-care/guide/req7a/"
-next_title: "Req 7a — Handling an Injured Dog"
+next_title: "Handling an Injured Dog"
 ---
 
 {{< drg/requirement number="6f" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Cloud Clues"
+title: "Cloud Clues"
 layout: "guide"
-group_title: "How Weather Works"
+group_title: "4. How Weather Works"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/weather/guide/req5/"
-prev_title: "Req 5 — Wind, Rain, Lightning, and Hail"
+prev_title: "Wind, Rain, Lightning, and Hail"
 next: "/merit-badges/weather/guide/req7/"
-next_title: "Req 7 — The Water Cycle in Motion"
+next_title: "The Water Cycle in Motion"
 ---
 
 {{< drg/requirement number="6" >}}

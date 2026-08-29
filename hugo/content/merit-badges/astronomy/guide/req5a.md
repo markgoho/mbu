@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Visible Planets & Phases"
+title: "Visible Planets & Phases"
 layout: guide
-group_title: "Exploring the Planets"
+group_title: "5. Exploring the Planets"
 req_number: "5a"
 prev: "/merit-badges/astronomy/guide/req4d/"
-prev_title: "Req 4d — The Milky Way"
+prev_title: "The Milky Way"
 next: "/merit-badges/astronomy/guide/req5b/"
-next_title: "Req 5b — Planet Visibility Chart"
+next_title: "Planet Visibility Chart"
 ---
 
 {{< drg/requirement number="5a" >}}

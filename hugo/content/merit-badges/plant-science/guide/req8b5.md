@@ -1,13 +1,13 @@
 ---
-title: "Req 8b5 — Choose a Horticulture Project"
+title: "Choose a Horticulture Project"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b5"
 req_path: "8.b.5"
 prev: "/merit-badges/plant-science/guide/req8b4/"
-prev_title: "Req 8b4 — Smart Landscape Choices"
+prev_title: "Landscape Design Principles"
 next: "/merit-badges/plant-science/guide/req8b5a/"
-next_title: "Req 8b5a — Bedding Plants Through the Season"
+next_title: "Bedding Plants"
 ---
 
 {{< drg/requirement number="8b5" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Build a Strong Frame"
+title: "Build a Strong Frame"
 layout: guide
-group_title: "Trestles & Structural Strength"
+group_title: "8. Trestles & Structural Strength"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/pioneering/guide/req7/"
-prev_title: "Req 7 — Keep the Structure Put"
+prev_title: "Keep the Structure Put"
 next: "/merit-badges/pioneering/guide/req9/"
-next_title: "Req 9 — Choose Your Big Build"
+next_title: "Choose Your Big Build"
 ---
 
 {{< drg/requirement number="8" >}}

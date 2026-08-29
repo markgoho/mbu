@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — What Makes a Mammal?"
+title: "What Makes a Mammal?"
 layout: "guide"
-group_title: "Mammal Basics"
+group_title: "1. Mammal Basics"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/mammal-study/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/mammal-study/guide/req2/"
-next_title: "Req 2 — Classifying Mammals"
+next_title: "Classifying Mammals"
 ---
 
 {{< drg/requirement number="1" >}}

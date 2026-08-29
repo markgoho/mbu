@@ -4,112 +4,112 @@ layout: "guide"
 badge_name: "Whitewater"
 group_title: "Getting Started"
 next: "/merit-badges/whitewater/guide/req1/"
-next_title: "Req 1 — Safety Before the Splash"
+next_title: "Safety Before the Splash"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/whitewater/guide/"
         is_sub: false
-  - group_title: "River Safety Foundations"
+  - group_title: "1. River Safety Foundations"
     items:
-      - title: "Req 1 — Safety Before the Splash"
+      - title: "1. Safety Before the Splash"
         url: "/merit-badges/whitewater/guide/req1/"
         is_sub: false
-  - group_title: "Reading the River"
+  - group_title: "2. Reading the River"
     items:
-      - title: "Req 2a — River Features at a Glance"
+      - title: "a River Features at a Glance"
         url: "/merit-badges/whitewater/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — How Whitewater Waves Form"
+      - title: "b How Whitewater Waves Form"
         url: "/merit-badges/whitewater/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Edge Control in Current"
+      - title: "c Edge Control in Current"
         url: "/merit-badges/whitewater/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Scout, Portage, Decide"
+      - title: "d Scout, Portage, Decide"
         url: "/merit-badges/whitewater/guide/req2d/"
         is_sub: true
-  - group_title: "Choose Your Craft"
+  - group_title: "3. Choose Your Craft"
     items:
-      - title: "Req 3 — Build on Your Paddling Base"
+      - title: "3. Build on Your Paddling Base"
         url: "/merit-badges/whitewater/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Canoe Skills Check"
+      - title: "a Canoe Skills Check"
         url: "/merit-badges/whitewater/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Kayak Skills Check"
+      - title: "b Kayak Skills Check"
         url: "/merit-badges/whitewater/guide/req3b/"
         is_sub: true
-  - group_title: "Calm-Water Skill Building"
+  - group_title: "4. Calm-Water Skill Building"
     items:
-      - title: "Req 4 — Pick Your Practice Track"
+      - title: "4. Pick Your Practice Track"
         url: "/merit-badges/whitewater/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Tandem Canoe Control"
+      - title: "a Tandem Canoe Control"
         url: "/merit-badges/whitewater/guide/req4a/"
         is_sub: false
-      - title: "Req 4a1 — Bow Strokes for Tandem Canoes"
+      - title: "a Bow Strokes for Tandem Canoes"
         url: "/merit-badges/whitewater/guide/req4a1/"
         is_sub: true
-      - title: "Req 4a2 — Stern Strokes for Tandem Canoes"
+      - title: "a Stern Strokes for Tandem Canoes"
         url: "/merit-badges/whitewater/guide/req4a2/"
         is_sub: true
-      - title: "Req 4a3 — Bracing a Tandem Canoe"
+      - title: "a Bracing a Tandem Canoe"
         url: "/merit-badges/whitewater/guide/req4a3/"
         is_sub: true
-      - title: "Req 4b — Solo Canoe Control"
+      - title: "b Solo Canoe Control"
         url: "/merit-badges/whitewater/guide/req4b/"
         is_sub: false
-      - title: "Req 4b1 — Solo Canoe Precision Strokes"
+      - title: "b Solo Canoe Precision Strokes"
         url: "/merit-badges/whitewater/guide/req4b1/"
         is_sub: true
-      - title: "Req 4b2 — Bracing a Solo Canoe"
+      - title: "b Bracing a Solo Canoe"
         url: "/merit-badges/whitewater/guide/req4b2/"
         is_sub: true
-      - title: "Req 4c — Solo Kayak Control"
+      - title: "c Solo Kayak Control"
         url: "/merit-badges/whitewater/guide/req4c/"
         is_sub: false
-      - title: "Req 4c1 — Kayak Directional Control"
+      - title: "c Kayak Directional Control"
         url: "/merit-badges/whitewater/guide/req4c1/"
         is_sub: true
-      - title: "Req 4c2 — Bracing a Kayak"
+      - title: "c Bracing a Kayak"
         url: "/merit-badges/whitewater/guide/req4c2/"
         is_sub: true
-  - group_title: "River Judgment"
+  - group_title: "5. River Judgment"
     items:
-      - title: "Req 5 — Classifying the River"
+      - title: "5. Classifying the River"
         url: "/merit-badges/whitewater/guide/req5/"
         is_sub: false
-      - title: "Req 6 — River Signals That Matter"
+      - title: "6. River Signals That Matter"
         url: "/merit-badges/whitewater/guide/req6/"
         is_sub: false
-  - group_title: "Boats and Gear"
+  - group_title: "7. Boats and Gear"
     items:
-      - title: "Req 7 — Match the Boat to the Water"
+      - title: "7. Match the Boat to the Water"
         url: "/merit-badges/whitewater/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Whitewater Canoe Designs"
+      - title: "a Whitewater Canoe Designs"
         url: "/merit-badges/whitewater/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Whitewater Kayak Designs"
+      - title: "b Whitewater Kayak Designs"
         url: "/merit-badges/whitewater/guide/req7b/"
         is_sub: true
-      - title: "Req 8 — Pack for a Safe Run"
+      - title: "8. Pack for a Safe Run"
         url: "/merit-badges/whitewater/guide/req8/"
         is_sub: false
-  - group_title: "Running the River"
+  - group_title: "9. Running the River"
     items:
-      - title: "Req 9 — Choose Your Line"
+      - title: "9. Choose Your Line"
         url: "/merit-badges/whitewater/guide/req9/"
         is_sub: false
-      - title: "Req 10 — Core Moving-Water Maneuvers"
+      - title: "10. Core Moving-Water Maneuvers"
         url: "/merit-badges/whitewater/guide/req10/"
         is_sub: false
-      - title: "Req 11 — Rescue and Recovery Skills"
+      - title: "11. Rescue and Recovery Skills"
         url: "/merit-badges/whitewater/guide/req11/"
         is_sub: false
-      - title: "Req 12 — Plan and Paddle a Real Trip"
+      - title: "12. Plan and Paddle a Real Trip"
         url: "/merit-badges/whitewater/guide/req12/"
         is_sub: false
   - group_title: "Beyond the Badge"

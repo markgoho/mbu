@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Sound Signals and Silent Scout Signals"
+title: "Sound Signals and Silent Scout Signals"
 layout: "guide"
-group_title: "Group Signaling"
+group_title: "6. Group Signaling"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/signs-signals-and-codes/guide/req5/"
-prev_title: "Req 5 — Reading and Writing Braille"
+prev_title: "Reading and Writing Braille"
 next: "/merit-badges/signs-signals-and-codes/guide/req7/"
-next_title: "Req 7 — Trail Markers With Outdoor Ethics"
+next_title: "Trail Markers With Outdoor Ethics"
 ---
 
 {{< drg/requirement number="6" >}}

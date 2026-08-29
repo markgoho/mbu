@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choosing Your Three Projects"
+title: "Choosing Your Three Projects"
 layout: "guide"
-group_title: "Building Programs"
+group_title: "5. Building Programs"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/programming/guide/req4/"
-prev_title: "Req 4 — Intellectual Property and Software Use"
+prev_title: "Intellectual Property and Software Use"
 next: "/merit-badges/programming/guide/req5a/"
-next_title: "Req 5a — First Language Project"
+next_title: "First Language Project"
 ---
 
 {{< drg/requirement number="5" >}}

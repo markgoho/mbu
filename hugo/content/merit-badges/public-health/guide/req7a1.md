@@ -1,13 +1,13 @@
 ---
-title: "Req 7a1 — Visit a Public Health Agency"
+title: "Visit a Public Health Agency"
 layout: "guide"
-group_title: "Public Health Agencies"
+group_title: "7. Public Health Agencies"
 req_number: "7a1"
 req_path: "7.a.1"
 prev: "/merit-badges/public-health/guide/req7a/"
-prev_title: "Req 7a — Choose Your Agency Research Path"
+prev_title: "Choose Your Agency Research Path"
 next: "/merit-badges/public-health/guide/req7a2/"
-next_title: "Req 7a2 — Investigate an Agency Website"
+next_title: "Investigate an Agency Website"
 ---
 
 {{< drg/requirement number="7a1" >}}

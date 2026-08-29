@@ -1,13 +1,13 @@
 ---
-title: "Req 7d5 — One-Day Hike Gear"
+title: "One-Day Hike Gear"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d5"
 req_path: "7.d.5"
 prev: "/merit-badges/snow-sports/guide/req7d4/"
-prev_title: "Req 7d4 — Care & Maintenance"
+prev_title: "Care & Maintenance"
 next: "/merit-badges/snow-sports/guide/req7d6/"
-next_title: "Req 7d6 — Best Areas & Backcountry"
+next_title: "Best Areas & Backcountry"
 ---
 
 {{< drg/requirement number="7d5" >}}

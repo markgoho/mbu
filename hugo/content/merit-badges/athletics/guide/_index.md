@@ -4,93 +4,93 @@ layout: guide
 badge_name: "Athletics"
 group_title: "Getting Started"
 next: "/merit-badges/athletics/guide/req1a/"
-next_title: "Req 1a — Safety Hazards"
+next_title: "Safety Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/athletics/guide/"
-  - group_title: "Safety & First Aid"
+  - group_title: "1. Safety & First Aid"
     items:
-      - title: "Req 1a — Safety Hazards"
+      - title: "a Safety Hazards"
         url: "/merit-badges/athletics/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — First Aid for Athletes"
+      - title: "b First Aid for Athletes"
         url: "/merit-badges/athletics/guide/req1b/"
         is_sub: true
-  - group_title: "Health & Nutrition"
+  - group_title: "2. Health & Nutrition"
     items:
-      - title: "Req 2a — Physical Examinations"
+      - title: "a Physical Examinations"
         url: "/merit-badges/athletics/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Healthy Habits"
+      - title: "b Healthy Habits"
         url: "/merit-badges/athletics/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Balanced Diet"
+      - title: "c Balanced Diet"
         url: "/merit-badges/athletics/guide/req2c/"
         is_sub: true
-  - group_title: "Training & Progress"
+  - group_title: "3. Training & Progress"
     items:
-      - title: "Req 3 — Personal Training Program"
+      - title: "3. Personal Training Program"
         url: "/merit-badges/athletics/guide/req3/"
         is_sub: false
       - title: "Athletics Training Log"
         url: "/merit-badges/athletics/guide/training-log/"
         is_sub: true
-  - group_title: "Rules & Sportsmanship"
+  - group_title: "4. Rules & Sportsmanship"
     items:
-      - title: "Req 4a — Rules of the Game"
+      - title: "a Rules of the Game"
         url: "/merit-badges/athletics/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Warm-Ups & Cool-Downs"
+      - title: "b Warm-Ups & Cool-Downs"
         url: "/merit-badges/athletics/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Amateur vs. Professional"
+      - title: "c Amateur vs. Professional"
         url: "/merit-badges/athletics/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Sportsmanship"
+      - title: "d Sportsmanship"
         url: "/merit-badges/athletics/guide/req4d/"
         is_sub: true
-  - group_title: "Performance Options"
+  - group_title: "5. Performance Options"
     items:
-      - title: "Req 5 — Athletic Options Overview"
+      - title: "5. Athletic Options Overview"
         url: "/merit-badges/athletics/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Sprinting"
+      - title: "a Sprinting"
         url: "/merit-badges/athletics/guide/req5-sprinting/"
         is_sub: true
-      - title: "Req 5b — Long-Distance Running"
+      - title: "b Long-Distance Running"
         url: "/merit-badges/athletics/guide/req5-long-distance-running/"
         is_sub: true
-      - title: "Req 5c — Long Jump or High Jump"
+      - title: "c Long Jump or High Jump"
         url: "/merit-badges/athletics/guide/req5-jumping/"
         is_sub: true
-      - title: "Req 5d — Swimming"
+      - title: "d Swimming"
         url: "/merit-badges/athletics/guide/req5-swimming/"
         is_sub: true
-      - title: "Req 5e — Pull-Ups & Push-Ups"
+      - title: "e Pull-Ups & Push-Ups"
         url: "/merit-badges/athletics/guide/req5-pull-ups-push-ups/"
         is_sub: true
-      - title: "Req 5f — Baseball Throw"
+      - title: "f Baseball Throw"
         url: "/merit-badges/athletics/guide/req5-baseball-throw/"
         is_sub: true
-      - title: "Req 5g — Basketball Shooting"
+      - title: "g Basketball Shooting"
         url: "/merit-badges/athletics/guide/req5-basketball-shooting/"
         is_sub: true
-      - title: "Req 5h — Football or Soccer Kick"
+      - title: "h Football or Soccer Kick"
         url: "/merit-badges/athletics/guide/req5-football-soccer-kick/"
         is_sub: true
-      - title: "Req 5i — Weight Training"
+      - title: "i Weight Training"
         url: "/merit-badges/athletics/guide/req5-weight-training/"
         is_sub: true
-  - group_title: "Organizing & Officiating"
+  - group_title: "6. Organizing & Officiating"
     items:
-      - title: "Req 6 — Planning a Sports Meet"
+      - title: "6. Planning a Sports Meet"
         url: "/merit-badges/athletics/guide/req6/"
         is_sub: false
-  - group_title: "Careers & Beyond"
+  - group_title: "7. Careers & Beyond"
     items:
-      - title: "Req 7 — Careers & Lifestyle"
+      - title: "7. Careers & Lifestyle"
         url: "/merit-badges/athletics/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

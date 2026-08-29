@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — What Is Animation?"
+title: "What Is Animation?"
 layout: guide
-group_title: "Understanding Animation"
+group_title: "1. Understanding Animation"
 req_number: "1a"
 prev: "/merit-badges/animation/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/animation/guide/req1b/"
-next_title: "Req 1b — History of Animation"
+next_title: "History of Animation"
 ---
 
 {{< drg/requirement number="1a" >}}

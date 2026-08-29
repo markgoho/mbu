@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Defining Sustainability"
+title: "Defining Sustainability"
 layout: guide
-group_title: "What Is Sustainability?"
+group_title: "1. What Is Sustainability?"
 req_number: "1"
 prev: "/merit-badges/sustainability/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/sustainability/guide/req2a/"
-next_title: "Req 2a — Household Water Usage"
+next_title: "Household Water Usage"
 ---
 
 {{< drg/requirement number="1" >}}

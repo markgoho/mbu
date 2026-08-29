@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Research, Product Knowledge, and Follow-Up"
+title: "Research, Product Knowledge, and Follow-Up"
 layout: "guide"
-group_title: "Preparing to Sell Well"
+group_title: "2. Preparing to Sell Well"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/salesmanship/guide/req1/"
-prev_title: "Req 1 — What Great Salespeople Actually Do"
+prev_title: "What Great Salespeople Actually Do"
 next: "/merit-badges/salesmanship/guide/req3/"
-next_title: "Req 3 — Build a Sales Plan"
+next_title: "Build a Sales Plan"
 ---
 
 {{< drg/requirement number="2" >}}

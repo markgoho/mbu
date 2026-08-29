@@ -1,12 +1,12 @@
 ---
-title: "Req 5i — Weight Training"
+title: "Weight Training"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5i"
 prev: "/merit-badges/athletics/guide/req5-football-soccer-kick/"
-prev_title: "Req 5h — Football or Soccer Kick"
+prev_title: "Football or Soccer Kick"
 next: "/merit-badges/athletics/guide/req6/"
-next_title: "Req 6 — Planning a Sports Meet"
+next_title: "Planning a Sports Meet"
 ---
 
 {{< drg/requirement number="5" option="Option I—Weight Training" >}}

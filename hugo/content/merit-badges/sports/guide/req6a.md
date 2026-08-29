@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Explore a Sports Career"
+title: "Explore a Sports Career"
 layout: "guide"
-group_title: "Beyond Participation"
+group_title: "6. Beyond Participation"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/sports/guide/req6/"
-prev_title: "Req 6 — Choose Your Next Step"
+prev_title: "Choose Your Next Step"
 next: "/merit-badges/sports/guide/req6b/"
-next_title: "Req 6b — Build a Sports-Based Lifestyle"
+next_title: "Build a Sports-Based Lifestyle"
 ---
 
 {{< drg/requirement number="6a" >}}

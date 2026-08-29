@@ -1,13 +1,13 @@
 ---
-title: "Req 5b — Radon at Home"
+title: "Radon at Home"
 layout: "guide"
-group_title: "Radiation Protection"
+group_title: "5. Radiation Protection"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/nuclear-science/guide/req5a/"
-prev_title: "Req 5a — Time, Distance, and Shielding"
+prev_title: "Time, Distance, and Shielding"
 next: "/merit-badges/nuclear-science/guide/req5c/"
-next_title: "Req 5c — X-Ray Room Safety"
+next_title: "X-Ray Room Safety"
 ---
 
 {{< drg/requirement number="5b" >}}

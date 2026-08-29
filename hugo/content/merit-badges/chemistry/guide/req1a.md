@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Safety Data Sheets"
+title: "Safety Data Sheets"
 layout: guide
-group_title: "Chemical Safety"
+group_title: "1. Chemical Safety"
 req_number: "1a"
 prev: "/merit-badges/chemistry/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/chemistry/guide/req1b/"
-next_title: "Req 1b — Personal Protective Equipment"
+next_title: "Personal Protective Equipment"
 ---
 
 {{< drg/requirement number="1a" >}}

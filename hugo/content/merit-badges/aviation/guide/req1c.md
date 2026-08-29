@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Fixed Wing vs. Rotary Wing"
+title: "Fixed Wing vs. Rotary Wing"
 layout: guide
-group_title: "Aviation Basics"
+group_title: "1. Aviation Basics"
 req_number: "1c"
 prev: "/merit-badges/aviation/guide/req1b/"
-prev_title: "Req 1b — History of Flight"
+prev_title: "History of Flight"
 next: "/merit-badges/aviation/guide/req1d/"
-next_title: "Req 1d — How Engines Work"
+next_title: "How Engines Work"
 ---
 
 {{< drg/requirement number="1c" >}}

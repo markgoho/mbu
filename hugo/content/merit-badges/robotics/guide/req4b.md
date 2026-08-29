@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Sketch the System"
+title: "Sketch the System"
 layout: "guide"
-group_title: "Design and Build Your Robot"
+group_title: "4. Design and Build Your Robot"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/robotics/guide/req4a/"
-prev_title: "Req 4a — Choose the Mission"
+prev_title: "Choose the Mission"
 next: "/merit-badges/robotics/guide/req4c/"
-next_title: "Req 4c — Build Your Prototype"
+next_title: "Build Your Prototype"
 ---
 
 {{< drg/requirement number="4b" >}}

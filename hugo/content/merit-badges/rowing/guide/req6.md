@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Swamped Boat Recovery"
+title: "Swamped Boat Recovery"
 layout: "guide"
-group_title: "Rescue Skills"
+group_title: "6. Rescue Skills"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/rowing/guide/req5b/"
-prev_title: "Req 5b — Sliding-Seat Dock Exchange"
+prev_title: "Sliding-Seat Dock Exchange"
 next: "/merit-badges/rowing/guide/req7/"
-next_title: "Req 7 — Towing a Swimmer"
+next_title: "Towing a Swimmer"
 ---
 
 {{< drg/requirement number="6" >}}

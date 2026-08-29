@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — Composition of the Sun"
+title: "Composition of the Sun"
 layout: guide
-group_title: "Our Sun & the Stars"
+group_title: "7. Our Sun & the Stars"
 req_number: "7a"
 prev: "/merit-badges/astronomy/guide/req6d/"
-prev_title: "Req 6d — Eclipses & Moon Phases"
+prev_title: "Eclipses & Moon Phases"
 next: "/merit-badges/astronomy/guide/req7b/"
-next_title: "Req 7b — Sunspots"
+next_title: "Sunspots"
 ---
 
 {{< drg/requirement number="7a" >}}

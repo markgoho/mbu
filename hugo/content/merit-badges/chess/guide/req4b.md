@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Opening, Middle & Endgame"
+title: "Opening, Middle & Endgame"
 layout: guide
-group_title: "Mastering the Game"
+group_title: "4. Mastering the Game"
 req_number: "4b"
 prev: "/merit-badges/chess/guide/req4a/"
-prev_title: "Req 4a — Algebraic Notation"
+prev_title: "Algebraic Notation"
 next: "/merit-badges/chess/guide/req4c/"
-next_title: "Req 4c — Opening Principles & Openings"
+next_title: "Opening Principles & Openings"
 ---
 
 {{< drg/requirement number="4b" >}}

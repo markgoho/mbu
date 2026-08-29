@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Directing"
+title: "Directing"
 layout: guide
-group_title: "Behind the Curtain"
+group_title: "3. Behind the Curtain"
 req_number: "3b"
 prev: "/merit-badges/theater/guide/req3a/"
-prev_title: "Req 3a — Acting"
+prev_title: "Acting"
 next: "/merit-badges/theater/guide/req3c/"
-next_title: "Req 3c — Set Design"
+next_title: "Set Design"
 ---
 
 {{< drg/requirement number="3b" >}}

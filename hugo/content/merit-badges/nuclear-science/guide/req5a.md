@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Time, Distance, and Shielding"
+title: "Time, Distance, and Shielding"
 layout: "guide"
-group_title: "Radiation Protection"
+group_title: "5. Radiation Protection"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/nuclear-science/guide/req5/"
-prev_title: "Req 5 — Choose a Safety Investigation"
+prev_title: "Choose a Safety Investigation"
 next: "/merit-badges/nuclear-science/guide/req5b/"
-next_title: "Req 5b — Radon at Home"
+next_title: "Radon at Home"
 ---
 
 {{< drg/requirement number="5a" >}}

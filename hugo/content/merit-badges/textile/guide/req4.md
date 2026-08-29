@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Talk Like a Textile Maker"
+title: "Talk Like a Textile Maker"
 layout: "guide"
-group_title: "Textile Vocabulary"
+group_title: "4. Textile Vocabulary"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/textile/guide/req3g/"
-prev_title: "Req 3g — Identify Fibers"
+prev_title: "Identify Fibers"
 next: "/merit-badges/textile/guide/req5/"
-next_title: "Req 5 — Compare Fibers and Their Footprint"
+next_title: "Compare Fibers and Their Footprint"
 ---
 
 {{< drg/requirement number="4" >}}

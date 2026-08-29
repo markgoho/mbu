@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Career or Hobby Path"
+title: "Career or Hobby Path"
 layout: guide
-group_title: "Where Geology Can Take You"
+group_title: "6. Where Geology Can Take You"
 req_number: "6"
 prev: "/merit-badges/geology/guide/req5/"
-prev_title: "Req 5 — Leave No Trace and the Outdoor Code"
+prev_title: "Leave No Trace and the Outdoor Code"
 next: "/merit-badges/geology/guide/req6a/"
-next_title: "Req 6a — Geology Careers"
+next_title: "Geology Careers"
 ---
 
 {{< drg/requirement number="6" >}}

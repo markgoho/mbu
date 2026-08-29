@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Interviewing an Entrepreneur"
+title: "Interviewing an Entrepreneur"
 layout: guide
-group_title: "Real-World Research"
+group_title: "3. Real-World Research"
 req_number: "3"
 prev: "/merit-badges/entrepreneurship/guide/req2/"
-prev_title: "Req 2 — Essential Entrepreneur Skills"
+prev_title: "Essential Entrepreneur Skills"
 next: "/merit-badges/entrepreneurship/guide/req4/"
-next_title: "Req 4 — Brainstorming Business Ideas"
+next_title: "Brainstorming Business Ideas"
 ---
 
 {{< drg/requirement number="3" >}}

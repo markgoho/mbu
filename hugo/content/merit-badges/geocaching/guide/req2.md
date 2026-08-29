@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Geocaching Etiquette and Leave No Trace"
+title: "Geocaching Etiquette and Leave No Trace"
 layout: guide
-group_title: "Ethics in the Field"
+group_title: "2. Ethics in the Field"
 req_number: "2"
 prev: "/merit-badges/geocaching/guide/req1/"
-prev_title: "Req 1 — Safety, First Aid, and Planning"
+prev_title: "Safety, First Aid, and Planning"
 next: "/merit-badges/geocaching/guide/req3/"
-next_title: "Req 3 — Geocaching Terms and Ratings"
+next_title: "Geocaching Terms and Ratings"
 ---
 
 {{< drg/requirement number="2" >}}

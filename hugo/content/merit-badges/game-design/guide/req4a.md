@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Play the Original Game"
+title: "Play the Original Game"
 layout: guide
-group_title: "Testing Rules"
+group_title: "4. Testing Rules"
 req_number: "4a"
 prev: "/merit-badges/game-design/guide/req3/"
-prev_title: "Req 3 — Intellectual Property"
+prev_title: "Intellectual Property"
 next: "/merit-badges/game-design/guide/req4b/"
-next_title: "Req 4b — Predict Rule Changes"
+next_title: "Predict Rule Changes"
 ---
 
 {{< drg/requirement number="4a" >}}

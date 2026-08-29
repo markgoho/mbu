@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Research Your Scouting Community"
+title: "Research Your Scouting Community"
 layout: "guide"
-group_title: "Your Scouting Story"
+group_title: "5. Your Scouting Story"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/scouting-heritage/guide/req4c/"
-prev_title: "Req 4c — Local Scouting History Visit"
+prev_title: "Local Scouting History Visit"
 next: "/merit-badges/scouting-heritage/guide/req6/"
-next_title: "Req 6 — Build a Memorabilia Collection"
+next_title: "Build a Memorabilia Collection"
 ---
 
 {{< drg/requirement number="5" >}}

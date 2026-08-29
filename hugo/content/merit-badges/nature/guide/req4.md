@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose Your Five Field Studies"
+title: "Choose Your Five Field Studies"
 layout: "guide"
-group_title: "Field Study Options"
+group_title: "4. Field Study Options"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/nature/guide/req3/"
-prev_title: "Req 3 — Food Chains in Action"
+prev_title: "Food Chains in Action"
 next: "/merit-badges/nature/guide/req4a/"
-next_title: "Req 4a — Birds in the Field"
+next_title: "Birds in the Field"
 ---
 
 {{< drg/requirement number="4" >}}

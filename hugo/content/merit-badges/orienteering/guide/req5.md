@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Pace Counting"
+title: "Pace Counting"
 layout: guide
-group_title: "Pace Counting"
+group_title: "5. Pace Counting"
 req_number: "5"
 prev: "/merit-badges/orienteering/guide/req4ef/"
-prev_title: "Req 4e–4f — Distances and Orienting a Map"
+prev_title: "Distances and Orienting a Map"
 next: "/merit-badges/orienteering/guide/req6a/"
-next_title: "Req 6a — Control Description Symbols"
+next_title: "Control Description Symbols"
 ---
 
 {{< drg/requirement number="5" >}}

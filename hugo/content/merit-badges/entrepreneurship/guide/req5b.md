@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Market Analysis"
+title: "Market Analysis"
 layout: guide
-group_title: "Building Your Business Plan"
+group_title: "5. Building Your Business Plan"
 req_number: "5b"
 prev: "/merit-badges/entrepreneurship/guide/req5a/"
-prev_title: "Req 5a — Product or Service"
+prev_title: "Product or Service"
 next: "/merit-badges/entrepreneurship/guide/req5c/"
-next_title: "Req 5c — Financial Plan"
+next_title: "Financial Plan"
 ---
 
 {{< drg/requirement number="5b" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7b7 — Map & Compass"
+title: "Map & Compass"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b7"
 req_path: "7.b.7"
 prev: "/merit-badges/snow-sports/guide/req7b6/"
-prev_title: "Req 7b6 — One-Day Tour Gear"
+prev_title: "One-Day Tour Gear"
 next: "/merit-badges/snow-sports/guide/req7b8/"
-next_title: "Req 7b8 — Speed & Direction Control"
+next_title: "Speed & Direction Control"
 ---
 
 {{< drg/requirement number="7b7" >}}

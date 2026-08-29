@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Contribute to a Team Project"
+title: "Contribute to a Team Project"
 layout: "guide"
-group_title: "Teamwork at School"
+group_title: "4. Teamwork at School"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/scholarship/guide/req4a/"
-prev_title: "Req 4a — Join an Activity"
+prev_title: "Join an Activity"
 next: "/merit-badges/scholarship/guide/req5/"
-next_title: "Req 5 — Write About Your Future"
+next_title: "Write About Your Future"
 ---
 
 {{< drg/requirement number="4b" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6b1 — Choosing Two Transect Sites"
+title: "Choosing Two Transect Sites"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6b1"
 req_path: "8.c.6.b.1"
 prev: "/merit-badges/plant-science/guide/req8c6b/"
-prev_title: "Req 8c6b — Transect Study"
+prev_title: "Transect Study"
 next: "/merit-badges/plant-science/guide/req8c6b2/"
-next_title: "Req 8c6b2 — Running a Transect"
+next_title: "Run the Transect"
 ---
 
 {{< drg/requirement number="8c6b1" >}}

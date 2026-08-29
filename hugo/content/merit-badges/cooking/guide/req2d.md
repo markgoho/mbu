@@ -1,12 +1,12 @@
 ---
-title: "Req 2d — Healthy Eating Habits"
+title: "Healthy Eating Habits"
 layout: guide
-group_title: "Nutrition"
+group_title: "2. Nutrition"
 req_number: "2d"
 prev: "/merit-badges/cooking/guide/req2c/"
-prev_title: "Req 2c — Activity & Calories"
+prev_title: "Activity & Calories"
 next: "/merit-badges/cooking/guide/req2e/"
-next_title: "Req 2e — Food Label Terms"
+next_title: "Food Label Terms"
 ---
 
 {{< drg/requirement number="2d" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Needs vs. Wants"
+title: "Needs vs. Wants"
 layout: guide
-group_title: "Stuff & Waste"
+group_title: "6. Stuff & Waste"
 req_number: "6a"
 prev: "/merit-badges/sustainability/guide/req5c/"
-prev_title: "Req 5c — Reducing Home Energy"
+prev_title: "Reducing Home Energy"
 next: "/merit-badges/sustainability/guide/req6b/"
-next_title: "Req 6b — Impact of Too Much Stuff"
+next_title: "Impact of Too Much Stuff"
 ---
 
 {{< drg/requirement number="6" >}}

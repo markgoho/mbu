@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Hands-On Digital Projects"
+title: "Hands-On Digital Projects"
 layout: guide
-group_title: "Digital Projects"
+group_title: "6. Digital Projects"
 req_number: "6"
 prev: "/merit-badges/digital-technology/guide/req5c/"
-prev_title: "Req 5c — HTTPS & Security Certificates"
+prev_title: "HTTPS & Security Certificates"
 next: "/merit-badges/digital-technology/guide/req7a/"
-next_title: "Req 7a — Copyrights, Patents & Trademarks"
+next_title: "Copyrights, Patents & Trademarks"
 ---
 
 {{< drg/requirement number="6" >}}

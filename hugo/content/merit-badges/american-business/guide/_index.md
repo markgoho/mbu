@@ -4,68 +4,68 @@ layout: guide
 badge_name: "American Business"
 group_title: "Getting Started"
 next: "/merit-badges/american-business/guide/req1a/"
-next_title: "Req 1a — Free Enterprise"
+next_title: "Free Enterprise"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-business/guide/"
-  - group_title: "Foundations of American Business"
+  - group_title: "1. Foundations of American Business"
     items:
-      - title: "Req 1a — Free Enterprise"
+      - title: "a Free Enterprise"
         url: "/merit-badges/american-business/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — The Industrial Revolution"
+      - title: "b The Industrial Revolution"
         url: "/merit-badges/american-business/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Areas of Business"
+      - title: "c Areas of Business"
         url: "/merit-badges/american-business/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Labor Unions"
+      - title: "d Labor Unions"
         url: "/merit-badges/american-business/guide/req1d/"
         is_sub: true
-      - title: "Req 1e — Business & the Economy"
+      - title: "e Business & the Economy"
         url: "/merit-badges/american-business/guide/req1e/"
         is_sub: true
-  - group_title: "Money & Finance"
+  - group_title: "2. Money & Finance"
     items:
-      - title: "Req 2a — Financial Statements"
+      - title: "a Financial Statements"
         url: "/merit-badges/american-business/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Interest, Taxes & Spending"
+      - title: "b Interest, Taxes & Spending"
         url: "/merit-badges/american-business/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Raising Capital"
+      - title: "c Raising Capital"
         url: "/merit-badges/american-business/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Business Insurance"
+      - title: "d Business Insurance"
         url: "/merit-badges/american-business/guide/req2d/"
         is_sub: true
-  - group_title: "Business Practices & Ethics"
+  - group_title: "3. Business Practices & Ethics"
     items:
-      - title: "Req 3a — The Role of Profit"
+      - title: "a The Role of Profit"
         url: "/merit-badges/american-business/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Green Marketing & Sustainability"
+      - title: "b Green Marketing & Sustainability"
         url: "/merit-badges/american-business/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Business Ethics"
+      - title: "c Business Ethics"
         url: "/merit-badges/american-business/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Brick-and-Mortar vs. Online"
+      - title: "d Brick-and-Mortar vs. Online"
         url: "/merit-badges/american-business/guide/req3d/"
         is_sub: true
-  - group_title: "Labor & Government"
+  - group_title: "4. Labor & Government"
     items:
-      - title: "Req 4 — Labor Laws & Protections"
+      - title: "4. Labor Laws & Protections"
         url: "/merit-badges/american-business/guide/req4/"
         is_sub: false
-  - group_title: "Putting It All Together"
+  - group_title: "5. Putting It All Together"
     items:
-      - title: "Req 5 — Researching a Business"
+      - title: "5. Researching a Business"
         url: "/merit-badges/american-business/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Careers & Leadership"
+      - title: "6. Careers & Leadership"
         url: "/merit-badges/american-business/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

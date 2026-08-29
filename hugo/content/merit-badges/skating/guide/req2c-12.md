@@ -1,13 +1,13 @@
 ---
-title: "Req 2c12 — Mohawk"
+title: "Mohawk"
 layout: "guide"
-group_title: "Option C — In-Line Skating"
+group_title: "2. Option C — In-Line Skating"
 req_number: "2c12"
 req_path: "2.c.12"
 prev: "/merit-badges/skating/guide/req2c-11/"
-prev_title: "Req 2c11 — Lunge Turn"
+prev_title: "Lunge Turn"
 next: "/merit-badges/skating/guide/req2c-13/"
-next_title: "Req 2c13 — One-Foot Downhill Slalom"
+next_title: "One-Foot Downhill Slalom"
 ---
 
 {{< drg/requirement number="2c12" >}}

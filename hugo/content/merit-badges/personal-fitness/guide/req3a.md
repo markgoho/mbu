@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Exercise & the Four Components"
+title: "Exercise & the Four Components"
 layout: guide
-group_title: "Fitness Knowledge & Habits"
+group_title: "3. Fitness Knowledge & Habits"
 req_number: "3a"
 prev: "/merit-badges/personal-fitness/guide/req2b/"
-prev_title: "Req 2b — Dental Health"
+prev_title: "Dental Health"
 next: "/merit-badges/personal-fitness/guide/req3b/"
-next_title: "Req 3b — Avoiding Harmful Substances"
+next_title: "Avoiding Harmful Substances"
 ---
 
 {{< drg/requirement number="3a" >}}

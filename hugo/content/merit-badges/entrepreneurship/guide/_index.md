@@ -4,44 +4,44 @@ layout: guide
 badge_name: "Entrepreneurship"
 group_title: "Getting Started"
 next: "/merit-badges/entrepreneurship/guide/req1/"
-next_title: "Req 1 — Defining Entrepreneurship"
+next_title: "Defining Entrepreneurship"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/entrepreneurship/guide/"
-  - group_title: "Foundations"
+  - group_title: "1. Foundations"
     items:
-      - title: "Req 1 — Defining Entrepreneurship"
+      - title: "1. Defining Entrepreneurship"
         url: "/merit-badges/entrepreneurship/guide/req1/"
-      - title: "Req 2 — Essential Entrepreneur Skills"
+      - title: "2. Essential Entrepreneur Skills"
         url: "/merit-badges/entrepreneurship/guide/req2/"
-  - group_title: "Real-World Research"
+  - group_title: "3. Real-World Research"
     items:
-      - title: "Req 3 — Interviewing an Entrepreneur"
+      - title: "3. Interviewing an Entrepreneur"
         url: "/merit-badges/entrepreneurship/guide/req3/"
-      - title: "Req 4 — Brainstorming Business Ideas"
+      - title: "4. Brainstorming Business Ideas"
         url: "/merit-badges/entrepreneurship/guide/req4/"
-  - group_title: "Building Your Business Plan"
+  - group_title: "5. Building Your Business Plan"
     items:
-      - title: "Req 5a — Product or Service"
+      - title: "a Product or Service"
         url: "/merit-badges/entrepreneurship/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Market Analysis"
+      - title: "b Market Analysis"
         url: "/merit-badges/entrepreneurship/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Financial Plan"
+      - title: "c Financial Plan"
         url: "/merit-badges/entrepreneurship/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Personnel Plan"
+      - title: "d Personnel Plan"
         url: "/merit-badges/entrepreneurship/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Promotion & Marketing"
+      - title: "e Promotion & Marketing"
         url: "/merit-badges/entrepreneurship/guide/req5e/"
         is_sub: true
-  - group_title: "Launch & Reflect"
+  - group_title: "6. Launch & Reflect"
     items:
-      - title: "Req 6 — Running the Business"
+      - title: "6. Running the Business"
         url: "/merit-badges/entrepreneurship/guide/req6/"
   - group_title: "Beyond the Badge"
     items:

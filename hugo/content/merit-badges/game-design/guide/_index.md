@@ -4,72 +4,72 @@ layout: guide
 badge_name: "Game Design"
 group_title: "Getting Started"
 next: "/merit-badges/game-design/guide/req1a/"
-next_title: "Req 1a — Comparing Games"
+next_title: "Comparing Games"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/game-design/guide/"
-  - group_title: "Thinking Like a Designer"
+  - group_title: "1. Thinking Like a Designer"
     items:
-      - title: "Req 1a — Comparing Games"
+      - title: "a Comparing Games"
         url: "/merit-badges/game-design/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Why People Play"
+      - title: "b Why People Play"
         url: "/merit-badges/game-design/guide/req1b/"
         is_sub: true
-      - title: "Req 2 — Core Design Terms"
+      - title: "2. Core Design Terms"
         url: "/merit-badges/game-design/guide/req2/"
-      - title: "Req 3 — Intellectual Property"
+      - title: "3. Intellectual Property"
         url: "/merit-badges/game-design/guide/req3/"
-  - group_title: "Testing Rules"
+  - group_title: "4. Testing Rules"
     items:
-      - title: "Req 4a — Play the Original Game"
+      - title: "a Play the Original Game"
         url: "/merit-badges/game-design/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Predict Rule Changes"
+      - title: "b Predict Rule Changes"
         url: "/merit-badges/game-design/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Observe New Reactions"
+      - title: "c Observe New Reactions"
         url: "/merit-badges/game-design/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Analyze the Results"
+      - title: "d Analyze the Results"
         url: "/merit-badges/game-design/guide/req4d/"
         is_sub: true
-  - group_title: "Designing Your Game"
+  - group_title: "5. Designing Your Game"
     items:
-      - title: "Req 5a — Vision, Theme, and Players"
+      - title: "a Vision, Theme, and Players"
         url: "/merit-badges/game-design/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Why Your Game Is Fun"
+      - title: "b Why Your Game Is Fun"
         url: "/merit-badges/game-design/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Rules and Resources"
+      - title: "c Rules and Resources"
         url: "/merit-badges/game-design/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Drawing Game Elements"
+      - title: "d Drawing Game Elements"
         url: "/merit-badges/game-design/guide/req5d/"
         is_sub: true
-      - title: "Req 6a — Build the Prototype"
+      - title: "a Build the Prototype"
         url: "/merit-badges/game-design/guide/req6a/"
         is_sub: true
-      - title: "Req 6bc — Test, Change, Repeat"
+      - title: "bc Test, Change, Repeat"
         url: "/merit-badges/game-design/guide/req6bc/"
         is_sub: true
-      - title: "Req 7a — Write Clear Instructions"
+      - title: "a Write Clear Instructions"
         url: "/merit-badges/game-design/guide/req7a/"
         is_sub: true
-      - title: "Req 7bc — Blind Test and Reflect"
+      - title: "bc Blind Test and Reflect"
         url: "/merit-badges/game-design/guide/req7bc/"
         is_sub: true
-  - group_title: "Exploring the Industry"
+  - group_title: "8. Exploring the Industry"
     items:
-      - title: "Req 8 — Choose a Professional Path"
+      - title: "8. Choose a Professional Path"
         url: "/merit-badges/game-design/guide/req8/"
-      - title: "Req 8a — Interview a Game Developer"
+      - title: "a Interview a Game Developer"
         url: "/merit-badges/game-design/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Meet a Game Design Educator"
+      - title: "b Meet a Game Design Educator"
         url: "/merit-badges/game-design/guide/req8b/"
         is_sub: true
   - group_title: "Beyond the Badge"

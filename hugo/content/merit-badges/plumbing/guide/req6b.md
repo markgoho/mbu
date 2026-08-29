@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — Solvent-Welded Plastic Pipe"
+title: "Solvent-Welded Plastic Pipe"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/plumbing/guide/req6a/"
-prev_title: "Req 6a — Hardware Store Field ID"
+prev_title: "Hardware Store Field ID"
 next: "/merit-badges/plumbing/guide/req6c/"
-next_title: "Req 6c — PEX Connections"
+next_title: "PEX Connections"
 ---
 
 {{< drg/requirement number="6b" >}}

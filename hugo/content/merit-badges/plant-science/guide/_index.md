@@ -4,197 +4,197 @@ layout: "guide"
 badge_name: "Plant Science"
 group_title: "Getting Started"
 next: "/merit-badges/plant-science/guide/req1/"
-next_title: "Req 1 — Flower Parts and Jobs"
+next_title: "Flower Parts and Jobs"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/plant-science/guide/"
         is_sub: false
-  - group_title: "Plant Anatomy"
+  - group_title: "1. Plant Anatomy"
     items:
-      - title: "Req 1 — Flower Parts and Jobs"
+      - title: "1. Flower Parts and Jobs"
         url: "/merit-badges/plant-science/guide/req1/"
         is_sub: false
-  - group_title: "Photosynthesis & Human Dependence"
+  - group_title: "2. Photosynthesis & Human Dependence"
     items:
-      - title: "Req 2 — Photosynthesis and Why Plants Matter"
+      - title: "2. Photosynthesis and Why Plants Matter"
         url: "/merit-badges/plant-science/guide/req2/"
         is_sub: false
-  - group_title: "Pollination"
+  - group_title: "3. Pollination"
     items:
-      - title: "Req 3 — Pollinators at Work"
+      - title: "3. Pollinators at Work"
         url: "/merit-badges/plant-science/guide/req3/"
         is_sub: false
-  - group_title: "Growing Conditions & Soil"
+  - group_title: "4. Growing Conditions & Soil"
     items:
-      - title: "Req 4 — What Plants Need to Thrive"
+      - title: "4. What Plants Need to Thrive"
         url: "/merit-badges/plant-science/guide/req4/"
         is_sub: false
-  - group_title: "Plant Propagation"
+  - group_title: "5. Plant Propagation"
     items:
-      - title: "Req 5 — Propagation in Practice"
+      - title: "5. Propagation in Practice"
         url: "/merit-badges/plant-science/guide/req5/"
         is_sub: false
-  - group_title: "Local Plants & Invasives"
+  - group_title: "6. Local Plants & Invasives"
     items:
-      - title: "Req 6 — Native, Cultivated, and Invasive Plants"
+      - title: "6. Native, Cultivated, and Invasive Plants"
         url: "/merit-badges/plant-science/guide/req6/"
         is_sub: false
-  - group_title: "Careers & Hobbies"
+  - group_title: "7. Careers & Hobbies"
     items:
-      - title: "Req 7 — Careers or Hobbies"
+      - title: "7. Careers or Hobbies"
         url: "/merit-badges/plant-science/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Exploring Plant Science Careers"
+      - title: "a Exploring Plant Science Careers"
         url: "/merit-badges/plant-science/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Plant Science as a Hobby"
+      - title: "b Plant Science as a Hobby"
         url: "/merit-badges/plant-science/guide/req7b/"
         is_sub: true
-  - group_title: "Choose Your Specialty"
+  - group_title: "8. Choose Your Specialty"
     items:
-      - title: "Req 8 — Choose a Plant Science Track"
+      - title: "8. Choose a Plant Science Track"
         url: "/merit-badges/plant-science/guide/req8/"
         is_sub: false
-  - group_title: "Option A — Agronomy"
+  - group_title: "8. Option A — Agronomy"
     items:
-      - title: "Req 8a — Agronomy Overview"
+      - title: "a Agronomy Overview"
         url: "/merit-badges/plant-science/guide/req8a/"
         is_sub: false
-      - title: "Req 8a1 — Preparing a Seedbed"
+      - title: "a Preparing a Seedbed"
         url: "/merit-badges/plant-science/guide/req8a1/"
         is_sub: true
-      - title: "Req 8a2 — Seed Germination Tester"
+      - title: "a Seed Germination Tester"
         url: "/merit-badges/plant-science/guide/req8a2/"
         is_sub: true
-      - title: "Req 8a3 — Crop Pests, Diseases & Weeds"
+      - title: "a Crop Pests, Diseases & Weeds"
         url: "/merit-badges/plant-science/guide/req8a3/"
         is_sub: true
-      - title: "Req 8a4 — U.S. Crop Regions"
+      - title: "a U.S. Crop Regions"
         url: "/merit-badges/plant-science/guide/req8a4/"
         is_sub: true
-      - title: "Req 8a5 — Choose a Crop"
+      - title: "a Choose a Crop"
         url: "/merit-badges/plant-science/guide/req8a5/"
         is_sub: false
-      - title: "Req 8a5a — Corn"
+      - title: "a Corn"
         url: "/merit-badges/plant-science/guide/req8a5a/"
         is_sub: true
-      - title: "Req 8a5b — Cotton"
+      - title: "a Cotton"
         url: "/merit-badges/plant-science/guide/req8a5b/"
         is_sub: true
-      - title: "Req 8a5c — Forage Crops"
+      - title: "a Forage Crops"
         url: "/merit-badges/plant-science/guide/req8a5c/"
         is_sub: true
-      - title: "Req 8a5d — Small Grains"
+      - title: "a Small Grains"
         url: "/merit-badges/plant-science/guide/req8a5d/"
         is_sub: true
-      - title: "Req 8a5e — Oil Crops"
+      - title: "a Oil Crops"
         url: "/merit-badges/plant-science/guide/req8a5e/"
         is_sub: true
-  - group_title: "Option B — Horticulture"
+  - group_title: "8. Option B — Horticulture"
     items:
-      - title: "Req 8b — Horticulture Overview"
+      - title: "b Horticulture Overview"
         url: "/merit-badges/plant-science/guide/req8b/"
         is_sub: false
-      - title: "Req 8b1 — Visit a Horticultural Site"
+      - title: "b Visit a Horticultural Site"
         url: "/merit-badges/plant-science/guide/req8b1/"
         is_sub: true
-      - title: "Req 8b2 — Horticulture Terms & Hardiness"
+      - title: "b Horticulture Terms & Hardiness"
         url: "/merit-badges/plant-science/guide/req8b2/"
         is_sub: true
-      - title: "Req 8b3 — Choose a Hands-On Skill"
+      - title: "b Choose a Hands-On Skill"
         url: "/merit-badges/plant-science/guide/req8b3/"
         is_sub: false
-      - title: "Req 8b3a — Propagation Methods"
+      - title: "b Propagation Methods"
         url: "/merit-badges/plant-science/guide/req8b3a/"
         is_sub: true
-      - title: "Req 8b3b — Transplanting Seedlings"
+      - title: "b Transplanting Seedlings"
         url: "/merit-badges/plant-science/guide/req8b3b/"
         is_sub: true
-      - title: "Req 8b3c — Pruning Techniques"
+      - title: "b Pruning Techniques"
         url: "/merit-badges/plant-science/guide/req8b3c/"
         is_sub: true
-      - title: "Req 8b3d — Planting a Tree or Shrub"
+      - title: "b Planting a Tree or Shrub"
         url: "/merit-badges/plant-science/guide/req8b3d/"
         is_sub: true
-      - title: "Req 8b4 — Landscape Design Principles"
+      - title: "b Landscape Design Principles"
         url: "/merit-badges/plant-science/guide/req8b4/"
         is_sub: true
-      - title: "Req 8b5 — Choose a Growing Project"
+      - title: "b Choose a Growing Project"
         url: "/merit-badges/plant-science/guide/req8b5/"
         is_sub: false
-      - title: "Req 8b5a — Bedding Plants"
+      - title: "b Bedding Plants"
         url: "/merit-badges/plant-science/guide/req8b5a/"
         is_sub: true
-      - title: "Req 8b5b — Fruit, Berry & Nut Crops"
+      - title: "b Fruit, Berry & Nut Crops"
         url: "/merit-badges/plant-science/guide/req8b5b/"
         is_sub: true
-      - title: "Req 8b5c — Woody Ornamentals"
+      - title: "b Woody Ornamentals"
         url: "/merit-badges/plant-science/guide/req8b5c/"
         is_sub: true
-      - title: "Req 8b5d — Home Gardening"
+      - title: "b Home Gardening"
         url: "/merit-badges/plant-science/guide/req8b5d/"
         is_sub: true
-  - group_title: "Option C — Field Botany"
+  - group_title: "8. Option C — Field Botany"
     items:
-      - title: "Req 8c — Field Botany Overview"
+      - title: "c Field Botany Overview"
         url: "/merit-badges/plant-science/guide/req8c/"
         is_sub: false
-      - title: "Req 8c1 — Visit a Natural Area"
+      - title: "c Visit a Natural Area"
         url: "/merit-badges/plant-science/guide/req8c1/"
         is_sub: true
-      - title: "Req 8c2 — Study Site Inventory"
+      - title: "c Study Site Inventory"
         url: "/merit-badges/plant-science/guide/req8c2/"
         is_sub: true
-      - title: "Req 8c3 — Identification Keys"
+      - title: "c Identification Keys"
         url: "/merit-badges/plant-science/guide/req8c3/"
         is_sub: true
-      - title: "Req 8c4 — Pressing & Mounting Plants"
+      - title: "c Pressing & Mounting Plants"
         url: "/merit-badges/plant-science/guide/req8c4/"
         is_sub: true
-      - title: "Req 8c5 — Rare Plants"
+      - title: "c Rare Plants"
         url: "/merit-badges/plant-science/guide/req8c5/"
         is_sub: true
-      - title: "Req 8c6 — Choose a Field Study"
+      - title: "c Choose a Field Study"
         url: "/merit-badges/plant-science/guide/req8c6/"
         is_sub: false
-      - title: "Req 8c6a — Tree Inventory"
+      - title: "c Tree Inventory"
         url: "/merit-badges/plant-science/guide/req8c6a/"
         is_sub: true
-      - title: "Req 8c6b — Transect Study"
+      - title: "c Transect Study"
         url: "/merit-badges/plant-science/guide/req8c6b/"
         is_sub: true
-      - title: "Req 8c6b1 — Visit Two Sites"
+      - title: "c Visit Two Sites"
         url: "/merit-badges/plant-science/guide/req8c6b1/"
         is_sub: true
-      - title: "Req 8c6b2 — Run the Transect"
+      - title: "c Run the Transect"
         url: "/merit-badges/plant-science/guide/req8c6b2/"
         is_sub: true
-      - title: "Req 8c6b3 — Record & Graph"
+      - title: "c Record & Graph"
         url: "/merit-badges/plant-science/guide/req8c6b3/"
         is_sub: true
-      - title: "Req 8c6c — Nested Plot"
+      - title: "c Nested Plot"
         url: "/merit-badges/plant-science/guide/req8c6c/"
         is_sub: true
-      - title: "Req 8c6c1 — Visit Two Sites"
+      - title: "c Visit Two Sites"
         url: "/merit-badges/plant-science/guide/req8c6c1/"
         is_sub: true
-      - title: "Req 8c6c2 — Mark Off Plots"
+      - title: "c Mark Off Plots"
         url: "/merit-badges/plant-science/guide/req8c6c2/"
         is_sub: true
-      - title: "Req 8c6c3 — Record & Graph"
+      - title: "c Record & Graph"
         url: "/merit-badges/plant-science/guide/req8c6c3/"
         is_sub: true
-      - title: "Req 8c6d — Herbarium Visit"
+      - title: "c Herbarium Visit"
         url: "/merit-badges/plant-science/guide/req8c6d/"
         is_sub: true
-      - title: "Req 8c6e — Conservation Organization"
+      - title: "c Conservation Organization"
         url: "/merit-badges/plant-science/guide/req8c6e/"
         is_sub: true
-  - group_title: "Leave No Trace"
+  - group_title: "9. Leave No Trace"
     items:
-      - title: "Req 9 — Leave No Trace & Plant Science"
+      - title: "9. Leave No Trace & Plant Science"
         url: "/merit-badges/plant-science/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

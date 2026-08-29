@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Hides, Leather Types, and Best Uses"
+title: "Hides, Leather Types, and Best Uses"
 layout: guide
-group_title: "Safe Leathercraft Basics"
+group_title: "1. Safe Leathercraft Basics"
 req_number: "2"
 prev: "/merit-badges/leatherwork/guide/req1/"
-prev_title: "Req 1 — Shop Safety and First Aid"
+prev_title: "Shop Safety and First Aid"
 next: "/merit-badges/leatherwork/guide/req3/"
-next_title: "Req 3 — Choosing Your Five Skills"
+next_title: "Choosing Your Five Skills"
 ---
 
 {{< drg/requirement number="2" >}}

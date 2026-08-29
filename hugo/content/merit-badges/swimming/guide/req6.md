@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Floating & Survival"
+title: "Floating & Survival"
 layout: guide
-group_title: "Floating & Survival Skills"
+group_title: "6. Floating & Survival Skills"
 req_number: "6"
 prev: "/merit-badges/swimming/guide/req5b/"
-prev_title: "Req 5b — Line Rescue"
+prev_title: "Line Rescue"
 next: "/merit-badges/swimming/guide/req7/"
-next_title: "Req 7 — Surface Diving"
+next_title: "Surface Diving"
 ---
 
 {{< drg/requirement number="6a" >}}

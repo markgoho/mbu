@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Leave No Trace and the Outdoor Code"
+title: "Leave No Trace and the Outdoor Code"
 layout: guide
-group_title: "Outdoor Ethics in Geology"
+group_title: "5. Outdoor Ethics in Geology"
 req_number: "5"
 prev: "/merit-badges/geology/guide/req4d6d/"
-prev_title: "Req 4d6d — State Fossil Presentation"
+prev_title: "State Fossil Presentation"
 next: "/merit-badges/geology/guide/req6/"
-next_title: "Req 6 — Career or Hobby Path"
+next_title: "Career or Hobby Path"
 ---
 
 {{< drg/requirement number="5" >}}

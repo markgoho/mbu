@@ -1,13 +1,13 @@
 ---
-title: "Req 7e — Build a Wave Tank"
+title: "Build a Wave Tank"
 layout: "guide"
-group_title: "Hands-On Investigation"
+group_title: "7. Hands-On Investigation"
 req_number: "7e"
 req_path: "7.e"
 prev: "/merit-badges/oceanography/guide/req7d/"
-prev_title: "Req 7d — Model Sediment Movement"
+prev_title: "Model Sediment Movement"
 next: "/merit-badges/oceanography/guide/req7f/"
-next_title: "Req 7f — Track Satellite Images"
+next_title: "Track Satellite Images"
 ---
 
 {{< drg/requirement number="7e" >}}

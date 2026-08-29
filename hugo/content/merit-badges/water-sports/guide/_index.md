@@ -4,33 +4,33 @@ layout: "guide"
 badge_name: "Water Sports"
 group_title: "Getting Started"
 next: "/merit-badges/water-sports/guide/req1/"
-next_title: "Req 1 — Water Sense and Safety"
+next_title: "Water Sense and Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/water-sports/guide/"
         is_sub: false
-  - group_title: "Building Safe Habits"
+  - group_title: "1. Building Safe Habits"
     items:
-      - title: "Req 1 — Water Sense and Safety"
+      - title: "1. Water Sense and Safety"
         url: "/merit-badges/water-sports/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Gear and Boat Safety"
+      - title: "2. Gear and Boat Safety"
         url: "/merit-badges/water-sports/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Pass the Swimmer Test"
+      - title: "3. Pass the Swimmer Test"
         url: "/merit-badges/water-sports/guide/req3/"
         is_sub: false
-  - group_title: "On-the-Water Skills"
+  - group_title: "4. On-the-Water Skills"
     items:
-      - title: "Req 4 — Hand Signals That Keep You Safe"
+      - title: "4. Hand Signals That Keep You Safe"
         url: "/merit-badges/water-sports/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Starts, Wakes, and Falls"
+      - title: "5. Starts, Wakes, and Falls"
         url: "/merit-badges/water-sports/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Fit and Recover Your Gear"
+      - title: "6. Fit and Recover Your Gear"
         url: "/merit-badges/water-sports/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

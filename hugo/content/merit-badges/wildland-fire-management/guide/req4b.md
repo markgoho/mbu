@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Wildfire Mitigation"
+title: "Wildfire Mitigation"
 layout: "guide"
-group_title: "Prevention & Mitigation"
+group_title: "4. Prevention & Mitigation"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/wildland-fire-management/guide/req4a/"
-prev_title: "Req 4a — Wildfire Prevention"
+prev_title: "Wildfire Prevention"
 next: "/merit-badges/wildland-fire-management/guide/req5/"
-next_title: "Req 5 — Fire Behavior"
+next_title: "Fire Behavior"
 ---
 
 {{< drg/inherited-requirement number="4b" req_path="4.b" topic="Wildfire Mitigation" />}}

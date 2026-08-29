@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Seed a Conservation Plot"
+title: "Seed a Conservation Plot"
 layout: "guide"
-group_title: "Planting & Restoration"
+group_title: "7. Planting & Restoration"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7b/"
-prev_title: "Req 7b — Plant for a Purpose"
+prev_title: "Plant for a Purpose"
 next: "/merit-badges/soil-and-water-conservation/guide/req7d/"
-next_title: "Req 7d — Map Soils with a Survey Report"
+next_title: "Map Soils with a Survey Report"
 ---
 
 {{< drg/requirement number="7c" >}}

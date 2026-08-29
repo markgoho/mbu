@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Keeping Scouting Safe"
+title: "Keeping Scouting Safe"
 layout: "guide"
-group_title: "Safeguarding Youth"
+group_title: "5. Safeguarding Youth"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/safety/guide/req4/"
-prev_title: "Req 4 — Public Place Emergencies"
+prev_title: "Public Place Emergencies"
 next: "/merit-badges/safety/guide/req6/"
-next_title: "Req 6 — Avoiding Assault Risks"
+next_title: "Avoiding Assault Risks"
 ---
 
 {{< drg/requirement number="5" >}}

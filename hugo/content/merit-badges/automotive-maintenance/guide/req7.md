@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Air, Fuel & Injection"
+title: "Air, Fuel & Injection"
 layout: guide
-group_title: "Fuel System"
+group_title: "7. Fuel System"
 req_number: "7"
 prev: "/merit-badges/automotive-maintenance/guide/req6/"
-prev_title: "Req 6 — Coolant & Cooling"
+prev_title: "Coolant & Cooling"
 next: "/merit-badges/automotive-maintenance/guide/req8a/"
-next_title: "Req 8a — Electrical System Diagrams"
+next_title: "Electrical System Diagrams"
 ---
 
 {{< drg/requirement number="7a" >}}

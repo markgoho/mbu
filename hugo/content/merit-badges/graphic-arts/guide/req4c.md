@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Digital Printing Run"
+title: "Digital Printing Run"
 layout: guide
-group_title: "Choose a Printing Method"
+group_title: "4. Choose a Printing Method"
 req_number: "4c"
 prev: "/merit-badges/graphic-arts/guide/req4b/"
-prev_title: "Req 4b — Screen Printing Run"
+prev_title: "Screen Printing Run"
 next: "/merit-badges/graphic-arts/guide/req4d/"
-next_title: "Req 4d — Relief Printing Run"
+next_title: "Relief Printing Run"
 ---
 
 {{< drg/requirement number="4c" >}}

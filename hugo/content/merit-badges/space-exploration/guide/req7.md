@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Design a Space Base"
+title: "Design a Space Base"
 layout: "guide"
-group_title: "Living Beyond Earth"
+group_title: "7. Living Beyond Earth"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/space-exploration/guide/req6b/"
-prev_title: "Req 6b — International Space Station"
+prev_title: "International Space Station"
 next: "/merit-badges/space-exploration/guide/req8/"
-next_title: "Req 8 — Your Future in Space"
+next_title: "Your Future in Space"
 ---
 
 {{< drg/requirement number="7" >}}

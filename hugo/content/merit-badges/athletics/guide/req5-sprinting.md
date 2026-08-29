@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Sprinting"
+title: "Sprinting"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5a"
 prev: "/merit-badges/athletics/guide/req5/"
-prev_title: "Req 5 — Athletic Options Overview"
+prev_title: "Athletic Options Overview"
 next: "/merit-badges/athletics/guide/req5-long-distance-running/"
-next_title: "Req 5b — Long-Distance Running"
+next_title: "Long-Distance Running"
 ---
 
 {{< drg/requirement number="5" option="Option A—Sprinting" >}}

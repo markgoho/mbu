@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Show and Explain Your Robot"
+title: "Show and Explain Your Robot"
 layout: "guide"
-group_title: "Demonstration Day"
+group_title: "5. Demonstration Day"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/robotics/guide/req4e/"
-prev_title: "Req 4e — Test, Record, Improve"
+prev_title: "Test, Record, Improve"
 next: "/merit-badges/robotics/guide/req6/"
-next_title: "Req 6 — Choose a Competition Path"
+next_title: "Choose a Competition Path"
 ---
 
 {{< drg/requirement number="5" >}}

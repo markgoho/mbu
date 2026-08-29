@@ -1,13 +1,13 @@
 ---
-title: "Req 5c — Freeze or Follow Action"
+title: "Freeze or Follow Action"
 layout: "guide"
-group_title: "Field Practice: Requirement 5"
+group_title: "5. Field Practice: Requirement 5"
 req_number: "5c"
 req_path: "5.c"
 prev: "/merit-badges/photography/guide/req5b/"
-prev_title: "Req 5b — Capture Interaction"
+prev_title: "Capture Interaction"
 next: "/merit-badges/photography/guide/req5d/"
-next_title: "Req 5d — Photograph Animals Patiently"
+next_title: "Photograph Animals Patiently"
 ---
 
 {{< drg/requirement number="5c" >}}

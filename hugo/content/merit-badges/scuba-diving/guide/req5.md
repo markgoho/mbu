@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Aquatic Ecosystems"
+title: "Aquatic Ecosystems"
 layout: "guide"
-group_title: "Underwater Environments"
+group_title: "5. Underwater Environments"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/scuba-diving/guide/req4/"
-prev_title: "Req 4 — Earning Open Water Certification"
+prev_title: "Earning Open Water Certification"
 next: "/merit-badges/scuba-diving/guide/req6/"
-next_title: "Req 6 — Careers Below the Surface"
+next_title: "Careers Below the Surface"
 ---
 
 {{< drg/requirement number="5" >}}

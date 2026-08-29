@@ -1,12 +1,12 @@
 ---
-title: "Req 7c — IP Disputes in the News"
+title: "IP Disputes in the News"
 layout: guide
-group_title: "Intellectual Property"
+group_title: "7. Intellectual Property"
 req_number: "7c"
 prev: "/merit-badges/digital-technology/guide/req7b/"
-prev_title: "Req 7b — Software Sharing Ethics"
+prev_title: "Software Sharing Ethics"
 next: "/merit-badges/digital-technology/guide/req8/"
-next_title: "Req 8 — Responsible Tech Disposal"
+next_title: "Responsible Tech Disposal"
 ---
 
 {{< drg/requirement number="7c" >}}

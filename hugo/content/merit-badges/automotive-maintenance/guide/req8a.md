@@ -1,12 +1,12 @@
 ---
-title: "Req 8a — Electrical System Diagrams"
+title: "Electrical System Diagrams"
 layout: guide
-group_title: "Ignition & Electrical"
+group_title: "8. Ignition & Electrical"
 req_number: "8a"
 prev: "/merit-badges/automotive-maintenance/guide/req7/"
-prev_title: "Req 7 — Air, Fuel & Injection"
+prev_title: "Air, Fuel & Injection"
 next: "/merit-badges/automotive-maintenance/guide/req8b/"
-next_title: "Req 8b — Firing Order & Spark Gap"
+next_title: "Firing Order & Spark Gap"
 ---
 
 {{< drg/requirement number="8a" >}}

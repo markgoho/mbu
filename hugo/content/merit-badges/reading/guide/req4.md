@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Read to Build a Skill"
+title: "Read to Build a Skill"
 layout: "guide"
-group_title: "Reading for Action"
+group_title: "4. Reading for Action"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/reading/guide/req3c/"
-prev_title: "Req 3c — Give a Book Talk"
+prev_title: "Give a Book Talk"
 next: "/merit-badges/reading/guide/req5/"
-next_title: "Req 5 — Read the Wider World"
+next_title: "Read the Wider World"
 ---
 
 {{< drg/requirement number="4" >}}

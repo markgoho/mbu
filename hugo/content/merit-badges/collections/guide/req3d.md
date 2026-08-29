@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Cataloging Your Collection"
+title: "Cataloging Your Collection"
 layout: guide
-group_title: "Preserving & Displaying"
+group_title: "3. Preserving & Displaying"
 req_number: "3d"
 prev: "/merit-badges/collections/guide/req3c/"
-prev_title: "Req 3c — Events for Collectors"
+prev_title: "Events for Collectors"
 next: "/merit-badges/collections/guide/req4/"
-next_title: "Req 4 — Investing, Buying & Selling"
+next_title: "Investing, Buying & Selling"
 ---
 
 {{< drg/requirement number="3d" >}}

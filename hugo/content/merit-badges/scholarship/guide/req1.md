@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Building Strong Grades"
+title: "Building Strong Grades"
 layout: "guide"
-group_title: "Academic Momentum"
+group_title: "1. Academic Momentum"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/scholarship/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/scholarship/guide/req1a/"
-next_title: "Req 1a — Keeping a B Average"
+next_title: "Keeping a B Average"
 ---
 
 {{< drg/requirement number="1" >}}

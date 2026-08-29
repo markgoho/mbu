@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Conducting an Interview"
+title: "Conducting an Interview"
 layout: guide
-group_title: "Interviewing & Active Listening"
+group_title: "4. Interviewing & Active Listening"
 req_number: "4"
 prev: "/merit-badges/communication/guide/req3/"
-prev_title: "Req 3 — Writing & Delivering a Speech"
+prev_title: "Writing & Delivering a Speech"
 next: "/merit-badges/communication/guide/req5/"
-next_title: "Req 5 — Public Meeting Report"
+next_title: "Public Meeting Report"
 ---
 
 {{< drg/requirement number="4" >}}

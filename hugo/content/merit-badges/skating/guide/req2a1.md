@@ -1,13 +1,13 @@
 ---
-title: "Req 2a1 — Ice Safety & Courtesy"
+title: "Ice Safety & Courtesy"
 layout: "guide"
-group_title: "Option A — Ice Skating"
+group_title: "2. Option A — Ice Skating"
 req_number: "2a1"
 req_path: "2.a.1"
 prev: "/merit-badges/skating/guide/req2a/"
-prev_title: "Req 2a — Ice Skating Overview"
+prev_title: "Ice Skating Overview"
 next: "/merit-badges/skating/guide/req2a2/"
-next_title: "Req 2a2 — Outdoor Ice & Ice Rescue"
+next_title: "Outdoor Ice & Ice Rescue"
 ---
 
 {{< drg/requirement number="2a1" >}}

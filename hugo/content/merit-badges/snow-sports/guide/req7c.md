@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Snowboarding"
+title: "Snowboarding"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/snow-sports/guide/req7b-11/"
-prev_title: "Req 7b11 — Steep Hills & Difficult Conditions"
+prev_title: "Steep Hills & Difficult Conditions"
 next: "/merit-badges/snow-sports/guide/req7c1/"
-next_title: "Req 7c1 — Forward-Fall Injuries"
+next_title: "Forward-Fall Injuries"
 ---
 
 {{< drg/requirement number="7" option="Snowboarding" >}}

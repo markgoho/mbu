@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Types of Investments"
+title: "Types of Investments"
 layout: guide
-group_title: "Saving & Investing"
+group_title: "4. Saving & Investing"
 req_number: "5"
 prev: "/merit-badges/personal-management/guide/req4/"
-prev_title: "Req 4 — Saving vs. Investing"
+prev_title: "Saving vs. Investing"
 next: "/merit-badges/personal-management/guide/req6/"
-next_title: "Req 6 — Understanding Insurance"
+next_title: "Understanding Insurance"
 ---
 
 {{< drg/requirement number="5" >}}

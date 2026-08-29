@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — On the Water Basics"
+title: "On the Water Basics"
 layout: guide
-group_title: "Launching & Basic Handling"
+group_title: "7. Launching & Basic Handling"
 req_number: "7"
 prev: "/merit-badges/canoeing/guide/req6/"
-prev_title: "Req 6 — Equipment Care"
+prev_title: "Equipment Care"
 next: "/merit-badges/canoeing/guide/req8a/"
-next_title: "Req 8a — Deep Water Exit & Reentry"
+next_title: "Deep Water Exit & Reentry"
 ---
 
 {{< drg/requirement number="7" >}}

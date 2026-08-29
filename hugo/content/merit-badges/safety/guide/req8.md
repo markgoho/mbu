@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Safer Ways to Travel"
+title: "Safer Ways to Travel"
 layout: "guide"
-group_title: "Travel Safety"
+group_title: "8. Travel Safety"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/safety/guide/req7/"
-prev_title: "Req 7 — Smart Online Safety"
+prev_title: "Smart Online Safety"
 next: "/merit-badges/safety/guide/req9/"
-next_title: "Req 9 — Choose Your Safety Path"
+next_title: "Choose Your Safety Path"
 ---
 
 {{< drg/requirement number="8" >}}

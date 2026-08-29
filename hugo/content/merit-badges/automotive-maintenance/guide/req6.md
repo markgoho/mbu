@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Coolant & Cooling"
+title: "Coolant & Cooling"
 layout: guide
-group_title: "Cooling System"
+group_title: "6. Cooling System"
 req_number: "6"
 prev: "/merit-badges/automotive-maintenance/guide/req5b/"
-prev_title: "Req 5b — Engine Oil"
+prev_title: "Engine Oil"
 next: "/merit-badges/automotive-maintenance/guide/req7/"
-next_title: "Req 7 — Air, Fuel & Injection"
+next_title: "Air, Fuel & Injection"
 ---
 
 {{< drg/requirement number="6a" >}}

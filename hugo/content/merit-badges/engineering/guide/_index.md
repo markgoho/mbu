@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Engineering"
 group_title: "Getting Started"
 next: "/merit-badges/engineering/guide/req1/"
-next_title: "Req 1 — Investigating a Manufactured Item"
+next_title: "Investigating a Manufactured Item"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/engineering/guide/"
-  - group_title: "How Things Work"
+  - group_title: "1. How Things Work"
     items:
-      - title: "Req 1 — Investigating a Manufactured Item"
+      - title: "1. Investigating a Manufactured Item"
         url: "/merit-badges/engineering/guide/req1/"
-  - group_title: "Great Engineering Achievements"
+  - group_title: "2. Great Engineering Achievements"
     items:
-      - title: "Req 2 — Engineering That Changed the World"
+      - title: "2. Engineering That Changed the World"
         url: "/merit-badges/engineering/guide/req2/"
-  - group_title: "Types of Engineers"
+  - group_title: "3. Types of Engineers"
     items:
-      - title: "Req 3 — Six Fields of Engineering"
+      - title: "3. Six Fields of Engineering"
         url: "/merit-badges/engineering/guide/req3/"
-  - group_title: "Visiting an Engineer"
+  - group_title: "4. Visiting an Engineer"
     items:
-      - title: "Req 4 — Interview with an Engineer"
+      - title: "4. Interview with an Engineer"
         url: "/merit-badges/engineering/guide/req4/"
-  - group_title: "The Design Process"
+  - group_title: "5. The Design Process"
     items:
-      - title: "Req 5 — Systems Engineering Design Project"
+      - title: "5. Systems Engineering Design Project"
         url: "/merit-badges/engineering/guide/req5/"
-  - group_title: "Hands-On Engineering"
+  - group_title: "6. Hands-On Engineering"
     items:
-      - title: "Req 6 — Engineering Activities"
+      - title: "6. Engineering Activities"
         url: "/merit-badges/engineering/guide/req6/"
-      - title: "Req 6a — Transforming Motion"
+      - title: "a Transforming Motion"
         url: "/merit-badges/engineering/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Using Electricity"
+      - title: "b Using Electricity"
         url: "/merit-badges/engineering/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Understanding Electronics"
+      - title: "c Understanding Electronics"
         url: "/merit-badges/engineering/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Using Materials"
+      - title: "d Using Materials"
         url: "/merit-badges/engineering/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Converting Energy"
+      - title: "e Converting Energy"
         url: "/merit-badges/engineering/guide/req6e/"
         is_sub: true
-      - title: "Req 6f — Moving People"
+      - title: "f Moving People"
         url: "/merit-badges/engineering/guide/req6f/"
         is_sub: true
-      - title: "Req 6g — Building an Engineering Project"
+      - title: "g Building an Engineering Project"
         url: "/merit-badges/engineering/guide/req6g/"
         is_sub: true
-  - group_title: "The Professional Engineer"
+  - group_title: "7. The Professional Engineer"
     items:
-      - title: "Req 7 — Professional Engineer Registration"
+      - title: "7. Professional Engineer Registration"
         url: "/merit-badges/engineering/guide/req7/"
-  - group_title: "Engineering Ethics"
+  - group_title: "8. Engineering Ethics"
     items:
-      - title: "Req 8 — The Engineer's Code of Ethics"
+      - title: "8. The Engineer"
         url: "/merit-badges/engineering/guide/req8/"
-  - group_title: "Engineering Careers"
+  - group_title: "9. Engineering Careers"
     items:
-      - title: "Req 9 — Exploring Engineering Careers"
+      - title: "9. Exploring Engineering Careers"
         url: "/merit-badges/engineering/guide/req9/"
   - group_title: "Beyond the Badge"
     items:

@@ -1,12 +1,12 @@
 ---
-title: "Req 3h — Smooth Finished Edges"
+title: "Smooth Finished Edges"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3h"
 prev: "/merit-badges/leatherwork/guide/req3g/"
-prev_title: "Req 3g — Snaps and Rivets"
+prev_title: "Snaps and Rivets"
 next: "/merit-badges/leatherwork/guide/req4/"
-next_title: "Req 4 — Braiding and Plaiting"
+next_title: "Braiding and Plaiting"
 ---
 
 {{< drg/requirement number="3h" >}}

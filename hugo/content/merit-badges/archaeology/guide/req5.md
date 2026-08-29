@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Laws That Protect Sites"
+title: "Laws That Protect Sites"
 layout: guide
-group_title: "Protecting the Past"
+group_title: "5. Protecting the Past"
 req_number: "5"
 prev: "/merit-badges/archaeology/guide/req4b/"
-prev_title: "Req 4b — Presenting Your Findings"
+prev_title: "Presenting Your Findings"
 next: "/merit-badges/archaeology/guide/req6/"
-next_title: "Req 6 — Being a Steward"
+next_title: "Being a Steward"
 ---
 
 {{< drg/requirement number="5a" >}}

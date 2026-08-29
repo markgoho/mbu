@@ -1,13 +1,13 @@
 ---
-title: "Req 2aj — First Grouping Exercise: Zeroing"
+title: "First Grouping Exercise: Zeroing"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2aj"
 req_path: "2.a.j"
 prev: "/merit-badges/rifle-shooting/guide/req2ai/"
-prev_title: "Req 2ai — Selecting a Rifle"
+prev_title: "Selecting a Rifle"
 next: "/merit-badges/rifle-shooting/guide/req2ak/"
-next_title: "Req 2ak — Scored Grouping Exercise"
+next_title: "Scored Grouping Exercise"
 ---
 
 {{< drg/requirement number="2aj" >}}

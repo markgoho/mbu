@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Resources From the Ground"
+title: "Resources From the Ground"
 layout: guide
-group_title: "Earth Materials in Daily Life"
+group_title: "2. Earth Materials in Daily Life"
 req_number: "2"
 prev: "/merit-badges/geology/guide/req1/"
-prev_title: "Req 1 — What Geology Explains"
+prev_title: "What Geology Explains"
 next: "/merit-badges/geology/guide/req3/"
-next_title: "Req 3 — Geologic Maps"
+next_title: "Geologic Maps"
 ---
 
 {{< drg/requirement number="2" >}}

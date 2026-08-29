@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Defining Environmental Science"
+title: "Defining Environmental Science"
 layout: guide
-group_title: "What Is Environmental Science?"
+group_title: "1. What Is Environmental Science?"
 req_number: "1"
 prev: "/merit-badges/environmental-science/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/environmental-science/guide/req2a/"
-next_title: "Req 2a — Observing an Ecosystem"
+next_title: "Observing an Ecosystem"
 ---
 
 {{< drg/requirement number="1" >}}
