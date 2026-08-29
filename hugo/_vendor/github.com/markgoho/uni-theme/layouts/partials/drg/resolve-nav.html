@@ -35,9 +35,11 @@
 
   {{ $rankData := "" }}
   {{ with $rankSlug }}
-    {{ if isset site.Data "ranks" }}
-      {{ if isset site.Data.ranks "scouts-bsa" }}
-        {{ $rankData = index site.Data.ranks "scouts-bsa" . }}
+    {{ if isset hugo.Data "ranks" }}
+      {{ $ranks := index hugo.Data "ranks" }}
+      {{ if isset $ranks "scouts-bsa" }}
+        {{ $scoutsBsa := index $ranks "scouts-bsa" }}
+        {{ $rankData = index $scoutsBsa . }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -51,8 +53,9 @@
 
   {{ $badgeData := "" }}
   {{ with $badgeSlug }}
-    {{ if isset site.Data "merit-badges" }}
-      {{ $badgeData = index site.Data "merit-badges" . }}
+    {{ if isset hugo.Data "merit-badges" }}
+      {{ $meritBadges := index hugo.Data "merit-badges" }}
+      {{ $badgeData = index $meritBadges . }}
     {{ end }}
   {{ end }}
 
