@@ -5,51 +5,6 @@ badge_name: "Painting"
 group_title: "Getting Started"
 next: "/merit-badges/painting/guide/req1/"
 next_title: "Work Safe Before You Paint"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/painting/guide/"
-        is_sub: false
-  - group_title: "Practical Applications"
-    items:
-      - title: "1. Work Safe Before You Paint"
-        url: "/merit-badges/painting/guide/req1/"
-        is_sub: false
-      - title: "2. Coatings, Paint Types & Sheen"
-        url: "/merit-badges/painting/guide/req2/"
-        is_sub: false
-      - title: "3. Plan Two Real Projects"
-        url: "/merit-badges/painting/guide/req3/"
-        is_sub: false
-      - title: "4. Choose Harmonizing Colors"
-        url: "/merit-badges/painting/guide/req4/"
-        is_sub: false
-      - title: "5. Use and Care for Your Tools"
-        url: "/merit-badges/painting/guide/req5/"
-        is_sub: false
-      - title: "6. Ladder Safety and PPE"
-        url: "/merit-badges/painting/guide/req6/"
-        is_sub: false
-      - title: "7. Paint, Health, and the Environment"
-        url: "/merit-badges/painting/guide/req7/"
-        is_sub: false
-  - group_title: "8. Futures in Painting"
-    items:
-      - title: "8. Choose a Painting Path"
-        url: "/merit-badges/painting/guide/req8/"
-        is_sub: false
-      - title: "a Research a Painting Career"
-        url: "/merit-badges/painting/guide/req8a/"
-        is_sub: true
-      - title: "b Make Painting Part of Your Life"
-        url: "/merit-badges/painting/guide/req8b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/painting/guide/extended-learning/"
-        is_sub: false
 ---
 
 Painting is everywhere. It protects houses from rain, keeps metal from rusting, helps rooms feel calm or energetic, and turns plain surfaces into something worth noticing. When you earn this merit badge, you are learning both a practical trade skill and a creative design skill.

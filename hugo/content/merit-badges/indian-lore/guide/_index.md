@@ -5,42 +5,6 @@ badge_name: "Indian Lore"
 group_title: "Getting Started"
 next: "/merit-badges/indian-lore/guide/req1/"
 next_title: "Cultural Areas"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/indian-lore/guide/"
-        is_sub: false
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. Cultural Areas"
-        url: "/merit-badges/indian-lore/guide/req1/"
-        is_sub: false
-      - title: "2. Researching a Nation"
-        url: "/merit-badges/indian-lore/guide/req2/"
-        is_sub: false
-      - title: "3. Language, Place, and Leaders"
-        url: "/merit-badges/indian-lore/guide/req3/"
-        is_sub: false
-      - title: "4. Influence and Exchange"
-        url: "/merit-badges/indian-lore/guide/req4/"
-        is_sub: false
-  - group_title: "5. Choose Your Experience"
-    items:
-      - title: "5. Choose Your Experience"
-        url: "/merit-badges/indian-lore/guide/req5/"
-        is_sub: false
-      - title: "a Museum Visit"
-        url: "/merit-badges/indian-lore/guide/req5a/"
-        is_sub: true
-      - title: "b Contemporary Gathering"
-        url: "/merit-badges/indian-lore/guide/req5b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/indian-lore/guide/extended-learning/"
-        is_sub: false
 ---
 
 Indian Lore is really about people, place, memory, and respect. This badge asks you to learn how many Native nations developed different ways of living across North America, and how those traditions still shape communities today. If you do it well, you will come away with something more useful than a list of facts: you will learn how to ask better questions, listen carefully, and notice the connection between land and culture.

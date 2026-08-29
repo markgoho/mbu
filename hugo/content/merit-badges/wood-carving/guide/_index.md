@@ -5,44 +5,6 @@ badge_name: "Wood Carving"
 group_title: "Getting Started"
 next: "/merit-badges/wood-carving/guide/req1/"
 next_title: "Carving Safely"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/wood-carving/guide/"
-        is_sub: false
-  - group_title: "1. Safety and Readiness"
-    items:
-      - title: "1. Carving Safely"
-        url: "/merit-badges/wood-carving/guide/req1/"
-        is_sub: false
-      - title: "2. Totin"
-        url: "/merit-badges/wood-carving/guide/req2/"
-        is_sub: false
-  - group_title: "3. Tools and Technique"
-    items:
-      - title: "3. Tools and Sharpening"
-        url: "/merit-badges/wood-carving/guide/req3/"
-        is_sub: false
-      - title: "4. Practice the Basic Cuts"
-        url: "/merit-badges/wood-carving/guide/req4/"
-        is_sub: false
-  - group_title: "5. Choosing and Building Projects"
-    items:
-      - title: "5. Choosing the Right Wood"
-        url: "/merit-badges/wood-carving/guide/req5/"
-        is_sub: false
-      - title: "6. Carving in the Round"
-        url: "/merit-badges/wood-carving/guide/req6/"
-        is_sub: false
-      - title: "7. Relief or Chip Carving"
-        url: "/merit-badges/wood-carving/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/wood-carving/guide/extended-learning/"
-        is_sub: false
 ---
 
 Wood carving turns a plain block or branch into something useful, funny, beautiful, or all three. It teaches patience, hand control, and planning because every cut changes the shape of the wood for good.

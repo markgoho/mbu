@@ -5,55 +5,6 @@ badge_name: "Sculpture"
 group_title: "Getting Started"
 next: "/merit-badges/sculpture/guide/req1/"
 next_title: "Studio Safety"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/sculpture/guide/"
-        is_sub: false
-  - group_title: "Practical Applications"
-    items:
-      - title: "1. Studio Safety"
-        url: "/merit-badges/sculpture/guide/req1/"
-        is_sub: false
-      - title: "2. Choose Your Projects"
-        url: "/merit-badges/sculpture/guide/req2/"
-        is_sub: false
-  - group_title: "2. Head and Figure Modeling"
-    items:
-      - title: "a Head and Figure Study"
-        url: "/merit-badges/sculpture/guide/req2a/"
-        is_sub: true
-  - group_title: "2. Mold Making and Casting"
-    items:
-      - title: "b Mold and Cast"
-        url: "/merit-badges/sculpture/guide/req2b/"
-        is_sub: true
-  - group_title: "2. Art Spaces and Meaning"
-    items:
-      - title: "c Art in Public and Community Life"
-        url: "/merit-badges/sculpture/guide/req2c/"
-        is_sub: true
-  - group_title: "Career or Hobby"
-    items:
-      - title: "3. Career or Hobby"
-        url: "/merit-badges/sculpture/guide/req3/"
-        is_sub: false
-  - group_title: "3. Sculpture Careers"
-    items:
-      - title: "a Research a Sculpture Career"
-        url: "/merit-badges/sculpture/guide/req3a/"
-        is_sub: true
-  - group_title: "3. Sculpture as a Hobby"
-    items:
-      - title: "b Build a Hobby Path"
-        url: "/merit-badges/sculpture/guide/req3b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/sculpture/guide/extended-learning/"
-        is_sub: false
 ---
 
 Sculpture is art you can walk around, look over, and sometimes even touch. Instead of working only on a flat surface, sculptors build form in three dimensions using clay, wood, plaster, metal, stone, digital tools, and found objects. This merit badge helps you notice shape, balance, texture, and space—then use your own hands and ideas to turn raw material into something real.

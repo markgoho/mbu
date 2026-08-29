@@ -5,55 +5,6 @@ badge_name: "Family Life"
 group_title: "Getting Started"
 next: "/merit-badges/family-life/guide/req1/"
 next_title: "What Is a Family?"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/family-life/guide/"
-  - group_title: "1. Understanding Family"
-    items:
-      - title: "1. What Is a Family?"
-        url: "/merit-badges/family-life/guide/req1/"
-        is_sub: false
-      - title: "2. Your Role in the Family"
-        url: "/merit-badges/family-life/guide/req2/"
-        is_sub: false
-  - group_title: "3. Contributing at Home"
-    items:
-      - title: "3. Home Duties & Chores"
-        url: "/merit-badges/family-life/guide/req3/"
-        is_sub: false
-      - title: "90-Day Chore Tracking Log"
-        url: "/merit-badges/family-life/guide/chore-tracking-log/"
-        is_sub: true
-      - title: "4. Individual Home Project"
-        url: "/merit-badges/family-life/guide/req4/"
-        is_sub: false
-  - group_title: "Family Project"
-    items:
-      - title: "5. Family Project"
-        url: "/merit-badges/family-life/guide/req5/"
-        is_sub: false
-  - group_title: "6. Family Meetings"
-    items:
-      - title: "a Planning Family Meetings"
-        url: "/merit-badges/family-life/guide/req6a/"
-        is_sub: true
-      - title: "Family Meeting Agenda Template"
-        url: "/merit-badges/family-life/guide/meeting-agenda-template/"
-        is_sub: true
-      - title: "b Meeting Agenda Topics"
-        url: "/merit-badges/family-life/guide/req6b/"
-        is_sub: true
-  - group_title: "Understanding Parenthood"
-    items:
-      - title: "7. Understanding Parenthood"
-        url: "/merit-badges/family-life/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/family-life/guide/extended-learning/"
 ---
 
 Your family is the first team you ever joined. Before you had a patrol, a troop, or a school club, you had the people at home — the ones who taught you to tie your shoes, made sure you ate breakfast, and cheered you on when you tried something new. The Family Life merit badge helps you understand why that team matters, how to make it stronger, and how to step up as a contributing member of your household.

@@ -5,45 +5,6 @@ badge_name: "Dentistry"
 group_title: "Getting Started"
 next: "/merit-badges/dentistry/guide/req1/"
 next_title: "Tooth Anatomy from X-Rays"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/dentistry/guide/"
-  - group_title: "Tooth Anatomy from X-Rays"
-    items:
-      - title: "1. Tooth Anatomy from X-Rays"
-        url: "/merit-badges/dentistry/guide/req1/"
-  - group_title: "2. Dental Disease & Prevention"
-    items:
-      - title: "a Causes of Decay & Gum Disease"
-        url: "/merit-badges/dentistry/guide/req2a/"
-        is_sub: true
-      - title: "b Tooth Trauma & Mouth Guards"
-        url: "/merit-badges/dentistry/guide/req2b/"
-        is_sub: true
-      - title: "c Saving a Knocked-Out Tooth"
-        url: "/merit-badges/dentistry/guide/req2c/"
-        is_sub: true
-      - title: "d Tobacco & Oral Health"
-        url: "/merit-badges/dentistry/guide/req2d/"
-        is_sub: true
-  - group_title: "Projects & Careers"
-    items:
-      - title: "3. Visiting the Dentist"
-        url: "/merit-badges/dentistry/guide/req3/"
-      - title: "4. Dental Tools & Hands-On Skills"
-        url: "/merit-badges/dentistry/guide/req4/"
-      - title: "5. Fluoride & the Mouth-Body Connection"
-        url: "/merit-badges/dentistry/guide/req5/"
-      - title: "6. Dental Health Outreach"
-        url: "/merit-badges/dentistry/guide/req6/"
-      - title: "7. Careers in Dentistry"
-        url: "/merit-badges/dentistry/guide/req7/"
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/dentistry/guide/extended-learning/"
 ---
 
 You use them every single day — to bite into an apple, to speak clearly, to smile at a friend — but how much do you actually know about your teeth? The Dentistry merit badge pulls back the curtain on what is happening inside your mouth and why it matters far beyond just having a nice smile.

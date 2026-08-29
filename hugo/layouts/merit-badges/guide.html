@@ -16,8 +16,42 @@
   {{ $badgePage := .CurrentSection.Parent | default .Parent }}
   {{ $slug := path.Base $badgePage.File.Dir }}
   {{ $json := index hugo.Data "merit-badges" $slug }}
+  {{ $navInfo := partial "drg/resolve-nav.html" . }}
 
-  {{ partial "merit-badges/drg-sidebar.html" (dict "page" . "badgePage" $badgePage "json" $json) }}
+  {{ $iconData := index hugo.Data "badge-icons" }}
+  {{ $iconName := "" }}
+  {{ if $iconData }}
+    {{ $iconName = index $iconData.badges $slug }}
+  {{ end }}
+  {{ $badgeName := strings.TrimSuffix " Merit Badge" $badgePage.Title }}
+  {{ $categoryName := $json.category | default "Merit Badge" }}
+  {{ $categorySlug := $categoryName | urlize }}
+  {{ $categoryPage := site.GetPage (printf "categories/%s" $categorySlug) }}
+  {{ $categoryURL := "" }}
+  {{ if $categoryPage }}
+    {{ $categoryURL = $categoryPage.RelPermalink }}
+  {{ else }}
+    {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
+  {{ end }}
+
+  {{ $identity := dict
+    "icon" $iconName
+    "eyebrow" $categoryName
+    "eyebrow_url" $categoryURL
+    "title" $badgeName
+    "demote_heading" false
+    "micro_tag" "MERIT BADGE"
+  }}
+
+  {{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
+  {{ $printPage := .Site.GetPage (printf "%sprint/" .CurrentSection.RelPermalink) }}
+
+  {{ partial "drg/sidebar.html" (dict
+    "page" .
+    "guide_nav" $navInfo.guide_nav
+    "identity" $identity
+    "req_url" $reqUrl
+    "print_page" $printPage) }}
 
   <div class="req-page-body">
     {{ partial "breadcrumb.html" . }}
@@ -30,13 +64,14 @@
       {{ end }}
 
       {{ $pageCount := 0 }}
-      {{ range .Params.guide_nav }}
+      {{ range $navInfo.guide_nav }}
         {{ $pageCount = add $pageCount (len .items) }}
       {{ end }}
 
       {{ $title := .Params.badge_name | default (strings.TrimSuffix " Merit Badge" $badgePage.Title) }}
 
-      {{ $ctas := slice (dict "url" .Params.next "label" "Start the Guide" "icon" "book-open-text") }}
+      {{ $firstPageUrl := $navInfo.next | default .Params.next }}
+      {{ $ctas := slice (dict "url" $firstPageUrl "label" "Start the Guide" "icon" "book-open-text") }}
       {{ with $reqPage }}
         {{ $ctas = $ctas | append (dict "url" .RelPermalink "label" "View Requirements" "icon" "list-checks" "secondary" true) }}
       {{ end }}
@@ -71,8 +106,9 @@
             {{ $reqKey = lower $reqKey }}
           {{ end }}
           {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
+          {{ $kicker := .Params.group_title | default $navInfo.group_title }}
           <header class="req-header">
-            {{ with .Params.group_title }}
+            {{ with $kicker }}
               <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
             {{ end }}
             <h1 class="req-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
@@ -82,14 +118,19 @@
         {{ .Content }}
 
 
+        {{ $prevUrl := .Params.prev | default $navInfo.prev }}
+        {{ $prevTitle := .Params.prev_title | default $navInfo.prev_title }}
+        {{ $nextUrl := .Params.next | default $navInfo.next }}
+        {{ $nextTitle := .Params.next_title | default $navInfo.next_title }}
+
         <nav class="req-footer-nav" aria-label="Guide pagination">
-          {{ with .Params.prev }}
+          {{ with $prevUrl }}
             <a
               href="{{ . }}"
               class="req-footer-nav__link req-footer-nav__link--prev">
               <span class="req-footer-nav__label">Previous</span>
               <span class="req-footer-nav__title">
-                {{ with $.Params.prev_title }}
+                {{ with $prevTitle }}
                   {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}
                 {{ else }}
                   Previous Page
@@ -98,13 +139,13 @@
             </a>
           {{ end }}
 
-          {{ with .Params.next }}
+          {{ with $nextUrl }}
             <a
               href="{{ . }}"
               class="req-footer-nav__link req-footer-nav__link--next">
               <span class="req-footer-nav__label">Next</span>
               <span class="req-footer-nav__title">
-                {{ with $.Params.next_title }}{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}{{ else }}Next Page{{ end }}
+                {{ with $nextTitle }}{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}{{ else }}Next Page{{ end }}
               </span>
             </a>
           {{ end }}

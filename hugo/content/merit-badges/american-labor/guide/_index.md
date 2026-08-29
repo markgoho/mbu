@@ -5,52 +5,6 @@ badge_name: "American Labor"
 group_title: "Getting Started"
 next: "/merit-badges/american-labor/guide/req1/"
 next_title: "Worker Concerns"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/american-labor/guide/"
-  - group_title: "Practical Applications"
-    items:
-      - title: "1. Worker Concerns"
-        url: "/merit-badges/american-labor/guide/req1/"
-        is_sub: false
-      - title: "2. Visiting a Labor Organization"
-        url: "/merit-badges/american-labor/guide/req2/"
-        is_sub: false
-  - group_title: "3. How Unions Work"
-    items:
-      - title: "3. What Labor Unions Do"
-        url: "/merit-badges/american-labor/guide/req3/"
-        is_sub: false
-      - title: "4. Bargaining Models"
-        url: "/merit-badges/american-labor/guide/req4/"
-        is_sub: false
-  - group_title: "Practical Applications"
-    items:
-      - title: "5. Labor History Projects"
-        url: "/merit-badges/american-labor/guide/req5/"
-        is_sub: false
-      - title: "6. Globalization"
-        url: "/merit-badges/american-labor/guide/req6/"
-        is_sub: false
-  - group_title: "7. Critical Thinking"
-    items:
-      - title: "7. Debating Labor Issues"
-        url: "/merit-badges/american-labor/guide/req7/"
-        is_sub: false
-      - title: "8. Stakeholder Goals"
-        url: "/merit-badges/american-labor/guide/req8/"
-        is_sub: false
-  - group_title: "Careers in Labor Relations"
-    items:
-      - title: "9. Careers in Labor Relations"
-        url: "/merit-badges/american-labor/guide/req9/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/american-labor/guide/extended-learning/"
 ---
 
 Every job you see people doing — building houses, teaching classes, driving trucks, writing code — has a story behind it. The American Labor merit badge invites you to explore those stories: how workers have organized, fought for fair treatment, and shaped the country we live in today.

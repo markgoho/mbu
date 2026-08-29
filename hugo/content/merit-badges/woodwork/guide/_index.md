@@ -5,58 +5,6 @@ badge_name: "Woodwork"
 group_title: "Getting Started"
 next: "/merit-badges/woodwork/guide/req1a/"
 next_title: "Workshop Hazards"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/woodwork/guide/"
-  - group_title: "1. Safety First"
-    items:
-      - title: "a Workshop Hazards"
-        url: "/merit-badges/woodwork/guide/req1a/"
-        is_sub: true
-      - title: "b First Aid & Protection"
-        url: "/merit-badges/woodwork/guide/req1b/"
-        is_sub: true
-      - title: "c Totin"
-        url: "/merit-badges/woodwork/guide/req1c/"
-        is_sub: true
-  - group_title: "2. Understanding Wood"
-    items:
-      - title: "a From Tree to Lumber"
-        url: "/merit-badges/woodwork/guide/req2a/"
-        is_sub: true
-      - title: "b Wood Identification"
-        url: "/merit-badges/woodwork/guide/req2b/"
-        is_sub: true
-  - group_title: "3. Tools of the Trade"
-    items:
-      - title: "a Tool Care & Storage"
-        url: "/merit-badges/woodwork/guide/req3a/"
-        is_sub: true
-      - title: "b Sharpening"
-        url: "/merit-badges/woodwork/guide/req3b/"
-        is_sub: true
-  - group_title: "4. Building Projects"
-    items:
-      - title: "4. Build with Basic Tools"
-        url: "/merit-badges/woodwork/guide/req4/"
-        is_sub: false
-      - title: "5. Design Your Own Project"
-        url: "/merit-badges/woodwork/guide/req5/"
-        is_sub: false
-  - group_title: "Projects & Careers"
-    items:
-      - title: "6. Advanced Projects"
-        url: "/merit-badges/woodwork/guide/req6/"
-        is_sub: false
-      - title: "7. Woodworking Careers"
-        url: "/merit-badges/woodwork/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/woodwork/guide/extended-learning/"
 ---
 
 There is something deeply satisfying about taking a rough piece of wood and turning it into something useful and beautiful with your own hands. Woodworking is one of the oldest crafts in human history, and it is just as relevant today as it was thousands of years ago. Whether you are building a birdhouse, crafting a bookshelf, or carving a decorative bowl, woodwork teaches you to plan carefully, measure precisely, and solve problems creatively.

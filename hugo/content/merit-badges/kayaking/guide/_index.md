@@ -5,43 +5,6 @@ badge_name: "Kayaking"
 group_title: "Getting Started"
 next: "/merit-badges/kayaking/guide/req1/"
 next_title: "Hazards, Injuries & Safety Afloat"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/kayaking/guide/"
-        is_sub: false
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Hazards, Injuries & Safety Afloat"
-        url: "/merit-badges/kayaking/guide/req1/"
-        is_sub: false
-      - title: "2. Swimmer Test Readiness"
-        url: "/merit-badges/kayaking/guide/req2/"
-        is_sub: false
-      - title: "3. Life Jackets & Rescue Equipment"
-        url: "/merit-badges/kayaking/guide/req3/"
-        is_sub: false
-      - title: "4. Kayak Parts, Design & Care"
-        url: "/merit-badges/kayaking/guide/req4/"
-        is_sub: false
-      - title: "5. Paddle Skills & Paddle Care"
-        url: "/merit-badges/kayaking/guide/req5/"
-        is_sub: false
-      - title: "6. Capsize Recovery Skills"
-        url: "/merit-badges/kayaking/guide/req6/"
-        is_sub: false
-      - title: "7. Essential Kayak Strokes"
-        url: "/merit-badges/kayaking/guide/req7/"
-        is_sub: false
-      - title: "8. Maneuvering with Control"
-        url: "/merit-badges/kayaking/guide/req8/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/kayaking/guide/extended-learning/"
-        is_sub: false
 ---
 
 A kayak can carry you into quiet coves, narrow marsh channels, and stretches of shoreline that bigger boats can never reach. It is one of the most direct ways to experience moving water, wind, weather, and your own skills at the same time. The Kayaking merit badge teaches you how to enjoy that freedom safely, from choosing equipment to recovering from a capsize and paddling with control.

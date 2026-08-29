@@ -5,44 +5,6 @@ badge_name: "Art"
 group_title: "Getting Started"
 next: "/merit-badges/art/guide/req1/"
 next_title: "Understanding Art"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/art/guide/"
-  - group_title: "Understanding Art"
-    items:
-      - title: "1. Understanding Art"
-        url: "/merit-badges/art/guide/req1/"
-        is_sub: false
-  - group_title: "2. Building Blocks of Art"
-    items:
-      - title: "2. Elements of Art"
-        url: "/merit-badges/art/guide/req2/"
-        is_sub: false
-      - title: "3. Principles of Design"
-        url: "/merit-badges/art/guide/req3/"
-        is_sub: false
-  - group_title: "4. Making Art"
-    items:
-      - title: "4. Creating in Different Media"
-        url: "/merit-badges/art/guide/req4/"
-        is_sub: false
-      - title: "5. Applied Art Projects"
-        url: "/merit-badges/art/guide/req5/"
-        is_sub: false
-  - group_title: "6. Exploring the Art World"
-    items:
-      - title: "6. Visiting Art in Person"
-        url: "/merit-badges/art/guide/req6/"
-        is_sub: false
-      - title: "7. Careers in Art"
-        url: "/merit-badges/art/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/art/guide/extended-learning/"
 ---
 
 Art is everywhere. It is on the walls of museums, on the screens of your phone, on the side of a building downtown, and in the doodles you sketch in the margins of your notebook. The Art merit badge is your invitation to look at the world like an artist — to notice the colors, shapes, and patterns all around you and learn how to put them to work.

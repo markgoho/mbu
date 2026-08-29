@@ -5,45 +5,6 @@ badge_name: "Citizenship in the World"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-the-world/guide/req1/"
 next_title: "Defining World Citizenship"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/citizenship-in-the-world/guide/"
-  - group_title: "Additional Requirements"
-    items:
-      - title: "1. Defining World Citizenship"
-        url: "/merit-badges/citizenship-in-the-world/guide/req1/"
-        is_sub: false
-      - title: "2. U.S. Citizenship & Comparing Countries"
-        url: "/merit-badges/citizenship-in-the-world/guide/req2/"
-        is_sub: false
-  - group_title: "3. World Events & National Interests"
-    items:
-      - title: "a Current Events & National Interests"
-        url: "/merit-badges/citizenship-in-the-world/guide/req3a/"
-        is_sub: true
-      - title: "b A Country"
-        url: "/merit-badges/citizenship-in-the-world/guide/req3b/"
-        is_sub: true
-  - group_title: "Practical Applications"
-    items:
-      - title: "4. Law, Trade & Global Organizations"
-        url: "/merit-badges/citizenship-in-the-world/guide/req4/"
-        is_sub: false
-      - title: "5. Types of Government"
-        url: "/merit-badges/citizenship-in-the-world/guide/req5/"
-        is_sub: false
-      - title: "6. How Nations Connect"
-        url: "/merit-badges/citizenship-in-the-world/guide/req6/"
-        is_sub: false
-      - title: "7. World Exploration Activities"
-        url: "/merit-badges/citizenship-in-the-world/guide/req7/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/citizenship-in-the-world/guide/extended-learning/"
 ---
 
 You live in a world where events on the other side of the globe can affect your daily life. A trade agreement between two countries can change the price of your phone. A natural disaster thousands of miles away can inspire your troop to organize a service project. The Citizenship in the World merit badge helps you understand these connections and discover what it means to be a responsible citizen — not just of your town or country, but of the entire world.

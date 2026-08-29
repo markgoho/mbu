@@ -5,37 +5,6 @@ badge_name: "Scuba Diving"
 group_title: "Getting Started"
 next: "/merit-badges/scuba-diving/guide/req1/"
 next_title: "Dive Safety Starts Here"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/scuba-diving/guide/"
-        is_sub: false
-  - group_title: "Career Exploration"
-    items:
-      - title: "1. Dive Safety Starts Here"
-        url: "/merit-badges/scuba-diving/guide/req1/"
-        is_sub: false
-      - title: "2. Swimming Before Scuba"
-        url: "/merit-badges/scuba-diving/guide/req2/"
-        is_sub: false
-      - title: "3. The Scuba Diver"
-        url: "/merit-badges/scuba-diving/guide/req3/"
-        is_sub: false
-      - title: "4. Earning Open Water Certification"
-        url: "/merit-badges/scuba-diving/guide/req4/"
-        is_sub: false
-      - title: "5. Aquatic Ecosystems"
-        url: "/merit-badges/scuba-diving/guide/req5/"
-        is_sub: false
-      - title: "6. Careers Below the Surface"
-        url: "/merit-badges/scuba-diving/guide/req6/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/scuba-diving/guide/extended-learning/"
-        is_sub: false
 ---
 
 Scuba diving lets you do something humans were never built to do on our own: breathe underwater long enough to explore a different world. In this badge, you will learn that scuba is not just about cool gear or colorful fish. It is about judgment, training, teamwork, and respect for an environment that can be amazing and unforgiving at the same time.

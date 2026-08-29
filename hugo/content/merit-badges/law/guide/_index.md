@@ -5,58 +5,6 @@ badge_name: "Law"
 group_title: "Getting Started"
 next: "/merit-badges/law/guide/req1/"
 next_title: "What Is Law?"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/law/guide/"
-  - group_title: "1. Foundations of Law"
-    items:
-      - title: "1. What Is Law?"
-        url: "/merit-badges/law/guide/req1/"
-        is_sub: false
-      - title: "2. Landmarks in Legal History"
-        url: "/merit-badges/law/guide/req2/"
-        is_sub: false
-  - group_title: "Civil vs. Criminal Law"
-    items:
-      - title: "3. Civil vs. Criminal Law"
-        url: "/merit-badges/law/guide/req3/"
-        is_sub: false
-  - group_title: "4. Law in Action"
-    items:
-      - title: "4. Law Enforcement in Society"
-        url: "/merit-badges/law/guide/req4/"
-        is_sub: false
-      - title: "5. Consumer & Seller Protections"
-        url: "/merit-badges/law/guide/req5/"
-        is_sub: false
-      - title: "6. Courtroom Experience"
-        url: "/merit-badges/law/guide/req6/"
-        is_sub: false
-  - group_title: "7. Legal Careers"
-    items:
-      - title: "7. Visit with a Lawyer"
-        url: "/merit-badges/law/guide/req7/"
-        is_sub: false
-      - title: "8. Becoming a Lawyer or Judge"
-        url: "/merit-badges/law/guide/req8/"
-        is_sub: false
-      - title: "9. Jobs in Law"
-        url: "/merit-badges/law/guide/req9/"
-        is_sub: false
-  - group_title: "10. Justice for All"
-    items:
-      - title: "10. Access to Legal Help"
-        url: "/merit-badges/law/guide/req10/"
-        is_sub: false
-      - title: "11. Areas of Law"
-        url: "/merit-badges/law/guide/req11/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/law/guide/extended-learning/"
 ---
 
 Laws are everywhere — from the speed limit on your street to the rules that protect your right to speak your mind. Every time you buy something at a store, ride your bike on a public road, or log on to the internet, laws are working behind the scenes to keep things fair and safe. The Law merit badge gives you a front-row seat to understanding how these rules shape our daily lives and why they matter.

@@ -5,47 +5,6 @@ badge_name: "Hiking"
 group_title: "Getting Started"
 next: "/merit-badges/hiking/guide/req1a/"
 next_title: "Anticipate Hazards"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/hiking/guide/"
-  - group_title: "1. Hazards While Hiking"
-    items:
-      - title: "a Anticipate Hazards"
-        url: "/merit-badges/hiking/guide/req1a/"
-        is_sub: true
-      - title: "b First Aid"
-        url: "/merit-badges/hiking/guide/req1b/"
-        is_sub: true
-  - group_title: "2. Hiking Ethics & Safety"
-    items:
-      - title: "a Hiking Practices"
-        url: "/merit-badges/hiking/guide/req2a/"
-        is_sub: true
-      - title: "b Leave No Trace"
-        url: "/merit-badges/hiking/guide/req2b/"
-        is_sub: true
-      - title: "c Outdoor Code"
-        url: "/merit-badges/hiking/guide/req2c/"
-        is_sub: true
-  - group_title: "Aerobic Activity"
-    items:
-      - title: "3. Aerobic Activity"
-        url: "/merit-badges/hiking/guide/req3/"
-        is_sub: false
-  - group_title: "4. Hit the Trail"
-    items:
-      - title: "4. Your Hikes"
-        url: "/merit-badges/hiking/guide/req4/"
-        is_sub: false
-      - title: "5. Hike Reports"
-        url: "/merit-badges/hiking/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/hiking/guide/extended-learning/"
 ---
 
 Every great adventure begins with a single step — and the Hiking merit badge is your invitation to take that step into the outdoors. Whether you are walking through a city park, trekking across desert sand, or climbing a mountain trail, hiking connects you to the world in a way nothing else can.

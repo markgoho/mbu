@@ -5,56 +5,6 @@ badge_name: "Archery"
 group_title: "Getting Started"
 next: "/merit-badges/archery/guide/req1a/"
 next_title: "Projectile Safety"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/archery/guide/"
-  - group_title: "1. Safety on the Range"
-    items:
-      - title: "a Projectile Safety"
-        url: "/merit-badges/archery/guide/req1a/"
-        is_sub: true
-      - title: "b Range Safety Rules"
-        url: "/merit-badges/archery/guide/req1b/"
-        is_sub: true
-      - title: "c Whistle Commands"
-        url: "/merit-badges/archery/guide/req1c/"
-        is_sub: true
-      - title: "d Retrieving Arrows"
-        url: "/merit-badges/archery/guide/req1d/"
-        is_sub: true
-      - title: "e Archery Laws"
-        url: "/merit-badges/archery/guide/req1e/"
-        is_sub: true
-  - group_title: "2. Arrows & Equipment"
-    items:
-      - title: "2. Know Your Arrows"
-        url: "/merit-badges/archery/guide/req2/"
-        is_sub: false
-      - title: "3. Accessories & Terminology"
-        url: "/merit-badges/archery/guide/req3/"
-        is_sub: false
-  - group_title: "Formats & Scoring"
-    items:
-      - title: "4. Formats & Scoring"
-        url: "/merit-badges/archery/guide/req4/"
-        is_sub: false
-  - group_title: "5. On the Shooting Line"
-    items:
-      - title: "5. Shooting Options Overview"
-        url: "/merit-badges/archery/guide/req5/"
-        is_sub: false
-      - title: "5. Recurve Bow or Longbow"
-        url: "/merit-badges/archery/guide/req5-recurve-bow-or-longbow/"
-        is_sub: true
-      - title: "5. Compound Bow"
-        url: "/merit-badges/archery/guide/req5-compound-bow/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/archery/guide/extended-learning/"
 ---
 
 There is something deeply satisfying about pulling back a bowstring, aiming at a target, and releasing an arrow. Archery is one of the oldest skills in human history, and today it is a sport that rewards patience, focus, and discipline. Whether you are shooting at a paper target in a field, aiming at a foam deer in the woods, or competing on an Olympic-level range, archery connects you to a tradition that stretches back thousands of years.

@@ -5,46 +5,6 @@ badge_name: "Health Care Professions"
 group_title: "Getting Started"
 next: "/merit-badges/health-care-professions/guide/req1/"
 next_title: "Diagnosing, Hearing, and Whole-Person Care"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/health-care-professions/guide/"
-        is_sub: false
-  - group_title: "Practical Applications"
-    items:
-      - title: "1. Diagnosing, Hearing, and Whole-Person Care"
-        url: "/merit-badges/health-care-professions/guide/req1/"
-        is_sub: false
-      - title: "2. Bedside Care and Fast Decisions"
-        url: "/merit-badges/health-care-professions/guide/req2/"
-        is_sub: false
-      - title: "3. Recovery, Communication, and Movement"
-        url: "/merit-badges/health-care-professions/guide/req3/"
-        is_sub: false
-      - title: "4. Testing, Imaging, and Behind-the-Scenes Care"
-        url: "/merit-badges/health-care-professions/guide/req4/"
-        is_sub: false
-      - title: "5. Making the Most of a Workplace Visit"
-        url: "/merit-badges/health-care-professions/guide/req5/"
-        is_sub: false
-      - title: "6. The Physician"
-        url: "/merit-badges/health-care-professions/guide/req6/"
-        is_sub: false
-      - title: "7. Confidentiality and HIPAA"
-        url: "/merit-badges/health-care-professions/guide/req7/"
-        is_sub: false
-      - title: "8. Recent Medical Breakthroughs"
-        url: "/merit-badges/health-care-professions/guide/req8/"
-        is_sub: false
-      - title: "9. Volunteer in Health Care"
-        url: "/merit-badges/health-care-professions/guide/req9/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/health-care-professions/guide/extended-learning/"
-        is_sub: false
 ---
 
 A worried family member, a crowded waiting room, a paramedic radioing ahead from an ambulance, a lab tech checking a sample, and a therapist helping someone walk again all belong to the same huge team. Health care is not one job. It is a network of skilled people who keep patients safe, solve problems, explain confusing information, and help people recover.

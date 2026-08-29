@@ -5,47 +5,6 @@ badge_name: "Disabilities Awareness"
 group_title: "Getting Started"
 next: "/merit-badges/disabilities-awareness/guide/req1a/"
 next_title: "Key Terminology"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/disabilities-awareness/guide/"
-  - group_title: "1. Understanding Disabilities"
-    items:
-      - title: "a Key Terminology"
-        url: "/merit-badges/disabilities-awareness/guide/req1a/"
-        is_sub: true
-      - title: "b Disability Etiquette"
-        url: "/merit-badges/disabilities-awareness/guide/req1b/"
-        is_sub: true
-  - group_title: "Practical Applications"
-    items:
-      - title: "2. Visiting an Agency"
-        url: "/merit-badges/disabilities-awareness/guide/req2/"
-      - title: "3. Personal Experiences"
-        url: "/merit-badges/disabilities-awareness/guide/req3/"
-  - group_title: "4. Accessibility Audits"
-    items:
-      - title: "4. Accessibility Observations"
-        url: "/merit-badges/disabilities-awareness/guide/req4/"
-      - title: "4. Req 4 Option A — Visible Accessibility"
-        url: "/merit-badges/disabilities-awareness/guide/req4-option-a/"
-        is_sub: true
-      - title: "4. Req 4 Option B — Invisible Disability Accommodations"
-        url: "/merit-badges/disabilities-awareness/guide/req4-option-b/"
-        is_sub: true
-  - group_title: "Career Exploration"
-    items:
-      - title: "5. Advocacy"
-        url: "/merit-badges/disabilities-awareness/guide/req5/"
-      - title: "6. Personal Commitment"
-        url: "/merit-badges/disabilities-awareness/guide/req6/"
-      - title: "7. Professions"
-        url: "/merit-badges/disabilities-awareness/guide/req7/"
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/disabilities-awareness/guide/extended-learning/"
 ---
 
 One in four adults in the United States lives with some form of disability. That means in a troop of twenty Scouts, statistically five of them — or their parents, siblings, or close friends — are directly affected. Disabilities are not rare, they are not always visible, and they are not something that only happens to "other people." They are part of everyday life.

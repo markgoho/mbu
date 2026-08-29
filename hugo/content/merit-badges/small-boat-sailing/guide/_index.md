@@ -5,54 +5,6 @@ badge_name: "Small-Boat Sailing"
 group_title: "Getting Started"
 next: "/merit-badges/small-boat-sailing/guide/req1/"
 next_title: "Safety, Injuries & Safety Afloat"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/small-boat-sailing/guide/"
-        is_sub: false
-  - group_title: "1. Safety, Readiness & Boat Setup"
-    items:
-      - title: "1. Safety, Injuries & Safety Afloat"
-        url: "/merit-badges/small-boat-sailing/guide/req1/"
-        is_sub: false
-      - title: "2. Swimmer Test Readiness"
-        url: "/merit-badges/small-boat-sailing/guide/req2/"
-        is_sub: false
-      - title: "3. Know Your Boat"
-        url: "/merit-badges/small-boat-sailing/guide/req3/"
-        is_sub: false
-  - group_title: "4. Before You Cast Off"
-    items:
-      - title: "4. Planning, Weather & Gear"
-        url: "/merit-badges/small-boat-sailing/guide/req4/"
-        is_sub: false
-      - title: "5. Read the Wind"
-        url: "/merit-badges/small-boat-sailing/guide/req5/"
-        is_sub: false
-  - group_title: "Sailing Skills Underway"
-    items:
-      - title: "6. Sailing Skills Underway"
-        url: "/merit-badges/small-boat-sailing/guide/req6/"
-        is_sub: false
-  - group_title: "7. Ropework & Boat Care"
-    items:
-      - title: "7. Knots, Lines & Seamanship"
-        url: "/merit-badges/small-boat-sailing/guide/req7/"
-        is_sub: false
-      - title: "8. Care for Boat and Gear"
-        url: "/merit-badges/small-boat-sailing/guide/req8/"
-        is_sub: false
-  - group_title: "Sailing Terms and Sailboat Types"
-    items:
-      - title: "9. Sailing Terms and Sailboat Types"
-        url: "/merit-badges/small-boat-sailing/guide/req9/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/small-boat-sailing/guide/extended-learning/"
-        is_sub: false
 ---
 
 Small-boat sailing teaches you how wind, water, and judgment work together. It is part science, part teamwork, and part feel. When a sailboat moves well, it is not because the sailor is forcing it. It is because the sailor notices what the wind is doing and responds at the right time.

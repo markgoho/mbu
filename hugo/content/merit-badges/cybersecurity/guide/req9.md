@@ -1,7 +1,7 @@
 ---
 title: "Careers"
 layout: guide
-group_title: "9. Career Exploration"
+group_title: "Projects & Careers"
 req_number: "9"
 prev: "/merit-badges/cybersecurity/guide/req8/"
 prev_title: "Cybersecurity Activities"

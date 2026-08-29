@@ -5,49 +5,6 @@ badge_name: "Truck Transportation"
 group_title: "Getting Started"
 next: "/merit-badges/truck-transportation/guide/req1/"
 next_title: "Truck Lines in Your Town"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/truck-transportation/guide/"
-        is_sub: false
-  - group_title: "Career Exploration"
-    items:
-      - title: "1. Truck Lines in Your Town"
-        url: "/merit-badges/truck-transportation/guide/req1/"
-        is_sub: false
-      - title: "2. How Freight Moves"
-        url: "/merit-badges/truck-transportation/guide/req2/"
-        is_sub: false
-      - title: "3. Gasoline vs. Diesel"
-        url: "/merit-badges/truck-transportation/guide/req3/"
-        is_sub: false
-      - title: "4. Inside a Truck Terminal"
-        url: "/merit-badges/truck-transportation/guide/req4/"
-        is_sub: false
-      - title: "5. Company Departments and Jobs"
-        url: "/merit-badges/truck-transportation/guide/req5/"
-        is_sub: false
-      - title: "6. Government Agencies and Their Roles"
-        url: "/merit-badges/truck-transportation/guide/req6/"
-        is_sub: false
-      - title: "7. Trucks and the Work They Do"
-        url: "/merit-badges/truck-transportation/guide/req7/"
-        is_sub: false
-      - title: "8. Shipping 500 Pounds by Truck"
-        url: "/merit-badges/truck-transportation/guide/req8/"
-        is_sub: false
-      - title: "9. Freight Terms You Should Know"
-        url: "/merit-badges/truck-transportation/guide/req9/"
-        is_sub: false
-      - title: "10. Exploring Trucking Careers"
-        url: "/merit-badges/truck-transportation/guide/req10/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/truck-transportation/guide/extended-learning/"
-        is_sub: false
 ---
 
 Every grocery shelf, hardware store aisle, and camp dining hall depends on trucks. Truck transportation connects farms, factories, ports, warehouses, and stores so people can get the things they need when they need them. This merit badge helps you see the system behind those moving trailers and understand why trucking matters to everyday life.

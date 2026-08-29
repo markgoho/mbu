@@ -1,7 +1,7 @@
 ---
 title: "Cybersecurity Activities"
 layout: guide
-group_title: "8. Hands-On Challenge"
+group_title: "Projects & Careers"
 req_number: "8"
 prev: "/merit-badges/cybersecurity/guide/req7/"
 prev_title: "IoT Devices"

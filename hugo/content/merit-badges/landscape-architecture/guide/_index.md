@@ -5,34 +5,6 @@ badge_name: "Landscape Architecture"
 group_title: "Getting Started"
 next: "/merit-badges/landscape-architecture/guide/req1/"
 next_title: "Reading a Designed Place"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/landscape-architecture/guide/"
-        is_sub: false
-  - group_title: "Career Exploration"
-    items:
-      - title: "1. Reading a Designed Place"
-        url: "/merit-badges/landscape-architecture/guide/req1/"
-        is_sub: false
-      - title: "2. What Makes a Site Work"
-        url: "/merit-badges/landscape-architecture/guide/req2/"
-        is_sub: false
-      - title: "3. Choosing Trees, Shrubs, and Ground Covers"
-        url: "/merit-badges/landscape-architecture/guide/req3/"
-        is_sub: false
-      - title: "4. Mapping Water, Access, and Comfort"
-        url: "/merit-badges/landscape-architecture/guide/req4/"
-        is_sub: false
-      - title: "5. Exploring Landscape Architecture Careers"
-        url: "/merit-badges/landscape-architecture/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/landscape-architecture/guide/extended-learning/"
-        is_sub: false
 ---
 
 Landscape architecture shapes the outdoor places people use every day: school entrances, playgrounds, parks, memorials, trails, courtyards, and town squares. It mixes art, science, plants, drainage, accessibility, and human behavior into one job. When you start noticing why one outdoor space feels welcoming while another feels confusing or uncomfortable, you are already thinking like a landscape architect.

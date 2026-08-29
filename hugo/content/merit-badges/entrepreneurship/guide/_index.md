@@ -5,48 +5,6 @@ badge_name: "Entrepreneurship"
 group_title: "Getting Started"
 next: "/merit-badges/entrepreneurship/guide/req1/"
 next_title: "Defining Entrepreneurship"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/entrepreneurship/guide/"
-  - group_title: "1. Foundations"
-    items:
-      - title: "1. Defining Entrepreneurship"
-        url: "/merit-badges/entrepreneurship/guide/req1/"
-      - title: "2. Essential Entrepreneur Skills"
-        url: "/merit-badges/entrepreneurship/guide/req2/"
-  - group_title: "3. Real-World Research"
-    items:
-      - title: "3. Interviewing an Entrepreneur"
-        url: "/merit-badges/entrepreneurship/guide/req3/"
-      - title: "4. Brainstorming Business Ideas"
-        url: "/merit-badges/entrepreneurship/guide/req4/"
-  - group_title: "5. Building Your Business Plan"
-    items:
-      - title: "a Product or Service"
-        url: "/merit-badges/entrepreneurship/guide/req5a/"
-        is_sub: true
-      - title: "b Market Analysis"
-        url: "/merit-badges/entrepreneurship/guide/req5b/"
-        is_sub: true
-      - title: "c Financial Plan"
-        url: "/merit-badges/entrepreneurship/guide/req5c/"
-        is_sub: true
-      - title: "d Personnel Plan"
-        url: "/merit-badges/entrepreneurship/guide/req5d/"
-        is_sub: true
-      - title: "e Promotion & Marketing"
-        url: "/merit-badges/entrepreneurship/guide/req5e/"
-        is_sub: true
-  - group_title: "Running the Business"
-    items:
-      - title: "6. Running the Business"
-        url: "/merit-badges/entrepreneurship/guide/req6/"
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/entrepreneurship/guide/extended-learning/"
 ---
 
 A teenager mows lawns every Saturday and earns enough to buy a new bike. Another designs custom phone cases and sells them at school. A third starts a dog-walking service in the neighborhood. Each of them saw a need, came up with a solution, and took the risk of putting their own time and energy on the line. That is entrepreneurship in action — and it does not require a corner office or a million-dollar idea.

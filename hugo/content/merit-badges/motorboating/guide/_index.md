@@ -5,34 +5,6 @@ badge_name: "Motorboating"
 group_title: "Getting Started"
 next: "/merit-badges/motorboating/guide/req1/"
 next_title: "Hazards, First Aid & Safety Afloat"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/motorboating/guide/"
-        is_sub: false
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Hazards, First Aid & Safety Afloat"
-        url: "/merit-badges/motorboating/guide/req1/"
-        is_sub: false
-      - title: "2. Swim Readiness & Life Jackets"
-        url: "/merit-badges/motorboating/guide/req2/"
-        is_sub: false
-      - title: "3. Engines, Fuel & On-Water Awareness"
-        url: "/merit-badges/motorboating/guide/req3/"
-        is_sub: false
-      - title: "4. Rules, Weather & Required Gear"
-        url: "/merit-badges/motorboating/guide/req4/"
-        is_sub: false
-      - title: "5. Boat Handling Underway"
-        url: "/merit-badges/motorboating/guide/req5/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/motorboating/guide/extended-learning/"
-        is_sub: false
 ---
 
 A dock line slips loose, the wind pushes the bow sideways, and suddenly a simple departure takes real skill. That is what makes motorboating exciting: you are not just riding on the water, you are managing speed, weight, weather, people, and machinery all at once.

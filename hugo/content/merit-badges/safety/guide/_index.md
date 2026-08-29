@@ -5,54 +5,6 @@ badge_name: "Safety"
 group_title: "Getting Started"
 next: "/merit-badges/safety/guide/req1/"
 next_title: "Safety and Hazards"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/safety/guide/"
-        is_sub: false
-  - group_title: "Safety & Preparation"
-    items:
-      - title: "1. Safety and Hazards"
-        url: "/merit-badges/safety/guide/req1/"
-        is_sub: false
-      - title: "2. Home Safety Plans"
-        url: "/merit-badges/safety/guide/req2/"
-        is_sub: false
-      - title: "3. Crime Awareness and Home Security"
-        url: "/merit-badges/safety/guide/req3/"
-        is_sub: false
-      - title: "4. Public Place Emergencies"
-        url: "/merit-badges/safety/guide/req4/"
-        is_sub: false
-      - title: "5. Keeping Scouting Safe"
-        url: "/merit-badges/safety/guide/req5/"
-        is_sub: false
-      - title: "6. Avoiding Assault Risks"
-        url: "/merit-badges/safety/guide/req6/"
-        is_sub: false
-      - title: "7. Smart Online Safety"
-        url: "/merit-badges/safety/guide/req7/"
-        is_sub: false
-      - title: "8. Safer Ways to Travel"
-        url: "/merit-badges/safety/guide/req8/"
-        is_sub: false
-  - group_title: "9. Careers and Service"
-    items:
-      - title: "9. Choose Your Safety Path"
-        url: "/merit-badges/safety/guide/req9/"
-        is_sub: false
-      - title: "a Safety Careers"
-        url: "/merit-badges/safety/guide/req9a/"
-        is_sub: true
-      - title: "b Safety in Service and Lifestyle"
-        url: "/merit-badges/safety/guide/req9b/"
-        is_sub: true
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/safety/guide/extended-learning/"
-        is_sub: false
 ---
 
 A lot of accidents are not really accidents. They start with a missed clue: a bike helmet left unbuckled, a wet floor ignored, a charger overheating on a bed, a ride accepted without checking the license plate. Safety is the skill of noticing those clues early and acting before someone gets hurt.

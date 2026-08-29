@@ -5,44 +5,6 @@ badge_name: "Communication"
 group_title: "Getting Started"
 next: "/merit-badges/communication/guide/req1/"
 next_title: "Communication Awareness"
-guide_nav:
-  - group_title: "Getting Started"
-    items:
-      - title: "Introduction & Overview"
-        url: "/merit-badges/communication/guide/"
-  - group_title: "Career Exploration"
-    items:
-      - title: "1. Communication Awareness"
-        url: "/merit-badges/communication/guide/req1/"
-        is_sub: false
-      - title: "2. Creative Presentation"
-        url: "/merit-badges/communication/guide/req2/"
-        is_sub: false
-      - title: "3. Writing & Delivering a Speech"
-        url: "/merit-badges/communication/guide/req3/"
-        is_sub: false
-      - title: "4. Conducting an Interview"
-        url: "/merit-badges/communication/guide/req4/"
-        is_sub: false
-      - title: "5. Public Meeting Report"
-        url: "/merit-badges/communication/guide/req5/"
-        is_sub: false
-      - title: "6. Teach a Skill"
-        url: "/merit-badges/communication/guide/req6/"
-        is_sub: false
-      - title: "7. Writing & Publishing"
-        url: "/merit-badges/communication/guide/req7/"
-        is_sub: false
-      - title: "8. Master of Ceremonies"
-        url: "/merit-badges/communication/guide/req8/"
-        is_sub: false
-      - title: "9. Career Exploration"
-        url: "/merit-badges/communication/guide/req9/"
-        is_sub: false
-  - group_title: "Beyond the Badge"
-    items:
-      - title: "Extended Learning"
-        url: "/merit-badges/communication/guide/extended-learning/"
 ---
 
 Communication is one of the most powerful skills you will ever develop. Every time you explain an idea, listen to a friend, write a message, or stand up in front of a group to speak, you are practicing communication. It connects people, builds trust, solves problems, and makes great things happen. The Communication merit badge will help you become a clearer thinker, a better listener, and a more confident speaker — skills that will serve you in Scouting and throughout your life.
