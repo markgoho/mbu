@@ -34,7 +34,7 @@
     </table>
   </figure>
 
-  {{/* 2. Mobile Semantic Grid Cards (Zero Divs) */}}
+  {{/* 2. Mobile Semantic Grid Cards */}}
   <ul class="req-table-cards">
     {{- range .TBody }}
       {{- $firstCell := index . 0 -}}
@@ -44,12 +44,14 @@
             <h3 class="req-card-item__title">{{ .Text }}</h3>
           </header>
         {{- end }}
-        <dl class="req-card-item__grid">
+        <dl class="req-card-item__body">
           {{- range $i, $cell := . }}
             {{- if gt $i 0 }}
               {{- $label := index $headers $i | default "" -}}
-              <dt class="req-card-item__label">{{ $label }}</dt>
-              <dd class="req-card-item__value"{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{ .Text }}</dd>
+              <div class="req-card-item__row">
+                <dt class="req-card-item__label">{{ $label }}</dt>
+                <dd class="req-card-item__value"{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{ .Text }}</dd>
+              </div>
             {{- end }}
           {{- end }}
         </dl>
