@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Malware & Protection"
+title: "Malware & Protection"
 layout: guide
-group_title: "Software & Security"
+group_title: "4. Software & Security"
 req_number: "4c"
 prev: "/merit-badges/digital-technology/guide/req4b/"
-prev_title: "Req 4b — Software You Use"
+prev_title: "Software You Use"
 next: "/merit-badges/digital-technology/guide/req4d/"
-next_title: "Req 4d — Barcodes, QR Codes & RFID"
+next_title: "Barcodes, QR Codes & RFID"
 ---
 
 {{< drg/requirement number="4c" >}}

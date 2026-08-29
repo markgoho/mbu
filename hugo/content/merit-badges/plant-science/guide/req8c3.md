@@ -1,13 +1,13 @@
 ---
-title: "Req 8c3 — Using Plant Identification Keys"
+title: "Using Plant Identification Keys"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c3"
 req_path: "8.c.3"
 prev: "/merit-badges/plant-science/guide/req8c2/"
-prev_title: "Req 8c2 — Native vs. Exotic Plants"
+prev_title: "Study Site Inventory"
 next: "/merit-badges/plant-science/guide/req8c4/"
-next_title: "Req 8c4 — Pressing and Mounting Specimens"
+next_title: "Pressing & Mounting Plants"
 ---
 
 {{< drg/requirement number="8c3" >}}

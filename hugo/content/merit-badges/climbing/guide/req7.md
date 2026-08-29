@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Essential Climbing Knots"
+title: "Essential Climbing Knots"
 layout: guide
-group_title: "Knots"
+group_title: "7. Knots"
 req_number: "7"
 prev: "/merit-badges/climbing/guide/req6/"
-prev_title: "Req 6 — Rope Care & Management"
+prev_title: "Rope Care & Management"
 next: "/merit-badges/climbing/guide/req8/"
-next_title: "Req 8 — Personal Protective Equipment"
+next_title: "Personal Protective Equipment"
 ---
 
 {{< drg/requirement number="7" >}}

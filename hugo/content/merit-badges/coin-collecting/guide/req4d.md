@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — The Quarter"
+title: "The Quarter"
 layout: guide
-group_title: "Building Your Collection"
+group_title: "4. Building Your Collection"
 req_number: "4d"
 prev: "/merit-badges/coin-collecting/guide/req4c/"
-prev_title: "Req 4c — The Ten-Cent Coin"
+prev_title: "The Ten-Cent Coin"
 next: "/merit-badges/coin-collecting/guide/req4e/"
-next_title: "Req 4e — The Half Dollar"
+next_title: "The Half Dollar"
 ---
 
 {{< drg/requirement number="4d" >}}

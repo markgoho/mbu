@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Build Your Four-Week Plan"
+title: "Build Your Four-Week Plan"
 layout: "guide"
-group_title: "Build Your Plan"
+group_title: "5. Build Your Plan"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/multisport/guide/req4d2/"
-prev_title: "Req 4d2 — Aquabike Bike Skills"
+prev_title: "Aquabike Bike Skills"
 next: "/merit-badges/multisport/guide/req6/"
-next_title: "Req 6 — Set Up Your Transition Area"
+next_title: "Set Up Your Transition Area"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Alcohol & Microbes"
+title: "Alcohol & Microbes"
 layout: guide
-group_title: "Chemistry & First Aid"
+group_title: "2. Chemistry & First Aid"
 req_number: "2c"
 prev: "/merit-badges/chemistry/guide/req2b/"
-prev_title: "Req 2b — How Soap Works"
+prev_title: "How Soap Works"
 next: "/merit-badges/chemistry/guide/req3a/"
-next_title: "Req 3a — The Maillard Reaction"
+next_title: "The Maillard Reaction"
 ---
 
 {{< drg/requirement number="2c" >}}

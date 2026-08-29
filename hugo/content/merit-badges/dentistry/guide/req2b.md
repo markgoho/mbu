@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Tooth Trauma & Mouth Guards"
+title: "Tooth Trauma & Mouth Guards"
 layout: guide
-group_title: "Dental Disease & Prevention"
+group_title: "2. Dental Disease & Prevention"
 req_number: "2b"
 prev: "/merit-badges/dentistry/guide/req2a/"
-prev_title: "Req 2a — Causes of Decay & Gum Disease"
+prev_title: "Causes of Decay & Gum Disease"
 next: "/merit-badges/dentistry/guide/req2c/"
-next_title: "Req 2c — Saving a Knocked-Out Tooth"
+next_title: "Saving a Knocked-Out Tooth"
 ---
 
 {{< drg/requirement number="2b" >}}

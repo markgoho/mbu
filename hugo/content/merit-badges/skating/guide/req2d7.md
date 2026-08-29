@@ -1,13 +1,13 @@
 ---
-title: "Req 2d7 — Build a Board"
+title: "Build a Board"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d7"
 req_path: "2.d.7"
 prev: "/merit-badges/skating/guide/req2d6/"
-prev_title: "Req 2d6 — Skateboard Anatomy"
+prev_title: "Skateboard Anatomy"
 next: "/merit-badges/skating/guide/req2d8/"
-next_title: "Req 2d8 — Skateboard Maintenance"
+next_title: "Skateboard Maintenance"
 ---
 
 {{< drg/requirement number="2d7" >}}

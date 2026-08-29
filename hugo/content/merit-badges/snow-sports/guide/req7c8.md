@@ -1,13 +1,13 @@
 ---
-title: "Req 7c8 — Ollie, Nose-End Grab & Wheelie"
+title: "Ollie, Nose-End Grab & Wheelie"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c8"
 req_path: "7.c.8"
 prev: "/merit-badges/snow-sports/guide/req7c7/"
-prev_title: "Req 7c7 — Beginning & Intermediate Maneuvers"
+prev_title: "Beginning & Intermediate Maneuvers"
 next: "/merit-badges/snow-sports/guide/req7c9/"
-next_title: "Req 7c9 — Controlled Run"
+next_title: "Controlled Run"
 ---
 
 {{< drg/requirement number="7c8" >}}

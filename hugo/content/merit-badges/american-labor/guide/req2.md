@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Visiting a Labor Organization"
+title: "Visiting a Labor Organization"
 layout: guide
-group_title: "Connecting with Labor"
+group_title: "2. Connecting with Labor"
 req_number: "2"
 prev: "/merit-badges/american-labor/guide/req1/"
-prev_title: "Req 1 — Worker Concerns"
+prev_title: "Worker Concerns"
 next: "/merit-badges/american-labor/guide/req3/"
-next_title: "Req 3 — What Labor Unions Do"
+next_title: "What Labor Unions Do"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 8b — Stove Types"
+title: "Stove Types"
 layout: guide
-group_title: "Camp Cooking"
+group_title: "8. Camp Cooking"
 req_number: "8b"
 prev: "/merit-badges/camping/guide/req8a/"
-prev_title: "Req 8a — Stove Safety"
+prev_title: "Stove Safety"
 next: "/merit-badges/camping/guide/req8c/"
-next_title: "Req 8c — Menu Planning"
+next_title: "Menu Planning"
 ---
 
 {{< drg/requirement number="8b" >}}

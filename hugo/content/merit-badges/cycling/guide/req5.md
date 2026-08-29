@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Basic Bike Handling"
+title: "Basic Bike Handling"
 layout: guide
-group_title: "Handling Skills"
+group_title: "5. Handling Skills"
 req_number: "5"
 prev: "/merit-badges/cycling/guide/req4/"
-prev_title: "Req 4 — Inspect, Adjust & Repair"
+prev_title: "Inspect, Adjust & Repair"
 next: "/merit-badges/cycling/guide/req6a/"
-next_title: "Req 6a — Road Biking Option"
+next_title: "Road Biking Option"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Edible Plants"
+title: "Edible Plants"
 layout: guide
-group_title: "Food & Sustenance"
+group_title: "9. Food & Careers"
 req_number: "9"
 prev: "/merit-badges/wilderness-survival/guide/req8/"
-prev_title: "Req 8 — Water Treatment"
+prev_title: "Water Treatment"
 next: "/merit-badges/wilderness-survival/guide/req10/"
-next_title: "Req 10 — Signaling for Rescue"
+next_title: "Careers & Hobbies"
 ---
 
 {{< drg/requirement number="9" >}}

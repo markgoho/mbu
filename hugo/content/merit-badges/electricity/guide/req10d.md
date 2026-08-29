@@ -1,12 +1,12 @@
 ---
-title: "Req 10d — Single-Pole, Double-Throw Switch"
+title: "Single-Pole, Double-Throw Switch"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10d"
 prev: "/merit-badges/electricity/guide/req10c/"
-prev_title: "Req 10c — Build a Rheostat"
+prev_title: "Build a Rheostat"
 next: "/merit-badges/electricity/guide/req10e/"
-next_title: "Req 10e — How a 3-Way Switch Works"
+next_title: "How a 3-Way Switch Works"
 ---
 
 {{< drg/requirement number="10d" >}}

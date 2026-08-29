@@ -1,13 +1,13 @@
 ---
-title: "Req 5b — Silversmith"
+title: "Silversmith"
 layout: "guide"
-group_title: "Silversmith"
+group_title: "5. Silversmith"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/metalwork/guide/req5a3/"
-prev_title: "Req 5a3 — Cutting, Bending & Joining"
+prev_title: "Cutting, Bending & Joining"
 next: "/merit-badges/metalwork/guide/req5b1/"
-next_title: "Req 5b1 — Silversmith Tools"
+next_title: "Silversmith Tools"
 ---
 
 {{< drg/requirement number="5" option="Option 2—Silversmith" >}}

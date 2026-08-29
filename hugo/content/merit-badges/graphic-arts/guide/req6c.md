@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — School Program Visit"
+title: "School Program Visit"
 layout: guide
-group_title: "Explore the Industry"
+group_title: "6. Explore the Industry"
 req_number: "6c"
 prev: "/merit-badges/graphic-arts/guide/req6b/"
-prev_title: "Req 6b — Commercial Printing Visit"
+prev_title: "Commercial Printing Visit"
 next: "/merit-badges/graphic-arts/guide/req6d/"
-next_title: "Req 6d — Professional Websites Research"
+next_title: "Professional Websites Research"
 ---
 
 {{< drg/requirement number="6c" >}}

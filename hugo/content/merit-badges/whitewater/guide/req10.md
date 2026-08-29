@@ -1,13 +1,13 @@
 ---
-title: "Req 10 — Core Moving-Water Maneuvers"
+title: "Core Moving-Water Maneuvers"
 layout: "guide"
-group_title: "Running the River"
+group_title: "9. Running the River"
 req_number: "10"
 req_path: "10"
 prev: "/merit-badges/whitewater/guide/req9/"
-prev_title: "Req 9 — Choose Your Line"
+prev_title: "Choose Your Line"
 next: "/merit-badges/whitewater/guide/req11/"
-next_title: "Req 11 — Rescue and Recovery Skills"
+next_title: "Rescue and Recovery Skills"
 ---
 
 {{< drg/requirement number="10" >}}

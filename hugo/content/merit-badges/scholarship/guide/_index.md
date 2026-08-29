@@ -4,66 +4,66 @@ layout: "guide"
 badge_name: "Scholarship"
 group_title: "Getting Started"
 next: "/merit-badges/scholarship/guide/req1/"
-next_title: "Req 1 — Building Strong Grades"
+next_title: "Building Strong Grades"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/scholarship/guide/"
         is_sub: false
-  - group_title: "Academic Momentum"
+  - group_title: "1. Academic Momentum"
     items:
-      - title: "Req 1 — Building Strong Grades"
+      - title: "1. Building Strong Grades"
         url: "/merit-badges/scholarship/guide/req1/"
         is_sub: false
-      - title: "Req 1a — Keeping a B Average"
+      - title: "a Keeping a B Average"
         url: "/merit-badges/scholarship/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Showing Improvement"
+      - title: "b Showing Improvement"
         url: "/merit-badges/scholarship/guide/req1b/"
         is_sub: true
-  - group_title: "Learning Beyond the Classroom"
+  - group_title: "2. Learning Beyond the Classroom"
     items:
-      - title: "Req 2 — Choose Two Learning Tools"
+      - title: "2. Choose Two Learning Tools"
         url: "/merit-badges/scholarship/guide/req2/"
         is_sub: false
-      - title: "Req 2a — Learn From Local Places"
+      - title: "a Learn From Local Places"
         url: "/merit-badges/scholarship/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Interview Working Adults"
+      - title: "b Interview Working Adults"
         url: "/merit-badges/scholarship/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Use a Planner Well"
+      - title: "c Use a Planner Well"
         url: "/merit-badges/scholarship/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Compare Research Methods"
+      - title: "d Compare Research Methods"
         url: "/merit-badges/scholarship/guide/req2d/"
         is_sub: true
-  - group_title: "Character Counts"
+  - group_title: "3. Character Counts"
     items:
-      - title: "Req 3 — Character, Leadership, and Service"
+      - title: "3. Character, Leadership, and Service"
         url: "/merit-badges/scholarship/guide/req3/"
         is_sub: false
-  - group_title: "Teamwork at School"
+  - group_title: "4. Teamwork at School"
     items:
-      - title: "Req 4 — Teamwork Through Participation"
+      - title: "4. Teamwork Through Participation"
         url: "/merit-badges/scholarship/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Join an Activity"
+      - title: "a Join an Activity"
         url: "/merit-badges/scholarship/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Contribute to a Team Project"
+      - title: "b Contribute to a Team Project"
         url: "/merit-badges/scholarship/guide/req4b/"
         is_sub: true
-  - group_title: "Writing About Your Future"
+  - group_title: "5. Writing About Your Future"
     items:
-      - title: "Req 5 — Write About Your Future"
+      - title: "5. Write About Your Future"
         url: "/merit-badges/scholarship/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Your Education Story"
+      - title: "a Your Education Story"
         url: "/merit-badges/scholarship/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Careers and Classes"
+      - title: "b Careers and Classes"
         url: "/merit-badges/scholarship/guide/req5b/"
         is_sub: true
   - group_title: "Beyond the Badge"

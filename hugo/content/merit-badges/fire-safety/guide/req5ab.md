@@ -1,12 +1,12 @@
 ---
-title: "Req 5a–5b — Common Home Fire Hazards"
+title: "Common Home Fire Hazards"
 layout: guide
-group_title: "Home Fire Safety"
+group_title: "5. Home Fire Safety"
 req_number: "5a"
 prev: "/merit-badges/fire-safety/guide/req4/"
-prev_title: "Req 4 — Fire Origins"
+prev_title: "Fire Origins"
 next: "/merit-badges/fire-safety/guide/req5c/"
-next_title: "Req 5c — Candle Safety"
+next_title: "Candle Safety"
 ---
 
  {{< drg/requirement number="5a" >}}

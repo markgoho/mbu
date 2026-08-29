@@ -1,12 +1,12 @@
 ---
-title: "Req 4c4 — Road-Building Materials"
+title: "Road-Building Materials"
 layout: guide
-group_title: "Mineral Resources"
+group_title: "4. Mineral Resources"
 req_number: "4c4"
 prev: "/merit-badges/geology/guide/req4c3b/"
-prev_title: "Req 4c3b — Identify 15 Specimens"
+prev_title: "Identify 15 Specimens"
 next: "/merit-badges/geology/guide/req4c5/"
-next_title: "Req 4c5 — Visit or Investigate Resource Use"
+next_title: "Visit or Investigate Resource Use"
 ---
 
 {{< drg/requirement number="4c4" >}}

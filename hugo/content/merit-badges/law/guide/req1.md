@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — What Is Law?"
+title: "What Is Law?"
 layout: guide
-group_title: "Foundations of Law"
+group_title: "1. Foundations of Law"
 req_number: "1"
 prev: "/merit-badges/law/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/law/guide/req2/"
-next_title: "Requirement 2 — Landmarks in Legal History"
+next_title: "Landmarks in Legal History"
 ---
 
 {{< drg/requirement number="1" >}}

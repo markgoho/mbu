@@ -1,11 +1,11 @@
 ---
-title: "Req 5b — Careers and Classes"
+title: "Careers and Classes"
 layout: "guide"
-group_title: "Writing About Your Future"
+group_title: "5. Writing About Your Future"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/scholarship/guide/req5a/"
-prev_title: "Req 5a — Your Education Story"
+prev_title: "Your Education Story"
 next: "/merit-badges/scholarship/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

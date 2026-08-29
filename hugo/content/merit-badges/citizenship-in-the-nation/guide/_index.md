@@ -4,50 +4,50 @@ layout: guide
 badge_name: "Citizenship in the Nation"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-the-nation/guide/req1/"
-next_title: "Req 1 — The Constitution"
+next_title: "The Constitution"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/citizenship-in-the-nation/guide/"
-  - group_title: "The Constitution"
+  - group_title: "1. The Constitution"
     items:
-      - title: "Req 1 — The Constitution"
+      - title: "1. The Constitution"
         url: "/merit-badges/citizenship-in-the-nation/guide/req1/"
         is_sub: false
-      - title: "Req 2 — The Preamble"
+      - title: "2. The Preamble"
         url: "/merit-badges/citizenship-in-the-nation/guide/req2/"
         is_sub: false
-  - group_title: "How Government Works"
+  - group_title: "3. How Government Works"
     items:
-      - title: "Req 3 — Three Branches of Government"
+      - title: "3. Three Branches of Government"
         url: "/merit-badges/citizenship-in-the-nation/guide/req3/"
         is_sub: false
-  - group_title: "Founding Documents & Ideals"
+  - group_title: "4. Founding Documents & Ideals"
     items:
-      - title: "Req 4a — Declaration of Independence"
+      - title: "a Declaration of Independence"
         url: "/merit-badges/citizenship-in-the-nation/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Bill of Rights & 14th Amendment"
+      - title: "b Bill of Rights & 14th Amendment"
         url: "/merit-badges/citizenship-in-the-nation/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — E Pluribus Unum"
+      - title: "c E Pluribus Unum"
         url: "/merit-badges/citizenship-in-the-nation/guide/req4c/"
         is_sub: true
-  - group_title: "Citizenship in Action"
+  - group_title: "5. Citizenship in Action"
     items:
-      - title: "Req 5 — Following the News"
+      - title: "5. Following the News"
         url: "/merit-badges/citizenship-in-the-nation/guide/req5/"
         is_sub: false
-      - title: "Req 6 — A Historic Speech"
+      - title: "6. A Historic Speech"
         url: "/merit-badges/citizenship-in-the-nation/guide/req6/"
         is_sub: false
-  - group_title: "Experiencing Your Nation"
+  - group_title: "7. Experiencing Your Nation"
     items:
-      - title: "Req 7 — Exploring National Sites"
+      - title: "7. Exploring National Sites"
         url: "/merit-badges/citizenship-in-the-nation/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Contacting Congress"
+      - title: "8. Contacting Congress"
         url: "/merit-badges/citizenship-in-the-nation/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

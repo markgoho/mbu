@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Play & Review Games"
+title: "Play & Review Games"
 layout: guide
-group_title: "Competition"
+group_title: "6. Competition"
 req_number: "7"
 prev: "/merit-badges/chess/guide/req6/"
-prev_title: "Req 6 — Chess Tournaments"
+prev_title: "Chess Tournaments"
 next: "/merit-badges/chess/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

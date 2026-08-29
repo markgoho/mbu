@@ -1,12 +1,12 @@
 ---
-title: "Req 11 — Walk, Trot, Halt, and Dismount"
+title: "Walk, Trot, Halt, and Dismount"
 layout: guide
-group_title: "Basic Riding Skills"
+group_title: "11. Basic Riding Skills"
 req_number: "11"
 prev: "/merit-badges/horsemanship/guide/req10/"
-prev_title: "Req 10 — Approach, Lead, and Tie"
+prev_title: "Approach, Lead, and Tie"
 next: "/merit-badges/horsemanship/guide/req12/"
-next_title: "Req 12 — Choose Your Path"
+next_title: "Choose Your Path"
 ---
 
 {{< drg/requirement number="11" >}}

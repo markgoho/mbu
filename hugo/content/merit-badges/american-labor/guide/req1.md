@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Worker Concerns"
+title: "Worker Concerns"
 layout: guide
-group_title: "Understanding Workers"
+group_title: "1. Understanding Workers"
 req_number: "1"
 prev: "/merit-badges/american-labor/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/american-labor/guide/req2/"
-next_title: "Req 2 — Visiting a Labor Organization"
+next_title: "Visiting a Labor Organization"
 ---
 
 {{< drg/requirement number="1" >}}

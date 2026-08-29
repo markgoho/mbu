@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Your Future in Space"
+title: "Your Future in Space"
 layout: "guide"
-group_title: "Careers in Space"
+group_title: "8. Careers in Space"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/space-exploration/guide/req7/"
-prev_title: "Req 7 — Design a Space Base"
+prev_title: "Design a Space Base"
 next: "/merit-badges/space-exploration/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

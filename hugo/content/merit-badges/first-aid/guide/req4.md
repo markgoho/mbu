@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Bleeding Control"
+title: "Bleeding Control"
 layout: "guide"
-group_title: "Bleeding Wounds"
+group_title: "4. Bleeding Wounds"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/first-aid/guide/req3/"
-prev_title: "Req 3 — Burns, Bites & Skin Injuries"
+prev_title: "Burns, Bites & Skin Injuries"
 next: "/merit-badges/first-aid/guide/req5/"
-next_title: "Req 5 — Choking, Asthma & Altitude"
+next_title: "Choking, Asthma & Altitude"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — What Is Fish and Wildlife Management?"
+title: "What Is Fish and Wildlife Management?"
 layout: guide
-group_title: "Conservation Fundamentals"
+group_title: "1. Conservation Fundamentals"
 req_number: "1"
 prev: "/merit-badges/fish-and-wildlife-management/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/fish-and-wildlife-management/guide/req2/"
-next_title: "Req 2 — Major Threats to Fish and Wildlife"
+next_title: "Major Threats to Fish and Wildlife"
 ---
 
 {{< drg/requirement number="1" >}}

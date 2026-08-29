@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Understanding Insurance"
+title: "Understanding Insurance"
 layout: guide
-group_title: "Insurance"
+group_title: "6. Insurance"
 req_number: "6"
 prev: "/merit-badges/personal-management/guide/req5/"
-prev_title: "Req 5 — Types of Investments"
+prev_title: "Types of Investments"
 next: "/merit-badges/personal-management/guide/req7a/"
-next_title: "Req 7a — Loans & Interest"
+next_title: "Loans & Interest"
 ---
 
 {{< drg/requirement number="6" >}}

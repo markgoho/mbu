@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Groups Working to Prevent Crime"
+title: "Groups Working to Prevent Crime"
 layout: guide
-group_title: "Crime Prevention Partners"
+group_title: "2. Crime Prevention Partners"
 req_number: "2"
 prev: "/merit-badges/crime-prevention/guide/req1/"
-prev_title: "Req 1 — Laws and Society"
+prev_title: "Laws and Society"
 next: "/merit-badges/crime-prevention/guide/req3a/"
-next_title: "Req 3a — Researching Crimes"
+next_title: "Researching Crimes"
 ---
 
 {{< drg/requirement number="2" >}}

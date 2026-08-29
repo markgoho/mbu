@@ -4,55 +4,55 @@ layout: guide
 badge_name: "Woodwork"
 group_title: "Getting Started"
 next: "/merit-badges/woodwork/guide/req1a/"
-next_title: "Req 1a — Workshop Hazards"
+next_title: "Workshop Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/woodwork/guide/"
-  - group_title: "Safety First"
+  - group_title: "1. Safety First"
     items:
-      - title: "Req 1a — Workshop Hazards"
+      - title: "a Workshop Hazards"
         url: "/merit-badges/woodwork/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — First Aid & Protection"
+      - title: "b First Aid & Protection"
         url: "/merit-badges/woodwork/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Totin' Chip"
+      - title: "c Totin"
         url: "/merit-badges/woodwork/guide/req1c/"
         is_sub: true
-  - group_title: "Understanding Wood"
+  - group_title: "2. Understanding Wood"
     items:
-      - title: "Req 2a — From Tree to Lumber"
+      - title: "a From Tree to Lumber"
         url: "/merit-badges/woodwork/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Wood Identification"
+      - title: "b Wood Identification"
         url: "/merit-badges/woodwork/guide/req2b/"
         is_sub: true
-  - group_title: "Tools of the Trade"
+  - group_title: "3. Tools of the Trade"
     items:
-      - title: "Req 3a — Tool Care & Storage"
+      - title: "a Tool Care & Storage"
         url: "/merit-badges/woodwork/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Sharpening"
+      - title: "b Sharpening"
         url: "/merit-badges/woodwork/guide/req3b/"
         is_sub: true
-  - group_title: "Building Projects"
+  - group_title: "4. Building Projects"
     items:
-      - title: "Req 4 — Build with Basic Tools"
+      - title: "4. Build with Basic Tools"
         url: "/merit-badges/woodwork/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Design Your Own Project"
+      - title: "5. Design Your Own Project"
         url: "/merit-badges/woodwork/guide/req5/"
         is_sub: false
-  - group_title: "Advanced Techniques"
+  - group_title: "6. Advanced Techniques"
     items:
-      - title: "Req 6 — Advanced Projects"
+      - title: "6. Advanced Projects"
         url: "/merit-badges/woodwork/guide/req6/"
         is_sub: false
-  - group_title: "Careers in Woodwork"
+  - group_title: "7. Careers in Woodwork"
     items:
-      - title: "Req 7 — Woodworking Careers"
+      - title: "7. Woodworking Careers"
         url: "/merit-badges/woodwork/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

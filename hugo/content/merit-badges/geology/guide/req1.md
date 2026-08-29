@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — What Geology Explains"
+title: "What Geology Explains"
 layout: guide
-group_title: "Thinking Like a Geologist"
+group_title: "1. Thinking Like a Geologist"
 req_number: "1"
 prev: "/merit-badges/geology/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/geology/guide/req2/"
-next_title: "Req 2 — Resources From the Ground"
+next_title: "Resources From the Ground"
 ---
 
 {{< drg/requirement number="1" >}}

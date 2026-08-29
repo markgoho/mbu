@@ -1,11 +1,11 @@
 ---
-title: "Req 9b — Turn Curiosity into a Hobby"
+title: "Turn Curiosity into a Hobby"
 layout: "guide"
-group_title: "Exploration Futures"
+group_title: "9. Exploration Futures"
 req_number: "9b"
 req_path: "9.b"
 prev: "/merit-badges/exploration/guide/req9a/"
-prev_title: "Req 9a — Research an Exploration Career"
+prev_title: "Research an Exploration Career"
 next: "/merit-badges/exploration/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

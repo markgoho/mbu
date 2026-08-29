@@ -1,13 +1,13 @@
 ---
-title: "Req 2cl — Selecting a Muzzleloading Rifle"
+title: "Selecting a Muzzleloading Rifle"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cl"
 req_path: "2.c.l"
 prev: "/merit-badges/rifle-shooting/guide/req2ck/"
-prev_title: "Req 2ck — Clean a Muzzleloader Properly"
+prev_title: "Clean a Muzzleloader Properly"
 next: "/merit-badges/rifle-shooting/guide/req2cm/"
-next_title: "Req 2cm — First Grouping Exercise"
+next_title: "First Grouping Exercise"
 ---
 
 {{< drg/requirement number="2cl" >}}

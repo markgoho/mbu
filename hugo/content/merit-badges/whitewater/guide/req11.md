@@ -1,13 +1,13 @@
 ---
-title: "Req 11 — Rescue and Recovery Skills"
+title: "Rescue and Recovery Skills"
 layout: "guide"
-group_title: "Running the River"
+group_title: "9. Running the River"
 req_number: "11"
 req_path: "11"
 prev: "/merit-badges/whitewater/guide/req10/"
-prev_title: "Req 10 — Core Moving-Water Maneuvers"
+prev_title: "Core Moving-Water Maneuvers"
 next: "/merit-badges/whitewater/guide/req12/"
-next_title: "Req 12 — Plan and Paddle a Real Trip"
+next_title: "Plan and Paddle a Real Trip"
 ---
 
 {{< drg/requirement number="11" >}}

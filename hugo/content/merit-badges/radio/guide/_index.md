@@ -4,162 +4,162 @@ layout: "guide"
 badge_name: "Radio"
 group_title: "Getting Started"
 next: "/merit-badges/radio/guide/req1/"
-next_title: "Req 1 — Radio Safety"
+next_title: "Radio Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/radio/guide/"
         is_sub: false
-  - group_title: "Radio Safety"
+  - group_title: "1. Radio Safety"
     items:
-      - title: "Req 1 — Radio Safety"
+      - title: "1. Radio Safety"
         url: "/merit-badges/radio/guide/req1/"
         is_sub: false
-  - group_title: "Radio Fundamentals"
+  - group_title: "2. Radio Fundamentals"
     items:
-      - title: "Req 2a — The Electromagnetic Spectrum"
+      - title: "a The Electromagnetic Spectrum"
         url: "/merit-badges/radio/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Radio Basics"
+      - title: "b Radio Basics"
         url: "/merit-badges/radio/guide/req2b/"
         is_sub: true
-  - group_title: "How Radio Waves Travel"
+  - group_title: "3. How Radio Waves Travel"
     items:
-      - title: "Req 3 — Wave Propagation"
+      - title: "3. Wave Propagation"
         url: "/merit-badges/radio/guide/req3/"
         is_sub: false
-  - group_title: "Information by Radio"
+  - group_title: "4. Information by Radio"
     items:
-      - title: "Req 4 — Modulation & Data"
+      - title: "4. Modulation & Data"
         url: "/merit-badges/radio/guide/req4/"
         is_sub: false
-  - group_title: "Radio Hardware & Services"
+  - group_title: "5. Radio Hardware & Services"
     items:
-      - title: "Req 5 — Equipment & Devices"
+      - title: "5. Equipment & Devices"
         url: "/merit-badges/radio/guide/req5/"
         is_sub: false
-  - group_title: "Radio Regulation"
+  - group_title: "6. Radio Regulation"
     items:
-      - title: "Req 6 — FCC, ITU & Call Signs"
+      - title: "6. FCC, ITU & Call Signs"
         url: "/merit-badges/radio/guide/req6/"
         is_sub: false
-  - group_title: "Cell Phones"
+  - group_title: "7. Cell Phones"
     items:
-      - title: "Req 7 — Cellular Technology"
+      - title: "7. Cellular Technology"
         url: "/merit-badges/radio/guide/req7/"
         is_sub: false
-  - group_title: "Amateur & Professional Radio"
+  - group_title: "8. Amateur & Professional Radio"
     items:
-      - title: "Req 8 — Choose Your Option"
+      - title: "8. Choose Your Option"
         url: "/merit-badges/radio/guide/req8/"
         is_sub: false
-  - group_title: "Option A: Amateur Radio"
+  - group_title: "8. Option A: Amateur Radio"
     items:
-      - title: "Req 8a — Amateur Radio Overview"
+      - title: "a Amateur Radio Overview"
         url: "/merit-badges/radio/guide/req8a/"
         is_sub: false
-      - title: "Req 8a1 — Why Amateur Radio Exists"
+      - title: "a Why Amateur Radio Exists"
         url: "/merit-badges/radio/guide/req8a1/"
         is_sub: true
-      - title: "Req 8a2 — License Classes"
+      - title: "a License Classes"
         url: "/merit-badges/radio/guide/req8a2/"
         is_sub: true
-      - title: "Req 8a3 — Q Signals & Terms"
+      - title: "a Q Signals & Terms"
         url: "/merit-badges/radio/guide/req8a3/"
         is_sub: true
-      - title: "Req 8a4 — Emergency Calls"
+      - title: "a Emergency Calls"
         url: "/merit-badges/radio/guide/req8a4/"
         is_sub: true
-      - title: "Req 8a5 — Transceivers & Repeaters"
+      - title: "a Transceivers & Repeaters"
         url: "/merit-badges/radio/guide/req8a5/"
         is_sub: true
-      - title: "Req 8a6 — Make a Contact"
+      - title: "a Make a Contact"
         url: "/merit-badges/radio/guide/req8a6/"
         is_sub: true
-  - group_title: "Option B: Radio Broadcasting"
+  - group_title: "8. Option B: Radio Broadcasting"
     items:
-      - title: "Req 8b — Broadcasting Overview"
+      - title: "b Broadcasting Overview"
         url: "/merit-badges/radio/guide/req8b/"
         is_sub: false
-      - title: "Req 8b1 — Broadcast Regulations"
+      - title: "b Broadcast Regulations"
         url: "/merit-badges/radio/guide/req8b1/"
         is_sub: true
-      - title: "Req 8b2 — Produce a Program"
+      - title: "b Produce a Program"
         url: "/merit-badges/radio/guide/req8b2/"
         is_sub: true
-      - title: "Req 8b3 — Log Broadcast Stations"
+      - title: "b Log Broadcast Stations"
         url: "/merit-badges/radio/guide/req8b3/"
         is_sub: true
-      - title: "Req 8b4 — Broadcasting Terms"
+      - title: "b Broadcasting Terms"
         url: "/merit-badges/radio/guide/req8b4/"
         is_sub: true
-      - title: "Req 8b5 — Alternative Platforms"
+      - title: "b Alternative Platforms"
         url: "/merit-badges/radio/guide/req8b5/"
         is_sub: true
-  - group_title: "Option C: Shortwave Listening"
+  - group_title: "8. Option C: Shortwave Listening"
     items:
-      - title: "Req 8c — Shortwave Overview"
+      - title: "c Shortwave Overview"
         url: "/merit-badges/radio/guide/req8c/"
         is_sub: false
-      - title: "Req 8c1 — Shortwave Listening Sessions"
+      - title: "c Shortwave Listening Sessions"
         url: "/merit-badges/radio/guide/req8c1/"
         is_sub: true
-      - title: "Req 8c2 — Medium-Wave Listening"
+      - title: "c Medium-Wave Listening"
         url: "/merit-badges/radio/guide/req8c2/"
         is_sub: true
-      - title: "Req 8c3 — Compare Day & Night Logs"
+      - title: "c Compare Day & Night Logs"
         url: "/merit-badges/radio/guide/req8c3/"
         is_sub: true
-      - title: "Req 8c4 — Why Distant Stations Appear at Night"
+      - title: "c Why Distant Stations Appear at Night"
         url: "/merit-badges/radio/guide/req8c4/"
         is_sub: true
-      - title: "Req 8c5 — Smartphone Listening"
+      - title: "c Smartphone Listening"
         url: "/merit-badges/radio/guide/req8c5/"
         is_sub: true
-  - group_title: "Option D: Direction Finding"
+  - group_title: "8. Option D: Direction Finding"
     items:
-      - title: "Req 8d — Direction Finding Overview"
+      - title: "d Direction Finding Overview"
         url: "/merit-badges/radio/guide/req8d/"
         is_sub: false
-      - title: "Req 8d1 — What Is ARDF?"
+      - title: "d What Is ARDF?"
         url: "/merit-badges/radio/guide/req8d1/"
         is_sub: true
-      - title: "Req 8d2 — Frequencies & Equipment"
+      - title: "d Frequencies & Equipment"
         url: "/merit-badges/radio/guide/req8d2/"
         is_sub: true
-      - title: "Req 8d3 — Build a Directional Antenna"
+      - title: "d Build a Directional Antenna"
         url: "/merit-badges/radio/guide/req8d3/"
         is_sub: true
-      - title: "Req 8d4 — Participate in a Fox Hunt"
+      - title: "d Participate in a Fox Hunt"
         url: "/merit-badges/radio/guide/req8d4/"
         is_sub: true
-      - title: "Req 8d5 — Map Your Hunt"
+      - title: "d Map Your Hunt"
         url: "/merit-badges/radio/guide/req8d5/"
         is_sub: true
-  - group_title: "Option E: FRS & GMRS"
+  - group_title: "8. Option E: FRS & GMRS"
     items:
-      - title: "Req 8e — FRS & GMRS Overview"
+      - title: "e FRS & GMRS Overview"
         url: "/merit-badges/radio/guide/req8e/"
         is_sub: false
-      - title: "Req 8e1 — FRS vs. GMRS vs. Others"
+      - title: "e FRS vs. GMRS vs. Others"
         url: "/merit-badges/radio/guide/req8e1/"
         is_sub: true
-      - title: "Req 8e2 — FRS/GMRS Details"
+      - title: "e FRS/GMRS Details"
         url: "/merit-badges/radio/guide/req8e2/"
         is_sub: true
-      - title: "Req 8e3 — Use Radios in the Field"
+      - title: "e Use Radios in the Field"
         url: "/merit-badges/radio/guide/req8e3/"
         is_sub: true
-  - group_title: "Radio Careers"
+  - group_title: "9. Radio Careers"
     items:
-      - title: "Req 9 — Choose Career or Hobby"
+      - title: "9. Choose Career or Hobby"
         url: "/merit-badges/radio/guide/req9/"
         is_sub: false
-      - title: "Req 9a — Research a Radio Career"
+      - title: "a Research a Radio Career"
         url: "/merit-badges/radio/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Radio as Hobby or Service"
+      - title: "b Radio as Hobby or Service"
         url: "/merit-badges/radio/guide/req9b/"
         is_sub: true
   - group_title: "Beyond the Badge"

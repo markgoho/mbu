@@ -4,65 +4,65 @@ layout: guide
 badge_name: "Citizenship in Society"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-society/guide/req1/"
-next_title: "Req 1 — Key Terms"
+next_title: "Key Terms"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/citizenship-in-society/guide/"
-  - group_title: "Foundations of Citizenship"
+  - group_title: "1. Foundations of Citizenship"
     items:
-      - title: "Req 1 — Key Terms"
+      - title: "1. Key Terms"
         url: "/merit-badges/citizenship-in-society/guide/req1/"
         is_sub: false
-  - group_title: "Ethical Leadership"
+  - group_title: "2. Ethical Leadership"
     items:
-      - title: "Req 2 — Ethical Leadership"
+      - title: "2. Ethical Leadership"
         url: "/merit-badges/citizenship-in-society/guide/req2/"
         is_sub: false
-  - group_title: "Ethical Decision-Making"
+  - group_title: "3. Ethical Decision-Making"
     items:
-      - title: "Req 3 — Ethical Decisions"
+      - title: "3. Ethical Decisions"
         url: "/merit-badges/citizenship-in-society/guide/req3/"
         is_sub: false
-  - group_title: "Standing Up for Others"
+  - group_title: "4. Standing Up for Others"
     items:
-      - title: "Req 4 — Responding to Scenarios"
+      - title: "4. Responding to Scenarios"
         url: "/merit-badges/citizenship-in-society/guide/req4/"
         is_sub: false
-  - group_title: "Building Inclusive Spaces"
+  - group_title: "5. Building Inclusive Spaces"
     items:
-      - title: "Req 5 — Welcoming Environments"
+      - title: "5. Welcoming Environments"
         url: "/merit-badges/citizenship-in-society/guide/req5/"
         is_sub: false
-  - group_title: "Connecting Across Differences"
+  - group_title: "6. Connecting Across Differences"
     items:
-      - title: "Req 6 — Connecting Across Differences"
+      - title: "6. Connecting Across Differences"
         url: "/merit-badges/citizenship-in-society/guide/req6/"
         is_sub: false
-  - group_title: "Learning from Leaders"
+  - group_title: "7. Learning from Leaders"
     items:
-      - title: "Req 7 — Community Impact Interview"
+      - title: "7. Community Impact Interview"
         url: "/merit-badges/citizenship-in-society/guide/req7/"
         is_sub: false
-  - group_title: "Moments That Changed Society"
+  - group_title: "8. Moments That Changed Society"
     items:
-      - title: "Req 8 — A Positive Turning Point"
+      - title: "8. A Positive Turning Point"
         url: "/merit-badges/citizenship-in-society/guide/req8/"
         is_sub: false
-  - group_title: "Leading Beyond Scouting"
+  - group_title: "9. Leading Beyond Scouting"
     items:
-      - title: "Req 9 — Leadership Beyond Scouting"
+      - title: "9. Leadership Beyond Scouting"
         url: "/merit-badges/citizenship-in-society/guide/req9/"
         is_sub: false
-  - group_title: "Challenging Stereotypes"
+  - group_title: "10. Challenging Stereotypes"
     items:
-      - title: "Req 10 — Stereotypes & Individuality"
+      - title: "10. Stereotypes & Individuality"
         url: "/merit-badges/citizenship-in-society/guide/req10/"
         is_sub: false
-  - group_title: "Your Impact Plan"
+  - group_title: "11. Your Impact Plan"
     items:
-      - title: "Req 11 — Your DEI Action Plan"
+      - title: "11. Your DEI Action Plan"
         url: "/merit-badges/citizenship-in-society/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

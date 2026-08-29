@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Spot the Differences"
+title: "Spot the Differences"
 layout: "guide"
-group_title: "Comparing Groups"
+group_title: "3. Comparing Groups"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req2/"
-prev_title: "Req 2 — Species Around You"
+prev_title: "Species Around You"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req4/"
-next_title: "Req 4 — Why They Matter"
+next_title: "Why They Matter"
 ---
 
 {{< drg/requirement number="3" >}}

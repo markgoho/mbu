@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — How Whitewater Waves Form"
+title: "How Whitewater Waves Form"
 layout: "guide"
-group_title: "Reading the River"
+group_title: "2. Reading the River"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/whitewater/guide/req2a/"
-prev_title: "Req 2a — River Features at a Glance"
+prev_title: "River Features at a Glance"
 next: "/merit-badges/whitewater/guide/req2c/"
-next_title: "Req 2c — Edge Control in Current"
+next_title: "Edge Control in Current"
 ---
 
 {{< drg/requirement number="2b" >}}

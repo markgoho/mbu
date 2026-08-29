@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Chemical Storage"
+title: "Chemical Storage"
 layout: guide
-group_title: "Chemical Safety"
+group_title: "1. Chemical Safety"
 req_number: "1d"
 prev: "/merit-badges/chemistry/guide/req1c/"
-prev_title: "Req 1c — Safety Pictograms"
+prev_title: "Safety Pictograms"
 next: "/merit-badges/chemistry/guide/req2a/"
-next_title: "Req 2a — Soap & Alcohol"
+next_title: "Soap & Alcohol"
 ---
 
 {{< drg/requirement number="1d" >}}

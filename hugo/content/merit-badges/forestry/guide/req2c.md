@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Tree Damage Detectives"
+title: "Tree Damage Detectives"
 layout: guide
-group_title: "Reading the Forest"
+group_title: "1. Reading the Forest"
 req_number: "2c"
 prev: "/merit-badges/forestry/guide/req2b/"
-prev_title: "Req 2b — Reading Tree Rings"
+prev_title: "Reading Tree Rings"
 next: "/merit-badges/forestry/guide/req3ab/"
-next_title: "Req 3a–3b — Forest Benefits & Your Watershed"
+next_title: "Forest Benefits & Your Watershed"
 ---
 
 {{< drg/requirement number="2c" >}}

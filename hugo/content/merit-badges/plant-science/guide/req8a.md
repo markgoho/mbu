@@ -1,13 +1,13 @@
 ---
-title: "Req 8a — Agronomy Roadmap"
+title: "Agronomy Roadmap"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a"
 req_path: "8.a"
 prev: "/merit-badges/plant-science/guide/req8/"
-prev_title: "Req 8 — Choose a Plant Science Track"
+prev_title: "Choose a Plant Science Track"
 next: "/merit-badges/plant-science/guide/req8a1/"
-next_title: "Req 8a1 — Preparing a Seedbed"
+next_title: "Preparing a Seedbed"
 ---
 
 {{< drg/requirement number="8" option="Agronomy" >}}

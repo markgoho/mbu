@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Your Project"
+title: "Choose Your Project"
 layout: "guide"
-group_title: "Taking Action"
+group_title: "9. Taking Action"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/wildland-fire-management/guide/req8/"
-prev_title: "Req 8 — Suppression Tools & Equipment"
+prev_title: "Suppression Tools & Equipment"
 next: "/merit-badges/wildland-fire-management/guide/req9a/"
-next_title: "Req 9a — Build a Fire Readiness Plan"
+next_title: "Build a Fire Readiness Plan"
 ---
 
 {{< drg/requirement number="9" >}}

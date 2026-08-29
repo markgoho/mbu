@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Build a Memorabilia Collection"
+title: "Build a Memorabilia Collection"
 layout: "guide"
-group_title: "Your Scouting Story"
+group_title: "5. Your Scouting Story"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/scouting-heritage/guide/req5/"
-prev_title: "Req 5 — Research Your Scouting Community"
+prev_title: "Research Your Scouting Community"
 next: "/merit-badges/scouting-heritage/guide/req7/"
-next_title: "Req 7 — Old-Time Scouting Game"
+next_title: "Recreate an Old-Time Scout Game"
 ---
 
 {{< drg/requirement number="6" >}}

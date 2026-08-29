@@ -1,13 +1,13 @@
 ---
-title: "Req 5a3 — Cutting, Bending & Joining"
+title: "Cutting, Bending & Joining"
 layout: "guide"
-group_title: "Sheet Metal / Tinsmith"
+group_title: "5. Sheet Metal / Tinsmith"
 req_number: "5a3"
 req_path: "5.a.3"
 prev: "/merit-badges/metalwork/guide/req5a2/"
-prev_title: "Req 5a2 — Sketching Your Sheet Metal Objects"
+prev_title: "Sketching Your Sheet Metal Objects"
 next: "/merit-badges/metalwork/guide/req5b/"
-next_title: "Req 5b — Silversmith"
+next_title: "Silversmith"
 ---
 
 {{< drg/requirement number="5a3" >}}

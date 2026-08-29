@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — A Country's Geography & Economy"
+title: "A Country's Geography & Economy"
 layout: guide
-group_title: "World Events & National Interests"
+group_title: "3. World Events & National Interests"
 req_number: "3b"
 prev: "/merit-badges/citizenship-in-the-world/guide/req3a/"
-prev_title: "Req 3a — Current Events & National Interests"
+prev_title: "Current Events & National Interests"
 next: "/merit-badges/citizenship-in-the-world/guide/req4/"
-next_title: "Req 4 — Law, Trade & Global Organizations"
+next_title: "Law, Trade & Global Organizations"
 ---
 
 {{< drg/requirement number="3b" >}}

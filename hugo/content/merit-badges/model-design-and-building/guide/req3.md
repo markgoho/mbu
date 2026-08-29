@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Planning Your Original Project"
+title: "Planning Your Original Project"
 layout: "guide"
-group_title: "Project Planning"
+group_title: "3. Project Planning"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/model-design-and-building/guide/req2/"
-prev_title: "Req 2 — Models, Tools, and Materials"
+prev_title: "Models, Tools, and Materials"
 next: "/merit-badges/model-design-and-building/guide/req4/"
-next_title: "Req 4 — Pick Your Model Path"
+next_title: "Pick Your Model Path"
 ---
 
 {{< drg/requirement number="3" >}}

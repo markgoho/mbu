@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Plants Support Animal Life"
+title: "Plants Support Animal Life"
 layout: "guide"
-group_title: "Plant and Animal Connections"
+group_title: "1. Plant and Animal Connections"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/nature/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/nature/guide/req2/"
-next_title: "Req 2 — Animals Support Plant Life"
+next_title: "Animals Support Plant Life"
 ---
 
 {{< drg/requirement number="1" >}}

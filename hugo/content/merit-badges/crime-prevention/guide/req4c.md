@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Teaching Crime Prevention"
+title: "Teaching Crime Prevention"
 layout: guide
-group_title: "Home & Neighborhood Safety"
+group_title: "4. Home & Neighborhood Safety"
 req_number: "4c"
 prev: "/merit-badges/crime-prevention/guide/req4b/"
-prev_title: "Req 4b — Conducting a Security Survey"
+prev_title: "Conducting a Security Survey"
 next: "/merit-badges/crime-prevention/guide/req5/"
-next_title: "Req 5 — Retail Crime Prevention"
+next_title: "Retail Crime Prevention"
 ---
 
 {{< drg/requirement number="4c" >}}

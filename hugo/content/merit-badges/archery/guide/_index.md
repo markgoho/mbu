@@ -4,51 +4,51 @@ layout: guide
 badge_name: "Archery"
 group_title: "Getting Started"
 next: "/merit-badges/archery/guide/req1a/"
-next_title: "Req 1a — Projectile Safety"
+next_title: "Projectile Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/archery/guide/"
-  - group_title: "Safety on the Range"
+  - group_title: "1. Safety on the Range"
     items:
-      - title: "Req 1a — Projectile Safety"
+      - title: "a Projectile Safety"
         url: "/merit-badges/archery/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Range Safety Rules"
+      - title: "b Range Safety Rules"
         url: "/merit-badges/archery/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Whistle Commands"
+      - title: "c Whistle Commands"
         url: "/merit-badges/archery/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Retrieving Arrows"
+      - title: "d Retrieving Arrows"
         url: "/merit-badges/archery/guide/req1d/"
         is_sub: true
-      - title: "Req 1e — Archery Laws"
+      - title: "e Archery Laws"
         url: "/merit-badges/archery/guide/req1e/"
         is_sub: true
-  - group_title: "Arrows & Equipment"
+  - group_title: "2. Arrows & Equipment"
     items:
-      - title: "Req 2 — Know Your Arrows"
+      - title: "2. Know Your Arrows"
         url: "/merit-badges/archery/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Accessories & Terminology"
+      - title: "3. Accessories & Terminology"
         url: "/merit-badges/archery/guide/req3/"
         is_sub: false
-  - group_title: "Archery Formats & Scoring"
+  - group_title: "4. Archery Formats & Scoring"
     items:
-      - title: "Req 4 — Formats & Scoring"
+      - title: "4. Formats & Scoring"
         url: "/merit-badges/archery/guide/req4/"
         is_sub: false
-  - group_title: "On the Shooting Line"
+  - group_title: "5. On the Shooting Line"
     items:
-      - title: "Req 5 — Shooting Options Overview"
+      - title: "5. Shooting Options Overview"
         url: "/merit-badges/archery/guide/req5/"
         is_sub: false
-      - title: "Req 5 — Recurve Bow or Longbow"
+      - title: "5. Recurve Bow or Longbow"
         url: "/merit-badges/archery/guide/req5-recurve-bow-or-longbow/"
         is_sub: true
-      - title: "Req 5 — Compound Bow"
+      - title: "5. Compound Bow"
         url: "/merit-badges/archery/guide/req5-compound-bow/"
         is_sub: true
   - group_title: "Beyond the Badge"

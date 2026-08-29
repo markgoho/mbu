@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Smart Online Safety"
+title: "Smart Online Safety"
 layout: "guide"
-group_title: "Digital Safety"
+group_title: "7. Digital Safety"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/safety/guide/req6/"
-prev_title: "Req 6 — Avoiding Assault Risks"
+prev_title: "Avoiding Assault Risks"
 next: "/merit-badges/safety/guide/req8/"
-next_title: "Req 8 — Safer Ways to Travel"
+next_title: "Safer Ways to Travel"
 ---
 
 {{< drg/requirement number="7" >}}

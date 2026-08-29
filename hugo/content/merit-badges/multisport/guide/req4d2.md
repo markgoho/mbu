@@ -1,13 +1,13 @@
 ---
-title: "Req 4d2 — Aquabike Bike Skills"
+title: "Aquabike Bike Skills"
 layout: "guide"
-group_title: "Aquabike Path"
+group_title: "4. Aquabike Path"
 req_number: "4d2"
 req_path: "4.d.2"
 prev: "/merit-badges/multisport/guide/req4d1/"
-prev_title: "Req 4d1 — Aquabike Swim Skills"
+prev_title: "Aquabike Swim Skills"
 next: "/merit-badges/multisport/guide/req5/"
-next_title: "Req 5 — Build Your Four-Week Plan"
+next_title: "Build Your Four-Week Plan"
 ---
 
 {{< drg/requirement number="4d2" >}}

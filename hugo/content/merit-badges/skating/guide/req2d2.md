@@ -1,13 +1,13 @@
 ---
-title: "Req 2d2 — Benefits of Skateboarding"
+title: "Benefits of Skateboarding"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d2"
 req_path: "2.d.2"
 prev: "/merit-badges/skating/guide/req2d1/"
-prev_title: "Req 2d1 — History of Skateboarding"
+prev_title: "History of Skateboarding"
 next: "/merit-badges/skating/guide/req2d3/"
-next_title: "Req 2d3 — Safety Rules & Courtesy"
+next_title: "Safety Rules & Courtesy"
 ---
 
 {{< drg/requirement number="2d2" >}}

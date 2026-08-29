@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Parliamentary Procedure"
+title: "Parliamentary Procedure"
 layout: guide
-group_title: "Leading a Meeting"
+group_title: "5. Leading a Meeting"
 req_number: "5"
 prev: "/merit-badges/public-speaking/guide/req4/"
-prev_title: "Req 4 — Researched Speech"
+prev_title: "Researched Speech"
 next: "/merit-badges/public-speaking/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

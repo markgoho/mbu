@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — The Engineer's Code of Ethics"
+title: "The Engineer's Code of Ethics"
 layout: guide
-group_title: "Engineering Ethics"
+group_title: "8. Engineering Ethics"
 req_number: "8"
 prev: "/merit-badges/engineering/guide/req7/"
-prev_title: "Req 7 — Professional Engineer Registration"
+prev_title: "Professional Engineer Registration"
 next: "/merit-badges/engineering/guide/req9/"
-next_title: "Req 9 — Exploring Engineering Careers"
+next_title: "Exploring Engineering Careers"
 ---
 
 {{< drg/requirement number="8" >}}

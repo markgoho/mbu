@@ -1,13 +1,13 @@
 ---
-title: "Req 6e — Core SAR Terms"
+title: "Core SAR Terms"
 layout: "guide"
-group_title: "Search Procedure Skills"
+group_title: "6. Search Procedure Skills"
 req_number: "6e"
 req_path: "6.e"
 prev: "/merit-badges/search-and-rescue/guide/req6d/"
-prev_title: "Req 6d — Lost Person Behavior"
+prev_title: "Lost Person Behavior"
 next: "/merit-badges/search-and-rescue/guide/req7/"
-next_title: "Req 7 — Plan and Run a Practice Search"
+next_title: "Plan and Run a Practice Search"
 ---
 
 {{< drg/requirement number="6e" >}}

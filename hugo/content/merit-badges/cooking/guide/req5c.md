@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Share Camp Plan"
+title: "Share Camp Plan"
 layout: guide
-group_title: "Camp Cooking"
+group_title: "5. Camp Cooking"
 req_number: "5c"
 prev: "/merit-badges/cooking/guide/req5b/"
-prev_title: "Req 5b — Camp Recipes & Budget"
+prev_title: "Camp Recipes & Budget"
 next: "/merit-badges/cooking/guide/req5d/"
-next_title: "Req 5d — Cook Outdoors"
+next_title: "Cook Outdoors"
 ---
 
 {{< drg/requirement number="5c" >}}

@@ -1,11 +1,11 @@
 ---
-title: "Req 9b — Serve as a Scouting Volunteer"
+title: "Serve as a Scouting Volunteer"
 layout: "guide"
-group_title: "Careers in Scouting"
+group_title: "9. Careers in Scouting"
 req_number: "9b"
 req_path: "9.b"
 prev: "/merit-badges/scouting-heritage/guide/req9a/"
-prev_title: "Req 9a — Careers Related to Scouting"
+prev_title: "Careers Related to Scouting"
 next: "/merit-badges/scouting-heritage/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

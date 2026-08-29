@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — What Is Archaeology?"
+title: "What Is Archaeology?"
 layout: guide
-group_title: "Understanding Archaeology"
+group_title: "1. Understanding Archaeology"
 req_number: "1"
 prev: "/merit-badges/archaeology/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/archaeology/guide/req2/"
-next_title: "Req 2 — The Archaeological Process"
+next_title: "The Archaeological Process"
 ---
 
 {{< drg/requirement number="1" >}}

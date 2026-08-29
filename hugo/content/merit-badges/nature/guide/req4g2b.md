@@ -1,13 +1,13 @@
 ---
-title: "Req 4g2b — Build a Photo Catalog"
+title: "Build a Photo Catalog"
 layout: "guide"
-group_title: "Plant Study"
+group_title: "4. Plant Study"
 req_number: "4g2b"
 req_path: "4.g.2.b"
 prev: "/merit-badges/nature/guide/req4g2a/"
-prev_title: "Req 4g2a — Collect and Label Specimens"
+prev_title: "Collect and Label Specimens"
 next: "/merit-badges/nature/guide/req4h/"
-next_title: "Req 4h — Soils and Rocks"
+next_title: "Soils and Rocks"
 ---
 
 {{< drg/requirement number="4g2b" >}}

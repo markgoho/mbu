@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Globalization"
+title: "Globalization"
 layout: guide
-group_title: "The Global Workforce"
+group_title: "6. The Global Workforce"
 req_number: "6"
 prev: "/merit-badges/american-labor/guide/req5/"
-prev_title: "Req 5 — Labor History Projects"
+prev_title: "Labor History Projects"
 next: "/merit-badges/american-labor/guide/req7/"
-next_title: "Req 7 — Debating Labor Issues"
+next_title: "Debating Labor Issues"
 ---
 
 {{< drg/requirement number="6" >}}

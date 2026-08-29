@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — How Everyone Can Help"
+title: "How Everyone Can Help"
 layout: guide
-group_title: "Conservation Fundamentals"
+group_title: "1. Conservation Fundamentals"
 req_number: "3"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req2/"
-prev_title: "Req 2 — Major Threats to Fish and Wildlife"
+prev_title: "Major Threats to Fish and Wildlife"
 next: "/merit-badges/fish-and-wildlife-management/guide/req4/"
-next_title: "Req 4 — Five Management Practices"
+next_title: "Five Management Practices"
 ---
 
 {{< drg/requirement number="3" >}}

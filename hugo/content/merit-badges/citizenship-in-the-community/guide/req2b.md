@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Charting Local Government"
+title: "Charting Local Government"
 layout: guide
-group_title: "Knowing Your Community"
+group_title: "2. Knowing Your Community"
 req_number: "2b"
 prev: "/merit-badges/citizenship-in-the-community/guide/req2a/"
-prev_title: "Req 2a — Mapping Your Community"
+prev_title: "Mapping Your Community"
 next: "/merit-badges/citizenship-in-the-community/guide/req3/"
-next_title: "Req 3 — Attending a Government Meeting"
+next_title: "Attending a Government Meeting"
 ---
 
 {{< drg/requirement number="2b" >}}

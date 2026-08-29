@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Camping Clothing"
+title: "Camping Clothing"
 layout: guide
-group_title: "Clothing & Gear"
+group_title: "5. Clothing & Gear"
 req_number: "5a"
 prev: "/merit-badges/camping/guide/req4/"
-prev_title: "Req 4 — Duty Roster & Leadership"
+prev_title: "Duty Roster & Leadership"
 next: "/merit-badges/camping/guide/req5b/"
-next_title: "Req 5b — Footwear"
+next_title: "Footwear"
 ---
 
 {{< drg/requirement number="5a" >}}

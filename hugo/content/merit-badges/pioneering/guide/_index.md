@@ -4,80 +4,80 @@ layout: guide
 badge_name: "Pioneering"
 group_title: "Getting Started"
 next: "/merit-badges/pioneering/guide/req1/"
-next_title: "Req 1 — Safe Pioneering Basics"
+next_title: "Safe Pioneering Basics"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/pioneering/guide/"
         is_sub: false
-  - group_title: "Safety on the Spar Yard"
+  - group_title: "1. Safety on the Spar Yard"
     items:
-      - title: "Req 1 — Safe Pioneering Basics"
+      - title: "1. Safe Pioneering Basics"
         url: "/merit-badges/pioneering/guide/req1/"
         is_sub: false
-  - group_title: "Knots, Whippings & Lashings"
+  - group_title: "2. Knots, Whippings & Lashings"
     items:
-      - title: "Req 2 — Core Rope Skills"
+      - title: "2. Core Rope Skills"
         url: "/merit-badges/pioneering/guide/req2/"
         is_sub: false
-  - group_title: "Build Your First Gadgets"
+  - group_title: "3. Build Your First Gadgets"
     items:
-      - title: "Req 3 — Practical Camp Builds"
+      - title: "3. Practical Camp Builds"
         url: "/merit-badges/pioneering/guide/req3/"
         is_sub: false
-  - group_title: "Choosing and Caring for Rope"
+  - group_title: "4. Choosing and Caring for Rope"
     items:
-      - title: "Req 4 — Rope for Real Loads"
+      - title: "4. Rope for Real Loads"
         url: "/merit-badges/pioneering/guide/req4/"
         is_sub: false
-  - group_title: "Splices & Rope Repair"
+  - group_title: "5. Splices & Rope Repair"
     items:
-      - title: "Req 5 — Splices That Solve Problems"
+      - title: "5. Splices That Solve Problems"
         url: "/merit-badges/pioneering/guide/req5/"
         is_sub: false
-  - group_title: "Making Your Own Rope"
+  - group_title: "6. Making Your Own Rope"
     items:
-      - title: "Req 6 — Twist, Lay, and Whip"
+      - title: "6. Twist, Lay, and Whip"
         url: "/merit-badges/pioneering/guide/req6/"
         is_sub: false
-  - group_title: "Anchors & Load Paths"
+  - group_title: "7. Anchors & Load Paths"
     items:
-      - title: "Req 7 — Keep the Structure Put"
+      - title: "7. Keep the Structure Put"
         url: "/merit-badges/pioneering/guide/req7/"
         is_sub: false
-  - group_title: "Trestles & Structural Strength"
+  - group_title: "8. Trestles & Structural Strength"
     items:
-      - title: "Req 8 — Build a Strong Frame"
+      - title: "8. Build a Strong Frame"
         url: "/merit-badges/pioneering/guide/req8/"
         is_sub: false
-  - group_title: "Full-Size Projects"
+  - group_title: "9. Full-Size Projects"
     items:
-      - title: "Req 9 — Choose Your Big Build"
+      - title: "9. Choose Your Big Build"
         url: "/merit-badges/pioneering/guide/req9/"
         is_sub: false
-      - title: "Req 9 — Double A-Frame Monkey Bridge"
+      - title: "9. Double A-Frame Monkey Bridge"
         url: "/merit-badges/pioneering/guide/req9-option1/"
         is_sub: true
-      - title: "Req 9 — Single A-Frame Bridge"
+      - title: "9. Single A-Frame Bridge"
         url: "/merit-badges/pioneering/guide/req9-option2/"
         is_sub: true
-      - title: "Req 9 — Single Trestle Bridge"
+      - title: "9. Single Trestle Bridge"
         url: "/merit-badges/pioneering/guide/req9-option3/"
         is_sub: true
-      - title: "Req 9 — Single Lock Bridge"
+      - title: "9. Single Lock Bridge"
         url: "/merit-badges/pioneering/guide/req9-option4/"
         is_sub: true
-      - title: "Req 9 — 4x4 Square Climbing Tower"
+      - title: "9. 4x4 Square Climbing Tower"
         url: "/merit-badges/pioneering/guide/req9-option5/"
         is_sub: true
-      - title: "Req 9 — Four Flag Gateway Tower"
+      - title: "9. Four Flag Gateway Tower"
         url: "/merit-badges/pioneering/guide/req9-option6/"
         is_sub: true
-      - title: "Req 9 — Double Tripod Chippewa Kitchen"
+      - title: "9. Double Tripod Chippewa Kitchen"
         url: "/merit-badges/pioneering/guide/req9-option7/"
         is_sub: true
-      - title: "Req 9 — Counselor-Approved Custom Structure"
+      - title: "9. Counselor-Approved Custom Structure"
         url: "/merit-badges/pioneering/guide/req9-option8/"
         is_sub: true
   - group_title: "Beyond the Badge"

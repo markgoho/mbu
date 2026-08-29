@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Yard Tool Tune-Up"
+title: "Yard Tool Tune-Up"
 layout: guide
-group_title: "Outdoor Repairs"
+group_title: "2. Outdoor Repairs"
 req_number: "2a"
 prev: "/merit-badges/home-repairs/guide/req2/"
-prev_title: "Req 2 — Outdoor Fix-It Options"
+prev_title: "Outdoor Fix-It Options"
 next: "/merit-badges/home-repairs/guide/req2b/"
-next_title: "Req 2b — Weatherstripping a Door or Window"
+next_title: "Weatherstripping a Door or Window"
 ---
 
 {{< drg/requirement number="2a" >}}

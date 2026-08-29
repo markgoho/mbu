@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Carving in the Round"
+title: "Carving in the Round"
 layout: "guide"
-group_title: "Choosing and Building Projects"
+group_title: "5. Choosing and Building Projects"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/wood-carving/guide/req5/"
-prev_title: "Req 5 — Choosing the Right Wood"
+prev_title: "Choosing the Right Wood"
 next: "/merit-badges/wood-carving/guide/req7/"
-next_title: "Req 7 — Relief or Chip Carving"
+next_title: "Relief or Chip Carving"
 ---
 
 {{< drg/requirement number="6" >}}

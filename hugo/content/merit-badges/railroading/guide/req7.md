@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose a Special Interest"
+title: "Choose a Special Interest"
 layout: "guide"
-group_title: "Choose a Special Interest"
+group_title: "7. Choose a Special Interest"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/railroading/guide/req6/"
-prev_title: "Req 6 — Signals, Horns, and Rear-End Devices"
+prev_title: "Signals, Horns, and Rear-End Devices"
 next: "/merit-badges/railroading/guide/req7a/"
-next_title: "Req 7a — Model Railroading Projects"
+next_title: "Model Railroading Projects"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Physical Safety"
+title: "Physical Safety"
 layout: guide
-group_title: "Safety First"
+group_title: "1. Safety First"
 req_number: "1c"
 prev: "/merit-badges/cybersecurity/guide/req1b/"
-prev_title: "Req 1b — Digital Footprint"
+prev_title: "Digital Footprint"
 next: "/merit-badges/cybersecurity/guide/req2a/"
-next_title: "Req 2a — Scout Law Online"
+next_title: "Scout Law Online"
 ---
 
 {{< drg/requirement number="1c" >}}

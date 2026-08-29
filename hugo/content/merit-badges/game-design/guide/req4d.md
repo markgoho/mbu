@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Analyze the Results"
+title: "Analyze the Results"
 layout: guide
-group_title: "Testing Rules"
+group_title: "4. Testing Rules"
 req_number: "4d"
 prev: "/merit-badges/game-design/guide/req4c/"
-prev_title: "Req 4c — Observe New Reactions"
+prev_title: "Observe New Reactions"
 next: "/merit-badges/game-design/guide/req5a/"
-next_title: "Req 5a — Vision, Theme, and Players"
+next_title: "Vision, Theme, and Players"
 ---
 
 {{< drg/requirement number="4d" >}}

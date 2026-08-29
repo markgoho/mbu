@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Stamp Terms in Action"
+title: "Stamp Terms in Action"
 layout: "guide"
-group_title: "Stamp Vocabulary"
+group_title: "3. Stamp Vocabulary"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/stamp-collecting/guide/req2/"
-prev_title: "Req 2 — Types of Collections"
+prev_title: "Types of Collections"
 next: "/merit-badges/stamp-collecting/guide/req4/"
-next_title: "Req 4 — Catalogs and Condition"
+next_title: "Catalogs and Condition"
 ---
 
 {{< drg/requirement number="3" >}}

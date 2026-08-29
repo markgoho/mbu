@@ -1,11 +1,11 @@
 ---
-title: "Req 7b — Build a Robotics Hobby"
+title: "Build a Robotics Hobby"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "7. Future Paths"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/robotics/guide/req7a/"
-prev_title: "Req 7a — Explore Robotics Careers"
+prev_title: "Explore Robotics Careers"
 next: "/merit-badges/robotics/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

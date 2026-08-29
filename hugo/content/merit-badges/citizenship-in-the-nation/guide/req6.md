@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — A Historic Speech"
+title: "A Historic Speech"
 layout: guide
-group_title: "Citizenship in Action"
+group_title: "5. Citizenship in Action"
 req_number: "6"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req5/"
-prev_title: "Req 5 — Following the News"
+prev_title: "Following the News"
 next: "/merit-badges/citizenship-in-the-nation/guide/req7/"
-next_title: "Req 7 — Exploring National Sites"
+next_title: "Exploring National Sites"
 ---
 
 {{< drg/requirement number="6" >}}

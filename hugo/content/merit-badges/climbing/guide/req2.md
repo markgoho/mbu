@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Leave No Trace & Outdoor Code"
+title: "Leave No Trace & Outdoor Code"
 layout: guide
-group_title: "Leave No Trace"
+group_title: "2. Leave No Trace"
 req_number: "2"
 prev: "/merit-badges/climbing/guide/req1c/"
-prev_title: "Req 1c — CPR Readiness"
+prev_title: "CPR Readiness"
 next: "/merit-badges/climbing/guide/req3/"
-next_title: "Req 3 — Dressing for the Climb"
+next_title: "Dressing for the Climb"
 ---
 
 {{< drg/requirement number="2" >}}

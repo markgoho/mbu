@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Write the Story"
+title: "Write the Story"
 layout: guide
-group_title: "Storytelling and Interviews"
+group_title: "3. Storytelling and Interviews"
 req_number: "3a"
 prev: "/merit-badges/journalism/guide/req3/"
-prev_title: "Req 3 — Choose a Storytelling Challenge"
+prev_title: "Choose a Storytelling Challenge"
 next: "/merit-badges/journalism/guide/req3b/"
-next_title: "Req 3b — Interview an Influential Person"
+next_title: "Interview an Influential Person"
 ---
 
 {{< drg/requirement number="3a" >}}

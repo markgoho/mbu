@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — River Features at a Glance"
+title: "River Features at a Glance"
 layout: "guide"
-group_title: "Reading the River"
+group_title: "2. Reading the River"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/whitewater/guide/req1/"
-prev_title: "Req 1 — Safety Before the Splash"
+prev_title: "Safety Before the Splash"
 next: "/merit-badges/whitewater/guide/req2b/"
-next_title: "Req 2b — How Whitewater Waves Form"
+next_title: "How Whitewater Waves Form"
 ---
 
 {{< drg/requirement number="2a" >}}

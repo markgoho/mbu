@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Mime & Pantomime"
+title: "Mime & Pantomime"
 layout: guide
-group_title: "The Art of Silence"
+group_title: "4. The Art of Silence"
 req_number: "4"
 prev: "/merit-badges/theater/guide/req3j/"
-prev_title: "Req 3j — Musical Direction"
+prev_title: "Musical Direction"
 next: "/merit-badges/theater/guide/req5/"
-next_title: "Req 5 — Theater Terminology"
+next_title: "Theater Terminology"
 ---
 
 {{< drg/requirement number="4" >}}

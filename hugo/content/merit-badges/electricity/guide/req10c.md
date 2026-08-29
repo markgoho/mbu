@@ -1,12 +1,12 @@
 ---
-title: "Req 10c — Build a Rheostat"
+title: "Build a Rheostat"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10c"
 prev: "/merit-badges/electricity/guide/req10b/"
-prev_title: "Req 10b — Simple Electric Motor"
+prev_title: "Simple Electric Motor"
 next: "/merit-badges/electricity/guide/req10d/"
-next_title: "Req 10d — Single-Pole, Double-Throw Switch"
+next_title: "Single-Pole, Double-Throw Switch"
 ---
 
 {{< drg/requirement number="10c" >}}

@@ -1,11 +1,11 @@
 ---
-title: "Req 7 — Explore Reading Careers"
+title: "Explore Reading Careers"
 layout: "guide"
-group_title: "Reading for Work"
+group_title: "7. Reading for Work"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/reading/guide/req6e/"
-prev_title: "Req 6e — Lead a Book Drive"
+prev_title: "Lead a Book Drive"
 next: "/merit-badges/reading/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

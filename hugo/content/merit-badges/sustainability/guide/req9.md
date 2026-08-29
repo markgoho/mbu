@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Sustainability Careers"
+group_title: "9. Sustainability Careers"
 req_number: "9"
 prev: "/merit-badges/sustainability/guide/req8c/"
-prev_title: "Req 8c — Household Behavior Changes"
+prev_title: "Household Behavior Changes"
 next: "/merit-badges/sustainability/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

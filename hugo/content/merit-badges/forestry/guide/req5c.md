@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Fire Prevention Campaign"
+title: "Fire Prevention Campaign"
 layout: guide
-group_title: "Managing Forests"
+group_title: "4. Managing Forests"
 req_number: "5c"
 prev: "/merit-badges/forestry/guide/req5b/"
-prev_title: "Req 5b — Logging or Wood Products Visit"
+prev_title: "Logging or Wood Products Visit"
 next: "/merit-badges/forestry/guide/req6/"
-next_title: "Req 6 — Choose a Hazard Tree Activity"
+next_title: "Choose a Hazard Tree Activity"
 ---
 
 {{< drg/requirement number="5c" >}}

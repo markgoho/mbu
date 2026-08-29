@@ -1,13 +1,13 @@
 ---
-title: "Req 8b — 50 Countries on Maps"
+title: "50 Countries on Maps"
 layout: "guide"
-group_title: "Building Your Collection"
+group_title: "8. Building Your Collection"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/stamp-collecting/guide/req8a/"
-prev_title: "Req 8a — 250 Stamps From 15 Countries"
+prev_title: "250 Stamps From 15 Countries"
 next: "/merit-badges/stamp-collecting/guide/req8c/"
-next_title: "Req 8c — One Country or Region"
+next_title: "One Country or Region"
 ---
 
 {{< drg/requirement number="8b" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Reading the Map Like a Searcher"
+title: "Reading the Map Like a Searcher"
 layout: "guide"
-group_title: "Staying Found and Navigating"
+group_title: "2. Staying Found and Navigating"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/search-and-rescue/guide/req2/"
-prev_title: "Req 2 — Staying Found and Getting Found"
+prev_title: "Staying Found and Getting Found"
 next: "/merit-badges/search-and-rescue/guide/req4/"
-next_title: "Req 4 — How the Command System Works"
+next_title: "How the Command System Works"
 ---
 
 {{< drg/requirement number="3" >}}

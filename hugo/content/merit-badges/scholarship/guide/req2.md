@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Choose Two Learning Tools"
+title: "Choose Two Learning Tools"
 layout: "guide"
-group_title: "Learning Beyond the Classroom"
+group_title: "2. Learning Beyond the Classroom"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/scholarship/guide/req1b/"
-prev_title: "Req 1b — Showing Improvement"
+prev_title: "Showing Improvement"
 next: "/merit-badges/scholarship/guide/req2a/"
-next_title: "Req 2a — Learn From Local Places"
+next_title: "Learn From Local Places"
 ---
 
 {{< drg/requirement number="2" >}}

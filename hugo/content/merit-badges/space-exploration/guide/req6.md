@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Choose a Space Home"
+title: "Choose a Space Home"
 layout: "guide"
-group_title: "Spacecraft Choices"
+group_title: "6. Spacecraft Choices"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/space-exploration/guide/req5c/"
-prev_title: "Req 5c — Design a Sample Return"
+prev_title: "Design a Sample Return"
 next: "/merit-badges/space-exploration/guide/req6a/"
-next_title: "Req 6a — Crewed Orbital Vehicles"
+next_title: "Crewed Orbital Vehicles"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Inside a Paper Mill"
+title: "Inside a Paper Mill"
 layout: "guide"
-group_title: "Industry Experiences"
+group_title: "7. Industry Experiences"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/pulp-and-paper/guide/req7a/"
-prev_title: "Req 7a — Inside a Pulp Mill"
+prev_title: "Inside a Pulp Mill"
 next: "/merit-badges/pulp-and-paper/guide/req7c/"
-next_title: "Req 7c — Boxes and Corrugated Containers"
+next_title: "Boxes and Corrugated Containers"
 ---
 
 {{< drg/requirement number="7b" >}}

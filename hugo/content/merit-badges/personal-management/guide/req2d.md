@@ -1,12 +1,12 @@
 ---
-title: "Req 2d — Budget Review"
+title: "Budget Review"
 layout: guide
-group_title: "Budgeting"
+group_title: "2. Budgeting"
 req_number: "2d"
 prev: "/merit-badges/personal-management/guide/req2c/"
-prev_title: "Req 2c — Tracking Your Money"
+prev_title: "Tracking Your Money"
 next: "/merit-badges/personal-management/guide/req3/"
-next_title: "Req 3 — Psychology of Money"
+next_title: "Psychology of Money"
 ---
 
 {{< drg/requirement number="2d" >}}

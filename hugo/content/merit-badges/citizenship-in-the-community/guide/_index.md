@@ -4,53 +4,53 @@ layout: guide
 badge_name: "Citizenship in the Community"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-the-community/guide/req1/"
-next_title: "Req 1 — What Good Citizenship Means"
+next_title: "What Good Citizenship Means"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/citizenship-in-the-community/guide/"
-  - group_title: "Foundations of Community Citizenship"
+  - group_title: "1. Foundations of Community Citizenship"
     items:
-      - title: "Req 1 — What Good Citizenship Means"
+      - title: "1. What Good Citizenship Means"
         url: "/merit-badges/citizenship-in-the-community/guide/req1/"
         is_sub: false
-  - group_title: "Knowing Your Community"
+  - group_title: "2. Knowing Your Community"
     items:
-      - title: "Req 2a — Mapping Your Community"
+      - title: "a Mapping Your Community"
         url: "/merit-badges/citizenship-in-the-community/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Charting Local Government"
+      - title: "b Charting Local Government"
         url: "/merit-badges/citizenship-in-the-community/guide/req2b/"
         is_sub: true
-  - group_title: "Democracy in Action"
+  - group_title: "3. Democracy in Action"
     items:
-      - title: "Req 3 — Attending a Government Meeting"
+      - title: "3. Attending a Government Meeting"
         url: "/merit-badges/citizenship-in-the-community/guide/req3/"
         is_sub: false
-  - group_title: "Tackling Community Issues"
+  - group_title: "4. Tackling Community Issues"
     items:
-      - title: "Req 4 — Investigating a Community Issue"
+      - title: "4. Investigating a Community Issue"
         url: "/merit-badges/citizenship-in-the-community/guide/req4/"
         is_sub: false
-  - group_title: "Community Through Film"
+  - group_title: "5. Community Through Film"
     items:
-      - title: "Req 5 — Community on Screen"
+      - title: "5. Community on Screen"
         url: "/merit-badges/citizenship-in-the-community/guide/req5/"
         is_sub: false
-  - group_title: "Services Your Community Provides"
+  - group_title: "6. Services Your Community Provides"
     items:
-      - title: "Req 6 — Taxpayer-Funded Services"
+      - title: "6. Taxpayer-Funded Services"
         url: "/merit-badges/citizenship-in-the-community/guide/req6/"
         is_sub: false
-  - group_title: "Giving Back"
+  - group_title: "7. Giving Back"
     items:
-      - title: "Req 7 — Charitable Organizations & Volunteering"
+      - title: "7. Charitable Organizations & Volunteering"
         url: "/merit-badges/citizenship-in-the-community/guide/req7/"
         is_sub: false
-  - group_title: "Telling Your Community's Story"
+  - group_title: "8. Telling Your Community's Story"
     items:
-      - title: "Req 8 — Your Community Presentation"
+      - title: "8. Your Community Presentation"
         url: "/merit-badges/citizenship-in-the-community/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

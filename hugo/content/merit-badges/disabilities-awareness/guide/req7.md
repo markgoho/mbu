@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Professions"
+title: "Professions"
 layout: guide
-group_title: "Careers in Disability Services"
+group_title: "7. Careers in Disability Services"
 req_number: "7"
 prev: "/merit-badges/disabilities-awareness/guide/req6/"
-prev_title: "Req 6 — Personal Commitment"
+prev_title: "Personal Commitment"
 next: "/merit-badges/disabilities-awareness/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

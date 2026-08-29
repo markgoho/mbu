@@ -1,13 +1,13 @@
 ---
-title: "Req 7a5 — Structures and Scenery"
+title: "Structures and Scenery"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a5"
 req_path: "7.a.5"
 prev: "/merit-badges/railroading/guide/req7a4/"
-prev_title: "Req 7a4 — Makers and Magazines"
+prev_title: "Makers and Magazines"
 next: "/merit-badges/railroading/guide/req7a6/"
-next_title: "Req 7a6 — Build and Run a Layout"
+next_title: "Build and Run a Layout"
 ---
 
 {{< drg/requirement number="7a5" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8a1 — Why Amateur Radio Exists"
+title: "Why Amateur Radio Exists"
 layout: "guide"
-group_title: "Option A: Amateur Radio"
+group_title: "8. Option A: Amateur Radio"
 req_number: "8a1"
 req_path: "8.a.1"
 prev: "/merit-badges/radio/guide/req8a/"
-prev_title: "Req 8a — Amateur Radio Overview"
+prev_title: "Amateur Radio Overview"
 next: "/merit-badges/radio/guide/req8a2/"
-next_title: "Req 8a2 — License Classes"
+next_title: "License Classes"
 guide_nav:
   - group_title: "Getting Started"
     items:

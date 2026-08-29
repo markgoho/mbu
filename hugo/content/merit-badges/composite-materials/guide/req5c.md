@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Evaluating Your Work"
+title: "Evaluating Your Work"
 layout: guide
-group_title: "Building with Composites"
+group_title: "5. Building with Composites"
 req_number: "5c"
 prev: "/merit-badges/composite-materials/guide/req5b/"
-prev_title: "Req 5b — Finding a Workspace"
+prev_title: "Finding a Workspace"
 next: "/merit-badges/composite-materials/guide/req6/"
-next_title: "Req 6 — Careers & Hobbies"
+next_title: "Careers & Hobbies"
 ---
 
 {{< drg/requirement number="5c" >}}

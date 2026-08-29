@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Government Agencies and Their Roles"
+title: "Government Agencies and Their Roles"
 layout: "guide"
-group_title: "Rules and Regulators"
+group_title: "6. Rules and Regulators"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/truck-transportation/guide/req5/"
-prev_title: "Req 5 — Company Departments and Jobs"
+prev_title: "Company Departments and Jobs"
 next: "/merit-badges/truck-transportation/guide/req7/"
-next_title: "Req 7 — Trucks and the Work They Do"
+next_title: "Trucks and the Work They Do"
 ---
 
 {{< drg/requirement number="6" >}}

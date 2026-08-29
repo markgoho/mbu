@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Rethink a Camping Product"
+title: "Rethink a Camping Product"
 layout: guide
-group_title: "Improving Gear"
+group_title: "5. Improving Gear"
 req_number: "5"
 prev: "/merit-badges/inventing/guide/req4/"
-prev_title: "Req 4 — Inventions That Should Be Shared"
+prev_title: "Inventions That Should Be Shared"
 next: "/merit-badges/inventing/guide/req6/"
-next_title: "Req 6 — Plan Your Invention"
+next_title: "Plan Your Invention"
 ---
 
 {{< drg/requirement number="5" >}}

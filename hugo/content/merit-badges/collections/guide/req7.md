@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers in Collecting"
+title: "Careers in Collecting"
 layout: guide
-group_title: "Looking Ahead"
+group_title: "6. Looking Ahead"
 req_number: "7"
 prev: "/merit-badges/collections/guide/req6/"
-prev_title: "Req 6 — Future Plans"
+prev_title: "Future Plans"
 next: "/merit-badges/collections/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

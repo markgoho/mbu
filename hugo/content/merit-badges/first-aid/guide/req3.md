@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Wounds Without External Bleeding"
+title: "Wounds Without External Bleeding"
 layout: guide
-group_title: "Wounds Without Bleeding"
+group_title: "3. Wounds Without External Bleeding"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/first-aid/guide/req2/"
-prev_title: "Req 2 — Preparing for First Aid Emergencies"
+prev_title: "Preparing for First Aid Emergencies"
 next: "/merit-badges/first-aid/guide/req4a/"
-next_title: "Req 4a — Nosebleeds & Mild Bleeding"
+next_title: "Nosebleeds & Mild Bleeding"
 ---
 
 {{< drg/requirement number="3" >}}

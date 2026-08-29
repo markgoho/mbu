@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — How Plants Make Electricity"
+title: "How Plants Make Electricity"
 layout: "guide"
-group_title: "Nuclear Power"
+group_title: "6. Nuclear Power"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/nuclear-science/guide/req6a/"
-prev_title: "Req 6a — Fission and Chain Reactions"
+prev_title: "Fission and Chain Reactions"
 next: "/merit-badges/nuclear-science/guide/req7/"
-next_title: "Req 7 — Nuclear Science in Daily Life"
+next_title: "Nuclear Science in Daily Life"
 ---
 
 {{< drg/requirement number="6b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Interior Repair Options"
+title: "Interior Repair Options"
 layout: guide
-group_title: "Indoor Finish Repairs"
+group_title: "6. Indoor Finish Repairs"
 req_number: "6"
 prev: "/merit-badges/home-repairs/guide/req5e/"
-prev_title: "Req 5e — Cleaning or Replacing a Sprinkler Head"
+prev_title: "Cleaning or Replacing a Sprinkler Head"
 next: "/merit-badges/home-repairs/guide/req6a/"
-next_title: "Req 6a — Painting a Wall or Ceiling"
+next_title: "Painting a Wall or Ceiling"
 ---
 
 {{< drg/requirement number="6" >}}

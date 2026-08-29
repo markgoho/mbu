@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Installing Updates"
+title: "Installing Updates"
 layout: guide
-group_title: "Cyber Defenses"
+group_title: "5. Cyber Defenses"
 req_number: "5b"
 prev: "/merit-badges/cybersecurity/guide/req5a/"
-prev_title: "Req 5a — Defense Technologies"
+prev_title: "Defense Technologies"
 next: "/merit-badges/cybersecurity/guide/req5c/"
-next_title: "Req 5c — System Security"
+next_title: "System Security"
 ---
 
 {{< drg/requirement number="5b" >}}

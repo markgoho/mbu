@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Water Pollution & Waste Treatment"
+title: "Water Pollution & Waste Treatment"
 layout: "guide"
-group_title: "Pollution & Treatment"
+group_title: "6. Pollution & Treatment"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/soil-and-water-conservation/guide/req5/"
-prev_title: "Req 5 — The Water Cycle & Runoff"
+prev_title: "The Water Cycle & Runoff"
 next: "/merit-badges/soil-and-water-conservation/guide/req7/"
-next_title: "Req 7 — Choose Two Conservation Projects"
+next_title: "Choose Two Conservation Projects"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Craft, Materials & Oarlocks"
+title: "Craft, Materials & Oarlocks"
 layout: "guide"
-group_title: "Rowing Equipment"
+group_title: "8. Rowing Equipment"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/rowing/guide/req7/"
-prev_title: "Req 7 — Towing a Swimmer"
+prev_title: "Towing a Swimmer"
 next: "/merit-badges/rowing/guide/req9/"
-next_title: "Req 9 — Technique, Weather & Boat Care"
+next_title: "Technique, Weather & Boat Care"
 ---
 
 {{< drg/requirement number="8" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b1 — Rules, Courtesy & Scoring"
+title: "Rules, Courtesy & Scoring"
 layout: guide
-group_title: "Disc Golf Path"
+group_title: "2. Disc Golf Path"
 req_number: "2b1"
 prev: "/merit-badges/golf/guide/req2b/"
-prev_title: "Req 2b — Disc Golf Roadmap"
+prev_title: "Disc Golf Roadmap"
 next: "/merit-badges/golf/guide/req2b2/"
-next_title: "Req 2b2 — Disc Golf History & Inclusion"
+next_title: "Disc Golf History & Inclusion"
 ---
 
 {{< drg/requirement number="2b1" >}}

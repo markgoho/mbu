@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Fuses, Belts & Hoses"
+title: "Fuses, Belts & Hoses"
 layout: guide
-group_title: "General Maintenance"
+group_title: "2. General Maintenance"
 req_number: "2b"
 prev: "/merit-badges/automotive-maintenance/guide/req2a/"
-prev_title: "Req 2a — Checking Fluids"
+prev_title: "Checking Fluids"
 next: "/merit-badges/automotive-maintenance/guide/req2d/"
-next_title: "Req 2d — Lights & Air Filters"
+next_title: "Lights & Air Filters"
 ---
 
 {{< drg/requirement number="2b" >}}

@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Woodworking Careers"
+title: "Woodworking Careers"
 layout: guide
-group_title: "Careers in Woodwork"
+group_title: "7. Careers in Woodwork"
 req_number: "7"
 prev: "/merit-badges/woodwork/guide/req6/"
-prev_title: "Req 6 — Advanced Projects"
+prev_title: "Advanced Projects"
 next: "/merit-badges/woodwork/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

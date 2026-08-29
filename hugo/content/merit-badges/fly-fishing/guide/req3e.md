@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Tying on the Fly"
+title: "Tying on the Fly"
 layout: guide
-group_title: "Gear & Rigging"
+group_title: "2. Gear & Rigging"
 req_number: "3e"
 prev: "/merit-badges/fly-fishing/guide/req3d/"
-prev_title: "Req 3d — Tippet Connections"
+prev_title: "Tippet Connections"
 next: "/merit-badges/fly-fishing/guide/req4/"
-next_title: "Req 4 — Fly Types and Imitation"
+next_title: "Fly Types and Imitation"
 ---
 
 {{< drg/requirement number="3e" >}}

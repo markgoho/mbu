@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Pick Your Next Two Steps"
+title: "Pick Your Next Two Steps"
 layout: "guide"
-group_title: "Staying Involved"
+group_title: "8. Staying Involved"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/multisport/guide/req7d/"
-prev_title: "Req 7d — Aquabike Simulation"
+prev_title: "Aquabike Simulation"
 next: "/merit-badges/multisport/guide/req8a/"
-next_title: "Req 8a — Keep Participating"
+next_title: "Keep Participating"
 ---
 
 {{< drg/requirement number="8" >}}

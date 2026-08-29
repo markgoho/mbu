@@ -1,13 +1,13 @@
 ---
-title: "Req 5g — Finding Watermarks"
+title: "Finding Watermarks"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5g"
 req_path: "5.g"
 prev: "/merit-badges/stamp-collecting/guide/req5f/"
-prev_title: "Req 5f — Safe Storage Sleeves"
+prev_title: "Safe Storage Sleeves"
 next: "/merit-badges/stamp-collecting/guide/req6/"
-next_title: "Req 6 — Mounting and Protecting a Collection"
+next_title: "Mounting and Protecting a Collection"
 ---
 
 {{< drg/requirement number="5g" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Floor Plan Drawing"
+title: "Floor Plan Drawing"
 layout: guide
-group_title: "Drawing & Design"
+group_title: "4. Drawing & Design"
 req_number: "4"
 prev: "/merit-badges/architecture/guide/req3/"
-prev_title: "Req 3 — Meet an Architect"
+prev_title: "Meet an Architect"
 next: "/merit-badges/architecture/guide/req5/"
-next_title: "Req 5 — Career Exploration"
+next_title: "Career Exploration"
 ---
 
 {{< drg/requirement number="4" >}}

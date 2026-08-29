@@ -1,13 +1,13 @@
 ---
-title: "Req 7a4 — Riding a Lift"
+title: "Riding a Lift"
 layout: "guide"
-group_title: "Option A — Alpine Skiing"
+group_title: "7. Option A — Alpine Skiing"
 req_number: "7a4"
 req_path: "7.a.4"
 prev: "/merit-badges/snow-sports/guide/req7a3/"
-prev_title: "Req 7a3 — Types of Alpine Skis"
+prev_title: "Types of Alpine Skis"
 next: "/merit-badges/snow-sports/guide/req7a5/"
-next_title: "Req 7a5 — Beginning Maneuvers"
+next_title: "Beginning Maneuvers"
 ---
 
 {{< drg/requirement number="7a4" >}}

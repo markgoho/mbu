@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Rules, Weather & Required Gear"
+title: "Rules, Weather & Required Gear"
 layout: "guide"
-group_title: "Laws, Signals & Seamanship"
+group_title: "4. Laws, Signals & Seamanship"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/motorboating/guide/req3/"
-prev_title: "Req 3 — Engines, Fuel & On-Water Awareness"
+prev_title: "Engines, Fuel & On-Water Awareness"
 next: "/merit-badges/motorboating/guide/req5/"
-next_title: "Req 5 — Boat Handling Underway"
+next_title: "Boat Handling Underway"
 ---
 
 {{< drg/requirement number="4" >}}

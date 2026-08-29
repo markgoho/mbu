@@ -1,12 +1,12 @@
 ---
-title: "Req 6d — Cook on the Trail"
+title: "Cook on the Trail"
 layout: guide
-group_title: "Trail & Backpacking Meals"
+group_title: "6. Trail & Backpacking Meals"
 req_number: "6d"
 prev: "/merit-badges/cooking/guide/req6c/"
-prev_title: "Req 6c — Repackaging & Reducing Waste"
+prev_title: "Repackaging & Reducing Waste"
 next: "/merit-badges/cooking/guide/req6e/"
-next_title: "Req 6e — Trail Meal Evaluation"
+next_title: "Trail Meal Evaluation"
 ---
 
 {{< drg/requirement number="6d" >}}

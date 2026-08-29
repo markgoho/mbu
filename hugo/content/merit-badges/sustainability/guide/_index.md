@@ -4,106 +4,106 @@ layout: guide
 badge_name: "Sustainability"
 group_title: "Getting Started"
 next: "/merit-badges/sustainability/guide/req1/"
-next_title: "Req 1 — Defining Sustainability"
+next_title: "Defining Sustainability"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/sustainability/guide/"
-  - group_title: "What Is Sustainability?"
+  - group_title: "1. What Is Sustainability?"
     items:
-      - title: "Req 1 — Defining Sustainability"
+      - title: "1. Defining Sustainability"
         url: "/merit-badges/sustainability/guide/req1/"
         is_sub: false
-  - group_title: "Water Conservation"
+  - group_title: "2. Water Conservation"
     items:
-      - title: "Req 2a — Household Water Usage"
+      - title: "a Household Water Usage"
         url: "/merit-badges/sustainability/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Water Systems"
+      - title: "b Water Systems"
         url: "/merit-badges/sustainability/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Floods & Droughts"
+      - title: "c Floods & Droughts"
         url: "/merit-badges/sustainability/guide/req2c/"
         is_sub: true
-  - group_title: "Food Sustainability"
+  - group_title: "3. Food Sustainability"
     items:
-      - title: "Req 3a — Food Sources"
+      - title: "a Food Sources"
         url: "/merit-badges/sustainability/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Global Food Supply"
+      - title: "b Global Food Supply"
         url: "/merit-badges/sustainability/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Reducing Food Waste"
+      - title: "c Reducing Food Waste"
         url: "/merit-badges/sustainability/guide/req3c/"
         is_sub: true
-  - group_title: "Sustainable Communities"
+  - group_title: "4. Sustainable Communities"
     items:
-      - title: "Req 4a — Design a Community"
+      - title: "a Design a Community"
         url: "/merit-badges/sustainability/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Fix an Unsustainable Practice"
+      - title: "b Fix an Unsustainable Practice"
         url: "/merit-badges/sustainability/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Sustainable Housing"
+      - title: "c Sustainable Housing"
         url: "/merit-badges/sustainability/guide/req4c/"
         is_sub: true
-  - group_title: "Energy & Resources"
+  - group_title: "5. Energy & Resources"
     items:
-      - title: "Req 5a — Energy Sources"
+      - title: "a Energy Sources"
         url: "/merit-badges/sustainability/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Family Energy Use"
+      - title: "b Family Energy Use"
         url: "/merit-badges/sustainability/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Reducing Home Energy"
+      - title: "c Reducing Home Energy"
         url: "/merit-badges/sustainability/guide/req5c/"
         is_sub: true
-  - group_title: "Stuff & Waste"
+  - group_title: "6. Stuff & Waste"
     items:
-      - title: "Req 6a — Needs vs. Wants"
+      - title: "a Needs vs. Wants"
         url: "/merit-badges/sustainability/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Impact of Too Much Stuff"
+      - title: "b Impact of Too Much Stuff"
         url: "/merit-badges/sustainability/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Waste & Recycling"
+      - title: "c Waste & Recycling"
         url: "/merit-badges/sustainability/guide/req6c/"
         is_sub: true
-  - group_title: "Global Challenges"
+  - group_title: "7. Global Challenges"
     items:
-      - title: "Req 7a — UN Development Goals"
+      - title: "a UN Development Goals"
         url: "/merit-badges/sustainability/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Planetary Life-Support Systems"
+      - title: "b Planetary Life-Support Systems"
         url: "/merit-badges/sustainability/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Product Life Cycles"
+      - title: "c Product Life Cycles"
         url: "/merit-badges/sustainability/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Population & Sustainability"
+      - title: "d Population & Sustainability"
         url: "/merit-badges/sustainability/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — Species Decline"
+      - title: "e Species Decline"
         url: "/merit-badges/sustainability/guide/req7e/"
         is_sub: true
-      - title: "Req 7f — Climate Change"
+      - title: "f Climate Change"
         url: "/merit-badges/sustainability/guide/req7f/"
         is_sub: true
-  - group_title: "Scouting & Sustainability"
+  - group_title: "8. Scouting & Sustainability"
     items:
-      - title: "Req 8a — Campout Observations"
+      - title: "a Campout Observations"
         url: "/merit-badges/sustainability/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Scout Values & Sustainability"
+      - title: "b Scout Values & Sustainability"
         url: "/merit-badges/sustainability/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Household Behavior Changes"
+      - title: "c Household Behavior Changes"
         url: "/merit-badges/sustainability/guide/req8c/"
         is_sub: true
-  - group_title: "Sustainability Careers"
+  - group_title: "9. Sustainability Careers"
     items:
-      - title: "Req 9 — Career Exploration"
+      - title: "9. Career Exploration"
         url: "/merit-badges/sustainability/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

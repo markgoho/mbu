@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Six-Week Journal"
+title: "Six-Week Journal"
 layout: guide
-group_title: "Foundations of Family History"
+group_title: "1. Foundations of Family History"
 req_number: "2b"
 prev: "/merit-badges/genealogy/guide/req2a/"
-prev_title: "Req 2a — Timeline & Biography"
+prev_title: "Timeline & Biography"
 next: "/merit-badges/genealogy/guide/req3/"
-next_title: "Req 3 — Interview a Relative"
+next_title: "Interview a Relative"
 ---
 
 {{< drg/requirement number="2b" >}}

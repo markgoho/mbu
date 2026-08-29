@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Reducing Environmental Impact"
+title: "Reducing Environmental Impact"
 layout: guide
-group_title: "Chemistry & the Environment"
+group_title: "5. Chemistry & the Environment"
 req_number: "5"
 prev: "/merit-badges/chemistry/guide/req4/"
-prev_title: "Req 4 — Camping Chemistry"
+prev_title: "Camping Chemistry"
 next: "/merit-badges/chemistry/guide/req6/"
-next_title: "Req 6 — Five Fields of Chemistry"
+next_title: "Five Fields of Chemistry"
 ---
 
 {{< drg/requirement number="5" >}}

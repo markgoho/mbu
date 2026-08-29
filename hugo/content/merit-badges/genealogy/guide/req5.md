@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Research Helpers Overview"
+title: "Research Helpers Overview"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "5"
 prev: "/merit-badges/genealogy/guide/req4e/"
-prev_title: "Req 4e — Where Records Live"
+prev_title: "Where Records Live"
 next: "/merit-badges/genealogy/guide/req5a/"
-next_title: "Req 5a — Genealogical or Lineage Society"
+next_title: "Genealogical or Lineage Society"
 ---
 
 {{< drg/requirement number="5" >}}

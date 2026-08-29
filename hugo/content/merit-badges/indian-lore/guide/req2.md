@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Researching a Nation"
+title: "Researching a Nation"
 layout: guide
-group_title: "Researching a Nation"
+group_title: "2. Researching a Nation"
 req_number: "2"
 prev: "/merit-badges/indian-lore/guide/req1/"
-prev_title: "Req 1 — Cultural Areas"
+prev_title: "Cultural Areas"
 next: "/merit-badges/indian-lore/guide/req3/"
-next_title: "Req 3 — Language, Place, and Leaders"
+next_title: "Language, Place, and Leaders"
 ---
 
 {{< drg/requirement number="2" >}}

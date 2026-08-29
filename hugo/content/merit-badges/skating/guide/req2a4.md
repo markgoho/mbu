@@ -1,13 +1,13 @@
 ---
-title: "Req 2a4 — Carrying Skates"
+title: "Carrying Skates"
 layout: "guide"
-group_title: "Option A — Ice Skating"
+group_title: "2. Option A — Ice Skating"
 req_number: "2a4"
 req_path: "2.a.4"
 prev: "/merit-badges/skating/guide/req2a3/"
-prev_title: "Req 2a3 — Parts of Ice Skates"
+prev_title: "Parts of Ice Skates"
 next: "/merit-badges/skating/guide/req2a5/"
-next_title: "Req 2a5 — Storing Skates"
+next_title: "Storing Skates"
 ---
 
 {{< drg/requirement number="2a4" >}}

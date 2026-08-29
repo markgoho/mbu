@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Logging or Wood Products Visit"
+title: "Logging or Wood Products Visit"
 layout: guide
-group_title: "Managing Forests"
+group_title: "4. Managing Forests"
 req_number: "5b"
 prev: "/merit-badges/forestry/guide/req5a/"
-prev_title: "Req 5a — Managed Forest Visit"
+prev_title: "Managed Forest Visit"
 next: "/merit-badges/forestry/guide/req5c/"
-next_title: "Req 5c — Fire Prevention Campaign"
+next_title: "Fire Prevention Campaign"
 ---
 
 {{< drg/requirement number="5b" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Intellectual Property and Software Use"
+title: "Intellectual Property and Software Use"
 layout: "guide"
-group_title: "Respecting Software Rights"
+group_title: "4. Respecting Software Rights"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/programming/guide/req3/"
-prev_title: "Req 3 — Languages and Everyday Code"
+prev_title: "Languages and Everyday Code"
 next: "/merit-badges/programming/guide/req5/"
-next_title: "Req 5 — Choosing Your Three Projects"
+next_title: "Choosing Your Three Projects"
 ---
 
 {{< drg/requirement number="4" >}}

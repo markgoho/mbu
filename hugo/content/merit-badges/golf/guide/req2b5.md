@@ -1,12 +1,12 @@
 ---
-title: "Req 2b5 — Disc Golf Skills"
+title: "Disc Golf Skills"
 layout: guide
-group_title: "Disc Golf Path"
+group_title: "2. Disc Golf Path"
 req_number: "2b5"
 prev: "/merit-badges/golf/guide/req2b4/"
-prev_title: "Req 2b4 — Fitness for Disc Golf"
+prev_title: "Fitness for Disc Golf"
 next: "/merit-badges/golf/guide/req2b6/"
-next_title: "Req 2b6 — Playing a Full Disc Golf Round"
+next_title: "Playing a Full Disc Golf Round"
 ---
 
 {{< drg/requirement number="2b5" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Repairing a Hose or Connector"
+title: "Repairing a Hose or Connector"
 layout: guide
-group_title: "Plumbing Basics"
+group_title: "5. Plumbing Basics"
 req_number: "5d"
 prev: "/merit-badges/home-repairs/guide/req5c/"
-prev_title: "Req 5c — Repairing a Toilet"
+prev_title: "Repairing a Toilet"
 next: "/merit-badges/home-repairs/guide/req5e/"
-next_title: "Req 5e — Cleaning or Replacing a Sprinkler Head"
+next_title: "Cleaning or Replacing a Sprinkler Head"
 ---
 
 {{< drg/requirement number="5d" >}}

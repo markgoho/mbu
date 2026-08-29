@@ -1,12 +1,12 @@
 ---
-title: "Req 7e — Reducing Debt"
+title: "Reducing Debt"
 layout: guide
-group_title: "Credit & Debt"
+group_title: "7. Credit & Debt"
 req_number: "7e"
 prev: "/merit-badges/personal-management/guide/req7d/"
-prev_title: "Req 7d — Credit Reports"
+prev_title: "Credit Reports"
 next: "/merit-badges/personal-management/guide/req8/"
-next_title: "Req 8 — Managing Your Time"
+next_title: "Managing Your Time"
 ---
 
 {{< drg/requirement number="7e" >}}

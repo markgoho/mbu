@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Safety Symbols & Warnings"
+title: "Safety Symbols & Warnings"
 layout: guide
-group_title: "Farm Shop Safety"
+group_title: "1. Farm Shop Safety"
 req_number: "1c"
 prev: "/merit-badges/farm-mechanics/guide/req1b/"
-prev_title: "Req 1b — Design a Safe Farm Shop"
+prev_title: "Design a Safe Farm Shop"
 next: "/merit-badges/farm-mechanics/guide/req1d/"
-next_title: "Req 1d — Safety Data Sheets"
+next_title: "Safety Data Sheets"
 ---
 
 {{< drg/requirement number="1c" >}}

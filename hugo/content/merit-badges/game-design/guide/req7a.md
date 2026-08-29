@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — Write Clear Instructions"
+title: "Write Clear Instructions"
 layout: guide
-group_title: "Designing Your Game"
+group_title: "5. Designing Your Game"
 req_number: "7a"
 prev: "/merit-badges/game-design/guide/req6bc/"
-prev_title: "Req 6bc — Test, Change, Repeat"
+prev_title: "Test, Change, Repeat"
 next: "/merit-badges/game-design/guide/req7bc/"
-next_title: "Req 7bc — Blind Test and Reflect"
+next_title: "Blind Test and Reflect"
 ---
 
 {{< drg/requirement number="7a" >}}

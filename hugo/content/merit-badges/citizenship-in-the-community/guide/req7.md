@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Charitable Organizations & Volunteering"
+title: "Charitable Organizations & Volunteering"
 layout: guide
-group_title: "Giving Back"
+group_title: "7. Giving Back"
 req_number: "7"
 prev: "/merit-badges/citizenship-in-the-community/guide/req6/"
-prev_title: "Req 6 — Taxpayer-Funded Services"
+prev_title: "Taxpayer-Funded Services"
 next: "/merit-badges/citizenship-in-the-community/guide/req8/"
-next_title: "Req 8 — Your Community Presentation"
+next_title: "Your Community Presentation"
 ---
 
 {{< drg/requirement number="7a" >}}

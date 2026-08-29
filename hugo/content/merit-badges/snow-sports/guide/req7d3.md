@@ -1,13 +1,13 @@
 ---
-title: "Req 7d3 — Types & Specialized Uses"
+title: "Types & Specialized Uses"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d3"
 req_path: "7.d.3"
 prev: "/merit-badges/snow-sports/guide/req7d2/"
-prev_title: "Req 7d2 — Choosing the Right Size"
+prev_title: "Choosing the Right Size"
 next: "/merit-badges/snow-sports/guide/req7d4/"
-next_title: "Req 7d4 — Care & Maintenance"
+next_title: "Care & Maintenance"
 ---
 
 {{< drg/requirement number="7d3" >}}

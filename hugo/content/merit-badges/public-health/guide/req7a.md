@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Choose Your Agency Research Path"
+title: "Choose Your Agency Research Path"
 layout: "guide"
-group_title: "Public Health Agencies"
+group_title: "7. Public Health Agencies"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/public-health/guide/req6/"
-prev_title: "Req 6 — Pollution and Substance Risks"
+prev_title: "Pollution and Substance Risks"
 next: "/merit-badges/public-health/guide/req7a1/"
-next_title: "Req 7a1 — Visit a Public Health Agency"
+next_title: "Visit a Public Health Agency"
 ---
 
 {{< drg/requirement number="7a" >}}

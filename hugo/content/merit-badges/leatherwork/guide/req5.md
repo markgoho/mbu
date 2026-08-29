@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Pick Your Leather Path"
+title: "Pick Your Leather Path"
 layout: guide
-group_title: "Exploring Leather Beyond the Bench"
+group_title: "5. Exploring Leather Beyond the Bench"
 req_number: "5"
 prev: "/merit-badges/leatherwork/guide/req4/"
-prev_title: "Req 4 — Braiding and Plaiting"
+prev_title: "Braiding and Plaiting"
 next: "/merit-badges/leatherwork/guide/req5a/"
-next_title: "Req 5a — Commercial Tanning"
+next_title: "Commercial Tanning"
 ---
 
 {{< drg/requirement number="5" >}}

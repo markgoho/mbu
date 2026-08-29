@@ -1,13 +1,13 @@
 ---
-title: "Req 2a4 — Ernest Thompson Seton"
+title: "Ernest Thompson Seton"
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a4"
 req_path: "2.a.4"
 prev: "/merit-badges/scouting-heritage/guide/req2a3/"
-prev_title: "Req 2a3 — Waite Phillips"
+prev_title: "Waite Phillips"
 next: "/merit-badges/scouting-heritage/guide/req2a5/"
-next_title: "Req 2a5 — James E. West"
+next_title: "James E. West"
 ---
 
 {{< drg/requirement number="2a4" >}}

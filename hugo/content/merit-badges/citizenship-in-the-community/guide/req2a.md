@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Mapping Your Community"
+title: "Mapping Your Community"
 layout: guide
-group_title: "Knowing Your Community"
+group_title: "2. Knowing Your Community"
 req_number: "2a"
 prev: "/merit-badges/citizenship-in-the-community/guide/req1/"
-prev_title: "Req 1 — What Good Citizenship Means"
+prev_title: "What Good Citizenship Means"
 next: "/merit-badges/citizenship-in-the-community/guide/req2b/"
-next_title: "Req 2b — Charting Local Government"
+next_title: "Charting Local Government"
 ---
 
 {{< drg/requirement number="2a" >}}

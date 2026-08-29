@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Retail Crime Prevention"
+title: "Retail Crime Prevention"
 layout: guide
-group_title: "Retail Crime Prevention"
+group_title: "5. Retail Crime Prevention"
 req_number: "5"
 prev: "/merit-badges/crime-prevention/guide/req4c/"
-prev_title: "Req 4c — Teaching Crime Prevention"
+prev_title: "Teaching Crime Prevention"
 next: "/merit-badges/crime-prevention/guide/req6/"
-next_title: "Req 6 — Reporting Crime"
+next_title: "Reporting Crime"
 ---
 
 {{< drg/requirement number="5" >}}

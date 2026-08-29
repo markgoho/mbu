@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Dangerous Situations"
+title: "Dangerous Situations"
 layout: guide
-group_title: "Dangerous Situations"
+group_title: "4. Dangerous Situations"
 req_number: "4"
 prev: "/merit-badges/emergency-preparedness/guide/req3/"
-prev_title: "Requirement 3 — Preventing Accidents"
+prev_title: "Preventing Accidents"
 next: "/merit-badges/emergency-preparedness/guide/req5/"
-next_title: "Requirement 5 — Signaling for Help"
+next_title: "Signaling for Help"
 ---
 
 {{< drg/requirement number="4" >}}

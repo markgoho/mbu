@@ -1,13 +1,13 @@
 ---
-title: "Req 4e — Fish and Food Sources"
+title: "Fish and Food Sources"
 layout: "guide"
-group_title: "Fish Study"
+group_title: "4. Fish Study"
 req_number: "4e"
 req_path: "4.e"
 prev: "/merit-badges/nature/guide/req4d/"
-prev_title: "Req 4d — Insects and Spiders Up Close"
+prev_title: "Insects and Spiders Up Close"
 next: "/merit-badges/nature/guide/req4f/"
-next_title: "Req 4f — Shells, Mollusks, and Crustaceans"
+next_title: "Shells, Mollusks, and Crustaceans"
 ---
 
 {{< drg/requirement number="4e" >}}

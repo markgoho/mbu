@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Energy Careers"
+title: "Energy Careers"
 layout: "guide"
-group_title: "Energy Careers"
+group_title: "8. Energy Careers"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/energy/guide/req7i/"
-prev_title: "Req 7i — Wind Turbines"
+prev_title: "Wind Turbines"
 next: "/merit-badges/energy/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

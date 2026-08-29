@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Choose Your Album Project"
+title: "Choose Your Album Project"
 layout: "guide"
-group_title: "Building Your Collection"
+group_title: "8. Building Your Collection"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/stamp-collecting/guide/req7f/"
-prev_title: "Req 7f — Build a Stamp Display"
+prev_title: "Build a Stamp Display"
 next: "/merit-badges/stamp-collecting/guide/req8a/"
-next_title: "Req 8a — 250 Stamps From 15 Countries"
+next_title: "250 Stamps From 15 Countries"
 ---
 
 {{< drg/requirement number="8" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Choose Your Future Path"
+title: "Choose Your Future Path"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "7. Future Paths"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/robotics/guide/req6b/"
-prev_title: "Req 6b — Compare Youth Leagues"
+prev_title: "Compare Youth Leagues"
 next: "/merit-badges/robotics/guide/req7a/"
-next_title: "Req 7a — Explore Robotics Careers"
+next_title: "Explore Robotics Careers"
 ---
 
 {{< drg/requirement number="7" >}}

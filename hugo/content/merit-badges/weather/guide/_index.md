@@ -4,59 +4,59 @@ layout: "guide"
 badge_name: "Weather"
 group_title: "Getting Started"
 next: "/merit-badges/weather/guide/req1/"
-next_title: "Req 1 — Meteorology, Weather, and Climate"
+next_title: "Meteorology, Weather, and Climate"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/weather/guide/"
         is_sub: false
-  - group_title: "Weather Basics"
+  - group_title: "1. Weather Basics"
     items:
-      - title: "Req 1 — Meteorology, Weather, and Climate"
+      - title: "1. Meteorology, Weather, and Climate"
         url: "/merit-badges/weather/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Dangerous Weather and Family Safety"
+      - title: "2. Dangerous Weather and Family Safety"
         url: "/merit-badges/weather/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Forecasts and Warnings"
+      - title: "3. Forecasts and Warnings"
         url: "/merit-badges/weather/guide/req3/"
         is_sub: false
-  - group_title: "How Weather Works"
+  - group_title: "4. How Weather Works"
     items:
-      - title: "Req 4 — Pressure Systems and Fronts"
+      - title: "4. Pressure Systems and Fronts"
         url: "/merit-badges/weather/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Wind, Rain, Lightning, and Hail"
+      - title: "5. Wind, Rain, Lightning, and Hail"
         url: "/merit-badges/weather/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Cloud Clues"
+      - title: "6. Cloud Clues"
         url: "/merit-badges/weather/guide/req6/"
         is_sub: false
-      - title: "Req 7 — The Water Cycle in Motion"
+      - title: "7. The Water Cycle in Motion"
         url: "/merit-badges/weather/guide/req7/"
         is_sub: false
-      - title: "Req 8 — People, Climate, and Change"
+      - title: "8. People, Climate, and Change"
         url: "/merit-badges/weather/guide/req8/"
         is_sub: false
-      - title: "Req 9 — Earth's Tilt and Regional Climate"
+      - title: "9. Earth"
         url: "/merit-badges/weather/guide/req9/"
         is_sub: false
-  - group_title: "Weather in Action"
+  - group_title: "10. Weather in Action"
     items:
-      - title: "Req 10 — Choose Your Weather Project"
+      - title: "10. Choose Your Weather Project"
         url: "/merit-badges/weather/guide/req10/"
         is_sub: false
-      - title: "Req 10a — Build an Instrument and Keep a Log"
+      - title: "a Build an Instrument and Keep a Log"
         url: "/merit-badges/weather/guide/req10a/"
         is_sub: true
-      - title: "Req 10b — Visit a Weather Expert"
+      - title: "b Visit a Weather Expert"
         url: "/merit-badges/weather/guide/req10b/"
         is_sub: true
-      - title: "Req 11 — Teach Weather Safety"
+      - title: "11. Teach Weather Safety"
         url: "/merit-badges/weather/guide/req11/"
         is_sub: false
-      - title: "Req 12 — Careers in Meteorology"
+      - title: "12. Careers in Meteorology"
         url: "/merit-badges/weather/guide/req12/"
         is_sub: false
   - group_title: "Beyond the Badge"

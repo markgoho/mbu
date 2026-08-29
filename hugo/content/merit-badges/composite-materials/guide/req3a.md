@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Reinforcement Materials"
+title: "Reinforcement Materials"
 layout: guide
-group_title: "How Composites Are Made"
+group_title: "3. How Composites Are Made"
 req_number: "3a"
 prev: "/merit-badges/composite-materials/guide/req2b/"
-prev_title: "Req 2b — Composites vs. Traditional Materials"
+prev_title: "Composites vs. Traditional Materials"
 next: "/merit-badges/composite-materials/guide/req3b/"
-next_title: "Req 3b — Resins"
+next_title: "Resins"
 ---
 
 {{< drg/requirement number="3a" >}}

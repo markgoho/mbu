@@ -1,13 +1,13 @@
 ---
-title: "Req 7f — Build a Stamp Display"
+title: "Build a Stamp Display"
 layout: "guide"
-group_title: "Creative Projects"
+group_title: "7. Creative Projects"
 req_number: "7f"
 req_path: "7.f"
 prev: "/merit-badges/stamp-collecting/guide/req7e/"
-prev_title: "Req 7e — How Stamps Are Made"
+prev_title: "How Stamps Are Made"
 next: "/merit-badges/stamp-collecting/guide/req8/"
-next_title: "Req 8 — Choose Your Album Project"
+next_title: "Choose Your Album Project"
 ---
 
 {{< drg/requirement number="7f" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-d — Shotgun Gauges"
+title: "Shotgun Gauges"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-d"
 req_path: "2.A.d"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ac/"
-prev_title: "Req 2A-c — Parts of a Shotgun Shell"
+prev_title: "Parts of a Shotgun Shell"
 next: "/merit-badges/shotgun-shooting/guide/req2Ae/"
-next_title: "Req 2A-e — Misfires, Hangfires, and Squib Fires"
+next_title: "Misfires, Hangfires, and Squib Fires"
 ---
 
 {{< drg/requirement number="2A-d" >}}

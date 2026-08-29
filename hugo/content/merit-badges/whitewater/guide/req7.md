@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Match the Boat to the Water"
+title: "Match the Boat to the Water"
 layout: "guide"
-group_title: "Boats and Gear"
+group_title: "7. Boats and Gear"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/whitewater/guide/req6/"
-prev_title: "Req 6 — River Signals That Matter"
+prev_title: "River Signals That Matter"
 next: "/merit-badges/whitewater/guide/req7a/"
-next_title: "Req 7a — Whitewater Canoe Designs"
+next_title: "Whitewater Canoe Designs"
 ---
 
 {{< drg/requirement number="7" >}}

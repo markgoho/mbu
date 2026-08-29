@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Equipment Maintenance Tasks"
+title: "Equipment Maintenance Tasks"
 layout: guide
-group_title: "Equipment Service Maintenance"
+group_title: "4. Equipment Service Maintenance"
 req_number: "4"
 prev: "/merit-badges/farm-mechanics/guide/req3/"
-prev_title: "Req 3 — Tool Maintenance Skills"
+prev_title: "Tool Maintenance Skills"
 next: "/merit-badges/farm-mechanics/guide/req5/"
-next_title: "Req 5 — Interview an Implement Dealer"
+next_title: "Interview an Implement Dealer"
 ---
 
 {{< drg/requirement number="4" >}}

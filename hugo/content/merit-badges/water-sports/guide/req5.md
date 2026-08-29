@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Starts, Wakes, and Falls"
+title: "Starts, Wakes, and Falls"
 layout: "guide"
-group_title: "On-the-Water Skills"
+group_title: "4. On-the-Water Skills"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/water-sports/guide/req4/"
-prev_title: "Req 4 — Hand Signals That Keep You Safe"
+prev_title: "Hand Signals That Keep You Safe"
 next: "/merit-badges/water-sports/guide/req6/"
-next_title: "Req 6 — Fit and Recover Your Gear"
+next_title: "Fit and Recover Your Gear"
 ---
 
 {{< drg/requirement number="5" >}}

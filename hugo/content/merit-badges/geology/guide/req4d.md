@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Deep Time and Ancient Worlds"
+title: "Deep Time and Ancient Worlds"
 layout: guide
-group_title: "Earth History"
+group_title: "4. Earth History"
 req_number: "4d"
 prev: "/merit-badges/geology/guide/req4c5c/"
-prev_title: "Req 4c5c — Geology in Construction"
+prev_title: "Geology in Construction"
 next: "/merit-badges/geology/guide/req4d1/"
-next_title: "Req 4d1 — Geologic Time in Your Region"
+next_title: "Geologic Time in Your Region"
 ---
 
 {{< drg/requirement number="4" option="Earth History" >}}

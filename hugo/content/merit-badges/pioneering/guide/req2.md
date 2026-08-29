@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Core Rope Skills"
+title: "Core Rope Skills"
 layout: guide
-group_title: "Knots, Whippings & Lashings"
+group_title: "2. Knots, Whippings & Lashings"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/pioneering/guide/req1/"
-prev_title: "Req 1 — Safe Pioneering Basics"
+prev_title: "Safe Pioneering Basics"
 next: "/merit-badges/pioneering/guide/req3/"
-next_title: "Req 3 — Practical Camp Builds"
+next_title: "Practical Camp Builds"
 ---
 
 {{< drg/requirement number="2" >}}

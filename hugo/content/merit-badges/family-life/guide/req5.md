@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Family Project"
+title: "Family Project"
 layout: guide
-group_title: "Family Projects"
+group_title: "5. Family Projects"
 req_number: "5"
 prev: "/merit-badges/family-life/guide/req4/"
-prev_title: "Req 4 — Individual Home Project"
+prev_title: "Individual Home Project"
 next: "/merit-badges/family-life/guide/req6a/"
-next_title: "Req 6a — Planning Family Meetings"
+next_title: "Planning Family Meetings"
 ---
 
 {{< drg/requirement number="5" >}}

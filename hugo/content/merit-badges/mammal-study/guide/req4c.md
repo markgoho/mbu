@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Game Mammal Life History"
+title: "Game Mammal Life History"
 layout: "guide"
-group_title: "Mammal Investigation Options"
+group_title: "4. Mammal Investigation Options"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/mammal-study/guide/req4b/"
-prev_title: "Req 4b — Wildlife Photography Log"
+prev_title: "Wildlife Photography Log"
 next: "/merit-badges/mammal-study/guide/req4d/"
-next_title: "Req 4d — Tracking Pit Investigation"
+next_title: "Tracking Pit Investigation"
 ---
 
 {{< drg/requirement number="4c" >}}

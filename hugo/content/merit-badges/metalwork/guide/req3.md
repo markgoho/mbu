@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Hardening, Softening & Tempering"
+title: "Hardening, Softening & Tempering"
 layout: "guide"
-group_title: "Hands-On Fundamentals"
+group_title: "3. Hands-On Fundamentals"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/metalwork/guide/req2/"
-prev_title: "Req 2 — The Language of Metal"
+prev_title: "The Language of Metal"
 next: "/merit-badges/metalwork/guide/req4/"
-next_title: "Req 4 — Where Metal Takes You"
+next_title: "Where Metal Takes You"
 ---
 
 {{< drg/requirement number="3" >}}

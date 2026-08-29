@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Local Dog Laws"
+title: "Local Dog Laws"
 layout: guide
-group_title: "Community Connections"
+group_title: "8. Community Connections"
 req_number: "9"
 prev: "/merit-badges/dog-care/guide/req8/"
-prev_title: "Req 8 — Veterinary Hospital or Shelter Visit"
+prev_title: "Veterinary Hospital or Shelter Visit"
 next: "/merit-badges/dog-care/guide/req10/"
-next_title: "Req 10 — Careers or Hobbies"
+next_title: "Careers or Hobbies"
 ---
 
 {{< drg/requirement number="9" >}}

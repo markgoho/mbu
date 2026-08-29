@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Bird Feeders"
+title: "Bird Feeders"
 layout: guide
-group_title: "Hands-On Field Projects"
+group_title: "5. Hands-On Field Projects"
 req_number: "5b"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req5a/"
-prev_title: "Req 5a — Nest Boxes"
+prev_title: "Nest Boxes"
 next: "/merit-badges/fish-and-wildlife-management/guide/req5c/"
-next_title: "Req 5c — Habitat Improvement Project"
+next_title: "Habitat Improvement Project"
 ---
 
 {{< drg/requirement number="5b" >}}

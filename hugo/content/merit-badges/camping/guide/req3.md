@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Map & Navigation"
+title: "Map & Navigation"
 layout: guide
-group_title: "Navigation & Trip Planning"
+group_title: "3. Navigation & Trip Planning"
 req_number: "3"
 prev: "/merit-badges/camping/guide/req2/"
-prev_title: "Req 2 — Leave No Trace & Outdoor Code"
+prev_title: "Leave No Trace & Outdoor Code"
 next: "/merit-badges/camping/guide/req4/"
-next_title: "Req 4 — Duty Roster & Leadership"
+next_title: "Duty Roster & Leadership"
 ---
 
 {{< drg/requirement number="3" >}}

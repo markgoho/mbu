@@ -1,12 +1,12 @@
 ---
-title: "Req 8b — Vermicompost Bin Project"
+title: "Vermicompost Bin Project"
 layout: guide
-group_title: "Hands-On Garden Projects"
+group_title: "8. Hands-On Garden Projects"
 req_number: "8b"
 prev: "/merit-badges/gardening/guide/req8a/"
-prev_title: "Req 8a — Compost Bin Project"
+prev_title: "Compost Bin Project"
 next: "/merit-badges/gardening/guide/req8c/"
-next_title: "Req 8c — Hydroponic Garden Project"
+next_title: "Hydroponic Garden Project"
 ---
 
 {{< drg/requirement number="8b" >}}

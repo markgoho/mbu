@@ -1,10 +1,10 @@
 ---
-title: "Req 5d — Visiting a Leather Business"
+title: "Visiting a Leather Business"
 layout: guide
-group_title: "Exploring Leather Beyond the Bench"
+group_title: "5. Exploring Leather Beyond the Bench"
 req_number: "5d"
 prev: "/merit-badges/leatherwork/guide/req5c/"
-prev_title: "Req 5c — Care, Repair, and Comparison"
+prev_title: "Care, Repair, and Comparison"
 next: "/merit-badges/leatherwork/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

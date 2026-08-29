@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Cybersecurity Activities"
+title: "Cybersecurity Activities"
 layout: guide
-group_title: "Hands-On Challenge"
+group_title: "8. Hands-On Challenge"
 req_number: "8"
 prev: "/merit-badges/cybersecurity/guide/req7/"
-prev_title: "Req 7 — IoT Devices"
+prev_title: "IoT Devices"
 next: "/merit-badges/cybersecurity/guide/req9/"
-next_title: "Req 9 — Careers"
+next_title: "Careers"
 ---
 
 {{< drg/requirement number="8" >}}

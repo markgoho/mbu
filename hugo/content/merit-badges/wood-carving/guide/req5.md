@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choosing the Right Wood"
+title: "Choosing the Right Wood"
 layout: "guide"
-group_title: "Choosing and Building Projects"
+group_title: "5. Choosing and Building Projects"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/wood-carving/guide/req4/"
-prev_title: "Req 4 — Practice the Basic Cuts"
+prev_title: "Practice the Basic Cuts"
 next: "/merit-badges/wood-carving/guide/req6/"
-next_title: "Req 6 — Carving in the Round"
+next_title: "Carving in the Round"
 ---
 
 {{< drg/requirement number="5" >}}

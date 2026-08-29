@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Debating Labor Issues"
+title: "Debating Labor Issues"
 layout: guide
-group_title: "Critical Thinking"
+group_title: "7. Critical Thinking"
 req_number: "7"
 prev: "/merit-badges/american-labor/guide/req6/"
-prev_title: "Req 6 — Globalization"
+prev_title: "Globalization"
 next: "/merit-badges/american-labor/guide/req8/"
-next_title: "Req 8 — Stakeholder Goals"
+next_title: "Stakeholder Goals"
 ---
 
 {{< drg/requirement number="7" >}}

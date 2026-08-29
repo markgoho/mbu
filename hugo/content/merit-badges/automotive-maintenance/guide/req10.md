@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Brakes"
+title: "Brakes"
 layout: guide
-group_title: "Brake System"
+group_title: "10. Brake System"
 req_number: "10"
 prev: "/merit-badges/automotive-maintenance/guide/req9c/"
-prev_title: "Req 9c — Fluids & Drive Configurations"
+prev_title: "Fluids & Drive Configurations"
 next: "/merit-badges/automotive-maintenance/guide/req11/"
-next_title: "Req 11 — Choose Two Projects"
+next_title: "Choose Two Projects"
 ---
 
 {{< drg/requirement number="10a" >}}

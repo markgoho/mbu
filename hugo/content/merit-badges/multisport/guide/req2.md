@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Physical Readiness and Nutrition"
+title: "Physical Readiness and Nutrition"
 layout: "guide"
-group_title: "Train Like an Athlete"
+group_title: "2. Train Like an Athlete"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/multisport/guide/req1/"
-prev_title: "Req 1 — Hazards and First Aid"
+prev_title: "Hazards and First Aid"
 next: "/merit-badges/multisport/guide/req3/"
-next_title: "Req 3 — Picking Your Event"
+next_title: "Picking Your Event"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Technology in Competitive Gaming"
+title: "Technology in Competitive Gaming"
 layout: "guide"
-group_title: "Gaming Technology"
+group_title: "5. Gaming Technology"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/competitive-gaming/guide/req4/"
-prev_title: "Req 4 — Gamer Safety and Community Connection"
+prev_title: "Gamer Safety and Community Connection"
 next: "/merit-badges/competitive-gaming/guide/req6/"
-next_title: "Req 6 — Leadership and Service in Competitive Gaming"
+next_title: "Leadership and Service in Competitive Gaming"
 ---
 
 {{< drg/requirement number="5" >}}

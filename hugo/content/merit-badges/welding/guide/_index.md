@@ -4,46 +4,46 @@ layout: "guide"
 badge_name: "Welding"
 group_title: "Getting Started"
 next: "/merit-badges/welding/guide/req1/"
-next_title: "Req 1 — Welding Hazards and First Aid"
+next_title: "Welding Hazards and First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/welding/guide/"
         is_sub: false
-  - group_title: "Safe Starts"
+  - group_title: "1. Safe Starts"
     items:
-      - title: "Req 1 — Welding Hazards and First Aid"
+      - title: "1. Welding Hazards and First Aid"
         url: "/merit-badges/welding/guide/req1/"
         is_sub: false
-  - group_title: "Gear and Shop Readiness"
+  - group_title: "2. Gear and Shop Readiness"
     items:
-      - title: "Req 2 — Safety Gear, SDS, and Equipment Care"
+      - title: "2. Safety Gear, SDS, and Equipment Care"
         url: "/merit-badges/welding/guide/req2/"
         is_sub: false
-  - group_title: "How Welding Works"
+  - group_title: "3. How Welding Works"
     items:
-      - title: "Req 3 — Welding Terms and Process Basics"
+      - title: "3. Welding Terms and Process Basics"
         url: "/merit-badges/welding/guide/req3/"
         is_sub: false
-  - group_title: "Cutting Metal"
+  - group_title: "4. Cutting Metal"
     items:
-      - title: "Req 4 — Mechanical and Thermal Cutting"
+      - title: "4. Mechanical and Thermal Cutting"
         url: "/merit-badges/welding/guide/req4/"
         is_sub: false
-  - group_title: "Choosing a Process"
+  - group_title: "5. Choosing a Process"
     items:
-      - title: "Req 5 — Process Selection and Setup"
+      - title: "5. Process Selection and Setup"
         url: "/merit-badges/welding/guide/req5/"
         is_sub: false
-  - group_title: "Hands-On Welds"
+  - group_title: "6. Hands-On Welds"
     items:
-      - title: "Req 6 — Beads and Basic Joints"
+      - title: "6. Beads and Basic Joints"
         url: "/merit-badges/welding/guide/req6/"
         is_sub: false
-  - group_title: "Where Welding Can Take You"
+  - group_title: "7. Where Welding Can Take You"
     items:
-      - title: "Req 7 — Careers and the American Welding Society"
+      - title: "7. Careers and the American Welding Society"
         url: "/merit-badges/welding/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

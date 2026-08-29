@@ -4,56 +4,56 @@ layout: guide
 badge_name: "Archaeology"
 group_title: "Getting Started"
 next: "/merit-badges/archaeology/guide/req1/"
-next_title: "Req 1 — What Is Archaeology?"
+next_title: "What Is Archaeology?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/archaeology/guide/"
-  - group_title: "Understanding Archaeology"
+  - group_title: "1. Understanding Archaeology"
     items:
-      - title: "Req 1 — What Is Archaeology?"
+      - title: "1. What Is Archaeology?"
         url: "/merit-badges/archaeology/guide/req1/"
         is_sub: false
-      - title: "Req 2 — The Archaeological Process"
+      - title: "2. The Archaeological Process"
         url: "/merit-badges/archaeology/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Dating the Past"
+      - title: "3. Dating the Past"
         url: "/merit-badges/archaeology/guide/req3/"
         is_sub: false
-  - group_title: "Exploring Famous Sites"
+  - group_title: "4. Exploring Famous Sites"
     items:
-      - title: "Req 4a — Researching Archaeological Sites"
+      - title: "a Researching Archaeological Sites"
         url: "/merit-badges/archaeology/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Presenting Your Findings"
+      - title: "b Presenting Your Findings"
         url: "/merit-badges/archaeology/guide/req4b/"
         is_sub: true
-  - group_title: "Protecting the Past"
+  - group_title: "5. Protecting the Past"
     items:
-      - title: "Req 5 — Laws That Protect Sites"
+      - title: "5. Laws That Protect Sites"
         url: "/merit-badges/archaeology/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Being a Steward"
+      - title: "6. Being a Steward"
         url: "/merit-badges/archaeology/guide/req6/"
         is_sub: false
-  - group_title: "Artifacts in Action"
+  - group_title: "7. Artifacts in Action"
     items:
-      - title: "Req 7 — Artifacts Tell Stories"
+      - title: "7. Artifacts Tell Stories"
         url: "/merit-badges/archaeology/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Local History Research"
+      - title: "8. Local History Research"
         url: "/merit-badges/archaeology/guide/req8/"
         is_sub: false
-  - group_title: "The Working Archaeologist"
+  - group_title: "9. The Working Archaeologist"
     items:
-      - title: "Req 9 — Careers in Archaeology"
+      - title: "9. Careers in Archaeology"
         url: "/merit-badges/archaeology/guide/req9/"
         is_sub: false
-      - title: "Req 10 — Fieldwork Experience"
+      - title: "10. Fieldwork Experience"
         url: "/merit-badges/archaeology/guide/req10/"
         is_sub: false
-      - title: "Req 11 — Sharing Archaeology"
+      - title: "11. Sharing Archaeology"
         url: "/merit-badges/archaeology/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

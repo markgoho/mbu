@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Long Jump or High Jump"
+title: "Long Jump or High Jump"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5c"
 prev: "/merit-badges/athletics/guide/req5-long-distance-running/"
-prev_title: "Req 5b — Long-Distance Running"
+prev_title: "Long-Distance Running"
 next: "/merit-badges/athletics/guide/req5-swimming/"
-next_title: "Req 5d — Swimming"
+next_title: "Swimming"
 ---
 
 {{< drg/requirement number="5" option="Option C—Long Jump OR High Jump" >}}

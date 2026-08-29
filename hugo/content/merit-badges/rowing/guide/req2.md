@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Swimmer Test Readiness"
+title: "Swimmer Test Readiness"
 layout: "guide"
-group_title: "Water Readiness"
+group_title: "2. Water Readiness"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/rowing/guide/req1/"
-prev_title: "Req 1 — Hazards, Injuries & Safety Afloat"
+prev_title: "Hazards, Injuries & Safety Afloat"
 next: "/merit-badges/rowing/guide/req3/"
-next_title: "Req 3 — Life Jacket Choice and Fit"
+next_title: "Life Jacket Choice and Fit"
 ---
 
 {{< drg/requirement number="2" >}}

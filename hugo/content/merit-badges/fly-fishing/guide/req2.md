@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Balanced Fly Tackle"
+title: "Balanced Fly Tackle"
 layout: guide
-group_title: "Gear & Rigging"
+group_title: "2. Gear & Rigging"
 req_number: "2"
 prev: "/merit-badges/fly-fishing/guide/req1c/"
-prev_title: "Req 1c — Removing a Hook Safely"
+prev_title: "Removing a Hook Safely"
 next: "/merit-badges/fly-fishing/guide/req3a/"
-next_title: "Req 3a — Backing to the Reel"
+next_title: "Backing to the Reel"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — How Freight Moves"
+title: "How Freight Moves"
 layout: "guide"
-group_title: "Commerce and Supply Chains"
+group_title: "2. Commerce and Supply Chains"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/truck-transportation/guide/req1/"
-prev_title: "Req 1 — Truck Lines in Your Town"
+prev_title: "Truck Lines in Your Town"
 next: "/merit-badges/truck-transportation/guide/req3/"
-next_title: "Req 3 — Gasoline vs. Diesel"
+next_title: "Gasoline vs. Diesel"
 ---
 
 {{< drg/requirement number="2" >}}

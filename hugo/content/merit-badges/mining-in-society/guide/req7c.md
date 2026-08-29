@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Recycling and Resource Recovery"
+title: "Recycling and Resource Recovery"
 layout: "guide"
-group_title: "Recycling and Resource Recovery"
+group_title: "7. Recycling and Resource Recovery"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/mining-in-society/guide/req7b/"
-prev_title: "Req 7b — Mining the Oceans"
+prev_title: "Mining the Oceans"
 next: "/merit-badges/mining-in-society/guide/req7d/"
-next_title: "Req 7d — Commodity Prices and Trends"
+next_title: "Commodity Prices and Trends"
 ---
 
 {{< drg/requirement number="7c" >}}

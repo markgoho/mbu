@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Map Soils with a Survey Report"
+title: "Map Soils with a Survey Report"
 layout: "guide"
-group_title: "Local Problem Solving"
+group_title: "7. Local Problem Solving"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7c/"
-prev_title: "Req 7c — Seed a Conservation Plot"
+prev_title: "Seed a Conservation Plot"
 next: "/merit-badges/soil-and-water-conservation/guide/req7e/"
-next_title: "Req 7e — Find and Fix Local Problems"
+next_title: "Find and Fix Local Problems"
 ---
 
 {{< drg/requirement number="7d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-c — Parts of a Shotgun Shell"
+title: "Parts of a Shotgun Shell"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-c"
 req_path: "2.A.c"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ab/"
-prev_title: "Req 2A-b — Safe Storage and Handling"
+prev_title: "Safe Storage and Handling"
 next: "/merit-badges/shotgun-shooting/guide/req2Ad/"
-next_title: "Req 2A-d — Shotgun Gauges"
+next_title: "Shotgun Gauges"
 ---
 
 {{< drg/requirement number="2A-c" >}}

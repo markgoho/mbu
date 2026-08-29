@@ -1,11 +1,11 @@
 ---
-title: "Req 7 — Relief or Chip Carving"
+title: "Relief or Chip Carving"
 layout: "guide"
-group_title: "Choosing and Building Projects"
+group_title: "5. Choosing and Building Projects"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/wood-carving/guide/req6/"
-prev_title: "Req 6 — Carving in the Round"
+prev_title: "Carving in the Round"
 next: "/merit-badges/wood-carving/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Photojournalism Storytelling"
+title: "Photojournalism Storytelling"
 layout: guide
-group_title: "Covering Live Events"
+group_title: "4. Covering Live Events"
 req_number: "4c"
 prev: "/merit-badges/journalism/guide/req4b/"
-prev_title: "Req 4b — Broadcast Scripts and Reviews"
+prev_title: "Broadcast Scripts and Reviews"
 next: "/merit-badges/journalism/guide/req5/"
-next_title: "Req 5 — Journalism Careers"
+next_title: "Journalism Careers"
 ---
 
 {{< drg/requirement number="4c" >}}

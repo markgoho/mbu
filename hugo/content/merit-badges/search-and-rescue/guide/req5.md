@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Who Does What on SAR Teams"
+title: "Who Does What on SAR Teams"
 layout: "guide"
-group_title: "How Search Missions Work"
+group_title: "4. How Search Missions Work"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/search-and-rescue/guide/req4/"
-prev_title: "Req 4 — How the Command System Works"
+prev_title: "How the Command System Works"
 next: "/merit-badges/search-and-rescue/guide/req6/"
-next_title: "Req 6 — Choose Four Search Procedure Skills"
+next_title: "Choose Four Search Procedure Skills"
 ---
 
 {{< drg/requirement number="5" >}}

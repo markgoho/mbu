@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — The Language of Metal"
+title: "The Language of Metal"
 layout: "guide"
-group_title: "Safety & Vocabulary"
+group_title: "1. Safety & Vocabulary"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/metalwork/guide/req1/"
-prev_title: "Req 1 — Safety First"
+prev_title: "Safety First"
 next: "/merit-badges/metalwork/guide/req3/"
-next_title: "Req 3 — Hardening, Softening & Tempering"
+next_title: "Hardening, Softening & Tempering"
 ---
 
 {{< drg/requirement number="2" >}}

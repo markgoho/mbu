@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Bias, Privacy & Decisions"
+title: "Bias, Privacy & Decisions"
 layout: guide
-group_title: "Ethics in AI"
+group_title: "4. Ethics in AI"
 req_number: "4a"
 prev: "/merit-badges/artificial-intelligence/guide/req3e/"
-prev_title: "Req 3e — Automation Timeline"
+prev_title: "Automation Timeline"
 next: "/merit-badges/artificial-intelligence/guide/req4b/"
-next_title: "Req 4b — What Would You Do?"
+next_title: "What Would You Do?"
 ---
 
 {{< drg/requirement number="4a" >}}

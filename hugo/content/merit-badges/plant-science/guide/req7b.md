@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Plant Science as a Hobby"
+title: "Plant Science as a Hobby"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/plant-science/guide/req7a/"
-prev_title: "Req 7a — Exploring Plant Science Careers"
+prev_title: "Exploring Plant Science Careers"
 next: "/merit-badges/plant-science/guide/req8/"
-next_title: "Req 8 — Choose a Plant Science Track"
+next_title: "Choose a Plant Science Track"
 ---
 
 {{< drg/requirement number="7b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Installing a Light Switch"
+title: "Installing a Light Switch"
 layout: guide
-group_title: "Electrical Basics"
+group_title: "4. Electrical Basics"
 req_number: "4c"
 prev: "/merit-badges/home-repairs/guide/req4b/"
-prev_title: "Req 4b — Cords, Plugs, and Sockets"
+prev_title: "Cords, Plugs, and Sockets"
 next: "/merit-badges/home-repairs/guide/req4d/"
-next_title: "Req 4d — Replacing an Outlet"
+next_title: "Replacing an Outlet"
 ---
 
 {{< drg/requirement number="4c" >}}

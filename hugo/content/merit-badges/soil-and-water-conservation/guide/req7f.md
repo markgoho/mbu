@@ -1,11 +1,11 @@
 ---
-title: "Req 7f — Design Your Own Conservation Project"
+title: "Design Your Own Conservation Project"
 layout: "guide"
-group_title: "Local Problem Solving"
+group_title: "7. Local Problem Solving"
 req_number: "7f"
 req_path: "7.f"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7e/"
-prev_title: "Req 7e — Find and Fix Local Problems"
+prev_title: "Find and Fix Local Problems"
 next: "/merit-badges/soil-and-water-conservation/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

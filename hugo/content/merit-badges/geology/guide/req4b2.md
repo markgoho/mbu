@@ -1,12 +1,12 @@
 ---
-title: "Req 4b2 — Source, Trap, and Reservoir"
+title: "Source, Trap, and Reservoir"
 layout: guide
-group_title: "Energy Resources"
+group_title: "4. Energy Resources"
 req_number: "4b2"
 prev: "/merit-badges/geology/guide/req4b1/"
-prev_title: "Req 4b1 — Power Sources in the United States"
+prev_title: "Power Sources in the United States"
 next: "/merit-badges/geology/guide/req4b3/"
-next_title: "Req 4b3 — Tools for Finding Oil and Gas"
+next_title: "Tools for Finding Oil and Gas"
 ---
 
 {{< drg/requirement number="4b2" >}}

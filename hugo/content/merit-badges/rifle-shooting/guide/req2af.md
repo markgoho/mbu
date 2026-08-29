@@ -1,13 +1,13 @@
 ---
-title: "Req 2af — Range Procedures and Commands"
+title: "Range Procedures and Commands"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2af"
 req_path: "2.a.f"
 prev: "/merit-badges/rifle-shooting/guide/req2ae/"
-prev_title: "Req 2ae — The Five Fundamentals of Shooting"
+prev_title: "The Five Fundamentals of Shooting"
 next: "/merit-badges/rifle-shooting/guide/req2ag/"
-next_title: "Req 2ag — Cleaning Safety Rules and Materials"
+next_title: "Cleaning Safety Rules and Materials"
 ---
 
 {{< drg/requirement number="2af" >}}

@@ -4,52 +4,52 @@ layout: guide
 badge_name: "Electronics"
 group_title: "Getting Started"
 next: "/merit-badges/electronics/guide/req1/"
-next_title: "Req 1 — Safety Precautions"
+next_title: "Safety Precautions"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/electronics/guide/"
-  - group_title: "Electrical Safety"
+  - group_title: "1. Electrical Safety"
     items:
-      - title: "Req 1 — Safety Precautions"
+      - title: "1. Safety Precautions"
         url: "/merit-badges/electronics/guide/req1/"
-  - group_title: "Schematic Diagrams"
+  - group_title: "2. Schematic Diagrams"
     items:
-      - title: "Req 2 — Reading & Drawing Schematics"
+      - title: "2. Reading & Drawing Schematics"
         url: "/merit-badges/electronics/guide/req2/"
-  - group_title: "Soldering Skills"
+  - group_title: "3. Soldering Skills"
     items:
-      - title: "Req 3 — Soldering Techniques"
+      - title: "3. Soldering Techniques"
         url: "/merit-badges/electronics/guide/req3/"
-  - group_title: "Circuits & Digital Logic"
+  - group_title: "4. Circuits & Digital Logic"
     items:
-      - title: "Req 4a — Control, Logic & Analog"
+      - title: "a Control, Logic & Analog"
         url: "/merit-badges/electronics/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Binary & Decimal Conversion"
+      - title: "b Binary & Decimal Conversion"
         url: "/merit-badges/electronics/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Build a Circuit Project"
+      - title: "c Build a Circuit Project"
         url: "/merit-badges/electronics/guide/req4c/"
         is_sub: true
-  - group_title: "Measurement & Components"
+  - group_title: "5. Measurement & Components"
     items:
-      - title: "Req 5a — Ohm's Law"
+      - title: "a Ohm"
         url: "/merit-badges/electronics/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Test Equipment"
+      - title: "b Test Equipment"
         url: "/merit-badges/electronics/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Resistor Color Codes"
+      - title: "c Resistor Color Codes"
         url: "/merit-badges/electronics/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Through Hole vs. Surface Mount"
+      - title: "d Through Hole vs. Surface Mount"
         url: "/merit-badges/electronics/guide/req5d/"
         is_sub: true
-  - group_title: "Electronics Careers"
+  - group_title: "6. Electronics Careers"
     items:
-      - title: "Req 6 — Career Exploration"
+      - title: "6. Career Exploration"
         url: "/merit-badges/electronics/guide/req6/"
   - group_title: "Beyond the Badge"
     items:

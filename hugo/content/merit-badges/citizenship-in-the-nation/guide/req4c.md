@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — E Pluribus Unum"
+title: "E Pluribus Unum"
 layout: guide
-group_title: "Founding Documents & Ideals"
+group_title: "4. Founding Documents & Ideals"
 req_number: "4c"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req4b/"
-prev_title: "Req 4b — Bill of Rights & 14th Amendment"
+prev_title: "Bill of Rights & 14th Amendment"
 next: "/merit-badges/citizenship-in-the-nation/guide/req5/"
-next_title: "Req 5 — Following the News"
+next_title: "Following the News"
 ---
 
 {{< drg/requirement number="4c" >}}

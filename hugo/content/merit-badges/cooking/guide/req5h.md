@@ -1,12 +1,12 @@
 ---
-title: "Req 5h — Leave No Trace"
+title: "Leave No Trace"
 layout: guide
-group_title: "Camp Cooking"
+group_title: "5. Camp Cooking"
 req_number: "5h"
 prev: "/merit-badges/cooking/guide/req5g/"
-prev_title: "Req 5g — Cleanup & Storage"
+prev_title: "Cleanup & Storage"
 next: "/merit-badges/cooking/guide/req6a/"
-next_title: "Req 6a — Trail Menu Planning"
+next_title: "Trail Menu Planning"
 ---
 
 {{< drg/requirement number="5h" >}}

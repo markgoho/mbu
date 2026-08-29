@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Safe Swim Defense"
+title: "Safe Swim Defense"
 layout: guide
-group_title: "Water Safety Fundamentals"
+group_title: "1. Water Safety Fundamentals"
 req_number: "1a"
 prev: "/merit-badges/swimming/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/swimming/guide/req1b/"
-next_title: "Req 1b — Health Concerns"
+next_title: "Health Concerns"
 ---
 
 {{< drg/requirement number="1a" >}}

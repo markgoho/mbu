@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Safety Equipment & Clothing"
+title: "Safety Equipment & Clothing"
 layout: guide
-group_title: "Safety & Registration"
+group_title: "1. Safety & Registration"
 req_number: "1b"
 prev: "/merit-badges/automotive-maintenance/guide/req1a/"
-prev_title: "Req 1a — Shop Safety Hazards"
+prev_title: "Shop Safety Hazards"
 next: "/merit-badges/automotive-maintenance/guide/req1c/"
-next_title: "Req 1c — Vehicle Power Types"
+next_title: "Vehicle Power Types"
 ---
 
 {{< drg/requirement number="1b" >}}

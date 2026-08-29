@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Whistle Commands"
+title: "Whistle Commands"
 layout: guide
-group_title: "Safety on the Range"
+group_title: "1. Safety on the Range"
 req_number: "1c"
 prev: "/merit-badges/archery/guide/req1b/"
-prev_title: "Req 1b — Range Safety Rules"
+prev_title: "Range Safety Rules"
 next: "/merit-badges/archery/guide/req1d/"
-next_title: "Req 1d — Retrieving Arrows"
+next_title: "Retrieving Arrows"
 ---
 
 {{< drg/requirement number="1c" >}}

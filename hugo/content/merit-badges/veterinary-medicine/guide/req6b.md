@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — Shadow a Public-Service Veterinarian"
+title: "Shadow a Public-Service Veterinarian"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/veterinary-medicine/guide/req6a/"
-prev_title: "Req 6a — Observe a Veterinary Facility"
+prev_title: "Observe a Veterinary Facility"
 next: "/merit-badges/veterinary-medicine/guide/req7/"
-next_title: "Req 7 — Choose a Career Reflection"
+next_title: "Choose a Career Reflection"
 ---
 
 {{< drg/requirement number="6b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 12 — Escape Techniques"
+title: "Escape Techniques"
 layout: guide
-group_title: "Swimming Rescues (Conscious)"
+group_title: "8. Swimming Rescues (Conscious)"
 req_number: "12"
 prev: "/merit-badges/lifesaving/guide/req11/"
-prev_title: "Req 11 — Contact Tows"
+prev_title: "Contact Tows"
 next: "/merit-badges/lifesaving/guide/req13/"
-next_title: "Req 13 — Unconscious Rescue"
+next_title: "Unconscious Rescue"
 ---
 
 {{< drg/requirement number="12" >}}

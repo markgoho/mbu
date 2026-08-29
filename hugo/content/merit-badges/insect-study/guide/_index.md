@@ -4,77 +4,77 @@ layout: guide
 badge_name: "Insect Study"
 group_title: "Getting Started"
 next: "/merit-badges/insect-study/guide/req1/"
-next_title: "Req 1 — Ants, Bees, and Field Safety"
+next_title: "Ants, Bees, and Field Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/insect-study/guide/"
         is_sub: false
-  - group_title: "Ants, Bees, and Field Safety"
+  - group_title: "1. Ants, Bees, and Field Safety"
     items:
-      - title: "Req 1 — Ants, Bees, and Field Safety"
+      - title: "1. Ants, Bees, and Field Safety"
         url: "/merit-badges/insect-study/guide/req1/"
         is_sub: false
-  - group_title: "Body Plans and Identification"
+  - group_title: "2. Body Plans and Identification"
     items:
-      - title: "Req 2 — Insect Anatomy and Orders"
+      - title: "2. Insect Anatomy and Orders"
         url: "/merit-badges/insect-study/guide/req2/"
         is_sub: false
-  - group_title: "Metamorphosis in Action"
+  - group_title: "3. Metamorphosis in Action"
     items:
-      - title: "Req 3 — Life Cycles and Rearing"
+      - title: "3. Life Cycles and Rearing"
         url: "/merit-badges/insect-study/guide/req3/"
         is_sub: false
-  - group_title: "Field Observation and Records"
+  - group_title: "4. Field Observation and Records"
     items:
-      - title: "Req 4 — Observe, Record, and Interpret"
+      - title: "4. Observe, Record, and Interpret"
         url: "/merit-badges/insect-study/guide/req4/"
         is_sub: false
-  - group_title: "Social Insect Basics"
+  - group_title: "5. Social Insect Basics"
     items:
-      - title: "Req 5a — Social vs. Solitary Insects"
+      - title: "a Social vs. Solitary Insects"
         url: "/merit-badges/insect-study/guide/req5a/"
         is_sub: true
-  - group_title: "Choosing a Colony Study"
+  - group_title: "5. Choosing a Colony Study"
     items:
-      - title: "Req 5b — Pick Your Colony Project"
+      - title: "b Pick Your Colony Project"
         url: "/merit-badges/insect-study/guide/req5b/"
         is_sub: false
-      - title: "Req 5b1 — Inside an Ant Colony"
+      - title: "b Inside an Ant Colony"
         url: "/merit-badges/insect-study/guide/req5b1/"
         is_sub: true
-      - title: "Req 5b2 — Reading a Bee Hive"
+      - title: "b Reading a Bee Hive"
         url: "/merit-badges/insect-study/guide/req5b2/"
         is_sub: true
-  - group_title: "Food Webs and Pollination"
+  - group_title: "6. Food Webs and Pollination"
     items:
-      - title: "Req 6 — Insects in Ecosystems"
+      - title: "6. Insects in Ecosystems"
         url: "/merit-badges/insect-study/guide/req6/"
         is_sub: false
-  - group_title: "Agriculture and Human Impact"
+  - group_title: "7. Agriculture and Human Impact"
     items:
-      - title: "Req 7 — Bees, Crops, and Pest Control"
+      - title: "7. Bees, Crops, and Pest Control"
         url: "/merit-badges/insect-study/guide/req7/"
         is_sub: false
-  - group_title: "Protecting Insect Species"
+  - group_title: "8. Protecting Insect Species"
     items:
-      - title: "Req 8 — Migration and Conservation"
+      - title: "8. Migration and Conservation"
         url: "/merit-badges/insect-study/guide/req8/"
         is_sub: false
-  - group_title: "Future Paths in Insect Study"
+  - group_title: "9. Future Paths in Insect Study"
     items:
-      - title: "Req 9 — Careers or Hobbies"
+      - title: "9. Careers or Hobbies"
         url: "/merit-badges/insect-study/guide/req9/"
         is_sub: false
-  - group_title: "Career Exploration"
+  - group_title: "9. Career Exploration"
     items:
-      - title: "Req 9a — Research an Insect Study Career"
+      - title: "a Research an Insect Study Career"
         url: "/merit-badges/insect-study/guide/req9a/"
         is_sub: true
-  - group_title: "Hobby Exploration"
+  - group_title: "9. Hobby Exploration"
     items:
-      - title: "Req 9b — Turn Insect Study into a Hobby"
+      - title: "b Turn Insect Study into a Hobby"
         url: "/merit-badges/insect-study/guide/req9b/"
         is_sub: true
   - group_title: "Beyond the Badge"

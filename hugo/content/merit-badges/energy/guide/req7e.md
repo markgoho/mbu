@@ -1,13 +1,13 @@
 ---
-title: "Req 7e — Geothermal Power"
+title: "Geothermal Power"
 layout: "guide"
-group_title: "Geothermal"
+group_title: "7. Geothermal"
 req_number: "7e"
 req_path: "7.e"
 prev: "/merit-badges/energy/guide/req7d/"
-prev_title: "Req 7d — Fuel Cells"
+prev_title: "Fuel Cells"
 next: "/merit-badges/energy/guide/req7f/"
-next_title: "Req 7f — Nuclear Power"
+next_title: "Nuclear Power"
 ---
 
 {{< drg/inherited-requirement number="7e" req_path="7.e" topic="Geothermal power plants" />}}

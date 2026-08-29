@@ -1,12 +1,12 @@
 ---
-title: "Req 3g — Fence Repair"
+title: "Fence Repair"
 layout: guide
-group_title: "Workshop Projects"
+group_title: "3. Workshop Projects"
 req_number: "3g"
 prev: "/merit-badges/home-repairs/guide/req3f/"
-prev_title: "Req 3f — Repairing Steps and Railings"
+prev_title: "Repairing Steps and Railings"
 next: "/merit-badges/home-repairs/guide/req4/"
-next_title: "Req 4 — Safe Electrical Repairs"
+next_title: "Safe Electrical Repairs"
 ---
 
 {{< drg/requirement number="3g" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Financial Statements"
+title: "Financial Statements"
 layout: guide
-group_title: "Money & Finance"
+group_title: "2. Money & Finance"
 req_number: "2a"
 prev: "/merit-badges/american-business/guide/req1e/"
-prev_title: "Req 1e — Business & the Economy"
+prev_title: "Business & the Economy"
 next: "/merit-badges/american-business/guide/req2b/"
-next_title: "Req 2b — Interest, Taxes & Spending"
+next_title: "Interest, Taxes & Spending"
 ---
 
 {{< drg/requirement number="2a" >}}

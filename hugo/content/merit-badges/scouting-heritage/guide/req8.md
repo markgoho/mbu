@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Interview Former Scouts"
+title: "Interview Former Scouts"
 layout: "guide"
-group_title: "Your Scouting Story"
+group_title: "5. Your Scouting Story"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/scouting-heritage/guide/req7/"
-prev_title: "Req 7 — Old-Time Scouting Game"
+prev_title: "Recreate an Old-Time Scout Game"
 next: "/merit-badges/scouting-heritage/guide/req9/"
-next_title: "Req 9 — Choose a Career Path"
+next_title: "Choose Careers or Volunteer Service"
 ---
 
 {{< drg/requirement number="8" >}}

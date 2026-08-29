@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Chemistry"
 group_title: "Getting Started"
 next: "/merit-badges/chemistry/guide/req1a/"
-next_title: "Req 1a — Safety Data Sheets"
+next_title: "Safety Data Sheets"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/chemistry/guide/"
-  - group_title: "Chemical Safety"
+  - group_title: "1. Chemical Safety"
     items:
-      - title: "Req 1a — Safety Data Sheets"
+      - title: "a Safety Data Sheets"
         url: "/merit-badges/chemistry/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Personal Protective Equipment"
+      - title: "b Personal Protective Equipment"
         url: "/merit-badges/chemistry/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Safety Pictograms"
+      - title: "c Safety Pictograms"
         url: "/merit-badges/chemistry/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Chemical Storage"
+      - title: "d Chemical Storage"
         url: "/merit-badges/chemistry/guide/req1d/"
         is_sub: true
-  - group_title: "Chemistry & First Aid"
+  - group_title: "2. Chemistry & First Aid"
     items:
-      - title: "Req 2a — Soap & Alcohol"
+      - title: "a Soap & Alcohol"
         url: "/merit-badges/chemistry/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — How Soap Works"
+      - title: "b How Soap Works"
         url: "/merit-badges/chemistry/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Alcohol & Microbes"
+      - title: "c Alcohol & Microbes"
         url: "/merit-badges/chemistry/guide/req2c/"
         is_sub: true
-  - group_title: "Chemistry & Cooking"
+  - group_title: "3. Chemistry & Cooking"
     items:
-      - title: "Req 3a — The Maillard Reaction"
+      - title: "a The Maillard Reaction"
         url: "/merit-badges/chemistry/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — pH & Indicators"
+      - title: "b pH & Indicators"
         url: "/merit-badges/chemistry/guide/req3b/"
         is_sub: true
-  - group_title: "Chemistry & Camping"
+  - group_title: "4. Chemistry & Camping"
     items:
-      - title: "Req 4 — Camping Chemistry"
+      - title: "4. Camping Chemistry"
         url: "/merit-badges/chemistry/guide/req4/"
         is_sub: false
-  - group_title: "Chemistry & the Environment"
+  - group_title: "5. Chemistry & the Environment"
     items:
-      - title: "Req 5 — Reducing Environmental Impact"
+      - title: "5. Reducing Environmental Impact"
         url: "/merit-badges/chemistry/guide/req5/"
         is_sub: false
-  - group_title: "Fields of Chemistry"
+  - group_title: "6. Fields of Chemistry"
     items:
-      - title: "Req 6 — Five Fields of Chemistry"
+      - title: "6. Five Fields of Chemistry"
         url: "/merit-badges/chemistry/guide/req6/"
         is_sub: false
-  - group_title: "Government & Regulation"
+  - group_title: "7. Government & Regulation"
     items:
-      - title: "Req 7 — Government Agencies"
+      - title: "7. Government Agencies"
         url: "/merit-badges/chemistry/guide/req7/"
         is_sub: false
-  - group_title: "Chemistry Careers"
+  - group_title: "8. Chemistry Careers"
     items:
-      - title: "Req 8 — Career Exploration"
+      - title: "8. Career Exploration"
         url: "/merit-badges/chemistry/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

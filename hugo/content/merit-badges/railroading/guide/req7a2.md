@@ -1,13 +1,13 @@
 ---
-title: "Req 7a2 — Build a Rolling Stock Kit"
+title: "Build a Rolling Stock Kit"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a2"
 req_path: "7.a.2"
 prev: "/merit-badges/railroading/guide/req7a1/"
-prev_title: "Req 7a1 — Plan a Layout"
+prev_title: "Plan a Layout"
 next: "/merit-badges/railroading/guide/req7a3/"
-next_title: "Req 7a3 — Scales and Gauges"
+next_title: "Scales and Gauges"
 ---
 
 {{< drg/requirement number="7a2" >}}

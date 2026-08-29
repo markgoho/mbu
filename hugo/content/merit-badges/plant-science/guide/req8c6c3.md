@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6c3 — Recording a Nested Plot Inventory"
+title: "Recording a Nested Plot Inventory"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6c3"
 req_path: "8.c.6.c.3"
 prev: "/merit-badges/plant-science/guide/req8c6c2/"
-prev_title: "Req 8c6c2 — Marking Off Nested Plots"
+prev_title: "Mark Off Plots"
 next: "/merit-badges/plant-science/guide/req8c6d/"
-next_title: "Req 8c6d — Visiting an Herbarium"
+next_title: "Herbarium Visit"
 ---
 
 {{< drg/requirement number="8c6c3" >}}

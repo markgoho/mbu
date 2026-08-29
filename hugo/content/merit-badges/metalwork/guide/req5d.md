@@ -1,13 +1,13 @@
 ---
-title: "Req 5d — Blacksmith"
+title: "Blacksmith"
 layout: "guide"
-group_title: "Blacksmith"
+group_title: "5. Blacksmith"
 req_number: "5d"
 req_path: "5.d"
 prev: "/merit-badges/metalwork/guide/req5c3/"
-prev_title: "Req 5c3 — Making & Pouring Your Molds"
+prev_title: "Making & Pouring Your Molds"
 next: "/merit-badges/metalwork/guide/req5d1/"
-next_title: "Req 5d1 — Blacksmith Tools"
+next_title: "Blacksmith Tools"
 ---
 
 {{< drg/requirement number="5" option="Option 4—Blacksmith" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Constellations"
+title: "Constellations"
 layout: guide
-group_title: "Navigating the Night Sky"
+group_title: "4. Navigating the Night Sky"
 req_number: "4a"
 prev: "/merit-badges/astronomy/guide/req3d/"
-prev_title: "Req 3d — Care & Storage"
+prev_title: "Care & Storage"
 next: "/merit-badges/astronomy/guide/req4b/"
-next_title: "Req 4b — Bright Stars"
+next_title: "Bright Stars"
 ---
 
 {{< drg/requirement number="4a" >}}

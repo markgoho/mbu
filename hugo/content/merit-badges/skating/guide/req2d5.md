@@ -1,13 +1,13 @@
 ---
-title: "Req 2d5 — Street vs. Vert Styles"
+title: "Street vs. Vert Styles"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d5"
 req_path: "2.d.5"
 prev: "/merit-badges/skating/guide/req2d4/"
-prev_title: "Req 2d4 — Protective Gear"
+prev_title: "Protective Gear"
 next: "/merit-badges/skating/guide/req2d6/"
-next_title: "Req 2d6 — Skateboard Anatomy"
+next_title: "Skateboard Anatomy"
 ---
 
 {{< drg/requirement number="2d5" >}}

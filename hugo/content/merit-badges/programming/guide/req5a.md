@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — First Language Project"
+title: "First Language Project"
 layout: "guide"
-group_title: "Building Programs"
+group_title: "5. Building Programs"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/programming/guide/req5/"
-prev_title: "Req 5 — Choosing Your Three Projects"
+prev_title: "Choosing Your Three Projects"
 next: "/merit-badges/programming/guide/req5b/"
-next_title: "Req 5b — Second Language Project"
+next_title: "Second Language Project"
 ---
 
 {{< drg/requirement number="5a" >}}

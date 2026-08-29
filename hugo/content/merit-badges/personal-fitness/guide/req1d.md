@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Why Fitness Matters"
+title: "Why Fitness Matters"
 layout: guide
-group_title: "Defining Personal Fitness"
+group_title: "1. Defining Personal Fitness"
 req_number: "1d"
 prev: "/merit-badges/personal-fitness/guide/req1c/"
-prev_title: "Req 1c — Spiritual Fitness"
+prev_title: "Spiritual Fitness"
 next: "/merit-badges/personal-fitness/guide/req1e/"
-next_title: "Req 1e — Scout Oath and Law"
+next_title: "Scout Oath and Law"
 ---
 
 {{< drg/requirement number="1d" >}}

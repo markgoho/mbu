@@ -1,12 +1,12 @@
 ---
-title: "Req 4c5a — Visit a Mine, Quarry, or Pit"
+title: "Visit a Mine, Quarry, or Pit"
 layout: guide
-group_title: "Mineral Resources"
+group_title: "4. Mineral Resources"
 req_number: "4c5a"
 prev: "/merit-badges/geology/guide/req4c5/"
-prev_title: "Req 4c5 — Visit or Investigate Resource Use"
+prev_title: "Visit or Investigate Resource Use"
 next: "/merit-badges/geology/guide/req4c5b/"
-next_title: "Req 4c5b — Two Rocks and Two Minerals"
+next_title: "Two Rocks and Two Minerals"
 ---
 
 {{< drg/requirement number="4c5a" >}}

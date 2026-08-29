@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Clothing, Gear & Helmets"
+title: "Clothing, Gear & Helmets"
 layout: guide
-group_title: "Gear & Safety"
+group_title: "3. Gear & Safety"
 req_number: "3"
 prev: "/merit-badges/cycling/guide/req2/"
-prev_title: "Req 2 — Bicycle Laws"
+prev_title: "Bicycle Laws"
 next: "/merit-badges/cycling/guide/req4/"
-next_title: "Req 4 — Inspect, Adjust & Repair"
+next_title: "Inspect, Adjust & Repair"
 ---
 
 {{< drg/requirement number="3" >}}

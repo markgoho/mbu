@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Hazards on the Water"
+title: "Hazards on the Water"
 layout: guide
-group_title: "Safety & Hazard Preparedness"
+group_title: "1. Safety & Hazard Preparedness"
 req_number: "1a"
 prev: "/merit-badges/canoeing/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/canoeing/guide/req1b/"
-next_title: "Req 1b — Injuries & First Aid"
+next_title: "Injuries & First Aid"
 ---
 
 {{< drg/requirement number="1a" >}}

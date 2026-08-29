@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Planetary Motion"
+title: "Planetary Motion"
 layout: guide
-group_title: "Exploring the Planets"
+group_title: "5. Exploring the Planets"
 req_number: "5c"
 prev: "/merit-badges/astronomy/guide/req5b/"
-prev_title: "Req 5b — Planet Visibility Chart"
+prev_title: "Planet Visibility Chart"
 next: "/merit-badges/astronomy/guide/req5d/"
-next_title: "Req 5d — Observing a Planet"
+next_title: "Observing a Planet"
 ---
 
 {{< drg/requirement number="5c" >}}

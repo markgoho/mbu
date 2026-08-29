@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Binary & Decimal Conversion"
+title: "Binary & Decimal Conversion"
 layout: guide
-group_title: "Circuits & Digital Logic"
+group_title: "4. Circuits & Digital Logic"
 req_number: "4b"
 prev: "/merit-badges/electronics/guide/req4a/"
-prev_title: "Req 4a — Control, Logic & Analog"
+prev_title: "Control, Logic & Analog"
 next: "/merit-badges/electronics/guide/req4c/"
-next_title: "Req 4c — Build a Circuit Project"
+next_title: "Build a Circuit Project"
 ---
 
 {{< drg/requirement number="4b" >}}

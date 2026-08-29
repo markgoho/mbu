@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Using a Field Guide"
+title: "Using a Field Guide"
 layout: guide
-group_title: "Field Guides & Range Maps"
+group_title: "4. Field Guides & Range Maps"
 req_number: "4"
 prev: "/merit-badges/bird-study/guide/req3d/"
-prev_title: "Req 3d — Choosing Your Optics"
+prev_title: "Choosing Your Optics"
 next: "/merit-badges/bird-study/guide/req5/"
-next_title: "Req 5 — Field Notebook"
+next_title: "Field Notebook"
 ---
 
 {{< drg/requirement number="4" >}}

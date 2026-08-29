@@ -1,12 +1,12 @@
 ---
-title: "Req 7b — Event Reports"
+title: "Event Reports"
 layout: guide
-group_title: "Competing & Improving"
+group_title: "7. Competing & Improving"
 req_number: "7b"
 prev: "/merit-badges/orienteering/guide/req7a/"
-prev_title: "Req 7a — Orienteering Events"
+prev_title: "Orienteering Events"
 next: "/merit-badges/orienteering/guide/req8/"
-next_title: "Req 8 — Setting Up a Course"
+next_title: "Setting Up a Course"
 ---
 
 {{< drg/requirement number="7b" >}}

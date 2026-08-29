@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Sportsmanship for Anglers"
+title: "Sportsmanship for Anglers"
 layout: guide
-group_title: "Ethics & Stewardship"
+group_title: "7. Ethics & Stewardship"
 req_number: "9"
 prev: "/merit-badges/fly-fishing/guide/req8/"
-prev_title: "Req 8 — Fishing Regulations"
+prev_title: "Fishing Regulations"
 next: "/merit-badges/fly-fishing/guide/req10/"
-next_title: "Req 10 — Catch and Identify a Fish"
+next_title: "Catch and Identify a Fish"
 ---
 
 {{< drg/requirement number="9" >}}

@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Compound Bow"
+title: "Compound Bow"
 layout: guide
-group_title: "On the Shooting Line"
+group_title: "5. On the Shooting Line"
 req_number: "5"
 prev: "/merit-badges/archery/guide/req5-recurve-bow-or-longbow/"
-prev_title: "Req 5 — Recurve Bow or Longbow"
+prev_title: "Recurve Bow or Longbow"
 next: "/merit-badges/archery/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

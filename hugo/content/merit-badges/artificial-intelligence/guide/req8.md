@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — AI Careers"
+title: "AI Careers"
 layout: guide
-group_title: "Putting It All Together"
+group_title: "7. Putting It All Together"
 req_number: "8"
 prev: "/merit-badges/artificial-intelligence/guide/req7/"
-prev_title: "Req 7 — Build Your AI Project"
+prev_title: "Build Your AI Project"
 next: "/merit-badges/artificial-intelligence/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,13 +1,13 @@
 ---
-title: "Req 2c — Art in Public and Community Life"
+title: "Art in Public and Community Life"
 layout: "guide"
-group_title: "Art Spaces and Meaning"
+group_title: "2. Art Spaces and Meaning"
 req_number: "2c"
 req_path: "2.c"
 prev: "/merit-badges/sculpture/guide/req2b/"
-prev_title: "Req 2b — Mold and Cast"
+prev_title: "Mold and Cast"
 next: "/merit-badges/sculpture/guide/req3/"
-next_title: "Req 3 — Career or Hobby"
+next_title: "Career or Hobby"
 ---
 
 {{< drg/requirement number="2c" >}}

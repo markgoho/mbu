@@ -1,13 +1,13 @@
 ---
-title: "Req 6c — Clear Communication"
+title: "Clear Communication"
 layout: "guide"
-group_title: "Search Procedure Skills"
+group_title: "6. Search Procedure Skills"
 req_number: "6c"
 req_path: "6.c"
 prev: "/merit-badges/search-and-rescue/guide/req6b/"
-prev_title: "Req 6b — PLS and LKP"
+prev_title: "PLS and LKP"
 next: "/merit-badges/search-and-rescue/guide/req6d/"
-next_title: "Req 6d — Lost Person Behavior"
+next_title: "Lost Person Behavior"
 ---
 
 {{< drg/requirement number="6c" >}}

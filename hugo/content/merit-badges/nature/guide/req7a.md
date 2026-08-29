@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Nature Careers"
+title: "Nature Careers"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/nature/guide/req7/"
-prev_title: "Req 7 — Choose a Future Path"
+prev_title: "Choose a Future Path"
 next: "/merit-badges/nature/guide/req7b/"
-next_title: "Req 7b — Nature as a Lifelong Hobby"
+next_title: "Nature as a Lifelong Hobby"
 ---
 
 {{< drg/requirement number="7a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — How Snakes Move"
+title: "How Snakes Move"
 layout: "guide"
-group_title: "Life Cycles & Movement"
+group_title: "5. Life Cycles & Movement"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req5/"
-prev_title: "Req 5 — Reproduction and Life Cycles"
+prev_title: "Reproduction and Life Cycles"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req7/"
-next_title: "Req 7 — Venomous Species and Bite Response"
+next_title: "Venomous Species and Bite Response"
 ---
 
 {{< drg/requirement number="6" >}}

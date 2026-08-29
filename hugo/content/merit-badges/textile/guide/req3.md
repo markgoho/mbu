@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Pick Your Two Projects"
+title: "Pick Your Two Projects"
 layout: "guide"
-group_title: "Choose Two Textile Projects"
+group_title: "3. Choose Two Textile Projects"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/textile/guide/req2/"
-prev_title: "Req 2 — From Fiber to Fabric"
+prev_title: "From Fiber to Fabric"
 next: "/merit-badges/textile/guide/req3a/"
-next_title: "Req 3a — Behind the Scenes of Textile Production"
+next_title: "Behind the Scenes of Textile Production"
 ---
 
 {{< drg/requirement number="3" >}}

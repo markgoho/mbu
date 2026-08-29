@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Postpress and Binding"
+title: "Postpress and Binding"
 layout: guide
-group_title: "Finishing the Job"
+group_title: "5. Finishing the Job"
 req_number: "5"
 prev: "/merit-badges/graphic-arts/guide/req4d/"
-prev_title: "Req 4d — Relief Printing Run"
+prev_title: "Relief Printing Run"
 next: "/merit-badges/graphic-arts/guide/req6/"
-next_title: "Req 6 — Choose a Graphic Arts Visit"
+next_title: "Choose a Graphic Arts Visit"
 ---
 
 {{< drg/requirement number="5" >}}

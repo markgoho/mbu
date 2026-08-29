@@ -4,41 +4,41 @@ layout: guide
 badge_name: "Animation"
 group_title: "Getting Started"
 next: "/merit-badges/animation/guide/req1a/"
-next_title: "Req 1a — What Is Animation?"
+next_title: "What Is Animation?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/animation/guide/"
-  - group_title: "Understanding Animation"
+  - group_title: "1. Understanding Animation"
     items:
-      - title: "Req 1a — What Is Animation?"
+      - title: "a What Is Animation?"
         url: "/merit-badges/animation/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — History of Animation"
+      - title: "b History of Animation"
         url: "/merit-badges/animation/guide/req1b/"
         is_sub: true
-  - group_title: "Principles of Animation"
+  - group_title: "2. Principles of Animation"
     items:
-      - title: "Req 2 — The 12 Principles"
+      - title: "2. The 12 Principles"
         url: "/merit-badges/animation/guide/req2/"
         is_sub: false
-  - group_title: "Animation Projects"
+  - group_title: "3. Animation Projects"
     items:
-      - title: "Req 3 — Create Your Animations"
+      - title: "3. Create Your Animations"
         url: "/merit-badges/animation/guide/req3/"
         is_sub: false
-  - group_title: "Animation in the Real World"
+  - group_title: "4. Animation in the Real World"
     items:
-      - title: "Req 4a — Studio Tour"
+      - title: "a Studio Tour"
         url: "/merit-badges/animation/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — The Future of Animation"
+      - title: "b The Future of Animation"
         url: "/merit-badges/animation/guide/req4b/"
         is_sub: true
-  - group_title: "Animation Careers"
+  - group_title: "5. Animation Careers"
     items:
-      - title: "Req 5 — Careers in Animation"
+      - title: "5. Careers in Animation"
         url: "/merit-badges/animation/guide/req5/"
         is_sub: false
   - group_title: "Beyond the Badge"

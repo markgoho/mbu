@@ -4,113 +4,113 @@ layout: guide
 badge_name: "Dog Care"
 group_title: "Getting Started"
 next: "/merit-badges/dog-care/guide/req1a/"
-next_title: "Req 1a — From Wolves to Companions"
+next_title: "From Wolves to Companions"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/dog-care/guide/"
         is_sub: false
-  - group_title: "Dogs Through Time"
+  - group_title: "1. Dogs Through Time"
     items:
-      - title: "Req 1a — From Wolves to Companions"
+      - title: "a From Wolves to Companions"
         url: "/merit-badges/dog-care/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — The Seven Dog Groups"
+      - title: "b The Seven Dog Groups"
         url: "/merit-badges/dog-care/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Breeds and Breed Stories"
+      - title: "c Breeds and Breed Stories"
         url: "/merit-badges/dog-care/guide/req1c/"
         is_sub: true
-  - group_title: "Knowing Your Dog"
+  - group_title: "2. Knowing Your Dog"
     items:
-      - title: "Req 2 — Dog Body Parts"
+      - title: "2. Dog Body Parts"
         url: "/merit-badges/dog-care/guide/req2/"
         is_sub: false
-  - group_title: "Training and Ownership"
+  - group_title: "3. Training and Ownership"
     items:
-      - title: "Req 3a — Training Foundations"
+      - title: "a Training Foundations"
         url: "/merit-badges/dog-care/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Responsible Pet Ownership"
+      - title: "b Responsible Pet Ownership"
         url: "/merit-badges/dog-care/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Choosing the Right Dog"
+      - title: "c Choosing the Right Dog"
         url: "/merit-badges/dog-care/guide/req3c/"
         is_sub: true
-  - group_title: "Daily Care"
+  - group_title: "4. Daily Care"
     items:
-      - title: "Req 4 — Two-Month Care Log"
+      - title: "4. Two-Month Care Log"
         url: "/merit-badges/dog-care/guide/req4/"
         is_sub: false
-  - group_title: "Teaching Good Habits"
+  - group_title: "5. Teaching Good Habits"
     items:
-      - title: "Req 5 — Obedience Basics"
+      - title: "5. Obedience Basics"
         url: "/merit-badges/dog-care/guide/req5/"
         is_sub: false
-  - group_title: "Keeping Dogs Healthy"
+  - group_title: "6. Keeping Dogs Healthy"
     items:
-      - title: "Req 6a — Vaccination Planning"
+      - title: "a Vaccination Planning"
         url: "/merit-badges/dog-care/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Parasite Prevention"
+      - title: "b Parasite Prevention"
         url: "/merit-badges/dog-care/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Dental Care"
+      - title: "c Dental Care"
         url: "/merit-badges/dog-care/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Grooming and Nail Care"
+      - title: "d Grooming and Nail Care"
         url: "/merit-badges/dog-care/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Seasonal Safety"
+      - title: "e Seasonal Safety"
         url: "/merit-badges/dog-care/guide/req6e/"
         is_sub: true
-      - title: "Req 6f — Spaying and Neutering"
+      - title: "f Spaying and Neutering"
         url: "/merit-badges/dog-care/guide/req6f/"
         is_sub: true
-  - group_title: "Dog First Aid"
+  - group_title: "7. Dog First Aid"
     items:
-      - title: "Req 7a — Handling an Injured Dog"
+      - title: "a Handling an Injured Dog"
         url: "/merit-badges/dog-care/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Emergency Muzzle"
+      - title: "b Emergency Muzzle"
         url: "/merit-badges/dog-care/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Wounds and Dog Bites"
+      - title: "c Wounds and Dog Bites"
         url: "/merit-badges/dog-care/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Dressings and Bandages"
+      - title: "d Dressings and Bandages"
         url: "/merit-badges/dog-care/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — If a Dog Is Hit by a Car"
+      - title: "e If a Dog Is Hit by a Car"
         url: "/merit-badges/dog-care/guide/req7e/"
         is_sub: true
-      - title: "Req 7f — Dog First-Aid Kit"
+      - title: "f Dog First-Aid Kit"
         url: "/merit-badges/dog-care/guide/req7f/"
         is_sub: true
-      - title: "Req 7g — Limits of Home Treatment"
+      - title: "g Limits of Home Treatment"
         url: "/merit-badges/dog-care/guide/req7g/"
         is_sub: true
-      - title: "Req 7h — Major Dog Diseases"
+      - title: "h Major Dog Diseases"
         url: "/merit-badges/dog-care/guide/req7h/"
         is_sub: true
-  - group_title: "Community Connections"
+  - group_title: "8. Community Connections"
     items:
-      - title: "Req 8 — Veterinary Hospital or Shelter Visit"
+      - title: "8. Veterinary Hospital or Shelter Visit"
         url: "/merit-badges/dog-care/guide/req8/"
         is_sub: false
-      - title: "Req 9 — Local Dog Laws"
+      - title: "9. Local Dog Laws"
         url: "/merit-badges/dog-care/guide/req9/"
         is_sub: false
-  - group_title: "Future Paths"
+  - group_title: "10. Future Paths"
     items:
-      - title: "Req 10 — Careers or Hobbies"
+      - title: "10. Careers or Hobbies"
         url: "/merit-badges/dog-care/guide/req10/"
         is_sub: false
-      - title: "Req 10a — Careers Working With Dogs"
+      - title: "a Careers Working With Dogs"
         url: "/merit-badges/dog-care/guide/req10a/"
         is_sub: true
-      - title: "Req 10b — Dog Skills for Life and Hobbies"
+      - title: "b Dog Skills for Life and Hobbies"
         url: "/merit-badges/dog-care/guide/req10b/"
         is_sub: true
   - group_title: "Beyond the Badge"

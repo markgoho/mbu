@@ -1,13 +1,13 @@
 ---
-title: "Req 3f — Make Fabric Resist Water"
+title: "Make Fabric Resist Water"
 layout: "guide"
-group_title: "Choose Two Textile Projects"
+group_title: "3. Choose Two Textile Projects"
 req_number: "3f"
 req_path: "3.f"
 prev: "/merit-badges/textile/guide/req3e/"
-prev_title: "Req 3e — Dye Fabric with Natural Color"
+prev_title: "Dye Fabric with Natural Color"
 next: "/merit-badges/textile/guide/req3g/"
-next_title: "Req 3g — Identify Fibers"
+next_title: "Identify Fibers"
 ---
 
 {{< drg/requirement number="3f" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-k — Clean a Muzzleloader Properly"
+title: "Clean a Muzzleloader Properly"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-k"
 req_path: "2.B.k"
 prev: "/merit-badges/shotgun-shooting/guide/req2Bj/"
-prev_title: "Req 2B-j — Cleaning Safety Rules and Materials"
+prev_title: "Cleaning Safety Rules and Materials"
 next: "/merit-badges/shotgun-shooting/guide/req2Bl/"
-next_title: "Req 2B-l — Selecting a Muzzleloading Shotgun"
+next_title: "Selecting a Muzzleloading Shotgun"
 ---
 
 {{< drg/requirement number="2B-k" >}}

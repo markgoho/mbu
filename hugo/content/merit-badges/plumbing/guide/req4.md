@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Plumbing Parts and Terms"
+title: "Plumbing Parts and Terms"
 layout: "guide"
-group_title: "Plumbing Vocabulary"
+group_title: "4. Plumbing Vocabulary"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/plumbing/guide/req3/"
-prev_title: "Req 3 — Essential Plumbing Tools"
+prev_title: "Essential Plumbing Tools"
 next: "/merit-badges/plumbing/guide/req5/"
-next_title: "Req 5 — Common Pipe Materials"
+next_title: "Common Pipe Materials"
 ---
 
 {{< drg/requirement number="4" >}}

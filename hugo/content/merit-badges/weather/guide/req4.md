@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Pressure Systems and Fronts"
+title: "Pressure Systems and Fronts"
 layout: "guide"
-group_title: "How Weather Works"
+group_title: "4. How Weather Works"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/weather/guide/req3/"
-prev_title: "Req 3 — Forecasts and Warnings"
+prev_title: "Forecasts and Warnings"
 next: "/merit-badges/weather/guide/req5/"
-next_title: "Req 5 — Wind, Rain, Lightning, and Hail"
+next_title: "Wind, Rain, Lightning, and Hail"
 ---
 
 {{< drg/requirement number="4" >}}

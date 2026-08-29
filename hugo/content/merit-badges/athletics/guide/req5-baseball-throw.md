@@ -1,12 +1,12 @@
 ---
-title: "Req 5f — Baseball Throw"
+title: "Baseball Throw"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5f"
 prev: "/merit-badges/athletics/guide/req5-pull-ups-push-ups/"
-prev_title: "Req 5e — Pull-Ups & Push-Ups"
+prev_title: "Pull-Ups & Push-Ups"
 next: "/merit-badges/athletics/guide/req5-basketball-shooting/"
-next_title: "Req 5g — Basketball Shooting"
+next_title: "Basketball Shooting"
 ---
 
 {{< drg/requirement number="5" option="Option F—Baseball Throw" >}}

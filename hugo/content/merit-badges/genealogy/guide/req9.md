@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — What You Learned About Family"
+title: "What You Learned About Family"
 layout: guide
-group_title: "Technology and Reflection"
+group_title: "8. Technology and Reflection"
 req_number: "9"
 prev: "/merit-badges/genealogy/guide/req8abc/"
-prev_title: "Req 8a–8c — Technology Changes Genealogy"
+prev_title: "Technology Changes Genealogy"
 next: "/merit-badges/genealogy/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

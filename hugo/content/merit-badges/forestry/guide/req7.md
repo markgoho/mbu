@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Forest Threats & Wildfire Response"
+title: "Forest Threats & Wildfire Response"
 layout: guide
-group_title: "Threats, Fire & Careers"
+group_title: "7. Threats, Fire & Careers"
 req_number: "7"
 prev: "/merit-badges/forestry/guide/req6b/"
-prev_title: "Req 6b — Review a Professional Hazard Tree Report"
+prev_title: "Review a Professional Hazard Tree Report"
 next: "/merit-badges/forestry/guide/req8/"
-next_title: "Req 8 — Foresters & Forestry Careers"
+next_title: "Foresters & Forestry Careers"
 ---
 
 {{< drg/requirement number="7" >}}

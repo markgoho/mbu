@@ -1,13 +1,13 @@
 ---
-title: "Req 8b5c — Woody Ornamentals in the Landscape"
+title: "Woody Ornamentals in the Landscape"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b5c"
 req_path: "8.b.5.c"
 prev: "/merit-badges/plant-science/guide/req8b5b/"
-prev_title: "Req 8b5b — Fruit, Berry, and Nut Crops"
+prev_title: "Fruit, Berry & Nut Crops"
 next: "/merit-badges/plant-science/guide/req8b5d/"
-next_title: "Req 8b5d — Home Gardening for People and Wildlife"
+next_title: "Home Gardening"
 ---
 
 {{< drg/requirement number="8b5c" >}}

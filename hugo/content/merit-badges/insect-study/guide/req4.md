@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Observe, Record, and Interpret"
+title: "Observe, Record, and Interpret"
 layout: guide
-group_title: "Field Observation and Records"
+group_title: "4. Field Observation and Records"
 req_number: "4"
 prev: "/merit-badges/insect-study/guide/req3/"
-prev_title: "Req 3 — Life Cycles and Rearing"
+prev_title: "Life Cycles and Rearing"
 next: "/merit-badges/insect-study/guide/req5a/"
-next_title: "Req 5a — Social vs. Solitary Insects"
+next_title: "Social vs. Solitary Insects"
 ---
 
 {{< drg/requirement number="4" >}}

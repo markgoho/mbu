@@ -4,69 +4,69 @@ layout: guide
 badge_name: "Animal Science"
 group_title: "Getting Started"
 next: "/merit-badges/animal-science/guide/req1/"
-next_title: "Req 1 — Livestock Breeds"
+next_title: "Livestock Breeds"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/animal-science/guide/"
-  - group_title: "Livestock Breeds"
+  - group_title: "1. Livestock Breeds"
     items:
-      - title: "Req 1 — Livestock Breeds"
+      - title: "1. Livestock Breeds"
         url: "/merit-badges/animal-science/guide/req1/"
         is_sub: false
-  - group_title: "Animal Health"
+  - group_title: "2. Animal Health"
     items:
-      - title: "Req 2 — Livestock Diseases"
+      - title: "2. Livestock Diseases"
         url: "/merit-badges/animal-science/guide/req2/"
         is_sub: false
-  - group_title: "Nutrition & Digestion"
+  - group_title: "3. Nutrition & Digestion"
     items:
-      - title: "Req 3 — Digestive Systems"
+      - title: "3. Digestive Systems"
         url: "/merit-badges/animal-science/guide/req3/"
         is_sub: false
-  - group_title: "Animal Management"
+  - group_title: "4. Animal Management"
     items:
-      - title: "Req 4 — Animal Management"
+      - title: "4. Animal Management"
         url: "/merit-badges/animal-science/guide/req4/"
         is_sub: false
-  - group_title: "Genetics & Breeding"
+  - group_title: "5. Genetics & Breeding"
     items:
-      - title: "Req 5a — Breeding Improvements"
+      - title: "a Breeding Improvements"
         url: "/merit-badges/animal-science/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Pure & Cross Breeding"
+      - title: "b Pure & Cross Breeding"
         url: "/merit-badges/animal-science/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Modern Technology"
+      - title: "c Modern Technology"
         url: "/merit-badges/animal-science/guide/req5c/"
         is_sub: true
-  - group_title: "Specialty Options"
+  - group_title: "6. Specialty Options"
     items:
-      - title: "Req 6 — Choose Your Specialty"
+      - title: "6. Choose Your Specialty"
         url: "/merit-badges/animal-science/guide/req6/"
         is_sub: false
-      - title: "Req 6 — Beef Cattle Option"
+      - title: "6. Beef Cattle Option"
         url: "/merit-badges/animal-science/guide/req6-beef-cattle/"
         is_sub: true
-      - title: "Req 6 — Dairy Option"
+      - title: "6. Dairy Option"
         url: "/merit-badges/animal-science/guide/req6-dairy/"
         is_sub: true
-      - title: "Req 6 — Horse Option"
+      - title: "6. Horse Option"
         url: "/merit-badges/animal-science/guide/req6-horse/"
         is_sub: true
-      - title: "Req 6 — Sheep or Goat Option"
+      - title: "6. Sheep or Goat Option"
         url: "/merit-badges/animal-science/guide/req6-sheep-or-goat/"
         is_sub: true
-      - title: "Req 6 — Hog Option"
+      - title: "6. Hog Option"
         url: "/merit-badges/animal-science/guide/req6-hog/"
         is_sub: true
-      - title: "Req 6 — Avian Option"
+      - title: "6. Avian Option"
         url: "/merit-badges/animal-science/guide/req6-avian/"
         is_sub: true
-  - group_title: "Careers"
+  - group_title: "7. Careers"
     items:
-      - title: "Req 7 — Careers in Animal Science"
+      - title: "7. Careers in Animal Science"
         url: "/merit-badges/animal-science/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

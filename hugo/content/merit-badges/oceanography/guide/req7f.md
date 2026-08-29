@@ -1,13 +1,13 @@
 ---
-title: "Req 7f — Track Satellite Images"
+title: "Track Satellite Images"
 layout: "guide"
-group_title: "Hands-On Investigation"
+group_title: "7. Hands-On Investigation"
 req_number: "7f"
 req_path: "7.f"
 prev: "/merit-badges/oceanography/guide/req7e/"
-prev_title: "Req 7e — Build a Wave Tank"
+prev_title: "Build a Wave Tank"
 next: "/merit-badges/oceanography/guide/req8/"
-next_title: "Req 8 — Choose a Reporting Project"
+next_title: "Choose a Reporting Project"
 ---
 
 {{< drg/requirement number="7f" >}}

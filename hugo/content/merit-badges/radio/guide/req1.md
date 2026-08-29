@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Radio Safety"
+title: "Radio Safety"
 layout: "guide"
-group_title: "Radio Safety"
+group_title: "1. Radio Safety"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/radio/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/radio/guide/req2a/"
-next_title: "Req 2a — The Electromagnetic Spectrum"
+next_title: "The Electromagnetic Spectrum"
 guide_nav:
   - group_title: "Getting Started"
     items:

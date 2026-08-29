@@ -1,13 +1,13 @@
 ---
-title: "Req 8d1 — What Is ARDF?"
+title: "What Is ARDF?"
 layout: "guide"
-group_title: "Option D: Direction Finding"
+group_title: "8. Option D: Direction Finding"
 req_number: "8d1"
 req_path: "8.d.1"
 prev: "/merit-badges/radio/guide/req8d/"
-prev_title: "Req 8d — Direction Finding Overview"
+prev_title: "Direction Finding Overview"
 next: "/merit-badges/radio/guide/req8d2/"
-next_title: "Req 8d2 — Frequencies & Equipment"
+next_title: "Frequencies & Equipment"
 guide_nav:
   - group_title: "Getting Started"
     items:

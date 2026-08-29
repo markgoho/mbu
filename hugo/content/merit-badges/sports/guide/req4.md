@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Pick Sports You Can Really Commit To"
+title: "Pick Sports You Can Really Commit To"
 layout: "guide"
-group_title: "Choosing Your Two Sports"
+group_title: "4. Choosing Your Two Sports"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/sports/guide/req3/"
-prev_title: "Req 3 — Preparation, Strength, and Sportsmanship"
+prev_title: "Preparation, Strength, and Sportsmanship"
 next: "/merit-badges/sports/guide/req5/"
-next_title: "Req 5 — Train, Compete, and Reflect"
+next_title: "Train, Compete, and Reflect"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Twist, Lay, and Whip"
+title: "Twist, Lay, and Whip"
 layout: guide
-group_title: "Making Your Own Rope"
+group_title: "6. Making Your Own Rope"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/pioneering/guide/req5/"
-prev_title: "Req 5 — Splices That Solve Problems"
+prev_title: "Splices That Solve Problems"
 next: "/merit-badges/pioneering/guide/req7/"
-next_title: "Req 7 — Keep the Structure Put"
+next_title: "Keep the Structure Put"
 ---
 
 {{< drg/requirement number="6" >}}

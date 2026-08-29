@@ -1,13 +1,13 @@
 ---
-title: "Req 5d1 — Blacksmith Tools"
+title: "Blacksmith Tools"
 layout: "guide"
-group_title: "Blacksmith"
+group_title: "5. Blacksmith"
 req_number: "5d1"
 req_path: "5.d.1"
 prev: "/merit-badges/metalwork/guide/req5d/"
-prev_title: "Req 5d — Blacksmith"
+prev_title: "Blacksmith"
 next: "/merit-badges/metalwork/guide/req5d2/"
-next_title: "Req 5d2 — Sketching Your Forged Objects"
+next_title: "Sketching Your Forged Objects"
 ---
 
 {{< drg/requirement number="5d1" >}}

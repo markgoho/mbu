@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Choose an Inventing Experience"
+title: "Choose an Inventing Experience"
 layout: guide
-group_title: "Inventing in the Real World"
+group_title: "8. Inventing in the Real World"
 req_number: "8"
 prev: "/merit-badges/inventing/guide/req7/"
-prev_title: "Req 7 — Prototype, Test, Improve"
+prev_title: "Prototype, Test, Improve"
 next: "/merit-badges/inventing/guide/req8a/"
-next_title: "Req 8a — Build with a Team"
+next_title: "Build with a Team"
 ---
 
 {{< drg/requirement number="8" >}}

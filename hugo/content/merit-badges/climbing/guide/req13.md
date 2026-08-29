@@ -1,10 +1,10 @@
 ---
-title: "Req 13 — Storing Your Gear"
+title: "Storing Your Gear"
 layout: guide
-group_title: "Gear Storage"
+group_title: "13. Gear Storage"
 req_number: "13"
 prev: "/merit-badges/climbing/guide/req12/"
-prev_title: "Req 12 — Rappelling Technique"
+prev_title: "Rappelling Technique"
 next: "/merit-badges/climbing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

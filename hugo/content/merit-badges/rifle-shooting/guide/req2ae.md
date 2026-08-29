@@ -1,13 +1,13 @@
 ---
-title: "Req 2ae — The Five Fundamentals of Shooting"
+title: "The Five Fundamentals of Shooting"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2ae"
 req_path: "2.a.e"
 prev: "/merit-badges/rifle-shooting/guide/req2ad/"
-prev_title: "Req 2ad — Misfire, Hangfire, and Squib Fire"
+prev_title: "Misfire, Hangfire, and Squib Fire"
 next: "/merit-badges/rifle-shooting/guide/req2af/"
-next_title: "Req 2af — Range Procedures and Commands"
+next_title: "Range Procedures and Commands"
 ---
 
 {{< drg/requirement number="2ae" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1a — Projectiles and Why They Demand Respect"
+title: "Projectiles and Why They Demand Respect"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1a"
 req_path: "1.a"
 prev: "/merit-badges/shotgun-shooting/guide/req1/"
-prev_title: "Req 1 — Safety and Responsibility Overview"
+prev_title: "Safety and Responsibility Overview"
 next: "/merit-badges/shotgun-shooting/guide/req1b/"
-next_title: "Req 1b — Safe Gun Handling Rules"
+next_title: "Safe Gun Handling Rules"
 ---
 
 {{< drg/requirement number="1a" >}}

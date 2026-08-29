@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Gamer Health and Balance"
+title: "Gamer Health and Balance"
 layout: "guide"
-group_title: "Health and Balance"
+group_title: "3. Health and Balance"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/competitive-gaming/guide/req2/"
-prev_title: "Req 2 — Living the Scout Oath and Law Online"
+prev_title: "Living the Scout Oath and Law Online"
 next: "/merit-badges/competitive-gaming/guide/req4/"
-next_title: "Req 4 — Gamer Safety and Community Connection"
+next_title: "Gamer Safety and Community Connection"
 ---
 
 {{< drg/requirement number="3" >}}

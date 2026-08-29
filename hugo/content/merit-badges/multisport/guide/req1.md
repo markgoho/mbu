@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Hazards and First Aid"
+title: "Hazards and First Aid"
 layout: "guide"
-group_title: "Safety and First Aid"
+group_title: "1. Safety and First Aid"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/multisport/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/multisport/guide/req2/"
-next_title: "Req 2 — Physical Readiness and Nutrition"
+next_title: "Physical Readiness and Nutrition"
 ---
 
 {{< drg/requirement number="1" >}}

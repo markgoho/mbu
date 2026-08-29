@@ -1,13 +1,13 @@
 ---
-title: "Req 8d3 — Build a Directional Antenna"
+title: "Build a Directional Antenna"
 layout: "guide"
-group_title: "Option D: Direction Finding"
+group_title: "8. Option D: Direction Finding"
 req_number: "8d3"
 req_path: "8.d.3"
 prev: "/merit-badges/radio/guide/req8d2/"
-prev_title: "Req 8d2 — Frequencies & Equipment"
+prev_title: "Frequencies & Equipment"
 next: "/merit-badges/radio/guide/req8d4/"
-next_title: "Req 8d4 — Participate in a Fox Hunt"
+next_title: "Participate in a Fox Hunt"
 guide_nav:
   - group_title: "Getting Started"
     items:

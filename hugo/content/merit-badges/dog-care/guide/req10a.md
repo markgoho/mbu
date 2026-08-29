@@ -1,12 +1,12 @@
 ---
-title: "Req 10a — Dog-Related Careers"
+title: "Dog-Related Careers"
 layout: guide
-group_title: "Paths Beyond the Badge"
+group_title: "10. Future Paths"
 req_number: "10a"
 prev: "/merit-badges/dog-care/guide/req10/"
-prev_title: "Req 10 — Careers or Hobbies"
+prev_title: "Careers or Hobbies"
 next: "/merit-badges/dog-care/guide/req10b/"
-next_title: "Req 10b — Hobbies and Healthy Lifestyles"
+next_title: "Dog Skills for Life and Hobbies"
 ---
 
 {{< drg/requirement number="10a" >}}

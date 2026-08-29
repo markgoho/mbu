@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Traditional Golf Roadmap"
+title: "Traditional Golf Roadmap"
 layout: guide
-group_title: "Traditional Golf Path"
+group_title: "2. Traditional Golf Path"
 req_number: "2a"
 prev: "/merit-badges/golf/guide/req2/"
-prev_title: "Req 2 — Traditional Golf or Disc Golf?"
+prev_title: "Traditional Golf or Disc Golf?"
 next: "/merit-badges/golf/guide/req2a1/"
-next_title: "Req 2a1 — Rules, Terms & Amateur Status"
+next_title: "Rules, Terms & Amateur Status"
 ---
 
 {{< drg/requirement number="2" option="Traditional Golf" >}}

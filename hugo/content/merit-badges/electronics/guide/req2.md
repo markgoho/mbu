@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Reading & Drawing Schematics"
+title: "Reading & Drawing Schematics"
 layout: guide
-group_title: "Schematic Diagrams"
+group_title: "2. Schematic Diagrams"
 req_number: "2"
 prev: "/merit-badges/electronics/guide/req1/"
-prev_title: "Req 1 — Safety Precautions"
+prev_title: "Safety Precautions"
 next: "/merit-badges/electronics/guide/req3/"
-next_title: "Req 3 — Soldering Techniques"
+next_title: "Soldering Techniques"
 ---
 
 {{< drg/requirement number="2" >}}

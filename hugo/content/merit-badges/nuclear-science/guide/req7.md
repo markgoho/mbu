@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Nuclear Science in Daily Life"
+title: "Nuclear Science in Daily Life"
 layout: "guide"
-group_title: "Useful Nuclear Science"
+group_title: "7. Useful Nuclear Science"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/nuclear-science/guide/req6b/"
-prev_title: "Req 6b — How Plants Make Electricity"
+prev_title: "How Plants Make Electricity"
 next: "/merit-badges/nuclear-science/guide/req8/"
-next_title: "Req 8 — Explore a Nuclear Science Career"
+next_title: "Explore a Nuclear Science Career"
 ---
 
 {{< drg/requirement number="7" >}}

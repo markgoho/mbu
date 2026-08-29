@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Replacing an Outlet"
+title: "Replacing an Outlet"
 layout: guide
-group_title: "Electrical Basics"
+group_title: "4. Electrical Basics"
 req_number: "4d"
 prev: "/merit-badges/home-repairs/guide/req4c/"
-prev_title: "Req 4c — Installing a Light Switch"
+prev_title: "Installing a Light Switch"
 next: "/merit-badges/home-repairs/guide/req5/"
-next_title: "Req 5 — Water Shutoffs and Plumbing Fixes"
+next_title: "Water Shutoffs and Plumbing Fixes"
 ---
 
 {{< drg/requirement number="4d" >}}

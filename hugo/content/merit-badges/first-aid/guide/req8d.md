@@ -1,13 +1,13 @@
 ---
-title: "Req 8d — Bandaging Techniques"
+title: "Bandaging Techniques"
 layout: "guide"
-group_title: "Muscle & Bone Injuries"
+group_title: "8. Muscle & Bone Injuries"
 req_number: "8d"
 req_path: "8.d"
 prev: "/merit-badges/first-aid/guide/req8c/"
-prev_title: "Req 8c — Sprains, Fractures & Dislocations"
+prev_title: "Sprains, Fractures & Dislocations"
 next: "/merit-badges/first-aid/guide/req8e/"
-next_title: "Req 8e — Splinting Fractures"
+next_title: "Splinting Fractures"
 ---
 
 {{< drg/requirement number="8d" >}}

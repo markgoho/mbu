@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Control Light and Motion"
+title: "Control Light and Motion"
 layout: "guide"
-group_title: "Control the Shot"
+group_title: "2. Control the Shot"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/photography/guide/req1/"
-prev_title: "Req 1 — Shoot Safely"
+prev_title: "Shoot Safely"
 next: "/merit-badges/photography/guide/req3/"
-next_title: "Req 3 — Know Your Camera"
+next_title: "Know Your Camera"
 ---
 
 {{< drg/requirement number="2" >}}

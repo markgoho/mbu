@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Home Fire Hazard Inspection"
+title: "Home Fire Hazard Inspection"
 layout: guide
-group_title: "Home Fire Safety"
+group_title: "5. Home Fire Safety"
 req_number: "5d"
 prev: "/merit-badges/fire-safety/guide/req5c/"
-prev_title: "Req 5c — Candle Safety"
+prev_title: "Candle Safety"
 next: "/merit-badges/fire-safety/guide/req5ef/"
-next_title: "Req 5e–5f — Smoke & CO Alarms"
+next_title: "Smoke & CO Alarms"
 ---
 
  {{< drg/requirement number="5d" >}}

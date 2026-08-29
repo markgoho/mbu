@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Rope Care & Management"
+title: "Rope Care & Management"
 layout: guide
-group_title: "Rope Skills"
+group_title: "6. Rope Skills"
 req_number: "6"
 prev: "/merit-badges/climbing/guide/req5/"
-prev_title: "Req 5 — Communication on the Wall"
+prev_title: "Communication on the Wall"
 next: "/merit-badges/climbing/guide/req7/"
-next_title: "Req 7 — Essential Climbing Knots"
+next_title: "Essential Climbing Knots"
 ---
 
 {{< drg/requirement number="6" >}}

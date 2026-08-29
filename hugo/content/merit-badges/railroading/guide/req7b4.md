@@ -1,11 +1,11 @@
 ---
-title: "Req 7b4 — Plan and Take a Rail Trip"
+title: "Plan and Take a Rail Trip"
 layout: "guide"
-group_title: "Railfanning Option"
+group_title: "7. Railfanning Option"
 req_number: "7b4"
 req_path: "7.b.4"
 prev: "/merit-badges/railroading/guide/req7b3/"
-prev_title: "Req 7b3 — Rail Preservation Groups"
+prev_title: "Rail Preservation Groups"
 next: "/merit-badges/railroading/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

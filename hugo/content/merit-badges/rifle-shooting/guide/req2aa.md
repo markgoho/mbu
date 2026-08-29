@@ -1,13 +1,13 @@
 ---
-title: "Req 2aa — Three Main Parts of a Rifle"
+title: "Three Main Parts of a Rifle"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2aa"
 req_path: "2.a.a"
 prev: "/merit-badges/rifle-shooting/guide/req2a/"
-prev_title: "Req 2a — Option A Overview"
+prev_title: "Option A Overview"
 next: "/merit-badges/rifle-shooting/guide/req2ab/"
-next_title: "Req 2ab — Safe Storage and Handling"
+next_title: "Safe Storage and Handling"
 ---
 
 {{< drg/requirement number="2aa" >}}

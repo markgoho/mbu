@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — The Incident Command System"
+title: "The Incident Command System"
 layout: "guide"
-group_title: "Fighting the Fire"
+group_title: "7. Fighting the Fire"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/wildland-fire-management/guide/req7a/"
-prev_title: "Req 7a — Suppression Tactics"
+prev_title: "Suppression Tactics"
 next: "/merit-badges/wildland-fire-management/guide/req8/"
-next_title: "Req 8 — Suppression Tools & Equipment"
+next_title: "Suppression Tools & Equipment"
 ---
 
 {{< drg/requirement number="7b" >}}

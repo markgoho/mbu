@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Commodity Prices and Trends"
+title: "Commodity Prices and Trends"
 layout: "guide"
-group_title: "Commodity Prices and Trends"
+group_title: "7. Commodity Prices and Trends"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/mining-in-society/guide/req7c/"
-prev_title: "Req 7c — Recycling and Resource Recovery"
+prev_title: "Recycling and Resource Recovery"
 next: "/merit-badges/mining-in-society/guide/req8/"
-next_title: "Req 8 — Careers in Mining and Minerals"
+next_title: "Careers in Mining and Minerals"
 ---
 
 {{< drg/requirement number="7d" >}}

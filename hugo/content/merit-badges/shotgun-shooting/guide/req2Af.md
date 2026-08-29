@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-f — Range Procedures and Commands"
+title: "Range Procedures and Commands"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-f"
 req_path: "2.A.f"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ae/"
-prev_title: "Req 2A-e — Misfires, Hangfires, and Squib Fires"
+prev_title: "Misfires, Hangfires, and Squib Fires"
 next: "/merit-badges/shotgun-shooting/guide/req2Ag/"
-next_title: "Req 2A-g — Cleaning Safety Rules and Materials"
+next_title: "Cleaning Safety Rules and Materials"
 ---
 
 {{< drg/requirement number="2A-f" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8a3 — Crop Pests and Weeds"
+title: "Crop Pests and Weeds"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a3"
 req_path: "8.a.3"
 prev: "/merit-badges/plant-science/guide/req8a2/"
-prev_title: "Req 8a2 — Seed Germination Testing"
+prev_title: "Seed Germination Tester"
 next: "/merit-badges/plant-science/guide/req8a4/"
-next_title: "Req 8a4 — Major Crop Regions"
+next_title: "U.S. Crop Regions"
 ---
 
 {{< drg/requirement number="8a3" >}}

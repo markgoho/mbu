@@ -1,13 +1,13 @@
 ---
-title: "Req 1e — Gun Laws in Your Community and State"
+title: "Gun Laws in Your Community and State"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1e"
 req_path: "1.e"
 prev: "/merit-badges/shotgun-shooting/guide/req1d/"
-prev_title: "Req 1d — Eye and Hearing Protection"
+prev_title: "Eye and Hearing Protection"
 next: "/merit-badges/shotgun-shooting/guide/req1f/"
-next_title: "Req 1f — Hunting and Wildlife Resources"
+next_title: "Hunting and Wildlife Resources"
 ---
 
 {{< drg/requirement number="1e" >}}

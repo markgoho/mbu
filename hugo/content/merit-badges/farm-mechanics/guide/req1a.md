@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Safety Equipment & Clothing"
+title: "Safety Equipment & Clothing"
 layout: guide
-group_title: "Farm Shop Safety"
+group_title: "1. Farm Shop Safety"
 req_number: "1a"
 prev: "/merit-badges/farm-mechanics/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/farm-mechanics/guide/req1b/"
-next_title: "Req 1b — Design a Safe Farm Shop"
+next_title: "Design a Safe Farm Shop"
 ---
 
 {{< drg/requirement number="1a" >}}

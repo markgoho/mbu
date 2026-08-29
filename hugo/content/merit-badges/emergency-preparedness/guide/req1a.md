@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Five Aspects of Emergency Preparedness"
+title: "Five Aspects of Emergency Preparedness"
 layout: guide
-group_title: "Emergency Situations"
+group_title: "1. Emergency Situations"
 req_number: "1a"
 prev: "/merit-badges/emergency-preparedness/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/emergency-preparedness/guide/req1b/"
-next_title: "Requirement 1b — 10 Emergency Scenarios"
+next_title: "10 Emergency Scenarios"
 ---
 
 {{< drg/requirement number="1a" >}}

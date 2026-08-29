@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6b3 — Recording and Graphing Transect Data"
+title: "Recording and Graphing Transect Data"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6b3"
 req_path: "8.c.6.b.3"
 prev: "/merit-badges/plant-science/guide/req8c6b2/"
-prev_title: "Req 8c6b2 — Running a Transect"
+prev_title: "Run the Transect"
 next: "/merit-badges/plant-science/guide/req8c6c/"
-next_title: "Req 8c6c — Nested Plot Study"
+next_title: "Nested Plot"
 ---
 
 {{< drg/requirement number="8c6b3" >}}

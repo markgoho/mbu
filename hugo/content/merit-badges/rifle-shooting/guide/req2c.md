@@ -1,13 +1,13 @@
 ---
-title: "Req 2c — Option C Overview"
+title: "Option C Overview"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2c"
 req_path: "2.c"
 prev: "/merit-badges/rifle-shooting/guide/req2bj/"
-prev_title: "Req 2bj — Scored Grouping Exercise"
+prev_title: "Scored Grouping Exercise"
 next: "/merit-badges/rifle-shooting/guide/req2ca/"
-next_title: "Req 2ca — History of Muzzleloading Rifles"
+next_title: "History of Muzzleloading Rifles"
 ---
 
 {{< drg/requirement number="2" option="Muzzleloading Rifle Shooting" >}}

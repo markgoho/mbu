@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Consumer & Seller Protections"
+title: "Consumer & Seller Protections"
 layout: guide
-group_title: "Law in Action"
+group_title: "4. Law in Action"
 req_number: "5"
 prev: "/merit-badges/law/guide/req4/"
-prev_title: "Requirement 4 — Law Enforcement in Society"
+prev_title: "Law Enforcement in Society"
 next: "/merit-badges/law/guide/req6/"
-next_title: "Requirement 6 — Courtroom Experience"
+next_title: "Courtroom Experience"
 ---
 
 {{< drg/requirement number="5" >}}

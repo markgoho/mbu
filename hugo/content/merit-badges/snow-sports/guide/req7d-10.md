@@ -1,11 +1,11 @@
 ---
-title: "Req 7d10 — Map & Compass"
+title: "Map & Compass"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d10"
 req_path: "7.d.10"
 prev: "/merit-badges/snow-sports/guide/req7d9/"
-prev_title: "Req 7d9 — 2-Mile Snowshoe Hike"
+prev_title: "2-Mile Snowshoe Hike"
 next: "/merit-badges/snow-sports/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

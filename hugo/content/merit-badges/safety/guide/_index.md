@@ -4,62 +4,62 @@ layout: "guide"
 badge_name: "Safety"
 group_title: "Getting Started"
 next: "/merit-badges/safety/guide/req1/"
-next_title: "Req 1 — Safety and Hazards"
+next_title: "Safety and Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/safety/guide/"
         is_sub: false
-  - group_title: "Safety Foundations"
+  - group_title: "1. Safety Foundations"
     items:
-      - title: "Req 1 — Safety and Hazards"
+      - title: "1. Safety and Hazards"
         url: "/merit-badges/safety/guide/req1/"
         is_sub: false
-  - group_title: "Home and Family Safety"
+  - group_title: "2. Home and Family Safety"
     items:
-      - title: "Req 2 — Home Safety Plans"
+      - title: "2. Home Safety Plans"
         url: "/merit-badges/safety/guide/req2/"
         is_sub: false
-  - group_title: "Crime Prevention"
+  - group_title: "3. Crime Prevention"
     items:
-      - title: "Req 3 — Crime Awareness and Home Security"
+      - title: "3. Crime Awareness and Home Security"
         url: "/merit-badges/safety/guide/req3/"
         is_sub: false
-  - group_title: "Public Place Safety"
+  - group_title: "4. Public Place Safety"
     items:
-      - title: "Req 4 — Public Place Emergencies"
+      - title: "4. Public Place Emergencies"
         url: "/merit-badges/safety/guide/req4/"
         is_sub: false
-  - group_title: "Safeguarding Youth"
+  - group_title: "5. Safeguarding Youth"
     items:
-      - title: "Req 5 — Keeping Scouting Safe"
+      - title: "5. Keeping Scouting Safe"
         url: "/merit-badges/safety/guide/req5/"
         is_sub: false
-  - group_title: "Personal Safety"
+  - group_title: "6. Personal Safety"
     items:
-      - title: "Req 6 — Avoiding Assault Risks"
+      - title: "6. Avoiding Assault Risks"
         url: "/merit-badges/safety/guide/req6/"
         is_sub: false
-  - group_title: "Digital Safety"
+  - group_title: "7. Digital Safety"
     items:
-      - title: "Req 7 — Smart Online Safety"
+      - title: "7. Smart Online Safety"
         url: "/merit-badges/safety/guide/req7/"
         is_sub: false
-  - group_title: "Travel Safety"
+  - group_title: "8. Travel Safety"
     items:
-      - title: "Req 8 — Safer Ways to Travel"
+      - title: "8. Safer Ways to Travel"
         url: "/merit-badges/safety/guide/req8/"
         is_sub: false
-  - group_title: "Careers and Service"
+  - group_title: "9. Careers and Service"
     items:
-      - title: "Req 9 — Choose Your Safety Path"
+      - title: "9. Choose Your Safety Path"
         url: "/merit-badges/safety/guide/req9/"
         is_sub: false
-      - title: "Req 9a — Safety Careers"
+      - title: "a Safety Careers"
         url: "/merit-badges/safety/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Safety in Service and Lifestyle"
+      - title: "b Safety in Service and Lifestyle"
         url: "/merit-badges/safety/guide/req9b/"
         is_sub: true
   - group_title: "Beyond the Badge"

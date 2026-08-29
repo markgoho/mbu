@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Edit for Impact"
+title: "Edit for Impact"
 layout: "guide"
-group_title: "Editing for Impact"
+group_title: "6. Editing for Impact"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/photography/guide/req5f/"
-prev_title: "Req 5f — Photograph a Person Intentionally"
+prev_title: "Photograph a Person Intentionally"
 next: "/merit-badges/photography/guide/req6a/"
-next_title: "Req 6a — Crop for Stronger Framing"
+next_title: "Crop for Stronger Framing"
 ---
 
 {{< drg/requirement number="6" >}}

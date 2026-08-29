@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — The Shape of the Seafloor"
+title: "The Shape of the Seafloor"
 layout: "guide"
-group_title: "Underwater Landscapes"
+group_title: "4. Underwater Landscapes"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/oceanography/guide/req3/"
-prev_title: "Req 3 — Waves, Breakers & Rip Currents"
+prev_title: "Waves, Breakers & Rip Currents"
 next: "/merit-badges/oceanography/guide/req5/"
-next_title: "Req 5 — Seawater Chemistry"
+next_title: "Seawater Chemistry"
 ---
 
 {{< drg/requirement number="4" >}}

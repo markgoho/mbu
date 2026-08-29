@@ -1,12 +1,12 @@
 ---
-title: "Req 2e — Screen Repair"
+title: "Screen Repair"
 layout: guide
-group_title: "Outdoor Repairs"
+group_title: "2. Outdoor Repairs"
 req_number: "2e"
 prev: "/merit-badges/home-repairs/guide/req2d/"
-prev_title: "Req 2d — Patching Concrete or Asphalt"
+prev_title: "Patching Concrete or Asphalt"
 next: "/merit-badges/home-repairs/guide/req2f/"
-next_title: "Req 2f — Replacing a Window Pane"
+next_title: "Replacing a Window Pane"
 ---
 
 {{< drg/requirement number="2e" >}}

@@ -4,97 +4,97 @@ layout: "guide"
 badge_name: "Soil and Water Conservation"
 group_title: "Getting Started"
 next: "/merit-badges/soil-and-water-conservation/guide/req1/"
-next_title: "Req 1 — Soil Fundamentals"
+next_title: "Soil Fundamentals"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/soil-and-water-conservation/guide/"
         is_sub: false
-  - group_title: "Soil Basics"
+  - group_title: "1. Soil Basics"
     items:
-      - title: "Req 1 — Soil Fundamentals"
+      - title: "1. Soil Fundamentals"
         url: "/merit-badges/soil-and-water-conservation/guide/req1/"
         is_sub: false
-  - group_title: "Erosion in Action"
+  - group_title: "2. Erosion in Action"
     items:
-      - title: "Req 2 — Understanding Soil Erosion"
+      - title: "2. Understanding Soil Erosion"
         url: "/merit-badges/soil-and-water-conservation/guide/req2/"
         is_sub: false
-  - group_title: "Saving Soil"
+  - group_title: "3. Saving Soil"
     items:
-      - title: "Req 3 — Erosion-Control Practices"
+      - title: "3. Erosion-Control Practices"
         url: "/merit-badges/soil-and-water-conservation/guide/req3/"
         is_sub: false
-  - group_title: "Watersheds & Groundwater"
+  - group_title: "4. Watersheds & Groundwater"
     items:
-      - title: "Req 4 — Watersheds, Basins & Aquifers"
+      - title: "4. Watersheds, Basins & Aquifers"
         url: "/merit-badges/soil-and-water-conservation/guide/req4/"
         is_sub: false
-  - group_title: "Water on the Move"
+  - group_title: "5. Water on the Move"
     items:
-      - title: "Req 5 — The Water Cycle & Runoff"
+      - title: "5. The Water Cycle & Runoff"
         url: "/merit-badges/soil-and-water-conservation/guide/req5/"
         is_sub: false
-  - group_title: "Pollution & Treatment"
+  - group_title: "6. Pollution & Treatment"
     items:
-      - title: "Req 6 — Water Pollution & Waste Treatment"
+      - title: "6. Water Pollution & Waste Treatment"
         url: "/merit-badges/soil-and-water-conservation/guide/req6/"
         is_sub: false
-  - group_title: "Conservation Projects"
+  - group_title: "7. Conservation Projects"
     items:
-      - title: "Req 7 — Choose Two Conservation Projects"
+      - title: "7. Choose Two Conservation Projects"
         url: "/merit-badges/soil-and-water-conservation/guide/req7/"
         is_sub: false
-  - group_title: "Field Visits & Reports"
+  - group_title: "7. Field Visits & Reports"
     items:
-      - title: "Req 7a — Visit Two Conservation Sites"
+      - title: "a Visit Two Conservation Sites"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a/"
         is_sub: false
-      - title: "Req 7a1 — Agricultural Experiment"
+      - title: "a Agricultural Experiment"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a1/"
         is_sub: true
-      - title: "Req 7a2 — Managed Forest, Range, or Pasture"
+      - title: "a Managed Forest, Range, or Pasture"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a2/"
         is_sub: true
-      - title: "Req 7a3 — Wildlife Refuge or Game Area"
+      - title: "a Wildlife Refuge or Game Area"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a3/"
         is_sub: true
-      - title: "Req 7a4 — Conservation-Managed Farm or Ranch"
+      - title: "a Conservation-Managed Farm or Ranch"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a4/"
         is_sub: true
-      - title: "Req 7a5 — Managed Watershed"
+      - title: "a Managed Watershed"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a5/"
         is_sub: true
-      - title: "Req 7a6 — Waste-Treatment Plant"
+      - title: "a Waste-Treatment Plant"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a6/"
         is_sub: true
-      - title: "Req 7a7 — Drinking Water Treatment Plant"
+      - title: "a Drinking Water Treatment Plant"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a7/"
         is_sub: true
-      - title: "Req 7a8 — Industry Water Use Installation"
+      - title: "a Industry Water Use Installation"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a8/"
         is_sub: true
-      - title: "Req 7a9 — Desalination Plant"
+      - title: "a Desalination Plant"
         url: "/merit-badges/soil-and-water-conservation/guide/req7a9/"
         is_sub: true
-  - group_title: "Planting & Restoration"
+  - group_title: "7. Planting & Restoration"
     items:
-      - title: "Req 7b — Plant for a Purpose"
+      - title: "b Plant for a Purpose"
         url: "/merit-badges/soil-and-water-conservation/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Seed a Conservation Plot"
+      - title: "c Seed a Conservation Plot"
         url: "/merit-badges/soil-and-water-conservation/guide/req7c/"
         is_sub: true
-  - group_title: "Local Problem Solving"
+  - group_title: "7. Local Problem Solving"
     items:
-      - title: "Req 7d — Map Soils with a Survey Report"
+      - title: "d Map Soils with a Survey Report"
         url: "/merit-badges/soil-and-water-conservation/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — Find and Fix Local Problems"
+      - title: "e Find and Fix Local Problems"
         url: "/merit-badges/soil-and-water-conservation/guide/req7e/"
         is_sub: true
-      - title: "Req 7f — Design Your Own Conservation Project"
+      - title: "f Design Your Own Conservation Project"
         url: "/merit-badges/soil-and-water-conservation/guide/req7f/"
         is_sub: true
   - group_title: "Beyond the Badge"

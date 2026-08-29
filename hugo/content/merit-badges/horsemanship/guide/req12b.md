@@ -1,10 +1,10 @@
 ---
-title: "Req 12b — Horsemanship as a Hobby or Lifestyle"
+title: "Horsemanship as a Hobby or Lifestyle"
 layout: guide
-group_title: "Careers and Lifelong Riding"
+group_title: "12. Careers and Lifelong Riding"
 req_number: "12b"
 prev: "/merit-badges/horsemanship/guide/req12a/"
-prev_title: "Req 12a — Careers Working With Horses"
+prev_title: "Careers Working With Horses"
 next: "/merit-badges/horsemanship/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

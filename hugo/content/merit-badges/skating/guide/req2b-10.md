@@ -1,13 +1,13 @@
 ---
-title: "Req 2b10 — Shuttle Skate"
+title: "Shuttle Skate"
 layout: "guide"
-group_title: "Option B — Roller Skating"
+group_title: "2. Option B — Roller Skating"
 req_number: "2b10"
 req_path: "2.b.10"
 prev: "/merit-badges/skating/guide/req2b9/"
-prev_title: "Req 2b9 — Backward Slalom"
+prev_title: "Backward Slalom"
 next: "/merit-badges/skating/guide/req2b-11/"
-next_title: "Req 2b11 — Spins or Hop-Skip-Jump"
+next_title: "Spins or Hop-Skip-Jump"
 ---
 
 {{< drg/requirement number="2b10" >}}

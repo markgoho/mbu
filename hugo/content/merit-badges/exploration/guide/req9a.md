@@ -1,13 +1,13 @@
 ---
-title: "Req 9a — Research an Exploration Career"
+title: "Research an Exploration Career"
 layout: "guide"
-group_title: "Exploration Futures"
+group_title: "9. Exploration Futures"
 req_number: "9a"
 req_path: "9.a"
 prev: "/merit-badges/exploration/guide/req9/"
-prev_title: "Req 9 — Choose Your Next Path"
+prev_title: "Choose Your Next Path"
 next: "/merit-badges/exploration/guide/req9b/"
-next_title: "Req 9b — Turn Curiosity into a Hobby"
+next_title: "Turn Curiosity into a Hobby"
 ---
 
 {{< drg/requirement number="9a" >}}

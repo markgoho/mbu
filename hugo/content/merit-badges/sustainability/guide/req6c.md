@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Waste & Recycling"
+title: "Waste & Recycling"
 layout: guide
-group_title: "Stuff & Waste"
+group_title: "6. Stuff & Waste"
 req_number: "6c"
 prev: "/merit-badges/sustainability/guide/req6b/"
-prev_title: "Req 6b — Impact of Too Much Stuff"
+prev_title: "Impact of Too Much Stuff"
 next: "/merit-badges/sustainability/guide/req7a/"
-next_title: "Req 7a — UN Development Goals"
+next_title: "UN Development Goals"
 ---
 
 {{< drg/requirement number="6c" >}}

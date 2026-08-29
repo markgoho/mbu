@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Public Meeting Report"
+title: "Public Meeting Report"
 layout: guide
-group_title: "Critical Listening & Reporting"
+group_title: "5. Critical Listening & Reporting"
 req_number: "5"
 prev: "/merit-badges/communication/guide/req4/"
-prev_title: "Req 4 — Conducting an Interview"
+prev_title: "Conducting an Interview"
 next: "/merit-badges/communication/guide/req6/"
-next_title: "Req 6 — Teach a Skill"
+next_title: "Teach a Skill"
 ---
 
 {{< drg/requirement number="5" >}}

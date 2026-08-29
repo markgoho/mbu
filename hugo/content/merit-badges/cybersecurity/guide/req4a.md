@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Threats & Vulnerabilities"
+title: "Threats & Vulnerabilities"
 layout: guide
-group_title: "Threats & Attacks"
+group_title: "4. Threats & Attacks"
 req_number: "4a"
 prev: "/merit-badges/cybersecurity/guide/req3b/"
-prev_title: "Req 3b — The CIA Triad"
+prev_title: "The CIA Triad"
 next: "/merit-badges/cybersecurity/guide/req4b/"
-next_title: "Req 4b — Malware"
+next_title: "Malware"
 ---
 
 {{< drg/requirement number="4a" >}}

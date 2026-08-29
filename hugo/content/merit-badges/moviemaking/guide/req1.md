@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Film Language Basics"
+title: "Film Language Basics"
 layout: "guide"
-group_title: "Film Language"
+group_title: "1. Film Language"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/moviemaking/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/moviemaking/guide/req2a/"
-next_title: "Req 2a — Write the Treatment"
+next_title: "Write the Treatment"
 ---
 
 {{< drg/requirement number="1" >}}

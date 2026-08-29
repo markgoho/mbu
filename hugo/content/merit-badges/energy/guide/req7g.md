@@ -1,13 +1,13 @@
 ---
-title: "Req 7g — Solar Power Systems"
+title: "Solar Power Systems"
 layout: "guide"
-group_title: "Solar"
+group_title: "7. Solar"
 req_number: "7g"
 req_path: "7.g"
 prev: "/merit-badges/energy/guide/req7f/"
-prev_title: "Req 7f — Nuclear Power"
+prev_title: "Nuclear Power"
 next: "/merit-badges/energy/guide/req7h/"
-next_title: "Req 7h — Ocean Energy Systems"
+next_title: "Ocean Energy Systems"
 ---
 
 {{< drg/inherited-requirement number="7g" req_path="7.g" topic="Solar power systems" />}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Plan an Expedition That Works"
+title: "Plan an Expedition That Works"
 layout: "guide"
-group_title: "Planning the Mission"
+group_title: "6. Planning the Mission"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/exploration/guide/req5b/"
-prev_title: "Req 5b — Visit a Research Facility"
+prev_title: "Visit a Research Facility"
 next: "/merit-badges/exploration/guide/req7/"
-next_title: "Req 7 — Prepare for the Real Thing"
+next_title: "Prepare for the Real Thing"
 ---
 
 {{< drg/requirement number="6" >}}

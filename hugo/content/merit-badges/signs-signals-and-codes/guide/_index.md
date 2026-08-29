@@ -4,82 +4,82 @@ layout: "guide"
 badge_name: "Signs, Signals, and Codes"
 group_title: "Getting Started"
 next: "/merit-badges/signs-signals-and-codes/guide/req1/"
-next_title: "Req 1 — Why Humans Need Shared Signals"
+next_title: "Why Humans Need Shared Signals"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/signs-signals-and-codes/guide/"
         is_sub: false
-  - group_title: "Why Communication Systems Matter"
+  - group_title: "1. Why Communication Systems Matter"
     items:
-      - title: "Req 1 — Why Humans Need Shared Signals"
+      - title: "1. Why Humans Need Shared Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req1/"
         is_sub: false
-  - group_title: "Emergency Communication"
+  - group_title: "2. Emergency Communication"
     items:
-      - title: "Req 2 — Distress Signals That Get You Found"
+      - title: "2. Distress Signals That Get You Found"
         url: "/merit-badges/signs-signals-and-codes/guide/req2/"
         is_sub: false
-  - group_title: "Language Beyond Speech"
+  - group_title: "3. Language Beyond Speech"
     items:
-      - title: "Req 3 — Morse Code and ASL in Action"
+      - title: "3. Morse Code and ASL in Action"
         url: "/merit-badges/signs-signals-and-codes/guide/req3/"
         is_sub: false
-  - group_title: "Flag Signaling"
+  - group_title: "4. Flag Signaling"
     items:
-      - title: "Req 4a — How Semaphore Works"
+      - title: "a How Semaphore Works"
         url: "/merit-badges/signs-signals-and-codes/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Semaphore Flags vs. Nautical Flags"
+      - title: "b Semaphore Flags vs. Nautical Flags"
         url: "/merit-badges/signs-signals-and-codes/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Practice With Flags"
+      - title: "c Practice With Flags"
         url: "/merit-badges/signs-signals-and-codes/guide/req4c/"
         is_sub: true
-  - group_title: "Communication by Touch"
+  - group_title: "5. Communication by Touch"
     items:
-      - title: "Req 5 — Reading and Writing Braille"
+      - title: "5. Reading and Writing Braille"
         url: "/merit-badges/signs-signals-and-codes/guide/req5/"
         is_sub: false
-  - group_title: "Group Signaling"
+  - group_title: "6. Group Signaling"
     items:
-      - title: "Req 6 — Sound Signals and Silent Scout Signals"
+      - title: "6. Sound Signals and Silent Scout Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req6/"
         is_sub: false
-  - group_title: "Trail Communication"
+  - group_title: "7. Trail Communication"
     items:
-      - title: "Req 7 — Trail Markers With Outdoor Ethics"
+      - title: "7. Trail Markers With Outdoor Ethics"
         url: "/merit-badges/signs-signals-and-codes/guide/req7/"
         is_sub: false
-  - group_title: "Specialized Signal Systems"
+  - group_title: "8. Specialized Signal Systems"
     items:
-      - title: "Req 8 — Choose Three Real-World Signal Systems"
+      - title: "8. Choose Three Real-World Signal Systems"
         url: "/merit-badges/signs-signals-and-codes/guide/req8/"
         is_sub: false
-      - title: "Req 8a — Sports Officiating Signals"
+      - title: "a Sports Officiating Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Heavy-Equipment Hand Signals"
+      - title: "b Heavy-Equipment Hand Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Aircraft Carrier Deck Signals"
+      - title: "c Aircraft Carrier Deck Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — Cyclist Hand Signals"
+      - title: "d Cyclist Hand Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — Your Custom Signal Set"
+      - title: "e Your Custom Signal Set"
         url: "/merit-badges/signs-signals-and-codes/guide/req8e/"
         is_sub: true
-  - group_title: "Symbols and Meaning"
+  - group_title: "9. Symbols and Meaning"
     items:
-      - title: "Req 9 — Symbols in Daily Life"
+      - title: "9. Symbols in Daily Life"
         url: "/merit-badges/signs-signals-and-codes/guide/req9/"
         is_sub: false
-  - group_title: "Hidden Messages"
+  - group_title: "10. Hidden Messages"
     items:
-      - title: "Req 10 — Secret Codes and Cryptography"
+      - title: "10. Secret Codes and Cryptography"
         url: "/merit-badges/signs-signals-and-codes/guide/req10/"
         is_sub: false
   - group_title: "Beyond the Badge"

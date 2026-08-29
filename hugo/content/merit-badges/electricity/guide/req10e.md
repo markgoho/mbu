@@ -1,12 +1,12 @@
 ---
-title: "Req 10e — How a 3-Way Switch Works"
+title: "How a 3-Way Switch Works"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10e"
 prev: "/merit-badges/electricity/guide/req10d/"
-prev_title: "Req 10d — Single-Pole, Double-Throw Switch"
+prev_title: "Single-Pole, Double-Throw Switch"
 next: "/merit-badges/electricity/guide/req10f/"
-next_title: "Req 10f — Series vs. Parallel Circuits"
+next_title: "Series vs. Parallel Circuits"
 ---
 
 {{< drg/requirement number="10e" >}}

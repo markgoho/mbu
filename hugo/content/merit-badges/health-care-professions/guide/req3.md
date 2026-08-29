@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Recovery, Communication, and Movement"
+title: "Recovery, Communication, and Movement"
 layout: guide
-group_title: "Rehabilitation and Daily Living"
+group_title: "3. Rehabilitation and Daily Living"
 req_number: "3"
 prev: "/merit-badges/health-care-professions/guide/req2/"
-prev_title: "Req 2 — Bedside Care and Fast Decisions"
+prev_title: "Bedside Care and Fast Decisions"
 next: "/merit-badges/health-care-professions/guide/req4/"
-next_title: "Req 4 — Testing, Imaging, and Behind-the-Scenes Care"
+next_title: "Testing, Imaging, and Behind-the-Scenes Care"
 ---
 
 {{< drg/requirement number="3" >}}

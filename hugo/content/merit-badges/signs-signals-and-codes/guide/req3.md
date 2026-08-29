@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Morse Code and ASL in Action"
+title: "Morse Code and ASL in Action"
 layout: "guide"
-group_title: "Language Beyond Speech"
+group_title: "3. Language Beyond Speech"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/signs-signals-and-codes/guide/req2/"
-prev_title: "Req 2 — Distress Signals That Get You Found"
+prev_title: "Distress Signals That Get You Found"
 next: "/merit-badges/signs-signals-and-codes/guide/req4a/"
-next_title: "Req 4a — How Semaphore Works"
+next_title: "How Semaphore Works"
 ---
 
 {{< drg/requirement number="3" >}}

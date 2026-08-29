@@ -4,67 +4,67 @@ layout: guide
 badge_name: "Fly Fishing"
 group_title: "Getting Started"
 next: "/merit-badges/fly-fishing/guide/req1a/"
-next_title: "Req 1a — Hazards on the Water"
+next_title: "Hazards on the Water"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/fly-fishing/guide/"
-  - group_title: "Safety First"
+  - group_title: "1. Safety First"
     items:
-      - title: "Req 1a — Hazards on the Water"
+      - title: "a Hazards on the Water"
         url: "/merit-badges/fly-fishing/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Preventing Fishing Injuries"
+      - title: "b Preventing Fishing Injuries"
         url: "/merit-badges/fly-fishing/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Removing a Hook Safely"
+      - title: "c Removing a Hook Safely"
         url: "/merit-badges/fly-fishing/guide/req1c/"
         is_sub: true
-  - group_title: "Gear & Rigging"
+  - group_title: "2. Gear & Rigging"
     items:
-      - title: "Req 2 — Balanced Fly Tackle"
+      - title: "2. Balanced Fly Tackle"
         url: "/merit-badges/fly-fishing/guide/req2/"
-      - title: "Req 3a — Backing to the Reel"
+      - title: "a Backing to the Reel"
         url: "/merit-badges/fly-fishing/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Backing to the Fly Line"
+      - title: "b Backing to the Fly Line"
         url: "/merit-badges/fly-fishing/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Leader to Fly Line"
+      - title: "c Leader to Fly Line"
         url: "/merit-badges/fly-fishing/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Tippet Connections"
+      - title: "d Tippet Connections"
         url: "/merit-badges/fly-fishing/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Tying on the Fly"
+      - title: "e Tying on the Fly"
         url: "/merit-badges/fly-fishing/guide/req3e/"
         is_sub: true
-  - group_title: "Reading Fish & Water"
+  - group_title: "4. Reading Fish & Water"
     items:
-      - title: "Req 4 — Fly Types and Imitation"
+      - title: "4. Fly Types and Imitation"
         url: "/merit-badges/fly-fishing/guide/req4/"
-      - title: "Req 5 — Casting with Control"
+      - title: "5. Casting with Control"
         url: "/merit-badges/fly-fishing/guide/req5/"
-      - title: "Req 6 — Matching the Hatch"
+      - title: "6. Matching the Hatch"
         url: "/merit-badges/fly-fishing/guide/req6/"
-  - group_title: "Ethics & Stewardship"
+  - group_title: "7. Ethics & Stewardship"
     items:
-      - title: "Req 7a — Leave No Trace on the Water"
+      - title: "a Leave No Trace on the Water"
         url: "/merit-badges/fly-fishing/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Catch and Release"
+      - title: "b Catch and Release"
         url: "/merit-badges/fly-fishing/guide/req7b/"
         is_sub: true
-      - title: "Req 8 — Fishing Regulations"
+      - title: "8. Fishing Regulations"
         url: "/merit-badges/fly-fishing/guide/req8/"
-      - title: "Req 9 — Sportsmanship for Anglers"
+      - title: "9. Sportsmanship for Anglers"
         url: "/merit-badges/fly-fishing/guide/req9/"
-  - group_title: "On-the-Water Skills"
+  - group_title: "10. On-the-Water Skills"
     items:
-      - title: "Req 10 — Catch and Identify a Fish"
+      - title: "10. Catch and Identify a Fish"
         url: "/merit-badges/fly-fishing/guide/req10/"
-      - title: "Req 11 — Clean and Cook Your Catch"
+      - title: "11. Clean and Cook Your Catch"
         url: "/merit-badges/fly-fishing/guide/req11/"
   - group_title: "Beyond the Badge"
     items:

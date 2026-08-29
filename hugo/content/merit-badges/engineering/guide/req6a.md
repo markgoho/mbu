@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Transforming Motion"
+title: "Transforming Motion"
 layout: guide
-group_title: "Hands-On Engineering"
+group_title: "6. Hands-On Engineering"
 req_number: "6a"
 prev: "/merit-badges/engineering/guide/req6/"
-prev_title: "Req 6 — Engineering Activities"
+prev_title: "Engineering Activities"
 next: "/merit-badges/engineering/guide/req6b/"
-next_title: "Req 6b — Using Electricity"
+next_title: "Using Electricity"
 ---
 
 {{< drg/requirement number="6a" >}}

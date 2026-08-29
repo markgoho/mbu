@@ -1,12 +1,12 @@
 ---
-title: "Req 4b3 — Tools for Finding Oil and Gas"
+title: "Tools for Finding Oil and Gas"
 layout: guide
-group_title: "Energy Resources"
+group_title: "4. Energy Resources"
 req_number: "4b3"
 prev: "/merit-badges/geology/guide/req4b2/"
-prev_title: "Req 4b2 — Source, Trap, and Reservoir"
+prev_title: "Source, Trap, and Reservoir"
 next: "/merit-badges/geology/guide/req4b4/"
-next_title: "Req 4b4 — Subsurface Structure Maps"
+next_title: "Subsurface Structure Maps"
 ---
 
 {{< drg/requirement number="4b3" >}}

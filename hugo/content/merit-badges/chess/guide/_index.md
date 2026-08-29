@@ -4,74 +4,74 @@ layout: guide
 badge_name: "Chess"
 group_title: "Getting Started"
 next: "/merit-badges/chess/guide/req1a/"
-next_title: "Req 1a — History of Chess"
+next_title: "History of Chess"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/chess/guide/"
-  - group_title: "The Royal Game"
+  - group_title: "1. The Royal Game"
     items:
-      - title: "Req 1a — History of Chess"
+      - title: "a History of Chess"
         url: "/merit-badges/chess/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Famous Chess Players"
+      - title: "b Famous Chess Players"
         url: "/merit-badges/chess/guide/req1b/"
         is_sub: true
-  - group_title: "The Thinking Game"
+  - group_title: "2. The Thinking Game"
     items:
-      - title: "Req 2 — Strategy, Benefits & Etiquette"
+      - title: "2. Strategy, Benefits & Etiquette"
         url: "/merit-badges/chess/guide/req2/"
-  - group_title: "Know Your Pieces"
+  - group_title: "3. Know Your Pieces"
     items:
-      - title: "Req 3a — Chess Piece Names"
+      - title: "a Chess Piece Names"
         url: "/merit-badges/chess/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Setting Up the Board"
+      - title: "b Setting Up the Board"
         url: "/merit-badges/chess/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — How Pieces Move & Capture"
+      - title: "c How Pieces Move & Capture"
         url: "/merit-badges/chess/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Five Ways to Draw"
+      - title: "d Five Ways to Draw"
         url: "/merit-badges/chess/guide/req3d/"
         is_sub: true
-  - group_title: "Mastering the Game"
+  - group_title: "4. Mastering the Game"
     items:
-      - title: "Req 4a — Algebraic Notation"
+      - title: "a Algebraic Notation"
         url: "/merit-badges/chess/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Opening, Middle & Endgame"
+      - title: "b Opening, Middle & Endgame"
         url: "/merit-badges/chess/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Opening Principles & Openings"
+      - title: "c Opening Principles & Openings"
         url: "/merit-badges/chess/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Famous Checkmates & Traps"
+      - title: "d Famous Checkmates & Traps"
         url: "/merit-badges/chess/guide/req4d/"
         is_sub: true
-  - group_title: "Tactics & Endgames"
+  - group_title: "5. Tactics & Endgames"
     items:
-      - title: "Req 5a — Chess Strategy"
+      - title: "a Chess Strategy"
         url: "/merit-badges/chess/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Chess Tactics"
+      - title: "b Chess Tactics"
         url: "/merit-badges/chess/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Checkmate with Major Pieces"
+      - title: "c Checkmate with Major Pieces"
         url: "/merit-badges/chess/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — King & Pawn Endgames"
+      - title: "d King & Pawn Endgames"
         url: "/merit-badges/chess/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Solving Mate Problems"
+      - title: "e Solving Mate Problems"
         url: "/merit-badges/chess/guide/req5e/"
         is_sub: true
-  - group_title: "Competition"
+  - group_title: "6. Competition"
     items:
-      - title: "Req 6 — Chess Tournaments"
+      - title: "6. Chess Tournaments"
         url: "/merit-badges/chess/guide/req6/"
-      - title: "Req 7 — Play & Review Games"
+      - title: "7. Play & Review Games"
         url: "/merit-badges/chess/guide/req7/"
   - group_title: "Beyond the Badge"
     items:

@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Studio Tour"
+title: "Studio Tour"
 layout: guide
-group_title: "Animation in the Real World"
+group_title: "4. Animation in the Real World"
 req_number: "4a"
 prev: "/merit-badges/animation/guide/req3/"
-prev_title: "Req 3 — Create Your Animations"
+prev_title: "Create Your Animations"
 next: "/merit-badges/animation/guide/req4b/"
-next_title: "Req 4b — The Future of Animation"
+next_title: "The Future of Animation"
 ---
 
 {{< drg/requirement number="4a" >}}

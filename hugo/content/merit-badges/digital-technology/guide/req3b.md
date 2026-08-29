@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Lossy vs. Lossless Compression"
+title: "Lossy vs. Lossless Compression"
 layout: guide
-group_title: "How Digital Data Works"
+group_title: "3. How Digital Data Works"
 req_number: "3b"
 prev: "/merit-badges/digital-technology/guide/req3a/"
-prev_title: "Req 3a — Digitizing Text, Sound & Images"
+prev_title: "Digitizing Text, Sound & Images"
 next: "/merit-badges/digital-technology/guide/req3c/"
-next_title: "Req 3c — Programmable Devices"
+next_title: "Programmable Devices"
 ---
 
 {{< drg/requirement number="3b" >}}

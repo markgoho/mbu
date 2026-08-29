@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Using Fishing Equipment"
+title: "Using Fishing Equipment"
 layout: guide
-group_title: "Gear & Tackle"
+group_title: "2. Gear & Tackle"
 req_number: "3"
 prev: "/merit-badges/fishing/guide/req2/"
-prev_title: "Req 2 — Fishing Outfits & Equipment Care"
+prev_title: "Fishing Outfits & Equipment Care"
 next: "/merit-badges/fishing/guide/req4/"
-next_title: "Req 4 — Essential Fishing Knots"
+next_title: "Essential Fishing Knots"
 ---
 
 {{< drg/requirement number="3" >}}

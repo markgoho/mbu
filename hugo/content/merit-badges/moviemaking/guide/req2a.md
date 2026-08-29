@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — Write the Treatment"
+title: "Write the Treatment"
 layout: "guide"
-group_title: "Planning Your Movie"
+group_title: "2. Planning Your Movie"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/moviemaking/guide/req1/"
-prev_title: "Req 1 — Film Language Basics"
+prev_title: "Film Language Basics"
 next: "/merit-badges/moviemaking/guide/req2b/"
-next_title: "Req 2b — Build the Storyboard"
+next_title: "Build the Storyboard"
 ---
 
 {{< drg/requirement number="2a" >}}

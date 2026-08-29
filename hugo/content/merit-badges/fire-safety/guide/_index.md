@@ -4,85 +4,85 @@ layout: guide
 badge_name: "Fire Safety"
 group_title: "Getting Started"
 next: "/merit-badges/fire-safety/guide/req1/"
-next_title: "Req 1 — Fire Science & Hazards"
+next_title: "Fire Science & Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/fire-safety/guide/"
-  - group_title: "Fire Science & Hazards"
+  - group_title: "1. Fire Science & Hazards"
     items:
-      - title: "Req 1 — Fire Science & Hazards"
+      - title: "1. Fire Science & Hazards"
         url: "/merit-badges/fire-safety/guide/req1/"
         is_sub: true
-  - group_title: "Fire Extinguishers"
+  - group_title: "2. Fire Extinguishers"
     items:
-      - title: "Req 2 — Fire Extinguishers"
+      - title: "2. Fire Extinguishers"
         url: "/merit-badges/fire-safety/guide/req2/"
         is_sub: true
-  - group_title: "Fire-Related Injuries"
+  - group_title: "3. Fire-Related Injuries"
     items:
-      - title: "Req 3a — Stop, Drop, Roll, Cool, Call"
+      - title: "a Stop, Drop, Roll, Cool, Call"
         url: "/merit-badges/fire-safety/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Clothing Fires"
+      - title: "b Clothing Fires"
         url: "/merit-badges/fire-safety/guide/req3b/"
         is_sub: true
-      - title: "Req 3c–3d — Burns & Carbon Monoxide"
+      - title: "c Burns & Carbon Monoxide"
         url: "/merit-badges/fire-safety/guide/req3cd/"
         is_sub: true
-  - group_title: "Fire Origins & Causes"
+  - group_title: "4. Fire Origins & Causes"
     items:
-      - title: "Req 4 — Fire Origins"
+      - title: "4. Fire Origins"
         url: "/merit-badges/fire-safety/guide/req4/"
         is_sub: true
-  - group_title: "Home Fire Safety"
+  - group_title: "5. Home Fire Safety"
     items:
-      - title: "Req 5a–5b — Common Home Fire Hazards"
+      - title: "a Common Home Fire Hazards"
         url: "/merit-badges/fire-safety/guide/req5ab/"
         is_sub: true
-      - title: "Req 5c — Candle Safety"
+      - title: "c Candle Safety"
         url: "/merit-badges/fire-safety/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Home Fire Hazard Inspection"
+      - title: "d Home Fire Hazard Inspection"
         url: "/merit-badges/fire-safety/guide/req5d/"
         is_sub: true
-      - title: "Req 5e–5f — Smoke & CO Alarms"
+      - title: "e Smoke & CO Alarms"
         url: "/merit-badges/fire-safety/guide/req5ef/"
         is_sub: true
-      - title: "Req 5g — Home Fire Escape Plan"
+      - title: "g Home Fire Escape Plan"
         url: "/merit-badges/fire-safety/guide/req5g/"
         is_sub: true
-      - title: "Req 5h–5i — Gas, Smoke & Reporting Fires"
+      - title: "h Gas, Smoke & Reporting Fires"
         url: "/merit-badges/fire-safety/guide/req5hi/"
         is_sub: true
-  - group_title: "Flammable & Combustible Liquids"
+  - group_title: "6. Flammable & Combustible Liquids"
     items:
-      - title: "Req 6 — Safe Storage & Handling"
+      - title: "6. Safe Storage & Handling"
         url: "/merit-badges/fire-safety/guide/req6/"
         is_sub: true
-  - group_title: "Public Building Safety"
+  - group_title: "7. Public Building Safety"
     items:
-      - title: "Req 7 — Fire Safety in Public Buildings"
+      - title: "7. Fire Safety in Public Buildings"
         url: "/merit-badges/fire-safety/guide/req7/"
         is_sub: true
-  - group_title: "Camping & Wildland Fire"
+  - group_title: "8. Camping & Wildland Fire"
     items:
-      - title: "Req 8 — Fire Safety at Camp"
+      - title: "8. Fire Safety at Camp"
         url: "/merit-badges/fire-safety/guide/req8/"
         is_sub: true
-      - title: "Req 9 — Wildland Fires"
+      - title: "9. Wildland Fires"
         url: "/merit-badges/fire-safety/guide/req9/"
         is_sub: true
-  - group_title: "Careers & Beyond"
+  - group_title: "10. Careers & Beyond"
     items:
-      - title: "Req 10 — Fire Service Careers"
+      - title: "10. Fire Service Careers"
         url: "/merit-badges/fire-safety/guide/req10/"
         is_sub: true
-      - title: "Req 10a — Visit a Fire Station"
+      - title: "a Visit a Fire Station"
         url: "/merit-badges/fire-safety/guide/req10a/"
         is_sub: true
-      - title: "Req 10b — Research a Fire Safety Career"
+      - title: "b Research a Fire Safety Career"
         url: "/merit-badges/fire-safety/guide/req10b/"
         is_sub: true
   - group_title: "Beyond the Badge"

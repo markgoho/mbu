@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Why They Matter"
+title: "Why They Matter"
 layout: "guide"
-group_title: "Ecology & Conservation"
+group_title: "4. Ecology & Conservation"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req3/"
-prev_title: "Req 3 — Spot the Differences"
+prev_title: "Spot the Differences"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req5/"
-next_title: "Req 5 — Reproduction and Life Cycles"
+next_title: "Reproduction and Life Cycles"
 ---
 
 {{< drg/requirement number="4" >}}

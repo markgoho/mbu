@@ -1,12 +1,12 @@
 ---
-title: "Req 1e — Four Forces of Flight"
+title: "Four Forces of Flight"
 layout: guide
-group_title: "Mechanics of Flight"
+group_title: "1. Mechanics of Flight"
 req_number: "1e"
 prev: "/merit-badges/aviation/guide/req1d/"
-prev_title: "Req 1d — How Engines Work"
+prev_title: "How Engines Work"
 next: "/merit-badges/aviation/guide/req1f/"
-next_title: "Req 1f — Airfoils & Lift"
+next_title: "Airfoils & Lift"
 ---
 
 {{< drg/requirement number="1e" >}}

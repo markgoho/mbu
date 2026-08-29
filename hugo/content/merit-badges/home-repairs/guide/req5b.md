@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Fixing a Leaky Faucet"
+title: "Fixing a Leaky Faucet"
 layout: guide
-group_title: "Plumbing Basics"
+group_title: "5. Plumbing Basics"
 req_number: "5b"
 prev: "/merit-badges/home-repairs/guide/req5a/"
-prev_title: "Req 5a — Clearing a Drain or Trap"
+prev_title: "Clearing a Drain or Trap"
 next: "/merit-badges/home-repairs/guide/req5c/"
-next_title: "Req 5c — Repairing a Toilet"
+next_title: "Repairing a Toilet"
 ---
 
 {{< drg/requirement number="5b" >}}

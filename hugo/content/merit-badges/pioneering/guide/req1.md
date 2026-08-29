@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Safe Pioneering Basics"
+title: "Safe Pioneering Basics"
 layout: guide
-group_title: "Safety on the Spar Yard"
+group_title: "1. Safety on the Spar Yard"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/pioneering/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/pioneering/guide/req2/"
-next_title: "Req 2 — Core Rope Skills"
+next_title: "Core Rope Skills"
 ---
 
 {{< drg/requirement number="1" >}}

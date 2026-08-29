@@ -4,61 +4,61 @@ layout: "guide"
 badge_name: "Truck Transportation"
 group_title: "Getting Started"
 next: "/merit-badges/truck-transportation/guide/req1/"
-next_title: "Req 1 — Truck Lines in Your Town"
+next_title: "Truck Lines in Your Town"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/truck-transportation/guide/"
         is_sub: false
-  - group_title: "Trucking Around You"
+  - group_title: "1. Trucking Around You"
     items:
-      - title: "Req 1 — Truck Lines in Your Town"
+      - title: "1. Truck Lines in Your Town"
         url: "/merit-badges/truck-transportation/guide/req1/"
         is_sub: false
-  - group_title: "Commerce and Supply Chains"
+  - group_title: "2. Commerce and Supply Chains"
     items:
-      - title: "Req 2 — How Freight Moves"
+      - title: "2. How Freight Moves"
         url: "/merit-badges/truck-transportation/guide/req2/"
         is_sub: false
-  - group_title: "Engines and Equipment"
+  - group_title: "3. Engines and Equipment"
     items:
-      - title: "Req 3 — Gasoline vs. Diesel"
+      - title: "3. Gasoline vs. Diesel"
         url: "/merit-badges/truck-transportation/guide/req3/"
         is_sub: false
-  - group_title: "Terminal Safety and Operations"
+  - group_title: "4. Terminal Safety and Operations"
     items:
-      - title: "Req 4 — Inside a Truck Terminal"
+      - title: "4. Inside a Truck Terminal"
         url: "/merit-badges/truck-transportation/guide/req4/"
         is_sub: false
-  - group_title: "How a Trucking Company Works"
+  - group_title: "5. How a Trucking Company Works"
     items:
-      - title: "Req 5 — Company Departments and Jobs"
+      - title: "5. Company Departments and Jobs"
         url: "/merit-badges/truck-transportation/guide/req5/"
         is_sub: false
-  - group_title: "Rules and Regulators"
+  - group_title: "6. Rules and Regulators"
     items:
-      - title: "Req 6 — Government Agencies and Their Roles"
+      - title: "6. Government Agencies and Their Roles"
         url: "/merit-badges/truck-transportation/guide/req6/"
         is_sub: false
-  - group_title: "Types of Trucks"
+  - group_title: "7. Types of Trucks"
     items:
-      - title: "Req 7 — Trucks and the Work They Do"
+      - title: "7. Trucks and the Work They Do"
         url: "/merit-badges/truck-transportation/guide/req7/"
         is_sub: false
-  - group_title: "Planning a Shipment"
+  - group_title: "8. Planning a Shipment"
     items:
-      - title: "Req 8 — Shipping 500 Pounds by Truck"
+      - title: "8. Shipping 500 Pounds by Truck"
         url: "/merit-badges/truck-transportation/guide/req8/"
         is_sub: false
-  - group_title: "Truck Transportation Vocabulary"
+  - group_title: "9. Truck Transportation Vocabulary"
     items:
-      - title: "Req 9 — Freight Terms You Should Know"
+      - title: "9. Freight Terms You Should Know"
         url: "/merit-badges/truck-transportation/guide/req9/"
         is_sub: false
-  - group_title: "Careers in the Industry"
+  - group_title: "10. Careers in the Industry"
     items:
-      - title: "Req 10 — Exploring Trucking Careers"
+      - title: "10. Exploring Trucking Careers"
         url: "/merit-badges/truck-transportation/guide/req10/"
         is_sub: false
   - group_title: "Beyond the Badge"

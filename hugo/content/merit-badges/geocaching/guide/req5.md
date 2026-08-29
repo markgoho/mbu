@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Maps, Compass, and Navigation Choices"
+title: "Maps, Compass, and Navigation Choices"
 layout: guide
-group_title: "Backup Navigation"
+group_title: "5. Backup Navigation"
 req_number: "5"
 prev: "/merit-badges/geocaching/guide/req4/"
-prev_title: "Req 4 — How GPS Works and How to Teach It"
+prev_title: "How GPS Works and How to Teach It"
 next: "/merit-badges/geocaching/guide/req6/"
-next_title: "Req 6 — The Four Steps to Finding a Cache"
+next_title: "The Four Steps to Finding a Cache"
 ---
 
 {{< drg/requirement number="5" >}}

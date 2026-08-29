@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Ants, Bees, and Field Safety"
+title: "Ants, Bees, and Field Safety"
 layout: guide
-group_title: "Ants, Bees, and Field Safety"
+group_title: "1. Ants, Bees, and Field Safety"
 req_number: "1"
 prev: "/merit-badges/insect-study/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/insect-study/guide/req2/"
-next_title: "Req 2 — Insect Anatomy and Orders"
+next_title: "Insect Anatomy and Orders"
 ---
 
 {{< drg/requirement number="1" >}}

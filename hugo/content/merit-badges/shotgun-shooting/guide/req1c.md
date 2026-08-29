@@ -1,13 +1,13 @@
 ---
-title: "Req 1c — A Friend Asks to See the Gun"
+title: "A Friend Asks to See the Gun"
 layout: "guide"
-group_title: "Safety and Responsibility"
+group_title: "1. Safety and Responsibility"
 req_number: "1c"
 req_path: "1.c"
 prev: "/merit-badges/shotgun-shooting/guide/req1b/"
-prev_title: "Req 1b — Safe Gun Handling Rules"
+prev_title: "Safe Gun Handling Rules"
 next: "/merit-badges/shotgun-shooting/guide/req1d/"
-next_title: "Req 1d — Eye and Hearing Protection"
+next_title: "Eye and Hearing Protection"
 ---
 
 {{< drg/requirement number="1c" >}}

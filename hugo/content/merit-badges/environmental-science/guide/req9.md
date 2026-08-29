@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Invasive Species"
+title: "Invasive Species"
 layout: guide
-group_title: "Invasive Species"
+group_title: "9. Invasive Species"
 req_number: "9"
 prev: "/merit-badges/environmental-science/guide/req8/"
-prev_title: "Req 8 — Pollination"
+prev_title: "Pollination"
 next: "/merit-badges/environmental-science/guide/req10/"
-next_title: "Req 10 — Environmental Impact Assessment"
+next_title: "Environmental Impact Assessment"
 ---
 
 {{< drg/requirement number="9" >}}

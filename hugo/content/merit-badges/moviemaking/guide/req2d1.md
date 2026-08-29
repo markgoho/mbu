@@ -1,13 +1,13 @@
 ---
-title: "Req 2d1 — Cover a Court of Honor"
+title: "Cover a Court of Honor"
 layout: "guide"
-group_title: "Planning Your Movie"
+group_title: "2. Planning Your Movie"
 req_number: "2d1"
 req_path: "2.d.1"
 prev: "/merit-badges/moviemaking/guide/req2d/"
-prev_title: "Req 2d — Choose Your Production"
+prev_title: "Choose Your Production"
 next: "/merit-badges/moviemaking/guide/req2d2/"
-next_title: "Req 2d2 — Create a Short Feature"
+next_title: "Create a Short Feature"
 ---
 
 {{< drg/requirement number="2d1" >}}

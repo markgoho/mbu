@@ -1,12 +1,12 @@
 ---
-title: "Req 7f — Climate Change"
+title: "Climate Change"
 layout: guide
-group_title: "Global Challenges"
+group_title: "7. Global Challenges"
 req_number: "7f"
 prev: "/merit-badges/sustainability/guide/req7e/"
-prev_title: "Req 7e — Species Decline"
+prev_title: "Species Decline"
 next: "/merit-badges/sustainability/guide/req8a/"
-next_title: "Req 8a — Campout Observations"
+next_title: "Campout Observations"
 ---
 
 {{< drg/requirement number="7f" >}}

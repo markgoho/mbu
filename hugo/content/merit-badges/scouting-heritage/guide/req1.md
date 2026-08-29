@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Baden-Powell & the Birth of Scouting"
+title: "Baden-Powell & the Birth of Scouting"
 layout: "guide"
-group_title: "The Founder's Story"
+group_title: "1. The Founder's Story"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/scouting-heritage/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/scouting-heritage/guide/req2a/"
-next_title: "Req 2a — Choose Two Scouting Leaders"
+next_title: "Choose Two Scouting Leaders"
 ---
 
 {{< drg/requirement number="1" >}}

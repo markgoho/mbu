@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — AC, DC, and Power Generation"
+title: "AC, DC, and Power Generation"
 layout: guide
-group_title: "Magnetism & Current"
+group_title: "3. Magnetism & Current"
 req_number: "4"
 prev: "/merit-badges/electricity/guide/req3/"
-prev_title: "Req 3 — Build an Electromagnet"
+prev_title: "Build an Electromagnet"
 next: "/merit-badges/electricity/guide/req5/"
-next_title: "Req 5 — How an Electric Bell Works"
+next_title: "How an Electric Bell Works"
 ---
 
 {{< drg/requirement number="4" >}}

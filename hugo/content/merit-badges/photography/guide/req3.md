@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Know Your Camera"
+title: "Know Your Camera"
 layout: "guide"
-group_title: "Control the Shot"
+group_title: "2. Control the Shot"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/photography/guide/req2/"
-prev_title: "Req 2 — Control Light and Motion"
+prev_title: "Control Light and Motion"
 next: "/merit-badges/photography/guide/req4/"
-next_title: "Req 4 — Pick Two Creative Experiments"
+next_title: "Pick Two Creative Experiments"
 ---
 
 {{< drg/requirement number="3" >}}

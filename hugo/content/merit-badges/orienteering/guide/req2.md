@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — What Is Orienteering?"
+title: "What Is Orienteering?"
 layout: guide
-group_title: "What Is Orienteering?"
+group_title: "2. What Is Orienteering?"
 req_number: "2"
 prev: "/merit-badges/orienteering/guide/req1/"
-prev_title: "Req 1 — Safety and First Aid"
+prev_title: "Safety and First Aid"
 next: "/merit-badges/orienteering/guide/req3a/"
-next_title: "Req 3a — How a Compass Works"
+next_title: "How a Compass Works"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Forms & Conversions"
+title: "Forms & Conversions"
 layout: "guide"
-group_title: "Forms & Conversions"
+group_title: "2. Forms & Conversions"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/energy/guide/req1/"
-prev_title: "Req 1 — Reading Energy Stories"
+prev_title: "Reading Energy Stories"
 next: "/merit-badges/energy/guide/req3/"
-next_title: "Req 3 — Following Energy Through a System"
+next_title: "Following Energy Through a System"
 ---
 
 {{< drg/requirement number="2" >}}

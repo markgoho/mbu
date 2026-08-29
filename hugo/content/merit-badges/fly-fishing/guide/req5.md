@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Casting with Control"
+title: "Casting with Control"
 layout: guide
-group_title: "Reading Fish & Water"
+group_title: "4. Reading Fish & Water"
 req_number: "5"
 prev: "/merit-badges/fly-fishing/guide/req4/"
-prev_title: "Req 4 — Fly Types and Imitation"
+prev_title: "Fly Types and Imitation"
 next: "/merit-badges/fly-fishing/guide/req6/"
-next_title: "Req 6 — Matching the Hatch"
+next_title: "Matching the Hatch"
 ---
 
 {{< drg/requirement number="5" >}}

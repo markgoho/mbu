@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Waste and Wastewater Systems"
+title: "Waste and Wastewater Systems"
 layout: "guide"
-group_title: "Field Investigations"
+group_title: "5. Field Investigations"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/public-health/guide/req5/"
-prev_title: "Req 5 — Choose Your Field Investigation"
+prev_title: "Choose Your Field Investigation"
 next: "/merit-badges/public-health/guide/req5b/"
-next_title: "Req 5b — Food Safety in Action"
+next_title: "Food Safety in Action"
 ---
 
 {{< drg/requirement number="5a" >}}

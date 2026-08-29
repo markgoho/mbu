@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Soldering Techniques"
+title: "Soldering Techniques"
 layout: guide
-group_title: "Soldering Skills"
+group_title: "3. Soldering Skills"
 req_number: "3"
 prev: "/merit-badges/electronics/guide/req2/"
-prev_title: "Req 2 — Reading & Drawing Schematics"
+prev_title: "Reading & Drawing Schematics"
 next: "/merit-badges/electronics/guide/req4a/"
-next_title: "Req 4a — Control, Logic & Analog"
+next_title: "Control, Logic & Analog"
 ---
 
 {{< drg/requirement number="3" >}}

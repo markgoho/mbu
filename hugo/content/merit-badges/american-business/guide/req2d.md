@@ -1,12 +1,12 @@
 ---
-title: "Req 2d — Business Insurance"
+title: "Business Insurance"
 layout: guide
-group_title: "Money & Finance"
+group_title: "2. Money & Finance"
 req_number: "2d"
 prev: "/merit-badges/american-business/guide/req2c/"
-prev_title: "Req 2c — Raising Capital"
+prev_title: "Raising Capital"
 next: "/merit-badges/american-business/guide/req3a/"
-next_title: "Req 3a — The Role of Profit"
+next_title: "The Role of Profit"
 ---
 
 {{< drg/requirement number="2d" >}}

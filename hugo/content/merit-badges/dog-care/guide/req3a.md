@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Training Foundations"
+title: "Training Foundations"
 layout: guide
-group_title: "Training and Ownership"
+group_title: "3. Training and Ownership"
 req_number: "3a"
 prev: "/merit-badges/dog-care/guide/req2/"
-prev_title: "Req 2 — Dog Body Parts"
+prev_title: "Dog Body Parts"
 next: "/merit-badges/dog-care/guide/req3b/"
-next_title: "Req 3b — Responsible Pet Ownership"
+next_title: "Responsible Pet Ownership"
 ---
 
 {{< drg/requirement number="3a" >}}

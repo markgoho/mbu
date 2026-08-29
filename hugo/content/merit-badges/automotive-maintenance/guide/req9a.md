@@ -1,12 +1,12 @@
 ---
-title: "Req 9a — Drive Train & Transmissions"
+title: "Drive Train & Transmissions"
 layout: guide
-group_title: "Drive Train"
+group_title: "9. Drive Train"
 req_number: "9a"
 prev: "/merit-badges/automotive-maintenance/guide/req8e/"
-prev_title: "Req 8e — Electric Vehicles"
+prev_title: "Electric Vehicles"
 next: "/merit-badges/automotive-maintenance/guide/req9c/"
-next_title: "Req 9c — Fluids & Drive Configurations"
+next_title: "Fluids & Drive Configurations"
 ---
 
 {{< drg/requirement number="9a" >}}

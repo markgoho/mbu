@@ -1,13 +1,13 @@
 ---
-title: "Req 5d — Photograph Animals Patiently"
+title: "Photograph Animals Patiently"
 layout: "guide"
-group_title: "Field Practice: Requirement 5"
+group_title: "5. Field Practice: Requirement 5"
 req_number: "5d"
 req_path: "5.d"
 prev: "/merit-badges/photography/guide/req5c/"
-prev_title: "Req 5c — Freeze or Follow Action"
+prev_title: "Freeze or Follow Action"
 next: "/merit-badges/photography/guide/req5e/"
-next_title: "Req 5e — Notice the Outdoors"
+next_title: "Notice the Outdoors"
 ---
 
 {{< drg/requirement number="5d" >}}

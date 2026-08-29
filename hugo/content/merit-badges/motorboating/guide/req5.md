@@ -1,11 +1,11 @@
 ---
-title: "Req 5 — Boat Handling Underway"
+title: "Boat Handling Underway"
 layout: "guide"
-group_title: "Handling Skills"
+group_title: "5. Handling Skills"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/motorboating/guide/req4/"
-prev_title: "Req 4 — Rules, Weather & Required Gear"
+prev_title: "Rules, Weather & Required Gear"
 next: "/merit-badges/motorboating/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

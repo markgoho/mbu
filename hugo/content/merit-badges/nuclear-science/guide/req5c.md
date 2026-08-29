@@ -1,13 +1,13 @@
 ---
-title: "Req 5c — X-Ray Room Safety"
+title: "X-Ray Room Safety"
 layout: "guide"
-group_title: "Radiation Protection"
+group_title: "5. Radiation Protection"
 req_number: "5c"
 req_path: "5.c"
 prev: "/merit-badges/nuclear-science/guide/req5b/"
-prev_title: "Req 5b — Radon at Home"
+prev_title: "Radon at Home"
 next: "/merit-badges/nuclear-science/guide/req6/"
-next_title: "Req 6 — Choose a Nuclear Energy Path"
+next_title: "Choose a Nuclear Energy Path"
 ---
 
 {{< drg/requirement number="5c" >}}

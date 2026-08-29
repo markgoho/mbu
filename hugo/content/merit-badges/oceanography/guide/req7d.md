@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Model Sediment Movement"
+title: "Model Sediment Movement"
 layout: "guide"
-group_title: "Hands-On Investigation"
+group_title: "7. Hands-On Investigation"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/oceanography/guide/req7c/"
-prev_title: "Req 7c — Track Water Conditions"
+prev_title: "Track Water Conditions"
 next: "/merit-badges/oceanography/guide/req7e/"
-next_title: "Req 7e — Build a Wave Tank"
+next_title: "Build a Wave Tank"
 ---
 
 {{< drg/requirement number="7d" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Broadcast Newsroom Skills"
+title: "Broadcast Newsroom Skills"
 layout: guide
-group_title: "Reporting Across Platforms"
+group_title: "2. Reporting Across Platforms"
 req_number: "2b"
 prev: "/merit-badges/journalism/guide/req2a2/"
-prev_title: "Req 2a2 — Touring a News Operation"
+prev_title: "Touring a News Operation"
 next: "/merit-badges/journalism/guide/req2b1/"
-next_title: "Req 2b1 — Comparing Broadcast Coverage"
+next_title: "Comparing Broadcast Coverage"
 ---
 
 {{< drg/requirement number="2" option="Option B—Radio and Television Journalism" >}}

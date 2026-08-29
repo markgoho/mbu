@@ -1,12 +1,12 @@
 ---
-title: "Req 7bc — Blind Test and Reflect"
+title: "Blind Test and Reflect"
 layout: guide
-group_title: "Designing Your Game"
+group_title: "5. Designing Your Game"
 req_number: "7b"
 prev: "/merit-badges/game-design/guide/req7a/"
-prev_title: "Req 7a — Write Clear Instructions"
+prev_title: "Write Clear Instructions"
 next: "/merit-badges/game-design/guide/req8/"
-next_title: "Req 8 — Choose a Professional Path"
+next_title: "Choose a Professional Path"
 ---
 
 {{< drg/requirement number="7" >}}

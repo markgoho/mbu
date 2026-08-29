@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — Choose Two Scouting Leaders"
+title: "Choose Two Scouting Leaders"
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/scouting-heritage/guide/req1/"
-prev_title: "Req 1 — Baden-Powell & the Birth of Scouting"
+prev_title: "Baden-Powell & the Birth of Scouting"
 next: "/merit-badges/scouting-heritage/guide/req2a1/"
-next_title: "Req 2a1 — Daniel Carter Beard"
+next_title: "Daniel Carter Beard"
 ---
 
 {{< drg/requirement number="2a" >}}

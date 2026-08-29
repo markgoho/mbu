@@ -1,13 +1,13 @@
 ---
-title: "Req 4g2 — Seeds, Leaves, and Plant Records"
+title: "Seeds, Leaves, and Plant Records"
 layout: "guide"
-group_title: "Plant Study"
+group_title: "4. Plant Study"
 req_number: "4g2"
 req_path: "4.g.2"
 prev: "/merit-badges/nature/guide/req4g1/"
-prev_title: "Req 4g1 — Wild Plant Identification"
+prev_title: "Wild Plant Identification"
 next: "/merit-badges/nature/guide/req4g2a/"
-next_title: "Req 4g2a — Collect and Label Specimens"
+next_title: "Collect and Label Specimens"
 ---
 
 {{< drg/requirement number="4g2" >}}

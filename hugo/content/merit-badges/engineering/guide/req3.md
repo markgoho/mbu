@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Six Fields of Engineering"
+title: "Six Fields of Engineering"
 layout: guide
-group_title: "Types of Engineers"
+group_title: "3. Types of Engineers"
 req_number: "3"
 prev: "/merit-badges/engineering/guide/req2/"
-prev_title: "Req 2 — Engineering That Changed the World"
+prev_title: "Engineering That Changed the World"
 next: "/merit-badges/engineering/guide/req4/"
-next_title: "Req 4 — Interview with an Engineer"
+next_title: "Interview with an Engineer"
 ---
 
 {{< drg/requirement number="3" >}}

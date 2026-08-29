@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — How an Electric Bell Works"
+title: "How an Electric Bell Works"
 layout: guide
-group_title: "Magnetism & Current"
+group_title: "3. Magnetism & Current"
 req_number: "5"
 prev: "/merit-badges/electricity/guide/req4/"
-prev_title: "Req 4 — AC, DC, and Power Generation"
+prev_title: "AC, DC, and Power Generation"
 next: "/merit-badges/electricity/guide/req6/"
-next_title: "Req 6 — Overloads, Fuses, and Breakers"
+next_title: "Overloads, Fuses, and Breakers"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Collector Card Mission"
+title: "Collector Card Mission"
 layout: "guide"
-group_title: "Space Pioneers"
+group_title: "2. Space Pioneers"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/space-exploration/guide/req1/"
-prev_title: "Req 1 — Why We Go"
+prev_title: "Why We Go"
 next: "/merit-badges/space-exploration/guide/req3/"
-next_title: "Req 3 — Build, Launch, Recover"
+next_title: "Build, Launch, Recover"
 ---
 
 {{< drg/requirement number="2" >}}

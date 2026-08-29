@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Collector Associations"
+title: "Collector Associations"
 layout: guide
-group_title: "Knowing Your Collection"
+group_title: "5. Knowing Your Collection"
 req_number: "5e"
 prev: "/merit-badges/collections/guide/req5d/"
-prev_title: "Req 5d — Grading & Classification"
+prev_title: "Grading & Classification"
 next: "/merit-badges/collections/guide/req5f/"
-next_title: "Req 5f — Identification Marks"
+next_title: "Identification Marks"
 ---
 
 {{< drg/requirement number="5e" >}}

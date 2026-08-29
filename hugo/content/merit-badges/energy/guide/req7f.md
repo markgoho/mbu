@@ -1,13 +1,13 @@
 ---
-title: "Req 7f — Nuclear Power"
+title: "Nuclear Power"
 layout: "guide"
-group_title: "Nuclear"
+group_title: "7. Nuclear"
 req_number: "7f"
 req_path: "7.f"
 prev: "/merit-badges/energy/guide/req7e/"
-prev_title: "Req 7e — Geothermal Power"
+prev_title: "Geothermal Power"
 next: "/merit-badges/energy/guide/req7g/"
-next_title: "Req 7g — Solar Power Systems"
+next_title: "Solar Power Systems"
 ---
 
 {{< drg/inherited-requirement number="7f" req_path="7.f" topic="Nuclear power plants" />}}

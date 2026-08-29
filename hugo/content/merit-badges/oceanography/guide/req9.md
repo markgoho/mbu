@@ -1,11 +1,11 @@
 ---
-title: "Req 9 — Tools of Ocean Science"
+title: "Tools of Ocean Science"
 layout: "guide"
-group_title: "How Scientists Investigate"
+group_title: "9. How Scientists Investigate"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/oceanography/guide/req8c/"
-prev_title: "Req 8c — Give an Oceanography Speech"
+prev_title: "Give an Oceanography Speech"
 next: "/merit-badges/oceanography/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

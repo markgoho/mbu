@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Semaphore Flags vs. Nautical Flags"
+title: "Semaphore Flags vs. Nautical Flags"
 layout: "guide"
-group_title: "Flag Signaling"
+group_title: "4. Flag Signaling"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/signs-signals-and-codes/guide/req4a/"
-prev_title: "Req 4a — How Semaphore Works"
+prev_title: "How Semaphore Works"
 next: "/merit-badges/signs-signals-and-codes/guide/req4c/"
-next_title: "Req 4c — Practice With Flags"
+next_title: "Practice With Flags"
 ---
 
 {{< drg/requirement number="4b" >}}

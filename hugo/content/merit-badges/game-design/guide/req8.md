@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Choose a Professional Path"
+title: "Choose a Professional Path"
 layout: guide
-group_title: "Exploring the Industry"
+group_title: "8. Exploring the Industry"
 req_number: "8"
 prev: "/merit-badges/game-design/guide/req7bc/"
-prev_title: "Req 7bc — Blind Test and Reflect"
+prev_title: "Blind Test and Reflect"
 next: "/merit-badges/game-design/guide/req8a/"
-next_title: "Req 8a — Interview a Game Developer"
+next_title: "Interview a Game Developer"
 ---
 
 {{< drg/requirement number="8" >}}

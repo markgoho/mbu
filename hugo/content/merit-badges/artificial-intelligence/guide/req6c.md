@@ -1,12 +1,12 @@
 ---
-title: "Req 6c — Prompt Engineering"
+title: "Prompt Engineering"
 layout: guide
-group_title: "Developing AI Skills"
+group_title: "6. Developing AI Skills"
 req_number: "6c"
 prev: "/merit-badges/artificial-intelligence/guide/req6b/"
-prev_title: "Req 6b — Communicating with AI"
+prev_title: "Communicating with AI"
 next: "/merit-badges/artificial-intelligence/guide/req6d/"
-next_title: "Req 6d — Writing Clear Instructions"
+next_title: "Writing Clear Instructions"
 ---
 
 {{< drg/requirement number="6c" >}}

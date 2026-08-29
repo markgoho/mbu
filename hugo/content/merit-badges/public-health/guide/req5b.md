@@ -1,13 +1,13 @@
 ---
-title: "Req 5b — Food Safety in Action"
+title: "Food Safety in Action"
 layout: "guide"
-group_title: "Field Investigations"
+group_title: "5. Field Investigations"
 req_number: "5b"
 req_path: "5.b"
 prev: "/merit-badges/public-health/guide/req5a/"
-prev_title: "Req 5a — Waste and Wastewater Systems"
+prev_title: "Waste and Wastewater Systems"
 next: "/merit-badges/public-health/guide/req6/"
-next_title: "Req 6 — Pollution and Substance Risks"
+next_title: "Pollution and Substance Risks"
 ---
 
 {{< drg/requirement number="5b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1e — Reading Food Labels"
+title: "Reading Food Labels"
 layout: guide
-group_title: "Health & Safety"
+group_title: "1. Health & Safety"
 req_number: "1e"
 prev: "/merit-badges/cooking/guide/req1d/"
-prev_title: "Req 1d — Allergies & Food Illness"
+prev_title: "Allergies & Food Illness"
 next: "/merit-badges/cooking/guide/req2a/"
-next_title: "Req 2a — MyPlate Food Groups"
+next_title: "MyPlate Food Groups"
 ---
 
 {{< drg/requirement number="1e" >}}

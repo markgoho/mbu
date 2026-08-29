@@ -1,12 +1,12 @@
 ---
-title: "Req 6f — Load Sharing & Food Storage"
+title: "Load Sharing & Food Storage"
 layout: guide
-group_title: "Trail & Backpacking Meals"
+group_title: "6. Trail & Backpacking Meals"
 req_number: "6f"
 prev: "/merit-badges/cooking/guide/req6e/"
-prev_title: "Req 6e — Trail Meal Evaluation"
+prev_title: "Trail Meal Evaluation"
 next: "/merit-badges/cooking/guide/req7/"
-next_title: "Req 7 — Careers & Hobbies"
+next_title: "Careers & Hobbies"
 ---
 
 {{< drg/requirement number="6f" >}}

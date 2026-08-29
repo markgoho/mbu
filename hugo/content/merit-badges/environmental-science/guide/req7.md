@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Pollution Prevention & Conservation"
+title: "Pollution Prevention & Conservation"
 layout: guide
-group_title: "Conservation & Resource Recovery"
+group_title: "7. Conservation & Resource Recovery"
 req_number: "7"
 prev: "/merit-badges/environmental-science/guide/req6/"
-prev_title: "Req 6 — Rare, Threatened, or Endangered Species"
+prev_title: "Rare, Threatened, or Endangered Species"
 next: "/merit-badges/environmental-science/guide/req8/"
-next_title: "Req 8 — Pollination"
+next_title: "Pollination"
 ---
 
 {{< drg/requirement number="7" >}}

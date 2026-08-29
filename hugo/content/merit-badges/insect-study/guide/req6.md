@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Insects in Ecosystems"
+title: "Insects in Ecosystems"
 layout: guide
-group_title: "Food Webs and Pollination"
+group_title: "6. Food Webs and Pollination"
 req_number: "6"
 prev: "/merit-badges/insect-study/guide/req5b2/"
-prev_title: "Req 5b2 — Reading a Bee Hive"
+prev_title: "Reading a Bee Hive"
 next: "/merit-badges/insect-study/guide/req7/"
-next_title: "Req 7 — Bees, Crops, and Pest Control"
+next_title: "Bees, Crops, and Pest Control"
 ---
 
 {{< drg/requirement number="6" >}}

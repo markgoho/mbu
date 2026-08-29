@@ -4,227 +4,227 @@ layout: "guide"
 badge_name: "Skating"
 group_title: "Getting Started"
 next: "/merit-badges/skating/guide/req1/"
-next_title: "Req 1 — Safety & First Aid"
+next_title: "Safety & First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/skating/guide/"
         is_sub: false
-  - group_title: "Safety & First Aid"
+  - group_title: "1. Safety & First Aid"
     items:
-      - title: "Req 1 — Safety & First Aid"
+      - title: "1. Safety & First Aid"
         url: "/merit-badges/skating/guide/req1/"
         is_sub: false
-  - group_title: "Choose Your Skating Option"
+  - group_title: "2. Choose Your Skating Option"
     items:
-      - title: "Req 2 — Pick Your Option"
+      - title: "2. Pick Your Option"
         url: "/merit-badges/skating/guide/req2/"
         is_sub: false
-  - group_title: "Option A — Ice Skating"
+  - group_title: "2. Option A — Ice Skating"
     items:
-      - title: "Req 2a — Ice Skating Overview"
+      - title: "a Ice Skating Overview"
         url: "/merit-badges/skating/guide/req2a/"
         is_sub: false
-      - title: "Req 2a1 — Ice Safety & Courtesy"
+      - title: "a Ice Safety & Courtesy"
         url: "/merit-badges/skating/guide/req2a1/"
         is_sub: true
-      - title: "Req 2a2 — Outdoor Ice & Ice Rescue"
+      - title: "a Outdoor Ice & Ice Rescue"
         url: "/merit-badges/skating/guide/req2a2/"
         is_sub: true
-      - title: "Req 2a3 — Parts of Ice Skates"
+      - title: "a Parts of Ice Skates"
         url: "/merit-badges/skating/guide/req2a3/"
         is_sub: true
-      - title: "Req 2a4 — Carrying Skates"
+      - title: "a Carrying Skates"
         url: "/merit-badges/skating/guide/req2a4/"
         is_sub: true
-      - title: "Req 2a5 — Storing Skates"
+      - title: "a Storing Skates"
         url: "/merit-badges/skating/guide/req2a5/"
         is_sub: true
-      - title: "Req 2a6 — Forward Skating & Stop"
+      - title: "a Forward Skating & Stop"
         url: "/merit-badges/skating/guide/req2a6/"
         is_sub: true
-      - title: "Req 2a7 — Forward Glide"
+      - title: "a Forward Glide"
         url: "/merit-badges/skating/guide/req2a7/"
         is_sub: true
-      - title: "Req 2a8 — T-Position Stroking"
+      - title: "a T-Position Stroking"
         url: "/merit-badges/skating/guide/req2a8/"
         is_sub: true
-      - title: "Req 2a9 — Backward Glide"
+      - title: "a Backward Glide"
         url: "/merit-badges/skating/guide/req2a9/"
         is_sub: true
-      - title: "Req 2a10 — Backward Skating"
+      - title: "a Backward Skating"
         url: "/merit-badges/skating/guide/req2a-10/"
         is_sub: true
-      - title: "Req 2a11 — 180° Turn Around Cone"
+      - title: "a 180° Turn Around Cone"
         url: "/merit-badges/skating/guide/req2a-11/"
         is_sub: true
-      - title: "Req 2a12 — Forward Crossovers"
+      - title: "a Forward Crossovers"
         url: "/merit-badges/skating/guide/req2a-12/"
         is_sub: true
-      - title: "Req 2a13 — Ice Race Safety"
+      - title: "a Ice Race Safety"
         url: "/merit-badges/skating/guide/req2a-13/"
         is_sub: true
-      - title: "Req 2a14 — Hockey Stop"
+      - title: "a Hockey Stop"
         url: "/merit-badges/skating/guide/req2a-14/"
         is_sub: true
-  - group_title: "Option B — Roller Skating"
+  - group_title: "2. Option B — Roller Skating"
     items:
-      - title: "Req 2b — Roller Skating Overview"
+      - title: "b Roller Skating Overview"
         url: "/merit-badges/skating/guide/req2b/"
         is_sub: false
-      - title: "Req 2b1 — Roller Safety & Etiquette"
+      - title: "b Roller Safety & Etiquette"
         url: "/merit-badges/skating/guide/req2b1/"
         is_sub: true
-      - title: "Req 2b2 — Parts of a Roller Skate"
+      - title: "b Parts of a Roller Skate"
         url: "/merit-badges/skating/guide/req2b2/"
         is_sub: true
-      - title: "Req 2b3 — Roller Skate Care"
+      - title: "b Roller Skate Care"
         url: "/merit-badges/skating/guide/req2b3/"
         is_sub: true
-      - title: "Req 2b4 — Forward Skating & Stop"
+      - title: "b Forward Skating & Stop"
         url: "/merit-badges/skating/guide/req2b4/"
         is_sub: true
-      - title: "Req 2b5 — One-Foot Glide"
+      - title: "b One-Foot Glide"
         url: "/merit-badges/skating/guide/req2b5/"
         is_sub: true
-      - title: "Req 2b6 — Forward Crossover"
+      - title: "b Forward Crossover"
         url: "/merit-badges/skating/guide/req2b6/"
         is_sub: true
-      - title: "Req 2b7 — Backward Skating"
+      - title: "b Backward Skating"
         url: "/merit-badges/skating/guide/req2b7/"
         is_sub: true
-      - title: "Req 2b8 — Forward Slalom"
+      - title: "b Forward Slalom"
         url: "/merit-badges/skating/guide/req2b8/"
         is_sub: true
-      - title: "Req 2b9 — Backward Slalom"
+      - title: "b Backward Slalom"
         url: "/merit-badges/skating/guide/req2b9/"
         is_sub: true
-      - title: "Req 2b10 — Shuttle Skate"
+      - title: "b Shuttle Skate"
         url: "/merit-badges/skating/guide/req2b-10/"
         is_sub: true
-      - title: "Req 2b11 — Spins or Hop-Skip-Jump"
+      - title: "b Spins or Hop-Skip-Jump"
         url: "/merit-badges/skating/guide/req2b-11/"
         is_sub: true
-      - title: "Req 2b12 — Stepover"
+      - title: "b Stepover"
         url: "/merit-badges/skating/guide/req2b-12/"
         is_sub: true
-      - title: "Req 2b13 — Dribble or Hockey Ball"
+      - title: "b Dribble or Hockey Ball"
         url: "/merit-badges/skating/guide/req2b-13/"
         is_sub: true
-  - group_title: "Option C — In-Line Skating"
+  - group_title: "2. Option C — In-Line Skating"
     items:
-      - title: "Req 2c — In-Line Skating Overview"
+      - title: "c In-Line Skating Overview"
         url: "/merit-badges/skating/guide/req2c/"
         is_sub: false
-      - title: "Req 2c1 — In-Line Safety & Courtesy"
+      - title: "c In-Line Safety & Courtesy"
         url: "/merit-badges/skating/guide/req2c1/"
         is_sub: true
-      - title: "Req 2c2 — Parts of In-Line Skates"
+      - title: "c Parts of In-Line Skates"
         url: "/merit-badges/skating/guide/req2c2/"
         is_sub: true
-      - title: "Req 2c3 — Required Safety Gear"
+      - title: "c Required Safety Gear"
         url: "/merit-badges/skating/guide/req2c3/"
         is_sub: true
-      - title: "Req 2c4 — In-Line Skate Care"
+      - title: "c In-Line Skate Care"
         url: "/merit-badges/skating/guide/req2c4/"
         is_sub: true
-      - title: "Req 2c5 — Forward Skating"
+      - title: "c Forward Skating"
         url: "/merit-badges/skating/guide/req2c5/"
         is_sub: true
-      - title: "Req 2c6 — One-Foot Glide"
+      - title: "c One-Foot Glide"
         url: "/merit-badges/skating/guide/req2c6/"
         is_sub: true
-      - title: "Req 2c7 — Heel Brake Stop"
+      - title: "c Heel Brake Stop"
         url: "/merit-badges/skating/guide/req2c7/"
         is_sub: true
-      - title: "Req 2c8 — Forward Crossover"
+      - title: "c Forward Crossover"
         url: "/merit-badges/skating/guide/req2c8/"
         is_sub: true
-      - title: "Req 2c9 — Forward Swizzles"
+      - title: "c Forward Swizzles"
         url: "/merit-badges/skating/guide/req2c9/"
         is_sub: true
-      - title: "Req 2c10 — Backward Swizzles"
+      - title: "c Backward Swizzles"
         url: "/merit-badges/skating/guide/req2c-10/"
         is_sub: true
-      - title: "Req 2c11 — Lunge Turn"
+      - title: "c Lunge Turn"
         url: "/merit-badges/skating/guide/req2c-11/"
         is_sub: true
-      - title: "Req 2c12 — Mohawk"
+      - title: "c Mohawk"
         url: "/merit-badges/skating/guide/req2c-12/"
         is_sub: true
-      - title: "Req 2c13 — One-Foot Downhill Slalom"
+      - title: "c One-Foot Downhill Slalom"
         url: "/merit-badges/skating/guide/req2c-13/"
         is_sub: true
-      - title: "Req 2c14 — Passing from Behind"
+      - title: "c Passing from Behind"
         url: "/merit-badges/skating/guide/req2c-14/"
         is_sub: true
-      - title: "Req 2c15 — Avoiding Obstacles"
+      - title: "c Avoiding Obstacles"
         url: "/merit-badges/skating/guide/req2c-15/"
         is_sub: true
-      - title: "Req 2c16 — Curb Techniques"
+      - title: "c Curb Techniques"
         url: "/merit-badges/skating/guide/req2c-16/"
         is_sub: true
-  - group_title: "Option D — Skateboarding"
+  - group_title: "2. Option D — Skateboarding"
     items:
-      - title: "Req 2d — Skateboarding Overview"
+      - title: "d Skateboarding Overview"
         url: "/merit-badges/skating/guide/req2d/"
         is_sub: false
-      - title: "Req 2d1 — History of Skateboarding"
+      - title: "d History of Skateboarding"
         url: "/merit-badges/skating/guide/req2d1/"
         is_sub: true
-      - title: "Req 2d2 — Benefits of Skateboarding"
+      - title: "d Benefits of Skateboarding"
         url: "/merit-badges/skating/guide/req2d2/"
         is_sub: true
-      - title: "Req 2d3 — Safety Rules & Courtesy"
+      - title: "d Safety Rules & Courtesy"
         url: "/merit-badges/skating/guide/req2d3/"
         is_sub: true
-      - title: "Req 2d4 — Protective Gear"
+      - title: "d Protective Gear"
         url: "/merit-badges/skating/guide/req2d4/"
         is_sub: true
-      - title: "Req 2d5 — Street vs. Vert Styles"
+      - title: "d Street vs. Vert Styles"
         url: "/merit-badges/skating/guide/req2d5/"
         is_sub: true
-      - title: "Req 2d6 — Skateboard Anatomy"
+      - title: "d Skateboard Anatomy"
         url: "/merit-badges/skating/guide/req2d6/"
         is_sub: true
-      - title: "Req 2d7 — Build a Board"
+      - title: "d Build a Board"
         url: "/merit-badges/skating/guide/req2d7/"
         is_sub: true
-      - title: "Req 2d8 — Skateboard Maintenance"
+      - title: "d Skateboard Maintenance"
         url: "/merit-badges/skating/guide/req2d8/"
         is_sub: true
-      - title: "Req 2d9 — Stance"
+      - title: "d Stance"
         url: "/merit-badges/skating/guide/req2d9/"
         is_sub: true
-      - title: "Req 2d10 — Push, Cruise & Carve"
+      - title: "d Push, Cruise & Carve"
         url: "/merit-badges/skating/guide/req2d-10/"
         is_sub: true
-      - title: "Req 2d11 — Braking Techniques"
+      - title: "d Braking Techniques"
         url: "/merit-badges/skating/guide/req2d-11/"
         is_sub: true
-      - title: "Req 2d12 — Ollie"
+      - title: "d Ollie"
         url: "/merit-badges/skating/guide/req2d-12/"
         is_sub: true
-      - title: "Req 2d13 — Drop-In from Coping"
+      - title: "d Drop-In from Coping"
         url: "/merit-badges/skating/guide/req2d-13/"
         is_sub: true
-      - title: "Req 2d14 — Three Trick Types"
+      - title: "d Three Trick Types"
         url: "/merit-badges/skating/guide/req2d-14/"
         is_sub: false
-      - title: "Req 2d14a — Flat Ground Tricks"
+      - title: "d Flat Ground Tricks"
         url: "/merit-badges/skating/guide/req2d-14a/"
         is_sub: true
-      - title: "Req 2d14b — Flip & Shove-It Tricks"
+      - title: "d Flip & Shove-It Tricks"
         url: "/merit-badges/skating/guide/req2d-14b/"
         is_sub: true
-      - title: "Req 2d14c — Grind & Slide Tricks"
+      - title: "d Grind & Slide Tricks"
         url: "/merit-badges/skating/guide/req2d-14c/"
         is_sub: true
-      - title: "Req 2d14d — Air & Grab Tricks"
+      - title: "d Air & Grab Tricks"
         url: "/merit-badges/skating/guide/req2d-14d/"
         is_sub: true
-      - title: "Req 2d14e — Footplant Tricks"
+      - title: "d Footplant Tricks"
         url: "/merit-badges/skating/guide/req2d-14e/"
         is_sub: true
   - group_title: "Beyond the Badge"

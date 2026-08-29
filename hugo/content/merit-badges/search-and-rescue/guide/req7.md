@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Plan and Run a Practice Search"
+title: "Plan and Run a Practice Search"
 layout: "guide"
-group_title: "Practice Mission"
+group_title: "7. Practice Mission"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/search-and-rescue/guide/req6e/"
-prev_title: "Req 6e — Core SAR Terms"
+prev_title: "Core SAR Terms"
 next: "/merit-badges/search-and-rescue/guide/req8/"
-next_title: "Req 8 — Choose Your Career Path"
+next_title: "Choose Your Career Path"
 ---
 
 {{< drg/requirement number="7" >}}

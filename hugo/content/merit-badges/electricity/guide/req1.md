@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Electrical Emergencies"
+title: "Electrical Emergencies"
 layout: guide
-group_title: "Electrical Safety"
+group_title: "1. Electrical Safety"
 req_number: "1"
 prev: "/merit-badges/electricity/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/electricity/guide/req2/"
-next_title: "Req 2 — Home Safety Inspection"
+next_title: "Home Safety Inspection"
 ---
 
 {{< drg/requirement number="1" >}}

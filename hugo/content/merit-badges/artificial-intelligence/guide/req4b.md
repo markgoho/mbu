@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — What Would You Do?"
+title: "What Would You Do?"
 layout: guide
-group_title: "Ethics in AI"
+group_title: "4. Ethics in AI"
 req_number: "4b"
 prev: "/merit-badges/artificial-intelligence/guide/req4a/"
-prev_title: "Req 4a — Bias, Privacy & Decisions"
+prev_title: "Bias, Privacy & Decisions"
 next: "/merit-badges/artificial-intelligence/guide/req4c/"
-next_title: "Req 4c — Your Ethical Guidelines"
+next_title: "Your Ethical Guidelines"
 ---
 
 {{< drg/requirement number="4b" >}}

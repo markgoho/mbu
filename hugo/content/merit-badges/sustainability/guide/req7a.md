@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — UN Development Goals"
+title: "UN Development Goals"
 layout: guide
-group_title: "Global Challenges"
+group_title: "7. Global Challenges"
 req_number: "7a"
 prev: "/merit-badges/sustainability/guide/req6c/"
-prev_title: "Req 6c — Waste & Recycling"
+prev_title: "Waste & Recycling"
 next: "/merit-badges/sustainability/guide/req7b/"
-next_title: "Req 7b — Planetary Life-Support Systems"
+next_title: "Planetary Life-Support Systems"
 ---
 
 {{< drg/requirement number="7" >}}

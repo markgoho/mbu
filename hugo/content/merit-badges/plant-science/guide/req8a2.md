@@ -1,13 +1,13 @@
 ---
-title: "Req 8a2 — Seed Germination Testing"
+title: "Seed Germination Testing"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a2"
 req_path: "8.a.2"
 prev: "/merit-badges/plant-science/guide/req8a1/"
-prev_title: "Req 8a1 — Preparing a Seedbed"
+prev_title: "Preparing a Seedbed"
 next: "/merit-badges/plant-science/guide/req8a3/"
-next_title: "Req 8a3 — Crop Pests and Weeds"
+next_title: "Crop Pests, Diseases & Weeds"
 ---
 
 {{< drg/requirement number="8a2" >}}

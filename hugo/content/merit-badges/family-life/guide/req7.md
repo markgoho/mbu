@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Understanding Parenthood"
+title: "Understanding Parenthood"
 layout: guide
-group_title: "Effective Parenting"
+group_title: "7. Effective Parenting"
 req_number: "7"
 prev: "/merit-badges/family-life/guide/req6b/"
-prev_title: "Req 6b — Meeting Agenda Topics"
+prev_title: "Meeting Agenda Topics"
 next: "/merit-badges/family-life/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -4,67 +4,67 @@ layout: "guide"
 badge_name: "Plumbing"
 group_title: "Getting Started"
 next: "/merit-badges/plumbing/guide/req1/"
-next_title: "Req 1 — Healthy Plumbing Habits"
+next_title: "Healthy Plumbing Habits"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/plumbing/guide/"
         is_sub: false
-  - group_title: "Health and Safety Basics"
+  - group_title: "1. Health and Safety Basics"
     items:
-      - title: "Req 1 — Healthy Plumbing Habits"
+      - title: "1. Healthy Plumbing Habits"
         url: "/merit-badges/plumbing/guide/req1/"
         is_sub: false
-  - group_title: "Water Supply and Drainage"
+  - group_title: "2. Water Supply and Drainage"
     items:
-      - title: "Req 2 — Home Water Systems"
+      - title: "2. Home Water Systems"
         url: "/merit-badges/plumbing/guide/req2/"
         is_sub: false
-  - group_title: "Tools of the Trade"
+  - group_title: "3. Tools of the Trade"
     items:
-      - title: "Req 3 — Essential Plumbing Tools"
+      - title: "3. Essential Plumbing Tools"
         url: "/merit-badges/plumbing/guide/req3/"
         is_sub: false
-  - group_title: "Plumbing Vocabulary"
+  - group_title: "4. Plumbing Vocabulary"
     items:
-      - title: "Req 4 — Plumbing Parts and Terms"
+      - title: "4. Plumbing Parts and Terms"
         url: "/merit-badges/plumbing/guide/req4/"
         is_sub: false
-  - group_title: "Choosing the Right Pipe"
+  - group_title: "5. Choosing the Right Pipe"
     items:
-      - title: "Req 5 — Common Pipe Materials"
+      - title: "5. Common Pipe Materials"
         url: "/merit-badges/plumbing/guide/req5/"
         is_sub: false
-  - group_title: "Hands-On Plumbing Practice"
+  - group_title: "6. Hands-On Plumbing Practice"
     items:
-      - title: "Req 6 — Choose Four Supervised Tasks"
+      - title: "6. Choose Four Supervised Tasks"
         url: "/merit-badges/plumbing/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Hardware Store Field ID"
+      - title: "a Hardware Store Field ID"
         url: "/merit-badges/plumbing/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Solvent-Welded Plastic Pipe"
+      - title: "b Solvent-Welded Plastic Pipe"
         url: "/merit-badges/plumbing/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — PEX Connections"
+      - title: "c PEX Connections"
         url: "/merit-badges/plumbing/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Soldering Copper"
+      - title: "d Soldering Copper"
         url: "/merit-badges/plumbing/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Replacing a Faucet"
+      - title: "e Replacing a Faucet"
         url: "/merit-badges/plumbing/guide/req6e/"
         is_sub: true
-      - title: "Req 6f — Cleaning a Drain Trap"
+      - title: "f Cleaning a Drain Trap"
         url: "/merit-badges/plumbing/guide/req6f/"
         is_sub: true
-      - title: "Req 6g — Applying Thread Tape"
+      - title: "g Applying Thread Tape"
         url: "/merit-badges/plumbing/guide/req6g/"
         is_sub: true
-  - group_title: "Plumbing Careers"
+  - group_title: "7. Plumbing Careers"
     items:
-      - title: "Req 7 — Exploring Plumbing Careers"
+      - title: "7. Exploring Plumbing Careers"
         url: "/merit-badges/plumbing/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

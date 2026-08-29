@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Pick Your Model Path"
+title: "Pick Your Model Path"
 layout: "guide"
-group_title: "Choose Your Build"
+group_title: "4. Choose Your Build"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/model-design-and-building/guide/req3/"
-prev_title: "Req 3 — Planning Your Original Project"
+prev_title: "Planning Your Original Project"
 next: "/merit-badges/model-design-and-building/guide/req4a/"
-next_title: "Req 4a — House in Miniature"
+next_title: "House in Miniature"
 ---
 
 {{< drg/requirement number="4" >}}

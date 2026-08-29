@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Classifying Mammals"
+title: "Classifying Mammals"
 layout: "guide"
-group_title: "Classification & Taxonomy"
+group_title: "2. Classification & Taxonomy"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/mammal-study/guide/req1/"
-prev_title: "Req 1 — What Makes a Mammal?"
+prev_title: "What Makes a Mammal?"
 next: "/merit-badges/mammal-study/guide/req3/"
-next_title: "Req 3 — Choose Your Field Study"
+next_title: "Choose Your Field Study"
 ---
 
 {{< drg/requirement number="2" >}}

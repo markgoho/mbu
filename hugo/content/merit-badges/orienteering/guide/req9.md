@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Acting as an Official"
+title: "Acting as an Official"
 layout: guide
-group_title: "Officiating & Teaching"
+group_title: "9. Officiating & Teaching"
 req_number: "9"
 prev: "/merit-badges/orienteering/guide/req8/"
-prev_title: "Req 8 — Setting Up a Course"
+prev_title: "Setting Up a Course"
 next: "/merit-badges/orienteering/guide/req10/"
-next_title: "Req 10 — Teaching Orienteering"
+next_title: "Teaching Orienteering"
 ---
 
 {{< drg/requirement number="9" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Learn from Pottery in Person"
+title: "Learn from Pottery in Person"
 layout: "guide"
-group_title: "Choose Your Pottery Experience"
+group_title: "7. Choose Your Pottery Experience"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/pottery/guide/req7a/"
-prev_title: "Req 7a — Visit a Kiln Yard"
+prev_title: "Visit a Kiln Yard"
 next: "/merit-badges/pottery/guide/req7c/"
-next_title: "Req 7c — Pottery in History and Culture"
+next_title: "Pottery in History and Culture"
 ---
 
 {{< drg/requirement number="7b" >}}

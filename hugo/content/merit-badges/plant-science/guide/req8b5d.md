@@ -1,13 +1,13 @@
 ---
-title: "Req 8b5d — Home Gardening for People and Wildlife"
+title: "Home Gardening for People and Wildlife"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b5d"
 req_path: "8.b.5.d"
 prev: "/merit-badges/plant-science/guide/req8b5c/"
-prev_title: "Req 8b5c — Woody Ornamentals in the Landscape"
+prev_title: "Woody Ornamentals"
 next: "/merit-badges/plant-science/guide/req8c/"
-next_title: "Req 8c — Option C: Field Botany"
+next_title: "Field Botany Overview"
 ---
 
 {{< drg/requirement number="8b5d" >}}

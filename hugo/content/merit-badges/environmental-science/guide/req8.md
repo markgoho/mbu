@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Pollination"
+title: "Pollination"
 layout: guide
-group_title: "Pollination"
+group_title: "8. Pollination"
 req_number: "8"
 prev: "/merit-badges/environmental-science/guide/req7/"
-prev_title: "Req 7 — Pollution Prevention & Conservation"
+prev_title: "Pollution Prevention & Conservation"
 next: "/merit-badges/environmental-science/guide/req9/"
-next_title: "Req 9 — Invasive Species"
+next_title: "Invasive Species"
 ---
 
 {{< drg/requirement number="8" >}}

@@ -4,79 +4,79 @@ layout: guide
 badge_name: "Personal Management"
 group_title: "Getting Started"
 next: "/merit-badges/personal-management/guide/req1a/"
-next_title: "Req 1a — Choosing a Major Purchase"
+next_title: "Choosing a Major Purchase"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/personal-management/guide/"
-  - group_title: "Smart Shopping"
+  - group_title: "1. Smart Shopping"
     items:
-      - title: "Req 1a — Choosing a Major Purchase"
+      - title: "a Choosing a Major Purchase"
         url: "/merit-badges/personal-management/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Creating a Savings Plan"
+      - title: "b Creating a Savings Plan"
         url: "/merit-badges/personal-management/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Shopping Strategy"
+      - title: "c Shopping Strategy"
         url: "/merit-badges/personal-management/guide/req1c/"
         is_sub: true
-  - group_title: "Budgeting"
+  - group_title: "2. Budgeting"
     items:
-      - title: "Req 2a — Building a Budget"
+      - title: "a Building a Budget"
         url: "/merit-badges/personal-management/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Balancing Your Budget"
+      - title: "b Balancing Your Budget"
         url: "/merit-badges/personal-management/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Tracking Your Money"
+      - title: "c Tracking Your Money"
         url: "/merit-badges/personal-management/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Budget Review"
+      - title: "d Budget Review"
         url: "/merit-badges/personal-management/guide/req2d/"
         is_sub: true
-  - group_title: "Money & Emotions"
+  - group_title: "3. Money & Emotions"
     items:
-      - title: "Req 3 — Psychology of Money"
+      - title: "3. Psychology of Money"
         url: "/merit-badges/personal-management/guide/req3/"
-  - group_title: "Saving & Investing"
+  - group_title: "4. Saving & Investing"
     items:
-      - title: "Req 4 — Saving vs. Investing"
+      - title: "4. Saving vs. Investing"
         url: "/merit-badges/personal-management/guide/req4/"
-      - title: "Req 5 — Types of Investments"
+      - title: "5. Types of Investments"
         url: "/merit-badges/personal-management/guide/req5/"
-  - group_title: "Insurance"
+  - group_title: "6. Insurance"
     items:
-      - title: "Req 6 — Understanding Insurance"
+      - title: "6. Understanding Insurance"
         url: "/merit-badges/personal-management/guide/req6/"
-  - group_title: "Credit & Debt"
+  - group_title: "7. Credit & Debt"
     items:
-      - title: "Req 7a — Loans & Interest"
+      - title: "a Loans & Interest"
         url: "/merit-badges/personal-management/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Ways to Borrow"
+      - title: "b Ways to Borrow"
         url: "/merit-badges/personal-management/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Cards & Their Costs"
+      - title: "c Cards & Their Costs"
         url: "/merit-badges/personal-management/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Credit Reports"
+      - title: "d Credit Reports"
         url: "/merit-badges/personal-management/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — Reducing Debt"
+      - title: "e Reducing Debt"
         url: "/merit-badges/personal-management/guide/req7e/"
         is_sub: true
-  - group_title: "Time Management"
+  - group_title: "8. Time Management"
     items:
-      - title: "Req 8 — Managing Your Time"
+      - title: "8. Managing Your Time"
         url: "/merit-badges/personal-management/guide/req8/"
-  - group_title: "Project Planning"
+  - group_title: "9. Project Planning"
     items:
-      - title: "Req 9 — Project Planning"
+      - title: "9. Project Planning"
         url: "/merit-badges/personal-management/guide/req9/"
-  - group_title: "Career Exploration"
+  - group_title: "10. Career Exploration"
     items:
-      - title: "Req 10 — Career Planning"
+      - title: "10. Career Planning"
         url: "/merit-badges/personal-management/guide/req10/"
   - group_title: "Beyond the Badge"
     items:

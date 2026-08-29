@@ -4,42 +4,42 @@ layout: guide
 badge_name: "Indian Lore"
 group_title: "Getting Started"
 next: "/merit-badges/indian-lore/guide/req1/"
-next_title: "Req 1 — Cultural Areas"
+next_title: "Cultural Areas"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/indian-lore/guide/"
         is_sub: false
-  - group_title: "Cultural Areas"
+  - group_title: "1. Cultural Areas"
     items:
-      - title: "Req 1 — Cultural Areas"
+      - title: "1. Cultural Areas"
         url: "/merit-badges/indian-lore/guide/req1/"
         is_sub: false
-  - group_title: "Researching a Nation"
+  - group_title: "2. Researching a Nation"
     items:
-      - title: "Req 2 — Researching a Nation"
+      - title: "2. Researching a Nation"
         url: "/merit-badges/indian-lore/guide/req2/"
         is_sub: false
-  - group_title: "Language, Place, and Leaders"
+  - group_title: "3. Language, Place, and Leaders"
     items:
-      - title: "Req 3 — Language, Place, and Leaders"
+      - title: "3. Language, Place, and Leaders"
         url: "/merit-badges/indian-lore/guide/req3/"
         is_sub: false
-  - group_title: "Influence and Exchange"
+  - group_title: "4. Influence and Exchange"
     items:
-      - title: "Req 4 — Influence and Exchange"
+      - title: "4. Influence and Exchange"
         url: "/merit-badges/indian-lore/guide/req4/"
         is_sub: false
-  - group_title: "Choose Your Experience"
+  - group_title: "5. Choose Your Experience"
     items:
-      - title: "Req 5 — Choose Your Experience"
+      - title: "5. Choose Your Experience"
         url: "/merit-badges/indian-lore/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Museum Visit"
+      - title: "a Museum Visit"
         url: "/merit-badges/indian-lore/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Contemporary Gathering"
+      - title: "b Contemporary Gathering"
         url: "/merit-badges/indian-lore/guide/req5b/"
         is_sub: true
   - group_title: "Beyond the Badge"

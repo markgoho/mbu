@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Shopping Strategy"
+title: "Shopping Strategy"
 layout: guide
-group_title: "Smart Shopping"
+group_title: "1. Smart Shopping"
 req_number: "1c"
 prev: "/merit-badges/personal-management/guide/req1b/"
-prev_title: "Req 1b — Creating a Savings Plan"
+prev_title: "Creating a Savings Plan"
 next: "/merit-badges/personal-management/guide/req2a/"
-next_title: "Req 2a — Building a Budget"
+next_title: "Building a Budget"
 ---
 
 {{< drg/requirement number="1c" >}}

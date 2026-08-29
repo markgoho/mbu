@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Safety Basics"
+title: "Safety Basics"
 layout: guide
-group_title: "Home Repair Safety"
+group_title: "1. Home Repair Safety"
 req_number: "1"
 prev: "/merit-badges/home-repairs/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/home-repairs/guide/req2/"
-next_title: "Req 2 — Outdoor Fix-It Options"
+next_title: "Outdoor Fix-It Options"
 guide_nav:
   - group_title: "Getting Started"
     items:

@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Local Scouting History Visit"
+title: "Local Scouting History Visit"
 layout: "guide"
-group_title: "Experience Scouting History"
+group_title: "4. Experience Scouting History"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/scouting-heritage/guide/req4b/"
-prev_title: "Req 4b — National Scouting Museum Visit"
+prev_title: "National Scouting Museum Visit"
 next: "/merit-badges/scouting-heritage/guide/req5/"
-next_title: "Req 5 — Research Your Scouting Community"
+next_title: "Research Your Scouting Community"
 ---
 
 {{< drg/requirement number="4c" >}}

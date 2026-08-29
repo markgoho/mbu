@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Advanced Projects"
+title: "Advanced Projects"
 layout: guide
-group_title: "Advanced Techniques"
+group_title: "6. Advanced Techniques"
 req_number: "6"
 prev: "/merit-badges/woodwork/guide/req5/"
-prev_title: "Req 5 — Design Your Own Project"
+prev_title: "Design Your Own Project"
 next: "/merit-badges/woodwork/guide/req7/"
-next_title: "Req 7 — Woodworking Careers"
+next_title: "Woodworking Careers"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Social vs. Solitary Insects"
+title: "Social vs. Solitary Insects"
 layout: guide
-group_title: "Social Insect Basics"
+group_title: "5. Social Insect Basics"
 req_number: "5a"
 prev: "/merit-badges/insect-study/guide/req4/"
-prev_title: "Req 4 — Observe, Record, and Interpret"
+prev_title: "Observe, Record, and Interpret"
 next: "/merit-badges/insect-study/guide/req5b/"
-next_title: "Req 5b — Pick Your Colony Project"
+next_title: "Pick Your Colony Project"
 ---
 
 {{< drg/requirement number="5a" >}}

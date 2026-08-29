@@ -1,13 +1,13 @@
 ---
-title: "Req 6d — Soldering Copper"
+title: "Soldering Copper"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6d"
 req_path: "6.d"
 prev: "/merit-badges/plumbing/guide/req6c/"
-prev_title: "Req 6c — PEX Connections"
+prev_title: "PEX Connections"
 next: "/merit-badges/plumbing/guide/req6e/"
-next_title: "Req 6e — Replacing a Faucet"
+next_title: "Replacing a Faucet"
 ---
 
 {{< drg/requirement number="6d" >}}

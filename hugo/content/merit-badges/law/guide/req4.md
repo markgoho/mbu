@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Law Enforcement in Society"
+title: "Law Enforcement in Society"
 layout: guide
-group_title: "Law in Action"
+group_title: "4. Law in Action"
 req_number: "4"
 prev: "/merit-badges/law/guide/req3/"
-prev_title: "Requirement 3 — Civil vs. Criminal Law"
+prev_title: "Civil vs. Criminal Law"
 next: "/merit-badges/law/guide/req5/"
-next_title: "Requirement 5 — Consumer & Seller Protections"
+next_title: "Consumer & Seller Protections"
 ---
 
 {{< drg/requirement number="4" >}}

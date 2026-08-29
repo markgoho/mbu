@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Mining, Reclamation, and Sustainability"
+title: "Mining, Reclamation, and Sustainability"
 layout: "guide"
-group_title: "Reclamation and Sustainability"
+group_title: "6. Reclamation and Sustainability"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/mining-in-society/guide/req5f/"
-prev_title: "Req 5f — Your Community's Mining Story"
+prev_title: "Your Community"
 next: "/merit-badges/mining-in-society/guide/req7/"
-next_title: "Req 7 — Choose a Future-Focused Topic"
+next_title: "Choose a Future-Focused Topic"
 ---
 
 {{< drg/requirement number="6" >}}

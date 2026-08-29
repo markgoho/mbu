@@ -1,13 +1,13 @@
 ---
-title: "Req 8b — Strains, Tears & Tendon Injuries"
+title: "Strains, Tears & Tendon Injuries"
 layout: "guide"
-group_title: "Muscle & Bone Injuries"
+group_title: "8. Muscle & Bone Injuries"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/first-aid/guide/req8a/"
-prev_title: "Req 8a — Understanding Injuries"
+prev_title: "Understanding Injuries"
 next: "/merit-badges/first-aid/guide/req8c/"
-next_title: "Req 8c — Sprains, Fractures & Dislocations"
+next_title: "Sprains, Fractures & Dislocations"
 ---
 
 {{< drg/requirement number="8b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 7c — Product Life Cycles"
+title: "Product Life Cycles"
 layout: guide
-group_title: "Global Challenges"
+group_title: "7. Global Challenges"
 req_number: "7c"
 prev: "/merit-badges/sustainability/guide/req7b/"
-prev_title: "Req 7b — Planetary Life-Support Systems"
+prev_title: "Planetary Life-Support Systems"
 next: "/merit-badges/sustainability/guide/req7d/"
-next_title: "Req 7d — Population & Sustainability"
+next_title: "Population & Sustainability"
 ---
 
 {{< drg/requirement number="7c" >}}

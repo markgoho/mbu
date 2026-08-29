@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Observe New Reactions"
+title: "Observe New Reactions"
 layout: guide
-group_title: "Testing Rules"
+group_title: "4. Testing Rules"
 req_number: "4c"
 prev: "/merit-badges/game-design/guide/req4b/"
-prev_title: "Req 4b — Predict Rule Changes"
+prev_title: "Predict Rule Changes"
 next: "/merit-badges/game-design/guide/req4d/"
-next_title: "Req 4d — Analyze the Results"
+next_title: "Analyze the Results"
 ---
 
 {{< drg/requirement number="4c" >}}

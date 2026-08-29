@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Physical Examinations"
+title: "Physical Examinations"
 layout: guide
-group_title: "Monitoring Your Health"
+group_title: "2. Monitoring Your Health"
 req_number: "2a"
 prev: "/merit-badges/personal-fitness/guide/req1e/"
-prev_title: "Req 1e — Scout Oath and Law"
+prev_title: "Scout Oath and Law"
 next: "/merit-badges/personal-fitness/guide/req2b/"
-next_title: "Req 2b — Dental Health"
+next_title: "Dental Health"
 ---
 
 {{< drg/requirement number="2a" >}}

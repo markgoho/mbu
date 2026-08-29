@@ -1,12 +1,12 @@
 ---
-title: "Req 3g — Snaps and Rivets"
+title: "Snaps and Rivets"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3g"
 prev: "/merit-badges/leatherwork/guide/req3f/"
-prev_title: "Req 3f — Lacing and Stitching"
+prev_title: "Lacing and Stitching"
 next: "/merit-badges/leatherwork/guide/req3h/"
-next_title: "Req 3h — Smooth Finished Edges"
+next_title: "Smooth Finished Edges"
 ---
 
 {{< drg/requirement number="3g" >}}

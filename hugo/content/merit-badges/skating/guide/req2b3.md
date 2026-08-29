@@ -1,13 +1,13 @@
 ---
-title: "Req 2b3 — Roller Skate Care"
+title: "Roller Skate Care"
 layout: "guide"
-group_title: "Option B — Roller Skating"
+group_title: "2. Option B — Roller Skating"
 req_number: "2b3"
 req_path: "2.b.3"
 prev: "/merit-badges/skating/guide/req2b2/"
-prev_title: "Req 2b2 — Parts of a Roller Skate"
+prev_title: "Parts of a Roller Skate"
 next: "/merit-badges/skating/guide/req2b4/"
-next_title: "Req 2b4 — Forward Skating & Stop"
+next_title: "Forward Skating & Stop"
 ---
 
 {{< drg/requirement number="2b3" >}}

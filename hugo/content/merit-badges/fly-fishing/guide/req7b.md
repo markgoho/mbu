@@ -1,12 +1,12 @@
 ---
-title: "Req 7b — Catch and Release"
+title: "Catch and Release"
 layout: guide
-group_title: "Ethics & Stewardship"
+group_title: "7. Ethics & Stewardship"
 req_number: "7b"
 prev: "/merit-badges/fly-fishing/guide/req7a/"
-prev_title: "Req 7a — Leave No Trace on the Water"
+prev_title: "Leave No Trace on the Water"
 next: "/merit-badges/fly-fishing/guide/req8/"
-next_title: "Req 8 — Fishing Regulations"
+next_title: "Fishing Regulations"
 ---
 
 {{< drg/requirement number="7b" >}}

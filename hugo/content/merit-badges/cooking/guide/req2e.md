@@ -1,12 +1,12 @@
 ---
-title: "Req 2e — Food Label Terms"
+title: "Food Label Terms"
 layout: guide
-group_title: "Nutrition"
+group_title: "2. Nutrition"
 req_number: "2e"
 prev: "/merit-badges/cooking/guide/req2d/"
-prev_title: "Req 2d — Healthy Eating Habits"
+prev_title: "Healthy Eating Habits"
 next: "/merit-badges/cooking/guide/req3a/"
-next_title: "Req 3a — Cooking Methods"
+next_title: "Cooking Methods"
 ---
 
 {{< drg/requirement number="2e" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Compare Two Virtual Mine Tours"
+title: "Compare Two Virtual Mine Tours"
 layout: "guide"
-group_title: "Virtual Mine Tours"
+group_title: "5. Virtual Mine Tours"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/mining-in-society/guide/req5/"
-prev_title: "Req 5 — Choose Your Mining Experience"
+prev_title: "Choose Your Mining Experience"
 next: "/merit-badges/mining-in-society/guide/req5b/"
-next_title: "Req 5b — Museum Mining History"
+next_title: "Museum Mining History"
 ---
 
 {{< drg/requirement number="5a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5d — Mining Equipment in Action"
+title: "Mining Equipment in Action"
 layout: "guide"
-group_title: "Mining Equipment in Action"
+group_title: "5. Mining Equipment in Action"
 req_number: "5d"
 req_path: "5.d"
 prev: "/merit-badges/mining-in-society/guide/req5c/"
-prev_title: "Req 5c — Visit an Active Mine"
+prev_title: "Visit an Active Mine"
 next: "/merit-badges/mining-in-society/guide/req5e/"
-next_title: "Req 5e — Ore Processing Basics"
+next_title: "Ore Processing Basics"
 ---
 
 {{< drg/requirement number="5d" >}}

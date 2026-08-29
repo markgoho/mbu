@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — First Aid Merit Badge"
+title: "First Aid Merit Badge"
 layout: guide
-group_title: "Prerequisites"
+group_title: "9. Prerequisites"
 req_number: "9"
 prev: "/merit-badges/emergency-preparedness/guide/req8/"
-prev_title: "Requirement 8 — Emergency Service"
+prev_title: "Emergency Service"
 next: "/merit-badges/emergency-preparedness/guide/req10/"
-next_title: "Requirement 10 — Careers"
+next_title: "Careers"
 ---
 
 {{< drg/requirement number="9" >}}

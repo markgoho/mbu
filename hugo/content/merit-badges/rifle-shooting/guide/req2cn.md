@@ -1,13 +1,13 @@
 ---
-title: "Req 2cn — Scored Grouping Exercise"
+title: "Scored Grouping Exercise"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cn"
 req_path: "2.c.n"
 prev: "/merit-badges/rifle-shooting/guide/req2cm/"
-prev_title: "Req 2cm — First Grouping Exercise"
+prev_title: "First Grouping Exercise"
 next: "/merit-badges/rifle-shooting/guide/req3/"
-next_title: "Req 3 — Pathways, Training, and Goals"
+next_title: "Pathways, Training, and Goals"
 ---
 
 {{< drg/requirement number="2cn" >}}

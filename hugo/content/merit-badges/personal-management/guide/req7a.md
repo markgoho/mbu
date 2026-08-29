@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — Loans & Interest"
+title: "Loans & Interest"
 layout: guide
-group_title: "Credit & Debt"
+group_title: "7. Credit & Debt"
 req_number: "7a"
 prev: "/merit-badges/personal-management/guide/req6/"
-prev_title: "Req 6 — Understanding Insurance"
+prev_title: "Understanding Insurance"
 next: "/merit-badges/personal-management/guide/req7b/"
-next_title: "Req 7b — Ways to Borrow"
+next_title: "Ways to Borrow"
 ---
 
 {{< drg/requirement number="7a" >}}

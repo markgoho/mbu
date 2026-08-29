@@ -1,13 +1,13 @@
 ---
-title: "Req 8c2 — Surveying a Study Site"
+title: "Surveying a Study Site"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c2"
 req_path: "8.c.2"
 prev: "/merit-badges/plant-science/guide/req8c1/"
-prev_title: "Req 8c1 — Observing a Natural Area"
+prev_title: "Visit a Natural Area"
 next: "/merit-badges/plant-science/guide/req8c3/"
-next_title: "Req 8c3 — Using Plant Identification Keys"
+next_title: "Identification Keys"
 ---
 
 {{< drg/requirement number="8c2" >}}

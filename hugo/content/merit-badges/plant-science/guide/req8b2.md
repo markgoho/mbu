@@ -1,13 +1,13 @@
 ---
-title: "Req 8b2 — Speaking the Language of Horticulture"
+title: "Speaking the Language of Horticulture"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b2"
 req_path: "8.b.2"
 prev: "/merit-badges/plant-science/guide/req8b1/"
-prev_title: "Req 8b1 — Learning by Visiting Growing Spaces"
+prev_title: "Visit a Horticultural Site"
 next: "/merit-badges/plant-science/guide/req8b3/"
-next_title: "Req 8b3 — Choose a Hands-On Skill"
+next_title: "Choose a Hands-On Skill"
 ---
 
 {{< drg/requirement number="8b2" >}}

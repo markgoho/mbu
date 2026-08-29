@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Knots, Lines & Seamanship"
+title: "Knots, Lines & Seamanship"
 layout: "guide"
-group_title: "Ropework & Boat Care"
+group_title: "7. Ropework & Boat Care"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/small-boat-sailing/guide/req6/"
-prev_title: "Req 6 — Sailing Skills Underway"
+prev_title: "Sailing Skills Underway"
 next: "/merit-badges/small-boat-sailing/guide/req8/"
-next_title: "Req 8 — Care for Boat and Gear"
+next_title: "Care for Boat and Gear"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Read Aloud for Comfort"
+title: "Read Aloud for Comfort"
 layout: "guide"
-group_title: "Reading in Service"
+group_title: "6. Reading in Service"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/reading/guide/req6/"
-prev_title: "Req 6 — Choose a Reading Service Project"
+prev_title: "Choose a Reading Service Project"
 next: "/merit-badges/reading/guide/req6b/"
-next_title: "Req 6b — Volunteer at a Library"
+next_title: "Volunteer at a Library"
 ---
 
 {{< drg/requirement number="6a" >}}

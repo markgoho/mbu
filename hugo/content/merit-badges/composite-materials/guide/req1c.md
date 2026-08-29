@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Safety Data Sheets"
+title: "Safety Data Sheets"
 layout: guide
-group_title: "Safety & Responsibility"
+group_title: "1. Safety & Responsibility"
 req_number: "1c"
 prev: "/merit-badges/composite-materials/guide/req1b/"
-prev_title: "Req 1b — Handling, Storage & Disposal"
+prev_title: "Handling, Storage & Disposal"
 next: "/merit-badges/composite-materials/guide/req2a/"
-next_title: "Req 2a — What Are Composites?"
+next_title: "What Are Composites?"
 ---
 
 {{< drg/requirement number="1c" >}}

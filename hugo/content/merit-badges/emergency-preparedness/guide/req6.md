@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Moving an Injured Person"
+title: "Moving an Injured Person"
 layout: guide
-group_title: "Moving an Injured Person"
+group_title: "6. Moving an Injured Person"
 req_number: "6"
 prev: "/merit-badges/emergency-preparedness/guide/req5/"
-prev_title: "Requirement 5 — Signaling for Help"
+prev_title: "Signaling for Help"
 next: "/merit-badges/emergency-preparedness/guide/req7/"
-next_title: "Requirement 7 — NIMS and ICS"
+next_title: "NIMS and ICS"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Reptiles and Amphibians"
+title: "Reptiles and Amphibians"
 layout: "guide"
-group_title: "Herps in the Field"
+group_title: "4. Herps in the Field"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/nature/guide/req4b/"
-prev_title: "Req 4b — Mammal Signs and Tracks"
+prev_title: "Mammal Signs and Tracks"
 next: "/merit-badges/nature/guide/req4d/"
-next_title: "Req 4d — Insects and Spiders Up Close"
+next_title: "Insects and Spiders Up Close"
 ---
 
 {{< drg/requirement number="4c" >}}

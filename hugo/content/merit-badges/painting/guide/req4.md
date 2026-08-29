@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Choose Harmonizing Colors"
+title: "Choose Harmonizing Colors"
 layout: "guide"
-group_title: "Color Decisions"
+group_title: "4. Color Decisions"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/painting/guide/req3/"
-prev_title: "Req 3 — Plan Two Real Projects"
+prev_title: "Plan Two Real Projects"
 next: "/merit-badges/painting/guide/req5/"
-next_title: "Req 5 — Use and Care for Your Tools"
+next_title: "Use and Care for Your Tools"
 ---
 
 {{< drg/requirement number="4" >}}

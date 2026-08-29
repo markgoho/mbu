@@ -4,108 +4,108 @@ layout: guide
 badge_name: "Camping"
 group_title: "Getting Started"
 next: "/merit-badges/camping/guide/req1a/"
-next_title: "Req 1a — Camping Hazards"
+next_title: "Camping Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/camping/guide/"
-  - group_title: "Safety & Hazard Awareness"
+  - group_title: "1. Safety & Hazard Awareness"
     items:
-      - title: "Req 1a — Camping Hazards"
+      - title: "a Camping Hazards"
         url: "/merit-badges/camping/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Weather Awareness"
+      - title: "b Weather Awareness"
         url: "/merit-badges/camping/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Camping First Aid"
+      - title: "c Camping First Aid"
         url: "/merit-badges/camping/guide/req1c/"
         is_sub: true
-  - group_title: "Outdoor Ethics"
+  - group_title: "2. Outdoor Ethics"
     items:
-      - title: "Req 2 — Leave No Trace & Outdoor Code"
+      - title: "2. Leave No Trace & Outdoor Code"
         url: "/merit-badges/camping/guide/req2/"
         is_sub: false
-  - group_title: "Navigation & Trip Planning"
+  - group_title: "3. Navigation & Trip Planning"
     items:
-      - title: "Req 3 — Map & Navigation"
+      - title: "3. Map & Navigation"
         url: "/merit-badges/camping/guide/req3/"
         is_sub: false
-  - group_title: "Patrol Organization"
+  - group_title: "4. Patrol Organization"
     items:
-      - title: "Req 4 — Duty Roster & Leadership"
+      - title: "4. Duty Roster & Leadership"
         url: "/merit-badges/camping/guide/req4/"
         is_sub: false
-  - group_title: "Clothing & Gear"
+  - group_title: "5. Clothing & Gear"
     items:
-      - title: "Req 5a — Camping Clothing"
+      - title: "a Camping Clothing"
         url: "/merit-badges/camping/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Footwear"
+      - title: "b Footwear"
         url: "/merit-badges/camping/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Gear Care & Storage"
+      - title: "c Gear Care & Storage"
         url: "/merit-badges/camping/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Outdoor Essentials"
+      - title: "d Outdoor Essentials"
         url: "/merit-badges/camping/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Pack Inspection"
+      - title: "e Pack Inspection"
         url: "/merit-badges/camping/guide/req5e/"
         is_sub: true
-  - group_title: "Shelter & Camp Setup"
+  - group_title: "6. Shelter & Camp Setup"
     items:
-      - title: "Req 6a — Types of Tents"
+      - title: "a Types of Tents"
         url: "/merit-badges/camping/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Sanitation & Water Treatment"
+      - title: "b Sanitation & Water Treatment"
         url: "/merit-badges/camping/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Campsite Selection"
+      - title: "c Campsite Selection"
         url: "/merit-badges/camping/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Backpacks"
+      - title: "d Backpacks"
         url: "/merit-badges/camping/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Sleeping Bags"
+      - title: "e Sleeping Bags"
         url: "/merit-badges/camping/guide/req6e/"
         is_sub: true
-  - group_title: "Packing & Preparation"
+  - group_title: "7. Packing & Preparation"
     items:
-      - title: "Req 7 — Gear Checklist & Packing"
+      - title: "7. Gear Checklist & Packing"
         url: "/merit-badges/camping/guide/req7/"
         is_sub: false
-  - group_title: "Camp Cooking"
+  - group_title: "8. Camp Cooking"
     items:
-      - title: "Req 8a — Stove Safety"
+      - title: "a Stove Safety"
         url: "/merit-badges/camping/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Stove Types"
+      - title: "b Stove Types"
         url: "/merit-badges/camping/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Menu Planning"
+      - title: "c Menu Planning"
         url: "/merit-badges/camping/guide/req8c/"
         is_sub: true
       - title: "Menu Planning Worksheet"
         url: "/merit-badges/camping/guide/menu-plan/"
         is_sub: true
-      - title: "Req 8d — Cook Your Meals"
+      - title: "d Cook Your Meals"
         url: "/merit-badges/camping/guide/req8d/"
         is_sub: true
-  - group_title: "Camping Experience"
+  - group_title: "9. Camping Experience"
     items:
-      - title: "Req 9a — 20 Nights of Camping"
+      - title: "a 20 Nights of Camping"
         url: "/merit-badges/camping/guide/req9a/"
         is_sub: true
-      - title: "Req 9b — Adventure Activities"
+      - title: "b Adventure Activities"
         url: "/merit-badges/camping/guide/req9b/"
         is_sub: true
-      - title: "Req 9c — Conservation Project"
+      - title: "c Conservation Project"
         url: "/merit-badges/camping/guide/req9c/"
         is_sub: true
-  - group_title: "Reflection"
+  - group_title: "10. Reflection"
     items:
-      - title: "Req 10 — Scout Spirit & Reflection"
+      - title: "10. Scout Spirit & Reflection"
         url: "/merit-badges/camping/guide/req10/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — System Security"
+title: "System Security"
 layout: guide
-group_title: "Cyber Defenses"
+group_title: "5. Cyber Defenses"
 req_number: "5c"
 prev: "/merit-badges/cybersecurity/guide/req5b/"
-prev_title: "Req 5b — Installing Updates"
+prev_title: "Installing Updates"
 next: "/merit-badges/cybersecurity/guide/req6a/"
-next_title: "Req 6a — Encryption Uses"
+next_title: "Encryption Uses"
 ---
 
 {{< drg/requirement number="5c" >}}

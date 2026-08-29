@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Advanced Certificates"
+title: "Advanced Certificates"
 layout: guide
-group_title: "Aviation Careers"
+group_title: "5. Aviation Careers"
 req_number: "5c"
 prev: "/merit-badges/aviation/guide/req5b/"
-prev_title: "Req 5b — Instrument Rating"
+prev_title: "Instrument Rating"
 next: "/merit-badges/aviation/guide/req5d/"
-next_title: "Req 5d — Aviation Organizations"
+next_title: "Aviation Organizations"
 ---
 
 {{< drg/requirement number="5c" >}}

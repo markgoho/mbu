@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Hog Option"
+title: "Hog Option"
 layout: guide
-group_title: "Specialty Options"
+group_title: "6. Specialty Options"
 req_number: "6"
 prev: "/merit-badges/animal-science/guide/req6-sheep-or-goat/"
-prev_title: "Req 6 — Sheep or Goat Option"
+prev_title: "Sheep or Goat Option"
 next: "/merit-badges/animal-science/guide/req6-avian/"
-next_title: "Req 6 — Avian Option"
+next_title: "Avian Option"
 ---
 
 {{< drg/requirement number="6" option="Hog Option" >}}

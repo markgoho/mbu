@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Parts of the Horse"
+title: "Parts of the Horse"
 layout: guide
-group_title: "Horse Anatomy"
+group_title: "2. Horse Anatomy"
 req_number: "2"
 prev: "/merit-badges/horsemanship/guide/req1/"
-prev_title: "Req 1 — Horse and Barn Safety"
+prev_title: "Horse and Barn Safety"
 next: "/merit-badges/horsemanship/guide/req3/"
-next_title: "Req 3 — Breeds and Special Traits"
+next_title: "Breeds and Special Traits"
 ---
 
 {{< drg/requirement number="2" >}}

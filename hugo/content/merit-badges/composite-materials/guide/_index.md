@@ -4,60 +4,60 @@ layout: guide
 badge_name: "Composite Materials"
 group_title: "Getting Started"
 next: "/merit-badges/composite-materials/guide/req1a/"
-next_title: "Req 1a — Safety Hazards & Protective Gear"
+next_title: "Safety Hazards & Protective Gear"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/composite-materials/guide/"
-  - group_title: "Safety & Responsibility"
+  - group_title: "1. Safety & Responsibility"
     items:
-      - title: "Req 1a — Safety Hazards & Protective Gear"
+      - title: "a Safety Hazards & Protective Gear"
         url: "/merit-badges/composite-materials/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Handling, Storage & Disposal"
+      - title: "b Handling, Storage & Disposal"
         url: "/merit-badges/composite-materials/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Safety Data Sheets"
+      - title: "c Safety Data Sheets"
         url: "/merit-badges/composite-materials/guide/req1c/"
         is_sub: true
-  - group_title: "Understanding Composites"
+  - group_title: "2. Understanding Composites"
     items:
-      - title: "Req 2a — What Are Composites?"
+      - title: "a What Are Composites?"
         url: "/merit-badges/composite-materials/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Composites vs. Traditional Materials"
+      - title: "b Composites vs. Traditional Materials"
         url: "/merit-badges/composite-materials/guide/req2b/"
         is_sub: true
-  - group_title: "How Composites Are Made"
+  - group_title: "3. How Composites Are Made"
     items:
-      - title: "Req 3a — Reinforcement Materials"
+      - title: "a Reinforcement Materials"
         url: "/merit-badges/composite-materials/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Resins"
+      - title: "b Resins"
         url: "/merit-badges/composite-materials/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — New Resin Applications"
+      - title: "c New Resin Applications"
         url: "/merit-badges/composite-materials/guide/req3c/"
         is_sub: true
-  - group_title: "Real-World Composites"
+  - group_title: "4. Real-World Composites"
     items:
-      - title: "Req 4 — Explore the Industry"
+      - title: "4. Explore the Industry"
         url: "/merit-badges/composite-materials/guide/req4/"
-  - group_title: "Building with Composites"
+  - group_title: "5. Building with Composites"
     items:
-      - title: "Req 5a — Hands-On Projects"
+      - title: "a Hands-On Projects"
         url: "/merit-badges/composite-materials/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Finding a Workspace"
+      - title: "b Finding a Workspace"
         url: "/merit-badges/composite-materials/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Evaluating Your Work"
+      - title: "c Evaluating Your Work"
         url: "/merit-badges/composite-materials/guide/req5c/"
         is_sub: true
-  - group_title: "Your Composites Future"
+  - group_title: "6. Your Composites Future"
     items:
-      - title: "Req 6 — Careers & Hobbies"
+      - title: "6. Careers & Hobbies"
         url: "/merit-badges/composite-materials/guide/req6/"
   - group_title: "Beyond the Badge"
     items:

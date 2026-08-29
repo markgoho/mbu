@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Terrain Features"
+title: "Terrain Features"
 layout: guide
-group_title: "Map Skills"
+group_title: "4. Map Skills"
 req_number: "4a"
 prev: "/merit-badges/orienteering/guide/req3b/"
-prev_title: "Req 3b — Taking a Compass Bearing"
+prev_title: "Taking a Compass Bearing"
 next: "/merit-badges/orienteering/guide/req4b/"
-next_title: "Req 4b — Map Symbols"
+next_title: "Map Symbols"
 ---
 
 {{< drg/requirement number="4a" >}}

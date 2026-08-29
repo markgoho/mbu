@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Understanding Radiation"
+title: "Understanding Radiation"
 layout: "guide"
-group_title: "Radiation Basics"
+group_title: "1. Radiation Basics"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/nuclear-science/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/nuclear-science/guide/req2/"
-next_title: "Req 2 — Atoms, Isotopes, and Particles"
+next_title: "Atoms, Isotopes, and Particles"
 ---
 
 {{< drg/requirement number="1" >}}

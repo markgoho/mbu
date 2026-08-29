@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Managing Your Time"
+title: "Managing Your Time"
 layout: guide
-group_title: "Time Management"
+group_title: "8. Time Management"
 req_number: "8"
 prev: "/merit-badges/personal-management/guide/req7e/"
-prev_title: "Req 7e — Reducing Debt"
+prev_title: "Reducing Debt"
 next: "/merit-badges/personal-management/guide/req9/"
-next_title: "Req 9 — Project Planning"
+next_title: "Project Planning"
 ---
 
 {{< drg/requirement number="8" >}}

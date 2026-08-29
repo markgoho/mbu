@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Visiting the Dentist"
+title: "Visiting the Dentist"
 layout: guide
-group_title: "The Dental Visit"
+group_title: "3. The Dental Visit"
 req_number: "3"
 prev: "/merit-badges/dentistry/guide/req2d/"
-prev_title: "Req 2d — Tobacco & Oral Health"
+prev_title: "Tobacco & Oral Health"
 next: "/merit-badges/dentistry/guide/req4/"
-next_title: "Req 4 — Dental Tools & Hands-On Skills"
+next_title: "Dental Tools & Hands-On Skills"
 ---
 
 {{< drg/requirement number="3" >}}

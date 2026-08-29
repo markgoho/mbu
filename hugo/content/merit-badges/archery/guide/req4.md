@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Formats & Scoring"
+title: "Formats & Scoring"
 layout: guide
-group_title: "Archery Formats & Scoring"
+group_title: "4. Archery Formats & Scoring"
 req_number: "4"
 prev: "/merit-badges/archery/guide/req3/"
-prev_title: "Req 3 — Accessories & Terminology"
+prev_title: "Accessories & Terminology"
 next: "/merit-badges/archery/guide/req5/"
-next_title: "Req 5 — Shooting Options Overview"
+next_title: "Shooting Options Overview"
 ---
 
 {{< drg/requirement number="4" >}}

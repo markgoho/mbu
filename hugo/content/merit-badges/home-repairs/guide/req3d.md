@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Painting and Varnishing"
+title: "Painting and Varnishing"
 layout: guide
-group_title: "Workshop Projects"
+group_title: "3. Workshop Projects"
 req_number: "3d"
 prev: "/merit-badges/home-repairs/guide/req3c/"
-prev_title: "Req 3c — Furniture Repair"
+prev_title: "Furniture Repair"
 next: "/merit-badges/home-repairs/guide/req3e/"
-next_title: "Req 3e — Fixing a Sagging Door or Gate"
+next_title: "Fixing a Sagging Door or Gate"
 ---
 
 {{< drg/requirement number="3d" >}}

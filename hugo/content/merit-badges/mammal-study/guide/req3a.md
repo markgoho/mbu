@@ -1,13 +1,13 @@
 ---
-title: "Req 3a — Two Habitats, Six Hours"
+title: "Two Habitats, Six Hours"
 layout: "guide"
-group_title: "Field Study Options"
+group_title: "3. Field Study Options"
 req_number: "3a"
 req_path: "3.a"
 prev: "/merit-badges/mammal-study/guide/req3/"
-prev_title: "Req 3 — Choose Your Field Study"
+prev_title: "Choose Your Field Study"
 next: "/merit-badges/mammal-study/guide/req3b/"
-next_title: "Req 3b — Five-Day Observation Log"
+next_title: "Five-Day Observation Log"
 ---
 
 {{< drg/requirement number="3a" >}}

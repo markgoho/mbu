@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Confidentiality and HIPAA"
+title: "Confidentiality and HIPAA"
 layout: guide
-group_title: "Privacy and Trust"
+group_title: "7. Privacy and Trust"
 req_number: "7"
 prev: "/merit-badges/health-care-professions/guide/req6/"
-prev_title: "Req 6 — The Physician's Oath"
+prev_title: "The Physician"
 next: "/merit-badges/health-care-professions/guide/req8/"
-next_title: "Req 8 — Recent Medical Breakthroughs"
+next_title: "Recent Medical Breakthroughs"
 ---
 
 {{< drg/requirement number="7" >}}

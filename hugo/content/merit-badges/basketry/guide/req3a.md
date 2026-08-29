@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Square Basket"
+title: "Square Basket"
 layout: guide
-group_title: "Weaving Projects"
+group_title: "3. Weaving Projects"
 req_number: "3a"
 prev: "/merit-badges/basketry/guide/req2/"
-prev_title: "Req 2 — Basket Types & Weaves"
+prev_title: "Basket Types & Weaves"
 next: "/merit-badges/basketry/guide/req3b/"
-next_title: "Req 3b — Round Basket"
+next_title: "Round Basket"
 ---
 
 {{< drg/requirement number="3a" >}}

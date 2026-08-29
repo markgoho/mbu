@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Following the News"
+title: "Following the News"
 layout: guide
-group_title: "Citizenship in Action"
+group_title: "5. Citizenship in Action"
 req_number: "5"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req4c/"
-prev_title: "Req 4c — E Pluribus Unum"
+prev_title: "E Pluribus Unum"
 next: "/merit-badges/citizenship-in-the-nation/guide/req6/"
-next_title: "Req 6 — A Historic Speech"
+next_title: "A Historic Speech"
 ---
 
 {{< drg/requirement number="5" >}}

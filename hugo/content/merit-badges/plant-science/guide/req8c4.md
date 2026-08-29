@@ -1,13 +1,13 @@
 ---
-title: "Req 8c4 — Pressing and Mounting Specimens"
+title: "Pressing and Mounting Specimens"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c4"
 req_path: "8.c.4"
 prev: "/merit-badges/plant-science/guide/req8c3/"
-prev_title: "Req 8c3 — Using Plant Identification Keys"
+prev_title: "Identification Keys"
 next: "/merit-badges/plant-science/guide/req8c5/"
-next_title: "Req 8c5 — Rare Plants and Conservation"
+next_title: "Rare Plants"
 ---
 
 {{< drg/requirement number="8c4" >}}

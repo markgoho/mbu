@@ -1,13 +1,13 @@
 ---
-title: "Req 8d4 — Participate in a Fox Hunt"
+title: "Participate in a Fox Hunt"
 layout: "guide"
-group_title: "Option D: Direction Finding"
+group_title: "8. Option D: Direction Finding"
 req_number: "8d4"
 req_path: "8.d.4"
 prev: "/merit-badges/radio/guide/req8d3/"
-prev_title: "Req 8d3 — Build a Directional Antenna"
+prev_title: "Build a Directional Antenna"
 next: "/merit-badges/radio/guide/req8d5/"
-next_title: "Req 8d5 — Map Your Hunt"
+next_title: "Map Your Hunt"
 guide_nav:
   - group_title: "Getting Started"
     items:

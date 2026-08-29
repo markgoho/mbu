@@ -1,13 +1,13 @@
 ---
-title: "Req 2a11 — 180° Turn Around Cone"
+title: "180° Turn Around Cone"
 layout: "guide"
-group_title: "Option A — Ice Skating"
+group_title: "2. Option A — Ice Skating"
 req_number: "2a11"
 req_path: "2.a.11"
 prev: "/merit-badges/skating/guide/req2a-10/"
-prev_title: "Req 2a10 — Backward Skating"
+prev_title: "Backward Skating"
 next: "/merit-badges/skating/guide/req2a-12/"
-next_title: "Req 2a12 — Forward Crossovers"
+next_title: "Forward Crossovers"
 ---
 
 {{< drg/requirement number="2a11" >}}

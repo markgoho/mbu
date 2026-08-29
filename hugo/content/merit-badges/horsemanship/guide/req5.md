@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Conformation, Lameness, and Unsoundness"
+title: "Conformation, Lameness, and Unsoundness"
 layout: guide
-group_title: "Horse Health"
+group_title: "4. Horse Health"
 req_number: "5"
 prev: "/merit-badges/horsemanship/guide/req4/"
-prev_title: "Req 4 — Colic and Common Health Problems"
+prev_title: "Colic and Common Health Problems"
 next: "/merit-badges/horsemanship/guide/req6/"
-next_title: "Req 6 — Hoof Care and Horseshoes"
+next_title: "Hoof Care and Horseshoes"
 ---
 
 {{< drg/requirement number="5" >}}

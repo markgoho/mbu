@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Diesel Engines"
+title: "Diesel Engines"
 layout: guide
-group_title: "Understanding Farm Power Systems"
+group_title: "2. Understanding Farm Power Systems"
 req_number: "2a"
 prev: "/merit-badges/farm-mechanics/guide/req1d/"
-prev_title: "Req 1d — Safety Data Sheets"
+prev_title: "Safety Data Sheets"
 next: "/merit-badges/farm-mechanics/guide/req2b/"
-next_title: "Req 2b — Hydraulic Systems"
+next_title: "Hydraulic Systems"
 ---
 
 {{< drg/requirement number="2a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Fire Origins"
+title: "Fire Origins"
 layout: guide
-group_title: "Fire Origins & Causes"
+group_title: "4. Fire Origins & Causes"
 req_number: "4"
 prev: "/merit-badges/fire-safety/guide/req3cd/"
-prev_title: "Req 3c–3d — Burns & Carbon Monoxide"
+prev_title: "Burns & Carbon Monoxide"
 next: "/merit-badges/fire-safety/guide/req5ab/"
-next_title: "Req 5a–5b — Common Home Fire Hazards"
+next_title: "Common Home Fire Hazards"
 ---
 
  {{< drg/requirement number="4" >}}

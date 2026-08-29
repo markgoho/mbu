@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Modulation & Data"
+title: "Modulation & Data"
 layout: "guide"
-group_title: "Information by Radio"
+group_title: "4. Information by Radio"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/radio/guide/req3/"
-prev_title: "Req 3 — Wave Propagation"
+prev_title: "Wave Propagation"
 next: "/merit-badges/radio/guide/req5/"
-next_title: "Req 5 — Equipment & Devices"
+next_title: "Equipment & Devices"
 guide_nav:
   - group_title: "Getting Started"
     items:

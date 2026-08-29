@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Wood Identification"
+title: "Wood Identification"
 layout: guide
-group_title: "Understanding Wood"
+group_title: "2. Understanding Wood"
 req_number: "2b"
 prev: "/merit-badges/woodwork/guide/req2a/"
-prev_title: "Req 2a — From Tree to Lumber"
+prev_title: "From Tree to Lumber"
 next: "/merit-badges/woodwork/guide/req3a/"
-next_title: "Req 3a — Tool Care & Storage"
+next_title: "Tool Care & Storage"
 ---
 
 {{< drg/requirement number="2b" >}}

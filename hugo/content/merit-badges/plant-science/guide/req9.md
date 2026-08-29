@@ -1,11 +1,11 @@
 ---
-title: "Req 9 — Outdoor Ethics in Plant Science"
+title: "Outdoor Ethics in Plant Science"
 layout: "guide"
-group_title: "Plant Science in the Field"
+group_title: "9. Leave No Trace"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/plant-science/guide/req8c6e/"
-prev_title: "Req 8c6e — Visiting a Plant Conservation Organization"
+prev_title: "Conservation Organization"
 next: "/merit-badges/plant-science/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

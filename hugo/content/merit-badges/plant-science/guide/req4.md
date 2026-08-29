@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — What Plants Need to Thrive"
+title: "What Plants Need to Thrive"
 layout: "guide"
-group_title: "Growing Conditions & Soil"
+group_title: "4. Growing Conditions & Soil"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/plant-science/guide/req3/"
-prev_title: "Req 3 — Pollinators at Work"
+prev_title: "Pollinators at Work"
 next: "/merit-badges/plant-science/guide/req5/"
-next_title: "Req 5 — Propagation in Practice"
+next_title: "Propagation in Practice"
 ---
 
 {{< drg/requirement number="4" >}}

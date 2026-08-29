@@ -1,13 +1,13 @@
 ---
-title: "Req 2a8 — Dr. Charles Eastman"
+title: "Dr. Charles Eastman"
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a8"
 req_path: "2.a.8"
 prev: "/merit-badges/scouting-heritage/guide/req2a7/"
-prev_title: "Req 2a7 — Frederick Russell Burnham"
+prev_title: "Frederick Russell Burnham"
 next: "/merit-badges/scouting-heritage/guide/req2a9/"
-next_title: "Req 2a9 — Edgar Robinson"
+next_title: "Edgar Robinson"
 ---
 
 {{< drg/requirement number="2a8" >}}

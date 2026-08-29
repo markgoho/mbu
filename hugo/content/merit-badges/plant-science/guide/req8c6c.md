@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6c — Nested Plot Study"
+title: "Nested Plot Study"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6c"
 req_path: "8.c.6.c"
 prev: "/merit-badges/plant-science/guide/req8c6b3/"
-prev_title: "Req 8c6b3 — Recording and Graphing Transect Data"
+prev_title: "Record & Graph"
 next: "/merit-badges/plant-science/guide/req8c6c1/"
-next_title: "Req 8c6c1 — Choosing Two Nested Plot Sites"
+next_title: "Visit Two Sites"
 ---
 
 {{< drg/requirement number="8c6c" >}}

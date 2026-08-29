@@ -1,12 +1,12 @@
 ---
-title: "Req 9a — Gardening Careers"
+title: "Gardening Careers"
 layout: guide
-group_title: "Careers & Lifelong Gardening"
+group_title: "9. Careers & Lifelong Gardening"
 req_number: "9a"
 prev: "/merit-badges/gardening/guide/req9/"
-prev_title: "Req 9 — Careers or Healthy Living"
+prev_title: "Careers or Healthy Living"
 next: "/merit-badges/gardening/guide/req9b/"
-next_title: "Req 9b — Gardening as a Hobby & Healthy Lifestyle"
+next_title: "Gardening as a Hobby & Healthy Lifestyle"
 ---
 
 {{< drg/requirement number="9a" >}}

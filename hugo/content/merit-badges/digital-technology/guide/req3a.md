@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Digitizing Text, Sound & Images"
+title: "Digitizing Text, Sound & Images"
 layout: guide
-group_title: "How Digital Data Works"
+group_title: "3. How Digital Data Works"
 req_number: "3a"
 prev: "/merit-badges/digital-technology/guide/req2b/"
-prev_title: "Req 2b — Future Technology"
+prev_title: "Future Technology"
 next: "/merit-badges/digital-technology/guide/req3b/"
-next_title: "Req 3b — Lossy vs. Lossless Compression"
+next_title: "Lossy vs. Lossless Compression"
 ---
 
 {{< drg/requirement number="3a" >}}

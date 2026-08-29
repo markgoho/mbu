@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Carving and Stamping Designs"
+title: "Carving and Stamping Designs"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3d"
 prev: "/merit-badges/leatherwork/guide/req3c/"
-prev_title: "Req 3c — Punching Accurate Holes"
+prev_title: "Punching Accurate Holes"
 next: "/merit-badges/leatherwork/guide/req3e/"
-next_title: "Req 3e — Dye, Stain, and Finish"
+next_title: "Dye, Stain, and Finish"
 ---
 
 {{< drg/requirement number="3d" >}}

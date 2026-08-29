@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Monetary Value"
+title: "Monetary Value"
 layout: guide
-group_title: "Knowing Your Collection"
+group_title: "5. Knowing Your Collection"
 req_number: "5c"
 prev: "/merit-badges/collections/guide/req5b/"
-prev_title: "Req 5b — Organizing & Showing Groups"
+prev_title: "Organizing & Showing Groups"
 next: "/merit-badges/collections/guide/req5d/"
-next_title: "Req 5d — Grading & Classification"
+next_title: "Grading & Classification"
 ---
 
 {{< drg/requirement number="5c" >}}

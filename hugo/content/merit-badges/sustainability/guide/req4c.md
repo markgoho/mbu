@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Sustainable Housing"
+title: "Sustainable Housing"
 layout: guide
-group_title: "Sustainable Communities"
+group_title: "4. Sustainable Communities"
 req_number: "4c"
 prev: "/merit-badges/sustainability/guide/req4b/"
-prev_title: "Req 4b — Fix an Unsustainable Practice"
+prev_title: "Fix an Unsustainable Practice"
 next: "/merit-badges/sustainability/guide/req5a/"
-next_title: "Req 5a — Energy Sources"
+next_title: "Energy Sources"
 ---
 
 {{< drg/requirement number="4c" >}}

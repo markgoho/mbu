@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Food Chains in Action"
+title: "Food Chains in Action"
 layout: "guide"
-group_title: "Plant and Animal Connections"
+group_title: "1. Plant and Animal Connections"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/nature/guide/req2/"
-prev_title: "Req 2 — Animals Support Plant Life"
+prev_title: "Animals Support Plant Life"
 next: "/merit-badges/nature/guide/req4/"
-next_title: "Req 4 — Choose Your Five Field Studies"
+next_title: "Choose Your Five Field Studies"
 ---
 
 {{< drg/requirement number="3" >}}

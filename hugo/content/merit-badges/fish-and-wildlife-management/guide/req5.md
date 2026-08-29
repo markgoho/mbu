@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Choose a Hands-On Project"
+title: "Choose a Hands-On Project"
 layout: guide
-group_title: "Hands-On Field Projects"
+group_title: "5. Hands-On Field Projects"
 req_number: "5"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req4/"
-prev_title: "Req 4 — Five Management Practices"
+prev_title: "Five Management Practices"
 next: "/merit-badges/fish-and-wildlife-management/guide/req5a/"
-next_title: "Req 5a — Nest Boxes"
+next_title: "Nest Boxes"
 ---
 
 {{< drg/requirement number="5" >}}

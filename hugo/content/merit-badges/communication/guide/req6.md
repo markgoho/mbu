@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Teach a Skill"
+title: "Teach a Skill"
 layout: guide
-group_title: "Teaching & Instruction"
+group_title: "6. Teaching & Instruction"
 req_number: "6"
 prev: "/merit-badges/communication/guide/req5/"
-prev_title: "Req 5 — Public Meeting Report"
+prev_title: "Public Meeting Report"
 next: "/merit-badges/communication/guide/req7/"
-next_title: "Req 7 — Writing & Publishing"
+next_title: "Writing & Publishing"
 ---
 
 {{< drg/requirement number="6" >}}

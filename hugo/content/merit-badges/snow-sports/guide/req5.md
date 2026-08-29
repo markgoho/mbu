@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Clothing & Equipment"
+title: "Clothing & Equipment"
 layout: "guide"
-group_title: "Getting Fit & Geared Up"
+group_title: "4. Getting Fit & Geared Up"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/snow-sports/guide/req4/"
-prev_title: "Req 4 — Fitness for Snow Sports"
+prev_title: "Fitness for Snow Sports"
 next: "/merit-badges/snow-sports/guide/req6/"
-next_title: "Req 6 — Responsibility, SMART Style & Avalanche"
+next_title: "Responsibility, SMART Style & Avalanche"
 ---
 
 {{< drg/requirement number="5" >}}

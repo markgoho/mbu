@@ -1,11 +1,11 @@
 ---
-title: "Req 12 — Plan and Paddle a Real Trip"
+title: "Plan and Paddle a Real Trip"
 layout: "guide"
-group_title: "Running the River"
+group_title: "9. Running the River"
 req_number: "12"
 req_path: "12"
 prev: "/merit-badges/whitewater/guide/req11/"
-prev_title: "Req 11 — Rescue and Recovery Skills"
+prev_title: "Rescue and Recovery Skills"
 next: "/merit-badges/whitewater/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

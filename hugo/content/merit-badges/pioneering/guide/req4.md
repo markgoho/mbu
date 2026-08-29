@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Rope for Real Loads"
+title: "Rope for Real Loads"
 layout: guide
-group_title: "Choosing and Caring for Rope"
+group_title: "4. Choosing and Caring for Rope"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/pioneering/guide/req3/"
-prev_title: "Req 3 — Practical Camp Builds"
+prev_title: "Practical Camp Builds"
 next: "/merit-badges/pioneering/guide/req5/"
-next_title: "Req 5 — Splices That Solve Problems"
+next_title: "Splices That Solve Problems"
 ---
 
 {{< drg/requirement number="4" >}}

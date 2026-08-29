@@ -4,80 +4,80 @@ layout: guide
 badge_name: "Climbing"
 group_title: "Getting Started"
 next: "/merit-badges/climbing/guide/req1a/"
-next_title: "Req 1a — Climbing Hazards"
+next_title: "Climbing Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/climbing/guide/"
-  - group_title: "Safety & First Aid"
+  - group_title: "1. Safety & First Aid"
     items:
-      - title: "Req 1a — Climbing Hazards"
+      - title: "a Climbing Hazards"
         url: "/merit-badges/climbing/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Injury Prevention & First Aid"
+      - title: "b Injury Prevention & First Aid"
         url: "/merit-badges/climbing/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — CPR Readiness"
+      - title: "c CPR Readiness"
         url: "/merit-badges/climbing/guide/req1c/"
         is_sub: true
-  - group_title: "Leave No Trace"
+  - group_title: "2. Leave No Trace"
     items:
-      - title: "Req 2 — Leave No Trace & Outdoor Code"
+      - title: "2. Leave No Trace & Outdoor Code"
         url: "/merit-badges/climbing/guide/req2/"
-  - group_title: "Climbing Attire"
+  - group_title: "3. Climbing Attire"
     items:
-      - title: "Req 3 — Dressing for the Climb"
+      - title: "3. Dressing for the Climb"
         url: "/merit-badges/climbing/guide/req3/"
-  - group_title: "Location & Route Assessment"
+  - group_title: "4. Location & Route Assessment"
     items:
-      - title: "Req 4a — Climb Difficulty Ratings"
+      - title: "a Climb Difficulty Ratings"
         url: "/merit-badges/climbing/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Climbing Styles"
+      - title: "b Climbing Styles"
         url: "/merit-badges/climbing/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Site Safety Evaluation"
+      - title: "c Site Safety Evaluation"
         url: "/merit-badges/climbing/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Emergency Planning"
+      - title: "d Emergency Planning"
         url: "/merit-badges/climbing/guide/req4d/"
         is_sub: true
-  - group_title: "Verbal Signals"
+  - group_title: "5. Verbal Signals"
     items:
-      - title: "Req 5 — Communication on the Wall"
+      - title: "5. Communication on the Wall"
         url: "/merit-badges/climbing/guide/req5/"
-  - group_title: "Rope Skills"
+  - group_title: "6. Rope Skills"
     items:
-      - title: "Req 6 — Rope Care & Management"
+      - title: "6. Rope Care & Management"
         url: "/merit-badges/climbing/guide/req6/"
-  - group_title: "Knots"
+  - group_title: "7. Knots"
     items:
-      - title: "Req 7 — Essential Climbing Knots"
+      - title: "7. Essential Climbing Knots"
         url: "/merit-badges/climbing/guide/req7/"
-  - group_title: "Harness, Helmet & Gloves"
+  - group_title: "8. Harness, Helmet & Gloves"
     items:
-      - title: "Req 8 — Personal Protective Equipment"
+      - title: "8. Personal Protective Equipment"
         url: "/merit-badges/climbing/guide/req8/"
-  - group_title: "The CHECK System"
+  - group_title: "9. The CHECK System"
     items:
-      - title: "Req 9 — Pre-Climb Safety Check"
+      - title: "9. Pre-Climb Safety Check"
         url: "/merit-badges/climbing/guide/req9/"
-  - group_title: "Belaying"
+  - group_title: "10. Belaying"
     items:
-      - title: "Req 10 — Belaying Skills"
+      - title: "10. Belaying Skills"
         url: "/merit-badges/climbing/guide/req10/"
-  - group_title: "Climbing"
+  - group_title: "11. Climbing"
     items:
-      - title: "Req 11 — Climbing Technique"
+      - title: "11. Climbing Technique"
         url: "/merit-badges/climbing/guide/req11/"
-  - group_title: "Rappelling"
+  - group_title: "12. Rappelling"
     items:
-      - title: "Req 12 — Rappelling Technique"
+      - title: "12. Rappelling Technique"
         url: "/merit-badges/climbing/guide/req12/"
-  - group_title: "Gear Storage"
+  - group_title: "13. Gear Storage"
     items:
-      - title: "Req 13 — Storing Your Gear"
+      - title: "13. Storing Your Gear"
         url: "/merit-badges/climbing/guide/req13/"
   - group_title: "Beyond the Badge"
     items:

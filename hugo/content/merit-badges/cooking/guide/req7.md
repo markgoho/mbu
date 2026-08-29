@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers & Hobbies"
+title: "Careers & Hobbies"
 layout: guide
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7"
 prev: "/merit-badges/cooking/guide/req6f/"
-prev_title: "Req 6f — Load Sharing & Food Storage"
+prev_title: "Load Sharing & Food Storage"
 next: "/merit-badges/cooking/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,13 +1,13 @@
 ---
-title: "Req 8c1 — Observing a Natural Area"
+title: "Observing a Natural Area"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c1"
 req_path: "8.c.1"
 prev: "/merit-badges/plant-science/guide/req8c/"
-prev_title: "Req 8c — Option C: Field Botany"
+prev_title: "Field Botany Overview"
 next: "/merit-badges/plant-science/guide/req8c2/"
-next_title: "Req 8c2 — Native vs. Exotic Plants"
+next_title: "Study Site Inventory"
 ---
 
 {{< drg/requirement number="8c1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Study Inventors"
+title: "Study Inventors"
 layout: guide
-group_title: "Inventor Profiles"
+group_title: "2. Inventor Profiles"
 req_number: "2b"
 prev: "/merit-badges/inventing/guide/req2a/"
-prev_title: "Req 2a — Interview an Inventor"
+prev_title: "Interview an Inventor"
 next: "/merit-badges/inventing/guide/req3/"
-next_title: "Req 3 — Intellectual Property & Patents"
+next_title: "Intellectual Property & Patents"
 ---
 
 {{< drg/requirement number="2b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Reducing Pack Weight"
+title: "Reducing Pack Weight"
 layout: guide
-group_title: "Gear & Pack Weight"
+group_title: "2. Gear & Pack Weight"
 req_number: "2b"
 prev: "/merit-badges/backpacking/guide/req2a/"
-prev_title: "Req 2a — Essential Gear"
+prev_title: "Essential Gear"
 next: "/merit-badges/backpacking/guide/req3/"
-next_title: "Req 3 — Crew Organization & Safety"
+next_title: "Crew Organization & Safety"
 ---
 
 {{< drg/requirement number="2b" >}}

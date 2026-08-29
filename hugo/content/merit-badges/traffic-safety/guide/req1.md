@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Preventing Impaired Driving"
+title: "Preventing Impaired Driving"
 layout: "guide"
-group_title: "Impairment and Judgment"
+group_title: "1. Impairment and Judgment"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/traffic-safety/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/traffic-safety/guide/req2/"
-next_title: "Req 2 — Vehicle Safety Basics"
+next_title: "Vehicle Safety Basics"
 ---
 
 {{< drg/requirement number="1" >}}

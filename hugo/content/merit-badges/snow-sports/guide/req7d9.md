@@ -1,13 +1,13 @@
 ---
-title: "Req 7d9 — 2-Mile Snowshoe Hike"
+title: "2-Mile Snowshoe Hike"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d9"
 req_path: "7.d.9"
 prev: "/merit-badges/snow-sports/guide/req7d8/"
-prev_title: "Req 7d8 — Trail Techniques"
+prev_title: "Trail Techniques"
 next: "/merit-badges/snow-sports/guide/req7d-10/"
-next_title: "Req 7d10 — Map & Compass"
+next_title: "Map & Compass"
 ---
 
 {{< drg/requirement number="7d9" >}}

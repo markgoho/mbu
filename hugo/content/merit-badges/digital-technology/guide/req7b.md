@@ -1,12 +1,12 @@
 ---
-title: "Req 7b — Software Sharing Ethics"
+title: "Software Sharing Ethics"
 layout: guide
-group_title: "Intellectual Property"
+group_title: "7. Intellectual Property"
 req_number: "7b"
 prev: "/merit-badges/digital-technology/guide/req7a/"
-prev_title: "Req 7a — Copyrights, Patents & Trademarks"
+prev_title: "Copyrights, Patents & Trademarks"
 next: "/merit-badges/digital-technology/guide/req7c/"
-next_title: "Req 7c — IP Disputes in the News"
+next_title: "IP Disputes in the News"
 ---
 
 {{< drg/requirement number="7b" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2bg — Clean an Air Rifle Properly"
+title: "Clean an Air Rifle Properly"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2bg"
 req_path: "2.b.g"
 prev: "/merit-badges/rifle-shooting/guide/req2bf/"
-prev_title: "Req 2bf — Cleaning Safety Rules and Materials"
+prev_title: "Cleaning Safety Rules and Materials"
 next: "/merit-badges/rifle-shooting/guide/req2bh/"
-next_title: "Req 2bh — Selecting an Air Rifle"
+next_title: "Selecting an Air Rifle"
 ---
 
 {{< drg/requirement number="2bg" >}}

@@ -1,11 +1,11 @@
 ---
-title: "Req 10 — Exploring Trucking Careers"
+title: "Exploring Trucking Careers"
 layout: "guide"
-group_title: "Careers in the Industry"
+group_title: "10. Careers in the Industry"
 req_number: "10"
 req_path: "10"
 prev: "/merit-badges/truck-transportation/guide/req9/"
-prev_title: "Req 9 — Freight Terms You Should Know"
+prev_title: "Freight Terms You Should Know"
 next: "/merit-badges/truck-transportation/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

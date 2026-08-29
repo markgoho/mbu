@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Green Marketing & Sustainability"
+title: "Green Marketing & Sustainability"
 layout: guide
-group_title: "Business Practices & Ethics"
+group_title: "3. Business Practices & Ethics"
 req_number: "3b"
 prev: "/merit-badges/american-business/guide/req3a/"
-prev_title: "Req 3a — The Role of Profit"
+prev_title: "The Role of Profit"
 next: "/merit-badges/american-business/guide/req3c/"
-next_title: "Req 3c — Business Ethics"
+next_title: "Business Ethics"
 ---
 
 {{< drg/requirement number="3b" >}}

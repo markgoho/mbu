@@ -1,13 +1,13 @@
 ---
-title: "Req 7b5 — Skiing Styles Compared"
+title: "Skiing Styles Compared"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b5"
 req_path: "7.b.5"
 prev: "/merit-badges/snow-sports/guide/req7b4/"
-prev_title: "Req 7b4 — Waxing for Touring"
+prev_title: "Waxing for Touring"
 next: "/merit-badges/snow-sports/guide/req7b6/"
-next_title: "Req 7b6 — One-Day Tour Gear"
+next_title: "One-Day Tour Gear"
 ---
 
 {{< drg/requirement number="7b5" >}}

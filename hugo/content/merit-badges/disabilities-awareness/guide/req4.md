@@ -1,10 +1,10 @@
 ---
-title: "Req 4 — Accessibility Observations"
+title: "Accessibility Observations"
 layout: guide
-group_title: "Accessibility Audits"
+group_title: "4. Accessibility Audits"
 req_number: "4"
 prev: "/merit-badges/disabilities-awareness/guide/req3/"
-prev_title: "Req 3 — Personal Experiences"
+prev_title: "Personal Experiences"
 next: "/merit-badges/disabilities-awareness/guide/req4-option-a/"
 next_title: "Req 4 Option A — Visible Accessibility"
 ---

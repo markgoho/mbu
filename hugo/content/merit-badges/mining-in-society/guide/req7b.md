@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Mining the Oceans"
+title: "Mining the Oceans"
 layout: "guide"
-group_title: "Mining the Oceans"
+group_title: "7. Mining the Oceans"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/mining-in-society/guide/req7a/"
-prev_title: "Req 7a — Mining Beyond Earth"
+prev_title: "Mining Beyond Earth"
 next: "/merit-badges/mining-in-society/guide/req7c/"
-next_title: "Req 7c — Recycling and Resource Recovery"
+next_title: "Recycling and Resource Recovery"
 ---
 
 {{< drg/requirement number="7b" >}}

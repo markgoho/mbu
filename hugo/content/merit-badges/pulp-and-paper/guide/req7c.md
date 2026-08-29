@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Boxes and Corrugated Containers"
+title: "Boxes and Corrugated Containers"
 layout: "guide"
-group_title: "Industry Experiences"
+group_title: "7. Industry Experiences"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/pulp-and-paper/guide/req7b/"
-prev_title: "Req 7b — Inside a Paper Mill"
+prev_title: "Inside a Paper Mill"
 next: "/merit-badges/pulp-and-paper/guide/req7d/"
-next_title: "Req 7d — Recycling Collection and Sorting"
+next_title: "Recycling Collection and Sorting"
 ---
 
 {{< drg/requirement number="7c" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Home Fire Escape Plan"
+title: "Home Fire Escape Plan"
 layout: guide
-group_title: "Planning for Family Emergencies"
+group_title: "2. Planning for Family Emergencies"
 req_number: "2b"
 prev: "/merit-badges/emergency-preparedness/guide/req2a/"
-prev_title: "Requirement 2a — Family Emergency Plans"
+prev_title: "Family Emergency Plans"
 next: "/merit-badges/emergency-preparedness/guide/req2c/"
-next_title: "Requirement 2c — Family Disaster Kit"
+next_title: "Family Disaster Kit"
 ---
 
 {{< drg/requirement number="2b" >}}

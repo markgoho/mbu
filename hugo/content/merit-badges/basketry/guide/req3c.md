@@ -1,10 +1,10 @@
 ---
-title: "Req 3c — Campstool Seat"
+title: "Campstool Seat"
 layout: guide
-group_title: "Weaving Projects"
+group_title: "3. Weaving Projects"
 req_number: "3c"
 prev: "/merit-badges/basketry/guide/req3b/"
-prev_title: "Req 3b — Round Basket"
+prev_title: "Round Basket"
 next: "/merit-badges/basketry/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

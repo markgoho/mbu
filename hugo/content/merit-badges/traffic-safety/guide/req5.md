@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose Your Roadway Focus"
+title: "Choose Your Roadway Focus"
 layout: "guide"
-group_title: "Road Design and Traffic Signs"
+group_title: "5. Road Design and Traffic Signs"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/traffic-safety/guide/req4/"
-prev_title: "Req 4 — Traffic Safety and the Law"
+prev_title: "Traffic Safety and the Law"
 next: "/merit-badges/traffic-safety/guide/req5a/"
-next_title: "Req 5a — Safer Roads by Design"
+next_title: "Safer Roads by Design"
 ---
 
 {{< drg/requirement number="5" >}}

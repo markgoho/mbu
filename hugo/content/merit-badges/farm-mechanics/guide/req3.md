@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Tool Maintenance Skills"
+title: "Tool Maintenance Skills"
 layout: guide
-group_title: "Tool Maintenance Essentials"
+group_title: "3. Tool Maintenance Essentials"
 req_number: "3"
 prev: "/merit-badges/farm-mechanics/guide/req2c/"
-prev_title: "Req 2c — Transmissions & Power"
+prev_title: "Transmissions & Power"
 next: "/merit-badges/farm-mechanics/guide/req4/"
-next_title: "Req 4 — Equipment Maintenance Tasks"
+next_title: "Equipment Maintenance Tasks"
 ---
 
 {{< drg/requirement number="3" >}}

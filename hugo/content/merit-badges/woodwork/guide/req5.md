@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Design Your Own Project"
+title: "Design Your Own Project"
 layout: guide
-group_title: "Building Projects"
+group_title: "4. Building Projects"
 req_number: "5"
 prev: "/merit-badges/woodwork/guide/req4/"
-prev_title: "Req 4 — Build with Basic Tools"
+prev_title: "Build with Basic Tools"
 next: "/merit-badges/woodwork/guide/req6/"
-next_title: "Req 6 — Advanced Projects"
+next_title: "Advanced Projects"
 ---
 
 {{< drg/requirement number="5" >}}

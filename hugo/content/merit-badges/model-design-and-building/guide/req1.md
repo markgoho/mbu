@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Safe Modelmaking"
+title: "Safe Modelmaking"
 layout: "guide"
-group_title: "Safe Modelmaking"
+group_title: "1. Safe Modelmaking"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/model-design-and-building/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/model-design-and-building/guide/req2/"
-next_title: "Req 2 — Models, Tools, and Materials"
+next_title: "Models, Tools, and Materials"
 ---
 
 {{< drg/requirement number="1" >}}

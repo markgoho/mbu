@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers in Animal Science"
+title: "Careers in Animal Science"
 layout: guide
-group_title: "Careers"
+group_title: "7. Careers"
 req_number: "7"
 prev: "/merit-badges/animal-science/guide/req6-avian/"
-prev_title: "Req 6 — Avian Option"
+prev_title: "Avian Option"
 next: "/merit-badges/animal-science/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

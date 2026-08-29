@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers in Graphic Arts"
+title: "Careers in Graphic Arts"
 layout: guide
-group_title: "Looking Ahead"
+group_title: "7. Looking Ahead"
 req_number: "7"
 prev: "/merit-badges/graphic-arts/guide/req6d/"
-prev_title: "Req 6d — Professional Websites Research"
+prev_title: "Professional Websites Research"
 next: "/merit-badges/graphic-arts/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -4,97 +4,97 @@ layout: guide
 badge_name: "Nature"
 group_title: "Getting Started"
 next: "/merit-badges/nature/guide/req1/"
-next_title: "Req 1 — Plants Support Animal Life"
+next_title: "Plants Support Animal Life"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/nature/guide/"
         is_sub: false
-  - group_title: "Plant and Animal Connections"
+  - group_title: "1. Plant and Animal Connections"
     items:
-      - title: "Req 1 — Plants Support Animal Life"
+      - title: "1. Plants Support Animal Life"
         url: "/merit-badges/nature/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Animals Support Plant Life"
+      - title: "2. Animals Support Plant Life"
         url: "/merit-badges/nature/guide/req2/"
         is_sub: false
-      - title: "Req 3 — Food Chains in Action"
+      - title: "3. Food Chains in Action"
         url: "/merit-badges/nature/guide/req3/"
         is_sub: false
-  - group_title: "Field Study Options"
+  - group_title: "4. Field Study Options"
     items:
-      - title: "Req 4 — Choose Your Five Field Studies"
+      - title: "4. Choose Your Five Field Studies"
         url: "/merit-badges/nature/guide/req4/"
         is_sub: false
-  - group_title: "Bird Fieldwork"
+  - group_title: "4. Bird Fieldwork"
     items:
-      - title: "Req 4a — Birds in the Field"
+      - title: "a Birds in the Field"
         url: "/merit-badges/nature/guide/req4a/"
         is_sub: true
-  - group_title: "Mammal Fieldwork"
+  - group_title: "4. Mammal Fieldwork"
     items:
-      - title: "Req 4b — Mammal Signs and Tracks"
+      - title: "b Mammal Signs and Tracks"
         url: "/merit-badges/nature/guide/req4b/"
         is_sub: true
-  - group_title: "Herps in the Field"
+  - group_title: "4. Herps in the Field"
     items:
-      - title: "Req 4c — Reptiles and Amphibians"
+      - title: "c Reptiles and Amphibians"
         url: "/merit-badges/nature/guide/req4c/"
         is_sub: true
-  - group_title: "Bug and Spider Study"
+  - group_title: "4. Bug and Spider Study"
     items:
-      - title: "Req 4d — Insects and Spiders Up Close"
+      - title: "d Insects and Spiders Up Close"
         url: "/merit-badges/nature/guide/req4d/"
         is_sub: true
-  - group_title: "Fish Study"
+  - group_title: "4. Fish Study"
     items:
-      - title: "Req 4e — Fish and Food Sources"
+      - title: "e Fish and Food Sources"
         url: "/merit-badges/nature/guide/req4e/"
         is_sub: true
-  - group_title: "Shell and Shore Study"
+  - group_title: "4. Shell and Shore Study"
     items:
-      - title: "Req 4f — Shells, Mollusks, and Crustaceans"
+      - title: "f Shells, Mollusks, and Crustaceans"
         url: "/merit-badges/nature/guide/req4f/"
         is_sub: true
-  - group_title: "Plant Study"
+  - group_title: "4. Plant Study"
     items:
-      - title: "Req 4g1 — Wild Plant Identification"
+      - title: "g Wild Plant Identification"
         url: "/merit-badges/nature/guide/req4g1/"
         is_sub: true
-      - title: "Req 4g2 — Seeds, Leaves, and Plant Records"
+      - title: "g Seeds, Leaves, and Plant Records"
         url: "/merit-badges/nature/guide/req4g2/"
         is_sub: false
-      - title: "Req 4g2a — Collect and Label Specimens"
+      - title: "g Collect and Label Specimens"
         url: "/merit-badges/nature/guide/req4g2a/"
         is_sub: true
-      - title: "Req 4g2b — Build a Photo Catalog"
+      - title: "g Build a Photo Catalog"
         url: "/merit-badges/nature/guide/req4g2b/"
         is_sub: true
-  - group_title: "Earth Materials"
+  - group_title: "4. Earth Materials"
     items:
-      - title: "Req 4h — Soils and Rocks"
+      - title: "h Soils and Rocks"
         url: "/merit-badges/nature/guide/req4h/"
         is_sub: true
-  - group_title: "Outdoor Ethics"
+  - group_title: "5. Outdoor Ethics"
     items:
-      - title: "Req 5 — Outdoor Ethics in Nature Study"
+      - title: "5. Outdoor Ethics in Nature Study"
         url: "/merit-badges/nature/guide/req5/"
         is_sub: false
-  - group_title: "Changing Landscapes"
+  - group_title: "6. Changing Landscapes"
     items:
-      - title: "Req 6 — Reading Ecological Succession"
+      - title: "6. Reading Ecological Succession"
         url: "/merit-badges/nature/guide/req6/"
         is_sub: false
-  - group_title: "Careers & Hobbies"
+  - group_title: "7. Careers & Hobbies"
     items:
-      - title: "Req 7 — Choose a Future Path"
+      - title: "7. Choose a Future Path"
         url: "/merit-badges/nature/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Nature Careers"
+      - title: "a Nature Careers"
         url: "/merit-badges/nature/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Nature as a Lifelong Hobby"
+      - title: "b Nature as a Lifelong Hobby"
         url: "/merit-badges/nature/guide/req7b/"
         is_sub: true
   - group_title: "Beyond the Badge"

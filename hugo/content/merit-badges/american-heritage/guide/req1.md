@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — The Declaration of Independence"
+title: "The Declaration of Independence"
 layout: guide
-group_title: "Foundations of Freedom"
+group_title: "1. Foundations of Freedom"
 req_number: "1"
 prev: "/merit-badges/american-heritage/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/american-heritage/guide/req2/"
-next_title: "Req 2 — American Leaders & Change-Makers"
+next_title: "American Leaders & Change-Makers"
 ---
 
 {{< drg/requirement number="1" >}}

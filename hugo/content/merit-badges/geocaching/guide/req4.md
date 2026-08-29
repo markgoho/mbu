@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — How GPS Works and How to Teach It"
+title: "How GPS Works and How to Teach It"
 layout: guide
-group_title: "Using GPS"
+group_title: "4. Using GPS"
 req_number: "4"
 prev: "/merit-badges/geocaching/guide/req3/"
-prev_title: "Req 3 — Geocaching Terms and Ratings"
+prev_title: "Geocaching Terms and Ratings"
 next: "/merit-badges/geocaching/guide/req5/"
-next_title: "Req 5 — Maps, Compass, and Navigation Choices"
+next_title: "Maps, Compass, and Navigation Choices"
 ---
 
 {{< drg/requirement number="4" >}}

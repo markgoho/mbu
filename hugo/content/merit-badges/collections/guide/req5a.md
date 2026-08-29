@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Collector Vocabulary"
+title: "Collector Vocabulary"
 layout: guide
-group_title: "Knowing Your Collection"
+group_title: "5. Knowing Your Collection"
 req_number: "5a"
 prev: "/merit-badges/collections/guide/req4/"
-prev_title: "Req 4 — Investing, Buying & Selling"
+prev_title: "Investing, Buying & Selling"
 next: "/merit-badges/collections/guide/req5b/"
-next_title: "Req 5b — Organizing & Showing Groups"
+next_title: "Organizing & Showing Groups"
 ---
 
 {{< drg/requirement number="5a" >}}

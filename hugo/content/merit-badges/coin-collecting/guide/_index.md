@@ -4,55 +4,55 @@ layout: guide
 badge_name: "Coin Collecting"
 group_title: "Getting Started"
 next: "/merit-badges/coin-collecting/guide/req1/"
-next_title: "Req 1 — How Coins Are Made"
+next_title: "How Coins Are Made"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/coin-collecting/guide/"
-  - group_title: "The U.S. Mint"
+  - group_title: "1. The U.S. Mint"
     items:
-      - title: "Req 1 — How Coins Are Made"
+      - title: "1. How Coins Are Made"
         url: "/merit-badges/coin-collecting/guide/req1/"
-  - group_title: "Coin Anatomy"
+  - group_title: "2. Coin Anatomy"
     items:
-      - title: "Req 2 — Coin Terminology"
+      - title: "2. Coin Terminology"
         url: "/merit-badges/coin-collecting/guide/req2/"
-  - group_title: "Caring for Your Collection"
+  - group_title: "3. Caring for Your Collection"
     items:
-      - title: "Req 3 — Storing Your Collection"
+      - title: "3. Storing Your Collection"
         url: "/merit-badges/coin-collecting/guide/req3/"
-  - group_title: "Building Your Collection"
+  - group_title: "4. Building Your Collection"
     items:
-      - title: "Req 4a — The One-Cent Coin"
+      - title: "a The One-Cent Coin"
         url: "/merit-badges/coin-collecting/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — The Five-Cent Coin"
+      - title: "b The Five-Cent Coin"
         url: "/merit-badges/coin-collecting/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — The Ten-Cent Coin"
+      - title: "c The Ten-Cent Coin"
         url: "/merit-badges/coin-collecting/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — The Quarter"
+      - title: "d The Quarter"
         url: "/merit-badges/coin-collecting/guide/req4d/"
         is_sub: true
-      - title: "Req 4e — The Half Dollar"
+      - title: "e The Half Dollar"
         url: "/merit-badges/coin-collecting/guide/req4e/"
         is_sub: true
-      - title: "Req 4f — The Dollar Coin"
+      - title: "f The Dollar Coin"
         url: "/merit-badges/coin-collecting/guide/req4f/"
         is_sub: true
-  - group_title: "Commemorative Coins"
+  - group_title: "5. Commemorative Coins"
     items:
-      - title: "Req 5 — Bicentennial Coins"
+      - title: "5. Bicentennial Coins"
         url: "/merit-badges/coin-collecting/guide/req5/"
-  - group_title: "Paper Money"
+  - group_title: "6. Paper Money"
     items:
-      - title: "Req 6 — U.S. Currency"
+      - title: "6. U.S. Currency"
         url: "/merit-badges/coin-collecting/guide/req6/"
-  - group_title: "Going Global"
+  - group_title: "7. Going Global"
     items:
-      - title: "Req 7 — Expanding Your Horizons"
+      - title: "7. Expanding Your Horizons"
         url: "/merit-badges/coin-collecting/guide/req7/"
   - group_title: "Beyond the Badge"
     items:

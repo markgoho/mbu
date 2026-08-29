@@ -1,11 +1,11 @@
 ---
-title: "Req 6 — Explore Textile Careers"
+title: "Explore Textile Careers"
 layout: "guide"
-group_title: "Textile Careers"
+group_title: "6. Textile Careers"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/textile/guide/req5/"
-prev_title: "Req 5 — Compare Fibers and Their Footprint"
+prev_title: "Compare Fibers and Their Footprint"
 next: "/merit-badges/textile/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

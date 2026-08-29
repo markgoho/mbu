@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Kayak Parts, Design & Care"
+title: "Kayak Parts, Design & Care"
 layout: guide
-group_title: "Know Your Boat"
+group_title: "4. Know Your Boat"
 req_number: "4"
 prev: "/merit-badges/kayaking/guide/req3/"
-prev_title: "Req 3 — Life Jackets & Rescue Equipment"
+prev_title: "Life Jackets & Rescue Equipment"
 next: "/merit-badges/kayaking/guide/req5/"
-next_title: "Req 5 — Paddle Skills & Paddle Care"
+next_title: "Paddle Skills & Paddle Care"
 ---
 
 {{< drg/requirement number="4" >}}

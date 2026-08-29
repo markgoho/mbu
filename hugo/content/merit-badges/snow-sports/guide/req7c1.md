@@ -1,13 +1,13 @@
 ---
-title: "Req 7c1 — Forward-Fall Injuries"
+title: "Forward-Fall Injuries"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c1"
 req_path: "7.c.1"
 prev: "/merit-badges/snow-sports/guide/req7c/"
-prev_title: "Req 7c — Snowboarding"
+prev_title: "Snowboarding"
 next: "/merit-badges/snow-sports/guide/req7c2/"
-next_title: "Req 7c2 — Equipment Selection"
+next_title: "Equipment Selection"
 ---
 
 {{< drg/requirement number="7c1" >}}

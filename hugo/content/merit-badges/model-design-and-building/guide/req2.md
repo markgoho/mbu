@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Models, Tools, and Materials"
+title: "Models, Tools, and Materials"
 layout: "guide"
-group_title: "Understanding Model Types"
+group_title: "2. Understanding Model Types"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/model-design-and-building/guide/req1/"
-prev_title: "Req 1 — Safe Modelmaking"
+prev_title: "Safe Modelmaking"
 next: "/merit-badges/model-design-and-building/guide/req3/"
-next_title: "Req 3 — Planning Your Original Project"
+next_title: "Planning Your Original Project"
 ---
 
 {{< drg/requirement number="2" >}}

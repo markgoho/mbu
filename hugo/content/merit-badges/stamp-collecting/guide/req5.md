@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choosing Your Tools"
+title: "Choosing Your Tools"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/stamp-collecting/guide/req4/"
-prev_title: "Req 4 — Catalogs and Condition"
+prev_title: "Catalogs and Condition"
 next: "/merit-badges/stamp-collecting/guide/req5a/"
-next_title: "Req 5a — Using Stamp Tongs"
+next_title: "Using Stamp Tongs"
 ---
 
 {{< drg/requirement number="5" >}}

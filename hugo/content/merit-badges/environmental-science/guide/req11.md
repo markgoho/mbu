@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Careers in Environmental Science"
+group_title: "11. Careers in Environmental Science"
 req_number: "11"
 prev: "/merit-badges/environmental-science/guide/req10/"
-prev_title: "Req 10 — Environmental Impact Assessment"
+prev_title: "Environmental Impact Assessment"
 next: "/merit-badges/environmental-science/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

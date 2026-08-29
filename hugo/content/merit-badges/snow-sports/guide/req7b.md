@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Cross-Country (Nordic) Skiing"
+title: "Cross-Country (Nordic) Skiing"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/snow-sports/guide/req7a-10/"
-prev_title: "Req 7a10 — Major Ski Organizations"
+prev_title: "Major Ski Organizations"
 next: "/merit-badges/snow-sports/guide/req7b1/"
-next_title: "Req 7b1 — Equipment Selection"
+next_title: "Equipment Selection"
 ---
 
 {{< drg/requirement number="7" option="Cross-Country (Nordic) Skiing" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 10c — Protecting Birds in Decline"
+title: "Protecting Birds in Decline"
 layout: guide
-group_title: "Conservation"
+group_title: "10. Conservation"
 req_number: "10c"
 prev: "/merit-badges/bird-study/guide/req10b/"
-prev_title: "Req 10b — Endangered Species"
+prev_title: "Endangered Species"
 next: "/merit-badges/bird-study/guide/req11/"
-next_title: "Req 11 — Non-Native Birds"
+next_title: "Non-Native Birds"
 ---
 
 {{< drg/requirement number="10c" >}}

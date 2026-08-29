@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Careers in Paper and Packaging"
+title: "Careers in Paper and Packaging"
 layout: "guide"
-group_title: "Exploring Paper Careers"
+group_title: "8. Exploring Paper Careers"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/pulp-and-paper/guide/req7e/"
-prev_title: "Req 7e — Research and Development"
+prev_title: "Research and Development"
 next: "/merit-badges/pulp-and-paper/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

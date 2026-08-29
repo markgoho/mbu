@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Family Group Records"
+title: "Family Group Records"
 layout: guide
-group_title: "Building Your Family Tree"
+group_title: "6. Building Your Family Tree"
 req_number: "7"
 prev: "/merit-badges/genealogy/guide/req6/"
-prev_title: "Req 6 — Build a Pedigree Chart"
+prev_title: "Build a Pedigree Chart"
 next: "/merit-badges/genealogy/guide/req8abc/"
-next_title: "Req 8a–8c — Technology Changes Genealogy"
+next_title: "Technology Changes Genealogy"
 ---
 
 {{< drg/requirement number="7" >}}

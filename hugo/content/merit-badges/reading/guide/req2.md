@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Choose Books You'll Actually Finish"
+title: "Choose Books You'll Actually Finish"
 layout: "guide"
-group_title: "Choosing What to Read"
+group_title: "2. Choosing What to Read"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/reading/guide/req1/"
-prev_title: "Req 1 — Library Skills in Action"
+prev_title: "Library Skills in Action"
 next: "/merit-badges/reading/guide/req3/"
-next_title: "Req 3 — Choose How to Share What You Read"
+next_title: "Choose How to Share What You Read"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -4,101 +4,101 @@ layout: "guide"
 badge_name: "Mining in Society"
 group_title: "Getting Started"
 next: "/merit-badges/mining-in-society/guide/req1/"
-next_title: "Req 1 — Minerals in Everyday Life"
+next_title: "Minerals in Everyday Life"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/mining-in-society/guide/"
         is_sub: false
-  - group_title: "Minerals All Around You"
+  - group_title: "1. Minerals All Around You"
     items:
-      - title: "Req 1 — Minerals in Everyday Life"
+      - title: "1. Minerals in Everyday Life"
         url: "/merit-badges/mining-in-society/guide/req1/"
         is_sub: false
-  - group_title: "Mining on the Map"
+  - group_title: "2. Mining on the Map"
     items:
-      - title: "Req 2 — Mapping Mines and Resources"
+      - title: "2. Mapping Mines and Resources"
         url: "/merit-badges/mining-in-society/guide/req2/"
         is_sub: false
-  - group_title: "Safety Underground and on the Surface"
+  - group_title: "3. Safety Underground and on the Surface"
     items:
-      - title: "Req 3 — Mine Safety and Protective Gear"
+      - title: "3. Mine Safety and Protective Gear"
         url: "/merit-badges/mining-in-society/guide/req3/"
         is_sub: false
-  - group_title: "Stay Out and Stay Safe"
+  - group_title: "4. Stay Out and Stay Safe"
     items:
-      - title: "Req 4 — Why Abandoned Mines Are Dangerous"
+      - title: "4. Why Abandoned Mines Are Dangerous"
         url: "/merit-badges/mining-in-society/guide/req4/"
         is_sub: false
-  - group_title: "Choose Your Mining Experience"
+  - group_title: "5. Choose Your Mining Experience"
     items:
-      - title: "Req 5 — Choose Your Mining Experience"
+      - title: "5. Choose Your Mining Experience"
         url: "/merit-badges/mining-in-society/guide/req5/"
         is_sub: false
-  - group_title: "Virtual Mine Tours"
+  - group_title: "5. Virtual Mine Tours"
     items:
-      - title: "Req 5a — Compare Two Virtual Mine Tours"
+      - title: "a Compare Two Virtual Mine Tours"
         url: "/merit-badges/mining-in-society/guide/req5a/"
         is_sub: true
-  - group_title: "Museum Mining History"
+  - group_title: "5. Museum Mining History"
     items:
-      - title: "Req 5b — Museum Mining History"
+      - title: "b Museum Mining History"
         url: "/merit-badges/mining-in-society/guide/req5b/"
         is_sub: true
-  - group_title: "Visit an Active Mine"
+  - group_title: "5. Visit an Active Mine"
     items:
-      - title: "Req 5c — Visit an Active Mine"
+      - title: "c Visit an Active Mine"
         url: "/merit-badges/mining-in-society/guide/req5c/"
         is_sub: true
-  - group_title: "Mining Equipment in Action"
+  - group_title: "5. Mining Equipment in Action"
     items:
-      - title: "Req 5d — Mining Equipment in Action"
+      - title: "d Mining Equipment in Action"
         url: "/merit-badges/mining-in-society/guide/req5d/"
         is_sub: true
-  - group_title: "Breaking Rock and Extracting Minerals"
+  - group_title: "5. Breaking Rock and Extracting Minerals"
     items:
-      - title: "Req 5e — Ore Processing Basics"
+      - title: "e Ore Processing Basics"
         url: "/merit-badges/mining-in-society/guide/req5e/"
         is_sub: true
-  - group_title: "Your Community's Mining Story"
+  - group_title: "5. Your Community's Mining Story"
     items:
-      - title: "Req 5f — Your Community's Mining Story"
+      - title: "f Your Community"
         url: "/merit-badges/mining-in-society/guide/req5f/"
         is_sub: true
-  - group_title: "Reclamation and Sustainability"
+  - group_title: "6. Reclamation and Sustainability"
     items:
-      - title: "Req 6 — Mining, Reclamation, and Sustainability"
+      - title: "6. Mining, Reclamation, and Sustainability"
         url: "/merit-badges/mining-in-society/guide/req6/"
         is_sub: false
-  - group_title: "Choose a Future-Focused Topic"
+  - group_title: "7. Choose a Future-Focused Topic"
     items:
-      - title: "Req 7 — Choose a Future-Focused Topic"
+      - title: "7. Choose a Future-Focused Topic"
         url: "/merit-badges/mining-in-society/guide/req7/"
         is_sub: false
-  - group_title: "Mining Beyond Earth"
+  - group_title: "7. Mining Beyond Earth"
     items:
-      - title: "Req 7a — Mining Beyond Earth"
+      - title: "a Mining Beyond Earth"
         url: "/merit-badges/mining-in-society/guide/req7a/"
         is_sub: true
-  - group_title: "Mining the Oceans"
+  - group_title: "7. Mining the Oceans"
     items:
-      - title: "Req 7b — Mining the Oceans"
+      - title: "b Mining the Oceans"
         url: "/merit-badges/mining-in-society/guide/req7b/"
         is_sub: true
-  - group_title: "Recycling and Resource Recovery"
+  - group_title: "7. Recycling and Resource Recovery"
     items:
-      - title: "Req 7c — Recycling and Resource Recovery"
+      - title: "c Recycling and Resource Recovery"
         url: "/merit-badges/mining-in-society/guide/req7c/"
         is_sub: true
-  - group_title: "Commodity Prices and Trends"
+  - group_title: "7. Commodity Prices and Trends"
     items:
-      - title: "Req 7d — Commodity Prices and Trends"
+      - title: "d Commodity Prices and Trends"
         url: "/merit-badges/mining-in-society/guide/req7d/"
         is_sub: true
-  - group_title: "Careers in Mining and Minerals"
+  - group_title: "8. Careers in Mining and Minerals"
     items:
-      - title: "Req 8 — Careers in Mining and Minerals"
+      - title: "8. Careers in Mining and Minerals"
         url: "/merit-badges/mining-in-society/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

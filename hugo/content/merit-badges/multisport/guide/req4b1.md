@@ -1,13 +1,13 @@
 ---
-title: "Req 4b1 — Duathlon Bike Skills"
+title: "Duathlon Bike Skills"
 layout: "guide"
-group_title: "Duathlon Path"
+group_title: "4. Duathlon Path"
 req_number: "4b1"
 req_path: "4.b.1"
 prev: "/merit-badges/multisport/guide/req4b/"
-prev_title: "Req 4b — Duathlon Roadmap"
+prev_title: "Duathlon Roadmap"
 next: "/merit-badges/multisport/guide/req4b2/"
-next_title: "Req 4b2 — Duathlon Run Skills"
+next_title: "Duathlon Run Skills"
 ---
 
 {{< drg/requirement number="4b1" >}}

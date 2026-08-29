@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers & Lifestyle"
+title: "Careers & Lifestyle"
 layout: guide
-group_title: "Careers & Beyond"
+group_title: "7. Careers & Beyond"
 req_number: "7"
 prev: "/merit-badges/athletics/guide/req6/"
-prev_title: "Req 6 — Planning a Sports Meet"
+prev_title: "Planning a Sports Meet"
 next: "/merit-badges/athletics/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

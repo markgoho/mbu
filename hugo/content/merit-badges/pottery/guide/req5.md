@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Build, Throw, and Fire"
+title: "Build, Throw, and Fire"
 layout: "guide"
-group_title: "Hands-On Making"
+group_title: "5. Hands-On Making"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/pottery/guide/req4/"
-prev_title: "Req 4 — Pottery Vocabulary"
+prev_title: "Pottery Vocabulary"
 next: "/merit-badges/pottery/guide/req6/"
-next_title: "Req 6 — The U.S. Ceramic Industry"
+next_title: "The U.S. Ceramic Industry"
 ---
 
 {{< drg/requirement number="5" >}}

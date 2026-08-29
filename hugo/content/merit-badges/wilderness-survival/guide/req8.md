@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Water Treatment"
+title: "Water Treatment"
 layout: guide
-group_title: "Critical Skills"
+group_title: "6. Signaling & Water"
 req_number: "8"
 prev: "/merit-badges/wilderness-survival/guide/req7c/"
-prev_title: "Req 7c — Ground-to-Air Signals"
+prev_title: "Ground-to-Air Signals"
 next: "/merit-badges/wilderness-survival/guide/req9/"
-next_title: "Req 9 — Edible Plants"
+next_title: "Wild Food Safety"
 ---
 
 {{< drg/requirement number="8" >}}

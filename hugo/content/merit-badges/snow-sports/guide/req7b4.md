@@ -1,13 +1,13 @@
 ---
-title: "Req 7b4 — Waxing for Touring"
+title: "Waxing for Touring"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b4"
 req_path: "7.b.4"
 prev: "/merit-badges/snow-sports/guide/req7b3/"
-prev_title: "Req 7b3 — Types of Nordic Skis"
+prev_title: "Types of Nordic Skis"
 next: "/merit-badges/snow-sports/guide/req7b5/"
-next_title: "Req 7b5 — Skiing Styles Compared"
+next_title: "Skiing Styles Compared"
 ---
 
 {{< drg/requirement number="7b4" >}}

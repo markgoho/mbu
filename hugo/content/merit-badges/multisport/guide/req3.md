@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Picking Your Event"
+title: "Picking Your Event"
 layout: "guide"
-group_title: "Choose Your Format"
+group_title: "3. Choose Your Format"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/multisport/guide/req2/"
-prev_title: "Req 2 — Physical Readiness and Nutrition"
+prev_title: "Physical Readiness and Nutrition"
 next: "/merit-badges/multisport/guide/req4a/"
-next_title: "Req 4a — Triathlon Roadmap"
+next_title: "Triathlon Roadmap"
 ---
 
 {{< drg/requirement number="3" >}}

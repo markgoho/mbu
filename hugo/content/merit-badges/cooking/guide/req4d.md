@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Cook & Serve"
+title: "Cook & Serve"
 layout: guide
-group_title: "Cooking at Home"
+group_title: "4. Cooking at Home"
 req_number: "4d"
 prev: "/merit-badges/cooking/guide/req4c/"
-prev_title: "Req 4c — Share Your Plan"
+prev_title: "Share Your Plan"
 next: "/merit-badges/cooking/guide/req4e/"
-next_title: "Req 4e — Meal Timing"
+next_title: "Meal Timing"
 ---
 
 {{< drg/requirement number="4d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8a4 — Major Crop Regions"
+title: "Major Crop Regions"
 layout: "guide"
-group_title: "Option A — Agronomy"
+group_title: "8. Option A — Agronomy"
 req_number: "8a4"
 req_path: "8.a.4"
 prev: "/merit-badges/plant-science/guide/req8a3/"
-prev_title: "Req 8a3 — Crop Pests and Weeds"
+prev_title: "Crop Pests, Diseases & Weeds"
 next: "/merit-badges/plant-science/guide/req8a5/"
-next_title: "Req 8a5 — Choose a Crop Study"
+next_title: "Choose a Crop"
 ---
 
 {{< drg/requirement number="8a4" >}}

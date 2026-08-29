@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Build a Circuit Project"
+title: "Build a Circuit Project"
 layout: guide
-group_title: "Circuits & Digital Logic"
+group_title: "4. Circuits & Digital Logic"
 req_number: "4c"
 prev: "/merit-badges/electronics/guide/req4b/"
-prev_title: "Req 4b — Binary & Decimal Conversion"
+prev_title: "Binary & Decimal Conversion"
 next: "/merit-badges/electronics/guide/req5a/"
-next_title: "Req 5a — Ohm's Law"
+next_title: "Ohm"
 ---
 
 {{< drg/requirement number="4c" >}}

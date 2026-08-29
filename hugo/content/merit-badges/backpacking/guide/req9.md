@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Planning & Packing"
+title: "Planning & Packing"
 layout: guide
-group_title: "Your First Trek"
+group_title: "9. Your First Trek"
 req_number: "9"
 prev: "/merit-badges/backpacking/guide/req8/"
-prev_title: "Req 8 — Stoves & Backcountry Cooking"
+prev_title: "Stoves & Backcountry Cooking"
 next: "/merit-badges/backpacking/guide/req10/"
-next_title: "Req 10 — Three-Day Treks"
+next_title: "Three-Day Treks"
 ---
 
 {{< drg/requirement number="9" >}}

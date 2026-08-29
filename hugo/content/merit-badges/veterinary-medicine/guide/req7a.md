@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Why This Career Fits"
+title: "Why This Career Fits"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/veterinary-medicine/guide/req7/"
-prev_title: "Req 7 — Choose a Career Reflection"
+prev_title: "Choose a Career Reflection"
 next: "/merit-badges/veterinary-medicine/guide/req7b/"
-next_title: "Req 7b — What You Would Enjoy"
+next_title: "What You Would Enjoy"
 ---
 
 {{< drg/requirement number="7a" >}}

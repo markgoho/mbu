@@ -1,11 +1,11 @@
 ---
-title: "Req 9 — Technique, Weather & Boat Care"
+title: "Technique, Weather & Boat Care"
 layout: "guide"
-group_title: "Advanced Know-How"
+group_title: "9. Advanced Know-How"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/rowing/guide/req8/"
-prev_title: "Req 8 — Craft, Materials & Oarlocks"
+prev_title: "Craft, Materials & Oarlocks"
 next: "/merit-badges/rowing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

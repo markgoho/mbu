@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Instrument Rating"
+title: "Instrument Rating"
 layout: guide
-group_title: "Aviation Careers"
+group_title: "5. Aviation Careers"
 req_number: "5b"
 prev: "/merit-badges/aviation/guide/req5a/"
-prev_title: "Req 5a — Pilot Certificates"
+prev_title: "Pilot Certificates"
 next: "/merit-badges/aviation/guide/req5c/"
-next_title: "Req 5c — Advanced Certificates"
+next_title: "Advanced Certificates"
 ---
 
 {{< drg/requirement number="5b" >}}

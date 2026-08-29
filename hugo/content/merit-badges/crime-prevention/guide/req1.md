@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Laws and Society"
+title: "Laws and Society"
 layout: guide
-group_title: "Laws & Society"
+group_title: "1. Laws & Society"
 req_number: "1"
 prev: "/merit-badges/crime-prevention/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/crime-prevention/guide/req2/"
-next_title: "Req 2 — Groups Working to Prevent Crime"
+next_title: "Groups Working to Prevent Crime"
 ---
 
 {{< drg/requirement number="1" >}}

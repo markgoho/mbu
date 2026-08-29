@@ -1,12 +1,12 @@
 ---
-title: "Req 4a4 — Tiny Sediment, Big Clues"
+title: "Tiny Sediment, Big Clues"
 layout: guide
-group_title: "Surface & Sedimentary Processes"
+group_title: "4. Surface & Sedimentary Processes"
 req_number: "4a4"
 prev: "/merit-badges/geology/guide/req4a3/"
-prev_title: "Req 4a3 — Reading Stream Features"
+prev_title: "Reading Stream Features"
 next: "/merit-badges/geology/guide/req4a5/"
-next_title: "Req 4a5 — Clues in a Dry Streambed"
+next_title: "Clues in a Dry Streambed"
 ---
 
 {{< drg/requirement number="4a4" >}}

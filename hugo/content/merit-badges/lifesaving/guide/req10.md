@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Lead-and-Wait Techniques"
+title: "Lead-and-Wait Techniques"
 layout: guide
-group_title: "Swimming Rescues (Conscious)"
+group_title: "8. Swimming Rescues (Conscious)"
 req_number: "10"
 prev: "/merit-badges/lifesaving/guide/req9/"
-prev_title: "Req 9 — Nonbuoyant Aid Rescue"
+prev_title: "Nonbuoyant Aid Rescue"
 next: "/merit-badges/lifesaving/guide/req11/"
-next_title: "Req 11 — Contact Tows"
+next_title: "Contact Tows"
 ---
 
 {{< drg/requirement number="10" >}}

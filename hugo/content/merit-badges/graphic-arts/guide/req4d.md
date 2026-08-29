@@ -1,12 +1,12 @@
 ---
-title: "Req 4d — Relief Printing Run"
+title: "Relief Printing Run"
 layout: guide
-group_title: "Choose a Printing Method"
+group_title: "4. Choose a Printing Method"
 req_number: "4d"
 prev: "/merit-badges/graphic-arts/guide/req4c/"
-prev_title: "Req 4c — Digital Printing Run"
+prev_title: "Digital Printing Run"
 next: "/merit-badges/graphic-arts/guide/req5/"
-next_title: "Req 5 — Postpress and Binding"
+next_title: "Postpress and Binding"
 ---
 
 {{< drg/requirement number="4d" >}}

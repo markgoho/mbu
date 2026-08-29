@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Responsible Pet Ownership"
+title: "Responsible Pet Ownership"
 layout: guide
-group_title: "Training and Ownership"
+group_title: "3. Training and Ownership"
 req_number: "3b"
 prev: "/merit-badges/dog-care/guide/req3a/"
-prev_title: "Req 3a — Training Foundations"
+prev_title: "Training Foundations"
 next: "/merit-badges/dog-care/guide/req3c/"
-next_title: "Req 3c — Choosing the Right Dog"
+next_title: "Choosing the Right Dog"
 ---
 
 {{< drg/requirement number="3b" >}}

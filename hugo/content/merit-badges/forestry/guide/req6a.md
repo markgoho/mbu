@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Hazard Tree Inventory"
+title: "Hazard Tree Inventory"
 layout: guide
-group_title: "Managing Forests"
+group_title: "4. Managing Forests"
 req_number: "6a"
 prev: "/merit-badges/forestry/guide/req6/"
-prev_title: "Req 6 — Choose a Hazard Tree Activity"
+prev_title: "Choose a Hazard Tree Activity"
 next: "/merit-badges/forestry/guide/req6b/"
-next_title: "Req 6b — Review a Professional Hazard Tree Report"
+next_title: "Review a Professional Hazard Tree Report"
 ---
 
 {{< drg/requirement number="6a" >}}

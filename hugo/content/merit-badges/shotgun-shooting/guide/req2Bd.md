@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-d — Grades of Black Powder"
+title: "Grades of Black Powder"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-d"
 req_path: "2.B.d"
 prev: "/merit-badges/shotgun-shooting/guide/req2Bc/"
-prev_title: "Req 2B-c — Safe Storage and Handling"
+prev_title: "Safe Storage and Handling"
 next: "/merit-badges/shotgun-shooting/guide/req2Be/"
-next_title: "Req 2B-e — Black Powder Storage Safety"
+next_title: "Black Powder Storage Safety"
 ---
 
 {{< drg/requirement number="2B-d" >}}

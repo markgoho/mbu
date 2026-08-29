@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Careers in Labor Relations"
+title: "Careers in Labor Relations"
 layout: guide
-group_title: "Your Future"
+group_title: "9. Your Future"
 req_number: "9"
 prev: "/merit-badges/american-labor/guide/req8/"
-prev_title: "Req 8 — Stakeholder Goals"
+prev_title: "Stakeholder Goals"
 next: "/merit-badges/american-labor/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

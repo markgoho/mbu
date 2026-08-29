@@ -1,13 +1,13 @@
 ---
-title: "Req 7a5 — Managed Watershed"
+title: "Managed Watershed"
 layout: "guide"
-group_title: "Field Visits & Reports"
+group_title: "7. Field Visits & Reports"
 req_number: "7a5"
 req_path: "7.a.5"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7a4/"
-prev_title: "Req 7a4 — Conservation-Managed Farm or Ranch"
+prev_title: "Conservation-Managed Farm or Ranch"
 next: "/merit-badges/soil-and-water-conservation/guide/req7a6/"
-next_title: "Req 7a6 — Waste-Treatment Plant"
+next_title: "Waste-Treatment Plant"
 ---
 
 {{< drg/requirement number="7a5" >}}

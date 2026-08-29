@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Build for Birds"
+title: "Build for Birds"
 layout: guide
-group_title: "Attracting Birds"
+group_title: "9. Attracting Birds"
 req_number: "9"
 prev: "/merit-badges/bird-study/guide/req8/"
-prev_title: "Req 8 — Choose Your Adventure"
+prev_title: "Choose Your Adventure"
 next: "/merit-badges/bird-study/guide/req10a/"
-next_title: "Req 10a — Extinct, Endangered, Threatened"
+next_title: "Extinct, Endangered, Threatened"
 ---
 
 {{< drg/requirement number="9" >}}

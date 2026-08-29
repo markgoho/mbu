@@ -1,11 +1,11 @@
 ---
-title: "Req 7 — Careers and the American Welding Society"
+title: "Careers and the American Welding Society"
 layout: "guide"
-group_title: "Where Welding Can Take You"
+group_title: "7. Where Welding Can Take You"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/welding/guide/req6/"
-prev_title: "Req 6 — Beads and Basic Joints"
+prev_title: "Beads and Basic Joints"
 next: "/merit-badges/welding/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,13 +1,13 @@
 ---
-title: "Req 8b — Heavy-Equipment Hand Signals"
+title: "Heavy-Equipment Hand Signals"
 layout: "guide"
-group_title: "Specialized Signal Systems"
+group_title: "8. Specialized Signal Systems"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/signs-signals-and-codes/guide/req8a/"
-prev_title: "Req 8a — Sports Officiating Signals"
+prev_title: "Sports Officiating Signals"
 next: "/merit-badges/signs-signals-and-codes/guide/req8c/"
-next_title: "Req 8c — Aircraft Carrier Deck Signals"
+next_title: "Aircraft Carrier Deck Signals"
 ---
 
 {{< drg/requirement number="8b" >}}

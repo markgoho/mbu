@@ -1,13 +1,13 @@
 ---
-title: "Req 8b — Broadcasting Overview"
+title: "Broadcasting Overview"
 layout: "guide"
-group_title: "Option B: Radio Broadcasting"
+group_title: "8. Option B: Radio Broadcasting"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/radio/guide/req8a6/"
-prev_title: "Req 8a6 — Make a Contact"
+prev_title: "Make a Contact"
 next: "/merit-badges/radio/guide/req8b1/"
-next_title: "Req 8b1 — Broadcast Regulations"
+next_title: "Broadcast Regulations"
 guide_nav:
   - group_title: "Getting Started"
     items:

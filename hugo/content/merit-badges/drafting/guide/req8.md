@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Drafting Career Exploration"
+title: "Drafting Career Exploration"
 layout: guide
-group_title: "Careers in Drafting"
+group_title: "8. Careers in Drafting"
 req_number: "8"
 prev: "/merit-badges/drafting/guide/req7/"
-prev_title: "Req 7 — Workplace Visit or Research"
+prev_title: "Workplace Visit or Research"
 next: "/merit-badges/drafting/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

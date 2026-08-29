@@ -1,13 +1,13 @@
 ---
-title: "Req 4a — How Semaphore Works"
+title: "How Semaphore Works"
 layout: "guide"
-group_title: "Flag Signaling"
+group_title: "4. Flag Signaling"
 req_number: "4a"
 req_path: "4.a"
 prev: "/merit-badges/signs-signals-and-codes/guide/req3/"
-prev_title: "Req 3 — Morse Code and ASL in Action"
+prev_title: "Morse Code and ASL in Action"
 next: "/merit-badges/signs-signals-and-codes/guide/req4b/"
-next_title: "Req 4b — Semaphore Flags vs. Nautical Flags"
+next_title: "Semaphore Flags vs. Nautical Flags"
 ---
 
 {{< drg/requirement number="4a" >}}

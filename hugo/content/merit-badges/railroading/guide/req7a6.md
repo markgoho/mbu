@@ -1,13 +1,13 @@
 ---
-title: "Req 7a6 — Build and Run a Layout"
+title: "Build and Run a Layout"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a6"
 req_path: "7.a.6"
 prev: "/merit-badges/railroading/guide/req7a5/"
-prev_title: "Req 7a5 — Structures and Scenery"
+prev_title: "Structures and Scenery"
 next: "/merit-badges/railroading/guide/req7a7/"
-next_title: "Req 7a7 — Switching Contest Skills"
+next_title: "Switching Contest Skills"
 ---
 
 {{< drg/requirement number="7a6" >}}

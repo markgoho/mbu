@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Model Half-Life"
+title: "Model Half-Life"
 layout: "guide"
-group_title: "Classic Experiments"
+group_title: "4. Classic Experiments"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/nuclear-science/guide/req4b/"
-prev_title: "Req 4b — See Tracks in a Cloud Chamber"
+prev_title: "See Tracks in a Cloud Chamber"
 next: "/merit-badges/nuclear-science/guide/req5/"
-next_title: "Req 5 — Choose a Safety Investigation"
+next_title: "Choose a Safety Investigation"
 ---
 
 {{< drg/requirement number="4c" >}}

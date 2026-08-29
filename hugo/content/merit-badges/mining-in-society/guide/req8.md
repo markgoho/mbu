@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Careers in Mining and Minerals"
+title: "Careers in Mining and Minerals"
 layout: "guide"
-group_title: "Careers in Mining and Minerals"
+group_title: "8. Careers in Mining and Minerals"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/mining-in-society/guide/req7d/"
-prev_title: "Req 7d — Commodity Prices and Trends"
+prev_title: "Commodity Prices and Trends"
 next: "/merit-badges/mining-in-society/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

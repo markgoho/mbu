@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Local History Research"
+title: "Local History Research"
 layout: guide
-group_title: "Artifacts in Action"
+group_title: "7. Artifacts in Action"
 req_number: "8"
 prev: "/merit-badges/archaeology/guide/req7/"
-prev_title: "Req 7 — Artifacts Tell Stories"
+prev_title: "Artifacts Tell Stories"
 next: "/merit-badges/archaeology/guide/req9/"
-next_title: "Req 9 — Careers in Archaeology"
+next_title: "Careers in Archaeology"
 ---
 
 {{< drg/requirement number="8" >}}

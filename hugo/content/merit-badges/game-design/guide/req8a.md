@@ -1,12 +1,12 @@
 ---
-title: "Req 8a — Interview a Game Developer"
+title: "Interview a Game Developer"
 layout: guide
-group_title: "Exploring the Industry"
+group_title: "8. Exploring the Industry"
 req_number: "8a"
 prev: "/merit-badges/game-design/guide/req8/"
-prev_title: "Req 8 — Choose a Professional Path"
+prev_title: "Choose a Professional Path"
 next: "/merit-badges/game-design/guide/req8b/"
-next_title: "Req 8b — Meet a Game Design Educator"
+next_title: "Meet a Game Design Educator"
 ---
 
 {{< drg/requirement number="8a" >}}

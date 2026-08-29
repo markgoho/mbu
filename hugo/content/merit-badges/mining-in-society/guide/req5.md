@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose Your Mining Experience"
+title: "Choose Your Mining Experience"
 layout: "guide"
-group_title: "Choose Your Mining Experience"
+group_title: "5. Choose Your Mining Experience"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/mining-in-society/guide/req4/"
-prev_title: "Req 4 — Why Abandoned Mines Are Dangerous"
+prev_title: "Why Abandoned Mines Are Dangerous"
 next: "/merit-badges/mining-in-society/guide/req5a/"
-next_title: "Req 5a — Compare Two Virtual Mine Tours"
+next_title: "Compare Two Virtual Mine Tours"
 ---
 
 {{< drg/requirement number="5" >}}

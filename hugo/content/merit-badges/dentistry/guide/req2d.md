@@ -1,12 +1,12 @@
 ---
-title: "Req 2d — Tobacco & Oral Health"
+title: "Tobacco & Oral Health"
 layout: guide
-group_title: "Dental Disease & Prevention"
+group_title: "2. Dental Disease & Prevention"
 req_number: "2d"
 prev: "/merit-badges/dentistry/guide/req2c/"
-prev_title: "Req 2c — Saving a Knocked-Out Tooth"
+prev_title: "Saving a Knocked-Out Tooth"
 next: "/merit-badges/dentistry/guide/req3/"
-next_title: "Req 3 — Visiting the Dentist"
+next_title: "Visiting the Dentist"
 ---
 
 {{< drg/requirement number="2d" >}}

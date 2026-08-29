@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — U.S. Currency"
+title: "U.S. Currency"
 layout: guide
-group_title: "Paper Money"
+group_title: "6. Paper Money"
 req_number: "6"
 prev: "/merit-badges/coin-collecting/guide/req5/"
-prev_title: "Req 5 — Bicentennial Coins"
+prev_title: "Bicentennial Coins"
 next: "/merit-badges/coin-collecting/guide/req7/"
-next_title: "Req 7 — Expanding Your Horizons"
+next_title: "Expanding Your Horizons"
 ---
 
 {{< drg/requirement number="6" >}}

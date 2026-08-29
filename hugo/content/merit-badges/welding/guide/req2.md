@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Safety Gear, SDS, and Equipment Care"
+title: "Safety Gear, SDS, and Equipment Care"
 layout: "guide"
-group_title: "Gear and Shop Readiness"
+group_title: "2. Gear and Shop Readiness"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/welding/guide/req1/"
-prev_title: "Req 1 — Welding Hazards and First Aid"
+prev_title: "Welding Hazards and First Aid"
 next: "/merit-badges/welding/guide/req3/"
-next_title: "Req 3 — Welding Terms and Process Basics"
+next_title: "Welding Terms and Process Basics"
 ---
 
 {{< drg/requirement number="2" >}}

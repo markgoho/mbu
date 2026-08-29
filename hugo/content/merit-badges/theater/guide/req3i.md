@@ -1,12 +1,12 @@
 ---
-title: "Req 3i — Stage Management"
+title: "Stage Management"
 layout: guide
-group_title: "Behind the Curtain"
+group_title: "3. Behind the Curtain"
 req_number: "3i"
 prev: "/merit-badges/theater/guide/req3h/"
-prev_title: "Req 3h — Sound Design"
+prev_title: "Sound Design"
 next: "/merit-badges/theater/guide/req3j/"
-next_title: "Req 3j — Musical Direction"
+next_title: "Musical Direction"
 ---
 
 {{< drg/requirement number="3i" >}}

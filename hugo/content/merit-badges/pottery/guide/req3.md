@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Drawing Pottery Forms"
+title: "Drawing Pottery Forms"
 layout: "guide"
-group_title: "Designing Forms"
+group_title: "3. Designing Forms"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/pottery/guide/req2b/"
-prev_title: "Req 2b — How Potters' Wheels Work"
+prev_title: "How Potters"
 next: "/merit-badges/pottery/guide/req4/"
-next_title: "Req 4 — Pottery Vocabulary"
+next_title: "Pottery Vocabulary"
 ---
 
 {{< drg/requirement number="3" >}}

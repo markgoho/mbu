@@ -1,13 +1,13 @@
 ---
-title: "Req 2cf — Components of a Load"
+title: "Components of a Load"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cf"
 req_path: "2.c.f"
 prev: "/merit-badges/rifle-shooting/guide/req2ce/"
-prev_title: "Req 2ce — Black Powder Storage Safety"
+prev_title: "Black Powder Storage Safety"
 next: "/merit-badges/rifle-shooting/guide/req2cg/"
-next_title: "Req 2cg — Loading Procedures and Accessories"
+next_title: "Loading Procedures and Accessories"
 ---
 
 {{< drg/requirement number="2cf" >}}

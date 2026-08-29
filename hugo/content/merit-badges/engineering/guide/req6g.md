@@ -1,12 +1,12 @@
 ---
-title: "Req 6g — Building an Engineering Project"
+title: "Building an Engineering Project"
 layout: guide
-group_title: "Hands-On Engineering"
+group_title: "6. Hands-On Engineering"
 req_number: "6g"
 prev: "/merit-badges/engineering/guide/req6f/"
-prev_title: "Req 6f — Moving People"
+prev_title: "Moving People"
 next: "/merit-badges/engineering/guide/req7/"
-next_title: "Req 7 — Professional Engineer Registration"
+next_title: "Professional Engineer Registration"
 ---
 
 {{< drg/requirement number="6g" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Accessories & Terminology"
+title: "Accessories & Terminology"
 layout: guide
-group_title: "Arrows & Equipment"
+group_title: "2. Arrows & Equipment"
 req_number: "3"
 prev: "/merit-badges/archery/guide/req2/"
-prev_title: "Req 2 — Know Your Arrows"
+prev_title: "Know Your Arrows"
 next: "/merit-badges/archery/guide/req4/"
-next_title: "Req 4 — Formats & Scoring"
+next_title: "Formats & Scoring"
 ---
 
 {{< drg/requirement number="3" >}}

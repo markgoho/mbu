@@ -1,12 +1,12 @@
 ---
-title: "Req 8a–8c — Technology Changes Genealogy"
+title: "Technology Changes Genealogy"
 layout: guide
-group_title: "Technology and Reflection"
+group_title: "8. Technology and Reflection"
 req_number: "8a"
 prev: "/merit-badges/genealogy/guide/req7/"
-prev_title: "Req 7 — Family Group Records"
+prev_title: "Family Group Records"
 next: "/merit-badges/genealogy/guide/req9/"
-next_title: "Req 9 — What You Learned About Family"
+next_title: "What You Learned About Family"
 ---
 
 {{< drg/requirement number="8" >}}

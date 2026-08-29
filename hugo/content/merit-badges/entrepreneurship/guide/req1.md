@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Defining Entrepreneurship"
+title: "Defining Entrepreneurship"
 layout: guide
-group_title: "Foundations"
+group_title: "1. Foundations"
 req_number: "1"
 prev: "/merit-badges/entrepreneurship/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/entrepreneurship/guide/req2/"
-next_title: "Req 2 — Essential Entrepreneur Skills"
+next_title: "Essential Entrepreneur Skills"
 ---
 
 {{< drg/requirement number="1" >}}

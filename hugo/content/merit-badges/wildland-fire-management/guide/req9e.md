@@ -1,13 +1,13 @@
 ---
-title: "Req 9e — Talk Fire Weather"
+title: "Talk Fire Weather"
 layout: "guide"
-group_title: "Taking Action"
+group_title: "9. Taking Action"
 req_number: "9e"
 req_path: "9.e"
 prev: "/merit-badges/wildland-fire-management/guide/req9d/"
-prev_title: "Req 9d — Create a Prevention Message"
+prev_title: "Create a Prevention Message"
 next: "/merit-badges/wildland-fire-management/guide/req10/"
-next_title: "Req 10 — Lessons From a Catastrophic Fire"
+next_title: "Lessons From a Catastrophic Fire"
 ---
 
 {{< drg/requirement number="9e" >}}

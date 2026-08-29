@@ -1,13 +1,13 @@
 ---
-title: "Req 2ad — Misfire, Hangfire, and Squib Fire"
+title: "Misfire, Hangfire, and Squib Fire"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2ad"
 req_path: "2.a.d"
 prev: "/merit-badges/rifle-shooting/guide/req2ac/"
-prev_title: "Req 2ac — Two Types of Cartridges"
+prev_title: "Two Types of Cartridges"
 next: "/merit-badges/rifle-shooting/guide/req2ae/"
-next_title: "Req 2ae — The Five Fundamentals of Shooting"
+next_title: "The Five Fundamentals of Shooting"
 ---
 
 {{< drg/requirement number="2ad" >}}

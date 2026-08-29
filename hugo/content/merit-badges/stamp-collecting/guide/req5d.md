@@ -1,13 +1,13 @@
 ---
-title: "Req 5d — Hinges and Mounts"
+title: "Hinges and Mounts"
 layout: "guide"
-group_title: "Collector's Tools"
+group_title: "5. Collector's Tools"
 req_number: "5d"
 req_path: "5.d"
 prev: "/merit-badges/stamp-collecting/guide/req5c/"
-prev_title: "Req 5c — Inspecting With Magnifiers"
+prev_title: "Inspecting With Magnifiers"
 next: "/merit-badges/stamp-collecting/guide/req5e/"
-next_title: "Req 5e — Measuring With a Perforation Gauge"
+next_title: "Measuring With a Perforation Gauge"
 ---
 
 {{< drg/requirement number="5d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7b — Plant for a Purpose"
+title: "Plant for a Purpose"
 layout: "guide"
-group_title: "Planting & Restoration"
+group_title: "7. Planting & Restoration"
 req_number: "7b"
 req_path: "7.b"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7a9/"
-prev_title: "Req 7a9 — Desalination Plant"
+prev_title: "Desalination Plant"
 next: "/merit-badges/soil-and-water-conservation/guide/req7c/"
-next_title: "Req 7c — Seed a Conservation Plot"
+next_title: "Seed a Conservation Plot"
 ---
 
 {{< drg/requirement number="7b" >}}

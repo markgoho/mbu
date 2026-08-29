@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Paddle Anatomy & Sizing"
+title: "Paddle Anatomy & Sizing"
 layout: guide
-group_title: "Know Your Paddle"
+group_title: "4. Know Your Paddle"
 req_number: "4"
 prev: "/merit-badges/canoeing/guide/req3/"
-prev_title: "Req 3 — Canoe Anatomy & Design"
+prev_title: "Canoe Anatomy & Design"
 next: "/merit-badges/canoeing/guide/req5a/"
-next_title: "Req 5a — Life Jacket Selection"
+next_title: "Life Jacket Selection"
 ---
 
 {{< drg/requirement number="4" >}}

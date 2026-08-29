@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Water Shutoffs and Plumbing Fixes"
+title: "Water Shutoffs and Plumbing Fixes"
 layout: guide
-group_title: "Plumbing Basics"
+group_title: "5. Plumbing Basics"
 req_number: "5"
 prev: "/merit-badges/home-repairs/guide/req4d/"
-prev_title: "Req 4d — Replacing an Outlet"
+prev_title: "Replacing an Outlet"
 next: "/merit-badges/home-repairs/guide/req5a/"
-next_title: "Req 5a — Clearing a Drain or Trap"
+next_title: "Clearing a Drain or Trap"
 ---
 
 {{< drg/requirement number="5" >}}

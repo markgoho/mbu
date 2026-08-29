@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Designing for the Big Screen"
+title: "Designing for the Big Screen"
 layout: "guide"
-group_title: "Fantasy Spacecraft Design"
+group_title: "5. Fantasy Spacecraft Design"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/model-design-and-building/guide/req4e/"
-prev_title: "Req 4e — Designing a Scaled Passenger Vehicle"
+prev_title: "Designing a Scaled Passenger Vehicle"
 next: "/merit-badges/model-design-and-building/guide/req6/"
-next_title: "Req 6 — Careers in Design and Building"
+next_title: "Careers in Design and Building"
 ---
 
 {{< drg/requirement number="5" >}}

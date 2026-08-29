@@ -1,13 +1,13 @@
 ---
-title: "Req 4d — Insects and Spiders Up Close"
+title: "Insects and Spiders Up Close"
 layout: "guide"
-group_title: "Bug and Spider Study"
+group_title: "4. Bug and Spider Study"
 req_number: "4d"
 req_path: "4.d"
 prev: "/merit-badges/nature/guide/req4c/"
-prev_title: "Req 4c — Reptiles and Amphibians"
+prev_title: "Reptiles and Amphibians"
 next: "/merit-badges/nature/guide/req4e/"
-next_title: "Req 4e — Fish and Food Sources"
+next_title: "Fish and Food Sources"
 ---
 
 {{< drg/requirement number="4d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7c9 — Controlled Run"
+title: "Controlled Run"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c9"
 req_path: "7.c.9"
 prev: "/merit-badges/snow-sports/guide/req7c8/"
-prev_title: "Req 7c8 — Ollie, Nose-End Grab & Wheelie"
+prev_title: "Ollie, Nose-End Grab & Wheelie"
 next: "/merit-badges/snow-sports/guide/req7c-10/"
-next_title: "Req 7c10 — Varied Conditions"
+next_title: "Varied Conditions"
 ---
 
 {{< drg/requirement number="7c9" >}}

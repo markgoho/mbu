@@ -4,106 +4,106 @@ layout: guide
 badge_name: "Astronomy"
 group_title: "Getting Started"
 next: "/merit-badges/astronomy/guide/req1a/"
-next_title: "Req 1a — Stargazing Hazards"
+next_title: "Stargazing Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/astronomy/guide/"
-  - group_title: "Safety Under the Stars"
+  - group_title: "1. Safety Under the Stars"
     items:
-      - title: "Req 1a — Stargazing Hazards"
+      - title: "a Stargazing Hazards"
         url: "/merit-badges/astronomy/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — First Aid for Observers"
+      - title: "b First Aid for Observers"
         url: "/merit-badges/astronomy/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Clothing & Night Precautions"
+      - title: "c Clothing & Night Precautions"
         url: "/merit-badges/astronomy/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Safe Solar Observation"
+      - title: "d Safe Solar Observation"
         url: "/merit-badges/astronomy/guide/req1d/"
         is_sub: true
-  - group_title: "Light & the Night Sky"
+  - group_title: "2. Light & the Night Sky"
     items:
-      - title: "Req 2 — Light Pollution"
+      - title: "2. Light Pollution"
         url: "/merit-badges/astronomy/guide/req2/"
         is_sub: false
-  - group_title: "Telescopes & Instruments"
+  - group_title: "3. Telescopes & Instruments"
     items:
-      - title: "Req 3a — Binoculars & Telescopes"
+      - title: "a Binoculars & Telescopes"
         url: "/merit-badges/astronomy/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Types of Telescopes"
+      - title: "b Types of Telescopes"
         url: "/merit-badges/astronomy/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Telescope Instruments"
+      - title: "c Telescope Instruments"
         url: "/merit-badges/astronomy/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Care & Storage"
+      - title: "d Care & Storage"
         url: "/merit-badges/astronomy/guide/req3d/"
         is_sub: true
-  - group_title: "Navigating the Night Sky"
+  - group_title: "4. Navigating the Night Sky"
     items:
-      - title: "Req 4a — Constellations"
+      - title: "a Constellations"
         url: "/merit-badges/astronomy/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Bright Stars"
+      - title: "b Bright Stars"
         url: "/merit-badges/astronomy/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Sketching the Big Dipper"
+      - title: "c Sketching the Big Dipper"
         url: "/merit-badges/astronomy/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — The Milky Way"
+      - title: "d The Milky Way"
         url: "/merit-badges/astronomy/guide/req4d/"
         is_sub: true
-  - group_title: "Exploring the Planets"
+  - group_title: "5. Exploring the Planets"
     items:
-      - title: "Req 5a — Visible Planets & Phases"
+      - title: "a Visible Planets & Phases"
         url: "/merit-badges/astronomy/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Planet Visibility Chart"
+      - title: "b Planet Visibility Chart"
         url: "/merit-badges/astronomy/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Planetary Motion"
+      - title: "c Planetary Motion"
         url: "/merit-badges/astronomy/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Observing a Planet"
+      - title: "d Observing a Planet"
         url: "/merit-badges/astronomy/guide/req5d/"
         is_sub: true
-  - group_title: "Our Moon"
+  - group_title: "6. Our Moon"
     items:
-      - title: "Req 6a — Lunar Seas & Craters"
+      - title: "a Lunar Seas & Craters"
         url: "/merit-badges/astronomy/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Sketching Moon Phases"
+      - title: "b Sketching Moon Phases"
         url: "/merit-badges/astronomy/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Moon's Orbit"
+      - title: "c Moon"
         url: "/merit-badges/astronomy/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Eclipses & Moon Phases"
+      - title: "d Eclipses & Moon Phases"
         url: "/merit-badges/astronomy/guide/req6d/"
         is_sub: true
-  - group_title: "Our Sun & the Stars"
+  - group_title: "7. Our Sun & the Stars"
     items:
-      - title: "Req 7a — Composition of the Sun"
+      - title: "a Composition of the Sun"
         url: "/merit-badges/astronomy/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Sunspots"
+      - title: "b Sunspots"
         url: "/merit-badges/astronomy/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Star Colors"
+      - title: "c Star Colors"
         url: "/merit-badges/astronomy/guide/req7c/"
         is_sub: true
-  - group_title: "Hands-On Astronomy"
+  - group_title: "8. Hands-On Astronomy"
     items:
-      - title: "Req 8 — Choose Your Adventure"
+      - title: "8. Choose Your Adventure"
         url: "/merit-badges/astronomy/guide/req8/"
         is_sub: false
-  - group_title: "Careers & Hobbies"
+  - group_title: "9. Careers & Hobbies"
     items:
-      - title: "Req 9 — Astronomy Careers or Hobbies"
+      - title: "9. Astronomy Careers or Hobbies"
         url: "/merit-badges/astronomy/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

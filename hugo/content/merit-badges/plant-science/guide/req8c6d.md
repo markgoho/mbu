@@ -1,13 +1,13 @@
 ---
-title: "Req 8c6d — Visiting an Herbarium"
+title: "Visiting an Herbarium"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c6d"
 req_path: "8.c.6.d"
 prev: "/merit-badges/plant-science/guide/req8c6c3/"
-prev_title: "Req 8c6c3 — Recording a Nested Plot Inventory"
+prev_title: "Record & Graph"
 next: "/merit-badges/plant-science/guide/req8c6e/"
-next_title: "Req 8c6e — Visiting a Plant Conservation Organization"
+next_title: "Conservation Organization"
 ---
 
 {{< drg/requirement number="8c6d" >}}

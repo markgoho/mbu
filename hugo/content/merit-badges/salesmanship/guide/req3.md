@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Build a Sales Plan"
+title: "Build a Sales Plan"
 layout: "guide"
-group_title: "Planning the Sale"
+group_title: "3. Planning the Sale"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/salesmanship/guide/req2/"
-prev_title: "Req 2 — Research, Product Knowledge, and Follow-Up"
+prev_title: "Research, Product Knowledge, and Follow-Up"
 next: "/merit-badges/salesmanship/guide/req4/"
-next_title: "Req 4 — Give a Sales Presentation"
+next_title: "Give a Sales Presentation"
 ---
 
 {{< drg/requirement number="3" >}}

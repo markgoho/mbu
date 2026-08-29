@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Choose Your Field Study"
+title: "Choose Your Field Study"
 layout: "guide"
-group_title: "Field Study Options"
+group_title: "3. Field Study Options"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/mammal-study/guide/req2/"
-prev_title: "Req 2 — Classifying Mammals"
+prev_title: "Classifying Mammals"
 next: "/merit-badges/mammal-study/guide/req3a/"
-next_title: "Req 3a — Two Habitats, Six Hours"
+next_title: "Two Habitats, Six Hours"
 ---
 
 {{< drg/requirement number="3" >}}

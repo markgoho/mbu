@@ -1,13 +1,13 @@
 ---
-title: "Req 9a — Safety Careers"
+title: "Safety Careers"
 layout: "guide"
-group_title: "Careers and Service"
+group_title: "9. Careers and Service"
 req_number: "9a"
 req_path: "9.a"
 prev: "/merit-badges/safety/guide/req9/"
-prev_title: "Req 9 — Choose Your Safety Path"
+prev_title: "Choose Your Safety Path"
 next: "/merit-badges/safety/guide/req9b/"
-next_title: "Req 9b — Safety in Service and Lifestyle"
+next_title: "Safety in Service and Lifestyle"
 ---
 
 {{< drg/requirement number="9a" >}}

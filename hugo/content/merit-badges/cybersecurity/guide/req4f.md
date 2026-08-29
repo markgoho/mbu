@@ -1,12 +1,12 @@
 ---
-title: "Req 4f — Attack Surface"
+title: "Attack Surface"
 layout: guide
-group_title: "Threats & Attacks"
+group_title: "4. Threats & Attacks"
 req_number: "4f"
 prev: "/merit-badges/cybersecurity/guide/req4e/"
-prev_title: "Req 4e — Current Events"
+prev_title: "Current Events"
 next: "/merit-badges/cybersecurity/guide/req5a/"
-next_title: "Req 5a — Defense Technologies"
+next_title: "Defense Technologies"
 ---
 
 {{< drg/requirement number="4f" >}}

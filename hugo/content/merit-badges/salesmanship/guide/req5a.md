@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Support a Scout Fundraiser"
+title: "Support a Scout Fundraiser"
 layout: "guide"
-group_title: "Earning Through Real Sales"
+group_title: "5. Earning Through Real Sales"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/salesmanship/guide/req5/"
-prev_title: "Req 5 — Choose Your Sales Project"
+prev_title: "Choose Your Sales Project"
 next: "/merit-badges/salesmanship/guide/req5b/"
-next_title: "Req 5b — Sell a Neighborhood Service"
+next_title: "Sell a Neighborhood Service"
 ---
 
 {{< drg/requirement number="5a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Mammal Signs and Tracks"
+title: "Mammal Signs and Tracks"
 layout: "guide"
-group_title: "Mammal Fieldwork"
+group_title: "4. Mammal Fieldwork"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/nature/guide/req4a/"
-prev_title: "Req 4a — Birds in the Field"
+prev_title: "Birds in the Field"
 next: "/merit-badges/nature/guide/req4c/"
-next_title: "Req 4c — Reptiles and Amphibians"
+next_title: "Reptiles and Amphibians"
 ---
 
 {{< drg/requirement number="4b" >}}

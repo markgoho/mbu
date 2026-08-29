@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Fibers, Pulp, and Bleaching"
+title: "Fibers, Pulp, and Bleaching"
 layout: "guide"
-group_title: "From Tree Fiber to Pulp"
+group_title: "3. From Tree Fiber to Pulp"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/pulp-and-paper/guide/req2/"
-prev_title: "Req 2 — Forests, Fiber, and Stewardship"
+prev_title: "Forests, Fiber, and Stewardship"
 next: "/merit-badges/pulp-and-paper/guide/req4/"
-next_title: "Req 4 — From Pulp to Paper"
+next_title: "From Pulp to Paper"
 ---
 
 {{< drg/requirement number="3" >}}

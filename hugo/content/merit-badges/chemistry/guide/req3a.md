@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — The Maillard Reaction"
+title: "The Maillard Reaction"
 layout: guide
-group_title: "Chemistry & Cooking"
+group_title: "3. Chemistry & Cooking"
 req_number: "3a"
 prev: "/merit-badges/chemistry/guide/req2c/"
-prev_title: "Req 2c — Alcohol & Microbes"
+prev_title: "Alcohol & Microbes"
 next: "/merit-badges/chemistry/guide/req3b/"
-next_title: "Req 3b — pH & Indicators"
+next_title: "pH & Indicators"
 ---
 
 {{< drg/requirement number="3a" >}}

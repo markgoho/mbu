@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Choosing Your Optics"
+title: "Choosing Your Optics"
 layout: guide
-group_title: "Optics & Gear"
+group_title: "3. Optics & Gear"
 req_number: "3d"
 prev: "/merit-badges/bird-study/guide/req3c/"
-prev_title: "Req 3c — Lens Care"
+prev_title: "Lens Care"
 next: "/merit-badges/bird-study/guide/req4/"
-next_title: "Req 4 — Using a Field Guide"
+next_title: "Using a Field Guide"
 ---
 
 {{< drg/requirement number="3d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — From Fiber to Fabric"
+title: "From Fiber to Fabric"
 layout: "guide"
-group_title: "Fibers, Yarns, and Fabrics"
+group_title: "2. Fibers, Yarns, and Fabrics"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/textile/guide/req1/"
-prev_title: "Req 1 — Why Textiles Matter"
+prev_title: "Why Textiles Matter"
 next: "/merit-badges/textile/guide/req3/"
-next_title: "Req 3 — Pick Your Two Projects"
+next_title: "Pick Your Two Projects"
 ---
 
 {{< drg/requirement number="2" >}}

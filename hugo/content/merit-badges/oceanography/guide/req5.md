@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Seawater Chemistry"
+title: "Seawater Chemistry"
 layout: "guide"
-group_title: "Ocean Chemistry"
+group_title: "5. Ocean Chemistry"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/oceanography/guide/req4/"
-prev_title: "Req 4 — The Shape of the Seafloor"
+prev_title: "The Shape of the Seafloor"
 next: "/merit-badges/oceanography/guide/req6/"
-next_title: "Req 6 — Life in Seawater"
+next_title: "Life in Seawater"
 ---
 
 {{< drg/requirement number="5" >}}

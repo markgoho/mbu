@@ -1,12 +1,12 @@
 ---
-title: "Req 4e — Where Records Live"
+title: "Where Records Live"
 layout: guide
-group_title: "Records and Research"
+group_title: "4. Records and Research"
 req_number: "4e"
 prev: "/merit-badges/genealogy/guide/req4cd/"
-prev_title: "Req 4c–4d — Finding and Evaluating a Document"
+prev_title: "Finding and Evaluating a Document"
 next: "/merit-badges/genealogy/guide/req5/"
-next_title: "Req 5 — Research Helpers Overview"
+next_title: "Research Helpers Overview"
 ---
 
 {{< drg/requirement number="4e" >}}

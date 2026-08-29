@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Plotting Your Survey Map"
+title: "Plotting Your Survey Map"
 layout: "guide"
-group_title: "Mapmaking"
+group_title: "3. Mapmaking"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/surveying/guide/req2/"
-prev_title: "Req 2 — Radial Measurements and GPS Checks"
+prev_title: "Radial Measurements and GPS Checks"
 next: "/merit-badges/surveying/guide/req4/"
-next_title: "Req 4 — Finding Elevations from a Benchmark"
+next_title: "Finding Elevations from a Benchmark"
 ---
 
 {{< drg/requirement number="3" >}}

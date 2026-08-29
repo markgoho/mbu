@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Horse and Barn Safety"
+title: "Horse and Barn Safety"
 layout: guide
-group_title: "Horse and Barn Safety"
+group_title: "1. Horse and Barn Safety"
 req_number: "1"
 prev: "/merit-badges/horsemanship/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/horsemanship/guide/req2/"
-next_title: "Req 2 — Parts of the Horse"
+next_title: "Parts of the Horse"
 ---
 
 {{< drg/requirement number="1" >}}

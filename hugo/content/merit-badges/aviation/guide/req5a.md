@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Pilot Certificates"
+title: "Pilot Certificates"
 layout: guide
-group_title: "Aviation Careers"
+group_title: "5. Aviation Careers"
 req_number: "5a"
 prev: "/merit-badges/aviation/guide/req4/"
-prev_title: "Req 4 — Airport Operations"
+prev_title: "Airport Operations"
 next: "/merit-badges/aviation/guide/req5b/"
-next_title: "Req 5b — Instrument Rating"
+next_title: "Instrument Rating"
 ---
 
 {{< drg/requirement number="5a" >}}

@@ -1,13 +1,13 @@
 ---
 title: "Option B Overview"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B"
 req_path: "2.B"
 prev: "/merit-badges/shotgun-shooting/guide/req2Aj/"
-prev_title: "Req 2A-j — Shooting Moving Targets"
+prev_title: "Shooting Moving Targets"
 next: "/merit-badges/shotgun-shooting/guide/req2Ba/"
-next_title: "Req 2B-a — History of the Muzzleloading Shotgun"
+next_title: "History of the Muzzleloading Shotgun"
 ---
 
 {{< drg/requirement number="2" option="Muzzleloading Shotgun Shooting" >}}

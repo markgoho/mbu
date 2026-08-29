@@ -1,13 +1,13 @@
 ---
-title: "Req 5f — Photograph a Person Intentionally"
+title: "Photograph a Person Intentionally"
 layout: "guide"
-group_title: "Field Practice: Requirement 5"
+group_title: "5. Field Practice: Requirement 5"
 req_number: "5f"
 req_path: "5.f"
 prev: "/merit-badges/photography/guide/req5e/"
-prev_title: "Req 5e — Notice the Outdoors"
+prev_title: "Notice the Outdoors"
 next: "/merit-badges/photography/guide/req6/"
-next_title: "Req 6 — Edit for Impact"
+next_title: "Edit for Impact"
 ---
 
 {{< drg/requirement number="5f" >}}

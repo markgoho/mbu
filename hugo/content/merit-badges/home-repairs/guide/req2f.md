@@ -1,12 +1,12 @@
 ---
-title: "Req 2f — Replacing a Window Pane"
+title: "Replacing a Window Pane"
 layout: guide
-group_title: "Outdoor Repairs"
+group_title: "2. Outdoor Repairs"
 req_number: "2f"
 prev: "/merit-badges/home-repairs/guide/req2e/"
-prev_title: "Req 2e — Screen Repair"
+prev_title: "Screen Repair"
 next: "/merit-badges/home-repairs/guide/req3/"
-next_title: "Req 3 — Shop and Structure Projects"
+next_title: "Shop and Structure Projects"
 ---
 
 {{< drg/requirement number="2f" >}}

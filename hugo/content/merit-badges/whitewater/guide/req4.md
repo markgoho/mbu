@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Pick Your Practice Track"
+title: "Pick Your Practice Track"
 layout: "guide"
-group_title: "Calm-Water Skill Building"
+group_title: "4. Calm-Water Skill Building"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/whitewater/guide/req3b/"
-prev_title: "Req 3b — Kayak Skills Check"
+prev_title: "Kayak Skills Check"
 next: "/merit-badges/whitewater/guide/req4a/"
-next_title: "Req 4a — Tandem Canoe Control"
+next_title: "Tandem Canoe Control"
 ---
 
 {{< drg/requirement number="4" >}}

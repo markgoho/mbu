@@ -1,13 +1,13 @@
 ---
-title: "Req 7c3 — Bindings & Leashes"
+title: "Bindings & Leashes"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c3"
 req_path: "7.c.3"
 prev: "/merit-badges/snow-sports/guide/req7c2/"
-prev_title: "Req 7c2 — Equipment Selection"
+prev_title: "Equipment Selection"
 next: "/merit-badges/snow-sports/guide/req7c4/"
-next_title: "Req 7c4 — Types of Snowboards"
+next_title: "Types of Snowboards"
 ---
 
 {{< drg/requirement number="7c3" >}}

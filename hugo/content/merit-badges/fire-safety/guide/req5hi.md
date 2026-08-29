@@ -1,12 +1,12 @@
 ---
-title: "Req 5h–5i — Gas, Smoke & Reporting Fires"
+title: "Gas, Smoke & Reporting Fires"
 layout: guide
-group_title: "Home Fire Safety"
+group_title: "5. Home Fire Safety"
 req_number: "5h"
 prev: "/merit-badges/fire-safety/guide/req5g/"
-prev_title: "Req 5g — Home Fire Escape Plan"
+prev_title: "Home Fire Escape Plan"
 next: "/merit-badges/fire-safety/guide/req6/"
-next_title: "Req 6 — Safe Storage & Handling"
+next_title: "Safe Storage & Handling"
 ---
 
  {{< drg/requirement number="5h" >}}

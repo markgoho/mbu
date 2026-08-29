@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Flight Operations"
+title: "Flight Operations"
 layout: guide
-group_title: "Flight Operations"
+group_title: "3. Flight Operations"
 req_number: "3"
 prev: "/merit-badges/aviation/guide/req2/"
-prev_title: "Req 2 — Build & Fly"
+prev_title: "Build & Fly"
 next: "/merit-badges/aviation/guide/req4/"
-next_title: "Req 4 — Airport Operations"
+next_title: "Airport Operations"
 ---
 
 {{< drg/requirement number="3" >}}

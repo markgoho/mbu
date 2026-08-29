@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Build, Launch, Recover"
+title: "Build, Launch, Recover"
 layout: "guide"
-group_title: "Model Rocketry"
+group_title: "3. Model Rocketry"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/space-exploration/guide/req2/"
-prev_title: "Req 2 — Collector Card Mission"
+prev_title: "Collector Card Mission"
 next: "/merit-badges/space-exploration/guide/req4/"
-next_title: "Req 4 — Rockets, Orbits, and Images"
+next_title: "Rockets, Orbits, and Images"
 ---
 
 {{< drg/requirement number="3" >}}

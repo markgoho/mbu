@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Pack Inspection"
+title: "Pack Inspection"
 layout: guide
-group_title: "Clothing & Gear"
+group_title: "5. Clothing & Gear"
 req_number: "5e"
 prev: "/merit-badges/camping/guide/req5d/"
-prev_title: "Req 5d — Outdoor Essentials"
+prev_title: "Outdoor Essentials"
 next: "/merit-badges/camping/guide/req6a/"
-next_title: "Req 6a — Types of Tents"
+next_title: "Types of Tents"
 ---
 
 {{< drg/requirement number="5e" >}}

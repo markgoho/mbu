@@ -4,89 +4,89 @@ layout: "guide"
 badge_name: "Oceanography"
 group_title: "Getting Started"
 next: "/merit-badges/oceanography/guide/req1/"
-next_title: "Req 1 — Branches of Oceanography"
+next_title: "Branches of Oceanography"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/oceanography/guide/"
         is_sub: false
-  - group_title: "What Oceanography Covers"
+  - group_title: "1. What Oceanography Covers"
     items:
-      - title: "Req 1 — Branches of Oceanography"
+      - title: "1. Branches of Oceanography"
         url: "/merit-badges/oceanography/guide/req1/"
         is_sub: false
-  - group_title: "How the Ocean Works"
+  - group_title: "2. How the Ocean Works"
     items:
-      - title: "Req 2 — Seawater, Currents & Climate"
+      - title: "2. Seawater, Currents & Climate"
         url: "/merit-badges/oceanography/guide/req2/"
         is_sub: false
-  - group_title: "Ocean Motion"
+  - group_title: "3. Ocean Motion"
     items:
-      - title: "Req 3 — Waves, Breakers & Rip Currents"
+      - title: "3. Waves, Breakers & Rip Currents"
         url: "/merit-badges/oceanography/guide/req3/"
         is_sub: false
-  - group_title: "Underwater Landscapes"
+  - group_title: "4. Underwater Landscapes"
     items:
-      - title: "Req 4 — The Shape of the Seafloor"
+      - title: "4. The Shape of the Seafloor"
         url: "/merit-badges/oceanography/guide/req4/"
         is_sub: false
-  - group_title: "Ocean Chemistry"
+  - group_title: "5. Ocean Chemistry"
     items:
-      - title: "Req 5 — Seawater Chemistry"
+      - title: "5. Seawater Chemistry"
         url: "/merit-badges/oceanography/guide/req5/"
         is_sub: false
-  - group_title: "Ocean Ecology"
+  - group_title: "6. Ocean Ecology"
     items:
-      - title: "Req 6 — Life in Seawater"
+      - title: "6. Life in Seawater"
         url: "/merit-badges/oceanography/guide/req6/"
         is_sub: false
-  - group_title: "Hands-On Investigation"
+  - group_title: "7. Hands-On Investigation"
     items:
-      - title: "Req 7 — Choose an Ocean Investigation"
+      - title: "7. Choose an Ocean Investigation"
         url: "/merit-badges/oceanography/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Catch & Identify Plankton"
+      - title: "a Catch & Identify Plankton"
         url: "/merit-badges/oceanography/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Build a Coral Reef Model"
+      - title: "b Build a Coral Reef Model"
         url: "/merit-badges/oceanography/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Track Water Conditions"
+      - title: "c Track Water Conditions"
         url: "/merit-badges/oceanography/guide/req7c/"
         is_sub: true
-      - title: "Req 7d — Model Sediment Movement"
+      - title: "d Model Sediment Movement"
         url: "/merit-badges/oceanography/guide/req7d/"
         is_sub: true
-      - title: "Req 7e — Build a Wave Tank"
+      - title: "e Build a Wave Tank"
         url: "/merit-badges/oceanography/guide/req7e/"
         is_sub: true
-      - title: "Req 7f — Track Satellite Images"
+      - title: "f Track Satellite Images"
         url: "/merit-badges/oceanography/guide/req7f/"
         is_sub: true
-  - group_title: "Share What You Learned"
+  - group_title: "8. Share What You Learned"
     items:
-      - title: "Req 8 — Choose a Reporting Project"
+      - title: "8. Choose a Reporting Project"
         url: "/merit-badges/oceanography/guide/req8/"
         is_sub: false
-      - title: "Req 8a — Read and Report on a Book"
+      - title: "a Read and Report on a Book"
         url: "/merit-badges/oceanography/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Visit an Ocean Science Site"
+      - title: "b Visit an Ocean Science Site"
         url: "/merit-badges/oceanography/guide/req8b/"
         is_sub: true
-      - title: "Req 8b1 — Tour a Research Ship"
+      - title: "b Tour a Research Ship"
         url: "/merit-badges/oceanography/guide/req8b1/"
         is_sub: true
-      - title: "Req 8b2 — Visit a Marine Lab or Aquarium"
+      - title: "b Visit a Marine Lab or Aquarium"
         url: "/merit-badges/oceanography/guide/req8b2/"
         is_sub: true
-      - title: "Req 8c — Give an Oceanography Speech"
+      - title: "c Give an Oceanography Speech"
         url: "/merit-badges/oceanography/guide/req8c/"
         is_sub: true
-  - group_title: "How Scientists Investigate"
+  - group_title: "9. How Scientists Investigate"
     items:
-      - title: "Req 9 — Tools of Ocean Science"
+      - title: "9. Tools of Ocean Science"
         url: "/merit-badges/oceanography/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

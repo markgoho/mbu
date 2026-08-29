@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Interviewing a Professional"
+title: "Interviewing a Professional"
 layout: guide
-group_title: "Career Exploration"
+group_title: "10. Career Exploration"
 req_number: "10"
 prev: "/merit-badges/crime-prevention/guide/req9/"
-prev_title: "Req 9 — Online Crime and You"
+prev_title: "Online Crime and You"
 next: "/merit-badges/crime-prevention/guide/req11/"
-next_title: "Req 11 — Crime Prevention Careers"
+next_title: "Crime Prevention Careers"
 ---
 
 {{< drg/requirement number="10" >}}

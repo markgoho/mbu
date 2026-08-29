@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Safety and Hazards"
+title: "Safety and Hazards"
 layout: "guide"
-group_title: "Safety Foundations"
+group_title: "1. Safety Foundations"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/safety/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/safety/guide/req2/"
-next_title: "Req 2 — Home Safety Plans"
+next_title: "Home Safety Plans"
 ---
 
 {{< drg/requirement number="1" >}}

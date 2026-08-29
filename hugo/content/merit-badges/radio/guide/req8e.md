@@ -1,13 +1,13 @@
 ---
-title: "Req 8e — FRS & GMRS Overview"
+title: "FRS & GMRS Overview"
 layout: "guide"
-group_title: "Option E: FRS & GMRS"
+group_title: "8. Option E: FRS & GMRS"
 req_number: "8e"
 req_path: "8.e"
 prev: "/merit-badges/radio/guide/req8d5/"
-prev_title: "Req 8d5 — Map Your Hunt"
+prev_title: "Map Your Hunt"
 next: "/merit-badges/radio/guide/req8e1/"
-next_title: "Req 8e1 — FRS vs. GMRS vs. Others"
+next_title: "FRS vs. GMRS vs. Others"
 guide_nav:
   - group_title: "Getting Started"
     items:

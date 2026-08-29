@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Suppression Tools & Equipment"
+title: "Suppression Tools & Equipment"
 layout: "guide"
-group_title: "Tools of the Trade"
+group_title: "8. Tools of the Trade"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/wildland-fire-management/guide/req7b/"
-prev_title: "Req 7b — The Incident Command System"
+prev_title: "The Incident Command System"
 next: "/merit-badges/wildland-fire-management/guide/req9/"
-next_title: "Req 9 — Choose Your Project"
+next_title: "Choose Your Project"
 ---
 
 {{< drg/requirement number="8" >}}

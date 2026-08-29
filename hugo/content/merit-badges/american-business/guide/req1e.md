@@ -1,12 +1,12 @@
 ---
-title: "Req 1e — Business & the Economy"
+title: "Business & the Economy"
 layout: guide
-group_title: "Foundations of American Business"
+group_title: "1. Foundations of American Business"
 req_number: "1e"
 prev: "/merit-badges/american-business/guide/req1d/"
-prev_title: "Req 1d — Labor Unions"
+prev_title: "Labor Unions"
 next: "/merit-badges/american-business/guide/req2a/"
-next_title: "Req 2a — Financial Statements"
+next_title: "Financial Statements"
 ---
 
 {{< drg/requirement number="1e" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Process Selection and Setup"
+title: "Process Selection and Setup"
 layout: "guide"
-group_title: "Choosing a Process"
+group_title: "5. Choosing a Process"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/welding/guide/req4/"
-prev_title: "Req 4 — Mechanical and Thermal Cutting"
+prev_title: "Mechanical and Thermal Cutting"
 next: "/merit-badges/welding/guide/req6/"
-next_title: "Req 6 — Beads and Basic Joints"
+next_title: "Beads and Basic Joints"
 ---
 
 {{< drg/requirement number="5" >}}

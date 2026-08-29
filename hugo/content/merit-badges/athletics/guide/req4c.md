@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Amateur vs. Professional"
+title: "Amateur vs. Professional"
 layout: guide
-group_title: "Rules & Sportsmanship"
+group_title: "4. Rules & Sportsmanship"
 req_number: "4c"
 prev: "/merit-badges/athletics/guide/req4b/"
-prev_title: "Req 4b — Warm-Ups & Cool-Downs"
+prev_title: "Warm-Ups & Cool-Downs"
 next: "/merit-badges/athletics/guide/req4d/"
-next_title: "Req 4d — Sportsmanship"
+next_title: "Sportsmanship"
 ---
 
 {{< drg/requirement number="4c" >}}

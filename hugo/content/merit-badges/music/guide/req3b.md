@@ -1,13 +1,13 @@
 ---
-title: "Req 3b — Family Music Interview"
+title: "Family Music Interview"
 layout: "guide"
-group_title: "Choose Two Music Experiences"
+group_title: "3. Choose Two Music Experiences"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/music/guide/req3a/"
-prev_title: "Req 3a — Listen and Describe"
+prev_title: "Listen and Describe"
 next: "/merit-badges/music/guide/req3c/"
-next_title: "Req 3c — Ensemble or Solo Service"
+next_title: "Ensemble or Solo Service"
 ---
 
 {{< drg/requirement number="3b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Bicentennial Coins"
+title: "Bicentennial Coins"
 layout: guide
-group_title: "Commemorative Coins"
+group_title: "5. Commemorative Coins"
 req_number: "5"
 prev: "/merit-badges/coin-collecting/guide/req4f/"
-prev_title: "Req 4f — The Dollar Coin"
+prev_title: "The Dollar Coin"
 next: "/merit-badges/coin-collecting/guide/req6/"
-next_title: "Req 6 — U.S. Currency"
+next_title: "U.S. Currency"
 ---
 
 {{< drg/requirement number="5" >}}

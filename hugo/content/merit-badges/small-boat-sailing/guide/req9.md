@@ -1,11 +1,11 @@
 ---
-title: "Req 9 — Sailing Terms and Sailboat Types"
+title: "Sailing Terms and Sailboat Types"
 layout: "guide"
-group_title: "Sailing Knowledge & Vocabulary"
+group_title: "9. Sailing Knowledge & Vocabulary"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/small-boat-sailing/guide/req8/"
-prev_title: "Req 8 — Care for Boat and Gear"
+prev_title: "Care for Boat and Gear"
 next: "/merit-badges/small-boat-sailing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

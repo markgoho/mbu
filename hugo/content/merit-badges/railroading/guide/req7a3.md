@@ -1,13 +1,13 @@
 ---
-title: "Req 7a3 — Scales and Gauges"
+title: "Scales and Gauges"
 layout: "guide"
-group_title: "Model Railroading Option"
+group_title: "7. Model Railroading Option"
 req_number: "7a3"
 req_path: "7.a.3"
 prev: "/merit-badges/railroading/guide/req7a2/"
-prev_title: "Req 7a2 — Build a Rolling Stock Kit"
+prev_title: "Build a Rolling Stock Kit"
 next: "/merit-badges/railroading/guide/req7a4/"
-next_title: "Req 7a4 — Makers and Magazines"
+next_title: "Makers and Magazines"
 ---
 
 {{< drg/requirement number="7a3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Outdoor Ethics in Mammal Study"
+title: "Outdoor Ethics in Mammal Study"
 layout: "guide"
-group_title: "Outdoor Ethics"
+group_title: "6. Outdoor Ethics"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/mammal-study/guide/req5/"
-prev_title: "Req 5 — Project for Mammal Numbers"
+prev_title: "Project for Mammal Numbers"
 next: "/merit-badges/mammal-study/guide/req7/"
-next_title: "Req 7 — Choose Your Future Path"
+next_title: "Choose Your Future Path"
 ---
 
 {{< drg/requirement number="6" >}}

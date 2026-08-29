@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Ohm's Law"
+title: "Ohm's Law"
 layout: guide
-group_title: "Measurement & Components"
+group_title: "5. Measurement & Components"
 req_number: "5a"
 prev: "/merit-badges/electronics/guide/req4c/"
-prev_title: "Req 4c — Build a Circuit Project"
+prev_title: "Build a Circuit Project"
 next: "/merit-badges/electronics/guide/req5b/"
-next_title: "Req 5b — Test Equipment"
+next_title: "Test Equipment"
 ---
 
 {{< drg/requirement number="5a" >}}

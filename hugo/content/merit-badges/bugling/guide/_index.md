@@ -4,41 +4,41 @@ layout: guide
 badge_name: "Bugling"
 group_title: "Getting Started"
 next: "/merit-badges/bugling/guide/req1/"
-next_title: "Req 1 — History of the Bugle"
+next_title: "History of the Bugle"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/bugling/guide/"
-  - group_title: "History of the Bugle"
+  - group_title: "1. History of the Bugle"
     items:
-      - title: "Req 1 — History of the Bugle"
+      - title: "1. History of the Bugle"
         url: "/merit-badges/bugling/guide/req1/"
         is_sub: false
-  - group_title: "How the Bugle Works"
+  - group_title: "2. How the Bugle Works"
     items:
-      - title: "Req 2a — How It Makes Sound"
+      - title: "a How It Makes Sound"
         url: "/merit-badges/bugling/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Compose a Bugle Call"
+      - title: "b Compose a Bugle Call"
         url: "/merit-badges/bugling/guide/req2b/"
         is_sub: true
-  - group_title: "Sounding Bugle Calls"
+  - group_title: "3. Sounding Bugle Calls"
     items:
-      - title: "Req 3 — Sound Ten Calls"
+      - title: "3. Sound Ten Calls"
         url: "/merit-badges/bugling/guide/req3/"
         is_sub: false
-      - title: "Req 4 — When Calls Are Used"
+      - title: "4. When Calls Are Used"
         url: "/merit-badges/bugling/guide/req4/"
         is_sub: false
-  - group_title: "Care & Maintenance"
+  - group_title: "5. Care & Maintenance"
     items:
-      - title: "Req 5 — Caring for Your Bugle"
+      - title: "5. Caring for Your Bugle"
         url: "/merit-badges/bugling/guide/req5/"
         is_sub: false
-  - group_title: "Serving as Troop Bugler"
+  - group_title: "6. Serving as Troop Bugler"
     items:
-      - title: "Req 6 — Three Months of Service"
+      - title: "6. Three Months of Service"
         url: "/merit-badges/bugling/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

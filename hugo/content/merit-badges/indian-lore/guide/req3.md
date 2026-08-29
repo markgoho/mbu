@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Language, Place, and Leaders"
+title: "Language, Place, and Leaders"
 layout: guide
-group_title: "Language, Place, and Leaders"
+group_title: "3. Language, Place, and Leaders"
 req_number: "3"
 prev: "/merit-badges/indian-lore/guide/req2/"
-prev_title: "Req 2 — Researching a Nation"
+prev_title: "Researching a Nation"
 next: "/merit-badges/indian-lore/guide/req4/"
-next_title: "Req 4 — Influence and Exchange"
+next_title: "Influence and Exchange"
 ---
 
 {{< drg/requirement number="3" >}}

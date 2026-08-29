@@ -1,13 +1,13 @@
 ---
-title: "Req 2b1 — Brownsea Island"
+title: "Brownsea Island"
 layout: "guide"
-group_title: "Scouting Milestones"
+group_title: "2. Scouting Milestones"
 req_number: "2b1"
 req_path: "2.b.1"
 prev: "/merit-badges/scouting-heritage/guide/req2b/"
-prev_title: "Req 2b — Choose Two Scouting Milestones"
+prev_title: "Choose Two Scouting Milestones"
 next: "/merit-badges/scouting-heritage/guide/req2b2/"
-next_title: "Req 2b2 — First World Scout Jamboree"
+next_title: "First World Scout Jamboree"
 ---
 
 {{< drg/requirement number="2b1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — The Physician's Oath"
+title: "The Physician's Oath"
 layout: guide
-group_title: "Medical Ethics"
+group_title: "6. Medical Ethics"
 req_number: "6"
 prev: "/merit-badges/health-care-professions/guide/req5/"
-prev_title: "Req 5 — Making the Most of a Workplace Visit"
+prev_title: "Making the Most of a Workplace Visit"
 next: "/merit-badges/health-care-professions/guide/req7/"
-next_title: "Req 7 — Confidentiality and HIPAA"
+next_title: "Confidentiality and HIPAA"
 ---
 
 {{< drg/requirement number="6" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Four Months of Care"
+title: "Four Months of Care"
 layout: "guide"
-group_title: "Building Daily Pet Care Habits"
+group_title: "1. Building Daily Pet Care Habits"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/pets/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/pets/guide/req2/"
-next_title: "Req 2 — Know Your Pet Well"
+next_title: "Know Your Pet Well"
 ---
 
 {{< drg/requirement number="1" >}}

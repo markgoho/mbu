@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Dye, Stain, and Finish"
+title: "Dye, Stain, and Finish"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3e"
 prev: "/merit-badges/leatherwork/guide/req3d/"
-prev_title: "Req 3d — Carving and Stamping Designs"
+prev_title: "Carving and Stamping Designs"
 next: "/merit-badges/leatherwork/guide/req3f/"
-next_title: "Req 3f — Lacing and Stitching"
+next_title: "Lacing and Stitching"
 ---
 
 {{< drg/requirement number="3e" >}}

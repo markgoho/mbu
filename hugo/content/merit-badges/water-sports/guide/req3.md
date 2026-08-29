@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Pass the Swimmer Test"
+title: "Pass the Swimmer Test"
 layout: "guide"
-group_title: "Building Safe Habits"
+group_title: "1. Building Safe Habits"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/water-sports/guide/req2/"
-prev_title: "Req 2 — Gear and Boat Safety"
+prev_title: "Gear and Boat Safety"
 next: "/merit-badges/water-sports/guide/req4/"
-next_title: "Req 4 — Hand Signals That Keep You Safe"
+next_title: "Hand Signals That Keep You Safe"
 ---
 
 {{< drg/requirement number="3" >}}

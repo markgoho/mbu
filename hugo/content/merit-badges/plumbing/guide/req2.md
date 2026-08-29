@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Home Water Systems"
+title: "Home Water Systems"
 layout: "guide"
-group_title: "Water Supply and Drainage"
+group_title: "2. Water Supply and Drainage"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/plumbing/guide/req1/"
-prev_title: "Req 1 — Healthy Plumbing Habits"
+prev_title: "Healthy Plumbing Habits"
 next: "/merit-badges/plumbing/guide/req3/"
-next_title: "Req 3 — Essential Plumbing Tools"
+next_title: "Essential Plumbing Tools"
 ---
 
 {{< drg/requirement number="2" >}}

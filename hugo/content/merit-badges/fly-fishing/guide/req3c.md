@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Leader to Fly Line"
+title: "Leader to Fly Line"
 layout: guide
-group_title: "Gear & Rigging"
+group_title: "2. Gear & Rigging"
 req_number: "3c"
 prev: "/merit-badges/fly-fishing/guide/req3b/"
-prev_title: "Req 3b — Backing to the Fly Line"
+prev_title: "Backing to the Fly Line"
 next: "/merit-badges/fly-fishing/guide/req3d/"
-next_title: "Req 3d — Tippet Connections"
+next_title: "Tippet Connections"
 ---
 
 {{< drg/requirement number="3c" >}}

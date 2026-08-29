@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Systems Engineering Design Project"
+title: "Systems Engineering Design Project"
 layout: guide
-group_title: "The Design Process"
+group_title: "5. The Design Process"
 req_number: "5"
 prev: "/merit-badges/engineering/guide/req4/"
-prev_title: "Req 4 — Interview with an Engineer"
+prev_title: "Interview with an Engineer"
 next: "/merit-badges/engineering/guide/req6/"
-next_title: "Req 6 — Engineering Activities"
+next_title: "Engineering Activities"
 ---
 
 {{< drg/requirement number="5" >}}

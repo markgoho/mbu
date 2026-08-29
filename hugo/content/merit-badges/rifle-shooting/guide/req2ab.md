@@ -1,13 +1,13 @@
 ---
-title: "Req 2ab — Safe Storage and Handling"
+title: "Safe Storage and Handling"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2ab"
 req_path: "2.a.b"
 prev: "/merit-badges/rifle-shooting/guide/req2aa/"
-prev_title: "Req 2aa — Three Main Parts of a Rifle"
+prev_title: "Three Main Parts of a Rifle"
 next: "/merit-badges/rifle-shooting/guide/req2ac/"
-next_title: "Req 2ac — Two Types of Cartridges"
+next_title: "Two Types of Cartridges"
 ---
 
 {{< drg/requirement number="2ab" >}}

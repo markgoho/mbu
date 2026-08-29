@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — The History of Video Gaming and Esports"
+title: "The History of Video Gaming and Esports"
 layout: "guide"
-group_title: "Where Gaming Came From"
+group_title: "1. Where Gaming Came From"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/competitive-gaming/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/competitive-gaming/guide/req2/"
-next_title: "Req 2 — Living the Scout Oath and Law Online"
+next_title: "Living the Scout Oath and Law Online"
 ---
 
 {{< drg/requirement number="1" >}}

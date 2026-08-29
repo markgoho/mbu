@@ -1,13 +1,13 @@
 ---
-title: "Req 7c — Modern Fossil Fuel Plants"
+title: "Modern Fossil Fuel Plants"
 layout: "guide"
-group_title: "Fossil Fuel Power Plants"
+group_title: "7. Fossil Fuel Power Plants"
 req_number: "7c"
 req_path: "7.c"
 prev: "/merit-badges/energy/guide/req7b/"
-prev_title: "Req 7b — Combined Heat and Power"
+prev_title: "Combined Heat and Power"
 next: "/merit-badges/energy/guide/req7d/"
-next_title: "Req 7d — Fuel Cells"
+next_title: "Fuel Cells"
 ---
 
 {{< drg/inherited-requirement number="7c" req_path="7.c" topic="Fossil fuel power plants" />}}

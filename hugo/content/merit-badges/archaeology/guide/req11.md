@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — Sharing Archaeology"
+title: "Sharing Archaeology"
 layout: guide
-group_title: "The Working Archaeologist"
+group_title: "9. The Working Archaeologist"
 req_number: "11"
 prev: "/merit-badges/archaeology/guide/req10/"
-prev_title: "Req 10 — Fieldwork Experience"
+prev_title: "Fieldwork Experience"
 next: "/merit-badges/archaeology/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

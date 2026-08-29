@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Astronomy Careers or Hobbies"
+title: "Astronomy Careers or Hobbies"
 layout: guide
-group_title: "Careers & Hobbies"
+group_title: "9. Careers & Hobbies"
 req_number: "9"
 prev: "/merit-badges/astronomy/guide/req8/"
-prev_title: "Req 8 — Choose Your Adventure"
+prev_title: "Choose Your Adventure"
 next: "/merit-badges/astronomy/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

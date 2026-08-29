@@ -1,13 +1,13 @@
 ---
-title: "Req 1a — Field Injuries and Conditions"
+title: "Field Injuries and Conditions"
 layout: "guide"
-group_title: "Field Safety and Self-Care"
+group_title: "1. Field Safety and Self-Care"
 req_number: "1a"
 req_path: "1.a"
 prev: "/merit-badges/search-and-rescue/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/search-and-rescue/guide/req1b/"
-next_title: "Req 1b — Basic Essentials That Keep You Alive"
+next_title: "Basic Essentials That Keep You Alive"
 ---
 
 {{< drg/requirement number="1a" >}}

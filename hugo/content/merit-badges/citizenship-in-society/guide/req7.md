@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Community Impact Interview"
+title: "Community Impact Interview"
 layout: guide
-group_title: "Learning from Leaders"
+group_title: "7. Learning from Leaders"
 req_number: "7"
 prev: "/merit-badges/citizenship-in-society/guide/req6/"
-prev_title: "Req 6 — Connecting Across Differences"
+prev_title: "Connecting Across Differences"
 next: "/merit-badges/citizenship-in-society/guide/req8/"
-next_title: "Req 8 — A Positive Turning Point"
+next_title: "A Positive Turning Point"
 ---
 
 {{< drg/requirement number="7" >}}

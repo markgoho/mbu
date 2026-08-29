@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Safety, First Aid, and Planning"
+title: "Safety, First Aid, and Planning"
 layout: guide
-group_title: "Safe Adventures"
+group_title: "1. Safe Adventures"
 req_number: "1"
 prev: "/merit-badges/geocaching/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/geocaching/guide/req2/"
-next_title: "Req 2 — Geocaching Etiquette and Leave No Trace"
+next_title: "Geocaching Etiquette and Leave No Trace"
 ---
 
 {{< drg/requirement number="1" >}}

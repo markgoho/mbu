@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Carving Safely"
+title: "Carving Safely"
 layout: "guide"
-group_title: "Safety and Readiness"
+group_title: "1. Safety and Readiness"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/wood-carving/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/wood-carving/guide/req2/"
-next_title: "Req 2 — Totin' Chip and Safety Checklist"
+next_title: "Totin"
 ---
 
 {{< drg/requirement number="1" >}}

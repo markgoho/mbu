@@ -1,13 +1,13 @@
 ---
-title: "Req 8b — Horticulture Roadmap"
+title: "Horticulture Roadmap"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/plant-science/guide/req8a5e/"
-prev_title: "Req 8a5e — Oil Crops"
+prev_title: "Oil Crops"
 next: "/merit-badges/plant-science/guide/req8b1/"
-next_title: "Req 8b1 — Learning by Visiting Growing Spaces"
+next_title: "Visit a Horticultural Site"
 ---
 
 {{< drg/requirement number="8" option="Horticulture" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5c3 — Making & Pouring Your Molds"
+title: "Making & Pouring Your Molds"
 layout: "guide"
-group_title: "Founder"
+group_title: "5. Founder"
 req_number: "5c3"
 req_path: "5.c.3"
 prev: "/merit-badges/metalwork/guide/req5c2/"
-prev_title: "Req 5c2 — Sketching Your Cast Objects"
+prev_title: "Sketching Your Cast Objects"
 next: "/merit-badges/metalwork/guide/req5d/"
-next_title: "Req 5d — Blacksmith"
+next_title: "Blacksmith"
 ---
 
 {{< drg/requirement number="5c3" >}}

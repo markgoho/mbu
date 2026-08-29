@@ -1,12 +1,12 @@
 ---
-title: "Requirement 3a — Friction Ridges on the Body"
+title: "Friction Ridges on the Body"
 layout: guide
-group_title: "The Science of Fingerprints"
+group_title: "3. The Science of Fingerprints"
 req_number: "3a"
 prev: "/merit-badges/fingerprinting/guide/req2b/"
-prev_title: "Requirement 2b — Authentication in Daily Life"
+prev_title: "Authentication in Daily Life"
 next: "/merit-badges/fingerprinting/guide/req3b/"
-next_title: "Requirement 3b — Principles of Fingerprint Science"
+next_title: "Principles of Fingerprint Science"
 ---
 
 {{< drg/requirement number="3a" >}}

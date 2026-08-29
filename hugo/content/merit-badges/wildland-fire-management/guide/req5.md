@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Fire Behavior"
+title: "Fire Behavior"
 layout: "guide"
-group_title: "How Fire Behaves"
+group_title: "5. How Fire Behaves"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/wildland-fire-management/guide/req4b/"
-prev_title: "Req 4b — Wildfire Mitigation"
+prev_title: "Wildfire Mitigation"
 next: "/merit-badges/wildland-fire-management/guide/req6a/"
-next_title: "Req 6a — Personal Protective Equipment"
+next_title: "Personal Protective Equipment"
 ---
 
 {{< drg/requirement number="5" >}}

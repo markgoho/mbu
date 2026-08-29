@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Planning, Weather & Gear"
+title: "Planning, Weather & Gear"
 layout: "guide"
-group_title: "Before You Cast Off"
+group_title: "4. Before You Cast Off"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/small-boat-sailing/guide/req3/"
-prev_title: "Req 3 — Know Your Boat"
+prev_title: "Know Your Boat"
 next: "/merit-badges/small-boat-sailing/guide/req5/"
-next_title: "Req 5 — Read the Wind"
+next_title: "Read the Wind"
 ---
 
 {{< drg/requirement number="4" >}}

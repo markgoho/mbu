@@ -4,66 +4,66 @@ layout: "guide"
 badge_name: "Model Design and Building"
 group_title: "Getting Started"
 next: "/merit-badges/model-design-and-building/guide/req1/"
-next_title: "Req 1 — Safe Modelmaking"
+next_title: "Safe Modelmaking"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/model-design-and-building/guide/"
         is_sub: false
-  - group_title: "Safe Modelmaking"
+  - group_title: "1. Safe Modelmaking"
     items:
-      - title: "Req 1 — Safe Modelmaking"
+      - title: "1. Safe Modelmaking"
         url: "/merit-badges/model-design-and-building/guide/req1/"
         is_sub: false
-  - group_title: "Understanding Model Types"
+  - group_title: "2. Understanding Model Types"
     items:
-      - title: "Req 2 — Models, Tools, and Materials"
+      - title: "2. Models, Tools, and Materials"
         url: "/merit-badges/model-design-and-building/guide/req2/"
         is_sub: false
-  - group_title: "Project Planning"
+  - group_title: "3. Project Planning"
     items:
-      - title: "Req 3 — Planning Your Original Project"
+      - title: "3. Planning Your Original Project"
         url: "/merit-badges/model-design-and-building/guide/req3/"
         is_sub: false
-  - group_title: "Choose Your Build"
+  - group_title: "4. Choose Your Build"
     items:
-      - title: "Req 4 — Pick Your Model Path"
+      - title: "4. Pick Your Model Path"
         url: "/merit-badges/model-design-and-building/guide/req4/"
         is_sub: false
-  - group_title: "Architectural House Model"
+  - group_title: "4. Architectural House Model"
     items:
-      - title: "Req 4a — House in Miniature"
+      - title: "a House in Miniature"
         url: "/merit-badges/model-design-and-building/guide/req4a/"
         is_sub: true
-  - group_title: "Structural Framing Model"
+  - group_title: "4. Structural Framing Model"
     items:
-      - title: "Req 4b — Showing How a Building Stands"
+      - title: "b Showing How a Building Stands"
         url: "/merit-badges/model-design-and-building/guide/req4b/"
         is_sub: true
-  - group_title: "Plumbing Process Model"
+  - group_title: "4. Plumbing Process Model"
     items:
-      - title: "Req 4c — Mapping Water In and Waste Out"
+      - title: "c Mapping Water In and Waste Out"
         url: "/merit-badges/model-design-and-building/guide/req4c/"
         is_sub: true
-  - group_title: "Mechanical Device Model"
+  - group_title: "4. Mechanical Device Model"
     items:
-      - title: "Req 4d — Motion with Simple Machines"
+      - title: "d Motion with Simple Machines"
         url: "/merit-badges/model-design-and-building/guide/req4d/"
         is_sub: true
-  - group_title: "Vehicle Model"
+  - group_title: "4. Vehicle Model"
     items:
-      - title: "Req 4e — Designing a Scaled Passenger Vehicle"
+      - title: "e Designing a Scaled Passenger Vehicle"
         url: "/merit-badges/model-design-and-building/guide/req4e/"
         is_sub: true
-  - group_title: "Fantasy Spacecraft Design"
+  - group_title: "5. Fantasy Spacecraft Design"
     items:
-      - title: "Req 5 — Designing for the Big Screen"
+      - title: "5. Designing for the Big Screen"
         url: "/merit-badges/model-design-and-building/guide/req5/"
         is_sub: false
-  - group_title: "Design Careers"
+  - group_title: "6. Design Careers"
     items:
-      - title: "Req 6 — Careers in Design and Building"
+      - title: "6. Careers in Design and Building"
         url: "/merit-badges/model-design-and-building/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

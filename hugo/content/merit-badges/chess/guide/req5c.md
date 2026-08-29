@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Checkmate with Major Pieces"
+title: "Checkmate with Major Pieces"
 layout: guide
-group_title: "Tactics & Endgames"
+group_title: "5. Tactics & Endgames"
 req_number: "5c"
 prev: "/merit-badges/chess/guide/req5b/"
-prev_title: "Req 5b — Chess Tactics"
+prev_title: "Chess Tactics"
 next: "/merit-badges/chess/guide/req5d/"
-next_title: "Req 5d — King & Pawn Endgames"
+next_title: "King & Pawn Endgames"
 ---
 
 {{< drg/requirement number="5c" >}}

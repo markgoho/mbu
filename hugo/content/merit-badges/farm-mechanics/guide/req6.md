@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Maintenance Procedures"
+title: "Maintenance Procedures"
 layout: guide
-group_title: "Keeping Equipment Running"
+group_title: "5. Keeping Equipment Running"
 req_number: "6"
 prev: "/merit-badges/farm-mechanics/guide/req5/"
-prev_title: "Req 5 — Interview an Implement Dealer"
+prev_title: "Interview an Implement Dealer"
 next: "/merit-badges/farm-mechanics/guide/req7/"
-next_title: "Req 7 — Careers in Farm Mechanics"
+next_title: "Careers in Farm Mechanics"
 ---
 
 {{< drg/requirement number="6" >}}

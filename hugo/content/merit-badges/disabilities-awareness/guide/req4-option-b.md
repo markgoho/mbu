@@ -1,12 +1,12 @@
 ---
 title: "Req 4 Option B — Invisible Disability Accommodations"
 layout: guide
-group_title: "Accessibility Audits"
+group_title: "4. Accessibility Audits"
 req_number: "4"
 prev: "/merit-badges/disabilities-awareness/guide/req4-option-a/"
 prev_title: "Req 4 Option A — Visible Accessibility"
 next: "/merit-badges/disabilities-awareness/guide/req5/"
-next_title: "Req 5 — Advocacy"
+next_title: "Advocacy"
 ---
 
 {{< drg/requirement number="4" option="Option B" >}}

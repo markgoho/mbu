@@ -1,13 +1,13 @@
 ---
-title: "Req 4a1 — Bow Strokes for Tandem Canoes"
+title: "Bow Strokes for Tandem Canoes"
 layout: "guide"
-group_title: "Calm-Water Skill Building"
+group_title: "4. Calm-Water Skill Building"
 req_number: "4a1"
 req_path: "4.a.1"
 prev: "/merit-badges/whitewater/guide/req4a/"
-prev_title: "Req 4a — Tandem Canoe Control"
+prev_title: "Tandem Canoe Control"
 next: "/merit-badges/whitewater/guide/req4a2/"
-next_title: "Req 4a2 — Stern Strokes for Tandem Canoes"
+next_title: "Stern Strokes for Tandem Canoes"
 ---
 
 {{< drg/requirement number="4a1" >}}

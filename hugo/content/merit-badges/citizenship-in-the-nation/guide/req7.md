@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Exploring National Sites"
+title: "Exploring National Sites"
 layout: guide
-group_title: "Experiencing Your Nation"
+group_title: "7. Experiencing Your Nation"
 req_number: "7"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req6/"
-prev_title: "Req 6 — A Historic Speech"
+prev_title: "A Historic Speech"
 next: "/merit-badges/citizenship-in-the-nation/guide/req8/"
-next_title: "Req 8 — Contacting Congress"
+next_title: "Contacting Congress"
 ---
 
 {{< drg/requirement number="7" >}}

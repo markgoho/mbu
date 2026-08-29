@@ -1,13 +1,13 @@
 ---
-title: "Req 7b11 — Steep Hills & Difficult Conditions"
+title: "Steep Hills & Difficult Conditions"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b11"
 req_path: "7.b.11"
 prev: "/merit-badges/snow-sports/guide/req7b-10/"
-prev_title: "Req 7b10 — 4-Mile Tour"
+prev_title: "4-Mile Tour"
 next: "/merit-badges/snow-sports/guide/req7c/"
-next_title: "Req 7c — Snowboarding"
+next_title: "Snowboarding"
 ---
 
 {{< drg/requirement number="7b11" >}}

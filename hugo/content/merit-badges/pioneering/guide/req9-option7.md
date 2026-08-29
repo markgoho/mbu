@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Double Tripod Chippewa Kitchen"
+title: "Double Tripod Chippewa Kitchen"
 layout: guide
-group_title: "Full-Size Projects"
+group_title: "9. Full-Size Projects"
 req_number: "9"
 req_path: "9.option7"
 prev: "/merit-badges/pioneering/guide/req9-option6/"
-prev_title: "Req 9 — Four Flag Gateway Tower"
+prev_title: "Four Flag Gateway Tower"
 next: "/merit-badges/pioneering/guide/req9-option8/"
-next_title: "Req 9 — Counselor-Approved Custom Structure"
+next_title: "Counselor-Approved Custom Structure"
 ---
 
 {{< drg/requirement number="9" option="Double Tripod Chippewa Kitchen" >}}

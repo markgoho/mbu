@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Camp Recipes & Budget"
+title: "Camp Recipes & Budget"
 layout: guide
-group_title: "Camp Cooking"
+group_title: "5. Camp Cooking"
 req_number: "5b"
 prev: "/merit-badges/cooking/guide/req5a/"
-prev_title: "Req 5a — Camp Menu Planning"
+prev_title: "Camp Menu Planning"
 next: "/merit-badges/cooking/guide/req5c/"
-next_title: "Req 5c — Share Camp Plan"
+next_title: "Share Camp Plan"
 ---
 
 {{< drg/requirement number="5b" >}}

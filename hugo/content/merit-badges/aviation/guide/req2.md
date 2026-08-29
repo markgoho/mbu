@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Build & Fly"
+title: "Build & Fly"
 layout: guide
-group_title: "Principles of Flight"
+group_title: "2. Principles of Flight"
 req_number: "2"
 prev: "/merit-badges/aviation/guide/req1h/"
-prev_title: "Req 1h — Flight Instruments"
+prev_title: "Flight Instruments"
 next: "/merit-badges/aviation/guide/req3/"
-next_title: "Req 3 — Flight Operations"
+next_title: "Flight Operations"
 ---
 
 {{< drg/requirement number="2" >}}

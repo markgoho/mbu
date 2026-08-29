@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Fuel Cells"
+title: "Fuel Cells"
 layout: "guide"
-group_title: "Fuel Cells"
+group_title: "7. Fuel Cells"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/energy/guide/req7c/"
-prev_title: "Req 7c — Modern Fossil Fuel Plants"
+prev_title: "Modern Fossil Fuel Plants"
 next: "/merit-badges/energy/guide/req7e/"
-next_title: "Req 7e — Geothermal Power"
+next_title: "Geothermal Power"
 ---
 
 {{< drg/inherited-requirement number="7d" req_path="7.d" topic="Fuel cells" />}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Alignment, Wear & Disposal"
+title: "Alignment, Wear & Disposal"
 layout: guide
-group_title: "Tires"
+group_title: "4. Tires"
 req_number: "4c"
 prev: "/merit-badges/automotive-maintenance/guide/req4a/"
-prev_title: "Req 4a — Tire Specs & Pressure"
+prev_title: "Tire Specs & Pressure"
 next: "/merit-badges/automotive-maintenance/guide/req5a/"
-next_title: "Req 5a — How Engines Work"
+next_title: "How Engines Work"
 ---
 
 {{< drg/requirement number="4c" >}}

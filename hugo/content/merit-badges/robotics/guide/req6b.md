@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — Compare Youth Leagues"
+title: "Compare Youth Leagues"
 layout: "guide"
-group_title: "Competition Options"
+group_title: "6. Competition Options"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/robotics/guide/req6a/"
-prev_title: "Req 6a — Attend and Observe"
+prev_title: "Attend and Observe"
 next: "/merit-badges/robotics/guide/req7/"
-next_title: "Req 7 — Choose Your Future Path"
+next_title: "Choose Your Future Path"
 ---
 
 {{< drg/requirement number="6b" >}}

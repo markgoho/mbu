@@ -1,12 +1,12 @@
 ---
-title: "Req 4a5 — Clues in a Dry Streambed"
+title: "Clues in a Dry Streambed"
 layout: guide
-group_title: "Surface & Sedimentary Processes"
+group_title: "4. Surface & Sedimentary Processes"
 req_number: "4a5"
 prev: "/merit-badges/geology/guide/req4a4/"
-prev_title: "Req 4a4 — Tiny Sediment, Big Clues"
+prev_title: "Tiny Sediment, Big Clues"
 next: "/merit-badges/geology/guide/req4b/"
-next_title: "Req 4b — Energy Underground"
+next_title: "Energy Underground"
 ---
 
 {{< drg/requirement number="4a5" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Physical Fitness"
+title: "Physical Fitness"
 layout: guide
-group_title: "Defining Personal Fitness"
+group_title: "1. Defining Personal Fitness"
 req_number: "1a"
 prev: "/merit-badges/personal-fitness/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/personal-fitness/guide/req1b/"
-next_title: "Req 1b — Mental, Emotional & Social Fitness"
+next_title: "Mental, Emotional & Social Fitness"
 ---
 
 {{< drg/requirement number="1a" >}}

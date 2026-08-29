@@ -4,48 +4,48 @@ layout: guide
 badge_name: "Citizenship in the World"
 group_title: "Getting Started"
 next: "/merit-badges/citizenship-in-the-world/guide/req1/"
-next_title: "Req 1 — Defining World Citizenship"
+next_title: "Defining World Citizenship"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/citizenship-in-the-world/guide/"
-  - group_title: "What World Citizenship Means"
+  - group_title: "1. What World Citizenship Means"
     items:
-      - title: "Req 1 — Defining World Citizenship"
+      - title: "1. Defining World Citizenship"
         url: "/merit-badges/citizenship-in-the-world/guide/req1/"
         is_sub: false
-  - group_title: "Becoming a Citizen"
+  - group_title: "2. Becoming a Citizen"
     items:
-      - title: "Req 2 — U.S. Citizenship & Comparing Countries"
+      - title: "2. U.S. Citizenship & Comparing Countries"
         url: "/merit-badges/citizenship-in-the-world/guide/req2/"
         is_sub: false
-  - group_title: "World Events & National Interests"
+  - group_title: "3. World Events & National Interests"
     items:
-      - title: "Req 3a — Current Events & National Interests"
+      - title: "a Current Events & National Interests"
         url: "/merit-badges/citizenship-in-the-world/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — A Country's Geography & Economy"
+      - title: "b A Country"
         url: "/merit-badges/citizenship-in-the-world/guide/req3b/"
         is_sub: true
-  - group_title: "International Connections"
+  - group_title: "4. International Connections"
     items:
-      - title: "Req 4 — Law, Trade & Global Organizations"
+      - title: "4. Law, Trade & Global Organizations"
         url: "/merit-badges/citizenship-in-the-world/guide/req4/"
         is_sub: false
-  - group_title: "World Governments"
+  - group_title: "5. World Governments"
     items:
-      - title: "Req 5 — Types of Government"
+      - title: "5. Types of Government"
         url: "/merit-badges/citizenship-in-the-world/guide/req5/"
         is_sub: false
-  - group_title: "Diplomacy & Foreign Relations"
+  - group_title: "6. Diplomacy & Foreign Relations"
     items:
-      - title: "Req 6 — How Nations Connect"
+      - title: "6. How Nations Connect"
         url: "/merit-badges/citizenship-in-the-world/guide/req6/"
         is_sub: false
-  - group_title: "Explore the World"
+  - group_title: "7. Explore the World"
     items:
-      - title: "Req 7 — World Exploration Activities"
+      - title: "7. World Exploration Activities"
         url: "/merit-badges/citizenship-in-the-world/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

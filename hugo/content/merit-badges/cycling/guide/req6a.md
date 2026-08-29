@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Road Biking Option"
+title: "Road Biking Option"
 layout: guide
-group_title: "Your Rides (Choose One Option)"
+group_title: "6. Your Rides (Choose One Option)"
 req_number: "6a"
 prev: "/merit-badges/cycling/guide/req5/"
-prev_title: "Req 5 — Basic Bike Handling"
+prev_title: "Basic Bike Handling"
 next: "/merit-badges/cycling/guide/req6b/"
-next_title: "Req 6b — Trail Biking Option"
+next_title: "Trail Biking Option"
 ---
 
 {{< drg/requirement number="6" option="Road Biking Option" >}}

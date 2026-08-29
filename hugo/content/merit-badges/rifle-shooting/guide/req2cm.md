@@ -1,13 +1,13 @@
 ---
-title: "Req 2cm — First Grouping Exercise"
+title: "First Grouping Exercise"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cm"
 req_path: "2.c.m"
 prev: "/merit-badges/rifle-shooting/guide/req2cl/"
-prev_title: "Req 2cl — Selecting a Muzzleloading Rifle"
+prev_title: "Selecting a Muzzleloading Rifle"
 next: "/merit-badges/rifle-shooting/guide/req2cn/"
-next_title: "Req 2cn — Scored Grouping Exercise"
+next_title: "Scored Grouping Exercise"
 ---
 
 {{< drg/requirement number="2cm" >}}

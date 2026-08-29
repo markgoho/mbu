@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Dog Body Parts"
+title: "Dog Body Parts"
 layout: guide
-group_title: "Knowing Your Dog"
+group_title: "2. Knowing Your Dog"
 req_number: "2"
 prev: "/merit-badges/dog-care/guide/req1c/"
-prev_title: "Req 1c — Breeds and Breed Stories"
+prev_title: "Breeds and Breed Stories"
 next: "/merit-badges/dog-care/guide/req3a/"
-next_title: "Req 3a — Training Foundations"
+next_title: "Training Foundations"
 ---
 
 {{< drg/requirement number="2" >}}

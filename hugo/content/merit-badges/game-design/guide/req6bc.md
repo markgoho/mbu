@@ -1,12 +1,12 @@
 ---
-title: "Req 6bc — Test, Change, Repeat"
+title: "Test, Change, Repeat"
 layout: guide
-group_title: "Designing Your Game"
+group_title: "5. Designing Your Game"
 req_number: "6b"
 prev: "/merit-badges/game-design/guide/req6a/"
-prev_title: "Req 6a — Build the Prototype"
+prev_title: "Build the Prototype"
 next: "/merit-badges/game-design/guide/req7a/"
-next_title: "Req 7a — Write Clear Instructions"
+next_title: "Write Clear Instructions"
 ---
 
 {{< drg/requirement number="6" >}}

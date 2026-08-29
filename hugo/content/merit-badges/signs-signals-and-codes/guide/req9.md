@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Symbols in Daily Life"
+title: "Symbols in Daily Life"
 layout: "guide"
-group_title: "Symbols and Meaning"
+group_title: "9. Symbols and Meaning"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/signs-signals-and-codes/guide/req8e/"
-prev_title: "Req 8e — Your Custom Signal Set"
+prev_title: "Your Custom Signal Set"
 next: "/merit-badges/signs-signals-and-codes/guide/req10/"
-next_title: "Req 10 — Secret Codes and Cryptography"
+next_title: "Secret Codes and Cryptography"
 ---
 
 {{< drg/requirement number="9" >}}

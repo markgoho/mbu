@@ -1,13 +1,13 @@
 ---
-title: "Req 5a — Passenger Handling & Sculling"
+title: "Passenger Handling & Sculling"
 layout: "guide"
-group_title: "Fixed-Seat Skills"
+group_title: "5. Fixed-Seat Skills"
 req_number: "5a"
 req_path: "5.a"
 prev: "/merit-badges/rowing/guide/req5/"
-prev_title: "Req 5 — Choose Your Dockside Skill"
+prev_title: "Choose Your Dockside Skill"
 next: "/merit-badges/rowing/guide/req5b/"
-next_title: "Req 5b — Sliding-Seat Dock Exchange"
+next_title: "Sliding-Seat Dock Exchange"
 ---
 
 {{< drg/requirement number="5a" >}}

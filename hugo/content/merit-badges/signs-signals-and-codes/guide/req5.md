@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Reading and Writing Braille"
+title: "Reading and Writing Braille"
 layout: "guide"
-group_title: "Communication by Touch"
+group_title: "5. Communication by Touch"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/signs-signals-and-codes/guide/req4c/"
-prev_title: "Req 4c — Practice With Flags"
+prev_title: "Practice With Flags"
 next: "/merit-badges/signs-signals-and-codes/guide/req6/"
-next_title: "Req 6 — Sound Signals and Silent Scout Signals"
+next_title: "Sound Signals and Silent Scout Signals"
 ---
 
 {{< drg/requirement number="5" >}}

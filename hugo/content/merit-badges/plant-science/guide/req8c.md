@@ -1,13 +1,13 @@
 ---
-title: "Req 8c — Option C: Field Botany"
+title: "Option C: Field Botany"
 layout: "guide"
-group_title: "Option C — Field Botany"
+group_title: "8. Option C — Field Botany"
 req_number: "8c"
 req_path: "8.c"
 prev: "/merit-badges/plant-science/guide/req8b5d/"
-prev_title: "Req 8b5d — Home Gardening for People and Wildlife"
+prev_title: "Home Gardening"
 next: "/merit-badges/plant-science/guide/req8c1/"
-next_title: "Req 8c1 — Observing a Natural Area"
+next_title: "Visit a Natural Area"
 ---
 
 {{< drg/requirement number="8" option="Field Botany" >}}

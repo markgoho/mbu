@@ -1,12 +1,12 @@
 ---
-title: "Req 4a2 — Stream Gradients"
+title: "Stream Gradients"
 layout: guide
-group_title: "Surface & Sedimentary Processes"
+group_title: "4. Surface & Sedimentary Processes"
 req_number: "4a2"
 prev: "/merit-badges/geology/guide/req4a1/"
-prev_title: "Req 4a1 — Sediment Settling"
+prev_title: "Sediment Settling"
 next: "/merit-badges/geology/guide/req4a3/"
-next_title: "Req 4a3 — Reading Stream Features"
+next_title: "Reading Stream Features"
 ---
 
 {{< drg/requirement number="4a2" >}}

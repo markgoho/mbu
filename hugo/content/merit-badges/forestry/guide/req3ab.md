@@ -1,12 +1,12 @@
 ---
-title: "Req 3a–3b — Forest Benefits & Your Watershed"
+title: "Forest Benefits & Your Watershed"
 layout: guide
-group_title: "Why Forests Matter"
+group_title: "3. Why Forests Matter"
 req_number: "3a"
 prev: "/merit-badges/forestry/guide/req2c/"
-prev_title: "Req 2c — Tree Damage Detectives"
+prev_title: "Tree Damage Detectives"
 next: "/merit-badges/forestry/guide/req4/"
-next_title: "Req 4 — Forest Management Basics"
+next_title: "Forest Management Basics"
 ---
 
 {{< drg/requirement number="3" >}}

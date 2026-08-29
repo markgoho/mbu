@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Safety & Rescue Equipment"
+title: "Safety & Rescue Equipment"
 layout: guide
-group_title: "Life Jackets & Safety Gear"
+group_title: "5. Life Jackets & Safety Gear"
 req_number: "5c"
 prev: "/merit-badges/canoeing/guide/req5b/"
-prev_title: "Req 5b — Fitting a Life Jacket"
+prev_title: "Fitting a Life Jacket"
 next: "/merit-badges/canoeing/guide/req6/"
-next_title: "Req 6 — Equipment Care"
+next_title: "Equipment Care"
 ---
 
 {{< drg/requirement number="5c" >}}

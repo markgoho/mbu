@@ -4,96 +4,96 @@ layout: "guide"
 badge_name: "Energy"
 group_title: "Getting Started"
 next: "/merit-badges/energy/guide/req1/"
-next_title: "Req 1 — Reading Energy Stories"
+next_title: "Reading Energy Stories"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/energy/guide/"
         is_sub: false
-  - group_title: "Start with Curiosity"
+  - group_title: "1. Start with Curiosity"
     items:
-      - title: "Req 1 — Reading Energy Stories"
+      - title: "1. Reading Energy Stories"
         url: "/merit-badges/energy/guide/req1/"
         is_sub: false
-  - group_title: "Forms & Conversions"
+  - group_title: "2. Forms & Conversions"
     items:
-      - title: "Req 2 — Forms & Conversions"
+      - title: "2. Forms & Conversions"
         url: "/merit-badges/energy/guide/req2/"
         is_sub: false
-  - group_title: "System Efficiency"
+  - group_title: "3. System Efficiency"
     items:
-      - title: "Req 3 — Following Energy Through a System"
+      - title: "3. Following Energy Through a System"
         url: "/merit-badges/energy/guide/req3/"
         is_sub: false
-  - group_title: "Home Energy Audit"
+  - group_title: "4. Home Energy Audit"
     items:
-      - title: "Req 4 — Home Energy Audit"
+      - title: "4. Home Energy Audit"
         url: "/merit-badges/energy/guide/req4/"
         is_sub: false
-  - group_title: "Energy Waste Around You"
+  - group_title: "5. Energy Waste Around You"
     items:
-      - title: "Req 5 — Community Energy Waste"
+      - title: "5. Community Energy Waste"
         url: "/merit-badges/energy/guide/req5/"
         is_sub: false
-  - group_title: "Energy by the Numbers"
+  - group_title: "6. Energy by the Numbers"
     items:
-      - title: "Req 6 — Energy by the Numbers"
+      - title: "6. Energy by the Numbers"
         url: "/merit-badges/energy/guide/req6/"
         is_sub: false
-  - group_title: "Choose Five Systems"
+  - group_title: "7. Choose Five Systems"
     items:
-      - title: "Req 7 — Choose Five Energy Systems"
+      - title: "7. Choose Five Energy Systems"
         url: "/merit-badges/energy/guide/req7/"
         is_sub: false
-  - group_title: "Biomass & Waste-to-Energy"
+  - group_title: "7. Biomass & Waste-to-Energy"
     items:
-      - title: "Req 7a — Biomass & Waste-to-Energy"
+      - title: "a Biomass & Waste-to-Energy"
         url: "/merit-badges/energy/guide/req7a/"
         is_sub: true
-  - group_title: "Cogeneration"
+  - group_title: "7. Cogeneration"
     items:
-      - title: "Req 7b — Combined Heat and Power"
+      - title: "b Combined Heat and Power"
         url: "/merit-badges/energy/guide/req7b/"
         is_sub: true
-  - group_title: "Fossil Fuel Power Plants"
+  - group_title: "7. Fossil Fuel Power Plants"
     items:
-      - title: "Req 7c — Modern Fossil Fuel Plants"
+      - title: "c Modern Fossil Fuel Plants"
         url: "/merit-badges/energy/guide/req7c/"
         is_sub: true
-  - group_title: "Fuel Cells"
+  - group_title: "7. Fuel Cells"
     items:
-      - title: "Req 7d — Fuel Cells"
+      - title: "d Fuel Cells"
         url: "/merit-badges/energy/guide/req7d/"
         is_sub: true
-  - group_title: "Geothermal"
+  - group_title: "7. Geothermal"
     items:
-      - title: "Req 7e — Geothermal Power"
+      - title: "e Geothermal Power"
         url: "/merit-badges/energy/guide/req7e/"
         is_sub: true
-  - group_title: "Nuclear"
+  - group_title: "7. Nuclear"
     items:
-      - title: "Req 7f — Nuclear Power"
+      - title: "f Nuclear Power"
         url: "/merit-badges/energy/guide/req7f/"
         is_sub: true
-  - group_title: "Solar"
+  - group_title: "7. Solar"
     items:
-      - title: "Req 7g — Solar Power Systems"
+      - title: "g Solar Power Systems"
         url: "/merit-badges/energy/guide/req7g/"
         is_sub: true
-  - group_title: "Ocean Energy"
+  - group_title: "7. Ocean Energy"
     items:
-      - title: "Req 7h — Ocean Energy Systems"
+      - title: "h Ocean Energy Systems"
         url: "/merit-badges/energy/guide/req7h/"
         is_sub: true
-  - group_title: "Wind"
+  - group_title: "7. Wind"
     items:
-      - title: "Req 7i — Wind Turbines"
+      - title: "i Wind Turbines"
         url: "/merit-badges/energy/guide/req7i/"
         is_sub: true
-  - group_title: "Energy Careers"
+  - group_title: "8. Energy Careers"
     items:
-      - title: "Req 8 — Energy Careers"
+      - title: "8. Energy Careers"
         url: "/merit-badges/energy/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -4,59 +4,59 @@ layout: guide
 badge_name: "Forestry"
 group_title: "Getting Started"
 next: "/merit-badges/forestry/guide/req1/"
-next_title: "Req 1 — Field Notebook & Species Study"
+next_title: "Field Notebook & Species Study"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/forestry/guide/"
-  - group_title: "Reading the Forest"
+  - group_title: "1. Reading the Forest"
     items:
-      - title: "Req 1 — Field Notebook & Species Study"
+      - title: "1. Field Notebook & Species Study"
         url: "/merit-badges/forestry/guide/req1/"
-      - title: "Req 2 — Choose a Tree Investigation"
+      - title: "2. Choose a Tree Investigation"
         url: "/merit-badges/forestry/guide/req2/"
-      - title: "Req 2a — Wood Samples & Uses"
+      - title: "a Wood Samples & Uses"
         url: "/merit-badges/forestry/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Reading Tree Rings"
+      - title: "b Reading Tree Rings"
         url: "/merit-badges/forestry/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Tree Damage Detectives"
+      - title: "c Tree Damage Detectives"
         url: "/merit-badges/forestry/guide/req2c/"
         is_sub: true
-  - group_title: "Why Forests Matter"
+  - group_title: "3. Why Forests Matter"
     items:
-      - title: "Req 3a–3b — Forest Benefits & Your Watershed"
+      - title: "a Forest Benefits & Your Watershed"
         url: "/merit-badges/forestry/guide/req3ab/"
-  - group_title: "Managing Forests"
+  - group_title: "4. Managing Forests"
     items:
-      - title: "Req 4 — Forest Management Basics"
+      - title: "4. Forest Management Basics"
         url: "/merit-badges/forestry/guide/req4/"
-      - title: "Req 5 — Choose a Forestry Field Experience"
+      - title: "5. Choose a Forestry Field Experience"
         url: "/merit-badges/forestry/guide/req5/"
-      - title: "Req 5a — Managed Forest Visit"
+      - title: "a Managed Forest Visit"
         url: "/merit-badges/forestry/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Logging or Wood Products Visit"
+      - title: "b Logging or Wood Products Visit"
         url: "/merit-badges/forestry/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Fire Prevention Campaign"
+      - title: "c Fire Prevention Campaign"
         url: "/merit-badges/forestry/guide/req5c/"
         is_sub: true
-      - title: "Req 6 — Choose a Hazard Tree Activity"
+      - title: "6. Choose a Hazard Tree Activity"
         url: "/merit-badges/forestry/guide/req6/"
-      - title: "Req 6a — Hazard Tree Inventory"
+      - title: "a Hazard Tree Inventory"
         url: "/merit-badges/forestry/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Review a Professional Hazard Tree Report"
+      - title: "b Review a Professional Hazard Tree Report"
         url: "/merit-badges/forestry/guide/req6b/"
         is_sub: true
-  - group_title: "Threats, Fire & Careers"
+  - group_title: "7. Threats, Fire & Careers"
     items:
-      - title: "Req 7 — Forest Threats & Wildfire Response"
+      - title: "7. Forest Threats & Wildfire Response"
         url: "/merit-badges/forestry/guide/req7/"
-      - title: "Req 8 — Foresters & Forestry Careers"
+      - title: "8. Foresters & Forestry Careers"
         url: "/merit-badges/forestry/guide/req8/"
   - group_title: "Beyond the Badge"
     items:

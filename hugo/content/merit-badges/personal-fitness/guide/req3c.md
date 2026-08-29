@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Vaccinations"
+title: "Vaccinations"
 layout: guide
-group_title: "Fitness Knowledge & Habits"
+group_title: "3. Fitness Knowledge & Habits"
 req_number: "3c"
 prev: "/merit-badges/personal-fitness/guide/req3b/"
-prev_title: "Req 3b — Avoiding Harmful Substances"
+prev_title: "Avoiding Harmful Substances"
 next: "/merit-badges/personal-fitness/guide/req3d/"
-next_title: "Req 3d — Nutrition"
+next_title: "Nutrition"
 ---
 
 {{< drg/requirement number="3c" >}}

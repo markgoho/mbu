@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Vectors and Pest Control"
+title: "Vectors and Pest Control"
 layout: "guide"
-group_title: "Vectors & Prevention"
+group_title: "4. Vectors & Prevention"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/public-health/guide/req3/"
-prev_title: "Req 3 — Safe Water and Clean Gear"
+prev_title: "Safe Water and Clean Gear"
 next: "/merit-badges/public-health/guide/req5/"
-next_title: "Req 5 — Choose Your Field Investigation"
+next_title: "Choose Your Field Investigation"
 ---
 
 {{< drg/requirement number="4" >}}

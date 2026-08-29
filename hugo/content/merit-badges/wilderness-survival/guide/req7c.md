@@ -1,12 +1,12 @@
 ---
-title: "Req 7c — Ground-to-Air Signals"
+title: "Ground-to-Air Signals"
 layout: guide
 group_title: "Rescue & Signaling"
 req_number: "7c"
 prev: "/merit-badges/wilderness-survival/guide/req7b/"
-prev_title: "Req 7b — Signal Mirror"
+prev_title: "Signal Mirror"
 next: "/merit-badges/wilderness-survival/guide/req8/"
-next_title: "Req 8 — Water Treatment"
+next_title: "Water Treatment"
 ---
 
 {{< drg/requirement number="7c" >}}

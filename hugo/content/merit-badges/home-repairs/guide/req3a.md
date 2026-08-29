@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Tool Storage Solutions"
+title: "Tool Storage Solutions"
 layout: guide
-group_title: "Workshop Projects"
+group_title: "3. Workshop Projects"
 req_number: "3a"
 prev: "/merit-badges/home-repairs/guide/req3/"
-prev_title: "Req 3 — Shop and Structure Projects"
+prev_title: "Shop and Structure Projects"
 next: "/merit-badges/home-repairs/guide/req3b/"
-next_title: "Req 3b — Building a Workbench"
+next_title: "Building a Workbench"
 ---
 
 {{< drg/requirement number="3a" >}}

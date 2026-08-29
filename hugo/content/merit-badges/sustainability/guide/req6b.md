@@ -1,12 +1,12 @@
 ---
-title: "Req 6b — Impact of Too Much Stuff"
+title: "Impact of Too Much Stuff"
 layout: guide
-group_title: "Stuff & Waste"
+group_title: "6. Stuff & Waste"
 req_number: "6b"
 prev: "/merit-badges/sustainability/guide/req6a/"
-prev_title: "Req 6a — Needs vs. Wants"
+prev_title: "Needs vs. Wants"
 next: "/merit-badges/sustainability/guide/req6c/"
-next_title: "Req 6c — Waste & Recycling"
+next_title: "Waste & Recycling"
 ---
 
 {{< drg/requirement number="6b" >}}

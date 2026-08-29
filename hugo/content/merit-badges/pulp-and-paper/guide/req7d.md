@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Recycling Collection and Sorting"
+title: "Recycling Collection and Sorting"
 layout: "guide"
-group_title: "Industry Experiences"
+group_title: "7. Industry Experiences"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/pulp-and-paper/guide/req7c/"
-prev_title: "Req 7c — Boxes and Corrugated Containers"
+prev_title: "Boxes and Corrugated Containers"
 next: "/merit-badges/pulp-and-paper/guide/req7e/"
-next_title: "Req 7e — Research and Development"
+next_title: "Research and Development"
 ---
 
 {{< drg/requirement number="7d" >}}

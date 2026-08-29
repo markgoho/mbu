@@ -1,13 +1,13 @@
 ---
-title: "Req 4c — Make and Play a Traditional Instrument"
+title: "Make and Play a Traditional Instrument"
 layout: "guide"
-group_title: "Choose One Music Project"
+group_title: "4. Choose One Music Project"
 req_number: "4c"
 req_path: "4.c"
 prev: "/merit-badges/music/guide/req4b/"
-prev_title: "Req 4b — Compose a 12-Measure Piece"
+prev_title: "Compose a 12-Measure Piece"
 next: "/merit-badges/music/guide/req5/"
-next_title: "Req 5 — Intellectual Property and Sharing Music"
+next_title: "Intellectual Property and Sharing Music"
 ---
 
 {{< drg/requirement number="4c" >}}

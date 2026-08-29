@@ -1,13 +1,13 @@
 ---
-title: "Req 7b2 — Ride a Historic Railroad"
+title: "Ride a Historic Railroad"
 layout: "guide"
-group_title: "Railfanning Option"
+group_title: "7. Railfanning Option"
 req_number: "7b2"
 req_path: "7.b.2"
 prev: "/merit-badges/railroading/guide/req7b1/"
-prev_title: "Req 7b1 — Museum or Public Event Visit"
+prev_title: "Museum or Public Event Visit"
 next: "/merit-badges/railroading/guide/req7b3/"
-next_title: "Req 7b3 — Rail Preservation Groups"
+next_title: "Rail Preservation Groups"
 ---
 
 {{< drg/requirement number="7b2" >}}

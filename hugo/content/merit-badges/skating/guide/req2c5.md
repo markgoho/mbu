@@ -1,13 +1,13 @@
 ---
-title: "Req 2c5 — Forward Skating"
+title: "Forward Skating"
 layout: "guide"
-group_title: "Option C — In-Line Skating"
+group_title: "2. Option C — In-Line Skating"
 req_number: "2c5"
 req_path: "2.c.5"
 prev: "/merit-badges/skating/guide/req2c4/"
-prev_title: "Req 2c4 — In-Line Skate Care"
+prev_title: "In-Line Skate Care"
 next: "/merit-badges/skating/guide/req2c6/"
-next_title: "Req 2c6 — One-Foot Glide"
+next_title: "One-Foot Glide"
 ---
 
 {{< drg/requirement number="2c5" >}}

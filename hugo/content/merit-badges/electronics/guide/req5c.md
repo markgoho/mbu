@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Resistor Color Codes"
+title: "Resistor Color Codes"
 layout: guide
-group_title: "Measurement & Components"
+group_title: "5. Measurement & Components"
 req_number: "5c"
 prev: "/merit-badges/electronics/guide/req5b/"
-prev_title: "Req 5b — Test Equipment"
+prev_title: "Test Equipment"
 next: "/merit-badges/electronics/guide/req5d/"
-next_title: "Req 5d — Through Hole vs. Surface Mount"
+next_title: "Through Hole vs. Surface Mount"
 ---
 
 {{< drg/requirement number="5c" >}}

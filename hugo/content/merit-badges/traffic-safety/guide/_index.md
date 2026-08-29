@@ -4,66 +4,66 @@ layout: "guide"
 badge_name: "Traffic Safety"
 group_title: "Getting Started"
 next: "/merit-badges/traffic-safety/guide/req1/"
-next_title: "Req 1 — Preventing Impaired Driving"
+next_title: "Preventing Impaired Driving"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/traffic-safety/guide/"
         is_sub: false
-  - group_title: "Impairment and Judgment"
+  - group_title: "1. Impairment and Judgment"
     items:
-      - title: "Req 1 — Preventing Impaired Driving"
+      - title: "1. Preventing Impaired Driving"
         url: "/merit-badges/traffic-safety/guide/req1/"
         is_sub: false
-  - group_title: "Protection in the Vehicle"
+  - group_title: "2. Protection in the Vehicle"
     items:
-      - title: "Req 2 — Vehicle Safety Basics"
+      - title: "2. Vehicle Safety Basics"
         url: "/merit-badges/traffic-safety/guide/req2/"
         is_sub: false
-  - group_title: "Pre-Drive Safety Checkups"
+  - group_title: "3. Pre-Drive Safety Checkups"
     items:
-      - title: "Req 3 — Maintenance and Emergency Stops"
+      - title: "3. Maintenance and Emergency Stops"
         url: "/merit-badges/traffic-safety/guide/req3/"
         is_sub: false
-  - group_title: "Rules, Rights, and Responsibilities"
+  - group_title: "4. Rules, Rights, and Responsibilities"
     items:
-      - title: "Req 4 — Traffic Safety and the Law"
+      - title: "4. Traffic Safety and the Law"
         url: "/merit-badges/traffic-safety/guide/req4/"
         is_sub: false
-  - group_title: "Road Design and Traffic Signs"
+  - group_title: "5. Road Design and Traffic Signs"
     items:
-      - title: "Req 5 — Choose Your Roadway Focus"
+      - title: "5. Choose Your Roadway Focus"
         url: "/merit-badges/traffic-safety/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Safer Roads by Design"
+      - title: "a Safer Roads by Design"
         url: "/merit-badges/traffic-safety/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Reading Signs, Signals, and Markings"
+      - title: "b Reading Signs, Signals, and Markings"
         url: "/merit-badges/traffic-safety/guide/req5b/"
         is_sub: true
-  - group_title: "Sharing Streets with Others"
+  - group_title: "6. Sharing Streets with Others"
     items:
-      - title: "Req 6 — Sharing the Road Safely"
+      - title: "6. Sharing the Road Safely"
         url: "/merit-badges/traffic-safety/guide/req6/"
         is_sub: false
-  - group_title: "Community Action"
+  - group_title: "7. Community Action"
     items:
-      - title: "Req 7 — Choose Your Community Impact"
+      - title: "7. Choose Your Community Impact"
         url: "/merit-badges/traffic-safety/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Interview a Safety Professional"
+      - title: "a Interview a Safety Professional"
         url: "/merit-badges/traffic-safety/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Write Your Traffic Safety Pledge"
+      - title: "b Write Your Traffic Safety Pledge"
         url: "/merit-badges/traffic-safety/guide/req7b/"
         is_sub: true
-      - title: "Req 7c — Organize a Safety Event"
+      - title: "c Organize a Safety Event"
         url: "/merit-badges/traffic-safety/guide/req7c/"
         is_sub: true
-  - group_title: "Career Paths"
+  - group_title: "8. Career Paths"
     items:
-      - title: "Req 8 — Careers in Traffic Safety"
+      - title: "8. Careers in Traffic Safety"
         url: "/merit-badges/traffic-safety/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

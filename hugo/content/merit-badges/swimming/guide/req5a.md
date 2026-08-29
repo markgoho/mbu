@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Rescue Methods"
+title: "Rescue Methods"
 layout: guide
-group_title: "Water Rescue"
+group_title: "5. Water Rescue"
 req_number: "5a"
 prev: "/merit-badges/swimming/guide/req4/"
-prev_title: "Req 4 — Endurance Swim"
+prev_title: "Endurance Swim"
 next: "/merit-badges/swimming/guide/req5b/"
-next_title: "Req 5b — Line Rescue"
+next_title: "Line Rescue"
 ---
 
 {{< drg/requirement number="5a" >}}

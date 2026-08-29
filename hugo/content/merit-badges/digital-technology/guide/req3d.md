@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Computers, Mobile & Consoles"
+title: "Computers, Mobile & Consoles"
 layout: guide
-group_title: "How Digital Data Works"
+group_title: "3. How Digital Data Works"
 req_number: "3d"
 prev: "/merit-badges/digital-technology/guide/req3c/"
-prev_title: "Req 3c — Programmable Devices"
+prev_title: "Programmable Devices"
 next: "/merit-badges/digital-technology/guide/req3e/"
-next_title: "Req 3e — Computer Networks"
+next_title: "Computer Networks"
 ---
 
 {{< drg/requirement number="3d" >}}

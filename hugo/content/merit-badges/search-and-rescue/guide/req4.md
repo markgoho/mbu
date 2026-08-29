@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — How the Command System Works"
+title: "How the Command System Works"
 layout: "guide"
-group_title: "How Search Missions Work"
+group_title: "4. How Search Missions Work"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/search-and-rescue/guide/req3/"
-prev_title: "Req 3 — Reading the Map Like a Searcher"
+prev_title: "Reading the Map Like a Searcher"
 next: "/merit-badges/search-and-rescue/guide/req5/"
-next_title: "Req 5 — Who Does What on SAR Teams"
+next_title: "Who Does What on SAR Teams"
 ---
 
 {{< drg/requirement number="4" >}}

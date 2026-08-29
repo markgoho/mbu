@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose Your Field Investigation"
+title: "Choose Your Field Investigation"
 layout: "guide"
-group_title: "Field Investigations"
+group_title: "5. Field Investigations"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/public-health/guide/req4/"
-prev_title: "Req 4 — Vectors and Pest Control"
+prev_title: "Vectors and Pest Control"
 next: "/merit-badges/public-health/guide/req5a/"
-next_title: "Req 5a — Waste and Wastewater Systems"
+next_title: "Waste and Wastewater Systems"
 ---
 
 {{< drg/requirement number="5" >}}

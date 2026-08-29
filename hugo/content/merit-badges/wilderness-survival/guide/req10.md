@@ -1,10 +1,10 @@
 ---
-title: "Req 10 — Signaling for Rescue"
+title: "Signaling for Rescue"
 layout: guide
-group_title: "Rescue & Signaling"
+group_title: "9. Food & Careers"
 req_number: "10"
 prev: "/merit-badges/wilderness-survival/guide/req9/"
-prev_title: "Req 9 — Edible Plants"
+prev_title: "Wild Food Safety"
 next: "/merit-badges/wilderness-survival/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -4,52 +4,52 @@ layout: guide
 badge_name: "Fingerprinting"
 group_title: "Getting Started"
 next: "/merit-badges/fingerprinting/guide/req1/"
-next_title: "Requirement 1 — Understanding Fingerprint History"
+next_title: "Understanding Fingerprint History"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/fingerprinting/guide/"
-  - group_title: "Understanding Fingerprints"
+  - group_title: "1. Understanding Fingerprints"
     items:
-      - title: "Requirement 1 — Understanding Fingerprint History"
+      - title: "1. Understanding Fingerprint History"
         url: "/merit-badges/fingerprinting/guide/req1/"
         is_sub: true
-  - group_title: "Modern Identification Systems"
+  - group_title: "2. Modern Identification Systems"
     items:
-      - title: "Requirement 2a — AFIS and Biometric Systems"
+      - title: "a AFIS and Biometric Systems"
         url: "/merit-badges/fingerprinting/guide/req2a/"
         is_sub: true
-      - title: "Requirement 2b — Authentication in Daily Life"
+      - title: "b Authentication in Daily Life"
         url: "/merit-badges/fingerprinting/guide/req2b/"
         is_sub: true
-  - group_title: "The Science of Fingerprints"
+  - group_title: "3. The Science of Fingerprints"
     items:
-      - title: "Requirement 3a — Friction Ridges on the Body"
+      - title: "a Friction Ridges on the Body"
         url: "/merit-badges/fingerprinting/guide/req3a/"
         is_sub: true
-      - title: "Requirement 3b — Principles of Fingerprint Science"
+      - title: "b Principles of Fingerprint Science"
         url: "/merit-badges/fingerprinting/guide/req3b/"
         is_sub: true
-      - title: "Requirement 3c — Positive Identification"
+      - title: "c Positive Identification"
         url: "/merit-badges/fingerprinting/guide/req3c/"
         is_sub: true
-  - group_title: "Taking Your Own Fingerprints"
+  - group_title: "4. Taking Your Own Fingerprints"
     items:
-      - title: "Requirement 4a — Official Fingerprint Cards"
+      - title: "a Official Fingerprint Cards"
         url: "/merit-badges/fingerprinting/guide/req4a/"
         is_sub: true
-      - title: "Requirement 4b — Tape and Pencil Method"
+      - title: "b Tape and Pencil Method"
         url: "/merit-badges/fingerprinting/guide/req4b/"
         is_sub: true
-  - group_title: "Pattern Recognition"
+  - group_title: "5. Pattern Recognition"
     items:
-      - title: "Requirement 5 — Identifying Fingerprint Patterns"
+      - title: "5. Identifying Fingerprint Patterns"
         url: "/merit-badges/fingerprinting/guide/req5/"
         is_sub: true
-  - group_title: "Careers in Forensics"
+  - group_title: "6. Careers in Forensics"
     items:
-      - title: "Requirement 6 — Exploring Forensic Careers"
+      - title: "6. Exploring Forensic Careers"
         url: "/merit-badges/fingerprinting/guide/req6/"
         is_sub: true
   - group_title: "Beyond the Badge"

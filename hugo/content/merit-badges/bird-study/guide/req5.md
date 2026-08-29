@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Field Notebook"
+title: "Field Notebook"
 layout: guide
-group_title: "Field Observations"
+group_title: "5. Field Observations"
 req_number: "5"
 prev: "/merit-badges/bird-study/guide/req4/"
-prev_title: "Req 4 — Using a Field Guide"
+prev_title: "Using a Field Guide"
 next: "/merit-badges/bird-study/guide/req6/"
-next_title: "Req 6 — Habitat Adaptations"
+next_title: "Habitat Adaptations"
 ---
 
 {{< drg/requirement number="5" >}}

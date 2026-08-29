@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — HTTPS & Security Certificates"
+title: "HTTPS & Security Certificates"
 layout: guide
-group_title: "The Internet"
+group_title: "5. The Internet"
 req_number: "5c"
 prev: "/merit-badges/digital-technology/guide/req5b/"
-prev_title: "Req 5b — Search Engine Research"
+prev_title: "Search Engine Research"
 next: "/merit-badges/digital-technology/guide/req6/"
-next_title: "Req 6 — Hands-On Digital Projects"
+next_title: "Hands-On Digital Projects"
 ---
 
 {{< drg/requirement number="5c" >}}

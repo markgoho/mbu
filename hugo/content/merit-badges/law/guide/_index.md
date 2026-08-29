@@ -4,53 +4,53 @@ layout: guide
 badge_name: "Law"
 group_title: "Getting Started"
 next: "/merit-badges/law/guide/req1/"
-next_title: "Requirement 1 — What Is Law?"
+next_title: "What Is Law?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/law/guide/"
-  - group_title: "Foundations of Law"
+  - group_title: "1. Foundations of Law"
     items:
-      - title: "Req 1 — What Is Law?"
+      - title: "1. What Is Law?"
         url: "/merit-badges/law/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Landmarks in Legal History"
+      - title: "2. Landmarks in Legal History"
         url: "/merit-badges/law/guide/req2/"
         is_sub: false
-  - group_title: "Types of Law"
+  - group_title: "3. Types of Law"
     items:
-      - title: "Req 3 — Civil vs. Criminal Law"
+      - title: "3. Civil vs. Criminal Law"
         url: "/merit-badges/law/guide/req3/"
         is_sub: false
-  - group_title: "Law in Action"
+  - group_title: "4. Law in Action"
     items:
-      - title: "Req 4 — Law Enforcement in Society"
+      - title: "4. Law Enforcement in Society"
         url: "/merit-badges/law/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Consumer & Seller Protections"
+      - title: "5. Consumer & Seller Protections"
         url: "/merit-badges/law/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Courtroom Experience"
+      - title: "6. Courtroom Experience"
         url: "/merit-badges/law/guide/req6/"
         is_sub: false
-  - group_title: "Legal Careers"
+  - group_title: "7. Legal Careers"
     items:
-      - title: "Req 7 — Visit with a Lawyer"
+      - title: "7. Visit with a Lawyer"
         url: "/merit-badges/law/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Becoming a Lawyer or Judge"
+      - title: "8. Becoming a Lawyer or Judge"
         url: "/merit-badges/law/guide/req8/"
         is_sub: false
-      - title: "Req 9 — Jobs in Law"
+      - title: "9. Jobs in Law"
         url: "/merit-badges/law/guide/req9/"
         is_sub: false
-  - group_title: "Justice for All"
+  - group_title: "10. Justice for All"
     items:
-      - title: "Req 10 — Access to Legal Help"
+      - title: "10. Access to Legal Help"
         url: "/merit-badges/law/guide/req10/"
         is_sub: false
-      - title: "Req 11 — Areas of Law"
+      - title: "11. Areas of Law"
         url: "/merit-badges/law/guide/req11/"
         is_sub: false
   - group_title: "Beyond the Badge"

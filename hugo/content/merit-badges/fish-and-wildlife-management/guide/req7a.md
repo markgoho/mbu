@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — Fish Aging from Scales"
+title: "Fish Aging from Scales"
 layout: guide
-group_title: "Fish Study Techniques"
+group_title: "7. Fish Study Techniques"
 req_number: "7a"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req7/"
-prev_title: "Req 7 — Choose a Fish Study Activity"
+prev_title: "Choose a Fish Study Activity"
 next: "/merit-badges/fish-and-wildlife-management/guide/req7b/"
-next_title: "Req 7b — Creel Census"
+next_title: "Creel Census"
 ---
 
 {{< drg/requirement number="7a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Choose Four Supervised Tasks"
+title: "Choose Four Supervised Tasks"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/plumbing/guide/req5/"
-prev_title: "Req 5 — Common Pipe Materials"
+prev_title: "Common Pipe Materials"
 next: "/merit-badges/plumbing/guide/req6a/"
-next_title: "Req 6a — Hardware Store Field ID"
+next_title: "Hardware Store Field ID"
 ---
 
 {{< drg/requirement number="6" >}}

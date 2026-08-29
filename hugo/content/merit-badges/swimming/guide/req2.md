@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Swimmer Test"
+title: "Swimmer Test"
 layout: guide
-group_title: "Proving Your Skills"
+group_title: "2. Proving Your Skills"
 req_number: "2"
 prev: "/merit-badges/swimming/guide/req1b/"
-prev_title: "Req 1b — Health Concerns"
+prev_title: "Health Concerns"
 next: "/merit-badges/swimming/guide/req3/"
-next_title: "Req 3 — Swimming Strokes"
+next_title: "Swimming Strokes"
 ---
 
 {{< drg/requirement number="2" >}}

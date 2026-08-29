@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Peers and Crime"
+title: "Peers and Crime"
 layout: guide
-group_title: "Peers & Crime"
+group_title: "7. Peers & Crime"
 req_number: "7"
 prev: "/merit-badges/crime-prevention/guide/req6/"
-prev_title: "Req 6 — Reporting Crime"
+prev_title: "Reporting Crime"
 next: "/merit-badges/crime-prevention/guide/req8/"
-next_title: "Req 8 — Substance Use and Crime"
+next_title: "Substance Use and Crime"
 ---
 
 {{< drg/requirement number="7" >}}

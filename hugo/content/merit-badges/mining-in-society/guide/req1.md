@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Minerals in Everyday Life"
+title: "Minerals in Everyday Life"
 layout: "guide"
-group_title: "Minerals All Around You"
+group_title: "1. Minerals All Around You"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/mining-in-society/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/mining-in-society/guide/req2/"
-next_title: "Req 2 — Mapping Mines and Resources"
+next_title: "Mapping Mines and Resources"
 ---
 
 {{< drg/requirement number="1" >}}

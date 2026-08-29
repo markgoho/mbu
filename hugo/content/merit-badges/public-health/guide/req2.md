@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Immunization Basics"
+title: "Immunization Basics"
 layout: "guide"
-group_title: "Immunization"
+group_title: "2. Immunization"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/public-health/guide/req1/"
-prev_title: "Req 1 — How Disease Spreads"
+prev_title: "How Disease Spreads"
 next: "/merit-badges/public-health/guide/req3/"
-next_title: "Req 3 — Safe Water and Clean Gear"
+next_title: "Safe Water and Clean Gear"
 ---
 
 {{< drg/requirement number="2" >}}

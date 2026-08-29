@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Diagnosing, Hearing, and Whole-Person Care"
+title: "Diagnosing, Hearing, and Whole-Person Care"
 layout: guide
-group_title: "Physicians and Specialists"
+group_title: "1. Physicians and Specialists"
 req_number: "1"
 prev: "/merit-badges/health-care-professions/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/health-care-professions/guide/req2/"
-next_title: "Req 2 — Bedside Care and Fast Decisions"
+next_title: "Bedside Care and Fast Decisions"
 ---
 
 {{< drg/requirement number="1" >}}

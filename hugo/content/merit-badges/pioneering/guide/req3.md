@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Practical Camp Builds"
+title: "Practical Camp Builds"
 layout: guide
-group_title: "Build Your First Gadgets"
+group_title: "3. Build Your First Gadgets"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/pioneering/guide/req2/"
-prev_title: "Req 2 — Core Rope Skills"
+prev_title: "Core Rope Skills"
 next: "/merit-badges/pioneering/guide/req4/"
-next_title: "Req 4 — Rope for Real Loads"
+next_title: "Rope for Real Loads"
 ---
 
 {{< drg/requirement number="3" >}}

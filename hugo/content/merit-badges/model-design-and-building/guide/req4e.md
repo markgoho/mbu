@@ -1,13 +1,13 @@
 ---
-title: "Req 4e — Designing a Scaled Passenger Vehicle"
+title: "Designing a Scaled Passenger Vehicle"
 layout: "guide"
-group_title: "Vehicle Model"
+group_title: "4. Vehicle Model"
 req_number: "4e"
 req_path: "4.e"
 prev: "/merit-badges/model-design-and-building/guide/req4d/"
-prev_title: "Req 4d — Motion with Simple Machines"
+prev_title: "Motion with Simple Machines"
 next: "/merit-badges/model-design-and-building/guide/req5/"
-next_title: "Req 5 — Designing for the Big Screen"
+next_title: "Designing for the Big Screen"
 ---
 
 {{< drg/requirement number="4e" >}}

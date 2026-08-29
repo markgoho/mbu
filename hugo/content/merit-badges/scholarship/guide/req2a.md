@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — Learn From Local Places"
+title: "Learn From Local Places"
 layout: "guide"
-group_title: "Learning Beyond the Classroom"
+group_title: "2. Learning Beyond the Classroom"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/scholarship/guide/req2/"
-prev_title: "Req 2 — Choose Two Learning Tools"
+prev_title: "Choose Two Learning Tools"
 next: "/merit-badges/scholarship/guide/req2b/"
-next_title: "Req 2b — Interview Working Adults"
+next_title: "Interview Working Adults"
 ---
 
 {{< drg/requirement number="2a" >}}

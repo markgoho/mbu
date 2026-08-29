@@ -1,13 +1,13 @@
 ---
-title: "Req 2a6 — \"Green Bar Bill\" Hillcourt"
+title: '"Green Bar Bill"  Hillcourt'
 layout: "guide"
-group_title: "Scouting Pioneers"
+group_title: "2. Scouting Pioneers"
 req_number: "2a6"
 req_path: "2.a.6"
 prev: "/merit-badges/scouting-heritage/guide/req2a5/"
-prev_title: "Req 2a5 — James E. West"
+prev_title: "James E. West"
 next: "/merit-badges/scouting-heritage/guide/req2a7/"
-next_title: "Req 2a7 — Frederick Russell Burnham"
+next_title: "Frederick Russell Burnham"
 ---
 
 {{< drg/requirement number="2a6" >}}

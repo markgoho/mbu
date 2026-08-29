@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — Aquabike Simulation"
+title: "Aquabike Simulation"
 layout: "guide"
-group_title: "Race-Day Challenge"
+group_title: "7. Race-Day Challenge"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/multisport/guide/req7c/"
-prev_title: "Req 7c — Aquathlon Simulation"
+prev_title: "Aquathlon Simulation"
 next: "/merit-badges/multisport/guide/req8/"
-next_title: "Req 8 — Pick Your Next Two Steps"
+next_title: "Pick Your Next Two Steps"
 ---
 
 {{< drg/requirement number="7d" >}}

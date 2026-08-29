@@ -1,12 +1,12 @@
 ---
-title: "Req 8f — Throw Bag Rescue"
+title: "Throw Bag Rescue"
 layout: guide
-group_title: "Capsizing & Rescue"
+group_title: "8. Capsizing & Rescue"
 req_number: "8f"
 prev: "/merit-badges/canoeing/guide/req8e/"
-prev_title: "Req 8e — Swimmer Rescue from Canoe"
+prev_title: "Swimmer Rescue from Canoe"
 next: "/merit-badges/canoeing/guide/req9/"
-next_title: "Req 9 — Tandem Maneuvers"
+next_title: "Tandem Maneuvers"
 ---
 
 {{< drg/requirement number="8f" >}}

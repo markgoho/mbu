@@ -1,13 +1,13 @@
 ---
-title: "Req 2d — Choose Your Production"
+title: "Choose Your Production"
 layout: "guide"
-group_title: "Planning Your Movie"
+group_title: "2. Planning Your Movie"
 req_number: "2d"
 req_path: "2.d"
 prev: "/merit-badges/moviemaking/guide/req2c/"
-prev_title: "Req 2c — Master Camera Moves"
+prev_title: "Master Camera Moves"
 next: "/merit-badges/moviemaking/guide/req2d1/"
-next_title: "Req 2d1 — Cover a Court of Honor"
+next_title: "Cover a Court of Honor"
 ---
 
 {{< drg/requirement number="2d" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — CPR Readiness"
+title: "CPR Readiness"
 layout: guide
-group_title: "Safety & First Aid"
+group_title: "1. Safety & First Aid"
 req_number: "1c"
 prev: "/merit-badges/climbing/guide/req1b/"
-prev_title: "Req 1b — Injury Prevention & First Aid"
+prev_title: "Injury Prevention & First Aid"
 next: "/merit-badges/climbing/guide/req2/"
-next_title: "Req 2 — Leave No Trace & Outdoor Code"
+next_title: "Leave No Trace & Outdoor Code"
 ---
 
 {{< drg/requirement number="1c" >}}

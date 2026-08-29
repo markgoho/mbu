@@ -1,12 +1,12 @@
 ---
-title: "Req 6e — Seasonal Safety"
+title: "Seasonal Safety"
 layout: guide
-group_title: "Keeping Dogs Healthy"
+group_title: "6. Keeping Dogs Healthy"
 req_number: "6e"
 prev: "/merit-badges/dog-care/guide/req6d/"
-prev_title: "Req 6d — Grooming and Nail Care"
+prev_title: "Grooming and Nail Care"
 next: "/merit-badges/dog-care/guide/req6f/"
-next_title: "Req 6f — Spaying and Neutering"
+next_title: "Spaying and Neutering"
 ---
 
 {{< drg/requirement number="6e" >}}

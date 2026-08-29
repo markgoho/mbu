@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Artifacts Tell Stories"
+title: "Artifacts Tell Stories"
 layout: guide
-group_title: "Artifacts in Action"
+group_title: "7. Artifacts in Action"
 req_number: "7"
 prev: "/merit-badges/archaeology/guide/req6/"
-prev_title: "Req 6 — Being a Steward"
+prev_title: "Being a Steward"
 next: "/merit-badges/archaeology/guide/req8/"
-next_title: "Req 8 — Local History Research"
+next_title: "Local History Research"
 ---
 
 {{< drg/requirement number="7" >}}

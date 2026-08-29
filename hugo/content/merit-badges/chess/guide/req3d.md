@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Five Ways to Draw"
+title: "Five Ways to Draw"
 layout: guide
-group_title: "Know Your Pieces"
+group_title: "3. Know Your Pieces"
 req_number: "3d"
 prev: "/merit-badges/chess/guide/req3c/"
-prev_title: "Req 3c — How Pieces Move & Capture"
+prev_title: "How Pieces Move & Capture"
 next: "/merit-badges/chess/guide/req4a/"
-next_title: "Req 4a — Algebraic Notation"
+next_title: "Algebraic Notation"
 ---
 
 {{< drg/requirement number="3d" >}}

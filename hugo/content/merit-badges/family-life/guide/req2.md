@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Your Role in the Family"
+title: "Your Role in the Family"
 layout: guide
-group_title: "Understanding Family"
+group_title: "1. Understanding Family"
 req_number: "2"
 prev: "/merit-badges/family-life/guide/req1/"
-prev_title: "Req 1 — What Is a Family?"
+prev_title: "What Is a Family?"
 next: "/merit-badges/family-life/guide/req3/"
-next_title: "Req 3 — Home Duties & Chores"
+next_title: "Home Duties & Chores"
 ---
 
 {{< drg/requirement number="2" >}}

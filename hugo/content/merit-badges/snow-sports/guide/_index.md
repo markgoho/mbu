@@ -4,190 +4,190 @@ layout: "guide"
 badge_name: "Snow Sports"
 group_title: "Getting Started"
 next: "/merit-badges/snow-sports/guide/req1/"
-next_title: "Req 1 — Hazards & First Aid Topics"
+next_title: "Hazards & First Aid Topics"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/snow-sports/guide/"
         is_sub: false
-  - group_title: "Safety Foundations"
+  - group_title: "1. Safety Foundations"
     items:
-      - title: "Req 1 — Hazards & First Aid Topics"
+      - title: "1. Hazards & First Aid Topics"
         url: "/merit-badges/snow-sports/guide/req1/"
         is_sub: false
-  - group_title: "First Aid in the Field"
+  - group_title: "2. First Aid in the Field"
     items:
-      - title: "Req 2 — Rendering & Reporting Aid"
+      - title: "2. Rendering & Reporting Aid"
         url: "/merit-badges/snow-sports/guide/req2/"
         is_sub: false
-  - group_title: "Trail Navigation"
+  - group_title: "3. Trail Navigation"
     items:
-      - title: "Req 3 — Trail Marking System"
+      - title: "3. Trail Marking System"
         url: "/merit-badges/snow-sports/guide/req3/"
         is_sub: false
-  - group_title: "Getting Fit & Geared Up"
+  - group_title: "4. Getting Fit & Geared Up"
     items:
-      - title: "Req 4 — Fitness for Snow Sports"
+      - title: "4. Fitness for Snow Sports"
         url: "/merit-badges/snow-sports/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Clothing & Equipment"
+      - title: "5. Clothing & Equipment"
         url: "/merit-badges/snow-sports/guide/req5/"
         is_sub: false
-  - group_title: "Mountain Safety Codes"
+  - group_title: "6. Mountain Safety Codes"
     items:
-      - title: "Req 6 — Responsibility, SMART Style & Avalanche"
+      - title: "6. Responsibility, SMART Style & Avalanche"
         url: "/merit-badges/snow-sports/guide/req6/"
         is_sub: false
-  - group_title: "Choose Your Option"
+  - group_title: "7. Choose Your Option"
     items:
-      - title: "Req 7 — Pick Your Snow Sport"
+      - title: "7. Pick Your Snow Sport"
         url: "/merit-badges/snow-sports/guide/req7/"
         is_sub: false
-  - group_title: "Option A — Alpine Skiing"
+  - group_title: "7. Option A — Alpine Skiing"
     items:
-      - title: "Req 7a — Downhill (Alpine) Skiing"
+      - title: "a Downhill (Alpine) Skiing"
         url: "/merit-badges/snow-sports/guide/req7a/"
         is_sub: false
-      - title: "Req 7a1 — Wax, Bindings & DIN"
+      - title: "a Wax, Bindings & DIN"
         url: "/merit-badges/snow-sports/guide/req7a1/"
         is_sub: true
-      - title: "Req 7a2 — American Teaching System"
+      - title: "a American Teaching System"
         url: "/merit-badges/snow-sports/guide/req7a2/"
         is_sub: true
-      - title: "Req 7a3 — Types of Alpine Skis"
+      - title: "a Types of Alpine Skis"
         url: "/merit-badges/snow-sports/guide/req7a3/"
         is_sub: true
-      - title: "Req 7a4 — Riding a Lift"
+      - title: "a Riding a Lift"
         url: "/merit-badges/snow-sports/guide/req7a4/"
         is_sub: true
-      - title: "Req 7a5 — Beginning Maneuvers"
+      - title: "a Beginning Maneuvers"
         url: "/merit-badges/snow-sports/guide/req7a5/"
         is_sub: true
-      - title: "Req 7a6 — Linked Wedge Turns"
+      - title: "a Linked Wedge Turns"
         url: "/merit-badges/snow-sports/guide/req7a6/"
         is_sub: true
-      - title: "Req 7a7 — Christies"
+      - title: "a Christies"
         url: "/merit-badges/snow-sports/guide/req7a7/"
         is_sub: true
-      - title: "Req 7a8 — Controlled Run"
+      - title: "a Controlled Run"
         url: "/merit-badges/snow-sports/guide/req7a8/"
         is_sub: true
-      - title: "Req 7a9 — Varied Conditions"
+      - title: "a Varied Conditions"
         url: "/merit-badges/snow-sports/guide/req7a9/"
         is_sub: true
-      - title: "Req 7a10 — Major Ski Organizations"
+      - title: "a Major Ski Organizations"
         url: "/merit-badges/snow-sports/guide/req7a-10/"
         is_sub: true
-  - group_title: "Option B — Nordic Skiing"
+  - group_title: "7. Option B — Nordic Skiing"
     items:
-      - title: "Req 7b — Cross-Country (Nordic) Skiing"
+      - title: "b Cross-Country (Nordic) Skiing"
         url: "/merit-badges/snow-sports/guide/req7b/"
         is_sub: false
-      - title: "Req 7b1 — Equipment Selection"
+      - title: "b Equipment Selection"
         url: "/merit-badges/snow-sports/guide/req7b1/"
         is_sub: true
-      - title: "Req 7b2 — Trail Rules"
+      - title: "b Trail Rules"
         url: "/merit-badges/snow-sports/guide/req7b2/"
         is_sub: true
-      - title: "Req 7b3 — Types of Nordic Skis"
+      - title: "b Types of Nordic Skis"
         url: "/merit-badges/snow-sports/guide/req7b3/"
         is_sub: true
-      - title: "Req 7b4 — Waxing for Touring"
+      - title: "b Waxing for Touring"
         url: "/merit-badges/snow-sports/guide/req7b4/"
         is_sub: true
-      - title: "Req 7b5 — Skiing Styles Compared"
+      - title: "b Skiing Styles Compared"
         url: "/merit-badges/snow-sports/guide/req7b5/"
         is_sub: true
-      - title: "Req 7b6 — One-Day Tour Gear"
+      - title: "b One-Day Tour Gear"
         url: "/merit-badges/snow-sports/guide/req7b6/"
         is_sub: true
-      - title: "Req 7b7 — Map & Compass"
+      - title: "b Map & Compass"
         url: "/merit-badges/snow-sports/guide/req7b7/"
         is_sub: true
-      - title: "Req 7b8 — Speed & Direction Control"
+      - title: "b Speed & Direction Control"
         url: "/merit-badges/snow-sports/guide/req7b8/"
         is_sub: true
-      - title: "Req 7b9 — Propulsion Technique"
+      - title: "b Propulsion Technique"
         url: "/merit-badges/snow-sports/guide/req7b9/"
         is_sub: true
-      - title: "Req 7b10 — 4-Mile Tour"
+      - title: "b 4-Mile Tour"
         url: "/merit-badges/snow-sports/guide/req7b-10/"
         is_sub: true
-      - title: "Req 7b11 — Steep Hills & Difficult Conditions"
+      - title: "b Steep Hills & Difficult Conditions"
         url: "/merit-badges/snow-sports/guide/req7b-11/"
         is_sub: true
-  - group_title: "Option C — Snowboarding"
+  - group_title: "7. Option C — Snowboarding"
     items:
-      - title: "Req 7c — Snowboarding"
+      - title: "c Snowboarding"
         url: "/merit-badges/snow-sports/guide/req7c/"
         is_sub: false
-      - title: "Req 7c1 — Forward-Fall Injuries"
+      - title: "c Forward-Fall Injuries"
         url: "/merit-badges/snow-sports/guide/req7c1/"
         is_sub: true
-      - title: "Req 7c2 — Equipment Selection"
+      - title: "c Equipment Selection"
         url: "/merit-badges/snow-sports/guide/req7c2/"
         is_sub: true
-      - title: "Req 7c3 — Bindings & Leashes"
+      - title: "c Bindings & Leashes"
         url: "/merit-badges/snow-sports/guide/req7c3/"
         is_sub: true
-      - title: "Req 7c4 — Types of Snowboards"
+      - title: "c Types of Snowboards"
         url: "/merit-badges/snow-sports/guide/req7c4/"
         is_sub: true
-      - title: "Req 7c5 — Riding a Lift"
+      - title: "c Riding a Lift"
         url: "/merit-badges/snow-sports/guide/req7c5/"
         is_sub: true
-      - title: "Req 7c6 — Waxing a Snowboard"
+      - title: "c Waxing a Snowboard"
         url: "/merit-badges/snow-sports/guide/req7c6/"
         is_sub: true
-      - title: "Req 7c7 — Beginning & Intermediate Maneuvers"
+      - title: "c Beginning & Intermediate Maneuvers"
         url: "/merit-badges/snow-sports/guide/req7c7/"
         is_sub: true
-      - title: "Req 7c8 — Ollie, Nose-End Grab & Wheelie"
+      - title: "c Ollie, Nose-End Grab & Wheelie"
         url: "/merit-badges/snow-sports/guide/req7c8/"
         is_sub: true
-      - title: "Req 7c9 — Controlled Run"
+      - title: "c Controlled Run"
         url: "/merit-badges/snow-sports/guide/req7c9/"
         is_sub: true
-      - title: "Req 7c10 — Varied Conditions"
+      - title: "c Varied Conditions"
         url: "/merit-badges/snow-sports/guide/req7c-10/"
         is_sub: true
-      - title: "Req 7c11 — Major Snowboarding Organizations"
+      - title: "c Major Snowboarding Organizations"
         url: "/merit-badges/snow-sports/guide/req7c-11/"
         is_sub: true
-  - group_title: "Option D — Snowshoeing"
+  - group_title: "7. Option D — Snowshoeing"
     items:
-      - title: "Req 7d — Snowshoeing"
+      - title: "d Snowshoeing"
         url: "/merit-badges/snow-sports/guide/req7d/"
         is_sub: false
-      - title: "Req 7d1 — Parts of a Snowshoe"
+      - title: "d Parts of a Snowshoe"
         url: "/merit-badges/snow-sports/guide/req7d1/"
         is_sub: true
-      - title: "Req 7d2 — Choosing the Right Size"
+      - title: "d Choosing the Right Size"
         url: "/merit-badges/snow-sports/guide/req7d2/"
         is_sub: true
-      - title: "Req 7d3 — Types & Specialized Uses"
+      - title: "d Types & Specialized Uses"
         url: "/merit-badges/snow-sports/guide/req7d3/"
         is_sub: true
-      - title: "Req 7d4 — Care & Maintenance"
+      - title: "d Care & Maintenance"
         url: "/merit-badges/snow-sports/guide/req7d4/"
         is_sub: true
-      - title: "Req 7d5 — One-Day Hike Gear"
+      - title: "d One-Day Hike Gear"
         url: "/merit-badges/snow-sports/guide/req7d5/"
         is_sub: true
-      - title: "Req 7d6 — Best Areas & Backcountry"
+      - title: "d Best Areas & Backcountry"
         url: "/merit-badges/snow-sports/guide/req7d6/"
         is_sub: true
-      - title: "Req 7d7 — Benefits of Snowshoeing"
+      - title: "d Benefits of Snowshoeing"
         url: "/merit-badges/snow-sports/guide/req7d7/"
         is_sub: true
-      - title: "Req 7d8 — Trail Techniques"
+      - title: "d Trail Techniques"
         url: "/merit-badges/snow-sports/guide/req7d8/"
         is_sub: true
-      - title: "Req 7d9 — 2-Mile Snowshoe Hike"
+      - title: "d 2-Mile Snowshoe Hike"
         url: "/merit-badges/snow-sports/guide/req7d9/"
         is_sub: true
-      - title: "Req 7d10 — Map & Compass"
+      - title: "d Map & Compass"
         url: "/merit-badges/snow-sports/guide/req7d-10/"
         is_sub: true
   - group_title: "Beyond the Badge"

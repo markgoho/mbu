@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Mechanical and Thermal Cutting"
+title: "Mechanical and Thermal Cutting"
 layout: "guide"
-group_title: "Cutting Metal"
+group_title: "4. Cutting Metal"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/welding/guide/req3/"
-prev_title: "Req 3 — Welding Terms and Process Basics"
+prev_title: "Welding Terms and Process Basics"
 next: "/merit-badges/welding/guide/req5/"
-next_title: "Req 5 — Process Selection and Setup"
+next_title: "Process Selection and Setup"
 ---
 
 {{< drg/requirement number="4" >}}

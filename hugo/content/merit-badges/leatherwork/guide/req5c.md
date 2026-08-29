@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Care, Repair, and Comparison"
+title: "Care, Repair, and Comparison"
 layout: guide
-group_title: "Exploring Leather Beyond the Bench"
+group_title: "5. Exploring Leather Beyond the Bench"
 req_number: "5c"
 prev: "/merit-badges/leatherwork/guide/req5b/"
-prev_title: "Req 5b — Tanning a Small Hide"
+prev_title: "Tanning a Small Hide"
 next: "/merit-badges/leatherwork/guide/req5d/"
-next_title: "Req 5d — Visiting a Leather Business"
+next_title: "Visiting a Leather Business"
 ---
 
 {{< drg/requirement number="5c" >}}

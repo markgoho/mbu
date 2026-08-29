@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — See Tracks in a Cloud Chamber"
+title: "See Tracks in a Cloud Chamber"
 layout: "guide"
-group_title: "Classic Experiments"
+group_title: "4. Classic Experiments"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/nuclear-science/guide/req4a/"
-prev_title: "Req 4a — Build an Electroscope"
+prev_title: "Build an Electroscope"
 next: "/merit-badges/nuclear-science/guide/req4c/"
-next_title: "Req 4c — Model Half-Life"
+next_title: "Model Half-Life"
 ---
 
 {{< drg/requirement number="4b" >}}

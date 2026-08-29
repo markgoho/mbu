@@ -1,13 +1,13 @@
 ---
-title: "Req 7c6 — Waxing a Snowboard"
+title: "Waxing a Snowboard"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c6"
 req_path: "7.c.6"
 prev: "/merit-badges/snow-sports/guide/req7c5/"
-prev_title: "Req 7c5 — Riding a Lift"
+prev_title: "Riding a Lift"
 next: "/merit-badges/snow-sports/guide/req7c7/"
-next_title: "Req 7c7 — Beginning & Intermediate Maneuvers"
+next_title: "Beginning & Intermediate Maneuvers"
 ---
 
 {{< drg/requirement number="7c6" >}}

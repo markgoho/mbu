@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Shipping 500 Pounds by Truck"
+title: "Shipping 500 Pounds by Truck"
 layout: "guide"
-group_title: "Planning a Shipment"
+group_title: "8. Planning a Shipment"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/truck-transportation/guide/req7/"
-prev_title: "Req 7 — Trucks and the Work They Do"
+prev_title: "Trucks and the Work They Do"
 next: "/merit-badges/truck-transportation/guide/req9/"
-next_title: "Req 9 — Freight Terms You Should Know"
+next_title: "Freight Terms You Should Know"
 ---
 
 {{< drg/requirement number="8" >}}

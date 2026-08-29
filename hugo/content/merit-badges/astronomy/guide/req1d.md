@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Safe Solar Observation"
+title: "Safe Solar Observation"
 layout: guide
-group_title: "Safety Under the Stars"
+group_title: "1. Safety Under the Stars"
 req_number: "1d"
 prev: "/merit-badges/astronomy/guide/req1c/"
-prev_title: "Req 1c — Clothing & Night Precautions"
+prev_title: "Clothing & Night Precautions"
 next: "/merit-badges/astronomy/guide/req2/"
-next_title: "Req 2 — Light Pollution"
+next_title: "Light Pollution"
 ---
 
 {{< drg/requirement number="1d" >}}

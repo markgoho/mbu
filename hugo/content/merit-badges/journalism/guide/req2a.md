@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Print, Magazine & Online Reporting"
+title: "Print, Magazine & Online Reporting"
 layout: guide
-group_title: "Reporting Across Platforms"
+group_title: "2. Reporting Across Platforms"
 req_number: "2a"
 prev: "/merit-badges/journalism/guide/req2/"
-prev_title: "Req 2 — Choose Your Newsroom"
+prev_title: "Choose Your Newsroom"
 next: "/merit-badges/journalism/guide/req2a1/"
-next_title: "Req 2a1 — Comparing Coverage"
+next_title: "Comparing Coverage"
 ---
 
 {{< drg/requirement number="2" option="Option A—Newspaper, Magazine, and Online Journalism" >}}

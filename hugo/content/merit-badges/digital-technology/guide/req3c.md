@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Programmable Devices"
+title: "Programmable Devices"
 layout: guide
-group_title: "How Digital Data Works"
+group_title: "3. How Digital Data Works"
 req_number: "3c"
 prev: "/merit-badges/digital-technology/guide/req3b/"
-prev_title: "Req 3b — Lossy vs. Lossless Compression"
+prev_title: "Lossy vs. Lossless Compression"
 next: "/merit-badges/digital-technology/guide/req3d/"
-next_title: "Req 3d — Computers, Mobile & Consoles"
+next_title: "Computers, Mobile & Consoles"
 ---
 
 {{< drg/requirement number="3c" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 2a9 — Backward Glide"
+title: "Backward Glide"
 layout: "guide"
-group_title: "Option A — Ice Skating"
+group_title: "2. Option A — Ice Skating"
 req_number: "2a9"
 req_path: "2.a.9"
 prev: "/merit-badges/skating/guide/req2a8/"
-prev_title: "Req 2a8 — T-Position Stroking"
+prev_title: "T-Position Stroking"
 next: "/merit-badges/skating/guide/req2a-10/"
-next_title: "Req 2a10 — Backward Skating"
+next_title: "Backward Skating"
 ---
 
 {{< drg/requirement number="2a9" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5d — Grading & Classification"
+title: "Grading & Classification"
 layout: guide
-group_title: "Knowing Your Collection"
+group_title: "5. Knowing Your Collection"
 req_number: "5d"
 prev: "/merit-badges/collections/guide/req5c/"
-prev_title: "Req 5c — Monetary Value"
+prev_title: "Monetary Value"
 next: "/merit-badges/collections/guide/req5e/"
-next_title: "Req 5e — Collector Associations"
+next_title: "Collector Associations"
 ---
 
 {{< drg/requirement number="5d" >}}

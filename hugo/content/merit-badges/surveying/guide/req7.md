@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Why GPS Matters in Surveying"
+title: "Why GPS Matters in Surveying"
 layout: "guide"
-group_title: "Satellite Positioning"
+group_title: "7. Satellite Positioning"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/surveying/guide/req6/"
-prev_title: "Req 6 — Drones and Laser Scanning"
+prev_title: "Drones and Laser Scanning"
 next: "/merit-badges/surveying/guide/req8/"
-next_title: "Req 8 — Surveying Career Paths"
+next_title: "Surveying Career Paths"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Know Your Arrows"
+title: "Know Your Arrows"
 layout: guide
-group_title: "Arrows & Equipment"
+group_title: "2. Arrows & Equipment"
 req_number: "2"
 prev: "/merit-badges/archery/guide/req1e/"
-prev_title: "Req 1e — Archery Laws"
+prev_title: "Archery Laws"
 next: "/merit-badges/archery/guide/req3/"
-next_title: "Req 3 — Accessories & Terminology"
+next_title: "Accessories & Terminology"
 ---
 
 {{< drg/requirement number="2" >}}

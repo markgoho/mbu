@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Disability Etiquette"
+title: "Disability Etiquette"
 layout: guide
-group_title: "Understanding Disabilities"
+group_title: "1. Understanding Disabilities"
 req_number: "1b"
 prev: "/merit-badges/disabilities-awareness/guide/req1a/"
-prev_title: "Req 1a — Key Terminology"
+prev_title: "Key Terminology"
 next: "/merit-badges/disabilities-awareness/guide/req2/"
-next_title: "Req 2 — Visiting an Agency"
+next_title: "Visiting an Agency"
 ---
 
 {{< drg/requirement number="1b" >}}

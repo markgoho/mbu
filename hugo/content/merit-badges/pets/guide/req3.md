@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Read and Report"
+title: "Read and Report"
 layout: "guide"
-group_title: "Learning From Experts"
+group_title: "3. Learning From Experts"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/pets/guide/req2/"
-prev_title: "Req 2 — Know Your Pet Well"
+prev_title: "Know Your Pet Well"
 next: "/merit-badges/pets/guide/req4/"
-next_title: "Req 4 — Show Time or Trick Time"
+next_title: "Show Time or Trick Time"
 ---
 
 {{< drg/requirement number="3" >}}

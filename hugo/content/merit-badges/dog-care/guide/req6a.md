@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Vaccination Planning"
+title: "Vaccination Planning"
 layout: guide
-group_title: "Keeping Dogs Healthy"
+group_title: "6. Keeping Dogs Healthy"
 req_number: "6a"
 prev: "/merit-badges/dog-care/guide/req5/"
-prev_title: "Req 5 — Obedience Basics"
+prev_title: "Obedience Basics"
 next: "/merit-badges/dog-care/guide/req6b/"
-next_title: "Req 6b — Parasite Prevention"
+next_title: "Parasite Prevention"
 ---
 
 {{< drg/requirement number="6a" >}}

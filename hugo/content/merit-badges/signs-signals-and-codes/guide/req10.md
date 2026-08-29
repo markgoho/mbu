@@ -1,11 +1,11 @@
 ---
-title: "Req 10 — Secret Codes and Cryptography"
+title: "Secret Codes and Cryptography"
 layout: "guide"
-group_title: "Hidden Messages"
+group_title: "10. Hidden Messages"
 req_number: "10"
 req_path: "10"
 prev: "/merit-badges/signs-signals-and-codes/guide/req9/"
-prev_title: "Req 9 — Symbols in Daily Life"
+prev_title: "Symbols in Daily Life"
 next: "/merit-badges/signs-signals-and-codes/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

@@ -1,13 +1,13 @@
 ---
-title: "Req 8d — A Thematic Collection"
+title: "A Thematic Collection"
 layout: "guide"
-group_title: "Building Your Collection"
+group_title: "8. Building Your Collection"
 req_number: "8d"
 req_path: "8.d"
 prev: "/merit-badges/stamp-collecting/guide/req8c/"
-prev_title: "Req 8c — One Country or Region"
+prev_title: "One Country or Region"
 next: "/merit-badges/stamp-collecting/guide/req8e/"
-next_title: "Req 8e — A 30-Day Mail Study"
+next_title: "A 30-Day Mail Study"
 ---
 
 {{< drg/requirement number="8d" >}}

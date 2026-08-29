@@ -1,12 +1,12 @@
 ---
-title: "Req 4b1 — Power Sources in the United States"
+title: "Power Sources in the United States"
 layout: guide
-group_title: "Energy Resources"
+group_title: "4. Energy Resources"
 req_number: "4b1"
 prev: "/merit-badges/geology/guide/req4b/"
-prev_title: "Req 4b — Energy Underground"
+prev_title: "Energy Underground"
 next: "/merit-badges/geology/guide/req4b2/"
-next_title: "Req 4b2 — Source, Trap, and Reservoir"
+next_title: "Source, Trap, and Reservoir"
 ---
 
 {{< drg/requirement number="4b1" >}}

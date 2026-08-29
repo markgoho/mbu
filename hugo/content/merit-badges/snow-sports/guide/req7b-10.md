@@ -1,13 +1,13 @@
 ---
-title: "Req 7b10 — 4-Mile Tour"
+title: "4-Mile Tour"
 layout: "guide"
-group_title: "Option B — Nordic Skiing"
+group_title: "7. Option B — Nordic Skiing"
 req_number: "7b10"
 req_path: "7.b.10"
 prev: "/merit-badges/snow-sports/guide/req7b9/"
-prev_title: "Req 7b9 — Propulsion Technique"
+prev_title: "Propulsion Technique"
 next: "/merit-badges/snow-sports/guide/req7b-11/"
-next_title: "Req 7b11 — Steep Hills & Difficult Conditions"
+next_title: "Steep Hills & Difficult Conditions"
 ---
 
 {{< drg/requirement number="7b10" >}}

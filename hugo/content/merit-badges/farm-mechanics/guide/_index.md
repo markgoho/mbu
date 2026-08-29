@@ -4,58 +4,58 @@ layout: guide
 badge_name: "Farm Mechanics"
 group_title: "Getting Started"
 next: "/merit-badges/farm-mechanics/guide/req1a/"
-next_title: "Req 1a — Safety Equipment & Clothing"
+next_title: "Safety Equipment & Clothing"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/farm-mechanics/guide/"
-  - group_title: "Farm Shop Safety"
+  - group_title: "1. Farm Shop Safety"
     items:
-      - title: "Req 1a — Safety Equipment & Clothing"
+      - title: "a Safety Equipment & Clothing"
         url: "/merit-badges/farm-mechanics/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Design a Safe Farm Shop"
+      - title: "b Design a Safe Farm Shop"
         url: "/merit-badges/farm-mechanics/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Safety Symbols & Warnings"
+      - title: "c Safety Symbols & Warnings"
         url: "/merit-badges/farm-mechanics/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Safety Data Sheets"
+      - title: "d Safety Data Sheets"
         url: "/merit-badges/farm-mechanics/guide/req1d/"
         is_sub: true
-  - group_title: "Understanding Farm Power Systems"
+  - group_title: "2. Understanding Farm Power Systems"
     items:
-      - title: "Req 2a — Diesel Engines"
+      - title: "a Diesel Engines"
         url: "/merit-badges/farm-mechanics/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Hydraulic Systems"
+      - title: "b Hydraulic Systems"
         url: "/merit-badges/farm-mechanics/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Transmissions & Power"
+      - title: "c Transmissions & Power"
         url: "/merit-badges/farm-mechanics/guide/req2c/"
         is_sub: true
-  - group_title: "Tool Maintenance Essentials"
+  - group_title: "3. Tool Maintenance Essentials"
     items:
-      - title: "Req 3 — Tool Maintenance Skills"
+      - title: "3. Tool Maintenance Skills"
         url: "/merit-badges/farm-mechanics/guide/req3/"
         is_sub: false
-  - group_title: "Equipment Service Maintenance"
+  - group_title: "4. Equipment Service Maintenance"
     items:
-      - title: "Req 4 — Equipment Maintenance Tasks"
+      - title: "4. Equipment Maintenance Tasks"
         url: "/merit-badges/farm-mechanics/guide/req4/"
         is_sub: false
-  - group_title: "Keeping Equipment Running"
+  - group_title: "5. Keeping Equipment Running"
     items:
-      - title: "Req 5 — Interview an Implement Dealer"
+      - title: "5. Interview an Implement Dealer"
         url: "/merit-badges/farm-mechanics/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Maintenance Procedures"
+      - title: "6. Maintenance Procedures"
         url: "/merit-badges/farm-mechanics/guide/req6/"
         is_sub: false
-  - group_title: "Careers & Beyond"
+  - group_title: "7. Careers & Beyond"
     items:
-      - title: "Req 7 — Careers in Farm Mechanics"
+      - title: "7. Careers in Farm Mechanics"
         url: "/merit-badges/farm-mechanics/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Labor Unions"
+title: "Labor Unions"
 layout: guide
-group_title: "Foundations of American Business"
+group_title: "1. Foundations of American Business"
 req_number: "1d"
 prev: "/merit-badges/american-business/guide/req1c/"
-prev_title: "Req 1c — Areas of Business"
+prev_title: "Areas of Business"
 next: "/merit-badges/american-business/guide/req1e/"
-next_title: "Req 1e — Business & the Economy"
+next_title: "Business & the Economy"
 ---
 
 {{< drg/requirement number="1d" >}}

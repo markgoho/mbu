@@ -1,13 +1,13 @@
 ---
-title: "Req 8c — One Country or Region"
+title: "One Country or Region"
 layout: "guide"
-group_title: "Building Your Collection"
+group_title: "8. Building Your Collection"
 req_number: "8c"
 req_path: "8.c"
 prev: "/merit-badges/stamp-collecting/guide/req8b/"
-prev_title: "Req 8b — 50 Countries on Maps"
+prev_title: "50 Countries on Maps"
 next: "/merit-badges/stamp-collecting/guide/req8d/"
-next_title: "Req 8d — A Thematic Collection"
+next_title: "A Thematic Collection"
 ---
 
 {{< drg/requirement number="8c" >}}

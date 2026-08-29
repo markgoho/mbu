@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Emergency Service"
+title: "Emergency Service"
 layout: guide
-group_title: "Emergency Service"
+group_title: "8. Emergency Service"
 req_number: "8"
 prev: "/merit-badges/emergency-preparedness/guide/req7/"
-prev_title: "Requirement 7 — NIMS and ICS"
+prev_title: "NIMS and ICS"
 next: "/merit-badges/emergency-preparedness/guide/req9/"
-next_title: "Requirement 9 — First Aid Merit Badge"
+next_title: "First Aid Merit Badge"
 ---
 
 {{< drg/requirement number="8" >}}

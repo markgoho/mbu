@@ -1,12 +1,12 @@
 ---
-title: "Req 8a — Deep Water Exit & Reentry"
+title: "Deep Water Exit & Reentry"
 layout: guide
-group_title: "Capsizing & Rescue"
+group_title: "8. Capsizing & Rescue"
 req_number: "8a"
 prev: "/merit-badges/canoeing/guide/req7/"
-prev_title: "Req 7 — On the Water Basics"
+prev_title: "On the Water Basics"
 next: "/merit-badges/canoeing/guide/req8b/"
-next_title: "Req 8b — Controlled Capsize"
+next_title: "Controlled Capsize"
 ---
 
 {{< drg/requirement number="8a" >}}

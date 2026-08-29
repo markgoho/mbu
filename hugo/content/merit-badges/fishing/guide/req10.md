@@ -1,10 +1,10 @@
 ---
-title: "Req 10 — Cleaning and Cooking Your Catch"
+title: "Cleaning and Cooking Your Catch"
 layout: guide
-group_title: "On-the-Water Skills"
+group_title: "9. On-the-Water Skills"
 req_number: "10"
 prev: "/merit-badges/fishing/guide/req9/"
-prev_title: "Req 9 — Catching and Identifying a Fish"
+prev_title: "Catching and Identifying a Fish"
 next: "/merit-badges/fishing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

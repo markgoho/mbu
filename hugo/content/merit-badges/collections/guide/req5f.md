@@ -1,12 +1,12 @@
 ---
-title: "Req 5f — Identification Marks"
+title: "Identification Marks"
 layout: guide
-group_title: "Knowing Your Collection"
+group_title: "5. Knowing Your Collection"
 req_number: "5f"
 prev: "/merit-badges/collections/guide/req5e/"
-prev_title: "Req 5e — Collector Associations"
+prev_title: "Collector Associations"
 next: "/merit-badges/collections/guide/req6/"
-next_title: "Req 6 — Future Plans"
+next_title: "Future Plans"
 ---
 
 {{< drg/requirement number="5f" >}}

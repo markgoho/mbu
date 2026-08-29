@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Choose How to Share What You Read"
+title: "Choose How to Share What You Read"
 layout: "guide"
-group_title: "Responding to Books"
+group_title: "3. Responding to Books"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/reading/guide/req2/"
-prev_title: "Req 2 — Choose Books You'll Actually Finish"
+prev_title: "Choose Books You"
 next: "/merit-badges/reading/guide/req3a/"
-next_title: "Req 3a — Write a Thoughtful Review"
+next_title: "Write a Thoughtful Review"
 ---
 
 {{< drg/requirement number="3" >}}

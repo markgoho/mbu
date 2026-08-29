@@ -1,10 +1,10 @@
 ---
-title: "Requirement 6 — Exploring Forensic Careers"
+title: "Exploring Forensic Careers"
 layout: guide
-group_title: "Careers in Forensics"
+group_title: "6. Careers in Forensics"
 req_number: "6"
 prev: "/merit-badges/fingerprinting/guide/req5/"
-prev_title: "Requirement 5 — Identifying Fingerprint Patterns"
+prev_title: "Identifying Fingerprint Patterns"
 next: "/merit-badges/fingerprinting/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

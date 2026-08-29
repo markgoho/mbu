@@ -1,13 +1,13 @@
 ---
-title: "Req 8a5 — Transceivers & Repeaters"
+title: "Transceivers & Repeaters"
 layout: "guide"
-group_title: "Option A: Amateur Radio"
+group_title: "8. Option A: Amateur Radio"
 req_number: "8a5"
 req_path: "8.a.5"
 prev: "/merit-badges/radio/guide/req8a4/"
-prev_title: "Req 8a4 — Emergency Calls"
+prev_title: "Emergency Calls"
 next: "/merit-badges/radio/guide/req8a6/"
-next_title: "Req 8a6 — Make a Contact"
+next_title: "Make a Contact"
 guide_nav:
   - group_title: "Getting Started"
     items:

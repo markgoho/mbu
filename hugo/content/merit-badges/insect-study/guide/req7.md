@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Bees, Crops, and Pest Control"
+title: "Bees, Crops, and Pest Control"
 layout: guide
-group_title: "Agriculture and Human Impact"
+group_title: "7. Agriculture and Human Impact"
 req_number: "7"
 prev: "/merit-badges/insect-study/guide/req6/"
-prev_title: "Req 6 — Insects in Ecosystems"
+prev_title: "Insects in Ecosystems"
 next: "/merit-badges/insect-study/guide/req8/"
-next_title: "Req 8 — Migration and Conservation"
+next_title: "Migration and Conservation"
 ---
 
 {{< drg/requirement number="7" >}}

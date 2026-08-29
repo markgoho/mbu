@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Ethical Leadership"
+title: "Ethical Leadership"
 layout: guide
-group_title: "Ethical Leadership"
+group_title: "2. Ethical Leadership"
 req_number: "2"
 prev: "/merit-badges/citizenship-in-society/guide/req1/"
-prev_title: "Req 1 — Key Terms"
+prev_title: "Key Terms"
 next: "/merit-badges/citizenship-in-society/guide/req3/"
-next_title: "Req 3 — Ethical Decisions"
+next_title: "Ethical Decisions"
 ---
 
 {{< drg/requirement number="2" >}}

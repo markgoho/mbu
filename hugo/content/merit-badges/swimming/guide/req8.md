@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Standing & Shallow Dives"
+title: "Standing & Shallow Dives"
 layout: guide
-group_title: "Diving Skills"
+group_title: "7. Diving Skills"
 req_number: "8"
 prev: "/merit-badges/swimming/guide/req7/"
-prev_title: "Req 7 — Surface Diving"
+prev_title: "Surface Diving"
 next: "/merit-badges/swimming/guide/req9/"
-next_title: "Req 9 — Fitness Benefits"
+next_title: "Fitness Benefits"
 ---
 
 {{< drg/requirement number="8" >}}

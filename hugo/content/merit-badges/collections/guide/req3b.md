@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Displaying Your Collection"
+title: "Displaying Your Collection"
 layout: guide
-group_title: "Preserving & Displaying"
+group_title: "3. Preserving & Displaying"
 req_number: "3b"
 prev: "/merit-badges/collections/guide/req3a/"
-prev_title: "Req 3a — Handling, Cleaning & Storage"
+prev_title: "Handling, Cleaning & Storage"
 next: "/merit-badges/collections/guide/req3c/"
-next_title: "Req 3c — Events for Collectors"
+next_title: "Events for Collectors"
 ---
 
 {{< drg/requirement number="3b" >}}

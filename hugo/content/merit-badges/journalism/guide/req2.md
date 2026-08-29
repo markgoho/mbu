@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Choose Your Newsroom"
+title: "Choose Your Newsroom"
 layout: guide
-group_title: "Reporting Across Platforms"
+group_title: "2. Reporting Across Platforms"
 req_number: "2"
 prev: "/merit-badges/journalism/guide/req1/"
-prev_title: "Req 1 — Press Freedom & Media Ethics"
+prev_title: "Press Freedom & Media Ethics"
 next: "/merit-badges/journalism/guide/req2a/"
-next_title: "Req 2a — Print, Magazine & Online Reporting"
+next_title: "Print, Magazine & Online Reporting"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Study a Scientific Expedition"
+title: "Study a Scientific Expedition"
 layout: "guide"
-group_title: "Real-World Exploration"
+group_title: "4. Real-World Exploration"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/exploration/guide/req4a/"
-prev_title: "Req 4a — Profile a Living Explorer"
+prev_title: "Profile a Living Explorer"
 next: "/merit-badges/exploration/guide/req4c/"
-next_title: "Req 4c — Explore Discovery in the Lab"
+next_title: "Explore Discovery in the Lab"
 ---
 
 {{< drg/requirement number="4b" >}}

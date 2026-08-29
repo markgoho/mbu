@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — The Big Trek"
+title: "The Big Trek"
 layout: guide
-group_title: "The Big Trek"
+group_title: "11. The Big Trek"
 req_number: "11"
 prev: "/merit-badges/backpacking/guide/req10/"
-prev_title: "Req 10 — Three-Day Treks"
+prev_title: "Three-Day Treks"
 next: "/merit-badges/backpacking/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

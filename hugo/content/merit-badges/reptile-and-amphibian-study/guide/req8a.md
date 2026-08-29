@@ -1,13 +1,13 @@
 ---
-title: "Req 8a — Care for a Captive Animal"
+title: "Care for a Captive Animal"
 layout: "guide"
-group_title: "Hands-On Observation"
+group_title: "8. Hands-On Observation"
 req_number: "8a"
 req_path: "8.a"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/req8/"
-prev_title: "Req 8 — Choose Your Observation Project"
+prev_title: "Choose Your Observation Project"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req8b/"
-next_title: "Req 8b — Study an Animal in Captivity"
+next_title: "Study an Animal in Captivity"
 ---
 
 {{< drg/requirement number="8a" >}}

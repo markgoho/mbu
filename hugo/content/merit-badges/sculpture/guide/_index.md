@@ -4,51 +4,51 @@ layout: "guide"
 badge_name: "Sculpture"
 group_title: "Getting Started"
 next: "/merit-badges/sculpture/guide/req1/"
-next_title: "Req 1 — Studio Safety"
+next_title: "Studio Safety"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/sculpture/guide/"
         is_sub: false
-  - group_title: "Studio Safety"
+  - group_title: "1. Studio Safety"
     items:
-      - title: "Req 1 — Studio Safety"
+      - title: "1. Studio Safety"
         url: "/merit-badges/sculpture/guide/req1/"
         is_sub: false
-  - group_title: "Choose Two Sculpture Experiences"
+  - group_title: "2. Choose Two Sculpture Experiences"
     items:
-      - title: "Req 2 — Choose Your Projects"
+      - title: "2. Choose Your Projects"
         url: "/merit-badges/sculpture/guide/req2/"
         is_sub: false
-  - group_title: "Head and Figure Modeling"
+  - group_title: "2. Head and Figure Modeling"
     items:
-      - title: "Req 2a — Head and Figure Study"
+      - title: "a Head and Figure Study"
         url: "/merit-badges/sculpture/guide/req2a/"
         is_sub: true
-  - group_title: "Mold Making and Casting"
+  - group_title: "2. Mold Making and Casting"
     items:
-      - title: "Req 2b — Mold and Cast"
+      - title: "b Mold and Cast"
         url: "/merit-badges/sculpture/guide/req2b/"
         is_sub: true
-  - group_title: "Art Spaces and Meaning"
+  - group_title: "2. Art Spaces and Meaning"
     items:
-      - title: "Req 2c — Art in Public and Community Life"
+      - title: "c Art in Public and Community Life"
         url: "/merit-badges/sculpture/guide/req2c/"
         is_sub: true
-  - group_title: "Choose Your Next Path"
+  - group_title: "3. Choose Your Next Path"
     items:
-      - title: "Req 3 — Career or Hobby"
+      - title: "3. Career or Hobby"
         url: "/merit-badges/sculpture/guide/req3/"
         is_sub: false
-  - group_title: "Sculpture Careers"
+  - group_title: "3. Sculpture Careers"
     items:
-      - title: "Req 3a — Research a Sculpture Career"
+      - title: "a Research a Sculpture Career"
         url: "/merit-badges/sculpture/guide/req3a/"
         is_sub: true
-  - group_title: "Sculpture as a Hobby"
+  - group_title: "3. Sculpture as a Hobby"
     items:
-      - title: "Req 3b — Build a Hobby Path"
+      - title: "b Build a Hobby Path"
         url: "/merit-badges/sculpture/guide/req3b/"
         is_sub: true
   - group_title: "Beyond the Badge"

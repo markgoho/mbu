@@ -1,11 +1,11 @@
 ---
-title: "Req 11 — Careers in Wildland Fire"
+title: "Careers in Wildland Fire"
 layout: "guide"
-group_title: "Careers"
+group_title: "11. Careers"
 req_number: "11"
 req_path: "11"
 prev: "/merit-badges/wildland-fire-management/guide/req10/"
-prev_title: "Req 10 — Lessons From a Catastrophic Fire"
+prev_title: "Lessons From a Catastrophic Fire"
 next: "/merit-badges/wildland-fire-management/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

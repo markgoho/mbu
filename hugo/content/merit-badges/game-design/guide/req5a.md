@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Vision, Theme, and Players"
+title: "Vision, Theme, and Players"
 layout: guide
-group_title: "Designing Your Game"
+group_title: "5. Designing Your Game"
 req_number: "5a"
 prev: "/merit-badges/game-design/guide/req4d/"
-prev_title: "Req 4d — Analyze the Results"
+prev_title: "Analyze the Results"
 next: "/merit-badges/game-design/guide/req5b/"
-next_title: "Req 5b — Why Your Game Is Fun"
+next_title: "Why Your Game Is Fun"
 ---
 
 {{< drg/requirement number="5a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7a6 — Waste-Treatment Plant"
+title: "Waste-Treatment Plant"
 layout: "guide"
-group_title: "Field Visits & Reports"
+group_title: "7. Field Visits & Reports"
 req_number: "7a6"
 req_path: "7.a.6"
 prev: "/merit-badges/soil-and-water-conservation/guide/req7a5/"
-prev_title: "Req 7a5 — Managed Watershed"
+prev_title: "Managed Watershed"
 next: "/merit-badges/soil-and-water-conservation/guide/req7a7/"
-next_title: "Req 7a7 — Drinking Water Treatment Plant"
+next_title: "Drinking Water Treatment Plant"
 ---
 
 {{< drg/requirement number="7a6" >}}

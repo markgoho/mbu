@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — The Constitution"
+title: "The Constitution"
 layout: guide
-group_title: "The Constitution"
+group_title: "1. The Constitution"
 req_number: "1"
 prev: "/merit-badges/citizenship-in-the-nation/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/citizenship-in-the-nation/guide/req2/"
-next_title: "Req 2 — The Preamble"
+next_title: "The Preamble"
 ---
 
 {{< drg/requirement number="1" >}}

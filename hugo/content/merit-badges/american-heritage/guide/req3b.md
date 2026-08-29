@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — National Symbols"
+title: "National Symbols"
 layout: guide
-group_title: "National Symbols & Family Roots"
+group_title: "3. National Symbols & Family Roots"
 req_number: "3b"
 prev: "/merit-badges/american-heritage/guide/req3a/"
-prev_title: "Req 3a — America in the News"
+prev_title: "America in the News"
 next: "/merit-badges/american-heritage/guide/req3c/"
-next_title: "Req 3c — Your Family's Story"
+next_title: "Your Family"
 ---
 
 {{< drg/requirement number="3b" >}}

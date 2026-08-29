@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Architecture Careers"
+group_title: "5. Architecture Careers"
 req_number: "5"
 prev: "/merit-badges/architecture/guide/req4/"
-prev_title: "Req 4 — Floor Plan Drawing"
+prev_title: "Floor Plan Drawing"
 next: "/merit-badges/architecture/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

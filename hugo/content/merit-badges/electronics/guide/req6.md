@@ -1,10 +1,10 @@
 ---
-title: "Req 6 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Electronics Careers"
+group_title: "6. Electronics Careers"
 req_number: "6"
 prev: "/merit-badges/electronics/guide/req5d/"
-prev_title: "Req 5d — Through Hole vs. Surface Mount"
+prev_title: "Through Hole vs. Surface Mount"
 next: "/merit-badges/electronics/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

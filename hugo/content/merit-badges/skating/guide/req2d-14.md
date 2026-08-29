@@ -1,13 +1,13 @@
 ---
-title: "Req 2d14 — Three Trick Types"
+title: "Three Trick Types"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d14"
 req_path: "2.d.14"
 prev: "/merit-badges/skating/guide/req2d-13/"
-prev_title: "Req 2d13 — Drop-In from Coping"
+prev_title: "Drop-In from Coping"
 next: "/merit-badges/skating/guide/req2d-14a/"
-next_title: "Req 2d14a — Flat Ground Tricks"
+next_title: "Flat Ground Tricks"
 ---
 
 {{< drg/requirement number="2d14" >}}

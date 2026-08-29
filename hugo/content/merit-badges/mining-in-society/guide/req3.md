@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Mine Safety and Protective Gear"
+title: "Mine Safety and Protective Gear"
 layout: "guide"
-group_title: "Safety Underground and on the Surface"
+group_title: "3. Safety Underground and on the Surface"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/mining-in-society/guide/req2/"
-prev_title: "Req 2 — Mapping Mines and Resources"
+prev_title: "Mapping Mines and Resources"
 next: "/merit-badges/mining-in-society/guide/req4/"
-next_title: "Req 4 — Why Abandoned Mines Are Dangerous"
+next_title: "Why Abandoned Mines Are Dangerous"
 ---
 
 {{< drg/requirement number="3" >}}

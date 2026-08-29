@@ -4,38 +4,38 @@ layout: guide
 badge_name: "Public Speaking"
 group_title: "Getting Started"
 next: "/merit-badges/public-speaking/guide/req1/"
-next_title: "Req 1 — Your Self-Introduction"
+next_title: "Your Self-Introduction"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/public-speaking/guide/"
-  - group_title: "Introducing Yourself"
+  - group_title: "1. Introducing Yourself"
     items:
-      - title: "Req 1 — Your Self-Introduction"
+      - title: "1. Your Self-Introduction"
         url: "/merit-badges/public-speaking/guide/req1/"
         is_sub: false
-  - group_title: "Body Language & Visual Aids"
+  - group_title: "2. Body Language & Visual Aids"
     items:
-      - title: "Req 2 — Prepared Talk with Visuals"
+      - title: "2. Prepared Talk with Visuals"
         url: "/merit-badges/public-speaking/guide/req2/"
         is_sub: false
-  - group_title: "Thinking on Your Feet"
+  - group_title: "3. Thinking on Your Feet"
     items:
-      - title: "Req 3 — Impromptu Speaking"
+      - title: "3. Impromptu Speaking"
         url: "/merit-badges/public-speaking/guide/req3/"
         is_sub: false
-  - group_title: "The Big Speech"
+  - group_title: "4. The Big Speech"
     items:
-      - title: "Req 4 — Researched Speech"
+      - title: "4. Researched Speech"
         url: "/merit-badges/public-speaking/guide/req4/"
         is_sub: false
       - title: "Speech Planning Worksheet"
         url: "/merit-badges/public-speaking/guide/speech-planning-worksheet/"
         is_sub: true
-  - group_title: "Leading a Meeting"
+  - group_title: "5. Leading a Meeting"
     items:
-      - title: "Req 5 — Parliamentary Procedure"
+      - title: "5. Parliamentary Procedure"
         url: "/merit-badges/public-speaking/guide/req5/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -4,38 +4,38 @@ layout: "guide"
 badge_name: "Wood Carving"
 group_title: "Getting Started"
 next: "/merit-badges/wood-carving/guide/req1/"
-next_title: "Req 1 — Carving Safely"
+next_title: "Carving Safely"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/wood-carving/guide/"
         is_sub: false
-  - group_title: "Safety and Readiness"
+  - group_title: "1. Safety and Readiness"
     items:
-      - title: "Req 1 — Carving Safely"
+      - title: "1. Carving Safely"
         url: "/merit-badges/wood-carving/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Totin' Chip and Safety Checklist"
+      - title: "2. Totin"
         url: "/merit-badges/wood-carving/guide/req2/"
         is_sub: false
-  - group_title: "Tools and Technique"
+  - group_title: "3. Tools and Technique"
     items:
-      - title: "Req 3 — Tools and Sharpening"
+      - title: "3. Tools and Sharpening"
         url: "/merit-badges/wood-carving/guide/req3/"
         is_sub: false
-      - title: "Req 4 — Practice the Basic Cuts"
+      - title: "4. Practice the Basic Cuts"
         url: "/merit-badges/wood-carving/guide/req4/"
         is_sub: false
-  - group_title: "Choosing and Building Projects"
+  - group_title: "5. Choosing and Building Projects"
     items:
-      - title: "Req 5 — Choosing the Right Wood"
+      - title: "5. Choosing the Right Wood"
         url: "/merit-badges/wood-carving/guide/req5/"
         is_sub: false
-      - title: "Req 6 — Carving in the Round"
+      - title: "6. Carving in the Round"
         url: "/merit-badges/wood-carving/guide/req6/"
         is_sub: false
-      - title: "Req 7 — Relief or Chip Carving"
+      - title: "7. Relief or Chip Carving"
         url: "/merit-badges/wood-carving/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

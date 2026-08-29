@@ -1,13 +1,13 @@
 ---
-title: "Req 2cg — Loading Procedures and Accessories"
+title: "Loading Procedures and Accessories"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cg"
 req_path: "2.c.g"
 prev: "/merit-badges/rifle-shooting/guide/req2cf/"
-prev_title: "Req 2cf — Components of a Load"
+prev_title: "Components of a Load"
 next: "/merit-badges/rifle-shooting/guide/req2ch/"
-next_title: "Req 2ch — Misfires, Hangfires, and Squib Fires"
+next_title: "Misfires, Hangfires, and Squib Fires"
 ---
 
 {{< drg/requirement number="2cg" >}}

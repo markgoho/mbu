@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — The U.S. Ceramic Industry"
+title: "The U.S. Ceramic Industry"
 layout: "guide"
-group_title: "Ceramics in Daily Life"
+group_title: "6. Ceramics in Daily Life"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/pottery/guide/req5/"
-prev_title: "Req 5 — Build, Throw, and Fire"
+prev_title: "Build, Throw, and Fire"
 next: "/merit-badges/pottery/guide/req7/"
-next_title: "Req 7 — Choosing Your Field Experience"
+next_title: "Choosing Your Field Experience"
 ---
 
 {{< drg/requirement number="6" >}}

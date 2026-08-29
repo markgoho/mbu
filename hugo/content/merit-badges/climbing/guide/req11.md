@@ -1,12 +1,12 @@
 ---
-title: "Req 11 — Climbing Technique"
+title: "Climbing Technique"
 layout: guide
-group_title: "Climbing"
+group_title: "11. Climbing"
 req_number: "11"
 prev: "/merit-badges/climbing/guide/req10/"
-prev_title: "Req 10 — Belaying Skills"
+prev_title: "Belaying Skills"
 next: "/merit-badges/climbing/guide/req12/"
-next_title: "Req 12 — Rappelling Technique"
+next_title: "Rappelling Technique"
 ---
 
 {{< drg/requirement number="11" >}}

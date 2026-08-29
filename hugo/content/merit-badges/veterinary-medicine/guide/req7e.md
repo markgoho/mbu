@@ -1,11 +1,11 @@
 ---
-title: "Req 7e — Learning Never Stops"
+title: "Learning Never Stops"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "7e"
 req_path: "7.e"
 prev: "/merit-badges/veterinary-medicine/guide/req7d/"
-prev_title: "Req 7d — What Might Surprise You"
+prev_title: "What Might Surprise You"
 next: "/merit-badges/veterinary-medicine/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

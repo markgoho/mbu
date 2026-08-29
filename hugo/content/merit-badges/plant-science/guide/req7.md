@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Careers or Hobbies"
+title: "Careers or Hobbies"
 layout: "guide"
-group_title: "Careers & Hobbies"
+group_title: "7. Careers & Hobbies"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/plant-science/guide/req6/"
-prev_title: "Req 6 — Native, Cultivated, and Invasive Plants"
+prev_title: "Native, Cultivated, and Invasive Plants"
 next: "/merit-badges/plant-science/guide/req7a/"
-next_title: "Req 7a — Exploring Plant Science Careers"
+next_title: "Exploring Plant Science Careers"
 ---
 
 {{< drg/requirement number="7" >}}

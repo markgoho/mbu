@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Choose Two Missions"
+title: "Choose Two Missions"
 layout: "guide"
-group_title: "Mission Pathways"
+group_title: "5. Mission Pathways"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/space-exploration/guide/req4/"
-prev_title: "Req 4 — Rockets, Orbits, and Images"
+prev_title: "Rockets, Orbits, and Images"
 next: "/merit-badges/space-exploration/guide/req5a/"
-next_title: "Req 5a — Compare Great Missions"
+next_title: "Compare Great Missions"
 ---
 
 {{< drg/requirement number="5" >}}

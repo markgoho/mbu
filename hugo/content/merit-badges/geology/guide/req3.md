@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Geologic Maps"
+title: "Geologic Maps"
 layout: guide
-group_title: "Reading the Rocks"
+group_title: "3. Reading the Rocks"
 req_number: "3"
 prev: "/merit-badges/geology/guide/req2/"
-prev_title: "Req 2 — Resources From the Ground"
+prev_title: "Resources From the Ground"
 next: "/merit-badges/geology/guide/req4/"
-next_title: "Req 4 — Pick Your Option"
+next_title: "Pick Your Option"
 ---
 
 {{< drg/requirement number="3" >}}

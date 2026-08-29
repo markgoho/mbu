@@ -1,12 +1,12 @@
 ---
-title: "Req 10a — Battery, Switch, and Load"
+title: "Battery, Switch, and Load"
 layout: guide
-group_title: "Hands-On Projects"
+group_title: "10. Hands-On Projects"
 req_number: "10a"
 prev: "/merit-badges/electricity/guide/req10/"
-prev_title: "Req 10 — Choose Your Circuit Projects"
+prev_title: "Choose Your Circuit Projects"
 next: "/merit-badges/electricity/guide/req10b/"
-next_title: "Req 10b — Simple Electric Motor"
+next_title: "Simple Electric Motor"
 ---
 
 {{< drg/requirement number="10a" >}}

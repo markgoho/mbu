@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Reading a Property Deed"
+title: "Reading a Property Deed"
 layout: "guide"
-group_title: "Property Records"
+group_title: "5. Property Records"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/surveying/guide/req4/"
-prev_title: "Req 4 — Finding Elevations from a Benchmark"
+prev_title: "Finding Elevations from a Benchmark"
 next: "/merit-badges/surveying/guide/req6/"
-next_title: "Req 6 — Drones and Laser Scanning"
+next_title: "Drones and Laser Scanning"
 ---
 
 {{< drg/requirement number="5" >}}

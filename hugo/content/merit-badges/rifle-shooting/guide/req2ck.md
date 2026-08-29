@@ -1,13 +1,13 @@
 ---
-title: "Req 2ck — Clean a Muzzleloader Properly"
+title: "Clean a Muzzleloader Properly"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2ck"
 req_path: "2.c.k"
 prev: "/merit-badges/rifle-shooting/guide/req2cj/"
-prev_title: "Req 2cj — Cleaning Safety Rules and Materials"
+prev_title: "Cleaning Safety Rules and Materials"
 next: "/merit-badges/rifle-shooting/guide/req2cl/"
-next_title: "Req 2cl — Selecting a Muzzleloading Rifle"
+next_title: "Selecting a Muzzleloading Rifle"
 ---
 
 {{< drg/requirement number="2ck" >}}

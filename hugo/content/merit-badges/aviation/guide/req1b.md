@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — History of Flight"
+title: "History of Flight"
 layout: guide
-group_title: "Aviation Basics"
+group_title: "1. Aviation Basics"
 req_number: "1b"
 prev: "/merit-badges/aviation/guide/req1a/"
-prev_title: "Req 1a — What Is an Aircraft?"
+prev_title: "What Is an Aircraft?"
 next: "/merit-badges/aviation/guide/req1c/"
-next_title: "Req 1c — Fixed Wing vs. Rotary Wing"
+next_title: "Fixed Wing vs. Rotary Wing"
 ---
 
 {{< drg/requirement number="1b" >}}

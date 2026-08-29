@@ -1,13 +1,13 @@
 ---
-title: "Req 5a2 — Sketching Your Sheet Metal Objects"
+title: "Sketching Your Sheet Metal Objects"
 layout: "guide"
-group_title: "Sheet Metal / Tinsmith"
+group_title: "5. Sheet Metal / Tinsmith"
 req_number: "5a2"
 req_path: "5.a.2"
 prev: "/merit-badges/metalwork/guide/req5a1/"
-prev_title: "Req 5a1 — Tinsmith Tools"
+prev_title: "Tinsmith Tools"
 next: "/merit-badges/metalwork/guide/req5a3/"
-next_title: "Req 5a3 — Cutting, Bending & Joining"
+next_title: "Cutting, Bending & Joining"
 ---
 
 {{< drg/requirement number="5a2" >}}

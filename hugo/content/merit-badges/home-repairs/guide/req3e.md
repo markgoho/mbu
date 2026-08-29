@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Fixing a Sagging Door or Gate"
+title: "Fixing a Sagging Door or Gate"
 layout: guide
-group_title: "Workshop Projects"
+group_title: "3. Workshop Projects"
 req_number: "3e"
 prev: "/merit-badges/home-repairs/guide/req3d/"
-prev_title: "Req 3d — Painting and Varnishing"
+prev_title: "Painting and Varnishing"
 next: "/merit-badges/home-repairs/guide/req3f/"
-next_title: "Req 3f — Repairing Steps and Railings"
+next_title: "Repairing Steps and Railings"
 ---
 
 {{< drg/requirement number="3e" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Shop Safety and First Aid"
+title: "Shop Safety and First Aid"
 layout: guide
-group_title: "Safe Leathercraft Basics"
+group_title: "1. Safe Leathercraft Basics"
 req_number: "1"
 prev: "/merit-badges/leatherwork/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/leatherwork/guide/req2/"
-next_title: "Req 2 — Hides, Leather Types, and Best Uses"
+next_title: "Hides, Leather Types, and Best Uses"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — What Great Salespeople Actually Do"
+title: "What Great Salespeople Actually Do"
 layout: "guide"
-group_title: "Understanding the Role"
+group_title: "1. Understanding the Role"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/salesmanship/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/salesmanship/guide/req2/"
-next_title: "Req 2 — Research, Product Knowledge, and Follow-Up"
+next_title: "Research, Product Knowledge, and Follow-Up"
 ---
 
 {{< drg/requirement number="1" >}}

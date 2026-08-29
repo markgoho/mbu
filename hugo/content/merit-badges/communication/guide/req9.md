@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Career Exploration"
+title: "Career Exploration"
 layout: guide
-group_title: "Communication Careers"
+group_title: "9. Communication Careers"
 req_number: "9"
 prev: "/merit-badges/communication/guide/req8/"
-prev_title: "Req 8 — Master of Ceremonies"
+prev_title: "Master of Ceremonies"
 next: "/merit-badges/communication/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

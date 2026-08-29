@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Choose Your Big Build"
+title: "Choose Your Big Build"
 layout: guide
-group_title: "Full-Size Projects"
+group_title: "9. Full-Size Projects"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/pioneering/guide/req8/"
-prev_title: "Req 8 — Build a Strong Frame"
+prev_title: "Build a Strong Frame"
 next: "/merit-badges/pioneering/guide/req9-option1/"
-next_title: "Req 9 — Double A-Frame Monkey Bridge"
+next_title: "Double A-Frame Monkey Bridge"
 ---
 
 {{< drg/requirement number="9" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8c5 — Smartphone Listening"
+title: "Smartphone Listening"
 layout: "guide"
-group_title: "Option C: Shortwave Listening"
+group_title: "8. Option C: Shortwave Listening"
 req_number: "8c5"
 req_path: "8.c.5"
 prev: "/merit-badges/radio/guide/req8c4/"
-prev_title: "Req 8c4 — Why Distant Stations Appear at Night"
+prev_title: "Why Distant Stations Appear at Night"
 next: "/merit-badges/radio/guide/req8d/"
-next_title: "Req 8d — Direction Finding Overview"
+next_title: "Direction Finding Overview"
 guide_nav:
   - group_title: "Getting Started"
     items:

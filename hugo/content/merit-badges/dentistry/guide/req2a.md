@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Causes of Decay & Gum Disease"
+title: "Causes of Decay & Gum Disease"
 layout: guide
-group_title: "Dental Disease & Prevention"
+group_title: "2. Dental Disease & Prevention"
 req_number: "2a"
 prev: "/merit-badges/dentistry/guide/req1/"
-prev_title: "Req 1 — Tooth Anatomy from X-Rays"
+prev_title: "Tooth Anatomy from X-Rays"
 next: "/merit-badges/dentistry/guide/req2b/"
-next_title: "Req 2b — Tooth Trauma & Mouth Guards"
+next_title: "Tooth Trauma & Mouth Guards"
 ---
 
 {{< drg/requirement number="2a" >}}

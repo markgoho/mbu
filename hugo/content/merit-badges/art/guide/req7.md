@@ -1,10 +1,10 @@
 ---
-title: "Req 7 — Careers in Art"
+title: "Careers in Art"
 layout: guide
-group_title: "Exploring the Art World"
+group_title: "6. Exploring the Art World"
 req_number: "7"
 prev: "/merit-badges/art/guide/req6/"
-prev_title: "Req 6 — Visiting Art in Person"
+prev_title: "Visiting Art in Person"
 next: "/merit-badges/art/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

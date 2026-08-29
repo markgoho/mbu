@@ -1,12 +1,12 @@
 ---
-title: "Req 7b — Creel Census"
+title: "Creel Census"
 layout: guide
-group_title: "Fish Study Techniques"
+group_title: "7. Fish Study Techniques"
 req_number: "7b"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req7a/"
-prev_title: "Req 7a — Fish Aging from Scales"
+prev_title: "Fish Aging from Scales"
 next: "/merit-badges/fish-and-wildlife-management/guide/req7c/"
-next_title: "Req 7c — Fish Stomach Contents"
+next_title: "Fish Stomach Contents"
 ---
 
 {{< drg/requirement number="7b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 4c — Magnetic Declination"
+title: "Magnetic Declination"
 layout: guide
-group_title: "Map Skills"
+group_title: "4. Map Skills"
 req_number: "4c"
 prev: "/merit-badges/orienteering/guide/req4b/"
-prev_title: "Req 4b — Map Symbols"
+prev_title: "Map Symbols"
 next: "/merit-badges/orienteering/guide/req4d/"
-next_title: "Req 4d — Magnetic North-South Lines"
+next_title: "Magnetic North-South Lines"
 ---
 
 {{< drg/requirement number="4c" >}}

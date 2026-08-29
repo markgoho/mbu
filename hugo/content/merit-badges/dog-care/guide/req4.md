@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Two-Month Care Log"
+title: "Two-Month Care Log"
 layout: guide
-group_title: "Daily Care"
+group_title: "4. Daily Care"
 req_number: "4"
 prev: "/merit-badges/dog-care/guide/req3c/"
-prev_title: "Req 3c — Choosing the Right Dog"
+prev_title: "Choosing the Right Dog"
 next: "/merit-badges/dog-care/guide/req5/"
-next_title: "Req 5 — Obedience Basics"
+next_title: "Obedience Basics"
 ---
 
 {{< drg/requirement number="4" >}}

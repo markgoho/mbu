@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Energy Underground"
+title: "Energy Underground"
 layout: guide
-group_title: "Energy Resources"
+group_title: "4. Energy Resources"
 req_number: "4b"
 prev: "/merit-badges/geology/guide/req4a5/"
-prev_title: "Req 4a5 — Clues in a Dry Streambed"
+prev_title: "Clues in a Dry Streambed"
 next: "/merit-badges/geology/guide/req4b1/"
-next_title: "Req 4b1 — Power Sources in the United States"
+next_title: "Power Sources in the United States"
 ---
 
 {{< drg/requirement number="4" option="Energy Resources" >}}

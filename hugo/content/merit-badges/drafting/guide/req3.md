@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — CAD Design"
+title: "CAD Design"
 layout: guide
-group_title: "CAD Drawing Project"
+group_title: "3. CAD Drawing Project"
 req_number: "3"
 prev: "/merit-badges/drafting/guide/req2/"
-prev_title: "Req 2 — Choose Your Drawing Type"
+prev_title: "Choose Your Drawing Type"
 next: "/merit-badges/drafting/guide/req4/"
-next_title: "Req 4 — Review & Revision Process"
+next_title: "Review & Revision Process"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4d1 — Write the Code"
+title: "Write the Code"
 layout: "guide"
-group_title: "Design and Build Your Robot"
+group_title: "4. Design and Build Your Robot"
 req_number: "4d1"
 req_path: "4.d.1"
 prev: "/merit-badges/robotics/guide/req4d/"
-prev_title: "Req 4d — Pick Your Programming Path"
+prev_title: "Pick Your Programming Path"
 next: "/merit-badges/robotics/guide/req4d2/"
-next_title: "Req 4d2 — Map the Logic"
+next_title: "Map the Logic"
 ---
 
 {{< drg/requirement number="4d1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 8d — Cache In Trash Out Leadership"
+title: "Cache In Trash Out Leadership"
 layout: guide
-group_title: "Choose Your Adventure"
+group_title: "8. Choose Your Adventure"
 req_number: "8d"
 prev: "/merit-badges/geocaching/guide/req8c/"
-prev_title: "Req 8c — Hide and Maintain a Cache"
+prev_title: "Hide and Maintain a Cache"
 next: "/merit-badges/geocaching/guide/req9/"
-next_title: "Req 9 — Plan and Run a Geohunt"
+next_title: "Plan and Run a Geohunt"
 ---
 
 {{< drg/requirement number="8d" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Trail Markers With Outdoor Ethics"
+title: "Trail Markers With Outdoor Ethics"
 layout: "guide"
-group_title: "Trail Communication"
+group_title: "7. Trail Communication"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/signs-signals-and-codes/guide/req6/"
-prev_title: "Req 6 — Sound Signals and Silent Scout Signals"
+prev_title: "Sound Signals and Silent Scout Signals"
 next: "/merit-badges/signs-signals-and-codes/guide/req8/"
-next_title: "Req 8 — Choose Three Real-World Signal Systems"
+next_title: "Choose Three Real-World Signal Systems"
 ---
 
 {{< drg/requirement number="7" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 7d — What Might Surprise You"
+title: "What Might Surprise You"
 layout: "guide"
-group_title: "Care, Observation, and Reflection"
+group_title: "5. Care, Observation, and Reflection"
 req_number: "7d"
 req_path: "7.d"
 prev: "/merit-badges/veterinary-medicine/guide/req7c/"
-prev_title: "Req 7c — The Hardest Parts of the Job"
+prev_title: "The Hardest Parts of the Job"
 next: "/merit-badges/veterinary-medicine/guide/req7e/"
-next_title: "Req 7e — Learning Never Stops"
+next_title: "Learning Never Stops"
 ---
 
 {{< drg/requirement number="7d" >}}

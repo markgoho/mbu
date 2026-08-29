@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Fishing Hazards"
+title: "Fishing Hazards"
 layout: guide
-group_title: "Safety on the Water"
+group_title: "1. Safety on the Water"
 req_number: "1a"
 prev: "/merit-badges/fishing/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/fishing/guide/req1b/"
-next_title: "Req 1b — Treating Fishing Injuries"
+next_title: "Treating Fishing Injuries"
 ---
 
 {{< drg/requirement number="1a" >}}

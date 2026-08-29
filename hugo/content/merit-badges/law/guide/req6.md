@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Courtroom Experience"
+title: "Courtroom Experience"
 layout: guide
-group_title: "Law in Action"
+group_title: "4. Law in Action"
 req_number: "6"
 prev: "/merit-badges/law/guide/req5/"
-prev_title: "Requirement 5 — Consumer & Seller Protections"
+prev_title: "Consumer & Seller Protections"
 next: "/merit-badges/law/guide/req7/"
-next_title: "Requirement 7 — Visit with a Lawyer"
+next_title: "Visit with a Lawyer"
 ---
 
 {{< drg/requirement number="6" >}}

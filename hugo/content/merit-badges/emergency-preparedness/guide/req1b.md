@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — 10 Emergency Scenarios"
+title: "10 Emergency Scenarios"
 layout: guide
-group_title: "Emergency Situations"
+group_title: "1. Emergency Situations"
 req_number: "1b"
 prev: "/merit-badges/emergency-preparedness/guide/req1a/"
-prev_title: "Requirement 1a — Five Aspects of Emergency Preparedness"
+prev_title: "Five Aspects of Emergency Preparedness"
 next: "/merit-badges/emergency-preparedness/guide/req2a/"
-next_title: "Requirement 2a — Family Emergency Plans"
+next_title: "Family Emergency Plans"
 ---
 
 {{< drg/requirement number="1b" >}}

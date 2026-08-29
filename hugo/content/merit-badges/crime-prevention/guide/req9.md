@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Online Crime and You"
+title: "Online Crime and You"
 layout: guide
-group_title: "Online Crime & Safety"
+group_title: "9. Online Crime & Safety"
 req_number: "9"
 prev: "/merit-badges/crime-prevention/guide/req8/"
-prev_title: "Req 8 — Substance Use and Crime"
+prev_title: "Substance Use and Crime"
 next: "/merit-badges/crime-prevention/guide/req10/"
-next_title: "Req 10 — Interviewing a Professional"
+next_title: "Interviewing a Professional"
 ---
 
 {{< drg/requirement number="9" >}}

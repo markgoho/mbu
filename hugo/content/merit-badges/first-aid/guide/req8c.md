@@ -1,13 +1,13 @@
 ---
-title: "Req 8c — Sprains, Fractures & Dislocations"
+title: "Sprains, Fractures & Dislocations"
 layout: "guide"
-group_title: "Muscle & Bone Injuries"
+group_title: "8. Muscle & Bone Injuries"
 req_number: "8c"
 req_path: "8.c"
 prev: "/merit-badges/first-aid/guide/req8b/"
-prev_title: "Req 8b — Strains, Tears & Tendons"
+prev_title: "Strains, Tears & Tendons"
 next: "/merit-badges/first-aid/guide/req8d/"
-next_title: "Req 8d — Bandaging Techniques"
+next_title: "Bandaging Techniques"
 ---
 
 {{< drg/requirement number="8c" >}}

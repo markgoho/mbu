@@ -1,10 +1,10 @@
 ---
-title: "Req 13 — Careers or Hobbies"
+title: "Careers or Hobbies"
 layout: guide
-group_title: "Careers & Hobbies"
+group_title: "13. Careers & Hobbies"
 req_number: "13"
 prev: "/merit-badges/bird-study/guide/req12/"
-prev_title: "Req 12 — Leave No Trace"
+prev_title: "Leave No Trace"
 next: "/merit-badges/bird-study/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

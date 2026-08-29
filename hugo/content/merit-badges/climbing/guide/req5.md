@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Communication on the Wall"
+title: "Communication on the Wall"
 layout: guide
-group_title: "Verbal Signals"
+group_title: "5. Verbal Signals"
 req_number: "5"
 prev: "/merit-badges/climbing/guide/req4d/"
-prev_title: "Req 4d — Emergency Planning"
+prev_title: "Emergency Planning"
 next: "/merit-badges/climbing/guide/req6/"
-next_title: "Req 6 — Rope Care & Management"
+next_title: "Rope Care & Management"
 ---
 
 {{< drg/requirement number="5" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Your Self-Introduction"
+title: "Your Self-Introduction"
 layout: guide
-group_title: "Introducing Yourself"
+group_title: "1. Introducing Yourself"
 req_number: "1"
 prev: "/merit-badges/public-speaking/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/public-speaking/guide/req2/"
-next_title: "Req 2 — Prepared Talk with Visuals"
+next_title: "Prepared Talk with Visuals"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,11 +1,11 @@
 ---
-title: "Req 8 — Explore Photography Careers"
+title: "Explore Photography Careers"
 layout: "guide"
-group_title: "Photography Futures"
+group_title: "8. Photography Futures"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/photography/guide/req7/"
-prev_title: "Req 7 — Tell a Visual Story"
+prev_title: "Tell a Visual Story"
 next: "/merit-badges/photography/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

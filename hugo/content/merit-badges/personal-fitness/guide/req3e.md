@@ -1,12 +1,12 @@
 ---
-title: "Req 3e — Healthy Weight"
+title: "Healthy Weight"
 layout: guide
-group_title: "Fitness Knowledge & Habits"
+group_title: "3. Fitness Knowledge & Habits"
 req_number: "3e"
 prev: "/merit-badges/personal-fitness/guide/req3d/"
-prev_title: "Req 3d — Nutrition"
+prev_title: "Nutrition"
 next: "/merit-badges/personal-fitness/guide/req3f/"
-next_title: "Req 3f — Sleep"
+next_title: "Sleep"
 ---
 
 {{< drg/requirement number="3e" >}}

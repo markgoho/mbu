@@ -1,11 +1,11 @@
 ---
-title: "Req 9b — Radio as Hobby or Service"
+title: "Radio as Hobby or Service"
 layout: "guide"
-group_title: "Radio Careers"
+group_title: "9. Radio Careers"
 req_number: "9b"
 req_path: "9.b"
 prev: "/merit-badges/radio/guide/req9a/"
-prev_title: "Req 9a — Research a Radio Career"
+prev_title: "Research a Radio Career"
 next: "/merit-badges/radio/guide/extended-learning/"
 next_title: "Extended Learning"
 guide_nav:

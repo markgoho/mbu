@@ -4,84 +4,84 @@ layout: guide
 badge_name: "Bird Study"
 group_title: "Getting Started"
 next: "/merit-badges/bird-study/guide/req1/"
-next_title: "Req 1 — Birds & the Environment"
+next_title: "Birds & the Environment"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/bird-study/guide/"
-  - group_title: "Why Birds Matter"
+  - group_title: "1. Why Birds Matter"
     items:
-      - title: "Req 1 — Birds & the Environment"
+      - title: "1. Birds & the Environment"
         url: "/merit-badges/bird-study/guide/req1/"
-  - group_title: "Bird Anatomy"
+  - group_title: "2. Bird Anatomy"
     items:
-      - title: "Req 2a — Bird Body Parts"
+      - title: "a Bird Body Parts"
         url: "/merit-badges/bird-study/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Wing Feathers"
+      - title: "b Wing Feathers"
         url: "/merit-badges/bird-study/guide/req2b/"
         is_sub: true
-  - group_title: "Optics & Gear"
+  - group_title: "3. Optics & Gear"
     items:
-      - title: "Req 3a — Specification Numbers"
+      - title: "a Specification Numbers"
         url: "/merit-badges/bird-study/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Focus & Adjustment"
+      - title: "b Focus & Adjustment"
         url: "/merit-badges/bird-study/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Lens Care"
+      - title: "c Lens Care"
         url: "/merit-badges/bird-study/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Choosing Your Optics"
+      - title: "d Choosing Your Optics"
         url: "/merit-badges/bird-study/guide/req3d/"
         is_sub: true
-  - group_title: "Field Guides & Range Maps"
+  - group_title: "4. Field Guides & Range Maps"
     items:
-      - title: "Req 4 — Using a Field Guide"
+      - title: "4. Using a Field Guide"
         url: "/merit-badges/bird-study/guide/req4/"
-  - group_title: "Field Observations"
+  - group_title: "5. Field Observations"
     items:
-      - title: "Req 5 — Field Notebook"
+      - title: "5. Field Notebook"
         url: "/merit-badges/bird-study/guide/req5/"
-  - group_title: "Bird Adaptations"
+  - group_title: "6. Bird Adaptations"
     items:
-      - title: "Req 6 — Habitat Adaptations"
+      - title: "6. Habitat Adaptations"
         url: "/merit-badges/bird-study/guide/req6/"
-  - group_title: "Bird Songs & Calls"
+  - group_title: "7. Bird Songs & Calls"
     items:
-      - title: "Req 7 — Songs & Calls"
+      - title: "7. Songs & Calls"
         url: "/merit-badges/bird-study/guide/req7/"
-  - group_title: "Birding Experiences"
+  - group_title: "8. Birding Experiences"
     items:
-      - title: "Req 8 — Choose Your Adventure"
+      - title: "8. Choose Your Adventure"
         url: "/merit-badges/bird-study/guide/req8/"
-  - group_title: "Attracting Birds"
+  - group_title: "9. Attracting Birds"
     items:
-      - title: "Req 9 — Build for Birds"
+      - title: "9. Build for Birds"
         url: "/merit-badges/bird-study/guide/req9/"
-  - group_title: "Conservation"
+  - group_title: "10. Conservation"
     items:
-      - title: "Req 10a — Extinct, Endangered, Threatened"
+      - title: "a Extinct, Endangered, Threatened"
         url: "/merit-badges/bird-study/guide/req10a/"
         is_sub: true
-      - title: "Req 10b — Endangered Species"
+      - title: "b Endangered Species"
         url: "/merit-badges/bird-study/guide/req10b/"
         is_sub: true
-      - title: "Req 10c — Protecting Birds in Decline"
+      - title: "c Protecting Birds in Decline"
         url: "/merit-badges/bird-study/guide/req10c/"
         is_sub: true
-  - group_title: "Invasive Species"
+  - group_title: "11. Invasive Species"
     items:
-      - title: "Req 11 — Non-Native Birds"
+      - title: "11. Non-Native Birds"
         url: "/merit-badges/bird-study/guide/req11/"
-  - group_title: "Outdoor Ethics"
+  - group_title: "12. Outdoor Ethics"
     items:
-      - title: "Req 12 — Leave No Trace"
+      - title: "12. Leave No Trace"
         url: "/merit-badges/bird-study/guide/req12/"
-  - group_title: "Careers & Hobbies"
+  - group_title: "13. Careers & Hobbies"
     items:
-      - title: "Req 13 — Careers or Hobbies"
+      - title: "13. Careers or Hobbies"
         url: "/merit-badges/bird-study/guide/req13/"
   - group_title: "Beyond the Badge"
     items:

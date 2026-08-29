@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Home Safety Plans"
+title: "Home Safety Plans"
 layout: "guide"
-group_title: "Home and Family Safety"
+group_title: "2. Home and Family Safety"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/safety/guide/req1/"
-prev_title: "Req 1 — Safety and Hazards"
+prev_title: "Safety and Hazards"
 next: "/merit-badges/safety/guide/req3/"
-next_title: "Req 3 — Crime Awareness and Home Security"
+next_title: "Crime Awareness and Home Security"
 ---
 
 {{< drg/requirement number="2" >}}

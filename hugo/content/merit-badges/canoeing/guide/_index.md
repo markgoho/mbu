@@ -4,82 +4,82 @@ layout: guide
 badge_name: "Canoeing"
 group_title: "Getting Started"
 next: "/merit-badges/canoeing/guide/req1a/"
-next_title: "Req 1a — Hazards on the Water"
+next_title: "Hazards on the Water"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/canoeing/guide/"
-  - group_title: "Safety & Hazard Preparedness"
+  - group_title: "1. Safety & Hazard Preparedness"
     items:
-      - title: "Req 1a — Hazards on the Water"
+      - title: "a Hazards on the Water"
         url: "/merit-badges/canoeing/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Injuries & First Aid"
+      - title: "b Injuries & First Aid"
         url: "/merit-badges/canoeing/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Safety Afloat"
+      - title: "c Safety Afloat"
         url: "/merit-badges/canoeing/guide/req1c/"
         is_sub: true
-  - group_title: "Swimming Prerequisite"
+  - group_title: "2. Swimming Prerequisite"
     items:
-      - title: "Req 2 — Swimmer Test"
+      - title: "2. Swimmer Test"
         url: "/merit-badges/canoeing/guide/req2/"
         is_sub: false
-  - group_title: "Know Your Canoe"
+  - group_title: "3. Know Your Canoe"
     items:
-      - title: "Req 3 — Canoe Anatomy & Design"
+      - title: "3. Canoe Anatomy & Design"
         url: "/merit-badges/canoeing/guide/req3/"
         is_sub: false
-  - group_title: "Know Your Paddle"
+  - group_title: "4. Know Your Paddle"
     items:
-      - title: "Req 4 — Paddle Anatomy & Sizing"
+      - title: "4. Paddle Anatomy & Sizing"
         url: "/merit-badges/canoeing/guide/req4/"
         is_sub: false
-  - group_title: "Life Jackets & Safety Gear"
+  - group_title: "5. Life Jackets & Safety Gear"
     items:
-      - title: "Req 5a — Life Jacket Selection"
+      - title: "a Life Jacket Selection"
         url: "/merit-badges/canoeing/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Fitting a Life Jacket"
+      - title: "b Fitting a Life Jacket"
         url: "/merit-badges/canoeing/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Safety & Rescue Equipment"
+      - title: "c Safety & Rescue Equipment"
         url: "/merit-badges/canoeing/guide/req5c/"
         is_sub: true
-  - group_title: "Canoe Care & Maintenance"
+  - group_title: "6. Canoe Care & Maintenance"
     items:
-      - title: "Req 6 — Equipment Care"
+      - title: "6. Equipment Care"
         url: "/merit-badges/canoeing/guide/req6/"
         is_sub: false
-  - group_title: "Launching & Basic Handling"
+  - group_title: "7. Launching & Basic Handling"
     items:
-      - title: "Req 7 — On the Water Basics"
+      - title: "7. On the Water Basics"
         url: "/merit-badges/canoeing/guide/req7/"
         is_sub: false
-  - group_title: "Capsizing & Rescue"
+  - group_title: "8. Capsizing & Rescue"
     items:
-      - title: "Req 8a — Deep Water Exit & Reentry"
+      - title: "a Deep Water Exit & Reentry"
         url: "/merit-badges/canoeing/guide/req8a/"
         is_sub: true
-      - title: "Req 8b — Controlled Capsize"
+      - title: "b Controlled Capsize"
         url: "/merit-badges/canoeing/guide/req8b/"
         is_sub: true
-      - title: "Req 8c — Swamped Canoe Recovery"
+      - title: "c Swamped Canoe Recovery"
         url: "/merit-badges/canoeing/guide/req8c/"
         is_sub: true
-      - title: "Req 8d — Deep Water Canoe Rescue"
+      - title: "d Deep Water Canoe Rescue"
         url: "/merit-badges/canoeing/guide/req8d/"
         is_sub: true
-      - title: "Req 8e — Swimmer Rescue from Canoe"
+      - title: "e Swimmer Rescue from Canoe"
         url: "/merit-badges/canoeing/guide/req8e/"
         is_sub: true
-      - title: "Req 8f — Throw Bag Rescue"
+      - title: "f Throw Bag Rescue"
         url: "/merit-badges/canoeing/guide/req8f/"
         is_sub: true
-  - group_title: "Tandem Paddling Strokes"
+  - group_title: "9. Tandem Paddling Strokes"
     items:
-      - title: "Req 9 — Tandem Maneuvers"
+      - title: "9. Tandem Maneuvers"
         url: "/merit-badges/canoeing/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

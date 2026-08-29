@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Essential Electrical Terms"
+title: "Essential Electrical Terms"
 layout: guide
-group_title: "Electrical Vocabulary"
+group_title: "9. Electrical Vocabulary"
 req_number: "9"
 prev: "/merit-badges/electricity/guide/req8/"
-prev_title: "Req 8 — Reading Your Electric Bill"
+prev_title: "Reading Your Electric Bill"
 next: "/merit-badges/electricity/guide/req10/"
-next_title: "Req 10 — Choose Your Circuit Projects"
+next_title: "Choose Your Circuit Projects"
 ---
 
 {{< drg/requirement number="9" >}}

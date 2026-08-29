@@ -1,13 +1,13 @@
 ---
-title: "Req 3d — Make Felt by Hand"
+title: "Make Felt by Hand"
 layout: "guide"
-group_title: "Choose Two Textile Projects"
+group_title: "3. Choose Two Textile Projects"
 req_number: "3d"
 req_path: "3.d"
 prev: "/merit-badges/textile/guide/req3c/"
-prev_title: "Req 3c — Compare Fabric Structures"
+prev_title: "Compare Fabric Structures"
 next: "/merit-badges/textile/guide/req3e/"
-next_title: "Req 3e — Dye Fabric with Natural Color"
+next_title: "Dye Fabric with Natural Color"
 ---
 
 {{< drg/requirement number="3d" >}}

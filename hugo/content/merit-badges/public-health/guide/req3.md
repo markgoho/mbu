@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Safe Water and Clean Gear"
+title: "Safe Water and Clean Gear"
 layout: "guide"
-group_title: "Water & Sanitation"
+group_title: "3. Water & Sanitation"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/public-health/guide/req2/"
-prev_title: "Req 2 — Immunization Basics"
+prev_title: "Immunization Basics"
 next: "/merit-badges/public-health/guide/req4/"
-next_title: "Req 4 — Vectors and Pest Control"
+next_title: "Vectors and Pest Control"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 11 — Non-Native Birds"
+title: "Non-Native Birds"
 layout: guide
-group_title: "Invasive Species"
+group_title: "11. Invasive Species"
 req_number: "11"
 prev: "/merit-badges/bird-study/guide/req10c/"
-prev_title: "Req 10c — Protecting Birds in Decline"
+prev_title: "Protecting Birds in Decline"
 next: "/merit-badges/bird-study/guide/req12/"
-next_title: "Req 12 — Leave No Trace"
+next_title: "Leave No Trace"
 ---
 
 {{< drg/requirement number="11" >}}

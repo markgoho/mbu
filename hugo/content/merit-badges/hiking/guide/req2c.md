@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Outdoor Code"
+title: "Outdoor Code"
 layout: guide
-group_title: "Hiking Ethics & Safety"
+group_title: "2. Hiking Ethics & Safety"
 req_number: "2c"
 prev: "/merit-badges/hiking/guide/req2b/"
-prev_title: "Requirement 2b — Leave No Trace"
+prev_title: "Leave No Trace"
 next: "/merit-badges/hiking/guide/req3/"
-next_title: "Requirement 3 — Aerobic Activity"
+next_title: "Aerobic Activity"
 ---
 
 {{< drg/requirement number="2c" >}}

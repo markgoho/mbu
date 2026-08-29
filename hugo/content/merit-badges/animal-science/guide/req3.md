@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Digestive Systems"
+title: "Digestive Systems"
 layout: guide
-group_title: "Nutrition & Digestion"
+group_title: "3. Nutrition & Digestion"
 req_number: "3"
 prev: "/merit-badges/animal-science/guide/req2/"
-prev_title: "Req 2 — Livestock Diseases"
+prev_title: "Livestock Diseases"
 next: "/merit-badges/animal-science/guide/req4/"
-next_title: "Req 4 — Animal Management"
+next_title: "Animal Management"
 ---
 
 {{< drg/requirement number="3" >}}

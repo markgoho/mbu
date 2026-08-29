@@ -1,12 +1,12 @@
 ---
-title: "Req 6a — Encryption Uses"
+title: "Encryption Uses"
 layout: guide
-group_title: "Cryptography"
+group_title: "6. Cryptography"
 req_number: "6a"
 prev: "/merit-badges/cybersecurity/guide/req5c/"
-prev_title: "Req 5c — System Security"
+prev_title: "System Security"
 next: "/merit-badges/cybersecurity/guide/req6b/"
-next_title: "Req 6b — Encrypted Connections"
+next_title: "Encrypted Connections"
 ---
 
 {{< drg/requirement number="6a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — Telescope Instruments"
+title: "Telescope Instruments"
 layout: guide
-group_title: "Telescopes & Instruments"
+group_title: "3. Telescopes & Instruments"
 req_number: "3c"
 prev: "/merit-badges/astronomy/guide/req3b/"
-prev_title: "Req 3b — Types of Telescopes"
+prev_title: "Types of Telescopes"
 next: "/merit-badges/astronomy/guide/req3d/"
-next_title: "Req 3d — Care & Storage"
+next_title: "Care & Storage"
 ---
 
 {{< drg/requirement number="3c" >}}

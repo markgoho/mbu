@@ -1,10 +1,10 @@
 ---
-title: "Req 8 — Contacting Congress"
+title: "Contacting Congress"
 layout: guide
-group_title: "Experiencing Your Nation"
+group_title: "7. Experiencing Your Nation"
 req_number: "8"
 prev: "/merit-badges/citizenship-in-the-nation/guide/req7/"
-prev_title: "Req 7 — Exploring National Sites"
+prev_title: "Exploring National Sites"
 next: "/merit-badges/citizenship-in-the-nation/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

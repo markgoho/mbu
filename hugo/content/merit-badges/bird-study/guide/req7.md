@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Songs & Calls"
+title: "Songs & Calls"
 layout: guide
-group_title: "Bird Songs & Calls"
+group_title: "7. Bird Songs & Calls"
 req_number: "7"
 prev: "/merit-badges/bird-study/guide/req6/"
-prev_title: "Req 6 — Habitat Adaptations"
+prev_title: "Habitat Adaptations"
 next: "/merit-badges/bird-study/guide/req8/"
-next_title: "Req 8 — Choose Your Adventure"
+next_title: "Choose Your Adventure"
 ---
 
 {{< drg/requirement number="7" >}}

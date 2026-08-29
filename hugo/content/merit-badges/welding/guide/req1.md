@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Welding Hazards and First Aid"
+title: "Welding Hazards and First Aid"
 layout: "guide"
-group_title: "Safe Starts"
+group_title: "1. Safe Starts"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/welding/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/welding/guide/req2/"
-next_title: "Req 2 — Safety Gear, SDS, and Equipment Care"
+next_title: "Safety Gear, SDS, and Equipment Care"
 ---
 
 {{< drg/requirement number="1" >}}

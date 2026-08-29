@@ -1,13 +1,13 @@
 ---
-title: "Req 5d3 — Hot-Forging Exercises"
+title: "Hot-Forging Exercises"
 layout: "guide"
-group_title: "Blacksmith"
+group_title: "5. Blacksmith"
 req_number: "5d3"
 req_path: "5.d.3"
 prev: "/merit-badges/metalwork/guide/req5d2/"
-prev_title: "Req 5d2 — Sketching Your Forged Objects"
+prev_title: "Sketching Your Forged Objects"
 next: "/merit-badges/metalwork/guide/req5d4/"
-next_title: "Req 5d4 — Forging Your Two Objects"
+next_title: "Forging Your Two Objects"
 ---
 
 {{< drg/requirement number="5d3" >}}

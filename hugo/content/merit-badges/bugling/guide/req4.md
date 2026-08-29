@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — When Calls Are Used"
+title: "When Calls Are Used"
 layout: guide
-group_title: "Sounding Bugle Calls"
+group_title: "3. Sounding Bugle Calls"
 req_number: "4"
 prev: "/merit-badges/bugling/guide/req3/"
-prev_title: "Req 3 — Sound Ten Calls"
+prev_title: "Sound Ten Calls"
 next: "/merit-badges/bugling/guide/req5/"
-next_title: "Req 5 — Caring for Your Bugle"
+next_title: "Caring for Your Bugle"
 ---
 
 {{< drg/requirement number="4" >}}

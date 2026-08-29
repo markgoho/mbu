@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Choose a Storytelling Challenge"
+title: "Choose a Storytelling Challenge"
 layout: guide
-group_title: "Storytelling and Interviews"
+group_title: "3. Storytelling and Interviews"
 req_number: "3"
 prev: "/merit-badges/journalism/guide/req2b2/"
-prev_title: "Req 2b2 — Visiting a Station"
+prev_title: "Visiting a Station"
 next: "/merit-badges/journalism/guide/req3a/"
-next_title: "Req 3a — Write the Story"
+next_title: "Write the Story"
 ---
 
 {{< drg/requirement number="3" >}}

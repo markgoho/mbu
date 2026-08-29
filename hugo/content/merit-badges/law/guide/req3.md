@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Civil vs. Criminal Law"
+title: "Civil vs. Criminal Law"
 layout: guide
-group_title: "Types of Law"
+group_title: "3. Types of Law"
 req_number: "3"
 prev: "/merit-badges/law/guide/req2/"
-prev_title: "Requirement 2 — Landmarks in Legal History"
+prev_title: "Landmarks in Legal History"
 next: "/merit-badges/law/guide/req4/"
-next_title: "Requirement 4 — Law Enforcement in Society"
+next_title: "Law Enforcement in Society"
 ---
 
 {{< drg/requirement number="3" >}}

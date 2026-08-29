@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — Title Block Lettering"
+title: "Title Block Lettering"
 layout: guide
-group_title: "Setting Up Your Drawing Sheets"
+group_title: "1. Setting Up Your Drawing Sheets"
 req_number: "1b"
 prev: "/merit-badges/drafting/guide/req1a/"
-prev_title: "Req 1a — Rough Sketches & Paper Sizing"
+prev_title: "Rough Sketches & Paper Sizing"
 next: "/merit-badges/drafting/guide/req2/"
-next_title: "Req 2 — Choose Your Drawing Type"
+next_title: "Choose Your Drawing Type"
 ---
 
 {{< drg/requirement number="1b" >}}

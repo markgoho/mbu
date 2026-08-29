@@ -1,12 +1,12 @@
 ---
-title: "Req 1b — First Aid for Athletes"
+title: "First Aid for Athletes"
 layout: guide
-group_title: "Safety & First Aid"
+group_title: "1. Safety & First Aid"
 req_number: "1b"
 prev: "/merit-badges/athletics/guide/req1a/"
-prev_title: "Req 1a — Safety Hazards"
+prev_title: "Safety Hazards"
 next: "/merit-badges/athletics/guide/req2a/"
-next_title: "Req 2a — Physical Examinations"
+next_title: "Physical Examinations"
 ---
 
 {{< drg/requirement number="1b" >}}

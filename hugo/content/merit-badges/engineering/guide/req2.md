@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Engineering That Changed the World"
+title: "Engineering That Changed the World"
 layout: guide
-group_title: "Great Engineering Achievements"
+group_title: "2. Great Engineering Achievements"
 req_number: "2"
 prev: "/merit-badges/engineering/guide/req1/"
-prev_title: "Req 1 — Investigating a Manufactured Item"
+prev_title: "Investigating a Manufactured Item"
 next: "/merit-badges/engineering/guide/req3/"
-next_title: "Req 3 — Six Fields of Engineering"
+next_title: "Six Fields of Engineering"
 ---
 
 {{< drg/requirement number="2" >}}

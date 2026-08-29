@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Future Plans"
+title: "Future Plans"
 layout: guide
-group_title: "Looking Ahead"
+group_title: "6. Looking Ahead"
 req_number: "6"
 prev: "/merit-badges/collections/guide/req5f/"
-prev_title: "Req 5f — Identification Marks"
+prev_title: "Identification Marks"
 next: "/merit-badges/collections/guide/req7/"
-next_title: "Req 7 — Careers in Collecting"
+next_title: "Careers in Collecting"
 ---
 
 {{< drg/requirement number="6" >}}

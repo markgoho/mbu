@@ -4,29 +4,29 @@ layout: guide
 badge_name: "Basketry"
 group_title: "Getting Started"
 next: "/merit-badges/basketry/guide/req1/"
-next_title: "Req 1 — Safety & First Aid"
+next_title: "Safety & First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/basketry/guide/"
-  - group_title: "Safety First"
+  - group_title: "1. Safety First"
     items:
-      - title: "Req 1 — Safety & First Aid"
+      - title: "1. Safety & First Aid"
         url: "/merit-badges/basketry/guide/req1/"
-  - group_title: "Knowing Your Craft"
+  - group_title: "2. Knowing Your Craft"
     items:
-      - title: "Req 2 — Basket Types & Weaves"
+      - title: "2. Basket Types & Weaves"
         url: "/merit-badges/basketry/guide/req2/"
-  - group_title: "Weaving Projects"
+  - group_title: "3. Weaving Projects"
     items:
-      - title: "Req 3a — Square Basket"
+      - title: "a Square Basket"
         url: "/merit-badges/basketry/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Round Basket"
+      - title: "b Round Basket"
         url: "/merit-badges/basketry/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Campstool Seat"
+      - title: "c Campstool Seat"
         url: "/merit-badges/basketry/guide/req3c/"
         is_sub: true
   - group_title: "Beyond the Badge"

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Choose Your Next Step"
+title: "Choose Your Next Step"
 layout: "guide"
-group_title: "Careers and Hobbies"
+group_title: "6. Careers and Hobbies"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/music/guide/req5/"
-prev_title: "Req 5 — Intellectual Property and Sharing Music"
+prev_title: "Intellectual Property and Sharing Music"
 next: "/merit-badges/music/guide/req6a/"
-next_title: "Req 6a — Research a Music Career"
+next_title: "Research a Music Career"
 ---
 
 {{< drg/requirement number="6" >}}

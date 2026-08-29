@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Build Your AI Project"
+title: "Build Your AI Project"
 layout: guide
-group_title: "Putting It All Together"
+group_title: "7. Putting It All Together"
 req_number: "7"
 prev: "/merit-badges/artificial-intelligence/guide/req6d/"
-prev_title: "Req 6d — Writing Clear Instructions"
+prev_title: "Writing Clear Instructions"
 next: "/merit-badges/artificial-intelligence/guide/req8/"
-next_title: "Req 8 — AI Careers"
+next_title: "AI Careers"
 ---
 
 {{< drg/requirement number="7" >}}

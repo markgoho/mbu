@@ -1,13 +1,13 @@
 ---
-title: "Req 6c — Improve Impact Another Way"
+title: "Improve Impact Another Way"
 layout: "guide"
-group_title: "Editing for Impact"
+group_title: "6. Editing for Impact"
 req_number: "6c"
 req_path: "6.c"
 prev: "/merit-badges/photography/guide/req6b/"
-prev_title: "Req 6b — Fix Exposure or Color"
+prev_title: "Fix Exposure or Color"
 next: "/merit-badges/photography/guide/req7/"
-next_title: "Req 7 — Tell a Visual Story"
+next_title: "Tell a Visual Story"
 ---
 
 {{< drg/requirement number="6c" >}}

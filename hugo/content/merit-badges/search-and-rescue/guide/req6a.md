@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Search vs. Rescue"
+title: "Search vs. Rescue"
 layout: "guide"
-group_title: "Search Procedure Skills"
+group_title: "6. Search Procedure Skills"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/search-and-rescue/guide/req6/"
-prev_title: "Req 6 — Choose Four Search Procedure Skills"
+prev_title: "Choose Four Search Procedure Skills"
 next: "/merit-badges/search-and-rescue/guide/req6b/"
-next_title: "Req 6b — PLS and LKP"
+next_title: "PLS and LKP"
 ---
 
 {{< drg/requirement number="6a" >}}

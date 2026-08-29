@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Hazards, First Aid & Safety Afloat"
+title: "Hazards, First Aid & Safety Afloat"
 layout: "guide"
-group_title: "Safety & Hazard Preparedness"
+group_title: "1. Safety & Hazard Preparedness"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/motorboating/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/motorboating/guide/req2/"
-next_title: "Req 2 — Swim Readiness & Life Jackets"
+next_title: "Swim Readiness & Life Jackets"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 5b2 — Sketching Your Silver Objects"
+title: "Sketching Your Silver Objects"
 layout: "guide"
-group_title: "Silversmith"
+group_title: "5. Silversmith"
 req_number: "5b2"
 req_path: "5.b.2"
 prev: "/merit-badges/metalwork/guide/req5b1/"
-prev_title: "Req 5b1 — Silversmith Tools"
+prev_title: "Silversmith Tools"
 next: "/merit-badges/metalwork/guide/req5b3/"
-next_title: "Req 5b3 — Sawing, Sinking & Soldering"
+next_title: "Sawing, Sinking & Soldering"
 ---
 
 {{< drg/requirement number="5b2" >}}

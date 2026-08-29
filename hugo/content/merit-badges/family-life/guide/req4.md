@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Individual Home Project"
+title: "Individual Home Project"
 layout: guide
-group_title: "Contributing at Home"
+group_title: "3. Contributing at Home"
 req_number: "4"
 prev: "/merit-badges/family-life/guide/req3/"
-prev_title: "Req 3 — Home Duties & Chores"
+prev_title: "Home Duties & Chores"
 next: "/merit-badges/family-life/guide/req5/"
-next_title: "Req 5 — Family Project"
+next_title: "Family Project"
 ---
 
 {{< drg/requirement number="4" >}}

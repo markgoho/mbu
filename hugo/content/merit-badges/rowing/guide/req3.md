@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Life Jacket Choice and Fit"
+title: "Life Jacket Choice and Fit"
 layout: "guide"
-group_title: "Life Jackets"
+group_title: "3. Life Jackets"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/rowing/guide/req2/"
-prev_title: "Req 2 — Swimmer Test Readiness"
+prev_title: "Swimmer Test Readiness"
 next: "/merit-badges/rowing/guide/req4/"
-next_title: "Req 4 — Choose Your Rowing Path"
+next_title: "Choose Your Rowing Path"
 ---
 
 {{< drg/requirement number="3" >}}

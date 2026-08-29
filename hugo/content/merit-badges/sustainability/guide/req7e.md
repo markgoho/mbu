@@ -1,12 +1,12 @@
 ---
-title: "Req 7e — Species Decline"
+title: "Species Decline"
 layout: guide
-group_title: "Global Challenges"
+group_title: "7. Global Challenges"
 req_number: "7e"
 prev: "/merit-badges/sustainability/guide/req7d/"
-prev_title: "Req 7d — Population & Sustainability"
+prev_title: "Population & Sustainability"
 next: "/merit-badges/sustainability/guide/req7f/"
-next_title: "Req 7f — Climate Change"
+next_title: "Climate Change"
 ---
 
 {{< drg/requirement number="7e" >}}

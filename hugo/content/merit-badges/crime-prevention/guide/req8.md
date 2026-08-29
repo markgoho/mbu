@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Substance Use and Crime"
+title: "Substance Use and Crime"
 layout: guide
-group_title: "Substance Use & Crime"
+group_title: "8. Substance Use & Crime"
 req_number: "8"
 prev: "/merit-badges/crime-prevention/guide/req7/"
-prev_title: "Req 7 — Peers and Crime"
+prev_title: "Peers and Crime"
 next: "/merit-badges/crime-prevention/guide/req9/"
-next_title: "Req 9 — Online Crime and You"
+next_title: "Online Crime and You"
 ---
 
 {{< drg/requirement number="8" >}}

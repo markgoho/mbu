@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Baseline Testing"
+title: "Baseline Testing"
 layout: guide
-group_title: "Your Pre-Assessment"
+group_title: "5. Your Pre-Assessment"
 req_number: "5"
 prev: "/merit-badges/personal-fitness/guide/req4/"
-prev_title: "Req 4 — Fitness Assessments"
+prev_title: "Fitness Assessments"
 next: "/merit-badges/personal-fitness/guide/req6/"
-next_title: "Req 6 — The 12-Week Program"
+next_title: "The 12-Week Program"
 ---
 
 {{< drg/requirement number="5" >}}

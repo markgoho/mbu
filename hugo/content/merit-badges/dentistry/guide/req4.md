@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Dental Tools & Hands-On Skills"
+title: "Dental Tools & Hands-On Skills"
 layout: guide
-group_title: "Tools & Techniques"
+group_title: "4. Tools & Techniques"
 req_number: "4"
 prev: "/merit-badges/dentistry/guide/req3/"
-prev_title: "Req 3 — Visiting the Dentist"
+prev_title: "Visiting the Dentist"
 next: "/merit-badges/dentistry/guide/req5/"
-next_title: "Req 5 — Fluoride & the Mouth-Body Connection"
+next_title: "Fluoride & the Mouth-Body Connection"
 ---
 
 {{< drg/requirement number="4" >}}

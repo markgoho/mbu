@@ -1,13 +1,13 @@
 ---
-title: "Req 8c — Aircraft Carrier Deck Signals"
+title: "Aircraft Carrier Deck Signals"
 layout: "guide"
-group_title: "Specialized Signal Systems"
+group_title: "8. Specialized Signal Systems"
 req_number: "8c"
 req_path: "8.c"
 prev: "/merit-badges/signs-signals-and-codes/guide/req8b/"
-prev_title: "Req 8b — Heavy-Equipment Hand Signals"
+prev_title: "Heavy-Equipment Hand Signals"
 next: "/merit-badges/signs-signals-and-codes/guide/req8d/"
-next_title: "Req 8d — Cyclist Hand Signals"
+next_title: "Cyclist Hand Signals"
 ---
 
 {{< drg/requirement number="8c" >}}

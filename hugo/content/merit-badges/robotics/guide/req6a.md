@@ -1,13 +1,13 @@
 ---
-title: "Req 6a — Attend and Observe"
+title: "Attend and Observe"
 layout: "guide"
-group_title: "Competition Options"
+group_title: "6. Competition Options"
 req_number: "6a"
 req_path: "6.a"
 prev: "/merit-badges/robotics/guide/req6/"
-prev_title: "Req 6 — Choose a Competition Path"
+prev_title: "Choose a Competition Path"
 next: "/merit-badges/robotics/guide/req6b/"
-next_title: "Req 6b — Compare Youth Leagues"
+next_title: "Compare Youth Leagues"
 ---
 
 {{< drg/requirement number="6a" >}}

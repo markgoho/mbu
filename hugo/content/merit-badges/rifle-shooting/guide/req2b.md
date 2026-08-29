@@ -1,13 +1,13 @@
 ---
-title: "Req 2b — Option B Overview"
+title: "Option B Overview"
 layout: "guide"
-group_title: "Option B — Air Rifle"
+group_title: "2. Option B — Air Rifle"
 req_number: "2b"
 req_path: "2.b"
 prev: "/merit-badges/rifle-shooting/guide/req2ak/"
-prev_title: "Req 2ak — Scored Grouping Exercise"
+prev_title: "Scored Grouping Exercise"
 next: "/merit-badges/rifle-shooting/guide/req2ba/"
-next_title: "Req 2ba — Three Main Parts of an Air Rifle"
+next_title: "Three Main Parts of an Air Rifle"
 ---
 
 {{< drg/requirement number="2" option="Air Rifle Shooting (BB or Pellet)" >}}

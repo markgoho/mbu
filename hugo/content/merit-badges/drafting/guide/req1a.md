@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Rough Sketches & Paper Sizing"
+title: "Rough Sketches & Paper Sizing"
 layout: guide
-group_title: "Setting Up Your Drawing Sheets"
+group_title: "1. Setting Up Your Drawing Sheets"
 req_number: "1a"
 prev: "/merit-badges/drafting/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/drafting/guide/req1b/"
-next_title: "Req 1b — Title Block Lettering"
+next_title: "Title Block Lettering"
 ---
 
 {{< drg/requirement number="1a" >}}

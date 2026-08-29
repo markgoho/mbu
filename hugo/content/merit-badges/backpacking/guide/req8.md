@@ -1,12 +1,12 @@
 ---
-title: "Req 8 — Stoves & Backcountry Cooking"
+title: "Stoves & Backcountry Cooking"
 layout: guide
-group_title: "Backcountry Cooking"
+group_title: "8. Backcountry Cooking"
 req_number: "8"
 prev: "/merit-badges/backpacking/guide/req7/"
-prev_title: "Req 7 — Weather Preparedness"
+prev_title: "Weather Preparedness"
 next: "/merit-badges/backpacking/guide/req9/"
-next_title: "Req 9 — Planning & Packing"
+next_title: "Planning & Packing"
 ---
 
 {{< drg/requirement number="8" >}}

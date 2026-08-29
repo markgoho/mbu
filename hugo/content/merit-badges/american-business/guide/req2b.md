@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Interest, Taxes & Spending"
+title: "Interest, Taxes & Spending"
 layout: guide
-group_title: "Money & Finance"
+group_title: "2. Money & Finance"
 req_number: "2b"
 prev: "/merit-badges/american-business/guide/req2a/"
-prev_title: "Req 2a — Financial Statements"
+prev_title: "Financial Statements"
 next: "/merit-badges/american-business/guide/req2c/"
-next_title: "Req 2c — Raising Capital"
+next_title: "Raising Capital"
 ---
 
 {{< drg/requirement number="2b" >}}

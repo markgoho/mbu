@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Ladder Safety and PPE"
+title: "Ladder Safety and PPE"
 layout: "guide"
-group_title: "Job-Site Safety"
+group_title: "6. Job-Site Safety"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/painting/guide/req5/"
-prev_title: "Req 5 — Use and Care for Your Tools"
+prev_title: "Use and Care for Your Tools"
 next: "/merit-badges/painting/guide/req7/"
-next_title: "Req 7 — Paint, Health, and the Environment"
+next_title: "Paint, Health, and the Environment"
 ---
 
 {{< drg/requirement number="6" >}}

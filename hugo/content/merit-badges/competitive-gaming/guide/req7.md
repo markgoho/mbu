@@ -1,11 +1,11 @@
 ---
-title: "Req 7 — Exploring Professions in the Competitive Gaming Industry"
+title: "Exploring Professions in the Competitive Gaming Industry"
 layout: "guide"
-group_title: "Careers in Competitive Gaming"
+group_title: "7. Careers in Competitive Gaming"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/competitive-gaming/guide/req6c/"
-prev_title: "Req 6c — Attend an Esports Event"
+prev_title: "Attend an Esports Event"
 next: "/merit-badges/competitive-gaming/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

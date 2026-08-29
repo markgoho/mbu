@@ -1,12 +1,12 @@
 ---
-title: "Req 5b — Test Equipment"
+title: "Test Equipment"
 layout: guide
-group_title: "Measurement & Components"
+group_title: "5. Measurement & Components"
 req_number: "5b"
 prev: "/merit-badges/electronics/guide/req5a/"
-prev_title: "Req 5a — Ohm's Law"
+prev_title: "Ohm"
 next: "/merit-badges/electronics/guide/req5c/"
-next_title: "Req 5c — Resistor Color Codes"
+next_title: "Resistor Color Codes"
 ---
 
 {{< drg/requirement number="5b" >}}

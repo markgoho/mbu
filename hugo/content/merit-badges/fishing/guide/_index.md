@@ -4,53 +4,53 @@ layout: guide
 badge_name: "Fishing"
 group_title: "Getting Started"
 next: "/merit-badges/fishing/guide/req1a/"
-next_title: "Req 1a — Fishing Hazards"
+next_title: "Fishing Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/fishing/guide/"
-  - group_title: "Safety on the Water"
+  - group_title: "1. Safety on the Water"
     items:
-      - title: "Req 1a — Fishing Hazards"
+      - title: "a Fishing Hazards"
         url: "/merit-badges/fishing/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Treating Fishing Injuries"
+      - title: "b Treating Fishing Injuries"
         url: "/merit-badges/fishing/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Removing a Barbed Hook"
+      - title: "c Removing a Barbed Hook"
         url: "/merit-badges/fishing/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Core Fishing Safety Practices"
+      - title: "d Core Fishing Safety Practices"
         url: "/merit-badges/fishing/guide/req1d/"
         is_sub: true
-  - group_title: "Gear & Tackle"
+  - group_title: "2. Gear & Tackle"
     items:
-      - title: "Req 2 — Fishing Outfits & Equipment Care"
+      - title: "2. Fishing Outfits & Equipment Care"
         url: "/merit-badges/fishing/guide/req2/"
-      - title: "Req 3 — Using Fishing Equipment"
+      - title: "3. Using Fishing Equipment"
         url: "/merit-badges/fishing/guide/req3/"
-      - title: "Req 4 — Essential Fishing Knots"
+      - title: "4. Essential Fishing Knots"
         url: "/merit-badges/fishing/guide/req4/"
-      - title: "Req 5 — Lures, Baits, and Baitfish"
+      - title: "5. Lures, Baits, and Baitfish"
         url: "/merit-badges/fishing/guide/req5/"
-  - group_title: "Stewardship & Ethics"
+  - group_title: "6. Stewardship & Ethics"
     items:
-      - title: "Req 6a — Leave No Trace While Fishing"
+      - title: "a Leave No Trace While Fishing"
         url: "/merit-badges/fishing/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Catch and Release"
+      - title: "b Catch and Release"
         url: "/merit-badges/fishing/guide/req6b/"
         is_sub: true
-      - title: "Req 7 — Fishing Regulations"
+      - title: "7. Fishing Regulations"
         url: "/merit-badges/fishing/guide/req7/"
-      - title: "Req 8 — Sportsmanship for Anglers"
+      - title: "8. Sportsmanship for Anglers"
         url: "/merit-badges/fishing/guide/req8/"
-  - group_title: "On-the-Water Skills"
+  - group_title: "9. On-the-Water Skills"
     items:
-      - title: "Req 9 — Catching and Identifying a Fish"
+      - title: "9. Catching and Identifying a Fish"
         url: "/merit-badges/fishing/guide/req9/"
-      - title: "Req 10 — Cleaning and Cooking Your Catch"
+      - title: "10. Cleaning and Cooking Your Catch"
         url: "/merit-badges/fishing/guide/req10/"
   - group_title: "Beyond the Badge"
     items:

@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Leadership Beyond Scouting"
+title: "Leadership Beyond Scouting"
 layout: guide
-group_title: "Leading Beyond Scouting"
+group_title: "9. Leading Beyond Scouting"
 req_number: "9"
 prev: "/merit-badges/citizenship-in-society/guide/req8/"
-prev_title: "Req 8 — A Positive Turning Point"
+prev_title: "A Positive Turning Point"
 next: "/merit-badges/citizenship-in-society/guide/req10/"
-next_title: "Req 10 — Stereotypes & Individuality"
+next_title: "Stereotypes & Individuality"
 ---
 
 {{< drg/requirement number="9" >}}

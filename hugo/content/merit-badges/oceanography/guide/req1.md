@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Branches of Oceanography"
+title: "Branches of Oceanography"
 layout: "guide"
-group_title: "What Oceanography Covers"
+group_title: "1. What Oceanography Covers"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/oceanography/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/oceanography/guide/req2/"
-next_title: "Req 2 — Seawater, Currents & Climate"
+next_title: "Seawater, Currents & Climate"
 ---
 
 {{< drg/requirement number="1" >}}

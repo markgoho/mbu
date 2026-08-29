@@ -1,12 +1,12 @@
 ---
-title: "Req 7e — If a Dog Is Hit by a Car"
+title: "If a Dog Is Hit by a Car"
 layout: guide
-group_title: "Dog First Aid"
+group_title: "7. Dog First Aid"
 req_number: "7e"
 prev: "/merit-badges/dog-care/guide/req7d/"
-prev_title: "Req 7d — Dressings and Bandages"
+prev_title: "Dressings and Bandages"
 next: "/merit-badges/dog-care/guide/req7f/"
-next_title: "Req 7f — Dog First-Aid Kit"
+next_title: "Dog First-Aid Kit"
 ---
 
 {{< drg/requirement number="7e" >}}

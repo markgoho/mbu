@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Making the Most of a Workplace Visit"
+title: "Making the Most of a Workplace Visit"
 layout: guide
-group_title: "Career Exploration"
+group_title: "5. Career Exploration"
 req_number: "5"
 prev: "/merit-badges/health-care-professions/guide/req4/"
-prev_title: "Req 4 — Testing, Imaging, and Behind-the-Scenes Care"
+prev_title: "Testing, Imaging, and Behind-the-Scenes Care"
 next: "/merit-badges/health-care-professions/guide/req6/"
-next_title: "Req 6 — The Physician's Oath"
+next_title: "The Physician"
 ---
 
 {{< drg/requirement number="5" >}}

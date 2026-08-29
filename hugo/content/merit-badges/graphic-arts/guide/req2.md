@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — Images, Halftones, and Digital Files"
+title: "Images, Halftones, and Digital Files"
 layout: guide
-group_title: "How Printing Works"
+group_title: "1. How Printing Works"
 req_number: "2"
 prev: "/merit-badges/graphic-arts/guide/req1/"
-prev_title: "Req 1 — Printing Processes"
+prev_title: "Printing Processes"
 next: "/merit-badges/graphic-arts/guide/req3/"
-next_title: "Req 3 — Design Choices and Production Planning"
+next_title: "Design Choices and Production Planning"
 ---
 
 {{< drg/requirement number="2" >}}

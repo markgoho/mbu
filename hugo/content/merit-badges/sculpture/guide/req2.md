@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Choose Your Projects"
+title: "Choose Your Projects"
 layout: "guide"
-group_title: "Choose Two Sculpture Experiences"
+group_title: "2. Choose Two Sculpture Experiences"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/sculpture/guide/req1/"
-prev_title: "Req 1 — Studio Safety"
+prev_title: "Studio Safety"
 next: "/merit-badges/sculpture/guide/req2a/"
-next_title: "Req 2a — Head and Figure Study"
+next_title: "Head and Figure Study"
 ---
 
 {{< drg/requirement number="2" >}}

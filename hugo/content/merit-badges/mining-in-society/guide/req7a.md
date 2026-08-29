@@ -1,13 +1,13 @@
 ---
-title: "Req 7a — Mining Beyond Earth"
+title: "Mining Beyond Earth"
 layout: "guide"
-group_title: "Mining Beyond Earth"
+group_title: "7. Mining Beyond Earth"
 req_number: "7a"
 req_path: "7.a"
 prev: "/merit-badges/mining-in-society/guide/req7/"
-prev_title: "Req 7 — Choose a Future-Focused Topic"
+prev_title: "Choose a Future-Focused Topic"
 next: "/merit-badges/mining-in-society/guide/req7b/"
-next_title: "Req 7b — Mining the Oceans"
+next_title: "Mining the Oceans"
 ---
 
 {{< drg/requirement number="7a" >}}

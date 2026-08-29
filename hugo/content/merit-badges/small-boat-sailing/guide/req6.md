@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Sailing Skills Underway"
+title: "Sailing Skills Underway"
 layout: "guide"
-group_title: "Handling the Boat Underway"
+group_title: "6. Handling the Boat Underway"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/small-boat-sailing/guide/req5/"
-prev_title: "Req 5 — Read the Wind"
+prev_title: "Read the Wind"
 next: "/merit-badges/small-boat-sailing/guide/req7/"
-next_title: "Req 7 — Knots, Lines & Seamanship"
+next_title: "Knots, Lines & Seamanship"
 ---
 
 {{< drg/requirement number="6" >}}

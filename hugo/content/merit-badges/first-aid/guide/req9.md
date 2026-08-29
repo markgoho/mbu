@@ -1,13 +1,13 @@
 ---
-title: "Req 9 — Head, Neck & Back"
+title: "Head, Neck & Back"
 layout: "guide"
-group_title: "Head & Spine Injuries"
+group_title: "9. Head & Spine Injuries"
 req_number: "9"
 req_path: "9"
 prev: "/merit-badges/first-aid/guide/req8e/"
-prev_title: "Req 8e — Splinting Fractures"
+prev_title: "Splinting Fractures"
 next: "/merit-badges/first-aid/guide/req10/"
-next_title: "Req 10 — Patient Transport"
+next_title: "Patient Transport"
 ---
 
 {{< drg/requirement number="9" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Signals, Horns, and Rear-End Devices"
+title: "Signals, Horns, and Rear-End Devices"
 layout: "guide"
-group_title: "Train Communication Systems"
+group_title: "6. Train Communication Systems"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/railroading/guide/req5/"
-prev_title: "Req 5 — Reading Railroad Signs"
+prev_title: "Reading Railroad Signs"
 next: "/merit-badges/railroading/guide/req7/"
-next_title: "Req 7 — Choose a Special Interest"
+next_title: "Choose a Special Interest"
 ---
 
 {{< drg/requirement number="6" >}}

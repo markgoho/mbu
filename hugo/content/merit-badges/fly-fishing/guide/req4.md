@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Fly Types and Imitation"
+title: "Fly Types and Imitation"
 layout: guide
-group_title: "Reading Fish & Water"
+group_title: "4. Reading Fish & Water"
 req_number: "4"
 prev: "/merit-badges/fly-fishing/guide/req3e/"
-prev_title: "Req 3e — Tying on the Fly"
+prev_title: "Tying on the Fly"
 next: "/merit-badges/fly-fishing/guide/req5/"
-next_title: "Req 5 — Casting with Control"
+next_title: "Casting with Control"
 ---
 
 {{< drg/requirement number="4" >}}

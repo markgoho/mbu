@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Leatherwork"
 group_title: "Getting Started"
 next: "/merit-badges/leatherwork/guide/req1/"
-next_title: "Req 1 — Shop Safety and First Aid"
+next_title: "Shop Safety and First Aid"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/leatherwork/guide/"
         is_sub: false
-  - group_title: "Safe Leathercraft Basics"
+  - group_title: "1. Safe Leathercraft Basics"
     items:
-      - title: "Req 1 — Shop Safety and First Aid"
+      - title: "1. Shop Safety and First Aid"
         url: "/merit-badges/leatherwork/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Hides, Leather Types, and Best Uses"
+      - title: "2. Hides, Leather Types, and Best Uses"
         url: "/merit-badges/leatherwork/guide/req2/"
         is_sub: false
-  - group_title: "Building Your Project"
+  - group_title: "3. Building Your Project"
     items:
-      - title: "Req 3 — Choosing Your Five Skills"
+      - title: "3. Choosing Your Five Skills"
         url: "/merit-badges/leatherwork/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Patterns and Transfer"
+      - title: "a Patterns and Transfer"
         url: "/merit-badges/leatherwork/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Clean Cutting"
+      - title: "b Clean Cutting"
         url: "/merit-badges/leatherwork/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Punching Accurate Holes"
+      - title: "c Punching Accurate Holes"
         url: "/merit-badges/leatherwork/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Carving and Stamping Designs"
+      - title: "d Carving and Stamping Designs"
         url: "/merit-badges/leatherwork/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Dye, Stain, and Finish"
+      - title: "e Dye, Stain, and Finish"
         url: "/merit-badges/leatherwork/guide/req3e/"
         is_sub: true
-      - title: "Req 3f — Lacing and Stitching"
+      - title: "f Lacing and Stitching"
         url: "/merit-badges/leatherwork/guide/req3f/"
         is_sub: true
-      - title: "Req 3g — Snaps and Rivets"
+      - title: "g Snaps and Rivets"
         url: "/merit-badges/leatherwork/guide/req3g/"
         is_sub: true
-      - title: "Req 3h — Smooth Finished Edges"
+      - title: "h Smooth Finished Edges"
         url: "/merit-badges/leatherwork/guide/req3h/"
         is_sub: true
-      - title: "Req 4 — Braiding and Plaiting"
+      - title: "4. Braiding and Plaiting"
         url: "/merit-badges/leatherwork/guide/req4/"
         is_sub: false
-  - group_title: "Exploring Leather Beyond the Bench"
+  - group_title: "5. Exploring Leather Beyond the Bench"
     items:
-      - title: "Req 5 — Pick Your Leather Path"
+      - title: "5. Pick Your Leather Path"
         url: "/merit-badges/leatherwork/guide/req5/"
         is_sub: false
-      - title: "Req 5a — Commercial Tanning"
+      - title: "a Commercial Tanning"
         url: "/merit-badges/leatherwork/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Tanning a Small Hide"
+      - title: "b Tanning a Small Hide"
         url: "/merit-badges/leatherwork/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Care, Repair, and Comparison"
+      - title: "c Care, Repair, and Comparison"
         url: "/merit-badges/leatherwork/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Visiting a Leather Business"
+      - title: "d Visiting a Leather Business"
         url: "/merit-badges/leatherwork/guide/req5d/"
         is_sub: true
   - group_title: "Beyond the Badge"

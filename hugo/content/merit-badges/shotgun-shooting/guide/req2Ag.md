@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-g — Cleaning Safety Rules and Materials"
+title: "Cleaning Safety Rules and Materials"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-g"
 req_path: "2.A.g"
 prev: "/merit-badges/shotgun-shooting/guide/req2Af/"
-prev_title: "Req 2A-f — Range Procedures and Commands"
+prev_title: "Range Procedures and Commands"
 next: "/merit-badges/shotgun-shooting/guide/req2Ah/"
-next_title: "Req 2A-h — Clean a Shotgun Properly"
+next_title: "Clean a Shotgun Properly"
 ---
 
 {{< drg/requirement number="2A-g" >}}

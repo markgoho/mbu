@@ -4,134 +4,134 @@ layout: guide
 badge_name: "Home Repairs"
 group_title: "Getting Started"
 next: "/merit-badges/home-repairs/guide/req1/"
-next_title: "Req 1 — Safety Basics"
+next_title: "Safety Basics"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/home-repairs/guide/"
-  - group_title: "Home Repair Safety"
+  - group_title: "1. Home Repair Safety"
     items:
-      - title: "Req 1 — Safety Basics"
+      - title: "1. Safety Basics"
         url: "/merit-badges/home-repairs/guide/req1/"
-  - group_title: "Outdoor Repairs"
+  - group_title: "2. Outdoor Repairs"
     items:
-      - title: "Req 2 — Outdoor Fix-It Options"
+      - title: "2. Outdoor Fix-It Options"
         url: "/merit-badges/home-repairs/guide/req2/"
-      - title: "Req 2a — Yard Tool Tune-Up"
+      - title: "a Yard Tool Tune-Up"
         url: "/merit-badges/home-repairs/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Weatherstripping a Door or Window"
+      - title: "b Weatherstripping a Door or Window"
         url: "/merit-badges/home-repairs/guide/req2b/"
         is_sub: true
-      - title: "Req 2c — Exterior Caulking"
+      - title: "c Exterior Caulking"
         url: "/merit-badges/home-repairs/guide/req2c/"
         is_sub: true
-      - title: "Req 2d — Patching Concrete or Asphalt"
+      - title: "d Patching Concrete or Asphalt"
         url: "/merit-badges/home-repairs/guide/req2d/"
         is_sub: true
-      - title: "Req 2e — Screen Repair"
+      - title: "e Screen Repair"
         url: "/merit-badges/home-repairs/guide/req2e/"
         is_sub: true
-      - title: "Req 2f — Replacing a Window Pane"
+      - title: "f Replacing a Window Pane"
         url: "/merit-badges/home-repairs/guide/req2f/"
         is_sub: true
-  - group_title: "Workshop Projects"
+  - group_title: "3. Workshop Projects"
     items:
-      - title: "Req 3 — Shop and Structure Projects"
+      - title: "3. Shop and Structure Projects"
         url: "/merit-badges/home-repairs/guide/req3/"
-      - title: "Req 3a — Tool Storage Solutions"
+      - title: "a Tool Storage Solutions"
         url: "/merit-badges/home-repairs/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Building a Workbench"
+      - title: "b Building a Workbench"
         url: "/merit-badges/home-repairs/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Furniture Repair"
+      - title: "c Furniture Repair"
         url: "/merit-badges/home-repairs/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Painting and Varnishing"
+      - title: "d Painting and Varnishing"
         url: "/merit-badges/home-repairs/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Fixing a Sagging Door or Gate"
+      - title: "e Fixing a Sagging Door or Gate"
         url: "/merit-badges/home-repairs/guide/req3e/"
         is_sub: true
-      - title: "Req 3f — Repairing Steps and Railings"
+      - title: "f Repairing Steps and Railings"
         url: "/merit-badges/home-repairs/guide/req3f/"
         is_sub: true
-      - title: "Req 3g — Fence Repair"
+      - title: "g Fence Repair"
         url: "/merit-badges/home-repairs/guide/req3g/"
         is_sub: true
-  - group_title: "Electrical Basics"
+  - group_title: "4. Electrical Basics"
     items:
-      - title: "Req 4 — Safe Electrical Repairs"
+      - title: "4. Safe Electrical Repairs"
         url: "/merit-badges/home-repairs/guide/req4/"
-      - title: "Req 4a — Breakers and Fuses"
+      - title: "a Breakers and Fuses"
         url: "/merit-badges/home-repairs/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Cords, Plugs, and Sockets"
+      - title: "b Cords, Plugs, and Sockets"
         url: "/merit-badges/home-repairs/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Installing a Light Switch"
+      - title: "c Installing a Light Switch"
         url: "/merit-badges/home-repairs/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Replacing an Outlet"
+      - title: "d Replacing an Outlet"
         url: "/merit-badges/home-repairs/guide/req4d/"
         is_sub: true
-  - group_title: "Plumbing Basics"
+  - group_title: "5. Plumbing Basics"
     items:
-      - title: "Req 5 — Water Shutoffs and Plumbing Fixes"
+      - title: "5. Water Shutoffs and Plumbing Fixes"
         url: "/merit-badges/home-repairs/guide/req5/"
-      - title: "Req 5a — Clearing a Drain or Trap"
+      - title: "a Clearing a Drain or Trap"
         url: "/merit-badges/home-repairs/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Fixing a Leaky Faucet"
+      - title: "b Fixing a Leaky Faucet"
         url: "/merit-badges/home-repairs/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Repairing a Toilet"
+      - title: "c Repairing a Toilet"
         url: "/merit-badges/home-repairs/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Repairing a Hose or Connector"
+      - title: "d Repairing a Hose or Connector"
         url: "/merit-badges/home-repairs/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Cleaning or Replacing a Sprinkler Head"
+      - title: "e Cleaning or Replacing a Sprinkler Head"
         url: "/merit-badges/home-repairs/guide/req5e/"
         is_sub: true
-  - group_title: "Indoor Finish Repairs"
+  - group_title: "6. Indoor Finish Repairs"
     items:
-      - title: "Req 6 — Interior Repair Options"
+      - title: "6. Interior Repair Options"
         url: "/merit-badges/home-repairs/guide/req6/"
-      - title: "Req 6a — Painting a Wall or Ceiling"
+      - title: "a Painting a Wall or Ceiling"
         url: "/merit-badges/home-repairs/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Repairing Flooring"
+      - title: "b Repairing Flooring"
         url: "/merit-badges/home-repairs/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Hanging Curtains or Drapes"
+      - title: "c Hanging Curtains or Drapes"
         url: "/merit-badges/home-repairs/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Patching Drywall"
+      - title: "d Patching Drywall"
         url: "/merit-badges/home-repairs/guide/req6d/"
         is_sub: true
-      - title: "Req 6e — Using Drywall Anchors"
+      - title: "e Using Drywall Anchors"
         url: "/merit-badges/home-repairs/guide/req6e/"
         is_sub: true
-      - title: "Req 6f — Reinforcing a Picture Frame"
+      - title: "f Reinforcing a Picture Frame"
         url: "/merit-badges/home-repairs/guide/req6f/"
         is_sub: true
-      - title: "Req 6g — Mending China, Glass, or Pottery"
+      - title: "g Mending China, Glass, or Pottery"
         url: "/merit-badges/home-repairs/guide/req6g/"
         is_sub: true
-      - title: "Req 6h — Drawer and Cabinet Hardware"
+      - title: "h Drawer and Cabinet Hardware"
         url: "/merit-badges/home-repairs/guide/req6h/"
         is_sub: true
-  - group_title: "Careers & Hobbies"
+  - group_title: "7. Careers & Hobbies"
     items:
-      - title: "Req 7 — Future Paths in Home Repairs"
+      - title: "7. Future Paths in Home Repairs"
         url: "/merit-badges/home-repairs/guide/req7/"
-      - title: "Req 7a — Exploring a Home Repair Career"
+      - title: "a Exploring a Home Repair Career"
         url: "/merit-badges/home-repairs/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Building a DIY Hobby or Lifestyle"
+      - title: "b Building a DIY Hobby or Lifestyle"
         url: "/merit-badges/home-repairs/guide/req7b/"
         is_sub: true
   - group_title: "Beyond the Badge"

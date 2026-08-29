@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Saving a Knocked-Out Tooth"
+title: "Saving a Knocked-Out Tooth"
 layout: guide
-group_title: "Dental Disease & Prevention"
+group_title: "2. Dental Disease & Prevention"
 req_number: "2c"
 prev: "/merit-badges/dentistry/guide/req2b/"
-prev_title: "Req 2b — Tooth Trauma & Mouth Guards"
+prev_title: "Tooth Trauma & Mouth Guards"
 next: "/merit-badges/dentistry/guide/req2d/"
-next_title: "Req 2d — Tobacco & Oral Health"
+next_title: "Tobacco & Oral Health"
 ---
 
 {{< drg/requirement number="2c" >}}

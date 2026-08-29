@@ -1,13 +1,13 @@
 ---
-title: "Req 6b — Watch a Live Esports Event"
+title: "Watch a Live Esports Event"
 layout: "guide"
-group_title: "Leadership and Service"
+group_title: "6. Leadership and Service"
 req_number: "6b"
 req_path: "6.b"
 prev: "/merit-badges/competitive-gaming/guide/req6a/"
-prev_title: "Req 6a — Teach Digital Citizenship"
+prev_title: "Teach Digital Citizenship"
 next: "/merit-badges/competitive-gaming/guide/req6c/"
-next_title: "Req 6c — Attend an Esports Event"
+next_title: "Attend an Esports Event"
 ---
 
 {{< drg/requirement number="6b" option="Watch a Live Esports Event" >}}

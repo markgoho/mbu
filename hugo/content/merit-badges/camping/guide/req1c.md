@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Camping First Aid"
+title: "Camping First Aid"
 layout: guide
-group_title: "Safety & Hazard Awareness"
+group_title: "1. Safety & Hazard Awareness"
 req_number: "1c"
 prev: "/merit-badges/camping/guide/req1b/"
-prev_title: "Req 1b — Weather Awareness"
+prev_title: "Weather Awareness"
 next: "/merit-badges/camping/guide/req2/"
-next_title: "Req 2 — Leave No Trace & Outdoor Code"
+next_title: "Leave No Trace & Outdoor Code"
 ---
 
 {{< drg/requirement number="1c" >}}

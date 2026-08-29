@@ -4,87 +4,87 @@ layout: guide
 badge_name: "Lifesaving"
 group_title: "Getting Started"
 next: "/merit-badges/lifesaving/guide/req1/"
-next_title: "Req 1 — Safe Swim Defense"
+next_title: "Safe Swim Defense"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/lifesaving/guide/"
-  - group_title: "Safety Foundations"
+  - group_title: "1. Safety Foundations"
     items:
-      - title: "Req 1 — Safe Swim Defense"
+      - title: "1. Safe Swim Defense"
         url: "/merit-badges/lifesaving/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Swimming Prerequisites"
+      - title: "2. Swimming Prerequisites"
         url: "/merit-badges/lifesaving/guide/req2/"
         is_sub: false
-  - group_title: "Recognizing & Responding"
+  - group_title: "3. Recognizing & Responding"
     items:
-      - title: "Req 3a — Drowning Situations"
+      - title: "a Drowning Situations"
         url: "/merit-badges/lifesaving/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Identifying Distress"
+      - title: "b Identifying Distress"
         url: "/merit-badges/lifesaving/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Rescue Order"
+      - title: "c Rescue Order"
         url: "/merit-badges/lifesaving/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Adapting Rescue Techniques"
+      - title: "d Adapting Rescue Techniques"
         url: "/merit-badges/lifesaving/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — When NOT to Rescue"
+      - title: "e When NOT to Rescue"
         url: "/merit-badges/lifesaving/guide/req3e/"
         is_sub: true
-  - group_title: "Reaching & Throwing Rescues"
+  - group_title: "4. Reaching & Throwing Rescues"
     items:
-      - title: "Req 4 — Reaching Rescues"
+      - title: "4. Reaching Rescues"
         url: "/merit-badges/lifesaving/guide/req4/"
         is_sub: false
-      - title: "Req 5 — Throwing Rescues"
+      - title: "5. Throwing Rescues"
         url: "/merit-badges/lifesaving/guide/req5/"
         is_sub: false
-  - group_title: "Rowing & Go Rescues"
+  - group_title: "6. Rowing & Go Rescues"
     items:
-      - title: "Req 6 — Rowing Rescue"
+      - title: "6. Rowing Rescue"
         url: "/merit-badges/lifesaving/guide/req6/"
         is_sub: false
-      - title: "Req 7 — Go Rescue Aids"
+      - title: "7. Go Rescue Aids"
         url: "/merit-badges/lifesaving/guide/req7/"
         is_sub: false
-  - group_title: "Swimming Rescues (Conscious)"
+  - group_title: "8. Swimming Rescues (Conscious)"
     items:
-      - title: "Req 8 — Buoyant Aid Rescues"
+      - title: "8. Buoyant Aid Rescues"
         url: "/merit-badges/lifesaving/guide/req8/"
         is_sub: false
-      - title: "Req 9 — Nonbuoyant Aid Rescue"
+      - title: "9. Nonbuoyant Aid Rescue"
         url: "/merit-badges/lifesaving/guide/req9/"
         is_sub: false
-      - title: "Req 10 — Lead-and-Wait Techniques"
+      - title: "10. Lead-and-Wait Techniques"
         url: "/merit-badges/lifesaving/guide/req10/"
         is_sub: false
-      - title: "Req 11 — Contact Tows"
+      - title: "11. Contact Tows"
         url: "/merit-badges/lifesaving/guide/req11/"
         is_sub: false
-      - title: "Req 12 — Escape Techniques"
+      - title: "12. Escape Techniques"
         url: "/merit-badges/lifesaving/guide/req12/"
         is_sub: false
-  - group_title: "Unconscious Victim Rescues"
+  - group_title: "13. Unconscious Victim Rescues"
     items:
-      - title: "Req 13 — Unconscious Rescue"
+      - title: "13. Unconscious Rescue"
         url: "/merit-badges/lifesaving/guide/req13/"
         is_sub: false
-      - title: "Req 14 — Submerged Victim Recovery"
+      - title: "14. Submerged Victim Recovery"
         url: "/merit-badges/lifesaving/guide/req14/"
         is_sub: false
-  - group_title: "Spinal Injury & Resuscitation"
+  - group_title: "15. Spinal Injury & Resuscitation"
     items:
-      - title: "Req 15 — Spinal Injury Management"
+      - title: "15. Spinal Injury Management"
         url: "/merit-badges/lifesaving/guide/req15/"
         is_sub: false
-      - title: "Req 16 — CPR & Rescue Breathing"
+      - title: "16. CPR & Rescue Breathing"
         url: "/merit-badges/lifesaving/guide/req16/"
         is_sub: false
-      - title: "Req 17 — Other Injuries & Illnesses"
+      - title: "17. Other Injuries & Illnesses"
         url: "/merit-badges/lifesaving/guide/req17/"
         is_sub: false
   - group_title: "Beyond the Badge"

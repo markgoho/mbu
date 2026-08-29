@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — The 12-Week Program"
+title: "The 12-Week Program"
 layout: guide
-group_title: "Planning Your Program"
+group_title: "6. Planning Your Program"
 req_number: "6"
 prev: "/merit-badges/personal-fitness/guide/req5/"
-prev_title: "Req 5 — Baseline Testing"
+prev_title: "Baseline Testing"
 next: "/merit-badges/personal-fitness/guide/req7/"
-next_title: "Req 7 — Execute & Track"
+next_title: "Execute & Track"
 ---
 
 {{< drg/requirement number="6" >}}

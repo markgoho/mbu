@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Meet an Architect"
+title: "Meet an Architect"
 layout: guide
-group_title: "The Professional Side"
+group_title: "3. The Professional Side"
 req_number: "3"
 prev: "/merit-badges/architecture/guide/req2/"
-prev_title: "Req 2 — Sustainable Architecture"
+prev_title: "Sustainable Architecture"
 next: "/merit-badges/architecture/guide/req4/"
-next_title: "Req 4 — Floor Plan Drawing"
+next_title: "Floor Plan Drawing"
 ---
 
 {{< drg/requirement number="3" >}}

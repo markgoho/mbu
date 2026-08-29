@@ -4,50 +4,50 @@ layout: guide
 badge_name: "Family Life"
 group_title: "Getting Started"
 next: "/merit-badges/family-life/guide/req1/"
-next_title: "Req 1 — What Is a Family?"
+next_title: "What Is a Family?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/family-life/guide/"
-  - group_title: "Understanding Family"
+  - group_title: "1. Understanding Family"
     items:
-      - title: "Req 1 — What Is a Family?"
+      - title: "1. What Is a Family?"
         url: "/merit-badges/family-life/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Your Role in the Family"
+      - title: "2. Your Role in the Family"
         url: "/merit-badges/family-life/guide/req2/"
         is_sub: false
-  - group_title: "Contributing at Home"
+  - group_title: "3. Contributing at Home"
     items:
-      - title: "Req 3 — Home Duties & Chores"
+      - title: "3. Home Duties & Chores"
         url: "/merit-badges/family-life/guide/req3/"
         is_sub: false
       - title: "90-Day Chore Tracking Log"
         url: "/merit-badges/family-life/guide/chore-tracking-log/"
         is_sub: true
-      - title: "Req 4 — Individual Home Project"
+      - title: "4. Individual Home Project"
         url: "/merit-badges/family-life/guide/req4/"
         is_sub: false
-  - group_title: "Family Projects"
+  - group_title: "5. Family Projects"
     items:
-      - title: "Req 5 — Family Project"
+      - title: "5. Family Project"
         url: "/merit-badges/family-life/guide/req5/"
         is_sub: false
-  - group_title: "Family Meetings"
+  - group_title: "6. Family Meetings"
     items:
-      - title: "Req 6a — Planning Family Meetings"
+      - title: "a Planning Family Meetings"
         url: "/merit-badges/family-life/guide/req6a/"
         is_sub: true
       - title: "Family Meeting Agenda Template"
         url: "/merit-badges/family-life/guide/meeting-agenda-template/"
         is_sub: true
-      - title: "Req 6b — Meeting Agenda Topics"
+      - title: "b Meeting Agenda Topics"
         url: "/merit-badges/family-life/guide/req6b/"
         is_sub: true
-  - group_title: "Effective Parenting"
+  - group_title: "7. Effective Parenting"
     items:
-      - title: "Req 7 — Understanding Parenthood"
+      - title: "7. Understanding Parenthood"
         url: "/merit-badges/family-life/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

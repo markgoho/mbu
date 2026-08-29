@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Safety Before the Splash"
+title: "Safety Before the Splash"
 layout: "guide"
-group_title: "River Safety Foundations"
+group_title: "1. River Safety Foundations"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/whitewater/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/whitewater/guide/req2a/"
-next_title: "Req 2a — River Features at a Glance"
+next_title: "River Features at a Glance"
 ---
 
 {{< drg/requirement number="1" >}}

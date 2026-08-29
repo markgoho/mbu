@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Dating the Past"
+title: "Dating the Past"
 layout: guide
-group_title: "Understanding Archaeology"
+group_title: "1. Understanding Archaeology"
 req_number: "3"
 prev: "/merit-badges/archaeology/guide/req2/"
-prev_title: "Req 2 — The Archaeological Process"
+prev_title: "The Archaeological Process"
 next: "/merit-badges/archaeology/guide/req4a/"
-next_title: "Req 4a — Researching Archaeological Sites"
+next_title: "Researching Archaeological Sites"
 ---
 
 {{< drg/requirement number="3" >}}

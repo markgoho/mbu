@@ -1,10 +1,10 @@
 ---
-title: "Req 9 — Skills and Careers of Inventors"
+title: "Skills and Careers of Inventors"
 layout: guide
-group_title: "Creative Futures"
+group_title: "9. Creative Futures"
 req_number: "9"
 prev: "/merit-badges/inventing/guide/req8b/"
-prev_title: "Req 8b — Visit an Inventing Exhibit"
+prev_title: "Visit an Inventing Exhibit"
 next: "/merit-badges/inventing/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

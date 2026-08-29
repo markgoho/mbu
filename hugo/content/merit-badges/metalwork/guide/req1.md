@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Safety First"
+title: "Safety First"
 layout: "guide"
-group_title: "Safety & Vocabulary"
+group_title: "1. Safety & Vocabulary"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/metalwork/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/metalwork/guide/req2/"
-next_title: "Req 2 — The Language of Metal"
+next_title: "The Language of Metal"
 ---
 
 {{< drg/requirement number="1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 9 — Saddles, Bridles, and Mounting"
+title: "Saddles, Bridles, and Mounting"
 layout: guide
-group_title: "Tack and Mounting"
+group_title: "9. Tack and Mounting"
 req_number: "9"
 prev: "/merit-badges/horsemanship/guide/req8/"
-prev_title: "Req 8 — Feeding a Horse"
+prev_title: "Feeding a Horse"
 next: "/merit-badges/horsemanship/guide/req10/"
-next_title: "Req 10 — Approach, Lead, and Tie"
+next_title: "Approach, Lead, and Tie"
 ---
 
 {{< drg/requirement number="9" >}}

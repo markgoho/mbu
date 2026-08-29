@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Hazards, Injuries & Safety Afloat"
+title: "Hazards, Injuries & Safety Afloat"
 layout: guide
-group_title: "Staying Safe on the Water"
+group_title: "1. Staying Safe on the Water"
 req_number: "1"
 prev: "/merit-badges/kayaking/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/kayaking/guide/req2/"
-next_title: "Req 2 — Swimmer Test Readiness"
+next_title: "Swimmer Test Readiness"
 ---
 
 {{< drg/requirement number="1" >}}

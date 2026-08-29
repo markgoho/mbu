@@ -1,11 +1,11 @@
 ---
-title: "Req 6 — Fit and Recover Your Gear"
+title: "Fit and Recover Your Gear"
 layout: "guide"
-group_title: "On-the-Water Skills"
+group_title: "4. On-the-Water Skills"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/water-sports/guide/req5/"
-prev_title: "Req 5 — Starts, Wakes, and Falls"
+prev_title: "Starts, Wakes, and Falls"
 next: "/merit-badges/water-sports/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

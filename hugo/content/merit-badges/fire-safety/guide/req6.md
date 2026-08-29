@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Safe Storage & Handling"
+title: "Safe Storage & Handling"
 layout: guide
-group_title: "Flammable & Combustible Liquids"
+group_title: "6. Flammable & Combustible Liquids"
 req_number: "6"
 prev: "/merit-badges/fire-safety/guide/req5hi/"
-prev_title: "Req 5h–5i — Gas, Smoke & Reporting Fires"
+prev_title: "Gas, Smoke & Reporting Fires"
 next: "/merit-badges/fire-safety/guide/req7/"
-next_title: "Req 7 — Fire Safety in Public Buildings"
+next_title: "Fire Safety in Public Buildings"
 ---
 
  {{< drg/requirement number="6" >}}

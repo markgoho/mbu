@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Personal Commitment"
+title: "Personal Commitment"
 layout: guide
-group_title: "Reflection & Growth"
+group_title: "6. Reflection & Growth"
 req_number: "6"
 prev: "/merit-badges/disabilities-awareness/guide/req5/"
-prev_title: "Req 5 — Advocacy"
+prev_title: "Advocacy"
 next: "/merit-badges/disabilities-awareness/guide/req7/"
-next_title: "Req 7 — Professions"
+next_title: "Professions"
 ---
 
 {{< drg/requirement number="6" >}}

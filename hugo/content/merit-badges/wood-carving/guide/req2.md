@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Totin' Chip and Safety Checklist"
+title: "Totin' Chip and Safety Checklist"
 layout: "guide"
-group_title: "Safety and Readiness"
+group_title: "1. Safety and Readiness"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/wood-carving/guide/req1/"
-prev_title: "Req 1 — Carving Safely"
+prev_title: "Carving Safely"
 next: "/merit-badges/wood-carving/guide/req3/"
-next_title: "Req 3 — Tools and Sharpening"
+next_title: "Tools and Sharpening"
 ---
 
 {{< drg/requirement number="2" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 7 — Research and Find a Public Cache"
+title: "Research and Find a Public Cache"
 layout: guide
-group_title: "Finding Local Caches"
+group_title: "7. Finding Local Caches"
 req_number: "7"
 prev: "/merit-badges/geocaching/guide/req6/"
-prev_title: "Req 6 — The Four Steps to Finding a Cache"
+prev_title: "The Four Steps to Finding a Cache"
 next: "/merit-badges/geocaching/guide/req8/"
-next_title: "Req 8 — Pick Your Geocaching Project"
+next_title: "Pick Your Geocaching Project"
 ---
 
 {{< drg/requirement number="7" >}}

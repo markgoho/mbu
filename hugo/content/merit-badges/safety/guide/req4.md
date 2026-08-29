@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Public Place Emergencies"
+title: "Public Place Emergencies"
 layout: "guide"
-group_title: "Public Place Safety"
+group_title: "4. Public Place Safety"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/safety/guide/req3/"
-prev_title: "Req 3 — Crime Awareness and Home Security"
+prev_title: "Crime Awareness and Home Security"
 next: "/merit-badges/safety/guide/req5/"
-next_title: "Req 5 — Keeping Scouting Safe"
+next_title: "Keeping Scouting Safe"
 ---
 
 {{< drg/requirement number="4" >}}

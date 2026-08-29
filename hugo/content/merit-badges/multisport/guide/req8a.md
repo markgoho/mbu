@@ -1,13 +1,13 @@
 ---
-title: "Req 8a — Keep Participating"
+title: "Keep Participating"
 layout: "guide"
-group_title: "Staying Involved"
+group_title: "8. Staying Involved"
 req_number: "8a"
 req_path: "8.a"
 prev: "/merit-badges/multisport/guide/req8/"
-prev_title: "Req 8 — Pick Your Next Two Steps"
+prev_title: "Pick Your Next Two Steps"
 next: "/merit-badges/multisport/guide/req8b/"
-next_title: "Req 8b — Study a Triathlete"
+next_title: "Study a Triathlete"
 ---
 
 {{< drg/requirement number="8a" >}}

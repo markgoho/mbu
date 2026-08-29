@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Braiding and Plaiting"
+title: "Braiding and Plaiting"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "4"
 prev: "/merit-badges/leatherwork/guide/req3h/"
-prev_title: "Req 3h — Smooth Finished Edges"
+prev_title: "Smooth Finished Edges"
 next: "/merit-badges/leatherwork/guide/req5/"
-next_title: "Req 5 — Pick Your Leather Path"
+next_title: "Pick Your Leather Path"
 ---
 
 {{< drg/requirement number="4" >}}

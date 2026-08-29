@@ -1,13 +1,13 @@
 ---
-title: "Req 2c — Use a Planner Well"
+title: "Use a Planner Well"
 layout: "guide"
-group_title: "Learning Beyond the Classroom"
+group_title: "2. Learning Beyond the Classroom"
 req_number: "2c"
 req_path: "2.c"
 prev: "/merit-badges/scholarship/guide/req2b/"
-prev_title: "Req 2b — Interview Working Adults"
+prev_title: "Interview Working Adults"
 next: "/merit-badges/scholarship/guide/req2d/"
-next_title: "Req 2d — Compare Research Methods"
+next_title: "Compare Research Methods"
 ---
 
 {{< drg/requirement number="2c" >}}

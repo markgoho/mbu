@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Choosing Trees, Shrubs, and Ground Covers"
+title: "Choosing Trees, Shrubs, and Ground Covers"
 layout: guide
-group_title: "Plants as Design Tools"
+group_title: "3. Plants as Design Tools"
 req_number: "3"
 prev: "/merit-badges/landscape-architecture/guide/req2/"
-prev_title: "Req 2 — What Makes a Site Work"
+prev_title: "What Makes a Site Work"
 next: "/merit-badges/landscape-architecture/guide/req4/"
-next_title: "Req 4 — Mapping Water, Access, and Comfort"
+next_title: "Mapping Water, Access, and Comfort"
 ---
 
 {{< drg/requirement number="3" >}}

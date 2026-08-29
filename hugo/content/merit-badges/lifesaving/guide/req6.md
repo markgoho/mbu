@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Rowing Rescue"
+title: "Rowing Rescue"
 layout: guide
-group_title: "Rowing & Go Rescues"
+group_title: "6. Rowing & Go Rescues"
 req_number: "6"
 prev: "/merit-badges/lifesaving/guide/req5/"
-prev_title: "Req 5 — Throwing Rescues"
+prev_title: "Throwing Rescues"
 next: "/merit-badges/lifesaving/guide/req7/"
-next_title: "Req 7 — Go Rescue Aids"
+next_title: "Go Rescue Aids"
 ---
 
 {{< drg/requirement number="6" >}}

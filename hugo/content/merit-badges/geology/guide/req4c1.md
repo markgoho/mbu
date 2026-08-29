@@ -1,12 +1,12 @@
 ---
-title: "Req 4c1 — The Three Rock Classes"
+title: "The Three Rock Classes"
 layout: guide
-group_title: "Mineral Resources"
+group_title: "4. Mineral Resources"
 req_number: "4c1"
 prev: "/merit-badges/geology/guide/req4c/"
-prev_title: "Req 4c — Rocks, Minerals, and Society"
+prev_title: "Rocks, Minerals, and Society"
 next: "/merit-badges/geology/guide/req4c2/"
-next_title: "Req 4c2 — What Makes a Mineral"
+next_title: "What Makes a Mineral"
 ---
 
 {{< drg/requirement number="4c1" >}}

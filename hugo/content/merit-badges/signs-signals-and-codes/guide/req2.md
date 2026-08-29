@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Distress Signals That Get You Found"
+title: "Distress Signals That Get You Found"
 layout: "guide"
-group_title: "Emergency Communication"
+group_title: "2. Emergency Communication"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/signs-signals-and-codes/guide/req1/"
-prev_title: "Req 1 — Why Humans Need Shared Signals"
+prev_title: "Why Humans Need Shared Signals"
 next: "/merit-badges/signs-signals-and-codes/guide/req3/"
-next_title: "Req 3 — Morse Code and ASL in Action"
+next_title: "Morse Code and ASL in Action"
 ---
 
 {{< drg/requirement number="2" >}}

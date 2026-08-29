@@ -1,12 +1,12 @@
 ---
-title: "Req 8b — Scout Values & Sustainability"
+title: "Scout Values & Sustainability"
 layout: guide
-group_title: "Scouting & Sustainability"
+group_title: "8. Scouting & Sustainability"
 req_number: "8b"
 prev: "/merit-badges/sustainability/guide/req8a/"
-prev_title: "Req 8a — Campout Observations"
+prev_title: "Campout Observations"
 next: "/merit-badges/sustainability/guide/req8c/"
-next_title: "Req 8c — Household Behavior Changes"
+next_title: "Household Behavior Changes"
 ---
 
 {{< drg/requirement number="8b" >}}

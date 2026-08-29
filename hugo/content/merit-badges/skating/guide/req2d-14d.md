@@ -1,13 +1,13 @@
 ---
-title: "Req 2d14d — Air & Grab Tricks"
+title: "Air & Grab Tricks"
 layout: "guide"
-group_title: "Option D — Skateboarding"
+group_title: "2. Option D — Skateboarding"
 req_number: "2d14d"
 req_path: "2.d.14.d"
 prev: "/merit-badges/skating/guide/req2d-14c/"
-prev_title: "Req 2d14c — Grind & Slide Tricks"
+prev_title: "Grind & Slide Tricks"
 next: "/merit-badges/skating/guide/req2d-14e/"
-next_title: "Req 2d14e — Footplant Tricks"
+next_title: "Footplant Tricks"
 ---
 
 {{< drg/requirement number="2d14d" >}}

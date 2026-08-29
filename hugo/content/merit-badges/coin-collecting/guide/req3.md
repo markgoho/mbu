@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Storing Your Collection"
+title: "Storing Your Collection"
 layout: guide
-group_title: "Caring for Your Collection"
+group_title: "3. Caring for Your Collection"
 req_number: "3"
 prev: "/merit-badges/coin-collecting/guide/req2/"
-prev_title: "Req 2 — Coin Terminology"
+prev_title: "Coin Terminology"
 next: "/merit-badges/coin-collecting/guide/req4a/"
-next_title: "Req 4a — The One-Cent Coin"
+next_title: "The One-Cent Coin"
 ---
 
 {{< drg/requirement number="3" >}}

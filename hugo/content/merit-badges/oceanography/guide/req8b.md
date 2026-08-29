@@ -1,13 +1,13 @@
 ---
-title: "Req 8b — Visit an Ocean Science Site"
+title: "Visit an Ocean Science Site"
 layout: "guide"
-group_title: "Share What You Learned"
+group_title: "8. Share What You Learned"
 req_number: "8b"
 req_path: "8.b"
 prev: "/merit-badges/oceanography/guide/req8a/"
-prev_title: "Req 8a — Read and Report on a Book"
+prev_title: "Read and Report on a Book"
 next: "/merit-badges/oceanography/guide/req8b1/"
-next_title: "Req 8b1 — Tour a Research Ship"
+next_title: "Tour a Research Ship"
 ---
 
 {{< drg/requirement number="8b" >}}

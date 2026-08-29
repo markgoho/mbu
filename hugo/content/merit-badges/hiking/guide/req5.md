@@ -1,10 +1,10 @@
 ---
-title: "Req 5 — Hike Reports"
+title: "Hike Reports"
 layout: guide
-group_title: "Hit the Trail"
+group_title: "4. Hit the Trail"
 req_number: "5"
 prev: "/merit-badges/hiking/guide/req4/"
-prev_title: "Requirement 4 — Your Hikes"
+prev_title: "Your Hikes"
 next: "/merit-badges/hiking/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

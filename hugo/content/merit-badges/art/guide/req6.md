@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Visiting Art in Person"
+title: "Visiting Art in Person"
 layout: guide
-group_title: "Exploring the Art World"
+group_title: "6. Exploring the Art World"
 req_number: "6"
 prev: "/merit-badges/art/guide/req5/"
-prev_title: "Req 5 — Applied Art Projects"
+prev_title: "Applied Art Projects"
 next: "/merit-badges/art/guide/req7/"
-next_title: "Req 7 — Careers in Art"
+next_title: "Careers in Art"
 ---
 
 {{< drg/requirement number="6" >}}

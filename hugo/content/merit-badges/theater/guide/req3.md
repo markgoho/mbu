@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Theater Safety"
+title: "Theater Safety"
 layout: guide
-group_title: "Behind the Curtain"
+group_title: "3. Behind the Curtain"
 req_number: "3"
 prev: "/merit-badges/theater/guide/req2/"
-prev_title: "Req 2 — Writing a One-Act Play"
+prev_title: "Writing a One-Act Play"
 next: "/merit-badges/theater/guide/req3a/"
-next_title: "Req 3a — Acting"
+next_title: "Acting"
 ---
 
 {{< drg/requirement number="3" >}}

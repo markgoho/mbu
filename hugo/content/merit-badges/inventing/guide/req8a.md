@@ -1,12 +1,12 @@
 ---
-title: "Req 8a — Build with a Team"
+title: "Build with a Team"
 layout: guide
-group_title: "Clubs and Teams"
+group_title: "8. Clubs and Teams"
 req_number: "8a"
 prev: "/merit-badges/inventing/guide/req8/"
-prev_title: "Req 8 — Choose an Inventing Experience"
+prev_title: "Choose an Inventing Experience"
 next: "/merit-badges/inventing/guide/req8b/"
-next_title: "Req 8b — Visit an Inventing Exhibit"
+next_title: "Visit an Inventing Exhibit"
 ---
 
 {{< drg/requirement number="8a" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 5c — Gear Care & Storage"
+title: "Gear Care & Storage"
 layout: guide
-group_title: "Clothing & Gear"
+group_title: "5. Clothing & Gear"
 req_number: "5c"
 prev: "/merit-badges/camping/guide/req5b/"
-prev_title: "Req 5b — Footwear"
+prev_title: "Footwear"
 next: "/merit-badges/camping/guide/req5d/"
-next_title: "Req 5d — Outdoor Essentials"
+next_title: "Outdoor Essentials"
 ---
 
 {{< drg/requirement number="5c" >}}

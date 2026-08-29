@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Prescribed Fire"
+title: "Prescribed Fire"
 layout: "guide"
-group_title: "Fire as a Tool"
+group_title: "3. Fire as a Tool"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/wildland-fire-management/guide/req2/"
-prev_title: "Req 2 — The Harms of Wildfire"
+prev_title: "The Harms of Wildfire"
 next: "/merit-badges/wildland-fire-management/guide/req4a/"
-next_title: "Req 4a — Wildfire Prevention"
+next_title: "Wildfire Prevention"
 ---
 
 {{< drg/requirement number="3" >}}

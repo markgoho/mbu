@@ -1,13 +1,13 @@
 ---
-title: "Req 8a — Understanding Musculoskeletal Injuries"
+title: "Understanding Musculoskeletal Injuries"
 layout: "guide"
-group_title: "Muscle & Bone Injuries"
+group_title: "8. Muscle & Bone Injuries"
 req_number: "8a"
 req_path: "8.a"
 prev: "/merit-badges/first-aid/guide/req7/"
-prev_title: "Req 7 — CPR and AED"
+prev_title: "CPR and AED"
 next: "/merit-badges/first-aid/guide/req8b/"
-next_title: "Req 8b — Strains, Tears & Tendons"
+next_title: "Strains, Tears & Tendons"
 ---
 
 {{< drg/requirement number="8a" >}}

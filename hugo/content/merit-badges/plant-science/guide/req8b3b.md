@@ -1,13 +1,13 @@
 ---
-title: "Req 8b3b — Transplanting Seedlings"
+title: "Transplanting Seedlings"
 layout: "guide"
-group_title: "Option B — Horticulture"
+group_title: "8. Option B — Horticulture"
 req_number: "8b3b"
 req_path: "8.b.3.b"
 prev: "/merit-badges/plant-science/guide/req8b3a/"
-prev_title: "Req 8b3a — Propagation Methods"
+prev_title: "Propagation Methods"
 next: "/merit-badges/plant-science/guide/req8b3c/"
-next_title: "Req 8b3c — Pruning with Purpose"
+next_title: "Pruning Techniques"
 ---
 
 {{< drg/requirement number="8b3b" >}}

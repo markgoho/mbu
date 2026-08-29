@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Sharpening"
+title: "Sharpening"
 layout: guide
-group_title: "Tools of the Trade"
+group_title: "3. Tools of the Trade"
 req_number: "3b"
 prev: "/merit-badges/woodwork/guide/req3a/"
-prev_title: "Req 3a — Tool Care & Storage"
+prev_title: "Tool Care & Storage"
 next: "/merit-badges/woodwork/guide/req4/"
-next_title: "Req 4 — Build with Basic Tools"
+next_title: "Build with Basic Tools"
 ---
 
 {{< drg/requirement number="3b" >}}

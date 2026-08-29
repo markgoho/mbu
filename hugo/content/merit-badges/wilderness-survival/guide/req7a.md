@@ -1,12 +1,12 @@
 ---
-title: "Req 7a — Ground Rescue Signals"
+title: "Ground Rescue Signals"
 layout: guide
 group_title: "Rescue & Signaling"
 req_number: "7a"
 prev: "/merit-badges/wilderness-survival/guide/req6/"
-prev_title: "Req 6 — Fire Building"
+prev_title: "Fire Building"
 next: "/merit-badges/wilderness-survival/guide/req7b/"
-next_title: "Req 7b — Signal Mirror"
+next_title: "Signal Mirror"
 ---
 
 {{< drg/requirement number="7a" >}}

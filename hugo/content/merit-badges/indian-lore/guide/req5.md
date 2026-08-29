@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Choose Your Experience"
+title: "Choose Your Experience"
 layout: guide
-group_title: "Choose Your Experience"
+group_title: "5. Choose Your Experience"
 req_number: "5"
 prev: "/merit-badges/indian-lore/guide/req4/"
-prev_title: "Req 4 — Influence and Exchange"
+prev_title: "Influence and Exchange"
 next: "/merit-badges/indian-lore/guide/req5a/"
-next_title: "Req 5a — Museum Visit"
+next_title: "Museum Visit"
 ---
 
 {{< drg/requirement number="5" >}}

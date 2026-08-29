@@ -1,13 +1,13 @@
 ---
-title: "Req 8 — Choose a Painting Path"
+title: "Choose a Painting Path"
 layout: "guide"
-group_title: "Futures in Painting"
+group_title: "8. Futures in Painting"
 req_number: "8"
 req_path: "8"
 prev: "/merit-badges/painting/guide/req7/"
-prev_title: "Req 7 — Paint, Health, and the Environment"
+prev_title: "Paint, Health, and the Environment"
 next: "/merit-badges/painting/guide/req8a/"
-next_title: "Req 8a — Research a Painting Career"
+next_title: "Research a Painting Career"
 ---
 
 {{< drg/requirement number="8" >}}

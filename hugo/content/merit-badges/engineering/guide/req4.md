@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Interview with an Engineer"
+title: "Interview with an Engineer"
 layout: guide
-group_title: "Visiting an Engineer"
+group_title: "4. Visiting an Engineer"
 req_number: "4"
 prev: "/merit-badges/engineering/guide/req3/"
-prev_title: "Req 3 — Six Fields of Engineering"
+prev_title: "Six Fields of Engineering"
 next: "/merit-badges/engineering/guide/req5/"
-next_title: "Req 5 — Systems Engineering Design Project"
+next_title: "Systems Engineering Design Project"
 ---
 
 {{< drg/requirement number="4" >}}

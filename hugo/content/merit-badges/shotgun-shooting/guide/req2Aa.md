@@ -1,13 +1,13 @@
 ---
-title: "Req 2A-a — Principal Parts and Action Types"
+title: "Principal Parts and Action Types"
 layout: "guide"
-group_title: "Option A — Modern Shotshell"
+group_title: "2. Option A — Modern Shotshell"
 req_number: "2A-a"
 req_path: "2.A.a"
 prev: "/merit-badges/shotgun-shooting/guide/req2A/"
 prev_title: "Option A Overview"
 next: "/merit-badges/shotgun-shooting/guide/req2Ab/"
-next_title: "Req 2A-b — Safe Storage and Handling"
+next_title: "Safe Storage and Handling"
 ---
 
 {{< drg/requirement number="2A-a" >}}

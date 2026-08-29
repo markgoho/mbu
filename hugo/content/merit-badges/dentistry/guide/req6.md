@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Dental Health Outreach"
+title: "Dental Health Outreach"
 layout: guide
-group_title: "Sharing What You Know"
+group_title: "6. Sharing What You Know"
 req_number: "6"
 prev: "/merit-badges/dentistry/guide/req5/"
-prev_title: "Req 5 — Fluoride & the Mouth-Body Connection"
+prev_title: "Fluoride & the Mouth-Body Connection"
 next: "/merit-badges/dentistry/guide/req7/"
-next_title: "Req 7 — Careers in Dentistry"
+next_title: "Careers in Dentistry"
 ---
 
 {{< drg/requirement number="6" >}}

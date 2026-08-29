@@ -4,46 +4,46 @@ layout: guide
 badge_name: "Cycling"
 group_title: "Getting Started"
 next: "/merit-badges/cycling/guide/req1a/"
-next_title: "Req 1a — Cycling Hazards"
+next_title: "Cycling Hazards"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/cycling/guide/"
-  - group_title: "Hazards & First Aid"
+  - group_title: "1. Hazards & First Aid"
     items:
-      - title: "Req 1a — Cycling Hazards"
+      - title: "a Cycling Hazards"
         url: "/merit-badges/cycling/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — First Aid for Cyclists"
+      - title: "b First Aid for Cyclists"
         url: "/merit-badges/cycling/guide/req1b/"
         is_sub: true
-  - group_title: "Rules of the Road"
+  - group_title: "2. Rules of the Road"
     items:
-      - title: "Req 2 — Bicycle Laws"
+      - title: "2. Bicycle Laws"
         url: "/merit-badges/cycling/guide/req2/"
         is_sub: false
-  - group_title: "Gear & Safety"
+  - group_title: "3. Gear & Safety"
     items:
-      - title: "Req 3 — Clothing, Gear & Helmets"
+      - title: "3. Clothing, Gear & Helmets"
         url: "/merit-badges/cycling/guide/req3/"
         is_sub: false
-  - group_title: "Bicycle Maintenance"
+  - group_title: "4. Bicycle Maintenance"
     items:
-      - title: "Req 4 — Inspect, Adjust & Repair"
+      - title: "4. Inspect, Adjust & Repair"
         url: "/merit-badges/cycling/guide/req4/"
         is_sub: false
-  - group_title: "Handling Skills"
+  - group_title: "5. Handling Skills"
     items:
-      - title: "Req 5 — Basic Bike Handling"
+      - title: "5. Basic Bike Handling"
         url: "/merit-badges/cycling/guide/req5/"
         is_sub: false
-  - group_title: "Your Rides (Choose One Option)"
+  - group_title: "6. Your Rides (Choose One Option)"
     items:
-      - title: "Req 6a — Road Biking Option"
+      - title: "a Road Biking Option"
         url: "/merit-badges/cycling/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Trail Biking Option"
+      - title: "b Trail Biking Option"
         url: "/merit-badges/cycling/guide/req6b/"
         is_sub: true
       - title: "Ride Log"

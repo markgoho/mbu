@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Fluoride & the Mouth-Body Connection"
+title: "Fluoride & the Mouth-Body Connection"
 layout: guide
-group_title: "Fluoride & Your Body"
+group_title: "5. Fluoride & Your Body"
 req_number: "5"
 prev: "/merit-badges/dentistry/guide/req4/"
-prev_title: "Req 4 — Dental Tools & Hands-On Skills"
+prev_title: "Dental Tools & Hands-On Skills"
 next: "/merit-badges/dentistry/guide/req6/"
-next_title: "Req 6 — Dental Health Outreach"
+next_title: "Dental Health Outreach"
 ---
 
 {{< drg/requirement number="5" >}}

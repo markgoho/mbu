@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Tools and Sharpening"
+title: "Tools and Sharpening"
 layout: "guide"
-group_title: "Tools and Technique"
+group_title: "3. Tools and Technique"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/wood-carving/guide/req2/"
-prev_title: "Req 2 — Totin' Chip and Safety Checklist"
+prev_title: "Totin"
 next: "/merit-badges/wood-carving/guide/req4/"
-next_title: "Req 4 — Practice the Basic Cuts"
+next_title: "Practice the Basic Cuts"
 ---
 
 {{< drg/requirement number="3" >}}

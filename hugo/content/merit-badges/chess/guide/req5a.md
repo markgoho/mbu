@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Chess Strategy"
+title: "Chess Strategy"
 layout: guide
-group_title: "Tactics & Endgames"
+group_title: "5. Tactics & Endgames"
 req_number: "5a"
 prev: "/merit-badges/chess/guide/req4d/"
-prev_title: "Req 4d — Famous Checkmates & Traps"
+prev_title: "Famous Checkmates & Traps"
 next: "/merit-badges/chess/guide/req5b/"
-next_title: "Req 5b — Chess Tactics"
+next_title: "Chess Tactics"
 ---
 
 {{< drg/requirement number="5a" >}}

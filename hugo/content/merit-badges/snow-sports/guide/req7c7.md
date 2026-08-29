@@ -1,13 +1,13 @@
 ---
-title: "Req 7c7 — Beginning & Intermediate Maneuvers"
+title: "Beginning & Intermediate Maneuvers"
 layout: "guide"
-group_title: "Option C — Snowboarding"
+group_title: "7. Option C — Snowboarding"
 req_number: "7c7"
 req_path: "7.c.7"
 prev: "/merit-badges/snow-sports/guide/req7c6/"
-prev_title: "Req 7c6 — Waxing a Snowboard"
+prev_title: "Waxing a Snowboard"
 next: "/merit-badges/snow-sports/guide/req7c8/"
-next_title: "Req 7c8 — Ollie, Nose-End Grab & Wheelie"
+next_title: "Ollie, Nose-End Grab & Wheelie"
 ---
 
 {{< drg/requirement number="7c7" >}}

@@ -4,163 +4,163 @@ layout: guide
 badge_name: "Geology"
 group_title: "Getting Started"
 next: "/merit-badges/geology/guide/req1/"
-next_title: "Req 1 — What Geology Explains"
+next_title: "What Geology Explains"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/geology/guide/"
         is_sub: false
-  - group_title: "Thinking Like a Geologist"
+  - group_title: "1. Thinking Like a Geologist"
     items:
-      - title: "Req 1 — What Geology Explains"
+      - title: "1. What Geology Explains"
         url: "/merit-badges/geology/guide/req1/"
         is_sub: false
-  - group_title: "Earth Materials in Daily Life"
+  - group_title: "2. Earth Materials in Daily Life"
     items:
-      - title: "Req 2 — Resources From the Ground"
+      - title: "2. Resources From the Ground"
         url: "/merit-badges/geology/guide/req2/"
         is_sub: false
-  - group_title: "Reading the Rocks"
+  - group_title: "3. Reading the Rocks"
     items:
-      - title: "Req 3 — Geologic Maps"
+      - title: "3. Geologic Maps"
         url: "/merit-badges/geology/guide/req3/"
         is_sub: false
-  - group_title: "Choose Your Geology Path"
+  - group_title: "4. Choose Your Geology Path"
     items:
-      - title: "Req 4 — Pick Your Option"
+      - title: "4. Pick Your Option"
         url: "/merit-badges/geology/guide/req4/"
         is_sub: false
-  - group_title: "Surface & Sedimentary Processes"
+  - group_title: "4. Surface & Sedimentary Processes"
     items:
-      - title: "Req 4a — Streams Shape the Land"
+      - title: "a Streams Shape the Land"
         url: "/merit-badges/geology/guide/req4a/"
         is_sub: false
-      - title: "Req 4a1 — Sediment Settling"
+      - title: "a Sediment Settling"
         url: "/merit-badges/geology/guide/req4a1/"
         is_sub: true
-      - title: "Req 4a2 — Stream Gradients"
+      - title: "a Stream Gradients"
         url: "/merit-badges/geology/guide/req4a2/"
         is_sub: true
-      - title: "Req 4a3 — Reading Stream Features"
+      - title: "a Reading Stream Features"
         url: "/merit-badges/geology/guide/req4a3/"
         is_sub: true
-      - title: "Req 4a4 — Tiny Sediment, Big Clues"
+      - title: "a Tiny Sediment, Big Clues"
         url: "/merit-badges/geology/guide/req4a4/"
         is_sub: true
-      - title: "Req 4a5 — Clues in a Dry Streambed"
+      - title: "a Clues in a Dry Streambed"
         url: "/merit-badges/geology/guide/req4a5/"
         is_sub: true
-  - group_title: "Energy Resources"
+  - group_title: "4. Energy Resources"
     items:
-      - title: "Req 4b — Energy Underground"
+      - title: "b Energy Underground"
         url: "/merit-badges/geology/guide/req4b/"
         is_sub: false
-      - title: "Req 4b1 — Power Sources in the United States"
+      - title: "b Power Sources in the United States"
         url: "/merit-badges/geology/guide/req4b1/"
         is_sub: true
-      - title: "Req 4b2 — Source, Trap, and Reservoir"
+      - title: "b Source, Trap, and Reservoir"
         url: "/merit-badges/geology/guide/req4b2/"
         is_sub: true
-      - title: "Req 4b3 — Tools for Finding Oil and Gas"
+      - title: "b Tools for Finding Oil and Gas"
         url: "/merit-badges/geology/guide/req4b3/"
         is_sub: true
-      - title: "Req 4b4 — Subsurface Structure Maps"
+      - title: "b Subsurface Structure Maps"
         url: "/merit-badges/geology/guide/req4b4/"
         is_sub: true
-      - title: "Req 4b5 — Show or Visit a Drilling Operation"
+      - title: "b Show or Visit a Drilling Operation"
         url: "/merit-badges/geology/guide/req4b5/"
         is_sub: false
-      - title: "Req 4b5a — Present How Fuels Are Found"
+      - title: "b Present How Fuels Are Found"
         url: "/merit-badges/geology/guide/req4b5a/"
         is_sub: true
-      - title: "Req 4b5b — Visit a Drilling Rig"
+      - title: "b Visit a Drilling Rig"
         url: "/merit-badges/geology/guide/req4b5b/"
         is_sub: true
-  - group_title: "Mineral Resources"
+  - group_title: "4. Mineral Resources"
     items:
-      - title: "Req 4c — Rocks, Minerals, and Society"
+      - title: "c Rocks, Minerals, and Society"
         url: "/merit-badges/geology/guide/req4c/"
         is_sub: false
-      - title: "Req 4c1 — The Three Rock Classes"
+      - title: "c The Three Rock Classes"
         url: "/merit-badges/geology/guide/req4c1/"
         is_sub: true
-      - title: "Req 4c2 — What Makes a Mineral"
+      - title: "c What Makes a Mineral"
         url: "/merit-badges/geology/guide/req4c2/"
         is_sub: true
-      - title: "Req 4c3 — Collect or Identify Specimens"
+      - title: "c Collect or Identify Specimens"
         url: "/merit-badges/geology/guide/req4c3/"
         is_sub: false
-      - title: "Req 4c3a — Build a 10-Specimen Collection"
+      - title: "c Build a 10-Specimen Collection"
         url: "/merit-badges/geology/guide/req4c3a/"
         is_sub: true
-      - title: "Req 4c3b — Identify 15 Specimens"
+      - title: "c Identify 15 Specimens"
         url: "/merit-badges/geology/guide/req4c3b/"
         is_sub: true
-      - title: "Req 4c4 — Road-Building Materials"
+      - title: "c Road-Building Materials"
         url: "/merit-badges/geology/guide/req4c4/"
         is_sub: true
-      - title: "Req 4c5 — Visit or Investigate Resource Use"
+      - title: "c Visit or Investigate Resource Use"
         url: "/merit-badges/geology/guide/req4c5/"
         is_sub: false
-      - title: "Req 4c5a — Visit a Mine, Quarry, or Pit"
+      - title: "c Visit a Mine, Quarry, or Pit"
         url: "/merit-badges/geology/guide/req4c5a/"
         is_sub: true
-      - title: "Req 4c5b — Two Rocks and Two Minerals"
+      - title: "c Two Rocks and Two Minerals"
         url: "/merit-badges/geology/guide/req4c5b/"
         is_sub: true
-      - title: "Req 4c5c — Geology in Construction"
+      - title: "c Geology in Construction"
         url: "/merit-badges/geology/guide/req4c5c/"
         is_sub: true
-  - group_title: "Earth History"
+  - group_title: "4. Earth History"
     items:
-      - title: "Req 4d — Deep Time and Ancient Worlds"
+      - title: "d Deep Time and Ancient Worlds"
         url: "/merit-badges/geology/guide/req4d/"
         is_sub: false
-      - title: "Req 4d1 — Geologic Time in Your Region"
+      - title: "d Geologic Time in Your Region"
         url: "/merit-badges/geology/guide/req4d1/"
         is_sub: true
-      - title: "Req 4d2 — Plate Tectonics"
+      - title: "d Plate Tectonics"
         url: "/merit-badges/geology/guide/req4d2/"
         is_sub: true
-      - title: "Req 4d3 — Burial, Fossils, and Extinction"
+      - title: "d Burial, Fossils, and Extinction"
         url: "/merit-badges/geology/guide/req4d3/"
         is_sub: true
-      - title: "Req 4d4 — Fossils as Ancient Clues"
+      - title: "d Fossils as Ancient Clues"
         url: "/merit-badges/geology/guide/req4d4/"
         is_sub: true
-      - title: "Req 4d5 — Collect or Identify Fossils"
+      - title: "d Collect or Identify Fossils"
         url: "/merit-badges/geology/guide/req4d5/"
         is_sub: true
-      - title: "Req 4d6 — Visit, Observe, or Present Fossils"
+      - title: "d Visit, Observe, or Present Fossils"
         url: "/merit-badges/geology/guide/req4d6/"
         is_sub: false
-      - title: "Req 4d6a — Museum Fossil Visit"
+      - title: "d Museum Fossil Visit"
         url: "/merit-badges/geology/guide/req4d6a/"
         is_sub: true
-      - title: "Req 4d6b — Fossils in Building Stone"
+      - title: "d Fossils in Building Stone"
         url: "/merit-badges/geology/guide/req4d6b/"
         is_sub: true
-      - title: "Req 4d6c — Fossil Outcrop Visit"
+      - title: "d Fossil Outcrop Visit"
         url: "/merit-badges/geology/guide/req4d6c/"
         is_sub: true
-      - title: "Req 4d6d — State Fossil Presentation"
+      - title: "d State Fossil Presentation"
         url: "/merit-badges/geology/guide/req4d6d/"
         is_sub: true
-  - group_title: "Outdoor Ethics in Geology"
+  - group_title: "5. Outdoor Ethics in Geology"
     items:
-      - title: "Req 5 — Leave No Trace and the Outdoor Code"
+      - title: "5. Leave No Trace and the Outdoor Code"
         url: "/merit-badges/geology/guide/req5/"
         is_sub: false
-  - group_title: "Where Geology Can Take You"
+  - group_title: "6. Where Geology Can Take You"
     items:
-      - title: "Req 6 — Career or Hobby Path"
+      - title: "6. Career or Hobby Path"
         url: "/merit-badges/geology/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Geology Careers"
+      - title: "a Geology Careers"
         url: "/merit-badges/geology/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Geology as a Hobby or Lifestyle"
+      - title: "b Geology as a Hobby or Lifestyle"
         url: "/merit-badges/geology/guide/req6b/"
         is_sub: true
   - group_title: "Beyond the Badge"

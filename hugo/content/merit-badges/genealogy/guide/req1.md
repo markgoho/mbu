@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — Genealogy Basics"
+title: "Genealogy Basics"
 layout: guide
-group_title: "Foundations of Family History"
+group_title: "1. Foundations of Family History"
 req_number: "1"
 prev: "/merit-badges/genealogy/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/genealogy/guide/req2/"
-next_title: "Req 2 — Tell a Personal Story"
+next_title: "Tell a Personal Story"
 ---
 
 {{< drg/requirement number="1" >}}

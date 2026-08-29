@@ -1,13 +1,13 @@
 ---
-title: "Req 4a3 — Bracing a Tandem Canoe"
+title: "Bracing a Tandem Canoe"
 layout: "guide"
-group_title: "Calm-Water Skill Building"
+group_title: "4. Calm-Water Skill Building"
 req_number: "4a3"
 req_path: "4.a.3"
 prev: "/merit-badges/whitewater/guide/req4a2/"
-prev_title: "Req 4a2 — Stern Strokes for Tandem Canoes"
+prev_title: "Stern Strokes for Tandem Canoes"
 next: "/merit-badges/whitewater/guide/req4b/"
-next_title: "Req 4b — Solo Canoe Control"
+next_title: "Solo Canoe Control"
 ---
 
 {{< drg/requirement number="4a3" >}}

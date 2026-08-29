@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Raising Capital"
+title: "Raising Capital"
 layout: guide
-group_title: "Money & Finance"
+group_title: "2. Money & Finance"
 req_number: "2c"
 prev: "/merit-badges/american-business/guide/req2b/"
-prev_title: "Req 2b — Interest, Taxes & Spending"
+prev_title: "Interest, Taxes & Spending"
 next: "/merit-badges/american-business/guide/req2d/"
-next_title: "Req 2d — Business Insurance"
+next_title: "Business Insurance"
 ---
 
 {{< drg/requirement number="2c" >}}

@@ -4,56 +4,56 @@ layout: "guide"
 badge_name: "Programming"
 group_title: "Getting Started"
 next: "/merit-badges/programming/guide/req1/"
-next_title: "Req 1 — Digital Safety and Coding Health"
+next_title: "Digital Safety and Coding Health"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/programming/guide/"
         is_sub: false
-  - group_title: "Safety and Healthy Coding"
+  - group_title: "1. Safety and Healthy Coding"
     items:
-      - title: "Req 1 — Digital Safety and Coding Health"
+      - title: "1. Digital Safety and Coding Health"
         url: "/merit-badges/programming/guide/req1/"
         is_sub: false
-  - group_title: "From Early Machines to Modern Code"
+  - group_title: "2. From Early Machines to Modern Code"
     items:
-      - title: "Req 2 — From Punch Cards to Python"
+      - title: "2. From Punch Cards to Python"
         url: "/merit-badges/programming/guide/req2/"
         is_sub: false
-  - group_title: "How Software Fits the World"
+  - group_title: "3. How Software Fits the World"
     items:
-      - title: "Req 3 — Languages and Everyday Code"
+      - title: "3. Languages and Everyday Code"
         url: "/merit-badges/programming/guide/req3/"
         is_sub: false
-  - group_title: "Respecting Software Rights"
+  - group_title: "4. Respecting Software Rights"
     items:
-      - title: "Req 4 — Intellectual Property and Software Use"
+      - title: "4. Intellectual Property and Software Use"
         url: "/merit-badges/programming/guide/req4/"
         is_sub: false
-  - group_title: "Building Programs"
+  - group_title: "5. Building Programs"
     items:
-      - title: "Req 5 — Choosing Your Three Projects"
+      - title: "5. Choosing Your Three Projects"
         url: "/merit-badges/programming/guide/req5/"
         is_sub: false
-      - title: "Req 5a — First Language Project"
+      - title: "a First Language Project"
         url: "/merit-badges/programming/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Second Language Project"
+      - title: "b Second Language Project"
         url: "/merit-badges/programming/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Third Language Project"
+      - title: "c Third Language Project"
         url: "/merit-badges/programming/guide/req5c/"
         is_sub: true
-  - group_title: "Paths After the Badge"
+  - group_title: "6. Paths After the Badge"
     items:
-      - title: "Req 6 — Careers or Coding for Life"
+      - title: "6. Careers or Coding for Life"
         url: "/merit-badges/programming/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Research a Programming Career"
+      - title: "a Research a Programming Career"
         url: "/merit-badges/programming/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Build a Programming Hobby"
+      - title: "b Build a Programming Hobby"
         url: "/merit-badges/programming/guide/req6b/"
         is_sub: true
   - group_title: "Beyond the Badge"

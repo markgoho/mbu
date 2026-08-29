@@ -1,12 +1,12 @@
 ---
-title: "Req 3c — How Pieces Move & Capture"
+title: "How Pieces Move & Capture"
 layout: guide
-group_title: "Know Your Pieces"
+group_title: "3. Know Your Pieces"
 req_number: "3c"
 prev: "/merit-badges/chess/guide/req3b/"
-prev_title: "Req 3b — Setting Up the Board"
+prev_title: "Setting Up the Board"
 next: "/merit-badges/chess/guide/req3d/"
-next_title: "Req 3d — Five Ways to Draw"
+next_title: "Five Ways to Draw"
 ---
 
 {{< drg/requirement number="3c" >}}

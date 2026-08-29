@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Truck Lines in Your Town"
+title: "Truck Lines in Your Town"
 layout: "guide"
-group_title: "Trucking Around You"
+group_title: "1. Trucking Around You"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/truck-transportation/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/truck-transportation/guide/req2/"
-next_title: "Req 2 — How Freight Moves"
+next_title: "How Freight Moves"
 ---
 
 {{< drg/requirement number="1" >}}

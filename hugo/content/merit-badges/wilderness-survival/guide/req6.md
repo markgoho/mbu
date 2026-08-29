@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Fire Building"
+title: "Fire Building"
 layout: guide
-group_title: "Critical Skills"
+group_title: "6. Signaling & Water"
 req_number: "6"
 prev: "/merit-badges/wilderness-survival/guide/req5e/"
-prev_title: "Req 5e — Building & Testing a Shelter"
+prev_title: "Improvised Natural Shelter"
 next: "/merit-badges/wilderness-survival/guide/req7a/"
-next_title: "Req 7a — Ground Rescue Signals"
+next_title: "Ground Rescue Signals"
 ---
 
 {{< drg/requirement number="6" >}}

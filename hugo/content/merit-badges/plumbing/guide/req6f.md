@@ -1,13 +1,13 @@
 ---
-title: "Req 6f — Cleaning a Drain Trap"
+title: "Cleaning a Drain Trap"
 layout: "guide"
-group_title: "Hands-On Plumbing Practice"
+group_title: "6. Hands-On Plumbing Practice"
 req_number: "6f"
 req_path: "6.f"
 prev: "/merit-badges/plumbing/guide/req6e/"
-prev_title: "Req 6e — Replacing a Faucet"
+prev_title: "Replacing a Faucet"
 next: "/merit-badges/plumbing/guide/req6g/"
-next_title: "Req 6g — Applying Thread Tape"
+next_title: "Applying Thread Tape"
 ---
 
 {{< drg/requirement number="6f" >}}

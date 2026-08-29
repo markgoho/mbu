@@ -1,13 +1,13 @@
 ---
-title: "Req 5 — Splices That Solve Problems"
+title: "Splices That Solve Problems"
 layout: guide
-group_title: "Splices & Rope Repair"
+group_title: "5. Splices & Rope Repair"
 req_number: "5"
 req_path: "5"
 prev: "/merit-badges/pioneering/guide/req4/"
-prev_title: "Req 4 — Rope for Real Loads"
+prev_title: "Rope for Real Loads"
 next: "/merit-badges/pioneering/guide/req6/"
-next_title: "Req 6 — Twist, Lay, and Whip"
+next_title: "Twist, Lay, and Whip"
 ---
 
 {{< drg/requirement number="5" >}}

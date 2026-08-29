@@ -1,13 +1,13 @@
 ---
-title: "Req 2a — Option A Overview"
+title: "Option A Overview"
 layout: "guide"
-group_title: "Option A — Modern Cartridge Rifle"
+group_title: "2. Option A — Modern Cartridge Rifle"
 req_number: "2a"
 req_path: "2.a"
 prev: "/merit-badges/rifle-shooting/guide/req2/"
-prev_title: "Req 2 — Pick Your Option"
+prev_title: "Pick Your Option"
 next: "/merit-badges/rifle-shooting/guide/req2aa/"
-next_title: "Req 2aa — Three Main Parts of a Rifle"
+next_title: "Three Main Parts of a Rifle"
 ---
 
 {{< drg/requirement number="2" option="Rifle Shooting (Modern Cartridge Type)" >}}

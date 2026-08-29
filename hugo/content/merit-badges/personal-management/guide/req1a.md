@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Choosing a Major Purchase"
+title: "Choosing a Major Purchase"
 layout: guide
-group_title: "Smart Shopping"
+group_title: "1. Smart Shopping"
 req_number: "1a"
 prev: "/merit-badges/personal-management/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/personal-management/guide/req1b/"
-next_title: "Req 1b — Creating a Savings Plan"
+next_title: "Creating a Savings Plan"
 ---
 
 {{< drg/requirement number="1a" >}}

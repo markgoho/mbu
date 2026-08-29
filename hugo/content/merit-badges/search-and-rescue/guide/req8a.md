@@ -1,13 +1,13 @@
 ---
-title: "Req 8a — Research an SAR Career"
+title: "Research an SAR Career"
 layout: "guide"
-group_title: "Future Paths"
+group_title: "8. Future Paths"
 req_number: "8a"
 req_path: "8.a"
 prev: "/merit-badges/search-and-rescue/guide/req8/"
-prev_title: "Req 8 — Choose Your Career Path"
+prev_title: "Choose Your Career Path"
 next: "/merit-badges/search-and-rescue/guide/req8b/"
-next_title: "Req 8b — Volunteer Response Paths"
+next_title: "Volunteer Response Paths"
 ---
 
 {{< drg/requirement number="8a" >}}

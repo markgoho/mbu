@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Build a Pedigree Chart"
+title: "Build a Pedigree Chart"
 layout: guide
-group_title: "Building Your Family Tree"
+group_title: "6. Building Your Family Tree"
 req_number: "6"
 prev: "/merit-badges/genealogy/guide/req5e/"
-prev_title: "Req 5e — Record Repository"
+prev_title: "Record Repository"
 next: "/merit-badges/genealogy/guide/req7/"
-next_title: "Req 7 — Family Group Records"
+next_title: "Family Group Records"
 ---
 
 {{< drg/requirement number="6" >}}

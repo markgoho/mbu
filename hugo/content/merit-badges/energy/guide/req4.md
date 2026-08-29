@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Home Energy Audit"
+title: "Home Energy Audit"
 layout: "guide"
-group_title: "Home Energy Audit"
+group_title: "4. Home Energy Audit"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/energy/guide/req3/"
-prev_title: "Req 3 — Following Energy Through a System"
+prev_title: "Following Energy Through a System"
 next: "/merit-badges/energy/guide/req5/"
-next_title: "Req 5 — Community Energy Waste"
+next_title: "Community Energy Waste"
 ---
 
 {{< drg/requirement number="4" >}}

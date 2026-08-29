@@ -1,13 +1,13 @@
 ---
-title: "Req 2ca — History of Muzzleloading Rifles"
+title: "History of Muzzleloading Rifles"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2ca"
 req_path: "2.c.a"
 prev: "/merit-badges/rifle-shooting/guide/req2c/"
-prev_title: "Req 2c — Option C Overview"
+prev_title: "Option C Overview"
 next: "/merit-badges/rifle-shooting/guide/req2cb/"
-next_title: "Req 2cb — Principal Parts and How They Work"
+next_title: "Principal Parts and How They Work"
 ---
 
 {{< drg/requirement number="2ca" >}}

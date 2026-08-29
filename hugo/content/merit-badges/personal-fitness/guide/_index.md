@@ -4,83 +4,83 @@ layout: guide
 badge_name: "Personal Fitness"
 group_title: "Getting Started"
 next: "/merit-badges/personal-fitness/guide/req1a/"
-next_title: "Req 1a — Physical Fitness"
+next_title: "Physical Fitness"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/personal-fitness/guide/"
-  - group_title: "Defining Personal Fitness"
+  - group_title: "1. Defining Personal Fitness"
     items:
-      - title: "Req 1a — Physical Fitness"
+      - title: "a Physical Fitness"
         url: "/merit-badges/personal-fitness/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Mental, Emotional & Social Fitness"
+      - title: "b Mental, Emotional & Social Fitness"
         url: "/merit-badges/personal-fitness/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Spiritual Fitness"
+      - title: "c Spiritual Fitness"
         url: "/merit-badges/personal-fitness/guide/req1c/"
         is_sub: true
-      - title: "Req 1d — Why Fitness Matters"
+      - title: "d Why Fitness Matters"
         url: "/merit-badges/personal-fitness/guide/req1d/"
         is_sub: true
-      - title: "Req 1e — Scout Oath and Law"
+      - title: "e Scout Oath and Law"
         url: "/merit-badges/personal-fitness/guide/req1e/"
         is_sub: true
-  - group_title: "Monitoring Your Health"
+  - group_title: "2. Monitoring Your Health"
     items:
-      - title: "Req 2a — Physical Examinations"
+      - title: "a Physical Examinations"
         url: "/merit-badges/personal-fitness/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Dental Health"
+      - title: "b Dental Health"
         url: "/merit-badges/personal-fitness/guide/req2b/"
         is_sub: true
-  - group_title: "Fitness Knowledge & Habits"
+  - group_title: "3. Fitness Knowledge & Habits"
     items:
-      - title: "Req 3a — Exercise & the Four Components"
+      - title: "a Exercise & the Four Components"
         url: "/merit-badges/personal-fitness/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Avoiding Harmful Substances"
+      - title: "b Avoiding Harmful Substances"
         url: "/merit-badges/personal-fitness/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Vaccinations"
+      - title: "c Vaccinations"
         url: "/merit-badges/personal-fitness/guide/req3c/"
         is_sub: true
-      - title: "Req 3d — Nutrition"
+      - title: "d Nutrition"
         url: "/merit-badges/personal-fitness/guide/req3d/"
         is_sub: true
-      - title: "Req 3e — Healthy Weight"
+      - title: "e Healthy Weight"
         url: "/merit-badges/personal-fitness/guide/req3e/"
         is_sub: true
-      - title: "Req 3f — Sleep"
+      - title: "f Sleep"
         url: "/merit-badges/personal-fitness/guide/req3f/"
         is_sub: true
-      - title: "Req 3g — Social & Family Time"
+      - title: "g Social & Family Time"
         url: "/merit-badges/personal-fitness/guide/req3g/"
         is_sub: true
-  - group_title: "Measuring Your Fitness"
+  - group_title: "4. Measuring Your Fitness"
     items:
-      - title: "Req 4 — Fitness Assessments"
+      - title: "4. Fitness Assessments"
         url: "/merit-badges/personal-fitness/guide/req4/"
         is_sub: false
-  - group_title: "Your Pre-Assessment"
+  - group_title: "5. Your Pre-Assessment"
     items:
-      - title: "Req 5 — Baseline Testing"
+      - title: "5. Baseline Testing"
         url: "/merit-badges/personal-fitness/guide/req5/"
         is_sub: false
-  - group_title: "Planning Your Program"
+  - group_title: "6. Planning Your Program"
     items:
-      - title: "Req 6 — The 12-Week Program"
+      - title: "6. The 12-Week Program"
         url: "/merit-badges/personal-fitness/guide/req6/"
         is_sub: false
-  - group_title: "Completing the Program"
+  - group_title: "7. Completing the Program"
     items:
-      - title: "Req 7 — Execute & Track"
+      - title: "7. Execute & Track"
         url: "/merit-badges/personal-fitness/guide/req7/"
         is_sub: false
-  - group_title: "Fitness Careers & Lifestyle"
+  - group_title: "8. Fitness Careers & Lifestyle"
     items:
-      - title: "Req 8 — Future Career or Lifestyle"
+      - title: "8. Future Career or Lifestyle"
         url: "/merit-badges/personal-fitness/guide/req8/"
         is_sub: false
   - group_title: "Beyond the Badge"

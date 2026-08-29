@@ -1,12 +1,12 @@
 ---
-title: "Req 2c — Activity & Calories"
+title: "Activity & Calories"
 layout: guide
-group_title: "Nutrition"
+group_title: "2. Nutrition"
 req_number: "2c"
 prev: "/merit-badges/cooking/guide/req2b/"
-prev_title: "Req 2b — Oils & Sugars"
+prev_title: "Oils & Sugars"
 next: "/merit-badges/cooking/guide/req2d/"
-next_title: "Req 2d — Healthy Eating Habits"
+next_title: "Healthy Eating Habits"
 ---
 
 {{< drg/requirement number="2c" >}}

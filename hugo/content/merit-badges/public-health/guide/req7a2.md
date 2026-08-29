@@ -1,13 +1,13 @@
 ---
-title: "Req 7a2 — Investigate an Agency Website"
+title: "Investigate an Agency Website"
 layout: "guide"
-group_title: "Public Health Agencies"
+group_title: "7. Public Health Agencies"
 req_number: "7a2"
 req_path: "7.a.2"
 prev: "/merit-badges/public-health/guide/req7a1/"
-prev_title: "Req 7a1 — Visit a Public Health Agency"
+prev_title: "Visit a Public Health Agency"
 next: "/merit-badges/public-health/guide/req7b/"
-next_title: "Req 7b — How Agencies Protect Communities"
+next_title: "How Agencies Protect Communities"
 ---
 
 {{< drg/requirement number="7a2" >}}

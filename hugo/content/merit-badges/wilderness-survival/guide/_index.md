@@ -4,61 +4,61 @@ layout: guide
 badge_name: "Wilderness Survival"
 group_title: "Getting Started"
 next: "/merit-badges/wilderness-survival/guide/req1a/"
-next_title: "Req 1a — Backcountry Injuries & Conditions"
+next_title: "Backcountry Injuries & Conditions"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/wilderness-survival/guide/"
-  - group_title: "Hazards & First Aid"
+  - group_title: "1. Hazards & First Aid"
     items:
-      - title: "Req 1a — Backcountry Injuries & Conditions"
+      - title: "a Backcountry Injuries & Conditions"
         url: "/merit-badges/wilderness-survival/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Scout Essentials & Survival Kits"
+      - title: "b Scout Essentials & Survival Kits"
         url: "/merit-badges/wilderness-survival/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Trip Planning & Prevention"
+      - title: "c Trip Planning & Prevention"
         url: "/merit-badges/wilderness-survival/guide/req1c/"
         is_sub: true
-  - group_title: "Survival Foundations"
+  - group_title: "2. Survival Foundations"
     items:
-      - title: "Req 2 — Seven Priorities of Survival"
+      - title: "2. Seven Priorities of Survival"
         url: "/merit-badges/wilderness-survival/guide/req2/"
-      - title: "Req 3 — Avoiding Panic & Maintaining Morale"
+      - title: "3. Avoiding Panic & Maintaining Morale"
         url: "/merit-badges/wilderness-survival/guide/req3/"
-      - title: "Req 4 — First Aid & Survival Kits"
+      - title: "4. First Aid & Survival Kits"
         url: "/merit-badges/wilderness-survival/guide/req4/"
-  - group_title: "Shelter & Exposure"
+  - group_title: "5. Shelter & Exposure"
     items:
-      - title: "Req 5a — Exposure Conditions"
+      - title: "a Exposure Conditions"
         url: "/merit-badges/wilderness-survival/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Outdoor Clothing"
+      - title: "b Outdoor Clothing"
         url: "/merit-badges/wilderness-survival/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — Animal Safety"
+      - title: "c Animal Safety"
         url: "/merit-badges/wilderness-survival/guide/req5c/"
         is_sub: true
-      - title: "Req 5d — Building Survival Shelters"
+      - title: "d Building Survival Shelters"
         url: "/merit-badges/wilderness-survival/guide/req5d/"
         is_sub: true
-      - title: "Req 5e — Improvised Natural Shelter"
+      - title: "e Improvised Natural Shelter"
         url: "/merit-badges/wilderness-survival/guide/req5e/"
         is_sub: true
-  - group_title: "Signaling & Water"
+  - group_title: "6. Signaling & Water"
     items:
-      - title: "Req 6 — Fire Building"
+      - title: "6. Fire Building"
         url: "/merit-badges/wilderness-survival/guide/req6/"
-      - title: "Req 7 — Signaling for Rescue"
+      - title: "7. Signaling for Rescue"
         url: "/merit-badges/wilderness-survival/guide/req7/"
-      - title: "Req 8 — Water Treatment"
+      - title: "8. Water Treatment"
         url: "/merit-badges/wilderness-survival/guide/req8/"
-  - group_title: "Food & Careers"
+  - group_title: "9. Food & Careers"
     items:
-      - title: "Req 9 — Wild Food Safety"
+      - title: "9. Wild Food Safety"
         url: "/merit-badges/wilderness-survival/guide/req9/"
-      - title: "Req 10 — Careers & Hobbies"
+      - title: "10. Careers & Hobbies"
         url: "/merit-badges/wilderness-survival/guide/req10/"
   - group_title: "Beyond the Badge"
     items:

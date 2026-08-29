@@ -4,82 +4,82 @@ layout: "guide"
 badge_name: "Mammal Study"
 group_title: "Getting Started"
 next: "/merit-badges/mammal-study/guide/req1/"
-next_title: "Req 1 — What Makes a Mammal?"
+next_title: "What Makes a Mammal?"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/mammal-study/guide/"
         is_sub: false
-  - group_title: "Mammal Basics"
+  - group_title: "1. Mammal Basics"
     items:
-      - title: "Req 1 — What Makes a Mammal?"
+      - title: "1. What Makes a Mammal?"
         url: "/merit-badges/mammal-study/guide/req1/"
         is_sub: false
-  - group_title: "Classification & Taxonomy"
+  - group_title: "2. Classification & Taxonomy"
     items:
-      - title: "Req 2 — Classifying Mammals"
+      - title: "2. Classifying Mammals"
         url: "/merit-badges/mammal-study/guide/req2/"
         is_sub: false
-  - group_title: "Field Study Options"
+  - group_title: "3. Field Study Options"
     items:
-      - title: "Req 3 — Choose Your Field Study"
+      - title: "3. Choose Your Field Study"
         url: "/merit-badges/mammal-study/guide/req3/"
         is_sub: false
-      - title: "Req 3a — Two Habitats, Six Hours"
+      - title: "a Two Habitats, Six Hours"
         url: "/merit-badges/mammal-study/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — Five-Day Observation Log"
+      - title: "b Five-Day Observation Log"
         url: "/merit-badges/mammal-study/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Nongame Mammal Life History"
+      - title: "c Nongame Mammal Life History"
         url: "/merit-badges/mammal-study/guide/req3c/"
         is_sub: true
-  - group_title: "Mammal Investigation Options"
+  - group_title: "4. Mammal Investigation Options"
     items:
-      - title: "Req 4 — Choose Your Investigation"
+      - title: "4. Choose Your Investigation"
         url: "/merit-badges/mammal-study/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Museum Study Skins"
+      - title: "a Museum Study Skins"
         url: "/merit-badges/mammal-study/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Wildlife Photography Log"
+      - title: "b Wildlife Photography Log"
         url: "/merit-badges/mammal-study/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Game Mammal Life History"
+      - title: "c Game Mammal Life History"
         url: "/merit-badges/mammal-study/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Tracking Pit Investigation"
+      - title: "d Tracking Pit Investigation"
         url: "/merit-badges/mammal-study/guide/req4d/"
         is_sub: true
-      - title: "Req 4e — Natural History Museum Visit"
+      - title: "e Natural History Museum Visit"
         url: "/merit-badges/mammal-study/guide/req4e/"
         is_sub: true
-      - title: "Req 4f — Mammal Book Report"
+      - title: "f Mammal Book Report"
         url: "/merit-badges/mammal-study/guide/req4f/"
         is_sub: true
-      - title: "Req 4g — Food Chains to a Carnivore"
+      - title: "g Food Chains to a Carnivore"
         url: "/merit-badges/mammal-study/guide/req4g/"
         is_sub: true
-  - group_title: "Conservation in Action"
+  - group_title: "5. Conservation in Action"
     items:
-      - title: "Req 5 — Project for Mammal Numbers"
+      - title: "5. Project for Mammal Numbers"
         url: "/merit-badges/mammal-study/guide/req5/"
         is_sub: false
-  - group_title: "Outdoor Ethics"
+  - group_title: "6. Outdoor Ethics"
     items:
-      - title: "Req 6 — Outdoor Ethics in Mammal Study"
+      - title: "6. Outdoor Ethics in Mammal Study"
         url: "/merit-badges/mammal-study/guide/req6/"
         is_sub: false
-  - group_title: "Careers & Hobbies"
+  - group_title: "7. Careers & Hobbies"
     items:
-      - title: "Req 7 — Choose Your Future Path"
+      - title: "7. Choose Your Future Path"
         url: "/merit-badges/mammal-study/guide/req7/"
         is_sub: false
-      - title: "Req 7a — Mammal-Related Careers"
+      - title: "a Mammal-Related Careers"
         url: "/merit-badges/mammal-study/guide/req7a/"
         is_sub: true
-      - title: "Req 7b — Hobbies and Healthy Living"
+      - title: "b Hobbies and Healthy Living"
         url: "/merit-badges/mammal-study/guide/req7b/"
         is_sub: true
   - group_title: "Beyond the Badge"

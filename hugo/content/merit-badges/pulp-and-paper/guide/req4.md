@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — From Pulp to Paper"
+title: "From Pulp to Paper"
 layout: "guide"
-group_title: "Making and Recycling Paper"
+group_title: "4. Making and Recycling Paper"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/pulp-and-paper/guide/req3/"
-prev_title: "Req 3 — Fibers, Pulp, and Bleaching"
+prev_title: "Fibers, Pulp, and Bleaching"
 next: "/merit-badges/pulp-and-paper/guide/req5/"
-next_title: "Req 5 — Coatings and Specialty Papers"
+next_title: "Coatings and Specialty Papers"
 ---
 
 {{< drg/requirement number="4" >}}

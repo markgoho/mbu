@@ -1,12 +1,12 @@
 ---
-title: "Req 3g — Lighting Design"
+title: "Lighting Design"
 layout: guide
-group_title: "Behind the Curtain"
+group_title: "3. Behind the Curtain"
 req_number: "3g"
 prev: "/merit-badges/theater/guide/req3f/"
-prev_title: "Req 3f — Scenery Building"
+prev_title: "Scenery Building"
 next: "/merit-badges/theater/guide/req3h/"
-next_title: "Req 3h — Sound Design"
+next_title: "Sound Design"
 ---
 
 {{< drg/requirement number="3g" >}}

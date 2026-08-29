@@ -1,12 +1,12 @@
 ---
-title: "Req 4d6a — Museum Fossil Visit"
+title: "Museum Fossil Visit"
 layout: guide
-group_title: "Earth History"
+group_title: "4. Earth History"
 req_number: "4d6a"
 prev: "/merit-badges/geology/guide/req4d6/"
-prev_title: "Req 4d6 — Visit, Observe, or Present Fossils"
+prev_title: "Visit, Observe, or Present Fossils"
 next: "/merit-badges/geology/guide/req4d6b/"
-next_title: "Req 4d6b — Fossils in Building Stone"
+next_title: "Fossils in Building Stone"
 ---
 
 {{< drg/requirement number="4d6a" >}}

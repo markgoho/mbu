@@ -1,12 +1,12 @@
 ---
-title: "Req 2b2 — Visiting a Station"
+title: "Visiting a Station"
 layout: guide
-group_title: "Reporting Across Platforms"
+group_title: "2. Reporting Across Platforms"
 req_number: "2b2"
 prev: "/merit-badges/journalism/guide/req2b1/"
-prev_title: "Req 2b1 — Comparing Broadcast Coverage"
+prev_title: "Comparing Broadcast Coverage"
 next: "/merit-badges/journalism/guide/req3/"
-next_title: "Req 3 — Choose a Storytelling Challenge"
+next_title: "Choose a Storytelling Challenge"
 ---
 
 {{< drg/requirement number="2.b.2" >}}

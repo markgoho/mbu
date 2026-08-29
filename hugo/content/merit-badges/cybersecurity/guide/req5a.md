@@ -1,12 +1,12 @@
 ---
-title: "Req 5a — Defense Technologies"
+title: "Defense Technologies"
 layout: guide
-group_title: "Cyber Defenses"
+group_title: "5. Cyber Defenses"
 req_number: "5a"
 prev: "/merit-badges/cybersecurity/guide/req4f/"
-prev_title: "Req 4f — Attack Surface"
+prev_title: "Attack Surface"
 next: "/merit-badges/cybersecurity/guide/req5b/"
-next_title: "Req 5b — Installing Updates"
+next_title: "Installing Updates"
 ---
 
 {{< drg/requirement number="5a" >}}

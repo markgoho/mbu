@@ -1,13 +1,13 @@
 ---
-title: "Req 3b — Compare Book and Movie"
+title: "Compare Book and Movie"
 layout: "guide"
-group_title: "Responding to Books"
+group_title: "3. Responding to Books"
 req_number: "3b"
 req_path: "3.b"
 prev: "/merit-badges/reading/guide/req3a/"
-prev_title: "Req 3a — Write a Thoughtful Review"
+prev_title: "Write a Thoughtful Review"
 next: "/merit-badges/reading/guide/req3c/"
-next_title: "Req 3c — Give a Book Talk"
+next_title: "Give a Book Talk"
 ---
 
 {{< drg/requirement number="3b" >}}

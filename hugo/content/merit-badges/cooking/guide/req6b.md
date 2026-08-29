@@ -1,12 +1,12 @@
 ---
-title: "Req 6b — Trail Shopping List"
+title: "Trail Shopping List"
 layout: guide
-group_title: "Trail & Backpacking Meals"
+group_title: "6. Trail & Backpacking Meals"
 req_number: "6b"
 prev: "/merit-badges/cooking/guide/req6a/"
-prev_title: "Req 6a — Trail Menu Planning"
+prev_title: "Trail Menu Planning"
 next: "/merit-badges/cooking/guide/req6c/"
-next_title: "Req 6c — Repackaging & Reducing Waste"
+next_title: "Repackaging & Reducing Waste"
 ---
 
 {{< drg/requirement number="6b" >}}

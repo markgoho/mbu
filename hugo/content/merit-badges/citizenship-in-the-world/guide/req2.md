@@ -1,12 +1,12 @@
 ---
-title: "Req 2 — U.S. Citizenship & Comparing Countries"
+title: "U.S. Citizenship & Comparing Countries"
 layout: guide
-group_title: "Becoming a Citizen"
+group_title: "2. Becoming a Citizen"
 req_number: "2"
 prev: "/merit-badges/citizenship-in-the-world/guide/req1/"
-prev_title: "Req 1 — Defining World Citizenship"
+prev_title: "Defining World Citizenship"
 next: "/merit-badges/citizenship-in-the-world/guide/req3a/"
-next_title: "Req 3a — Current Events & National Interests"
+next_title: "Current Events & National Interests"
 ---
 
 {{< drg/requirement number="2" >}}

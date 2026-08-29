@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — Languages and Everyday Code"
+title: "Languages and Everyday Code"
 layout: "guide"
-group_title: "How Software Fits the World"
+group_title: "3. How Software Fits the World"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/programming/guide/req2/"
-prev_title: "Req 2 — From Punch Cards to Python"
+prev_title: "From Punch Cards to Python"
 next: "/merit-badges/programming/guide/req4/"
-next_title: "Req 4 — Intellectual Property and Software Use"
+next_title: "Intellectual Property and Software Use"
 ---
 
 {{< drg/requirement number="3" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Soil Fundamentals"
+title: "Soil Fundamentals"
 layout: "guide"
-group_title: "Soil Basics"
+group_title: "1. Soil Basics"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/soil-and-water-conservation/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/soil-and-water-conservation/guide/req2/"
-next_title: "Req 2 — Understanding Soil Erosion"
+next_title: "Understanding Soil Erosion"
 ---
 
 {{< drg/requirement number="1" >}}

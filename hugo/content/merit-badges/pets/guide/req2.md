@@ -1,13 +1,13 @@
 ---
-title: "Req 2 — Know Your Pet Well"
+title: "Know Your Pet Well"
 layout: "guide"
-group_title: "Understanding Your Pet"
+group_title: "2. Understanding Your Pet"
 req_number: "2"
 req_path: "2"
 prev: "/merit-badges/pets/guide/req1/"
-prev_title: "Req 1 — Four Months of Care"
+prev_title: "Four Months of Care"
 next: "/merit-badges/pets/guide/req3/"
-next_title: "Req 3 — Read and Report"
+next_title: "Read and Report"
 ---
 
 {{< drg/requirement number="2" >}}

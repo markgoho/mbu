@@ -1,12 +1,12 @@
 ---
-title: "Req 6g — Mending China, Glass, or Pottery"
+title: "Mending China, Glass, or Pottery"
 layout: guide
-group_title: "Indoor Finish Repairs"
+group_title: "6. Indoor Finish Repairs"
 req_number: "6g"
 prev: "/merit-badges/home-repairs/guide/req6f/"
-prev_title: "Req 6f — Reinforcing a Picture Frame"
+prev_title: "Reinforcing a Picture Frame"
 next: "/merit-badges/home-repairs/guide/req6h/"
-next_title: "Req 6h — Drawer and Cabinet Hardware"
+next_title: "Drawer and Cabinet Hardware"
 ---
 
 {{< drg/requirement number="6g" >}}

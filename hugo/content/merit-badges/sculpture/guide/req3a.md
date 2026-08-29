@@ -1,13 +1,13 @@
 ---
-title: "Req 3a — Research a Sculpture Career"
+title: "Research a Sculpture Career"
 layout: "guide"
-group_title: "Sculpture Careers"
+group_title: "3. Sculpture Careers"
 req_number: "3a"
 req_path: "3.a"
 prev: "/merit-badges/sculpture/guide/req3/"
-prev_title: "Req 3 — Career or Hobby"
+prev_title: "Career or Hobby"
 next: "/merit-badges/sculpture/guide/req3b/"
-next_title: "Req 3b — Build a Hobby Path"
+next_title: "Build a Hobby Path"
 ---
 
 {{< drg/requirement number="3a" >}}

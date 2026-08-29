@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Hoof Care and Horseshoes"
+title: "Hoof Care and Horseshoes"
 layout: guide
-group_title: "Horse Health"
+group_title: "4. Horse Health"
 req_number: "6"
 prev: "/merit-badges/horsemanship/guide/req5/"
-prev_title: "Req 5 — Conformation, Lameness, and Unsoundness"
+prev_title: "Conformation, Lameness, and Unsoundness"
 next: "/merit-badges/horsemanship/guide/req7/"
-next_title: "Req 7 — Grooming and After-Ride Care"
+next_title: "Grooming and After-Ride Care"
 ---
 
 {{< drg/requirement number="6" >}}

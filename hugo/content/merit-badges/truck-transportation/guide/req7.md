@@ -1,13 +1,13 @@
 ---
-title: "Req 7 — Trucks and the Work They Do"
+title: "Trucks and the Work They Do"
 layout: "guide"
-group_title: "Types of Trucks"
+group_title: "7. Types of Trucks"
 req_number: "7"
 req_path: "7"
 prev: "/merit-badges/truck-transportation/guide/req6/"
-prev_title: "Req 6 — Government Agencies and Their Roles"
+prev_title: "Government Agencies and Their Roles"
 next: "/merit-badges/truck-transportation/guide/req8/"
-next_title: "Req 8 — Shipping 500 Pounds by Truck"
+next_title: "Shipping 500 Pounds by Truck"
 ---
 
 {{< drg/requirement number="7" >}}

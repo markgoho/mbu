@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Personal Experiences"
+title: "Personal Experiences"
 layout: guide
-group_title: "Learning from Others"
+group_title: "3. Learning from Others"
 req_number: "3"
 prev: "/merit-badges/disabilities-awareness/guide/req2/"
-prev_title: "Req 2 — Visiting an Agency"
+prev_title: "Visiting an Agency"
 next: "/merit-badges/disabilities-awareness/guide/req4/"
-next_title: "Req 4 — Accessibility Observations"
+next_title: "Accessibility Observations"
 ---
 
 {{< drg/requirement number="3" >}}

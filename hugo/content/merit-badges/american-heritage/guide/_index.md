@@ -4,46 +4,46 @@ layout: guide
 badge_name: "American Heritage"
 group_title: "Getting Started"
 next: "/merit-badges/american-heritage/guide/req1/"
-next_title: "Req 1 — The Declaration of Independence"
+next_title: "The Declaration of Independence"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-heritage/guide/"
-  - group_title: "Foundations of Freedom"
+  - group_title: "1. Foundations of Freedom"
     items:
-      - title: "Req 1 — The Declaration of Independence"
+      - title: "1. The Declaration of Independence"
         url: "/merit-badges/american-heritage/guide/req1/"
         is_sub: false
-  - group_title: "People Who Shaped America"
+  - group_title: "2. People Who Shaped America"
     items:
-      - title: "Req 2 — American Leaders & Change-Makers"
+      - title: "2. American Leaders & Change-Makers"
         url: "/merit-badges/american-heritage/guide/req2/"
         is_sub: false
-  - group_title: "National Symbols & Family Roots"
+  - group_title: "3. National Symbols & Family Roots"
     items:
-      - title: "Req 3a — America in the News"
+      - title: "a America in the News"
         url: "/merit-badges/american-heritage/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — National Symbols"
+      - title: "b National Symbols"
         url: "/merit-badges/american-heritage/guide/req3b/"
         is_sub: true
-      - title: "Req 3c — Your Family's Story"
+      - title: "c Your Family"
         url: "/merit-badges/american-heritage/guide/req3c/"
         is_sub: true
-  - group_title: "History in Your Backyard"
+  - group_title: "4. History in Your Backyard"
     items:
-      - title: "Req 4 — Local History & Landmarks"
+      - title: "4. Local History & Landmarks"
         url: "/merit-badges/american-heritage/guide/req4/"
         is_sub: false
-  - group_title: "Heritage Through Media"
+  - group_title: "5. Heritage Through Media"
     items:
-      - title: "Req 5 — Heritage Through Media"
+      - title: "5. Heritage Through Media"
         url: "/merit-badges/american-heritage/guide/req5/"
         is_sub: false
-  - group_title: "Your Future in Heritage"
+  - group_title: "6. Your Future in Heritage"
     items:
-      - title: "Req 6 — Heritage Careers"
+      - title: "6. Heritage Careers"
         url: "/merit-badges/american-heritage/guide/req6/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 4a3 — Reading Stream Features"
+title: "Reading Stream Features"
 layout: guide
-group_title: "Surface & Sedimentary Processes"
+group_title: "4. Surface & Sedimentary Processes"
 req_number: "4a3"
 prev: "/merit-badges/geology/guide/req4a2/"
-prev_title: "Req 4a2 — Stream Gradients"
+prev_title: "Stream Gradients"
 next: "/merit-badges/geology/guide/req4a4/"
-next_title: "Req 4a4 — Tiny Sediment, Big Clues"
+next_title: "Tiny Sediment, Big Clues"
 ---
 
 {{< drg/requirement number="4a3" >}}

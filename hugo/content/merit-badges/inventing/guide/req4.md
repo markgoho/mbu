@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Inventions That Should Be Shared"
+title: "Inventions That Should Be Shared"
 layout: guide
-group_title: "Sharing Responsibly"
+group_title: "4. Sharing Responsibly"
 req_number: "4"
 prev: "/merit-badges/inventing/guide/req3/"
-prev_title: "Req 3 — Intellectual Property & Patents"
+prev_title: "Intellectual Property & Patents"
 next: "/merit-badges/inventing/guide/req5/"
-next_title: "Req 5 — Rethink a Camping Product"
+next_title: "Rethink a Camping Product"
 ---
 
 {{< drg/requirement number="4" >}}

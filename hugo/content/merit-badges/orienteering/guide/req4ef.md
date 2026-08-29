@@ -1,12 +1,12 @@
 ---
-title: "Req 4e–4f — Distances and Orienting a Map"
+title: "Distances and Orienting a Map"
 layout: guide
-group_title: "Map Skills"
+group_title: "4. Map Skills"
 req_number: "4e"
 prev: "/merit-badges/orienteering/guide/req4d/"
-prev_title: "Req 4d — Magnetic North-South Lines"
+prev_title: "Magnetic North-South Lines"
 next: "/merit-badges/orienteering/guide/req5/"
-next_title: "Req 5 — Pace Counting"
+next_title: "Pace Counting"
 ---
 
 {{< drg/requirement number="4e" >}}

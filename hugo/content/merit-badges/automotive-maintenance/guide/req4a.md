@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — Tire Specs & Pressure"
+title: "Tire Specs & Pressure"
 layout: guide
-group_title: "Tires"
+group_title: "4. Tires"
 req_number: "4a"
 prev: "/merit-badges/automotive-maintenance/guide/req3/"
-prev_title: "Req 3 — Dashboard & Driver Info"
+prev_title: "Dashboard & Driver Info"
 next: "/merit-badges/automotive-maintenance/guide/req4c/"
-next_title: "Req 4c — Alignment, Wear & Disposal"
+next_title: "Alignment, Wear & Disposal"
 ---
 
 {{< drg/requirement number="4a" >}}

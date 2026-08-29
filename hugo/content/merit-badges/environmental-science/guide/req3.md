@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Air Pollution"
+title: "Air Pollution"
 layout: guide
-group_title: "Air Pollution"
+group_title: "3. Air Pollution"
 req_number: "3"
 prev: "/merit-badges/environmental-science/guide/req2b/"
-prev_title: "Req 2b — Ecosystem Components"
+prev_title: "Ecosystem Components"
 next: "/merit-badges/environmental-science/guide/req4/"
-next_title: "Req 4 — Water Pollution"
+next_title: "Water Pollution"
 ---
 
 {{< drg/requirement number="3" >}}

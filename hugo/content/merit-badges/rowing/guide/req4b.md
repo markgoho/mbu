@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Race Day as a Teammate"
+title: "Race Day as a Teammate"
 layout: "guide"
-group_title: "Competitive Team Rowing"
+group_title: "4. Competitive Team Rowing"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/rowing/guide/req4a/"
-prev_title: "Req 4a — Boat Handling Skills"
+prev_title: "Boat Handling Skills"
 next: "/merit-badges/rowing/guide/req5/"
-next_title: "Req 5 — Choose Your Dockside Skill"
+next_title: "Choose Your Dockside Skill"
 ---
 
 {{< drg/requirement number="4b" >}}

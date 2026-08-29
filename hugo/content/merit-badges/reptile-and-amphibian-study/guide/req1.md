@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Identify Species in the Field"
+title: "Identify Species in the Field"
 layout: "guide"
-group_title: "Field Identification"
+group_title: "1. Field Identification"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/reptile-and-amphibian-study/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/reptile-and-amphibian-study/guide/req2/"
-next_title: "Req 2 — Species Around You"
+next_title: "Species Around You"
 ---
 
 {{< drg/requirement number="1" >}}

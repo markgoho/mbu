@@ -1,12 +1,12 @@
 ---
-title: "Req 6 — Pollinators & Honeybees"
+title: "Pollinators & Honeybees"
 layout: guide
-group_title: "Exploring the Gardening World"
+group_title: "5. Exploring the Gardening World"
 req_number: "6"
 prev: "/merit-badges/gardening/guide/req5/"
-prev_title: "Req 5 — Visiting Garden Experts"
+prev_title: "Visiting Garden Experts"
 next: "/merit-badges/gardening/guide/req7/"
-next_title: "Req 7 — Garden Pests & Organic Solutions"
+next_title: "Garden Pests & Organic Solutions"
 ---
 
 {{< drg/requirement number="6" >}}

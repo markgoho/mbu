@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Seed Germination Testing"
+title: "Seed Germination Testing"
 layout: guide
-group_title: "Growing Plants"
+group_title: "2. Growing Plants"
 req_number: "4"
 prev: "/merit-badges/gardening/guide/req3abc/"
-prev_title: "Req 3abc — Nutritional Value of Garden Crops"
+prev_title: "Nutritional Value of Garden Crops"
 next: "/merit-badges/gardening/guide/req5/"
-next_title: "Req 5 — Visiting Garden Experts"
+next_title: "Visiting Garden Experts"
 ---
 
 {{< drg/requirement number="4" >}}

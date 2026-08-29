@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Removing a Hook Safely"
+title: "Removing a Hook Safely"
 layout: guide
-group_title: "Safety First"
+group_title: "1. Safety First"
 req_number: "1c"
 prev: "/merit-badges/fly-fishing/guide/req1b/"
-prev_title: "Req 1b — Preventing Fishing Injuries"
+prev_title: "Preventing Fishing Injuries"
 next: "/merit-badges/fly-fishing/guide/req2/"
-next_title: "Req 2 — Balanced Fly Tackle"
+next_title: "Balanced Fly Tackle"
 ---
 
 {{< drg/requirement number="1c" >}}

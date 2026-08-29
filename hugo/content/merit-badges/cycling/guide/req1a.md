@@ -1,12 +1,12 @@
 ---
-title: "Req 1a — Cycling Hazards"
+title: "Cycling Hazards"
 layout: guide
-group_title: "Hazards & First Aid"
+group_title: "1. Hazards & First Aid"
 req_number: "1a"
 prev: "/merit-badges/cycling/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/cycling/guide/req1b/"
-next_title: "Req 1b — First Aid for Cyclists"
+next_title: "First Aid for Cyclists"
 ---
 
 {{< drg/requirement number="1a" >}}

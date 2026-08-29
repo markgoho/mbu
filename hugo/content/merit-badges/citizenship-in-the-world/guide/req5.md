@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Types of Government"
+title: "Types of Government"
 layout: guide
-group_title: "World Governments"
+group_title: "5. World Governments"
 req_number: "5"
 prev: "/merit-badges/citizenship-in-the-world/guide/req4/"
-prev_title: "Req 4 — Law, Trade & Global Organizations"
+prev_title: "Law, Trade & Global Organizations"
 next: "/merit-badges/citizenship-in-the-world/guide/req6/"
-next_title: "Req 6 — How Nations Connect"
+next_title: "How Nations Connect"
 ---
 
 {{< drg/requirement number="5a" >}}

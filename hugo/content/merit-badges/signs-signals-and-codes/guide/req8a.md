@@ -1,13 +1,13 @@
 ---
-title: "Req 8a — Sports Officiating Signals"
+title: "Sports Officiating Signals"
 layout: "guide"
-group_title: "Specialized Signal Systems"
+group_title: "8. Specialized Signal Systems"
 req_number: "8a"
 req_path: "8.a"
 prev: "/merit-badges/signs-signals-and-codes/guide/req8/"
-prev_title: "Req 8 — Choose Three Real-World Signal Systems"
+prev_title: "Choose Three Real-World Signal Systems"
 next: "/merit-badges/signs-signals-and-codes/guide/req8b/"
-next_title: "Req 8b — Heavy-Equipment Hand Signals"
+next_title: "Heavy-Equipment Hand Signals"
 ---
 
 {{< drg/requirement number="8a" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 8d — Cyclist Hand Signals"
+title: "Cyclist Hand Signals"
 layout: "guide"
-group_title: "Specialized Signal Systems"
+group_title: "8. Specialized Signal Systems"
 req_number: "8d"
 req_path: "8.d"
 prev: "/merit-badges/signs-signals-and-codes/guide/req8c/"
-prev_title: "Req 8c — Aircraft Carrier Deck Signals"
+prev_title: "Aircraft Carrier Deck Signals"
 next: "/merit-badges/signs-signals-and-codes/guide/req8e/"
-next_title: "Req 8e — Your Custom Signal Set"
+next_title: "Your Custom Signal Set"
 ---
 
 {{< drg/requirement number="8d" >}}

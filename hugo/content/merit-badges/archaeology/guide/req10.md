@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Fieldwork Experience"
+title: "Fieldwork Experience"
 layout: guide
-group_title: "The Working Archaeologist"
+group_title: "9. The Working Archaeologist"
 req_number: "10"
 prev: "/merit-badges/archaeology/guide/req9/"
-prev_title: "Req 9 — Careers in Archaeology"
+prev_title: "Careers in Archaeology"
 next: "/merit-badges/archaeology/guide/req11/"
-next_title: "Req 11 — Sharing Archaeology"
+next_title: "Sharing Archaeology"
 ---
 
 {{< drg/requirement number="10" >}}

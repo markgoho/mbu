@@ -1,12 +1,12 @@
 ---
-title: "Req 5 — Welcoming Environments"
+title: "Welcoming Environments"
 layout: guide
-group_title: "Building Inclusive Spaces"
+group_title: "5. Building Inclusive Spaces"
 req_number: "5"
 prev: "/merit-badges/citizenship-in-society/guide/req4/"
-prev_title: "Req 4 — Responding to Scenarios"
+prev_title: "Responding to Scenarios"
 next: "/merit-badges/citizenship-in-society/guide/req6/"
-next_title: "Req 6 — Connecting Across Differences"
+next_title: "Connecting Across Differences"
 ---
 
 {{< drg/requirement number="5" >}}

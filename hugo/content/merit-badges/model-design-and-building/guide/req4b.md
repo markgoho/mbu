@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Showing How a Building Stands"
+title: "Showing How a Building Stands"
 layout: "guide"
-group_title: "Structural Framing Model"
+group_title: "4. Structural Framing Model"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/model-design-and-building/guide/req4a/"
-prev_title: "Req 4a — House in Miniature"
+prev_title: "House in Miniature"
 next: "/merit-badges/model-design-and-building/guide/req4c/"
-next_title: "Req 4c — Mapping Water In and Waste Out"
+next_title: "Mapping Water In and Waste Out"
 ---
 
 {{< drg/requirement number="4b" >}}

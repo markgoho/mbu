@@ -1,12 +1,12 @@
 ---
-title: "Req 2a3 — Golf History & Great Players"
+title: "Golf History & Great Players"
 layout: guide
-group_title: "Traditional Golf Path"
+group_title: "2. Traditional Golf Path"
 req_number: "2a3"
 prev: "/merit-badges/golf/guide/req2a2/"
-prev_title: "Req 2a2 — Understanding the Handicap System"
+prev_title: "Understanding the Handicap System"
 next: "/merit-badges/golf/guide/req2a4/"
-next_title: "Req 2a4 — Fitness for Golf"
+next_title: "Fitness for Golf"
 ---
 
 {{< drg/requirement number="2a3" >}}

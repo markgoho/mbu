@@ -1,13 +1,13 @@
 ---
-title: "Req 5f — Your Community's Mining Story"
+title: "Your Community's Mining Story"
 layout: "guide"
-group_title: "Your Community's Mining Story"
+group_title: "5. Your Community's Mining Story"
 req_number: "5f"
 req_path: "5.f"
 prev: "/merit-badges/mining-in-society/guide/req5e/"
-prev_title: "Req 5e — Ore Processing Basics"
+prev_title: "Ore Processing Basics"
 next: "/merit-badges/mining-in-society/guide/req6/"
-next_title: "Req 6 — Mining, Reclamation, and Sustainability"
+next_title: "Mining, Reclamation, and Sustainability"
 ---
 
 {{< drg/requirement number="5f" >}}

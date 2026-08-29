@@ -1,13 +1,13 @@
 ---
-title: "Req 2ce — Black Powder Storage Safety"
+title: "Black Powder Storage Safety"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2ce"
 req_path: "2.c.e"
 prev: "/merit-badges/rifle-shooting/guide/req2cd/"
-prev_title: "Req 2cd — Grades of Black Powder"
+prev_title: "Grades of Black Powder"
 next: "/merit-badges/rifle-shooting/guide/req2cf/"
-next_title: "Req 2cf — Components of a Load"
+next_title: "Components of a Load"
 ---
 
 {{< drg/requirement number="2ce" >}}

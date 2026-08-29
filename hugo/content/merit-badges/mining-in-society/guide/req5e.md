@@ -1,13 +1,13 @@
 ---
-title: "Req 5e — Ore Processing Basics"
+title: "Ore Processing Basics"
 layout: "guide"
-group_title: "Breaking Rock and Extracting Minerals"
+group_title: "5. Breaking Rock and Extracting Minerals"
 req_number: "5e"
 req_path: "5.e"
 prev: "/merit-badges/mining-in-society/guide/req5d/"
-prev_title: "Req 5d — Mining Equipment in Action"
+prev_title: "Mining Equipment in Action"
 next: "/merit-badges/mining-in-society/guide/req5f/"
-next_title: "Req 5f — Your Community's Mining Story"
+next_title: "Your Community"
 ---
 
 {{< drg/requirement number="5e" >}}

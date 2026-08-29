@@ -1,12 +1,12 @@
 ---
-title: "Req 4e — Current Events"
+title: "Current Events"
 layout: guide
-group_title: "Threats & Attacks"
+group_title: "4. Threats & Attacks"
 req_number: "4e"
 prev: "/merit-badges/cybersecurity/guide/req4d/"
-prev_title: "Req 4d — Spoofing & Phishing"
+prev_title: "Spoofing & Phishing"
 next: "/merit-badges/cybersecurity/guide/req4f/"
-next_title: "Req 4f — Attack Surface"
+next_title: "Attack Surface"
 ---
 
 {{< drg/requirement number="4e" >}}

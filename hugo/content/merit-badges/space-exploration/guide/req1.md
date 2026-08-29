@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Why We Go"
+title: "Why We Go"
 layout: "guide"
-group_title: "Why Explore Space"
+group_title: "1. Why Explore Space"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/space-exploration/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/space-exploration/guide/req2/"
-next_title: "Req 2 — Collector Card Mission"
+next_title: "Collector Card Mission"
 ---
 
 {{< drg/requirement number="1" >}}

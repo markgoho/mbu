@@ -1,13 +1,13 @@
 ---
-title: "Req 2B-b — Principal Parts and How They Work"
+title: "Principal Parts and How They Work"
 layout: "guide"
-group_title: "Option B — Muzzleloading Shotgun"
+group_title: "2. Option B — Muzzleloading Shotgun"
 req_number: "2B-b"
 req_path: "2.B.b"
 prev: "/merit-badges/shotgun-shooting/guide/req2Ba/"
-prev_title: "Req 2B-a — History of the Muzzleloading Shotgun"
+prev_title: "History of the Muzzleloading Shotgun"
 next: "/merit-badges/shotgun-shooting/guide/req2Bc/"
-next_title: "Req 2B-c — Safe Storage and Handling"
+next_title: "Safe Storage and Handling"
 ---
 
 {{< drg/requirement number="2B-b" >}}

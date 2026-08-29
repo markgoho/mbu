@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Careers or Coding for Life"
+title: "Careers or Coding for Life"
 layout: "guide"
-group_title: "Paths After the Badge"
+group_title: "6. Paths After the Badge"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/programming/guide/req5c/"
-prev_title: "Req 5c — Third Language Project"
+prev_title: "Third Language Project"
 next: "/merit-badges/programming/guide/req6a/"
-next_title: "Req 6a — Research a Programming Career"
+next_title: "Research a Programming Career"
 ---
 
 {{< drg/requirement number="6" >}}

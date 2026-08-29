@@ -1,12 +1,12 @@
 ---
-title: "Req 6b — Using Electricity"
+title: "Using Electricity"
 layout: guide
-group_title: "Hands-On Engineering"
+group_title: "6. Hands-On Engineering"
 req_number: "6b"
 prev: "/merit-badges/engineering/guide/req6a/"
-prev_title: "Req 6a — Transforming Motion"
+prev_title: "Transforming Motion"
 next: "/merit-badges/engineering/guide/req6c/"
-next_title: "Req 6c — Understanding Electronics"
+next_title: "Understanding Electronics"
 ---
 
 {{< drg/requirement number="6b" >}}

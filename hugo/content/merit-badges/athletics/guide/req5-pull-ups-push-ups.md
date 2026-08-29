@@ -1,12 +1,12 @@
 ---
-title: "Req 5e — Pull-Ups & Push-Ups"
+title: "Pull-Ups & Push-Ups"
 layout: guide
-group_title: "Performance Options"
+group_title: "5. Performance Options"
 req_number: "5e"
 prev: "/merit-badges/athletics/guide/req5-swimming/"
-prev_title: "Req 5d — Swimming"
+prev_title: "Swimming"
 next: "/merit-badges/athletics/guide/req5-baseball-throw/"
-next_title: "Req 5f — Baseball Throw"
+next_title: "Baseball Throw"
 ---
 
 {{< drg/requirement number="5" option="Option E—Pull-Ups AND Push-Ups" >}}

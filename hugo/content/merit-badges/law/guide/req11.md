@@ -1,10 +1,10 @@
 ---
-title: "Req 11 — Areas of Law"
+title: "Areas of Law"
 layout: guide
-group_title: "Justice for All"
+group_title: "10. Justice for All"
 req_number: "11"
 prev: "/merit-badges/law/guide/req10/"
-prev_title: "Requirement 10 — Access to Legal Help"
+prev_title: "Access to Legal Help"
 next: "/merit-badges/law/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

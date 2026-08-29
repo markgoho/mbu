@@ -1,12 +1,12 @@
 ---
-title: "Req 1e — Maintenance Schedules"
+title: "Maintenance Schedules"
 layout: guide
-group_title: "Safety & Registration"
+group_title: "1. Safety & Registration"
 req_number: "1e"
 prev: "/merit-badges/automotive-maintenance/guide/req1c/"
-prev_title: "Req 1c — Vehicle Power Types"
+prev_title: "Vehicle Power Types"
 next: "/merit-badges/automotive-maintenance/guide/req1g/"
-next_title: "Req 1g — Inspections & Registration"
+next_title: "Inspections & Registration"
 ---
 
 {{< drg/requirement number="1e" >}}

@@ -1,10 +1,10 @@
 ---
-title: "Req 5b — Contemporary Gathering"
+title: "Contemporary Gathering"
 layout: guide
-group_title: "Choose Your Experience"
+group_title: "5. Choose Your Experience"
 req_number: "5b"
 prev: "/merit-badges/indian-lore/guide/req5a/"
-prev_title: "Req 5a — Museum Visit"
+prev_title: "Museum Visit"
 next: "/merit-badges/indian-lore/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

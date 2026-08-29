@@ -1,12 +1,12 @@
 ---
-title: "Req 10 — Three-Day Treks"
+title: "Three-Day Treks"
 layout: guide
-group_title: "Hit the Trail"
+group_title: "10. Hit the Trail"
 req_number: "10"
 prev: "/merit-badges/backpacking/guide/req9/"
-prev_title: "Req 9 — Planning & Packing"
+prev_title: "Planning & Packing"
 next: "/merit-badges/backpacking/guide/req11/"
-next_title: "Req 11 — The Big Trek"
+next_title: "The Big Trek"
 ---
 
 {{< drg/requirement number="10" >}}

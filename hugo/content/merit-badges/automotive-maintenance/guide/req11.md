@@ -1,12 +1,12 @@
 ---
-title: "Req 11 — Choose Two Projects"
+title: "Choose Two Projects"
 layout: guide
-group_title: "Hands-On Skills"
+group_title: "11. Hands-On Skills"
 req_number: "11"
 prev: "/merit-badges/automotive-maintenance/guide/req10/"
-prev_title: "Req 10 — Brakes"
+prev_title: "Brakes"
 next: "/merit-badges/automotive-maintenance/guide/req12/"
-next_title: "Req 12 — Career Exploration"
+next_title: "Career Exploration"
 ---
 
 {{< drg/requirement number="11" >}}

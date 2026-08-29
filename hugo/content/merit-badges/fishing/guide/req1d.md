@@ -1,12 +1,12 @@
 ---
-title: "Req 1d — Core Fishing Safety Practices"
+title: "Core Fishing Safety Practices"
 layout: guide
-group_title: "Safety on the Water"
+group_title: "1. Safety on the Water"
 req_number: "1d"
 prev: "/merit-badges/fishing/guide/req1c/"
-prev_title: "Req 1c — Removing a Barbed Hook"
+prev_title: "Removing a Barbed Hook"
 next: "/merit-badges/fishing/guide/req2/"
-next_title: "Req 2 — Fishing Outfits & Equipment Care"
+next_title: "Fishing Outfits & Equipment Care"
 ---
 
 {{< drg/requirement number="1d" >}}

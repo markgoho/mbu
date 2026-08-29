@@ -1,13 +1,13 @@
 ---
-title: "Req 7d4 — Care & Maintenance"
+title: "Care & Maintenance"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d4"
 req_path: "7.d.4"
 prev: "/merit-badges/snow-sports/guide/req7d3/"
-prev_title: "Req 7d3 — Types & Specialized Uses"
+prev_title: "Types & Specialized Uses"
 next: "/merit-badges/snow-sports/guide/req7d5/"
-next_title: "Req 7d5 — One-Day Hike Gear"
+next_title: "One-Day Hike Gear"
 ---
 
 {{< drg/requirement number="7d4" >}}

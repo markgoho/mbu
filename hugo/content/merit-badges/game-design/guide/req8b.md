@@ -1,10 +1,10 @@
 ---
-title: "Req 8b — Meet a Game Design Educator"
+title: "Meet a Game Design Educator"
 layout: guide
-group_title: "Exploring the Industry"
+group_title: "8. Exploring the Industry"
 req_number: "8b"
 prev: "/merit-badges/game-design/guide/req8a/"
-prev_title: "Req 8a — Interview a Game Developer"
+prev_title: "Interview a Game Developer"
 next: "/merit-badges/game-design/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

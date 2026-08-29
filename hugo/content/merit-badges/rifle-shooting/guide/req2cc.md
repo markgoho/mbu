@@ -1,13 +1,13 @@
 ---
-title: "Req 2cc — Safe Storage and Handling"
+title: "Safe Storage and Handling"
 layout: "guide"
-group_title: "Option C — Muzzleloading Rifle"
+group_title: "2. Option C — Muzzleloading Rifle"
 req_number: "2cc"
 req_path: "2.c.c"
 prev: "/merit-badges/rifle-shooting/guide/req2cb/"
-prev_title: "Req 2cb — Principal Parts and How They Work"
+prev_title: "Principal Parts and How They Work"
 next: "/merit-badges/rifle-shooting/guide/req2cd/"
-next_title: "Req 2cd — Grades of Black Powder"
+next_title: "Grades of Black Powder"
 ---
 
 {{< drg/requirement number="2cc" >}}

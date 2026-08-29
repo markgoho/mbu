@@ -1,13 +1,13 @@
 ---
-title: "Req 7h — Ocean Energy Systems"
+title: "Ocean Energy Systems"
 layout: "guide"
-group_title: "Ocean Energy"
+group_title: "7. Ocean Energy"
 req_number: "7h"
 req_path: "7.h"
 prev: "/merit-badges/energy/guide/req7g/"
-prev_title: "Req 7g — Solar Power Systems"
+prev_title: "Solar Power Systems"
 next: "/merit-badges/energy/guide/req7i/"
-next_title: "Req 7i — Wind Turbines"
+next_title: "Wind Turbines"
 ---
 
 {{< drg/inherited-requirement number="7h" req_path="7.h" topic="Tidal energy, wave energy, or ocean thermal energy conversion devices" />}}

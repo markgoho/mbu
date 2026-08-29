@@ -1,13 +1,13 @@
 ---
-title: "Req 7d6 — Best Areas & Backcountry"
+title: "Best Areas & Backcountry"
 layout: "guide"
-group_title: "Option D — Snowshoeing"
+group_title: "7. Option D — Snowshoeing"
 req_number: "7d6"
 req_path: "7.d.6"
 prev: "/merit-badges/snow-sports/guide/req7d5/"
-prev_title: "Req 7d5 — One-Day Hike Gear"
+prev_title: "One-Day Hike Gear"
 next: "/merit-badges/snow-sports/guide/req7d7/"
-next_title: "Req 7d7 — Benefits of Snowshoeing"
+next_title: "Benefits of Snowshoeing"
 ---
 
 {{< drg/requirement number="7d6" >}}

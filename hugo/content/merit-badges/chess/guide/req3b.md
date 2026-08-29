@@ -1,12 +1,12 @@
 ---
-title: "Req 3b — Setting Up the Board"
+title: "Setting Up the Board"
 layout: guide
-group_title: "Know Your Pieces"
+group_title: "3. Know Your Pieces"
 req_number: "3b"
 prev: "/merit-badges/chess/guide/req3a/"
-prev_title: "Req 3a — Chess Piece Names"
+prev_title: "Chess Piece Names"
 next: "/merit-badges/chess/guide/req3c/"
-next_title: "Req 3c — How Pieces Move & Capture"
+next_title: "How Pieces Move & Capture"
 ---
 
 {{< drg/requirement number="3b" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 1c — Totin' Chip"
+title: "Totin' Chip"
 layout: guide
-group_title: "Safety First"
+group_title: "1. Safety First"
 req_number: "1c"
 prev: "/merit-badges/woodwork/guide/req1b/"
-prev_title: "Req 1b — First Aid & Protection"
+prev_title: "First Aid & Protection"
 next: "/merit-badges/woodwork/guide/req2a/"
-next_title: "Req 2a — From Tree to Lumber"
+next_title: "From Tree to Lumber"
 ---
 
 {{< drg/requirement number="1c" >}}

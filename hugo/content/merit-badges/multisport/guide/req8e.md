@@ -1,11 +1,11 @@
 ---
-title: "Req 8e — Volunteer at an Event"
+title: "Volunteer at an Event"
 layout: "guide"
-group_title: "Staying Involved"
+group_title: "8. Staying Involved"
 req_number: "8e"
 req_path: "8.e"
 prev: "/merit-badges/multisport/guide/req8d/"
-prev_title: "Req 8d — Enter a Sanctioned Event"
+prev_title: "Enter a Sanctioned Event"
 next: "/merit-badges/multisport/guide/extended-learning/"
 next_title: "Extended Learning"
 ---

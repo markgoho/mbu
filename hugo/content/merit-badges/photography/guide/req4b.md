@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Change the Light"
+title: "Change the Light"
 layout: "guide"
-group_title: "Field Practice: Requirement 4"
+group_title: "4. Field Practice: Requirement 4"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/photography/guide/req4a/"
-prev_title: "Req 4a — Change Your Angle"
+prev_title: "Change Your Angle"
 next: "/merit-badges/photography/guide/req4c/"
-next_title: "Req 4c — Change the Focus"
+next_title: "Change the Focus"
 ---
 
 {{< drg/requirement number="4b" >}}

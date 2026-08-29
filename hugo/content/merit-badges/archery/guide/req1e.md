@@ -1,12 +1,12 @@
 ---
-title: "Req 1e — Archery Laws"
+title: "Archery Laws"
 layout: guide
-group_title: "Safety on the Range"
+group_title: "1. Safety on the Range"
 req_number: "1e"
 prev: "/merit-badges/archery/guide/req1d/"
-prev_title: "Req 1d — Retrieving Arrows"
+prev_title: "Retrieving Arrows"
 next: "/merit-badges/archery/guide/req2/"
-next_title: "Req 2 — Know Your Arrows"
+next_title: "Know Your Arrows"
 ---
 
 {{< drg/requirement number="1e" >}}

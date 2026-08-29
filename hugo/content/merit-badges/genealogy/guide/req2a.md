@@ -1,12 +1,12 @@
 ---
-title: "Req 2a — Timeline & Biography"
+title: "Timeline & Biography"
 layout: guide
-group_title: "Foundations of Family History"
+group_title: "1. Foundations of Family History"
 req_number: "2a"
 prev: "/merit-badges/genealogy/guide/req2/"
-prev_title: "Req 2 — Tell a Personal Story"
+prev_title: "Tell a Personal Story"
 next: "/merit-badges/genealogy/guide/req2b/"
-next_title: "Req 2b — Six-Week Journal"
+next_title: "Six-Week Journal"
 ---
 
 {{< drg/requirement number="2a" >}}

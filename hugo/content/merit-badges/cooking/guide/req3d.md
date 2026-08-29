@@ -1,12 +1,12 @@
 ---
-title: "Req 3d — Taste, Texture & Smell"
+title: "Taste, Texture & Smell"
 layout: guide
-group_title: "Cooking Basics"
+group_title: "3. Cooking Basics"
 req_number: "3d"
 prev: "/merit-badges/cooking/guide/req3c/"
-prev_title: "Req 3c — Meal Timing"
+prev_title: "Meal Timing"
 next: "/merit-badges/cooking/guide/req4a/"
-next_title: "Req 4a — Menu Planning"
+next_title: "Menu Planning"
 ---
 
 {{< drg/requirement number="3d" >}}

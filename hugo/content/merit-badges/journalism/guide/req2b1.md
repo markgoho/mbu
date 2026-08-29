@@ -1,12 +1,12 @@
 ---
-title: "Req 2b1 — Comparing Broadcast Coverage"
+title: "Comparing Broadcast Coverage"
 layout: guide
-group_title: "Reporting Across Platforms"
+group_title: "2. Reporting Across Platforms"
 req_number: "2b1"
 prev: "/merit-badges/journalism/guide/req2b/"
-prev_title: "Req 2b — Broadcast Newsroom Skills"
+prev_title: "Broadcast Newsroom Skills"
 next: "/merit-badges/journalism/guide/req2b2/"
-next_title: "Req 2b2 — Visiting a Station"
+next_title: "Visiting a Station"
 ---
 
 {{< drg/requirement number="2.b.1" >}}

@@ -1,12 +1,12 @@
 ---
-title: "Req 3a — Patterns and Transfer"
+title: "Patterns and Transfer"
 layout: guide
-group_title: "Building Your Project"
+group_title: "3. Building Your Project"
 req_number: "3a"
 prev: "/merit-badges/leatherwork/guide/req3/"
-prev_title: "Req 3 — Choosing Your Five Skills"
+prev_title: "Choosing Your Five Skills"
 next: "/merit-badges/leatherwork/guide/req3b/"
-next_title: "Req 3b — Clean Cutting"
+next_title: "Clean Cutting"
 ---
 
 {{< drg/requirement number="3a" >}}

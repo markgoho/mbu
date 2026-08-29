@@ -1,12 +1,12 @@
 ---
-title: "Req 3 — Customs and Commonalities"
+title: "Customs and Commonalities"
 layout: guide
-group_title: "Understanding Diversity"
+group_title: "2. Understanding Diversity"
 req_number: "3"
 prev: "/merit-badges/american-cultures/guide/req2/"
-prev_title: "Req 2 — Imagining a Single-Culture World"
+prev_title: "Imagining a Single-Culture World"
 next: "/merit-badges/american-cultures/guide/req4/"
-next_title: "Req 4 — Contributions to America"
+next_title: "Contributions to America"
 ---
 
 {{< drg/requirement number="3" >}}

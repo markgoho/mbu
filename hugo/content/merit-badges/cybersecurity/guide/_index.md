@@ -4,92 +4,92 @@ layout: guide
 badge_name: "Cybersecurity"
 group_title: "Getting Started"
 next: "/merit-badges/cybersecurity/guide/req1a/"
-next_title: "Req 1a — Digital Safety Video"
+next_title: "Digital Safety Video"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/cybersecurity/guide/"
-  - group_title: "Safety First"
+  - group_title: "1. Safety First"
     items:
-      - title: "Req 1a — Digital Safety Video"
+      - title: "a Digital Safety Video"
         url: "/merit-badges/cybersecurity/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Digital Footprint"
+      - title: "b Digital Footprint"
         url: "/merit-badges/cybersecurity/guide/req1b/"
         is_sub: true
-      - title: "Req 1c — Physical Safety"
+      - title: "c Physical Safety"
         url: "/merit-badges/cybersecurity/guide/req1c/"
         is_sub: true
-  - group_title: "Cyber Ethics"
+  - group_title: "2. Cyber Ethics"
     items:
-      - title: "Req 2a — Scout Law Online"
+      - title: "a Scout Law Online"
         url: "/merit-badges/cybersecurity/guide/req2a/"
         is_sub: true
-      - title: "Req 2b — Ethical Behavior"
+      - title: "b Ethical Behavior"
         url: "/merit-badges/cybersecurity/guide/req2b/"
         is_sub: true
-  - group_title: "Cybersecurity Fundamentals"
+  - group_title: "3. Cybersecurity Fundamentals"
     items:
-      - title: "Req 3a — Systems to Protect"
+      - title: "a Systems to Protect"
         url: "/merit-badges/cybersecurity/guide/req3a/"
         is_sub: true
-      - title: "Req 3b — The CIA Triad"
+      - title: "b The CIA Triad"
         url: "/merit-badges/cybersecurity/guide/req3b/"
         is_sub: true
-  - group_title: "Threats & Attacks"
+  - group_title: "4. Threats & Attacks"
     items:
-      - title: "Req 4a — Threats & Vulnerabilities"
+      - title: "a Threats & Vulnerabilities"
         url: "/merit-badges/cybersecurity/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Malware"
+      - title: "b Malware"
         url: "/merit-badges/cybersecurity/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Public Wi-Fi Risks"
+      - title: "c Public Wi-Fi Risks"
         url: "/merit-badges/cybersecurity/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Spoofing & Phishing"
+      - title: "d Spoofing & Phishing"
         url: "/merit-badges/cybersecurity/guide/req4d/"
         is_sub: true
-      - title: "Req 4e — Current Events"
+      - title: "e Current Events"
         url: "/merit-badges/cybersecurity/guide/req4e/"
         is_sub: true
-      - title: "Req 4f — Attack Surface"
+      - title: "f Attack Surface"
         url: "/merit-badges/cybersecurity/guide/req4f/"
         is_sub: true
-  - group_title: "Cyber Defenses"
+  - group_title: "5. Cyber Defenses"
     items:
-      - title: "Req 5a — Defense Technologies"
+      - title: "a Defense Technologies"
         url: "/merit-badges/cybersecurity/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Installing Updates"
+      - title: "b Installing Updates"
         url: "/merit-badges/cybersecurity/guide/req5b/"
         is_sub: true
-      - title: "Req 5c — System Security"
+      - title: "c System Security"
         url: "/merit-badges/cybersecurity/guide/req5c/"
         is_sub: true
-  - group_title: "Cryptography"
+  - group_title: "6. Cryptography"
     items:
-      - title: "Req 6a — Encryption Uses"
+      - title: "a Encryption Uses"
         url: "/merit-badges/cybersecurity/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Encrypted Connections"
+      - title: "b Encrypted Connections"
         url: "/merit-badges/cybersecurity/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — Crypto Hands-On"
+      - title: "c Crypto Hands-On"
         url: "/merit-badges/cybersecurity/guide/req6c/"
         is_sub: true
-  - group_title: "Connected World"
+  - group_title: "7. Connected World"
     items:
-      - title: "Req 7 — IoT Devices"
+      - title: "7. IoT Devices"
         url: "/merit-badges/cybersecurity/guide/req7/"
-  - group_title: "Hands-On Challenge"
+  - group_title: "8. Hands-On Challenge"
     items:
-      - title: "Req 8 — Cybersecurity Activities"
+      - title: "8. Cybersecurity Activities"
         url: "/merit-badges/cybersecurity/guide/req8/"
-  - group_title: "Career Exploration"
+  - group_title: "9. Career Exploration"
     items:
-      - title: "Req 9 — Careers"
+      - title: "9. Careers"
         url: "/merit-badges/cybersecurity/guide/req9/"
   - group_title: "Beyond the Badge"
     items:

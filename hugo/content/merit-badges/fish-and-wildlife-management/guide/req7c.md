@@ -1,12 +1,12 @@
 ---
-title: "Req 7c — Fish Stomach Contents"
+title: "Fish Stomach Contents"
 layout: guide
-group_title: "Fish Study Techniques"
+group_title: "7. Fish Study Techniques"
 req_number: "7c"
 prev: "/merit-badges/fish-and-wildlife-management/guide/req7b/"
-prev_title: "Req 7b — Creel Census"
+prev_title: "Creel Census"
 next: "/merit-badges/fish-and-wildlife-management/guide/req7d/"
-next_title: "Req 7d — Freshwater Aquarium"
+next_title: "Freshwater Aquarium"
 ---
 
 {{< drg/requirement number="7c" >}}

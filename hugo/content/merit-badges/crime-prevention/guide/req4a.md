@@ -1,12 +1,12 @@
 ---
-title: "Req 4a — How Communities Prevent Crime"
+title: "How Communities Prevent Crime"
 layout: guide
-group_title: "Home & Neighborhood Safety"
+group_title: "4. Home & Neighborhood Safety"
 req_number: "4a"
 prev: "/merit-badges/crime-prevention/guide/req3b/"
-prev_title: "Req 3b — Analyzing Your Research"
+prev_title: "Analyzing Your Research"
 next: "/merit-badges/crime-prevention/guide/req4b/"
-next_title: "Req 4b — Conducting a Security Survey"
+next_title: "Conducting a Security Survey"
 ---
 
 {{< drg/requirement number="4a" >}}

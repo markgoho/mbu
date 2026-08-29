@@ -1,12 +1,12 @@
 ---
-title: "Req 1 — What Good Citizenship Means"
+title: "What Good Citizenship Means"
 layout: guide
-group_title: "Foundations of Community Citizenship"
+group_title: "1. Foundations of Community Citizenship"
 req_number: "1"
 prev: "/merit-badges/citizenship-in-the-community/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/citizenship-in-the-community/guide/req2a/"
-next_title: "Req 2a — Mapping Your Community"
+next_title: "Mapping Your Community"
 ---
 
 {{< drg/requirement number="1" >}}

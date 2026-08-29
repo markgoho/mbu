@@ -1,13 +1,13 @@
 ---
-title: "Req 4b — Metalworking as a Hobby"
+title: "Metalworking as a Hobby"
 layout: "guide"
-group_title: "Future Pathways"
+group_title: "4. Future Pathways"
 req_number: "4b"
 req_path: "4.b"
 prev: "/merit-badges/metalwork/guide/req4a/"
-prev_title: "Req 4a — Metalworking Careers"
+prev_title: "Metalworking Careers"
 next: "/merit-badges/metalwork/guide/req5/"
-next_title: "Req 5 — Choose Your Craft"
+next_title: "Choose Your Craft"
 ---
 
 {{< drg/requirement number="4b" >}}

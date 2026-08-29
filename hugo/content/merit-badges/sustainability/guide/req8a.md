@@ -1,12 +1,12 @@
 ---
-title: "Req 8a — Campout Observations"
+title: "Campout Observations"
 layout: guide
-group_title: "Scouting & Sustainability"
+group_title: "8. Scouting & Sustainability"
 req_number: "8a"
 prev: "/merit-badges/sustainability/guide/req7f/"
-prev_title: "Req 7f — Climate Change"
+prev_title: "Climate Change"
 next: "/merit-badges/sustainability/guide/req8b/"
-next_title: "Req 8b — Scout Values & Sustainability"
+next_title: "Scout Values & Sustainability"
 ---
 
 {{< drg/requirement number="8" >}}

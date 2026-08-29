@@ -4,57 +4,57 @@ layout: guide
 badge_name: "Swimming"
 group_title: "Getting Started"
 next: "/merit-badges/swimming/guide/req1a/"
-next_title: "Req 1a — Safe Swim Defense"
+next_title: "Safe Swim Defense"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/swimming/guide/"
-  - group_title: "Water Safety Fundamentals"
+  - group_title: "1. Water Safety Fundamentals"
     items:
-      - title: "Req 1a — Safe Swim Defense"
+      - title: "a Safe Swim Defense"
         url: "/merit-badges/swimming/guide/req1a/"
         is_sub: true
-      - title: "Req 1b — Health Concerns"
+      - title: "b Health Concerns"
         url: "/merit-badges/swimming/guide/req1b/"
         is_sub: true
-  - group_title: "Proving Your Skills"
+  - group_title: "2. Proving Your Skills"
     items:
-      - title: "Req 2 — Swimmer Test"
+      - title: "2. Swimmer Test"
         url: "/merit-badges/swimming/guide/req2/"
         is_sub: false
-  - group_title: "Stroke Technique"
+  - group_title: "3. Stroke Technique"
     items:
-      - title: "Req 3 — Swimming Strokes"
+      - title: "3. Swimming Strokes"
         url: "/merit-badges/swimming/guide/req3/"
         is_sub: false
-      - title: "Req 4 — Endurance Swim"
+      - title: "4. Endurance Swim"
         url: "/merit-badges/swimming/guide/req4/"
         is_sub: false
-  - group_title: "Water Rescue"
+  - group_title: "5. Water Rescue"
     items:
-      - title: "Req 5a — Rescue Methods"
+      - title: "a Rescue Methods"
         url: "/merit-badges/swimming/guide/req5a/"
         is_sub: true
-      - title: "Req 5b — Line Rescue"
+      - title: "b Line Rescue"
         url: "/merit-badges/swimming/guide/req5b/"
         is_sub: true
-  - group_title: "Floating & Survival Skills"
+  - group_title: "6. Floating & Survival Skills"
     items:
-      - title: "Req 6 — Floating & Survival"
+      - title: "6. Floating & Survival"
         url: "/merit-badges/swimming/guide/req6/"
         is_sub: false
-  - group_title: "Diving Skills"
+  - group_title: "7. Diving Skills"
     items:
-      - title: "Req 7 — Surface Diving"
+      - title: "7. Surface Diving"
         url: "/merit-badges/swimming/guide/req7/"
         is_sub: false
-      - title: "Req 8 — Standing & Shallow Dives"
+      - title: "8. Standing & Shallow Dives"
         url: "/merit-badges/swimming/guide/req8/"
         is_sub: false
-  - group_title: "Swimming & Fitness"
+  - group_title: "9. Swimming & Fitness"
     items:
-      - title: "Req 9 — Fitness Benefits"
+      - title: "9. Fitness Benefits"
         url: "/merit-badges/swimming/guide/req9/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Water Pollution"
+title: "Water Pollution"
 layout: guide
-group_title: "Water Pollution"
+group_title: "4. Water Pollution"
 req_number: "4"
 prev: "/merit-badges/environmental-science/guide/req3/"
-prev_title: "Req 3 — Air Pollution"
+prev_title: "Air Pollution"
 next: "/merit-badges/environmental-science/guide/req5/"
-next_title: "Req 5 — Land Pollution"
+next_title: "Land Pollution"
 ---
 
 {{< drg/requirement number="4" >}}

@@ -1,13 +1,13 @@
 ---
-title: "Req 4 — Veterinary Technicians in Action"
+title: "Veterinary Technicians in Action"
 layout: "guide"
-group_title: "Training and Team Roles"
+group_title: "3. Training and Team Roles"
 req_number: "4"
 req_path: "4"
 prev: "/merit-badges/veterinary-medicine/guide/req3/"
-prev_title: "Req 3 — Becoming a Veterinarian"
+prev_title: "Becoming a Veterinarian"
 next: "/merit-badges/veterinary-medicine/guide/req5/"
-next_title: "Req 5 — The Human-Animal Bond"
+next_title: "The Human-Animal Bond"
 ---
 
 {{< drg/requirement number="4" >}}

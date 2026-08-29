@@ -4,68 +4,68 @@ layout: guide
 badge_name: "Graphic Arts"
 group_title: "Getting Started"
 next: "/merit-badges/graphic-arts/guide/req1/"
-next_title: "Req 1 — Printing Processes"
+next_title: "Printing Processes"
 guide_nav:
   - group_title: "Getting Started"
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/graphic-arts/guide/"
         is_sub: false
-  - group_title: "How Printing Works"
+  - group_title: "1. How Printing Works"
     items:
-      - title: "Req 1 — Printing Processes"
+      - title: "1. Printing Processes"
         url: "/merit-badges/graphic-arts/guide/req1/"
         is_sub: false
-      - title: "Req 2 — Images, Halftones, and Digital Files"
+      - title: "2. Images, Halftones, and Digital Files"
         url: "/merit-badges/graphic-arts/guide/req2/"
         is_sub: false
-  - group_title: "Designing for Print"
+  - group_title: "3. Designing for Print"
     items:
-      - title: "Req 3 — Design Choices and Production Planning"
+      - title: "3. Design Choices and Production Planning"
         url: "/merit-badges/graphic-arts/guide/req3/"
         is_sub: false
-  - group_title: "Choose a Printing Method"
+  - group_title: "4. Choose a Printing Method"
     items:
-      - title: "Req 4 — Pick Your Production Path"
+      - title: "4. Pick Your Production Path"
         url: "/merit-badges/graphic-arts/guide/req4/"
         is_sub: false
-      - title: "Req 4a — Offset Lithography Run"
+      - title: "a Offset Lithography Run"
         url: "/merit-badges/graphic-arts/guide/req4a/"
         is_sub: true
-      - title: "Req 4b — Screen Printing Run"
+      - title: "b Screen Printing Run"
         url: "/merit-badges/graphic-arts/guide/req4b/"
         is_sub: true
-      - title: "Req 4c — Digital Printing Run"
+      - title: "c Digital Printing Run"
         url: "/merit-badges/graphic-arts/guide/req4c/"
         is_sub: true
-      - title: "Req 4d — Relief Printing Run"
+      - title: "d Relief Printing Run"
         url: "/merit-badges/graphic-arts/guide/req4d/"
         is_sub: true
-  - group_title: "Finishing the Job"
+  - group_title: "5. Finishing the Job"
     items:
-      - title: "Req 5 — Postpress and Binding"
+      - title: "5. Postpress and Binding"
         url: "/merit-badges/graphic-arts/guide/req5/"
         is_sub: false
-  - group_title: "Explore the Industry"
+  - group_title: "6. Explore the Industry"
     items:
-      - title: "Req 6 — Choose a Graphic Arts Visit"
+      - title: "6. Choose a Graphic Arts Visit"
         url: "/merit-badges/graphic-arts/guide/req6/"
         is_sub: false
-      - title: "Req 6a — Newspaper Printing Visit"
+      - title: "a Newspaper Printing Visit"
         url: "/merit-badges/graphic-arts/guide/req6a/"
         is_sub: true
-      - title: "Req 6b — Commercial Printing Visit"
+      - title: "b Commercial Printing Visit"
         url: "/merit-badges/graphic-arts/guide/req6b/"
         is_sub: true
-      - title: "Req 6c — School Program Visit"
+      - title: "c School Program Visit"
         url: "/merit-badges/graphic-arts/guide/req6c/"
         is_sub: true
-      - title: "Req 6d — Professional Websites Research"
+      - title: "d Professional Websites Research"
         url: "/merit-badges/graphic-arts/guide/req6d/"
         is_sub: true
-  - group_title: "Looking Ahead"
+  - group_title: "7. Looking Ahead"
     items:
-      - title: "Req 7 — Careers in Graphic Arts"
+      - title: "7. Careers in Graphic Arts"
         url: "/merit-badges/graphic-arts/guide/req7/"
         is_sub: false
   - group_title: "Beyond the Badge"

@@ -1,13 +1,13 @@
 ---
-title: "Req 6 — Mounting and Protecting a Collection"
+title: "Mounting and Protecting a Collection"
 layout: "guide"
-group_title: "Albums and Preservation"
+group_title: "6. Albums and Preservation"
 req_number: "6"
 req_path: "6"
 prev: "/merit-badges/stamp-collecting/guide/req5g/"
-prev_title: "Req 5g — Finding Watermarks"
+prev_title: "Finding Watermarks"
 next: "/merit-badges/stamp-collecting/guide/req7/"
-next_title: "Req 7 — Pick Two Stamp Projects"
+next_title: "Pick Two Stamp Projects"
 ---
 
 {{< drg/requirement number="6" >}}

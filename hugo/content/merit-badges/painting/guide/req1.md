@@ -1,13 +1,13 @@
 ---
-title: "Req 1 — Work Safe Before You Paint"
+title: "Work Safe Before You Paint"
 layout: "guide"
-group_title: "Safe Prep & Application"
+group_title: "1. Safe Prep & Application"
 req_number: "1"
 req_path: "1"
 prev: "/merit-badges/painting/guide/"
 prev_title: "Introduction & Overview"
 next: "/merit-badges/painting/guide/req2/"
-next_title: "Req 2 — Coatings, Paint Types & Sheen"
+next_title: "Coatings, Paint Types & Sheen"
 ---
 
 {{< drg/requirement number="1" >}}

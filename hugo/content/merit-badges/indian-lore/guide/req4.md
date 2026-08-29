@@ -1,12 +1,12 @@
 ---
-title: "Req 4 — Influence and Exchange"
+title: "Influence and Exchange"
 layout: guide
-group_title: "Influence and Exchange"
+group_title: "4. Influence and Exchange"
 req_number: "4"
 prev: "/merit-badges/indian-lore/guide/req3/"
-prev_title: "Req 3 — Language, Place, and Leaders"
+prev_title: "Language, Place, and Leaders"
 next: "/merit-badges/indian-lore/guide/req5/"
-next_title: "Req 5 — Choose Your Experience"
+next_title: "Choose Your Experience"
 ---
 
 {{< drg/requirement number="4" >}}

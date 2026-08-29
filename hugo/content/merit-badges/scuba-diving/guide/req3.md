@@ -1,13 +1,13 @@
 ---
-title: "Req 3 — The Scuba Diver's Code"
+title: "The Scuba Diver's Code"
 layout: "guide"
-group_title: "Diver Responsibility"
+group_title: "3. Diver Responsibility"
 req_number: "3"
 req_path: "3"
 prev: "/merit-badges/scuba-diving/guide/req2/"
-prev_title: "Req 2 — Swimming Before Scuba"
+prev_title: "Swimming Before Scuba"
 next: "/merit-badges/scuba-diving/guide/req4/"
-next_title: "Req 4 — Earning Open Water Certification"
+next_title: "Earning Open Water Certification"
 ---
 
 {{< drg/requirement number="3" >}}

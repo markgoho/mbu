@@ -1,12 +1,12 @@
 ---
-title: "Req 2b — Compose a Bugle Call"
+title: "Compose a Bugle Call"
 layout: guide
-group_title: "How the Bugle Works"
+group_title: "2. How the Bugle Works"
 req_number: "2b"
 prev: "/merit-badges/bugling/guide/req2a/"
-prev_title: "Req 2a — How It Makes Sound"
+prev_title: "How It Makes Sound"
 next: "/merit-badges/bugling/guide/req3/"
-next_title: "Req 3 — Sound Ten Calls"
+next_title: "Sound Ten Calls"
 ---
 
 {{< drg/requirement number="2b" >}}

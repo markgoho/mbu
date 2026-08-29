@@ -1,12 +1,12 @@
 ---
-title: "Req 4b — Cords, Plugs, and Sockets"
+title: "Cords, Plugs, and Sockets"
 layout: guide
-group_title: "Electrical Basics"
+group_title: "4. Electrical Basics"
 req_number: "4b"
 prev: "/merit-badges/home-repairs/guide/req4a/"
-prev_title: "Req 4a — Breakers and Fuses"
+prev_title: "Breakers and Fuses"
 next: "/merit-badges/home-repairs/guide/req4c/"
-next_title: "Req 4c — Installing a Light Switch"
+next_title: "Installing a Light Switch"
 ---
 
 {{< drg/requirement number="4b" >}}

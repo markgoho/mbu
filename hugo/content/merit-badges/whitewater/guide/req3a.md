@@ -1,13 +1,13 @@
 ---
-title: "Req 3a — Canoe Skills Check"
+title: "Canoe Skills Check"
 layout: "guide"
-group_title: "Choose Your Craft"
+group_title: "3. Choose Your Craft"
 req_number: "3a"
 req_path: "3.a"
 prev: "/merit-badges/whitewater/guide/req3/"
-prev_title: "Req 3 — Build on Your Paddling Base"
+prev_title: "Build on Your Paddling Base"
 next: "/merit-badges/whitewater/guide/req3b/"
-next_title: "Req 3b — Kayak Skills Check"
+next_title: "Kayak Skills Check"
 ---
 
 {{< drg/requirement number="3a" >}}
