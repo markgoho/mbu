@@ -95,13 +95,13 @@
                 {{ end }}"
                 {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
                 {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
-                {{ $hasMarker := findRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` $cleanTitle }}
+                {{ $hasMarker := findRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` $cleanTitle }}
                 {{ if $hasMarker }}
-                  {{ $marker := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$1" $cleanTitle }}
+                  {{ $marker := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$1" $cleanTitle }}
                   {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
                     {{ $marker = replaceRE "\\.$" "" $marker }}
                   {{ end }}
-                  {{ $label := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$2" $cleanTitle }}
+                  {{ $label := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$2" $cleanTitle }}
                   <span class="req-nav__marker">{{ $marker }}</span>
                   <span class="req-nav__label">{{ $label }}</span>
                 {{ else }}
@@ -192,13 +192,13 @@
                   {{ end }}"
                   {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
                   {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
-                  {{ $hasMarker := findRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` $cleanTitle }}
+                  {{ $hasMarker := findRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` $cleanTitle }}
                   {{ if $hasMarker }}
-                    {{ $marker := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$1" $cleanTitle }}
+                    {{ $marker := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$1" $cleanTitle }}
                     {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
                       {{ $marker = replaceRE "\\.$" "" $marker }}
                     {{ end }}
-                    {{ $label := replaceRE `^([0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?)\s+(.*)$` "$2" $cleanTitle }}
+                    {{ $label := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$2" $cleanTitle }}
                     <span class="req-mobile-nav__marker">{{ $marker }}</span>
                     <span class="req-mobile-nav__label">{{ $label }}</span>
                   {{ else }}

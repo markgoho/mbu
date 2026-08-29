@@ -1,0 +1,189 @@
+{{/* drg/resolve-nav.html
+
+  Resolves or dynamically derives the complete DRG navigation tree,
+  ordered page list, previous/next pagination, and group titles.
+
+  Params (dict or Page):
+    page - the current guide Page
+
+  Returns: dict with
+    guide_nav   - [{group_title: "...", items: [{title, url}]}, ...]
+    prev        - previous page URL (or "")
+    prev_title  - previous page title (or "")
+    next        - next page URL (or "")
+    next_title  - next page title (or "")
+    group_title - current page's derived kicker/group title
+*/}}
+{{ $page := . }}
+{{ if reflect.IsMap . }}
+  {{ $page = .page }}
+{{ end }}
+
+{{ $section := cond $page.IsSection $page $page.CurrentSection }}
+{{ $currentUrl := $page.RelPermalink }}
+
+{{ $guideNav := $section.Params.guide_nav }}
+
+{{/* If guide_nav is not in frontmatter, derive it from data JSON */}}
+{{ if not $guideNav }}
+  {{ $rankSlug := $section.Params.rank_slug }}
+  {{ if not $rankSlug }}
+    {{ with $section.Parent }}
+      {{ $rankSlug = path.Base .File.Dir }}
+    {{ end }}
+  {{ end }}
+
+  {{ $rankData := "" }}
+  {{ with $rankSlug }}
+    {{ if isset site.Data "ranks" }}
+      {{ if isset site.Data.ranks "scouts-bsa" }}
+        {{ $rankData = index site.Data.ranks "scouts-bsa" . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $badgeSlug := $section.Params.badge_slug | default $section.Params.slug }}
+  {{ if not $badgeSlug }}
+    {{ with $section.Parent }}
+      {{ $badgeSlug = path.Base .File.Dir }}
+    {{ end }}
+  {{ end }}
+
+  {{ $badgeData := "" }}
+  {{ with $badgeSlug }}
+    {{ if isset site.Data "merit-badges" }}
+      {{ $badgeData = index site.Data "merit-badges" . }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $rankData }}
+    {{ $navGroups := slice }}
+    {{ $navGroups = $navGroups | append (dict
+      "group_title" "Getting Started"
+      "items" (slice (dict "title" "Introduction & Overview" "url" $section.RelPermalink "page_title" "Introduction & Overview"))
+    ) }}
+
+    {{ range $rankData.requirements }}
+      {{ $req := . }}
+      {{ $children := $req.children | default slice }}
+      {{ if gt (len $children) 0 }}
+        {{ $gTitle := printf "%s. %s" $req.req_id $req.short }}
+        {{ $items := slice }}
+        {{ range $children }}
+          {{ $dotsRemoved := replace .path "." "" }}
+          {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
+          {{ $navTitle := printf "%s %s" .req_id .short }}
+          {{ $items = $items | append (dict "title" $navTitle "url" $pageUrl "page_title" .short) }}
+        {{ end }}
+        {{ $navGroups = $navGroups | append (dict "group_title" $gTitle "items" $items) }}
+      {{ else }}
+        {{ $dotsRemoved := replace $req.path "." "" }}
+        {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
+        {{ $navTitle := printf "%s. %s" $req.req_id $req.short }}
+        {{ $navGroups = $navGroups | append (dict "group_title" "" "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" $req.short))) }}
+      {{ end }}
+    {{ end }}
+
+    {{ $extendedUrl := printf "%sextended-learning/" $section.RelPermalink }}
+    {{ $navGroups = $navGroups | append (dict
+      "group_title" "Beyond the Rank"
+      "items" (slice (dict "title" "Extended Learning" "url" $extendedUrl "page_title" "Extended Learning"))
+    ) }}
+
+    {{ $guideNav = $navGroups }}
+  {{ else if $badgeData }}
+    {{ $navGroups := slice }}
+    {{ $navGroups = $navGroups | append (dict
+      "group_title" "Getting Started"
+      "items" (slice (dict "title" "Introduction & Overview" "url" $section.RelPermalink "page_title" "Introduction & Overview"))
+    ) }}
+
+    {{ range $badgeData.requirements }}
+      {{ $req := . }}
+      {{ $subreqs := $req.subrequirements | default slice }}
+      {{ if gt (len $subreqs) 0 }}
+        {{ $gTitle := printf "%s. Requirement %s" $req.req_id $req.req_id }}
+        {{ if $req.text }}
+          {{ $shortText := $req.text | truncate 40 }}
+          {{ if not (findRE "^Do the following" $req.text) }}
+            {{ $gTitle = printf "%s. %s" $req.req_id $shortText }}
+          {{ end }}
+        {{ end }}
+        {{ $items := slice }}
+        {{ range $subreqs }}
+          {{ $dotsRemoved := replace .path "." "" }}
+          {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
+          {{ $navTitle := printf "%s %s" .req_id (.text | truncate 40) }}
+          {{ $items = $items | append (dict "title" $navTitle "url" $pageUrl "page_title" (.text | truncate 40)) }}
+        {{ end }}
+        {{ $navGroups = $navGroups | append (dict "group_title" $gTitle "items" $items) }}
+      {{ else }}
+        {{ $dotsRemoved := replace $req.path "." "" }}
+        {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
+        {{ $navTitle := printf "%s. %s" $req.req_id ($req.text | truncate 40) }}
+        {{ $navGroups = $navGroups | append (dict "group_title" "" "items" (slice (dict "title" $navTitle "url" $pageUrl "page_title" ($req.text | truncate 40)))) }}
+      {{ end }}
+    {{ end }}
+
+    {{ $extendedUrl := printf "%sextended-learning/" $section.RelPermalink }}
+    {{ $navGroups = $navGroups | append (dict
+      "group_title" "Beyond the Badge"
+      "items" (slice (dict "title" "Extended Learning" "url" $extendedUrl "page_title" "Extended Learning"))
+    ) }}
+
+    {{ $guideNav = $navGroups }}
+  {{ end }}
+{{ end }}
+
+{{/* Flatten all items across all groups to compute linear prev/next */}}
+{{ $flatItems := slice }}
+{{ range $guideNav }}
+  {{ $gTitle := .group_title }}
+  {{ range .items }}
+    {{ $cleanTitle := .page_title | default (.title | replaceRE `^(Req|Requirement)\s+[0-9A-Za-z]+([–-][0-9A-Za-z]+)?\s*[—–-]\s*` "" | replaceRE `^[0-9a-zA-Z]+(?:\.[a-zA-Z]+)?\.?\s+` "") }}
+    {{ $flatItems = $flatItems | append (dict
+      "url" .url
+      "title" .title
+      "page_title" $cleanTitle
+      "group_title" $gTitle
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{/* Find current page in flatItems */}}
+{{ $currentIdx := -1 }}
+{{ $currentGroupTitle := $page.Params.group_title }}
+{{ range $idx, $item := $flatItems }}
+  {{ if eq $item.url $currentUrl }}
+    {{ $currentIdx = $idx }}
+    {{ if not $currentGroupTitle }}
+      {{ $currentGroupTitle = $item.group_title }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $prevUrl := $page.Params.prev | default "" }}
+{{ $prevTitle := $page.Params.prev_title | default "" }}
+{{ $nextUrl := $page.Params.next | default "" }}
+{{ $nextTitle := $page.Params.next_title | default "" }}
+
+{{ if and (not $prevUrl) (gt $currentIdx 0) }}
+  {{ $prevItem := index $flatItems (sub $currentIdx 1) }}
+  {{ $prevUrl = $prevItem.url }}
+  {{ $prevTitle = $prevItem.page_title }}
+{{ end }}
+
+{{ if and (not $nextUrl) (ge $currentIdx 0) (lt $currentIdx (sub (len $flatItems) 1)) }}
+  {{ $nextItem := index $flatItems (add $currentIdx 1) }}
+  {{ $nextUrl = $nextItem.url }}
+  {{ $nextTitle = $nextItem.page_title }}
+{{ end }}
+
+{{ return (dict
+  "guide_nav" $guideNav
+  "prev" $prevUrl
+  "prev_title" $prevTitle
+  "next" $nextUrl
+  "next_title" $nextTitle
+  "group_title" $currentGroupTitle
+) }}
