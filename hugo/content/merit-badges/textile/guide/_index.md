@@ -11,13 +11,11 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/textile/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Why Textiles Matter"
         url: "/merit-badges/textile/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. From Fiber to Fabric"
         url: "/merit-badges/textile/guide/req2/"
         is_sub: false
@@ -47,18 +45,14 @@ guide_nav:
       - title: "g Identify Fibers"
         url: "/merit-badges/textile/guide/req3g/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "4. Talk Like a Textile Maker"
         url: "/merit-badges/textile/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Compare Fibers and Their Footprint"
         url: "/merit-badges/textile/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Explore Textile Careers"
         url: "/merit-badges/textile/guide/req6/"
         is_sub: false

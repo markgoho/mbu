@@ -11,13 +11,11 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/skating/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Safety & First Aid"
         url: "/merit-badges/skating/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Pick Your Option"
         url: "/merit-badges/skating/guide/req2/"
         is_sub: false

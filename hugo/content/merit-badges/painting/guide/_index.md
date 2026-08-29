@@ -11,38 +11,26 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/painting/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Practical Applications"
     items:
       - title: "1. Work Safe Before You Paint"
         url: "/merit-badges/painting/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Coatings, Paint Types & Sheen"
         url: "/merit-badges/painting/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Plan Two Real Projects"
         url: "/merit-badges/painting/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Choose Harmonizing Colors"
         url: "/merit-badges/painting/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Use and Care for Your Tools"
         url: "/merit-badges/painting/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Ladder Safety and PPE"
         url: "/merit-badges/painting/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Paint, Health, and the Environment"
         url: "/merit-badges/painting/guide/req7/"
         is_sub: false

@@ -21,18 +21,14 @@ guide_nav:
       - title: "c Safety Afloat"
         url: "/merit-badges/canoeing/guide/req1c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "2. Swimmer Test"
         url: "/merit-badges/canoeing/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Canoe Anatomy & Design"
         url: "/merit-badges/canoeing/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Paddle Anatomy & Sizing"
         url: "/merit-badges/canoeing/guide/req4/"
         is_sub: false
@@ -47,13 +43,11 @@ guide_nav:
       - title: "c Safety & Rescue Equipment"
         url: "/merit-badges/canoeing/guide/req5c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "6. Equipment Care"
         url: "/merit-badges/canoeing/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. On the Water Basics"
         url: "/merit-badges/canoeing/guide/req7/"
         is_sub: false
@@ -77,7 +71,7 @@ guide_nav:
       - title: "f Throw Bag Rescue"
         url: "/merit-badges/canoeing/guide/req8f/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Tandem Maneuvers"
     items:
       - title: "9. Tandem Maneuvers"
         url: "/merit-badges/canoeing/guide/req9/"

@@ -18,12 +18,10 @@ guide_nav:
       - title: "b Disability Etiquette"
         url: "/merit-badges/disabilities-awareness/guide/req1b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Practical Applications"
     items:
       - title: "2. Visiting an Agency"
         url: "/merit-badges/disabilities-awareness/guide/req2/"
-  - group_title: ""
-    items:
       - title: "3. Personal Experiences"
         url: "/merit-badges/disabilities-awareness/guide/req3/"
   - group_title: "4. Accessibility Audits"
@@ -36,16 +34,12 @@ guide_nav:
       - title: "4. Req 4 Option B — Invisible Disability Accommodations"
         url: "/merit-badges/disabilities-awareness/guide/req4-option-b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "5. Advocacy"
         url: "/merit-badges/disabilities-awareness/guide/req5/"
-  - group_title: ""
-    items:
       - title: "6. Personal Commitment"
         url: "/merit-badges/disabilities-awareness/guide/req6/"
-  - group_title: ""
-    items:
       - title: "7. Professions"
         url: "/merit-badges/disabilities-awareness/guide/req7/"
   - group_title: "Beyond the Badge"

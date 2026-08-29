@@ -11,18 +11,14 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/pets/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Four Months of Care"
         url: "/merit-badges/pets/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Know Your Pet Well"
         url: "/merit-badges/pets/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Read and Report"
         url: "/merit-badges/pets/guide/req3/"
         is_sub: false

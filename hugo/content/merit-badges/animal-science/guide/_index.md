@@ -10,23 +10,17 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/animal-science/guide/"
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Livestock Breeds"
         url: "/merit-badges/animal-science/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Livestock Diseases"
         url: "/merit-badges/animal-science/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Digestive Systems"
         url: "/merit-badges/animal-science/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Animal Management"
         url: "/merit-badges/animal-science/guide/req4/"
         is_sub: false
@@ -64,7 +58,7 @@ guide_nav:
       - title: "6. Avian Option"
         url: "/merit-badges/animal-science/guide/req6-avian/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Careers in Animal Science"
     items:
       - title: "7. Careers in Animal Science"
         url: "/merit-badges/animal-science/guide/req7/"

@@ -41,7 +41,7 @@ guide_nav:
       - title: "8. Reading Your Electric Bill"
         url: "/merit-badges/electricity/guide/req8/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Essential Electrical Terms"
     items:
       - title: "9. Essential Electrical Terms"
         url: "/merit-badges/electricity/guide/req9/"
@@ -69,7 +69,7 @@ guide_nav:
       - title: "f Series vs. Parallel Circuits"
         url: "/merit-badges/electricity/guide/req10f/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Electricity Careers"
     items:
       - title: "11. Electricity Careers"
         url: "/merit-badges/electricity/guide/req11/"

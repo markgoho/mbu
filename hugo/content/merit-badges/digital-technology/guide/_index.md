@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/digital-technology/guide/"
-  - group_title: ""
+  - group_title: "Digital Safety Awareness"
     items:
       - title: "1. Digital Safety Awareness"
         url: "/merit-badges/digital-technology/guide/req1/"
@@ -64,7 +64,7 @@ guide_nav:
       - title: "c HTTPS & Security Certificates"
         url: "/merit-badges/digital-technology/guide/req5c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Hands-On Digital Projects"
     items:
       - title: "6. Hands-On Digital Projects"
         url: "/merit-badges/digital-technology/guide/req6/"
@@ -79,12 +79,10 @@ guide_nav:
       - title: "c IP Disputes in the News"
         url: "/merit-badges/digital-technology/guide/req7c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "8. Responsible Tech Disposal"
         url: "/merit-badges/digital-technology/guide/req8/"
-  - group_title: ""
-    items:
       - title: "9. Tech Careers & Hobbies"
         url: "/merit-badges/digital-technology/guide/req9/"
   - group_title: "Beyond the Badge"

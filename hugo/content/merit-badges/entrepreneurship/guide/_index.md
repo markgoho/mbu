@@ -39,7 +39,7 @@ guide_nav:
       - title: "e Promotion & Marketing"
         url: "/merit-badges/entrepreneurship/guide/req5e/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Running the Business"
     items:
       - title: "6. Running the Business"
         url: "/merit-badges/entrepreneurship/guide/req6/"

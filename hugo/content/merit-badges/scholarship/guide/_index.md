@@ -39,7 +39,7 @@ guide_nav:
       - title: "d Compare Research Methods"
         url: "/merit-badges/scholarship/guide/req2d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Character, Leadership, and Service"
     items:
       - title: "3. Character, Leadership, and Service"
         url: "/merit-badges/scholarship/guide/req3/"

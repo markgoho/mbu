@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/dentistry/guide/"
-  - group_title: ""
+  - group_title: "Tooth Anatomy from X-Rays"
     items:
       - title: "1. Tooth Anatomy from X-Rays"
         url: "/merit-badges/dentistry/guide/req1/"
@@ -28,24 +28,16 @@ guide_nav:
       - title: "d Tobacco & Oral Health"
         url: "/merit-badges/dentistry/guide/req2d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Projects & Careers"
     items:
       - title: "3. Visiting the Dentist"
         url: "/merit-badges/dentistry/guide/req3/"
-  - group_title: ""
-    items:
       - title: "4. Dental Tools & Hands-On Skills"
         url: "/merit-badges/dentistry/guide/req4/"
-  - group_title: ""
-    items:
       - title: "5. Fluoride & the Mouth-Body Connection"
         url: "/merit-badges/dentistry/guide/req5/"
-  - group_title: ""
-    items:
       - title: "6. Dental Health Outreach"
         url: "/merit-badges/dentistry/guide/req6/"
-  - group_title: ""
-    items:
       - title: "7. Careers in Dentistry"
         url: "/merit-badges/dentistry/guide/req7/"
   - group_title: "Beyond the Badge"

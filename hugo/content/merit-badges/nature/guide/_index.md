@@ -22,7 +22,7 @@ guide_nav:
       - title: "3. Food Chains in Action"
         url: "/merit-badges/nature/guide/req3/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Choose Your Five Field Studies"
     items:
       - title: "4. Choose Your Five Field Studies"
         url: "/merit-badges/nature/guide/req4/"
@@ -76,13 +76,11 @@ guide_nav:
       - title: "h Soils and Rocks"
         url: "/merit-badges/nature/guide/req4h/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "5. Outdoor Ethics in Nature Study"
         url: "/merit-badges/nature/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Reading Ecological Succession"
         url: "/merit-badges/nature/guide/req6/"
         is_sub: false

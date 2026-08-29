@@ -11,18 +11,14 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/exploration/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. What Counts as Exploration"
         url: "/merit-badges/exploration/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. The Story of Human Discovery"
         url: "/merit-badges/exploration/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Why Exploration Matters"
         url: "/merit-badges/exploration/guide/req3/"
         is_sub: false
@@ -51,18 +47,14 @@ guide_nav:
       - title: "b Visit a Research Facility"
         url: "/merit-badges/exploration/guide/req5b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "6. Plan an Expedition That Works"
         url: "/merit-badges/exploration/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Prepare for the Real Thing"
         url: "/merit-badges/exploration/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Carry Out the Expedition"
         url: "/merit-badges/exploration/guide/req8/"
         is_sub: false

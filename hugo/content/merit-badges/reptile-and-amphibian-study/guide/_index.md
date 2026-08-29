@@ -16,12 +16,10 @@ guide_nav:
         url: "/merit-badges/reptile-and-amphibian-study/guide/req1/"
       - title: "2. Species Around You"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req2/"
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "3. Spot the Differences"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req3/"
-  - group_title: ""
-    items:
       - title: "4. Why They Matter"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req4/"
   - group_title: "5. Life Cycles & Movement"
@@ -30,7 +28,7 @@ guide_nav:
         url: "/merit-badges/reptile-and-amphibian-study/guide/req5/"
       - title: "6. How Snakes Move"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req6/"
-  - group_title: ""
+  - group_title: "Venomous Species and Bite Response"
     items:
       - title: "7. Venomous Species and Bite Response"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req7/"
@@ -57,7 +55,7 @@ guide_nav:
       - title: "c Teach a Short Talk"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req9c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Myths, Legends, and True Stories"
     items:
       - title: "10. Myths, Legends, and True Stories"
         url: "/merit-badges/reptile-and-amphibian-study/guide/req10/"

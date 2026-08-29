@@ -11,38 +11,26 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/soil-and-water-conservation/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Practical Applications"
     items:
       - title: "1. Soil Fundamentals"
         url: "/merit-badges/soil-and-water-conservation/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Understanding Soil Erosion"
         url: "/merit-badges/soil-and-water-conservation/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Erosion-Control Practices"
         url: "/merit-badges/soil-and-water-conservation/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Watersheds, Basins & Aquifers"
         url: "/merit-badges/soil-and-water-conservation/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. The Water Cycle & Runoff"
         url: "/merit-badges/soil-and-water-conservation/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Water Pollution & Waste Treatment"
         url: "/merit-badges/soil-and-water-conservation/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Choose Two Conservation Projects"
         url: "/merit-badges/soil-and-water-conservation/guide/req7/"
         is_sub: false

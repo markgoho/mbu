@@ -10,12 +10,10 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/basketry/guide/"
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Safety & First Aid"
         url: "/merit-badges/basketry/guide/req1/"
-  - group_title: ""
-    items:
       - title: "2. Basket Types & Weaves"
         url: "/merit-badges/basketry/guide/req2/"
   - group_title: "3. Weaving Projects"

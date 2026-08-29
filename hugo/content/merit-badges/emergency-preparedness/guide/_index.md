@@ -33,43 +33,29 @@ guide_nav:
       - title: "c Family Disaster Kit"
         url: "/merit-badges/emergency-preparedness/guide/req2c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "3. Preventing Accidents"
         url: "/merit-badges/emergency-preparedness/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Dangerous Situations"
         url: "/merit-badges/emergency-preparedness/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Signaling for Help"
         url: "/merit-badges/emergency-preparedness/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Moving an Injured Person"
         url: "/merit-badges/emergency-preparedness/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. NIMS and ICS"
         url: "/merit-badges/emergency-preparedness/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Emergency Service"
         url: "/merit-badges/emergency-preparedness/guide/req8/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "9. First Aid Merit Badge"
         url: "/merit-badges/emergency-preparedness/guide/req9/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "10. Careers"
         url: "/merit-badges/emergency-preparedness/guide/req10/"
         is_sub: false

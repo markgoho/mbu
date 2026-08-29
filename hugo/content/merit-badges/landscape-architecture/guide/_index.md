@@ -11,28 +11,20 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/landscape-architecture/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "1. Reading a Designed Place"
         url: "/merit-badges/landscape-architecture/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. What Makes a Site Work"
         url: "/merit-badges/landscape-architecture/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Choosing Trees, Shrubs, and Ground Covers"
         url: "/merit-badges/landscape-architecture/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Mapping Water, Access, and Comfort"
         url: "/merit-badges/landscape-architecture/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Exploring Landscape Architecture Careers"
         url: "/merit-badges/landscape-architecture/guide/req5/"
         is_sub: false

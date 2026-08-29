@@ -35,7 +35,7 @@ guide_nav:
       - title: "d Budget Review"
         url: "/merit-badges/personal-management/guide/req2d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Psychology of Money"
     items:
       - title: "3. Psychology of Money"
         url: "/merit-badges/personal-management/guide/req3/"
@@ -45,7 +45,7 @@ guide_nav:
         url: "/merit-badges/personal-management/guide/req4/"
       - title: "5. Types of Investments"
         url: "/merit-badges/personal-management/guide/req5/"
-  - group_title: ""
+  - group_title: "Understanding Insurance"
     items:
       - title: "6. Understanding Insurance"
         url: "/merit-badges/personal-management/guide/req6/"
@@ -66,16 +66,12 @@ guide_nav:
       - title: "e Reducing Debt"
         url: "/merit-badges/personal-management/guide/req7e/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Projects & Careers"
     items:
       - title: "8. Managing Your Time"
         url: "/merit-badges/personal-management/guide/req8/"
-  - group_title: ""
-    items:
       - title: "9. Project Planning"
         url: "/merit-badges/personal-management/guide/req9/"
-  - group_title: ""
-    items:
       - title: "10. Career Planning"
         url: "/merit-badges/personal-management/guide/req10/"
   - group_title: "Beyond the Badge"

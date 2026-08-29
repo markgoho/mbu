@@ -46,7 +46,7 @@ guide_nav:
       - title: "j Sources of Information on Firearms"
         url: "/merit-badges/shotgun-shooting/guide/req1j/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Pick Your Option"
     items:
       - title: "2. Pick Your Option"
         url: "/merit-badges/shotgun-shooting/guide/req2/"
@@ -130,7 +130,7 @@ guide_nav:
       - title: "b Shooting Moving Targets"
         url: "/merit-badges/shotgun-shooting/guide/req2Bm/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Pathways, Training, and Goals"
     items:
       - title: "3. Pathways, Training, and Goals"
         url: "/merit-badges/shotgun-shooting/guide/req3/"

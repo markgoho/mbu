@@ -35,13 +35,11 @@ guide_nav:
       - title: "c Transmissions & Power"
         url: "/merit-badges/farm-mechanics/guide/req2c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "3. Tool Maintenance Skills"
         url: "/merit-badges/farm-mechanics/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Equipment Maintenance Tasks"
         url: "/merit-badges/farm-mechanics/guide/req4/"
         is_sub: false
@@ -53,7 +51,7 @@ guide_nav:
       - title: "6. Maintenance Procedures"
         url: "/merit-badges/farm-mechanics/guide/req6/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Careers in Farm Mechanics"
     items:
       - title: "7. Careers in Farm Mechanics"
         url: "/merit-badges/farm-mechanics/guide/req7/"

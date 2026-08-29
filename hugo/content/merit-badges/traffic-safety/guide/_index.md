@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/traffic-safety/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Preventing Impaired Driving"
         url: "/merit-badges/traffic-safety/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Vehicle Safety Basics"
         url: "/merit-badges/traffic-safety/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Maintenance and Emergency Stops"
         url: "/merit-badges/traffic-safety/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Traffic Safety and the Law"
         url: "/merit-badges/traffic-safety/guide/req4/"
         is_sub: false
@@ -42,7 +36,7 @@ guide_nav:
       - title: "b Reading Signs, Signals, and Markings"
         url: "/merit-badges/traffic-safety/guide/req5b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Sharing the Road Safely"
     items:
       - title: "6. Sharing the Road Safely"
         url: "/merit-badges/traffic-safety/guide/req6/"
@@ -61,7 +55,7 @@ guide_nav:
       - title: "c Organize a Safety Event"
         url: "/merit-badges/traffic-safety/guide/req7c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Careers in Traffic Safety"
     items:
       - title: "8. Careers in Traffic Safety"
         url: "/merit-badges/traffic-safety/guide/req8/"

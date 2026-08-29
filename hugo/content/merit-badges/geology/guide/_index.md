@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/geology/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. What Geology Explains"
         url: "/merit-badges/geology/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Resources From the Ground"
         url: "/merit-badges/geology/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Geologic Maps"
         url: "/merit-badges/geology/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Pick Your Option"
         url: "/merit-badges/geology/guide/req4/"
         is_sub: false
@@ -147,7 +141,7 @@ guide_nav:
       - title: "d State Fossil Presentation"
         url: "/merit-badges/geology/guide/req4d6d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Leave No Trace and the Outdoor Code"
     items:
       - title: "5. Leave No Trace and the Outdoor Code"
         url: "/merit-badges/geology/guide/req5/"

@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/environmental-science/guide/"
-  - group_title: ""
+  - group_title: "Defining Environmental Science"
     items:
       - title: "1. Defining Environmental Science"
         url: "/merit-badges/environmental-science/guide/req1/"
@@ -23,48 +23,32 @@ guide_nav:
       - title: "b Ecosystem Components"
         url: "/merit-badges/environmental-science/guide/req2b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "3. Air Pollution"
         url: "/merit-badges/environmental-science/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Water Pollution"
         url: "/merit-badges/environmental-science/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Land Pollution"
         url: "/merit-badges/environmental-science/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Rare, Threatened, or Endangered Species"
         url: "/merit-badges/environmental-science/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Pollution Prevention & Conservation"
         url: "/merit-badges/environmental-science/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Pollination"
         url: "/merit-badges/environmental-science/guide/req8/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "9. Invasive Species"
         url: "/merit-badges/environmental-science/guide/req9/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "10. Environmental Impact Assessment"
         url: "/merit-badges/environmental-science/guide/req10/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "11. Career Exploration"
         url: "/merit-badges/environmental-science/guide/req11/"
         is_sub: false

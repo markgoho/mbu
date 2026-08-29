@@ -83,13 +83,11 @@ guide_nav:
       - title: "i Weight Training"
         url: "/merit-badges/athletics/guide/req5-weight-training/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "6. Planning a Sports Meet"
         url: "/merit-badges/athletics/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Careers & Lifestyle"
         url: "/merit-badges/athletics/guide/req7/"
         is_sub: false

@@ -18,38 +18,26 @@ guide_nav:
       - title: "b Title Block Lettering"
         url: "/merit-badges/drafting/guide/req1b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Projects & Careers"
     items:
       - title: "2. Choose Your Drawing Type"
         url: "/merit-badges/drafting/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. CAD Design"
         url: "/merit-badges/drafting/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Review & Revision Process"
         url: "/merit-badges/drafting/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Manual vs. CAD Discussion"
         url: "/merit-badges/drafting/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Lettering Your Opinion"
         url: "/merit-badges/drafting/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Workplace Visit or Research"
         url: "/merit-badges/drafting/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Drafting Career Exploration"
         url: "/merit-badges/drafting/guide/req8/"
         is_sub: false

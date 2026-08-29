@@ -11,53 +11,35 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/truck-transportation/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "1. Truck Lines in Your Town"
         url: "/merit-badges/truck-transportation/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. How Freight Moves"
         url: "/merit-badges/truck-transportation/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Gasoline vs. Diesel"
         url: "/merit-badges/truck-transportation/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Inside a Truck Terminal"
         url: "/merit-badges/truck-transportation/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Company Departments and Jobs"
         url: "/merit-badges/truck-transportation/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Government Agencies and Their Roles"
         url: "/merit-badges/truck-transportation/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Trucks and the Work They Do"
         url: "/merit-badges/truck-transportation/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Shipping 500 Pounds by Truck"
         url: "/merit-badges/truck-transportation/guide/req8/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "9. Freight Terms You Should Know"
         url: "/merit-badges/truck-transportation/guide/req9/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "10. Exploring Trucking Careers"
         url: "/merit-badges/truck-transportation/guide/req10/"
         is_sub: false

@@ -10,12 +10,10 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/crime-prevention/guide/"
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Laws and Society"
         url: "/merit-badges/crime-prevention/guide/req1/"
-  - group_title: ""
-    items:
       - title: "2. Groups Working to Prevent Crime"
         url: "/merit-badges/crime-prevention/guide/req2/"
   - group_title: "3. Crime in Your Community"
@@ -40,24 +38,16 @@ guide_nav:
       - title: "c Teaching Crime Prevention"
         url: "/merit-badges/crime-prevention/guide/req4c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "5. Retail Crime Prevention"
         url: "/merit-badges/crime-prevention/guide/req5/"
-  - group_title: ""
-    items:
       - title: "6. Reporting Crime"
         url: "/merit-badges/crime-prevention/guide/req6/"
-  - group_title: ""
-    items:
       - title: "7. Peers and Crime"
         url: "/merit-badges/crime-prevention/guide/req7/"
-  - group_title: ""
-    items:
       - title: "8. Substance Use and Crime"
         url: "/merit-badges/crime-prevention/guide/req8/"
-  - group_title: ""
-    items:
       - title: "9. Online Crime and You"
         url: "/merit-badges/crime-prevention/guide/req9/"
   - group_title: "10. Career Exploration"

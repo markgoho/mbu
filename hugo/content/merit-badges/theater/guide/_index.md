@@ -10,13 +10,11 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/theater/guide/"
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Watching & Reviewing Plays"
         url: "/merit-badges/theater/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Writing a One-Act Play"
         url: "/merit-badges/theater/guide/req2/"
         is_sub: false
@@ -55,13 +53,11 @@ guide_nav:
       - title: "j Musical Direction"
         url: "/merit-badges/theater/guide/req3j/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "4. Mime & Pantomime"
         url: "/merit-badges/theater/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Theater Terminology"
         url: "/merit-badges/theater/guide/req5/"
         is_sub: false

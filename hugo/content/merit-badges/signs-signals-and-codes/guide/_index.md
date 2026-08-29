@@ -11,18 +11,14 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/signs-signals-and-codes/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Why Humans Need Shared Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Distress Signals That Get You Found"
         url: "/merit-badges/signs-signals-and-codes/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Morse Code and ASL in Action"
         url: "/merit-badges/signs-signals-and-codes/guide/req3/"
         is_sub: false
@@ -37,18 +33,14 @@ guide_nav:
       - title: "c Practice With Flags"
         url: "/merit-badges/signs-signals-and-codes/guide/req4c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "5. Reading and Writing Braille"
         url: "/merit-badges/signs-signals-and-codes/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Sound Signals and Silent Scout Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Trail Markers With Outdoor Ethics"
         url: "/merit-badges/signs-signals-and-codes/guide/req7/"
         is_sub: false
@@ -72,13 +64,11 @@ guide_nav:
       - title: "e Your Custom Signal Set"
         url: "/merit-badges/signs-signals-and-codes/guide/req8e/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "9. Symbols in Daily Life"
         url: "/merit-badges/signs-signals-and-codes/guide/req9/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "10. Secret Codes and Cryptography"
         url: "/merit-badges/signs-signals-and-codes/guide/req10/"
         is_sub: false

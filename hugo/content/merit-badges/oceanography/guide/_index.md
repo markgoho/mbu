@@ -11,33 +11,23 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/oceanography/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Branches of Oceanography"
         url: "/merit-badges/oceanography/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Seawater, Currents & Climate"
         url: "/merit-badges/oceanography/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Waves, Breakers & Rip Currents"
         url: "/merit-badges/oceanography/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. The Shape of the Seafloor"
         url: "/merit-badges/oceanography/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Seawater Chemistry"
         url: "/merit-badges/oceanography/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Life in Seawater"
         url: "/merit-badges/oceanography/guide/req6/"
         is_sub: false
@@ -84,7 +74,7 @@ guide_nav:
       - title: "c Give an Oceanography Speech"
         url: "/merit-badges/oceanography/guide/req8c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Tools of Ocean Science"
     items:
       - title: "9. Tools of Ocean Science"
         url: "/merit-badges/oceanography/guide/req9/"

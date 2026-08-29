@@ -11,13 +11,11 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/sculpture/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Practical Applications"
     items:
       - title: "1. Studio Safety"
         url: "/merit-badges/sculpture/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Choose Your Projects"
         url: "/merit-badges/sculpture/guide/req2/"
         is_sub: false
@@ -36,7 +34,7 @@ guide_nav:
       - title: "c Art in Public and Community Life"
         url: "/merit-badges/sculpture/guide/req2c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career or Hobby"
     items:
       - title: "3. Career or Hobby"
         url: "/merit-badges/sculpture/guide/req3/"

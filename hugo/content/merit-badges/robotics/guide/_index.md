@@ -11,18 +11,14 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/robotics/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Workshop Safety"
         url: "/merit-badges/robotics/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Robots in Action"
         url: "/merit-badges/robotics/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Core Robotics Systems"
         url: "/merit-badges/robotics/guide/req3/"
         is_sub: false
@@ -52,7 +48,7 @@ guide_nav:
       - title: "e Test, Record, Improve"
         url: "/merit-badges/robotics/guide/req4e/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Show and Explain Your Robot"
     items:
       - title: "5. Show and Explain Your Robot"
         url: "/merit-badges/robotics/guide/req5/"

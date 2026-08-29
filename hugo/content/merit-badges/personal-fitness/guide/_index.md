@@ -58,28 +58,20 @@ guide_nav:
       - title: "g Social & Family Time"
         url: "/merit-badges/personal-fitness/guide/req3g/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "4. Fitness Assessments"
         url: "/merit-badges/personal-fitness/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Baseline Testing"
         url: "/merit-badges/personal-fitness/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. The 12-Week Program"
         url: "/merit-badges/personal-fitness/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Execute & Track"
         url: "/merit-badges/personal-fitness/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Future Career or Lifestyle"
         url: "/merit-badges/personal-fitness/guide/req8/"
         is_sub: false

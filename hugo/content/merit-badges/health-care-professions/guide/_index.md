@@ -11,48 +11,32 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/health-care-professions/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Practical Applications"
     items:
       - title: "1. Diagnosing, Hearing, and Whole-Person Care"
         url: "/merit-badges/health-care-professions/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Bedside Care and Fast Decisions"
         url: "/merit-badges/health-care-professions/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Recovery, Communication, and Movement"
         url: "/merit-badges/health-care-professions/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Testing, Imaging, and Behind-the-Scenes Care"
         url: "/merit-badges/health-care-professions/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Making the Most of a Workplace Visit"
         url: "/merit-badges/health-care-professions/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. The Physician"
         url: "/merit-badges/health-care-professions/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Confidentiality and HIPAA"
         url: "/merit-badges/health-care-professions/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Recent Medical Breakthroughs"
         url: "/merit-badges/health-care-professions/guide/req8/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "9. Volunteer in Health Care"
         url: "/merit-badges/health-care-professions/guide/req9/"
         is_sub: false

@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/photography/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Shoot Safely"
     items:
       - title: "1. Shoot Safely"
         url: "/merit-badges/photography/guide/req1/"
@@ -78,13 +78,11 @@ guide_nav:
       - title: "c Improve Impact Another Way"
         url: "/merit-badges/photography/guide/req6c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "7. Tell a Visual Story"
         url: "/merit-badges/photography/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Explore Photography Careers"
         url: "/merit-badges/photography/guide/req8/"
         is_sub: false

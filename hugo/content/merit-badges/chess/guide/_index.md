@@ -18,7 +18,7 @@ guide_nav:
       - title: "b Famous Chess Players"
         url: "/merit-badges/chess/guide/req1b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Strategy, Benefits & Etiquette"
     items:
       - title: "2. Strategy, Benefits & Etiquette"
         url: "/merit-badges/chess/guide/req2/"

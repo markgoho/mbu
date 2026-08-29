@@ -11,43 +11,29 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/pioneering/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Safe Pioneering Basics"
         url: "/merit-badges/pioneering/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Core Rope Skills"
         url: "/merit-badges/pioneering/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Practical Camp Builds"
         url: "/merit-badges/pioneering/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Rope for Real Loads"
         url: "/merit-badges/pioneering/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Splices That Solve Problems"
         url: "/merit-badges/pioneering/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Twist, Lay, and Whip"
         url: "/merit-badges/pioneering/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Keep the Structure Put"
         url: "/merit-badges/pioneering/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Build a Strong Frame"
         url: "/merit-badges/pioneering/guide/req8/"
         is_sub: false

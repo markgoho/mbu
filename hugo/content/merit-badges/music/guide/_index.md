@@ -11,13 +11,11 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/music/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Perform with Expression"
         url: "/merit-badges/music/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Instrument Families and Sound"
         url: "/merit-badges/music/guide/req2/"
         is_sub: false
@@ -52,7 +50,7 @@ guide_nav:
       - title: "c Make and Play a Traditional Instrument"
         url: "/merit-badges/music/guide/req4c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Intellectual Property and Sharing Music"
     items:
       - title: "5. Intellectual Property and Sharing Music"
         url: "/merit-badges/music/guide/req5/"

@@ -11,33 +11,23 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/pulp-and-paper/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Paper Through History"
         url: "/merit-badges/pulp-and-paper/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Forests, Fiber, and Stewardship"
         url: "/merit-badges/pulp-and-paper/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Fibers, Pulp, and Bleaching"
         url: "/merit-badges/pulp-and-paper/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. From Pulp to Paper"
         url: "/merit-badges/pulp-and-paper/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Coatings and Specialty Papers"
         url: "/merit-badges/pulp-and-paper/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Paper Products Around You"
         url: "/merit-badges/pulp-and-paper/guide/req6/"
         is_sub: false
@@ -61,7 +51,7 @@ guide_nav:
       - title: "e Research and Development"
         url: "/merit-badges/pulp-and-paper/guide/req7e/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Careers in Paper and Packaging"
     items:
       - title: "8. Careers in Paper and Packaging"
         url: "/merit-badges/pulp-and-paper/guide/req8/"

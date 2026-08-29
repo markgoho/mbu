@@ -11,28 +11,20 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/mining-in-society/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Minerals in Everyday Life"
         url: "/merit-badges/mining-in-society/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Mapping Mines and Resources"
         url: "/merit-badges/mining-in-society/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Mine Safety and Protective Gear"
         url: "/merit-badges/mining-in-society/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Why Abandoned Mines Are Dangerous"
         url: "/merit-badges/mining-in-society/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Choose Your Mining Experience"
         url: "/merit-badges/mining-in-society/guide/req5/"
         is_sub: false
@@ -66,13 +58,11 @@ guide_nav:
       - title: "f Your Community"
         url: "/merit-badges/mining-in-society/guide/req5f/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "6. Mining, Reclamation, and Sustainability"
         url: "/merit-badges/mining-in-society/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Choose a Future-Focused Topic"
         url: "/merit-badges/mining-in-society/guide/req7/"
         is_sub: false
@@ -96,7 +86,7 @@ guide_nav:
       - title: "d Commodity Prices and Trends"
         url: "/merit-badges/mining-in-society/guide/req7d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Careers in Mining and Minerals"
     items:
       - title: "8. Careers in Mining and Minerals"
         url: "/merit-badges/mining-in-society/guide/req8/"

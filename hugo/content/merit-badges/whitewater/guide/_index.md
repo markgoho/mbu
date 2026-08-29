@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/whitewater/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety Before the Splash"
     items:
       - title: "1. Safety Before the Splash"
         url: "/merit-badges/whitewater/guide/req1/"

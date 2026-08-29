@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/salesmanship/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. What Great Salespeople Actually Do"
         url: "/merit-badges/salesmanship/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Research, Product Knowledge, and Follow-Up"
         url: "/merit-badges/salesmanship/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Build a Sales Plan"
         url: "/merit-badges/salesmanship/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Give a Sales Presentation"
         url: "/merit-badges/salesmanship/guide/req4/"
         is_sub: false
@@ -56,7 +50,7 @@ guide_nav:
       - title: "b Interview a Store Owner"
         url: "/merit-badges/salesmanship/guide/req6b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Explore Sales Careers"
     items:
       - title: "7. Explore Sales Careers"
         url: "/merit-badges/salesmanship/guide/req7/"

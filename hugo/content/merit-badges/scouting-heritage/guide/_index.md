@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/scouting-heritage/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Baden-Powell & the Birth of Scouting"
     items:
       - title: "1. Baden-Powell & the Birth of Scouting"
         url: "/merit-badges/scouting-heritage/guide/req1/"
@@ -65,7 +65,7 @@ guide_nav:
       - title: "b Scout Life Magazine"
         url: "/merit-badges/scouting-heritage/guide/req2b4/"
         is_sub: true
-  - group_title: ""
+  - group_title: "How Scouting Grew for Every Age"
     items:
       - title: "3. How Scouting Grew for Every Age"
         url: "/merit-badges/scouting-heritage/guide/req3/"

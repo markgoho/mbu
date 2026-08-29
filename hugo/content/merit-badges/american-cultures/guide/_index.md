@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-cultures/guide/"
-  - group_title: ""
+  - group_title: "Cultural Experiences"
     items:
       - title: "1. Cultural Experiences"
         url: "/merit-badges/american-cultures/guide/req1/"

@@ -18,23 +18,17 @@ guide_nav:
       - title: "b Historical Achievement"
         url: "/merit-badges/architecture/guide/req1b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "2. Sustainable Architecture"
         url: "/merit-badges/architecture/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Meet an Architect"
         url: "/merit-badges/architecture/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Floor Plan Drawing"
         url: "/merit-badges/architecture/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Career Exploration"
         url: "/merit-badges/architecture/guide/req5/"
         is_sub: false

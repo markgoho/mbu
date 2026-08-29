@@ -11,18 +11,14 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/snow-sports/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Hazards & First Aid Topics"
         url: "/merit-badges/snow-sports/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Rendering & Reporting Aid"
         url: "/merit-badges/snow-sports/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Trail Marking System"
         url: "/merit-badges/snow-sports/guide/req3/"
         is_sub: false
@@ -34,13 +30,11 @@ guide_nav:
       - title: "5. Clothing & Equipment"
         url: "/merit-badges/snow-sports/guide/req5/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "6. Responsibility, SMART Style & Avalanche"
         url: "/merit-badges/snow-sports/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Pick Your Snow Sport"
         url: "/merit-badges/snow-sports/guide/req7/"
         is_sub: false

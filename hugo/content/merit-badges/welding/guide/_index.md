@@ -11,38 +11,26 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/welding/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "1. Welding Hazards and First Aid"
         url: "/merit-badges/welding/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Safety Gear, SDS, and Equipment Care"
         url: "/merit-badges/welding/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Welding Terms and Process Basics"
         url: "/merit-badges/welding/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Mechanical and Thermal Cutting"
         url: "/merit-badges/welding/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Process Selection and Setup"
         url: "/merit-badges/welding/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Beads and Basic Joints"
         url: "/merit-badges/welding/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Careers and the American Welding Society"
         url: "/merit-badges/welding/guide/req7/"
         is_sub: false

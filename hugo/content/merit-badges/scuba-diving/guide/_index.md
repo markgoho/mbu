@@ -11,33 +11,23 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/scuba-diving/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "1. Dive Safety Starts Here"
         url: "/merit-badges/scuba-diving/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Swimming Before Scuba"
         url: "/merit-badges/scuba-diving/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. The Scuba Diver"
         url: "/merit-badges/scuba-diving/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Earning Open Water Certification"
         url: "/merit-badges/scuba-diving/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Aquatic Ecosystems"
         url: "/merit-badges/scuba-diving/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Careers Below the Surface"
         url: "/merit-badges/scuba-diving/guide/req6/"
         is_sub: false

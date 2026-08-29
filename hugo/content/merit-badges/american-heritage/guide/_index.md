@@ -10,13 +10,11 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-heritage/guide/"
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. The Declaration of Independence"
         url: "/merit-badges/american-heritage/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. American Leaders & Change-Makers"
         url: "/merit-badges/american-heritage/guide/req2/"
         is_sub: false
@@ -31,18 +29,14 @@ guide_nav:
       - title: "c Your Family"
         url: "/merit-badges/american-heritage/guide/req3c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "4. Local History & Landmarks"
         url: "/merit-badges/american-heritage/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Heritage Through Media"
         url: "/merit-badges/american-heritage/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Heritage Careers"
         url: "/merit-badges/american-heritage/guide/req6/"
         is_sub: false

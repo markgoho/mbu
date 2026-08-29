@@ -10,12 +10,10 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/orienteering/guide/"
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Safety and First Aid"
         url: "/merit-badges/orienteering/guide/req1/"
-  - group_title: ""
-    items:
       - title: "2. What Is Orienteering?"
         url: "/merit-badges/orienteering/guide/req2/"
   - group_title: "3. Compass Skills"
@@ -43,7 +41,7 @@ guide_nav:
       - title: "e Distances and Orienting a Map"
         url: "/merit-badges/orienteering/guide/req4ef/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Pace Counting"
     items:
       - title: "5. Pace Counting"
         url: "/merit-badges/orienteering/guide/req5/"
@@ -66,7 +64,7 @@ guide_nav:
       - title: "b Event Reports"
         url: "/merit-badges/orienteering/guide/req7b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Setting Up a Course"
     items:
       - title: "8. Setting Up a Course"
         url: "/merit-badges/orienteering/guide/req8/"

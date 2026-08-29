@@ -124,7 +124,7 @@ guide_nav:
       - title: "f Load Sharing & Food Storage"
         url: "/merit-badges/cooking/guide/req6f/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Careers & Hobbies"
     items:
       - title: "7. Careers & Hobbies"
         url: "/merit-badges/cooking/guide/req7/"

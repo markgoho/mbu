@@ -18,23 +18,17 @@ guide_nav:
       - title: "b First Aid for Cyclists"
         url: "/merit-badges/cycling/guide/req1b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "2. Bicycle Laws"
         url: "/merit-badges/cycling/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Clothing, Gear & Helmets"
         url: "/merit-badges/cycling/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Inspect, Adjust & Repair"
         url: "/merit-badges/cycling/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Basic Bike Handling"
         url: "/merit-badges/cycling/guide/req5/"
         is_sub: false

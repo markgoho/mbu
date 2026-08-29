@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/bird-study/guide/"
-  - group_title: ""
+  - group_title: "Birds & the Environment"
     items:
       - title: "1. Birds & the Environment"
         url: "/merit-badges/bird-study/guide/req1/"
@@ -36,28 +36,18 @@ guide_nav:
       - title: "d Choosing Your Optics"
         url: "/merit-badges/bird-study/guide/req3d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "4. Using a Field Guide"
         url: "/merit-badges/bird-study/guide/req4/"
-  - group_title: ""
-    items:
       - title: "5. Field Notebook"
         url: "/merit-badges/bird-study/guide/req5/"
-  - group_title: ""
-    items:
       - title: "6. Habitat Adaptations"
         url: "/merit-badges/bird-study/guide/req6/"
-  - group_title: ""
-    items:
       - title: "7. Songs & Calls"
         url: "/merit-badges/bird-study/guide/req7/"
-  - group_title: ""
-    items:
       - title: "8. Choose Your Adventure"
         url: "/merit-badges/bird-study/guide/req8/"
-  - group_title: ""
-    items:
       - title: "9. Build for Birds"
         url: "/merit-badges/bird-study/guide/req9/"
   - group_title: "10. Conservation"
@@ -71,16 +61,12 @@ guide_nav:
       - title: "c Protecting Birds in Decline"
         url: "/merit-badges/bird-study/guide/req10c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "11. Non-Native Birds"
         url: "/merit-badges/bird-study/guide/req11/"
-  - group_title: ""
-    items:
       - title: "12. Leave No Trace"
         url: "/merit-badges/bird-study/guide/req12/"
-  - group_title: ""
-    items:
       - title: "13. Careers or Hobbies"
         url: "/merit-badges/bird-study/guide/req13/"
   - group_title: "Beyond the Badge"

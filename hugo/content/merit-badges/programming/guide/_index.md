@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/programming/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Digital Safety and Coding Health"
         url: "/merit-badges/programming/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. From Punch Cards to Python"
         url: "/merit-badges/programming/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Languages and Everyday Code"
         url: "/merit-badges/programming/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Intellectual Property and Software Use"
         url: "/merit-badges/programming/guide/req4/"
         is_sub: false

@@ -11,13 +11,11 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/inventing/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. What Inventing Does"
         url: "/merit-badges/inventing/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Choose Your Research Path"
         url: "/merit-badges/inventing/guide/req2/"
         is_sub: false
@@ -31,33 +29,23 @@ guide_nav:
       - title: "b Study Inventors"
         url: "/merit-badges/inventing/guide/req2b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "3. Intellectual Property & Patents"
         url: "/merit-badges/inventing/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Inventions That Should Be Shared"
         url: "/merit-badges/inventing/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Rethink a Camping Product"
         url: "/merit-badges/inventing/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Plan Your Invention"
         url: "/merit-badges/inventing/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Prototype, Test, Improve"
         url: "/merit-badges/inventing/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Choose an Inventing Experience"
         url: "/merit-badges/inventing/guide/req8/"
         is_sub: false
@@ -71,7 +59,7 @@ guide_nav:
       - title: "b Visit an Inventing Exhibit"
         url: "/merit-badges/inventing/guide/req8b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Skills and Careers of Inventors"
     items:
       - title: "9. Skills and Careers of Inventors"
         url: "/merit-badges/inventing/guide/req9/"

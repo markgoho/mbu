@@ -11,18 +11,14 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/wildland-fire-management/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. The History of Wildland Fire"
         url: "/merit-badges/wildland-fire-management/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. The Harms of Wildfire"
         url: "/merit-badges/wildland-fire-management/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Prescribed Fire"
         url: "/merit-badges/wildland-fire-management/guide/req3/"
         is_sub: false
@@ -34,7 +30,7 @@ guide_nav:
       - title: "b Wildfire Mitigation"
         url: "/merit-badges/wildland-fire-management/guide/req4b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Fire Behavior"
     items:
       - title: "5. Fire Behavior"
         url: "/merit-badges/wildland-fire-management/guide/req5/"
@@ -55,7 +51,7 @@ guide_nav:
       - title: "b The Incident Command System"
         url: "/merit-badges/wildland-fire-management/guide/req7b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Suppression Tools & Equipment"
     items:
       - title: "8. Suppression Tools & Equipment"
         url: "/merit-badges/wildland-fire-management/guide/req8/"
@@ -80,13 +76,11 @@ guide_nav:
       - title: "e Talk Fire Weather"
         url: "/merit-badges/wildland-fire-management/guide/req9e/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "10. Lessons From a Catastrophic Fire"
         url: "/merit-badges/wildland-fire-management/guide/req10/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "11. Careers in Wildland Fire"
         url: "/merit-badges/wildland-fire-management/guide/req11/"
         is_sub: false

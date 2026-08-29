@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/home-repairs/guide/"
-  - group_title: ""
+  - group_title: "Safety Basics"
     items:
       - title: "1. Safety Basics"
         url: "/merit-badges/home-repairs/guide/req1/"

@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/bugling/guide/"
-  - group_title: ""
+  - group_title: "History of the Bugle"
     items:
       - title: "1. History of the Bugle"
         url: "/merit-badges/bugling/guide/req1/"
@@ -31,13 +31,11 @@ guide_nav:
       - title: "4. When Calls Are Used"
         url: "/merit-badges/bugling/guide/req4/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "5. Caring for Your Bugle"
         url: "/merit-badges/bugling/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Three Months of Service"
         url: "/merit-badges/bugling/guide/req6/"
         is_sub: false

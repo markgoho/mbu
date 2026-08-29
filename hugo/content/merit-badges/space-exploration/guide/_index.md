@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/space-exploration/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Why We Go"
         url: "/merit-badges/space-exploration/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Collector Card Mission"
         url: "/merit-badges/space-exploration/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Build, Launch, Recover"
         url: "/merit-badges/space-exploration/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Rockets, Orbits, and Images"
         url: "/merit-badges/space-exploration/guide/req4/"
         is_sub: false
@@ -56,13 +50,11 @@ guide_nav:
       - title: "b International Space Station"
         url: "/merit-badges/space-exploration/guide/req6b/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "7. Design a Space Base"
         url: "/merit-badges/space-exploration/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Your Future in Space"
         url: "/merit-badges/space-exploration/guide/req8/"
         is_sub: false

@@ -55,7 +55,7 @@ guide_nav:
       - title: "d Brick-and-Mortar vs. Online"
         url: "/merit-badges/american-business/guide/req3d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Labor Laws & Protections"
     items:
       - title: "4. Labor Laws & Protections"
         url: "/merit-badges/american-business/guide/req4/"

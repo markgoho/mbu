@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/insect-study/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. Ants, Bees, and Field Safety"
         url: "/merit-badges/insect-study/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Insect Anatomy and Orders"
         url: "/merit-badges/insect-study/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Life Cycles and Rearing"
         url: "/merit-badges/insect-study/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Observe, Record, and Interpret"
         url: "/merit-badges/insect-study/guide/req4/"
         is_sub: false
@@ -47,23 +41,17 @@ guide_nav:
       - title: "b Reading a Bee Hive"
         url: "/merit-badges/insect-study/guide/req5b2/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Exploration"
     items:
       - title: "6. Insects in Ecosystems"
         url: "/merit-badges/insect-study/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Bees, Crops, and Pest Control"
         url: "/merit-badges/insect-study/guide/req7/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "8. Migration and Conservation"
         url: "/merit-badges/insect-study/guide/req8/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "9. Careers or Hobbies"
         url: "/merit-badges/insect-study/guide/req9/"
         is_sub: false

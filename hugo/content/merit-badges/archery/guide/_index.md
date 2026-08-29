@@ -35,7 +35,7 @@ guide_nav:
       - title: "3. Accessories & Terminology"
         url: "/merit-badges/archery/guide/req3/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Formats & Scoring"
     items:
       - title: "4. Formats & Scoring"
         url: "/merit-badges/archery/guide/req4/"

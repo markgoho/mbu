@@ -11,28 +11,20 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/competitive-gaming/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Safety & Preparation"
     items:
       - title: "1. The History of Video Gaming and Esports"
         url: "/merit-badges/competitive-gaming/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Living the Scout Oath and Law Online"
         url: "/merit-badges/competitive-gaming/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Gamer Health and Balance"
         url: "/merit-badges/competitive-gaming/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Gamer Safety and Community Connection"
         url: "/merit-badges/competitive-gaming/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Technology in Competitive Gaming"
         url: "/merit-badges/competitive-gaming/guide/req5/"
         is_sub: false
@@ -50,7 +42,7 @@ guide_nav:
       - title: "c Attend an Esports Event"
         url: "/merit-badges/competitive-gaming/guide/req6c/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Exploring Professions in the Competitive Gaming Industry"
     items:
       - title: "7. Exploring Professions in the Competitive Gaming Industry"
         url: "/merit-badges/competitive-gaming/guide/req7/"

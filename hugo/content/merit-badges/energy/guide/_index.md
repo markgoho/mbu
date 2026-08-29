@@ -11,38 +11,26 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/energy/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Reading Energy Stories"
         url: "/merit-badges/energy/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Forms & Conversions"
         url: "/merit-badges/energy/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Following Energy Through a System"
         url: "/merit-badges/energy/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Home Energy Audit"
         url: "/merit-badges/energy/guide/req4/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "5. Community Energy Waste"
         url: "/merit-badges/energy/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Energy by the Numbers"
         url: "/merit-badges/energy/guide/req6/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "7. Choose Five Energy Systems"
         url: "/merit-badges/energy/guide/req7/"
         is_sub: false
@@ -91,7 +79,7 @@ guide_nav:
       - title: "i Wind Turbines"
         url: "/merit-badges/energy/guide/req7i/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Energy Careers"
     items:
       - title: "8. Energy Careers"
         url: "/merit-badges/energy/guide/req8/"

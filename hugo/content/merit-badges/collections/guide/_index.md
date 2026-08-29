@@ -10,12 +10,10 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/collections/guide/"
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Writing Your Collection Report"
         url: "/merit-badges/collections/guide/req1/"
-  - group_title: ""
-    items:
       - title: "2. Growth & Development"
         url: "/merit-badges/collections/guide/req2/"
   - group_title: "3. Preserving & Displaying"
@@ -32,7 +30,7 @@ guide_nav:
       - title: "d Cataloging Your Collection"
         url: "/merit-badges/collections/guide/req3d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Investing, Buying & Selling"
     items:
       - title: "4. Investing, Buying & Selling"
         url: "/merit-badges/collections/guide/req4/"

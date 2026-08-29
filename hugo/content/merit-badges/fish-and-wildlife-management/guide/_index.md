@@ -65,7 +65,7 @@ guide_nav:
       - title: "d Freshwater Aquarium"
         url: "/merit-badges/fish-and-wildlife-management/guide/req7d/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Career Opportunities"
     items:
       - title: "8. Career Opportunities"
         url: "/merit-badges/fish-and-wildlife-management/guide/req8/"

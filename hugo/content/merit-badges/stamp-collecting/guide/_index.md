@@ -11,23 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/stamp-collecting/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. Why Stamps Matter"
         url: "/merit-badges/stamp-collecting/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Types of Collections"
         url: "/merit-badges/stamp-collecting/guide/req2/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "3. Stamp Terms in Action"
         url: "/merit-badges/stamp-collecting/guide/req3/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "4. Catalogs and Condition"
         url: "/merit-badges/stamp-collecting/guide/req4/"
         is_sub: false
@@ -57,7 +51,7 @@ guide_nav:
       - title: "g Finding Watermarks"
         url: "/merit-badges/stamp-collecting/guide/req5g/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Mounting and Protecting a Collection"
     items:
       - title: "6. Mounting and Protecting a Collection"
         url: "/merit-badges/stamp-collecting/guide/req6/"

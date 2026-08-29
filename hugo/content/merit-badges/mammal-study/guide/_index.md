@@ -11,13 +11,11 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/mammal-study/guide/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Additional Requirements"
     items:
       - title: "1. What Makes a Mammal?"
         url: "/merit-badges/mammal-study/guide/req1/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "2. Classifying Mammals"
         url: "/merit-badges/mammal-study/guide/req2/"
         is_sub: false
@@ -61,13 +59,11 @@ guide_nav:
       - title: "g Food Chains to a Carnivore"
         url: "/merit-badges/mammal-study/guide/req4g/"
         is_sub: true
-  - group_title: ""
+  - group_title: "Practical Applications"
     items:
       - title: "5. Project for Mammal Numbers"
         url: "/merit-badges/mammal-study/guide/req5/"
         is_sub: false
-  - group_title: ""
-    items:
       - title: "6. Outdoor Ethics in Mammal Study"
         url: "/merit-badges/mammal-study/guide/req6/"
         is_sub: false

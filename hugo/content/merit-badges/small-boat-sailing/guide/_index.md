@@ -30,7 +30,7 @@ guide_nav:
       - title: "5. Read the Wind"
         url: "/merit-badges/small-boat-sailing/guide/req5/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Sailing Skills Underway"
     items:
       - title: "6. Sailing Skills Underway"
         url: "/merit-badges/small-boat-sailing/guide/req6/"
@@ -43,7 +43,7 @@ guide_nav:
       - title: "8. Care for Boat and Gear"
         url: "/merit-badges/small-boat-sailing/guide/req8/"
         is_sub: false
-  - group_title: ""
+  - group_title: "Sailing Terms and Sailboat Types"
     items:
       - title: "9. Sailing Terms and Sailboat Types"
         url: "/merit-badges/small-boat-sailing/guide/req9/"
