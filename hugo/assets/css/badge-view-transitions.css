@@ -23,7 +23,9 @@
 }
 
 .badge-card h2,
-.badge-hero__title {
+.badge-hero__title,
+.req-table-scroll td:first-child a,
+[style*="view-transition-name: mb-title-"] {
   view-transition-class: mb-title;
 }
 

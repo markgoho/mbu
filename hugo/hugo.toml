@@ -44,8 +44,11 @@ enableGitInfo = true
   [[params.theme.footerColumns]]
     title = 'Resources'
     [[params.theme.footerColumns.links]]
-      label = 'Getting Started'
-      href = '/merit-badges/'
+      label = 'Eagle Badge Strategy'
+      href = '/merit-badges/eagle-required/strategy/'
+    [[params.theme.footerColumns.links]]
+      label = 'Eagle-Required List'
+      href = '/merit-badges/eagle-required/'
     [[params.theme.footerColumns.links]]
       label = 'Requirements'
       href = '/search/'
