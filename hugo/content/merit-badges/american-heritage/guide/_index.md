@@ -10,12 +10,12 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-heritage/guide/"
-  - group_title: "1. Foundations of Freedom"
+  - group_title: ""
     items:
       - title: "1. The Declaration of Independence"
         url: "/merit-badges/american-heritage/guide/req1/"
         is_sub: false
-  - group_title: "2. People Who Shaped America"
+  - group_title: ""
     items:
       - title: "2. American Leaders & Change-Makers"
         url: "/merit-badges/american-heritage/guide/req2/"
@@ -31,17 +31,17 @@ guide_nav:
       - title: "c Your Family"
         url: "/merit-badges/american-heritage/guide/req3c/"
         is_sub: true
-  - group_title: "4. History in Your Backyard"
+  - group_title: ""
     items:
       - title: "4. Local History & Landmarks"
         url: "/merit-badges/american-heritage/guide/req4/"
         is_sub: false
-  - group_title: "5. Heritage Through Media"
+  - group_title: ""
     items:
       - title: "5. Heritage Through Media"
         url: "/merit-badges/american-heritage/guide/req5/"
         is_sub: false
-  - group_title: "6. Your Future in Heritage"
+  - group_title: ""
     items:
       - title: "6. Heritage Careers"
         url: "/merit-badges/american-heritage/guide/req6/"

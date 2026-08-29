@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/rowing/guide/"
         is_sub: false
-  - group_title: "1. Safety Foundations"
+  - group_title: ""
     items:
       - title: "1. Hazards, Injuries & Safety Afloat"
         url: "/merit-badges/rowing/guide/req1/"
         is_sub: false
-  - group_title: "2. Water Readiness"
+  - group_title: ""
     items:
       - title: "2. Swimmer Test Readiness"
         url: "/merit-badges/rowing/guide/req2/"
         is_sub: false
-  - group_title: "3. Life Jackets"
+  - group_title: ""
     items:
       - title: "3. Life Jacket Choice and Fit"
         url: "/merit-badges/rowing/guide/req3/"
         is_sub: false
-  - group_title: "4. Choose Your Rowing Path"
+  - group_title: ""
     items:
       - title: "4. Choose Your Rowing Path"
         url: "/merit-badges/rowing/guide/req4/"
@@ -41,7 +41,7 @@ guide_nav:
       - title: "b Race Day as a Teammate"
         url: "/merit-badges/rowing/guide/req4b/"
         is_sub: true
-  - group_title: "5. Choose Your Dockside Skill"
+  - group_title: ""
     items:
       - title: "5. Choose Your Dockside Skill"
         url: "/merit-badges/rowing/guide/req5/"
@@ -64,12 +64,12 @@ guide_nav:
       - title: "7. Towing a Swimmer"
         url: "/merit-badges/rowing/guide/req7/"
         is_sub: false
-  - group_title: "8. Rowing Equipment"
+  - group_title: ""
     items:
       - title: "8. Craft, Materials & Oarlocks"
         url: "/merit-badges/rowing/guide/req8/"
         is_sub: false
-  - group_title: "9. Advanced Know-How"
+  - group_title: ""
     items:
       - title: "9. Technique, Weather & Boat Care"
         url: "/merit-badges/rowing/guide/req9/"

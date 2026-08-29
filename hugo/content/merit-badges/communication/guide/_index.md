@@ -10,47 +10,47 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/communication/guide/"
-  - group_title: "1. Awareness & Listening"
+  - group_title: ""
     items:
       - title: "1. Communication Awareness"
         url: "/merit-badges/communication/guide/req1/"
         is_sub: false
-  - group_title: "2. Self-Expression & Persuasion"
+  - group_title: ""
     items:
       - title: "2. Creative Presentation"
         url: "/merit-badges/communication/guide/req2/"
         is_sub: false
-  - group_title: "3. Public Speaking"
+  - group_title: ""
     items:
       - title: "3. Writing & Delivering a Speech"
         url: "/merit-badges/communication/guide/req3/"
         is_sub: false
-  - group_title: "4. Interviewing & Active Listening"
+  - group_title: ""
     items:
       - title: "4. Conducting an Interview"
         url: "/merit-badges/communication/guide/req4/"
         is_sub: false
-  - group_title: "5. Critical Listening & Reporting"
+  - group_title: ""
     items:
       - title: "5. Public Meeting Report"
         url: "/merit-badges/communication/guide/req5/"
         is_sub: false
-  - group_title: "6. Teaching & Instruction"
+  - group_title: ""
     items:
       - title: "6. Teach a Skill"
         url: "/merit-badges/communication/guide/req6/"
         is_sub: false
-  - group_title: "7. Written & Digital Communication"
+  - group_title: ""
     items:
       - title: "7. Writing & Publishing"
         url: "/merit-badges/communication/guide/req7/"
         is_sub: false
-  - group_title: "8. Event Leadership"
+  - group_title: ""
     items:
       - title: "8. Master of Ceremonies"
         url: "/merit-badges/communication/guide/req8/"
         is_sub: false
-  - group_title: "9. Communication Careers"
+  - group_title: ""
     items:
       - title: "9. Career Exploration"
         url: "/merit-badges/communication/guide/req9/"

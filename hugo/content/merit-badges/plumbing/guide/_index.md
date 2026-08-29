@@ -11,27 +11,27 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/plumbing/guide/"
         is_sub: false
-  - group_title: "1. Health and Safety Basics"
+  - group_title: ""
     items:
       - title: "1. Healthy Plumbing Habits"
         url: "/merit-badges/plumbing/guide/req1/"
         is_sub: false
-  - group_title: "2. Water Supply and Drainage"
+  - group_title: ""
     items:
       - title: "2. Home Water Systems"
         url: "/merit-badges/plumbing/guide/req2/"
         is_sub: false
-  - group_title: "3. Tools of the Trade"
+  - group_title: ""
     items:
       - title: "3. Essential Plumbing Tools"
         url: "/merit-badges/plumbing/guide/req3/"
         is_sub: false
-  - group_title: "4. Plumbing Vocabulary"
+  - group_title: ""
     items:
       - title: "4. Plumbing Parts and Terms"
         url: "/merit-badges/plumbing/guide/req4/"
         is_sub: false
-  - group_title: "5. Choosing the Right Pipe"
+  - group_title: ""
     items:
       - title: "5. Common Pipe Materials"
         url: "/merit-badges/plumbing/guide/req5/"
@@ -62,7 +62,7 @@ guide_nav:
       - title: "g Applying Thread Tape"
         url: "/merit-badges/plumbing/guide/req6g/"
         is_sub: true
-  - group_title: "7. Plumbing Careers"
+  - group_title: ""
     items:
       - title: "7. Exploring Plumbing Careers"
         url: "/merit-badges/plumbing/guide/req7/"

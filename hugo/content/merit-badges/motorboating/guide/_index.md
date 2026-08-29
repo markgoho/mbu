@@ -11,27 +11,27 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/motorboating/guide/"
         is_sub: false
-  - group_title: "1. Safety & Hazard Preparedness"
+  - group_title: ""
     items:
       - title: "1. Hazards, First Aid & Safety Afloat"
         url: "/merit-badges/motorboating/guide/req1/"
         is_sub: false
-  - group_title: "2. Water Readiness"
+  - group_title: ""
     items:
       - title: "2. Swim Readiness & Life Jackets"
         url: "/merit-badges/motorboating/guide/req2/"
         is_sub: false
-  - group_title: "3. Boat Systems & Operations"
+  - group_title: ""
     items:
       - title: "3. Engines, Fuel & On-Water Awareness"
         url: "/merit-badges/motorboating/guide/req3/"
         is_sub: false
-  - group_title: "4. Laws, Signals & Seamanship"
+  - group_title: ""
     items:
       - title: "4. Rules, Weather & Required Gear"
         url: "/merit-badges/motorboating/guide/req4/"
         is_sub: false
-  - group_title: "5. Handling Skills"
+  - group_title: ""
     items:
       - title: "5. Boat Handling Underway"
         url: "/merit-badges/motorboating/guide/req5/"

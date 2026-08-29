@@ -11,17 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/signs-signals-and-codes/guide/"
         is_sub: false
-  - group_title: "1. Why Communication Systems Matter"
+  - group_title: ""
     items:
       - title: "1. Why Humans Need Shared Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req1/"
         is_sub: false
-  - group_title: "2. Emergency Communication"
+  - group_title: ""
     items:
       - title: "2. Distress Signals That Get You Found"
         url: "/merit-badges/signs-signals-and-codes/guide/req2/"
         is_sub: false
-  - group_title: "3. Language Beyond Speech"
+  - group_title: ""
     items:
       - title: "3. Morse Code and ASL in Action"
         url: "/merit-badges/signs-signals-and-codes/guide/req3/"
@@ -37,17 +37,17 @@ guide_nav:
       - title: "c Practice With Flags"
         url: "/merit-badges/signs-signals-and-codes/guide/req4c/"
         is_sub: true
-  - group_title: "5. Communication by Touch"
+  - group_title: ""
     items:
       - title: "5. Reading and Writing Braille"
         url: "/merit-badges/signs-signals-and-codes/guide/req5/"
         is_sub: false
-  - group_title: "6. Group Signaling"
+  - group_title: ""
     items:
       - title: "6. Sound Signals and Silent Scout Signals"
         url: "/merit-badges/signs-signals-and-codes/guide/req6/"
         is_sub: false
-  - group_title: "7. Trail Communication"
+  - group_title: ""
     items:
       - title: "7. Trail Markers With Outdoor Ethics"
         url: "/merit-badges/signs-signals-and-codes/guide/req7/"
@@ -72,12 +72,12 @@ guide_nav:
       - title: "e Your Custom Signal Set"
         url: "/merit-badges/signs-signals-and-codes/guide/req8e/"
         is_sub: true
-  - group_title: "9. Symbols and Meaning"
+  - group_title: ""
     items:
       - title: "9. Symbols in Daily Life"
         url: "/merit-badges/signs-signals-and-codes/guide/req9/"
         is_sub: false
-  - group_title: "10. Hidden Messages"
+  - group_title: ""
     items:
       - title: "10. Secret Codes and Cryptography"
         url: "/merit-badges/signs-signals-and-codes/guide/req10/"

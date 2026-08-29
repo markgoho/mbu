@@ -11,17 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/pets/guide/"
         is_sub: false
-  - group_title: "1. Building Daily Pet Care Habits"
+  - group_title: ""
     items:
       - title: "1. Four Months of Care"
         url: "/merit-badges/pets/guide/req1/"
         is_sub: false
-  - group_title: "2. Understanding Your Pet"
+  - group_title: ""
     items:
       - title: "2. Know Your Pet Well"
         url: "/merit-badges/pets/guide/req2/"
         is_sub: false
-  - group_title: "3. Learning From Experts"
+  - group_title: ""
     items:
       - title: "3. Read and Report"
         url: "/merit-badges/pets/guide/req3/"

@@ -11,32 +11,32 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/plant-science/guide/"
         is_sub: false
-  - group_title: "1. Plant Anatomy"
+  - group_title: ""
     items:
       - title: "1. Flower Parts and Jobs"
         url: "/merit-badges/plant-science/guide/req1/"
         is_sub: false
-  - group_title: "2. Photosynthesis & Human Dependence"
+  - group_title: ""
     items:
       - title: "2. Photosynthesis and Why Plants Matter"
         url: "/merit-badges/plant-science/guide/req2/"
         is_sub: false
-  - group_title: "3. Pollination"
+  - group_title: ""
     items:
       - title: "3. Pollinators at Work"
         url: "/merit-badges/plant-science/guide/req3/"
         is_sub: false
-  - group_title: "4. Growing Conditions & Soil"
+  - group_title: ""
     items:
       - title: "4. What Plants Need to Thrive"
         url: "/merit-badges/plant-science/guide/req4/"
         is_sub: false
-  - group_title: "5. Plant Propagation"
+  - group_title: ""
     items:
       - title: "5. Propagation in Practice"
         url: "/merit-badges/plant-science/guide/req5/"
         is_sub: false
-  - group_title: "6. Local Plants & Invasives"
+  - group_title: ""
     items:
       - title: "6. Native, Cultivated, and Invasive Plants"
         url: "/merit-badges/plant-science/guide/req6/"
@@ -52,7 +52,7 @@ guide_nav:
       - title: "b Plant Science as a Hobby"
         url: "/merit-badges/plant-science/guide/req7b/"
         is_sub: true
-  - group_title: "8. Choose Your Specialty"
+  - group_title: ""
     items:
       - title: "8. Choose a Plant Science Track"
         url: "/merit-badges/plant-science/guide/req8/"
@@ -192,7 +192,7 @@ guide_nav:
       - title: "c Conservation Organization"
         url: "/merit-badges/plant-science/guide/req8c6e/"
         is_sub: true
-  - group_title: "9. Leave No Trace"
+  - group_title: ""
     items:
       - title: "9. Leave No Trace & Plant Science"
         url: "/merit-badges/plant-science/guide/req9/"

@@ -11,12 +11,12 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/nuclear-science/guide/"
         is_sub: false
-  - group_title: "1. Radiation Basics"
+  - group_title: ""
     items:
       - title: "1. Understanding Radiation"
         url: "/merit-badges/nuclear-science/guide/req1/"
         is_sub: false
-  - group_title: "2. Atomic Building Blocks"
+  - group_title: ""
     items:
       - title: "2. Atoms, Isotopes, and Particles"
         url: "/merit-badges/nuclear-science/guide/req2/"
@@ -76,12 +76,12 @@ guide_nav:
       - title: "b How Plants Make Electricity"
         url: "/merit-badges/nuclear-science/guide/req6b/"
         is_sub: true
-  - group_title: "7. Useful Nuclear Science"
+  - group_title: ""
     items:
       - title: "7. Nuclear Science in Daily Life"
         url: "/merit-badges/nuclear-science/guide/req7/"
         is_sub: false
-  - group_title: "8. Careers in the Field"
+  - group_title: ""
     items:
       - title: "8. Explore a Nuclear Science Career"
         url: "/merit-badges/nuclear-science/guide/req8/"

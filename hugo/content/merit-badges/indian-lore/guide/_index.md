@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/indian-lore/guide/"
         is_sub: false
-  - group_title: "1. Cultural Areas"
+  - group_title: ""
     items:
       - title: "1. Cultural Areas"
         url: "/merit-badges/indian-lore/guide/req1/"
         is_sub: false
-  - group_title: "2. Researching a Nation"
+  - group_title: ""
     items:
       - title: "2. Researching a Nation"
         url: "/merit-badges/indian-lore/guide/req2/"
         is_sub: false
-  - group_title: "3. Language, Place, and Leaders"
+  - group_title: ""
     items:
       - title: "3. Language, Place, and Leaders"
         url: "/merit-badges/indian-lore/guide/req3/"
         is_sub: false
-  - group_title: "4. Influence and Exchange"
+  - group_title: ""
     items:
       - title: "4. Influence and Exchange"
         url: "/merit-badges/indian-lore/guide/req4/"

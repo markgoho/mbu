@@ -18,12 +18,12 @@ guide_nav:
       - title: "b History of Animation"
         url: "/merit-badges/animation/guide/req1b/"
         is_sub: true
-  - group_title: "2. Principles of Animation"
+  - group_title: ""
     items:
       - title: "2. The 12 Principles"
         url: "/merit-badges/animation/guide/req2/"
         is_sub: false
-  - group_title: "3. Animation Projects"
+  - group_title: ""
     items:
       - title: "3. Create Your Animations"
         url: "/merit-badges/animation/guide/req3/"
@@ -36,7 +36,7 @@ guide_nav:
       - title: "b The Future of Animation"
         url: "/merit-badges/animation/guide/req4b/"
         is_sub: true
-  - group_title: "5. Animation Careers"
+  - group_title: ""
     items:
       - title: "5. Careers in Animation"
         url: "/merit-badges/animation/guide/req5/"

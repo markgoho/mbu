@@ -43,7 +43,7 @@ guide_nav:
       - title: "j Sources of Information on Firearms"
         url: "/merit-badges/rifle-shooting/guide/req1j/"
         is_sub: true
-  - group_title: "2. Choose Your Shooting Option"
+  - group_title: ""
     items:
       - title: "2. Pick Your Option"
         url: "/merit-badges/rifle-shooting/guide/req2/"
@@ -168,7 +168,7 @@ guide_nav:
       - title: "cn Scored Grouping Exercise"
         url: "/merit-badges/rifle-shooting/guide/req2cn/"
         is_sub: true
-  - group_title: "3. Careers and Goals"
+  - group_title: ""
     items:
       - title: "3. Pathways, Training, and Goals"
         url: "/merit-badges/rifle-shooting/guide/req3/"

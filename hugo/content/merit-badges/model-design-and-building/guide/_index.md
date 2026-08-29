@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/model-design-and-building/guide/"
         is_sub: false
-  - group_title: "1. Safe Modelmaking"
+  - group_title: ""
     items:
       - title: "1. Safe Modelmaking"
         url: "/merit-badges/model-design-and-building/guide/req1/"
         is_sub: false
-  - group_title: "2. Understanding Model Types"
+  - group_title: ""
     items:
       - title: "2. Models, Tools, and Materials"
         url: "/merit-badges/model-design-and-building/guide/req2/"
         is_sub: false
-  - group_title: "3. Project Planning"
+  - group_title: ""
     items:
       - title: "3. Planning Your Original Project"
         url: "/merit-badges/model-design-and-building/guide/req3/"
         is_sub: false
-  - group_title: "4. Choose Your Build"
+  - group_title: ""
     items:
       - title: "4. Pick Your Model Path"
         url: "/merit-badges/model-design-and-building/guide/req4/"
@@ -56,12 +56,12 @@ guide_nav:
       - title: "e Designing a Scaled Passenger Vehicle"
         url: "/merit-badges/model-design-and-building/guide/req4e/"
         is_sub: true
-  - group_title: "5. Fantasy Spacecraft Design"
+  - group_title: ""
     items:
       - title: "5. Designing for the Big Screen"
         url: "/merit-badges/model-design-and-building/guide/req5/"
         is_sub: false
-  - group_title: "6. Design Careers"
+  - group_title: ""
     items:
       - title: "6. Careers in Design and Building"
         url: "/merit-badges/model-design-and-building/guide/req6/"

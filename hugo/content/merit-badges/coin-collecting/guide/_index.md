@@ -10,15 +10,15 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/coin-collecting/guide/"
-  - group_title: "1. The U.S. Mint"
+  - group_title: ""
     items:
       - title: "1. How Coins Are Made"
         url: "/merit-badges/coin-collecting/guide/req1/"
-  - group_title: "2. Coin Anatomy"
+  - group_title: ""
     items:
       - title: "2. Coin Terminology"
         url: "/merit-badges/coin-collecting/guide/req2/"
-  - group_title: "3. Caring for Your Collection"
+  - group_title: ""
     items:
       - title: "3. Storing Your Collection"
         url: "/merit-badges/coin-collecting/guide/req3/"
@@ -42,15 +42,15 @@ guide_nav:
       - title: "f The Dollar Coin"
         url: "/merit-badges/coin-collecting/guide/req4f/"
         is_sub: true
-  - group_title: "5. Commemorative Coins"
+  - group_title: ""
     items:
       - title: "5. Bicentennial Coins"
         url: "/merit-badges/coin-collecting/guide/req5/"
-  - group_title: "6. Paper Money"
+  - group_title: ""
     items:
       - title: "6. U.S. Currency"
         url: "/merit-badges/coin-collecting/guide/req6/"
-  - group_title: "7. Going Global"
+  - group_title: ""
     items:
       - title: "7. Expanding Your Horizons"
         url: "/merit-badges/coin-collecting/guide/req7/"

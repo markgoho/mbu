@@ -19,7 +19,7 @@ guide_nav:
       - title: "2. Images, Halftones, and Digital Files"
         url: "/merit-badges/graphic-arts/guide/req2/"
         is_sub: false
-  - group_title: "3. Designing for Print"
+  - group_title: ""
     items:
       - title: "3. Design Choices and Production Planning"
         url: "/merit-badges/graphic-arts/guide/req3/"
@@ -41,7 +41,7 @@ guide_nav:
       - title: "d Relief Printing Run"
         url: "/merit-badges/graphic-arts/guide/req4d/"
         is_sub: true
-  - group_title: "5. Finishing the Job"
+  - group_title: ""
     items:
       - title: "5. Postpress and Binding"
         url: "/merit-badges/graphic-arts/guide/req5/"
@@ -63,7 +63,7 @@ guide_nav:
       - title: "d Professional Websites Research"
         url: "/merit-badges/graphic-arts/guide/req6d/"
         is_sub: true
-  - group_title: "7. Looking Ahead"
+  - group_title: ""
     items:
       - title: "7. Careers in Graphic Arts"
         url: "/merit-badges/graphic-arts/guide/req7/"

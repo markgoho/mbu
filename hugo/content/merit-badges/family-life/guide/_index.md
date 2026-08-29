@@ -29,7 +29,7 @@ guide_nav:
       - title: "4. Individual Home Project"
         url: "/merit-badges/family-life/guide/req4/"
         is_sub: false
-  - group_title: "5. Family Projects"
+  - group_title: ""
     items:
       - title: "5. Family Project"
         url: "/merit-badges/family-life/guide/req5/"
@@ -45,7 +45,7 @@ guide_nav:
       - title: "b Meeting Agenda Topics"
         url: "/merit-badges/family-life/guide/req6b/"
         is_sub: true
-  - group_title: "7. Effective Parenting"
+  - group_title: ""
     items:
       - title: "7. Understanding Parenthood"
         url: "/merit-badges/family-life/guide/req7/"

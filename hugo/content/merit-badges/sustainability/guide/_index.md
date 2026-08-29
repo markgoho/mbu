@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/sustainability/guide/"
-  - group_title: "1. What Is Sustainability?"
+  - group_title: ""
     items:
       - title: "1. Defining Sustainability"
         url: "/merit-badges/sustainability/guide/req1/"
@@ -101,7 +101,7 @@ guide_nav:
       - title: "c Household Behavior Changes"
         url: "/merit-badges/sustainability/guide/req8c/"
         is_sub: true
-  - group_title: "9. Sustainability Careers"
+  - group_title: ""
     items:
       - title: "9. Career Exploration"
         url: "/merit-badges/sustainability/guide/req9/"

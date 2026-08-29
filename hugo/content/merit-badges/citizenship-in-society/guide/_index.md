@@ -10,57 +10,57 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/citizenship-in-society/guide/"
-  - group_title: "1. Foundations of Citizenship"
+  - group_title: ""
     items:
       - title: "1. Key Terms"
         url: "/merit-badges/citizenship-in-society/guide/req1/"
         is_sub: false
-  - group_title: "2. Ethical Leadership"
+  - group_title: ""
     items:
       - title: "2. Ethical Leadership"
         url: "/merit-badges/citizenship-in-society/guide/req2/"
         is_sub: false
-  - group_title: "3. Ethical Decision-Making"
+  - group_title: ""
     items:
       - title: "3. Ethical Decisions"
         url: "/merit-badges/citizenship-in-society/guide/req3/"
         is_sub: false
-  - group_title: "4. Standing Up for Others"
+  - group_title: ""
     items:
       - title: "4. Responding to Scenarios"
         url: "/merit-badges/citizenship-in-society/guide/req4/"
         is_sub: false
-  - group_title: "5. Building Inclusive Spaces"
+  - group_title: ""
     items:
       - title: "5. Welcoming Environments"
         url: "/merit-badges/citizenship-in-society/guide/req5/"
         is_sub: false
-  - group_title: "6. Connecting Across Differences"
+  - group_title: ""
     items:
       - title: "6. Connecting Across Differences"
         url: "/merit-badges/citizenship-in-society/guide/req6/"
         is_sub: false
-  - group_title: "7. Learning from Leaders"
+  - group_title: ""
     items:
       - title: "7. Community Impact Interview"
         url: "/merit-badges/citizenship-in-society/guide/req7/"
         is_sub: false
-  - group_title: "8. Moments That Changed Society"
+  - group_title: ""
     items:
       - title: "8. A Positive Turning Point"
         url: "/merit-badges/citizenship-in-society/guide/req8/"
         is_sub: false
-  - group_title: "9. Leading Beyond Scouting"
+  - group_title: ""
     items:
       - title: "9. Leadership Beyond Scouting"
         url: "/merit-badges/citizenship-in-society/guide/req9/"
         is_sub: false
-  - group_title: "10. Challenging Stereotypes"
+  - group_title: ""
     items:
       - title: "10. Stereotypes & Individuality"
         url: "/merit-badges/citizenship-in-society/guide/req10/"
         is_sub: false
-  - group_title: "11. Your Impact Plan"
+  - group_title: ""
     items:
       - title: "11. Your DEI Action Plan"
         url: "/merit-badges/citizenship-in-society/guide/req11/"

@@ -24,7 +24,7 @@ guide_nav:
       - title: "d Safe Solar Observation"
         url: "/merit-badges/astronomy/guide/req1d/"
         is_sub: true
-  - group_title: "2. Light & the Night Sky"
+  - group_title: ""
     items:
       - title: "2. Light Pollution"
         url: "/merit-badges/astronomy/guide/req2/"
@@ -96,12 +96,12 @@ guide_nav:
       - title: "c Star Colors"
         url: "/merit-badges/astronomy/guide/req7c/"
         is_sub: true
-  - group_title: "8. Hands-On Astronomy"
+  - group_title: ""
     items:
       - title: "8. Choose Your Adventure"
         url: "/merit-badges/astronomy/guide/req8/"
         is_sub: false
-  - group_title: "9. Careers & Hobbies"
+  - group_title: ""
     items:
       - title: "9. Astronomy Careers or Hobbies"
         url: "/merit-badges/astronomy/guide/req9/"

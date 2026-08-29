@@ -11,27 +11,27 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/sports/guide/"
         is_sub: false
-  - group_title: "1. Safety and Injury Prevention"
+  - group_title: ""
     items:
       - title: "1. Sports Safety and First Aid"
         url: "/merit-badges/sports/guide/req1/"
         is_sub: false
-  - group_title: "2. Building a Healthy Athlete"
+  - group_title: ""
     items:
       - title: "2. Health Habits That Support Performance"
         url: "/merit-badges/sports/guide/req2/"
         is_sub: false
-  - group_title: "3. Training and Character"
+  - group_title: ""
     items:
       - title: "3. Preparation, Strength, and Sportsmanship"
         url: "/merit-badges/sports/guide/req3/"
         is_sub: false
-  - group_title: "4. Choosing Your Two Sports"
+  - group_title: ""
     items:
       - title: "4. Pick Sports You Can Really Commit To"
         url: "/merit-badges/sports/guide/req4/"
         is_sub: false
-  - group_title: "5. Season Planning and Participation"
+  - group_title: ""
     items:
       - title: "5. Train, Compete, and Reflect"
         url: "/merit-badges/sports/guide/req5/"

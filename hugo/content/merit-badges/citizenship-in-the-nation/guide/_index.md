@@ -18,7 +18,7 @@ guide_nav:
       - title: "2. The Preamble"
         url: "/merit-badges/citizenship-in-the-nation/guide/req2/"
         is_sub: false
-  - group_title: "3. How Government Works"
+  - group_title: ""
     items:
       - title: "3. Three Branches of Government"
         url: "/merit-badges/citizenship-in-the-nation/guide/req3/"

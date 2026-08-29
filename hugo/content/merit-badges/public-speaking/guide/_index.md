@@ -10,17 +10,17 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/public-speaking/guide/"
-  - group_title: "1. Introducing Yourself"
+  - group_title: ""
     items:
       - title: "1. Your Self-Introduction"
         url: "/merit-badges/public-speaking/guide/req1/"
         is_sub: false
-  - group_title: "2. Body Language & Visual Aids"
+  - group_title: ""
     items:
       - title: "2. Prepared Talk with Visuals"
         url: "/merit-badges/public-speaking/guide/req2/"
         is_sub: false
-  - group_title: "3. Thinking on Your Feet"
+  - group_title: ""
     items:
       - title: "3. Impromptu Speaking"
         url: "/merit-badges/public-speaking/guide/req3/"
@@ -33,7 +33,7 @@ guide_nav:
       - title: "Speech Planning Worksheet"
         url: "/merit-badges/public-speaking/guide/speech-planning-worksheet/"
         is_sub: true
-  - group_title: "5. Leading a Meeting"
+  - group_title: ""
     items:
       - title: "5. Parliamentary Procedure"
         url: "/merit-badges/public-speaking/guide/req5/"

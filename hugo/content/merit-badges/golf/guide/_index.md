@@ -11,12 +11,12 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/golf/guide/"
         is_sub: false
-  - group_title: "1. Safety on the Course"
+  - group_title: ""
     items:
       - title: "1. Course Safety & First Aid"
         url: "/merit-badges/golf/guide/req1/"
         is_sub: false
-  - group_title: "2. Choose Your Game"
+  - group_title: ""
     items:
       - title: "2. Traditional Golf or Disc Golf?"
         url: "/merit-badges/golf/guide/req2/"

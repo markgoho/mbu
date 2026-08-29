@@ -79,15 +79,15 @@ guide_nav:
       - title: "c Crypto Hands-On"
         url: "/merit-badges/cybersecurity/guide/req6c/"
         is_sub: true
-  - group_title: "7. Connected World"
+  - group_title: ""
     items:
       - title: "7. IoT Devices"
         url: "/merit-badges/cybersecurity/guide/req7/"
-  - group_title: "8. Hands-On Challenge"
+  - group_title: ""
     items:
       - title: "8. Cybersecurity Activities"
         url: "/merit-badges/cybersecurity/guide/req8/"
-  - group_title: "9. Career Exploration"
+  - group_title: ""
     items:
       - title: "9. Careers"
         url: "/merit-badges/cybersecurity/guide/req9/"

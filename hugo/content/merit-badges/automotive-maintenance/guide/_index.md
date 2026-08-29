@@ -38,7 +38,7 @@ guide_nav:
       - title: "d Lights & Air Filters"
         url: "/merit-badges/automotive-maintenance/guide/req2d/"
         is_sub: true
-  - group_title: "3. Dashboard & Gauges"
+  - group_title: ""
     items:
       - title: "3. Dashboard & Driver Info"
         url: "/merit-badges/automotive-maintenance/guide/req3/"
@@ -59,12 +59,12 @@ guide_nav:
       - title: "b Engine Oil"
         url: "/merit-badges/automotive-maintenance/guide/req5b/"
         is_sub: true
-  - group_title: "6. Cooling System"
+  - group_title: ""
     items:
       - title: "6. Coolant & Cooling"
         url: "/merit-badges/automotive-maintenance/guide/req6/"
         is_sub: false
-  - group_title: "7. Fuel System"
+  - group_title: ""
     items:
       - title: "7. Air, Fuel & Injection"
         url: "/merit-badges/automotive-maintenance/guide/req7/"
@@ -91,17 +91,17 @@ guide_nav:
       - title: "c Fluids & Drive Configurations"
         url: "/merit-badges/automotive-maintenance/guide/req9c/"
         is_sub: true
-  - group_title: "10. Brake System"
+  - group_title: ""
     items:
       - title: "10. Brakes"
         url: "/merit-badges/automotive-maintenance/guide/req10/"
         is_sub: false
-  - group_title: "11. Hands-On Skills"
+  - group_title: ""
     items:
       - title: "11. Choose Two Projects"
         url: "/merit-badges/automotive-maintenance/guide/req11/"
         is_sub: false
-  - group_title: "12. Automotive Careers"
+  - group_title: ""
     items:
       - title: "12. Career Exploration"
         url: "/merit-badges/automotive-maintenance/guide/req12/"

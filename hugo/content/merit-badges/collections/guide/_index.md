@@ -10,11 +10,11 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/collections/guide/"
-  - group_title: "1. Your Collection Story"
+  - group_title: ""
     items:
       - title: "1. Writing Your Collection Report"
         url: "/merit-badges/collections/guide/req1/"
-  - group_title: "2. Growing Your Collection"
+  - group_title: ""
     items:
       - title: "2. Growth & Development"
         url: "/merit-badges/collections/guide/req2/"
@@ -32,7 +32,7 @@ guide_nav:
       - title: "d Cataloging Your Collection"
         url: "/merit-badges/collections/guide/req3d/"
         is_sub: true
-  - group_title: "4. Collecting as an Investment"
+  - group_title: ""
     items:
       - title: "4. Investing, Buying & Selling"
         url: "/merit-badges/collections/guide/req4/"

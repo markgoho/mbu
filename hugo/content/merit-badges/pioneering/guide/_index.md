@@ -11,42 +11,42 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/pioneering/guide/"
         is_sub: false
-  - group_title: "1. Safety on the Spar Yard"
+  - group_title: ""
     items:
       - title: "1. Safe Pioneering Basics"
         url: "/merit-badges/pioneering/guide/req1/"
         is_sub: false
-  - group_title: "2. Knots, Whippings & Lashings"
+  - group_title: ""
     items:
       - title: "2. Core Rope Skills"
         url: "/merit-badges/pioneering/guide/req2/"
         is_sub: false
-  - group_title: "3. Build Your First Gadgets"
+  - group_title: ""
     items:
       - title: "3. Practical Camp Builds"
         url: "/merit-badges/pioneering/guide/req3/"
         is_sub: false
-  - group_title: "4. Choosing and Caring for Rope"
+  - group_title: ""
     items:
       - title: "4. Rope for Real Loads"
         url: "/merit-badges/pioneering/guide/req4/"
         is_sub: false
-  - group_title: "5. Splices & Rope Repair"
+  - group_title: ""
     items:
       - title: "5. Splices That Solve Problems"
         url: "/merit-badges/pioneering/guide/req5/"
         is_sub: false
-  - group_title: "6. Making Your Own Rope"
+  - group_title: ""
     items:
       - title: "6. Twist, Lay, and Whip"
         url: "/merit-badges/pioneering/guide/req6/"
         is_sub: false
-  - group_title: "7. Anchors & Load Paths"
+  - group_title: ""
     items:
       - title: "7. Keep the Structure Put"
         url: "/merit-badges/pioneering/guide/req7/"
         is_sub: false
-  - group_title: "8. Trestles & Structural Strength"
+  - group_title: ""
     items:
       - title: "8. Build a Strong Frame"
         url: "/merit-badges/pioneering/guide/req8/"

@@ -25,7 +25,7 @@ guide_nav:
       - title: "c Tree Damage Detectives"
         url: "/merit-badges/forestry/guide/req2c/"
         is_sub: true
-  - group_title: "3. Why Forests Matter"
+  - group_title: ""
     items:
       - title: "a Forest Benefits & Your Watershed"
         url: "/merit-badges/forestry/guide/req3ab/"

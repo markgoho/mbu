@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/moviemaking/guide/"
         is_sub: false
-  - group_title: "1. Film Language"
+  - group_title: ""
     items:
       - title: "1. Film Language Basics"
         url: "/merit-badges/moviemaking/guide/req1/"

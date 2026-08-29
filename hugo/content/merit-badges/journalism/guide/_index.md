@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/journalism/guide/"
-  - group_title: "1. Rights, Truth, and Responsibility"
+  - group_title: ""
     items:
       - title: "1. Press Freedom & Media Ethics"
         url: "/merit-badges/journalism/guide/req1/"
@@ -63,7 +63,7 @@ guide_nav:
       - title: "c Photojournalism Storytelling"
         url: "/merit-badges/journalism/guide/req4c/"
         is_sub: true
-  - group_title: "5. Careers in Journalism"
+  - group_title: ""
     items:
       - title: "5. Journalism Careers"
         url: "/merit-badges/journalism/guide/req5/"

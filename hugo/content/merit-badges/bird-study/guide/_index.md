@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/bird-study/guide/"
-  - group_title: "1. Why Birds Matter"
+  - group_title: ""
     items:
       - title: "1. Birds & the Environment"
         url: "/merit-badges/bird-study/guide/req1/"
@@ -36,27 +36,27 @@ guide_nav:
       - title: "d Choosing Your Optics"
         url: "/merit-badges/bird-study/guide/req3d/"
         is_sub: true
-  - group_title: "4. Field Guides & Range Maps"
+  - group_title: ""
     items:
       - title: "4. Using a Field Guide"
         url: "/merit-badges/bird-study/guide/req4/"
-  - group_title: "5. Field Observations"
+  - group_title: ""
     items:
       - title: "5. Field Notebook"
         url: "/merit-badges/bird-study/guide/req5/"
-  - group_title: "6. Bird Adaptations"
+  - group_title: ""
     items:
       - title: "6. Habitat Adaptations"
         url: "/merit-badges/bird-study/guide/req6/"
-  - group_title: "7. Bird Songs & Calls"
+  - group_title: ""
     items:
       - title: "7. Songs & Calls"
         url: "/merit-badges/bird-study/guide/req7/"
-  - group_title: "8. Birding Experiences"
+  - group_title: ""
     items:
       - title: "8. Choose Your Adventure"
         url: "/merit-badges/bird-study/guide/req8/"
-  - group_title: "9. Attracting Birds"
+  - group_title: ""
     items:
       - title: "9. Build for Birds"
         url: "/merit-badges/bird-study/guide/req9/"
@@ -71,15 +71,15 @@ guide_nav:
       - title: "c Protecting Birds in Decline"
         url: "/merit-badges/bird-study/guide/req10c/"
         is_sub: true
-  - group_title: "11. Invasive Species"
+  - group_title: ""
     items:
       - title: "11. Non-Native Birds"
         url: "/merit-badges/bird-study/guide/req11/"
-  - group_title: "12. Outdoor Ethics"
+  - group_title: ""
     items:
       - title: "12. Leave No Trace"
         url: "/merit-badges/bird-study/guide/req12/"
-  - group_title: "13. Careers & Hobbies"
+  - group_title: ""
     items:
       - title: "13. Careers or Hobbies"
         url: "/merit-badges/bird-study/guide/req13/"

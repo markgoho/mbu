@@ -11,12 +11,12 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/music/guide/"
         is_sub: false
-  - group_title: "1. Performing and Reading Music"
+  - group_title: ""
     items:
       - title: "1. Perform with Expression"
         url: "/merit-badges/music/guide/req1/"
         is_sub: false
-  - group_title: "2. How Instruments Make Sound"
+  - group_title: ""
     items:
       - title: "2. Instrument Families and Sound"
         url: "/merit-badges/music/guide/req2/"
@@ -52,7 +52,7 @@ guide_nav:
       - title: "c Make and Play a Traditional Instrument"
         url: "/merit-badges/music/guide/req4c/"
         is_sub: true
-  - group_title: "5. Music and Ownership"
+  - group_title: ""
     items:
       - title: "5. Intellectual Property and Sharing Music"
         url: "/merit-badges/music/guide/req5/"

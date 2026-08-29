@@ -10,12 +10,12 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/american-labor/guide/"
-  - group_title: "1. Understanding Workers"
+  - group_title: ""
     items:
       - title: "1. Worker Concerns"
         url: "/merit-badges/american-labor/guide/req1/"
         is_sub: false
-  - group_title: "2. Connecting with Labor"
+  - group_title: ""
     items:
       - title: "2. Visiting a Labor Organization"
         url: "/merit-badges/american-labor/guide/req2/"
@@ -28,12 +28,12 @@ guide_nav:
       - title: "4. Bargaining Models"
         url: "/merit-badges/american-labor/guide/req4/"
         is_sub: false
-  - group_title: "5. Labor History"
+  - group_title: ""
     items:
       - title: "5. Labor History Projects"
         url: "/merit-badges/american-labor/guide/req5/"
         is_sub: false
-  - group_title: "6. The Global Workforce"
+  - group_title: ""
     items:
       - title: "6. Globalization"
         url: "/merit-badges/american-labor/guide/req6/"
@@ -46,7 +46,7 @@ guide_nav:
       - title: "8. Stakeholder Goals"
         url: "/merit-badges/american-labor/guide/req8/"
         is_sub: false
-  - group_title: "9. Your Future"
+  - group_title: ""
     items:
       - title: "9. Careers in Labor Relations"
         url: "/merit-badges/american-labor/guide/req9/"

@@ -10,12 +10,12 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/citizenship-in-the-world/guide/"
-  - group_title: "1. What World Citizenship Means"
+  - group_title: ""
     items:
       - title: "1. Defining World Citizenship"
         url: "/merit-badges/citizenship-in-the-world/guide/req1/"
         is_sub: false
-  - group_title: "2. Becoming a Citizen"
+  - group_title: ""
     items:
       - title: "2. U.S. Citizenship & Comparing Countries"
         url: "/merit-badges/citizenship-in-the-world/guide/req2/"
@@ -28,22 +28,22 @@ guide_nav:
       - title: "b A Country"
         url: "/merit-badges/citizenship-in-the-world/guide/req3b/"
         is_sub: true
-  - group_title: "4. International Connections"
+  - group_title: ""
     items:
       - title: "4. Law, Trade & Global Organizations"
         url: "/merit-badges/citizenship-in-the-world/guide/req4/"
         is_sub: false
-  - group_title: "5. World Governments"
+  - group_title: ""
     items:
       - title: "5. Types of Government"
         url: "/merit-badges/citizenship-in-the-world/guide/req5/"
         is_sub: false
-  - group_title: "6. Diplomacy & Foreign Relations"
+  - group_title: ""
     items:
       - title: "6. How Nations Connect"
         url: "/merit-badges/citizenship-in-the-world/guide/req6/"
         is_sub: false
-  - group_title: "7. Explore the World"
+  - group_title: ""
     items:
       - title: "7. World Exploration Activities"
         url: "/merit-badges/citizenship-in-the-world/guide/req7/"

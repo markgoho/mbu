@@ -18,7 +18,7 @@ guide_nav:
       - title: "2. Landmarks in Legal History"
         url: "/merit-badges/law/guide/req2/"
         is_sub: false
-  - group_title: "3. Types of Law"
+  - group_title: ""
     items:
       - title: "3. Civil vs. Criminal Law"
         url: "/merit-badges/law/guide/req3/"

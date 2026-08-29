@@ -11,12 +11,12 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/reading/guide/"
         is_sub: false
-  - group_title: "1. Using the Library"
+  - group_title: ""
     items:
       - title: "1. Library Skills in Action"
         url: "/merit-badges/reading/guide/req1/"
         is_sub: false
-  - group_title: "2. Choosing What to Read"
+  - group_title: ""
     items:
       - title: "2. Choose Books You"
         url: "/merit-badges/reading/guide/req2/"
@@ -35,12 +35,12 @@ guide_nav:
       - title: "c Give a Book Talk"
         url: "/merit-badges/reading/guide/req3c/"
         is_sub: true
-  - group_title: "4. Reading for Action"
+  - group_title: ""
     items:
       - title: "4. Read to Build a Skill"
         url: "/merit-badges/reading/guide/req4/"
         is_sub: false
-  - group_title: "5. Reading for Awareness"
+  - group_title: ""
     items:
       - title: "5. Read the Wider World"
         url: "/merit-badges/reading/guide/req5/"
@@ -65,7 +65,7 @@ guide_nav:
       - title: "e Lead a Book Drive"
         url: "/merit-badges/reading/guide/req6e/"
         is_sub: true
-  - group_title: "7. Reading for Work"
+  - group_title: ""
     items:
       - title: "7. Explore Reading Careers"
         url: "/merit-badges/reading/guide/req7/"

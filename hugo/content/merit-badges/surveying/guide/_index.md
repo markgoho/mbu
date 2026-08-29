@@ -11,42 +11,42 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/surveying/guide/"
         is_sub: false
-  - group_title: "1. Field Safety"
+  - group_title: ""
     items:
       - title: "1. Field Safety for Surveyors"
         url: "/merit-badges/surveying/guide/req1/"
         is_sub: false
-  - group_title: "2. Measuring from the Ground"
+  - group_title: ""
     items:
       - title: "2. Radial Measurements and GPS Checks"
         url: "/merit-badges/surveying/guide/req2/"
         is_sub: false
-  - group_title: "3. Mapmaking"
+  - group_title: ""
     items:
       - title: "3. Plotting Your Survey Map"
         url: "/merit-badges/surveying/guide/req3/"
         is_sub: false
-  - group_title: "4. Elevation and Levels"
+  - group_title: ""
     items:
       - title: "4. Finding Elevations from a Benchmark"
         url: "/merit-badges/surveying/guide/req4/"
         is_sub: false
-  - group_title: "5. Property Records"
+  - group_title: ""
     items:
       - title: "5. Reading a Property Deed"
         url: "/merit-badges/surveying/guide/req5/"
         is_sub: false
-  - group_title: "6. Modern Tools"
+  - group_title: ""
     items:
       - title: "6. Drones and Laser Scanning"
         url: "/merit-badges/surveying/guide/req6/"
         is_sub: false
-  - group_title: "7. Satellite Positioning"
+  - group_title: ""
     items:
       - title: "7. Why GPS Matters in Surveying"
         url: "/merit-badges/surveying/guide/req7/"
         is_sub: false
-  - group_title: "8. Careers and Futures"
+  - group_title: ""
     items:
       - title: "8. Surveying Career Paths"
         url: "/merit-badges/surveying/guide/req8/"

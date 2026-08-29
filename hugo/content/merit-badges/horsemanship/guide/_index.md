@@ -11,17 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/horsemanship/guide/"
         is_sub: false
-  - group_title: "1. Horse and Barn Safety"
+  - group_title: ""
     items:
       - title: "1. Horse and Barn Safety"
         url: "/merit-badges/horsemanship/guide/req1/"
         is_sub: false
-  - group_title: "2. Horse Anatomy"
+  - group_title: ""
     items:
       - title: "2. Parts of the Horse"
         url: "/merit-badges/horsemanship/guide/req2/"
         is_sub: false
-  - group_title: "3. Breeds and Purpose"
+  - group_title: ""
     items:
       - title: "3. Breeds and Special Traits"
         url: "/merit-badges/horsemanship/guide/req3/"
@@ -45,17 +45,17 @@ guide_nav:
       - title: "8. Feeding a Horse"
         url: "/merit-badges/horsemanship/guide/req8/"
         is_sub: false
-  - group_title: "9. Tack and Mounting"
+  - group_title: ""
     items:
       - title: "9. Saddles, Bridles, and Mounting"
         url: "/merit-badges/horsemanship/guide/req9/"
         is_sub: false
-  - group_title: "10. Ground Handling"
+  - group_title: ""
     items:
       - title: "10. Approach, Lead, and Tie"
         url: "/merit-badges/horsemanship/guide/req10/"
         is_sub: false
-  - group_title: "11. Basic Riding Skills"
+  - group_title: ""
     items:
       - title: "11. Walk, Trot, Halt, and Dismount"
         url: "/merit-badges/horsemanship/guide/req11/"

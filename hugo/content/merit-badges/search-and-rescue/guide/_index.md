@@ -58,7 +58,7 @@ guide_nav:
       - title: "e Core SAR Terms"
         url: "/merit-badges/search-and-rescue/guide/req6e/"
         is_sub: true
-  - group_title: "7. Practice Mission"
+  - group_title: ""
     items:
       - title: "7. Plan and Run a Practice Search"
         url: "/merit-badges/search-and-rescue/guide/req7/"

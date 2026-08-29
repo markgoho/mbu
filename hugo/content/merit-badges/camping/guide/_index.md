@@ -21,17 +21,17 @@ guide_nav:
       - title: "c Camping First Aid"
         url: "/merit-badges/camping/guide/req1c/"
         is_sub: true
-  - group_title: "2. Outdoor Ethics"
+  - group_title: ""
     items:
       - title: "2. Leave No Trace & Outdoor Code"
         url: "/merit-badges/camping/guide/req2/"
         is_sub: false
-  - group_title: "3. Navigation & Trip Planning"
+  - group_title: ""
     items:
       - title: "3. Map & Navigation"
         url: "/merit-badges/camping/guide/req3/"
         is_sub: false
-  - group_title: "4. Patrol Organization"
+  - group_title: ""
     items:
       - title: "4. Duty Roster & Leadership"
         url: "/merit-badges/camping/guide/req4/"
@@ -70,7 +70,7 @@ guide_nav:
       - title: "e Sleeping Bags"
         url: "/merit-badges/camping/guide/req6e/"
         is_sub: true
-  - group_title: "7. Packing & Preparation"
+  - group_title: ""
     items:
       - title: "7. Gear Checklist & Packing"
         url: "/merit-badges/camping/guide/req7/"
@@ -103,7 +103,7 @@ guide_nav:
       - title: "c Conservation Project"
         url: "/merit-badges/camping/guide/req9c/"
         is_sub: true
-  - group_title: "10. Reflection"
+  - group_title: ""
     items:
       - title: "10. Scout Spirit & Reflection"
         url: "/merit-badges/camping/guide/req10/"

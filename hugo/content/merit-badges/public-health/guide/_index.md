@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/public-health/guide/"
         is_sub: false
-  - group_title: "1. Disease Basics"
+  - group_title: ""
     items:
       - title: "1. How Disease Spreads"
         url: "/merit-badges/public-health/guide/req1/"
         is_sub: false
-  - group_title: "2. Immunization"
+  - group_title: ""
     items:
       - title: "2. Immunization Basics"
         url: "/merit-badges/public-health/guide/req2/"
         is_sub: false
-  - group_title: "3. Water & Sanitation"
+  - group_title: ""
     items:
       - title: "3. Safe Water and Clean Gear"
         url: "/merit-badges/public-health/guide/req3/"
         is_sub: false
-  - group_title: "4. Vectors & Prevention"
+  - group_title: ""
     items:
       - title: "4. Vectors and Pest Control"
         url: "/merit-badges/public-health/guide/req4/"
@@ -42,7 +42,7 @@ guide_nav:
       - title: "b Food Safety in Action"
         url: "/merit-badges/public-health/guide/req5b/"
         is_sub: true
-  - group_title: "6. Environmental & Behavioral Risks"
+  - group_title: ""
     items:
       - title: "6. Pollution and Substance Risks"
         url: "/merit-badges/public-health/guide/req6/"
@@ -61,7 +61,7 @@ guide_nav:
       - title: "b How Agencies Protect Communities"
         url: "/merit-badges/public-health/guide/req7b/"
         is_sub: true
-  - group_title: "8. Careers in Public Health"
+  - group_title: ""
     items:
       - title: "8. Explore a Public Health Career"
         url: "/merit-badges/public-health/guide/req8/"

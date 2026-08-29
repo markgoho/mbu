@@ -45,12 +45,12 @@ guide_nav:
       - title: "5. Design Your Own Project"
         url: "/merit-badges/woodwork/guide/req5/"
         is_sub: false
-  - group_title: "6. Advanced Techniques"
+  - group_title: ""
     items:
       - title: "6. Advanced Projects"
         url: "/merit-badges/woodwork/guide/req6/"
         is_sub: false
-  - group_title: "7. Careers in Woodwork"
+  - group_title: ""
     items:
       - title: "7. Woodworking Careers"
         url: "/merit-badges/woodwork/guide/req7/"

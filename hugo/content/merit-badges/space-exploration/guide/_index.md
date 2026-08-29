@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/space-exploration/guide/"
         is_sub: false
-  - group_title: "1. Why Explore Space"
+  - group_title: ""
     items:
       - title: "1. Why We Go"
         url: "/merit-badges/space-exploration/guide/req1/"
         is_sub: false
-  - group_title: "2. Space Pioneers"
+  - group_title: ""
     items:
       - title: "2. Collector Card Mission"
         url: "/merit-badges/space-exploration/guide/req2/"
         is_sub: false
-  - group_title: "3. Model Rocketry"
+  - group_title: ""
     items:
       - title: "3. Build, Launch, Recover"
         url: "/merit-badges/space-exploration/guide/req3/"
         is_sub: false
-  - group_title: "4. How Spaceflight Works"
+  - group_title: ""
     items:
       - title: "4. Rockets, Orbits, and Images"
         url: "/merit-badges/space-exploration/guide/req4/"
@@ -56,12 +56,12 @@ guide_nav:
       - title: "b International Space Station"
         url: "/merit-badges/space-exploration/guide/req6b/"
         is_sub: true
-  - group_title: "7. Living Beyond Earth"
+  - group_title: ""
     items:
       - title: "7. Design a Space Base"
         url: "/merit-badges/space-exploration/guide/req7/"
         is_sub: false
-  - group_title: "8. Careers in Space"
+  - group_title: ""
     items:
       - title: "8. Your Future in Space"
         url: "/merit-badges/space-exploration/guide/req8/"

@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/artificial-intelligence/guide/"
-  - group_title: "1. Key Concepts"
+  - group_title: ""
     items:
       - title: "1. Key AI Terms"
         url: "/merit-badges/artificial-intelligence/guide/req1/"
@@ -51,7 +51,7 @@ guide_nav:
       - title: "d The Turing Test"
         url: "/merit-badges/artificial-intelligence/guide/req4d/"
         is_sub: true
-  - group_title: "5. Deepfakes"
+  - group_title: ""
     items:
       - title: "5. Deepfakes"
         url: "/merit-badges/artificial-intelligence/guide/req5/"

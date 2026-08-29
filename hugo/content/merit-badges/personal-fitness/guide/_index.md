@@ -58,27 +58,27 @@ guide_nav:
       - title: "g Social & Family Time"
         url: "/merit-badges/personal-fitness/guide/req3g/"
         is_sub: true
-  - group_title: "4. Measuring Your Fitness"
+  - group_title: ""
     items:
       - title: "4. Fitness Assessments"
         url: "/merit-badges/personal-fitness/guide/req4/"
         is_sub: false
-  - group_title: "5. Your Pre-Assessment"
+  - group_title: ""
     items:
       - title: "5. Baseline Testing"
         url: "/merit-badges/personal-fitness/guide/req5/"
         is_sub: false
-  - group_title: "6. Planning Your Program"
+  - group_title: ""
     items:
       - title: "6. The 12-Week Program"
         url: "/merit-badges/personal-fitness/guide/req6/"
         is_sub: false
-  - group_title: "7. Completing the Program"
+  - group_title: ""
     items:
       - title: "7. Execute & Track"
         url: "/merit-badges/personal-fitness/guide/req7/"
         is_sub: false
-  - group_title: "8. Fitness Careers & Lifestyle"
+  - group_title: ""
     items:
       - title: "8. Future Career or Lifestyle"
         url: "/merit-badges/personal-fitness/guide/req8/"

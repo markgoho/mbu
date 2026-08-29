@@ -19,7 +19,7 @@ guide_nav:
       - title: "2. The Language of Metal"
         url: "/merit-badges/metalwork/guide/req2/"
         is_sub: false
-  - group_title: "3. Hands-On Fundamentals"
+  - group_title: ""
     items:
       - title: "3. Hardening, Softening & Tempering"
         url: "/merit-badges/metalwork/guide/req3/"
@@ -35,7 +35,7 @@ guide_nav:
       - title: "b Metalworking as a Hobby"
         url: "/merit-badges/metalwork/guide/req4b/"
         is_sub: true
-  - group_title: "5. Choose Your Craft"
+  - group_title: ""
     items:
       - title: "5. Choose Your Craft"
         url: "/merit-badges/metalwork/guide/req5/"

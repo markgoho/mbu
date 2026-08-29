@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/salesmanship/guide/"
         is_sub: false
-  - group_title: "1. Understanding the Role"
+  - group_title: ""
     items:
       - title: "1. What Great Salespeople Actually Do"
         url: "/merit-badges/salesmanship/guide/req1/"
         is_sub: false
-  - group_title: "2. Preparing to Sell Well"
+  - group_title: ""
     items:
       - title: "2. Research, Product Knowledge, and Follow-Up"
         url: "/merit-badges/salesmanship/guide/req2/"
         is_sub: false
-  - group_title: "3. Planning the Sale"
+  - group_title: ""
     items:
       - title: "3. Build a Sales Plan"
         url: "/merit-badges/salesmanship/guide/req3/"
         is_sub: false
-  - group_title: "4. Making the Pitch"
+  - group_title: ""
     items:
       - title: "4. Give a Sales Presentation"
         url: "/merit-badges/salesmanship/guide/req4/"
@@ -56,7 +56,7 @@ guide_nav:
       - title: "b Interview a Store Owner"
         url: "/merit-badges/salesmanship/guide/req6b/"
         is_sub: true
-  - group_title: "7. Sales as a Career"
+  - group_title: ""
     items:
       - title: "7. Explore Sales Careers"
         url: "/merit-badges/salesmanship/guide/req7/"

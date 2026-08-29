@@ -40,7 +40,7 @@ guide_nav:
       - title: "c New Resin Applications"
         url: "/merit-badges/composite-materials/guide/req3c/"
         is_sub: true
-  - group_title: "4. Real-World Composites"
+  - group_title: ""
     items:
       - title: "4. Explore the Industry"
         url: "/merit-badges/composite-materials/guide/req4/"
@@ -55,7 +55,7 @@ guide_nav:
       - title: "c Evaluating Your Work"
         url: "/merit-badges/composite-materials/guide/req5c/"
         is_sub: true
-  - group_title: "6. Your Composites Future"
+  - group_title: ""
     items:
       - title: "6. Careers & Hobbies"
         url: "/merit-badges/composite-materials/guide/req6/"

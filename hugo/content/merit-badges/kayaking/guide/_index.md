@@ -11,42 +11,42 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/kayaking/guide/"
         is_sub: false
-  - group_title: "1. Staying Safe on the Water"
+  - group_title: ""
     items:
       - title: "1. Hazards, Injuries & Safety Afloat"
         url: "/merit-badges/kayaking/guide/req1/"
         is_sub: false
-  - group_title: "2. Swimming Readiness"
+  - group_title: ""
     items:
       - title: "2. Swimmer Test Readiness"
         url: "/merit-badges/kayaking/guide/req2/"
         is_sub: false
-  - group_title: "3. Safety Gear"
+  - group_title: ""
     items:
       - title: "3. Life Jackets & Rescue Equipment"
         url: "/merit-badges/kayaking/guide/req3/"
         is_sub: false
-  - group_title: "4. Know Your Boat"
+  - group_title: ""
     items:
       - title: "4. Kayak Parts, Design & Care"
         url: "/merit-badges/kayaking/guide/req4/"
         is_sub: false
-  - group_title: "5. Paddling Fundamentals"
+  - group_title: ""
     items:
       - title: "5. Paddle Skills & Paddle Care"
         url: "/merit-badges/kayaking/guide/req5/"
         is_sub: false
-  - group_title: "6. Rescues & Recovery"
+  - group_title: ""
     items:
       - title: "6. Capsize Recovery Skills"
         url: "/merit-badges/kayaking/guide/req6/"
         is_sub: false
-  - group_title: "7. Solo Stroke Skills"
+  - group_title: ""
     items:
       - title: "7. Essential Kayak Strokes"
         url: "/merit-badges/kayaking/guide/req7/"
         is_sub: false
-  - group_title: "8. Boat Control"
+  - group_title: ""
     items:
       - title: "8. Maneuvering with Control"
         url: "/merit-badges/kayaking/guide/req8/"

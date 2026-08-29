@@ -10,23 +10,23 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/engineering/guide/"
-  - group_title: "1. How Things Work"
+  - group_title: ""
     items:
       - title: "1. Investigating a Manufactured Item"
         url: "/merit-badges/engineering/guide/req1/"
-  - group_title: "2. Great Engineering Achievements"
+  - group_title: ""
     items:
       - title: "2. Engineering That Changed the World"
         url: "/merit-badges/engineering/guide/req2/"
-  - group_title: "3. Types of Engineers"
+  - group_title: ""
     items:
       - title: "3. Six Fields of Engineering"
         url: "/merit-badges/engineering/guide/req3/"
-  - group_title: "4. Visiting an Engineer"
+  - group_title: ""
     items:
       - title: "4. Interview with an Engineer"
         url: "/merit-badges/engineering/guide/req4/"
-  - group_title: "5. The Design Process"
+  - group_title: ""
     items:
       - title: "5. Systems Engineering Design Project"
         url: "/merit-badges/engineering/guide/req5/"
@@ -55,15 +55,15 @@ guide_nav:
       - title: "g Building an Engineering Project"
         url: "/merit-badges/engineering/guide/req6g/"
         is_sub: true
-  - group_title: "7. The Professional Engineer"
+  - group_title: ""
     items:
       - title: "7. Professional Engineer Registration"
         url: "/merit-badges/engineering/guide/req7/"
-  - group_title: "8. Engineering Ethics"
+  - group_title: ""
     items:
       - title: "8. The Engineer"
         url: "/merit-badges/engineering/guide/req8/"
-  - group_title: "9. Engineering Careers"
+  - group_title: ""
     items:
       - title: "9. Exploring Engineering Careers"
         url: "/merit-badges/engineering/guide/req9/"

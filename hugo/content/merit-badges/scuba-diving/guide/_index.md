@@ -11,32 +11,32 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/scuba-diving/guide/"
         is_sub: false
-  - group_title: "1. Safety and Emergency Skills"
+  - group_title: ""
     items:
       - title: "1. Dive Safety Starts Here"
         url: "/merit-badges/scuba-diving/guide/req1/"
         is_sub: false
-  - group_title: "2. Water Readiness"
+  - group_title: ""
     items:
       - title: "2. Swimming Before Scuba"
         url: "/merit-badges/scuba-diving/guide/req2/"
         is_sub: false
-  - group_title: "3. Diver Responsibility"
+  - group_title: ""
     items:
       - title: "3. The Scuba Diver"
         url: "/merit-badges/scuba-diving/guide/req3/"
         is_sub: false
-  - group_title: "4. Certification Journey"
+  - group_title: ""
     items:
       - title: "4. Earning Open Water Certification"
         url: "/merit-badges/scuba-diving/guide/req4/"
         is_sub: false
-  - group_title: "5. Underwater Environments"
+  - group_title: ""
     items:
       - title: "5. Aquatic Ecosystems"
         url: "/merit-badges/scuba-diving/guide/req5/"
         is_sub: false
-  - group_title: "6. Scuba Careers"
+  - group_title: ""
     items:
       - title: "6. Careers Below the Surface"
         url: "/merit-badges/scuba-diving/guide/req6/"

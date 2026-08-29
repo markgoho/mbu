@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/gardening/guide/"
-  - group_title: "1. Safe Gardening"
+  - group_title: ""
     items:
       - title: "a Garden Safety & First Aid"
         url: "/merit-badges/gardening/guide/req1ab/"

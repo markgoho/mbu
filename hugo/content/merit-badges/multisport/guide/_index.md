@@ -11,17 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/multisport/guide/"
         is_sub: false
-  - group_title: "1. Safety and First Aid"
+  - group_title: ""
     items:
       - title: "1. Hazards and First Aid"
         url: "/merit-badges/multisport/guide/req1/"
         is_sub: false
-  - group_title: "2. Train Like an Athlete"
+  - group_title: ""
     items:
       - title: "2. Physical Readiness and Nutrition"
         url: "/merit-badges/multisport/guide/req2/"
         is_sub: false
-  - group_title: "3. Choose Your Format"
+  - group_title: ""
     items:
       - title: "3. Picking Your Event"
         url: "/merit-badges/multisport/guide/req3/"
@@ -73,12 +73,12 @@ guide_nav:
       - title: "d Aquabike Bike Skills"
         url: "/merit-badges/multisport/guide/req4d2/"
         is_sub: true
-  - group_title: "5. Build Your Plan"
+  - group_title: ""
     items:
       - title: "5. Build Your Four-Week Plan"
         url: "/merit-badges/multisport/guide/req5/"
         is_sub: false
-  - group_title: "6. Transitions"
+  - group_title: ""
     items:
       - title: "6. Set Up Your Transition Area"
         url: "/merit-badges/multisport/guide/req6/"

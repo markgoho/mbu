@@ -43,27 +43,27 @@ guide_nav:
       - title: "b pH & Indicators"
         url: "/merit-badges/chemistry/guide/req3b/"
         is_sub: true
-  - group_title: "4. Chemistry & Camping"
+  - group_title: ""
     items:
       - title: "4. Camping Chemistry"
         url: "/merit-badges/chemistry/guide/req4/"
         is_sub: false
-  - group_title: "5. Chemistry & the Environment"
+  - group_title: ""
     items:
       - title: "5. Reducing Environmental Impact"
         url: "/merit-badges/chemistry/guide/req5/"
         is_sub: false
-  - group_title: "6. Fields of Chemistry"
+  - group_title: ""
     items:
       - title: "6. Five Fields of Chemistry"
         url: "/merit-badges/chemistry/guide/req6/"
         is_sub: false
-  - group_title: "7. Government & Regulation"
+  - group_title: ""
     items:
       - title: "7. Government Agencies"
         url: "/merit-badges/chemistry/guide/req7/"
         is_sub: false
-  - group_title: "8. Chemistry Careers"
+  - group_title: ""
     items:
       - title: "8. Career Exploration"
         url: "/merit-badges/chemistry/guide/req8/"

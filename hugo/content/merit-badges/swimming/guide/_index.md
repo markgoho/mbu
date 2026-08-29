@@ -18,7 +18,7 @@ guide_nav:
       - title: "b Health Concerns"
         url: "/merit-badges/swimming/guide/req1b/"
         is_sub: true
-  - group_title: "2. Proving Your Skills"
+  - group_title: ""
     items:
       - title: "2. Swimmer Test"
         url: "/merit-badges/swimming/guide/req2/"
@@ -39,7 +39,7 @@ guide_nav:
       - title: "b Line Rescue"
         url: "/merit-badges/swimming/guide/req5b/"
         is_sub: true
-  - group_title: "6. Floating & Survival Skills"
+  - group_title: ""
     items:
       - title: "6. Floating & Survival"
         url: "/merit-badges/swimming/guide/req6/"
@@ -52,7 +52,7 @@ guide_nav:
       - title: "8. Standing & Shallow Dives"
         url: "/merit-badges/swimming/guide/req8/"
         is_sub: false
-  - group_title: "9. Swimming & Fitness"
+  - group_title: ""
     items:
       - title: "9. Fitness Benefits"
         url: "/merit-badges/swimming/guide/req9/"

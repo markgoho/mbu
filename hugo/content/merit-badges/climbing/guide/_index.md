@@ -21,11 +21,11 @@ guide_nav:
       - title: "c CPR Readiness"
         url: "/merit-badges/climbing/guide/req1c/"
         is_sub: true
-  - group_title: "2. Leave No Trace"
+  - group_title: ""
     items:
       - title: "2. Leave No Trace & Outdoor Code"
         url: "/merit-badges/climbing/guide/req2/"
-  - group_title: "3. Climbing Attire"
+  - group_title: ""
     items:
       - title: "3. Dressing for the Climb"
         url: "/merit-badges/climbing/guide/req3/"
@@ -43,39 +43,39 @@ guide_nav:
       - title: "d Emergency Planning"
         url: "/merit-badges/climbing/guide/req4d/"
         is_sub: true
-  - group_title: "5. Verbal Signals"
+  - group_title: ""
     items:
       - title: "5. Communication on the Wall"
         url: "/merit-badges/climbing/guide/req5/"
-  - group_title: "6. Rope Skills"
+  - group_title: ""
     items:
       - title: "6. Rope Care & Management"
         url: "/merit-badges/climbing/guide/req6/"
-  - group_title: "7. Knots"
+  - group_title: ""
     items:
       - title: "7. Essential Climbing Knots"
         url: "/merit-badges/climbing/guide/req7/"
-  - group_title: "8. Harness, Helmet & Gloves"
+  - group_title: ""
     items:
       - title: "8. Personal Protective Equipment"
         url: "/merit-badges/climbing/guide/req8/"
-  - group_title: "9. The CHECK System"
+  - group_title: ""
     items:
       - title: "9. Pre-Climb Safety Check"
         url: "/merit-badges/climbing/guide/req9/"
-  - group_title: "10. Belaying"
+  - group_title: ""
     items:
       - title: "10. Belaying Skills"
         url: "/merit-badges/climbing/guide/req10/"
-  - group_title: "11. Climbing"
+  - group_title: ""
     items:
       - title: "11. Climbing Technique"
         url: "/merit-badges/climbing/guide/req11/"
-  - group_title: "12. Rappelling"
+  - group_title: ""
     items:
       - title: "12. Rappelling Technique"
         url: "/merit-badges/climbing/guide/req12/"
-  - group_title: "13. Gear Storage"
+  - group_title: ""
     items:
       - title: "13. Storing Your Gear"
         url: "/merit-badges/climbing/guide/req13/"

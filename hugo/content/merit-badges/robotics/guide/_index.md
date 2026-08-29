@@ -11,17 +11,17 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/robotics/guide/"
         is_sub: false
-  - group_title: "1. Safe Robotics Work"
+  - group_title: ""
     items:
       - title: "1. Workshop Safety"
         url: "/merit-badges/robotics/guide/req1/"
         is_sub: false
-  - group_title: "2. How Robots Work in the World"
+  - group_title: ""
     items:
       - title: "2. Robots in Action"
         url: "/merit-badges/robotics/guide/req2/"
         is_sub: false
-  - group_title: "3. The Five Fields of Robotics"
+  - group_title: ""
     items:
       - title: "3. Core Robotics Systems"
         url: "/merit-badges/robotics/guide/req3/"
@@ -52,7 +52,7 @@ guide_nav:
       - title: "e Test, Record, Improve"
         url: "/merit-badges/robotics/guide/req4e/"
         is_sub: true
-  - group_title: "5. Demonstration Day"
+  - group_title: ""
     items:
       - title: "5. Show and Explain Your Robot"
         url: "/merit-badges/robotics/guide/req5/"

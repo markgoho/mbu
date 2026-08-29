@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/scouting-heritage/guide/"
         is_sub: false
-  - group_title: "1. The Founder's Story"
+  - group_title: ""
     items:
       - title: "1. Baden-Powell & the Birth of Scouting"
         url: "/merit-badges/scouting-heritage/guide/req1/"
@@ -36,7 +36,7 @@ guide_nav:
       - title: "a James E. West"
         url: "/merit-badges/scouting-heritage/guide/req2a5/"
         is_sub: true
-      - title: 'a "Green Bar Bill" Hillcourt'
+      - title: "a"
         url: "/merit-badges/scouting-heritage/guide/req2a6/"
         is_sub: true
       - title: "a Frederick Russell Burnham"
@@ -65,7 +65,7 @@ guide_nav:
       - title: "b Scout Life Magazine"
         url: "/merit-badges/scouting-heritage/guide/req2b4/"
         is_sub: true
-  - group_title: "3. Growing Scouting"
+  - group_title: ""
     items:
       - title: "3. How Scouting Grew for Every Age"
         url: "/merit-badges/scouting-heritage/guide/req3/"

@@ -11,32 +11,32 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/oceanography/guide/"
         is_sub: false
-  - group_title: "1. What Oceanography Covers"
+  - group_title: ""
     items:
       - title: "1. Branches of Oceanography"
         url: "/merit-badges/oceanography/guide/req1/"
         is_sub: false
-  - group_title: "2. How the Ocean Works"
+  - group_title: ""
     items:
       - title: "2. Seawater, Currents & Climate"
         url: "/merit-badges/oceanography/guide/req2/"
         is_sub: false
-  - group_title: "3. Ocean Motion"
+  - group_title: ""
     items:
       - title: "3. Waves, Breakers & Rip Currents"
         url: "/merit-badges/oceanography/guide/req3/"
         is_sub: false
-  - group_title: "4. Underwater Landscapes"
+  - group_title: ""
     items:
       - title: "4. The Shape of the Seafloor"
         url: "/merit-badges/oceanography/guide/req4/"
         is_sub: false
-  - group_title: "5. Ocean Chemistry"
+  - group_title: ""
     items:
       - title: "5. Seawater Chemistry"
         url: "/merit-badges/oceanography/guide/req5/"
         is_sub: false
-  - group_title: "6. Ocean Ecology"
+  - group_title: ""
     items:
       - title: "6. Life in Seawater"
         url: "/merit-badges/oceanography/guide/req6/"
@@ -84,7 +84,7 @@ guide_nav:
       - title: "c Give an Oceanography Speech"
         url: "/merit-badges/oceanography/guide/req8c/"
         is_sub: true
-  - group_title: "9. How Scientists Investigate"
+  - group_title: ""
     items:
       - title: "9. Tools of Ocean Science"
         url: "/merit-badges/oceanography/guide/req9/"

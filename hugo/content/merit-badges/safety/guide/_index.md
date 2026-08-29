@@ -11,42 +11,42 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/safety/guide/"
         is_sub: false
-  - group_title: "1. Safety Foundations"
+  - group_title: ""
     items:
       - title: "1. Safety and Hazards"
         url: "/merit-badges/safety/guide/req1/"
         is_sub: false
-  - group_title: "2. Home and Family Safety"
+  - group_title: ""
     items:
       - title: "2. Home Safety Plans"
         url: "/merit-badges/safety/guide/req2/"
         is_sub: false
-  - group_title: "3. Crime Prevention"
+  - group_title: ""
     items:
       - title: "3. Crime Awareness and Home Security"
         url: "/merit-badges/safety/guide/req3/"
         is_sub: false
-  - group_title: "4. Public Place Safety"
+  - group_title: ""
     items:
       - title: "4. Public Place Emergencies"
         url: "/merit-badges/safety/guide/req4/"
         is_sub: false
-  - group_title: "5. Safeguarding Youth"
+  - group_title: ""
     items:
       - title: "5. Keeping Scouting Safe"
         url: "/merit-badges/safety/guide/req5/"
         is_sub: false
-  - group_title: "6. Personal Safety"
+  - group_title: ""
     items:
       - title: "6. Avoiding Assault Risks"
         url: "/merit-badges/safety/guide/req6/"
         is_sub: false
-  - group_title: "7. Digital Safety"
+  - group_title: ""
     items:
       - title: "7. Smart Online Safety"
         url: "/merit-badges/safety/guide/req7/"
         is_sub: false
-  - group_title: "8. Travel Safety"
+  - group_title: ""
     items:
       - title: "8. Safer Ways to Travel"
         url: "/merit-badges/safety/guide/req8/"

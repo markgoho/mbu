@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/traffic-safety/guide/"
         is_sub: false
-  - group_title: "1. Impairment and Judgment"
+  - group_title: ""
     items:
       - title: "1. Preventing Impaired Driving"
         url: "/merit-badges/traffic-safety/guide/req1/"
         is_sub: false
-  - group_title: "2. Protection in the Vehicle"
+  - group_title: ""
     items:
       - title: "2. Vehicle Safety Basics"
         url: "/merit-badges/traffic-safety/guide/req2/"
         is_sub: false
-  - group_title: "3. Pre-Drive Safety Checkups"
+  - group_title: ""
     items:
       - title: "3. Maintenance and Emergency Stops"
         url: "/merit-badges/traffic-safety/guide/req3/"
         is_sub: false
-  - group_title: "4. Rules, Rights, and Responsibilities"
+  - group_title: ""
     items:
       - title: "4. Traffic Safety and the Law"
         url: "/merit-badges/traffic-safety/guide/req4/"
@@ -42,7 +42,7 @@ guide_nav:
       - title: "b Reading Signs, Signals, and Markings"
         url: "/merit-badges/traffic-safety/guide/req5b/"
         is_sub: true
-  - group_title: "6. Sharing Streets with Others"
+  - group_title: ""
     items:
       - title: "6. Sharing the Road Safely"
         url: "/merit-badges/traffic-safety/guide/req6/"
@@ -61,7 +61,7 @@ guide_nav:
       - title: "c Organize a Safety Event"
         url: "/merit-badges/traffic-safety/guide/req7c/"
         is_sub: true
-  - group_title: "8. Career Paths"
+  - group_title: ""
     items:
       - title: "8. Careers in Traffic Safety"
         url: "/merit-badges/traffic-safety/guide/req8/"

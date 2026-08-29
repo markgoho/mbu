@@ -38,17 +38,17 @@ guide_nav:
       - title: "h Flight Instruments"
         url: "/merit-badges/aviation/guide/req1h/"
         is_sub: true
-  - group_title: "2. Principles of Flight"
+  - group_title: ""
     items:
       - title: "2. Build & Fly"
         url: "/merit-badges/aviation/guide/req2/"
         is_sub: false
-  - group_title: "3. Flight Operations"
+  - group_title: ""
     items:
       - title: "3. Flight Operations"
         url: "/merit-badges/aviation/guide/req3/"
         is_sub: false
-  - group_title: "4. Airport Operations"
+  - group_title: ""
     items:
       - title: "4. Airport Operations"
         url: "/merit-badges/aviation/guide/req4/"

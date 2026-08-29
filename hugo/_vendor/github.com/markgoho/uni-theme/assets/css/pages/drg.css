@@ -282,16 +282,16 @@
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
-  min-height: 44px;
+  min-height: 40px;
   padding-inline: var(--space-xs);
   padding-block: var(--space-3xs);
   border-radius: var(--radius-md);
   color: var(--on-surface-muted);
   text-decoration: none;
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-weight: 500;
   font-size: var(--step--1);
-  line-height: 1.35;
+  line-height: 1.25;
   transition:
     background-color 0.2s,
     color 0.2s;
@@ -593,7 +593,7 @@
   font-weight: var(--font-weight-bold, 700);
   color: var(--on-surface-muted);
   opacity: 0.85;
-  min-width: var(--space-xs);
+  min-width: 1.65rem;
   flex-shrink: 0;
   letter-spacing: -0.02em;
 }
@@ -628,7 +628,7 @@
   font-weight: var(--font-weight-bold, 700);
   color: var(--on-surface-muted);
   opacity: 0.85;
-  min-width: var(--space-xs);
+  min-width: 1.65rem;
   flex-shrink: 0;
 }
 

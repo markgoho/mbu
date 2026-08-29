@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/first-aid/guide/"
         is_sub: false
-  - group_title: "1. Handling Emergencies"
+  - group_title: ""
     items:
       - title: "1. Handling an Emergency"
         url: "/merit-badges/first-aid/guide/req1/"
@@ -24,27 +24,27 @@ guide_nav:
       - title: "b First Aid Kits"
         url: "/merit-badges/first-aid/guide/req2b/"
         is_sub: true
-  - group_title: "3. Wounds Without External Bleeding"
+  - group_title: ""
     items:
       - title: "3. Burns, Bites & Skin Injuries"
         url: "/merit-badges/first-aid/guide/req3/"
         is_sub: false
-  - group_title: "4. Bleeding Wounds"
+  - group_title: ""
     items:
       - title: "4. Bleeding Control"
         url: "/merit-badges/first-aid/guide/req4/"
         is_sub: false
-  - group_title: "5. Breathing Emergencies"
+  - group_title: ""
     items:
       - title: "5. Choking, Asthma & Altitude"
         url: "/merit-badges/first-aid/guide/req5/"
         is_sub: false
-  - group_title: "6. Loss of Consciousness"
+  - group_title: ""
     items:
       - title: "6. Fainting, Seizures & Drowning"
         url: "/merit-badges/first-aid/guide/req6/"
         is_sub: false
-  - group_title: "7. Heart Attack & CPR"
+  - group_title: ""
     items:
       - title: "7. CPR and AED"
         url: "/merit-badges/first-aid/guide/req7/"
@@ -66,32 +66,32 @@ guide_nav:
       - title: "e Splinting Fractures"
         url: "/merit-badges/first-aid/guide/req8e/"
         is_sub: true
-  - group_title: "9. Head & Spine Injuries"
+  - group_title: ""
     items:
       - title: "9. Head, Neck & Back"
         url: "/merit-badges/first-aid/guide/req9/"
         is_sub: false
-  - group_title: "10. Moving a Patient"
+  - group_title: ""
     items:
       - title: "10. Patient Transport"
         url: "/merit-badges/first-aid/guide/req10/"
         is_sub: false
-  - group_title: "11. Heat & Cold Conditions"
+  - group_title: ""
     items:
       - title: "11. Temperature Emergencies"
         url: "/merit-badges/first-aid/guide/req11/"
         is_sub: false
-  - group_title: "12. Mental Health & Stress"
+  - group_title: ""
     items:
       - title: "12. Mental Health First Aid"
         url: "/merit-badges/first-aid/guide/req12/"
         is_sub: false
-  - group_title: "13. Miscellaneous Conditions"
+  - group_title: ""
     items:
       - title: "13. Eyes, Teeth & Strokes"
         url: "/merit-badges/first-aid/guide/req13/"
         is_sub: false
-  - group_title: "14. Teaching First Aid"
+  - group_title: ""
     items:
       - title: "14. Teaching with EDGE"
         url: "/merit-badges/first-aid/guide/req14/"

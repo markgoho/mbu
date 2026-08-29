@@ -22,7 +22,7 @@ guide_nav:
       - title: "c Breeds and Breed Stories"
         url: "/merit-badges/dog-care/guide/req1c/"
         is_sub: true
-  - group_title: "2. Knowing Your Dog"
+  - group_title: ""
     items:
       - title: "2. Dog Body Parts"
         url: "/merit-badges/dog-care/guide/req2/"
@@ -38,12 +38,12 @@ guide_nav:
       - title: "c Choosing the Right Dog"
         url: "/merit-badges/dog-care/guide/req3c/"
         is_sub: true
-  - group_title: "4. Daily Care"
+  - group_title: ""
     items:
       - title: "4. Two-Month Care Log"
         url: "/merit-badges/dog-care/guide/req4/"
         is_sub: false
-  - group_title: "5. Teaching Good Habits"
+  - group_title: ""
     items:
       - title: "5. Obedience Basics"
         url: "/merit-badges/dog-care/guide/req5/"

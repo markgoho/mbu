@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/backpacking/guide/"
-  - group_title: "1. Trail Health & Safety"
+  - group_title: ""
     items:
       - title: "1. Trail Health & First Aid"
         url: "/merit-badges/backpacking/guide/req1/"
@@ -23,7 +23,7 @@ guide_nav:
       - title: "b Reducing Pack Weight"
         url: "/merit-badges/backpacking/guide/req2b/"
         is_sub: true
-  - group_title: "3. Crew Organization"
+  - group_title: ""
     items:
       - title: "3. Crew Organization & Safety"
         url: "/merit-badges/backpacking/guide/req3/"
@@ -39,37 +39,37 @@ guide_nav:
       - title: "c Choosing a Campsite"
         url: "/merit-badges/backpacking/guide/req4c/"
         is_sub: true
-  - group_title: "5. Water on the Trail"
+  - group_title: ""
     items:
       - title: "5. Water Treatment & Hydration"
         url: "/merit-badges/backpacking/guide/req5/"
         is_sub: false
-  - group_title: "6. Navigation"
+  - group_title: ""
     items:
       - title: "6. Navigation"
         url: "/merit-badges/backpacking/guide/req6/"
         is_sub: false
-  - group_title: "7. Weather"
+  - group_title: ""
     items:
       - title: "7. Weather Preparedness"
         url: "/merit-badges/backpacking/guide/req7/"
         is_sub: false
-  - group_title: "8. Backcountry Cooking"
+  - group_title: ""
     items:
       - title: "8. Stoves & Backcountry Cooking"
         url: "/merit-badges/backpacking/guide/req8/"
         is_sub: false
-  - group_title: "9. Your First Trek"
+  - group_title: ""
     items:
       - title: "9. Planning & Packing"
         url: "/merit-badges/backpacking/guide/req9/"
         is_sub: false
-  - group_title: "10. Hit the Trail"
+  - group_title: ""
     items:
       - title: "10. Three-Day Treks"
         url: "/merit-badges/backpacking/guide/req10/"
         is_sub: false
-  - group_title: "11. The Big Trek"
+  - group_title: ""
     items:
       - title: "11. The Big Trek"
         url: "/merit-badges/backpacking/guide/req11/"

@@ -11,7 +11,7 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/radio/guide/"
         is_sub: false
-  - group_title: "1. Radio Safety"
+  - group_title: ""
     items:
       - title: "1. Radio Safety"
         url: "/merit-badges/radio/guide/req1/"
@@ -24,32 +24,32 @@ guide_nav:
       - title: "b Radio Basics"
         url: "/merit-badges/radio/guide/req2b/"
         is_sub: true
-  - group_title: "3. How Radio Waves Travel"
+  - group_title: ""
     items:
       - title: "3. Wave Propagation"
         url: "/merit-badges/radio/guide/req3/"
         is_sub: false
-  - group_title: "4. Information by Radio"
+  - group_title: ""
     items:
       - title: "4. Modulation & Data"
         url: "/merit-badges/radio/guide/req4/"
         is_sub: false
-  - group_title: "5. Radio Hardware & Services"
+  - group_title: ""
     items:
       - title: "5. Equipment & Devices"
         url: "/merit-badges/radio/guide/req5/"
         is_sub: false
-  - group_title: "6. Radio Regulation"
+  - group_title: ""
     items:
       - title: "6. FCC, ITU & Call Signs"
         url: "/merit-badges/radio/guide/req6/"
         is_sub: false
-  - group_title: "7. Cell Phones"
+  - group_title: ""
     items:
       - title: "7. Cellular Technology"
         url: "/merit-badges/radio/guide/req7/"
         is_sub: false
-  - group_title: "8. Amateur & Professional Radio"
+  - group_title: ""
     items:
       - title: "8. Choose Your Option"
         url: "/merit-badges/radio/guide/req8/"

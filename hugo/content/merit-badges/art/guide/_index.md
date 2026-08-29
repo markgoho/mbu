@@ -10,7 +10,7 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/art/guide/"
-  - group_title: "1. What Is Art?"
+  - group_title: ""
     items:
       - title: "1. Understanding Art"
         url: "/merit-badges/art/guide/req1/"

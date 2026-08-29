@@ -11,27 +11,27 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/mining-in-society/guide/"
         is_sub: false
-  - group_title: "1. Minerals All Around You"
+  - group_title: ""
     items:
       - title: "1. Minerals in Everyday Life"
         url: "/merit-badges/mining-in-society/guide/req1/"
         is_sub: false
-  - group_title: "2. Mining on the Map"
+  - group_title: ""
     items:
       - title: "2. Mapping Mines and Resources"
         url: "/merit-badges/mining-in-society/guide/req2/"
         is_sub: false
-  - group_title: "3. Safety Underground and on the Surface"
+  - group_title: ""
     items:
       - title: "3. Mine Safety and Protective Gear"
         url: "/merit-badges/mining-in-society/guide/req3/"
         is_sub: false
-  - group_title: "4. Stay Out and Stay Safe"
+  - group_title: ""
     items:
       - title: "4. Why Abandoned Mines Are Dangerous"
         url: "/merit-badges/mining-in-society/guide/req4/"
         is_sub: false
-  - group_title: "5. Choose Your Mining Experience"
+  - group_title: ""
     items:
       - title: "5. Choose Your Mining Experience"
         url: "/merit-badges/mining-in-society/guide/req5/"
@@ -66,12 +66,12 @@ guide_nav:
       - title: "f Your Community"
         url: "/merit-badges/mining-in-society/guide/req5f/"
         is_sub: true
-  - group_title: "6. Reclamation and Sustainability"
+  - group_title: ""
     items:
       - title: "6. Mining, Reclamation, and Sustainability"
         url: "/merit-badges/mining-in-society/guide/req6/"
         is_sub: false
-  - group_title: "7. Choose a Future-Focused Topic"
+  - group_title: ""
     items:
       - title: "7. Choose a Future-Focused Topic"
         url: "/merit-badges/mining-in-society/guide/req7/"
@@ -96,7 +96,7 @@ guide_nav:
       - title: "d Commodity Prices and Trends"
         url: "/merit-badges/mining-in-society/guide/req7d/"
         is_sub: true
-  - group_title: "8. Careers in Mining and Minerals"
+  - group_title: ""
     items:
       - title: "8. Careers in Mining and Minerals"
         url: "/merit-badges/mining-in-society/guide/req8/"

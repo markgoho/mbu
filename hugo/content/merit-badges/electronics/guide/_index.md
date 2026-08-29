@@ -10,15 +10,15 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/electronics/guide/"
-  - group_title: "1. Electrical Safety"
+  - group_title: ""
     items:
       - title: "1. Safety Precautions"
         url: "/merit-badges/electronics/guide/req1/"
-  - group_title: "2. Schematic Diagrams"
+  - group_title: ""
     items:
       - title: "2. Reading & Drawing Schematics"
         url: "/merit-badges/electronics/guide/req2/"
-  - group_title: "3. Soldering Skills"
+  - group_title: ""
     items:
       - title: "3. Soldering Techniques"
         url: "/merit-badges/electronics/guide/req3/"
@@ -47,7 +47,7 @@ guide_nav:
       - title: "d Through Hole vs. Surface Mount"
         url: "/merit-badges/electronics/guide/req5d/"
         is_sub: true
-  - group_title: "6. Electronics Careers"
+  - group_title: ""
     items:
       - title: "6. Career Exploration"
         url: "/merit-badges/electronics/guide/req6/"

@@ -11,37 +11,37 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/geocaching/guide/"
         is_sub: false
-  - group_title: "1. Safe Adventures"
+  - group_title: ""
     items:
       - title: "1. Safety, First Aid, and Planning"
         url: "/merit-badges/geocaching/guide/req1/"
         is_sub: false
-  - group_title: "2. Ethics in the Field"
+  - group_title: ""
     items:
       - title: "2. Geocaching Etiquette and Leave No Trace"
         url: "/merit-badges/geocaching/guide/req2/"
         is_sub: false
-  - group_title: "3. Geocaching Language"
+  - group_title: ""
     items:
       - title: "3. Geocaching Terms and Ratings"
         url: "/merit-badges/geocaching/guide/req3/"
         is_sub: false
-  - group_title: "4. Using GPS"
+  - group_title: ""
     items:
       - title: "4. How GPS Works and How to Teach It"
         url: "/merit-badges/geocaching/guide/req4/"
         is_sub: false
-  - group_title: "5. Backup Navigation"
+  - group_title: ""
     items:
       - title: "5. Maps, Compass, and Navigation Choices"
         url: "/merit-badges/geocaching/guide/req5/"
         is_sub: false
-  - group_title: "6. Your First Find"
+  - group_title: ""
     items:
       - title: "6. The Four Steps to Finding a Cache"
         url: "/merit-badges/geocaching/guide/req6/"
         is_sub: false
-  - group_title: "7. Finding Local Caches"
+  - group_title: ""
     items:
       - title: "7. Research and Find a Public Cache"
         url: "/merit-badges/geocaching/guide/req7/"
@@ -63,7 +63,7 @@ guide_nav:
       - title: "d Cache In Trash Out Leadership"
         url: "/merit-badges/geocaching/guide/req8d/"
         is_sub: true
-  - group_title: "9. Leading a Geohunt"
+  - group_title: ""
     items:
       - title: "9. Plan and Run a Geohunt"
         url: "/merit-badges/geocaching/guide/req9/"

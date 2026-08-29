@@ -11,22 +11,22 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/programming/guide/"
         is_sub: false
-  - group_title: "1. Safety and Healthy Coding"
+  - group_title: ""
     items:
       - title: "1. Digital Safety and Coding Health"
         url: "/merit-badges/programming/guide/req1/"
         is_sub: false
-  - group_title: "2. From Early Machines to Modern Code"
+  - group_title: ""
     items:
       - title: "2. From Punch Cards to Python"
         url: "/merit-badges/programming/guide/req2/"
         is_sub: false
-  - group_title: "3. How Software Fits the World"
+  - group_title: ""
     items:
       - title: "3. Languages and Everyday Code"
         url: "/merit-badges/programming/guide/req3/"
         is_sub: false
-  - group_title: "4. Respecting Software Rights"
+  - group_title: ""
     items:
       - title: "4. Intellectual Property and Software Use"
         url: "/merit-badges/programming/guide/req4/"

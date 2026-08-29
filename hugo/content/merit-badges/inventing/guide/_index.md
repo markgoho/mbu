@@ -11,12 +11,12 @@ guide_nav:
       - title: "Introduction & Overview"
         url: "/merit-badges/inventing/guide/"
         is_sub: false
-  - group_title: "1. Why Inventions Matter"
+  - group_title: ""
     items:
       - title: "1. What Inventing Does"
         url: "/merit-badges/inventing/guide/req1/"
         is_sub: false
-  - group_title: "2. Learning from Inventors"
+  - group_title: ""
     items:
       - title: "2. Choose Your Research Path"
         url: "/merit-badges/inventing/guide/req2/"
@@ -31,32 +31,32 @@ guide_nav:
       - title: "b Study Inventors"
         url: "/merit-badges/inventing/guide/req2b/"
         is_sub: true
-  - group_title: "3. Protecting Ideas"
+  - group_title: ""
     items:
       - title: "3. Intellectual Property & Patents"
         url: "/merit-badges/inventing/guide/req3/"
         is_sub: false
-  - group_title: "4. Sharing Responsibly"
+  - group_title: ""
     items:
       - title: "4. Inventions That Should Be Shared"
         url: "/merit-badges/inventing/guide/req4/"
         is_sub: false
-  - group_title: "5. Improving Gear"
+  - group_title: ""
     items:
       - title: "5. Rethink a Camping Product"
         url: "/merit-badges/inventing/guide/req5/"
         is_sub: false
-  - group_title: "6. From Problem to Model"
+  - group_title: ""
     items:
       - title: "6. Plan Your Invention"
         url: "/merit-badges/inventing/guide/req6/"
         is_sub: false
-  - group_title: "7. Build and Test"
+  - group_title: ""
     items:
       - title: "7. Prototype, Test, Improve"
         url: "/merit-badges/inventing/guide/req7/"
         is_sub: false
-  - group_title: "8. Inventing in the Real World"
+  - group_title: ""
     items:
       - title: "8. Choose an Inventing Experience"
         url: "/merit-badges/inventing/guide/req8/"
@@ -71,7 +71,7 @@ guide_nav:
       - title: "b Visit an Inventing Exhibit"
         url: "/merit-badges/inventing/guide/req8b/"
         is_sub: true
-  - group_title: "9. Creative Futures"
+  - group_title: ""
     items:
       - title: "9. Skills and Careers of Inventors"
         url: "/merit-badges/inventing/guide/req9/"

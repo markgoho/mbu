@@ -10,12 +10,12 @@ guide_nav:
     items:
       - title: "Introduction & Overview"
         url: "/merit-badges/theater/guide/"
-  - group_title: "1. The Audience Experience"
+  - group_title: ""
     items:
       - title: "1. Watching & Reviewing Plays"
         url: "/merit-badges/theater/guide/req1/"
         is_sub: false
-  - group_title: "2. The Playwright's Craft"
+  - group_title: ""
     items:
       - title: "2. Writing a One-Act Play"
         url: "/merit-badges/theater/guide/req2/"
@@ -55,12 +55,12 @@ guide_nav:
       - title: "j Musical Direction"
         url: "/merit-badges/theater/guide/req3j/"
         is_sub: true
-  - group_title: "4. The Art of Silence"
+  - group_title: ""
     items:
       - title: "4. Mime & Pantomime"
         url: "/merit-badges/theater/guide/req4/"
         is_sub: false
-  - group_title: "5. Speaking the Language"
+  - group_title: ""
     items:
       - title: "5. Theater Terminology"
         url: "/merit-badges/theater/guide/req5/"

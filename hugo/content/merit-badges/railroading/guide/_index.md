@@ -28,7 +28,7 @@ guide_nav:
       - title: "d How Locomotives Make Power"
         url: "/merit-badges/railroading/guide/req1d/"
         is_sub: true
-  - group_title: "2. Passenger Rail & Transit"
+  - group_title: ""
     items:
       - title: "2. Passenger Rail in America"
         url: "/merit-badges/railroading/guide/req2/"
@@ -50,22 +50,22 @@ guide_nav:
       - title: "d Interview a Rail Professional"
         url: "/merit-badges/railroading/guide/req3d/"
         is_sub: true
-  - group_title: "4. Rail Safety Basics"
+  - group_title: ""
     items:
       - title: "4. Track Safety and Safe Behavior"
         url: "/merit-badges/railroading/guide/req4/"
         is_sub: false
-  - group_title: "5. Crossing Signs & Signals"
+  - group_title: ""
     items:
       - title: "5. Reading Railroad Signs"
         url: "/merit-badges/railroading/guide/req5/"
         is_sub: false
-  - group_title: "6. Train Communication Systems"
+  - group_title: ""
     items:
       - title: "6. Signals, Horns, and Rear-End Devices"
         url: "/merit-badges/railroading/guide/req6/"
         is_sub: false
-  - group_title: "7. Choose a Special Interest"
+  - group_title: ""
     items:
       - title: "7. Choose a Special Interest"
         url: "/merit-badges/railroading/guide/req7/"

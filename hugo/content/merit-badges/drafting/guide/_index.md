@@ -18,37 +18,37 @@ guide_nav:
       - title: "b Title Block Lettering"
         url: "/merit-badges/drafting/guide/req1b/"
         is_sub: true
-  - group_title: "2. Manual Drafting Project"
+  - group_title: ""
     items:
       - title: "2. Choose Your Drawing Type"
         url: "/merit-badges/drafting/guide/req2/"
         is_sub: false
-  - group_title: "3. CAD Drawing Project"
+  - group_title: ""
     items:
       - title: "3. CAD Design"
         url: "/merit-badges/drafting/guide/req3/"
         is_sub: false
-  - group_title: "4. Revisions & Redlines"
+  - group_title: ""
     items:
       - title: "4. Review & Revision Process"
         url: "/merit-badges/drafting/guide/req4/"
         is_sub: false
-  - group_title: "5. Comparing Manual & CAD"
+  - group_title: ""
     items:
       - title: "5. Manual vs. CAD Discussion"
         url: "/merit-badges/drafting/guide/req5/"
         is_sub: false
-  - group_title: "6. Gothic Lettering & CAD Benefits"
+  - group_title: ""
     items:
       - title: "6. Lettering Your Opinion"
         url: "/merit-badges/drafting/guide/req6/"
         is_sub: false
-  - group_title: "7. Drafting in the Real World"
+  - group_title: ""
     items:
       - title: "7. Workplace Visit or Research"
         url: "/merit-badges/drafting/guide/req7/"
         is_sub: false
-  - group_title: "8. Careers in Drafting"
+  - group_title: ""
     items:
       - title: "8. Drafting Career Exploration"
         url: "/merit-badges/drafting/guide/req8/"

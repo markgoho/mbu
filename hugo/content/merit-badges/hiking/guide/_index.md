@@ -29,7 +29,7 @@ guide_nav:
       - title: "c Outdoor Code"
         url: "/merit-badges/hiking/guide/req2c/"
         is_sub: true
-  - group_title: "3. Fitness & Conditioning"
+  - group_title: ""
     items:
       - title: "3. Aerobic Activity"
         url: "/merit-badges/hiking/guide/req3/"
