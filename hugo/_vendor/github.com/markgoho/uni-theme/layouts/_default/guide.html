@@ -29,7 +29,8 @@
 {{ define "main-class" }}req-page req-page-main{{ end }}
 
 {{ define "main" }}
-  {{ $guideNav := .Params.guide_nav | default .CurrentSection.Params.guide_nav | default .Parent.Params.guide_nav }}
+  {{ $navData := partial "drg/resolve-nav.html" . }}
+  {{ $guideNav := $navData.guide_nav }}
   {{ $identity := .Params.identity | default .CurrentSection.Params.identity | default .Parent.Params.identity }}
   {{ $reqUrl := "" }}
   {{ with .CurrentSection.Parent }}
@@ -67,7 +68,7 @@
           {{ end }}
           {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
           <header class="req-header">
-            {{ with .Params.group_title }}
+            {{ with $navData.group_title }}
               <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
             {{ end }}
             <h1 class="req-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
@@ -81,29 +82,21 @@
         {{ .Content }}
 
         <nav class="req-footer-nav" aria-label="Guide pagination">
-          {{ with .Params.prev }}
+          {{ with $navData.prev }}
             <a
               href="{{ . }}"
               class="req-footer-nav__link req-footer-nav__link--prev">
               <span class="req-footer-nav__label">Previous</span>
-              <span class="req-footer-nav__title">
-                {{ with $.Params.prev_title }}
-                  {{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}
-                {{ else }}
-                  Previous Page
-                {{ end }}
-              </span>
+              <span class="req-footer-nav__title">{{ $navData.prev_title | default "Previous Page" }}</span>
             </a>
           {{ end }}
 
-          {{ with .Params.next }}
+          {{ with $navData.next }}
             <a
               href="{{ . }}"
               class="req-footer-nav__link req-footer-nav__link--next">
               <span class="req-footer-nav__label">Next</span>
-              <span class="req-footer-nav__title">
-                {{ with $.Params.next_title }}{{ replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" . }}{{ else }}Next Page{{ end }}
-              </span>
+              <span class="req-footer-nav__title">{{ $navData.next_title | default "Next Page" }}</span>
             </a>
           {{ end }}
         </nav>
