@@ -755,6 +755,7 @@
 .req-table-desktop {
   display: block;
   overflow-x: auto;
+  margin: 0;
   -webkit-overflow-scrolling: touch;
   border-radius: var(--radius-md);
   border: 1px solid var(--outline-variant);
@@ -790,14 +791,18 @@
   }
 }
 
-/* --- 2. Mobile Grid Cards View --- */
+/* --- 2. Mobile Grid Cards View (Semantic List of Articles) --- */
 .req-table-cards {
   display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .req-card-item {
   display: flex;
   flex-direction: column;
+  list-style: none;
   background-color: var(--surface-raised);
   border: 1px solid var(--card-border-subtle);
   border-radius: var(--radius-lg);
@@ -817,6 +822,7 @@
 }
 
 .req-card-item__title {
+  margin: 0;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -847,38 +853,42 @@
   }
 }
 
-.req-card-item__body {
-  display: flex;
-  flex-direction: column;
-}
-
-.req-card-item__row {
+.req-card-item__grid {
   display: grid;
   grid-template-columns: minmax(105px, 32%) 1fr;
   gap: var(--space-xs);
-  padding: var(--space-xs) var(--space-m);
-  border-bottom: 1px solid var(--card-border-subtle);
+  margin: 0;
+  padding: var(--space-2xs) var(--space-m) var(--space-s);
   align-items: baseline;
-  font-size: var(--step--1);
-  line-height: var(--line-height-base);
-
-  &:last-child {
-    border-bottom: none;
-    padding-bottom: var(--space-s);
-  }
 }
 
 .req-card-item__label {
+  margin: 0;
+  padding-block: var(--space-xs);
   font-weight: var(--font-weight-bold);
   font-size: var(--step--2);
   color: var(--on-surface-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: var(--line-height-tight);
+  border-bottom: 1px solid var(--card-border-subtle);
+
+  &:nth-last-of-type(1) {
+    border-bottom: none;
+  }
 }
 
 .req-card-item__value {
+  margin: 0;
+  padding-block: var(--space-xs);
   color: var(--on-surface);
+  font-size: var(--step--1);
+  line-height: var(--line-height-base);
+  border-bottom: 1px solid var(--card-border-subtle);
+
+  &:nth-last-of-type(1) {
+    border-bottom: none;
+  }
 }
 
 /* Container Query Switch: below 600px, switch to Grid Cards */

@@ -1,4 +1,4 @@
-<div class="req-table-container">
+<section class="req-table-container">
   {{- $headers := slice -}}
   {{- with .THead }}
     {{- range . }}
@@ -8,8 +8,8 @@
     {{- end }}
   {{- end }}
 
-  {{/* 1. Desktop / Wide Table Representation */}}
-  <div class="req-table-desktop" tabindex="0" aria-label="Scrollable table">
+  {{/* 1. Desktop / Wide Table */}}
+  <figure class="req-table-desktop" tabindex="0" aria-label="Data table">
     <table>
       {{- with .THead }}
         <thead>
@@ -32,30 +32,28 @@
         {{- end }}
       </tbody>
     </table>
-  </div>
+  </figure>
 
-  {{/* 2. Mobile / Narrow Container Dedicated CSS Grid Cards */}}
-  <div class="req-table-cards" role="list">
+  {{/* 2. Mobile Semantic Grid Cards (Zero Divs) */}}
+  <ul class="req-table-cards">
     {{- range .TBody }}
       {{- $firstCell := index . 0 -}}
-      <article class="req-card-item" role="listitem">
+      <li class="req-card-item">
         {{- with $firstCell }}
           <header class="req-card-item__header">
-            <div class="req-card-item__title">{{ .Text }}</div>
+            <h3 class="req-card-item__title">{{ .Text }}</h3>
           </header>
         {{- end }}
-        <div class="req-card-item__body">
+        <dl class="req-card-item__grid">
           {{- range $i, $cell := . }}
             {{- if gt $i 0 }}
               {{- $label := index $headers $i | default "" -}}
-              <div class="req-card-item__row">
-                <span class="req-card-item__label">{{ $label }}</span>
-                <span class="req-card-item__value"{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{ .Text }}</span>
-              </div>
+              <dt class="req-card-item__label">{{ $label }}</dt>
+              <dd class="req-card-item__value"{{ with .Alignment }} style="text-align: {{ . }};"{{ end }}>{{ .Text }}</dd>
             {{- end }}
           {{- end }}
-        </div>
-      </article>
+        </dl>
+      </li>
     {{- end }}
-  </div>
-</div>
+  </ul>
+</section>
