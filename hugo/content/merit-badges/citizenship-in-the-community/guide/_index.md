@@ -11,6 +11,8 @@ Your community is more than the place where you live. It is the people, the serv
 
 This is one of the Eagle-required merit badges, and for good reason. A Scout is expected to be a leader not just in the wilderness, but in the community. This guide will help you discover what it really means to be an active, informed citizen right where you are.
 
+{{< related-guide rank="first-class" req="9a" title="First Class Civic Rights & Duties Guide" description="Explore constitutional rights, civic obligations, community service, and environmental stewardship for First Class rank." />}}
+
 ## Then and Now
 
 ### Then — The Town Meeting

@@ -11,6 +11,9 @@ Pioneering is the art of turning rope, poles, planning, and teamwork into someth
 
 This badge matters because it teaches you to build with purpose. You are not just tying knots for inspection. You are learning how to choose the right rope, control loads, anchor a structure, and work with a team so the finished project is both useful and safe.
 
+{{< related-guide rank="first-class" req="3a" title="First Class Lashings & Camp Gadgets Guide" description="Master timber hitches, square lashings, shear lashings, and diagonal lashings for First Class rank." />}}
+{{< related-guide rank="tenderfoot" req="3a" title="Tenderfoot Knots & Hitches Guide" description="Learn two half-hitches, the taut-line hitch, and whip/fuse rope ends for Tenderfoot rank." />}}
+
 ## Then and Now
 
 ### Then

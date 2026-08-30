@@ -13,6 +13,9 @@ Every year, thousands of lives are saved — not by paramedics, not by surgeons,
 
 First Aid is one of the oldest and most respected merit badges in Scouting. It covers an extraordinary range of skills: from recognizing when someone has gone into shock to performing hands-only CPR, from pulling a fishhook out of a finger to managing a suspected spinal injury. When you earn this badge, you don't just add it to your sash — you carry it everywhere you go.
 
+{{< related-guide rank="tenderfoot" req="4a" title="Tenderfoot First Aid Guide" description="Master basic wound care, first aid kit essentials, and emergency response for the Tenderfoot rank." />}}
+{{< related-guide rank="first-class" req="7a" title="First Class Advanced First Aid Guide" description="Learn splinting, emergency transports, hypothermia, shock, and search-and-rescue techniques for First Class." />}}
+
 ## Then and Now
 
 ### Then

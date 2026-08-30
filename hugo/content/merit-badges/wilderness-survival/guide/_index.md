@@ -11,6 +11,9 @@ next_title: "Backcountry Injuries & Conditions"
 
 Wilderness survival isn't about thriving in the backcountry for months on end—it's about making smart decisions and staying calm when things go wrong. Whether you're stranded after a hiking accident, lost in unfamiliar terrain, or caught by sudden weather, survival comes down to three things: knowing what to do, having the right supplies, and keeping your wits about you. This merit badge teaches you the practical skills that can make the difference between a scary situation and a dangerous one.
 
+{{< related-guide rank="first-class" req="7d" title="First Class Wilderness Hazards & Survival Guide" description="Learn to handle extreme weather, wilderness hazards, emergency signals, and backcountry safety for First Class rank." />}}
+{{< related-guide rank="second-class" req="6e" title="Second Class Hypothermia & Cold Weather Safety" description="Learn hypothermia symptoms, prevention, warming procedures, and outdoor environmental safety for Second Class rank." />}}
+
 ## History: Then and Now
 
 ### Then: Early Survival Skills

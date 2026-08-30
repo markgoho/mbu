@@ -11,6 +11,8 @@ Every great adventure begins with a single step — and the Hiking merit badge i
 
 Hiking is one of the oldest human activities. It builds endurance, teaches self-reliance, and puts you face-to-face with the beauty and challenges of nature. This merit badge will prepare you to hike safely, hike responsibly, and hike with confidence — no matter where the trail takes you.
 
+{{< related-guide rank="second-class" req="3a" title="Second Class 5-Mile Hike & Navigation Guide" description="Learn map and compass navigation, hiking safety rules, pacing, and 5-mile hike planning for Second Class rank." />}}
+
 ## Then and Now
 
 ### Then — The Hike of Necessity

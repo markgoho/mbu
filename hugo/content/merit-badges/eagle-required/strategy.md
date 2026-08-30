@@ -13,9 +13,9 @@ Every Eagle Scout earns 14 Eagle-required badges and 7 electives across their Sc
 
 | Rank You Are Working On | Eagle-Required Badges Needed | Electives Needed | Total Badges for This Rank |
 | :--- | :--- | :--- | :--- |
-| Star Rank | 4 Eagle-Required | 2 Electives | 6 Total Badges |
-| Life Rank | 3 more (7 total) | 2 more (4 total) | 11 Total Badges |
-| Eagle Scout | 7 more (14 total) | 3 more (7 total) | 21 Total Badges |
+| {{< cross-link rank="star" text="Star Rank" />}} | 4 Eagle-Required | 2 Electives | 6 Total Badges |
+| {{< cross-link rank="life" text="Life Rank" />}} | 3 more (7 total) | 2 more (4 total) | 11 Total Badges |
+| {{< cross-link rank="eagle" text="Eagle Scout" />}} | 7 more (14 total) | 3 more (7 total) | 21 Total Badges |
 
 ### The 14 Eagle-Required Badges
 
@@ -69,10 +69,10 @@ For the three option groups, pick the badge that fits your skills, interests, an
 
 | Your Rank Goal | Eagle Badges to Focus On | Elective Badges to Try | What to Accomplish |
 | :--- | :--- | :--- | :--- |
-| Scout to First Class (Ages 11–12) | Learn First Aid skills; earn **Swimming** at summer camp | 1–2 fun electives (e.g. Fishing, Wood Carving) | Master basic outdoor, knot, and camp skills. |
-| First Class to Star (Ages 12–14) | **First Aid**, **Citizenship in Society**, **Camping**, **Env. Science** | 2 electives you enjoy (6 total) | Serve 4 months in a troop leadership role; do 6 hours of service. |
-| Star to Life (Ages 14–15) | **Citizenship in Community**, **Citizenship in Nation**, **Emerg. Prep/Lifesaving** | 2 electives (11 total) | **Start your 90-day logs for Personal Mgmt, Family Life, or Fitness!** |
-| Life to Eagle (Ages 15–17) | Finish the 90-day logs, **Communication**, **Cooking**, **Citizenship in World** | 3 electives (21 total) | Complete your Eagle Project and prepare for your Board of Review. |
+| {{< cross-link rank="scout" text="Scout" />}} to {{< cross-link rank="first-class" text="First Class" />}} (Ages 11–12) | Learn First Aid skills; earn **Swimming** at summer camp | 1–2 fun electives (e.g. Fishing, Wood Carving) | Master basic outdoor, knot, and camp skills. |
+| {{< cross-link rank="first-class" text="First Class" />}} to {{< cross-link rank="star" text="Star" />}} (Ages 12–14) | **First Aid**, **Citizenship in Society**, **Camping**, **Env. Science** | 2 electives you enjoy (6 total) | Serve 4 months in a troop leadership role; do 6 hours of service. |
+| {{< cross-link rank="star" text="Star" />}} to {{< cross-link rank="life" text="Life" />}} (Ages 14–15) | **Citizenship in Community**, **Citizenship in Nation**, **Emerg. Prep/Lifesaving** | 2 electives (11 total) | **Start your 90-day logs for Personal Mgmt, Family Life, or Fitness!** |
+| {{< cross-link rank="life" text="Life" />}} to {{< cross-link rank="eagle" text="Eagle" />}} (Ages 15–17) | Finish the 90-day logs, **Communication**, **Cooking**, **Citizenship in World** | 3 electives (21 total) | Complete your {{< cross-link url="/scouts-bsa/leadership/eagle-project-workbook/" text="Eagle Project" />}} and prepare for your Board of Review. |
 
 ## How to Start and Finish a Merit Badge (The Blue Card)
 
@@ -123,4 +123,5 @@ Keep a chart like this in your binder to stay on track:
 
 - [Browse All 14 Eagle-Required Merit Badges](/merit-badges/eagle-required/)
 - [Search All Merit Badge Requirements](/search/)
-- [Scouting University — Rank Guides & Leadership Playbooks](https://scouting-u.com)
+
+{{< related-guide url="/scouts-bsa/ranks/" title="Scouting University — Rank Advancement Guides" description="Step-by-step digital resource guides and requirement breakdowns for Scout through Eagle Scout ranks." />}}

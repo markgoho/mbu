@@ -11,6 +11,8 @@ Every great meal starts with a spark of curiosity — and the Cooking merit badg
 
 Cooking is also one of the Eagle-required merit badges, and for good reason. It teaches you planning, nutrition, safety, teamwork, and self-reliance — skills that will serve you long after you earn the badge. This guide will walk you through every requirement, giving you the knowledge and tools to become a capable cook at home, at camp, and on the trail.
 
+{{< related-guide rank="first-class" req="2a" title="First Class Camp Kitchen & Meal Planning Guide" description="Learn patrol meal planning, budgeting, Dutch oven cooking, and camp kitchen sanitation for First Class rank." />}}
+
 ## Then and Now
 
 ### Then — Cooking for Survival

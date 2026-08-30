@@ -22,6 +22,10 @@ enableGitInfo = true
 [taxonomies]
   category = 'categories'
 
+[params]
+  mbu_base_url = 'https://merit-badge.university'
+  scouting_u_base_url = 'https://scouting.university'
+
 [params.analytics]
   pirsch_code = 'nGgx7zltXKwcHRduBaMGOBWCO8L1lAjQ'
   clarity_id = 'xw9nckd7a6'

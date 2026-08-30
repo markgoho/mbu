@@ -1,0 +1,84 @@
+{{- $mbuBase := site.Params.mbu_base_url | default (site.Params.theme.mbu_base_url | default "https://merit-badge.university") | strings.TrimRight "/" -}}
+{{- $scoutingUBase := site.Params.scouting_u_base_url | default (site.Params.theme.scouting_u_base_url | default "https://scouting.university") | strings.TrimRight "/" -}}
+
+{{- $badge := .Get "badge" -}}
+{{- $rank := .Get "rank" -}}
+{{- $type := .Get "type" -}}
+{{- $slug := .Get "slug" | default ($badge | default $rank) -}}
+{{- $req := .Get "req" | default (.Get "req_number") -}}
+{{- $mode := .Get "mode" | default "guide" -}}
+{{- $customUrl := .Get "url" | default (.Get "href") -}}
+
+{{- $targetUrl := "" -}}
+{{- $isBadge := or $badge (eq $type "badge") (eq $type "merit-badge") -}}
+{{- $isRank := or $rank (eq $type "rank") -}}
+
+{{- if $customUrl -}}
+  {{- if or (strings.HasPrefix $customUrl "http://") (strings.HasPrefix $customUrl "https://") -}}
+    {{- $targetUrl = $customUrl -}}
+  {{- else if strings.HasPrefix $customUrl "/merit-badges/" -}}
+    {{- $targetUrl = printf "%s%s" $mbuBase $customUrl -}}
+  {{- else if strings.HasPrefix $customUrl "/scouts-bsa/" -}}
+    {{- $targetUrl = printf "%s%s" $scoutingUBase $customUrl -}}
+  {{- else -}}
+    {{- $targetUrl = $customUrl -}}
+  {{- end -}}
+{{- else if $isBadge -}}
+  {{- if eq $mode "requirements" -}}
+    {{- $targetUrl = printf "%s/merit-badges/%s/" $mbuBase $slug -}}
+    {{- with $req }}{{ $targetUrl = printf "%s#%s" $targetUrl . }}{{ end -}}
+  {{- else -}}
+    {{- if $req -}}
+      {{- $targetUrl = printf "%s/merit-badges/%s/guide/req%s/" $mbuBase $slug $req -}}
+    {{- else -}}
+      {{- $targetUrl = printf "%s/merit-badges/%s/guide/" $mbuBase $slug -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if $isRank -}}
+  {{- if eq $mode "requirements" -}}
+    {{- $targetUrl = printf "%s/scouts-bsa/ranks/%s/requirements/" $scoutingUBase $slug -}}
+    {{- with $req }}{{ $targetUrl = printf "%s#%s" $targetUrl . }}{{ end -}}
+  {{- else -}}
+    {{- if $req -}}
+      {{- $targetUrl = printf "%s/scouts-bsa/ranks/%s/guide/req%s/" $scoutingUBase $slug $req -}}
+    {{- else -}}
+      {{- $targetUrl = printf "%s/scouts-bsa/ranks/%s/guide/" $scoutingUBase $slug -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $targetUrl = $slug -}}
+{{- end -}}
+
+{{- $defaultEyebrow := "Related Guide" -}}
+{{- $defaultIcon := "book-open-text" -}}
+{{- if $isBadge -}}
+  {{- $defaultEyebrow = "Merit Badge Guide" -}}
+  {{- $defaultIcon = "medal" -}}
+{{- else if $isRank -}}
+  {{- $defaultEyebrow = cond (eq $mode "requirements") "Rank Requirements" "Rank Guide" -}}
+  {{- $defaultIcon = "shield-check" -}}
+{{- end -}}
+
+{{- $eyebrow := .Get "eyebrow" | default (.Get "badge_label" | default $defaultEyebrow) -}}
+{{- $iconName := .Get "icon" | default $defaultIcon -}}
+{{- $title := .Get "title" | default ($slug | humanize | title) -}}
+{{- $description := .Get "description" | default .Inner -}}
+
+<div class="req-related-guide">
+  <div class="req-related-guide__header">
+    {{ partial "icon.html" (dict "name" $iconName "class" "req-related-guide__icon") }}
+    <div class="req-related-guide__meta">
+      <span class="req-related-guide__eyebrow">{{ $eyebrow }}</span>
+      <a href="{{ $targetUrl }}" class="req-related-guide__title" target="_blank" rel="noopener noreferrer">
+        {{ $title }}
+        {{ partial "icon.html" (dict "name" "arrow-square-out" "class" "req-related-guide__external-icon") }}
+      </a>
+    </div>
+  </div>
+  {{ with $description }}
+    <div class="req-related-guide__description">
+      {{ . | markdownify }}
+    </div>
+  {{ end }}
+  <span class="req-related-guide__print-link">Related Guide: {{ $title }} — {{ $targetUrl }}</span>
+</div>

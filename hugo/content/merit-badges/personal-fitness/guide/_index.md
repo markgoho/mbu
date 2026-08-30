@@ -11,6 +11,9 @@ Your body is the only piece of gear you will carry on every adventure for the re
 
 Personal fitness is not about being the fastest runner or the strongest lifter. It is about finding your own baseline, setting goals, and making steady progress. Whether you play sports, hike with your troop, or just want more energy during the school day, this badge will give you the knowledge and the plan to get there.
 
+{{< related-guide rank="tenderfoot" req="6a" title="Tenderfoot 30-Day Fitness Baseline Guide" description="Learn baseline fitness testing, goal setting, and 30-day exercise logging for Tenderfoot rank." />}}
+{{< related-guide rank="second-class" req="7a" title="Second Class Fitness Improvement Guide" description="Track physical fitness progress, aerobic benchmarks, and healthy daily habits for Second Class rank." />}}
+
 ## Then and Now
 
 ### Then — Fitness as a Way of Life

@@ -11,6 +11,8 @@ You live in a world where events on the other side of the globe can affect your 
 
 This is one of the Eagle-required merit badges, and it is a big one. You will explore how governments work, how nations interact, and how ordinary people like you can make a global difference.
 
+{{< related-guide rank="first-class" req="9a" title="First Class Citizenship & Global Awareness Guide" description="Connect international relations and treaties with First Class constitutional and civic responsibilities." />}}
+
 ## Then and Now
 
 ### Then — A World of Borders

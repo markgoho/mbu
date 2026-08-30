@@ -11,6 +11,8 @@ You are a citizen of the United States of America. That is not just a fact on a 
 
 This is one of the Eagle-required merit badges, and for good reason. Scouting has always emphasized duty to country. Understanding how the nation works — from the Constitution to Congress — is a big part of what it means to be a responsible, informed citizen.
 
+{{< related-guide rank="first-class" req="9a" title="First Class Constitutional Rights & Citizenship Guide" description="Learn about constitutional rights and responsibilities, civic duties, and the Pledge of Allegiance for First Class rank." />}}
+
 ## Then and Now
 
 ### Then — "We the People"

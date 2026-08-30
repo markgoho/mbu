@@ -11,6 +11,9 @@ Your family is the first team you ever joined. Before you had a patrol, a troop,
 
 This is one of the merit badges required for Eagle Scout, and for good reason. The skills you build here — communication, responsibility, leadership, and empathy — are the foundation for everything else you will do in life.
 
+{{< related-guide rank="star" req="3" title="Star Rank Merit Badge Requirements" description="Family Life is an Eagle-required 90-day time-lock badge covering household duties and family project leadership." />}}
+{{< related-guide rank="life" req="3" title="Life Rank Merit Badge Requirements" description="Continue Eagle-required badge progression and prepare for troop leadership as a Life Scout." />}}
+
 ## Then and Now
 
 ### Then — The Family as a Survival Unit

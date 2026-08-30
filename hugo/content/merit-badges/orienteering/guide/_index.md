@@ -11,6 +11,9 @@ Somewhere in a forest, an orange-and-white flag hangs from a wooden stake. Dozen
 
 Orienteering teaches you to read the land itself — ridgelines, stream crossings, vegetation boundaries — and translate those features between the real world and a detailed map. It is one of the few merit badges where every skill you learn is immediately testable: take a bearing, follow it through the woods, and either you find the control marker or you don't. No faking it.
 
+{{< related-guide rank="first-class" req="4a" title="First Class Map & Compass Navigation Guide" description="Master topographic map reading, contour lines, compass bearings, and 1-mile compass course navigation for First Class rank." />}}
+{{< related-guide rank="second-class" req="3a" title="Second Class Map & Compass Basics Guide" description="Learn map symbols, declination, orienting a map, and pacing for Second Class rank." />}}
+
 {{< drg/image src="images/scouts-orienteering-forest.avif" alt="Two Scouts running through an open forest with orienteering maps in hand, one checking a compass while the other looks ahead toward a distant orange-and-white control marker flag" >}}
 
 ## Then and Now

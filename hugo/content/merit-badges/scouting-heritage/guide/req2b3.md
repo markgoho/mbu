@@ -26,7 +26,7 @@ The Scouts BSA Handbook (originally the *Boy Scout Handbook*) is the official gu
   - **1st Edition (1911):** Heavily influenced by Ernest Thompson Seton and based on Baden-Powell's *Scouting for Boys*. Focused on woodcraft, nature study, and citizenship.
   - **6th, 8th, and 9th Editions (1959, 1972, 1979):** Written by William "Green Bar Bill" Hillcourt, who used these editions to reinforce the patrol method and outdoor skills.
   - **Later editions** continued to update the program, adding content on environmental stewardship, diversity, and modern safety practices.
-- **A shared experience.** The Handbook creates a common language and shared set of skills for all Scouts. Whether your troop meets in Maine or Montana, the Handbook ensures that a Scout who earns First Class rank in one place has demonstrated the same skills as a Scout somewhere else.
+- **A shared experience.** The Handbook creates a common language and shared set of skills for all Scouts. Whether your troop meets in Maine or Montana, the Handbook ensures that a Scout who earns {{< cross-link rank="first-class" text="First Class rank" />}} in one place has demonstrated the same skills as a Scout somewhere else.
 
 {{< drg/did-you-know >}}
 The first *Boy Scout Handbook* (1911) included contributions from several of the Scouting pioneers you studied in Requirement 2a — including Ernest Thompson Seton, who wrote much of the nature lore content, and Daniel Carter Beard, who contributed outdoor skills material.

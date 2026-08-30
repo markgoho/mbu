@@ -11,6 +11,9 @@ Communication is one of the most powerful skills you will ever develop. Every ti
 
 This is an Eagle-required merit badge, and for good reason. Leaders must communicate well. Whether you are leading a patrol on a campout or presenting a project at school, the ability to share your ideas clearly and listen carefully to others is what sets great leaders apart.
 
+{{< related-guide url="/scouts-bsa/leadership/patrol-method/" title="Patrol Method & Leadership Playbook" description="Learn effective communication, running patrol meetings, conflict resolution, and youth leadership strategies." />}}
+{{< related-guide rank="eagle" req="3" title="Eagle Scout Leadership & Project Guide" description="Apply communication skills to your Eagle Scout Service Project proposal, beneficiary discussions, and Board of Review." />}}
+
 ## Then and Now
 
 ### Then — Getting the Message Across

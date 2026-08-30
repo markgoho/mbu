@@ -13,6 +13,8 @@ Being a good citizen is about more than following rules or paying taxes. It is a
 
 This badge was introduced as one of the Eagle-required merit badges because Scouting believes that true leadership means understanding and respecting the people you lead — all of them, including those whose backgrounds, experiences, and identities are different from your own.
 
+{{< related-guide rank="first-class" req="9a" title="First Class Civic Responsibility Guide" description="Learn constitutional rights and duties, community leadership, and ethical service for First Class rank." />}}
+
 ## Then and Now
 
 ### Then — A Nation Still Learning

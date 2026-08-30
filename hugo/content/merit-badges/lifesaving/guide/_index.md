@@ -11,6 +11,9 @@ Every year, thousands of people find themselves in trouble in the water — and 
 
 Lifesaving is one of the most demanding and rewarding merit badges in all of Scouting. It is also one of the badges that can count toward earning the rank of Eagle Scout. The skills you build here are real — the kind that stay with you for the rest of your life.
 
+{{< related-guide rank="second-class" req="5c" title="Second Class Reach & Throw Water Rescue Guide" description="Learn non-swimming water rescues including reaching with an arm, pole, or towel and throwing a line or PFD." />}}
+{{< related-guide rank="first-class" req="6a" title="First Class Aquatics & Safe Swim Defense" description="Master the 8 points of Safe Swim Defense, line rescues, and survival floating with inflated clothes." />}}
+
 ## Then and Now
 
 ### Then — The Birth of Organized Rescue

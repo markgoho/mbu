@@ -11,6 +11,9 @@ Swimming is one of the most important life skills you can learn. It keeps you sa
 
 This guide will help you understand water safety, master five essential swimming strokes, learn rescue techniques, and build the confidence to swim in any environment. Whether you are a beginner refining your form or an experienced swimmer pushing your limits, there is something here for you.
 
+{{< related-guide rank="second-class" req="5a" title="Second Class Aquatics & Swimmer Test Guide" description="Step-by-step guidance for passing the BSA Swimmer test, basic water rescue (reach and throw), and swimming safety." />}}
+{{< related-guide rank="first-class" req="6a" title="First Class Aquatics & Water Rescue Guide" description="Master Safe Swim Defense, line rescues, clothes inflation for survival floating, and advanced aquatic skills." />}}
+
 ## Then and Now
 
 ### Then — Swimming as Survival

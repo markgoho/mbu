@@ -11,6 +11,8 @@ There is something magical about sleeping under the stars, cooking a meal over a
 
 Whether you are pitching a tent for the first time or you are already logging your twentieth night under the sky, this guide will help you understand the knowledge and skills you need to camp safely, responsibly, and confidently.
 
+{{< related-guide rank="first-class" req="1a" title="First Class Campout Planning Guide" description="Master the essential campout preparation, tent pitching, Leave No Trace principles, and campsite selection for First Class rank." />}}
+
 ## Then and Now
 
 ### Then — Camping as Survival

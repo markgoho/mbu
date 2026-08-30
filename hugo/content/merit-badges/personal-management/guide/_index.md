@@ -9,6 +9,9 @@ next_title: "Choosing a Major Purchase"
 
 Personal Management is one of the most practical merit badges you can earn. It teaches you how to handle money wisely, manage your time, and plan projects — skills you will use every single day for the rest of your life. Whether you are saving up for a new bike, figuring out how to balance homework and sports, or dreaming about a future career, this badge gives you the tools to make it happen. As an Eagle-required badge, Personal Management is a key step on the trail to Eagle Scout.
 
+{{< related-guide rank="star" req="3" title="Star Rank Merit Badge Requirements" description="Personal Management is a crucial 13-week time-lock badge required for Star, Life, and Eagle ranks." />}}
+{{< related-guide rank="eagle" req="3" title="Eagle Scout Rank Advancement Guide" description="Step-by-step guidance for completing all 21 merit badges, leadership service, and your Eagle Scout Project." />}}
+
 {{< drg/image src="images/scout-financial-planning.avif" alt="A Scout sitting at a desk with a notebook, calculator, and laptop, planning a budget with a look of focus and determination" >}}
 
 ## Then and Now

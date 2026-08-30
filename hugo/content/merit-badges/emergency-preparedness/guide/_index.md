@@ -12,6 +12,9 @@ Emergencies don't send invitations. Fires, floods, tornadoes, and accidents can 
 
 Emergency preparedness is one of the core principles of Scouting. The Scout motto — "Be Prepared" — was written with exactly this kind of readiness in mind. This badge takes that motto and turns it into real-world skills you will carry for the rest of your life.
 
+{{< related-guide rank="second-class" req="6a" title="Second Class Emergency First Aid & Hurry Cases" description="Learn the hurry cases (stopped breathing, severe bleeding, shock, poisoning) and emergency prevention for Second Class rank." />}}
+{{< related-guide rank="first-class" req="7a" title="First Class Advanced First Aid & Carries" description="Master splints, bandages, patient assessment, and emergency transport carries for First Class rank." />}}
+
 ## Then and Now
 
 ### Then — Disaster by Instinct
