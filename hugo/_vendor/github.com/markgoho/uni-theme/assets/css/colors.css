@@ -168,7 +168,11 @@
   --v2-dark-on-error-container: #ffdad6;
 
   --v2-amber: #ffb800;
+  --v2-amber-container: #fff0c2;
+  --v2-on-amber-container: #6b4a00;
   --v2-dark-amber: #ffc83b;
+  --v2-dark-amber-container: #4d3800;
+  --v2-dark-on-amber-container: #ffe6a3;
   --v2-amber-alpha-30: rgba(255, 184, 0, 0.3);
   --v2-dark-amber-alpha-30: rgba(255, 200, 59, 0.3);
 

@@ -1,10 +1,3 @@
-<aside class="req-be-prepared">
-  <div class="req-be-prepared__header">
-    {{ partial "icon.html" (dict "name" "backpack" "weight" "duotone" "class" "req-be-prepared__icon") }}
-    <div class="req-be-prepared__heading">
-      <span class="req-be-prepared__label">Be Prepared!</span>
-      <h3 class="req-be-prepared__title">{{ .Get "title" }}</h3>
-    </div>
-  </div>
-  <div class="req-be-prepared__body">{{ .Inner | markdownify }}</div>
-</aside>
+{{- $isSafety := in (slice "true" "1" true) (.Get "safety") -}}
+{{- $variant := cond $isSafety "safety" "prepared" -}}
+{{ partial "drg/callout.html" (dict "variant" $variant "label" "Be Prepared!" "title" (.Get "title") "body" (.Inner | markdownify)) }}
