@@ -658,7 +658,19 @@ Steps to handle this scenario.
   {{</* /drg/be-prepared */>}}
 ```
 
-Use `drg/be-prepared` for **scenario-based problem-solving** — situations the Scout might encounter and step-by-step responses. Good for safety scenarios, "what if" situations, and motivational hurdles. Aim for at least 1–2 per guide beyond just the intro pages.
+Use `drg/be-prepared` for **scenario-based problem-solving** — situations the Scout might encounter and step-by-step responses. Good for "what if" situations and motivational hurdles. Aim for at least 1–2 per guide beyond just the intro pages.
+
+It renders amber by default — reserve that for non-hazard scenarios only. When the scenario is a genuine safety hazard, add `safety="true"` to render it red instead, matching `drg/safety-first`:
+
+```markdown
+{{</* drg/be-prepared title="Grease Fire in the Kitchen" safety="true" */>}}
+Steps to handle this scenario.
+{{</* /drg/be-prepared */>}}
+```
+
+Red is reserved site-wide for two kinds of genuine hazard — never use `safety="true"` (or `drg/safety-first`) for a non-hazard "what if" or motivational tip:
+- **Physical-safety hazards**: fire, injury, drowning, chemical exposure, dangerous weather, animal bites, machinery injury, and similar scenarios where someone could be seriously hurt right now.
+- **Youth-protection / personal-safety scenarios**: an adult or peer behaving inappropriately toward a Scout, abuse disclosure, or "tell a trusted adult" advice in response to a personal-boundary violation directed at the Scout. This is not a physical-injury hazard, but it's serious enough to warrant the same red treatment. This is narrow and rare — don't force-fit unrelated content (e.g. "ask a trusted adult for help" in a non-safety context, or general "abuse" mentions like substance abuse or abuse of power) into this category.
 
 ```markdown
 {{</* drg/next-page
