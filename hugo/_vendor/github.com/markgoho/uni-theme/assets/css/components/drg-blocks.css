@@ -111,14 +111,14 @@
 /* ------------------------------------------------------------------ */
 
 .req-be-prepared {
-  background-color: var(--error-container);
+  background-color: var(--amber-container);
   border: 1px solid var(--card-border-subtle);
-  border-left: var(--border-width-md) solid var(--error);
+  border-left: var(--border-width-md) solid var(--amber);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   padding: var(--space-m);
   margin-block: var(--space-l);
-  color: var(--on-error-container);
+  color: var(--on-amber-container);
 
   & .req-be-prepared__header {
     display: grid;
@@ -142,7 +142,7 @@
     aspect-ratio: 1 / 1;
     align-self: center;
     justify-self: center;
-    color: var(--error);
+    color: var(--on-amber-container);
     flex-shrink: 0;
   }
 
@@ -153,7 +153,7 @@
     text-transform: uppercase;
     font-weight: var(--font-weight-bold);
     letter-spacing: 0.05em;
-    color: var(--error);
+    color: var(--on-amber-container);
     line-height: 1.2;
     margin: 0;
   }
@@ -165,7 +165,7 @@
     font-family: var(--font-display);
     font-size: var(--step-1);
     line-height: var(--line-height-tight);
-    color: var(--on-error-container);
+    color: var(--on-amber-container);
   }
 
   /* Body content */
@@ -184,6 +184,24 @@
 
   li {
     margin-bottom: var(--space-2xs);
+  }
+
+  /* Genuine physical-hazard scenarios (fire, injury, drowning, etc.) keep
+     the red/error treatment; the amber default above is for non-hazard
+     "what if" prep and troubleshooting scenarios. */
+  &.req-be-prepared--safety {
+    background-color: var(--error-container);
+    border-left-color: var(--error);
+    color: var(--on-error-container);
+
+    & .req-be-prepared__icon,
+    & .req-be-prepared__label {
+      color: var(--error);
+    }
+
+    & .req-be-prepared__title {
+      color: var(--on-error-container);
+    }
   }
 
   /* Fallback if markup is rendered without .req-be-prepared__header */
