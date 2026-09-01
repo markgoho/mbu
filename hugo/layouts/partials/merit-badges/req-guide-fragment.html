@@ -9,21 +9,27 @@
   req7.md and no req7a.md, so subrequirement 7.a inherits requirement 7's
   page (see req-children.html) -- but that page contains
   "### Option A — Cooking Careers", which is exactly the section 7.a is
-  asking for. Linking to the page top made the scout hunt for it.
+  asking for. Linking to the page top made the scout hunt for it. The
+  same problem shows up whenever a guide file merges a whole requirement
+  into one page with a "## Requirement 1d" heading per subrequirement
+  instead of per-option prose -- 304 guide files use that shape.
 
   Matching is on the rendered heading IDs (Page.Fragments.Identifiers),
   not on heading text, because the ID is already normalised:
-  "### Option A — Cooking Careers" -> "option-a--cooking-careers". Two
-  shapes are recognised, both anchored to the START of the id so that
+  "### Option A — Cooking Careers" -> "option-a--cooking-careers". Three
+  shapes are recognised, all anchored to the START of the id so that
   marker "a" can never match "option-ab-...":
 
     option-<marker> / part-<marker>  -- "a"           -> option-a--...
+    requirement-<path>               -- "1d"          -> requirement-1d--...
     <slug>                           -- "beef-cattle" -> beef-cattle-option
 
   The bare form is only tried for SLUG ids. A one-letter marker matches
   far too much on its own: "a" hit animal-science's "### A Brief History"
   (id "a-brief-history"), which has nothing to do with option A. A slug
-  is several words long and can't collide by accident.
+  is several words long and can't collide by accident. "requirement-<path>"
+  is safe unqualified because path already includes the parent segment
+  ("1d", not "d").
 
   Returns the fragment id, or "" when nothing matches -- in which case
   the caller should link to the page without one rather than guess.
@@ -33,10 +39,14 @@
   marker  - the subrequirement's own bare id ("a", "3", "beef-cattle")
   is_slug - whether that id is a named-option slug rather than a list
   marker; see req-child-item.html, which already computes it
+  path    - the subrequirement's full dotted path ("1.d"), used to match
+  "## Requirement 1d" headings; optional, dots are stripped before
+  matching
 */}}
 {{ $page := .page }}
 {{ $marker := lower (.marker | default "") }}
 {{ $isSlug := .is_slug | default false }}
+{{ $path := lower (.path | default "") }}
 {{ $fragment := "" }}
 
 {{ if and $page $marker }}
@@ -46,6 +56,9 @@
   }}
   {{ if $isSlug }}
     {{ $candidates = $candidates | append $marker }}
+  {{ end }}
+  {{ with $path }}
+    {{ $candidates = $candidates | append (printf "requirement-%s" (replace . "." "")) }}
   {{ end }}
   {{ range $id := $page.Fragments.Identifiers }}
     {{ if not $fragment }}

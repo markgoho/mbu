@@ -133,7 +133,7 @@
   {{ with $guidePage }}
     {{ $guideHref = .RelPermalink }}
     {{ if not $lookup.page }}
-      {{ $fragment := partial "merit-badges/req-guide-fragment.html" (dict "page" . "marker" $bare "is_slug" $isSlug) }}
+      {{ $fragment := partial "merit-badges/req-guide-fragment.html" (dict "page" . "marker" $bare "is_slug" $isSlug "path" $req.path) }}
       {{ with $fragment }}
         {{ $guideHref = printf "%s#%s" $guidePage.RelPermalink . }}
       {{ end }}
