@@ -1,7 +1,1 @@
-<aside class="req-callout req-callout--fact">
-  <div class="req-callout__header">
-    {{ partial "icon.html" (dict "name" "lightbulb-filament" "weight" "duotone" "class" "req-callout__icon") }}
-    <h3 class="req-callout__title">Did You Know?</h3>
-  </div>
-  <div class="req-callout__body">{{ .Inner | markdownify }}</div>
-</aside>
+{{ partial "drg/callout.html" (dict "variant" "fact" "title" "Did You Know?" "body" (.Inner | markdownify)) }}

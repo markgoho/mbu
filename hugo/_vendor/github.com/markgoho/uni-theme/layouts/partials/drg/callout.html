@@ -1,0 +1,37 @@
+{{- /*
+  Shared DRG callout renderer. Backs drg/safety-first, drg/tip,
+  drg/did-you-know, and drg/be-prepared so the markup, icon choice, and
+  color variant live in one place instead of one copy per shortcode.
+
+  Params (dict):
+  variant (required) - "safety" | "fact" | "tip" | "prepared" — selects
+  the icon and the .req-callout--<variant> color treatment.
+  title   (required) - heading text.
+  label   (optional) - small eyebrow text above the title (e.g.
+  "Be Prepared!"). When present, renders the two-row
+  eyebrow+title header; when absent, a single-row
+  icon+title header.
+  body    (required) - pre-rendered HTML for the callout body (call
+  `.Inner | markdownify` in the shortcode and pass the
+  result here — partials don't have shortcode context).
+*/ -}}
+{{- $variant := .variant -}}
+{{- $icons := dict "safety" "siren" "fact" "lightbulb-filament" "tip" "lightbulb" "prepared" "backpack" -}}
+{{- $icon := index $icons $variant -}}
+{{- if not $icon -}}
+  {{ errorf "partial \"drg/callout.html\": unknown variant %q (expected safety, fact, tip, or prepared)" $variant }}
+{{- end -}}
+<aside class="req-callout req-callout--{{ $variant }}">
+  <div class="req-callout__header">
+    {{ partial "icon.html" (dict "name" $icon "weight" "duotone" "class" "req-callout__icon") }}
+    {{- if .label }}
+    <div class="req-callout__heading">
+      <span class="req-callout__label">{{ .label }}</span>
+      <h3 class="req-callout__title">{{ .title }}</h3>
+    </div>
+    {{- else }}
+    <h3 class="req-callout__title">{{ .title }}</h3>
+    {{- end }}
+  </div>
+  <div class="req-callout__body">{{ .body | safeHTML }}</div>
+</aside>
