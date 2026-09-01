@@ -58,7 +58,7 @@ Here are the hazards you are most likely to encounter during astronomy activitie
 - Check weather before you go: Lightning, strong winds, and sudden storms can make outdoor observing dangerous.
 {{< /drg/checklist >}}
 
-{{< drg/be-prepared title="Lost in the Dark?" >}}
+{{< drg/be-prepared title="Lost in the Dark?" safety="true" >}}
 If you become disoriented while walking to or from your observation site:
 
 - **Stop moving.** Sit down to prevent tripping or wandering further off course.

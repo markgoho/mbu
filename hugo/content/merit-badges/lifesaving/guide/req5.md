@@ -89,7 +89,7 @@ You will not always have professional rescue equipment nearby. Here are common i
 A single sealed one-gallon plastic jug can support about 8 pounds of weight in water. Four empty jugs tied together can keep an adult's head above water. In an emergency, look for anything sealed and air-filled — it probably floats.
 {{< /drg/did-you-know >}}
 
-{{< drg/be-prepared title="The Wind Is Working Against You" >}}
+{{< drg/be-prepared title="The Wind Is Working Against You" safety="true" >}}
 You are at a lake on a windy day and need to throw a ring buoy to a swimmer 25 feet out. The wind is blowing toward you, pushing your throws short.
 
 - **Move closer** along the shore if possible.

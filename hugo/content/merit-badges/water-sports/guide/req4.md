@@ -44,7 +44,7 @@ Each signal solves a specific problem:
 
 Signals work best when everyone agrees on them before leaving shore. Stand on land and rehearse them with your driver and observer so the crew responds automatically.
 
-{{< drg/be-prepared title="You fall hard and the boat begins circling back" >}}
+{{< drg/be-prepared title="You fall hard and the boat begins circling back" safety="true" >}}
 If you are not injured, give the skier-safe signal as soon as you can.
 
 - **Signal clearly**: Raise clasped hands high over your head where the observer can see them.

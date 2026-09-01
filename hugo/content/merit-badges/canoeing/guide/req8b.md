@@ -59,7 +59,7 @@ An overturned canoe traps a large pocket of air underneath it. This trapped air 
 
 {{< drg/image src="images/capsized-canoe-floating.avif" alt="Two Scouts in life jackets floating in a lake while holding onto opposite ends of a capsized (overturned) canoe, calm expressions, demonstrating proper technique" >}}
 
-{{< drg/be-prepared title="You Capsize in Windy Conditions" >}}
+{{< drg/be-prepared title="You Capsize in Windy Conditions" safety="true" >}}
 A capsize in wind and waves is more stressful than in calm water, but the same rules apply.
 
 - **Stay with the canoe.** The wind will push the canoe and you together — do not try to swim against it.

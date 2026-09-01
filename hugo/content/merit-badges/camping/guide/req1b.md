@@ -92,7 +92,7 @@ Cold weather brings the risk of hypothermia and frostbite. These conditions can 
 - Eat high-calorie foods and drink warm fluids to fuel your body's heat production
 - Watch for signs of hypothermia in yourself and others: uncontrollable shivering, slurred speech, confusion, and drowsiness
 
-{{< drg/be-prepared title="Storm Rolls In While You Are at Camp" >}}
+{{< drg/be-prepared title="Storm Rolls In While You Are at Camp" safety="true" >}}
 - Secure your tent — tighten guylines and stake down the rain fly.
 - Move gear under cover and into waterproof bags.
 - Stay away from tall, isolated trees and metal structures.

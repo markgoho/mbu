@@ -104,7 +104,7 @@ If a swimming rescue is the only option (and it should truly be the last resort)
 - **Maintain distance.** Stay at arm's length and extend a rescue device between you and the victim.
 - **If grabbed,** trained rescuers know escape techniques — submerging, twisting, and pushing away. These are taught in lifeguard and Lifesaving merit badge training.
 
-{{< drg/be-prepared title="Someone Is Drowning and You Are Alone" >}}
+{{< drg/be-prepared title="Someone Is Drowning and You Are Alone" safety="true" >}}
 If you see someone drowning and there are no adults or lifeguards nearby:
 - **Call 911** or shout for help immediately.
 - **Look for something to throw** — a life ring, rope, cooler, anything that floats.

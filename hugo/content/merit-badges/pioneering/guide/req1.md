@@ -132,7 +132,7 @@ If rope burns come up during counselor discussion, this first-aid reference give
     url="https://www.firstaidforfree.com/first-aid-for-rope-burn/"
     description="Review the basic first-aid steps for treating rope burns and knowing when the injury needs more care." >}}
 
-{{< drg/be-prepared title="Someone on your crew shows signs of heat exhaustion" >}}
+{{< drg/be-prepared title="Someone on your crew shows signs of heat exhaustion" safety="true" >}}
 
 - **Stop work immediately** and move them to shade.
 - **Loosen gear and clothing** and help them cool down.

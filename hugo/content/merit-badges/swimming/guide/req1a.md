@@ -76,7 +76,7 @@ Rivers can look calm on the surface but have powerful currents underneath. Swimm
 
 A rip current is a narrow, powerful channel of water flowing away from shore. It can pull even strong swimmers out to sea quickly. If you are caught in a rip current, do not swim against it. Swim parallel to shore until you are out of the current, then swim back to shore at an angle.
 
-{{< drg/be-prepared title="Caught in a Rip Current" >}}
+{{< drg/be-prepared title="Caught in a Rip Current" safety="true" >}}
 If you are caught in a rip current, stay calm and follow these steps:
 - **Do not panic.** Rip currents will not pull you under — they pull you away from shore.
 - **Do not swim directly toward shore** against the current. You will exhaust yourself.

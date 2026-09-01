@@ -103,7 +103,7 @@ The requirement asks you to recover a 10-pound weight from 8–10 feet of water.
 Free divers — people who dive to extreme depths on a single breath — use a technique called "duck diving" that is essentially a more streamlined version of the headfirst surface dive. The world record for a single-breath dive is over 700 feet. Your 8–10-foot dive might not set any records, but it could save a life.
 {{< /drg/did-you-know >}}
 
-{{< drg/be-prepared title="You Cannot Find the Victim on the First Dive" >}}
+{{< drg/be-prepared title="You Cannot Find the Victim on the First Dive" safety="true" >}}
 You dive to the spot where you last saw the victim, but they are not there. The water is murky and you cannot see more than a few feet.
 
 - **Surface and breathe.** Do not stay down until you are out of air — you need reserves.

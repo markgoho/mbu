@@ -213,7 +213,7 @@ Cotton clothing kills Scouts. Hypothermia frequently happens in temperatures abo
     url="https://scoutlife.org/outdoors/outdoorarticles/6976/scout-outdoor-essentials-checklist/"
     description="ScoutLife guide to choosing clothing for different weather conditions." >}}
 
-{{< drg/be-prepared title="Your Clothes Get Wet During a Hike" >}}
+{{< drg/be-prepared title="Your Clothes Get Wet During a Hike" safety="true" >}}
 You're 4 miles from the trailhead and a sudden downpour soaks you.
 
 - **Stay calm:** Wet clothes don't immediately kill you, but hypothermia can develop if you get cold and stay wet.

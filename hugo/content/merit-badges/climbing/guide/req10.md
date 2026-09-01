@@ -108,7 +108,7 @@ Solutions:
 - Stand close to the wall to reduce the pull distance
 - Communicate with the climber about fall potential
 
-{{< drg/be-prepared title="Climber Falls While You Are Belaying" >}}
+{{< drg/be-prepared title="Climber Falls While You Are Belaying" safety="true" >}}
 Your climber is 30 feet up on a top-rope route. Suddenly they slip and shout "Falling!"
 
 - **Lock the brake hand** immediately — pull the rope down and back into the full brake position.

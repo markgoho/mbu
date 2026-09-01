@@ -26,7 +26,7 @@ This option teaches the most about vertical structure behavior. A climbing tower
 Height changes everything. Follow the Guide to Safe Scouting, your counselor's instructions, and all inspection limits exactly. Do not improvise extra height or extra use cases.
 {{< /drg/safety-first >}}
 
-{{< drg/be-prepared title="The tower starts to sway during inspection" >}}
+{{< drg/be-prepared title="The tower starts to sway during inspection" safety="true" >}}
 - **Clear everyone away from the structure.**
 - **Inspect anchors, braces, and the squareness of the frame.**
 - **Do not climb until the cause is found and corrected.**

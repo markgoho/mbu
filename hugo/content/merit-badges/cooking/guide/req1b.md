@@ -87,7 +87,7 @@ Choking happens when food or another object blocks the airway. It can happen to 
 5. Deliver quick, upward thrusts (abdominal thrusts / Heimlich maneuver) until the object is dislodged or the person can breathe.
 6. If the person becomes unconscious, lower them to the ground and call 911. Begin CPR if you are trained.
 
-{{< drg/be-prepared title="Someone Is Choking at the Table" >}}
+{{< drg/be-prepared title="Someone Is Choking at the Table" safety="true" >}}
 You are eating dinner and the person across from you suddenly grabs their throat and cannot speak.
 
 - **Step 1:** Stay calm. Ask, "Are you choking?" If they nod, tell someone to call 911.

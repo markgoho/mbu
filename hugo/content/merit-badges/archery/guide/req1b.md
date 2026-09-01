@@ -53,7 +53,7 @@ Notice that the five rules work together. If everyone keeps arrows in the quiver
 
 {{< drg/image src="images/archery-shooting-line.avif" alt="Several Scouts standing at the shooting line on an archery range, each aiming recurve bows at colorful round targets downrange, with a range officer observing" >}}
 
-{{< drg/be-prepared title="What if someone walks onto the range while you are shooting?" >}}
+{{< drg/be-prepared title="What if someone walks onto the range while you are shooting?" safety="true" >}}
 If you see anyone — a person, a pet, or an animal — enter the range area while shooting is active:
 
 - **Stop immediately.** Do not release your arrow.

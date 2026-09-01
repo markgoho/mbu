@@ -69,7 +69,7 @@ Once the hook is out, the job is not over. Puncture wounds can become infected, 
 - Watch over the next day or two for redness, warmth, swelling, pus, fever, or increasing pain.
 - Check whether a tetanus booster may be needed.
 
-{{< drg/be-prepared title="Hooked During a Back Cast" >}}
+{{< drg/be-prepared title="Hooked During a Back Cast" safety="true" >}}
 Your fishing partner yells, and you see a small fly stuck in their upper arm.
 
 - Have them stop moving and put the rod down.

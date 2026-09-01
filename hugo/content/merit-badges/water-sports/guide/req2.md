@@ -106,7 +106,7 @@ The rider may get most of the attention, but a careless driver can ruin the whol
 - follow the observer's communication, because the observer has the best view of the skier
 - cut the motor when needed during pickup and boarding
 
-{{< drg/be-prepared title="The rider falls and does not give the skier-safe signal" >}}
+{{< drg/be-prepared title="The rider falls and does not give the skier-safe signal" safety="true" >}}
 Treat that as a possible emergency, not as a delay.
 
 - **Observer watches the rider continuously**: Do not look away or assume they are fine.

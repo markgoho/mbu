@@ -100,7 +100,7 @@ Sunburn is damage from ultraviolet radiation. It hurts, increases long-term skin
 - **Sunburn:** Prevent it first; once it happens, protect the skin and rehydrate.
 {{< /drg/checklist >}}
 
-{{< drg/be-prepared title="A Scout Gets Dizzy on a Hot Dock" >}}
+{{< drg/be-prepared title="A Scout Gets Dizzy on a Hot Dock" safety="true" >}}
 A friend who has been fishing in direct sun for hours says they feel sick and weak.
 - **Step one:** Move them into shade right away.
 - **Step two:** Have them sit or lie down and loosen extra clothing.

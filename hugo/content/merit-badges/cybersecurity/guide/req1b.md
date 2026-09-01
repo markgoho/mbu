@@ -64,7 +64,7 @@ Online games create unique privacy risks. Voice chat, screen names, and in-game 
 - **Be cautious in voice chat.** Background noise can reveal information — siblings calling you by name, a parent mentioning your school, a TV news anchor naming your town.
 - **Do not share personal details** with online gaming friends, even ones you have played with for a long time. You do not truly know who is on the other side.
 
-{{< drg/be-prepared title="A Gaming Friend Asks to Meet Up" >}}
+{{< drg/be-prepared title="A Gaming Friend Asks to Meet Up" safety="true" >}}
 You have been playing an online game with someone for months. They seem cool and you have a lot in common. They suggest meeting up at a local mall.
 
 - **Stop and think.** No matter how long you have chatted online, this person is still a stranger. You have no way to verify they are who they say they are.

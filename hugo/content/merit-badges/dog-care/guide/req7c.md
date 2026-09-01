@@ -55,7 +55,7 @@ The official video below focuses on first aid for dog bites and is especially us
 Never put your hands into a wound, pour random chemicals into it, or assume a bite is minor because the hole looks small. Puncture wounds can hide deep damage and infection.
 {{< /drg/safety-first >}}
 
-{{< drg/be-prepared title="The Bite Seems Small but Pain Is Getting Worse" >}}
+{{< drg/be-prepared title="The Bite Seems Small but Pain Is Getting Worse" safety="true" >}}
 If a bite wound looks minor but becomes more painful, swollen, warm, or red:
 
 - **Tell an adult immediately.**

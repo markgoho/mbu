@@ -155,7 +155,7 @@ This requirement is about staying calm and taking the correct first step. You ar
 
 Filler metals, coatings, shielding gases, and cleaning chemicals can all add risk. Some hazards come from what is on the metal, not just the metal itself. That is why you will study SDS and protective gear in [Req 2](/merit-badges/welding/guide/req2/).
 
-{{< drg/be-prepared title="If a beginner suddenly feels dizzy while welding" >}}
+{{< drg/be-prepared title="If a beginner suddenly feels dizzy while welding" safety="true" >}}
 
 - **Stop the work**: Extinguish or power down the process safely.
 - **Move to clean air**: Get out of the fume area right away.

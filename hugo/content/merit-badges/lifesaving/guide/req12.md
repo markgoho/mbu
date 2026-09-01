@@ -96,7 +96,7 @@ If a victim grabs you and you cannot break free, you are in serious danger. Do n
 - Giving up after one failed attempt — try again, go deeper
 {{< /drg/checklist >}}
 
-{{< drg/be-prepared title="A Victim Grabs You and Won't Let Go" >}}
+{{< drg/be-prepared title="A Victim Grabs You and Won't Let Go" safety="true" >}}
 You are in the water and a panicking swimmer lunges at you, wrapping arms around your head from the front. Your head is being pushed underwater.
 
 - **Do not fight.** Fighting at the surface wastes energy and keeps you in danger.

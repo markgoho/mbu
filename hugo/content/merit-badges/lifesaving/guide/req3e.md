@@ -62,7 +62,7 @@ Walking away from someone in the water goes against every instinct in your body.
 
 The hardest decision a rescuer ever makes is deciding not to go in. But it is often the right decision — the one that keeps you alive and leads to a successful rescue by someone better equipped.
 
-{{< drg/be-prepared title="You See Someone Drowning but Conditions Are Too Dangerous" >}}
+{{< drg/be-prepared title="You See Someone Drowning but Conditions Are Too Dangerous" safety="true" >}}
 You are at a lake and you see a swimmer in distress 100 feet from shore. The water is cold and murky, you have no flotation device, and you are alone. What do you do?
 
 - **Call 911 immediately.** Give your exact location and describe the situation.

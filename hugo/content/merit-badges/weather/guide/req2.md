@@ -122,7 +122,7 @@ Talk through questions like these:
     title="Severe Weather Safety (video)"
     url="https://youtu.be/H6icWfyMBNk?si=GmtqrGlxqjA0L4tl" >}}
 
-{{< drg/be-prepared title="When weather changes faster than expected" >}}
+{{< drg/be-prepared title="When weather changes faster than expected" safety="true" >}}
 If the sky darkens, thunder starts, or water begins rising, do not waste time debating whether the danger is real.
 
 - **Pause the activity**: Stop hiking, swimming, paddling, or camp setup.

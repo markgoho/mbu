@@ -172,7 +172,7 @@ Not every mean message is automatically a crime, but some digital behavior can b
 
 A message sent in ten seconds can have legal, school, and personal consequences that last much longer. Digital evidence also sticks around. Screenshots, cloud backups, and forwarded images make "I deleted it" a weak defense.
 
-{{< drg/be-prepared title="If a digital situation turns harmful" >}}
+{{< drg/be-prepared title="If a digital situation turns harmful" safety="true" >}}
 
 - **Stop replying if replying makes it worse.**
 - **Save evidence** with screenshots, usernames, and dates.

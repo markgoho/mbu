@@ -98,7 +98,7 @@ Here is the part of the badge where you have actual authority. You will build fi
 - **Be careful with anything that heats or sparks** — that includes charcoal, tiki torches, fireworks (which have no place at a Scout activity), and target shooting with steel targets or steel-core ammunition.
 - **Report smoke immediately.** If you see a column, note the location as precisely as you can, note the time, and call 911 or the agency dispatch number. Early reporting is one of the highest-value things a hiker can do.
 
-{{< drg/be-prepared title="You Find an Abandoned, Still-Warm Campfire" >}}
+{{< drg/be-prepared title="You Find an Abandoned, Still-Warm Campfire" safety="true" >}}
 This happens often, and how you respond matters more than you might think.
 
 - **Assess safety first.** If it is already spreading beyond the ring, do not fight it. Move to a safe location and call 911 with your location.

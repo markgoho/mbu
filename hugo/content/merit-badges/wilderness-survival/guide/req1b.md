@@ -131,7 +131,7 @@ A survival kit goes beyond the Scout Essentials. It's tailored to the environmen
 
 Keep your survival kit in a small, waterproof container (a ziplock bag works fine). Distribute it so some items stay in your pack at all times, and other items stay in your camp. If you get separated from your pack, you want survival items on your person—a whistle, a knife, matches, and a space blanket in your pockets can be lifesaving.
 
-{{< drg/be-prepared title="You Get Separated from Your Pack" >}}
+{{< drg/be-prepared title="You Get Separated from Your Pack" safety="true" >}}
 You're hiking and accidentally leave your pack at camp, or it falls into a stream. You're 5 miles away.
 
 - **Stop and assess:** You're alive and not injured. You don't need to panic.

@@ -29,7 +29,7 @@ Weather is the most dynamic safety factor. It can change within hours and turn a
 - Feel for sudden temperature drops or wind shifts — both signal incoming weather.
 - If rain has fallen recently, rock may still be wet and slippery even under clear skies. Sandstone is particularly dangerous when wet because it weakens structurally.
 
-{{< drg/be-prepared title="Weather Changes Mid-Climb" >}}
+{{< drg/be-prepared title="Weather Changes Mid-Climb" safety="true" >}}
 The morning was clear, but dark clouds are building to the west. Thunder rumbles in the distance.
 
 - **Stop setting up new climbs.** Do not start a route if weather is approaching.

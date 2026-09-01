@@ -107,7 +107,7 @@ Before you start any task:
 
 **Welding:** Welding helmet (to protect eyes from arc light), leather apron, heat-resistant gloves, closed-toe boots, long-sleeved shirt.
 
-{{< drg/be-prepared title="You Get Hydraulic Fluid Splashed on Your Arm" >}}
+{{< drg/be-prepared title="You Get Hydraulic Fluid Splashed on Your Arm" safety="true" >}}
 You are tightening a hydraulic connection and hydraulic fluid squirts onto your skin. What do you do?
 
 - **Step 1:** Wash the area with soap and water immediately. Do not leave it on your skin.

@@ -49,7 +49,7 @@ Weather can change fast, especially in the mountains. Rain makes rock dangerousl
 
 **How to respond:** If lightning threatens, descend immediately. Get off ridges and exposed rock. Avoid being the tallest object. If you cannot descend, crouch on an insulating pad (your rope) away from the cliff edge.
 
-{{< drg/be-prepared title="Caught in a Storm" >}}
+{{< drg/be-prepared title="Caught in a Storm" safety="true" >}}
 You are halfway up a route when the sky darkens and you hear distant thunder. What do you do?
 
 - **Communicate** with your belayer immediately — "I'm coming down."

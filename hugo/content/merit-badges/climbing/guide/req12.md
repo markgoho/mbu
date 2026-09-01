@@ -100,7 +100,7 @@ Like climbing, your counselor will have you rappel three different routes. Use e
 - **Rappel 2** — Work on smooth, steady footwork. Walk down the wall in even steps.
 - **Rappel 3** — Put it together. Smooth descent, confident signals, controlled speed, clean landing.
 
-{{< drg/be-prepared title="Losing Control on Rappel" >}}
+{{< drg/be-prepared title="Losing Control on Rappel" safety="true" >}}
 Halfway down the wall, your feet slip off the rock and you start spinning. Your brake hand tightens instinctively but you are swinging.
 
 - **Pull the rope firmly behind your hip** — this is the maximum braking position. You will stop.

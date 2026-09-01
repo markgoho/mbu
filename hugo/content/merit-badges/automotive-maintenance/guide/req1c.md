@@ -117,7 +117,7 @@ High-voltage components include:
 - **In an accident**, if a high-voltage vehicle is damaged, stay away from any exposed battery cells or wiring and call emergency services. First responders are trained to handle these situations.
 - **Before any routine maintenance** (like changing a tire or checking brake pads), verify that you are not near high-voltage components. Consult the owner's manual for the location of high-voltage parts.
 
-{{< drg/be-prepared title="You See Sparks or Smoke from an EV Battery" >}}
+{{< drg/be-prepared title="You See Sparks or Smoke from an EV Battery" safety="true" >}}
 If a high-voltage battery is damaged (from an accident, flood, or puncture) and you see sparks, smoke, or fire:
 
 - **Move away immediately** — at least 50 feet from the vehicle.

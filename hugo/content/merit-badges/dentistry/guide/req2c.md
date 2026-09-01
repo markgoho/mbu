@@ -25,7 +25,7 @@ A knocked-out tooth that is reimplanted within five minutes has up to a 95% surv
 
 ## The Step-by-Step Procedure
 
-{{< drg/be-prepared title="A Tooth Gets Knocked Out" >}}
+{{< drg/be-prepared title="A Tooth Gets Knocked Out" safety="true" >}}
 Someone takes an elbow to the mouth during a game and spits out a permanent tooth. Here is exactly what to do:
 
 - **Step 1: Stay calm and find the tooth.** Pick it up by the **crown** (the white part you normally see). **Never touch the root** — the fragile cells on the root surface are what allow the tooth to reattach.

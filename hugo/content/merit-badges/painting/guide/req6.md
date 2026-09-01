@@ -85,7 +85,7 @@ The right PPE depends on what you are doing.
 - **Do I have a safe way to wash up when I finish?**
   {{< /drg/checklist >}}
 
-{{< drg/be-prepared title="If you start feeling dizzy or irritated" >}}
+{{< drg/be-prepared title="If you start feeling dizzy or irritated" safety="true" >}}
 Treat that as a warning, not something to push through.
 
 - **Stop working immediately.**

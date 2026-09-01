@@ -73,7 +73,7 @@ High winds can flatten tents, make ridgeline travel dangerous, and accelerate he
 
 Mountain temperatures can drop dramatically at night or with a passing front. Snow is possible above 8,000 feet even in summer in many parts of the country.
 
-{{< drg/be-prepared title="Unexpected Cold Snap" >}}
+{{< drg/be-prepared title="Unexpected Cold Snap" safety="true" >}}
 The temperature drops 20 degrees overnight and you wake up shivering in your sleeping bag.
 
 - **Step 1**: Put on all available insulating layers, including your hat and gloves.

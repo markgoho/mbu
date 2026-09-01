@@ -224,7 +224,7 @@ Here's how they work in practice:
 
 By morning, rescuers find you. You survived because you followed the priorities, not because you got lucky.
 
-{{< drg/be-prepared title="You're Lost and Disoriented" >}}
+{{< drg/be-prepared title="You're Lost and Disoriented" safety="true" >}}
 You took a wrong turn on a trail and realize you're lost. Panic is setting in.
 
 - **Stop moving:** Getting more lost makes things worse.

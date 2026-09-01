@@ -88,7 +88,7 @@ If you discover a forest fire, your job is not to fight it. Your job is to repor
 
 Professional crews may control a wildfire with hand tools, engines, dozers, aircraft, hose lays, fireline construction, burnout operations, and careful use of weather and terrain. They study wind, slope, fuels, and access before acting.
 
-{{< drg/be-prepared title="Spot Smoke on a Trail?" >}}
+{{< drg/be-prepared title="Spot Smoke on a Trail?" safety="true" >}}
 If you smell smoke or see a small flame while hiking:
 
 - **Do not walk closer for a better look.**

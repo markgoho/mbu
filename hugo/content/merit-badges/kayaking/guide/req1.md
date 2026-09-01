@@ -51,7 +51,7 @@ Current, waves, strainers, low-head dams, boat traffic, rocky landings, and chan
 
 To **anticipate** hazards, study the route, forecast, and launch area before you start. To **prevent** problems, wear your life jacket, dress for the water temperature, stay with your group, and paddle conservative routes. To **mitigate** hazards, keep a whistle, spare paddle when appropriate, throw bag in the right setting, and a communication plan. To **respond**, get off the water early if conditions worsen, help a paddler before they become exhausted, and call for trained emergency help when the situation is beyond your skill.
 
-{{< drg/be-prepared title="Wind Building on the Return Trip" >}}
+{{< drg/be-prepared title="Wind Building on the Return Trip" safety="true" >}}
 You launched on a calm lake in the morning, but by afternoon the wind is blowing straight toward your launch point from the far side.
 
 - **Do not wait until everyone is tired.** Turn back early while the group still has energy.

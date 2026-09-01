@@ -66,7 +66,7 @@ Your counselor will want to hear you think through hazards using four steps:
 3. **Mitigate** — If something does go wrong, how do you reduce the damage? Stay with the canoe, signal for help, use rescue equipment.
 4. **Respond** — What is your emergency plan? Know how to perform a rescue, know how to get help, know basic first aid.
 
-{{< drg/be-prepared title="Sudden Wind on Open Water" >}}
+{{< drg/be-prepared title="Sudden Wind on Open Water" safety="true" >}}
 You are halfway across a lake when a strong wind picks up, creating 1-foot waves.
 
 - **Stay calm.** Do not panic or try to sprint to shore.

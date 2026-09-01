@@ -71,7 +71,7 @@ Golf involves twisting, bending, and sudden force. Ankles, wrists, elbows, shoul
 
 ## How to Think Through an Injury
 
-{{< drg/be-prepared title="A Twisted Ankle on Hole 6" >}}
+{{< drg/be-prepared title="A Twisted Ankle on Hole 6" safety="true" >}}
 A player steps in a low spot near the edge of the fairway and goes down with ankle pain.
 
 - **Make the scene safe**: Keep other players from hitting into the area.

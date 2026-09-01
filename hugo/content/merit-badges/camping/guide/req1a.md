@@ -61,7 +61,7 @@ Never leave a fire unattended. Keep fires small and inside established fire ring
 
 Even experienced campers can lose their way, especially in dense forest, fog, or unfamiliar terrain. Disorientation is a real hazard that can lead to panic, exhaustion, and exposure.
 
-{{< drg/be-prepared title="If You Get Lost — Use STOP" >}}
+{{< drg/be-prepared title="If You Get Lost — Use STOP" safety="true" >}}
 - **S**it down and stay calm. Panic makes everything worse.
 - **T**hink about where you last knew your location.
 - **O**bserve your surroundings — look for landmarks, listen for water or traffic.

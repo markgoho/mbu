@@ -68,7 +68,7 @@ Restaurant events, team banquets, dances, and celebrations can feel safe because
 
 Friends are a safety system. Check in with each other. If someone seems uncomfortable, help them leave the conversation or move to a different space. If a person is pressuring someone, trying to isolate them, or interfering with their ride home, that is a red flag.
 
-{{< drg/be-prepared title="If an event stops feeling safe" >}}
+{{< drg/be-prepared title="If an event stops feeling safe" safety="true" >}}
 
 - **Move toward people you trust.**
 - **Tell a friend or responsible adult what is happening.**

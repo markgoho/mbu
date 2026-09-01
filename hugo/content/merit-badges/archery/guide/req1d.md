@@ -61,7 +61,7 @@ Arrows that miss the target can end up in the grass, dirt, or brush behind the t
 
 {{< drg/image src="images/arrow-retrieval-technique.avif" alt="Close-up of a Scout pulling an arrow from a target using proper technique, one hand bracing the target face and the other gripping the arrow shaft near the target" >}}
 
-{{< drg/be-prepared title="What if an arrow breaks during retrieval?" >}}
+{{< drg/be-prepared title="What if an arrow breaks during retrieval?" safety="true" >}}
 Carbon and fiberglass arrows can crack, split, or shatter. If you hear a cracking sound or see any damage:
 
 - **Stop pulling immediately.**

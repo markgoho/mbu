@@ -64,7 +64,7 @@ Climbing adds complications that make CPR scenarios more challenging:
 - **Remote locations:** Outdoor climbing areas may be far from emergency services. Cell phone reception is unreliable in canyons and mountain areas. In [Req 4d](/merit-badges/climbing/guide/req4d/), you will plan how to summon help.
 - **Limited help:** You may be the only trained person at the crag. This makes CPR and first aid training even more important for everyone in your climbing group.
 
-{{< drg/be-prepared title="Unconscious Climber on the Wall" >}}
+{{< drg/be-prepared title="Unconscious Climber on the Wall" safety="true" >}}
 Your climbing partner is lowered to the ground after being struck by a falling rock. They are not responding.
 
 - **Check the scene** — is there ongoing rockfall? Move them to safety if possible.

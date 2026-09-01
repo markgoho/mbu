@@ -120,7 +120,7 @@ Sometimes, despite your best planning, things go wrong. How you "respond" determ
 If you find yourself low on water, stop and think. Conservation is key—take small sips and avoid heavy exertion during the hottest part of the day. Never drink untreated water from a stream unless it's an absolute emergency, as it can contain parasites. Always look for ways to purify water before your hike starts, and carry more than you think you need!
 {{< /drg/be-prepared >}}
 
-{{< drg/be-prepared title="Got Lost?" >}}
+{{< drg/be-prepared title="Got Lost?" safety="true" >}}
 If the trail disappears or you don't recognize your surroundings, use the **STOP** method:
 
 - **S**tay calm: Sit down, take a deep breath, and don't panic.
@@ -129,7 +129,7 @@ If the trail disappears or you don't recognize your surroundings, use the **STOP
 - **P**lan: If you are sure of the way back, go slowly. If you are truly lost, stay where you are and signal for help using your whistle.
   {{< /drg/be-prepared >}}
 
-{{< drg/be-prepared title="Encounter Wild Animals?" >}}
+{{< drg/be-prepared title="Encounter Wild Animals?" safety="true" >}}
 Most animals want to avoid you as much as you want to avoid them. To prevent an encounter, make noise while you hike—talk to your buddy or sing a song. If you do see a large animal like a bear or a mountain lion:
 
 - Stay calm and give it plenty of space.

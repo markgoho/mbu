@@ -46,7 +46,7 @@ Rivers flow, and that flow creates currents that can overpower even strong swimm
 - If you fall into a river, float on your back with your feet downstream to fend off obstacles. Do not try to stand until the water is very shallow and slow.
 - Stay away from strainers (fallen trees, fences, or debris that let water pass through but trap objects — and people).
 
-{{< drg/be-prepared title="Caught in a River Current" >}}
+{{< drg/be-prepared title="Caught in a River Current" safety="true" >}}
 If you are swept into a river current:
 - **Do not fight it.** Save your energy.
 - **Roll onto your back**, feet pointed downstream.

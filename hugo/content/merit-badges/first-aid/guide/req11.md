@@ -223,7 +223,7 @@ Most wilderness hypothermia is not from extreme cold — it results from being w
 5. Do NOT rub the extremities vigorously — this drives cold blood to the core.
 6. For moderate or severe hypothermia: **do not assume dead**. Begin CPR if no pulse (even in moderate hypothermia the pulse may be very weak). Continue until rewarmed. "You're not dead until you're warm and dead" is a real guideline.
 
-{{< drg/be-prepared title="Hypothermia Prevention on a Wet Hike" >}}
+{{< drg/be-prepared title="Hypothermia Prevention on a Wet Hike" safety="true" >}}
 Before heading out in cold, rainy conditions:
 
 - **Dress in layers.** Wool and synthetic fabrics retain warmth when wet. Cotton does not — "cotton kills."

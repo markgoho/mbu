@@ -106,7 +106,7 @@ Heat-related illnesses are a spectrum that gets progressively more dangerous:
 - *Signs:* High body temperature (103°F or higher), hot/red/dry skin (sweating may have stopped), rapid strong pulse, confusion, loss of consciousness.
 - *First aid:* **Call 911 immediately.** Move the person to a cool area and try to lower their temperature with cold water, ice packs on the neck, armpits, and groin, or any cooling method available. Do **not** give fluids if the person is confused or unconscious.
 
-{{< drg/be-prepared title="Teammate Shows Signs of Heat Exhaustion" >}}
+{{< drg/be-prepared title="Teammate Shows Signs of Heat Exhaustion" safety="true" >}}
 During a summer practice, your teammate becomes pale, starts sweating heavily, and says they feel dizzy and nauseous.
 
 - **Stop activity immediately.** Do not let them push through it.

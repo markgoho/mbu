@@ -51,7 +51,7 @@ A solar eclipse happens when the Moon passes directly between Earth and the Sun,
 
 **Total Eclipse** — The Moon completely covers the Sun's disk. During the brief period of totality — and ONLY during totality — it is safe to look at the Sun with your naked eyes. You will see the Sun's corona, a ghostly white halo of superheated gas that is normally invisible. The moment the Sun begins to reappear (called "third contact"), you must immediately put your eclipse glasses back on.
 
-{{< drg/be-prepared title="Safely Transitioning During a Total Eclipse" >}}
+{{< drg/be-prepared title="Safely Transitioning During a Total Eclipse" safety="true" >}}
 During a total solar eclipse, follow this sequence:
 
 - **Before totality:** Wear your eclipse glasses at all times.

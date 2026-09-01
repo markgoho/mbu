@@ -110,7 +110,7 @@ When you swim or move in cold water, you do three things that accelerate heat lo
 
 Studies by the U.S. Coast Guard show that a person swimming in cold water loses body heat approximately 35% faster than a person holding still in the HELP position. In 50°F water, a swimmer might survive 1 to 2 hours, while a person in the HELP position might survive 2 to 4 hours.
 
-{{< drg/be-prepared title="Unexpected Cold Water Immersion" >}}
+{{< drg/be-prepared title="Unexpected Cold Water Immersion" safety="true" >}}
 If you fall into cold water unexpectedly:
 - **Do not panic.** Cold water triggers a gasp reflex — fight it and control your breathing.
 - **Get your head above water** and orient yourself.

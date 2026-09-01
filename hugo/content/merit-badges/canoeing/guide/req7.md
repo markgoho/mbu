@@ -117,7 +117,7 @@ Switching positions with your partner while the canoe is on the water is a skill
 7. **Settle into the new position** before the other paddler begins moving.
 8. **Retrieve paddles** and resume paddling.
 
-{{< drg/be-prepared title="The Canoe Tips While Switching" >}}
+{{< drg/be-prepared title="The Canoe Tips While Switching" safety="true" >}}
 Despite your best technique, the canoe may rock or feel unstable during a position switch.
 
 - **Stay calm.** Grip the gunwales and freeze until the rocking stops.

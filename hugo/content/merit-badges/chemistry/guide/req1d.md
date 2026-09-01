@@ -42,7 +42,7 @@ Your home contains more chemicals than you might think. Here is where to find th
 - Laundry room: Bleach, detergent, fabric softener — store on a high shelf or in a locked cabinet. Never mix bleach with other cleaners.
 {{< /drg/checklist >}}
 
-{{< drg/be-prepared title="Chemical Spill at Home" >}}
+{{< drg/be-prepared title="Chemical Spill at Home" safety="true" >}}
 If a household chemical spills:
 
 - **Open windows** for ventilation if fumes are present.

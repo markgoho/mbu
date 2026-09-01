@@ -68,7 +68,7 @@ The first choice is always to **shut off the power**. If you can safely switch o
 
 If you cannot turn off the power immediately and your counselor is asking for a demonstration, the key point is that you must separate the person from the source **without becoming part of the circuit yourself**. That means using a dry, nonconductive object such as a wooden broom handle or dry fiberglass tool handle to push the wire away or move the person away from the wire.
 
-{{< drg/be-prepared title="A Person Frozen to a Damaged Appliance Cord" >}}
+{{< drg/be-prepared title="A Person Frozen to a Damaged Appliance Cord" safety="true" >}}
 You walk into the laundry room and someone is gripping a damaged cord and cannot let go.
 
 - **Do not touch the person directly.**
@@ -136,7 +136,7 @@ After the source of electricity is off and the scene is safe, cool the burned ar
 
 Cover the burn loosely with a clean, dry, nonstick dressing or sterile gauze. Keep the person warm and calm. Seek medical evaluation, especially if the burn is large, deep, on the face or hands, or was caused by household current or more.
 
-{{< drg/be-prepared title="Small Burn, Big Problem" >}}
+{{< drg/be-prepared title="Small Burn, Big Problem" safety="true" >}}
 A person grabs a damaged extension cord and ends up with a small burned spot on one hand.
 
 - **Do not assume the injury is minor just because the mark is small.**

@@ -27,7 +27,7 @@ Your dashboard is your vehicle's way of talking to you. Every gauge, light, and 
 
 **Engine Temperature Gauge** — Shows the temperature of the engine coolant. The needle should settle in the middle of the gauge during normal driving. If it climbs toward the "H" (hot) zone, the engine is overheating — you need to pull over safely and turn off the engine immediately.
 
-{{< drg/be-prepared title="The Temperature Gauge Spikes to Hot" >}}
+{{< drg/be-prepared title="The Temperature Gauge Spikes to Hot" safety="true" >}}
 If the engine temperature gauge suddenly climbs toward the red zone:
 
 - **Turn off the air conditioning** immediately — it puts extra load on the engine.

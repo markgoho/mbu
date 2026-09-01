@@ -86,7 +86,7 @@ Cold-weather cycling — especially at high speeds on descents — can rapidly l
 
 **Frostbite** affects exposed extremities — fingers, toes, ears, and nose. Skin turns pale or waxy and feels numb or hard.
 
-{{< drg/be-prepared title="Handling Cold-Weather Emergencies" >}}
+{{< drg/be-prepared title="Handling Cold-Weather Emergencies" safety="true" >}}
 - **Hypothermia:** Get the person out of the wind and cold. Remove any wet clothing and replace it with dry layers. Warm them gradually with blankets, warm drinks (if conscious), and body heat. Call for help.
 - **Frostbite:** Get to a warm shelter. Do not rub the affected area — this causes more damage. Warm the area gradually in lukewarm (not hot) water. Seek medical attention.
 {{< /drg/be-prepared >}}

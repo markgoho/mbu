@@ -39,7 +39,7 @@ The right decision at an abandoned mine or quarry is simple: stay out and stay a
 
 A good discussion with your counselor should explain not only **what** the dangers are, but **why** they are hard to judge from the surface. That is the key lesson. People get hurt because these sites often look less dangerous than they really are.
 
-{{< drg/be-prepared title="If friends want to explore an old mine or quarry" >}}
+{{< drg/be-prepared title="If friends want to explore an old mine or quarry" safety="true" >}}
 - **Speak up early**: Say clearly that abandoned mines and quarries are known hazard sites.
 - **Do not go closer to “check it out”**: Distance is part of staying safe.
 - **Suggest a safer alternative**: Visit a museum, a guided tour, or a public overlook instead.

@@ -101,7 +101,7 @@ Altitude sickness occurs when you travel to a high elevation (usually above 8,00
 - **Signs and Symptoms:** Headache (most common), nausea, dizziness, fatigue, and loss of appetite. It often feels like a bad hangover.
 - **First Aid:** The best treatment is to stop ascending. If symptoms do not improve within a few hours or if they get worse, you **must** descend to a lower elevation.
 
-{{< drg/be-prepared title="The Golden Rule of Altitude" >}}
+{{< drg/be-prepared title="The Golden Rule of Altitude" safety="true" >}}
 If you feel sick at a higher elevation than you are used to, assume it is altitude sickness until proven otherwise. Never leave a sick person alone, and never go higher until the symptoms are completely gone.
 {{< /drg/be-prepared >}}
 

@@ -74,7 +74,7 @@ Your counselor may ask you to explain not just the hazard, but what to *do* abou
 
 ## A Real-World Safety Scenario
 
-{{< drg/be-prepared title="Your Friend Slips Midstream" >}}
+{{< drg/be-prepared title="Your Friend Slips Midstream" safety="true" >}}
 You and another Scout are wading a shallow creek when your friend slips and lands hard on one knee.
 
 - **Stop casting immediately** so no one else gets hooked.

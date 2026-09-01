@@ -102,7 +102,7 @@ A good emergency response plan includes:
 
 The plan should be printed and carried by at least two crew members. Review it together before the trek begins so everyone knows the plan and there is no confusion under stress.
 
-{{< drg/be-prepared title="A Crew Member Gets Injured" >}}
+{{< drg/be-prepared title="A Crew Member Gets Injured" safety="true" >}}
 Your navigator trips on a root and twists their ankle badly. They cannot bear weight.
 
 - **Step 1**: Stop. Secure the scene and make sure no one else is at risk.

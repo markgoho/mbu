@@ -82,7 +82,7 @@ Ant bites can be different from bee stings. Fire ants often grab the skin with t
 
 The most serious health concern is **anaphylactic shock**, often shortened to **anaphylaxis**. This is a severe allergic reaction that affects the whole body. It can happen quickly, sometimes within minutes. Warning signs include trouble breathing, wheezing, swelling of the lips or throat, dizziness, fainting, rapid pulse, vomiting, or a feeling that something is very wrong.
 
-{{< drg/be-prepared title="If someone shows signs of anaphylaxis" >}}
+{{< drg/be-prepared title="If someone shows signs of anaphylaxis" safety="true" >}}
 Stay calm and act fast.
 
 - **Move away from the insects**: Prevent additional stings.

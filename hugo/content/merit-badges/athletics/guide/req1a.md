@@ -59,7 +59,7 @@ Sometimes, despite your best efforts, things go wrong. Mitigation means reducing
 - **Padded equipment** — Helmets, shin guards, mouth guards, and padded mats absorb impacts so your body does not have to.
 - **Emergency planning** — Know where the first-aid kit is. Know who has a phone. Know the address of your training location in case you need to call 911.
 
-{{< drg/be-prepared title="Lightning During Practice" >}}
+{{< drg/be-prepared title="Lightning During Practice" safety="true" >}}
 If you see lightning or hear thunder during outdoor practice, you need to act fast:
 
 - **Stop all activity immediately.** Do not wait for a coach to tell you.

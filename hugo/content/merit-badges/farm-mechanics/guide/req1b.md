@@ -121,7 +121,7 @@ Your plan should show:
 
 Your plan does not need to be fancy — it can be drawn on plain paper. But it should demonstrate that you understand the function of each area and why each safety device is positioned where it is. Be ready to explain your choices to your counselor.
 
-{{< drg/be-prepared title="You Discover a Fuel Spill in Your Shop" >}}
+{{< drg/be-prepared title="You Discover a Fuel Spill in Your Shop" safety="true" >}}
 While getting ready to work on a tractor, you notice gasoline leaking from a fuel can onto the concrete floor. What do you do?
 
 - **Step 1:** Do NOT ignore it or think you will clean it up later. Do it now.

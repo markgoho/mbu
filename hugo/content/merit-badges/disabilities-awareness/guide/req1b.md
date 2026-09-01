@@ -44,7 +44,7 @@ What counts as respectful behavior changes depending on the specific disability.
 
 When talking with a person in a wheelchair, sit down or step back so you are at eye level — do not tower over them. Never push a wheelchair without being asked. If someone is using crutches or a walker, be patient and walk at their pace. Hold doors open if it is helpful, but do not make a production of it.
 
-{{< drg/be-prepared title="Someone Falls from a Wheelchair" >}}
+{{< drg/be-prepared title="Someone Falls from a Wheelchair" safety="true" >}}
 If a person falls from their wheelchair, do not immediately try to lift them. Instead:
 - **Ask** if they are okay and what they need.
 - **Wait** for their instructions — many people have a practiced method for getting back in their chair.

@@ -58,7 +58,7 @@ Your job is to observe and communicate clearly. The proper authority — camp ra
 
 This option also builds on what you studied in Req 2c. Decay fungi, insect attack, root damage, and dead tops are not just biological facts — they can become safety concerns where people gather.
 
-{{< drg/be-prepared title="What If a Tree Looks Dangerous Right Now?" >}}
+{{< drg/be-prepared title="What If a Tree Looks Dangerous Right Now?" safety="true" >}}
 If a tree appears ready to fail soon — for example, a split stem over a tent site or a hanging limb over a playground — do not wait to write a polished report later.
 
 - **Warn the adult in charge immediately.**

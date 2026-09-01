@@ -60,7 +60,7 @@ Not all stargazing happens in the cold. Summer nights bring their own challenges
 - **Hydration:** Bring plenty of water even on warm nights. Dehydration creeps up when you are focused on the sky.
 - **Sudden storms:** Summer weather can change quickly. Watch for building clouds and distant lightning, and have a plan to pack up and move to shelter.
 
-{{< drg/be-prepared title="Unexpected Weather Change?" >}}
+{{< drg/be-prepared title="Unexpected Weather Change?" safety="true" >}}
 If weather deteriorates during your observation session:
 
 - **Cap your telescope** immediately to protect the optics from moisture.

@@ -65,7 +65,7 @@ Most aquatic life injuries happen because someone touched, grabbed, stepped on, 
 
 Cuts and scrapes may sound minor, but salt water, boat decks, coral, and equipment edges can turn a small wound into a bigger problem. Clean the area, control bleeding, protect the wound, and watch for infection.
 
-{{< drg/be-prepared title="Your buddy says their shoulder hurts and they feel strangely tired after the dive" >}}
+{{< drg/be-prepared title="Your buddy says their shoulder hurts and they feel strangely tired after the dive" safety="true" >}}
 - **Stop diving for the day.** Do not send them back in to “see if it clears up.”
 - **Keep them resting and monitored.** Note what symptoms they report and when they started.
 - **Get qualified help fast.** Unusual pain, numbness, weakness, breathing problems, or confusion after a dive need immediate attention.
@@ -122,7 +122,7 @@ You do not need to guess at technique. Use the exact method your instructor or c
 Practice saying the recognition steps out loud before your demonstration. It helps you connect the mental checklist to the physical skill.
 {{< /drg/tip >}}
 
-{{< drg/be-prepared title="A diver collapses on the dock after surfacing" >}}
+{{< drg/be-prepared title="A diver collapses on the dock after surfacing" safety="true" >}}
 - **Check for danger first.** Wet decks, tanks, and panicked bystanders can create new hazards.
 - **Check responsiveness.** Shout and tap.
 - **Check for normal breathing.** Gasping is not normal breathing.

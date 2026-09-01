@@ -87,7 +87,7 @@ Some guidelines now use **POLICE** (Protection, Optimal Loading, Ice, Compressio
 - Apply ice to limit swelling and pain.
 - Transport/evacuate for medical care — complete tendon ruptures almost always require surgical repair for full functional recovery.
 
-{{< drg/be-prepared title="Suspected Achilles Tendon Rupture at a Campout" >}}
+{{< drg/be-prepared title="Suspected Achilles Tendon Rupture at a Campout" safety="true" >}}
 If a Scout injures the back of their ankle and can't push off their foot:
 
 - **Stop all activity immediately.** Do not allow them to try walking normally.

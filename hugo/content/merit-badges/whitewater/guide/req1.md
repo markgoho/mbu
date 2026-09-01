@@ -250,7 +250,7 @@ Coughing, difficulty breathing, blue lips, confusion, or unconsciousness after b
 
 Get the person out of the water and check breathing. Begin CPR if needed and call for emergency help. Even a brief underwater struggle can injure the lungs, so anyone who was submerged and is having trouble breathing needs medical evaluation.
 
-{{< drg/be-prepared title="A swimmer comes out shivering and panicked" >}}
+{{< drg/be-prepared title="A swimmer comes out shivering and panicked" safety="true" >}}
 - **Get them out of the current**: Move to shore or into a stable rescue position first.
 - **Protect heat**: Replace wet layers when possible, add dry insulation, and block wind.
 - **Check for bigger problems**: Ask about head impact, neck pain, breathing trouble, and how long they were in the water.

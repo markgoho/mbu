@@ -59,7 +59,7 @@ The requirement uses four useful action words. Think of them as the order of goo
 When you talk with your counselor, use specific examples from the sports you choose in Req 4. A swimmer, a wrestler, and a cross-country runner all face different risks, so your answers should sound different too.
 {{< /drg/tip >}}
 
-{{< drg/be-prepared title="A teammate says, 'I'm fine,' but doesn't look fine" >}}
+{{< drg/be-prepared title="A teammate says, 'I'm fine,' but doesn't look fine" safety="true" >}}
 A lot of sports injuries get worse because someone tries to push through them.
 
 - **Pause the activity** and move the athlete out of immediate danger.

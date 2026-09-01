@@ -103,7 +103,7 @@ In this rescue, you keep hold of the aid and actively tow the victim to shore. T
 Professional lifeguards practice buoyant aid rescues so often that the entire sequence — entry, approach, presentation, and tow — takes under 30 seconds for a victim 30 feet from shore. That repetition builds the muscle memory needed to perform under pressure.
 {{< /drg/did-you-know >}}
 
-{{< drg/be-prepared title="The Victim Won't Let Go of You" >}}
+{{< drg/be-prepared title="The Victim Won't Let Go of You" safety="true" >}}
 You present the buoyant aid, but the victim ignores it and grabs your arm instead.
 
 - **Submerge.** Push yourself underwater. The victim will instinctively release you to stay at the surface.

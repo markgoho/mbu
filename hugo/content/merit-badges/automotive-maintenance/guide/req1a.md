@@ -41,7 +41,7 @@ Cars are heavy — a typical sedan weighs around 3,500 pounds. When you lift a v
 - **Cuts and scrapes** from sharp metal edges, broken parts, and hand tools are common. Keep your tetanus vaccination up to date.
 - **Back injuries** happen when you lift heavy parts like batteries, wheels, or engine components without proper technique. Lift with your legs, not your back, and ask for help with heavy items.
 
-{{< drg/be-prepared title="A Vehicle Slips Off the Jack" >}}
+{{< drg/be-prepared title="A Vehicle Slips Off the Jack" safety="true" >}}
 If you hear creaking, see the vehicle shifting, or notice a jack leaning:
 
 - **Get out immediately.** Do not try to reposition the jack or save your tools.

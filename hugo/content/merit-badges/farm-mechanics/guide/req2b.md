@@ -139,7 +139,7 @@ Hydraulic systems are powerful and can hurt you:
 - **Pressurized fluid can penetrate skin:** A pinhole-sized leak can inject fluid through your skin at high velocity, causing serious injury. Always wear gloves and eye protection.
 - **Never position your hands near pinch points:** Areas where cylinders extend and retract can crush fingers in an instant.
 
-{{< drg/be-prepared title="Hydraulic Fluid Injection Injury" >}}
+{{< drg/be-prepared title="Hydraulic Fluid Injection Injury" safety="true" >}}
 While adjusting a hydraulic hose, pressurized fluid sprays and penetrates the skin on your hand, leaving only a small puncture mark but intense pain.
 
 - **Step 1:** Do NOT ignore it because it looks like a small wound.

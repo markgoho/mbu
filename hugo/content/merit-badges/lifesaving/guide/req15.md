@@ -104,7 +104,7 @@ A facedown victim with a potential spinal injury cannot breathe. You must turn t
 Aquatic spinal injuries are most common among males aged 15 to 24. The single most frequent scenario is diving headfirst into a body of water that is shallower than expected. Many public pools have eliminated diving boards from shallow ends specifically because of this risk.
 {{< /drg/did-you-know >}}
 
-{{< drg/be-prepared title="A Diver Hits the Bottom and Floats Up Facedown" >}}
+{{< drg/be-prepared title="A Diver Hits the Bottom and Floats Up Facedown" safety="true" >}}
 At a lake, someone dives off a rock into shallow water. They float to the surface facedown and are not moving.
 
 - **Assume spinal injury.** The mechanism (diving + impact) makes it likely.

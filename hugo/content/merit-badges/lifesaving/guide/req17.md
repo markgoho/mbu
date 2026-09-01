@@ -113,7 +113,7 @@ The difference between heat exhaustion and heat stroke is critical. Heat exhaust
 - For a thigh cramp: straighten the leg and gently pull the ankle
 - Move to shallow water or exit the water as soon as possible
 
-{{< drg/be-prepared title="Leg Cramp While Swimming in Deep Water" >}}
+{{< drg/be-prepared title="Leg Cramp While Swimming in Deep Water" safety="true" >}}
 You are 30 feet from shore and your calf suddenly seizes with a cramp. You cannot kick effectively.
 
 - **Do not panic.** You can float without kicking.

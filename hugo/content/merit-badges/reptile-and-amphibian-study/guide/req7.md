@@ -71,7 +71,7 @@ Never try to handle, pin, poke, or photograph a venomous reptile at close range.
 
 The correct response is simple and serious:
 
-{{< drg/be-prepared title="Venomous Bite Response" >}}
+{{< drg/be-prepared title="Venomous Bite Response" safety="true" >}}
 - **Get help immediately**: call 911 or emergency services as soon as possible.
 - **Move away from the animal**: do not try to catch or kill it.
 - **Keep the person calm and as still as possible**: movement can speed venom spread.

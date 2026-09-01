@@ -101,7 +101,7 @@ A **heat burn** can come from a soldering iron, hot motor, or heated metal part.
 
 A **chemical burn** can happen if a battery leaks or a chemical cleaner splashes. Flush the area with plenty of water right away and tell an adult immediately. Battery chemicals are not something to “wait and see” about.
 
-{{< drg/be-prepared title="Battery leak in the pit" >}}
+{{< drg/be-prepared title="Battery leak in the pit" safety="true" >}}
 If you notice a swollen, smoking, or leaking battery:
 
 - **Do not touch the leaking material with bare hands.**

@@ -68,7 +68,7 @@ Cyberbullying is using digital devices to harass, threaten, or humiliate someone
 3. **Block the person** on the platform
 4. **Tell a trusted adult** — a parent, teacher, or counselor
 
-{{< drg/be-prepared title="When Someone Asks for Personal Information Online" >}}
+{{< drg/be-prepared title="When Someone Asks for Personal Information Online" safety="true" >}}
 You are playing an online game and another player asks for your real name, what school you go to, and wants to meet up in person. What do you do?
 
 - **Never share** personal identifying information with people you only know online.

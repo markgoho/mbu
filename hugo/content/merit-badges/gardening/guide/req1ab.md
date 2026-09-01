@@ -68,7 +68,7 @@ Gardens attract pollinators, which is great for plants but means you may be near
 
 Most bites and stings are annoying rather than dangerous, but severe allergies are different. Anaphylaxis is a fast, serious allergic reaction that can include trouble breathing, swelling of the face or throat, hives, vomiting, and dizziness. A person with a known severe allergy may carry an epinephrine auto-injector.
 
-{{< drg/be-prepared title="A Bee Sting Turns Serious" >}}
+{{< drg/be-prepared title="A Bee Sting Turns Serious" safety="true" >}}
 If someone is stung and starts showing signs of anaphylaxis:
 
 - **Get adult help immediately.** Do not wait to see if it gets better.

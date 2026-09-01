@@ -69,7 +69,7 @@ Paint sticks better to clean surfaces. That may mean washing away grease, dirt, 
 
 Use only the amount you need. Keep products in labeled containers. Never mix cleaning chemicals unless the label clearly says it is safe.
 
-{{< drg/be-prepared title="If a product splashes in your eye" >}}
+{{< drg/be-prepared title="If a product splashes in your eye" safety="true" >}}
 Stay calm and act fast.
 
 - **Flush with clean water immediately** for the amount of time listed on the product label.

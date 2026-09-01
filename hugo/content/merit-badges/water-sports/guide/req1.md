@@ -82,7 +82,7 @@ Your counselor may ask you to explain the difference between these words.
 
 For example, if the water is cold, you **anticipate** cold-water risk by checking temperature and conditions. You **prevent** trouble by wearing the right gear and limiting exposure. You **mitigate** the danger by keeping blankets and dry clothes ready in the boat. You **respond** by getting a cold rider out of the water quickly and beginning warming steps.
 
-{{< drg/be-prepared title="Your rider falls near a busy boating lane" >}}
+{{< drg/be-prepared title="Your rider falls near a busy boating lane" safety="true" >}}
 If you fall in a high-traffic area, think about visibility first.
 
 - **Make yourself visible**: Hold up a ski if possible, or use the skier-in-water signal.

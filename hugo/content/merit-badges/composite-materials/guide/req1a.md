@@ -81,7 +81,7 @@ Your counselor will want to hear you use these four words — and understand wha
 - **Prevent:** Take actions that stop hazards from occurring. Keep resin containers sealed when not in use. Wet-sand instead of dry-sand to keep dust out of the air. Never eat or drink in the work area.
 - **Respond:** Know what to do when something goes wrong. If resin contacts your skin, wash immediately with soap and water (not solvent, which drives chemicals deeper). If someone inhales excessive fumes, move them to fresh air. Know where the eyewash station and first aid kit are before you need them.
 
-{{< drg/be-prepared title="Resin Spill on Bare Skin" >}}
+{{< drg/be-prepared title="Resin Spill on Bare Skin" safety="true" >}}
 You are laying up fiberglass and a glob of mixed epoxy lands on your forearm above your glove.
 
 - **Do not** use acetone or solvent to wipe it off — solvents open your pores and push the chemicals deeper into your skin.

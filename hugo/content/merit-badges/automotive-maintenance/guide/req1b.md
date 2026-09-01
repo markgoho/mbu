@@ -87,7 +87,7 @@ A clean shop is a safe shop. Oil on the floor is a slip hazard. Tools left on th
 - Dispose of oily rags in a sealed metal container — never toss them in a regular trash can.
 - Keep walkways clear so you can move quickly in an emergency.
 
-{{< drg/be-prepared title="Chemical Splash in Your Eyes" >}}
+{{< drg/be-prepared title="Chemical Splash in Your Eyes" safety="true" >}}
 If brake fluid, coolant, or battery acid splashes in your eyes:
 
 - **Do not rub your eyes.** This can push the chemical deeper.

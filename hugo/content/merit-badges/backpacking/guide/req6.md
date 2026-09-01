@@ -99,7 +99,7 @@ The best navigation strategy is to never get lost in the first place. Experience
 
 If you realize you do not know where you are, use the **STOP** method:
 
-{{< drg/be-prepared title="Lost on the Trail — The STOP Method" >}}
+{{< drg/be-prepared title="Lost on the Trail — The STOP Method" safety="true" >}}
 - **S — Stop.** Do not keep walking. Sit down, drink some water, and collect yourself. Panicking and pressing forward without a plan usually makes things worse.
 - **T — Think.** When did you last know where you were? What landmarks have you passed since then? Can you hear a road, stream, or other hikers?
 - **O — Observe.** Look around for trail markers, blazes, cairns, or boot prints. Check your map and compass. Try to match terrain features to the map.

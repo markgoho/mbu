@@ -110,7 +110,7 @@ Respond based on the injury or exposure: remove ticks properly, wash plant oils 
 - **Emergency plan:** Know who is with you, where you are, and how to get help.
 {{< /drg/checklist >}}
 
-{{< drg/be-prepared title="Storm Moving In at the Lake" >}}
+{{< drg/be-prepared title="Storm Moving In at the Lake" safety="true" >}}
 You hear a low rumble and see dark clouds building across the water.
 - **Step one:** Reel in immediately and stop casting.
 - **Step two:** Secure rods and move away from the shoreline or boat launch.

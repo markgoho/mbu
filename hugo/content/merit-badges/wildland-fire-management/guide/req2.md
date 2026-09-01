@@ -96,7 +96,7 @@ This is the impact Scouts most often underestimate, and it may be the most conse
     title="How Wildfires Affect Water Supply (video)"
     url="https://youtu.be/RV_OZ430GAs" >}}
 
-{{< drg/be-prepared title="Camping Near a Burn Scar" >}}
+{{< drg/be-prepared title="Camping Near a Burn Scar" safety="true" >}}
 Scouts hike and camp in recently burned areas more often than they realize, and a burn scar is a genuinely hazardous place.
 
 - **Check for closures first.** Land managers close burned areas for real reasons, and those closures are enforceable.

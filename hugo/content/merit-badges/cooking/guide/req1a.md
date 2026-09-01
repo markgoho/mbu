@@ -58,7 +58,7 @@ Grease fires, unattended stoves, and flammable materials near heat sources are s
 - *Prevent:* Never leave cooking food unattended. Keep towels, paper, and plastic away from burners. Do not overfill pans with oil.
 - *Respond:* **Never throw water on a grease fire.** Water causes the burning oil to splatter and spread. Instead, smother the fire by sliding a lid over the pan and turning off the heat. If the fire is in the oven, close the oven door. If it is out of control, evacuate and call 911.
 
-{{< drg/be-prepared title="Grease Fire in the Kitchen" >}}
+{{< drg/be-prepared title="Grease Fire in the Kitchen" safety="true" >}}
 A pan of oil catches fire while you are frying. What do you do?
 
 - **Step 1:** Do NOT move the pan. Do NOT throw water on it.
