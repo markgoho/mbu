@@ -1,7 +1,1 @@
-<aside class="req-callout req-callout--tip">
-  <div class="req-callout__header">
-    {{ partial "icon.html" (dict "name" "lightbulb" "weight" "duotone" "class" "req-callout__icon") }}
-    <h3 class="req-callout__title">Tip</h3>
-  </div>
-  <div class="req-callout__body">{{ .Inner | markdownify }}</div>
-</aside>
+{{ partial "drg/callout.html" (dict "variant" "tip" "title" "Tip" "body" (.Inner | markdownify)) }}

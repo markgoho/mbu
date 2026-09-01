@@ -84,6 +84,8 @@
   --on-error-container: var(--v2-on-error-container);
 
   --amber: var(--v2-amber);
+  --amber-container: var(--v2-amber-container);
+  --on-amber-container: var(--v2-on-amber-container);
   --amber-glow: var(--v2-amber-alpha-30);
 
   /* --font-display / --font-body inherited from :root (global default) */
@@ -140,6 +142,8 @@ html.theme-v2:has(#theme-toggle-checkbox:checked) {
   --on-error-container: var(--v2-dark-on-error-container);
 
   --amber: var(--v2-dark-amber);
+  --amber-container: var(--v2-dark-amber-container);
+  --on-amber-container: var(--v2-dark-on-amber-container);
   --amber-glow: var(--v2-dark-amber-alpha-30);
 
   /* --font-display / --font-body inherited from :root (global default) */
@@ -212,6 +216,8 @@ html.theme-v2:has(#theme-toggle-checkbox:checked) {
     --on-error-container: var(--v2-on-error-container);
 
     --amber: var(--v2-amber);
+    --amber-container: var(--v2-amber-container);
+    --on-amber-container: var(--v2-on-amber-container);
     --amber-glow: var(--v2-amber-alpha-30);
 
     --card-border-subtle: var(--olive-500-alpha-12);

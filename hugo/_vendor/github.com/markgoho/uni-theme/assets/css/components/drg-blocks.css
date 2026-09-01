@@ -24,6 +24,28 @@
     grid-template-columns: min-content 1fr;
     align-items: center;
     gap: var(--space-s);
+
+    /* Two-row eyebrow-label + title header (e.g. "Be Prepared!" above a
+       per-scenario title), vs. the default single-row icon + title. */
+    &:has(.req-callout__heading) {
+      grid-template-rows: auto auto;
+      row-gap: var(--space-3xs);
+    }
+  }
+
+  & .req-callout__heading {
+    display: contents;
+  }
+
+  & .req-callout__label {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: var(--step--2);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    margin: 0;
   }
 
   & .req-callout__title {
@@ -33,12 +55,25 @@
     line-height: var(--line-height-tight);
   }
 
+  & .req-callout__header:has(.req-callout__heading) .req-callout__title {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
   & .req-callout__icon {
     height: 1.25em;
     width: auto;
     aspect-ratio: 1 / 1;
     color: inherit;
     flex-shrink: 0;
+  }
+
+  & .req-callout__header:has(.req-callout__heading) .req-callout__icon {
+    grid-row: 1 / 3;
+    height: 100%;
+    max-height: 100%;
+    align-self: center;
+    justify-self: center;
   }
 
   & .req-callout__body {
@@ -74,6 +109,27 @@
       margin-top: 0;
     }
   }
+
+  /* Eyebrow-label callouts ("Be Prepared!" scenarios) use a richer card
+     treatment than the single-line callouts: a full subtle border, more
+     block margin, and tighter list spacing for step-by-step bodies. */
+  &:has(.req-callout__heading) {
+    border: 1px solid var(--card-border-subtle);
+    margin-block: var(--space-l);
+
+    & .req-callout__body {
+      margin-top: var(--space-s);
+
+      ul {
+        padding-left: var(--space-l);
+        margin-bottom: 0;
+      }
+
+      li {
+        margin-bottom: var(--space-2xs);
+      }
+    }
+  }
 }
 
 .req-callout--safety {
@@ -81,7 +137,8 @@
   border-left-color: var(--error);
   color: var(--on-error-container);
 
-  .req-callout__icon {
+  .req-callout__icon,
+  .req-callout__label {
     color: var(--error);
   }
 }
@@ -91,7 +148,8 @@
   border-left-color: var(--secondary);
   color: var(--on-secondary-container);
 
-  .req-callout__icon {
+  .req-callout__icon,
+  .req-callout__label {
     color: var(--secondary);
   }
 }
@@ -101,125 +159,24 @@
   border-left-color: var(--accent);
   color: var(--on-accent-container);
 
-  .req-callout__icon {
+  .req-callout__icon,
+  .req-callout__label {
     color: var(--accent);
   }
 }
 
-/* ------------------------------------------------------------------ */
-/* Be Prepared                                                          */
-/* ------------------------------------------------------------------ */
+/* Default "Be Prepared!" treatment for non-hazard scenarios (general
+   troubleshooting / motivational "what if" tips). Genuine physical-hazard
+   scenarios use variant="safety" instead, sharing .req-callout--safety
+   above with drg/safety-first. */
+.req-callout--prepared {
+  background-color: var(--amber-container);
+  border-left-color: var(--amber);
+  color: var(--on-amber-container);
 
-.req-be-prepared {
-  background-color: var(--error-container);
-  border: 1px solid var(--card-border-subtle);
-  border-left: var(--border-width-md) solid var(--error);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  padding: var(--space-m);
-  margin-block: var(--space-l);
-  color: var(--on-error-container);
-
-  & .req-be-prepared__header {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: auto auto;
-    column-gap: var(--space-s);
-    row-gap: var(--space-3xs);
-    align-items: center;
-  }
-
-  & .req-be-prepared__heading {
-    display: contents;
-  }
-
-  & .req-be-prepared__icon {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    height: 100%;
-    width: auto;
-    max-height: 100%;
-    aspect-ratio: 1 / 1;
-    align-self: center;
-    justify-self: center;
-    color: var(--error);
-    flex-shrink: 0;
-  }
-
-  & .req-be-prepared__label {
-    grid-column: 2;
-    grid-row: 1;
-    font-size: var(--step--2);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-bold);
-    letter-spacing: 0.05em;
-    color: var(--error);
-    line-height: 1.2;
-    margin: 0;
-  }
-
-  & .req-be-prepared__title {
-    grid-column: 2;
-    grid-row: 2;
-    margin: 0;
-    font-family: var(--font-display);
-    font-size: var(--step-1);
-    line-height: var(--line-height-tight);
-    color: var(--on-error-container);
-  }
-
-  /* Body content */
-  & .req-be-prepared__body {
-    margin-top: var(--space-s);
-
-    > :last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  ul {
-    padding-left: var(--space-l);
-    margin-bottom: 0;
-  }
-
-  li {
-    margin-bottom: var(--space-2xs);
-  }
-
-  /* Fallback if markup is rendered without .req-be-prepared__header */
-  &:not(:has(.req-be-prepared__header)) {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: auto auto;
-    column-gap: var(--space-s);
-    row-gap: var(--space-3xs);
-    align-items: center;
-
-    & .req-be-prepared__icon {
-      grid-column: 1;
-      grid-row: 1 / 3;
-      height: 100%;
-      width: auto;
-      max-height: 100%;
-      aspect-ratio: 1 / 1;
-      align-self: center;
-      justify-self: center;
-    }
-
-    & .req-be-prepared__label {
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    & .req-be-prepared__title {
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-    & .req-be-prepared__body {
-      grid-column: 1 / -1;
-      margin-top: var(--space-xs);
-    }
+  .req-callout__icon,
+  .req-callout__label {
+    color: var(--on-amber-container);
   }
 }
 
