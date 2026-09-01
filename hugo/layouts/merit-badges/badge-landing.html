@@ -173,8 +173,7 @@
             "icon" "download-simple"
             "label" "Fillable Worksheet"
             "url" (printf "/merit-badges/%s/%s-merit-badge-worksheet.pdf" $slug $slug)
-            "external" true
-            "hide_on_mobile" true) }}
+            "external" true) }}
         {{ end }}
         {{ if $json.pamphlet_url }}
           {{ $resourceRows = $resourceRows | append (dict
