@@ -57,7 +57,7 @@
       {{ end }}
       <ul class="req-nav">
         {{ range $guideNav }}
-          {{ if .group_title }}
+          {{ if and .group_title (or (gt (len .items) 1) (not (findRE `^[0-9]` .group_title))) }}
             <li class="req-nav__group-title">{{ .group_title }}</li>
           {{ end }}
 
@@ -155,7 +155,7 @@
       <div class="req-mobile-nav__menu">
         <ul class="req-mobile-nav__list">
           {{ range $guideNav }}
-            {{ if .group_title }}
+            {{ if and .group_title (or (gt (len .items) 1) (not (findRE `^[0-9]` .group_title))) }}
               <li class="req-mobile-nav__group">{{ .group_title }}</li>
             {{ end }}
             {{ range .items }}
