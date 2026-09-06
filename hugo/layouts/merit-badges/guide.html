@@ -106,7 +106,7 @@
             {{ $reqKey = lower $reqKey }}
           {{ end }}
           {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
-          {{ $kicker := .Params.group_title | default $navInfo.group_title }}
+          {{ $kicker := $navInfo.group_title_display }}
           <header class="req-header">
             {{ with $kicker }}
               <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>

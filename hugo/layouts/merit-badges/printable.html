@@ -3,10 +3,11 @@
 {{ define "main-class" }}req-page{{ end }}
 
 {{ define "main" }}
+  {{ $navInfo := partial "drg/resolve-nav.html" . }}
   <article class="req-content">
     <header class="req-header">
       <h1 class="req-header__title">{{ .Title }}</h1>
-      {{ with .Params.group_title }}
+      {{ with $navInfo.group_title_display }}
         <span class="req-header__group">{{ . }}</span>
       {{ end }}
     </header>

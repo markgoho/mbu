@@ -69,7 +69,6 @@
 {{ $inheritedGuide := .inherited_guide | default "" }}
 
 {{ $marker := "" }}
-{{ $eyebrow := "" }}
 {{ $title := "" }}
 {{ $guideHref := "" }}
 {{ $ring := true }}
@@ -79,7 +78,6 @@
   {{ $marker = .index }}
 
   {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
-  {{ $eyebrow = $lookup.eyebrow }}
   {{ $title = $lookup.title }}
 
   {{/* A TITLE NEVER TRAVELS UPWARD (req-guide-lookup.html): only offer
@@ -216,7 +214,6 @@
   "content_name" $badgeName
   "title" $title
   "text" $req.text
-  "eyebrow" $eyebrow
   "pill" $req.subrequirement_mode
   "guide_href" $guideHref
   "resources" (cond $hideResources (slice) $req.resources)
