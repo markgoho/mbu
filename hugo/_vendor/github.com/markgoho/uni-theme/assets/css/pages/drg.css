@@ -612,6 +612,15 @@
   flex: 1;
 }
 
+/* A lettered marker is a subrequirement of the number-only item above
+   it; indenting it is what lets a standalone numbered requirement
+   (191ad0c hides its own redundant group-title header) still read as
+   a peer of the group before it, by staying flush with the sidebar
+   edge instead of leaning on a header for that signal. */
+.req-nav__item--lettered .req-nav__link {
+  padding-inline-start: calc(var(--space-xs) + var(--space-m));
+}
+
 .req-mobile-nav__link {
   display: flex;
   align-items: baseline;
@@ -630,6 +639,10 @@
   opacity: 0.85;
   min-width: 1.65rem;
   flex-shrink: 0;
+}
+
+.req-mobile-nav__item--lettered .req-mobile-nav__link {
+  padding-inline-start: calc(0.875rem + var(--space-m));
 }
 
 .req-mobile-nav__link:hover .req-mobile-nav__marker {

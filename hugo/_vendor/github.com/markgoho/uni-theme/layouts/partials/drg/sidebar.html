@@ -105,21 +105,32 @@
                 {{ $itemKey = "" }}
               {{ end }}
             {{ end }}
-            <li class="req-nav__item">
+            {{ $cleanTitle := replaceRE $prefixRE "" .title }}
+            {{ $hasMarker := findRE $markerRE $cleanTitle }}
+            {{ $marker := "" }}
+            {{ $label := $cleanTitle }}
+            {{ $isLetterMarker := false }}
+            {{ if $hasMarker }}
+              {{ $marker = replaceRE $markerRE "$1" $cleanTitle }}
+              {{ $isLetterMarker = findRE "^[a-zA-Z]\\.?$" $marker }}
+              {{ if $isLetterMarker }}
+                {{ $marker = replaceRE "\\.$" "" $marker }}
+              {{ end }}
+              {{ $label = replaceRE $markerRE "$2" $cleanTitle }}
+            {{ end }}
+            {{/* A lettered marker is this group's own subrequirement --
+              indent it under its number-only siblings so a standalone
+              numbered requirement (whose own group-title header is
+              hidden above, see 191ad0c/text/group-label.html) still
+              reads as their peer by staying flush left. */}}
+            <li class="req-nav__item{{ if $isLetterMarker }} req-nav__item--lettered{{ end }}">
               <a
                 href="{{ .url }}"
                 class="req-nav__link {{ if $isCurrent }}
                   req-nav__link--active
                 {{ end }}"
                 {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
-                {{ $cleanTitle := replaceRE $prefixRE "" .title }}
-                {{ $hasMarker := findRE $markerRE $cleanTitle }}
                 {{ if $hasMarker }}
-                  {{ $marker := replaceRE $markerRE "$1" $cleanTitle }}
-                  {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
-                    {{ $marker = replaceRE "\\.$" "" $marker }}
-                  {{ end }}
-                  {{ $label := replaceRE $markerRE "$2" $cleanTitle }}
                   <span class="req-nav__marker">{{ $marker }}</span>
                   <span class="req-nav__label">{{ $label }}</span>
                 {{ else }}
@@ -213,21 +224,27 @@
                   {{ $itemKey = "" }}
                 {{ end }}
               {{ end }}
-              <li>
+              {{ $cleanTitle := replaceRE $prefixRE "" .title }}
+              {{ $hasMarker := findRE $markerRE $cleanTitle }}
+              {{ $marker := "" }}
+              {{ $label := $cleanTitle }}
+              {{ $isLetterMarker := false }}
+              {{ if $hasMarker }}
+                {{ $marker = replaceRE $markerRE "$1" $cleanTitle }}
+                {{ $isLetterMarker = findRE "^[a-zA-Z]\\.?$" $marker }}
+                {{ if $isLetterMarker }}
+                  {{ $marker = replaceRE "\\.$" "" $marker }}
+                {{ end }}
+                {{ $label = replaceRE $markerRE "$2" $cleanTitle }}
+              {{ end }}
+              <li{{ if $isLetterMarker }} class="req-mobile-nav__item--lettered"{{ end }}>
                 <a
                   href="{{ .url }}"
                   class="req-mobile-nav__link {{ if $isCurrent }}
                     req-mobile-nav__link--active
                   {{ end }}"
                   {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
-                  {{ $cleanTitle := replaceRE $prefixRE "" .title }}
-                  {{ $hasMarker := findRE $markerRE $cleanTitle }}
                   {{ if $hasMarker }}
-                    {{ $marker := replaceRE $markerRE "$1" $cleanTitle }}
-                    {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
-                      {{ $marker = replaceRE "\\.$" "" $marker }}
-                    {{ end }}
-                    {{ $label := replaceRE $markerRE "$2" $cleanTitle }}
                     <span class="req-mobile-nav__marker">{{ $marker }}</span>
                     <span class="req-mobile-nav__label">{{ $label }}</span>
                   {{ else }}
