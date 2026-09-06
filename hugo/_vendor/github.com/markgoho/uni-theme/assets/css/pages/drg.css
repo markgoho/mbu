@@ -317,7 +317,6 @@
   opacity: 0.75;
   margin-top: var(--space-m);
   margin-bottom: var(--space-2xs);
-  padding-left: var(--space-xs);
   font-weight: 700;
 
   /* Separator for the "Reference" group at bottom of sidebar */
@@ -619,7 +618,7 @@
    a peer of the group before it, by staying flush with the sidebar
    edge instead of leaning on a header for that signal. */
 .req-nav__item--lettered .req-nav__link {
-  padding-inline-start: calc(var(--space-2xs) + var(--space-xs));
+  padding-inline-start: var(--space-xs);
 }
 
 .req-mobile-nav__link {
@@ -643,7 +642,7 @@
 }
 
 .req-mobile-nav__item--lettered .req-mobile-nav__link {
-  padding-inline-start: calc(var(--space-2xs) + var(--space-xs));
+  padding-inline-start: var(--space-xs);
 }
 
 .req-mobile-nav__link:hover .req-mobile-nav__marker {
