@@ -1,1 +1,1 @@
-# github.com/markgoho/uni-theme v0.1.1-0.20260906234503-5e2ff164bba0
+# github.com/markgoho/uni-theme v0.1.1-0.20260906235221-39d4fe03ed58
