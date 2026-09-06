@@ -31,6 +31,13 @@
 
 {{ $currentUrl := $page.RelPermalink }}
 
+{{/* Shared with the item-loop below and both desktop/mobile blocks, so
+  the group-label pre-pass and the per-item marker/label split can never
+  drift apart -- see text/group-label.html for what the pre-pass feeds
+  it. */}}
+{{ $prefixRE := `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` }}
+{{ $markerRE := `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` }}
+
 {{ $currentReqKey := "" }}
 {{ if not $page.IsSection }}
   {{ $reqNum := $page.Params.req_number | default "" }}
@@ -57,8 +64,19 @@
       {{ end }}
       <ul class="req-nav">
         {{ range $guideNav }}
+          {{ $groupMarkers := slice }}
+          {{ range .items }}
+            {{ $itemClean := replaceRE $prefixRE "" .title }}
+            {{ if findRE $markerRE $itemClean }}
+              {{ $groupMarkers = $groupMarkers | append (replaceRE $markerRE "$1" $itemClean) }}
+            {{ end }}
+          {{ end }}
+          {{ $groupLabel := "" }}
           {{ if and .group_title (or (gt (len .items) 1) (not (findRE `^[0-9]` .group_title))) }}
-            <li class="req-nav__group-title">{{ .group_title }}</li>
+            {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $groupMarkers) }}
+          {{ end }}
+          {{ with $groupLabel }}
+            <li class="req-nav__group-title">{{ . }}</li>
           {{ end }}
 
           {{ range .items }}
@@ -94,14 +112,14 @@
                   req-nav__link--active
                 {{ end }}"
                 {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
-                {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
-                {{ $hasMarker := findRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` $cleanTitle }}
+                {{ $cleanTitle := replaceRE $prefixRE "" .title }}
+                {{ $hasMarker := findRE $markerRE $cleanTitle }}
                 {{ if $hasMarker }}
-                  {{ $marker := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$1" $cleanTitle }}
+                  {{ $marker := replaceRE $markerRE "$1" $cleanTitle }}
                   {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
                     {{ $marker = replaceRE "\\.$" "" $marker }}
                   {{ end }}
-                  {{ $label := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$2" $cleanTitle }}
+                  {{ $label := replaceRE $markerRE "$2" $cleanTitle }}
                   <span class="req-nav__marker">{{ $marker }}</span>
                   <span class="req-nav__label">{{ $label }}</span>
                 {{ else }}
@@ -155,8 +173,19 @@
       <div class="req-mobile-nav__menu">
         <ul class="req-mobile-nav__list">
           {{ range $guideNav }}
+            {{ $groupMarkers := slice }}
+            {{ range .items }}
+              {{ $itemClean := replaceRE $prefixRE "" .title }}
+              {{ if findRE $markerRE $itemClean }}
+                {{ $groupMarkers = $groupMarkers | append (replaceRE $markerRE "$1" $itemClean) }}
+              {{ end }}
+            {{ end }}
+            {{ $groupLabel := "" }}
             {{ if and .group_title (or (gt (len .items) 1) (not (findRE `^[0-9]` .group_title))) }}
-              <li class="req-mobile-nav__group">{{ .group_title }}</li>
+              {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $groupMarkers) }}
+            {{ end }}
+            {{ with $groupLabel }}
+              <li class="req-mobile-nav__group">{{ . }}</li>
             {{ end }}
             {{ range .items }}
               {{ $isCurrent := eq .url $currentUrl }}
@@ -191,14 +220,14 @@
                     req-mobile-nav__link--active
                   {{ end }}"
                   {{ with $itemKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>
-                  {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
-                  {{ $hasMarker := findRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` $cleanTitle }}
+                  {{ $cleanTitle := replaceRE $prefixRE "" .title }}
+                  {{ $hasMarker := findRE $markerRE $cleanTitle }}
                   {{ if $hasMarker }}
-                    {{ $marker := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$1" $cleanTitle }}
+                    {{ $marker := replaceRE $markerRE "$1" $cleanTitle }}
                     {{ if findRE "^[a-zA-Z]\\.?$" $marker }}
                       {{ $marker = replaceRE "\\.$" "" $marker }}
                     {{ end }}
-                    {{ $label := replaceRE `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` "$2" $cleanTitle }}
+                    {{ $label := replaceRE $markerRE "$2" $cleanTitle }}
                     <span class="req-mobile-nav__marker">{{ $marker }}</span>
                     <span class="req-mobile-nav__label">{{ $label }}</span>
                   {{ else }}
