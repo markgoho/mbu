@@ -195,7 +195,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-xs);
-  padding: 0.625rem 0.875rem;
+  padding-block: var(--space-3xs);
+  padding-inline: var(--space-2xs);
   border-radius: var(--radius-md);
   color: var(--on-surface-muted);
   text-decoration: none;
@@ -283,7 +284,7 @@
   align-items: center;
   gap: var(--space-2xs);
   min-height: 40px;
-  padding-inline: var(--space-xs);
+  padding-inline: var(--space-2xs);
   padding-block: var(--space-3xs);
   border-radius: var(--radius-md);
   color: var(--on-surface-muted);
@@ -618,7 +619,7 @@
    a peer of the group before it, by staying flush with the sidebar
    edge instead of leaning on a header for that signal. */
 .req-nav__item--lettered .req-nav__link {
-  padding-inline-start: calc(var(--space-xs) + var(--space-m));
+  padding-inline-start: calc(var(--space-2xs) + var(--space-xs));
 }
 
 .req-mobile-nav__link {
@@ -642,7 +643,7 @@
 }
 
 .req-mobile-nav__item--lettered .req-mobile-nav__link {
-  padding-inline-start: calc(0.875rem + var(--space-m));
+  padding-inline-start: calc(var(--space-2xs) + var(--space-xs));
 }
 
 .req-mobile-nav__link:hover .req-mobile-nav__marker {
