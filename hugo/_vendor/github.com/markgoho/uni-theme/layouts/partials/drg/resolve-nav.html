@@ -13,6 +13,10 @@
     next        - next page URL (or "")
     next_title  - next page title (or "")
     group_title - current page's derived kicker/group title
+    group_title_display - group_title routed through
+                  text/group-label.html against the current group's own
+                  item markers and this page's cleaned title -- "" when
+                  the label should not render at all
 */}}
 {{ $page := . }}
 {{ if reflect.IsMap . }}
@@ -204,6 +208,34 @@
   {{ end }}
 {{ end }}
 
+{{/* group_title_display: compute the label to show for the CURRENT
+  page's own group, using that group's real item markers and this
+  page's cleaned title -- see text/group-label.html. Find the group by
+  URL membership, not by matching group_title strings: $currentGroupTitle
+  above may prefer $page.Params.group_title, which need not equal the
+  derived $gTitle, and two non-consecutive groups can legitimately share
+  a title. */}}
+{{ $groupMarkers := slice }}
+{{ $markerRE := `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` }}
+{{ range $guideNav }}
+  {{ $inGroup := false }}
+  {{ range .items }}
+    {{ if eq .url $currentUrl }}
+      {{ $inGroup = true }}
+    {{ end }}
+  {{ end }}
+  {{ if $inGroup }}
+    {{ range .items }}
+      {{ $t := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .title }}
+      {{ if findRE $markerRE $t }}
+        {{ $groupMarkers = $groupMarkers | append (replaceRE $markerRE "$1" $t) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $currentPageTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" $page.Title }}
+{{ $groupTitleDisplay := partial "text/group-label.html" (dict "label" $currentGroupTitle "numbers" $groupMarkers "title" $currentPageTitle) }}
+
 {{ $prevUrl := $page.Params.prev | default "" }}
 {{ $prevTitle := $page.Params.prev_title | default "" }}
 {{ $nextUrl := $page.Params.next | default "" }}
@@ -228,4 +260,5 @@
   "next" $nextUrl
   "next_title" $nextTitle
   "group_title" $currentGroupTitle
+  "group_title_display" $groupTitleDisplay
 ) }}

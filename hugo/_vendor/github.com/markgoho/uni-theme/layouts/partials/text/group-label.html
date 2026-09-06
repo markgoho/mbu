@@ -1,0 +1,55 @@
+{{/* text/group-label.html
+
+  Decides what a group label (a DRG sidebar group header, guide-page
+  kicker, or print-rollup divider) should display, given the raw
+  authored string. Fixes the case where a hand-authored label like
+  "4. Saving & Investing" carries only its first member's number: every
+  other member (5, 6, ...) would otherwise show that wrong leading
+  digit. Unifies the theme's guide.html kicker, drg/sidebar.html group
+  headers, and both guide-print rollups (theme + mbu) onto one rule so
+  they cannot drift.
+
+  Params (dict):
+  label    - raw group title, e.g. "4. Saving & Investing"   (required)
+  numbers  - the requirement markers under this label, e.g.
+             ("4" "5" "6") or ("a" "b" "c" "d")              (optional)
+  title    - the title this label sits above, "" if none     (optional)
+
+  Returns the display string, or "" when the label should not render.
+*/}}
+{{ $label := .label }}
+{{ $numbers := .numbers | default slice }}
+{{ $title := .title | default "" }}
+
+{{ $labelNum := "" }}
+{{ $stem := $label }}
+{{ if findRE `^[0-9]+\.\s+` $label }}
+  {{ $labelNum = replaceRE `^([0-9]+)\.\s+.*$` "$1" $label }}
+  {{ $stem = replaceRE `^[0-9]+\.\s+` "" $label }}
+{{ end }}
+
+{{ $result := $label }}
+
+{{ if $title }}
+  {{ $normStem := $stem | lower | replaceRE `[[:punct:]]` "" | replaceRE `\s+` " " | strings.TrimSpace }}
+  {{ $normTitle := $title | lower | replaceRE `[[:punct:]]` "" | replaceRE `\s+` " " | strings.TrimSpace }}
+  {{ if eq $normStem $normTitle }}
+    {{ $result = "" }}
+  {{ end }}
+{{ end }}
+
+{{ if and (ne $result "") $labelNum }}
+  {{ $disagrees := false }}
+  {{ range $numbers }}
+    {{ if findRE `^[0-9]+` . }}
+      {{ if ne (replaceRE `^([0-9]+).*$` "$1" .) $labelNum }}
+        {{ $disagrees = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if $disagrees }}
+    {{ $result = $stem }}
+  {{ end }}
+{{ end }}
+
+{{ return $result }}

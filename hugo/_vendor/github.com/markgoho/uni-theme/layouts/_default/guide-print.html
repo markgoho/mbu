@@ -31,9 +31,30 @@
 
     <button class="req-print-btn" type="button" onclick="window.print()">🖨️ Print / Save as PDF</button>
 
-    {{ range $guideNav }}
+    {{ $prefixRE := `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` }}
+  {{ $markerRE := `^([0-9]+(?:\.[0-9a-zA-Z]+)*\.?|[a-zA-Z]\.?|[0-9]+[a-zA-Z]\.?)\s+(.*)$` }}
+
+  {{ range $guideNav }}
+      {{ $items := .items }}
+      {{ $markers := slice }}
+      {{ $soleTitle := "" }}
+      {{ range $items }}
+        {{ $itemClean := replaceRE $prefixRE "" .title }}
+        {{ if findRE $markerRE $itemClean }}
+          {{ $markers = $markers | append (replaceRE $markerRE "$1" $itemClean) }}
+        {{ end }}
+      {{ end }}
+      {{ if eq (len $items) 1 }}
+        {{ $only := index $items 0 }}
+        {{ $onlyClean := replaceRE $prefixRE "" $only.title }}
+        {{ $soleTitle = cond (findRE $markerRE $onlyClean) (replaceRE $markerRE "$2" $onlyClean) $onlyClean }}
+      {{ end }}
+      {{ $groupLabel := "" }}
       {{ if .group_title }}
-        <div class="req-print-divider">{{ .group_title }}</div>
+        {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $markers "title" $soleTitle) }}
+      {{ end }}
+      {{ with $groupLabel }}
+        <div class="req-print-divider">{{ . }}</div>
       {{ end }}
 
       {{ range .items }}
