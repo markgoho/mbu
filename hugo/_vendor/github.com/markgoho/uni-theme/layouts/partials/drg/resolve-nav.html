@@ -122,16 +122,61 @@
       {{ $req := . }}
       {{ $subreqs := $req.subrequirements | default slice }}
       {{ $parentReqPage := $section.GetPage (printf "req%s" $req.req_id) }}
+
       {{ if and (gt (len $subreqs) 0) (not $parentReqPage) }}
+        {{/* Each letter tries its own dedicated reqNa.md first. Failing
+          that, it may be covered by a MERGED page instead -- one whose
+          own req_number front matter exactly equals this letter's path
+          (e.g. req5ef.md has req_number "5e", covering letters e and f).
+          Only the merged page's OWN first letter matches that way; a
+          later letter in the same merged group (e.g. "f") has no page
+          whose req_number is "5f", so it falls back to whichever page
+          resolved the immediately preceding letter ("e"'s req5ef.md) --
+          mirrors the inheritance merit-badges/requirement-node.html uses
+          for the same shape. Processing letters in order and carrying
+          $lastResolvedPage forward is what keeps fire-safety's req5
+          (three separate merged groups: req5ab, req5ef, req5hi, plus
+          dedicated req5c.md/req5d.md/req5g.md between them) from
+          bleeding one group's page into another's letters -- a single
+          "does req_number start with this requirement's bare id" scan
+          can't tell those groups apart, and worse, also matches every
+          already-dedicated sibling page (req3a.md's req_number "3a"
+          starts with "3" too), which broke badges where every letter
+          already has its own page. This stays local to resolve-nav.html
+          rather than calling mbu's req-guide-lookup.html/
+          req-guide-fragment.html, per CONTRACT.md's split -- this
+          partial already routes directly against page existence/front
+          matter (the reqN.md check above), it was never node-dict-pure
+          to begin with. */}}
+        {{ $lastResolvedPage := "" }}
         {{ range $subreqs }}
           {{ $dotsRemoved := replace .path "." "" }}
           {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
           {{ $reqPage := $section.GetPage (printf "req%s" $dotsRemoved) }}
           {{ $cleanTitle := .text | truncate 40 }}
           {{ $gTitle := printf "%s. Requirement %s" $req.req_id $req.req_id }}
-          {{ with $reqPage }}
-            {{ $cleanTitle = .Title }}
-            {{ with .Params.group_title }}{{ $gTitle = . }}{{ end }}
+          {{ if $reqPage }}
+            {{ $cleanTitle = $reqPage.Title }}
+            {{ with $reqPage.Params.group_title }}{{ $gTitle = . }}{{ end }}
+            {{ $lastResolvedPage = $reqPage }}
+          {{ else }}
+            {{ $exactMatch := "" }}
+            {{ range $section.RegularPages }}
+              {{ if and (not $exactMatch) (eq .Params.req_number $dotsRemoved) }}
+                {{ $exactMatch = . }}
+              {{ end }}
+            {{ end }}
+            {{ $merged := $exactMatch | default $lastResolvedPage }}
+            {{ with $merged }}
+              {{ $pageUrl = .RelPermalink }}
+              {{ range $id := .Fragments.Identifiers }}
+                {{ if or (eq $id (printf "requirement-%s" $dotsRemoved)) (strings.HasPrefix $id (printf "requirement-%s-" $dotsRemoved)) }}
+                  {{ $pageUrl = printf "%s#%s" $merged.RelPermalink $id }}
+                {{ end }}
+              {{ end }}
+              {{ with .Params.group_title }}{{ $gTitle = . }}{{ end }}
+              {{ $lastResolvedPage = $merged }}
+            {{ end }}
           {{ end }}
           {{ $navTitle := printf "%s %s" .req_id $cleanTitle }}
           {{ if eq $gTitle $lastGroupTitle }}
