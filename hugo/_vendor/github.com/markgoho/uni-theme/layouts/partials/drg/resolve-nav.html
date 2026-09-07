@@ -121,8 +121,36 @@
     {{ range $badgeData.requirements }}
       {{ $req := . }}
       {{ $subreqs := $req.subrequirements | default slice }}
+      {{ $parentDotsRemoved := replace $req.path "." "" }}
       {{ $parentReqPage := $section.GetPage (printf "req%s" $req.req_id) }}
+
+      {{/* No standalone reqN.md, but the subrequirements might still be
+        covered by a MERGED page instead -- one whose own req_number
+        front matter starts with this requirement's id on a clean digit
+        boundary (e.g. req8abcd.md has req_number "8a", covering all of
+        requirement 8's lettered subrequirements). Same rule mbu's
+        merit-badges/req-guide-lookup.html uses for a parent with no page
+        of its own; replicated here because this partial already routes
+        directly against page existence/front matter (the reqN.md check
+        above), not through that project-owned lookup -- see CONTRACT.md
+        on content-bound resolution staying out of the theme's node-dict
+        partials; this one was never node-dict-pure to begin with. */}}
+      {{ $mergedPage := "" }}
       {{ if and (gt (len $subreqs) 0) (not $parentReqPage) }}
+        {{ range $section.RegularPages }}
+          {{ if not $mergedPage }}
+            {{ $reqNumber := .Params.req_number }}
+            {{ if and $reqNumber (strings.HasPrefix $reqNumber $parentDotsRemoved) }}
+              {{ $boundary := substr $reqNumber (len $parentDotsRemoved) 1 }}
+              {{ if not (findRE "[0-9]" $boundary) }}
+                {{ $mergedPage = . }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if and (gt (len $subreqs) 0) (not $parentReqPage) (not $mergedPage) }}
         {{ range $subreqs }}
           {{ $dotsRemoved := replace .path "." "" }}
           {{ $pageUrl := printf "%sreq%s/" $section.RelPermalink $dotsRemoved }}
@@ -133,6 +161,28 @@
             {{ $cleanTitle = .Title }}
             {{ with .Params.group_title }}{{ $gTitle = . }}{{ end }}
           {{ end }}
+          {{ $navTitle := printf "%s %s" .req_id $cleanTitle }}
+          {{ if eq $gTitle $lastGroupTitle }}
+            {{ $currentGroupItems = $currentGroupItems | append (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
+          {{ else }}
+            {{ if gt (len $currentGroupItems) 0 }}
+              {{ $navGroups = $navGroups | append (dict "group_title" $lastGroupTitle "items" $currentGroupItems) }}
+            {{ end }}
+            {{ $lastGroupTitle = $gTitle }}
+            {{ $currentGroupItems = slice (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
+          {{ end }}
+        {{ end }}
+      {{ else if $mergedPage }}
+        {{ range $subreqs }}
+          {{ $dotsRemoved := replace .path "." "" }}
+          {{ $pageUrl := $mergedPage.RelPermalink }}
+          {{ range $id := $mergedPage.Fragments.Identifiers }}
+            {{ if or (eq $id (printf "requirement-%s" $dotsRemoved)) (strings.HasPrefix $id (printf "requirement-%s-" $dotsRemoved)) }}
+              {{ $pageUrl = printf "%s#%s" $mergedPage.RelPermalink $id }}
+            {{ end }}
+          {{ end }}
+          {{ $cleanTitle := .text | truncate 40 }}
+          {{ $gTitle := $mergedPage.Params.group_title | default (printf "%s. Requirement %s" $req.req_id $req.req_id) }}
           {{ $navTitle := printf "%s %s" .req_id $cleanTitle }}
           {{ if eq $gTitle $lastGroupTitle }}
             {{ $currentGroupItems = $currentGroupItems | append (dict "title" $navTitle "url" $pageUrl "page_title" $cleanTitle) }}
