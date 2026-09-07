@@ -59,10 +59,13 @@ applies](https://github.com/markgoho/mbu/issues/145).
   vendor` in the consumer.
 - Theme changes are **not deliberately batched**: every push to
   `uni-theme`'s `master` opens an auto-generated pin-bump PR in each
-  consumer, carrying the new `uni-theme` commits as a changelog. Landing a
-  change is still a deliberate, reviewed merge — just automatically
-  proposed rather than manually noticed. There is no semver; commit-pinned
-  pseudo-versions plus the changelog are what a reviewer judges risk from.
+  consumer, carrying the new `uni-theme` commits as a changelog. As of
+  2026-09-07, landing a change is also automatic: the bump PR auto-merges
+  once its CI (the fixture build gate in `uni-theme`, then each consumer's
+  own build-and-preview check) is green, with no separate human review
+  step. There is no semver; commit-pinned pseudo-versions plus the
+  changelog are what CI validates and what a reviewer would fall back to
+  if a merged bump ever needs to be diagnosed after the fact.
 - scouting.university's content pipeline (data sync, requirement engine,
   Claude tooling) is a separate, later effort with no shared code from
   `mbu` beyond the theme.
