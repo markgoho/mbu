@@ -31,6 +31,8 @@ How citizens can be involved in each branch of government.
 
 The three branches of the United States government are the **Legislative Branch**, the **Executive Branch**, and the **Judicial Branch**. The founders deliberately split the government into three parts so that no single person or group could hold all the power. This idea — called **separation of powers** — is one of the most important concepts in American government.
 
+## Requirement 3a: What Each Branch Does
+
 ### The Legislative Branch — Congress
 
 **What it does:** Makes the laws. Congress is made up of two chambers: the Senate (100 members, two per state) and the House of Representatives (435 members, divided among the states by population). Together, they debate and vote on new laws, set the federal budget, and declare war.
@@ -69,6 +71,8 @@ A bill must pass both the House and the Senate in identical form before it can b
 
 {{< drg/image src="images/three-branches-overview.avif" alt="An illustrated diagram showing the three branches of government — the Capitol building for Legislative, the White House for Executive, and the Supreme Court building for Judicial — connected by arrows representing checks and balances" >}}
 
+## Requirement 3b: Separation of Powers
+
 ### Why Divide Power?
 
 The founders had lived under a king who held all the power. They had seen what happens when one person or group can make the rules, enforce the rules, and judge whether the rules were followed — all at the same time. The result was tyranny.
@@ -82,6 +86,8 @@ By dividing power among three branches, they made sure that:
 {{< drg/be-prepared title="What If Someone Says Government Is Too Slow?" >}}
 You might hear people complain that the government takes too long to get things done. Here is the thing: that slowness is a feature, not a bug. The founders designed the system so that major decisions require agreement from multiple branches. This prevents hasty, poorly thought-out laws and protects minority rights from being overrun by a temporary majority.
 {{< /drg/be-prepared >}}
+
+## Requirement 3c: Checks and Balances
 
 ### Checks and Balances in Action
 
@@ -99,6 +105,8 @@ Each branch has specific powers to limit the other two. Here are the most import
 {{< drg/tip >}}
 When studying for your counselor meeting, try to think of a recent real-world example for at least two or three of these checks. For instance, has the President recently vetoed a bill? Has the Supreme Court struck down a law? Current events bring these concepts to life.
 {{< /drg/tip >}}
+
+## Requirement 3d: How Citizens Participate
 
 ### How Citizens Get Involved
 

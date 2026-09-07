@@ -29,7 +29,7 @@ When a disaster strikes, dozens — sometimes hundreds — of agencies respond. 
 
 ---
 
-### 7a. What Are NIMS and ICS?
+### Requirement 7a: NIMS and ICS Systems
 
 #### National Incident Management System (NIMS)
 
@@ -66,7 +66,7 @@ ICS was developed in the 1970s after devastating wildfires in Southern Californi
 
 ---
 
-### 7b. How Your Community Manages Disasters
+### Requirement 7b: Community Disaster Management
 
 Every community has an emergency management structure. Your task is to find out how yours works. Here are some ways to research this:
 
@@ -91,7 +91,7 @@ Many communities publish their emergency operations plans online. Search for "[y
 
 ---
 
-### 7c. How a Scout Troop Fits into ICS
+### Requirement 7c: Scout Troops in ICS
 
 Scout troops are not first responders, but they can be a valuable part of the emergency response when properly organized and supervised. Under ICS, a troop would typically be assigned to the **Operations** or **Logistics** section, depending on the task.
 

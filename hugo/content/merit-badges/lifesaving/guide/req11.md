@@ -34,7 +34,7 @@ Even though these rescues involve direct contact, you still follow the same comm
 3. **Give instructions:** "I'm going to help you. Roll onto your back and relax." or "I'm going to hold you and swim you to shore. Try to stay still."
 4. **Reassure:** "You're going to be fine. I've got you."
 
-### 11a — The Armpit Tow
+### Requirement 11a: Armpit Tow
 
 The armpit tow is used for a **calm, cooperative victim who is already floating on their back.** This is the gentlest of the contact rescues — the victim does most of the floating while you provide propulsion.
 
@@ -50,7 +50,7 @@ The armpit tow is used for a **calm, cooperative victim who is already floating 
 The armpit tow works best when the victim truly relaxes. If they tense up and try to help by kicking, their movements can interfere with yours. Encourage them to lie still and let you do the work.
 {{< /drg/tip >}}
 
-### 11b — The Cross-Chest Carry
+### Requirement 11b: Cross-Chest Carry
 
 The cross-chest carry is used for an **exhausted victim who is still responsive but cannot float unassisted.** This is a more controlling hold that supports the victim's body while you swim.
 

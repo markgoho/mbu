@@ -23,7 +23,9 @@ Describe the ways in which you can be a protector of the past.
 
 You have learned about the laws and organizations that protect archaeological sites. Now it is time to think about your own role. Every person — including you — has the power to either protect or destroy the past. This requirement is about making the right choice.
 
-### Why Protecting Sites Matters
+### Requirement 6a: Importance of Site Protection
+
+#### Why Protecting Sites Matters
 
 Archaeological sites are **non-renewable resources**. Unlike a forest that can regrow or a river that can be cleaned up, a destroyed archaeological site is gone forever. There are no backups. Here is why that matters:
 
@@ -39,7 +41,9 @@ Archaeological sites are **non-renewable resources**. Unlike a forest that can r
 In the 1990s, scientists developed a technique to extract ancient DNA from bones thousands of years old. Sites that had been carefully preserved yielded samples that revealed migration patterns, family relationships, and even diseases — information that was invisible to earlier researchers.
 {{< /drg/did-you-know >}}
 
-### What to Do If You Find an Artifact
+### Requirement 6b: Finding and Reporting Artifacts
+
+#### What to Do If You Find an Artifact
 
 Imagine you are hiking and you spot something unusual in the dirt — a piece of old pottery, a stone that looks like a tool, or a coin with strange markings. What should you do?
 
@@ -55,7 +59,9 @@ Imagine you are hiking and you spot something unusual in the dirt — a piece of
 If you find human remains at an archaeological site or anywhere outdoors, do not touch or disturb them. Leave the area, mark the general location, and contact local law enforcement immediately. Human remains are protected by federal and state laws, and disturbing them — even accidentally — can have serious legal consequences.
 {{< /drg/safety-first >}}
 
-### How You Can Be a Protector of the Past
+### Requirement 6c: Your Role as Protector
+
+#### How You Can Be a Protector of the Past
 
 You do not need a degree in archaeology to make a difference. Here are concrete ways you can protect archaeological heritage right now:
 

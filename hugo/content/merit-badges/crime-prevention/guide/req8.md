@@ -20,7 +20,7 @@ This requirement covers four topics connecting substance use to crime and preven
 - **How prevention and recovery programs** help prevent crime
 - **How to get help** for yourself or someone you know
 
-## Legal and Health Consequences
+## Requirement 8a: Legal and Health Consequences
 
 Every substance carries both legal penalties and health risks. Understanding both gives you the full picture of why substance use and crime are so closely connected.
 
@@ -86,7 +86,7 @@ Fentanyl has changed the drug landscape dramatically. It is now mixed into count
 - Prescription stimulants (Adderall, Ritalin) can cause heart problems, anxiety, and psychosis when misused
 - Combining prescription drugs with alcohol or other drugs multiplies the risk of overdose
 
-## How Substance Use Contributes to Crime
+## Requirement 8b: Substance Use and Crime
 
 Substance use and crime are deeply intertwined. The connection runs in multiple directions:
 
@@ -125,7 +125,7 @@ Substance use also makes people more likely to *become* crime victims. Intoxicat
 The economic cost of substance abuse in the United States — including healthcare, criminal justice, lost productivity, and other factors — exceeds $600 billion per year. That's more than the GDP of most countries.
 {{< /drg/did-you-know >}}
 
-## Prevention and Recovery Programs
+## Requirement 8c: Prevention and Recovery
 
 Breaking the cycle between substance use and crime requires intervention at every stage — before use begins, during active use, and after treatment.
 
@@ -147,7 +147,7 @@ Breaking the cycle between substance use and crime requires intervention at ever
 
 Drug courts are specialized court programs that offer treatment instead of prison for non-violent drug offenders. Participants undergo supervised treatment, regular drug testing, and court appearances. Research shows drug courts reduce recidivism (re-offending) by 8–14% compared to traditional criminal processing.
 
-## How to Get Help
+## Requirement 8d: Getting Help
 
 If you or someone you know is struggling with substance use, help is available — and asking for it is a sign of strength, not weakness.
 

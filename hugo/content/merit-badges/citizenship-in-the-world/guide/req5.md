@@ -23,7 +23,7 @@ Show on a world map countries that use each of these five different forms of gov
 
 These three sub-requirements build on each other. First you learn the big divide (constitutional vs. nonconstitutional), then you identify specific government types, and finally you place them on a map.
 
-## Constitutional vs. Nonconstitutional Governments
+## Requirement 5a: Constitutional vs. Nonconstitutional Governments
 
 The most fundamental distinction between governments is whether they are limited by a constitution or not.
 
@@ -57,7 +57,7 @@ Key features:
 Some countries have constitutions that look impressive on paper but are not actually followed. These are sometimes called "sham constitutions." The Soviet Union's 1936 constitution guaranteed freedom of speech, press, and assembly — but in practice, the government imprisoned or executed people who criticized it.
 {{< /drg/did-you-know >}}
 
-## Five Types of Government
+## Requirement 5b: World Government Types
 
 There are many ways to categorize governments. Here are the major types you will find in the world today:
 
@@ -106,7 +106,7 @@ Many countries do not fit neatly into one category. The United Kingdom is both a
 - **Federal republic** — A republic where power is shared between a central government and regional governments (states or provinces). Example: United States, Germany, Brazil.
 - **Parliamentary democracy** — A democracy where the head of government (prime minister) is chosen by the legislature, not directly by voters. Example: United Kingdom, Canada, India.
 
-## Putting Them on the Map
+## Requirement 5c: Mapping Government Types
 
 For Requirement 5c, you need to show countries using each of your five government types on a world map. Here is how to prepare:
 

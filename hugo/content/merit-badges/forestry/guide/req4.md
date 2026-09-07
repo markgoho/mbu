@@ -23,13 +23,13 @@ This requirement covers five ideas that help explain how foresters make decision
 
 Forest management means guiding what happens in a forest so it can meet clear goals over time. Those goals may include timber, wildlife habitat, clean water, recreation, wildfire risk reduction, rare species protection, or public safety. The key word is **guiding**. Forests will change with or without people, but management tries to shape that change on purpose.
 
-## Multiple-Use Management
+## Requirement 4a: Multiple Values in Forests
 
 Multiple-use management means the same forest may be managed for more than one value at the same time. A national forest, for example, might support hiking, hunting, timber production, wildlife habitat, watershed protection, and scenic beauty. Those uses do not always fit together perfectly, so foresters must balance tradeoffs.
 
 A trail user may want dense shade, while a wildlife biologist may want a sunny opening for young forest habitat. A timber harvest may improve stand health in one place but create a short-term visual change people dislike. Multiple-use management is the art of planning for all those needs, not just one.
 
-## Sustainable Forest Management
+## Requirement 4b: Long-Term Forest Health
 
 Sustainable forest management means caring for forests so they remain healthy, productive, and useful far into the future. It does **not** mean never cutting a tree. It means harvests, restoration work, and protection efforts are planned so the forest can keep functioning over time.
 
@@ -39,7 +39,7 @@ Sustainability includes more than tree growth. It also includes soil, water, bio
 A simple way to think about sustainability is this: are today's actions making the forest more capable or less capable of doing its job in the future?
 {{< /drg/tip >}}
 
-## Even-Aged and Uneven-Aged Management
+## Requirement 4c: Age Structure and Management
 
 These terms describe the age structure of a stand.
 
@@ -53,7 +53,7 @@ In an uneven-aged stand, trees of many ages grow together. Some are seedlings, s
 
 Neither approach is automatically better. The right choice depends on species, site conditions, wildlife goals, fire regime, and management objectives.
 
-## Intermediate Cuttings
+## Requirement 4d: Thinning Between Harvests
 
 Intermediate cuttings are treatments made **before** the final harvest stage in a stand. They are used to improve forest conditions while the stand is still developing. Examples can include thinning crowded trees, removing damaged trees, or improving spacing so the remaining trees grow better.
 
@@ -61,7 +61,7 @@ The basic idea is simple: if too many trees are competing for limited light, wat
 
 {{< drg/image src="images/forest-management-stand-structures.avif" alt="Side-by-side diagram of even-aged, uneven-aged, and thinned forest stands" >}}
 
-## Prescribed Burning and Related Practices
+## Requirement 4e: Fire as Management Tool
 
 Prescribed burning is the planned use of fire under specific weather, fuel, and safety conditions to meet management goals. In some ecosystems, this can reduce fuel buildup, recycle nutrients, control unwanted vegetation, and help fire-adapted plants and wildlife.
 

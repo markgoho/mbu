@@ -15,7 +15,7 @@ Complete the Program. Do the following:
 
 This is it — the main event. You have learned the knowledge, chosen your assessments, taken your baseline, and designed your program. Now you do the work. Twelve weeks of consistent effort will change your body, sharpen your mind, and build habits that can last a lifetime.
 
-### 7a — Keep Your Log
+### Requirement 7a: Complete Your Workout Log
 
 {{< drg/requirement number="7a" >}}
 Complete and keep a log, over 12 consecutive weeks, of the physical fitness and nutrition program you have outlined. (If your program is interrupted by illness or unavoidable conflicts for less than two weeks, you may resume where you left off, adding the missed days or weeks at the end).
@@ -51,7 +51,7 @@ Around weeks 3–5, many Scouts hit a motivation slump. The excitement of starti
 
 {{< drg/image src="images/scout-workout-log.avif" alt="A Scout at a desk writing in a fitness log after a workout, with a water bottle and towel nearby, looking satisfied" >}}
 
-### 7b — Mid-Program and Final Assessments
+### Requirement 7b: Retest Your Fitness
 
 {{< drg/requirement number="7b" >}}
 During week 4 and week 8 of your program, repeat the assessments you did in requirement 5(a) before you began. Repeat the same tests for a final assessment within two weeks after completing the 12-week program. Show improvement over your pre-assessment results.
@@ -72,7 +72,7 @@ Most people see the biggest percentage improvements between their baseline and t
 
 **What if you do not improve in every area?** That is okay. The requirement says to "show improvement" — and most Scouts who follow their program consistently will see improvement in their target areas. If one area plateaus, discuss it with your counselor. They can help you adjust your training to break through.
 
-### 7c — Follow-Up Food Logs
+### Requirement 7c: Track Diet Progress
 
 {{< drg/requirement number="7c" >}}
 For three days during week 8, and again during week 12, keep a log of what you eat and drink. Show improvement toward the diet and nutrition goals you set in requirement 5(d).
@@ -87,7 +87,7 @@ You will repeat the 3-day food log twice more — once during week 8 and once du
 
 The goal is **progress, not perfection**. If your diet has genuinely improved compared to your baseline, you are on track.
 
-### 7d — Reflect on Your Journey
+### Requirement 7d: Discuss Your Results
 
 {{< drg/requirement number="7d" >}}
 Discuss your results, improvements, insights, and experiences with your counselor after completing the program and assessments.

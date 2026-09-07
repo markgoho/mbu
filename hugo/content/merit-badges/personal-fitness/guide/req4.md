@@ -22,7 +22,7 @@ Think of these assessments as your fitness "scorecard." They give you hard numbe
     url="/merit-badges/personal-fitness/guide/fitness-assessment-record/"
     type="printable" >}}
 
-### 4a — Cardiorespiratory (Aerobic) Fitness
+### Requirement 4a: Mile Walk or Run Test
 
 {{< drg/requirement number="4a" >}}
 Include a measure of cardiorespiratory (aerobic) fitness: Record the time required to complete a mile walk or run as fast as you can. If you are unable to walk or run as a result of a disability that is permanent or is expected to last for longer than two years, work with your counselor to define a test with a similar degree of aerobic challenge.
@@ -42,7 +42,7 @@ Do not sprint the first quarter-mile and then walk the rest. Pace yourself. A st
 
 **Alternative assessments:** If running or walking is not possible due to a disability, work with your counselor to choose an alternative that provides a similar aerobic challenge. Examples might include a timed swim, a wheelchair-based distance challenge, or a cycling test.
 
-### 4b — Muscular Strength and Endurance
+### Requirement 4b: Strength and Endurance Tests
 
 {{< drg/requirement number="4b" >}}
 Include two measures of muscular strength and endurance: Record either the number of sit-ups done in 60 seconds OR how long a plank was held; AND, record the number of either push-ups OR pull-ups done in 60 seconds. If you are unable to complete one of these exercises safely and correctly, work with your counselor to replace it with a different exercise that measures strength and endurance.
@@ -64,7 +64,7 @@ You need **two** tests here — one for your core and one for your upper body.
 Proper form matters more than high numbers. A sit-up done with poor form can strain your back. A push-up with sagging hips does not count. Have your counselor or a partner watch your form and only count repetitions that are done correctly.
 {{< /drg/safety-first >}}
 
-### 4c — Flexibility
+### Requirement 4c: Flexibility Assessment
 
 {{< drg/requirement number="4c" >}}
 Include at least one measure of flexibility, such as a back-saver sit-and-reach test or a back scratch test.

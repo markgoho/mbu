@@ -13,6 +13,8 @@ next_title: "Electrical System Diagrams"
 Explain how the air and fuel systems work together and why it is necessary to have an air filter and fuel filter.
 {{< /drg/requirement >}}
 
+## Requirement 7a: Air & Fuel System Interaction
+
 An engine needs three things to run: fuel, air, and a spark (or compression, in a diesel). The air system and fuel system work together to deliver exactly the right mixture of clean air and clean fuel to the engine's cylinders at exactly the right time.
 
 ### How Air and Fuel Work Together
@@ -61,6 +63,8 @@ A single fuel injector can spray fuel at pressures up to 2,000 PSI (pounds per s
 {{< drg/requirement number="7b" >}}
 Explain how a how a fuel injection system works and how an onboard computer works with the fuel injection system.
 {{< /drg/requirement >}}
+
+## Requirement 7b: Fuel Injection System Operation
 
 ### How Fuel Injection Works
 

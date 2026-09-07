@@ -23,7 +23,7 @@ d. The concept of diversification in investing.
 e. Why it is important to save and invest for retirement.
 {{< /drg/requirement >}}
 
-### 4a: Saving vs. Investing
+### Requirement 4a: Saving vs. Investing
 
 **Saving** means putting money aside in a safe, easily accessible place — like a savings account or a piggy bank. Your money is protected, you can get to it whenever you need it, and it earns a small amount of interest. The trade-off is that it grows slowly.
 
@@ -45,7 +45,7 @@ Think of saving as a parking lot and investing as a highway. The parking lot is 
 
 {{< drg/image src="images/saving-vs-investing.avif" alt="A split illustration showing a savings account represented by a secure piggy bank with a small growth arrow on one side and investments represented by a rising stock chart with ups and downs on the other side" >}}
 
-### 4b: Return on Investment and Risk
+### Requirement 4b: Return on Investment and Risk
 
 **Return on investment (ROI)** measures how much money you earn (or lose) compared to how much you put in. If you invest $100 and it grows to $110, your return is $10, or 10%.
 
@@ -64,7 +64,7 @@ Here is the key relationship: **higher potential returns come with higher risk.*
 The U.S. stock market has returned an average of about 10% per year over the past century. But that average hides wild swings — some years it gained 30%, other years it lost 40%. That is why investing is for money you will not need for a long time.
 {{< /drg/did-you-know >}}
 
-### 4c: Simple Interest vs. Compound Interest
+### Requirement 4c: Simple Interest vs. Compound Interest
 
 **Simple interest** is calculated only on the original amount you deposited (called the **principal**). If you deposit $1,000 at 5% simple interest, you earn $50 every year — always $50, because it is always 5% of the original $1,000.
 
@@ -88,7 +88,7 @@ After 30 years at 5%:
 Albert Einstein reportedly called compound interest "the eighth wonder of the world." Whether or not he actually said it, the math backs it up. The earlier you start saving and investing, the more time compound interest has to work for you.
 {{< /drg/tip >}}
 
-### 4d: Diversification
+### Requirement 4d: Diversification
 
 **Diversification** means spreading your investments across different types of assets so that if one performs poorly, others may perform well and balance it out. It is the financial version of "don't put all your eggs in one basket."
 
@@ -102,7 +102,7 @@ You can diversify across:
 
 Mutual funds, which you will learn about in [Requirement 5](/merit-badges/personal-management/guide/req5/), are one of the easiest ways to diversify because a single fund holds many different investments.
 
-### 4e: Why Save and Invest for Retirement
+### Requirement 4e: Why Save and Invest for Retirement
 
 Retirement might seem impossibly far away when you are a teenager, but that distance is actually your biggest advantage. Starting early gives compound interest decades to work.
 

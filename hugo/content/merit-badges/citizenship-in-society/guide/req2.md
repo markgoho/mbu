@@ -46,6 +46,8 @@ Here are some questions that can help you recognize an ethical decision:
 
 If you answered "yes" to most of those, you are probably looking at an ethical decision.
 
+## Requirement 2a: Researching an Ethical Leader
+
 ### Finding Your Leader
 
 The requirement gives you a wide range of options for who to research: a historical figure, a family member, a teacher, a coach, a counselor, a clergy member, or a Scoutmaster. This is intentional — ethical leaders are everywhere, not just in history books.
@@ -59,6 +61,8 @@ The requirement gives you a wide range of options for who to research: a histori
 {{< /drg/checklist >}}
 
 {{< drg/image src="images/leader-ethical-decision.avif" alt="A person standing at a crossroads with two paths, one easy and one challenging but leading upward, symbolizing an ethical choice" >}}
+
+## Requirement 2b: Analyzing Leadership Decisions
 
 ### How to Research and Present Your Leader
 

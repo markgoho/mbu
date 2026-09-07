@@ -19,6 +19,8 @@ Help a Scout patrol or a Webelos Scout unit in your area prepare for an actual c
 
 Camping is a team effort. The patrol method — where a small group works together with shared responsibilities — is what makes Scout camping run smoothly. A duty roster is the tool that makes sure everyone knows their role and no task falls through the cracks.
 
+## Requirement 4a: Building Your Duty Roster
+
 ### What Is a Duty Roster?
 
 A duty roster is a chart or schedule that assigns specific tasks to each patrol member for the duration of a campout. Think of it as a game plan for camp. When everyone knows their job, camp runs like clockwork. When nobody knows their job, you end up with five people standing around and nobody starting the fire.
@@ -55,6 +57,8 @@ The patrol method has been part of Scouting since the very beginning. Baden-Powe
 {{< /drg/did-you-know >}}
 
 {{< drg/image src="images/patrol-duty-roster-board.avif" alt="A handwritten duty roster on a whiteboard or poster at a campsite, showing patrol member names and their assigned tasks across meals" >}}
+
+## Requirement 4b: Preparing Other Scout Patrols
 
 ### Helping Others Prepare
 

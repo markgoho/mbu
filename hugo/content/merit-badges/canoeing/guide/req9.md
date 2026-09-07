@@ -61,7 +61,7 @@ The J-stroke and the thumb-down rudder stroke achieve the same result — keepin
 
 ## The Eight Maneuvers
 
-### 9a — Pivot (Spin) 180°
+### Requirement 9a: Pivot Spin
 
 **What you do:** From a standstill, spin the canoe 180° to the right, stop, then spin 180° back to the left — staying within 2 boat lengths of your starting position.
 
@@ -74,7 +74,7 @@ The J-stroke and the thumb-down rudder stroke achieve the same result — keepin
 A well-coordinated pivot can spin a 17-foot canoe 180° in about three stroke cycles. The canoe pivots around a point near its center — the closer to the center your strokes apply force, the tighter the spin.
 {{< /drg/did-you-know >}}
 
-### 9b — Move Sideways (Abeam)
+### Requirement 9b: Sideways Movement
 
 **What you do:** Move the canoe sideways 10 feet in one direction, then return to the starting position. The canoe stays parallel to its original orientation — no turning.
 
@@ -83,7 +83,7 @@ A well-coordinated pivot can spin a 17-foot canoe 180° in about three stroke cy
 - **To return:** Switch — the paddler who was drawing now does a pushaway, and the other draws.
 - **Keep the canoe straight.** If the bow or stern starts to lead, one paddler adjusts their stroke power or angle.
 
-### 9c — Emergency Stop
+### Requirement 9c: Emergency Stop
 
 **What you do:** While paddling forward, stop the canoe within two boat lengths using the backstroke.
 
@@ -92,7 +92,7 @@ A well-coordinated pivot can spin a 17-foot canoe 180° in about three stroke cy
 - **Lean forward slightly** as the canoe decelerates to maintain balance.
 - **Keep strokes in unison** so the canoe stops straight rather than spinning.
 
-### 9d — Straight Line (Stern Only)
+### Requirement 9d: Stern Steering
 
 **What you do:** From the stern position, paddle in a straight line for 15–20 boat lengths without help from the bow paddler. Use the J-stroke or thumb-down rudder with or without a stern pry.
 
@@ -110,7 +110,7 @@ If your J-stroke is not keeping the canoe straight:
 - **Consider the wind.** A crosswind may be overpowering your correction. Paddle on the downwind side if possible.
 {{< /drg/be-prepared >}}
 
-### 9e — Straight Line (Tandem)
+### Requirement 9e: Tandem Steering
 
 **What you do:** Paddle in a straight line for 15–20 boat lengths with the bow paddler using forward strokes, draws, or forward sweeps, and the stern paddler steering with a J-stroke or thumb-down rudder.
 
@@ -119,7 +119,7 @@ If your J-stroke is not keeping the canoe straight:
 - The **stern provides power and steering** using the J-stroke or rudder stroke.
 - This is how you actually paddle a canoe across a lake — it is the everyday tandem technique.
 
-### 9f — 90° Turn in an Arc
+### Requirement 9f: Turning in Arc
 
 **What you do:** While paddling forward, turn the canoe 90° to the right in an arc covering 5–10 boat lengths. The bow uses a draw or forward sweep; the stern uses only the forward stroke. Then repeat turning 90° to the left.
 
@@ -128,7 +128,7 @@ If your J-stroke is not keeping the canoe straight:
 - **Turning left:** The bow paddler switches technique to push the bow left (forward sweep on the right, or draw if paddling on the right side).
 - The key is a smooth, gradual turn — not a sharp pivot. Think of tracing a wide curve on the water.
 
-### 9g — Paddle Backward
+### Requirement 9g: Backward Paddling
 
 **What you do:** Move the canoe backward in a straight line for 3–4 boat lengths using backstrokes, reverse sweeps, or draws.
 
@@ -138,7 +138,7 @@ If your J-stroke is not keeping the canoe straight:
 - **The bow paddler (now effectively the "stern" since you are moving backward)** is responsible for steering during reverse.
 - Moving backward is awkward because you cannot see where you are going. Turn your head and look over your shoulder.
 
-### 9h — Figure Eight
+### Requirement 9h: Figure Eight
 
 **What you do:** Complete a figure-eight course around two markers set 3–4 boat lengths apart.
 

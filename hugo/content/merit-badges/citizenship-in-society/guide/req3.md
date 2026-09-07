@@ -41,6 +41,8 @@ In Requirement 2, you studied ethical leadership in someone else. Now it is time
 
 This is one of the most personal requirements in the entire badge. There are no textbook answers here. Your counselor wants to hear your honest reflections about real moments in your life.
 
+## Requirement 3a: Reflecting on Your Ethical Decision
+
 ### Part A: Your Past Ethical Decision
 
 Think back to a time when you had to choose between doing the right thing and doing the easy thing. It does not have to be a dramatic, life-changing moment. Ethical decisions happen every day, and the small ones matter just as much as the big ones.
@@ -69,6 +71,8 @@ Honesty matters more than perfection here. If you made a choice you are not prou
 
 {{< drg/image src="images/scout-reflecting-journal.avif" alt="A Scout sitting under a tree writing in a journal, looking thoughtful, with a natural outdoor setting" >}}
 
+## Requirement 3b: Planning Future Ethical Decisions
+
 ### Part B: Future Ethical Decisions
 
 Now think forward. The requirement asks you to list three ethical decisions you *might* face in the future and explain what you would do in each case. Think about the different areas of your life:
@@ -91,6 +95,8 @@ Now think forward. The requirement asks you to list three ethical decisions you 
 {{< drg/did-you-know >}}
 Psychologists have found that people who *rehearse* ethical decisions in advance — thinking through what they would do before a situation happens — are significantly more likely to actually follow through when the moment arrives. By working through Requirement 3b, you are literally training your brain to make better choices.
 {{< /drg/did-you-know >}}
+
+## Requirement 3c: Taking Action as an Upstander
 
 ### Part C: Your Upstander Plan
 

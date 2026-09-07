@@ -20,7 +20,7 @@ This requirement covers two topics about your canoe:
 
 Knowing your canoe inside and out is the foundation of good paddling. When your counselor says "grab the thwart" or "check the gunwale," you need to know exactly what they mean — and when you are choosing a canoe for a trip, understanding how shape affects performance will help you pick the right boat.
 
-## Parts of a Canoe
+## Requirement 3a: Canoe Parts
 
 A canoe has a deceptively simple design, but every part serves a purpose.
 
@@ -44,7 +44,7 @@ A canoe has a deceptively simple design, but every part serves a purpose.
 Here is a quick trick to remember bow vs. stern: "bow" and "front" both have fewer letters than "stern" and "back." The shorter word goes with the shorter distance to the nearest end — the bow paddler sits closer to the front tip.
 {{< /drg/tip >}}
 
-## How Length and Shape Affect Performance
+## Requirement 3b: Design and Performance
 
 Two canoes can look similar at a glance but behave completely differently on the water. Length, width, hull shape, and rocker all affect how a canoe tracks, turns, and handles waves.
 

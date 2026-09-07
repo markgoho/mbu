@@ -18,7 +18,7 @@ This requirement covers two essential water topics:
 - **Water treatment** — how to make backcountry water safe to drink
 - **Hydration** — why staying hydrated is critical and how to do it
 
-### 5a. Water Treatment
+### Requirement 5a: Water Treatment
 
 {{< drg/requirement number="5a" >}}
 Demonstrate two ways to treat water and tell why water treatment is essential.
@@ -68,7 +68,7 @@ UV purifiers (like the SteriPEN) use ultraviolet light to destroy the DNA of pat
 Carry at least two treatment methods on every trek. If your filter breaks or you run out of tablets, you always have a backup. Most experienced backpackers carry a primary filter and chemical tablets as a backup.
 {{< /drg/tip >}}
 
-### 5b. Staying Hydrated
+### Requirement 5b: Staying Hydrated
 
 {{< drg/requirement number="5b" >}}
 Explain to your counselor the importance of staying well-hydrated during a trek.

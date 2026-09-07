@@ -15,7 +15,7 @@ Groups Working to Prevent Crime. Research how the following groups contribute to
 
 Crime prevention is a team effort. No single group — not even the police — can prevent crime alone. This requirement asks you to research how seven different groups contribute, from ordinary citizens to the courts. Here's a guide to what each group does and how they work together.
 
-## Citizens, Including Youth
+## Requirement 2a: Citizens and Youth
 
 You don't need a badge or a uniform to prevent crime. Citizens are the eyes and ears of every community, and young people play a bigger role than you might think.
 
@@ -37,7 +37,7 @@ You don't need a badge or a uniform to prevent crime. Citizens are the eyes and 
 The Crime Stoppers program, which lets citizens report crimes anonymously and receive cash rewards, has helped solve over 1.5 million cases worldwide since its founding in 1976 in Albuquerque, New Mexico.
 {{< /drg/did-you-know >}}
 
-## Schools
+## Requirement 2b: Schools' Role
 
 Schools are more than places to learn math and science — they're critical hubs for crime prevention. Most young people spend more waking hours at school than anywhere else, making schools a natural place to teach safety and build positive behaviors.
 
@@ -50,7 +50,7 @@ Schools are more than places to learn math and science — they're critical hubs
 - **Counseling services** — Helping students deal with problems before they escalate
 - **Positive school culture** — Schools with strong communities and engaged students experience fewer disciplinary issues and less crime
 
-## Neighborhood, Social, and Civic Groups
+## Requirement 2c: Community Groups
 
 When people are connected to their community, crime goes down. Social isolation is one of the strongest predictors of crime in a neighborhood, which is why groups that bring people together are powerful crime prevention tools.
 
@@ -64,7 +64,7 @@ When people are connected to their community, crime goes down. Social isolation 
 For your research, interview a leader from one of these groups in your community. Ask them specifically how their work prevents crime. You may be surprised by the connections they draw — a soccer league coach, for example, might explain how giving kids a safe place to be after school keeps them out of risky situations.
 {{< /drg/tip >}}
 
-## Private Security
+## Requirement 2d: Private Security
 
 Private security guards, systems, and companies protect businesses, residential communities, events, and critical infrastructure. The private security industry in the United States actually employs more people than public law enforcement.
 
@@ -78,7 +78,7 @@ Private security guards, systems, and companies protect businesses, residential 
 
 Private security works alongside — not as a replacement for — public law enforcement. Security guards can observe, report, and deter, but they have different legal authority than police officers.
 
-## Law Enforcement Agencies
+## Requirement 2e: Law Enforcement
 
 Law enforcement is the most visible part of crime prevention, but their role goes far beyond arresting criminals.
 
@@ -110,7 +110,7 @@ Not sure who handles what? Here's a quick guide:
 - **Drug activity** → Local police or DEA tip line
 {{< /drg/be-prepared >}}
 
-## Courts
+## Requirement 2f: Role of Courts
 
 Courts are where justice happens — where the facts of a case are weighed and outcomes are decided. They play a crime prevention role in several ways:
 
@@ -122,7 +122,7 @@ Courts are where justice happens — where the facts of a case are weighed and o
 
 The court system includes **criminal courts** (which handle crimes), **civil courts** (which handle disputes between people or organizations), and **juvenile courts** (which handle cases involving minors with a greater focus on rehabilitation than punishment).
 
-## Corrections and Rehabilitation Programs
+## Requirement 2g: Corrections Programs
 
 After a person is convicted, the corrections system takes over. Its goal is twofold: protect the public and help offenders become law-abiding citizens.
 

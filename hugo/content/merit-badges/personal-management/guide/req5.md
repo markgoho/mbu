@@ -31,7 +31,7 @@ In [Requirement 4](/merit-badges/personal-management/guide/req4/), you learned t
 
 {{< drg/image src="images/investment-types-overview.avif" alt="An illustrated lineup of six icons representing different investment types: a stock certificate, a basket of mixed investments for mutual funds, an umbrella for insurance, a locked safe for CDs, a piggy bank for savings, and an eagle for U.S. savings bonds" >}}
 
-### 5a: Common Stocks
+### Requirement 5a: Common Stocks
 
 When you buy a **stock**, you are buying a tiny piece of ownership in a company. If the company does well and grows, your piece becomes more valuable. If the company struggles, your piece loses value.
 
@@ -45,7 +45,7 @@ When you buy a **stock**, you are buying a tiny piece of ownership in a company.
 The New York Stock Exchange, where many stocks are bought and sold, was founded in 1792 under a buttonwood tree on Wall Street in New York City. Today, trillions of dollars in stocks are traded electronically every day.
 {{< /drg/did-you-know >}}
 
-### 5b: Mutual Funds
+### Requirement 5b: Mutual Funds
 
 A **mutual fund** pools money from many investors and uses it to buy a collection of stocks, bonds, or other investments. A professional fund manager decides what to buy and sell within the fund.
 
@@ -56,7 +56,7 @@ A **mutual fund** pools money from many investors and uses it to buy a collectio
 
 **The trade-off:** Mutual funds charge fees (called an **expense ratio**) that reduce your returns. Index funds — a type of mutual fund that simply tracks a market index like the S&P 500 — tend to have much lower fees and often outperform professionally managed funds over long periods.
 
-### 5c: Life Insurance
+### Requirement 5c: Life Insurance
 
 Life insurance is unusual on this list because it is primarily a **protection product**, not a pure investment. When someone buys a life insurance policy, they pay regular premiums. If they die while the policy is active, the insurance company pays a lump sum (called a **death benefit**) to the person's beneficiaries — usually their family.
 
@@ -64,7 +64,7 @@ Life insurance is unusual on this list because it is primarily a **protection pr
 
 **Who needs life insurance:** Primarily people whose families depend on their income. If a parent earns the family's main income and dies unexpectedly, life insurance helps the family pay bills, mortgages, and living expenses.
 
-### 5d: Certificate of Deposit (CD)
+### Requirement 5d: Certificate of Deposit (CD)
 
 A **certificate of deposit (CD)** is like a savings account with a lock on it. You deposit a fixed amount of money for a set period — called the **term** — and in return, the bank pays you a higher interest rate than a regular savings account.
 
@@ -80,7 +80,7 @@ A **certificate of deposit (CD)** is like a savings account with a lock on it. Y
 A strategy called **CD laddering** involves buying CDs with different maturity dates. For example, you might buy a 1-year, 2-year, and 3-year CD. As each one matures, you reinvest it. This gives you regular access to some of your money while still earning higher interest rates.
 {{< /drg/tip >}}
 
-### 5e: Savings Account
+### Requirement 5e: Savings Account
 
 A **savings account** is the most basic and accessible place to keep money. You deposit money at a bank or credit union, earn a small amount of interest, and can withdraw your money whenever you need it.
 
@@ -95,7 +95,7 @@ A **savings account** is the most basic and accessible place to keep money. You 
 - **High-yield savings:** Online banks often offer significantly higher rates because they have lower overhead costs
 - **Money market accounts:** Slightly higher rates, may require a higher minimum balance
 
-### 5f: U.S. Savings Bond
+### Requirement 5f: U.S. Savings Bond
 
 A **U.S. savings bond** is a loan you make to the federal government. You buy the bond, and the government promises to pay you back with interest after a certain period.
 

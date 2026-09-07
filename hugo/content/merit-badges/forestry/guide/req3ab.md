@@ -20,7 +20,7 @@ This requirement covers two big ideas that belong together:
 
 When foresters talk about the value of forests, they do not just mean trees standing on a hillside. They mean all the benefits those forests provide every day, often without people noticing.
 
-## Req 3a — The Contributions Forests Make
+## Requirement 3a: Why Forests Matter
 
 Forests contribute to our lives in many ways at once.
 
@@ -70,7 +70,7 @@ Many rare plants and animals depend on very specific forest conditions. Some nee
 Many cities protect forested watersheds because it is often cheaper to keep source water clean in the landscape than to remove pollution later at a treatment plant.
 {{< /drg/did-you-know >}}
 
-## Req 3b — Your Community's Water Source
+## Requirement 3b: Your Local Watershed
 
 A **watershed** is all the land that drains water to the same stream, river, lake, or reservoir. If rain falls anywhere in that area, gravity eventually pulls it toward the same outlet. Your community may rely on a reservoir, a river, wells that tap groundwater, or a combination of sources.
 

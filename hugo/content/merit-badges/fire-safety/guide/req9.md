@@ -22,7 +22,9 @@ Wildland fires (also called wildfires or forest fires) are some of nature's most
     title="Wildfires 101 | National Geographic"
     url="https://www.youtube.com/watch?v=5hghT1W33cY" >}}
 
-## Causes of Wildland Fires
+## Requirement 9a: Wildland Fire Causes and Prevention
+
+### Causes of Wildland Fires
 
 **Natural Causes:**
 
@@ -59,7 +61,9 @@ Wildland fires (also called wildfires or forest fires) are some of nature's most
 - **Fire roads:** Access for firefighting equipment.
 - **Fuel breaks:** Areas of reduced vegetation to slow fire spread.
 
-## Social Consequences
+## Requirement 9b: Consequences of Wildland Fires
+
+### Social Consequences
 
 - **Displacement:** Families forced to evacuate and sometimes lose homes.
 - **Health impacts:** Smoke causes respiratory problems, especially in children and elderly.
@@ -67,7 +71,7 @@ Wildland fires (also called wildfires or forest fires) are some of nature's most
 - **Mental health:** Trauma for those who lose homes or witness destruction.
 - **Community disruption:** Schools close, businesses shut down, lives are upended.
 
-## Economic Consequences
+### Economic Consequences
 
 - **Suppression costs:** Firefighting (aircraft, personnel, equipment) costs hundreds of millions annually.
 - **Property loss:** Homes, barns, equipment destroyed. A large fire can cause billions in damage.
@@ -77,7 +81,7 @@ Wildland fires (also called wildfires or forest fires) are some of nature's most
 
 The 2018 Camp Fire in California (the deadliest wildfire in state history) killed 85 people, destroyed 18,804 structures, and caused over $16 billion in damage.
 
-## Environmental Consequences
+### Environmental Consequences
 
 - **Ecosystem destruction:** Loss of wildlife habitat, plant species, and biodiversity.
 - **Soil damage:** Intense heat can sterilize soil, making regrowth difficult.

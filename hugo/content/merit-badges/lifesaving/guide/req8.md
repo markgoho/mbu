@@ -57,7 +57,7 @@ A conscious, responsive victim who hears a calm, confident voice will often stop
 
 {{< drg/image src="images/buoyant-aid-approach.avif" alt="A Scout swimming toward a person in the water using a head-up front crawl, carrying a rescue tube clipped across the chest" >}}
 
-### Rescue 8a — Present and Release
+### Requirement 8a: Present and Release
 
 In this rescue, you give the buoyant aid to the victim and let them make their own way to safety. This is the safest type of swimming rescue because you maintain distance from the victim.
 
@@ -75,7 +75,7 @@ In this rescue, you give the buoyant aid to the victim and let them make their o
 After releasing the aid, keep your distance. A victim who grabs the float and then panics again may lunge for you. Stay at least 6 feet away and be ready to submerge and swim away if they come toward you.
 {{< /drg/safety-first >}}
 
-### Rescue 8b — Present and Tow
+### Requirement 8b: Present and Tow
 
 In this rescue, you keep hold of the aid and actively tow the victim to shore. This is necessary when the victim cannot swim to safety on their own — they are too tired, too scared, or the distance is too far.
 

@@ -17,6 +17,8 @@ Learn about the federal laws and international conventions that protect archaeol
 Identify a national, international, or local organization that helps to protect archaeological sites.
 {{< /drg/requirement >}}
 
+## Requirement 5a: Protection Laws and Regulations
+
 Archaeological sites are fragile and irreplaceable. Once a site is destroyed — whether by looters, construction, or neglect — the information it held is gone forever. That is why governments around the world have passed laws to protect these places, and why organizations exist to enforce and advocate for those protections.
 
 ### Major Federal Laws
@@ -58,6 +60,8 @@ Many states have their own laws that add protections beyond federal regulations.
 {{< drg/tip >}}
 To find out about your state's specific archaeological protection laws, search for your **State Historic Preservation Office (SHPO)**. Every state has one, and they are the best resource for understanding local regulations. Your counselor may also know about county or city rules that apply to sites in your area.
 {{< /drg/tip >}}
+
+## Requirement 5b: Organizations Protecting Sites
 
 ### Organizations That Protect Sites
 

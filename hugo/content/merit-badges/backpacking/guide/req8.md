@@ -20,7 +20,7 @@ This requirement covers everything about cooking in the backcountry:
 - **Meal preparation** — cooking three meals with your stove
 - **Cleanup and food storage** — keeping things clean and critter-free
 
-### 8a. Backpacking Stove Types
+### Requirement 8a: Backpacking Stove Types
 
 {{< drg/requirement number="8a" >}}
 Explain the advantages and disadvantages of the different types of backpacking stoves using at least three different types of fuel.
@@ -66,7 +66,7 @@ Wood-burning backpacking stoves use twigs, pinecones, and small sticks found on 
 For your Backpacking merit badge, a canister stove is usually the best choice for learning. It is safe, easy to operate, and lets you focus on cooking skills rather than troubleshooting equipment.
 {{< /drg/tip >}}
 
-### 8b. Safe Stove Operation
+### Requirement 8b: Safe Stove Operation
 
 {{< drg/requirement number="8b" >}}
 Demonstrate that you know how to operate a backpacking stove safely and to handle liquid fuel safely.
@@ -92,7 +92,7 @@ Backpacking stoves produce open flames and use flammable fuels. Treat every stov
 - Familiarize yourself with the priming process before your trek — practice at home in a safe outdoor area
 - Check all connections and O-rings for leaks before each use
 
-### 8c. Trail Meals
+### Requirement 8c: Trail Meals
 
 {{< drg/requirement number="8c" >}}
 Prepare three meals using a stove and fuel you can carry in a backpack.
@@ -113,7 +113,7 @@ Boil two cups of water, pour into the freeze-dried meal pouch, seal, and wait 10
 A backpacker on a strenuous multi-day trek burns 3,000 to 5,000 calories per day — far more than a typical day at home. That is why trail food emphasizes calorie density: nuts, cheese, chocolate, and peanut butter pack the most energy per ounce.
 {{< /drg/did-you-know >}}
 
-### 8d. Cleanup and Food Storage
+### Requirement 8d: Cleanup and Food Storage
 
 {{< drg/requirement number="8d" >}}
 Demonstrate that you know how to keep cooking and eating gear clean and sanitary, and that you practice proper methods for food storage while on a backpacking trek.

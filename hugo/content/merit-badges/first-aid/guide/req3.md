@@ -16,7 +16,7 @@ Wounds with No External Bleeding. Describe the symptoms and signs of, show first
 
 This page is a quick field guide. For each injury, know what it looks like, the first thing to do, and how to avoid it.
 
-## Bruises and hematomas
+## Requirement 3a: Bruises and Hematomas
 
 {{< drg/inherited-requirement number="3a" req_path="3.a" topic="Closed wounds, such as a bruise (contusion) or a hematoma" />}}
 
@@ -24,7 +24,7 @@ This page is a quick field guide. For each injury, know what it looks like, the 
 - **First aid:** rest, cold pack wrapped in cloth, elevate if possible.
 - **Prevention:** wear protective gear and avoid unnecessary impacts.
 
-## Heat burns and scalds
+## Requirement 3b: Thermal Burns and Scalds
 
 {{< drg/inherited-requirement number="3b" req_path="3.b" topic="Superficial, partial thickness, and full thickness thermal (heat) burns or scalds" />}}
 
@@ -32,7 +32,7 @@ This page is a quick field guide. For each injury, know what it looks like, the 
 - **First aid:** stop the burning, cool with cool water, cover loosely, do not pop blisters.
 - **Prevention:** use caution around stoves, fires, and hot liquids.
 
-## Chemical burns
+## Requirement 3c: Chemical Burns
 
 {{< drg/inherited-requirement number="3c" req_path="3.c" topic="Chemical burns" />}}
 
@@ -40,7 +40,7 @@ This page is a quick field guide. For each injury, know what it looks like, the 
 - **First aid:** protect yourself, remove contaminated clothing, flush with water for at least 20 minutes.
 - **Prevention:** read labels and wear gloves and eye protection.
 
-## Electrical burns
+## Requirement 3d: Electrical Burns
 
 {{< drg/inherited-requirement number="3d" req_path="3.d" topic="Electrical burns" />}}
 
@@ -52,7 +52,7 @@ This page is a quick field guide. For each injury, know what it looks like, the 
 For electrical injuries, scene safety comes first. A rescuer who touches a live source becomes the next victim.
 {{< /drg/safety-first >}}
 
-## Sunburn
+## Requirement 3e: Sunburn
 
 {{< drg/inherited-requirement number="3e" req_path="3.e" topic="Sunburn" />}}
 
@@ -60,7 +60,7 @@ For electrical injuries, scene safety comes first. A rescuer who touches a live 
 - **First aid:** get out of the sun, cool the skin, drink water.
 - **Prevention:** sunscreen, hat, sunglasses, and shade.
 
-## Snow blindness
+## Requirement 3f: Snow Blindness
 
 {{< drg/inherited-requirement number="3f" req_path="3.f" topic="Snow blindness" />}}
 
@@ -68,7 +68,7 @@ For electrical injuries, scene safety comes first. A rescuer who touches a live 
 - **First aid:** move to shade, cover closed eyes with cool cloths, do not rub.
 - **Prevention:** wear UV-blocking sunglasses or goggles.
 
-## Cold injuries
+## Requirement 3g: Cold Weather Injuries
 
 {{< drg/inherited-requirement number="3g" req_path="3.g" topic="Immersion foot, frostnip, frostbite, and ice burns" />}}
 
@@ -80,7 +80,7 @@ For electrical injuries, scene safety comes first. A rescuer who touches a live 
 Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 {{< /drg/tip >}}
 
-## Abrasions, chafing, and rope burns
+## Requirement 3h: Abrasions and Rope Burns
 
 {{< drg/inherited-requirement number="3h" req_path="3.h" topic="Abrasions, such as chafing and rope burns" />}}
 
@@ -88,7 +88,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** clean gently, cover if needed, reduce friction.
 - **Prevention:** proper clothing, gloves for rope work, and early attention to hot spots.
 
-## Blisters
+## Requirement 3i: Blister Care
 
 {{< drg/inherited-requirement number="3i" req_path="3.i" topic="Blisters on the hands, feet, buttocks, and shoulders" />}}
 
@@ -96,7 +96,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** protect the area, pad around the blister, keep it clean.
 - **Prevention:** break in gear, keep skin dry, stop early when rubbing starts.
 
-## Puncture wounds
+## Requirement 3j: Puncture Wounds
 
 {{< drg/inherited-requirement number="3j" req_path="3.j" topic="Puncture wounds from splinters, rope splinters, nails, and fish hooks" />}}
 
@@ -104,7 +104,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** clean the wound, remove small splinters if easy, seek help for deep wounds or fish hooks.
 - **Prevention:** gloves, footwear, and careful tool use.
 
-## Poisonous plant rash
+## Requirement 3k: Poisonous Plant Rash
 
 {{< drg/inherited-requirement number="3k" req_path="3.k" topic="Rash from poisonous plants" />}}
 
@@ -112,7 +112,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** wash skin and clothing, use anti-itch treatment, avoid scratching.
 - **Prevention:** learn the plants and cover exposed skin.
 
-## Bug bites
+## Requirement 3l: Common Bug Bites
 
 {{< drg/inherited-requirement number="3l" req_path="3.l" topic="Bug bites of chiggers, ticks, mosquitoes, and biting gnats" />}}
 
@@ -122,7 +122,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 
 {{< drg/image src="images/tick-removal-technique.avif" alt="Close-up of correct tick removal with fine-tipped tweezers grasping close to the skin and pulling straight upward" >}}
 
-## Bee stings
+## Requirement 3m: Bee Stings
 
 {{< drg/inherited-requirement number="3m" req_path="3.m" topic="Bee stings" />}}
 
@@ -130,7 +130,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** scrape out the stinger, wash, and use a cold pack.
 - **Prevention:** avoid provoking bees and keep food covered.
 
-## Spider bites
+## Requirement 3n: Spider Bites
 
 {{< drg/inherited-requirement number="3n" req_path="3.n" topic="Bites of spiders" />}}
 
@@ -138,7 +138,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** wash, cool, and get medical help if serious symptoms appear.
 - **Prevention:** shake out gear and use gloves in dark storage areas.
 
-## Scorpion stings
+## Requirement 3o: Scorpion Stings
 
 {{< drg/inherited-requirement number="3o" req_path="3.o" topic="Sting of a scorpion" />}}
 
@@ -146,7 +146,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** wash, use a cold pack, and seek medical advice.
 - **Prevention:** shake out shoes and bedding, especially in desert areas.
 
-## Mammal or human bites
+## Requirement 3p: Animal Bites
 
 {{< drg/inherited-requirement number="3p" req_path="3.p" topic="Bite of a pet or wild mammal or human" />}}
 
@@ -154,7 +154,7 @@ Do not rub frostbitten skin or use direct heat. Gentle warming is safer.
 - **First aid:** wash well, control bleeding, cover, and get medical care.
 - **Prevention:** do not approach wild animals and use caution with pets.
 
-## Venomous snake bites
+## Requirement 3q: Venomous Snake Bites
 
 {{< drg/inherited-requirement number="3q" req_path="3.q" topic="Bite of a venomous snake" />}}
 

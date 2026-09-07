@@ -41,6 +41,8 @@ This requirement asks you to look beyond your Scout uniform and into the rest of
 
 The requirement lists five specific skills. Let's look at each one and what it looks like in practice outside of Scouting.
 
+## Requirement 9a: Making Others Feel Included
+
 #### Making Others Feel Included
 
 Inclusion is an action, not a feeling. It means deliberately reaching out to people who might otherwise be left on the outside.
@@ -50,6 +52,8 @@ Inclusion is an action, not a feeling. It means deliberately reaching out to peo
 **On your sports team or club:** Make sure new members are introduced to everyone. Rotate partners or groups so people are not stuck in the same cliques.
 
 **At home:** Include younger siblings in activities when they want to participate. Make room at the table for guests.
+
+## Requirement 9b: Practicing Active Listening
 
 #### Practicing Active Listening
 
@@ -68,6 +72,8 @@ Most people listen to respond, not to understand. Research shows that the averag
 
 {{< drg/image src="images/active-listening-pair.avif" alt="Two young people sitting face-to-face, one speaking and the other listening attentively with engaged body language" >}}
 
+## Requirement 9c: Creating a Comfortable Environment for Sharing
+
 #### Creating a Comfortable Environment for Sharing
 
 This is about psychological safety — making it clear that people's ideas will be respected, not ridiculed. When people feel safe sharing, you get better ideas, stronger teams, and deeper friendships.
@@ -76,6 +82,8 @@ This is about psychological safety — making it clear that people's ideas will 
 - When someone shares an idea, respond with curiosity, not judgment: "That's interesting — tell me more" instead of "That won't work."
 - If someone's idea gets shut down unfairly, bring it back: "Wait, I want to hear more about what Alex was saying."
 - Set ground rules in group settings: no interrupting, no laughing at ideas, every suggestion gets heard.
+
+## Requirement 9d: Helping Others Feel Valued
 
 #### Helping Others Feel Valued
 
@@ -89,6 +97,8 @@ People need to know that their contributions matter. When someone takes a risk a
 {{< drg/tip >}}
 Recognition does not have to be a big production. A simple "Good idea" or "I'm glad you said something" can make someone feel like they truly belong.
 {{< /drg/tip >}}
+
+## Requirement 9e: Standing Up for Others
 
 #### Standing Up for Others
 

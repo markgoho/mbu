@@ -28,7 +28,9 @@ Campfires are at the heart of Scout tradition. Learning to build, tend, and exti
     title="How to Build a Mound Fire — Leave No Trace"
     url="https://www.youtube.com/watch?v=P1JSzgBEVhk" >}}
 
-## Leave No Trace & Camping Fires
+## Requirement 8a: Leave No Trace and Camping Fires
+
+### Leave No Trace & Camping Fires
 
 **Leave No Trace Principle 5: Camp with Care** applies directly to camping fires:
 
@@ -41,7 +43,9 @@ Campfires are at the heart of Scout tradition. Learning to build, tend, and exti
 
 A campfire managed with Leave No Trace principles leaves the campsite as untouched as possible for the next group.
 
-## Matches: Safety & Strike-Anywhere
+## Requirement 8b: Match Safety
+
+### Matches: Safety & Strike-Anywhere
 
 **Safety Matches**
 
@@ -65,7 +69,9 @@ A campfire managed with Leave No Trace principles leaves the campsite as untouch
 - To extinguish, blow gently or dip the flame into water (do not wave it, which spreads embers).
 - Dispose of spent matches in a fire or in water-filled container (never leave them on the ground).
 
-## Flint & Steel / Ferro Rod
+## Requirement 8c: Flint and Steel / Ferro Rod
+
+### Flint & Steel / Ferro Rod
 
 **Flint and Steel** (traditional)
 
@@ -84,7 +90,9 @@ Strike a steel striker down the length of a magnesium/iron alloy rod to produce 
 5. Gradually add small kindling as the flame grows.
 6. Once a small flame is established, test that you can extinguish it using one principle of the fire tetrahedron (usually removing oxygen by smothering, or removing heat by cooling with water/dirt).
 
-## Charcoal Fire
+## Requirement 8d: Charcoal Fire
+
+### Charcoal Fire
 
 Safe and efficient for cooking:
 
@@ -95,7 +103,9 @@ Safe and efficient for cooking:
 5. **Cook as heat decreases** (don't add more charcoal mid-meal—it won't ignite properly and creates smoke).
 6. **Fully extinguish** by spreading coals and letting them cool, then drowning with water.
 
-## Three Common Fire Lays
+## Requirement 8e: Fire Lays
+
+### Three Common Fire Lays
 
 **Teepee Lay**
 
@@ -124,7 +134,9 @@ Always gather more wood than you think you'll need.
 - Use established fire rings.
 - Keep fires small.
 
-## Camp Stoves
+## Requirement 8f: Camp Stoves
+
+### Camp Stoves
 
 Cleaner and safer than campfires:
 
@@ -141,7 +153,9 @@ Cleaner and safer than campfires:
 5. Clean stove if it clogs.
 6. Fully cool before refueling.
 
-## Campsite Fire Safety
+## Requirement 8g: Campsite Fire Safety
+
+### Campsite Fire Safety
 
 {{< drg/video
     title="Campfire Safety — NYSDEC"

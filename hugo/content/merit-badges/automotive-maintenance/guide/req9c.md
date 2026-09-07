@@ -46,6 +46,8 @@ Automatic transmission fluid is a petroleum product and should be handled with c
 Explain the types of lubricants used in a standard transmission, and in the differential and transfer case.
 {{< /drg/requirement >}}
 
+## Requirement 9d: Transmission & Drivetrain Fluids
+
 ### Manual Transmission Fluid
 
 Manual transmissions do not use ATF (with a few exceptions). Instead, they typically use one of these lubricants:
@@ -85,6 +87,8 @@ Differential and transfer case fluid changes are often overlooked because they a
 {{< drg/requirement number="9e" >}}
 Explain the difference between front-wheel, rear-wheel, and four-wheel drive.
 {{< /drg/requirement >}}
+
+## Requirement 9e: Front, Rear & Four-Wheel Drive
 
 ### Drive Configurations
 

@@ -19,7 +19,7 @@ This requirement covers three topics you will discuss with your counselor:
 - **The benefits of playing chess** for critical thinking, concentration, and decision-making (Req 2b)
 - **Sportsmanship and chess etiquette** (Req 2c)
 
-## Why Chess Is a Game of Planning and Strategy
+## Requirement 2a: Planning and Strategy
 
 Unlike games that rely on dice rolls or card draws, chess has **zero luck**. Every piece is visible. Every option is available to both sides. The only advantage you can gain comes from outthinking your opponent.
 
@@ -35,7 +35,7 @@ The best chess players combine both. They develop a plan (strategy) and execute 
 Grandmasters do not calculate more moves ahead than strong amateurs — they calculate *better* moves. Studies show that experts recognize patterns from thousands of previous games, letting them quickly focus on the most promising moves rather than analyzing every possibility.
 {{< /drg/did-you-know >}}
 
-## Benefits of Playing Chess
+## Requirement 2b: Thinking, Concentration, Decisions
 
 ### Critical Thinking
 
@@ -64,7 +64,7 @@ These skills do not stay on the chessboard. Studies have linked regular chess pl
 
 {{< drg/image src="images/chess-benefits-thinking.avif" alt="Infographic showing four connected circles — Critical Thinking, Concentration, Decision Making, and Patience — arranged around a central chess knight piece" >}}
 
-## Sportsmanship and Chess Etiquette
+## Requirement 2c: Sportsmanship and Etiquette
 
 Chess has a strong tradition of mutual respect between opponents. Good sportsmanship is not optional — it is part of the game's culture. Here are the key etiquette rules every chess player should follow:
 

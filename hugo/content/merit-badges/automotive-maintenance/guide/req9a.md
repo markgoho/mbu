@@ -47,6 +47,8 @@ When creating your drive train diagram for your counselor, draw it from a top-do
 Explain the difference between automatic and standard transmissions.
 {{< /drg/requirement >}}
 
+## Requirement 9b: Manual vs. Automatic Transmissions
+
 ### Manual (Standard) Transmission
 
 A manual transmission requires the driver to select gears manually using a **gear shift lever** and a **clutch pedal**.

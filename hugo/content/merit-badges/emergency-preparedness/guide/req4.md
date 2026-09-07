@@ -37,7 +37,7 @@ In all four of these scenarios, **call 911 first** (or direct someone else to ca
 
 ---
 
-### 4a. Live Household Electric Wire
+### Requirement 4a: Live Household Electric Wire
 
 Electricity can kill instantly. A person who is touching or near a live wire may be unable to let go because the electric current causes muscles to lock up. If you touch them directly, the current will flow through you too.
 
@@ -57,7 +57,7 @@ Downed power lines outside your home carry thousands of volts — far more than 
 
 ---
 
-### 4b. A Structure Filled with Carbon Monoxide
+### Requirement 4b: Carbon Monoxide Rescue
 
 Carbon monoxide (CO) is called the "silent killer" because it is colorless and odorless. You cannot see it, smell it, or taste it. It is produced by anything that burns fuel — furnaces, gas stoves, generators, car engines, and fireplaces. Breathing CO causes confusion, unconsciousness, and death.
 
@@ -78,7 +78,7 @@ Carbon monoxide detectors are as important as smoke detectors. Install them on e
 
 ---
 
-### 4c. Clothes on Fire
+### Requirement 4c: Clothes on Fire
 
 When a person's clothes catch fire, panic is their worst enemy. People instinctively run, which fans the flames and makes the fire worse. The correct response is universally known — but many people forget it in the moment.
 
@@ -101,7 +101,7 @@ When a person's clothes catch fire, panic is their worst enemy. People instincti
 
 ---
 
-### 4d. Drowning — Nonswimming Rescues
+### Requirement 4d: Drowning Rescue
 
 Drowning is one of the leading causes of accidental death. A drowning person is in a state of panic and will grab onto anything — including you. Swimming rescues should only be attempted by trained lifeguards. For everyone else, the safe approach is: **Reach, Throw, Row — Don't Go.**
 

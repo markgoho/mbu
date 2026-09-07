@@ -15,7 +15,7 @@ Before beginning the 12-week program in requirement 7, do the following:
 
 This is where theory meets reality. You have learned about the components of fitness, chosen your assessments, and now it is time to test yourself. Your pre-assessment results will serve as the starting line for your 12-week journey.
 
-### 5a — Complete Your Assessments
+### Requirement 5a: Take Your Baseline Tests
 
 {{< drg/requirement number="5a" >}}
 Complete each of the assessments you defined in requirement 4, and record your results.
@@ -36,7 +36,7 @@ Take each test you chose in [Requirement 4](/merit-badges/personal-fitness/guide
 Do not be discouraged by your starting numbers. Everyone starts somewhere. The purpose of the baseline is not to judge yourself — it is to create a reference point so you can celebrate your improvement later. A Scout who starts with 10 push-ups and finishes with 25 has made incredible progress.
 {{< /drg/tip >}}
 
-### 5b — Identify Strengths and Weaknesses
+### Requirement 5b: Identify Fitness Gaps
 
 {{< drg/requirement number="5b" >}}
 Identify your weakest and strongest area of physical fitness, and choose an area to target for improvement.
@@ -53,7 +53,7 @@ Your target area does not have to be your absolute weakest area — it should be
 
 {{< drg/image src="images/scout-recording-results.avif" alt="A Scout sitting at a table writing results in a fitness log notebook, with a water bottle and stopwatch nearby" >}}
 
-### 5c — Three-Day Food Log
+### Requirement 5c: Track Your Eating Habits
 
 {{< drg/requirement number="5c" >}}
 Keep a log of what you eat and drink for a period of three days.
@@ -76,7 +76,7 @@ Be honest. This log is for you and your counselor — it only helps if it reflec
 Most people significantly underestimate how much they eat and overestimate how much they exercise. Keeping an honest food log is one of the most eye-opening experiences in the Personal Fitness merit badge. You may be surprised by what you discover.
 {{< /drg/did-you-know >}}
 
-### 5d — Set Nutrition Goals
+### Requirement 5d: Set Nutrition Goals
 
 {{< drg/requirement number="5d" >}}
 Based on your diet log, identify at least two improvement goals related to diet and nutrition.

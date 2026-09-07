@@ -17,7 +17,9 @@ Attend an in-person meeting of your city, town, or county council or school boar
 Choose one of the issues discussed at the meeting where a difference of opinions was expressed, and explain to your counselor why you agree with one opinion more than you do another one.
 {{< /drg/requirement >}}
 
-## Why Attend a Government Meeting?
+## Requirement 3a: Attend a Government Meeting
+
+### Why Attend a Government Meeting?
 
 Reading about government is one thing. Watching it happen in real time is something else entirely. When you sit in on a city council meeting or a school board session, you see democracy at work — real people debating real issues that affect your community. It can be fascinating, frustrating, inspiring, and sometimes even boring. But it is always real.
 
@@ -85,7 +87,7 @@ Bring a notebook and pen. As you watch the meeting, write down:
 - Did anything surprise you?
 {{< /drg/checklist >}}
 
-## Forming Your Opinion (Requirement 3b)
+## Requirement 3b: Analyze and Explain Your Position
 
 After the meeting, your counselor will ask you to pick one issue where opinions were divided and explain which side you agree with — and why.
 

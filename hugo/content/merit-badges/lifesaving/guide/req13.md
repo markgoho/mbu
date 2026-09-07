@@ -41,7 +41,7 @@ Before making contact with a victim who appears unconscious, you must verify the
 Always treat an unconscious victim as a potential spinal injury. Support the head and neck during the rescue. Do not bend, twist, or jerk the victim's head and spine. This is especially important if the victim may have hit their head on a diving board, pool bottom, dock, or rock.
 {{< /drg/safety-first >}}
 
-### 13a — Equipment Assist (Buoyant Aid)
+### Requirement 13a: Equipment Assist
 
 This technique uses a rescue tube or other buoyant aid to support the unconscious victim while you tow them to shore.
 
@@ -55,7 +55,7 @@ This technique uses a rescue tube or other buoyant aid to support the unconsciou
 7. **Remove from the water** quickly — lift them out with assistance if available.
 8. **Position for CPR** — place them flat on their back on a hard surface.
 
-### 13b — Front Approach and Wrist Tow
+### Requirement 13b: Front Approach and Wrist Tow
 
 This technique is used when no equipment is available and the victim is faceup.
 
@@ -71,7 +71,7 @@ This technique is used when no equipment is available and the victim is faceup.
 
 {{< drg/image src="images/front-approach-wrist-tow.avif" alt="A rescuer swimming sidestroke while towing an unconscious victim by the wrist, the victim floating faceup with their arm extended" >}}
 
-### 13c — Rear Approach and Armpit Tow
+### Requirement 13c: Rear Approach and Armpit Tow
 
 This technique approaches the victim from behind — the safest approach position if there is any doubt about the victim's consciousness.
 

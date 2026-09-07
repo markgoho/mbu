@@ -19,7 +19,7 @@ Show how to orient a map using a compass.
 
 These two skills are the final pieces of the map-reading puzzle. Measuring distance tells you *how far* you need to go. Orienting the map tells you *which way the world lines up* around you. Together with bearings and declination, you now have a complete navigation toolkit.
 
-## Measuring Distances on a Map
+## Requirement 4e: Measuring Distances on a Map
 
 Your orienteering compass baseplate has ruler markings along its edges — usually in millimeters, plus scales for common map ratios. Here is how to use them:
 
@@ -52,7 +52,7 @@ Real routes rarely follow straight lines. To measure a winding trail or stream:
 On orienteering maps (typically 1:10,000 or 1:15,000), distances are short enough that the baseplate ruler works perfectly. On USGS maps (1:24,000), distances are larger and you may find it easier to use the map's printed bar scale along the bottom margin.
 {{< /drg/tip >}}
 
-## Orienting a Map
+## Requirement 4f: Orienting a Map
 
 An oriented map is one that has been rotated so that north on the map matches north in the real world. When your map is oriented, everything on it lines up with what you see around you — the trail to your left on the map is also to your left in real life, the hill ahead on the map is ahead in the terrain.
 

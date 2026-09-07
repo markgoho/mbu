@@ -31,11 +31,19 @@ Your field notebook can be a physical notebook, a binder with printed pages, or 
 
 ### What Each Entry Should Include
 
+## Requirement 5a: Recording Date and Time
+
 **Date and time** — When did you observe the bird? Record the date and the approximate time. Early morning observations are different from midday sightings — many birds are most active at dawn.
+
+## Requirement 5b: Location and Habitat
 
 **Location and habitat** — Where were you? Be specific: "Oak woodland trail behind Sunset Elementary School" is better than "a park." Describe the habitat type: forest, grassland, wetland, suburban yard, lakeshore, etc.
 
+## Requirement 5c: Feeding Habitat and Food
+
 **Main feeding habitat and two food types** — Where does this species typically feed? On the ground? In the tree canopy? Over water? Then list two types of food the bird is likely to eat. You can observe this directly (you watched a robin pull a worm from the ground) or research it in your field guide.
+
+## Requirement 5d: Residency Status
 
 **Residency status** — Is this bird a year-round resident, a summer breeder, a winter visitor, or a migrant passing through? Your field guide's range map will help you determine this. Check what color your area falls in on the range map.
 

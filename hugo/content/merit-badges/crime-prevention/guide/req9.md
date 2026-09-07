@@ -22,7 +22,7 @@ This requirement covers six topics about staying safe in the digital world:
 - **How criminals use social media** to target victims
 - **How bullying, texting, and sharing photos** can become crimes
 
-## How to Avoid Being the Victim of Online Crimes
+## Requirement 9a: Avoiding Online Crimes
 
 The internet is an incredible tool, but it's also a hunting ground for criminals who exploit trust, ignorance, and carelessness. The good news: most online crimes are preventable with awareness and smart habits.
 
@@ -38,7 +38,7 @@ The internet is an incredible tool, but it's also a hunting ground for criminals
 Apply the three R's from Req 6 to online situations: **Recognize** suspicious messages, links, or requests. **Resist** the urge to click, respond, or share information. **Report** suspicious activity to a trusted adult, the platform, or law enforcement.
 {{< /drg/tip >}}
 
-## Common Online Financial Scams
+## Requirement 9b: Common Online Scams
 
 Scammers are constantly inventing new tricks, but most schemes follow predictable patterns:
 
@@ -66,7 +66,7 @@ A person builds a fake relationship online, then invents a crisis (medical emerg
 The FBI's Internet Crime Complaint Center (IC3) received over 880,000 complaints in a recent year, with reported losses exceeding $12.5 billion. The actual number is likely much higher, because many victims are too embarrassed to report being scammed.
 {{< /drg/did-you-know >}}
 
-## Effective Online Security
+## Requirement 9c: Online Security Practices
 
 Think of online security like locking your doors — it won't stop every determined criminal, but it eliminates most of the easy opportunities.
 
@@ -102,7 +102,7 @@ Think of online security like locking your doors — it won't stop every determi
 - Unfamiliar apps removed from your devices
 {{< /drg/checklist >}}
 
-## Identity Theft and How to Prevent It
+## Requirement 9d: Identity Theft Prevention
 
 Identity theft occurs when someone uses your personal information — name, Social Security number, date of birth, account numbers — to commit fraud. It can take months or years to recover from, and it can happen to anyone, including minors.
 
@@ -133,7 +133,7 @@ Act quickly if you suspect identity theft:
 5. **Monitor your credit** — Check your credit reports regularly for new fraudulent accounts
 {{< /drg/be-prepared >}}
 
-## How Criminals Use Social Media to Target Victims
+## Requirement 9e: Social Media Dangers
 
 Social media is a goldmine for criminals because people voluntarily share detailed personal information.
 
@@ -153,7 +153,7 @@ Social media is a goldmine for criminals because people voluntarily share detail
 - **Never post** that you're home alone or that your family is on vacation
 - Think before posting: "Would I be comfortable if this appeared on the front page of my school newspaper?"
 
-## How Bullying, Texting, and Sharing Photos Can Become Crimes
+## Requirement 9f: Digital Crimes
 
 Many young people don't realize that activities they consider normal — texting, sharing photos, posting online — can cross the line into criminal behavior.
 

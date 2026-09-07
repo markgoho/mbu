@@ -21,7 +21,9 @@ Of all the topics in this merit badge, deepfakes may be the most important one f
 
 ---
 
-## How Deepfakes Work
+## Requirement 5a: Understanding Deepfakes
+
+### How Deepfakes Work
 
 Deepfakes are created using a type of machine learning called **deep learning** (that is where the "deep" in the name comes from). Here is the basic process:
 
@@ -37,7 +39,7 @@ Deepfake videos have surged by more than 550% since 2019. By 2023, researchers h
 
 ---
 
-## How Deepfakes Affect People
+### How Deepfakes Affect People
 
 Deepfakes are not just a technology curiosity — they cause real harm to real people. Here are the major ways:
 
@@ -63,7 +65,7 @@ Deepfakes that target individuals — especially minors — may be illegal in ma
 
 ---
 
-## How to Spot a Deepfake
+### How to Spot a Deepfake
 
 While deepfakes are getting harder to detect, there are still telltale signs to watch for:
 
@@ -86,7 +88,9 @@ The single best defense against deepfakes is **critical thinking**. Before you b
 
 ---
 
-## What to Do If You Are Impacted
+## Requirement 5b: Responding to Deepfakes
+
+### What to Do If You Are Impacted
 
 If you or someone you know becomes the target of a deepfake, here are the steps to take:
 

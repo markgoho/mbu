@@ -20,7 +20,7 @@ This requirement covers two topics that show how deeply dentistry connects to ov
 
 ---
 
-## Part a — Fluoride and Tooth Decay Prevention
+## Requirement 5a: Fluoride and Tooth Decay Prevention
 
 {{< drg/requirement number="5a" >}}
 How fluorides help prevent tooth decay and the ways fluorides can be provided to the teeth.
@@ -63,7 +63,7 @@ After a professional fluoride treatment, you are usually told not to eat or drin
 
 ---
 
-## Part b — The Mouth-Body Connection
+## Requirement 5b: The Mouth-Body Connection
 
 {{< drg/requirement number="5b" >}}
 How the mouth is related to the rest of the body. Topics might include chewing, saliva, enzymes, nutrition, and speech.

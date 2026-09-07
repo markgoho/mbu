@@ -20,7 +20,7 @@ This requirement covers two final design tests that matter a lot:
 
 Blind testing is one of the most honest tools in game design. When you stop explaining and just watch, your design has to stand on its own.
 
-### Req 7b — Let New Players Try It Without Help
+### Requirement 7b: Blind Playtest
 
 {{< drg/requirement number="7b" >}}
 Share your prototype from requirement 6 with a group of players that has not played it or witnessed a previous playtest. Provide them with your instruction sheet(s) and any physical components. Watch them play the game, but do not provide them with instruction. Record their feedback in your game design notebook.
@@ -38,7 +38,7 @@ As you observe, resist the urge to help. If players misread a rule, skip a setup
 - **Emotional response**: Do they seem curious, frustrated, engaged, amused?
 {{< /drg/checklist >}}
 
-### Req 7c — Share the Notebook and Reflect
+### Requirement 7c: Reflect and Improve
 
 {{< drg/image src="images/blind-playtest-observation-scene.avif" alt="Blind playtest scene showing new players using a prototype and written instructions while the designer watches silently and takes notes." >}}
 

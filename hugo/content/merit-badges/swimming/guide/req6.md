@@ -27,7 +27,7 @@ Explain why swimming or survival floating will hasten the onset of hypothermia i
 
 This requirement is about survival — the skills that keep you alive when you are in the water for an extended time. Whether you fall off a boat, get caught in a current, or find yourself stranded in open water, these techniques conserve your energy and body heat until help arrives.
 
-## 6a: Back Float (Three Minutes)
+## Requirement 6a: Back Float
 
 Floating faceup on your back is the most restful position you can be in while in the water. It keeps your face above the surface so you can breathe freely, and it requires almost no energy.
 
@@ -45,7 +45,7 @@ Three minutes might sound easy on land, but floating still in the water requires
 If your legs tend to sink, try spreading them slightly apart in a V shape and pointing your toes. You can also make tiny sculling motions with your hands near your hips — small circular movements that keep you balanced without much effort.
 {{< /drg/tip >}}
 
-## 6b: Survival Floating (Five Minutes)
+## Requirement 6b: Survival Floating
 
 Survival floating (also called "drownproofing") is different from back floating. It is designed for situations where you are in the water for a long time and need to conserve every bit of energy. In survival floating, you spend most of your time facedown in the water, lifting your head to breathe only when necessary.
 
@@ -64,7 +64,7 @@ The key is spending as much time resting as possible and as little time lifting 
 Survival floating was developed in the 1940s by Fred Lanoue, a swim coach at Georgia Tech. He trained U.S. military personnel to survive in the water for hours using this technique. His program was called "drownproofing" and it changed water survival training worldwide.
 {{< /drg/did-you-know >}}
 
-## 6c: HELP and Huddle Positions
+## Requirement 6c: HELP and Huddle Positions
 
 For this part, you will wear a U.S. Coast Guard-approved life jacket and demonstrate two heat-conserving positions.
 
@@ -94,7 +94,7 @@ The huddle traps body heat between group members and reduces heat loss for every
 Always wear a properly fitted life jacket when boating, canoeing, kayaking, or doing any activity on open water. A life jacket does not work if it is stowed under a seat. Drownings on boats almost always involve people who were not wearing their life jackets.
 {{< /drg/safety-first >}}
 
-## 6d: Why Swimming and Floating Speed Up Hypothermia
+## Requirement 6d: Hypothermia in Cold Water
 
 Your counselor will ask you to explain why swimming or survival floating causes hypothermia faster than staying still in the HELP or huddle position. Here is the science:
 

@@ -22,7 +22,7 @@ This requirement covers four types of physical adaptations that help birds thriv
 
 Every bird is shaped by its environment. Over millions of years of evolution, birds have developed specialized body parts that match the places they live and the food they eat. Understanding these adaptations is one of the most fascinating parts of bird study — and once you see the patterns, you will start noticing them everywhere.
 
-## Beak Adaptations
+## Requirement 6a: Beak Adaptations
 
 A bird's beak (also called a bill) is its primary tool for gathering food. The size and shape of the beak tells you a lot about what a bird eats and how it feeds.
 
@@ -42,7 +42,7 @@ The crossbill gets its name from its literally crossed beak tips — the upper a
 
 {{< drg/image src="images/beak-adaptations.avif" alt="Illustrated comparison of six different beak types: conical (cardinal), hooked (hawk), needle-like (hummingbird), flat and wide (duck), chisel-shaped (woodpecker), and spear-like (heron)" >}}
 
-## Body Adaptations
+## Requirement 6b: Body Adaptations
 
 A bird's overall body shape reflects how it moves through its environment.
 
@@ -60,7 +60,7 @@ A bird's overall body shape reflects how it moves through its environment.
 When describing body adaptations to your counselor, compare two birds from different habitats. For example: "A Mallard has a wide, flat body that floats easily on water, while a Peregrine Falcon has a narrow, streamlined body built for speed through the air." Comparisons show that you understand the connection between body shape and habitat.
 {{< /drg/tip >}}
 
-## Leg and Foot Adaptations
+## Requirement 6c: Leg and Foot Adaptations
 
 A bird's legs and feet reveal where it spends most of its time.
 
@@ -77,7 +77,7 @@ A bird's legs and feet reveal where it spends most of its time.
 
 {{< drg/image src="images/foot-adaptations.avif" alt="Illustrated comparison of four bird foot types: perching (robin), webbed (duck), raptorial talons (hawk), and wading (heron)" >}}
 
-## Feather and Plumage Adaptations
+## Requirement 6d: Feather and Plumage Adaptations
 
 Feathers do far more than enable flight. They are critical for survival in every habitat.
 

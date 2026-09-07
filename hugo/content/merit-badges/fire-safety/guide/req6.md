@@ -23,7 +23,9 @@ Liquids like gasoline, paint thinner, and kerosene are essential for many tasks,
     title="Flammable and Combustible Liquids Safety — Federal Safety Solutions"
     url="https://www.youtube.com/watch?v=4vARSD7zkg4" >}}
 
-## Common Flammable & Combustible Liquids in Homes
+## Requirement 6a: Common Liquids and Safe Storage
+
+### Common Flammable & Combustible Liquids in Homes
 
 | Liquid | Common Use | Flash Point |
 |---|---|---|
@@ -62,7 +64,9 @@ Liquids like gasoline, paint thinner, and kerosene are essential for many tasks,
 Gasoline vapors are heavier than air and can travel along the ground. A vapor trail from an open gas can in a garage can reach an ignition source 20 feet away. Never pour gasoline from one container to another in an unventilated space.
  {{< /drg/safety-first >}}
 
-## Safe Refueling
+## Requirement 6b: Safe Refueling
+
+### Safe Refueling
 
 When refueling a lawn mower, chainsaw, generator, or outboard motor:
 
@@ -99,7 +103,9 @@ When refueling a lawn mower, chainsaw, generator, or outboard motor:
 Many small equipment fires start during or immediately after refueling. Taking 10 extra minutes to cool the engine and refuel carefully dramatically reduces risk.
  {{< /drg/tip >}}
 
-## Safe Disposal
+## Requirement 6c: Proper Disposal
+
+### Safe Disposal
 
 Never pour flammable or hazardous liquids down a drain or onto the ground. They contaminate water, soil, and groundwater.
 

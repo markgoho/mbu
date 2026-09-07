@@ -23,7 +23,7 @@ Demonstrate CPR knowledge and skills, including rescue breathing, on a mannequin
 
 CPR — cardiopulmonary resuscitation — is the skill that bridges the gap between a rescue and survival. Getting a victim out of the water is not enough if they are not breathing and their heart is not beating. CPR keeps oxygen flowing to the brain until professional medical help arrives.
 
-### 16a — Recognizing the Need for Rescue Breathing and CPR
+### Requirement 16a: Recognizing Need for Rescue Breathing and CPR
 
 Once you have removed a victim from the water and placed them on a firm, flat surface, you must quickly determine whether they need resuscitation.
 
@@ -65,7 +65,7 @@ Do not waste time checking for a pulse if you are unsure. Current guidelines fro
 
 {{< drg/image src="images/cpr-assessment-steps.avif" alt="A four-panel illustration showing CPR assessment steps: checking responsiveness, calling 911, opening the airway, and checking for breathing" >}}
 
-### 16b — CPR Skills
+### Requirement 16b: CPR and Rescue Breathing
 
 This requirement must be completed with a certified CPR/AED instructor using a mannequin. This guide will prepare you for that training, but it is not a substitute for hands-on instruction.
 

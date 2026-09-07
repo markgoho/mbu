@@ -42,7 +42,7 @@ Searching for a submerged victim in deep or murky water is extremely dangerous. 
 
 A surface dive is how you transition from swimming at the surface to swimming toward the bottom. Both types get you to the same place — the difference is how you enter the dive.
 
-### 14a — Feetfirst Surface Dive
+### Requirement 14a: Feetfirst Surface Dive
 
 The feetfirst surface dive is the safer of the two methods. You enter vertically, feetfirst, which means you can see what is below you on the way down and you will not hit your head on an unseen obstacle.
 
@@ -60,7 +60,7 @@ The feetfirst surface dive is the safer of the two methods. You enter vertically
 When practicing the feetfirst surface dive, focus on the initial press-down with your arms. The higher you push your body out of the water, the more momentum you have on the way down. Think of it like a piston — push the water down, your body goes up, then gravity takes over.
 {{< /drg/tip >}}
 
-### 14b — Headfirst Surface Dive (Pike Dive)
+### Requirement 14b: Headfirst Surface Dive
 
 The headfirst surface dive (also called a pike dive) gets you to the bottom faster because you are streamlined — head pointed down, body straight. However, it requires clear visibility to avoid hitting your head on the bottom or an obstacle.
 

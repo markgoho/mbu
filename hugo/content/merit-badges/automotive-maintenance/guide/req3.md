@@ -13,6 +13,8 @@ next_title: "Tire Specs & Pressure"
 Explain the function of the fuel gauge, speedometer, tachometer, oil pressure, and engine temperature gauge. Point each one out on the instrument cluster.
 {{< /drg/requirement >}}
 
+## Requirement 3a: Main Instrument Gauges
+
 Your dashboard is your vehicle's way of talking to you. Every gauge, light, and message tells you something important about what is happening under the hood and around the car. Learning to read your dashboard is like learning a new language — once you understand it, you can catch problems before they become emergencies.
 
 ### The Five Key Gauges
@@ -46,6 +48,8 @@ If the engine temperature gauge suddenly climbs toward the red zone:
 {{< drg/requirement number="3b" >}}
 Explain the symbols that light up on the dashboard and the difference between the yellow and red symbols. Explain each of the indicators on the dashboard, using the owner's manual if necessary.
 {{< /drg/requirement >}}
+
+## Requirement 3b: Dashboard Warning Lights
 
 ### Dashboard Warning Light Colors
 
@@ -82,6 +86,8 @@ When you turn the key to "ON" (without starting the engine), all warning lights 
 {{< drg/requirement number="3c" >}}
 Explain the messages and alerts that may be displayed on the dashboard/ driver information center including maintenance-related reminders.
 {{< /drg/requirement >}}
+
+## Requirement 3c: Messages & Maintenance Reminders
 
 ### The Driver Information Center
 

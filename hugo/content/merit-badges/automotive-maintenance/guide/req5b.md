@@ -75,6 +75,8 @@ Synthetic oil is not actually "made" from oil at all — it is engineered in a l
 Explain where to find the recommended oil type and the amount of oil to be used in the vehicle engine.
 {{< /drg/requirement >}}
 
+## Requirement 5c: Finding Recommended Oil
+
 ### Finding the Right Oil for Your Vehicle
 
 Using the wrong oil — the wrong viscosity or the wrong API category — can cause poor lubrication, increased engine wear, and even void your warranty. Always use the oil specified by the vehicle manufacturer.

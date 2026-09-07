@@ -19,7 +19,7 @@ This requirement covers three navigation skills every backpacker must master:
 - **Using a map and compass or GPS** — establishing your position on the ground
 - **Staying found** — and what to do if you get lost
 
-### 6a. Reading Topographic Maps
+### Requirement 6a: Reading Topographic Maps
 
 {{< drg/requirement number="6a" >}}
 Demonstrate that you can read topographic maps.
@@ -53,7 +53,7 @@ With practice, you can "see" the landscape by looking at contour lines:
 Practice reading topo maps at home before your trek. Print out the map for a local park or trail you know well and compare the contour lines to the terrain you have already walked. The features will click much faster when you can match map to memory.
 {{< /drg/tip >}}
 
-### 6b. Establishing Your Position
+### Requirement 6b: Establishing Your Position
 
 {{< drg/requirement number="6b" >}}
 While on a trek, use a map and compass to establish your position on the ground at three different locations, OR use a GPS receiver to establish your position on a topographic map and on the ground at three different locations.
@@ -79,7 +79,7 @@ Knowing where you are on the map at any given moment is the core skill of backco
 GPS satellites orbit about 12,550 miles above Earth and your GPS receiver communicates with at least four of them simultaneously to calculate your position. Despite that incredible technology, a GPS is only as useful as the batteries powering it — which is why you should always carry a map and compass as backup.
 {{< /drg/did-you-know >}}
 
-### 6c. Staying Found
+### Requirement 6c: Staying Found
 
 {{< drg/requirement number="6c" >}}
 Explain how to stay found, and what to do if you get lost.

@@ -18,7 +18,9 @@ This requirement covers two related tasks:
 - **Req 2a** — Draw a simple schematic diagram with resistors, capacitors, and transistors or integrated circuits, using correct symbols and labels.
 - **Req 2b** — Explain the purpose of each part in your schematic.
 
-## What Is a Schematic Diagram?
+## Requirement 2a: Drawing Your Schematic Diagram
+
+### What Is a Schematic Diagram?
 
 A schematic diagram is the blueprint of an electronic circuit. Instead of showing what a circuit physically looks like, it uses standardized symbols to show how components are connected electrically. Every engineer, technician, and hobbyist in the world reads the same symbols — a schematic drawn in Tokyo can be understood in Texas without translation.
 

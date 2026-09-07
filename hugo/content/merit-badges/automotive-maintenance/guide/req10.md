@@ -13,6 +13,8 @@ next_title: "Choose Two Projects"
 Explain the brake system (including antilock systems) and how it operates.
 {{< /drg/requirement >}}
 
+## Requirement 10a: Brake Operation & ABS
+
 The brake system is arguably the most critical safety system on any vehicle. It converts your vehicle's kinetic energy (the energy of motion) into heat energy through friction, slowing and stopping the car. Understanding how it works — and how to check its condition — is essential knowledge for every driver and Scout.
 
 ### How the Brake System Works
@@ -48,6 +50,8 @@ When ABS activates, do not lift your foot off the brake pedal. Press and hold fi
 {{< drg/requirement number="10b" >}}
 Explain the differences between disc and drum brake systems.
 {{< /drg/requirement >}}
+
+## Requirement 10b: Disc vs. Drum Brake Systems
 
 ### Disc Brakes
 
@@ -85,6 +89,8 @@ The front brakes do the majority of the stopping work because when you brake, th
 {{< drg/requirement number="10c" >}}
 Demonstrate how to check the condition of a vehicle's brake system. After checking, make recommendations for repairs (if necessary).
 {{< /drg/requirement >}}
+
+## Requirement 10c: Brake System Inspection
 
 ### How to Inspect Brakes
 

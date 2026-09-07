@@ -29,7 +29,7 @@ Surface diving is the technique of going from swimming at the surface to diving 
 
 All three parts of this requirement take place in water over your head but no deeper than 10 feet.
 
-## 7a: Feetfirst Surface Dive
+## Requirement 7a: Feetfirst Surface Dive
 
 The feetfirst surface dive is the safest way to go underwater from the surface. You descend in a vertical position with your feet pointing down, which lets you see what is below you and control your descent.
 
@@ -46,7 +46,7 @@ The feetfirst surface dive is the safest way to go underwater from the surface. 
 The key to a good feetfirst surface dive is the initial push. The higher you get your body out of the water, the more momentum you have going down. Think of it as a reverse jump — press hard with your arms, rise up, then let gravity do the work.
 {{< /drg/tip >}}
 
-## 7b: Headfirst Surface Dive (Pike or Tuck)
+## Requirement 7b: Headfirst Surface Dive
 
 The headfirst surface dive gets you underwater faster and deeper than the feetfirst method. You can use either the pike or tuck technique.
 
@@ -75,7 +75,7 @@ The pike dive is more powerful and gets you deeper, but the tuck dive is easier 
 Surface dives are used by snorkelers, skin divers, and lifeguards every day. Competitive synchronized swimmers perform surface dives as part of their routines, entering the water with barely a splash.
 {{< /drg/did-you-know >}}
 
-## 7c: Underwater Swimming Sequence
+## Requirement 7c: Underwater Swimming Sequence
 
 This part tests your ability to dive, swim underwater, surface for air, and repeat. You will do a headfirst surface dive to at least 5 feet, swim three strokes underwater, surface, breathe, and repeat the entire sequence two more times (three total dives).
 

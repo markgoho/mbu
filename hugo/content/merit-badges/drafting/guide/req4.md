@@ -23,6 +23,8 @@ This requirement introduces you to one of the most important processes in profes
 Present a copy of your drawings from Requirements 2 and 3, either in paper or digital format to your counselor. Your counselor will return a redlined version of your drawings indicating to add/remove/change a feature, material, BOM QTY, etc.
 {{< /drg/requirement >}}
 
+## Requirement 4a: Presenting Drawings for Review
+
 In the professional world, a finished drawing goes to a checker — a senior drafter or engineer who reviews it for errors, omissions, and clarity. The checker marks corrections directly on a copy of the drawing using a red pencil or pen. This marked-up copy is called a **redline**.
 
 Redlines are not punishment — they are a normal and expected part of the process. Even experienced drafters produce drawings that need corrections. The redline review catches mistakes before they become expensive construction or manufacturing errors.
@@ -64,6 +66,8 @@ In the construction industry, the cost of fixing an error found on a drawing is 
 {{< drg/requirement number="4b" >}}
 Make the correction from the redline, identify it on the drawings with a revision marker, and add a revision block.
 {{< /drg/requirement >}}
+
+## Requirement 4b: Processing Redlines and Revisions
 
 Once you receive your redlined drawings back from your counselor, it is time to make the corrections. But simply fixing the error is not enough — you must also **document** the revision so anyone looking at the drawing in the future can see what changed.
 

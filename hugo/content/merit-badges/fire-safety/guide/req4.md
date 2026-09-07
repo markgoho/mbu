@@ -22,7 +22,9 @@ Fire investigators are detectives. They examine burn patterns, interview witness
     title="Fire Investigation — Fire Safety Research Institute"
     url="https://www.youtube.com/watch?v=SmmAh87Anh8" >}}
 
-## Four Classifications of Fire Origin
+## Requirement 4a: Fire Origin Classifications
+
+### Four Classifications of Fire Origin
 
 Fires are classified by their cause:
 
@@ -78,7 +80,9 @@ Undetermined doesn't mean natural or accidental—it means the evidence is insuf
 If you ever see a fire you suspect is suspicious (someone pouring liquid on a property and igniting it, for instance), call 911 and provide details. Fire investigators and law enforcement will take it seriously.
  {{< /drg/tip >}}
 
-## Arson & Criminal Prosecution
+## Requirement 4b: Arson and Criminal Prosecution
+
+### Arson & Criminal Prosecution
 
 When a fire is determined to be incendiary (deliberately set) with intent to cause harm or property damage, the person responsible can be charged with **arson**, a serious felony.
 

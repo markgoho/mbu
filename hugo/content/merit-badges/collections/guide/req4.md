@@ -21,13 +21,15 @@ This requirement covers three financial aspects of collecting:
 
 Collecting and investing overlap, but they are not the same thing. A collector buys something because they love it. An investor buys something because they expect it to increase in value. The smartest collectors keep both perspectives in mind.
 
-## Investing vs. Speculation
+## Requirement 4a: Investment vs. Speculation
 
-### What Is Investing in Collectibles?
+### Investing vs. Speculation
+
+#### What Is Investing in Collectibles?
 
 Investing means buying items you believe will increase in value over time based on research, historical trends, and market knowledge. A collector who purchases a key-date coin in excellent condition — knowing that similar coins have appreciated steadily for decades — is making an informed investment.
 
-### What Is Speculation?
+#### What Is Speculation?
 
 Speculation means buying based on hype, hope, or guesswork rather than solid data. When a new trading card set launches and people rush to buy boxes hoping for a valuable chase card, that is speculation. Some speculators win big; many lose money.
 
@@ -35,7 +37,7 @@ Speculation means buying based on hype, hope, or guesswork rather than solid dat
 During the 1990s baseball card boom, millions of people bought cards expecting them to become valuable. Overproduction flooded the market — a card printed in millions of copies has no scarcity value, no matter how famous the player. Most 1990s cards are worth less today than their original pack price.
 {{< /drg/did-you-know >}}
 
-### How This Applies to Your Collection
+#### How This Applies to Your Collection
 
 Think about your own collection through these lenses:
 
@@ -48,7 +50,9 @@ Think about your own collection through these lenses:
 Never spend money on collectibles that you cannot afford to lose. The collectibles market can be unpredictable — items that seem valuable today can lose value due to market shifts, overproduction, or changing tastes. Collect what you love first; consider financial value second.
 {{< /drg/safety-first >}}
 
-## Buying Other Collections
+## Requirement 4b: Buying Other Collections
+
+### Buying Other Collections
 
 Sometimes a collector has the opportunity to buy an entire collection — from an estate sale, an auction, or another collector who is downsizing. This can be a great way to acquire many items at once, but it requires careful evaluation.
 
@@ -65,11 +69,13 @@ Sometimes a collector has the opportunity to buy an entire collection — from a
 When evaluating a large collection, focus on the key items first. A collection of 500 coins might have 480 common-date pieces worth face value and 20 pieces that account for 90% of the total value. Know which items are the heavy hitters before negotiating a price.
 {{< /drg/tip >}}
 
-## Selling Your Collection
+## Requirement 4c: Selling Your Collection
+
+### Selling Your Collection
 
 At some point, you may want to sell — to upgrade, to fund a new interest, or simply because your collecting goals have changed. Understanding the selling process helps you set realistic expectations.
 
-### Where Collectors Sell
+#### Where Collectors Sell
 
 - **Dealer shops:** Convenient but dealers typically pay 50–70% of retail value (they need room for profit)
 - **Shows:** You can rent a table or sell to dealers at a show
@@ -77,7 +83,7 @@ At some point, you may want to sell — to upgrade, to fund a new interest, or s
 - **Auctions:** Auction houses handle high-value items; they charge a seller's commission (typically 10–20%)
 - **Other collectors:** Direct sales to people you know often get the best prices
 
-### Realistic Expectations
+#### Realistic Expectations
 
 The gap between what you paid and what you can sell for depends on many factors. Common items in average condition often sell for less than you paid. Rare items in excellent condition can sell for more — sometimes much more. The market sets the price, not your personal attachment.
 

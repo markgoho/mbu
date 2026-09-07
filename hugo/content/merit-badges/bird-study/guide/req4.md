@@ -87,22 +87,22 @@ Range maps change over time. Climate change, habitat loss, and other factors cau
 
 For this requirement, you need to find one species from each of the following types and show your counselor its range map. Here are some suggestions to get you started — but feel free to choose any species from the correct group:
 
-### (a) Seabird
+### Requirement 4a: Seabirds of the Open Ocean
 Seabirds spend most of their lives over open ocean. Examples: Atlantic Puffin, Brown Pelican, Northern Gannet, Black-legged Kittiwake.
 
-### (b) Plover
+### Requirement 4b: Small Shorebirds
 Plovers are small to medium shorebirds with round heads and short bills. Examples: Killdeer (common across North America), Semipalmated Plover, Black-bellied Plover, Piping Plover.
 
-### (c) Falcon or Hawk
+### Requirement 4c: Raptors: Hawks and Falcons
 Raptors — birds of prey. Examples: Red-tailed Hawk (the most common hawk in North America), American Kestrel (smallest North American falcon), Peregrine Falcon, Cooper's Hawk.
 
-### (d) Warbler or Vireo
+### Requirement 4d: Small Colorful Songbirds
 Small, often colorful songbirds. Examples: Yellow Warbler, Black-and-white Warbler, Red-eyed Vireo, Yellow-rumped Warbler.
 
-### (e) Heron or Egret
+### Requirement 4e: Tall Wading Birds
 Tall, long-legged wading birds. Examples: Great Blue Heron, Great Egret, Green Heron, Snowy Egret.
 
-### (f) Sparrow
+### Requirement 4f: Seed-Eating Songbirds
 Small, seed-eating songbirds, often with streaky brown plumage. Examples: Song Sparrow, White-throated Sparrow, Chipping Sparrow, House Sparrow (note: House Sparrow is non-native).
 
 {{< drg/checklist title="Range Map Practice" subtitle="What to point out for each species" >}}

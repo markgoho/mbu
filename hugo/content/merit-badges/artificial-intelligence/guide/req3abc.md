@@ -34,7 +34,7 @@ All AI involves automation, but not all automation involves AI. A dishwasher is 
 
 ---
 
-## Automation in Your Everyday Life
+## Requirement 3a: Everyday Automation Examples
 
 Automation is everywhere — and it has been around much longer than AI. Here are categories to get you thinking:
 
@@ -80,7 +80,7 @@ A good trick for coming up with examples: walk through your typical day from mor
 
 ---
 
-## Automation in the Workplace
+## Requirement 3b: Workplace Automation Applications
 
 Automation transformed the workplace long before AI arrived. Here are key areas:
 
@@ -108,7 +108,7 @@ When someone submits a form online (like a job application or insurance claim), 
 
 ---
 
-## Automation in Education
+## Requirement 3c: Automation for Learning
 
 Automation helps teachers and students save time on repetitive tasks:
 

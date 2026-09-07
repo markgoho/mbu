@@ -18,7 +18,7 @@ This requirement covers two aspects of retail crime:
 - **The impact of shoplifting and employee theft** on retail businesses
 - **Techniques stores use** to prevent shoplifting
 
-## The Impact of Shrinkage
+## Requirement 5a: Retail Shrinkage
 
 "Shrinkage" is the retail industry's term for inventory loss — the gap between the merchandise a store should have and what it actually has. It's a massive problem that affects every shopper, every employee, and every community where stores operate.
 
@@ -68,7 +68,7 @@ Employee theft — also called internal theft — is nearly as costly as shoplif
 
 Employee theft can be harder to detect because employees know the store's systems, camera blind spots, and staffing schedules.
 
-## Techniques Stores Use to Prevent Shoplifting
+## Requirement 5b: Loss Prevention Techniques
 
 Retailers use a layered approach — no single technique is enough, but together they create a strong deterrent.
 

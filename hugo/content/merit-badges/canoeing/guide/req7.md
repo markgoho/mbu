@@ -22,9 +22,11 @@ This requirement covers four essential on-the-water skills:
 
 These are the fundamentals — the skills you use every single time you go canoeing. Get them right, and everything else in this badge builds on a solid foundation.
 
-## Carrying the Canoe
+## Requirement 7a: Carrying and Launching the Canoe
 
-### Two-Person Carry
+### Carrying the Canoe
+
+#### Two-Person Carry
 
 The most common carry for getting a canoe from the rack to the water:
 
@@ -60,7 +62,9 @@ Never jump into a canoe. Always step into the centerline of the hull with a low 
 
 {{< drg/image src="images/canoe-shore-launch.avif" alt="Two Scouts launching a canoe from a sandy lakeshore — one holding the stern steady while the other carefully steps into the bow, both wearing life jackets" >}}
 
-## Landing on Shore
+## Requirement 7b: Landing and Storing the Canoe
+
+### Landing on Shore
 
 1. **Approach the shore at a gentle angle** — not straight on (which can damage the bow) and not broadside (which makes it hard to exit).
 2. **The bow paddler stops paddling** and prepares to step out as the canoe touches bottom or the bow reaches shore.
@@ -76,7 +80,7 @@ Never jump into a canoe. Always step into the centerline of the hull with a low 
 4. **The bow paddler exits** once the stern paddler is holding the canoe from the dock.
 5. **Secure the canoe** with painters if you are leaving it at the dock.
 
-## Kneeling vs. Sitting Positions
+## Requirement 7c: Paddling Positions
 
 Your position in the canoe affects stability, power, and control.
 
@@ -104,7 +108,7 @@ You kneel on the hull bottom with your knees spread for stability, resting your 
 Knee pads or a folded towel on the hull bottom make kneeling much more comfortable. Some paddlers glue closed-cell foam pads into the bottom of their canoe at the kneeling positions. Your knees will thank you.
 {{< /drg/tip >}}
 
-## Changing Places While Afloat
+## Requirement 7d: Changing Places Afloat
 
 Switching positions with your partner while the canoe is on the water is a skill you will need to demonstrate. It feels awkward at first, but it is manageable if you follow the right steps:
 

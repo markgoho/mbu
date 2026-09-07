@@ -27,7 +27,7 @@ Turn a subject from a facedown to a faceup position in water of standing depth w
 
 A spinal injury in the water is one of the most dangerous situations you can encounter — not because of the water, but because of what happens next. Moving a person with a spinal injury incorrectly can cause permanent paralysis or death. Your job as a rescuer is to **stabilize** the victim's head and spine, keep them breathing, and wait for professional medical help.
 
-### 15a — Causes, Signs, and Symptoms
+### Requirement 15a: Spinal Injury Causes and Symptoms
 
 **Common Causes of Spinal Injury in Aquatic Settings:**
 
@@ -58,7 +58,7 @@ The number one rule of aquatic spinal injury prevention: **never dive into water
 When in doubt, **assume a spinal injury.** If there is any chance the victim hit their head — even if they say they feel fine — treat it as a spinal injury until medical professionals can assess them. The consequences of being wrong are too severe.
 {{< /drg/tip >}}
 
-### 15b — Supporting a Faceup Subject
+### Requirement 15b: Supporting Faceup Victim
 
 This technique is called **in-line stabilization.** You keep the victim's head, neck, and spine in a straight line while supporting them at the surface in standing-depth water.
 
@@ -73,7 +73,7 @@ This technique is called **in-line stabilization.** You keep the victim's head, 
 
 {{< drg/image src="images/spinal-stabilization-faceup.avif" alt="A rescuer standing behind a faceup victim in waist-deep water, hands cradling the victim's head with forearms bracing the shoulders, victim floating at the surface in a straight line" >}}
 
-### 15c — Turning a Facedown Subject Faceup
+### Requirement 15c: Turning Facedown Victim Faceup
 
 A facedown victim with a potential spinal injury cannot breathe. You must turn them faceup — but you must do it without bending or twisting their spine. This technique is called a **log roll** or **vice grip turn.**
 

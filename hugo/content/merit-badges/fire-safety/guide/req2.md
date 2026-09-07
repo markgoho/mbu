@@ -19,7 +19,9 @@ c. Demonstrate how to use a fire extinguisher and a fire blanket.
 
 Not all fires are the same, and not all extinguishers work on all fires. Using the wrong extinguisher can make a fire worse—sometimes dangerously worse. This requirement teaches you to match the right tool to the right fire.
 
-## Classes of Fires
+## Requirement 2a: Fire Classes
+
+### Classes of Fires
 
 {{< drg/video
     title="How to Distinguish Between the Different Classes of Fire — KnowledgeCity"
@@ -59,7 +61,9 @@ If you're unsure what's burning, do not attempt to extinguish it. Get out, close
 | **D** | Metals (magnesium, titanium) | Laboratories, industrial sites | Special dry powder (D class) |
 | **K** | Cooking oil and grease | Commercial kitchens | Wet chemical (K class) |
 
-## Fire Extinguisher Types & Labels
+## Requirement 2b: Fire Extinguisher Types
+
+### Fire Extinguisher Types & Labels
 
 Every fire extinguisher is labeled with the classes it can handle. A **multipurpose ABC extinguisher** works on ordinary combustibles, flammable liquids, and electrical equipment. A **CO₂ extinguisher** is best for Class B and C fires. A **wet chemical extinguisher** is designed for Class K fires in commercial kitchens.
 
@@ -94,7 +98,9 @@ The label shows which classes the extinguisher handles, and the rating number (l
 Most homes should have at least one ABC multipurpose extinguisher in the kitchen (where fires are most common) and another in a garage or workshop. Check the pressure gauge annually and note the expiration date.
  {{< /drg/tip >}}
 
-## How to Use a Fire Extinguisher: PASS
+## Requirement 2c: Using Extinguishers and Blankets
+
+### How to Use a Fire Extinguisher: PASS
 
 {{< drg/video
     title="How to Use a Fire Extinguisher Using the PASS Method — CQ Fire & Safety"

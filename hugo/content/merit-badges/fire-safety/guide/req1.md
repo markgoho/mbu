@@ -28,13 +28,17 @@ This requirement covers the fundamental chemistry and physics that explain how f
     title="Fire Safety Training: The Science Behind Fire Ignition, Combustion — Atlantic Training"
     url="https://www.youtube.com/watch?v=5R1heDzg0PA" >}}
 
-## What Is Fire?
+## Requirement 1a: Fire Concept
+
+### What Is Fire?
 
 Fire is a chemical reaction called **combustion**. It's not a thing you can hold in your hand—it's a process. Three ingredients must be present at the same time for combustion to occur: **fuel** (something to burn), **oxygen** (the air around us), and **heat** (energy to get the reaction started). Remove any one of these three, and the fire stops.
 
 The ancient understanding of fire as a mysterious force was replaced in the 1600s when scientists realized combustion was a chemical reaction, not something magical. By the 1900s, firefighters added a fourth element to the model—a **chemical chain reaction**—which explains why even when you have fuel, oxygen, and heat, fire sometimes won't sustain itself. This four-part model is called the **fire tetrahedron**.
 
-## The Fire Tetrahedron
+## Requirement 1b: Fire Tetrahedron and Combustion Products
+
+### The Fire Tetrahedron
 
 Imagine a pyramid with four sides. Each side represents one part of what's needed for fire to exist:
 
@@ -68,7 +72,9 @@ When fuel burns, it doesn't vanish—it transforms. The products of combustion a
 Carbon monoxide is an odorless, colorless gas. You cannot smell or see it coming. This is why CO alarms (not just smoke alarms) are critical in every home. If you're ever exposed to multiple sources of flame or incomplete combustion (car running in a garage, faulty heater, fire), get outside immediately.
  {{< /drg/safety-first >}}
 
-## The Life Cycle of a Fire
+## Requirement 1c: Fire Life Cycle
+
+### The Life Cycle of a Fire
 
 Every fire has a predictable lifecycle with distinct phases. Understanding this helps you recognize where a fire is in its development and how to respond.
 
@@ -96,7 +102,9 @@ The fire burns down as fuel is exhausted. Heat drops. The fire stops growing and
 Firefighters use the life cycle to predict how a fire will behave and where it might spread next. When you call 911 about a fire, describing what's burning and where the smoke is going helps dispatchers decide which equipment to send.
  {{< /drg/tip >}}
 
-## Heat Transfer: How Fire Spreads
+## Requirement 1d: Heat Transfer Methods
+
+### Heat Transfer: How Fire Spreads
 
 Fire doesn't just burn in one spot and stay there. Heat moves, and wherever heat goes, new fires can start. Heat transfers in three ways:
 

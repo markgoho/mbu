@@ -39,7 +39,7 @@ Nutritional value includes the vitamins, minerals, fiber, water, and energy a fo
 
 You do not need to memorize a giant chemistry chart. What you do need is a clear way to explain why certain crops are useful foods and what each one contributes.
 
-## Root and Tuber Crops
+## Requirement 3a: Root and Tuber Crops
 
 Root and tuber crops grow underground and store energy for the plant. Because of that, many are rich in carbohydrates, but they can also provide fiber, vitamins, and important minerals.
 
@@ -71,7 +71,7 @@ Taro is a starchy tuber grown widely in tropical and subtropical regions. It pro
 If your counselor asks for additional examples beyond these three, carrots, beets, turnips, radishes, cassava, and yams are all worth learning about too. Just be ready to explain what each contributes nutritionally.
 {{< /drg/tip >}}
 
-## Vegetables That Bear Above the Ground
+## Requirement 3b: Vegetables That Bear Above Ground
 
 These crops develop their edible parts above the soil line. Nutritionally, they often contribute water, fiber, vitamins, and protective plant compounds called **phytonutrients**.
 
@@ -99,7 +99,7 @@ Cucumbers are mostly water, which makes them hydrating and crisp. They also prov
     title="Cucumbers"
     url="https://youtu.be/MVXr7HEMQMU?si=2fpKBoE4NAxMTNdx" >}}
 
-## Fruits
+## Requirement 3c: Fruits
 
 Fruits are often sweet because they contain natural sugars, but that does not make them unhealthy. Whole fruits also provide fiber, water, vitamins, and protective plant compounds.
 

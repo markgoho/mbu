@@ -19,7 +19,7 @@ This is the capstone of the Backpacking merit badge — a five-day, 30-mile trek
 - **Executing the trek** with at least three campsites and a service project
 - **Keeping a daily journal** documenting your experience
 
-### 11a. The Trek Plan
+### Requirement 11a: The Trek Plan
 
 {{< drg/requirement number="11a" >}}
 Write a plan for a backpacking trek of at least five days using at least three different campsites and covering at least 30 miles. Your plan must include a description of and route to the trek area, a schedule (including a daily schedule), a list of food and equipment needs, a safety and emergency plan, and a budget.
@@ -81,7 +81,7 @@ Your safety plan should be more detailed than for a weekend trip because you wil
 
 {{< drg/image src="images/trek-planning-spread.avif" alt="A planning workspace showing a topographic map, a handwritten schedule, a food list, and gear laid out on a table" >}}
 
-### 11b. Execute the Trek
+### Requirement 11b: Execute the Trek
 
 {{< drg/requirement number="11b" >}}
 Following the Leave No Trace Seven Principles and the Outdoor Code, take the trek as planned in requirement 11(a) that is at least five full days, covering at least 30 miles and utilizing at least three different campsites. While on trek, complete at least one service project approved by your counselor.
@@ -110,7 +110,7 @@ Five days is long enough to experience a true rhythm of backcountry life. By day
 Scouting's highest-profile backpacking experience is a trek at Philmont Scout Ranch in Cimarron, New Mexico. Crews hike 50–100+ miles over 7–12 days through rugged mountain terrain, visiting staffed camps along the way. Earning your Backpacking merit badge is excellent preparation for a Philmont adventure.
 {{< /drg/did-you-know >}}
 
-### 11c. The Daily Journal
+### Requirement 11c: The Daily Journal
 
 {{< drg/requirement number="11c" >}}
 Keep a daily journal during the trek that includes a day-by-day description of your activities, including notes about what worked well and thoughts about improvements that could be made for the next trek.

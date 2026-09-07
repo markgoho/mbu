@@ -13,6 +13,8 @@ next_title: "Air, Fuel & Injection"
 Explain the need for coolant in the cooling system, and the importance of selecting the correct coolant type for a given vehicle.
 {{< /drg/requirement >}}
 
+## Requirement 6a: Coolant Types & Selection
+
 An internal combustion engine generates tremendous heat — combustion temperatures inside the cylinders can exceed 4,000°F. Without a cooling system to carry that heat away, the engine would warp, crack, and fail within minutes. The cooling system is what keeps the engine operating in its ideal temperature range of about 195°F to 220°F.
 
 ### Why Plain Water Is Not Enough
@@ -57,6 +59,8 @@ Coolant has a sweet taste and smell that attracts pets and wildlife, but it is h
 {{< drg/requirement number="6b" >}}
 Explain how to flush and change the engine coolant in the vehicle, and how to properly dispose of the used coolant.
 {{< /drg/requirement >}}
+
+## Requirement 6b: Coolant Service Procedures
 
 ### Why Coolant Needs to Be Changed
 

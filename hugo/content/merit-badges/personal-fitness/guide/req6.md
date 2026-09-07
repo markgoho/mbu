@@ -19,7 +19,7 @@ This is the blueprint for your transformation. Your 12-week program is a structu
 
 Your program must include all six of the following components. Let's break each one down.
 
-#### 6a — Warm-Up
+#### Requirement 6a: Warm-Up Routine
 
 {{< drg/requirement number="6a" >}}
 Warm-up: low-intensity movement or gentle muscle stretching before each more rigorous workout
@@ -37,7 +37,7 @@ A warm-up should last **5–10 minutes** and can include:
 Never skip the warm-up. Starting intense exercise with cold muscles is one of the most common causes of strains and pulls. Even on days when you are short on time, five minutes of warm-up is non-negotiable.
 {{< /drg/safety-first >}}
 
-#### 6b — Cardiorespiratory (Aerobic) Element
+#### Requirement 6b: Aerobic Workouts
 
 {{< drg/requirement number="6b" >}}
 Cardiorespiratory (aerobic) element: an activity that raises your heart and respiratory rate for 15 to 30 minutes at least three times per week
@@ -60,7 +60,7 @@ Your aerobic sessions should last **15–30 minutes** and happen at least **thre
 You can tell if you are working at the right aerobic intensity with the "talk test." If you can carry on a conversation but not sing a song, you are in the moderate-intensity zone. If you can only say a few words before needing to catch your breath, you are in the vigorous zone.
 {{< /drg/did-you-know >}}
 
-#### 6c — Muscular Strength and Endurance Element
+#### Requirement 6c: Strength Training
 
 {{< drg/requirement number="6c" >}}
 Muscular strength and endurance element: repetitive exercises that target different muscles - upper body, core, and/or legs - based on your improvement goals and potential
@@ -91,7 +91,7 @@ Strength training does not require a gym membership or expensive equipment. Many
 Design your strength routine around your target area from Requirement 5b. If your goal is to improve upper body strength, prioritize push-ups and pull-ups. If your goal is overall endurance, do circuit-style training with less rest between exercises. Your counselor can help you tailor the plan.
 {{< /drg/tip >}}
 
-#### 6d — Flexibility Element
+#### Requirement 6d: Flexibility Training
 
 {{< drg/requirement number="6d" >}}
 Flexibility element: movements that arch/lower/stretch/relax your back, rotate your trunk, or stretch your hamstrings
@@ -107,7 +107,7 @@ Key stretches to include:
 - **Shoulder stretch:** Reach one arm across your chest and hold it with the other hand.
 - **Hip flexor stretch:** Kneel on one knee in a lunge position and gently push your hips forward.
 
-#### 6e — Cool-Down
+#### Requirement 6e: Cool-Down Routine
 
 {{< drg/requirement number="6e" >}}
 Cool-down: low-intensity movement or gentle stretching to prevent muscle cramps and enhance the benefits of exercise
@@ -123,7 +123,7 @@ Your cool-down brings your heart rate back to normal gradually and helps prevent
 Stopping intense exercise abruptly can cause blood to pool in your legs, leading to dizziness or fainting. Always cool down gradually. Walk it off, stretch it out, and let your body transition back to rest.
 {{< /drg/safety-first >}}
 
-#### 6f — Nutrition Plan
+#### Requirement 6f: Nutrition Plan
 
 {{< drg/requirement number="6f" >}}
 A plan for achieving your two improvement goals related to diet and nutrition.

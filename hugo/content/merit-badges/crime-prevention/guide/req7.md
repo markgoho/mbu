@@ -20,7 +20,7 @@ This requirement covers four topics about the role peers play in crime:
 - **Bullying and hazing** behaviors and warning signs
 - **The impact of gangs** on communities
 
-## The Role Peers Play
+## Requirement 7a: Role of Peers
 
 Your peers — the people around your age who you interact with at school, in activities, and online — have an enormous influence on your behavior. That influence can push in two very different directions.
 
@@ -52,7 +52,7 @@ Peers also affect how young people experience and respond to crime as victims or
 - A peer who notices warning signs in a friend's home life might be the first person to report abuse
 - Unfortunately, peers can also discourage reporting — "don't be a snitch" culture can keep victims silent
 
-## How to Resist Peer Influence
+## Requirement 7b: Resisting Peer Influence
 
 Knowing that peer pressure exists isn't enough. You need specific strategies to resist it in the moment, when emotions are high and thinking clearly is hard.
 
@@ -76,7 +76,7 @@ Sometimes you need a concrete way to leave a bad situation:
 Practice saying no before you need to. It sounds simple, but rehearsing refusal makes it dramatically easier when real pressure hits. Role-play scenarios with a parent, counselor, or trusted friend so the words come naturally when it matters.
 {{< /drg/tip >}}
 
-## Bullying and Hazing
+## Requirement 7c: Bullying and Hazing
 
 ### What Is Bullying?
 
@@ -119,7 +119,7 @@ You have more power as a bystander than you might think. Research shows that whe
 - **Check in later** — Ask the person who was bullied if they're okay and help them report if they haven't
 {{< /drg/be-prepared >}}
 
-## The Impact of Gangs on Communities
+## Requirement 7d: Gang Impact
 
 Gangs are groups that use intimidation, violence, and criminal activity to maintain power over a territory. Their impact on communities extends far beyond the crimes they commit.
 

@@ -29,6 +29,8 @@ So far in this badge, you have studied big ideas — ethical leadership, decisio
 
 A welcoming environment does not happen by accident. It takes intentional effort from everyone, especially those in leadership positions. And as a Scout working on this badge, you *are* a leader — whether or not you have a patch on your sleeve.
 
+## Requirement 5a: Creating a Welcoming Unit
+
 ### Part A: Creating a Welcoming Unit
 
 Think about what it feels like to walk into a room where you already know everyone and feel comfortable. Now imagine walking into that same room for the very first time, knowing nobody. That is what it feels like for a new Scout joining your unit.
@@ -56,6 +58,8 @@ Here are some areas to think about:
 
 {{< drg/image src="images/scout-welcoming-new-member.avif" alt="An experienced Scout shaking hands with a new Scout at a troop meeting, other Scouts smiling in the background" >}}
 
+## Requirement 5b: Making Someone Feel Welcome
+
 ### Part B: A Time You Included Someone
 
 Think about a specific moment when you went out of your way to include another Scout. This does not have to be a grand gesture — small actions count. Maybe you:
@@ -74,6 +78,8 @@ When you share this experience with your counselor, describe:
 {{< drg/tip >}}
 If you are struggling to think of an example, that is actually useful information. It might mean you need to be more intentional about noticing when others are being left out. Start paying attention at your next few meetings — opportunities to include others are everywhere.
 {{< /drg/tip >}}
+
+## Requirement 5c: Ensuring Every Voice Is Heard
 
 ### Part C: Ensuring Every Voice Is Heard
 

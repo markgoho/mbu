@@ -15,11 +15,13 @@ Take four 10-mile hikes and one 20-mile hike, each on a different day, and each 
 
 This is it—the heart of the Hiking merit badge! After all your conditioning in Requirement 3, you are finally ready to "hit the trail" for the big miles. These five hikes are where your preparation meets the pavement (or the dirt, more likely).
 
-A 10-mile hike is a significant undertaking, taking most hikers between four and six hours to complete. A 20-mile hike is a true "capstone" experience that will test your endurance and your gear. But don't worry—if you’ve followed your conditioning plan and you prepare a solid hike plan, you’ll find that these miles are some of the most rewarding moments in Scouting.
+A 10-mile hike is a significant undertaking, taking most hikers between four and six hours to complete. A 20-mile hike is a true "capstone" experience that will test your endurance and your gear. But don’t worry—if you’ve followed your conditioning plan and you prepare a solid hike plan, you’ll find that these miles are some of the most rewarding moments in Scouting.
 
 {{< drg/image src="images/topo-map-route.avif" alt="A topographic map spread on a table with a highlighted 10-mile route, compass, and pencil beside it" >}}
 
-## Planning Your 10-Mile Hikes
+## Requirement 4a: Plan Your First 10-Mile Hike
+
+### Planning Your 10-Mile Hikes
 
 You can’t just lace up your boots and walk out the door for a 10-mile trek. For this requirement, every single hike must have a **written hike plan** that is approved by your counselor or an adult leader before you start.
 
@@ -59,7 +61,9 @@ When presenting your plan to your counselor, use a digital tool like AllTrails o
 
 {{< drg/download title="Pre-Hike Planning Worksheet" url="/merit-badges/hiking/guide/hike-plan-worksheet/" type="printable" description="Print this worksheet to plan each of your five hikes. Covers the Five W's, route details, gear checklist, and trail lunch." >}}
 
-## Trail Lunch Planning
+## Requirement 4b: Fuel Your Second 10-Mile Hike
+
+### Trail Lunch Planning
 
 When you are hiking 10 or 20 miles, your body is like a car driving at high speeds—it needs high-quality fuel. A soggy peanut butter sandwich might get you through a two-mile walk, but for a 20-miler, you need a mix of carbohydrates for quick energy and protein/fats for long-lasting endurance.
 
@@ -88,7 +92,9 @@ Good trail food should be:
 "GORP" stands for "Good Old Raisins and Peanuts." It has been a staple for hikers for decades because it hits the perfect balance of fats, proteins, and sugars needed for long-distance walking.
 {{< /drg/did-you-know >}}
 
-## Choosing Your Routes
+## Requirement 4c: Explore Diverse Third Hike Routes
+
+### Choosing Your Routes
 
 Variety is the spice of life—and the secret to enjoying this merit badge! While you _could_ walk the same 10-mile loop four times, it’s much better to explore different areas.
 
@@ -100,7 +106,9 @@ Try to find:
 
 Remember: **Each hike must be on a different day.** You cannot do 5 miles in the morning, 5 in the afternoon, and count it as a 10-mile hike. It must be a single, continuous effort.
 
-## Rest Stops and Pacing
+## Requirement 4d: Pace Your Fourth 10-Mile Hike
+
+### Rest Stops and Pacing
 
 The requirement says the miles must be "continuous." This means you can't hike 5 miles, go home for a nap, and come back for the other 5. However, it **does not** mean you can't stop!
 
@@ -111,7 +119,9 @@ You are encouraged to take:
 
 The key is to avoid "extended periods" like staying overnight. Think of it as a "day hike" on steroids. Keep your muscles warm by not sitting still for too long. If you sit for an hour, your legs will stiffen up, making the next mile feel twice as hard.
 
-## The 20-Mile Hike: Your Capstone
+## Requirement 4e: Conquer Your 20-Mile Capstone
+
+### The 20-Mile Hike: Your Capstone
 
 The 20-mile hike is the "final boss" of the Hiking merit badge. It is a long day—usually 8 to 10 hours of walking. While it might sound scary, remember that you’ve already completed four 10-mile hikes and a conditioning program by the time you reach this step. You are ready!
 

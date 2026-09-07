@@ -23,9 +23,11 @@ The statistics are stark: Every 87 seconds, a home fire is reported in the Unite
     title="Hidden Home Fire Hazards — Mark D. Olejniczak Realty, Inc."
     url="https://www.youtube.com/watch?v=tQxAf2o1FEI" >}}
 
-## Year-Round Hazards
+## Requirement 5a: Year-Round Fire Prevention
 
-### Unattended Cooking
+### Year-Round Hazards
+
+#### Unattended Cooking
 
 Unattended cooking is the leading cause of home fires and cooking injuries. The risk is especially high when using oil or grease—a pot left on the stove can reach ignition temperature in minutes.
 
@@ -39,7 +41,7 @@ Unattended cooking is the leading cause of home fires and cooking injuries. The 
 - **Have a fire extinguisher** in the kitchen and know how to use it.
 - **If a fire gets too big, get out.** Leave and close the door, then call 911 from outside.
 
-### Electrical Hazards
+#### Electrical Hazards
 
 Faulty wiring, overloaded outlets, damaged appliances, and misused extension cords cause thousands of home fires annually.
 
@@ -52,7 +54,7 @@ Faulty wiring, overloaded outlets, damaged appliances, and misused extension cor
 - **Ensure older homes have GFCI outlets** near water sources (kitchens, bathrooms). These shut off instantly if current leaks, preventing electrocution.
 - **Have an electrician inspect** if outlets feel warm to the touch or if lights flicker.
 
-### Smoking
+#### Smoking
 
 Smoking is a major cause of home fires, mostly because people fall asleep while smoking or discard cigarettes improperly.
 
@@ -63,7 +65,7 @@ Smoking is a major cause of home fires, mostly because people fall asleep while 
 - **Never smoke when drowsy** or after drinking alcohol.
 - **Encourage smokers in your household** to use fire-safe cigarettes (which self-extinguish if unattended).
 
-### Clothes Dryers
+#### Clothes Dryers
 
 Lint accumulation in dryers is a leading cause of fires. Lint is highly flammable, and it traps heat inside the dryer.
 
@@ -75,7 +77,7 @@ Lint accumulation in dryers is a leading cause of fires. Lint is highly flammabl
 - **Never run a dryer overnight or when you're sleeping.** A dryer fire can develop rapidly.
 - **Have a professional clean the vent** if you suspect buildup.
 
-### Rechargeable Batteries
+#### Rechargeable Batteries
 
 Lithium-ion batteries (in phones, laptops, power tools, e-scooters, hover boards) can catch fire if they overheat, are damaged, or are defective. Fires from batteries can spread quickly and are harder to extinguish than wood fires.
 
@@ -98,9 +100,11 @@ Lithium-ion batteries (in phones, laptops, power tools, e-scooters, hover boards
 - [ ] Bathroom: Are hairdryers and curling irons unplugged?
  {{< /drg/checklist >}}
 
-## Seasonal & Holiday Hazards
+## Requirement 5b: Seasonal and Holiday Fire Prevention
 
-### Winter Heating
+### Seasonal & Holiday Hazards
+
+#### Winter Heating
 
 When temperatures drop, people rely on furnaces, space heaters, fireplaces, and woodstoves. Improper use or maintenance causes fires and carbon monoxide poisoning.
 
@@ -112,7 +116,7 @@ When temperatures drop, people rely on furnaces, space heaters, fireplaces, and 
 - **Install and test CO alarms** before heating season.
 - **If you use a woodstove**, have it professionally installed and inspected.
 
-### Holiday Decorations & Christmas Trees
+#### Holiday Decorations & Christmas Trees
 
 Real Christmas trees are a fire risk if not properly maintained. Decorative lights, wreaths, and garland can also pose hazards.
 
@@ -127,7 +131,7 @@ Real Christmas trees are a fire risk if not properly maintained. Decorative ligh
 - **Do not leave lights on unattended** or overnight.
 - **Remove the tree** by early January. Dead trees are extremely flammable.
 
-### Candles
+#### Candles
 
 Holiday candles create ambiance but are a major fire source. Candles left unattended or placed near flammable materials cause house fires.
 
@@ -139,7 +143,7 @@ Holiday candles create ambiance but are a major fire source. Candles left unatte
 - **Do not place candles in drafty locations** where wind can blow the flame sideways onto nearby items.
 - **Consider flameless (battery-operated) candles** for the same ambiance without the fire risk.
 
-### Fireworks
+#### Fireworks
 
 Consumer fireworks cause thousands of injuries and home fires annually. Even small fireworks can cause serious burns, eye injuries, and fires.
 

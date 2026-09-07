@@ -23,7 +23,7 @@ Explain the purpose of a passport and visa for international travel.
 
 Diplomacy is how countries talk to each other without fighting. It is a complex system of people, offices, and agreements that keeps the world running. This requirement takes you behind the scenes of how nations connect.
 
-## How Governments Are Represented Abroad
+## Requirement 6a: Government Representation Abroad
 
 Every country maintains a network of official representatives in other countries and at international organizations. This network is part of a country's **foreign service**.
 
@@ -43,7 +43,7 @@ The United States is accredited to (officially represented at) international org
 The United States maintains over 270 embassies, consulates, and diplomatic missions around the world. The largest U.S. Embassy is in Baghdad, Iraq — it covers 104 acres, roughly the size of 80 football fields.
 {{< /drg/did-you-know >}}
 
-## Key Roles in Foreign Relations
+## Requirement 6b: Key Roles in Foreign Relations
 
 ### Ambassador
 
@@ -71,7 +71,7 @@ To remember the difference: ambassadors and consuls represent the country's gove
 
 {{< drg/image src="images/embassy-diplomacy.avif" alt="An illustrated embassy building with the U.S. flag flying outside, showing diplomats greeting visitors at the entrance" >}}
 
-## Passports and Visas
+## Requirement 6c: Passports and Visas
 
 ### What Is a Passport?
 

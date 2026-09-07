@@ -21,7 +21,7 @@ This requirement brings everything together — planning a real backpacking hike
 - **Fitting and adjusting your pack**
 - **Completing a 2-mile hike** with a full load
 
-### 9a. Writing a Hike Plan
+### Requirement 9a: Writing a Hike Plan
 
 {{< drg/requirement number="9a" >}}
 Write a plan that includes a schedule for a patrol/crew backpacking hike of at least 2 miles.
@@ -60,7 +60,7 @@ A common hiking pace with a loaded pack is about 2 miles per hour on flat terrai
 
 {{< drg/image src="images/hike-plan-writing.avif" alt="A Scout sitting at a picnic table writing a hike plan on paper, with a topographic map spread out beside them" >}}
 
-### 9b. Pre-Hike Inspection
+### Requirement 9b: Pre-Hike Inspection
 
 {{< drg/requirement number="9b" >}}
 Conduct a prehike inspection of the patrol and its equipment.
@@ -87,7 +87,7 @@ Before anyone shoulders a pack, the crew leader should conduct a thorough inspec
 At Philmont Scout Ranch, crews go through a formal "shakedown" where rangers inspect every piece of gear. Items that are too heavy, unnecessary, or unsafe are flagged. This process has prevented countless problems on the trail for nearly 90 years.
 {{< /drg/did-you-know >}}
 
-### 9c. Packing Your Gear
+### Requirement 9c: Packing Your Gear
 
 {{< drg/requirement number="9c" >}}
 Show that you know how to properly pack your personal gear and your share of the crew's gear and food.
@@ -110,7 +110,7 @@ Never strap sharp or loose items to the outside of your pack where they can snag
 
 Shared crew gear (stove, fuel, cook pot, water filter, trowel, food) should be divided fairly among crew members based on body size and fitness. A smaller Scout should not carry the same crew-gear weight as the biggest member of the crew.
 
-### 9d. Fitting Your Pack
+### Requirement 9d: Fitting Your Pack
 
 {{< drg/requirement number="9d" >}}
 Show you can properly shoulder your pack and adjust it for proper wear.
@@ -133,7 +133,7 @@ A poorly adjusted pack causes sore shoulders, back pain, and blisters on your hi
 
 {{< drg/image src="images/pack-adjustment-labeled.avif" alt="A diagram of a Scout wearing a backpack from the side, with labeled arrows pointing to the hip belt, shoulder straps, load lifters, sternum strap, and proper positioning on the body" >}}
 
-### 9e. Your 2-Mile Hike
+### Requirement 9e: Your 2-Mile Hike
 
 {{< drg/requirement number="9e" >}}
 While using the plan you developed for requirement 9(a), carry your fully loaded pack to complete a hike of at least 2 miles.

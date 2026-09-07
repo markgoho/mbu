@@ -37,7 +37,7 @@ Think of it like this: you probably will not get into a car accident this year. 
 
 ---
 
-### 6a: Automobile Insurance
+### Requirement 6a: Automobile Insurance
 
 **Why people buy it:** In almost every state, car insurance is required by law. But beyond the legal requirement, auto insurance protects you from enormous costs. A single car accident can result in tens of thousands of dollars in vehicle repairs, medical bills, and legal fees.
 
@@ -53,7 +53,7 @@ Think of it like this: you probably will not get into a car accident this year. 
 Your driving record directly affects your premium. Speeding tickets and accidents cause your rates to go up. Good students often get discounts too — many insurance companies offer reduced rates for teens with a B average or better.
 {{< /drg/tip >}}
 
-### 6b: Health Insurance
+### Requirement 6b: Health Insurance
 
 **Why people buy it:** Medical care in the United States is expensive. A single emergency room visit can cost thousands of dollars. A hospital stay or surgery can cost tens of thousands. Health insurance prevents a medical problem from becoming a financial disaster.
 
@@ -69,7 +69,7 @@ Your driving record directly affects your premium. Speeding tickets and accident
 The most expensive health insurance claim ever paid was over $5 million for a premature infant who spent months in the neonatal intensive care unit. Without insurance, that family would have faced financial ruin. This is why health insurance exists — to protect against costs that no family could afford on their own.
 {{< /drg/did-you-know >}}
 
-### 6c: Homeowner's and Renter's Insurance
+### Requirement 6c: Homeowner's and Renter's Insurance
 
 **Homeowner's insurance — why people buy it:** A home is usually the most expensive thing a person will ever own. Homeowner's insurance protects against damage from fires, storms, theft, and other disasters. Mortgage lenders require it — they will not lend you hundreds of thousands of dollars without knowing the property is protected.
 
@@ -81,7 +81,7 @@ The most expensive health insurance claim ever paid was over $5 million for a pr
 Standard homeowner's and renter's policies do not cover floods or earthquakes. People in flood-prone or earthquake-prone areas need separate, specialized policies. If your family lives in an area with these risks, ask whether you have this additional coverage.
 {{< /drg/safety-first >}}
 
-### 6d: Whole Life and Term Life Insurance
+### Requirement 6d: Whole Life and Term Life Insurance
 
 Life insurance was introduced briefly in [Requirement 5](/merit-badges/personal-management/guide/req5/). Now let's dig into the two main types.
 

@@ -19,6 +19,8 @@ Pack your own gear and your share of the patrol equipment and food for proper ca
 
 A well-organized gear checklist and a properly packed backpack are the difference between a smooth campout and a frustrating mess. This requirement brings together everything you have learned about clothing, gear, and equipment into a practical system.
 
+## Requirement 7a: Creating Your Gear Checklist
+
 ### Building Your Gear Checklist
 
 A gear checklist has two sections: **personal gear** (what you carry for yourself) and **patrol gear** (shared items divided among the group).
@@ -55,6 +57,8 @@ A gear checklist has two sections: **personal gear** (what you carry for yoursel
 {{< drg/tip >}}
 Create a reusable checklist that you print out before every trip. Laminate it or keep it in a plastic sleeve so you can check items off with a dry-erase marker and reuse it for the next campout.
 {{< /drg/tip >}}
+
+## Requirement 7b: Proper Pack Assembly
 
 ### Packing Your Backpack
 

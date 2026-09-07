@@ -23,6 +23,8 @@ Discuss with your counselor what you learned and how you can apply it in your li
 
 In Requirement 2, you studied a leader who made an ethical decision. Now you are going deeper — finding someone whose life's work has been promoting diversity, equity, and inclusion, and learning from them directly.
 
+## Requirement 7a: Interviewing a Diversity Leader
+
 ### Finding Your Interview Subject
 
 The best choice is someone in your own community — a person you can actually sit down with and talk to. Hearing someone's story in their own words is far more powerful than reading about them online.
@@ -84,6 +86,8 @@ The requirement specifically asks you to discover three things: what **inspired*
 {{< drg/did-you-know >}}
 Oral history — recording people's stories through interviews — is one of the oldest and most powerful ways to preserve knowledge. The Library of Congress has collected over 100,000 oral history recordings from people across America, preserving stories that would otherwise be lost.
 {{< /drg/did-you-know >}}
+
+## Requirement 7b: Applying What You Learned
 
 ### Applying What You Learned
 

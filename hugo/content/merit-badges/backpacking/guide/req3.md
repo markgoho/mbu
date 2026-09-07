@@ -20,7 +20,7 @@ This requirement covers four topics about organizing and leading a safe backpack
 - **Risk management** — minimizing danger on the trail
 - **Emergency planning** — what to do when things go wrong
 
-### 3a. Trek Crew Size
+### Requirement 3a: Trek Crew Size
 
 {{< drg/requirement number="3a" >}}
 Define limits on the number of backpackers appropriate for a trek crew.
@@ -39,7 +39,7 @@ Check the regulations for your specific trail or wilderness area before your tri
 
 For Scouting activities, BSA policy requires a minimum of four people (two of whom must be adults) for any backcountry trek. Your crew should be large enough to handle emergencies but small enough to travel efficiently and minimize your footprint.
 
-### 3b. Crew Organization
+### Requirement 3b: Crew Organization
 
 {{< drg/requirement number="3b" >}}
 Describe how a trek crew should be organized.
@@ -61,7 +61,7 @@ At Philmont Scout Ranch, crews assign formal positions including Crew Leader, Ch
 
 Not every trek needs all of these as separate people. On a small crew, one person might be both the navigator and the first aider. The important thing is that every responsibility is covered and everyone knows their role before the trek begins.
 
-### 3c. Minimizing Risk
+### Requirement 3c: Minimizing Risk
 
 {{< drg/requirement number="3c" >}}
 Tell how you would minimize risk on a backpacking trek.
@@ -84,7 +84,7 @@ Risk management is about thinking ahead. You cannot eliminate all risk in the ba
 The number one rule of risk management is this: no summit, campsite, or mile marker is worth someone's safety. If conditions deteriorate, turn back. If a crew member is struggling, slow down or stop. The mountain will be there next time.
 {{< /drg/safety-first >}}
 
-### 3d. Emergency Response Plan
+### Requirement 3d: Emergency Response Plan
 
 {{< drg/requirement number="3d" >}}
 Explain the purpose of an emergency response plan.

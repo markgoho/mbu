@@ -79,6 +79,8 @@ Most EV owners do about 80% of their charging at home, overnight — just like c
 Explain what other vehicle systems are dependent on a reliable electrical system.
 {{< /drg/requirement >}}
 
+## Requirement 8f: Electrical System Dependencies
+
 ### Systems That Depend on Electricity
 
 In a modern vehicle, almost every system relies on the electrical system to function. If the battery dies or the alternator fails, the consequences go far beyond not being able to start the engine.

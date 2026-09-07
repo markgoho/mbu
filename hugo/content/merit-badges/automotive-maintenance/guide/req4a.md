@@ -61,6 +61,8 @@ Always follow the vehicle manufacturer's recommended inflation pressure — not 
 Demonstrate how to check tire pressure and properly inflate a tire. Check the spare tire and make sure it is ready for use.
 {{< /drg/requirement >}}
 
+## Requirement 4b: Check & Inflate Tires
+
 ### Checking Tire Pressure
 
 Tire pressure should be checked when the tires are **cold** — meaning the vehicle has been parked for at least three hours or driven less than a mile. Driving heats the air inside the tires and increases the pressure reading, giving you a false high reading.

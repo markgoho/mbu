@@ -46,6 +46,8 @@ When discussing firing order with your counselor, explain why it matters — not
 Explain the purpose of the spark gap.
 {{< /drg/requirement >}}
 
+## Requirement 8c: Spark Plug Gap Function
+
 ### What Is the Spark Gap?
 
 The **spark gap** (also called the **electrode gap** or simply **the gap**) is the distance between the center electrode and the ground electrode at the tip of a spark plug. This gap is where the spark actually jumps — creating the tiny bolt of electricity that ignites the air-fuel mixture in the cylinder.

@@ -17,15 +17,19 @@ Earn the Swimming merit badge.
 Swim continuously for 400 yards using each of the following strokes in a strong manner, in good form with rhythmic breathing, for at least 50 continuous yards: front crawl, sidestroke, breaststroke, and elementary backstroke.
 {{< /drg/requirement >}}
 
+## Requirement 2a: Swimming Merit Badge
+
+### Requirement 2b: Continuous 400-Yard Swim
+
 Lifesaving is built on top of strong swimming. You cannot rescue someone in the water if you are struggling yourself. That is why these two prerequisites must be completed before you begin any of the rescue requirements (3–15).
 
-### Why Swimming Comes First
+#### Why Swimming Comes First
 
 Imagine trying to tow an exhausted swimmer to shore while fighting to keep your own head above water. It would not work — and it would put both of you in danger. A rescuer must be a confident, capable swimmer who can cover distance efficiently and still have energy left when they arrive.
 
 The 400-yard continuous swim is not just a test — it is a benchmark that proves you have the endurance and technique to handle real rescue situations.
 
-### The Four Strokes You Need
+#### The Four Strokes You Need
 
 Each of the four required strokes has a specific role in lifesaving. Understanding why each stroke matters will help you appreciate the 400-yard swim as more than just a fitness test.
 
@@ -43,7 +47,7 @@ When practicing the 400-yard swim, do not sprint. Focus on smooth, sustainable t
 
 {{< drg/image src="images/four-strokes-diagram.avif" alt="Four side-by-side illustrations showing the body position for front crawl, sidestroke, breaststroke, and elementary backstroke" >}}
 
-### What "Strong Manner" and "Good Form" Mean
+#### What "Strong Manner" and "Good Form" Mean
 
 Your counselor is looking for more than just getting from one end of the pool to the other. Here is what strong, good-form swimming looks like:
 
@@ -56,7 +60,7 @@ Your counselor is looking for more than just getting from one end of the pool to
 - Endurance: 400 yards without stopping, resting, or touching the bottom
 {{< /drg/checklist >}}
 
-### Building Your Endurance
+#### Building Your Endurance
 
 If you are not yet able to swim 400 continuous yards, do not worry — that is exactly what training is for. Here are some ways to build up:
 

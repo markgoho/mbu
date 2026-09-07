@@ -27,7 +27,7 @@ What art means to you and how art can make you feel.
 
 This requirement asks you to think deeply about three big questions. Your counselor is not looking for textbook answers — they want to hear your own thoughts, backed by what you have learned. Let's explore each one.
 
-### What Is Art?
+### Requirement 1a: What Art Is and Its Forms
 
 Ask ten people to define art and you will get ten different answers. That is part of what makes art so interesting. At its core, art is **the use of skill and imagination to create something that communicates an idea, an emotion, or an experience**. It can be visual (a painting), auditory (a piece of music), physical (a dance), or literary (a poem). For this merit badge, you will focus on the visual arts — the kind you can see and sometimes touch.
 
@@ -49,7 +49,7 @@ The word "art" comes from the Latin word *ars*, which originally meant "skill" o
 
 {{< drg/image src="images/art-forms-collage.avif" alt="A collage-style arrangement showing different art forms: a pencil drawing, a watercolor painting, a clay sculpture, a photograph, and a digital illustration on a tablet" >}}
 
-### Why Art Matters to Humankind
+### Requirement 1b: Why Art Matters to Humankind
 
 Art is not a luxury — it is a fundamental part of being human. Here are some of the reasons art has been important to people throughout history and remains essential today.
 
@@ -67,7 +67,7 @@ Art is not a luxury — it is a fundamental part of being human. Here are some o
 When discussing art's importance with your counselor, try to give specific examples. Instead of saying "art is important for communication," describe a specific artwork, poster, or symbol that communicates a powerful message. Concrete examples show that you have really thought about the topic.
 {{< /drg/tip >}}
 
-### What Art Means to You
+### Requirement 1c: What Art Means to You
 
 This is the most personal part of the requirement — and there is no wrong answer. Your counselor wants to know how art fits into your life and how it makes you feel. Here are some questions to help you prepare:
 

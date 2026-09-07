@@ -23,7 +23,7 @@ This requirement covers five topics about climbing rope:
 
 Your climbing rope is the single most important piece of safety equipment you own. A 60-meter dynamic rope, thinner than your thumb, can catch a 200-pound climber falling 20 feet without breaking. But that same rope, if damaged, can fail without warning. Understanding rope types, inspection, care, and retirement is not optional knowledge — it is survival knowledge.
 
-## 6a: Kinds of Climbing Rope
+## Requirement 6a: Kinds of Climbing Rope
 
 ### Dynamic Ropes
 
@@ -60,7 +60,7 @@ Modern climbing ropes use a **kernmantle** construction: a core (kern) of parall
 A standard single dynamic climbing rope can hold over 2,000 pounds of static load. But UIAA testing goes further — ropes must survive multiple test falls with a specific fall factor before certification. A rope that passes UIAA certification can handle forces far beyond what any normal climbing fall produces.
 {{< /drg/did-you-know >}}
 
-## 6b: Inspecting a Rope
+## Requirement 6b: Inspecting a Rope
 
 Inspect your rope before every climbing session and after any significant fall, rockfall contact, or exposure to chemicals.
 
@@ -81,7 +81,7 @@ Feel for:
 The "pinch test" is your best tool. Pinch the rope between your thumb and forefinger and slide along the entire length. Any sudden change in diameter — thicker or thinner — means the core is damaged. That section cannot be trusted.
 {{< /drg/tip >}}
 
-## 6c: Preventing Rope Damage
+## Requirement 6c: Preventing Rope Damage
 
 Prevention is always easier than replacement. Climbing ropes are expensive and your life depends on them.
 
@@ -104,7 +104,7 @@ Dirt is a rope's slow enemy. Grit works its way into the sheath and gradually ab
 4. Drain and refill with clean water to rinse — repeat until water runs clear
 5. Air dry in shade, draped loosely — never in a dryer or direct sunlight
 
-## 6d: Retiring a Rope
+## Requirement 6d: Retiring a Rope
 
 Even a well-maintained rope does not last forever. Retire a rope when any of these conditions apply:
 
@@ -123,7 +123,7 @@ When you retire a rope, cut it into short lengths so no one accidentally uses it
 
 {{< drg/image src="images/rope-inspection-guide.avif" alt="Four-panel comparison of climbing rope conditions: healthy rope, sheath wear, core damage, and rope that should be retired immediately" >}}
 
-## 6e: Coiling a Rope
+## Requirement 6e: Coiling a Rope
 
 A properly coiled rope stores neatly, deploys without tangles, and is easy to carry. There are several coiling methods — your counselor will show you the technique they prefer. Here is the general approach for the **mountaineer's coil** (also called the butterfly coil):
 

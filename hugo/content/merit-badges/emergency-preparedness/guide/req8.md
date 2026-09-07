@@ -49,7 +49,7 @@ This requirement brings everything together. You have learned about emergency pr
 
 ---
 
-### 8a. Emergency Service Duties
+### Requirement 8a: Emergency Service Duties
 
 For each of the four emergency services below, think about three things: What would the troop actually do? What training would they need first? What safety precautions are essential?
 
@@ -95,7 +95,7 @@ For each of the four emergency services below, think about three things: What wo
 
 ---
 
-### 8b. Troop Mobilization Plan
+### Requirement 8b: Troop Mobilization Plan
 
 A mobilization plan is a written document that tells your troop how to assemble quickly when called for emergency service. Think of it as your troop's version of a fire drill — everyone knows their role, and no time is wasted.
 
@@ -120,7 +120,7 @@ If your troop already has a mobilization plan, ask your Scoutmaster to share it 
 
 ---
 
-### 8c. Personal Emergency Service Pack (Go Bag)
+### Requirement 8c: Personal Emergency Service Pack
 
 Your personal emergency service pack is what you grab when the call comes in. It should be packed and ready to go at all times.
 
@@ -151,7 +151,7 @@ Your personal emergency service pack is what you grab when the call comes in. It
 
 ---
 
-### 8d. Emergency Service Project
+### Requirement 8d: Emergency Service Project
 
 The final part of Requirement 8 is participation. You need to take part in an actual emergency service project or a practice exercise. Here are some options:
 

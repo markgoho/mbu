@@ -23,7 +23,9 @@ Public buildings—schools, theaters, offices, malls, hospitals—are required b
     title="Building and Office Evacuation Training Video — Safetyhub"
     url="https://www.youtube.com/watch?v=UuTowptYlrM" >}}
 
-## How Buildings Are Designed for Fire Safety
+## Requirement 7a: Building Design for Fire Safety
+
+### How Buildings Are Designed for Fire Safety
 
 **Fire-Resistant Materials**
 
@@ -54,7 +56,9 @@ Large roofs have vents that open automatically when exposed to heat. This allows
 
 In buildings with atriums (open vertical spaces), barriers and sprinklers prevent fire from spreading upward through the open space.
 
-## Fire Safety Systems & Equipment
+## Requirement 7b: Fire Safety Systems and Equipment
+
+### Fire Safety Systems & Equipment
 
 {{< drg/video
     title="How does firefighting system in a building work? — Engineering Motive"
@@ -92,7 +96,9 @@ Some buildings have PA systems or text-alert systems that provide evacuation ins
 
 Doors close automatically when an alarm sounds, compartmentalizing fire. Dampers in HVAC ducts close to prevent smoke spread.
 
-## What You Should Do in a Public Building
+## Requirement 7c: Personal Fire Safety in Public Buildings
+
+### What You Should Do in a Public Building
 
 **When you enter:**
 

@@ -20,7 +20,7 @@ This requirement covers four critical topics about reporting crime and protectin
 - **The three R's** of personal safety and protection
 - **How reporting** helps law enforcement provide resources for victims
 
-## When and How to Report a Crime
+## Requirement 6a: Reporting Crimes
 
 One of the most powerful things you can do to prevent crime is simply to report it. Many crimes go unreported — the Bureau of Justice Statistics estimates that more than half of all violent crimes and two-thirds of property crimes in the U.S. are never reported to police. Every unreported crime is a missed opportunity for justice and prevention.
 
@@ -58,7 +58,7 @@ When you report a crime or suspicious activity, clear information helps law enfo
 Save your local police department's non-emergency number in your phone. Many people don't call because they aren't sure whether a situation "counts" as an emergency. Having the non-emergency number ready removes that hesitation — if it's not a 911 situation, you can still report it.
 {{< /drg/tip >}}
 
-## Warning Signs of Child Abuse and Domestic Violence
+## Requirement 6b: Recognizing Abuse
 
 These are difficult topics, but recognizing the warning signs can save someone's life. As a Scout, you are trained to help others — and sometimes that means speaking up when you notice that someone is being hurt.
 
@@ -98,7 +98,7 @@ If you suspect child abuse or domestic violence:
 You are not expected to investigate or confront anyone. If you see signs that concern you, report them to a trusted adult or call a hotline. Trained professionals will take it from there. Reporting isn't "tattling" — it could be the most important thing you ever do for someone who can't protect themselves.
 {{< /drg/safety-first >}}
 
-## The Three R's of Personal Safety
+## Requirement 6c: Personal Safety Framework
 
 The three R's provide a simple framework for protecting yourself in any dangerous situation:
 
@@ -134,7 +134,7 @@ Tell someone what happened:
 The three R's framework was developed because research showed that most crimes against young people are committed by someone they already know — a family member, coach, teacher, or older peer — not by strangers. Recognizing that trusted people can also be dangerous is one of the hardest but most important safety lessons.
 {{< /drg/did-you-know >}}
 
-## How Reporting Helps Victims
+## Requirement 6d: Supporting Crime Victims
 
 When a crime is reported, it does more than start an investigation. It opens the door to support services for victims:
 

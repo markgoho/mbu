@@ -95,16 +95,22 @@ Research shows that families who regularly work on projects together report stro
 
 Your counselor will ask about three specific things. Be ready:
 
+## Requirement 5a: Project Objective and Goal
+
 **The objective or goal (5a):**
 - What were you trying to accomplish?
 - Why did you choose this project?
 - How did you define success?
+
+## Requirement 5b: Family Participation and Roles
 
 **How individual members participated (5b):**
 - What role did each family member play?
 - How did you assign tasks?
 - Did anyone take on a role you didn't expect?
 - How did the team work together?
+
+## Requirement 5c: Project Results and Outcomes
 
 **The results (5c):**
 - Did you achieve your goal?

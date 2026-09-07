@@ -21,7 +21,7 @@ This requirement covers five foundational topics about law and crime:
 - **Following the law when no one is watching** — integrity and ethics
 - **The meaning of crime prevention** — what it really means to stop crime before it happens
 
-## Why We Have Criminal Laws
+## Requirement 1a: Purpose of Criminal Law
 
 Imagine a school with no rules. No dress code, no schedule, no consequences for cheating or fighting. How long before things spiral out of control? Criminal laws serve the same purpose for society that rules serve for your school or troop — they set boundaries, protect people, and create order.
 
@@ -39,7 +39,7 @@ Laws aren't static. They evolve as society changes. A century ago, there were no
 The earliest known written legal code is the Code of Ur-Nammu from ancient Sumer, dating to around 2100 BCE — over 300 years before the more famous Code of Hammurabi. It established fines for bodily injury rather than the "eye for an eye" approach that came later.
 {{< /drg/did-you-know >}}
 
-## Types of Crimes
+## Requirement 1b: Types of Crimes
 
 Crimes generally fall into four broad categories. Understanding these categories helps you recognize criminal behavior and talk about it clearly with your counselor.
 
@@ -84,7 +84,7 @@ Environmental crimes harm the natural world and the communities that depend on i
 When discussing these categories with your counselor, try to think of a real-world example for each type. Examples from your own community or from recent news will show that you truly understand the differences.
 {{< /drg/tip >}}
 
-## Why People Commit Crimes
+## Requirement 1c: Why People Commit Crimes
 
 There is no single reason people break the law. Criminologists — researchers who study criminal behavior — have identified several contributing factors:
 
@@ -98,7 +98,7 @@ There is no single reason people break the law. Criminologists — researchers w
 
 Understanding *why* people commit crimes isn't about making excuses. It's about identifying where prevention can make the biggest difference. If poverty is a driver, job training programs help. If opportunity is a factor, better security reduces temptation. Crime prevention works best when it addresses root causes.
 
-## Following the Law When No One Is Watching
+## Requirement 1d: Character and Integrity
 
 This is really a question about **character**. Anyone can follow the rules when a teacher, parent, or police officer is watching. The real test is what you do when nobody would ever know.
 
@@ -116,7 +116,7 @@ You notice a classmate left their phone on the cafeteria table after lunch. The 
 Doing the right thing often takes less than a minute but protects someone from real harm.
 {{< /drg/be-prepared >}}
 
-## The Meaning of Crime Prevention
+## Requirement 1e: Crime Prevention Defined
 
 Crime prevention is more than police patrols and security cameras. At its core, **crime prevention means taking proactive steps to reduce the opportunity for crime and address the conditions that cause it.**
 

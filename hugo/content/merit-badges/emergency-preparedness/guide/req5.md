@@ -29,7 +29,7 @@ When you are lost, stranded, or injured, being found is everything. Signaling is
 
 ---
 
-### 5a. Signaling Rescue Aircraft or Drones
+### Requirement 5a: Signaling Rescue Aircraft
 
 From the air, you are very small. A person standing in a forest or on a mountainside is almost invisible to a pilot flying overhead. Your signals need to be big, bright, and different from the natural surroundings.
 
@@ -67,7 +67,7 @@ The universal distress signal is any signal repeated three times — three fires
 
 ---
 
-### 5b. Signaling Ground Searchers
+### Requirement 5b: Ground Rescue Signals
 
 When searchers are looking for you on the ground, they are using their eyes and ears. Sound carries farther than you think in the wilderness, and anything out of place visually will catch a trained searcher's eye.
 
@@ -91,7 +91,7 @@ If you are lost in the wilderness, remember **STOP**: **S**tay calm, **T**hink, 
 
 ---
 
-### 5c. Signaling on the Water
+### Requirement 5c: Water Rescue Signals
 
 Being stranded on the water presents unique challenges. You may be low in the water, making you hard to see. Waves, glare, and distance all work against you. Water rescue signals must be highly visible and repetitive.
 

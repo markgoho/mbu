@@ -22,7 +22,9 @@ This requirement asks you to do four things, all centered on studying and drawin
 
 Your counselor will provide X-ray images (or digital radiographs) to work from. Before you pick up your pencil, let's make sure you understand what you are looking at.
 
-## Reading a Dental X-Ray
+## Requirement 1a: Study Tooth Structure and Decay
+
+### Reading a Dental X-Ray
 
 Dental X-rays work because different materials in your mouth absorb radiation differently. Dense materials like enamel and metal fillings appear **bright white** on the image. Softer materials like gum tissue appear **dark gray or black**. Decay shows up as a **dark shadow** within the normally white tooth structure — because the decayed area has lost mineral density.
 
@@ -39,11 +41,13 @@ When you look at a dental X-ray, you should be able to identify:
 Wilhelm Roentgen discovered X-rays in 1895. Just 14 days later, a dentist in New Orleans named C. Edmund Kells took the first dental X-ray in the United States. Dental X-rays were one of the very first medical applications of this new technology.
 {{< /drg/did-you-know >}}
 
-## Anatomy of a Lower Molar
+## Requirement 1b: Draw and Label a Lower Molar
+
+### Anatomy of a Lower Molar
 
 A molar is one of the large, flat teeth at the back of your mouth designed for grinding food. A lower molar typically has two roots (upper molars usually have three). Here are the structures you need to know for your drawing.
 
-### The Crown (Above the Gumline)
+#### The Crown (Above the Gumline)
 
 | Part | Description |
 |------|-------------|
@@ -51,7 +55,7 @@ A molar is one of the large, flat teeth at the back of your mouth designed for g
 | **Dentin** | Makes up most of the tooth. Yellowish and slightly softer than enamel, dentin contains microscopic tubes that can transmit sensation to the nerve. |
 | **Pulp chamber** | The hollow center of the crown containing nerves, blood vessels, and connective tissue. This is the "living" part of the tooth. |
 
-### The Root (Below the Gumline)
+#### The Root (Below the Gumline)
 
 | Part | Description |
 |------|-------------|
@@ -59,7 +63,7 @@ A molar is one of the large, flat teeth at the back of your mouth designed for g
 | **Cementum** | A thin, bone-like layer covering the root surface. It is softer than enamel and helps anchor the tooth to the surrounding bone. |
 | **Apical foramen** | The tiny opening at the tip of each root where nerves and blood vessels enter and exit the tooth. |
 
-### Supporting Structures
+#### Supporting Structures
 
 | Part | Description |
 |------|-------------|
@@ -67,7 +71,7 @@ A molar is one of the large, flat teeth at the back of your mouth designed for g
 | **Periodontal ligament** | A thin layer of fibers connecting the cementum to the alveolar bone. These fibers act like tiny shock absorbers. |
 | **Alveolar bone** | The part of the jawbone that forms the socket around each tooth root. |
 
-### Tooth Surfaces
+#### Tooth Surfaces
 
 When dentists describe where a cavity or problem is located, they use specific surface names:
 
@@ -95,7 +99,11 @@ Here is a step-by-step approach for creating your labeled drawing:
 
 4. **Label everything.** Use lines pointing to each structure. Label all parts listed in the tables above, plus the five surfaces.
 
+### Requirement 1c: Show Nerve and Blood Vessel Entry
+
 5. **Mark the nerve and blood vessel entry points.** Draw small arrows at the **apical foramen** (the tip of each root) showing that nerves and blood vessels enter here, travel up through the root canals, and reach the pulp chamber. This is how the tooth receives its blood supply and sensation.
+
+### Requirement 1d: Show Plaque-Prone Areas on Drawing
 
 6. **Mark plaque-prone areas.** Shade or highlight these zones on your drawing:
    - **Along the gumline** — where the tooth meets the gingiva

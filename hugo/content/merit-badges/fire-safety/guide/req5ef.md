@@ -19,7 +19,9 @@ Demonstrate maintenance of smoke and CO alarms to your counselor and review plan
 
 Smoke and CO alarms are the difference between escaping a fire and not. They give you precious minutes to evacuate. But they only work if installed correctly, maintained, and not expired.
 
-## Local Requirements
+## Requirement 5e: Smoke and CO Alarm Requirements and Inventory
+
+### Local Requirements
 
 Fire codes vary by location. Some municipalities require smoke alarms in all bedrooms and hallways; others require CO alarms only in homes with fuel-burning appliances.
 
@@ -84,7 +86,9 @@ Most CO alarms for homes are electrochemical. The key is that they display CO le
 | Master bedroom | Photoelectric smoke | January 2020 | January 2030 |
 | Basement (furnace room) | Electrochemical CO | June 2018 | June 2028 |
 
-## Maintaining Alarms
+## Requirement 5f: Alarm Maintenance
+
+### Maintaining Alarms
 
 **Monthly testing:**
 

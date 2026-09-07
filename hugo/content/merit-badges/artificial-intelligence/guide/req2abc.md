@@ -29,7 +29,7 @@ The goal here is not to hand you a list to memorize. It is to help you develop "
 
 ---
 
-## AI in Your Everyday Life
+## Requirement 2a: Everyday AI Examples
 
 Here are categories where AI shows up in your day-to-day world. Use these as starting points, but challenge yourself to find your own examples too.
 
@@ -83,7 +83,7 @@ For your counselor meeting, try to come up with at least a few examples that are
 
 ---
 
-## AI in the Workplace
+## Requirement 2b: Workplace AI Applications
 
 AI is transforming how adults work across nearly every industry. Here are areas to explore:
 
@@ -115,7 +115,7 @@ AI-powered fraud detection systems analyze billions of credit card transactions 
 
 ---
 
-## AI in Education
+## Requirement 2c: AI for Learning
 
 AI is already changing how students learn and how teachers teach. Here are examples relevant to your own school experience:
 

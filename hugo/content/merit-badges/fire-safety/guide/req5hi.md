@@ -19,7 +19,9 @@ Explain how you would report a fire to have the fire department respond.
 
 Two immediate dangers: the smell of gas (an invisible hazard that can explode) and smoke (a sign fire is already burning). Both demand quick, decisive action.
 
-## If You Smell Natural Gas
+## Requirement 5h: Responding to Natural Gas and Smoke
+
+### If You Smell Natural Gas
 
 Natural gas is odorless, so gas companies add a chemical odorant (mercaptan) that smells like rotten eggs or sulfur. If you smell this, gas is leaking.
 
@@ -82,7 +84,9 @@ Smoke means fire is burning somewhere. Even if you can't see flames, assume a fi
 In a modern house fire with synthetic furnishings, the entire house can become smoke-filled and uninhabitable in less than 5 minutes from the time of ignition. The smell of smoke means you're already in danger.
  {{< /drg/did-you-know >}}
 
-## How to Report a Fire
+## Requirement 5i: Reporting Fires
+
+### How to Report a Fire
 
 When you call 911 to report a fire, the dispatcher needs specific information to send the right resources to the right location.
 

@@ -19,7 +19,9 @@ Review the prevention of, symptoms and signs of, and treatment of airway burns a
 
 Burns come from many sources, not just direct contact with flames. And carbon monoxide—a gas you cannot see, smell, or taste—kills hundreds of Americans every year. Understanding both helps you stay safe and help others.
 
-## Most Frequent Causes of Burn Injuries
+## Requirement 3c: Burn Injury Prevention
+
+### Most Frequent Causes of Burn Injuries
 
 {{< drg/video
     title="V2020 Preventing Burn Injuries — strategicfire"
@@ -87,7 +89,9 @@ Touching a live electrical wire or faulty appliance. Electrical burns can cause 
 - [ ] Campfire is at least 3 feet away from seating areas
  {{< /drg/checklist >}}
 
-## Airway Burns
+## Requirement 3d: Airway Burns and Carbon Monoxide
+
+### Airway Burns
 
 An airway burn occurs when hot gases or steam damage the inside of your mouth, throat, or lungs. This is one of the most dangerous types of fire injury because swelling can block breathing within minutes.
 

@@ -60,15 +60,27 @@ Try to find a video or audio recording of your chosen speech. Hearing the words 
 
 Once you have chosen a speech, work through each part of the requirement. Here is a framework to guide your research:
 
+## Requirement 6a: The Speaker's Background and Role
+
 **Who the author was (6a):** This is more than just a name. Learn about the person's background. What was their role at the time? What experiences shaped their views? Why were they the person delivering this speech at this moment?
+
+## Requirement 6b: The Moment in History
 
 **The historical context (6b):** What was happening in the country and the world when this speech was given? Was there a war, an economic crisis, a social movement, or a political turning point? Understanding the context helps you understand why the speech mattered so much.
 
+## Requirement 6c: Challenges the Nation Faced
+
 **The nation's difficulties (6c):** What specific problems or challenges was the nation facing? Why did the speaker feel compelled to address the public? Was there a crisis of confidence, a threat to the nation's values, or a need to rally people to action?
+
+## Requirement 6d: The Speech's Main Message
 
 **What the author said (6d):** Summarize the main message of the speech. What was the speaker's argument? What did they ask the audience to do, believe, or understand? You do not need to memorize the entire speech, but you should be able to explain its key points in your own words.
 
+## Requirement 6e: Why the Speech Still Matters
+
 **Why the speech is important (6e):** How did this speech affect the nation? Did it change public opinion, lead to new policies, inspire a movement, or unify people during a crisis? Why do we still study it today?
+
+## Requirement 6f: A Passage That Speaks to You
 
 **A personally meaningful passage (6f):** This is your chance to make a personal connection. Choose one or two sentences that really speak to you and explain why. There is no wrong answer — what matters is that you can articulate why those words resonate with you.
 

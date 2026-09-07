@@ -20,7 +20,7 @@ This requirement covers two connected steps in the same testing cycle:
 
 If Req 6a was about building, this page is about improving. This is where game design becomes iteration — the repeated cycle of testing, learning, changing, and testing again.
 
-### Req 6b — First Real Playtest
+### Requirement 6b: Playtest and Revise
 
 {{< drg/requirement number="6b" >}}
 Test your prototype with as many other people as you need to meet the player format. Compare the play experience to your descriptions from requirement 5(b). Correct unclear rules, holes in the rules, dead ends, and obvious rule exploits. Change at least one rule, mechanic, or objective from your first version of the game, and describe why you are making the change. Play the game again. Record in your game design notebook whether or not your change had the expected effect.
@@ -61,7 +61,7 @@ For example:
 - **Result**: Did the change have the effect you expected?
 {{< /drg/checklist >}}
 
-### Req 6c — Repeat at Least Two More Times
+### Requirement 6c: Repeated Testing
 
 {{< drg/requirement number="6c" >}}
 Repeat 6(b) at least two more times and record the results in your game design notebook.

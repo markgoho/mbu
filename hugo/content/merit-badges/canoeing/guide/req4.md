@@ -20,7 +20,7 @@ This requirement covers two topics about your paddle:
 
 Your paddle is your engine, your rudder, and your brake — all in one tool. Understanding its parts and choosing the right size makes every stroke more efficient and every hour on the water more comfortable.
 
-## Parts of a Paddle
+## Requirement 4a: Paddle Parts
 
 A canoe paddle has four main parts, each designed for a specific function.
 
@@ -54,7 +54,7 @@ The wide, flat section at the bottom of the paddle that moves through the water.
 Some competitive paddlers use bent-shaft paddles angled at 12–14°. The bend keeps the blade vertical in the water longer during each stroke, which transfers more power into forward motion. But bent-shaft paddles are less versatile for steering strokes — so most beginners start with a straight shaft.
 {{< /drg/did-you-know >}}
 
-## Sizing a Paddle
+## Requirement 4b: Paddle Sizing
 
 Using a paddle that is too long or too short makes paddling harder and less efficient. The correct length depends on your body size and whether you paddle from a sitting or kneeling position.
 

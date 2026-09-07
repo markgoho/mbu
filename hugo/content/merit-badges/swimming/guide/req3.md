@@ -35,7 +35,9 @@ Demonstrate the elementary backstroke using good form.
 
 For this requirement, you need to demonstrate five swimming strokes with good form. Your counselor will watch your technique and provide feedback. Below is a breakdown of each stroke — what it looks like, what makes it "good form," and common mistakes to avoid.
 
-## Front Crawl (Freestyle)
+## Requirement 3a: Front Crawl and Trudgen
+
+### Front Crawl (Freestyle)
 
 The front crawl is the fastest and most commonly used swimming stroke. You will use it more than any other stroke in both competitive and recreational swimming.
 
@@ -51,7 +53,7 @@ The front crawl is the fastest and most commonly used swimming stroke. You will 
 The most common front crawl mistake is lifting your head to breathe instead of rotating it to the side. Practice breathing drills: hold the pool wall, put your face in the water, and turn to breathe on one side. Keep one goggle in the water and one out.
 {{< /drg/tip >}}
 
-## Trudgen
+## Trudgen (Front Crawl Variant)
 
 The trudgen is an older stroke that combines an overarm crawl motion with a scissor kick. It is less common today but still part of the Swimming merit badge requirements as an alternative to the front crawl.
 
@@ -63,7 +65,9 @@ The trudgen is an older stroke that combines an overarm crawl motion with a scis
 
 **Breathing:** Turn to the side to breathe, same as the front crawl.
 
-## Back Crawl (Backstroke)
+## Requirement 3b: Back Crawl
+
+### Back Crawl (Backstroke)
 
 The back crawl is the only competitive stroke swum entirely on your back. It is excellent for building back and shoulder strength.
 
@@ -79,7 +83,9 @@ The back crawl is the only competitive stroke swum entirely on your back. It is 
 The back crawl is the only stroke used in competitive swimming where the swimmer starts in the water. All other strokes start with a dive from the blocks.
 {{< /drg/did-you-know >}}
 
-## Sidestroke
+## Requirement 3c: Sidestroke
+
+### Sidestroke
 
 The sidestroke is a restful, efficient stroke used for long-distance swimming and lifesaving. Lifeguards use a modified sidestroke when towing someone to safety.
 
@@ -95,7 +101,9 @@ The sidestroke is a restful, efficient stroke used for long-distance swimming an
 Practice the sidestroke on both sides, not just your dominant side. In a real rescue scenario, you might need to tow someone on either side. Plus, it develops balanced strength.
 {{< /drg/tip >}}
 
-## Breaststroke
+## Requirement 3d: Breaststroke
+
+### Breaststroke
 
 The breaststroke is one of the oldest known swimming strokes and is popular for recreational swimming because your head can stay above water.
 
@@ -109,7 +117,9 @@ The breaststroke is one of the oldest known swimming strokes and is popular for 
 
 **Timing:** Pull, breathe, kick, glide. The glide is important — rushing eliminates the resting phase and makes the stroke less efficient.
 
-## Elementary Backstroke
+## Requirement 3e: Elementary Backstroke
+
+### Elementary Backstroke
 
 The elementary backstroke is the easiest stroke to learn and the best stroke for resting in the water. You will use it during the endurance swim in Requirement 4.
 

@@ -62,6 +62,8 @@ If your vehicle's steering wheel is off-center when driving straight, or if the 
 Explain the purpose of the lateral-wear bar indicator.
 {{< /drg/requirement >}}
 
+## Requirement 4d: Reading the Wear Bars
+
 ### Tread Wear Indicators
 
 Every tire sold in the United States has built-in **tread wear indicator bars** (also called wear bars). These are small raised bars of rubber that sit in the grooves of the tire tread at a height of **2/32 of an inch** — the legal minimum tread depth in most states.
@@ -84,6 +86,8 @@ A classic quick test: insert a penny into a tire groove with Lincoln's head faci
 {{< drg/requirement number="4e" >}}
 Explain how to dispose of old tires in accordance with local laws and regulations.
 {{< /drg/requirement >}}
+
+## Requirement 4e: Proper Tire Disposal
 
 ### Tire Disposal
 
