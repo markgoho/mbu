@@ -83,7 +83,7 @@ Your schematic will also need these basic symbols:
 Professional engineers use software like KiCad (free and open source), Fritzing, or Tinkercad to draw schematics digitally. For this requirement, a hand-drawn schematic on paper is perfectly acceptable — just make sure your symbols are correct and your labels are legible.
 {{< /drg/tip >}}
 
-## Explaining Your Circuit (Req 2b)
+## Requirement 2b: Explaining Your Circuit
 
 After you draw your schematic, you need to explain what each part does. Do not just name the components — describe their role in **your specific circuit**. For example:
 

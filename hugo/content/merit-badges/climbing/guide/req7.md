@@ -23,7 +23,7 @@ This requirement covers five knots:
 
 Every climber's life depends on a handful of knots. Not dozens — just a few, tied perfectly every time. A figure eight follow-through connects you to the rope. A double fisherman's joins two ropes for a long rappel. A Prusik can get you out of a jam mid-route. You do not need to know fifty knots. You need to know these five cold — in the dark, with gloves on, when you are tired.
 
-## Figure Eight on a Bight (7a)
+## Requirement 7a: Figure Eight on a Bight
 
 The **figure eight on a bight** creates a fixed loop in the middle of a rope without needing access to either end. "Bight" means a U-shaped bend in the rope.
 
@@ -38,7 +38,7 @@ The **figure eight on a bight** creates a fixed loop in the middle of a rope wit
 After tying any figure eight knot, "dress" it — neaten the strands so they lie parallel without crossing over each other inside the knot. A well-dressed knot is stronger and easier to inspect. Pull each strand individually to snug it tight.
 {{< /drg/tip >}}
 
-## Figure Eight Follow-Through (7b)
+## Requirement 7b: Figure Eight Follow-Through
 
 The **figure eight follow-through** (also called a rewoven or retraced figure eight) ties the rope directly to your harness. This is the most important knot you will learn — it is the knot that holds you to the rope every time you climb.
 
@@ -53,7 +53,7 @@ The **figure eight follow-through** (also called a rewoven or retraced figure ei
 The figure eight follow-through is your primary connection to the rope. Before every climb, your partner should inspect this knot. Check that the strands are parallel, the knot is dressed neatly, and the tail is at least 6 inches long. A poorly tied figure eight can work loose under repeated loading.
 {{< /drg/safety-first >}}
 
-## Water Knot (7c)
+## Requirement 7c: Water Knot
 
 The **water knot** (also called a ring bend or overhand retrace) joins the two ends of flat webbing to make a sling or runner. It is the standard knot for tying nylon webbing into a loop.
 
@@ -68,7 +68,7 @@ The **water knot** (also called a ring bend or overhand retrace) joins the two e
 The water knot gets its name from its historical use by fishermen who used it to join flat monofilament lines. In climbing, it is sometimes called the "tape knot" because climbers often call flat webbing "tape."
 {{< /drg/did-you-know >}}
 
-## Double Fisherman's Knot (7d)
+## Requirement 7d: Double Fisherman's Knot
 
 The **double fisherman's knot** (also called a grapevine knot) joins two rope ends together. It is incredibly secure — once loaded, it can be nearly impossible to untie.
 
@@ -80,7 +80,7 @@ The **double fisherman's knot** (also called a grapevine knot) joins two rope en
 - The "X" pattern on each knot should be clearly visible — if it looks messy, retie it
 - Tails should be at least 3 inches long
 
-## Prusik Hitch (7e)
+## Requirement 7e: Prusik Hitch
 
 The **Prusik hitch** is a friction knot tied with a thin loop of accessory cord around a thicker climbing rope. It grips the rope when loaded but can be slid along the rope when unloaded.
 

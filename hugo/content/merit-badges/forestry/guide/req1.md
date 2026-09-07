@@ -44,7 +44,7 @@ For each of your 15 entries, include:
 Do not try to identify all 15 species in one rushed outing. Two or three shorter trips to different habitats usually produce better notes and more variety than one long march through the same trail.
 {{< /drg/tip >}}
 
-## Req 1a — Identification Clues
+## Requirement 1a — Identification Clues
 
 Tree identification is like detective work. You start with what you can see clearly, then narrow the possibilities. Leaves are often the first clue, but they are not the only one. In winter, twigs and buds may matter more than leaves. On conifers, cones and needles can be the most useful feature. On shrubs and vines, fruit clusters, stem color, growth pattern, and bark texture may help a lot.
 
@@ -73,7 +73,7 @@ It helps to compare similar species side by side. A red oak and a white oak may 
 Some tree species can be identified by smell alone. Crushed sassafras leaves often smell spicy or citrusy, and yellow birch twigs can smell like wintergreen when gently scratched.
 {{< /drg/did-you-know >}}
 
-## Req 1b — Habitat
+## Requirement 1b — Habitat
 
 A species name is only part of the story. Foresters also want to know *why* a plant is growing in a certain place. Habitat means the conditions that support that plant: sunlight, water, soil, slope, elevation, and neighboring species.
 
@@ -98,7 +98,7 @@ If two species seem close, do not force a guess.
 - **Ask a knowledgeable adult, naturalist, forester, or counselor** to confirm your ID before adding it to your final 15.
 {{< /drg/be-prepared >}}
 
-## Req 1c — Uses, Wildlife Value, and Native Status
+## Requirement 1c — Uses, Wildlife Value, and Native Status
 
 Forestry is not only about recognizing plants. It is about understanding their role. Some species provide strong lumber, rot-resistant posts, syrup, paper pulp, medicine, shade, erosion control, or ornamental value. Others are especially important to wildlife because they produce mast — food such as nuts, seeds, berries, or acorns — or provide nesting cover and browse.
 

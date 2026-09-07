@@ -21,7 +21,7 @@ This requirement covers three soldering skills you need to demonstrate:
 
 Soldering is where electronics stops being theory and becomes hands-on craft. A good solder joint creates a reliable electrical and mechanical connection that can last for decades. A bad one can cause intermittent failures that are maddening to troubleshoot. The difference comes down to technique, and technique is something you can master with practice.
 
-## Req 3a — How to Solder
+## Requirement 3a — How to Solder
 
 ### What Is Soldering?
 
@@ -72,7 +72,7 @@ Sometimes a component will not come free even after desoldering because solder r
 - **Try solder wick followed by the pump** for stubborn joints.
 {{< /drg/be-prepared >}}
 
-## Req 3b — Preventing Heat Damage
+## Requirement 3b — Preventing Heat Damage
 
 Electronic components are sensitive to heat. A transistor, IC, or LED can be permanently damaged if exposed to too much heat during soldering. Here is how to protect them:
 
@@ -97,7 +97,7 @@ If your soldering iron has adjustable temperature, set it appropriately:
 
 A hotter iron is not necessarily better. Higher temperatures increase the risk of heat damage and can burn the flux before it does its job.
 
-## Req 3c — Printed Circuit Boards
+## Requirement 3c — Printed Circuit Boards
 
 ### What Is a PCB?
 

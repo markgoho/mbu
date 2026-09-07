@@ -21,7 +21,7 @@ This requirement covers three pieces of personal protective equipment:
 
 These three items protect you from the three most common categories of climbing injury: falls (harness), head impact (helmet), and rope friction (gloves). None of them help if they are fitted wrong or worn incorrectly.
 
-## Climbing Harness (8a)
+## Requirement 8a: Climbing Harness
 
 A climbing harness distributes the force of a fall across your hips and thighs â€” the strongest parts of your body. Without a harness, a fall onto a rope tied around your waist could break ribs, damage internal organs, or cut off circulation in minutes.
 
@@ -49,7 +49,7 @@ A climbing harness distributes the force of a fall across your hips and thighs â
 The waist belt must sit **above your hip bones**, not on your waist like a regular belt. If it sits too low, you can slip out during an inverted fall. After putting on the harness, hang from it briefly (have your belayer take your weight) to verify it is secure and comfortable before climbing.
 {{< /drg/safety-first >}}
 
-## Climbing Helmet (8b)
+## Requirement 8b: Climbing Helmet
 
 A climbing helmet protects against two threats: objects falling from above (rockfall, dropped gear) and impacts during falls (swinging into the wall, hitting a ledge).
 
@@ -81,7 +81,7 @@ Wear a helmet for all outdoor climbing, rappelling, and belaying. Indoor climbin
 Climbing helmets are tested to withstand a 5-kilogram (11-pound) weight dropped from 2 meters (about 6.5 feet). That simulates a fist-sized rock falling from a short distance. Real rockfall can be much more severe, which is why avoiding rockfall zones is as important as wearing a helmet.
 {{< /drg/did-you-know >}}
 
-## Climbing or Rappelling Gloves (8c)
+## Requirement 8c: Climbing or Rappelling Gloves
 
 Gloves protect your hands from rope friction, especially during rappelling where the rope slides through your braking hand under load. Without gloves, a fast rappel or a sudden stop can cause painful rope burns.
 

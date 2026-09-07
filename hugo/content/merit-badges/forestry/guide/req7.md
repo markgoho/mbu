@@ -21,7 +21,7 @@ This requirement covers three connected topics:
 
 Forests are resilient, but they are not invincible. Some disturbances are natural and even helpful in the right pattern. Others become destructive when they are too severe, too frequent, or mixed with human pressure.
 
-## Req 7a — Consequences of Major Forest Threats
+## Requirement 7a — Consequences of Major Forest Threats
 
 The requirement asks you to describe consequences from **five** listed elements. Here is a quick guide to all ten so you can choose the ones you understand best.
 
@@ -64,7 +64,7 @@ Development can fragment habitat, increase invasive species, change drainage, cr
 - **Give one specific consequence** like erosion, habitat loss, fuel buildup, or failed regeneration.
 {{< /drg/checklist >}}
 
-## Req 7b — How to Reduce the Consequences
+## Requirement 7b — How to Reduce the Consequences
 
 Once you describe a threat, ask what could make the situation better. The answer depends on the problem:
 
@@ -76,7 +76,7 @@ Once you describe a threat, ask what could make the situation better. The answer
 
 A strong answer pairs each consequence with a realistic response. Foresters cannot eliminate every threat, but they can often reduce severity and improve resilience.
 
-## Req 7c — What to Do If You Discover a Forest Fire
+## Requirement 7c — What to Do If You Discover a Forest Fire
 
 If you discover a forest fire, your job is not to fight it. Your job is to report it quickly and protect yourself and others.
 

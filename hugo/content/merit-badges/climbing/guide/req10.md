@@ -23,7 +23,7 @@ This requirement covers five belaying tasks:
 
 When you belay, another person's life is literally in your hands. The belayer manages the rope that catches falls, controls descents, and keeps the climber connected to safety. A distracted belayer is more dangerous than a loose rock, a frayed rope, or a poor knot — because the belayer is the last line of defense when everything else goes wrong.
 
-## Why Belaying Matters (10a)
+## Requirement 10a: Why Belaying Matters
 
 Belaying serves three critical functions:
 
@@ -59,7 +59,7 @@ The Petzl GriGri and similar devices use a camming mechanism that pinches the ro
 Regardless of which belay device you use, the technique is the same: your brake hand controls safety, and your guide hand manages rope flow. Your counselor will teach you the specific hand movements for the device you will use. Practice the motions until they become muscle memory.
 {{< /drg/tip >}}
 
-## Belaying a Climber (10b)
+## Requirement 10b: Belaying a Climber
 
 When belaying a top-rope climber, the belayer's job is to take in slack as the climber ascends. The basic cycle:
 
@@ -72,7 +72,7 @@ When catching a fall, pull the brake strand sharply downward and step back sligh
 
 For lowering, smoothly feed rope through the device while maintaining steady friction. Lower at a controlled speed — not too fast, not jerky. Communicate with the climber: "Lowering!"
 
-## Backup Belaying (10c)
+## Requirement 10c: Backup Belaying
 
 A backup belayer stands behind the primary belayer and holds the brake strand of the rope below the primary belayer's brake hand. If the primary belayer loses control — from being pulled off balance, getting distracted, or any other reason — the backup belayer clamps down on the rope to stop it.
 
@@ -85,7 +85,7 @@ A backup belayer stands behind the primary belayer and holds the brake strand of
 
 {{< drg/image src="images/belay-technique-sequence.avif" alt="Four-step diagram showing the top-rope belay cycle: pull rope through device, slide brake hand up, re-grip below, and repeat" >}}
 
-## Belaying a Rappeller (10d)
+## Requirement 10d: Belaying a Rappeller
 
 Belaying a rappeller uses a technique called a **fireman's belay**. The belayer stands at the bottom of the rappel, holding the rope ends that hang below the rappeller. If the rappeller loses control, the belayer pulls the ropes taut — this locks the rappeller's device and stops the descent.
 
@@ -94,7 +94,7 @@ Belaying a rappeller uses a technique called a **fireman's belay**. The belayer 
 - The belayer pulls down on the rope to brake (not up through a device)
 - The rappeller controls their own speed; the belayer is the emergency backup
 
-## Backup Belaying a Rappel (10e)
+## Requirement 10e: Backup Belaying a Rappel
 
 The backup belayer for a rappel assists the fireman's belayer in the same way as for climbing — standing behind and holding the rope below the primary belayer's hands. This adds a second layer of safety for the rappeller.
 

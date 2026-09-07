@@ -15,7 +15,7 @@ Do the following:
 
 This requirement covers everything about arrows — their parts, types, shaft materials, and how to build, repair, and care for them.
 
-## Req 2a — Parts of an Arrow
+## Requirement 2a — Parts of an Arrow
 
 {{< drg/requirement number="2a" >}}
 Name and point to the parts of an arrow.
@@ -43,7 +43,7 @@ When your counselor asks you to "point to" the parts, practice with a real arrow
 
 {{< drg/image src="images/arrow-parts-diagram.avif" alt="A detailed side view of a complete arrow with all major parts clearly visible: point, shaft, fletching/vanes, nock, and index fletching, laid on a clean surface" >}}
 
-## Req 2b — Types of Arrows
+## Requirement 2b — Types of Arrows
 
 {{< drg/requirement number="2b" >}}
 Describe three or more different types of arrows.
@@ -75,7 +75,7 @@ These arrows have flat or rounded rubber or plastic tips instead of pointed ones
 Flu-flu arrows were originally developed for shooting birds in flight and for training falcons. The heavy fletching slows the arrow so dramatically that you can often see it tumbling through the air — and you can find it easily because it does not travel far.
 {{< /drg/did-you-know >}}
 
-## Req 2c — Arrow Shaft Materials
+## Requirement 2c — Arrow Shaft Materials
 
 {{< drg/requirement number="2c" >}}
 Name the four principal materials for making arrow shafts.
@@ -103,7 +103,7 @@ Carbon arrows are lightweight, very stiff, and extremely fast. They are the top 
 Always flex-test carbon arrows before shooting. Bend the shaft gently and listen for cracking or popping sounds. If you hear anything, see any visible damage, or feel a rough spot, do not shoot that arrow. A shattered carbon shaft can drive splinters into your bow hand.
 {{< /drg/safety-first >}}
 
-## Req 2d — Make or Repair Arrows
+## Requirement 2d — Make or Repair Arrows
 
 {{< drg/requirement number="2d" >}}
 Do ONE of the following:
@@ -136,7 +136,7 @@ You can spread these repairs across multiple arrows. The repairs can be done on 
 If you are working at a camp archery range, ask your instructor if they have a fletching jig you can use. A jig holds the vane at the correct angle and position while the glue dries, making the process much easier and more precise.
 {{< /drg/tip >}}
 
-## Req 2e — Arrow Care and Storage
+## Requirement 2e — Arrow Care and Storage
 
 {{< drg/requirement number="2e" >}}
 Explain how to properly care for and store arrows.

@@ -39,7 +39,7 @@ The first question is simple: what athletic activity interests you? It could be 
 Pick something you are genuinely excited about. Three months is a long commitment, and you will stick with it more easily if you look forward to training. If you are unsure, try a few activities for a week or two before locking in your choice.
 {{< /drg/tip >}}
 
-### Step 2: Build Your Training Program (Req 3a)
+### Requirement 3a: Build Your Training Program
 
 A good training program is not just "go practice whenever you feel like it." It is a structured plan that builds your fitness gradually over time. Work with your counselor to design a program that includes these elements:
 
@@ -71,7 +71,7 @@ The "10% rule" is a widely used guideline in training: do not increase your trai
 
 {{< drg/image src="images/training-plan-calendar.avif" alt="A Scout sitting at a desk writing out a training plan on a calendar, with running shoes and a water bottle nearby" >}}
 
-### Step 3: Track Your Progress (Req 3b)
+### Requirement 3b: Track Your Progress
 
 Tracking your progress is what separates a training program from just "working out." A log helps you see patterns, celebrate improvements, and identify when something is not working.
 
@@ -91,7 +91,7 @@ You can track in a notebook, a spreadsheet, or a phone app — whatever works fo
     url="/merit-badges/athletics/guide/training-log/"
     type="printable" >}}
 
-### Step 4: Know Your Gear (Req 3c)
+### Requirement 3c: Know Your Gear
 
 Every sport has its own equipment and clothing needs, and they change with the seasons. When you talk to your counselor about gear, think about:
 
@@ -112,7 +112,7 @@ Every sport has its own equipment and clothing needs, and they change with the s
 You do not need expensive gear to start training. A good pair of shoes that fit well and are designed for your activity is the single most important investment. Everything else can be basic.
 {{< /drg/tip >}}
 
-### Step 5: Reflect on Your Journey (Req 3d)
+### Requirement 3d: Reflect on Your Journey
 
 After three months, sit down with your training log and your counselor to review what happened. This is not a test — it is a conversation about growth. Be ready to discuss:
 

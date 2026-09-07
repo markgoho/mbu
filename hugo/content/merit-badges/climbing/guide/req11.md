@@ -20,7 +20,7 @@ This requirement has two parts:
 
 Everything you have learned so far — hazards, first aid, signals, rope, knots, gear, the CHECK system, and belaying — comes together the moment you step off the ground. Climbing is where all that preparation becomes real.
 
-## Tying In (11a)
+## Requirement 11a: Tying In
 
 "Tying in" means connecting the climbing rope directly to your harness using a figure eight follow-through knot. You practiced this knot in [Req 7b](/merit-badges/climbing/guide/req7/). Now you apply it to your harness before every climb.
 
@@ -40,7 +40,7 @@ Never tie into just the belay loop. The belay loop is designed for carabiner att
 
 After tying in, have your partner check your knot as part of the CHECK system from [Req 9](/merit-badges/climbing/guide/req9/). They should verify the strands are parallel, the knot is dressed, and the tail is adequate.
 
-## Climbing Technique (11b)
+## Requirement 11b: Climbing Technique
 
 Good climbing technique is efficient — it lets you climb longer, harder routes without exhausting yourself. Poor technique relies on brute strength and burns out fast. Here are the fundamentals your counselor will look for.
 

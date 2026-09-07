@@ -27,7 +27,7 @@ Government provides essential services, but it cannot do everything. Charitable 
 
 These organizations run on donations and volunteers. And that is where you come in.
 
-## Step 1: Identify Three Organizations (Req 7a)
+## Requirement 7a: Identify Three Organizations
 
 Look for organizations that operate in your community and bring people together for a common good. They should be **outside of Scouting** — your troop, pack, or council do not count for this one.
 
@@ -67,7 +67,7 @@ Here are some types of organizations to consider:
 Start local. National organizations like the Red Cross or Habitat for Humanity have local chapters that operate right in your community. Local chapters are more likely to have volunteer opportunities for young people and will give you a more personal experience.
 {{< /drg/tip >}}
 
-## Step 2: Research One Organization (Req 7b)
+## Requirement 7b: Research One Organization
 
 Choose the organization that interests you most and dig in. The requirement specifically says to use **a variety of resources**, so do not just check their website. Here is how to research from multiple angles:
 
@@ -98,7 +98,7 @@ Choose the organization that interests you most and dig in. The requirement spec
 
 {{< drg/image src="images/scout-volunteering-food-bank.avif" alt="A Scout in a clean uniform sorting canned goods at a community food bank alongside other volunteers of different ages" >}}
 
-## Step 3: Volunteer Eight Hours (Req 7c)
+## Requirement 7c: Volunteer Eight Hours
 
 This is the big one. You need to contribute at least **eight hours** of volunteer service to the organization you researched. Here is how to make it happen:
 
@@ -129,7 +129,7 @@ Use the volunteer service log to record your hours, tasks, and reflections. Your
     url="/merit-badges/citizenship-in-the-community/guide/volunteer-service-log/"
     type="printable" >}}
 
-## Discussing Your Experience (Req 7c)
+## Requirement 7c: Discussing Your Experience
 
 After completing your volunteer hours, your counselor will want to hear about:
 

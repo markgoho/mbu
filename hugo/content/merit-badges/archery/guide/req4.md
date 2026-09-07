@@ -20,7 +20,7 @@ This requirement covers four topics that every archer needs to understand:
 - **World Archery five-color target scoring** — the Olympic-style target
 - **NFAA target scoring** — the field and indoor targets used in national competition
 
-## Req 4a — Ends and Rounds
+## Requirement 4a — Ends and Rounds
 
 {{< drg/inherited-requirement number="4a" req_path="4.a" topic="The difference between an end and a round" />}}
 
@@ -46,7 +46,7 @@ Think of a round like a "game" — it is the full competition from start to fini
 The easiest way to remember: an **end** is a small group of arrows you shoot before retrieving them. A **round** is the entire set of ends that makes up a scored event.
 {{< /drg/tip >}}
 
-## Req 4b — Field, Target, and 3-D Archery
+## Requirement 4b — Field, Target, and 3-D Archery
 
 {{< drg/inherited-requirement number="4b" req_path="4.b" topic="The differences among field, target, and 3-D archery" />}}
 
@@ -83,7 +83,7 @@ Field archery takes place on a walking course through varied terrain — typical
 
 {{< drg/image src="images/archery-formats-comparison.avif" alt="A split scene showing three types of archery: target archery with a colorful round target on a flat range, field archery with a paper target in the woods, and a 3-D foam deer target on a wooded trail" >}}
 
-## Req 4c — World Archery Five-Color Target Scoring
+## Requirement 4c — World Archery Five-Color Target Scoring
 
 {{< drg/inherited-requirement number="4c" req_path="4.c" topic="How the five-color World Archery Federation target is scored" />}}
 
@@ -114,7 +114,7 @@ The World Archery (WA) target is the one you see at the Olympics and most organi
 Remember the color order from center to outside: **Gold, Red, Blue, Black, White**. Think "GRBBW" — or make up your own mnemonic to keep the order straight.
 {{< /drg/tip >}}
 
-## Req 4d — NFAA Target Scoring
+## Requirement 4d — NFAA Target Scoring
 
 {{< drg/inherited-requirement number="4d" req_path="4.d" topic="How the National Field Archery Association (NFAA) black-and-white field targets and blue indoor targets are scored" />}}
 

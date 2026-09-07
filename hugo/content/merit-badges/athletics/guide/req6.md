@@ -19,7 +19,7 @@ With your parent or guardian's and counselor's approval, serve as an official or
 
 Planning and officiating a sports meet puts you on the other side of athletics. Instead of competing, you are organizing, managing, and leading — skills that are just as valuable as physical performance.
 
-### Planning Your Sports Meet (Req 6a)
+### Requirement 6a: Planning Your Sports Meet
 
 Your plan needs to include **10 activities**, with at least 5 drawn from the Requirement 5 options. Here is a framework to help you design a well-organized event.
 
@@ -90,7 +90,7 @@ Your plan should include a complete equipment list. Here is a starting point:
 
 {{< drg/image src="images/field-day-setup.avif" alt="An outdoor field being set up for a sports meet, with cones marking lanes, a timing table with clipboards, and Scouts helping arrange equipment" >}}
 
-### Serving as an Official (Req 6b)
+### Requirement 6b: Serving as an Official
 
 For Requirement 6b, you will volunteer or serve as an official at an actual sports meet. This could be a school track meet, a community 5K race, a swim meet, a youth basketball tournament, or a Scouting field day.
 

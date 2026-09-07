@@ -21,13 +21,13 @@ This requirement has three parts:
 
 Walking to the edge of a cliff with nothing but a rope and a small metal device between you and the ground below — rappelling feels intimidating at first. Your brain is telling you not to lean backward over a drop. But once you trust the system, rappelling becomes one of the most exhilarating skills in climbing. The rope, the device, the belayer below, and your braking hand all work together to give you complete control of your descent.
 
-## Tying In for Rappelling (12a)
+## Requirement 12a: Tying In for Rappelling
 
 The tie-in process for rappelling is identical to climbing. Use a figure eight follow-through knot threaded through both tie-in points on your harness. This belay rope — managed by someone at the bottom using a fireman's belay — is your safety backup during the rappel.
 
 Review the tie-in steps in [Req 11a](/merit-badges/climbing/guide/req11/) if you need a refresher. The same knot, the same harness points, the same partner check.
 
-## Setting Up the Rappel Device (12b)
+## Requirement 12b: Setting Up the Rappel Device
 
 The rappel device creates friction on the rope so you can control your descent speed. You will most likely use an ATC (tubular device) or a similar device.
 
@@ -47,7 +47,7 @@ Before you weight the rappel system, pull hard on the rope to test friction. Mak
 
 In addition to the rappel rope running through your device, your belayer manages a separate belay rope (or the other end of the same rope) using a fireman's belay from below. This is your backup — if you lose control, the belayer pulls the rope taut and stops your descent.
 
-## Rappelling Technique (12c)
+## Requirement 12c: Rappelling Technique
 
 Good rappelling technique is smooth, controlled, and deliberate. Jerky movements and excessive speed are the signs of a nervous or untrained rappeller.
 

@@ -34,7 +34,7 @@ Climbing is a team activity where two people — climber and belayer — cannot 
 Never skip the signal exchange. Even if you can see your belayer clearly, use verbal signals for every transition: starting to climb, needing slack, ready to lower, and coming off the wall. Assumptions cause accidents. Signals prevent them.
 {{< /drg/safety-first >}}
 
-## Climbing Signals (5a)
+## Requirement 5a: Climbing Signals
 
 These signals form a call-and-response sequence between the climber and belayer:
 
@@ -55,7 +55,7 @@ These signals form a call-and-response sequence between the climber and belayer:
 Use your partner's name before the signal when there are multiple climbing parties nearby. "Alex, on belay?" is much clearer than a generic "On belay?" echoing off the cliff. This prevents dangerous confusion between teams.
 {{< /drg/tip >}}
 
-## Rappelling Signals (5b)
+## Requirement 5b: Rappelling Signals
 
 Rappelling uses a similar system. The rappeller controls their own descent, but a belayer (or backup belayer) manages a safety line below.
 
@@ -69,7 +69,7 @@ Rappelling uses a similar system. The rappeller controls their own descent, but 
 
 If the rappeller needs the belayer to lock the rope (stop their descent), the belayer can pull the rope taut from below — this is called a **fireman's belay**. The rappeller shouts "Stop!" if they need to pause.
 
-## Belayer Signals (5c)
+## Requirement 5c: Belayer Signals
 
 The belayer is the silent partner through most of the climb, responding to the climber's commands. But belayers also initiate signals when needed:
 
@@ -85,7 +85,7 @@ The "ROCK!" signal deserves special emphasis. It is the one signal that everyone
 
 {{< drg/image src="images/climbing-verbal-signals.avif" alt="Diagram of a climber on a wall and belayer at the base with speech bubbles showing the standard call-and-response signal sequence" >}}
 
-## Bouldering and Spotter Signals (5d)
+## Requirement 5d: Bouldering and Spotter Signals
 
 Bouldering has no rope system, so signals are simpler — but spotting communication is critical.
 

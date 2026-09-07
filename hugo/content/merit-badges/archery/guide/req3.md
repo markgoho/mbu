@@ -13,7 +13,7 @@ next_title: "Formats & Scoring"
 Do the following:
 {{< /drg/requirement >}}
 
-## Req 3a — Archery Accessories
+## Requirement 3a — Archery Accessories
 
 {{< drg/requirement number="3a" >}}
 Explain the proper use, care, and storage of, as well as the reasons for using tabs, arm guards, shooting gloves, and quivers.
@@ -72,7 +72,7 @@ A quiver holds your arrows safely and keeps them accessible. Quivers come in sev
 
 {{< drg/image src="images/archery-accessories.avif" alt="A neat arrangement of archery accessories on a table: a leather finger tab, an arm guard, a shooting glove, and a hip quiver with arrows, all laid out for inspection" >}}
 
-## Req 3b — Key Archery Terms
+## Requirement 3b — Key Archery Terms
 
 {{< drg/requirement number="3b" >}}
 Explain the following terms: draw length, draw weight, mechanical release, barebow.

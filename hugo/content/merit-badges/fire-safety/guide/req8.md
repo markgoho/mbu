@@ -156,7 +156,7 @@ Cleaner and safer than campfires:
 - **Cooking stove away from tent.** Set up outside and downwind.
 - **Store fuel safely.** Away from camp, away from heat.
 
-## Teaching Fire Skills (Req 8h)
+## Requirement 8h: Teaching Fire Skills
 
 Create a lesson plan for a fire safety skill using the EDGE method (Explain, Demonstrate, Guide, Enable):
 

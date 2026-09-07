@@ -60,7 +60,7 @@ Start by asking yourself: **What matters to you?** What have you noticed in your
 The issue you discussed or observed at the government meeting in Requirement 3 might be a great choice here. You already have some background on it, and your counselor can see the connection between the two requirements.
 {{< /drg/tip >}}
 
-## Finding the Right Branch of Government (Req 4a)
+## Requirement 4a: Finding the Right Branch of Government
 
 Once you have chosen your issue, figure out which part of your local government handles it. Here is a general guide:
 
@@ -79,7 +79,7 @@ If you are not sure, call your city hall or visit your community's website. Most
 
 {{< drg/image src="images/scout-researching-issue.avif" alt="A Scout reviewing a local newspaper and taking notes about a community issue, with a city hall visible through a window in the background" >}}
 
-## Conducting Your Interview (Req 4b)
+## Requirement 4b: Conducting Your Interview
 
 The interview is the heart of this requirement. You will talk to a real government official or employee about a real issue. This is a skill that will serve you in school, in Scouting, and eventually in your career.
 
@@ -129,7 +129,7 @@ Here are some strong questions to include — but feel free to add your own:
 Never conduct an interview alone. Have a parent, guardian, or other trusted adult with you — either in person or on the call. This is both a safety precaution and a show of respect.
 {{< /drg/safety-first >}}
 
-## Sharing What You Learned (Req 4c)
+## Requirement 4c: Sharing What You Learned
 
 When you meet with your counselor, be prepared to share:
 

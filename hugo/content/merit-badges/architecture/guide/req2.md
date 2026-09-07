@@ -15,7 +15,7 @@ In following the Leave No Trace Seven Principles and the Outdoor Code, Scouts pl
 
 This requirement connects the Scout values you already practice outdoors — Leave No Trace and the Outdoor Code — to the world of building design. Just as Scouts aim to leave the campsite better than they found it, architects are designing buildings that leave the planet better off too.
 
-## Req 2a: Sustainable Architecture and Green Buildings
+## Requirement 2a: Sustainable Architecture and Green Buildings
 
 {{< drg/requirement number="2a" >}}
 The term sustainable architecture. Identify three features typical of green buildings.
@@ -49,7 +49,7 @@ Buildings account for nearly 40% of all energy used in the United States and abo
 
 ---
 
-## Req 2b: Renewable vs. Recycled Building Materials
+## Requirement 2b: Renewable vs. Recycled Building Materials
 
 {{< drg/requirement number="2b" >}}
 The difference between renewable building materials and recycled building materials, and how each can be used in construction.
@@ -87,7 +87,7 @@ A simple way to remember the difference: **Renewable** = nature makes more. **Re
 
 ---
 
-## Req 2c: Architecture and Its Surroundings
+## Requirement 2c: Architecture and Its Surroundings
 
 {{< drg/requirement number="2c" >}}
 The relationship of architecture with its surrounding environment and the community.
@@ -114,7 +114,7 @@ The best architecture makes a community stronger. A well-designed park gives peo
 
 ---
 
-## Req 2d: Adaptive Reuse
+## Requirement 2d: Adaptive Reuse
 
 {{< drg/requirement number="2d" >}}
 How entire buildings can be reused rather than torn down when they no longer serve their original purpose.

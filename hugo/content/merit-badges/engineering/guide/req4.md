@@ -41,7 +41,7 @@ If an in-person visit is not possible, a video call can work. Many engineers are
 
 The difference between a forgettable visit and a genuinely useful one comes down to the questions you ask. Go beyond yes-or-no questions. Here are strong questions for each sub-requirement:
 
-### Req 4a — Their Work and Tools
+### Requirement 4a — Their Work and Tools
 
 - What type of engineering do you practice, and how did you end up in this specialty?
 - Walk me through a typical day — what does your morning look like?
@@ -49,7 +49,7 @@ The difference between a forgettable visit and a genuinely useful one comes down
 - What physical tools or lab equipment do you use regularly?
 - Has your field changed significantly since you started your career?
 
-### Req 4b — A Current Project
+### Requirement 4b — A Current Project
 
 - What project are you working on right now?
 - What is your specific role on the project team?
@@ -57,7 +57,7 @@ The difference between a forgettable visit and a genuinely useful one comes down
 - What is the most challenging part of this project?
 - How long will the project take from start to finish?
 
-### Req 4c — How the Work Gets Done
+### Requirement 4c — How the Work Gets Done
 
 - What is the process from initial idea to finished product or structure?
 - How do you test whether your design will work before building it?
@@ -65,14 +65,14 @@ The difference between a forgettable visit and a genuinely useful one comes down
 - How do you collaborate with engineers from other disciplines?
 - What role do prototypes, simulations, or models play in your work?
 
-### Req 4d — Engineering Reports
+### Requirement 4d — Engineering Reports
 
 - What kinds of reports or documentation do you write?
 - Who reads your reports — other engineers, managers, clients, regulators?
 - Can you show me an example of a report or drawing from a project?
 - How important is writing and communication in engineering?
 
-### Req 4e — Your Takeaways
+### Requirement 4e — Your Takeaways
 
 After the visit, reflect on what you learned and prepare to discuss these points with your counselor:
 - What surprised you most about the engineer's work?
