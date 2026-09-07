@@ -2,10 +2,10 @@
 title: "Managing Your Time"
 layout: guide
 group_title: "8. Time Management"
-req_number: "8"
+req_number: "8a"
 prev: "/merit-badges/personal-management/guide/req7e/"
 prev_title: "Reducing Debt"
-next: "/merit-badges/personal-management/guide/req9/"
+next: "/merit-badges/personal-management/guide/req9abcde/"
 next_title: "Project Planning"
 ---
 
@@ -27,7 +27,7 @@ You have spent the first seven requirements learning to manage money. Now it is 
 
 {{< drg/image src="images/scout-time-management.avif" alt="A Scout at a desk with a weekly planner open, writing in tasks while surrounded by symbols of their activities: a backpack, sports equipment, textbooks, and a Scout handbook" >}}
 
-### Step A: Your To-Do List
+### Requirement 8a: Your To-Do List
 
 A **to-do list** is simply a written list of everything you need to accomplish in the coming week. The key word is *written* — tasks in your head are easy to forget or misjudge. Writing them down makes them real and manageable.
 
@@ -44,7 +44,7 @@ Use the "Must Do / Should Do / Nice to Do" method to prioritize:
 - **Nice to Do:** Things you want to do if time allows (play video games, read for fun)
 {{< /drg/tip >}}
 
-### Step B: Your Seven-Day Schedule
+### Requirement 8b: Your Seven-Day Schedule
 
 Now take your to-do list and fit it into your week. Start by blocking out your **fixed commitments** — the things that happen at set times and cannot be moved:
 
@@ -70,7 +70,7 @@ Once your fixed activities are in place, you will see the open blocks of time wh
 Research on productivity shows that most people are only truly productive for about 3 to 4 hours per day. The rest of the time is spent on routine tasks, transitions, and recovery. Knowing this helps you protect your peak hours for your most important work.
 {{< /drg/did-you-know >}}
 
-### Step C: Following Your Schedule and Keeping a Diary
+### Requirement 8c: Following Your Schedule and Keeping a Diary
 
 This is the hands-on part — actually living your plan for a full week and recording what happens. Your diary or journal does not need to be long or fancy. For each day, note:
 
@@ -92,7 +92,7 @@ Some weeks are just like that. A family emergency, getting sick, or an unexpecte
 - **Learn from it** — a week that goes off the rails teaches you more about time management than a perfect week
 {{< /drg/be-prepared >}}
 
-### Step D: Review and Reflect
+### Requirement 8d: Review and Reflect
 
 At the end of the week, sit down with your counselor and compare your plan to your reality. This mirrors exactly what you did with your budget in [Requirement 2d](/merit-badges/personal-management/guide/req2d/) — and the lessons are similar.
 
@@ -121,4 +121,4 @@ While pen and paper work perfectly for this requirement, here are tools you migh
 {{< drg/next-page
     text="You have experienced the power of managing your time"
     teaser="Now apply your planning skills to a full project — from idea to completion."
-    url="/merit-badges/personal-management/guide/req9/" >}}
+    url="/merit-badges/personal-management/guide/req9abcde/" >}}

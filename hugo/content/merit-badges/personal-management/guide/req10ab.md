@@ -2,8 +2,8 @@
 title: "Career Planning"
 layout: guide
 group_title: "10. Career Exploration"
-req_number: "10"
-prev: "/merit-badges/personal-management/guide/req9/"
+req_number: "10a"
+prev: "/merit-badges/personal-management/guide/req9abcde/"
 prev_title: "Project Planning"
 next: "/merit-badges/personal-management/guide/extended-learning/"
 next_title: "Extended Learning"
@@ -21,7 +21,7 @@ b. Explain to your counselor what the associated costs might be to pursue this c
 
 This final requirement brings everything together. You have learned to manage money, manage time, and plan projects. Now apply those skills to the biggest project of all: your career. You do not have to decide your whole life right now — but thinking seriously about a career path helps you make smart decisions today that pay off later.
 
-### Step A: Choosing and Researching a Career
+### Requirement 10a: Choosing and Researching a Career
 
 **How to choose a career to research:**
 
@@ -53,7 +53,7 @@ You are not making a lifelong commitment — you are exploring. Pick a career th
 The Bureau of Labor Statistics Occupational Outlook Handbook is the gold standard for career research. It covers hundreds of occupations with detailed information on duties, education, pay, and job outlook. It is free, unbiased, and updated regularly.
 {{< /drg/tip >}}
 
-### Step B: Understanding and Preparing for Costs
+### Requirement 10b: Understanding and Preparing for Costs
 
 Every career path has costs associated with getting there. Research the specific costs for your chosen career:
 

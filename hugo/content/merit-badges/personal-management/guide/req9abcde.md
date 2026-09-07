@@ -2,10 +2,10 @@
 title: "Project Planning"
 layout: guide
 group_title: "9. Project Planning"
-req_number: "9"
-prev: "/merit-badges/personal-management/guide/req8/"
+req_number: "9a"
+prev: "/merit-badges/personal-management/guide/req8abcd/"
 prev_title: "Managing Your Time"
-next: "/merit-badges/personal-management/guide/req10/"
+next: "/merit-badges/personal-management/guide/req10ab/"
 next_title: "Career Planning"
 ---
 
@@ -45,7 +45,7 @@ Choose a project that is complex enough to plan but realistic enough to be achie
 
 {{< drg/image src="images/scout-project-planning.avif" alt="A Scout standing in front of a whiteboard covered with sticky notes, timelines, and a project plan outline, with a marker in hand, looking focused and organized" >}}
 
-### Step A: Define Your Project and Goal
+### Requirement 9a: Define Your Project and Goal
 
 Every good project starts with a clear goal. Your goal should answer the question: **"When this project is complete, what will we have accomplished?"**
 
@@ -58,7 +58,7 @@ Write your goal using the **SMART framework:**
 
 **Example:** "Organize a one-day community park cleanup on April 15 with at least 10 volunteers, removing litter and planting 20 native plants in the garden bed."
 
-### Step B: Develop a Timeline
+### Requirement 9b: Develop a Timeline
 
 A timeline breaks your project into individual steps and assigns each step a deadline. This is the backbone of your plan.
 
@@ -76,7 +76,7 @@ Start from your completion date and work backward:
 - 1 week after: Send thank-you notes and report results to the park authority
 {{< /drg/checklist >}}
 
-### Step C: Describe Your Project
+### Requirement 9c: Describe Your Project
 
 Write a clear description that someone who knows nothing about your project could read and understand. Include:
 
@@ -91,7 +91,7 @@ Write a clear description that someone who knows nothing about your project coul
 Professional project managers use a document called a "project charter" that covers these same elements. By completing this requirement, you are learning the same framework used to manage everything from construction projects to space missions.
 {{< /drg/did-you-know >}}
 
-### Step D: List Your Resources
+### Requirement 9d: List Your Resources
 
 Resources are everything you need to make the project happen. Think broadly:
 
@@ -116,7 +116,7 @@ Resources are everything you need to make the project happen. Think broadly:
 
 For each resource, explain how it contributes to achieving your goal. This shows your counselor that you have thought through not just *what* you need but *why* you need it.
 
-### Step E: Develop a Budget
+### Requirement 9e: Develop a Budget
 
 Apply the budgeting skills you learned in [Requirement 2](/merit-badges/personal-management/guide/req2a/) to your project. Your project budget should include:
 
@@ -164,4 +164,4 @@ Your counselor reviews many project plans. Here is how to make yours excellent:
 {{< drg/next-page
     text="You have mastered the art of project planning"
     teaser="For the final requirement, explore career possibilities and plan for your future."
-    url="/merit-badges/personal-management/guide/req10/" >}}
+    url="/merit-badges/personal-management/guide/req10ab/" >}}
