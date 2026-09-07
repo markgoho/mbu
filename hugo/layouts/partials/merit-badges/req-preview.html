@@ -32,13 +32,19 @@
   {{ $subLookup = partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $firstSub.path "children" $firstSub.subrequirements) }}
 {{ end }}
 
+{{/* group_title is authored with its own leading "N. " for the study-guide/
+  print kicker (guide.html, guide-print.html, printable.html), but this
+  card already shows the requirement's number in its own circular badge --
+  reusing group_title verbatim here would double it ("1." badge next to a
+  "1. Smart Shopping" title), so strip the ordinal for this use only.
+*/}}
 {{ if not $title }}
   {{ if $lookup.eyebrow }}
-    {{ $title = $lookup.eyebrow }}
+    {{ $title = replaceRE `^[0-9]+\.\s*` "" $lookup.eyebrow }}
   {{ else if $subLookup.title }}
     {{ $title = $subLookup.title }}
   {{ else if $subLookup.eyebrow }}
-    {{ $title = $subLookup.eyebrow }}
+    {{ $title = replaceRE `^[0-9]+\.\s*` "" $subLookup.eyebrow }}
   {{ else }}
     {{ $title = printf "Requirement %s" $req.path }}
   {{ end }}
