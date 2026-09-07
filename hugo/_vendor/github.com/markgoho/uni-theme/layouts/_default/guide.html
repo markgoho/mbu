@@ -113,7 +113,7 @@
         {{ $railHTML := cond (eq .text_format "html") (.text | safeHTML) (.text | markdownify) }}
         {{ $railHTML = replaceRE `(?s)<ul[^>]*>.*?</ul>` "" $railHTML }}
         {{ $railHTML = replaceRE `(?s)<ol[^>]*>.*?</ol>` "" $railHTML }}
-        <aside class="req-rail" inert>
+        <aside class="req-rail" aria-hidden="true" tabindex="-1">
           <div class="req-rail__inner">
             <span class="req-rail__number">{{ .number }}.</span>
             <div class="req-rail__text">{{ $railHTML | safeHTML }}{{ with .option }}<strong>{{ . }}</strong>{{ end }}</div>
