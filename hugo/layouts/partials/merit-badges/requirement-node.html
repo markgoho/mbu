@@ -89,7 +89,15 @@
   {{ with $ownPage }}
     {{ $guideHref = .RelPermalink }}
   {{ end }}
-  {{ $ownGuideForChildren = $ownPage }}
+
+  {{/* Children still need the page itself, covers or not: a merged
+    page found via rule 3 belongs to the first child (handled above),
+    but every OTHER child (1b, 1c, ...) has no page of its own either
+    and must inherit this same page to find its own "## Requirement 1b"
+    fragment via req-guide-fragment.html below. Passing $ownPage instead
+    dropped it whenever $lookup.covers was false, so only the first
+    lettered child of a merged page ever resolved a guide link. */}}
+  {{ $ownGuideForChildren = $lookup.page }}
 {{ else }}
   {{ $variant := .variant }}
   {{ $lookup := .lookup }}
