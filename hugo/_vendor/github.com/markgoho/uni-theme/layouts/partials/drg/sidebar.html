@@ -71,9 +71,20 @@
               {{ $groupMarkers = $groupMarkers | append (replaceRE $markerRE "$1" $itemClean) }}
             {{ end }}
           {{ end }}
+          {{/* A single-item group's own header can be redundant with
+            that item's title even with no leading number (scouting-u's
+            rank-derived singletons: group_title and item title are both
+            $req.short, so they're always identical) -- the numbered
+            case is left to the guard below unchanged (191ad0c). */}}
+          {{ $soleTitle := "" }}
+          {{ if eq (len .items) 1 }}
+            {{ $only := index .items 0 }}
+            {{ $onlyClean := replaceRE $prefixRE "" $only.title }}
+            {{ $soleTitle = cond (findRE $markerRE $onlyClean) (replaceRE $markerRE "$2" $onlyClean) $onlyClean }}
+          {{ end }}
           {{ $groupLabel := "" }}
           {{ if and .group_title (or (gt (len .items) 1) (not (findRE `^[0-9]` .group_title))) }}
-            {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $groupMarkers) }}
+            {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $groupMarkers "title" $soleTitle) }}
           {{ end }}
           {{ with $groupLabel }}
             <li class="req-nav__group-title">{{ . }}</li>
@@ -191,9 +202,15 @@
                 {{ $groupMarkers = $groupMarkers | append (replaceRE $markerRE "$1" $itemClean) }}
               {{ end }}
             {{ end }}
+            {{ $soleTitle := "" }}
+            {{ if eq (len .items) 1 }}
+              {{ $only := index .items 0 }}
+              {{ $onlyClean := replaceRE $prefixRE "" $only.title }}
+              {{ $soleTitle = cond (findRE $markerRE $onlyClean) (replaceRE $markerRE "$2" $onlyClean) $onlyClean }}
+            {{ end }}
             {{ $groupLabel := "" }}
             {{ if and .group_title (or (gt (len .items) 1) (not (findRE `^[0-9]` .group_title))) }}
-              {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $groupMarkers) }}
+              {{ $groupLabel = partial "text/group-label.html" (dict "label" .group_title "numbers" $groupMarkers "title" $soleTitle) }}
             {{ end }}
             {{ with $groupLabel }}
               <li class="req-mobile-nav__group">{{ . }}</li>
