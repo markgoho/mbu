@@ -5,7 +5,7 @@ group_title: "7. Credit & Debt"
 req_number: "7e"
 prev: "/merit-badges/personal-management/guide/req7d/"
 prev_title: "Credit Reports"
-next: "/merit-badges/personal-management/guide/req8abcd/"
+next: "/merit-badges/personal-management/guide/req8/"
 next_title: "Managing Your Time"
 ---
 
@@ -91,4 +91,4 @@ The easiest debt to pay off is the debt you never take on. The budgeting skills 
 {{< drg/next-page
     text="You have learned how to handle credit and debt responsibly"
     teaser="Time to shift gears — from managing money to managing another precious resource: your time."
-    url="/merit-badges/personal-management/guide/req8abcd/" >}}
+    url="/merit-badges/personal-management/guide/req8/" >}}

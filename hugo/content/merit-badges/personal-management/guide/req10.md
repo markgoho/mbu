@@ -2,8 +2,8 @@
 title: "Career Planning"
 layout: guide
 group_title: "10. Career Exploration"
-req_number: "10a"
-prev: "/merit-badges/personal-management/guide/req9abcde/"
+req_number: "10"
+prev: "/merit-badges/personal-management/guide/req9/"
 prev_title: "Project Planning"
 next: "/merit-badges/personal-management/guide/extended-learning/"
 next_title: "Extended Learning"

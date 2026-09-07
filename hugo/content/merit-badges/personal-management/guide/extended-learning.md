@@ -2,7 +2,7 @@
 title: "Extended Learning"
 layout: guide
 group_title: "Beyond the Badge"
-prev: "/merit-badges/personal-management/guide/req10ab/"
+prev: "/merit-badges/personal-management/guide/req10/"
 prev_title: "Req 10 — Career Planning"
 ---
 

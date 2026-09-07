@@ -2,10 +2,10 @@
 title: "Managing Your Time"
 layout: guide
 group_title: "8. Time Management"
-req_number: "8a"
+req_number: "8"
 prev: "/merit-badges/personal-management/guide/req7e/"
 prev_title: "Reducing Debt"
-next: "/merit-badges/personal-management/guide/req9abcde/"
+next: "/merit-badges/personal-management/guide/req9/"
 next_title: "Project Planning"
 ---
 
@@ -121,4 +121,4 @@ While pen and paper work perfectly for this requirement, here are tools you migh
 {{< drg/next-page
     text="You have experienced the power of managing your time"
     teaser="Now apply your planning skills to a full project — from idea to completion."
-    url="/merit-badges/personal-management/guide/req9abcde/" >}}
+    url="/merit-badges/personal-management/guide/req9/" >}}

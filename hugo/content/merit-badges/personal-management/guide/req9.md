@@ -2,10 +2,10 @@
 title: "Project Planning"
 layout: guide
 group_title: "9. Project Planning"
-req_number: "9a"
-prev: "/merit-badges/personal-management/guide/req8abcd/"
+req_number: "9"
+prev: "/merit-badges/personal-management/guide/req8/"
 prev_title: "Managing Your Time"
-next: "/merit-badges/personal-management/guide/req10ab/"
+next: "/merit-badges/personal-management/guide/req10/"
 next_title: "Career Planning"
 ---
 
@@ -164,4 +164,4 @@ Your counselor reviews many project plans. Here is how to make yours excellent:
 {{< drg/next-page
     text="You have mastered the art of project planning"
     teaser="For the final requirement, explore career possibilities and plan for your future."
-    url="/merit-badges/personal-management/guide/req10ab/" >}}
+    url="/merit-badges/personal-management/guide/req10/" >}}
