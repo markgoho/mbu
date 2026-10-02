@@ -51,6 +51,23 @@ export default defineConfig(
     },
   },
   {
+    // These specs moved from the Angular app with only their imports changed (#232).
+    files: ['src/lib/rosterCsv.spec.ts', 'src/lib/scheduleRules.spec.ts'],
+    rules: {
+      'unicorn/consistent-function-scoping': 'off',
+      'unicorn/max-nested-calls': 'off',
+      'unicorn/no-null': 'off',
+      'unicorn/prefer-split-limit': 'off',
+    },
+  },
+  {
+    // `findScheduleConflict` gives `null` for "no conflict", as its moved spec asserts (#232).
+    files: ['src/lib/scheduleRules.ts'],
+    rules: {
+      'unicorn/no-null': 'off',
+    },
+  },
+  {
     // SvelteKit sets the route file names (+page.svelte, +layout.ts, [param]/).
     files: ['src/routes/**'],
     rules: {

@@ -80,6 +80,29 @@ The `(app)` guard returns the bootstrap response as `data.session`. A page in th
 
 Use the route ID with `resolve()` from `$app/paths`, for example `resolve('/(signed-out)/sign-in')`. The result is the URL (`/sign-in`).
 
+## Domain modules
+
+Each API domain is one module of functions in `src/lib/`. A function is one request. It takes a `Fetcher` first, and it throws an `ApiError` for a response that is not OK. The modules keep no state, do not import from `$app/*`, and do not call `fetch`.
+
+| Module             | Functions                                                                                                                                                                                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `universities.ts`  | `listMine`, `listBadges`, `getUniversity`, `getPublicUniversity`, `getReviewQueue`, `createUniversity`, `patchUniversity`, `deleteUniversity`, `submitUniversity`, `closeUniversity`, `putPeriods`, `createClass`, `patchClass`, `deleteClass`, `approveUniversity`, `rejectUniversity` |
+| `registrations.ts` | `getSchedule`, `getRoster`, `registerScout`, `cancelRegistration`                                                                                                                                                                                                                       |
+| `scouts.ts`        | `listScouts`, `createScout`, `removeScout`                                                                                                                                                                                                                                              |
+| `health.ts`        | `getHealth`                                                                                                                                                                                                                                                                             |
+
+Rules for a route that uses them:
+
+- A read goes in the `load` of `+page.ts`, with `apiFetchNoRedirect`. The route owns its read: the `load` gets the ID from `params`. There is no "active ID" in a module.
+- A `load` under a guard group calls `await parent()` first. A `load` that is in no guard group (`/e/[id]`) calls `await getFirebaseAuth().authStateReady()` before the first request.
+- The `load` maps the `ApiError`. For a 401, `redirect(303, resolve('/(signed-out)/sign-in'))`. For a 403 on a university that the user does not own, `redirect(303, ...)` to `/universities?denied=1`, and the dashboard shows the message from the URL. For other errors, `error(status, apiErrorMessage(error, fallback))`.
+- A write goes in a component, with `apiFetch`. After a write, call `invalidateAll()` (or `invalidate` with a `depends()` key of the `load`). The modules do not load data again after a write.
+- A route spec mocks the module (`vi.mock('#lib/universities.js')`). The modules have no specs of their own.
+
+`formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error`.
+
+The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
+
 ## Environment
 
 `.env.development` sets `VITE_FIREBASE_AUTH_EMULATOR_HOST`, so that `bun run dev` uses the local Auth emulator.
