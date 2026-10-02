@@ -52,6 +52,34 @@ All code gets Firebase Auth and the API through these modules in `src/lib/`:
 - `apiErrorMessage.ts`: `apiErrorMessage(error, fallback)` gives the text to show for a failed call.
 - `api-types/`: the request and response types of the API.
 
+## Session and route guards
+
+`src/lib/session.svelte.ts` is the session of the signed-in user:
+
+- `session.user`, `session.emailVerified` and `session.superAdmin` are reactive. They come from the Firebase ID token listener, which starts at the first read.
+- `signInWithGoogle`, `completeGoogleRedirect`, `signInWithEmailPassword`, `signUpWithEmailPassword`, `resendEmailVerification`, `reloadUser` and `signOut` change the session. The functions that change who is signed in, or the state of the user, call `invalidateAll()` themselves, so the guards run again. A caller does not do that.
+- `bootstrap`, `deleteAccount` and `ackRosterExport` call the API. They take a `Fetcher`.
+
+A guard is the `load` of a `+layout.ts` in a route group. The route groups do not change the URL. The nesting is the order of the guards:
+
+| Route group                       | Guard                                                                        |
+| --------------------------------- | ---------------------------------------------------------------------------- |
+| `(signed-out)`                    | A signed-in user goes to the `returnTo` path, or to `/`.                     |
+| `(authed)`                        | A visitor with no session goes to `/sign-in`.                                |
+| `(authed)/(verified)`             | A user with an email that is not verified goes to `/verify-email`.           |
+| `(authed)/(verified)/(app)`       | Bootstraps the account. An account that needs consent goes to `/onboarding`. |
+| `(authed)/(verified)/(app)/admin` | A user with no `superAdmin` claim goes to `/`.                               |
+
+Rules for a guard `load`:
+
+- `await parent()` first. SvelteKit runs the layout loads of a route at the same time, and this gives the guards a fixed order.
+- `await getFirebaseAuth().authStateReady()` before the read of `currentUser` or an API call.
+- Use `redirect(303, ...)`, not `goto()`. Use `apiFetchNoRedirect` for an API call.
+
+The `(app)` guard returns the bootstrap response as `data.session`. A page in that group reads the account from `page.data.session`. `invalidate(SESSION_DEPENDENCY)` loads it again.
+
+Use the route ID with `resolve()` from `$app/paths`, for example `resolve('/(signed-out)/sign-in')`. The result is the URL (`/sign-in`).
+
 ## Environment
 
 `.env.development` sets `VITE_FIREBASE_AUTH_EMULATOR_HOST`, so that `bun run dev` uses the local Auth emulator.

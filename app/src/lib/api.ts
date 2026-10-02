@@ -60,7 +60,7 @@ export async function apiFetch(path: string, init: RequestInit = {}): Promise<Re
   redirectGuard.isRedirecting = true;
   try {
     await signOutAfter401();
-    await goto(resolve('/sign-in'));
+    await goto(resolve('/(signed-out)/sign-in'));
   } catch (error) {
     // The caller gets the 401 response, not a navigation failure.
     console.error('Redirect to sign-in after 401 failed:', error);
