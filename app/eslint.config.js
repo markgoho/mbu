@@ -27,6 +27,8 @@ export default defineConfig(
         'error',
         { cases: { camelCase: true, pascalCase: true, kebabCase: true } },
       ],
+      // The API types use `null`, so the fixtures and the request bodies must use it too (#233).
+      'unicorn/no-null': 'off',
     },
   },
   {
@@ -56,15 +58,7 @@ export default defineConfig(
     rules: {
       'unicorn/consistent-function-scoping': 'off',
       'unicorn/max-nested-calls': 'off',
-      'unicorn/no-null': 'off',
       'unicorn/prefer-split-limit': 'off',
-    },
-  },
-  {
-    // `findScheduleConflict` gives `null` for "no conflict", as its moved spec asserts (#232).
-    files: ['src/lib/scheduleRules.ts'],
-    rules: {
-      'unicorn/no-null': 'off',
     },
   },
   {
@@ -72,6 +66,40 @@ export default defineConfig(
     files: ['src/routes/**'],
     rules: {
       'unicorn/filename-case': 'off',
+    },
+  },
+  {
+    // Pages use the atoms, not the native elements, so that #102 can style each control in one place (#233).
+    files: ['**/*.svelte'],
+    ignores: ['src/lib/components/atoms/*.svelte'],
+    rules: {
+      'svelte/no-restricted-html-elements': [
+        'error',
+        {
+          elements: ['button'],
+          message:
+            'Use the Button atom (#lib/components/atoms/Button.svelte), not a raw <button> element.',
+        },
+        {
+          elements: ['a'],
+          message: 'Use the Link atom (#lib/components/atoms/Link.svelte), not a raw <a> element.',
+        },
+        {
+          elements: ['select'],
+          message:
+            'Use the Select atom (#lib/components/atoms/Select.svelte), not a raw <select> element.',
+        },
+        {
+          elements: ['textarea'],
+          message:
+            'Use the Textarea atom (#lib/components/atoms/Textarea.svelte), not a raw <textarea> element.',
+        },
+        {
+          elements: ['input'],
+          message:
+            'Use the TextInput atom (#lib/components/atoms/TextInput.svelte) or the Checkbox atom (#lib/components/atoms/Checkbox.svelte), not a raw <input> element. A radio input and a file input have no atom: disable this rule on that line, with a comment that gives the reason.',
+        },
+      ],
     },
   },
 );

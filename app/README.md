@@ -103,6 +103,27 @@ Rules for a route that uses them:
 
 The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
 
+## Shared components
+
+The shared components are in `src/lib/components/`. They have the same copy and CSS as the shared components of the Angular app. #102 owns the visual design.
+
+- `StatusBadge.svelte`: the status of a university. `status` is a `UniversityStatus`.
+- `ConfirmDialog.svelte`: a question with a confirm action and a cancel action, in a native modal `<dialog>`. Render it always and bind `open`. Do not put it in an `{#if}` block. `onCancel` runs for the cancel button, the Escape key and a click on the backdrop.
+
+The atoms are in `src/lib/components/atoms/`: `Button`, `Link`, `TextInput`, `Select`, `Textarea`, `Checkbox`. Each atom renders one native element, passes all other attributes and event handlers to it, and has no style.
+
+Rules for a page:
+
+- Use the atoms. ESLint (`svelte/no-restricted-html-elements`) refuses a raw `<button>`, `<a>`, `<input>`, `<select>` or `<textarea>` in all `.svelte` files but the atoms. A radio input and a file input have no atom: disable the rule on that line, with a comment that gives the reason.
+- `Button` has `type="button"` as the default. Give `type="submit"` to the submit button of a form.
+- `Link` takes an `href` that is already resolved. For a route of the app, make it with `resolve()` from `$app/paths`. Add a query string to the result of `resolve()`.
+- `TextInput`, `Select` and `Textarea` bind `value`. `Checkbox` binds `checked`. The `value` of a `TextInput` with `type="number"` is a number, as for the native element.
+- The children of `Select` are its `<option>` elements. `Checkbox` and `TextInput` render only the control: the page supplies the `<label>`.
+- A `class` on an atom goes to the native element, but a scoped `<style>` rule of the page does not match an element of a child component. Use `:global()` below a scoped selector, for example `.dashboard :global(.dashboard__card)`.
+- `FormAction` still asks its `confirm` question with `globalThis.confirm`. #102 decides if it moves to `ConfirmDialog`.
+
+A component spec is `<Name>.svelte.spec.ts` next to the component. For a `children` snippet, use `htmlSnippet()` from `src/lib/components/testSnippet.ts`. For a bindable prop, give `render` a property with a getter and a setter, and assert on the value that the setter received.
+
 ## Environment
 
 `.env.development` sets `VITE_FIREBASE_AUTH_EMULATOR_HOST`, so that `bun run dev` uses the local Auth emulator.
