@@ -1,7 +1,7 @@
 <!--
   Placeholder: `apiFetch` goes to this route on a 401, and `goto()` rejects a
-  URL that is not a route of the app. #231 puts the route in its guard group and
-  #234 replaces this page with the sign-in form.
+  URL that is not a route of the app. #234 replaces this page with the sign-in
+  form.
 -->
 <svelte:head>
   <title>Sign in - Merit Badge University Platform</title>
