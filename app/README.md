@@ -95,13 +95,13 @@ Rules for a route that uses them:
 
 - A read goes in the `load` of `+page.ts`, with `apiFetchNoRedirect`. The route owns its read: the `load` gets the ID from `params`. There is no "active ID" in a module.
 - A `load` under a guard group calls `await parent()` first. A `load` that is in no guard group (`/e/[id]`) calls `await getFirebaseAuth().authStateReady()` before the first request.
-- The `load` maps the `ApiError`. For a 401, `redirect(303, resolve('/(signed-out)/sign-in'))`. For a 403 on a university that the user does not own, `redirect(303, ...)` to `/universities?denied=<reason>`, and the dashboard shows the message of that reason. For other errors, `error(status, apiErrorMessage(error, fallback))`. `failLoad(error, { fallback, denied? })` from `loadFailure.ts` does this mapping: call it in the `catch` block of the read. The reasons are `university` (the editor) and `roster` (the rosters). A route with a new denied message adds its reason to `DENIED_MESSAGES` in that module.
+- The `load` maps the `ApiError`. For a 401, `redirect(303, resolve('/(signed-out)/sign-in'))`. For a 403 on a university that the user does not own, `redirect(303, ...)` to `/universities?denied=<reason>`, and the dashboard shows the message of that reason. For other errors, `error(status, apiErrorMessage(error, fallback))`. `failLoad(error, { fallback, denied? })` from `loadFailure.ts` does this mapping: call it in the `catch` block of the read. The reasons are `university` (the editor) and `roster` (the rosters). A route with a new denied message adds its reason to `DENIED_MESSAGES` in that module. With `forbidden: 'home'`, a 403 goes to the app home with no message: the super-admin routes use it.
 - A write goes in a component, with `apiFetch`. After a write, call `invalidateAll()` (or `invalidate` with a `depends()` key of the `load`). The modules do not load data again after a write.
 - A route spec mocks the module (`vi.mock('#lib/universities.js')`). The modules have no specs of their own.
 
 `formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error`.
 
-The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `periodOverlap.ts` (`findOverlaps`, periods that overlap in time), `formatDate.ts` (`formatMediumDate`, date text as `Jun 1, 2026`, and `formatShortTime`, time text as `9:00 AM`; each takes an optional IANA timezone, and uses the timezone of the browser when there is none), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
+The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `periodOverlap.ts` (`findOverlaps`, periods that overlap in time), `formatDate.ts` (`formatMediumDate`, date text as `Jun 1, 2026`, `formatShortTime`, time text as `9:00 AM`, and `formatMediumDateTime`, date and time text as `Jun 1, 2026, 9:00:00 AM`; each takes an optional IANA timezone, and uses the timezone of the browser when there is none), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
 
 ## Shared components
 
@@ -153,6 +153,12 @@ Rules from the parent routes:
 - A page of an event gives the timezone of the university to `formatMediumDate` and `formatShortTime`.
 - A write whose failure is not always an error message does not use `FormAction`. The registration page keeps its own state, because a `class_full` answer opens the waitlist offer.
 - A component of one route that shows a fixed message for a failed write (`ScoutQuickAdd.svelte`) also keeps its own state. It still takes a callback prop that returns a promise (`onAdd`).
+
+Rules from the super-admin routes:
+
+- A `load` under `admin/` gives `forbidden: 'home'` to `failLoad`. The `admin` guard reads the `superAdmin` claim from the ID token, and the API reads it again. A 403 from the API then means that the user has no claim now, so the user goes to `/`, as the guard does. Do not give `denied` there: that message is for a chancellor.
+- A page that ends with a decision (approve, reject) goes back to its list with `goto(path, { refreshAll: true })` in the `onSuccess` of its `FormAction`. The list and the guards above it then load again.
+- The review queue has no timezone of an event in its rows. It shows dates and times in the timezone of the browser.
 
 ## Environment
 

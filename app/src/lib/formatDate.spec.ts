@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatMediumDate, formatShortTime } from '#lib/formatDate.js';
+import { formatMediumDate, formatMediumDateTime, formatShortTime } from '#lib/formatDate.js';
 
 describe('formatMediumDate', () => {
   it('gives the month, the day and the year', () => {
@@ -25,5 +25,18 @@ describe('formatShortTime', () => {
 
   it('uses the time in the given timezone, not the time of the runtime', () => {
     expect(formatShortTime('2026-06-01T13:00:00.000Z', 'America/Chicago')).toBe('8:00 AM');
+  });
+});
+
+describe('formatMediumDateTime', () => {
+  it('gives the date and the time with seconds', () => {
+    // 13:05:09 UTC is 09:05:09 in America/New_York (the timezone of the specs).
+    expect(formatMediumDateTime('2026-06-01T13:05:09.000Z')).toBe('Jun 1, 2026, 9:05:09 AM');
+  });
+
+  it('uses the date and the time in the given timezone, not those of the runtime', () => {
+    expect(formatMediumDateTime('2026-07-01T00:00:00.000Z', 'Asia/Tokyo')).toBe(
+      'Jul 1, 2026, 9:00:00 AM',
+    );
   });
 });
