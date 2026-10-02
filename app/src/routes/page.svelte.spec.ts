@@ -1,4 +1,5 @@
-// Placeholder spec: it proves that the `client` (browser) Vitest project runs.
+// Placeholder spec: it proves that the `client` (browser) Vitest project runs,
+// with the timezone that vite.config.ts sets on the browser context.
 // Delete it when real component specs exist.
 import { describe, expect, it } from 'vitest';
 import { page } from 'vitest/browser';
@@ -12,5 +13,11 @@ describe('placeholder page', () => {
     await expect
       .element(page.getByRole('heading', { name: 'Merit Badge University Platform' }))
       .toBeVisible();
+  });
+});
+
+describe('client project timezone', () => {
+  it('is America/New_York', () => {
+    expect(new Intl.DateTimeFormat().resolvedOptions().timeZone).toBe('America/New_York');
   });
 });
