@@ -31,12 +31,12 @@ const universities = vi.hoisted(() => ({
     >(),
   deleteClass: vi.fn<(fetcher: Fetcher, id: string, classId: string) => Promise<void>>(),
 }));
-const { goto, invalidateAll } = vi.hoisted(() => ({
+const { goto, refreshAll } = vi.hoisted(() => ({
   goto: vi.fn<(url: string) => Promise<void>>(),
-  invalidateAll: vi.fn<() => Promise<void>>(),
+  refreshAll: vi.fn<() => Promise<void>>(),
 }));
 vi.mock('#lib/universities.js', () => universities);
-vi.mock('$app/navigation', () => ({ goto, invalidateAll }));
+vi.mock('$app/navigation', () => ({ goto, refreshAll }));
 
 const session: BootstrapResponse = {
   user: {
@@ -200,9 +200,9 @@ async function setup({
     badges,
   });
   const { rerender } = await render(Page, { data: toData() });
-  // `invalidateAll()` runs the `load` again, which gives the page new `data`.
-  invalidateAll.mockReset();
-  invalidateAll.mockImplementation(() => rerender({ data: toData() }));
+  // `refreshAll()` runs the `load` again, which gives the page new `data`.
+  refreshAll.mockReset();
+  refreshAll.mockImplementation(() => rerender({ data: toData() }));
   goto.mockReset();
   goto.mockResolvedValue();
 
@@ -358,7 +358,7 @@ describe('university editor page', () => {
       'uni1',
     );
     // The `load` of the deleted university must not run again.
-    expect(invalidateAll).not.toHaveBeenCalled();
+    expect(refreshAll).not.toHaveBeenCalled();
   });
 
   it('does not delete the draft when the user declines', async () => {
@@ -415,7 +415,7 @@ describe('university editor page', () => {
     await page.getByRole('button', { name: 'Save university' }).click();
 
     await expect.element(page.getByRole('alert')).toHaveTextContent('Title is already in use');
-    expect(invalidateAll).not.toHaveBeenCalled();
+    expect(refreshAll).not.toHaveBeenCalled();
   });
 
   it('saves the periods of the university', async () => {
@@ -426,7 +426,7 @@ describe('university editor page', () => {
 
     await page.getByRole('button', { name: 'Save periods' }).click();
 
-    await expect.poll(() => invalidateAll).toHaveBeenCalledOnce();
+    await expect.poll(() => refreshAll).toHaveBeenCalledOnce();
     expect(universities.putPeriods).toHaveBeenCalledExactlyOnceWith(expect.any(Function), 'uni1', {
       periods: [
         {

@@ -11,13 +11,13 @@
  *   invalidate all `load` data themselves. The guard loads then run again, so
  *   data of the previous user or state is not reused. On the sign-in page, this
  *   is also what sends the user to `returnTo`: the `(signed-out)` guard runs
- *   again and redirects. A caller does not need its own `invalidateAll()`.
+ *   again and redirects. A caller does not need its own `refreshAll()`.
  * - `session.user` is reactive. A page under the `(app)` group reads the account
  *   (`BootstrapResponse`) from `page.data.session`, not from this module.
  * - The route guards do not read `session.superAdmin`. It is `false` until the
  *   claim resolves. The `admin` guard reads the claim from the ID token.
  */
-import { goto, invalidate, invalidateAll } from '$app/navigation';
+import { goto, invalidate, refreshAll } from '$app/navigation';
 import { resolve } from '$app/paths';
 import {
   createUserWithEmailAndPassword,
@@ -178,7 +178,7 @@ export async function bootstrap(fetcher: Fetcher): Promise<BootstrapResponse> {
 /**
  * Saves the name and the acceptance of the Terms and the Privacy Policy
  * (`PATCH /api/users/me`). The caller then goes to a route of the `(app)` group
- * with `invalidateAll`, so that the `(app)` guard bootstraps the account again.
+ * with `refreshAll`, so that the `(app)` guard bootstraps the account again.
  */
 export async function completeOnboarding(
   fetcher: Fetcher,
@@ -212,7 +212,7 @@ export async function completeGoogleRedirect(): Promise<UserCredential | undefin
   } catch (error) {
     throw translateAuthError(error, 'completeGoogleRedirect');
   }
-  if (credential) await invalidateAll();
+  if (credential) await refreshAll();
   return credential;
 }
 
@@ -226,7 +226,7 @@ export async function signInWithEmailPassword(
   } catch (error) {
     throw translateAuthError(error, 'signInWithEmailPassword');
   }
-  await invalidateAll();
+  await refreshAll();
   return credential;
 }
 
@@ -255,7 +255,7 @@ export async function signUpWithEmailPassword(
       errorCode: authErrorCode(error),
     });
   }
-  await invalidateAll();
+  await refreshAll();
   return credential;
 }
 
@@ -283,10 +283,10 @@ export async function reloadUser(): Promise<void> {
   } catch (error) {
     console.error('Error reloading user:', error);
     // Firebase signs the user out when the token is not valid, so the guards run again here too.
-    await invalidateAll();
+    await refreshAll();
     throw new Error('Failed to reload user data.', { cause: error });
   }
-  await invalidateAll();
+  await refreshAll();
 }
 
 /**
@@ -303,7 +303,7 @@ export async function signOut(): Promise<void> {
     });
     throw new Error('Failed to sign out. Please try again.', { cause: error });
   }
-  await goto(resolve('/(signed-out)/sign-in'), { invalidateAll: true });
+  await goto(resolve('/(signed-out)/sign-in'), { refreshAll: true });
 }
 
 /**

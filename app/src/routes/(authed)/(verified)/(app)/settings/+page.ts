@@ -10,7 +10,7 @@ const LOAD_FAILED_MESSAGE = 'Could not load your scouts. Please try again.';
 
 /**
  * The scouts of the signed-in user. The page deletes a scout and then calls
- * `invalidateAll()`, which runs this load again.
+ * `refreshAll()`, which runs this load again.
  */
 export const load: PageLoad = async ({ parent }) => {
   await parent();

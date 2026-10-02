@@ -72,7 +72,7 @@ All code gets Firebase Auth and the API through these modules in `src/lib/`:
 `src/lib/session.svelte.ts` is the session of the signed-in user:
 
 - `session.user`, `session.emailVerified` and `session.superAdmin` are reactive. They come from the Firebase ID token listener, which starts at the first read.
-- `signInWithGoogle`, `completeGoogleRedirect`, `signInWithEmailPassword`, `signUpWithEmailPassword`, `resendEmailVerification`, `reloadUser` and `signOut` change the session. The functions that change who is signed in, or the state of the user, call `invalidateAll()` themselves, so the guards run again. A caller does not do that.
+- `signInWithGoogle`, `completeGoogleRedirect`, `signInWithEmailPassword`, `signUpWithEmailPassword`, `resendEmailVerification`, `reloadUser` and `signOut` change the session. The functions that change who is signed in, or the state of the user, call `refreshAll()` themselves, so the guards run again. A caller does not do that.
 - `bootstrap`, `completeOnboarding`, `deleteAccount` and `ackRosterExport` call the API. They take a `Fetcher`.
 
 A guard is the `load` of a `+layout.ts` in a route group. The route groups do not change the URL. The nesting is the order of the guards:
@@ -111,7 +111,7 @@ Rules for a route that uses them:
 - A read goes in the `load` of `+page.ts`, with `apiFetchNoRedirect`. The route owns its read: the `load` gets the ID from `params`. There is no "active ID" in a module.
 - A `load` under a guard group calls `await parent()` first. A `load` that is in no guard group (`/e/[id]`) calls `await getFirebaseAuth().authStateReady()` before the first request.
 - The `load` maps the `ApiError`. For a 401, `redirect(303, resolve('/(signed-out)/sign-in'))`. For a 403 on a university that the user does not own, `redirect(303, ...)` to `/universities?denied=<reason>`, and the dashboard shows the message of that reason. For other errors, `error(status, apiErrorMessage(error, fallback))`. `failLoad(error, { fallback, denied? })` from `loadFailure.ts` does this mapping: call it in the `catch` block of the read. The reasons are `university` (the editor) and `roster` (the rosters). A route with a new denied message adds its reason to `DENIED_MESSAGES` in that module. With `forbidden: 'home'`, a 403 goes to the app home with no message: the super-admin routes use it.
-- A write goes in a component, with `apiFetch`. After a write, call `invalidateAll()` (or `invalidate` with a `depends()` key of the `load`). The modules do not load data again after a write.
+- A write goes in a component, with `apiFetch`. After a write, call `refreshAll()` (or `invalidate` with a `depends()` key of the `load`). Do not use `invalidateAll`: SvelteKit 3 marks the function and the `goto` option of that name as deprecated. The modules do not load data again after a write.
 - A route spec mocks the module (`vi.mock('#lib/universities.js')`). The modules have no specs of their own.
 
 `formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error`.
@@ -155,7 +155,7 @@ Rules for a page in `src/routes/`, from the account routes:
 Rules for a page with child components, from the chancellor routes:
 
 - A component that only one route uses is in the folder of that route (`universities/[id]/PeriodBoard.svelte`). A component that two routes use is in `src/lib/components/`.
-- A child component does not import a domain module and does not call the API. It takes its data as props and gives the values of a write to a callback prop that returns a promise (`onSave`, `onCreate`, `onUpdate`, `onDelete`). The page makes the request with `apiFetch` and then calls `invalidateAll()`, in the same callback.
+- A child component does not import a domain module and does not call the API. It takes its data as props and gives the values of a write to a callback prop that returns a promise (`onSave`, `onCreate`, `onUpdate`, `onDelete`). The page makes the request with `apiFetch` and then calls `refreshAll()`, in the same callback.
 - The child owns a `FormAction` and runs `action: () => onSave(values)`. As a result, it shows "Saving…" until the route has its new data, and it shows the message of the API when the callback rejects. The spec of the child passes a `vi.fn()` and needs no module mock.
 - Form state that starts from a prop is a writable `$derived` of a small class with `$state` fields (`let fields = $derived(new Fields(initial))`), not `$state` with an `$effect`. The fields then start again when the route loads its data again, as the Angular forms did, and `bind:value={fields.title}` works. A list of rows that the user changes is the same (`rows = [...rows, new Row()]`).
 - These forms have `novalidate` and no field messages, as the Angular forms had: a submit with a field that is not valid does nothing. #102 owns the field messages.

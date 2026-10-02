@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { goto, invalidateAll } from '$app/navigation';
+  import { goto, refreshAll } from '$app/navigation';
   import { resolve } from '$app/paths';
   import type {
     ClassCreateRequest,
@@ -41,7 +41,7 @@
   // The actions of the header: delete, submit and close.
   const action = new FormAction();
 
-  // Each write below runs the `load` again with `invalidateAll()`, which gives
+  // Each write below runs the `load` again with `refreshAll()`, which gives
   // the page the stored university. A child component shows the message when
   // its write rejects.
 
@@ -50,7 +50,7 @@
       confirm: 'Delete this draft university and all its classes?',
       action: () => deleteUniversity(apiFetch, university.id),
       fallback: 'Could not delete this university.',
-      // No `invalidateAll()`: the university of this route does not exist now.
+      // No `refreshAll()`: the university of this route does not exist now.
       onSuccess: () => goto(resolve('/(authed)/(verified)/(app)/universities')),
     });
   }
@@ -59,7 +59,7 @@
     await action.run({
       action: async () => {
         await submitUniversity(apiFetch, university.id);
-        await invalidateAll();
+        await refreshAll();
       },
       fallback: 'Could not submit for review.',
     });
@@ -70,7 +70,7 @@
       confirm: 'Close this event? This cannot be undone.',
       action: async () => {
         await closeUniversity(apiFetch, university.id);
-        await invalidateAll();
+        await refreshAll();
       },
       fallback: 'Could not close the event.',
     });
@@ -78,27 +78,27 @@
 
   async function saveDetails(values: UniversityFormValues) {
     await patchUniversity(apiFetch, university.id, values);
-    await invalidateAll();
+    await refreshAll();
   }
 
   async function savePeriods(periods: PeriodInput[]) {
     await putPeriods(apiFetch, university.id, { periods });
-    await invalidateAll();
+    await refreshAll();
   }
 
   async function addClass(body: ClassCreateRequest) {
     await createClass(apiFetch, university.id, body);
-    await invalidateAll();
+    await refreshAll();
   }
 
   async function updateClass(classId: string, body: ClassPatchRequest) {
     await patchClass(apiFetch, university.id, classId, body);
-    await invalidateAll();
+    await refreshAll();
   }
 
   async function removeClass(classId: string) {
     await deleteClass(apiFetch, university.id, classId);
-    await invalidateAll();
+    await refreshAll();
   }
 </script>
 

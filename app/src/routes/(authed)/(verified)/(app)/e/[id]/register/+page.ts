@@ -14,7 +14,7 @@ import type { PageLoad } from './$types';
  * registrations of those scouts in this event. The three requests run at the
  * same time.
  *
- * The page calls `invalidateAll()` after each write, which runs this load
+ * The page calls `refreshAll()` after each write, which runs this load
  * again: the seat counts and the registrations are then current.
  */
 export const load: PageLoad = async ({ parent, params }) => {

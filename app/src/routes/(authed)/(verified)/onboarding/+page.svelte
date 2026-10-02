@@ -31,8 +31,8 @@
     errorMessage = '';
     try {
       await completeOnboarding(apiFetch, { displayName: trimmedName, acceptedTerms: true });
-      // `invalidateAll` makes the `(app)` guard bootstrap the account again.
-      await goto(resolve('/(authed)/(verified)/(app)'), { invalidateAll: true });
+      // `refreshAll` makes the `(app)` guard bootstrap the account again.
+      await goto(resolve('/(authed)/(verified)/(app)'), { refreshAll: true });
     } catch {
       errorMessage = 'Could not save your details. Please try again.';
     } finally {

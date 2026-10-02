@@ -13,7 +13,7 @@ import type { PageLoad } from './$types';
  *
  * The API answers 403 for a university that the user does not own: the user
  * then goes to the dashboard, which shows the "denied" message. The page calls
- * `invalidateAll()` after each write, which runs this load again.
+ * `refreshAll()` after each write, which runs this load again.
  */
 export const load: PageLoad = async ({ parent, params }) => {
   await parent();

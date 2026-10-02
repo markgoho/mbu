@@ -6,14 +6,14 @@ import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import Page from './+page.svelte';
 
-const { removeScout, deleteAccount, invalidateAll } = vi.hoisted(() => ({
+const { removeScout, deleteAccount, refreshAll } = vi.hoisted(() => ({
   removeScout: vi.fn<(fetcher: Fetcher, scoutId: string) => Promise<void>>(),
   deleteAccount: vi.fn<(fetcher: Fetcher) => Promise<void>>(),
-  invalidateAll: vi.fn<() => Promise<void>>(),
+  refreshAll: vi.fn<() => Promise<void>>(),
 }));
 vi.mock('#lib/scouts.js', () => ({ removeScout }));
 vi.mock('#lib/session.svelte.js', () => ({ deleteAccount }));
-vi.mock('$app/navigation', () => ({ invalidateAll, goto: vi.fn() }));
+vi.mock('$app/navigation', () => ({ refreshAll, goto: vi.fn() }));
 
 const session: BootstrapResponse = {
   user: {
@@ -79,9 +79,9 @@ async function setup({
   );
 
   const { rerender } = await render(Page, { data: { session, scouts: storedScouts } });
-  // `invalidateAll()` runs the `load` again, which gives the page new `data`.
-  invalidateAll.mockReset();
-  invalidateAll.mockImplementation(() => rerender({ data: { session, scouts: storedScouts } }));
+  // `refreshAll()` runs the `load` again, which gives the page new `data`.
+  refreshAll.mockReset();
+  refreshAll.mockImplementation(() => rerender({ data: { session, scouts: storedScouts } }));
 
   return {
     confirmSpy,

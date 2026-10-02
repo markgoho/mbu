@@ -11,7 +11,7 @@ const { sessionMock, goto } = vi.hoisted(() => ({
     session: { user: { displayName: null as string | null } },
     completeOnboarding: vi.fn<(fetcher: Fetcher, request: OnboardingRequest) => Promise<void>>(),
   },
-  goto: vi.fn<(url: string, options?: { invalidateAll?: boolean }) => Promise<void>>(),
+  goto: vi.fn<(url: string, options?: { refreshAll?: boolean }) => Promise<void>>(),
 }));
 vi.mock('#lib/session.svelte.js', () => sessionMock);
 vi.mock('$app/navigation', () => ({ goto }));
@@ -62,7 +62,7 @@ describe('onboarding page', () => {
     await termsCheckbox.click();
     await submitButton.click();
 
-    await expect.poll(() => goto).toHaveBeenCalledExactlyOnceWith('/', { invalidateAll: true });
+    await expect.poll(() => goto).toHaveBeenCalledExactlyOnceWith('/', { refreshAll: true });
     expect(sessionMock.completeOnboarding).toHaveBeenCalledExactlyOnceWith(expect.any(Function), {
       displayName: 'Pat Parent',
       acceptedTerms: true,
