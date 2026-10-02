@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         working-directory: app
         run: bun install
+      - name: Type-check App site
+        working-directory: app
+        run: bun run check
       - name: Lint App site
         working-directory: app
         run: bun run lint
@@ -41,7 +44,7 @@ jobs:
         run: bun install
       - name: Test App site
         working-directory: app
-        run: bun run test
+        run: bun run test:unit
 
   build:
     runs-on: ubuntu-latest
@@ -60,10 +63,14 @@ jobs:
         uses: actions/upload-artifact@v7.0.1
         with:
           name: app-build
-          path: app/dist/app/browser
+          path: app/build
           retention-days: 1
 
+  # Disabled until #238 ports the Playwright suite to the SvelteKit app. To
+  # enable it again, remove `if: false` and add `e2e` to the `needs` of the
+  # deploy job.
   e2e:
+    if: false
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/${{ github.repository }}:trunk
@@ -78,15 +85,9 @@ jobs:
       - name: Install app dependencies
         working-directory: app
         run: bun install
-      - name: Lint E2E tests
-        working-directory: app
-        run: bun run lint:e2e
-      - name: Typecheck E2E tests
-        working-directory: app
-        run: bun run typecheck:e2e
       - name: Run E2E tests
         working-directory: app
-        run: bun run e2e
+        run: bun run test:e2e
       - name: Upload Playwright report
         uses: actions/upload-artifact@v7.0.1
         if: always()
@@ -96,7 +97,7 @@ jobs:
           retention-days: 7
 
   deploy:
-    needs: [lint, test, build, e2e]
+    needs: [lint, test, build]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -105,7 +106,7 @@ jobs:
         uses: actions/download-artifact@v8.0.1
         with:
           name: app-build
-          path: app/dist/app/browser
+          path: app/build
       - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0.11.0
         with:

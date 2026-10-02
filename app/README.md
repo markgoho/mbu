@@ -1,59 +1,47 @@
 # App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.5.
+The event-platform SPA. It is a SvelteKit app (Svelte 5 runes) that builds to static files with `@sveltejs/adapter-static`. There is no SSR: Firebase Hosting serves `build/200.html` for each path that is not a file.
 
-## Development server
+## Commands
 
-To start a local development server, run:
+Run all commands in `app/` with `bun`.
 
-```bash
-ng serve
-```
+| Command             | Function                                                       |
+| ------------------- | -------------------------------------------------------------- |
+| `bun install`       | Install the dependencies.                                      |
+| `bun run dev`       | Start the dev server on `http://localhost:4200`.               |
+| `bun run build`     | Build the static site into `build/`.                           |
+| `bun run preview`   | Serve the build locally.                                       |
+| `bun run check`     | Type-check with `svelte-check`.                                |
+| `bun run lint`      | Lint with ESLint.                                              |
+| `bun run test:unit` | Run the unit specs one time with Vitest.                       |
+| `bun run test:e2e`  | Run the Playwright suite. It does not run until #238 ports it. |
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Unit specs
 
-## Code scaffolding
+Vitest has two projects:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `client`: `src/**/*.svelte.spec.ts`. These run in headless Chromium with `vitest-browser-svelte`.
+- `server`: all other `src/**/*.spec.ts`. These run in Node.
 
-```bash
-ng generate component component-name
-```
+The two projects use the `America/New_York` timezone.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The `playwright` and `@playwright/test` versions in `package.json` are exact. They must be the same as `PLAYWRIGHT_VERSION` in the root `Dockerfile`, because the CI image contains the Chromium build for that version only. Change them together. On a local machine, install the browser with `bunx playwright install chromium`.
 
-```bash
-ng generate --help
-```
+## Dev proxy
 
-## Building
+The API is one Cloud Function for each domain. The dev server sends each path prefix to its function in the local Functions emulator (`http://localhost:5001/merit-badge-university/us-east4/<function>`):
 
-To build the project run:
+| Path prefix               | Function           |
+| ------------------------- | ------------------ |
+| `/api/health`             | `healthApi`        |
+| `/api/users`              | `usersApi`         |
+| `/api/universities`       | `universitiesApi`  |
+| `/api/admin/universities` | `universitiesApi`  |
+| `/api/registrations`      | `registrationsApi` |
 
-```bash
-ng build
-```
+The entries are in `vite.config.ts`. Start the emulators from the repo root before you call the API from the dev server.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Environment
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+`.env.development` sets `VITE_FIREBASE_AUTH_EMULATOR_HOST`, so that `bun run dev` uses the local Auth emulator.

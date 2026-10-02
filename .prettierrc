@@ -22,12 +22,6 @@
         "goTemplateBracketSpacing": true,
         "bracketSameLine": true
       }
-    },
-    {
-      "files": "members/src/**/*.html",
-      "options": {
-        "parser": "angular"
-      }
     }
   ]
 }
