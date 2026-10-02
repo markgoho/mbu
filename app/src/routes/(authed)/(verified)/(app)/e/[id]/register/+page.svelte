@@ -57,14 +57,19 @@
     return `I consent to share ${scoutName}'s information with the organizers of ${event.title}.`;
   });
 
-  function selectScout(scoutId: string) {
-    if (scoutId === selectedScout?.scoutId) return;
+  /**
+  Makes a scout the selected one, with no consent, no message and no waitlist offer of the scout before.
+  */
+  function startScout(scoutId: string) {
     pickedScoutId = scoutId;
     actionError = '';
-    // The offer was for the scout that was selected before.
     waitlistOfferClassId = undefined;
     // The consent is for one scout in one event: a different scout needs a new one.
     hasConsent = false;
+  }
+
+  function selectScout(scoutId: string) {
+    if (scoutId !== selectedScout?.scoutId) startScout(scoutId);
   }
 
   async function addScout(scout: ScoutRequest) {
@@ -72,7 +77,7 @@
     // Runs the `load` again, which reads the scouts.
     await invalidateAll();
     isAddScoutOpen = false;
-    selectScout(created.scoutId);
+    startScout(created.scoutId);
   }
 
   function classesOf(period: Period): PublicClass[] {
@@ -92,17 +97,20 @@
    */
   async function register(publicClass: PublicClass, isWaitlistAccepted: boolean) {
     if (!selectedScout || !hasConsent) return;
+    const { scoutId } = selectedScout;
 
     actionError = '';
     pendingClassId = publicClass.classId;
     try {
       await registerScout(apiFetch, event.id, publicClass.classId, {
-        scoutId: selectedScout.scoutId,
+        scoutId,
         acceptWaitlist: isWaitlistAccepted,
         acceptConsent: true,
       });
       await invalidateAll();
     } catch (error) {
+      // The user selected a different scout during the request: the answer is not for that scout.
+      if (selectedScout?.scoutId !== scoutId) return;
       const body = error instanceof ApiError ? error.body : undefined;
       if (!isWaitlistAccepted && body?.code === 'class_full') {
         waitlistOfferClassId = publicClass.classId;

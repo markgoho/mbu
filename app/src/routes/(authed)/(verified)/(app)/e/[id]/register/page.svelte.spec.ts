@@ -348,6 +348,27 @@ describe('registration page', () => {
       .toHaveTextContent('Could not register for this class.');
   });
 
+  it('does not show the answer for a scout to the scout that the user selects during the request', async () => {
+    const { classCard, classButton, consent, scoutButton } = await setup({
+      scouts: [alexSmith, baileyJones],
+    });
+    const pendingRegistration = Promise.withResolvers<RegistrationResponse>();
+    registerScout.mockImplementationOnce(() => pendingRegistration.promise);
+    await consent.click();
+    await classButton('Archery', 'Register').click();
+
+    await scoutButton('Bailey Jones').click();
+    pendingRegistration.reject(new ApiError(409, { error: 'Class is full', code: 'class_full' }));
+
+    // The button is enabled again when the request is complete.
+    await consent.click();
+    await expect.element(classButton('Archery', 'Register')).toBeEnabled();
+    await expect
+      .element(classCard('Archery').getByText(/This class is full/))
+      .not.toBeInTheDocument();
+    await expect.element(page.getByRole('alert')).not.toBeInTheDocument();
+  });
+
   it('gates Register on consent but keeps Drop available', async () => {
     const { classButton, consent } = await setup({
       registrations: [registrationFor('archery', 'enrolled')],
