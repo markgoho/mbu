@@ -3,7 +3,7 @@
 ## Contexts
 
 - [Hugo site](./CONTEXT.md) — public static site rendering merit badge requirements scraped from scouting.org
-- Event platform — self-serve SaaS (SvelteKit SPA in `app/` + Elysia APIs in `functions/`) letting chancellors run Merit Badge Universities. It has no `CONTEXT.md` yet (#241 creates it); its decisions are in [`functions/docs/adr/`](./functions/docs/adr/)
+- Event platform — self-serve SaaS (SvelteKit SPA in `app/` + Elysia APIs in `functions/`) letting chancellors run Merit Badge Universities. It has no `CONTEXT.md` yet (#241 creates the glossary as `api/CONTEXT.md`); its decisions are in [`functions/docs/adr/`](./functions/docs/adr/)
 
 ## Relationships
 

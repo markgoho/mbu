@@ -18,14 +18,14 @@ If any of these files don't exist, **proceed silently**. Don't flag their absenc
 ├── CONTEXT.md                         ← Hugo site context
 ├── docs/adr/                          ← system-wide decisions
 └── functions/
-    ├── CONTEXT.md                     ← event-platform context (shared by app/ + functions/); does not exist yet
+    ├── CONTEXT.md                     ← event-platform context (shared by app/ + functions/); does not exist yet, see #241
     └── docs/adr/                      ← event-platform-scoped decisions
 ```
 
 ## Contexts
 
 - **Hugo site** — the public static site rendering merit badge requirements scraped from scouting.org. Domain doc: root `CONTEXT.md`. ADRs: root `docs/adr/`.
-- **Event platform** — the self-serve SaaS (SvelteKit SPA in `app/`, Elysia APIs in `functions/`) letting chancellors run Merit Badge Universities. One domain doc (`functions/CONTEXT.md`) covers both `app/` and `functions/` since the domain language (Chancellor, Event, Roster, etc.) is identical on both sides of that stack. That file does not exist yet; #241 creates the event-platform glossary. ADRs: `functions/docs/adr/`.
+- **Event platform** — the self-serve SaaS (SvelteKit SPA in `app/`, Elysia APIs in `functions/`) letting chancellors run Merit Badge Universities. One domain doc (`functions/CONTEXT.md`) covers both `app/` and `functions/` since the domain language (Chancellor, Event, Roster, etc.) is identical on both sides of that stack. That file does not exist yet; #241 creates the event-platform glossary as `api/CONTEXT.md`. ADRs: `functions/docs/adr/`.
 
 ## Use the glossary's vocabulary
 

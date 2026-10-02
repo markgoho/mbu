@@ -97,7 +97,7 @@ Canonical role names are used as-is (`needs-triage`, `needs-info`, `ready-for-ag
 
 ### Domain docs
 
-Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`functions/CONTEXT.md` + `functions/docs/adr/`). See `docs/agents/domain.md`.
+Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`functions/docs/adr/`; its `CONTEXT.md` does not exist yet, #241 creates it). See `docs/agents/domain.md`.
 
 # Intrinsic Web Design & Sizing
 
