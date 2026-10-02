@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { invalidateAll } from '$app/navigation';
+  import { refreshAll } from '$app/navigation';
   import type { Period, PublicClass } from '#lib/api-types/universities-api.types.js';
   import type { ScoutRequest } from '#lib/api-types/users-api.types.js';
   import { ApiError, apiFetch } from '#lib/api.js';
@@ -75,7 +75,7 @@
   async function addScout(scout: ScoutRequest) {
     const created = await createScout(apiFetch, scout);
     // Runs the `load` again, which reads the scouts.
-    await invalidateAll();
+    await refreshAll();
     isAddScoutOpen = false;
     startScout(created.scoutId);
   }
@@ -107,7 +107,7 @@
         acceptWaitlist: isWaitlistAccepted,
         acceptConsent: true,
       });
-      await invalidateAll();
+      await refreshAll();
     } catch (error) {
       // The user selected a different scout during the request: the answer is not for that scout.
       if (selectedScout?.scoutId !== scoutId) return;
@@ -134,7 +134,7 @@
     pendingClassId = publicClass.classId;
     try {
       await cancelRegistration(apiFetch, event.id, publicClass.classId, selectedScout.scoutId);
-      await invalidateAll();
+      await refreshAll();
     } catch {
       actionError = 'Could not drop this class. Please try again.';
     } finally {

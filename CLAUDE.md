@@ -48,6 +48,21 @@ BADGE_SLUGS="camping,hiking,swimming" bun run detect:links
 bun run build
 ```
 
+### Event platform app (`app/`)
+
+`app/` is a separate project: the event-platform SPA. It is SvelteKit 3 with Svelte 5 runes, built as a static SPA (no SSR). Run these commands in `app/`:
+
+```bash
+bun run dev        # Dev server on http://localhost:4200
+bun run check      # Type-check with svelte-check
+bun run lint       # ESLint
+bun run test:unit  # Vitest: browser project (*.svelte.spec.ts) and Node project (*.spec.ts)
+bun run test:e2e   # Playwright smoke suite (e2e/*.e2e.ts); starts its own servers
+bun run build      # Static build into app/build/
+```
+
+Before you change `app/`, read `app/README.md` (the rules for loads, guards, domain modules, atoms and specs) and use the `svelte-code-writer` and `svelte-core-bestpractices` skills. `.claude/rules/svelte-tests.md` loads automatically for the specs. The reasons are in `functions/docs/adr/0002-app-spa-is-sveltekit.md`. After `bun run test:e2e`, `app/build/` is a build that connects to the Auth emulator: run `bun run build` again.
+
 ## Data Structure
 
 **Requirement Path System**:
@@ -82,7 +97,7 @@ Canonical role names are used as-is (`needs-triage`, `needs-info`, `ready-for-ag
 
 ### Domain docs
 
-Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`functions/CONTEXT.md` + `functions/docs/adr/`). See `docs/agents/domain.md`.
+Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`functions/docs/adr/`; its `CONTEXT.md` does not exist yet, #241 creates it). See `docs/agents/domain.md`.
 
 # Intrinsic Web Design & Sizing
 

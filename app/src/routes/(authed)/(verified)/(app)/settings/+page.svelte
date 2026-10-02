@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { invalidateAll } from '$app/navigation';
+  import { refreshAll } from '$app/navigation';
   import { ApiError, apiFetch } from '#lib/api.js';
   import Button from '#lib/components/atoms/Button.svelte';
   import { removeScout } from '#lib/scouts.js';
@@ -22,7 +22,7 @@
     try {
       await removeScout(apiFetch, scoutId);
       // Runs the `load` again, which reads the scouts.
-      await invalidateAll();
+      await refreshAll();
     } catch {
       errorMessage = 'Could not delete this scout. Please try again.';
     } finally {

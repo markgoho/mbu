@@ -5,7 +5,7 @@
  * Each function is one request. It takes the `Fetcher` first: a `load` passes
  * `apiFetchNoRedirect`, a component passes `apiFetch`. A response that is not OK
  * throws an `ApiError`. The module keeps no state: the route owns its read (in a
- * `load`) and loads it again with `invalidate` / `invalidateAll` after a write.
+ * `load`) and loads it again with `invalidate` / `refreshAll` after a write.
  */
 import type {
   BadgeCatalogResponse,

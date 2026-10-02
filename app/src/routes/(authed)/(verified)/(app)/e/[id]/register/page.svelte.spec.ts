@@ -16,7 +16,7 @@ import type { Fetcher } from '#lib/fetcher.js';
 import Page from './+page.svelte';
 import { alexSmith, baileyJones, registrationFor, sampleEvent } from './registerFixture.js';
 
-const { registerScout, cancelRegistration, createScout, invalidateAll } = vi.hoisted(() => ({
+const { registerScout, cancelRegistration, createScout, refreshAll } = vi.hoisted(() => ({
   registerScout:
     vi.fn<
       (
@@ -31,11 +31,11 @@ const { registerScout, cancelRegistration, createScout, invalidateAll } = vi.hoi
       (fetcher: Fetcher, universityId: string, classId: string, scoutId: string) => Promise<void>
     >(),
   createScout: vi.fn<(fetcher: Fetcher, body: ScoutRequest) => Promise<ScoutResponse>>(),
-  invalidateAll: vi.fn<() => Promise<void>>(),
+  refreshAll: vi.fn<() => Promise<void>>(),
 }));
 vi.mock('#lib/registrations.js', () => ({ registerScout, cancelRegistration }));
 vi.mock('#lib/scouts.js', () => ({ createScout }));
-vi.mock('$app/navigation', () => ({ invalidateAll, goto: vi.fn() }));
+vi.mock('$app/navigation', () => ({ refreshAll, goto: vi.fn() }));
 
 const session: BootstrapResponse = {
   user: {
@@ -145,9 +145,9 @@ async function setup({
     registrations: storedRegistrations,
   });
   const { rerender } = await render(Page, { data: toData() });
-  // `invalidateAll()` runs the `load` again, which gives the page new `data`.
-  invalidateAll.mockReset();
-  invalidateAll.mockImplementation(() => rerender({ data: toData() }));
+  // `refreshAll()` runs the `load` again, which gives the page new `data`.
+  refreshAll.mockReset();
+  refreshAll.mockImplementation(() => rerender({ data: toData() }));
 
   /**
   The card of a class. The heading finds it: the text of a conflict in a different card also has the title.
