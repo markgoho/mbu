@@ -101,7 +101,7 @@ Rules for a route that uses them:
 
 `formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error`.
 
-The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `periodOverlap.ts` (`findOverlaps`, periods that overlap in time), `formatDate.ts` (`formatMediumDate`, date text as `Jun 1, 2026`), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
+The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `periodOverlap.ts` (`findOverlaps`, periods that overlap in time), `formatDate.ts` (`formatMediumDate`, date text as `Jun 1, 2026`, and `formatShortTime`, time text as `9:00 AM`; each takes an optional IANA timezone, and uses the timezone of the browser when there is none), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
 
 ## Shared components
 
@@ -145,6 +145,14 @@ Rules for a page with child components, from the chancellor routes:
 - Form state that starts from a prop is a writable `$derived` of a small class with `$state` fields (`let fields = $derived(new Fields(initial))`), not `$state` with an `$effect`. The fields then start again when the route loads its data again, as the Angular forms did, and `bind:value={fields.title}` works. A list of rows that the user changes is the same (`rows = [...rows, new Row()]`).
 - These forms have `novalidate` and no field messages, as the Angular forms had: a submit with a field that is not valid does nothing. #102 owns the field messages.
 - Fixture data that the page spec and the load spec of a route share is in a file next to them (`roster/rosterFixture.ts`).
+
+Rules from the parent routes:
+
+- The `load` of a public page (`/e/[id]`) does not throw and does not redirect. It does not use `failLoad`, because that function sends a 401 to `/sign-in`. It returns the failure as a value (`{ event: undefined, failure: 'not-found' | 'failed' }`), and the page shows its own state for each value.
+- The public page does not read the session. Its link to the registration page is `/sign-in?returnTo=/e/<id>/register`: the `(signed-out)` guard sends a signed-in user to the `returnTo` path immediately.
+- A page of an event gives the timezone of the university to `formatMediumDate` and `formatShortTime`.
+- A write whose failure is not always an error message does not use `FormAction`. The registration page keeps its own state, because a `class_full` answer opens the waitlist offer.
+- A component of one route that shows a fixed message for a failed write (`ScoutQuickAdd.svelte`) also keeps its own state. It still takes a callback prop that returns a promise (`onAdd`).
 
 ## Environment
 
