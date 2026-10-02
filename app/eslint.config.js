@@ -71,14 +71,7 @@ export default defineConfig(
   {
     // Pages use the atoms, not the native elements, so that #102 can style each control in one place (#233).
     files: ['**/*.svelte'],
-    ignores: [
-      'src/lib/components/atoms/Button.svelte',
-      'src/lib/components/atoms/Link.svelte',
-      'src/lib/components/atoms/Select.svelte',
-      'src/lib/components/atoms/Textarea.svelte',
-      'src/lib/components/atoms/TextInput.svelte',
-      'src/lib/components/atoms/Checkbox.svelte',
-    ],
+    ignores: ['src/lib/components/atoms/*.svelte'],
     rules: {
       'svelte/no-restricted-html-elements': [
         'error',

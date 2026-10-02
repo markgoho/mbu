@@ -55,9 +55,10 @@
   }
 
   // The browser closed the dialog (Escape or the backdrop) if `open` is still
-  // true here. A close that started from `open` has no callback.
+  // true here. A close that started from `open` has no callback. If the dialog
+  // is open, this is the late event of a close before the caller opened it again.
   function handleClose() {
-    if (open) cancel();
+    if (open && !dialog?.open) cancel();
   }
 </script>
 

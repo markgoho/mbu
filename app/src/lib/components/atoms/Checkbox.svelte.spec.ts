@@ -58,4 +58,13 @@ describe('Checkbox', () => {
 
     expect(onchange).toHaveBeenCalledOnce();
   });
+
+  it('calls onclick when the user clicks it', async () => {
+    const onclick = vi.fn();
+    const { checkbox } = await setup({ onclick });
+
+    await checkbox.click();
+
+    expect(onclick).toHaveBeenCalledOnce();
+  });
 });

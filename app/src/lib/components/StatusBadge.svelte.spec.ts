@@ -13,9 +13,13 @@ const STATUSES: UniversityStatus[] = [
   'rejected',
 ];
 
+async function setup(status: UniversityStatus) {
+  await render(StatusBadge, { status });
+}
+
 describe('StatusBadge', () => {
   it.each(STATUSES)('shows the label of the %s status', async (status) => {
-    await render(StatusBadge, { status });
+    await setup(status);
 
     await expect.element(page.getByText(status, { exact: true })).toBeVisible();
   });

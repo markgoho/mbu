@@ -105,7 +105,7 @@ The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local
 
 ## Shared components
 
-The shared components are in `src/lib/components/`. They are ported 1:1 from the Angular app. #102 owns the visual design.
+The shared components are in `src/lib/components/`. They have the same copy and CSS as the shared components of the Angular app. #102 owns the visual design.
 
 - `StatusBadge.svelte`: the status of a university. `status` is a `UniversityStatus`.
 - `ConfirmDialog.svelte`: a question with a confirm action and a cancel action, in a native modal `<dialog>`. Render it always and bind `open`. Do not put it in an `{#if}` block. `onCancel` runs for the cancel button, the Escape key and a click on the backdrop.

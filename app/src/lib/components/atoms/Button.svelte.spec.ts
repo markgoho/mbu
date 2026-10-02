@@ -18,7 +18,7 @@ describe('Button', () => {
     await expect.element(button).toBeVisible();
   });
 
-  it('does not submit a form unless the type is submit', async () => {
+  it('has the button type when the caller gives no type', async () => {
     const { button } = await setup();
 
     await expect.element(button).toHaveAttribute('type', 'button');

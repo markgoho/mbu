@@ -57,4 +57,13 @@ describe('Select', () => {
 
     expect(onchange).toHaveBeenCalledOnce();
   });
+
+  it('calls onclick when the user clicks it', async () => {
+    const onclick = vi.fn();
+    const { select } = await setup({ onclick });
+
+    await select.click();
+
+    expect(onclick).toHaveBeenCalledOnce();
+  });
 });

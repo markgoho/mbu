@@ -44,6 +44,7 @@ describe('ConfirmDialog', () => {
     const { dialog } = await setup();
 
     await expect.element(dialog).toBeVisible();
+    // The modal state (top layer, inert page) has no accessible query.
     expect(dialog.element().matches(':modal')).toBe(true);
     await expect
       .element(dialog.getByRole('heading', { name: 'Export contains youth information' }))

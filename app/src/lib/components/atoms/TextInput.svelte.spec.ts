@@ -61,4 +61,13 @@ describe('TextInput', () => {
 
     expect(oninput).toHaveBeenCalledOnce();
   });
+
+  it('calls onclick when the user clicks it', async () => {
+    const onclick = vi.fn();
+    await setup({ onclick });
+
+    await page.getByRole('textbox', { name: 'Title' }).click();
+
+    expect(onclick).toHaveBeenCalledOnce();
+  });
 });

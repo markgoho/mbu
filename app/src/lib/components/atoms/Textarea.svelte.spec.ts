@@ -49,4 +49,13 @@ describe('Textarea', () => {
 
     expect(oninput).toHaveBeenCalledOnce();
   });
+
+  it('calls onclick when the user clicks it', async () => {
+    const onclick = vi.fn();
+    const { textarea } = await setup({ onclick });
+
+    await textarea.click();
+
+    expect(onclick).toHaveBeenCalledOnce();
+  });
 });
