@@ -2,7 +2,7 @@ import path from 'node:path';
 import js from '@eslint/js';
 import svelte from 'eslint-plugin-svelte';
 import unicorn from 'eslint-plugin-unicorn';
-import { defineConfig, globalIgnores, includeIgnoreFile } from 'eslint/config';
+import { defineConfig, includeIgnoreFile } from 'eslint/config';
 import globals from 'globals';
 import ts from 'typescript-eslint';
 
@@ -10,8 +10,6 @@ const gitignorePath = path.resolve(import.meta.dirname, '.gitignore');
 
 export default defineConfig(
   includeIgnoreFile(gitignorePath),
-  // The Playwright suite is not ported yet. #238 owns it and removes this ignore.
-  globalIgnores(['e2e/**']),
   js.configs.recommended,
   ts.configs.recommended,
   svelte.configs.recommended,

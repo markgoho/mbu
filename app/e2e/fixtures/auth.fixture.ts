@@ -1,75 +1,106 @@
-import { test as base, type Page } from '@playwright/test';
+import { expect, test as base, type Page } from '@playwright/test';
+import type { HealthResponse } from '../../src/lib/api-types/health-api.types.js';
+import type { BootstrapResponse } from '../../src/lib/api-types/users-api.types.js';
 
 /**
- * Auth-emulator fixtures for smoke e2e. Follows the doula-cooperative pattern:
- * real auth against the Auth emulator, but ALL /api/* responses are stubbed via
- * page.route() — no Functions/Firestore emulator involved.
+ * The fixtures of the smoke suite. Auth is real, against the Firebase Auth
+ * emulator. The API is not: the preview server has no `/api` proxy, so each
+ * `/api/*` call must have a `page.route()` mock. There is no Functions emulator
+ * and no Firestore emulator.
+ *
+ * All specs import `test` from this file, not from `@playwright/test`, so that
+ * each test has the guard for calls with no mock.
  */
 const AUTH_HOST = 'http://127.0.0.1:9099';
 const KEY = 'fake-api-key';
 const PASSWORD = 'password123';
 
 interface AuthFixtures {
-  /** Unique email per test so reruns don't collide in the emulator. */
+  /**
+  An email address that no other test, retry or run uses, so that the sign-up in the emulator does not collide.
+  */
   verifiedEmail: string;
-  /** A page already signed in as a verified user, sitting on the home route. */
+  /**
+  A page that is signed in as a verified user who accepted the terms, on the app home.
+  */
   verifiedPage: Page;
 }
 
+function isApiCall(url: URL): boolean {
+  return url.pathname.startsWith('/api/');
+}
+
 export const test = base.extend<AuthFixtures>({
-  // eslint-disable-next-line no-empty-pattern -- Playwright requires the fixtures arg
+  // The guard for an `/api/*` call with no mock. Playwright uses the route that
+  // was added last, so the mocks of a test win over this one, which is the
+  // first. A call that comes here is aborted, and the test fails after its body
+  // with the list of the calls: an abort alone is not visible, because the app
+  // shows a failed read as an error page or as `unavailable`.
+  page: async ({ page }, use) => {
+    const unmockedCalls: string[] = [];
+    await page.route(isApiCall, async (route) => {
+      const request = route.request();
+      unmockedCalls.push(`${request.method()} ${new URL(request.url()).pathname}`);
+      await route.abort();
+    });
+
+    await use(page);
+
+    expect(unmockedCalls, 'Each /api/* call must have a page.route() mock').toEqual([]);
+  },
+
+  // eslint-disable-next-line no-empty-pattern -- Playwright reads the fixture names from this parameter.
   verifiedEmail: async ({}, use, testInfo) => {
-    await use(`e2e-${testInfo.testId}-${testInfo.repeatEachIndex}@example.com`);
+    await use(
+      `e2e-${testInfo.testId}-${testInfo.repeatEachIndex}-${testInfo.retry}-${Date.now()}@example.com`,
+    );
   },
 
   verifiedPage: async ({ page, request, verifiedEmail }, use) => {
-    // Create the account, then flip emailVerified via the emulator admin API
-    // ("Bearer owner" is the emulator's privileged token).
+    // Makes the account, then sets `emailVerified` with the admin API of the
+    // emulator ("Bearer owner" is the privileged token of the emulator).
     const signUp = await request.post(
       `${AUTH_HOST}/identitytoolkit.googleapis.com/v1/accounts:signUp?key=${KEY}`,
       { data: { email: verifiedEmail, password: PASSWORD, returnSecureToken: true } },
     );
+    expect(signUp.ok(), 'Sign-up in the Auth emulator').toBe(true);
     const { localId } = (await signUp.json()) as { localId: string };
-    await request.post(
+    const update = await request.post(
       `${AUTH_HOST}/identitytoolkit.googleapis.com/v1/accounts:update`,
       {
         headers: { authorization: 'Bearer owner' },
         data: { localId, emailVerified: true },
       },
     );
+    expect(update.ok(), 'Set emailVerified in the Auth emulator').toBe(true);
 
-    // Stub the backend BEFORE navigating so the guard chain's bootstrap call
-    // resolves without a real API. needsConsent:false lets home render.
+    // The mocks are in place before the navigation. The `(app)` guard
+    // bootstraps the account (`POST /api/users/me`): `needsConsent: false`
+    // lets the user into the app. The app home reads the API health.
+    const bootstrap: BootstrapResponse = {
+      user: {
+        uid: localId,
+        displayName: 'E2E Parent',
+        email: verifiedEmail,
+        phone: null,
+        acceptedTermsAt: '2026-01-01T00:00:00.000Z',
+        acceptedPrivacyAt: '2026-01-01T00:00:00.000Z',
+        acceptedPolicyVersion: '2026-01-01',
+        rosterExportAckAt: null,
+      },
+      needsConsent: false,
+    };
     await page.route('**/api/users/me', (route) =>
-      route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({
-          user: {
-            uid: localId,
-            displayName: 'E2E Parent',
-            email: verifiedEmail,
-            phone: null,
-            acceptedTermsAt: '2026-01-01T00:00:00.000Z',
-            acceptedPrivacyAt: '2026-01-01T00:00:00.000Z',
-          },
-          needsConsent: false,
-        }),
-      }),
+      route.request().method() === 'POST' ? route.fulfill({ json: bootstrap }) : route.fallback(),
     );
-    await page.route('**/api/health', (route) =>
-      route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({ status: 'ok' }),
-      }),
-    );
+    const health: HealthResponse = { status: 'ok' };
+    await page.route('**/api/health', (route) => route.fulfill({ json: health }));
 
     await page.goto('/sign-in');
     await page.getByLabel('Email').fill(verifiedEmail);
     await page.getByLabel('Password').fill(PASSWORD);
-    await page.getByRole('button', { name: 'Sign In' }).click();
-    await page.waitForURL('http://localhost:4200/');
+    await page.getByRole('button', { name: 'Sign In', exact: true }).click();
+    await page.waitForURL('/');
 
     await use(page);
   },

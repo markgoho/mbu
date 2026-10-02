@@ -1,10 +1,13 @@
-import type { RosterResponse } from '../../src/app/api-types/registrations-api.types';
-import type { UniversityListResponse } from '../../src/app/api-types/universities-api.types';
-import { expect, test } from '../fixtures/auth.fixture';
+import type { RosterResponse } from '../src/lib/api-types/registrations-api.types.js';
+import type {
+  ApiErrorBody,
+  UniversityListResponse,
+} from '../src/lib/api-types/universities-api.types.js';
+import { expect, test } from './fixtures/auth.fixture.js';
 
 /**
- * Chancellor/counselor roster view, fully mocked except the Auth emulator.
- * Mirrors registration.spec.ts's use of the verifiedPage fixture.
+ * The roster view of a chancellor or a counselor. Auth is the emulator. The API
+ * is mocked, on top of the mocks of the `verifiedPage` fixture.
  */
 
 const UNIVERSITY_ID = 'summer-2026';
@@ -86,11 +89,7 @@ test.describe('roster page', () => {
     verifiedPage: page,
   }) => {
     await page.route(`**/api/registrations/${UNIVERSITY_ID}/roster`, (route) =>
-      route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify(buildRoster()),
-      }),
+      route.fulfill({ json: buildRoster() }),
     );
 
     await page.goto(`/universities/${UNIVERSITY_ID}/roster`);
@@ -109,25 +108,23 @@ test.describe('roster page', () => {
     await expect(page.getByRole('button', { name: 'Export event CSV' })).toBeVisible();
   });
 
-  test('redirects to the dashboard with a flash message on 403', async ({ verifiedPage: page }) => {
+  test('redirects to the dashboard with the denied message on 403', async ({
+    verifiedPage: page,
+  }) => {
     await page.route(`**/api/registrations/${UNIVERSITY_ID}/roster`, (route) =>
-      route.fulfill({
-        status: 403,
-        contentType: 'application/json',
-        body: JSON.stringify({ error: 'Forbidden' }),
-      }),
+      route.fulfill({ status: 403, json: { error: 'Forbidden' } satisfies ApiErrorBody }),
     );
     await page.route('**/api/universities/mine', (route) =>
-      route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({ universities: [] } satisfies UniversityListResponse),
-      }),
+      route.fulfill({ json: { universities: [] } satisfies UniversityListResponse }),
     );
 
     await page.goto(`/universities/${UNIVERSITY_ID}/roster`);
 
-    await page.waitForURL('**/universities');
-    await expect(page.getByText('You do not have access to those rosters.')).toBeVisible();
+    // The roster `load` redirects to the dashboard, with the reason in the URL.
+    await expect(page).toHaveURL(/\/universities\?denied=roster$/);
+    await expect(page.getByRole('heading', { name: 'Your Universities' })).toBeVisible();
+    await expect(page.getByRole('status')).toContainText(
+      'You do not have access to those rosters.',
+    );
   });
 });
