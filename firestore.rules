@@ -2,7 +2,7 @@ rules_version = '2';
 
 // Intentional, permanent deny-all. Do NOT open these rules up.
 //
-// All Firestore access is API-mediated: the Angular client uses the Firebase SDK
+// All Firestore access is API-mediated: the web client uses the Firebase SDK
 // ONLY for Auth, and every read/write goes through Elysia Cloud Functions using the
 // Admin SDK, which bypasses security rules entirely. Authorization (contextual role
 // grants, per-event/per-class visibility, seat transactions) lives in testable

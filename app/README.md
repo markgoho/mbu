@@ -26,6 +26,8 @@ Vitest has two projects:
 
 The two projects use the `America/New_York` timezone.
 
+The conventions for the specs (the `setup()` function, `page` locators, the mock seam, fixtures) are in `.claude/rules/svelte-tests.md` in the repo root. The reasons for the stack are in `functions/docs/adr/0002-app-spa-is-sveltekit.md`.
+
 The `playwright` and `@playwright/test` versions in `package.json` are exact. They must be the same as `PLAYWRIGHT_VERSION` in the root `Dockerfile`, because the CI image contains the Chromium build for that version only. Change them together. On a local machine, install the browser with `bunx playwright install chromium`.
 
 ## E2E specs

@@ -1,7 +1,7 @@
 # Event Platform (`functions/` + `app/`)
 
 The self-serve event platform (issue #94) is a separate stack from the Hugo
-site: an Angular SPA in `app/` and per-domain Elysia APIs on Cloud Functions in
+site: a SvelteKit SPA in `app/` and per-domain Elysia APIs on Cloud Functions in
 `functions/`. Its API modules follow a fixed architecture — plugin + one logic
 function per route, plain-object services, and per-route boundary tests — with
 `functions/src/health-api/` as the reference module.
@@ -17,4 +17,4 @@ The conventions are enforced, so non-conforming code fails CI:
   `routes/` + `plugins/` + `app.ts` + `handler.ts` (the file-existence invariant
   ESLint can't express).
 
-Angular spec conventions are enforced the same way via `app/eslint.config.js`.
+**Before changing `app/`, read `app/README.md`.** The decisions for the app are in [functions/docs/adr/0002-app-spa-is-sveltekit.md](functions/docs/adr/0002-app-spa-is-sveltekit.md), and its spec conventions are in `.claude/rules/svelte-tests.md`. `app/eslint.config.js` enforces the use of the atoms in `app/src/lib/components/atoms/`.

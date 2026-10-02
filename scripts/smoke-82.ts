@@ -1,6 +1,6 @@
 /**
  * #82 emulator smoke pass (V2/V3). Requires auth + firestore + functions emulators
- * and Angular dev server (proxy to functions).
+ * and the app dev server (`bun run dev` in `app/`, proxy to functions).
  */
 import { getApps, initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
