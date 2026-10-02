@@ -42,6 +42,16 @@ The API is one Cloud Function for each domain. The dev server sends each path pr
 
 The entries are in `vite.config.ts`. Start the emulators from the repo root before you call the API from the dev server.
 
+## Auth and API client
+
+All code gets Firebase Auth and the API through these modules in `src/lib/`:
+
+- `firebase.ts`: `getFirebaseAuth()` is the only place that calls `initializeApp` and `getAuth`. The client uses Auth only. All Firestore access goes through the API.
+- `api.ts`: the only place that calls `fetch` for `/api/*`. `apiFetch` adds the Firebase ID token as `Authorization: Bearer`. On a 401 it signs the user out and goes to `/sign-in`. `apiFetchNoRedirect` does the same but does not navigate: use it in a `load`, and call `redirect(303, '/sign-in')` there. `expectOk`, `getJson` and `sendJson` throw an `ApiError` (`status` and the parsed `body`) for a response that is not OK.
+- `fetcher.ts`: the `Fetcher` type. A domain module takes a `Fetcher` as a parameter. A route passes `apiFetch` or `apiFetchNoRedirect`.
+- `apiErrorMessage.ts`: `apiErrorMessage(error, fallback)` gives the text to show for a failed call.
+- `api-types/`: the request and response types of the API.
+
 ## Environment
 
 `.env.development` sets `VITE_FIREBASE_AUTH_EMULATOR_HOST`, so that `bun run dev` uses the local Auth emulator.

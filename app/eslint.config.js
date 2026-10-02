@@ -44,6 +44,13 @@ export default defineConfig(
     },
   },
   {
+    // These files are the API contract, moved from the Angular app with no changes (#230).
+    files: ['src/lib/api-types/**'],
+    rules: {
+      'unicorn/single-line-block-comment-style': 'off',
+    },
+  },
+  {
     // SvelteKit sets the route file names (+page.svelte, +layout.ts, [param]/).
     files: ['src/routes/**'],
     rules: {
