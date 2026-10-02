@@ -27,3 +27,12 @@ export function formatShortTime(iso: string, timeZone?: string): string {
     .format(new Date(iso))
     .replaceAll(NARROW_NO_BREAK_SPACE, ' ');
 }
+
+/**
+The date and the time of an ISO datetime as `Jun 1, 2026, 9:00:00 AM` (the `medium` format of the Angular `DatePipe`).
+*/
+export function formatMediumDateTime(iso: string, timeZone?: string): string {
+  return new Intl.DateTimeFormat(LOCALE, { dateStyle: 'medium', timeStyle: 'medium', timeZone })
+    .format(new Date(iso))
+    .replaceAll(NARROW_NO_BREAK_SPACE, ' ');
+}
