@@ -76,7 +76,7 @@
     }
 
     /**
-    The values of all classes, or `undefined` when the badge or the capacity is not valid.
+    The values that a new class and an edited class share, or `undefined` when the badge or the capacity is not valid.
     */
     toPatch(): Required<ClassPatchRequest> | undefined {
       const { capacity } = this;

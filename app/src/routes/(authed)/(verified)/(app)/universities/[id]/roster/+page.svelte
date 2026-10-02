@@ -186,16 +186,17 @@
       {/if}
     </section>
   {/each}
-
-  <ConfirmDialog
-    bind:open={isExportWarningOpen}
-    title="Export contains youth information"
-    message="You are responsible for safeguarding and deleting this data per Youth Protection guidelines once you're done with it."
-    confirmLabel="I understand, continue"
-    onConfirm={confirmExportWarning}
-    onCancel={cancelExportWarning}
-  />
 </main>
+
+<!-- The dialog is not in `main`: the print CSS finds the last class with `:last-child`. -->
+<ConfirmDialog
+  bind:open={isExportWarningOpen}
+  title="Export contains youth information"
+  message="You are responsible for safeguarding and deleting this data per Youth Protection guidelines once you're done with it."
+  confirmLabel="I understand, continue"
+  onConfirm={confirmExportWarning}
+  onCancel={cancelExportWarning}
+/>
 
 <style>
   .roster-page {

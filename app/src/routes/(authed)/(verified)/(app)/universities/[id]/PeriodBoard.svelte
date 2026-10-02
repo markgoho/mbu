@@ -35,14 +35,15 @@
   One row of the board. The times are `datetime-local` values.
   */
   class Row {
-    // A new row has no `periodId` until the API stores it, so the list needs its own key.
-    readonly key = crypto.randomUUID();
     readonly periodId: string | undefined;
+    // The key of the row in the list. A new row has no `periodId` until the API stores it.
+    readonly key: string;
     label = $state('');
     startsAt = $state('');
     endsAt = $state('');
 
     constructor(period?: Period) {
+      this.key = period?.periodId ?? crypto.randomUUID();
       if (!period) return;
       this.periodId = period.periodId;
       this.label = period.label;
