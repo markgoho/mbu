@@ -151,6 +151,8 @@ describe('settings page', () => {
     expect(confirmSpy).toHaveBeenCalledExactlyOnceWith(
       'Delete your account? This cannot be undone.',
     );
+    // The button is enabled again when the deletion is complete.
+    await expect.element(deleteAccountButton).toBeEnabled();
     await expect.element(page.getByRole('alert')).not.toBeInTheDocument();
   });
 

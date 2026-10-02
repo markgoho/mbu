@@ -96,6 +96,8 @@ describe('sign-in page', () => {
       'secret123',
     );
     expect(sessionMock.signUpWithEmailPassword).not.toHaveBeenCalled();
+    // The button is enabled again when the sign-in is complete.
+    await expect.element(page.getByRole('button', { name: 'Sign In' })).toBeEnabled();
     await expect.element(page.getByRole('alert')).not.toBeInTheDocument();
   });
 
