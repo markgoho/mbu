@@ -1,20 +1,21 @@
-import type {
-  Period,
-  PublicClass,
-  PublicUniversity,
-} from '../../src/app/api-types/universities-api.types';
+import type { Locator, Page } from '@playwright/test';
 import type {
   RegistrationResponse,
   ScheduleResponse,
-} from '../../src/app/api-types/registrations-api.types';
-import type { ScoutListResponse } from '../../src/app/api-types/users-api.types';
-import { expect, test } from '../fixtures/auth.fixture';
-import type { Page } from '@playwright/test';
+} from '../src/lib/api-types/registrations-api.types.js';
+import type {
+  ApiErrorBody,
+  Period,
+  PublicClass,
+  PublicUniversity,
+} from '../src/lib/api-types/universities-api.types.js';
+import type { ScoutListResponse } from '../src/lib/api-types/users-api.types.js';
+import { expect, test } from './fixtures/auth.fixture.js';
 
 /**
- * Parent registration flow, fully mocked except the Auth emulator. Mirrors
- * home.spec.ts's use of the verifiedPage fixture, then layers route mocks for
- * the public event read, the schedule read, and register/cancel writes.
+ * The registration flow of a parent. Auth is the emulator. The API is mocked,
+ * on top of the mocks of the `verifiedPage` fixture: the public event read, the
+ * scout list, the schedule read, and the register and cancel writes.
  */
 
 const UNIVERSITY_ID = 'summer-2026';
@@ -128,63 +129,66 @@ const SCOUT_JAMIE = {
 function registration(
   overrides: Partial<RegistrationResponse> & Pick<RegistrationResponse, 'scoutId' | 'classId'>,
 ): RegistrationResponse {
-  const cls = [CLASS_CAMPING, CLASS_FISHING, CLASS_COOKING].find(
-    (c) => c.classId === overrides.classId,
-  )!;
+  const publicClass = [CLASS_CAMPING, CLASS_FISHING, CLASS_COOKING].find(
+    (candidate) => candidate.classId === overrides.classId,
+  );
+  if (!publicClass) throw new Error(`No class fixture has the ID ${overrides.classId}`);
   return {
     universityId: UNIVERSITY_ID,
     status: 'enrolled',
-    periodIds: cls.periodIds,
-    badgeSlug: cls.badgeSlug,
-    badgeTitle: cls.badgeTitle,
+    periodIds: publicClass.periodIds,
+    badgeSlug: publicClass.badgeSlug,
+    badgeTitle: publicClass.badgeTitle,
     waitlistedAt: null,
     enrolledAt: '2026-06-01T00:00:00.000Z',
     ...overrides,
   };
 }
 
-/** Wires the always-on mocks (public event + scout list) shared by every test. */
+/**
+Wires the always-on mocks (public event + scout list) shared by every test.
+*/
 async function mockEventAndScouts(
   page: Page,
   scouts: ScoutListResponse['scouts'] = [SCOUT_ALEX],
 ): Promise<void> {
   await page.route(`**/api/universities/${UNIVERSITY_ID}/public`, (route) =>
-    route.fulfill({
-      status: 200,
-      contentType: 'application/json',
-      body: JSON.stringify(buildEvent()),
-    }),
+    route.fulfill({ json: buildEvent() }),
   );
   await page.route('**/api/users/me/scouts', (route) =>
-    route.fulfill({
-      status: 200,
-      contentType: 'application/json',
-      body: JSON.stringify({ scouts } satisfies ScoutListResponse),
-    }),
+    route.fulfill({ json: { scouts } satisfies ScoutListResponse }),
   );
 }
 
 /**
- * Mocks the schedule GET with a mutable backing array so register/cancel
- * mocks can push/remove entries and have the next reload reflect them -
- * mirrors how the real API would behave without needing a Firestore emulator.
+ * Mocks the schedule read with an array that the register and cancel mocks
+ * change. The page reads the schedule again after each write, and then gets
+ * the changed array, as it does from the real API.
  */
-function mockSchedule(page: Page, initial: RegistrationResponse[] = []) {
+async function mockSchedule(
+  page: Page,
+  initial: RegistrationResponse[] = [],
+): Promise<RegistrationResponse[]> {
   const registrations = [...initial];
-  page.route(`**/api/registrations/${UNIVERSITY_ID}`, (route) =>
-    route.fulfill({
-      status: 200,
-      contentType: 'application/json',
-      body: JSON.stringify({ registrations } satisfies ScheduleResponse),
-    }),
+  await page.route(`**/api/registrations/${UNIVERSITY_ID}`, (route) =>
+    route.fulfill({ json: { registrations } satisfies ScheduleResponse }),
   );
   return registrations;
+}
+
+/**
+The card of a class in the schedule builder.
+*/
+function classCard(page: Page, badgeTitle: string): Locator {
+  return page
+    .getByRole('listitem')
+    .filter({ has: page.getByRole('heading', { name: badgeTitle, exact: true }) });
 }
 
 test.describe('parent registration flow', () => {
   test('enroll hits class_full, joins waitlist, then drops', async ({ verifiedPage: page }) => {
     await mockEventAndScouts(page);
-    const registrations = mockSchedule(page);
+    const registrations = await mockSchedule(page);
 
     let registerAttempts = 0;
     await page.route(`**/api/registrations/${UNIVERSITY_ID}/cls-cooking`, (route) => {
@@ -193,30 +197,25 @@ test.describe('parent registration flow', () => {
       if (registerAttempts === 1) {
         return route.fulfill({
           status: 409,
-          contentType: 'application/json',
-          body: JSON.stringify({ error: 'This class is full.', code: 'class_full' }),
+          json: { error: 'This class is full.', code: 'class_full' } satisfies ApiErrorBody,
         });
       }
-      const reg = registration({
+      const waitlisted = registration({
         scoutId: SCOUT_ALEX.scoutId,
         classId: 'cls-cooking',
         status: 'waitlisted',
         enrolledAt: null,
         waitlistedAt: '2026-06-02T00:00:00.000Z',
       });
-      registrations.push(reg);
-      return route.fulfill({
-        status: 201,
-        contentType: 'application/json',
-        body: JSON.stringify(reg),
-      });
+      registrations.push(waitlisted);
+      return route.fulfill({ status: 201, json: waitlisted });
     });
     await page.route(
       `**/api/registrations/${UNIVERSITY_ID}/cls-cooking/${SCOUT_ALEX.scoutId}`,
       (route) => {
         if (route.request().method() !== 'DELETE') return route.fallback();
         registrations.splice(
-          registrations.findIndex((r) => r.classId === 'cls-cooking'),
+          registrations.findIndex((candidate) => candidate.classId === 'cls-cooking'),
           1,
         );
         return route.fulfill({ status: 204, body: '' });
@@ -225,10 +224,18 @@ test.describe('parent registration flow', () => {
 
     await page.goto(`/e/${UNIVERSITY_ID}/register`);
 
-    const cookingCard = page.locator('.register__class-card', { hasText: 'Cooking' });
-    await expect(cookingCard.getByRole('button', { name: 'Register' })).toBeVisible();
+    // === Page structure ===
+    await expect(page.getByRole('heading', { name: 'Register for Summer 2026 MBU' })).toBeVisible();
+    // The times are in the timezone of the event (America/Chicago), not of the browser.
+    await expect(
+      page.getByRole('heading', { name: 'Afternoon · 12:00 PM – 2:00 PM' }),
+    ).toBeVisible();
+    const cookingCard = classCard(page, 'Cooking');
+    await expect(cookingCard.getByRole('button', { name: 'Register' })).toBeDisabled();
 
-    // Consent gates registration for the selected scout — accept before registering.
+    // === Register, waitlist, drop ===
+
+    // No registration without the consent for the selected scout.
     await page.getByRole('checkbox').check();
 
     // First attempt: UI thought seats were open, backend says the class just filled.
@@ -253,16 +260,16 @@ test.describe('parent registration flow', () => {
     verifiedPage: page,
   }) => {
     await mockEventAndScouts(page);
-    mockSchedule(page, [
+    await mockSchedule(page, [
       registration({ scoutId: SCOUT_ALEX.scoutId, classId: 'cls-camping', status: 'enrolled' }),
     ]);
 
     await page.goto(`/e/${UNIVERSITY_ID}/register`);
 
-    const campingCard = page.locator('.register__class-card', { hasText: 'Camping' });
+    const campingCard = classCard(page, 'Camping');
     await expect(campingCard.getByRole('button', { name: 'Drop' })).toBeVisible();
 
-    const fishingCard = page.locator('.register__class-card', { hasText: 'Fishing' });
+    const fishingCard = classCard(page, 'Fishing');
     await expect(fishingCard.getByText('Conflicts with Camping in this period.')).toBeVisible();
     const fishingButton = fishingCard.getByRole('button', { name: 'Register' });
     await expect(fishingButton).toBeDisabled();
@@ -275,7 +282,7 @@ test.describe('parent registration flow', () => {
     await mockEventAndScouts(page);
     // Alex is waitlisted for Camping (period p1); Fishing is also p1, so it must
     // be blocked client-side even though the scout only holds a waitlist spot.
-    mockSchedule(page, [
+    await mockSchedule(page, [
       registration({
         scoutId: SCOUT_ALEX.scoutId,
         classId: 'cls-camping',
@@ -287,25 +294,25 @@ test.describe('parent registration flow', () => {
 
     await page.goto(`/e/${UNIVERSITY_ID}/register`);
 
-    const campingCard = page.locator('.register__class-card', { hasText: 'Camping' });
+    const campingCard = classCard(page, 'Camping');
     await expect(campingCard.getByText('On waitlist')).toBeVisible();
 
-    const fishingCard = page.locator('.register__class-card', { hasText: 'Fishing' });
+    const fishingCard = classCard(page, 'Fishing');
     await expect(fishingCard.getByText('Conflicts with Camping in this period.')).toBeVisible();
     await expect(fishingCard.getByRole('button', { name: 'Register' })).toBeDisabled();
   });
 
   test("switching scouts shows each scout's own schedule", async ({ verifiedPage: page }) => {
     await mockEventAndScouts(page, [SCOUT_ALEX, SCOUT_JAMIE]);
-    mockSchedule(page, [
+    await mockSchedule(page, [
       registration({ scoutId: SCOUT_ALEX.scoutId, classId: 'cls-camping', status: 'enrolled' }),
       registration({ scoutId: SCOUT_JAMIE.scoutId, classId: 'cls-fishing', status: 'enrolled' }),
     ]);
 
     await page.goto(`/e/${UNIVERSITY_ID}/register`);
 
-    const campingCard = page.locator('.register__class-card', { hasText: 'Camping' });
-    const fishingCard = page.locator('.register__class-card', { hasText: 'Fishing' });
+    const campingCard = classCard(page, 'Camping');
+    const fishingCard = classCard(page, 'Fishing');
 
     // Alex is selected by default (first scout in the list).
     await expect(campingCard.getByRole('button', { name: 'Drop' })).toBeVisible();

@@ -66,22 +66,16 @@ jobs:
           path: app/build
           retention-days: 1
 
-  # Disabled until #238 ports the Playwright suite to the SvelteKit app. To
-  # enable it again, remove `if: false` and add `e2e` to the `needs` of the
-  # deploy job.
   e2e:
-    if: false
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/${{ github.repository }}:trunk
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7.0.0
+      # The `firebase` CLI, which starts the Auth emulator, is a dependency of the repo root.
       - name: Install root dependencies
         run: bun install
-      - name: Install functions dependencies
-        working-directory: functions
-        run: npm install
       - name: Install app dependencies
         working-directory: app
         run: bun install
@@ -97,7 +91,7 @@ jobs:
           retention-days: 7
 
   deploy:
-    needs: [lint, test, build]
+    needs: [lint, test, build, e2e]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

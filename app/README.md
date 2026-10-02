@@ -6,16 +6,16 @@ The event-platform SPA. It is a SvelteKit app (Svelte 5 runes) that builds to st
 
 Run all commands in `app/` with `bun`.
 
-| Command             | Function                                                       |
-| ------------------- | -------------------------------------------------------------- |
-| `bun install`       | Install the dependencies.                                      |
-| `bun run dev`       | Start the dev server on `http://localhost:4200`.               |
-| `bun run build`     | Build the static site into `build/`.                           |
-| `bun run preview`   | Serve the build locally.                                       |
-| `bun run check`     | Type-check with `svelte-check`.                                |
-| `bun run lint`      | Lint with ESLint.                                              |
-| `bun run test:unit` | Run the unit specs one time with Vitest.                       |
-| `bun run test:e2e`  | Run the Playwright suite. It does not run until #238 ports it. |
+| Command             | Function                                         |
+| ------------------- | ------------------------------------------------ |
+| `bun install`       | Install the dependencies.                        |
+| `bun run dev`       | Start the dev server on `http://localhost:4200`. |
+| `bun run build`     | Build the static site into `build/`.             |
+| `bun run preview`   | Serve the build locally.                         |
+| `bun run check`     | Type-check with `svelte-check`.                  |
+| `bun run lint`      | Lint with ESLint.                                |
+| `bun run test:unit` | Run the unit specs one time with Vitest.         |
+| `bun run test:e2e`  | Run the Playwright smoke suite one time.         |
 
 ## Unit specs
 
@@ -27,6 +27,21 @@ Vitest has two projects:
 The two projects use the `America/New_York` timezone.
 
 The `playwright` and `@playwright/test` versions in `package.json` are exact. They must be the same as `PLAYWRIGHT_VERSION` in the root `Dockerfile`, because the CI image contains the Chromium build for that version only. Change them together. On a local machine, install the browser with `bunx playwright install chromium`.
+
+## E2E specs
+
+The Playwright suite is a smoke suite. It stays small: the unit specs own the behavior of the UI. A new flow gets an e2e spec only if it needs the real Firebase Auth or the real build.
+
+- The config is `playwright.config.ts`. The specs are `e2e/*.e2e.ts`: `auth-smoke`, `home`, `registration`, `roster`, and `accessibility` (an axe scan of `/sign-in` and `/e/<id>` for WCAG 2.2 AA; #102 owns the full accessibility pass).
+- `bun run test:e2e` starts two servers and stops them at the end. The first is the Firebase Auth emulator on port 9099. The second is the static build (`bun run build && bun run preview`) on port 4173, built with `VITE_FIREBASE_AUTH_EMULATOR_HOST=localhost:9099`. There is no Functions emulator and no Firestore emulator.
+- The `firebase` CLI is a dependency of the repo root. Run `bun install` in the repo root before the first run.
+- On a local machine, the suite uses an Auth emulator that runs already on port 9099. It always makes a new build and a new preview server, so port 4173 must be free. After a run, `build/` is a build that connects to the Auth emulator: run `bun run build` again before you use `build/` for a different purpose.
+- The preview server has no `/api` proxy. A spec mocks each `/api/*` call with `page.route()` before the navigation. A call with no mock is aborted, and the test fails with the list of those calls.
+- Import `test` and `expect` from `e2e/fixtures/auth.fixture.ts`, not from `@playwright/test`. The `page` fixture has the guard for calls with no mock. The `verifiedPage` fixture makes a verified account in the emulator, mocks `POST /api/users/me` and `GET /api/health`, signs in through the UI, and gives the page on the app home.
+- Each test makes its own account in the emulator: the email is `e2e-<test ID>-<repeat>-<retry>-<time>@example.com` and the password is `password123`. There is no seeded account.
+- Type the mock data with the types in `src/lib/api-types/`.
+- To run one file: `bun run test:e2e e2e/home.e2e.ts`. The report is in `playwright-report/` (`bunx playwright show-report`).
+- `bun run check` and `bun run lint` include `e2e/` and `playwright.config.ts`.
 
 ## Dev proxy
 
