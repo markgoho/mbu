@@ -14,6 +14,11 @@ describe('safeReturnTo', () => {
     { name: 'a protocol-relative URL', query: 'returnTo=%2F%2Fevil.com', expected: '/' },
     { name: 'an absolute URL', query: 'returnTo=https%3A%2F%2Fevil.com%2F', expected: '/' },
     { name: 'a relative path', query: 'returnTo=settings', expected: '/' },
+    // A browser reads a backslash as a slash, and removes a tab or a newline,
+    // so these values are also protocol-relative URLs.
+    { name: 'a backslash after the slash', query: 'returnTo=%2F%5Cevil.com', expected: '/' },
+    { name: 'a tab between two slashes', query: 'returnTo=%2F%09%2Fevil.com', expected: '/' },
+    { name: 'a newline between two slashes', query: 'returnTo=%2F%0A%2Fevil.com', expected: '/' },
   ])('gives $expected for $name', ({ query, expected }) => {
     expect(safeReturnTo(new URLSearchParams(query))).toBe(expected);
   });

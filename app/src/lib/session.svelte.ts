@@ -1,7 +1,8 @@
 /**
  * The session of the signed-in user: the reactive Firebase user, and the
  * functions that change the session. All routes and components use this module
- * for auth. They do not call the Firebase Auth SDK themselves.
+ * for auth. They do not call the Firebase Auth SDK themselves. The guard loads
+ * are the exception: they read `getFirebaseAuth().currentUser` and the claims.
  *
  * Rules for the callers:
  *
@@ -112,8 +113,11 @@ function subscribe(): void {
 }
 
 /**
-The reactive session state. Read the properties in a component or a `$derived`.
-*/
+ * The reactive session state. Read the properties where the value is used: in a
+ * template, or in the expression of a `$derived` (`$derived(session.user?.email)`).
+ * Do not keep the `User` object itself in a `$derived`: Firebase gives the same
+ * object again after a token refresh, so the readers of that value get no update.
+ */
 export const session = {
   /**
   The signed-in Firebase user, or `undefined` when no user is signed in.
@@ -220,9 +224,20 @@ export async function signUpWithEmailPassword(
   let credential: UserCredential;
   try {
     credential = await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
-    await sendEmailVerification(credential.user, { url: verificationContinueUrl() });
   } catch (error) {
     throw translateAuthError(error, 'signUpWithEmailPassword');
+  }
+
+  // The account exists and the user is signed in now. A verification email
+  // that fails must not stop the sign-up: a second try would give
+  // `auth/email-already-in-use`. The verify-email page can send the email again.
+  try {
+    await sendEmailVerification(credential.user, { url: verificationContinueUrl() });
+  } catch (error) {
+    console.error('session.signUpWithEmailPassword: the verification email failed:', {
+      uid: credential.user.uid,
+      errorCode: authErrorCode(error),
+    });
   }
   await invalidateAll();
   return credential;
@@ -251,6 +266,8 @@ export async function reloadUser(): Promise<void> {
     await current.getIdToken(true);
   } catch (error) {
     console.error('Error reloading user:', error);
+    // Firebase signs the user out when the token is not valid, so the guards run again here too.
+    await invalidateAll();
     throw new Error('Failed to reload user data.', { cause: error });
   }
   await invalidateAll();

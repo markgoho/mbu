@@ -72,7 +72,7 @@ A guard is the `load` of a `+layout.ts` in a route group. The route groups do no
 
 Rules for a guard `load`:
 
-- `await parent()` first. SvelteKit runs the layout loads of a route at the same time, and this gives the guards a fixed order.
+- A guard that is below a different guard calls `await parent()` first. SvelteKit runs the layout loads of a route at the same time, and this gives the guards a fixed order.
 - `await getFirebaseAuth().authStateReady()` before the read of `currentUser` or an API call.
 - Use `redirect(303, ...)`, not `goto()`. Use `apiFetchNoRedirect` for an API call.
 

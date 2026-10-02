@@ -1,3 +1,6 @@
+const UNKNOWN_ERROR_CODE = 'auth/unknown-error';
+const UNKNOWN_ERROR_MESSAGE = 'An error occurred during authentication. Please try again.';
+
 // The messages to show for the error codes of the Firebase Auth SDK.
 export const AUTH_ERROR_MESSAGES: Record<string, string> = {
   'auth/email-already-in-use': 'An account with this email already exists.',
@@ -10,11 +13,8 @@ export const AUTH_ERROR_MESSAGES: Record<string, string> = {
   'auth/popup-closed-by-user': 'Sign-in was cancelled.',
   'auth/too-many-requests': 'Too many failed attempts. Please try again later.',
   'auth/network-request-failed': 'Network error. Please check your connection and try again.',
-  'auth/unknown-error': 'An error occurred during authentication. Please try again.',
+  [UNKNOWN_ERROR_CODE]: UNKNOWN_ERROR_MESSAGE,
 };
-
-const UNKNOWN_ERROR_CODE = 'auth/unknown-error';
-const UNKNOWN_ERROR_MESSAGE = 'An error occurred during authentication. Please try again.';
 
 /**
 Returns the `code` of an error from the Firebase Auth SDK, or `auth/unknown-error` if it has none.
