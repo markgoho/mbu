@@ -58,7 +58,7 @@ All code gets Firebase Auth and the API through these modules in `src/lib/`:
 
 - `session.user`, `session.emailVerified` and `session.superAdmin` are reactive. They come from the Firebase ID token listener, which starts at the first read.
 - `signInWithGoogle`, `completeGoogleRedirect`, `signInWithEmailPassword`, `signUpWithEmailPassword`, `resendEmailVerification`, `reloadUser` and `signOut` change the session. The functions that change who is signed in, or the state of the user, call `invalidateAll()` themselves, so the guards run again. A caller does not do that.
-- `bootstrap`, `deleteAccount` and `ackRosterExport` call the API. They take a `Fetcher`.
+- `bootstrap`, `completeOnboarding`, `deleteAccount` and `ackRosterExport` call the API. They take a `Fetcher`.
 
 A guard is the `load` of a `+layout.ts` in a route group. The route groups do not change the URL. The nesting is the order of the guards:
 
@@ -101,7 +101,7 @@ Rules for a route that uses them:
 
 `formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error`.
 
-The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
+The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
 
 ## Shared components
 
@@ -123,6 +123,18 @@ Rules for a page:
 - `FormAction` still asks its `confirm` question with `globalThis.confirm`. #102 decides if it moves to `ConfirmDialog`.
 
 A component spec is `<Name>.svelte.spec.ts` next to the component. For a `children` snippet, use `htmlSnippet()` from `src/lib/components/testSnippet.ts`. For a bindable prop, give `render` a property with a getter and a setter, and assert on the value that the setter received.
+
+## Pages
+
+Rules for a page in `src/routes/`, from the account routes:
+
+- Type the `data` prop with `PageData` (`let { data }: { data: PageData } = $props()`). A spec then renders the page with only `data`.
+- A read that must not block the page, or replace it with the error page, is a promise that the `load` returns and does not await. The promise does not reject: the `load` maps a failure to a value. The page reads it with `{#await}`. The app home does this for the API health.
+- A form has `novalidate` and shows its own field messages. A field shows its message after the user left it (`onblur`) or tried to submit.
+- The sign-in page does not navigate after a sign-in: the session functions invalidate the `load` data and the `(signed-out)` guard redirects. A page that leaves its guard group for a different one (`/verify-email`, `/onboarding`) calls `goto()`.
+- The account pages do not use `FormAction`. `FormAction` shows the message of the API. These pages show the message of the session function (`error.message`) or a fixed message, as the Angular pages did.
+- The spec of a page is `page.svelte.spec.ts` next to it. The spec of a `+page.ts` load is `page-load.spec.ts` (Node project).
+- The app has no sign-out control yet. `signOut()` of the session module is ready for one.
 
 ## Environment
 

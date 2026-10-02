@@ -32,7 +32,11 @@ import {
   type User,
   type UserCredential,
 } from 'firebase/auth';
-import type { BootstrapResponse, UserResponse } from '#lib/api-types/users-api.types.js';
+import type {
+  BootstrapResponse,
+  OnboardingRequest,
+  UserResponse,
+} from '#lib/api-types/users-api.types.js';
 import { expectOk, sendJson } from '#lib/api.js';
 import { authErrorCode, authErrorMessage } from '#lib/authErrorMessage.js';
 import type { Fetcher } from '#lib/fetcher.js';
@@ -169,6 +173,18 @@ function verificationContinueUrl(): string {
  */
 export async function bootstrap(fetcher: Fetcher): Promise<BootstrapResponse> {
   return sendJson<BootstrapResponse>(fetcher, 'POST', '/api/users/me', {});
+}
+
+/**
+ * Saves the name and the acceptance of the Terms and the Privacy Policy
+ * (`PATCH /api/users/me`). The caller then goes to a route of the `(app)` group
+ * with `invalidateAll`, so that the `(app)` guard bootstraps the account again.
+ */
+export async function completeOnboarding(
+  fetcher: Fetcher,
+  request: OnboardingRequest,
+): Promise<UserResponse> {
+  return sendJson<UserResponse>(fetcher, 'PATCH', '/api/users/me', request);
 }
 
 /**
