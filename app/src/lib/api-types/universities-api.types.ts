@@ -29,7 +29,7 @@ export interface UniversityResponse {
 export interface UniversitySummary {
   id: string;
   title: string;
-  status: string;
+  status: UniversityStatus;
   startDate: string;
   endDate: string | null;
   classCount: number;
