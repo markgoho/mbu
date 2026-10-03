@@ -172,8 +172,8 @@ func lockEditable(ctx context.Context, tx *sql.Tx, c authn.Caller, universityID 
 	return assertEditable(status)
 }
 
-// periodIDs reads the ids of the University's Periods, as text.
-func periodIDs(ctx context.Context, tx *sql.Tx, universityID string) (map[string]bool, error) {
+// storedPeriodIDs reads the ids of the University's Periods, as text.
+func storedPeriodIDs(ctx context.Context, tx *sql.Tx, universityID string) (map[string]bool, error) {
 	ids := map[string]bool{}
 	err := eachRow(ctx, tx, "period ids", `SELECT id::text FROM periods WHERE university_id = $1`,
 		func(row rowScanner) error {
@@ -204,7 +204,7 @@ func putPeriods(ctx context.Context, db *sql.DB, c authn.Caller, universityID st
 	if err := lockEditable(ctx, tx, c, universityID); err != nil {
 		return nil, err
 	}
-	stored, err := periodIDs(ctx, tx, universityID)
+	stored, err := storedPeriodIDs(ctx, tx, universityID)
 	if err != nil {
 		// coverage:ignore reason: a database failure inside the put transaction, not reachable from a test
 		return nil, err
@@ -245,7 +245,8 @@ func putPeriods(ctx context.Context, db *sql.DB, c authn.Caller, universityID st
 
 // refuseRemovedInUse answers 409 when a Class uses a Period the request
 // removes (each stored Period whose id is not in kept), with each such
-// Class in details as {classId: badge title}, oldest Class first.
+// Class in details as {classId: badge title} (docs/api-design.md
+// section 7, rule 4, names this one exception).
 func refuseRemovedInUse(ctx context.Context, tx *sql.Tx, universityID string, kept []string) error {
 	inUse := map[string]string{}
 	err := eachRow(ctx, tx, "classes on removed periods", `SELECT c.id, c.badge_title FROM classes c

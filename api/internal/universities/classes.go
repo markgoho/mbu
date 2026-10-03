@@ -257,7 +257,7 @@ func lockClass(ctx context.Context, tx *sql.Tx, c authn.Caller, universityID, cl
 // University's Periods (a 400 on periodIds). The ids are compared as
 // text, so one that is not a uuid is unknown, not a cast error.
 func checkClassPeriods(ctx context.Context, tx *sql.Tx, universityID string, ids []string) error {
-	stored, err := periodIDs(ctx, tx, universityID)
+	stored, err := storedPeriodIDs(ctx, tx, universityID)
 	if err != nil {
 		// coverage:ignore reason: a database failure inside a class transaction, not reachable from a test
 		return err
