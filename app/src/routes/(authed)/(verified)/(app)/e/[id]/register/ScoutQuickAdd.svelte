@@ -43,7 +43,7 @@
   }
 </script>
 
-<!-- `novalidate`: the Angular form had no browser validation and no field messages. -->
+<!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
 <form class="scout-quick-add" novalidate onsubmit={handleSubmit}>
   <h2>Add a scout</h2>
 

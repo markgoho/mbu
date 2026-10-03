@@ -130,7 +130,7 @@
   }
 </script>
 
-<!-- `novalidate`: the Angular form had no browser validation and no field messages. -->
+<!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
 <form class="class-form" novalidate onsubmit={handleSubmit}>
   {#if action.error}
     <p class="class-form__error" role="alert">{action.error}</p>

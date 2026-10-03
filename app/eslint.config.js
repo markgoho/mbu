@@ -44,14 +44,14 @@ export default defineConfig(
     },
   },
   {
-    // These files are the API contract, moved from the Angular app with no changes (#230).
+    // These files are the API contract. Keep their comments as they are (#230).
     files: ['src/lib/api-types/**'],
     rules: {
       'unicorn/single-line-block-comment-style': 'off',
     },
   },
   {
-    // These specs moved from the Angular app with only their imports changed (#232).
+    // These specs keep their current structure (#232).
     files: ['src/lib/rosterCsv.spec.ts', 'src/lib/scheduleRules.spec.ts'],
     rules: {
       'unicorn/consistent-function-scoping': 'off',
