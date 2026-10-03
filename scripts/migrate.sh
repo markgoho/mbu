@@ -51,7 +51,10 @@ if [ "$proxy_ready" != true ]; then
 fi
 
 # The proxy encrypts the hop to Cloud SQL, so the local hop needs no TLS.
-DSN="postgres://${DB_USER}:${DB_PASS}@127.0.0.1:${PROXY_PORT}/${DB_NAME}?sslmode=disable"
+# The password goes in PGPASSWORD, not in the DSN, so a password with
+# characters such as @, / or : needs no URL encoding.
+export PGPASSWORD="$DB_PASS"
+DSN="host=127.0.0.1 port=${PROXY_PORT} user=${DB_USER} dbname=${DB_NAME} sslmode=disable"
 
 echo "migrate.sh: applying goose migrations..."
 (cd "$API_DIR" && go tool goose postgres "$DSN" -dir=db/migrations up)

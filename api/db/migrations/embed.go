@@ -13,9 +13,6 @@
 // existing rows can refuse is green on the PR. The deploy (#260) applies
 // the migrations to the Cloud SQL database, which has rows, as a blocking
 // step: the statement fails there and the new revision never deploys.
-// doula-cloud learned this the hard way: an
-// `ALTER TABLE ... ADD COLUMN ... NOT NULL` with no DEFAULT was green on
-// its PR and kept its trunk red across seven merges.
 //
 // RowDependent (rowsafety.go) reports every statement the rule forbids;
 // rowClasses there enumerates the family, each member derived from a

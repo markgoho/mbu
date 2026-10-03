@@ -122,6 +122,7 @@ func TestAppRoleCannotRunDDL(t *testing.T) {
 		`CREATE TABLE intruder (id int)`,
 		`ALTER TABLE users ADD COLUMN intruder text`,
 		`CREATE INDEX intruder_idx ON users (email)`,
+		`CREATE SCHEMA intruder`,
 		`DROP TABLE registrations`,
 		`TRUNCATE users`,
 	} {
@@ -267,9 +268,10 @@ func TestNoDuplicateRoleGrant(t *testing.T) {
 func TestCheckConstraints(t *testing.T) {
 	db := seed(t)
 	const (
-		uni   = `UPDATE universities SET %s WHERE id = '` + uniID + `'`
-		reg   = `UPDATE registrations SET %s WHERE class_id = '` + classID + `' AND scout_id = '` + scoutID + `'`
-		grant = `UPDATE role_grants SET %s WHERE role = 'counselor'`
+		uni    = `UPDATE universities SET %s WHERE id = '` + uniID + `'`
+		reg    = `UPDATE registrations SET %s WHERE class_id = '` + classID + `' AND scout_id = '` + scoutID + `'`
+		grant  = `UPDATE role_grants SET %s WHERE role = 'counselor'`
+		period = `UPDATE periods SET %s`
 	)
 	for _, tc := range []struct {
 		constraint, format, set string
@@ -283,10 +285,13 @@ func TestCheckConstraints(t *testing.T) {
 		{"universities_closed_check", uni, `status = 'closed', published_at = now()`},
 		{"universities_billing_status_check", uni, `billing_status = 'refunded'`},
 		{"universities_billing_check", uni, `billing_amount_cents = 500`},
+		{"universities_billing_amount_cents_check", uni, `billing_status = 'pending', billing_amount_cents = -1`},
 		{"universities_end_date_check", uni, `end_date = start_date - interval '1 day'`},
 		{"universities_registration_window_check", uni, `registration_opens_at = registration_closes_at`},
 		{"scouts_age_band_check", `UPDATE scouts SET %s`, `age_band = '18-20'`},
-		{"periods_time_order_check", `UPDATE periods SET %s`, `ends_at = starts_at`},
+		{"periods_time_order_check", period, `ends_at = starts_at`},
+		{"periods_label_check", period, `label = ''`},
+		{"periods_position_check", period, `position = -1`},
 		{"classes_capacity_check", `UPDATE classes SET %s`, `capacity = 0`},
 		{"registrations_status_check", reg, `status = 'pending'`},
 		{"registrations_enrolled_check", reg, `waitlisted_at = now()`},
@@ -371,7 +376,7 @@ func TestDeleteBehavior(t *testing.T) {
 			},
 		},
 		{
-			name:   "a Counselor's account delete erases the attestation and the grant",
+			name:   "a Counselor's account delete erases the Class counselor row and the grant",
 			delete: `DELETE FROM users WHERE uid = '` + counselorUID + `'`,
 			left: map[string]int{
 				all("class_counselors"): 0,

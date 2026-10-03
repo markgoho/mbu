@@ -22,8 +22,7 @@ type Finding struct {
 }
 
 // Class names, exactly as RowDependent reports them on a Finding. Named
-// once here so a safety note check, a grandfathered entry and a test
-// state a class as an identifier the compiler checks, rather than
+// once here so a safety note check and a test state a class as an identifier the compiler checks, rather than
 // retyping the string and risking a silent mismatch.
 const (
 	classAddColumnNotNullWithoutDefault       = "ADD COLUMN ... NOT NULL without DEFAULT"
