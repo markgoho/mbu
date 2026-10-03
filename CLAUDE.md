@@ -95,6 +95,8 @@ Before you change `app/`, read `app/README.md` (the rules for loads, guards, dom
 
 A complete list of merit badges can be found at `scripts/merit-badges.ts`. If for any reason you need to loop over these merit badges, please use this file as an input.
 
+The Go API's Badge Catalog (`api/internal/catalog/badges.json`) is generated from this file. After a change to it, run `bun run generate:badge-catalog` and commit the JSON. CI runs `bun run check:badge-catalog` and fails when the JSON is out of date.
+
 ## Agent skills
 
 ### Issue tracker
