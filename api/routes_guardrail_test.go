@@ -15,7 +15,8 @@ import (
 // declaredPublicRoutes is every route a caller may reach with no token.
 // A route added to this list is a reviewed decision: an unauthenticated
 // route also needs a rate limit, or a row in docs/api-design.md section
-// 6 that says why not.
+// 6 that says why not. GET /api/universities/{id}/public is declared by
+// #242 and mounted by #251, which adds its rate limit.
 var declaredPublicRoutes = map[string]bool{
 	"GET /api/health":                   true,
 	"GET /api/universities/{id}/public": true,

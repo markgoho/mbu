@@ -30,7 +30,7 @@ const (
 	CodeConflict           Code = "CONFLICT"
 	CodeFailedPrecondition Code = "FAILED_PRECONDITION"
 	CodeRateLimited        Code = "RATE_LIMITED"
-	CodeInternal           Code = "INTERNAL_ERROR"
+	CodeInternal           Code = "INTERNAL"
 	CodePayloadTooLarge    Code = "PAYLOAD_TOO_LARGE"
 
 	// CodeEmailNotVerified is the 403 for a signed-in adult whose email

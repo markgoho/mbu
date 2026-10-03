@@ -268,7 +268,7 @@ func panicHandler(v any) http.Handler {
 }
 
 func TestRecover(t *testing.T) {
-	t.Run("a panic is answered with INTERNAL_ERROR and no detail", func(t *testing.T) {
+	t.Run("a panic is answered with INTERNAL and no detail", func(t *testing.T) {
 		rec := httptest.NewRecorder()
 		req := httptest.NewRequestWithContext(t.Context(), http.MethodGet, "/boom", http.NoBody)
 
@@ -282,7 +282,7 @@ func TestRecover(t *testing.T) {
 		}
 		out := apierrtest.Decode(t, rec.Result())
 		if out.Code != apierr.CodeInternal || out.Message != apierr.MsgInternalError || out.Details != nil {
-			t.Fatalf("body = %+v, want {INTERNAL_ERROR internal error <nil>}", out)
+			t.Fatalf("body = %+v, want {INTERNAL internal error <nil>}", out)
 		}
 	})
 
@@ -327,6 +327,6 @@ func TestWriteInternal(t *testing.T) {
 	}
 	out := apierrtest.Decode(t, rec.Result())
 	if out.Code != apierr.CodeInternal || out.Message != apierr.MsgInternalError {
-		t.Fatalf("body = %+v, want {INTERNAL_ERROR internal error}", out)
+		t.Fatalf("body = %+v, want {INTERNAL internal error}", out)
 	}
 }

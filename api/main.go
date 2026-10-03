@@ -3,9 +3,11 @@ package main
 
 import (
 	"context"
+	"errors"
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	"mbu/api/internal/authn"
@@ -20,15 +22,30 @@ func resolvePort(getenv func(string) string) string {
 	return "8080"
 }
 
+// errNoProjectID stops startup when GCP_PROJECT_ID is unset. Without it
+// the Admin SDK starts, then refuses every ID token, so every
+// authenticated route answers 401 and nothing says why.
+var errNoProjectID = errors.New("GCP_PROJECT_ID is not set")
+
 // firebaseProjectID reads GCP_PROJECT_ID, the Firebase project whose ID
 // tokens the API accepts.
-func firebaseProjectID(getenv func(string) string) string {
-	return getenv("GCP_PROJECT_ID")
+func firebaseProjectID(getenv func(string) string) (string, error) {
+	projectID := strings.TrimSpace(getenv("GCP_PROJECT_ID"))
+	if projectID == "" {
+		return "", errNoProjectID
+	}
+	return projectID, nil
 }
 
 func main() {
+	// coverage:ignore reason: reads the real environment, not exercised by unit tests; firebaseProjectID is
+	projectID, err := firebaseProjectID(os.Getenv)
+	if err != nil {
+		// coverage:ignore reason: reads the real environment, not exercised by unit tests; firebaseProjectID is
+		log.Fatalf("config: %v", err)
+	}
 	// coverage:ignore reason: builds the real Admin SDK client, not exercised by unit tests
-	verifier, err := authn.NewFirebaseVerifier(context.Background(), firebaseProjectID(os.Getenv))
+	verifier, err := authn.NewFirebaseVerifier(context.Background(), projectID)
 	if err != nil {
 		// coverage:ignore reason: builds the real Admin SDK client, not exercised by unit tests
 		log.Fatalf("init verifier: %v", err)

@@ -58,7 +58,7 @@ func TestToolchain_TheRunningGoIsTheOneGoModDeclares(t *testing.T) {
 
 // TestToolchain_TheImageBuildsOnTheGoGoModDeclares holds api/Dockerfile's
 // build stage to the same exact version: the image Cloud Run serves is
-// compiled by this Go, and a floating tag (it was golang:1.26) moves
+// compiled by this Go, and a floating tag (golang:1.27, say) moves
 // underneath the repo without a commit.
 func TestToolchain_TheImageBuildsOnTheGoGoModDeclares(t *testing.T) {
 	want := declaredGoVersion(t)

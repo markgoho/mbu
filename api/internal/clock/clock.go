@@ -71,12 +71,9 @@ func Now(ctx context.Context) time.Time {
 }
 
 // Middleware seeds now into every request's context before it reaches
-// next, so any handler downstream -- however many Mount/Middleware
-// layers deep -- can read it back with Now(r.Context()) without a Clock
-// parameter threaded through each of those layers. now nil (Deps.Now's
-// zero value, which every test and every route table built before this
-// ticket already has) falls back to Real, so an unset Deps.Now behaves
-// exactly like the bare time.Now() calls it replaces.
+// next, so any handler downstream can read it back with Now(r.Context())
+// without a Clock parameter. now nil (Deps.Now's zero value) falls back
+// to Real.
 func Middleware(now Clock) func(http.Handler) http.Handler {
 	if now == nil {
 		now = Real

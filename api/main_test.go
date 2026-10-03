@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -159,7 +160,7 @@ func TestPanickingRoute_AnswersInternalWithNoDetail(t *testing.T) {
 	}
 	got := apierrtest.Decode(t, resp)
 	if got.Code != apierr.CodeInternal || got.Message != apierr.MsgInternalError || got.Details != nil {
-		t.Fatalf("body = %+v, want INTERNAL_ERROR with no detail", got)
+		t.Fatalf("body = %+v, want INTERNAL with no detail", got)
 	}
 }
 
@@ -181,13 +182,20 @@ func TestResolvePort(t *testing.T) {
 }
 
 func TestFirebaseProjectID(t *testing.T) {
-	getenv := func(key string) string {
-		if key == "GCP_PROJECT_ID" {
-			return "merit-badge-university"
+	env := func(value string) func(string) string {
+		return func(key string) string {
+			if key == "GCP_PROJECT_ID" {
+				return value
+			}
+			return ""
 		}
-		return ""
 	}
-	if got := firebaseProjectID(getenv); got != "merit-badge-university" {
-		t.Fatalf("firebaseProjectID = %q, want merit-badge-university", got)
+	if got, err := firebaseProjectID(env("merit-badge-university")); err != nil || got != "merit-badge-university" {
+		t.Fatalf("firebaseProjectID = %q, %v; want merit-badge-university, nil", got, err)
+	}
+	for _, unset := range []string{"", "  "} {
+		if _, err := firebaseProjectID(env(unset)); !errors.Is(err, errNoProjectID) {
+			t.Fatalf("firebaseProjectID(%q) error = %v, want errNoProjectID", unset, err)
+		}
 	}
 }
