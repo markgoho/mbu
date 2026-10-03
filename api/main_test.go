@@ -199,3 +199,30 @@ func TestFirebaseProjectID(t *testing.T) {
 		}
 	}
 }
+
+func TestOpenDB(t *testing.T) {
+	env := func(value string) func(string) string {
+		return func(key string) string {
+			if key == "DATABASE_URL" {
+				return value
+			}
+			return ""
+		}
+	}
+	for _, unset := range []string{"", "  "} {
+		if _, err := openDB(env(unset)); !errors.Is(err, errNoDatabaseURL) {
+			t.Fatalf("openDB(%q) error = %v, want errNoDatabaseURL", unset, err)
+		}
+	}
+	if _, err := openDB(env("postgres://user@host:not-a-port/db")); err == nil {
+		t.Fatal("openDB with a malformed DATABASE_URL = nil error, want the parse error")
+	}
+	// The pool does not connect yet, so a well-formed URL needs no server.
+	db, err := openDB(env("postgres://app:secret@127.0.0.1:1/mbu?sslmode=disable"))
+	if err != nil {
+		t.Fatalf("openDB with a valid DATABASE_URL: %v", err)
+	}
+	if err := db.Close(); err != nil {
+		t.Fatalf("close: %v", err)
+	}
+}

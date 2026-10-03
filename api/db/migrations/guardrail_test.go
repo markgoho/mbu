@@ -1,0 +1,245 @@
+package migrations
+
+import (
+	"embed"
+	"fmt"
+	"slices"
+	"strings"
+	"testing"
+)
+
+// safetyFS holds the safety notes that attest to a row-dependent
+// statement being safe against the rows already in the table. It is a
+// separate embed from FS so goose never sees the notes, and it lives in
+// this test file so the binaries that import this package for the
+// migrations themselves (cmd/migrate) do not carry them.
+//
+//go:embed safety/*.md
+var safetyFS embed.FS
+
+// TestNoRowDependentStatementWithoutASafetyNote is the guardrail. It
+// fails any migration whose Up section contains a statement that only
+// existing rows can refuse, unless safety/<migration>.md explains why
+// those rows cannot refuse it.
+func TestNoRowDependentStatementWithoutASafetyNote(t *testing.T) {
+	checked := 0
+	for _, name := range migrationFiles(t) {
+		checked++
+		findings := RowDependent(UpSection(readMigration(t, name)))
+		if len(findings) == 0 {
+			continue
+		}
+		quoted := safetyNoteStatements(t, name)
+		for _, f := range findings {
+			if statementQuoted(quoted[f.Class], f.Statement) {
+				continue
+			}
+			t.Error(violation(name, f))
+		}
+	}
+	if checked == 0 {
+		t.Fatal("no migrations found to check -- the embed pattern or this test's filter is wrong")
+	}
+}
+
+// statementQuoted reports whether statement (already normalized, as
+// Finding.Statement is) appears among quoted (already normalized by
+// safetyNoteStatements).
+func statementQuoted(quoted []string, statement string) bool {
+	return slices.Contains(quoted, statement)
+}
+
+// fence is the markdown code-fence marker a safety note quotes a
+// statement inside. It cannot be written into the raw string below --
+// Go's raw strings have no escape for a backtick -- so it is
+// interpolated instead.
+const fence = "```"
+
+// violation is the failure message: the statement, the deploy-only
+// failure it risks, what to write instead, and exactly what to quote in
+// a safety note to excuse this one statement.
+func violation(name string, f Finding) string {
+	return fmt.Sprintf(`%s carries a row-dependent statement -- %s:
+
+    %s
+
+This passes every PR (testdb builds an empty database, so no existing row
+can refuse it) and fails the first time the deploy's migrate step applies
+it to the Cloud SQL database, which has rows -- and the new revision of
+mbu-api does not deploy. What it hits there:
+
+    %s
+
+Write it this way instead:
+
+    %s
+
+If the statement is already safe, attest to it in
+api/db/migrations/safety/%s.md under a "## %s" heading, inside a fenced
+%ssql block quoting exactly this statement (case and whitespace do not
+have to match, everything else does):
+
+    %ssql
+    %s
+    %s
+
+That block excuses only this statement -- a second %s statement in the
+same migration needs a block of its own. See the package doc in
+embed.go and safety/README.md.`,
+		name, f.Class, f.Statement, f.Failure, f.Remedy,
+		strings.TrimSuffix(name, ".sql"), f.Class, fence, fence, f.Statement, fence, f.Class)
+}
+
+// readSafetyNote returns safety/<migration>.md's body, or "", false when
+// the migration has no note -- the one filesystem access safetyNoteClasses
+// and safetyNoteStatements both need before they can read it differently.
+func readSafetyNote(t *testing.T, name string) (string, bool) {
+	t.Helper()
+	body, err := safetyFS.ReadFile(safetyNotePath(name))
+	if err != nil {
+		return "", false
+	}
+	return string(body), true
+}
+
+// safetyNoteClasses returns the classes safety/<migration>.md attests
+// to, keyed by the guardrail's own name for each class.
+func safetyNoteClasses(t *testing.T, name string) map[string]bool {
+	t.Helper()
+	body, ok := readSafetyNote(t, name)
+	if !ok {
+		return nil
+	}
+	covered := map[string]bool{}
+	for line := range strings.SplitSeq(body, "\n") {
+		if heading, ok := strings.CutPrefix(strings.TrimSpace(line), "## "); ok {
+			covered[strings.TrimSpace(heading)] = true
+		}
+	}
+	return covered
+}
+
+// safetyNoteStatements returns, for each class heading in
+// safety/<migration>.md, the statements a fenced ```sql block under that
+// heading quotes -- normalized the same way RowDependent normalizes a
+// Finding.Statement (see normalizeStatement), so the two compare with
+// plain equality. A heading with no block, or a statement outside any
+// heading, excuses nothing: only a quoted block under its own class
+// narrows the exemption to the one statement it names.
+func safetyNoteStatements(t *testing.T, name string) map[string][]string {
+	t.Helper()
+	body, ok := readSafetyNote(t, name)
+	if !ok {
+		return nil
+	}
+	return parseSafetyNote(body)
+}
+
+// parseSafetyNote is safetyNoteStatements' pure worker, split out so it
+// can be driven with an inline note body in a test rather than a file in
+// safety/.
+func parseSafetyNote(body string) map[string][]string {
+	quoted := map[string][]string{}
+	class := ""
+	var block *strings.Builder
+	for line := range strings.SplitSeq(body, "\n") {
+		trimmed := strings.TrimSpace(line)
+		switch {
+		case strings.HasPrefix(trimmed, "## "):
+			class = strings.TrimSpace(strings.TrimPrefix(trimmed, "## "))
+		case trimmed == fence+"sql":
+			block = &strings.Builder{}
+		case trimmed == fence && block != nil:
+			quoted[class] = append(quoted[class], normalizeStatement(block.String()))
+			block = nil
+		case block != nil:
+			block.WriteString(line)
+			block.WriteString("\n")
+		}
+	}
+	return quoted
+}
+
+// normalizeStatement puts a quoted statement through the same pipeline
+// RowDependent builds Finding.Statement with -- SplitStatements, then
+// collapse and upper-case -- so a block copied straight out of a
+// migration's SQL, an inline `-- comment` and a trailing semicolon
+// included, normalizes to exactly what RowDependent reports.
+func normalizeStatement(s string) string {
+	stmts := SplitStatements(s)
+	if len(stmts) == 0 {
+		return ""
+	}
+	return strings.ToUpper(collapse(stmts[0]))
+}
+
+// safetyNotePath is where a migration's safety note lives.
+func safetyNotePath(name string) string {
+	return "safety/" + strings.TrimSuffix(name, ".sql") + ".md"
+}
+
+// TestSafetyNotesAreStillNeeded keeps a note from outliving the
+// statement it justifies: every heading in every note must name a class
+// the guardrail still reports on that migration, and every statement a
+// heading quotes must be one the guardrail still reports for that class
+// -- a stale quote, like a stale heading, fails the build rather than
+// silently covering a statement that no longer exists.
+func TestSafetyNotesAreStillNeeded(t *testing.T) {
+	entries, err := safetyFS.ReadDir("safety")
+	if err != nil {
+		t.Fatalf("read safety notes: %v", err)
+	}
+	notes := 0
+	for _, e := range entries {
+		if e.Name() == "README.md" {
+			continue
+		}
+		notes++
+		migration := strings.TrimSuffix(e.Name(), ".md") + ".sql"
+		raised := map[string][]string{}
+		for _, f := range RowDependent(UpSection(readMigration(t, migration))) {
+			raised[f.Class] = append(raised[f.Class], f.Statement)
+		}
+		for class := range safetyNoteClasses(t, migration) {
+			if len(raised[class]) == 0 {
+				t.Errorf("%s attests to %q, which %s no longer raises; drop the heading", e.Name(), class, migration)
+			}
+		}
+		for class, statements := range safetyNoteStatements(t, migration) {
+			for _, q := range statements {
+				if !statementQuoted(raised[class], q) {
+					t.Errorf("%s quotes a %q statement %s no longer contains: %s", e.Name(), class, migration, q)
+				}
+			}
+		}
+	}
+	if notes == 0 {
+		t.Fatal("no safety notes found -- the embed pattern is wrong")
+	}
+}
+
+// migrationFiles lists the embedded migrations, newest last.
+func migrationFiles(t *testing.T) []string {
+	t.Helper()
+	entries, err := FS.ReadDir(".")
+	if err != nil {
+		t.Fatalf("read migrations: %v", err)
+	}
+	var names []string
+	for _, e := range entries {
+		if strings.HasSuffix(e.Name(), ".sql") {
+			names = append(names, e.Name())
+		}
+	}
+	return names
+}
+
+// readMigration returns one embedded migration's text.
+func readMigration(t *testing.T, name string) string {
+	t.Helper()
+	body, err := FS.ReadFile(name)
+	if err != nil {
+		t.Fatalf("read %s: %v", name, err)
+	}
+	return string(body)
+}

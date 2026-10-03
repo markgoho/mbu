@@ -1,6 +1,7 @@
 package main
 
 import (
+	"database/sql"
 	"fmt"
 	"net/http"
 	"strings"
@@ -22,6 +23,10 @@ type Deps struct {
 	// every request's context with clock.Middleware, and a handler reads
 	// it with clock.Now(r.Context()). Nil falls back to clock.Real.
 	Now clock.Clock
+
+	// DB is the Postgres pool, logged in as a member of app_runtime
+	// (ADR 0002). Tests pass testdb.New(t).App.
+	DB *sql.DB
 }
 
 // routeClass is how a route is reached, which decides what guards it.
