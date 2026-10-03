@@ -1,0 +1,25 @@
+# The local Postgres of the dev stack (#246). scripts/dev-platform.ts
+# starts and stops it with `$CONTAINER_ENGINE compose` (podman by
+# default, docker in CI). Only Postgres runs in a container: the
+# migrations, the Auth emulator and the Go API run as host processes, as
+# in ~/github/doula-cloud/app/compose.e2e.yaml.
+#
+# The image is the version of the Cloud SQL instance (#259) and of
+# internal/testdb. The port binds to loopback only.
+services:
+  db:
+    image: docker.io/library/postgres:16-alpine
+    environment:
+      POSTGRES_USER: mbu
+      POSTGRES_PASSWORD: mbu
+      POSTGRES_DB: mbu
+    ports:
+      - "127.0.0.1:${DB_HOST_PORT:-15432}:5432"
+    # A named volume, so `compose down` without -v keeps the data. The
+    # dev script runs `down -v`: each start is an empty database, as the
+    # Auth emulator starts with no accounts.
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

@@ -48,6 +48,16 @@ BADGE_SLUGS="camping,hiking,swimming" bun run detect:links
 bun run build
 ```
 
+### Local event platform
+
+Run these in the repo root. `api/docs/environment.md` has the ports and values.
+
+```bash
+bun run dev:platform   # Postgres, Auth emulator, Go API (:8080) and the app dev server (:4200); Ctrl-C stops all
+bun run dev:api        # The same stack without the app dev server
+bun run seed:platform  # Seed data and verified Auth emulator accounts (password: password123)
+```
+
 ### Event platform app (`app/`)
 
 `app/` is a separate project: the event-platform SPA. It is SvelteKit 3 with Svelte 5 runes, built as a static SPA (no SSR). Run these commands in `app/`:
