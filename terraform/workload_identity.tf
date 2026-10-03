@@ -27,7 +27,9 @@ resource "google_iam_workload_identity_pool_provider" "github" {
   attribute_mapping = {
     "google.subject"       = "assertion.sub"
     "attribute.repository" = "assertion.repository"
-    "attribute.ref"        = "assertion.ref"
+    # Not read by a binding yet. #260 can narrow the deploy binding to
+    # `attribute.ref/refs/heads/trunk` with it.
+    "attribute.ref" = "assertion.ref"
   }
 
   oidc {

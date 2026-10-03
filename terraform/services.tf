@@ -8,6 +8,7 @@ locals {
   services = toset([
     "artifactregistry.googleapis.com", # the `api` image repository
     "cloudscheduler.googleapis.com",   # the internal-route jobs (#261)
+    "iam.googleapis.com",              # service accounts, custom roles, Workload Identity
     "iamcredentials.googleapis.com",   # service account impersonation (Workload Identity)
     "run.googleapis.com",              # the `mbu-api` service (#259)
     "secretmanager.googleapis.com",    # the secret shells (#259)

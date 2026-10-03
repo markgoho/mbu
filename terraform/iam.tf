@@ -33,8 +33,10 @@ resource "google_project_iam_member" "api_runtime_cloudsql_client" {
 # is to narrow the permissions. `roles/firebaseauth.admin` also carries
 # `firebaseauth.configs.*` (sign-in providers, authorized domains), which the
 # container must not change. ID-token verification needs no permission: it
-# reads Google's public certificates. Account deletion and custom claims use
-# these three. A new Admin SDK call in api/ adds its permission here.
+# reads Google's public certificates. The container calls `DeleteUser`
+# today (account deletion); #258 grants read and update too, for the account
+# flows that come after cutover. A new Admin SDK call in api/ that needs a
+# permission outside these three adds it here.
 resource "google_project_iam_custom_role" "api_firebase_auth_users" {
   project     = local.project_id
   role_id     = "mbuApiFirebaseAuthUsers"
@@ -144,7 +146,7 @@ resource "google_project_iam_member" "terraform_plan_workload_identity_pool_view
 # here although the bucket is not: a member resource cannot delete a bucket,
 # and owning it lets the drift check notice its loss.
 resource "google_storage_bucket_iam_member" "terraform_plan_state" {
-  bucket = "merit-badge-university-tfstate"
+  bucket = local.state_bucket
   role   = "roles/storage.objectUser"
   member = google_service_account.terraform_plan.member
 }
