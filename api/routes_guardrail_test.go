@@ -47,20 +47,11 @@ func routeTableOffenses(t *testing.T, rt *router, h http.Handler) []string {
 		case classInternal:
 			if !strings.HasPrefix(patternPath(r.Pattern), "/api/internal/") {
 				offenses = append(offenses, r.Pattern+": internal, but not under /api/internal/")
+			} else if answer := unauthorizedAnswer(t, h, r.Pattern); answer != "" {
+				offenses = append(offenses, r.Pattern+": answered "+answer+" with no credentials, want 401 UNAUTHORIZED")
 			}
 		case classAuthed:
-			method, path := http.MethodGet, pathParam.ReplaceAllString(patternPath(r.Pattern), "x")
-			if fields := strings.Fields(r.Pattern); len(fields) == 2 {
-				method = fields[0]
-			}
-			resp := serve(t, h, method, path, "")
-			var code apierr.Code
-			if resp.StatusCode == http.StatusUnauthorized {
-				code = apierrtest.Decode(t, resp).Code
-			}
-			_ = resp.Body.Close()
-			if code != apierr.CodeUnauthorized {
-				answer := strings.TrimSpace(fmt.Sprintf("%d %s", resp.StatusCode, code))
+			if answer := unauthorizedAnswer(t, h, r.Pattern); answer != "" {
 				offenses = append(offenses, r.Pattern+": answered "+answer+" with no token, want 401 UNAUTHORIZED")
 			}
 		default:
@@ -68,6 +59,27 @@ func routeTableOffenses(t *testing.T, rt *router, h http.Handler) []string {
 		}
 	}
 	return offenses
+}
+
+// unauthorizedAnswer calls the route of pattern through h with no
+// credentials of any kind. It returns "" when the answer is 401
+// UNAUTHORIZED, else the status and code it got.
+func unauthorizedAnswer(t *testing.T, h http.Handler, pattern string) string {
+	t.Helper()
+	method, path := http.MethodGet, pathParam.ReplaceAllString(patternPath(pattern), "x")
+	if fields := strings.Fields(pattern); len(fields) == 2 {
+		method = fields[0]
+	}
+	resp := serve(t, h, method, path, "")
+	defer resp.Body.Close()
+	var code apierr.Code
+	if resp.StatusCode == http.StatusUnauthorized {
+		code = apierrtest.Decode(t, resp).Code
+	}
+	if code == apierr.CodeUnauthorized {
+		return ""
+	}
+	return strings.TrimSpace(fmt.Sprintf("%d %s", resp.StatusCode, code))
 }
 
 func TestRoutes_EveryRouteIsInAClass(t *testing.T) {
@@ -94,11 +106,13 @@ func TestRouteTableOffenses_CatchesAViolation(t *testing.T) {
 	rt.internal("POST /api/internal/retention/purge", ok, exempt("the purge is idempotent"))
 	rt.authed("POST /api/universities", ok)
 	rt.public("GET /api/universities/{id}/roster", ok)
-	// A route mounted behind no middleware, recorded as authed: the
-	// shape a bypass of rt.authed would take.
+	// Routes mounted behind no middleware, recorded as authed and as
+	// internal: the shape a bypass of rt.authed or rt.internal would take.
 	rt.mux.Handle("GET /api/users/me", ok)
+	rt.mux.Handle("POST /api/internal/open", ok)
 	rt.table = append(rt.table,
 		route{Pattern: "GET /api/users/me", Class: classAuthed},
+		route{Pattern: "POST /api/internal/open", Class: classInternal, Stance: exempt("a test")},
 		route{Pattern: "GET /api/internal-ish", Class: classInternal},
 		route{Pattern: "GET /api/other", Class: "other"},
 	)
@@ -109,6 +123,7 @@ func TestRouteTableOffenses_CatchesAViolation(t *testing.T) {
 		"POST /api/universities: a POST with no idempotency stance -- mount it with replayable or exempt(reason)",
 		"GET /api/universities/{id}/roster: public, but not a declared public route",
 		"GET /api/users/me: answered 200 with no token, want 401 UNAUTHORIZED",
+		"POST /api/internal/open: answered 200 with no credentials, want 401 UNAUTHORIZED",
 		"GET /api/internal-ish: internal, but not under /api/internal/",
 		"GET /api/other: in no route class",
 	}

@@ -217,6 +217,9 @@ async function startAPI(onUnexpectedExit: (name: string) => void) {
     DATABASE_URL: APP_DSN,
     FIREBASE_AUTH_EMULATOR_HOST: AUTH_EMULATOR_HOST,
     GCP_PROJECT_ID: PROJECT_ID,
+    // The local caller of /api/internal/** (ADR 0005): no metadata server
+    // mints an OIDC token here. Deliberately unset on Cloud Run.
+    INTERNAL_WORKER_SECRET: "local-worker-secret",
   };
   // Local mode sends no mail: without a key the API uses the fake sender (#257).
   delete env["MAILGUN_API_KEY"];

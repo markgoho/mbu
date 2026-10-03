@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"net/http"
@@ -13,6 +14,7 @@ import (
 	"mbu/api/internal/authn"
 	"mbu/api/internal/authntest"
 	"mbu/api/internal/clock"
+	"mbu/api/internal/internalauth"
 )
 
 // The ID tokens the fake verifier in testDeps knows.
@@ -21,6 +23,32 @@ const (
 	tokenUnverified = "token-unverified"
 	tokenSuperAdmin = "token-super-admin"
 )
+
+// The internal boundary of the tests: the audience the guard asks for,
+// the one service account it accepts, and the OIDC tokens fakeOIDC knows.
+const (
+	internalAudience = "https://mbu-api-test.a.run.app"
+	schedulerCaller  = "scheduler@merit-badge-university.iam.gserviceaccount.com"
+
+	oidcScheduler     = "oidc-scheduler"
+	oidcOtherAudience = "oidc-other-audience"
+	oidcStranger      = "oidc-stranger"
+)
+
+// fakeOIDC stands in for Google's token check (internalauth.GoogleValidator):
+// each token it knows was minted for one audience and one email, and a
+// token for another audience is refused, as Google refuses it.
+func fakeOIDC(_ context.Context, token, audience string) (string, error) {
+	minted := map[string]struct{ email, audience string }{
+		oidcScheduler:     {schedulerCaller, internalAudience},
+		oidcOtherAudience: {schedulerCaller, "https://elsewhere.a.run.app"},
+		oidcStranger:      {"stranger@other-project.iam.gserviceaccount.com", internalAudience},
+	}[token]
+	if minted.email == "" || minted.audience != audience {
+		return "", errors.New("fakeOIDC: token refused")
+	}
+	return minted.email, nil
+}
 
 // testNow is the instant every request in these tests reads.
 var testNow = time.Date(2027, time.March, 6, 9, 0, 0, 0, time.UTC)
@@ -34,6 +62,11 @@ func testDeps() Deps {
 			tokenSuperAdmin: {UID: "uid-admin", Email: "admin@example.com", EmailVerified: true, SuperAdmin: true},
 		}},
 		Now: func() time.Time { return testNow },
+		InternalAuth: internalauth.New(internalauth.Config{
+			Audience: internalAudience,
+			Callers:  []string{schedulerCaller},
+			Validate: fakeOIDC,
+		}),
 	}
 }
 
@@ -248,5 +281,54 @@ func TestClientIPProxyHops(t *testing.T) {
 		if _, err := clientIPProxyHops(env(bad)); !errors.Is(err, errBadProxyHops) {
 			t.Errorf("clientIPProxyHops(%q) error = %v, want errBadProxyHops", bad, err)
 		}
+	}
+}
+
+// TestInternalGuard reads the guard from the environment: with nothing
+// set (an unconfigured service) it refuses a Bearer token and the secret
+// header; with INTERNAL_WORKER_SECRET set (the local stack) it takes that
+// header; with INTERNAL_OIDC_AUDIENCE and INTERNAL_OIDC_CALLERS set (the
+// deployed posture) it takes the allowlisted caller's token for that
+// audience only.
+func TestInternalGuard(t *testing.T) {
+	request := func(header, value string) *http.Request {
+		r := httptest.NewRequestWithContext(t.Context(), http.MethodPost, "/api/internal/retention/purge", http.NoBody)
+		r.Header.Set(header, value)
+		return r
+	}
+	none := internalGuard(func(string) string { return "" }, fakeOIDC)
+	if none.Allow(request("Authorization", "Bearer anything")) || none.Allow(request("X-Internal-Secret", "")) {
+		t.Error("an unconfigured guard allowed a request")
+	}
+
+	local := internalGuard(func(key string) string {
+		if key == "INTERNAL_WORKER_SECRET" {
+			return "local-worker-secret"
+		}
+		return ""
+	}, fakeOIDC)
+	if !local.Allow(request("X-Internal-Secret", "local-worker-secret")) {
+		t.Error("the guard refused the configured INTERNAL_WORKER_SECRET")
+	}
+	if local.Allow(request("X-Internal-Secret", "guessed")) {
+		t.Error("the guard allowed a wrong secret")
+	}
+
+	deployed := internalGuard(func(key string) string {
+		return map[string]string{
+			"INTERNAL_OIDC_AUDIENCE": internalAudience,
+			"INTERNAL_OIDC_CALLERS":  "other@merit-badge-university.iam.gserviceaccount.com, " + schedulerCaller,
+		}[key]
+	}, fakeOIDC)
+	if !deployed.Allow(request("Authorization", "Bearer "+oidcScheduler)) {
+		t.Error("the deployed guard refused the allowlisted caller")
+	}
+	for _, token := range []string{oidcOtherAudience, oidcStranger} {
+		if deployed.Allow(request("Authorization", "Bearer "+token)) {
+			t.Errorf("the deployed guard allowed %s", token)
+		}
+	}
+	if deployed.Allow(request("X-Internal-Secret", "")) {
+		t.Error("the deployed guard allowed the secret header with no secret set")
 	}
 }

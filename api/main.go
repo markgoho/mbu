@@ -16,6 +16,7 @@ import (
 	"mbu/api/internal/authn"
 	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
+	"mbu/api/internal/internalauth"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/stdlib"
@@ -86,6 +87,26 @@ func clientIPProxyHops(getenv func(string) string) (int, error) {
 	return hops, nil
 }
 
+// internalGuard builds the guard of /api/internal/** (ADR 0005) from
+// the environment. getenv and validate are parameters, so a test can
+// assert what the service accepts as an internal caller; main() passes
+// internalauth.GoogleValidator.
+//
+// INTERNAL_OIDC_AUDIENCE is the Cloud Run service's own base URL, and
+// INTERNAL_OIDC_CALLERS the comma-separated service accounts whose
+// tokens are accepted. INTERNAL_WORKER_SECRET is the local stack's
+// mechanism and is deliberately unset on Cloud Run: unset means the
+// X-Internal-Secret header is refused. With nothing set, the guard
+// refuses every request, and the service still starts.
+func internalGuard(getenv func(string) string, validate internalauth.ValidateFunc) *internalauth.Guard {
+	return internalauth.New(internalauth.Config{
+		Audience: getenv("INTERNAL_OIDC_AUDIENCE"),
+		Callers:  strings.Split(getenv("INTERNAL_OIDC_CALLERS"), ","),
+		Validate: validate,
+		Secret:   getenv("INTERNAL_WORKER_SECRET"),
+	})
+}
+
 func main() {
 	// coverage:ignore reason: reads the real environment, not exercised by unit tests; firebaseProjectID is
 	projectID, err := firebaseProjectID(os.Getenv)
@@ -115,7 +136,14 @@ func main() {
 	}
 
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
-	deps := Deps{Verifier: verifier, Now: clock.Real, DB: db, ClientIP: clientip.Resolver{ProxyHops: proxyHops}, Accounts: verifier}
+	deps := Deps{
+		Verifier:     verifier,
+		Now:          clock.Real,
+		DB:           db,
+		ClientIP:     clientip.Resolver{ProxyHops: proxyHops},
+		Accounts:     verifier,
+		InternalAuth: internalGuard(os.Getenv, internalauth.GoogleValidator),
+	}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
