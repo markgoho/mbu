@@ -132,6 +132,7 @@ Each rate-limited MBU route, and why. A ticket that adds or limits a route adds 
 
 | Route | Rules | Reason |
 | :---- | :---- | :----- |
+| `GET /api/health` | none | The health probe for Cloud Run and the image smoke test. It reads no database and calls no vendor, so a flood of it costs no more than any request the load balancer refuses. |
 
 ---
 

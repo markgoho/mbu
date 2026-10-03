@@ -55,3 +55,7 @@ firestore-debug.log
 .playwright-cli/
 .secrets.local
 .antigravitycli/
+
+# Go API (api/)
+api/.golangci-cache
+api/coverage.out
