@@ -8,6 +8,7 @@ import (
 
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/authn"
+	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/idempotency"
 )
@@ -28,6 +29,11 @@ type Deps struct {
 	// DB is the Postgres pool, logged in as a member of app_runtime
 	// (ADR 0002). Tests pass testdb.New(t).App.
 	DB *sql.DB
+
+	// ClientIP reads the caller's address for ratelimit.IPRule (#293).
+	// main() sets ProxyHops from CLIENT_IP_PROXY_HOPS; the zero value
+	// trusts only Cloud Run's front end, the right value for tests.
+	ClientIP clientip.Resolver
 }
 
 // routeClass is how a route is reached, which decides what guards it.

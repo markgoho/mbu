@@ -226,3 +226,27 @@ func TestOpenDB(t *testing.T) {
 		t.Fatalf("close: %v", err)
 	}
 }
+
+func TestClientIPProxyHops(t *testing.T) {
+	env := func(value string) func(string) string {
+		return func(key string) string {
+			if key == "CLIENT_IP_PROXY_HOPS" {
+				return value
+			}
+			return ""
+		}
+	}
+	for _, tc := range []struct {
+		value string
+		want  int
+	}{{"", 0}, {"0", 0}, {"1", 1}, {"\t1\n", 1}} {
+		if got, err := clientIPProxyHops(env(tc.value)); err != nil || got != tc.want {
+			t.Errorf("clientIPProxyHops(%q) = %d, %v; want %d, nil", tc.value, got, err, tc.want)
+		}
+	}
+	for _, bad := range []string{"-1", "one", "1.5"} {
+		if _, err := clientIPProxyHops(env(bad)); !errors.Is(err, errBadProxyHops) {
+			t.Errorf("clientIPProxyHops(%q) error = %v, want errBadProxyHops", bad, err)
+		}
+	}
+}
