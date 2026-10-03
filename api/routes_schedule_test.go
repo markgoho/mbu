@@ -113,7 +113,7 @@ func TestScheduleRoutes_OnlyTheChancellorOrASuperAdmin(t *testing.T) {
 			resp = f.send(r.method, other, tokenSuperAdmin, r.body)
 			defer resp.Body.Close()
 			got := wantRefusal(t, resp, http.StatusNotFound, apierr.CodeNotFound)
-			if got.Message != "University not found" {
+			if got.Message != msgUniversityNotFound {
 				t.Fatalf("message = %q", got.Message)
 			}
 		})
@@ -242,8 +242,8 @@ func TestPutPeriods_ARemovedPeriodInUseIsAConflict(t *testing.T) {
 		body string
 		want map[string]string
 	}{
-		"one Class uses it":    {keepOne, map[string]string{classOne: "Camping"}},
-		"two Classes use them": {`{"periods":[]}`, map[string]string{classOne: "Camping", classTwo: "Archery"}},
+		"one Class uses it":    {keepOne, map[string]string{classOne: badgeCamping}},
+		"two Classes use them": {`{"periods":[]}`, map[string]string{classOne: badgeCamping, classTwo: "Archery"}},
 	}
 	for name, tt := range tests {
 		t.Run(name, func(t *testing.T) {
@@ -516,7 +516,7 @@ func TestClassWrites_AClassNotInTheUniversityIsNotFound(t *testing.T) {
 			resp := f.send(method, pathClass(id), tokenSuperAdmin, classPatchBody)
 			got := wantRefusal(t, resp, http.StatusNotFound, apierr.CodeNotFound)
 			_ = resp.Body.Close()
-			if got.Message != "Class not found" {
+			if got.Message != msgClassNotFound {
 				t.Fatalf("%s %s: message = %q", method, id, got.Message)
 			}
 		}
