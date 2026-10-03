@@ -1,18 +1,23 @@
 name: Check Go API
 
-# Runs on each pull request that changes api/ or this file, and on each
-# push of such a change to trunk, so that trunk shows the result of the
-# merged code too (#245).
+# Runs on each pull request that changes api/, the badge list the API's
+# Badge Catalog is generated from, or this file, and on each push of such a
+# change to trunk, so that trunk shows the result of the merged code too
+# (#245, #248).
 on:
   pull_request:
     paths:
       - "api/**"
+      - "scripts/merit-badges.ts"
+      - "scripts/generate-api-badge-catalog.ts"
       - ".github/workflows/api-pull-request.yml"
   push:
     branches:
       - trunk
     paths:
       - "api/**"
+      - "scripts/merit-badges.ts"
+      - "scripts/generate-api-badge-catalog.ts"
       - ".github/workflows/api-pull-request.yml"
 
 # A new push to the same pull request cancels the run still in flight for
@@ -86,6 +91,22 @@ jobs:
       - name: Enforce 100% line coverage
         working-directory: api
         run: go run ./tools/covcheck -profile=coverage.out -module=mbu/api -skip=mbu/api/tools/
+
+  # api/internal/catalog/badges.json is generated from
+  # scripts/merit-badges.ts (#248). This fails when the badge list changed
+  # and `bun run generate:badge-catalog` was not run. The repo image has bun
+  # and git; the generator needs no `bun install`.
+  badge-catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container:
+      image: ghcr.io/${{ github.repository }}:trunk
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
+
+      - name: Check the Badge Catalog is generated
+        run: bun run check:badge-catalog
 
   # Builds the image Cloud Run will serve and checks that it starts, stays
   # up and answers GET /api/health. This catches an image that compiles and

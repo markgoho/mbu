@@ -31,6 +31,8 @@
     "dev:platform": "bun scripts/dev-platform.ts",
     "dev:api": "bun scripts/dev-platform.ts --no-app",
     "seed:platform": "bun scripts/seed-platform.ts",
+    "generate:badge-catalog": "bun scripts/generate-api-badge-catalog.ts",
+    "check:badge-catalog": "bun scripts/generate-api-badge-catalog.ts && git diff --exit-code -- api/internal/catalog/badges.json",
     "emulator:firestore": "firebase emulators:start --only firestore",
     "seed:firestore": "FIRESTORE_EMULATOR_HOST=127.0.0.1:8090 bun firestore/seed.ts",
     "test:firestore": "firebase emulators:exec --only firestore \"bun test firestore/\"",
