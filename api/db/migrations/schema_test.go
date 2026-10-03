@@ -38,7 +38,7 @@ const (
 // with one Scout, a Counselor and a Chancellor. The Scout is enrolled in
 // the first Class and has a cancelled Registration in the second. A
 // second University holds one Period of its own. The Parent has one
-// stored Idempotency-Key response.
+// stored Idempotency-Key response and one pending mail in the outbox.
 var seedSQL = []string{
 	`INSERT INTO users (uid, email) VALUES
 	    ('` + parentUID + `', 'parent@example.com'),
@@ -71,6 +71,9 @@ var seedSQL = []string{
 	    ('` + class2ID + `', '` + scoutID + `', 'cancelled', NULL, NULL, now(), 'v1', 'Sam', 'Scout', 'Pat', 'parent@example.com')`,
 	`INSERT INTO idempotency_keys (uid, key, request_hash, status_code, response_body, created_at)
 	    VALUES ('` + parentUID + `', 'key-1', '\x00', 201, '{}', now())`,
+	`INSERT INTO registration_mail_outbox (kind, to_parent_uid, scout_id, class_id, university_id,
+	    next_attempt_at, created_at)
+	 VALUES ('registered', '` + parentUID + `', '` + scoutID + `', '` + classID + `', '` + uniID + `', now(), now())`,
 }
 
 // seed gives the test a fresh database that holds the fixture graph.
@@ -161,7 +164,7 @@ func TestAppRoleHasDataPrivilegesOnEachTable(t *testing.T) {
 
 	want := []string{
 		"class_counselors", "class_periods", "classes", "idempotency_keys", "periods",
-		"rate_limit_buckets", "registrations", "role_grants", "scouts", "universities", "users",
+		"rate_limit_buckets", "registration_mail_outbox", "registrations", "role_grants", "scouts", "universities", "users",
 	}
 	var got []string
 	for rows.Next() {
@@ -275,6 +278,7 @@ func TestCheckConstraints(t *testing.T) {
 		reg    = `UPDATE registrations SET %s WHERE class_id = '` + classID + `' AND scout_id = '` + scoutID + `'`
 		grant  = `UPDATE role_grants SET %s WHERE role = 'counselor'`
 		period = `UPDATE periods SET %s`
+		outbox = `UPDATE registration_mail_outbox SET %s`
 	)
 	for _, tc := range []struct {
 		constraint, format, set string
@@ -301,6 +305,10 @@ func TestCheckConstraints(t *testing.T) {
 		{"registrations_waitlisted_check", reg, `status = 'waitlisted', enrolled_at = NULL`},
 		{"registrations_unpurged_check", reg, `parent_email = NULL`},
 		{"registrations_purged_check", reg, `purged_at = now()`},
+		{"registration_mail_outbox_kind_check", outbox, `kind = 'reminder'`},
+		{"registration_mail_outbox_status_check", outbox, `status = 'dead_lettered'`},
+		{"registration_mail_outbox_attempts_check", outbox, `attempts = -1`},
+		{"registration_mail_outbox_sent_check", outbox, `status = 'sent'`},
 		{"role_grants_status_check", grant, `status = 'pending'`},
 		{"role_grants_role_check", grant, `role = 'parent'`},
 		{"role_grants_scope_check", grant, `class_id = NULL`},
@@ -338,14 +346,15 @@ func TestDeleteBehavior(t *testing.T) {
 			delete: `DELETE FROM universities WHERE id = '` + uniID + `'`,
 			left: map[string]int{
 				`SELECT count(*) FROM periods WHERE university_id = '` + uniID + `'`: 0,
-				all("classes"):          0,
-				all("class_periods"):    0,
-				all("class_counselors"): 0,
-				all("registrations"):    0,
-				all("role_grants"):      0,
-				all("periods"):          1,
-				all("users"):            3,
-				all("scouts"):           1,
+				all("classes"):                  0,
+				all("class_periods"):            0,
+				all("class_counselors"):         0,
+				all("registrations"):            0,
+				all("role_grants"):              0,
+				all("registration_mail_outbox"): 0,
+				all("periods"):                  1,
+				all("users"):                    3,
+				all("scouts"):                   1,
 			},
 		},
 		{
@@ -355,7 +364,8 @@ func TestDeleteBehavior(t *testing.T) {
 				all("class_periods"):    0,
 				all("class_counselors"): 0,
 				`SELECT count(*) FROM registrations WHERE class_id = '` + classID + `'`: 0,
-				all("registrations"): 1,
+				all("registrations"):                                         1,
+				all("registration_mail_outbox"):                              0,
 				`SELECT count(*) FROM role_grants WHERE role = 'counselor'`:  0,
 				`SELECT count(*) FROM role_grants WHERE role = 'chancellor'`: 1,
 				all("periods"): 2,
@@ -365,18 +375,20 @@ func TestDeleteBehavior(t *testing.T) {
 			name:   "a Scout delete erases each of its Registrations, cancelled ones too",
 			delete: `DELETE FROM scouts WHERE id = '` + scoutID + `'`,
 			left: map[string]int{
-				all("registrations"): 0,
-				all("classes"):       2,
-				all("users"):         3,
+				all("registrations"):            0,
+				all("registration_mail_outbox"): 1, // no foreign key: the Scout delete removes it in code
+				all("classes"):                  2,
+				all("users"):                    3,
 			},
 		},
 		{
 			name:   "a Parent's account delete erases the Scouts, their Registrations and the stored responses",
 			delete: `DELETE FROM users WHERE uid = '` + parentUID + `'`,
 			left: map[string]int{
-				all("scouts"):           0,
-				all("registrations"):    0,
-				all("idempotency_keys"): 0,
+				all("scouts"):                   0,
+				all("registrations"):            0,
+				all("idempotency_keys"):         0,
+				all("registration_mail_outbox"): 1, // no foreign key: the account delete removes it in code
 			},
 		},
 		{
@@ -385,8 +397,9 @@ func TestDeleteBehavior(t *testing.T) {
 			left: map[string]int{
 				all("class_counselors"): 0,
 				`SELECT count(*) FROM role_grants WHERE role = 'counselor'`: 0,
-				all("classes"):          2,
-				all("idempotency_keys"): 1,
+				all("classes"):                  2,
+				all("idempotency_keys"):         1,
+				all("registration_mail_outbox"): 1,
 			},
 		},
 		{

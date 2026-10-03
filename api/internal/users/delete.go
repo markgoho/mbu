@@ -86,10 +86,15 @@ func deleteAccountData(ctx context.Context, db *sql.DB, uid string, now time.Tim
 		return errCloseEventsFirst
 	}
 
-	// #257 writes the "promoted" mail for each Promotion here.
-	if _, err := seats.CancelActiveOfScouts(ctx, tx, now, scoutIDs); err != nil {
+	if err := seats.CancelActiveOfScouts(ctx, tx, now, scoutIDs); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
 		return err //nolint:wrapcheck // seats wraps it with its own context
+	}
+	// No foreign key cascades to the outbox (a lock-order reason, see
+	// migration 00006): erasure removes the Parent's mail rows here.
+	if _, err := tx.ExecContext(ctx, `DELETE FROM registration_mail_outbox WHERE to_parent_uid = $1`, uid); err != nil {
+		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
+		return fmt.Errorf("users: delete mail: %w", err)
 	}
 	if _, err := tx.ExecContext(ctx, `DELETE FROM users WHERE uid = $1`, uid); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test

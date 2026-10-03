@@ -306,10 +306,15 @@ func deleteScout(ctx context.Context, db *sql.DB, uid, scoutID string, now time.
 		return fmt.Errorf("scouts: lock scout: %w", err)
 	}
 
-	// #257 writes the "promoted" mail for each Promotion here.
-	if _, err := seats.CancelActiveOfScouts(ctx, tx, now, []string{scoutID}); err != nil {
+	if err := seats.CancelActiveOfScouts(ctx, tx, now, []string{scoutID}); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
 		return err //nolint:wrapcheck // seats wraps it with its own context
+	}
+	// No foreign key cascades to the outbox (a lock-order reason, see
+	// migration 00006): erasure removes the Scout's mail rows here.
+	if _, err := tx.ExecContext(ctx, `DELETE FROM registration_mail_outbox WHERE scout_id = $1`, scoutID); err != nil {
+		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
+		return fmt.Errorf("scouts: delete mail: %w", err)
 	}
 	if _, err := tx.ExecContext(ctx, `DELETE FROM scouts WHERE id = $1`, scoutID); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test

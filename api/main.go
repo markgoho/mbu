@@ -17,6 +17,7 @@ import (
 	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/internalauth"
+	"mbu/api/internal/mail"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/stdlib"
@@ -107,6 +108,21 @@ func internalGuard(getenv func(string) string, validate internalauth.ValidateFun
 	})
 }
 
+// mailSender builds the Sender of the outbox drain from the environment.
+// With MAILGUN_API_KEY unset (the local stack, CI) it is a FakeSender
+// that logs each mail, so no local run can send real mail. Otherwise
+// MAILGUN_DOMAIN (default mg.merit-badge.university) and
+// MAILGUN_API_BASE (default Mailgun's US host) apply.
+func mailSender(getenv func(string) string, logf func(string, ...any)) mail.Sender {
+	key := strings.TrimSpace(getenv("MAILGUN_API_KEY"))
+	if key == "" {
+		logf("mail: MAILGUN_API_KEY is not set: the drain logs each mail and sends none")
+		return &mail.FakeSender{Logf: logf}
+	}
+	return mail.NewMailgunSender(key, strings.TrimSpace(getenv("MAILGUN_DOMAIN")),
+		strings.TrimSpace(getenv("MAILGUN_API_BASE")))
+}
+
 func main() {
 	// coverage:ignore reason: reads the real environment, not exercised by unit tests; firebaseProjectID is
 	projectID, err := firebaseProjectID(os.Getenv)
@@ -143,6 +159,7 @@ func main() {
 		ClientIP:     clientip.Resolver{ProxyHops: proxyHops},
 		Accounts:     verifier,
 		InternalAuth: internalGuard(os.Getenv, internalauth.GoogleValidator),
+		Mail:         mailSender(os.Getenv, log.Printf),
 	}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)

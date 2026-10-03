@@ -68,7 +68,7 @@ func cancel(ctx context.Context, db *sql.DB, c authn.Caller, universityID, class
 	if !ok {
 		return errRegistrationNotFound
 	}
-	promotion, cancelled, err := seats.CancelAndPromote(ctx, tx, now, universityID, id.String(), scoutID)
+	cancelled, err := seats.CancelAndPromote(ctx, tx, now, universityID, id.String(), scoutID)
 	if err != nil {
 		// coverage:ignore reason: a database failure inside the cancel transaction, not reachable from a test
 		return err //nolint:wrapcheck // seats wraps it with its own context
@@ -76,8 +76,6 @@ func cancel(ctx context.Context, db *sql.DB, c authn.Caller, universityID, class
 	if !cancelled {
 		return errRegistrationNotFound
 	}
-	// #257 writes the "promoted" mail to the outbox here, in this transaction, when promotion is not nil.
-	_ = promotion
 	if err := tx.Commit(); err != nil {
 		// coverage:ignore reason: a database failure inside the cancel transaction, not reachable from a test
 		return fmt.Errorf("registrations: commit cancel: %w", err)

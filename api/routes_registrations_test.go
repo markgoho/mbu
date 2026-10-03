@@ -569,19 +569,25 @@ func (f *usersFixture) tickingClock() {
 	var tick atomic.Int64
 	d := testDeps()
 	d.DB = f.db.App
+	d.Mail = f.mail
 	d.Now = func() time.Time { return testNow.Add(time.Duration(tick.Add(1)) * time.Millisecond) }
 	f.h = routes(d)
 }
 
-// sendAll sends the requests in parallel and returns each status, in the
-// order of the requests.
+// sendAll sends the requests in parallel as the Parent and returns each
+// status, in the order of the requests.
 func (f *usersFixture) sendAll(method string, paths, bodies []string) []int {
+	return f.sendAllAs(tokenParent, method, paths, bodies)
+}
+
+// sendAllAs is sendAll with the Bearer token of another caller.
+func (f *usersFixture) sendAllAs(token, method string, paths, bodies []string) []int {
 	statuses := make([]int, len(paths))
 	var wg sync.WaitGroup
 	for i := range paths {
 		wg.Go(func() {
 			req := httptest.NewRequestWithContext(f.t.Context(), method, paths[i], strings.NewReader(bodies[i]))
-			req.Header.Set("Authorization", "Bearer "+tokenParent)
+			req.Header.Set("Authorization", "Bearer "+token)
 			rec := httptest.NewRecorder()
 			f.h.ServeHTTP(rec, req)
 			statuses[i] = rec.Code

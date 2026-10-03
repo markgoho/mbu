@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -15,6 +16,7 @@ import (
 	"mbu/api/internal/authntest"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/internalauth"
+	"mbu/api/internal/mail"
 )
 
 // The ID tokens the fake verifier in testDeps knows.
@@ -58,7 +60,7 @@ func testDeps() Deps {
 	return Deps{
 		Verifier: authntest.Verifier{Tokens: map[string]authn.Token{
 			tokenParent:     {UID: "uid-parent", Email: "Parent@Example.com", EmailVerified: true},
-			tokenUnverified: {UID: "uid-unverified", Email: "new@example.com"},
+			tokenUnverified: {UID: "uid-unverified", Email: emailNew},
 			tokenSuperAdmin: {UID: "uid-admin", Email: "admin@example.com", EmailVerified: true, SuperAdmin: true},
 		}},
 		Now: func() time.Time { return testNow },
@@ -67,6 +69,7 @@ func testDeps() Deps {
 			Callers:  []string{schedulerCaller},
 			Validate: fakeOIDC,
 		}),
+		Mail: &mail.FakeSender{},
 	}
 }
 
@@ -330,5 +333,44 @@ func TestInternalGuard(t *testing.T) {
 	}
 	if deployed.Allow(request("X-Internal-Secret", "")) {
 		t.Error("the deployed guard allowed the secret header with no secret set")
+	}
+}
+
+// envMailgunKey is the variable that turns real mail on.
+const envMailgunKey = "MAILGUN_API_KEY"
+
+// TestMailSender: with no MAILGUN_API_KEY the service sends no real
+// mail (a FakeSender that logs each send); with a key it is a
+// MailgunSender on the default domain and host, or the overrides.
+func TestMailSender(t *testing.T) {
+	env := func(vars map[string]string) func(string) string {
+		return func(key string) string { return vars[key] }
+	}
+	var logged []string
+	logf := func(format string, args ...any) { logged = append(logged, fmt.Sprintf(format, args...)) }
+
+	fake, ok := mailSender(env(map[string]string{envMailgunKey: "  "}), logf).(*mail.FakeSender)
+	if !ok {
+		t.Fatal("mailSender with no key is not a FakeSender")
+	}
+	if id, err := fake.Send(t.Context(), mail.Message{To: "p@example.com", Subject: "Hi"}); err != nil || id != "fake-1" {
+		t.Fatalf("fake send = %q, %v", id, err)
+	}
+	if len(logged) != 2 || logged[1] != `mail: fake send fake-1 to=p@example.com subject="Hi"` {
+		t.Fatalf("logged = %q", logged)
+	}
+
+	for _, tc := range []struct {
+		vars               map[string]string
+		wantDomain, wantAt string
+	}{
+		{map[string]string{envMailgunKey: "k"}, "mg.merit-badge.university", "https://api.mailgun.net"},
+		{map[string]string{envMailgunKey: "k", "MAILGUN_DOMAIN": " mg.example.org ", "MAILGUN_API_BASE": "https://api.eu.mailgun.net"},
+			"mg.example.org", "https://api.eu.mailgun.net"},
+	} {
+		mg, ok := mailSender(env(tc.vars), logf).(*mail.MailgunSender)
+		if !ok || mg.APIKey != "k" || mg.Domain != tc.wantDomain || mg.BaseURL != tc.wantAt || mg.HTTPClient.Timeout == 0 {
+			t.Errorf("mailSender(%v) = %+v, want Mailgun on %s at %s", tc.vars, mg, tc.wantDomain, tc.wantAt)
+		}
 	}
 }

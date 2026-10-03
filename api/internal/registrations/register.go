@@ -15,6 +15,7 @@ import (
 	"mbu/api/internal/authz"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/policy"
+	"mbu/api/internal/regmail"
 )
 
 // registerRequest is the body of a register. Each field is decoded as
@@ -176,8 +177,14 @@ func register(ctx context.Context, db *sql.DB, c authn.Caller, universityID, cla
 		// coverage:ignore reason: a database failure inside the register transaction, not reachable from a test
 		return RegistrationResponse{}, err
 	}
-	// #257 writes the "registered" mail to the outbox here, in this transaction, when status is enrolled.
-	// #257 writes the "waitlisted" mail to the outbox here, in this transaction, when status is waitlisted.
+	kind := regmail.KindRegistered
+	if status == statusWaitlisted {
+		kind = regmail.KindWaitlisted
+	}
+	if err := regmail.Enqueue(ctx, tx, now, kind, universityID, classID, f.scoutID); err != nil {
+		// coverage:ignore reason: a database failure inside the register transaction, not reachable from a test
+		return RegistrationResponse{}, err //nolint:wrapcheck // regmail wraps it with its own context
+	}
 	return commitRead(ctx, tx, classID, f.scoutID)
 }
 

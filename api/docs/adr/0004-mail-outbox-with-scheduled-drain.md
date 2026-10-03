@@ -23,4 +23,4 @@
 - A Mailgun outage delays mail; it does not lose it.
 - Mail can arrive up to about one minute after the request.
 - An `Idempotency-Key` replay never sends the mail twice, because the response does not depend on the send.
-- This ADR does not decide whether the outbox row replaces the `emailLog` audit trail. #243 and #257 decide that.
+- This ADR does not decide whether the outbox row replaces the `emailLog` audit trail. #243 and #257 decide that. (#257: it does. See `data-model.md`, "`emailLog` and the mail outbox".)

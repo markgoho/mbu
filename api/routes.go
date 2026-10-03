@@ -12,6 +12,7 @@ import (
 	"mbu/api/internal/clock"
 	"mbu/api/internal/idempotency"
 	"mbu/api/internal/internalauth"
+	"mbu/api/internal/mail"
 )
 
 // Deps is everything the route table needs to build itself. A struct, not
@@ -45,6 +46,10 @@ type Deps struct {
 	// identity (ADR 0005). main() builds it with internalGuard; a nil
 	// guard refuses every request.
 	InternalAuth *internalauth.Guard
+	// Mail sends the outbox's mail (ADR 0004). main() passes a
+	// MailgunSender when MAILGUN_API_KEY is set, else a logging
+	// FakeSender; tests pass a *mail.FakeSender.
+	Mail mail.Sender
 }
 
 // routeClass is how a route is reached, which decides what guards it.
