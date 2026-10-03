@@ -41,7 +41,7 @@ async function setup({ status = 'submitted', approveError }: SetupOptions = {}) 
 
 it('shows the message of the API when the approve request fails', async () => {
   const { approveButton } = await setup({
-    approveError: new ApiError(409, { error: 'Add a class first.' }),
+    approveError: new ApiError(409, { code: 'CONFLICT', message: 'Add a class first.' }),
   });
   await approveButton.click();
   await expect.element(page.getByRole('alert')).toHaveTextContent('Add a class first.');

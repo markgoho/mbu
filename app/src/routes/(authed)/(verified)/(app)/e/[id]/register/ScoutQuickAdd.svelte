@@ -9,6 +9,8 @@
   import type { ScoutRequest } from '#lib/api-types/users-api.types.js';
   import Button from '#lib/components/atoms/Button.svelte';
   import TextInput from '#lib/components/atoms/TextInput.svelte';
+  import FieldError from '#lib/components/FieldError.svelte';
+  import { FormAction } from '#lib/formAction.svelte.js';
 
   interface Properties {
     onAdd: (scout: ScoutRequest) => Promise<unknown>;
@@ -19,50 +21,49 @@
   let firstName = $state('');
   let lastName = $state('');
 
-  // The form does not use `FormAction`: that class shows the message of the
-  // API, and this form shows a fixed message (#228, decision 13).
-  let isAdding = $state(false);
-  let errorMessage = $state('');
+  // The message of a refusal of the API, and the messages of its fields
+  // (#263). A failure with no message of the API shows a fixed message.
+  const uid = $props.id();
+  const action = new FormAction(uid);
 
   async function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
     const scout = { firstName: firstName.trim(), lastName: lastName.trim() };
-    if (isAdding || scout.firstName === '' || scout.lastName === '') return;
+    if (scout.firstName === '' || scout.lastName === '') return;
 
-    isAdding = true;
-    errorMessage = '';
-    try {
-      await onAdd(scout);
-      firstName = '';
-      lastName = '';
-    } catch {
-      errorMessage = 'Could not add this scout. Please try again.';
-    } finally {
-      isAdding = false;
-    }
+    await action.run({
+      action: () => onAdd(scout),
+      fallback: 'Could not add this scout. Please try again.',
+      onSuccess: () => {
+        firstName = '';
+        lastName = '';
+      },
+    });
   }
 </script>
 
-<!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
+<!-- `novalidate`: no browser validation. The messages of the fields come from the API. -->
 <form class="scout-quick-add" novalidate onsubmit={handleSubmit}>
   <h2>Add a scout</h2>
 
   <label>
     First name
-    <TextInput required bind:value={firstName} />
+    <TextInput required {...action.fieldAttributes('firstName')} bind:value={firstName} />
   </label>
+  <FieldError {action} field="firstName" />
 
   <label>
     Last name
-    <TextInput required bind:value={lastName} />
+    <TextInput required {...action.fieldAttributes('lastName')} bind:value={lastName} />
   </label>
+  <FieldError {action} field="lastName" />
 
-  {#if errorMessage}
-    <p class="scout-quick-add__error" role="alert">{errorMessage}</p>
+  {#if action.error}
+    <p class="scout-quick-add__error" role="alert">{action.error}</p>
   {/if}
 
-  <Button type="submit" disabled={isAdding}>
-    {isAdding ? 'Adding…' : 'Add scout'}
+  <Button type="submit" disabled={action.pending}>
+    {action.pending ? 'Adding…' : 'Add scout'}
   </Button>
 </form>
 

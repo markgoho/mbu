@@ -109,7 +109,7 @@ Rules for a route that uses them:
 - A write goes in a component, with `apiFetch`. After a write, call `refreshAll()` (or `invalidate` with a `depends()` key of the `load`). Do not use `invalidateAll`: SvelteKit 3 marks the function and the `goto` option of that name as deprecated. The modules do not load data again after a write.
 - A route spec mocks the module (`vi.mock('#lib/universities.js')`). The modules have no specs of their own.
 
-`formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error` and its `apiFieldErrors` in the field messages. `fieldError(field)` gives the message of a field, and `fieldAttributes(field)` gives the `aria-invalid` and `aria-describedby` attributes for its control. Give the constructor the `$props.id()` of the component, so that the IDs of the messages are unique on the page.
+`formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error` and its `apiFieldErrors` in the field messages. `fieldError(field)` gives the message of a field, and `fieldAttributes(field)` gives the `aria-invalid` and `aria-describedby` attributes for its control. A component that shows field messages gives the constructor its `$props.id()`, so that the IDs of the messages are unique on the page.
 
 The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `periodOverlap.ts` (`findOverlaps`, periods that overlap in time), `formatDate.ts` (`formatMediumDate`, date text as `Jun 1, 2026`, `formatShortTime`, time text as `9:00 AM`, and `formatMediumDateTime`, date and time text as `Jun 1, 2026, 9:00:00 AM`; each takes an optional IANA timezone, and uses the timezone of the browser when there is none), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
 
@@ -163,7 +163,7 @@ Rules from the parent routes:
 - The public page does not read the session. Its link to the registration page is `/sign-in?returnTo=/e/<id>/register`: the `(signed-out)` guard sends a signed-in user to the `returnTo` path immediately.
 - A page of an event gives the timezone of the university to `formatMediumDate` and `formatShortTime`.
 - A write whose failure is not always an error message does not use `FormAction`. The registration page keeps its own state, because a `CLASS_FULL` answer opens the waitlist offer.
-- A component of one route that shows a fixed message for a failed write (`ScoutQuickAdd.svelte`) also keeps its own state. It still takes a callback prop that returns a promise (`onAdd`).
+- `ScoutQuickAdd.svelte` uses `FormAction` and shows the field messages of the API (#263). A failure with no message of the API shows its fixed fallback. It takes a callback prop that returns a promise (`onAdd`).
 
 Rules from the super-admin routes:
 

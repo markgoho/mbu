@@ -33,7 +33,7 @@ const CLASS_DETAILS_CODES: ReadonlySet<string> = new Set<ApiErrorCode>([
 /**
 True when `error` is an `ApiError` with the code `code`.
 */
-export function hasCode(error: unknown, code: ApiErrorCode): boolean {
+export function hasCode(error: unknown, code: ApiErrorCode): error is ApiError {
   return error instanceof ApiError && error.body?.code === code;
 }
 
@@ -63,7 +63,5 @@ export function apiErrorMessage(error: unknown, fallback: string): string {
  * Any other failure gives no field messages.
  */
 export function apiFieldErrors(error: unknown): Readonly<Record<string, string>> {
-  return hasCode(error, 'INVALID_ARGUMENT') && error instanceof ApiError
-    ? (error.body?.details ?? {})
-    : {};
+  return hasCode(error, 'INVALID_ARGUMENT') ? (error.body?.details ?? {}) : {};
 }
