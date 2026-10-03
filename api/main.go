@@ -3,7 +3,9 @@ package main
 
 import (
 	"context"
+	"database/sql"
 	"errors"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -12,6 +14,9 @@ import (
 
 	"mbu/api/internal/authn"
 	"mbu/api/internal/clock"
+
+	"github.com/jackc/pgx/v5"
+	"github.com/jackc/pgx/v5/stdlib"
 )
 
 // resolvePort reads PORT, which Cloud Run sets, and defaults to 8080.
@@ -37,6 +42,26 @@ func firebaseProjectID(getenv func(string) string) (string, error) {
 	return projectID, nil
 }
 
+// errNoDatabaseURL stops startup when DATABASE_URL is unset, so the
+// service never serves a route that would fail on its first query.
+var errNoDatabaseURL = errors.New("DATABASE_URL is not set")
+
+// openDB opens the Postgres pool from DATABASE_URL with the pgx driver.
+// The URL logs in as a member of app_runtime (ADR 0002). A malformed URL
+// stops startup; the pool does not connect yet, so a database that is
+// down fails the first query, not startup.
+func openDB(getenv func(string) string) (*sql.DB, error) {
+	dsn := strings.TrimSpace(getenv("DATABASE_URL"))
+	if dsn == "" {
+		return nil, errNoDatabaseURL
+	}
+	cfg, err := pgx.ParseConfig(dsn)
+	if err != nil {
+		return nil, fmt.Errorf("parse DATABASE_URL: %w", err)
+	}
+	return stdlib.OpenDB(*cfg), nil
+}
+
 func main() {
 	// coverage:ignore reason: reads the real environment, not exercised by unit tests; firebaseProjectID is
 	projectID, err := firebaseProjectID(os.Getenv)
@@ -51,8 +76,15 @@ func main() {
 		log.Fatalf("init verifier: %v", err)
 	}
 
+	// coverage:ignore reason: reads the real environment, not exercised by unit tests; openDB is
+	db, err := openDB(os.Getenv)
+	if err != nil {
+		// coverage:ignore reason: reads the real environment, not exercised by unit tests; openDB is
+		log.Fatalf("config: %v", err)
+	}
+
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
-	deps := Deps{Verifier: verifier, Now: clock.Real}
+	deps := Deps{Verifier: verifier, Now: clock.Real, DB: db}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go

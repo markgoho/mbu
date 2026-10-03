@@ -68,7 +68,7 @@ Built by #242 (`go.mod`, Dockerfile, guardrail test) and #245 (CI pin).
 
 `testdb.New` returns a `*testdb.DB` with two connections:
 
-- `Admin`: the role the migrations ran as. Use it for fixture setup.
+- `Admin`: the container superuser the migrations ran as. Use it for fixture setup.
 - `App`: the low-privilege `app_runtime` role that the service connects as ([ADR 0002](adr/0002-postgres-on-cloud-sql.md)). Run the code under test through it, so that a missing grant fails the test and not production.
 
 Each package that calls `testdb.New` must define a `TestMain` that hands off to `testdb.Main`, so the shared container stops once at process exit and does not leak:
@@ -95,7 +95,7 @@ With Ryuk disabled, only `testdb.Main` stops the container. A killed test proces
 podman rm -f -t 2 $(podman ps -aq --filter 'label=org.testcontainers=true')
 ```
 
-Copy `testdb` from `~/github/doula-cloud/api/internal/testdb`. Built by #244.
+The container image is `postgres:16-alpine`, the version of the Cloud SQL instance (#259). `testdb` was copied from `~/github/doula-cloud/api/internal/testdb` without its seed helpers and without row-level security (#240 decision 4). Built by #244.
 
 ### A due-time fixture uses the database clock
 
@@ -107,8 +107,15 @@ Compute a due time in SQL from the database clock, never on the host. Give the f
 
 ## Migrations via goose
 
-Migrations live in `api/db/migrations` and use goose ([ADR 0002](adr/0002-postgres-on-cloud-sql.md)). In tests and CI, `internal/testdb` applies them (see above). At deploy time, the migrations run as a blocking step before the new revision deploys, as the migration role, not as `app_runtime`. If a migration fails, the deploy stops.
+Migrations live in `api/db/migrations` and use goose ([ADR 0002](adr/0002-postgres-on-cloud-sql.md)); goose is a Go tool dependency in `api/go.mod` (`go tool goose`). The package embeds the `.sql` files, so `internal/testdb` and `cmd/migrate` apply the same set.
 
-Every pull request builds an empty Postgres. A statement that only existing rows can refuse (for example, `ADD COLUMN ... NOT NULL` with no `DEFAULT`, or a new `UNIQUE` constraint) passes on the PR and fails on the first deploy. Before launch there are no rows, so this risk starts at the first deploy with data. Write each migration so that it is safe on a populated table.
+- **Roles.** `00001_bootstrap.sql` creates `app_runtime`, a `NOLOGIN` group role. The migration owner is the login that runs goose (`postgres` on Cloud SQL, the container superuser in tests); it creates and owns every table, and no migration names it. Each table migration grants `app_runtime` `SELECT`, `INSERT`, `UPDATE` and `DELETE` on its tables and nothing else. The service logs in as a Cloud SQL user that is a member of `app_runtime` (#259). There is no row-level security.
+- **Locally.** `DATABASE_URL=postgres://... go run ./cmd/migrate` applies the pending migrations to any Postgres it can reach.
+- **At deploy time.** `scripts/migrate.sh` applies them through the Cloud SQL Auth Proxy as the migration owner, as a blocking step before the new revision deploys (#260). If a migration fails, the script exits non-zero and the deploy stops.
+- **The schema test.** `db/migrations/schema_test.go` proves each constraint that holds an invariant of [`data-model.md`](data-model.md): the keys, the `CHECK` constraints by name, the foreign-key delete behavior, that `app_runtime` cannot run DDL, and that each table grants `app_runtime` exactly the four data privileges. A new table or constraint gets a case there.
 
-Built by #244 (goose, `testdb`) and #260 (the deploy step).
+### Row safety: a migration must be safe on a populated table
+
+Every pull request builds an empty Postgres. A statement that only existing rows can refuse (for example, `ADD COLUMN ... NOT NULL` with no `DEFAULT`, or a new `UNIQUE` constraint on an existing table) passes on the PR and fails on the first deploy with data.
+
+`db/migrations/rowsafety.go` names each such statement shape, and `rowsafety_pg_test.go` proves each one against a real populated Postgres. `guardrail_test.go` fails the build for a row-dependent statement in an Up section unless `db/migrations/safety/<migration>.md` quotes it and says why existing rows cannot break it. A statement on a table that the same migration creates is exempt. The note format is in `db/migrations/safety/README.md`. Copied from `~/github/doula-cloud/api/db/migrations` by #244.
