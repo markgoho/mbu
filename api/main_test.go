@@ -17,6 +17,8 @@ import (
 	"mbu/api/internal/clock"
 	"mbu/api/internal/internalauth"
 	"mbu/api/internal/mail"
+
+	"github.com/jackc/pgx/v5"
 )
 
 // The ID tokens the fake verifier in testDeps knows.
@@ -257,6 +259,38 @@ func TestOpenDB(t *testing.T) {
 	db, err := openDB(env("postgres://app:secret@127.0.0.1:1/mbu?sslmode=disable"))
 	if err != nil {
 		t.Fatalf("openDB with a valid DATABASE_URL: %v", err)
+	}
+	if got := db.Stats().MaxOpenConnections; got != maxOpenConns {
+		t.Errorf("MaxOpenConnections = %d, want %d (db-f1-micro budget, infrastructure.md)", got, maxOpenConns)
+	}
+	if err := db.Close(); err != nil {
+		t.Fatalf("close: %v", err)
+	}
+}
+
+// TestOpenDB_TheCloudRunDSNDialsTheCloudSQLSocket pins the shape of the
+// DATABASE_URL secret value in api/docs/infrastructure.md: Cloud Run
+// mounts the Cloud SQL socket under /cloudsql, and the URL has no host
+// of its own.
+func TestOpenDB_TheCloudRunDSNDialsTheCloudSQLSocket(t *testing.T) {
+	const socketDir = "/cloudsql/merit-badge-university:us-east4:mbu-pg"
+	dsn := "postgres://app_runtime_login:0123abcd@/mbu?host=" + socketDir + "&sslmode=disable"
+	cfg, err := pgx.ParseConfig(dsn)
+	if err != nil {
+		t.Fatalf("parse the Cloud Run DSN: %v", err)
+	}
+	if cfg.Host != socketDir || cfg.Database != "mbu" || cfg.User != "app_runtime_login" {
+		t.Errorf("Cloud Run DSN = host %q, database %q, user %q; want the socket dir, mbu, app_runtime_login",
+			cfg.Host, cfg.Database, cfg.User)
+	}
+	db, err := openDB(func(key string) string {
+		if key == "DATABASE_URL" {
+			return dsn
+		}
+		return ""
+	})
+	if err != nil {
+		t.Fatalf("openDB with the Cloud Run DSN: %v", err)
 	}
 	if err := db.Close(); err != nil {
 		t.Fatalf("close: %v", err)
