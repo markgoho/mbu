@@ -122,7 +122,7 @@ The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local
 
 ## Shared components
 
-The shared components are in `src/lib/components/`. They have the same copy and CSS as the shared components of the Angular app. #102 owns the visual design.
+The shared components are in `src/lib/components/`. #102 owns the visual design.
 
 - `StatusBadge.svelte`: the status of a university. `status` is a `UniversityStatus`.
 - `ConfirmDialog.svelte`: a question with a confirm action and a cancel action, in a native modal `<dialog>`. Render it always and bind `open`. Do not put it in an `{#if}` block. `onCancel` runs for the cancel button, the Escape key and a click on the backdrop.
@@ -150,7 +150,7 @@ Rules for a page in `src/routes/`, from the account routes:
 - A read that must not block the page, or replace it with the error page, is a promise that the `load` returns and does not await. The promise does not reject: the `load` maps a failure to a value. The page reads it with `{#await}`. The app home does this for the API health.
 - A form has `novalidate` and shows its own field messages. A field shows its message after the user left it (`onblur`) or tried to submit.
 - The sign-in page does not navigate after a sign-in: the session functions invalidate the `load` data and the `(signed-out)` guard redirects. A page that leaves its guard group for a different one (`/verify-email`, `/onboarding`) calls `goto()`.
-- The account pages do not use `FormAction`. `FormAction` shows the message of the API. These pages show the message of the session function (`error.message`) or a fixed message, as the Angular pages did.
+- The account pages do not use `FormAction`. `FormAction` shows the message of the API. These pages show the message of the session function (`error.message`) or a fixed message.
 - The spec of a page is `page.svelte.spec.ts` next to it. The spec of a `+page.ts` load is `page-load.spec.ts` (Node project).
 - The app has no sign-out control yet. `signOut()` of the session module is ready for one.
 
@@ -159,8 +159,8 @@ Rules for a page with child components, from the chancellor routes:
 - A component that only one route uses is in the folder of that route (`universities/[id]/PeriodBoard.svelte`). A component that two routes use is in `src/lib/components/`.
 - A child component does not import a domain module and does not call the API. It takes its data as props and gives the values of a write to a callback prop that returns a promise (`onSave`, `onCreate`, `onUpdate`, `onDelete`). The page makes the request with `apiFetch` and then calls `refreshAll()`, in the same callback.
 - The child owns a `FormAction` and runs `action: () => onSave(values)`. As a result, it shows "Saving…" until the route has its new data, and it shows the message of the API when the callback rejects. The spec of the child passes a `vi.fn()` and needs no module mock.
-- Form state that starts from a prop is a writable `$derived` of a small class with `$state` fields (`let fields = $derived(new Fields(initial))`), not `$state` with an `$effect`. The fields then start again when the route loads its data again, as the Angular forms did, and `bind:value={fields.title}` works. A list of rows that the user changes is the same (`rows = [...rows, new Row()]`).
-- These forms have `novalidate` and no field messages, as the Angular forms had: a submit with a field that is not valid does nothing. #102 owns the field messages.
+- Form state that starts from a prop is a writable `$derived` of a small class with `$state` fields (`let fields = $derived(new Fields(initial))`), not `$state` with an `$effect`. The fields then start again when the route loads its data again, and `bind:value={fields.title}` works. A list of rows that the user changes is the same (`rows = [...rows, new Row()]`).
+- These forms have `novalidate` and no field messages: a submit with a field that is not valid does nothing. #102 owns the field messages.
 - Fixture data that the page spec and the load spec of a route share is in a file next to them (`roster/rosterFixture.ts`).
 
 Rules from the parent routes:

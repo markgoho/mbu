@@ -118,7 +118,7 @@
     <p class="period-board__warning" role="status">{overlapWarning}</p>
   {/if}
 
-  <!-- `novalidate`: the Angular form had no browser validation and no field messages. -->
+  <!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
   <form novalidate onsubmit={handleSubmit}>
     <div class="period-board__rows">
       {#each rows as row (row.key)}
