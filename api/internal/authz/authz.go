@@ -14,6 +14,7 @@ import (
 	"database/sql"
 	"fmt"
 	"net/http"
+	"strings"
 
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/authn"
@@ -113,6 +114,27 @@ func AssertOwnsScout(ctx context.Context, q Querier, caller authn.Caller, scoutI
 		return refusal
 	}
 	return nil
+}
+
+// ActiveClassGrants returns the id of each Class of the University where
+// uid holds an active Counselor grant, in id order. It is the TypeScript
+// listActiveClassGrants (docs/data-model.md, index row 2, MyClassGrants).
+// The ids come as one comma-joined text, so the read fits Querier; a uuid
+// holds no comma.
+func ActiveClassGrants(ctx context.Context, q Querier, uid, universityID string) ([]string, error) {
+	var ids string
+	err := q.QueryRowContext(ctx, `SELECT COALESCE(string_agg(class_id::text, ',' ORDER BY class_id), '')
+		FROM role_grants
+		WHERE uid = $1 AND status = 'active' AND role = 'counselor' AND university_id = $2`,
+		uid, universityID).Scan(&ids)
+	if err != nil {
+		// coverage:ignore reason: a database failure between the reads of one request, not reachable from a test
+		return nil, fmt.Errorf("authz: read class grants: %w", err)
+	}
+	if ids == "" {
+		return []string{}, nil
+	}
+	return strings.Split(ids, ","), nil
 }
 
 // RequireSuperAdmin refuses a Caller who is not a Super-admin.

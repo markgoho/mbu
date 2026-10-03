@@ -88,7 +88,8 @@ type PaginatedResponse[T any] struct {
 ```
 
 3. **The review queue is capped, not paged** (#253). `GET /api/admin/universities/review-queue` can grow, but the app's review page has no paging control. So the port keeps the TypeScript body `{ "universities": [...] }` and answers the oldest 200 submissions (`ORDER BY submitted_at, id LIMIT 200`, served by `universities_review_queue_idx`). #263 needs no change for it. A queue of more than 200 is a backlog the Super-admin works from the front; when the app gets a "load more" control, change this route to the envelope above with `pagecursor` on `(submitted_at, id)`.
-4. **Efficient Database Querying**:
+4. **The Roster is bounded, not paged** (#255). `GET /api/registrations/{universityId}/roster` answers every Class Roster the caller may see in one body, `{ "university", "classRosters" }`, as the TypeScript did. A Class holds at most 200 enrolled Scouts (the Capacity limit) and a University has a bounded number of Classes, so the enrolled rows are bounded by Capacity times the number of Classes. A Waitlist has no cap; it is accepted, because each waitlisted row is a Scout a Parent registered for that one event. The app's roster page and CSV export read it whole. Single-class rosters are #112, a later ticket.
+5. **Efficient Database Querying**:
 
 ```sql
 -- Query by cursor comparison rather than OFFSET
