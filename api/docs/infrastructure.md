@@ -181,6 +181,7 @@ The apply has two stages. A Cloud Run revision whose `DATABASE_URL` secret has n
 
    ```sh
    cloud-sql-proxy --port 5433 merit-badge-university:us-east4:mbu-pg &
+   PROXY_PID=$!
    sleep 5
    MIGRATE_LOCAL="postgres://migrate_login:${MIGRATE_PW}@127.0.0.1:5433/mbu?sslmode=disable"
    (cd api && DATABASE_URL="$MIGRATE_LOCAL" go run ./cmd/migrate)
@@ -212,8 +213,8 @@ The apply has two stages. A Cloud Run revision whose `DATABASE_URL` secret has n
       | gcloud secrets versions add mbu-pg-app-runtime-dsn --data-file=- --project merit-badge-university
     printf '%s' "postgres://migrate_login:${MIGRATE_PW}@127.0.0.1:5432/mbu?sslmode=disable" \
       | gcloud secrets versions add mbu-pg-migrate-dsn --data-file=- --project merit-badge-university
-    kill %1
-    unset MIGRATE_PW APP_PW MIGRATE_LOCAL APP_LOCAL
+    kill "$PROXY_PID"
+    unset MIGRATE_PW APP_PW MIGRATE_LOCAL APP_LOCAL PROXY_PID
     ```
 
 11. Stage 2: everything else, the `mbu-api` service included:
