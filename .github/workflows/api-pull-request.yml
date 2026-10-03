@@ -1,0 +1,152 @@
+name: Check Go API
+
+# Runs on each pull request that changes api/ or this file, and on each
+# push of such a change to trunk, so that trunk shows the result of the
+# merged code too (#245).
+on:
+  pull_request:
+    paths:
+      - "api/**"
+      - ".github/workflows/api-pull-request.yml"
+  push:
+    branches:
+      - trunk
+    paths:
+      - "api/**"
+      - ".github/workflows/api-pull-request.yml"
+
+# A new push to the same pull request cancels the run still in flight for
+# it. A trunk push never cancels a run, so each trunk commit keeps its
+# result.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  # Runs on the runner directly, not in the ghcr.io/markgoho/mbu container:
+  # the tests need Docker for testcontainers (internal/testdb). Docker is
+  # preinstalled and running on ubuntu-latest, and testcontainers-go uses
+  # its default socket when DOCKER_HOST is unset.
+  api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      # The `go` line in api/go.mod is the one place the Go version is
+      # named (api/docs/testing.md, "Toolchain versions").
+      - uses: actions/setup-go@v7.0.0
+        with:
+          go-version-file: api/go.mod
+          cache-dependency-path: api/go.sum
+
+      - name: Check formatting
+        working-directory: api
+        run: |
+          unformatted=$(gofmt -l .)
+          if [ -n "$unformatted" ]; then
+            echo "$unformatted"
+            echo "The files above are not gofmt-formatted. Run 'gofmt -w' on them."
+            exit 1
+          fi
+
+      - name: Vet
+        working-directory: api
+        run: go vet ./...
+
+      - name: Build
+        working-directory: api
+        run: go build ./...
+
+      # `version:` is the golangci-lint pin. Install the same release
+      # locally (api/docs/testing.md). toolchain_guardrail_test.go fails
+      # when this is not one exact release.
+      #
+      # skip-cache must stay. The lint cache stores analyzer facts. The
+      # action restores a cache from a different dependency state when its
+      # key misses, and a missing fact makes staticcheck report findings in
+      # files the change did not touch (doula-cloud found this). An
+      # uncached run of this module is fast.
+      - name: Lint
+        uses: golangci/golangci-lint-action@v9.3.0
+        with:
+          version: v2.14.0
+          working-directory: api
+          skip-cache: true
+
+      # The tests start a real Postgres container and apply the goose
+      # migrations to it (internal/testdb).
+      - name: Test
+        working-directory: api
+        run: go test -race ./... -coverprofile=coverage.out
+
+      - name: Enforce 100% line coverage
+        working-directory: api
+        run: go run ./tools/covcheck -profile=coverage.out -module=mbu/api -skip=mbu/api/tools/
+
+  # Builds the image Cloud Run will serve and checks that it starts, stays
+  # up and answers GET /api/health. This catches an image that compiles and
+  # passes its tests but does not boot.
+  api-image:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: docker/setup-buildx-action@v4.4.1
+
+      - uses: docker/build-push-action@v7.3.0
+        with:
+          context: api
+          push: false
+          load: true
+          tags: mbu-api:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # The service refuses to start without these. None of them needs a
+      # real service behind it:
+      # - FIREBASE_AUTH_EMULATOR_HOST makes the Firebase Admin SDK skip the
+      #   search for Application Default Credentials, which has no route to
+      #   succeed in CI. No emulator runs.
+      # - DATABASE_URL must parse, but the pool connects only on the first
+      #   query, and the health route sends none. No Postgres runs.
+      - name: Boot smoke test
+        run: |
+          docker run -d --name api-smoke -p 18080:8080 \
+            -e GCP_PROJECT_ID=merit-badge-university \
+            -e FIREBASE_AUTH_EMULATOR_HOST=localhost:9099 \
+            -e "DATABASE_URL=postgres://app:app@db.invalid:5432/app?sslmode=disable" \
+            mbu-api:ci
+
+          answered=false
+          for _ in $(seq 1 30); do
+            if [ "$(docker inspect -f '{{.State.Running}}' api-smoke 2>/dev/null)" != "true" ]; then
+              echo "The container stopped before it answered:"
+              docker logs api-smoke
+              exit 1
+            fi
+            if curl -fsS http://127.0.0.1:18080/api/health | grep -q '"status":"ok"'; then
+              answered=true
+              break
+            fi
+            sleep 1
+          done
+
+          if [ "$answered" != "true" ]; then
+            echo "The container did not answer on /api/health:"
+            docker logs api-smoke
+            exit 1
+          fi
+
+          # Make sure it is still up after it answered.
+          sleep 2
+          if [ "$(docker inspect -f '{{.State.Running}}' api-smoke)" != "true" ]; then
+            echo "The container stopped after it answered:"
+            docker logs api-smoke
+            exit 1
+          fi
+          echo "Boot smoke test passed."

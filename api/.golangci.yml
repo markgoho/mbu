@@ -44,33 +44,16 @@ linters:
     - whitespace
     - wrapcheck
   settings:
-    # #773: the gate that keeps the bare-time.Now() count from silently
-    # climbing again -- every production call site reads through
-    # api/internal/clock's Now(ctx) or an injected clock.Clock instead.
-    # A handful of call sites read real wall time on purpose (a CLI
-    # startup wait, Stripe's own test-clock deletion deadline, a test
-    # helper package); each carries its own //nolint:forbidigo and an
-    # inline reason, the same shape the coverage gate's own exceptions
-    # take.
+    # #240 decision 9: time is read through the clock seam. Production
+    # code reads clock.Now(ctx) or an injected clock.Clock (Deps.Now)
+    # instead of calling time.Now() directly. A call site that must read
+    # real wall time carries //nolint:forbidigo and an inline reason, the
+    # same shape the coverage gate's own exceptions take.
     forbidigo:
       analyze-types: true
       forbid:
         - pattern: '^time\.Now$'
-          msg: "read time through clock.Now(ctx) or an injected clock.Clock (api/internal/clock) instead of calling time.Now() directly -- see issue #773"
-        # #1635: a bare staffauth.Reader.IsContractor() narrowed an Owner
-        # who is a contractor to her own Attachments two times (#742 on
-        # the Clients list, #1635 on the two awaiting lists). Employment
-        # type is independent of roles, so reach is decided by
-        # IsAmbientContractor. A call that reads the Employment type as a
-        # fact on purpose (the session's isContractor field, the reader's
-        # own fee) carries //nolint:forbidigo and says what it decides.
-        # analyze-types above is what lets this name the method by its
-        # type, whatever the variable is called; attachment.IsContractor
-        # (a constant) and a response's IsContractor field are other
-        # things and do not match.
-        - pattern: '^staffauth\.Reader\.IsContractor$'
-          pkg: '^doula-cloud/api/internal/staffauth$'
-          msg: "decide reach with staffauth.Reader.IsAmbientContractor(): an Owner or an Admin may be a contractor and reaches the whole Practice. If this call reads the Employment type as a fact, add //nolint:forbidigo with the reason -- see issue #1635"
+          msg: "read time through the clock seam (api/internal/clock) instead of calling time.Now() directly -- see #240 decision 9"
   exclusions:
     rules:
       # Deferred Close()/Rollback() on response bodies, rows, and
@@ -78,17 +61,16 @@ linters:
       - path: _test\.go
         linters:
           - errcheck
-      # Every _test.go file is free to call time.Now() directly -- #773's
-      # count, and this gate, are both about production Go only.
+      # Every _test.go file is free to call time.Now() directly: the
+      # clock-seam gate is about production Go only.
       - path: _test\.go
         linters:
           - forbidigo
 
 # Report every finding, not the default first 50 per linter and first 3
-# of a kind (#1409). Moving to Go 1.27 turned on modernize analyzers with
-# about 88 findings; the defaults would have shown 9, so a red CI run
-# would have been fixed a page at a time. Uncapped, CI and a local run
-# both show the whole list.
+# of a kind. A new Go version can turn on many modernize findings at
+# once; uncapped, CI and a local run both show the whole list, not the
+# first page of it.
 issues:
   max-issues-per-linter: 0
   max-same-issues: 0
