@@ -44,9 +44,9 @@ func CancelAndPromote(ctx context.Context, tx *sql.Tx, now time.Time, university
 	var status string
 	err = tx.QueryRowContext(ctx, `SELECT status FROM registrations
 		WHERE class_id = $1 AND scout_id = $2 FOR UPDATE`, classID, scoutID).Scan(&status)
-	// coverage:ignore reason: a cancel that ran between the caller's read and this lock; #254 covers it with its 404
+	// coverage:ignore reason: a concurrent cancel between the caller's read and this lock; a test cannot order the two transactions
 	if errors.Is(err, sql.ErrNoRows) || (err == nil && status == "cancelled") {
-		// coverage:ignore reason: a cancel that ran between the caller's read and this lock; #254 covers it with its 404
+		// coverage:ignore reason: a concurrent cancel between the caller's read and this lock; a test cannot order the two transactions
 		return nil, false, nil
 	}
 	if err != nil {

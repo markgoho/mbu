@@ -9,14 +9,13 @@ import (
 
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/authn"
-	"mbu/api/internal/authz"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/seats"
 )
 
 // errCloseEventsFirst refuses to delete the account of a Chancellor of a
 // University that is neither draft nor closed.
-var errCloseEventsFirst = &authz.RefusalError{
+var errCloseEventsFirst = &apierr.RefusalError{
 	Status:  http.StatusForbidden,
 	Code:    apierr.CodeCloseEventsFirst,
 	Message: "Close your events first",
@@ -39,7 +38,7 @@ func Delete(db *sql.DB, accounts authn.AccountManager) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		c := caller(r)
 		if err := deleteAccountData(r.Context(), db, c.UID, clock.Now(r.Context())); err != nil {
-			authz.Write(w, r, err)
+			apierr.WriteErr(w, r, err)
 			return
 		}
 		if err := accounts.DeleteAccount(r.Context(), c.UID); err != nil {

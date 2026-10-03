@@ -13,7 +13,7 @@ import (
 // authzTable is the real route table plus one test-only route for each
 // authz assertion. No route of #249 calls the assertions; #250 to #255
 // do. Each test route answers 204 when the assertion passes, and writes
-// the refusal with authz.Write when it does not.
+// the refusal with apierr.WriteErr when it does not.
 func authzTable(db *sql.DB) http.Handler {
 	d := testDeps()
 	d.DB = db
@@ -22,7 +22,7 @@ func authzTable(db *sql.DB) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			c, _ := authn.CallerFrom(r.Context())
 			if err := assert(r, c); err != nil {
-				authz.Write(w, r, err)
+				apierr.WriteErr(w, r, err)
 				return
 			}
 			w.WriteHeader(http.StatusNoContent)

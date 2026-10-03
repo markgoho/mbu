@@ -354,6 +354,26 @@ func TestBootstrap_RevokesAnInviteForAGrantTheAccountHolds(t *testing.T) {
 	}
 }
 
+func TestBootstrap_AnInviteRestoresARevokedGrant(t *testing.T) {
+	f := newUsersFixture(t)
+	f.user(uidParent, emailParent)
+	f.university(uniOne, "draft")
+	f.exec(`INSERT INTO role_grants (role, university_id, uid, status)
+		VALUES ('chancellor', $1, $2, 'revoked')`, uniOne, uidParent)
+	f.invite(emailParent, "")
+
+	resp := f.send(http.MethodPost, pathMe, tokenParent, "")
+	defer resp.Body.Close()
+	wantStatus(t, resp, http.StatusOK)
+
+	if n := f.count(`SELECT count(*) FROM role_grants WHERE uid = $1 AND status = 'active'`, uidParent); n != 1 {
+		t.Fatalf("active grants = %d, want the revoked one restored", n)
+	}
+	if n := f.count(`SELECT count(*) FROM role_grants WHERE invited_email = $1 AND status = 'revoked'`, emailParent); n != 1 {
+		t.Fatalf("revoked invites = %d, want 1", n)
+	}
+}
+
 func TestGetMe(t *testing.T) {
 	f := newUsersFixture(t)
 
@@ -441,7 +461,9 @@ func TestOnboard_BeforeBootstrapIsNotFound(t *testing.T) {
 	f := newUsersFixture(t)
 	resp := f.send(http.MethodPatch, pathMe, tokenParent, `{"displayName":"Pat","acceptedTerms":true}`)
 	defer resp.Body.Close()
-	wantRefusal(t, resp, http.StatusNotFound, apierr.CodeNotFound)
+	if got := wantRefusal(t, resp, http.StatusNotFound, apierr.CodeNotFound); got.Message != "User not found; bootstrap the session first" {
+		t.Fatalf("message = %q", got.Message)
+	}
 }
 
 func TestAckRosterExport_StampsOnce(t *testing.T) {

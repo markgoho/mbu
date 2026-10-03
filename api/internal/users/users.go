@@ -44,8 +44,13 @@ type BootstrapResponse struct {
 const userColumns = `uid, display_name, email, phone, accepted_terms_at, accepted_privacy_at,
 	accepted_policy_version, roster_export_ack_at`
 
+// errNotBootstrapped is the 404 of onboarding for a caller with no users
+// row: the app bootstraps the session first.
+var errNotBootstrapped = &apierr.RefusalError{Status: http.StatusNotFound, Code: apierr.CodeNotFound,
+	Message: "User not found; bootstrap the session first"}
+
 // errNoUser is the 404 for a caller with no users row.
-var errNoUser = &authz.RefusalError{Status: http.StatusNotFound, Code: apierr.CodeNotFound, Message: "User not found"}
+var errNoUser = &apierr.RefusalError{Status: http.StatusNotFound, Code: apierr.CodeNotFound, Message: "User not found"}
 
 // scanUser reads one users row into its response. A missing row is
 // errNoUser.
@@ -94,7 +99,7 @@ func Bootstrap(db *sql.DB) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		user, err := bootstrap(r.Context(), db, caller(r))
 		if err != nil {
-			authz.Write(w, r, err)
+			apierr.WriteErr(w, r, err)
 			return
 		}
 		apierr.WriteJSON(w, http.StatusOK, BootstrapResponse{
@@ -135,7 +140,7 @@ func Get(db *sql.DB) http.Handler {
 		user, err := scanUser(db.QueryRowContext(r.Context(),
 			`SELECT `+userColumns+` FROM users WHERE uid = $1`, caller(r).UID))
 		if err != nil {
-			authz.Write(w, r, err)
+			apierr.WriteErr(w, r, err)
 			return
 		}
 		apierr.WriteJSON(w, http.StatusOK, user)
@@ -186,11 +191,10 @@ func Onboard(db *sql.DB) http.Handler {
 			WHERE uid = $1
 			RETURNING `+userColumns, caller(r).UID, displayName, clock.Now(r.Context()), policy.Version))
 		if errors.Is(err, errNoUser) {
-			apierr.WriteError(w, "User not found; bootstrap the session first", http.StatusNotFound)
-			return
+			err = errNotBootstrapped
 		}
 		if err != nil {
-			authz.Write(w, r, err)
+			apierr.WriteErr(w, r, err)
 			return
 		}
 		apierr.WriteJSON(w, http.StatusOK, user)
@@ -208,7 +212,7 @@ func AckRosterExport(db *sql.DB) http.Handler {
 			WHERE uid = $1
 			RETURNING `+userColumns, caller(r).UID, clock.Now(r.Context())))
 		if err != nil {
-			authz.Write(w, r, err)
+			apierr.WriteErr(w, r, err)
 			return
 		}
 		apierr.WriteJSON(w, http.StatusOK, user)

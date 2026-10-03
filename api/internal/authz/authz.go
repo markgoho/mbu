@@ -2,7 +2,7 @@
 // or Scout?". It is the Go port of functions/src/shared-api/services/authz.
 //
 // Each assertion reads the one grant for the one scope of the request and
-// returns a *RefusalError when the Caller may not act. role_grants is the only
+// returns an *apierr.RefusalError when the Caller may not act. role_grants is the only
 // source of authorization: a display copy (a Class's Counselor names, a
 // University's created_by_uid) is never read for it. A Super-admin passes
 // each role check; Scout ownership has no Super-admin bypass, because a
@@ -12,7 +12,6 @@ package authz
 import (
 	"context"
 	"database/sql"
-	"errors"
 	"fmt"
 	"net/http"
 
@@ -28,32 +27,9 @@ type Querier interface {
 	QueryRowContext(ctx context.Context, query string, args ...any) *sql.Row
 }
 
-// RefusalError is an assertion's answer when the Caller may not act. A handler
-// writes it with Write.
-type RefusalError struct {
-	Status  int
-	Code    apierr.Code
-	Message string
-}
-
-// Error returns the message.
-func (r *RefusalError) Error() string {
-	return r.Message
-}
-
 // forbidden is a role refusal: 403 FORBIDDEN.
-func forbidden(message string) *RefusalError {
-	return &RefusalError{Status: http.StatusForbidden, Code: apierr.CodeForbidden, Message: message}
-}
-
-// Write answers err: a *RefusalError anywhere in its chain with its own status
-// and code, anything else as a 500 that logs err.
-func Write(w http.ResponseWriter, r *http.Request, err error) {
-	if refusal, ok := errors.AsType[*RefusalError](err); ok {
-		apierr.Write(w, refusal.Status, refusal.Code, refusal.Error(), nil)
-		return
-	}
-	apierr.WriteInternal(w, r, err)
+func forbidden(message string) *apierr.RefusalError {
+	return &apierr.RefusalError{Status: http.StatusForbidden, Code: apierr.CodeForbidden, Message: message}
 }
 
 // AssertChancellorOf refuses a Caller who is neither an active Chancellor
@@ -154,11 +130,26 @@ func isChancellor(ctx context.Context, q Querier, uid, universityID string) (boo
 
 // ClaimInvites makes each pending invite to email an active grant of uid,
 // in tx. email is the Caller's lower-case address, the form invited_email
-// is stored in. An invite for a scope and role that uid already holds a
-// grant for is set to revoked instead: claiming it would collide with
-// that grant on role_grants_uid_key, and the sign-in would fail
-// (docs/data-model.md, "role_grants").
+// is stored in.
+//
+// An invite for a scope and role that uid already holds a grant for
+// cannot be claimed: it would collide with that grant on
+// role_grants_uid_key, and the sign-in would fail (docs/data-model.md,
+// "role_grants"). The held grant is made active instead (a revoked one
+// comes back, as a new grant would bring it back) and the invite is set
+// to revoked.
 func ClaimInvites(ctx context.Context, tx *sql.Tx, uid, email string) error {
+	if _, err := tx.ExecContext(ctx, `UPDATE role_grants held
+		SET status = 'active', updated_at = now()
+		FROM role_grants invite
+		WHERE invite.invited_email = $2 AND invite.status = 'invited'
+		  AND held.uid = $1 AND held.status = 'revoked'
+		  AND held.university_id = invite.university_id
+		  AND held.class_id IS NOT DISTINCT FROM invite.class_id
+		  AND held.role = invite.role`, uid, email); err != nil {
+		// coverage:ignore reason: a database failure inside the bootstrap transaction, not reachable from a test
+		return fmt.Errorf("authz: restore held grants: %w", err)
+	}
 	if _, err := tx.ExecContext(ctx, `UPDATE role_grants g
 		SET uid = $1, status = 'active', updated_at = now()
 		WHERE g.invited_email = $2 AND g.status = 'invited'
