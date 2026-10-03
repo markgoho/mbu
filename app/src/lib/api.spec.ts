@@ -1,5 +1,14 @@
 import { describe, expect, it, vi } from 'vitest';
-import { ApiError, apiFetch, apiFetchNoRedirect, expectOk, getJson, sendJson } from '#lib/api.js';
+import {
+  ApiError,
+  apiFetch,
+  apiFetchNoRedirect,
+  createJson,
+  expectOk,
+  getJson,
+  sendJson,
+} from '#lib/api.js';
+import { IdempotencyKeys } from '#lib/idempotency.js';
 import type { Fetcher } from '#lib/fetcher.js';
 
 interface MockUser {
@@ -174,12 +183,12 @@ describe('apiFetch', () => {
   });
 
   it('returns a response that is not OK and not a 401, with no sign-out and no navigation', async () => {
-    setup({ status: 500, body: { error: 'Internal server error' } });
+    setup({ status: 500, body: { code: 'INTERNAL', message: 'internal error' } });
 
     const response = await apiFetch('/api/users/me');
 
     expect(response.status).toBe(500);
-    await expect(response.json()).resolves.toEqual({ error: 'Internal server error' });
+    await expect(response.json()).resolves.toEqual({ code: 'INTERNAL', message: 'internal error' });
     expect(signOut).not.toHaveBeenCalled();
     expect(goto).not.toHaveBeenCalled();
   });
@@ -252,12 +261,45 @@ describe('expectOk', () => {
   });
 
   it('throws an ApiError that holds the status and the parsed body of a response that is not OK', async () => {
-    const body = { error: 'Class is full', code: 'class_full' };
+    const body = { code: 'CLASS_FULL', message: 'Class is full' };
 
     const failure = expectOk(Response.json(body, { status: 409 }));
 
     await expect(failure).rejects.toBeInstanceOf(ApiError);
-    await expect(failure).rejects.toMatchObject({ status: 409, body });
+    await expect(failure).rejects.toMatchObject({ status: 409, body, message: 'Class is full' });
+  });
+
+  it('keeps the details of the body', async () => {
+    const body = {
+      code: 'INVALID_ARGUMENT',
+      message: 'Check the University form.',
+      details: { 'location.city': 'Enter the city.' },
+    };
+
+    await expect(expectOk(Response.json(body, { status: 400 }))).rejects.toMatchObject({ body });
+  });
+
+  it('keeps a code that the app does not know', async () => {
+    const body = { code: 'SOMETHING_NEW', message: 'A newer refusal' };
+
+    await expect(expectOk(Response.json(body, { status: 409 }))).rejects.toMatchObject({ body });
+  });
+
+  it.each([
+    ['the old error shape', { error: 'Class is full', code: 'class_full' }],
+    ['a body with no message', { code: 'CONFLICT' }],
+    ['a body with no code', { message: 'Conflict' }],
+    ['details that are not text', { code: 'CONFLICT', message: 'Conflict', details: { c1: 1 } }],
+    ['details that are a list', { code: 'CONFLICT', message: 'Conflict', details: ['c1'] }],
+    ['a JSON value that is not an object', 'Conflict'],
+  ])('throws an ApiError with no body for %s', async (_name, body) => {
+    const failure = expectOk(Response.json(body, { status: 409 }));
+
+    await expect(failure).rejects.toMatchObject({
+      status: 409,
+      body: undefined,
+      message: 'API request failed with status 409',
+    });
   });
 
   it('throws an ApiError with no body when the body of the response is not JSON', async () => {
@@ -277,11 +319,12 @@ describe('getJson', () => {
   });
 
   it('throws an ApiError for a response that is not OK', async () => {
-    const fetcher = fetcherReturning(404, { error: 'University not found' });
+    const body = { code: 'NOT_FOUND', message: 'University not found' };
+    const fetcher = fetcherReturning(404, body);
 
     await expect(getJson(fetcher, '/api/universities/u1')).rejects.toMatchObject({
       status: 404,
-      body: { error: 'University not found' },
+      body,
     });
   });
 });
@@ -296,15 +339,73 @@ describe('sendJson', () => {
     const [path, init] = fetcher.mock.calls[0] ?? [];
     expect(path).toBe('/api/universities');
     expect(init).toMatchObject({ method: 'POST', body: '{"title":"Fall MBU"}' });
-    expect(new Headers(init?.headers).get('Content-Type')).toBe('application/json');
+    const headers = new Headers(init?.headers);
+    expect(headers.get('Content-Type')).toBe('application/json');
+    expect(headers.has('Idempotency-Key')).toBe(false);
+  });
+
+  it('sends the idempotency key as the Idempotency-Key header', async () => {
+    const fetcher = fetcherReturning(201, { id: 'u1' });
+
+    await sendJson(fetcher, 'POST', '/api/universities', {}, { idempotencyKey: 'key-1' });
+
+    const [, init] = fetcher.mock.calls[0] ?? [];
+    expect(new Headers(init?.headers).get('Idempotency-Key')).toBe('key-1');
   });
 
   it('throws an ApiError for a response that is not OK', async () => {
-    const fetcher = fetcherReturning(400, { error: 'Title is required' });
+    const body = { code: 'INVALID_ARGUMENT', message: 'Title is required' };
+    const fetcher = fetcherReturning(400, body);
 
     await expect(sendJson(fetcher, 'PATCH', '/api/universities/u1', {})).rejects.toMatchObject({
       status: 400,
-      body: { error: 'Title is required' },
+      body,
     });
+  });
+});
+
+describe('createJson', () => {
+  it('POSTs the body with an Idempotency-Key and returns the parsed body of the response', async () => {
+    const fetcher = fetcherReturning(201, { scoutId: 's1' });
+
+    const created = await createJson(
+      fetcher,
+      '/api/users/me/scouts',
+      { firstName: 'Alex' },
+      new IdempotencyKeys(),
+    );
+
+    expect(created).toEqual({ scoutId: 's1' });
+    const [path, init] = fetcher.mock.calls[0] ?? [];
+    expect(path).toBe('/api/users/me/scouts');
+    expect(init).toMatchObject({ method: 'POST', body: '{"firstName":"Alex"}' });
+    expect(new Headers(init?.headers).get('Idempotency-Key')).toMatch(/^[\da-f-]{36}$/);
+  });
+
+  it('sends the same key again for a retry after a 5xx, and a new key after a 4xx', async () => {
+    const keys = new IdempotencyKeys();
+    const statuses = [503, 400, 201];
+    const fetcher = vi.fn<Fetcher>(() =>
+      Promise.resolve(
+        Response.json({ code: 'X', message: 'x' }, { status: statuses.shift() ?? 201 }),
+      ),
+    );
+    async function sendOnce() {
+      try {
+        await createJson(fetcher, '/api/universities', { id: 'u1' }, keys);
+      } catch {
+        // The test reads the sent keys, not the failure.
+      }
+    }
+
+    await sendOnce();
+    await sendOnce();
+    await sendOnce();
+
+    const sentKeys = fetcher.mock.calls.map(([, init]) =>
+      new Headers(init?.headers).get('Idempotency-Key'),
+    );
+    expect(sentKeys[1]).toBe(sentKeys[0]);
+    expect(sentKeys[2]).not.toBe(sentKeys[1]);
   });
 });

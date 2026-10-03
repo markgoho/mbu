@@ -125,14 +125,39 @@ describe('review detail page', () => {
     expect(goto).not.toHaveBeenCalled();
   });
 
-  it('shows the message of the API when approval fails with one', async () => {
+  it('shows the message of the app when the university cannot move to published now', async () => {
     const { approveButton } = await setup({
-      approveError: new ApiError(409, { error: 'University is not submitted' }),
+      approveError: new ApiError(409, {
+        code: 'FAILED_PRECONDITION',
+        message: 'Cannot transition from published to published',
+      }),
     });
 
     await approveButton.click();
 
-    await expect.element(page.getByRole('alert')).toHaveTextContent('University is not submitted');
+    await expect
+      .element(page.getByRole('alert'))
+      .toHaveTextContent(
+        'The university cannot make that change in its current status. Reload the page to see its status.',
+      );
+  });
+
+  it('shows the message of the API for the note beside the note field', async () => {
+    const { rejectButton, noteField, submitRejectionButton } = await setup({
+      rejectError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'Enter a review note of 1 to 2000 characters.',
+        details: { note: 'Enter a review note of 1 to 2000 characters.' },
+      }),
+    });
+
+    await rejectButton.click();
+    await noteField.fill('Too long');
+    await submitRejectionButton.click();
+
+    await expect
+      .element(noteField)
+      .toHaveAccessibleDescription('Enter a review note of 1 to 2000 characters.');
   });
 
   it('rejects with a note and navigates back to the queue', async () => {

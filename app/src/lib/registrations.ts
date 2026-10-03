@@ -11,8 +11,9 @@ import type {
   RosterResponse,
   ScheduleResponse,
 } from '#lib/api-types/registrations-api.types.js';
-import { expectOk, getJson, sendJson } from '#lib/api.js';
+import { createJson, expectOk, getJson } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import type { IdempotencyKeys } from '#lib/idempotency.js';
 
 const REGISTRATIONS_PATH = '/api/registrations';
 
@@ -33,19 +34,21 @@ export function getRoster(fetcher: Fetcher, universityId: string): Promise<Roste
 }
 
 /**
-`POST /api/registrations/:universityId/:classId`: registers a scout for a class.
-*/
+ * `POST /api/registrations/:universityId/:classId`: registers a scout for a
+ * class, with an `Idempotency-Key` from `keys`.
+ */
 export function registerScout(
   fetcher: Fetcher,
   universityId: string,
   classId: string,
   body: RegisterRequest,
+  keys: IdempotencyKeys,
 ): Promise<RegistrationResponse> {
-  return sendJson<RegistrationResponse>(
+  return createJson<RegistrationResponse>(
     fetcher,
-    'POST',
     `${REGISTRATIONS_PATH}/${universityId}/${classId}`,
     body,
+    keys,
   );
 }
 

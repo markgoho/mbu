@@ -37,7 +37,8 @@ describe('FormAction', () => {
     const onSuccess = vi.fn();
 
     await formAction.run({
-      action: () => Promise.reject(new ApiError(409, { error: 'This class is full.' })),
+      action: () =>
+        Promise.reject(new ApiError(409, { code: 'CONFLICT', message: 'This class is full.' })),
       fallback: 'Could not save.',
       onSuccess,
     });
@@ -45,6 +46,65 @@ describe('FormAction', () => {
     expect(formAction.error).toBe('This class is full.');
     expect(formAction.pending).toBe(false);
     expect(onSuccess).not.toHaveBeenCalled();
+  });
+
+  it('keeps the field messages of an INVALID_ARGUMENT failure, and the message for the form', async () => {
+    const formAction = new FormAction('uni');
+
+    await formAction.run({
+      action: () =>
+        Promise.reject(
+          new ApiError(400, {
+            code: 'INVALID_ARGUMENT',
+            message: 'Check the University form.',
+            details: { 'location.city': 'Enter the city.' },
+          }),
+        ),
+      fallback: 'Could not save.',
+    });
+
+    expect(formAction.error).toBe('Check the University form.');
+    expect(formAction.fieldError('location.city')).toBe('Enter the city.');
+    expect(formAction.fieldError('title')).toBeUndefined();
+    expect(formAction.fieldErrorId('location.city')).toBe('uni-location.city-error');
+    expect(formAction.fieldAttributes('location.city')).toEqual({
+      'aria-invalid': true,
+      'aria-describedby': 'uni-location.city-error',
+    });
+    expect(formAction.fieldAttributes('title')).toEqual({});
+  });
+
+  it('gives no field message for a key that is also the name of an object property', async () => {
+    const formAction = new FormAction();
+
+    await formAction.run({
+      action: () =>
+        Promise.reject(
+          new ApiError(400, { code: 'INVALID_ARGUMENT', message: 'Check.', details: {} }),
+        ),
+      fallback: 'Could not save.',
+    });
+
+    expect(formAction.fieldError('constructor')).toBeUndefined();
+  });
+
+  it('clears the field messages when a new run starts', async () => {
+    const formAction = new FormAction();
+    await formAction.run({
+      action: () =>
+        Promise.reject(
+          new ApiError(400, {
+            code: 'INVALID_ARGUMENT',
+            message: 'Check.',
+            details: { title: 'Enter a title.' },
+          }),
+        ),
+      fallback: 'Could not save.',
+    });
+
+    await formAction.run({ action: () => Promise.resolve(), fallback: 'Could not save.' });
+
+    expect(formAction.fieldError('title')).toBeUndefined();
   });
 
   it('shows the fallback for a failure that is not an API error', async () => {

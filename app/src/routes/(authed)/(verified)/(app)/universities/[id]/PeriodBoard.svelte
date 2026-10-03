@@ -12,6 +12,7 @@
   } from '#lib/api-types/universities-api.types.js';
   import Button from '#lib/components/atoms/Button.svelte';
   import TextInput from '#lib/components/atoms/TextInput.svelte';
+  import FieldError from '#lib/components/FieldError.svelte';
   import { datetimeInputToIso, isoToDatetimeInput } from '#lib/eventDatetime.js';
   import { FormAction } from '#lib/formAction.svelte.js';
   import { findOverlaps } from '#lib/periodOverlap.js';
@@ -70,7 +71,8 @@
   // the API. A board with no periods starts with one empty row.
   let rows = $derived(periods.length > 0 ? periods.map((period) => new Row(period)) : [new Row()]);
 
-  const action = new FormAction();
+  const uid = $props.id();
+  const action = new FormAction(uid);
   let overlapWarning = $state('');
 
   function addRow() {
@@ -118,26 +120,51 @@
     <p class="period-board__warning" role="status">{overlapWarning}</p>
   {/if}
 
-  <!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
+  <!-- `novalidate`: no browser validation. The messages of the fields come from the API:
+       `periods.<index>.<field>`, where the index is the index of the row in the body. -->
   <form novalidate onsubmit={handleSubmit}>
     <div class="period-board__rows">
-      {#each rows as row (row.key)}
-        <fieldset class="period-board__row">
-          <label>Label <TextInput disabled={readonly} bind:value={row.label} /></label>
+      {#each rows as row, index (row.key)}
+        {@const field = `periods.${index}`}
+        <fieldset class="period-board__row" {...action.fieldAttributes(field)}>
+          <label>
+            Label
+            <TextInput
+              {...action.fieldAttributes(`${field}.label`)}
+              disabled={readonly}
+              bind:value={row.label}
+            />
+          </label>
+          <FieldError {action} field={`${field}.label`} />
           <label>
             Starts
-            <TextInput type="datetime-local" disabled={readonly} bind:value={row.startsAt} />
+            <TextInput
+              type="datetime-local"
+              {...action.fieldAttributes(`${field}.startsAt`)}
+              disabled={readonly}
+              bind:value={row.startsAt}
+            />
           </label>
+          <FieldError {action} field={`${field}.startsAt`} />
           <label>
             Ends
-            <TextInput type="datetime-local" disabled={readonly} bind:value={row.endsAt} />
+            <TextInput
+              type="datetime-local"
+              {...action.fieldAttributes(`${field}.endsAt`)}
+              disabled={readonly}
+              bind:value={row.endsAt}
+            />
           </label>
+          <FieldError {action} field={`${field}.endsAt`} />
+          <FieldError {action} field={`${field}.periodId`} />
+          <FieldError {action} {field} />
           {#if !readonly}
             <Button onclick={() => removeRow(row)}>Remove</Button>
           {/if}
         </fieldset>
       {/each}
     </div>
+    <FieldError {action} field="periods" />
     {#if !readonly}
       <div class="period-board__actions">
         <Button onclick={addRow}>Add period</Button>

@@ -48,7 +48,9 @@ describe('roster page load', () => {
   });
 
   it('redirects to the dashboard with the denied flag when access is forbidden', async () => {
-    const loadEvent = setup({ rosterError: new ApiError(403, { error: 'Forbidden' }) });
+    const loadEvent = setup({
+      rosterError: new ApiError(403, { code: 'FORBIDDEN', message: 'Forbidden' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({
       status: 303,
@@ -57,13 +59,17 @@ describe('roster page load', () => {
   });
 
   it('redirects to sign-in when the API refuses the token', async () => {
-    const loadEvent = setup({ rosterError: new ApiError(401, { error: 'Unauthorized' }) });
+    const loadEvent = setup({
+      rosterError: new ApiError(401, { code: 'UNAUTHORIZED', message: 'Unauthorized' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({ status: 303, location: '/sign-in' });
   });
 
   it('shows the error page with the message of the API for a different API error', async () => {
-    const loadEvent = setup({ rosterError: new ApiError(404, { error: 'University not found' }) });
+    const loadEvent = setup({
+      rosterError: new ApiError(404, { code: 'NOT_FOUND', message: 'University not found' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({
       status: 404,

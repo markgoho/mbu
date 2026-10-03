@@ -7,11 +7,18 @@ import type {
 } from '#lib/api-types/universities-api.types.js';
 import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import { IdempotencyKeys } from '#lib/idempotency.js';
 import Page from './+page.svelte';
 
 const { createUniversity, goto } = vi.hoisted(() => ({
   createUniversity:
-    vi.fn<(fetcher: Fetcher, body: UniversityCreateRequest) => Promise<UniversityResponse>>(),
+    vi.fn<
+      (
+        fetcher: Fetcher,
+        body: UniversityCreateRequest,
+        keys: IdempotencyKeys,
+      ) => Promise<UniversityResponse>
+    >(),
   goto: vi.fn<(url: string) => Promise<void>>(),
 }));
 vi.mock('#lib/universities.js', () => ({ createUniversity }));
@@ -79,29 +86,49 @@ describe('create university page', () => {
     await fillAndSave();
 
     await expect.poll(() => goto).toHaveBeenCalledOnce();
-    expect(createUniversity).toHaveBeenCalledExactlyOnceWith(expect.any(Function), {
-      id: expect.stringMatching(UUID_PATTERN),
-      title: 'Fall MBU',
-      timezone: 'America/New_York',
-      startDate: '2026-10-03T12:00:00.000Z',
-      endDate: null,
-      registrationOpensAt: null,
-      registrationClosesAt: '2026-09-27T03:59:00.000Z',
-      location: {
-        name: 'Camp Hall',
-        address: '2 Oak Ave',
-        city: 'Springfield',
-        state: 'IL',
-        zip: '62701',
+    expect(createUniversity).toHaveBeenCalledExactlyOnceWith(
+      expect.any(Function),
+      {
+        id: expect.stringMatching(UUID_PATTERN),
+        title: 'Fall MBU',
+        timezone: 'America/New_York',
+        startDate: '2026-10-03T12:00:00.000Z',
+        endDate: null,
+        registrationOpensAt: null,
+        registrationClosesAt: '2026-09-27T03:59:00.000Z',
+        location: {
+          name: 'Camp Hall',
+          address: '2 Oak Ave',
+          city: 'Springfield',
+          state: 'IL',
+          zip: '62701',
+        },
       },
-    });
+      expect.any(IdempotencyKeys),
+    );
     const createdId = createUniversity.mock.calls[0]?.[1].id;
     expect(goto).toHaveBeenCalledWith(`/universities/${createdId}`);
   });
 
+  it('sends the same ID again when the user saves again after a network failure', async () => {
+    const { fillAndSave } = await setup({ createError: new TypeError('Failed to fetch') });
+    await fillAndSave();
+    await expect.element(page.getByRole('alert')).toBeVisible();
+
+    await page.getByRole('button', { name: 'Save university' }).click();
+
+    await expect.poll(() => createUniversity.mock.calls.length).toBe(2);
+    const [first, second] = createUniversity.mock.calls;
+    expect(second?.[1].id).toBe(first?.[1].id);
+    expect(second?.[2]).toBe(first?.[2]);
+  });
+
   it('stays on the page and shows the message of the API when the create fails', async () => {
     const { fillAndSave } = await setup({
-      createError: new ApiError(400, { error: 'Registration must close before the event' }),
+      createError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'Registration must close before the event',
+      }),
     });
 
     await fillAndSave();

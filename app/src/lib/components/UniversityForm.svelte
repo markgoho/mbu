@@ -27,6 +27,7 @@
   import type { UniversityResponse } from '#lib/api-types/universities-api.types.js';
   import Button from '#lib/components/atoms/Button.svelte';
   import TextInput from '#lib/components/atoms/TextInput.svelte';
+  import FieldError from '#lib/components/FieldError.svelte';
   import { datetimeInputToIso, isoToDatetimeInput } from '#lib/eventDatetime.js';
   import { FormAction } from '#lib/formAction.svelte.js';
 
@@ -124,7 +125,8 @@
   // university again (after a write), and when the route shows a different one.
   let fields = $derived(new Fields(initial));
 
-  const action = new FormAction();
+  const uid = $props.id();
+  const action = new FormAction(uid);
 
   async function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -138,17 +140,30 @@
   }
 </script>
 
-<!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
+<!-- `novalidate`: no browser validation. The messages of the fields come from the API. -->
 <form class="uni-form" novalidate onsubmit={handleSubmit}>
   {#if action.error}
     <p class="uni-form__error" role="alert">{action.error}</p>
   {/if}
 
   <label for="title">Title</label>
-  <TextInput id="title" disabled={readonly} bind:value={fields.title} />
+  <TextInput
+    id="title"
+    {...action.fieldAttributes('title')}
+    disabled={readonly}
+    bind:value={fields.title}
+  />
+  <FieldError {action} field="title" />
 
   <label for="timezone">Timezone (IANA)</label>
-  <TextInput id="timezone" list="tz-list" disabled={readonly} bind:value={fields.timezone} />
+  <TextInput
+    id="timezone"
+    {...action.fieldAttributes('timezone')}
+    list="tz-list"
+    disabled={readonly}
+    bind:value={fields.timezone}
+  />
+  <FieldError {action} field="timezone" />
   <datalist id="tz-list">
     <option value="America/New_York"></option>
     <option value="America/Chicago"></option>
@@ -160,42 +175,86 @@
   <label for="startDate">Event start</label>
   <TextInput
     id="startDate"
+    {...action.fieldAttributes('startDate')}
     type="datetime-local"
     disabled={readonly}
     bind:value={fields.startDate}
   />
+  <FieldError {action} field="startDate" />
 
   <label for="endDate">Event end (optional — leave blank for single-day)</label>
-  <TextInput id="endDate" type="datetime-local" disabled={readonly} bind:value={fields.endDate} />
+  <TextInput
+    id="endDate"
+    {...action.fieldAttributes('endDate')}
+    type="datetime-local"
+    disabled={readonly}
+    bind:value={fields.endDate}
+  />
+  <FieldError {action} field="endDate" />
 
   <label for="registrationOpensAt">Registration opens (optional)</label>
   <TextInput
     id="registrationOpensAt"
+    {...action.fieldAttributes('registrationOpensAt')}
     type="datetime-local"
     disabled={readonly}
     bind:value={fields.registrationOpensAt}
   />
+  <FieldError {action} field="registrationOpensAt" />
 
   <label for="registrationClosesAt">Registration closes</label>
   <TextInput
     id="registrationClosesAt"
+    {...action.fieldAttributes('registrationClosesAt')}
     type="datetime-local"
     disabled={readonly}
     bind:value={fields.registrationClosesAt}
   />
+  <FieldError {action} field="registrationClosesAt" />
 
-  <fieldset class="uni-form__fieldset">
+  <fieldset class="uni-form__fieldset" {...action.fieldAttributes('location')}>
     <legend>Location</legend>
     <label for="locationName">Venue name</label>
-    <TextInput id="locationName" disabled={readonly} bind:value={fields.locationName} />
+    <TextInput
+      id="locationName"
+      {...action.fieldAttributes('location.name')}
+      disabled={readonly}
+      bind:value={fields.locationName}
+    />
+    <FieldError {action} field="location.name" />
     <label for="locationAddress">Street address</label>
-    <TextInput id="locationAddress" disabled={readonly} bind:value={fields.locationAddress} />
+    <TextInput
+      id="locationAddress"
+      {...action.fieldAttributes('location.address')}
+      disabled={readonly}
+      bind:value={fields.locationAddress}
+    />
+    <FieldError {action} field="location.address" />
     <label for="locationCity">City</label>
-    <TextInput id="locationCity" disabled={readonly} bind:value={fields.locationCity} />
+    <TextInput
+      id="locationCity"
+      {...action.fieldAttributes('location.city')}
+      disabled={readonly}
+      bind:value={fields.locationCity}
+    />
+    <FieldError {action} field="location.city" />
     <label for="locationState">State</label>
-    <TextInput id="locationState" disabled={readonly} bind:value={fields.locationState} />
+    <TextInput
+      id="locationState"
+      {...action.fieldAttributes('location.state')}
+      disabled={readonly}
+      bind:value={fields.locationState}
+    />
+    <FieldError {action} field="location.state" />
     <label for="locationZip">ZIP</label>
-    <TextInput id="locationZip" disabled={readonly} bind:value={fields.locationZip} />
+    <TextInput
+      id="locationZip"
+      {...action.fieldAttributes('location.zip')}
+      disabled={readonly}
+      bind:value={fields.locationZip}
+    />
+    <FieldError {action} field="location.zip" />
+    <FieldError {action} field="location" />
   </fieldset>
 
   {#if !readonly}

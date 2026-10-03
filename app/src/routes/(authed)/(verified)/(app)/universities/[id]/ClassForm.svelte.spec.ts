@@ -282,9 +282,36 @@ describe('ClassForm', () => {
     expect(onCreate).not.toHaveBeenCalled();
   });
 
+  it('shows the message of each field of the API beside its control', async () => {
+    const { addButton, fillRequiredFields } = await setup({
+      saveError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'Check the class form.',
+        details: {
+          capacity: 'Enter a capacity of 1 or more',
+          'counselor.bsaId': 'Enter your BSA member ID.',
+        },
+      }),
+    });
+    await fillRequiredFields();
+
+    await addButton.click();
+
+    await expect.element(page.getByRole('alert')).toHaveTextContent('Check the class form.');
+    await expect
+      .element(page.getByLabelText('Capacity'))
+      .toHaveAccessibleDescription('Enter a capacity of 1 or more');
+    await expect
+      .element(page.getByLabelText('BSA member ID'))
+      .toHaveAccessibleDescription('Enter your BSA member ID.');
+  });
+
   it('stays open and shows the message of the API when the save fails', async () => {
     const { onDismiss, addButton, fillRequiredFields } = await setup({
-      saveError: new ApiError(409, { error: 'You already teach in this period' }),
+      saveError: new ApiError(409, {
+        code: 'CONFLICT',
+        message: 'You already teach in this period',
+      }),
     });
     await fillRequiredFields();
 

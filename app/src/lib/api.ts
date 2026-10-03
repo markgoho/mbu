@@ -1,9 +1,10 @@
 import { goto } from '$app/navigation';
 import { resolve } from '$app/paths';
 import { signOut } from 'firebase/auth';
-import type { ApiErrorBody } from '#lib/api-types/universities-api.types.js';
+import type { ApiErrorBody } from '#lib/api-types/api-error.types.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import { getFirebaseAuth } from '#lib/firebase.js';
+import type { IdempotencyKeys } from '#lib/idempotency.js';
 
 /**
  * Returns the request headers with the ID token of the signed-in user as a
@@ -97,11 +98,31 @@ export class ApiError extends Error {
   readonly body: ApiErrorBody | undefined;
 
   constructor(status: number, body: ApiErrorBody | undefined) {
-    super(body?.error ?? `API request failed with status ${status}`);
+    super(body?.message ?? `API request failed with status ${status}`);
     this.name = 'ApiError';
     this.status = status;
     this.body = body;
   }
+}
+
+function isObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+/**
+ * Returns the parsed JSON of an error response as an `ApiErrorBody`, or
+ * `undefined` when it does not have that shape: `code` and `message` are text,
+ * and `details`, if there is one, is an object of text values.
+ */
+export function readApiErrorBody(json: unknown): ApiErrorBody | undefined {
+  if (!isObject(json)) return undefined;
+  const { code, message, details } = json;
+  if (typeof code !== 'string' || typeof message !== 'string') return undefined;
+  if (details === undefined || details === null) return { code, message };
+  if (!isObject(details) || Object.values(details).some((value) => typeof value !== 'string')) {
+    return undefined;
+  }
+  return { code, message, details: details as Record<string, string> };
 }
 
 /**
@@ -111,13 +132,13 @@ export class ApiError extends Error {
 export async function expectOk(response: Response): Promise<Response> {
   if (response.ok) return response;
 
-  let body: ApiErrorBody | undefined;
+  let json: unknown;
   try {
-    body = (await response.json()) as ApiErrorBody;
+    json = await response.json();
   } catch {
     // The body is empty or is not JSON (for example, an HTML page from a proxy).
   }
-  throw new ApiError(response.status, body);
+  throw new ApiError(response.status, readApiErrorBody(json));
 }
 
 /**
@@ -126,6 +147,14 @@ GETs a path and returns the parsed JSON body. Throws an `ApiError` if the respon
 export async function getJson<T>(fetcher: Fetcher, path: string): Promise<T> {
   const response = await expectOk(await fetcher(path));
   return (await response.json()) as T;
+}
+
+export interface SendOptions {
+  /**
+   * The `Idempotency-Key` header, for a `POST` that creates a record. Use
+   * `createJson`, which gets the key from an `IdempotencyKeys`.
+   */
+  readonly idempotencyKey?: string;
 }
 
 /**
@@ -137,13 +166,29 @@ export async function sendJson<T>(
   method: 'POST' | 'PUT' | 'PATCH',
   path: string,
   body: unknown,
+  { idempotencyKey }: SendOptions = {},
 ): Promise<T> {
+  const headers = new Headers({ 'Content-Type': 'application/json' });
+  if (idempotencyKey !== undefined) headers.set('Idempotency-Key', idempotencyKey);
   const response = await expectOk(
-    await fetcher(path, {
-      method,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    }),
+    await fetcher(path, { method, headers, body: JSON.stringify(body) }),
   );
   return (await response.json()) as T;
+}
+
+/**
+ * `POST`s a JSON body that creates a record, with an `Idempotency-Key` from
+ * `keys` (`#lib/idempotency.js`): one key for each action of the user, and the
+ * same key for a retry of that action. Returns the parsed JSON body of the
+ * response. Throws an `ApiError` if the response is not OK.
+ */
+export function createJson<T>(
+  fetcher: Fetcher,
+  path: string,
+  body: unknown,
+  keys: IdempotencyKeys,
+): Promise<T> {
+  return keys.send({ path, body }, (idempotencyKey) =>
+    sendJson<T>(fetcher, 'POST', path, body, { idempotencyKey }),
+  );
 }

@@ -1,8 +1,6 @@
+import type { ApiErrorBody } from '../src/lib/api-types/api-error.types.js';
 import type { RosterResponse } from '../src/lib/api-types/registrations-api.types.js';
-import type {
-  ApiErrorBody,
-  UniversityListResponse,
-} from '../src/lib/api-types/universities-api.types.js';
+import type { UniversityListResponse } from '../src/lib/api-types/universities-api.types.js';
 import { expect, test } from './fixtures/auth.fixture.js';
 
 /**
@@ -112,7 +110,13 @@ test.describe('roster page', () => {
     verifiedPage: page,
   }) => {
     await page.route(`**/api/registrations/${UNIVERSITY_ID}/roster`, (route) =>
-      route.fulfill({ status: 403, json: { error: 'Forbidden' } satisfies ApiErrorBody }),
+      route.fulfill({
+        status: 403,
+        json: {
+          code: 'FORBIDDEN',
+          message: 'You do not have access to any classes in this event',
+        } satisfies ApiErrorBody,
+      }),
     );
     await page.route('**/api/universities/mine', (route) =>
       route.fulfill({ json: { universities: [] } satisfies UniversityListResponse }),

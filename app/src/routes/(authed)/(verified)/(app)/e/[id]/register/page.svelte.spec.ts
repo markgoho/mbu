@@ -13,6 +13,7 @@ import type {
 } from '#lib/api-types/users-api.types.js';
 import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import { IdempotencyKeys } from '#lib/idempotency.js';
 import Page from './+page.svelte';
 import { alexSmith, baileyJones, registrationFor, sampleEvent } from './registerFixture.js';
 
@@ -24,13 +25,17 @@ const { registerScout, cancelRegistration, createScout, refreshAll } = vi.hoiste
         universityId: string,
         classId: string,
         body: RegisterRequest,
+        keys: IdempotencyKeys,
       ) => Promise<RegistrationResponse>
     >(),
   cancelRegistration:
     vi.fn<
       (fetcher: Fetcher, universityId: string, classId: string, scoutId: string) => Promise<void>
     >(),
-  createScout: vi.fn<(fetcher: Fetcher, body: ScoutRequest) => Promise<ScoutResponse>>(),
+  createScout:
+    vi.fn<
+      (fetcher: Fetcher, body: ScoutRequest, keys: IdempotencyKeys) => Promise<ScoutResponse>
+    >(),
   refreshAll: vi.fn<() => Promise<void>>(),
 }));
 vi.mock('#lib/registrations.js', () => ({ registerScout, cancelRegistration }));
@@ -108,12 +113,12 @@ async function setup({
   registerScout.mockReset();
   registerScout.mockImplementation(async (_fetcher, _universityId, classId, body) => {
     if (registerOutcome === 'api-error') {
-      throw new ApiError(409, { error: 'Registration is closed', code: 'registration_closed' });
+      throw new ApiError(403, { code: 'REGISTRATION_CLOSED', message: 'Registration is closed' });
     }
     if (registerOutcome === 'no-answer') throw new TypeError('Failed to fetch');
     const isFirstCall = registerScout.mock.calls.length === 1;
     if (registerOutcome === 'full-then-waitlist' && isFirstCall && !body.acceptWaitlist) {
-      throw new ApiError(409, { error: 'Class is full', code: 'class_full' });
+      throw new ApiError(409, { code: 'CLASS_FULL', message: 'Class is full' });
     }
     const status: RegistrationStatus = registerOutcome === 'enrolled' ? 'enrolled' : 'waitlisted';
     const registration = registrationFor(classId, status, body.scoutId);
@@ -254,11 +259,17 @@ describe('registration page', () => {
 
     await expect.element(classCard('Archery').getByText('Registered')).toBeVisible();
     await expect.element(classButton('Archery', 'Drop')).toBeVisible();
-    expect(registerScout).toHaveBeenCalledExactlyOnceWith(expect.any(Function), 'uni1', 'archery', {
-      scoutId: 'scout1',
-      acceptWaitlist: false,
-      acceptConsent: true,
-    });
+    expect(registerScout).toHaveBeenCalledExactlyOnceWith(
+      expect.any(Function),
+      'uni1',
+      'archery',
+      {
+        scoutId: 'scout1',
+        acceptWaitlist: false,
+        acceptConsent: true,
+      },
+      expect.any(IdempotencyKeys),
+    );
   });
 
   it('shows the current seats and progress after a registration', async () => {
@@ -290,11 +301,17 @@ describe('registration page', () => {
     await classButton('Archery', 'Join waitlist').click();
 
     await expect.element(classCard('Archery').getByText('On waitlist')).toBeVisible();
-    expect(registerScout).toHaveBeenLastCalledWith(expect.any(Function), 'uni1', 'archery', {
-      scoutId: 'scout1',
-      acceptWaitlist: true,
-      acceptConsent: true,
-    });
+    expect(registerScout).toHaveBeenLastCalledWith(
+      expect.any(Function),
+      'uni1',
+      'archery',
+      {
+        scoutId: 'scout1',
+        acceptWaitlist: true,
+        acceptConsent: true,
+      },
+      expect.any(IdempotencyKeys),
+    );
   });
 
   it('does not join the waitlist when the scout declines the offer', async () => {
@@ -320,11 +337,17 @@ describe('registration page', () => {
     await classButton('Camping', 'Join waitlist').click();
 
     await expect.element(classCard('Camping').getByText('On waitlist')).toBeVisible();
-    expect(registerScout).toHaveBeenCalledExactlyOnceWith(expect.any(Function), 'uni1', 'camping', {
-      scoutId: 'scout1',
-      acceptWaitlist: true,
-      acceptConsent: true,
-    });
+    expect(registerScout).toHaveBeenCalledExactlyOnceWith(
+      expect.any(Function),
+      'uni1',
+      'camping',
+      {
+        scoutId: 'scout1',
+        acceptWaitlist: true,
+        acceptConsent: true,
+      },
+      expect.any(IdempotencyKeys),
+    );
   });
 
   it('shows the message of the API when a registration fails', async () => {
@@ -358,7 +381,7 @@ describe('registration page', () => {
     await classButton('Archery', 'Register').click();
 
     await scoutButton('Bailey Jones').click();
-    pendingRegistration.reject(new ApiError(409, { error: 'Class is full', code: 'class_full' }));
+    pendingRegistration.reject(new ApiError(409, { code: 'CLASS_FULL', message: 'Class is full' }));
 
     // The button is enabled again when the request is complete.
     await consent.click();
@@ -465,6 +488,7 @@ describe('registration page', () => {
       'uni1',
       'hiking',
       expect.objectContaining({ scoutId: 'scout2' }),
+      expect.any(IdempotencyKeys),
     );
   });
 
@@ -512,7 +536,7 @@ describe('registration page', () => {
   it('shows a fixed message when a drop fails', async () => {
     const { classButton } = await setup({
       registrations: [registrationFor('archery', 'enrolled')],
-      cancelError: new ApiError(500, { error: 'Internal error' }),
+      cancelError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
     });
 
     await classButton('Archery', 'Drop').click();
@@ -542,10 +566,14 @@ describe('registration page', () => {
 
     await expect.element(scoutButton('Casey Lee')).toHaveAttribute('aria-pressed', 'true');
     await expect.element(page.getByText('0/2 periods scheduled')).toBeVisible();
-    expect(createScout).toHaveBeenCalledExactlyOnceWith(expect.any(Function), {
-      firstName: 'Casey',
-      lastName: 'Lee',
-    });
+    expect(createScout).toHaveBeenCalledExactlyOnceWith(
+      expect.any(Function),
+      {
+        firstName: 'Casey',
+        lastName: 'Lee',
+      },
+      expect.any(IdempotencyKeys),
+    );
   });
 
   it('adds another scout, selects it and asks for a fresh consent', async () => {
@@ -565,7 +593,7 @@ describe('registration page', () => {
 
   it('shows a fixed message and keeps the form when the add of a scout fails', async () => {
     const { addScout, addAnotherScoutButton } = await setup({
-      createScoutError: new ApiError(500, { error: 'Internal error' }),
+      createScoutError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
     });
 
     await addAnotherScoutButton.click();

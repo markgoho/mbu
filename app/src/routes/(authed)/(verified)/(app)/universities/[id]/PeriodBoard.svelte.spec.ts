@@ -209,15 +209,40 @@ describe('PeriodBoard', () => {
       save: () =>
         Promise.reject(
           new ApiError(409, {
-            error: 'Period is in use',
-            details: { classes: [{ classId: 'cls1', title: 'Camping' }] },
+            code: 'CONFLICT',
+            message: 'Period is in use',
+            details: { cls1: 'Camping', cls2: 'Cooking' },
           }),
         ),
     });
 
     await saveButton.click();
 
-    await expect.element(page.getByRole('alert')).toHaveTextContent('Period is in use (Camping)');
+    await expect
+      .element(page.getByRole('alert'))
+      .toHaveTextContent('Period is in use (Camping, Cooking)');
+  });
+
+  it('shows the message of a field of the API beside the control of its row', async () => {
+    const { saveButton, labels, ends } = await setup({
+      save: () =>
+        Promise.reject(
+          new ApiError(400, {
+            code: 'INVALID_ARGUMENT',
+            message: 'Check the periods.',
+            details: { 'periods.1.endsAt': 'End the period after it starts.' },
+          }),
+        ),
+    });
+
+    await saveButton.click();
+
+    await expect.element(page.getByRole('alert')).toHaveTextContent('Check the periods.');
+    await expect
+      .element(ends.nth(1))
+      .toHaveAccessibleDescription('End the period after it starts.');
+    await expect.element(ends.nth(0)).not.toHaveAccessibleDescription();
+    await expect.element(labels.nth(1)).not.toHaveAccessibleDescription();
   });
 
   it('shows a general message when the save fails with no API message', async () => {

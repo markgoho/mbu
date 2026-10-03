@@ -186,11 +186,3 @@ export interface ReviewQueueRow {
 export interface ReviewQueueResponse {
   universities: ReviewQueueRow[];
 }
-
-export interface ApiErrorBody {
-  error?: string;
-  code?: string;
-  details?: {
-    classes?: { classId: string; title: string }[];
-  };
-}

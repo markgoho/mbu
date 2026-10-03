@@ -200,7 +200,7 @@ describe('ClassList', () => {
 
   it('shows the message of the API when the deletion fails', async () => {
     const { deleteButtons } = await setup({
-      deleteError: new ApiError(409, { error: 'Class has registrations' }),
+      deleteError: new ApiError(409, { code: 'CONFLICT', message: 'Class has registrations' }),
     });
 
     await deleteButtons.nth(0).click();

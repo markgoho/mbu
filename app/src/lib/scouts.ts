@@ -9,8 +9,9 @@ import type {
   ScoutRequest,
   ScoutResponse,
 } from '#lib/api-types/users-api.types.js';
-import { expectOk, getJson, sendJson } from '#lib/api.js';
+import { createJson, expectOk, getJson } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import type { IdempotencyKeys } from '#lib/idempotency.js';
 
 const SCOUTS_PATH = '/api/users/me/scouts';
 
@@ -22,10 +23,14 @@ export function listScouts(fetcher: Fetcher): Promise<ScoutListResponse> {
 }
 
 /**
-`POST /api/users/me/scouts`.
+`POST /api/users/me/scouts`, with an `Idempotency-Key` from `keys`.
 */
-export function createScout(fetcher: Fetcher, body: ScoutRequest): Promise<ScoutResponse> {
-  return sendJson<ScoutResponse>(fetcher, 'POST', SCOUTS_PATH, body);
+export function createScout(
+  fetcher: Fetcher,
+  body: ScoutRequest,
+  keys: IdempotencyKeys,
+): Promise<ScoutResponse> {
+  return createJson<ScoutResponse>(fetcher, SCOUTS_PATH, body, keys);
 }
 
 /**

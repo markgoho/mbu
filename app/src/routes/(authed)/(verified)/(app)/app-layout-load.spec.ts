@@ -76,18 +76,20 @@ describe('(app) layout load: requireOnboarded', () => {
   });
 
   it('redirects to sign-in when the API refuses the token', async () => {
-    const { loadEvent } = setup({ bootstrapError: new ApiError(401, { error: 'Unauthorized' }) });
+    const { loadEvent } = setup({
+      bootstrapError: new ApiError(401, { code: 'UNAUTHORIZED', message: 'Unauthorized' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({ status: 303, location: '/sign-in' });
   });
 
   it('shows the error page with the message of the API for a different API error', async () => {
     const { loadEvent } = setup({
-      bootstrapError: new ApiError(500, { error: 'Bootstrap failed' }),
+      bootstrapError: new ApiError(409, { code: 'CONFLICT', message: 'Bootstrap failed' }),
     });
 
     await expect(load(loadEvent)).rejects.toMatchObject({
-      status: 500,
+      status: 409,
       body: { message: 'Bootstrap failed' },
     });
   });

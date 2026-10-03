@@ -22,8 +22,9 @@ import type {
   UniversityPatchRequest,
   UniversityResponse,
 } from '#lib/api-types/universities-api.types.js';
-import { expectOk, getJson, sendJson } from '#lib/api.js';
+import { createJson, expectOk, getJson, sendJson } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import type { IdempotencyKeys } from '#lib/idempotency.js';
 
 const UNIVERSITIES_PATH = '/api/universities';
 const ADMIN_UNIVERSITIES_PATH = '/api/admin/universities';
@@ -77,13 +78,14 @@ export function getReviewQueue(fetcher: Fetcher): Promise<ReviewQueueResponse> {
 // Writes: the university
 
 /**
-`POST /api/universities`.
+`POST /api/universities`, with an `Idempotency-Key` from `keys`.
 */
 export function createUniversity(
   fetcher: Fetcher,
   body: UniversityCreateRequest,
+  keys: IdempotencyKeys,
 ): Promise<UniversityResponse> {
-  return sendJson<UniversityResponse>(fetcher, 'POST', UNIVERSITIES_PATH, body);
+  return createJson<UniversityResponse>(fetcher, UNIVERSITIES_PATH, body, keys);
 }
 
 /**
@@ -132,14 +134,15 @@ export function putPeriods(
 }
 
 /**
-`POST /api/universities/:universityId/classes`.
+`POST /api/universities/:universityId/classes`, with an `Idempotency-Key` from `keys`.
 */
 export function createClass(
   fetcher: Fetcher,
   universityId: string,
   body: ClassCreateRequest,
+  keys: IdempotencyKeys,
 ): Promise<ClassResponse> {
-  return sendJson<ClassResponse>(fetcher, 'POST', `${universityPath(universityId)}/classes`, body);
+  return createJson<ClassResponse>(fetcher, `${universityPath(universityId)}/classes`, body, keys);
 }
 
 /**

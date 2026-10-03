@@ -47,22 +47,28 @@ describe('review queue load', () => {
   });
 
   it('redirects to the app home when the API answers 403 (the claim was removed)', async () => {
-    const loadEvent = setup({ queueError: new ApiError(403, { error: 'Forbidden' }) });
+    const loadEvent = setup({
+      queueError: new ApiError(403, { code: 'FORBIDDEN', message: 'Forbidden' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({ status: 303, location: '/' });
   });
 
   it('redirects to sign-in when the API refuses the token', async () => {
-    const loadEvent = setup({ queueError: new ApiError(401, { error: 'Unauthorized' }) });
+    const loadEvent = setup({
+      queueError: new ApiError(401, { code: 'UNAUTHORIZED', message: 'Unauthorized' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({ status: 303, location: '/sign-in' });
   });
 
   it('shows the error page with the message of the API for a different API error', async () => {
-    const loadEvent = setup({ queueError: new ApiError(500, { error: 'Database is down' }) });
+    const loadEvent = setup({
+      queueError: new ApiError(409, { code: 'CONFLICT', message: 'Database is down' }),
+    });
 
     await expect(load(loadEvent)).rejects.toMatchObject({
-      status: 500,
+      status: 409,
       body: { message: 'Database is down' },
     });
   });

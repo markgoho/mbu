@@ -182,7 +182,9 @@ describe('UniversityForm', () => {
     const { saveButton } = await setup({
       initial: springMbu,
       save: () =>
-        Promise.reject(new ApiError(409, { error: 'Registration closes after the start' })),
+        Promise.reject(
+          new ApiError(409, { code: 'CONFLICT', message: 'Registration closes after the start' }),
+        ),
     });
 
     await saveButton.click();
@@ -190,6 +192,61 @@ describe('UniversityForm', () => {
     await expect
       .element(page.getByRole('alert'))
       .toHaveTextContent('Registration closes after the start');
+  });
+
+  it('shows the message of each field of the API beside its control, and the message for the form', async () => {
+    const { saveButton } = await setup({
+      initial: springMbu,
+      save: () =>
+        Promise.reject(
+          new ApiError(400, {
+            code: 'INVALID_ARGUMENT',
+            message: 'Check the University form.',
+            details: {
+              endDate: 'End the event after it starts.',
+              'location.city': 'Enter the city.',
+            },
+          }),
+        ),
+    });
+
+    await saveButton.click();
+
+    await expect.element(page.getByRole('alert')).toHaveTextContent('Check the University form.');
+    await expect
+      .element(page.getByLabelText(/Event end/))
+      .toHaveAccessibleDescription('End the event after it starts.');
+    await expect
+      .element(page.getByLabelText('City'))
+      .toHaveAccessibleDescription('Enter the city.');
+    await expect.element(page.getByLabelText('City')).toHaveAttribute('aria-invalid', 'true');
+    await expect.element(page.getByLabelText('Title')).not.toHaveAttribute('aria-invalid');
+  });
+
+  it('removes the messages of the fields when the next save succeeds', async () => {
+    let attempts = 0;
+    const { saveButton } = await setup({
+      initial: springMbu,
+      save: () => {
+        attempts += 1;
+        return attempts === 1
+          ? Promise.reject(
+              new ApiError(400, {
+                code: 'INVALID_ARGUMENT',
+                message: 'Check the University form.',
+                details: { 'location.city': 'Enter the city.' },
+              }),
+            )
+          : Promise.resolve();
+      },
+    });
+    await saveButton.click();
+    await expect.element(page.getByText('Enter the city.')).toBeVisible();
+
+    await saveButton.click();
+
+    await expect.element(page.getByText('Enter the city.')).not.toBeInTheDocument();
+    await expect.element(page.getByLabelText('City')).not.toHaveAccessibleDescription();
   });
 
   it('shows a general message when the save fails with no API message', async () => {

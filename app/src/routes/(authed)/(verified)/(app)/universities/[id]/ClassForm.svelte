@@ -21,6 +21,7 @@
   import Select from '#lib/components/atoms/Select.svelte';
   import Textarea from '#lib/components/atoms/Textarea.svelte';
   import TextInput from '#lib/components/atoms/TextInput.svelte';
+  import FieldError from '#lib/components/FieldError.svelte';
   import { DISCLAIMER_TEXT } from '#lib/disclaimer.js';
   import { FormAction } from '#lib/formAction.svelte.js';
 
@@ -106,7 +107,8 @@
   // The fields start again when the user edits a different class.
   let fields = $derived(new Fields(editing));
 
-  const action = new FormAction();
+  const uid = $props.id();
+  const action = new FormAction(uid);
 
   async function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -130,14 +132,14 @@
   }
 </script>
 
-<!-- `novalidate`: this form has no browser validation and no field messages (#102 owns them). -->
+<!-- `novalidate`: no browser validation. The messages of the fields come from the API. -->
 <form class="class-form" novalidate onsubmit={handleSubmit}>
   {#if action.error}
     <p class="class-form__error" role="alert">{action.error}</p>
   {/if}
 
   <label for="badgeSlug">Merit badge</label>
-  <Select id="badgeSlug" bind:value={fields.badgeSlug}>
+  <Select id="badgeSlug" {...action.fieldAttributes('badgeSlug')} bind:value={fields.badgeSlug}>
     <option value="">Select a badge…</option>
     {#each badges as badge (badge.slug)}
       <option value={badge.slug}>
@@ -148,8 +150,9 @@
       </option>
     {/each}
   </Select>
+  <FieldError {action} field="badgeSlug" />
 
-  <fieldset class="class-form__fieldset">
+  <fieldset class="class-form__fieldset" {...action.fieldAttributes('periodIds')}>
     <legend>Periods</legend>
     {#if periods.length === 0}
       <p class="class-form__hint">Add periods before creating classes.</p>
@@ -163,35 +166,51 @@
         {period.label}
       </label>
     {/each}
+    <FieldError {action} field="periodIds" />
   </fieldset>
 
   <label for="capacity">Capacity</label>
   <TextInput
     id="capacity"
+    {...action.fieldAttributes('capacity')}
     type="number"
     min={MIN_CAPACITY}
     max={MAX_CAPACITY}
     bind:value={fields.capacity}
   />
+  <FieldError {action} field="capacity" />
 
   <label for="room">Room (optional)</label>
-  <TextInput id="room" bind:value={fields.room} />
+  <TextInput id="room" {...action.fieldAttributes('room')} bind:value={fields.room} />
+  <FieldError {action} field="room" />
 
   <label for="notes">Notes (optional)</label>
-  <Textarea id="notes" rows={2} bind:value={fields.notes} />
+  <Textarea id="notes" rows={2} {...action.fieldAttributes('notes')} bind:value={fields.notes} />
+  <FieldError {action} field="notes" />
 
   {#if !editing}
-    <fieldset class="class-form__fieldset">
+    <fieldset class="class-form__fieldset" {...action.fieldAttributes('counselor')}>
       <legend>Counselor (you)</legend>
       <p>
         Name: <strong>{counselorName}</strong>
       </p>
       <label for="bsaId">BSA member ID</label>
-      <TextInput id="bsaId" autocomplete="off" bind:value={fields.bsaId} />
+      <TextInput
+        id="bsaId"
+        autocomplete="off"
+        {...action.fieldAttributes('counselor.bsaId')}
+        bind:value={fields.bsaId}
+      />
+      <FieldError {action} field="counselor.bsaId" />
       <label class="class-form__checkbox">
-        <Checkbox bind:checked={fields.hasAcceptedDisclaimer} />
+        <Checkbox
+          {...action.fieldAttributes('counselor.acceptDisclaimer')}
+          bind:checked={fields.hasAcceptedDisclaimer}
+        />
         {DISCLAIMER_TEXT}
       </label>
+      <FieldError {action} field="counselor.acceptDisclaimer" />
+      <FieldError {action} field="counselor" />
     </fieldset>
   {/if}
 

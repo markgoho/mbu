@@ -2,11 +2,13 @@
   import { refreshAll } from '$app/navigation';
   import type { Period, PublicClass } from '#lib/api-types/universities-api.types.js';
   import type { ScoutRequest } from '#lib/api-types/users-api.types.js';
-  import { ApiError, apiFetch } from '#lib/api.js';
+  import { apiFetch } from '#lib/api.js';
   import Button from '#lib/components/atoms/Button.svelte';
   import Checkbox from '#lib/components/atoms/Checkbox.svelte';
   import TextInput from '#lib/components/atoms/TextInput.svelte';
+  import { apiErrorMessage, hasCode } from '#lib/apiErrorMessage.js';
   import { formatMediumDate, formatShortTime } from '#lib/formatDate.js';
+  import { IdempotencyKeys } from '#lib/idempotency.js';
   import { cancelRegistration, registerScout } from '#lib/registrations.js';
   import { findScheduleConflict, scoutProgress } from '#lib/scheduleRules.js';
   import { createScout } from '#lib/scouts.js';
@@ -14,6 +16,8 @@
   import type { PageData } from './$types';
 
   let { data }: { data: PageData } = $props();
+
+  const keys = new IdempotencyKeys();
 
   const event = $derived(data.event);
 
@@ -73,7 +77,7 @@
   }
 
   async function addScout(scout: ScoutRequest) {
-    const created = await createScout(apiFetch, scout);
+    const created = await createScout(apiFetch, scout, keys);
     // Runs the `load` again, which reads the scouts.
     await refreshAll();
     isAddScoutOpen = false;
@@ -93,7 +97,7 @@
    * again, so the seat counts and the registrations are current.
    *
    * When the class became full after the page got its seat count, the API
-   * answers `class_full`. The page then offers the waitlist.
+   * answers `CLASS_FULL`. The page then offers the waitlist.
    */
   async function register(publicClass: PublicClass, isWaitlistAccepted: boolean) {
     if (!selectedScout || !hasConsent) return;
@@ -102,20 +106,21 @@
     actionError = '';
     pendingClassId = publicClass.classId;
     try {
-      await registerScout(apiFetch, event.id, publicClass.classId, {
-        scoutId,
-        acceptWaitlist: isWaitlistAccepted,
-        acceptConsent: true,
-      });
+      await registerScout(
+        apiFetch,
+        event.id,
+        publicClass.classId,
+        { scoutId, acceptWaitlist: isWaitlistAccepted, acceptConsent: true },
+        keys,
+      );
       await refreshAll();
     } catch (error) {
       // The user selected a different scout during the request: the answer is not for that scout.
       if (selectedScout?.scoutId !== scoutId) return;
-      const body = error instanceof ApiError ? error.body : undefined;
-      if (!isWaitlistAccepted && body?.code === 'class_full') {
+      if (!isWaitlistAccepted && hasCode(error, 'CLASS_FULL')) {
         waitlistOfferClassId = publicClass.classId;
       } else {
-        actionError = body?.error ?? 'Could not register for this class.';
+        actionError = apiErrorMessage(error, 'Could not register for this class.');
       }
     } finally {
       pendingClassId = undefined;

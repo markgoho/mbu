@@ -70,9 +70,30 @@ describe('ScoutQuickAdd', () => {
     await expect.element(addButton).toBeEnabled();
   });
 
-  it('shows a fixed message and keeps the names when the add fails', async () => {
+  it('shows the message of the API and the message of each field beside its control', async () => {
     const { finishAdd, firstName, lastName, addButton } = await setup({
-      addError: new ApiError(500, { error: 'Internal error' }),
+      addError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'Check the Scout form.',
+        details: { lastName: 'Enter a last name of 100 characters or fewer.' },
+      }),
+    });
+    await firstName.fill('Alex');
+    await lastName.fill('Smith');
+
+    await addButton.click();
+    finishAdd();
+
+    await expect.element(page.getByRole('alert')).toHaveTextContent('Check the Scout form.');
+    await expect
+      .element(lastName)
+      .toHaveAccessibleDescription('Enter a last name of 100 characters or fewer.');
+    await expect.element(firstName).not.toHaveAccessibleDescription();
+  });
+
+  it('shows a fixed message and keeps the names when the add fails with no message of the API', async () => {
+    const { finishAdd, firstName, lastName, addButton } = await setup({
+      addError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
     });
     await firstName.fill('Alex');
     await lastName.fill('Smith');

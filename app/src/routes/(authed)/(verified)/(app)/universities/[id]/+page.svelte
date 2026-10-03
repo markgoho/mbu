@@ -13,6 +13,7 @@
   import StatusBadge from '#lib/components/StatusBadge.svelte';
   import UniversityForm, { type UniversityFormValues } from '#lib/components/UniversityForm.svelte';
   import { FormAction } from '#lib/formAction.svelte.js';
+  import { IdempotencyKeys } from '#lib/idempotency.js';
   import {
     closeUniversity,
     createClass,
@@ -40,6 +41,7 @@
 
   // The actions of the header: delete, submit and close.
   const action = new FormAction();
+  const keys = new IdempotencyKeys();
 
   // Each write below runs the `load` again with `refreshAll()`, which gives
   // the page the stored university. A child component shows the message when
@@ -87,7 +89,7 @@
   }
 
   async function addClass(body: ClassCreateRequest) {
-    await createClass(apiFetch, university.id, body);
+    await createClass(apiFetch, university.id, body, keys);
     await refreshAll();
   }
 
