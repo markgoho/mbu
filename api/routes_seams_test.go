@@ -9,6 +9,7 @@ import (
 
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/apierrtest"
+	"mbu/api/internal/clientip"
 	"mbu/api/internal/idempotency"
 	"mbu/api/internal/ratelimit"
 	"mbu/api/internal/testdb"
@@ -75,7 +76,7 @@ func TestReplayableRoute_ReplaysThroughTheRouteTable(t *testing.T) {
 func TestRateLimitedRoute_RefusesThe51stRequest(t *testing.T) {
 	d := seamDeps(t)
 	rt := buildRoutes(d)
-	limit := ratelimit.Wrap(d.DB, "test-limited", []ratelimit.Rule{ratelimit.IPRule(50, time.Hour)})
+	limit := ratelimit.Wrap(d.DB, "test-limited", []ratelimit.Rule{ratelimit.IPRule(d.ClientIP, 50, time.Hour)})
 	rt.public("GET /api/test/limited", limit(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		apierr.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
 	})))
@@ -101,5 +102,34 @@ func TestRateLimitedRoute_RefusesThe51stRequest(t *testing.T) {
 	}
 	if got := apierrtest.Decode(t, resp); got.Code != apierr.CodeRateLimited {
 		t.Fatalf("code = %q, want %q", got.Code, apierr.CodeRateLimited)
+	}
+}
+
+// TestRateLimitedRoute_ForgedForwardedForCountsAgainstTheCaller is #293's
+// acceptance case through the route table: behind the Firebase Hosting
+// rewrite (ProxyHops 1), a new forged first X-Forwarded-For entry on each
+// request still counts against the caller's real address.
+func TestRateLimitedRoute_ForgedForwardedForCountsAgainstTheCaller(t *testing.T) {
+	d := seamDeps(t)
+	d.ClientIP = clientip.Resolver{ProxyHops: 1}
+	rt := buildRoutes(d)
+	limit := ratelimit.Wrap(d.DB, "test-forged", []ratelimit.Rule{ratelimit.IPRule(d.ClientIP, 1, time.Hour)})
+	rt.public("GET /api/test/forged", limit(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+		apierr.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
+	})))
+	h := rt.handler(d.Now)
+
+	get := func(forged string) int {
+		req := httptest.NewRequestWithContext(t.Context(), http.MethodGet, "/api/test/forged", http.NoBody)
+		req.Header.Set("X-Forwarded-For", forged+", 203.0.113.7, 35.191.0.1")
+		rec := httptest.NewRecorder()
+		h.ServeHTTP(rec, req)
+		return rec.Code
+	}
+	if got := get("198.51.100.1"); got != http.StatusOK {
+		t.Fatalf("first request: status = %d, want 200", got)
+	}
+	if got := get("198.51.100.2"); got != http.StatusTooManyRequests {
+		t.Fatalf("second request, new forged entry: status = %d, want 429", got)
 	}
 }

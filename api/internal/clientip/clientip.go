@@ -1,13 +1,35 @@
-// Package clientip resolves the real caller address behind Cloud Run's
-// Google Front End. Copied from doula-cloud (#247); ratelimit.IPRule is
-// its one consumer.
+// Package clientip resolves the caller's address behind Cloud Run's
+// Google Front End (GFE), for use as a rate-limit key (ratelimit.IPRule).
 //
-// From trusts the first X-Forwarded-For entry, as doula-cloud does. A
-// proxy appends to the header a client sends, so a client can set that
-// entry itself and get a new rate-limit bucket on each request. Which
-// entry a proxy wrote depends on the path to the service (direct Cloud
-// Run, or the Firebase Hosting rewrite); #293 decides it from the
-// deployed headers before #251 depends on IPRule.
+// Each proxy appends to the X-Forwarded-For header it receives; it does
+// not replace it. So the left entries are whatever the client sent, and
+// only the entries that a proxy we trust appended are true. The GFE is
+// the last proxy: it appends the address of its own TCP peer, so the
+// rightmost entry is the only one a client can never write (#293).
+//
+// The two paths to mbu-api (#240, #259):
+//
+//   - Direct to the run.app URL: client -> GFE.
+//     X-Forwarded-For is "<client's own entries>, <client>".
+//     The client is the rightmost entry: ProxyHops 0.
+//   - The Firebase Hosting rewrite (/api/** -> Cloud Run):
+//     client -> Hosting -> GFE. Hosting appends the client, then the GFE
+//     appends Hosting's egress address, which is a shared Google address.
+//     X-Forwarded-For is "<client's own entries>, <client>, <Hosting>".
+//     The client is one entry left of the rightmost: ProxyHops 1.
+//
+// ProxyHops counts the proxies in front of the GFE that each append one
+// entry. Too low a value keys every Hosting caller on Hosting's egress
+// address, so they share one bucket (loud: 429s for everyone). Too high a
+// value reads an entry the client wrote (silent: a script gets a new
+// bucket per request). So the default is 0, and the deployment sets 1.
+//
+// The deployed header shape is from Google's documentation of the GFE and
+// reports of the Hosting rewrite, not yet from a deployed request: check
+// it after the first deploy (#296). The run.app URL stays public (#259),
+// and on that path an entry left of the rightmost is the client's own; so
+// with ProxyHops 1 a direct caller can still choose its key. Closing that
+// path is an infrastructure question (#296).
 package clientip
 
 import (
@@ -16,14 +38,31 @@ import (
 	"strings"
 )
 
-// From returns the caller's address, for use as a rate-limit dimension
-// (ratelimit): the first X-Forwarded-For entry (see the package comment
-// for why that is not yet trusted), else the host of r.RemoteAddr, the
-// local and test path with no proxy in front.
-func From(r *http.Request) string {
-	if xff := r.Header.Get("X-Forwarded-For"); xff != "" {
-		first, _, _ := strings.Cut(xff, ",")
-		return strings.TrimSpace(first)
+// Resolver reads the caller's address from a request. The zero value
+// trusts only the GFE (ProxyHops 0).
+type Resolver struct {
+	// ProxyHops is how many proxies in front of Cloud Run's GFE append an
+	// entry to X-Forwarded-For: 0 for a direct call, 1 behind the
+	// Firebase Hosting rewrite. Set from CLIENT_IP_PROXY_HOPS.
+	ProxyHops int
+}
+
+// From returns the caller's address: the X-Forwarded-For entry ProxyHops
+// places left of the rightmost. A header with too few entries came by a
+// shorter path than configured, so From takes the rightmost, the GFE's own
+// peer, which no client can write. With no header (local and tests,
+// with no proxy in front), it is the host of r.RemoteAddr.
+func (rv Resolver) From(r *http.Request) string {
+	// A client can send the header on more than one line, and a proxy
+	// appends to the last; Get reads only the first. So read them all,
+	// in order, as one list.
+	if xff := strings.Join(r.Header.Values("X-Forwarded-For"), ","); xff != "" {
+		entries := strings.Split(xff, ",")
+		i := len(entries) - 1 - rv.ProxyHops
+		if i < 0 {
+			i = len(entries) - 1
+		}
+		return strings.TrimSpace(entries[i])
 	}
 	host, _, err := net.SplitHostPort(r.RemoteAddr)
 	// coverage:ignore reason: net/http always sets RemoteAddr in host:port form, not exercised by unit tests

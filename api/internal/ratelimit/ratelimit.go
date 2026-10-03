@@ -52,10 +52,11 @@ type Rule struct {
 	Window time.Duration
 }
 
-// IPRule limits by clientip.From(r), the caller's address. There is
-// always an address, so the rule applies to every request.
-func IPRule(maxRequests int, window time.Duration) Rule {
-	return Rule{Dimension: "ip", Key: clientip.From, Max: maxRequests, Window: window}
+// IPRule limits by resolver.From(r), the caller's address. There is always an
+// address, so the rule applies to every request. A route passes
+// Deps.ClientIP, so the key trusts the proxy hops the deployment sets.
+func IPRule(resolver clientip.Resolver, maxRequests int, window time.Duration) Rule {
+	return Rule{Dimension: "ip", Key: resolver.From, Max: maxRequests, Window: window}
 }
 
 // Wrap enforces every rule in rules against db, keyed per rule by

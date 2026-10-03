@@ -9,10 +9,12 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
 	"mbu/api/internal/authn"
+	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
 
 	"github.com/jackc/pgx/v5"
@@ -62,6 +64,28 @@ func openDB(getenv func(string) string) (*sql.DB, error) {
 	return stdlib.OpenDB(*cfg), nil
 }
 
+// errBadProxyHops stops startup when CLIENT_IP_PROXY_HOPS is set to
+// anything but a whole number of 0 or more.
+var errBadProxyHops = errors.New("CLIENT_IP_PROXY_HOPS is not a whole number of 0 or more")
+
+// clientIPProxyHops reads CLIENT_IP_PROXY_HOPS, the number of proxies in
+// front of Cloud Run's front end that append to X-Forwarded-For (see
+// package clientip): unset is 0, a direct call; behind the Firebase
+// Hosting rewrite it is 1. A value that is not a whole number of 0 or
+// more stops startup (errBadProxyHops), so a typo cannot silently change
+// the rate-limit key.
+func clientIPProxyHops(getenv func(string) string) (int, error) {
+	raw := strings.TrimSpace(getenv("CLIENT_IP_PROXY_HOPS"))
+	if raw == "" {
+		return 0, nil
+	}
+	hops, err := strconv.Atoi(raw)
+	if err != nil || hops < 0 {
+		return 0, fmt.Errorf("%w: %q", errBadProxyHops, raw)
+	}
+	return hops, nil
+}
+
 func main() {
 	// coverage:ignore reason: reads the real environment, not exercised by unit tests; firebaseProjectID is
 	projectID, err := firebaseProjectID(os.Getenv)
@@ -83,8 +107,15 @@ func main() {
 		log.Fatalf("config: %v", err)
 	}
 
+	// coverage:ignore reason: reads the real environment, not exercised by unit tests; clientIPProxyHops is
+	proxyHops, err := clientIPProxyHops(os.Getenv)
+	if err != nil {
+		// coverage:ignore reason: reads the real environment, not exercised by unit tests; clientIPProxyHops is
+		log.Fatalf("config: %v", err)
+	}
+
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
-	deps := Deps{Verifier: verifier, Now: clock.Real, DB: db}
+	deps := Deps{Verifier: verifier, Now: clock.Real, DB: db, ClientIP: clientip.Resolver{ProxyHops: proxyHops}}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go

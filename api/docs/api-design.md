@@ -134,7 +134,7 @@ Each rate-limited MBU route, and why. A ticket that adds or limits a route adds 
 | Route | Rules | Reason |
 | :---- | :---- | :----- |
 | `GET /api/health` | none | The health probe for Cloud Run and the image smoke test. It reads no database and calls no vendor, so a flood of it costs no more than any request the load balancer refuses. |
-| `GET /api/universities/{id}/public` | `ratelimit.IPRule(600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is one query. #251 mounts it; #293 makes the client address trustworthy first. |
+| `GET /api/universities/{id}/public` | `ratelimit.IPRule(d.ClientIP, 600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is one query. #251 mounts it. The key is the `X-Forwarded-For` entry that `CLIENT_IP_PROXY_HOPS` names (#293). #296 checks the deployed header and the `run.app` bypass. |
 
 ---
 

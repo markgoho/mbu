@@ -10,6 +10,7 @@ import (
 
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/apierrtest"
+	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/ratelimit"
 	"mbu/api/internal/testdb"
@@ -85,7 +86,7 @@ func (l *limited) mustRefuse(t *testing.T, ip string, now time.Time, limit, retr
 
 func TestWrap_The51stRequestInAWindowIsRefused(t *testing.T) {
 	db := testdb.New(t)
-	l := newLimited(db.App, "test", ratelimit.IPRule(50, time.Hour))
+	l := newLimited(db.App, "test", ratelimit.IPRule(clientip.Resolver{}, 50, time.Hour))
 
 	for i := 1; i <= 50; i++ {
 		l.mustPass(t, "203.0.113.7", start.Add(time.Duration(i)*time.Second), 50, 50-i)
@@ -112,8 +113,8 @@ func TestWrap_TwoConnectionsShareOneCounter(t *testing.T) {
 		t.Cleanup(func() { _ = c.Close() })
 		return c
 	}
-	instanceA := newLimited(conn(), "test", ratelimit.IPRule(2, time.Hour))
-	instanceB := newLimited(conn(), "test", ratelimit.IPRule(2, time.Hour))
+	instanceA := newLimited(conn(), "test", ratelimit.IPRule(clientip.Resolver{}, 2, time.Hour))
+	instanceB := newLimited(conn(), "test", ratelimit.IPRule(clientip.Resolver{}, 2, time.Hour))
 
 	instanceA.mustPass(t, "203.0.113.7", start, 2, 1)
 	instanceB.mustPass(t, "203.0.113.7", start, 2, 0)
@@ -122,7 +123,7 @@ func TestWrap_TwoConnectionsShareOneCounter(t *testing.T) {
 
 func TestWrap_ANewWindowStartsTheCountAgain(t *testing.T) {
 	db := testdb.New(t)
-	l := newLimited(db.App, "test", ratelimit.IPRule(1, time.Hour))
+	l := newLimited(db.App, "test", ratelimit.IPRule(clientip.Resolver{}, 1, time.Hour))
 
 	l.mustPass(t, "203.0.113.7", start, 1, 0)
 	l.mustRefuse(t, "203.0.113.7", start.Add(time.Hour-time.Second), 1, 1)
@@ -131,8 +132,8 @@ func TestWrap_ANewWindowStartsTheCountAgain(t *testing.T) {
 
 func TestWrap_EachAddressAndEndpointHasItsOwnCount(t *testing.T) {
 	db := testdb.New(t)
-	public := newLimited(db.App, "public", ratelimit.IPRule(1, time.Hour))
-	other := newLimited(db.App, "other", ratelimit.IPRule(1, time.Hour))
+	public := newLimited(db.App, "public", ratelimit.IPRule(clientip.Resolver{}, 1, time.Hour))
+	other := newLimited(db.App, "other", ratelimit.IPRule(clientip.Resolver{}, 1, time.Hour))
 
 	public.mustPass(t, "203.0.113.7", start, 1, 0)
 	public.mustPass(t, "198.51.100.4", start, 1, 0)
@@ -150,7 +151,7 @@ func TestWrap_HeadersNameTheTightestRule(t *testing.T) {
 		Max:       2,
 		Window:    time.Minute,
 	}
-	l := newLimited(db.App, "test", ratelimit.IPRule(10, time.Hour), everyone)
+	l := newLimited(db.App, "test", ratelimit.IPRule(clientip.Resolver{}, 10, time.Hour), everyone)
 
 	l.mustPass(t, "203.0.113.7", start, 2, 1)
 	l.mustPass(t, "198.51.100.4", start, 2, 0)
@@ -163,7 +164,7 @@ func TestWrap_ADatabaseFailureIsA500(t *testing.T) {
 		t.Fatalf("open: %v", err)
 	}
 	t.Cleanup(func() { _ = down.Close() })
-	l := newLimited(down, "test", ratelimit.IPRule(1, time.Hour))
+	l := newLimited(down, "test", ratelimit.IPRule(clientip.Resolver{}, 1, time.Hour))
 
 	resp := l.get(t, "203.0.113.7", start)
 	defer resp.Body.Close()
