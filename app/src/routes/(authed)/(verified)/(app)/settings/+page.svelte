@@ -1,6 +1,7 @@
 <script lang="ts">
   import { refreshAll } from '$app/navigation';
-  import { ApiError, apiFetch } from '#lib/api.js';
+  import { apiFetch } from '#lib/api.js';
+  import { hasCode } from '#lib/apiErrorMessage.js';
   import Button from '#lib/components/atoms/Button.svelte';
   import { removeScout } from '#lib/scouts.js';
   import { deleteAccount } from '#lib/session.svelte.js';
@@ -39,10 +40,9 @@
       // Deletes the account, signs the user out, and goes to `/sign-in`.
       await deleteAccount(apiFetch);
     } catch (error) {
-      errorMessage =
-        error instanceof ApiError && error.body?.code === 'close_events_first'
-          ? 'Close your events first before deleting your account.'
-          : 'Could not delete your account. Please try again.';
+      errorMessage = hasCode(error, 'CLOSE_EVENTS_FIRST')
+        ? 'Close your events first before deleting your account.'
+        : 'Could not delete your account. Please try again.';
     } finally {
       isDeletingAccount = false;
     }

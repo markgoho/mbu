@@ -58,13 +58,17 @@ describe('public event load', () => {
   });
 
   it('gives the "not found" state when the event is missing or not published', async () => {
-    const { loadEvent } = setup({ eventError: new ApiError(404, { error: 'Not found' }) });
+    const { loadEvent } = setup({
+      eventError: new ApiError(404, { code: 'NOT_FOUND', message: 'Not found' }),
+    });
 
     await expect(load(loadEvent)).resolves.toEqual({ event: undefined, failure: 'not-found' });
   });
 
   it('gives the "failed" state for a different API error', async () => {
-    const { loadEvent } = setup({ eventError: new ApiError(500, { error: 'Internal error' }) });
+    const { loadEvent } = setup({
+      eventError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
+    });
 
     await expect(load(loadEvent)).resolves.toEqual({ event: undefined, failure: 'failed' });
   });
@@ -76,7 +80,9 @@ describe('public event load', () => {
   });
 
   it('does not send the visitor to sign-in when the API refuses the token', async () => {
-    const { loadEvent } = setup({ eventError: new ApiError(401, { error: 'Unauthorized' }) });
+    const { loadEvent } = setup({
+      eventError: new ApiError(401, { code: 'UNAUTHORIZED', message: 'Unauthorized' }),
+    });
 
     await expect(load(loadEvent)).resolves.toEqual({ event: undefined, failure: 'failed' });
   });

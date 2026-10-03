@@ -131,7 +131,7 @@ describe('settings page', () => {
 
   it('shows an error when scout deletion fails', async () => {
     const { deleteScoutButton } = await setup({
-      removeScoutError: new ApiError(500, { error: 'Internal error' }),
+      removeScoutError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
     });
 
     await deleteScoutButton.click();
@@ -167,8 +167,8 @@ describe('settings page', () => {
   it('surfaces the close-events-first message when account deletion is blocked', async () => {
     const { deleteAccountButton } = await setup({
       deleteAccountError: new ApiError(403, {
-        error: 'Close your events first',
-        code: 'close_events_first',
+        code: 'CLOSE_EVENTS_FIRST',
+        message: 'Close your events first',
       }),
     });
 
@@ -182,7 +182,7 @@ describe('settings page', () => {
 
   it('shows a general message when account deletion fails for a different reason', async () => {
     const { deleteAccountButton } = await setup({
-      deleteAccountError: new ApiError(500, { error: 'Internal error' }),
+      deleteAccountError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
     });
 
     await deleteAccountButton.click();

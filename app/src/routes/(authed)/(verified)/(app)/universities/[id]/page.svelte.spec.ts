@@ -15,6 +15,7 @@ import type {
 import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import { IdempotencyKeys } from '#lib/idempotency.js';
 import Page from './+page.svelte';
 
 const universities = vi.hoisted(() => ({
@@ -24,7 +25,15 @@ const universities = vi.hoisted(() => ({
   submitUniversity: vi.fn<(fetcher: Fetcher, id: string) => Promise<void>>(),
   closeUniversity: vi.fn<(fetcher: Fetcher, id: string) => Promise<void>>(),
   putPeriods: vi.fn<(fetcher: Fetcher, id: string, body: PeriodsPutRequest) => Promise<void>>(),
-  createClass: vi.fn<(fetcher: Fetcher, id: string, body: ClassCreateRequest) => Promise<void>>(),
+  createClass:
+    vi.fn<
+      (
+        fetcher: Fetcher,
+        id: string,
+        body: ClassCreateRequest,
+        keys: IdempotencyKeys,
+      ) => Promise<void>
+    >(),
   patchClass:
     vi.fn<
       (fetcher: Fetcher, id: string, classId: string, body: ClassPatchRequest) => Promise<void>
@@ -297,11 +306,11 @@ describe('university editor page', () => {
     );
   });
 
-  it('shows the message of the API, with the classes of the problem, when the submit fails', async () => {
+  it('shows the message of the API when the submit fails', async () => {
     const { statusBadge, submitButton } = await setup({
-      writeError: new ApiError(409, {
-        error: 'Classes have no periods',
-        details: { classes: [{ classId: 'cls1', title: 'Camping' }] },
+      writeError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'At least one class is required to submit for review',
       }),
     });
 
@@ -309,7 +318,7 @@ describe('university editor page', () => {
 
     await expect
       .element(page.getByRole('alert'))
-      .toHaveTextContent('Classes have no periods (Camping)');
+      .toHaveTextContent('At least one class is required to submit for review');
     await expect.element(statusBadge('draft')).toBeVisible();
     await expect.element(submitButton).toBeEnabled();
   });
@@ -410,7 +419,12 @@ describe('university editor page', () => {
   });
 
   it('shows the message of the API in the details form when the save fails', async () => {
-    await setup({ writeError: new ApiError(400, { error: 'Title is already in use' }) });
+    await setup({
+      writeError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'Title is already in use',
+      }),
+    });
 
     await page.getByRole('button', { name: 'Save university' }).click();
 
@@ -452,14 +466,19 @@ describe('university editor page', () => {
     await expect.element(classItems).toHaveLength(1);
     await expect.element(classItems).toHaveTextContent('Archery · cap 20 · 1 period(s)');
     await expect.element(badgeField).not.toBeInTheDocument();
-    expect(universities.createClass).toHaveBeenCalledExactlyOnceWith(expect.any(Function), 'uni1', {
-      badgeSlug: 'archery',
-      periodIds: ['p1'],
-      capacity: 20,
-      room: null,
-      notes: null,
-      counselor: { bsaId: '12345', acceptDisclaimer: true },
-    });
+    expect(universities.createClass).toHaveBeenCalledExactlyOnceWith(
+      expect.any(Function),
+      'uni1',
+      {
+        badgeSlug: 'archery',
+        periodIds: ['p1'],
+        capacity: 20,
+        room: null,
+        notes: null,
+        counselor: { bsaId: '12345', acceptDisclaimer: true },
+      },
+      expect.any(IdempotencyKeys),
+    );
   });
 
   it('changes a class', async () => {

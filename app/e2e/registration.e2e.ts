@@ -1,10 +1,10 @@
 import type { Locator, Page } from '@playwright/test';
+import type { ApiErrorBody } from '../src/lib/api-types/api-error.types.js';
 import type {
   RegistrationResponse,
   ScheduleResponse,
 } from '../src/lib/api-types/registrations-api.types.js';
 import type {
-  ApiErrorBody,
   Period,
   PublicClass,
   PublicUniversity,
@@ -186,7 +186,7 @@ function classCard(page: Page, badgeTitle: string): Locator {
 }
 
 test.describe('parent registration flow', () => {
-  test('enroll hits class_full, joins waitlist, then drops', async ({ verifiedPage: page }) => {
+  test('enroll hits CLASS_FULL, joins waitlist, then drops', async ({ verifiedPage: page }) => {
     await mockEventAndScouts(page);
     const registrations = await mockSchedule(page);
 
@@ -197,7 +197,7 @@ test.describe('parent registration flow', () => {
       if (registerAttempts === 1) {
         return route.fulfill({
           status: 409,
-          json: { error: 'This class is full.', code: 'class_full' } satisfies ApiErrorBody,
+          json: { code: 'CLASS_FULL', message: 'This class is full.' } satisfies ApiErrorBody,
         });
       }
       const waitlisted = registration({

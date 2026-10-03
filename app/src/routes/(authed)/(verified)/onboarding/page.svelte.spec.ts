@@ -98,7 +98,10 @@ describe('onboarding page', () => {
   it('shows an error and stays on the page when the save fails', async () => {
     const { termsCheckbox, submitButton } = await setup({
       displayName: 'Pat Parent',
-      saveError: new ApiError(400, { error: 'displayName is required' }),
+      saveError: new ApiError(400, {
+        code: 'INVALID_ARGUMENT',
+        message: 'displayName is required',
+      }),
     });
 
     await termsCheckbox.click();

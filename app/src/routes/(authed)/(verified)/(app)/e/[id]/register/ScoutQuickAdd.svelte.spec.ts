@@ -72,7 +72,7 @@ describe('ScoutQuickAdd', () => {
 
   it('shows a fixed message and keeps the names when the add fails', async () => {
     const { finishAdd, firstName, lastName, addButton } = await setup({
-      addError: new ApiError(500, { error: 'Internal error' }),
+      addError: new ApiError(500, { code: 'INTERNAL', message: 'Internal error' }),
     });
     await firstName.fill('Alex');
     await lastName.fill('Smith');

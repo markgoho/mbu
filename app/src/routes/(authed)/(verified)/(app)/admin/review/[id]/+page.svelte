@@ -5,6 +5,7 @@
   import Button from '#lib/components/atoms/Button.svelte';
   import Link from '#lib/components/atoms/Link.svelte';
   import Textarea from '#lib/components/atoms/Textarea.svelte';
+  import FieldError from '#lib/components/FieldError.svelte';
   import StatusBadge from '#lib/components/StatusBadge.svelte';
   import { FormAction } from '#lib/formAction.svelte.js';
   import { approveUniversity, rejectUniversity } from '#lib/universities.js';
@@ -16,7 +17,8 @@
   const queuePath = resolve('/(authed)/(verified)/(app)/admin/review');
 
   // The two decisions: approve and reject.
-  const action = new FormAction();
+  const uid = $props.id();
+  const action = new FormAction(uid);
   let isRejectFormShown = $state(false);
   let rejectNote = $state('');
   const trimmedNote = $derived(rejectNote.trim());
@@ -95,7 +97,13 @@
     {#if isRejectFormShown}
       <form class="review-detail__reject-form" novalidate onsubmit={reject}>
         <label for="rejectNote">Reason for rejection</label>
-        <Textarea id="rejectNote" bind:value={rejectNote} required />
+        <Textarea
+          id="rejectNote"
+          {...action.fieldAttributes('note')}
+          bind:value={rejectNote}
+          required
+        />
+        <FieldError {action} field="note" />
         <Button type="submit" disabled={action.pending || !trimmedNote}>Submit rejection</Button>
       </form>
     {/if}

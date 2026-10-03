@@ -16,7 +16,7 @@ export interface ScheduleProgress {
  * seat in for a *different* class? Mirrors the server's period exclusivity rule,
  * which treats both `enrolled` and `waitlisted` registrations as occupying the
  * period (a waitlist placement holds the slot). Keeping this in sync avoids
- * firing a register we know the API will reject with period_conflict.
+ * firing a register we know the API will reject with PERIOD_CONFLICT.
  */
 export function findScheduleConflict(
   candidateClassId: string,

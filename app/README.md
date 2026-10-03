@@ -49,16 +49,17 @@ The Playwright suite is a smoke suite. It stays small: the unit specs own the be
 
 The dev server sends each `/api` call to the Go API on `http://localhost:8080` (one entry in `vite.config.ts`). To start the API, the database and the Auth emulator together with the dev server, run `bun run dev:platform` in the repo root. `bun run seed:platform` fills them with seed data. The details are in `api/docs/environment.md`.
 
-The Go API has only `GET /api/health` until the route tickets of #240 (#249 to #255) land. Until then, the other calls from the dev server get a 404.
+The Go API serves all routes of the app.
 
 ## Auth and API client
 
 All code gets Firebase Auth and the API through these modules in `src/lib/`:
 
 - `firebase.ts`: `getFirebaseAuth()` is the only place that calls `initializeApp` and `getAuth`. The client uses Auth only. All Firestore access goes through the API.
-- `api.ts`: the only place that calls `fetch` for `/api/*`. `apiFetch` adds the Firebase ID token as `Authorization: Bearer`. On a 401 it signs the user out and goes to `/sign-in`. `apiFetchNoRedirect` does the same but does not navigate: use it in a `load`, and call `redirect(303, '/sign-in')` there. `expectOk`, `getJson` and `sendJson` throw an `ApiError` (`status` and the parsed `body`) for a response that is not OK.
+- `api.ts`: the only place that calls `fetch` for `/api/*`. `apiFetch` adds the Firebase ID token as `Authorization: Bearer`. On a 401 it signs the user out and goes to `/sign-in`. `apiFetchNoRedirect` does the same but does not navigate: use it in a `load`, and call `redirect(303, '/sign-in')` there. `expectOk`, `getJson`, `sendJson` and `createJson` throw an `ApiError` for a response that is not OK: `status`, and `body`, the error body `{ code, message, details? }` of the API (`api-types/api-error.types.ts`), or `undefined` when the body does not have that shape (`readApiErrorBody`).
+- `idempotency.ts`: `IdempotencyKeys`, the `Idempotency-Key` of a `POST` that creates a record (api-design.md section 3). `createJson` takes one. The API stores the answer (a 2xx or a 4xx) of a key for 48 hours, and refuses a key that comes again with a different request (`409 IDEMPOTENCY_KEY_REUSED`). Thus a key is used again only for the same path and body after a send that got no stored answer (a network failure or a 5xx). After a 2xx or a 4xx, the next send gets a new key. A page makes one `IdempotencyKeys` (a plain `const`) and gives it to each create call.
 - `fetcher.ts`: the `Fetcher` type. A domain module takes a `Fetcher` as a parameter. A route passes `apiFetch` or `apiFetchNoRedirect`.
-- `apiErrorMessage.ts`: `apiErrorMessage(error, fallback)` gives the text to show for a failed call.
+- `apiErrorMessage.ts`: the readers of an `ApiError`. `apiErrorMessage(error, fallback)` gives the text to show for a failed call: the `message` of the API, `fallback` for `INTERNAL` or no body, a text of the app for `RATE_LIMITED`, `IDEMPOTENCY_KEY_REUSED` and `FAILED_PRECONDITION`, and the badge titles of the classes in `details` for `PERIOD_CONFLICT` and the `CONFLICT` of a period that a class uses. `apiFieldErrors(error)` gives the `details` of an `INVALID_ARGUMENT` refusal: the message of each field, keyed by its JSON name (`location.city`). `hasCode(error, code)` compares the code with an `ApiErrorCode`. Compare codes with `hasCode`, never the `message`.
 - `api-types/`: the request and response types of the API.
 
 ## Session and route guards
@@ -91,7 +92,7 @@ Use the route ID with `resolve()` from `$app/paths`, for example `resolve('/(sig
 
 ## Domain modules
 
-Each API domain is one module of functions in `src/lib/`. A function is one request. It takes a `Fetcher` first, and it throws an `ApiError` for a response that is not OK. The modules keep no state, do not import from `$app/*`, and do not call `fetch`.
+Each API domain is one module of functions in `src/lib/`. A function is one request. It takes a `Fetcher` first, and it throws an `ApiError` for a response that is not OK. A function that creates a record (`createUniversity`, `createClass`, `createScout`, `registerScout`) takes an `IdempotencyKeys` last and sends the `Idempotency-Key` header with `createJson`. The modules keep no state, do not import from `$app/*`, and do not call `fetch`.
 
 | Module             | Functions                                                                                                                                                                                                                                                                               |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,7 +109,7 @@ Rules for a route that uses them:
 - A write goes in a component, with `apiFetch`. After a write, call `refreshAll()` (or `invalidate` with a `depends()` key of the `load`). Do not use `invalidateAll`: SvelteKit 3 marks the function and the `goto` option of that name as deprecated. The modules do not load data again after a write.
 - A route spec mocks the module (`vi.mock('#lib/universities.js')`). The modules have no specs of their own.
 
-`formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error`.
+`formAction.svelte.ts` has the `FormAction` class for a write that a button or a form starts. `pending` and `error` are reactive. `run({ action, fallback, confirm?, onSuccess? })` ignores a call while one is in progress, asks the `confirm` question if there is one, and puts the `apiErrorMessage` of a failure in `error` and its `apiFieldErrors` in the field messages. `fieldError(field)` gives the message of a field, and `fieldAttributes(field)` gives the `aria-invalid` and `aria-describedby` attributes for its control. Give the constructor the `$props.id()` of the component, so that the IDs of the messages are unique on the page.
 
 The other modules are pure logic with specs: `eventDatetime.ts` (`datetime-local` input values), `rosterCsv.ts` (roster CSV export), `scheduleRules.ts` (period conflicts and progress of a scout), `periodOverlap.ts` (`findOverlaps`, periods that overlap in time), `formatDate.ts` (`formatMediumDate`, date text as `Jun 1, 2026`, `formatShortTime`, time text as `9:00 AM`, and `formatMediumDateTime`, date and time text as `Jun 1, 2026, 9:00:00 AM`; each takes an optional IANA timezone, and uses the timezone of the browser when there is none), `emailAddress.ts` (`isEmailAddress`, the email rule of the forms). `disclaimer.ts` has the counselor disclaimer text, which must stay the same as `functions/src/constants/disclaimer.ts`.
 
@@ -118,6 +119,7 @@ The shared components are in `src/lib/components/`. #102 owns the visual design.
 
 - `StatusBadge.svelte`: the status of a university. `status` is a `UniversityStatus`.
 - `ConfirmDialog.svelte`: a question with a confirm action and a cancel action, in a native modal `<dialog>`. Render it always and bind `open`. Do not put it in an `{#if}` block. `onCancel` runs for the cancel button, the Escape key and a click on the backdrop.
+- `FieldError.svelte`: the message of one field from a `FormAction` (`<FieldError {action} field="location.city" />`). Put it after the control, and spread `action.fieldAttributes(field)` on the control.
 - `UniversityForm.svelte`: the fields of a university, for the create page and the editor. `initial` is the university to edit, `readonly` disables the fields, and `onSave(values)` gets the `UniversityFormValues` (the module also exports this type).
 
 The atoms are in `src/lib/components/atoms/`: `Button`, `Link`, `TextInput`, `Select`, `Textarea`, `Checkbox`. Each atom renders one native element, passes all other attributes and event handlers to it, and has no style.
@@ -152,7 +154,7 @@ Rules for a page with child components, from the chancellor routes:
 - A child component does not import a domain module and does not call the API. It takes its data as props and gives the values of a write to a callback prop that returns a promise (`onSave`, `onCreate`, `onUpdate`, `onDelete`). The page makes the request with `apiFetch` and then calls `refreshAll()`, in the same callback.
 - The child owns a `FormAction` and runs `action: () => onSave(values)`. As a result, it shows "Saving…" until the route has its new data, and it shows the message of the API when the callback rejects. The spec of the child passes a `vi.fn()` and needs no module mock.
 - Form state that starts from a prop is a writable `$derived` of a small class with `$state` fields (`let fields = $derived(new Fields(initial))`), not `$state` with an `$effect`. The fields then start again when the route loads its data again, and `bind:value={fields.title}` works. A list of rows that the user changes is the same (`rows = [...rows, new Row()]`).
-- These forms have `novalidate` and no field messages: a submit with a field that is not valid does nothing. #102 owns the field messages.
+- These forms have `novalidate`: a submit with a field that the form can check, and that is not valid, does nothing. The API checks the rest. Each control shows the message of its field from the API (`FieldError.svelte`), keyed by the JSON name of the field in the request (`periods.<row index>.endsAt` in the period board), and the form shows the `message` of the refusal above the fields. #102 owns the field messages of the client.
 - Fixture data that the page spec and the load spec of a route share is in a file next to them (`roster/rosterFixture.ts`).
 
 Rules from the parent routes:
@@ -160,7 +162,7 @@ Rules from the parent routes:
 - The `load` of a public page (`/e/[id]`) does not throw and does not redirect. It does not use `failLoad`, because that function sends a 401 to `/sign-in`. It returns the failure as a value (`{ event: undefined, failure: 'not-found' | 'failed' }`), and the page shows its own state for each value.
 - The public page does not read the session. Its link to the registration page is `/sign-in?returnTo=/e/<id>/register`: the `(signed-out)` guard sends a signed-in user to the `returnTo` path immediately.
 - A page of an event gives the timezone of the university to `formatMediumDate` and `formatShortTime`.
-- A write whose failure is not always an error message does not use `FormAction`. The registration page keeps its own state, because a `class_full` answer opens the waitlist offer.
+- A write whose failure is not always an error message does not use `FormAction`. The registration page keeps its own state, because a `CLASS_FULL` answer opens the waitlist offer.
 - A component of one route that shows a fixed message for a failed write (`ScoutQuickAdd.svelte`) also keeps its own state. It still takes a callback prop that returns a promise (`onAdd`).
 
 Rules from the super-admin routes:
