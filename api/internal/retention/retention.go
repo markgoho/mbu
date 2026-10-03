@@ -21,9 +21,9 @@ import (
 	"mbu/api/internal/ratelimit"
 )
 
-// window is how long after its effective end a University keeps the
+// retentionWindow is how long after its effective end a University keeps the
 // personal data of its Registrations.
-const window = policy.RetentionWindowDays * 24 * time.Hour
+const retentionWindow = policy.RetentionWindowDays * 24 * time.Hour
 
 // PurgeResponse is the body of a purge, as the TypeScript sent it.
 // UniversitiesProcessed counts each University past the window, also one
@@ -40,7 +40,8 @@ type PurgeResponse struct {
 // whose effective end is more than the window before now, it deletes
 // the idempotency keys older than 48 hours, and it deletes the
 // rate-limit buckets whose window has ended. It runs all three when one
-// fails, and then answers 500, so the next run tries again.
+// fails, logs the counts (0 for a step that failed), and then answers
+// 500, so the next run tries again.
 func Purge(db *sql.DB) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		ctx := r.Context()
@@ -48,12 +49,12 @@ func Purge(db *sql.DB) http.Handler {
 		resp, purgeErr := purgeRegistrations(ctx, db, now)
 		keys, keysErr := idempotency.PurgeExpired(ctx, db, now)
 		buckets, bucketsErr := ratelimit.PurgeExpired(ctx, db, now)
+		log.Printf("retention: purged %d registrations of %d universities, %d idempotency keys, %d rate-limit buckets",
+			resp.RegistrationsPurged, resp.UniversitiesProcessed, keys, buckets)
 		if err := errors.Join(purgeErr, keysErr, bucketsErr); err != nil {
 			apierr.WriteErr(w, r, err)
 			return
 		}
-		log.Printf("retention: purged %d registrations of %d universities, %d idempotency keys, %d rate-limit buckets",
-			resp.RegistrationsPurged, resp.UniversitiesProcessed, keys, buckets)
 		apierr.WriteJSON(w, http.StatusOK, resp)
 	})
 }
@@ -79,7 +80,7 @@ func purgeRegistrations(ctx context.Context, db *sql.DB, now time.Time) (PurgeRe
 		     RETURNING 1
 		 )
 		 SELECT (SELECT count(*) FROM due), (SELECT count(*) FROM purged)`,
-		now.Add(-window), now,
+		now.Add(-retentionWindow), now,
 	).Scan(&resp.UniversitiesProcessed, &resp.RegistrationsPurged)
 	if err != nil {
 		return PurgeResponse{}, fmt.Errorf("retention: purge registrations: %w", err)

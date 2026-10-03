@@ -285,16 +285,18 @@ func TestClientIPProxyHops(t *testing.T) {
 }
 
 // TestInternalGuard reads the guard from the environment: with nothing
-// set (the deployed posture for the secret, and an unconfigured service)
-// it refuses a Bearer token and the secret header, and with
-// INTERNAL_WORKER_SECRET set (the local stack) it takes that header.
+// set (an unconfigured service) it refuses a Bearer token and the secret
+// header; with INTERNAL_WORKER_SECRET set (the local stack) it takes that
+// header; with INTERNAL_OIDC_AUDIENCE and INTERNAL_OIDC_CALLERS set (the
+// deployed posture) it takes the allowlisted caller's token for that
+// audience only.
 func TestInternalGuard(t *testing.T) {
 	request := func(header, value string) *http.Request {
 		r := httptest.NewRequestWithContext(t.Context(), http.MethodPost, "/api/internal/retention/purge", http.NoBody)
 		r.Header.Set(header, value)
 		return r
 	}
-	none := internalGuard(func(string) string { return "" })
+	none := internalGuard(func(string) string { return "" }, fakeOIDC)
 	if none.Allow(request("Authorization", "Bearer anything")) || none.Allow(request("X-Internal-Secret", "")) {
 		t.Error("an unconfigured guard allowed a request")
 	}
@@ -304,11 +306,29 @@ func TestInternalGuard(t *testing.T) {
 			return "local-worker-secret"
 		}
 		return ""
-	})
+	}, fakeOIDC)
 	if !local.Allow(request("X-Internal-Secret", "local-worker-secret")) {
 		t.Error("the guard refused the configured INTERNAL_WORKER_SECRET")
 	}
 	if local.Allow(request("X-Internal-Secret", "guessed")) {
 		t.Error("the guard allowed a wrong secret")
+	}
+
+	deployed := internalGuard(func(key string) string {
+		return map[string]string{
+			"INTERNAL_OIDC_AUDIENCE": internalAudience,
+			"INTERNAL_OIDC_CALLERS":  "other@merit-badge-university.iam.gserviceaccount.com, " + schedulerCaller,
+		}[key]
+	}, fakeOIDC)
+	if !deployed.Allow(request("Authorization", "Bearer "+oidcScheduler)) {
+		t.Error("the deployed guard refused the allowlisted caller")
+	}
+	for _, token := range []string{oidcOtherAudience, oidcStranger} {
+		if deployed.Allow(request("Authorization", "Bearer "+token)) {
+			t.Errorf("the deployed guard allowed %s", token)
+		}
+	}
+	if deployed.Allow(request("X-Internal-Secret", "")) {
+		t.Error("the deployed guard allowed the secret header with no secret set")
 	}
 }

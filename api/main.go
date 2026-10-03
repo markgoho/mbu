@@ -88,8 +88,9 @@ func clientIPProxyHops(getenv func(string) string) (int, error) {
 }
 
 // internalGuard builds the guard of /api/internal/** (ADR 0005) from
-// the environment. getenv is a parameter, so a test can assert what the
-// service accepts as an internal caller.
+// the environment. getenv and validate are parameters, so a test can
+// assert what the service accepts as an internal caller; main() passes
+// internalauth.GoogleValidator.
 //
 // INTERNAL_OIDC_AUDIENCE is the Cloud Run service's own base URL, and
 // INTERNAL_OIDC_CALLERS the comma-separated service accounts whose
@@ -97,11 +98,11 @@ func clientIPProxyHops(getenv func(string) string) (int, error) {
 // mechanism and is deliberately unset on Cloud Run: unset means the
 // X-Internal-Secret header is refused. With nothing set, the guard
 // refuses every request, and the service still starts.
-func internalGuard(getenv func(string) string) *internalauth.Guard {
+func internalGuard(getenv func(string) string, validate internalauth.ValidateFunc) *internalauth.Guard {
 	return internalauth.New(internalauth.Config{
 		Audience: getenv("INTERNAL_OIDC_AUDIENCE"),
 		Callers:  strings.Split(getenv("INTERNAL_OIDC_CALLERS"), ","),
-		Validate: internalauth.GoogleValidator,
+		Validate: validate,
 		Secret:   getenv("INTERNAL_WORKER_SECRET"),
 	})
 }
@@ -141,7 +142,7 @@ func main() {
 		DB:           db,
 		ClientIP:     clientip.Resolver{ProxyHops: proxyHops},
 		Accounts:     verifier,
-		InternalAuth: internalGuard(os.Getenv),
+		InternalAuth: internalGuard(os.Getenv, internalauth.GoogleValidator),
 	}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)

@@ -32,7 +32,7 @@ Use the terms in [`../CONTEXT.md`](../CONTEXT.md). The DDL blocks below are the 
   | Registration | Has no id of its own. The document id was the `scoutId`. | composite key `(class_id, scout_id)` |
   | Role Grant | The server: `roleGrantId()`. No route sends it in JSON. | `uuid` |
 
-- **Timestamps** are `timestamptz`. Each table has `created_at timestamptz NOT NULL DEFAULT now()` and `updated_at timestamptz NOT NULL DEFAULT now()`. There is no trigger: each `UPDATE` statement sets `updated_at = now()`. A domain time (`waitlisted_at`, `enrolled_at`, `parent_consent_at`, `submitted_at`, `purged_at` and the others) comes from the clock seam (`clock.Now(ctx)`, #240 decision 9) and goes in as a parameter. `now()` is the start time of the transaction, so two rows that one transaction writes have the same `created_at`; each list that orders by `created_at` adds `id` as the tie-break.
+- **Timestamps** are `timestamptz`. Each table has `created_at timestamptz NOT NULL DEFAULT now()` and `updated_at timestamptz NOT NULL DEFAULT now()`. There is no trigger: each `UPDATE` statement sets `updated_at`, to the clock-seam time it already has as a parameter (the seat writes, the moderation moves, the Retention Purge) or else to `now()`. A domain time (`waitlisted_at`, `enrolled_at`, `parent_consent_at`, `submitted_at`, `purged_at` and the others) comes from the clock seam (`clock.Now(ctx)`, #240 decision 9) and goes in as a parameter. `now()` is the start time of the transaction, so two rows that one transaction writes have the same `created_at`; each list that orders by `created_at` adds `id` as the tie-break.
 - **String unions** are `text` with a named `CHECK` constraint, not a Postgres enum type (rule 5). doula-cloud uses `CREATE TYPE … AS ENUM`; MBU does not copy that.
 - **Constraint names** follow `<table>_<what>_check`, `<table>_<what>_fkey`, `<table>_<what>_key` and `<table>_<what>_idx`, where `<what>` is the leading column or the purpose, so that `internal/pgerr` and the schema test in #244 can name them.
 - **Foreign keys** state their delete behavior on each column. The section [Delete and purge behavior](#delete-and-purge-behavior) says which cascades the database does and which the code does.
@@ -677,7 +677,7 @@ Rule 8. "Database" means a foreign-key cascade. "Code" means work that Go must d
 
 ### The Retention Purge
 
-The purge is an `UPDATE`, never a `DELETE`. For each University whose effective end (`COALESCE(end_date, start_date)`) is more than `policy.RetentionWindowDays` (90) before `clock.Now(ctx)`. One statement (`internal/retention`) counts the Universities and purges their Registrations:
+The purge is an `UPDATE`, never a `DELETE`. For each University whose effective end (`COALESCE(end_date, start_date)`) is more than `policy.RetentionWindowDays` (90) before `clock.Now(ctx)`, it purges the Registrations. One statement (`internal/retention`) counts those Universities and purges their Registrations:
 
 ```sql
 WITH due AS (
@@ -698,7 +698,7 @@ SELECT (SELECT count(*) FROM due), (SELECT count(*) FROM purged);
 - `r.purged_at IS NULL` makes it idempotent: a second run changes nothing, and a row an earlier run purged keeps its `purged_at`. Firestore needed batches of 500; one statement replaces them.
 - `universitiesProcessed` in the response counts each University past the cutoff, also one with no row left to purge (the TypeScript counts it so); `registrationsPurged` is the row count of the `UPDATE`. The University status does not matter, as in the TypeScript.
 - The purge clears the six snapshot columns and nothing else: `parent_consent_at`, `accepted_policy_version`, `status` and the timestamps stay. The two `registrations_*purged_check` constraints refuse a partial purge.
-- The same run calls `idempotency.PurgeExpired(ctx, db, now)`, which deletes the `idempotency_keys` rows 48 hours old or older (#247), and `ratelimit.PurgeExpired(ctx, db, now)`, which deletes the `rate_limit_buckets` rows whose window started 24 hours ago or earlier. The three are separate statements; the handler runs all three when one fails, logs the counts of the last two, and answers `500` on any failure, so the next daily run tries again.
+- The same run calls `idempotency.PurgeExpired(ctx, db, now)`, which deletes the `idempotency_keys` rows 48 hours old or older (#247), and `ratelimit.PurgeExpired(ctx, db, now)`, which deletes the `rate_limit_buckets` rows whose window started 24 hours ago or earlier. The three are separate statements; the handler runs all three when one fails, logs the counts (0 for a step that failed), and answers `500` on any failure, so the next daily run tries again.
 
 ## Firestore indexes and the queries that replace them
 

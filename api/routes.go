@@ -101,19 +101,19 @@ type route struct {
 // *router, not the mux, so it cannot mount a route that skips the table
 // the guardrail test reads.
 type router struct {
-	mux         *http.ServeMux
-	requireAuth func(http.Handler) http.Handler
-	requireCall func(http.Handler) http.Handler
-	replay      func(http.Handler) http.Handler
-	table       []route
+	mux             *http.ServeMux
+	requireAuth     func(http.Handler) http.Handler
+	requireInternal func(http.Handler) http.Handler
+	replay          func(http.Handler) http.Handler
+	table           []route
 }
 
 func newRouter(d Deps) *router {
 	return &router{
-		mux:         http.NewServeMux(),
-		requireAuth: authn.Middleware(d.Verifier),
-		requireCall: d.InternalAuth.Middleware,
-		replay:      idempotency.Wrap(d.DB),
+		mux:             http.NewServeMux(),
+		requireAuth:     authn.Middleware(d.Verifier),
+		requireInternal: d.InternalAuth.Middleware,
+		replay:          idempotency.Wrap(d.DB),
 	}
 }
 
@@ -166,7 +166,7 @@ func (rt *router) mount(pattern string, class routeClass, h http.Handler, stance
 	case classAuthed:
 		h = rt.requireAuth(h)
 	case classInternal:
-		h = rt.requireCall(h)
+		h = rt.requireInternal(h)
 	}
 	rt.mux.Handle(pattern, h)
 	rt.table = append(rt.table, r)

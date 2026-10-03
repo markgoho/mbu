@@ -70,7 +70,7 @@ type Guard struct {
 func New(cfg Config) *Guard {
 	callers := make(map[string]struct{}, len(cfg.Callers))
 	for _, caller := range cfg.Callers {
-		if trimmed := strings.ToLower(strings.TrimSpace(caller)); trimmed != "" {
+		if trimmed := normalizeEmail(caller); trimmed != "" {
 			callers[trimmed] = struct{}{}
 		}
 	}
@@ -138,8 +138,14 @@ func (g *Guard) allowToken(r *http.Request) bool {
 	if err != nil {
 		return false
 	}
-	_, ok := g.callers[strings.ToLower(strings.TrimSpace(email))]
+	_, ok := g.callers[normalizeEmail(email)]
 	return ok
+}
+
+// normalizeEmail is how both the allowlist and a token's email claim are
+// compared: trimmed and lowercased.
+func normalizeEmail(email string) string {
+	return strings.ToLower(strings.TrimSpace(email))
 }
 
 // bearerToken reads the token out of an Authorization header. The scheme
