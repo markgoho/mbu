@@ -60,8 +60,10 @@ export async function startStack(options: {
   withApp: boolean;
   onUnexpectedExit: (name: string) => void;
 }) {
+  // Clears a container that a killed earlier run left behind, before the port check.
+  compose(["down", "-v"]);
   await assertPortsFree(options.withApp);
-  startDatabase();
+  compose(["up", "-d"]);
   runMigrations();
   createAppDevRole();
   await startAuthEmulator(options.onUnexpectedExit);
@@ -101,9 +103,15 @@ export function startChild(
     name,
     process: child,
     exited: new Promise(resolve => {
-      child.once("exit", () => {
+      const onEnd = () => {
         if (children.includes(entry)) options.onUnexpectedExit(name);
         resolve();
+      };
+      child.once("exit", onEnd);
+      // A spawn failure (ENOENT) emits "error" and no "exit".
+      child.once("error", error => {
+        console.error(`${name}: ${error.message}`);
+        onEnd();
       });
     }),
   };
@@ -145,12 +153,6 @@ function compose(args: string[]) {
     stdio: "inherit",
     env: { ...process.env, DB_HOST_PORT: String(DB_PORT) },
   });
-}
-
-function startDatabase() {
-  // Clears a container that a killed earlier run left behind.
-  compose(["down", "-v"]);
-  compose(["up", "-d"]);
 }
 
 /** api/cmd/migrate waits up to 30 s for Postgres to accept connections. */

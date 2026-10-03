@@ -62,6 +62,8 @@ type statement struct {
 // dataset as firestore/seed.ts, moved to dates after now: the event day
 // is 60 days after now, and the Registration Window is open until 10
 // days before it, so the published University takes Registrations.
+// The times come from the host clock: the margins are days, much larger
+// than any skew between the host and the database clock.
 func fixtures(now time.Time) []statement {
 	day := now.UTC().Truncate(24*time.Hour).AddDate(0, 0, 60)
 	at := func(hour, minute int) time.Time {
@@ -89,7 +91,7 @@ func fixtures(now time.Time) []statement {
 
 	scout := func(id, firstName, ageBand string) statement {
 		return statement{`INSERT INTO scouts (id, parent_uid, first_name, last_name, unit, age_band)
-			VALUES ($1, 'alice', $2, 'P', 'Troop 123', $3)`, []any{id, firstName, ageBand}}
+			VALUES ($1, $2, $3, 'P', 'Troop 123', $4)`, []any{id, uidAlice, firstName, ageBand}}
 	}
 	s = append(s, scout(scoutAmy, "Amy", "12-13"), scout(scoutBen, "Ben", "14-15"))
 
@@ -100,8 +102,8 @@ func fixtures(now time.Time) []statement {
 			registration_closes_at, location_name, location_address, location_city, location_state,
 			location_zip, created_by_uid, submitted_at, submitted_by_uid, published_at)
 			VALUES ($1, $2, $3, 'America/New_York', $4, $5, 'HS', '1 Main', 'Town', 'VA', '22000',
-			'jane', $6, CASE WHEN $6::timestamptz IS NULL THEN NULL ELSE 'jane' END, $7)`,
-			[]any{id, title, status, at(13, 0), closes, submittedAt, publishedAt}}
+			$8, $6, CASE WHEN $6::timestamptz IS NULL THEN NULL ELSE $8 END, $7)`,
+			[]any{id, title, status, at(13, 0), closes, submittedAt, publishedAt, uidJane}}
 	}
 	s = append(s,
 		uni(uniSpring, "Spring MBU", "published", nil, now),
@@ -151,8 +153,8 @@ func fixtures(now time.Time) []statement {
 
 	s = append(s,
 		statement{`INSERT INTO role_grants (role, university_id, uid, status)
-			VALUES ('chancellor', $1, 'jane', 'active'), ('chancellor', $1, 'bob', 'active')`,
-			[]any{uniSpring}},
+			VALUES ('chancellor', $1, $2, 'active'), ('chancellor', $1, $3, 'active')`,
+			[]any{uniSpring, uidJane, uidBob}},
 		statement{`INSERT INTO role_grants (role, university_id, class_id, invited_email, status)
 			VALUES ('counselor', $1, $2, 'newcoach@example.com', 'invited')`,
 			[]any{uniSpring, classCitizenship}},
