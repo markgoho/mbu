@@ -135,6 +135,30 @@ func WriteInternal(w http.ResponseWriter, r *http.Request, err error) {
 	Write(w, http.StatusInternalServerError, CodeInternal, MsgInternalError, nil)
 }
 
+// RefusalError is a refusal a handler returns from deeper code (an authz
+// assertion, a missing row) instead of writing it there. WriteErr writes
+// it with its own status and code.
+type RefusalError struct {
+	Status  int
+	Code    Code
+	Message string
+}
+
+// Error returns the message.
+func (e *RefusalError) Error() string {
+	return e.Message
+}
+
+// WriteErr answers err: a *RefusalError anywhere in its chain with its
+// own status and code, anything else as WriteInternal.
+func WriteErr(w http.ResponseWriter, r *http.Request, err error) {
+	if refusal, ok := errors.AsType[*RefusalError](err); ok {
+		Write(w, refusal.Status, refusal.Code, refusal.Error(), nil)
+		return
+	}
+	WriteInternal(w, r, err)
+}
+
 // Recover is the panic-safe 500 path. A handler that panics is answered
 // like WriteInternal: the panic value and the stack go to the log, and
 // the caller gets CodeInternal with no detail. http.ErrAbortHandler is

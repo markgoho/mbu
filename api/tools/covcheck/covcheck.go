@@ -36,8 +36,15 @@ type Violation struct {
 // parseProfile reads a Go cover profile (as produced by
 // `go test -coverprofile`) and returns its blocks. The leading "mode: ..."
 // line is skipped.
+//
+// With -coverpkg=./... each package's test binary reports every block of
+// the module, so the profile holds one line for a block per binary. A
+// block is covered when any binary ran it: parseProfile keeps one Block
+// for each position (file, columns and statement count) with the largest
+// count, in the order the position first comes.
 func parseProfile(r io.Reader) ([]Block, error) {
 	var blocks []Block
+	index := map[string]int{}
 	scanner := bufio.NewScanner(r)
 	for scanner.Scan() {
 		line := scanner.Text()
@@ -49,6 +56,13 @@ func parseProfile(r io.Reader) ([]Block, error) {
 		if err != nil {
 			return nil, err
 		}
+		// The line without its count names the block's position.
+		position := line[:strings.LastIndexByte(line, ' ')]
+		if i, seen := index[position]; seen {
+			blocks[i].Count = max(blocks[i].Count, block.Count)
+			continue
+		}
+		index[position] = len(blocks)
 		blocks = append(blocks, block)
 	}
 	if err := scanner.Err(); err != nil {

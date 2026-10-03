@@ -34,6 +34,11 @@ type Deps struct {
 	// main() sets ProxyHops from CLIENT_IP_PROXY_HOPS; the zero value
 	// trusts only Cloud Run's front end, the right value for tests.
 	ClientIP clientip.Resolver
+
+	// Accounts changes Firebase Auth accounts: account deletion deletes
+	// the caller's (#249). main() passes the FirebaseVerifier; tests pass
+	// *authntest.Accounts.
+	Accounts authn.AccountManager
 }
 
 // routeClass is how a route is reached, which decides what guards it.
