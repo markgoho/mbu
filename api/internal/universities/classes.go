@@ -116,9 +116,10 @@ func PatchClass(db *sql.DB) http.Handler {
 			apierr.WriteErr(w, r, err)
 			return
 		}
-		// #108 writes the "class changed" mail to the outbox here, in
-		// patchClass's transaction, once a Class can change after its
-		// University opens.
+		// No mail: a Class changes only while its University is draft or
+		// rejected, before any Parent can register (the TypeScript
+		// notifier was a no-op). Schedule mail is #108, with its own
+		// outbox kind.
 		apierr.WriteJSON(w, http.StatusOK, c.response())
 	})
 }
@@ -173,9 +174,9 @@ func DeleteClass(db *sql.DB) http.Handler {
 			apierr.WriteErr(w, r, err)
 			return
 		}
-		// #108 writes the "class cancelled" mail to the outbox here, in
-		// deleteClass's transaction, once a Class can go after its
-		// University opens.
+		// No mail: a Class goes only while its University is draft or
+		// rejected (docs/data-model.md, "Class delete"). Schedule mail is
+		// #108, with its own outbox kind.
 		w.WriteHeader(http.StatusNoContent)
 	})
 }

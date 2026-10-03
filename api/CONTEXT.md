@@ -103,5 +103,5 @@ The scheduled job that nulls the personal fields of Registrations 90 days after 
 _Avoid_: Cleanup, deletion, GDPR job
 
 **Email Log**:
-The Youth-Protection audit trail of each transactional mail attempt for a University. It stores the Scout id, not the Scout's name or the mail body.
+The Youth-Protection audit trail of each transactional mail attempt for a University. It stores the Scout id, not the Scout's name or the mail body. In `api/` it is the mail outbox row (`registration_mail_outbox`): the row that a seat change writes and the drain sends is also the record of the attempt.
 _Avoid_: Mail history, sent mail

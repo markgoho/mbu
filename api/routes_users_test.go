@@ -13,6 +13,7 @@ import (
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/apierrtest"
 	"mbu/api/internal/authntest"
+	"mbu/api/internal/mail"
 	"mbu/api/internal/testdb"
 )
 
@@ -47,17 +48,25 @@ type usersFixture struct {
 	h        http.Handler
 	// now is what the request clock reads; a test may move it.
 	now time.Time
+	// mail is the drain's Sender; nothing reaches Mailgun.
+	mail *mail.FakeSender
 }
 
 func newUsersFixture(t *testing.T) *usersFixture {
 	t.Helper()
-	f := &usersFixture{t: t, db: testdb.New(t), accounts: &authntest.Accounts{}, now: testNow}
+	f := &usersFixture{t: t, db: testdb.New(t), accounts: &authntest.Accounts{}, now: testNow, mail: &mail.FakeSender{}}
+	f.useSender(f.mail)
+	return f
+}
+
+// useSender rebuilds the routes with s as the drain's Sender.
+func (f *usersFixture) useSender(s mail.Sender) {
 	d := testDeps()
 	d.DB = f.db.App
 	d.Accounts = f.accounts
 	d.Now = func() time.Time { return f.now }
+	d.Mail = s
 	f.h = routes(d)
-	return f
 }
 
 // send sends one request with a JSON body ("" sends none).

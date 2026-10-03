@@ -63,7 +63,9 @@ func Purge(db *sql.DB) http.Handler {
 // not yet purged to NULL and stamps purged_at, for each University whose
 // effective end (end_date, else start_date) is before now minus the
 // window. The row stays, with its status, timestamps and the consent
-// record (parent_consent_at, accepted_policy_version). It is one
+// record (parent_consent_at, accepted_policy_version). The same
+// statement clears the Parent's address (to_email) of the University's
+// mail outbox rows, which stay as the Youth-Protection audit record. It is one
 // statement; docs/data-model.md says why it is outside the lock order.
 func purgeRegistrations(ctx context.Context, db *sql.DB, now time.Time) (PurgeResponse, error) {
 	var resp PurgeResponse
@@ -78,6 +80,9 @@ func purgeRegistrations(ctx context.Context, db *sql.DB, now time.Time) (PurgeRe
 		     FROM classes c
 		     WHERE c.id = r.class_id AND c.university_id IN (SELECT id FROM due) AND r.purged_at IS NULL
 		     RETURNING 1
+		 ), mail AS (
+		     UPDATE registration_mail_outbox SET to_email = NULL
+		     WHERE university_id IN (SELECT id FROM due) AND to_email IS NOT NULL
 		 )
 		 SELECT (SELECT count(*) FROM due), (SELECT count(*) FROM purged)`,
 		now.Add(-retentionWindow), now,

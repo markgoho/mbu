@@ -86,8 +86,7 @@ func deleteAccountData(ctx context.Context, db *sql.DB, uid string, now time.Tim
 		return errCloseEventsFirst
 	}
 
-	// #257 writes the "promoted" mail for each Promotion here.
-	if _, err := seats.CancelActiveOfScouts(ctx, tx, now, scoutIDs); err != nil {
+	if err := seats.CancelActiveOfScouts(ctx, tx, now, scoutIDs); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
 		return err //nolint:wrapcheck // seats wraps it with its own context
 	}

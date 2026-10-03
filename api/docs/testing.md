@@ -103,7 +103,7 @@ The host and the database run on different clocks when the container engine runs
 
 So a fixture that inserts a due time (for example, an outbox row's `next_attempt_at`) from a host-side `time.Now()`, and a query that claims it with `WHERE next_attempt_at <= now()`, can fail at random. If the VM clock is behind the host clock, the row is not due yet, the worker claims nothing, and the test sees the row as it was inserted. That looks like a worker bug, not a clock bug. In doula-cloud, eight outbox tests failed this way.
 
-Compute a due time in SQL from the database clock, never on the host. Give the fixture an offset (`0` for "due now", `-time.Minute` for "overdue", `time.Hour` for "not due yet") and write the timestamp as `now() + $n * interval '1 microsecond'`, so one clock decides. If a fixture must pass a host-side `time.Time`, give it a margin much larger than any clock skew, and say in a comment that the margin absorbs the skew.
+The mail outbox of `api/` avoids this by design: it writes `next_attempt_at` and claims due rows with the clock seam, not `now()` (`data-model.md`, "`emailLog` and the mail outbox"), so an outbox fixture writes its due time from the fixture clock (`f.now`). For any other table whose claim compares with the database `now()`, compute a due time in SQL from the database clock, never on the host. Give the fixture an offset (`0` for "due now", `-time.Minute` for "overdue", `time.Hour` for "not due yet") and write the timestamp as `now() + $n * interval '1 microsecond'`, so one clock decides. If a fixture must pass a host-side `time.Time`, give it a margin much larger than any clock skew, and say in a comment that the margin absorbs the skew.
 
 ## Migrations via goose
 

@@ -21,6 +21,7 @@ import (
 // answers the public internet (mbu-api allows allUsers) behind the guard
 // alone, so a new one costs a line here.
 var declaredInternalRoutes = []string{
+	"POST /api/internal/outboxes/drain",
 	"POST /api/internal/retention/purge",
 }
 
