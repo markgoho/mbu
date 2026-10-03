@@ -1,30 +1,33 @@
 name: Check Go API
 
 # Runs on each pull request that changes api/, the badge list the API's
-# Badge Catalog is generated from, or this file, and on each push of such a
-# change to trunk, so that trunk shows the result of the merged code too
-# (#245, #248).
+# Badge Catalog is generated from, or a file of the deploy pipeline
+# (#245, #248, #260). Keep these paths the same as the push paths of
+# api-deploy-merge.yml: a change that deploys must be checked on its PR.
+#
+# On trunk, the deploy workflow (api-deploy-merge.yml, #260) calls this file
+# as its first job, so a trunk push runs these checks once, before the
+# migration and the deploy. That is why there is no `push` trigger here.
 on:
   pull_request:
     paths:
       - "api/**"
       - "scripts/merit-badges.ts"
       - "scripts/generate-api-badge-catalog.ts"
+      - "scripts/migrate.sh"
       - ".github/workflows/api-pull-request.yml"
-  push:
-    branches:
-      - trunk
-    paths:
-      - "api/**"
-      - "scripts/merit-badges.ts"
-      - "scripts/generate-api-badge-catalog.ts"
-      - ".github/workflows/api-pull-request.yml"
+      - ".github/workflows/api-deploy-merge.yml"
+  workflow_call: {}
 
 # A new push to the same pull request cancels the run still in flight for
-# it. A trunk push never cancels a run, so each trunk commit keeps its
-# result.
+# it. A trunk run (called from the deploy workflow) never cancels a run.
+#
+# The group has a literal prefix, not ${{ github.workflow }}: in a called
+# workflow, github.workflow is the name of the CALLER. With the caller's
+# own group expression the two groups would be the same string, and GitHub
+# cancels both runs as a deadlock.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: api-checks-${{ github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:

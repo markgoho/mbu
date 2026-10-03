@@ -3,6 +3,8 @@ name: Check GCP deploy identity
 # Manual check that GitHub Actions can authenticate as mbu-deploy@ through
 # Workload Identity and read the `api` Artifact Registry repository (#258).
 # Run it from trunk after the Terraform apply in api/docs/infrastructure.md.
+# From another branch the exchange is refused: the binding of mbu-deploy@
+# accepts refs/heads/trunk only (#260).
 # The deploy pipeline (#260) uses the same provider and service account.
 on:
   workflow_dispatch: {}

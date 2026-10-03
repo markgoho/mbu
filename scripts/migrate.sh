@@ -6,13 +6,15 @@
 # Required env vars:
 #   INSTANCE_CONNECTION_NAME  Cloud SQL instance, <project>:us-east4:<instance>
 #   DB_USER                   Postgres login to migrate as: the migration
-#                             owner (`postgres`), never an app_runtime login
+#                             owner (`migrate_login`), never an app_runtime
+#                             login
 #   DB_PASS                   Password for DB_USER
 #   DB_NAME                   Database to migrate
 #
-# The Cloud SQL instance comes in #259 and the deploy step that calls this
-# script in #260. Until then, internal/testdb applies the same migrations
-# on every `go test` run, and `go run ./cmd/migrate` applies them to a
+# The `migrate` job of .github/workflows/api-deploy-merge.yml (#260) reads
+# these from the secret mbu-pg-migrate-dsn and calls this script before the
+# deploy job. api/docs/infrastructure.md, "How a deploy works", has the
+# rest. Locally, `go run ./cmd/migrate` applies the same migrations to a
 # local Postgres.
 set -euo pipefail
 

@@ -48,14 +48,14 @@ Each line is a decision.
 | `terraform-plan@merit-badge-university.iam.gserviceaccount.com`  | The drift check (#262)                                 | `roles/viewer`, `roles/iam.securityReviewer`, `roles/iam.workloadIdentityPoolViewer` (project), `roles/storage.objectUser` on the state bucket. Nothing that can change a GCP resource. The one exception: `objectUser` lets it write the state objects, which the GCS backend needs for its lock. Bucket versioning keeps the earlier state.                                   |
 | `internal-caller@merit-badge-university.iam.gserviceaccount.com` | Cloud Scheduler at `/api/internal/**` (#261, ADR 0005) | None. The guard checks the token's `email` claim against `INTERNAL_OIDC_CALLERS`. Cloud Scheduler's service agent mints the token.                                                                                                                                                                                                                                              |
 
-`mbu-deploy@` and `terraform-plan@` each have `roles/iam.workloadIdentityUser` for the principal set `attribute.repository/markgoho/mbu` of the pool. No JSON key exists for any of the four. A workflow authenticates with `google-github-actions/auth` and these inputs:
+`terraform-plan@` has `roles/iam.workloadIdentityUser` for the principal set `attribute.repository/markgoho/mbu` of the pool (any ref: the drift check runs on pull requests). `mbu-deploy@` has it for `attribute.ref/refs/heads/trunk` only (#260), so only a trunk run can migrate or deploy; the provider's `attribute_condition` limits both to this repository. No JSON key exists for any of the four. A workflow authenticates with `google-github-actions/auth` and these inputs:
 
 ```yaml
 workload_identity_provider: projects/643912800060/locations/global/workloadIdentityPools/github-actions/providers/github
 service_account: mbu-deploy@merit-badge-university.iam.gserviceaccount.com
 ```
 
-The job needs `permissions: id-token: write`. `.github/workflows/gcp-auth-check.yml` is a manual check of this path.
+The job needs `permissions: id-token: write`. `.github/workflows/gcp-auth-check.yml` is a manual check of this path. Run it on trunk: from another branch the token exchange for `mbu-deploy@` is refused.
 
 Images: `us-east4-docker.pkg.dev/merit-badge-university/api/<image>:<tag>`.
 
@@ -115,6 +115,25 @@ Instance `mbu-pg` (`cloud_sql.tf`): Postgres 16, `db-f1-micro` (Enterprise editi
 - Its base URL is `https://mbu-api-643912800060.us-east4.run.app` (`local.api_base_url`). Terraform cannot read the URL of a service before the service exists, so the local holds the deterministic form, and a `postcondition` on the service fails the apply if Cloud Run gives another URL. `INTERNAL_OIDC_AUDIENCE` and the `oidc_token.audience` of each Scheduler job (#261) use this local.
 - `allUsers` has `roles/run.invoker`: the Firebase Hosting rewrite sends anonymous requests. The process does the authentication (Firebase ID tokens; the OIDC caller guard on `/api/internal/**`, ADR 0005).
 - **Terraform owns the shape, the deploy pipeline owns the image.** The first apply uses the public placeholder `us-docker.pkg.dev/cloudrun/container/hello`. `ignore_changes` covers the image, the `commit-sha` revision label, `client` and `client_version`. The deploy (#260) must change only the image and that label, and pass `--service-account mbu-api-runtime@merit-badge-university.iam.gserviceaccount.com`. A deploy that sets an environment variable or a secret makes `plan` non-empty: change the environment in `cloud_run.tf`.
+
+## How a deploy works
+
+`.github/workflows/api-deploy-merge.yml` (#260). A push to trunk that changes `api/`, `scripts/migrate.sh`, the badge list (`scripts/merit-badges.ts`, `scripts/generate-api-badge-catalog.ts`) or one of the two API workflow files starts it. A pull request that changes the same paths runs the checks. Its jobs run in this order, and a job that fails stops each job after it:
+
+1. **`checks`** calls `.github/workflows/api-pull-request.yml`: the same gofmt, vet, lint, tests, coverage, Badge Catalog and image boot checks as a pull request. That file has no `push` trigger of its own, so a trunk push runs the checks once.
+2. **`migrate`** authenticates as `mbu-deploy@`, reads `mbu-pg-migrate-dsn`, installs the Cloud SQL Auth Proxy and runs `scripts/migrate.sh` as `migrate_login`. The script starts the proxy on `127.0.0.1:5432` and runs `go tool goose ... up`.
+3. **`deploy`** builds `api/Dockerfile`, pushes `us-east4-docker.pkg.dev/merit-badge-university/api/mbu-api:<commit sha>` and deploys it to `mbu-api` with `google-github-actions/deploy-cloudrun`. It changes only the image and the revision label `commit-sha`, and passes `--service-account mbu-api-runtime@...`. It sets no environment variable and no secret: Terraform owns them ([The Cloud Run service](#the-cloud-run-service)). `skip_default_labels` is on, because the action's default `managed-by` label is not in `ignore_changes`.
+4. **`smoke`** sends `GET <run.app URL>/api/health` and expects `200` with `"status":"ok"` (the placeholder image answers `200` on each path, but not that body).
+
+The workflow never cancels a run: a migration must not stop half way. GitHub keeps one run in progress and one queued, and a newer push replaces the queued run. The next run that starts migrates to HEAD and deploys HEAD, so it covers the skipped commit.
+
+**The switch.** On a push, `migrate` (and so `deploy` and `smoke`) runs only when the repository variable `API_DEPLOY_ENABLED` is `true`. Without it, a push runs `checks` only and the run is green. A manual run (`workflow_dispatch`) on trunk runs every job without the variable. The runbook below turns the switch on after the first deploy. To stop deploys for a time, delete the variable or set it to `false`.
+
+**When `migrate` fails**, nothing is deployed: the running revision keeps serving. goose runs each migration in its own transaction, so the failed migration left no change, and the migrations before it in the same run are applied. Read the job log for the failed statement. Fix it with a new commit to trunk (a new migration, or a change to the failed one, which is not applied yet). Do not change a migration that is already applied: goose does not run it again. Then let the next push, or a manual run, deploy.
+
+**Why a migration must pass the row-safety guardrail before trunk.** A pull request tests each migration on an empty Postgres. Cloud SQL has rows. A statement that only existing rows can refuse (for example `ADD COLUMN ... NOT NULL` with no default) is green on the pull request and fails in `migrate`, so nothing deploys until someone fixes it on trunk. The guardrail (`api/db/migrations/embed.go`, [`testing.md`](testing.md), "Row safety") refuses such a statement on the pull request unless a safety note says why the rows cannot break it.
+
+**When `deploy` or `smoke` fails** after `migrate` passed, the schema is new and the revision is old. A migration must therefore work with the revision that runs before it (add first, remove in a later deploy). If `smoke` fails, Cloud Run already sends traffic to the new revision. Fix the problem with a new commit on trunk. To go back to the previous revision before the fix, run `gcloud run services update-traffic mbu-api --to-revisions <previous revision>=100 --region us-east4 --project merit-badge-university`. A pinned revision keeps all traffic, also after the next deploy, and `terraform plan` shows the traffic as changed: after the fix deploys, run the same command with `--to-latest` in place of `--to-revisions ...`.
 
 ## Runbook: the first apply
 
@@ -253,5 +272,33 @@ The apply has two stages. A Cloud Run revision whose `DATABASE_URL` secret has n
     ```
 
     The run authenticates as `mbu-deploy@` and lists the `api` repository (empty until #260 pushes an image).
+
+15. The first deploy (#260). Start the deploy workflow by hand on trunk. It runs `checks`, `migrate` (no pending migration after step 7), `deploy` and `smoke`:
+
+    ```sh
+    gh workflow run api-deploy-merge.yml --ref trunk
+    sleep 10
+    gh run list --workflow api-deploy-merge.yml --event workflow_dispatch --limit 1   # confirm it is the run you started
+    gh run watch "$(gh run list --workflow api-deploy-merge.yml --event workflow_dispatch --limit 1 --json databaseId --jq '.[0].databaseId')" --exit-status
+    curl -sS https://mbu-api-643912800060.us-east4.run.app/api/health   # expect: {"status":"ok"}
+    ```
+
+16. Check that the deploy left the plan empty:
+
+    ```sh
+    cd terraform
+    terraform plan   # expect: No changes. Your infrastructure matches the configuration.
+    cd ..
+    ```
+
+    If the plan wants to change a field of `google_cloud_run_v2_service.api`, the deploy wrote a field that `ignore_changes` in `cloud_run.tf` does not cover. Add that field to `ignore_changes` in a PR, say in the PR which field moved, and do not apply the plan that puts it back.
+
+17. Turn on deploys on each trunk push:
+
+    ```sh
+    gh variable set API_DEPLOY_ENABLED --body true --repo markgoho/mbu
+    ```
+
+    From now on each trunk push that changes `api/` migrates and deploys. See [How a deploy works](#how-a-deploy-works).
 
 To change a password later: make a new one, change the login (`ALTER ROLE app_runtime_login PASSWORD '...'` as `migrate_login`, or `gcloud sql users set-password migrate_login`), add a new secret version with the new DSN, and deploy a new revision (it reads `latest` when it starts).
