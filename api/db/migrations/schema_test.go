@@ -376,7 +376,7 @@ func TestDeleteBehavior(t *testing.T) {
 			delete: `DELETE FROM scouts WHERE id = '` + scoutID + `'`,
 			left: map[string]int{
 				all("registrations"):            0,
-				all("registration_mail_outbox"): 0,
+				all("registration_mail_outbox"): 1, // no foreign key: the Scout delete removes it in code
 				all("classes"):                  2,
 				all("users"):                    3,
 			},
@@ -388,7 +388,7 @@ func TestDeleteBehavior(t *testing.T) {
 				all("scouts"):                   0,
 				all("registrations"):            0,
 				all("idempotency_keys"):         0,
-				all("registration_mail_outbox"): 0,
+				all("registration_mail_outbox"): 1, // no foreign key: the account delete removes it in code
 			},
 		},
 		{

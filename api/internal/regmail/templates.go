@@ -9,10 +9,10 @@ import (
 	"mbu/api/internal/mail"
 )
 
-// copyOf is the subject, text and HTML of each Kind, ported from
+// mailCopy is the subject, text and HTML of each Kind, ported from
 // functions/src/shared-api/services/email/templates. Each mail goes to
 // the Parent and names the Badge, never the Scout.
-var copyOf = map[Kind]struct{ subject, text, html string }{
+var mailCopy = map[Kind]struct{ subject, text, html string }{
 	KindRegistered: {
 		subject: `You're enrolled: {{.BadgeTitle}}`,
 		text:    `Your scout is enrolled in the {{.BadgeTitle}} merit badge class. See you there!`,
@@ -30,17 +30,17 @@ var copyOf = map[Kind]struct{ subject, text, html string }{
 	},
 }
 
-// rendered holds the parsed templates of each Kind. A template that does
+// parsed holds the parsed templates of each Kind. A template that does
 // not parse stops startup.
-type rendered struct {
+type parsed struct {
 	subject, text *texttemplate.Template
 	html          *htmltemplate.Template
 }
 
-var templates = func() map[Kind]rendered {
-	out := make(map[Kind]rendered, len(copyOf))
-	for kind, c := range copyOf {
-		out[kind] = rendered{
+var templates = func() map[Kind]parsed {
+	out := make(map[Kind]parsed, len(mailCopy))
+	for kind, c := range mailCopy {
+		out[kind] = parsed{
 			subject: texttemplate.Must(texttemplate.New(string(kind) + "-subject").Parse(c.subject)),
 			text:    texttemplate.Must(texttemplate.New(string(kind) + "-text").Parse(c.text)),
 			html:    htmltemplate.Must(htmltemplate.New(string(kind) + "-html").Parse(c.html)),

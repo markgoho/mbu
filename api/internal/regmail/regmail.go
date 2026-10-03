@@ -42,21 +42,37 @@ const ErrorMissingEmail = "missing_email"
 // Name names this outbox in the drain's log and 500 body.
 const Name = "registration-mail"
 
-// MaxBatch bounds how many rows one drain sends, so a backlog cannot
-// keep one Scheduler call past its deadline. Each send has its own
-// 10-second timeout.
-const MaxBatch = 50
+// The statuses of a row.
+const (
+	statusPending = "pending"
+	statusSent    = "sent"
+	statusFailed  = "failed"
+)
+
+// MaxBatch bounds how many rows one drain call sends.
+const MaxBatch = 100
+
+// claimBudget bounds how long one drain call keeps claiming rows. A row
+// claimed before it ends still gets its send (at most 10 seconds), so one
+// call stays under about a minute even when Mailgun hangs; the next
+// Scheduler call takes the rest.
+const claimBudget = 45 * time.Second
 
 // Enqueue writes one pending mail of kind about the Scout's Registration
 // in the Class, in tx, due at now. The Parent is the Scout's, read in the
 // same statement; delivery reads the Parent's address at send time.
 func Enqueue(ctx context.Context, tx *sql.Tx, now time.Time, kind Kind, universityID, classID, scoutID string) error {
-	if _, err := tx.ExecContext(ctx, `INSERT INTO registration_mail_outbox
+	res, err := tx.ExecContext(ctx, `INSERT INTO registration_mail_outbox
 		    (kind, to_parent_uid, scout_id, class_id, university_id, next_attempt_at, created_at)
 		SELECT $1, parent_uid, id, $3, $4, $5, $5 FROM scouts WHERE id = $2`,
-		string(kind), scoutID, classID, universityID, now); err != nil {
+		string(kind), scoutID, classID, universityID, now)
+	if err != nil {
 		// coverage:ignore reason: a database failure inside the caller's transaction, not reachable from a test
 		return fmt.Errorf("regmail: enqueue %s: %w", kind, err)
+	}
+	if n, err := res.RowsAffected(); err != nil || n != 1 {
+		// coverage:ignore reason: each caller holds the Scout row, so the Scout exists
+		return fmt.Errorf("regmail: enqueue %s: no Scout %s (rows %d): %w", kind, scoutID, n, err)
 	}
 	return nil
 }
@@ -71,13 +87,20 @@ func (w Worker) Registration() outbox.Registration {
 	return outbox.Registration{Name: Name, Worker: w}
 }
 
-// Process sends up to MaxBatch due rows, each in its own transaction:
+// Process sends up to MaxBatch due rows, and claims none after
+// claimBudget, each in its own transaction:
 // claim one row FOR UPDATE SKIP LOCKED, send it, record the result,
 // commit. Two drains at once never claim the same row, and a drain cut
 // off mid-batch can send at most one mail twice. A failed send is
 // recorded on the row and is not an error of Process.
 func (w Worker) Process(ctx context.Context, db *sql.DB) error {
+	budget, cancel := context.WithTimeout(ctx, claimBudget)
+	defer cancel()
 	for range MaxBatch {
+		if budget.Err() != nil {
+			// coverage:ignore reason: the 45-second claim budget, which a test does not wait for
+			return ctx.Err() //nolint:wrapcheck // nil unless the request itself ended
+		}
 		more, err := w.sendOne(ctx, db)
 		if err != nil || !more {
 			return err
@@ -165,14 +188,15 @@ func (w Worker) deliver(ctx context.Context, row claimed) result {
 // is permanent or no attempt is left.
 func mark(ctx context.Context, tx *sql.Tx, row claimed, res result, now time.Time) error {
 	attempts := row.attempts + 1
-	status, next, sentAt := "pending", sql.NullTime{}, sql.NullTime{}
-	switch retryAt, deadLetter := outbox.Retry(attempts, now); {
-	case res.errorID == "":
-		status, sentAt = "sent", sql.NullTime{Time: now, Valid: true}
-	case res.permanent || deadLetter:
-		status = "failed"
-	default:
-		next = sql.NullTime{Time: retryAt, Valid: true}
+	status, next, sentAt := statusSent, sql.NullTime{}, sql.NullTime{Time: now, Valid: true}
+	if res.errorID != "" {
+		sentAt = sql.NullTime{}
+		retryAt, deadLetter := outbox.Retry(attempts, now)
+		if res.permanent || deadLetter {
+			status = statusFailed
+		} else {
+			status, next = statusPending, sql.NullTime{Time: retryAt, Valid: true}
+		}
 	}
 	if _, err := tx.ExecContext(ctx, `UPDATE registration_mail_outbox
 		SET status = $2, attempts = $3, next_attempt_at = COALESCE($4, next_attempt_at), sent_at = $5,

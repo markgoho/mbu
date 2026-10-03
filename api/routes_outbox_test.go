@@ -566,3 +566,57 @@ func TestDrain_SendsAtMostOneBatchPerCall(t *testing.T) {
 		t.Fatalf("after the second drain sent %d, want %d", got, regmail.MaxBatch+1)
 	}
 }
+
+// TestCancel_APromotionDoesNotWaitForTheLockOfThePromotedScout: a Scout
+// delete or account delete holds its Scouts FOR UPDATE and then waits for
+// the Class. A promotion holds the Class, so its outbox write must not
+// take a lock on the promoted Scout (or its Parent), or the two
+// deadlock. Here another transaction holds the waiting Scout FOR UPDATE
+// while the cancel runs.
+func TestCancel_APromotionDoesNotWaitForTheLockOfThePromotedScout(t *testing.T) {
+	f := seatFixture(t)
+	f.registration(classOne, scoutAmy, statusEnrolled, testNow.Add(-3*time.Hour))
+	f.registration(classOne, scoutOther, statusWaitlisted, testNow.Add(-2*time.Hour))
+	tx, err := f.db.Admin.BeginTx(t.Context(), nil)
+	if err != nil {
+		t.Fatalf("begin: %v", err)
+	}
+	defer func() { _ = tx.Rollback() }()
+	if _, err := tx.ExecContext(t.Context(), `SELECT 1 FROM scouts WHERE id = $1 FOR UPDATE`, scoutOther); err != nil {
+		t.Fatalf("lock scout: %v", err)
+	}
+	if _, err := tx.ExecContext(t.Context(), `SELECT 1 FROM users WHERE uid = $1 FOR UPDATE`, uidOther); err != nil {
+		t.Fatalf("lock user: %v", err)
+	}
+
+	done := make(chan int, 1)
+	go func() {
+		resp := f.send(http.MethodDelete, pathCancel(classOne, scoutAmy), tokenParent, "")
+		_ = resp.Body.Close()
+		done <- resp.StatusCode
+	}()
+	select {
+	case status := <-done:
+		if status != http.StatusNoContent {
+			t.Fatalf("status = %d, want 204", status)
+		}
+	case <-time.After(5 * time.Second):
+		_ = tx.Rollback()
+		<-done
+		t.Fatal("the cancel waited for the lock of the promoted Scout")
+	}
+}
+
+// TestDeleteScout_ErasesTheMailOfTheScout: the outbox rows of the Scout
+// go with it (in code: there is no foreign key); another Scout's stay.
+func TestDeleteScout_ErasesTheMailOfTheScout(t *testing.T) {
+	f := seatFixture(t)
+	f.pendingMail("registered", scoutAmy)
+	f.pendingMail("registered", scoutBen)
+
+	resp := f.send(http.MethodDelete, pathScouts+"/"+scoutAmy, tokenParent, "")
+	defer resp.Body.Close()
+	wantStatus(t, resp, http.StatusNoContent)
+
+	wantPending(t, f.oneMail(), "registered", uidParent, scoutBen)
+}

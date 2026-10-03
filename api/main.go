@@ -116,6 +116,7 @@ func internalGuard(getenv func(string) string, validate internalauth.ValidateFun
 func mailSender(getenv func(string) string, logf func(string, ...any)) mail.Sender {
 	key := strings.TrimSpace(getenv("MAILGUN_API_KEY"))
 	if key == "" {
+		logf("mail: MAILGUN_API_KEY is not set: the drain logs each mail and sends none")
 		return &mail.FakeSender{Logf: logf}
 	}
 	return mail.NewMailgunSender(key, strings.TrimSpace(getenv("MAILGUN_DOMAIN")),

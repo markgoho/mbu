@@ -7,16 +7,21 @@
 -- Youth-Protection audit record that emailLog was: it holds ids, the
 -- subject and the address the mail went to, never a name or a body.
 --
--- Each foreign key cascades, so an erasure (Scout or account delete) and
--- a University or Class delete are never blocked and leave no row behind.
+-- The Class foreign key cascades, so a University or Class delete leaves
+-- no row. to_parent_uid and scout_id have no foreign key on purpose: a
+-- promotion writes its row while it holds the Class lock, and a foreign
+-- key check would take a KEY SHARE lock on the promoted Scout and its
+-- Parent after it, against the lock order (Scout, then Class) of a
+-- Scout or account delete: a deadlock. The Scout delete and the account
+-- delete remove the rows in code (docs/data-model.md, "Foreign keys").
 -- Go writes created_at and next_attempt_at from the clock seam: the claim
 -- compares next_attempt_at with the same clock, so no DEFAULT now().
 CREATE TABLE registration_mail_outbox (
     id                 uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     kind               text NOT NULL
         CONSTRAINT registration_mail_outbox_kind_check CHECK (kind IN ('registered', 'waitlisted', 'promoted')),
-    to_parent_uid      text NOT NULL REFERENCES users (uid) ON DELETE CASCADE,
-    scout_id           uuid NOT NULL REFERENCES scouts (id) ON DELETE CASCADE,
+    to_parent_uid      text NOT NULL,
+    scout_id           uuid NOT NULL,
     class_id           uuid NOT NULL,
     university_id      text NOT NULL,
     -- pending: due at next_attempt_at. sent: delivered. failed: the
@@ -42,7 +47,8 @@ CREATE TABLE registration_mail_outbox (
 -- The drain's claim: the due pending rows, oldest first.
 CREATE INDEX registration_mail_outbox_due_idx ON registration_mail_outbox (next_attempt_at, id)
     WHERE status = 'pending';
--- The cascades from users, scouts and classes, and the purge by University.
+-- The deletes by Parent and by Scout, the cascade from classes, and the
+-- purge by University.
 CREATE INDEX registration_mail_outbox_to_parent_uid_idx ON registration_mail_outbox (to_parent_uid);
 CREATE INDEX registration_mail_outbox_scout_id_idx ON registration_mail_outbox (scout_id);
 CREATE INDEX registration_mail_outbox_class_idx ON registration_mail_outbox (university_id, class_id);

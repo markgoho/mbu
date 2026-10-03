@@ -662,8 +662,7 @@ Rule 8. "Database" means a foreign-key cascade. "Code" means work that Go must d
 | `registrations.class_id` | `classes.id` | `CASCADE` | See "Class delete" below. |
 | `registrations.scout_id` | `scouts.id` | `CASCADE` | Erasure. See "Scout delete" below. |
 | `idempotency_keys.uid` | `users.uid` | `CASCADE` | Erasure: a stored response can hold the account's personal data. |
-| `registration_mail_outbox.to_parent_uid` | `users.uid` | `CASCADE` | Erasure: the row holds the Parent's address once sent. |
-| `registration_mail_outbox.scout_id` | `scouts.id` | `CASCADE` | Erasure, as for `registrations`: the audit record of a Scout lives as long as its Registrations. A pending mail of an erased Scout is not sent. |
+| `registration_mail_outbox.to_parent_uid`, `scout_id` | — | no foreign key | A promotion writes its row while it holds the Class lock. A foreign key check would then take a `KEY SHARE` lock on the promoted Scout and its Parent, against the lock order (Scout, then Class) of a Scout or account delete that waits for the same Class: a deadlock. So erasure is in code: the Scout delete deletes the rows of the Scout, the account delete the rows of the Parent, in their transactions. The audit record of a Scout lives as long as its Registrations. |
 | `registration_mail_outbox (university_id, class_id)` | `classes (university_id, id)` | `CASCADE` | The mail goes with its Class and University, as the Registrations do. |
 | `universities.created_by_uid`, `*_by_uid` | — | no foreign key | An audit record outlives the account. The review queue `LEFT JOIN`s `users` and shows `''` for a deleted account, as the TypeScript does. |
 
@@ -735,7 +734,7 @@ Queries that used Firestore's automatic indexes, and the other indexes in the ta
 | Cascade from `classes` to `role_grants` | `role_grants_class_id_idx` |
 | Cascade from `scouts` to `registrations` | `registrations_scout_id_idx` |
 | The drain's claim of the due outbox rows (#257) | `registration_mail_outbox_due_idx (next_attempt_at, id) WHERE status = 'pending'` |
-| Cascade from `users`, `scouts`, `classes` to `registration_mail_outbox`, and the purge of `to_email` by University | `registration_mail_outbox_to_parent_uid_idx`, `registration_mail_outbox_scout_id_idx`, `registration_mail_outbox_class_idx (university_id, class_id)` |
+| The outbox deletes by Parent and by Scout (account and Scout delete), the cascade from `classes`, and the purge of `to_email` by University | `registration_mail_outbox_to_parent_uid_idx`, `registration_mail_outbox_scout_id_idx`, `registration_mail_outbox_class_idx (university_id, class_id)` |
 
 The TypeScript sorted the Roster by name in memory (`localeCompare`). #255 sorts it in SQL (`rosterRowsSelect` in `internal/registrations/roster.go`): the enrolled Scouts by `COALESCE(scout_last_name, '')`, then `COALESCE(scout_first_name, '')`, each `COLLATE "und-x-icu"`, then `scout_id`. The ICU root collation orders names as `localeCompare` does (case and accents do not put "de la Cruz" or "Évora" after "Zimmer", as byte order would); the database's default collation is not used, so the order does not depend on how the instance was created. A purged name sorts as `''`, first, as the TypeScript's `?? ""` did. The waitlisted Scouts are in Waitlist order `(waitlisted_at, scout_id)`. Postgres 16 on Cloud SQL and the `postgres:16-alpine` test image both have the ICU collations.
 
@@ -747,8 +746,8 @@ The TypeScript sorted the Roster by name in memory (`localeCompare`). #255 sorts
 CREATE TABLE registration_mail_outbox (
     id                 uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     kind               text NOT NULL CHECK (kind IN ('registered', 'waitlisted', 'promoted')),
-    to_parent_uid      text NOT NULL REFERENCES users (uid) ON DELETE CASCADE,
-    scout_id           uuid NOT NULL REFERENCES scouts (id) ON DELETE CASCADE,
+    to_parent_uid      text NOT NULL,  -- no foreign key: see "Foreign keys"
+    scout_id           uuid NOT NULL,  -- no foreign key: see "Foreign keys"
     class_id           uuid NOT NULL,
     university_id      text NOT NULL,
     status             text NOT NULL DEFAULT 'pending' CHECK (status IN ('pending', 'sent', 'failed')),
@@ -766,10 +765,12 @@ CREATE TABLE registration_mail_outbox (
 ```
 
 - **Write.** `regmail.Enqueue` inserts the row in the transaction of the seat change: Register (`registered` or `waitlisted`), and `seats.CancelAndPromote` (`promoted`), which the cancel, the Scout delete and the account delete call. `to_parent_uid` is the Scout's `parent_uid`, read in the same statement. A refused or rolled-back request leaves no row. An already active Registration (the register no-op) writes none, as the TypeScript sent none.
-- **Send.** `POST /api/internal/outboxes/drain` runs `regmail.Worker`. It takes one row at a time in its own transaction: `FOR UPDATE OF o SKIP LOCKED LIMIT 1` on the due pending rows, oldest first; then it reads the Parent's current `users.email` (never a snapshot) and the Class's `badge_title`, renders the template, sends, records the result, and commits. Two drains never take the same row, and a drain cut off mid-batch can send at most one mail twice. One call sends at most `regmail.MaxBatch` (50) rows.
-- **Status.** `pending` is due at `next_attempt_at`. `sent` has `sent_at` and the Mailgun message id. `failed` is the dead-letter state and is never tried again. A failed send keeps the row `pending`, counts the attempt, records `error_id`, and moves `next_attempt_at` by 5 minutes, 30 minutes, 2 hours, then 6 hours (`outbox.Retry`); the fifth failure is `failed`. A Parent with no address (`missing_email`) and a Mailgun 400 (`mailgun_invalid_recipient`) are `failed` at once. A 401, 403 or 404 (`mailgun_auth_failed`, `mailgun_domain_not_configured`) is tried again, so the backlog goes out once the secret or the domain is fixed.
+- **Send.** `POST /api/internal/outboxes/drain` runs `regmail.Worker`. It takes one row at a time in its own transaction: `FOR UPDATE OF o SKIP LOCKED LIMIT 1` on the due pending rows, oldest first; then it reads the Parent's current `users.email` (never a snapshot) and the Class's `badge_title`, renders the template, sends, records the result, and commits. Two drains never take the same row, and a drain cut off mid-batch can send at most one mail twice. One call sends at most `regmail.MaxBatch` (100) rows and claims no row after 45 seconds.
+- **Status.** `pending` is due at `next_attempt_at`. `sent` has `sent_at` and the Mailgun message id. `failed` is the dead-letter state and is never tried again. A failed send keeps the row `pending`, counts the attempt, records `error_id`, and moves `next_attempt_at` by 5 minutes, 30 minutes, 2 hours, then 6 hours (`outbox.Retry`); the fifth failure is `failed`. A Parent with no address (`missing_email`) and a Mailgun 400 (`mailgun_invalid_recipient`) are `failed` at once. Each other error is tried again: a 401, 403 or 404 (`mailgun_auth_failed`, `mailgun_domain_not_configured`), so the backlog goes out once the secret or the domain is fixed, and a 429, a 5xx or a network failure (`mailgun_rate_limited`, `mailgun_network_error`, `mailgun_unknown`). The TypeScript did not retry an unknown error, but it had no second attempt at all; the bounded retry makes a retry cheap.
+- **Duration.** Each send has a 10-second HTTP timeout, and the row lock stays open for the send. One drain call claims no new row after 45 seconds, so it ends in under about a minute even when Mailgun hangs; the next Scheduler call takes the rest. A cut-off call sends at most one mail twice.
+- **Tracking.** The Mailgun form sets `o:tracking`, `o:tracking-clicks` and `o:tracking-opens` to `no`: a mail to a Parent about a Scout has no tracking pixel and no rewritten link (as doula-cloud ADR-0030). The TypeScript did not set them.
 - **Clock.** `created_at`, `next_attempt_at`, `sent_at` and the claim's "due" all come from the clock seam (`clock.Now`), not the database `now()`. One clock decides, so the host/VM clock skew of [`testing.md`](testing.md) cannot make a row look not yet due, and a test moves the fixture clock to step through the retry waits.
-- **Erasure.** Each foreign key cascades (see [Foreign keys](#foreign-keys)): a Scout or account delete removes the rows of that Scout or Parent, a University or Class delete removes the rows of its Classes. In an account delete, a promotion of the account's own Scout writes a row that the `DELETE` then removes.
+- **Erasure.** A Scout or account delete removes the rows of that Scout or Parent in code (no foreign key, for the lock order: see [Foreign keys](#foreign-keys)); a University or Class delete removes the rows of its Classes by the cascade. In an account delete, a promotion of the account's own Scout writes a row that the same transaction then removes.
 - **Retention.** The Retention Purge sets `to_email` to `NULL` on the rows of each University it purges. The rest of the row stays as the audit record.
 
 So that each Firestore field has a place, this is where each `EmailLogDocument` field went:

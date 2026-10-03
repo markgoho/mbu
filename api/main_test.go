@@ -356,7 +356,7 @@ func TestMailSender(t *testing.T) {
 	if id, err := fake.Send(t.Context(), mail.Message{To: "p@example.com", Subject: "Hi"}); err != nil || id != "fake-1" {
 		t.Fatalf("fake send = %q, %v", id, err)
 	}
-	if len(logged) != 1 || logged[0] != `mail: fake send fake-1 to=p@example.com subject="Hi"` {
+	if len(logged) != 2 || logged[1] != `mail: fake send fake-1 to=p@example.com subject="Hi"` {
 		t.Fatalf("logged = %q", logged)
 	}
 
