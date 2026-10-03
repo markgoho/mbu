@@ -7,6 +7,7 @@ The Go service `mbu-api` on Cloud Run with Postgres. It replaces the Elysia APIs
 - `docs/adr/` — the decisions (0001 to 0006). To work against one, record a new ADR first.
 - `docs/api-design.md` — the rules for each endpoint: DTOs, `Idempotency-Key`, pagination, rate limits, the error body.
 - `docs/testing.md` — what a test is, lint, coverage, toolchain versions, the test database, migrations.
+- `docs/data-model.md` — the Postgres schema: tables, constraints, indexes, the seat-transaction lock order, delete and purge behavior.
 - `CONTEXT.md` — the domain glossary. Use its terms in code, tests, issues and PRs.
 
 The parent issue #240 holds the plan and the ticket list. The `routes/*.test.ts` files in `functions/src/*-api/` are the behavior specification for the port. Copy a doula-cloud package from `~/github/doula-cloud/api` when it fits, and change its tenancy from Practice and Staff to user uid and University.
