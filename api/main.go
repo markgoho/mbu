@@ -50,10 +50,19 @@ func firebaseProjectID(getenv func(string) string) (string, error) {
 // service never serves a route that would fail on its first query.
 var errNoDatabaseURL = errors.New("DATABASE_URL is not set")
 
+// maxOpenConns is the pool size of one instance. db-f1-micro allows 25
+// connections, 3 of them kept for superusers. During a deploy the old
+// and new revisions both run, each with at most 2 instances (Cloud Run
+// max_instance_count, terraform/cloud_run.tf): 2 x 2 x 4 = 16, which
+// leaves room for the migration and a psql session.
+// api/docs/infrastructure.md has the numbers.
+const maxOpenConns = 4
+
 // openDB opens the Postgres pool from DATABASE_URL with the pgx driver.
 // The URL logs in as a member of app_runtime (ADR 0002). A malformed URL
 // stops startup; the pool does not connect yet, so a database that is
-// down fails the first query, not startup.
+// down fails the first query, not startup. The pool holds at most
+// maxOpenConns connections.
 func openDB(getenv func(string) string) (*sql.DB, error) {
 	dsn := strings.TrimSpace(getenv("DATABASE_URL"))
 	if dsn == "" {
@@ -63,7 +72,10 @@ func openDB(getenv func(string) string) (*sql.DB, error) {
 	if err != nil {
 		return nil, fmt.Errorf("parse DATABASE_URL: %w", err)
 	}
-	return stdlib.OpenDB(*cfg), nil
+	db := stdlib.OpenDB(*cfg)
+	db.SetMaxOpenConns(maxOpenConns)
+	db.SetMaxIdleConns(maxOpenConns)
+	return db, nil
 }
 
 // errBadProxyHops stops startup when CLIENT_IP_PROXY_HOPS is set to
