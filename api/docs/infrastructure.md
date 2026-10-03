@@ -8,18 +8,18 @@ The Terraform for the `merit-badge-university` GCP project is in `terraform/` at
 
 A difference between `terraform/` and the live project makes `plan` non-empty. #262 makes that a red required check.
 
-| Resource                                                                                                                            | File                   | Why it is owned                                                                                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| The APIs the stack uses (Cloud Run, Cloud SQL Admin, Secret Manager, Artifact Registry, Cloud Scheduler, IAM, IAM Credentials, STS) | `services.tf`          | A missing API is a deploy that fails with an unclear error. Each has `disable_on_destroy = false`, because Firebase shares some of them.                                                   |
-| Artifact Registry repository `api` (Docker, `us-east4`)                                                                             | `registry.tf`          | The repository, not the images in it. CI pushes the images (#260).                                                                                                                         |
-| The four service accounts and their grants (see [Identities](#identities))                                                          | `iam.tf`               | The set of things each identity can do must stay small and written down. A grant added by hand is a red `plan`.                                                                            |
-| The custom role `mbuApiFirebaseAuthUsers`                                                                                           | `iam.tf`               | Firebase Auth has no resource-level IAM. `roles/firebaseauth.admin` would let the container change the sign-in configuration.                                                              |
-| The Workload Identity pool `github-actions` and provider `github`                                                                   | `workload_identity.tf` | The provider's attribute condition, `assertion.repository == 'markgoho/mbu'`, is the one string that stops another repository from getting credentials in this project.                    |
-| `terraform-plan@`'s `roles/storage.objectUser` on the state bucket                                                                  | `iam.tf`               | The bucket is not owned, but this grant is: a member resource cannot delete the bucket, and the drift check can then see the grant go missing.                                             |
-| Cloud SQL instance `mbu-pg` and database `mbu`                                                                                      | `cloud_sql.tf`         | The instance settings (tier, backups, SSL mode) are decisions. Three protections: `deletion_protection`, `settings.deletion_protection_enabled`, `prevent_destroy`.                        |
-| The secret shells `mbu-pg-app-runtime-dsn`, `mbu-pg-migrate-dsn` and their accessor grants                                          | `secrets.tf`           | A secret that its reader cannot access fails at container start or in the deploy job. Each grant is one identity on one secret. `deletion_protection` and `prevent_destroy` on each shell. |
-| The Cloud Run service `mbu-api` (not its image) and its `allUsers` `roles/run.invoker` grant                                        | `cloud_run.tf`         | The environment, the identity, the Cloud SQL mount, scaling and the probe are the shape. The deploy pipeline sets only the image (#260). `deletion_protection` and `prevent_destroy`.      |
-| The Cloud Scheduler jobs                                                                                                            | #261                   |                                                                                                                                                                                            |
+| Resource                                                                                                                            | File                     | Why it is owned                                                                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The APIs the stack uses (Cloud Run, Cloud SQL Admin, Secret Manager, Artifact Registry, Cloud Scheduler, IAM, IAM Credentials, STS) | `services.tf`            | A missing API is a deploy that fails with an unclear error. Each has `disable_on_destroy = false`, because Firebase shares some of them.                                                                                     |
+| Artifact Registry repository `api` (Docker, `us-east4`)                                                                             | `registry.tf`            | The repository, not the images in it. CI pushes the images (#260).                                                                                                                                                           |
+| The four service accounts and their grants (see [Identities](#identities))                                                          | `iam.tf`                 | The set of things each identity can do must stay small and written down. A grant added by hand is a red `plan`.                                                                                                              |
+| The custom role `mbuApiFirebaseAuthUsers`                                                                                           | `iam.tf`                 | Firebase Auth has no resource-level IAM. `roles/firebaseauth.admin` would let the container change the sign-in configuration.                                                                                                |
+| The Workload Identity pool `github-actions` and provider `github`                                                                   | `workload_identity.tf`   | The provider's attribute condition, `assertion.repository == 'markgoho/mbu'`, is the one string that stops another repository from getting credentials in this project.                                                      |
+| `terraform-plan@`'s `roles/storage.objectUser` on the state bucket                                                                  | `iam.tf`                 | The bucket is not owned, but this grant is: a member resource cannot delete the bucket, and the drift check can then see the grant go missing.                                                                               |
+| Cloud SQL instance `mbu-pg` and database `mbu`                                                                                      | `cloud_sql.tf`           | The instance settings (tier, backups, SSL mode) are decisions. Three protections: `deletion_protection`, `settings.deletion_protection_enabled`, `prevent_destroy`.                                                          |
+| The secret shells `mbu-pg-app-runtime-dsn`, `mbu-pg-migrate-dsn` and their accessor grants                                          | `secrets.tf`             | A secret that its reader cannot access fails at container start or in the deploy job. Each grant is one identity on one secret. `deletion_protection` and `prevent_destroy` on each shell.                                   |
+| The Cloud Run service `mbu-api` (not its image) and its `allUsers` `roles/run.invoker` grant                                        | `cloud_run.tf`           | The environment, the identity, the Cloud SQL mount, scaling and the probe are the shape. The deploy pipeline sets only the image (#260). `deletion_protection` and `prevent_destroy`.                                        |
+| The Cloud Scheduler jobs `process-outbox-drain` and `retention-purge`, and the Scheduler agent's grant on `internal-caller@`        | `scheduler.tf`, `iam.tf` | A missing or wrong job is silent: no mail goes out and no purge runs. The target URL, the audience and the schedule are the shape. No `prevent_destroy`: a job holds no data. See [The Scheduler jobs](#the-scheduler-jobs). |
 
 Project IAM is always `google_project_iam_member`, one principal-role pair for each resource. `google_project_iam_policy` and `google_project_iam_binding` are never used: both are authoritative and would remove the bindings that Firebase and Google's service agents hold.
 
@@ -27,17 +27,18 @@ Project IAM is always `google_project_iam_member`, one principal-role pair for e
 
 Each line is a decision.
 
-| Resource                                                 | Why it is not in Terraform                                                                                                                                                                                                                                                                                                                                                                              |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The state bucket `gs://merit-badge-university-tfstate`   | It must exist before Terraform runs. A configuration that owns its own state bucket can propose to delete it. The commands are in [State](#state).                                                                                                                                                                                                                                                      |
-| Secret values (`google_secret_manager_secret_version`)   | State is plaintext. Terraform owns the secret shells and their grants (`secrets.tf`); a person adds each value with `gcloud secrets versions add` (runbook). The Mailgun key waits for #106: until then there is no `mbu-mailgun-api-key` shell and the service uses the fake sender (#257). A placeholder key is never set: a set `MAILGUN_API_KEY` selects the real sender, and each send would fail. |
-| Cloud SQL logins and passwords                           | `google_sql_user` writes the password to state. The instance and the database are owned (`cloud_sql.tf`); the logins `migrate_login` and `app_runtime_login` are made by hand (runbook, step 6 and step 8).                                                                                                                                                                                             |
-| The `mbu-api` image                                      | The deploy pipeline sets it on each merge to trunk (#260). The Cloud Run resource ignores it (ADR 0006).                                                                                                                                                                                                                                                                                                |
-| The database schema                                      | goose migrations own it (`api/db/migrations`), run by the deploy pipeline.                                                                                                                                                                                                                                                                                                                              |
-| Firebase Hosting, Firestore, Firebase Auth configuration | `firebase.json` and `.firebaserc` are already code and deploy from CI. Firebase made the Firestore database. The sign-in providers and authorized domains are a product decision made once in the console. A second owner would make drift, not find it.                                                                                                                                                |
-| Firebase- and Google-created service accounts            | `github-action-1119245672@` (the Hosting deploy key, `FIREBASE_SERVICE_ACCOUNT_MERIT_BADGE_UNIVERSITY`), `firebase-adminsdk-fbsvc@`, the default compute account, and every `service-…@gcp-sa-*` agent. The platform makes and repairs them; Terraform would fight it. The Hosting key and its workflows stay as they are until cutover (#264).                                                         |
-| Artifact Registry `gcf-artifacts`                        | Cloud Functions made it for its own images. It goes away with `functions/` (#264).                                                                                                                                                                                                                                                                                                                      |
-| Mailgun, GitHub                                          | Outside GCP.                                                                                                                                                                                                                                                                                                                                                                                            |
+| Resource                                                                 | Why it is not in Terraform                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The state bucket `gs://merit-badge-university-tfstate`                   | It must exist before Terraform runs. A configuration that owns its own state bucket can propose to delete it. The commands are in [State](#state).                                                                                                                                                                                                                                                      |
+| Secret values (`google_secret_manager_secret_version`)                   | State is plaintext. Terraform owns the secret shells and their grants (`secrets.tf`); a person adds each value with `gcloud secrets versions add` (runbook). The Mailgun key waits for #106: until then there is no `mbu-mailgun-api-key` shell and the service uses the fake sender (#257). A placeholder key is never set: a set `MAILGUN_API_KEY` selects the real sender, and each send would fail. |
+| Cloud SQL logins and passwords                                           | `google_sql_user` writes the password to state. The instance and the database are owned (`cloud_sql.tf`); the logins `migrate_login` and `app_runtime_login` are made by hand (runbook, step 6 and step 8).                                                                                                                                                                                             |
+| The `mbu-api` image                                                      | The deploy pipeline sets it on each merge to trunk (#260). The Cloud Run resource ignores it (ADR 0006).                                                                                                                                                                                                                                                                                                |
+| The database schema                                                      | goose migrations own it (`api/db/migrations`), run by the deploy pipeline.                                                                                                                                                                                                                                                                                                                              |
+| Firebase Hosting, Firestore, Firebase Auth configuration                 | `firebase.json` and `.firebaserc` are already code and deploy from CI. Firebase made the Firestore database. The sign-in providers and authorized domains are a product decision made once in the console. A second owner would make drift, not find it.                                                                                                                                                |
+| Firebase- and Google-created service accounts                            | `github-action-1119245672@` (the Hosting deploy key, `FIREBASE_SERVICE_ACCOUNT_MERIT_BADGE_UNIVERSITY`), `firebase-adminsdk-fbsvc@`, the default compute account, and every `service-…@gcp-sa-*` agent. The platform makes and repairs them; Terraform would fight it. The Hosting key and its workflows stay as they are until cutover (#264).                                                         |
+| Artifact Registry `gcf-artifacts`                                        | Cloud Functions made it for its own images. It goes away with `functions/` (#264).                                                                                                                                                                                                                                                                                                                      |
+| The owner's `roles/iam.serviceAccountTokenCreator` on `internal-caller@` | It names the owner's email, and this repository is public. The binding lets the owner mint a token to call an internal endpoint by hand ([The Scheduler jobs](#the-scheduler-jobs)). `roles/owner` carries `actAs` but not `getOpenIdToken`. Terraform's grants on the account are `google_service_account_iam_member`, which is not authoritative, so this binding is not drift.                       |
+| Mailgun, GitHub                                                          | Outside GCP.                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Identities
 
@@ -46,7 +47,7 @@ Each line is a decision.
 | `mbu-api-runtime@merit-badge-university.iam.gserviceaccount.com` | The `mbu-api` container (#259)                         | `roles/cloudsql.client` (project; Cloud SQL has no instance IAM), `mbuApiFirebaseAuthUsers` (project): `firebaseauth.users.get`, `.update`, `.delete`. `roles/secretmanager.secretAccessor` on `mbu-pg-app-runtime-dsn` only (`secrets.tf`).                                                                                                                                    |
 | `mbu-deploy@merit-badge-university.iam.gserviceaccount.com`      | GitHub Actions deploys (#260)                          | `roles/artifactregistry.writer` on the `api` repository only, `roles/run.developer` (project; it has no `setIamPolicy`, so a deploy cannot change who may invoke the service), `roles/cloudsql.client` (project, for the migrate step), `roles/iam.serviceAccountUser` on `mbu-api-runtime@`. `roles/secretmanager.secretAccessor` on `mbu-pg-migrate-dsn` only (`secrets.tf`). |
 | `terraform-plan@merit-badge-university.iam.gserviceaccount.com`  | The drift check (#262)                                 | `roles/viewer`, `roles/iam.securityReviewer`, `roles/iam.workloadIdentityPoolViewer` (project), `roles/storage.objectUser` on the state bucket. Nothing that can change a GCP resource. The one exception: `objectUser` lets it write the state objects, which the GCS backend needs for its lock. Bucket versioning keeps the earlier state.                                   |
-| `internal-caller@merit-badge-university.iam.gserviceaccount.com` | Cloud Scheduler at `/api/internal/**` (#261, ADR 0005) | None. The guard checks the token's `email` claim against `INTERNAL_OIDC_CALLERS`. Cloud Scheduler's service agent mints the token.                                                                                                                                                                                                                                              |
+| `internal-caller@merit-badge-university.iam.gserviceaccount.com` | Cloud Scheduler at `/api/internal/**` (#261, ADR 0005) | None. The guard checks the token's `email` claim against `INTERNAL_OIDC_CALLERS`. Cloud Scheduler's service agent (`service-643912800060@gcp-sa-cloudscheduler.iam.gserviceaccount.com`) mints the token: it has `roles/iam.serviceAccountTokenCreator` on this account only (`iam.tf`). The owner's grant is by hand (see above).                                              |
 
 `terraform-plan@` has `roles/iam.workloadIdentityUser` for the principal set `attribute.repository/markgoho/mbu` of the pool (any ref: the drift check runs on pull requests). `mbu-deploy@` has it for `attribute.ref/refs/heads/trunk` only (#260), so only a trunk run can migrate or deploy; the provider's `attribute_condition` limits both to this repository. No JSON key exists for any of the four. A workflow authenticates with `google-github-actions/auth` and these inputs:
 
@@ -115,6 +116,46 @@ Instance `mbu-pg` (`cloud_sql.tf`): Postgres 16, `db-f1-micro` (Enterprise editi
 - Its base URL is `https://mbu-api-643912800060.us-east4.run.app` (`local.api_base_url`). Terraform cannot read the URL of a service before the service exists, so the local holds the deterministic form, and a `postcondition` on the service fails the apply if Cloud Run gives another URL. `INTERNAL_OIDC_AUDIENCE` and the `oidc_token.audience` of each Scheduler job (#261) use this local.
 - `allUsers` has `roles/run.invoker`: the Firebase Hosting rewrite sends anonymous requests. The process does the authentication (Firebase ID tokens; the OIDC caller guard on `/api/internal/**`, ADR 0005).
 - **Terraform owns the shape, the deploy pipeline owns the image.** The first apply uses the public placeholder `us-docker.pkg.dev/cloudrun/container/hello`. `ignore_changes` covers the image, the `commit-sha` revision label, `client` and `client_version`. The deploy (#260) must change only the image and that label, and pass `--service-account mbu-api-runtime@merit-badge-university.iam.gserviceaccount.com`. A deploy that sets an environment variable or a secret makes `plan` non-empty: change the environment in `cloud_run.tf`.
+
+## The Scheduler jobs
+
+`scheduler.tf` (#261, ADR 0005). Both jobs are in `us-east4` and use UTC. Each job sends `POST` to the `run.app` URL directly, with an OIDC token for `internal-caller@`. The Firebase Hosting rewrite still sends `/api/**` to Cloud Functions until cutover (#264).
+
+| Job                    | Schedule             | Target                                 | Attempt deadline | Retries                     |
+| ---------------------- | -------------------- | -------------------------------------- | ---------------- | --------------------------- |
+| `process-outbox-drain` | `* * * * *`          | `/api/internal/outboxes/drain` (#257)  | 120 s            | None: the next tick retries |
+| `retention-purge`      | `23 9 * * *` (09:23) | `/api/internal/retention/purge` (#256) | 180 s            | 3, from 60 s backoff        |
+
+**The audience is the base URL.** Each job sets `oidc_token.audience` to `local.api_base_url`, the same value as `INTERNAL_OIDC_AUDIENCE`. Cloud Scheduler sets an unset audience to the full target URL with the path, and the guard answers 401 to that token.
+
+**Who mints the token.** Cloud Scheduler's service agent, through `roles/iam.serviceAccountTokenCreator` on `internal-caller@` (`iam.tf`). `roles/iam.serviceAccountUser` does not carry `iam.serviceAccounts.getOpenIdToken`. The identity that creates a job must have `actAs` on `internal-caller@`: the owner has it through `roles/owner`.
+
+**Call an internal endpoint by hand.** First, once, give your own account permission to mint a token for `internal-caller@` (by hand; see [What stays by hand](#what-stays-by-hand)):
+
+```sh
+gcloud iam service-accounts add-iam-policy-binding \
+  internal-caller@merit-badge-university.iam.gserviceaccount.com \
+  --member "user:$(gcloud config get-value account)" \
+  --role roles/iam.serviceAccountTokenCreator \
+  --project merit-badge-university
+```
+
+Then mint a token and send the request:
+
+```sh
+TOKEN="$(gcloud auth print-identity-token \
+  --impersonate-service-account=internal-caller@merit-badge-university.iam.gserviceaccount.com \
+  --audiences=https://mbu-api-643912800060.us-east4.run.app \
+  --include-email)"
+curl -sS -X POST -H "Authorization: Bearer $TOKEN" \
+  https://mbu-api-643912800060.us-east4.run.app/api/internal/retention/purge
+```
+
+Both flags are necessary. Without `--audiences` the token's audience is not the base URL; without `--include-email` the token has no `email` claim. The guard answers 401 to each. A new IAM binding can take a minute or two before `print-identity-token` works.
+
+**Run a job now.** `gcloud scheduler jobs run <job> --location us-east4 --project merit-badge-university`. The commands that check the result are in the runbook, step 19.
+
+**Pause the drain.** `gcloud scheduler jobs pause process-outbox-drain --location us-east4 --project merit-badge-university` stops the mail. `terraform plan` then shows `paused` as changed: resume it, or apply, when the cause is fixed.
 
 ## How a deploy works
 
@@ -236,14 +277,24 @@ The apply has two stages. A Cloud Run revision whose `DATABASE_URL` secret has n
     unset MIGRATE_PW APP_PW MIGRATE_LOCAL APP_LOCAL PROXY_PID
     ```
 
-11. Stage 2: everything else, the `mbu-api` service included:
+11. Stage 2: everything else, the `mbu-api` service and the Scheduler jobs included. First make Cloud Scheduler's service agent, if it does not exist yet. The Scheduler grant in `iam.tf` names it, and an IAM binding for an account that does not exist fails:
+
+    ```sh
+    gcloud beta services identity create --service=cloudscheduler.googleapis.com \
+      --project merit-badge-university
+    # expect: Service identity created: service-643912800060@gcp-sa-cloudscheduler.iam.gserviceaccount.com
+    ```
+
+    Then apply:
 
     ```sh
     cd terraform
-    terraform plan -out=tfplan   # expect: 20 to add, 0 to change, 0 to destroy
+    terraform plan -out=tfplan   # expect: 23 to add, 0 to change, 0 to destroy
     terraform apply tfplan
     rm tfplan
     ```
+
+    From this apply on, the drain job calls the service each minute. Until the first deploy (step 15) it calls the placeholder, which answers `200` on each path. That is harmless.
 
     If the apply stops on an IAM grant because a new service account is not visible yet, run `terraform apply` again. The retry adds only what is missing. If it stops on the `postcondition` of `mbu-api`, Cloud Run gave the service a different URL: set `local.api_base_url` in `cloud_run.tf` to the URL in the error, open a PR, and apply again.
 
@@ -300,5 +351,36 @@ The apply has two stages. A Cloud Run revision whose `DATABASE_URL` secret has n
     ```
 
     From now on each trunk push that changes `api/` migrates and deploys. See [How a deploy works](#how-a-deploy-works).
+
+18. Check that an internal endpoint refuses a request with no token:
+
+    ```sh
+    curl -sS -X POST -o /dev/null -w '%{http_code}\n' \
+      https://mbu-api-643912800060.us-east4.run.app/api/internal/retention/purge   # expect: 401
+    ```
+
+19. Run each Scheduler job once and check the result (#261). The drain job already runs each minute; the purge job runs at 09:23 UTC.
+
+    ```sh
+    for JOB in process-outbox-drain retention-purge; do
+      gcloud scheduler jobs run "$JOB" --location us-east4 --project merit-badge-university
+    done
+    sleep 30
+    for JOB in process-outbox-drain retention-purge; do
+      gcloud scheduler jobs describe "$JOB" --location us-east4 --project merit-badge-university \
+        --format='value(name,lastAttemptTime,status)'
+    done
+    # expect: a lastAttemptTime of now and an empty status (a failed attempt shows a status code)
+    gcloud logging read \
+      'resource.type="cloud_run_revision" AND resource.labels.service_name="mbu-api" AND httpRequest.requestUrl:"/api/internal/"' \
+      --project merit-badge-university --freshness 10m --limit 10 \
+      --format='table(timestamp,httpRequest.requestMethod,httpRequest.status,httpRequest.requestUrl)'
+    # expect: POST 200 for /api/internal/outboxes/drain and /api/internal/retention/purge
+    # (the POST 401 on the purge is the no-token check of step 18)
+    ```
+
+    A 401 means the token is wrong: check that `oidc_token.audience` equals `INTERNAL_OIDC_AUDIENCE` and that `INTERNAL_OIDC_CALLERS` names `internal-caller@`. A job whose `status` shows `code=7` (`PERMISSION_DENIED`) and that has no request in the log means the agent cannot mint the token. The Scheduler log shows the error text: `gcloud logging read 'resource.type="cloud_scheduler_job"' --project merit-badge-university --freshness 10m --limit 10`: check the grant `scheduler_agent_mints_internal_caller` in `iam.tf`.
+
+20. Check that the plan is still empty (`terraform plan` in `terraform/`).
 
 To change a password later: make a new one, change the login (`ALTER ROLE app_runtime_login PASSWORD '...'` as `migrate_login`, or `gcloud sql users set-password migrate_login`), add a new secret version with the new DSN, and deploy a new revision (it reads `latest` when it starts).

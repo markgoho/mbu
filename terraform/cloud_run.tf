@@ -11,7 +11,7 @@ locals {
   # `oidc_token.audience` of each Cloud Scheduler job (#261). Set the jobs'
   # audience explicitly: Scheduler's default is the full target URL, path
   # included, which the guard refuses (ADR 0005).
-  api_base_url = "https://mbu-api-643912800060.${local.region}.run.app"
+  api_base_url = "https://mbu-api-${local.project_number}.${local.region}.run.app"
 
   # The Cloud SQL socket mount of the service. DATABASE_URL names
   # host=/cloudsql/<connection name> (api/docs/infrastructure.md).
