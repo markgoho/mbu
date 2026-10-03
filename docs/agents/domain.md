@@ -17,15 +17,17 @@ If any of these files don't exist, **proceed silently**. Don't flag their absenc
 ├── CONTEXT-MAP.md
 ├── CONTEXT.md                         ← Hugo site context
 ├── docs/adr/                          ← system-wide decisions
+├── api/
+│   ├── CONTEXT.md                     ← event-platform context (shared by app/ + api/)
+│   └── docs/adr/                      ← event-platform API decisions
 └── functions/
-    ├── CONTEXT.md                     ← event-platform context (shared by app/ + functions/); does not exist yet, see #241
-    └── docs/adr/                      ← event-platform-scoped decisions
+    └── docs/adr/                      ← older event-platform decisions (0002: the app is SvelteKit)
 ```
 
 ## Contexts
 
 - **Hugo site** — the public static site rendering merit badge requirements scraped from scouting.org. Domain doc: root `CONTEXT.md`. ADRs: root `docs/adr/`.
-- **Event platform** — the self-serve SaaS (SvelteKit SPA in `app/`, Elysia APIs in `functions/`) letting chancellors run Merit Badge Universities. One domain doc (`functions/CONTEXT.md`) covers both `app/` and `functions/` since the domain language (Chancellor, Event, Roster, etc.) is identical on both sides of that stack. That file does not exist yet; #241 creates the event-platform glossary as `api/CONTEXT.md`. ADRs: `functions/docs/adr/`.
+- **Event platform** — the self-serve SaaS (SvelteKit SPA in `app/`, Go API in `api/` that replaces the Elysia APIs in `functions/`) letting chancellors run Merit Badge Universities. One domain doc (`api/CONTEXT.md`) covers both `app/` and `api/` since the domain language (Chancellor, University, Roster, etc.) is identical on both sides of that stack. ADRs: `api/docs/adr/` for the API; `functions/docs/adr/` keeps the app decision (0002) and the superseded Elysia decision (0001).
 
 ## Use the glossary's vocabulary
 
