@@ -59,6 +59,10 @@ const (
 	// who is still the Chancellor of a University that is neither draft
 	// nor closed.
 	CodeCloseEventsFirst Code = "CLOSE_EVENTS_FIRST"
+	// CodeIdempotencyKeyReused is the 409 for an Idempotency-Key that the
+	// caller already sent with a different request. It is a client bug,
+	// not a state conflict: the app makes a new key for each new action.
+	CodeIdempotencyKeyReused Code = "IDEMPOTENCY_KEY_REUSED"
 )
 
 // ForbiddenCodes is the closed set of codes a 403 may carry

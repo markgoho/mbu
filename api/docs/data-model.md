@@ -41,7 +41,7 @@ Use the terms in [`../CONTEXT.md`](../CONTEXT.md). The DDL blocks below are the 
 
 ## Tables
 
-Nine tables. The tree of ownership is: `users` → `scouts`; `universities` → `periods`, `classes`, `role_grants`; `classes` → `class_periods`, `class_counselors`, `registrations`. `idempotency_keys` and the rate-limit table come from #247, and `registration_mail_outbox` comes from #257.
+Eleven tables. The tree of ownership is: `users` → `scouts`, `idempotency_keys`; `universities` → `periods`, `classes`, `role_grants`; `classes` → `class_periods`, `class_counselors`, `registrations`. `rate_limit_buckets` belongs to nothing. `idempotency_keys` and `rate_limit_buckets` come from #247 (they are not domain tables, see [their section](#idempotency_keys-and-rate_limit_buckets)), and `registration_mail_outbox` comes from #257.
 
 ### `users`
 
@@ -417,6 +417,33 @@ CREATE INDEX registrations_waitlist_idx ON registrations (class_id, waitlisted_a
 
 The two purge checks make the purge all-or-nothing for each row. `scout_unit` and `accommodations` can be `NULL` before the purge, so only the four values that register always fills are in `registrations_unpurged_check`.
 
+### `idempotency_keys` and `rate_limit_buckets`
+
+Source: none. These are the storage of the two seams in [`api-design.md`](api-design.md) sections 3 and 6, copied from doula-cloud (`00027`, `00060`) without row-level security. Migration `00005`.
+
+```sql
+CREATE TABLE idempotency_keys (
+    uid           text NOT NULL REFERENCES users (uid) ON DELETE CASCADE,
+    key           text NOT NULL,
+    request_hash  bytea NOT NULL,
+    status_code   integer NOT NULL,
+    response_body bytea NOT NULL,
+    created_at    timestamptz NOT NULL,
+    PRIMARY KEY (uid, key)
+);
+CREATE INDEX idempotency_keys_created_at_idx ON idempotency_keys (created_at);
+
+CREATE TABLE rate_limit_buckets (
+    key          text PRIMARY KEY,
+    window_start timestamptz NOT NULL,
+    count        integer NOT NULL
+);
+```
+
+- `idempotency_keys` holds one response for each (caller uid, `Idempotency-Key`). `request_hash` is the SHA-256 of the method, path with query, and body of the first request; a reuse of the key with another hash is a 409. A response body can hold personal data, so the `uid` foreign key cascades on account delete, and `idempotency.PurgeExpired` deletes the rows older than 48 hours. A caller with no `users` row yet gets no replay: the save fails on the foreign key, is logged, and the response still goes out.
+- `created_at` and `window_start` have no `DEFAULT now()`: Go writes them from `clock.Now(ctx)`, so the TTL, the window and `Retry-After` read one clock.
+- `rate_limit_buckets.key` is `endpoint:dimension:value` (for example `university-public:ip:203.0.113.7`). One `INSERT ... ON CONFLICT DO UPDATE` counts and resets the window, so two instances serialize on the row. No purge: a bucket is a few bytes, and the next request on it resets it. doula-cloud's `rate_limit_refusals` table is not copied; a refusal is a log line.
+
 ## Denormalized fields: join or point-in-time record
 
 Rule 3: a field that exists only because Firestore cannot join is removed, and the query joins. A field that records a fact at one time stays.
@@ -632,6 +659,7 @@ Rule 8. "Database" means a foreign-key cascade. "Code" means work that Go must d
 | `role_grants.uid` | `users.uid` | `CASCADE` | A deleted account holds no grant. |
 | `registrations.class_id` | `classes.id` | `CASCADE` | See "Class delete" below. |
 | `registrations.scout_id` | `scouts.id` | `CASCADE` | Erasure. See "Scout delete" below. |
+| `idempotency_keys.uid` | `users.uid` | `CASCADE` | Erasure: a stored response can hold the account's personal data. |
 | `universities.created_by_uid`, `*_by_uid` | — | no foreign key | An audit record outlives the account. The review queue `LEFT JOIN`s `users` and shows `''` for a deleted account, as the TypeScript does. |
 
 ### Per operation: what the code does and what the database does
@@ -639,7 +667,7 @@ Rule 8. "Database" means a foreign-key cascade. "Code" means work that Go must d
 | Operation | Code (Go) | Database (cascade) | Change from the TypeScript |
 | --- | --- | --- | --- |
 | **Scout delete** (`scouts.remove`) | Lock the Scout. For each `enrolled` or `waitlisted` Registration: cancel and promote (with the promoted mail in the outbox). Then `DELETE FROM scouts`. One transaction. | All `registrations` rows of the Scout, also the cancelled and the purged ones. | The TypeScript hard-deleted only the active Registrations and left the cancelled ones with the Scout's name and accommodations. Erasure now removes them all. A purged row of the Scout is removed too: the right to erasure comes before advancement proof (#89). |
-| **Account delete** (`users.deleteAccount`) | Refuse with 403 `CLOSE_EVENTS_FIRST` if the caller has an active `chancellor` grant on a University that is not `draft` or `closed`. Cancel and promote for each active Registration of each Scout, as for a Scout delete. Then `DELETE FROM users`. One transaction. After the commit, delete the Firebase Auth user. | `scouts` → `registrations`; `class_counselors`; `role_grants` of the account. | The TypeScript set the account's grants to `revoked`; the cascade deletes them. The effect is the same: no grant points at the deleted account. The Auth delete stays after the commit, so a failure leaves a login with no data, never data with no login (the TypeScript reason). A draft or closed University of the account stays, with `created_by_uid` and no Chancellor grant; only a Super-admin reaches it, as today. |
+| **Account delete** (`users.deleteAccount`) | Refuse with 403 `CLOSE_EVENTS_FIRST` if the caller has an active `chancellor` grant on a University that is not `draft` or `closed`. Cancel and promote for each active Registration of each Scout, as for a Scout delete. Then `DELETE FROM users`. One transaction. After the commit, delete the Firebase Auth user. | `scouts` → `registrations`; `class_counselors`; `role_grants` and `idempotency_keys` of the account. | The TypeScript set the account's grants to `revoked`; the cascade deletes them. The effect is the same: no grant points at the deleted account. The Auth delete stays after the commit, so a failure leaves a login with no data, never data with no login (the TypeScript reason). A draft or closed University of the account stays, with `created_by_uid` and no Chancellor grant; only a Super-admin reaches it, as today. |
 | **University delete** (`universities.remove`, `draft` only) | Lock the University, check `draft`, `DELETE FROM universities`. | `periods`, `classes` → (`class_periods`, `class_counselors`, `registrations`, Counselor `role_grants`), and the Chancellor `role_grants`. | The TypeScript deleted the Classes and the grants in a batch and left each Class's `registrations` subcollection behind. The cascade removes them. Registrations can exist on a `draft` University, because a Chancellor can register outside the window (a dry run). |
 | **Class delete** (`classes.remove`, `draft` or `rejected` only) | Lock the University, check the status, `DELETE FROM classes`. No promotion and no mail: the Class is gone. | `class_periods`, `class_counselors`, `registrations`, Counselor `role_grants`. | Same as above: the TypeScript left the `registrations` subcollection behind. |
 | **Period removal** (`PUT /periods`) | Lock the University. If a removed Period is in `class_periods`, answer 409 with the Classes. Else delete the rows. | Nothing cascades. The deferred `NO ACTION` foreign key is the backstop. | None. Firestore needed chunks of 10 for `array-contains-any`; one `WHERE period_id = ANY($1)` replaces them. |
@@ -666,6 +694,7 @@ WHERE r.class_id = c.id
 - `r.purged_at IS NULL` makes it idempotent: a second run changes nothing. Firestore needed batches of 500; one statement replaces them.
 - `universitiesProcessed` in the response counts each University past the cutoff, also one with no row left to purge (the TypeScript counts it so). Go counts those with a separate `SELECT count(*) FROM universities WHERE COALESCE(end_date, start_date) < $cutoff` in the same transaction. `registrationsPurged` is the row count of the `UPDATE`.
 - The purge clears the six snapshot columns and nothing else. The two `registrations_*purged_check` constraints refuse a partial purge.
+- The same run calls `idempotency.PurgeExpired(ctx, db, now)`, which deletes the `idempotency_keys` rows older than 48 hours (#247).
 
 ## Firestore indexes and the queries that replace them
 

@@ -29,11 +29,16 @@ var pathParam = regexp.MustCompile(`\{[^}]+\}`)
 // route in none of the three classes: (a) a declared public route, (b) a
 // route under /api/internal/, which #256 guards with its own check, or
 // (c) a route behind the auth middleware -- proved by calling it with no
-// token through h and getting 401 UNAUTHORIZED.
+// token through h and getting 401 UNAUTHORIZED. It also reports each
+// POST with no idempotency stance: neither replayable nor exempt with a
+// reason (#247).
 func routeTableOffenses(t *testing.T, rt *router, h http.Handler) []string {
 	t.Helper()
 	var offenses []string
 	for _, r := range rt.table {
+		if strings.HasPrefix(r.Pattern, http.MethodPost+" ") && !r.Replayable && r.Exempt == "" {
+			offenses = append(offenses, r.Pattern+": a POST with no idempotency stance -- mount it with replayable or exempt(reason)")
+		}
 		switch r.Class {
 		case classPublic:
 			if !declaredPublicRoutes[r.Pattern] {
@@ -84,8 +89,10 @@ func TestRouteTableOffenses_CatchesAViolation(t *testing.T) {
 	rt := newRouter(d)
 	ok := http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) { w.WriteHeader(http.StatusOK) })
 	rt.public("GET /api/health", ok)
-	rt.authed("POST /api/universities/{id}/classes", ok)
-	rt.internal("POST /api/internal/retention/purge", ok)
+	rt.authed("POST /api/universities/{id}/classes", ok, replayable)
+	rt.authed("POST /api/universities/{id}/submit", ok, exempt("a state-guarded transition"))
+	rt.internal("POST /api/internal/retention/purge", ok, exempt("the purge is idempotent"))
+	rt.authed("POST /api/universities", ok)
 	rt.public("GET /api/universities/{id}/roster", ok)
 	// A route mounted behind no middleware, recorded as authed: the
 	// shape a bypass of rt.authed would take.
@@ -99,6 +106,7 @@ func TestRouteTableOffenses_CatchesAViolation(t *testing.T) {
 	got := routeTableOffenses(t, rt, rt.handler(d.Now))
 
 	want := []string{
+		"POST /api/universities: a POST with no idempotency stance -- mount it with replayable or exempt(reason)",
 		"GET /api/universities/{id}/roster: public, but not a declared public route",
 		"GET /api/users/me: answered 200 with no token, want 401 UNAUTHORIZED",
 		"GET /api/internal-ish: internal, but not under /api/internal/",
@@ -116,6 +124,25 @@ func TestRouter_InternalRefusesARouteOutsideTheBoundary(t *testing.T) {
 		}
 	}()
 	newRouter(testDeps()).internal("GET /api/users/me", http.NotFoundHandler())
+}
+
+func TestRouter_RefusesABadStance(t *testing.T) {
+	ok := http.NotFoundHandler()
+	for name, mount := range map[string]func(rt *router){
+		"exempt with no reason":  func(rt *router) { rt.authed("POST /api/universities", ok, exempt(" ")) },
+		"two stances":            func(rt *router) { rt.authed("POST /api/universities", ok, replayable, exempt("why")) },
+		"replayable with no uid": func(rt *router) { rt.internal("POST /api/internal/retention/purge", ok, replayable) },
+		"replayable and public":  func(rt *router) { rt.public("POST /api/health", ok, replayable) },
+	} {
+		t.Run(name, func(t *testing.T) {
+			defer func() {
+				if recover() == nil {
+					t.Fatal("the router accepted the stance")
+				}
+			}()
+			mount(newRouter(testDeps()))
+		})
+	}
 }
 
 // muxRegistration finds a route mounted straight onto a ServeMux.

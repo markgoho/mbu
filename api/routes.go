@@ -9,6 +9,7 @@ import (
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/authn"
 	"mbu/api/internal/clock"
+	"mbu/api/internal/idempotency"
 )
 
 // Deps is everything the route table needs to build itself. A struct, not
@@ -44,10 +45,42 @@ const (
 	classAuthed routeClass = "authed"
 )
 
+// stance is a POST route's declared idempotency behavior (#247,
+// docs/api-design.md section 3). A POST is mounted with one: replayable,
+// or exempt with a reason. The guardrail test fails a POST that has
+// neither, so "nobody decided" cannot look like "decided not to".
+type stance struct {
+	// replayable mounts the handler behind idempotency.Wrap: a repeat
+	// with the same Idempotency-Key replays the first response.
+	replayable bool
+	// exempt is why the route runs without idempotency.Wrap: it is safe
+	// to repeat as is (a state-guarded transition, an upsert, a
+	// unique-key create), or it has no caller uid to scope a key by.
+	exempt string
+}
+
+// replayable is the stance of a POST that creates a record.
+var replayable = stance{replayable: true}
+
+// exempt is the stance of a POST that runs without idempotency.Wrap, for
+// reason. It panics at startup when reason is empty.
+func exempt(reason string) stance {
+	if strings.TrimSpace(reason) == "" {
+		panic("routes: exempt() needs a reason -- a POST left without idempotency.Wrap must say why")
+	}
+	return stance{exempt: reason}
+}
+
 // route is one entry of the route table.
 type route struct {
 	Pattern string
 	Class   routeClass
+	// Replayable is true when the route runs behind idempotency.Wrap.
+	Replayable bool
+	// Exempt is the declared reason a route runs without
+	// idempotency.Wrap. Empty when Replayable is true or no stance was
+	// declared.
+	Exempt string
 }
 
 // router is the only thing that holds the mux. A route file gets a
@@ -56,38 +89,61 @@ type route struct {
 type router struct {
 	mux         *http.ServeMux
 	requireAuth func(http.Handler) http.Handler
+	replay      func(http.Handler) http.Handler
 	table       []route
 }
 
 func newRouter(d Deps) *router {
-	return &router{mux: http.NewServeMux(), requireAuth: authn.Middleware(d.Verifier)}
+	return &router{
+		mux:         http.NewServeMux(),
+		requireAuth: authn.Middleware(d.Verifier),
+		replay:      idempotency.Wrap(d.DB),
+	}
 }
 
 // public mounts a route that needs no token. Only the routes the
-// guardrail test declares may use it.
-func (rt *router) public(pattern string, h http.Handler) {
-	rt.mount(pattern, classPublic, h)
+// guardrail test declares may use it. A public POST can only be exempt:
+// with no Caller there is no uid to scope a key by.
+func (rt *router) public(pattern string, h http.Handler, s ...stance) {
+	rt.mount(pattern, classPublic, h, s)
 }
 
 // internal mounts a route on the internal boundary. It panics at startup
 // for a pattern outside /api/internal/, so the class cannot be used to
-// skip authentication on an ordinary route.
-func (rt *router) internal(pattern string, h http.Handler) {
+// skip authentication on an ordinary route. An internal POST can only be
+// exempt, for the same reason as a public one.
+func (rt *router) internal(pattern string, h http.Handler, s ...stance) {
 	if !strings.HasPrefix(patternPath(pattern), "/api/internal/") {
 		panic(fmt.Sprintf("routes: internal route %q is not under /api/internal/", pattern))
 	}
-	rt.mount(pattern, classInternal, h)
+	rt.mount(pattern, classInternal, h, s)
 }
 
 // authed mounts a route behind authn.Middleware: the handler runs only
-// for a verified Caller, which it reads with authn.CallerFrom.
-func (rt *router) authed(pattern string, h http.Handler) {
-	rt.mount(pattern, classAuthed, rt.requireAuth(h))
+// for a verified Caller, which it reads with authn.CallerFrom. A
+// replayable route runs behind idempotency.Wrap inside the middleware,
+// since Wrap scopes the key by the Caller.
+func (rt *router) authed(pattern string, h http.Handler, s ...stance) {
+	if len(s) == 1 && s[0].replayable {
+		h = rt.replay(h)
+	}
+	rt.mount(pattern, classAuthed, rt.requireAuth(h), s)
 }
 
-func (rt *router) mount(pattern string, class routeClass, h http.Handler) {
+// mount registers h and records the route. It panics at startup for more
+// than one stance, or for replayable on a route with no Caller.
+func (rt *router) mount(pattern string, class routeClass, h http.Handler, stances []stance) {
+	r := route{Pattern: pattern, Class: class}
+	switch {
+	case len(stances) > 1:
+		panic(fmt.Sprintf("routes: %q declares %d idempotency stances, want at most one", pattern, len(stances)))
+	case len(stances) == 1 && stances[0].replayable && class != classAuthed:
+		panic(fmt.Sprintf("routes: %q is replayable but %s -- idempotency.Wrap needs a Caller", pattern, class))
+	case len(stances) == 1:
+		r.Replayable, r.Exempt = stances[0].replayable, stances[0].exempt
+	}
 	rt.mux.Handle(pattern, h)
-	rt.table = append(rt.table, route{Pattern: pattern, Class: class})
+	rt.table = append(rt.table, r)
 }
 
 // handler wraps the mux in the middleware every route shares: the
