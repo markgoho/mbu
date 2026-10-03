@@ -12,7 +12,7 @@ The old `functions/src/*-api/routes/*.test.ts` files are the specification. Each
 
 ## Before a change is done
 
-Run these in `api/`. CI runs the same commands (#245):
+Run these in `api/`. CI runs the same commands in `.github/workflows/api-pull-request.yml` (`go test` there adds `-race`):
 
 ```sh
 gofmt -l .            # must print nothing
@@ -24,15 +24,13 @@ go run ./tools/covcheck -profile=coverage.out -module=mbu/api -skip=mbu/api/tool
 
 ## Lint with golangci-lint, matching CI exactly
 
-CI runs `golangci-lint` (config: `api/.golangci.yml`) as its own gating step, separate from `go vet`/`go build`. A change can compile and pass `go test` and still fail CI on `golangci-lint` alone. `go vet` is not a substitute for it.
+CI runs `golangci-lint` (config: `api/.golangci.yml`) as its own gating step in `.github/workflows/api-pull-request.yml`, separate from `go vet`/`go build`. A change can compile and pass `go test` and still fail CI on `golangci-lint` alone. `go vet` is not a substitute for it.
 
 **Always set `GOLANGCI_LINT_CACHE` to a path under `--show-toplevel`, never bare `golangci-lint run`.** Without it, the results cache defaults to one location shared by every worktree on the machine (`~/Library/Caches/golangci-lint`). A session that lints after another worktree was removed can see findings in files that do not exist, or a stale "clean" result that hides a real issue. `--show-toplevel` resolves to the current worktree's own root, so the cache lives and dies with that worktree. `api/.golangci-cache` is gitignored. If you see findings in files that are not in your working tree, run `golangci-lint cache clean` with the same `GOLANGCI_LINT_CACHE`, then run the lint again.
 
 Two linters are package-wide, not per-file: `goconst` and `unparam`. A change to one file can flag lines you did not touch in another file of the same package. Fix them: if `golangci-lint run` reports it, CI reports it too.
 
 The linter also refuses a direct call to `time.Now()` (#240 decision 9). Read time through the clock seam.
-
-Built by #242 (config) and #245 (CI step).
 
 ## Coverage: 100% line coverage, with justified exceptions
 
@@ -49,18 +47,16 @@ if err := http.ListenAndServe(":"+port, nil); err != nil {
 
 `api/tools/covcheck` reads the `go test -coverprofile` output and fails on each zero-coverage line that has no `coverage:ignore` comment directly above it or in the uncovered block. `tools/covcheck` has its own tests, but `-skip` excludes it from the coverage requirement, because it is dev tooling, not application code.
 
-Copy `covcheck` from `~/github/doula-cloud/api/tools/covcheck` and change the module name to `mbu/api`. Built by #242 and #245.
+`covcheck` was copied from `~/github/doula-cloud/api/tools/covcheck` with the module name changed to `mbu/api`.
 
 ## Toolchain versions: local must match CI exactly
 
 A local run is evidence of what CI does only when both use the same Go and the same golangci-lint. In doula-cloud they drifted without notice: a newer local Go made covcheck report 279 lines that CI passed, and a newer local golangci-lint reported findings that CI did not.
 
 - **Go**: the `go` line in `api/go.mod` is the only place the version is named. CI reads it through setup-go's `go-version-file`. The `FROM golang:` tag in `api/Dockerfile` must be the same exact version. A guardrail test fails when the Go that runs `go test` is not the version in `go.mod`, or when the Dockerfile tag is different. An older local Go fixes itself (`GOTOOLCHAIN=auto` downloads the declared one); a newer one just runs, and the test catches that. To move to a newer Go, change `go.mod` and the Dockerfile in one commit. To stay on the declared Go, run with `GOTOOLCHAIN=go<version>`.
-- **golangci-lint**: the `version:` under `golangci/golangci-lint-action` in the CI workflow is the pin. Install that version locally. To move to a newer version, change the pin and fix what it reports in the same PR.
+- **golangci-lint**: the `version:` under `golangci/golangci-lint-action` in `.github/workflows/api-pull-request.yml` is the pin. Install that version locally and check it with `golangci-lint version`. A guardrail test fails when the pin is not one exact release (`latest` or a bare `v2` moves without a commit). To move to a newer version, change the pin and fix what it reports in the same PR.
 
 A new Go version often turns on new `modernize` analyzers. `golangci-lint run --fix` applies the findings that have an automatic fix.
-
-Built by #242 (`go.mod`, Dockerfile, guardrail test) and #245 (CI pin).
 
 ## Real Postgres for tests
 

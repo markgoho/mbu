@@ -1,0 +1,43 @@
+name: Lint workflows
+
+# Checks every workflow file with actionlint (and shellcheck on each `run:`
+# block) when a workflow changes (#245).
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+  push:
+    branches:
+      - trunk
+    paths:
+      - ".github/workflows/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+
+      # Retried with a 10s gap: the download script asks GitHub's API for
+      # the release asset, which sometimes answers 429 to shared runners.
+      - name: Install actionlint
+        run: |
+          for attempt in 1 2 3; do
+            if bash <(curl -fsSL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash) 1.7.12; then
+              exit 0
+            fi
+            echo "actionlint install attempt ${attempt} failed; retrying in 10s..."
+            sleep 10
+          done
+          exit 1
+
+      - name: Lint workflows
+        run: ./actionlint

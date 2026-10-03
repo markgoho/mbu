@@ -74,3 +74,31 @@ func TestToolchain_TheImageBuildsOnTheGoGoModDeclares(t *testing.T) {
 		t.Fatalf("api/Dockerfile builds on golang:%s, but api/go.mod declares go %s -- pin the image to golang:%s so the served binary is built by the Go CI tested", got, want, want)
 	}
 }
+
+// lintActionVersion matches the `version:` input of the
+// golangci/golangci-lint-action step: the first `version:` line after the
+// `uses:` line that names the action.
+var lintActionVersion = regexp.MustCompile(`(?s)uses: golangci/golangci-lint-action@\S+.*?\n\s+version: (\S+)`)
+
+// exactLintVersion is a pin that names one release, never `latest` or a
+// bare major such as `v2`.
+var exactLintVersion = regexp.MustCompile(`^v\d+\.\d+\.\d+$`)
+
+// TestToolchain_CIPinsOneGolangciLintRelease holds the golangci-lint
+// version in .github/workflows/api-pull-request.yml to one exact release.
+// That pin is the one place the version is named (docs/testing.md,
+// "Toolchain versions"); a local run is evidence of CI only when the
+// local binary is that release, and a floating pin moves without a commit.
+func TestToolchain_CIPinsOneGolangciLintRelease(t *testing.T) {
+	src, err := os.ReadFile("../.github/workflows/api-pull-request.yml")
+	if err != nil {
+		t.Fatalf("read the api CI workflow: %v", err)
+	}
+	m := lintActionVersion.FindSubmatch(src)
+	if m == nil {
+		t.Fatal(".github/workflows/api-pull-request.yml has no golangci/golangci-lint-action step with a `version:` input -- did the lint step move? docs/testing.md names this file as the pin")
+	}
+	if got := string(m[1]); !exactLintVersion.MatchString(got) {
+		t.Fatalf("golangci-lint-action pins version %q, want one exact release such as v2.14.0, so a local run uses the same linter as CI", got)
+	}
+}
