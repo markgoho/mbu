@@ -1,6 +1,6 @@
 # ADR 0001 — API module architecture (Elysia on Cloud Functions)
 
-- **Status:** Accepted
+- **Status:** Superseded by [`api/docs/adr/0001-go-on-cloud-run.md`](../../../api/docs/adr/0001-go-on-cloud-run.md) (#240). This shape still applies to `functions/` until the cutover (#264) deletes it. New API work goes in `api/`.
 - **Date:** 2026-07-05
 - **Applies to:** `functions/src/**/*-api/**`
 - **Related:** #94 (Phase 1 epic), #121 (the refactor that realigned all modules),
