@@ -24,14 +24,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.0
 
       # Retried with a 10s gap: the download script asks GitHub's API for
       # the release asset, which sometimes answers 429 to shared runners.
+      # The script is saved to a file first, so a failed download is a
+      # failed attempt and not an empty script that exits 0.
       - name: Install actionlint
         run: |
           for attempt in 1 2 3; do
-            if bash <(curl -fsSL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash) 1.7.12; then
+            if curl -fsSL -o download-actionlint.bash https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash \
+              && bash download-actionlint.bash 1.7.12; then
               exit 0
             fi
             echo "actionlint install attempt ${attempt} failed; retrying in 10s..."

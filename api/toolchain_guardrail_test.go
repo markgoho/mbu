@@ -76,9 +76,10 @@ func TestToolchain_TheImageBuildsOnTheGoGoModDeclares(t *testing.T) {
 }
 
 // lintActionVersion matches the `version:` input of the
-// golangci/golangci-lint-action step: the first `version:` line after the
-// `uses:` line that names the action.
-var lintActionVersion = regexp.MustCompile(`(?s)uses: golangci/golangci-lint-action@\S+.*?\n\s+version: (\S+)`)
+// golangci/golangci-lint-action step. The lines between `uses:` and
+// `version:` must not start a new step (`- `), so a step with no
+// `version:` cannot borrow one from a later step. Quotes are optional.
+var lintActionVersion = regexp.MustCompile(`uses: golangci/golangci-lint-action@\S+\n(?:[ \t]+[^-\s][^\n]*\n)*?[ \t]+version: ["']?([^"'\s]+)`)
 
 // exactLintVersion is a pin that names one release, never `latest` or a
 // bare major such as `v2`.
@@ -99,6 +100,6 @@ func TestToolchain_CIPinsOneGolangciLintRelease(t *testing.T) {
 		t.Fatal(".github/workflows/api-pull-request.yml has no golangci/golangci-lint-action step with a `version:` input -- did the lint step move? docs/testing.md names this file as the pin")
 	}
 	if got := string(m[1]); !exactLintVersion.MatchString(got) {
-		t.Fatalf("golangci-lint-action pins version %q, want one exact release such as v2.14.0, so a local run uses the same linter as CI", got)
+		t.Fatalf("golangci-lint-action pins version %q, want one exact release such as vX.Y.Z, so a local run uses the same linter as CI", got)
 	}
 }
