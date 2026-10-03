@@ -598,7 +598,7 @@ Notes:
 
 ### Cancel and promote (one function, shared)
 
-`DELETE /api/registrations/{universityId}/{classId}/{scoutId}`, scout deletion (#250) and account deletion (#249) call one Go function that takes a transaction (`cancelRegistrationTxn` today). It does not take the Scout lock of the cancelled Registration's Scout: a cancel only removes a possible conflict, so it cannot make one.
+`DELETE /api/registrations/{universityId}/{classId}/{scoutId}`, scout deletion (#250) and account deletion (#249) call one Go function that takes a transaction: `seats.CancelAndPromote` in `api/internal/seats` (`cancelRegistrationTxn` in the TypeScript). `seats.CancelActiveOfScouts` does the Scout and account deletion part below. It does not take the Scout lock of the cancelled Registration's Scout: a cancel only removes a possible conflict, so it cannot make one.
 
 ```sql
 -- Caller: the University row FOR SHARE (window check), then:

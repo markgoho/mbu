@@ -27,6 +27,34 @@ func TestParseProfile(t *testing.T) {
 	}
 }
 
+// TestParseProfile_MergesOneBlockFromManyTestBinaries holds the
+// -coverpkg=./... shape: each package's test binary reports every block of
+// the module, so one block comes once per binary. A block is covered when
+// any binary ran it; two blocks on the same lines with other columns stay
+// apart.
+func TestParseProfile_MergesOneBlockFromManyTestBinaries(t *testing.T) {
+	input := "mode: atomic\n" +
+		"mbu/api/internal/users/users.go:10.2,12.3 2 0\n" +
+		"mbu/api/internal/users/users.go:10.20,12.3 1 0\n" +
+		"mbu/api/internal/users/users.go:10.2,12.3 2 3\n" +
+		"mbu/api/internal/users/users.go:10.2,12.3 2 0\n" +
+		"mbu/api/internal/users/users.go:10.20,12.3 1 0\n"
+
+	blocks, err := parseProfile(strings.NewReader(input))
+	if err != nil {
+		t.Fatalf("parseProfile: %v", err)
+	}
+	if len(blocks) != 2 {
+		t.Fatalf("expected 2 blocks, got %d: %+v", len(blocks), blocks)
+	}
+	if blocks[0].NumStmt != 2 || blocks[0].Count != 3 {
+		t.Fatalf("block 0 = %+v, want the covered count 3", blocks[0])
+	}
+	if blocks[1].NumStmt != 1 || blocks[1].Count != 0 {
+		t.Fatalf("block 1 = %+v, want the uncovered block kept", blocks[1])
+	}
+}
+
 func TestParseProfile_RejectsMalformedLine(t *testing.T) {
 	_, err := parseProfile(strings.NewReader("mode: set\nnot a valid profile line\n"))
 	if err == nil {

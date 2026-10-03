@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"time"
+
+	"mbu/api/internal/policy"
 )
 
 // The fixed ids of the fixtures, so a second run replaces the same rows.
@@ -33,11 +35,10 @@ const (
 	uidBob   = "bob"
 )
 
-// The versions the TypeScript API stamps today
-// (functions/src/constants/privacy.ts and disclaimer.ts).
+// The versions the API stamps (package policy).
 const (
-	policyVersion     = "2026-07-04"
-	disclaimerVersion = "2026-07-03"
+	policyVersion     = policy.Version
+	disclaimerVersion = policy.DisclaimerVersion
 )
 
 // seedAccounts are the adults: Alice is a Parent with two Scouts, Sam

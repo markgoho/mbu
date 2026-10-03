@@ -115,7 +115,7 @@ func main() {
 	}
 
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
-	deps := Deps{Verifier: verifier, Now: clock.Real, DB: db, ClientIP: clientip.Resolver{ProxyHops: proxyHops}}
+	deps := Deps{Verifier: verifier, Now: clock.Real, DB: db, ClientIP: clientip.Resolver{ProxyHops: proxyHops}, Accounts: verifier}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go

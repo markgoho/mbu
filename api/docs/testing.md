@@ -20,7 +20,7 @@ Run these in `api/`. CI runs the same commands in `.github/workflows/api-pull-re
 gofmt -l .            # must print nothing
 go vet ./...
 GOLANGCI_LINT_CACHE="$(git rev-parse --show-toplevel)/api/.golangci-cache" golangci-lint run
-go test ./... -coverprofile=coverage.out
+go test ./... -coverpkg=./... -coverprofile=coverage.out
 go run ./tools/covcheck -profile=coverage.out -module=mbu/api -skip=mbu/api/tools/
 ```
 
@@ -47,7 +47,9 @@ if err := http.ListenAndServe(":"+port, nil); err != nil {
 }
 ```
 
-`api/tools/covcheck` reads the `go test -coverprofile` output and fails on each zero-coverage line that has no `coverage:ignore` comment directly above it or in the uncovered block. `tools/covcheck` has its own tests, but `-skip` excludes it from the coverage requirement, because it is dev tooling, not application code.
+`api/tools/covcheck` reads the `go test -coverprofile` output and fails on each zero-coverage line that has no `coverage:ignore` comment directly above it or in the uncovered block.
+
+`go test` runs with `-coverpkg=./...` (#249), so a test in one package counts toward the coverage of each package it runs. A route test in package `main` through `routes(Deps)` covers the handler in `internal/users` and the shared code it calls (`internal/authz`, `internal/seats`); those packages need no tests of their own, and the rule "no service-layer tests" holds. Each test binary reports each block of the module, so the profile holds one line for a block per package; covcheck keeps the largest count for each block. `tools/covcheck` has its own tests, but `-skip` excludes it from the coverage requirement, because it is dev tooling, not application code.
 
 `covcheck` was copied from `~/github/doula-cloud/api/tools/covcheck` with the module name changed to `mbu/api`.
 

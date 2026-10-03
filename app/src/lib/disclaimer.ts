@@ -1,5 +1,5 @@
 /**
-Matches functions/src/constants/disclaimer.ts — keep in sync.
+Matches api/internal/policy/policy.go (DisclaimerVersion, DisclaimerText) — keep in sync.
 */
 export const DISCLAIMER_VERSION = '2026-07-03';
 

@@ -86,7 +86,7 @@ jobs:
       # migrations to it (internal/testdb).
       - name: Test
         working-directory: api
-        run: go test -race ./... -coverprofile=coverage.out
+        run: go test -race ./... -coverpkg=./... -coverprofile=coverage.out
 
       - name: Enforce 100% line coverage
         working-directory: api
