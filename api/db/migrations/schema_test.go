@@ -37,7 +37,8 @@ const (
 // seedSQL is one University with one Period and two Classes, a Parent
 // with one Scout, a Counselor and a Chancellor. The Scout is enrolled in
 // the first Class and has a cancelled Registration in the second. A
-// second University holds one Period of its own.
+// second University holds one Period of its own. The Parent has one
+// stored Idempotency-Key response.
 var seedSQL = []string{
 	`INSERT INTO users (uid, email) VALUES
 	    ('` + parentUID + `', 'parent@example.com'),
@@ -68,6 +69,8 @@ var seedSQL = []string{
 	 VALUES
 	    ('` + classID + `', '` + scoutID + `', 'enrolled', now(), NULL, now(), 'v1', 'Sam', 'Scout', 'Pat', 'parent@example.com'),
 	    ('` + class2ID + `', '` + scoutID + `', 'cancelled', NULL, NULL, now(), 'v1', 'Sam', 'Scout', 'Pat', 'parent@example.com')`,
+	`INSERT INTO idempotency_keys (uid, key, request_hash, status_code, response_body, created_at)
+	    VALUES ('` + parentUID + `', 'key-1', '\x00', 201, '{}', now())`,
 }
 
 // seed gives the test a fresh database that holds the fixture graph.
@@ -157,8 +160,8 @@ func TestAppRoleHasDataPrivilegesOnEachTable(t *testing.T) {
 	defer rows.Close()
 
 	want := []string{
-		"class_counselors", "class_periods", "classes", "periods",
-		"registrations", "role_grants", "scouts", "universities", "users",
+		"class_counselors", "class_periods", "classes", "idempotency_keys", "periods",
+		"rate_limit_buckets", "registrations", "role_grants", "scouts", "universities", "users",
 	}
 	var got []string
 	for rows.Next() {
@@ -368,11 +371,12 @@ func TestDeleteBehavior(t *testing.T) {
 			},
 		},
 		{
-			name:   "a Parent's account delete erases the Scouts and their Registrations",
+			name:   "a Parent's account delete erases the Scouts, their Registrations and the stored responses",
 			delete: `DELETE FROM users WHERE uid = '` + parentUID + `'`,
 			left: map[string]int{
-				all("scouts"):        0,
-				all("registrations"): 0,
+				all("scouts"):           0,
+				all("registrations"):    0,
+				all("idempotency_keys"): 0,
 			},
 		},
 		{
@@ -381,7 +385,8 @@ func TestDeleteBehavior(t *testing.T) {
 			left: map[string]int{
 				all("class_counselors"): 0,
 				`SELECT count(*) FROM role_grants WHERE role = 'counselor'`: 0,
-				all("classes"): 2,
+				all("classes"):          2,
+				all("idempotency_keys"): 1,
 			},
 		},
 		{

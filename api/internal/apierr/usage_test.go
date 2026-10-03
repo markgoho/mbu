@@ -109,10 +109,14 @@ func isJSONEnvelopePackage(rel string) bool {
 // jsonUsageExceptions is the audited list of production files that may
 // encode or decode JSON outside apierr, because what they do is not a
 // fresh JSON encode or decode of a request or response (an idempotent
-// replay of stored bytes, say). It is empty today. A new match is a
-// regression to fix, not a file to add here, unless the PR that adds the
-// entry gives the reason.
-var jsonUsageExceptions = map[string]bool{}
+// replay of stored bytes, say). A new match is a regression to fix, not
+// a file to add here, unless the PR that adds the entry gives the reason.
+var jsonUsageExceptions = map[string]bool{
+	// #247: Wrap replays the stored bytes of a response that
+	// apierr.WriteJSON first wrote, so it sets the Content-Type that
+	// WriteJSON set the first time. It encodes nothing.
+	filepath.Join("internal", "idempotency", "idempotency.go"): true,
+}
 
 // TestNoDirectJSONUsage extends TestNoDirectHTTPError to success bodies:
 // a handler outside apierr that sets the JSON Content-Type, encodes with

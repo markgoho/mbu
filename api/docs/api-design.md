@@ -53,8 +53,9 @@ Network calls can time out, drop connections, or return 500s mid-flight. Callers
 2. **Replay Stored Responses**: When a request with an existing idempotency key is received:
    - Do not re-execute the business logic.
    - Return the cached HTTP status code and response body from the initial execution.
-3. **Storage & Scope**: Store idempotency keys scoped by the caller's user uid (and the `University` when the route has one) with an appropriate TTL (typically 24–48 hours).
+3. **Storage & Scope**: Store idempotency keys scoped by the caller's user uid with a TTL of 48 hours (`idempotency.TTL`). The request hash holds the path, so a University in the path needs no scope of its own.
 4. **Naturally Idempotent Methods**: `GET`, `PUT` (full replacement), and `DELETE /{id}` are inherently idempotent by convention and do not require idempotency keys.
+5. **Every POST declares its stance** (#247). The route table mounts a POST with `replayable` (behind `idempotency.Wrap`) or with `exempt("reason")`; `routes_guardrail_test.go` fails a POST with neither. `replayable` needs a Caller, so it is for `rt.authed` routes only; an internal or public POST is `exempt`. A reuse of a key for a different request (method, path or body) is `409 IDEMPOTENCY_KEY_REUSED`. A key longer than 255 characters is `400 INVALID_ARGUMENT`. A 2xx or 4xx is stored and replays for 48 hours (a 4xx such as `CLASS_FULL` replays even after the state changes: a new action gets a new key); a 5xx is not stored, so the caller can retry. `idempotency.PurgeExpired` deletes the expired keys; the retention purge (#256) calls it.
 
 ```go
 // Handler pattern for idempotent operations
@@ -126,13 +127,14 @@ APIs run at code speed, not human click speed. Protect the backend against unthr
 2. **Stricter Limits on Heavy Endpoints**: Apply tighter rate limits on operations that trigger expensive database queries or third-party API calls (e.g. Mailgun).
 3. **Tenant-Level Isolation & Killswitches**: Provide the ability to rate limit or disable access at the `University` or user level to isolate noisy neighbors.
 
-Counters live in Postgres, not in process memory: Cloud Run runs more than one instance, so an in-process counter does not limit anything. The seam is a decorator around the handler, the same shape as the idempotency wrapper. #247 builds it.
+Counters live in Postgres (`rate_limit_buckets`), not in process memory: Cloud Run runs more than one instance, so an in-process counter does not limit anything. The seam is `ratelimit.Wrap(db, endpoint, rules)`, a decorator around the handler, the same shape as `idempotency.Wrap`. The one rule kind is `ratelimit.IPRule`; add another kind when a route needs it. A refusal is a log line (`ratelimit: refused ...`), not a table row.
 
 Each rate-limited MBU route, and why. A ticket that adds or limits a route adds its row here. An unauthenticated route that is deliberately not limited (for example, a health probe) gets a row with `none` in Rules and the reason.
 
 | Route | Rules | Reason |
 | :---- | :---- | :----- |
 | `GET /api/health` | none | The health probe for Cloud Run and the image smoke test. It reads no database and calls no vendor, so a flood of it costs no more than any request the load balancer refuses. |
+| `GET /api/universities/{id}/public` | `ratelimit.IPRule(600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is one query. #251 mounts it; #293 makes the client address trustworthy first. |
 
 ---
 
