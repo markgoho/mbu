@@ -21,4 +21,5 @@ The Retention Purge runs from a GitHub Actions cron that calls `POST /api/retent
 - Production holds no shared secret for this boundary. A token expires within the hour and is bound to one audience.
 - An operator who calls an internal route by hand mints a token: `gcloud auth print-identity-token --impersonate-service-account=<caller> --audiences=<service URL>`.
 - If a service account is renamed without a change to the allowlist, the internal routes refuse it until the configuration is fixed. The Scheduler job's status shows that.
-- **Open for #256:** doula-cloud keeps a shared-secret fallback for local runs and end-to-end tests, where no token can be minted, and Cloud Run sets no secret. #256 decides if MBU needs that fallback.
+- **Decided in #256: MBU keeps the local fallback.** The guard also accepts an `X-Internal-Secret` header equal to `INTERNAL_WORKER_SECRET`, as doula-cloud does, because the local stack has no metadata server to mint a token. Cloud Run sets no `INTERNAL_WORKER_SECRET`, and with it unset the header is refused, so production holds no shared secret. `api/docs/environment.md` lists the three variables.
+- The router mounts each `/api/internal/` route behind the guard (`rt.internal`), so a handler cannot skip it. `routes_internal_test.go` holds the routes to a declared list and checks that each refuses a caller the guard does not know.

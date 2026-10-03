@@ -11,6 +11,7 @@ import (
 	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/idempotency"
+	"mbu/api/internal/internalauth"
 )
 
 // Deps is everything the route table needs to build itself. A struct, not
@@ -39,6 +40,11 @@ type Deps struct {
 	// the caller's (#249). main() passes the FirebaseVerifier; tests pass
 	// *authntest.Accounts.
 	Accounts authn.AccountManager
+
+	// InternalAuth guards every /api/internal/ route by its caller
+	// identity (ADR 0005). main() builds it with internalGuard; a nil
+	// guard refuses every request.
+	InternalAuth *internalauth.Guard
 }
 
 // routeClass is how a route is reached, which decides what guards it.
@@ -97,6 +103,7 @@ type route struct {
 type router struct {
 	mux         *http.ServeMux
 	requireAuth func(http.Handler) http.Handler
+	requireCall func(http.Handler) http.Handler
 	replay      func(http.Handler) http.Handler
 	table       []route
 }
@@ -105,6 +112,7 @@ func newRouter(d Deps) *router {
 	return &router{
 		mux:         http.NewServeMux(),
 		requireAuth: authn.Middleware(d.Verifier),
+		requireCall: d.InternalAuth.Middleware,
 		replay:      idempotency.Wrap(d.DB),
 	}
 }
@@ -116,7 +124,8 @@ func (rt *router) public(pattern string, h http.Handler, s ...stance) {
 	rt.mount(pattern, classPublic, h, s)
 }
 
-// internal mounts a route on the internal boundary. It panics at startup
+// internal mounts a route on the internal boundary, behind the caller
+// identity guard (Deps.InternalAuth). It panics at startup
 // for a pattern outside /api/internal/, so the class cannot be used to
 // skip authentication on an ordinary route. An internal POST can only be
 // exempt, for the same reason as a public one.
@@ -151,8 +160,13 @@ func (rt *router) mount(pattern string, class routeClass, h http.Handler, stance
 		}
 		h = rt.replay(h)
 	}
-	if class == classAuthed {
+	switch class {
+	case classPublic:
+		// No guard: the guardrail test holds these to a declared list.
+	case classAuthed:
 		h = rt.requireAuth(h)
+	case classInternal:
+		h = rt.requireCall(h)
 	}
 	rt.mux.Handle(pattern, h)
 	rt.table = append(rt.table, r)

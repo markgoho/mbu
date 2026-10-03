@@ -59,6 +59,12 @@ func IPRule(resolver clientip.Resolver, maxRequests int, window time.Duration) R
 	return Rule{Dimension: "ip", Key: resolver.From, Max: maxRequests, Window: window}
 }
 
+// MaxWindow is the longest Window a Rule may have. A bucket stores no
+// Window, so PurgeExpired treats a bucket whose window started more than
+// MaxWindow ago as ended. Wrap panics at startup for a longer Window, so
+// the purge cannot reset a window that is still open.
+const MaxWindow = 24 * time.Hour
+
 // Wrap enforces every rule in rules against db, keyed per rule by
 // endpoint plus the rule's Dimension and key. A request over any one
 // rule gets 429 RATE_LIMITED with the RateLimit-Limit,
@@ -66,6 +72,11 @@ func IPRule(resolver clientip.Resolver, maxRequests int, window time.Duration) R
 // order and stop at the first breach. A request that passes carries
 // RateLimit-Limit and RateLimit-Remaining of the rule closest to its cap.
 func Wrap(db Querier, endpoint string, rules []Rule) func(http.Handler) http.Handler {
+	for _, rule := range rules {
+		if rule.Window > MaxWindow {
+			panic(fmt.Sprintf("ratelimit: %s rule on %q has a %s window, more than MaxWindow %s", rule.Dimension, endpoint, rule.Window, MaxWindow))
+		}
+	}
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			now := clock.Now(r.Context())
@@ -116,8 +127,8 @@ func bucketKey(endpoint, dimension, key string) string {
 // statement, so two requests on the same key -- on two Cloud Run
 // instances, not only two goroutines -- serialize on the row.
 //
-// No reaper deletes an old bucket: a key nobody touches again is a few
-// idle bytes, and the next request on it resets it in place.
+// A bucket nobody touches again stays until PurgeExpired deletes it; a
+// touch after its window ended resets it in place.
 func touch(ctx context.Context, db Querier, key string, now time.Time, window time.Duration) (count int, windowStart time.Time, err error) {
 	err = db.QueryRowContext(ctx,
 		`INSERT INTO rate_limit_buckets (key, window_start, count)
@@ -141,4 +152,22 @@ func touch(ctx context.Context, db Querier, key string, now time.Time, window ti
 // clock is ahead cannot give 0 or less.
 func retryAfterSeconds(windowStart, now time.Time, window time.Duration) int {
 	return max(1, int(math.Ceil(windowStart.Add(window).Sub(now).Seconds())))
+}
+
+// PurgeExpired deletes every bucket whose window started MaxWindow or
+// more before now, so its window has ended whatever its Rule, and
+// returns how many it deleted. The Retention Purge (#256) calls it. A
+// deleted bucket is the same as a reset one: the next request starts a
+// new window.
+func PurgeExpired(ctx context.Context, db *sql.DB, now time.Time) (int64, error) {
+	var n int64
+	err := db.QueryRowContext(ctx,
+		`WITH purged AS (DELETE FROM rate_limit_buckets WHERE window_start <= $1 RETURNING 1)
+		 SELECT count(*) FROM purged`,
+		now.Add(-MaxWindow),
+	).Scan(&n)
+	if err != nil {
+		return 0, fmt.Errorf("ratelimit: purge expired buckets: %w", err)
+	}
+	return n, nil
 }

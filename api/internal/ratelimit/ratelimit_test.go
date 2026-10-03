@@ -178,3 +178,25 @@ func TestWrap_ADatabaseFailureIsA500(t *testing.T) {
 		t.Fatal("the handler ran after the counter failed")
 	}
 }
+
+// A Rule longer than MaxWindow would let PurgeExpired delete a bucket
+// whose window is still open, so Wrap refuses it at startup.
+func TestWrap_RefusesAWindowLongerThanMaxWindow(t *testing.T) {
+	defer func() {
+		if recover() == nil {
+			t.Fatal("Wrap accepted a window longer than MaxWindow")
+		}
+	}()
+	ratelimit.Wrap(nil, "test", []ratelimit.Rule{ratelimit.IPRule(clientip.Resolver{}, 1, ratelimit.MaxWindow+time.Second)})
+}
+
+func TestPurgeExpired_ReportsADatabaseFailure(t *testing.T) {
+	down, err := sql.Open("pgx", "postgres://app:secret@127.0.0.1:1/mbu?sslmode=disable&connect_timeout=1")
+	if err != nil {
+		t.Fatalf("open: %v", err)
+	}
+	t.Cleanup(func() { _ = down.Close() })
+	if _, err := ratelimit.PurgeExpired(t.Context(), down, start); err == nil {
+		t.Fatal("purge on a database that is down = nil error")
+	}
+}
