@@ -6,7 +6,7 @@ The Terraform for the `merit-badge-university` GCP project is in `terraform/` at
 
 ## What Terraform owns
 
-A difference between `terraform/` and the live project makes `plan` non-empty. #262 makes that a red required check.
+A difference between `terraform/` and the live project makes `plan` non-empty, and the drift check turns red ([The drift check](#the-drift-check)).
 
 | Resource                                                                                                                            | File                     | Why it is owned                                                                                                                                                                                                              |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ Images: `us-east4-docker.pkg.dev/merit-badge-university/api/<image>:<tag>`.
 
 **`plan` runs in CI (#262). `apply` runs from a laptop, as the project owner (`roles/owner`).** Applying this configuration needs IAM-admin permissions. A CI principal with those permissions could grant itself anything, through the Workload Identity provider that the same configuration owns. No service account has permission to apply, so there is no apply credential to leak.
 
-- `apply` uses the owner's Application Default Credentials (`gcloud auth application-default login`), from the main checkout, on trunk.
+- `apply` uses the owner's Application Default Credentials (`gcloud auth application-default login`), on the laptop. The first apply (the runbook) runs on trunk. A later change to `terraform/` is applied from its reviewed pull request branch, and the pull request is merged at once ([The drift check](#the-drift-check)).
 - `terraform-plan@` can read and diff, and nothing else.
 - `terraform destroy` is never run against this project.
 - `prevent_destroy` is on the four service accounts, the Workload Identity pool, the provider, the Cloud SQL instance and database, the two secret shells and the `mbu-api` service. A plan that would delete one fails.
@@ -77,7 +77,7 @@ State is in the GCS bucket `merit-badge-university-tfstate` in this project (`us
 
 Who can read state: the owner, through `roles/owner`, and `terraform-plan@`, through `roles/storage.objectUser` on this bucket only. State holds no secret value: Terraform owns no secret version and no Cloud SQL password, and the Scheduler jobs carry an OIDC token config, not a secret (ADR 0005).
 
-**A stranded lock.** If a process that holds the lock is killed (a closed terminal mid-apply, a cancelled runner), the next run fails with `Error acquiring the state lock`. Confirm that the `Who:` in the error's `Lock Info` is gone, then run `terraform force-unlock <LOCK_ID>` from `terraform/`, as the owner.
+**A stranded lock.** The drift check is never cancelled while it holds the lock (`cancel-in-progress: false`), and it waits up to 480 s for a lock that another run or a laptop apply holds (`-lock-timeout=480s`). A lock stays behind only when the process that holds it is killed (a closed terminal mid-apply, a runner that died). Then the next run fails with `Error acquiring the state lock`, and the job log shows the `Lock Info` block (`ID:`, `Who:`, `Created:`). Confirm that the `Who:` is gone: no drift check is in progress (`gh run list --workflow "Terraform Plan" --status in_progress`) and no apply runs on the laptop. Then run `terraform force-unlock <ID>` from `terraform/`, as the owner. Do not unlock a lock that a live process holds: that is the damage the lock prevents.
 
 ## The database
 
@@ -175,6 +175,32 @@ The workflow never cancels a run: a migration must not stop half way. GitHub kee
 **Why a migration must pass the row-safety guardrail before trunk.** A pull request tests each migration on an empty Postgres. Cloud SQL has rows. A statement that only existing rows can refuse (for example `ADD COLUMN ... NOT NULL` with no default) is green on the pull request and fails in `migrate`, so nothing deploys until someone fixes it on trunk. The guardrail (`api/db/migrations/embed.go`, [`testing.md`](testing.md), "Row safety") refuses such a statement on the pull request unless a safety note says why the rows cannot break it.
 
 **When `deploy` or `smoke` fails** after `migrate` passed, the schema is new and the revision is old. A migration must therefore work with the revision that runs before it (add first, remove in a later deploy). If `smoke` fails, Cloud Run already sends traffic to the new revision. Fix the problem with a new commit on trunk. To go back to the previous revision before the fix, run `gcloud run services update-traffic mbu-api --to-revisions <previous revision>=100 --region us-east4 --project merit-badge-university`. A pinned revision keeps all traffic, also after the next deploy, and `terraform plan` shows the traffic as changed: after the fix deploys, run the same command with `--to-latest` in place of `--to-revisions ...`.
+
+## The drift check
+
+`.github/workflows/terraform-plan.yml` (#262, ADR 0006). The job `Terraform plan` authenticates as `terraform-plan@` and runs `terraform plan -detailed-exitcode -lock-timeout=480s`. It runs on each pull request, on each push to trunk, each day at 09:41 UTC, and by hand (`workflow_dispatch`). A console change makes no commit, so only the daily run finds it. The workflow has no `paths` filter: a required check whose workflow does not start never reports, and the pull request waits for it forever.
+
+**The switch.** The job runs only when the repository variable `TERRAFORM_PLAN_ENABLED` is `true`, or on a manual run. Until the first apply, the state bucket and `terraform-plan@` do not exist, and each run would be red. Without the variable the job is skipped. GitHub counts a job that its own `if:` skips as a passed check, so the check can be required before the switch is on. The job is also skipped on a pull request from a fork or from Dependabot: neither can get an OIDC token. Runbook step 21 turns the switch on. To stop the check for a time, delete the variable or set it to `false`.
+
+**What `terraform-plan@` can read.** Each resource kind in `terraform/` was checked against `gcloud iam roles describe` for its `get` and `getIamPolicy` permissions (#262). `roles/viewer`, `roles/iam.securityReviewer` and `roles/iam.workloadIdentityPoolViewer` cover all of them, and `roles/storage.objectUser` on the state bucket covers the backend. If a new resource kind fails to refresh with a `403`, add the missing read role in `iam.tf`. Never add a role that can change a resource.
+
+**What a red run means.** The job summary names each resource that differs, the action, and the names of the changed attributes. It never shows a value. There are three causes:
+
+| The summary says                                          | Cause                                                                                                                                                                                                                                                                           | Fix                                                                                                                                                                 |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A table of resources                                      | **Drift.** The live project differs from `terraform/` on trunk: a console change, a by-hand `gcloud` change (for example a paused Scheduler job), or a laptop apply with no merged commit. On a pull request that changes `terraform/`, the change itself, until it is applied. | Make a commit that changes `terraform/` to match the live project, or apply `terraform/` from the laptop to put the project back. Never ignore it.                  |
+| "This branch is behind `trunk` on a Terraform change"     | **A stale branch.** Trunk merged a `terraform/` change after the last push to this branch (its merge ref), and the owner applied it. The branch compares older configuration with the live project.                                                                             | Rebase onto trunk and push. A rerun does not help: a pull request's merge ref changes only on a push. If the plan is still not empty after the rebase, it is drift. |
+| "terraform plan failed" or "could not get the state lock" | **Not drift.** The command failed: a missing read permission, an auth failure, or a lock that another run holds.                                                                                                                                                                | Read the log in the job. For a permission error, add the read role (above). For a lock, see [State](#state).                                                        |
+
+A red run on trunk or on the schedule blocks each pull request until someone fixes it. That cost is accepted: a drift check that nobody must act on is a drift check that nobody reads.
+
+**How a change to `terraform/` merges.** The plan on its pull request is not empty until the change is applied, so the check is red. After review:
+
+1. Rebase the pull request branch onto trunk and push it. On the laptop, check out that commit. In `terraform/`, run `terraform plan`, read it, and apply it.
+2. Run the check of that commit again: `gh run rerun <run id> --failed` (a manual `workflow_dispatch` run does not report on a pull request). It is green. Do not push again before the merge unless you apply again.
+3. Merge the pull request at once. Between the apply and the merge, the plan of each other branch and of trunk shows the change as drift.
+
+This is what doula-cloud does ([doula-cloud#1196](https://github.com/markgoho/doula-cloud/pull/1196) merged with a green plan).
 
 ## Runbook: the first apply
 
@@ -382,5 +408,57 @@ The apply has two stages. A Cloud Run revision whose `DATABASE_URL` secret has n
     A 401 means the token is wrong: check that `oidc_token.audience` equals `INTERNAL_OIDC_AUDIENCE` and that `INTERNAL_OIDC_CALLERS` names `internal-caller@`. A job whose `status` shows `code=7` (`PERMISSION_DENIED`) and that has no request in the log means the agent cannot mint the token. The Scheduler log shows the error text: `gcloud logging read 'resource.type="cloud_scheduler_job"' --project merit-badge-university --freshness 10m --limit 10`: check the grant `scheduler_agent_mints_internal_caller` in `iam.tf`.
 
 20. Check that the plan is still empty (`terraform plan` in `terraform/`).
+
+21. Run the drift check from GitHub Actions, then turn it on (#262). Do this only after step 20: between stage 1 and stage 2 the plan is not empty by design.
+
+    ```sh
+    gh workflow run terraform-plan.yml --ref trunk
+    sleep 10
+    gh run list --workflow terraform-plan.yml --event workflow_dispatch --limit 1   # confirm it is the run you started
+    gh run watch "$(gh run list --workflow terraform-plan.yml --event workflow_dispatch --limit 1 --json databaseId --jq '.[0].databaseId')" --exit-status
+    gh variable set TERRAFORM_PLAN_ENABLED --body true --repo markgoho/mbu
+    ```
+
+    If the run fails with a `403` on a refresh, `terraform-plan@` lacks a read role: see [The drift check](#the-drift-check).
+
+22. Prove that the check finds drift. Change a Scheduler job's description by hand, run the check (expect red, with `google_cloud_scheduler_job.retention_purge` and `description` in the summary), put the description back (the value in `scheduler.tf`), and run it again (expect green):
+
+    ```sh
+    gcloud scheduler jobs update http retention-purge --location us-east4 \
+      --project merit-badge-university --description "drift test"
+    gh workflow run terraform-plan.yml --ref trunk   # watch it as in step 21: expect red
+    gcloud scheduler jobs update http retention-purge --location us-east4 \
+      --project merit-badge-university \
+      --description "Runs the Retention Purge on mbu-api (#256, #261). Daily at 09:23 UTC."
+    gh workflow run terraform-plan.yml --ref trunk   # expect green
+    ```
+
+    Record both run URLs on #262.
+
+23. Make the check required on trunk. There is no branch protection on trunk today, and the only ruleset (`arch`) is disabled; do not change it. Make a new ruleset:
+
+    ```sh
+    gh api repos/markgoho/mbu/rulesets --method POST --input - <<'JSON'
+    {
+      "name": "trunk",
+      "target": "branch",
+      "enforcement": "active",
+      "conditions": { "ref_name": { "include": ["~DEFAULT_BRANCH"], "exclude": [] } },
+      "rules": [
+        {
+          "type": "required_status_checks",
+          "parameters": {
+            "strict_required_status_checks_policy": false,
+            "required_status_checks": [{ "context": "Terraform plan", "integration_id": 15368 }]
+          }
+        }
+      ]
+    }
+    JSON
+    ```
+
+    Or in the web UI: Settings, Rules, Rulesets, New branch ruleset, target the default branch, "Require status checks to pass", add `Terraform plan` (the job name, not the workflow name `Terraform Plan`), source GitHub Actions. A required check with a name that no job reports blocks each pull request: open a test pull request and confirm that `Terraform plan` shows as a required check that passes. The rule also refuses a direct push to trunk whose commit has no passed check; merge through pull requests.
+
+    **The uni-theme bump pull requests.** `uni-theme-bump.yml` opens its pull request with `GITHUB_TOKEN`, and a pull request opened with `GITHUB_TOKEN` starts no `pull_request` workflow. So `Terraform plan` never reports on it, and the required check blocks it. Before you merge a bump pull request, close it and open it again as a person: `gh pr close <n> && gh pr reopen <n>`. The reopen starts the checks. To remove this step, change the bump workflow to open its pull request with a GitHub App token or a fine-grained token (#311).
 
 To change a password later: make a new one, change the login (`ALTER ROLE app_runtime_login PASSWORD '...'` as `migrate_login`, or `gcloud sql users set-password migrate_login`), add a new secret version with the new DSN, and deploy a new revision (it reads `latest` when it starts).
