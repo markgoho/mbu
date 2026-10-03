@@ -38,8 +38,8 @@ import (
 const HeaderName = "Idempotency-Key"
 
 // maxKeyLength bounds the caller-chosen key so a long header cannot
-// bloat the table. A longer key is the same as no key: the request runs
-// without replay protection, because the header is optional.
+// bloat the table. A longer key is a 400: running the request without
+// replay protection would hide the client bug behind a duplicate write.
 const maxKeyLength = 255
 
 // TTL is how long a stored response replays (section 3: 24-48 hours).
@@ -56,15 +56,20 @@ var errNoCaller = errors.New("idempotency: no Caller on the request -- mount Wra
 // IDEMPOTENCY_KEY_REUSED when the method, path or body differ), or the
 // handler runs and its response is stored unless it is a 5xx.
 //
-// The replay sets Content-Type to application/json: every handler
-// writes its body through apierr.WriteJSON, so the status and body are
-// all a replay needs.
+// The replay sets Content-Type to application/json when there is a
+// body: every handler writes its body through apierr.WriteJSON, so the
+// status and body are all a replay needs. A replayable handler must not
+// set other headers (Location, say): a replay does not keep them.
 func Wrap(db *sql.DB) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			key := r.Header.Get(HeaderName)
-			if key == "" || len(key) > maxKeyLength {
+			if key == "" {
 				next.ServeHTTP(w, r)
+				return
+			}
+			if len(key) > maxKeyLength {
+				apierr.WriteError(w, fmt.Sprintf("Idempotency-Key is longer than %d characters", maxKeyLength), http.StatusBadRequest)
 				return
 			}
 			caller, ok := authn.CallerFrom(r.Context())
@@ -100,7 +105,9 @@ func Wrap(db *sql.DB) func(http.Handler) http.Handler {
 						"this Idempotency-Key was already used for a different request", nil)
 					return
 				}
-				w.Header().Set("Content-Type", "application/json")
+				if len(stored.body) > 0 {
+					w.Header().Set("Content-Type", "application/json")
+				}
 				w.WriteHeader(stored.status)
 				_, _ = w.Write(stored.body) //nolint:gosec // G705: the JSON body this caller's own first request got, replayed as is
 				return
@@ -114,7 +121,10 @@ func Wrap(db *sql.DB) func(http.Handler) http.Handler {
 			if rec.status >= http.StatusInternalServerError {
 				return
 			}
-			if err := save(r.Context(), db, caller.UID, key, hash, rec.status, rec.body.Bytes(), now); err != nil {
+			// An empty buffer's Bytes() is nil, which pgx sends as NULL;
+			// response_body is NOT NULL, so store an empty slice instead.
+			response := append([]byte{}, rec.body.Bytes()...)
+			if err := save(r.Context(), db, caller.UID, key, hash, rec.status, response, now); err != nil {
 				// The caller already has the response. A failed save
 				// only means a retry runs the handler again.
 				log.Printf("idempotency: %v", err)
@@ -207,6 +217,11 @@ func (rec *recorder) WriteHeader(status int) {
 	rec.status = status
 	rec.wroteHeader = true
 	rec.ResponseWriter.WriteHeader(status)
+}
+
+// Unwrap lets http.ResponseController reach the real ResponseWriter.
+func (rec *recorder) Unwrap() http.ResponseWriter {
+	return rec.ResponseWriter
 }
 
 func (rec *recorder) Write(b []byte) (int, error) {

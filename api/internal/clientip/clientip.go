@@ -2,11 +2,12 @@
 // Google Front End. Copied from doula-cloud (#247); ratelimit.IPRule is
 // its one consumer.
 //
-// The trust in the first X-Forwarded-For entry is doula-cloud's, where
-// the caller reaches Cloud Run directly. MBU's traffic comes through the
-// Firebase Hosting rewrite, which adds its own hop; the deploy tickets
-// (#259, #260) confirm which entry is the real caller before a rate
-// limit depends on it.
+// From trusts the first X-Forwarded-For entry, as doula-cloud does. A
+// proxy appends to the header a client sends, so a client can set that
+// entry itself and get a new rate-limit bucket on each request. Which
+// entry a proxy wrote depends on the path to the service (direct Cloud
+// Run, or the Firebase Hosting rewrite); #293 decides it from the
+// deployed headers before #251 depends on IPRule.
 package clientip
 
 import (
@@ -16,15 +17,9 @@ import (
 )
 
 // From returns the caller's address, for use as a rate-limit dimension
-// (ratelimit). The service runs behind Cloud Run's Google Front End,
-// which terminates the caller's own TLS
-// connection and sets X-Forwarded-For's first entry to that connection's
-// real peer address itself -- a caller can't spoof this the way it could
-// a header GFE merely passed through, since GFE is the one writing it,
-// not relaying client-supplied content. r.RemoteAddr, by contrast, is
-// GFE's own proxy address at that point, not the caller's -- only useful
-// as the local-dev/test fallback when there's no GFE in front of the
-// process and the header is absent.
+// (ratelimit): the first X-Forwarded-For entry (see the package comment
+// for why that is not yet trusted), else the host of r.RemoteAddr, the
+// local and test path with no proxy in front.
 func From(r *http.Request) string {
 	if xff := r.Header.Get("X-Forwarded-For"); xff != "" {
 		first, _, _ := strings.Cut(xff, ",")

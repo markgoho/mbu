@@ -75,12 +75,9 @@ func exempt(reason string) stance {
 type route struct {
 	Pattern string
 	Class   routeClass
-	// Replayable is true when the route runs behind idempotency.Wrap.
-	Replayable bool
-	// Exempt is the declared reason a route runs without
-	// idempotency.Wrap. Empty when Replayable is true or no stance was
-	// declared.
-	Exempt string
+	// Stance is the route's declared idempotency stance; the zero value
+	// means none was declared.
+	Stance stance
 }
 
 // router is the only thing that holds the mux. A route file gets a
@@ -120,27 +117,31 @@ func (rt *router) internal(pattern string, h http.Handler, s ...stance) {
 }
 
 // authed mounts a route behind authn.Middleware: the handler runs only
-// for a verified Caller, which it reads with authn.CallerFrom. A
-// replayable route runs behind idempotency.Wrap inside the middleware,
+// for a verified Caller, which it reads with authn.CallerFrom. mount puts
+// a replayable route behind idempotency.Wrap inside the middleware,
 // since Wrap scopes the key by the Caller.
 func (rt *router) authed(pattern string, h http.Handler, s ...stance) {
-	if len(s) == 1 && s[0].replayable {
-		h = rt.replay(h)
-	}
-	rt.mount(pattern, classAuthed, rt.requireAuth(h), s)
+	rt.mount(pattern, classAuthed, h, s)
 }
 
 // mount registers h and records the route. It panics at startup for more
 // than one stance, or for replayable on a route with no Caller.
 func (rt *router) mount(pattern string, class routeClass, h http.Handler, stances []stance) {
 	r := route{Pattern: pattern, Class: class}
-	switch {
-	case len(stances) > 1:
+	if len(stances) > 1 {
 		panic(fmt.Sprintf("routes: %q declares %d idempotency stances, want at most one", pattern, len(stances)))
-	case len(stances) == 1 && stances[0].replayable && class != classAuthed:
-		panic(fmt.Sprintf("routes: %q is replayable but %s -- idempotency.Wrap needs a Caller", pattern, class))
-	case len(stances) == 1:
-		r.Replayable, r.Exempt = stances[0].replayable, stances[0].exempt
+	}
+	if len(stances) == 1 {
+		r.Stance = stances[0]
+	}
+	if r.Stance.replayable {
+		if class != classAuthed {
+			panic(fmt.Sprintf("routes: %q is replayable but %s -- idempotency.Wrap needs a Caller", pattern, class))
+		}
+		h = rt.replay(h)
+	}
+	if class == classAuthed {
+		h = rt.requireAuth(h)
 	}
 	rt.mux.Handle(pattern, h)
 	rt.table = append(rt.table, r)

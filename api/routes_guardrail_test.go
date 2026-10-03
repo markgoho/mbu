@@ -36,7 +36,7 @@ func routeTableOffenses(t *testing.T, rt *router, h http.Handler) []string {
 	t.Helper()
 	var offenses []string
 	for _, r := range rt.table {
-		if strings.HasPrefix(r.Pattern, http.MethodPost+" ") && !r.Replayable && r.Exempt == "" {
+		if strings.HasPrefix(r.Pattern, http.MethodPost+" ") && r.Stance == (stance{}) {
 			offenses = append(offenses, r.Pattern+": a POST with no idempotency stance -- mount it with replayable or exempt(reason)")
 		}
 		switch r.Class {

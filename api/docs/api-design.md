@@ -55,7 +55,7 @@ Network calls can time out, drop connections, or return 500s mid-flight. Callers
    - Return the cached HTTP status code and response body from the initial execution.
 3. **Storage & Scope**: Store idempotency keys scoped by the caller's user uid with a TTL of 48 hours (`idempotency.TTL`). The request hash holds the path, so a University in the path needs no scope of its own.
 4. **Naturally Idempotent Methods**: `GET`, `PUT` (full replacement), and `DELETE /{id}` are inherently idempotent by convention and do not require idempotency keys.
-5. **Every POST declares its stance** (#247). The route table mounts a POST with `replayable` (behind `idempotency.Wrap`) or with `exempt("reason")`; `routes_guardrail_test.go` fails a POST with neither. `replayable` needs a Caller, so it is for `rt.authed` routes only; an internal or public POST is `exempt`. A reuse of a key for a different request (method, path or body) is `409 IDEMPOTENCY_KEY_REUSED`. A 2xx or 4xx is stored and replays for 48 hours; a 5xx is not stored, so the caller can retry. `idempotency.PurgeExpired` deletes the expired keys; the retention purge (#256) calls it.
+5. **Every POST declares its stance** (#247). The route table mounts a POST with `replayable` (behind `idempotency.Wrap`) or with `exempt("reason")`; `routes_guardrail_test.go` fails a POST with neither. `replayable` needs a Caller, so it is for `rt.authed` routes only; an internal or public POST is `exempt`. A reuse of a key for a different request (method, path or body) is `409 IDEMPOTENCY_KEY_REUSED`. A key longer than 255 characters is `400 INVALID_ARGUMENT`. A 2xx or 4xx is stored and replays for 48 hours (a 4xx such as `CLASS_FULL` replays even after the state changes: a new action gets a new key); a 5xx is not stored, so the caller can retry. `idempotency.PurgeExpired` deletes the expired keys; the retention purge (#256) calls it.
 
 ```go
 // Handler pattern for idempotent operations
@@ -134,7 +134,7 @@ Each rate-limited MBU route, and why. A ticket that adds or limits a route adds 
 | Route | Rules | Reason |
 | :---- | :---- | :----- |
 | `GET /api/health` | none | The health probe for Cloud Run and the image smoke test. It reads no database and calls no vendor, so a flood of it costs no more than any request the load balancer refuses. |
-| `GET /api/universities/{id}/public` | `ratelimit.IPRule(600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is one query. #251 mounts it. |
+| `GET /api/universities/{id}/public` | `ratelimit.IPRule(600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is one query. #251 mounts it; #293 makes the client address trustworthy first. |
 
 ---
 

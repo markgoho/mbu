@@ -190,10 +190,9 @@ func TestWrap_TheSameKeyForADifferentRequestIsA409(t *testing.T) {
 	}
 }
 
-func TestWrap_NoUsableKeyRunsEveryTime(t *testing.T) {
+func TestWrap_NoKeyRunsEveryTime(t *testing.T) {
 	for name, req := range map[string]request{
-		"no header":    {noKey: true},
-		"key too long": {key: strings.Repeat("k", 256)},
+		"no header": {noKey: true},
 	} {
 		t.Run(name, func(t *testing.T) {
 			s := setup(t)
@@ -282,6 +281,35 @@ func TestWrap_AWriteWithNoStatusIsStoredAs200(t *testing.T) {
 	}
 }
 
+// TestWrap_A204ReplaysWithNoBody covers a handler that answers with no
+// body and flushes through http.ResponseController, which reaches the
+// real writer through the recorder's Unwrap.
+func TestWrap_A204ReplaysWithNoBody(t *testing.T) {
+	db := testdb.New(t)
+	if _, err := db.Admin.ExecContext(t.Context(), `INSERT INTO users (uid, email) VALUES ('uid-a', 'a@example.com')`); err != nil {
+		t.Fatalf("seed: %v", err)
+	}
+	runs := 0
+	h := wrap(db.App, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+		runs++
+		w.WriteHeader(http.StatusNoContent)
+		if err := http.NewResponseController(w).Flush(); err != nil {
+			t.Errorf("flush: %v", err)
+		}
+	}))
+
+	for range 2 {
+		resp := send(t, h, request{})
+		_ = resp.Body.Close()
+		if resp.StatusCode != http.StatusNoContent || resp.Header.Get("Content-Type") != "" {
+			t.Fatalf("status = %d, Content-Type = %q; want 204 with none", resp.StatusCode, resp.Header.Get("Content-Type"))
+		}
+	}
+	if runs != 1 {
+		t.Fatalf("handler ran %d times, want 1", runs)
+	}
+}
+
 func TestWrap_AFailedSaveStillAnswers(t *testing.T) {
 	s := setup(t)
 	call(t, s.handler, request{token: tokenNoAccount}, http.StatusCreated)
@@ -314,6 +342,7 @@ func TestWrap_Refusals(t *testing.T) {
 	}{
 		{"database down", wrap(down, never), request{}, http.StatusInternalServerError, apierr.CodeInternal},
 		{"mounted outside authn", idempotency.Wrap(down)(never), request{}, http.StatusInternalServerError, apierr.CodeInternal},
+		{"key too long", wrap(down, never), request{key: strings.Repeat("k", 256)}, http.StatusBadRequest, apierr.CodeInvalidArgument},
 		{"body read fails", wrap(down, never), request{reader: iotest.ErrReader(errors.New("reset"))}, http.StatusBadRequest, apierr.CodeInvalidArgument},
 	}
 	for _, tt := range tests {
