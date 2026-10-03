@@ -728,7 +728,7 @@ Queries that used Firestore's automatic indexes, and the other indexes in the ta
 | Cascade from `classes` to `role_grants` | `role_grants_class_id_idx` |
 | Cascade from `scouts` to `registrations` | `registrations_scout_id_idx` |
 
-The TypeScript sorts the Roster by name in memory (`localeCompare`). It can move to `ORDER BY scout_last_name, scout_first_name` in SQL, but the collation differs from `localeCompare`; #255 decides and keeps its tests green.
+The TypeScript sorted the Roster by name in memory (`localeCompare`). #255 sorts it in SQL (`rosterRowsSelect` in `internal/registrations/roster.go`): the enrolled Scouts by `COALESCE(scout_last_name, '')`, then `COALESCE(scout_first_name, '')`, each `COLLATE "und-x-icu"`, then `scout_id`. The ICU root collation orders names as `localeCompare` does (case and accents do not put "de la Cruz" or "Évora" after "Zimmer", as byte order would); the database's default collation is not used, so the order does not depend on how the instance was created. A purged name sorts as `''`, first, as the TypeScript's `?? ""` did. The waitlisted Scouts are in Waitlist order `(waitlisted_at, scout_id)`. Postgres 16 on Cloud SQL and the `postgres:16-alpine` test image both have the ICU collations.
 
 ## `emailLog` and the mail outbox
 

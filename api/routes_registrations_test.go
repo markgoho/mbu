@@ -525,6 +525,7 @@ var registrationsRoutes = []struct{ method, path, body string }{
 	{http.MethodPost, pathRegister(classOne), registerAmy},
 	{http.MethodDelete, pathCancel(classOne, scoutAmy), ""},
 	{http.MethodGet, pathRegistrations + "/" + uniOne, ""},
+	{http.MethodGet, pathRoster(uniOne), ""},
 }
 
 func TestRegistrationsRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
