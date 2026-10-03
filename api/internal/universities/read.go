@@ -236,9 +236,15 @@ func loadSchedule(ctx context.Context, db *sql.DB, id string, publishedOnly bool
 	return s, nil
 }
 
+// queryer is a *sql.DB or a *sql.Tx, so a read can run inside the
+// transaction of a write and see its rows.
+type queryer interface {
+	QueryContext(ctx context.Context, query string, args ...any) (*sql.Rows, error)
+}
+
 // eachRow runs query and calls scan for each row.
-func eachRow(ctx context.Context, db *sql.DB, what, query string, scan func(rowScanner) error, args ...any) error {
-	rows, err := db.QueryContext(ctx, query, args...)
+func eachRow(ctx context.Context, q queryer, what, query string, scan func(rowScanner) error, args ...any) error {
+	rows, err := q.QueryContext(ctx, query, args...)
 	if err != nil {
 		return fmt.Errorf("universities: read %s: %w", what, err)
 	}
@@ -257,9 +263,9 @@ func eachRow(ctx context.Context, db *sql.DB, what, query string, scan func(rowS
 }
 
 // loadPeriods reads the Periods of the University in position order.
-func loadPeriods(ctx context.Context, db *sql.DB, id string) ([]PeriodResponse, error) {
+func loadPeriods(ctx context.Context, q queryer, id string) ([]PeriodResponse, error) {
 	periods := []PeriodResponse{}
-	err := eachRow(ctx, db, "periods", `SELECT id, label, starts_at, ends_at FROM periods
+	err := eachRow(ctx, q, "periods", `SELECT id, label, starts_at, ends_at FROM periods
 		WHERE university_id = $1 ORDER BY position, id`, func(row rowScanner) error {
 		var (
 			p            PeriodResponse
@@ -278,10 +284,10 @@ func loadPeriods(ctx context.Context, db *sql.DB, id string) ([]PeriodResponse, 
 
 // loadClasses reads the Classes of the University, oldest first, with
 // their counts, Periods and Counselors.
-func loadClasses(ctx context.Context, db *sql.DB, id string) ([]*class, error) {
+func loadClasses(ctx context.Context, q queryer, id string) ([]*class, error) {
 	classes := []*class{}
 	byID := map[string]*class{}
-	err := eachRow(ctx, db, "classes", `SELECT c.id, c.badge_slug, c.badge_title, c.eagle_required, c.capacity,
+	err := eachRow(ctx, q, "classes", `SELECT c.id, c.badge_slug, c.badge_title, c.eagle_required, c.capacity,
 			c.room, c.notes, c.created_at, c.updated_at,
 			count(r.scout_id) FILTER (WHERE r.status = 'enrolled'),
 			count(r.scout_id) FILTER (WHERE r.status = 'waitlisted')
@@ -302,7 +308,7 @@ func loadClasses(ctx context.Context, db *sql.DB, id string) ([]*class, error) {
 		// coverage:ignore reason: a database failure between the reads of one request, not reachable from a test
 		return nil, err
 	}
-	err = eachRow(ctx, db, "class periods", `SELECT cp.class_id, cp.period_id
+	err = eachRow(ctx, q, "class periods", `SELECT cp.class_id, cp.period_id
 		FROM class_periods cp JOIN periods p ON p.id = cp.period_id
 		WHERE cp.university_id = $1 ORDER BY p.position, p.id`, func(row rowScanner) error {
 		var classID, periodID string
@@ -319,7 +325,7 @@ func loadClasses(ctx context.Context, db *sql.DB, id string) ([]*class, error) {
 		// coverage:ignore reason: a database failure between the reads of one request, not reachable from a test
 		return nil, err
 	}
-	err = eachRow(ctx, db, "class counselors", `SELECT cc.class_id, cc.uid, u.display_name, cc.bsa_id,
+	err = eachRow(ctx, q, "class counselors", `SELECT cc.class_id, cc.uid, u.display_name, cc.bsa_id,
 			cc.disclaimer_accepted_at, cc.disclaimer_version
 		FROM class_counselors cc
 		JOIN classes c ON c.id = cc.class_id

@@ -142,6 +142,8 @@ type RefusalError struct {
 	Status  int
 	Code    Code
 	Message string
+	// Details is the details map of the body; nil for none.
+	Details map[string]string
 }
 
 // Error returns the message.
@@ -153,7 +155,7 @@ func (e *RefusalError) Error() string {
 // own status and code, anything else as WriteInternal.
 func WriteErr(w http.ResponseWriter, r *http.Request, err error) {
 	if refusal, ok := errors.AsType[*RefusalError](err); ok {
-		Write(w, refusal.Status, refusal.Code, refusal.Error(), nil)
+		Write(w, refusal.Status, refusal.Code, refusal.Error(), refusal.Details)
 		return
 	}
 	WriteInternal(w, r, err)

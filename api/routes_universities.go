@@ -12,9 +12,16 @@ import (
 func registerUniversitiesRoutes(rt *router, d Deps) {
 	rt.authed("POST /api/universities", universities.Create(d.DB), replayable)
 	rt.authed("GET /api/universities/mine", universities.ListMine(d.DB))
+	// Mounted before the {id} routes. ServeMux picks the literal
+	// segment over {id} in any order; the order is for the reader.
+	rt.authed("GET /api/universities/badges", universities.ListBadges())
 	rt.authed("GET /api/universities/{id}", universities.Detail(d.DB))
 	rt.authed("PATCH /api/universities/{id}", universities.Patch(d.DB))
 	rt.authed("DELETE /api/universities/{id}", universities.Delete(d.DB))
+	rt.authed("PUT /api/universities/{id}/periods", universities.PutPeriods(d.DB))
+	rt.authed("POST /api/universities/{id}/classes", universities.CreateClass(d.DB), replayable)
+	rt.authed("PATCH /api/universities/{id}/classes/{classId}", universities.PatchClass(d.DB))
+	rt.authed("DELETE /api/universities/{id}/classes/{classId}", universities.DeleteClass(d.DB))
 
 	// The public read: anyone with the link, so it is rate limited by
 	// address (docs/api-design.md section 6). NoStore is outside the

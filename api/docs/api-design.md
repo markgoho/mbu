@@ -163,7 +163,7 @@ type APIError struct {
    - `429 Too Many Requests`: Rate limit reached.
    - `500 Internal Server Error`: Unhandled server or database error (log details internally, do not leak raw stack traces to caller).
 3. **A client tells refusals apart by `code`, never by `message`.** Two refusals with the same status that the app must handle differently get two codes.
-4. **`details` is keyed by the request DTO's own JSON field name**, so a client maps a key onto a form control with no translation table. A field of a nested object is keyed by its dotted path (`location.city` in a University body). A 4xx a person can cause by filling in a form names the field at fault, and its `details` value is worded for that person: say what to do, and start with the field's own noun; where a refusal belongs to no field (a closed Registration Window, a rule about server state), `details` is absent and `message` carries it.
+4. **`details` is keyed by the request DTO's own JSON field name**, so a client maps a key onto a form control with no translation table. A field of a nested object is keyed by its dotted path (`location.city` in a University body). A 4xx a person can cause by filling in a form names the field at fault, and its `details` value is worded for that person: say what to do, and start with the field's own noun; where a refusal belongs to no field (a closed Registration Window, a rule about server state), `details` is absent and `message` carries it. One exception: the 409 of `PUT /api/universities/{id}/periods` that removes a Period a Class uses keys `details` by the id of each such Class, with its badge title as the value, so the app can name the Classes to move first (#252, #263).
 
 ```jsonc
 // POST /api/universities/{id}/classes, 400

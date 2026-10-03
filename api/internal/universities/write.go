@@ -247,17 +247,9 @@ func deleteUniversity(ctx context.Context, db *sql.DB, c authn.Caller, id string
 	}
 	defer rollback(tx)
 
-	if err := authz.AssertChancellorOf(ctx, tx, c, id); err != nil {
-		return err //nolint:wrapcheck // a refusal, or authz wraps it with its own context
-	}
-	var status string
-	err = tx.QueryRowContext(ctx, `SELECT status FROM universities WHERE id = $1 FOR UPDATE`, id).Scan(&status)
-	if errors.Is(err, sql.ErrNoRows) {
-		return errNotFound
-	}
+	status, err := lockUniversity(ctx, tx, c, id)
 	if err != nil {
-		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
-		return fmt.Errorf("universities: lock university: %w", err)
+		return err
 	}
 	if status != "draft" {
 		return wrongStatus("Only draft universities can be deleted")
