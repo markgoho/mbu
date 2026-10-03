@@ -11,7 +11,7 @@ The Go service `mbu-api` on Cloud Run with Postgres. It replaces the Elysia APIs
 
 The parent issue #240 holds the plan and the ticket list. The `routes/*.test.ts` files in `functions/src/*-api/` are the behavior specification for the port. Copy a doula-cloud package from `~/github/doula-cloud/api` when it fits, and change its tenancy from Practice and Staff to user uid and University.
 
-**Before a change is done**, these pass in `api/` (the exact commands are in `docs/testing.md`):
+**Before a change is done**, these pass in `api/`. The exact commands are in `docs/testing.md`; #242 and #245 add the tooling that some of them need.
 
 - `gofmt -l .` prints nothing
 - `go vet ./...`

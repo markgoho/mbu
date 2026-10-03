@@ -16,7 +16,7 @@ The event-platform backend is five Elysia apps on Cloud Functions (`healthApi`, 
 2. **Standard library HTTP.** `net/http` with `http.ServeMux` method patterns. No web framework.
 3. **Data access is `database/sql` with the pgx driver and plain SQL.** No ORM, no code generator. Migrations use goose (see [ADR 0002](0002-postgres-on-cloud-sql.md)).
 4. **The HTTP contract stays the same, with one exception.** The same paths, methods and JSON success bodies as `functions/`, so the app's API types stay valid. The error body becomes `{ "code", "message", "details" }` with UPPER_SNAKE codes, written only by an `apierr` package. The app changes in #263.
-5. **Time is read through a clock seam**, never `time.Now()` directly. The linter enforces this.
+5. **Time is read through a clock seam**, never `time.Now()` directly. A linter rule enforces this (#242 adds the `clock` package, #245 the lint gate).
 6. **Tests are HTTP-boundary tests against real Postgres.** A test builds the route table with `routes(Deps)`, sends a request, and asserts on the response and on database state. No service-layer unit tests. Vendors (Mailgun, the token verifier) are fakes at the `Deps` seam. See [`../testing.md`](../testing.md).
 7. **Copy, then adapt.** When a doula-cloud package fits, copy it and change names and tenancy: doula-cloud scopes by Practice and Staff; MBU scopes by user uid and University.
 

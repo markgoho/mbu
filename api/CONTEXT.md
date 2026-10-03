@@ -7,11 +7,11 @@ A self-serve SaaS that lets any adult Scouter run a Merit Badge University: crea
 ### Events
 
 **University**:
-One dated Merit Badge University event: a title, a location, an IANA timezone, a start date (and an end date for a multi-day event), a Registration window, and a set of Periods. It is private: a Parent reaches it only through its link (`noindex`, not listed). It is the tenancy scope of the platform: Role Grants, Classes and Registrations all belong to one University.
+One dated Merit Badge University event: a title, a location, an IANA timezone, a start date (and an end date for a multi-day event), a Registration Window, and a set of Periods. It is private: a Parent reaches it only through its link (`noindex`, not listed). It is the tenancy scope of the platform: Role Grants, Classes and Registrations all belong to one University.
 _Avoid_: Event (unqualified), MBU (for one event), session
 
 **University Status**:
-Where a University is in its moderation state machine: `draft` → `submitted` → `needs_review` → `published` → `closed`, or `rejected`. Only a `published` University takes Registrations. A Super-admin approves or rejects a submitted University from the review queue.
+Where a University is in its moderation state machine. The legal moves are: `draft` → `submitted`; `submitted` → `published` or `rejected`; `rejected` → `submitted`; `published` → `closed`. A Super-admin approves or rejects a submitted University from the review queue. `needs_review` is reserved for later automated triage (#92) and has no moves yet. Only a `published` University takes Registrations.
 _Avoid_: State, phase
 
 **Period**:

@@ -123,7 +123,7 @@ APIs run at code speed, not human click speed. Protect the backend against unthr
    - `RateLimit-Limit`: Total allowed requests in the time window.
    - `RateLimit-Remaining`: Remaining quota in the current window.
    - `Retry-After`: Seconds to wait before retrying when `429 Too Many Requests` is returned.
-2. **Stricter Limits on Heavy Endpoints**: Apply tighter rate limits on operations that trigger expensive database queries, PDF generation, or third-party API calls (e.g. Mailgun, Stripe).
+2. **Stricter Limits on Heavy Endpoints**: Apply tighter rate limits on operations that trigger expensive database queries or third-party API calls (e.g. Mailgun).
 3. **Tenant-Level Isolation & Killswitches**: Provide the ability to rate limit or disable access at the `University` or user level to isolate noisy neighbors.
 
 Counters live in Postgres, not in process memory: Cloud Run runs more than one instance, so an in-process counter does not limit anything. The seam is a decorator around the handler, the same shape as the idempotency wrapper. #247 builds it.
@@ -156,11 +156,11 @@ type APIError struct {
    - `401 Unauthorized`: Missing or invalid authentication token.
    - `403 Forbidden`: Authenticated user lacks permission for the University/resource.
    - `404 Not Found`: Target resource does not exist (or caller lacks permission to know it exists).
-   - `409 Conflict`: Resource state conflict (e.g., a Period conflict, or a University in the wrong status) or duplicate idempotency key conflict.
+   - `409 Conflict`: Resource state conflict (e.g., a Period Conflict, or a University in the wrong status) or duplicate idempotency key conflict.
    - `429 Too Many Requests`: Rate limit reached.
    - `500 Internal Server Error`: Unhandled server or database error (log details internally, do not leak raw stack traces to caller).
 3. **A client tells refusals apart by `code`, never by `message`.** Two refusals with the same status that the app must handle differently get two codes.
-4. **`details` is keyed by the request DTO's own JSON field name**, so a client maps a key onto a form control with no translation table. A 4xx a person can cause by filling in a form names the field at fault; where a refusal belongs to no field (a closed Registration window, a rule about server state), `details` is absent and `message` carries it.
+4. **`details` is keyed by the request DTO's own JSON field name**, so a client maps a key onto a form control with no translation table. A 4xx a person can cause by filling in a form names the field at fault, and its `details` value is worded for that person: say what to do, and start with the field's own noun; where a refusal belongs to no field (a closed Registration Window, a rule about server state), `details` is absent and `message` carries it.
 
 ```jsonc
 // POST /api/universities/{id}/classes, 400
@@ -171,7 +171,8 @@ type APIError struct {
 }
 ```
 
-5. **One Writer**: `api/internal/apierr` is the only place this shape is written from. Every handler calls `apierr.Write` (or `apierr.WriteError` for the common status+message case) rather than `http.Error` or a package-local helper; a new endpoint that needs a `Code` not yet in `apierr.Code`'s enumerated set adds one there. The success body has the same rule: every handler calls `apierr.WriteJSON(w, status, v)` rather than setting `Content-Type` and calling `json.NewEncoder(w).Encode` itself, and every request-body decode calls `apierr.DecodeJSON(w, r, &v)`, which wraps the body in `http.MaxBytesReader` at `apierr.MaxRequestBodyBytes` (1 MiB) before decoding.
+5. **One Writer** (#242 copies `apierr` from doula-cloud): `api/internal/apierr` is the only place this shape is written from. Every handler calls `apierr.Write` (or `apierr.WriteError` for the common status+message case) rather than `http.Error` or a package-local helper; a new endpoint that needs a `Code` not yet in `apierr.Code`'s enumerated set adds one there. The success body has the same rule: every handler calls `apierr.WriteJSON(w, status, v)` rather than setting `Content-Type` and calling `json.NewEncoder(w).Encode` itself, and every request-body decode calls `apierr.DecodeJSON(w, r, &v)`, which wraps the body in `http.MaxBytesReader` at `apierr.MaxRequestBodyBytes` (1 MiB) before decoding.
+6. **A 403 says which kind of refusal it is.** A 403 carries a code from a closed set in `apierr`, one code for each kind of action the reader can take: `FORBIDDEN` for a role refusal (also the default), and a specific code for a condition the reader can fix (e.g., `EMAIL_NOT_VERIFIED`). A new kind of 403 adds a code to that set; it does not reuse `FORBIDDEN` with new wording.
 
 ---
 
@@ -179,14 +180,14 @@ type APIError struct {
 
 When adding or modifying an HTTP endpoint in `api/`:
 
-| Check                  | Requirement                                                                                                                                                                                         |
-| :--------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Domain Terms**       | Uses exact vocabulary from [`CONTEXT.md`](../CONTEXT.md) (e.g., `University`, `Class`, `Period`, `Registration`).                                                                                   |
-| **DTO Decoupling**     | Handler accepts and returns dedicated DTO structs, not database models.                                                                                                                             |
-| **JSON Tags**          | All DTO struct fields have explicit `json:"camelCase"` tags.                                                                                                                                        |
-| **Contract Stability** | Edits to existing responses are purely additive (no deletions/renames).                                                                                                                             |
-| **Idempotency**        | Non-idempotent mutating `POST` actions accept `Idempotency-Key`.                                                                                                                                    |
-| **Pagination**         | Unbounded lists use cursor pagination with a standard `PaginatedResponse[T]` envelope.                                                                                                              |
-| **Lean Payloads**      | Expensive relations are opt-in via `?include=`.                                                                                                                                                     |
-| **Rate Limits**        | An unauthenticated route is limited, or section 6 says why it is not.                                                                                                                               |
-| **Errors**             | Refusals go through `apierr.Write`/`apierr.WriteError`, never `http.Error` or a package-local helper. A 4xx a form can cause carries `details` keyed by the DTO's `json:` tag, worded for a person. |
+| Check                  | Requirement                                                                                                                                                                                                                                                  |
+| :--------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Domain Terms**       | Uses exact vocabulary from [`CONTEXT.md`](../CONTEXT.md) (e.g., `University`, `Class`, `Period`, `Registration`).                                                                                                                                            |
+| **DTO Decoupling**     | Handler accepts and returns dedicated DTO structs, not database models.                                                                                                                                                                                      |
+| **JSON Tags**          | All DTO struct fields have explicit `json:"camelCase"` tags.                                                                                                                                                                                                 |
+| **Contract Stability** | Edits to existing responses are purely additive (no deletions/renames).                                                                                                                                                                                      |
+| **Idempotency**        | Non-idempotent mutating `POST` actions accept `Idempotency-Key`.                                                                                                                                                                                             |
+| **Pagination**         | Unbounded lists use cursor pagination with a standard `PaginatedResponse[T]` envelope.                                                                                                                                                                       |
+| **Lean Payloads**      | Expensive relations are opt-in via `?include=`.                                                                                                                                                                                                              |
+| **Rate Limits**        | An unauthenticated route is limited, or section 6 says why it is not.                                                                                                                                                                                        |
+| **Errors**             | Refusals go through `apierr.Write`/`apierr.WriteError`, never `http.Error` or a package-local helper. A 4xx a form can cause carries `details` keyed by the DTO's `json:` tag, worded for a person. A 403 carries a code from the `apierr` set of 403 codes. |

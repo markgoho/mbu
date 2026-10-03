@@ -3,11 +3,11 @@
 - **Status:** Accepted
 - **Date:** 2026-10-02
 - **Applies to:** `api/**`, `api/db/migrations/**`
-- **Related:** #240 (decisions 2, 3, 4), #243 (data model), #244 (migrations and test database), #259 (Cloud SQL). Source: doula-cloud `api/internal/testdb` and `api/db/migrations`. doula-cloud fences Practice from Practice with row-level security (its ADR-0006 and `api/internal/rlsguardrail`); MBU does not take that part.
+- **Related:** #240 (decisions 2, 3, 4), #243 (data model), #244 (migrations and test database), #259 (Cloud SQL). Source: doula-cloud `api/internal/testdb` and `api/db/migrations`. doula-cloud fences Practice from Practice with row-level security, proved by its `api/internal/rlsguardrail` test (its ADR-0006 states the fence); MBU does not take that part.
 
 ## Context
 
-The data is in Firestore: `users`, `users/{uid}/scouts`, `universities` (Periods embedded), `.../classes`, `.../registrations`, `roleGrants` and `emailLog`. The domain is relational: Capacity, the Waitlist, Period conflicts and Role Grants are joins and constraints. The doula-cloud packages that MBU reuses (idempotency, rate limit, outbox, test database, migrations) are all Postgres-native.
+The data is in Firestore: `users`, `users/{uid}/scouts`, `universities` (Periods embedded), `.../classes`, `.../registrations`, `roleGrants` and `emailLog`. The domain is relational: Capacity, the Waitlist, Period Conflicts and Role Grants are joins and constraints. The doula-cloud packages that MBU reuses (idempotency, rate limit, outbox, test database, migrations) are all Postgres-native.
 
 ## Decision
 
