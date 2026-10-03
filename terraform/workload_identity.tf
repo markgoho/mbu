@@ -27,8 +27,8 @@ resource "google_iam_workload_identity_pool_provider" "github" {
   attribute_mapping = {
     "google.subject"       = "assertion.sub"
     "attribute.repository" = "assertion.repository"
-    # Not read by a binding yet. #260 can narrow the deploy binding to
-    # `attribute.ref/refs/heads/trunk` with it.
+    # The deploy binding below reads it: only a trunk run may act as
+    # mbu-deploy@ (#260).
     "attribute.ref" = "assertion.ref"
   }
 
@@ -42,15 +42,21 @@ resource "google_iam_workload_identity_pool_provider" "github" {
 }
 
 # The pool's `name` carries the project number, the only form the token
-# exchange matches. Both bindings below name this one string.
+# exchange matches.
+#
+# terraform-plan@ takes any ref of the repository: the drift check (#262)
+# runs on pull requests. mbu-deploy@ takes refs/heads/trunk only (#260): a
+# pull request or a branch run cannot migrate or deploy. The provider's
+# attribute_condition already limits both to this repository.
 locals {
   github_repository_principal_set = "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.github_actions.name}/attribute.repository/${local.github_repository}"
+  github_trunk_principal_set      = "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.github_actions.name}/attribute.ref/refs/heads/trunk"
 }
 
 resource "google_service_account_iam_member" "deploy_workload_identity_user" {
   service_account_id = google_service_account.deploy.name
   role               = "roles/iam.workloadIdentityUser"
-  member             = local.github_repository_principal_set
+  member             = local.github_trunk_principal_set
 }
 
 resource "google_service_account_iam_member" "terraform_plan_workload_identity_user" {

@@ -1,0 +1,214 @@
+name: Deploy Go API
+
+# A trunk push that changes api/ runs the checks, migrates the database
+# and deploys a new revision of mbu-api (#260). Order: checks -> migrate ->
+# deploy -> smoke. A failed job stops every job after it.
+# api/docs/infrastructure.md, "How a deploy works", is the runbook.
+#
+# The switch: on a push, `migrate` (and so everything after it) runs only
+# when the repository variable API_DEPLOY_ENABLED is `true`. Until the
+# Terraform apply has made the GCP resources, the variable is unset, and a
+# push runs the checks only and stays green. `workflow_dispatch` on trunk
+# runs the full pipeline without the variable: use it for the first deploy.
+#
+# Keep the push paths the same as the pull_request paths of
+# api-pull-request.yml.
+on:
+  push:
+    branches:
+      - trunk
+    paths:
+      - "api/**"
+      - "scripts/migrate.sh"
+      - "scripts/merit-badges.ts"
+      - "scripts/generate-api-badge-catalog.ts"
+      - ".github/workflows/api-deploy-merge.yml"
+      - ".github/workflows/api-pull-request.yml"
+  workflow_dispatch: {}
+
+# Never cancel a run: a cancelled migration can stop half way. GitHub keeps
+# one run in progress and one queued; a third push replaces the queued one.
+# That is acceptable: `migrate` applies every migration up to HEAD and
+# `deploy` ships HEAD, so the next run covers the skipped commit.
+concurrency:
+  group: api-deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+# Only `migrate` and `deploy` mint a Google credential; they add
+# id-token: write for themselves.
+permissions:
+  contents: read
+
+jobs:
+  # The same checks as a pull request (gofmt, vet, lint, tests, 100% line
+  # coverage, the Badge Catalog, the image boot test), called, not copied.
+  checks:
+    uses: ./.github/workflows/api-pull-request.yml
+    permissions:
+      contents: read
+
+  # Applies the pending goose migrations as migrate_login, through the
+  # Cloud SQL Auth Proxy (scripts/migrate.sh). A failure stops the deploy.
+  migrate:
+    needs: checks
+    # The switch (see the top of this file). Only trunk: the Workload
+    # Identity binding of mbu-deploy@ accepts refs/heads/trunk only, so a
+    # run from another branch would fail at the auth step.
+    if: github.ref == 'refs/heads/trunk' && (github.event_name == 'workflow_dispatch' || vars.API_DEPLOY_ENABLED == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: google-github-actions/auth@v3.0.0
+        with:
+          project_id: merit-badge-university
+          workload_identity_provider: projects/643912800060/locations/global/workloadIdentityPools/github-actions/providers/github
+          service_account: mbu-deploy@merit-badge-university.iam.gserviceaccount.com
+
+      # `go tool goose` in scripts/migrate.sh.
+      - uses: actions/setup-go@v7.0.0
+        with:
+          go-version-file: api/go.mod
+          cache-dependency-path: api/go.sum
+
+      # From Google's storage bucket, retried with a 10s gap like the
+      # actionlint install.
+      - name: Install the Cloud SQL Auth Proxy
+        run: |
+          for attempt in 1 2 3; do
+            if curl -fsSL -o /usr/local/bin/cloud-sql-proxy https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.26.0/cloud-sql-proxy.linux.amd64; then
+              chmod +x /usr/local/bin/cloud-sql-proxy
+              exit 0
+            fi
+            echo "cloud-sql-proxy install attempt ${attempt} failed; retrying in 10s..."
+            sleep 10
+          done
+          exit 1
+
+      # mbu-deploy@ has secretAccessor on this one secret only
+      # (terraform/secrets.tf).
+      - name: Read the migration DSN
+        id: secrets
+        uses: google-github-actions/get-secretmanager-secrets@v3.0.0
+        with:
+          secrets: |-
+            dsn:merit-badge-university/mbu-pg-migrate-dsn
+
+      # The DSN is postgres://migrate_login:<hex password>@127.0.0.1:5432/mbu?sslmode=disable
+      # (api/docs/infrastructure.md). Only the user, password and database
+      # are read from it: migrate.sh starts the proxy itself on
+      # 127.0.0.1:5432.
+      - name: Apply migrations
+        env:
+          MIGRATE_DSN: ${{ steps.secrets.outputs.dsn }}
+          INSTANCE_CONNECTION_NAME: merit-badge-university:us-east4:mbu-pg
+        run: |
+          case "$MIGRATE_DSN" in
+            postgres://*@*/*) ;;
+            *)
+              echo "mbu-pg-migrate-dsn is not of the form postgres://<user>:<password>@<host>/<db>" >&2
+              exit 1
+              ;;
+          esac
+          without_scheme="${MIGRATE_DSN#postgres://}"
+          userpass="${without_scheme%%@*}"
+          rest="${without_scheme#*@}"
+          db_name="${rest#*/}"
+          DB_USER="${userpass%%:*}"
+          DB_PASS="${userpass#*:}"
+          DB_NAME="${db_name%%\?*}"
+          echo "::add-mask::$DB_PASS"
+          export DB_USER DB_PASS DB_NAME
+          ./scripts/migrate.sh
+
+  # Builds api/Dockerfile, pushes it, and points mbu-api at it. Terraform
+  # owns everything else on the service (#259): this job changes only the
+  # image and the revision label commit-sha, which cloud_run.tf lists in
+  # ignore_changes. It sets no environment variable and no secret.
+  deploy:
+    needs: migrate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    outputs:
+      url: ${{ steps.deploy.outputs.url }}
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: google-github-actions/auth@v3.0.0
+        with:
+          project_id: merit-badge-university
+          workload_identity_provider: projects/643912800060/locations/global/workloadIdentityPools/github-actions/providers/github
+          service_account: mbu-deploy@merit-badge-university.iam.gserviceaccount.com
+
+      - uses: google-github-actions/setup-gcloud@v3.0.1
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker us-east4-docker.pkg.dev --quiet
+
+      - uses: docker/setup-buildx-action@v4.4.1
+
+      - name: Build and push the image
+        uses: docker/build-push-action@v7.3.0
+        with:
+          context: api
+          push: true
+          tags: us-east4-docker.pkg.dev/merit-badge-university/api/mbu-api:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # skip_default_labels: the action's defaults add `managed-by` as
+      # well as `commit-sha`, and ignore_changes in cloud_run.tf covers
+      # commit-sha only. `managed-by` would make `terraform plan` non-empty.
+      #
+      # --service-account names the runtime identity on each deploy, so a
+      # revision never falls back to the default compute account.
+      # mbu-deploy@ has iam.serviceAccountUser on this account only.
+      - name: Deploy to Cloud Run
+        id: deploy
+        uses: google-github-actions/deploy-cloudrun@v3.0.1
+        with:
+          service: mbu-api
+          region: us-east4
+          project_id: merit-badge-university
+          image: us-east4-docker.pkg.dev/merit-badge-university/api/mbu-api:${{ github.sha }}
+          env_vars_update_strategy: merge
+          skip_default_labels: true
+          labels: commit-sha=${{ github.sha }}
+          flags: --service-account=mbu-api-runtime@merit-badge-university.iam.gserviceaccount.com
+
+  # The new revision answers GET /api/health on its run.app URL with the
+  # API's own body: the placeholder image of the first apply answers 200 on
+  # every path, so the status code alone does not prove the deploy. The
+  # Firebase Hosting rewrite still points /api/** at Cloud Functions until
+  # the cutover (#264).
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: GET /api/health
+        env:
+          SERVICE_URL: ${{ needs.deploy.outputs.url }}
+        run: |
+          if [ -z "$SERVICE_URL" ]; then
+            echo "The deploy job gave no service URL." >&2
+            exit 1
+          fi
+          url="${SERVICE_URL%/}/api/health"
+          for attempt in 1 2 3 4 5; do
+            if curl -fsS --max-time 10 "$url" | grep -q '"status":"ok"'; then
+              echo "$url answered 200 with status ok."
+              exit 0
+            fi
+            echo "Attempt ${attempt}: no 200 with status ok from $url; retrying in 5s..."
+            sleep 5
+          done
+          echo "The deployed revision did not answer on $url" >&2
+          exit 1
