@@ -1,0 +1,164 @@
+name: Terraform Plan
+
+# The drift check (#262, ADR 0006). It runs `terraform plan` as the
+# read-only terraform-plan@ account, through the `github-actions` Workload
+# Identity pool. A non-empty plan is a red run: the live project no longer
+# matches terraform/. `apply` never runs in CI; the owner applies from a
+# laptop. Copied from doula-cloud's terraform-plan.yml.
+# api/docs/infrastructure.md, "The drift check", is the runbook.
+#
+# The switch: the job runs only when the repository variable
+# TERRAFORM_PLAN_ENABLED is `true`, or on a manual run. Until the first
+# apply, the state bucket and terraform-plan@ do not exist, and a plan
+# would be red on each pull request. Without the variable the job is
+# skipped, and a skipped job counts as a passed required check.
+#
+# No `paths` filter: a required check whose workflow does not start never
+# reports, and blocks the pull request. Drift also has no commit, so each
+# pull request, each trunk push and a daily schedule run the plan.
+on:
+  pull_request:
+  push:
+    branches:
+      - trunk
+  schedule:
+    # Daily at 09:41 UTC. A console change makes no commit, so only a
+    # schedule finds it. Not on the hour, when GitHub delays scheduled runs.
+    - cron: "41 9 * * *"
+  workflow_dispatch: {}
+
+# Never cancel a run: a run cancelled while it holds the GCS state lock can
+# leave the lock behind. Runs of different refs wait for each other through
+# the lock itself (-lock-timeout below).
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    name: Terraform plan
+    # The switch (see the top of this file). A pull request from a fork or
+    # from Dependabot cannot mint an OIDC token, so the auth step would
+    # fail: skip those, which also reports as passed.
+    if: >-
+      (github.event_name == 'workflow_dispatch' || vars.TERRAFORM_PLAN_ENABLED == 'true')
+      && github.actor != 'dependabot[bot]'
+      && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    # Room for the 480s -lock-timeout, plus setup and the plan.
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    defaults:
+      run:
+        working-directory: terraform
+    steps:
+      # Full history: the stale-branch check below needs the merge base with
+      # origin/trunk.
+      - uses: actions/checkout@v7.0.0
+        with:
+          fetch-depth: 0
+
+      - uses: google-github-actions/auth@v3.0.0
+        with:
+          project_id: merit-badge-university
+          workload_identity_provider: projects/643912800060/locations/global/workloadIdentityPools/github-actions/providers/github
+          service_account: terraform-plan@merit-badge-university.iam.gserviceaccount.com
+
+      # terraform_wrapper: false is necessary. The wrapper always exits 0,
+      # so `-detailed-exitcode` would never make the job red.
+      - uses: hashicorp/setup-terraform@v4.0.1
+        with:
+          terraform_version: "~1.16"
+          terraform_wrapper: false
+
+      - name: Terraform init
+        run: terraform init -input=false -lockfile=readonly
+
+      # The human-readable plan is never printed: the summary names the
+      # resources and the changed attribute NAMES, never a value. Exit code 1
+      # (the command failed, for example a missing read permission or the
+      # state lock) is not drift and prints the full log. `mode == "managed"`
+      # keeps a data source out of the drift table.
+      - name: Terraform plan
+        env:
+          TF_IN_AUTOMATION: "true"
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set +e
+          terraform plan -detailed-exitcode -input=false -no-color -lock-timeout=480s -out=tfplan > plan-raw.log 2>&1
+          plan_exit=$?
+          set -e
+
+          if [ "$plan_exit" -eq 1 ]; then
+            if grep -q "Error acquiring the state lock" plan-raw.log; then
+              echo "terraform plan could not get the state lock. This is not drift."
+              grep -A6 "^Lock Info:" plan-raw.log || true
+              echo
+              echo "If Who: names a laptop apply, run this check again when the apply is done."
+              echo "If Who: names a run that is not running now, the lock is stranded: see api/docs/infrastructure.md, \"State\"."
+            else
+              echo "terraform plan failed. This is not drift:"
+            fi
+            cat plan-raw.log
+            exit 1
+          fi
+
+          if [ "$plan_exit" -eq 0 ]; then
+            echo "No changes. The live project matches terraform/." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          terraform show -json tfplan > plan.json
+
+          drift_table=$(jq -r '
+            def changed_keys(b; a):
+              (b // {}) as $b | (a // {}) as $a |
+              (($b | keys) + ($a | keys) | unique) as $allkeys |
+              ($allkeys | map(select($b[.] != $a[.])));
+
+            [.resource_changes[] | select(.mode == "managed" and .change.actions != ["no-op"])] as $drifted
+            | ($drifted | length | tostring) + " resource(s) differ from the live project. Attribute names only, never values.\n\n" +
+              "| Resource | Action | Changed attributes |\n|---|---|---|\n" +
+              ( [ $drifted[]
+                  | "| `" + .address + "` | " + (.change.actions | join(",")) + " | " + (changed_keys(.change.before; .change.after) | join(", ")) + " |"
+                ] | join("\n") )
+          ' plan.json)
+
+          # A stale branch is not drift. A pull request's checkout is
+          # refs/pull/<n>/merge, made at the last push to the branch. If trunk
+          # merged (and the owner applied) a terraform/ change after this
+          # branch's merge base, the plan compares old configuration with a
+          # live project that moved on. Only a push (a rebase) fixes that.
+          stale=""
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            git fetch --quiet origin trunk || true
+            merge_base=$(git merge-base HEAD origin/trunk 2>/dev/null || true)
+            if [ -n "$merge_base" ] && [ -n "$(git diff --name-only "$merge_base" origin/trunk -- .)" ]; then
+              stale=1
+            fi
+          fi
+
+          if [ -n "$stale" ]; then
+            {
+              echo "This branch is behind \`trunk\` on a Terraform change. This is not drift."
+              echo
+              echo "\`trunk\` merged these \`terraform/\` changes after the last push to this branch, and the live project already has them:"
+              echo
+              git log --oneline "$merge_base"..origin/trunk -- .
+              echo
+              echo "**Rebase onto \`trunk\` and push.** A rerun does not help: the merge ref changes only on a push. If the plan is still not empty after the rebase, it is drift."
+              echo
+              echo "$drift_table"
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "This branch is behind trunk on a Terraform change: rebase onto trunk and push. See the job summary."
+            exit 1
+          fi
+
+          echo "$drift_table" >> "$GITHUB_STEP_SUMMARY"
+          echo "The plan is not empty: the live project differs from terraform/. See the job summary for the resources and attributes."
+          exit 1
