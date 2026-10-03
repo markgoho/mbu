@@ -76,7 +76,7 @@ func CreateClassHandler(deps Deps) http.HandlerFunc {
 
 ### Rules
 
-1. **Cursor Pagination for Unbounded Lists**: For any unbounded or growing dataset (e.g., the Super-admin review queue, or a list of Universities), use cursor-based pagination using indexed columns (e.g. `(created_at, id)` or sequential IDs). A list with a natural bound (the Periods of one University, the Classes of one University, a Parent's Scouts) does not need it.
+1. **Cursor Pagination for Unbounded Lists**: For any unbounded or growing dataset (e.g., a list of Universities; the Super-admin review queue is the recorded exception in rule 3), use cursor-based pagination using indexed columns (e.g. `(created_at, id)` or sequential IDs). A list with a natural bound (the Periods of one University, the Classes of one University, a Parent's Scouts) does not need it.
 2. **Consistent Response Envelope**: Wrap paginated list responses in a standard envelope providing `items`, `nextCursor`, and `hasMore`.
 
 ```go
@@ -87,7 +87,8 @@ type PaginatedResponse[T any] struct {
 }
 ```
 
-3. **Efficient Database Querying**:
+3. **The review queue is capped, not paged** (#253). `GET /api/admin/universities/review-queue` can grow, but the app's review page has no paging control. So the port keeps the TypeScript body `{ "universities": [...] }` and answers the oldest 200 submissions (`ORDER BY submitted_at, id LIMIT 200`, served by `universities_review_queue_idx`). #263 needs no change for it. A queue of more than 200 is a backlog the Super-admin works from the front; when the app gets a "load more" control, change this route to the envelope above with `pagecursor` on `(submitted_at, id)`.
+4. **Efficient Database Querying**:
 
 ```sql
 -- Query by cursor comparison rather than OFFSET
@@ -159,7 +160,7 @@ type APIError struct {
    - `401 Unauthorized`: Missing or invalid authentication token.
    - `403 Forbidden`: Authenticated user lacks permission for the University/resource.
    - `404 Not Found`: Target resource does not exist (or caller lacks permission to know it exists).
-   - `409 Conflict`: Resource state conflict (e.g., a Period Conflict, or a University in the wrong status) or duplicate idempotency key conflict.
+   - `409 Conflict`: Resource state conflict (e.g., a Period Conflict, or a University in the wrong status) or duplicate idempotency key conflict. A write that the University's status does not allow is `CONFLICT`; a moderation move (submit, approve, reject, close) that the University Status state machine does not allow is `FAILED_PRECONDITION`, with the message `Cannot transition from <from> to <to>` (#253).
    - `429 Too Many Requests`: Rate limit reached.
    - `500 Internal Server Error`: Unhandled server or database error (log details internally, do not leak raw stack traces to caller).
 3. **A client tells refusals apart by `code`, never by `message`.** Two refusals with the same status that the app must handle differently get two codes.

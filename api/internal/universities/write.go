@@ -41,7 +41,7 @@ func wrongStatus(message string) *apierr.RefusalError {
 // assertEditable refuses a change to a University that is not draft or
 // rejected: after submit, only moderation moves change it.
 func assertEditable(status string) error {
-	if status != "draft" && status != "rejected" {
+	if status != statusDraft && status != statusRejected {
 		return wrongStatus("Only draft or rejected universities can be modified")
 	}
 	return nil
@@ -251,7 +251,7 @@ func deleteUniversity(ctx context.Context, db *sql.DB, c authn.Caller, id string
 	if err != nil {
 		return err
 	}
-	if status != "draft" {
+	if status != statusDraft {
 		return wrongStatus("Only draft universities can be deleted")
 	}
 	if _, err := tx.ExecContext(ctx, `DELETE FROM universities WHERE id = $1`, id); err != nil {

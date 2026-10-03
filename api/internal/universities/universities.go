@@ -1,7 +1,8 @@
 // Package universities serves the University routes: create, list mine,
 // detail, patch, delete and the public read (#251), and the schedule:
 // the Period set, Class create, patch and delete, and the Badge Catalog
-// list (#252). It is the Go port of functions/src/universities-api.
+// list (#252), and moderation: the University Status moves and the
+// Super-admin's review queue (#253). It is the Go port of functions/src/universities-api.
 // Each handler but Public runs behind authn.Middleware and reads the
 // Caller from the request context.
 package universities
