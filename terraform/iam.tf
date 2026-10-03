@@ -167,3 +167,19 @@ resource "google_service_account" "internal_caller" {
     prevent_destroy = true
   }
 }
+
+# Cloud Scheduler mints the OIDC token of each job in scheduler.tf through its
+# service agent, which needs `iam.serviceAccounts.getOpenIdToken` on this
+# account. `roles/iam.serviceAccountTokenCreator` carries it;
+# `roles/iam.serviceAccountUser` does not (`gcloud iam roles describe`). In
+# doula-cloud the agent holds it project-wide through
+# `roles/cloudscheduler.serviceAgent`. In this project the agent had no
+# project binding when #261 was written. The platform can add that binding
+# when it makes the agent, but this grant does not depend on it: it is
+# explicit and limited to this one account. The agent account must exist before this apply: the
+# runbook makes it with `gcloud beta services identity create`.
+resource "google_service_account_iam_member" "scheduler_agent_mints_internal_caller" {
+  service_account_id = google_service_account.internal_caller.name
+  role               = "roles/iam.serviceAccountTokenCreator"
+  member             = "serviceAccount:service-${local.project_number}@gcp-sa-cloudscheduler.iam.gserviceaccount.com"
+}
