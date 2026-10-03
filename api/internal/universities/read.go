@@ -221,7 +221,7 @@ func loadSchedule(ctx context.Context, db *sql.DB, id string, publishedOnly bool
 	if err != nil {
 		return s, fmt.Errorf("universities: read university: %w", err)
 	}
-	if publishedOnly && u.status != "published" {
+	if publishedOnly && u.status != statusPublished {
 		return s, errNotFound
 	}
 	s.university = u

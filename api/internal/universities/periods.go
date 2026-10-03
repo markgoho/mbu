@@ -150,13 +150,20 @@ func lockUniversity(ctx context.Context, tx *sql.Tx, c authn.Caller, universityI
 	if err := authz.AssertChancellorOf(ctx, tx, c, universityID); err != nil {
 		return "", err //nolint:wrapcheck // a refusal, or authz wraps it with its own context
 	}
+	return lockStatus(ctx, tx, universityID)
+}
+
+// lockStatus takes the University's row lock (FOR UPDATE) and returns
+// its status; 404 when it is missing. The caller has made its role
+// check.
+func lockStatus(ctx context.Context, tx *sql.Tx, universityID string) (string, error) {
 	var status string
 	err := tx.QueryRowContext(ctx, `SELECT status FROM universities WHERE id = $1 FOR UPDATE`, universityID).Scan(&status)
 	if errors.Is(err, sql.ErrNoRows) {
 		return "", errNotFound
 	}
 	if err != nil {
-		// coverage:ignore reason: a database failure inside a schedule transaction, not reachable from a test
+		// coverage:ignore reason: a database failure inside a write transaction, not reachable from a test
 		return "", fmt.Errorf("universities: lock university: %w", err)
 	}
 	return status, nil
