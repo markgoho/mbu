@@ -134,7 +134,7 @@ Each rate-limited MBU route, and why. A ticket that adds or limits a route adds 
 | Route | Rules | Reason |
 | :---- | :---- | :----- |
 | `GET /api/health` | none | The health probe for Cloud Run and the image smoke test. It reads no database and calls no vendor, so a flood of it costs no more than any request the load balancer refuses. |
-| `GET /api/universities/{id}/public` | `ratelimit.IPRule(d.ClientIP, 600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is one query. #251 mounts it. The key is the `X-Forwarded-For` entry that `CLIENT_IP_PROXY_HOPS` names (#293). #296 checks the deployed header and the `run.app` bypass. |
+| `GET /api/universities/{id}/public` | `ratelimit.IPRule(d.ClientIP, 600, time.Hour)` | Anybody can read a published University. The limit bounds the cost of a script, not a person: the real peak is a troop meeting where thirty families on one Wi-Fi address open the same link and reload it, about 20 reads each in an hour, so 600. The ids are uuids, so a script cannot walk them, and the read is a few indexed queries. #251 mounted it, with `Cache-Control: no-store` outside the limit, so a 404 or a 429 is not cached either. The key is the `X-Forwarded-For` entry that `CLIENT_IP_PROXY_HOPS` names (#293). #296 checks the deployed header and the `run.app` bypass. |
 
 ---
 
@@ -163,7 +163,7 @@ type APIError struct {
    - `429 Too Many Requests`: Rate limit reached.
    - `500 Internal Server Error`: Unhandled server or database error (log details internally, do not leak raw stack traces to caller).
 3. **A client tells refusals apart by `code`, never by `message`.** Two refusals with the same status that the app must handle differently get two codes.
-4. **`details` is keyed by the request DTO's own JSON field name**, so a client maps a key onto a form control with no translation table. A 4xx a person can cause by filling in a form names the field at fault, and its `details` value is worded for that person: say what to do, and start with the field's own noun; where a refusal belongs to no field (a closed Registration Window, a rule about server state), `details` is absent and `message` carries it.
+4. **`details` is keyed by the request DTO's own JSON field name**, so a client maps a key onto a form control with no translation table. A field of a nested object is keyed by its dotted path (`location.city` in a University body). A 4xx a person can cause by filling in a form names the field at fault, and its `details` value is worded for that person: say what to do, and start with the field's own noun; where a refusal belongs to no field (a closed Registration Window, a rule about server state), `details` is absent and `message` carries it.
 
 ```jsonc
 // POST /api/universities/{id}/classes, 400
