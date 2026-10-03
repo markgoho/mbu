@@ -8,6 +8,8 @@ Some files named below do not exist yet. Each section names the ticket that buil
 
 A test is an HTTP-boundary test against real Postgres ([ADR 0001](adr/0001-go-on-cloud-run.md), #240 decision 10). It builds the route table with `routes(Deps)`, sends a request, and asserts on the response and on database state. Vendors (Mailgun, the token verifier) are fakes at the `Deps` seam. There are no service-layer unit tests.
 
+A command in `cmd/` (`seed`, `superadmin`, `migrate`) has no HTTP boundary. Its test calls the function that holds its logic, against `testdb` when it writes SQL, and with a fake for the Firebase Admin SDK.
+
 The old `functions/src/*-api/routes/*.test.ts` files are the specification. Each case becomes a Go handler test, unless a decision in #240 changes the behavior.
 
 ## Before a change is done
@@ -106,7 +108,7 @@ Compute a due time in SQL from the database clock, never on the host. Give the f
 Migrations live in `api/db/migrations` and use goose ([ADR 0002](adr/0002-postgres-on-cloud-sql.md)); goose is a Go tool dependency in `api/go.mod` (`go tool goose`). The package embeds the `.sql` files, so `internal/testdb` and `cmd/migrate` apply the same set.
 
 - **Roles.** `00001_bootstrap.sql` creates `app_runtime`, a `NOLOGIN` group role. The migration owner is the login that runs goose (`postgres` on Cloud SQL, the container superuser in tests); it creates and owns every table, and no migration names it. Each table migration grants `app_runtime` `SELECT`, `INSERT`, `UPDATE` and `DELETE` on its tables and nothing else. The service logs in as a Cloud SQL user that is a member of `app_runtime` (#259). There is no row-level security.
-- **Locally.** `DATABASE_URL=postgres://... go run ./cmd/migrate` applies the pending migrations to any Postgres it can reach.
+- **Locally.** `DATABASE_URL=postgres://... go run ./cmd/migrate` applies the pending migrations to any Postgres it can reach. `bun run dev:platform` and `bun run dev:api` run it on each start (see [`environment.md`](environment.md)).
 - **At deploy time.** `scripts/migrate.sh` applies them through the Cloud SQL Auth Proxy as the migration owner, as a blocking step before the new revision deploys (#260). If a migration fails, the script exits non-zero and the deploy stops.
 - **The schema test.** `db/migrations/schema_test.go` proves each constraint that holds an invariant of [`data-model.md`](data-model.md): the keys, the `CHECK` constraints by name, the foreign-key delete behavior, that `app_runtime` cannot run DDL, and that each table grants `app_runtime` exactly the four data privileges. A new table or constraint gets a case there.
 

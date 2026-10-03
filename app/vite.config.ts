@@ -7,14 +7,9 @@ import { defineConfig } from 'vitest/config';
 // in one fixed timezone and do not depend on the machine.
 const TEST_TIMEZONE = 'America/New_York';
 
-// The local Functions emulator serves one Cloud Function for each API domain,
-// so each path prefix has its own target. Do not collapse these into one
-// `/api` entry (#228, decision 10).
-const FUNCTIONS_EMULATOR = 'http://localhost:5001/merit-badge-university/us-east4';
-
-function functionProxy(functionName: string) {
-  return { target: `${FUNCTIONS_EMULATOR}/${functionName}`, changeOrigin: true, secure: false };
-}
+// The dev server sends each `/api` call to the Go API that `bun run dev:platform`
+// (repo root) starts on port 8080 (#246).
+const API_TARGET = 'http://localhost:8080';
 
 export default defineConfig({
   plugins: [
@@ -33,11 +28,7 @@ export default defineConfig({
     port: 4200,
     strictPort: true,
     proxy: {
-      '/api/health': functionProxy('healthApi'),
-      '/api/users': functionProxy('usersApi'),
-      '/api/universities': functionProxy('universitiesApi'),
-      '/api/admin/universities': functionProxy('universitiesApi'),
-      '/api/registrations': functionProxy('registrationsApi'),
+      '/api': { target: API_TARGET, changeOrigin: true },
     },
   },
   test: {

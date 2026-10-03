@@ -47,17 +47,9 @@ The Playwright suite is a smoke suite. It stays small: the unit specs own the be
 
 ## Dev proxy
 
-The API is one Cloud Function for each domain. The dev server sends each path prefix to its function in the local Functions emulator (`http://localhost:5001/merit-badge-university/us-east4/<function>`):
+The dev server sends each `/api` call to the Go API on `http://localhost:8080` (one entry in `vite.config.ts`). To start the API, the database and the Auth emulator together with the dev server, run `bun run dev:platform` in the repo root. `bun run seed:platform` fills them with seed data. The details are in `api/docs/environment.md`.
 
-| Path prefix               | Function           |
-| ------------------------- | ------------------ |
-| `/api/health`             | `healthApi`        |
-| `/api/users`              | `usersApi`         |
-| `/api/universities`       | `universitiesApi`  |
-| `/api/admin/universities` | `universitiesApi`  |
-| `/api/registrations`      | `registrationsApi` |
-
-The entries are in `vite.config.ts`. Start the emulators from the repo root before you call the API from the dev server.
+The Go API has only `GET /api/health` until the route tickets of #240 (#249 to #255) land. Until then, the other calls from the dev server get a 404.
 
 ## Auth and API client
 
