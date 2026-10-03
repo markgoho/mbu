@@ -206,14 +206,18 @@ func wantRefusal(t *testing.T, resp *http.Response, status int, code apierr.Code
 	return got
 }
 
-// usersRoutes is each /api/users/me route with a body that passes its
-// checks.
+// usersRoutes is each route under /api/users/me, the Scout routes
+// included, with a body that passes its checks.
 var usersRoutes = []struct{ method, path, body string }{
 	{http.MethodPost, pathMe, ""},
 	{http.MethodGet, pathMe, ""},
 	{http.MethodPatch, pathMe, `{"displayName":"Pat Parent","acceptedTerms":true}`},
 	{http.MethodDelete, pathMe, ""},
 	{http.MethodPost, pathRosterAck, ""},
+	{http.MethodGet, pathScouts, ""},
+	{http.MethodPost, pathScouts, scoutAmyBody},
+	{http.MethodPatch, pathScouts + "/" + scoutAmy, scoutAmyBody},
+	{http.MethodDelete, pathScouts + "/" + scoutAmy, ""},
 }
 
 func TestUsersRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
