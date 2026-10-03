@@ -101,7 +101,7 @@ func TestPublicUniversity_EveryOtherStatusIsNotFound(t *testing.T) {
 			resp := f.send(http.MethodGet, pathPublic(id), "", "")
 			defer resp.Body.Close()
 			got := wantRefusal(t, resp, http.StatusNotFound, apierr.CodeNotFound)
-			if got.Message != "University not found" {
+			if got.Message != msgUniversityNotFound {
 				t.Fatalf("message = %q, want the same body for each status", got.Message)
 			}
 			wantNoStore(t, resp)

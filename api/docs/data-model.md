@@ -572,7 +572,7 @@ JOIN class_periods this  ON this.period_id = other.period_id AND this.class_id =
 WHERE r.scout_id = $scout_id
   AND r.class_id <> $class_id
   AND r.status IN ('enrolled', 'waitlisted');
--- Any row: 409 PERIOD_CONFLICT; the response details come from a join to classes and class_periods.
+-- Any row: 409 PERIOD_CONFLICT; details is {classId: badgeTitle} for each such Class (api-design.md section 7 rule 4).
 
 -- 7. Seats.
 SELECT count(*) FROM registrations WHERE class_id = $class_id AND status = 'enrolled';
@@ -603,13 +603,14 @@ Notes:
 ```sql
 -- Caller: the University row FOR SHARE (window check), then:
 SELECT id FROM classes WHERE id = $class_id AND university_id = $university_id FOR UPDATE;
+-- No row (a Class of another University): nothing to cancel, 404.
 
 SELECT status FROM registrations
 WHERE class_id = $class_id AND scout_id = $scout_id
 FOR UPDATE;
 -- Absent or cancelled: 404.
 
-UPDATE registrations SET status = 'cancelled', updated_at = now()
+UPDATE registrations SET status = 'cancelled', updated_at = $now
 WHERE class_id = $class_id AND scout_id = $scout_id;
 
 -- Only when the cancelled row was enrolled: promote the oldest waitlisted row.
@@ -620,7 +621,7 @@ LIMIT 1
 FOR UPDATE;
 
 UPDATE registrations
-SET status = 'enrolled', enrolled_at = $now, waitlisted_at = NULL, updated_at = now()
+SET status = 'enrolled', enrolled_at = $now, waitlisted_at = NULL, updated_at = $now
 WHERE class_id = $class_id AND scout_id = $promoted_scout_id;
 -- #257: the "promoted" outbox row in the same transaction.
 ```

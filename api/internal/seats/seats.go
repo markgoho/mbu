@@ -30,31 +30,37 @@ type Promotion struct {
 // Scout in the Class, in tx. When that Registration was enrolled, the
 // oldest waitlisted Registration of the Class takes the seat, enrolled at
 // now. It returns that Promotion, if any, and cancelled false when the
-// Registration is absent or already cancelled (#254 answers 404 then).
+// Class is not a Class of the University, or the Registration is absent
+// or already cancelled (#254 answers 404 then).
 //
 // The caller holds the University row FOR SHARE. CancelAndPromote takes
 // the Class row and the registrations rows FOR UPDATE. It does not lock
 // the Scout: a cancel only removes a possible Period Conflict.
 func CancelAndPromote(ctx context.Context, tx *sql.Tx, now time.Time, universityID, classID, scoutID string) (promotion *Promotion, cancelled bool, err error) {
-	if _, err := tx.ExecContext(ctx,
-		`SELECT id FROM classes WHERE id = $1 AND university_id = $2 FOR UPDATE`, classID, universityID); err != nil {
-		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
+	var locked string
+	err = tx.QueryRowContext(ctx,
+		`SELECT id FROM classes WHERE id = $1 AND university_id = $2 FOR UPDATE`, classID, universityID).Scan(&locked)
+	if errors.Is(err, sql.ErrNoRows) {
+		// A Class of another University: its Registrations are not in
+		// this University, so there is nothing to cancel here.
+		return nil, false, nil
+	}
+	if err != nil {
+		// coverage:ignore reason: a database failure inside the cancel transaction, not reachable from a test
 		return nil, false, fmt.Errorf("seats: lock class: %w", err)
 	}
 	var status string
 	err = tx.QueryRowContext(ctx, `SELECT status FROM registrations
 		WHERE class_id = $1 AND scout_id = $2 FOR UPDATE`, classID, scoutID).Scan(&status)
-	// coverage:ignore reason: a concurrent cancel between the caller's read and this lock; a test cannot order the two transactions
 	if errors.Is(err, sql.ErrNoRows) || (err == nil && status == "cancelled") {
-		// coverage:ignore reason: a concurrent cancel between the caller's read and this lock; a test cannot order the two transactions
 		return nil, false, nil
 	}
 	if err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
 		return nil, false, fmt.Errorf("seats: lock registration: %w", err)
 	}
-	if _, err := tx.ExecContext(ctx, `UPDATE registrations SET status = 'cancelled', updated_at = now()
-		WHERE class_id = $1 AND scout_id = $2`, classID, scoutID); err != nil {
+	if _, err := tx.ExecContext(ctx, `UPDATE registrations SET status = 'cancelled', updated_at = $3
+		WHERE class_id = $1 AND scout_id = $2`, classID, scoutID, now); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
 		return nil, false, fmt.Errorf("seats: cancel: %w", err)
 	}
@@ -76,7 +82,7 @@ func CancelAndPromote(ctx context.Context, tx *sql.Tx, now time.Time, university
 		return nil, false, fmt.Errorf("seats: read waitlist: %w", err)
 	}
 	if _, err := tx.ExecContext(ctx, `UPDATE registrations
-		SET status = 'enrolled', enrolled_at = $3, waitlisted_at = NULL, updated_at = now()
+		SET status = 'enrolled', enrolled_at = $3, waitlisted_at = NULL, updated_at = $3
 		WHERE class_id = $1 AND scout_id = $2`, classID, next, now); err != nil {
 		// coverage:ignore reason: a database failure inside the delete transaction, not reachable from a test
 		return nil, false, fmt.Errorf("seats: promote: %w", err)

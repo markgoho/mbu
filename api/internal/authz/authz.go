@@ -48,6 +48,16 @@ func AssertChancellorOf(ctx context.Context, q Querier, caller authn.Caller, uni
 	return nil
 }
 
+// IsChancellorOf reports whether the Caller is an active Chancellor of
+// the University or a Super-admin: the people who run the event. The
+// Registration Window does not hold them (#254).
+func IsChancellorOf(ctx context.Context, q Querier, caller authn.Caller, universityID string) (bool, error) {
+	if caller.SuperAdmin {
+		return true, nil
+	}
+	return isChancellor(ctx, q, caller.UID, universityID)
+}
+
 // AssertCounselorOf refuses a Caller who is not an active Counselor of the
 // Class, an active Chancellor of its University (a Chancellor supersedes)
 // or a Super-admin. A classID that is not a uuid names no Class, so it is

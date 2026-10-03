@@ -218,7 +218,7 @@ func TestCreateScout_RefusesABodyThatFailsTheSchema(t *testing.T) {
 // scoutNamesOnly is the success body of a Scout with only the two names.
 func scoutNamesOnly(scoutID, firstName string) map[string]any {
 	return map[string]any{
-		"scoutId": scoutID, fieldFirstName: firstName, fieldLastName: "Scout", "unit": nil, "council": nil,
+		fieldScoutID: scoutID, fieldFirstName: firstName, fieldLastName: "Scout", "unit": nil, "council": nil,
 		"district": nil, fieldAgeBand: nil, "bsaId": nil, "accommodations": nil,
 	}
 }
@@ -253,7 +253,7 @@ func TestUpdateScout_AScoutTheCallerDoesNotOwnIsNotFound(t *testing.T) {
 	f.user(uidOther, "other@example.com")
 	f.scout(scoutOther, uidOther)
 
-	for _, id := range []string{scoutOther, scoutAmy, "not-a-uuid"} {
+	for _, id := range []string{scoutOther, scoutAmy, notAUUID} {
 		resp := f.send(http.MethodPatch, pathScouts+"/"+id, tokenParent, scoutAmyBody)
 		wantRefusal(t, resp, http.StatusNotFound, apierr.CodeNotFound)
 		_ = resp.Body.Close()
