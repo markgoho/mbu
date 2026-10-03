@@ -59,3 +59,10 @@ firestore-debug.log
 # Go API (api/)
 api/.golangci-cache
 api/coverage.out
+
+# Terraform (terraform/): commit .terraform.lock.hcl, never state or plans
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+tfplan

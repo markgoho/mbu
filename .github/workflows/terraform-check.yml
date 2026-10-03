@@ -1,0 +1,47 @@
+name: Check Terraform
+
+# Checks the format and the validity of terraform/ on each change to it
+# (#258). It reads no GCP state: `init -backend=false` skips the GCS backend.
+# The `terraform plan` drift check is a separate job (#262).
+on:
+  pull_request:
+    paths:
+      - "terraform/**"
+      - ".github/workflows/terraform-check.yml"
+  push:
+    branches:
+      - trunk
+    paths:
+      - "terraform/**"
+      - ".github/workflows/terraform-check.yml"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: terraform
+    steps:
+      - uses: actions/checkout@v7.0.0
+
+      - uses: hashicorp/setup-terraform@v4.0.1
+        with:
+          terraform_version: "~1.16"
+          terraform_wrapper: false
+
+      - name: Check formatting
+        run: terraform fmt -check -recursive
+
+      - name: Init without the backend
+        run: terraform init -backend=false -input=false -lockfile=readonly
+
+      - name: Validate
+        run: terraform validate -no-color
