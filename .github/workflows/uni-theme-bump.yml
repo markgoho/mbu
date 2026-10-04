@@ -7,6 +7,9 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  # A pull request opened with GITHUB_TOKEN starts no pull_request workflow,
+  # but GITHUB_TOKEN can start a workflow_dispatch run (#311).
+  actions: write
 
 jobs:
   bump:
@@ -92,6 +95,16 @@ jobs:
             --head "$branch")
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      # The required check `Terraform plan` (ruleset `trunk`) never reports on
+      # a pull request opened with GITHUB_TOKEN. A dispatch run on the branch
+      # reports its check run on the branch head, which is the pull request
+      # head, so the required check passes (#311).
+      - name: Start the required checks
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run terraform-plan.yml --ref "${{ steps.pr.outputs.branch }}"
 
       - name: Close stale bump PRs
         if: steps.diff.outputs.changed == 'true'
