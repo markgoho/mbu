@@ -30,6 +30,11 @@ type Response struct {
 	SuperAdmin bool `json:"superAdmin"`
 }
 
+// response is the body of a session.
+func response(s authn.Session) Response {
+	return Response{UID: s.UID, Email: s.Email, DisplayName: s.DisplayName, SuperAdmin: s.SuperAdmin}
+}
+
 // createRequest is the body of POST /api/session. The ID token goes in
 // the body, not an Authorization header: no request of the app carries
 // one (ADR 0007).
@@ -86,9 +91,9 @@ func Create(verifier authn.Verifier, db *sql.DB) http.Handler {
 			return
 		}
 		http.SetCookie(w, cookie)
-		apierr.WriteJSON(w, http.StatusOK, Response{
-			UID: token.UID, Email: strings.ToLower(token.Email), DisplayName: token.DisplayName, SuperAdmin: token.SuperAdmin,
-		})
+		apierr.WriteJSON(w, http.StatusOK, response(authn.Session{
+			UID: token.UID, Email: strings.ToLower(token.Email), SuperAdmin: token.SuperAdmin, DisplayName: token.DisplayName,
+		}))
 	})
 }
 
@@ -99,9 +104,7 @@ func Get() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		s, _ := authn.SessionFrom(r.Context())
 		w.Header().Set("Cache-Control", "no-store")
-		apierr.WriteJSON(w, http.StatusOK, Response{
-			UID: s.UID, Email: s.Email, DisplayName: s.DisplayName, SuperAdmin: s.SuperAdmin,
-		})
+		apierr.WriteJSON(w, http.StatusOK, response(s))
 	})
 }
 

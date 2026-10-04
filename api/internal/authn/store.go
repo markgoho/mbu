@@ -33,6 +33,12 @@ const SessionCookieName = "__session"
 // agree on when a session ends.
 const SessionLifetime = 7 * 24 * time.Hour
 
+// MaxSessionAge is the longest a session lives, renewed or not: 30 days
+// from its mint. Then the person signs in again, so a change of the
+// identity on the row (a revoked superAdmin claim, a disabled account)
+// takes effect within it at the latest (ADR 0007).
+const MaxSessionAge = 30 * 24 * time.Hour
+
 // Querier is the part of *sql.DB and *sql.Tx the session store uses.
 type Querier interface {
 	ExecContext(ctx context.Context, query string, args ...any) (sql.Result, error)
@@ -91,16 +97,17 @@ func ClearSessionCookie() *http.Cookie {
 // sweep is one indexed DELETE, so the table keeps no dead sessions with
 // no job to reap them.
 func MintSession(ctx context.Context, q Querier, t Token, now time.Time) (*http.Cookie, error) {
-	if _, err := q.ExecContext(ctx, `DELETE FROM sessions WHERE expires_at <= $1`, now); err != nil {
+	if _, err := q.ExecContext(ctx, `DELETE FROM sessions WHERE expires_at <= $1 OR created_at <= $2`,
+		now, now.Add(-MaxSessionAge)); err != nil {
 		return nil, fmt.Errorf("authn: sweep expired sessions: %w", err)
 	}
 	// rand.Text returns 128 or more bits of cryptographic randomness as
 	// text and cannot fail.
 	token := rand.Text()
 	if _, err := q.ExecContext(ctx,
-		`INSERT INTO sessions (token_hash, uid, email, display_name, super_admin, expires_at)
-		 VALUES ($1, $2, $3, $4, $5, $6)`,
-		tokenHash(token), t.UID, strings.ToLower(t.Email), t.DisplayName, t.SuperAdmin, now.Add(SessionLifetime),
+		`INSERT INTO sessions (token_hash, uid, email, display_name, super_admin, expires_at, created_at)
+		 VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+		tokenHash(token), t.UID, strings.ToLower(t.Email), t.DisplayName, t.SuperAdmin, now.Add(SessionLifetime), now,
 	); err != nil {
 		// coverage:ignore reason: the sweep above ran on the same connection, so only a failure between the two statements reaches this
 		return nil, fmt.Errorf("authn: insert session: %w", err)
@@ -129,14 +136,15 @@ func EndAllSessions(ctx context.Context, q Querier, uid string) error {
 }
 
 // LookupSession returns the session token names, or ErrNoSession when no
-// row is live at now. An expired row is skipped here, not deleted; the
-// sweep in MintSession deletes it.
+// row is live at now: expired, or minted MaxSessionAge or more ago. Such
+// a row is skipped here, not deleted; the sweep in MintSession deletes
+// it.
 func LookupSession(ctx context.Context, q Querier, token string, now time.Time) (Session, error) {
 	var s Session
 	err := q.QueryRowContext(ctx,
 		`SELECT uid, email, super_admin, display_name, expires_at FROM sessions
-		 WHERE token_hash = $1 AND expires_at > $2`,
-		tokenHash(token), now,
+		 WHERE token_hash = $1 AND expires_at > $2 AND created_at > $3`,
+		tokenHash(token), now, now.Add(-MaxSessionAge),
 	).Scan(&s.UID, &s.Email, &s.SuperAdmin, &s.DisplayName, &s.ExpiresAt)
 	if errors.Is(err, sql.ErrNoRows) {
 		return Session{}, ErrNoSession

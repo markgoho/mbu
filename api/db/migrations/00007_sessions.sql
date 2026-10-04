@@ -14,7 +14,9 @@
 -- Account deletion ends every session of the uid in code.
 --
 -- No updated_at: renewal moves expires_at and nothing else, the same
--- reading as idempotency_keys and rate_limit_buckets.
+-- reading as idempotency_keys and rate_limit_buckets. created_at comes
+-- from the clock seam at the mint; a session ends authn.MaxSessionAge
+-- after it, renewed or not.
 CREATE TABLE sessions (
     token_hash   text PRIMARY KEY,
     uid          text NOT NULL,

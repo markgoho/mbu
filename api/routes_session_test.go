@@ -191,6 +191,28 @@ func TestSession_IsRenewedPastHalfItsLifetime(t *testing.T) {
 	}
 }
 
+// A session in use ends MaxSessionAge after its mint all the same, so a
+// change of the identity on the row takes effect within it.
+func TestSession_EndsThirtyDaysAfterSignInEvenWhenRenewed(t *testing.T) {
+	f := newUsersFixture(t)
+	cookie := f.signIn(tokenParent)
+
+	for f.now = testNow.Add(authn.SessionLifetime / 2); f.now.Before(testNow.Add(authn.MaxSessionAge)); f.now = f.now.Add(authn.SessionLifetime / 2) {
+		resp := f.call(sessionCall{method: http.MethodGet, cookie: cookie})
+		_ = resp.Body.Close()
+		wantStatus(t, resp, http.StatusOK)
+	}
+	f.now = testNow.Add(authn.MaxSessionAge)
+	resp := f.call(sessionCall{method: http.MethodGet, cookie: cookie})
+	defer resp.Body.Close()
+	wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
+
+	f.signIn(tokenSuperAdmin)
+	if n := f.count(`SELECT count(*) FROM sessions WHERE uid = $1`, uidParent); n != 0 {
+		t.Fatal("the next sign-in did not sweep the session past its maximum age")
+	}
+}
+
 func TestEndSession_EndsItAndClearsTheCookie(t *testing.T) {
 	f := newUsersFixture(t)
 	cookie := f.signIn(tokenParent)
