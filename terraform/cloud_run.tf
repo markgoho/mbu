@@ -130,12 +130,15 @@ resource "google_cloud_run_v2_service" "api" {
     # The split between Terraform (the shape) and the deploy pipeline (the
     # image), as doula-cloud's "The Cloud Run image conflict": the image
     # and the revision's commit-sha label are what each deploy writes;
-    # client and client_version record the tool that wrote last.
+    # client and client_version record the tool that wrote last. The deploy
+    # also copies the provider's goog-terraform-provisioned label onto the
+    # revision template; the first deploy showed it as drift.
     ignore_changes = [
       client,
       client_version,
       template[0].containers[0].image,
       template[0].labels["commit-sha"],
+      template[0].labels["goog-terraform-provisioned"],
     ]
 
     postcondition {
