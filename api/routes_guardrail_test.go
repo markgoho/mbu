@@ -20,6 +20,8 @@ import (
 var declaredPublicRoutes = map[string]bool{
 	"GET /api/health":                   true,
 	"GET /api/universities/{id}/public": true,
+	"POST /api/session":                 true,
+	"DELETE /api/session":               true,
 }
 
 // pathParam matches a {name} or {name...} wildcard in a pattern.

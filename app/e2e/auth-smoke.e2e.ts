@@ -22,3 +22,14 @@ test('email/password sign-up routes to the verify-email gate', async ({ page }, 
   await expect(page.getByRole('heading', { name: 'Verify your email' })).toBeVisible();
   await expect(page.getByText(email)).toBeVisible();
 });
+
+test('the session survives a page reload', async ({ verifiedPage }) => {
+  await verifiedPage.reload();
+
+  await expect(verifiedPage).toHaveURL(/\/$/);
+  await expect(
+    verifiedPage.getByRole('heading', { name: 'Merit Badge University Platform' }),
+  ).toBeVisible();
+  const cookies = await verifiedPage.context().cookies();
+  expect(cookies.find((cookie) => cookie.name === '__session')).toMatchObject({ httpOnly: true });
+});

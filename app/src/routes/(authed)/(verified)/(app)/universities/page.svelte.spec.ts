@@ -4,6 +4,7 @@ import { render } from 'vitest-browser-svelte';
 import type { UniversitySummary } from '#lib/api-types/universities-api.types.js';
 import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import Page from './+page.svelte';
+import { signedIn } from '../../identityFixture.js';
 
 const { goto } = vi.hoisted(() => ({
   goto: vi.fn<(url: string, options?: { replaceState?: boolean }) => Promise<void>>(),
@@ -42,11 +43,13 @@ interface SetupOptions {
 }
 
 async function setup({ universities = [springMbu], deniedMessage }: SetupOptions = {}) {
-  const { rerender } = await render(Page, { data: { session, universities, deniedMessage } });
+  const { rerender } = await render(Page, {
+    data: { ...signedIn, session, universities, deniedMessage },
+  });
   // The navigation to the URL with no query runs the `load` again, which gives no message.
   goto.mockReset();
   goto.mockImplementation(() =>
-    rerender({ data: { session, universities, deniedMessage: undefined } }),
+    rerender({ data: { ...signedIn, session, universities, deniedMessage: undefined } }),
   );
 
   return { card: page.getByRole('listitem').getByRole('link') };

@@ -138,12 +138,15 @@ jobs:
       #   succeed in CI. No emulator runs.
       # - DATABASE_URL must parse, but the pool connects only on the first
       #   query, and the health route sends none. No Postgres runs.
+      # - EXPECTED_ORIGINS must name an origin (ADR 0007); the health route
+      #   is a GET, which the cross-site check never refuses.
       - name: Boot smoke test
         run: |
           docker run -d --name api-smoke -p 18080:8080 \
             -e GCP_PROJECT_ID=merit-badge-university \
             -e FIREBASE_AUTH_EMULATOR_HOST=localhost:9099 \
             -e "DATABASE_URL=postgres://app:app@db.invalid:5432/app?sslmode=disable" \
+            -e EXPECTED_ORIGINS=https://mbu-platform.web.app \
             mbu-api:ci
 
           answered=false

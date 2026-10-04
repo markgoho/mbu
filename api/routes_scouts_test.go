@@ -148,7 +148,7 @@ func TestCreateScout_ARepeatedIdempotencyKeyCreatesOneScout(t *testing.T) {
 	var ids []string
 	for range 2 {
 		req := httptest.NewRequestWithContext(t.Context(), http.MethodPost, pathScouts, strings.NewReader(scoutAmyBody))
-		req.Header.Set("Authorization", "Bearer "+tokenParent)
+		authenticate(t, req, f.db.App, f.now, tokenParent)
 		req.Header.Set("Idempotency-Key", "create-amy")
 		rec := httptest.NewRecorder()
 		f.h.ServeHTTP(rec, req)

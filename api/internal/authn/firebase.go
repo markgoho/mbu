@@ -37,6 +37,7 @@ func NewFirebaseVerifier(ctx context.Context, projectID string) (*FirebaseVerifi
 }
 
 // VerifyIDToken verifies idToken and reads the identity off its claims.
+// Only the session exchange calls it (ADR 0007).
 //
 // It reads no injected clock, on purpose: the Admin SDK checks a token's
 // freshness against real wall time inside itself.
@@ -57,5 +58,7 @@ func (v *FirebaseVerifier) VerifyIDToken(ctx context.Context, idToken string) (*
 	// coverage:ignore reason: requires a real Firebase ID token, not exercised by unit tests
 	superAdmin, _ := token.Claims["superAdmin"].(bool)
 	// coverage:ignore reason: requires a real Firebase ID token, not exercised by unit tests
-	return &Token{UID: token.UID, Email: email, EmailVerified: emailVerified, SuperAdmin: superAdmin}, nil
+	name, _ := token.Claims["name"].(string)
+	// coverage:ignore reason: requires a real Firebase ID token, not exercised by unit tests
+	return &Token{UID: token.UID, Email: email, EmailVerified: emailVerified, SuperAdmin: superAdmin, DisplayName: name}, nil
 }

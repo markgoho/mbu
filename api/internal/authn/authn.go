@@ -1,22 +1,23 @@
 // Package authn answers "who is calling?" for every route behind it. The
-// app sends a Firebase Auth ID token as `Authorization: Bearer` (ADR
-// 0003); Middleware verifies it through a Verifier and puts a Caller in
-// the request context. It does authentication only: whether that Caller
-// may act on a University or a Class is authorization, decided later.
+// API owns the session (ADR 0007): POST /api/session exchanges a
+// Firebase Auth ID token for an opaque token in an HttpOnly __session
+// cookie and one row in Postgres (store.go). Middleware reads that
+// cookie, looks the row up, and puts a Caller in the request context. It
+// does authentication only: whether that Caller may act on a University
+// or a Class is authorization, decided later.
 //
-// The rules are the ones functions/src/shared-api/plugins/require-auth.ts
-// and services/auth/verify-token.ts apply today: 401 for a missing or
-// invalid token, 401 for a token with no email, 403 EMAIL_NOT_VERIFIED
-// for an unverified email.
+// Firebase Auth stays the identity provider behind one interface,
+// Verifier, which only the session exchange calls. No other request
+// carries an ID token.
 package authn
 
 import (
 	"context"
-	"log"
+	"errors"
 	"net/http"
-	"strings"
 
 	"mbu/api/internal/apierr"
+	"mbu/api/internal/clock"
 )
 
 // Token is what a Verifier reads off a valid ID token.
@@ -27,10 +28,15 @@ type Token struct {
 	// SuperAdmin is the `superAdmin` custom claim (CONTEXT.md:
 	// Super-admin).
 	SuperAdmin bool
+	// DisplayName is the `name` claim: the name a Google account
+	// carries, empty for an email and password account. The app fills
+	// the onboarding form with it.
+	DisplayName string
 }
 
 // Verifier checks an ID token. FirebaseVerifier is the production one;
-// tests use authntest.Verifier, so no test calls Firebase.
+// tests use authntest.Verifier, so no test calls Firebase. Only the
+// session exchange (package session) calls it.
 type Verifier interface {
 	VerifyIDToken(ctx context.Context, idToken string) (*Token, error)
 }
@@ -48,59 +54,53 @@ type contextKey struct{}
 // CallerFrom returns the Caller Middleware put in ctx, and false for a
 // request that did not pass through Middleware.
 func CallerFrom(ctx context.Context) (Caller, bool) {
-	caller, ok := ctx.Value(contextKey{}).(Caller)
-	return caller, ok
+	s, ok := SessionFrom(ctx)
+	return s.Caller, ok
 }
 
-// Middleware refuses a request that carries no valid, verified identity,
-// and otherwise runs next with the Caller in the request context.
-func Middleware(v Verifier) func(http.Handler) http.Handler {
+// SessionFrom returns the session Middleware found for the request, and
+// false for a request that did not pass through Middleware.
+func SessionFrom(ctx context.Context) (Session, bool) {
+	s, ok := ctx.Value(contextKey{}).(Session)
+	return s, ok
+}
+
+// The refusals of Middleware. Each is a 401: the caller signs in again.
+const (
+	MsgMissingSession = "Missing session cookie"
+	// MsgInvalidSession covers a token that was never issued, a session
+	// that ended and one that expired: all three mean "sign in again",
+	// and telling them apart helps nobody but a guesser.
+	MsgInvalidSession = "Invalid session"
+)
+
+// Middleware refuses a request that carries no live session, and
+// otherwise runs next with the session's Caller in the request context.
+// A request with no __session cookie is refused before any database
+// work. A session past half its lifetime is renewed on the way through
+// (renewIfStale).
+func Middleware(q Querier) func(http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			caller, ok := authenticate(w, r, v)
-			if !ok {
+			cookie, err := r.Cookie(SessionCookieName)
+			if err != nil || cookie.Value == "" {
+				apierr.WriteError(w, MsgMissingSession, http.StatusUnauthorized)
 				return
 			}
-			next.ServeHTTP(w, r.WithContext(context.WithValue(r.Context(), contextKey{}, caller)))
+			now := clock.Now(r.Context())
+			s, err := LookupSession(r.Context(), q, cookie.Value, now)
+			if errors.Is(err, ErrNoSession) {
+				apierr.WriteError(w, MsgInvalidSession, http.StatusUnauthorized)
+				return
+			}
+			if err != nil {
+				// A database that cannot answer is a 500, not a 401: it
+				// must not read as "you are signed out".
+				apierr.WriteInternal(w, r, err)
+				return
+			}
+			renewIfStale(w, r, q, cookie.Value, s.ExpiresAt, now)
+			next.ServeHTTP(w, r.WithContext(context.WithValue(r.Context(), contextKey{}, s)))
 		})
 	}
-}
-
-// authenticate writes the refusal and returns false when the request
-// carries no usable identity.
-func authenticate(w http.ResponseWriter, r *http.Request, v Verifier) (Caller, bool) {
-	const scheme = "Bearer "
-	header := r.Header.Get("Authorization")
-	if header == "" {
-		apierr.WriteError(w, "Missing Authorization header", http.StatusUnauthorized)
-		return Caller{}, false
-	}
-	if !strings.HasPrefix(header, scheme) {
-		apierr.WriteError(w, "Authorization header must use the Bearer scheme", http.StatusUnauthorized)
-		return Caller{}, false
-	}
-	idToken := strings.TrimSpace(strings.TrimPrefix(header, scheme))
-	if idToken == "" {
-		apierr.WriteError(w, "Missing auth token", http.StatusUnauthorized)
-		return Caller{}, false
-	}
-
-	token, err := v.VerifyIDToken(r.Context(), idToken)
-	if err != nil {
-		// Expired, revoked, malformed or signed by someone else: the
-		// caller signs in again in every case, so one refusal covers
-		// them. The reason goes to the log for diagnosis.
-		log.Printf("authn: refused ID token: %v", err)
-		apierr.WriteError(w, "Invalid auth token", http.StatusUnauthorized)
-		return Caller{}, false
-	}
-	if token.Email == "" {
-		apierr.WriteError(w, "Authenticated account has no email address", http.StatusUnauthorized)
-		return Caller{}, false
-	}
-	if !token.EmailVerified {
-		apierr.Write(w, http.StatusForbidden, apierr.CodeEmailNotVerified, "Email address is not verified", nil)
-		return Caller{}, false
-	}
-	return Caller{UID: token.UID, Email: strings.ToLower(token.Email), SuperAdmin: token.SuperAdmin}, true
 }

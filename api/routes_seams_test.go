@@ -44,7 +44,7 @@ func TestReplayableRoute_ReplaysThroughTheRouteTable(t *testing.T) {
 
 	post := func(body string) *http.Response {
 		req := httptest.NewRequestWithContext(t.Context(), http.MethodPost, "/api/test/things", strings.NewReader(body))
-		req.Header.Set("Authorization", "Bearer "+tokenParent)
+		authenticate(t, req, d.DB, testNow, tokenParent)
 		req.Header.Set(idempotency.HeaderName, "key-1")
 		rec := httptest.NewRecorder()
 		h.ServeHTTP(rec, req)

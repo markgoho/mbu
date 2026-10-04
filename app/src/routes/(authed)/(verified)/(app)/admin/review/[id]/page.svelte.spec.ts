@@ -7,6 +7,7 @@ import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import Page from './+page.svelte';
 import { sampleDetail } from './reviewFixture.js';
+import { signedIn } from '../../../../identityFixture.js';
 
 const universities = vi.hoisted(() => ({
   approveUniversity: vi.fn<(fetcher: Fetcher, id: string) => Promise<void>>(),
@@ -58,6 +59,7 @@ async function setup({ status = 'submitted', approveError, rejectError }: SetupO
 
   await render(Page, {
     data: {
+      ...signedIn,
       session,
       university: { ...sampleDetail.university, status },
       classes: sampleDetail.classes,

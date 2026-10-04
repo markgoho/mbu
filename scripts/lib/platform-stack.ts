@@ -220,6 +220,9 @@ async function startAPI(onUnexpectedExit: (name: string) => void) {
     // The local caller of /api/internal/** (ADR 0005): no metadata server
     // mints an OIDC token here. Deliberately unset on Cloud Run.
     INTERNAL_WORKER_SECRET: "local-worker-secret",
+    // The app dev server (ADR 0007): the Vite proxy passes the browser's
+    // Origin through, and the cross-site check refuses any other one.
+    EXPECTED_ORIGINS: `http://localhost:${APP_PORT},http://127.0.0.1:${APP_PORT}`,
   };
   // Local mode sends no mail: without a key the API uses the fake sender (#257).
   delete env["MAILGUN_API_KEY"];

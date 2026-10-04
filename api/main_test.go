@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"database/sql"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -11,7 +12,6 @@ import (
 	"time"
 
 	"mbu/api/internal/apierr"
-	"mbu/api/internal/apierrtest"
 	"mbu/api/internal/authn"
 	"mbu/api/internal/authntest"
 	"mbu/api/internal/clock"
@@ -21,12 +21,66 @@ import (
 	"github.com/jackc/pgx/v5"
 )
 
-// The ID tokens the fake verifier in testDeps knows.
+// The ID tokens the fake verifier in testDeps knows. A route test signs
+// in with one of the verified ones (authenticate); tokenUnverified is
+// refused by POST /api/session. tokenNoSession is a cookie value that
+// names no session.
 const (
 	tokenParent     = "token-parent"
 	tokenUnverified = "token-unverified"
 	tokenSuperAdmin = "token-super-admin"
+	tokenNoSession  = "no-such-session"
+	tokenNoEmail    = "token-no-email"
 )
+
+// testIdentities is the identity behind each ID token of the fake
+// verifier.
+var testIdentities = map[string]authn.Token{
+	tokenParent:     {UID: "uid-parent", Email: "Parent@Example.com", EmailVerified: true},
+	tokenUnverified: {UID: "uid-unverified", Email: emailNew},
+	tokenSuperAdmin: {UID: uidAdmin, Email: emailAdmin, EmailVerified: true, SuperAdmin: true, DisplayName: "Ada Admin"},
+	tokenNoEmail:    {UID: "uid-no-email", EmailVerified: true},
+}
+
+// emailAdmin is the Super-admin's address.
+const emailAdmin = "admin@example.com"
+
+// addSessionCookie sends value as the request's __session cookie, as a
+// browser sends it: name and value only.
+func addSessionCookie(req *http.Request, value string) {
+	req.Header.Add("Cookie", authn.SessionCookieName+"="+value)
+}
+
+// testOrigin is the app's origin in the tests' ExpectedOrigins.
+const testOrigin = "https://mbu-platform.web.app"
+
+// authenticate signs req in as the caller token stands for. An OIDC
+// token of the internal boundary goes as a Bearer header, as Cloud
+// Scheduler sends it. A verified ID token is signed in as a browser is
+// after POST /api/session: a session minted in db at now, sent as its
+// cookie. Any other token is sent as the cookie value itself, so it
+// names no session. "" sends nothing. A new session for each request
+// lets a test move its clock as far as it likes.
+func authenticate(t *testing.T, req *http.Request, db *sql.DB, now time.Time, token string) {
+	t.Helper()
+	switch token {
+	case "":
+		return
+	case oidcScheduler, oidcOtherAudience, oidcStranger:
+		req.Header.Set("Authorization", "Bearer "+token)
+		return
+	}
+	identity, ok := testIdentities[token]
+	if !ok || !identity.EmailVerified || db == nil {
+		addSessionCookie(req, token)
+		return
+	}
+	cookie, err := authn.MintSession(t.Context(), db, identity, now)
+	if err != nil {
+		t.Fatalf("mint a session for %s: %v", token, err)
+	}
+	addSessionCookie(req, cookie.Value)
+}
 
 // The internal boundary of the tests: the audience the guard asks for,
 // the one service account it accepts, and the OIDC tokens fakeOIDC knows.
@@ -60,12 +114,9 @@ var testNow = time.Date(2027, time.March, 6, 9, 0, 0, 0, time.UTC)
 // testDeps is the Deps every route test builds the table from.
 func testDeps() Deps {
 	return Deps{
-		Verifier: authntest.Verifier{Tokens: map[string]authn.Token{
-			tokenParent:     {UID: "uid-parent", Email: "Parent@Example.com", EmailVerified: true},
-			tokenUnverified: {UID: "uid-unverified", Email: emailNew},
-			tokenSuperAdmin: {UID: "uid-admin", Email: "admin@example.com", EmailVerified: true, SuperAdmin: true},
-		}},
-		Now: func() time.Time { return testNow },
+		Verifier:        authntest.Verifier{Tokens: testIdentities},
+		Now:             func() time.Time { return testNow },
+		ExpectedOrigins: []string{testOrigin},
 		InternalAuth: internalauth.New(internalauth.Config{
 			Audience: internalAudience,
 			Callers:  []string{schedulerCaller},
@@ -75,7 +126,8 @@ func testDeps() Deps {
 	}
 }
 
-// serve sends one request to h. token "" sends no Authorization header.
+// serve sends one request to h with no session. token is an OIDC token
+// for an internal route, sent as a Bearer header; "" sends none.
 func serve(t *testing.T, h http.Handler, method, path, token string) *http.Response {
 	t.Helper()
 	req := httptest.NewRequestWithContext(t.Context(), method, path, http.NoBody)
@@ -111,10 +163,14 @@ type callerResponse struct {
 	Now        time.Time `json:"now"`
 }
 
-// protectedTable is the real route table plus one test-only route behind
-// the auth middleware, which echoes the Caller and the request clock.
-func protectedTable() http.Handler {
+// protectedTable is the real route table over a fresh database plus one
+// test-only route behind the auth middleware, which echoes the Caller
+// and the request clock.
+func protectedTable(t *testing.T) *usersFixture {
+	t.Helper()
+	f := newUsersFixture(t)
 	d := testDeps()
+	d.DB = f.db.App
 	rt := buildRoutes(d)
 	rt.authed("GET /api/test/caller", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		caller, _ := authn.CallerFrom(r.Context())
@@ -122,56 +178,51 @@ func protectedTable() http.Handler {
 			UID: caller.UID, Email: caller.Email, SuperAdmin: caller.SuperAdmin, Now: clock.Now(r.Context()),
 		})
 	}))
-	return rt.handler(d.Now)
+	f.h = rt.handler(d.Now)
+	return f
 }
 
-func TestProtectedRoute_Refusals(t *testing.T) {
+func TestProtectedRoute_RefusesAMissingOrInvalidSession(t *testing.T) {
+	f := protectedTable(t)
 	tests := []struct {
-		name   string
-		token  string
-		status int
-		code   apierr.Code
+		name    string
+		token   string
+		message string
 	}{
-		{"no token", "", http.StatusUnauthorized, apierr.CodeUnauthorized},
-		{"bad token", "not-a-token", http.StatusUnauthorized, apierr.CodeUnauthorized},
-		{"unverified email", tokenUnverified, http.StatusForbidden, apierr.CodeEmailNotVerified},
+		{"no cookie", "", authn.MsgMissingSession},
+		{"a cookie that names no session", tokenNoSession, authn.MsgInvalidSession},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			resp := serve(t, protectedTable(), http.MethodGet, "/api/test/caller", tt.token)
+			resp := f.send(http.MethodGet, "/api/test/caller", tt.token, "")
 			defer resp.Body.Close()
-
-			if resp.StatusCode != tt.status {
-				t.Fatalf("status = %d, want %d", resp.StatusCode, tt.status)
-			}
-			if got := apierrtest.Decode(t, resp); got.Code != tt.code {
-				t.Fatalf("code = %q, want %q", got.Code, tt.code)
+			got := wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
+			if got.Message != tt.message {
+				t.Fatalf("message = %q, want %q", got.Message, tt.message)
 			}
 		})
 	}
 }
 
 func TestProtectedRoute_FillsTheCaller(t *testing.T) {
+	f := protectedTable(t)
 	tests := []struct {
 		name  string
 		token string
 		want  callerResponse
 	}{
 		{"a Parent, email lowercased", tokenParent, callerResponse{UID: "uid-parent", Email: "parent@example.com", Now: testNow}},
-		{"a Super-admin", tokenSuperAdmin, callerResponse{UID: "uid-admin", Email: "admin@example.com", SuperAdmin: true, Now: testNow}},
+		{"a Super-admin", tokenSuperAdmin, callerResponse{UID: uidAdmin, Email: emailAdmin, SuperAdmin: true, Now: testNow}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			resp := serve(t, protectedTable(), http.MethodGet, "/api/test/caller", tt.token)
+			resp := f.send(http.MethodGet, "/api/test/caller", tt.token, "")
 			defer resp.Body.Close()
 
 			if resp.StatusCode != http.StatusOK {
 				t.Fatalf("status = %d, want 200", resp.StatusCode)
 			}
-			var got callerResponse
-			if err := json.NewDecoder(resp.Body).Decode(&got); err != nil {
-				t.Fatalf("decode: %v", err)
-			}
+			got := decode[callerResponse](t, resp)
 			if !got.Now.Equal(tt.want.Now) {
 				t.Fatalf("now = %v, want the Deps.Now instant %v", got.Now, tt.want.Now)
 			}
@@ -184,20 +235,20 @@ func TestProtectedRoute_FillsTheCaller(t *testing.T) {
 }
 
 func TestPanickingRoute_AnswersInternalWithNoDetail(t *testing.T) {
+	f := newUsersFixture(t)
 	d := testDeps()
+	d.DB = f.db.App
 	rt := buildRoutes(d)
 	rt.authed("GET /api/test/panic", http.HandlerFunc(func(http.ResponseWriter, *http.Request) {
 		panic("pq: password authentication failed for user app_runtime")
 	}))
+	f.h = rt.handler(d.Now)
 
-	resp := serve(t, rt.handler(d.Now), http.MethodGet, "/api/test/panic", tokenParent)
+	resp := f.send(http.MethodGet, "/api/test/panic", tokenParent, "")
 	defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusInternalServerError {
-		t.Fatalf("status = %d, want 500", resp.StatusCode)
-	}
-	got := apierrtest.Decode(t, resp)
-	if got.Code != apierr.CodeInternal || got.Message != apierr.MsgInternalError || got.Details != nil {
+	got := wantRefusal(t, resp, http.StatusInternalServerError, apierr.CodeInternal)
+	if got.Message != apierr.MsgInternalError || got.Details != nil {
 		t.Fatalf("body = %+v, want INTERNAL with no detail", got)
 	}
 }

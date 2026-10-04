@@ -147,7 +147,7 @@ var universitiesRoutes = []struct{ method, path, body string }{
 	{http.MethodDelete, pathUniversity(uniOne), ""},
 }
 
-func TestUniversitiesRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
+func TestUniversitiesRoutes_RefuseAMissingAndAnInvalidSession(t *testing.T) {
 	f := newUsersFixture(t)
 	f.user(uidParent, emailParent)
 	f.university(uniOne, statusDraft)
@@ -157,9 +157,9 @@ func TestUniversitiesRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T
 			defer resp.Body.Close()
 			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 
-			resp = f.send(r.method, r.path, tokenUnverified, r.body)
+			resp = f.send(r.method, r.path, tokenNoSession, r.body)
 			defer resp.Body.Close()
-			wantRefusal(t, resp, http.StatusForbidden, apierr.CodeEmailNotVerified)
+			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 		})
 	}
 	if n := f.count(`SELECT count(*) FROM universities WHERE title = 'MBU'`); n != 1 {
@@ -169,8 +169,7 @@ func TestUniversitiesRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T
 
 func TestUniversitiesRoutes_ADatabaseFailureIsInternal(t *testing.T) {
 	d := testDeps()
-	d.DB = closedDB(t)
-	f := &usersFixture{t: t, h: routes(d)}
+	f := closedFixture(t, d)
 	all := slices.Concat(universitiesRoutes, []struct{ method, path, body string }{{http.MethodGet, pathPublic(uniOne), ""}})
 	for _, r := range all {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
@@ -188,8 +187,7 @@ func TestUniversitiesRoutes_ADatabaseFailureIsInternal(t *testing.T) {
 // detail is the first to fail.
 func TestUniversityDetail_ADatabaseFailureIsInternalForASuperAdmin(t *testing.T) {
 	d := testDeps()
-	d.DB = closedDB(t)
-	f := &usersFixture{t: t, h: routes(d)}
+	f := closedFixture(t, d)
 	resp := f.send(http.MethodGet, pathUniversity(uniOne), tokenSuperAdmin, "")
 	defer resp.Body.Close()
 	wantRefusal(t, resp, http.StatusInternalServerError, apierr.CodeInternal)
@@ -267,7 +265,7 @@ func TestCreateUniversity_ARepeatWithTheSameKeyCreatesOne(t *testing.T) {
 
 	for range 2 {
 		req := httptest.NewRequestWithContext(t.Context(), http.MethodPost, pathUniversities, strings.NewReader(createBody))
-		req.Header.Set("Authorization", "Bearer "+tokenParent)
+		authenticate(t, req, f.db.App, f.now, tokenParent)
 		req.Header.Set(idempotency.HeaderName, "create-1")
 		rec := httptest.NewRecorder()
 		f.h.ServeHTTP(rec, req)

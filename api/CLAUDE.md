@@ -4,7 +4,7 @@ The Go service `mbu-api` on Cloud Run with Postgres. It replaced the Elysia APIs
 
 **Before a change in `api/`, read these:**
 
-- `docs/adr/` — the decisions (0001 to 0006). To work against one, record a new ADR first.
+- `docs/adr/` — the decisions (0001 to 0007). To work against one, record a new ADR first.
 - `docs/api-design.md` — the rules for each endpoint: DTOs, `Idempotency-Key`, pagination, rate limits, the error body.
 - `docs/testing.md` — what a test is, lint, coverage, toolchain versions, the test database, migrations.
 - `docs/data-model.md` — the Postgres schema: tables, constraints, indexes, the seat-transaction lock order, delete and purge behavior.

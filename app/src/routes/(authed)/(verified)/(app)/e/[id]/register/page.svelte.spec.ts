@@ -16,6 +16,7 @@ import type { Fetcher } from '#lib/fetcher.js';
 import { IdempotencyKeys } from '#lib/idempotency.js';
 import Page from './+page.svelte';
 import { alexSmith, baileyJones, registrationFor, sampleEvent } from './registerFixture.js';
+import { signedIn } from '../../../../identityFixture.js';
 
 const { registerScout, cancelRegistration, createScout, refreshAll } = vi.hoisted(() => ({
   registerScout:
@@ -144,6 +145,7 @@ async function setup({
   });
 
   const toData = () => ({
+    ...signedIn,
     session,
     event: storedEvent,
     scouts: storedScouts,

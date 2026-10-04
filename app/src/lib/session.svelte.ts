@@ -1,35 +1,33 @@
 /**
- * The session of the signed-in user: the reactive Firebase user, and the
- * functions that change the session. All routes and components use this module
- * for auth. They do not call the Firebase Auth SDK themselves. The guard loads
- * are the exception: they read `getFirebaseAuth().currentUser` and the claims.
+ * The functions that change the session of the user. All routes and components
+ * use this module for auth. They do not call the Firebase Auth SDK themselves.
+ * The route guards read the state of the visitor with `resolveAuth` from
+ * `#lib/auth.js`, which owns the exchange of the Firebase ID token for the
+ * session cookie of the API (ADR 0007 in `api/docs/adr/`).
  *
  * Rules for the callers:
  *
  * - The functions that change who is signed in, or the state of the user
- *   (sign-in, sign-up, a completed Google redirect, `reloadUser`, `signOut`),
- *   invalidate all `load` data themselves. The guard loads then run again, so
- *   data of the previous user or state is not reused. On the sign-in page, this
- *   is also what sends the user to `returnTo`: the `(signed-out)` guard runs
- *   again and redirects. A caller does not need its own `refreshAll()`.
- * - `session.user` is reactive. A page under the `(app)` group reads the account
- *   (`BootstrapResponse`) from `page.data.session`, not from this module.
- * - The route guards do not read `session.superAdmin`. It is `false` until the
- *   claim resolves. The `admin` guard reads the claim from the ID token.
+ *   (sign-in, sign-up, a completed Google redirect, `isEmailVerifiedAfterReload`, `signOut`),
+ *   invalidate all `load` data themselves. The guard loads then run again: they
+ *   make the session, and data of the previous user or state is not reused. On
+ *   the sign-in page, this is also what sends the user to `returnTo`: the
+ *   `(signed-out)` guard runs again and redirects. A caller does not need its
+ *   own `refreshAll()`.
+ * - A page reads the signed-in adult from its `data`: `data.auth` under
+ *   `(authed)`, `data.identity` under `(verified)`, and the account
+ *   (`BootstrapResponse`) from `data.session` under `(app)`.
  */
 import { goto, invalidate, refreshAll } from '$app/navigation';
 import { resolve } from '$app/paths';
 import {
   createUserWithEmailAndPassword,
-  getIdTokenResult,
   getRedirectResult,
   GoogleAuthProvider,
-  onIdTokenChanged,
   sendEmailVerification,
   signInWithEmailAndPassword,
   signInWithRedirect,
   signOut as firebaseSignOut,
-  type User,
   type UserCredential,
 } from 'firebase/auth';
 import type {
@@ -37,7 +35,7 @@ import type {
   OnboardingRequest,
   UserResponse,
 } from '#lib/api-types/users-api.types.js';
-import { expectOk, sendJson } from '#lib/api.js';
+import { apiFetchRaw, expectOk, sendJson } from '#lib/api.js';
 import { authErrorCode, authErrorMessage } from '#lib/authErrorMessage.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import { getFirebaseAuth } from '#lib/firebase.js';
@@ -49,99 +47,6 @@ export { AUTH_ERROR_MESSAGES } from '#lib/authErrorMessage.js';
  * `invalidate(SESSION_DEPENDENCY)` makes that load bootstrap the account again.
  */
 export const SESSION_DEPENDENCY = 'app:session';
-
-// The last event of the ID token listener. `undefined` means that no event has
-// arrived yet. Each event makes a new wrapper object, because Firebase gives the
-// same `User` object again after a token refresh and changes it in place: with
-// the bare `User` in the state, `emailVerified` would not update.
-let lastTokenEvent = $state.raw<{ user: User | undefined }>();
-
-/**
- * Reads the user from the last token event, so the caller depends on each
- * event. This is not a `$derived`: a derived value that gives the same `User`
- * object again does not tell its readers that the fields of the object changed.
- *
- * Before the first event, the user is the one that Firebase has now. A guard
- * load has already awaited `authStateReady()` when a page reads this, so the
- * first render of a page has the user.
- */
-function currentUser(): User | undefined {
-  return lastTokenEvent ? lastTokenEvent.user : (getFirebaseAuth().currentUser ?? undefined);
-}
-
-const isEmailVerified = $derived(currentUser()?.emailVerified ?? false);
-
-// The superAdmin custom claim of the ID token. It fails closed: it is `false`
-// while the claim resolves and when the token call fails.
-let isSuperAdmin = $state(false);
-
-async function resolveSuperAdmin(tokenEvent: { user: User | undefined }): Promise<void> {
-  let hasClaim = false;
-  if (tokenEvent.user) {
-    try {
-      const result = await getIdTokenResult(tokenEvent.user);
-      hasClaim = result.claims['superAdmin'] === true;
-    } catch (error) {
-      console.error('Failed to resolve superAdmin claim; treating user as non-super-admin:', error);
-    }
-  }
-  // A newer event owns the value now.
-  if (lastTokenEvent === tokenEvent) isSuperAdmin = hasClaim;
-}
-
-// Not reactive: it only records that the listener exists.
-let isSubscribed = false;
-
-/**
- * Subscribes to the ID token one time, at the first read of the session. The
- * listener stays for the life of the app. `onIdTokenChanged` also fires on a
- * token refresh, not only on sign-in and sign-out, so `emailVerified` and the
- * claims stay current. Firebase calls the listener asynchronously, so this does
- * not write state during the read that starts it.
- */
-function subscribe(): void {
-  if (isSubscribed) return;
-  isSubscribed = true;
-
-  onIdTokenChanged(
-    getFirebaseAuth(),
-    (nextUser) => {
-      const tokenEvent = { user: nextUser ?? undefined };
-      // The claim of a different user must not stay while the new one resolves.
-      if (tokenEvent.user?.uid !== currentUser()?.uid) isSuperAdmin = false;
-      lastTokenEvent = tokenEvent;
-      void resolveSuperAdmin(tokenEvent);
-    },
-    (error) => console.error('Auth ID token listener error:', error),
-  );
-}
-
-/**
- * The reactive session state. Read the properties where the value is used: in a
- * template, or in the expression of a `$derived` (`$derived(session.user?.email)`).
- * Do not keep the `User` object itself in a `$derived`: Firebase gives the same
- * object again after a token refresh, so the readers of that value get no update.
- */
-export const session = {
-  /**
-  The signed-in Firebase user, or `undefined` when no user is signed in.
-  */
-  get user(): User | undefined {
-    subscribe();
-    return currentUser();
-  },
-  get emailVerified(): boolean {
-    subscribe();
-    return isEmailVerified;
-  },
-  /**
-  `true` only when the ID token has the superAdmin claim. Not for route guards.
-  */
-  get superAdmin(): boolean {
-    subscribe();
-    return isSuperAdmin;
-  },
-};
 
 /**
 Logs a failed call of the Firebase Auth SDK and returns an error with the message to show.
@@ -169,7 +74,7 @@ function verificationContinueUrl(): string {
 
 /**
  * Bootstraps the account on the backend (`POST /api/users/me`) and returns it.
- * The API refuses a user with an email that is not verified (403).
+ * It needs a session (401 without one).
  */
 export async function bootstrap(fetcher: Fetcher): Promise<BootstrapResponse> {
   return sendJson<BootstrapResponse>(fetcher, 'POST', '/api/users/me', {});
@@ -270,13 +175,13 @@ export async function resendEmailVerification(): Promise<void> {
 }
 
 /**
- * Reloads the signed-in user (to get a new `emailVerified` value), and then
- * forces a token refresh, so that the token listener fires and the API gets a
- * token with the new value.
+ * Reloads the Firebase user (to get a new `emailVerified` value) and gets a new
+ * ID token, then invalidates all `load` data: with a verified email, the guards
+ * exchange the token for a session. Returns `true` when the email is verified.
  */
-export async function reloadUser(): Promise<void> {
+export async function isEmailVerifiedAfterReload(): Promise<boolean> {
   const current = getFirebaseAuth().currentUser;
-  if (!current) return;
+  if (!current) return false;
   try {
     await current.reload();
     await current.getIdToken(true);
@@ -286,22 +191,37 @@ export async function reloadUser(): Promise<void> {
     await refreshAll();
     throw new Error('Failed to reload user data.', { cause: error });
   }
+  const isVerified = current.emailVerified;
   await refreshAll();
+  return isVerified;
 }
 
+const SIGN_OUT_FAILED_MESSAGE = 'Failed to sign out. Please try again.';
+
 /**
-Signs the user out and goes to `/sign-in`.
-*/
+ * Ends the session (`DELETE /api/session`), signs the Firebase SDK out if it has
+ * a user, and goes to `/sign-in`. When the API cannot be reached, the session
+ * is still in place: the function throws, so the page can say so.
+ */
 export async function signOut(): Promise<void> {
+  let response: Response;
+  try {
+    response = await apiFetchRaw('/api/session', { method: 'DELETE' });
+  } catch (error) {
+    console.error('Sign out failed:', error);
+    throw new Error(SIGN_OUT_FAILED_MESSAGE, { cause: error });
+  }
+  if (!response.ok) {
+    console.error('Sign out failed:', { status: response.status });
+    throw new Error(SIGN_OUT_FAILED_MESSAGE);
+  }
+
   const auth = getFirebaseAuth();
   try {
     await firebaseSignOut(auth);
   } catch (error) {
-    console.error('Sign out failed:', {
-      uid: auth.currentUser?.uid,
-      error: error instanceof Error ? error.message : String(error),
-    });
-    throw new Error('Failed to sign out. Please try again.', { cause: error });
+    // The session has ended. A Firebase user with no session has no access to the API.
+    console.error('Sign out of the Firebase SDK failed:', error);
   }
   await goto(resolve('/(signed-out)/sign-in'), { refreshAll: true });
 }

@@ -6,14 +6,19 @@
   import Checkbox from '#lib/components/atoms/Checkbox.svelte';
   import Link from '#lib/components/atoms/Link.svelte';
   import TextInput from '#lib/components/atoms/TextInput.svelte';
-  import { completeOnboarding, session } from '#lib/session.svelte.js';
+  import { completeOnboarding } from '#lib/session.svelte.js';
+  import type { PageData } from './$types';
+
+  let { data }: { data: PageData } = $props();
 
   // The page does not use `FormAction`: that class shows the message of the
   // API, and this page shows one fixed message (#228, decision 13).
   let isLoading = $state(false);
   let errorMessage = $state('');
 
-  let displayName = $state(session.user?.displayName ?? '');
+  // The name of the account at sign-in (a Google account has one). A writable
+  // `$derived`, so the field starts again when the session loads again.
+  let displayName = $derived(data.identity.displayName);
   let hasAcceptedTerms = $state(false);
   // A field shows its message only after the user left it, or tried to submit.
   let touched = $state({ displayName: false, acceptedTerms: false });
