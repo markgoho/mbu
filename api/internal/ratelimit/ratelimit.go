@@ -1,7 +1,8 @@
 // Package ratelimit is docs/api-design.md section 6's defensive rate
 // limit, applied as a decorator a handler wraps in -- the same shape as
-// idempotency.Wrap. Copied from doula-cloud (#247), with IPRule as the
-// one rule kind and a log line, not a table row, for a refusal.
+// idempotency.Wrap. Copied from doula-cloud (#247), with IPRule and
+// PeerRule as the rule kinds and a log line, not a table row, for a
+// refusal.
 //
 // Counters live in Postgres (rate_limit_buckets), not in process memory:
 // Cloud Run can run more than one instance, so an in-process counter
@@ -57,6 +58,17 @@ type Rule struct {
 // Deps.ClientIP, so the key trusts the proxy hops the deployment sets.
 func IPRule(resolver clientip.Resolver, maxRequests int, window time.Duration) Rule {
 	return Rule{Dimension: "ip", Key: resolver.From, Max: maxRequests, Window: window}
+}
+
+// PeerRule limits by the rightmost X-Forwarded-For entry: the TCP peer of
+// Cloud Run's front end, which no client can write (#296). A route puts it
+// next to an IPRule with a higher cap. On the run.app URL the peer is the
+// caller, so a caller that forges the entry IPRule reads still has one
+// bucket here. Behind the Firebase Hosting rewrite the peer is a Hosting
+// egress address that many callers share, so the cap must stay well above
+// the IPRule cap.
+func PeerRule(maxRequests int, window time.Duration) Rule {
+	return Rule{Dimension: "peer", Key: clientip.Resolver{}.From, Max: maxRequests, Window: window}
 }
 
 // MaxWindow is the longest Window a Rule may have. A bucket stores no

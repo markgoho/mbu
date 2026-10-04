@@ -77,9 +77,7 @@ func TestRateLimitedRoute_RefusesThe51stRequest(t *testing.T) {
 	d := seamDeps(t)
 	rt := buildRoutes(d)
 	limit := ratelimit.Wrap(d.DB, "test-limited", []ratelimit.Rule{ratelimit.IPRule(d.ClientIP, 50, time.Hour)})
-	rt.public("GET /api/test/limited", limit(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
-		apierr.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
-	})))
+	rt.public("GET /api/test/limited", limit(okHandler))
 	h := rt.handler(d.Now)
 
 	for i := 1; i <= 50; i++ {
@@ -114,9 +112,7 @@ func TestRateLimitedRoute_ForgedForwardedForCountsAgainstTheCaller(t *testing.T)
 	d.ClientIP = clientip.Resolver{ProxyHops: 1}
 	rt := buildRoutes(d)
 	limit := ratelimit.Wrap(d.DB, "test-forged", []ratelimit.Rule{ratelimit.IPRule(d.ClientIP, 1, time.Hour)})
-	rt.public("GET /api/test/forged", limit(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
-		apierr.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
-	})))
+	rt.public("GET /api/test/forged", limit(okHandler))
 	h := rt.handler(d.Now)
 
 	get := func(forged string) int {
@@ -133,3 +129,42 @@ func TestRateLimitedRoute_ForgedForwardedForCountsAgainstTheCaller(t *testing.T)
 		t.Fatalf("second request, new forged entry: status = %d, want 429", got)
 	}
 }
+
+// TestRateLimitedRoute_PeerRuleCapsADirectCallerThatForgesTheKey is #296:
+// on the run.app URL the front end is the only proxy, so with the deployed
+// ProxyHops 1 the entry IPRule reads is one the caller wrote. A new forged
+// entry on each request gets a new IPRule bucket, but PeerRule keys the
+// rightmost entry, the caller's real address, and refuses it.
+func TestRateLimitedRoute_PeerRuleCapsADirectCallerThatForgesTheKey(t *testing.T) {
+	d := seamDeps(t)
+	d.ClientIP = clientip.Resolver{ProxyHops: 1}
+	rt := buildRoutes(d)
+	limit := ratelimit.Wrap(d.DB, "test-peer", []ratelimit.Rule{
+		ratelimit.IPRule(d.ClientIP, 1, time.Hour),
+		ratelimit.PeerRule(2, time.Hour),
+	})
+	rt.public("GET /api/test/peer", limit(okHandler))
+	h := rt.handler(d.Now)
+
+	get := func(forged string) int {
+		req := httptest.NewRequestWithContext(t.Context(), http.MethodGet, "/api/test/peer", http.NoBody)
+		req.Header.Set("X-Forwarded-For", forged+", 203.0.113.7")
+		rec := httptest.NewRecorder()
+		h.ServeHTTP(rec, req)
+		return rec.Code
+	}
+	for i, forged := range []string{"198.51.100.1", "198.51.100.2"} {
+		if got := get(forged); got != http.StatusOK {
+			t.Fatalf("request %d, new forged entry: status = %d, want 200", i+1, got)
+		}
+	}
+	if got := get("198.51.100.3"); got != http.StatusTooManyRequests {
+		t.Fatalf("request 3, new forged entry: status = %d, want 429 from PeerRule", got)
+	}
+}
+
+// okHandler answers 200 with a small JSON body: the handler behind each
+// test route of this file.
+var okHandler = http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+	apierr.WriteJSON(w, http.StatusOK, map[string]string{"status": "ok"})
+})
