@@ -27,6 +27,12 @@ Each environment variable that `api/` reads, with its value in each place the se
 | `MAILGUN_DOMAIN`              | unset                                                                                                                                                                                             | unset                                                                                                         | `mg.merit-badge.university`, the verified sending domain (#106). Unset, that is the default. The From address is `Merit Badge University <notifications@` + domain + `>`. Read only when `MAILGUN_API_KEY` is set.                                                                    |
 | `MAILGUN_API_BASE`            | unset                                                                                                                                                                                             | unset                                                                                                         | Unset: Mailgun's US host `https://api.mailgun.net`. Set it only for Mailgun's EU host. Read only when `MAILGUN_API_KEY` is set.                                                                                                                                                       |
 
+## Hosting preview channels
+
+A pull request deploys the app to a Firebase Hosting preview channel, `https://mbu-platform--<channel>.web.app`. The preview uses the one deployed API and its production database. That origin is not in `EXPECTED_ORIGINS`, so `csrf.Wrap` refuses `POST /api/session` and each other write from a preview with 403 "Cross-site request refused".
+
+This is the decision (#319): a preview is for public pages only, and nobody signs in on a preview. A preview origin that can sign in would write to the production database. To sign in and test a change, use the local stack. To change this decision, accept the origin pattern `https://mbu-platform--*.web.app` in the CSRF check (a suffix rule in Go, with a test that refuses a look-alike such as `https://mbu-platform--x.web.app.evil.example`), and not a list in Terraform.
+
 ## The commands
 
 | Command          | Variable                      | Local value                                                                       | Note                                                                                                                          |
