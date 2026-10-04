@@ -3,7 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-10-02
 - **Applies to:** `api/**`
-- **Supersedes:** [`functions/docs/adr/0001-api-module-architecture.md`](../../../functions/docs/adr/0001-api-module-architecture.md)
+- **Supersedes:** [`functions/docs/adr/0001-api-module-architecture.md`](https://github.com/markgoho/mbu/blob/cf885a35/functions/docs/adr/0001-api-module-architecture.md) (removed with `functions/` in #264)
 - **Related:** #240 (decisions 1, 3, 5, 9, 10), #242 (scaffold), #264 (cutover). Source: the doula-cloud Go API at `~/github/doula-cloud/api`. No single doula-cloud ADR records this choice; the reference is that codebase.
 
 ## Context
@@ -26,3 +26,4 @@ The event-platform backend is five Elysia apps on Cloud Functions (`healthApi`, 
 - The `routes/*.test.ts` files in `functions/` are the behavior specification for the port. Each case becomes a Go handler test, unless a decision in #240 changes the behavior.
 - `functions/` stays, and its ESLint and `check:arch` rules still apply to it, until the cutover (#264) deletes it.
 - The rules for each endpoint are in [`../api-design.md`](../api-design.md).
+- **Update (2026-10-03):** the cutover (#264) removed `functions/`. Its code and route tests are in the git history before that commit.

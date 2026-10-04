@@ -10,7 +10,7 @@ A test is an HTTP-boundary test against real Postgres ([ADR 0001](adr/0001-go-on
 
 A command in `cmd/` (`seed`, `superadmin`, `migrate`) has no HTTP boundary. Its test calls the function that holds its logic, against `testdb` when it writes SQL, and with a fake for the Firebase Admin SDK.
 
-The old `functions/src/*-api/routes/*.test.ts` files are the specification. Each case becomes a Go handler test, unless a decision in #240 changes the behavior.
+The old `functions/src/*-api/routes/*.test.ts` files were the specification for the port. #264 removed them; they are in the git history before that commit.
 
 ## Before a change is done
 

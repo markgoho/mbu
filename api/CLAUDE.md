@@ -1,6 +1,6 @@
 # Event platform API (`api/`)
 
-The Go service `mbu-api` on Cloud Run with Postgres. It replaces the Elysia APIs in `functions/` (#240). Module `mbu/api`, region `us-east4`.
+The Go service `mbu-api` on Cloud Run with Postgres. It replaced the Elysia APIs on Cloud Functions (#240, cutover in #264). Firebase Hosting sends `/api/**` on `mbu-platform.web.app` to it. Module `mbu/api`, region `us-east4`.
 
 **Before a change in `api/`, read these:**
 
@@ -12,7 +12,7 @@ The Go service `mbu-api` on Cloud Run with Postgres. It replaces the Elysia APIs
 - `docs/infrastructure.md` — what Terraform (`terraform/` at the repo root) owns, what stays by hand, the identities, and the apply runbook.
 - `CONTEXT.md` — the domain glossary. Use its terms in code, tests, issues and PRs.
 
-The parent issue #240 holds the plan and the ticket list. The `routes/*.test.ts` files in `functions/src/*-api/` are the behavior specification for the port. Copy a doula-cloud package from `~/github/doula-cloud/api` when it fits, and change its tenancy from Practice and Staff to user uid and University.
+The parent issue #240 holds the plan and the ticket list. Copy a doula-cloud package from `~/github/doula-cloud/api` when it fits, and change its tenancy from Practice and Staff to user uid and University.
 
 **Before a change is done**, these pass in `api/`. The exact commands are in `docs/testing.md`. CI runs them in `.github/workflows/api-pull-request.yml`, with an image boot smoke test.
 
@@ -21,5 +21,3 @@ The parent issue #240 holds the plan and the ticket list. The `routes/*.test.ts`
 - `golangci-lint run`, with `GOLANGCI_LINT_CACHE` set under the worktree
 - `go test ./...`
 - the coverage check (`tools/covcheck`)
-
-Do not delete or change `functions/` before the cutover ticket (#264).

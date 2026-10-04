@@ -23,7 +23,7 @@ const instance: { auth?: Auth } = {};
  * instance.
  *
  * This is the only module that calls `initializeApp` and `getAuth`. The client
- * uses Auth only: all Firestore access goes through the API (#228, decision 11).
+ * uses Auth only: all data access goes through the API (#228, decision 11).
  */
 export function getFirebaseAuth(): Auth {
   if (instance.auth) return instance.auth;

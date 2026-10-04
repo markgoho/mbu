@@ -1,6 +1,6 @@
 # MBU Event Platform
 
-A self-serve SaaS that lets any adult Scouter run a Merit Badge University: create the event, build its class schedule, share a private link, and take Registrations from Parents. The SvelteKit SPA is in `app/`; the API is in `api/` (Go, replacing `functions/`). This glossary covers both, because the language is the same on both sides. The decisions are in `api/docs/adr/`. Terms come from #94 and from the doc comments in `functions/src/collections/`.
+A self-serve SaaS that lets any adult Scouter run a Merit Badge University: create the event, build its class schedule, share a private link, and take Registrations from Parents. The SvelteKit SPA is in `app/`; the API is in `api/` (Go on Cloud Run, with Postgres). This glossary covers both, because the language is the same on both sides. The decisions are in `api/docs/adr/`. Terms come from #94 and from the doc comments of the Firestore collection types that the Go API replaced (#240).
 
 ## Language
 

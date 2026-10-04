@@ -186,8 +186,8 @@ jobs:
   # The new revision answers GET /api/health on its run.app URL with the
   # API's own body: the placeholder image of the first apply answers 200 on
   # every path, so the status code alone does not prove the deploy. The
-  # Firebase Hosting rewrite still points /api/** at Cloud Functions until
-  # the cutover (#264).
+  # check uses the run.app URL, not the Firebase Hosting rewrite, so it
+  # tests the new revision and not the Hosting release.
   smoke:
     needs: deploy
     runs-on: ubuntu-latest

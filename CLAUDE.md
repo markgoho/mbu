@@ -71,7 +71,7 @@ bun run test:e2e   # Playwright smoke suite (e2e/*.e2e.ts); starts its own serve
 bun run build      # Static build into app/build/
 ```
 
-Before you change `app/`, read `app/README.md` (the rules for loads, guards, domain modules, atoms and specs) and use the `svelte-code-writer` and `svelte-core-bestpractices` skills. `.claude/rules/svelte-tests.md` loads automatically for the specs. The reasons are in `functions/docs/adr/0002-app-spa-is-sveltekit.md`. After `bun run test:e2e`, `app/build/` is a build that connects to the Auth emulator: run `bun run build` again.
+Before you change `app/`, read `app/README.md` (the rules for loads, guards, domain modules, atoms and specs) and use the `svelte-code-writer` and `svelte-core-bestpractices` skills. `.claude/rules/svelte-tests.md` loads automatically for the specs. The reasons are in `app/docs/adr/0002-app-spa-is-sveltekit.md`. After `bun run test:e2e`, `app/build/` is a build that connects to the Auth emulator: run `bun run build` again.
 
 ## Data Structure
 
@@ -109,7 +109,7 @@ Canonical role names are used as-is (`needs-triage`, `needs-info`, `ready-for-ag
 
 ### Domain docs
 
-Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`api/CONTEXT.md` + `api/docs/adr/`; the app decision is in `functions/docs/adr/0002-app-spa-is-sveltekit.md`). See `docs/agents/domain.md`.
+Multi-context layout: `CONTEXT-MAP.md` at the root points to the Hugo-site context (root `CONTEXT.md` + `docs/adr/`) and the event-platform context (`api/CONTEXT.md` + `api/docs/adr/`; the app decision is in `app/docs/adr/0002-app-spa-is-sveltekit.md`). See `docs/agents/domain.md`.
 
 # Intrinsic Web Design & Sizing
 
