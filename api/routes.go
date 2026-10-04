@@ -10,6 +10,7 @@ import (
 	"mbu/api/internal/authn"
 	"mbu/api/internal/clientip"
 	"mbu/api/internal/clock"
+	"mbu/api/internal/csrf"
 	"mbu/api/internal/idempotency"
 	"mbu/api/internal/internalauth"
 	"mbu/api/internal/mail"
@@ -19,7 +20,8 @@ import (
 // a parameter list: a new dependency is a new field, and a test that does
 // not use it leaves it at its zero value.
 type Deps struct {
-	// Verifier checks the Bearer ID token (ADR 0003). Tests substitute
+	// Verifier checks the Firebase ID token that POST /api/session
+	// exchanges for a session (ADR 0007). Tests substitute
 	// authntest.Verifier.
 	Verifier authn.Verifier
 
@@ -31,6 +33,17 @@ type Deps struct {
 	// DB is the Postgres pool, logged in as a member of app_runtime
 	// (ADR 0002). Tests pass testdb.New(t).App.
 	DB *sql.DB
+
+	// SessionDB is the pool the session routes and authn.Middleware read
+	// the sessions table on (ADR 0007). Nil falls back to DB, which is
+	// what main() does. A test sets it apart from DB, so a DB that fails
+	// every query still lets the request reach the handler.
+	SessionDB *sql.DB
+
+	// ExpectedOrigins are the browser origins of the app. csrf.Wrap
+	// refuses a state-changing request with any other Origin header.
+	// main() reads EXPECTED_ORIGINS.
+	ExpectedOrigins []string
 
 	// ClientIP reads the caller's address for ratelimit.IPRule (#293).
 	// main() sets ProxyHops from CLIENT_IP_PROXY_HOPS; the zero value
@@ -56,12 +69,12 @@ type Deps struct {
 type routeClass string
 
 const (
-	// classPublic is a route anyone may call with no token. The guardrail
-	// test holds these to a declared list.
+	// classPublic is a route anyone may call with no session. The
+	// guardrail test holds these to a declared list.
 	classPublic routeClass = "public"
 	// classInternal is a route under /api/internal/, called by Cloud
 	// Scheduler and guarded by its caller identity (ADR 0005), not by a
-	// Firebase ID token.
+	// session.
 	classInternal routeClass = "internal"
 	// classAuthed is every other route: it runs behind authn.Middleware.
 	classAuthed routeClass = "authed"
@@ -110,19 +123,29 @@ type router struct {
 	requireAuth     func(http.Handler) http.Handler
 	requireInternal func(http.Handler) http.Handler
 	replay          func(http.Handler) http.Handler
+	expectedOrigins []string
 	table           []route
 }
 
 func newRouter(d Deps) *router {
 	return &router{
 		mux:             http.NewServeMux(),
-		requireAuth:     authn.Middleware(d.Verifier),
+		requireAuth:     authn.Middleware(d.sessionDB()),
 		requireInternal: d.InternalAuth.Middleware,
 		replay:          idempotency.Wrap(d.DB),
+		expectedOrigins: d.ExpectedOrigins,
 	}
 }
 
-// public mounts a route that needs no token. Only the routes the
+// sessionDB is SessionDB, or DB when it is nil.
+func (d Deps) sessionDB() *sql.DB {
+	if d.SessionDB != nil {
+		return d.SessionDB
+	}
+	return d.DB
+}
+
+// public mounts a route that needs no session. Only the routes the
 // guardrail test declares may use it. A public POST can only be exempt:
 // with no Caller there is no uid to scope a key by.
 func (rt *router) public(pattern string, h http.Handler, s ...stance) {
@@ -179,9 +202,9 @@ func (rt *router) mount(pattern string, class routeClass, h http.Handler, stance
 
 // handler wraps the mux in the middleware every route shares: the
 // panic-safe 500 outermost, so it also covers the clock, then the clock
-// seam.
+// seam, then the cross-site check (ADR 0007), before any route.
 func (rt *router) handler(now clock.Clock) http.Handler {
-	return apierr.Recover(clock.Middleware(now)(rt.mux))
+	return apierr.Recover(clock.Middleware(now)(csrf.Wrap(rt.expectedOrigins, rt.mux)))
 }
 
 // patternPath is the path of a ServeMux pattern such as
@@ -198,6 +221,7 @@ func patternPath(pattern string) string {
 func buildRoutes(d Deps) *router {
 	rt := newRouter(d)
 	registerHealthRoutes(rt)
+	registerSessionRoutes(rt, d)
 	registerUsersRoutes(rt, d)
 	registerUniversitiesRoutes(rt, d)
 	registerRegistrationsRoutes(rt, d)

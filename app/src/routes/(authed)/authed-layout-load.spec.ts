@@ -1,36 +1,33 @@
 import { describe, expect, it, vi } from 'vitest';
+import { ApiError } from '#lib/api.js';
+import type { AuthState } from '#lib/auth.js';
 import { load } from './+layout.js';
 
-interface MockUser {
-  uid: string;
-  emailVerified: boolean;
-}
-
-const { mockAuth } = vi.hoisted(() => ({
-  mockAuth: {
-    currentUser: undefined as MockUser | undefined,
-    authStateReady: () => Promise.resolve(),
-  },
+const { resolveAuth } = vi.hoisted(() => ({
+  resolveAuth: vi.fn<(fetcher: unknown) => Promise<AuthState>>(),
 }));
 
-vi.mock('#lib/firebase.js', () => ({ getFirebaseAuth: () => mockAuth }));
+vi.mock('#lib/auth.js', () => ({ resolveAuth }));
+vi.mock('#lib/firebase.js', () => ({ getFirebaseAuth: () => ({}) }));
+vi.mock('firebase/auth', () => ({}));
+vi.mock('$app/navigation', () => ({ goto: vi.fn() }));
 
 interface SetupOptions {
   /**
-  The user that Firebase restores from the stored session. `undefined` means signed out.
+  The state of the visitor. The default is signed out.
   */
-  restoredUser?: MockUser | undefined;
+  state?: AuthState;
+  /**
+  The error that the read of the session rejects with.
+  */
+  stateError?: Error;
 }
 
-function setup({ restoredUser }: SetupOptions = {}) {
-  // Firebase restores the stored session asynchronously. Until `authStateReady()`
-  // resolves, `currentUser` is empty, as it is after a hard refresh.
-  mockAuth.currentUser = undefined;
-  mockAuth.authStateReady = () => {
-    mockAuth.currentUser = restoredUser;
-    return Promise.resolve();
-  };
-
+function setup({ state = { status: 'signed-out' }, stateError }: SetupOptions = {}) {
+  resolveAuth.mockReset();
+  resolveAuth.mockImplementation(() =>
+    stateError ? Promise.reject(stateError) : Promise.resolve(state),
+  );
   const loadEvent = {} as unknown as Parameters<typeof load>[0];
   return { loadEvent };
 }
@@ -42,9 +39,37 @@ describe('(authed) layout load: requireAuth', () => {
     await expect(load(loadEvent)).rejects.toMatchObject({ status: 303, location: '/sign-in' });
   });
 
-  it('lets a signed-in user through, also when the session is restored late (hard refresh)', async () => {
-    const { loadEvent } = setup({ restoredUser: { uid: 'u1', emailVerified: false } });
+  it('gives the state of a signed-in user to the guards below', async () => {
+    const state: AuthState = {
+      status: 'signed-in',
+      session: { uid: 'u1', email: 'pat@example.com', displayName: '', superAdmin: false },
+    };
+    const { loadEvent } = setup({ state });
 
-    await expect(load(loadEvent)).resolves.toBeUndefined();
+    await expect(load(loadEvent)).resolves.toEqual({ auth: state });
+  });
+
+  it('lets a user whose email waits for verification through', async () => {
+    const state: AuthState = { status: 'unverified', email: 'new@example.com' };
+    const { loadEvent } = setup({ state });
+
+    await expect(load(loadEvent)).resolves.toEqual({ auth: state });
+  });
+
+  it('shows the error page when the session cannot be read', async () => {
+    const { loadEvent } = setup({
+      stateError: new ApiError(500, { code: 'INTERNAL', message: 'internal error' }),
+    });
+
+    await expect(load(loadEvent)).rejects.toMatchObject({
+      status: 500,
+      body: { message: 'Could not check your sign-in. Please try again.' },
+    });
+  });
+
+  it('shows a 503 when the API cannot be reached', async () => {
+    const { loadEvent } = setup({ stateError: new TypeError('Failed to fetch') });
+
+    await expect(load(loadEvent)).rejects.toMatchObject({ status: 503 });
   });
 });

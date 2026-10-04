@@ -15,7 +15,6 @@ import (
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/apierrtest"
 	"mbu/api/internal/authn"
-	"mbu/api/internal/authntest"
 	"mbu/api/internal/clock"
 	"mbu/api/internal/idempotency"
 	"mbu/api/internal/testdb"
@@ -63,7 +62,7 @@ func setup(t *testing.T) *subject {
 		t.Fatalf("seed users: %v", err)
 	}
 	s := &subject{db: db, status: http.StatusCreated}
-	s.handler = wrap(db.App, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	s.handler = wrap(db.App, db.App, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		s.runs++
 		body, _ := io.ReadAll(r.Body)
 		apierr.WriteJSON(w, s.status, created{Run: s.runs, Body: string(body)})
@@ -71,15 +70,28 @@ func setup(t *testing.T) *subject {
 	return s
 }
 
-// wrap mounts h behind authn.Middleware and Wrap(db), the order the
-// route table uses.
-func wrap(db *sql.DB, h http.Handler) http.Handler {
-	verifier := authntest.Verifier{Tokens: map[string]authn.Token{
-		tokenA:         {UID: "uid-a", Email: "a@example.com", EmailVerified: true},
-		tokenB:         {UID: "uid-b", Email: "b@example.com", EmailVerified: true},
-		tokenNoAccount: {UID: "uid-none", Email: "none@example.com", EmailVerified: true},
-	}}
-	return authn.Middleware(verifier)(idempotency.Wrap(db)(h))
+// identities is the identity behind each test token.
+var identities = map[string]authn.Token{
+	tokenA:         {UID: "uid-a", Email: "a@example.com", EmailVerified: true},
+	tokenB:         {UID: "uid-b", Email: "b@example.com", EmailVerified: true},
+	tokenNoAccount: {UID: "uid-none", Email: "none@example.com", EmailVerified: true},
+}
+
+// wrap mounts h behind authn.Middleware(sessions) and Wrap(db), the
+// order the route table uses. In front of them it signs each request
+// in: it mints a session in sessions for the identity of the request's
+// X-Test-Token and sends its cookie, as a browser does after POST
+// /api/session.
+func wrap(db, sessions *sql.DB, h http.Handler) http.Handler {
+	inner := authn.Middleware(sessions)(idempotency.Wrap(db)(h))
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		cookie, err := authn.MintSession(r.Context(), sessions, identities[r.Header.Get("X-Test-Token")], clock.Now(r.Context()))
+		if err != nil {
+			panic(err)
+		}
+		r.Header.Add("Cookie", cookie.Name+"="+cookie.Value)
+		inner.ServeHTTP(w, r)
+	})
 }
 
 // request is one call to the handler. The zero value is a POST to
@@ -110,7 +122,7 @@ func send(t *testing.T, h http.Handler, req request) *http.Response {
 	}
 	ctx := clock.Into(t.Context(), func() time.Time { return req.at })
 	r := httptest.NewRequestWithContext(ctx, http.MethodPost, req.path, req.reader)
-	r.Header.Set("Authorization", "Bearer "+req.token)
+	r.Header.Set("X-Test-Token", req.token)
 	if req.key != "" {
 		r.Header.Set(idempotency.HeaderName, req.key)
 	}
@@ -269,7 +281,7 @@ func TestWrap_AWriteWithNoStatusIsStoredAs200(t *testing.T) {
 		t.Fatalf("seed: %v", err)
 	}
 	runs := 0
-	h := wrap(db.App, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+	h := wrap(db.App, db.App, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		runs++
 		_, _ = w.Write([]byte(`{"run":1}`))
 	}))
@@ -290,7 +302,7 @@ func TestWrap_A204ReplaysWithNoBody(t *testing.T) {
 		t.Fatalf("seed: %v", err)
 	}
 	runs := 0
-	h := wrap(db.App, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+	h := wrap(db.App, db.App, http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
 		runs++
 		w.WriteHeader(http.StatusNoContent)
 		if err := http.NewResponseController(w).Flush(); err != nil {
@@ -340,10 +352,10 @@ func TestWrap_Refusals(t *testing.T) {
 		status  int
 		code    apierr.Code
 	}{
-		{"database down", wrap(down, never), request{}, http.StatusInternalServerError, apierr.CodeInternal},
+		{"database down", wrap(down, testdb.New(t).App, never), request{}, http.StatusInternalServerError, apierr.CodeInternal},
 		{"mounted outside authn", idempotency.Wrap(down)(never), request{}, http.StatusInternalServerError, apierr.CodeInternal},
-		{"key too long", wrap(down, never), request{key: strings.Repeat("k", 256)}, http.StatusBadRequest, apierr.CodeInvalidArgument},
-		{"body read fails", wrap(down, never), request{reader: iotest.ErrReader(errors.New("reset"))}, http.StatusBadRequest, apierr.CodeInvalidArgument},
+		{"key too long", wrap(down, testdb.New(t).App, never), request{key: strings.Repeat("k", 256)}, http.StatusBadRequest, apierr.CodeInvalidArgument},
+		{"body read fails", wrap(down, testdb.New(t).App, never), request{reader: iotest.ErrReader(errors.New("reset"))}, http.StatusBadRequest, apierr.CodeInvalidArgument},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

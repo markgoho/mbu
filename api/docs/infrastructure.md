@@ -114,8 +114,19 @@ Instance `mbu-pg` (`cloud_sql.tf`): Postgres 16, `db-f1-micro` (Enterprise editi
 - A startup probe on `GET /api/health`, which sends no query.
 - The environment is the "Deployed" column of [`environment.md`](environment.md). `DATABASE_URL` is a reference to `mbu-pg-app-runtime-dsn:latest`. A secret reference with no version stops each new revision: so the runbook adds the DSN values before it makes the service.
 - Its base URL is `https://mbu-api-643912800060.us-east4.run.app` (`local.api_base_url`). Terraform cannot read the URL of a service before the service exists, so the local holds the deterministic form, and a `postcondition` on the service fails the apply if Cloud Run gives another URL. `INTERNAL_OIDC_AUDIENCE` and the `oidc_token.audience` of each Scheduler job (#261) use this local.
-- `allUsers` has `roles/run.invoker`: the Firebase Hosting rewrite sends anonymous requests. The process does the authentication (Firebase ID tokens; the OIDC caller guard on `/api/internal/**`, ADR 0005).
+- `allUsers` has `roles/run.invoker`: the Firebase Hosting rewrite sends anonymous requests. The process does the authentication (the `__session` cookie of ADR 0007; the OIDC caller guard on `/api/internal/**`, ADR 0005).
+- `EXPECTED_ORIGINS` names the app's two Hosting origins. The new image does not start without it, so a change that adds or renames a variable the service requires is applied with Terraform before its deploy: the running image ignores a variable it does not read.
 - **Terraform owns the shape, the deploy pipeline owns the image.** The first apply uses the public placeholder `us-docker.pkg.dev/cloudrun/container/hello`. `ignore_changes` covers the image, the `commit-sha` revision label, `client` and `client_version`. The deploy (#260) must change only the image and that label, and pass `--service-account mbu-api-runtime@merit-badge-university.iam.gserviceaccount.com`. A deploy that sets an environment variable or a secret makes `plan` non-empty: change the environment in `cloud_run.tf`.
+
+### Ending sessions by hand
+
+A session keeps the `superAdmin` claim it had at sign-in (ADR 0007). To revoke a Super-admin, remove the claim in Firebase Auth, then end the person's sessions in Postgres through the Auth Proxy and `psql` (see [The database](#the-database)), as `app_runtime_login` or the migration owner:
+
+```sql
+DELETE FROM sessions WHERE uid = '<firebase uid>';
+```
+
+The same statement signs a person out of every browser. A grant needs no `DELETE`: the person signs out and in again.
 
 ## The Scheduler jobs
 

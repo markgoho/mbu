@@ -73,12 +73,31 @@ func (f *usersFixture) useSender(s mail.Sender) {
 func (f *usersFixture) send(method, path, token, body string) *http.Response {
 	f.t.Helper()
 	req := httptest.NewRequestWithContext(f.t.Context(), method, path, strings.NewReader(body))
-	if token != "" {
-		req.Header.Set("Authorization", "Bearer "+token)
-	}
+	authenticate(f.t, req, f.sessionDB(), f.now, token)
 	rec := httptest.NewRecorder()
 	f.h.ServeHTTP(rec, req)
 	return rec.Result()
+}
+
+// sessionDB is the database a request's session is minted in, nil for a
+// fixture with no database.
+func (f *usersFixture) sessionDB() *sql.DB {
+	if f.db == nil {
+		return nil
+	}
+	return f.db.App
+}
+
+// closedFixture is the route table of d over a pool that fails every
+// query, for the 500 path. The sessions live in a working database, so
+// a signed-in request reaches the handler before its query fails.
+func closedFixture(t *testing.T, d Deps) *usersFixture {
+	t.Helper()
+	f := &usersFixture{t: t, db: testdb.New(t), now: testNow}
+	d.DB = closedDB(t)
+	d.SessionDB = f.db.App
+	f.h = routes(d)
+	return f
 }
 
 // exec runs fixture SQL as the superuser.
@@ -229,7 +248,7 @@ var usersRoutes = []struct{ method, path, body string }{
 	{http.MethodDelete, pathScouts + "/" + scoutAmy, ""},
 }
 
-func TestUsersRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
+func TestUsersRoutes_RefuseAMissingAndAnInvalidSession(t *testing.T) {
 	f := newUsersFixture(t)
 	for _, r := range usersRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
@@ -237,9 +256,9 @@ func TestUsersRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
 			defer resp.Body.Close()
 			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 
-			resp = f.send(r.method, r.path, tokenUnverified, r.body)
+			resp = f.send(r.method, r.path, tokenNoSession, r.body)
 			defer resp.Body.Close()
-			wantRefusal(t, resp, http.StatusForbidden, apierr.CodeEmailNotVerified)
+			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 		})
 	}
 	if n := f.count(`SELECT count(*) FROM users`); n != 0 {
@@ -249,9 +268,8 @@ func TestUsersRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
 
 func TestUsersRoutes_ADatabaseFailureIsInternal(t *testing.T) {
 	d := testDeps()
-	d.DB = closedDB(t)
 	d.Accounts = &authntest.Accounts{}
-	f := &usersFixture{t: t, h: routes(d)}
+	f := closedFixture(t, d)
 	for _, r := range usersRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
 			resp := f.send(r.method, r.path, tokenParent, r.body)

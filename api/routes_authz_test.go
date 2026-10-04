@@ -8,15 +8,18 @@ import (
 	"mbu/api/internal/apierr"
 	"mbu/api/internal/authn"
 	"mbu/api/internal/authz"
+	"mbu/api/internal/testdb"
 )
 
 // authzTable is the real route table plus one test-only route for each
 // authz assertion. No route of #249 calls the assertions; #250 to #255
 // do. Each test route answers 204 when the assertion passes, and writes
-// the refusal with apierr.WriteErr when it does not.
-func authzTable(db *sql.DB) http.Handler {
+// the refusal with apierr.WriteErr when it does not. Sessions live in
+// sessions, which may differ from db.
+func authzTable(db, sessions *sql.DB) http.Handler {
 	d := testDeps()
 	d.DB = db
+	d.SessionDB = sessions
 	rt := buildRoutes(d)
 	check := func(assert func(r *http.Request, c authn.Caller) error) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -60,7 +63,7 @@ func TestAuthz_Assertions(t *testing.T) {
 	f.grant(uniOne, classOne)
 	f.exec(`INSERT INTO role_grants (role, university_id, uid, status)
 		VALUES ('chancellor', $1, $2, 'revoked')`, uniOne, uidParent)
-	f.h = authzTable(f.db.App)
+	f.h = authzTable(f.db.App, f.db.App)
 
 	tests := []struct {
 		name  string
@@ -97,7 +100,8 @@ func TestAuthz_Assertions(t *testing.T) {
 }
 
 func TestAuthz_ADatabaseFailureIsInternal(t *testing.T) {
-	f := &usersFixture{t: t, h: authzTable(closedDB(t))}
+	f := &usersFixture{t: t, db: testdb.New(t), now: testNow}
+	f.h = authzTable(closedDB(t), f.db.App)
 	for _, path := range []string{
 		"/api/test/chancellor/" + uniOne,
 		"/api/test/counselor/" + uniOne + "/" + classOne,

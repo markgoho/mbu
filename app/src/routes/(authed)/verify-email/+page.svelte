@@ -2,7 +2,17 @@
   import { goto } from '$app/navigation';
   import { resolve } from '$app/paths';
   import Button from '#lib/components/atoms/Button.svelte';
-  import { reloadUser, resendEmailVerification, session } from '#lib/session.svelte.js';
+  import { isEmailVerifiedAfterReload, resendEmailVerification } from '#lib/session.svelte.js';
+  import type { PageData } from './$types';
+
+  let { data }: { data: PageData } = $props();
+
+  // The address the verification link went to.
+  const email = $derived.by(() => {
+    if (data.auth.status === 'unverified') return data.auth.email;
+    if (data.auth.status === 'signed-in') return data.auth.session.email;
+    return '';
+  });
 
   let isLoading = $state(false);
   let message = $state('');
@@ -26,10 +36,9 @@
     isLoading = true;
     errorMessage = '';
     try {
-      await reloadUser();
-      // `reloadUser` changes the user in place, so this is the new value. The
+      // With a verified email, the guards have made the session now. The
       // `(verified)` and `(app)` guards run for the navigation to the app home.
-      if (session.user?.emailVerified) {
+      if (await isEmailVerifiedAfterReload()) {
         await goto(resolve('/(authed)/(verified)/(app)'));
       } else {
         errorMessage = 'Email is not verified yet. Please try again.';
@@ -50,8 +59,8 @@
   <h1>Verify your email</h1>
   <p>
     We sent a verification link
-    {#if session.user?.email}
-      to <strong>{session.user.email}</strong>
+    {#if email}
+      to <strong>{email}</strong>
     {/if}
     . Open it, then come back and continue.
   </p>

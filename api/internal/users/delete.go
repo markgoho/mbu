@@ -30,10 +30,11 @@ var errCloseEventsFirst = &apierr.RefusalError{
 // Waitlist), and deletes the users row; the cascades remove the Scouts,
 // their Registrations, the Role Grants, the class_counselors rows and the
 // stored Idempotency-Key responses. After the commit the Auth account
-// goes. If that fails, the answer is a 500 and the state is a login with
-// no data: the ID token still verifies, so a retry finds no row, deletes
-// nothing more, and deletes the Auth account. The other order could leave
-// personal data with no login to delete it.
+// goes, and last every session of the account (ADR 0007), in every
+// browser. If the Auth delete fails, the answer is a 500 and the state is
+// a login with no data: the session still verifies, so a retry finds no
+// row, deletes nothing more, and deletes the Auth account. The other
+// order could leave personal data with no login to delete it.
 func Delete(db *sql.DB, accounts authn.AccountManager) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		c := caller(r)
@@ -45,6 +46,12 @@ func Delete(db *sql.DB, accounts authn.AccountManager) http.Handler {
 			apierr.WriteInternal(w, r, fmt.Errorf("users: delete auth account: %w", err))
 			return
 		}
+		if err := authn.EndAllSessions(r.Context(), db, c.UID); err != nil {
+			// coverage:ignore reason: deleteAccountData has already written to the same pool, so only a failure between the two reaches this
+			apierr.WriteInternal(w, r, err)
+			return
+		}
+		http.SetCookie(w, authn.ClearSessionCookie())
 		w.WriteHeader(http.StatusNoContent)
 	})
 }

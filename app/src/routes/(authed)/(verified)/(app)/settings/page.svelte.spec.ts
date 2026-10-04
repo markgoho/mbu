@@ -5,6 +5,7 @@ import type { BootstrapResponse, ScoutResponse } from '#lib/api-types/users-api.
 import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import Page from './+page.svelte';
+import { signedIn } from '../../identityFixture.js';
 
 const { removeScout, deleteAccount, refreshAll } = vi.hoisted(() => ({
   removeScout: vi.fn<(fetcher: Fetcher, scoutId: string) => Promise<void>>(),
@@ -78,10 +79,12 @@ async function setup({
     deleteAccountError ? Promise.reject(deleteAccountError) : Promise.resolve(),
   );
 
-  const { rerender } = await render(Page, { data: { session, scouts: storedScouts } });
+  const { rerender } = await render(Page, { data: { ...signedIn, session, scouts: storedScouts } });
   // `refreshAll()` runs the `load` again, which gives the page new `data`.
   refreshAll.mockReset();
-  refreshAll.mockImplementation(() => rerender({ data: { session, scouts: storedScouts } }));
+  refreshAll.mockImplementation(() =>
+    rerender({ data: { ...signedIn, session, scouts: storedScouts } }),
+  );
 
   return {
     confirmSpy,

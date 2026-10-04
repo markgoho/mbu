@@ -7,32 +7,22 @@ import { getFirebaseAuth } from '#lib/firebase.js';
 import type { IdempotencyKeys } from '#lib/idempotency.js';
 
 /**
- * Returns the request headers with the ID token of the signed-in user as a
- * Bearer credential. When no user is signed in, or the token call fails, the
- * headers stay as they are: the server then answers 401 if the path needs auth.
- * The token goes only to the API of the app (a path that starts with `/api/`),
- * never to a different origin.
+ * Fetches an `/api/*` path with no 401 handling. The browser sends the
+ * `__session` cookie of the API with each same-origin request (ADR 0007), so no
+ * request carries an `Authorization` header. Use it only where a 401 is an
+ * ordinary answer: the session probe and the sign-in exchange in
+ * `#lib/auth.js`, and sign-out. Other code uses `apiFetch` or
+ * `apiFetchNoRedirect`.
  */
-async function withIdToken(path: string, headersInit: HeadersInit | undefined): Promise<Headers> {
-  const headers = new Headers(headersInit);
-  if (!path.startsWith('/api/')) return headers;
-
-  try {
-    const token = await getFirebaseAuth().currentUser?.getIdToken();
-    if (token) headers.set('Authorization', `Bearer ${token}`);
-  } catch (error) {
-    console.error('Failed to acquire auth token for request:', { path, error });
-  }
-  return headers;
-}
-
-async function fetchWithIdToken(path: string, init: RequestInit): Promise<Response> {
-  return fetch(path, { ...init, headers: await withIdToken(path, init.headers) });
+export function apiFetchRaw(path: string, init: RequestInit = {}): Promise<Response> {
+  return fetch(path, { ...init, credentials: 'same-origin' });
 }
 
 /**
-A 401 means that the server refused the token, so the client session ends too.
-*/
+ * A 401 means that the session ended. A Firebase user that is still signed in
+ * on the client (an email that waits for verification) is signed out too, so
+ * the `(signed-out)` guard does not send the visitor back.
+ */
 async function signOutAfter401(): Promise<void> {
   try {
     await signOut(getFirebaseAuth());
@@ -47,15 +37,15 @@ async function signOutAfter401(): Promise<void> {
 const redirectGuard = { isRedirecting: false };
 
 /**
- * Fetches an `/api/*` path with the ID token of the signed-in user. This is the
- * `Fetcher` for components and event handlers.
+ * Fetches an `/api/*` path with the session cookie. This is the `Fetcher` for
+ * components and event handlers.
  *
  * On a 401 response it signs the user out, goes to `/sign-in`, and then returns
  * the response. Do not use it in a `load`: `goto()` must not run there. Use
  * `apiFetchNoRedirect` in a `load`.
  */
 export async function apiFetch(path: string, init: RequestInit = {}): Promise<Response> {
-  const response = await fetchWithIdToken(path, init);
+  const response = await apiFetchRaw(path, init);
   if (response.status !== 401 || redirectGuard.isRedirecting) return response;
 
   redirectGuard.isRedirecting = true;
@@ -75,17 +65,14 @@ export async function apiFetch(path: string, init: RequestInit = {}): Promise<Re
  * The same fetch as `apiFetch`, but it does not navigate. This is the `Fetcher`
  * for a `load` in `+layout.ts` / `+page.ts`.
  *
- * On a 401 response it signs the user out and returns the response. The `load`
- * then calls `redirect(303, '/sign-in')` itself. The sign-out is necessary: the
- * sign-in route sends a signed-in user away, which would cause a redirect loop.
- *
- * The `load` must `await getFirebaseAuth().authStateReady()` before the first
- * call (#228, decision 4). Before that, `currentUser` is not restored after a
- * reload: the request has no token, gets a 401, and the sign-out then removes
- * the stored session.
+ * On a 401 response it signs the Firebase user out, if there is one, and
+ * returns the response. The `load` then calls `redirect(303, '/sign-in')`
+ * itself. The sign-out is necessary: the `(signed-out)` guard would exchange the
+ * token of a signed-in Firebase user for a new session, and send the visitor
+ * away again.
  */
 export async function apiFetchNoRedirect(path: string, init: RequestInit = {}): Promise<Response> {
-  const response = await fetchWithIdToken(path, init);
+  const response = await apiFetchRaw(path, init);
   if (response.status === 401) await signOutAfter401();
   return response;
 }
