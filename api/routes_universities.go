@@ -34,7 +34,11 @@ func registerUniversitiesRoutes(rt *router, d Deps) {
 
 	// The public read: anyone with the link, so it is rate limited by
 	// address (docs/api-design.md section 6). NoStore is outside the
-	// limit, so a 429 is not cached either.
-	publicLimit := ratelimit.Wrap(d.DB, "universities-public", []ratelimit.Rule{ratelimit.IPRule(d.ClientIP, 600, time.Hour)})
+	// limit, so a 429 is not cached either. PeerRule caps a caller on the
+	// run.app URL that forges X-Forwarded-For (#296).
+	publicLimit := ratelimit.Wrap(d.DB, "universities-public", []ratelimit.Rule{
+		ratelimit.IPRule(d.ClientIP, 600, time.Hour),
+		ratelimit.PeerRule(6000, time.Hour),
+	})
 	rt.public("GET /api/universities/{id}/public", universities.NoStore(publicLimit(universities.Public(d.DB))))
 }

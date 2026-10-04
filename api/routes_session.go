@@ -11,8 +11,12 @@ import (
 func registerSessionRoutes(rt *router, d Deps) {
 	db := d.sessionDB()
 	// The sign-in exchange runs with no session, so it is public and
-	// limited by address (docs/api-design.md section 6).
-	mintLimit := ratelimit.Wrap(d.DB, "session-create", []ratelimit.Rule{ratelimit.IPRule(d.ClientIP, 120, time.Hour)})
+	// limited by address (docs/api-design.md section 6). PeerRule caps a
+	// caller on the run.app URL that forges X-Forwarded-For (#296).
+	mintLimit := ratelimit.Wrap(d.DB, "session-create", []ratelimit.Rule{
+		ratelimit.IPRule(d.ClientIP, 120, time.Hour),
+		ratelimit.PeerRule(1200, time.Hour),
+	})
 	rt.public("POST /api/session", mintLimit(session.Create(d.Verifier, db)),
 		exempt("a sign-in mints a new session and ends the one the browser held; there is no Caller to scope a key by"))
 	rt.authed("GET /api/session", session.Get())

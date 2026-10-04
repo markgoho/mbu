@@ -24,12 +24,20 @@
 // value reads an entry the client wrote (silent: a script gets a new
 // bucket per request). So the default is 0, and the deployment sets 1.
 //
-// The deployed header shape is from Google's documentation of the GFE and
-// reports of the Hosting rewrite, not yet from a deployed request: check
-// it after the first deploy (#296). The run.app URL stays public (#259),
-// and on that path an entry left of the rightmost is the client's own; so
-// with ProxyHops 1 a direct caller can still choose its key. Closing that
-// path is an infrastructure question (#296).
+// Observed on 2026-10-04 (#296), from Cloud Run's request log
+// (httpRequest.remoteIp, the GFE's peer): on the run.app URL the peer is
+// the caller, also when the caller sends its own X-Forwarded-For; on the
+// Hosting rewrite it is a Google egress address (192.178.11.x, a
+// different one per request). So one proxy sits in front of the GFE on
+// the Hosting path, which agrees with ProxyHops 1. The full header was
+// not echoed: the auto-mode classifier refused the temporary echo service.
+//
+// The run.app URL must stay public: Cloud Scheduler calls it directly
+// (terraform/scheduler.tf), so default_uri_disabled is not an option. On
+// that path, with ProxyHops 1, the entry the resolver reads is one the
+// caller wrote. So each limited route also has ratelimit.PeerRule, keyed
+// on the rightmost entry with a cap 10 times the IPRule cap: a direct
+// caller that forges the entry still has one bucket there.
 package clientip
 
 import (
