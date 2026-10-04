@@ -3,8 +3,8 @@
 # `internal-caller@`; no shared secret exists, so state holds none.
 #
 # Each job calls the run.app URL directly (`local.api_base_url`), not the
-# Firebase Hosting rewrite: until cutover (#264) the rewrite sends `/api/**`
-# to Cloud Functions, and the audience is the run.app URL anyway.
+# Firebase Hosting rewrite: the audience is the run.app URL, and the rewrite
+# would only add a hop.
 #
 # `audience` is set explicitly on each job, and must be. Cloud Scheduler sets
 # an unset audience to the full target URI, path included. The guard

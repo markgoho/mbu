@@ -2,6 +2,8 @@
 
 The mapping from the Firestore model in `functions/src/collections/` to the Postgres schema of `api/`. #243 wrote it; #244 turns it into goose migrations. Firestore holds only test data, so there is no data migration. The decisions behind it are [ADR 0002](adr/0002-postgres-on-cloud-sql.md) and #240. "Rule 1" to "rule 12" are the conversion rules in the body of issue #243.
 
+The cutover (#264) removed `functions/`, `firestore.rules` and `firestore.indexes.json` from the repo. The references to them below are to the git history before that commit.
+
 Use the terms in [`../CONTEXT.md`](../CONTEXT.md). The DDL blocks below are the target shape, not the migration files: #244 adds the `GRANT`s to `app_runtime`, the goose markers and the row-safety notes.
 
 ## Contents

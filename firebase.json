@@ -1,27 +1,4 @@
 {
-  "firestore": {
-    "database": "(default)",
-    "location": "us-east4",
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log",
-        "*.local"
-      ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run lint",
-        "npm --prefix \"$RESOURCE_DIR\" run build"
-      ]
-    }
-  ],
   "hosting": [
     {
       "target": "main-site",
@@ -115,34 +92,11 @@
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
-          "source": "/api/health{,/**}",
-          "function": "healthApi",
-          "region": "us-east4"
-        },
-        {
-          "source": "/api/users{,/**}",
-          "function": "usersApi",
-          "region": "us-east4"
-        },
-        {
-          "source": "/api/universities{,/**}",
-          "function": "universitiesApi",
-          "region": "us-east4"
-        },
-        {
-          "source": "/api/admin/universities{,/**}",
-          "function": "universitiesApi",
-          "region": "us-east4"
-        },
-        {
-          "source": "/api/registrations{,/**}",
-          "function": "registrationsApi",
-          "region": "us-east4"
-        },
-        {
-          "source": "/api/retention{,/**}",
-          "function": "retentionApi",
-          "region": "us-east4"
+          "source": "/api/**",
+          "run": {
+            "serviceId": "mbu-api",
+            "region": "us-east4"
+          }
         },
         {
           "source": "**",
@@ -181,12 +135,6 @@
   "emulators": {
     "auth": {
       "port": 9099
-    },
-    "functions": {
-      "port": 5001
-    },
-    "firestore": {
-      "port": 8090
     },
     "ui": {
       "enabled": true

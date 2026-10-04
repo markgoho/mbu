@@ -35,7 +35,6 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 hugo/public
 hugo/resources
-functions/lib
 .playwright-mcp
 
 # Local Hugo module workspace. To build against a uni-theme checkout on
@@ -50,7 +49,6 @@ hugo/go.work.sum
 
 .firebase/
 firebase-*.log
-firestore-debug.log
 .playwright/
 .playwright-cli/
 .secrets.local

@@ -3,7 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-10-02
 - **Applies to:** `api/**` (authentication)
-- **Related:** #240 (decision 6), #249 (authorization), #265 (sessions follow-up), [`functions/docs/adr/0002-app-spa-is-sveltekit.md`](../../../functions/docs/adr/0002-app-spa-is-sveltekit.md) (decision 2). Source: doula-cloud ADR-0004, BFF-owned sessions (`~/github/doula-cloud/docs/adr/0004-bff-owned-sessions.md`).
+- **Related:** #240 (decision 6), #249 (authorization), #265 (sessions follow-up), [`app/docs/adr/0002-app-spa-is-sveltekit.md`](../../../app/docs/adr/0002-app-spa-is-sveltekit.md) (decision 2). Source: doula-cloud ADR-0004, BFF-owned sessions (`~/github/doula-cloud/docs/adr/0004-bff-owned-sessions.md`).
 
 ## Context
 
