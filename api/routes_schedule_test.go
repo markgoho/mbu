@@ -60,7 +60,7 @@ func draftSchedule(t *testing.T) *usersFixture {
 	return f
 }
 
-func TestScheduleRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
+func TestScheduleRoutes_RefuseAMissingAndAnInvalidSession(t *testing.T) {
 	f := draftSchedule(t)
 	all := append([]struct{ method, path, body string }{{http.MethodGet, pathBadges, ""}}, scheduleRoutes...)
 	for _, r := range all {
@@ -69,9 +69,9 @@ func TestScheduleRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
 			defer resp.Body.Close()
 			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 
-			resp = f.send(r.method, r.path, tokenUnverified, r.body)
+			resp = f.send(r.method, r.path, tokenNoSession, r.body)
 			defer resp.Body.Close()
-			wantRefusal(t, resp, http.StatusForbidden, apierr.CodeEmailNotVerified)
+			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 		})
 	}
 	if n := f.count(`SELECT count(*) FROM classes`) + f.count(`SELECT count(*) FROM periods`); n != 4 {
@@ -81,8 +81,7 @@ func TestScheduleRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
 
 func TestScheduleRoutes_ADatabaseFailureIsInternal(t *testing.T) {
 	d := testDeps()
-	d.DB = closedDB(t)
-	f := &usersFixture{t: t, h: routes(d)}
+	f := closedFixture(t, d)
 	for _, r := range scheduleRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
 			resp := f.send(r.method, r.path, tokenParent, r.body)
@@ -177,7 +176,7 @@ func TestListBadges_ReturnsTheCatalog(t *testing.T) {
 func postClass(f *usersFixture, key, body string) *httptest.ResponseRecorder {
 	f.t.Helper()
 	req := httptest.NewRequestWithContext(f.t.Context(), http.MethodPost, pathClasses, strings.NewReader(body))
-	req.Header.Set("Authorization", "Bearer "+tokenParent)
+	authenticate(f.t, req, f.db.App, f.now, tokenParent)
 	req.Header.Set(idempotency.HeaderName, key)
 	rec := httptest.NewRecorder()
 	f.h.ServeHTTP(rec, req)

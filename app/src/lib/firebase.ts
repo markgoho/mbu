@@ -2,7 +2,8 @@ import { initializeApp } from 'firebase/app';
 import { type Auth, connectAuthEmulator, getAuth } from 'firebase/auth';
 
 // Not a secret. The browser API key only identifies the Firebase project. The
-// access boundary is the ID token verification in the API.
+// access boundary is the session of the API, which it mints after it verifies
+// the ID token (ADR 0007).
 const firebaseConfig = {
   apiKey: 'AIzaSyAh8jz9zS_oM_kGGEmAUMR6XC-ka68lzdE',
   authDomain: 'merit-badge-university.firebaseapp.com',

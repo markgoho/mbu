@@ -17,6 +17,7 @@ import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import { IdempotencyKeys } from '#lib/idempotency.js';
 import Page from './+page.svelte';
+import { signedIn } from '../../../identityFixture.js';
 
 const universities = vi.hoisted(() => ({
   patchUniversity:
@@ -203,6 +204,7 @@ async function setup({
   universities.deleteUniversity.mockImplementation(write(() => {}));
 
   const toData = () => ({
+    ...signedIn,
     session,
     university: stored.university,
     classes: stored.classes,

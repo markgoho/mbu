@@ -39,7 +39,7 @@ The Playwright suite is a smoke suite. It stays small: the unit specs own the be
 - The `firebase` CLI is a dependency of the repo root. Run `bun install` in the repo root before the first run.
 - On a local machine, the suite uses an Auth emulator that runs already on port 9099. It always makes a new build and a new preview server, so port 4173 must be free. After a run, `build/` is a build that connects to the Auth emulator: run `bun run build` again before you use `build/` for a different purpose.
 - The preview server has no `/api` proxy. A spec mocks each `/api/*` call with `page.route()` before the navigation. A call with no mock is aborted, and the test fails with the list of those calls.
-- Import `test` and `expect` from `e2e/fixtures/auth.fixture.ts`, not from `@playwright/test`. The `page` fixture has the guard for calls with no mock. The `verifiedPage` fixture makes a verified account in the emulator, mocks `POST /api/users/me` and `GET /api/health`, signs in through the UI, and gives the page on the app home.
+- Import `test` and `expect` from `e2e/fixtures/auth.fixture.ts`, not from `@playwright/test`. The `page` fixture has the guard for calls with no mock, fails a test in which an `/api/*` call carries an `Authorization` header, and fakes the session routes: `POST /api/session` sets the `__session` cookie, `GET /api/session` answers a request that carries it (else 401), and `DELETE /api/session` clears it. The `verifiedPage` fixture makes a verified account in the emulator, mocks `POST /api/users/me` and `GET /api/health`, signs in through the UI, and gives the page on the app home.
 - Each test makes its own account in the emulator: the email is `e2e-<test ID>-<repeat>-<retry>-<time>@example.com` and the password is `password123`. There is no seeded account.
 - Type the mock data with the types in `src/lib/api-types/`.
 - To run one file: `bun run test:e2e e2e/home.e2e.ts`. The report is in `playwright-report/` (`bunx playwright show-report`).
@@ -56,7 +56,7 @@ The Go API serves all routes of the app.
 All code gets Firebase Auth and the API through these modules in `src/lib/`:
 
 - `firebase.ts`: `getFirebaseAuth()` is the only place that calls `initializeApp` and `getAuth`. The client uses Auth only. All data access goes through the API.
-- `api.ts`: the only place that calls `fetch` for `/api/*`. `apiFetch` adds the Firebase ID token as `Authorization: Bearer`. On a 401 it signs the user out and goes to `/sign-in`. `apiFetchNoRedirect` does the same but does not navigate: use it in a `load`, and call `redirect(303, '/sign-in')` there. `expectOk`, `getJson`, `sendJson` and `createJson` throw an `ApiError` for a response that is not OK: `status`, and `body`, the error body `{ code, message, details? }` of the API (`api-types/api-error.types.ts`), or `undefined` when the body does not have that shape (`readApiErrorBody`).
+- `api.ts`: the only place that calls `fetch` for `/api/*`. The API owns the session (`api/docs/adr/0007-api-owned-sessions.md`): the browser sends the HttpOnly `__session` cookie, and no request carries an `Authorization` header. `apiFetch` goes to `/sign-in` on a 401, after it signs out a Firebase user if there is one. `apiFetchNoRedirect` does the same but does not navigate: use it in a `load`, and call `redirect(303, '/sign-in')` there. `apiFetchRaw` has no 401 handling: only `#lib/auth.js` and sign-out use it. `expectOk`, `getJson`, `sendJson` and `createJson` throw an `ApiError` for a response that is not OK: `status`, and `body`, the error body `{ code, message, details? }` of the API (`api-types/api-error.types.ts`), or `undefined` when the body does not have that shape (`readApiErrorBody`).
 - `idempotency.ts`: `IdempotencyKeys`, the `Idempotency-Key` of a `POST` that creates a record (api-design.md section 3). `createJson` takes one. The API stores the answer (a 2xx or a 4xx) of a key for 48 hours, and refuses a key that comes again with a different request (`409 IDEMPOTENCY_KEY_REUSED`). Thus a key is used again only for the same path and body after a send that got no stored answer (a network failure or a 5xx). After a 2xx or a 4xx, the next send gets a new key. A page makes one `IdempotencyKeys` (a plain `const`) and gives it to each create call.
 - `fetcher.ts`: the `Fetcher` type. A domain module takes a `Fetcher` as a parameter. A route passes `apiFetch` or `apiFetchNoRedirect`.
 - `apiErrorMessage.ts`: the readers of an `ApiError`. `apiErrorMessage(error, fallback)` gives the text to show for a failed call: the `message` of the API, `fallback` for `INTERNAL` or no body, a text of the app for `RATE_LIMITED`, `IDEMPOTENCY_KEY_REUSED` and `FAILED_PRECONDITION`, and the badge titles of the classes in `details` for `PERIOD_CONFLICT` and the `CONFLICT` of a period that a class uses. `apiFieldErrors(error)` gives the `details` of an `INVALID_ARGUMENT` refusal: the message of each field, keyed by its JSON name (`location.city`). `hasCode(error, code)` compares the code with an `ApiErrorCode`. Compare codes with `hasCode`, never the `message`.
@@ -64,26 +64,30 @@ All code gets Firebase Auth and the API through these modules in `src/lib/`:
 
 ## Session and route guards
 
-`src/lib/session.svelte.ts` is the session of the signed-in user:
+The API owns the session (ADR 0007 in `api/docs/adr/`). The Firebase Auth SDK only signs the user in. `src/lib/auth.ts` turns that into a session:
 
-- `session.user`, `session.emailVerified` and `session.superAdmin` are reactive. They come from the Firebase ID token listener, which starts at the first read.
-- `signInWithGoogle`, `completeGoogleRedirect`, `signInWithEmailPassword`, `signUpWithEmailPassword`, `resendEmailVerification`, `reloadUser` and `signOut` change the session. The functions that change who is signed in, or the state of the user, call `refreshAll()` themselves, so the guards run again. A caller does not do that.
+- `resolveAuth(apiFetchRaw)` gives the `AuthState` of the visitor: `signed-in` (with the `SessionResponse` of `GET /api/session`), `unverified` (a Firebase user whose email is not verified; the API gives it no session) or `signed-out`. With no session and a verified Firebase user, it sends the ID token in the body of `POST /api/session`, and then signs the SDK out. JavaScript then holds no credential.
+- The SDK keeps the user of an unverified email, because the verify-email page needs it to send the email again and to reload the user.
+
+`src/lib/session.svelte.ts` has the functions that change the session:
+
+- `signInWithGoogle`, `completeGoogleRedirect`, `signInWithEmailPassword`, `signUpWithEmailPassword`, `resendEmailVerification`, `isEmailVerifiedAfterReload` and `signOut` change the session. The functions that change who is signed in, or the state of the user, call `refreshAll()` themselves, so the guards run again and make the session. A caller does not do that. `signOut` ends the session with `DELETE /api/session`.
 - `bootstrap`, `completeOnboarding`, `deleteAccount` and `ackRosterExport` call the API. They take a `Fetcher`.
 
 A guard is the `load` of a `+layout.ts` in a route group. The route groups do not change the URL. The nesting is the order of the guards:
 
 | Route group                       | Guard                                                                        |
 | --------------------------------- | ---------------------------------------------------------------------------- |
-| `(signed-out)`                    | A signed-in user goes to the `returnTo` path, or to `/`.                     |
-| `(authed)`                        | A visitor with no session goes to `/sign-in`.                                |
-| `(authed)/(verified)`             | A user with an email that is not verified goes to `/verify-email`.           |
+| `(signed-out)`                    | A signed-in or unverified user goes to the `returnTo` path, or to `/`.       |
+| `(authed)`                        | A signed-out visitor goes to `/sign-in`. Gives `data.auth` (`AuthState`).    |
+| `(authed)/(verified)`             | A user with no session goes to `/verify-email`. Gives `data.identity`.       |
 | `(authed)/(verified)/(app)`       | Bootstraps the account. An account that needs consent goes to `/onboarding`. |
-| `(authed)/(verified)/(app)/admin` | A user with no `superAdmin` claim goes to `/`.                               |
+| `(authed)/(verified)/(app)/admin` | A session with no `superAdmin` claim goes to `/`.                            |
 
 Rules for a guard `load`:
 
 - A guard that is below a different guard calls `await parent()` first. SvelteKit runs the layout loads of a route at the same time, and this gives the guards a fixed order.
-- `await getFirebaseAuth().authStateReady()` before the read of `currentUser` or an API call.
+- Read the state from `await parent()`: only the `(signed-out)` and `(authed)` guards call `resolveAuth`.
 - Use `redirect(303, ...)`, not `goto()`. Use `apiFetchNoRedirect` for an API call.
 
 The `(app)` guard returns the bootstrap response as `data.session`. A page in that group reads the account from `page.data.session`. `invalidate(SESSION_DEPENDENCY)` loads it again.
@@ -104,7 +108,7 @@ Each API domain is one module of functions in `src/lib/`. A function is one requ
 Rules for a route that uses them:
 
 - A read goes in the `load` of `+page.ts`, with `apiFetchNoRedirect`. The route owns its read: the `load` gets the ID from `params`. There is no "active ID" in a module.
-- A `load` under a guard group calls `await parent()` first. A `load` that is in no guard group (`/e/[id]`) calls `await getFirebaseAuth().authStateReady()` before the first request.
+- A `load` under a guard group calls `await parent()` first. A `load` that is in no guard group (`/e/[id]`) needs nothing first: the browser sends the session cookie by itself.
 - The `load` maps the `ApiError`. For a 401, `redirect(303, resolve('/(signed-out)/sign-in'))`. For a 403 on a university that the user does not own, `redirect(303, ...)` to `/universities?denied=<reason>`, and the dashboard shows the message of that reason. For other errors, `error(status, apiErrorMessage(error, fallback))`. `failLoad(error, { fallback, denied? })` from `loadFailure.ts` does this mapping: call it in the `catch` block of the read. The reasons are `university` (the editor) and `roster` (the rosters). A route with a new denied message adds its reason to `DENIED_MESSAGES` in that module. With `forbidden: 'home'`, a 403 goes to the app home with no message: the super-admin routes use it.
 - A write goes in a component, with `apiFetch`. After a write, call `refreshAll()` (or `invalidate` with a `depends()` key of the `load`). Do not use `invalidateAll`: SvelteKit 3 marks the function and the `goto` option of that name as deprecated. The modules do not load data again after a write.
 - A route spec mocks the module (`vi.mock('#lib/universities.js')`). The modules have no specs of their own.
@@ -167,7 +171,7 @@ Rules from the parent routes:
 
 Rules from the super-admin routes:
 
-- A `load` under `admin/` gives `forbidden: 'home'` to `failLoad`. The `admin` guard reads the `superAdmin` claim from the ID token, and the API reads it again. A 403 from the API then means that the user has no claim now, so the user goes to `/`, as the guard does. Do not give `denied` there: that message is for a chancellor.
+- A `load` under `admin/` gives `forbidden: 'home'` to `failLoad`. The `admin` guard reads the `superAdmin` claim from the session (`data.identity`), and the API reads it again. A 403 from the API then means that the user has no claim now, so the user goes to `/`, as the guard does. Do not give `denied` there: that message is for a chancellor.
 - A page that ends with a decision (approve, reject) goes back to its list with `goto(path, { refreshAll: true })` in the `onSuccess` of its `FormAction`. The list and the guards above it then load again.
 - The review queue has no timezone of an event in its rows. It shows dates and times in the timezone of the browser.
 

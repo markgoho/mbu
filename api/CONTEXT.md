@@ -81,8 +81,12 @@ A coarse age range for a Scout: `10-11`, `12-13`, `14-15` or `16-17`. It replace
 _Avoid_: Age, DOB, grade
 
 **Super-admin**:
-The platform operator. The `superAdmin` custom claim on the Firebase ID token marks the Super-admin. The Super-admin is not scoped to a University and works the moderation review queue.
+The platform operator. The `superAdmin` custom claim on the Firebase ID token marks the Super-admin; the Session keeps the claim it had at sign-in. The Super-admin is not scoped to a University and works the moderation review queue.
 _Avoid_: Admin (unqualified), moderator, staff
+
+**Session**:
+The signed-in state of one adult in one browser: an opaque token in the HttpOnly `__session` cookie and one row in `sessions` that the API owns (ADR 0007). Sign-in exchanges a Firebase ID token for it; sign-out and account deletion end it. A Session exists only for a verified email.
+_Avoid_: Login, token (for the session), auth state
 
 **Role Grant**:
 The record that gives an adult the `chancellor` or `counselor` role on one scope: a University or a Class. It is the only source of truth for authorization; display caches (such as the Counselors on a Class) are never used to authorize. A grant is `invited` (by email, before the adult has an account), `active` or `revoked`.

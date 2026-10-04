@@ -255,7 +255,7 @@ func TestRegister_AChancellorOrASuperAdminSkipsTheWindow(t *testing.T) {
 	defer resp.Body.Close()
 	wantStatus(t, resp, http.StatusOK)
 
-	f.user("uid-admin", "admin@example.com")
+	f.user("uid-admin", emailAdmin)
 	f.scout(scoutOther2, "uid-admin")
 	resp = f.send(http.MethodPost, pathRegister(classThree), tokenSuperAdmin,
 		`{"scoutId":"`+scoutOther2+`","acceptConsent":true}`)
@@ -336,7 +336,7 @@ func TestRegister_ARepeatWithTheSameKeyRegistersOnceAndAnswersTheSame(t *testing
 	var bodies []string
 	for range 2 {
 		req := httptest.NewRequestWithContext(t.Context(), http.MethodPost, pathRegister(classOne), strings.NewReader(registerAmy))
-		req.Header.Set("Authorization", "Bearer "+tokenParent)
+		authenticate(t, req, f.db.App, f.now, tokenParent)
 		req.Header.Set(idempotency.HeaderName, "register-amy")
 		rec := httptest.NewRecorder()
 		f.h.ServeHTTP(rec, req)
@@ -528,7 +528,7 @@ var registrationsRoutes = []struct{ method, path, body string }{
 	{http.MethodGet, pathRoster(uniOne), ""},
 }
 
-func TestRegistrationsRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
+func TestRegistrationsRoutes_RefuseAMissingAndAnInvalidSession(t *testing.T) {
 	f := seatFixture(t)
 	for _, r := range registrationsRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
@@ -536,9 +536,9 @@ func TestRegistrationsRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.
 			defer resp.Body.Close()
 			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 
-			resp = f.send(r.method, r.path, tokenUnverified, r.body)
+			resp = f.send(r.method, r.path, tokenNoSession, r.body)
 			defer resp.Body.Close()
-			wantRefusal(t, resp, http.StatusForbidden, apierr.CodeEmailNotVerified)
+			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 		})
 	}
 	if n := f.count(`SELECT count(*) FROM registrations`); n != 0 {
@@ -548,8 +548,7 @@ func TestRegistrationsRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.
 
 func TestRegistrationsRoutes_ADatabaseFailureIsInternal(t *testing.T) {
 	d := testDeps()
-	d.DB = closedDB(t)
-	f := &usersFixture{t: t, h: routes(d)}
+	f := closedFixture(t, d)
 	for _, r := range registrationsRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
 			resp := f.send(r.method, r.path, tokenParent, r.body)
@@ -580,14 +579,18 @@ func (f *usersFixture) sendAll(method string, paths, bodies []string) []int {
 	return f.sendAllAs(tokenParent, method, paths, bodies)
 }
 
-// sendAllAs is sendAll with the Bearer token of another caller.
+// sendAllAs is sendAll as another caller. Each request is signed in
+// before the first one goes, so they still race each other.
 func (f *usersFixture) sendAllAs(token, method string, paths, bodies []string) []int {
 	statuses := make([]int, len(paths))
-	var wg sync.WaitGroup
+	reqs := make([]*http.Request, len(paths))
 	for i := range paths {
+		reqs[i] = httptest.NewRequestWithContext(f.t.Context(), method, paths[i], strings.NewReader(bodies[i]))
+		authenticate(f.t, reqs[i], f.db.App, f.now, token)
+	}
+	var wg sync.WaitGroup
+	for i, req := range reqs {
 		wg.Go(func() {
-			req := httptest.NewRequestWithContext(f.t.Context(), method, paths[i], strings.NewReader(bodies[i]))
-			req.Header.Set("Authorization", "Bearer "+token)
 			rec := httptest.NewRecorder()
 			f.h.ServeHTTP(rec, req)
 			statuses[i] = rec.Code

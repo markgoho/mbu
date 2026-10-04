@@ -97,7 +97,7 @@ func moderationFixture(t *testing.T, status string) *usersFixture {
 	return f
 }
 
-func TestModerationRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) {
+func TestModerationRoutes_RefuseAMissingAndAnInvalidSession(t *testing.T) {
 	f := moderationFixture(t, statusSubmitted)
 	for _, r := range moderationRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
@@ -105,9 +105,9 @@ func TestModerationRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) 
 			defer resp.Body.Close()
 			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 
-			resp = f.send(r.method, r.path, tokenUnverified, r.body)
+			resp = f.send(r.method, r.path, tokenNoSession, r.body)
 			defer resp.Body.Close()
-			wantRefusal(t, resp, http.StatusForbidden, apierr.CodeEmailNotVerified)
+			wantRefusal(t, resp, http.StatusUnauthorized, apierr.CodeUnauthorized)
 		})
 	}
 	if s := f.statusOf(); s != statusSubmitted {
@@ -119,8 +119,7 @@ func TestModerationRoutes_RefuseAMissingTokenAndAnUnverifiedEmail(t *testing.T) 
 // read of each route is the one that fails.
 func TestModerationRoutes_ADatabaseFailureIsInternal(t *testing.T) {
 	d := testDeps()
-	d.DB = closedDB(t)
-	f := &usersFixture{t: t, h: routes(d)}
+	f := closedFixture(t, d)
 	for _, r := range moderationRoutes {
 		t.Run(r.method+" "+r.path, func(t *testing.T) {
 			resp := f.send(r.method, r.path, tokenSuperAdmin, r.body)

@@ -6,6 +6,7 @@ import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import type { Fetcher } from '#lib/fetcher.js';
 import Page from './+page.svelte';
 import { sampleRoster } from './rosterFixture.js';
+import { signedIn } from '../../../../identityFixture.js';
 
 const { ackRosterExport } = vi.hoisted(() => ({
   ackRosterExport: vi.fn<(fetcher: Fetcher) => Promise<void>>(),
@@ -61,12 +62,16 @@ async function setup({ roster = sampleRoster, ackedAt = null, ackError }: SetupO
     linkClickSpy.mockRestore();
   });
 
-  const { rerender } = await render(Page, { data: { session: buildSession(ackedAt), roster } });
+  const { rerender } = await render(Page, {
+    data: { ...signedIn, session: buildSession(ackedAt), roster },
+  });
   // The real function stores the acknowledgment and then loads the session again.
   ackRosterExport.mockReset();
   ackRosterExport.mockImplementation(async () => {
     if (ackError) throw ackError;
-    await rerender({ data: { session: buildSession('2026-07-05T00:00:00.000Z'), roster } });
+    await rerender({
+      data: { ...signedIn, session: buildSession('2026-07-05T00:00:00.000Z'), roster },
+    });
   });
 
   return {

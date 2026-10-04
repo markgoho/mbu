@@ -5,9 +5,8 @@ import Page from './+page.svelte';
 
 const { sessionMock, goto } = vi.hoisted(() => ({
   sessionMock: {
-    session: { user: { email: '', emailVerified: false } },
     resendEmailVerification: vi.fn<() => Promise<void>>(),
-    reloadUser: vi.fn<() => Promise<void>>(),
+    isEmailVerifiedAfterReload: vi.fn<() => Promise<boolean>>(),
   },
   goto: vi.fn<(url: string) => Promise<void>>(),
 }));
@@ -34,23 +33,18 @@ async function setup({
   resendError,
   reloadError,
 }: SetupOptions = {}) {
-  const user = { email: 'parent@example.com', emailVerified: false };
-  sessionMock.session.user = user;
   goto.mockReset();
   goto.mockResolvedValue();
   sessionMock.resendEmailVerification.mockReset();
   sessionMock.resendEmailVerification.mockImplementation(() =>
     resendError ? Promise.reject(resendError) : Promise.resolve(),
   );
-  sessionMock.reloadUser.mockReset();
-  sessionMock.reloadUser.mockImplementation(() => {
-    if (reloadError) return Promise.reject(reloadError);
-    // Firebase changes the user object in place.
-    user.emailVerified = isVerifiedAfterReload;
-    return Promise.resolve();
-  });
+  sessionMock.isEmailVerifiedAfterReload.mockReset();
+  sessionMock.isEmailVerifiedAfterReload.mockImplementation(() =>
+    reloadError ? Promise.reject(reloadError) : Promise.resolve(isVerifiedAfterReload),
+  );
 
-  await render(Page);
+  await render(Page, { data: { auth: { status: 'unverified', email: 'parent@example.com' } } });
 
   return {
     resendButton: page.getByRole('button', { name: 'Resend email' }),
@@ -107,7 +101,7 @@ describe('verify-email page', () => {
     await expect
       .element(page.getByRole('alert'))
       .toHaveTextContent('Email is not verified yet. Please try again.');
-    expect(sessionMock.reloadUser).toHaveBeenCalledOnce();
+    expect(sessionMock.isEmailVerifiedAfterReload).toHaveBeenCalledOnce();
     expect(goto).not.toHaveBeenCalled();
   });
 

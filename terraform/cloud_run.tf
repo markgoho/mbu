@@ -121,6 +121,13 @@ resource "google_cloud_run_v2_service" "api" {
         name  = "MAILGUN_DOMAIN"
         value = "mg.merit-badge.university"
       }
+      # The browser origins of the app on the app-site Hosting target
+      # (.firebaserc). csrf.Wrap refuses a state-changing request with any
+      # other Origin header (ADR 0007); unset stops startup.
+      env {
+        name  = "EXPECTED_ORIGINS"
+        value = "https://mbu-platform.web.app,https://mbu-platform.firebaseapp.com"
+      }
     }
   }
 

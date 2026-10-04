@@ -4,12 +4,11 @@ import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import { ApiError } from '#lib/api.js';
 import { load } from './+layout.js';
 
-const { mockAuth, bootstrap } = vi.hoisted(() => ({
-  mockAuth: { authStateReady: () => Promise.resolve() },
+const { bootstrap } = vi.hoisted(() => ({
   bootstrap: vi.fn<() => Promise<unknown>>(),
 }));
 
-vi.mock('#lib/firebase.js', () => ({ getFirebaseAuth: () => mockAuth }));
+vi.mock('#lib/firebase.js', () => ({ getFirebaseAuth: () => ({}) }));
 vi.mock('firebase/auth', () => ({ signOut: vi.fn() }));
 vi.mock('$app/navigation', () => ({ goto: vi.fn() }));
 vi.mock('#lib/session.svelte.js', () => ({ bootstrap, SESSION_DEPENDENCY: 'app:session' }));

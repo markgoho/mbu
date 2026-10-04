@@ -5,6 +5,7 @@ import type { ReviewQueueRow } from '#lib/api-types/universities-api.types.js';
 import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import Page from './+page.svelte';
 import { sampleRow } from './reviewQueueFixture.js';
+import { signedIn } from '../../../identityFixture.js';
 
 const session: BootstrapResponse = {
   user: {
@@ -25,7 +26,7 @@ interface SetupOptions {
 }
 
 async function setup({ rows = [sampleRow] }: SetupOptions = {}) {
-  await render(Page, { data: { session, universities: rows } });
+  await render(Page, { data: { ...signedIn, session, universities: rows } });
 
   return { card: page.getByRole('listitem').getByRole('link') };
 }

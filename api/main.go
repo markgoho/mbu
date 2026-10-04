@@ -100,6 +100,27 @@ func clientIPProxyHops(getenv func(string) string) (int, error) {
 	return hops, nil
 }
 
+// errNoExpectedOrigins stops startup when EXPECTED_ORIGINS names no
+// origin. Without one, csrf.Wrap refuses every state-changing request
+// from a browser, and nothing says why.
+var errNoExpectedOrigins = errors.New("EXPECTED_ORIGINS is not set")
+
+// expectedOrigins reads EXPECTED_ORIGINS, the comma-separated browser
+// origins of the app (scheme, host and port, no path), for csrf.Wrap
+// (ADR 0007).
+func expectedOrigins(getenv func(string) string) ([]string, error) {
+	var origins []string
+	for origin := range strings.SplitSeq(getenv("EXPECTED_ORIGINS"), ",") {
+		if origin = strings.TrimSpace(origin); origin != "" {
+			origins = append(origins, origin)
+		}
+	}
+	if len(origins) == 0 {
+		return nil, errNoExpectedOrigins
+	}
+	return origins, nil
+}
+
 // internalGuard builds the guard of /api/internal/** (ADR 0005) from
 // the environment. getenv and validate are parameters, so a test can
 // assert what the service accepts as an internal caller; main() passes
@@ -163,15 +184,23 @@ func main() {
 		log.Fatalf("config: %v", err)
 	}
 
+	// coverage:ignore reason: reads the real environment, not exercised by unit tests; expectedOrigins is
+	origins, err := expectedOrigins(os.Getenv)
+	if err != nil {
+		// coverage:ignore reason: reads the real environment, not exercised by unit tests; expectedOrigins is
+		log.Fatalf("config: %v", err)
+	}
+
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	deps := Deps{
-		Verifier:     verifier,
-		Now:          clock.Real,
-		DB:           db,
-		ClientIP:     clientip.Resolver{ProxyHops: proxyHops},
-		Accounts:     verifier,
-		InternalAuth: internalGuard(os.Getenv, internalauth.GoogleValidator),
-		Mail:         mailSender(os.Getenv, log.Printf),
+		Verifier:        verifier,
+		Now:             clock.Real,
+		DB:              db,
+		ExpectedOrigins: origins,
+		ClientIP:        clientip.Resolver{ProxyHops: proxyHops},
+		Accounts:        verifier,
+		InternalAuth:    internalGuard(os.Getenv, internalauth.GoogleValidator),
+		Mail:            mailSender(os.Getenv, log.Printf),
 	}
 	// coverage:ignore reason: wires the real Deps main() serves from; routes() is exercised by main_test.go
 	port := resolvePort(os.Getenv)

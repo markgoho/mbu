@@ -3,6 +3,7 @@ import {
   ApiError,
   apiFetch,
   apiFetchNoRedirect,
+  apiFetchRaw,
   createJson,
   expectOk,
   getJson,
@@ -11,12 +12,8 @@ import {
 import { IdempotencyKeys } from '#lib/idempotency.js';
 import type { Fetcher } from '#lib/fetcher.js';
 
-interface MockUser {
-  getIdToken: () => Promise<string>;
-}
-
 const { mockAuth, signOut, goto } = vi.hoisted(() => ({
-  mockAuth: { currentUser: undefined as MockUser | undefined },
+  mockAuth: { currentUser: undefined as { uid: string } | undefined },
   signOut: vi.fn<(auth: unknown) => Promise<void>>(),
   goto: vi.fn<(url: string) => Promise<void>>(),
 }));
@@ -26,14 +23,6 @@ vi.mock('firebase/auth', () => ({ signOut }));
 vi.mock('$app/navigation', () => ({ goto }));
 
 interface SetupOptions {
-  /**
-  `false` means that no user is signed in.
-  */
-  isSignedIn?: boolean;
-  /**
-  The token call of the signed-in user.
-  */
-  getIdToken?: MockUser['getIdToken'];
   /**
   The status of the response from the server.
   */
@@ -52,19 +41,12 @@ interface SetupOptions {
   gotoError?: Error;
 }
 
-function setup({
-  isSignedIn = true,
-  getIdToken = () => Promise.resolve('test-token'),
-  status = 200,
-  body = {},
-  signOutError,
-  gotoError,
-}: SetupOptions = {}) {
+function setup({ status = 200, body = {}, signOutError, gotoError }: SetupOptions = {}) {
   // Each test starts from a clean state, so no teardown is necessary.
   vi.unstubAllGlobals();
   vi.restoreAllMocks();
 
-  mockAuth.currentUser = isSignedIn ? { getIdToken } : undefined;
+  mockAuth.currentUser = { uid: 'u1' };
   signOut.mockReset();
   signOut.mockImplementation(() =>
     signOutError ? Promise.reject(signOutError) : Promise.resolve(),
@@ -87,13 +69,14 @@ function setup({
 }
 
 describe('apiFetch', () => {
-  it('attaches the ID token of the signed-in user as a Bearer credential', async () => {
+  it('sends the session cookie of the browser and no Authorization header', async () => {
     const { fetchMock, sentHeaders } = setup();
 
     const response = await apiFetch('/api/users/me');
 
     expect(fetchMock.mock.calls[0]?.[0]).toBe('/api/users/me');
-    expect(sentHeaders().get('Authorization')).toBe('Bearer test-token');
+    expect(fetchMock.mock.calls[0]?.[1]).toMatchObject({ credentials: 'same-origin' });
+    expect(sentHeaders().has('Authorization')).toBe(false);
     expect(response.status).toBe(200);
   });
 
@@ -111,41 +94,7 @@ describe('apiFetch', () => {
       body: '{"displayName":"Pat"}',
     });
     expect(sentHeaders().get('Content-Type')).toBe('application/json');
-    expect(sentHeaders().get('Authorization')).toBe('Bearer test-token');
-  });
-
-  it('sends the request without a credential when no user is signed in', async () => {
-    const { fetchMock, sentHeaders } = setup({ isSignedIn: false });
-
-    await apiFetch('/api/health');
-
-    expect(fetchMock).toHaveBeenCalledOnce();
     expect(sentHeaders().has('Authorization')).toBe(false);
-  });
-
-  it('does not attach the credential to a path that is not an API path', async () => {
-    const { fetchMock, sentHeaders } = setup();
-
-    await apiFetch('https://example.com/api/users/me');
-
-    expect(fetchMock).toHaveBeenCalledOnce();
-    expect(sentHeaders().has('Authorization')).toBe(false);
-  });
-
-  it('logs the error and sends the request without a credential when the token call fails', async () => {
-    const tokenError = new Error('network-request-failed');
-    const { fetchMock, sentHeaders, consoleError } = setup({
-      getIdToken: () => Promise.reject(tokenError),
-    });
-
-    await apiFetch('/api/users/me');
-
-    expect(fetchMock).toHaveBeenCalledOnce();
-    expect(sentHeaders().has('Authorization')).toBe(false);
-    expect(consoleError).toHaveBeenCalledWith(
-      'Failed to acquire auth token for request:',
-      expect.objectContaining({ path: '/api/users/me', error: tokenError }),
-    );
   });
 
   it('signs the user out and then goes to the sign-in page on a 401 response', async () => {
@@ -216,15 +165,20 @@ describe('apiFetch', () => {
   });
 });
 
-describe('apiFetchNoRedirect', () => {
-  it('attaches the ID token of the signed-in user as a Bearer credential', async () => {
-    const { sentHeaders } = setup();
+describe('apiFetchRaw', () => {
+  it('returns a 401 with no sign-out and no navigation', async () => {
+    const { sentHeaders } = setup({ status: 401 });
 
-    await apiFetchNoRedirect('/api/users/me');
+    const response = await apiFetchRaw('/api/session');
 
-    expect(sentHeaders().get('Authorization')).toBe('Bearer test-token');
+    expect(response.status).toBe(401);
+    expect(sentHeaders().has('Authorization')).toBe(false);
+    expect(signOut).not.toHaveBeenCalled();
+    expect(goto).not.toHaveBeenCalled();
   });
+});
 
+describe('apiFetchNoRedirect', () => {
   it('signs the user out on a 401 response and returns the response with no navigation', async () => {
     setup({ status: 401 });
 

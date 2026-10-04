@@ -3,7 +3,6 @@ import { resolve } from '$app/paths';
 import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import { ApiError, apiFetchNoRedirect } from '#lib/api.js';
 import { apiErrorMessage } from '#lib/apiErrorMessage.js';
-import { getFirebaseAuth } from '#lib/firebase.js';
 import { bootstrap, SESSION_DEPENDENCY } from '#lib/session.svelte.js';
 import type { LayoutLoad } from './$types';
 
@@ -19,21 +18,17 @@ const BOOTSTRAP_FAILED_MESSAGE = 'Could not load your account. Please try again.
  * `invalidate(SESSION_DEPENDENCY)` loads it again.
  *
  * `await parent()` makes this guard run after requireAuth and requireVerified:
- * the API refuses the bootstrap of a user with an email that is not verified.
+ * the bootstrap needs the session that requireVerified checks.
  */
 export const load: LayoutLoad = async ({ parent, depends }) => {
   await parent();
   depends(SESSION_DEPENDENCY);
 
-  // The token of the request comes from `currentUser`, which is empty until
-  // Firebase restores the stored session.
-  await getFirebaseAuth().authStateReady();
-
   let session: BootstrapResponse;
   try {
     session = await bootstrap(apiFetchNoRedirect);
   } catch (bootstrapError) {
-    // `apiFetchNoRedirect` has signed the user out. A `load` redirects; it does not call `goto()`.
+    // The session has ended (`apiFetchNoRedirect` has signed out a Firebase user, if any). A `load` redirects; it does not call `goto()`.
     if (bootstrapError instanceof ApiError && bootstrapError.status === 401) {
       redirect(303, resolve('/(signed-out)/sign-in'));
     }

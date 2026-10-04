@@ -164,7 +164,7 @@ func TestAppRoleHasDataPrivilegesOnEachTable(t *testing.T) {
 
 	want := []string{
 		"class_counselors", "class_periods", "classes", "idempotency_keys", "periods",
-		"rate_limit_buckets", "registration_mail_outbox", "registrations", "role_grants", "scouts", "universities", "users",
+		"rate_limit_buckets", "registration_mail_outbox", "registrations", "role_grants", "scouts", "sessions", "universities", "users",
 	}
 	var got []string
 	for rows.Next() {

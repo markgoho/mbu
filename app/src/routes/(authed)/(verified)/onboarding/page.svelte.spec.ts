@@ -4,11 +4,11 @@ import { render } from 'vitest-browser-svelte';
 import type { OnboardingRequest } from '#lib/api-types/users-api.types.js';
 import { ApiError } from '#lib/api.js';
 import type { Fetcher } from '#lib/fetcher.js';
+import { identity } from '../identityFixture.js';
 import Page from './+page.svelte';
 
 const { sessionMock, goto } = vi.hoisted(() => ({
   sessionMock: {
-    session: { user: { displayName: null as string | null } },
     completeOnboarding: vi.fn<(fetcher: Fetcher, request: OnboardingRequest) => Promise<void>>(),
   },
   goto: vi.fn<(url: string, options?: { refreshAll?: boolean }) => Promise<void>>(),
@@ -18,17 +18,16 @@ vi.mock('$app/navigation', () => ({ goto }));
 
 interface SetupOptions {
   /**
-  The name of the Firebase user (a Google account has one, an email account has none).
+  The name of the account at sign-in (a Google account has one, an email account has none).
   */
-  displayName?: string | null;
+  displayName?: string;
   /**
   The error that the save of the details rejects with.
   */
   saveError?: Error;
 }
 
-async function setup({ displayName = null, saveError }: SetupOptions = {}) {
-  sessionMock.session.user = { displayName };
+async function setup({ displayName = '', saveError }: SetupOptions = {}) {
   goto.mockReset();
   goto.mockResolvedValue();
   sessionMock.completeOnboarding.mockReset();
@@ -36,7 +35,10 @@ async function setup({ displayName = null, saveError }: SetupOptions = {}) {
     saveError ? Promise.reject(saveError) : Promise.resolve(),
   );
 
-  await render(Page);
+  const identityWithName = { ...identity, displayName };
+  await render(Page, {
+    data: { auth: { status: 'signed-in', session: identityWithName }, identity: identityWithName },
+  });
 
   return {
     nameInput: page.getByLabelText('Your name'),

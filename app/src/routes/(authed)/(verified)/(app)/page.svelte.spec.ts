@@ -4,6 +4,7 @@ import { render } from 'vitest-browser-svelte';
 import type { BootstrapResponse } from '#lib/api-types/users-api.types.js';
 import Page from './+page.svelte';
 import type { HealthStatus } from './+page.js';
+import { signedIn } from '../identityFixture.js';
 
 const session: BootstrapResponse = {
   user: {
@@ -27,7 +28,7 @@ interface SetupOptions {
 }
 
 async function setup({ health = Promise.resolve('ok') }: SetupOptions = {}) {
-  await render(Page, { data: { session, health } });
+  await render(Page, { data: { ...signedIn, session, health } });
   return { status: page.getByRole('status') };
 }
 

@@ -43,7 +43,7 @@ Use the terms in [`../CONTEXT.md`](../CONTEXT.md). The DDL blocks below are the 
 
 ## Tables
 
-Twelve tables. The tree of ownership is: `users` → `scouts`, `idempotency_keys`; `universities` → `periods`, `classes`, `role_grants`; `classes` → `class_periods`, `class_counselors`, `registrations`, `registration_mail_outbox`. `rate_limit_buckets` belongs to nothing. `idempotency_keys` and `rate_limit_buckets` come from #247 (they are not domain tables, see [their section](#idempotency_keys-and-rate_limit_buckets)), and `registration_mail_outbox` comes from #257 (see [its section](#emaillog-and-the-mail-outbox)).
+Thirteen tables. The tree of ownership is: `users` → `scouts`, `idempotency_keys`; `universities` → `periods`, `classes`, `role_grants`; `classes` → `class_periods`, `class_counselors`, `registrations`, `registration_mail_outbox`. `rate_limit_buckets` and `sessions` belong to nothing. `idempotency_keys` and `rate_limit_buckets` come from #247 (they are not domain tables, see [their section](#idempotency_keys-and-rate_limit_buckets)), and `registration_mail_outbox` comes from #257 (see [its section](#emaillog-and-the-mail-outbox)).
 
 ### `users`
 
@@ -446,6 +446,29 @@ CREATE TABLE rate_limit_buckets (
 - `created_at` and `window_start` have no `DEFAULT now()`: Go writes them from `clock.Now(ctx)`, so the TTL, the window and `Retry-After` read one clock.
 - `rate_limit_buckets.key` is `endpoint:dimension:value` (for example `university-public:ip:203.0.113.7`). One `INSERT ... ON CONFLICT DO UPDATE` counts and resets the window, so two instances serialize on the row. The next request on an ended window resets the bucket in place, and the Retention Purge (#256) deletes each bucket whose window started more than `ratelimit.MaxWindow` (24 hours) ago; `ratelimit.Wrap` refuses a Rule with a longer window at startup. doula-cloud's `rate_limit_refusals` table is not copied; a refusal is a log line.
 
+### `sessions`
+
+Source: none. The API-owned session of [ADR 0007](adr/0007-api-owned-sessions.md) (#265), copied from doula-cloud `00028`. Migration `00007`.
+
+```sql
+CREATE TABLE sessions (
+    token_hash   text PRIMARY KEY,
+    uid          text NOT NULL,
+    email        text NOT NULL,
+    display_name text NOT NULL DEFAULT '',
+    super_admin  boolean NOT NULL DEFAULT false,
+    expires_at   timestamptz NOT NULL,
+    created_at   timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX sessions_uid_idx ON sessions (uid);
+CREATE INDEX sessions_expires_at_idx ON sessions (expires_at);
+```
+
+- One row for each signed-in browser. `token_hash` is the SHA-256 (hex) of the opaque token in the `__session` cookie; the table never holds the token, so a read of it gives nobody a session.
+- `uid`, `email` (lowercased), `display_name` (the `name` claim) and `super_admin` (the `superAdmin` claim) are what the ID token said at sign-in. A change to the claim takes effect at the next sign-in.
+- `uid` has no foreign key: `POST /api/session` mints the row before the app bootstraps the `users` row. Account deletion deletes the rows of the uid in code (`authn.EndAllSessions`).
+- `expires_at` comes from `clock.Now(ctx)` plus `authn.SessionLifetime` (one week). A request past half the lifetime moves it. A lookup skips an expired row; each mint deletes all expired rows first (`sessions_expires_at_idx`). No `updated_at`: renewal moves `expires_at` and nothing else.
+
 ## Denormalized fields: join or point-in-time record
 
 Rule 3: a field that exists only because Firestore cannot join is removed, and the query joins. A field that records a fact at one time stays.
@@ -664,6 +687,7 @@ Rule 8. "Database" means a foreign-key cascade. "Code" means work that Go must d
 | `registrations.class_id` | `classes.id` | `CASCADE` | See "Class delete" below. |
 | `registrations.scout_id` | `scouts.id` | `CASCADE` | Erasure. See "Scout delete" below. |
 | `idempotency_keys.uid` | `users.uid` | `CASCADE` | Erasure: a stored response can hold the account's personal data. |
+| `sessions.uid` | — | no foreign key | A session exists before the `users` row. Account deletion deletes the sessions in code, after the Firebase Auth user. |
 | `registration_mail_outbox.to_parent_uid`, `scout_id` | — | no foreign key | A promotion writes its row while it holds the Class lock. A foreign key check would then take a `KEY SHARE` lock on the promoted Scout and its Parent, against the lock order (Scout, then Class) of a Scout or account delete that waits for the same Class: a deadlock. So erasure is in code: the Scout delete deletes the rows of the Scout, the account delete the rows of the Parent, in their transactions. The audit record of a Scout lives as long as its Registrations. |
 | `registration_mail_outbox (university_id, class_id)` | `classes (university_id, id)` | `CASCADE` | The mail goes with its Class and University, as the Registrations do. |
 | `universities.created_by_uid`, `*_by_uid` | — | no foreign key | An audit record outlives the account. The review queue `LEFT JOIN`s `users` and shows `''` for a deleted account, as the TypeScript does. |
@@ -673,7 +697,7 @@ Rule 8. "Database" means a foreign-key cascade. "Code" means work that Go must d
 | Operation | Code (Go) | Database (cascade) | Change from the TypeScript |
 | --- | --- | --- | --- |
 | **Scout delete** (`scouts.remove`) | Lock the Scout. For each `enrolled` or `waitlisted` Registration: cancel and promote (with the promoted mail in the outbox). Then `DELETE FROM scouts`. One transaction. | All `registrations` rows of the Scout, also the cancelled and the purged ones. | The TypeScript hard-deleted only the active Registrations and left the cancelled ones with the Scout's name and accommodations. Erasure now removes them all. A purged row of the Scout is removed too: the right to erasure comes before advancement proof (#89). |
-| **Account delete** (`users.deleteAccount`) | Refuse with 403 `CLOSE_EVENTS_FIRST` if the caller has an active `chancellor` grant on a University that is not `draft` or `closed`. Cancel and promote for each active Registration of each Scout, as for a Scout delete. Then `DELETE FROM users`. One transaction. After the commit, delete the Firebase Auth user. | `scouts` → `registrations`; `class_counselors`; `role_grants` and `idempotency_keys` of the account. | The TypeScript set the account's grants to `revoked`; the cascade deletes them. The effect is the same: no grant points at the deleted account. The Auth delete stays after the commit, so a failure leaves a login with no data, never data with no login (the TypeScript reason). A draft or closed University of the account stays, with `created_by_uid` and no Chancellor grant; only a Super-admin reaches it, as today. |
+| **Account delete** (`users.deleteAccount`) | Refuse with 403 `CLOSE_EVENTS_FIRST` if the caller has an active `chancellor` grant on a University that is not `draft` or `closed`. Cancel and promote for each active Registration of each Scout, as for a Scout delete. Then `DELETE FROM users`. One transaction. After the commit, delete the Firebase Auth user, then every `sessions` row of the uid, and clear the cookie. | `scouts` → `registrations`; `class_counselors`; `role_grants` and `idempotency_keys` of the account. | The TypeScript set the account's grants to `revoked`; the cascade deletes them. The effect is the same: no grant points at the deleted account. The Auth delete stays after the commit, so a failure leaves a login with no data, never data with no login (the TypeScript reason). A draft or closed University of the account stays, with `created_by_uid` and no Chancellor grant; only a Super-admin reaches it, as today. |
 | **University delete** (`universities.remove`, `draft` only) | Lock the University, check `draft`, `DELETE FROM universities`. | `periods`, `classes` → (`class_periods`, `class_counselors`, `registrations`, Counselor `role_grants`), and the Chancellor `role_grants`. | The TypeScript deleted the Classes and the grants in a batch and left each Class's `registrations` subcollection behind. The cascade removes them. Registrations can exist on a `draft` University, because a Chancellor can register outside the window (a dry run). |
 | **Class delete** (`classes.remove`, `draft` or `rejected` only) | Lock the University, check the status, `DELETE FROM classes`. No promotion and no mail: the Class is gone. | `class_periods`, `class_counselors`, `registrations`, Counselor `role_grants`. | Same as above: the TypeScript left the `registrations` subcollection behind. |
 | **Period removal** (`PUT /periods`) | Lock the University. If a removed Period is in `class_periods`, answer 409 with the Classes. Else delete the rows. | Nothing cascades. The deferred `NO ACTION` foreign key is the backstop. | None. Firestore needed chunks of 10 for `array-contains-any`; one `WHERE period_id = ANY($1)` replaces them. |
