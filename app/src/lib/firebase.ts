@@ -1,12 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { type Auth, connectAuthEmulator, getAuth } from 'firebase/auth';
 
+import { authDomainFor } from '#lib/authDomain.js';
+
 // Not a secret. The browser API key only identifies the Firebase project. The
 // access boundary is the session of the API, which it mints after it verifies
 // the ID token (ADR 0007).
 const firebaseConfig = {
   apiKey: 'AIzaSyAh8jz9zS_oM_kGGEmAUMR6XC-ka68lzdE',
-  authDomain: 'merit-badge-university.firebaseapp.com',
+  // The page's own host in production, so the Google redirect stays on one
+  // origin (#279).
+  authDomain: authDomainFor(globalThis.location?.host ?? ''),
   projectId: 'merit-badge-university',
   storageBucket: 'merit-badge-university.firebasestorage.app',
   messagingSenderId: '643912800060',
