@@ -178,4 +178,3 @@ You now know the safety framework that governs every action on a fireline. With 
     text="You can explain the 10, the 18, and LCES, and why each exists"
     teaser="Put tokens on your diagram and run a fire — direct attack, indirect attack, aircraft, mop-up, and repair."
     url="/merit-badges/wildland-fire-management/guide/req7a/" >}}
-</content>

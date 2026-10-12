@@ -80,4 +80,3 @@ Interviewing is one way to make this badge local. The next option makes it physi
     text="You know how to run a productive interview with a fire professional"
     teaser="Walk a building in the wildland-urban interface, find its weaknesses, and reduce them."
     url="/merit-badges/wildland-fire-management/guide/req9c/" >}}
-</content>

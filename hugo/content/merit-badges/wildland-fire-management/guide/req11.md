@@ -144,4 +144,3 @@ That is the last requirement. What follows is not required for the badge — it 
     text="You have explored the careers that make this work possible"
     teaser="Go deeper: fire ecology, the science of fire behavior, and the organizations you can join."
     url="/merit-badges/wildland-fire-management/guide/extended-learning/" >}}
-</content>

@@ -115,4 +115,3 @@ If hands-on work is not your path, the next option is for Scouts who would rathe
     text="You know how to assess a building and reduce its wildfire risk"
     teaser="Build a prevention message — a skit, a video, or a billboard — and deliver it to a real audience."
     url="/merit-badges/wildland-fire-management/guide/req9d/" >}}
-</content>

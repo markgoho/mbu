@@ -185,4 +185,3 @@ You can now read the fire environment, explain how suppression works chemically,
     text="You can read the fire environment and name every part of a wildfire"
     teaser="Suit up: eight pounds of protective gear and the reason each piece exists."
     url="/merit-badges/wildland-fire-management/guide/req6a/" >}}
-</content>

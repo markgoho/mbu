@@ -111,4 +111,3 @@ If communication is not your angle, the last option in Requirement 9 goes the ot
     text="You know how to build and deliver a prevention message that lands"
     teaser="Sit down with a meteorologist and learn what turns a forecast into a Red Flag Warning."
     url="/merit-badges/wildland-fire-management/guide/req9e/" >}}
-</content>

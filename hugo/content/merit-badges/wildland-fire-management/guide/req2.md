@@ -170,4 +170,3 @@ Which brings up an idea that sounds backwards until you understand it: one of th
     text="You can now describe what wildfire costs the country in six specific ways"
     teaser="See why fire managers deliberately light fires — and what a well-planned burn accomplishes."
     url="/merit-badges/wildland-fire-management/guide/req3/" >}}
-</content>

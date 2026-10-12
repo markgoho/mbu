@@ -54,8 +54,6 @@ Topographic maps and map legends connect to the [Orienteering merit badge](/meri
 
 ## Organizations and Resources
 
-<div class="drg-card-grid">
-
 {{< drg/org-card
     name="American Foundation for the Blind (AFB)"
     url="https://www.afb.org"
@@ -86,4 +84,3 @@ Topographic maps and map legends connect to the [Orienteering merit badge](/meri
     url="https://cryptomuseum.com"
     description="Online museum of cipher machines, encryption history, and the history of secret communication from ancient times through the Cold War." >}}
 
-</div>

@@ -1,47 +1,16 @@
-{{- $number := .Get "number" -}}
-{{- $topic := .Get "topic" | default (.Inner | strings.TrimSpace) -}}
-{{- $reqPath := .Get "req_path" | default $number -}}
-{{- $pageReqPath := $.Page.Params.req_path -}}
-{{- $badgePage := $.Page.CurrentSection.Parent | default $.Page.Parent -}}
-{{- $badgeSlug := "" -}}
-{{- with $badgePage -}}
-  {{- $badgeSlug = .File.ContentBaseName -}}
-{{- end -}}
-{{- $badgeData := dict -}}
-{{- if ne $badgeSlug "" -}}
-  {{- with index hugo.Data "merit-badges" $badgeSlug -}}
-    {{- $badgeData = . -}}
-  {{- end -}}
-{{- end -}}
+{{- /* drg/inherited-text.html
 
-{{- $pathParts := split $reqPath "." -}}
-{{- $parentPath := "" -}}
-{{- if gt (len $pathParts) 1 -}}
-  {{- $parentPath = delimit (first (sub (len $pathParts) 1) $pathParts) "." -}}
-{{- end -}}
+  The grammar merge behind drg/inherited-requirement (verb detection,
+  article insertion, sentence trimming, capitalization): composes a bare
+  child topic onto its parent's operative verb. Pure text in, text out.
+  Shared by the shortcode's .html and .md variants (uni-theme#39).
 
-{{- $state := newScratch -}}
-{{- $state.Set "parentText" "" -}}
-
-{{- define "partials/req-find-requirement-text" -}}
-  {{- $requirements := .requirements -}}
-  {{- $targetPath := .targetPath -}}
-  {{- $state := .state -}}
-  {{- range $requirements -}}
-    {{- if and (eq ($state.Get "parentText") "") (eq .path $targetPath) -}}
-      {{- $state.Set "parentText" .text -}}
-    {{- end -}}
-    {{- if and (eq ($state.Get "parentText") "") .subrequirements -}}
-      {{- template "partials/req-find-requirement-text" (dict "requirements" .subrequirements "targetPath" $targetPath "state" $state) -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-
-{{- if and (ne $parentPath "") (ne $badgeData dict) -}}
-  {{- template "partials/req-find-requirement-text" (dict "requirements" $badgeData.requirements "targetPath" $parentPath "state" $state) -}}
-{{- end -}}
-
-{{- $parentText := $state.Get "parentText" | strings.TrimSpace -}}
+  Params (dict): topic, parent_text (either may be "").
+  Returns: the display text (topic unchanged when there is nothing to
+  merge).
+*/ -}}
+{{- $topic := .topic -}}
+{{- $parentText := .parent_text -}}
 {{- $displayText := $topic -}}
 {{- if and $parentText $topic -}}
   {{- $actionText := $parentText -}}
@@ -114,13 +83,4 @@
   {{- end -}}
 {{- end -}}
 
-{{- $isSub := findRE `[a-zA-Z]` $number -}}
-{{- $class := cond (gt (len $isSub) 0) "req-requirement req-requirement--sub" "req-requirement" -}}
-<div class="{{ $class }}">
-  {{ with $number }}
-    <span class="req-requirement__number">{{ . }}.</span>
-  {{ end }}
-  <p class="req-requirement__text">
-    {{ $displayText | markdownify }}
-  </p>
-</div>
+{{- return $displayText -}}

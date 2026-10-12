@@ -109,4 +109,3 @@ Gear buys seconds. Judgment buys the whole shift. Next you will study the three 
     text="You know what wildland firefighters wear and why it is built the way it is"
     teaser="Learn the 10 Standard Firefighting Orders, the 18 Watch Out Situations, and LCES — word for word."
     url="/merit-badges/wildland-fire-management/guide/req6b/" >}}
-</content>

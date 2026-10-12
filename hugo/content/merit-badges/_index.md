@@ -10,6 +10,13 @@ cascade:
   - target:
       path: /merit-badges/*/requirements
     outputs: ["html", "markdown"]
+  - target:
+      path: /merit-badges/*/guide
+      kind: section
+    outputs: ["html", "markdown"]
+  - target:
+      path: "/merit-badges/*/guide/{req*,extended-learning}"
+    outputs: ["html", "markdown"]
   - outputs: ["html"]
 ---
 

@@ -1,0 +1,59 @@
+{{- /*
+  Dev-only counterpart to imagekit/img.html: renders a local guide/images/*.png
+  page Resource directly via Hugo's own image processing instead of the
+  ImageKit CDN. The local PNG only exists between generation and
+  migrate:imagekit (which deletes it after upload), so this partial is only
+  ever reached during that review window — drg/image.html (via drg/image-resolve.html) falls back to it
+  automatically when a local Resource is found, and never uses it in
+  production once the file is gone.
+
+  Exists to review freshly generated candidates via `hugo server` without
+  uploading/re-uploading them to ImageKit first.
+
+  dict
+    "resource"  (Resource)                             (required)
+    "alt"       "…"                                     (required)
+    "sizes"     "(max-width: 1376px) 100vw, 1376px"      (required)
+    "maxWidth"  1376                                     (optional, ladder ceiling; default = resource width)
+*/ -}}
+{{- $resource := .resource -}}
+{{- $alt := .alt -}}
+{{- $sizes := .sizes -}}
+{{- if not $resource }}{{ errorf "drg/local-image.html: \"resource\" is required" }}{{ end -}}
+{{- if not (isset . "alt") }}{{ errorf "drg/local-image.html: \"alt\" is required" }}{{ end -}}
+{{- if not $sizes }}{{ errorf "drg/local-image.html: \"sizes\" is required" }}{{ end -}}
+
+{{- $maxWidth := .maxWidth | default $resource.Width -}}
+{{- if gt $maxWidth $resource.Width -}}
+  {{- $maxWidth = $resource.Width -}}
+{{- end -}}
+
+{{- $ladder := slice -}}
+{{- range site.Params.imagekit.widths -}}
+  {{- if le . $maxWidth -}}
+    {{- $ladder = $ladder | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $ladder -}}
+  {{- $ladder = slice $maxWidth -}}
+{{- end -}}
+
+{{- $main := $resource.Resize (printf "%dx" $maxWidth) -}}
+
+{{- $srcsetParts := slice -}}
+{{- range $ladder -}}
+  {{- $variant := $resource.Resize (printf "%dx" .) -}}
+  {{- $srcsetParts = $srcsetParts | append (printf "%s %dw" $variant.RelPermalink .) -}}
+{{- end -}}
+
+<img
+  src="{{ $main.RelPermalink }}"
+  {{- if gt (len $ladder) 1 }}
+  srcset="{{ delimit $srcsetParts ", " }}"
+  sizes="{{ $sizes }}"
+  {{- end }}
+  width="{{ $main.Width }}"
+  height="{{ $main.Height }}"
+  alt="{{ $alt }}"
+  loading="lazy"
+  decoding="async" />

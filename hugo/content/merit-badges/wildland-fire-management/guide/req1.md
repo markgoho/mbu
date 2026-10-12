@@ -104,4 +104,3 @@ History explains why fire management looks the way it does. The next requirement
     text="You can now trace a century of fire policy and the disasters that wrote it"
     teaser="Put real numbers on what wildfire costs the country — from timber and drinking water to lungs and homes."
     url="/merit-badges/wildland-fire-management/guide/req2/" >}}
-</content>

@@ -1,0 +1,76 @@
+{{- /* drg/image-resolve.html
+
+  Resolves a drg/image shortcode's src against the guide's images.json
+  manifest (id -> width/height/v, written by each consumer's
+  migrate-images-to-imagekit script). Shared by the shortcode's .html and
+  .md variants (uni-theme#39).
+
+  src stays "images/<id>.<ext>" (or a bare "<id>.<ext>") at the call
+  site; only the id is used. ".png" and ".avif" are stripped.
+
+  The manifest is a page resource of the page, else of its parent.
+  Before ImageKit, it looks for a local images/<id>.png page resource:
+  a consumer's generation script writes one there and its
+  migrate:imagekit step deletes it after upload, so its presence means
+  "not uploaded yet" (rendered by drg/local-image.html in the .html
+  variant).
+
+  Site params ([params.drg.image]):
+    path      - REQUIRED. printf format of the ImageKit path, given the
+                manifest's award slug (its "badge" or "rank" key) and the
+                image id, e.g. "/mbu-assets/merit-badges/%s/guide/%s".
+    max_width - the largest width served, default 800.
+
+  Params: the shortcode itself (reads .Get "src", "alt", "caption").
+
+  Returns: dict {id, alt, caption, path, v, width, height, max_width,
+  local} -- local is the page resource or nil. errorf's when the id is
+  missing from the manifest, or (without a local file) its entry has no
+  width/height/v.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $id := strings.TrimSuffix ".png" (strings.TrimSuffix ".avif" (strings.TrimPrefix "images/" $src)) -}}
+{{- $cfg := site.Params.drg.image | default dict -}}
+{{- if not $cfg.path -}}
+  {{- errorf "drg/image: site param drg.image.path is not set (see uni-theme CONTRACT.md)" -}}
+{{- end -}}
+
+{{- $guidePage := .Page -}}
+{{- $manifestResource := $guidePage.Resources.GetMatch "images.json" -}}
+{{- if not $manifestResource -}}
+  {{- with .Page.Parent -}}
+    {{- $guidePage = . -}}
+    {{- $manifestResource = .Resources.GetMatch "images.json" -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $manifestResource -}}
+  {{- errorf "drg/image: no images.json manifest found for %s" .Page.RelPermalink -}}
+{{- end -}}
+
+{{- $manifest := $manifestResource.Content | transform.Unmarshal -}}
+{{- $entry := "" -}}
+{{- range $manifest.images -}}
+  {{- if eq .id $id -}}
+    {{- $entry = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $entry -}}
+  {{- errorf "DRG image not found in manifest: %s (id: %s, page: %s)" $src $id .Page.RelPermalink -}}
+{{- end -}}
+
+{{- $local := $guidePage.Resources.GetMatch (printf "images/%s.png" $id) -}}
+{{- if and (not $local) (not (and $entry.width $entry.height $entry.v)) -}}
+  {{- errorf "DRG image manifest entry missing width/height/v: %s (page: %s) — run bun run migrate:imagekit" $id .Page.RelPermalink -}}
+{{- end -}}
+
+{{- return (dict
+  "id" $id
+  "alt" (.Get "alt" | default "")
+  "caption" (.Get "caption" | default "")
+  "path" (printf $cfg.path ($manifest.badge | default $manifest.rank) $id)
+  "v" $entry.v
+  "width" $entry.width
+  "height" $entry.height
+  "max_width" (int ($cfg.max_width | default 800))
+  "local" $local
+) -}}

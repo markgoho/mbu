@@ -17,6 +17,7 @@
 
     {{ partial "head/resource-hints.html" . }}
     {{ partial "head/meta.html" . }}
+    {{ partial "head/llms-links.html" . }}
 
     {{ $canonical := .Scratch.Get "canonical_override" | default .Params.canonical_override | default (.Permalink | absURL) }}
     <link rel="canonical" href="{{ $canonical | absURL }}" />

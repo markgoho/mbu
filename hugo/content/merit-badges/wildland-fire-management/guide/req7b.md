@@ -162,4 +162,3 @@ You can now organize a fire. Next comes the far more tactile question of what th
     text="You can draw ICS and explain every Command and General Staff position"
     teaser="Pick up a pulaski, cut a fireline, and learn seven more tools built for nothing but wildland fire."
     url="/merit-badges/wildland-fire-management/guide/req8/" >}}
-</content>

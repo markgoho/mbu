@@ -62,4 +62,3 @@ Start with the option that fits, and remember: you only need one. The remaining 
     text="You know what all five options ask of you"
     teaser="Start with the planning option — build a complete fire readiness plan for a place you know."
     url="/merit-badges/wildland-fire-management/guide/req9a/" >}}
-</content>

@@ -1,0 +1,15 @@
+{{- /* drg/find-requirement-text.html -- depth-first search of mbu
+  requirement data for the requirement at `path`; returns its text or "".
+  Params (dict): requirements, path. */ -}}
+{{- $found := "" -}}
+{{- $path := .path -}}
+{{- range .requirements -}}
+  {{- if not $found -}}
+    {{- if eq .path $path -}}
+      {{- $found = .text -}}
+    {{- else if .subrequirements -}}
+      {{- $found = partial "drg/find-requirement-text.html" (dict "requirements" .subrequirements "path" $path) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $found -}}

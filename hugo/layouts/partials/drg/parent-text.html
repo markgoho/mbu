@@ -1,0 +1,23 @@
+{{- /* drg/parent-text.html -- mbu override of the uni-theme hook.
+
+  Resolves a drg/inherited-requirement's parent text from the badge's
+  requirement data, so mbu content need not pass parent_text: the badge
+  is the guide section's parent (else the page's parent), its data is
+  hugo.Data "merit-badges" <slug>, and the parent is the requirement
+  whose path is req_path (else number) minus its last segment.
+
+  Params (dict): page, number, req_path. Returns: the text, or "".
+*/ -}}
+{{- $reqPath := .req_path | default .number -}}
+{{- $parts := split $reqPath "." -}}
+{{- $parentText := "" -}}
+{{- if gt (len $parts) 1 -}}
+  {{- $parentPath := delimit (first (sub (len $parts) 1) $parts) "." -}}
+  {{- $badgePage := .page.CurrentSection.Parent | default .page.Parent -}}
+  {{- with $badgePage -}}
+    {{- with index hugo.Data "merit-badges" .File.ContentBaseName -}}
+      {{- $parentText = partial "drg/find-requirement-text.html" (dict "requirements" .requirements "path" $parentPath) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $parentText -}}

@@ -126,4 +126,3 @@ Prevention stops ignitions, but no prevention program stops all of them — ligh
     text="You can name the main causes of wildfire and the habits that prevent them"
     teaser="Learn why one house burns and the one next door does not — and what defensible space really means."
     url="/merit-badges/wildland-fire-management/guide/req4b/" >}}
-</content>

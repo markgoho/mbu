@@ -177,4 +177,3 @@ You now know the whole system — history, harms, benefits, prevention, behavior
     text="You can handle wildland tools and explain the equipment behind them"
     teaser="Choose one of five real projects — a readiness plan, a professional interview, a Firewise project, and more."
     url="/merit-badges/wildland-fire-management/guide/req9/" >}}
-</content>
