@@ -4,19 +4,31 @@ on:
   repository_dispatch:
     types: [uni-theme-bump]
 
+# The push and the pull request use a GitHub App token, not GITHUB_TOKEN.
+# A pull request opened with GITHUB_TOKEN starts no pull_request workflows
+# without a person's approval, so the required check `Terraform plan` never
+# reports (#333).
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
-  # A pull request opened with GITHUB_TOKEN starts no pull_request workflow,
-  # but GITHUB_TOKEN can start a workflow_dispatch run (#311).
-  actions: write
 
 jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
+      - name: Create GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: ${{ secrets.UNI_THEME_BUMP_APP_CLIENT_ID }}
+          private-key: ${{ secrets.UNI_THEME_BUMP_APP_PRIVATE_KEY }}
+
+      # The checkout keeps the App token as the git credential, so the push
+      # below uses it.
       - name: Checkout
         uses: actions/checkout@v7.0.0
+        with:
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Record current pin
         id: old
@@ -79,7 +91,7 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         id: pr
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           branch="uni-theme-bump/${{ github.event.client_payload.sha }}"
           git checkout -b "$branch"
@@ -95,16 +107,6 @@ jobs:
             --head "$branch")
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
-
-      # The required check `Terraform plan` (ruleset `trunk`) never reports on
-      # a pull request opened with GITHUB_TOKEN. A dispatch run on the branch
-      # reports its check run on the branch head, which is the pull request
-      # head, so the required check passes (#311).
-      - name: Start the required checks
-        if: steps.diff.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run terraform-plan.yml --ref "${{ steps.pr.outputs.branch }}"
 
       - name: Close stale bump PRs
         if: steps.diff.outputs.changed == 'true'
