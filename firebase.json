@@ -3,7 +3,7 @@
     {
       "target": "main-site",
       "public": "hugo/public",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "ignore": ["firebase.json", "**/.DS_Store", "**/.git/**", "**/node_modules/**"],
       "redirects": [
         {
           "source": "/worksheets/:slug-worksheet.pdf",
@@ -78,6 +78,24 @@
             {
               "key": "Content-Type",
               "value": "text/plain; charset=utf-8"
+            }
+          ]
+        },
+        {
+          "source": "/.well-known/**",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ]
+        },
+        {
+          "source": "/",
+          "headers": [
+            {
+              "key": "Link",
+              "value": "</llms.txt>; rel=\"describedby\"; type=\"text/plain\", </.well-known/ard.json>; rel=\"ard\"; type=\"application/json\", </.well-known/agent-skills/index.json>; rel=\"describedby\"; type=\"application/json\""
             }
           ]
         },
