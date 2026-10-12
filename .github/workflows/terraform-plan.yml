@@ -10,12 +10,18 @@ name: Terraform Plan
 # The switch: the job runs only when the repository variable
 # TERRAFORM_PLAN_ENABLED is `true`, or on a manual run. Until the first
 # apply, the state bucket and terraform-plan@ do not exist, and a plan
-# would be red on each pull request. Without the variable the job is
+# would be red on each run. Without the variable the job is
 # skipped, and a skipped job counts as a passed required check.
 #
-# No `paths` filter: a required check whose workflow does not start never
-# reports, and blocks the pull request. Drift also has no commit, so each
-# pull request, each trunk push and a daily schedule run the plan.
+# Which runs plan (#336): each trunk push, the daily schedule, a manual run,
+# and a pull request that changes terraform/ or this file. Drift has no
+# commit, so trunk and the daily run find it; a pull request that cannot
+# cause or fix drift is not blocked by it. On another pull request the
+# `changes` job finds no Terraform file, and `plan` is skipped, which
+# counts as a passed required check. No `paths` filter: a required check
+# whose workflow does not start never reports, and blocks the pull request.
+# api/ does not trigger the plan: terraform/ reads no file from api/, and
+# the Cloud Run image is ignore_changes (cloud_run.tf).
 on:
   pull_request:
   push:
@@ -38,13 +44,49 @@ permissions:
   contents: read
 
 jobs:
+  # Pull requests only. The output is `true` when the pull request changes
+  # terraform/ or this file, else `false`.
+  changes:
+    name: Terraform files changed
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      pull-requests: read
+    outputs:
+      terraform: ${{ steps.files.outputs.terraform }}
+    steps:
+      - name: Find Terraform files in the pull request
+        id: files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          set -euo pipefail
+          files=$(gh api --paginate "repos/$REPO/pulls/$PR_NUMBER/files" --jq '.[] | .filename, (.previous_filename // empty)')
+          if grep -qE '^(terraform/|\.github/workflows/terraform-plan\.yml$)' <<< "$files"; then
+            terraform=true
+          else
+            terraform=false
+          fi
+          echo "terraform=$terraform" >> "$GITHUB_OUTPUT"
+          echo "Changes Terraform files: $terraform"
+
   plan:
     name: Terraform plan
+    needs: changes
+    # `!cancelled()`: `changes` is skipped on push, schedule and
+    # workflow_dispatch, and without it a skipped need skips `plan` too.
+    # A pull request runs the plan unless `changes` says `false`, so a
+    # failed `changes` (no output) runs the plan, not skips it.
     # The switch (see the top of this file). A pull request from a fork or
     # from Dependabot cannot mint an OIDC token, so the auth step would
     # fail: skip those, which also reports as passed.
     if: >-
-      (github.event_name == 'workflow_dispatch' || vars.TERRAFORM_PLAN_ENABLED == 'true')
+      !cancelled()
+      && (github.event_name != 'pull_request' || needs.changes.outputs.terraform != 'false')
+      && (github.event_name == 'workflow_dispatch' || vars.TERRAFORM_PLAN_ENABLED == 'true')
       && github.actor != 'dependabot[bot]'
       && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
