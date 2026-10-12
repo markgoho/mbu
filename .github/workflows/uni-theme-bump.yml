@@ -4,31 +4,21 @@ on:
   repository_dispatch:
     types: [uni-theme-bump]
 
-# The push and the pull request use a GitHub App token, not GITHUB_TOKEN.
-# A pull request opened with GITHUB_TOKEN starts no pull_request workflows
-# without a person's approval, so the required check `Terraform plan` never
-# reports (#333).
+# The push and the pull request use GITHUB_TOKEN. GitHub holds the
+# pull_request workflows of such a PR for approval, so the required check
+# `Terraform plan` never reports. A bump PR changes only hugo/go.mod,
+# hugo/go.sum and hugo/_vendor, so the trunk ruleset lets the repo admin
+# merge it without that check: `gh pr merge --squash --admin` (#333).
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
 
 jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
-      - name: Create GitHub App token
-        id: app-token
-        uses: actions/create-github-app-token@v3.2.0
-        with:
-          client-id: ${{ secrets.UNI_THEME_BUMP_APP_CLIENT_ID }}
-          private-key: ${{ secrets.UNI_THEME_BUMP_APP_PRIVATE_KEY }}
-
-      # The checkout keeps the App token as the git credential, so the push
-      # below uses it.
       - name: Checkout
         uses: actions/checkout@v7.0.0
-        with:
-          token: ${{ steps.app-token.outputs.token }}
 
       - name: Record current pin
         id: old
@@ -91,7 +81,7 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         id: pr
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           branch="uni-theme-bump/${{ github.event.client_payload.sha }}"
           git checkout -b "$branch"
