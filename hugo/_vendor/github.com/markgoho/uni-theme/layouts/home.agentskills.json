@@ -1,0 +1,8 @@
+{{- /* Agent Skills discovery index, v0.2.0
+  (github.com/cloudflare/agent-skills-discovery-rfc). Rendered when the
+  consumer adds "agentskills" to its home outputs. */ -}}
+{{- $skills := slice -}}
+{{- range partial "agents/skills.html" . -}}
+  {{- $skills = $skills | append (dict "name" .name "type" "skill-md" "description" .description "url" .url "digest" .digest) -}}
+{{- end -}}
+{{- dict "$schema" "https://schemas.agentskills.io/discovery/0.2.0/schema.json" "skills" $skills | jsonify (dict "indent" "  ") }}

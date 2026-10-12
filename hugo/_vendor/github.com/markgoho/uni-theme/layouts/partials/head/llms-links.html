@@ -21,3 +21,10 @@
     <link rel="alternate" type="text/plain" href="{{ .Permalink }}" title="llms.txt" />
   {{ end }}
 {{ end }}
+{{/* ARD manifest link (agenticresourcediscovery.org, rel="ard"), home
+  page only, when the site outputs the `ard` format. */}}
+{{ if .IsHome }}
+  {{ with .OutputFormats.Get "ard" }}
+    <link rel="ard" type="application/json" href="{{ .Permalink }}" />
+  {{ end }}
+{{ end }}
