@@ -1,0 +1,30 @@
+{{- /* agents/skills.html
+
+  The site's Agent Skills (see CONTRACT.md `### Agent discovery files`).
+  A consumer writes each skill at assets/agent-skills/<name>/SKILL.md
+  with `name` and `description` in its YAML front matter. This partial
+  publishes each file at /.well-known/agent-skills/<name>/SKILL.md and
+  returns one dict per skill: name, description, url (absolute), digest
+  ("sha256:<hex>" of the published bytes). Shared by the agentskills
+  and ard outputs so both list the same skills.
+*/ -}}
+{{- $skills := slice -}}
+{{- range resources.Match "agent-skills/*/SKILL.md" -}}
+  {{- $dir := path.Base (path.Dir .Name) -}}
+  {{- $fm := findRESubmatch `(?s)\A---\r?\n(.*?)\r?\n---` .Content 1 -}}
+  {{- if not $fm -}}
+    {{- errorf "agents/skills: %s has no YAML front matter" .Name -}}
+  {{- end -}}
+  {{- $meta := transform.Unmarshal (index (index $fm 0) 1) -}}
+  {{- if ne $meta.name $dir -}}
+    {{- errorf "agents/skills: %s front matter name %q does not match its directory" .Name $meta.name -}}
+  {{- end -}}
+  {{- $pub := resources.Copy (printf ".well-known/agent-skills/%s/SKILL.md" $dir) . -}}
+  {{- $skills = $skills | append (dict
+    "name" $meta.name
+    "description" $meta.description
+    "url" $pub.Permalink
+    "digest" (printf "sha256:%s" (crypto.SHA256 .Content))
+  ) -}}
+{{- end -}}
+{{- return $skills -}}

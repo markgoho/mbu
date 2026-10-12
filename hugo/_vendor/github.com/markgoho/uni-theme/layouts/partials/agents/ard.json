@@ -1,0 +1,26 @@
+{{- /* agents/ard.json: the ARD manifest (agenticresourcediscovery.org),
+  shared by the ard (/.well-known/ard.json) and aicatalog
+  (/.well-known/ai-catalog.json) outputs. One entry per Agent Skill;
+  `representativeQueries` come from
+  params.agents.representative_queries.<skill name>. */ -}}
+{{- $host := urls.Parse site.Home.Permalink -}}
+{{- $queries := site.Params.agents.representative_queries | default dict -}}
+{{- $entries := slice -}}
+{{- range partial "agents/skills.html" . -}}
+  {{- $e := dict
+    "identifier" (printf "urn:air:%s:skill:%s" $host.Hostname .name)
+    "displayName" .name
+    "description" .description
+    "type" "application/agent-skills+md"
+    "url" .url
+  -}}
+  {{- with index $queries .name -}}
+    {{- $e = merge $e (dict "representativeQueries" .) -}}
+  {{- end -}}
+  {{- $entries = $entries | append $e -}}
+{{- end -}}
+{{- dict
+  "specVersion" "1.0"
+  "host" (dict "displayName" site.Title "documentationUrl" site.Home.Permalink)
+  "entries" $entries
+| jsonify (dict "indent" "  ") }}

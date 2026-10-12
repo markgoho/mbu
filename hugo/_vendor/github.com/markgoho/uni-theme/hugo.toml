@@ -38,3 +38,29 @@ mediaType = "text/plain"
 baseName = "llms-full"
 isPlainText = true
 notAlternative = true
+
+# Agent discovery files (see CONTRACT.md `### Agent discovery files`).
+# Defined, never turned on: a consumer adds "agentskills" and "ard" to
+# its home `outputs`. Names have no hyphens, for the same template-name
+# reason as `llmsfull`.
+[outputFormats.agentskills]
+mediaType = "application/json"
+path = ".well-known/agent-skills"
+baseName = "index"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.ard]
+mediaType = "application/json"
+path = ".well-known"
+baseName = "ard"
+isPlainText = true
+notAlternative = true
+
+# ARD's predecessor path. isitagentready.com still reads only this one.
+[outputFormats.aicatalog]
+mediaType = "application/json"
+path = ".well-known"
+baseName = "ai-catalog"
+isPlainText = true
+notAlternative = true
