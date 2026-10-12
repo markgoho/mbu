@@ -26,7 +26,7 @@ enableGitInfo = true
 # "LLM discovery files"). Setting home replaces Hugo's default list, so
 # html and rss stay in it.
 [outputs]
-  home = ['html', 'rss', 'robots', 'llms', 'llmsfull']
+  home = ['html', 'rss', 'robots', 'llms', 'llmsfull', 'agentskills', 'ard', 'aicatalog']
 
 [params]
   mbu_base_url = 'https://merit-badge.university'
@@ -34,6 +34,17 @@ enableGitInfo = true
 
 [params.llms]
   summary = 'Merit Badge University explains every Scouting America merit badge: the official requirements, synced from scouting.org, and a Digital Resource Guide for each badge.'
+
+# Agent discovery (uni-theme CONTRACT.md "Agent discovery files"): example
+# user questions for each skill in assets/agent-skills/, listed in the ARD
+# manifest.
+[params.agents.representative_queries]
+  merit-badge-requirements = [
+    'What are the requirements for the Camping merit badge?',
+    'Which merit badges are required for Eagle Scout?',
+    'How do I complete First Aid merit badge requirement 1?',
+    'What does a Scout do for the Cooking merit badge?',
+  ]
 
 # drg/image resolves a guide image through ImageKit (uni-theme#39).
 [params.drg.image]
