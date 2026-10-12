@@ -22,9 +22,18 @@ enableGitInfo = true
 [taxonomies]
   category = 'categories'
 
+# robots, llms and llmsfull are uni-theme home templates (CONTRACT.md,
+# "LLM discovery files"). Setting home replaces Hugo's default list, so
+# html and rss stay in it.
+[outputs]
+  home = ['html', 'rss', 'robots', 'llms', 'llmsfull']
+
 [params]
   mbu_base_url = 'https://merit-badge.university'
   scouting_u_base_url = 'https://scouting.university'
+
+[params.llms]
+  summary = 'Merit Badge University explains every Scouting America merit badge: the official requirements, synced from scouting.org, and a Digital Resource Guide for each badge.'
 
 [params.analytics]
   pirsch_code = 'nGgx7zltXKwcHRduBaMGOBWCO8L1lAjQ'

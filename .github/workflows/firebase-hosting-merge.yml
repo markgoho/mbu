@@ -24,6 +24,8 @@ jobs:
         run: bun install
       - name: Build Hugo site and search index
         run: bun run build
+      - name: Check LLM text outputs
+        run: bun run check:llm-text
       - uses: FirebaseExtended/action-hosting-deploy@v0.11.0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}

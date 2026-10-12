@@ -1,0 +1,26 @@
+{{/* llms/badges.html
+
+  The merit badges for llms.txt and llms-full.txt (mbu#327, mbu#331):
+  every child section of content/merit-badges/ except eagle-required
+  (a list page, not a badge), sorted by title, split into current and
+  discontinued badges. Same set as scripts/merit-badges.ts.
+
+  Returns: dict
+    current      - slice of dict {page, json, name}
+    discontinued - slice of dict {page, json, name}
+*/}}
+{{ $current := slice }}
+{{ $discontinued := slice }}
+{{ range (site.GetPage "/merit-badges").Sections.ByTitle }}
+  {{ $slug := path.Base .File.Dir }}
+  {{ if ne $slug "eagle-required" }}
+    {{ $json := index hugo.Data "merit-badges" $slug }}
+    {{ $badge := dict "page" . "json" $json "name" (strings.TrimSuffix " Merit Badge" .Title) }}
+    {{ if $json.discontinued }}
+      {{ $discontinued = $discontinued | append $badge }}
+    {{ else }}
+      {{ $current = $current | append $badge }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (dict "current" $current "discontinued" $discontinued) }}

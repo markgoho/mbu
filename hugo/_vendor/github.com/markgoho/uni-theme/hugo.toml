@@ -19,3 +19,22 @@ mediaType = "text/markdown"
 baseName = "index"
 isPlainText = true
 rel = "alternate"
+
+# LLM discovery files on the home page (uni-theme#40; see CONTRACT.md).
+# Defined, never turned on: a consumer adds "llms" / "llmsfull" to its
+# home `outputs`. head/meta.html links llms.txt from the home page when
+# the `llms` format is on. The full-text format is named `llmsfull`, not
+# `llms-full`: Hugo does not resolve a hyphenated format name in a
+# template file name (home.llms-full.txt also matched `robots`). Its
+# base name keeps the /llms-full.txt URL.
+[outputFormats.llms]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.llmsfull]
+mediaType = "text/plain"
+baseName = "llms-full"
+isPlainText = true
+notAlternative = true
