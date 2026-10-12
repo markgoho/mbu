@@ -48,3 +48,18 @@
 <meta name="twitter:title" content="{{ $fullTitle }}" />
 <meta name="twitter:description" content="{{ $description }}" />
 <meta name="twitter:image" content="{{ $img | absURL }}" />
+
+{{/* LLM visibility (uni-theme#37): one alternate link for each Markdown
+  output this page has. Pages without the `markdown` format get none. */}}
+{{ range .AlternativeOutputFormats }}
+  {{ if eq .MediaType.Type "text/markdown" }}
+    <link rel="alternate" type="text/markdown" href="{{ .Permalink }}" />
+  {{ end }}
+{{ end }}
+{{/* The format name `llms` is the seam uni-theme#40's llms.txt format
+  must use. No link when the site does not output it. */}}
+{{ if .IsHome }}
+  {{ with .OutputFormats.Get "llms" }}
+    <link rel="alternate" type="text/plain" href="{{ .Permalink }}" title="llms.txt" />
+  {{ end }}
+{{ end }}
