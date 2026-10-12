@@ -8,3 +8,14 @@ target = "layouts"
 [[module.mounts]]
 source = "static"
 target = "static"
+
+# The `markdown` output format behind each page's `<link rel="alternate"
+# type="text/markdown">` (uni-theme#37; see CONTRACT.md). Defined, never
+# turned on: a consumer opts in per page kind with `outputs`. Hugo
+# already ships the `text/markdown` media type (suffixes md/mdown/markdown),
+# so it is not redefined here -- a narrower suffix list would change it.
+[outputFormats.markdown]
+mediaType = "text/markdown"
+baseName = "index"
+isPlainText = true
+rel = "alternate"
