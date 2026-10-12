@@ -1,0 +1,12 @@
+{{- /* robots.txt (uni-theme#40). Rendered when the consumer turns on the
+  `robots` output for the home page. Named home.robots.txt, not
+  robots.txt: with the llms formats on, Hugo ranks home.llms.txt above a
+  bare robots.txt for the home page's robots output. The Content-Signal line
+  (contentsignals.org) sits inside the `User-agent: *` group; its values
+  come from params.llms.content_signal and default to "yes". */ -}}
+{{- $cs := site.Params.llms.content_signal | default dict -}}
+User-agent: *
+Allow: /
+Content-Signal: search={{ $cs.search | default "yes" }}, ai-input={{ $cs.ai_input | default "yes" }}, ai-train={{ $cs.ai_train | default "yes" }}
+
+Sitemap: {{ "sitemap.xml" | absURL }}

@@ -18,6 +18,7 @@
     "build": "cd hugo && hugo --minify && bun run index",
     "hugo:dev": "bun run build:local && cd hugo && hugo server --port 1314",
     "index": "bunx pagefind --site hugo/public",
+    "check:llm-text": "bun scripts/check-llm-text.ts",
     "generate:drg-images": "bun scripts/generate-drg-images.ts --badge",
     "verify:youtube-links": "bun scripts/verify-youtube-links.ts",
     "search:youtube-videos": "bun scripts/search-youtube-videos.ts",

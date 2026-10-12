@@ -1,0 +1,25 @@
+{{/* merit-badges/requirement-nodes.html
+
+  Maps a badge's top-level requirements to uni-theme node dicts with
+  requirement-node.html. The requirements page (req-card.html), its
+  Markdown twin and llms-full.txt (text/requirements.md) all build their
+  nodes here, so the three cannot drift.
+
+  Params (dict):
+  json          - the badge's data/merit-badges/<slug>.json
+  guide         - the badge's guide section Page, or nil
+  preview_count - how many leading requirements carry a preview
+                  view-transition (requirement-node.html's
+                  preview_transition); 0 by default. Only the HTML page
+                  needs it.
+
+  Returns: slice of node dicts.
+*/}}
+{{ $json := .json }}
+{{ $guide := .guide }}
+{{ $previewCount := .preview_count | default 0 }}
+{{ $nodes := slice }}
+{{ range $i, $req := $json.requirements }}
+  {{ $nodes = $nodes | append (partial "merit-badges/requirement-node.html" (dict "req" $req "depth" 1 "index" (add $i 1) "badge_name" $json.title "hide_resources" true "guide" $guide "preview_transition" (lt $i $previewCount))) }}
+{{ end }}
+{{ return $nodes }}

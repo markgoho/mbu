@@ -1,0 +1,8 @@
+{{- /* llms-full.txt (uni-theme#40). Rendered when the consumer adds
+  "llmsfull" to its home outputs. H1, blockquote summary, then the
+  consumer's body (llms/full.md hook). */ -}}
+# {{ site.Title }}
+{{ with partial "llms/summary.md" . }}
+> {{ . }}
+{{ end }}
+{{ partial "llms/full.md" . }}

@@ -1,0 +1,12 @@
+{{- /* llms.txt (llmstxt.org, uni-theme#40). Rendered when the consumer
+  adds "llms" to its home outputs. H1, blockquote summary, a link to
+  llms-full.txt when that format is on, then the consumer's sections
+  (llms/sections.md hook). */ -}}
+# {{ site.Title }}
+{{ with partial "llms/summary.md" . }}
+> {{ . }}
+{{ end }}
+{{- with .OutputFormats.Get "llmsfull" }}
+The full text in one file: [llms-full.txt]({{ .Permalink }})
+{{ end }}
+{{ partial "llms/sections.md" . }}
