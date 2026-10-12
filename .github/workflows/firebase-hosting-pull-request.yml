@@ -3,9 +3,18 @@
 
 name: Deploy to Firebase Hosting on PR
 on:
+  # The Hugo site build reads none of app/, api/, terraform/ or the other
+  # workflows. A later pattern overrides an earlier one, so a change to this
+  # file still runs the preview. Not a required check, so a `paths` filter
+  # is safe.
   pull_request:
-    paths-ignore:
-      - "app/**"
+    paths:
+      - "**"
+      - "!app/**"
+      - "!api/**"
+      - "!terraform/**"
+      - "!.github/workflows/**"
+      - ".github/workflows/firebase-hosting-pull-request.yml"
 permissions:
   checks: write
   contents: read
