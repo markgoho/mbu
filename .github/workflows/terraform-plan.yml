@@ -13,15 +13,15 @@ name: Terraform Plan
 # would be red on each run. Without the variable the job is
 # skipped, and a skipped job counts as a passed required check.
 #
-# Which runs plan (#336): each trunk push, the daily schedule, a manual run,
-# and a pull request that changes terraform/ or this file. Drift has no
+# These runs do the plan (#336): each trunk push, the daily schedule, a
+# manual run, and a pull request that changes terraform/ or this file. Drift has no
 # commit, so trunk and the daily run find it; a pull request that cannot
 # cause or fix drift is not blocked by it. On another pull request the
 # `changes` job finds no Terraform file, and `plan` is skipped, which
 # counts as a passed required check. No `paths` filter: a required check
 # whose workflow does not start never reports, and blocks the pull request.
 # api/ does not trigger the plan: terraform/ reads no file from api/, and
-# the Cloud Run image is ignore_changes (cloud_run.tf).
+# the Cloud Run resource ignores the image (cloud_run.tf).
 on:
   pull_request:
   push:
