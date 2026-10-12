@@ -1,0 +1,34 @@
+{{- /* drg/image.html
+
+  A DRG guide image served from ImageKit (or, before upload, from a
+  local page resource). One shortcode for every consumer (uni-theme#39):
+  the per-site parts are site params, see drg/image-resolve.html.
+
+  Params: src, alt, caption.
+*/ -}}
+{{- $img := partial "drg/image-resolve.html" . -}}
+{{- $sizes := printf "(max-width: %dpx) 100vw, %dpx" $img.max_width $img.max_width -}}
+
+<figure class="req-illustration">
+  {{- if $img.local }}
+  {{ partial "drg/local-image.html" (dict
+    "resource" $img.local
+    "maxWidth" $img.max_width
+    "alt" $img.alt
+    "sizes" $sizes
+  ) }}
+  {{- else }}
+  {{ partial "imagekit/img.html" (dict
+    "path" $img.path
+    "v" $img.v
+    "maxWidth" $img.max_width
+    "width" $img.width
+    "height" $img.height
+    "alt" $img.alt
+    "sizes" $sizes
+  ) }}
+  {{- end }}
+  {{- with $img.caption }}
+    <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>

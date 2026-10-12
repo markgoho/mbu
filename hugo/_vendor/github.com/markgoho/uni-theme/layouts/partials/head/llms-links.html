@@ -1,0 +1,23 @@
+{{/* head/llms-links.html
+
+  LLM discovery links (uni-theme#37/#40), called from baseof.html right
+  after head/meta.html. Its own partial, not part of meta.html, so a
+  consumer that overrides meta.html (scouting-u does) keeps them.
+
+  - One <link rel="alternate" type="text/markdown"> per Markdown output
+    this page has. Pages without the `markdown` format get none.
+  - On the home page, a text/plain link to llms.txt when the site
+    outputs the `llms` format there. The format name `llms` is the seam.
+*/}}
+{{ range .AlternativeOutputFormats }}
+  {{ if eq .MediaType.Type "text/markdown" }}
+    <link rel="alternate" type="text/markdown" href="{{ .Permalink }}" />
+  {{ end }}
+{{ end }}
+{{/* The format name `llms` is the seam uni-theme#40's llms.txt format
+  must use. No link when the site does not output it. */}}
+{{ if .IsHome }}
+  {{ with .OutputFormats.Get "llms" }}
+    <link rel="alternate" type="text/plain" href="{{ .Permalink }}" title="llms.txt" />
+  {{ end }}
+{{ end }}

@@ -12,7 +12,7 @@ import { join } from "node:path";
 const publicDir = process.argv[2] ?? "hugo/public";
 const ROOT_FILES = ["llms.txt", "llms-full.txt", "robots.txt"];
 const CHECKS = [
-  { name: "HTML tag", pattern: /<[A-Za-z/!]/ },
+  { name: "HTML tag", pattern: /<(\/?[A-Za-z][A-Za-z0-9-]*[\s/>]|!)/ },
   { name: "template syntax", pattern: /\{\{/ },
 ];
 

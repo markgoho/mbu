@@ -96,4 +96,3 @@ Now that you know the shape of the field, it is time to see how the United State
     text="You have the big picture of what fire management includes"
     teaser="Trace how a century of American fire policy was written by disaster, advertising, and science."
     url="/merit-badges/wildland-fire-management/guide/req1/" >}}
-</content>

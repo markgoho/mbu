@@ -1,0 +1,17 @@
+{{- /* drg/parent-text.html
+
+  Hook: resolves the parent requirement's verbatim text for a
+  drg/inherited-requirement shortcode that has no parent_text param
+  (uni-theme#39). The theme default returns "": the theme never does a
+  site-specific data lookup (CONTRACT.md, node-dict split). A consumer
+  whose content omits parent_text overrides this file with its own
+  lookup (mbu: walk hugo.Data "merit-badges" <badge slug> by path).
+
+  Params (dict):
+    page     - the guide Page the shortcode is on
+    number   - the shortcode's number param ("6a")
+    req_path - the shortcode's req_path param ("6.a"), "" when not given
+
+  Returns: the parent's text, or "".
+*/ -}}
+{{- return "" -}}

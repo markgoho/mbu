@@ -12,10 +12,13 @@
      (one per link: <sup><a href="#fn-4">4</a>, <a href="#fn-5">5</a></sup>
      -> "[^4][^5]"). A <sup> with no #fn- link keeps only its text.
   2. <a href="x">y</a> -> [y](x). A root-relative href gets the site's
-     base URL, so a link still works outside the site.
+     base URL, so a link still works outside the site. Whitespace just
+     inside the tag moves outside the brackets.
   3. <ol>/<ul>/<li> -> list lines ("1. " inside an <ol>, "- " otherwise).
      Not nested: a list inside a list item flattens to one level.
   4. <br> -> newline, <p> -> blank line, <strong>/<b> -> **, <em>/<i> -> *.
+     Whitespace just inside an emphasis tag moves outside the markers
+     ("a<em> b </em>c" -> "a *b* c"), else Markdown does not parse it.
   5. Every other tag is stripped, entities are decoded (htmlUnescape),
      trailing spaces are trimmed, and 3+ newlines collapse to one blank
      line.
@@ -45,8 +48,8 @@
   {{ end }}
 
   {{ $base := strings.TrimSuffix "/" site.BaseURL }}
-  {{ $text = replaceRE `(?s)<a\s[^>]*href="/([^"]*)"[^>]*>(.*?)</a>` (printf "[$2](%s/$1)" $base) $text }}
-  {{ $text = replaceRE `(?s)<a\s[^>]*href="([^"]*)"[^>]*>(.*?)</a>` "[$2]($1)" $text }}
+  {{ $text = replaceRE `(?s)<a\s[^>]*href="/([^"]*)"[^>]*>(\s*)(.*?)(\s*)</a>` (printf "$2[$3](%s/$1)$4" $base) $text }}
+  {{ $text = replaceRE `(?s)<a\s[^>]*href="([^"]*)"[^>]*>(\s*)(.*?)(\s*)</a>` "$2[$3]($1)$4" $text }}
 
   {{ range findRE `(?s)<ol[^>]*>.*?</ol>` $text }}
     {{ $text = replace $text . (replaceRE `<li[^>]*>\s*` "\n1. " .) }}
@@ -55,8 +58,8 @@
   {{ $text = replaceRE `</?(ul|ol)[^>]*>` "\n\n" $text }}
   {{ $text = replaceRE `<br\s*/?>` "\n" $text }}
   {{ $text = replaceRE `<p[^>]*>` "\n\n" $text }}
-  {{ $text = replaceRE `(?s)<(?:strong|b)>(.*?)</(?:strong|b)>` "**$1**" $text }}
-  {{ $text = replaceRE `(?s)<(?:em|i)>(.*?)</(?:em|i)>` "*$1*" $text }}
+  {{ $text = replaceRE `(?s)<(?:strong|b)>(\s*)(.+?)(\s*)</(?:strong|b)>` "$1**$2**$3" $text }}
+  {{ $text = replaceRE `(?s)<(?:em|i)>(\s*)(.+?)(\s*)</(?:em|i)>` "$1*$2*$3" $text }}
   {{ $text = replaceRE `<[^>]+>` "" $text }}
   {{ $text = htmlUnescape $text }}
   {{ $text = replaceRE `[ \t]+\n` "\n" $text }}

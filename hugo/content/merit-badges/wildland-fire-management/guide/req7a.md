@@ -251,4 +251,3 @@ You have now run a fire on paper. Real fires, though, involve hundreds or thousa
     text="You can demonstrate and justify six wildland suppression tactics"
     teaser="Meet the Incident Command System — the organization chart that lets 3,000 strangers run one fire."
     url="/merit-badges/wildland-fire-management/guide/req7b/" >}}
-</content>

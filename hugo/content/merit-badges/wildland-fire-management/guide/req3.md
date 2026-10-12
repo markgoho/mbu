@@ -171,4 +171,3 @@ You now know what fire does when it is welcome. Next, the flip side: keeping fir
     text="You can explain the five jobs prescribed fire is used to accomplish"
     teaser="Find out what actually causes American wildfires — and what you can do about it on your next outing."
     url="/merit-badges/wildland-fire-management/guide/req4a/" >}}
-</content>

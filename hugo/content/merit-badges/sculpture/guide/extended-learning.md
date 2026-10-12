@@ -62,54 +62,25 @@ Trying both approaches can teach you what each one does best. Clay teaches touch
 
 ## Real-World Experiences
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>Visit a sculpture garden or park</h3>
-    <p>Outdoor sculpture changes with weather, distance, and movement. Notice how scale and setting affect your experience differently than indoor work.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Take a community studio class</h3>
-    <p>Many art centers offer clay modeling, figure sculpture, mold making, or mixed-media construction classes for beginners.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Watch an artist demo or open studio</h3>
-    <p>Seeing how a sculptor organizes tools, stages a project, and fixes mistakes teaches lessons that are hard to get from finished artwork alone.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Sketch sculptures in a museum</h3>
-    <p>Quick drawings of major shapes, silhouettes, and negative spaces will sharpen your eye even if you do not consider yourself a strong drawer.</p>
-  </div>
-  <div class="drg-card">
-    <h3>Try a maquette challenge</h3>
-    <p>Build three tiny versions of the same idea with different poses or proportions. You will learn fast which design reads best in three dimensions.</p>
-  </div>
-</div>
+{{< drg/experience-card title="Visit a sculpture garden or park" details="Outdoor sculpture changes with weather, distance, and movement. Notice how scale and setting affect your experience differently than indoor work." >}}
+
+{{< drg/experience-card title="Take a community studio class" details="Many art centers offer clay modeling, figure sculpture, mold making, or mixed-media construction classes for beginners." >}}
+
+{{< drg/experience-card title="Watch an artist demo or open studio" details="Seeing how a sculptor organizes tools, stages a project, and fixes mistakes teaches lessons that are hard to get from finished artwork alone." >}}
+
+{{< drg/experience-card title="Sketch sculptures in a museum" details="Quick drawings of major shapes, silhouettes, and negative spaces will sharpen your eye even if you do not consider yourself a strong drawer." >}}
+
+{{< drg/experience-card title="Try a maquette challenge" details="Build three tiny versions of the same idea with different poses or proportions. You will learn fast which design reads best in three dimensions." >}}
 
 ## Organizations
 
-<div class="drg-card-grid">
-  <div class="drg-card">
-    <h3>International Sculpture Center</h3>
-    <p>Supports sculptors through publications, community, events, and resources focused specifically on sculpture practice.</p>
-    <p><a href="https://sculpture.org/">sculpture.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Sculpture Society</h3>
-    <p>Promotes sculpture through exhibitions, education, and opportunities to study contemporary and traditional approaches.</p>
-    <p><a href="https://nationalsculpture.org/">nationalsculpture.org</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>National Sculptors' Guild</h3>
-    <p>Highlights working sculptors and public art while showing how sculpture connects with galleries, collectors, and installations.</p>
-    <p><a href="https://nationalsculptorsguild.com/">nationalsculptorsguild.com</a></p>
-  </div>
-  <div class="drg-card">
-    <h3>Sculpture Magazine</h3>
-    <p>A publication connected to the sculpture world that can help you discover artists, exhibitions, materials, and current conversations.</p>
-    <p><a href="https://sculpture.org/page/scmagazine">sculpture.org/page/scmagazine</a></p>
-  </div>
-</div>
+{{< drg/org-card name="International Sculpture Center" description="Supports sculptors through publications, community, events, and resources focused specifically on sculpture practice." url="https://sculpture.org/" >}}
 
+{{< drg/org-card name="National Sculpture Society" description="Promotes sculpture through exhibitions, education, and opportunities to study contemporary and traditional approaches." url="https://nationalsculpture.org/" >}}
+
+{{< drg/org-card name="National Sculptors' Guild" description="Highlights working sculptors and public art while showing how sculpture connects with galleries, collectors, and installations." url="https://nationalsculptorsguild.com/" >}}
+
+{{< drg/org-card name="Sculpture Magazine" description="A publication connected to the sculpture world that can help you discover artists, exhibitions, materials, and current conversations." url="https://sculpture.org/page/scmagazine" >}}
 {{< drg/next-page
     text="You have gone beyond the badge and explored where sculpture can lead next."
     teaser="Open the printable version if you want the full guide in one place for review, discussion, or sharing."

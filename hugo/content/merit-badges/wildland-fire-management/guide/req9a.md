@@ -127,4 +127,3 @@ If a mapping project is not what you are after, the next option trades the draft
     text="You know how to build a complete fire readiness plan"
     teaser="See what the interview option looks like — and what to ask a forestry official or fire warden."
     url="/merit-badges/wildland-fire-management/guide/req9b/" >}}
-</content>

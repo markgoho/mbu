@@ -131,4 +131,3 @@ You now understand what fire destroys, what it accomplishes, how it starts, and 
     text="You can explain the WUI and what defensible space really requires"
     teaser="Learn the fire environment — weather, topography, and fuel — and how to draw a wildfire's anatomy."
     url="/merit-badges/wildland-fire-management/guide/req5/" >}}
-</content>

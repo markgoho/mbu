@@ -35,6 +35,11 @@ enableGitInfo = true
 [params.llms]
   summary = 'Merit Badge University explains every Scouting America merit badge: the official requirements, synced from scouting.org, and a Digital Resource Guide for each badge.'
 
+# drg/image resolves a guide image through ImageKit (uni-theme#39).
+[params.drg.image]
+  path = '/mbu-assets/merit-badges/%s/guide/%s'
+  max_width = 800
+
 [params.analytics]
   pirsch_code = 'nGgx7zltXKwcHRduBaMGOBWCO8L1lAjQ'
   clarity_id = 'xw9nckd7a6'

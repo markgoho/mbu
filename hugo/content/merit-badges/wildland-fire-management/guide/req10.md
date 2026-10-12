@@ -140,4 +140,3 @@ One requirement left — and it is the one that asks whether any of this might b
     text="You can analyze a catastrophic fire and trace what it changed"
     teaser="Look at the careers behind every page of this badge, from hotshot crews to fire ecologists."
     url="/merit-badges/wildland-fire-management/guide/req11/" >}}
-</content>

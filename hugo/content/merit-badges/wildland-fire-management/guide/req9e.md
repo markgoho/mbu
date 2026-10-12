@@ -94,4 +94,3 @@ Whichever option you chose, Requirement 9 was about your own area right now. The
     text="You know how fire weather is forecast and what triggers a Red Flag Warning"
     teaser="Study a catastrophic American wildfire and the policy changes it forced."
     url="/merit-badges/wildland-fire-management/guide/req10/" >}}
-</content>
