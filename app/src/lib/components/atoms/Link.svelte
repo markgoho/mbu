@@ -15,4 +15,5 @@
   let { href, children, ...rest }: Properties = $props();
 </script>
 
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- the caller resolves `href` (see above) -->
 <a {href} {...rest}>{@render children?.()}</a>
