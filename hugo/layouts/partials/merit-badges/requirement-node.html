@@ -71,7 +71,6 @@
 {{ $marker := "" }}
 {{ $title := "" }}
 {{ $guideHref := "" }}
-{{ $ownGuide := false }}
 {{ $ring := true }}
 {{ $ownGuideForChildren := $inheritedGuide }}
 
@@ -102,7 +101,6 @@
   {{ $ownPage := cond (eq $lookup.covers true) $lookup.page "" }}
   {{ with $ownPage }}
     {{ $guideHref = .RelPermalink }}
-    {{ $ownGuide = true }}
   {{ end }}
 
   {{/* Children still need the page itself, covers or not: a merged
@@ -150,7 +148,6 @@
     req-guide-fragment.html, falling back to the page top when nothing
     matches. */}}
   {{ $guidePage := or $lookup.page $inheritedGuide }}
-  {{ $ownGuide = and $lookup.page (eq $lookup.covers true) }}
   {{ $ownGuideForChildren = $guidePage }}
   {{ with $guidePage }}
     {{ $guideHref = .RelPermalink }}
@@ -240,7 +237,6 @@
   "text" $req.text
   "pill" $req.subrequirement_mode
   "guide_href" $guideHref
-  "own_guide" $ownGuide
   "resources" (cond $hideResources (slice) $req.resources)
   "children" $children
   "variant" $childVariant
