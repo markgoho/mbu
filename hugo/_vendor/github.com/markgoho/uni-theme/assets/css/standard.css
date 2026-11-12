@@ -2923,46 +2923,6 @@ html.theme-v2 .search__more:focus-visible {
 /* Package: review fixes                                               */
 /* ------------------------------------------------------------------ */
 
-/* A requirement with its own guide page ends in one quiet link to it
-   (req-guide-link.html). Not a button: olive text. The 44px target is
-   the ::after, so a page with dozens of these does not grow by 44px a
-   link. */
-.theme-v2 .req-guide-link {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  min-block-size: 1.5rem;
-  color: var(--accent);
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
-}
-
-.theme-v2 .req-guide-link::after {
-  content: "";
-  position: absolute;
-  inset: -0.625rem -0.75rem;
-}
-
-.theme-v2 .req-guide-link:hover {
-  text-decoration-thickness: 2px;
-}
-
-.theme-v2 .req-guide-link:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: var(--radius-sm);
-}
-
-.theme-v2 .req-guide-link__icon {
-  inline-size: 1em;
-  block-size: 1em;
-  flex-shrink: 0;
-}
-
 /* How to read the page. What a click does depends on the pointer
    (deep-link.ts), so the key says the true one. */
 .req-key__touch {
@@ -3056,7 +3016,7 @@ html.theme-v2 .search__more:focus-visible {
 }
 
 @media print {
-  .theme-v2 :is(.req-guide-link, .req-key--brief) {
+  .theme-v2 .req-key--brief {
     display: none !important;
   }
 }
