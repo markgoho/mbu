@@ -7,9 +7,11 @@
 
   The <li> carries data-guide (this requirement's own resolved
   study-guide URL, omitted entirely when there is none) so the single
-  shared req-dock.html can point its "Study guide" link at whichever
+  shared req-dock.html can point its "Guide" link at whichever
   requirement is currently selected, and data-content-name so deep-
-  link.ts's copy-text Pirsch event can label itself.
+  link.ts's copy-text Pirsch event can label itself. A requirement with
+  its own guide page (node.own_guide) also ends in a visible Guide link,
+  req-guide-link.html.
 
   See text/heading-for.html for how the heading renders when this node
   has no curated title (`node.title == ""`), and CONTRACT.md's
@@ -81,5 +83,7 @@
         </ul>
       </div>
     {{ end }}
+
+    {{ partial "req-guide-link.html" $node }}
   </div>
 </li>

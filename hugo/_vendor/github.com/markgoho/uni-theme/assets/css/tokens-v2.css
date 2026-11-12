@@ -41,8 +41,8 @@
   --error-container: var(--v2-error-container);
   --on-error-container: var(--v2-on-error-container);
 
-  --font-display: "Literata", Georgia, serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-display: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --radius-sm: var(--border-radius-sm);
   --radius-md: var(--border-radius-md);
@@ -169,8 +169,7 @@ html.theme-v2:has(#theme-toggle-checkbox:checked) {
   --shadow-elevated: 0 6px 24px var(--v2-dark-scrim-35), 0 2px 6px var(--v2-dark-scrim-20);
   --shadow-elevated-hover: 0 12px 36px var(--v2-dark-scrim-45);
 
-  /* Dark uses the amber accent as the wash base, matching how
-     .badge-identity__glow-ring-wrap already switches to amber in dark. */
+  /* Dark uses the amber accent as the wash base. */
   --accent-wash: color-mix(in oklab, var(--amber) 22%, transparent);
   --accent-wash-strong: color-mix(in oklab, var(--amber) 45%, transparent);
 

@@ -1,0 +1,13 @@
+{{/* req-guide-link.html
+
+  The visible "Guide" link at the end of a requirement that has its own
+  guide page (node.own_guide). Its own element, after the text, children
+  and resources, so deep-link.ts's copy text never reads it, and a real
+  link, so deep-link.ts's click-to-copy leaves it alone. The dock's guide
+  button still covers requirements that only inherit a guide section.
+
+  Params: the node dict (see CONTRACT.md).
+*/}}
+{{ if and .own_guide .guide_href }}
+  <a class="req-guide-link" href="{{ .guide_href }}" aria-label="Guide for requirement {{ .path }}" data-pagefind-ignore>Guide{{ partial "icon.html" (dict "name" "arrow-right" "class" "req-guide-link__icon") }}</a>
+{{ end }}

@@ -1,13 +1,15 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
+{{ define "main-class" }}req-page-main{{ end }}
+
 {{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
-  <h1>{{ .Title }}</h1>
-  <ul class="content-wrapper list-container">
-    {{ range .Pages.ByTitle }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  {{ partial "page-head.html" (dict "page" . "title" .Title "lede" .Description) }}
+  {{ with .Pages.ByTitle }}
+    <div class="index-page">
+      <div class="link-tiles">
+        {{ range . }}{{ partial "link-tile.html" (dict "url" .RelPermalink "title" .LinkTitle) }}{{ end }}
+      </div>
+    </div>
+  {{ end }}
+  {{ partial "prose-page.html" (dict "content" .Content) }}
 {{- end }}

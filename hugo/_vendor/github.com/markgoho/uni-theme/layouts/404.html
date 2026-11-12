@@ -1,0 +1,41 @@
+{{/* The shared "page not found" page. Its links reuse the masthead's
+  call to action (params.theme.cta), so each site points at its own
+  listing without new params. params.theme.notFound.title / .text
+  override the copy (optional).
+*/}}
+{{ define "head-styles" }}
+  <meta name="robots" content="noindex" />
+{{ end }}
+
+{{ define "main" }}
+  {{ $copy := site.Params.theme.notFound | default dict }}
+  <div class="not-found">
+    {{/* The home page as "page": a lost reader needs no breadcrumb. */}}
+    {{ partial "page-head.html" (dict
+      "page" site.Home
+      "title" ($copy.title | default "Page not found")
+      "lede" ($copy.text | default "We can't find that page. It may have moved. Try a search, or start from one of these.")
+      "search" (dict "label" "Search requirements" "placeholder" "Search requirements")
+    ) }}
+    <div class="index-page">
+      <div class="link-tiles">
+        {{ partial "link-tile.html" (dict "url" "/" "title" "Home page" "icon" "house") }}
+        {{ with site.Params.theme.cta }}
+          {{ partial "link-tile.html" (dict "url" .href "title" .label "icon" "compass") }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "footer-scripts" }}
+  {{/* pirschNotFound comes from the production analytics script; it is
+    absent in development and on sites without Pirsch. */}}
+  <script>
+    document.addEventListener("readystatechange", () => {
+      if (document.readyState === "complete" && typeof pirschNotFound === "function") {
+        pirschNotFound();
+      }
+    });
+  </script>
+{{ end }}

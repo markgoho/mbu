@@ -112,7 +112,6 @@
   &:hover,
   &:focus-visible {
     border-color: var(--accent);
-    box-shadow: var(--shadow-raised), 0 0 0 3px var(--accent-wash);
     background-color: var(--surface-sunken);
   }
 }
@@ -123,19 +122,7 @@
   &:hover,
   &:focus-visible {
     border-color: var(--amber);
-    box-shadow: var(--shadow-elevated), 0 0 0 3px var(--amber-glow);
   }
-}
-
-.req-mobile-nav__icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  flex-shrink: 0;
-  color: var(--accent);
-}
-
-.dark .req-mobile-nav__icon {
-  color: var(--amber);
 }
 
 .req-mobile-nav__chevron {
@@ -334,7 +321,6 @@
 
 .req-sidebar:hover {
   border-color: var(--accent-container);
-  box-shadow: var(--shadow-raised);
 }
 
 .dark .req-sidebar {
@@ -344,120 +330,6 @@
 
 .dark .req-sidebar:hover {
   border-color: var(--accent);
-  box-shadow: var(--shadow-elevated-hover);
-}
-
-/* ------------------------------------------------------------------ */
-/* Badge identity (shared with the DRG sidebar — see layouts/partials/identity.html) */
-/* ------------------------------------------------------------------ */
-
-.badge-identity {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-xs);
-  padding-block-end: var(--space-s);
-  border-block-end: 1px dashed var(--card-border-subtle);
-}
-
-.badge-identity__glow-ring-wrap {
-  padding: 3px;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 180deg,
-    var(--accent),
-    var(--accent-container),
-    var(--accent)
-  );
-  box-shadow: 0 4px 14px var(--shadow-card);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.dark .badge-identity__glow-ring-wrap {
-  background: conic-gradient(
-    from 180deg,
-    var(--amber),
-    var(--amber-glow),
-    var(--amber)
-  );
-  box-shadow: 0 0 18px var(--amber-glow);
-}
-
-.req-sidebar:hover .badge-identity__glow-ring-wrap,
-.req-sidebar:hover .badge-identity__glow-ring-wrap {
-  transform: scale(1.04);
-}
-
-.badge-identity__glow-ring {
-  width: 3.6rem;
-  height: 3.6rem;
-  border-radius: 50%;
-  background: var(--surface-raised);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.badge-identity__icon {
-  width: 2.2rem;
-  height: 2.2rem;
-  flex-shrink: 0;
-  color: var(--accent);
-  transition:
-    transform 0.2s ease,
-    color 0.25s ease;
-}
-
-.dark .badge-identity__icon {
-  color: var(--amber);
-}
-
-.badge-identity__header-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
-}
-
-.badge-identity__eyebrow-category {
-  font-size: 0.675rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--on-accent-container);
-  text-decoration: none;
-  transition: color 0.15s ease, text-decoration 0.15s ease;
-
-  &:hover,
-  &:focus-visible {
-    text-decoration: underline;
-  }
-}
-
-.dark .badge-identity__eyebrow-category {
-  color: var(--amber);
-}
-
-.badge-identity__title {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 800;
-  line-height: 1.15;
-  color: var(--on-surface);
-  text-wrap: balance;
-}
-
-.badge-identity__micro-tag {
-  font-size: 0.625rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--on-surface-muted);
-  margin-top: 0.15rem;
 }
 
 .req-sidebar__nav ul {
@@ -508,23 +380,6 @@
   color: var(--on-surface-muted);
 }
 
-.req-sidebar__eagle {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3xs);
-  width: fit-content;
-  padding: var(--space-3xs) var(--space-xs);
-  border-radius: var(--radius-full);
-  background: var(--accent-container);
-  color: var(--on-accent-container);
-  font-weight: 700;
-}
-
-.req-sidebar__eagle-icon {
-  width: 1em;
-  height: 1em;
-}
-
 .req-sidebar__link {
   display: flex;
   align-items: center;
@@ -566,14 +421,6 @@
   font-family: var(--font-display);
   font-size: var(--step-3);
   color: var(--on-surface);
-}
-
-/* Prose reads full-width shell, readable-measure text: the shell itself
-   (sidebar + grids of cards) goes edge to edge, but running paragraph
-   text gets a capped measure so it doesn't stretch into an unreadable
-   line length on a wide monitor. */
-.badge-description p {
-  max-width: 75ch;
 }
 
 /* ------------------------------------------------------------------ */
@@ -670,9 +517,6 @@
 
 .req-card:hover .req-card__panel {
   border-color: var(--accent-container);
-  box-shadow:
-    var(--shadow-raised),
-    0 0 0 1px var(--accent-container);
 }
 
 .dark .req-card__panel {
@@ -682,9 +526,6 @@
 
 .dark .req-card:hover .req-card__panel {
   border-color: var(--accent);
-  box-shadow:
-    var(--shadow-elevated-hover),
-    0 0 0 1px var(--accent);
 }
 
 /* The currently-linked requirement, by either of two routes:
@@ -700,7 +541,7 @@
    req-child-item.html) and scouting-u (requirement-node.html) put the
    id on the heading (h3/h4), never the .req-card/.req-child itself:
    Pagefind's Route A sub-result grouping needs the id on an actual
-   h1-h6 with non-blank text. Mirrors req-list.css's eeb88a0. */
+   h1-h6 with non-blank text. */
 .req-card[data-selected] > .req-card__panel,
 html:not([data-js]) .req-card:has(:target) > .req-card__panel,
 html:not([data-js]) .req-card:focus-within > .req-card__panel {
@@ -755,7 +596,7 @@ html:not([data-js]) .req-card:has(.req-child:focus-within) > .req-card__panel {
    the reader. */
 .req-card__title--verbatim {
   font-family: var(--font-body);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   font-style: normal;
 }
 
@@ -910,11 +751,10 @@ html:not([data-js]) .req-card:focus-within > .req-card__node {
 
 /* Requirements nest, so hovering 3.a also hovers everything containing
    it. Only the innermost may light up -- including suppressing the
-   card's panel ring and node, which otherwise lit the whole card
+   card's panel border and node, which otherwise lit the whole card
    whenever a single subrequirement was hovered. */
 .req-card:has(.req-child:hover) > .req-card__panel {
   border-color: var(--card-border-subtle);
-  box-shadow: var(--shadow-card);
 }
 
 .req-card:has(.req-child:hover) > .req-card__node {
@@ -1148,7 +988,6 @@ html:not([data-js]) .req-child:has(.req-child:focus-within) {
   font-size: var(--step--2);
   font-weight: 800;
   font-variant-numeric: tabular-nums;
-  text-transform: uppercase;
   color: var(--accent);
 }
 
@@ -1165,7 +1004,7 @@ html:not([data-js]) .req-child:has(.req-child:focus-within) {
 /* See .req-card__title--verbatim above. */
 .req-child__title--verbatim {
   font-family: var(--font-body);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   font-style: normal;
 }
 

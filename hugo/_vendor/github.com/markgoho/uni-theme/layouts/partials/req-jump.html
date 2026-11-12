@@ -1,0 +1,69 @@
+{{/* req-jump.html
+
+  Jump list for a requirements page in the "standard" layout: a sticky
+  side rail on desktop and one sticky "Jump to a requirement" control on
+  phones, both built from the same slice.
+
+  Renders two SIBLINGS: <details class="req-jump-m"> (phone) and
+  <aside class="req-jump-wrap"> (desktop): the phone control must not
+  sit inside the aside, or its sticky positioning has no room to stick.
+
+  Links are plain fragment links to the requirement headings
+  (`#{path}`), so they work with JS off. The inline script only marks
+  the requirement currently on screen and closes the phone list on pick.
+
+  Params (dict):
+  items - slice of {marker, label, href}                       (required)
+  meta  - pre-rendered HTML, shown under the desktop list;
+          req-rail-meta.html builds it                         (optional)
+  label - the phone control's text, default "Jump to a requirement"
+*/}}
+{{ $label := .label | default "Jump to a requirement" }}
+<details class="req-jump-m">
+  <summary>
+    {{ $label }}
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
+  </summary>
+  <ol>
+    {{ range .items }}
+      <li><a href="{{ .href }}"><span>{{ .marker }}</span>{{ .label }}</a></li>
+    {{ end }}
+  </ol>
+</details>
+<aside class="req-jump-wrap">
+  <nav class="req-jump" aria-label="Requirements">
+    <ol>
+      {{ range .items }}
+        <li><a href="{{ .href }}"><span>{{ .marker }}</span>{{ .label }}</a></li>
+      {{ end }}
+    </ol>
+  </nav>
+  {{ with .meta }}{{ . | safeHTML }}{{ end }}
+</aside>
+<script>
+  (function () {
+    var links = [].slice.call(document.querySelectorAll(".req-jump a"));
+    // Looked up on each call: this script runs before the requirements
+    // below it are parsed.
+    function update() {
+      var targets = links.map(function (a) {
+        return document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+      });
+      var cur = 0;
+      targets.forEach(function (t, i) {
+        if (t && t.getBoundingClientRect().top <= 160) cur = i;
+      });
+      links.forEach(function (a, i) {
+        if (i === cur) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+    }
+    if (links.length) {
+      addEventListener("scroll", update, { passive: true });
+      addEventListener("DOMContentLoaded", update);
+      update();
+    }
+    var m = document.querySelector(".req-jump-m");
+    if (m) m.addEventListener("click", function (e) { if (e.target.closest("a")) m.open = false; });
+  })();
+</script>

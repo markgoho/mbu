@@ -1,0 +1,40 @@
+{{/* req-preview-list.html
+
+  The "What you'll do" card on an award overview page: a heading with a
+  count, then one numbered row per top-level requirement linking to it
+  on the requirements page. The caller resolves each row's title and
+  snippet from its own data; this partial owns the markup only.
+
+  Rows may name view-transition keys so a row morphs into its card on
+  the requirements page. A name may appear once per document, so pass
+  each key once.
+
+  Params (dict):
+  heading - plain text, default "What you'll do"              (optional)
+  count   - plain text beside the heading, e.g. "7 requirements" (optional)
+  rows    - slice of dicts                                    (required)
+            url      - link to the requirement                (required)
+            marker   - the requirement's number, e.g. "1"     (required)
+            title    - plain text                             (required)
+            snippet  - plain text, one sentence               (optional)
+            vt       - key for req-num-/req-title- names      (optional)
+            text_vt  - key for the req-text- name, default vt (optional)
+*/}}
+<div class="badge-preview card-surface">
+  <h2 class="badge-preview__heading">{{ .heading | default "What you'll do" }}{{ with .count }} <span class="badge-preview__count">{{ . }}</span>{{ end }}</h2>
+  <ol class="badge-preview__list">
+    {{ range .rows }}
+      {{ $vt := .vt | default "" }}
+      {{ $textVT := .text_vt | default $vt }}
+      <li class="badge-preview__item">
+        <a href="{{ .url }}" class="badge-preview__link">
+          <span class="badge-preview__node" aria-hidden="true"{{ with $vt }} style="view-transition-name: req-num-{{ . }}"{{ end }}>{{ .marker }}.</span>
+          <span class="badge-preview__text">
+            <span class="badge-preview__title"{{ with $vt }} style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ .title }}</span>
+            {{ with .snippet }}<span class="badge-preview__snippet"{{ with $textVT }} style="view-transition-name: req-text-{{ . }}"{{ end }}>{{ . }}</span>{{ end }}
+          </span>
+        </a>
+      </li>
+    {{ end }}
+  </ol>
+</div>

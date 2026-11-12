@@ -24,28 +24,6 @@
     grid-template-columns: min-content 1fr;
     align-items: center;
     gap: var(--space-s);
-
-    /* Two-row eyebrow-label + title header (e.g. "Be Prepared!" above a
-       per-scenario title), vs. the default single-row icon + title. */
-    &:has(.req-callout__heading) {
-      grid-template-rows: auto auto;
-      row-gap: var(--space-3xs);
-    }
-  }
-
-  & .req-callout__heading {
-    display: contents;
-  }
-
-  & .req-callout__label {
-    grid-column: 2;
-    grid-row: 1;
-    font-size: var(--step--2);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-bold);
-    letter-spacing: 0.05em;
-    line-height: 1.2;
-    margin: 0;
   }
 
   & .req-callout__title {
@@ -55,25 +33,12 @@
     line-height: var(--line-height-tight);
   }
 
-  & .req-callout__header:has(.req-callout__heading) .req-callout__title {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
   & .req-callout__icon {
     height: 1.25em;
     width: auto;
     aspect-ratio: 1 / 1;
     color: inherit;
     flex-shrink: 0;
-  }
-
-  & .req-callout__header:has(.req-callout__heading) .req-callout__icon {
-    grid-row: 1 / 3;
-    height: 100%;
-    max-height: 100%;
-    align-self: center;
-    justify-self: center;
   }
 
   & .req-callout__body {
@@ -110,24 +75,15 @@
     }
   }
 
-  /* Eyebrow-label callouts ("Be Prepared!" scenarios) use a richer card
-     treatment than the single-line callouts: a full subtle border, more
-     block margin, and tighter list spacing for step-by-step bodies. */
-  &:has(.req-callout__heading) {
-    border: 1px solid var(--card-border-subtle);
-    margin-block: var(--space-l);
+  /* Tighter list spacing for step-by-step bodies. */
+  & .req-callout__body {
+    ul {
+      padding-inline-start: var(--space-l);
+      margin-block-end: 0;
+    }
 
-    & .req-callout__body {
-      margin-top: var(--space-s);
-
-      ul {
-        padding-left: var(--space-l);
-        margin-bottom: 0;
-      }
-
-      li {
-        margin-bottom: var(--space-2xs);
-      }
+    li {
+      margin-block-end: var(--space-2xs);
     }
   }
 }
@@ -137,8 +93,7 @@
   border-left-color: var(--error);
   color: var(--on-error-container);
 
-  .req-callout__icon,
-  .req-callout__label {
+  .req-callout__icon {
     color: var(--error);
   }
 }
@@ -148,8 +103,7 @@
   border-left-color: var(--secondary);
   color: var(--on-secondary-container);
 
-  .req-callout__icon,
-  .req-callout__label {
+  .req-callout__icon {
     color: var(--secondary);
   }
 }
@@ -159,8 +113,7 @@
   border-left-color: var(--accent);
   color: var(--on-accent-container);
 
-  .req-callout__icon,
-  .req-callout__label {
+  .req-callout__icon {
     color: var(--accent);
   }
 }
@@ -174,8 +127,7 @@
   border-left-color: var(--amber);
   color: var(--on-amber-container);
 
-  .req-callout__icon,
-  .req-callout__label {
+  .req-callout__icon {
     color: var(--on-amber-container);
   }
 }
@@ -407,14 +359,9 @@
   margin-block: var(--space-s);
   text-decoration: none;
   color: var(--on-surface);
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s,
-    border-color 0.2s;
+  transition: border-color 0.2s;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-raised);
     border-color: var(--accent-container);
   }
 
@@ -463,7 +410,6 @@
 .dark .req-external-link:hover,
 .dark .req-download:hover {
   border-color: var(--accent);
-  box-shadow: var(--shadow-elevated-hover);
 }
 
 /* ------------------------------------------------------------------ */
@@ -478,14 +424,9 @@
   border-left: var(--border-width-md) solid var(--primary);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
+  transition: border-color 0.2s ease;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-raised);
     border-color: var(--primary);
   }
 
@@ -512,8 +453,6 @@
   & .req-related-guide__eyebrow {
     font-size: var(--step--2);
     font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
     color: var(--on-surface-muted);
   }
 
@@ -572,7 +511,6 @@
 
 .dark .req-related-guide:hover {
   border-color: var(--primary);
-  box-shadow: var(--shadow-elevated-hover);
 }
 
 .req-cross-link {
@@ -722,11 +660,6 @@
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: scale(1.05);
-    }
   }
 
   & .req-experience-card__title {
@@ -968,8 +901,6 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--step--2);
   color: var(--on-surface-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   line-height: var(--line-height-tight);
 }
 

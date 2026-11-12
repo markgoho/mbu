@@ -24,7 +24,7 @@
   width: max-content;
   background-color: var(--tan-300);
   color: var(--tan-500);
-  font-weight: 900;
+  font-weight: var(--font-weight-boldest);
   font-size: var(--step--1);
 }
 

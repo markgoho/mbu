@@ -1,3 +1,8 @@
+{{/* The browser's own bars match the masthead (standard.css --mast).
+  The media queries are the no-JS answer; the script below and
+  theme-toggle.ts point both tags at the site's chosen theme instead. */}}
+<meta name="theme-color" content="#263a20" media="(prefers-color-scheme: dark)" data-light="#45653a" data-dark="#263a20" />
+<meta name="theme-color" content="#45653a" media="(prefers-color-scheme: light)" data-light="#45653a" data-dark="#263a20" />
 <script>
   (function () {
     try {
@@ -9,6 +14,9 @@
       if (isDark) {
         document.documentElement.classList.add("dark");
       }
+      document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+        m.content = isDark ? m.dataset.dark : m.dataset.light;
+      });
     } catch (e) {
       /* localStorage/matchMedia unavailable — fall back to light, no-op */
     }

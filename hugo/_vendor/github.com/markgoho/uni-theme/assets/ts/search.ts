@@ -68,6 +68,9 @@ if (container) {
   const minQueryHint =
     container.dataset.searchMinQueryHint ??
     "Type at least 3 characters to search.";
+  const unavailable =
+    container.dataset.searchUnavailable ??
+    "Search is not working right now. Please try again later.";
   const noResultsEvent = container.dataset.searchEventNoResults;
   const resultClickEvent = container.dataset.searchEventResultClick;
   const pageSize = container.dataset.searchPageSize
@@ -115,6 +118,11 @@ if (container) {
           ranking: { termSimilarity: 10 },
         });
         return pf;
+      });
+      // A failed load (no index built, or offline) is retried on the
+      // next query instead of being cached.
+      pagefindPromise.catch(() => {
+        pagefindPromise = null;
       });
     }
     return pagefindPromise;
@@ -224,6 +232,15 @@ if (container) {
         // before a closing bracket or full stop that belongs to the
         // title. Drop every leading non-word character, not a fixed set.
         stop.textContent = text.slice(i + 1).replace(/^[^\p{L}\p{N}]+/u, "");
+        // When the title ends on a highlighted word, its full stop is in
+        // the text node after the <mark>, so keep stripping forward.
+        let next: Node | null = stop;
+        while (!(next.textContent ?? "").trim() && (next = clear.nextNode())) {
+          next.textContent = (next.textContent ?? "").replace(
+            /^[^\p{L}\p{N}]+/u,
+            "",
+          );
+        }
         // A <mark> emptied by the cut would otherwise render as a stray
         // highlight swatch.
         holder
@@ -360,8 +377,17 @@ if (container) {
     }
 
     const token = ++renderToken;
-    const pf = await loadPagefind();
-    const search = await pf.search(query);
+    let search;
+    try {
+      const pf = await loadPagefind();
+      search = await pf.search(query);
+    } catch {
+      if (token !== renderToken) return;
+      resultsEl.innerHTML = "";
+      moreButton.hidden = true;
+      setMessage(unavailable);
+      return;
+    }
     if (token !== renderToken) return;
 
     const results: PagefindResult[] = search.results;
@@ -425,8 +451,6 @@ if (container) {
 
   let debounceId: ReturnType<typeof setTimeout>;
 
-  form.addEventListener("submit", event => event.preventDefault());
-
   input.addEventListener("input", () => {
     clearTimeout(debounceId);
     debounceId = setTimeout(() => commitQuery(input.value.trim()), DEBOUNCE_MS);
@@ -440,6 +464,10 @@ if (container) {
   }
 
   input.addEventListener("focusout", flush);
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    flush();
+  });
   input.addEventListener("keydown", event => {
     if (event.key === "Enter") {
       event.preventDefault();

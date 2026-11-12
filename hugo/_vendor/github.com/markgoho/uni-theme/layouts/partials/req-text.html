@@ -61,6 +61,7 @@
 {{ end }}
 {{ $transitionKey := .transition_key }}
 
+{{ $stripped := "" }}
 {{ $leadSentence := findRE `^[^.!?]*[.!?]["'‘’“”)]*` $text 1 }}
 {{ if $leadSentence }}
   {{ $lead := index $leadSentence 0 }}
@@ -87,10 +88,14 @@
 
   {{ if and (or $matchesTitle $isOption $isShortLabel) (ge (len $rest) 10) }}
     {{ $text = $rest }}
+    {{ $stripped = $lead }}
   {{ end }}
 {{ end }}
 
+{{/* data-lead keeps the stripped sentence for deep-link.ts's copy text,
+  which pastes the official wording in full. */}}
 <div
   class="{{ $class }}"
+  {{ with $stripped }}data-lead="{{ partial "text/plain-text.html" (dict "text" . "text_format" $textFormat) }}"{{ end }}
   {{ with $transitionKey }}style="view-transition-name: req-text-{{ . }}"{{ end }}
   >{{ partial "text/render.html" (dict "text" $text "text_format" $textFormat) }}{{ with $list }}{{ if eq .type "ol" }}<ol class="req-text-list">{{ range .items }}<li>{{ . }}</li>{{ end }}</ol>{{ else }}<ul class="req-text-list">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}{{ end }}</div>

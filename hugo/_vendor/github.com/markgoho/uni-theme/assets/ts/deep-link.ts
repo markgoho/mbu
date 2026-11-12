@@ -129,25 +129,35 @@ function requirementText(li: HTMLElement, path: string): string {
     return body ? `${path}. ${body}` : `${path}.`;
   }
 
-  // A visually-hidden title is DERIVED from the body's own lead sentence
-  // (text/heading-for.html), not authored separately -- the body below
-  // already carries that sentence in full. Treating it like an absent
-  // title (skip the line, read the body alone) is what keeps the paste
-  // from repeating that one sentence twice.
+  // The paste is Scouting America's wording, not ours. A curated title is
+  // our short label, and a visually-hidden one is derived from the body's
+  // own lead sentence (text/heading-for.html), so neither is pasted. A
+  // promoted ("--verbatim") title IS the official text, shown nowhere
+  // else, so it is. A group with no official text of its own starts the
+  // paste at its first child; a lone node with none pastes its curated
+  // title, so the paste is never just a number.
   const titleEl = scope.querySelector<HTMLElement>(
     isCard
       ? ":scope > .req-card__header .req-card__title"
       : ":scope > .req-child__title-row > .req-child__title",
   );
-  const title = titleEl && !titleEl.classList.contains("visually-hidden") ? textOf(titleEl) : "";
-  const body = textOf(scope.querySelector(":scope > .req-child__text, :scope > .req-card__text"));
+  // req-text.html drops a lead sentence that echoes the heading from the
+  // tile; it is still official wording, so the paste puts it back.
+  const bodyEl = scope.querySelector<HTMLElement>(":scope > .req-child__text, :scope > .req-card__text");
+  const body = [bodyEl?.dataset.lead, textOf(bodyEl)].filter(Boolean).join(" ");
+  const shown = titleEl && !titleEl.classList.contains("visually-hidden");
+  const verbatim = titleEl?.classList.contains(isCard ? "req-card__title--verbatim" : "req-child__title--verbatim");
+  const childList = scope.querySelector<HTMLElement>(":scope > .req-children");
+  const title = shown && (verbatim || (!body && !childList)) ? textOf(titleEl) : "";
 
   const lines: string[] = [];
   if (title) {
     lines.push(`${path}. ${title}`);
     if (body) lines.push(body);
-  } else {
-    lines.push(body ? `${path}. ${body}` : `${path}.`);
+  } else if (body) {
+    lines.push(`${path}. ${body}`);
+  } else if (!childList) {
+    lines.push(`${path}.`);
   }
 
   const resourceLinks = scope.querySelectorAll<HTMLAnchorElement>(":scope > .resources li a");
@@ -158,7 +168,6 @@ function requirementText(li: HTMLElement, path: string): string {
     lines.push(`Resources:\n${list}`);
   }
 
-  const childList = scope.querySelector<HTMLElement>(":scope > .req-children");
   if (childList) {
     childList.querySelectorAll<HTMLElement>(":scope > [data-anchor]").forEach((child) => {
       const childPath = child.dataset.anchor;

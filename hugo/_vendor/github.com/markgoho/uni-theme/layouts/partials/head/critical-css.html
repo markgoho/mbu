@@ -1,36 +1,52 @@
 <!-- Load Critical CSS Inline -->
-{{/* A consumer's own css/search.css is deliberately absent from this
-  list: result-card presentation became theme-owned in uni-theme#14, so
-  the file is dead weight and consumers should delete theirs. */}}
-{{ $criticalCSS := slice
-  (resources.Get "css/base.css")
-  (resources.Get "css/colors.css")
-  (resources.Get "css/tokens-v2.css")
-  (resources.Get "css/typography.css")
-  (resources.Get "css/spacing.css")
-  (resources.Get "css/layout.css")
-  (resources.Get "css/header.css")
-  (resources.Get "css/footer.css")
-  (resources.Get "css/button.css")
-  (resources.Get "css/button-eagle.css")
-  (resources.Get "css/components/search.css")
-  (resources.Get "css/components/breadcrumb.css")
-  (resources.Get "css/components/tag.css")
-  (resources.Get "css/components/card-surface.css")
-  (resources.Get "css/view-transitions.css")
-  (resources.Get "css/badge-view-transitions.css")
-  (resources.Get "css/components/timeline.css")
-  (resources.Get "css/pages/home.css")
-  (resources.Get "css/pages/merit-badges.css")
-  (resources.Get "css/components/discontinued-notice.css")
-  (resources.Get "css/eagle-required.css")
-  (resources.Get "css/pages/merit-badge-requirements.css")
-  (resources.Get "css/components/badge-hero.css")
-  (resources.Get "css/pages/merit-badge-landing.css")
-  (resources.Get "css/pages/drg.css")
-  (resources.Get "css/components/drg-blocks.css")
-  (resources.Get "css/pages/drg-print.css")
-  | resources.Concat "css/critical.css"
-  | resources.Minify
+{{/* One fixed, ordered manifest. Every theme file must exist; the
+  consumer-owned files in $optional are concatenated where listed when a
+  site has them and skipped when it does not. A consumer's own
+  css/search.css is deliberately absent: result-card presentation became
+  theme-owned in uni-theme#14, so consumers should delete theirs. */}}
+{{ $paths := slice
+  "css/base.css"
+  "css/colors.css"
+  "css/tokens-v2.css"
+  "css/typography.css"
+  "css/spacing.css"
+  "css/layout.css"
+  "css/header.css"
+  "css/footer.css"
+  "css/button.css"
+  "css/components/search.css"
+  "css/components/breadcrumb.css"
+  "css/components/tag.css"
+  "css/components/card-surface.css"
+  "css/view-transitions.css"
+  "css/badge-view-transitions.css"
+  "css/components/timeline.css"
+  "css/components/discontinued-notice.css"
+  "css/pages/merit-badge-requirements.css"
+  "css/pages/merit-badge-landing.css"
+  "css/pages/drg.css"
+  "css/components/drg-blocks.css"
+  "css/pages/drg-print.css"
+  "css/standard.css"
 }}
+{{ $optional := slice "css/badge-view-transitions.css" "css/components/discontinued-notice.css" }}
+{{ $found := slice }}
+{{ range $paths }}
+  {{ with resources.Get . }}
+    {{ $found = $found | append . }}
+  {{ else }}
+    {{ if not (in $optional .) }}
+      {{ errorf "head/critical-css.html: missing %s" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $criticalCSS := $found | resources.Concat "css/critical.css" | resources.Minify }}
+{{/* Every page renders in Figtree latin, so fetch it before the inline CSS
+  discovers it. latin-ext is not preloaded: few pages need it. */}}
+<link
+  rel="preload"
+  href="/assets/fonts/Figtree-VariableFont_wght.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin />
 <style>{{ $criticalCSS.Content | safeCSS }}</style>

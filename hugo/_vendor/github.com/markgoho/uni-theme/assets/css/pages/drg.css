@@ -1,11 +1,10 @@
 /*
  * Digital Resource Guide — v2 redesign.
  *
- * Shell, sidebar, nav, page header, prose/table styles and footer nav for
- * DRG guide pages. Mirrors the shell established in
+ * Shell, sidebar, nav, prose/table styles and footer nav for DRG guide
+ * pages. Mirrors the shell established in
  * css/pages/merit-badge-requirements.css (full-bleed main, sidebar as a
- * raised card sharing .badge-identity with the requirements page) and
- * uses ONLY the v2 semantic tokens from tokens-v2.css. Component blocks
+ * raised card) and uses ONLY the v2 semantic tokens from tokens-v2.css. Component blocks
  * (callouts, cards, checklist, etc) live in
  * css/components/drg-blocks.css; the worksheet and complete-guide print
  * page live in css/pages/drg-print.css. This page opts into the v2
@@ -91,7 +90,6 @@
   &:hover,
   &:focus-visible {
     border-color: var(--accent);
-    box-shadow: var(--shadow-raised), 0 0 0 3px var(--accent-wash);
     background-color: var(--surface-sunken);
   }
 }
@@ -102,19 +100,7 @@
   &:hover,
   &:focus-visible {
     border-color: var(--amber);
-    box-shadow: var(--shadow-elevated), 0 0 0 3px var(--amber-glow);
   }
-}
-
-.req-mobile-nav__icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  flex-shrink: 0;
-  color: var(--accent);
-}
-
-.dark .req-mobile-nav__icon {
-  color: var(--amber);
 }
 
 .req-mobile-nav__chevron {
@@ -178,8 +164,6 @@
 
 .req-mobile-nav__group {
   font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--on-surface-muted);
   opacity: 0.75;
   padding: var(--space-xs) 0.75rem var(--space-3xs);
@@ -311,8 +295,6 @@
 
 .req-nav__group-title {
   font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--on-surface-muted);
   opacity: 0.75;
   margin-top: var(--space-m);
@@ -453,40 +435,6 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Page header                                                         */
-/* ------------------------------------------------------------------ */
-
-.req-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0 var(--space-m);
-  text-align: left;
-
-  & .req-header__title {
-    text-align: left;
-    margin-block-start: 0;
-  }
-
-  & .req-header__kicker {
-    font-size: var(--step--1);
-    color: var(--on-surface-muted);
-    font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  @container req-content (max-width: 500px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-
-    & .req-header__title {
-      text-align: center;
-    }
-  }
-}
-
-/* ------------------------------------------------------------------ */
 /* Footer nav                                                           */
 /* ------------------------------------------------------------------ */
 
@@ -509,15 +457,10 @@
     border: 1px solid var(--card-border-subtle);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card);
-    transition:
-      border-color 0.2s,
-      box-shadow 0.2s,
-      transform 0.2s;
+    transition: border-color 0.2s;
 
     &:hover {
       border-color: var(--accent-container);
-      box-shadow: var(--shadow-raised);
-      transform: translateY(-2px);
       text-decoration: none;
     }
   }
@@ -525,8 +468,6 @@
   & .req-footer-nav__label {
     font-size: var(--step--2);
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
     color: var(--on-surface-muted);
     margin-bottom: var(--space-3xs);
   }
@@ -535,10 +476,6 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--step--1);
     color: var(--on-surface);
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   @container req-content (max-width: 480px) {
@@ -553,7 +490,6 @@
 
 .dark .req-footer-nav__link:hover {
   border-color: var(--accent);
-  box-shadow: var(--shadow-elevated-hover);
 }
 
 .req-footer-nav__link--prev {
