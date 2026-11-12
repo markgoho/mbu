@@ -1,47 +1,26 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
+{{ define "main-class" }}index-main{{ end }}
+
 {{ define "main" }}
-  {{/* Main merit badges listing page */}}
+  {{ partial "page-head.html" (dict "page" . "title" "All merit badges") }}
 
-  {{/* Excludes discontinued badges (no requirements page, so not
-    Pagefind-indexed either — see home/hero.html) from both the count
-    and the grid below, so the two stay in agreement instead of the
-    header claiming a total the grid doesn't actually show.
-  */}}
-  {{ $badgeCount := 0 }}
-  {{ range .Pages }}
-    {{ if .File }}
-      {{ $json := index hugo.Data "merit-badges" (path.Base .File.Dir) }}
-      {{ if and $json (not $json.discontinued) }}
-        {{ $badgeCount = add $badgeCount 1 }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-    <p class="badge-count">{{ $badgeCount }} merit badges available</p>
-    <p>
-      <a href="/merit-badges/eagle-required/" class="button button-eagle">
-        {{ partial "icon.html" (dict "name" "medal" "class" "button-eagle-icon") }}
-        Browse Eagle-required
-      </a>
-    </p>
-  </header>
-
-  <section class="badges-grid">
-    {{ range $index, $page := .Pages.ByTitle }}
-      {{ $json := false }}
-      {{ if $page.File }}
-        {{ $json = index hugo.Data "merit-badges" (path.Base $page.File.Dir) }}
-      {{ end }}
-      {{ if and $json (not $json.discontinued) }}
-        {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
-      {{ end }}
-    {{ end }}
-  </section>
+  <div class="index-page">
+    <section aria-labelledby="all-badges">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="all-badges">{{ partial "merit-badges/badge-count.html" . }} badges, A to Z</h2>
+        <div class="index-section__links">
+          <a class="index-section__more" href="/merit-badges/eagle-required/">Eagle-required badges</a>
+          <a class="index-section__more" href="/categories/">Browse by category</a>
+        </div>
+      </div>
+      <div class="link-tiles">
+        {{ range partial "merit-badges/listed-badges.html" .Pages }}
+          {{ partial "merit-badges/badge-tile.html" (dict "page" . "title_vt" true) }}
+        {{ end }}
+      </div>
+    </section>
+  </div>
 {{ end }}
 
 {{ define "footer-scripts" }}

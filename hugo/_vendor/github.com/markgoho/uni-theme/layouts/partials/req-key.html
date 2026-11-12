@@ -1,0 +1,21 @@
+{{/* req-key.html
+
+  How to read a requirements page. The only copy of these sentences:
+  req-rail-meta.html shows the full key under the jump list, and a
+  requirements layout shows the brief one above its first tile, phones
+  only (the rail sits after the requirements there).
+
+  What a click does depends on the pointer, not the width (deep-link.ts
+  copies on click, but only shows the buttons on a tap), so the full key
+  carries both sentences and CSS shows the one that is true.
+
+  Params (dict):
+  brief - bool: the one-line phone version                     (optional)
+*/}}
+{{ $labels := "<b>Green headings</b> are our short labels." }}
+{{ if .brief }}
+  <p class="req-key req-key--brief" data-pagefind-ignore>{{ $labels | safeHTML }} The rest is Scouting America's wording.</p>
+{{ else }}
+  <p class="req-jump-key req-key" data-pagefind-ignore>{{ $labels | safeHTML }} The text under them is Scouting America's official wording, word for word.
+    <span class="req-key__fine">Click a requirement to copy a link to it.</span><span class="req-key__touch">Tap a requirement for its link and copy buttons.</span></p>
+{{ end }}

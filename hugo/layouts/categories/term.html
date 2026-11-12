@@ -1,22 +1,22 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
-  <header>
-    <h1>{{ .Title }}</h1>
-    <p class="badge-count">{{ len .Pages }} merit badges in this category</p>
-    <p><a href="/categories/">View all categories</a></p>
-  </header>
+{{ define "main-class" }}index-main{{ end }}
 
-  <section class="badges-grid">
-    {{ range $index, $page := .Pages.ByTitle }}
-      {{ $json := false }}
-      {{ if $page.File }}
-        {{ $json = index hugo.Data "merit-badges" $page.File.ContentBaseName }}
-      {{ end }}
-      {{ if $json }}
-        {{ partial "merit-badges/badge-card.html" (dict "page" $page "json" $json "index" $index) }}
-      {{ end }}
-    {{ end }}
-  </section>
+{{ define "main" }}
+  {{ partial "page-head.html" (dict "page" . "title" .Title) }}
+
+  {{ $badges := partial "merit-badges/listed-badges.html" .Pages }}
+  <div class="index-page">
+    <section aria-labelledby="category-badges">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="category-badges">{{ len $badges }} {{ cond (eq (len $badges) 1) "badge" "badges" }}, A to Z</h2>
+        <a class="index-section__more" href="/categories/">All categories</a>
+      </div>
+      <div class="link-tiles">
+        {{ range $badges }}
+          {{ partial "merit-badges/badge-tile.html" (dict "page" . "title_vt" true) }}
+        {{ end }}
+      </div>
+    </section>
+  </div>
 {{ end }}

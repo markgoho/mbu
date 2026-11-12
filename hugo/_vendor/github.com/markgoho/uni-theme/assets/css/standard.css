@@ -1,0 +1,3086 @@
+/*
+ * standard.css: the "category standard" redesign (PRODUCT.md, 2026-11).
+ *
+ * Loaded LAST in the critical bundle. It re-values the public semantic
+ * tokens (names unchanged, see CONTRACT.md) and restyles the existing
+ * markup. No class or token is renamed and no behavior is removed:
+ * deep-link.ts, the dock, anchors and view-transition names are as they
+ * were.
+ *
+ * The look: olive masthead with one gold line, white page head, light
+ * gray ground, flat white tiles with a hairline border, one sans family.
+ * Olive text is ours (labels, links, current state). Near-black text is
+ * Scouting America's wording.
+ *
+ * PREVIEW STAGE: this is an override layer so the redesign can be seen
+ * on production content. Once the direction is approved, fold each
+ * section into the file it overrides and delete the rules it replaced.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Tokens                                                              */
+/* ------------------------------------------------------------------ */
+@media screen {
+  .theme-v2 {
+    --surface: #f3f4f1;
+    --surface-raised: #ffffff;
+    --surface-sunken: #e9ece6;
+    --surface-inverse: #1d2420;
+
+    --on-surface: #1d2420;
+    --on-surface-muted: #4d564f;
+    --on-surface-inverse: #ffffff;
+
+    --accent: #45653a;
+    --accent-container: #e9f0e3;
+    --on-accent: #ffffff;
+    --on-accent-container: #36502d;
+
+    --secondary: #45653a;
+    --secondary-container: #e9f0e3;
+    --on-secondary-container: #36502d;
+
+    --outline: #c9cec5;
+    --outline-variant: #e2e5df;
+    --card-border-subtle: #e2e5df;
+
+    --error: #a3271f;
+    --error-container: #fbecea;
+    --on-error-container: #1d2420;
+    --amber: #7a5f00;
+    --amber-container: #f6ecc4;
+    --on-amber-container: #4f3d00;
+    --amber-glow: transparent;
+
+    --mast: #45653a;
+    --mast-ink: #ffffff;
+    --gold: #c9a227;
+
+    --shadow-card: none;
+    --shadow-raised: none;
+    --shadow-elevated: none;
+    --shadow-elevated-hover: none;
+
+    --accent-wash: #e9f0e3;
+    --accent-wash-strong: #dbe7d2;
+  }
+
+  .theme-v2.dark,
+  .dark .theme-v2,
+  html.theme-v2:has(#theme-toggle-checkbox:checked) {
+    --surface: #151915;
+    --surface-raised: #1f2520;
+    --surface-sunken: #262d27;
+    --surface-inverse: #e7ebe4;
+
+    --on-surface: #e7ebe4;
+    --on-surface-muted: #a8b0a6;
+    --on-surface-inverse: #151915;
+
+    --accent: #a9cc97;
+    --accent-container: #2a3a26;
+    --on-accent: #10160f;
+    --on-accent-container: #cfe5c3;
+
+    --secondary: #a9cc97;
+    --secondary-container: #2a3a26;
+    --on-secondary-container: #cfe5c3;
+
+    --outline: #465047;
+    --outline-variant: #2f372f;
+    --card-border-subtle: #2f372f;
+
+    /* Dark used amber as its accent everywhere. The standard look has one
+       accent, olive, so amber follows it; gold stays a single line. */
+    --error: #f0a39c;
+    --error-container: #3a211f;
+    --on-error-container: #f1ebe9;
+    --amber: #a9cc97;
+    --amber-container: #3a3420;
+    --on-amber-container: #ecd98a;
+    --amber-glow: transparent;
+
+    --mast: #263a20;
+    --mast-ink: #ffffff;
+    --gold: #c9a227;
+
+    --shadow-card: none;
+    --shadow-raised: none;
+    --shadow-elevated: none;
+    --shadow-elevated-hover: none;
+
+    --accent-wash: #2a3a26;
+    --accent-wash-strong: #344a2e;
+  }
+}
+
+.theme-v2 {
+  --font-display: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 0.75rem;
+
+  /* A fixed scale. The fluid one grew body text to 24px on wide screens. */
+  --step--2: 0.875rem;
+  --step--1: 1rem;
+  --step-0: 1.125rem;
+  --step-1: 1.25rem;
+  --step-2: 1.625rem;
+  --step-3: 2rem;
+  --step-4: 2.5rem;
+  --step-5: 3rem;
+  --step-6: 3.5rem;
+
+  --page-max: 77.5rem;
+  --read-max: 46rem;
+  --page-gutter: 1.5rem;
+}
+
+/* Wide screens get a wider page, the same on every page so the
+   masthead, title and columns do not shift between tabs. */
+@media (min-width: 87.5rem) {
+  html.theme-v2 {
+    --page-max: 92rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Masthead                                                            */
+/* ------------------------------------------------------------------ */
+.theme-v2 .header {
+  background: var(--mast);
+  border-block-end: 3px solid var(--gold);
+}
+
+.theme-v2 .navbar {
+  max-inline-size: var(--page-max);
+  margin-inline: auto;
+  min-block-size: 3.75rem;
+  padding-block: 0.5rem;
+  padding-inline: var(--page-gutter);
+  background: none;
+  border: 0;
+  color: var(--mast-ink);
+}
+
+.theme-v2 .navbar__logo h2 {
+  color: var(--mast-ink);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.theme-v2 .navbar .button {
+  min-block-size: 2.75rem;
+  border: 1px solid rgb(255 255 255 / 0.35);
+  border-radius: var(--radius-md);
+  background: none;
+  box-shadow: none;
+  color: var(--mast-ink);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.theme-v2 .navbar .button:hover,
+.theme-v2 .navbar .button:focus-visible {
+  background: rgb(255 255 255 / 0.14);
+  border-color: rgb(255 255 255 / 0.6);
+  transform: none;
+}
+
+.theme-v2 .navbar__link {
+  color: var(--mast-ink);
+  font-weight: 600;
+}
+
+.theme-v2 .navbar__link:hover {
+  color: var(--mast-ink);
+  text-decoration: underline;
+}
+
+.theme-v2 .navbar__nav > .active {
+  border-block-end-color: var(--gold);
+}
+
+@container header (min-width: 60rem) {
+  .theme-v2 .navbar {
+    padding-block: 0.5rem;
+    padding-inline: var(--page-gutter);
+    column-gap: 0.75rem;
+  }
+}
+
+/* The phone menu is a popover on the page, not on the masthead. */
+.theme-v2 .navbar__menu-content:popover-open .button,
+.theme-v2 .navbar--open .navbar__menu-content .button {
+  border-color: var(--outline);
+  color: var(--on-accent-container);
+}
+
+/* ------------------------------------------------------------------ */
+/* Page head                                                           */
+/* ------------------------------------------------------------------ */
+.page-head {
+  background: var(--surface-raised);
+  border-block-end: 1px solid var(--outline-variant);
+}
+
+.page-head__wrap {
+  max-inline-size: var(--page-max);
+  margin-inline: auto;
+  padding-block: 0.875rem 0;
+  padding-inline: var(--page-gutter);
+}
+
+.page-head .breadcrumb {
+  margin: 0;
+  padding: 0;
+}
+
+.page-head .breadcrumb__list {
+  font-size: 0.9375rem;
+}
+
+.page-head .breadcrumb__link {
+  color: var(--on-accent-container);
+}
+
+.page-head__title {
+  text-align: start;
+  margin-block: 0.375rem 0;
+  font-size: clamp(1.875rem, 1.25rem + 2.2vw, 2.75rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--on-surface);
+  text-wrap: balance;
+}
+
+.page-head__title span {
+  color: var(--accent);
+}
+
+.page-head__meta {
+  margin-block: 0.375rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--on-surface-muted);
+}
+
+.page-head__flag {
+  display: inline-block;
+  margin-inline-start: 0.5rem;
+  padding-block: 0.125rem;
+  padding-inline: 0.625rem;
+  border-radius: var(--radius-full);
+  background: var(--amber-container);
+  color: var(--on-amber-container);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.page-head__lede {
+  max-inline-size: 62ch;
+  margin-block: 0.5rem 0;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.page-head__tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-block-start: 0.5rem;
+  margin-inline-start: -0.75rem;
+  overflow-x: auto;
+}
+
+.page-head__tabs a {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  padding-inline: 0.75rem;
+  border-block-end: 3px solid transparent;
+  color: var(--on-surface-muted);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.page-head__tabs a:hover {
+  color: var(--on-surface);
+}
+
+.page-head__tabs a[aria-current="page"] {
+  border-block-end-color: var(--accent);
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------------ */
+/* Requirements page: layout                                           */
+/* ------------------------------------------------------------------ */
+.theme-v2 .req-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  max-inline-size: var(--page-max);
+  margin-inline: auto;
+  padding-block-start: 1rem;
+  padding-inline: var(--page-gutter);
+}
+
+@media (min-width: 60rem) {
+  .theme-v2 .req-page {
+    grid-template-columns: 18rem minmax(0, 1fr);
+    column-gap: 2rem;
+    align-items: start;
+    padding-block-start: 1.75rem;
+  }
+}
+
+/* One reading column width on every page: requirement tiles, the
+   guide article and the overview column all stop at --read-max. */
+.theme-v2 .req-main {
+  max-inline-size: var(--read-max);
+  padding-inline: 0;
+}
+
+/* The page head already says "Requirements"; the heading stays for
+   Pagefind and the outline, out of sight. */
+.theme-v2 .req-main__heading {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Jump list, desktop */
+.req-jump-wrap {
+  display: none;
+}
+
+@media (min-width: 60rem) {
+  .req-jump-wrap {
+    display: block;
+    position: sticky;
+    inset-block-start: 1rem;
+    max-block-size: calc(100dvh - 2rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+}
+
+.req-jump ol,
+.req-jump-m ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.req-jump a,
+.req-jump-m a {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-block-size: 2.75rem;
+  padding-block: 0.375rem;
+  padding-inline: 0.5rem;
+  border-radius: var(--radius-md);
+  color: var(--on-surface);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.req-jump a span,
+.req-jump-m a span {
+  display: grid;
+  place-items: center;
+  flex: none;
+  inline-size: 1.75rem;
+  block-size: 1.75rem;
+  border: 1px solid var(--outline);
+  border-radius: 50%;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.req-jump a:hover,
+.req-jump-m a:hover {
+  background: var(--surface-sunken);
+}
+
+.req-jump a[aria-current="true"] {
+  background: var(--surface-raised);
+  box-shadow: inset 0 0 0 1px var(--outline-variant);
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+.req-jump a[aria-current="true"] span {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.req-jump-wrap .req-sidebar__meta {
+  margin-block-start: 1rem;
+  padding-block-start: 1rem;
+  padding-inline: 0.5rem;
+  border-block-start: 1px solid var(--outline-variant);
+  font-size: 0.9375rem;
+}
+
+.req-jump-wrap .req-sidebar__meta-item {
+  color: var(--on-surface-muted);
+}
+
+/* How to read the page: under the jump list, with the count, date and
+   official links. */
+.req-jump-key {
+  margin-block: 1rem 0;
+  padding-block-start: 1rem;
+  padding-inline: 0.5rem;
+  border-block-start: 1px solid var(--outline-variant);
+  color: var(--on-surface-muted);
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+}
+
+.req-jump-key b {
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+/* Phone: the jump list is the sticky control above, so the rail holds
+   only the note and links, and goes after the requirements. */
+@media (max-width: 59.99rem) {
+  .req-jump-wrap {
+    display: block;
+    order: 2;
+    margin-block: 1rem 2rem;
+  }
+
+  .req-jump-wrap .req-jump {
+    display: none;
+  }
+
+  .req-jump-key {
+    margin-block-start: 0;
+    padding-inline: 0;
+  }
+
+  .req-jump-wrap .req-sidebar__meta {
+    padding-inline: 0;
+  }
+}
+
+/* Jump list, phone */
+.req-jump-m {
+  position: sticky;
+  inset-block-start: 0.5rem;
+  z-index: 10;
+  margin-block-end: 0.75rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 -0.5rem 0 var(--surface),
+    0 6px 14px -8px rgb(0 0 0 / 0.35);
+}
+
+@media (min-width: 60rem) {
+  .req-jump-m {
+    display: none;
+  }
+}
+
+.req-jump-m summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-block-size: 3rem;
+  padding-inline: 1rem;
+  color: var(--on-accent-container);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.req-jump-m summary::-webkit-details-marker {
+  display: none;
+}
+
+.req-jump-m summary svg {
+  inline-size: 1rem;
+  block-size: 1rem;
+  transition: rotate 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.req-jump-m[open] summary svg {
+  rotate: 180deg;
+}
+
+.req-jump-m ol {
+  max-block-size: 56dvh;
+  overflow-y: auto;
+  padding-block: 0.25rem 0.5rem;
+  padding-inline: 0.5rem;
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+html:has(.req-jump-m) {
+  scroll-padding-block-start: 4.5rem;
+}
+
+@media (min-width: 60rem) {
+  html:has(.req-jump-m) {
+    scroll-padding-block-start: 1rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Requirements page: tiles                                            */
+/* ------------------------------------------------------------------ */
+.theme-v2 .req-timeline {
+  gap: 0.75rem;
+}
+
+.theme-v2 .req-card {
+  display: block;
+  --req-num: 2.125rem;
+  --req-pad: 1.75rem;
+}
+
+.theme-v2 .req-card::before {
+  content: none;
+}
+
+/* The number hangs in the tile's left gutter, like a numbered list. */
+.theme-v2 .req-card .req-card__node {
+  position: absolute;
+  inset-block-start: 1.375rem;
+  inset-inline-start: var(--req-pad);
+  z-index: 1;
+  inline-size: var(--req-num);
+  block-size: 2rem;
+  justify-content: flex-start;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--accent);
+}
+
+.theme-v2 .req-card__node-text {
+  font-size: 1.625rem;
+  line-height: 2rem;
+  font-weight: 700;
+  transform: none;
+}
+
+.theme-v2 .req-card__node-text::after {
+  content: ".";
+}
+
+.theme-v2 .req-card__panel {
+  max-inline-size: none;
+  padding-block: 1.375rem 1.5rem;
+  padding-inline: calc(var(--req-pad) + var(--req-num)) var(--req-pad);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  box-shadow: none;
+  transition: border-color 0.15s ease;
+}
+
+.theme-v2 .req-card:hover .req-card__panel,
+.theme-v2.dark .req-card:hover .req-card__panel,
+.dark .theme-v2 .req-card:hover .req-card__panel {
+  border-color: var(--outline);
+}
+
+.theme-v2 .req-card:has(.req-child:hover) > .req-card__panel {
+  border-color: var(--outline-variant);
+}
+
+.theme-v2 .req-card[data-selected] > .req-card__panel,
+html.theme-v2:not([data-js]) .req-card:has(> .req-card__panel > .req-card__header :target) > .req-card__panel {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-container);
+}
+
+.theme-v2 .req-card:hover > .req-card__node,
+.theme-v2 .req-card[data-selected] > .req-card__node,
+.theme-v2 .req-card:has(.req-child:hover) > .req-card__node {
+  background: none;
+  color: var(--accent);
+}
+
+.theme-v2 .req-card__title {
+  font-size: 1.625rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--accent);
+}
+
+/* A "verbatim" title is Scouting America's own sentence promoted into
+   the heading slot, so it reads as official text, not as our label. */
+.theme-v2 .req-card__title--verbatim {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--on-surface);
+}
+
+.theme-v2 .req-card__text,
+.theme-v2 .req-child__text {
+  max-inline-size: 62ch;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--on-surface);
+}
+
+.theme-v2 .req-card__text {
+  margin-block-start: 0.375rem;
+}
+
+/* Sub-requirements: plain rows under a hairline. */
+.theme-v2 .req-children--rail,
+.theme-v2 .req-children--options {
+  margin-block-start: 0.875rem;
+  padding-inline-start: 0;
+  gap: 0;
+}
+
+.theme-v2 .req-child {
+  outline: none;
+  border-radius: var(--radius-md);
+  transition: background-color 0.15s ease;
+}
+
+.theme-v2 .req-child--rail,
+.theme-v2 .req-child--options {
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.375rem;
+  margin-inline: -0.625rem;
+  padding-block: 0.625rem;
+  padding-inline: 0.625rem;
+  border-block-start: 0;
+}
+
+.theme-v2 .req-children--options > .req-child:first-child {
+  padding-block-start: 0.625rem;
+}
+
+.theme-v2 .req-child:hover,
+.theme-v2 .req-child:focus-visible {
+  outline: none;
+  background: var(--surface);
+}
+
+.theme-v2 .req-child:has(.req-child:hover) {
+  background: none;
+}
+
+.theme-v2 .req-child[data-selected],
+.theme-v2.dark .req-child[data-selected],
+.dark .theme-v2 .req-child[data-selected] {
+  outline: none;
+  background: var(--accent-container);
+}
+
+.theme-v2 .req-child:has(.req-child[data-selected]) {
+  background: none;
+}
+
+.theme-v2 .req-child:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-v2 .req-child__marker,
+.theme-v2 .req-child__ring {
+  display: inline;
+  inline-size: auto;
+  block-size: auto;
+  border: 0;
+  border-radius: 0;
+  color: var(--accent);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-child__title {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.theme-v2 .req-child__title--verbatim {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--on-surface);
+}
+
+.theme-v2 .req-child__text {
+  margin-block-start: 0;
+}
+
+.theme-v2 .req-child__body .req-children--rail {
+  margin-block-start: 0.25rem;
+  border-inline-start: 0;
+}
+
+.theme-v2 .req-child--chips {
+  background: var(--surface);
+  border: 1px solid var(--outline-variant);
+  font-size: 1rem;
+}
+
+.theme-v2 .req-pill {
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  border: 0;
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+@container req-main (max-width: 500px) {
+  .theme-v2 .req-card {
+    --req-num: 2rem;
+    --req-pad: 1.125rem;
+  }
+
+  .theme-v2 .req-card .req-card__node {
+    inset-block-start: 1.125rem;
+    inset-inline-start: var(--req-pad);
+    inline-size: var(--req-num);
+    block-size: 1.75rem;
+  }
+
+  .theme-v2 .req-card__node-text,
+  .theme-v2 .req-card__title {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+
+  .theme-v2 .req-card__title--verbatim {
+    font-size: 1.0625rem;
+  }
+
+  /* No room to hang the number on a phone: it sits beside the heading
+     and the text below runs the full width of the tile. */
+  .theme-v2 .req-card__panel {
+    padding-block: 1.125rem 1.25rem;
+    padding-inline: var(--req-pad);
+  }
+
+  .theme-v2 .req-card__header {
+    padding-inline-start: var(--req-num);
+    min-block-size: 1.75rem;
+  }
+
+  .theme-v2 .req-card__text,
+  .theme-v2 .req-child__text,
+  .theme-v2 .req-child__title--verbatim {
+    font-size: 1.0625rem;
+    line-height: 1.625rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Requirement dock and toast (behavior unchanged, see deep-link.ts)  */
+/* ------------------------------------------------------------------ */
+.theme-v2 .req-dock,
+.theme-v2.dark .req-dock,
+.dark .theme-v2 .req-dock {
+  gap: 0.25rem;
+  padding: 0.375rem;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  backdrop-filter: none;
+  box-shadow: 0 8px 24px -8px rgb(0 0 0 / 0.35);
+}
+
+.theme-v2 .req-dock__for {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-size: 1rem;
+}
+
+.theme-v2 .req-dock__for::after {
+  font-size: 1rem;
+  color: inherit;
+}
+
+.theme-v2 .req-dock__btn {
+  min-block-size: 2.75rem;
+  background: none;
+  color: var(--on-surface);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (min-width: 30rem) {
+  .theme-v2 .req-dock__btn {
+    font-size: 1rem;
+  }
+}
+
+.theme-v2 .req-dock__btn:hover,
+.theme-v2 .req-dock__btn:focus-visible {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+}
+
+.theme-v2 .req-toast {
+  background: var(--on-surface);
+  color: var(--surface-raised);
+  box-shadow: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Requirement actions, tethered                                       */
+/*                                                                     */
+/* Still ONE shared bar (req-dock.html) pointed by deep-link.ts, but   */
+/* where the browser can tether it, it sits inside the requirement it  */
+/* acts on instead of floating at the bottom of the screen. The        */
+/* selected requirement grows a strip for it, so the bar covers no     */
+/* text and needs no number chip to say what it applies to. Space is   */
+/* paid once, for the selected requirement only.                       */
+/*                                                                     */
+/* Without anchor positioning nothing here applies and the bar stays   */
+/* the bottom dock above.                                              */
+/* ------------------------------------------------------------------ */
+@supports (anchor-name: --a) and (position-anchor: --a) {
+  .theme-v2 .req-child[data-selected],
+  .theme-v2 .req-card[data-selected] > .req-card__panel {
+    anchor-name: --req-selected;
+    padding-block-end: 3.75rem;
+  }
+
+  .theme-v2 .req-dock,
+  .theme-v2.dark .req-dock,
+  .dark .theme-v2 .req-dock {
+    position: fixed;
+    position-anchor: --req-selected;
+    inset: auto;
+    inset-block-end: calc(anchor(bottom) + 0.5rem);
+    inset-inline-start: calc(anchor(start) + var(--req-dock-inset, 2.625rem));
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    translate: none;
+    scale: none;
+    transition: opacity 0.15s ease-out;
+  }
+
+  /* Line the buttons up with the text of whatever is selected: a
+     sub-requirement's text starts after its letter, a tile's after its
+     hanging number (or at the tile padding on a phone). */
+  html.theme-v2:has(.req-card[data-selected]) {
+    --req-dock-inset: 3.875rem;
+  }
+
+  @media (max-width: 36rem) {
+    html.theme-v2:has(.req-card[data-selected]) {
+      --req-dock-inset: 1.125rem;
+    }
+  }
+
+  .theme-v2 .req-dock__for {
+    display: none;
+  }
+
+  .theme-v2 .req-dock__btn {
+    border: 1px solid var(--outline);
+    background: var(--surface-raised);
+    color: var(--on-accent-container);
+  }
+
+  .theme-v2 .req-dock > * {
+    translate: none;
+    transition-delay: 0s !important;
+  }
+}
+
+@media print {
+  .page-head__tabs,
+  .page-head .breadcrumb {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Guide pages: layout                                                 */
+/*                                                                     */
+/* Same shape as the requirements page: page head, a list of pages on  */
+/* the left, one white tile to read, capped at a reading measure.      */
+/* ------------------------------------------------------------------ */
+.theme-v2 .req-page--guide .req-page-body {
+  padding-inline: 0;
+  padding-block-end: 3rem;
+}
+
+/* Wide screens (the page is wider there, see --page-max): a third
+   column fits, the official requirement, kept in view beside the
+   article. req-rail.ts swaps it as the reader passes each
+   requirement on the page. */
+@media (min-width: 87.5rem) {
+  .theme-v2 .req-page--guide .req-body-grid {
+    grid-template-columns: minmax(0, var(--read-max)) minmax(15rem, 21rem);
+    gap: 2rem;
+  }
+
+  .theme-v2 .req-page--guide .req-rail {
+    inset-block-start: 1rem;
+    max-block-size: calc(100dvh - 2rem);
+    scrollbar-width: thin;
+  }
+}
+
+/* A white tile on the gray ground, like the tiles on the requirements
+   page: dark text in a tile is official wording. */
+.theme-v2 .req-page--guide .req-rail__inner {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+}
+
+.theme-v2 .req-page--guide .req-rail__number {
+  display: block;
+  margin-block-end: 0.25rem;
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+.theme-v2 .req-page--guide .req-rail__number::before {
+  content: "Requirement ";
+}
+
+.theme-v2 .req-page--guide .req-rail__text {
+  color: var(--on-surface);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .req-page--guide .req-rail__text > :last-child {
+  margin-block-end: 0;
+}
+
+.theme-v2 .req-page--guide .req-content {
+  max-inline-size: var(--read-max);
+  padding: 1.25rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 40rem) {
+  .theme-v2 .req-page--guide .req-content {
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+.theme-v2 .req-page--guide .req-content > :first-child {
+  margin-block-start: 0;
+}
+
+/* Guide pages start their sections at h3 (the h1 is in the page head),
+   so h3 is the section size. Block titles carry a class and set their own. */
+.theme-v2 .req-page--guide .req-content :is(h2, h3, h4):not([class]) {
+  color: var(--on-surface);
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.theme-v2 .req-page--guide .req-content :is(h2, h3):not([class]) {
+  margin-block: 2.5rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+.theme-v2 .req-page--guide .req-content h4:not([class]) {
+  margin-block: 1.75rem 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+.theme-v2 .req-page--guide .req-content :is(p, ul, ol) {
+  margin-block: 0 1rem;
+}
+
+.theme-v2 .req-page--guide .req-content li + li {
+  margin-block-start: 0.375rem;
+}
+
+.theme-v2 .req-page--guide .req-content a:not([class]) {
+  color: var(--on-accent-container);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+/* Guide pages: the list of pages, desktop */
+.theme-v2 .req-page--guide .req-sidebar-wrap {
+  padding-inline: 0;
+}
+
+@media (min-width: 60rem) {
+  .theme-v2 .req-page--guide .req-sidebar-wrap {
+    position: sticky;
+    inset-block-start: 1rem;
+    max-block-size: calc(100dvh - 2rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--outline) transparent;
+  }
+}
+
+.theme-v2 .req-page--guide .req-sidebar {
+  gap: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.theme-v2 .req-nav__group-title,
+.theme-v2 .req-mobile-nav__group {
+  margin: 0;
+  padding-block: 1rem 0.25rem;
+  padding-inline: 0.5rem;
+  border: 0;
+  color: var(--on-surface-muted);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-nav__group-title:first-child,
+.theme-v2 .req-mobile-nav__group:first-child {
+  padding-block-start: 0;
+}
+
+.theme-v2 .req-nav__item {
+  margin: 0;
+}
+
+.theme-v2 .req-nav__link,
+.theme-v2 .req-mobile-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-block-size: 2.5rem;
+  padding-block: 0.375rem;
+  padding-inline: 0.5rem;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: none;
+  color: var(--on-surface);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.theme-v2 .req-nav__item--lettered .req-nav__link,
+.theme-v2 .req-mobile-nav__item--lettered .req-mobile-nav__link {
+  padding-inline-start: 0.5rem;
+}
+
+.theme-v2 .req-nav__marker,
+.theme-v2 .req-mobile-nav__marker {
+  min-inline-size: 1.5rem;
+  color: var(--on-accent-container);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+.theme-v2 .req-nav__link:hover,
+.theme-v2 .req-mobile-nav__link:hover {
+  background: var(--surface-sunken);
+}
+
+.theme-v2 .req-nav__link--active,
+.theme-v2 .req-nav__link--active:hover {
+  background: var(--surface-raised);
+  box-shadow: inset 0 0 0 1px var(--outline-variant);
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+.theme-v2 .req-mobile-nav__link--active {
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+  font-weight: 700;
+}
+
+.theme-v2 .req-nav__item--print,
+.theme-v2 .req-mobile-nav__item--print {
+  margin-block-start: 0.75rem;
+  padding-block-start: 0.75rem;
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+.theme-v2 .req-nav__link-icon,
+.theme-v2 .req-mobile-nav__link-icon {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  color: var(--on-accent-container);
+}
+
+/* Guide pages: the list of pages, phone. Same control as the
+   requirements page's "Jump to a requirement". */
+.theme-v2 .req-page--guide .req-mobile-nav-wrap {
+  inset-block-start: 0.5rem;
+  margin-block-end: 0.75rem;
+  padding-inline: 0;
+}
+
+.theme-v2 .req-mobile-nav {
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  box-shadow:
+    0 -0.5rem 0 var(--surface),
+    0 6px 14px -8px rgb(0 0 0 / 0.35);
+}
+
+.theme-v2 .req-mobile-nav__toggle,
+.dark .theme-v2 .req-mobile-nav__toggle,
+.theme-v2.dark .req-mobile-nav__toggle {
+  justify-content: space-between;
+  min-block-size: 3rem;
+  padding-block: 0;
+  padding-inline: 1rem;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--on-accent-container);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-mobile-nav__chevron,
+.dark .theme-v2 .req-mobile-nav__chevron {
+  margin-inline-start: auto;
+  color: inherit;
+}
+
+.theme-v2 .req-mobile-nav__menu {
+  position: static;
+  max-block-size: 56dvh;
+  margin: 0;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  overflow-y: auto;
+  border: 0;
+  border-block-start: 1px solid var(--outline-variant);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.theme-v2 .req-mobile-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Guide pages: blocks                                                 */
+/* ------------------------------------------------------------------ */
+
+/* Official wording sits in a gray box, the only gray box in the tile. */
+.theme-v2 .req-page--guide .req-requirement {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.625rem;
+  margin-block: 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.theme-v2 .req-page--guide .req-content > :not(.req-requirement) + .req-requirement {
+  margin-block-start: 2.5rem;
+}
+
+.theme-v2 .req-page--guide .req-requirement--sub {
+  margin-inline-start: 0;
+}
+
+.theme-v2 .req-page--guide .req-requirement__number {
+  color: var(--on-accent-container);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.theme-v2 .req-page--guide .req-requirement__text {
+  color: var(--on-surface);
+}
+
+/* Callouts: a tinted tile, color in the icon and title only. */
+.theme-v2 .req-callout {
+  margin-block: 1.5rem;
+  padding: 1.125rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  box-shadow: none;
+  color: var(--on-surface);
+}
+
+.theme-v2 .req-callout .req-callout__header {
+  gap: 0.625rem;
+}
+
+.theme-v2 .req-callout .req-callout__title {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-callout .req-callout__icon {
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+  align-self: start;
+}
+
+.theme-v2 .req-callout .req-callout__body {
+  margin-block-start: 0.5rem;
+}
+
+.theme-v2 .req-callout--tip {
+  --callout-ink: var(--on-accent-container);
+  background: var(--accent-container);
+}
+
+.theme-v2 .req-callout--fact {
+  --callout-ink: var(--on-accent-container);
+  background: var(--accent-container);
+}
+
+.theme-v2 .req-callout--safety {
+  --callout-ink: var(--error);
+  background: var(--error-container);
+}
+
+.theme-v2 .req-callout--prepared {
+  --callout-ink: var(--on-amber-container);
+  background: var(--amber-container);
+}
+
+.theme-v2 .req-callout .req-callout__title,
+.theme-v2 .req-callout .req-callout__icon {
+  color: var(--callout-ink);
+}
+
+/* Checklist */
+.theme-v2 .req-checklist {
+  margin-block: 1.5rem;
+  border-color: var(--outline-variant);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+.theme-v2 .req-checklist .req-checklist__summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 1rem;
+  align-items: center;
+  padding: 0.875rem 1.25rem;
+  background: none;
+}
+
+.theme-v2 .req-checklist[open] .req-checklist__summary {
+  border-block-end: 1px solid var(--outline-variant);
+}
+
+.theme-v2 .req-checklist .req-checklist__summary:hover {
+  background: var(--accent-container);
+}
+
+.theme-v2 .req-checklist .req-checklist__title {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .req-checklist .req-checklist__subtitle {
+  grid-column: 1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .req-checklist .req-checklist__arrow {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.theme-v2 .req-checklist .req-checklist__content {
+  padding: 1.25rem;
+}
+
+/* Pictures, video, links out */
+.theme-v2 .req-illustration,
+.theme-v2 .req-video {
+  margin-block: 1.75rem;
+  margin-inline: 0;
+}
+
+.theme-v2 .req-illustration {
+  border-color: var(--outline-variant);
+  border-radius: var(--radius-md);
+}
+
+.theme-v2 .req-video .req-video__iframe {
+  border-radius: var(--radius-md);
+}
+
+.theme-v2 .req-video .req-video__caption,
+.theme-v2 .req-illustration figcaption {
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.theme-v2 :is(.req-external-link, .req-download, .req-related-guide, .req-experience-card, .req-org-card) {
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+/* Hover changes the border color and nothing else. */
+.theme-v2 :is(.req-external-link, .req-download, .req-related-guide, .req-experience-card, .req-org-card):hover {
+  border-color: var(--accent);
+}
+
+/* The way on: a plain sentence and one link, then Previous / Next. */
+.theme-v2 .req-next-page {
+  margin-block: 2.5rem 0;
+  padding: 1.5rem 0 0;
+  border-block-start: 1px solid var(--outline-variant);
+  border-radius: 0;
+  background: none;
+  text-align: start;
+}
+
+.theme-v2 .req-next-page .req-next-page__bridge {
+  margin-block-end: 0.75rem;
+  font-size: inherit;
+}
+
+.theme-v2 .req-next-page .req-next-page__cta {
+  inline-size: auto;
+  justify-content: flex-start;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.theme-v2 .req-footer-nav {
+  margin-block: 1.5rem 0;
+}
+
+.theme-v2 .req-footer-nav__link,
+.dark .theme-v2 .req-footer-nav__link,
+.theme-v2.dark .req-footer-nav__link {
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  background: none;
+  box-shadow: none;
+}
+
+.theme-v2 .req-footer-nav__link:hover,
+.dark .theme-v2 .req-footer-nav__link:hover {
+  border-color: var(--accent);
+}
+
+/* Places to go and organizations: rows under a hairline, not cards
+   inside the tile. */
+.theme-v2 .req-page--guide :is(.req-experience-card, .req-org-card) {
+  margin-block: 0;
+  padding: 1rem 0;
+  border: 0;
+  border-block-start: 1px solid var(--outline-variant);
+  border-radius: 0;
+  background: none;
+}
+
+.theme-v2 .req-page--guide .req-experience-card:has(.req-experience-card__image) {
+  gap: 0.75rem;
+}
+
+.theme-v2 .req-experience-card .req-experience-card__image {
+  border-radius: var(--radius-md);
+}
+
+.theme-v2 .req-experience-card .req-experience-card__title {
+  margin: 0 0 0.25rem;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-experience-card .req-experience-card__details {
+  padding: 0;
+}
+
+.theme-v2 .req-experience-card .req-experience-card__details,
+.theme-v2 .req-org-card .req-org-card__description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .req-experience-card .req-experience-card__details > :last-child {
+  margin-block-end: 0;
+}
+
+.theme-v2 .req-org-card .req-org-card__name {
+  color: var(--on-accent-container);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+/* Phone: the tile's own padding is enough gutter. */
+@media (max-width: 39.99rem) {
+  .theme-v2 .req-page--guide .req-content {
+    padding: 1rem;
+  }
+
+  .theme-v2 .req-page--guide .req-requirement {
+    padding: 0.875rem 1rem;
+  }
+
+  .theme-v2 .req-page--guide .req-mobile-nav-wrap {
+    margin-block-end: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Award overview page                                                 */
+/*                                                                     */
+/* Page head, then the picture and the list of requirements, with      */
+/* downloads and links beside them. An optional flag ("Eagle           */
+/* required") sits beside the title; the requirement count sits       */
+/* beside the heading of the list of requirements.                     */
+/* ------------------------------------------------------------------ */
+.theme-v2 .req-page--landing {
+  row-gap: 1.25rem;
+  padding-block-end: 3rem;
+}
+
+@media (min-width: 60rem) {
+  .theme-v2 .req-page--landing {
+    grid-template-columns: minmax(0, var(--read-max)) 20rem;
+  }
+}
+
+.theme-v2 .badge-photo {
+  margin: 0 0 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-sunken);
+}
+
+.theme-v2 .badge-photo img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (min-width: 40rem) {
+  .theme-v2 .badge-photo img {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+.theme-v2 .req-page--landing :is(.badge-preview, .badge-resources) {
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  box-shadow: none;
+}
+
+.theme-v2 .req-page--landing :is(.badge-preview__heading, .badge-resources__heading) {
+  margin: 0 0 0.5rem;
+  color: var(--on-surface);
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-page--landing .badge-preview__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-v2 .req-page--landing .badge-preview__item + .badge-preview__item {
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+.theme-v2 .req-page--landing .badge-preview__link {
+  display: grid;
+  grid-template-columns: 2.125rem minmax(0, 1fr);
+  align-items: baseline;
+  margin-inline: -0.75rem;
+  padding: 0.875rem 0.75rem;
+  border-radius: var(--radius-md);
+  color: inherit;
+  text-decoration: none;
+}
+
+.theme-v2 .req-page--landing .badge-preview__link:hover {
+  background: var(--surface);
+}
+
+.theme-v2 .req-page--landing .badge-preview__node {
+  color: var(--on-accent-container);
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.theme-v2 .req-page--landing .badge-preview__text {
+  display: block;
+}
+
+.theme-v2 .req-page--landing .badge-preview__title {
+  display: block;
+  color: var(--on-accent-container);
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+}
+
+.theme-v2 .req-page--landing .badge-preview__link:hover .badge-preview__title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.theme-v2 .req-page--landing .badge-preview__snippet {
+  display: block;
+  margin-block-start: 0.125rem;
+  color: var(--on-surface);
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .req-page--landing .badge-resources__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-v2 .req-page--landing .badge-resources__link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  min-block-size: 2.75rem;
+  margin-inline: -0.5rem;
+  padding: 0.375rem 0.5rem;
+  border-radius: var(--radius-md);
+  color: var(--on-accent-container);
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.theme-v2 .req-page--landing .badge-resources__link:hover {
+  background: var(--surface);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.theme-v2 .req-page--landing .badge-resources__icon {
+  flex: none;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+@media (min-width: 60rem) {
+  .theme-v2 .badge-aside {
+    position: sticky;
+    inset-block-start: 1rem;
+  }
+}
+
+/* The one-sentence description opens the page body, not the head. */
+.theme-v2 .badge-intro {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-wrap: pretty;
+}
+
+.theme-v2 .req-page--landing .badge-preview__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+
+.theme-v2 .badge-preview__count {
+  color: var(--on-surface-muted);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------ */
+/* Index pages: search in the head, sections of link tiles             */
+/* ------------------------------------------------------------------ */
+.page-head__wrap:has(.page-search) {
+  padding-block: 2rem 2.25rem;
+}
+
+.page-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-inline-size: 40rem;
+  margin-block-start: 1.25rem;
+  padding-block: 0.375rem;
+  padding-inline: 1rem 0.375rem;
+  border: 1.5px solid var(--outline);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+}
+
+.page-search:focus-within {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.page-search__icon {
+  flex: none;
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  color: var(--on-surface-muted);
+}
+
+.page-search__input {
+  flex: 1;
+  min-inline-size: 0;
+  min-block-size: 2.75rem;
+  border: 0;
+  background: none;
+  color: var(--on-surface);
+  font: inherit;
+  font-size: 1.125rem;
+}
+
+.page-search__input:focus {
+  outline: none;
+}
+
+.page-search__input::placeholder {
+  color: var(--on-surface-muted);
+  opacity: 1;
+}
+
+.page-search__submit {
+  flex: none;
+  min-block-size: 2.75rem;
+  padding-inline: 1.25rem;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.page-search__submit:hover {
+  background: var(--on-accent-container);
+}
+
+.page-search__submit:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* The head already has the search field; the masthead need not repeat it. */
+html.theme-v2:has(.page-search) .navbar__search {
+  display: none;
+}
+
+.index-page {
+  max-inline-size: var(--page-max);
+  margin-inline: auto;
+  padding-block: 0.5rem 4rem;
+  padding-inline: var(--page-gutter);
+}
+
+.index-section__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1.5rem;
+  margin-block: 2.25rem 1rem;
+}
+
+.index-section__title {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: var(--on-surface);
+  text-align: start;
+}
+
+.index-section__more {
+  color: var(--on-accent-container);
+  font-size: 1rem;
+  font-weight: 600;
+  text-underline-offset: 0.2em;
+}
+
+.link-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: 0.75rem;
+}
+
+.link-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-block-size: 4rem;
+  padding-block: 0.625rem;
+  padding-inline: 0.75rem 0.625rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  color: var(--on-surface);
+  text-decoration: none;
+}
+
+.link-tile:hover {
+  border-color: var(--accent);
+}
+
+.link-tile:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.link-tile__icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  border-radius: var(--radius-md);
+  background: var(--accent-container);
+  color: var(--on-accent-container);
+}
+
+.link-tile__icon svg {
+  inline-size: 1.375rem;
+  block-size: 1.375rem;
+}
+
+.link-tile__text {
+  flex: 1;
+  min-inline-size: 0;
+  display: grid;
+}
+
+.link-tile__title {
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+}
+
+.link-tile__meta {
+  color: var(--on-surface-muted);
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+}
+
+.link-tile__chevron {
+  flex: none;
+  inline-size: 1rem;
+  block-size: 1rem;
+  color: var(--on-surface-muted);
+}
+
+.link-tile:hover .link-tile__chevron {
+  color: var(--accent);
+}
+
+/* Phones: the icon gives its room to the placeholder. */
+@media (max-width: 29.99rem) {
+  .page-search {
+    padding-inline-start: 0.75rem;
+  }
+
+  .page-search__icon {
+    display: none;
+  }
+
+  .page-search__input {
+    font-size: 1rem;
+  }
+
+  .page-search__submit {
+    padding-inline: 0.875rem;
+  }
+}
+
+/* An index page may put one picture beside its title on wide screens.
+   Below that width the picture is dropped, not stacked, so the search
+   field and the list stay near the top. */
+.page-head__media {
+  display: none;
+}
+
+@media (min-width: 60rem) {
+  .page-head__wrap:has(.page-head__media) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 1fr auto 1fr;
+    column-gap: 3rem;
+    padding-block: 2rem;
+  }
+
+  .page-head__wrap:has(.page-head__media) > * {
+    grid-column: 1;
+  }
+
+  .page-head__wrap:has(.page-head__media) > .page-head__title {
+    align-self: end;
+    font-size: clamp(2.25rem, 1.5rem + 3vw, 3.25rem);
+  }
+
+  .page-head__wrap:has(.page-head__media) > .page-search {
+    align-self: start;
+  }
+
+  .page-head__wrap > .page-head__media {
+    display: block;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    block-size: 17rem;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+  }
+
+  .page-head__media img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Title with a flag beside it; the flag wraps under a long title. */
+.page-head__title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem 0.875rem;
+  margin-block: 0.375rem 0;
+}
+
+.page-head__title-row > .page-head__title {
+  flex: 0 1 auto;
+  inline-size: auto;
+  min-inline-size: 0;
+  margin: 0;
+}
+
+.page-head__title-row > .page-head__flag {
+  margin-inline-start: 0;
+}
+
+/* ==========================================================================
+   mbu listing pages: /merit-badges/, Eagle-required, categories
+   ========================================================================== */
+
+/* Index pages (home included) run edge to edge: the page head band
+   spans the window and .index-page sets the measure. Opt in with
+   {{ define "main-class" }}index-main{{ end }}. */
+.index-main {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+}
+
+/* Two cross-links side by side in a section head; they wrap under the
+   title on a phone. */
+.index-section__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+.index-section__links > .index-section__more {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+}
+
+/* A short paragraph of page copy above the first section. */
+.index-intro {
+  max-inline-size: var(--read-max);
+  margin-block: 1.5rem 0;
+  color: var(--on-surface);
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+}
+
+.index-intro > p {
+  margin-block: 0 0.5rem;
+}
+
+.index-intro a {
+  color: var(--on-accent-container);
+  font-weight: 600;
+  text-underline-offset: 0.2em;
+}
+
+/* A small group of tiles under one section, e.g. an Eagle "choose one"
+   group. Space between groups, not boxes, keeps them apart. */
+.index-group + .index-group {
+  margin-block-start: 1.75rem;
+}
+
+.index-group__title {
+  margin-block: 0 0.75rem;
+  font-size: 1.1875rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+  color: var(--on-surface);
+  text-align: start;
+}
+
+/* ------------------------------------------------------------------ */
+/* scouting-u package: rank tiles, prose pages, rank pages             */
+/* ------------------------------------------------------------------ */
+
+/* A step number in the tile's icon box (link-tile.html `marker`). */
+.link-tile__marker {
+  font-size: 1.125rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+/* prose-page.html: the guide's reading tile, one column, no page list. */
+.theme-v2 .req-page--prose {
+  grid-template-columns: minmax(0, 1fr);
+  padding-block-end: 3rem;
+}
+
+.theme-v2 .req-page--prose .req-content {
+  overflow-wrap: break-word;
+}
+
+/* A heading that opens the tile needs no space above it (guides too). */
+.theme-v2 .req-page--guide .req-content > :is(h2, h3, h4):first-child {
+  margin-block-start: 0;
+}
+
+/* Tiles straight under the page head, with no section heading. */
+.index-page > .link-tiles:first-child {
+  margin-block-start: 1.5rem;
+}
+
+/* On an index page the prose follows the tiles. */
+.index-page:has(+ .req-page--prose) {
+  padding-block-end: 2rem;
+}
+
+.index-page + .req-page--prose {
+  padding-block-start: 0;
+}
+
+/* A section's "more" link is a 44px target like every other link. */
+.index-section__head > .index-section__more {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+}
+
+/* Official notes that belong to the whole list, not one requirement:
+   one before the tiles, one after them. */
+.theme-v2 .req-page-note {
+  margin-block: 0 1.25rem;
+  color: var(--on-surface);
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+}
+
+.theme-v2 .req-page-note--after {
+  margin-block: 2rem 0;
+  color: var(--on-surface-muted);
+}
+
+/* Guide page lists: each page link is a 44px target. */
+.theme-v2 .req-page--guide :is(.req-nav__link, .req-mobile-nav__link) {
+  min-block-size: 2.75rem;
+}
+
+/* A related-guide block names its kind under the title, in plain
+   words. */
+.theme-v2 .req-related-guide__eyebrow {
+  order: 1;
+  color: var(--on-surface-muted);
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------ */
+/* Site chrome, search, 404                                            */
+/* ------------------------------------------------------------------ */
+
+/* Footer: plain, on white like the page head, content on the page wrap. */
+.theme-v2 .footer {
+  padding-block: 2.5rem 1.5rem;
+  padding-inline: var(--page-gutter);
+  background: var(--surface-raised);
+  border-block-start: 1px solid var(--outline-variant);
+}
+
+.theme-v2 .footer__main,
+.theme-v2 .footer__bottom {
+  max-inline-size: calc(var(--page-max) - 2 * var(--page-gutter));
+  margin-inline: auto;
+}
+
+.theme-v2 .footer__main {
+  gap: 2rem;
+  padding-block-end: 0;
+  border: 0;
+}
+
+.theme-v2 .footer__brand-title {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 800;
+}
+
+.theme-v2 .footer__tagline {
+  max-inline-size: 36ch;
+  margin-block: 0.25rem 0;
+  color: var(--on-surface-muted);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .footer__nav {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 9rem), 1fr));
+  gap: 1.5rem;
+}
+
+.theme-v2 .footer__col-title {
+  margin-block: 0 0.25rem;
+  color: var(--on-surface);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.theme-v2 .footer__links {
+  gap: 0;
+}
+
+.theme-v2 .footer__links a {
+  display: flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  color: var(--on-accent-container);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.theme-v2 .footer__links a:hover {
+  color: var(--on-accent-container);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.theme-v2 .footer a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.theme-v2 .footer__bottom {
+  display: block;
+  margin-block-start: 2rem;
+  padding-block-start: 1.25rem;
+  border-block-start: 1px solid var(--outline-variant);
+  color: var(--on-surface-muted);
+  font-size: 0.9375rem;
+  text-align: start;
+}
+
+/* One row of columns, however many a site has. */
+@container footer (width > 48rem) {
+  .theme-v2 .footer__nav {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(9rem, max-content);
+    column-gap: 3rem;
+  }
+}
+
+@container footer (width > 70rem) {
+  .theme-v2 .footer__main {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .theme-v2 .footer__nav {
+    justify-self: end;
+  }
+}
+
+/* Phone menu: a flat sheet under the masthead, on the page gutter. */
+@container header (max-width: 59.99rem) {
+  .theme-v2 .navbar__menu-content:popover-open,
+  .theme-v2 .navbar--open .navbar__menu-content {
+    inset-block-start: calc(3.75rem + 3px + 0.5rem);
+    inset-inline: var(--page-gutter);
+    max-inline-size: none;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem 1rem;
+    border: 1px solid var(--outline);
+    border-radius: var(--radius-lg);
+    background: var(--surface-raised);
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .theme-v2 .navbar__menu-content .navbar__nav {
+    gap: 0;
+  }
+
+  .theme-v2 .navbar__menu-content .navbar__nav > li {
+    border-block-end: 1px solid var(--outline-variant);
+  }
+
+  .theme-v2 .navbar__menu-content .navbar__nav > .active .navbar__link {
+    color: var(--on-accent-container);
+    font-weight: 800;
+  }
+
+  .theme-v2 .navbar__menu-content .navbar__link {
+    display: flex;
+    align-items: center;
+    min-block-size: 2.75rem;
+    padding-block: 0;
+    color: var(--on-surface);
+    font-size: 1.0625rem;
+  }
+
+  .theme-v2 .navbar__menu-content .navbar__link:hover {
+    color: var(--on-accent-container);
+  }
+
+  .theme-v2 .navbar__menu-content .navbar__cta {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  /* With no menu links the menu would hold only the call to action,
+     so it stays in the masthead and the Menu button goes. */
+  .theme-v2 .navbar:not(:has(.navbar__nav > li)) .navbar__mobile-menu {
+    display: none;
+  }
+
+  .theme-v2 .navbar:not(:has(.navbar__nav > li)) .navbar__menu-content {
+    display: flex;
+    position: static;
+    inset: auto;
+    order: 2;
+    gap: 0;
+    overflow: visible;
+    background: none;
+  }
+
+  .theme-v2 .navbar:not(:has(.navbar__nav > li)) .navbar__nav {
+    display: none;
+  }
+
+  .theme-v2 .navbar:not(:has(.navbar__nav > li)) .navbar__controls {
+    order: 1;
+    margin-inline-start: auto;
+  }
+}
+
+.theme-v2 .navbar__link:focus-visible,
+.theme-v2 .navbar__logo:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.theme-v2 .navbar .button:focus-visible,
+.theme-v2 .navbar__theme-toggle:has(input:focus-visible) {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.theme-v2 .navbar__menu-content:popover-open .navbar__link:focus-visible,
+.theme-v2 .navbar__menu-content:popover-open .button:focus-visible {
+  outline-color: var(--accent);
+}
+
+/* Search and 404: full-width shells, like the home page. */
+.theme-v2 .main:has(> .search-page),
+.theme-v2 .main:has(> .not-found) {
+  --container-max-width: 100%;
+  --container-padding-inline: 0;
+  padding-block-end: 0;
+}
+
+.theme-v2 .search-header {
+  margin: 0;
+  text-align: start;
+}
+
+.theme-v2 .search-description {
+  font-size: 1.125rem;
+}
+
+/* As wide as the results column below it. */
+.theme-v2 .search__form.page-search {
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  max-inline-size: var(--read-max);
+}
+
+.theme-v2 .search__input.page-search__input,
+.theme-v2 .search__input.page-search__input:focus {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  font-size: 1.125rem;
+}
+
+/* The field's ring is for the field; its buttons ring themselves. */
+.theme-v2 .search__form.page-search:not(:has(.page-search__input:focus)) {
+  border-color: var(--outline);
+  outline: none;
+}
+
+/* The Clear button does this job, once. */
+.theme-v2 .search__input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.theme-v2 .search__clear {
+  flex: none;
+  min-block-size: 2.75rem;
+  padding-block: 0;
+  padding-inline: 0.75rem;
+  border-radius: var(--radius-md);
+  background: none;
+  color: var(--on-surface-muted);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.theme-v2 .search__clear:hover {
+  background: var(--surface-sunken);
+  color: var(--on-surface);
+}
+
+.theme-v2 .search__clear:focus-visible {
+  background: none;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.search-page__body {
+  max-inline-size: var(--page-max);
+  margin-inline: auto;
+  padding-block: 1.5rem 4rem;
+  padding-inline: var(--page-gutter);
+}
+
+.search-page__body > * {
+  max-inline-size: var(--read-max);
+}
+
+.theme-v2 .search__message {
+  margin-block: 0 1rem;
+  padding: 0;
+  color: var(--on-surface-muted);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* One tile per badge: a small picture and the name, then one row per
+   matching requirement under a hairline. */
+.theme-v2 .award-result {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr);
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-block-end: 0.75rem;
+  padding-block-start: 0.75rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  box-shadow: none;
+}
+
+.theme-v2 .award-result__body {
+  display: contents;
+}
+
+.theme-v2 .award-result__emblem {
+  position: relative;
+  inset: auto;
+  grid-column: 1;
+  grid-row: 1;
+  flex: none;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  max-inline-size: none;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--accent-container);
+}
+
+.theme-v2 .award-result__title {
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  min-block-size: 0;
+  margin: 0;
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
+  text-align: start;
+}
+
+html.theme-v2 .award-result__title a {
+  display: flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  color: var(--on-surface);
+  font-weight: 800;
+}
+
+html.theme-v2 .award-result__title a:hover {
+  color: var(--on-accent-container);
+}
+
+html.theme-v2 .award-result__title a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.theme-v2 .award-result__requirements {
+  grid-column: 1 / -1;
+  gap: 0;
+  margin-block-start: 0.75rem;
+  margin-inline: -1rem;
+}
+
+.theme-v2 .requirement-result {
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+  border: 0;
+  border-block-start: 1px solid var(--outline-variant);
+  border-radius: 0;
+  background: none;
+}
+
+.theme-v2 .requirement-result:last-child {
+  border-end-start-radius: var(--radius-lg);
+  border-end-end-radius: var(--radius-lg);
+}
+
+.theme-v2 .requirement-result:hover {
+  border-color: var(--outline-variant);
+  background: var(--surface);
+}
+
+.theme-v2 .requirement-result:has(a:focus-visible) {
+  border-color: var(--outline-variant);
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.theme-v2 .requirement-result__title {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+html.theme-v2 .requirement-result__path {
+  color: var(--accent);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.theme-v2 .requirement-result__excerpt {
+  margin-block: 0.25rem 0;
+  color: var(--on-surface-muted);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.theme-v2 .requirement-result__excerpt mark {
+  padding-inline: 0.125em;
+  background: var(--accent-wash-strong);
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
+html.theme-v2 .search__more {
+  inline-size: 100%;
+  min-block-size: 2.75rem;
+  margin-block-start: 0.25rem;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  color: var(--on-accent-container);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: none;
+}
+
+html.theme-v2 .search__more:hover {
+  border-color: var(--accent);
+  background: var(--surface-raised);
+  color: var(--on-accent-container);
+}
+
+html.theme-v2 .search__more:active {
+  transform: none;
+}
+
+html.theme-v2 .search__more:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Package: print                                                      */
+/*                                                                     */
+/* The two print pages (the whole guide, a worksheet) on screen: page  */
+/* head with a Print button, one reading column. Then paper: Scouts    */
+/* print requirements and guides for their counselor, so every page   */
+/* prints black on white, title and content only, no site chrome.      */
+/* ------------------------------------------------------------------ */
+.page-head__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+
+.theme-v2 .req-print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-block-size: 2.75rem;
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 1.25rem;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: none;
+}
+
+.theme-v2 .req-print-btn:hover {
+  background: var(--on-accent-container);
+  filter: none;
+}
+
+.theme-v2 .req-print-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-v2 .req-print-btn__icon {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+  fill: currentColor;
+}
+
+/* One reading column, no side list: these pages have nothing beside it. */
+.theme-v2 .req-page--print {
+  grid-template-columns: minmax(0, var(--read-max));
+  padding-block-end: 3rem;
+}
+
+.theme-v2 .req-page--worksheet .req-content {
+  max-inline-size: var(--read-max);
+  padding: 1.25rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+}
+
+@media (min-width: 40rem) {
+  .theme-v2 .req-page--worksheet .req-content {
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+/* The page head carries the Print button; most worksheets also carry
+   their own in content, and one does not. */
+.theme-v2 .req-page--worksheet .req-worksheet__print-btn {
+  display: none;
+}
+
+.theme-v2 .req-page--worksheet .req-worksheet__back-link {
+  display: flex;
+  inline-size: fit-content;
+  min-block-size: 2.75rem;
+  margin-block-end: 0.5rem;
+  color: var(--on-accent-container);
+  font-weight: 600;
+}
+
+/* Some worksheets set an old gray inline; it fails contrast on dark. */
+.theme-v2 .req-worksheet > p[style] {
+  color: var(--on-surface-muted) !important;
+}
+
+/* The source URL is for paper only: a printout says where it came from. */
+.theme-v2 .req-print-header__url {
+  display: none;
+}
+
+/* A part of the guide: a real title over its pages, not a small label. */
+.theme-v2 .req-page--print .req-print-divider {
+  margin-block: 3rem 0;
+  padding-block-start: 1.5rem;
+  border-block-start: 2px solid var(--outline);
+  color: var(--on-accent-container);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+}
+
+.theme-v2 .req-page--print .req-print-divider:first-of-type {
+  margin-block-start: 0;
+  padding-block-start: 0;
+  border-block-start: 0;
+}
+
+.theme-v2 .req-page--print .req-print-section {
+  margin-block: 2rem 0;
+}
+
+.theme-v2 .req-page--print .req-print-section > h2:first-child {
+  margin-block-start: 0;
+}
+
+@media screen {
+  /* The page head already shows the worksheet's title and subtitle. */
+  .theme-v2 .req-page--worksheet :is(.req-worksheet__title, .req-worksheet__subtitle) {
+    display: none;
+  }
+}
+
+@media print {
+  /* standard.css's own light tokens are screen-only, so without this
+     paper falls back to tokens-v2's cream print palette. Same selectors
+     as that print block; later source order wins. */
+  .theme-v2,
+  .theme-v2.dark,
+  .dark .theme-v2,
+  html.theme-v2:has(#theme-toggle-checkbox:checked) {
+    --surface: #ffffff;
+    --surface-raised: #ffffff;
+    --surface-sunken: #ffffff;
+    --on-surface: #000000;
+    --on-surface-muted: #3d443f;
+    --accent: #36502d;
+    --accent-container: transparent;
+    --on-accent: #ffffff;
+    --on-accent-container: #36502d;
+    --secondary: #36502d;
+    --secondary-container: transparent;
+    --on-secondary-container: #36502d;
+    --outline: #9aa197;
+    --outline-variant: #c9cec5;
+    --card-border-subtle: #c9cec5;
+    --error: #a3271f;
+    --error-container: transparent;
+    --on-error-container: #000000;
+    --amber: #4f3d00;
+    --amber-container: transparent;
+    --on-amber-container: #4f3d00;
+    --accent-wash: transparent;
+    --accent-wash-strong: transparent;
+  }
+
+  html.theme-v2,
+  html.theme-v2 body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .theme-v2 * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Chrome and screen-only controls. */
+  .theme-v2 :is(
+      .header,
+      .footer,
+      .page-head .breadcrumb,
+      .page-head__tabs,
+      .page-head__actions,
+      .page-search,
+      .req-jump,
+      .req-jump-m,
+      .req-jump-key,
+      .req-jump-wrap .req-sidebar__meta a,
+      .req-sidebar-wrap,
+      .req-mobile-nav-wrap,
+      .req-rail,
+      .req-dock-stack,
+      .req-dock,
+      .req-toast,
+      .req-footer-nav,
+      .req-next-page,
+      .req-print-btn,
+      .req-worksheet__print-btn,
+      .req-worksheet__back-link,
+      .copy-link-btn,
+      .copy-text-btn,
+      .badge-photo,
+      .badge-resources,
+      .req-checklist__arrow
+    ) {
+    display: none !important;
+  }
+
+  /* The requirements page's footnote keeps its count and date: a
+     counselor can see which version of the text was printed. */
+  .theme-v2 .req-jump-wrap {
+    position: static;
+    max-block-size: none;
+    margin-block: 1rem 0;
+    overflow: visible;
+  }
+
+  .theme-v2 .req-jump-wrap .req-sidebar__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    padding: 0;
+    border: 0;
+  }
+
+  /* A worksheet prints its own title block, made for paper. */
+  .theme-v2 main:has(.req-page--worksheet) > .page-head {
+    display: none;
+  }
+
+  .theme-v2 .req-print-header__url {
+    display: block;
+    margin-block: 0 1.5rem;
+    color: var(--on-surface-muted);
+    font-size: 0.875rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* Full page width, one column, nothing sticky or clipped. */
+  .theme-v2 .main.container,
+  .theme-v2 .page-head__wrap,
+  .theme-v2 .req-page,
+  .theme-v2 .req-page--landing,
+  .theme-v2 .req-page--guide .req-page-body,
+  .theme-v2 .req-page--guide .req-body-grid,
+  .theme-v2 .req-main,
+  .theme-v2 .req-page--guide .req-content,
+  .theme-v2 .req-page--worksheet .req-content {
+    display: block;
+    max-inline-size: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .theme-v2 .page-head {
+    border: 0;
+    background: none;
+  }
+
+  .theme-v2 .page-head__wrap {
+    margin-block-end: 1.5rem;
+  }
+
+  .theme-v2 .page-head__title {
+    font-size: 1.75rem;
+  }
+
+  .theme-v2 .page-head__title span {
+    color: inherit;
+  }
+
+  .theme-v2 .page-head__flag {
+    border: 1px solid var(--outline);
+    background: none;
+  }
+
+  /* Tiles: a hairline, no fill. */
+  .theme-v2 :is(
+      .req-card,
+      .req-card__panel,
+      .card-surface,
+      .badge-preview,
+      .req-checklist,
+      .req-external-link,
+      .req-related-guide,
+      .req-requirement,
+      .req-experience-card,
+      .req-org-card
+    ) {
+    background: none !important;
+  }
+
+  .theme-v2 .req-callout {
+    border: 1px solid var(--outline);
+    background: none;
+  }
+
+  .theme-v2 .req-pill {
+    border: 1px solid var(--outline);
+    background: none;
+  }
+
+  .theme-v2 .req-worksheet__table th {
+    background: none;
+  }
+
+  /* Write-in boxes need lines a pencil can find. */
+  .theme-v2 .req-worksheet :is(table, th, td, .req-worksheet__writing-area, .req-worksheet__draw-area) {
+    border-color: var(--outline);
+  }
+
+  /* Closed checklists print open. */
+  .theme-v2 details::details-content {
+    content-visibility: visible;
+  }
+
+  .theme-v2 details > summary {
+    list-style: none;
+  }
+
+  /* Links read as links on paper; video and web links print their URL. */
+  .theme-v2 :is(.req-content, .requirements, .badge-intro) a:not([class]) {
+    color: var(--on-accent-container);
+    text-decoration: underline;
+  }
+
+  .theme-v2 :is(
+      .req-video__print-link,
+      .req-external-link__print-link,
+      .req-download__print-link,
+      .req-org-card__print-link,
+      .req-related-guide__print-link
+    ) {
+    display: block;
+    color: var(--on-surface-muted);
+    overflow-wrap: anywhere;
+  }
+
+  /* Page breaks: keep a heading with what follows, keep small blocks
+     whole. A whole requirement tile can run past a page, so only its
+     header and each sub-requirement are kept together. */
+  .theme-v2 :is(h1, h2, h3, h4, .req-card__header, .req-print-divider) {
+    break-after: avoid;
+  }
+
+  .theme-v2 :is(
+      .req-child,
+      .req-callout,
+      .req-requirement,
+      .req-external-link,
+      .req-video,
+      .req-experience-card,
+      .req-org-card,
+      .badge-preview__item,
+      .req-worksheet__section,
+      figure,
+      tr
+    ) {
+    break-inside: avoid;
+  }
+
+  .theme-v2 :is(p, li) {
+    orphans: 3;
+    widows: 3;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Package: consolidation                                              */
+/* ------------------------------------------------------------------ */
+
+/* A short page still fills the screen: the main area grows, so the
+   footer sits at the bottom and no gray shows below it. This replaces
+   layout.css's fixed minimum, which made short pages scroll on phones.
+   `.main` is an inline-size container, so as a flex item it needs an
+   explicit width (it would otherwise shrink to nothing). */
+@media screen {
+  html.theme-v2 body {
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100dvh;
+  }
+
+  html.theme-v2 body > .main {
+    flex: 1 0 auto;
+    inline-size: 100%;
+    min-block-size: 0;
+  }
+}
+
+/* A list that reaches 10 widens every number column, so "10." keeps
+   the same gap before its title as "9." does and the titles still line
+   up. */
+.theme-v2 .req-timeline:has(> .req-card:nth-child(10)) > .req-card {
+  --req-num: 3.125rem;
+}
+
+@container req-main (max-width: 500px) {
+  .theme-v2 .req-timeline:has(> .req-card:nth-child(10)) > .req-card {
+    --req-num: 2.875rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Package: review fixes                                               */
+/* ------------------------------------------------------------------ */
+
+/* A requirement with its own guide page ends in one quiet link to it
+   (req-guide-link.html). Not a button: olive text. The 44px target is
+   the ::after, so a page with dozens of these does not grow by 44px a
+   link. */
+.theme-v2 .req-guide-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-block-size: 1.5rem;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.theme-v2 .req-guide-link::after {
+  content: "";
+  position: absolute;
+  inset: -0.625rem -0.75rem;
+}
+
+.theme-v2 .req-guide-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.theme-v2 .req-guide-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.theme-v2 .req-guide-link__icon {
+  inline-size: 1em;
+  block-size: 1em;
+  flex-shrink: 0;
+}
+
+/* How to read the page. What a click does depends on the pointer
+   (deep-link.ts), so the key says the true one. */
+.req-key__touch {
+  display: none;
+}
+
+@media (hover: none) {
+  .req-key__fine {
+    display: none;
+  }
+
+  .req-key__touch {
+    display: inline;
+  }
+}
+
+/* Phones read the key above the first tile, since the rail with the
+   full key comes after the requirements there. */
+.req-key--brief {
+  display: none;
+}
+
+@media (max-width: 59.99rem) {
+  .req-key--brief {
+    display: block;
+    margin-block: 0 0.75rem;
+    color: var(--on-surface-muted);
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+
+  .req-key--brief b {
+    color: var(--on-accent-container);
+    font-weight: 700;
+  }
+
+  .req-jump-wrap .req-jump-key {
+    display: none;
+  }
+}
+
+/* Guide pages: where this page sits, with Previous / Next. */
+.theme-v2 .req-footer-nav {
+  flex-wrap: wrap;
+}
+
+.theme-v2 .req-footer-nav__count {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--on-surface-muted);
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+}
+
+/* Phones: the current page's crumb repeats the h1 right below it, so
+   it leaves the line (still read out, with aria-current) and the trail
+   stays on one line. */
+@media (max-width: 39.99rem) {
+  .page-head .breadcrumb__item--current {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .page-head .breadcrumb__item:nth-last-child(2) .breadcrumb__separator {
+    display: none;
+  }
+}
+
+/* Selected text and the text cursor take the palette. One pair for
+   every surface (masthead included), dark text on gold, so selected
+   links and muted text stay readable. */
+.theme-v2 ::selection {
+  background: var(--amber-container);
+  color: var(--on-amber-container);
+}
+
+/* The dark gold tint barely shows on dark tiles; dark uses the gold
+   line's own color instead. */
+.theme-v2.dark ::selection,
+.dark .theme-v2 ::selection {
+  background: var(--gold);
+  color: var(--on-accent);
+}
+
+.theme-v2 :is(input, textarea) {
+  caret-color: var(--accent);
+}
+
+@media print {
+  .theme-v2 :is(.req-guide-link, .req-key--brief) {
+    display: none !important;
+  }
+}
+
+/* The wordmark's link is as tall as the buttons beside it; center the
+   wordmark in it so the two line up. */
+.theme-v2 .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+/* One focus ring everywhere: 2px accent, offset. Zero specificity, so
+   the masthead's gold ring (accent does not show on olive) and any
+   component's own ring still win. */
+:where(.theme-v2) :where(a, button, summary, input, select, textarea):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* A selected sub-requirement drops its outline for the tint; keyboard
+   focus still gets the ring, in both themes. */
+.theme-v2 .req-child[data-selected]:focus-visible,
+.theme-v2.dark .req-child[data-selected]:focus-visible,
+.dark .theme-v2 .req-child[data-selected]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

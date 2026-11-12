@@ -146,7 +146,7 @@
 
 /* The rail keeps its full-bleed shape whether or not the award has art,
    so a mixed result list holds one grid. Award emblem art is a landscape
-   photo (mbu's badge-card/badge-hero render it at 16:9), not a circular
+   photo (mbu's badge pages show it at 16:9), not a circular
    patch, so `cover` crops it the same way the rest of the site does
    instead of letterboxing it inside the rail's requirement-count-driven
    height. */

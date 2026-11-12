@@ -15,7 +15,7 @@
 - [{{ .Title }}]({{ partial "llms/page-url.md" . }}): when to start each Eagle-required badge, 90-day time locks, and the choice groups
 {{- end }}
 {{- with site.GetPage "/merit-badges/eagle-required" }}
-- [{{ .Title }}]({{ partial "llms/page-url.md" . }}): the 14 badges a Scout needs for Eagle Scout, with the three choice groups
+- [{{ .Title }}]({{ partial "llms/page-url.md" . }}): the 13 badges a Scout needs for Eagle Scout, with the three choice groups
 {{- end }}
 
 ## Optional

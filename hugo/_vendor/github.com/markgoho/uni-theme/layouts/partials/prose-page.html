@@ -1,0 +1,19 @@
+{{/* prose-page.html
+
+  One reading column of Markdown content under the page head: the white
+  tile the guide pages use, without their list of pages. It borrows the
+  guide's wrapper classes so headings, tables, pictures and the drg/*
+  blocks look the same here as in a guide.
+
+  Params (dict):
+  content - the rendered content (.Content)                   (required)
+*/}}
+{{ with .content }}
+  <div class="req-page req-page--guide req-page--prose">
+    <div class="req-page-body">
+      <article class="req-content">
+        {{ . }}
+      </article>
+    </div>
+  </div>
+{{ end }}

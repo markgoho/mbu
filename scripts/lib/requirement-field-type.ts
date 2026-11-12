@@ -61,7 +61,8 @@ const ORAL_ACTION_EMBEDDED =
   /\b(?:give|lead|deliver|host|conduct|hold)\s+(?:a|an)\s+(?:\w+\s+){0,2}?(?:talk|speech|presentation|discussion|demonstration|debate|tour|skit|play|workshop|lesson|seminar)\b/i;
 
 // "Tell/describe how|why|about ..." is a long explanation, not a short answer.
-const TELL_LONG = /^(?:tell|state)\s+(?:how|why|what|where|when|about|the\s+story)\b/i;
+const TELL_LONG =
+  /^(?:tell|state)\s+(?:how|why|what|where|when|about|the\s+story)\b/i;
 // "Find out how|why|what ..." is a research/explanation prompt, not a one-liner.
 const FIND_LONG = /^find\s+(?:out\s+)?(?:how|why|what|when|where)\b/i;
 // "Define the following terms: …" / "Define these terms" → a multi-term answer.
@@ -90,21 +91,35 @@ const REFLECTIVE_TAIL =
 function stripReflectiveTail(text: string): string {
   return text.replace(REFLECTIVE_TAIL, "");
 }
-const COMPUTE_VERBS =
-  /^(?:calculate|measure|estimate|compute|determine)\b/i;
+const COMPUTE_VERBS = /^(?:calculate|measure|estimate|compute|determine)\b/i;
+// The answer is one number or amount ("Determine the percentage of live
+// seeds") → a single line. Anything else these verbs ask for ("Determine who
+// should go", "Determine the cost for each meal") needs room to write.
+const SINGLE_AMOUNT =
+  /^(?:calculate|measure|estimate|compute|determine)\s+(?:the\s+|your\s+)?(?:\w+\s+)?(?:percentage|number|total|cost|value|amount|distance|temperature|pace|price|weight|height|speed|area|volume)\b(?!.*\b(?:and|each|every)\b)/i;
 const DEMONSTRATE_VERBS =
   /^(?:demonstrate|show|perform|practice|conduct|exhibit|render|present|shoots?|shooting)\b/i;
-const DRAW_VERBS = /^(?:draw|sketch|diagram|illustrate|map)\b/i;
-// "Make/create a[n] [accurately scaled] drawing|chart|model|…" is a visual
+// "Draw stroke" (paddling) and "draw out" (forging) are skills, not drawings.
+const DRAW_VERBS =
+  /^(?:draw(?!\s+(?:stroke|out)\b)|sketch|diagram|illustrate|map)\b/i;
+// "Make/create a[n] [accurately scaled] drawing|chart|…" is a visual
 // deliverable → draw box (optional adjectives may precede the noun).
 const MAKE_VISUAL =
-  /^(?:make|create|prepare|produce|draw)\s+(?:a|an|another|two|three|four|five|\d+)\s+(?:\w+\s+){0,3}?(?:sketch|drawing|chart|diagram|model|poster|map|graph|table|illustration|display|collage|blueprint|plan)(?:e?s)?\b/i;
+  /^(?:make|create|prepare|produce|draw)\s+(?:a|an|another|two|three|four|five|\d+)\s+(?:\w+\s+){0,3}?(?:sketch|drawing|chart|diagram|poster|map|graph|illustration|collage|blueprint)(?:e?s)?\b/i;
+// "Make a written plan", "Prepare a float plan", "Make a duty roster" → words
+// on paper, so a writing box (a plan is not a drawing).
+const MAKE_WRITTEN =
+  /^(?:make|create|prepare|develop|write)\s+(?:a|an)\s+(?:\w+\s+){0,3}?(?:written|plan|roster|budget|schedule|menu|itinerary|checklist|timeline|outline|report|table)\b/i;
+// "Make a model …", "Prepare a display …" → a thing you build: a checkbox.
+const MAKE_OBJECT =
+  /^(?:make|create|build|prepare)\s+(?:a|an|two|three|a\s+series\s+of)\s+(?:\w+\s+){0,2}?(?:models?|display)\b/i;
 
 // Verbs that gate whether a new sentence becomes its own segment
 const ACTION_VERB_GATE =
   /^(?:explain|describe|discuss|research|report|summarize|write|rewrite|paraphrase|document|review|compare|interview|list|name|identify|state|define|outline|trace|give|locate|find|label|tell|calculate|measure|estimate|compute|determine|demonstrate|show|perform|practice|conduct|exhibit|render|present|draw|sketch|diagram|illustrate|map|do|earn|complete|visit|attend|participate|plan|create|build|make|develop|prepare|design|organize|lead|teach|train|share|note|read|watch|study|learn|select|choose|observe|collect|keep|explore|obtain)\b/i;
 
-const ENUMERATOR_GATE = /^(?:first|then|next|finally|additionally|also|second|third|fourth|fifth)\b/i;
+const ENUMERATOR_GATE =
+  /^(?:first|then|next|finally|additionally|also|second|third|fourth|fifth)\b/i;
 
 export function stripLeadingContext(text: string): string {
   let remaining = text.trim();
@@ -124,7 +139,10 @@ export function stripLeadingContext(text: string): string {
 }
 
 function stripMarkdown(text: string): string {
-  return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*/g, "").replace(/\*/g, "");
+  return text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/\*\*/g, "")
+    .replace(/\*/g, "");
 }
 
 export function classifyNode(req: Requirement): "container" | "leaf" {
@@ -172,12 +190,20 @@ export function classifySegment(text: string): SegmentFieldType {
   const writtenCheck = stripReflectiveTail(text);
   // Conversation with the counselor → oral, no written field — unless it also
   // asks the Scout to write something ("Share … and describe how each …").
-  if (ORAL_VERBS.test(bare) && COUNSELOR_REF.test(text) && !DISCUSS_WRITTEN.test(writtenCheck)) {
+  if (
+    ORAL_VERBS.test(bare) &&
+    COUNSELOR_REF.test(text) &&
+    !DISCUSS_WRITTEN.test(writtenCheck)
+  ) {
     return "discuss";
   }
   // A bare "Discuss …" topic is an oral conversation unless it also asks the
   // Scout to write (and explain/list/…) or enumerates a set of items.
-  if (/^discuss\b/i.test(bare) && !DISCUSS_WRITTEN.test(writtenCheck) && detectCardinality(text) === null) {
+  if (
+    /^discuss\b/i.test(bare) &&
+    !DISCUSS_WRITTEN.test(writtenCheck) &&
+    detectCardinality(text) === null
+  ) {
     return "discuss";
   }
   // Self-contained oral performance → completion checkbox (handled by renderer).
@@ -186,14 +212,22 @@ export function classifySegment(text: string): SegmentFieldType {
   if (FIND_LONG.test(bare)) return "write-long";
   if (DEFINE_LONG.test(bare)) return "write-long";
   if (MAKE_LIST.test(bare)) return "write-long";
+  if (MAKE_WRITTEN.test(bare) && !MAKE_VISUAL.test(bare)) return "write-long";
+  if (MAKE_OBJECT.test(bare) && !MAKE_VISUAL.test(bare)) return "demonstrate";
   if (MAKE_NOTES.test(bare)) return "write-long";
   if (MAKE_RECOMMENDATION.test(bare)) return "write-long";
   // A write prompt spanning "each of the following …" needs room for a matrix.
-  if (EACH_OF_FOLLOWING.test(text) && (WRITE_LONG_VERBS.test(bare) || WRITE_SHORT_VERBS.test(bare))) {
+  if (
+    EACH_OF_FOLLOWING.test(text) &&
+    (WRITE_LONG_VERBS.test(bare) || WRITE_SHORT_VERBS.test(bare))
+  ) {
     return "write-long";
   }
   // Hands-on task with nothing to write down → completion checkbox.
-  if ((PHYSICAL_ANY.test(text) || PHYSICAL_LEAD.test(bare)) && !EMBEDDED_WRITE.test(text)) {
+  if (
+    (PHYSICAL_ANY.test(text) || PHYSICAL_LEAD.test(bare)) &&
+    !EMBEDDED_WRITE.test(text)
+  ) {
     return "demonstrate";
   }
   if (WRITE_LONG_VERBS.test(bare)) return "write-long";
@@ -204,7 +238,9 @@ export function classifySegment(text: string): SegmentFieldType {
     if (/\?/.test(text)) return "write-long";
     return "write-short";
   }
-  if (COMPUTE_VERBS.test(bare)) return "compute";
+  if (COMPUTE_VERBS.test(bare)) {
+    return SINGLE_AMOUNT.test(bare) ? "compute" : "write-long";
+  }
   if (DRAW_VERBS.test(bare) || MAKE_VISUAL.test(bare)) return "draw";
   if (DEMONSTRATE_VERBS.test(bare)) return "demonstrate";
   // Fallback: an embedded oral performance ("Choose one … and give a short
@@ -221,15 +257,25 @@ export function classifySegment(text: string): SegmentFieldType {
   }
   // Fallback: a knowledge question with no action verb ("What is the Constitution?
   // … Why is it important to have a Constitution?") → a written answer box.
-  if (/\?/.test(text) || /^(?:what|why|how|when|where|which|who|name)\b/i.test(bare)) {
+  if (
+    /\?/.test(text) ||
+    /^(?:what|why|how|when|where|which|who|name)\b/i.test(bare)
+  ) {
     return "write-long";
   }
   return "do";
 }
 
 const NUMBER_WORDS: Record<string, number> = {
-  two: 2, three: 3, four: 4, five: 5, six: 6,
-  seven: 7, eight: 8, nine: 9, ten: 10,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
 };
 
 // "the three groups you chose", "those two methods you selected" — a reference
@@ -246,7 +292,7 @@ export function detectCardinality(text: string): number | null {
   if (BACK_REFERENCE.test(stripped)) return null;
   const match = stripped.match(CARDINALITY_RE);
   if (!match) return null;
-  return NUMBER_WORDS[match[1].toLowerCase()] ?? null;
+  return NUMBER_WORDS[match[1]!.toLowerCase()] ?? null;
 }
 
 /** The countable noun that triggered cardinality ("five songs" → "songs"). */
@@ -254,7 +300,7 @@ export function cardinalityNoun(text: string): string | null {
   const stripped = text.replace(/\([^)]*\)/g, "").trim();
   if (BACK_REFERENCE.test(stripped)) return null;
   const match = stripped.match(CARDINALITY_RE);
-  return match ? match[2].toLowerCase() : null;
+  return match ? match[2]!.toLowerCase() : null;
 }
 
 /**
@@ -266,7 +312,7 @@ export function detectInterviewCount(text: string): number | null {
     /\binterview\s+(one|two|three|four|five|six|seven|eight|nine|ten|\d+)\b/i,
   );
   if (!m) return null;
-  const w = m[1].toLowerCase();
+  const w = m[1]!.toLowerCase();
   const n = w === "one" ? 1 : (NUMBER_WORDS[w] ?? parseInt(w, 10));
   return Number.isFinite(n) && n >= 1 && n <= 12 ? n : null;
 }
@@ -282,8 +328,11 @@ export function parseLabeledPair(text: string): [string, string] | null {
   );
   if (!m) return null;
   const capize = (s: string) =>
-    s.trim().replace(/\s+/g, " ").replace(/^./, c => c.toUpperCase());
-  return [capize(m[1]), capize(m[2])];
+    s
+      .trim()
+      .replace(/\s+/g, " ")
+      .replace(/^./, c => c.toUpperCase());
+  return [capize(m[1]!), capize(m[2]!)];
 }
 
 export function splitPrompts(text: string): string[] {
@@ -312,7 +361,7 @@ export function splitPrompts(text: string): string[] {
       parts.push(remaining);
       break;
     }
-    parts.push(remaining.slice(0, m.index + m[1].length));
+    parts.push(remaining.slice(0, m.index + m[1]!.length));
     remaining = remaining.slice(m.index + m[0].length);
   }
 
@@ -337,9 +386,9 @@ export function splitPrompts(text: string): string[] {
   // Imperative-start gate: only promote to a new segment if the sentence starts with
   // a known action verb or an enumerator. Continuations starting with pronouns, articles,
   // or prepositions ("This should include…", "In your observations, include…") fold back.
-  const filtered: string[] = [merged[0]];
+  const filtered: string[] = [merged[0]!];
   for (let i = 1; i < merged.length; i++) {
-    const seg = merged[i];
+    const seg = merged[i]!;
     const stripped = stripLeadingContext(seg);
     if (ACTION_VERB_GATE.test(stripped) || ENUMERATOR_GATE.test(seg)) {
       filtered.push(seg);
@@ -367,7 +416,7 @@ export function parseChoiceList(text: string): string[] | null {
     /\b(?:a|an|one)\s+([a-z][a-z'-]*(?:,\s*[a-z][a-z'-]*){1,8}\s*,?\s+or\s+[a-z][a-z'-]*)/i,
   );
   if (!m) return null;
-  const items = m[1]
+  const items = m[1]!
     .split(/\s*,\s*|\s+or\s+/i)
     .map(s => s.trim().replace(/^(?:or|and)\s+/i, ""))
     .filter(Boolean);
@@ -388,7 +437,8 @@ export function parseChoiceList(text: string): string[] | null {
  */
 export function parseOralActionLabel(text: string): string | null {
   const bare = stripLeadingContext(stripMarkdown(text).trim());
-  const m = bare.match(ORAL_ACTION) ?? stripMarkdown(text).match(ORAL_ACTION_EMBEDDED);
+  const m =
+    bare.match(ORAL_ACTION) ?? stripMarkdown(text).match(ORAL_ACTION_EMBEDDED);
   if (!m) return null;
   return m[0].charAt(0).toUpperCase() + m[0].slice(1);
 }
@@ -419,7 +469,7 @@ const PAST_TENSE: Record<string, string> = {
 function toPastTense(verb: string): string {
   const lower = verb.toLowerCase();
   if (PAST_TENSE[lower]) return PAST_TENSE[lower];
-  if (/e$/.test(lower)) return cap(lower + "d");
+  if (lower.endsWith("e")) return cap(lower + "d");
   if (/[^aeiou]y$/.test(lower)) return cap(lower.slice(0, -1) + "ied");
   return cap(lower + "ed");
 }
@@ -433,13 +483,24 @@ function cap(s: string): string {
  * that should become a completion checkbox. Returns a past-tense label or null.
  */
 export function parseCompletionClause(text: string): string | null {
-  const clean = stripMarkdown(text).trim().replace(/[.?!]+$/, "");
+  const clean = stripMarkdown(text).trim();
   const idx = clean.search(/,\s+and\s+/i);
   if (idx === -1) return null;
-  const after = clean.slice(idx).replace(/^,\s+and\s+/i, "").trim();
+  // The label is the clause up to its sentence end; what follows is more
+  // official wording, not part of what the checkbox records.
+  const after = clean
+    .slice(idx)
+    .replace(/^,\s+and\s+/i, "")
+    .split(/[.?!;](?:\s|$)/)[0]!
+    .trim();
   if (!COMPLETION_VERB.test(after)) return null;
-  const [verb, ...rest] = after.split(/\s+/);
+  const [verb = "", ...rest] = after.split(/\s+/);
   return [toPastTense(verb), ...rest].join(" ");
+}
+
+/** "Make a drawing and explain how …" asks for a written answer as well. */
+export function asksToExplainDrawing(text: string): boolean {
+  return /\band\s+(?:then\s+)?(?:explain|describe|tell)\b/i.test(text);
 }
 
 export function parsePrompts(text: string): PromptSegment[] {
@@ -447,7 +508,9 @@ export function parsePrompts(text: string): PromptSegment[] {
   const result: PromptSegment[] = segments.map(seg => {
     const fieldType = classifySegment(seg);
     const count =
-      fieldType === "write-long" || fieldType === "write-short" || fieldType === "compute"
+      fieldType === "write-long" ||
+      fieldType === "write-short" ||
+      fieldType === "compute"
         ? detectCardinality(seg)
         : null;
     const noun = count !== null ? cardinalityNoun(seg) : null;
@@ -455,5 +518,12 @@ export function parsePrompts(text: string): PromptSegment[] {
   });
   return result.length
     ? result
-    : [{ text: text.trim(), fieldType: classifySegment(text), count: null, noun: null }];
+    : [
+        {
+          text: text.trim(),
+          fieldType: classifySegment(text),
+          count: null,
+          noun: null,
+        },
+      ];
 }

@@ -1,0 +1,26 @@
+{{/* link-tile.html
+
+  One row of an index: a whole-tile link with an optional icon, a name
+  and one muted line. Lay several out inside <div class="link-tiles">.
+
+  Params (dict):
+  url      - link target                                  (required)
+  title    - plain text                                   (required)
+  meta     - plain text, the muted second line            (optional)
+  icon     - icon.html name, drawn duotone                (optional)
+  marker   - short plain text drawn in the icon's place, e.g. a
+             step number; ignored when icon is set         (optional)
+  title_vt - view-transition-name for the title           (optional)
+*/}}
+<a class="link-tile" href="{{ .url }}">
+  {{ with .icon }}
+    <span class="link-tile__icon">{{ partial "icon.html" (dict "name" . "weight" "duotone") }}</span>
+  {{ else }}
+    {{ with .marker }}<span class="link-tile__icon link-tile__marker" aria-hidden="true">{{ . }}</span>{{ end }}
+  {{ end }}
+  <span class="link-tile__text">
+    <strong class="link-tile__title"{{ with .title_vt }} style="view-transition-name: {{ . }}"{{ end }}>{{ .title }}</strong>
+    {{ with .meta }}<small class="link-tile__meta">{{ . }}</small>{{ end }}
+  </span>
+  <svg class="link-tile__chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 4 4 4-4 4" /></svg>
+</a>

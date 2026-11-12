@@ -1,13 +1,67 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main-class" }}home-main{{ end }}
+{{ define "main-class" }}index-main{{ end }}
 
 {{ define "main" }}
-  {{ partial "home/hero.html" . }}
-  {{ partial "home/featured.html" . }}
-  {{ partial "home/categories.html" . }}
-  {{ partial "home/steps.html" . }}
-  {{ partial "home/eagle.html" . }}
+  {{/* The home page is the index of the site: a search field, the
+    Eagle-required badges, then every badge by name. Tiles carry no
+    photo; the photo grid lives on /merit-badges/.
+  */}}
+  {{ $all := partial "merit-badges/listed-badges.html" (.Site.GetPage "/merit-badges").Pages }}
+  {{ $eagle := slice }}
+  {{ range $all }}
+    {{ if (index hugo.Data "merit-badges" .File.ContentBaseName).eagle_required }}
+      {{ $eagle = $eagle | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Decorative, and hidden below 60rem; lazy so a phone has the best
+    chance of never fetching it. */}}
+  {{ $photo := partial "imagekit/img.html" (dict
+    "path" "/mbu-assets/site/hero"
+    "v" (index hugo.Data "badge-images").site.hero.v
+    "width" 1264
+    "height" 848
+    "alt" ""
+    "sizes" "(min-width: 60rem) min(45vw, 700px), 1px"
+    "loading" "lazy"
+  ) }}
+
+  {{ partial "page-head.html" (dict
+    "page" .
+    "media" $photo
+    "title" "Merit badges"
+    "lede" "Every merit badge, with the official requirements and a guide to help you get ready."
+    "search" (dict "id" "home-search-form" "label" "Search badges and requirements" "placeholder" "Badge or requirement")
+  ) }}
+
+  <div class="index-page">
+    <section aria-labelledby="eagle-badges">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="eagle-badges">Eagle-required badges</h2>
+        <a class="index-section__more" href="/merit-badges/eagle-required/">Which ones do I need?</a>
+      </div>
+      <div class="link-tiles">
+        {{ range $eagle }}{{ partial "merit-badges/badge-tile.html" (dict "page" .) }}{{ end }}
+      </div>
+    </section>
+
+    <section aria-labelledby="all-badges">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="all-badges">All {{ partial "merit-badges/badge-count.html" . }} badges, A to Z</h2>
+        <a class="index-section__more" href="/categories/">Browse by category</a>
+      </div>
+      <div class="link-tiles">
+        {{/* Only the A to Z tile names its title for the morph into the
+          badge page: Eagle-required badges are listed twice. */}}
+        {{ range $all }}{{ partial "merit-badges/badge-tile.html" (dict "page" . "title_vt" true) }}{{ end }}
+      </div>
+    </section>
+  </div>
+
+  {{/* Reports home searches to analytics; keyed on #home-search-form. */}}
+  {{ $searchTS := resources.Get "ts/home-search.ts" | js.Build (dict "minify" true) }}
+  <script>{{ $searchTS.Content | safeJS }}</script>
 {{ end }}
 
 {{ define "footer-scripts" }}

@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ define "main" }}
-  {{/* Same current-badge count as home/hero.html and
+  {{/* Same current-badge count as merit-badges/badge-count.html and
     merit-badges/list.html — excludes the eagle-required listing page
     and fully-discontinued badges, so this page never states a total
     that disagrees with the rest of the site.
@@ -23,10 +23,11 @@
 
   {{ partial "search/page.html" (dict
     "page" .
-    "description" (printf "Find specific requirements across all %d merit badges" $badgeCount)
+    "title" "Search"
+    "description" (printf "Find a requirement in any of the %d merit badges." $badgeCount)
     "awardLabel" "Merit Badge"
     "placeholder" "Search requirements..."
-    "zeroResults" "No requirements found"
+    "zeroResults" "No requirements match \"[SEARCH_TERM]\". Try a different word, or check the spelling."
     "noResultsEvent" "merit-badge-search-no-results"
     "resultClickEvent" "merit-badge-search-result-click"
   ) }}

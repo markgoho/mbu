@@ -1,9 +1,8 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
+{{ define "main-class" }}req-page-main{{ end }}
+
 {{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
-  <h1>{{ .Title }}</h1>
-  <article class="content-wrapper">
-    {{ .Content }}
-  </article>
+  {{ partial "page-head.html" (dict "page" . "title" .Title "lede" .Description) }}
+  {{ partial "prose-page.html" (dict "content" .Content) }}
 {{- end }}

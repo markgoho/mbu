@@ -1,0 +1,24 @@
+{{/* merit-badges/badge-tile.html
+
+  The one definition of a badge's index tile (link-tile.html): emblem
+  icon, name without " Merit Badge", and its requirement count.
+
+  Params (dict):
+  page     - the badge's section Page                          (required)
+  title_vt - true to name the title mb-title-<slug>, the morph into the
+             badge page. A name may appear once per document, so leave
+             it off where the badge is listed a second time.   (optional)
+*/}}
+{{ $slug := .page.File.ContentBaseName }}
+{{ $json := index hugo.Data "merit-badges" $slug }}
+{{ $n := len $json.requirements }}
+{{ $tile := dict
+  "url" .page.RelPermalink
+  "title" (strings.TrimSuffix " Merit Badge" .page.Title)
+  "meta" (printf "%d %s" $n (cond (eq $n 1) "requirement" "requirements"))
+  "icon" (index (index hugo.Data "badge-icons").badges $slug | default "medal")
+}}
+{{ if .title_vt }}
+  {{ $tile = merge $tile (dict "title_vt" (printf "mb-title-%s" $slug)) }}
+{{ end }}
+{{ partial "link-tile.html" $tile }}
