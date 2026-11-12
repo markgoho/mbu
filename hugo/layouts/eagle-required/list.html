@@ -1,66 +1,59 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </header>
+{{ define "main-class" }}index-main{{ end }}
 
-  {{ $meritBadges := .Site.GetPage "/merit-badges" }}
-  {{ $standaloneBadges := slice }}
-  {{ $groupedBadges := dict }}
-  {{ range $meritBadges.Pages.ByTitle }}
+{{ define "main" }}
+  {{ $standalone := slice }}
+  {{ $grouped := dict }}
+  {{ range $badge := partial "merit-badges/listed-badges.html" (.Site.GetPage "/merit-badges").Pages }}
     {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
-    {{ if $json }}
-      {{ if $json.eagle_required }}
-        {{ $entry := dict "page" . "json" $json }}
-        {{ if isset $json "eagle_group" }}
-          {{ $group := $json.eagle_group }}
-          {{ $existing := index $groupedBadges $group }}
-          {{ if $existing }}
-            {{ $groupedBadges = merge $groupedBadges (dict $group ($existing | append $entry)) }}
-          {{ else }}
-            {{ $groupedBadges = merge $groupedBadges (dict $group (slice $entry)) }}
-          {{ end }}
-        {{ else }}
-          {{ $standaloneBadges = $standaloneBadges | append $entry }}
-        {{ end }}
+    {{ if $json.eagle_required }}
+      {{ with $json.eagle_group }}
+        {{ $grouped = merge $grouped (dict . ((index $grouped . | default slice) | append $badge)) }}
+      {{ else }}
+        {{ $standalone = $standalone | append $badge }}
       {{ end }}
     {{ end }}
   {{ end }}
 
-  <h2>Required Badges</h2>
-  <p class="badge-count">All {{ len $standaloneBadges }} of these merit badges are required.</p>
+  {{ partial "page-head.html" (dict "page" . "title" "Eagle-required badges") }}
 
-  <section class="badges-grid">
-    {{ range $index, $entry := $standaloneBadges }}
-      {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" $index) }}
-    {{ end }}
-  </section>
+  <div class="index-page">
+    <div class="index-intro">{{ .Content }}</div>
 
-  <h2>Choose One from Each Group</h2>
-  <p class="badge-count">Earn one merit badge from each of the following groups.</p>
+    <section aria-labelledby="eagle-all">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="eagle-all">Required: all {{ len $standalone }} of these</h2>
+      </div>
+      <div class="link-tiles">
+        {{ range $standalone }}
+          {{ partial "merit-badges/badge-tile.html" (dict "page" . "title_vt" true) }}
+        {{ end }}
+      </div>
+    </section>
 
-  {{ $groupOrder := slice "emergency" "environment" "fitness" }}
-  {{ $groupLabels := dict "emergency" "Emergency Preparedness or Lifesaving" "environment" "Environmental Science or Sustainability" "fitness" "Cycling, Hiking, or Swimming" }}
-
-  {{ range $groupOrder }}
-    {{ $groupName := . }}
-    {{ $badges := index $groupedBadges $groupName }}
-    {{ if $badges }}
-      {{ $label := index $groupLabels $groupName }}
-      <section class="eagle-group">
-        <h3 class="eagle-group__heading">{{ $label }}</h3>
-        <div class="eagle-group__badges">
-          {{ range $badgeIndex, $entry := $badges }}
-            {{ if gt $badgeIndex 0 }}
-              <div class="eagle-group__separator" aria-hidden="true">OR</div>
-            {{ end }}
-            {{ partial "merit-badges/badge-card.html" (dict "page" $entry.page "json" $entry.json "index" $badgeIndex) }}
-          {{ end }}
-        </div>
-      </section>
-    {{ end }}
-  {{ end }}
+    {{ $order := slice "emergency" "environment" "fitness" }}
+    {{ $labels := dict
+      "emergency" "Emergency Preparedness or Lifesaving"
+      "environment" "Environmental Science or Sustainability"
+      "fitness" "Cycling, Hiking, or Swimming"
+    }}
+    <section aria-labelledby="eagle-groups">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="eagle-groups">Required: one from each of these {{ len $order }} groups</h2>
+      </div>
+      {{ range $group := $order }}
+        {{ with index $grouped $group }}
+          <div class="index-group">
+            <h3 class="index-group__title">Choose one: {{ index $labels $group }}</h3>
+            <div class="link-tiles">
+              {{ range . }}
+                {{ partial "merit-badges/badge-tile.html" (dict "page" . "title_vt" true) }}
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </section>
+  </div>
 {{ end }}

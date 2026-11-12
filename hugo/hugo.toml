@@ -61,25 +61,25 @@ enableGitInfo = true
   tagline = 'Your comprehensive resource for Scouting America merit badges.'
 
   [params.theme.cta]
-    label = 'Browse Badges'
+    label = 'Browse badges'
     href = '/merit-badges/'
 
   [[params.theme.footerColumns]]
-    title = 'Merit Badges'
+    title = 'Merit badges'
     [[params.theme.footerColumns.links]]
-      label = 'All Badges'
+      label = 'All badges'
       href = '/merit-badges/'
 
   [[params.theme.footerColumns]]
     title = 'Resources'
     [[params.theme.footerColumns.links]]
-      label = 'Eagle Badge Strategy'
+      label = 'Eagle badge strategy'
       href = '/merit-badges/eagle-required/strategy/'
     [[params.theme.footerColumns.links]]
-      label = 'Eagle-Required List'
+      label = 'Eagle-required list'
       href = '/merit-badges/eagle-required/'
     [[params.theme.footerColumns.links]]
-      label = 'Requirements'
+      label = 'Search requirements'
       href = '/search/'
 
 [params.imagekit]

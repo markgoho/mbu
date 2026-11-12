@@ -4,8 +4,7 @@
  *
  * Carries BASE chrome only. Hover triggers stay with each consumer
  * because they differ (`.req-card__panel` lifts from a *parent* hover;
- * `.req-sidebar` lifts from its own) — use the `--lift` modifier when a
- * consumer's own hover is the trigger.
+ * `.req-sidebar` lifts from its own).
  *
  * Scope note: `.req-card__panel` (pages/merit-badge-requirements.css),
  * `.req-sidebar` (pages/merit-badge-requirements.css) and `.drg-sidebar`
@@ -28,36 +27,6 @@
 
 .dark .card-surface {
   box-shadow: var(--shadow-elevated);
-}
-
-/* ------------------------------------------------------------------ */
-/* --lift: translate + shadow bump on hover                            */
-/* ------------------------------------------------------------------ */
-
-@media (hover: hover) {
-  .card-surface--lift:hover {
-    border-color: var(--accent-container);
-    box-shadow: var(--shadow-raised);
-  }
-
-  .dark .card-surface--lift:hover {
-    border-color: var(--accent);
-    box-shadow: var(--shadow-elevated-hover);
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .card-surface--lift {
-      transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease,
-        background-color 0.25s ease;
-    }
-
-    .card-surface--lift:hover {
-      transform: translateY(-2px);
-    }
-  }
 }
 
 /* ------------------------------------------------------------------ */

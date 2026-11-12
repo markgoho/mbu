@@ -1,7 +1,7 @@
 {{- /*
-  Renders the search page: breadcrumb, heading, description, the search
-  form, and the `#search-results` region the theme's own renderer fills
-  in. Paired with `partials/search/scripts.html` for the footer-scripts
+  Renders the search page: the page head (breadcrumb, heading,
+  description and the search field), then the `#search-results` region
+  the theme's own renderer fills in. Paired with `partials/search/scripts.html` for the footer-scripts
   wiring.
 
   The results display is theme-owned end to end (uni-theme#14): Pagefind's
@@ -20,6 +20,11 @@
     "noResultsEvent"    "my-search-no-results"               (optional, Pirsch event name)
     "resultClickEvent"  "my-search-result-click"             (optional, Pirsch event name)
     "pageSize"          7                                    (optional, int)
+    "title"             "Search"                             (optional, defaults to the page title)
+    "unavailable"       "Search is not working right now…"   (optional, UI copy)
+
+  `unavailable` is shown when Pagefind's script cannot be loaded (no
+  index built, or offline).
 
   The optional params surface as data-* attributes on #search, read by
   assets/ts/search.ts. The two event names are only fired when present;
@@ -54,14 +59,10 @@
 {{- $noResultsEvent := .noResultsEvent -}}
 {{- $resultClickEvent := .resultClickEvent -}}
 {{- $pageSize := .pageSize -}}
+{{- $title := .title | default $page.Title -}}
+{{- $unavailable := .unavailable | default "Search is not working right now. Please try again later." -}}
 
 <article class="search-page">
-  {{ partial "breadcrumb.html" $page }}
-  <header class="search-header">
-    <h1>{{ $page.Title }}</h1>
-    <p class="search-description">{{ $description }}</p>
-  </header>
-
   <div
     id="search"
     class="search"
@@ -69,6 +70,7 @@
     data-search-placeholder="{{ $placeholder }}"
     data-search-zero-results="{{ $zeroResults }}"
     data-search-min-query-hint="{{ $minQueryHint }}"
+    data-search-unavailable="{{ $unavailable }}"
     {{- with $emblemPlaceholder }}
     data-search-emblem-placeholder="{{ . }}"
     {{- end }}
@@ -83,24 +85,29 @@
     {{- end }}
   >
     {{/* A real form so the field exists before search.ts runs; submit is
-      cancelled in JS because results are rendered live as you type. */}}
-    <form class="search__form" role="search" autocomplete="off">
-      <label class="visually-hidden" for="search-input">{{ $page.Title }}</label>
-      <input
-        type="search"
-        id="search-input"
-        class="search__input"
-        name="q"
-        placeholder="{{ $placeholder }}"
-        enterkeyhint="search"
-      />
-      <button type="button" class="search__clear" hidden>Clear</button>
-    </form>
+      handled in JS because results are rendered live as you type. It
+      lives in the page head, so the page has one search field. */}}
+    {{- $field := printf `<p class="page-head__lede search-description">%s</p>
+      <form class="search__form page-search" role="search" autocomplete="off">
+        %s
+        <label class="visually-hidden" for="search-input">%s</label>
+        <input type="search" id="search-input" class="search__input page-search__input" name="q" placeholder="%s" enterkeyhint="search" />
+        <button type="button" class="search__clear" hidden>Clear</button>
+        <button type="submit" class="page-search__submit">Search</button>
+      </form>`
+      ($description | htmlEscape)
+      (partial "icon.html" (dict "name" "search" "class" "page-search__icon"))
+      ($title | htmlEscape)
+      ($placeholder | htmlEscape)
+    -}}
+    <header class="search-header">
+      {{ partial "page-head.html" (dict "page" $page "title" $title "body" $field) }}
+    </header>
 
-    <p class="search__message" role="status" aria-live="polite"></p>
-    {{/* container-type makes the @container rules in search.css resolve
-      against the results column rather than the viewport. */}}
-    <div class="search__results" id="search-results"></div>
-    <button type="button" class="search__more" hidden>Load more</button>
+    <div class="search-page__body">
+      <p class="search__message" role="status" aria-live="polite"></p>
+      <div class="search__results" id="search-results"></div>
+      <button type="button" class="search__more" hidden>Load more</button>
+    </div>
   </div>
 </article>

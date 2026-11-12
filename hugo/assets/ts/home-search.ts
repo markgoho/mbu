@@ -5,7 +5,9 @@ declare const pirsch: (
 
 const MIN_QUERY_LENGTH = 3;
 
-const form = document.querySelector<HTMLFormElement>("#hero-search-form");
+// The event keeps its old "home-hero" name so existing dashboards still
+// count it.
+const form = document.querySelector<HTMLFormElement>("#home-search-form");
 if (form) {
   form.addEventListener("submit", () => {
     if (typeof pirsch === "undefined") return;
@@ -15,14 +17,3 @@ if (form) {
     pirsch("merit-badge-home-hero-search", { meta: { query } });
   });
 }
-
-document
-  .querySelectorAll<HTMLAnchorElement>("[data-hero-browse]")
-  .forEach(link => {
-    link.addEventListener("click", () => {
-      if (typeof pirsch === "undefined") return;
-      pirsch("merit-badge-home-hero-browse", {
-        meta: { target: link.dataset.heroBrowse ?? "" },
-      });
-    });
-  });

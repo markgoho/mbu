@@ -1,7 +1,7 @@
 /*
  * Discontinued-badge notice — pairs with layouts/partials/discontinued-notice.html.
  * Merit-badge-specific content modeling, so both stay in mbu rather than
- * moving to uni-theme; split out of what used to be pages/merit-badges.css.
+ * moving to uni-theme.
  */
 
 .discontinued-notice {

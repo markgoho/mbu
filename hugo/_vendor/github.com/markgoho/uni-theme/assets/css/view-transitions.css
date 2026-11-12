@@ -40,15 +40,9 @@
   view-transition-class: req-num;
 }
 
-.req-card__eyebrow,
-.req-header__kicker {
-  view-transition-class: req-eyebrow;
-}
-
 .badge-preview__title,
 .req-card__title,
 .req-child__title,
-.req-header__title,
 .req-nav__link,
 .req-mobile-nav__link {
   view-transition-class: req-title;
@@ -62,7 +56,6 @@
 }
 
 ::view-transition-group(.req-num),
-::view-transition-group(.req-eyebrow),
 ::view-transition-group(.req-title),
 ::view-transition-group(.req-text) {
   animation-duration: 0.4s;
@@ -70,12 +63,10 @@
 }
 
 /*
- * The snippet/title/eyebrow change line count, size and measure between the
+ * The snippet/title change line count, size and measure between the
  * requirement card and the guide -- letting the box animate while
  * cross-fading the text content reads smoothly.
  */
-::view-transition-old(.req-eyebrow),
-::view-transition-new(.req-eyebrow),
 ::view-transition-old(.req-title),
 ::view-transition-new(.req-title),
 ::view-transition-old(.req-text),

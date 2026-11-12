@@ -1,25 +1,38 @@
-/* Site typefaces (self-hosted, SIL OFL) */
+/* Site typeface: Figtree variable, self-hosted (SIL OFL, see
+   static/assets/fonts/Figtree-OFL.txt). Split into Google Fonts' latin and
+   latin-ext subsets; the browser fetches latin-ext only on pages that use
+   those characters (a few guide pages: Čapek, Ashtāpada). */
 @font-face {
-  font-family: "Inter";
-  src: url("/assets/fonts/Inter-VariableFont_wght.woff2") format("woff2");
-  font-weight: 100 900;
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-VariableFont_wght.woff2") format("woff2");
+  font-weight: 400 800;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "Literata";
-  src: url("/assets/fonts/Literata-VariableFont_opsz_wght.woff2")
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-VariableFont_wght-latin-ext.woff2")
     format("woff2");
-  font-weight: 400 900;
+  font-weight: 400 800;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
 }
 
 /* Typography Design Tokens (already present) */
 :root {
-  /* Typography */
-  --font-weight-boldest: 900;
+  /* Typography. Figtree is loaded at 400-800 only. Ask for a weight
+     outside that and the browser substitutes the nearest one, until a
+     variable font renders the asked-for weight and every page changes.
+     --font-weight-light stays a public token but nothing here uses it. */
+  --font-weight-boldest: 800;
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
   --font-weight-regular: 400;
@@ -45,7 +58,7 @@
 body {
   font-family: var(--font-body);
   font-size: var(--step-0);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-relaxed);
   color: var(--on-surface);
   background: var(--surface);
@@ -117,11 +130,5 @@ main h1 {
   button {
     min-height: 44px;
     min-width: 44px;
-  }
-
-  .badge-identity__micro-tag,
-  .badge-card__eagle,
-  .badge-card__category {
-    font-size: 0.75rem !important;
   }
 }

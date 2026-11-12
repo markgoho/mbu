@@ -6,11 +6,10 @@
   Params (dict):
   variant (required) - "safety" | "fact" | "tip" | "prepared" — selects
   the icon and the .req-callout--<variant> color treatment.
-  title   (required) - heading text.
-  label   (optional) - small eyebrow text above the title (e.g.
-  "Be Prepared!"). When present, renders the two-row
-  eyebrow+title header; when absent, a single-row
-  icon+title header.
+  title   (required unless label is set) - heading text.
+  label   (optional) - words that lead the title on the same line (e.g.
+  "Be Prepared!"), as the Markdown twin does; with no title they are
+  the whole title.
   body    (required) - pre-rendered HTML for the callout body (call
   `.Inner | markdownify` in the shortcode and pass the
   result here — partials don't have shortcode context).
@@ -24,14 +23,11 @@
 <aside class="req-callout req-callout--{{ $variant }}">
   <div class="req-callout__header">
     {{ partial "icon.html" (dict "name" $icon "weight" "duotone" "class" "req-callout__icon") }}
-    {{- if .label }}
-    <div class="req-callout__heading">
-      <span class="req-callout__label">{{ .label }}</span>
-      <h3 class="req-callout__title">{{ .title }}</h3>
-    </div>
-    {{- else }}
-    <h3 class="req-callout__title">{{ .title }}</h3>
-    {{- end }}
+    <h3 class="req-callout__title">
+      {{- with .label }}<span class="req-callout__label">{{ . }}</span>{{ end -}}
+      {{- if and .label .title }} {{ end -}}
+      {{- .title -}}
+    </h3>
   </div>
   <div class="req-callout__body">{{ .body | safeHTML }}</div>
 </aside>

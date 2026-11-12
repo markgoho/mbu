@@ -71,6 +71,7 @@
 {{ $marker := "" }}
 {{ $title := "" }}
 {{ $guideHref := "" }}
+{{ $ownGuide := false }}
 {{ $ring := true }}
 {{ $ownGuideForChildren := $inheritedGuide }}
 
@@ -80,6 +81,19 @@
   {{ $lookup := partial "merit-badges/req-guide-lookup.html" (dict "guide" $guide "path" $req.path "children" $req.subrequirements) }}
   {{ $title = $lookup.title }}
 
+  {{/* A group with only per-letter guide pages (1a, 1b) has no page of
+    its own, but those pages share a group_title ("1. Safety & Hazard
+    Awareness"): that is the group's label, minus its "1. ". The jump
+    list, overview and guide nav all show it, so the tile does too. */}}
+  {{ if and (not $title) $guide }}
+    {{ $prefix := printf "%s." $req.path }}
+    {{ range $guide.RegularPages }}
+      {{ if and (not $title) .Params.group_title (strings.HasPrefix (string .Params.req_number) $req.path) (strings.HasPrefix .Params.group_title $prefix) }}
+        {{ $title = strings.TrimSpace (strings.TrimPrefix $prefix .Params.group_title) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   {{/* A TITLE NEVER TRAVELS UPWARD (req-guide-lookup.html): only offer
     THIS requirement's own page/link when the resolved page actually
     covers it -- under rule 3's prefix match a page is found for a
@@ -88,6 +102,7 @@
   {{ $ownPage := cond (eq $lookup.covers true) $lookup.page "" }}
   {{ with $ownPage }}
     {{ $guideHref = .RelPermalink }}
+    {{ $ownGuide = true }}
   {{ end }}
 
   {{/* Children still need the page itself, covers or not: a merged
@@ -135,6 +150,7 @@
     req-guide-fragment.html, falling back to the page top when nothing
     matches. */}}
   {{ $guidePage := or $lookup.page $inheritedGuide }}
+  {{ $ownGuide = and $lookup.page (eq $lookup.covers true) }}
   {{ $ownGuideForChildren = $guidePage }}
   {{ with $guidePage }}
     {{ $guideHref = .RelPermalink }}
@@ -224,6 +240,7 @@
   "text" $req.text
   "pill" $req.subrequirement_mode
   "guide_href" $guideHref
+  "own_guide" $ownGuide
   "resources" (cond $hideResources (slice) $req.resources)
   "children" $children
   "variant" $childVariant

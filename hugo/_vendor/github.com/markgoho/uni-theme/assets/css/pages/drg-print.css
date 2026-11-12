@@ -200,8 +200,6 @@
   & .req-worksheet__sig-label {
     font-size: var(--step--2);
     color: var(--on-surface-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
 
   /* Back link (screen only) */
@@ -223,43 +221,6 @@
 /* ------------------------------------------------------------------ */
 /* Complete guide print page                                            */
 /* ------------------------------------------------------------------ */
-
-.req-print-header {
-  display: grid;
-  gap: var(--space-m);
-  margin-bottom: var(--space-xl);
-  padding: var(--space-l);
-  background-color: var(--surface-raised);
-  border: 1px solid var(--card-border-subtle);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-card);
-
-  & .req-print-header__kicker {
-    font-size: var(--step--1);
-    color: var(--on-surface-muted);
-    font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  & .req-print-header__title {
-    font-family: var(--font-display);
-    margin-bottom: var(--space-2xs);
-  }
-
-  & .req-print-header__url {
-    margin: 0;
-    font-size: var(--step--1);
-    color: var(--on-surface-muted);
-    word-break: break-word;
-  }
-
-  @container req-content (max-width: 500px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-  }
-}
 
 .req-print-btn {
   display: inline-flex;
@@ -286,8 +247,6 @@
   padding-top: var(--space-l);
   border-top: 1px solid var(--outline-variant);
   font-size: var(--step--1);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   color: var(--on-surface-muted);
   font-weight: var(--font-weight-bold);
   break-after: avoid;

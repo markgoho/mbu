@@ -1,0 +1,12 @@
+{{- /*
+  merit-badges/badge-count.html — the real, current number of merit
+  badges, shared by the home page and anything else that states a total,
+  so visitors never see two different figures.
+
+  Counts what listed-badges.html keeps, so it matches the A to Z tiles.
+  A discontinued badge keeps its pages and stays Pagefind-searchable
+  through its grace period, so Pagefind's own index count can run
+  higher; that is an internal detail.
+  */
+-}}
+{{ return len (partial "merit-badges/listed-badges.html" (site.GetPage "/merit-badges").Pages) }}

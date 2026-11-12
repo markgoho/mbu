@@ -13,8 +13,6 @@
   margin: 0;
   padding: 0;
   font-size: var(--step--2);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   line-height: var(--line-height-flat, 1.2);
 }
 
@@ -62,31 +60,41 @@
   flex-shrink: 0;
 }
 
-/* Mobile: hide middle items when path is deep (>3 levels) */
+/* Mobile: collapse the middle of a deep trail (4+ crumbs) to "…" */
 @media (max-width: 30rem) {
   .breadcrumb__list:has(:nth-child(4)) {
-    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 2)) {
+    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 3)) {
       display: none;
     }
 
-    .breadcrumb__item:first-child::after {
-      content: "...";
+    /* The crumb before the last two stands in for all the hidden ones:
+       an ellipsis in place of its name, keeping its own separator. */
+    .breadcrumb__item:nth-last-child(3) .breadcrumb__link {
+      display: none;
+    }
+
+    .breadcrumb__item:nth-last-child(3)::before {
+      content: "…";
       color: var(--on-surface-muted);
-      margin-inline-start: var(--space-3xs);
     }
   }
 }
 
 @container (max-width: 30rem) {
   .breadcrumb__list:has(:nth-child(4)) {
-    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 2)) {
+    .breadcrumb__item:not(:first-child):not(:nth-last-child(-n + 3)) {
       display: none;
     }
 
-    .breadcrumb__item:first-child::after {
-      content: "...";
+    /* The crumb before the last two stands in for all the hidden ones:
+       an ellipsis in place of its name, keeping its own separator. */
+    .breadcrumb__item:nth-last-child(3) .breadcrumb__link {
+      display: none;
+    }
+
+    .breadcrumb__item:nth-last-child(3)::before {
+      content: "…";
       color: var(--on-surface-muted);
-      margin-inline-start: var(--space-3xs);
     }
   }
 }

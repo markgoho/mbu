@@ -26,5 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextTheme = checkbox.checked ? "dark" : "light";
     localStorage.setItem(STORAGE_KEY, nextTheme);
     document.documentElement.classList.toggle("dark", checkbox.checked);
+    // theme-init.html's theme-color tags follow the choice too.
+    document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]').forEach((m) => {
+      m.content = (checkbox.checked ? m.dataset.dark : m.dataset.light) ?? m.content;
+    });
   });
 });

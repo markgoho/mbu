@@ -14,32 +14,58 @@
     {{ $badgeImageURL = partial "imagekit/url.html" (dict "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug) "tr" "w-600" "v" .v) }}
   {{ end }}
   {{ $guide := $badge.GetPage "guide" }}
-  {{ $reqPage := $badge.GetPage "requirements" }}
 
-  {{ $identity := partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug) }}
-  {{ $meta := partial "merit-badges/req-sidebar-meta.html" (dict "json" $json "slug" $slug) }}
-  {{ $navItems := slice (dict "label" "Overview" "url" $badge.RelPermalink "icon" "compass" "active" false) }}
-  {{ with $reqPage }}
-    {{ $navItems = $navItems | append (dict "label" "Requirements" "url" .RelPermalink "icon" "list-checks" "active" true) }}
+  {{ $nodes := partial "merit-badges/requirement-nodes.html" (dict "json" $json "guide" $guide "preview_count" 4) }}
+
+  {{/* Jump-list labels: the tile's own title (requirement-node.html),
+    else "Requirement N". */}}
+  {{ $jump := slice }}
+  {{ range $nodes }}
+    {{ $jump = $jump | append (dict "marker" .marker "label" (.title | default (printf "Requirement %s" .marker)) "href" (printf "#%s" .path)) }}
   {{ end }}
-  {{ if $guide }}
-    {{ $navItems = $navItems | append (dict "label" "Study Guide" "url" $guide.RelPermalink "icon" "book-open-text" "active" false) }}
+
+  {{/* The page head stays the same on all three tabs: title, Eagle tag,
+    tabs. What is particular to this page (how to read it, the count,
+    the date, the official links) sits under the jump list. */}}
+  {{ $links := slice (dict "url" $json.url "label" "View Official Page" "external" true) }}
+  {{ with $json.pamphlet_url }}
+    {{ $links = $links | append (dict "url" . "label" "Download Free Pamphlet" "icon" "download-simple" "external" true) }}
   {{ end }}
+  {{ $worksheets := index hugo.Data "worksheets" }}
+  {{ if and $worksheets (in $worksheets.slugs $slug) }}
+    {{ $links = $links | append (dict
+      "url" (printf "/merit-badges/%s/%s-merit-badge-worksheet.pdf" $slug $slug)
+      "label" "Download Fillable Worksheet"
+      "icon" "download-simple"
+      "external" true
+      "hide_on_mobile" true) }}
+  {{ end }}
+  {{ $date := "" }}
+  {{ with $json.last_updated }}{{ $date = time . | dateFormat "January 2, 2006" }}{{ end }}
+  {{ $railMeta := partial "req-rail-meta.html" (dict
+    "count" (printf "%d requirements" (len $json.requirements))
+    "date" $date
+    "links" $links) }}
+
+  {{ partial "page-head.html" (dict
+    "page" .
+    "title" $json.title
+    "accent" "Requirements"
+    "flag" (cond (eq $json.eagle_required true) "Eagle required" "")
+    "tabs" (partial "award-tabs.html" (dict "award" $badge "active" "requirements"))
+    "tabs_label" $json.title)
+  }}
 
   <div class="req-page">
-    {{ partial "req-sidebar.html" (dict "nav_items" $navItems "identity" $identity "meta" $meta) }}
+    {{ partial "req-jump.html" (dict "items" $jump "meta" $railMeta) }}
 
     <div class="req-main">
-      {{ partial "breadcrumb.html" . }}
       {{ partial "discontinued-notice.html" $json }}
+      {{ partial "req-key.html" (dict "brief" true) }}
 
-      {{ with .Description }}
-        <div class="badge-description">
-          <p>{{ . }}</p>
-        </div>
-      {{ end }}
-
-
+      {{/* Search results name the award from this, not the page's h1
+        ("Camping Requirements"); search.ts adds "Merit Badge". */}}
+      <span data-pagefind-meta="title" hidden>{{ $json.title }}</span>
       <div class="requirements" data-pagefind-body>
         {{/* Hidden image for Pagefind search results */}}
         {{ with $badgeImageURL }}
@@ -61,7 +87,7 @@
             derives its snippet's key the same way, so the two agree
             without singling out which node the preview snippet actually
             came from. */}}
-          {{ range partial "merit-badges/requirement-nodes.html" (dict "json" $json "guide" $guide "preview_count" 4) }}
+          {{ range $nodes }}
             {{ partial "req-card.html" (dict "node" .) }}
           {{ end }}
         </ol>

@@ -1,120 +1,59 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main-class" }}req-page req-page-main{{ end }}
-
-{{/* Hold the first paint until the hero has been parsed, matching
-  badge-landing.html -- both ends of the badge-landing <-> guide-landing
-  view transition need this so the incoming snapshot has the morph
-  targets already in the DOM. Only .IsSection pages render the hero, but
-  the hint is harmless (a no-op) on requirement sub-pages.
-*/}}
-{{ define "head-styles" }}
-  <link rel="expect" href="#badge-hero" blocking="render" />
-{{ end }}
+{{ define "main-class" }}req-page-main{{ end }}
 
 {{ define "main" }}
   {{ $badgePage := .CurrentSection.Parent | default .Parent }}
   {{ $slug := path.Base $badgePage.File.Dir }}
   {{ $json := index hugo.Data "merit-badges" $slug }}
   {{ $navInfo := partial "drg/resolve-nav.html" . }}
-
-  {{ $iconData := index hugo.Data "badge-icons" }}
-  {{ $iconName := "" }}
-  {{ if $iconData }}
-    {{ $iconName = index $iconData.badges $slug }}
-  {{ end }}
-  {{ $badgeName := strings.TrimSuffix " Merit Badge" $badgePage.Title }}
-  {{ $categoryName := $json.category | default "Merit Badge" }}
-  {{ $categorySlug := $categoryName | urlize }}
-  {{ $categoryPage := site.GetPage (printf "categories/%s" $categorySlug) }}
-  {{ $categoryURL := "" }}
-  {{ if $categoryPage }}
-    {{ $categoryURL = $categoryPage.RelPermalink }}
-  {{ else }}
-    {{ $categoryURL = printf "/categories/%s/" $categorySlug | relURL }}
-  {{ end }}
-
-  {{ $identity := dict
-    "icon" $iconName
-    "eyebrow" $categoryName
-    "eyebrow_url" $categoryURL
-    "title" $badgeName
-    "demote_heading" false
-    "micro_tag" "MERIT BADGE"
-  }}
-
-  {{ $reqUrl := printf "%srequirements/" $badgePage.RelPermalink }}
+  {{ $badgeName := .Params.badge_name | default (strings.TrimSuffix " Merit Badge" $badgePage.Title) }}
   {{ $printPage := .Site.GetPage (printf "%sprint/" .CurrentSection.RelPermalink) }}
+  {{ $tabs := partial "award-tabs.html" (dict "award" $badgePage "active" "guide") }}
 
+  {{/* Where this page sits in the guide, shown with Previous / Next so
+    the page head keeps the same shape on every tab. */}}
+  {{ $pageCount := 0 }}
+  {{ $pageIndex := 0 }}
+  {{ range $navInfo.guide_nav }}
+    {{ range .items }}
+      {{ $pageCount = add $pageCount 1 }}
+      {{ if eq .url $.RelPermalink }}{{ $pageIndex = $pageCount }}{{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $flag := cond (eq $json.eagle_required true) "Eagle required" "" }}
+
+  {{ if .IsSection }}
+    {{ partial "page-head.html" (dict
+      "page" .
+      "title" $badgeName
+      "accent" "Guide"
+      "flag" $flag
+      "tabs" $tabs
+      "tabs_label" $badgeName)
+    }}
+  {{ else }}
+    {{ $reqPath := .Params.req_number | default (path.Base .File.TranslationBaseName | replaceRE "^req" "") }}
+    {{ $reqKey := partial "text/transition-key.html" (dict "path" (string $reqPath)) }}
+    {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
+    {{ partial "page-head.html" (dict
+      "page" .
+      "title" $cleanTitle
+      "title_vt" (cond (ne $reqKey "") (printf "req-title-%s" $reqKey) "")
+      "tabs" $tabs
+      "tabs_label" $badgeName)
+    }}
+  {{ end }}
+
+  <div class="req-page req-page--guide">
   {{ partial "drg/sidebar.html" (dict
     "page" .
     "guide_nav" $navInfo.guide_nav
-    "identity" $identity
-    "req_url" $reqUrl
     "print_page" $printPage) }}
 
   <div class="req-page-body">
-    {{ partial "breadcrumb.html" . }}
-
-    {{ if .IsSection }}
-      {{ $reqPage := $badgePage.GetPage "requirements" }}
-      {{ $lead := "" }}
-      {{ with $reqPage }}
-        {{ $lead = .Description }}
-      {{ end }}
-
-      {{ $pageCount := 0 }}
-      {{ range $navInfo.guide_nav }}
-        {{ $pageCount = add $pageCount (len .items) }}
-      {{ end }}
-
-      {{ $title := .Params.badge_name | default (strings.TrimSuffix " Merit Badge" $badgePage.Title) }}
-
-      {{ $firstPageUrl := $navInfo.next | default .Params.next }}
-      {{ $ctas := slice (dict "url" $firstPageUrl "label" "Start the Guide" "icon" "book-open-text") }}
-      {{ with $reqPage }}
-        {{ $ctas = $ctas | append (dict "url" .RelPermalink "label" "View Requirements" "icon" "list-checks" "secondary" true) }}
-      {{ end }}
-
-      {{ partial "merit-badges/badge-hero.html" (dict
-        "badge" $badgePage
-        "json" $json
-        "slug" $slug
-        "title" $title
-        "accent_title" "Digital Resource Guide"
-        "lead" $lead
-        "extra_pills" (slice (dict "label" (printf "%d Pages" $pageCount) "icon" "stack"))
-        "ctas" $ctas) }}
-    {{ end }}
-
     <div class="req-body-grid">
       <article class="req-content">
-        {{ if not .IsSection }}
-          {{ $reqNum := .Params.req_number | default "" }}
-          {{ $reqGroupKey := "" }}
-          {{ $reqKey := "" }}
-          {{ if $reqNum }}
-            {{ $reqGroupKey = replaceRE "^([0-9]+).*" "$1" $reqNum }}
-            {{ $reqKey = replace $reqNum "." "-" }}
-            {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
-            {{ $reqKey = lower $reqKey }}
-          {{ else }}
-            {{ $reqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
-            {{ $reqGroupKey = replaceRE "^([0-9]+).*" "$1" $reqRaw }}
-            {{ $reqKey = replace $reqRaw "." "-" }}
-            {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
-            {{ $reqKey = lower $reqKey }}
-          {{ end }}
-          {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
-          {{ $kicker := $navInfo.group_title_display }}
-          <header class="req-header">
-            {{ with $kicker }}
-              <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
-            {{ end }}
-            <h1 class="req-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
-          </header>
-        {{ end }}
-
         {{ .Content }}
 
 
@@ -124,6 +63,7 @@
         {{ $nextTitle := .Params.next_title | default $navInfo.next_title }}
 
         <nav class="req-footer-nav" aria-label="Guide pagination">
+          {{ if and (not .IsSection) $pageIndex }}<p class="req-footer-nav__count">Page {{ $pageIndex }} of {{ $pageCount }}</p>{{ end }}
           {{ with $prevUrl }}
             <a
               href="{{ . }}"
@@ -161,6 +101,7 @@
         </aside>
       {{ end }}
     </div>
+  </div>
   </div>
 {{ end }}
 

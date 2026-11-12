@@ -1,0 +1,23 @@
+{{/* req-rail-meta.html
+
+  What goes under a requirements page's jump list (req-jump.html's
+  `meta`): how to read the page (req-key.html), then the count, the date of the
+  official text and any official links. Capture the output and pass it
+  as `meta`.
+
+  Params (dict):
+  count - plain text, e.g. "10 requirements"                  (optional)
+  date  - plain text, the official text's date                (optional)
+  links - slice of {url, label, icon, external, hide_on_mobile} (optional)
+*/}}
+{{ partial "req-key.html" (dict) }}
+<div class="req-sidebar__meta">
+  {{ with .count }}<span class="req-sidebar__meta-item">{{ . }}</span>{{ end }}
+  {{ with .date }}<span class="req-sidebar__meta-item">Official text updated {{ . }}</span>{{ end }}
+  {{ range .links }}
+    <a href="{{ .url }}"{{ if .external }} target="_blank" rel="noopener"{{ end }} class="req-sidebar__link{{ if .hide_on_mobile }} hide-on-mobile{{ end }}">
+      {{ partial "icon.html" (dict "name" (.icon | default "arrow-square-out") "class" "req-sidebar__link-icon") }}
+      {{ .label }}
+    </a>
+  {{ end }}
+</div>

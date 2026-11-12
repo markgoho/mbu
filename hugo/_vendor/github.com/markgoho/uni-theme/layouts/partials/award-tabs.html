@@ -1,0 +1,23 @@
+{{/* award-tabs.html
+
+  The Overview / Requirements / Guide tab row for one award (a merit
+  badge or a rank), for page-head.html's `tabs` param. A tab is listed
+  only when its page exists, so an award with no guide gets two tabs.
+
+  Params (dict):
+  award  - the award's landing Page (the one with requirements/ and
+           guide/ under it)                                   (required)
+  active - "overview", "requirements" or "guide"              (required)
+
+  Returns: slice of {label, url, active}.
+*/}}
+{{ $award := .award }}
+{{ $active := .active }}
+{{ $tabs := slice (dict "label" "Overview" "url" $award.RelPermalink "active" (eq $active "overview")) }}
+{{ with $award.GetPage "requirements" }}
+  {{ $tabs = $tabs | append (dict "label" "Requirements" "url" .RelPermalink "active" (eq $active "requirements")) }}
+{{ end }}
+{{ with $award.GetPage "guide" }}
+  {{ $tabs = $tabs | append (dict "label" "Guide" "url" .RelPermalink "active" (eq $active "guide")) }}
+{{ end }}
+{{ return $tabs }}

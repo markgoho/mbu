@@ -1,30 +1,18 @@
 {{/* merit-badges/badge-landing.html
 
-  Single-badge overview page (/merit-badges/<slug>/). Reuses the
-  requirements page's sidebar shell (req-page / req-sidebar-wrap /
-  req-main), with "Overview" as the active nav item and the sidebar's
-  own H1 demoted to a <p> -- the H1 for this page lives in the hero
-  below. All content is data-driven: intro copy is the requirements
-  page's front-matter description, "What you'll do" previews the badge's
-  own top-level requirements, and the facts card reads data.json. No
-  hand-written prose, no progress UI, no JS.
+  Single-badge overview page (/merit-badges/<slug>/): page head with the
+  Overview / Requirements / Guide tabs, then the picture, the
+  description and the "What you'll do" list, with downloads and links
+  beside them. All content is data-driven: the description is the
+  requirements page's front-matter description, "What you'll do"
+  previews the badge's own top-level requirements, and the links read
+  data.json. No hand-written prose, no JS.
 */}}
 {{ define "html-class" }}theme-v2{{ end }}
 
 {{ define "main-class" }}req-page-main{{ end }}
 
-{{/* Hold the first paint until the hero has been parsed. Without this the
-  browser can snapshot this page for an incoming view transition before
-  the elements the grid's card is morphing into exist, which reads as a
-  stall followed by a jump. Parsing continues in the background; only
-  painting waits, and only on the hero — not the rest of the page.
-*/}}
-{{ define "head-styles" }}
-  <link rel="expect" href="#badge-hero" blocking="render" />
-{{ end }}
-
 {{ define "main" }}
-  {{ $badge := . }}
   {{ $slug := path.Base .File.Dir }}
   {{ $json := index hugo.Data "merit-badges" $slug }}
   {{ $reqPage := .GetPage "requirements" }}
@@ -53,139 +41,80 @@
     {{ $lead = .Description }}
   {{ end }}
 
-  {{ $ctas := slice }}
-  {{ with $reqPage }}
-    {{ $ctas = $ctas | append (dict "url" .RelPermalink "label" "View Requirements" "icon" "list-checks") }}
-  {{ end }}
-
-  {{ $identity := partial "merit-badges/badge-identity.html" (dict "badge" $badge "json" $json "slug" $slug "demote_heading" true) }}
-  {{ $meta := partial "merit-badges/req-sidebar-meta.html" (dict "json" $json "slug" $slug) }}
-  {{ $navItems := slice (dict "label" "Overview" "url" $badge.RelPermalink "icon" "compass" "active" true) }}
-  {{ with $reqPage }}
-    {{ $navItems = $navItems | append (dict "label" "Requirements" "url" .RelPermalink "icon" "list-checks" "active" false) }}
-  {{ end }}
-  {{ if $guide }}
-    {{ $navItems = $navItems | append (dict "label" "Study Guide" "url" $guide.RelPermalink "icon" "book-open-text" "active" false) }}
-  {{ end }}
+  {{ partial "page-head.html" (dict
+    "page" .
+    "title" $badgeName
+    "accent" "Merit Badge"
+    "title_vt" (printf "mb-title-%s" $slug)
+    "flag" (cond (eq $json.eagle_required true) "Eagle required" "")
+    "tabs" (partial "award-tabs.html" (dict "award" . "active" "overview"))
+    "tabs_label" $badgeName)
+  }}
 
   <div class="req-page req-page--landing">
-    {{ partial "req-sidebar.html" (dict "nav_items" $navItems "identity" $identity "meta" $meta) }}
-
     <div class="req-main">
-      {{ partial "breadcrumb.html" . }}
       {{ partial "discontinued-notice.html" $json }}
 
+      {{ with index (index hugo.Data "badge-images").badges $slug }}
+        <figure class="badge-photo" style="view-transition-name: mb-emblem-{{ $slug }}">
+          {{ partial "imagekit/img.html" (dict
+            "path" (printf "/mbu-assets/merit-badges/%s/emblem" $slug)
+            "v" .v
+            "maxWidth" 1600
+            "width" 1200
+            "height" 670
+            "alt" ""
+            "sizes" "(max-width: 960px) 100vw, 840px"
+            "fetchpriority" "high"
+            "loading" "eager"
+          ) }}
+        </figure>
+      {{ end }}
 
-      {{ partial "merit-badges/badge-hero.html" (dict
-        "badge" $badge
-        "json" $json
-        "slug" $slug
-        "title" $badgeName
-        "accent_title" "Merit Badge"
-        "lead" $lead
-        "ctas" $ctas) }}
+      {{ with $lead }}<p class="badge-intro">{{ . }}</p>{{ end }}
 
-      <div class="badge-overview">
-        <div class="badge-preview card-surface">
-          <h2 class="badge-preview__heading">What you'll do</h2>
-          <ul class="badge-preview__list">
-            {{ range $i, $req := first 4 $json.requirements }}
-              {{ $preview := partial "merit-badges/req-preview.html" (dict "guide" $guide "req" $req) }}
-              {{ $title := $preview.title }}
-              {{ $snippet := $preview.snippet }}
-
-              {{/* Shared with req-card.html/req-child-item.html on the
-                requirements page: a `view-transition-name` keyed by path
-                lets this card's number, title, and snippet morph into their
-                counterparts there instead of just cross-fading. The number
-                and title key off this requirement's own path, but the
-                snippet keys off `candidate_path` -- when this requirement's
-                own text is just boilerplate ("Do the following:"),
-                req-preview.html walks down to the subrequirement whose text
-                actually became the snippet, and that's the element the
-                snippet needs to morph into. Dots in a path aren't valid in
-                a CSS custom-ident, so they're swapped for hyphens -- same
-                convention req-guide-lookup.html uses. */}}
-              {{ $transitionKey := replace $req.path "." "-" }}
-              {{ $textTransitionKey := replace $preview.candidate_path "." "-" }}
-
-              <li class="badge-preview__item">
-                {{ with $reqPage }}
-                  <a
-                    href="{{ .RelPermalink }}#{{ $req.path }}"
-                    class="badge-preview__link">
-                    <span
-                      class="badge-preview__node req-card__node"
-                      aria-hidden="true"
-                      style="view-transition-name: req-num-{{ $transitionKey }}"
-                      ><span class="req-card__node-text"
-                        >{{ add $i 1 }}</span
-                      ></span
-                    >
-                    <span class="badge-preview__text">
-                      <span
-                        class="badge-preview__title"
-                        style="view-transition-name: req-title-{{ $transitionKey }}"
-                        >{{ $title }}</span
-                      >
-                      <span
-                        class="badge-preview__snippet"
-                        style="view-transition-name: req-text-{{ $textTransitionKey }}"
-                        >{{ $snippet | truncate 120 }}</span
-                      >
-                    </span>
-                  </a>
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-          {{ if and $reqPage (gt $reqCount 4) }}
-            <a href="{{ $reqPage.RelPermalink }}" class="badge-preview__more">
-              +{{ sub $reqCount 4 }} more requirements
-              {{ partial "icon.html" (dict "name" "arrow-right" "class" "badge-preview__more-icon") }}
-            </a>
-          {{ end }}
-        </div>
-
-        {{ $glanceRows := slice
-          (dict "icon" "list-checks" "label" "Requirements" "value" $reqCount)
-          (dict
-            "icon" $iconName
-            "icon_weight" "duotone"
-            "label" "Category"
-            "value" $categoryName
-            "value_variant" (dict "type" "link" "url" $categoryURL))
-          (dict
-            "icon" "medal"
-            "label" "Eagle Required"
-            "value" (cond $json.eagle_required "Yes" "No")
-            "value_variant" (dict "type" "pill" "negative" (not $json.eagle_required)))
-        }}
-        {{ with $json.last_updated }}
-          {{ $glanceRows = $glanceRows | append (dict "label" "Updated" "value" (time . | dateFormat "January 2, 2006")) }}
+      {{ with $reqPage }}
+        {{ $rows := slice }}
+        {{ range $i, $req := $json.requirements }}
+          {{ $preview := partial "merit-badges/req-preview.html" (dict "guide" $guide "req" $req) }}
+          {{/* Only the first four carry the view-transition-names the
+            requirements page pairs with (requirement-nodes.html's
+            preview_count). */}}
+          {{ $paired := lt $i 4 }}
+          {{ $rows = $rows | append (dict
+            "url" (printf "%s#%s" $reqPage.RelPermalink $req.path)
+            "marker" (string (add $i 1))
+            "title" $preview.title
+            "snippet" ($preview.snippet | truncate 120)
+            "vt" (cond $paired (partial "text/transition-key.html" (dict "path" $req.path)) "")
+            "text_vt" (cond $paired (partial "text/transition-key.html" (dict "path" $preview.candidate_path)) "")
+          ) }}
         {{ end }}
-        {{ partial "glance-card.html" (dict "rows" $glanceRows) }}
+        {{ partial "req-preview-list.html" (dict "count" (printf "%d requirements" $reqCount) "rows" $rows) }}
+      {{ end }}
+    </div>
 
+    <aside class="badge-aside">
         {{ $resourceRows := slice }}
         {{ $worksheets := index hugo.Data "worksheets" }}
         {{ if and $worksheets (in $worksheets.slugs $slug) }}
           {{ $resourceRows = $resourceRows | append (dict
             "icon" "download-simple"
-            "label" "Fillable Worksheet"
+            "label" "Fillable worksheet"
             "url" (printf "/merit-badges/%s/%s-merit-badge-worksheet.pdf" $slug $slug)
             "external" true) }}
         {{ end }}
         {{ if $json.pamphlet_url }}
           {{ $resourceRows = $resourceRows | append (dict
             "icon" "book-open-text"
-            "label" "Merit Badge Pamphlet"
+            "label" "Merit badge pamphlet"
             "url" $json.pamphlet_url
             "external" true) }}
         {{ end }}
         {{ with $guidePrint }}
           {{ $resourceRows = $resourceRows | append (dict
             "icon" "scroll"
-            "label" "Print Complete Guide"
+            "label" "Print the whole guide"
             "url" .RelPermalink) }}
         {{ end }}
         {{ $resourceRows = $resourceRows | append (dict
@@ -193,16 +122,12 @@
           "label" "Scouting.org"
           "url" $json.url
           "external" true) }}
-        {{ partial "resources-card.html" (dict "rows" $resourceRows) }}
-      </div>
-
-      {{ if and $reqPage (not $json.discontinued) }}
-        <a href="{{ $reqPage.RelPermalink }}#1" class="badge-start-cta">
-          Start with Requirement 1
-          {{ partial "icon.html" (dict "name" "arrow-right" "class" "badge-start-cta__icon") }}
-        </a>
-      {{ end }}
-    </div>
+        {{ $resourceRows = $resourceRows | append (dict
+          "icon" ($iconName | default "compass")
+          "label" (printf "More %s badges" $categoryName)
+          "url" $categoryURL) }}
+        {{ partial "resources-card.html" (dict "rows" $resourceRows "heading" "Downloads and links") }}
+    </aside>
   </div>
 {{ end }}
 

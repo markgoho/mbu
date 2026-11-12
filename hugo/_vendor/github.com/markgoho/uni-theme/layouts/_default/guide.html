@@ -16,72 +16,75 @@
   guide_nav   - [{group_title, items: [{title, url}]}, ...], read from
                 .Params on the section page, inherited by leaf pages via
                 .CurrentSection.Params/.Parent.Params
-  identity    - dict, passed straight through to partials/drg/sidebar.html
-                (in turn passed straight to identity.html) -- see that
-                partial's own doc comment for the exact shape
+  identity    - dict; its `title` names the award in the page head
+                (falls back to the award page's title)
   req_number  - dotted requirement number for a leaf page, e.g. "6.a"
-  group_title - eyebrow text above a leaf page's <h1>
+  group_title - the leaf page's group in guide_nav (drg/resolve-nav.html)
   prev/next, prev_title/next_title - pagination links
 */}}
 
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main-class" }}req-page req-page-main{{ end }}
+{{ define "main-class" }}req-page-main{{ end }}
 
 {{ define "main" }}
   {{ $navData := partial "drg/resolve-nav.html" . }}
   {{ $guideNav := $navData.guide_nav }}
   {{ $identity := .Params.identity | default .CurrentSection.Params.identity | default .Parent.Params.identity }}
-  {{ $reqUrl := "" }}
-  {{ with .CurrentSection.Parent }}
-    {{ $reqUrl = printf "%srequirements/" .RelPermalink }}
-  {{ end }}
+  {{ $guideSection := cond .IsSection . .CurrentSection }}
+  {{ $awardPage := $guideSection.Parent }}
+  {{ $awardName := "" }}
+  {{ with $identity }}{{ $awardName = .title }}{{ end }}
+  {{ if not $awardName }}{{ with $awardPage }}{{ $awardName = .Title }}{{ end }}{{ end }}
+  {{ $tabs := slice (dict "label" "Guide" "url" $guideSection.RelPermalink "active" true) }}
+  {{ with $awardPage }}{{ $tabs = partial "award-tabs.html" (dict "award" . "active" "guide") }}{{ end }}
   {{ $printPage := .Site.GetPage (printf "%sprint/" .CurrentSection.RelPermalink) }}
 
+  {{/* Where this page sits in the guide, shown with Previous / Next so
+    the page head keeps the same shape on every tab. */}}
+  {{ $pageCount := 0 }}
+  {{ $pageIndex := 0 }}
+  {{ range $guideNav }}
+    {{ range .items }}
+      {{ $pageCount = add $pageCount 1 }}
+      {{ if eq .url $.RelPermalink }}{{ $pageIndex = $pageCount }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if .IsSection }}
+    {{ partial "page-head.html" (dict
+      "page" .
+      "title" ($awardName | default .Title)
+      "accent" (cond (ne $awardName "") "Guide" "")
+      "tabs" $tabs
+      "tabs_label" $awardName)
+    }}
+  {{ else }}
+    {{ $reqPath := .Params.req_number | default (path.Base .File.TranslationBaseName | replaceRE "^req" "") }}
+    {{ $reqKey := partial "text/transition-key.html" (dict "path" (string $reqPath)) }}
+    {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
+    {{ partial "page-head.html" (dict
+      "page" .
+      "title" $cleanTitle
+      "title_vt" (cond (ne $reqKey "") (printf "req-title-%s" $reqKey) "")
+      "tabs" $tabs
+      "tabs_label" $awardName)
+    }}
+  {{ end }}
+
+  <div class="req-page req-page--guide">
   {{ partial "drg/sidebar.html" (dict
     "page" .
     "guide_nav" $guideNav
-    "identity" $identity
-    "req_url" $reqUrl
     "print_page" $printPage) }}
 
   <div class="req-page-body">
-    {{ partial "breadcrumb.html" . }}
-
     <div class="req-body-grid">
       <article class="req-content">
-        {{ if not .IsSection }}
-          {{ $reqNum := .Params.req_number | default "" }}
-          {{ $reqGroupKey := "" }}
-          {{ $reqKey := "" }}
-          {{ if $reqNum }}
-            {{ $reqGroupKey = replaceRE "^([0-9]+).*" "$1" $reqNum }}
-            {{ $reqKey = replace $reqNum "." "-" }}
-            {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
-            {{ $reqKey = lower $reqKey }}
-          {{ else }}
-            {{ $reqRaw := path.Base .File.TranslationBaseName | replaceRE "^req" "" }}
-            {{ $reqGroupKey = replaceRE "^([0-9]+).*" "$1" $reqRaw }}
-            {{ $reqKey = replace $reqRaw "." "-" }}
-            {{ $reqKey = replaceRE "^([0-9]+)([a-zA-Z]+)" "$1-$2" $reqKey }}
-            {{ $reqKey = lower $reqKey }}
-          {{ end }}
-          {{ $cleanTitle := replaceRE `^(Req|Requirement) [0-9A-Za-z]+([–-][0-9A-Za-z]+)? — ` "" .Title }}
-          <header class="req-header">
-            {{ with $navData.group_title_display }}
-              <span class="req-header__kicker" {{ with $reqGroupKey }}style="view-transition-name: req-eyebrow-{{ . }}"{{ end }}>{{ . }}</span>
-            {{ end }}
-            <h1 class="req-header__title" {{ with $reqKey }}style="view-transition-name: req-title-{{ . }}"{{ end }}>{{ $cleanTitle }}</h1>
-          </header>
-        {{ else }}
-          <header class="req-header">
-            <h1 class="req-header__title">{{ .Title }}</h1>
-          </header>
-        {{ end }}
-
         {{ .Content }}
 
         <nav class="req-footer-nav" aria-label="Guide pagination">
+          {{ if and (not .IsSection) $pageIndex }}<p class="req-footer-nav__count">Page {{ $pageIndex }} of {{ $pageCount }}</p>{{ end }}
           {{ with $navData.prev }}
             <a
               href="{{ . }}"
@@ -121,6 +124,7 @@
         </aside>
       {{ end }}
     </div>
+  </div>
   </div>
 {{ end }}
 

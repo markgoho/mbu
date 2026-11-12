@@ -26,10 +26,10 @@
   double-titling: wildland-fire-management requirement 4 has no req4.md,
   so it matched req4a.md and rendered "Wildfire Causes & Prevention" --
   and then child 4.a resolved that same page and rendered the identical
-  heading one level down. A node with no page of its own simply goes
-  untitled and leans on its verbatim text, which is what it actually
-  says. This is the common case (168 nodes across the badge set), so the
-  page must read well without a title.
+  heading one level down. A node with no page of its own gets no title
+  here. requirement-node.html may still label a top-level group from its
+  children's shared group_title ("1. Safety & Hazard Awareness"), which
+  names the group itself, not a child.
 
   Params (dict):
   guide    - the guide section Page, or nil if this badge has no DRG guide

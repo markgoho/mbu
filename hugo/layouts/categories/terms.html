@@ -1,12 +1,37 @@
 {{ define "html-class" }}theme-v2{{ end }}
 
-{{ define "main" }}
-  {{ partial "breadcrumb.html" . }}
-  <div class="content-wrapper list-container">
-    <header>
-      <h1>{{ .Title }}</h1>
-    </header>
+{{ define "main-class" }}index-main{{ end }}
 
-    {{ partial "home/categories.html" . }}
+{{ define "main" }}
+  {{ partial "page-head.html" (dict
+    "page" .
+    "title" "Badge categories"
+    "lede" "Explore Scouting merit badges by field of interest."
+  ) }}
+
+  {{/* Keyed by slug: a term's display title need not match the data
+    key's casing. */}}
+  {{ $icons := dict }}
+  {{ range $name, $icon := (index hugo.Data "badge-icons").categories }}
+    {{ $icons = merge $icons (dict (urlize $name) $icon) }}
+  {{ end }}
+  <div class="index-page">
+    <section aria-labelledby="all-categories">
+      <div class="index-section__head">
+        <h2 class="index-section__title" id="all-categories">{{ len .Data.Terms }} categories</h2>
+        <a class="index-section__more" href="/merit-badges/">All badges, A to Z</a>
+      </div>
+      <div class="link-tiles">
+        {{ range .Data.Terms.Alphabetical }}
+          {{ $n := len (partial "merit-badges/listed-badges.html" .Pages) }}
+          {{ partial "link-tile.html" (dict
+            "url" .Page.RelPermalink
+            "title" .Page.Title
+            "meta" (printf "%d %s" $n (cond (eq $n 1) "badge" "badges"))
+            "icon" (index $icons (path.Base .Page.RelPermalink) | default "trophy")
+          ) }}
+        {{ end }}
+      </div>
+    </section>
   </div>
 {{ end }}

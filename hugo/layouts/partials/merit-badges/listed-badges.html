@@ -1,0 +1,18 @@
+{{- /*
+  merit-badges/listed-badges.html — the badges an index lists, from any
+  set of pages (the section, a category), sorted by title.
+
+  Keeps only pages with a hugo.Data entry (so not the eagle-required
+  listing page) that BSA has not discontinued (discontinued-notice.html).
+  Every list and count goes through here so the numbers agree.
+*/ -}}
+{{ $out := slice }}
+{{ range .ByTitle }}
+  {{ if .File }}
+    {{ $json := index hugo.Data "merit-badges" .File.ContentBaseName }}
+    {{ if and $json (not $json.discontinued) }}
+      {{ $out = $out | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $out }}
