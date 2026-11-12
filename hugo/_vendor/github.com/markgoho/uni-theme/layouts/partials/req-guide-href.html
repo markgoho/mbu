@@ -1,0 +1,17 @@
+{{- /* req-guide-href.html
+
+  The guide page a numbered requirement's visible "Guide" link opens:
+  its own page, or else the first page among its nested requirements
+  (a guide often has pages for 2a and 2b but none for 2).
+
+  Params: a node dict (see CONTRACT.md). Returns a URL, "" if none.
+*/ -}}
+{{ $href := "" }}
+{{ if and .own_guide .guide_href }}
+  {{ $href = .guide_href }}
+{{ else }}
+  {{ range .children }}
+    {{ if not $href }}{{ $href = partial "req-guide-href.html" . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ return $href }}

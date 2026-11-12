@@ -1,13 +1,14 @@
 {{/* req-guide-link.html
 
-  The visible "Guide" link at the end of a requirement that has its own
-  guide page (node.own_guide). Its own element, after the text, children
-  and resources, so deep-link.ts's copy text never reads it, and a real
-  link, so deep-link.ts's click-to-copy leaves it alone. The dock's guide
-  button still covers requirements that only inherit a guide section.
+  The one visible "Guide" link at the end of a numbered requirement
+  (req-guide-href.html picks the page). Nested requirements show none at
+  rest, so a long requirement is not a column of Guide links; the dock's
+  guide button reaches theirs once one is selected. Its own element,
+  after the text, children and resources, so deep-link.ts's copy text
+  never reads it, and a real link, so click-to-copy leaves it alone.
 
   Params: the node dict (see CONTRACT.md).
 */}}
-{{ if and .own_guide .guide_href }}
-  <a class="req-guide-link" href="{{ .guide_href }}" aria-label="Guide for requirement {{ .path }}" data-pagefind-ignore>Guide{{ partial "icon.html" (dict "name" "arrow-right" "class" "req-guide-link__icon") }}</a>
+{{ with partial "req-guide-href.html" . }}
+  <a class="req-guide-link" href="{{ . }}" aria-label="Guide for requirement {{ $.path }}" data-pagefind-ignore>Guide{{ partial "icon.html" (dict "name" "arrow-right" "class" "req-guide-link__icon") }}</a>
 {{ end }}
