@@ -3,26 +3,27 @@ title: "Eagle Scout Merit Badge Strategy & Planning Guide"
 description: "A complete step-by-step guide to earning all 21 merit badges for Eagle Scout: managing 90-day time-lock badges, choosing electives, and using Blue Cards."
 ---
 
-To reach the rank of Eagle Scout, you need to earn at least **21 merit badges**. That includes **14 specific Eagle-required badges** and **7 elective badges**.
+To reach the rank of Eagle Scout, you need to earn at least **21 merit badges**. That includes **13 specific Eagle-required badges** and **8 elective badges**.
 
 Earning 21 badges takes planning and steady progress. If you wait until your last year before turning 18, you can get trapped by badges that require 3 months of daily tracking. Planning ahead helps you earn your badges with confidence and zero stress.
 
 ## The 21 Merit Badges You Need for Eagle
 
-Every Eagle Scout earns 14 Eagle-required badges and 7 electives across their Scouting journey:
+Every Eagle Scout earns 13 Eagle-required badges and 8 electives across their Scouting journey:
 
 | Rank You Are Working On | Eagle-Required Badges Needed | Electives Needed | Total Badges for This Rank |
 | :--- | :--- | :--- | :--- |
 | {{< cross-link rank="star" text="Star Rank" />}} | 4 Eagle-Required | 2 Electives | 6 Total Badges |
 | {{< cross-link rank="life" text="Life Rank" />}} | 3 more (7 total) | 2 more (4 total) | 11 Total Badges |
-| {{< cross-link rank="eagle" text="Eagle Scout" />}} | 7 more (14 total) | 3 more (7 total) | 21 Total Badges |
+| {{< cross-link rank="eagle" text="Eagle Scout" />}} | 6 more (13 total) | 4 more (8 total) | 21 Total Badges |
 
-### The 14 Eagle-Required Badges
+### The 13 Eagle-Required Badges
+
+Citizenship in Society was discontinued on February 27, 2026. The required count dropped from 14 to 13 and electives rose from 7 to 8. If you started it before that date, ask your Scoutmaster whether it can still count.
 
 | Badge | What You Learn | Where Most Scouts Earn It | What Makes It Challenging |
 | :--- | :--- | :--- | :--- |
 | [First Aid](/merit-badges/first-aid/) | Handling serious trauma & medical emergencies | Troop meetings or clinics | Hands-on CPR, bandaging, and splinting demonstrations. |
-| [Citizenship in Society](/merit-badges/citizenship-in-society/) | Inclusion, ethical leadership, and civil dialogue | Small-group discussions | Guided reflection, case studies, and group conversations. |
 | [Citizenship in the Community](/merit-badges/citizenship-in-the-community/)| Local town government and civic service | On your own in your hometown | Attending a real city or town council meeting. |
 | [Citizenship in the Nation](/merit-badges/citizenship-in-the-nation/) | Federal government, Constitution, and history | Civics class or summer camp | Visiting a federal facility or historic landmark. |
 | [Citizenship in the World](/merit-badges/citizenship-in-the-world/) | International relations and global trade | Merit badge college or clinic | Learning about international treaties and world organizations. |
@@ -37,7 +38,7 @@ Every Eagle Scout earns 14 Eagle-required badges and 7 electives across their Sc
 | Choice 3: [Swimming](/merit-badges/swimming/) *OR* [Hiking](/merit-badges/hiking/) *OR* [Cycling](/merit-badges/cycling/) | Outdoor travel and physical endurance | Summer camp or weekend trips | Hiking includes a 20-mile hike; Cycling includes 50 miles. |
 
 {{< drg/did-you-know >}}
-If you earn more than one badge in a choice group (like earning both *Swimming* and *Hiking*), one counts as Eagle-required and the second automatically counts as one of your 7 elective badges!
+If you earn more than one badge in a choice group (like earning both *Swimming* and *Hiking*), one counts as Eagle-required and the second automatically counts as one of your 8 elective badges!
 {{< /drg/did-you-know >}}
 
 ## The 4 Badges That Take 90+ Days
@@ -70,9 +71,9 @@ For the three option groups, pick the badge that fits your skills, interests, an
 | Your Rank Goal | Eagle Badges to Focus On | Elective Badges to Try | What to Accomplish |
 | :--- | :--- | :--- | :--- |
 | {{< cross-link rank="scout" text="Scout" />}} to {{< cross-link rank="first-class" text="First Class" />}} (Ages 11–12) | Learn First Aid skills; earn **Swimming** at summer camp | 1–2 fun electives (e.g. Fishing, Wood Carving) | Master basic outdoor, knot, and camp skills. |
-| {{< cross-link rank="first-class" text="First Class" />}} to {{< cross-link rank="star" text="Star" />}} (Ages 12–14) | **First Aid**, **Citizenship in Society**, **Camping**, **Env. Science** | 2 electives you enjoy (6 total) | Serve 4 months in a troop leadership role; do 6 hours of service. |
+| {{< cross-link rank="first-class" text="First Class" />}} to {{< cross-link rank="star" text="Star" />}} (Ages 12–14) | **First Aid**, **Camping**, **Env. Science** | 2 electives you enjoy (6 total) | Serve 4 months in a troop leadership role; do 6 hours of service. |
 | {{< cross-link rank="star" text="Star" />}} to {{< cross-link rank="life" text="Life" />}} (Ages 14–15) | **Citizenship in Community**, **Citizenship in Nation**, **Emerg. Prep/Lifesaving** | 2 electives (11 total) | **Start your 90-day logs for Personal Mgmt, Family Life, or Fitness!** |
-| {{< cross-link rank="life" text="Life" />}} to {{< cross-link rank="eagle" text="Eagle" />}} (Ages 15–17) | Finish the 90-day logs, **Communication**, **Cooking**, **Citizenship in World** | 3 electives (21 total) | Complete your {{< cross-link url="/scouts-bsa/leadership/eagle-project-workbook/" text="Eagle Project" />}} and prepare for your Board of Review. |
+| {{< cross-link rank="life" text="Life" />}} to {{< cross-link rank="eagle" text="Eagle" />}} (Ages 15–17) | Finish the 90-day logs, **Communication**, **Cooking**, **Citizenship in World** | 4 electives (21 total) | Complete your {{< cross-link url="/scouts-bsa/leadership/eagle-project-workbook/" text="Eagle Project" />}} and prepare for your Board of Review. |
 
 ## How to Start and Finish a Merit Badge (The Blue Card)
 
@@ -121,7 +122,7 @@ Keep a chart like this in your binder to stay on track:
 
 ## Related Resources
 
-- [Browse All 14 Eagle-Required Merit Badges](/merit-badges/eagle-required/)
+- [Browse All 13 Eagle-Required Merit Badges](/merit-badges/eagle-required/)
 - [Search All Merit Badge Requirements](/search/)
 
 {{< related-guide url="/scouts-bsa/ranks/" title="Scouting University — Rank Advancement Guides" description="Step-by-step digital resource guides and requirement breakdowns for Scout through Eagle Scout ranks." />}}
